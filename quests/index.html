@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Quests · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/catalog.js"></script>
+<script src="../shared/engine.js"></script>
+<style>
+.lhead{display:grid;gap:8px}
+.goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
+.partnav{position:sticky;top:calc(61px + env(safe-area-inset-top,0px));z-index:10;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line)}
+.sec{display:grid;gap:12px}
+.ostab{display:flex;gap:6px;flex-wrap:wrap}
+.ostab button{border:1.5px solid var(--line);background:var(--panel);border-radius:99px;padding:5px 12px;font-size:.88em;font-weight:700;color:var(--soft)}
+.ostab button[aria-pressed="true"]{background:var(--lupTint);border-color:var(--lupine);color:var(--ink)}
+.book{display:grid;gap:4px}
+.status{font-size:.84em;color:var(--soft)}
+.lessonrow .num{font-family:var(--mono);font-weight:700}
+.unithero{display:grid;gap:10px}
+.unithero .icon{font-size:34px}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+var $ = ICA.$, esc = ICA.esc, md = ICA.md;
+var app = document.getElementById("app"), bar;
+var OS = [["win","Windows"],["mac","Mac"],["chromeos","Chromebook"],["phone","Phone or tablet"]];
+var APPS = [["ms","Microsoft 365"],["google","Google"],["libre","LibreOffice"],["apple","Apple"]];
+var PART = [["learn","Learn"],["try","Try"],["apply","Apply"],["check","Check"],["read","Read"]];
+var curPart = "learn";
+
+function setTitle(t){ document.title = t + " · Quests"; bar.querySelector(".title").textContent = t; }
+function trackOf(id){ return ICA.tracks[id]; }
+function tlabel(t){ return t.elective ? "Elective" : "Track "+t.n; }
+function lessonIndex(l){ var ls = ICA.unitLessons(l.unit); return ls.indexOf(l); }
+
+/* ---------- track list ---------- */
+function home(){
+  setTitle("Quests");
+  var st = ICA.load(), chosen = st.tracks, h = '<div class="stack"><div><div class="eyebrow">Quests</div><h1>Your courses</h1><p class="muted">Each lesson goes Learn → Try → Apply → Check, with a free textbook to read alongside.</p></div>';
+  var ids = Object.keys(ICA.tracks).sort(function(a,b){ return ICA.tracks[a].n - ICA.tracks[b].n; });
+  var mine = ids.filter(function(id){ return chosen.indexOf(id) > -1; }), rest = ids.filter(function(id){ return chosen.indexOf(id) < 0; });
+  if (!mine.length) h += '<div class="card">You haven’t chosen any tracks yet. Every track is listed below, and you can choose yours on the sticky note on the desk.</div>';
+  function trackTile(id){
+    var t = ICA.tracks[id], units = ICA.units.filter(function(u){ return u.track === id; });
+    var done = 0, total = 0; units.forEach(function(u){ var p = ICA.unitProgress(u.id); done += p.done; total += p.total; });
+    var pct = total ? Math.round(done/total*100) : 0;
+    return '<a class="tile" href="#'+id+'"><span class="ic" aria-hidden="true">'+t.icon+'</span><span class="tx"><span class="tt">'+esc(t.name)+'</span><span class="st">'+(units.length ? units.length+" unit"+(units.length>1?"s":"")+" ready · "+done+"/"+total+" lessons done" : esc(t.soon))+'</span></span>'+(total ? '<span class="ring" style="--p:'+pct+'"><span>'+pct+'%</span></span>' : '<span class="chip">Soon</span>')+'</a>';
+  }
+  if (mine.length) h += '<h2>Your tracks</h2><div class="stack">'+mine.map(trackTile).join("")+'</div>';
+  h += '<h2>'+(mine.length ? "Other tracks" : "All tracks")+'</h2><div class="stack">'+rest.map(trackTile).join("")+'</div></div>';
+  app.innerHTML = h;
+}
+
+/* ---------- one track ---------- */
+function track(id){
+  var t = trackOf(id); setTitle(t.name);
+  var units = ICA.units.filter(function(u){ return u.track === id; });
+  var h = '<div class="stack"><a href="#" class="small">← All tracks</a><div><span class="chip '+t.cls+'">'+tlabel(t)+'</span><h1 style="margin-top:6px">'+esc(t.name)+'</h1><p class="muted">'+esc(t.blurb)+'</p><p class="small muted" style="margin-top:6px"><b>Built from:</b> '+esc(t.basis)+'</p></div>';
+  if (units.length) h += '<div class="stack">'+units.map(function(u){ var p = ICA.unitProgress(u.id), pct = p.total ? Math.round(p.done/p.total*100) : 0; return '<a class="tile" href="#'+u.id+'"><span class="ic" aria-hidden="true">'+u.icon+'</span><span class="tx"><span class="tt">Unit '+u.n+' · '+esc(u.title)+'</span><span class="st">'+esc(u.blurb)+'</span><span class="st">'+p.done+' of '+p.total+' lessons done</span></span><span class="ring" style="--p:'+pct+'"><span>'+pct+'%</span></span></a>'; }).join("")+'</div>';
+  h += '<div class="card small muted">'+esc(t.soon)+'</div></div>';
+  app.innerHTML = h;
+}
+
+/* ---------- one unit ---------- */
+function bookRef(r){
+  var b = ICA.books[r.book]; if (!b) return "";
+  return '<div class="card book"><a href="'+esc(b.url)+'" target="_blank" rel="noopener"><b>'+esc(b.title)+'</b></a><span class="small muted">'+esc(b.by)+' · '+esc(b.ed)+' · '+esc(b.fmt)+'</span><span><b>Read:</b> '+md(r.where)+'</span>'+(r.note ? '<span class="small">'+md(r.note)+'</span>' : '')+'</div>';
+}
+function unit(id){
+  var u = ICA.unitById[id], t = trackOf(u.track); setTitle("Unit "+u.n+" · "+u.title);
+  var p = ICA.unitProgress(u.id);
+  var h = '<div class="stack"><a href="#'+u.track+'" class="small">← '+esc(t.name)+'</a><div class="unithero"><span class="icon" aria-hidden="true">'+u.icon+'</span><div><span class="chip '+t.cls+'">'+tlabel(t)+' · Unit '+u.n+'</span><h1 style="margin-top:6px">'+esc(u.title)+'</h1></div><p>'+md(u.blurb)+'</p>'+(u.goals ? '<div><b>By the end you can:</b><ul class="goals">'+u.goals.map(function(g){ return "<li>"+md(g)+"</li>"; }).join("")+'</ul></div>' : '')+'<div class="bar" aria-label="'+p.done+' of '+p.total+' lessons done"><i style="width:'+(p.total?p.done/p.total*100:0)+'%"></i></div><span class="small muted">'+p.done+' of '+p.total+' lessons done</span></div>';
+  h += '<h2>Lessons</h2><div class="stack">'+u.lessons.map(function(l){ var d = ICA.lessonDone(l.id), s = ICA.load().lessons[l.id]; var started = s && (s.learn || Object.keys(s.tries||{}).length); return '<a class="tile lessonrow" href="#'+l.id+'"><span class="ic"><span class="num">'+l.n+'</span></span><span class="tx"><span class="tt">'+esc(l.title)+'</span><span class="st">About '+l.minutes+' min'+(d ? ' · done' : started ? ' · in progress' : '')+'</span>'+(l.read && l.read.length ? '<span class="st">📖 '+md(l.read[0].where)+(l.read.length > 1 ? ' + '+(l.read.length-1)+' more' : '')+'</span>' : '')+'</span>'+(d ? '<span class="chip done">✓ Done</span>' : '')+'</a>'; }).join("")+'</div>';
+  if (u.checkpoint && u.checkpoint.length){ var cp = ICA.load().lessons[u.id+"-cp"]; h += '<h2>Unit checkpoint</h2><a class="tile" href="#'+u.id+'-cp"><span class="ic" aria-hidden="true">🏁</span><span class="tx"><span class="tt">Checkpoint: '+u.checkpoint.length+' questions</span><span class="st">'+(cp && cp.check ? "Best: "+cp.check.best+" of "+cp.check.of+". Retake any time." : "Mixed questions from the whole unit. Take it whenever you feel ready.")+'</span></span></a>'; }
+  if (u.read && u.read.length) h += '<h2>Read alongside</h2><div class="stack">'+u.read.map(bookRef).join("")+'</div>';
+  h += '<button class="report" data-report="Unit: '+esc(u.title)+'">Report a mistake in this unit</button></div>';
+  app.innerHTML = h;
+}
+
+/* ---------- reading: always obvious ---------- */
+function bookTitle(r){ var b = ICA.books[r.book]; return b ? b.title : ""; }
+function readGroups(l){ var g = [], by = {}; l.read.forEach(function(r){ if (!by[r.book]){ by[r.book] = {b:ICA.books[r.book] || {}, items:[]}; g.push(by[r.book]); } by[r.book].items.push(r); }); return g; }
+function readCard(l){
+  if (!l.read || !l.read.length) return "";
+  var s = ICA.lessonState(l.id);
+  return '<button class="readcard" data-readinfo="'+l.id+'"><span class="bk" aria-hidden="true">📖</span><span class="rk"><span class="eyebrow" style="color:var(--gold)">'+(s.readDone ? "Reading ✓ done" : "Reading for this lesson")+'</span>'+readGroups(l).map(function(g){ return '<b>'+esc(g.b.title||"")+'</b><span class="small">'+g.items.map(function(r){ return md(r.where); }).join("<br>")+'</span>'; }).join("")+'<span class="small muted">Tap for how to find it</span></span></button>';
+}
+function readingSheet(l, first){
+  var s = ICA.lessonState(l.id), gs = readGroups(l);
+  ICA.sheet('<div class="eyebrow">'+(first ? "Before you start" : "Reading")+'</div><h2>Read this for “'+esc(l.title)+'”</h2>'+
+    gs.map(function(g){ var b = g.b; return '<div class="card stack"><b>'+esc(b.title||"")+'</b><span class="small muted">'+esc(b.by||"")+' · '+esc(b.ed||"")+' · '+esc(b.fmt||"")+'</span><ol class="readlist">'+g.items.map(function(r){ return "<li>"+md(r.where)+(r.note ? '<br><span class="small muted">'+md(r.note)+"</span>" : "")+"</li>"; }).join("")+'</ol>'+(b.url ? '<a class="small" href="'+esc(b.url)+'" target="_blank" rel="noopener">Open the book’s official page</a>' : '')+'</div>'; }).join("")+
+    '<div class="howfind"><b>How to find it</b><ul style="margin:6px 0 0;padding-left:18px"><li>In the PDF, use the contents page, or search (Ctrl+F, or the search button in your reader) for the section title.</li><li>Audiobook narrations usually follow the same chapter numbers.</li>'+(l.read.some(function(r){ return /Background reading/i.test(r.where); }) ? '<li>“Background reading” means the book only touches on this topic: useful context, but the lesson doesn’t depend on it.</li>' : '')+'</ul></div>'+
+    (l.guide ? '<p class="small muted">The lesson here is a study guide written to go with this reading: the same ideas in plain words, plus practice. Reading the book gives you the full version.</p>' : '<p class="small muted">The lesson here teaches everything you need. The reading is the textbook’s version of the same topic: a second explanation, and a stable reference to come back to.</p>')+
+    '<div class="row"><button class="btn primary" data-readmark="'+l.id+'">'+(s.readDone ? "Read ✓" : "I’ve done the reading")+'</button><button class="btn" data-close>'+(first ? "Start the lesson" : "Close")+'</button></div>'+
+    (first ? '<label class="small" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="noreadpop"> Don’t show this pop-up when lessons open (the reading card stays at the top)</label>' : ''), function(sh){
+      sh.addEventListener("click", function(e){
+        var m = e.target.closest("[data-readmark]"); if (m){ s.readDone = Date.now(); ICA.save(); ICA.closeSheet(); ICA.toast("Reading marked as done"); lesson(l.id, curPart); }
+      });
+      var nb = sh.querySelector("#noreadpop"); if (nb) nb.addEventListener("change", function(){ ICA.load().settings.readPop = nb.checked ? "off" : "on"; ICA.save(); });
+    });
+  if (first){ s.readSeen = 1; ICA.save(); }
+}
+
+/* ---------- one lesson ---------- */
+function partDone(l, k){
+  var s = ICA.lessonState(l.id);
+  if (k === "learn") return !!s.learn;
+  if (k === "try") return (l.try||[]).every(function(x){ return s.tries[x.id]; });
+  if (k === "apply") return !!s.applyDone;
+  if (k === "check") return !!s.check;
+  return false;
+}
+function maybeComplete(l){
+  var s = ICA.lessonState(l.id);
+  if (!s.done && partDone(l,"learn") && partDone(l,"try") && partDone(l,"check")){ s.done = Date.now(); ICA.save(); ICA.toast("Lesson complete ✓"); return true; }
+  return false;
+}
+function lesson(id, part){
+  var l = ICA.lessons[id], u = ICA.unitById[l.unit], t = trackOf(u.track);
+  setTitle(l.title);
+  curPart = part || curPart || "learn";
+  var st = ICA.load(); st.last = {lesson:id, ts:Date.now()}; ICA.save();
+  var parts = PART.filter(function(p){ return p[0] !== "read" || (l.read && l.read.length); }).map(function(p){ return p[0] === "learn" && l.guide ? ["learn","Guide"] : p; });
+  var h = '<div class="stack"><a href="#'+u.id+'" class="small">← Unit '+u.n+': '+esc(u.title)+'</a><div class="lhead"><span class="chip '+t.cls+'">Unit '+u.n+' · Lesson '+l.n+' of '+u.lessons.length+'</span><h1>'+esc(l.title)+'</h1><span class="small muted">About '+l.minutes+' minutes</span>'+(l.goals ? '<ul class="goals">'+l.goals.map(function(g){ return "<li>"+md(g)+"</li>"; }).join("")+'</ul>' : '')+'</div>';
+  h += readCard(l) + '<div class="partnav"><div class="tabs" role="tablist" style="--n:'+parts.length+'">'+parts.map(function(p){ return '<button role="tab" data-part="'+p[0]+'" aria-selected="'+(p[0]===curPart)+'">'+(partDone(l,p[0]) ? '<span class="ck" aria-label="done">✓</span>' : '')+p[1]+'</button>'; }).join("")+'</div></div><div id="part" class="sec"></div>';
+  h += '<button class="report" data-report="Lesson: '+esc(l.title)+' ('+curPart+')">Report a mistake in this lesson</button></div>';
+  app.innerHTML = h;
+  renderPart(l);
+}
+function nextPartBtn(l, after){
+  var order = ["learn","try","apply","check"].concat(l.read && l.read.length ? ["read"] : []), i = order.indexOf(after);
+  if (i < order.length-1) return '<div class="lessonnav"><span></span><button class="btn primary" data-go="'+order[i+1]+'">Next: '+PART.filter(function(p){ return p[0] === order[i+1]; })[0][1]+' →</button></div>';
+  return nextLessonNav(l);
+}
+function nextLessonNav(l){
+  var ls = ICA.unitLessons(l.unit), i = lessonIndex(l), nx = ls[i+1];
+  return '<div class="lessonnav"><a class="btn" href="#'+l.unit+'">Back to the unit</a>'+(nx ? '<a class="btn primary" href="#'+nx.id+'">Next lesson: '+esc(nx.title)+' →</a>' : (ICA.unitById[l.unit].checkpoint ? '<a class="btn primary" href="#'+l.unit+'-cp">Unit checkpoint →</a>' : ''))+'</div>';
+}
+function completeBanner(l){
+  if (!ICA.lessonDone(l.id)) return "";
+  return '<div class="done-banner"><b>Lesson complete ✓</b> You can come back to any part whenever you like.</div>';
+}
+function renderPart(l){
+  var el = document.getElementById("part"), s = ICA.lessonState(l.id), h = "";
+  el.onclick = null;
+  ICA.$$(".tabs [data-part]").forEach(function(b){ b.setAttribute("aria-selected", b.getAttribute("data-part") === curPart ? "true" : "false"); });
+  var rep = $(".report[data-report]"); if (rep) rep.setAttribute("data-report", "Lesson: "+l.title+" ("+curPart+")");
+  if (curPart === "learn"){
+    h = (l.guide ? '<div class="guidehead"><b>📖 Study guide</b><span class="small">This guide goes with the textbook reading above. Read the guide’s first box, then the book section, then the rest of the guide. Or use the guide on its own as a quick summary.</span></div>' : '')+'<div class="prose">'+l.learn.map(function(sec){ return (sec.h ? "<h3>"+md(sec.h)+"</h3>" : "")+ICA.blocks(sec.body); }).join("")+'</div>';
+    h += s.learn ? nextPartBtn(l,"learn") : '<div class="lessonnav"><span class="small muted">'+(l.guide ? "Done with the guide?" : "Finished reading?")+'</span><button class="btn primary" data-readdone>'+(l.guide ? "Done. On to Try →" : "I’ve read this. On to Try →")+'</button></div>';
+    el.innerHTML = h;
+  } else if (curPart === "try"){
+    var n = (l.try||[]).length, done = (l.try||[]).filter(function(x){ return s.tries[x.id]; }).length;
+    el.innerHTML = '<p class="muted">Practice with instant feedback. Wrong answers explain what went wrong, and there’s no penalty for trying again.</p><p class="small"><b id="trycount">'+done+'</b> of '+n+' done</p><div id="tries" class="stack"></div><div id="trynav"></div>';
+    var box = document.getElementById("tries");
+    (l.try||[]).forEach(function(ex){
+      var d = document.createElement("div"); box.appendChild(d);
+      ICA.exercise(d, ex, {onSolved:function(first){ s.tries[ex.id] = first ? 1 : 2; ICA.save(); var c = (l.try||[]).filter(function(x){ return s.tries[x.id]; }).length; document.getElementById("trycount").textContent = c; if (c === n){ document.getElementById("trynav").innerHTML = nextPartBtn(l,"try"); maybeComplete(l); markTabs(l); } }});
+    });
+    if (done === n) document.getElementById("trynav").innerHTML = nextPartBtn(l,"try");
+  } else if (curPart === "apply"){
+    var a = l.apply || {tasks:[]}, os = ICA.load().settings.os || "win";
+    h = '<div class="prose"><p>'+md(a.intro||"Now do it for real on your own device.")+'</p></div>';
+    var needsOS = a.tasks.some(function(tk){ return tk.how && !Array.isArray(tk.how); });
+    if (needsOS) h += '<div><span class="small muted">Show steps for:</span><div class="ostab" role="group" aria-label="Device">'+OS.map(function(o){ return '<button aria-pressed="'+(o[0]===os)+'" data-os="'+o[0]+'">'+o[1]+'</button>'; }).join("")+'</div></div>';
+    var app = ICA.load().settings.app || "ms", needsApp = a.tasks.some(function(tk){ return tk.app; }), un = ICA.unitById[l.unit] || {}, names = l.apps || un.apps;
+    if (needsApp) h += '<div><span class="small muted">Show steps for the app you use:</span><div class="ostab" role="group" aria-label="App">'+APPS.map(function(o){ return '<button aria-pressed="'+(o[0]===app)+'" data-app="'+o[0]+'">'+esc((names && names[o[0]]) || o[1])+'</button>'; }).join("")+'</div>'+(names ? '' : '<span class="small muted">Microsoft 365: Word, Excel, PowerPoint, Outlook · Google: Docs, Sheets, Slides, Gmail · LibreOffice: Writer, Calc, Impress (free) · Apple: Pages, Numbers, Keynote, Mail</span>')+'</div>';
+    h += '<div class="stack">'+a.tasks.map(function(tk, i){
+      var how = "";
+      if (Array.isArray(tk.how)) how = '<div class="how"><ol>'+tk.how.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol></div>';
+      else if (tk.how){ var steps = tk.how[os] || tk.how.all; how = steps ? '<div class="how"><ol>'+steps.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol></div>' : '<div class="how">No device-specific steps for this one. The idea is the same everywhere.</div>'; }
+      if (tk.app){ var asteps = tk.app[app] || tk.app.all; how += asteps ? '<div class="how"><ol>'+asteps.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol></div>' : '<div class="how">'+(tk.appNote ? md(tk.appNote) : 'This app doesn’t have this feature, or it works very differently. Try one of the other apps if you can.')+'</div>'; }
+      var wr = tk.write ? '<label class="lb" for="w'+i+'" style="display:block;margin-top:8px">Your notes</label><textarea id="w'+i+'" data-write="'+i+'" placeholder="'+esc(tk.write === true ? "Write what you noticed…" : tk.write)+'">'+esc((s.notes||{})[i]||"")+'</textarea><span class="small muted">Saved on this device as you type.</span>' : '';
+      return '<div class="task"><input type="checkbox" id="tk'+i+'" data-task="'+i+'"'+(s.apply[i]?" checked":"")+'><div style="flex:1;min-width:0"><label for="tk'+i+'">'+md(tk.t)+'</label>'+how+wr+'</div></div>';
+    }).join("")+'</div>';
+    if (a.proof) h += '<div class="callout key"><b class="h">Proof for yourself</b>'+md(a.proof)+'</div>';
+    h += '<div class="lessonnav"><button class="btn" data-later>I’ll do this later</button><button class="btn primary" data-applydone>'+(s.applyDone ? "Done ✓ · Next: Check →" : "Done. Next: Check →")+'</button></div>';
+    el.innerHTML = h;
+  } else if (curPart === "check"){
+    checkQuiz(el, l.id, ICA.lessonBank(l.id), function(score, of){ s.check = {best:Math.max(score, s.check ? s.check.best : 0), of:of, last:score}; ICA.save(); var c = maybeComplete(l); markTabs(l); return c; }, function(){ return completeBanner(l) + nextLessonNav(l); });
+  } else if (curPart === "read"){
+    el.innerHTML = '<p class="muted">This lesson is based on free, legal textbooks. Reading the section below gives you the same ideas in more depth.</p><div class="stack">'+l.read.map(bookRef).join("")+'</div>'+completeBanner(l)+nextLessonNav(l);
+  }
+}
+function markTabs(l){ ICA.$$(".tabs [data-part]").forEach(function(b){ var k = b.getAttribute("data-part"), ck = b.querySelector(".ck"); if (partDone(l,k) && !ck) b.insertAdjacentHTML("afterbegin",'<span class="ck" aria-label="done">✓</span>'); }); }
+
+/* ---------- quizzes: lesson Check and unit checkpoint ---------- */
+function checkQuiz(el, key, qs, onFinish, after){
+  if (!qs.length){ el.innerHTML = '<p class="muted">No questions here yet.</p>'; return; }
+  var order = ICA.shuffle(qs), i = 0, score = 0;
+  el.innerHTML = '<p class="muted">'+order.length+' questions. One try each, with an explanation after every answer.</p><div class="small"><b id="qpos">1</b> of '+order.length+'</div><div id="qbox"></div><div id="qnav"></div>';
+  function show(){
+    document.getElementById("qpos").textContent = i+1;
+    var box = document.getElementById("qbox"); box.innerHTML = ""; var d = document.createElement("div"); box.appendChild(d);
+    document.getElementById("qnav").innerHTML = "";
+    var q = order[i];
+    ICA.exercise(d, {id:q.id, type:"mcq", q:q.q, options:q.options, why:q.why, fixed:q.fixed}, {quiz:true, onAnswer:function(ok){ if (ok) score++; document.getElementById("qnav").innerHTML = '<div class="lessonnav"><span class="small muted">Score so far: '+score+'</span><button class="btn primary" data-qnext>'+(i < order.length-1 ? "Next question →" : "See my result")+'</button></div>'; var nb = document.querySelector("[data-qnext]"); nb.focus(); }});
+  }
+  el.onclick = function(e){
+    if (e.target.closest("[data-qnext]")){ i++; if (i < order.length) show(); else finish(); }
+    if (e.target.closest("[data-qagain]")){ checkQuiz(el, key, qs, onFinish, after); }
+  };
+  function finish(){
+    onFinish(score, order.length);
+    var pct = Math.round(score/order.length*100);
+    el.innerHTML = '<div class="card stack"><div class="eyebrow">Result</div><h2>'+score+' of '+order.length+'</h2><p>'+(pct === 100 ? "Every one right." : pct >= 70 ? "Solid. Review the ones you missed whenever you like." : "Good start. Each explanation is worth a second read, and you can retake this any time.")+'</p><p class="small muted">Every question also goes into the Arcade, so you’ll meet them again in review.</p><div class="row"><button class="btn" data-qagain>Retake</button></div></div>'+(after ? after() : "");
+  }
+  show();
+}
+function checkpoint(uid){
+  var u = ICA.unitById[uid]; setTitle("Checkpoint · "+u.title);
+  var qs = u.checkpoint.map(function(id){ return ICA.bankById[id]; }).filter(Boolean);
+  app.innerHTML = '<div class="stack"><a href="#'+uid+'" class="small">← Unit '+u.n+': '+esc(u.title)+'</a><div><div class="eyebrow">Unit checkpoint</div><h1>'+esc(u.title)+'</h1></div><div id="cp"></div></div>';
+  var s = ICA.lessonState(uid+"-cp");
+  checkQuiz(document.getElementById("cp"), uid+"-cp", qs, function(score, of){ s.check = {best:Math.max(score, s.check ? s.check.best : 0), of:of}; ICA.save(); }, function(){ return '<div class="lessonnav"><a class="btn" href="#'+uid+'">Back to the unit</a><a class="btn primary" href="../arcade/index.html">Practice more in the Arcade →</a></div>'; });
+}
+
+/* ---------- events ---------- */
+app.addEventListener("click", function(e){
+  var t;
+  if ((t = e.target.closest("[data-part]"))){ curPart = t.getAttribute("data-part"); renderPart(ICA.lessons[location.hash.slice(1)]); window.scrollTo(0, 0); return; }
+  if ((t = e.target.closest("[data-go]"))){ curPart = t.getAttribute("data-go"); renderPart(ICA.lessons[location.hash.slice(1)]); window.scrollTo(0, 0); return; }
+  if (e.target.closest("[data-readdone]")){ var l = ICA.lessons[location.hash.slice(1)]; ICA.lessonState(l.id).learn = 1; ICA.save(); markTabs(l); curPart = "try"; renderPart(l); window.scrollTo(0,0); return; }
+  if ((t = e.target.closest("[data-app]"))){ ICA.load().settings.app = t.getAttribute("data-app"); ICA.save(); renderPart(ICA.lessons[location.hash.slice(1)]); return; }
+  if ((t = e.target.closest("[data-os]"))){ ICA.load().settings.os = t.getAttribute("data-os"); ICA.save(); renderPart(ICA.lessons[location.hash.slice(1)]); return; }
+  if (e.target.closest("[data-applydone]") || e.target.closest("[data-later]")){ var l2 = ICA.lessons[location.hash.slice(1)]; if (e.target.closest("[data-applydone]")){ ICA.lessonState(l2.id).applyDone = 1; ICA.save(); markTabs(l2); } curPart = "check"; renderPart(l2); window.scrollTo(0,0); return; }
+  if ((t = e.target.closest("[data-report]"))){ ICA.report(t.getAttribute("data-report")); return; }
+  if ((t = e.target.closest("[data-readinfo]"))){ readingSheet(ICA.lessons[t.getAttribute("data-readinfo")], false); return; }
+});
+app.addEventListener("input", function(e){
+  var t = e.target.closest("[data-write]"); if (!t) return;
+  var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); if (!s.notes) s.notes = {}; s.notes[t.getAttribute("data-write")] = t.value; ICA.save();
+});
+app.addEventListener("change", function(e){
+  var t = e.target.closest("[data-task]"); if (!t) return;
+  var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); s.apply[t.getAttribute("data-task")] = t.checked ? 1 : 0; ICA.save();
+});
+
+function route(){
+  ICA.closePop(); ICA.closeSheet();
+  var h = location.hash.slice(1);
+  if (!h) home();
+  else if (ICA.tracks[h]) track(h);
+  else if (ICA.unitById[h]) unit(h);
+  else if (/-cp$/.test(h) && ICA.unitById[h.replace(/-cp$/,"")]) checkpoint(h.replace(/-cp$/,""));
+  else if (ICA.lessons[h]){ curPart = "learn"; lesson(h); var L0 = ICA.lessons[h], S0 = ICA.lessonState(h); if (L0.read && L0.read.length && !S0.readSeen && !S0.readDone && ICA.load().settings.readPop !== "off") readingSheet(L0, true); }
+  else home();
+  window.scrollTo(0, 0);
+}
+bar = ICA.topbar("Quests");
+ICA.loadAll("../", function(failed){
+  if (failed.length) console.warn("Missing data files", failed);
+  window.addEventListener("hashchange", route);
+  route();
+});
+})();
+</script>
+</body>
+</html>

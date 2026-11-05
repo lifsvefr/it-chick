@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Forge · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/catalog.js"></script>
+<script src="../shared/engine.js"></script>
+<style>
+.kinds{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.kind{display:grid;gap:4px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:12px;color:var(--ink)}
+.kind:hover{border-color:var(--rose)}
+.kind b{font-family:var(--display)}
+.kind span{font-size:.86em;color:var(--soft)}
+.pick select{width:100%;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--panel)}
+/* the paper preview */
+.paper{background:#fff;color:#1d1511;border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);padding:28px 24px;font-family:var(--body);font-size:15px;line-height:1.5}
+.paper h1{font-size:24px;color:#1d1511;margin-bottom:2px}
+.paper h2{font-size:18px;margin:18px 0 6px;border-bottom:1.5px solid #1d1511;padding-bottom:2px;color:#1d1511}
+.paper h3{font-size:15.5px;margin:12px 0 4px;color:#1d1511}
+.paper .meta{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6a5549}
+.paper p,.paper li{margin:3px 0;overflow-wrap:anywhere}
+.paper ul,.paper ol{padding-left:22px;margin:4px 0}
+.paper code{background:#f1ebe4;color:#1d1511}
+.paper .q{font-weight:700;margin-top:12px}
+.paper .letters{list-style:none;padding-left:4px}
+.paper .lines{height:6.4em;background-image:linear-gradient(#bbb 1px,transparent 1px);background-size:100% 1.6em;margin:4px 0 10px}
+.paper .answers{border-top:2px dashed #1d1511;margin-top:22px;padding-top:6px}
+.paper .two{columns:2;column-gap:22px}
+.paper .two > *{break-inside:avoid}
+.paper dt{font-weight:700}
+.paper dd{margin:0 0 6px}
+.paper .box{border:1.5px solid #1d1511;border-radius:6px;padding:8px 10px;margin:8px 0}
+.paper .seg{text-decoration:underline}
+.paper .seg sup{font-weight:700}
+.paper .check{font-size:16px}
+.paper table{border-collapse:collapse;width:100%;font-size:13px}
+.paper th,.paper td{border:1px solid #999;padding:4px 6px;text-align:left;vertical-align:top}
+.paper .tw{border:0;overflow:visible}
+.paper .callout{border:1.5px solid #1d1511;background:#fff;border-radius:6px}
+.paper figure{background:#fff;border:1px solid #ccc}
+.paper .term{text-decoration:none;color:inherit;cursor:default}
+.paper .figzoom .hint{display:none}
+.printbar{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;justify-content:center;margin-top:14px}
+@media (max-width:560px){.paper{padding:18px 14px}.paper .two{columns:1}}
+@media print{
+  @page{margin:16mm 14mm}
+  body{background:#fff}
+  .topbar,.noprint,.printbar,.report{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .paper{border:0;box-shadow:none;padding:0;font-size:11.5pt}
+  .paper .answers{break-before:page}
+  .paper .two{columns:2}
+  .paper h2{break-after:avoid}
+  figure{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+var esc = ICA.esc, md = ICA.md, app = document.getElementById("app"), bar;
+var KINDS = [
+  ["cheat","Cheat sheet","The big ideas, readings and key terms for a whole unit."],
+  ["worksheet","Worksheet","A lesson’s practice exercises on paper, with the answer key at the end."],
+  ["quiz","Quiz","A lesson’s check questions or the unit checkpoint, with answers on a separate page."],
+  ["notes","Notes pages","A lesson’s Apply tasks with space to write."],
+  ["reading","Reading checklist","Every reading for a unit, with boxes to tick."]
+];
+var L = "ABCDEFGHIJ";
+
+function setTitle(t){ document.title = t + " · Forge"; bar.querySelector(".title").textContent = t; }
+function seeded(id){ var h = 0; for (var i = 0; i < id.length; i++) h = (h*31 + id.charCodeAt(i)) >>> 0; return function(){ h = (h*1103515245 + 12345) >>> 0; return h / 4294967296; }; }
+function shuf(n, id){ var a = []; for (var i = 0; i < n; i++) a.push(i); var r = seeded(id); for (var j = n-1; j > 0; j--){ var k = Math.floor(r()*(j+1)); var t = a[j]; a[j] = a[k]; a[k] = t; } return a; }
+function dot(s){ return /[.!?:;,…)”’"]$/.test(s.replace(/<[^>]+>/g,"").trim()) ? s : s + "."; }
+function readWhere(r){ var b = ICA.books[r.book]; return (b ? "<b>"+esc(b.title)+"</b>: " : "")+md(r.where); }
+
+/* ----- paper versions of exercises (mirrors the e-book) ----- */
+function paperEx(n, ex){
+  var q = '<div><p class="q">'+n+'. '+md(ex.q.replace(/\b(Tap|Click)( on)? (every|each|all|the)\b/g, function(m, a, b, c){ return "Find "+c; }))+'</p>', a = '<div><p><b>'+n+'.</b> ';
+  if (ex.type === "mcq"){
+    var idx = ex.fixed ? ex.options.map(function(o, i){ return i; }) : shuf(ex.options.length, ex.id), multi = ex.options.filter(function(o){ return o.ok; }).length > 1;
+    if (multi) q += '<p><i>Choose all that apply.</i></p>';
+    q += '<ol class="letters">'+idx.map(function(i, k){ return "<li>☐ <b>"+L[k]+".</b> "+md(ex.options[i].t)+"</li>"; }).join("")+'</ol>';
+    a += idx.filter(function(i){ return ex.options[i].ok; }).map(function(i){ return L[idx.indexOf(i)]; }).join(", ")+'</p><ul>'+idx.map(function(i, k){ return "<li><b>"+L[k]+" ("+(ex.options[i].ok ? "right" : "wrong")+").</b> "+md(ex.options[i].why||"")+"</li>"; }).join("")+'</ul>';
+  } else if (ex.type === "sort"){
+    var si = shuf(ex.items.length, ex.id);
+    q += '<p><i>Write the group for each: '+ex.buckets.map(function(b){ return "<b>"+md(b)+"</b>"; }).join(" · ")+'</i></p><ol>'+si.map(function(i){ return "<li>"+md(ex.items[i].t)+" → ____________</li>"; }).join("")+'</ol>';
+    a += '</p><ol>'+si.map(function(i){ return "<li><b>"+md(ex.items[i].t)+" → "+dot(md(ex.buckets[ex.items[i].b]))+"</b> "+md(ex.items[i].why||"")+"</li>"; }).join("")+'</ol>';
+  } else if (ex.type === "order"){
+    var oi = shuf(ex.items.length, ex.id); if (oi.every(function(v, i){ return v === i; })) oi.reverse();
+    q += '<p><i>Number the steps in order (1 = first).</i></p><ol class="letters">'+oi.map(function(i, k){ return "<li>___ <b>"+L[k]+".</b> "+md(ex.items[i].t)+"</li>"; }).join("")+'</ol>';
+    a += ex.items.map(function(it, i){ return L[oi.indexOf(i)]; }).join(", ")+'</p><ol>'+ex.items.map(function(it){ return "<li>"+md(it.t)+(it.why ? " — "+md(it.why) : "")+"</li>"; }).join("")+'</ol>';
+  } else if (ex.type === "match"){
+    var mi = shuf(ex.pairs.length, ex.id);
+    q += '<p><i>Write the matching letter.</i></p><ol>'+ex.pairs.map(function(p){ return "<li>"+md(p[0])+" → ___</li>"; }).join("")+'</ol><ol class="letters">'+mi.map(function(i, k){ return "<li><b>"+L[k]+".</b> "+md(ex.pairs[i][1])+"</li>"; }).join("")+'</ol>';
+    a += ex.pairs.map(function(p, i){ return (i+1)+"–"+L[mi.indexOf(i)]; }).join(" · ")+'</p><ol>'+ex.pairs.map(function(p){ return "<li><b>"+md(p[0])+" → "+dot(md(p[1]))+"</b> "+md(p[2]||"")+"</li>"; }).join("")+'</ol>';
+  } else if (ex.type === "spot"){
+    var segs = [], txt = ex.parts.map(function(p){ if (typeof p === "string") return md(p); segs.push(p); return '<span class="seg">'+md(p.t)+'<sup>'+segs.length+'</sup></span>'; }).join("");
+    q += '<p><i>Circle the number of every part that '+esc(ex.ask || "is a warning sign")+'.</i></p><div class="box">'+txt+'</div>';
+    a += segs.map(function(s, i){ return s.flag ? i+1 : null; }).filter(Boolean).join(", ")+'</p><ol>'+segs.map(function(s){ return "<li><b>"+(s.flag ? "Yes: " : "Fine: ")+dot(md(s.t))+"</b> "+md(s.why||"")+"</li>"; }).join("")+'</ol>';
+  } else if (ex.type === "number"){
+    q += '<p>Answer: ____________ '+esc(ex.unit||"")+'</p>';
+    a += esc(ex.answer)+" "+esc(ex.unit||"")+'</p><p>'+md(ex.why||"")+'</p>'+((ex.wrongs||[]).length ? "<ul>"+ex.wrongs.map(function(w){ return "<li><b>"+esc(w.v)+":</b> "+md(w.why)+"</li>"; }).join("")+"</ul>" : "");
+  }
+  if (ex.why && ex.type !== "number" && ex.type !== "order") a += '<p>'+md(ex.why)+'</p>';
+  return {q:q+'</div>', a:a+'</div>'};
+}
+function paperQuiz(n, qd){
+  var idx = qd.fixed ? qd.options.map(function(o, i){ return i; }) : shuf(qd.options.length, qd.id), ri = idx.filter(function(i){ return qd.options[i].ok; })[0];
+  return {q:'<div><p class="q">'+n+'. '+md(qd.q)+'</p><ol class="letters">'+idx.map(function(i, k){ return "<li>☐ <b>"+L[k]+".</b> "+md(qd.options[i].t)+"</li>"; }).join("")+'</ol></div>',
+          a:'<div><p><b>'+n+'. '+L[idx.indexOf(ri)]+'</b> — '+md(qd.options[ri].why||"")+(qd.why ? " "+md(qd.why) : "")+'</p></div>'};
+}
+
+/* ----- documents ----- */
+function head(title, sub){ return '<div class="meta">IT CHICK Academy · '+esc(sub)+'</div><h1>'+esc(title)+'</h1><p class="meta">Name ____________________ · Date ____________</p>'; }
+function bigIdeas(l){
+  var out = [];
+  l.learn.forEach(function(sec){
+    if (/big ideas/i.test(sec.h||"")) sec.body.forEach(function(b){ if (b.list) out = out.concat(b.list); if (b.ol) out = out.concat(b.ol); });
+    sec.body.forEach(function(b){ if (b.key) out.push(b.key); });
+  });
+  if (!out.length) out = l.goals || [];
+  return out;
+}
+function docCheat(u){
+  var t = ICA.tracks[u.track], h = head("Unit "+u.n+": "+u.title, t.name+" · cheat sheet");
+  if (u.goals) h += '<h2>By the end you can</h2><ul>'+u.goals.map(function(g){ return "<li>"+md(g)+"</li>"; }).join("")+'</ul>';
+  u.lessons.forEach(function(l){
+    h += '<h2>'+l.n+'. '+esc(l.title)+'</h2>';
+    if (l.read && l.read.length) h += '<p><b>Read:</b> '+l.read.map(readWhere).join("; ")+'</p>';
+    h += '<ul>'+bigIdeas(l).map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ul>';
+  });
+  var terms = Object.keys(ICA.terms).map(function(k){ return ICA.terms[k]; }).filter(function(x){ return x.unit === u.id; }).sort(function(a, b){ return a.term.toLowerCase() < b.term.toLowerCase() ? -1 : 1; });
+  if (terms.length) h += '<h2>Key terms</h2><dl class="two">'+terms.map(function(x){ return "<div><dt>"+esc(x.term)+"</dt><dd>"+md(x.def)+"</dd></div>"; }).join("")+'</dl>';
+  return h;
+}
+function docWorksheet(l){
+  var u = ICA.unitById[l.unit], h = head(l.title, "Unit "+u.n+" · worksheet"), qs = [], as = [];
+  if (l.read && l.read.length) h += '<p><b>Reading:</b> '+l.read.map(readWhere).join("; ")+'</p>';
+  (l.try||[]).forEach(function(ex, i){ var p = paperEx(i+1, ex); qs.push(p.q); as.push(p.a); });
+  return h+'<h2>Exercises</h2>'+qs.join("")+'<div class="answers"><h2>Answer key</h2>'+as.join("")+'</div>';
+}
+function docQuiz(l, u){
+  var qs = l ? ICA.lessonBank(l.id) : (u.checkpoint||[]).map(function(id){ return ICA.bankById[id]; }).filter(Boolean);
+  var h = head(l ? l.title : "Checkpoint: "+u.title, (l ? "Unit "+ICA.unitById[l.unit].n : "Unit "+u.n)+" · quiz"), Q = [], A = [];
+  qs.forEach(function(qd, i){ var p = paperQuiz(i+1, qd); Q.push(p.q); A.push(p.a); });
+  return h+Q.join("")+'<div class="answers"><h2>Answers</h2>'+A.join("")+'</div>';
+}
+function docNotes(l){
+  var u = ICA.unitById[l.unit], a = l.apply || {tasks:[]}, h = head(l.title, "Unit "+u.n+" · notes pages");
+  h += '<p>'+md(a.intro||"")+'</p>';
+  a.tasks.forEach(function(tk, i){
+    h += '<h3>☐ '+(i+1)+'. '+md(tk.t)+'</h3>';
+    if (Array.isArray(tk.how)) h += '<ol>'+tk.how.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol>';
+    else if (tk.how){ [["win","Windows"],["mac","Mac"],["chromeos","Chromebook"],["phone","Phone or tablet"],["all","Any device"]].forEach(function(o){ if (tk.how[o[0]]) h += '<p><b>'+o[1]+'</b></p><ol>'+tk.how[o[0]].map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol>'; }); }
+    if (tk.app){ var nm = l.apps || (ICA.unitById[l.unit]||{}).apps || {}; [["ms","Microsoft 365"],["google","Google"],["libre","LibreOffice"],["apple","Apple"],["all","Any app"]].forEach(function(o){ if (tk.app[o[0]]) h += '<p><b>'+esc(nm[o[0]]||o[1])+'</b></p><ol>'+tk.app[o[0]].map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol>'; }); }
+    if (tk.write) h += (typeof tk.write === "string" ? '<p><i>'+esc(tk.write)+'</i></p>' : '')+'<div class="lines"></div><div class="lines"></div>';
+  });
+  if (a.proof) h += '<div class="box"><b>Proof for yourself:</b> '+md(a.proof)+'</div>';
+  return h;
+}
+function docReading(u){
+  var h = head("Reading for Unit "+u.n+": "+u.title, ICA.tracks[u.track].name+" · reading checklist");
+  var books = {}; (u.read||[]).forEach(function(r){ books[r.book] = 1; });
+  u.lessons.forEach(function(l){ (l.read||[]).forEach(function(r){ books[r.book] = 1; }); });
+  h += '<h2>Books</h2><ul>'+Object.keys(books).map(function(k){ var b = ICA.books[k]; return b ? "<li><b>"+esc(b.title)+"</b>, "+esc(b.by)+" ("+esc(b.ed)+"). "+esc(b.fmt)+". "+esc(b.url)+"</li>" : ""; }).join("")+'</ul>';
+  h += '<h2>Checklist</h2>';
+  u.lessons.forEach(function(l){ h += '<h3>Lesson '+l.n+': '+esc(l.title)+'</h3><ul class="letters">'+(l.read||[]).map(function(r){ return '<li class="check">☐ '+readWhere(r)+(r.note ? ' <i>'+md(r.note)+'</i>' : '')+'</li>'; }).join("")+'</ul>'; });
+  return h;
+}
+
+/* ----- screens ----- */
+function home(){
+  setTitle("Forge");
+  var st = ICA.load(), units = ICA.units.slice().sort(function(a, b){ var am = st.tracks.indexOf(a.track) > -1 ? 0 : 1, bm = st.tracks.indexOf(b.track) > -1 ? 0 : 1; return am - bm; });
+  app.innerHTML = '<div class="stack"><div><div class="eyebrow">Forge</div><h1>Printables</h1><p class="muted">Make a page to print or save as a PDF: study without a screen, or keep notes on paper.</p></div>'+
+    '<div class="card stack pick"><label class="lb" for="unit">Unit</label><select id="unit">'+units.map(function(u){ return '<option value="'+u.id+'">'+esc(ICA.tracks[u.track].name)+' · Unit '+u.n+': '+esc(u.title)+'</option>'; }).join("")+'</select>'+
+    '<label class="lb" for="lesson">Lesson (for worksheets, quizzes and notes)</label><select id="lesson"></select></div>'+
+    '<div class="kinds">'+KINDS.map(function(k){ return '<button class="kind" data-kind="'+k[0]+'"><b>'+k[1]+'</b><span>'+k[2]+'</span></button>'; }).join("")+'</div></div>';
+  var us = document.getElementById("unit"), ls = document.getElementById("lesson");
+  function fillLessons(){ var u = ICA.unitById[us.value]; ls.innerHTML = u.lessons.map(function(l){ return '<option value="'+l.id+'">'+l.n+'. '+esc(l.title)+'</option>'; }).join("")+(u.checkpoint ? '<option value="cp">Unit checkpoint (quiz only)</option>' : ''); }
+  us.addEventListener("change", fillLessons); fillLessons();
+}
+function show(kind, uid, lid){
+  var u = ICA.unitById[uid], l = lid && lid !== "cp" ? ICA.lessons[lid] : null, html, name;
+  if (kind === "cheat"){ html = docCheat(u); name = "Cheat sheet"; }
+  else if (kind === "reading"){ html = docReading(u); name = "Reading checklist"; }
+  else if (kind === "quiz"){ html = docQuiz(l, u); name = "Quiz"; }
+  else { if (!l) l = u.lessons[0]; html = kind === "worksheet" ? docWorksheet(l) : docNotes(l); name = kind === "worksheet" ? "Worksheet" : "Notes pages"; }
+  setTitle(name);
+  app.innerHTML = '<div class="stack"><div class="noprint row"><button class="btn" data-back>← All printables</button></div><article class="paper">'+html+'</article><div class="printbar noprint"><button class="btn primary" data-print>🖨️ Print or save as PDF</button></div><p class="small muted noprint">Tip: in the print window, choose “Save as PDF” to keep a copy. If nothing opens, use your browser’s menu → Print.</p></div>';
+  window.scrollTo(0, 0);
+}
+app.addEventListener("click", function(e){
+  var t;
+  if ((t = e.target.closest("[data-kind]"))){ show(t.getAttribute("data-kind"), document.getElementById("unit").value, document.getElementById("lesson").value); return; }
+  if (e.target.closest("[data-back]")){ home(); return; }
+  if (e.target.closest("[data-print]")){ try { window.print(); } catch(err){ ICA.toast("Printing isn’t available here."); } }
+});
+bar = ICA.topbar("Forge");
+ICA.loadAll("../", function(){ home(); });
+})();
+</script>
+</body>
+</html>

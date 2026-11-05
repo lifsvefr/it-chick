@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Codex · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/catalog.js"></script>
+<script src="../shared/engine.js"></script>
+<style>
+.search{position:sticky;top:calc(61px + env(safe-area-inset-top,0px));z-index:10;background:var(--bg);padding:8px 0 10px;display:grid;gap:8px}
+.entries{display:grid;gap:8px}
+.entry{display:grid;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 14px;text-decoration:none;color:var(--ink)}
+.entry:hover{border-color:var(--lupine)}
+.entry b{font-family:var(--display);font-size:1.05em}
+.entry span{font-size:.88em;color:var(--soft)}
+.gterm{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:grid;gap:4px}
+.gterm .spread b{font-family:var(--display)}
+.letter{font-family:var(--display);font-weight:800;color:var(--rose);font-size:1.3em;margin-top:8px}
+.lvl{display:grid;gap:4px}
+.lvl small{color:var(--soft)}
+.meta{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:14px}
+.meta ul{margin:0;padding-left:20px}
+mark{background:var(--goldTint);color:inherit;border-radius:3px;padding:0 2px}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+var esc = ICA.esc, md = ICA.md, app = document.getElementById("app"), bar;
+var LV = [["starter","Starter","Never done it"],["builder","Builder","Can do it with help"],["pro","Pro","Can teach it"]];
+var q = "", filt = "all", view = "entries";
+
+function setTitle(t){ document.title = t + " · Codex"; bar.querySelector(".title").textContent = t; }
+function plain(blocks){ return JSON.stringify(blocks||[]).replace(/\[\[(?:[a-z0-9-]+\|)?([^\]]+)\]\]|\{\{(?:[a-z0-9-]+\|)?([^}]+)\}\}/g, "$1$2").replace(/<[^>]+>/g," ").replace(/["\\{}\[\]]|\b(list|ol|table|tip|warn|key|ex|label|lead|fig|alt|cap|h)\b:/g," "); }
+function norm(s){ return String(s).toLowerCase().normalize ? String(s).toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"") : String(s).toLowerCase(); }
+function unitName(id){ var u = ICA.unitById[id]; return u ? "Unit "+u.n+" · "+u.title : ""; }
+function trackOfEntry(e){ var u = ICA.unitById[e.unit]; return u ? ICA.tracks[u.track] : null; }
+function snippet(e){ var s = e.summary || plain(e.levels && e.levels.starter).replace(/\s+/g," ").trim(); return s.length > 140 ? s.slice(0,137)+"…" : s; }
+
+function list(){
+  setTitle("Codex");
+  var units = ICA.units.filter(function(u){ return Object.keys(ICA.codex).some(function(k){ return ICA.codex[k].unit === u.id; }); });
+  app.innerHTML = '<div class="stack"><div><div class="eyebrow">Codex</div><h1>The library</h1><p class="muted">Look anything up. Every entry has three levels, so you can start simple and go deeper when you’re ready.</p></div>'+
+    '<div class="search"><label class="lb" for="q">Search the Codex</label><input type="search" id="q" placeholder="Try “backup”, “norms” or “Durkheim”" value="'+esc(q)+'" autocomplete="off">'+
+    '<div class="tabs" role="tablist"><button role="tab" data-view="entries" aria-selected="'+(view==="entries")+'">Entries</button><button role="tab" data-view="glossary" aria-selected="'+(view==="glossary")+'">Glossary</button></div>'+
+    '<div class="tabs wrap" aria-label="Filter by subject"><button data-f="all" aria-selected="'+(filt==="all")+'">Everything</button>'+tracksWith().map(function(t){ return '<button data-f="t:'+t.id+'" aria-selected="'+(filt==="t:"+t.id)+'">'+t.icon+' '+esc(t.name)+'</button>'; }).join("")+'</div>'+
+    '<div class="tabs wrap" aria-label="Filter by unit">'+units.filter(function(u){ return filt === "all" || filt === u.id || filt === "t:"+u.track || (ICA.unitById[filt] && ICA.unitById[filt].track === u.track); }).map(function(u){ return '<button data-f="'+u.id+'" aria-selected="'+(filt===u.id)+'">'+esc(u.title)+'</button>'; }).join("")+'</div></div><div id="results"></div></div>';
+  draw();
+  var inp = document.getElementById("q");
+  inp.addEventListener("input", function(){ q = inp.value; draw(); });
+}
+function tracksWith(){ var seen = {}; ICA.units.forEach(function(u){ if (Object.keys(ICA.codex).some(function(k){ return ICA.codex[k].unit === u.id; })) seen[u.track] = 1; }); return Object.keys(seen).map(function(k){ return ICA.tracks[k]; }).sort(function(a,b){ return a.n - b.n; }); }
+function inFilter(unitId){ if (filt === "all") return true; if (filt.indexOf("t:") === 0){ var u = ICA.unitById[unitId]; return !!u && u.track === filt.slice(2); } return unitId === filt; }
+function hl(text){ if (!q.trim()) return esc(text); var i = norm(text).indexOf(norm(q.trim())); if (i < 0) return esc(text); return esc(text.slice(0,i))+"<mark>"+esc(text.slice(i,i+q.trim().length))+"</mark>"+esc(text.slice(i+q.trim().length)); }
+function draw(){
+  var box = document.getElementById("results"), nq = norm(q.trim());
+  if (view === "entries"){
+    var es = Object.keys(ICA.codex).map(function(k){ return ICA.codex[k]; }).filter(function(e){ return inFilter(e.unit); });
+    if (nq){
+      es = es.map(function(e){ var t = norm(e.title), tags = norm((e.tags||[]).join(" ")), body = norm(plain([e.levels.starter, e.levels.builder, e.levels.pro])); var s = t.indexOf(nq) === 0 ? 4 : t.indexOf(nq) > -1 ? 3 : tags.indexOf(nq) > -1 ? 2 : body.indexOf(nq) > -1 ? 1 : 0; return {e:e, s:s}; }).filter(function(x){ return x.s; }).sort(function(a,b){ return b.s - a.s || (a.e.title < b.e.title ? -1 : 1); }).map(function(x){ return x.e; });
+    } else es.sort(function(a,b){ return a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1; });
+    box.innerHTML = es.length ? '<p class="small muted">'+es.length+' entr'+(es.length===1?"y":"ies")+'</p><div class="entries">'+es.map(function(e){ return '<a class="entry" href="#'+e.id+'"><b>'+hl(e.title)+'</b><span>'+esc(snippet(e))+'</span><span class="small">'+esc(unitName(e.unit))+'</span></a>'; }).join("")+'</div>' : '<p class="muted">Nothing matches “'+esc(q)+'”. Try a shorter word, or check the Glossary tab.</p>';
+  } else {
+    var ts = Object.keys(ICA.terms).map(function(k){ return ICA.terms[k]; }).filter(function(t){ return inFilter(t.unit) && (!nq || norm(t.term+" "+t.def).indexOf(nq) > -1); }).sort(function(a,b){ return a.term.toLowerCase() < b.term.toLowerCase() ? -1 : 1; });
+    var last = "", h = '<p class="small muted">'+ts.length+' term'+(ts.length===1?"":"s")+'</p><div class="stack">';
+    ts.forEach(function(t){ var L = t.term.charAt(0).toUpperCase(); if (!/[A-Z]/.test(L)) L = "#"; if (L !== last){ h += '<div class="letter">'+L+'</div>'; last = L; } h += '<div class="gterm" id="term-'+t.id+'"><div class="spread"><b>'+hl(t.term)+'</b>'+(t.codex && ICA.codex[t.codex] ? '<a class="small" href="#'+t.codex+'">Codex entry →</a>' : '')+'</div><div>'+md(t.def)+'</div></div>'; });
+    box.innerHTML = ts.length ? h+'</div>' : '<p class="muted">No terms match “'+esc(q)+'”.</p>';
+  }
+}
+
+function backlinks(e){
+  var hits = [];
+  Object.keys(ICA.lessons).forEach(function(k){ var l = ICA.lessons[k], s = JSON.stringify([l.learn, l.try]); var termIds = Object.keys(ICA.terms).filter(function(t){ return ICA.terms[t].codex === e.id; }); if (s.indexOf("{{"+e.id) > -1 || termIds.some(function(t){ return s.indexOf("[["+t) > -1; })) hits.push(l); });
+  return hits;
+}
+function entry(id){
+  var e = ICA.codex[id], tr = trackOfEntry(e), lv = ICA.load().settings.level || "starter";
+  if (!e.levels[lv]) lv = "starter";
+  setTitle(e.title);
+  var terms = Object.keys(ICA.terms).filter(function(t){ return ICA.terms[t].codex === id; }).map(function(t){ return ICA.terms[t]; });
+  var bl = backlinks(e);
+  var h = '<div class="stack"><a href="#" class="small">← All entries</a><div><span class="chip '+(tr?tr.cls:"")+'">'+esc(unitName(e.unit))+'</span><h1 style="margin-top:6px">'+esc(e.title)+'</h1>'+(e.aka ? '<p class="small muted">Also called: '+esc(e.aka.join(", "))+'</p>' : '')+'</div>'+
+    '<div class="tabs" role="tablist" aria-label="Level">'+LV.map(function(L){ return '<button role="tab" data-lv="'+L[0]+'" aria-selected="'+(L[0]===lv)+'">'+L[1]+'</button>'; }).join("")+'</div><div class="small muted" id="lvhint">'+LV.filter(function(L){ return L[0]===lv; })[0][2]+'</div><div class="prose" id="lvbody">'+ICA.blocks(e.levels[lv])+'</div><div class="meta">';
+  if (terms.length) h += '<div><b>Key terms</b><div class="row" style="margin-top:6px">'+terms.map(function(t){ return '<button class="chip" data-term="'+t.id+'" style="border:0;cursor:pointer">'+esc(t.term)+'</button>'; }).join("")+'</div></div>';
+  if (e.related && e.related.length) h += '<div><b>Related entries</b><ul>'+e.related.filter(function(r){ return ICA.codex[r]; }).map(function(r){ return '<li><a href="#'+r+'">'+esc(ICA.codex[r].title)+'</a></li>'; }).join("")+'</ul></div>';
+  if (bl.length) h += '<div><b>Learn it in Quests</b><ul>'+bl.map(function(l){ return '<li><a href="../quests/index.html#'+l.id+'">'+esc(l.title)+'</a> <span class="small muted">('+esc(unitName(l.unit))+')</span></li>'; }).join("")+'</ul></div>';
+  var reads = (e.read||[]).concat([]), srcs = e.sources || [];
+  if (reads.length || srcs.length) h += '<div><b>Read more</b><ul>'+reads.map(function(r){ var b = ICA.books[r.book]; return b ? '<li><a href="'+esc(b.url)+'" target="_blank" rel="noopener">'+esc(b.title)+'</a>: '+md(r.where)+'</li>' : ""; }).join("")+srcs.map(function(s){ return '<li><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.t)+'</a></li>'; }).join("")+'</ul></div>';
+  if (e.checked) h += '<p class="small muted">Facts checked: '+esc(e.checked)+'.</p>';
+  h += '<button class="report" data-report="Codex: '+esc(e.title)+'">Report a mistake in this entry</button></div></div>';
+  app.innerHTML = h;
+}
+
+app.addEventListener("click", function(e){
+  var t;
+  if ((t = e.target.closest("[data-view]"))){ view = t.getAttribute("data-view"); list(); return; }
+  if ((t = e.target.closest("[data-f]"))){ filt = t.getAttribute("data-f"); var y = window.scrollY, qv = document.getElementById("q").value; q = qv; list(); window.scrollTo(0, y); return; }
+  if ((t = e.target.closest("[data-lv]"))){ var lv = t.getAttribute("data-lv"), en = ICA.codex[location.hash.slice(1)]; ICA.load().settings.level = lv; ICA.save(); ICA.$$("[data-lv]").forEach(function(b){ b.setAttribute("aria-selected", b === t ? "true" : "false"); }); document.getElementById("lvbody").innerHTML = ICA.blocks(en.levels[lv]); document.getElementById("lvhint").textContent = LV.filter(function(L){ return L[0]===lv; })[0][2]; return; }
+  if ((t = e.target.closest("[data-report]"))){ ICA.report(t.getAttribute("data-report")); }
+});
+function route(){
+  ICA.closePop();
+  var h = location.hash.slice(1);
+  if (h === "glossary"){ view = "glossary"; list(); }
+  else if (h && ICA.codex[h]) entry(h);
+  else list();
+  window.scrollTo(0,0);
+}
+bar = ICA.topbar("Codex");
+ICA.loadAll("../", function(){ window.addEventListener("hashchange", route); route(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Arcade · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/catalog.js"></script>
+<script src="../shared/engine.js"></script>
+<style>
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.mode{display:grid;gap:6px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-radius:16px;padding:14px;color:var(--ink)}
+.mode:hover{border-color:var(--lupine)}
+.mode .ic{font-size:26px}
+.mode b{font-family:var(--display);font-size:1.15em}
+.mode span{font-size:.9em;color:var(--soft)}
+.hud{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-family:var(--mono);font-weight:600}
+.timer{font-size:1.4em}
+.timer.low{color:var(--bad)}
+.hearts{letter-spacing:3px}
+.unitpick{display:flex;flex-wrap:wrap;gap:8px}
+.unitpick label{display:flex;gap:6px;align-items:center;border:1.5px solid var(--line);background:var(--panel);border-radius:99px;padding:5px 12px;font-size:.92em}
+.unitpick input{accent-color:var(--lupine)}
+.flash{min-height:180px}
+.rate{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.rate button{display:grid;gap:2px;padding:10px 6px}
+.rate small{font-weight:400;color:var(--soft);font-size:.78em}
+.big{font-family:var(--display);font-size:clamp(40px,10vw,64px);font-weight:800;line-height:1}
+.flashq{font-size:1.12em;font-weight:700}
+.missed{display:grid;gap:8px}
+.missed .card{display:grid;gap:4px}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+var esc = ICA.esc, md = ICA.md, app = document.getElementById("app"), bar;
+var BOX_DAYS = [0, 1, 3, 7, 14, 30], DAY = 86400000;
+var picked = null, timerId = null;
+
+function setTitle(t){ document.title = t + " · Arcade"; bar.querySelector(".title").textContent = t; }
+function unitsWithQs(){ return ICA.units.filter(function(u){ return ICA.bank.some(function(q){ return q.unit === u.id; }); }); }
+function defaultPick(){
+  var st = ICA.load(), us = unitsWithQs(), mine = us.filter(function(u){ return st.tracks.indexOf(u.track) > -1; });
+  return (mine.length ? mine : us).map(function(u){ return u.id; });
+}
+function pool(){ return ICA.bank.filter(function(q){ return picked.indexOf(q.unit) > -1; }); }
+function cards(){ return ICA.load().cards; }
+function dueList(){ var now = Date.now(), c = cards(); return pool().filter(function(q){ return c[q.id] && c[q.id].due <= now; }); }
+function newList(){ var c = cards(); return pool().filter(function(q){ return !c[q.id]; }); }
+function stopTimer(){ if (timerId){ clearInterval(timerId); timerId = null; } }
+
+function home(){
+  stopTimer(); setTitle("Arcade");
+  if (!picked) picked = defaultPick();
+  var us = unitsWithQs(), st = ICA.load(), best = st.arcade.best;
+  var learned = Object.keys(st.cards).filter(function(k){ return st.cards[k].box >= 3; }).length;
+  app.innerHTML = '<div class="stack"><div><div class="eyebrow">Arcade</div><h1>Practice games</h1><p class="muted">Every question explains its answer. Nothing here can be lost, and there are no streaks to keep.</p></div>'+
+    '<div class="card stack"><b>Questions from</b><div class="unitpick">'+us.map(function(u){ return '<label><input type="checkbox" data-unit="'+u.id+'"'+(picked.indexOf(u.id) > -1 ? " checked" : "")+'>'+esc(u.title)+'</label>'; }).join("")+'</div><span class="small muted" id="poolsize"></span></div>'+
+    '<div class="modes">'+
+      '<button class="mode" data-mode="practice"><span class="ic" aria-hidden="true">🎯</span><b>Practice</b><span>10 questions, no clock. Read every explanation.</span></button>'+
+      '<button class="mode" data-mode="cards"><span class="ic" aria-hidden="true">🗂️</span><b>Flashcards</b><span id="cardinfo">Spaced review that brings cards back just before you’d forget them.</span></button>'+
+      '<button class="mode" data-mode="blitz"><span class="ic" aria-hidden="true">⚡</span><b>Blitz</b><span>60 seconds. How many can you get?'+(best.blitz ? " Your best: "+best.blitz+"." : "")+'</span></button>'+
+      '<button class="mode" data-mode="survival"><span class="ic" aria-hidden="true">❤️</span><b>Survival</b><span>Three hearts. Keep going as long as you can.'+(best.survival ? " Your best: "+best.survival+"." : "")+'</span></button>'+
+    '</div><p class="small muted">Cards you know well: '+learned+'. Questions come from the lessons, so finishing lessons in Quests first makes these easier.</p></div>';
+  updatePool();
+}
+function updatePool(){
+  var n = pool().length, d = dueList().length, nw = newList().length;
+  var ps = document.getElementById("poolsize"); if (ps) ps.textContent = n+" questions selected.";
+  var ci = document.getElementById("cardinfo"); if (ci) ci.textContent = n ? (d ? d+" card"+(d===1?"":"s")+" ready to review" : "Nothing due right now")+(nw ? " · "+nw+" new" : "")+"." : "Choose at least one unit.";
+  ICA.$$("[data-mode]").forEach(function(b){ b.disabled = !n; });
+}
+
+/* ---------- one question (shared by practice, blitz, survival) ---------- */
+function ask(box, q, quick, cb){
+  box.innerHTML = ""; var d = document.createElement("div"); box.appendChild(d);
+  ICA.exercise(d, {id:q.id, type:"mcq", q:q.q, options:q.options, why:q.why, fixed:q.fixed}, {quiz:true, onAnswer:function(ok){ cb(ok); }});
+  if (quick){ var f = d.querySelector(".fbw"); if (f) f.hidden = true; }
+}
+function review(missed){
+  if (!missed.length) return '<p>No misses. 🎉</p>';
+  return '<h2>Worth another look</h2><div class="missed">'+missed.map(function(q){ var r = q.options.filter(function(o){ return o.ok; }); return '<div class="card"><b>'+md(q.q)+'</b><span><b>Answer:</b> '+r.map(function(o){ return md(o.t); }).join("; ")+'</span><span class="small">'+md(r[0].why||"")+(q.why ? " "+md(q.why) : "")+'</span></div>'; }).join("")+'</div>';
+}
+function endScreen(title, score, sub, missed, key){
+  stopTimer();
+  var st = ICA.load(), prev = st.arcade.best[key] || 0, isBest = key && score > prev;
+  if (isBest){ st.arcade.best[key] = score; ICA.save(); }
+  app.innerHTML = '<div class="stack"><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">'+esc(title)+'</div><div class="big">'+score+'</div><p>'+esc(sub)+'</p>'+(isBest ? '<span class="chip done">New personal best</span>' : '')+'<div class="row"><button class="btn primary" data-mode="'+key+'">Play again</button><button class="btn" data-home>Choose another game</button></div></div>'+review(missed)+'</div>';
+}
+
+/* ---------- practice ---------- */
+function practice(){
+  setTitle("Practice");
+  var qs = ICA.shuffle(pool()).slice(0, 10), i = 0, score = 0, missed = [];
+  app.innerHTML = '<div class="stack"><div class="hud"><span>Question <span id="pos">1</span> / '+qs.length+'</span><span>Score <span id="sc">0</span></span></div><div id="qb"></div><div id="nav"></div></div>';
+  function next(){
+    document.getElementById("pos").textContent = i+1; document.getElementById("nav").innerHTML = "";
+    ask(document.getElementById("qb"), qs[i], false, function(ok){ if (ok) score++; else missed.push(qs[i]); document.getElementById("sc").textContent = score; document.getElementById("nav").innerHTML = '<div class="lessonnav"><span></span><button class="btn primary" id="nx">'+(i < qs.length-1 ? "Next →" : "Finish")+'</button></div>'; var b = document.getElementById("nx"); b.focus(); b.onclick = function(){ i++; if (i < qs.length) next(); else endScreen("Practice", score, "out of "+qs.length, missed, "practice"); }; });
+  }
+  next();
+}
+
+/* ---------- blitz ---------- */
+function blitz(){
+  setTitle("Blitz");
+  var qs = ICA.shuffle(pool()), i = 0, score = 0, missed = [], left = 60, busy = false;
+  app.innerHTML = '<div class="stack"><div class="hud"><span class="timer" id="tm" aria-label="Seconds left">60</span><span>Score <span id="sc">0</span></span></div><div id="qb"></div><p class="small muted">Answers flash green or red, then the next question appears. Full explanations come at the end.</p></div>';
+  timerId = setInterval(function(){ left--; var t = document.getElementById("tm"); if (!t){ stopTimer(); return; } t.textContent = left; t.classList.toggle("low", left <= 10); if (left <= 0) endScreen("Blitz", score, "correct in 60 seconds", missed, "blitz"); }, 1000);
+  function next(){
+    if (i >= qs.length){ qs = qs.concat(ICA.shuffle(pool())); }
+    busy = false;
+    ask(document.getElementById("qb"), qs[i], true, function(ok){ if (busy) return; busy = true; if (ok) score++; else if (missed.indexOf(qs[i]) < 0) missed.push(qs[i]); var s = document.getElementById("sc"); if (s) s.textContent = score; setTimeout(function(){ if (!timerId) return; i++; next(); }, ok ? 450 : 900); });
+  }
+  next();
+}
+
+/* ---------- survival ---------- */
+function survival(){
+  setTitle("Survival");
+  var qs = ICA.shuffle(pool()), i = 0, score = 0, lives = 3, missed = [];
+  app.innerHTML = '<div class="stack"><div class="hud"><span class="hearts" id="hp" aria-label="Hearts left">❤️❤️❤️</span><span>Score <span id="sc">0</span></span></div><div id="qb"></div><div id="nav"></div></div>';
+  function next(){
+    document.getElementById("nav").innerHTML = "";
+    if (i >= qs.length){ endScreen("Survival", score, "You answered every question in the pool!", missed, "survival"); return; }
+    ask(document.getElementById("qb"), qs[i], false, function(ok){
+      if (ok) score++; else { lives--; missed.push(qs[i]); }
+      document.getElementById("sc").textContent = score;
+      document.getElementById("hp").textContent = lives > 0 ? new Array(lives+1).join("❤️") : "—";
+      document.getElementById("hp").setAttribute("aria-label", lives+" hearts left");
+      var last = lives <= 0;
+      document.getElementById("nav").innerHTML = '<div class="lessonnav"><span></span><button class="btn primary" id="nx">'+(last ? "See my score" : "Next →")+'</button></div>';
+      var b = document.getElementById("nx"); b.focus(); b.onclick = function(){ if (last) endScreen("Survival", score, "correct before the hearts ran out", missed, "survival"); else { i++; next(); } };
+    });
+  }
+  next();
+}
+
+/* ---------- flashcards (Leitner boxes) ---------- */
+function flashcards(){
+  setTitle("Flashcards");
+  var due = ICA.shuffle(dueList()), fresh = ICA.shuffle(newList()).slice(0, Math.max(0, 10 - Math.min(due.length, 10))), queue = due.concat(fresh), done = 0, again = [];
+  if (!queue.length){ app.innerHTML = '<div class="stack"><div class="card stack"><h2>All caught up</h2><p>No cards are due right now and there are no new cards in the units you chose. Cards come back on their own schedule, so check again tomorrow, or play Practice for now.</p><div class="row"><button class="btn primary" data-home>Back to the Arcade</button></div></div></div>'; return; }
+  app.innerHTML = '<div class="stack"><div class="hud"><span>Card <span id="pos">1</span> / <span id="tot">'+queue.length+'</span></span><span class="small">'+due.length+' review · '+fresh.length+' new</span></div><div class="card flash stack" id="fc"></div></div>';
+  function show(){
+    var q = queue[done]; document.getElementById("pos").textContent = Math.min(done+1, queue.length); document.getElementById("tot").textContent = queue.length;
+    var right = q.options.filter(function(o){ return o.ok; });
+    var fc = document.getElementById("fc");
+    fc.innerHTML = '<div class="eyebrow">'+(cards()[q.id] ? "Review" : "New card")+'</div><div class="flashq">'+md(q.q)+'</div><p class="small muted">Think of your answer, then reveal it.</p><div class="row"><button class="btn primary" id="rev">Show answer</button></div>';
+    document.getElementById("rev").focus();
+    document.getElementById("rev").onclick = function(){
+      fc.innerHTML = '<div class="flashq">'+md(q.q)+'</div><div class="fb ok"><b>'+right.map(function(o){ return md(o.t); }).join("; ")+'</b><div>'+md(right[0].why||"")+(q.why ? " "+md(q.why) : "")+'</div></div><div><b>How well did you know it?</b></div><div class="rate"><button class="btn" data-r="0">Again<small>Back tomorrow</small></button><button class="btn" data-r="1">Good<small>'+when(q,1)+'</small></button><button class="btn" data-r="2">Easy<small>'+when(q,2)+'</small></button></div>';
+      ICA.$$("[data-r]", fc).forEach(function(b){ b.onclick = function(){ rate(q, +b.getAttribute("data-r")); }; });
+    };
+  }
+  function when(q, r){ var c = cards()[q.id] || {box:0}, nb = Math.min(BOX_DAYS.length-1, (c.box||0) + r), d = BOX_DAYS[nb]; return d <= 1 ? "Back tomorrow" : "Back in "+d+" days"; }
+  function rate(q, r){
+    var st = ICA.load(), c = st.cards[q.id] || {box:0};
+    if (r === 0){ c.box = 1; if (again.indexOf(q) < 0){ again.push(q); queue.push(q); } }
+    else c.box = Math.min(BOX_DAYS.length-1, (c.box||0) + r);
+    c.due = ICA.today() + Math.max(1, BOX_DAYS[c.box])*DAY; c.seen = Date.now();
+    if (r === 0) c.due = ICA.today() + DAY;
+    st.cards[q.id] = c; ICA.save();
+    done++;
+    if (done < queue.length) show();
+    else {
+      var learned = Object.keys(st.cards).filter(function(k){ return st.cards[k].box >= 3; }).length;
+      app.innerHTML = '<div class="stack"><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">Session done</div><div class="big">'+done+'</div><p>cards reviewed. Each one comes back when it’s due: soon if it was tricky, later if it was easy.</p><p class="small muted">Cards you know well: '+learned+'</p><div class="row"><button class="btn primary" data-home>Back to the Arcade</button></div></div></div>';
+    }
+  }
+  show();
+}
+
+app.addEventListener("click", function(e){
+  var t;
+  if ((t = e.target.closest("[data-mode]"))){ var m = t.getAttribute("data-mode"); stopTimer(); ({practice:practice, blitz:blitz, survival:survival, cards:flashcards})[m](); window.scrollTo(0,0); return; }
+  if (e.target.closest("[data-home]")){ home(); window.scrollTo(0,0); }
+});
+app.addEventListener("change", function(e){
+  var t = e.target.closest("[data-unit]"); if (!t) return;
+  var id = t.getAttribute("data-unit"); if (t.checked){ if (picked.indexOf(id) < 0) picked.push(id); } else picked = picked.filter(function(x){ return x !== id; });
+  updatePool();
+});
+bar = ICA.topbar("Arcade");
+ICA.loadAll("../", function(){ home(); });
+})();
+</script>
+</body>
+</html>

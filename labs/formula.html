@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Formula Lab · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/engine.js"></script>
+<script src="../shared/formula.js"></script>
+<script src="../shared/formulalab.js"></script>
+<script src="../data/lab-formula.js"></script>
+<style>
+.groups{display:grid;gap:14px}
+.grp h2{font-size:1.15em;margin:0}
+.grp p{margin:2px 0 8px}
+.chal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.chal a{display:flex;gap:8px;align-items:flex-start;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:9px 11px;color:var(--ink);text-decoration:none;font-size:.95em;line-height:1.3}
+.chal a:hover{border-color:var(--lupine)}
+.chal a.done{border-color:var(--ok);background:var(--okTint)}
+.chal .n{font-family:var(--mono);font-size:11px;color:var(--soft);min-width:18px}
+/* the sheet */
+.sheetbox{border:1.5px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+table.grid{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13.5px}
+table.grid th,table.grid td{border:1px solid var(--line);padding:6px 4px;text-align:left;vertical-align:top;overflow-wrap:break-word;word-break:normal;hyphens:auto;line-height:1.25}
+table.grid thead th{background:var(--panel2);font-family:var(--mono);font-size:11px;color:var(--soft);text-align:center;padding:3px}
+table.grid th.rn{width:26px;background:var(--panel2);font-family:var(--mono);font-size:11px;color:var(--soft);text-align:center;font-weight:400}
+table.grid td{cursor:pointer;min-height:30px}
+table.grid td.num{text-align:right;font-variant-numeric:tabular-nums}
+table.grid tr.hd td{font-weight:700;background:var(--panel2)}
+table.grid td.tgt{background:var(--goldTint);outline:2px solid var(--gold);outline-offset:-2px;font-weight:700}
+table.grid td.fill{background:var(--goldTint)}
+table.grid td.err{color:var(--bad)}
+table.grid td.good{background:var(--okTint)}
+table.grid td.hl0{box-shadow:inset 0 0 0 2px var(--lupine)} table.grid td.hl1{box-shadow:inset 0 0 0 2px var(--rose)}
+table.grid td.hl2{box-shadow:inset 0 0 0 2px var(--sage)} table.grid td.hl3{box-shadow:inset 0 0 0 2px var(--gold)}
+.fbar{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:6px;margin-top:10px}
+.fbar label{font-family:var(--mono);font-style:italic;font-weight:600;color:var(--soft);padding:0 4px}
+.fbar input{width:100%;font-family:var(--mono);font-size:16px;padding:10px 10px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
+.fbar input:focus{border-color:var(--lupine);outline:none}
+.keys{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;margin-top:8px}
+.keys button{font-family:var(--mono);font-size:15px;padding:7px 0;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.keys button.wide{grid-column:span 2;font-size:17px}
+.fb{border-radius:12px;padding:11px 14px;border-left:4px solid var(--line);background:var(--panel2)}
+.fb.ok{border-color:var(--ok);background:var(--okTint)}
+.fb.bad{border-color:var(--rose);background:var(--roseTint)}
+.fb .h{display:block;font-family:var(--display);font-size:1.08em;margin-bottom:4px}
+.fb p{margin:6px 0}
+.caret{font-family:var(--mono);background:var(--bg);border-radius:8px;padding:6px 8px;overflow-wrap:anywhere;font-size:14px}
+.caret mark{background:var(--rose);color:var(--bg);border-radius:3px;padding:0 1px}
+.row.wrapbtns{flex-wrap:wrap}
+.legend{font-size:.85em;color:var(--soft)}
+.legend span{display:inline-block;width:10px;height:10px;border-radius:3px;margin:0 3px -1px 8px}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+ICA.base = "../";
+var bar = ICA.topbar("Formula Lab"), app = document.getElementById("app"), esc = ICA.esc, md = ICA.md;
+var LIST = window.FLAB || [], GROUPS = window.FLAB_GROUPS || [], BY = {};
+LIST.forEach(function(c, i){ BY[c.id] = c; c.i = i; });
+function store(){ var s = ICA.load(); s.labs = s.labs || {}; s.labs.formula = s.labs.formula || {}; return s.labs.formula; }
+function setTitle(t){ document.title = t + " · Formula Lab"; bar.querySelector(".title").textContent = t; }
+
+/* ---------- home ---------- */
+function home(){
+  setTitle("Formula Lab");
+  var st = store(), n = LIST.filter(function(c){ return st[c.id] && st[c.id].done; }).length;
+  var h = '<div class="stack"><a class="small" href="index.html">← All labs</a><div><div class="eyebrow">Labs</div><h1>Formula Lab</h1>'+
+    '<p class="lead">A small practice spreadsheet. Write a formula, press Check, and the lab tells you exactly what happened.</p></div>'+
+    '<div class="callout key"><b class="h">How checking works</b><ul style="margin:6px 0 0;padding-left:18px">'+
+    '<li>Your formula runs on the data you see, and on hidden copies with different numbers. So a typed-in answer, or a formula that only works by luck, won’t pass. That’s how real spreadsheets get checked, too.</li>'+
+    '<li>Any formula that gives the right results everywhere counts as correct, not just one “official” answer.</li>'+
+    '<li>When it’s not right yet, you’ll get the reason: which cell, what it gave, and what usually causes that.</li></ul></div>'+
+    '<p class="small muted">Formulas work the same way in Excel, Google Sheets and LibreOffice Calc for nearly everything here (where they differ, the feedback says so), and almost the same in Apple Numbers. If your app uses semicolons ( ; ) between the parts of a function, the lab accepts those too. '+n+' of '+LIST.length+' solved.</p>'+
+    '<div class="groups">'+GROUPS.map(function(g){
+      var cs = LIST.filter(function(c){ return c.group === g.id; });
+      return '<section class="grp"><h2>'+esc(g.title)+'</h2><p class="small muted">'+esc(g.blurb)+'</p><div class="chal">'+cs.map(function(c){ var d = st[c.id] && st[c.id].done; return '<a href="#'+c.id+'" class="'+(d ? "done" : "")+'"><span class="n">'+(d ? "✓" : (c.i+1))+'</span><span>'+esc(c.title)+'</span></a>'; }).join("")+'</div></section>';
+    }).join("")+'</div></div>';
+  app.innerHTML = h; window.scrollTo(0, 0);
+}
+
+/* ---------- a challenge ---------- */
+var cur = null, hintN = 0, lastRes = null;
+function fmtOf(ch, a){ var f = ch.fmt || {}; return f[a] || f[a.replace(/\d+$/, "")]; }
+function challenge(id){
+  var ch = BY[id]; if (!ch){ home(); return; }
+  cur = ch; hintN = 0; lastRes = null;
+  setTitle(ch.title);
+  var st = store()[id] || {}, g = GROUPS.filter(function(x){ return x.id === ch.group; })[0] || {};
+  var h = '<div class="stack"><a class="small" href="#">← All challenges</a>'+
+    '<div><div class="eyebrow">'+esc(g.title || "")+' · '+(ch.i+1)+' of '+LIST.length+(st.done ? ' · ✓ solved' : '')+'</div><h1 style="margin-top:4px">'+esc(ch.title)+'</h1></div>'+
+    '<div class="prose"><p>'+md(ch.task)+'</p></div>'+
+    '<div class="sheetbox" id="sheet"></div>'+
+    '<div class="legend" id="legend"></div>'+
+    '<div class="fbar"><label for="fx">fx</label><input id="fx" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text" placeholder="=" aria-describedby="fxhelp" value="'+esc(st.f || ch.start || "")+'"></div>'+
+    '<p class="small muted" id="fxhelp" style="margin:4px 0 0">Tip: tap a cell to add its address. '+(ch.fill ? 'Write the formula for <b>'+esc(ch.target)+'</b>; the lab copies it to '+esc(ch.fill)+'.' : 'The answer goes in <b>'+esc(ch.target)+'</b>.')+'</p>'+
+    '<div class="keys" role="group" aria-label="Formula symbols">'+["=","(",")",":",",","$","\"","&","+","-","*","/",">","<"].map(function(k){ return '<button type="button" data-k="'+esc(k)+'">'+esc(k)+'</button>'; }).join("")+'<button type="button" class="wide" data-k="⌫" aria-label="Delete one character">⌫</button></div>'+
+    '<div class="row wrapbtns"><button class="btn primary" id="check">Check</button><button class="btn" id="hint">Hint</button><button class="btn" id="show">Show an answer</button>'+(ch.start ? '<button class="btn" id="reset">Start again</button>' : '')+'</div>'+
+    '<div id="fb" aria-live="polite"></div>'+
+    (ch.lesson ? '<p class="small muted">Learn this in <a href="../quests/index.html#'+esc(ch.lesson)+'">Quests: Unit 9</a>.</p>' : '')+
+    '<div class="lessonnav" id="nav"></div></div>';
+  app.innerHTML = h; window.scrollTo(0, 0);
+  drawSheet(null); highlight();
+  var fx = document.getElementById("fx");
+  fx.addEventListener("input", function(){ highlight(); });
+  fx.addEventListener("keydown", function(e){ if (e.key === "Enter"){ e.preventDefault(); check(); } });
+  nav();
+}
+function drawSheet(results){
+  var ch = cur, rows = ch.data, w = Math.max.apply(null, rows.map(function(r){ return r.length; }));
+  var tset = {}, ts = FormulaLab.targets(ch); ts.forEach(function(t, i){ tset[FX.addr(t.c, t.r)] = i === 0 ? "tgt" : "fill"; });
+  var nrows = Math.max(rows.length, ts.reduce(function(m, t){ return Math.max(m, t.r); }, 0));
+  var lens = [];
+  for (var cc = 1; cc <= w; cc++){ var mx = 2; for (var rr = 1; rr <= nrows; rr++){ var vv = rows[rr-1] ? rows[rr-1][cc-1] : null; var ad = FX.addr(cc, rr); var tt = tset[ad] ? "000.00" : vv === null || vv === undefined ? "" : typeof vv === "number" ? FX.display(vv, fmtOf(ch, ad)) : String(vv); var longest = tt.split(/\s+/).reduce(function(m, x){ return Math.max(m, x.length); }, 0); mx = Math.max(mx, Math.min(12, Math.max(longest, Math.ceil(tt.length / 2)))); } lens.push(mx); }
+  var tot = lens.reduce(function(a, b){ return a + b; }, 0);
+  var h = '<table class="grid" aria-label="Spreadsheet"><colgroup><col style="width:26px">'+lens.map(function(l){ return '<col style="width:'+(100*l/tot).toFixed(1)+'%">'; }).join("")+'</colgroup><thead><tr><th class="rn"></th>';
+  for (var c = 1; c <= w; c++) h += '<th scope="col">'+FX.numToCol(c)+'</th>';
+  h += '</tr></thead><tbody>';
+  for (var r = 1; r <= nrows; r++){
+    h += '<tr class="'+(r === 1 && ch.header !== false ? "hd" : "")+'"><th class="rn" scope="row">'+r+'</th>';
+    for (c = 1; c <= w; c++){
+      var a = FX.addr(c, r), v = rows[r-1] ? rows[r-1][c-1] : null, cls = [], txt = "";
+      if (tset[a]){
+        cls.push(tset[a]);
+        if (results && a in results){ var rv = results[a]; txt = FX.display(rv, fmtOf(ch, a)); if (FX.isErr(rv)) cls.push("err"); else if (lastRes && lastRes.ok) cls.push("good"); }
+        else txt = tset[a] === "tgt" ? "?" : "";
+      } else if (v !== null && v !== undefined && v !== ""){
+        txt = typeof v === "number" ? FX.display(v, fmtOf(ch, a)) : String(v);
+        if (typeof v === "number") cls.push("num");
+      }
+      if (results && typeof results[a] === "number") cls.push("num");
+      h += '<td data-a="'+a+'" class="'+cls.join(" ")+'" title="'+a+'">'+esc(txt)+'</td>';
+    }
+    h += '</tr>';
+  }
+  h += '</tbody></table>';
+  document.getElementById("sheet").innerHTML = h;
+}
+var COLORS = ["var(--lupine)","var(--rose)","var(--sage)","var(--gold)"];
+function highlight(){
+  var fx = document.getElementById("fx"); if (!fx) return;
+  ICA.$$("table.grid td").forEach(function(td){ td.classList.remove("hl0","hl1","hl2","hl3"); });
+  var leg = document.getElementById("legend"); leg.innerHTML = "";
+  var refs = [];
+  try { refs = FX.refsIn(FX.parse(fx.value.trim()[0] === "=" ? fx.value : "=" + fx.value).ast); } catch (e){ return; }
+  var parts = [];
+  refs.slice(0, 8).forEach(function(rf, i){
+    var k = i % 4;
+    for (var r = rf.r1; r <= rf.r2; r++) for (var c = rf.c1; c <= rf.c2; c++){ var td = document.querySelector('td[data-a="'+FX.addr(c, r)+'"]'); if (td) td.classList.add("hl"+k); }
+    parts.push('<span style="background:'+COLORS[k]+'"></span>'+esc(rf.node.k === "range" ? FX.refText(rf.node.a)+":"+FX.refText(rf.node.b) : FX.refText(rf.node)));
+  });
+  if (parts.length) leg.innerHTML = "Your formula points to:" + parts.join("");
+}
+function insertAtCursor(text){
+  var fx = document.getElementById("fx"), s = fx.selectionStart != null ? fx.selectionStart : fx.value.length, e = fx.selectionEnd != null ? fx.selectionEnd : s;
+  if (text === "⌫"){ if (s === e && s > 0) s--; fx.value = fx.value.slice(0, s) + fx.value.slice(e); fx.setSelectionRange(s, s); }
+  else { if (!fx.value && text !== "=") text = "=" + text; fx.value = fx.value.slice(0, s) + text + fx.value.slice(e); var p = s + text.length; fx.setSelectionRange(p, p); }
+  highlight();
+}
+function check(){
+  var fx = document.getElementById("fx"), ch = cur, res = FormulaLab.check(ch, fx.value);
+  lastRes = res;
+  var st = store(); st[ch.id] = st[ch.id] || {}; st[ch.id].f = fx.value; st[ch.id].tries = (st[ch.id].tries || 0) + 1;
+  if (res.ok && !st[ch.id].done) st[ch.id].done = Date.now();
+  ICA.save();
+  drawSheet(res.results); highlight();
+  var box = document.getElementById("fb"), cls = res.ok ? "ok" : res.kind === "empty" ? "" : "bad";
+  var h = '<div class="fb '+cls+'"><b class="h">'+(res.ok ? "✓ " : "")+esc(res.title)+'</b>';
+  if (res.kind === "syntax" && res.pos){ var t = fx.value.trim(), p = Math.min(Math.max(res.pos, 1), t.length); h += '<div class="caret" aria-label="Where the problem is">'+esc(t.slice(0, p))+'<mark>'+esc(t.slice(p, p+1) || " ")+'</mark>'+esc(t.slice(p+1))+'</div>'; }
+  h += String(res.msg).split(/\n\n+/).map(function(par){ return '<p>'+md(par)+'</p>'; }).join("");
+  (res.notes || []).forEach(function(n){ h += '<p class="small">'+md(n)+'</p>'; });
+  h += '</div>';
+  box.innerHTML = h;
+  nav();
+  if (res.ok) box.scrollIntoView({block:"nearest", behavior:"smooth"});
+}
+function nav(){
+  var ch = cur, next = LIST[ch.i + 1], el = document.getElementById("nav"), done = (store()[ch.id] || {}).done;
+  el.innerHTML = (LIST[ch.i - 1] ? '<a class="btn" href="#'+LIST[ch.i-1].id+'">← Back</a>' : '<span></span>') + (next ? '<a class="btn'+(done ? ' primary' : '')+'" href="#'+next.id+'">'+(done ? "Next challenge →" : "Skip →")+'</a>' : '<a class="btn primary" href="#">All challenges</a>');
+}
+document.addEventListener("click", function(e){
+  var t;
+  if (!cur || !document.getElementById("fx")) return;
+  if ((t = e.target.closest("td[data-a]"))){ insertAtCursor(t.getAttribute("data-a")); document.getElementById("fx").focus({preventScroll:true}); return; }
+  if ((t = e.target.closest("[data-k]"))){ insertAtCursor(t.getAttribute("data-k")); return; }
+  if (e.target.id === "check"){ check(); return; }
+  if (e.target.id === "reset"){ document.getElementById("fx").value = cur.start || ""; highlight(); document.getElementById("fb").innerHTML = ""; drawSheet(null); return; }
+  if (e.target.id === "hint"){
+    var hs = cur.hints || [], box = document.getElementById("fb");
+    if (!hs.length){ box.innerHTML = '<div class="fb"><b class="h">Hint</b><p>Re-read the task and check which cells hold the values you need.</p></div>'; return; }
+    var i = Math.min(hintN, hs.length - 1); hintN++;
+    box.innerHTML = '<div class="fb"><b class="h">Hint '+(i+1)+' of '+hs.length+'</b><p>'+md(hs[i])+'</p>'+(hintN >= hs.length ? '<p class="small muted">That’s the last hint. “Show an answer” reveals a full solution.</p>' : '')+'</div>';
+    return;
+  }
+  if (e.target.id === "show"){
+    var b2 = document.getElementById("fb");
+    b2.innerHTML = '<div class="fb"><b class="h">One answer</b><div class="caret">'+esc(cur.answer)+'</div><p>'+md(cur.explain || "")+'</p>'+((cur.also||[]).length ? '<p>Also correct: '+cur.also.map(function(f){ return '<code>'+esc(f)+'</code>'; }).join(", ")+'</p>' : '')+'<p class="small muted">Try typing it in yourself and pressing Check: typing it once helps it stick.</p></div>';
+    return;
+  }
+});
+function route(){ var id = location.hash.slice(1); if (id && BY[id]) challenge(id); else { cur = null; home(); } }
+window.addEventListener("hashchange", route);
+route();
+})();
+</script>
+</body>
+</html>
