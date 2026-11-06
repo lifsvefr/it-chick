@@ -133,6 +133,12 @@ ICA.blocks = function(list){
 
 /* ---------- toast, sheet, glossary pop-up ---------- */
 var toastT;
+/* Mugi, the academy's guide. mood: hello | think | oops | yay | tip | sleepy */
+ICA.MUGI_ALT = {hello:"Mugi waving hello", think:"Mugi thinking, hand on chin", oops:"Mugi wincing with a sweat drop", yay:"Mugi cheering with sparkly eyes", tip:"Mugi raising one finger to explain", sleepy:"Mugi dozing off"};
+ICA.mugi = function(mood, html, opt){
+  opt = opt || {};
+  return '<div class="mugi'+(opt.small ? " sm" : "")+(opt.cls ? " "+opt.cls : "")+'"><img src="'+ICA.base+'shared/mascot/'+mood+'.webp" alt="'+ICA.MUGI_ALT[mood]+'" width="'+(opt.small ? 64 : 96)+'" loading="lazy"><div class="bubble">'+html+'</div></div>';
+};
 ICA.toast = function(msg){
   var t = ICA.$(".toast"); if (!t){ t = document.createElement("div"); t.className = "toast"; t.setAttribute("role","status"); document.body.appendChild(t); }
   t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(function(){ t.hidden = true; }, 2200);

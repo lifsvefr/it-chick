@@ -18,6 +18,7 @@ ICA.addUnit({
   /* ================= LESSON 1 ================= */
   {
     id:"t1u1-l1", title:"What a computer is", minutes:45,
+    hook:{q:"Which of these is a computer?", options:["A smartwatch","A Wi-Fi router","The control unit in a car","All of them"], answer:3, reveal:"All of them. Each one takes in information, follows stored instructions, keeps data and gives a result. A router is a computer with no screen, and a modern car has dozens of small ones. That one idea, input → processing → storage → output, is what this lesson is built on."},
     goals:[
       "Describe any device using four jobs: input, processing, storage and output",
       "Tell hardware from software (and spot the firmware in between)",
@@ -162,6 +163,7 @@ ICA.addUnit({
   /* ================= LESSON 2 ================= */
   {
     id:"t1u1-l2", title:"Inside the machine", minutes:55,
+    hook:{q:"A laptop slows to a crawl with a video call and twenty browser tabs open. Which part is most likely overloaded?", options:["Its storage drive is too full","Its RAM, the working memory","Its screen","Its battery"], answer:1, reveal:"Most likely the **RAM**. Everything you have open right now sits in RAM, like ingredients on a cook’s countertop. Twenty tabs plus a video call fill the counter, and the computer starts juggling. Closing tabs usually helps more than deleting files."},
     goals:[
       "Explain what the CPU, RAM, storage and GPU each do, in plain words",
       "Tell memory (RAM) from storage and use the words correctly",
@@ -328,6 +330,7 @@ ICA.addUnit({
   /* ================= LESSON 3 ================= */
   {
     id:"t1u1-l3", title:"Bits, bytes and sizes", minutes:55,
+    hook:{q:"Your internet plan says **100 Mbps**. In perfect conditions, roughly how long does a **100 MB** file take to download?", options:["About 1 second","About 8 seconds","About 100 seconds","About 13 minutes"], answer:1, reveal:"About **8 seconds**. Internet speeds use **megabits** (small b) and file sizes use **megabytes** (big B), and one byte is 8 bits. So 100 MB is 800 megabits, and 800 ÷ 100 = 8 seconds. That lowercase-b trap is exactly what this lesson untangles."},
     goals:[
       "Explain in plain words why computers use binary, and what a bit and a byte are",
       "Use KB, MB, GB and TB correctly, and know when 1,000 or 1,024 is meant",
@@ -481,6 +484,7 @@ ICA.addUnit({
   /* ================= LESSON 4 ================= */
   {
     id:"t1u1-l4", title:"Operating systems and apps", minutes:50,
+    hook:{q:"Two apps on your phone both want the camera at the same moment. Who decides which one gets it?", options:["The camera itself","Whichever app opened first","The operating system","Your phone company"], answer:2, reveal:"The **operating system**. Think of it as a hotel manager: apps are the guests, the hardware is the rooms and kitchen, and the manager hands them out, keeps guests out of each other’s rooms, and asks you before anyone gets the camera or your location."},
     goals:[
       "Explain the main jobs of an operating system",
       "Name the main operating systems and the devices they run on",
@@ -641,6 +645,7 @@ ICA.addUnit({
   /* ================= LESSON 5 ================= */
   {
     id:"t1u1-l5", title:"First aid for your device", minutes:50,
+    hook:{q:"Your phone has frozen and the screen won’t respond. What should you try first?", options:["A factory reset","Restart it","Take it to a repair shop","Delete some apps"], answer:1, reveal:"**Restart it.** A restart clears working memory and stops whatever got stuck, and it fixes a surprising number of problems without losing anything. A factory reset erases everything, so it comes last, after a backup. This lesson gives you the whole first-aid order."},
     goals:[
       "Explain why restarting fixes so many problems, and the difference between restart and shut down on Windows",
       "Check for updates and free up storage on your own devices",

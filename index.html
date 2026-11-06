@@ -91,8 +91,9 @@
     <div><div class="eyebrow">Your study desk</div><h1>IT CHICK Academy</h1></div>
     <button class="iconbtn" id="settingsbtn" aria-label="Progress and settings">⚙︎</button>
   </div>
-  <div id="cont" style="margin:14px 0"></div>
-  <nav class="desk" aria-label="Academy apps">
+  <section class="today" id="today" aria-live="polite"></section>
+  <div class="deskhead" id="deskhead"><h2 style="margin:0;font-size:1.15em">Your desk</h2><span class="small muted">everything else lives here</span></div>
+  <nav class="desk" id="desk" aria-label="Academy apps">
     <a class="obj a-laptop" href="labs/index.html" aria-label="Labs, hands-on sandboxes">
       <div class="art"><div class="lap-screen" aria-hidden="true"><i style="width:55%;background:#b6a4ea"></i><i style="width:80%;background:#e69aa3"></i><i style="width:40%;background:#abc795"></i><i style="width:65%;background:#e3bb6c"></i><span class="cursor"></span></div><div class="lap-base" aria-hidden="true"></div></div>
       <span class="tag">Labs<small>hands-on sandboxes</small></span>
@@ -140,14 +141,35 @@ function refreshDesk(){
   /* console */
   var now = Date.now(), due = Object.keys(st.cards).filter(function(k){ return st.cards[k].due <= now && ICA.bankById[k]; }).length;
   $("#cscreen").innerHTML = due ? due+"<br>CARD"+(due===1?"":"S")+"<br>READY" : "▶ PLAY";
-  /* continue */
-  var c = $("#cont"), l = st.last && ICA.lessons[st.last.lesson];
-  if (l){ var u = ICA.unitById[l.unit]; c.innerHTML = '<a class="cont" href="quests/index.html#'+l.id+'"><span style="font-size:22px" aria-hidden="true">📖</span><span style="flex:1;min-width:0"><span class="small muted">Pick up where you left off</span><br><b>'+esc(l.title)+'</b> <span class="small muted">· Unit '+u.n+': '+esc(u.title)+'</span></span><span aria-hidden="true">→</span></a>'; }
-  else c.innerHTML = "";
+  today(st, due);
+}
+/* ---------- Today: one clear next step, from Mugi ---------- */
+function nextLesson(st){
+  var l = st.last && ICA.lessons[st.last.lesson];
+  if (l && !(st.lessons[l.id] || {}).done) return {l:l, resume:true};
+  var order = ICA.units.filter(function(u){ return !st.tracks.length || st.tracks.indexOf(u.track) > -1; });
+  if (l){ var lu = ICA.unitById[l.unit]; order = [lu].concat(order.filter(function(u){ return u !== lu; })); }
+  for (var k = 0; k < order.length; k++){ var ls = ICA.unitLessons(order[k].id); for (var j = 0; j < ls.length; j++) if (!(st.lessons[ls[j].id] || {}).done) return {l:ls[j], resume:false}; }
+  return null;
+}
+function greeting(){ var h = new Date().getHours(); return h < 5 ? "Still up?" : h < 12 ? "Good morning!" : h < 18 ? "Good afternoon!" : "Good evening!"; }
+function today(st, due){
+  var box = $("#today"), nx = nextLesson(st), fresh = !st.last && !Object.keys(st.lessons).length;
+  var deskShown = !fresh || st.showDesk;
+  $("#desk").hidden = !deskShown; $("#deskhead").hidden = !deskShown; var hint = document.querySelector(".hint"); if (hint) hint.hidden = !deskShown;
+  if (!nx){ box.innerHTML = ICA.mugi("yay", '<p><b>'+greeting()+'</b> You’ve finished every lesson on your tracks. Amazing.</p><p class="small">Keep it fresh in the Arcade, or add another track from the sticky note.</p>', {cls:"mpop"}); return; }
+  var l = nx.l, u = ICA.unitById[l.unit], t = ICA.tracks[u.track], ls = st.lessons[l.id] || {};
+  var where = nx.resume && ls.card ? "You were partway through. I saved your place." : nx.resume ? "Pick up where you left off." : "Here’s your next lesson.";
+  var say = fresh ? '<p><b>Hi, I’m Mugi!</b> I’ll learn with you. Let’s start small: one lesson, about '+l.minutes+' minutes, in short cards.</p>' : '<p><b>'+greeting()+'</b> '+where+'</p>';
+  box.innerHTML = ICA.mugi(fresh ? "hello" : nx.resume ? "tip" : "hello", say, {cls:"mpop"}) +
+    '<a class="nextup" href="quests/index.html#'+l.id+'"><span><span class="small muted">'+esc(t.name)+' · Unit '+u.n+'</span><b>'+esc(l.title)+'</b><span class="small muted">About '+l.minutes+' min</span></span><span class="go">'+(nx.resume ? "Continue" : "Start")+' →</span></a>' +
+    '<div class="quick">'+(due ? '<a href="arcade/index.html">🎴 '+due+' flashcard'+(due === 1 ? '' : 's')+' ready</a>' : '')+(fresh ? '<button id="othertrack">Show me other tracks</button><button id="showdesk">Explore everything</button>' : '<a href="quests/index.html">All courses</a><a href="labs/formula.html">🧮 Formula Lab</a>')+'</div>';
+  var ot = $("#othertrack"); if (ot) ot.onclick = welcome;
+  var sd = $("#showdesk"); if (sd) sd.onclick = function(){ var s2 = ICA.load(); s2.showDesk = true; ICA.save(); refreshDesk(); $("#desk").scrollIntoView({behavior:"smooth"}); };
 }
 
 function welcome(){
-  ICA.sheet('<div class="eyebrow">Welcome</div><h2>Hello, and welcome to your desk</h2><p>IT CHICK Academy teaches digital, data and research skills from zero. Everything on the desk opens something:</p><ul><li><b>Quests</b> (the notebook): courses that go Learn → Try → Apply → Check.</li><li><b>Codex</b> (the book): a library you can search any time.</li><li><b>Arcade</b> (the game console): practice games and flashcards.</li><li><b>Progress</b> (the sticky note): your tracks, settings and backups.</li></ul><p>Which tracks would you like on your desk? You can change this any time.</p>'+trackPicker()+'<p class="small muted">Your progress stays on this device only. Nobody can see it, and you can back it up from the sticky note.</p><div class="row"><button class="btn primary" id="wdone">Start</button></div>', function(sh){
+  ICA.sheet(ICA.mugi("hello", '<p><b>Which tracks do you want?</b> Pick as many as you like. You can change this any time on the sticky note.</p>')+trackPicker()+'<p class="small muted">Your progress stays on this device only.</p><div class="row"><button class="btn primary" id="wdone">Done</button></div>', function(sh){
     sh.querySelector("#wdone").addEventListener("click", function(){ saveTracks(sh); var st = ICA.load(); st.welcomed = true; ICA.save(); ICA.closeSheet(); refreshDesk(); });
   });
 }
@@ -172,7 +194,7 @@ function progressSheet(){
     '<h3>Mistake notes</h3>'+(reps.length ? '<p class="small muted">Notes you saved with “Report a mistake”. Copy them to send to whoever maintains the academy.</p><ul class="notes small">'+reps.map(function(r){ return '<li><b>'+esc(r.where)+'</b>: '+esc(r.note)+' <span class="muted">('+new Date(r.ts).toLocaleDateString()+')</span></li>'; }).join("")+'</ul><div class="row"><button class="btn small" id="copyrep">Copy all notes</button><button class="btn small ghost" id="clearrep">Clear notes</button></div><div id="clearconfirm"></div>' : '<p class="small muted">No notes yet. Every lesson and Codex entry has a “Report a mistake” link.</p>')+
     '<h3>Backup</h3><p class="small muted">Progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
-    '<p class="small muted">Version: Pass 4 · Digital Foundations Units 1–11 · Sociology Units 1–4 · Forge · Formula Lab.</p>', function(sh){
+    '<p class="small muted">Version: Pass 4.5 · Mugi, Today and lesson cards · Digital Foundations Units 1–11 · Sociology Units 1–4 · Forge · Formula Lab.</p>', function(sh){
     sh.addEventListener("change", function(e){ if (e.target.closest("[data-track]")){ saveTracks(sh); refreshDesk(); } });
     sh.addEventListener("click", function(e){
       var b = e.target.closest("[data-set]");
@@ -210,7 +232,6 @@ document.getElementById("settingsbtn").addEventListener("click", progressSheet);
 
 ICA.loadAll("./", function(){
   refreshDesk();
-  if (!ICA.load().welcomed) welcome();
 });
 })();
 </script>
