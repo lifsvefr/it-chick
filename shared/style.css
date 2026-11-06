@@ -292,3 +292,5 @@ dl.keyterms dd{margin:0 0 4px;color:var(--soft)}
 svg text[font-family*="mono"],svg text.mono{font-family:var(--mono)}
 figure.codeblk{display:block;padding:0;justify-items:normal;text-align:left}
 figure.codeblk figcaption{text-align:left}
+
+.callout.ex pre{overflow-wrap:anywhere;white-space:pre-wrap}

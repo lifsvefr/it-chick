@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Citation Lab · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/engine.js"></script>
+<script src="../shared/citelab.js"></script>
+<script src="../data/lab-cite.js"></script>
+<style>
+.groups{display:grid;gap:14px}
+.grp h2{font-size:1.15em;margin:0}
+.grp p{margin:2px 0 8px}
+.chal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.chal a{display:flex;gap:8px;align-items:flex-start;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:9px 11px;color:var(--ink);text-decoration:none;font-size:.95em;line-height:1.3}
+.chal a:hover{border-color:var(--lupine)}
+.chal a.done{border-color:var(--ok);background:var(--okTint)}
+.chal .n{font-family:var(--mono);font-size:11px;color:var(--soft);min-width:18px}
+.srccard{border:1.5px solid var(--line);border-radius:12px;background:var(--panel);padding:10px 12px}
+.srccard .k{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--soft);margin-bottom:6px}
+.srccard dl{margin:0;display:grid;gap:6px}
+.srccard dt{font-size:.82em;color:var(--soft)}
+.srccard dd{margin:0;overflow-wrap:anywhere}
+.fieldbox{display:grid;gap:6px}
+.fieldbox label{font-weight:700;font-size:.95em}
+.ans{width:100%;min-height:88px;font:inherit;font-size:16px;line-height:1.5;padding:9px 11px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical;overflow-wrap:anywhere}
+.ans:focus{outline:none;border-color:var(--lupine)}
+.pv{font-size:.95em;padding:7px 11px;border-radius:10px;background:var(--panel2);overflow-wrap:anywhere;min-height:1.5em;text-indent:-1.5em;padding-left:calc(11px + 1.5em)}
+.pv .lbl{font-family:var(--mono);font-size:10px;color:var(--soft);text-transform:uppercase;letter-spacing:.05em;margin-right:6px}
+.keys{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}
+.keys button{font-size:15px;padding:7px 0;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.keys button.it{font-style:italic;font-family:Georgia,serif;font-weight:700}
+.fb{border-radius:12px;padding:11px 14px;border-left:4px solid var(--line);background:var(--panel2)}
+.fb.ok{border-color:var(--ok);background:var(--okTint)}
+.fb.bad{border-color:var(--rose);background:var(--roseTint)}
+.fb .h{display:block;font-family:var(--display);font-size:1.08em;margin-bottom:4px}
+.fb h3{font-size:.95em;margin:10px 0 2px}
+.fb ul{margin:6px 0;padding-left:0;list-style:none;display:grid;gap:6px}
+.fb li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:4px}
+.fb li .why{grid-column:2;font-size:.92em;overflow-wrap:anywhere}
+.fb .tip{font-size:.92em;border-left:3px solid var(--gold);padding-left:8px;margin:6px 0}
+.answer{padding:8px 11px;border-radius:10px;background:var(--bg);margin:6px 0;overflow-wrap:anywhere;text-indent:-1.5em;padding-left:calc(11px + 1.5em)}
+.row.wrapbtns{flex-wrap:wrap}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+ICA.base = "../";
+var bar = ICA.topbar("Citation Lab"), app = document.getElementById("app"), esc = ICA.esc, md = ICA.md;
+var LIST = window.CLAB || [], GROUPS = window.CLAB_GROUPS || [], BY = {};
+LIST.forEach(function(c, i){ BY[c.id] = c; c.i = i; });
+function store(){ var s = ICA.load(); s.labs = s.labs || {}; s.labs.cite = s.labs.cite || {}; return s.labs.cite; }
+function setTitle(t){ document.title = t + " · Citation Lab"; bar.querySelector(".title").textContent = t; }
+
+function home(){
+  setTitle("Citation Lab");
+  var st = store(), n = LIST.filter(function(c){ return st[c.id] && st[c.id].done; }).length;
+  app.innerHTML = '<div class="stack"><a class="small" href="index.html">← All labs</a><div><div class="eyebrow">Labs</div><h1>Citation Lab</h1>'+
+    '<p class="lead">Build references and in-text citations in APA, MLA and Chicago from a source’s details, then press Check.</p></div>'+
+    ICA.mugi("tip", '<p><b>How checking works:</b> I compare your reference part by part (authors, date, title, journal and so on), so I can tell you exactly which part is off and why: a missing comma, the wrong capitals, or italics in the wrong place.</p><p class="small">For italics, put *asterisks* around the words, or select them and tap <b><i>I</i></b>. Curly or straight quotation marks both work.</p>', {small:true})+
+    '<p class="small muted">'+n+' of '+LIST.length+' solved. All the sources here are invented for practice, so their DOIs and web addresses don’t lead anywhere.</p>'+
+    '<div class="groups">'+GROUPS.map(function(g){
+      var cs = LIST.filter(function(c){ return c.group === g.id; });
+      return '<section class="grp"><h2>'+esc(g.title)+'</h2><p class="small muted">'+esc(g.blurb)+'</p><div class="chal">'+cs.map(function(c){ var d = st[c.id] && st[c.id].done; return '<a href="#'+c.id+'" class="'+(d ? "done" : "")+'"><span class="n">'+(d ? "✓" : (c.i+1))+'</span><span>'+esc(c.title)+'</span></a>'; }).join("")+'</div></section>';
+    }).join("")+'</div></div>';
+  window.scrollTo(0, 0);
+}
+
+var cur = null, hintN = 0, lastBox = 0;
+function challenge(id){
+  var ch = BY[id]; if (!ch){ home(); return; }
+  cur = ch; hintN = 0; lastBox = 0;
+  var st = store()[id] || {};
+  setTitle(ch.title);
+  var g = GROUPS.filter(function(x){ return x.id === ch.group; })[0] || {};
+  var src = ch.source || {rows:[]};
+  app.innerHTML = '<div class="stack"><a class="small" href="#">← All challenges</a>'+
+    '<div><div class="eyebrow">'+esc(ch.style || g.title || "")+' · '+(ch.i+1)+' of '+LIST.length+(st.done ? ' · ✓ solved' : '')+'</div><h1 style="margin-top:4px">'+esc(ch.title)+'</h1></div>'+
+    '<div class="prose"><p>'+md(ch.task)+'</p></div>'+
+    '<div class="srccard" role="group" aria-label="The source"><div class="k">The source · '+esc(src.kind || "")+'</div><dl>'+src.rows.map(function(r){ return '<div><dt>'+esc(r[0])+'</dt><dd>'+esc(r[1])+'</dd></div>'; }).join("")+'</dl></div>'+
+    ch.fields.map(function(f, k){
+      return '<div class="fieldbox"><label for="ans'+k+'">'+esc(f.label)+'</label>'+
+        '<textarea id="ans'+k+'" class="ans" data-box="'+k+'" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>'+
+        '<div class="pv" id="pv'+k+'" aria-live="off"><span class="lbl">Looks like</span><span class="pvt"></span></div></div>';
+    }).join("")+
+    '<div class="keys" role="group" aria-label="Formatting and symbols"><button type="button" class="it" data-k="I" aria-label="Italics: wrap the selected words in asterisks">I</button>'+["–","&","\"","(",")","[","]",":",";",",","."].map(function(k){ return '<button type="button" data-k="'+esc(k)+'" aria-label="'+(k === "–" ? "En dash" : "Type "+esc(k))+'">'+esc(k)+'</button>'; }).join("")+'</div>'+
+    '<div class="row wrapbtns"><button class="btn primary" id="check">Check</button><button class="btn" id="hint">Hint</button><button class="btn" id="show">Show an answer</button><button class="btn" id="reset">Start again</button></div>'+
+    '<div id="fb" aria-live="polite"></div>'+
+    (ch.lesson ? '<p class="small muted">Learn this in <a href="../quests/index.html#'+esc(ch.lesson)+'">Quests: Research Skills</a>.</p>' : '')+
+    '<div class="lessonnav" id="nav"></div></div>';
+  window.scrollTo(0, 0);
+  ch.fields.forEach(function(f, k){
+    var ta = document.getElementById("ans"+k);
+    ta.value = st.ans && st.ans[k] != null ? st.ans[k] : (f.start || "");
+    ta.addEventListener("input", function(){ save(); pv(k); size(ta); });
+    ta.addEventListener("focus", function(){ lastBox = k; });
+    pv(k); size(ta);
+  });
+  nav();
+}
+function size(ta){ ta.style.height = "auto"; ta.style.height = Math.max(88, Math.min(320, ta.scrollHeight + 4)) + "px"; }
+function answers(){ return cur.fields.map(function(f, k){ return document.getElementById("ans"+k).value; }); }
+function save(){ var st = store(); st[cur.id] = st[cur.id] || {}; st[cur.id].ans = answers(); ICA.save(); }
+function pv(k){ var el = document.querySelector("#pv"+k+" .pvt"); el.innerHTML = CiteLab.preview(document.getElementById("ans"+k).value, esc) || '<span class="muted">(your reference will appear here, with italics)</span>'; }
+function insert(t){
+  var ta = document.getElementById("ans"+lastBox); if (!ta) return;
+  var s = ta.selectionStart, e = ta.selectionEnd, v = ta.value;
+  if (t === "I"){
+    var sel = v.slice(s, e);
+    if (sel){ ta.value = v.slice(0, s) + "*" + sel + "*" + v.slice(e); ta.setSelectionRange(s, e + 2); }
+    else { ta.value = v.slice(0, s) + "**" + v.slice(e); ta.setSelectionRange(s + 1, s + 1); }
+  } else { ta.value = v.slice(0, s) + t + v.slice(e); ta.setSelectionRange(s + t.length, s + t.length); }
+  ta.dispatchEvent(new Event("input")); ta.focus({preventScroll:true});
+}
+function check(){
+  var ch = cur, ans = answers(), res = CiteLab.check(ch, ans);
+  var st = store(); st[ch.id] = st[ch.id] || {}; st[ch.id].tries = (st[ch.id].tries || 0) + 1; st[ch.id].ans = ans;
+  if (res.ok && !st[ch.id].done) st[ch.id].done = Date.now();
+  ICA.save();
+  var h = '<div class="fb '+(res.ok ? "ok" : "bad")+'"><b class="h">'+(res.ok ? "✓ "+["Spot on.","That’s it!","Perfectly formatted.","Yes!"][ch.i % 4] : "Not quite yet")+'</b>';
+  res.fields.forEach(function(r, k){
+    if (ch.fields.length > 1) h += '<h3>'+esc(ch.fields[k].label)+'</h3>';
+    if (r.empty){ h += '<p class="small">Nothing written here yet.</p>'; return; }
+    h += '<ul>'+r.parts.filter(function(p){ return !p.skipped; }).map(function(p){ return '<li><span aria-hidden="true">'+(p.ok ? "✅" : "⬜")+'</span><span>'+esc(p.label)+(p.ok ? "" : '<span class="sr-only"> (not yet)</span>')+'</span>'+(p.ok ? "" : '<span class="why muted">'+esc(p.msg)+'</span>')+'</li>'; }).join("")+
+      (r.extra ? '<li><span aria-hidden="true">⬜</span><span>Nothing extra at the end<span class="sr-only"> (not yet)</span></span><span class="why muted">Extra text at the end: “'+esc(r.extra)+'”. '+esc(r.extraMsg || "Is it in the wrong place, or not needed?")+'</span></li>' : '')+'</ul>';
+    r.tips.forEach(function(t){ h += '<p class="tip">'+esc(t)+'</p>'; });
+  });
+  if (res.ok) h += '<p>'+md(ch.explain || "")+'</p>';
+  h += '</div>';
+  document.getElementById("fb").innerHTML = h; nav();
+  document.getElementById("fb").scrollIntoView({block:"nearest", behavior:"smooth"});
+}
+function nav(){
+  var ch = cur, next = LIST[ch.i + 1], el = document.getElementById("nav"), done = (store()[ch.id] || {}).done;
+  el.innerHTML = (LIST[ch.i - 1] ? '<a class="btn" href="#'+LIST[ch.i-1].id+'">← Back</a>' : '<span></span>') + (next ? '<a class="btn'+(done ? ' primary' : '')+'" href="#'+next.id+'">'+(done ? "Next challenge →" : "Skip →")+'</a>' : '<a class="btn primary" href="#">All challenges</a>');
+}
+document.addEventListener("mousedown", function(e){ if (e.target.closest("[data-k]")) e.preventDefault(); });
+document.addEventListener("click", function(e){
+  var t; if (!cur || !document.getElementById("ans0")) return;
+  if ((t = e.target.closest("[data-k]"))){ insert(t.getAttribute("data-k")); return; }
+  if (e.target.id === "check"){ check(); return; }
+  if (e.target.id === "reset"){ cur.fields.forEach(function(f, k){ var ta = document.getElementById("ans"+k); ta.value = f.start || ""; ta.dispatchEvent(new Event("input")); }); document.getElementById("fb").innerHTML = ""; return; }
+  if (e.target.id === "hint"){ var hs = cur.hints || [], i = Math.min(hintN, hs.length - 1); hintN++; document.getElementById("fb").innerHTML = '<div class="fb"><b class="h">Hint '+(i+1)+' of '+hs.length+'</b><p>'+md(hs[i] || "")+'</p></div>'; return; }
+  if (e.target.id === "show"){
+    document.getElementById("fb").innerHTML = '<div class="fb"><b class="h">One answer</b>'+cur.fields.map(function(f){ return (cur.fields.length > 1 ? '<h3>'+esc(f.label)+'</h3>' : '')+'<div class="answer">'+CiteLab.preview(CiteLab.solution(f), esc)+'</div>'; }).join("")+'<p>'+md(cur.explain || "")+'</p><p class="small muted">Try typing it in yourself and pressing Check: typing it once helps it stick.</p></div>';
+  }
+});
+function route(){ var id = location.hash.slice(1); if (id && BY[id]) challenge(id); else { cur = null; home(); } }
+window.addEventListener("hashchange", route);
+route();
+})();
+</script>
+</body>
+</html>

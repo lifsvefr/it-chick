@@ -82,14 +82,22 @@ ICA.today = function(){ var d = new Date(); return new Date(d.getFullYear(), d.g
 /* Inline formatting:
    **bold**  *italic*  `code`  [[termId]] or [[termId|shown text]] (glossary pop-up)
    {{entryId|shown text}} (link to a Codex entry)   [text](https://link)  <kbd>Ctrl</kbd> via [[kbd:Ctrl]] */
+/* A glossary term written mid-sentence starts with a small letter ("a sample"), unless it is a name (Zotero, Wi-Fi). */
+ICA.KEEPCAP = /^(Bluetooth|Finder|Wikipedia|JavaScript|Lighthouse|PowerShell|Git|GitHub|Python|Zotero|Boolean|Likert|Hawthorne|Sapir|Thomas|Davis|McDonaldization|Malthusian|Gini|Verstehen|NaN|None|ShareAlike|NonCommercial|NoDerivatives|Mbps|Wi-Fi|Task Manager|Fast Startup|File Explorer|File History|Time Machine|Recycle Bin|Creative Commons|Content Credentials|Undo Send|Reply All|GitHub Pages|Core Web Vitals|Open Graph|Stack Overflow|Journal Impact Factor|Zotero Connector|Human Development Index)\b/;
+ICA.termInSentence = function(term, before){
+  var plain = String(before || "").replace(/<[^>]*>/g, "").replace(/\s+$/, "");
+  if (!/[A-Za-z0-9]/.test(plain) || /[.!?:]["\u201d\u2019')]*$/.test(plain)) return term;   // start of a sentence, item or cell
+  if (!/^[A-Z][a-z]/.test(term) || ICA.KEEPCAP.test(term)) return term;
+  return term.charAt(0).toLowerCase() + term.slice(1);
+};
 ICA.md = function(s){
   var codes = [], out = ICA.esc(s);
   out = out.replace(/`([^`]+)`/g, function(m, c){ codes.push(c); return "\u0000"+(codes.length-1)+"\u0000"; });
   out = out.replace(/\[\[kbd:([^\]]+)\]\]/g, "<kbd>$1</kbd>");
   out = out.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
   out = out.replace(/(^|[\s(\u201c"'\u2014\u2013\/-])\*([^*\s](?:[^*]*?[^*\s])?)\*(?=[\s.,;:!?)\u201d"'\u2019\u2014\u2013\/-]|$)/g, "$1<i>$2</i>");
-  out = out.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function(m, id, shown){
-    var t = ICA.terms[id]; var label = shown || (t ? t.term : id);
+  out = out.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function(m, id, shown, at, all){
+    var t = ICA.terms[id]; var label = shown || (t ? ICA.termInSentence(t.term, all.slice(0, at)) : id);
     return '<button type="button" class="term" data-term="'+id+'">'+label+'</button>';
   });
   out = out.replace(/\{\{([a-z0-9-]+)(?:\|([^}]+))?\}\}/g, function(m, id, shown){
@@ -124,6 +132,7 @@ ICA.blocks = function(list){
     if (b.fix) return '<div class="callout fix"><b class="h">Textbook check</b>'+ICA.md(b.fix)+'</div>';
     if (b.code !== undefined){ var cid = "cb" + Math.random().toString(36).slice(2, 8); ICA.codes = ICA.codes || {}; ICA.codes[cid] = b.code;
       return '<figure class="codeblk"><figcaption><span>'+ICA.esc(b.label || ({html:"HTML", css:"CSS", js:"JavaScript", sh:"Command line", py:"Python", txt:"Text"}[b.lang] || "Code"))+'</span><span class="cbtns">'+(b.weblab ? '<a href="'+ICA.base+'labs/web.html#'+ICA.esc(b.weblab)+'">Try in Web Lab</a>' : '')+(b.pylab ? '<a href="'+ICA.base+'labs/python.html#'+ICA.esc(b.pylab)+'">Try in Python Lab</a>' : '')+'<button type="button" data-copycode="'+cid+'">Copy</button></span></figcaption><pre><code class="lang-'+ICA.esc(b.lang || "txt")+'">'+ICA.esc(b.code)+'</code></pre>'+(b.cap ? '<p class="small muted">'+ICA.md(b.cap)+'</p>' : '')+'</figure>'; }
+    if (b.lab && /^cl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/cite.html#'+ICA.esc(b.lab)+'"><b class="h">📚 Practise in the Citation Lab</b><span>'+ICA.md(b.t || "Build a real reference")+' →</span></a>';
     if (b.lab && /^pl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/python.html#'+ICA.esc(b.lab)+'"><b class="h">🐍 Practise in the Python Lab</b><span>'+ICA.md(b.t || "Try it for real")+' →</span></a>';
     if (b.lab) return /^wl-/.test(b.lab) ? '<a class="callout labcall" href="'+ICA.base+'labs/web.html#'+ICA.esc(b.lab)+'"><b class="h">🌐 Practise in the Web Lab</b><span>'+ICA.md(b.t || "Try it live")+' →</span></a>' : '<a class="callout labcall" href="'+ICA.base+'labs/formula.html#'+ICA.esc(b.lab)+'"><b class="h">🧮 Practise in the Formula Lab</b><span>'+ICA.md(b.t || "Try it on a real practice sheet")+' →</span></a>';
     if (b.fig){
