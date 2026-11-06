@@ -60,6 +60,7 @@ function fill(s){
 }
 ICA.save = function(){ try { localStorage.setItem(KEY, JSON.stringify(mem)); } catch(e){} };
 ICA.replaceStore = function(obj){ mem = fill(obj); ICA.save(); };
+ICA.eraseAll = function(){ mem = blank(); try { localStorage.removeItem(KEY); } catch(e){} ICA.save(); };
 ICA.lessonState = function(id){ var st = ICA.load(); if (!st.lessons[id]) st.lessons[id] = {learn:0, tries:{}, apply:{}, check:null, done:0}; return st.lessons[id]; };
 ICA.lessonDone = function(id){ var st = ICA.load().lessons[id]; return !!(st && st.done); };
 ICA.unitProgress = function(uid){ var ls = ICA.unitLessons(uid), d = 0; ls.forEach(function(l){ if (ICA.lessonDone(l.id)) d++; }); return {done:d, total:ls.length}; };
