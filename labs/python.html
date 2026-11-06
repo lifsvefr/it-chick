@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Python Lab · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/engine.js"></script>
+<script src="../shared/pylab.js"></script>
+<script src="../data/lab-python.js"></script>
+<style>
+.groups{display:grid;gap:14px}
+.grp h2{font-size:1.15em;margin:0}
+.grp p{margin:2px 0 8px}
+.chal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.chal a{display:flex;gap:8px;align-items:flex-start;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:9px 11px;color:var(--ink);text-decoration:none;font-size:.95em;line-height:1.3}
+.chal a:hover{border-color:var(--lupine)}
+.chal a.done{border-color:var(--ok);background:var(--okTint)}
+.chal .n{font-family:var(--mono);font-size:11px;color:var(--soft);min-width:18px}
+.editor{width:100%;min-height:200px;font-family:var(--mono);font-size:15px;line-height:1.5;padding:10px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);tab-size:4;resize:vertical;white-space:pre-wrap;overflow-wrap:anywhere}
+.editor:focus{outline:none;border-color:var(--lupine)}
+.keys{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px}
+.keys button{font-family:var(--mono);font-size:15px;padding:7px 0;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.inbox label{display:block;font-size:.92em;margin-bottom:4px}
+.inbox textarea{width:100%;min-height:52px;font-family:var(--mono);font-size:14px;padding:7px 10px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical}
+.files{font-size:.92em}
+.files details{border:1px solid var(--line);border-radius:10px;padding:6px 10px;background:var(--panel)}
+.files summary{cursor:pointer;font-family:var(--mono);font-size:13px}
+.files pre{margin:6px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12.5px}
+.console{font-family:var(--mono);font-size:13px;background:#1f1a17;color:#f3e9d6;border-radius:10px;padding:9px 11px;white-space:pre-wrap;overflow-wrap:anywhere;max-height:260px;overflow:auto;min-height:44px}
+.console .err{color:#ffb4a8}
+.console .dim{color:#bfb3a2}
+.status{font-size:.9em;color:var(--soft)}
+.fb{border-radius:12px;padding:11px 14px;border-left:4px solid var(--line);background:var(--panel2)}
+.fb.ok{border-color:var(--ok);background:var(--okTint)}
+.fb.bad{border-color:var(--rose);background:var(--roseTint)}
+.fb .h{display:block;font-family:var(--display);font-size:1.08em;margin-bottom:4px}
+.fb ul{margin:6px 0;padding-left:0;list-style:none;display:grid;gap:6px}
+.fb li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:4px}
+.fb li .why{grid-column:2;font-size:.92em;overflow-wrap:anywhere}
+.lint{display:grid;gap:6px;margin:6px 0}
+.lint button{text-align:left;font:inherit;background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--rose);border-radius:8px;padding:7px 10px;color:var(--ink);overflow-wrap:anywhere}
+.lint button.soft{border-left-color:var(--gold)}
+.lint b{font-family:var(--mono);font-size:12px}
+.lint code{white-space:pre-wrap;overflow-wrap:anywhere}
+.row.wrapbtns{flex-wrap:wrap}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+ICA.base = "../";
+var bar = ICA.topbar("Python Lab"), app = document.getElementById("app"), esc = ICA.esc, md = ICA.md;
+var LIST = window.PLAB || [], GROUPS = window.PLAB_GROUPS || [], BY = {};
+LIST.forEach(function(c, i){ BY[c.id] = c; c.i = i; });
+function store(){ var s = ICA.load(); s.labs = s.labs || {}; s.labs.python = s.labs.python || {}; return s.labs.python; }
+function setTitle(t){ document.title = t + " · Python Lab"; bar.querySelector(".title").textContent = t; }
+var engine = "idle";
+function startEngine(){
+  if (engine !== "idle") return;
+  engine = "loading"; status();
+  var t0 = Date.now();
+  PyLab.init(ICA.base).then(function(m){ engine = "ready"; status("Python " + (m.version || "") + " is ready" + (Date.now() - t0 > 1500 ? " (it’s saved now, so next time is quicker)." : ".")); })
+    .catch(function(e){ engine = "failed"; status("Python couldn’t start in this browser: " + e.message + ". Try reloading, or a current Chrome, Edge, Firefox or Safari."); });
+}
+function status(msg){
+  var el = document.getElementById("pystatus"); if (!el) return;
+  if (msg) { el.textContent = msg; return; }
+  el.textContent = engine === "loading" ? "Starting Python… The first time, this downloads up to 13 MB, so it can take a moment on a slow connection." : engine === "ready" ? "Python is ready." : "";
+}
+
+function home(){
+  setTitle("Python Lab");
+  var st = store(), n = LIST.filter(function(c){ return st[c.id] && st[c.id].done; }).length;
+  app.innerHTML = '<div class="stack"><a class="small" href="index.html">← All labs</a><div><div class="eyebrow">Labs</div><h1>Python Lab</h1>'+
+    '<p class="lead">Write real Python, run it, and press Check. Everything runs inside your browser: nothing is installed and nothing is sent anywhere.</p></div>'+
+    ICA.mugi("tip", '<p><b>How checking works:</b> I run your program with real Python, sometimes several times with different answers typed in, and look at what it prints, returns or saves. Any correct way of writing it passes.</p><p class="small">If Python stops with an error, I’ll show the line and explain the message in plain words.</p>', {small:true})+
+    '<p class="small muted">'+n+' of '+LIST.length+' solved. The first challenge you open starts Python (a one-time download of up to 13 MB).</p>'+
+    '<div class="groups">'+GROUPS.map(function(g){
+      var cs = LIST.filter(function(c){ return c.group === g.id; });
+      return '<section class="grp"><h2>'+esc(g.title)+'</h2><p class="small muted">'+esc(g.blurb)+'</p><div class="chal">'+cs.map(function(c){ var d = st[c.id] && st[c.id].done; return '<a href="#'+c.id+'" class="'+(d ? "done" : "")+'"><span class="n">'+(d ? "✓" : (c.i+1))+'</span><span>'+esc(c.title)+'</span></a>'; }).join("")+'</div></section>';
+    }).join("")+'</div></div>';
+  window.scrollTo(0, 0);
+}
+
+var cur = null, hintN = 0, busy = false, USES_INPUT = /\binput\s*\(/;
+function filesHtml(files, title){
+  var ks = Object.keys(files || {}); if (!ks.length) return "";
+  return '<div class="files"><p class="small muted" style="margin:0 0 4px">'+esc(title)+'</p>'+ks.map(function(k){ return '<details><summary>📄 '+esc(k)+'</summary><pre>'+esc(files[k])+'</pre></details>'; }).join("")+'</div>';
+}
+function challenge(id){
+  var ch = BY[id]; if (!ch){ home(); return; }
+  cur = ch; hintN = 0;
+  var st = store()[id] || {};
+  setTitle(ch.title);
+  var g = GROUPS.filter(function(x){ return x.id === ch.group; })[0] || {};
+  var st0 = st.code != null ? st.code : (ch.start || ""), asks = ch.runInputs != null || USES_INPUT.test(st0);
+  app.innerHTML = '<div class="stack"><a class="small" href="#">← All challenges</a>'+
+    '<div><div class="eyebrow">'+esc(g.title || "")+' · '+(ch.i+1)+' of '+LIST.length+(st.done ? ' · ✓ solved' : '')+'</div><h1 style="margin-top:4px">'+esc(ch.title)+'</h1></div>'+
+    '<div class="prose"><p>'+md(ch.task)+'</p></div>'+
+    filesHtml(ch.files, "Files in the program’s folder (tap to look inside):")+
+    '<label class="sr-only" for="ed">Python editor</label><textarea id="ed" class="editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="Python editor"></textarea>'+
+    '<div class="keys" role="group" aria-label="Code symbols">'+["(",")",":","\"","'","=","[","]","{","}","#","+","_",",",".","⇥"].map(function(k){ return '<button type="button" data-k="'+esc(k)+'" aria-label="'+(k === "⇥" ? "Indent 4 spaces" : "Type "+esc(k))+'">'+esc(k)+'</button>'; }).join("")+'</div>'+
+    '<div class="inbox" id="inbox"'+(asks ? '' : ' hidden')+'><label for="ins">What to type when the program asks for <code>input()</code> (one answer per line):</label><textarea id="ins" spellcheck="false" autocapitalize="off" autocorrect="off"></textarea></div>'+
+    '<div class="row wrapbtns"><button class="btn" id="run">▶ Run</button><button class="btn primary" id="check">Check</button><button class="btn" id="hint">Hint</button><button class="btn" id="show">Show an answer</button><button class="btn" id="reset">Start again</button></div>'+
+    '<p class="status" id="pystatus" aria-live="polite"></p>'+
+    '<div><p class="small muted" style="margin:0 0 4px">Output</p><div class="console" id="out" aria-live="polite"><span class="dim">Press ▶ Run to see what your program prints.</span></div></div>'+
+    '<div id="fb" aria-live="polite"></div>'+
+    (ch.lesson ? '<p class="small muted">Learn this in <a href="../quests/index.html#'+esc(ch.lesson)+'">Quests: Making with Code</a>.</p>' : '')+
+    '<div class="lessonnav" id="nav"></div></div>';
+  window.scrollTo(0, 0);
+  var ed = document.getElementById("ed");
+  ed.value = st0;
+  document.getElementById("ins").value = (ch.runInputs || []).join("\n");
+  size(); nav(); status(); startEngine();
+  ed.addEventListener("input", function(){ var s = store(); s[cur.id] = s[cur.id] || {}; s[cur.id].code = ed.value; ICA.save(); size(); if (USES_INPUT.test(ed.value)) document.getElementById("inbox").hidden = false; });
+  ed.addEventListener("keydown", function(e){
+    if (e.key === "Tab" && !e.shiftKey){ e.preventDefault(); insert("    "); }
+    else if (e.key === "Enter" && !e.shiftKey && !e.ctrlKey && !e.metaKey){
+      /* keep the indentation of the line above, and indent after a colon */
+      var s = ed.selectionStart, before = ed.value.slice(0, s), line = before.slice(before.lastIndexOf("\n") + 1), ind = /^[ \t]*/.exec(line)[0];
+      if (/:\s*(#.*)?$/.test(line)) ind += "    ";
+      e.preventDefault(); insert("\n" + ind);
+    }
+    else if ((e.key === "Enter") && (e.ctrlKey || e.metaKey)){ e.preventDefault(); run(); }
+  });
+}
+function size(){ var ed = document.getElementById("ed"); ed.style.height = "auto"; ed.style.height = Math.max(200, Math.min(560, ed.scrollHeight + 4)) + "px"; }
+function insert(t){
+  var ed = document.getElementById("ed"), s = ed.selectionStart, e = ed.selectionEnd;
+  if (t === "⇥") t = "    ";
+  ed.value = ed.value.slice(0, s) + t + ed.value.slice(e); ed.setSelectionRange(s + t.length, s + t.length);
+  ed.dispatchEvent(new Event("input"));
+}
+function gotoLine(line){
+  var ed = document.getElementById("ed"), lines = ed.value.split("\n"), start = 0;
+  for (var k = 0; k < line - 1 && k < lines.length; k++) start += lines[k].length + 1;
+  ed.focus(); ed.setSelectionRange(start, start + (lines[line - 1] || "").length);
+  ed.scrollIntoView({block:"center", behavior:"smooth"});
+}
+function errBox(err){
+  if (!err) return "";
+  var ex = PyLab.explain(err), name = err.type === "_OutOfInput" ? "Ran out of input" : err.type;
+  return '<div class="lint"><button data-goto="'+(err.line || 1)+'"><b>'+esc(name)+(err.line ? ' · line '+err.line : '')+'</b>'+
+    (err.text ? '<br><code>'+esc(err.text.trim())+'</code>' : '')+
+    (err.type !== "_OutOfInput" ? '<br><span class="small muted">Python says: '+esc(err.msg)+'</span>' : '')+
+    (ex ? '<br>'+esc(ex) : '')+'</button></div>';
+}
+function lintBox(code){
+  var ls = PyLab.lint(code); if (!ls.length) return "";
+  return '<div class="lint">'+ls.slice(0, 4).map(function(x){ return '<button class="'+(x.soft ? "soft" : "")+'" data-goto="'+x.line+'"><b>line '+x.line+(x.soft ? ' · tip' : '')+'</b><br>'+esc(x.msg)+'</button>'; }).join("")+'</div>';
+}
+var TIMEOUT = "Your program was still running after "+(PyLab.LIMIT/1000)+" seconds, so I stopped it. The usual cause is a loop that never ends: check that a while loop’s condition eventually becomes False (is the counter changing?).";
+async function run(){
+  if (busy) return; busy = true;
+  var out = document.getElementById("out"), btn = document.getElementById("run"), code = document.getElementById("ed").value;
+  var insEl = document.getElementById("ins"), inputs = insEl && !document.getElementById("inbox").hidden ? insEl.value.split("\n").filter(function(x, i, a){ return i < a.length - 1 || x !== ""; }) : [];
+  btn.disabled = true; btn.textContent = "Running…";
+  if (engine !== "ready") out.innerHTML = '<span class="dim">Waiting for Python to start…</span>';
+  try {
+    var r = await PyLab.run(code, inputs, cur.files);
+    engine = "ready";
+    if (r.timeout){ out.innerHTML = '<span class="err">Stopped: still running after '+(PyLab.LIMIT/1000)+' seconds.</span>'; document.getElementById("fb").innerHTML = '<div class="fb bad"><b class="h">The program didn’t finish</b><p>'+esc(TIMEOUT)+'</p>'+lintBox(code)+'</div>'; }
+    else {
+      var shown = esc(r.output || "");
+      if (r.error) shown += (shown && !/\n$/.test(r.output) ? "\n" : "") + '<span class="err">'+esc((r.error.type === "_OutOfInput" ? "Stopped: the program asked for more input than you gave it." : r.error.type + ": " + r.error.msg) + (r.error.line ? " (line " + r.error.line + ")" : ""))+'</span>';
+      if (!shown) shown = '<span class="dim">(The program ran but printed nothing.)</span>';
+      var made = (r.files || []).filter(function(f){ return !(cur.files && cur.files[f] != null); });
+      if (made.length) shown += '\n<span class="dim">Files created: '+esc(made.join(", "))+'</span>';
+      out.innerHTML = shown;
+      document.getElementById("fb").innerHTML = r.error ? '<div class="fb bad"><b class="h">Python stopped with an error</b>'+errBox(r.error)+lintBox(code)+'<p class="small muted">Tap the message to jump to that line.</p></div>' : "";
+    }
+  } catch (e){ out.innerHTML = '<span class="err">'+esc(e.message)+'</span>'; }
+  btn.disabled = false; btn.textContent = "▶ Run"; busy = false;
+}
+async function check(){
+  if (busy) return; busy = true;
+  var btn = document.getElementById("check"), ch = cur, code = document.getElementById("ed").value, fb = document.getElementById("fb");
+  btn.disabled = true; btn.textContent = "Checking…";
+  var res;
+  try { res = await PyLab.check(code, ch.tests); engine = "ready"; }
+  catch (e){ fb.innerHTML = '<div class="fb bad"><b class="h">Couldn’t check</b><p>'+esc(e.message)+'</p></div>'; btn.disabled = false; btn.textContent = "Check"; busy = false; return; }
+  btn.disabled = false; btn.textContent = "Check"; busy = false;
+  var h;
+  if (res.timeout){
+    h = '<div class="fb bad"><b class="h">The program didn’t finish</b><p>'+esc(TIMEOUT)+'</p>'+lintBox(code)+'</div>';
+    fb.innerHTML = h; nav(); return;
+  }
+  var ok = res.results.every(function(r){ return r.ok; });
+  var st = store(); st[ch.id] = st[ch.id] || {}; st[ch.id].tries = (st[ch.id].tries || 0) + 1; st[ch.id].code = code;
+  if (ok && !st[ch.id].done) st[ch.id].done = Date.now();
+  ICA.save();
+  h = '<div class="fb '+(ok ? "ok" : "bad")+'"><b class="h">'+(ok ? "✓ "+["It works!","Nicely done.","That’s it!","Yes!"][ch.i % 4] : res.error ? "Python stopped with an error" : "Not quite yet")+'</b>';
+  if (!ok && res.error) h += errBox(res.error);
+  if (!ok) h += lintBox(code);
+  h += '<ul>'+res.results.map(function(r){ return '<li><span aria-hidden="true">'+(r.ok ? "✅" : "⬜")+'</span><span>'+esc(r.t)+(r.ok ? "" : '<span class="sr-only"> (not yet)</span>')+'</span>'+(r.ok ? "" : '<span class="why muted">'+esc(r.msg)+'</span>')+'</li>'; }).join("")+'</ul>';
+  if (ok) h += '<p>'+md(ch.explain || "")+'</p>';
+  h += '</div>';
+  fb.innerHTML = h; nav();
+  if (res.output != null){ var out = document.getElementById("out"); out.innerHTML = res.output ? esc(res.output) + '<span class="dim">\n(output from the first test run)</span>' : '<span class="dim">(The first test run printed nothing.)</span>'; }
+  fb.scrollIntoView({block:"nearest", behavior:"smooth"});
+}
+function nav(){
+  var ch = cur, next = LIST[ch.i + 1], el = document.getElementById("nav"), done = (store()[ch.id] || {}).done;
+  el.innerHTML = (LIST[ch.i - 1] ? '<a class="btn" href="#'+LIST[ch.i-1].id+'">← Back</a>' : '<span></span>') + (next ? '<a class="btn'+(done ? ' primary' : '')+'" href="#'+next.id+'">'+(done ? "Next challenge →" : "Skip →")+'</a>' : '<a class="btn primary" href="#">All challenges</a>');
+}
+document.addEventListener("click", function(e){
+  var t; if (!cur || !document.getElementById("ed")) return;
+  if ((t = e.target.closest("[data-k]"))){ insert(t.getAttribute("data-k")); document.getElementById("ed").focus({preventScroll:true}); return; }
+  if ((t = e.target.closest("[data-goto]"))){ gotoLine(+t.getAttribute("data-goto")); return; }
+  if (e.target.id === "run"){ run(); return; }
+  if (e.target.id === "check"){ check(); return; }
+  if (e.target.id === "reset"){ var ed = document.getElementById("ed"); ed.value = cur.start || ""; ed.dispatchEvent(new Event("input")); document.getElementById("fb").innerHTML = ""; document.getElementById("out").innerHTML = '<span class="dim">Press ▶ Run to see what your program prints.</span>'; return; }
+  if (e.target.id === "hint"){ var hs = cur.hints || [], i = Math.min(hintN, hs.length - 1); hintN++; document.getElementById("fb").innerHTML = '<div class="fb"><b class="h">Hint '+(i+1)+' of '+hs.length+'</b><p>'+md(hs[i] || "")+'</p></div>'; return; }
+  if (e.target.id === "show"){
+    document.getElementById("fb").innerHTML = '<div class="fb"><b class="h">One answer</b><figure class="codeblk"><figcaption><span>Python</span></figcaption><pre><code>'+esc(cur.solution || "")+'</code></pre></figure><p>'+md(cur.explain || "")+'</p><p class="small muted">Try typing it in yourself and pressing Check: typing it once helps it stick.</p></div>';
+  }
+});
+function route(){ var id = location.hash.slice(1); if (id && BY[id]) challenge(id); else { cur = null; home(); } }
+window.addEventListener("hashchange", route);
+route();
+})();
+</script>
+</body>
+</html>
