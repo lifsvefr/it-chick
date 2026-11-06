@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Data Lab · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/engine.js"></script>
+<script src="../shared/catalog.js"></script>
+<script src="../shared/datalab.js"></script>
+<script src="../data/lab-data.js"></script>
+<style>
+.groups{display:grid;gap:14px}
+.grp h2{font-size:1.15em;margin:0}
+.grp p{margin:2px 0 8px}
+.chal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.chal a{display:flex;gap:8px;align-items:flex-start;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:9px 11px;color:var(--ink);text-decoration:none;font-size:.95em;line-height:1.3}
+.chal a:hover{border-color:var(--lupine)}
+.chal a.done{border-color:var(--ok);background:var(--okTint)}
+.chal .n{font-family:var(--mono);font-size:11px;color:var(--soft);min-width:18px}
+.editor{width:100%;min-height:150px;font-family:var(--mono);font-size:15px;line-height:1.5;padding:10px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical;white-space:pre-wrap;overflow-wrap:anywhere;tab-size:2}
+.editor:focus{outline:none;border-color:var(--lupine)}
+.keys{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}
+.keys button{font-family:var(--mono);font-size:14px;padding:7px 0;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.datap details{border:1px solid var(--line);border-radius:10px;padding:6px 10px;background:var(--panel);margin-bottom:6px}
+.datap summary{cursor:pointer;font-family:var(--mono);font-size:13px;overflow-wrap:anywhere}
+.datap .cols{font-size:.9em;margin:4px 0 6px;overflow-wrap:anywhere}
+.tbox{overflow-x:auto;max-width:100%;border-radius:8px;border:1px solid var(--line);background:var(--bg)}
+.tbox table{border-collapse:collapse;font-family:var(--mono);font-size:12.5px;min-width:100%}
+.tbox th,.tbox td{padding:4px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.tbox th{background:var(--panel2)}
+.console{font-family:var(--mono);font-size:13px;background:#1f1a17;color:#f3e9d6;border-radius:10px;padding:9px 11px;white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;min-height:44px}
+.console .err{color:#ffb4a8}
+.console .dim{color:#bfb3a2}
+.plots img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff;margin-top:6px}
+.status{font-size:.9em;color:var(--soft)}
+.fb{border-radius:12px;padding:11px 14px;border-left:4px solid var(--line);background:var(--panel2)}
+.fb.ok{border-color:var(--ok);background:var(--okTint)}
+.fb.bad{border-color:var(--rose);background:var(--roseTint)}
+.fb .h{display:block;font-family:var(--display);font-size:1.08em;margin-bottom:4px}
+.fb ul{margin:6px 0;padding-left:0;list-style:none;display:grid;gap:6px}
+.fb li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:4px}
+.fb li .why{grid-column:2;font-size:.92em;overflow-wrap:anywhere}
+.fb .note{font-size:.92em;border-left:3px solid var(--gold);padding-left:8px;margin:6px 0;overflow-wrap:anywhere}
+.row.wrapbtns{flex-wrap:wrap}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+ICA.base = "../"; DataLab.init(ICA.base);
+var bar = ICA.topbar("Data Lab"), app = document.getElementById("app"), esc = ICA.esc, md = ICA.md;
+var LIST = window.DLAB || [], GROUPS = window.DLAB_GROUPS || [], BY = {};
+LIST.forEach(function(c, i){ BY[c.id] = c; c.i = i; });
+function store(){ var s = ICA.load(); s.labs = s.labs || {}; s.labs.data = s.labs.data || {}; return s.labs.data; }
+function setTitle(t){ document.title = t + " · Data Lab"; bar.querySelector(".title").textContent = t; }
+var state = {sql:"idle", r:"idle"};
+function status(msg){ var el = document.getElementById("dlstatus"); if (el) el.textContent = msg || ""; }
+function startEngine(kind){
+  if (state[kind] !== "idle") return;
+  state[kind] = "loading";
+  status(kind === "r" ? "Starting R… The first time, this downloads up to 46 MB (it’s saved afterwards), so it can take a while on a slow connection." : "Starting the database engine…");
+  (kind === "r" ? DataLab.rReady() : DataLab.sqlReady()).then(function(v){ state[kind] = "ready"; status((v && v.version ? v.version : kind === "r" ? "R" : "SQLite") + " is ready."); })
+    .catch(function(e){ state[kind] = "idle"; status("The engine couldn’t start in this browser: " + e.message + ". Try reloading, or a current Chrome, Edge, Firefox or Safari."); });
+}
+function home(){
+  setTitle("Data Lab");
+  var st = store(), n = LIST.filter(function(c){ return st[c.id] && st[c.id].done; }).length;
+  app.innerHTML = '<div class="stack"><a class="small" href="index.html">← All labs</a><div><div class="eyebrow">Labs</div><h1>Data Lab</h1>'+
+    '<p class="lead">Ask a database questions in SQL, and analyse data in R, right in your browser. Nothing to install, and nothing leaves your device.</p></div>'+
+    ICA.mugi("tip", '<p><b>How checking works:</b> for SQL I run your query and the model answer on the same database and compare the results, then do it again on a second version of the database with different numbers. For R I run your code and test the objects it makes, again on a second data file. Any correct way of writing it passes.</p><p class="small">R here is “base R”: the packages that come with R. Packages such as dplyr and ggplot2 need R on a computer or Posit Cloud.</p>', {small:true})+
+    '<p class="small muted">'+n+' of '+LIST.length+' solved. The SQL engine is small; R downloads up to 46 MB the first time you open an R challenge. All the data is invented.</p>'+
+    '<div class="groups">'+GROUPS.map(function(g){
+      var cs = LIST.filter(function(c){ return c.group === g.id; });
+      return '<section class="grp"><h2>'+esc(g.title)+'</h2><p class="small muted">'+esc(g.blurb)+'</p><div class="chal">'+cs.map(function(c){ var d = st[c.id] && st[c.id].done; return '<a href="#'+c.id+'" class="'+(d ? "done" : "")+'"><span class="n">'+(d ? "✓" : (c.i+1))+'</span><span>'+esc(c.title)+'</span></a>'; }).join("")+'</div></section>';
+    }).join("")+'</div></div>';
+  window.scrollTo(0, 0);
+}
+function tableHtml(t, max){
+  if (!t || !t.columns) return '<p class="small muted">(no rows)</p>';
+  var rows = t.values.slice(0, max || 50);
+  return '<div class="tbox"><table><thead><tr>'+t.columns.map(function(c){ return '<th>'+esc(c)+'</th>'; }).join("")+'</tr></thead><tbody>'+rows.map(function(r){ return '<tr>'+r.map(function(v){ return '<td>'+(v === null ? '<span class="muted">NULL</span>' : esc(String(v)))+'</td>'; }).join("")+'</tr>'; }).join("")+'</tbody></table></div>'+(t.values.length > rows.length ? '<p class="small muted">…and '+(t.values.length - rows.length)+' more rows.</p>' : '<p class="small muted">'+t.values.length+' row'+(t.values.length === 1 ? "" : "s")+'.</p>')+(t.more ? '<p class="small muted">The query returned more than '+DataLab.MAXROWS.toLocaleString("en-GB")+' rows; only the first '+DataLab.MAXROWS.toLocaleString("en-GB")+' were kept.</p>' : '');
+}
+var cur = null, hintN = 0, busy = false;
+function challenge(id){
+  var ch = BY[id]; if (!ch){ home(); return; }
+  cur = ch; hintN = 0;
+  var st = store()[id] || {}, g = GROUPS.filter(function(x){ return x.id === ch.group; })[0] || {};
+  setTitle(ch.title);
+  var keys = ch.kind === "sql" ? ["*", ",", "'", "(", ")", "=", ">", "<", ";", ".", "%", "_"] : ["<-", "$", "\"", "(", ")", ",", "[", "]", "~", "|>", "==", "#"];
+  var dataPanel = ch.kind === "sql"
+    ? '<div class="datap"><p class="small muted" style="margin:0 0 4px">The database’s tables (tap to look inside):</p>'+(ch.tables || []).map(function(t){ return '<details data-table="'+esc(t[0])+'"><summary>🗄️ '+esc(t[0])+'</summary><p class="cols">Columns: '+esc(t[1])+'</p><div class="tv"></div></details>'; }).join("")+'</div>'
+    : (ch.files ? '<div class="datap"><p class="small muted" style="margin:0 0 4px">Files in R’s folder (tap to look inside):</p>'+Object.keys(ch.files).map(function(f){ return '<details><summary>📄 '+esc(f)+'</summary><div class="tbox"><pre style="margin:0;padding:6px 8px;font-size:12.5px">'+esc(ch.files[f])+'</pre></div></details>'; }).join("")+'</div>' : '');
+  app.innerHTML = '<div class="stack"><a class="small" href="#">← All challenges</a>'+
+    '<div><div class="eyebrow">'+esc(g.title || "")+' · '+(ch.i+1)+' of '+LIST.length+(st.done ? ' · ✓ solved' : '')+'</div><h1 style="margin-top:4px">'+esc(ch.title)+'</h1></div>'+
+    '<div class="prose"><p>'+md(ch.task)+'</p></div>'+dataPanel+
+    '<label class="sr-only" for="ed">'+(ch.kind === "sql" ? "SQL editor" : "R editor")+'</label><textarea id="ed" class="editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>'+
+    '<div class="keys" role="group" aria-label="Code symbols">'+keys.map(function(k){ return '<button type="button" data-k="'+esc(k)+'" aria-label="Type '+esc(k)+'">'+esc(k)+'</button>'; }).join("")+'</div>'+
+    '<div class="row wrapbtns"><button class="btn" id="run">▶ Run</button><button class="btn primary" id="check">Check</button><button class="btn" id="hint">Hint</button><button class="btn" id="show">Show an answer</button><button class="btn" id="reset">Start again</button></div>'+
+    '<p class="status" id="dlstatus" aria-live="polite"></p>'+
+    '<div><p class="small muted" style="margin:0 0 4px">'+(ch.kind === "sql" ? "Result" : "Output")+'</p><div id="out">'+(ch.kind === "sql" ? '<p class="small muted">Press ▶ Run to see your query’s result.</p>' : '<div class="console"><span class="dim">Press ▶ Run to see what your code prints.</span></div>')+'</div><div class="plots" id="plots"></div></div>'+
+    '<div id="fb" aria-live="polite"></div>'+
+    (ch.lesson && (!window.ICA_CATALOG || window.ICA_CATALOG.units.indexOf(ch.lesson.split("-")[0]) > -1) ? '<p class="small muted">Learn this in <a href="../quests/index.html#'+esc(ch.lesson)+'">Quests: Data Literacy</a>.</p>' : '')+
+    '<div class="lessonnav" id="nav"></div></div>';
+  window.scrollTo(0, 0);
+  var ed = document.getElementById("ed");
+  ed.value = st.code != null ? st.code : (ch.start || "");
+  size(); nav(); startEngine(ch.kind);
+  ed.addEventListener("input", function(){ var s = store(); s[cur.id] = s[cur.id] || {}; s[cur.id].code = ed.value; ICA.save(); size(); });
+  ed.addEventListener("keydown", function(e){ if (e.key === "Enter" && (e.ctrlKey || e.metaKey)){ e.preventDefault(); run(); } });
+  Array.prototype.forEach.call(document.querySelectorAll("details[data-table]"), function(d){
+    d.addEventListener("toggle", function(){ if (!d.open || d.dataset.loaded) return; d.dataset.loaded = 1; DataLab.sql(cur.setup, "SELECT * FROM " + d.getAttribute("data-table")).then(function(r){ d.querySelector(".tv").innerHTML = r.results && r.results[0] ? tableHtml(r.results[0], 20) : ""; }); });
+  });
+}
+function size(){ var ed = document.getElementById("ed"); ed.style.height = "auto"; ed.style.height = Math.max(150, Math.min(480, ed.scrollHeight + 4)) + "px"; }
+function insert(t){ var ed = document.getElementById("ed"), s = ed.selectionStart, e = ed.selectionEnd, add = cur.kind === "r" && (t === "<-" || t === "|>" || t === "==" || t === "~") ? " " + t + " " : t; ed.value = ed.value.slice(0, s) + add + ed.value.slice(e); ed.setSelectionRange(s + add.length, s + add.length); ed.dispatchEvent(new Event("input")); }
+function showPlots(plots, total){
+  var box = document.getElementById("plots"); box.innerHTML = "";
+  if (total > (plots || []).length){ var p = document.createElement("p"); p.className = "small muted"; p.textContent = "Your code drew " + total + " charts; the first " + plots.length + " are shown."; box.appendChild(p); }
+  (plots || []).forEach(function(bmp, k){
+    try { var c = document.createElement("canvas"); c.width = bmp.width; c.height = bmp.height; c.getContext("2d").drawImage(bmp, 0, 0); var img = document.createElement("img"); img.src = c.toDataURL("image/png"); img.alt = "Chart " + (k + 1) + " drawn by your code"; box.appendChild(img); } catch (e){}
+  });
+}
+function errHtml(err){
+  if (!err) return "";
+  return '<p class="note"><b>'+(cur.kind === "sql" ? "SQLite says: " : (err.kind === "parse" ? "R couldn’t read it: " : "R says: "))+'</b>'+esc(String(err.msg).split("\n")[0])+(err.line ? ' (line '+err.line+')' : '')+(err.explain ? '<br>'+esc(err.explain) : '')+'</p>';
+}
+var TIMEOUT = "Your code was still running after "+(DataLab.LIMIT/1000)+" seconds, so I stopped it and restarted the engine. Look for a loop that never ends (or a long Sys.sleep()).";
+async function run(){
+  if (busy) return; busy = true;
+  var btn = document.getElementById("run"), code = document.getElementById("ed").value, out = document.getElementById("out"), fb = document.getElementById("fb");
+  btn.disabled = true; btn.textContent = "Running…"; fb.innerHTML = "";
+  try {
+    if (cur.kind === "sql"){
+      var r = await DataLab.sql(cur.setup, code); state.sql = "ready";
+      if (r.timeout) out.innerHTML = '<p class="fb bad">'+esc(TIMEOUT)+'</p>';
+      else if (r.error) out.innerHTML = '<div class="fb bad"><b class="h">The query didn’t run</b>'+errHtml({msg:r.error, explain:DataLab.explainSql(r.error, code)})+'</div>';
+      else out.innerHTML = r.results.length ? tableHtml(r.results[r.results.length - 1]) : '<p class="small muted">The query ran but returned no table.</p>';
+    } else {
+      var rr = await DataLab.r(code, cur.files, []), ctx = DataLab.rContext(code, cur.files); state.r = "ready";
+      if (rr.timeout){ out.innerHTML = '<div class="console"><span class="err">'+esc(TIMEOUT)+'</span></div>'; showPlots([]); }
+      else {
+        var h = esc(rr.out || "");
+        if (rr.err) h += (h ? "\n" : "") + '<span class="err">'+esc((rr.err.kind === "parse" ? "Error (couldn’t read the code): " : "Error: ") + String(rr.err.msg).split("\n")[0])+'</span>';
+        (rr.warns || []).forEach(function(w){ h += (h ? "\n" : "") + '<span class="dim">Warning: '+esc(w)+'</span>'; });
+        if (!h) h = '<span class="dim">'+(rr.plots.length ? "(A chart was drawn: see below.)" : "(The code ran but printed nothing. Type a name on its own line to print it.)")+'</span>';
+        out.innerHTML = '<div class="console">'+h+'</div>'; showPlots(rr.plots, rr.plotCount);
+        if (rr.err) fb.innerHTML = '<div class="fb bad"><b class="h">R stopped with an error</b>'+errHtml({msg:rr.err.msg, line:rr.err.line, kind:rr.err.kind, explain:DataLab.explainR(rr.err, ctx)})+'</div>';
+        else if (rr.warns && rr.warns.length && rr.warns.some(function(w){ return DataLab.explainWarn(w, ctx); })) fb.innerHTML = '<div class="fb"><b class="h">R gave a warning</b>'+rr.warns.filter(function(w){ return DataLab.explainWarn(w, ctx); }).map(function(w){ return '<p class="note">'+esc(DataLab.explainWarn(w, ctx))+'</p>'; }).join("")+'</div>';
+      }
+    }
+  } catch (e){ out.innerHTML = '<p class="fb bad">'+esc(e.message)+'</p>'; }
+  btn.disabled = false; btn.textContent = "▶ Run"; busy = false;
+}
+async function check(){
+  if (busy) return; busy = true;
+  var btn = document.getElementById("check"), ch = cur, code = document.getElementById("ed").value, fb = document.getElementById("fb");
+  btn.disabled = true; btn.textContent = "Checking…";
+  var res;
+  try { res = await DataLab.check(ch, code); }
+  catch (e){ fb.innerHTML = '<div class="fb bad"><b class="h">Couldn’t check</b><p>'+esc(e.message)+'</p></div>'; btn.disabled = false; btn.textContent = "Check"; busy = false; return; }
+  btn.disabled = false; btn.textContent = "Check"; busy = false;
+  if (res.timeout){ fb.innerHTML = '<div class="fb bad"><b class="h">The code didn’t finish</b><p>'+esc(TIMEOUT)+'</p></div>'; return; }
+  var ok = res.results.length && res.results.every(function(r){ return r.ok; });
+  var st = store(); st[ch.id] = st[ch.id] || {}; st[ch.id].tries = (st[ch.id].tries || 0) + 1; st[ch.id].code = code;
+  if (ok && !st[ch.id].done) st[ch.id].done = Date.now();
+  ICA.save();
+  var h = '<div class="fb '+(ok ? "ok" : "bad")+'"><b class="h">'+(ok ? "✓ "+["That’s it!","Nicely done.","Spot on.","Yes!"][ch.i % 4] : res.error ? "It didn’t run" : "Not quite yet")+'</b>'+errHtml(res.error)+
+    '<ul>'+res.results.map(function(r){ return '<li><span aria-hidden="true">'+(r.ok ? "✅" : "⬜")+'</span><span>'+esc(r.t)+(r.ok ? "" : '<span class="sr-only"> (not yet)</span>')+'</span>'+(r.ok ? "" : '<span class="why muted">'+esc(r.msg)+'</span>')+'</li>'; }).join("")+'</ul>'+
+    (res.warnText ? res.warnText.map(function(w){ return '<p class="note">Warning: '+esc(w)+'</p>'; }).join("") : "")+
+    (ok ? '<p>'+md(ch.explain || "")+'</p>' : '')+'</div>';
+  fb.innerHTML = h; nav();
+  var out = document.getElementById("out");
+  if (ch.kind === "sql" && res.table) out.innerHTML = tableHtml(res.table);
+  if (ch.kind === "r"){ if (res.output || res.plots.length){ out.innerHTML = '<div class="console">'+(esc(res.output) || '<span class="dim">(nothing printed)</span>')+'</div>'; showPlots(res.plots, res.plotCount); } }
+  fb.scrollIntoView({block:"nearest", behavior:"smooth"});
+}
+function nav(){
+  var ch = cur, next = LIST[ch.i + 1], el = document.getElementById("nav"), done = (store()[ch.id] || {}).done;
+  el.innerHTML = (LIST[ch.i - 1] ? '<a class="btn" href="#'+LIST[ch.i-1].id+'">← Back</a>' : '<span></span>') + (next ? '<a class="btn'+(done ? ' primary' : '')+'" href="#'+next.id+'">'+(done ? "Next challenge →" : "Skip →")+'</a>' : '<a class="btn primary" href="#">All challenges</a>');
+}
+document.addEventListener("mousedown", function(e){ if (e.target.closest("[data-k]")) e.preventDefault(); });
+document.addEventListener("click", function(e){
+  var t; if (!cur || !document.getElementById("ed")) return;
+  if ((t = e.target.closest("[data-k]"))){ insert(t.getAttribute("data-k")); return; }
+  if (e.target.id === "run"){ run(); return; }
+  if (e.target.id === "check"){ check(); return; }
+  if (e.target.id === "reset"){ var ed = document.getElementById("ed"); ed.value = cur.start || ""; ed.dispatchEvent(new Event("input")); document.getElementById("fb").innerHTML = ""; return; }
+  if (e.target.id === "hint"){ var hs = cur.hints || [], i = Math.min(hintN, hs.length - 1); hintN++; document.getElementById("fb").innerHTML = '<div class="fb"><b class="h">Hint '+(i+1)+' of '+hs.length+'</b><p>'+md(hs[i] || "")+'</p></div>'; return; }
+  if (e.target.id === "show"){ document.getElementById("fb").innerHTML = '<div class="fb"><b class="h">One answer</b><figure class="codeblk"><figcaption><span>'+(cur.kind === "sql" ? "SQL" : "R")+'</span></figcaption><pre><code>'+esc(cur.solution || "")+'</code></pre></figure><p>'+md(cur.explain || "")+'</p><p class="small muted">Try typing it in yourself and pressing Check: typing it once helps it stick.</p></div>'; }
+});
+function route(){ var id = location.hash.slice(1); if (id && BY[id]) challenge(id); else { cur = null; home(); } }
+window.addEventListener("hashchange", route);
+route();
+})();
+</script>
+</body>
+</html>

@@ -97,16 +97,18 @@ ICA.md = function(s){
   out = out.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
   out = out.replace(/(^|[\s(\u201c"'\u2014\u2013\/-])\*([^*\s](?:[^*]*?[^*\s])?)\*(?=[\s.,;:!?)\u201d"'\u2019\u2014\u2013\/-]|$)/g, "$1<i>$2</i>");
   out = out.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function(m, id, shown, at, all){
-    var t = ICA.terms[id]; var label = shown || (t ? ICA.termInSentence(t.term, all.slice(0, at)) : id);
+    var t = ICA.terms[id]; var label = shown || (t ? ICA.termInSentence(t.term, all.slice(0, at)) : id.replace(/-/g, " "));
+    if (!t && ICA.units && ICA.units.length) return label;   // term not built yet: plain words
     return '<button type="button" class="term" data-term="'+id+'">'+label+'</button>';
   });
   out = out.replace(/\{\{([a-z0-9-]+)(?:\|([^}]+))?\}\}/g, function(m, id, shown){
-    var e = ICA.codex[id]; var label = shown || (e ? e.title : id);
+    var e = ICA.codex[id]; var label = shown || (e ? e.title : id.replace(/-/g, " "));
+    if (!e && ICA.units && ICA.units.length) return label;   // entry not built yet: plain words, no broken link
     return '<a class="xref" href="'+ICA.base+'codex/index.html#'+id+'">'+label+'</a>';
   });
   out = out.replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
   out = out.replace(/\n/g, "<br>");
-  out = out.replace(/\u0000(\d+)\u0000/g, function(m, i){ return "<code>"+codes[+i]+"</code>"; });
+  out = out.replace(/\u0000(\d+)\u0000/g, function(m, i){ return "<code>"+codes[+i].replace(/([_\/.,=&])(?=[^\s])/g, "$1<wbr>")+"</code>"; });   // let long code words break at sensible points
   return out;
 };
 
@@ -132,6 +134,7 @@ ICA.blocks = function(list){
     if (b.fix) return '<div class="callout fix"><b class="h">Textbook check</b>'+ICA.md(b.fix)+'</div>';
     if (b.code !== undefined){ var cid = "cb" + Math.random().toString(36).slice(2, 8); ICA.codes = ICA.codes || {}; ICA.codes[cid] = b.code;
       return '<figure class="codeblk"><figcaption><span>'+ICA.esc(b.label || ({html:"HTML", css:"CSS", js:"JavaScript", sh:"Command line", py:"Python", txt:"Text"}[b.lang] || "Code"))+'</span><span class="cbtns">'+(b.weblab ? '<a href="'+ICA.base+'labs/web.html#'+ICA.esc(b.weblab)+'">Try in Web Lab</a>' : '')+(b.pylab ? '<a href="'+ICA.base+'labs/python.html#'+ICA.esc(b.pylab)+'">Try in Python Lab</a>' : '')+'<button type="button" data-copycode="'+cid+'">Copy</button></span></figcaption><pre><code class="lang-'+ICA.esc(b.lang || "txt")+'">'+ICA.esc(b.code)+'</code></pre>'+(b.cap ? '<p class="small muted">'+ICA.md(b.cap)+'</p>' : '')+'</figure>'; }
+    if (b.lab && /^dl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/data.html#'+ICA.esc(b.lab)+'"><b class="h">📈 Practise in the Data Lab</b><span>'+ICA.md(b.t || "Try it with real data")+' →</span></a>';
     if (b.lab && /^cl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/cite.html#'+ICA.esc(b.lab)+'"><b class="h">📚 Practise in the Citation Lab</b><span>'+ICA.md(b.t || "Build a real reference")+' →</span></a>';
     if (b.lab && /^pl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/python.html#'+ICA.esc(b.lab)+'"><b class="h">🐍 Practise in the Python Lab</b><span>'+ICA.md(b.t || "Try it for real")+' →</span></a>';
     if (b.lab) return /^wl-/.test(b.lab) ? '<a class="callout labcall" href="'+ICA.base+'labs/web.html#'+ICA.esc(b.lab)+'"><b class="h">🌐 Practise in the Web Lab</b><span>'+ICA.md(b.t || "Try it live")+' →</span></a>' : '<a class="callout labcall" href="'+ICA.base+'labs/formula.html#'+ICA.esc(b.lab)+'"><b class="h">🧮 Practise in the Formula Lab</b><span>'+ICA.md(b.t || "Try it on a real practice sheet")+' →</span></a>';
