@@ -15,6 +15,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e2u4-l1", title:"Social institutions: family and education", minutes:55,
+   hook:{q:"In Arlie Hochschild’s research on US married couples where both husband and wife had paid jobs, who did most of the housework?", options:["The men","The women","Both partners, equally","Paid cleaners"], answer:1, reveal:"**The women**, mostly. Hochschild called it “the second shift”: a second job waiting after the paid one. Families organise work, money and care in patterns sociologists can study, and this lesson looks at how families are built in different societies, then at school, the other institution most people grow up inside."},
    goals:[
      "Explain what a social institution is and how institutions depend on each other",
      "Compare family forms, kinship systems and marriage patterns across cultures",
@@ -116,6 +117,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e2u4-l2", title:"Religion, power and politics", minutes:55,
+   hook:{q:"Many of the world’s major religions began as what?", options:["Official state religions","Small, new groups","Philosophies taught in universities","Laws written by rulers"], answer:1, reveal:"**Small, new groups.** As the textbook notes, almost all religions began that way, which is one reason many sociologists prefer “new religious movement” to the loaded word “cult”. This lesson shows how sociologists study what [[religion]] does without judging whether any faith is true, then asks a question religion and government share: why do people accept rules?"},
    goals:[
      "Explain how Durkheim, Weber and Marx analysed religion, and how each sociological lens sees it",
      "Describe the secularization debate fairly, with the evidence on each side",
@@ -220,6 +222,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e2u4-l3", title:"Work, the economy and health", minutes:55,
+   hook:{q:"The British civil servants in the Whitehall studies all had jobs and access to health care. Did their health differ by rank?", options:["No: equal access to care made health equal","Only the very top rank was healthier","Yes: health got worse at each step down the job ladder","Lower ranks were healthier, because their work was more active"], answer:2, reveal:"**Yes, at each step down.** Researchers call this a social gradient: health follows position in society, even when everyone can see a doctor. This lesson shows how the economy decides who gets what, and how that shapes who stays healthy through what WHO calls the [[social-determinants|social determinants of health]]."},
    goals:[
      "Compare capitalism, socialism and mixed economies without treating any as automatically good or bad",
      "Explain the informal economy, global commodity chains, deindustrialization and automation",
@@ -323,6 +326,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e2u4-l4", title:"Population, cities and the environment", minutes:60,
+   hook:{q:"About 2.1 children per woman is “replacement level”, where each generation roughly replaces the last. What share of the world’s countries are now below it?", options:["About one in ten","About a quarter","More than half","Almost all"], answer:2, reveal:"**More than half**, according to the UN’s *World Population Prospects 2024*. Births, deaths and migration are the only ways a population changes, and this lesson shows how [[demography|demographers]] measure them, how birth and death rates shift as countries develop, and what that means for cities and the environment."},
    goals:[
      "Calculate crude birth, death and migration rates per 1,000 people and interpret them",
      "Explain the demographic transition model and its limits",
@@ -422,6 +426,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e2u4-l5", title:"Media, technology and social change", minutes:60,
+   hook:{q:"A social movement that once filled the streets has gone quiet. What can you safely conclude?", options:["It has failed","Its supporters lost interest","Not much yet: fading can also follow success","The government must have banned it"], answer:2, reveal:"**Not much yet.** Movements pass through typical stages, and the last one, decline, can mean the goal was won. This lesson explains how [[social-movement|social movements]] rise and what helps them succeed, alongside how media and technology shape what a society treats as important."},
    goals:[
      "Analyse media and technology through the main sociological lenses",
      "Explain gatekeeping, media consolidation and the digital divide, with current figures",

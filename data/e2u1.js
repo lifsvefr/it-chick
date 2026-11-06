@@ -16,6 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e2u1-l1", title:"What sociology is", minutes:45,
+   hook:{q:"Losing a job can feel deeply personal. When millions of people in one country lose their jobs in the same year, where would a sociologist look first for the main cause?", options:["At each person’s effort and character","At how the economy and society are organised","At bad luck, one person at a time","Nowhere: it can’t be explained"], answer:1, reveal:"**At how the economy is organised.** C. Wright Mills used this very example: one person out of work in a big city faces a [[personal-trouble|personal trouble]], but millions losing jobs at once is a [[public-issue|public issue]]. Seeing the issue doesn’t erase anyone’s choices; it adds a second layer of explanation. Linking one life to the wider society is the [[sociological-imagination|sociological imagination]], where this lesson begins."},
    goals:[
      "Define sociology, society and culture in plain words",
      "Use the sociological imagination to tell a personal trouble from a public issue",
@@ -119,6 +120,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e2u1-l2", title:"Where sociology came from", minutes:50,
+   hook:{q:"Karl Marx explained society through who owns the land and the factories. When Max Weber explained the rise of capitalism, what extra ingredient did he point to?", options:["Steam engines and new machines","Religious beliefs about work and saving","Gold and silver from overseas","Fast-growing city populations"], answer:1, reveal:"**Religious beliefs.** In *The Protestant Ethic* Weber argued that beliefs about disciplined work and saving helped capitalism grow, not only material conditions. Historians still debate his thesis, but it shows how sociology’s founders disagreed about what drives society, and this lesson sets their ideas side by side."},
    goals:[
      "Explain why industrialisation, urbanisation and revolution made people want a science of society",
      "Describe the key ideas of Comte, Martineau, Marx, Spencer, Durkheim, Weber and Du Bois, and Ibn Khaldun as an early forerunner",
@@ -241,6 +243,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e2u1-l3", title:"The big lenses", minutes:55,
+   hook:{q:"In many Western traditions, brides wear white. What has white long meant in parts of East Asia?", options:["Mourning","Wealth","Victory","Youth"], answer:0, reveal:"**Mourning.** One colour can carry very different meanings because meanings aren’t built into things: people create and share them in interaction, the starting point of [[symbolic-interactionism|symbolic interactionism]]. That is one of five lenses in this lesson, and each notices something the others miss."},
    goals:[
      "Explain what a theoretical perspective is and tell macro-level from micro-level analysis",
      "Use manifest functions, latent functions and dysfunctions to analyse an institution",
@@ -352,6 +355,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e2u1-l4", title:"How sociologists know things", minutes:55,
+   hook:{q:"Through the year, ice cream sales and sunscreen sales rise and fall together. What is the best explanation?", options:["Eating ice cream makes people want sunscreen","People who buy sunscreen treat themselves to ice cream","Hot weather drives both","Shops display them side by side"], answer:2, reveal:"**Hot weather drives both.** Two things can move together without either causing the other when a hidden third variable pushes them both: a [[spurious-correlation|spurious correlation]]. This lesson shows how researchers tell [[correlation]] from [[causation]] and measure ideas carefully enough to test them."},
    goals:[
      "Describe the six steps of the scientific method as sociologists use it",
      "Write a testable hypothesis and identify its independent and dependent variables",
@@ -461,6 +465,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e2u1-l5", title:"Research methods and ethics", minutes:60,
+   hook:{q:"In a 1971 US study, drivers with clean driving records put Black Panther Party stickers on their cars. What happened?", options:["Nothing noticeable changed","Other drivers gave them more room on the road","They got so many traffic tickets that the study was stopped early","Police stopped them less often than before"], answer:2, reveal:"They got **so many tickets that the study was stopped early**. Their records were clean and the sticker was the new difference, which is the logic of an [[experiment]]: change one thing and watch what follows. This lesson matches research methods to questions and sets out the ethical rules that protect the people being studied."},
    goals:[
      "Choose between surveys, field research, experiments and secondary data to fit a research question",
      "Explain populations, samples and why random sampling matters",

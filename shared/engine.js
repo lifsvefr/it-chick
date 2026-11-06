@@ -122,7 +122,9 @@ ICA.blocks = function(list){
     if (b.look) return '<div class="callout look"><b class="h">Look for these while you read</b><ol>'+b.look.map(function(x){ return "<li>"+ICA.md(x)+"</li>"; }).join("")+'</ol></div>';
     if (b.beyond) return '<div class="callout beyond"><b class="h">Beyond the book</b>'+ICA.md(b.beyond)+'</div>';
     if (b.fix) return '<div class="callout fix"><b class="h">Textbook check</b>'+ICA.md(b.fix)+'</div>';
-    if (b.lab) return '<a class="callout labcall" href="'+ICA.base+'labs/formula.html#'+ICA.esc(b.lab)+'"><b class="h">🧮 Practise in the Formula Lab</b><span>'+ICA.md(b.t || "Try it on a real practice sheet")+' →</span></a>';
+    if (b.code !== undefined){ var cid = "cb" + Math.random().toString(36).slice(2, 8); ICA.codes = ICA.codes || {}; ICA.codes[cid] = b.code;
+      return '<figure class="codeblk"><figcaption><span>'+ICA.esc(b.label || ({html:"HTML", css:"CSS", js:"JavaScript", sh:"Command line", py:"Python", txt:"Text"}[b.lang] || "Code"))+'</span><span class="cbtns">'+(b.weblab ? '<a href="'+ICA.base+'labs/web.html#'+ICA.esc(b.weblab)+'">Try in Web Lab</a>' : '')+'<button type="button" data-copycode="'+cid+'">Copy</button></span></figcaption><pre><code class="lang-'+ICA.esc(b.lang || "txt")+'">'+ICA.esc(b.code)+'</code></pre>'+(b.cap ? '<p class="small muted">'+ICA.md(b.cap)+'</p>' : '')+'</figure>'; }
+    if (b.lab) return /^wl-/.test(b.lab) ? '<a class="callout labcall" href="'+ICA.base+'labs/web.html#'+ICA.esc(b.lab)+'"><b class="h">🌐 Practise in the Web Lab</b><span>'+ICA.md(b.t || "Try it live")+' →</span></a>' : '<a class="callout labcall" href="'+ICA.base+'labs/formula.html#'+ICA.esc(b.lab)+'"><b class="h">🧮 Practise in the Formula Lab</b><span>'+ICA.md(b.t || "Try it on a real practice sheet")+' →</span></a>';
     if (b.fig){
       var vb = /viewBox="\s*[\d.-]+\s+[\d.-]+\s+([\d.]+)/.exec(b.fig), w = vb ? Math.round(+vb[1]*0.86) : 420;
       var fid = ICA.figs.push(b) - 1;
@@ -439,3 +441,5 @@ ICA.copy = function(text, done){
 
 ICA.applySettings();
 })();
+
+document.addEventListener("click", function(e){ var b = e.target.closest && e.target.closest("[data-copycode]"); if (!b) return; var t = (ICA.codes || {})[b.getAttribute("data-copycode")] || ""; ICA.copy ? ICA.copy(t) : (navigator.clipboard && navigator.clipboard.writeText(t)); b.textContent = "Copied ✓"; setTimeout(function(){ b.textContent = "Copy"; }, 1500); });

@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../shared/style.css">
 <script src="../shared/engine.js"></script>
 <script src="../data/lab-formula.js"></script>
+<script src="../data/lab-web.js"></script>
 <style>
 .labs{display:grid;gap:10px}
 .lab{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;background:var(--panel);border:1.5px solid var(--line);border-radius:16px;padding:14px;color:var(--ink);text-decoration:none}
@@ -28,7 +29,7 @@ a.lab:hover{border-color:var(--lupine)}
     <p class="lead">Lessons explain; labs let you try things for real and tell you exactly what happened. Nothing you do here can break anything.</p></div>
     <div class="labs">
       <a class="lab" href="formula.html"><span class="ic" aria-hidden="true">🧮</span><span><b>Formula Lab</b><span class="small">Write real spreadsheet formulas on a small sheet. The lab checks them on hidden data too, and explains each mistake in plain words.</span><span class="st small" id="flprog"></span></span></a>
-      <div class="lab off"><span class="ic" aria-hidden="true">🌐</span><span><b>Web Lab</b><span class="small">Write HTML and CSS and see the page change, with a checker that reads your code line by line.</span><span class="st small muted">Arrives with Making with Code</span></span></div>
+      <a class="lab" href="web.html"><span class="ic" aria-hidden="true">🌐</span><span><b>Web Lab</b><span class="small">Write real HTML, CSS and JavaScript and watch the page change. The checker runs your code in a real browser page and points to the exact line when something’s off.</span><span class="st small" id="wlprog"></span></span></a>
       <div class="lab off"><span class="ic" aria-hidden="true">📚</span><span><b>Citation Lab</b><span class="small">Build references in APA, MLA, Chicago and more, and spot what’s missing.</span><span class="st small muted">Arrives with Research Skills</span></span></div>
       <div class="lab off"><span class="ic" aria-hidden="true">📈</span><span><b>Data Lab</b><span class="small">Clean a messy dataset, summarise it and make an honest chart.</span><span class="st small muted">Arrives with Data Literacy</span></span></div>
     </div>
@@ -40,6 +41,8 @@ ICA.topbar("Labs");
 ICA.applySettings && ICA.applySettings();
 (function(){
   var s = ICA.load(), done = (s.labs && s.labs.formula) || {}, n = (window.FLAB||[]).filter(function(c){ return done[c.id] && done[c.id].done; }).length;
+  var wd = (s.labs && s.labs.web) || {}, wn = (window.WLAB||[]).filter(function(c){ return wd[c.id] && wd[c.id].done; }).length;
+  document.getElementById("wlprog").textContent = (window.WLAB||[]).length + " challenges" + (wn ? " · " + wn + " solved" : "");
   document.getElementById("flprog").textContent = (window.FLAB||[]).length + " challenges" + (n ? " · " + n + " solved" : "");
 })();
 </script>

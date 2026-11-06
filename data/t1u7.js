@@ -17,6 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u7-l1", title:"A troubleshooting method", minutes:50,
+   hook:{q:"IT support staff learn a six-step method for fixing problems. In which step does most of the work usually happen?", options:["Working out exactly what the problem is","Applying the fix","Swapping in new parts","Writing notes at the end"], answer:0, reveal:"**Working out exactly what the problem is.** What happens, where, since when, and what changed just before: a clear picture like that often points straight at the cause. This lesson walks through all six steps, so you can stop trying things at random and run a short, orderly search instead."},
    goals:[
      "Tell a symptom apart from its root cause",
      "Use the six steps of the CompTIA troubleshooting methodology on everyday problems",
@@ -180,6 +181,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u7-l2", title:"When it won’t start, is slow, or won’t connect", minutes:55,
+   hook:{q:"Your laptop has become really slow, and an advert offers a free “speed booster” app that promises to make it like new. What’s the best move?", options:["Install it: it’s free, so there’s nothing to lose","Buy the paid version, since paid tools are safer","Skip it, and use the built-in tools to find out why it’s slow","Install it, then restart the laptop"], answer:2, reveal:"**Skip it.** Some of these apps are scams or bundle unwanted software, and the built-in tools already do the useful parts. “Slow” has many possible causes, from too many startup apps to a hot, dusty laptop, and this lesson shows how to read the clues before you fix anything."},
    goals:[
      "Tell apart no power, no picture and a failed startup, and check each one",
      "Use safe mode and recovery tools to find startup problems",
@@ -342,6 +344,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u7-l3", title:"Apps and files misbehaving", minutes:55,
+   hook:{q:"You’re halfway through a long document when the app freezes: a spinning wheel, and clicks do nothing. What should you do first?", options:["Force it to quit straight away","Wait a minute: it may just be busy, and recover with your work","Restart the whole device","Uninstall and reinstall the app"], answer:1, reveal:"**Wait a minute first.** A frozen app may be busy saving a large file or waiting for a slow network drive, and it can come back with your work intact. Force quitting loses anything unsaved, so it comes next, not first. This lesson gives you a ladder of fixes, from gentlest to most drastic."},
    goals:[
      "Tell a crash from a freeze, and force an app to quit on each kind of device",
      "Choose between repairing, resetting, offloading and reinstalling an app, knowing what each one deletes",
@@ -517,6 +520,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u7-l4", title:"Accessories and peripherals", minutes:50,
+   hook:{q:"On a video call, nobody can hear you. How many different switches and settings could be causing the silence?", options:["Just one: the call’s mute button","Two: the mute button and your volume","Three or four at most","About six, in a chain from the microphone to the app"], answer:3, reveal:"**About six.** Your voice passes through the microphone itself, its cable or Bluetooth link, the system’s choice of microphone, the system’s privacy permission, the app or browser permission, and finally the mute button in the call. A break in any link means silence, so this lesson shows how to check each link in turn."},
    goals:[
      "Trace an accessory problem along its chain, from the device itself to the app",
      "Fix Bluetooth pairing problems by understanding what pairing stores",
@@ -684,6 +688,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u7-l5", title:"Getting help well", minutes:55,
+   hook:{q:"An AI chatbot gives you confident, step-by-step instructions for fixing an error on your laptop. What’s the sensible next step?", options:["Follow them exactly: it sounds sure","Check them against the maker’s official help before acting","Ignore them: chatbots are never useful","Ask again until two answers match, then follow them"], answer:1, reveal:"**Check them against official help first.** Chatbots can be handy for explaining an error in plain words or suggesting theories to test, but they can be confidently wrong about menu names and steps, especially for new versions. This lesson shows how to search like a technician, judge the advice you find and ask for help well."},
    goals:[
      "Search error messages effectively and judge forum answers and help pages",
      "Write a help request that someone can act on straight away",

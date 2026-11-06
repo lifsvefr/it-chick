@@ -18,6 +18,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u8-l1", title:"Structure with styles and headings", minutes:50,
+   hook:{q:"You make a line big and bold so it looks like a heading. What does your word processor think that line is?", options:["A heading","Just an ordinary paragraph that happens to look big","The document’s title","A level 1 heading, because it’s the biggest text"], answer:1, reveal:"**Just an ordinary paragraph.** Big and bold only changes how it looks. Giving it a heading style says what it is, and that label is what builds the outline, an automatic table of contents and screen-reader navigation. This lesson shows how styles let you make one change and have it apply everywhere."},
    goals:[
      "Explain why styles beat formatting each paragraph by hand",
      "Build a sensible outline with heading levels, without skipping levels",
@@ -192,6 +193,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u8-l2", title:"Pages and layout", minutes:50,
+   hook:{q:"A4 paper and US Letter paper look almost the same. Which one is wider?", options:["A4","US Letter","Neither: they’re exactly the same width"], answer:1, reveal:"**US Letter**, by about 6 mm. Letter is about 216 × 279 mm; A4 is 210 × 297 mm, narrower and taller. That small difference is enough to cut off a footer or squash a form, so this lesson starts with the page frame (paper size, orientation and margins) before moving on to breaks, sections and page numbers."},
    goals:[
      "Set paper size, orientation and margins for where the document will be printed or read",
      "Use page breaks and section breaks instead of empty lines",
@@ -354,6 +356,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u8-l3", title:"Lists, tables and images", minutes:50,
+   hook:{q:"Some apps can now write a description of your pictures automatically, using AI, for people who can’t see them. How should you treat it?", options:["Trust it: the AI can see the picture","As a draft to check, because it can’t know why you included the picture","Delete it: pictures don’t need descriptions","Move it into the caption instead"], answer:1, reveal:"**As a draft to check.** Automatic [[alt-text|alt text]] may be vague or simply wrong, and it can’t know what the picture is for in your document. Good alt text gives that meaning in a sentence or two. This lesson covers it along with real lists, data tables, captions and picture placement."},
    goals:[
      "Make real bulleted and numbered lists instead of typed hyphens and numbers",
      "Use tables for data, with a header row, and not for page layout",
@@ -524,6 +527,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u8-l4", title:"Reviewing together", minutes:50,
+   hook:{q:"A colleague suggested a wording change to your document that you don’t want to keep. What’s the kindest way to handle it?", options:["Reject it quietly and move on","Accept it anyway, to avoid an argument","Reject it and add a short reply saying why","Delete their suggestion along with any comments"], answer:2, reveal:"**Reject it, with a short reply.** Something like “Keeping the original: the funder requires this wording” takes seconds and saves an argument later, because the reviewer isn’t left guessing. This lesson covers comments, tracked changes and suggestions, and how to review kindly and clearly."},
    goals:[
      "Choose between a comment and a tracked change or suggestion",
      "Turn on track changes or suggesting mode, then accept or reject each change",
@@ -691,6 +695,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u8-l5", title:"Accessible, shareable documents", minutes:55,
+   hook:{q:"A paper form is scanned and saved as a PDF, with nothing else done to it. Can a screen reader read the words on it?", options:["Yes: every PDF can be read aloud","No: it’s a picture of text, so screen readers and search can’t read the words","Yes, as long as the scan is in colour","Yes, if the file is small enough"], answer:1, reveal:"**No.** A scanned page saved as PDF is a picture of text, so screen readers can’t read it and search can’t find words in it, unless an app has run text recognition (OCR) on it. A PDF is only as accessible as the way it was made. This lesson shows how to export a good, tagged PDF from your original, and how to check a document works for every reader."},
    goals:[
      "Check a document for accessibility, with a checker and by hand",
      "Write descriptive link text and choose text colours with enough contrast",

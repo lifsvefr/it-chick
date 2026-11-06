@@ -18,6 +18,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u9-l1", title:"Cells, data and types", minutes:50,
+   hook:{q:"Spreadsheets store dates as numbers: a count of days from a fixed starting day. So how is the time 12:00 noon stored?", options:["12","0.5","1200","720"], answer:1, reveal:"**0.5.** A whole day counts as 1 and times are fractions of a day, so noon, halfway through, is 0.5. Dates are [[date-serial|day counts]] too, which is why you can subtract one date from another. This lesson shows what a cell really holds, and why what it displays can be different."},
    goals:[
      "Name the parts of a spreadsheet: workbook, worksheet, cell, cell reference and range",
      "Tell numbers, text, dates and blanks apart, and use alignment as a clue",
@@ -186,6 +187,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u9-l2", title:"Formulas and references", minutes:55,
+   hook:{q:"You type 2+2 into an empty spreadsheet cell and press Enter. What does the cell show?", options:["4","2+2","An error message","22"], answer:1, reveal:"**2+2.** Without an equals sign at the start, the app treats what you typed as plain text, not a calculation. Type `=2+2` and you get 4. This lesson starts there, then shows the order calculations follow and how formulas that point at cells keep working when you copy them."},
    goals:[
      "Write formulas with =, arithmetic operators and parentheses, and predict their results using the order of operations",
      "Explain why formulas should point at cells instead of retyping numbers",
@@ -360,6 +362,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u9-l3", title:"Functions you’ll actually use", minutes:60,
+   hook:{q:"A bakery sheet flags flour with `=IF(C2<10, \"Reorder\", \"OK\")`. There are exactly 10 bags left, so C2 holds 10. What does the cell show?", options:["Reorder","OK","An error","10"], answer:1, reveal:"**OK.** The condition asks whether C2 is less than 10, and 10 isn’t less than 10, so IF gives its second answer. Boundaries like this catch everyone out: decide whether exactly 10 should count, then test that exact value. This lesson covers IF and the other functions you’ll use most."},
    goals:[
      "Read and write functions: name, parentheses and arguments",
      "Choose correctly between SUM, AVERAGE, COUNT, COUNTA, MIN and MAX, and know how each treats blanks and text",
@@ -526,6 +529,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u9-l4", title:"Organising data", minutes:55,
+   hook:{q:"A spending sheet’s Category column holds “Food”, “Food ” (with a space at the end) and “Foods”. How many different categories will a filter show?", options:["One: they all mean food","Two: only “Foods” is different","Three: each one is different"], answer:2, reveal:"**Three.** To a spreadsheet, an invisible space at the end or one extra letter makes an entry different, so a filter lists them separately and COUNTIF misses the odd ones out. This lesson shows how to lay data out tidily, keep entries consistent, and sort and filter without scrambling anything."},
    goals:[
      "Lay data out as a tidy table: one row per record, one column per variable, one value per cell",
      "Spot layouts that break sorting, filtering and formulas, such as merged cells and totals in the middle",
@@ -697,6 +701,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u9-l5", title:"Charts and sharing data", minutes:55,
+   hook:{q:"A scatter chart shows that on days when more ice cream is sold, more people get sunburnt. Does that prove ice cream causes sunburn?", options:["Yes: the dots clearly rise together","No: the pattern shows the two move together, not that one causes the other","Yes, if the chart has more than 100 dots","Only if the axes start at zero"], answer:1, reveal:"**No.** A scatter chart shows whether two measures move together, and a pattern shows a relationship, not that one causes the other. (Here, as Unit 6 showed with a similar example, hot sunny days could drive both.) Choosing the right chart for your question, and reading it honestly, is what this lesson is about, from bar and line charts to axes that tell the truth."},
    goals:[
      "Choose a chart type that answers the question being asked",
      "Set axes and labels so a chart doesn’t exaggerate or hide differences",

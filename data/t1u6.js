@@ -16,6 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u6-l1", title:"What misinformation is and why it spreads", minutes:50,
+   hook:{q:"On 1 April 1957, a trusted BBC current-affairs programme showed Swiss farmers “harvesting” spaghetti from trees. How did viewers react?", options:["Nearly everyone saw the joke straight away","Many phoned the BBC asking how to grow their own spaghetti tree","Most complained it was obviously fake","Almost nobody noticed it"], answer:1, reveal:"**Many phoned in asking how to grow their own spaghetti tree.** It was an April Fool’s joke, but it ran on a programme people trusted, so it was taken as fact, much as satire gets mistaken for news online today. This lesson sorts misleading content into types and explains why false stories spread so fast."},
    goals:[
      "Tell misinformation, disinformation and malinformation apart using two questions: is it false, and is it meant to harm?",
      "Recognise seven common types, from satire to fabricated content",
@@ -172,6 +173,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u6-l2", title:"Checking claims fast: lateral reading and SIFT", minutes:55,
+   hook:{q:"In a Stanford study, professional fact-checkers, historians with PhDs and university students each judged unfamiliar websites. Who was most often taken in by polished design and official-sounding names?", options:["The fact-checkers","The historians and the students","Nobody: experts spot fake sites easily","Only the students"], answer:1, reveal:"**The historians and the students.** They read each site carefully from top to bottom, and professional design, logos and `.org` addresses won them over. The fact-checkers left the page almost at once to see what other sources said about it. This lesson teaches that move, [[lateral-reading|lateral reading]], and the four quick SIFT steps."},
    goals:[
      "Explain why professional fact-checkers judge a source by leaving it, not by studying it",
      "Read laterally and practise click restraint in search results",
@@ -317,6 +319,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u6-l3", title:"Images, video and AI-generated content", minutes:55,
+   hook:{q:"A dramatic photo goes viral and turns out to be misleading. What’s the most common reason?", options:["It was made with AI","It was cleverly edited in a photo app","It’s a real photo with a false caption","It’s a drawing made to look like a photo"], answer:2, reveal:"Most often it’s **a real photo with a false caption**: an old flood shared as today’s, or a concert crowd shared as a protest. It needs no editing skills, and the picture really is genuine. This lesson shows how to trace a picture back to where it came from, and why hunting for AI glitches is a weaker test than you might think."},
    goals:[
      "Explain why most misleading images are real pictures with false context",
      "Use reverse image search to find where and when a picture first appeared",
@@ -471,6 +474,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u6-l4", title:"Finding and judging good sources", minutes:55,
+   hook:{q:"You search `why is coffee bad for you`. What kind of pages will you mostly find?", options:["Pages giving a balanced summary of the evidence","Pages that agree coffee is bad for you","Only scientific studies","Mostly coffee recipes"], answer:1, reveal:"Mostly **pages that agree with your question**. A search engine matches your words to pages; it doesn’t judge what’s true. A neutral search such as `coffee health effects evidence review` finds pages that weigh the evidence instead. This lesson shows how to search well, and how to judge the sources you find."},
    goals:[
      "Write precise searches with good keywords and search operators that work in today’s major search engines",
      "Tell primary, secondary and tertiary sources apart, and know when you need each",
@@ -648,6 +652,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u6-l5", title:"Numbers, charts and AI answers that mislead", minutes:60,
+   hook:{q:"In 2023, two lawyers filed a court brief citing cases that a chatbot had suggested. When one of them asked the chatbot whether the cases were real, what did it say?", options:["It admitted it had made them up","It said they were real","It refused to answer","It said it wasn’t sure"], answer:1, reveal:"**It said they were real**, and they weren’t: a judge fined the lawyers and their firm $5,000. Chatbots work by predicting likely next words, so they can sound confident and still be wrong, and asking them to check themselves isn’t a check. This lesson covers that, plus the number and chart tricks that mislead even when every figure is true."},
    goals:[
      "Spot cherry-picked numbers and ask “compared with what?”",
      "Tell percentage points from percent change, and relative from absolute risk",

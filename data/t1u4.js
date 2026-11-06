@@ -16,6 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u4-l1", title:"How the internet moves data", minutes:50,
+   hook:{q:"You send a photo to a friend on another continent. How does it travel?", options:["As one complete file along a single wire","Split into many small pieces that can take different routes and are put back together at the end","Beamed straight from your phone to a satellite and down to your friend","Through “the cloud”, which isn’t a physical place"], answer:1, reveal:"**In many small pieces**, called [[packet|packets]]. Each one carries part of the photo plus addresses, routers pass each packet a step closer, and they don’t all have to take the same path; your friend’s device puts them back in order. This lesson follows that journey over wires, light and radio, and shows how physical the internet really is."},
    goals:[
      "Explain what a network is and why the internet is called a network of networks",
      "Describe how data is split into packets and passed from router to router",
@@ -171,6 +172,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u4-l2", title:"Addresses and names: IP and DNS", minutes:55,
+   hook:{q:"Someone has your IP address, the number websites see when you visit. What can it usually tell them?", options:["Your exact street address","Your internet provider and a rough area, such as your town","Your name and phone number","Nothing at all"], answer:1, reveal:"Usually just **your internet provider and a rough area**. Your provider does know which customer had which address at which time, so it’s less private than many assume, but far less precise than films suggest. This lesson explains what IP addresses are, why you usually have more than one, and how DNS turns names like `example.org` into those numbers."},
    goals:[
      "Read an IPv4 and an IPv6 address and explain why IPv6 exists",
      "Tell public from private addresses and explain why your address changes",
@@ -336,6 +338,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u4-l3", title:"Wi-Fi, mobile data and your home network", minutes:55,
+   hook:{q:"Where in a home does a Wi-Fi router usually work best?", options:["Tucked inside a cupboard, out of sight","Near the middle of the home and up high","On the floor by the front door, where the line comes in","Next to the microwave in the kitchen"], answer:1, reveal:"**Near the middle, and up high.** Wi-Fi is radio: walls, floors and big metal objects weaken it, and microwaves crowd one of its bands, so a router hidden in a corner cupboard struggles to reach the far rooms. This lesson explains what each box at home does, how the Wi-Fi bands differ, and how to make your network faster and safer."},
    goals:[
      "Tell apart a modem, a router, a Wi-Fi access point and a mesh system",
      "Choose between the 2.4, 5 and 6 GHz Wi-Fi bands and place a router well",
@@ -506,6 +509,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u4-l4", title:"How the web works", minutes:55,
+   hook:{q:"You open one news article in your browser. Roughly how many separate files does the browser fetch to show it?", options:["Just one: the page itself","Two: the text and the pictures","Often dozens","None: the page is already on your device"], answer:2, reveal:"**Often dozens.** The browser first asks a web server for the page’s main HTML file, which lists the images, style sheets, scripts and fonts it needs, and then requests each one. This lesson follows that quick conversation of requests and responses, and explains cookies, the cache and why clearing it sometimes fixes a broken page."},
    goals:[
      "Explain the roles of a browser, a website and a web server",
      "Describe the requests and responses behind every page you open, and read common status codes",
@@ -680,6 +684,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u4-l5", title:"Speed, data and connection quality", minutes:55,
+   hook:{q:"Online games feel laggy at home, so you upgrade from a 100 Mbps plan to a 500 Mbps plan. What most likely happens to the lag?", options:["It disappears: five times the speed","It probably barely changes","It gets worse","It halves"], answer:1, reveal:"It **probably barely changes**. Plans advertise [[bandwidth]], how much data arrives per second, like the width of a road. Lag is usually about [[latency]], how long each round trip takes, like the length of the trip. This lesson untangles the two and shows how to read a speed test and find what’s really slowing you down."},
    goals:[
      "Tell bandwidth from latency and say which one an activity needs",
      "Convert Mbps into realistic download times, and explain upload vs download",

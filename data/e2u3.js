@@ -19,6 +19,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e2u3-l1", title:"Deviance and social control", minutes:55,
+   hook:{q:"Which usually counts more crime: police records, or surveys that ask people what has happened to them?", options:["Police records, since police see the most crime","Victim surveys","They almost always match","Neither counts everyday crimes such as theft"], answer:1, reveal:"**Victim surveys**, usually. Many victims never report a crime, out of fear, shame or distrust of police, so police records miss a hidden share, the [[dark-figure-of-crime|dark figure of crime]]. This lesson starts with a bigger question, what counts as [[deviance]] at all, and ends with where crime figures come from and what they miss."},
    goals:[
      "Explain why deviance depends on norms, context and audience, and how it differs from crime",
      "Classify sanctions as formal or informal, positive or negative",
@@ -133,6 +134,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e2u3-l2", title:"Social stratification", minutes:55,
+   hook:{q:"“Meritocracy”, a society that rewards people purely on merit, sounds like an ideal. How did the word first become popular?", options:["Through a 1958 satire warning against it","Through a government plan for fairer schools","Through a famous speech praising business success","Through an ancient Greek book on politics"], answer:0, reveal:"Through **a 1958 satire** by Michael Young, who used it to warn against such a society. Sociologists treat [[meritocracy]] as a hypothetical system: no real society is one. This lesson shows how actual societies rank people into layers, how open those layers are, and why sociologists disagree about whether inequality is useful."},
    goals:[
      "Define social stratification and tell income from wealth",
      "Compare caste systems, class systems and the ideal of meritocracy",
@@ -241,6 +243,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e2u3-l3", title:"Global inequality", minutes:55,
+   hook:{q:"Two countries have about the same average income per person. Could people in one still live much longer and get far more schooling?", options:["No: income decides health and schooling","Yes: countries with similar incomes can differ a lot","Only if one country is much bigger","Only if both are rich countries"], answer:1, reveal:"**Yes.** That’s why the [[human-development-index|Human Development Index]] adds a long and healthy life and knowledge to income: countries with similar incomes can score very differently. This lesson zooms out to the whole world: how countries are classified, who is poor and why, and competing theories of why some countries are richer."},
    goals:[
      "Explain global stratification and why the country you are born in matters so much",
      "Use the current World Bank income groups and the Human Development Index, and say what each misses",
@@ -348,6 +351,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e2u3-l4", title:"Race and ethnicity", minutes:60,
+   hook:{q:"Roughly how much of their DNA do any two people share, wherever their families come from?", options:["About 50%","About 75%","About 90%","About 99.9%"], answer:3, reveal:"About **99.9%**, and there is more genetic variation within self-identified racial groups than between them. That is one reason sociologists see [[race]] as a social construction: categories societies create and give meaning to, which still have very real effects. This lesson explains how those categories work, how prejudice and discrimination differ, and the range of relations between groups."},
    goals:[
      "Explain why race is a social construction rather than a biological category, and why it still has real effects",
      "Distinguish race from ethnicity, and minority group in the sociological sense from a numerical minority",
@@ -452,6 +456,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e2u3-l5", title:"Gender, sex and sexuality", minutes:60,
+   hook:{q:"George Murdock compared cultures around the world. What did he find about how they divide work between women and men?", options:["Every society assigns the same tasks to the same gender","Every society divides work by gender, but the tasks vary","Most societies don’t divide work by gender at all","Only farming societies divide work by gender"], answer:1, reveal:"Every society divides work by gender, but **which tasks go to whom varies** from place to place. That variety is a clue that [[gender-role|gender roles]] are shaped by society, not fixed by biology alone. This lesson separates [[sex]], [[gender]], identity and sexuality, and shows how gender is learned, performed and tied to inequality."},
    goals:[
      "Distinguish sex, gender, gender identity, gender expression and sexual orientation",
      "Explain how gender roles are learned and how people “do gender” in everyday life",

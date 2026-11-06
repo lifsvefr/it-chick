@@ -19,6 +19,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e2u2-l1", title:"What culture is", minutes:55,
+   hook:{q:"Which of these has been found in every known society?", options:["Writing","Money","Jokes","Marriage to only one partner"], answer:2, reveal:"**Jokes.** George Murdock listed [[cultural-universal|cultural universals]] such as language, names, jokes, families and funerals, which appear in every society. The form is universal, but what people find funny varies enormously. This lesson gives you names for the parts of culture you’ll use in every later unit."},
    goals:[
      "Tell material from nonmaterial culture, and values from beliefs",
      "Classify norms as folkways, mores or laws, and sanctions as positive or negative, formal or informal",
@@ -125,6 +126,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e2u2-l2", title:"Many cultures, changing cultures", minutes:50,
+   hook:{q:"The digits 0–9 are used in most of the world today. Where did they come from?", options:["Ancient Rome","India","Ancient Greece","China"], answer:1, reveal:"**India.** The digits passed from society to society until most of the world used them. That spread is [[diffusion]], one of the ways cultures keep changing, and this lesson also shows how a single society holds many cultures at once."},
    goals:[
      "Distinguish high culture from popular culture, and subcultures from countercultures",
      "Explain how cultures change through innovation (invention and discovery) and diffusion",
@@ -229,6 +231,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e2u2-l3", title:"Society and social interaction", minutes:55,
+   hook:{q:"Farming can feel as old as humanity. Until roughly how long ago did all humans live by hunting and gathering?", options:["About 2,000 years ago","About 10,000–12,000 years ago","About 50,000 years ago","About 200,000 years ago"], answer:1, reveal:"About **10,000–12,000 years ago**. Since then, each new way of making a living, from herding and gardening to ploughs, factories and information work, has reshaped how people live together. This lesson follows those types of society, then asks what modern life does to the bonds between people and how everyday interaction builds the reality we take for granted."},
    goals:[
      "Classify societies by how they make a living, from hunter-gatherer to postindustrial, without treating the sequence as a ladder of worth",
      "Use Durkheim (solidarity), Marx (alienation) and Weber (rationalization) to describe modern life",
@@ -337,6 +340,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e2u2-l4", title:"Becoming a self", minutes:55,
+   hook:{q:"In Harry Harlow’s experiments, baby monkeys had two artificial “mothers”: one of bare wire that gave milk, and one of soft cloth that gave none. Which did they spend most of their time with?", options:["The wire mother, because it fed them","The cloth mother","Neither: they kept away from both","They split their time evenly"], answer:1, reveal:"**The soft cloth mother.** The infants clung to it for most of the day and went to the wire one mainly to feed. Harlow’s work, now widely criticised for the distress it caused the animals, showed that young primates need comfort and contact, not only food. This lesson follows how early care grows into a [[self]] through [[socialization]], which starts in the family and never really stops."},
    goals:[
      "Explain what socialization does for individuals and for society",
      "Weigh evidence on nature and nurture carefully, including its limits and ethical problems",
@@ -438,6 +442,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e2u2-l5", title:"Groups and organizations", minutes:60,
+   hook:{q:"A volunteer group starts out with every member having an equal say. According to Robert Michels, what tends to happen as organizations like it grow large?", options:["Power spreads out more evenly","A small group ends up running it","It splits into smaller, equal groups","Members vote on more decisions"], answer:1, reveal:"**A small group ends up running it.** Michels called this the [[iron-rule-of-oligarchy|iron rule of oligarchy]] (1911). This lesson moves from the smallest groups, a pair of friends, up to large [[bureaucracy|bureaucracies]], and shows how size, leadership and group pressure shape what people do."},
    goals:[
      "Distinguish groups from crowds and categories, and primary from secondary groups",
      "Explain in-groups, out-groups and reference groups, and how group size changes interaction",

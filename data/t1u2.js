@@ -17,6 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ───────────────────────── LESSON 1 ───────────────────────── */
   {id:"t1u2-l1", title:"Files and file types", minutes:50,
+   hook:{q:"You email someone the original photo of your new bike, straight from your phone. Apart from the picture, what might the file quietly carry with it?", options:["Nothing: a photo file is just the picture","The place where the photo was taken","Your phone’s passcode","Your list of contacts"], answer:1, reveal:"Possibly **the place it was taken**. Every file is more than its content: it has a name and [[metadata]], data about the data, and a phone photo’s metadata often records the date, the camera and sometimes the GPS location. This lesson opens up the three parts of a file and shows what the bit after the dot really does."},
    goals:["Describe a file as data plus a name plus metadata","Show file extensions on your own device and read them","Pick the right format to send, and know why renaming doesn’t convert","Zip and unzip files, and know when zipping helps"],
    learn:[
     {h:"What a file really is", body:[
@@ -178,6 +179,7 @@ ICA.addUnit({
   },
   /* ───────────────────────── LESSON 2 ───────────────────────── */
   {id:"t1u2-l2", title:"Folders and paths", minutes:50,
+   hook:{q:"Dragging a file with the mouse sometimes moves it and sometimes copies it. How can you tell which will happen before you let go?", options:["You can’t: you find out afterwards","From the small label next to the pointer as you drag","From the file’s size","From the colour of the file’s icon"], answer:1, reveal:"**From the small label next to the pointer.** While you drag, it says something like “Move to Documents” or “Copy to …” (on a Mac, a green plus sign means copy). Which one you get depends on where you drop the file, and this lesson explains that rule, along with the folder tree, paths and the habits that stop files going missing."},
    goals:["Picture your storage as a folder tree and find your home folder","Read and copy a path on Windows, macOS and ChromeOS","Move or copy on purpose, including between drives","Find lost files with search and recover them from the Recycle Bin or Trash"],
    learn:[
     {h:"The folder tree", body:[
@@ -337,6 +339,7 @@ ICA.addUnit({
   },
   /* ───────────────────────── LESSON 3 ───────────────────────── */
   {id:"t1u2-l3", title:"Naming and organizing", minutes:50,
+   hook:{q:"A file is named `05-06-2026_minutes`. Which day was the meeting?", options:["5 June 2026","6 May 2026","It depends which country it was written in","It isn’t a real date"], answer:2, reveal:"**It depends on the country.** Some places read it as 5 June, others as 6 May, so the name alone can’t tell you. The fix is the international format, year then month then day (`2026-06-05` for 5 June), which also sorts neatly into time order. This lesson shows that and the other naming habits that end the “final_FINAL” mess."},
    goals:["Name files so they sort in date and version order and make sense to others","Use ISO 8601 dates and zero-padded version numbers","Set up a simple folder structure for a project, a household or a small business","Decide when tags help more than folders"],
    learn:[
     {h:"Why names matter more than you think", body:[
@@ -482,6 +485,7 @@ ICA.addUnit({
   },
   /* ───────────────────────── LESSON 4 ───────────────────────── */
   {id:"t1u2-l4", title:"The cloud and sync", minutes:55,
+   hook:{q:"Your laptop’s cloud folder shows a 2 GB video, yet it takes up almost no space on the laptop. How can that be?", options:["The cloud app squeezes it down to almost nothing","It’s only a placeholder, and the real file stays in the cloud until you open it","The laptop leaves cloud files out of its storage count","The video file is damaged"], answer:1, reveal:"It’s a **placeholder**. Modern sync apps can keep files online-only: you see something that looks like the file, and the real thing downloads when you open it. Handy for saving space, but those files need the internet, and deleting one can delete it everywhere. This lesson explains how sync and sharing really work."},
    goals:["Explain what cloud storage physically is and how sync keeps copies identical","Tell online-only files from files stored on your device","Share with the right people and the right permission level","Recognize and resolve a sync conflict, and keep an eye on your storage limit"],
    learn:[
     {h:"What “the cloud” physically is", body:[
@@ -622,6 +626,7 @@ ICA.addUnit({
   },
   /* ───────────────────────── LESSON 5 ───────────────────────── */
   {id:"t1u2-l5", title:"Backups that actually work", minutes:60,
+   hook:{q:"Backup experts have a simple rule of thumb. How many copies of a file you really care about should exist?", options:["One, kept somewhere safe","Two: the original plus one backup","Three: the original plus two backups","As many as your storage allows"], answer:2, reveal:"**Three.** That’s the [[rule-321|3-2-1 rule]]: 3 copies, on 2 different kinds of storage, with 1 kept somewhere else, so a single fire, theft or ransomware attack can’t take them all. This lesson shows how to get there with tools already on your devices, and why a synced cloud folder doesn’t count on its own."},
    goals:["Explain why sync, recycle bins and version history are not complete backups","Apply the 3-2-1 rule to your own situation","Turn on a built-in backup for your computer and phone","Test a restore so you know your backup works"],
    learn:[
     {h:"What a backup is (and what it isn’t)", body:[

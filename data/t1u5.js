@@ -16,6 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u5-l1", title:"Your digital footprint", minutes:50,
+   hook:{q:"A shop sends you a marketing email. How can it know whether you opened it?", options:["It can’t know that","A tiny, invisible image in the email reports back when it loads","Your email provider sends the shop a list of readers","Only if you agree to send a read receipt"], answer:1, reveal:"Often through a **tracking pixel**: a tiny, usually invisible image that tells its owner when, and on which device, the email was opened. It’s one of many quiet ways your [[passive-footprint|passive footprint]] grows. This lesson shows what apps and websites collect, how tracking follows you from site to site, and why it matters."},
    goals:[
      "Tell apart your active and passive digital footprint",
      "Describe what apps and websites collect, including what they infer",
@@ -181,6 +182,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u5-l2", title:"Taking control: privacy settings", minutes:55,
+   hook:{q:"You switch off Location Services on your phone completely. Can anyone still tell roughly where the phone is?", options:["No: the phone is now untraceable","Yes: the mobile network still knows which masts it connects to","Only if Bluetooth is left on","Only the phone’s manufacturer can"], answer:1, reveal:"**Yes, roughly.** Your mobile network still knows which masts the phone connects to, and your IP address gives a rough area. Location settings still matter a great deal, though, because they decide which apps get your precise whereabouts. This lesson shows how to set them, along with photo locations, ad settings and what private browsing really does."},
    goals:[
      "Run the privacy checkup tools in Google, Apple, Microsoft and Meta accounts",
      "Control location services, and share photos without their hidden location",
@@ -347,6 +349,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u5-l3", title:"Your rights online", minutes:50,
+   hook:{q:"Under Europe’s data-protection law, the GDPR, you can ask a company for a copy of the personal data it holds about you. What can it normally charge for that first copy?", options:["Nothing: it’s free","A small admin fee","A fee based on how much data it holds","You must pay a lawyer to ask for you"], answer:0, reveal:"**Nothing.** The first copy is free, the company normally has one month to reply, and you don’t need a lawyer, special wording or a reason. This lesson explains that right and the others the [[gdpr|GDPR]] gives you, what counts as real consent, and how to read a privacy policy in five minutes."},
    goals:[
      "Explain what data-protection laws are for, using the EU GDPR as the main example",
      "Describe the rights of access, erasure, objection and consent, and their limits",
@@ -509,6 +512,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u5-l4", title:"Copyright, Creative Commons and using others’ work", minutes:55,
+   hook:{q:"Beethoven’s symphonies are in the public domain, free for anyone to use. Can you freely post a recording of one made by a modern orchestra?", options:["Yes: the music belongs to everyone now","Not necessarily: the new recording can have its own copyright","Yes, as long as you credit Beethoven","Yes, if you use less than 30 seconds"], answer:1, reveal:"**Not necessarily.** The music itself is free, but a modern orchestra’s recording, like a new translation of an old novel, can have its own copyright. Copyright is full of surprises like this, and this lesson sorts out what’s protected, when you may reuse others’ work, and how [[creative-commons|Creative Commons]] licences make reuse easy."},
    goals:[
      "Explain how copyright works: automatic, about expression, and different from country to country",
      "Describe fair use and fair dealing as country-specific exceptions, without treating them as a free pass",
@@ -660,6 +664,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u5-l5", title:"Digital wellbeing and safety with others", minutes:50,
+   hook:{q:"You open an app to check one thing and look up forty minutes later. What’s a big part of the reason?", options:["Weak willpower","Designs built to hold your attention, like endless feeds and autoplay","A slow phone","Simple boredom"], answer:1, reveal:"**Design**, in large part, and it isn’t a personal failing. Many free apps earn more the longer you look, so features like infinite scroll, autoplay and notifications are tuned to keep you there, and they work on everyone. This lesson shows how to spot those designs and the tricks called dark patterns, add your own stopping points, and stay safe when other people online cause harm."},
    goals:[
      "Recognise attention-grabbing design: infinite scroll, autoplay, notifications and dark patterns",
      "Use the built-in screen-time and focus tools on your devices",

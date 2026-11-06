@@ -17,6 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u10-l1", title:"Plan before you open the app", minutes:50,
+   hook:{q:"This lesson argues that most weak presentations go wrong at one particular point. When?", options:["Before the first slide is even made","In the first nervous minute","During the questions at the end","When the projector or laptop fails"], answer:0, reveal:"**Before the first slide is made**, in this lesson’s view. The speaker opens the app, picks a theme and starts typing without deciding what the talk is for. This lesson plans the talk first, on paper: who is listening, what should change for them, one main message and a simple shape, with the slides coming last."},
    goals:[
      "Explain why slides support a speaker rather than replace one",
      "Describe an audience and the purpose of a talk in a few plain sentences",
@@ -182,6 +183,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u10-l2", title:"Slide design that helps", minutes:55,
+   hook:{q:"Which usually helps an audience learn more?", options:["Spoken words plus a relevant picture","Spoken words, with the same words printed on the slide","A slide full of text to read in silence","Bullet points, read aloud one by one"], answer:0, reveal:"**Spoken words plus a relevant picture.** In experiments by Richard Mayer and colleagues, people generally learned better that way than when the spoken words were also printed on screen. A slide full of sentences also tempts people to read ahead and stop listening. This lesson shows how to design slides that support you rather than compete with you."},
    goals:[
      "Explain how a theme, the slide master, layouts and placeholders fit together, and use them instead of loose text boxes",
      "Check text contrast against the WCAG 4.5:1 and 3:1 thresholds",
@@ -359,6 +361,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u10-l3", title:"Visuals that explain", minutes:55,
+   hook:{q:"Slide decks often claim that “the brain processes images 60,000 times faster than text”. Where does that number come from?", options:["A well-known brain-scan study","A large survey of teachers","Nobody has found a study that measured it","Edgar Dale’s 1946 research on learning"], answer:2, reveal:"**Nobody has found the study.** The figure is repeated in countless decks, but no one has been able to point to research that measured it. What the evidence does support is more modest: relevant pictures usually help, and irrelevant ones can distract. This lesson shows how to choose visuals that do a real job."},
    goals:[
      "Tell a visual that explains from one that only decorates",
      "Choose images you have permission to use and credit them properly",
@@ -541,6 +544,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u10-l4", title:"Presenting: notes, rehearsal, nerves and online talks", minutes:55,
+   hook:{q:"You’re nervous while giving a talk. How visible are your nerves to the audience?", options:["Much more visible than you think","About as visible as they feel to you","Less visible than you think","Completely invisible to everyone"], answer:2, reveal:"**Less visible than you think.** Psychologists call this the illusion of transparency: we overestimate how much others can see what we feel. In one study, speakers who were simply told this gave speeches that observers rated better. This lesson covers that and other practical help: notes, rehearsal, presenting online and handling questions."},
    goals:[
      "Write useful speaker notes and present with presenter view",
      "Rehearse aloud with a timer and cut a talk that runs long",
@@ -697,6 +701,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u10-l5", title:"Accessible and shareable decks", minutes:55,
+   hook:{q:"You email a deck that uses an unusual font, and the other person’s computer doesn’t have it. What usually happens?", options:["The deck refuses to open","The app swaps in another font, and text can spill out of its boxes","The font downloads itself automatically","Every letter shows as an empty box"], answer:1, reveal:"**The app swaps in another font**, and text can overflow its boxes. Common fonts, embedded fonts (an option in desktop PowerPoint) or a PDF, which keeps fonts fixed, all avoid it. This lesson covers what to check before a deck leaves your hands, from accessibility to file size."},
    goals:[
      "Run your app’s accessibility checker and check by hand what it can’t",
      "Give every slide a unique title and a sensible reading order",

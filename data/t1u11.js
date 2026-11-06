@@ -17,6 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u11-l1", title:"Emails that get answered", minutes:55,
+   hook:{q:"You need a quick answer from someone busy. Which change to your email makes a reply most likely?", options:["Making it longer, to show the effort you put in","Putting one clear ask and a deadline near the top","Writing URGENT in capitals in the subject line","Copying in as many people as possible"], answer:1, reveal:"**One clear ask and a deadline near the top.** This lesson starts from the view that most unanswered emails aren’t ignored on purpose: the reader opened them, couldn’t tell what was needed, and moved on. It shows how a clear subject, one specific ask and a deadline near the top make replying easy, plus how to use To, Cc and Bcc well."},
    goals:[
      "Write a subject line and an opening that tell the reader what you need",
      "Structure an email around one clear ask, in a tone that fits the reader",
@@ -215,6 +216,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u11-l2", title:"Keeping an inbox under control", minutes:55,
+   hook:{q:"You’re working through your inbox and open an email you could answer in under two minutes. What does a popular routine suggest?", options:["Reply now, then archive it","Star it and come back to it later","Mark it unread so you don’t forget it","Move it to a folder called Later"], answer:0, reveal:"**Reply now, then archive it.** Deciding once about each email (do it, defer it, delegate it or drop it) stops you reading the same messages again and again. The two-minute cut-off is a rule of thumb, not a law, and this lesson adds archiving, search, filters and unsubscribing to keep your inbox under control."},
    goals:[
      "Choose between archiving and deleting, and between folders and labels",
      "Find any email in seconds with search and search operators",
@@ -396,6 +398,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u11-l3", title:"Calendars, time zones and meetings", minutes:60,
+   hook:{q:"Someone who uses Google Calendar invites you to a meeting, and it appears in your Outlook calendar. How is that possible?", options:["Google and Microsoft share one calendar server","An invitation is an email carrying the event in a standard format both apps understand","Outlook checks Google’s website for new events every hour","Outlook copies your whole Google account each night"], answer:1, reveal:"**An invitation is really an email** with the event attached in a standard format called iCalendar (`.ics` files). Any calendar app that reads it can offer buttons such as Yes, No and Maybe. This lesson covers invitations, then time zones, daylight saving and meetings that are worth everyone’s time."},
    apps:{ms:"Outlook calendar", google:"Google Calendar", libre:"Thunderbird calendar", apple:"Apple Calendar"},
    goals:[
      "Send and answer calendar invitations, and know what the organiser sees",
@@ -570,6 +573,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u11-l4", title:"Working on shared files", minutes:55,
+   hook:{q:"You delete an awkward old figure from a shared document, then give a new colleague Editor access. Could they still find the old figure?", options:["No: deleted text is gone for good","Yes, possibly, through the document’s version history","Only if they ask the cloud company for it","Only if you had printed the document"], answer:1, reveal:"**Yes, possibly.** Cloud editors keep a history of versions, and editors can often look back through it, so deleted text, earlier figures or comments may still be visible. That same history is also your safety net. This lesson covers sharing roles, version history, who owns a file and editing together politely."},
    apps:{ms:"Word + OneDrive", google:"Google Docs + Drive", libre:"LibreOffice Writer", apple:"Pages + iCloud"},
    goals:[
      "Explain why one shared copy beats emailed attachments for work in progress",
@@ -728,6 +732,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u11-l5", title:"Chat and team tools", minutes:50,
+   hook:{q:"At work, a message can be clearly written and still cause trouble. What’s a common reason?", options:["It was too polite","It was sent through the wrong channel: chat, email, meeting or document","Slow internet connections","Too many emoji"], answer:1, reveal:"**The wrong channel.** This lesson argues that most communication problems at work come from the channel, not the writing. A decision buried in chat, a quick question turned into a meeting, a policy lost in an email thread: the writing may be fine, but it’s in the wrong place. This lesson helps you choose the right tool and write chat messages people can act on, even hours later."},
    goals:[
      "Choose between email, chat, a meeting and a shared document for a given message",
      "Use channels, threads and @mentions so conversations stay findable",

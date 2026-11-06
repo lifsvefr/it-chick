@@ -16,6 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u3-l1", title:"How attacks really happen", minutes:45,
+   hook:{q:"Films show hackers typing furiously to crack codes. In real life, how do attackers usually get into someone’s email account?", options:["They crack its encryption in seconds","They sign in with a password that was leaked, reused or guessed","They break into the email company’s building","They hack the person’s Wi-Fi first"], answer:1, reveal:"Usually they just **sign in**. Security people say attackers don’t break in, they log in: many incidents start with a password leaked in a breach, reused from another site or guessed. This lesson follows one realistic attack step by step and shows where a few simple habits would have stopped it."},
    goals:[
      "Explain what attackers want from ordinary people",
      "Name the main threats: phishing, malware, ransomware, scams, social engineering, data breaches and credential stuffing",
@@ -155,6 +156,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u3-l2", title:"Passwords and password managers", minutes:50,
+   hook:{q:"Which of these password tricks do attackers’ guessing programs already try automatically?", options:["Swapping letters for symbols, like `P@ssw0rd`","Adding a year to a word, like `Summer2025`","Song lyrics and famous film quotes","All of these"], answer:3, reveal:"**All of these.** Guessing programs are built around the patterns people like, so “clever” tweaks barely slow them down. What really works is length, true randomness and a different password for every account, and this lesson shows an easy way to get all three."},
    goals:[
      "Explain what actually makes a password strong, using current official guidance",
      "Make a passphrase from random words",
@@ -322,6 +324,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t1u3-l3", title:"Passkeys and two-step verification", minutes:50,
+   hook:{q:"Cash machines use a security idea that many online accounts now copy. What is it?", options:["Needing two different things: your card and your PIN","Changing your PIN every month","Printing a receipt for every action","Only working during the day"], answer:0, reveal:"**Two different kinds of proof**: something you have (the card) and something you know (the PIN). A thief with only one of them gets nothing. Online this is called two-step verification, or [[mfa|MFA]], and this lesson shows which second steps are strongest, including passkeys that a fake website can’t trick out of you."},
    goals:[
      "Explain what two-step verification adds and why it stops most password attacks",
      "Rank the common methods (text codes, authenticator apps, push prompts, security keys, passkeys) by strength",
@@ -464,6 +467,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t1u3-l4", title:"Spotting phishing and scams", minutes:60,
+   hook:{q:"An email shows “From: Your Bank” at the top. How hard is it for a scammer to make that name appear?", options:["Nearly impossible: email checks every sender","It takes serious hacking skills","Easy: anyone can set that name","Possible, but only on very old email apps"], answer:2, reveal:"**Easy.** The display name is just text the sender types, and anyone can set it to a bank, a delivery company or your manager’s name. The address after the `@` tells you much more. This lesson shows how to read email addresses and links, and the simple pause-and-check habit that beats most scams, whatever the channel."},
    goals:[
      "Find the real domain in any web address, including tricky ones",
      "Tell a sender’s display name from their actual address",
@@ -659,6 +663,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u3-l5", title:"Everyday protection", minutes:55,
+   hook:{q:"A thief steals a laptop, takes out its storage drive and plugs it into another computer. What decides whether they can read your files?", options:["Whether the laptop had a screen lock set","Whether the laptop’s storage was encrypted","Whether the laptop was switched off","Which antivirus you had installed"], answer:1, reveal:"**Whether it was encrypted.** A screen lock guards the front door, but taking the drive out walks straight around it. Device encryption scrambles everything stored, so it’s unreadable without your sign-in, and on many devices it’s already on. This lesson covers that, plus updates, app permissions and public Wi-Fi."},
    goals:[
      "Explain what software updates fix and why installing them promptly matters",
      "Find and check the built-in protection on your devices",

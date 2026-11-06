@@ -238,7 +238,7 @@ function deck(l, el){
         '<div class="hookopts">'+hk.options.map(function(o, j){ var cls = picked != null && j === hk.answer ? ' class="right"' : ''; return '<button data-hook="'+j+'" aria-pressed="'+(picked === j)+'"'+cls+'>'+md(o)+'</button>'; }).join("")+'</div>' +
         (picked != null ? ICA.mugi(picked === hk.answer ? "yay" : "tip", '<p><b>'+(picked === hk.answer ? "Good instinct!" : "Ooh, interesting guess. Here’s the twist:")+'</b></p><p>'+md(hk.reveal)+'</p>', {small:true, cls:"mpop"}) : '');
     } else if (c.k === "content"){
-      h = '<span class="eyebrow">'+esc(String(c.h || "").replace(/[*`]/g, ""))+(c.first ? '' : ' · continued')+'</span>'+(c.first && c.h ? '<h3>'+md(c.h)+'</h3>' : '')+'<div class="prose">'+ICA.blocks(c.blocks)+'</div>';
+      h = (c.first && c.h ? '<h3>'+md(c.h)+'</h3>' : '<span class="eyebrow">'+esc(String(c.h || "").replace(/[*`]/g, ""))+' · continued</span>')+'<div class="prose">'+ICA.blocks(c.blocks)+'</div>';
     } else if (c.k === "ex"){
       var solved = s.tries[c.ex.id];
       h = '<div id="dkmugi">'+ICA.mugi(solved ? "yay" : "think", solved ? "<b>Done!</b> You can try it again or move on." : "<b>Quick check.</b> Your turn! Wrong answers are fine: each one explains itself.", {small:true})+'</div><div id="dkex"></div>';
