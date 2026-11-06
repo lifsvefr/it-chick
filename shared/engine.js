@@ -90,12 +90,14 @@ ICA.termInSentence = function(term, before){
   if (!/^[A-Z][a-z]/.test(term) || ICA.KEEPCAP.test(term)) return term;
   return term.charAt(0).toLowerCase() + term.slice(1);
 };
+ICA.JA = /[\u3005\u3006\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uff01-\uff60][\u3000-\u303f\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uff01-\uff60]*/g;
 ICA.md = function(s){
   var codes = [], out = ICA.esc(s);
   out = out.replace(/`([^`]+)`/g, function(m, c){ codes.push(c); return "\u0000"+(codes.length-1)+"\u0000"; });
   out = out.replace(/\[\[kbd:([^\]]+)\]\]/g, "<kbd>$1</kbd>");
   out = out.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
   out = out.replace(/(^|[\s(\u201c"'\u2014\u2013\/-])\*([^*\s](?:[^*]*?[^*\s])?)\*(?=[\s.,;:!?)\u201d"'\u2019\u2014\u2013\/-]|$)/g, "$1<i>$2</i>");
+  out = out.replace(/\[([^\[\]<>]+)\]\{([^{}<>]+)\}/g, '<ruby lang="ja">$1<rt>$2</rt></ruby>');   // furigana: [漢字]{かんじ}
   out = out.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function(m, id, shown, at, all){
     var t = ICA.terms[id]; var label = shown || (t ? ICA.termInSentence(t.term, all.slice(0, at)) : id.replace(/-/g, " "));
     if (!t && ICA.units && ICA.units.length) return label;   // term not built yet: plain words
@@ -108,6 +110,9 @@ ICA.md = function(s){
   });
   out = out.replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
   out = out.replace(/\n/g, "<br>");
+  out = out.split(/(<[^>]*>)/).map(function(seg){   // mark Japanese text so devices pick Japanese glyphs
+    return seg.charAt(0) === "<" ? seg : seg.replace(ICA.JA, '<span lang="ja">$&</span>');
+  }).join("");
   out = out.replace(/\u0000(\d+)\u0000/g, function(m, i){ return "<code>"+codes[+i].replace(/([_\/.,=&])(?=[^\s])/g, "$1<wbr>")+"</code>"; });   // let long code words break at sensible points
   return out;
 };

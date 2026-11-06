@@ -294,3 +294,5 @@ figure.codeblk{display:block;padding:0;justify-items:normal;text-align:left}
 figure.codeblk figcaption{text-align:left}
 
 .callout.ex pre{overflow-wrap:anywhere;white-space:pre-wrap}
+
+ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
