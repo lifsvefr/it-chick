@@ -11,28 +11,75 @@
 <link rel="stylesheet" href="../shared/style.css">
 <script src="../shared/catalog.js"></script>
 <script src="../shared/engine.js"></script>
+<script src="../shared/kanjilab.js"></script>
+<script src="../shared/jpgames.js"></script>
 <style>
-.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-.mode{display:grid;gap:6px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-radius:16px;padding:14px;color:var(--ink)}
-.mode:hover{border-color:var(--lupine)}
-.mode .ic{font-size:26px}
-.mode b{font-family:var(--display);font-size:1.15em}
-.mode span{font-size:.9em;color:var(--soft)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+.tile{position:relative;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto 1fr auto;column-gap:12px;row-gap:4px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-left:6px solid var(--acc,var(--rose));border-radius:18px;padding:16px;color:var(--ink);min-height:132px;width:100%;font:inherit;cursor:pointer;transition:transform .12s,border-color .12s}
+.tile:hover,.tile:focus-visible{border-color:var(--acc,var(--rose));transform:translateY(-2px)}
+.tile .ic{grid-row:1/4;font-size:34px;line-height:1;align-self:start}
+.tile .ic[lang=ja]{font-size:30px;font-weight:700;color:var(--acc)}
+.tile b{font-family:var(--display);font-size:1.25em}
+.tile .d{color:var(--soft);font-size:.93em}
+.tile .go{justify-self:start;margin-top:8px;background:var(--acc,var(--rose));color:var(--bg);border-radius:10px;padding:6px 14px;font-weight:700}
+.tile .bst{font-family:var(--mono);font-size:.78em;color:var(--soft)}
+.a1{--acc:var(--rose)}.a2{--acc:var(--lupine)}.a3{--acc:var(--gold)}.a4{--acc:var(--sage)}
+.tbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tgroup{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:var(--panel)}
+.tgroup summary{cursor:pointer;font-weight:700;display:flex;gap:8px;align-items:center;padding:4px 0;min-height:36px}
+.tgroup summary .n{margin-left:auto;font-family:var(--mono);font-size:.8em;color:var(--soft)}
+.unitpick{display:grid;gap:4px;padding:6px 0 4px}
+.unitpick label{display:flex;gap:10px;align-items:center;padding:6px 4px;font-size:.95em;min-height:36px}
+.unitpick input{accent-color:var(--lupine);width:20px;height:20px;flex:none}
 .hud{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-family:var(--mono);font-weight:600}
-.timer{font-size:1.4em}
-.timer.low{color:var(--bad)}
+.timer{font-size:1.4em}.timer.low{color:var(--bad)}
 .hearts{letter-spacing:3px}
-.unitpick{display:flex;flex-wrap:wrap;gap:8px}
-.unitpick label{display:flex;gap:6px;align-items:center;border:1.5px solid var(--line);background:var(--panel);border-radius:99px;padding:5px 12px;font-size:.92em}
-.unitpick input{accent-color:var(--lupine)}
 .flash{min-height:180px}
 .rate{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .rate button{display:grid;gap:2px;padding:10px 6px}
 .rate small{font-weight:400;color:var(--soft);font-size:.78em}
 .big{font-family:var(--display);font-size:clamp(40px,10vw,64px);font-weight:800;line-height:1}
 .flashq{font-size:1.12em;font-weight:700}
-.missed{display:grid;gap:8px}
-.missed .card{display:grid;gap:4px}
+.missed{display:grid;gap:8px}.missed .card{display:grid;gap:4px}
+/* Japanese games */
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:8px 14px;font-weight:700;min-height:40px;font:inherit;font-weight:700}
+.seg button[aria-pressed=true]{border-color:var(--lupine);background:var(--lupTint);color:var(--lupine)}
+.stage{position:relative;background:var(--panel);border:1.5px solid var(--line);border-radius:18px;padding:18px 14px;text-align:center;display:grid;gap:6px;justify-items:center}
+.glyph{font-size:clamp(48px,16vw,84px);line-height:1.15;font-weight:700;overflow-wrap:anywhere}
+.glyph.rd{font-size:clamp(48px,13vw,72px)}
+.qsub{color:var(--soft);font-size:1.1em}
+.qtext{font-size:.92em;color:var(--soft)}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.choice{display:flex;gap:8px;align-items:center;text-align:left;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:14px;padding:12px;min-height:64px;font:inherit;font-weight:700;cursor:pointer;overflow-wrap:anywhere;min-width:0}
+.choice .k{font-family:var(--mono);font-size:.75em;color:var(--soft);flex:none}
+.choice [lang=ja]{font-size:1.35em}
+.choice.kj [lang=ja]{font-size:2.2em;line-height:1.1}
+.choice:hover:not(:disabled){border-color:var(--lupine)}
+.choice.ok{border-color:var(--ok);background:var(--okTint)}
+.choice.no{border-color:var(--bad);background:var(--badTint)}
+.choice:disabled{cursor:default}
+.combo{font-family:var(--mono);color:var(--rose)}
+.combo.hot{animation:pulse .5s}
+.spell{height:8px;border-radius:99px;background:var(--panel2);overflow:hidden;width:100%}
+.spell i{display:block;height:100%;background:var(--gold);width:100%;transform-origin:left}
+.float{position:absolute;right:14px;top:10px;font-family:var(--display);font-weight:800;color:var(--ok);animation:up .8s forwards;pointer-events:none}
+.shake{animation:shake .35s}
+.pop{animation:pulse .3s}
+.pairs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media (min-width:560px){.pairs{grid-template-columns:repeat(4,1fr)}}
+.pc{min-height:76px;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:14px;font:inherit;font-weight:700;cursor:pointer;padding:6px;overflow-wrap:anywhere;min-width:0}
+.pc.kc{font-size:clamp(34px,10vw,44px);line-height:1}
+.pc.rc{font-size:1.1em;background:var(--panel2)}
+.pc.sel{border-color:var(--lupine);box-shadow:0 0 0 3px var(--lupTint)}
+.pc.done{visibility:hidden}
+.pc.no{border-color:var(--bad);background:var(--badTint)}
+.stars{font-size:34px;letter-spacing:4px;color:var(--gold)}
+.howto ul{margin:0;padding-left:20px;display:grid;gap:6px}
+@keyframes pulse{50%{transform:scale(1.12)}}
+@keyframes up{to{transform:translateY(-28px);opacity:0}}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@media (prefers-reduced-motion:reduce){.shake,.pop,.combo.hot,.float{animation:none}.tile{transition:none}}
 </style>
 </head>
 <body>
@@ -55,26 +102,74 @@ function dueList(){ var now = Date.now(), c = cards(); return pool().filter(func
 function newList(){ var c = cards(); return pool().filter(function(q){ return !c[q.id]; }); }
 function stopTimer(){ if (timerId){ clearInterval(timerId); timerId = null; } }
 
+var TRACKN = {t1:"a1", t2:"a2", t3:"a3", t4:"a4"};
+function savedPick(){
+  var st = ICA.load(), ids = unitsWithQs().map(function(u){ return u.id; });
+  if (Array.isArray(st.arcade.topics)){ var p = st.arcade.topics.filter(function(x){ return ids.indexOf(x) > -1; }); if (p.length) return p; }
+  return defaultPick();
+}
+function rememberPick(){ ICA.load().arcade.topics = picked.slice(); ICA.save(); }
+function tile(mode, ic, name, desc, acc, extra, ja){
+  return '<button class="tile '+acc+'" data-mode="'+mode+'"><span class="ic" aria-hidden="true"'+(ja ? ' lang="ja"' : '')+'>'+ic+'</span><b>'+esc(name)+'</b><span class="d">'+esc(desc)+(extra ? ' <span class="bst">'+esc(extra)+'</span>' : '')+'</span><span class="go" aria-hidden="true">Play ▸</span></button>';
+}
 function home(){
   stopTimer(); setTitle("Arcade");
-  if (!picked) picked = defaultPick();
-  var us = unitsWithQs(), st = ICA.load(), best = st.arcade.best;
-  var learned = Object.keys(st.cards).filter(function(k){ return st.cards[k].box >= 3; }).length;
-  app.innerHTML = '<div class="stack"><div><div class="eyebrow">Arcade</div><h1>Practice games</h1><p class="muted">Every question explains its answer. Nothing here can be lost, and there are no streaks to keep.</p></div>'+
-    '<div class="card stack"><b>Questions from</b><div class="unitpick">'+us.map(function(u){ return '<label><input type="checkbox" data-unit="'+u.id+'"'+(picked.indexOf(u.id) > -1 ? " checked" : "")+'>'+esc(u.title)+'</label>'; }).join("")+'</div><span class="small muted" id="poolsize"></span></div>'+
-    '<div class="modes">'+
-      '<button class="mode" data-mode="practice"><span class="ic" aria-hidden="true">🎯</span><b>Practice</b><span>10 questions, no clock. Read every explanation.</span></button>'+
-      '<button class="mode" data-mode="cards"><span class="ic" aria-hidden="true">🗂️</span><b>Flashcards</b><span id="cardinfo">Spaced review that brings cards back just before you’d forget them.</span></button>'+
-      '<button class="mode" data-mode="blitz"><span class="ic" aria-hidden="true">⚡</span><b>Blitz</b><span>60 seconds. How many can you get?'+(best.blitz ? " Your best: "+best.blitz+"." : "")+'</span></button>'+
-      '<button class="mode" data-mode="survival"><span class="ic" aria-hidden="true">❤️</span><b>Survival</b><span>Three hearts. Keep going as long as you can.'+(best.survival ? " Your best: "+best.survival+"." : "")+'</span></button>'+
-    '</div><p class="small muted">Cards you know well: '+learned+'. Questions come from the lessons, so finishing lessons in Quests first makes these easier.</p></div>';
+  if (!picked) picked = savedPick();
+  var st = ICA.load(), best = st.arcade.best, jb = (st.arcade.jp && st.arcade.jp.best) || {};
+  function b(v){ return v ? "Best: "+v : ""; }
+  app.innerHTML = '<div class="stack">'+
+    '<div><div class="eyebrow">Arcade</div><h1>Pick a game</h1></div>'+
+    '<h2>Lesson games</h2>'+
+    '<div class="tbar"><button class="btn" id="topics" aria-haspopup="dialog">Choose topics</button><span class="small muted" id="poolsize"></span></div>'+
+    '<div class="tiles">'+
+      tile("practice","🎯","Practice","10 questions, no clock, every answer explained.","a2",b(best.practice))+
+      tile("cards","🗂️","Flashcards","Spaced review that brings cards back just in time.","a4")+
+      tile("blitz","⚡","Blitz","60 seconds. How many can you get?","a1",b(best.blitz))+
+      tile("survival","❤️","Survival","Three hearts. Keep going as long as you can.","a3",b(best.survival))+
+    '</div>'+
+    '<h2>Japanese</h2>'+
+    '<div class="tiles">'+
+      tile("sprint","語","Word Sprint","Japanese word → its meaning. 60 seconds, build a streak.","a1",b(jb.sprint),true)+
+      tile("match","字","Kanji Match","Deflect each spell: pick the right reading before it lands.","a2",b(jb.match),true)+
+      tile("pairs","対","Pair Up","Match kanji with their readings against the clock.","a3",jb.pairs ? "Best: "+jb.pairs+" s" : "",true)+
+    '</div>'+
+    '<div class="row"><button class="btn ghost" id="howto" aria-haspopup="dialog">How to play</button><a class="btn ghost" href="../labs/kanji.html">Kanji Lab</a></div>'+
+  '</div>';
   updatePool();
 }
 function updatePool(){
-  var n = pool().length, d = dueList().length, nw = newList().length;
-  var ps = document.getElementById("poolsize"); if (ps) ps.textContent = n+" questions selected.";
-  var ci = document.getElementById("cardinfo"); if (ci) ci.textContent = n ? (d ? d+" card"+(d===1?"":"s")+" ready to review" : "Nothing due right now")+(nw ? " · "+nw+" new" : "")+"." : "Choose at least one unit.";
-  ICA.$$("[data-mode]").forEach(function(b){ b.disabled = !n; });
+  var n = pool().length, d = dueList().length;
+  var ps = document.getElementById("poolsize"); if (ps) ps.textContent = n ? n+" questions"+(d ? " · "+d+" cards due" : "") : "No topics chosen yet";
+  ["practice","cards","blitz","survival"].forEach(function(m){ var t = app.querySelector('[data-mode="'+m+'"]'); if (t) t.disabled = !n; });
+}
+function topicsSheet(){
+  var us = unitsWithQs(), groups = {};
+  us.forEach(function(u){ (groups[u.track] = groups[u.track] || []).push(u); });
+  var html = '<h2>Choose topics</h2><p class="small muted">Lesson games ask questions from the units you tick. Your choice is remembered.</p><div class="stack" style="gap:8px">'+
+    Object.keys(groups).map(function(tid){
+      var t = ICA.tracks[tid] || {name:tid, icon:""}, list = groups[tid], on = list.filter(function(u){ return picked.indexOf(u.id) > -1; }).length;
+      return '<details class="tgroup"'+(on ? " open" : "")+'><summary><span aria-hidden="true">'+(t.icon||"")+'</span>'+esc(t.name)+'<span class="n" data-cnt="'+tid+'">'+on+' / '+list.length+'</span></summary>'+
+        '<div class="row" style="gap:6px"><button class="btn small" data-all="'+tid+'">All</button><button class="btn small" data-none="'+tid+'">None</button></div>'+
+        '<div class="unitpick">'+list.map(function(u){ return '<label><input type="checkbox" data-unit="'+u.id+'" data-tr="'+tid+'"'+(picked.indexOf(u.id) > -1 ? " checked" : "")+'>'+esc(u.title)+'</label>'; }).join("")+'</div></details>';
+    }).join("")+'</div><div class="row" style="margin-top:12px"><button class="btn primary" data-close>Done</button></div>';
+  var sh = ICA.sheet(html);
+  function sync(){ Object.keys(groups).forEach(function(tid){ var c = sh.querySelector('[data-cnt="'+tid+'"]'); c.textContent = groups[tid].filter(function(u){ return picked.indexOf(u.id) > -1; }).length+" / "+groups[tid].length; }); rememberPick(); updatePool(); }
+  sh.addEventListener("change", function(e){ var t = e.target.closest("[data-unit]"); if (!t) return; var id = t.getAttribute("data-unit"); if (t.checked){ if (picked.indexOf(id) < 0) picked.push(id); } else picked = picked.filter(function(x){ return x !== id; }); sync(); });
+  sh.addEventListener("click", function(e){ var t = e.target.closest("[data-all],[data-none]"); if (!t) return; var all = t.hasAttribute("data-all"), tid = t.getAttribute(all ? "data-all" : "data-none");
+    ICA.$$('[data-tr="'+tid+'"]', sh).forEach(function(cb){ cb.checked = all; var id = cb.getAttribute("data-unit"); picked = picked.filter(function(x){ return x !== id; }); if (all) picked.push(id); }); sync(); });
+}
+function howtoSheet(){
+  ICA.sheet('<h2>How to play</h2><div class="howto stack"><ul>'+
+    '<li><b>Practice</b>: 10 questions from your topics, no clock. Read the explanation after each.</li>'+
+    '<li><b>Flashcards</b>: think of the answer, reveal it, then say how well you knew it. Tricky cards come back tomorrow, easy ones days later.</li>'+
+    '<li><b>Blitz</b>: as many right answers as you can in 60 seconds. Explanations wait until the end.</li>'+
+    '<li><b>Survival</b>: three hearts; each wrong answer costs one.</li>'+
+    '<li><b>Word Sprint</b>: 60 seconds of Japanese words. Each right answer in a row raises your streak bonus, and a fast answer earns extra.</li>'+
+    '<li><b>Kanji Match</b>: each kanji is a spell flying at Mugi. Pick its reading (or the kanji for a reading) before the bar runs out. Three hearts.</li>'+
+    '<li><b>Pair Up</b>: tap a kanji, then its reading. Clear the board fast with few slips for three stars.</li>'+
+    '<li>Choices answer to the keys <b>1</b>–<b>4</b>. Choose N5, N4, N3 or <b>My missed ones</b> before each Japanese game.</li>'+
+    '<li>Japanese slips are sent to the <a href="../labs/kanji.html">Kanji Lab</a>: those cards come up in its next session.</li>'+
+    '</ul></div><div class="row" style="margin-top:12px"><button class="btn primary" data-close>Got it</button></div>');
 }
 
 /* ---------- one question (shared by practice, blitz, survival) ---------- */
@@ -176,15 +271,179 @@ function flashcards(){
   show();
 }
 
+/* ================= Japanese games ================= */
+var KL = window.KanjiLab, JG = window.JPGames, jpReady = false, keyFn = null, actx = null;
+function jp(){ return JG.store(ICA.load()); }
+function withData(cb){
+  if (jpReady) return cb();
+  app.innerHTML = '<p class="muted">Loading the Kanji Lab words…</p>';
+  var sc = document.createElement("script"); sc.src = "../data/lab-kanji.js?v="+ICA.version;
+  sc.onload = function(){ KL.init(window.KLAB); jpReady = true; cb(); };
+  sc.onerror = function(){ app.innerHTML = '<div class="card stack"><p>The Japanese word list didn’t load. Check your connection and try again.</p><div class="row"><button class="btn" data-home>Back to the Arcade</button></div></div>'; };
+  document.head.appendChild(sc);
+}
+/* tiny sounds (WebAudio), off with the 🔇 button */
+function beep(kind){
+  if (!jp().snd) return;
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    var notes = {ok:[660, 880], no:[220, 160], combo:[660, 880, 1320], end:[523, 659, 784, 1046]}[kind] || [440];
+    notes.forEach(function(f, i){ var o = actx.createOscillator(), g = actx.createGain(), t = actx.currentTime + i*0.08;
+      o.type = kind === "no" ? "sawtooth" : "triangle"; o.frequency.value = f; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.12, t+0.01); g.gain.exponentialRampToValueAtTime(0.0001, t+0.14);
+      o.connect(g); g.connect(actx.destination); o.start(t); o.stop(t+0.16); });
+  } catch(e){}
+}
+function sndBtn(){ return '<button class="iconbtn" id="snd" aria-pressed="'+(jp().snd ? "true" : "false")+'" aria-label="Sound">'+(jp().snd ? "🔊" : "🔇")+'</button>'; }
+function juice(el, cls){ if (!el) return; el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
+function floatTxt(stage, t){ var f = document.createElement("span"); f.className = "float"; f.textContent = t; stage.appendChild(f); setTimeout(function(){ if (f.parentNode) f.parentNode.removeChild(f); }, 900); }
+var LV = {N5:"N5", N4:"N4", N3:"N3", missed:"My missed ones"};
+var GAMES = {
+  sprint:{name:"Word Sprint", kind:"vocab", how:"A Japanese word appears. Tap its English meaning. You have 60 seconds; right answers in a row build a streak bonus, and answering within 2 seconds adds a quick bonus."},
+  match:{name:"Kanji Match", kind:"kanji", how:"Each kanji is a spell flying at Mugi. Pick the right reading before the bar empties to deflect it. A miss or a timeout costs a heart; you have three."},
+  pairs:{name:"Pair Up", kind:"kanji", how:"Six kanji and six readings are face up. Tap a kanji, then its reading (or the other way round). Each reading on the board fits only one kanji there."}
+};
+function setup(g){
+  stopTimer(); var G = GAMES[g], j = jp(); setTitle(G.name);
+  var nMiss = JG.pool(G.kind, "missed", j).length;
+  app.innerHTML = '<div class="stack"><div><div class="eyebrow">Japanese</div><h1>'+esc(G.name)+'</h1></div>'+
+    '<div class="card stack"><b id="lvl-l">Level</b><div class="seg" role="group" aria-labelledby="lvl-l">'+JG.LEVELS.map(function(l){
+      var dis = l === "missed" && nMiss < (g === "pairs" ? 4 : 4);
+      return '<button data-lv="'+l+'" aria-pressed="'+(j.level === l ? "true" : "false")+'"'+(dis ? " disabled" : "")+'>'+esc(LV[l])+(l === "missed" ? " ("+nMiss+")" : "")+'</button>'; }).join("")+'</div>'+
+    (g === "match" ? '<b id="dir-l">Direction</b><div class="seg" role="group" aria-labelledby="dir-l">'+[["kr","Kanji → reading"],["rk","Reading → kanji"],["mix","Mixed"]].map(function(d){ return '<button data-dir="'+d[0]+'" aria-pressed="'+((j.dir||"kr") === d[0] ? "true" : "false")+'">'+d[1]+'</button>'; }).join("")+'</div>' : '')+
+    (nMiss < 4 ? '<p class="small muted">“My missed ones” opens once you have missed 4 or more.</p>' : '')+
+    '<details><summary>How to play</summary><p>'+esc(G.how)+' Keys 1–4 choose an answer.</p></details>'+
+    '<div class="row"><button class="btn primary" id="start">Start</button><button class="btn" data-home>Back</button></div></div></div>';
+  if (j.level === "missed" && nMiss < 4){ j.level = "N5"; ICA.save(); ICA.$('[data-lv="N5"]').setAttribute("aria-pressed","true"); }
+  app.querySelector(".seg").onclick = function(e){ var t = e.target.closest("[data-lv]"); if (!t || t.disabled) return; j.level = t.getAttribute("data-lv"); ICA.save(); ICA.$$("[data-lv]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); };
+  ICA.$$("[data-dir]").forEach(function(t){ t.onclick = function(){ j.dir = t.getAttribute("data-dir"); ICA.save(); ICA.$$("[data-dir]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); }; });
+  var st = document.getElementById("start"); st.focus();
+  st.onclick = function(){ var p = JG.pool(G.kind, j.level, j); if (p.length < 4){ ICA.toast("Not enough cards at this level yet."); return; } window.scrollTo(0,0); ({sprint:sprint, match:match, pairs:pairs})[g](p, j.level); };
+}
+function choiceHTML(q){
+  return '<div class="choices" role="group" aria-label="Answers">'+q.opts.map(function(o, i){ return '<button class="choice'+(q.dir === "rk" ? " kj" : "")+'" data-o="'+i+'"><span class="k" aria-hidden="true">'+(i+1)+'</span><span'+(q.ja ? ' lang="ja"' : '')+'>'+esc(o.t)+'</span></button>'; }).join("")+'</div>';
+}
+function bindChoices(q, cb){
+  var done = false;
+  function pick(i){ if (done) return; done = true; keyFn = null;
+    var bs = ICA.$$(".choice", app), ok = q.opts[i].ok;
+    bs.forEach(function(b, k){ b.disabled = true; if (q.opts[k].ok) b.classList.add("ok"); });
+    if (i >= 0 && !ok) bs[i].classList.add("no");
+    cb(ok, i); }
+  ICA.$$(".choice", app).forEach(function(b){ b.onclick = function(){ pick(+b.getAttribute("data-o")); }; });
+  keyFn = function(k){ var n = +k; if (n >= 1 && n <= q.opts.length) pick(n-1); };
+  return function timeout(){ pick(-1); };
+}
+document.addEventListener("keydown", function(e){ if (keyFn && !e.altKey && !e.ctrlKey && !e.metaKey && !document.getElementById("sheetbg")) keyFn(e.key); });
+function itemLabel(it){ return it.kind === "vocab" ? '<span lang="ja">'+esc(it.w)+(it.kanaOnly ? "" : " ("+esc(it.r)+")")+'</span> · '+esc(KL.meaningText(it)) : '<span lang="ja">'+esc(it.c)+' · '+esc(KL.readingChoices(it).map(function(r){ return r.r; }).join("、"))+'</span> · '+esc(KL.meaningText(it)); }
+function recordMiss(missed, it){ if (missed.indexOf(it) < 0) missed.push(it); JG.miss(ICA.load(), it.key, Date.now()); ICA.save(); }
+function jpEnd(g, score, unit, sub, missed, level, stars, lowerBetter){
+  stopTimer(); keyFn = null; beep("end");
+  var j = jp(), prev = j.best[g], isBest = level !== "missed" && score > 0 && (prev == null || (lowerBetter ? score < prev : score > prev));
+  if (isBest){ j.best[g] = score; ICA.save(); }
+  var mood = stars >= 3 ? "yay" : stars === 2 ? "hello" : missed.length ? "oops" : "think";
+  var say = stars >= 3 ? "Brilliant! Mugi is safe and sparkling." : stars === 2 ? "Nice work. A few more rounds and it’s three stars." : "Every miss is a card you’ll know next time.";
+  app.innerHTML = '<div class="stack"><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">'+esc(GAMES[g].name)+' · '+esc(LV[level])+'</div>'+
+    '<div class="stars" aria-label="'+stars+' of 3 stars">'+"★★★".slice(0, stars)+'<span style="opacity:.25">'+"★★★".slice(0, 3-stars)+'</span></div>'+
+    '<div class="big">'+score+(unit ? '<span style="font-size:.4em"> '+esc(unit)+'</span>' : '')+'</div><p>'+esc(sub)+'</p>'+(isBest ? '<span class="chip done">New personal best</span>' : '')+
+    ICA.mugi(mood, esc(say), {small:true})+
+    (missed.length ? '<p class="small" id="labnote">'+missed.length+' card'+(missed.length === 1 ? "" : "s")+' sent to the <a href="../labs/kanji.html">Kanji Lab</a>: '+(missed.length === 1 ? "it’s" : "they’re")+' due now, so '+(missed.length === 1 ? "it comes" : "they come")+' up in your next Lab session.</p>' : '')+
+    '<div class="row" style="justify-content:center"><button class="btn primary" data-mode="'+g+'">Play again</button><button class="btn" data-home>Choose another game</button></div></div>'+
+    (missed.length ? '<h2>Worth another look</h2><div class="missed">'+missed.map(function(it){ return '<div class="card">'+itemLabel(it)+'</div>'; }).join("")+'</div>' : '')+'</div>';
+  var pb = app.querySelector(".btn.primary"); if (pb) pb.focus();
+}
+function hudJP(left){ return '<div class="hud">'+left+'<span class="combo" id="cb" aria-label="Streak"></span><span>Score <span id="sc">0</span></span>'+sndBtn()+'</div>'; }
+function showCombo(n){ var c = document.getElementById("cb"); if (!c) return; c.textContent = n >= 2 ? "🔥 "+n : ""; if (n >= 2) juice(c, "hot"); }
+
+/* ---------- Word Sprint ---------- */
+function sprint(pool, level){
+  setTitle("Word Sprint");
+  var deck = ICA.shuffle(pool), i = 0, score = 0, streak = 0, bestStreak = 0, right = 0, seen = 0, missed = [], left = 60, t0;
+  app.innerHTML = '<div class="stack">'+hudJP('<span class="timer" id="tm" aria-label="Seconds left">60</span>')+'<div class="stage" id="stg"></div><div id="ch"></div></div>';
+  timerId = setInterval(function(){ left--; var t = document.getElementById("tm"); if (!t){ stopTimer(); return; } t.textContent = left; t.classList.toggle("low", left <= 10);
+    if (left <= 0){ var acc = seen ? right/seen : 0; jpEnd("sprint", score, "pts", right+" right of "+seen+" · longest streak "+bestStreak, missed, level, right >= 20 && acc >= .9 ? 3 : right >= 10 && acc >= .7 ? 2 : right ? 1 : 0); } }, 1000);
+  function next(){
+    if (i >= deck.length){ deck = deck.concat(ICA.shuffle(pool)); }
+    var it = deck[i++], q = JG.wordQ(it);
+    document.getElementById("stg").innerHTML = '<div class="qtext">What does this word mean?</div><div class="glyph" lang="ja">'+esc(q.prompt)+'</div>'+(q.sub ? '<div class="qsub" lang="ja">'+esc(q.sub)+'</div>' : '');
+    document.getElementById("ch").innerHTML = choiceHTML(q); t0 = Date.now();
+    bindChoices(q, function(ok){
+      if (!timerId) return; seen++;
+      var stg = document.getElementById("stg");
+      if (ok){ right++; streak++; bestStreak = Math.max(bestStreak, streak); var quick = Date.now() - t0 < 2000, pts = 10 + Math.min(streak-1, 5)*2 + (quick ? 5 : 0); score += pts; floatTxt(stg, "+"+pts+(quick ? " quick!" : "")); juice(stg, "pop"); beep(streak % 5 === 0 ? "combo" : "ok"); if (level === "missed"){ JG.cleared(ICA.load(), it.key); ICA.save(); } }
+      else { streak = 0; recordMiss(missed, it); juice(stg, "shake"); beep("no"); }
+      document.getElementById("sc").textContent = score; showCombo(streak);
+      setTimeout(function(){ if (timerId) next(); }, ok ? 380 : 1000);
+    });
+  }
+  next();
+}
+
+/* ---------- Kanji Match ---------- */
+function match(pool, level){
+  setTitle("Kanji Match");
+  var j = jp(), deck = ICA.shuffle(pool), i = 0, score = 0, streak = 0, bestStreak = 0, lives = 3, right = 0, missed = [], SPELL = 9000, tId = null;
+  app.innerHTML = '<div class="stack">'+hudJP('<span class="hearts" id="hp" aria-label="3 hearts left">❤️❤️❤️</span>')+'<div class="stage" id="stg"></div><div id="ch"></div></div>';
+  timerId = 1; // marks the game running
+  function stopSpell(){ if (tId){ clearTimeout(tId); tId = null; } }
+  function finish(){ stopSpell(); timerId = null; jpEnd("match", score, "pts", right+" spells deflected · longest streak "+bestStreak, missed, level, right >= 25 ? 3 : right >= 12 ? 2 : right ? 1 : 0); }
+  function next(){
+    if (!document.getElementById("stg")) return;
+    if (i >= deck.length) deck = deck.concat(ICA.shuffle(pool));
+    var it = deck[i++], dir = j.dir === "mix" ? (Math.random() < .5 ? "kr" : "rk") : (j.dir || "kr"), q = JG.kanjiQ(it, dir);
+    var spellT = Math.max(4500, SPELL - streak*150);
+    document.getElementById("stg").innerHTML = '<div class="qtext">'+(dir === "kr" ? (q.readType === "on" ? "Pick an on reading (katakana)" : "Pick a kun reading (hiragana)") : "Which kanji has this reading?")+'</div><div class="glyph'+(dir === "rk" ? " rd" : "")+'" lang="ja">'+esc(q.prompt)+'</div><div class="spell" aria-hidden="true"><i id="sp"></i></div>';
+    document.getElementById("ch").innerHTML = choiceHTML(q);
+    var sp = document.getElementById("sp"), reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduce){ sp.style.transition = "none"; sp.style.transform = "scaleX(1)"; void sp.offsetWidth; sp.style.transition = "transform "+spellT+"ms linear"; sp.style.transform = "scaleX(0)"; }
+    var t0 = Date.now();
+    var to = bindChoices(q, function(ok){
+      stopSpell(); if (!timerId) return; var stg = document.getElementById("stg");
+      if (ok){ right++; streak++; bestStreak = Math.max(bestStreak, streak); var quick = Date.now() - t0 < spellT/3, pts = 10 + Math.min(streak-1, 5)*2 + (quick ? 5 : 0); score += pts; floatTxt(stg, quick ? "Perfect! +"+pts : "+"+pts); juice(stg, "pop"); beep(streak % 5 === 0 ? "combo" : "ok"); if (level === "missed"){ JG.cleared(ICA.load(), it.key); ICA.save(); } }
+      else { streak = 0; lives--; recordMiss(missed, it); juice(stg, "shake"); beep("no"); var hp = document.getElementById("hp"); hp.textContent = lives > 0 ? new Array(lives+1).join("❤️") : "💔"; hp.setAttribute("aria-label", lives+" hearts left"); }
+      document.getElementById("sc").textContent = score; showCombo(streak);
+      setTimeout(function(){ if (!timerId) return; if (lives <= 0) finish(); else next(); }, ok ? 420 : 1300);
+    });
+    tId = setTimeout(function(){ if (timerId && document.getElementById("stg")) to(); }, spellT);
+  }
+  next();
+}
+
+/* ---------- Pair Up ---------- */
+function pairs(pool, level){
+  setTitle("Pair Up");
+  var board = JG.board(pool, 6), cards = [], sel = null, found = 0, slips = 0, missed = [], start = Date.now();
+  if (board.length < 4){ ICA.toast("Not enough distinct kanji here yet."); setup("pairs"); return; }
+  board.forEach(function(p, n){ cards.push({n:n, k:true, t:p.it.c}); cards.push({n:n, k:false, t:p.r}); });
+  cards = ICA.shuffle(cards);
+  app.innerHTML = '<div class="stack"><div class="hud"><span class="timer" id="tm" aria-label="Seconds">0 s</span><span>Pairs <span id="pf">0</span> / '+board.length+'</span><span>Slips <span id="sl">0</span></span>'+sndBtn()+'</div>'+
+    '<p class="small muted">Tap a kanji, then its reading.</p><div class="pairs" id="pb">'+cards.map(function(c, i){ return '<button class="pc '+(c.k ? "kc" : "rc")+'" data-c="'+i+'" lang="ja" aria-label="'+(c.k ? "Kanji " : "Reading ")+esc(c.t)+'">'+esc(c.t)+'</button>'; }).join("")+'</div></div>';
+  timerId = setInterval(function(){ var t = document.getElementById("tm"); if (!t){ stopTimer(); return; } t.textContent = Math.round((Date.now()-start)/1000)+" s"; }, 1000);
+  var pb = document.getElementById("pb");
+  pb.onclick = function(e){
+    var b = e.target.closest(".pc"); if (!b || b.classList.contains("done")) return;
+    var c = cards[+b.getAttribute("data-c")];
+    if (!sel || sel.c.k === c.k){ if (sel) sel.b.classList.remove("sel"); if (sel && sel.b === b){ sel = null; return; } sel = {b:b, c:c}; b.classList.add("sel"); return; }
+    var a = sel; sel = null; a.b.classList.remove("sel");
+    if (a.c.n === c.n){ [a.b, b].forEach(function(x){ x.classList.add("done"); x.disabled = true; }); found++; document.getElementById("pf").textContent = found; beep(found === board.length ? "combo" : "ok");
+      if (found === board.length){ var secs = Math.max(1, Math.round((Date.now()-start)/1000)); stopTimer(); setTimeout(function(){ jpEnd("pairs", secs, "s", board.length+" pairs · "+slips+" slip"+(slips === 1 ? "" : "s"), missed, level, slips <= 1 && secs <= 40 ? 3 : slips <= 3 && secs <= 80 ? 2 : 1, true); }, 300); }
+      var nx = pb.querySelector(".pc:not(.done)"); if (nx && document.activeElement && document.activeElement.disabled) nx.focus();
+    } else {
+      slips++; document.getElementById("sl").textContent = slips; beep("no");
+      var kc = a.c.k ? a.c : c; recordMiss(missed, board[kc.n].it);
+      [a.b, b].forEach(function(x){ x.classList.add("no"); juice(x, "shake"); setTimeout(function(){ x.classList.remove("no"); }, 600); });
+    }
+  };
+}
+
 app.addEventListener("click", function(e){
   var t;
-  if ((t = e.target.closest("[data-mode]"))){ var m = t.getAttribute("data-mode"); stopTimer(); ({practice:practice, blitz:blitz, survival:survival, cards:flashcards})[m](); window.scrollTo(0,0); return; }
-  if (e.target.closest("[data-home]")){ home(); window.scrollTo(0,0); }
-});
-app.addEventListener("change", function(e){
-  var t = e.target.closest("[data-unit]"); if (!t) return;
-  var id = t.getAttribute("data-unit"); if (t.checked){ if (picked.indexOf(id) < 0) picked.push(id); } else picked = picked.filter(function(x){ return x !== id; });
-  updatePool();
+  if (e.target.closest("#snd")){ var j = jp(); j.snd = !j.snd; ICA.save(); var s = document.getElementById("snd"); s.textContent = j.snd ? "🔊" : "🔇"; s.setAttribute("aria-pressed", j.snd ? "true" : "false"); return; }
+  if (e.target.closest("#topics")){ topicsSheet(); return; }
+  if (e.target.closest("#howto")){ howtoSheet(); return; }
+  if ((t = e.target.closest("[data-mode]"))){ var m = t.getAttribute("data-mode"); stopTimer(); keyFn = null; window.scrollTo(0,0);
+    if (GAMES[m]){ withData(function(){ setup(m); }); return; }
+    ({practice:practice, blitz:blitz, survival:survival, cards:flashcards})[m](); return; }
+  if (e.target.closest("[data-home]")){ keyFn = null; home(); window.scrollTo(0,0); }
 });
 bar = ICA.topbar("Arcade");
 ICA.loadAll("../", function(){ home(); });
