@@ -35,6 +35,7 @@ a.lab:hover{border-color:var(--lupine)}
       <a class="lab" href="web.html"><span class="ic" aria-hidden="true">🌐</span><span><b>Web Lab</b><span class="small">Write real HTML, CSS and JavaScript and watch the page change. The checker runs your code in a real browser page and points to the exact line when something’s off.</span><span class="st small" id="wlprog"></span></span></a>
       <a class="lab" href="python.html"><span class="ic" aria-hidden="true">🐍</span><span><b>Python Lab</b><span class="small">Write and run real Python right in your browser, with nothing to install. The checker tries your program with different inputs and explains error messages in plain words.</span><span class="st small" id="plprog"></span></span></a>
       <a class="lab" href="cite.html"><span class="ic" aria-hidden="true">📚</span><span><b>Citation Lab</b><span class="small">Build references and in-text citations in APA, MLA and Chicago, and fix the ones that are wrong. The checker goes part by part and says exactly what’s off.</span><span class="st small" id="clprog"></span></span></a>
+      <a class="lab" href="kanji.html"><span class="ic" aria-hidden="true">🀄</span><span><b>Kanji Lab</b><span class="small">A few minutes of spaced review a day: hiragana and katakana, then JLPT N5–N3 kanji and words. Every reading and meaning is checked against the KANJIDIC2 and JMdict dictionaries.</span><span class="st small" id="klprog"></span></span></a>
       <a class="lab" href="data.html"><span class="ic" aria-hidden="true">📈</span><span><b>Data Lab</b><span class="small">Ask a database questions in SQL, and analyse data and draw charts in R, right in your browser. The checker runs your answer on a second dataset too.</span><span class="st small" id="dlprog"></span></span></a>
     </div>
   </div>
@@ -53,6 +54,8 @@ ICA.applySettings && ICA.applySettings();
   document.getElementById("clprog").textContent = (window.CLAB||[]).length + " challenges" + (cn ? " · " + cn + " solved" : "");
   document.getElementById("plprog").textContent = (window.PLAB||[]).length + " challenges" + (pn ? " · " + pn + " solved" : "");
   document.getElementById("wlprog").textContent = (window.WLAB||[]).length + " challenges" + (wn ? " · " + wn + " solved" : "");
+  var kd = (s.labs && s.labs.kanji && s.labs.kanji.c) || {}, kk = Object.keys(kd), now = Date.now(), kdue = kk.filter(function(k){ return kd[k].d <= now; }).length;
+  document.getElementById("klprog").textContent = "8 decks" + (kk.length ? " · " + kk.length + " cards started · " + kdue + " due today" : "");
   document.getElementById("flprog").textContent = (window.FLAB||[]).length + " challenges" + (n ? " · " + n + " solved" : "");
 })();
 </script>

@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Kanji Lab · IT CHICK Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css">
+<script src="../shared/engine.js"></script>
+<script src="../shared/kanjilab.js"></script>
+<script src="../data/lab-kanji.js"></script>
+<style>
+[lang="ja"]{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic UI","Yu Gothic","Meiryo",var(--body);font-feature-settings:normal}
+.grpdecks{display:grid;gap:16px}
+.grpdecks h2{font-size:1.15em;margin:0 0 6px}
+.decks{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.deck{display:grid;gap:6px;background:var(--panel);border:1.5px solid var(--line);border-radius:16px;padding:13px 14px;color:var(--ink);text-decoration:none}
+a.deck:hover{border-color:var(--lupine)}
+.deck .top{display:flex;gap:10px;align-items:center}
+.deck .gl{font-size:30px;line-height:1;min-width:38px;text-align:center}
+.deck b{font-family:var(--display);font-size:1.1em}
+.deck .nums{font-size:.86em;color:var(--soft)}
+.deck .nums strong{color:var(--rose)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.tiles div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px 6px;text-align:center}
+.tiles b{display:block;font-family:var(--display);font-size:1.5em;line-height:1.1}
+.tiles span{font-size:.75em;color:var(--soft)}
+@media (max-width:380px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.hud{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-family:var(--mono);font-weight:600;font-size:.9em}
+.qcard{display:grid;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.qcard .ask{font-weight:700;text-align:center}
+.prompt{font-size:clamp(64px,22vw,112px);line-height:1.15;text-align:center;overflow-wrap:anywhere;word-break:break-all;margin:2px 0}
+.prompt.word{font-size:clamp(48px,13vw,84px)}
+.prompt.long{font-size:48px}
+.prompt.kana{font-size:clamp(48px,12vw,72px)}
+.subprompt{text-align:center;font-size:1.05em}
+.kopts{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+@media (min-width:560px){.kopts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kopt{display:flex;gap:10px;align-items:center;text-align:left;border:1.5px solid var(--line);background:var(--bg);border-radius:12px;padding:10px 12px;min-height:52px;color:var(--ink)}
+.kopt .n{flex:0 0 26px;height:26px;border-radius:8px;border:1.5px solid var(--line);display:grid;place-items:center;font-family:var(--mono);font-size:13px;color:var(--soft)}
+.kopt .t{flex:1;min-width:0;overflow-wrap:anywhere}
+.kopt .t[lang="ja"]{font-size:1.5em;line-height:1.25}
+.kopt:hover:not(:disabled){border-color:var(--lupine)}
+.kopt.right{border-color:var(--ok);background:var(--okTint)} .kopt.right .n{border-color:var(--ok);background:var(--ok);color:var(--bg)}
+.kopt.wrong{border-color:var(--bad);background:var(--badTint)} .kopt.wrong .n{border-color:var(--bad);background:var(--bad);color:var(--bg)}
+.kopt:disabled{cursor:default;opacity:1}
+.typein{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center}
+.typein input{font:inherit;font-size:22px;width:min(220px,100%);padding:9px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);text-align:center}
+.typein input:focus{outline:none;border-color:var(--lupine)}
+.rate{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.rate button{display:grid;gap:2px;padding:10px 6px;justify-items:center}
+.rate small{font-weight:400;color:var(--soft);font-size:.78em}
+.rate .btn.primary small{color:var(--bg)}
+.keyhint{font-size:.8em;color:var(--soft);text-align:center}
+@media (hover:none){.keyhint{display:none}}
+.full{display:grid;gap:10px;border-top:1px dashed var(--line);padding-top:12px}
+.full .head{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.full .big{font-size:64px;line-height:1.1}
+.full .bigw{font-size:40px;line-height:1.6}
+.full .means{font-weight:700;font-size:1.08em}
+.full dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;align-items:baseline}
+.full dt{font-size:.82em;color:var(--soft)}
+.full dd{margin:0;overflow-wrap:anywhere}
+.full dd [lang="ja"]{font-size:1.12em}
+.exs{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.exs li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;align-items:baseline;background:var(--bg);border-radius:10px;padding:6px 10px}
+.exs .w{font-size:1.45em;line-height:1.7}
+.exs .w rt{font-size:.5em}
+.exs .g{font-size:.92em}
+.exs .g [lang="ja"]{color:var(--soft)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.senses{margin:0;padding-left:22px;display:grid;gap:3px}
+.browse{display:flex;flex-wrap:wrap;gap:6px}
+.browse button{border:1.5px solid var(--line);background:var(--panel);border-radius:10px;padding:4px 9px;font-size:1.2em;line-height:1.4;color:var(--ink)}
+.browse button.b1,.browse button.b2{border-color:var(--gold)}
+.browse button.b3,.browse button.b4,.browse button.b5{border-color:var(--ok);background:var(--okTint)}
+.browse.words button{font-size:1em}
+.credit{font-size:.82em;color:var(--soft);border-top:1px solid var(--line);padding-top:10px;display:grid;gap:4px}
+details.how{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
+details.how summary{font-weight:700;cursor:pointer}
+details.how .prose{margin-top:8px}
+.seg3{display:inline-flex;border:1.5px solid var(--line);border-radius:12px;overflow:hidden}
+.seg3 button{font:inherit;min-width:44px;min-height:40px;padding:6px 12px;border:0;border-left:1.5px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.seg3 button:first-child{border-left:0}
+.seg3 button[aria-pressed="true"]{background:var(--roseTint);color:var(--ink);font-weight:700;box-shadow:inset 0 -3px 0 var(--rose)}
+.seg3 button:focus-visible{outline:2px solid var(--lupine);outline-offset:-2px}
+.big2{font-family:var(--display);font-size:clamp(40px,10vw,64px);font-weight:800;line-height:1}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+(function(){
+ICA.base = "../";
+var bar = ICA.topbar("Kanji Lab"), app = document.getElementById("app"), esc = ICA.esc, md = ICA.md;
+var KL = window.KanjiLab;
+if (!window.KLAB){ app.innerHTML = '<p>The Kanji Lab data didn’t load. Check your connection and reload the page.</p>'; return; }
+KL.init(window.KLAB);
+var GLYPH = {"kl-hiragana":"あ", "kl-katakana":"ア", "kl-n5":"日", "kl-n4":"会", "kl-n3":"関", "kl-n5-vocab":"言葉", "kl-n4-vocab":"語", "kl-n3-vocab":"単語"};
+var SECTIONS = [["Kana", "Start here if the scripts are new: type each sound in rōmaji.", ["kl-hiragana","kl-katakana"]],
+  ["Kanji", "Meanings and readings of each kanji, with example words.", ["kl-n5","kl-n4","kl-n3"]],
+  ["Words", "Vocabulary: read the word, or pick the word for a reading and meaning.", ["kl-n5-vocab","kl-n4-vocab","kl-n3-vocab"]]];
+function ks(){ return KL.store(ICA.load()); }
+function today(){ return ICA.today(); }
+function setTitle(t){ document.title = t + " · Kanji Lab"; bar.querySelector(".title").textContent = t; }
+function ja(s){ return '<span lang="ja">'+esc(s)+'</span>'; }
+function plural(n, w){ return n + " " + w + (n === 1 ? "" : "s"); }
+
+var CREDIT = '<div class="credit"><span>Kanji and word data from <a href="https://www.edrdg.org/wiki/index.php/KANJIDIC_Project" target="_blank" rel="noopener">KANJIDIC2</a> and <a href="https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project" target="_blank" rel="noopener">JMdict</a> by the Electronic Dictionary Research and Development Group (EDRDG), used under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> (<a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener">EDRDG licence</a>). Furigana splits checked with <a href="https://github.com/Doublevil/JmdictFurigana" target="_blank" rel="noopener">JmdictFurigana</a>.</span>'+
+  '<span>Because the data is share-alike, the Kanji Lab word and kanji file (<code>data/lab-kanji.js</code>) is also licensed CC BY-SA 4.0. Dictionary versions: KANJIDIC2 '+esc(KLAB.src.kanjidic)+', JMdict '+esc(KLAB.src.jmdict)+'.</span>'+
+  '<span>The JLPT has published no official kanji or word lists since 2010, so the N5–N3 levels here follow the common unofficial lists. Words or meanings that look wrong? Use “Report a mistake” on any card.</span></div>';
+
+var HOW = '<details class="how"><summary>How this works</summary><div class="prose">'+
+  '<p><b>Short daily reviews, spaced out.</b> Each card sits in a box. Answer, check the full card, then say how well you knew it: <b>Again</b> puts it back in box 1 and brings it back tomorrow (and once more at the end of today’s session), <b>Good</b> moves it up one box, <b>Easy</b> skips a box. The boxes come back after 1, 3, 7, 14 and 30 days, the same boxes as the Arcade Flashcards. Cards you find hard come back often; cards you know well wait longer.</p>'+
+  '<p><b>Why daily beats cramming.</b> A large review by Cepeda and colleagues (2006, <i>Psychological Bulletin</i>), covering 317 experiments, found that spreading study out over days improves long-term memory compared with studying all at once, and that the best gap between reviews grows the longer you want to remember. Trying to recall the answer before you see it (choosing or typing first) makes memory stronger than just reading the card again. <a href="https://pubmed.ncbi.nlm.nih.gov/16719566/" target="_blank" rel="noopener">The study on PubMed</a>.</p>'+
+  '<p><b>New cards.</b> Each deck gives you a few new cards a day (you choose 5, 10 or 20) plus every review that’s due. Ten minutes a day is plenty. Missing a day is fine: due cards simply wait for you.</p>'+
+  '<p><b>Readings.</b> <i>On</i> readings (from Chinese) are in katakana, like <span lang="ja">ジョウ</span>; <i>kun</i> readings (Japanese) are in hiragana, like <span lang="ja">あ.がる</span>, where the dot shows where the kana after the kanji (okurigana) begin. A dash, as in <span lang="ja">うわ-</span>, means the reading is used at the start or end of a word. The card shows first the readings found in common words, most used first.</p>'+
+  '<p><b>Keys.</b> On a keyboard: <kbd>1</kbd>–<kbd>4</kbd> to answer, <kbd>Space</kbd> to show the answer, then <kbd>A</kbd> Again, <kbd>G</kbd> Good, <kbd>E</kbd> Easy. For kana, type the rōmaji and press <kbd>Enter</kbd>.</p>'+
+  '<p class="small muted">Your progress is saved in this browser only, together with the rest of your academy progress, so the backup and “Erase all progress” in Progress on the desk include it.</p>'+
+  '</div></details>';
+
+/* ---------- home: deck picker ---------- */
+function home(){
+  setTitle("Kanji Lab");
+  var s = ks(), now = Date.now(), td = today(), dueAll = 0;
+  var h = '<div class="stack"><a class="small" href="index.html">← All labs</a><div><div class="eyebrow">Labs</div><h1>Kanji Lab</h1>'+
+    '<p class="lead">A few minutes of review a day for kana, kanji and words, JLPT N5 to N3. Cards come back just before you’d forget them.</p></div>';
+  h += '<div class="grpdecks">'+SECTIONS.map(function(sec){
+    return '<section><h2>'+esc(sec[0])+'</h2><p class="small muted" style="margin-bottom:8px">'+esc(sec[1])+'</p><div class="decks">'+sec[2].map(function(id){
+      var dk = KL.deckById[id], c = KL.counts(s, id, now, td); dueAll += c.due;
+      return '<a class="deck" href="#'+id+'" data-deck="'+id+'"><span class="top"><span class="gl" lang="ja" aria-hidden="true">'+esc(GLYPH[id])+'</span><b>'+esc(dk.t)+'</b></span>'+
+        '<span class="small">'+esc(dk.blurb)+'</span>'+
+        '<span class="nums">'+plural(c.total, "card")+' · <strong>'+c.due+' due today</strong> · '+c.newToday+' new'+(c.learned ? ' · '+c.learned+' known well' : '')+'</span>'+
+        '<span class="bar" aria-hidden="true"><i style="width:'+Math.round(100 * c.learned / Math.max(1, c.total))+'%"></i></span></a>';
+    }).join("")+'</div></section>';
+  }).join("")+'</div>';
+  h += HOW + CREDIT + '</div>';
+  app.innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+/* ---------- one deck ---------- */
+function deckView(id){
+  var dk = KL.deckById[id], s = ks(), c = KL.counts(s, id, Date.now(), today());
+  setTitle(dk.t);
+  var h = '<div class="stack"><a class="small" href="#">← All decks</a><div><div class="eyebrow">Kanji Lab · '+esc(dk.kind === "kana" ? "Kana" : dk.kind === "kanji" ? "Kanji" : "Words")+'</div><h1>'+esc(dk.t)+'</h1><p class="muted">'+esc(dk.blurb)+'</p></div>'+
+    '<div class="tiles"><div><b>'+c.due+'</b><span>due today</span></div><div><b>'+c.newToday+'</b><span>new today</span></div><div><b>'+c.learned+'</b><span>known well</span></div><div><b>'+c.total+'</b><span>cards</span></div></div>';
+  var n = c.due + c.newToday;
+  h += n ? '<div class="row"><button class="btn primary" id="start">Start today’s review ('+plural(n, "card")+')</button></div>'
+         : '<div class="card stack"><b>All done for today 🎉</b><span class="small">'+(c.fresh ? 'You’ve had today’s new cards. ' : 'You’ve met every card in this deck. ')+'Reviews come back on their own schedule, so come back tomorrow.</span>'+(c.fresh ? '<div class="row"><button class="btn small" id="extra">Learn 5 more new cards now</button></div>' : '')+'</div>';
+  h += '<div class="row small"><span>New cards a day (each deck):</span><div class="seg3" role="group" aria-label="New cards a day">'+KL.NEW_CHOICES.map(function(v){ return '<button type="button" data-nw="'+v+'" aria-pressed="'+(s.set.nw === v)+'">'+v+'</button>'; }).join("")+'</div></div>';
+  h += '<details class="how"><summary>Browse the deck ('+plural(c.seen, "card")+' started)</summary><p class="small muted" style="margin:6px 0">Tap any card to see it. Gold border: learning; green: known well.</p><div class="browse'+(dk.kind === "vocab" ? " words" : "")+'">'+dk.items.map(function(it){
+    var cc = s.c[it.key], lab = it.kind === "kana" ? it.q : it.kind === "kanji" ? it.c : it.w;
+    return '<button type="button" data-show="'+esc(it.key)+'" lang="ja" class="'+(cc ? "b" + cc.b : "")+'">'+esc(lab)+'</button>';
+  }).join("")+'</div></details>';
+  h += HOW + CREDIT + '</div>';
+  app.innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+/* ---------- the full card (shown after answering, and when browsing) ---------- */
+function kanaRow(r){ return r.map(function(x){ return ja(x); }).join("、"); }
+function fullCard(it){
+  var h = '<div class="full">';
+  if (it.kind === "kana"){
+    h += '<div class="head"><span class="big" lang="ja">'+esc(it.q)+'</span><span><span class="means">'+esc(it.ro)+'</span>'+(it.also.length ? ' <span class="small muted">(also '+esc(it.also.join(", "))+')</span>' : '')+'<br><span class="small muted">'+esc(KL.GROUP[it.grp])+' · '+(it.script === "h" ? "katakana" : "hiragana")+': '+ja(it.pair)+'</span></span></div>';
+  } else if (it.kind === "kanji"){
+    h += '<div class="head"><span class="big" lang="ja">'+esc(it.c)+'</span><span><span class="means">'+esc(it.m.join("; "))+'</span><br><span class="small muted">'+esc(it.l)+' · '+plural(it.s, "stroke")+'</span></span></div><dl>';
+    if (it.on.length) h += '<dt>On</dt><dd>'+kanaRow(it.on)+'</dd>';
+    if (it.kun.length) h += '<dt>Kun</dt><dd>'+kanaRow(it.kun)+'</dd>';
+    if (it.xo.length || it.xk.length) h += '<dt>Also</dt><dd class="small">'+kanaRow(it.xo.concat(it.xk))+'</dd>';
+    h += '</dl>';
+    if (it.ex.length) h += '<ul class="exs" aria-label="Example words">'+it.ex.map(function(e){ return '<li><span class="w" lang="ja">'+md(e[0])+'</span><span class="g">'+ja(e[1])+'<br>'+esc(e[2])+'</span></li>'; }).join("")+'</ul>';
+  } else {
+    var tags = KL.posLabel(it.pt).map(function(t){ return '<span class="chip">'+esc(t)+'</span>'; });
+    h += '<div class="head"><span class="bigw" lang="ja">'+md(it.f)+'</span><span>'+ja(it.r)+'<br><span class="small muted">'+esc(it.l)+'</span></span></div>';
+    h += '<ol class="senses">'+it.m.map(function(m){ return '<li>'+esc(m)+'</li>'; }).join("")+'</ol>';
+    if (tags.length) h += '<div class="tags">'+tags.join("")+'</div>';
+    var notes = [];
+    if (it.u) notes.push('Usually written in kana: '+ja(it.r)+'.');
+    if (it.rk) notes.push('This kanji spelling is rare (JMdict).');
+    if (it.a.length) notes.push('Also written '+it.a.map(ja).join("、")+'.');
+    if (notes.length) h += '<p class="small">'+notes.join(" ")+'</p>';
+    var ks_ = it.w.split("").filter(function(ch){ return KL.items["j" + ch]; });
+    ks_ = ks_.filter(function(ch, i){ return ks_.indexOf(ch) === i; });
+    if (ks_.length) h += '<p class="small muted">Kanji: '+ks_.map(function(ch){ var k = KL.items["j" + ch]; return ja(ch)+' '+esc(k.m.slice(0, 2).join("; ")); }).join(" · ")+'</p>';
+  }
+  return h + '</div>';
+}
+
+/* ---------- review session ---------- */
+var S = null;   // {deck, queue:[keys], i, again:{}, done, q, answered, right}
+function startSession(id, extra){
+  var s = ks(), td = today(), qu = KL.queue(s, id, Date.now(), td, ICA.shuffle);
+  if (extra){ var dk = KL.deckById[id]; qu = {due:[], fresh:dk.items.filter(function(it){ return !s.c[it.key]; }).slice(0, 5).map(function(it){ return it.key; })}; }
+  S = {deck:id, queue:qu.due.concat(qu.fresh), nDue:qu.due.length, nNew:qu.fresh.length, i:0, again:{}, done:0, right:0};
+  if (!S.queue.length){ deckView(id); return; }
+  setTitle(KL.deckById[id].t + " · review");
+  show();
+}
+function show(){
+  var key = S.queue[S.i], it = KL.items[key], c = ks().c[key];
+  S.q = KL.question(it, c ? c.n : 0); S.answered = false; S.ok = null;
+  var q = S.q, h = '<div class="stack"><div class="hud"><span>Card '+(S.i + 1)+' / '+S.queue.length+'</span><span class="small">'+S.nDue+' review · '+S.nNew+' new</span></div>';
+  h += '<div class="qcard"><div class="eyebrow" style="text-align:center">'+(c ? "Review" : "New card")+'</div><div class="ask">'+esc(askText(q))+'</div>';
+  if (q.type === "wword"){
+    h += '<div class="prompt kana" lang="ja">'+esc(it.r)+'</div><div class="subprompt">'+esc(it.m[0])+'</div>';
+  } else {
+    var p = it.kind === "kana" ? it.q : it.kind === "kanji" ? it.c : it.w;
+    h += '<div class="prompt'+(it.kind === "vocab" ? (p.length > 5 ? " word long" : " word") : "")+'" lang="ja">'+esc(p)+'</div>';
+  }
+  if (q.type === "kana"){
+    h += '<div class="typein"><label class="sr-only" for="ro">Rōmaji for '+esc(it.q)+'</label><input id="ro" type="text" inputmode="latin" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" lang="en" placeholder="rōmaji"><button class="btn primary" id="check">Check</button></div><p class="small" id="rohint" aria-live="polite" style="text-align:center;margin:0"></p>';
+  } else {
+    h += '<div class="kopts" role="group" aria-label="Answers">'+q.opts.map(function(o, i){ var isJa = q.type === "kread" || q.type === "wread" || q.type === "wword"; return '<button type="button" class="kopt" data-o="'+i+'" aria-keyshortcuts="'+(i+1)+'"><span class="n" aria-hidden="true">'+(i+1)+'</span><span class="t"'+(isJa ? ' lang="ja"' : '')+'>'+esc(o.t)+'</span></button>'; }).join("")+'</div>';
+  }
+  h += '<div class="row" style="justify-content:center"><button class="btn small ghost" id="reveal">I don’t know: show me</button></div><p class="keyhint">'+(q.type === "kana" ? 'Enter to check' : '1–4 to answer · Space to show the answer')+'</p></div>';
+  h += '<div id="after" aria-live="polite"></div></div>';
+  app.innerHTML = h;
+  var f = document.getElementById("ro"); if (f) f.focus({preventScroll:true});
+}
+function askText(q){
+  if (q.type === "kread") return q.readType === "on" ? "Which is an on reading (katakana) of this kanji?" : "Which is a kun reading (hiragana) of this kanji?";
+  if (q.type === "wword") return "Which word has this reading and meaning?";
+  return KL.QTEXT[q.type];
+}
+function answer(i){
+  if (!S || S.answered) return;
+  var q = S.q, it = q.item, ok, note = "";
+  if (q.type === "kana"){
+    var inp = document.getElementById("ro"), r = i === null ? {ok:false} : KL.checkRomaji(it, inp.value);
+    if (r.empty && i !== null){ inp.focus(); return; }
+    if (r.kana && i !== null){ document.getElementById("rohint").textContent = "That’s kana. Type the sound in Latin letters (rōmaji); if your keyboard is in Japanese mode, switch it to English."; inp.select(); inp.focus(); return; }
+    ok = r.ok; note = r.note || ""; inp.disabled = true;
+    document.getElementById("check").disabled = true;
+  } else {
+    var btns = ICA.$$(".kopt", app);
+    btns.forEach(function(b){ var o = q.opts[+b.getAttribute("data-o")]; b.disabled = true; if (o.ok) b.classList.add("right"); });
+    if (i === null) ok = false;
+    else { ok = !!q.opts[i].ok; if (!ok) btns[i].classList.add("wrong"); }
+  }
+  S.answered = true; S.ok = ok; if (ok) S.right++;
+  document.getElementById("reveal").hidden = true;
+  var c = ks().c[it.key];
+  var h = '<div class="qcard"><div class="fb '+(ok ? "ok" : "no")+'"><b>'+(ok ? "✓ Correct." : i === null ? "Here’s the answer." : "Not quite.")+'</b>'+
+    (ok ? '' : '<div>The answer is '+(q.type === "kmean" || q.type === "wmean" ? '<b>'+esc(q.answer)+'</b>' : '<b lang="ja">'+esc(q.answer)+'</b>')+'.</div>')+(note ? '<div>'+esc(note)+'</div>' : '')+'</div>'+
+    fullCard(it)+
+    '<div><b>How well did you know it?</b></div><div class="rate">'+
+    '<button class="btn'+(ok ? '' : ' primary')+'" data-r="0" aria-keyshortcuts="a">Again<small>Back tomorrow</small></button>'+
+    '<button class="btn'+(ok ? ' primary' : '')+'" data-r="1" aria-keyshortcuts="g">Good<small>'+esc(KL.when(c, 1))+'</small></button>'+
+    '<button class="btn" data-r="2" aria-keyshortcuts="e">Easy<small>'+esc(KL.when(c, 2))+'</small></button></div>'+
+    '<p class="keyhint">A Again · G Good · E Easy</p>'+
+    '<button type="button" class="report" id="rep">Report a mistake on this card</button></div>';
+  var af = document.getElementById("after"); af.innerHTML = h;
+  var pri = af.querySelector(".rate .primary"); if (pri) pri.focus({preventScroll:true});
+  af.scrollIntoView({block:"nearest", behavior:"smooth"});
+}
+function rate(r){
+  if (!S || !S.answered) return;
+  var key = S.queue[S.i], s = ks();
+  KL.rate(s, key, r, today()); ICA.save();
+  if (r === 0 && !S.again[key]){ S.again[key] = 1; S.queue.push(key); }
+  S.done++; S.i++;
+  if (S.i < S.queue.length){ show(); window.scrollTo(0, 0); return; }
+  var id = S.deck, c = KL.counts(ks(), id, Date.now(), today());
+  app.innerHTML = '<div class="stack"><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">Session done</div><div class="big2">'+S.done+'</div><p>cards reviewed. Each one comes back when it’s due: soon if it was tricky, later if it was easy.</p><p class="small muted">Known well in this deck: '+c.learned+' of '+c.total+'</p><div class="row" style="justify-content:center"><a class="btn primary" href="#'+id+'" id="backdeck">Back to the deck</a><a class="btn" href="#">All decks</a></div></div></div>';
+  S = null;
+  document.getElementById("backdeck").focus();
+  window.scrollTo(0, 0);
+}
+
+/* ---------- events ---------- */
+app.addEventListener("click", function(e){
+  var t;
+  if ((t = e.target.closest("[data-o]"))){ answer(+t.getAttribute("data-o")); return; }
+  if ((t = e.target.closest("[data-r]"))){ rate(+t.getAttribute("data-r")); return; }
+  if (e.target.closest("#check")){ answer(0); return; }
+  if (e.target.closest("#reveal")){ answer(null); return; }
+  if (e.target.closest("#start")){ startSession(location.hash.slice(1)); return; }
+  if (e.target.closest("#extra")){ startSession(location.hash.slice(1), true); return; }
+  if (e.target.closest("#rep") && S){ var it = S.q.item; ICA.report("Kanji Lab · " + KL.deckById[it.deck].t + " · " + (it.c || it.w || it.q)); return; }
+  if ((t = e.target.closest("[data-nw]"))){ var s = ks(); s.set.nw = +t.getAttribute("data-nw"); ICA.save(); deckView(location.hash.slice(1)); var b = app.querySelector('[data-nw="'+s.set.nw+'"]'); if (b) b.focus(); return; }
+  if ((t = e.target.closest("[data-show]"))){ var it2 = KL.items[t.getAttribute("data-show")]; ICA.sheet('<h2>'+esc(it2.kind === "kanji" ? "Kanji" : it2.kind === "kana" ? "Kana" : "Word")+'</h2>'+fullCard(it2)); return; }
+});
+app.addEventListener("keydown", function(e){
+  if (e.target.id === "ro" && (e.key === "Enter" || e.key === " ")){ e.preventDefault(); if (!S.answered) answer(e.target.value.trim() ? 0 : null); }
+});
+document.addEventListener("keydown", function(e){
+  if (!S || e.ctrlKey || e.metaKey || e.altKey || document.getElementById("sheetbg")) return;
+  var tag = (e.target.tagName || "").toLowerCase(); if (tag === "input" || tag === "textarea") return;
+  var k = e.key.toLowerCase();
+  if (!S.answered){
+    if (/^[1-4]$/.test(k) && S.q.opts.length >= +k){ e.preventDefault(); answer(+k - 1); }
+    else if (k === " " && !(e.target.closest && e.target.closest("button,a"))){ e.preventDefault(); answer(null); }
+    else if (k === " " && e.target.id === "reveal"){ /* the button handles it */ }
+  } else {
+    var r = {a:0, g:1, e:2}[k];
+    if (r !== undefined){ e.preventDefault(); rate(r); }
+  }
+});
+function route(){
+  var id = location.hash.slice(1);
+  S = null;
+  if (id && KL.deckById[id]) deckView(id); else home();
+}
+window.addEventListener("hashchange", route);
+route();
+})();
+</script>
+</body>
+</html>
