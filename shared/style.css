@@ -1,28 +1,28 @@
 /* IT CHICK Academy · shared look
    Layout idea: warm paper surfaces on an espresso desk; one reading column (68ch) inside every app. */
 :root{
-  --bg:#f7f1ea; --panel:#fffaf4; --panel2:#f3e9de; --ink:#2b1c16; --soft:#6a5549; --line:#e3d5c8;
-  --espresso:#3b2419; --rose:#a8505b; --lupine:#61509a; --gold:#88601c; --sage:#4a663c;
-  --roseTint:#f6e3e2; --lupTint:#ebe6f6; --goldTint:#f5ead3; --sageTint:#e3ecdb;
-  --ok:#3f6b33; --okTint:#e1edd8; --bad:#a3404b; --badTint:#f8e1e1;
-  --wood1:#7a5236; --wood2:#6b4730; --shadow:0 6px 18px rgba(50,25,10,.14);
+  --bg:#f5eee3; --panel:#fffaf2; --panel2:#efe5d4; --ink:#2e1d15; --soft:#6b5444; --line:#e2d4bf;
+  --espresso:#3b2419; --rose:#a24a28; --lupine:#1f5a5c; --gold:#7d6012; --sage:#3d5c3e;
+  --roseTint:#f6e2d8; --lupTint:#dcecea; --goldTint:#f3e8c8; --sageTint:#e1eadc;
+  --ok:#3d6a35; --okTint:#e1edd8; --bad:#7a2d3a; --badTint:#f3dfe2;
+  --wood1:#5a3a2a; --wood2:#4c3023; --shadow:0 6px 18px rgba(50,25,10,.14);
   --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
   --body:"Atkinson Hyperlegible","Noto Sans JP",ui-sans-serif,system-ui,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
   --fs:17px; --r:14px;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --bg:#1c1310; --panel:#291b16; --panel2:#33231c; --ink:#f4e9df; --soft:#c7b1a2; --line:#4a352c;
-  --espresso:#f4e9df; --rose:#e69aa3; --lupine:#b6a4ea; --gold:#e3bb6c; --sage:#abc795;
-  --roseTint:#40262a; --lupTint:#2e2840; --goldTint:#3a2e1a; --sageTint:#26301f;
-  --ok:#a9d494; --okTint:#25331f; --bad:#f0a0a8; --badTint:#43242a;
-  --wood1:#5a3b27; --wood2:#4d3121; --shadow:0 6px 18px rgba(0,0,0,.4); color-scheme:dark }}
+  --bg:#1a1310; --panel:#251a15; --panel2:#30231c; --ink:#f1e6d6; --soft:#cdb89c; --line:#4a372c;
+  --espresso:#f1e6d6; --rose:#e8946c; --lupine:#7cc4c2; --gold:#e2c068; --sage:#a3c79a;
+  --roseTint:#3d2419; --lupTint:#1b3332; --goldTint:#3a2f17; --sageTint:#23301f;
+  --ok:#a9d494; --okTint:#25331f; --bad:#e3939f; --badTint:#3e2328;
+  --wood1:#5a3a2a; --wood2:#4c3023; --shadow:0 6px 18px rgba(0,0,0,.4); color-scheme:dark }}
 :root[data-theme="dark"]{
-  --bg:#1c1310; --panel:#291b16; --panel2:#33231c; --ink:#f4e9df; --soft:#c7b1a2; --line:#4a352c;
-  --espresso:#f4e9df; --rose:#e69aa3; --lupine:#b6a4ea; --gold:#e3bb6c; --sage:#abc795;
-  --roseTint:#40262a; --lupTint:#2e2840; --goldTint:#3a2e1a; --sageTint:#26301f;
-  --ok:#a9d494; --okTint:#25331f; --bad:#f0a0a8; --badTint:#43242a;
-  --wood1:#5a3b27; --wood2:#4d3121; --shadow:0 6px 18px rgba(0,0,0,.4); color-scheme:dark }
+  --bg:#1a1310; --panel:#251a15; --panel2:#30231c; --ink:#f1e6d6; --soft:#cdb89c; --line:#4a372c;
+  --espresso:#f1e6d6; --rose:#e8946c; --lupine:#7cc4c2; --gold:#e2c068; --sage:#a3c79a;
+  --roseTint:#3d2419; --lupTint:#1b3332; --goldTint:#3a2f17; --sageTint:#23301f;
+  --ok:#a9d494; --okTint:#25331f; --bad:#e3939f; --badTint:#3e2328;
+  --wood1:#5a3a2a; --wood2:#4c3023; --shadow:0 6px 18px rgba(0,0,0,.4); color-scheme:dark }
 :root[data-size="large"]{--fs:19.5px}
 :root[data-size="small"]{--fs:15.5px}
 
