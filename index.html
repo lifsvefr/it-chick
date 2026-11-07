@@ -195,7 +195,7 @@ function progressSheet(){
     '<h3>Backup</h3><p class="small muted">Progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
     '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, Formula Lab, tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
-    '<p class="small muted">Version: Pass 13 · Academic English · Social Science Primers · Data Literacy Units 1–10 · Data Lab · Digital Foundations Units 1–11 · Sociology Units 1–4 · Forge · Formula Lab · Mugi.</p>', function(sh){
+    '<p class="small muted">Version: Pass 14 · All content complete: four tracks, two electives, five labs · Forge · Mugi.</p>', function(sh){
     sh.addEventListener("change", function(e){ if (e.target.closest("[data-track]")){ saveTracks(sh); refreshDesk(); } });
     sh.addEventListener("click", function(e){
       var b = e.target.closest("[data-set]");
