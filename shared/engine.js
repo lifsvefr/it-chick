@@ -212,7 +212,7 @@ ICA.report = function(where){
 /* ---------- top bar used by every app ---------- */
 ICA.topbar = function(title){
   var bar = document.createElement("header"); bar.className = "topbar";
-  bar.innerHTML = '<div class="in"><a class="home" href="'+ICA.base+'index.html" aria-label="Back to the desk"><span class="dot" aria-hidden="true">✦</span><span>Desk</span></a><span class="title">'+ICA.esc(title)+'</span></div>';
+  bar.innerHTML = '<div class="in"><a class="home" href="'+ICA.base+'index.html" aria-label="Home: back to your study desk"><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg></span><span>Home</span></a><span class="title">'+ICA.esc(title)+'</span></div>';
   document.body.insertBefore(bar, document.body.firstChild);
   return bar;
 };
