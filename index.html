@@ -71,6 +71,7 @@
 .setup .sin{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:12px;min-height:100%}
 .setup .sfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px max(18px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));border-top:1.5px solid var(--line);background:var(--panel)}
 .setup .sfoot .in{max-width:560px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.setup .linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--lupine);font-weight:700;text-decoration:underline;cursor:pointer}
 .setup .ghost{color:var(--soft);background:none;border:0;font:inherit;font-size:.95em;padding:8px 4px;cursor:pointer}
 .setup .shi{font-family:var(--display);font-weight:800;font-size:clamp(24px,6vw,32px);line-height:1.1;margin:6px 0 0}
 .setup .shi small{display:block;font-family:var(--mono);font-size:11px;font-weight:400;letter-spacing:.13em;color:var(--rose);margin-bottom:4px}
@@ -220,7 +221,8 @@ function setup(){
         '<div class="sbub"><p>Welcome! You can call me <b>Mugi</b>. It’s the name I go by online, not my real one.</p>'+
         '<p class="stip">A good habit, by the way: online, a nickname is usually all anyone needs to know. There’s more on this in <a href="quests/index.html#t1u5-l1">Your digital footprint</a>.</p>'+
         '<p>I’ll be your tutor here. IT is my specialty, but I’m curious about almost everything: languages and accents, how societies work, how good research gets done. And stationery. And loafers.</p>'+
-        '<p>First, let’s make this place yours. It only takes a minute.</p></div></div>';
+        '<p>First, let’s make this place yours. It only takes a minute.</p></div></div>'+
+        '<p class="small muted" style="text-align:center;margin:0">Coming back on a new device? <button class="linkbtn" data-s="restore">Restore a backup</button></p>';
       back = '<button class="ghost" data-s="skip">Skip for now</button>'; next = '<button class="btn primary" data-s="next">Let’s set up →</button>';
     } else if (step === 2){
       var row = function(id){ var t = ICA.tracks[id], s = trackStats(id), on = picks.indexOf(id) > -1;
@@ -255,6 +257,7 @@ function setup(){
     if (b.dataset.f){ first = b.dataset.f; render(); return; }
     if (b.dataset.lv){ var p = b.dataset.lv.split("|"); lv[p[0]] = p[1]; render(); return; }
     var s = b.dataset.s;
+    if (s === "restore"){ close(); ICA.settingsSheet({progress:progressSheet, after:refreshDesk, setup:function(){ ICA.closeSheet(); setup(); }, openRestore:true}); var rf = document.getElementById("restfile"); if (rf) rf.focus(); return; }
     if (s === "skip"){ var x = ICA.load(); x.welcomed = true; if (!x.tracks.length) x.tracks = ["t1"]; ICA.save(); close(); refreshDesk(); }
     else if (s === "back"){ step = Math.max(1, step - 1); render(); }
     else if (s === "next"){ step++; render(); }
