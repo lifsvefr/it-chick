@@ -26,18 +26,29 @@ ICA.lessonBank = function(lessonId){ return ICA.bank.filter(function(q){ return 
 ICA.unitLessons = function(uid){ var u = ICA.unitById[uid]; return u ? u.lessons : []; };
 
 /* ---------- loading data files listed in the catalog ---------- */
-ICA.loadAll = function(base, done){
-  ICA.base = base;
+ICA.loadAll = function(base, done, opt){
+  ICA.base = base; opt = opt || {};
   var files = ["data/tracks.js","data/books.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
-  var i = 0, failed = [];
-  function next(){
-    if (i >= files.length){ ICA.units.sort(function(a,b){ var ta = ICA.tracks[a.track] ? ICA.tracks[a.track].n : 99, tb = ICA.tracks[b.track] ? ICA.tracks[b.track].n : 99; return ta - tb || a.n - b.n; }); done(failed); return; }
-    var s = document.createElement("script"); s.src = base + files[i] + "?v=" + ICA.version;
-    s.onload = function(){ i++; next(); };
-    s.onerror = function(){ failed.push(files[i]); i++; next(); };
+  var total = files.length, n = 0, failed = [], finished = false, ui = null;
+  /* a loading screen appears only if loading takes more than a moment */
+  var showT = setTimeout(function(){ if (!finished) ui = ICA.loadingScreen(opt.pixel); upd(); }, 250);
+  function upd(){ if (!ui) return; ui.querySelector("i").style.width = Math.round(100*n/total) + "%"; ui.querySelector(".lc").textContent = n + " / " + total; }
+  function one(){ n++; upd(); if (n >= total && !finished){ finished = true; clearTimeout(showT);
+    ICA.units.sort(function(a,b){ var ta = ICA.tracks[a.track] ? ICA.tracks[a.track].n : 99, tb = ICA.tracks[b.track] ? ICA.tracks[b.track].n : 99; return ta - tb || a.n - b.n; });
+    done(failed);
+    if (ui){ ui.classList.add("out"); setTimeout(function(){ if (ui.parentNode) ui.parentNode.removeChild(ui); }, 260); } } }
+  /* all files download at once; async=false keeps them running in list order */
+  files.forEach(function(f){
+    var s = document.createElement("script"); s.async = false; s.src = base + f + "?v=" + ICA.version;
+    s.onload = one; s.onerror = function(){ failed.push(f); one(); };
     document.head.appendChild(s);
-  }
-  next();
+  });
+};
+ICA.loadingScreen = function(pixel){
+  var d = document.createElement("div"); d.className = "loadscr" + (pixel ? " px" : ""); d.setAttribute("role", "status");
+  d.innerHTML = '<img src="' + ICA.base + 'shared/mascot/' + (pixel ? 'pixel/mugi-px-think.webp' : 'think.webp') + '" alt="">' +
+    '<b>' + (pixel ? 'LOADING…' : 'Getting your lessons ready…') + '</b><span class="lbar"><i></i></span><span class="lc small muted"></span>';
+  document.body.appendChild(d); return d;
 };
 
 /* ---------- store (one key, safe when storage is blocked) ---------- */
@@ -210,10 +221,54 @@ ICA.report = function(where){
   });
 };
 
+/* ---------- Settings (every page): display, text size, sound, backup / restore, erase (short, no progress) ---------- */
+ICA.settingsSheet = function(o){
+  o = o || {};
+  var st = ICA.load(), s = st.settings;
+  var snd = s.sound || (st.arcade && st.arcade.jp && st.arcade.jp.snd === false ? "off" : "on");
+  function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
+  ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
+    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+'</div>'+
+    '<h3>Backup</h3><p class="small muted">Progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
+    '<details><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
+    '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, every lab’s progress (including Kanji Lab reviews), tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
+    (o.progress ? '<div class="row"><button class="btn small ghost" id="goprogress">See my progress</button></div>' : '')+
+    '<p class="small muted">Version: Pass 16 · four tracks, three electives, six labs · Japanese Foundations N5–N4 · Kanji Lab · Forge · Mugi.</p>', function(sh){
+    sh.setAttribute("aria-label", "Settings"); sh.id = "settingspanel";
+    sh.addEventListener("click", function(e){
+      var b = e.target.closest("[data-set]");
+      if (b){ var k = b.getAttribute("data-set"), v = b.getAttribute("data-val"); st.settings[k] = v; if (k === "sound" && st.arcade && st.arcade.jp) st.arcade.jp.snd = v === "on"; ICA.save(); ICA.applySettings(); if (ICA.onSettings) ICA.onSettings(k, v); ICA.$$('[data-set="'+k+'"]', sh).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
+    });
+    if (o.progress) sh.querySelector("#goprogress").onclick = o.progress;
+    sh.querySelector("#erase").onclick = function(){
+      var box = sh.querySelector("#eraseconfirm");
+      box.innerHTML = '<div class="card stack" style="border-color:var(--bad)"><b>Erase all progress on this device?</b><span class="small">You’ll start fresh, as if opening IT CHICK Academy for the first time.</span><div class="row"><button class="btn small" id="erasecancel">Keep my progress</button><button class="btn small primary" id="eraseyes" style="background:var(--bad);border-color:var(--bad)">Yes, erase everything</button></div></div>';
+      sh.querySelector("#erasecancel").onclick = function(){ box.innerHTML = ""; };
+      sh.querySelector("#eraseyes").onclick = function(){ ICA.eraseAll(); ICA.applySettings(); ICA.closeSheet(); window.scrollTo(0, 0); if (o.after){ o.after(); ICA.toast("All progress erased. Fresh start!"); } else location.reload(); };
+    };
+    sh.querySelector("#dl").onclick = function(){ var ok = ICA.download("itchick-backup-"+new Date().toISOString().slice(0,10)+".json", ICA.exportText()); ICA.toast(ok ? "Backup downloaded" : "Download isn’t available here. Use Copy backup."); };
+    sh.querySelector("#cp").onclick = function(){ ICA.copy(ICA.exportText(), function(ok){ ICA.toast(ok ? "Backup copied. Paste it somewhere safe." : "Couldn’t copy here."); }); };
+    function tryRestore(text){
+      var msg = sh.querySelector("#restmsg"), obj;
+      try { obj = JSON.parse(text); } catch(err){ msg.innerHTML = '<div class="fb no"><b>That isn’t a backup.</b>The text couldn’t be read. Check that you pasted all of it, from the first { to the last }.</div>'; return; }
+      if (!obj || obj.v !== 1 || typeof obj.lessons !== "object"){ msg.innerHTML = '<div class="fb no"><b>That isn’t an IT CHICK Academy backup.</b>It’s missing the parts a backup always has.</div>'; return; }
+      msg.innerHTML = '<div class="card stack"><span>This replaces the progress on this device with the backup. Continue?</span><div class="row"><button class="btn small primary" id="yesrest">Replace my progress</button></div></div>';
+      sh.querySelector("#yesrest").onclick = function(){ ICA.replaceStore(obj); ICA.applySettings(); ICA.closeSheet(); if (o.after){ o.after(); ICA.toast("Backup restored"); } else location.reload(); };
+    }
+    sh.querySelector("#restore").onclick = function(){
+      var f = sh.querySelector("#restfile").files[0], txt = sh.querySelector("#resttext").value.trim();
+      if (f){ var r = new FileReader(); r.onload = function(){ tryRestore(String(r.result)); }; r.readAsText(f); }
+      else if (txt) tryRestore(txt);
+      else sh.querySelector("#restmsg").innerHTML = '<div class="fb part"><b>Nothing to restore yet.</b>Choose a file or paste backup text first.</div>';
+    };
+  });
+};
+
 /* ---------- top bar used by every app ---------- */
 ICA.topbar = function(title){
   var bar = document.createElement("header"); bar.className = "topbar";
-  bar.innerHTML = '<div class="in"><a class="home" href="'+ICA.base+'" aria-label="Home: back to your study desk"><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg></span><span>Home</span></a><span class="title">'+ICA.esc(title)+'</span></div>';
+  bar.innerHTML = '<div class="in"><a class="home" href="'+ICA.base+'" aria-label="Home: back to your study desk"><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg></span><span>Home</span></a><span class="title">'+ICA.esc(title)+'</span><button class="iconbtn setb" type="button" aria-label="Settings" title="Settings">⚙︎</button></div>';
+  bar.querySelector(".setb").addEventListener("click", function(){ ICA.settingsSheet(); });
   document.body.insertBefore(bar, document.body.firstChild);
   return bar;
 };

@@ -218,47 +218,7 @@ function progressSheet(){
   });
 }
 
-/* ---------- Settings: display, text size, sound, backup / restore, erase (short, no progress) ---------- */
-function settingsSheet(){
-  var st = ICA.load(), s = st.settings;
-  var snd = s.sound || (st.arcade && st.arcade.jp && st.arcade.jp.snd === false ? "off" : "on");
-  function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
-  ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
-    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+'</div>'+
-    '<h3>Backup</h3><p class="small muted">Progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
-    '<details><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
-    '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, every lab’s progress (including Kanji Lab reviews), tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
-    '<div class="row"><button class="btn small ghost" id="goprogress">See my progress</button></div>'+
-    '<p class="small muted">Version: Pass 16 · four tracks, three electives, six labs · Japanese Foundations N5–N4 · Kanji Lab · Forge · Mugi.</p>', function(sh){
-    sh.setAttribute("aria-label", "Settings"); sh.id = "settingspanel";
-    sh.addEventListener("click", function(e){
-      var b = e.target.closest("[data-set]");
-      if (b){ var k = b.getAttribute("data-set"), v = b.getAttribute("data-val"); st.settings[k] = v; if (k === "sound" && st.arcade && st.arcade.jp) st.arcade.jp.snd = v === "on"; ICA.save(); ICA.applySettings(); ICA.$$('[data-set="'+k+'"]', sh).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
-    });
-    sh.querySelector("#goprogress").onclick = progressSheet;
-    sh.querySelector("#erase").onclick = function(){
-      var box = sh.querySelector("#eraseconfirm");
-      box.innerHTML = '<div class="card stack" style="border-color:var(--bad)"><b>Erase all progress on this device?</b><span class="small">You’ll start fresh, as if opening IT CHICK Academy for the first time.</span><div class="row"><button class="btn small" id="erasecancel">Keep my progress</button><button class="btn small primary" id="eraseyes" style="background:var(--bad);border-color:var(--bad)">Yes, erase everything</button></div></div>';
-      sh.querySelector("#erasecancel").onclick = function(){ box.innerHTML = ""; };
-      sh.querySelector("#eraseyes").onclick = function(){ ICA.eraseAll(); ICA.applySettings(); ICA.closeSheet(); window.scrollTo(0, 0); refreshDesk(); ICA.toast("All progress erased. Fresh start!"); };
-    };
-    sh.querySelector("#dl").onclick = function(){ var ok = ICA.download("itchick-backup-"+new Date().toISOString().slice(0,10)+".json", ICA.exportText()); ICA.toast(ok ? "Backup downloaded" : "Download isn’t available here. Use Copy backup."); };
-    sh.querySelector("#cp").onclick = function(){ ICA.copy(ICA.exportText(), function(ok){ ICA.toast(ok ? "Backup copied. Paste it somewhere safe." : "Couldn’t copy here."); }); };
-    function tryRestore(text){
-      var msg = sh.querySelector("#restmsg"), obj;
-      try { obj = JSON.parse(text); } catch(err){ msg.innerHTML = '<div class="fb no"><b>That isn’t a backup.</b>The text couldn’t be read. Check that you pasted all of it, from the first { to the last }.</div>'; return; }
-      if (!obj || obj.v !== 1 || typeof obj.lessons !== "object"){ msg.innerHTML = '<div class="fb no"><b>That isn’t an IT CHICK Academy backup.</b>It’s missing the parts a backup always has.</div>'; return; }
-      msg.innerHTML = '<div class="card stack"><span>This replaces the progress on this device with the backup. Continue?</span><div class="row"><button class="btn small primary" id="yesrest">Replace my progress</button></div></div>';
-      sh.querySelector("#yesrest").onclick = function(){ ICA.replaceStore(obj); ICA.applySettings(); ICA.closeSheet(); refreshDesk(); ICA.toast("Backup restored"); };
-    }
-    sh.querySelector("#restore").onclick = function(){
-      var f = sh.querySelector("#restfile").files[0], txt = sh.querySelector("#resttext").value.trim();
-      if (f){ var r = new FileReader(); r.onload = function(){ tryRestore(String(r.result)); }; r.readAsText(f); }
-      else if (txt) tryRestore(txt);
-      else sh.querySelector("#restmsg").innerHTML = '<div class="fb part"><b>Nothing to restore yet.</b>Choose a file or paste backup text first.</div>';
-    };
-  });
-}
+function settingsSheet(){ ICA.settingsSheet({progress:progressSheet, after:refreshDesk}); }
 
 document.getElementById("notebtn").addEventListener("click", progressSheet);
 document.getElementById("settingsbtn").addEventListener("click", settingsSheet);
