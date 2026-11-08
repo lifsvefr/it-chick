@@ -152,12 +152,9 @@ function cards(){ return ICA.load().cards; }
 function dueList(){ var now = Date.now(), c = cards(); return pool().filter(function(q){ return c[q.id] && c[q.id].due <= now; }); }
 function newList(){ var c = cards(); return pool().filter(function(q){ return !c[q.id]; }); }
 function stopTimer(){ if (timerId){ clearInterval(timerId); timerId = null; } }
-/* nothing is ticked until the player chooses; a saved choice (even an empty one) is kept */
-function savedPick(){
-  var st = ICA.load(), ids = unitsWithQs().map(function(u){ return u.id; });
-  return Array.isArray(st.arcade.topics) ? st.arcade.topics.filter(function(x){ return ids.indexOf(x) > -1; }) : [];
-}
-function rememberPick(){ ICA.load().arcade.topics = picked.slice(); ICA.save(); }
+/* every visit starts with nothing ticked; the choice lasts until the player leaves the Arcade */
+function savedPick(){ return []; }
+function rememberPick(){}
 
 /* ---------- history: every screen is a history entry, so the browser's Back works ---------- */
 function depth(){ return (history.state && history.state.d) || 0; }
@@ -235,7 +232,7 @@ function home(){
       card("sprint","Word Sprint","Word → meaning"+b(jb.sprint),"a1")+
       card("match","Kanji Match","Beat the clock"+b(jb.match),"a2")+
       card("pairs","Pair Up","Kanji ↔ reading"+b(jb.pairs, " s"),"a3")+
-      '<a class="gc a4" href="../labs/kanji.html"><span class="art">'+art("lab")+'</span><span class="nm">Kanji Lab</span><span class="sub">Your missed cards</span><span class="pl" aria-hidden="true">→</span></a>'+
+      '<a class="gc a4" href="../labs/kanji.html?from=arcade"><span class="art">'+art("lab")+'</span><span class="nm">Kanji Lab</span><span class="sub">Your missed cards</span><span class="pl" aria-hidden="true">→</span></a>'+
     '</div></section>'+
   '</div>';
 }
@@ -269,9 +266,9 @@ function topicsDlg(then){
   us.forEach(function(u){ if (!groups[u.track]){ groups[u.track] = []; order.push(u.track); } groups[u.track].push(u); });
   var anyOn = picked.length > 0;
   function cnt(tid){ return groups[tid].filter(function(u){ return picked.indexOf(u.id) > -1; }).length; }
-  var body = '<p class="small muted">Lesson games ask questions from the units you tick. Your choice is remembered for next time.</p>'+
+  var body = '<p class="small muted">Lesson games ask questions from the units you tick.</p>'+
     order.map(function(tid, gi){
-      var t = ICA.tracks[tid] || {name:tid, icon:""}, list = groups[tid], open = anyOn ? cnt(tid) > 0 : (st.tracks.length ? st.tracks.indexOf(tid) > -1 : gi === 0);
+      var t = ICA.tracks[tid] || {name:tid, icon:""}, list = groups[tid], open = false;
       return '<div class="tg"><div class="tgh"><button type="button" class="tog" data-tog="'+tid+'" aria-expanded="'+open+'" aria-controls="up-'+tid+'"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 L10.5 8 L6 12.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="ic" aria-hidden="true">'+(t.icon||"")+'</span><span class="tn">'+esc(t.name)+'</span></button>'+
         '<span class="n" data-cnt="'+tid+'">'+cnt(tid)+'/'+list.length+'</span><label class="gall" title="All or none"><input type="checkbox" data-grp="'+tid+'" aria-label="All '+esc(t.name)+' units"></label></div>'+
         '<div class="unitpick" id="up-'+tid+'"'+(open ? '' : ' hidden')+'>'+list.map(function(u){ return '<label><input type="checkbox" data-unit="'+u.id+'" data-tr="'+tid+'"'+(picked.indexOf(u.id) > -1 ? " checked" : "")+'>'+esc(u.title)+'</label>'; }).join("")+'</div></div>';
@@ -507,7 +504,7 @@ function jpEnd(g, score, unit, sub, missed, level, stars, lowerBetter){
     '<div class="stars" aria-label="'+stars+' of 3 stars">'+"★★★".slice(0, stars)+'<span style="opacity:.25">'+"★★★".slice(0, 3-stars)+'</span></div>'+
     '<div class="big">'+score+(unit ? '<span style="font-size:.4em"> '+esc(unit)+'</span>' : '')+'</div><p>'+esc(sub)+'</p>'+(isBest ? '<span class="chip done">New personal best</span>' : '')+
     ICA.mugi(mood, esc(say), {small:true})+
-    (missed.length ? '<p class="small" id="labnote">'+missed.length+' card'+(missed.length === 1 ? "" : "s")+' sent to the <a href="../labs/kanji.html">Kanji Lab</a>: '+(missed.length === 1 ? "it’s" : "they’re")+' due now, so '+(missed.length === 1 ? "it comes" : "they come")+' up in your next Lab session.</p>' : '')+
+    (missed.length ? '<p class="small" id="labnote">'+missed.length+' card'+(missed.length === 1 ? "" : "s")+' sent to the <a href="../labs/kanji.html?from=arcade">Kanji Lab</a>: '+(missed.length === 1 ? "it’s" : "they’re")+' due now, so '+(missed.length === 1 ? "it comes" : "they come")+' up in your next Lab session.</p>' : '')+
     '<div class="row" style="justify-content:center"><button class="btn primary" data-again="'+g+'">Play again</button><button class="btn" data-home>Choose another game</button></div></div>'+
     (missed.length ? '<h2>Worth another look</h2><div class="missed">'+missed.map(function(it){ return '<div class="card">'+itemLabel(it)+'</div>'; }).join("")+'</div>' : '')+'</div>';
   var pb = app.querySelector("[data-again]"); if (pb) pb.focus();

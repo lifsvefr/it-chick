@@ -79,9 +79,11 @@ a.deck:hover{border-color:var(--lupine)}
 .browse button.b3,.browse button.b4,.browse button.b5{border-color:var(--ok);background:var(--okTint)}
 .browse.words button{font-size:1em}
 .credit{font-size:.82em;color:var(--soft);border-top:1px solid var(--line);padding-top:10px;display:grid;gap:4px}
-details.how{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
-details.how summary{font-weight:700;cursor:pointer}
-details.how .prose{margin-top:8px}
+details.how,div.how{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
+details.how summary,details.more summary{font-weight:700;cursor:pointer}
+details.how .prose,details.more .prose{margin-top:8px}
+.howh{font-size:1.05em;margin:0 0 6px}
+div.how>p{margin:0 0 8px}
 .seg3{display:inline-flex;border:1.5px solid var(--line);border-radius:12px;overflow:hidden}
 .seg3 button{font:inherit;min-width:44px;min-height:40px;padding:6px 12px;border:0;border-left:1.5px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
 .seg3 button:first-child{border-left:0}
@@ -95,6 +97,7 @@ details.how .prose{margin-top:8px}
 <script>
 (function(){
 ICA.base = "../";
+var FROMARC = /[?&]from=arcade/.test(location.search);
 var bar = ICA.topbar("Kanji Lab"), app = document.getElementById("app"), esc = ICA.esc, md = ICA.md;
 var KL = window.KanjiLab;
 if (!window.KLAB){ app.innerHTML = '<p>The Kanji Lab data didn’t load. Check your connection and reload the page.</p>'; return; }
@@ -113,21 +116,23 @@ var CREDIT = '<div class="credit"><span>Kanji and word data from <a href="https:
   '<span>Because the data is share-alike, the Kanji Lab word and kanji file (<code>data/lab-kanji.js</code>) is also licensed CC BY-SA 4.0. Dictionary versions: KANJIDIC2 '+esc(KLAB.src.kanjidic)+', JMdict '+esc(KLAB.src.jmdict)+'.</span>'+
   '<span>The JLPT has published no official kanji or word lists since 2010, so the N5–N3 levels here follow the common unofficial lists. Words or meanings that look wrong? Use “Report a mistake” on any card.</span></div>';
 
-var HOW = '<details class="how"><summary>How this works</summary><div class="prose">'+
+var HOW = '<div class="how"><h2 class="howh">How this works</h2>'+
+  '<p>Answer each card, check it, then tap <b>Again</b> (back tomorrow), <b>Good</b> (up one box) or <b>Easy</b> (skip a box). Hard cards come back often; easy ones wait longer: 1, 3, 7, 14, then 30 days. A few minutes a day is plenty, and a missed day is fine.</p>'+
+  '<details class="more"><summary>Learn more</summary><div class="prose">'+
   '<p><b>Short daily reviews, spaced out.</b> Each card sits in a box. Answer, check the full card, then say how well you knew it: <b>Again</b> puts it back in box 1 and brings it back tomorrow (and once more at the end of today’s session), <b>Good</b> moves it up one box, <b>Easy</b> skips a box. The boxes come back after 1, 3, 7, 14 and 30 days, the same boxes as the Arcade Flashcards. Cards you find hard come back often; cards you know well wait longer.</p>'+
   '<p><b>Why daily beats cramming.</b> A large review by Cepeda and colleagues (2006, <i>Psychological Bulletin</i>), covering 317 experiments, found that spreading study out over days improves long-term memory compared with studying all at once, and that the best gap between reviews grows the longer you want to remember. Trying to recall the answer before you see it (choosing or typing first) makes memory stronger than just reading the card again. <a href="https://pubmed.ncbi.nlm.nih.gov/16719566/" target="_blank" rel="noopener">The study on PubMed</a>.</p>'+
   '<p><b>New cards.</b> Each deck gives you a few new cards a day (you choose 5, 10 or 20) plus every review that’s due. Ten minutes a day is plenty. Missing a day is fine: due cards simply wait for you.</p>'+
   '<p><b>Readings.</b> <i>On</i> readings (from Chinese) are in katakana, like <span lang="ja">ジョウ</span>; <i>kun</i> readings (Japanese) are in hiragana, like <span lang="ja">あ.がる</span>, where the dot shows where the kana after the kanji (okurigana) begin. A dash, as in <span lang="ja">うわ-</span>, means the reading is used at the start or end of a word. The card shows first the readings found in common words, most used first.</p>'+
-  '<p><b>Keys.</b> On a keyboard: <kbd>1</kbd>–<kbd>4</kbd> to answer, <kbd>Space</kbd> to show the answer, then <kbd>A</kbd> Again, <kbd>G</kbd> Good, <kbd>E</kbd> Easy. For kana, type the rōmaji and press <kbd>Enter</kbd>.</p>'+
   '<p class="small muted">Your progress is saved in this browser only, together with the rest of your academy progress, so the backup and “Erase all progress” in Progress on the desk include it.</p>'+
-  '</div></details>';
+  '<p><b>Keys.</b> On a keyboard: <kbd>1</kbd>–<kbd>4</kbd> to answer, <kbd>Space</kbd> to show the answer, then <kbd>A</kbd> Again, <kbd>G</kbd> Good, <kbd>E</kbd> Easy. For kana, type the rōmaji and press <kbd>Enter</kbd>.</p>'+
+  '</div></details></div>';
 
 /* ---------- home: deck picker ---------- */
 function home(){
   setTitle("Kanji Lab");
   var s = ks(), now = Date.now(), td = today(), dueAll = 0;
-  var h = '<div class="stack"><a class="small" href="index.html">← All labs</a><div><div class="eyebrow">Labs</div><h1>Kanji Lab</h1>'+
-    '<p class="lead">A few minutes of review a day for kana, kanji and words, JLPT N5 to N3. Cards come back just before you’d forget them.</p></div>';
+  var h = '<div class="stack">'+(FROMARC ? '<a class="small" href="../arcade/">← Arcade</a>' : '<a class="small" href="index.html">← All labs</a>')+'<div><div class="eyebrow">Labs</div><h1>Kanji Lab</h1>'+
+    '<p class="lead">A few minutes of review a day for kana, kanji and words, JLPT N5 to N3. Cards come back just before you’d forget them.</p></div>' + HOW;
   h += '<div class="grpdecks">'+SECTIONS.map(function(sec){
     return '<section><h2>'+esc(sec[0])+'</h2><p class="small muted" style="margin-bottom:8px">'+esc(sec[1])+'</p><div class="decks">'+sec[2].map(function(id){
       var dk = KL.deckById[id], c = KL.counts(s, id, now, td); dueAll += c.due;
@@ -137,7 +142,7 @@ function home(){
         '<span class="bar" aria-hidden="true"><i style="width:'+Math.round(100 * c.learned / Math.max(1, c.total))+'%"></i></span></a>';
     }).join("")+'</div></section>';
   }).join("")+'</div>';
-  h += HOW + CREDIT + '</div>';
+  h += CREDIT + '</div>';
   app.innerHTML = h;
   window.scrollTo(0, 0);
 }
@@ -146,7 +151,7 @@ function home(){
 function deckView(id){
   var dk = KL.deckById[id], s = ks(), c = KL.counts(s, id, Date.now(), today());
   setTitle(dk.t);
-  var h = '<div class="stack"><a class="small" href="#">← All decks</a><div><div class="eyebrow">Kanji Lab · '+esc(dk.kind === "kana" ? "Kana" : dk.kind === "kanji" ? "Kanji" : "Words")+'</div><h1>'+esc(dk.t)+'</h1><p class="muted">'+esc(dk.blurb)+'</p></div>'+
+  var h = '<div class="stack"><a class="small" href="#">← All decks</a><div><div class="eyebrow">Kanji Lab · '+esc(dk.kind === "kana" ? "Kana" : dk.kind === "kanji" ? "Kanji" : "Words")+'</div><h1>'+esc(dk.t)+'</h1><p class="muted">'+esc(dk.blurb)+'</p></div>'+HOW+
     '<div class="tiles"><div><b>'+c.due+'</b><span>due today</span></div><div><b>'+c.newToday+'</b><span>new today</span></div><div><b>'+c.learned+'</b><span>known well</span></div><div><b>'+c.total+'</b><span>cards</span></div></div>';
   var n = c.due + c.newToday;
   h += n ? '<div class="row"><button class="btn primary" id="start">Start today’s review ('+plural(n, "card")+')</button></div>'
@@ -156,7 +161,7 @@ function deckView(id){
     var cc = s.c[it.key], lab = it.kind === "kana" ? it.q : it.kind === "kanji" ? it.c : it.w;
     return '<button type="button" data-show="'+esc(it.key)+'" lang="ja" class="'+(cc ? "b" + cc.b : "")+'">'+esc(lab)+'</button>';
   }).join("")+'</div></details>';
-  h += HOW + CREDIT + '</div>';
+  h += CREDIT + '</div>';
   app.innerHTML = h;
   window.scrollTo(0, 0);
 }
