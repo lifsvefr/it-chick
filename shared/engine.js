@@ -640,4 +640,15 @@ ICA.copy = function(text, done){
 ICA.applySettings();
 })();
 
+/* home-screen app: register the service worker from the site root (one folder above shared/) */
+(function(){
+  try {
+    var src = document.currentScript && document.currentScript.src;
+    if (!src || !("serviceWorker" in navigator) || location.protocol !== "https:" && location.hostname !== "localhost") return;
+    var root = src.replace(/shared\/engine\.js.*$/, "");
+    window.addEventListener("load", function(){ navigator.serviceWorker.register(root + "sw.js", {scope: root}).catch(function(){}); });
+  } catch(e){}
+})();
+
+
 document.addEventListener("click", function(e){ var b = e.target.closest && e.target.closest("[data-copycode]"); if (!b) return; var t = (ICA.codes || {})[b.getAttribute("data-copycode")] || ""; ICA.copy ? ICA.copy(t) : (navigator.clipboard && navigator.clipboard.writeText(t)); b.textContent = "Copied ✓"; setTimeout(function(){ b.textContent = "Copy"; }, 1500); });
