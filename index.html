@@ -19,21 +19,23 @@
 .cont{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 14px;text-decoration:none;color:var(--ink)}
 .cont:hover{border-color:var(--rose)}
 /* desk B: an open Quests notebook, a Progress sticky note and the Arcade console, other apps in a drawer */
-.desk{position:relative;border-radius:22px;padding:18px 14px 20px;background:var(--wood1);background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 2px,transparent 2px 19px,rgba(255,255,255,.03) 19px 21px,transparent 21px 47px),linear-gradient(180deg,var(--wood1),var(--wood2));box-shadow:inset 0 0 0 6px rgba(0,0,0,.12),var(--shadow);display:grid;gap:16px}
+.desk{position:relative;margin-top:28px;border-radius:22px;padding:16px 10px 20px;background:var(--wood1);background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 2px,transparent 2px 19px,rgba(255,255,255,.03) 19px 21px,transparent 21px 47px),linear-gradient(180deg,var(--wood1),var(--wood2));box-shadow:inset 0 0 0 6px rgba(0,0,0,.12),var(--shadow);display:grid;gap:16px}
 .desk[hidden]{display:none}
 /* dot-grid paper: dots every 11px, text on a 22px rhythm (two grid squares per line) */
-.nbook{display:grid;grid-template-columns:1fr 1fr;background:#fffaf2;border-radius:6px;box-shadow:0 7px 0 rgba(0,0,0,.28);position:relative;overflow:hidden;color:#2e1d15;--g:11px}
+.nbook{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:352/250;background:#fffaf2;border-radius:6px;box-shadow:0 7px 0 rgba(0,0,0,.28);position:relative;overflow:hidden;color:#2e1d15;--g:11px}
 .nbook:after{content:"";position:absolute;left:50%;top:0;bottom:0;width:16px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(0,0,0,.1),transparent);pointer-events:none}
-.pg{min-width:0;padding:22px 12px 22px 14px;background-image:radial-gradient(circle,rgba(107,84,68,.28) .9px,transparent 1.3px);background-size:var(--g) var(--g);background-position:5.5px 5.5px;display:grid;align-content:start;font-size:13px;line-height:22px}
+.pg{min-width:0;padding:22px 11px 22px 13px;background-image:radial-gradient(circle,rgba(107,84,68,.2) .75px,transparent 1.1px);background-size:var(--g) var(--g);background-position:5.5px 5.5px;display:grid;align-content:start;font-size:13px;line-height:22px;overflow-wrap:anywhere}
+/* a paper-coloured halo behind the text, so the dots don't run through the letters */
+.pg h3,.pg .mt,.pg .lt,.chk a,.chk .more,.pg .all{text-shadow:0 0 2px #fffaf2,0 0 2px #fffaf2,1px 0 1px #fffaf2,-1px 0 1px #fffaf2,0 1px 1px #fffaf2,0 -1px 1px #fffaf2}
 .pg h3{margin:0;font-family:var(--display);font-size:16px;line-height:22px;color:#a24a28}
-.pg .mt{color:#6b5444;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pg .mt{color:#6b5444}
 .pg .lt{font-family:var(--display);font-weight:800;font-size:15.5px;line-height:22px;color:#2e1d15}
 .pg .cta{justify-self:start;background:#3b2419;color:#fffaf2;border-radius:99px;padding:0 14px;height:32px;line-height:32px;margin:6px 0;font-weight:700;font-size:13px;text-decoration:none}
 .pg .cta:hover,.pg .cta:focus-visible{background:#a24a28}
 .chk{display:grid;margin:0;padding:0;list-style:none}
-.chk a{display:flex;gap:7px;align-items:center;color:#2e1d15;text-decoration:none;min-width:0}
-.chk a span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.chk i{width:13px;height:13px;border:1.5px solid #6b5444;border-radius:3px;flex:none;display:grid;place-items:center;font-style:normal;font-size:9px;line-height:1}
+.chk a{display:flex;gap:7px;align-items:flex-start;color:#2e1d15;text-decoration:none;min-width:0}
+.chk a span{min-width:0}
+.chk i{margin-top:4.5px;width:13px;height:13px;border:1.5px solid #6b5444;border-radius:3px;flex:none;display:grid;place-items:center;font-style:normal;font-size:9px;line-height:1}
 .chk .d a{color:#6b5444;text-decoration:line-through}.chk .d i{background:#3d5c3e;border-color:#3d5c3e;color:#fff}
 .chk .cur a{font-weight:700}.chk .cur i{border-color:#a24a28;box-shadow:0 0 0 2px rgba(162,74,40,.2)}
 .chk .more{color:#6b5444}

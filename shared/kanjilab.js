@@ -109,7 +109,7 @@ KL.init = function(data){
   data.vocab.forEach(function(v){
     var dk = byId["kl-" + v.l.toLowerCase() + "-vocab"]; if (!dk) return;
     var pt = (v.pt || "").split(",").filter(Boolean);
-    var it = {key:"v" + v.w + "|" + v.r, deck:dk.id, kind:"vocab", w:v.w, r:v.r, f:v.f || v.w, m:v.m, pt:pt, p:posGroup(pt), l:v.l, a:v.a || [], ar:v.ar || [], s:pt.indexOf("vs") > -1, u:!!v.u, rk:!!v.rk, rare:!!v.rare};
+    var it = {key:"v" + v.w + "|" + v.r, deck:dk.id, kind:"vocab", w:v.w, r:v.r, f:v.f || v.w, m:v.m, pt:pt, p:posGroup(pt), l:v.l, a:v.a || [], ar:v.ar || [], s:pt.indexOf("vs") > -1, u:!!v.u, rk:!!v.rk, rare:!!v.rare, nw:!!v.nw};
     it.kanaOnly = !/[㐀-鿿々]/.test(v.w);
     it.tok = tokens(v.t ? v.t.split(" ").concat(v.m) : v.m);
     it.rs = {}; it.rs[k2h(v.r)] = 1; it.ar.forEach(function(r){ it.rs[k2h(r)] = 1; });

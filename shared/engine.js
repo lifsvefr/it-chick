@@ -179,6 +179,7 @@ ICA.toast = function(msg){
 var lastFocus = null;
 ICA.sheet = function(html, onOpen){
   ICA.closeSheet();
+  if (ICA.onSheet) ICA.onSheet(true);     // e.g. the Arcade pauses a game clock
   lastFocus = document.activeElement;
   var bg = document.createElement("div"); bg.className = "sheetbg"; bg.id = "sheetbg";
   bg.innerHTML = '<div class="sheet" role="dialog" aria-modal="true"><button class="iconbtn x" data-close aria-label="Close">✕</button>'+html+'</div>';
@@ -188,7 +189,7 @@ ICA.sheet = function(html, onOpen){
   if (onOpen) onOpen(bg.querySelector(".sheet"));
   return bg.querySelector(".sheet");
 };
-ICA.closeSheet = function(){ var b = document.getElementById("sheetbg"); if (b){ b.parentNode.removeChild(b); if (lastFocus && lastFocus.focus) lastFocus.focus(); } };
+ICA.closeSheet = function(){ var b = document.getElementById("sheetbg"); if (b){ b.parentNode.removeChild(b); if (lastFocus && lastFocus.focus) lastFocus.focus(); if (ICA.onSheet) ICA.onSheet(false); } };
 ICA.closePop = function(){ var p = ICA.$(".pop"); if (p) p.parentNode.removeChild(p); };
 ICA.showTerm = function(id){
   ICA.closePop();

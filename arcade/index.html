@@ -196,7 +196,8 @@ dialog.dlg::backdrop{background:rgba(20,10,6,.55)}
 .rate small{font-weight:400;color:var(--soft);font-size:.78em}
 .big{font-family:var(--display);font-size:clamp(40px,10vw,64px);font-weight:800;line-height:1}
 .flashq{font-size:1.12em;font-weight:700}
-.missed{display:grid;gap:8px}.missed .card{display:grid;gap:4px}
+.missed{display:grid;gap:8px}
+.mrow{display:flex!important;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.mrow.gone>span{opacity:.5;text-decoration:line-through}.missed .card{display:grid;gap:4px}
 /* Japanese games */
 .segs{display:flex;flex-wrap:wrap;gap:8px}
 .segs button{border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:8px 14px;min-height:44px;font:inherit;font-weight:700}
@@ -464,6 +465,7 @@ function launch(g, again){
   if (history.state && history.state.m){ pendingPop = function(){ launch(g, again); }; history.back(); return; }
   var hs = {s:"play", g:g}; if (again) replace(hs); else push(hs);
   cur = {s:"play", g:g, answered:0, alive:true, hs:history.state || hs};
+  snaps = {};
   setTitle(LNAME[g]);
   var key = g === "cards" ? null : g, t = key ? AFX.top(ICA.load(), key) : null;
   app.innerHTML = '<div class="stack">'+gbar(LNAME[g], true)+'<div class="crt" id="scr">'+
@@ -649,7 +651,7 @@ function todayGame(gm){
     if (!dl.tb || dl.tb.d !== td || score > dl.tb.s) dl.tb = {d:td, s:score};
     ICA.save(); finish("today");
     results({key:"today", title:"Today’s Challenge · day "+dl.streak, score:score, sub:right+" of "+n+" right · best combo ×"+best, grade:AFX.grade(right, n, 10),
-      review:review(missed)+(jmissed.length ? '<h2>Japanese to look at again</h2><div class="missed">'+jmissed.map(function(it){ return '<div class="card">'+itemLabel(it)+'</div>'; }).join("")+'</div><p class="small">These are due now in the <a href="../labs/kanji.html?from=arcade">Kanji Lab</a>.</p>' : '')});
+      review:review(missed)+(jmissed.length ? jpMissList(jmissed, "Japanese to look at again")+'<p class="small" id="labnote">These are due now in the <a href="../labs/kanji.html?from=arcade">Kanji Lab</a>.</p>' : '')});
   }
   next();
 }
@@ -739,13 +741,25 @@ function bindChoices(box, q, cb){
 }
 document.addEventListener("keydown", function(e){ if (keyFn && !paused && !openD && !e.altKey && !e.ctrlKey && !e.metaKey && !document.getElementById("sheetbg")) keyFn(e.key); });
 function itemLabel(it){ return it.kind === "vocab" ? '<span lang="ja">'+esc(it.w)+(it.kanaOnly ? "" : " ("+esc(it.r)+")")+'</span> · '+esc(KL.meaningText(it)) : '<span lang="ja">'+esc(it.c)+' · '+esc(KL.readingChoices(it).map(function(r){ return r.r; }).join("、"))+'</span> · '+esc(KL.meaningText(it)); }
-function recordMiss(missed, it){ if (missed.indexOf(it) < 0) missed.push(it); JG.miss(ICA.load(), it.key, Date.now()); ICA.save(); }
+var snaps = {};   // this round's misses, so "I knew this" can undo them
+function recordMiss(missed, it){ if (missed.indexOf(it) < 0) missed.push(it); var sn = JG.miss(ICA.load(), it.key, Date.now()); if (!snaps[it.key]) snaps[it.key] = sn; ICA.save(); }
+function jpMissList(missed, title){
+  if (!missed.length) return '';
+  return '<h2>'+title+'</h2><p class="small muted">Tapped the wrong one by accident? Tap <b>I knew this</b> and it won’t be sent to the Kanji Lab.</p>'+
+    (missed.length > 1 ? '<div class="row"><button class="btn small" data-unmissall>I knew all of these</button></div>' : '')+
+    '<div class="missed">'+missed.map(function(it){ return '<div class="card mrow"><span>'+itemLabel(it)+'</span><button class="btn small" data-unmiss="'+esc(it.key)+'">I knew this</button></div>'; }).join("")+'</div>';
+}
+function unmiss(key, btn){
+  if (!snaps[key]) return; JG.unmiss(ICA.load(), key, snaps[key]); delete snaps[key]; ICA.save();
+  btn.disabled = true; btn.textContent = "Removed ✓"; btn.closest(".mrow").classList.add("gone");
+  var n = document.getElementById("labnote"); if (n && !Object.keys(snaps).length) n.hidden = true;
+}
 function jpEnd(g, score, unit, sub, missed, level, stars, lowerBetter){
   stopTimer(); finish(g);
   results({key:g, title:GAMES[g].name+" · "+LV[level], score:score, sub:sub, grade:AFX.gradeStars(stars, missed.length), noBoard: level === "missed",
     note: (level === "missed" ? '<p class="small">Practice rounds on “My missed ones” don’t go on the board.</p>' : '')+
       (missed.length ? '<p class="small" id="labnote">'+missed.length+' card'+(missed.length === 1 ? "" : "s")+' sent to the <a href="../labs/kanji.html?from=arcade">Kanji Lab</a>: '+(missed.length === 1 ? "it’s" : "they’re")+' due now, so '+(missed.length === 1 ? "it comes" : "they come")+' up in your next Lab session.</p>' : ''),
-    review: missed.length ? '<h2>Worth another look</h2><div class="missed">'+missed.map(function(it){ return '<div class="card">'+itemLabel(it)+'</div>'; }).join("")+'</div>' : ''});
+    review: jpMissList(missed, "Worth another look")});
 }
 function hudJP(left){ return '<div class="hud">'+left+'<span class="combo" id="cb" aria-label="Streak"></span><span>Score <span id="sc">0</span></span></div>'; }
 function showCombo(n){ var c = document.getElementById("cb"); if (!c) return; c.textContent = n >= 2 ? "COMBO ×"+n : ""; if (n >= 2) juice(c, "hot"); }
@@ -851,6 +865,8 @@ app.addEventListener("click", function(e){
   if (e.target.closest("[data-snd]")){ setSound(!soundOn()); syncSnd(); beep("tap"); return; }
   if (e.target.closest("[data-mus]")){ setMusic(!musicOn()); syncSnd(); beep("tap"); return; }
   if (e.target.closest("[data-today]")){ startToday(); return; }
+  if ((t = e.target.closest("[data-unmiss]"))){ unmiss(t.getAttribute("data-unmiss"), t); return; }
+  if (e.target.closest("[data-unmissall]")){ ICA.$$("[data-unmiss]").forEach(function(b){ if (!b.disabled) unmiss(b.getAttribute("data-unmiss"), b); }); e.target.closest("[data-unmissall]").disabled = true; return; }
   if (e.target.closest("#topics")){ topicsDlg(); return; }
   if (e.target.closest("[data-help]")){ howDlg(cur.g, false); return; }
   if (e.target.closest("[data-back]")){ if (progress()) confirmQuit(); else { stopGame(); goBack(); } return; }
@@ -862,6 +878,12 @@ app.addEventListener("click", function(e){
 });
 bar = ICA.topbar("Arcade");
 try { history.replaceState({s:"home", d:0}, ""); } catch(e){}
+/* a sheet (Settings, a glossary term) pauses the game clock like a dialog does */
+var sheetPaused = false;
+ICA.onSheet = function(open){
+  if (open){ if (cur.s === "play" && cur.alive && !paused && !openD){ sheetPaused = true; setPaused(true); } }
+  else if (sheetPaused){ sheetPaused = false; if (cur.s === "play" && cur.alive) setPaused(false); }
+};
 ICA.onSettings = function(k){ if (k === "sound"){ syncSnd(); if (!soundOn()) AFX.musicStop(); } };
 ICA.loadAll("../", function(){ picked = savedPick(); migrateBoards(); home(); }, {pixel:true});
 })();

@@ -76,6 +76,8 @@ a.deck:hover{border-color:var(--lupine)}
 .browse{display:flex;flex-wrap:wrap;gap:6px}
 .browse button{border:1.5px solid var(--line);background:var(--panel);border-radius:10px;padding:4px 9px;font-size:1.2em;line-height:1.4;color:var(--ink)}
 .browse button.b1,.browse button.b2{border-color:var(--gold)}
+.browse button.nw{border-style:dashed}
+.nwchip{background:var(--goldTint);color:var(--gold);font-weight:700}
 .browse button.b3,.browse button.b4,.browse button.b5{border-color:var(--ok);background:var(--okTint)}
 .browse.words button{font-size:1em}
 .credit{font-size:.82em;color:var(--soft);border-top:1px solid var(--line);padding-top:10px;display:grid;gap:4px}
@@ -157,9 +159,9 @@ function deckView(id){
   h += n ? '<div class="row"><button class="btn primary" id="start">Start today’s review ('+plural(n, "card")+')</button></div>'
          : '<div class="card stack"><b>All done for today 🎉</b><span class="small">'+(c.fresh ? 'You’ve had today’s new cards. ' : 'You’ve met every card in this deck. ')+'Reviews come back on their own schedule, so come back tomorrow.</span>'+(c.fresh ? '<div class="row"><button class="btn small" id="extra">Learn 5 more new cards now</button></div>' : '')+'</div>';
   h += '<div class="row small"><span>New cards a day (each deck):</span><div class="seg3" role="group" aria-label="New cards a day">'+KL.NEW_CHOICES.map(function(v){ return '<button type="button" data-nw="'+v+'" aria-pressed="'+(s.set.nw === v)+'">'+v+'</button>'; }).join("")+'</div></div>';
-  h += '<details class="how"><summary>Browse the deck ('+plural(c.seen, "card")+' started)</summary><p class="small muted" style="margin:6px 0">Tap any card to see it. Gold border: learning; green: known well.</p><div class="browse'+(dk.kind === "vocab" ? " words" : "")+'">'+dk.items.map(function(it){
+  h += '<details class="how"><summary>Browse the deck ('+plural(c.seen, "card")+' started)</summary><p class="small muted" style="margin:6px 0">Tap any card to see it. Gold border: learning; green: known well.'+(dk.kind === "vocab" ? ' A dashed border marks a news word.' : '')+'</p><div class="browse'+(dk.kind === "vocab" ? " words" : "")+'">'+dk.items.map(function(it){
     var cc = s.c[it.key], lab = it.kind === "kana" ? it.q : it.kind === "kanji" ? it.c : it.w;
-    return '<button type="button" data-show="'+esc(it.key)+'" lang="ja" class="'+(cc ? "b" + cc.b : "")+'">'+esc(lab)+'</button>';
+    return '<button type="button" data-show="'+esc(it.key)+'" lang="ja" class="'+(cc ? "b" + cc.b : "")+(it.nw ? " nw" : "")+'"'+(it.nw ? ' title="News word"' : '')+'>'+esc(lab)+'</button>';
   }).join("")+'</div></details>';
   h += CREDIT + '</div>';
   app.innerHTML = h;
@@ -183,10 +185,12 @@ function fullCard(it){
     var tags = KL.posLabel(it.pt).map(function(t){ return '<span class="chip">'+esc(t)+'</span>'; });
     h += '<div class="head"><span class="bigw" lang="ja">'+md(it.f)+'</span><span>'+ja(it.r)+'<br><span class="small muted">'+esc(it.l)+'</span></span></div>';
     h += '<ol class="senses">'+it.m.map(function(m){ return '<li>'+esc(m)+'</li>'; }).join("")+'</ol>';
+    if (it.nw) tags.unshift('<span class="chip nwchip">News word</span>');
     if (tags.length) h += '<div class="tags">'+tags.join("")+'</div>';
     var notes = [];
     if (it.u) notes.push('Usually written in kana: '+ja(it.r)+'.');
     if (it.rk) notes.push('This kanji spelling is rare (JMdict).');
+    if (it.nw) notes.push('News word: built from kanji at this level, but mostly met in newspapers and formal writing, not on the usual learner lists.');
     if (it.a.length) notes.push('Also written '+it.a.map(ja).join("、")+'.');
     if (notes.length) h += '<p class="small">'+notes.join(" ")+'</p>';
     var ks_ = it.w.split("").filter(function(ch){ return KL.items["j" + ch]; });

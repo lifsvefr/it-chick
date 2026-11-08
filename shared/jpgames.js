@@ -74,8 +74,16 @@ JG.board = function(pool, n, rng){
 /* a wrong answer: the Lab card is due now (Again: back to box 1), and the Arcade remembers it for "my missed ones" */
 JG.miss = function(s, key, now){
   var ks = KL.store(s), jp = JG.store(s), c = ks.c[key];
+  var snap = {c: c ? JSON.parse(JSON.stringify(c)) : null, m: jp.missed[key] || null};   // to undo a misclick
   if (c){ c.b = 1; c.d = Math.min(c.d || now, now); } else ks.c[key] = {b:0, n:0, d:now};
   jp.missed[key] = now;
+  return snap;
+};
+/* undo a miss ("I knew this"): the Lab card and the missed list go back to how they were before the round */
+JG.unmiss = function(s, key, snap){
+  var ks = KL.store(s), jp = JG.store(s);
+  if (snap.c) ks.c[key] = snap.c; else delete ks.c[key];
+  if (snap.m) jp.missed[key] = snap.m; else delete jp.missed[key];
 };
 /* right in "my missed ones": off the list (the Lab card keeps its own schedule) */
 JG.cleared = function(s, key){ delete JG.store(s).missed[key]; };
