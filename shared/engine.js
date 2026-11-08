@@ -36,6 +36,7 @@ ICA.loadAll = function(base, done, opt){
   function one(){ n++; upd(); if (n >= total && !finished){ finished = true; clearTimeout(showT);
     ICA.units.sort(function(a,b){ var ta = ICA.tracks[a.track] ? ICA.tracks[a.track].n : 99, tb = ICA.tracks[b.track] ? ICA.tracks[b.track].n : 99; return ta - tb || a.n - b.n; });
     done(failed);
+    if (ICA.syncOn()) ICA.syncNow({onChange:function(){ try { if (sessionStorage.getItem("itchick-synced-reload")) return; sessionStorage.setItem("itchick-synced-reload", "1"); } catch(e){} location.reload(); }}).then(function(){ try { sessionStorage.removeItem("itchick-synced-reload"); } catch(e){} }).catch(function(){});
     if (ui){ ui.classList.add("out"); setTimeout(function(){ if (ui.parentNode) ui.parentNode.removeChild(ui); }, 260); } } }
   /* all files download at once; async=false keeps them running in list order */
   files.forEach(function(f){
@@ -69,9 +70,116 @@ function fill(s){
   if (!s.arcade.best) s.arcade.best = {};
   return s;
 }
-ICA.save = function(){ try { localStorage.setItem(KEY, JSON.stringify(mem)); } catch(e){} };
-ICA.replaceStore = function(obj){ mem = fill(obj); ICA.save(); };
-ICA.eraseAll = function(){ mem = blank(); try { localStorage.removeItem(KEY); } catch(e){} ICA.save(); };
+ICA.save = function(quiet){ if (mem) mem.savedAt = Date.now(); try { localStorage.setItem(KEY, JSON.stringify(mem)); } catch(e){} if (!quiet && ICA.syncSoon) ICA.syncSoon(); };
+ICA.replaceStore = function(obj, quiet){ mem = fill(obj); ICA.save(quiet); };
+ICA.eraseAll = function(){ mem = blank(); mem.resetAt = Date.now(); try { localStorage.removeItem(KEY); } catch(e){} ICA.save(); };
+/* ---------- Sync with Google Drive (optional) ----------
+   Progress is saved as one small JSON file in the learner's own Google Drive "app data" folder (hidden, only this
+   app's Google project can see it; drive.appdata scope). No server of ours. Sign-in tokens last about an hour and
+   are kept for this browser tab only (sessionStorage); after that a tap on "Sync now" signs in again.
+   Merging keeps progress from both sides: finished lessons, the further-along flashcards and Kanji Lab cards,
+   high scores from both boards. Other things (settings, tracks) come from whichever device saved last. */
+ICA.GCID = "857115958422-65tf8htsa74g8abl9fcv1dosgl4ff5oc.apps.googleusercontent.com";
+var SKEY = "itchick-sync", SFILE = "it-chick-academy-progress.json", GSCOPE = "https://www.googleapis.com/auth/drive.appdata";
+var syncing = false, syncT = null, gisP = null;
+function smeta(){ try { return JSON.parse(localStorage.getItem(SKEY)) || {}; } catch(e){ return {}; } }
+function ssave(m){ try { localStorage.setItem(SKEY, JSON.stringify(m)); } catch(e){} }
+function gtok(){ try { var t = JSON.parse(sessionStorage.getItem("itchick-gtok")); return t && Date.now() < t.exp - 60000 ? t.tok : null; } catch(e){ return null; } }
+ICA.syncOn = function(){ return !!smeta().on; };
+function loadGIS(){
+  if (window.google && google.accounts && google.accounts.oauth2) return Promise.resolve();
+  if (gisP) return gisP;
+  gisP = new Promise(function(res, rej){ var sc = document.createElement("script"); sc.src = "https://accounts.google.com/gsi/client"; sc.async = true; sc.onload = res; sc.onerror = function(){ gisP = null; rej(new Error("Couldn’t reach Google sign-in. Check your connection.")); }; document.head.appendChild(sc); });
+  return gisP;
+}
+function signIn(consent){
+  return loadGIS().then(function(){ return new Promise(function(res, rej){
+    var tc = google.accounts.oauth2.initTokenClient({client_id:ICA.GCID, scope:GSCOPE,
+      callback:function(r){ if (r.error) return rej(new Error(r.error === "access_denied" ? "Google sign-in was cancelled." : r.error));
+        try { sessionStorage.setItem("itchick-gtok", JSON.stringify({tok:r.access_token, exp:Date.now() + (+r.expires_in || 3600)*1000})); } catch(e){}
+        res(r.access_token); },
+      error_callback:function(e){ rej(new Error(e && e.type === "popup_closed" ? "The Google window was closed." : "Google sign-in didn’t open. Allow pop-ups for this site and try again.")); }});
+    tc.requestAccessToken({prompt: consent ? "consent" : ""});
+  }); });
+}
+function gfetch(url, opt, tok){
+  opt = opt || {}; opt.headers = Object.assign({}, opt.headers || {}, {Authorization:"Bearer " + tok});
+  return fetch(url, opt).then(function(r){ if (r.status === 401){ try { sessionStorage.removeItem("itchick-gtok"); } catch(e){} throw new Error("signin"); } if (!r.ok) throw new Error("Google Drive said " + r.status + "."); return r; });
+}
+var DRV = "https://www.googleapis.com/drive/v3", UPL = "https://www.googleapis.com/upload/drive/v3";
+function driveGet(tok){
+  return gfetch(DRV + "/files?spaces=appDataFolder&fields=files(id,name,modifiedTime)&q=" + encodeURIComponent("name='" + SFILE + "'"), {}, tok).then(function(r){ return r.json(); })
+    .then(function(j){ var f = (j.files || [])[0]; if (!f) return {id:null, data:null};
+      return gfetch(DRV + "/files/" + f.id + "?alt=media", {}, tok).then(function(r){ return r.json(); }).then(function(d){ return {id:f.id, data:d}; }).catch(function(e){ if (e.message === "signin") throw e; return {id:f.id, data:null}; }); });
+}
+function drivePut(tok, id, obj){
+  var body = JSON.stringify(obj);
+  if (id) return gfetch(UPL + "/files/" + id + "?uploadType=media", {method:"PATCH", headers:{"Content-Type":"application/json"}, body:body}, tok);
+  var b = "ica" + Math.random().toString(36).slice(2), meta = JSON.stringify({name:SFILE, parents:["appDataFolder"]});
+  return gfetch(UPL + "/files?uploadType=multipart", {method:"POST", headers:{"Content-Type":"multipart/related; boundary=" + b},
+    body:"--" + b + "\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n" + meta + "\r\n--" + b + "\r\nContent-Type: application/json\r\n\r\n" + body + "\r\n--" + b + "--"}, tok);
+}
+/* ---- merging two stores ---- */
+function isObj(x){ return x && typeof x === "object" && !Array.isArray(x); }
+function deep(a, b){ // b wins on conflicts; keys from both kept
+  if (!isObj(a) || !isObj(b)) return b === undefined ? a : b;
+  var o = {}; Object.keys(a).forEach(function(k){ o[k] = a[k]; });
+  Object.keys(b).forEach(function(k){ o[k] = (k in a) ? deep(a[k], b[k]) : b[k]; });
+  return o;
+}
+function mergeMap(a, b, pick){ var o = {}; a = a || {}; b = b || {}; Object.keys(a).forEach(function(k){ o[k] = a[k]; }); Object.keys(b).forEach(function(k){ o[k] = (k in a) ? pick(a[k], b[k]) : b[k]; }); return o; }
+function lessonPick(x, y){
+  var m = deep(x, y); m.done = x.done && y.done ? Math.min(x.done, y.done) : (x.done || y.done || 0);
+  m.learn = Math.max(+x.learn || 0, +y.learn || 0); if (x.card != null || y.card != null) m.card = Math.max(+x.card || 0, +y.card || 0);
+  m.tries = mergeMap(x.tries, y.tries, function(p, q){ return Math.min(p, q); }); return m;
+}
+function cardPick(x, y){ var nx = +(x.n != null ? x.n : x.box || x.b || 0), ny = +(y.n != null ? y.n : y.box || y.b || 0);
+  if (nx !== ny) return nx > ny ? x : y; return +(x.due || x.d || 0) >= +(y.due || y.d || 0) ? x : y; }
+function latest(p, q){ return +p >= +q ? p : q; }
+function boardMerge(a, b, key){ var seen = {}, all = (a || []).concat(b || []).filter(function(e){ var k = e.n + "|" + e.s + "|" + e.t; if (seen[k]) return false; seen[k] = 1; return true; });
+  var low = key === "pairs"; all.sort(function(x, y){ return low ? x.s - y.s || x.t - y.t : y.s - x.s || x.t - y.t; }); return all.slice(0, 5); }
+ICA.mergeStores = function(L, R){
+  if (!isObj(R)) return L; if (!isObj(L)) return R;
+  if (L.resetAt && (+R.savedAt || 0) < L.resetAt) return L;          // erased here after that copy was made
+  if (R.resetAt && (+L.savedAt || 0) < R.resetAt) return R;
+  var newer = (+R.savedAt || 0) > (+L.savedAt || 0) ? R : L, older = newer === R ? L : R;
+  var m = deep(older, newer);
+  m.lessons = mergeMap(L.lessons, R.lessons, lessonPick);
+  m.cards = mergeMap(L.cards, R.cards, cardPick);
+  var la = L.arcade || {}, ra = R.arcade || {};
+  m.arcade = m.arcade || {};
+  if (la.boards || ra.boards){ var bk = {}; Object.keys(la.boards || {}).concat(Object.keys(ra.boards || {})).forEach(function(k){ bk[k] = boardMerge((la.boards || {})[k], (ra.boards || {})[k], k); }); m.arcade.boards = bk; }
+  m.arcade.miss = mergeMap(la.miss, ra.miss, latest);
+  if (la.jp || ra.jp){ m.arcade.jp = m.arcade.jp || {}; m.arcade.jp.missed = mergeMap((la.jp || {}).missed, (ra.jp || {}).missed, latest); }
+  var ld = la.daily || {}, rd = ra.daily || {}; if (ld.last || rd.last) m.arcade.daily = (+ld.last || 0) >= (+rd.last || 0) ? ld : rd;
+  var lk = ((L.labs || {}).kanji || {}).c, rk = ((R.labs || {}).kanji || {}).c;
+  if (lk || rk){ m.labs = m.labs || {}; m.labs.kanji = m.labs.kanji || {}; m.labs.kanji.c = mergeMap(lk, rk, cardPick); }
+  var seenR = {}; m.reports = (L.reports || []).concat(R.reports || []).filter(function(x){ var k = JSON.stringify(x); if (seenR[k]) return false; seenR[k] = 1; return true; });
+  m.welcomed = !!(L.welcomed || R.welcomed);
+  return m;
+};
+/* ---- the sync itself ---- */
+ICA.syncNow = function(o){
+  o = o || {};
+  if (syncing) return Promise.resolve();
+  var tok = gtok();
+  if (!tok && !o.interactive) return Promise.resolve("needs-signin");
+  syncing = true; clearTimeout(syncT);
+  var p = tok ? Promise.resolve(tok) : signIn(!smeta().on);
+  return p.then(function(t){ tok = t; return driveGet(tok); }).then(function(rem){
+    var before = JSON.stringify(ICA.load()), merged = ICA.mergeStores(ICA.load(), rem.data);
+    merged.savedAt = Date.now();
+    var changed = JSON.stringify(merged) !== before;
+    ICA.replaceStore(merged, true);
+    return drivePut(tok, rem.id, merged).then(function(){ var m = smeta(); m.on = true; m.last = Date.now(); ssave(m); syncing = false; if (changed && o.onChange) o.onChange(); return "ok"; });
+  }).catch(function(e){ syncing = false; if (e.message === "signin" && !o.interactive) return "needs-signin"; throw e; });
+};
+ICA.syncOff = function(){ var m = smeta(); m.on = false; ssave(m); try { sessionStorage.removeItem("itchick-gtok"); } catch(e){} };
+ICA.syncSoon = function(){ if (!ICA.syncOn() || !gtok() || !navigator.onLine) return; clearTimeout(syncT); syncT = setTimeout(function(){ ICA.syncNow({}).catch(function(){}); }, 15000); };
+document.addEventListener("visibilitychange", function(){ if (document.hidden && syncT && gtok()){ clearTimeout(syncT); syncT = null; ICA.syncNow({}).catch(function(){}); } });
+ICA.syncLabel = function(){ var m = smeta(); return m.last ? "Last synced " + new Date(m.last).toLocaleString([], {dateStyle:"medium", timeStyle:"short"}) : "Not synced yet"; };
+
+
 ICA.lessonState = function(id){ var st = ICA.load(); if (!st.lessons[id]) st.lessons[id] = {learn:0, tries:{}, apply:{}, check:null, done:0}; return st.lessons[id]; };
 ICA.lessonDone = function(id){ var st = ICA.load().lessons[id]; return !!(st && st.done); };
 ICA.unitProgress = function(uid){ var ls = ICA.unitLessons(uid), d = 0; ls.forEach(function(l){ if (ICA.lessonDone(l.id)) d++; }); return {done:d, total:ls.length}; };
@@ -230,7 +338,8 @@ ICA.settingsSheet = function(o){
   function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
   ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
     '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+'</div>'+
-    '<h3>Backup</h3><p class="small muted">Progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
+    '<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
+    '<h3>Backup</h3><p class="small muted">Without sync, progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details'+(o.openRestore ? ' open' : '')+'><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
     '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, every lab’s progress (including Kanji Lab reviews), tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
     '<div class="row">'+(o.progress ? '<button class="btn small ghost" id="goprogress">See my progress</button>' : '')+(o.setup ? '<button class="btn small ghost" id="gosetup">Run setup again</button>' : '<a class="btn small ghost" href="'+ICA.base+'index.html#setup">Run setup again</a>')+'</div>'+
@@ -248,6 +357,19 @@ ICA.settingsSheet = function(o){
       sh.querySelector("#erasecancel").onclick = function(){ box.innerHTML = ""; };
       sh.querySelector("#eraseyes").onclick = function(){ ICA.eraseAll(); ICA.applySettings(); ICA.closeSheet(); window.scrollTo(0, 0); if (o.after){ o.after(); ICA.toast("All progress erased. Fresh start!"); } else location.reload(); };
     };
+    var sbox = sh.querySelector("#syncbox");
+    var drawSync = function(msg, bad){
+      var on = ICA.syncOn();
+      sbox.innerHTML = on
+        ? '<p class="small muted">Your progress is kept in a hidden app folder in your own Google Drive, so every device you sign in on stays in step. '+ICA.syncLabel()+'.</p><div class="row"><button class="btn small" id="syncnow">Sync now</button><button class="btn small ghost" id="syncoff">Stop syncing on this device</button></div>'
+        : '<p class="small muted">Sign in with Google to keep your progress in step across your phone, tablet and computer. It’s saved as one small file in a hidden app folder in your own Google Drive: the app can’t see anything else in your Drive.</p><div class="row"><button class="btn small" id="syncnow">Connect Google Drive</button></div>';
+      if (msg) sbox.innerHTML += '<div class="fb '+(bad ? 'part' : 'ok')+'" role="status">'+ICA.esc(msg)+'</div>';
+      sbox.querySelector("#syncnow").onclick = function(){ var b = this; b.disabled = true; b.textContent = "Syncing…";
+        ICA.syncNow({interactive:true}).then(function(){ drawSync("Synced. Your progress is up to date."); if (o.after) o.after(); })
+          .catch(function(e){ drawSync(e.message === "signin" ? "Google asked to sign in again. Tap the button once more." : e.message, true); }); };
+      var off = sbox.querySelector("#syncoff"); if (off) off.onclick = function(){ ICA.syncOff(); drawSync("Sync is off on this device. Your progress here is kept."); };
+    };
+    drawSync();
     sh.querySelector("#dl").onclick = function(){ var ok = ICA.download("itchick-backup-"+new Date().toISOString().slice(0,10)+".json", ICA.exportText()); ICA.toast(ok ? "Backup downloaded" : "Download isn’t available here. Use Copy backup."); };
     sh.querySelector("#cp").onclick = function(){ ICA.copy(ICA.exportText(), function(ok){ ICA.toast(ok ? "Backup copied. Paste it somewhere safe." : "Couldn’t copy here."); }); };
     function tryRestore(text){
