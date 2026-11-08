@@ -53,7 +53,8 @@ var SFX = {
 };
 AFX.sfx = function(kind, arg){ if (!AFX.soundOn()) return; try { (SFX[kind] || SFX.tap)(arg); } catch(e){} };
 
-/* background tune: an original driving loop in A minor, 168 bpm, 16th-note steps */
+/* background tune: an original driving loop in A minor, 168 bpm, 16th-note steps.
+   It builds up: bass and kick first, the melody from bar 3, snare and arpeggio from bar 5 (no hi-hat). */
 var bgm = null, step = 0, next = 0;
 var CH = [[57,60,64],[53,57,60],[55,59,62],[52,56,59]], ROOT = [45,41,43,40];
 var LEAD = [69,72,76,72,81,79,76,72, 77,76,72,69,72,74,76,72, 74,79,83,79,86,83,79,74, 80,76,71,76,80,83,80,76];
@@ -62,12 +63,14 @@ function sched(){
   var c = AC; if (!c) return; var sp = 60/168/4;
   if (next < c.currentTime) next = c.currentTime + .03;
   while (next < c.currentTime + .12){
-    var t = next - c.currentTime, bar = Math.floor(step/16) % 4, s16 = step % 16;
-    if (step % 2 === 0){ tone(mf(LEAD[(step/2) % 32]), t, sp*1.6, "square", .06); tone(mf(ROOT[bar] + (s16 % 4 ? 12 : 0)), t, sp*1.5, "square", .075); }
-    tone(mf(CH[bar][s16 % 3] + 12), t, sp*.7, "square", .02);
+    var t = next - c.currentTime, bar = Math.floor(step/16), b4 = bar % 4, s16 = step % 16;
+    if (step % 2 === 0){
+      if (bar >= 2) tone(mf(LEAD[(step/2) % 32]), t, sp*1.6, "square", .06);
+      tone(mf(ROOT[b4] + (s16 % 4 ? 12 : 0)), t, sp*1.5, "square", .075);
+    }
+    if (bar >= 4) tone(mf(CH[b4][s16 % 3] + 12), t, sp*.7, "square", .02);
     if (s16 === 0 || s16 === 8 || s16 === 10) tone(150, t, .12, "triangle", .45, 40);
-    if (s16 === 4 || s16 === 12) noise(t, .12, .32, 2600);
-    if (step % 2 === 1) noise(t, .03, .1, 10000);
+    if (bar >= 4 && (s16 === 4 || s16 === 12)) noise(t, .12, .32, 2600);
     step++; next += sp;
   }
 }
