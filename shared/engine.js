@@ -233,7 +233,7 @@ ICA.settingsSheet = function(o){
     '<h3>Backup</h3><p class="small muted">Progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
     '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, every lab’s progress (including Kanji Lab reviews), tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
-    (o.progress ? '<div class="row"><button class="btn small ghost" id="goprogress">See my progress</button></div>' : '')+
+    '<div class="row">'+(o.progress ? '<button class="btn small ghost" id="goprogress">See my progress</button>' : '')+(o.setup ? '<button class="btn small ghost" id="gosetup">Run setup again</button>' : '<a class="btn small ghost" href="'+ICA.base+'index.html#setup">Run setup again</a>')+'</div>'+
     '<p class="small muted">Version: Pass 16 · four tracks, three electives, six labs · Japanese Foundations N5–N4 · Kanji Lab · Printer · Mugi.</p>', function(sh){
     sh.setAttribute("aria-label", "Settings"); sh.id = "settingspanel";
     sh.addEventListener("click", function(e){
@@ -241,6 +241,7 @@ ICA.settingsSheet = function(o){
       if (b){ var k = b.getAttribute("data-set"), v = b.getAttribute("data-val"); st.settings[k] = v; if (k === "sound" && st.arcade && st.arcade.jp) st.arcade.jp.snd = v === "on"; ICA.save(); ICA.applySettings(); if (ICA.onSettings) ICA.onSettings(k, v); ICA.$$('[data-set="'+k+'"]', sh).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
     });
     if (o.progress) sh.querySelector("#goprogress").onclick = o.progress;
+    if (o.setup) sh.querySelector("#gosetup").onclick = o.setup;
     sh.querySelector("#erase").onclick = function(){
       var box = sh.querySelector("#eraseconfirm");
       box.innerHTML = '<div class="card stack" style="border-color:var(--bad)"><b>Erase all progress on this device?</b><span class="small">You’ll start fresh, as if opening IT CHICK Academy for the first time.</span><div class="row"><button class="btn small" id="erasecancel">Keep my progress</button><button class="btn small primary" id="eraseyes" style="background:var(--bad);border-color:var(--bad)">Yes, erase everything</button></div></div>';

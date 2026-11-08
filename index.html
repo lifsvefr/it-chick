@@ -64,6 +64,51 @@
 .desk a:focus-visible,.desk button:focus-visible{outline:3px solid #f0d27a;outline-offset:3px}
 @media (min-width:720px){.desk{padding:24px 22px 26px}.pg{font-size:14px}.row2{grid-template-columns:1.2fr 1fr}}
 @media (prefers-reduced-motion:reduce){.sticky,.console,.mini .ic{transition:none}}
+/* ---------- setup: meet Mugi, pick courses, choose where to start ---------- */
+.setup{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+.setup .sdots{display:flex;gap:6px;justify-content:center;padding:14px 0 4px}.setup .sdots i{width:7px;height:7px;border-radius:50%;background:var(--line);transition:width .2s}.setup .sdots i.on{background:var(--rose);width:20px;border-radius:9px}
+.setup .sbody{flex:1;overflow-y:auto;padding:8px max(18px,env(safe-area-inset-left,0px)) 20px max(18px,env(safe-area-inset-right,0px))}
+.setup .sin{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:12px;min-height:100%}
+.setup .sfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px max(18px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));border-top:1.5px solid var(--line);background:var(--panel)}
+.setup .sfoot .in{max-width:560px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.setup .ghost{color:var(--soft);background:none;border:0;font:inherit;font-size:.95em;padding:8px 4px;cursor:pointer}
+.setup .shi{font-family:var(--display);font-weight:800;font-size:clamp(24px,6vw,32px);line-height:1.1;margin:6px 0 0}
+.setup .shi small{display:block;font-family:var(--mono);font-size:11px;font-weight:400;letter-spacing:.13em;color:var(--rose);margin-bottom:4px}
+.smeet{display:grid;grid-template-columns:40% minmax(0,1fr);gap:12px;align-items:start}
+.smeet img{width:100%;height:auto;max-height:68vh;object-fit:contain;object-position:top}
+.sbub{position:relative;background:var(--panel);border:1.5px solid var(--line);border-radius:18px;padding:12px 14px;display:grid;gap:8px;font-size:.95em;margin-top:6%}
+.sbub p{margin:0}
+.sbub:before,.ssay p:before{content:"";position:absolute;width:12px;height:12px;background:inherit;border-left:1.5px solid var(--line);border-bottom:1.5px solid var(--line);transform:rotate(45deg)}
+.sbub:before{left:-7.5px;top:34px}
+.stip{border-left:3px solid var(--lupine);padding:2px 0 2px 10px;font-size:.92em;color:var(--soft)}
+.ssay{display:flex;gap:10px;align-items:center}
+.ssay img{width:58px;height:58px;object-fit:contain;flex:none}
+.ssay p{position:relative;margin:0 0 0 4px;background:var(--panel);border:1.5px solid var(--line);border-radius:16px;padding:9px 13px}
+.ssay p:before{left:-7.5px;top:50%;margin-top:-6px}
+.ssay.up{flex-direction:column}.ssay.up p{margin:6px 0 0;text-align:center}.ssay.up p:before{left:50%;top:-7.5px;margin:0 0 0 -6px;transform:rotate(135deg)}
+.sgrp{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:4px 0 -4px}
+.str{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 10px;align-items:center;width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--panel);border:1.5px solid var(--line);border-left:5px solid var(--c);border-radius:12px;padding:9px 11px;cursor:pointer}
+.str[aria-pressed="true"]{border-color:var(--c);box-shadow:0 0 0 2px color-mix(in srgb,var(--c) 25%,transparent);background:color-mix(in srgb,var(--c) 7%,var(--panel))}
+.str .ic{font-size:21px;grid-row:1/span 2}
+.str b{font-family:var(--display);font-size:1.02em;line-height:1.2}
+.str .d{grid-column:2;font-size:.82em;color:var(--soft);line-height:1.4}
+.str .m{font-family:var(--mono);font-size:.92em;white-space:nowrap}
+.str .ck{grid-row:1/span 2;grid-column:3;width:24px;height:24px;border-radius:7px;border:2px solid var(--line);display:grid;place-items:center;font-size:14px;color:#fff}
+.str[aria-pressed="true"] .ck{background:var(--c);border-color:var(--c)}
+.str:focus-visible,.sopt:focus-visible,.schip:focus-visible{outline:3px solid var(--lupine);outline-offset:2px}
+.sopt{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;align-items:center;width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer}
+.sopt .rd{grid-column:1;grid-row:1/span 2;width:20px;height:20px;border-radius:50%;border:2px solid var(--line)}
+.sopt[aria-checked="true"]{border-color:var(--rose)}.sopt[aria-checked="true"] .rd{border:6px solid var(--rose)}
+.sopt b{grid-column:2;font-family:var(--display)}
+.sopt span.d{grid-column:2;font-size:.85em;color:var(--soft)}
+.slv{margin:-4px 0 0 32px;display:flex;gap:6px;flex-wrap:wrap}
+.schip{font:inherit;font-size:.88em;font-weight:700;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:6px 12px;cursor:pointer}
+.schip[aria-pressed="true"]{background:var(--espresso);color:var(--bg);border-color:transparent}
+.sdone{flex:1;display:grid;place-content:center;justify-items:center;text-align:center;gap:10px;padding:10px 0}
+.sdone img{width:190px;height:190px;object-fit:contain}
+.sfirst{background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:10px 14px;display:grid;gap:2px;text-align:left;width:100%;max-width:380px}
+.sfirst b{font-family:var(--display);font-size:1.05em}
+@media (min-width:640px){.smeet{grid-template-columns:36% minmax(0,1fr)}}
 /* progress sheet */
 .trackpick{display:grid;gap:8px}
 .trackpick label{display:flex;gap:10px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
@@ -123,6 +168,9 @@ function refreshDesk(){
 function nextLesson(st){
   var l = st.last && ICA.lessons[st.last.lesson];
   if (l && !(st.lessons[l.id] || {}).done) return {l:l, resume:true};
+  if (!l && st.startAt && ICA.lessons[st.startAt] && !(st.lessons[st.startAt] || {}).done){ var sl = ICA.lessons[st.startAt], su = ICA.unitById[sl.unit];
+    var rest = ICA.units.filter(function(u){ return u.track === su.track && u.n >= su.n; });
+    for (var r = 0; r < rest.length; r++){ var rl = ICA.unitLessons(rest[r].id); for (var q = 0; q < rl.length; q++) if (!(st.lessons[rl[q].id] || {}).done) return {l:rl[q], resume:false}; } }
   var order = ICA.units.filter(function(u){ return !st.tracks.length || st.tracks.indexOf(u.track) > -1; });
   if (l){ var lu = ICA.unitById[l.unit]; order = [lu].concat(order.filter(function(u){ return u !== lu; })); }
   for (var k = 0; k < order.length; k++){ var ls = ICA.unitLessons(order[k].id); for (var j = 0; j < ls.length; j++) if (!(st.lessons[ls[j].id] || {}).done) return {l:ls[j], resume:false}; }
@@ -138,7 +186,7 @@ function today(st, due){
   }
   var l = nx.l, u = ICA.unitById[l.unit], tr = ICA.tracks[u.track], ls = st.lessons[l.id] || {};
   var where = nx.resume && ls.card ? "You were partway through, and I saved your place." : nx.resume ? "Pick up where you left off." : "Here’s your next lesson.";
-  var say = fresh ? '<p><b>Hi, I’m Mugi!</b> I’ll learn with you. Let’s start small: one lesson, about '+l.minutes+' minutes, in short cards.</p><div class="quick"><button id="othertrack">Choose my tracks</button></div>' : '<p><b>'+greeting()+'</b> '+where+(due ? ' You also have '+due+' flashcard'+(due === 1 ? '' : 's')+' ready in the Arcade.' : '')+'</p>';
+  var say = fresh ? '<p><b>Welcome!</b> Your first lesson is ready whenever you are: about '+l.minutes+' minutes, in short cards.</p>'+(st.welcomed ? '' : '<div class="quick"><button id="othertrack">Run setup</button></div>') : '<p><b>'+greeting()+'</b> '+where+(due ? ' You also have '+due+' flashcard'+(due === 1 ? '' : 's')+' ready in the Arcade.' : '')+'</p>';
   box.innerHTML = ICA.mugi(fresh ? "hello" : nx.resume ? "tip" : "hello", say, {cls:"mpop"});
   /* the unit checklist: up to 6 lessons around the current one */
   var all = ICA.unitLessons(u.id), at = all.indexOf(l), from = Math.max(0, Math.min(at - 2, all.length - 6)), shown = all.slice(from, from + 6);
@@ -150,11 +198,79 @@ function today(st, due){
   var ot = $("#othertrack"); if (ot) ot.onclick = welcome;
 }
 
-function welcome(){
-  ICA.sheet(ICA.mugi("hello", '<p><b>Which tracks do you want?</b> Pick as many as you like. You can change this any time on the Progress note.</p>')+trackPicker()+'<p class="small muted">Your progress stays on this device only.</p><div class="row"><button class="btn primary" id="wdone">Done</button></div>', function(sh){
-    sh.querySelector("#wdone").addEventListener("click", function(){ saveTracks(sh); var st = ICA.load(); st.welcomed = true; ICA.save(); ICA.closeSheet(); refreshDesk(); });
-  });
+/* ---------- Setup: meet Mugi, pick courses, choose where to start (first visit, or from Settings) ---------- */
+var LEVELS = {e3:[["e3u1","From the first kana"],["e3u2","N5 (I know kana)"],["e3u5","N4"]]};
+var TCOL = {t1:"var(--rose)", t2:"var(--lupine)", t3:"var(--gold)", t4:"var(--sage)"};
+function trackStats(tid){
+  var us = ICA.units.filter(function(u){ return u.track === tid; }), m = 0;
+  us.forEach(function(u){ ICA.unitLessons(u.id).forEach(function(l){ m += +l.minutes || 0; }); });
+  return {units: us.length, hours: Math.max(1, Math.round(m/60/5)*5)};
 }
+function firstLesson(uid){ var ls = ICA.unitLessons(uid); return ls.length ? ls[0] : null; }
+function setup(){
+  var st = ICA.load(), picks = st.tracks.slice(), first = null, lv = {}, step = 1;
+  var ov = document.createElement("div"); ov.className = "setup"; ov.setAttribute("role", "dialog"); ov.setAttribute("aria-modal", "true"); ov.setAttribute("aria-label", "Setup");
+  document.body.appendChild(ov); document.documentElement.style.overflow = "hidden";
+  function close(){ if (ov.parentNode) ov.parentNode.removeChild(ov); document.documentElement.style.overflow = ""; }
+  function startOf(tid){ var l = lv[tid] || (LEVELS[tid] ? LEVELS[tid][0][0] : null); var u = l || (ICA.units.filter(function(x){ return x.track === tid; })[0] || {}).id; return u; }
+  function render(){
+    var body = "", back = '<button class="ghost" data-s="back">‹ Back</button>', next = '<button class="btn primary" data-s="next">Continue →</button>';
+    if (step === 1){
+      body = '<div class="shi"><small>WELCOME TO</small>IT CHICK Academy</div><div class="smeet"><img src="shared/mascot/full.webp" alt="Mugi, in a cream shirt, knit vest, wide brown trousers and loafers, carrying an IT CHICK tote">'+
+        '<div class="sbub"><p>Welcome! You can call me <b>Mugi</b>. It’s the name I go by online, not my real one.</p>'+
+        '<p class="stip">A good habit, by the way: online, a nickname is usually all anyone needs to know. There’s more on this in <a href="quests/index.html#t1u5-l1">Your digital footprint</a>.</p>'+
+        '<p>I’ll be your tutor here. IT is my specialty, but I’m curious about almost everything: languages and accents, how societies work, how good research gets done. And stationery. And loafers.</p>'+
+        '<p>First, let’s make this place yours. It only takes a minute.</p></div></div>';
+      back = '<button class="ghost" data-s="skip">Skip for now</button>'; next = '<button class="btn primary" data-s="next">Let’s set up →</button>';
+    } else if (step === 2){
+      var row = function(id){ var t = ICA.tracks[id], s = trackStats(id), on = picks.indexOf(id) > -1;
+        return '<button class="str" data-t="'+id+'" aria-pressed="'+on+'" style="--c:'+(TCOL[id] || "var(--plum, #7a2d3a)")+'"><span class="ic" aria-hidden="true">'+t.icon+'</span><b>'+esc(t.name)+'</b><span class="ck" aria-hidden="true">'+(on ? "✓" : "")+'</span><span class="d">'+esc(t.blurb)+' <span class="m">'+s.units+' units · about '+s.hours+' h</span></span></button>'; };
+      var ids = trackIds().filter(hasUnits), core = ids.filter(function(i){ return i.charAt(0) === "t"; }), el = ids.filter(function(i){ return i.charAt(0) !== "t"; });
+      body = '<div class="ssay"><img src="shared/mascot/tip.webp" alt=""><p>This is everything I teach here. Choose whatever catches your eye. Nothing is set in stone, so you can always add more later.</p></div>'+
+        '<div class="sgrp">Core skills</div>'+core.map(row).join("")+'<div class="sgrp">Electives</div>'+el.map(row).join("");
+      if (!picks.length) next = '<button class="btn primary" data-s="next" disabled>Pick at least one</button>';
+    } else if (step === 3){
+      if (!first || picks.indexOf(first) < 0) first = picks[0];
+      body = '<div class="ssay"><img src="shared/mascot/think.webp" alt=""><p>'+(picks.length > 1 ? 'Lovely choices. Which one shall we open first? I’ll keep the others close by.' : 'Lovely choice. Where shall we begin?')+'</p></div>'+
+        picks.map(function(id){ var t = ICA.tracks[id], on = id === first, u = ICA.unitById[startOf(id)];
+          var h = '<button class="sopt" role="radio" data-f="'+id+'" aria-checked="'+on+'"><span class="rd" aria-hidden="true"></span><b>'+t.icon+' '+esc(t.name)+'</b><span class="d">Starts with Unit '+u.n+' · '+esc(u.title)+'</span></button>';
+          if (LEVELS[id] && on) h += '<div class="slv" role="group" aria-label="Starting level">'+LEVELS[id].map(function(x){ return '<button class="schip" data-lv="'+id+'|'+x[0]+'" aria-pressed="'+(startOf(id) === x[0])+'">'+x[1]+'</button>'; }).join("")+'</div>';
+          return h; }).join("")+
+        '<div class="ssay" style="margin-top:auto"><img src="shared/mascot/hello.webp" alt=""><p>If you already know some of this, start further in. We can always go back and review together.</p></div>';
+    } else {
+      var l = firstLesson(startOf(first)), u = ICA.unitById[l.unit];
+      body = '<div class="sdone"><img src="shared/mascot/yay.webp" alt="Mugi cheering"><div class="ssay up"><p><b>You’re all set!</b> Your desk is ready, and I’ve left your first lesson open for you. Shall we begin?</p></div>'+
+        '<div class="sfirst"><span class="small muted">'+esc(ICA.tracks[first].name)+' · Unit '+u.n+'</span><b>'+esc(l.title)+'</b><span class="small muted">About '+l.minutes+' min, in short cards</span></div>'+
+        '<p class="small muted">Change your courses or run this again from ⚙︎ Settings.</p></div>';
+      next = '<button class="btn primary" data-s="done">Go to my desk →</button>';
+    }
+    ov.innerHTML = '<div class="sdots" aria-hidden="true">'+[1,2,3,4].map(function(i){ return '<i'+(i === step ? ' class="on"' : '')+'></i>'; }).join("")+'</div>'+
+      '<div class="sbody"><div class="sin">'+body+'</div></div><div class="sfoot"><div class="in">'+back+next+'</div></div>';
+    ov.querySelector(".sbody").scrollTop = 0;
+    var f = ov.querySelector('[data-s="next"],[data-s="done"]'); if (f && step === 1) f.focus();
+  }
+  ov.addEventListener("click", function(e){
+    var b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.t){ var i = picks.indexOf(b.dataset.t); if (i > -1) picks.splice(i, 1); else picks.push(b.dataset.t); render(); return; }
+    if (b.dataset.f){ first = b.dataset.f; render(); return; }
+    if (b.dataset.lv){ var p = b.dataset.lv.split("|"); lv[p[0]] = p[1]; render(); return; }
+    var s = b.dataset.s;
+    if (s === "skip"){ var x = ICA.load(); x.welcomed = true; if (!x.tracks.length) x.tracks = ["t1"]; ICA.save(); close(); refreshDesk(); }
+    else if (s === "back"){ step = Math.max(1, step - 1); render(); }
+    else if (s === "next"){ step++; render(); }
+    else if (s === "done"){
+      var y = ICA.load(), l = firstLesson(startOf(first));
+      y.tracks = picks.slice(); y.welcomed = true; y.startAt = l.id;
+      /* the chosen course comes first */
+      y.tracks.sort(function(a, b){ return (a === first ? -1 : 0) - (b === first ? -1 : 0); });
+      if (y.last && !(y.lessons[y.last.lesson] || {}).learn && !(y.lessons[y.last.lesson] || {}).done) delete y.last;
+      ICA.save(); close(); refreshDesk();
+    }
+  });
+  ov.addEventListener("keydown", function(e){ if (e.key === "Escape" && step === 1){ ov.querySelector('[data-s="skip"]').click(); } });
+  render();
+}
+function welcome(){ setup(); }
 function trackPicker(){
   var st = ICA.load();
   return '<div class="trackpick">'+trackIds().map(function(id){ var t = ICA.tracks[id], ready = hasUnits(id); return '<label><input type="checkbox" data-track="'+id+'"'+(st.tracks.indexOf(id) > -1 ? " checked" : "")+(ready ? "" : " disabled")+'><span><b>'+t.icon+' '+esc(t.name)+'</b>'+(t.elective ? ' <span class="chip">Elective</span>' : '')+'<br><span class="small muted">'+esc(ready ? t.blurb : t.soon)+'</span></span></label>'; }).join("")+'</div>';
@@ -191,13 +307,15 @@ function progressSheet(){
   });
 }
 
-function settingsSheet(){ ICA.settingsSheet({progress:progressSheet, after:refreshDesk}); }
+function settingsSheet(){ ICA.settingsSheet({progress:progressSheet, after:refreshDesk, setup:function(){ ICA.closeSheet(); setup(); }}); }
 
 document.getElementById("notebtn").addEventListener("click", progressSheet);
 document.getElementById("settingsbtn").addEventListener("click", settingsSheet);
 
 ICA.loadAll("./", function(){
   refreshDesk();
+  var st = ICA.load();
+  if (location.hash === "#setup" || (!st.welcomed && !st.last && !Object.keys(st.lessons).length)){ if (location.hash) history.replaceState(null, "", location.pathname); setup(); }
 });
 })();
 </script>
