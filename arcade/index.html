@@ -49,25 +49,30 @@
 .gbar .iconbtn{min-width:44px;height:44px;font-weight:800;font-size:17px}
 .ready{text-align:center;color:var(--soft);padding:40px 0}
 /* ---------- dialogs ---------- */
-dialog.dlg{border:0;padding:0;background:var(--bg);color:var(--ink);border-radius:20px;width:min(540px,calc(100% - 24px));max-width:none;max-height:min(88vh,760px);max-height:min(88dvh,760px);box-shadow:0 18px 50px rgba(0,0,0,.35);overflow:hidden}
+dialog.dlg{border:0;padding:0;background:var(--bg);color:var(--ink);border-radius:20px;width:min(540px,calc(100% - 16px));max-width:none;max-height:min(88vh,760px);max-height:min(88dvh,760px);box-shadow:0 18px 50px rgba(0,0,0,.35);overflow:hidden}
 dialog.dlg[open]{display:flex;flex-direction:column}
 dialog.dlg::backdrop{background:rgba(20,10,6,.55)}
 .dlg .dh{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}
 .dlg .dh h2{margin:0;font-size:1.12em;flex:1;min-width:0}
 .dlg .dh .bk{min-height:44px}
-.dlg .db{padding:14px;overflow:auto;flex:1;display:grid;gap:10px;align-content:start}
+.dlg .db{padding:14px 10px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:10px}
+.dlg .db>*{flex:none}
 .dlg .df{padding:10px 14px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
 .dlg .df .btn{min-height:44px}
+.dlg .df .btn.primary{margin-left:auto}
 .dlg p{margin:0}
-.tg{border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
-.tgh{display:flex;align-items:center;gap:6px;padding:4px 6px 4px 4px}
-.tgh .tog{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;flex:1;min-width:0;display:flex;align-items:center;gap:8px;border:0;background:none;color:var(--ink);font:inherit;font-weight:700;text-align:left;padding:8px 6px;min-height:44px;border-radius:8px}
-.tgh .tog .chev{transition:transform .15s;flex:none;color:var(--soft)}
+.tg{border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.tgh{display:flex;align-items:center;gap:0;padding:0;min-height:48px}
+.tgh .tog{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation;flex:1;min-width:0;display:flex;align-items:center;gap:6px;border:0;background:none;color:var(--ink);font:inherit;font-size:.9em;font-weight:700;text-align:left;padding:6px 6px 6px 6px;min-height:48px;border-radius:11px;cursor:pointer}
+.tgh .tog .chev{flex:none;width:16px;height:16px;color:var(--soft);transition:transform .18s}
 .tgh .tog[aria-expanded=true] .chev{transform:rotate(90deg)}
-.tgh .n{font-family:var(--mono);font-size:.78em;color:var(--soft);font-weight:600;flex:none}
-.tgh .btn{padding:6px 10px;min-height:36px;font-size:.82em}
-.unitpick{display:grid;gap:2px;padding:0 10px 8px;border-top:1px solid var(--line)}
-.unitpick label{display:flex;gap:10px;align-items:center;padding:8px 2px;font-size:.95em;min-height:44px}
+.tgh .tog .ic{flex:none;font-size:1.05em;line-height:1}
+.tgh .tog .tn{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.25}
+.tgh .n{font-family:var(--mono);font-size:.76em;color:var(--soft);font-weight:600;flex:none;min-width:2.9em;text-align:right}
+.tgh .gall{flex:none;width:42px;height:44px;display:grid;place-items:center;cursor:pointer}
+.tgh .gall input{width:22px;height:22px;margin:0;accent-color:var(--lupine)}
+.unitpick{display:grid;gap:0;padding:2px 10px 6px 30px;border-top:1px solid var(--line)}
+.unitpick label{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:.92em;line-height:1.3;min-height:44px}
 .unitpick input{accent-color:var(--lupine);width:22px;height:22px;flex:none}
 .howart{height:84px;border-radius:14px;overflow:hidden;--acc:var(--rose);--accT:var(--roseTint)}
 .howlist{margin:0;padding-left:20px;display:grid;gap:6px}
@@ -85,9 +90,9 @@ dialog.dlg::backdrop{background:rgba(20,10,6,.55)}
 .flashq{font-size:1.12em;font-weight:700}
 .missed{display:grid;gap:8px}.missed .card{display:grid;gap:4px}
 /* Japanese games */
-.seg{display:flex;flex-wrap:wrap;gap:8px}
-.seg button{border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:8px 14px;min-height:44px;font:inherit;font-weight:700}
-.seg button[aria-pressed=true]{border-color:var(--lupine);background:var(--lupTint);color:var(--lupine)}
+.segs{display:flex;flex-wrap:wrap;gap:8px}
+.segs button{border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:8px 14px;min-height:44px;font:inherit;font-weight:700}
+.segs button[aria-pressed=true]{border-color:var(--lupine);background:var(--lupTint);color:var(--lupine)}
 .stage{position:relative;background:var(--panel);border:1.5px solid var(--line);border-radius:18px;padding:18px 14px;text-align:center;display:grid;gap:6px;justify-items:center}
 .glyph{font-size:clamp(48px,16vw,84px);line-height:1.15;font-weight:700;overflow-wrap:anywhere}
 .glyph.rd{font-size:clamp(48px,13vw,72px)}
@@ -102,10 +107,15 @@ dialog.dlg::backdrop{background:rgba(20,10,6,.55)}
 .choice.ok{border-color:var(--ok);background:var(--okTint)}
 .choice.no{border-color:var(--bad);background:var(--badTint)}
 .choice:disabled{cursor:default}
+.setup{gap:0}
+.setup .sg{display:grid;gap:10px;padding:16px 0}
+.setup .sg:first-child{padding-top:0}
+.setup .sg + .sg,.setup .sg + .row{border-top:1.5px dashed var(--line)}
+.setup .row{padding-top:18px}
 .combo{font-family:var(--mono);color:var(--rose)}
 .combo.hot{animation:pulse .5s}
-.spell{height:8px;border-radius:99px;background:var(--panel2);overflow:hidden;width:100%}
-.spell i{display:block;height:100%;background:var(--gold);width:100%;transform-origin:left}
+.tbar{height:10px;border-radius:99px;background:var(--panel2);overflow:hidden;width:100%}
+.tbar i{display:block;height:100%;background:var(--gold);border-radius:99px;width:100%;transform-origin:left}
 .float{position:absolute;right:14px;bottom:10px;font-family:var(--display);font-weight:800;color:var(--ok);animation:up .8s forwards;pointer-events:none}
 /* "jg-" names: the shared .pop class is the glossary popover (fixed, removed on the next click) */
 .jg-shake{animation:shake .35s}
@@ -192,14 +202,14 @@ function syncSnd(){ var on = soundOn(); ICA.$$("[data-snd]").forEach(function(b)
 
 /* ---------- game cards (inline art) ---------- */
 var ART = {
-  practice:'<circle cx="60" cy="35" r="25" class="A"/><circle cx="60" cy="35" r="18" class="P"/><circle cx="60" cy="35" r="11" class="A"/><circle cx="60" cy="35" r="4.5" class="P"/><g class="mv"><path d="M61 34 L98 10" class="S" style="stroke:var(--ink)"/><path d="M98 10 l9 -3 -3 9 z M93 13 l6 -8 M95 16 l9 -2" class="S" style="stroke:var(--ink);stroke-width:2.5"/></g><circle cx="22" cy="16" r="3" class="G idle"/><circle cx="100" cy="54" r="2.5" class="G idle"/>',
-  cards:'<rect x="30" y="14" width="40" height="46" rx="6" class="O" transform="rotate(-14 50 37)"/><rect x="44" y="11" width="40" height="46" rx="6" class="O" transform="rotate(-3 64 34)"/><g class="mv"><rect x="56" y="10" width="40" height="46" rx="6" class="A" transform="rotate(9 76 33)"/><text x="76" y="42" text-anchor="middle" font-size="26" class="P" transform="rotate(9 76 33)">?</text></g><path d="M18 22 l4 4 M22 22 l-4 4" class="S idle"/>',
+  practice:'<circle cx="44" cy="38" r="25" class="A"/><circle cx="44" cy="38" r="18" class="P"/><circle cx="44" cy="38" r="11" class="A"/><circle cx="44" cy="38" r="4.5" class="P"/><g class="mv"><g transform="translate(44 38) rotate(-32)"><path d="M8 0 H50" class="S" style="stroke:var(--ink);stroke-width:3"/><path d="M0 0 L11 -5.5 L11 5.5 Z" class="K"/><path d="M41 0 L52 0 L59 -8 L48 -8 Z M41 0 L52 0 L59 8 L48 8 Z" class="G" style="stroke:var(--panel);stroke-width:1"/></g></g><circle cx="100" cy="54" r="2.5" class="G idle"/><circle cx="16" cy="12" r="3" class="G idle"/>',
+  cards:'<rect x="30" y="14" width="40" height="46" rx="6" class="O" transform="rotate(-14 50 37)"/><rect x="44" y="11" width="40" height="46" rx="6" class="O" transform="rotate(-3 64 34)"/><g class="mv"><g transform="rotate(9 76 33)"><rect x="56" y="10" width="40" height="46" rx="6" class="A"/><text x="76" y="33" text-anchor="middle" dominant-baseline="central" font-size="26" class="P">?</text></g></g><path d="M18 22 l4 4 M22 22 l-4 4" class="S idle"/>',
   blitz:'<circle cx="46" cy="38" r="22" class="O"/><rect x="41" y="8" width="10" height="7" rx="2" class="A"/><path d="M46 38 L46 24 M46 38 L56 44" class="S" style="stroke:var(--ink)"/><g class="mv idle"><path d="M84 4 L68 34 H80 L72 62 L98 26 H85 L93 4 Z" class="G" style="stroke:var(--panel);stroke-width:2"/></g>',
-  survival:'<g class="idle"><path d="M14 30 C14 20 28 18 30 28 C32 18 46 20 46 30 C46 42 30 50 30 56 C30 50 14 42 14 30 Z" class="R"/></g><path d="M44 26 C44 16 58 14 60 24 C62 14 76 16 76 26 C76 38 60 46 60 52 C60 46 44 38 44 26 Z" class="R"/><g class="mv"><path d="M74 30 C74 20 88 18 90 28 C92 18 106 20 106 30 C106 42 90 50 90 56 C90 50 74 42 74 30 Z" class="O" style="stroke:var(--rose)"/></g>',
-  sprint:'<path d="M10 24 H30 M6 34 H26 M12 44 H28" class="S idle"/><g class="mv"><rect x="36" y="8" width="58" height="44" rx="12" class="A"/><path d="M50 50 L46 62 L60 51 Z" class="A"/><text x="65" y="42" text-anchor="middle" font-size="30" class="P" lang="ja">語</text></g><circle cx="102" cy="50" r="3" class="G"/><circle cx="108" cy="40" r="2" class="G"/>',
-  match:'<path d="M8 58 Q34 52 52 36" class="S" style="stroke-width:6;opacity:.35"/><path d="M14 60 Q38 50 54 38" class="S" style="stroke-width:3;opacity:.6"/><g class="mv"><circle cx="66" cy="30" r="21" class="A"/><text x="66" y="40" text-anchor="middle" font-size="26" class="P" lang="ja">字</text></g><path d="M98 40 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" class="G idle"/><circle cx="24" cy="16" r="3" class="G"/>',
-  pairs:'<g class="mv"><rect x="14" y="12" width="38" height="46" rx="7" class="A" transform="rotate(-6 33 35)"/><text x="33" y="45" text-anchor="middle" font-size="26" class="P" lang="ja" transform="rotate(-6 33 35)">山</text></g><rect x="68" y="12" width="38" height="46" rx="7" class="O" transform="rotate(6 87 35)"/><text x="87" y="41" text-anchor="middle" font-size="13" class="K" lang="ja" transform="rotate(6 87 35)">やま</text><path d="M52 34 h16" class="S idle" style="stroke-dasharray:3 4"/>',
-  lab:'<path d="M50 8 h20 M54 8 v18 L36 58 Q34 62 40 62 H80 Q86 62 84 58 L66 26 V8" class="O"/><path d="M44 46 H76 L83 58 Q84 61 80 61 H40 Q36 61 37 58 Z" class="A"/><text x="60" y="58" text-anchor="middle" font-size="13" class="P" lang="ja">漢</text><circle cx="58" cy="36" r="3" class="A idle"/><circle cx="66" cy="30" r="2" class="A idle"/><path d="M94 40 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" class="G"/>'
+  survival:'<g transform="translate(-6 0)"><g class="idle"><path d="M14 30 C14 20 28 18 30 28 C32 18 46 20 46 30 C46 42 30 50 30 56 C30 50 14 42 14 30 Z" class="R"/></g><path d="M44 26 C44 16 58 14 60 24 C62 14 76 16 76 26 C76 38 60 46 60 52 C60 46 44 38 44 26 Z" class="R"/><g class="mv"><path d="M74 30 C74 20 88 18 90 28 C92 18 106 20 106 30 C106 42 90 50 90 56 C90 50 74 42 74 30 Z" class="O" style="stroke:var(--rose)"/></g></g>',
+  sprint:'<path d="M10 24 H30 M6 34 H26 M12 44 H28" class="S idle"/><g class="mv"><rect x="36" y="8" width="58" height="44" rx="12" class="A"/><path d="M50 50 L46 62 L60 51 Z" class="A"/><text x="65" y="30" text-anchor="middle" dominant-baseline="central" font-size="28" class="P" lang="ja">語</text></g><circle cx="102" cy="50" r="3" class="G"/><circle cx="108" cy="40" r="2" class="G"/>',
+  match:'<g transform="translate(-5 0)"><g class="mv"><rect x="10" y="14" width="42" height="42" rx="9" class="A"/><text x="31" y="35" text-anchor="middle" dominant-baseline="central" font-size="27" class="P" lang="ja">字</text></g><path d="M56 35 H64 M61 31.5 L64.5 35 L61 38.5" class="S" style="stroke:var(--soft);stroke-width:2.5"/><rect x="69" y="8" width="34" height="14" rx="7" class="O" style="stroke:var(--line)"/><path d="M77 15 H95" class="S" style="stroke:var(--line);stroke-width:3"/><rect x="69" y="28" width="34" height="14" rx="7" class="O" style="stroke:var(--ok);fill:var(--okTint)"/><text x="81" y="35" text-anchor="middle" dominant-baseline="central" font-size="10.5" class="K" lang="ja">じ</text><circle cx="95" cy="35" r="5" style="fill:var(--ok)"/><path d="M92.6 35.1 L94.4 36.9 L97.6 33.4" class="S" style="stroke:var(--panel);stroke-width:1.6"/><rect x="69" y="48" width="34" height="14" rx="7" class="O" style="stroke:var(--line)"/><path d="M77 55 H95" class="S" style="stroke:var(--line);stroke-width:3"/></g>',
+  pairs:'<g transform="translate(-6 0)"><g class="mv"><g transform="rotate(-6 33 35)"><rect x="14" y="12" width="38" height="46" rx="7" class="A"/><text x="33" y="35" text-anchor="middle" dominant-baseline="central" font-size="24" class="P" lang="ja">山</text></g></g><g transform="rotate(6 87 35)"><rect x="68" y="12" width="38" height="46" rx="7" class="O"/><text x="87" y="35" text-anchor="middle" dominant-baseline="central" font-size="13" class="K" lang="ja">やま</text></g><path d="M52 34 h16" class="S idle" style="stroke-dasharray:3 4"/></g>',
+  lab:'<path d="M50 8 h20 M54 8 v18 L36 58 Q34 62 40 62 H80 Q86 62 84 58 L66 26 V8" class="O"/><path d="M44 46 H76 L83 58 Q84 61 80 61 H40 Q36 61 37 58 Z" class="A"/><text x="60" y="53.5" text-anchor="middle" dominant-baseline="central" font-size="12" class="P" lang="ja">漢</text><circle cx="58" cy="36" r="3" class="A idle"/><circle cx="66" cy="30" r="2" class="A idle"/><path d="M94 40 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" class="G"/>'
 };
 function art(g){ return '<svg viewBox="0 0 120 70" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">'+ART[g]+'</svg>'; }
 function card(mode, name, sub, acc){
@@ -223,7 +233,7 @@ function home(){
     '<section aria-labelledby="h-jp"><div class="sh"><h2 id="h-jp">Japanese</h2><span class="small muted" lang="ja">日本語</span></div>'+
     '<div class="games">'+
       card("sprint","Word Sprint","Word → meaning"+b(jb.sprint),"a1")+
-      card("match","Kanji Match","Deflect the spells"+b(jb.match),"a2")+
+      card("match","Kanji Match","Beat the clock"+b(jb.match),"a2")+
       card("pairs","Pair Up","Kanji ↔ reading"+b(jb.pairs, " s"),"a3")+
       '<a class="gc a4" href="../labs/kanji.html"><span class="art">'+art("lab")+'</span><span class="nm">Kanji Lab</span><span class="sub">Your missed cards</span><span class="pl" aria-hidden="true">→</span></a>'+
     '</div></section>'+
@@ -262,8 +272,8 @@ function topicsDlg(then){
   var body = '<p class="small muted">Lesson games ask questions from the units you tick. Your choice is remembered for next time.</p>'+
     order.map(function(tid, gi){
       var t = ICA.tracks[tid] || {name:tid, icon:""}, list = groups[tid], open = anyOn ? cnt(tid) > 0 : (st.tracks.length ? st.tracks.indexOf(tid) > -1 : gi === 0);
-      return '<div class="tg"><div class="tgh"><button class="tog" data-tog="'+tid+'" aria-expanded="'+open+'" aria-controls="up-'+tid+'"><span class="chev" aria-hidden="true">▶</span><span aria-hidden="true">'+(t.icon||"")+'</span><span>'+esc(t.name)+'</span></button>'+
-        '<span class="n" data-cnt="'+tid+'">'+cnt(tid)+'/'+list.length+'</span><button class="btn" data-all="'+tid+'" aria-label="All '+esc(t.name)+' units">All</button><button class="btn" data-none="'+tid+'" aria-label="No '+esc(t.name)+' units">None</button></div>'+
+      return '<div class="tg"><div class="tgh"><button type="button" class="tog" data-tog="'+tid+'" aria-expanded="'+open+'" aria-controls="up-'+tid+'"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 L10.5 8 L6 12.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="ic" aria-hidden="true">'+(t.icon||"")+'</span><span class="tn">'+esc(t.name)+'</span></button>'+
+        '<span class="n" data-cnt="'+tid+'">'+cnt(tid)+'/'+list.length+'</span><label class="gall" title="All or none"><input type="checkbox" data-grp="'+tid+'" aria-label="All '+esc(t.name)+' units"></label></div>'+
         '<div class="unitpick" id="up-'+tid+'"'+(open ? '' : ' hidden')+'>'+list.map(function(u){ return '<label><input type="checkbox" data-unit="'+u.id+'" data-tr="'+tid+'"'+(picked.indexOf(u.id) > -1 ? " checked" : "")+'>'+esc(u.title)+'</label>'; }).join("")+'</div></div>';
     }).join("");
   var go = then ? '<button class="btn primary" data-r="start" id="tstart">Start '+esc(LNAME[then])+'</button>' : '<button class="btn primary" data-r="done" id="tstart">Done</button>';
@@ -272,19 +282,21 @@ function topicsDlg(then){
     if (r === "start" && then && pool().length) setTimeout(function(){ launch(then); }, 0);
   }, click:function(e){
     var t = e.target.closest("[data-tog]");
-    if (t){ var on = t.getAttribute("aria-expanded") !== "true"; t.setAttribute("aria-expanded", on); document.getElementById("up-"+t.getAttribute("data-tog")).hidden = !on; return; }
-    t = e.target.closest("[data-all],[data-none]"); if (!t) return;
-    var all = t.hasAttribute("data-all"), tid = t.getAttribute(all ? "data-all" : "data-none");
-    ICA.$$('[data-tr="'+tid+'"]', d).forEach(function(cb){ cb.checked = all; var id = cb.getAttribute("data-unit"); picked = picked.filter(function(x){ return x !== id; }); if (all) picked.push(id); });
-    sync();
+    if (t){ var on = t.getAttribute("aria-expanded") !== "true"; t.setAttribute("aria-expanded", on); document.getElementById("up-"+t.getAttribute("data-tog")).hidden = !on; }
   }});
+  /* the group checkbox ticks or clears the whole group (it shows "some" as indeterminate) */
+  function groupAll(tid, all){
+    ICA.$$('[data-tr="'+tid+'"]', d).forEach(function(cb){ cb.checked = all; var id = cb.getAttribute("data-unit"); picked = picked.filter(function(x){ return x !== id; }); if (all) picked.push(id); });
+  }
   function sync(){
-    order.forEach(function(tid){ d.querySelector('[data-cnt="'+tid+'"]').textContent = cnt(tid)+"/"+groups[tid].length; });
+    order.forEach(function(tid){ var c = cnt(tid), n = groups[tid].length, g = d.querySelector('[data-grp="'+tid+'"]');
+      d.querySelector('[data-cnt="'+tid+'"]').textContent = c+"/"+n; g.checked = c === n; g.indeterminate = c > 0 && c < n; });
     rememberPick(); var n = pool().length;
     d.querySelector("#tsum").textContent = n ? n+" question"+(n === 1 ? "" : "s") : "Tick at least one unit";
     if (then) d.querySelector("#tstart").disabled = !n;
   }
-  d.addEventListener("change", function(e){ var t = e.target.closest("[data-unit]"); if (!t) return; var id = t.getAttribute("data-unit"); if (t.checked){ if (picked.indexOf(id) < 0) picked.push(id); } else picked = picked.filter(function(x){ return x !== id; }); sync(); });
+  d.addEventListener("change", function(e){ var g = e.target.closest("[data-grp]"); if (g){ groupAll(g.getAttribute("data-grp"), g.checked); sync(); return; }
+    var t = e.target.closest("[data-unit]"); if (!t) return; var id = t.getAttribute("data-unit"); if (t.checked){ if (picked.indexOf(id) < 0) picked.push(id); } else picked = picked.filter(function(x){ return x !== id; }); sync(); });
   sync();
 }
 
@@ -297,7 +309,7 @@ var HOW = {
   blitz:["As many right answers as you can in <b>60 seconds</b>.","Answers flash green or red, then the next one appears.","Explanations wait until the end."],
   survival:["You have <b>three hearts</b>. Each wrong answer costs one.","Read the explanation, then tap <b>Next</b>.","How long can you last?"],
   sprint:["A Japanese word appears: tap its English meaning.","<b>60 seconds</b>. Right answers in a row build a streak bonus; answering within 2 seconds adds a quick bonus.","Misses go to the Kanji Lab for review."],
-  match:["Each kanji is a spell flying at Mugi. Pick the right reading before the gold bar runs out.","A miss or a timeout costs a heart; you have three.","Faster answers score a <b>Perfect</b> bonus."],
+  match:["Pick the right reading before the gold bar runs out.","Seconds left on the bar are banked as bonus points.","A streak of right answers scores more, and speeds the bar up.","You have <b>three hearts</b>: a miss or a timeout costs one."],
   pairs:["Six kanji and six readings are face up.","Tap a kanji, then its reading (or the other way round). Each reading fits only one kanji on the board.","Clear the board fast with few slips for three stars."]
 };
 function howSeen(g){ var a = ICA.load().arcade; return !!(a.howSeen && a.howSeen[g]); }
@@ -457,13 +469,13 @@ function setup(g){
   if (j.level === "missed" && nMiss < 4){ j.level = "N5"; ICA.save(); }
   app.innerHTML = '<div class="stack">'+gbar(G.name, false)+
     '<div class="gc '+ACC[g]+'" style="pointer-events:none;box-shadow:none" aria-hidden="true"><span class="art" style="height:96px;border:0">'+art(g)+'</span></div>'+
-    '<div class="card stack"><b id="lvl-l">Level</b><div class="seg" role="group" aria-labelledby="lvl-l">'+JG.LEVELS.map(function(l){
+    '<div class="card stack setup"><div class="sg"><b id="lvl-l">Level</b><div class="segs" role="group" aria-labelledby="lvl-l">'+JG.LEVELS.map(function(l){
       var dis = l === "missed" && nMiss < 4;
       return '<button data-lv="'+l+'" aria-pressed="'+(j.level === l ? "true" : "false")+'"'+(dis ? " disabled" : "")+'>'+esc(LV[l])+(l === "missed" ? " ("+nMiss+")" : "")+'</button>'; }).join("")+'</div>'+
-    (g === "match" ? '<b id="dir-l">Direction</b><div class="seg" role="group" aria-labelledby="dir-l">'+[["kr","Kanji → reading"],["rk","Reading → kanji"],["mix","Mixed"]].map(function(d){ return '<button data-dir="'+d[0]+'" aria-pressed="'+((j.dir||"kr") === d[0] ? "true" : "false")+'">'+d[1]+'</button>'; }).join("")+'</div>' : '')+
-    (nMiss < 4 ? '<p class="small muted">“My missed ones” opens once you have missed 4 or more.</p>' : '')+
+    (nMiss < 4 ? '<p class="small muted" style="margin:0">“My missed ones” opens once you have missed 4 or more.</p>' : '')+'</div>'+
+    (g === "match" ? '<div class="sg"><b id="dir-l">Direction</b><div class="segs" role="group" aria-labelledby="dir-l">'+[["kr","Kanji → reading"],["rk","Reading → kanji"],["mix","Mixed"]].map(function(d){ return '<button data-dir="'+d[0]+'" aria-pressed="'+((j.dir||"kr") === d[0] ? "true" : "false")+'">'+d[1]+'</button>'; }).join("")+'</div></div>' : '')+
     '<div class="row"><button class="btn primary" id="start">Start</button></div></div></div>';
-  app.querySelector(".seg").onclick = function(e){ var t = e.target.closest("[data-lv]"); if (!t || t.disabled) return; j.level = t.getAttribute("data-lv"); ICA.save(); ICA.$$("[data-lv]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); };
+  app.querySelector(".segs").onclick = function(e){ var t = e.target.closest("[data-lv]"); if (!t || t.disabled) return; j.level = t.getAttribute("data-lv"); ICA.save(); ICA.$$("[data-lv]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); };
   ICA.$$("[data-dir]").forEach(function(t){ t.onclick = function(){ j.dir = t.getAttribute("data-dir"); ICA.save(); ICA.$$("[data-dir]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); }; });
   var st = document.getElementById("start"); st.focus();
   st.onclick = function(){ var p = JG.pool(G.kind, j.level, j); if (p.length < 4){ ICA.toast("Not enough cards at this level yet."); return; } launch(g); };
@@ -490,7 +502,7 @@ function jpEnd(g, score, unit, sub, missed, level, stars, lowerBetter){
   var j = jp(), prev = j.best[g], isBest = level !== "missed" && score > 0 && (prev == null || (lowerBetter ? score < prev : score > prev));
   if (isBest){ j.best[g] = score; ICA.save(); }
   var mood = stars >= 3 ? "yay" : stars === 2 ? "hello" : missed.length ? "oops" : "think";
-  var say = stars >= 3 ? "Brilliant! Mugi is safe and sparkling." : stars === 2 ? "Nice work. A few more rounds and it’s three stars." : "Every miss is a card you’ll know next time.";
+  var say = stars >= 3 ? "Brilliant! Mugi is cheering you on." : stars === 2 ? "Nice work. A few more rounds and it’s three stars." : "Every miss is a card you’ll know next time.";
   app.innerHTML = '<div class="stack">'+resultsBar(g)+'<div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">'+esc(GAMES[g].name)+' · '+esc(LV[level])+'</div>'+
     '<div class="stars" aria-label="'+stars+' of 3 stars">'+"★★★".slice(0, stars)+'<span style="opacity:.25">'+"★★★".slice(0, 3-stars)+'</span></div>'+
     '<div class="big">'+score+(unit ? '<span style="font-size:.4em"> '+esc(unit)+'</span>' : '')+'</div><p>'+esc(sub)+'</p>'+(isBest ? '<span class="chip done">New personal best</span>' : '')+
@@ -528,41 +540,41 @@ function sprint(gm, pool, level){
 
 /* ---------- Kanji Match ---------- */
 function match(gm, pool, level){
-  var j = jp(), deck = ICA.shuffle(pool), i = 0, score = 0, streak = 0, bestStreak = 0, lives = 3, right = 0, missed = [], SPELL = 9000, tId = null, spellT = SPELL, deadline = 0, remain = null, to = null;
+  var j = jp(), deck = ICA.shuffle(pool), i = 0, score = 0, streak = 0, bestStreak = 0, lives = 3, right = 0, missed = [], BAR = 9000, tId = null, barT = BAR, deadline = 0, remain = null, to = null;
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   gm.innerHTML = '<div class="stack">'+hudJP('<span class="hearts" id="hp" aria-label="3 hearts left">❤️❤️❤️</span>')+'<div class="stage" id="stg"></div><div id="ch"></div></div>';
   timerId = 1; // marks the game running
-  function stopSpell(){ if (tId){ clearTimeout(tId); tId = null; } remain = null; }
-  cur.stop = stopSpell;
-  /* the spell clock pauses while a dialog (help, quit?) is open */
+  function stopBar(){ if (tId){ clearTimeout(tId); tId = null; } remain = null; }
+  cur.stop = stopBar;
+  /* the clock bar pauses while a dialog (help, quit?) is open */
   function arm(ms){
     var sp = document.getElementById("sp");
-    if (paused){ remain = ms; if (sp && !reduce){ sp.style.transition = "none"; sp.style.transform = "scaleX("+(ms/spellT)+")"; } return; }
+    if (paused){ remain = ms; if (sp && !reduce){ sp.style.transition = "none"; sp.style.transform = "scaleX("+(ms/barT)+")"; } return; }
     remain = null; deadline = Date.now() + ms;
     if (sp && !reduce){ sp.style.transition = "transform "+ms+"ms linear"; sp.style.transform = "scaleX(0)"; }
     tId = setTimeout(function(){ tId = null; if (timerId && document.getElementById("stg") && to) to(); }, ms);
   }
   cur.pause = function(){ if (!tId) return; clearTimeout(tId); tId = null; var ms = Math.max(0, deadline - Date.now()); arm(ms); };
   cur.resume = function(){ if (remain != null) arm(remain); };
-  function end(){ stopSpell(); timerId = null; jpEnd("match", score, "pts", right+" spells deflected · longest streak "+bestStreak, missed, level, right >= 25 ? 3 : right >= 12 ? 2 : right ? 1 : 0); }
+  function end(){ stopBar(); timerId = null; jpEnd("match", score, "pts", right+" right · longest streak "+bestStreak, missed, level, right >= 25 ? 3 : right >= 12 ? 2 : right ? 1 : 0); }
   function next(){
     var stg = document.getElementById("stg"), ch = document.getElementById("ch"); if (!stg || !ch || !timerId) return;
     if (i >= deck.length) deck = deck.concat(ICA.shuffle(pool));
     var it = deck[i++], dir = j.dir === "mix" ? (Math.random() < .5 ? "kr" : "rk") : (j.dir || "kr"), q = JG.kanjiQ(it, dir);
-    spellT = Math.max(4500, SPELL - streak*150);
-    stg.innerHTML = '<div class="qtext">'+(dir === "kr" ? (q.readType === "on" ? "Pick an on reading (katakana)" : "Pick a kun reading (hiragana)") : "Which kanji has this reading?")+'</div><div class="glyph'+(dir === "rk" ? " rd" : "")+'" lang="ja">'+esc(q.prompt)+'</div><div class="spell" aria-hidden="true"><i id="sp"></i></div>';
+    barT = Math.max(4500, BAR - streak*150);   // a streak speeds the bar up
+    stg.innerHTML = '<div class="qtext">'+(dir === "kr" ? (q.readType === "on" ? "Pick an on reading (katakana)" : "Pick a kun reading (hiragana)") : "Which kanji has this reading?")+'</div><div class="glyph'+(dir === "rk" ? " rd" : "")+'" lang="ja">'+esc(q.prompt)+'</div><div class="tbar" aria-hidden="true"><i id="sp"></i></div>';
     ch.innerHTML = choiceHTML(q);
     var sp = document.getElementById("sp");
     if (!reduce){ sp.style.transition = "none"; sp.style.transform = "scaleX(1)"; void sp.offsetWidth; }
-    var t0 = Date.now();
     to = bindChoices(ch, q, function(ok){
-      stopSpell(); if (!timerId) return;
-      if (ok){ right++; streak++; bestStreak = Math.max(bestStreak, streak); var quick = Date.now() - t0 < spellT/3, pts = 10 + Math.min(streak-1, 5)*2 + (quick ? 5 : 0); score += pts; floatTxt(stg, quick ? "Perfect! +"+pts : "+"+pts); juice(stg, "jg-pulse"); beep(streak % 5 === 0 ? "combo" : "ok"); if (level === "missed"){ JG.cleared(ICA.load(), it.key); ICA.save(); } }
+      var left = remain != null ? remain : Math.max(0, deadline - Date.now());
+      stopBar(); if (!timerId) return;
+      if (ok){ right++; streak++; bestStreak = Math.max(bestStreak, streak); var bank = Math.floor(left/1000), pts = 10 + Math.min(streak-1, 5)*2 + bank; score += pts; floatTxt(stg, "+"+pts+(bank ? " · "+bank+" s banked" : "")); juice(stg, "jg-pulse"); beep(streak % 5 === 0 ? "combo" : "ok"); if (level === "missed"){ JG.cleared(ICA.load(), it.key); ICA.save(); } }
       else { streak = 0; lives--; recordMiss(missed, it); juice(stg, "jg-shake"); beep("no"); var hp = document.getElementById("hp"); hp.textContent = lives > 0 ? new Array(lives+1).join("❤️") : "💔"; hp.setAttribute("aria-label", lives+" hearts left"); }
       document.getElementById("sc").textContent = score; showCombo(streak);
       setTimeout(function(){ if (!timerId) return; if (lives <= 0) end(); else next(); }, ok ? 420 : 1300);
     });
-    arm(spellT);
+    arm(barT);
   }
   next();
 }
