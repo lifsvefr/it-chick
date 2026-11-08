@@ -233,7 +233,7 @@ ICA.settingsSheet = function(o){
     '<details><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
     '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, every lab’s progress (including Kanji Lab reviews), tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
     (o.progress ? '<div class="row"><button class="btn small ghost" id="goprogress">See my progress</button></div>' : '')+
-    '<p class="small muted">Version: Pass 16 · four tracks, three electives, six labs · Japanese Foundations N5–N4 · Kanji Lab · Forge · Mugi.</p>', function(sh){
+    '<p class="small muted">Version: Pass 16 · four tracks, three electives, six labs · Japanese Foundations N5–N4 · Kanji Lab · Printer · Mugi.</p>', function(sh){
     sh.setAttribute("aria-label", "Settings"); sh.id = "settingspanel";
     sh.addEventListener("click", function(e){
       var b = e.target.closest("[data-set]");
