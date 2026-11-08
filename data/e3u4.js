@@ -726,7 +726,7 @@ ICA.addUnit({
      ]
     },
     related:["radicals","on-and-kun-readings","n5-kanji","japanese-writing-system"],
-    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"文化庁『ぶんかる』: 常用漢字表は，どのように決められたか (Agency for Cultural Affairs, 2016, on the 2010 list of 2,136 kanji)", url:"https://www.bunka.go.jp/prmagazine/rensai/kotoba/kotoba_010.html"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/license.html"}],
+    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"文化庁『ぶんかる』: 常用漢字表は，どのように決められたか (Agency for Cultural Affairs, 2016, on the 2010 list of 2,136 kanji)", url:"https://www.bunka.go.jp/prmagazine/rensai/kotoba/kotoba_010.html"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
 
    {id:"radicals", title:"Radicals and components (部首)", aka:["部首","bushu","radical","kanji parts"], tags:["japanese","kanji","dictionaries"],
@@ -806,7 +806,7 @@ ICA.addUnit({
      ]
     },
     related:["how-kanji-work","on-and-kun-readings","n5-vocabulary","jlpt-overview"],
-    sources:[{t:"EDRDG licence statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/license.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"KanjiVG (stroke order data)", url:"https://kanjivg.tagaini.net/"}],
+    sources:[{t:"EDRDG licence statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"KanjiVG (stroke order data)", url:"https://kanjivg.tagaini.net/"}],
     checked:"2026-11"},
 
    {id:"n5-vocabulary", title:"N5 vocabulary", aka:["N5 words","JLPT N5 vocabulary","core vocabulary"], tags:["japanese","vocabulary","jlpt","n5"],

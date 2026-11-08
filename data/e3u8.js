@@ -763,7 +763,7 @@ ICA.addUnit({
       "**Kana for grammar words.** When 事, 物, 時 and 方 are grammar words rather than real things, they are usually written in kana: 〜ことができる, 〜ものです, 〜とき. Reading N4 texts means expecting both."
      ]},
     related:["n5-kanji","kanji-by-component","n4-vocabulary","jlpt-overview","on-and-kun-readings"],
-    sources:[{t:"JLPT: N1–N5 level summary", url:"https://www.jlpt.jp/e/about/levelsummary.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"EDRDG licence statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/license.html"}],
+    sources:[{t:"JLPT: N1–N5 level summary", url:"https://www.jlpt.jp/e/about/levelsummary.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"EDRDG licence statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
    {id:"kanji-by-component", title:"Learning kanji by their parts", aka:["Kanji components","Meaning and sound parts","Kanji families"], tags:["japanese","kanji","radicals","n4"],
     summary:"How meaning parts (such as 氵 and 亻) and sound parts (such as 寺 and 主) group N4 kanji into families, and where the hints fail.",
@@ -790,7 +790,7 @@ ICA.addUnit({
       "**Memory stories.** Stories built from parts are useful, but they are not etymology. Use them freely for memory; for the history of a character, use a good kanji dictionary."
      ]},
     related:["radicals","how-kanji-work","n4-kanji","dictionary-skills"],
-    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"KanjiVG: kanji stroke order and components", url:"https://kanjivg.tagaini.net/"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/license.html"}],
+    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"KanjiVG: kanji stroke order and components", url:"https://kanjivg.tagaini.net/"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
    {id:"n4-vocabulary", title:"N4 vocabulary", aka:["JLPT N4 words","N4 word list"], tags:["japanese","vocabulary","jlpt","n4"],
     summary:"How N4 words are built (kanji words, する verbs, verb pairs, homophones) and how to learn the roughly 700 words in the Kanji Lab’s N4 deck.",
@@ -869,7 +869,7 @@ ICA.addUnit({
       "**Phones.** On a phone, a dictionary website or a trusted dictionary app works everywhere; copy a word and paste it in. Handwriting keyboards for Japanese exist on many phones, but names and settings differ by device ({{japanese-reading-tools}})."
      ]},
     related:["japanese-reading-tools","kanji-by-component","radicals","reading-n4-texts"],
-    sources:[{t:"10ten Japanese Reader (GitHub)", url:"https://github.com/birchill/10ten-ja-reader"},{t:"Yomitan (GitHub)", url:"https://github.com/yomidevs/yomitan"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/license.html"}],
+    sources:[{t:"10ten Japanese Reader (GitHub)", url:"https://github.com/birchill/10ten-ja-reader"},{t:"Yomitan (GitHub)", url:"https://github.com/yomidevs/yomitan"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
    {id:"n4-study-plan", title:"An N4 study plan", aka:["Studying for the JLPT N4","N4 daily routine"], tags:["japanese","study","jlpt","n4"],
     summary:"A daily routine for N4 kanji and words in the Kanji Lab, reading at your level, and the JLPT N4 sections and scoring.",
