@@ -153,6 +153,15 @@ KL.rate = function(ks, key, r, today){
   return c;
 };
 
+/* mark a card as known well (box 4: back in two weeks), or send it back to learning (due now) */
+KL.markKnown = function(ks, key, on, today){
+  var c = ks.c[key] || {b:0, n:0};
+  if (on){ c.b = Math.max(c.b || 0, 4); c.d = today + KL.BOX_DAYS[c.b] * KL.DAY; }
+  else { c.b = 1; c.d = today; }
+  ks.c[key] = c; return c;
+};
+KL.isKnown = function(ks, key){ var c = ks.c[key]; return !!(c && c.b >= 3); };
+
 /* ---------- romaji ---------- */
 /* NFKC first: a Japanese keyboard in full-width mode types ｓｈｉ */
 KL.cleanRomaji = function(s){ s = String(s || ""); if (s.normalize) s = s.normalize("NFKC"); return s.toLowerCase().replace(/[\s　]+/g, "").replace(/[’‘`]/g, "'"); };

@@ -56,7 +56,8 @@ a.deck:hover{border-color:var(--lupine)}
 .typein{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center}
 .typein input{font:inherit;font-size:22px;width:min(220px,100%);padding:9px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);text-align:center}
 .typein input:focus{outline:none;border-color:var(--lupine)}
-.rate{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.rate{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (min-width:520px){.rate{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .rate button{display:grid;gap:2px;padding:10px 6px;justify-items:center}
 .rate small{font-weight:400;color:var(--soft);font-size:.78em}
 .rate .btn.primary small{color:var(--bg)}
@@ -165,7 +166,7 @@ function deckView(id){
   h += n ? '<div class="row"><button class="btn primary" id="start">Start today’s review ('+plural(n, "card")+')</button></div>'
          : '<div class="card stack"><b>All done for today 🎉</b><span class="small">'+(c.fresh ? 'You’ve had today’s new cards. ' : 'You’ve met every card in this deck. ')+'Reviews come back on their own schedule, so come back tomorrow.</span>'+(c.fresh ? '<div class="row"><button class="btn small" id="extra">Learn 5 more new cards now</button></div>' : '')+'</div>';
   h += '<div class="row small"><span>New cards a day (each deck):</span><div class="seg3" role="group" aria-label="New cards a day">'+KL.NEW_CHOICES.map(function(v){ return '<button type="button" data-nw="'+v+'" aria-pressed="'+(s.set.nw === v)+'">'+v+'</button>'; }).join("")+'</div></div>';
-  h += '<details class="how"><summary>Browse the deck ('+plural(c.seen, "card")+' started)</summary><p class="small muted" style="margin:6px 0">Tap any card to see it. Gold border: learning; green: known well.'+(dk.kind === "vocab" ? ' A dashed border marks a news word.' : '')+'</p><div class="browse'+(dk.kind === "vocab" ? " words" : "")+'">'+dk.items.map(function(it){
+  h += '<details class="how browsebox"><summary>Browse the deck ('+plural(c.seen, "card")+' started)</summary><p class="small muted" style="margin:6px 0">Tap any card to see it, or to mark it known well. Gold border: learning; green: known well.'+(dk.kind === "vocab" ? ' A dashed border marks a news word.' : '')+'</p><div class="browse'+(dk.kind === "vocab" ? " words" : "")+'">'+dk.items.map(function(it){
     var cc = s.c[it.key], lab = it.kind === "kana" ? it.q : it.kind === "kanji" ? it.c : it.w;
     return '<button type="button" data-show="'+esc(it.key)+'" lang="ja" class="'+(cc ? "b" + cc.b : "")+(it.nw ? " nw" : "")+'"'+(it.nw ? ' title="News word"' : '')+'>'+esc(lab)+'</button>';
   }).join("")+'</div></details>';
@@ -266,8 +267,9 @@ function answer(i){
     '<div><b>How well did you know it?</b></div><div class="rate">'+
     '<button class="btn'+(ok ? '' : ' primary')+'" data-r="0" aria-keyshortcuts="a">Again<small>Back tomorrow</small></button>'+
     '<button class="btn'+(ok ? ' primary' : '')+'" data-r="1" aria-keyshortcuts="g">Good<small>'+esc(KL.when(c, 1))+'</small></button>'+
-    '<button class="btn" data-r="2" aria-keyshortcuts="e">Easy<small>'+esc(KL.when(c, 2))+'</small></button></div>'+
-    '<p class="keyhint">A Again · G Good · E Easy</p>'+
+    '<button class="btn" data-r="2" aria-keyshortcuts="e">Easy<small>'+esc(KL.when(c, 2))+'</small></button>'+
+    '<button class="btn" data-r="3" aria-keyshortcuts="k">Known well<small>Back in '+KL.BOX_DAYS[Math.max((c && c.b) || 0, 4)]+' days</small></button></div>'+
+    '<p class="keyhint">A Again · G Good · E Easy · K Known well</p>'+
     '<button type="button" class="report" id="rep">Report a mistake on this card</button></div>';
   var af = document.getElementById("after"); af.innerHTML = h;
   var pri = af.querySelector(".rate .primary"); if (pri) pri.focus({preventScroll:true});
@@ -276,12 +278,14 @@ function answer(i){
 function rate(r){
   if (!S || !S.answered) return;
   var key = S.queue[S.i], s = ks();
-  KL.rate(s, key, r, today()); ICA.save();
+  if (r === 3){ var isNew = !s.c[key]; KL.markKnown(s, key, true, today()); if (isNew){ var it3 = KL.items[key], x = s.nd[it3.deck]; if (!x || x.d !== today()) x = s.nd[it3.deck] = {d:today(), n:0}; x.n++; } }
+  else KL.rate(s, key, r, today());
+  ICA.save();
   if (r === 0 && !S.again[key]){ S.again[key] = 1; S.queue.push(key); }
   S.done++; S.i++;
   if (S.i < S.queue.length){ show(); window.scrollTo(0, 0); return; }
   var id = S.deck, c = KL.counts(ks(), id, Date.now(), today());
-  app.innerHTML = '<div class="stack"><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">Session done</div><div class="big2">'+S.done+'</div><p>cards reviewed. Each one comes back when it’s due: soon if it was tricky, later if it was easy.</p><p class="small muted">Known well in this deck: '+c.learned+' of '+c.total+'</p><div class="row" style="justify-content:center"><a class="btn primary" href="#'+id+'" id="backdeck">Back to the deck</a><a class="btn" href="#">All decks</a></div></div></div>';
+  app.innerHTML = '<div class="stack"><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">Session done</div><div class="big2">'+S.done+'</div><p>cards reviewed. Each one comes back when it’s due: soon if it was tricky, later if it was easy.</p><p class="small muted">Known well in this deck: '+c.learned+' of '+c.total+'</p><div class="row" style="justify-content:center"><button type="button" class="btn primary" id="backdeck" data-deck="'+id+'">Back to the deck</button><a class="btn" href="#">All decks</a></div></div></div>';
   S = null;
   document.getElementById("backdeck").focus();
   window.scrollTo(0, 0);
@@ -294,11 +298,12 @@ app.addEventListener("click", function(e){
   if ((t = e.target.closest("[data-r]"))){ rate(+t.getAttribute("data-r")); return; }
   if (e.target.closest("#check")){ answer(0); return; }
   if (e.target.closest("#reveal")){ answer(null); return; }
+  if ((t = e.target.closest("#backdeck"))){ S = null; deckView(t.getAttribute("data-deck")); return; }
   if (e.target.closest("#start")){ startSession(location.hash.slice(1)); return; }
   if (e.target.closest("#extra")){ startSession(location.hash.slice(1), true); return; }
   if (e.target.closest("#rep") && S){ var it = S.q.item; ICA.report("Kanji Lab · " + KL.deckById[it.deck].t + " · " + (it.c || it.w || it.q)); return; }
   if ((t = e.target.closest("[data-nw]"))){ var s = ks(); s.set.nw = +t.getAttribute("data-nw"); ICA.save(); deckView(location.hash.slice(1)); var b = app.querySelector('[data-nw="'+s.set.nw+'"]'); if (b) b.focus(); return; }
-  if ((t = e.target.closest("[data-show]"))){ var it2 = KL.items[t.getAttribute("data-show")]; ICA.sheet('<h2>'+esc(it2.kind === "kanji" ? "Kanji" : it2.kind === "kana" ? "Kana" : "Word")+'</h2>'+fullCard(it2)); return; }
+  if ((t = e.target.closest("[data-show]"))){ showBrowse(t.getAttribute("data-show")); return; }
 });
 app.addEventListener("keydown", function(e){
   if (e.target.id === "ro" && (e.key === "Enter" || e.key === " ")){ e.preventDefault(); if (!S.answered) answer(e.target.value.trim() ? 0 : null); }
@@ -312,10 +317,22 @@ document.addEventListener("keydown", function(e){
     else if (k === " " && !(e.target.closest && e.target.closest("button,a"))){ e.preventDefault(); answer(null); }
     else if (k === " " && e.target.id === "reveal"){ /* the button handles it */ }
   } else {
-    var r = {a:0, g:1, e:2}[k];
+    var r = {a:0, g:1, e:2, k:3}[k];
     if (r !== undefined){ e.preventDefault(); rate(r); }
   }
 });
+/* browsing: the full card, with a button to mark it known well (or send it back to learning) */
+function showBrowse(key){
+  var it = KL.items[key], known = KL.isKnown(ks(), key);
+  ICA.sheet('<h2>'+esc(it.kind === "kanji" ? "Kanji" : it.kind === "kana" ? "Kana" : "Word")+'</h2>'+fullCard(it)+
+    '<div class="row" style="margin-top:12px"><button type="button" class="btn'+(known ? '' : ' primary')+'" id="kmark">'+(known ? 'Not so sure: review it again' : '✓ I know this well')+'</button></div>'+
+    '<p class="small muted">'+(known ? 'Known well: it comes back for a check every few weeks.' : 'Marking it known well skips the learning steps; it still comes back for a check in two weeks.')+'</p>');
+  var b = document.getElementById("kmark");
+  if (b) b.addEventListener("click", function(){
+    KL.markKnown(ks(), key, !known, today()); ICA.save(); ICA.closeSheet();
+    var id = location.hash.slice(1); if (KL.deckById[id]){ deckView(id); var d = app.querySelector("details.browsebox"); if (d) d.open = true; var bt = app.querySelector('[data-show="'+key.replace(/"/g, '\\"')+'"]'); if (bt){ bt.scrollIntoView({block:"center"}); bt.focus({preventScroll:true}); } }
+  });
+}
 function route(){
   var id = location.hash.slice(1);
   S = null;
