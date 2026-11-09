@@ -172,6 +172,11 @@ label.lb{font-weight:700;font-size:.9em}
 .orderlist li{display:flex;gap:8px;align-items:center;border:1.5px solid var(--line);background:var(--bg);border-radius:11px;padding:7px 8px}
 .orderlist li .n{font-family:var(--mono);font-weight:700;color:var(--soft);min-width:20px;text-align:center}
 .orderlist li .tx{flex:1;min-width:0}
+.orderlist li{cursor:pointer;user-select:none;-webkit-user-select:none;transition:background .15s,border-color .15s}
+.orderlist li.placed{border-color:var(--lupine)} .orderlist li.placed .n{color:var(--lupine)}
+.orderlist li:focus-visible{outline:2px solid var(--lupine);outline-offset:2px}
+.orderlist li .grip{touch-action:none;cursor:grab;font-size:1.25em;line-height:1;color:var(--soft);padding:8px 6px;margin:-6px -4px -6px 0}
+.orderlist li.dragging{position:relative;z-index:2;box-shadow:0 6px 18px rgba(0,0,0,.18);cursor:grabbing;transition:none}
 .orderlist li.right{border-color:var(--ok);background:var(--okTint)} .orderlist li.wrong{border-color:var(--bad);background:var(--badTint)}
 .mv{border:1px solid var(--line);background:var(--panel);border-radius:8px;width:34px;height:34px}
 .matchgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}

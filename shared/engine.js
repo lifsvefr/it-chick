@@ -525,33 +525,73 @@ RENDER.sort = function(el, ex, api){
   draw();
 };
 
-/* --- put steps in order (move up / down) --- */
+/* --- put steps in order: tap the steps first to last, or drag them by the handle --- */
 RENDER.order = function(el, ex, api){
-  var n = ex.items.length, cur;
+  var n = ex.items.length, cur, k = 0;   // k = how many steps have been placed at the top
   do { cur = ICA.shuffle(ex.items.map(function(x, i){ return i; })); } while (n > 1 && cur.every(function(v, i){ return v === i; }));
-  el.innerHTML = head(ex)+'<div class="small muted">Use the arrows to move each step. The top is first.</div><ol class="orderlist"></ol><div class="row"><button type="button" class="btn primary" data-check>Check order</button></div><div class="fbw"></div>';
-  var ol = el.querySelector(".orderlist"), fbw = el.querySelector(".fbw");
+  el.innerHTML = head(ex)+'<div class="small muted">Tap the steps from first to last, or drag them by ⠿. Tap a numbered step to undo it.</div><ol class="orderlist"></ol><div class="row"><button type="button" class="btn primary" data-check>Check order</button><button type="button" class="btn small" data-reset>Start over</button></div><div class="fbw"></div>';
+  var ol = el.querySelector(".orderlist"), fbw = el.querySelector(".fbw"), done = function(){ return api.state.solved; };
   function draw(marks){
-    ol.innerHTML = cur.map(function(v, pos){ return '<li data-v="'+v+'" class="'+(marks ? (v === pos ? "right" : "wrong") : "")+'"><span class="n">'+(pos+1)+'</span><span class="tx">'+ICA.md(ex.items[v].t)+'</span><button type="button" class="mv" data-up="'+pos+'" aria-label="Move up"'+(pos===0||api.state.solved?" disabled":"")+'>▲</button><button type="button" class="mv" data-down="'+pos+'" aria-label="Move down"'+(pos===n-1||api.state.solved?" disabled":"")+'>▼</button></li>'; }).join("");
+    ol.innerHTML = cur.map(function(v, pos){
+      var placed = pos < k;
+      return '<li data-v="'+v+'" data-pos="'+pos+'" class="'+(placed ? "placed " : "")+(marks ? (v === pos ? "right" : "wrong") : "")+'" tabindex="0" role="button" aria-label="'+ICA.esc(ex.items[v].t.replace(/\[([^\]]+)\]\{[^}]*\}/g, "$1"))+(placed ? ", step "+(pos+1) : ", not placed yet")+'"><span class="n">'+(placed ? pos+1 : "·")+'</span><span class="tx">'+ICA.md(ex.items[v].t)+'</span>'+(done() ? "" : '<span class="grip" aria-hidden="true">⠿</span>')+'</li>';
+    }).join("");
+    el.querySelector("[data-reset]").hidden = done() || k === 0;
   }
-  ol.addEventListener("click", function(e){
-    var u = e.target.closest("[data-up]"), d = e.target.closest("[data-down]"), p, t;
-    if (u){ p = +u.getAttribute("data-up"); t = cur[p-1]; cur[p-1] = cur[p]; cur[p] = t; }
-    else if (d){ p = +d.getAttribute("data-down"); t = cur[p+1]; cur[p+1] = cur[p]; cur[p] = t; }
-    else return;
-    fbw.innerHTML = ""; draw();
-    var focusSel = u ? '[data-up="'+(p-1)+'"]' : '[data-down="'+(p+1)+'"]', f = ol.querySelector(focusSel) || ol.querySelector(u ? '[data-down="'+(p-1)+'"]' : '[data-up="'+(p+1)+'"]'); if (f) f.focus();
+  function changed(){ fbw.innerHTML = ""; draw(); }
+  function move(from, to){ var v = cur.splice(from, 1)[0]; cur.splice(to, 0, v); }
+  function tapRow(pos){
+    if (done()) return;
+    if (pos >= k){ move(pos, k); k++; }            // place it next
+    else { move(pos, k - 1); k--; }               // take it back out
+    changed(); var f = ol.children[Math.min(k, n - 1)]; if (f && document.activeElement && ol.contains(document.activeElement)) f.focus();
+  }
+  ol.addEventListener("click", function(e){ if (e.target.closest(".grip") || dragged) return; var li = e.target.closest("li"); if (li) tapRow(+li.getAttribute("data-pos")); });
+  ol.addEventListener("keydown", function(e){
+    var li = e.target.closest("li"); if (!li || done()) return; var p = +li.getAttribute("data-pos");
+    if (e.key === "Enter" || e.key === " "){ e.preventDefault(); tapRow(p); }
+    else if ((e.key === "ArrowUp" && p > 0) || (e.key === "ArrowDown" && p < n - 1)){
+      e.preventDefault(); var q = e.key === "ArrowUp" ? p - 1 : p + 1; move(p, q); k = Math.max(k, Math.max(p, q) + 1); changed(); ol.children[q].focus();
+    }
   });
+  /* drag by the handle (mouse, pen or finger) */
+  var drag = null, dragged = false;
+  ol.addEventListener("pointerdown", function(e){
+    var g = e.target.closest(".grip"); if (!g || done()) return;
+    var li = g.closest("li"); e.preventDefault(); dragged = false;
+    drag = {li: li, y0: e.clientY, top0: li.offsetTop, id: e.pointerId};
+    try { g.setPointerCapture(e.pointerId); } catch(x){}
+    li.classList.add("dragging");
+  });
+  ol.addEventListener("pointermove", function(e){
+    if (!drag || e.pointerId !== drag.id) return;
+    var li = drag.li, want = drag.top0 + (e.clientY - drag.y0), mid = want + li.offsetHeight/2;
+    if (Math.abs(e.clientY - drag.y0) > 4) dragged = true;
+    var prev = li.previousElementSibling, next = li.nextElementSibling;
+    if (prev && mid < prev.offsetTop + prev.offsetHeight/2) ol.insertBefore(li, prev);
+    else if (next && mid > next.offsetTop + next.offsetHeight/2) ol.insertBefore(next, li);
+    li.style.transform = "translateY(" + (want - li.offsetTop) + "px)";
+  });
+  function endDrag(){
+    if (!drag) return; var li = drag.li; drag = null; li.style.transform = ""; li.classList.remove("dragging");
+    if (dragged){
+      var order = ICA.$$("li", ol).map(function(x){ return +x.getAttribute("data-v"); });
+      if (order.join() !== cur.join()){ cur = order; var at = order.indexOf(+li.getAttribute("data-v")); k = Math.max(k, at + 1); }
+      changed();
+    }
+    setTimeout(function(){ dragged = false; }, 0);
+  }
+  ol.addEventListener("pointerup", endDrag); ol.addEventListener("pointercancel", endDrag);
+  el.querySelector("[data-reset]").addEventListener("click", function(){ k = 0; changed(); });
   el.querySelector("[data-check]").addEventListener("click", function(){
     var ok = cur.every(function(v, i){ return v === i; });
-    draw(true);
-    if (ok){ fbw.innerHTML = fbBox("ok", "Right order.", ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : ""); api.attempt(true); this.disabled = true; draw(true); return; }
-    api.attempt(false);
+    if (ok){ api.attempt(true); this.disabled = true; k = n; draw(true); fbw.innerHTML = fbBox("ok", "Right order.", ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : ""); return; }
+    api.attempt(false); draw(true);
     var first = -1; cur.forEach(function(v, i){ if (first < 0 && v !== i) first = i; });
     var should = ex.items[first];
     fbw.innerHTML = fbBox("no", "Not in order yet.", "<div>Step "+(first+1)+" should be <b>"+ICA.md(should.t)+"</b>. "+ICA.md(should.why||"")+"</div>"+(api.state.tries >= 2 ? '<div class="row"><button type="button" class="btn small" data-show>Show the correct order</button></div>' : ""));
     var sb = fbw.querySelector("[data-show]");
-    if (sb) sb.addEventListener("click", function(){ cur = ex.items.map(function(x, i){ return i; }); api.solved(false); draw(true); fbw.innerHTML = fbBox("part", "Here’s the correct order.", lis(ex.items.map(function(it){ return "<b>"+ICA.md(it.t)+"</b>"+(it.why ? ": "+ICA.md(it.why) : ""); }))); });
+    if (sb) sb.addEventListener("click", function(){ cur = ex.items.map(function(x, i){ return i; }); k = n; api.solved(false); draw(true); fbw.innerHTML = fbBox("part", "Here’s the correct order.", lis(ex.items.map(function(it){ return "<b>"+ICA.md(it.t)+"</b>"+(it.why ? ": "+ICA.md(it.why) : ""); }))); });
   });
   draw();
 };
