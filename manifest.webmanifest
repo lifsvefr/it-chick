@@ -4,7 +4,7 @@
  "description": "A free learning ecosystem for digital, data and research skills, starting from zero.",
  "start_url": "./",
  "scope": "./",
- "id": "./",
+ "id": "it-chick-academy",
  "display": "standalone",
  "background_color": "#3b2419",
  "theme_color": "#3b2419",
