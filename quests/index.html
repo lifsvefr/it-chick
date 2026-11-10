@@ -125,7 +125,7 @@ function readingSheet(l, first){
 function partDone(l, k){
   var s = ICA.lessonState(l.id);
   if (k === "learn") return !!s.learn;
-  if (k === "try") return ICA.required(l).every(function(x){ return s.tries[x.id]; });
+  if (k === "try") return (l.try||[]).every(function(x){ return s.tries[x.id]; });
   if (k === "apply") return !!s.applyDone;
   if (k === "check") return !!s.check;
   return false;
@@ -171,12 +171,12 @@ function renderPart(l){
     h += s.learn ? nextPartBtn(l,"learn") : '<div class="lessonnav"><span class="small muted">'+(l.guide ? "Done with the guide?" : "Finished reading?")+'</span><button class="btn primary" data-readdone>'+(l.guide ? "Done. On to Try →" : "I’ve read this. On to Try →")+'</button></div>';
     el.innerHTML = h;
   } else if (curPart === "try"){
-    var n = ICA.required(l).length, done = ICA.required(l).filter(function(x){ return s.tries[x.id]; }).length;
+    var n = (l.try||[]).length, done = (l.try||[]).filter(function(x){ return s.tries[x.id]; }).length;
     el.innerHTML = '<p class="muted">Practice with instant feedback. Wrong answers explain what went wrong, and there’s no penalty for trying again.</p><p class="small"><b id="trycount">'+done+'</b> of '+n+' done</p><div id="tries" class="stack"></div><div id="trynav"></div>';
     var box = document.getElementById("tries");
     (l.try||[]).forEach(function(ex){
       var d = document.createElement("div"); box.appendChild(d);
-      ICA.exercise(d, ex, {onSolved:function(first){ s.tries[ex.id] = first ? 1 : 2; ICA.save(); var c = ICA.required(l).filter(function(x){ return s.tries[x.id]; }).length; document.getElementById("trycount").textContent = c; if (c === n){ document.getElementById("trynav").innerHTML = nextPartBtn(l,"try"); maybeComplete(l); markTabs(l); } }});
+      ICA.exercise(d, ex, {onSolved:function(first){ s.tries[ex.id] = first ? 1 : 2; ICA.save(); var c = (l.try||[]).filter(function(x){ return s.tries[x.id]; }).length; document.getElementById("trycount").textContent = c; if (c === n){ document.getElementById("trynav").innerHTML = nextPartBtn(l,"try"); maybeComplete(l); markTabs(l); } }});
     });
     if (done === n) document.getElementById("trynav").innerHTML = nextPartBtn(l,"try");
   } else if (curPart === "apply"){
@@ -231,7 +231,7 @@ function deck(l, el){
   var s = ICA.lessonState(l.id), cards = buildDeck(l), i = Math.min(s.card || 0, cards.length - 1);
   el.innerHTML = '<div class="deck"><div class="deckbar"><div class="bar" aria-hidden="true"><i id="dkbar"></i></div><button data-view="page">Show as one page</button></div><div id="dkcard"></div><div class="deknav"><button class="btn" id="dkprev">← Back</button><span class="pos" id="dkpos"></span><button class="btn primary" id="dknext">Next →</button></div></div>';
   var box = document.getElementById("dkcard");
-  function nTries(){ return ICA.required(l).filter(function(x){ return !s.tries[x.id]; }).length; }
+  function nTries(){ return (l.try || []).filter(function(x){ return !s.tries[x.id]; }).length; }
   function show(k, dir){
     i = Math.max(0, Math.min(cards.length - 1, k)); s.card = i; ICA.save();
     var c = cards[i], h = "";

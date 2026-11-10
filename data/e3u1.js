@@ -553,8 +553,7 @@ ICA.addUnit({
       "Many learners make two rhythm mistakes: they **shorten** long vowels and ん, and they **skip** the pause of small っ. Both are easy to fix with a simple habit: tap a finger or clap once per mora as you say a new word. If your taps and the kana don’t match, slow down.",
       {tip:"Don’t make every beat the same pitch and volume like a robot. The beats are equal in **length**; the melody comes from pitch, which is the next topic."}
     ]},
-    {h:"Bonus: pitch accent, high and low", body:[
-      "**This part is optional.** Pitch accent isn’t tested in the JLPT, and most textbooks barely mention it. Read it for interest; the exercises on it are marked Bonus and don’t count towards finishing the lesson, and it never appears in Check, the Arcade or reviews.",
+    {h:"Pitch accent: high and low", body:[
       "English marks the important part of a word with **stress**: a louder, longer, higher syllable, as in “**pho**tograph” versus “pho**to**graphy” (see [[word-stress]]). Japanese works differently. Each mora is either **high** or **low** in pitch, like two notes on a piano, and loudness hardly changes. This is called **[[pitch-accent-term|pitch accent]]** (アクセント in Japanese).",
       "What matters most is where the pitch **drops** from high to low. A word has **at most one drop**, and some words have none. The drop is the word’s accent. In standard Tokyo Japanese:",
       {list:[
@@ -613,19 +612,19 @@ ICA.addUnit({
       {t:"おばあさん (*obāsan*)", why:"お・ば・あ・さ・ん: five morae, because the long *ā* takes two beats."},
       {t:"しゃしん (*shashin*)", why:"しゃ・し・ん: three morae. The small ゃ joins し into one beat."}
     ]},
-    {id:"e3u1-l5-x3", bonus:true, type:"match", q:"Match each pitch-accent pattern (standard Tokyo Japanese) to its description.", pairs:[
+    {id:"e3u1-l5-x3", type:"match", q:"Match each pitch-accent pattern (standard Tokyo Japanese) to its description.", pairs:[
       ["[平板]{へいばん} heiban [0]","Low, then high with no drop; a particle after it stays high","Heiban means “flat”: after the first rise there is no drop, as in [飴]{あめ} (candy)."],
       ["[頭高]{あたまだか} atamadaka [1]","High on the first mora, then a drop","Atamadaka means “head-high”, as in [雨]{あめ} (rain): あ high, め low."],
       ["[中高]{なかだか} nakadaka","Low, up, then a drop inside the word","Nakadaka means “middle-high”, as in [日本]{にほん} (*Nihon*): に low, ほ high, ん low."],
       ["[尾高]{おだか} odaka","Low, then high up to the last mora; the drop falls on the particle","Odaka means “tail-high”, as in [橋]{はし} (bridge): the drop shows on が."]
     ]},
-    {id:"e3u1-l5-x4", bonus:true, type:"mcq", q:"In standard Tokyo Japanese, someone says はしが with the melody high–low–low. Which word did they say?", options:[
+    {id:"e3u1-l5-x4", type:"mcq", q:"In standard Tokyo Japanese, someone says はしが with the melody high–low–low. Which word did they say?", options:[
       {t:"[箸]{はし} (chopsticks)", ok:true, why:"Right. [箸]{はし} is head-high (*atamadaka*): は high, し low, and the particle stays low."},
       {t:"[橋]{はし} (bridge)", why:"[橋]{はし} is low–high, then the particle drops: low–high–low."},
       {t:"[端]{はし} (edge)", why:"[端]{はし} is flat (*heiban*): low–high, and the particle stays high: low–high–high."},
       {t:"You can’t tell from pitch at all", why:"In Tokyo Japanese you can: each of the three has its own melody when a particle follows."}
     ]},
-    {id:"e3u1-l5-x5", bonus:true, type:"sort", q:"Sort these words by their pitch pattern in standard Tokyo Japanese.", buckets:["Head-high [1]: high first, then a drop","Flat [0]: low first, then high, no drop"], items:[
+    {id:"e3u1-l5-x5", type:"sort", q:"Sort these words by their pitch pattern in standard Tokyo Japanese.", buckets:["Head-high [1]: high first, then a drop","Flat [0]: low first, then high, no drop"], items:[
       {t:"[雨]{あめ} (rain)", b:0, why:"[雨]{あめ} starts high and drops: あ high, め low."},
       {t:"[飴]{あめ} (candy)", b:1, why:"[飴]{あめ} is flat: あ low, め high, and a particle stays high."},
       {t:"[箸]{はし} (chopsticks)", b:0, why:"[箸]{はし} is head-high: は high, し low."},
@@ -635,13 +634,13 @@ ICA.addUnit({
       {t:"[牡蠣]{かき} (oyster)", b:0, why:"[牡蠣]{かき} is head-high: か high, き low."},
       {t:"[柿]{かき} (persimmon)", b:1, why:"[柿]{かき} is flat: か low, き high."}
     ]},
-    {id:"e3u1-l5-x6", bonus:true, type:"mcq", q:"Said on their own, without a particle, how do [橋]{はし} (bridge) and [端]{はし} (edge) sound in standard Tokyo Japanese?", options:[
+    {id:"e3u1-l5-x6", type:"mcq", q:"Said on their own, without a particle, how do [橋]{はし} (bridge) and [端]{はし} (edge) sound in standard Tokyo Japanese?", options:[
       {t:"The same: both low–high. The difference appears on a following particle.", ok:true, why:"Right. [橋]{はし} is tail-high and [端]{はし} is flat; alone, both go low–high. After [橋]{はし} the particle drops; after [端]{はし} it stays high."},
       {t:"Different: [橋]{はし} is high–low and [端]{はし} is low–high", why:"High–low is [箸]{はし} (chopsticks), not [橋]{はし}. [橋]{はし} starts low."},
       {t:"Different: [橋]{はし} is louder", why:"Japanese pitch accent is about high and low pitch, not loudness."},
       {t:"The same, and no particle can tell them apart", why:"A particle can: が after [橋]{はし} drops low, but after [端]{はし} it stays high."}
     ]},
-    {id:"e3u1-l5-x7", bonus:true, type:"spot", q:"Here are a learner’s notes on Japanese sounds. Tap the statements that are wrong.", ask:"is wrong", parts:[
+    {id:"e3u1-l5-x7", type:"spot", q:"Here are a learner’s notes on Japanese sounds. Tap the statements that are wrong.", ask:"is wrong", parts:[
       {t:"Japanese pitch accent is about high and low pitch, not loudness.", flag:false, why:"Correct: each mora is high or low; loudness hardly changes."},
       " ",{t:"Every Japanese dialect uses the same pitch patterns.", flag:true, why:"Wrong. Kansai Japanese has a different accent system, and some dialects don’t distinguish words by pitch at all."},
       " ",{t:"In Tokyo Japanese, [雨]{あめ} (rain) starts high.", flag:false, why:"Correct: [雨]{あめ} is head-high, あ high and め low."},
@@ -662,7 +661,7 @@ ICA.addUnit({
    ]
   }
   ],
-  checkpoint:["e3u1-q02","e3u1-q05","e3u1-q09","e3u1-q12","e3u1-q15","e3u1-q21","e3u1-q23","e3u1-q30","e3u1-q34","e3u1-q38","e3u1-q39","e3u1-q45"],
+  checkpoint:["e3u1-q02","e3u1-q05","e3u1-q09","e3u1-q12","e3u1-q15","e3u1-q21","e3u1-q23","e3u1-q30","e3u1-q34","e3u1-q38","e3u1-q42","e3u1-q45"],
   codex:[
     {id:"japanese-writing-system", title:"The Japanese writing system", aka:["three scripts","kanji, hiragana and katakana","日本語の文字"], tags:["japanese","writing","foundations"],
      summary:"Japanese mixes three scripts in one text: kanji for meaning, hiragana for grammar and native words, katakana for loanwords and names, with romaji for typing and signs.",
@@ -1081,22 +1080,22 @@ ICA.addUnit({
       {t:"2", why:"You probably skipped the small っ, which takes a full beat."},
       {t:"4", why:"You probably counted the small ょ separately; ちょ is one beat."},
       {t:"5", why:"There are only four kana, and ちょ counts as one beat."}]},
-    {id:"e3u1-q40", bonus:true, lesson:"e3u1-l5", level:1, q:"Japanese pitch accent is mainly about…", options:[
+    {id:"e3u1-q40", lesson:"e3u1-l5", level:1, q:"Japanese pitch accent is mainly about…", options:[
       {t:"high and low pitch, especially where it drops", ok:true, why:"Each mora is high or low; the accent is where the pitch falls."},
       {t:"how loudly a syllable is said", why:"Loudness is a big part of English stress, but not of Japanese pitch accent."},
       {t:"how long a vowel is", why:"Vowel length is a separate feature (long and short vowels)."},
       {t:"which vowel is used", why:"Vowel quality doesn’t change with the accent."}]},
-    {id:"e3u1-q41", bonus:true, lesson:"e3u1-l5", level:2, q:"In standard Tokyo Japanese, what is the pitch of [雨]{あめ} (*ame*, rain)?", options:[
+    {id:"e3u1-q41", lesson:"e3u1-l5", level:2, q:"In standard Tokyo Japanese, what is the pitch of [雨]{あめ} (*ame*, rain)?", options:[
       {t:"High–low", ok:true, why:"[雨]{あめ} is head-high (*atamadaka*): あ high, め low."},
       {t:"Low–high, with a following particle staying high", why:"That is [飴]{あめ} (candy), which is flat (*heiban*)."},
       {t:"Low–high, with a following particle dropping", why:"That is the tail-high pattern, as in [橋]{はし} (bridge)."},
       {t:"Both morae equally high", why:"In Tokyo Japanese the first two morae of a word usually differ in pitch."}]},
-    {id:"e3u1-q42", bonus:true, lesson:"e3u1-l5", level:3, q:"A speaker of standard Tokyo Japanese says はなが, and the が is lower than the な before it. Is she talking about a flower ([花]{はな}) or a nose ([鼻]{はな})?", options:[
+    {id:"e3u1-q42", lesson:"e3u1-l5", level:3, q:"A speaker of standard Tokyo Japanese says はなが, and the が is lower than the な before it. Is she talking about a flower ([花]{はな}) or a nose ([鼻]{はな})?", options:[
       {t:"A flower: [花]{はな} is tail-high, so the particle after it drops", ok:true, why:"[花]{はな} is [2]: は low, な high, が low. After [鼻]{はな} [0], が stays high."},
       {t:"A nose: [鼻]{はな} always drops on the particle", why:"[鼻]{はな} is flat [0]: the particle after it stays high."},
       {t:"You can’t tell: they sound identical", why:"Alone they do; the particle tells them apart."},
       {t:"Neither: はな has no pitch accent", why:"Every Tokyo word has a pattern, including the flat one."}]},
-    {id:"e3u1-q43", bonus:true, lesson:"e3u1-l5", level:3, q:"Fatima’s friend from Osaka says some words with a different melody from the Tokyo patterns in her textbook. What is the best explanation?", options:[
+    {id:"e3u1-q43", lesson:"e3u1-l5", level:3, q:"Fatima’s friend from Osaka says some words with a different melody from the Tokyo patterns in her textbook. What is the best explanation?", options:[
       {t:"Kansai Japanese has its own accent system; both are correct in their own dialect", ok:true, why:"Accent differs between dialects. Learner materials teach the standard, Tokyo-based accent."},
       {t:"Her friend is making mistakes", why:"Dialect accents are not mistakes; they are different systems."},
       {t:"The textbook must be wrong", why:"The textbook teaches standard Tokyo-based accent, which is correct for standard Japanese."},
