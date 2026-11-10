@@ -287,7 +287,7 @@ dl.keyterms dd{margin:0 0 4px;color:var(--soft)}
 .deskhead{display:flex;justify-content:space-between;align-items:baseline;margin:22px 0 4px}
 /* ---------- lesson cards ---------- */
 .deck{display:grid;gap:12px}
-.deckbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center}
+.deckbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center}
 .deckbar .bar{height:8px}
 .deckbar button{font-size:.85em;background:none;border:0;color:var(--soft);text-decoration:underline;padding:4px}
 .card.lcard{padding:16px;border-radius:18px;min-height:46vh;display:grid;align-content:start;gap:10px;touch-action:pan-y}

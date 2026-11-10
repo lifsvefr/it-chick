@@ -229,7 +229,7 @@ function buildDeck(l){
 }
 function deck(l, el){
   var s = ICA.lessonState(l.id), cards = buildDeck(l), i = Math.min(s.card || 0, cards.length - 1);
-  el.innerHTML = '<div class="deck"><div class="deckbar"><div class="bar" aria-hidden="true"><i id="dkbar"></i></div><button data-view="page">Show as one page</button></div><div id="dkcard"></div><div class="deknav"><button class="btn" id="dkprev">← Back</button><span class="pos" id="dkpos"></span><button class="btn primary" id="dknext">Next →</button></div></div>';
+  el.innerHTML = '<div class="deck"><div class="deckbar"><button id="dkstart" title="Back to the first card">⇤ Start</button><div class="bar" aria-hidden="true"><i id="dkbar"></i></div><button data-view="page">Show as one page</button></div><div id="dkcard"></div><div class="deknav"><button class="btn" id="dkprev">← Back</button><span class="pos" id="dkpos"></span><button class="btn primary" id="dknext">Next →</button></div></div>';
   var box = document.getElementById("dkcard");
   function nTries(){ return (l.try || []).filter(function(x){ return !s.tries[x.id]; }).length; }
   function show(k, dir){
@@ -252,7 +252,7 @@ function deck(l, el){
       s.learn = 1; ICA.save(); markTabs(l);
       var left = nTries();
       h = ICA.mugi("yay", '<p><b>You finished the cards! 🎉</b></p><p class="small">'+(left ? "There "+(left === 1 ? "is 1 practice question" : "are "+left+" practice questions")+" left, then a short quiz." : "Next: try it for real, then a short quiz.")+'</p>', {cls:"mpop"}) +
-        '<div class="stack">'+(left ? '<button class="btn primary" data-go="try">Practice ('+left+' left) →</button>' : '')+'<button class="btn'+(left ? '' : ' primary')+'" data-go="apply">Apply it in your world →</button><button class="btn" data-go="check">Quiz yourself →</button></div>';
+        '<div class="stack">'+(left ? '<button class="btn primary" data-go="try">Practice ('+left+' left) →</button>' : '')+'<button class="btn'+(left ? '' : ' primary')+'" data-go="apply">Apply it in your world →</button><button class="btn" data-go="check">Quiz yourself →</button><button class="btn" id="dkagain">↺ Go through the cards again</button></div>';
     }
     box.innerHTML = '<div class="card lcard">'+h+'</div>';
     if (c.k === "ex"){
@@ -264,11 +264,14 @@ function deck(l, el){
     document.getElementById("dkbar").style.width = (100 * i / (cards.length - 1)) + "%";
     document.getElementById("dkpos").textContent = (i + 1) + " / " + cards.length;
     document.getElementById("dkprev").disabled = i === 0;
+    document.getElementById("dkstart").style.visibility = i === 0 ? "hidden" : "visible";
+    var ag = document.getElementById("dkagain"); if (ag) ag.onclick = function(){ show(0, -1); };
     var nx = document.getElementById("dknext"); nx.style.visibility = i === cards.length - 1 ? "hidden" : "visible";
     nx.textContent = i === 0 ? "Let’s go →" : i === cards.length - 2 ? "Finish ✓" : "Next →";
     if (dir) { var top = el.getBoundingClientRect().top + window.scrollY - 70; if (window.scrollY > top) window.scrollTo(0, top); }
   }
   document.getElementById("dkprev").onclick = function(){ show(i - 1, -1); };
+  document.getElementById("dkstart").onclick = function(){ show(0, -1); };
   document.getElementById("dknext").onclick = function(){ show(i + 1, 1); };
   box.addEventListener("click", function(e){ var b = e.target.closest("[data-hook]"); if (b){ s.hook = +b.getAttribute("data-hook"); ICA.save(); show(i); } });
   var x0 = null, y0 = null;
