@@ -87,6 +87,11 @@ a.deck:hover{border-color:var(--lupine)}
 .nwchip{background:var(--goldTint);color:var(--gold);font-weight:700}
 .browse button.b3,.browse button.b4,.browse button.b5{border-color:var(--ok);background:var(--okTint)}
 .browse.words button{font-size:1em}
+.browse button.sel{outline:3px solid var(--lupine);outline-offset:1px}
+.selbar{position:sticky;bottom:8px;z-index:5;display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 10px;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.selbar .n{font-weight:700;margin-right:auto}
+.fullrun{display:grid;gap:8px}
+.knowrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .credit{font-size:.82em;color:var(--soft);border-top:1px solid var(--line);padding-top:10px;display:grid;gap:4px}
 details.how,div.how{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
 details.how summary,details.more summary{font-weight:700;cursor:pointer}
@@ -166,10 +171,13 @@ function deckView(id){
   h += n ? '<div class="row"><button class="btn primary" id="start">Start today’s review ('+plural(n, "card")+')</button></div>'
          : '<div class="card stack"><b>All done for today 🎉</b><span class="small">'+(c.fresh ? 'You’ve had today’s new cards. ' : 'You’ve met every card in this deck. ')+'Reviews come back on their own schedule, so come back tomorrow.</span>'+(c.fresh ? '<div class="row"><button class="btn small" id="extra">Learn 5 more new cards now</button></div>' : '')+'</div>';
   h += '<div class="row small"><span>New cards a day (each deck):</span><div class="seg3" role="group" aria-label="New cards a day">'+KL.NEW_CHOICES.map(function(v){ return '<button type="button" data-nw="'+v+'" aria-pressed="'+(s.set.nw === v)+'">'+v+'</button>'; }).join("")+'</div></div>';
-  h += '<details class="how browsebox"><summary>Browse the deck ('+plural(c.seen, "card")+' started)</summary><p class="small muted" style="margin:6px 0">Tap any card to see it, or to mark it known well. Gold border: learning; green: known well.'+(dk.kind === "vocab" ? ' A dashed border marks a news word.' : '')+'</p><div class="browse'+(dk.kind === "vocab" ? " words" : "")+'">'+dk.items.map(function(it){
+  var fr = s.full && s.full[id], unknown = dk.items.filter(function(it){ return !KL.isKnown(s, it.key); }).length;
+  h += '<div class="card fullrun"><b>Go through every card</b><span class="small">No schedule and no daily limit: see every card in this deck once, in order. Mark the ones you know well as you go, and leave whenever you like; it saves your place.'+(unknown < c.total ? ' Cards already known well are skipped.' : '')+'</span><div class="row">'+
+    (fr && fr.pos > 0 && fr.pos < dk.items.length ? '<button class="btn primary" id="fullgo">Continue (card '+(fr.pos + 1)+' of '+dk.items.length+')</button><button class="btn small" id="fullnew">Start over</button>' : '<button class="btn" id="fullgo">Start a full run ('+plural(unknown, "card")+')</button>')+'</div></div>';
+  h += '<section class="stack browsebox" aria-labelledby="bh"><div class="row" style="justify-content:space-between;align-items:center"><h2 id="bh" style="margin:0">All cards</h2><button type="button" class="btn small" id="selmode" aria-pressed="false">Select several</button></div><p class="small muted" style="margin:0">'+plural(c.seen, "card")+' started. Tap a card to see it and mark it known well, or use <b>Select several</b> to mark many at once. Gold border: learning; green: known well.'+(dk.kind === "vocab" ? ' A dashed border marks a news word.' : '')+'</p><div class="browse'+(dk.kind === "vocab" ? " words" : "")+'">'+dk.items.map(function(it){
     var cc = s.c[it.key], lab = it.kind === "kana" ? it.q : it.kind === "kanji" ? it.c : it.w;
     return '<button type="button" data-show="'+esc(it.key)+'" lang="ja" class="'+(cc ? "b" + cc.b : "")+(it.nw ? " nw" : "")+'"'+(it.nw ? ' title="News word"' : '')+'>'+esc(lab)+'</button>';
-  }).join("")+'</div></details>';
+  }).join("")+'</div><div class="selbar" id="selbar" hidden><span class="n" id="seln">0 selected</span><button type="button" class="btn small" id="selnew">Select all not known</button><button type="button" class="btn small" id="selclear">Clear</button><button type="button" class="btn small primary" id="selmark" disabled>Mark known well</button></div></section>';
   h += CREDIT + '</div>';
   app.innerHTML = h;
   window.scrollTo(0, 0);
@@ -271,6 +279,7 @@ function answer(i){
     '<button class="btn" data-r="3" aria-keyshortcuts="k">Known well<small>Back in '+KL.BOX_DAYS[Math.max((c && c.b) || 0, 4)]+' days</small></button></div>'+
     '<p class="keyhint">A Again · G Good · E Easy · K Known well</p>'+
     '<button type="button" class="report" id="rep">Report a mistake on this card</button></div>';
+  if (S.full) h = h.replace(/<div><b>How well did you know it\?<\/b><\/div>[\s\S]*?<p class="keyhint">[^<]*<\/p>/, '<div><b>Did you know it?</b></div><div class="knowrow"><button class="btn'+(ok ? ' primary' : '')+'" data-f="1">Knew it<small> · known well</small></button><button class="btn'+(ok ? '' : ' primary')+'" data-f="0">Not yet<small> · keep learning</small></button></div><p class="keyhint">K Knew it · N Not yet</p>');
   var af = document.getElementById("after"); af.innerHTML = h;
   var pri = af.querySelector(".rate .primary"); if (pri) pri.focus({preventScroll:true});
   af.scrollIntoView({block:"nearest", behavior:"smooth"});
@@ -303,6 +312,16 @@ app.addEventListener("click", function(e){
   if (e.target.closest("#extra")){ startSession(location.hash.slice(1), true); return; }
   if (e.target.closest("#rep") && S){ var it = S.q.item; ICA.report("Kanji Lab · " + KL.deckById[it.deck].t + " · " + (it.c || it.w || it.q)); return; }
   if ((t = e.target.closest("[data-nw]"))){ var s = ks(); s.set.nw = +t.getAttribute("data-nw"); ICA.save(); deckView(location.hash.slice(1)); var b = app.querySelector('[data-nw="'+s.set.nw+'"]'); if (b) b.focus(); return; }
+  if (e.target.closest("#selmode")){ setSel(!SEL); return; }
+  if ((t = e.target.closest("[data-show]")) && SEL){ var k = t.getAttribute("data-show"); if (SEL[k]) delete SEL[k]; else SEL[k] = 1; t.classList.toggle("sel", !!SEL[k]); t.setAttribute("aria-pressed", !!SEL[k]); selCount(); return; }
+  if (e.target.closest("#selnew") && SEL){ ICA.$$(".browse [data-show]", app).forEach(function(b){ var k = b.getAttribute("data-show"); if (!KL.isKnown(ks(), k)){ SEL[k] = 1; b.classList.add("sel"); b.setAttribute("aria-pressed", true); } }); selCount(); return; }
+  if (e.target.closest("#selclear") && SEL){ SEL = {}; ICA.$$(".browse .sel", app).forEach(function(b){ b.classList.remove("sel"); b.setAttribute("aria-pressed", false); }); selCount(); return; }
+  if (e.target.closest("#selmark") && SEL){ var ss = ks(), td = today(), keys = Object.keys(SEL); keys.forEach(function(k){ KL.markKnown(ss, k, true, td); }); ICA.save(); SEL = null; var did = location.hash.slice(1); deckView(did); ICA.toast && ICA.toast(plural(keys.length, "card")+" marked known well"); var hb = document.getElementById("bh"); if (hb) hb.scrollIntoView({block:"start"}); return; }
+  if (e.target.closest("#fullgo")){ startFull(location.hash.slice(1), false); return; }
+  if (e.target.closest("#fullnew")){ startFull(location.hash.slice(1), true); return; }
+  if (e.target.closest("#fullbreak")){ var d2 = S && S.deck; S = null; if (d2) deckView(d2); return; }
+  if (e.target.closest("#fullknow")){ fullNext(true); return; }
+  if ((t = e.target.closest("[data-f]"))){ fullNext(t.getAttribute("data-f") === "1"); return; }
   if ((t = e.target.closest("[data-show]"))){ showBrowse(t.getAttribute("data-show")); return; }
 });
 app.addEventListener("keydown", function(e){
@@ -317,6 +336,7 @@ document.addEventListener("keydown", function(e){
     else if (k === " " && !(e.target.closest && e.target.closest("button,a"))){ e.preventDefault(); answer(null); }
     else if (k === " " && e.target.id === "reveal"){ /* the button handles it */ }
   } else {
+    if (S.full){ if (k === "k" || k === "n"){ e.preventDefault(); fullNext(k === "k"); } return; }
     var r = {a:0, g:1, e:2, k:3}[k];
     if (r !== undefined){ e.preventDefault(); rate(r); }
   }
@@ -330,12 +350,59 @@ function showBrowse(key){
   var b = document.getElementById("kmark");
   if (b) b.addEventListener("click", function(){
     KL.markKnown(ks(), key, !known, today()); ICA.save(); ICA.closeSheet();
-    var id = location.hash.slice(1); if (KL.deckById[id]){ deckView(id); var d = app.querySelector("details.browsebox"); if (d) d.open = true; var bt = app.querySelector('[data-show="'+key.replace(/"/g, '\\"')+'"]'); if (bt){ bt.scrollIntoView({block:"center"}); bt.focus({preventScroll:true}); } }
+    var id = location.hash.slice(1); if (KL.deckById[id]){ deckView(id); var bt = app.querySelector('[data-show="'+key.replace(/"/g, '\\"')+'"]'); if (bt){ bt.scrollIntoView({block:"center"}); bt.focus({preventScroll:true}); } }
   });
+}
+/* select several cards in the deck view */
+var SEL = null;
+function setSel(on){
+  SEL = on ? {} : null;
+  var b = document.getElementById("selmode"); if (b){ b.setAttribute("aria-pressed", !!on); b.textContent = on ? "Done selecting" : "Select several"; }
+  var bar = document.getElementById("selbar"); if (bar) bar.hidden = !on;
+  ICA.$$(".browse [data-show]", app).forEach(function(x){ x.classList.remove("sel"); if (on) x.setAttribute("aria-pressed", false); else x.removeAttribute("aria-pressed"); });
+  selCount();
+}
+function selCount(){
+  var n = SEL ? Object.keys(SEL).length : 0, el = document.getElementById("seln"), m = document.getElementById("selmark");
+  if (el) el.textContent = n + " selected"; if (m) m.disabled = !n;
+}
+
+/* full run: every card in deck order, no schedule; position saved in ks.full[deck].pos */
+function startFull(id, restart){
+  var s = ks(); s.full = s.full || {}; var fr = s.full[id] = s.full[id] || {pos:0};
+  if (restart || fr.pos >= KL.deckById[id].items.length) fr.pos = 0;
+  ICA.save();
+  S = {deck:id, full:true, done:0, known:0};
+  fullShow();
+}
+function fullShow(){
+  var s = ks(), dk = KL.deckById[S.deck], fr = s.full[S.deck];
+  while (fr.pos < dk.items.length && KL.isKnown(s, dk.items[fr.pos].key)) fr.pos++;
+  if (fr.pos >= dk.items.length){ fullEnd(); return; }
+  var it = dk.items[fr.pos], c = s.c[it.key];
+  S.queue = [it.key]; S.i = 0; S.q = KL.question(it, c ? c.n : 0); S.answered = false; S.ok = null; S.nDue = 0; S.nNew = 0;
+  setTitle(dk.t + " · full run");
+  show();
+  var hud = app.querySelector(".hud");
+  if (hud) hud.innerHTML = '<span>Card '+(fr.pos + 1)+' of '+dk.items.length+'</span><span class="row" style="gap:6px"><button type="button" class="btn small" id="fullknow">I know this: skip</button><button type="button" class="btn small ghost" id="fullbreak">Take a break</button></span>';
+  var ey = app.querySelector(".qcard .eyebrow"); if (ey) ey.textContent = "Full run";
+}
+function fullNext(knew){
+  var s = ks(), dk = KL.deckById[S.deck], fr = s.full[S.deck], key = dk.items[fr.pos].key, td = today();
+  if (knew){ KL.markKnown(s, key, true, td); S.known++; }
+  else if (s.c[key]){ var c = s.c[key]; c.b = 1; c.d = td + KL.DAY; }   // started cards go back to learning; new ones stay new
+  fr.pos++; S.done++; ICA.save();
+  fullShow(); window.scrollTo(0, 0);
+}
+function fullEnd(){
+  var id = S.deck, s = ks(), c = KL.counts(s, id, Date.now(), today()), done = S.done, known = S.known;
+  s.full[id].pos = 0; ICA.save(); S = null;
+  app.innerHTML = '<div class="stack"><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">Full run complete</div><div class="big2">'+done+'</div><p>cards seen this time, '+known+' marked known well. Cards you didn’t know stay in the normal reviews, a few a day.</p><p class="small muted">Known well in this deck: '+c.learned+' of '+c.total+'</p><div class="row" style="justify-content:center"><button type="button" class="btn primary" id="backdeck" data-deck="'+id+'">Back to the deck</button><a class="btn" href="#">All decks</a></div></div></div>';
+  window.scrollTo(0, 0);
 }
 function route(){
   var id = location.hash.slice(1);
-  S = null;
+  S = null; SEL = null;
   if (id && KL.deckById[id]) deckView(id); else home();
 }
 window.addEventListener("hashchange", route);
