@@ -21,7 +21,8 @@ ICA.addUnit = function(u){
 };
 ICA.addCodex = function(list, unit){ list.forEach(function(e){ if(unit && !e.unit) e.unit = unit; ICA.codex[e.id] = e; }); };
 ICA.addTerms = function(list, unit){ list.forEach(function(t){ if(unit && !t.unit) t.unit = unit; ICA.terms[t.id] = t; }); };
-ICA.addBank = function(list, unit){ list.forEach(function(q){ if(unit && !q.unit) q.unit = unit; ICA.bank.push(q); ICA.bankById[q.id] = q; }); };
+ICA.addBank = function(list, unit){ list.forEach(function(q){ if (q.bonus) return; if(unit && !q.unit) q.unit = unit; ICA.bank.push(q); ICA.bankById[q.id] = q; }); };
+ICA.required = function(l){ return (l.try||[]).filter(function(x){ return !x.bonus; }); };
 ICA.lessonBank = function(lessonId){ return ICA.bank.filter(function(q){ return q.lesson === lessonId; }); };
 ICA.unitLessons = function(uid){ var u = ICA.unitById[uid]; return u ? u.lessons : []; };
 
@@ -404,7 +405,7 @@ ICA.topbar = function(title){
    ICA.exercise(el, ex, {onSolved(firstTry), quiz:false})
    ===================================================================== */
 var KIND = {mcq:"Choose", sort:"Sort", order:"Put in order", match:"Match", spot:"Spot it", number:"Work it out"};
-function head(ex){ return '<div class="kind">'+(KIND[ex.type]||"Try")+'</div><div class="q">'+ICA.md(ex.q)+'</div>'+(ex.hint ? '<div class="small muted">'+ICA.md(ex.hint)+'</div>' : ""); }
+function head(ex){ return '<div class="kind">'+(ex.bonus ? 'Bonus · optional · ' : '')+(KIND[ex.type]||"Try")+'</div><div class="q">'+ICA.md(ex.q)+'</div>'+(ex.hint ? '<div class="small muted">'+ICA.md(ex.hint)+'</div>' : ""); }
 function fbBox(cls, title, body){ return '<div class="fb '+cls+'" role="status"><b>'+title+'</b>'+(body||"")+'</div>'; }
 function lis(arr){ return arr.length ? "<ul>"+arr.map(function(x){ return "<li>"+x+"</li>"; }).join("")+"</ul>" : ""; }
 
