@@ -323,3 +323,11 @@ figure.codeblk figcaption{text-align:left}
 .callout.ex pre{overflow-wrap:anywhere;white-space:pre-wrap}
 
 ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
+
+/* audio: ▶ after Japanese examples and Mugi's lines */
+.say{white-space:normal}
+.ttsb{display:inline-flex;align-items:center;justify-content:center;width:1.65em;height:1.65em;min-width:28px;min-height:28px;margin:0 .15em 0 .3em;padding:0;vertical-align:middle;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--lupine);cursor:pointer;font:inherit;line-height:1}
+.ttsb svg{width:58%;height:58%}
+.ttsb:hover{border-color:var(--lupine)}
+.ttsb:focus-visible{outline:2px solid var(--lupine);outline-offset:2px}
+.ttsb.playing{background:var(--lupine);color:var(--panel);border-color:var(--lupine)}

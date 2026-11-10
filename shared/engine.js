@@ -28,7 +28,7 @@ ICA.unitLessons = function(uid){ var u = ICA.unitById[uid]; return u ? u.lessons
 /* ---------- loading data files listed in the catalog ---------- */
 ICA.loadAll = function(base, done, opt){
   ICA.base = base; opt = opt || {};
-  var files = ["data/tracks.js","data/books.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
+  var files = ["data/tracks.js","data/books.js","data/audio-index.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
   var total = files.length, n = 0, failed = [], finished = false, ui = null;
   /* a loading screen appears only if loading takes more than a moment */
   var showT = setTimeout(function(){ if (!finished) ui = ICA.loadingScreen(opt.pixel); upd(); }, 250);
@@ -337,7 +337,7 @@ ICA.settingsSheet = function(o){
   var snd = s.sound || (st.arcade && st.arcade.jp && st.arcade.jp.snd === false ? "off" : "on");
   function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
   ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
-    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+'</div>'+
+    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+'</div>'+
     '<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
     '<h3>Backup</h3><p class="small muted">Without sync, progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details'+(o.openRestore ? ' open' : '')+'><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
@@ -679,6 +679,78 @@ ICA.copy = function(text, done){
 
 ICA.applySettings();
 })();
+
+
+/* ---------- Audio: ▶ buttons for Japanese examples and Mugi's lines ----------
+   data/audio-index.js sets window.ICA_AUDIO = {ja:{text:file}, mugi:{text:file}}; clips live in audio/.
+   Japanese text is found after rendering: runs of <span lang="ja"> and <ruby lang="ja"> that sit side by side. */
+ICA.audioIndex = function(){ return window.ICA_AUDIO || {ja:{}, mugi:{}}; };
+ICA.sayText = function(nodes){ return nodes.map(function(n){ if (n.nodeType === 3) return n.nodeValue; var c = n.cloneNode(true); ICA.$$("rt,rp", c).forEach(function(r){ r.parentNode.removeChild(r); }); return c.textContent; }).join("").replace(/\s+/g, " ").trim(); };
+function jaNode(n){ return n && n.nodeType === 1 && (n.tagName === "SPAN" || n.tagName === "RUBY") && n.getAttribute("lang") === "ja" && !n.classList.contains("say"); }
+/* groups of neighbouring Japanese nodes: [{nodes, key}] (also used by tools/extract_audio to list what to record) */
+ICA.sayGroups = function(root){
+  var out = [], seen = new Set();
+  ICA.$$('span[lang="ja"],ruby[lang="ja"]', root).forEach(function(n){
+    if (seen.has(n) || n.closest(".say,rt,.ttsb") || (n.parentElement && n.parentElement.closest("ruby"))) return;
+    var prev = n.previousSibling; if (jaNode(prev)) return;   // not the start of a run
+    var g = [n]; seen.add(n); var x = n.nextSibling;
+    while (x && (jaNode(x) || (x.nodeType === 3 && /^[　-〿！-｠]+$/.test(x.nodeValue)))){ g.push(x); if (x.nodeType === 1) seen.add(x); x = x.nextSibling; }
+    var key = ICA.sayText(g), read = g.map(function(x){ if (x.nodeType === 3) return x.nodeValue; var rt = x.tagName === "RUBY" && x.querySelector("rt"); return rt ? rt.textContent : x.textContent; }).join("").replace(/\s+/g, " ").trim();
+    var core = key.replace(/[　-〿！-｠・]/g, "");
+    if (!/[ぁ-んァ-ヴ㐀-鿿々]/.test(key) || /^[っゃゅょぁぃぅぇぉッャュョァィゥェォー゛゜]+$/.test(core)) return;
+    if (core === "は" || core === "へ") return;                                // letter or particle? ambiguous on its own
+    if (/[㐀-鿿々]/.test(core) && core.length === 1 && read === key) return;   // a lone kanji with no reading given
+    out.push({nodes:g, key:key, read:read});
+  });
+  return out;
+};
+var AUD = {cache:{}, el:null, btn:null};
+ICA.say = function(kind, key, btn){
+  var many = String(key).split("\u0001");
+  if (many.length > 1){ var i = 0; AUD.queue = function(){ i++; if (i < many.length){ ICA.say(kind, many[i], btn); if (btn) btn.classList.add("playing"); } else AUD.queue = null; }; AUD.queueKeep = true; ICA.say(kind, many[0], btn); return true; }
+  if (!AUD.queueKeep) AUD.queue = null; AUD.queueKeep = false;
+  var f = (ICA.audioIndex()[kind] || {})[key]; if (!f) return false;
+  var url = ICA.base + "audio/" + f, st = ICA.load().settings || {}, rate = parseFloat(st.audioSpeed) || 1;
+  if (!AUD.el){ AUD.el = new Audio(); AUD.el.addEventListener("ended", function(){ if (AUD.queue){ AUD.queueKeep = true; AUD.queue(); return; } if (AUD.btn) AUD.btn.classList.remove("playing"); AUD.btn = null; }); }
+  var a = AUD.el; a.pause(); if (AUD.btn) AUD.btn.classList.remove("playing");
+  a.src = AUD.cache[url] || url; a.playbackRate = rate; try { a.preservesPitch = true; } catch(e){}
+  var p = a.play(); if (p && p.catch) p.catch(function(){});
+  if (btn){ btn.classList.add("playing"); AUD.btn = btn; }
+  if (!AUD.cache[url] && window.fetch) fetch(url).then(function(r){ return r.ok ? r.blob() : null; }).then(function(b){ if (b) AUD.cache[url] = URL.createObjectURL(b); }).catch(function(){});
+  return true;
+};
+function ttsBtn(kind, key, label){
+  var b = document.createElement("button"); b.type = "button"; b.className = "ttsb"; b.setAttribute("data-say", kind); b.setAttribute("data-key", key);
+  b.setAttribute("aria-label", label); b.title = label; b.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.8 3.6a6 6 0 0 1 0 8.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>';
+  return b;
+}
+ICA.voiceScan = function(root){
+  var idx = ICA.audioIndex(); if (!root || !root.querySelectorAll) return;
+  if (idx.ja && Object.keys(idx.ja).length) ICA.sayGroups(root).forEach(function(g){
+    if (!idx.ja[g.key] || g.nodes[0].closest("button,label,select,option,[data-nosay]")) return;
+    var w = document.createElement("span"); w.className = "say"; w.setAttribute("lang", "ja");
+    g.nodes[0].parentNode.insertBefore(w, g.nodes[0]); g.nodes.forEach(function(n){ w.appendChild(n); });
+    w.appendChild(ttsBtn("ja", g.key, "Listen: " + g.key));
+  });
+  /* Mugi's speech bubbles: one button per bubble, playing its paragraphs in turn */
+  if (idx.mugi && Object.keys(idx.mugi).length) ICA.$$(".sbub,.ssay,.bub", root.matches && root.matches(".sbub,.ssay,.bub") ? root.parentNode : root).forEach(function(bub){
+    if (bub.querySelector(".ttsb")) return; var ps = ICA.$$("p", bub), keys = ps.map(function(p){ return p.textContent.replace(/\s+/g, " ").trim(); }).filter(function(k){ return idx.mugi[k]; });
+    if (keys.length) ps[ps.length - 1].appendChild(ttsBtn("mugi", keys.join("\u0001"), "Hear Mugi"));
+  });
+};
+document.addEventListener("click", function(e){ var b = e.target.closest && e.target.closest(".ttsb"); if (!b) return; e.preventDefault(); e.stopPropagation(); ICA.say(b.getAttribute("data-say"), b.getAttribute("data-key"), b); }, true);
+if (window.MutationObserver) (function(){
+  var q = [], t = null;
+  new MutationObserver(function(ms){ ms.forEach(function(m){ m.addedNodes.forEach(function(n){ if (n.nodeType === 1 && !n.classList.contains("ttsb") && !n.classList.contains("say")) q.push(n); }); }); if (!t) t = setTimeout(function(){ var list = q; q = []; t = null; list.forEach(function(n){ if (n.isConnected) ICA.voiceScan(n); }); ICA.autoSay(); }, 40); })
+    .observe(document.documentElement, {childList:true, subtree:true});
+})();
+/* auto-play: the first Japanese line of a newly shown exercise, if the setting is on */
+var AUTO_DONE = new WeakSet();
+ICA.autoSay = function(){
+  var st = ICA.load().settings || {}; if (st.audioAuto !== "on") return;
+  var q = ICA.$$(".ex .q .ttsb, .qcard .ttsb").filter(function(b){ var ex = b.closest(".ex,.qcard"); return ex && !AUTO_DONE.has(ex) && ex.getBoundingClientRect().height; })[0];
+  if (q){ AUTO_DONE.add(q.closest(".ex,.qcard")); ICA.say(q.getAttribute("data-say"), q.getAttribute("data-key"), q); }
+};
 
 /* home-screen app: register the service worker from the site root (one folder above shared/) */
 (function(){
