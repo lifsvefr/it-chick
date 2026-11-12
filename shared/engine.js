@@ -300,7 +300,7 @@ ICA.sheet = function(html, onOpen){
   if (onOpen) onOpen(bg.querySelector(".sheet"));
   return bg.querySelector(".sheet");
 };
-ICA.closeSheet = function(){ var b = document.getElementById("sheetbg"); if (b){ b.parentNode.removeChild(b); if (lastFocus && lastFocus.focus) lastFocus.focus(); if (ICA.onSheet) ICA.onSheet(false); } };
+ICA.closeSheet = function(){ var b = document.getElementById("sheetbg"); if (b){ b.parentNode.removeChild(b); setTimeout(function(){ if (ICA.autoSay) ICA.autoSay(); }, 200); if (lastFocus && lastFocus.focus) lastFocus.focus(); if (ICA.onSheet) ICA.onSheet(false); } };
 ICA.closePop = function(){ var p = ICA.$(".pop"); if (p) p.parentNode.removeChild(p); };
 ICA.showTerm = function(id){
   ICA.closePop();
@@ -791,7 +791,9 @@ if (window.MutationObserver) (function(){
 var AUTO_DONE = new WeakSet(), MUGI_NEXT = null;
 ICA.autoSay = function(){
   var st = ICA.load().settings || {};
-  if (MUGI_NEXT){ var m = MUGI_NEXT; MUGI_NEXT = null; if (m.isConnected){ ICA.say("mugi", m.getAttribute("data-key"), m); return; } }
+  var sheet = document.getElementById("sheetbg"), hidden = function(b){ return sheet && !sheet.contains(b); };   // behind a pop-up: wait for it to close
+  if (MUGI_NEXT){ if (hidden(MUGI_NEXT)) return; var m = MUGI_NEXT; MUGI_NEXT = null; if (m.isConnected){ ICA.say("mugi", m.getAttribute("data-key"), m); return; } }
+  if (sheet) return;
   if (st.audioAuto !== "on") return;
   var q = ICA.$$(".ex .q .ttsb, .qcard .ttsb").filter(function(b){ var ex = b.closest(".ex,.qcard"); return ex && !AUTO_DONE.has(ex) && ex.getBoundingClientRect().height; })[0];
   if (q){ AUTO_DONE.add(q.closest(".ex,.qcard")); ICA.say(q.getAttribute("data-say"), q.getAttribute("data-key"), q); }
