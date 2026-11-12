@@ -260,8 +260,12 @@ ICA.addUnit({
       {t:"*sakama*", why:"The last kana is な (*na*), not ま (*ma*). ま has two cross strokes and a loop at the bottom."},
       {t:"*chikana*", why:"The first kana is さ (*sa*), not ち (*chi*). The bottom of さ opens to the right; ち bulges to the right."},
       {t:"*kisana*", why:"The first kana has one cross stroke, so it is さ (*sa*). き (*ki*) has two."}
-    ]}
-   ],
+    ]},
+      {id:"e3u1-l2-x8", type:"type", q:"Listen, then type the word in hiragana.", book:"In the app you hear the word. Here: write *sakura* (cherry blossom) in hiragana.", say:"さくら", answer:"さくら",
+        hint:"Three kana. Type the romaji you hear; it turns into hiragana as you type.",
+        wrongs:[{v:"さくろ", why:"The last sound is *ra* (ら), not *ro* (ろ). Listen to the vowel at the end."}],
+        why:"さくら (*sakura*, cherry blossom) is さ + く + ら: one kana from each of the さ, か and ら rows."}
+    ],
    apply:{intro:"Real practice with your hands, eyes and voice. Keep your notes and recordings private unless you choose to share them.", tasks:[
      {t:"Fill in your [五十音]{ごじゅうおん} grid by hand", how:["Each day, take one or two rows. Write each kana five times in its own square, in the right stroke order, saying the sound aloud.","Add the kana to the grid you drew in Lesson 1.","Next day, cover the kana and write each row from memory before you look."], write:"Rows done… Kana I wrote wrongly from memory… What helped…"},
      {t:"Read ten words aloud and record yourself", how:["Choose ten words from this lesson (for example いぬ, ねこ, さかな, つくえ, ちかてつ, ふゆ, へや, さくら, ほし, わたし).","Read each one slowly, one kana per beat, and record yourself on your phone or computer.","Listen back. Did ふ come out softly, made by your lips alone, without your teeth touching your lip? Did the ら row sound like a light tap? Try again."], write:"Words I read… Sounds I want to improve…"},
@@ -389,8 +393,16 @@ ICA.addUnit({
       {t:"つずく", why:"ず sounds the same, but this is a repeated つ sound, so the rules use づ."},
       {t:"づづく", why:"Only the second つ is voiced. The word starts with a plain つ (*tsu*)."},
       {t:"つすく", why:"す (*su*) has no dakuten, so this would be *tsusuku*. The sound is *zu*."}
-    ]}
-   ],
+    ]},
+      {id:"e3u1-l3-x9", type:"type", q:"Listen, then type the word in hiragana. Listen for the short pause.", book:"In the app you hear the word. Here: write *kitte* (stamp) in hiragana.", say:"きって", answer:"きって",
+        hint:"Double the consonant after the pause (tt) to get the small っ.",
+        wrongs:[{v:"きて", why:"That is two beats, *ki-te*. The word you heard has a pause before て: three beats, き・っ・て, written with a small っ."}],
+        why:"きって (*kitte*, stamp) has a small っ: the pause before て counts as a beat of its own. On a keyboard you get it by doubling the next consonant: kitte."},
+      {id:"e3u1-l3-x10", type:"type", q:"Listen, then type the word in hiragana. Count the beats.", book:"In the app you hear the word. Here: write *okaasan* (mother) in hiragana.", say:"おかあさん", answer:"おかあさん",
+        hint:"Five beats. The long vowel after か is written with its own kana.",
+        wrongs:[{v:"おかさん", why:"That drops the long vowel. The *a* after か is held for a whole beat, written あ: お・か・あ・さ・ん."}],
+        why:"おかあさん (*okaasan*, mother) has five beats: お・か・あ・さ・ん. In hiragana a long *a* is written with an extra あ."}
+    ],
    apply:{intro:"Practise the new sounds with your voice, your eyes and your keyboard.", tasks:[
      {t:"Read pairs aloud and record yourself", how:["Read each pair slowly, tapping a finger for each beat: おと / おっと, さか / さっか, おばさん / おばあさん, ゆき / ゆうき, ここ / こうこう, びょういん / びよういん.","Record yourself (privately) and listen. Does each word in a pair have the right number of beats?","Repeat any pair where the beats sound the same."], write:"Pairs that were easy… Pairs I need to practise…"},
      {t:"Type twelve words", how:["Switch on the Japanese keyboard you added in Lesson 1.","Type these words in hiragana: がっこう, きって, ちょっと, でんしゃ, しゃしん, じしょ, おかあさん, おとうさん, せんせい, おおきい, とおい, つづく.","If a word comes out wrong, compare what you typed with the table in the lesson and try again. On a computer, press [[kbd:Enter]] to keep the hiragana without turning it into kanji; on a phone, tap the hiragana suggestion."], write:"Words that came out wrong first… What I typed instead…"},
@@ -515,8 +527,12 @@ ICA.addUnit({
       {t:"フアテイマ", why:"With full-size ア and イ, every kana is its own beat: *fu-a-te-i-ma*."},
       {t:"ファチマ", why:"チ is *chi*, so this reads *fa-chi-ma*. For *ti* you need テ + small ィ."},
       {t:"ハティマ", why:"ハ is *ha*: this reads *ha-ti-ma*. For *fa* you need フ + small ァ."}
-    ]}
-   ],
+    ]},
+      {id:"e3u1-l4-x9", type:"type", q:"Listen, then type the loanword in katakana.", book:"In the app you hear the word. Here: write *kōhī* (coffee) in katakana.", say:"コーヒー", answer:"コーヒー",
+        hint:"Katakana marks long vowels with ー: type a hyphen after the syllable.",
+        wrongs:[{v:"コヒー", why:"The first vowel is long too: *kō-hī*, four beats, コ・ー・ヒ・ー."}],
+        why:"コーヒー (*kōhī*, coffee) has two long vowels, each written with ー. On a keyboard: ko-hi-."}
+    ],
    apply:{intro:"Katakana is all around you once you start looking. These tasks turn it into reading practice.", tasks:[
      {t:"Go on a katakana hunt", how:["Look at Japanese food packaging, a menu, a shop website or photos of street signs.","Copy ten katakana words you find. Read each one aloud, one beat at a time.","Guess the original word for each, then check in a dictionary. Note any whose meaning changed, like マンション."], write:"Ten words, my guess, the real meaning…"},
      {t:"Write your name and three places in katakana", how:["Say your name slowly and split it into Japanese beats, adding vowels after lone consonants (*u* in most places, *o* after t and d).","Choose katakana, using combinations such as ティ or ファ where they help. Many names have more than one accepted spelling; pick one and use it consistently.","Do the same for your town, your country and one place you would like to visit."], write:"My name in katakana… my town… my country… a place I want to visit…"},

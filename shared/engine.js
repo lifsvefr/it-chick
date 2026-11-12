@@ -403,10 +403,10 @@ ICA.topbar = function(title){
 /* =====================================================================
    EXERCISES
    Every exercise explains the specific mistake, not just right/wrong.
-   Types: mcq · sort · order · match · spot · number
+   Types: mcq · sort · order · match · spot · number · type
    ICA.exercise(el, ex, {onSolved(firstTry), quiz:false})
    ===================================================================== */
-var KIND = {mcq:"Choose", sort:"Sort", order:"Put in order", match:"Match", spot:"Spot it", number:"Work it out"};
+var KIND = {mcq:"Choose", sort:"Sort", order:"Put in order", match:"Match", spot:"Spot it", number:"Work it out", type:"Type it"};
 function head(ex){ return '<div class="kind">'+(KIND[ex.type]||"Try")+'</div><div class="q">'+ICA.md(ex.q)+'</div>'+(ex.hint ? '<div class="small muted">'+ICA.md(ex.hint)+'</div>' : ""); }
 function fbBox(cls, title, body){ return '<div class="fb '+cls+'" role="status"><b>'+title+'</b>'+(body||"")+'</div>'; }
 function lis(arr){ return arr.length ? "<ul>"+arr.map(function(x){ return "<li>"+x+"</li>"; }).join("")+"</ul>" : ""; }
@@ -665,6 +665,92 @@ RENDER.number = function(el, ex, api){
   }
   el.querySelector("[data-check]").addEventListener("click", go);
   inp.addEventListener("keydown", function(e){ if (e.key === "Enter") go(); });
+};
+
+/* ---------- typing: romaji → kana as you type (like a Japanese keyboard on a computer) ----------
+   ICA.toKana("kyouha") → "きょうは"; katakana:true → カタカナ with - → ー. A trailing n stays n until the next key
+   (so "na" can still be typed); final:true turns it into ん. Kana typed with a Japanese keyboard passes through. */
+var ROMA = (function(){
+  var t = {}, V = "aiueo", H = "あいうえお";
+  var rows = {"":"あいうえお", k:"かきくけこ", s:"さしすせそ", t:"たちつてと", n:"なにぬねの", h:"はひふへほ", m:"まみむめも", y:"や-ゆ-よ", r:"らりるれろ", w:"わ--を",
+    g:"がぎぐげご", z:"ざじずぜぞ", d:"だぢづでど", b:"ばびぶべぼ", p:"ぱぴぷぺぽ", x:"ぁぃぅぇぉ", l:"ぁぃぅぇぉ"};
+  Object.keys(rows).forEach(function(c){ for (var i = 0; i < 5; i++){ var k = rows[c][i]; if (k !== "-") t[c + V[i]] = k; } });
+  "shi:し,chi:ち,tsu:つ,tu:つ,fu:ふ,ji:じ,zi:じ,si:し,ti:ち,hu:ふ,wo:を,ye:いぇ,wi:うぃ,we:うぇ,va:ゔぁ,vi:ゔぃ,vu:ゔ,ve:ゔぇ,vo:ゔぉ,fa:ふぁ,fi:ふぃ,fe:ふぇ,fo:ふぉ,she:しぇ,je:じぇ,che:ちぇ,thi:てぃ,dhi:でぃ,twu:とぅ,dwu:どぅ,tsa:つぁ,xtu:っ,ltu:っ,xtsu:っ,ltsu:っ,xya:ゃ,xyu:ゅ,xyo:ょ,lya:ゃ,lyu:ゅ,lyo:ょ,xwa:ゎ,dzu:づ,nn:ん,-:ー"
+    .split(",").forEach(function(p){ var i = p.indexOf(":"); t[p.slice(0, i)] = p.slice(i + 1); });
+  t["n'"] = "ん";
+  var Y = {ky:"き",gy:"ぎ",sy:"し",zy:"じ",ty:"ち",dy:"ぢ",ny:"に",hy:"ひ",by:"び",py:"ぴ",my:"み",ry:"り",cy:"ち",jy:"じ"};
+  Object.keys(Y).forEach(function(c){ t[c + "a"] = Y[c] + "ゃ"; t[c + "u"] = Y[c] + "ゅ"; t[c + "o"] = Y[c] + "ょ"; t[c + "e"] = Y[c] + "ぇ"; t[c + "i"] = Y[c] + "ぃ"; });
+  "sh:し,ch:ち,j:じ".split(",").forEach(function(p){ var a = p.split(":"); t[a[0] + "a"] = a[1] + "ゃ"; t[a[0] + "u"] = a[1] + "ゅ"; t[a[0] + "o"] = a[1] + "ょ"; });
+  t.ja = "じゃ"; t.ju = "じゅ"; t.jo = "じょ"; t.cha = "ちゃ"; t.chu = "ちゅ"; t.cho = "ちょ"; t.sha = "しゃ"; t.shu = "しゅ"; t.sho = "しょ";
+  return t;
+})();
+ICA.toKata = function(s){ return s.replace(/[ぁ-ゖ]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) + 0x60); }); };
+ICA.toHira = function(s){ return s.replace(/[ァ-ヶ]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) - 0x60); }); };
+ICA.toKana = function(s, o){
+  o = o || {}; var out = "", i = 0, low = s.toLowerCase();
+  while (i < low.length){
+    var c = low[i];
+    if (!/[a-z'\-]/.test(c)){ out += s[i]; i++; continue; }
+    if (c === "n" && i + 1 < low.length && !/[aiueoyn']/.test(low[i + 1])){ out += "ん"; i++; continue; }   // kanji → かんじ
+    if (c === "n" && low[i + 1] === "n" && i + 2 === low.length && !o.final){ out += s.slice(i); break; }   // nn: wait for the next key
+    if (c === "n" && low[i + 1] === "n" && /[aiueoy]/.test(low[i + 2] || "")){ out += "ん"; i++; continue; }   // minna → みんな, konnichiwa → こんにちわ
+    if (/[bcdfghjklmpqrstvwxyz]/.test(c) && c !== "n" && low[i + 1] === c){ out += "っ"; i++; continue; }   // kitte → きって
+    if (c === "t" && low[i + 1] === "c" && low[i + 2] === "h"){ out += "っ"; i++; continue; }                 // matcha → まっちゃ
+    var hit = null;
+    for (var L = 4; L >= 1; L--){ var k = low.substr(i, L); if (k.length === L && ROMA[k]){ hit = k; break; } }
+    if (hit){ out += ROMA[hit]; i += hit.length; continue; }
+    if (c === "n" && i === low.length - 1 && o.final){ out += "ん"; i++; continue; }
+    out += s.slice(i); break;   // an unfinished syllable (k, ky, ts): keep it as typed until the next key
+  }
+  if (o.katakana) out = ICA.toKata(out);
+  return out;
+};
+/* how close a typed kana answer is: 'same', or a hint for the commonest slips */
+function kanaNorm(s){ return ICA.toHira(String(s).normalize("NFKC")).replace(/[\s。、．，.,!！?？「」]/g, ""); }
+function kanaSlip(got, want){
+  var g = kanaNorm(got), w = kanaNorm(want); if (g === w) return "same";
+  var nod = function(x){ return x.normalize("NFD").replace(/[゙゚]/g, "").normalize("NFC"); };
+  var big = function(x){ return x.replace(/[ぁぃぅぇぉっゃゅょゎ]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) + 1); }); };
+  var nolong = function(x){ return x.replace(/ー/g, "").replace(/([おこそとのほもよろごぞどぼぽょ])う/g, "$1").replace(/([えけせてねへめれげぜでべぺ])い/g, "$1").replace(/(.)\1/g, "$1"); };
+  var part = function(x){ return x.replace(/は/g, "わ").replace(/へ/g, "え").replace(/を/g, "お"); };
+  if (part(g) === part(w)) return "Close: the particles are written は (wa), へ (e) and を (o), even though they sound like わ, え and お.";
+  if (w.indexOf("ー") >= 0 && g.indexOf("ー") < 0 && Math.abs(g.length - w.length) <= 3) return "Close: katakana long vowels use ー. Type a hyphen (-) after the syllable.";
+  if (nod(g) === nod(w)) return "Close: check the ゛ and ゜ marks (か/が, は/ば/ぱ).";
+  if (big(g) === big(w)) return "Close: check the small kana (つ/っ, や/ゃ).";
+  if (nolong(g) === nolong(w)) return "Close: check the long vowels (おう, えい, ー) and double letters.";
+  return null;
+}
+RENDER.type = function(el, ex, api){
+  var id = "t_"+(ex.id||Math.random().toString(36).slice(2)), answers = [].concat(ex.answer);
+  var kata = ex.script ? ex.script === "katakana" : /^[ァ-ヶー・\s]+$/.test(answers[0]);
+  var sayBtn = ex.say ? '<button type="button" class="btn small" data-hear>▶ Listen</button>' : "";
+  el.innerHTML = head(ex)+(sayBtn ? '<div class="row">'+sayBtn+'</div>' : "")+'<div class="numrow typerow"><label class="lb" for="'+id+'">Your answer</label><input type="text" id="'+id+'" lang="ja" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="'+(kata ? "e.g. ko-hi- → コーヒー" : "e.g. mizu → みず")+'"><button type="button" class="btn primary" data-check>Check</button></div><div class="small muted">Romaji turns into '+(kata ? "katakana" : "hiragana")+' as you type; nn or n’ gives ん'+(kata ? ", and a hyphen gives the long-vowel mark ー" : "")+'. A Japanese keyboard works too.</div><div class="fbw"></div>';
+  var inp = el.querySelector("input"), fbw = el.querySelector(".fbw"), composing = false;
+  if (ex.say){ el.querySelector("[data-hear]").addEventListener("click", function(e){ ICA.say("ja", ex.say, e.currentTarget); }); }
+  inp.addEventListener("compositionstart", function(){ composing = true; });
+  inp.addEventListener("compositionend", function(){ composing = false; conv(); });
+  function conv(){ if (composing) return; var v = inp.value, k = ICA.toKana(v, {katakana:kata}); if (k !== v){ var end = inp.selectionStart === v.length; inp.value = k; if (end) inp.setSelectionRange(k.length, k.length); } }
+  inp.addEventListener("input", conv);
+  function done(){ inp.disabled = true; el.querySelector("[data-check]").disabled = true; }
+  function go(){
+    inp.value = ICA.toKana(inp.value, {katakana:kata, final:true});
+    var v = inp.value.trim();
+    if (!v){ fbw.innerHTML = fbBox("part", "Type your answer first.", ""); return; }
+    if (/[a-z]/i.test(v)){ fbw.innerHTML = fbBox("part", "Part of that is still in romaji.", "<div>Finish the syllable, or use nn for ん.</div>"); return; }
+    if (answers.some(function(a){ return kanaSlip(v, a) === "same"; })){
+      var exact = answers.some(function(a){ return String(a).normalize("NFKC").replace(/\s/g, "") === v.normalize("NFKC").replace(/\s/g, ""); });
+      fbw.innerHTML = fbBox("ok", "Correct.", (exact ? "" : "<div>Written as: <span lang=\"ja\">"+ICA.esc(answers[0])+"</span></div>")+(ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : ""));
+      api.attempt(true); done(); return;
+    }
+    api.attempt(false);
+    var hit = (ex.wrongs||[]).filter(function(w){ return kanaSlip(v, w.v) === "same"; })[0];
+    var near = hit ? null : kanaSlip(v, answers[0]);
+    fbw.innerHTML = fbBox("no", "Not quite.", "<div>"+(hit ? ICA.md(hit.why) : near || (ex.hint2 ? ICA.md(ex.hint2) : "Try again."))+"</div>"+(api.state.tries >= 2 ? '<div class="row"><button type="button" class="btn small" data-show>Show the answer</button></div>' : ""));
+    var sb = fbw.querySelector("[data-show]");
+    if (sb) sb.addEventListener("click", function(){ api.solved(false); inp.value = answers[0]; done(); fbw.innerHTML = fbBox("part", "The answer is <span lang=\"ja\">"+ICA.esc(answers[0])+"</span>.", ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : ""); });
+  }
+  el.querySelector("[data-check]").addEventListener("click", go);
+  inp.addEventListener("keydown", function(e){ if (e.key === "Enter" && !e.isComposing && !composing) go(); });
 };
 
 /* ---------- backup helpers ---------- */
