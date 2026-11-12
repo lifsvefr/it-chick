@@ -191,6 +191,8 @@ dialog.dlg::backdrop{background:rgba(20,10,6,.55)}
 .howart{border-radius:14px;overflow:hidden}
 body.nofuri ruby rt{visibility:hidden}
 body.nofuri ruby.peek rt{visibility:visible}
+body.nofuri .qsub:not(.peek){position:relative;color:transparent;cursor:pointer;user-select:none}
+body.nofuri .qsub:not(.peek)::after{content:"tap to see the reading";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);white-space:nowrap;color:var(--soft);font-size:.7em;letter-spacing:.04em;opacity:.75}
 body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:underline dotted color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:4px}
 .sndb.furib span{font-size:.95em;font-weight:700}
 .howlist{margin:0;padding-left:20px;display:grid;gap:6px}
@@ -310,10 +312,10 @@ function beep(kind, arg){ AFX.sfx(kind, arg); }
 function sndBtn(){ var on = soundOn(), mu = musicOn();
   return '<button class="iconbtn sndb" data-snd aria-pressed="'+on+'" aria-label="Sound effects" title="Sound '+(on ? "on" : "off")+'"><span aria-hidden="true">'+(on ? "🔊" : "🔇")+'</span></button>'+
     '<button class="iconbtn sndb'+(mu ? "" : " off")+'" data-mus aria-pressed="'+mu+'" aria-label="Music" title="Music '+(mu ? "on" : "off")+'"><span aria-hidden="true">♪</span></button>'+
-    '<button class="iconbtn sndb furib'+(furiOn() ? "" : " off")+'" data-furi aria-pressed="'+furiOn()+'" aria-label="Furigana (readings above kanji)" title="'+furiTitle()+'"><span aria-hidden="true">ふ</span></button>'; }
+    '<button class="iconbtn sndb furib'+(furiOn() ? "" : " off")+'" data-furi aria-pressed="'+furiOn()+'" aria-label="Readings (furigana and the reading under a word)" title="'+furiTitle()+'"><span aria-hidden="true">ふ</span></button>'; }
 /* furigana: on by default; off hides the readings above kanji so the kanji have to be read. Tap a word in a question to peek. */
 function furiOn(){ return ICA.load().arcade.furi !== false; }
-function furiTitle(){ return furiOn() ? "Furigana shown" : "Furigana hidden: tap a word in a question to peek"; }
+function furiTitle(){ return furiOn() ? "Readings shown" : "Readings hidden: tap the word to peek"; }
 function applyFuri(){ document.body.classList.toggle("nofuri", !furiOn()); }
 function syncSnd(){ var on = soundOn(), mu = musicOn();
   ICA.$$("[data-snd]").forEach(function(b){ b.setAttribute("aria-pressed", on); b.title = "Sound "+(on ? "on" : "off"); b.firstChild.textContent = on ? "🔊" : "🔇"; });
@@ -880,8 +882,9 @@ app.addEventListener("click", function(e){
   var t;
   if (e.target.closest("[data-snd]")){ setSound(!soundOn()); syncSnd(); beep("tap"); return; }
   if (e.target.closest("[data-mus]")){ setMusic(!musicOn()); syncSnd(); beep("tap"); return; }
-  if (e.target.closest("[data-furi]")){ ICA.load().arcade.furi = !furiOn(); ICA.save(); syncSnd(); beep("tap"); ICA.toast && ICA.toast(furiOn() ? "Furigana on" : "Furigana off: read the kanji yourself. Tap a word in a question to peek."); return; }
+  if (e.target.closest("[data-furi]")){ ICA.load().arcade.furi = !furiOn(); ICA.save(); syncSnd(); beep("tap"); ICA.toast && ICA.toast(furiOn() ? "Furigana on" : "Readings off: read the kanji yourself. Tap the word to peek."); return; }
   if (!furiOn() && (t = e.target.closest("ruby")) && !t.closest("button,label,.choice,.opt,.pc")){ t.classList.toggle("peek"); return; }
+  if (!furiOn() && (t = e.target.closest(".stage")) && t.querySelector(".qsub") && !e.target.closest("button")){ t.querySelector(".qsub").classList.toggle("peek"); return; }
   if (e.target.closest("[data-today]")){ startToday(); return; }
   if ((t = e.target.closest("[data-unmiss]"))){ unmiss(t.getAttribute("data-unmiss"), t); return; }
   if (e.target.closest("[data-unmissall]")){ ICA.$$("[data-unmiss]").forEach(function(b){ if (!b.disabled) unmiss(b.getAttribute("data-unmiss"), b); }); e.target.closest("[data-unmissall]").disabled = true; return; }
