@@ -690,18 +690,41 @@ ICA.applySettings();
 ICA.audioIndex = function(){ return window.ICA_AUDIO || {ja:{}, mugi:{}}; };
 ICA.sayText = function(nodes){ return nodes.map(function(n){ if (n.nodeType === 3) return n.nodeValue; var c = n.cloneNode(true); ICA.$$("rt,rp", c).forEach(function(r){ r.parentNode.removeChild(r); }); return c.textContent; }).join("").replace(/\s+/g, " ").trim(); };
 function jaNode(n){ return n && n.nodeType === 1 && (n.tagName === "SPAN" || n.tagName === "RUBY") && n.getAttribute("lang") === "ja" && !n.classList.contains("say"); }
+/* text between two Japanese runs that still belongs to one spoken line: Japanese punctuation, the spaces of beginner
+   spacing (わたしは がくせいです), a "+" after a kanji with furigana (飲 + みます), or a placeholder letter (A は B ほど) */
+var PH = /^\s*[XYABC]?\s*$/;
+function joins(x){
+  if (!x || x.nodeType !== 3 || !jaNode(x.nextSibling)) return false;
+  var v = x.nodeValue;
+  if (/^[　-〿！-｠]+$/.test(v)) return true;
+  if (/^\s*[+＋]\s*$/.test(v)) return !!(x.previousSibling && x.previousSibling.tagName === "RUBY");
+  if (/^\s*[XYABC]\s*$/.test(v) && /[ぁ-ゖ]$/.test(x.previousSibling ? x.previousSibling.textContent : "")) return true;   // は B より
+  if (!/^\s+$/.test(v)) return false;
+  /* plain spaces: only beginner spacing, after a word or particle ending in hiragana and before a word (これは ほんです),
+     not a kana-chart row (あ い う), a word and its reading (富士山 ふじさん) or a list of kanji */
+  var L = x.previousSibling ? x.previousSibling.textContent.replace(/\s/g, "") : "", R = x.nextSibling.textContent.replace(/\s/g, "");
+  if (!/[ぁ-ゖ]$/.test(L) || !(L.length >= 2 || /^[はがをにでともへの]$/.test(L))) return false;
+  if (R.length < 2 && x.nextSibling.tagName !== "RUBY") return false;
+  if (/^[ぁ-ゖ]+$/.test(L) && /^[ぁ-ゖ]+$/.test(R) && L.length + R.length <= 4 && !/^[はがをにでともへの]$/.test(L)) return false;   // chart rows (きゃ きゅ)
+  return true;
+}
 /* groups of neighbouring Japanese nodes: [{nodes, key}] (also used by tools/extract_audio to list what to record) */
 ICA.sayGroups = function(root){
   var out = [], seen = new Set();
   ICA.$$('span[lang="ja"],ruby[lang="ja"]', root).forEach(function(n){
     if (seen.has(n) || n.closest(".say,rt,.ttsb") || (n.parentElement && n.parentElement.closest("ruby"))) return;
-    var prev = n.previousSibling; if (jaNode(prev)) return;   // not the start of a run
+    var prev = n.previousSibling; if (jaNode(prev) || (joins(prev) && jaNode(prev.previousSibling))) return;   // not the start of a run
     var g = [n]; seen.add(n); var x = n.nextSibling;
-    while (x && (jaNode(x) || (x.nodeType === 3 && /^[　-〿！-｠]+$/.test(x.nodeValue)) || (x.nodeType === 3 && /^\s*[+＋]\s*$/.test(x.nodeValue) && x.previousSibling && x.previousSibling.tagName === "RUBY" && jaNode(x.nextSibling)))){ g.push(x); if (x.nodeType === 1) seen.add(x); x = x.nextSibling; }
-    var key = ICA.sayText(g), read = g.map(function(x){ if (x.nodeType === 3) return x.nodeValue; var rt = x.tagName === "RUBY" && x.querySelector("rt"); return rt ? rt.textContent : x.textContent; }).join("").replace(/\s+/g, " ").trim();
-    var core = key.replace(/[　-〿！-｠・]/g, "");
+    while (x && (jaNode(x) || (x.nodeType === 3 && /^[　-〿！-｠]+$/.test(x.nodeValue)) || joins(x))){ g.push(x); if (x.nodeType === 1) seen.add(x); x = x.nextSibling; }
+    while (g.length > 1 && g[g.length - 1].nodeType === 3 && !/[^\s]/.test(g[g.length - 1].nodeValue)) g.pop();
+    var lead = prev && prev.nodeType === 3 && prev.nodeValue.match(/(?:^|[\s(（「“])([XYABC])\s*$/);   // "X は どこですか": the placeholder before it
+    if (lead && !/^[ぁ-ゖ]/.test(ICA.sayText(g))) lead = null;   // only before a particle (X は, A な), not a speaker label (A：…) or a noun
+    var key = (lead ? lead[1] + " " : "") + ICA.sayText(g), read = g.map(function(x){ if (x.nodeType === 3) return x.nodeValue; var rt = x.tagName === "RUBY" && x.querySelector("rt"); return rt ? rt.textContent : x.textContent; }).join("").replace(/\s+/g, " ").trim();
+    if (lead) read = lead[1] + " " + read;
+    var core = key.replace(/[　-〿！-｠・\s]/g, "");
     if (!/[ぁ-んァ-ヴ㐀-鿿々]/.test(key) || /^[っゃゅょぁぃぅぇぉッャュョァィゥェォー゛゜]+$/.test(core)) return;
     if (/[㐀-鿿々]/.test(core) && core.length === 1 && read === key) return;   // a lone kanji with no reading given
+    if (/^[㐀-鿿々](・[㐀-鿿々])+$/.test(key) && read === key) return;            // a list of lone kanji (上・下・中): no reading given either
     if (core === "は" || core === "へ"){   // letter (ha/he) or particle (wa/e)? only when the romaji written next to it says
       var t = "", y = g[g.length - 1].nextSibling; for (var j = 0; y && j < 3; j++, y = y.nextSibling) t += y.textContent;
       var m = t.match(/^\s*\(\s*(ha|wa|he|e)\b/i); if (!m) return;

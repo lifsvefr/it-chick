@@ -123,7 +123,7 @@ var SECTIONS = [["Kana", "Start here if the scripts are new: type each sound in 
 function ks(){ return KL.store(ICA.load()); }
 function today(){ return ICA.today(); }
 function setTitle(t){ document.title = t + " · Kanji Lab"; bar.querySelector(".title").textContent = t; }
-function ja(s){ return '<span lang="ja">'+esc(s)+'</span>'; }
+function ja(s){ return '<span lang="ja" data-nosay>'+esc(s)+'</span>'; }   /* readings and side notes: no speaker button (the word itself has one) */
 function plural(n, w){ return n + " " + w + (n === 1 ? "" : "s"); }
 
 var CREDIT = '<div class="credit"><span>Kanji and word data from <a href="https://www.edrdg.org/wiki/index.php/KANJIDIC_Project" target="_blank" rel="noopener">KANJIDIC2</a> and <a href="https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project" target="_blank" rel="noopener">JMdict</a> by the Electronic Dictionary Research and Development Group (EDRDG), used under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> (<a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener">EDRDG licence</a>). Furigana splits checked with <a href="https://github.com/Doublevil/JmdictFurigana" target="_blank" rel="noopener">JmdictFurigana</a>.</span>'+
@@ -184,6 +184,7 @@ function deckView(id){
 }
 
 /* ---------- the full card (shown after answering, and when browsing) ---------- */
+window.KLAB_fullCard = function(it){ return fullCard(it); };   /* for tools/extract_kanjilab_audio.py */
 function kanaRow(r){ return r.map(function(x){ return ja(x); }).join("、"); }
 function fullCard(it){
   var h = '<div class="full">';
