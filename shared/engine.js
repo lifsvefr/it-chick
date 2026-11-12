@@ -694,12 +694,16 @@ ICA.sayGroups = function(root){
     if (seen.has(n) || n.closest(".say,rt,.ttsb") || (n.parentElement && n.parentElement.closest("ruby"))) return;
     var prev = n.previousSibling; if (jaNode(prev)) return;   // not the start of a run
     var g = [n]; seen.add(n); var x = n.nextSibling;
-    while (x && (jaNode(x) || (x.nodeType === 3 && /^[　-〿！-｠]+$/.test(x.nodeValue)))){ g.push(x); if (x.nodeType === 1) seen.add(x); x = x.nextSibling; }
+    while (x && (jaNode(x) || (x.nodeType === 3 && /^[　-〿！-｠]+$/.test(x.nodeValue)) || (x.nodeType === 3 && /^\s*[+＋]\s*$/.test(x.nodeValue) && x.previousSibling && x.previousSibling.tagName === "RUBY" && jaNode(x.nextSibling)))){ g.push(x); if (x.nodeType === 1) seen.add(x); x = x.nextSibling; }
     var key = ICA.sayText(g), read = g.map(function(x){ if (x.nodeType === 3) return x.nodeValue; var rt = x.tagName === "RUBY" && x.querySelector("rt"); return rt ? rt.textContent : x.textContent; }).join("").replace(/\s+/g, " ").trim();
     var core = key.replace(/[　-〿！-｠・]/g, "");
     if (!/[ぁ-んァ-ヴ㐀-鿿々]/.test(key) || /^[っゃゅょぁぃぅぇぉッャュョァィゥェォー゛゜]+$/.test(core)) return;
-    if (core === "は" || core === "へ") return;                                // letter or particle? ambiguous on its own
     if (/[㐀-鿿々]/.test(core) && core.length === 1 && read === key) return;   // a lone kanji with no reading given
+    if (core === "は" || core === "へ"){   // letter (ha/he) or particle (wa/e)? only when the romaji written next to it says
+      var t = "", y = g[g.length - 1].nextSibling; for (var j = 0; y && j < 3; j++, y = y.nextSibling) t += y.textContent;
+      var m = t.match(/^\s*\(\s*(ha|wa|he|e)\b/i); if (!m) return;
+      key = core + "|" + m[1].toLowerCase();
+    }
     out.push({nodes:g, key:key, read:read});
   });
   return out;
