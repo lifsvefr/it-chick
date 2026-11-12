@@ -757,6 +757,7 @@ function ttsBtn(kind, key, label){
 ICA.voiceScan = function(root){
   var idx = ICA.audioIndex(); if (!root || !root.querySelectorAll) return;
   if (idx.ja && Object.keys(idx.ja).length) ICA.sayGroups(root).forEach(function(g){
+    var vk = g.key + "|" + g.read; if (idx.ja[vk]) g.key = vk;   // same words, different furigana (何 read なに in a "spot the mistake" item): its own clip
     if (!idx.ja[g.key] || g.nodes[0].closest("button,label,select,option,[data-nosay]")) return;
     var w = document.createElement("span"); w.className = "say"; w.setAttribute("lang", "ja");
     g.nodes[0].parentNode.insertBefore(w, g.nodes[0]); g.nodes.forEach(function(n){ w.appendChild(n); });
