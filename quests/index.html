@@ -236,18 +236,18 @@ function deck(l, el){
     i = Math.max(0, Math.min(cards.length - 1, k)); s.card = i; ICA.save();
     var c = cards[i], h = "";
     if (c.k === "intro"){
-      h = ICA.mugi("hello", '<p><b>Let’s learn: '+esc(l.title)+'</b></p><p class="small">About '+l.minutes+' minutes, in '+(cards.length - 2)+' short cards. Tap <b>Next</b> or swipe. You can stop any time; I’ll remember where you were.</p>', {cls:"mpop", say:["Let’s learn!", "Tap Next or swipe. You can stop any time; I’ll remember where you were."]}) +
+      h = ICA.mugi("hello", '<p><b>Let’s learn: '+esc(l.title)+'</b></p><p class="small">About '+l.minutes+' minutes, in '+(cards.length - 2)+' short cards. Tap <b>Next</b> or swipe. You can stop any time. I’ll remember where you were.</p>', {cls:"mpop", say:["Let’s learn!", "Tap Next or swipe. You can stop any time. I’ll remember where you were."]}) +
         (l.goals ? '<div><span class="eyebrow">By the end, you’ll be able to</span><ul class="goals">'+l.goals.map(function(g){ return "<li>"+md(g)+"</li>"; }).join("")+'</ul></div>' : '');
     } else if (c.k === "hook"){
       var hk = l.hook, picked = s.hook;
-      h = ICA.mugi("think", '<span class="eyebrow">Warm-up: guess first</span><p><b>'+md(hk.q)+'</b></p><p class="small muted">No pressure: guessing before you learn helps it stick, even when the guess is wrong.</p>', {cls:"mpop", say:["Warm-up: guess first!", "No pressure: guessing before you learn helps it stick, even when the guess is wrong."]}) +
+      h = ICA.mugi("think", '<span class="eyebrow">Guess first</span><p><b>'+md(hk.q)+'</b></p><p class="small muted">No pressure: guessing before you learn helps it stick, even when the guess is wrong.</p>', {cls:"mpop", say:["Guess first!", "No pressure: guessing before you learn helps it stick, even when the guess is wrong."]}) +
         '<div class="hookopts">'+hk.options.map(function(o, j){ var cls = picked != null && j === hk.answer ? ' class="right"' : ''; return '<button data-hook="'+j+'" aria-pressed="'+(picked === j)+'"'+cls+'>'+md(o)+'</button>'; }).join("")+'</div>' +
         (picked != null ? ICA.mugi(picked === hk.answer ? "yay" : "tip", '<p><b>'+(picked === hk.answer ? "Good instinct!" : "Ooh, interesting guess. Here’s the twist:")+'</b></p><p>'+md(hk.reveal)+'</p>', {small:true, cls:"mpop", say:[picked === hk.answer ? "Good instinct!" : "Ooh, interesting guess. Here’s the twist:"]}) : '');
     } else if (c.k === "content"){
       h = (c.first && c.h ? '<h3>'+md(c.h)+'</h3>' : '<span class="eyebrow">'+esc(String(c.h || "").replace(/[*`]/g, ""))+' · continued</span>')+'<div class="prose">'+ICA.blocks(c.blocks)+'</div>';
     } else if (c.k === "ex"){
       var solved = s.tries[c.ex.id];
-      h = '<div id="dkmugi">'+ICA.mugi(solved ? "yay" : "think", solved ? "<b>Done!</b> You can try it again or move on." : "<b>Quick check.</b> Your turn! Wrong answers are fine: each one explains itself.", {small:true})+'</div><div id="dkex"></div>';
+      h = '<div id="dkmugi">'+ICA.mugi(solved ? "yay" : "think", solved ? "<b>Done!</b> You can try it again or move on." : "<b>Your turn!</b> Wrong answers are fine: each one explains itself.", {small:true})+'</div><div id="dkex"></div>';
     } else {
       s.learn = 1; ICA.save(); markTabs(l);
       var left = nTries();
