@@ -741,11 +741,11 @@ ICA.sayGroups = function(root){
 var AUD = {cache:{}, el:null, btn:null};
 ICA.say = function(kind, key, btn){
   var many = String(key).split("\u0001");
-  if (many.length > 1){ var i = 0; AUD.queue = function(){ i++; if (i < many.length){ ICA.say(kind, many[i], btn); if (btn) btn.classList.add("playing"); } else AUD.queue = null; }; AUD.queueKeep = true; ICA.say(kind, many[0], btn); return true; }
+  if (many.length > 1){ var i = 0; AUD.gap = kind === "ja" ? 450 : 0; AUD.queue = function(){ i++; if (i < many.length){ ICA.say(kind, many[i], btn); if (btn) btn.classList.add("playing"); } else AUD.queue = null; }; AUD.queueKeep = true; ICA.say(kind, many[0], btn); return true; }
   if (!AUD.queueKeep) AUD.queue = null; AUD.queueKeep = false;
   var f = (ICA.audioIndex()[kind] || {})[key]; if (!f) return false;
   var url = ICA.base + "audio/" + f, st = ICA.load().settings || {}, rate = parseFloat(st.audioSpeed) || 1;
-  if (!AUD.el){ AUD.el = new Audio(); AUD.el.addEventListener("ended", function(){ if (AUD.queue){ AUD.queueKeep = true; AUD.queue(); return; } if (AUD.btn) AUD.btn.classList.remove("playing"); AUD.btn = null; }); }
+  if (!AUD.el){ AUD.el = new Audio(); AUD.el.addEventListener("ended", function(){ if (AUD.queue){ var q = AUD.queue; setTimeout(function(){ if (AUD.queue !== q) return; AUD.queueKeep = true; q(); }, AUD.gap || 0); return; } if (AUD.btn) AUD.btn.classList.remove("playing"); AUD.btn = null; }); }
   var a = AUD.el; a.pause(); if (AUD.btn) AUD.btn.classList.remove("playing");
   a.src = AUD.cache[url] || url; a.playbackRate = rate; try { a.preservesPitch = true; } catch(e){}
   var p = a.play(); if (p && p.catch) p.catch(function(){});
@@ -758,15 +758,30 @@ function ttsBtn(kind, key, label){
   b.setAttribute("aria-label", label); b.title = label; b.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.8 3.6a6 6 0 0 1 0 8.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>';
   return b;
 }
+/* kana-only words whose melody depends on the meaning (あめ: rain or candy). One recording would pick an arbitrary
+   accent, so the English gloss written after the word decides: "あめ (rain)" plays 雨, "はな (flower or nose)" plays both */
+var PITCHPAIR = {"あめ":[["rain","雨"],["candy","飴"]], "はし":[["chopsticks","箸"],["bridge","橋"],["edge","端"]], "はな":[["flower","花"],["nose","鼻"]],
+  "かき":[["persimmon","柿"],["oyster","牡蠣"]], "さけ":[["salmon","鮭"],["sake","酒"],["alcohol","酒"]], "きる":[["cut","切る"],["wear","着る"],["put on","着る"]]};
+function glossKeys(g, idx){
+  var opts = PITCHPAIR[g.key]; if (!opts) return null;
+  var t = "", y = g.nodes[g.nodes.length - 1].nextSibling;
+  for (var j = 0; y && j < 5 && t.length < 60; j++, y = y.nextSibling) t += y.textContent;
+  var m = t.match(/^\s*(?:\(([^)]*)\)|meaning ([a-z ]+))/i); if (!m) return null;
+  var gl = (m[1] || m[2]).toLowerCase(), ks = [];
+  opts.forEach(function(o){ if (new RegExp("\\b" + o[0] + "\\b").test(gl) && ks.indexOf(o[1]) < 0 && idx.ja[o[1]]) ks.push(o[1]); });
+  return ks.length ? ks : null;
+}
 ICA.voiceScan = function(root){
   var idx = ICA.audioIndex(); if (!root || !root.querySelectorAll) return;
   if (idx.ja && Object.keys(idx.ja).length) ICA.sayGroups(root).forEach(function(g){
     var vk = g.key + "|" + g.read; if (idx.ja[vk]) g.key = vk;   // same words, different furigana (何 read なに in a "spot the mistake" item): its own clip
+    var label = g.key, paired = false;
+    if (!idx.ja[g.key]){ var pk = glossKeys(g, idx); if (pk){ label = g.key + " (" + pk.join(", then ") + ")"; g.key = pk.join("\u0001"); paired = true; } }
     var first = segNode(g.nodes[0]) ? g.nodes[0].parentElement : g.nodes[0];   // a line that starts with a tappable word
-    if (!idx.ja[g.key] || first.closest("button,label,select,option,[data-nosay]")) return;
+    if (!(paired || idx.ja[g.key]) || first.closest("button,label,select,option,[data-nosay]")) return;
     var w = document.createElement("span"); w.className = "say"; w.setAttribute("lang", "ja");
     g.nodes[0].parentNode.insertBefore(w, g.nodes[0]); g.nodes.forEach(function(n){ w.appendChild(n); });
-    w.appendChild(ttsBtn("ja", g.key, "Listen: " + g.key));
+    w.appendChild(ttsBtn("ja", g.key, "Listen: " + label));
   });
   /* Mugi's speech bubbles: one button per bubble, playing its lines in turn (data-say-lines, or its paragraphs) */
   var BUB = ".sbub,.ssay,.bub,.mugi .bubble,.mline";
