@@ -209,11 +209,29 @@ function markTabs(l){ ICA.$$(".tabs [data-part]").forEach(function(b){ var k = b
 function cardMode(){ return ICA.load().settings.learnView !== "page"; }
 function plain(x){ if (x == null) return ""; if (typeof x === "string") return x; if (Array.isArray(x)) return x.map(plain).join(" "); if (typeof x === "object") return Object.keys(x).filter(function(k){ return k !== "fig" && k !== "alt"; }).map(function(k){ return plain(x[k]); }).join(" "); return String(x); }
 function words(b){ if (b && b.fig) return 45; if (b && b.table) return Math.min(160, plain(b.table).split(/\s+/).length * .7); return plain(b).replace(/\[\[[^|\]]*\|?|\]\]|\{\{[^|}]*\|?|\}\}|[*`]/g, " ").split(/\s+/).filter(Boolean).length; }
+var STOP = {"which":1,"these":1,"their":1,"there":1,"about":1,"would":1,"other":1,"first":1,"after":1,"before":1,"because":1,"answer":1,"correct":1,"right":1,"wrong":1,"sentence":1,"sentences":1,"words":1,"means":1,"meaning":1,"japanese":1,"english":1,"following":1,"choose":1,"every":1,"something":1,"someone":1,"where":1,"while":1,"could":1,"should":1,"still":1,"really":1,"always":1,"never":1,"better":1,"using":1,"example":1,"examples":1};
+function termsOf(txt){
+  var t = {}, s = String(txt).replace(/\[([^\]]+)\]\{[^}]*\}/g, "$1").replace(/\\u[0-9a-f]{4}/gi, " ");
+  (s.toLowerCase().match(/[a-zāēīōū]{5,}/g) || []).forEach(function(w){ if (!STOP[w]) t[w] = 1; });
+  (s.match(/[ぁ-ヿ㐀-鿿々ー]{2,}/g) || []).forEach(function(w){ t[w] = 1; });
+  return t;
+}
+window.ICA_buildDeck = function(l){ return buildDeck(l); };   /* for tools/tests */
 function buildDeck(l){
   var cards = [{k:"intro"}];
   if (l.hook) cards.push({k:"hook"});
   var secs = l.learn || [], tries = l.try || [], S = secs.length, E = tries.length, place = {};
-  tries.forEach(function(ex, j){ var at = Math.min(S - 1, Math.max(1, Math.ceil((j + 1) * S / E) - 1)); (place[at] = place[at] || []).push(ex); });
+  /* each practice question goes after the section that first teaches what it asks about (its key words and Japanese),
+     never earlier than an even spread through the lesson: questions shouldn't come before their topic */
+  var secText = secs.map(function(sec){ return termsOf(JSON.stringify(sec)); });
+  tries.forEach(function(ex, j){
+    var at = Math.min(S - 1, Math.max(1, Math.ceil((j + 1) * S / E) - 1));
+    var asks = termsOf(JSON.stringify([ex.q, ex.options, ex.items, ex.buckets, ex.parts, ex.pairs, ex.left, ex.right, ex.text]));
+    var first = []; Object.keys(asks).forEach(function(t){ for (var i = 0; i < S; i++) if (secText[i][t]){ first.push(i); break; } });
+    first.sort(function(a, b){ return a - b; });
+    if (first.length){ var need = first[Math.max(0, Math.ceil(first.length * 0.75) - 1)]; if (need > at) at = need; }   // where 3/4 of its terms have been taught
+    (place[at] = place[at] || []).push(ex);
+  });
   secs.forEach(function(sec, si){
     var cur = {k:"content", h:sec.h, first:true, blocks:[]}, n = 0;
     (sec.body || []).forEach(function(b){
