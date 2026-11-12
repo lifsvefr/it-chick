@@ -332,3 +332,5 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .ttsb:focus-visible{outline:2px solid var(--lupine);outline-offset:2px}
 .ttsb.playing{background:var(--lupine);color:var(--panel);border-color:var(--lupine)}
 .ttsb.mugib{color:var(--rose);border-color:color-mix(in srgb,var(--rose) 45%,transparent)}
+.ttsb.playing{color:var(--bg)}
+.ttsb.mugib.playing{background:var(--rose);border-color:var(--rose);color:var(--bg)}
