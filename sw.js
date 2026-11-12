@@ -1,6 +1,6 @@
 /* IT CHICK Academy service worker: always tries the network first, so updates show at once,
    and falls back to the last saved copy when offline. Only files from this site are kept. */
-var CACHE = "itchick-v12";
+var CACHE = "itchick-v13";
 self.addEventListener("install", function(){ self.skipWaiting(); });
 self.addEventListener("activate", function(e){ e.waitUntil(self.clients.claim()); });
 self.addEventListener("fetch", function(e){
