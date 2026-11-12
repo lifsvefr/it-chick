@@ -690,11 +690,14 @@ ICA.applySettings();
 ICA.audioIndex = function(){ return window.ICA_AUDIO || {ja:{}, mugi:{}}; };
 ICA.sayText = function(nodes){ return nodes.map(function(n){ if (n.nodeType === 3) return n.nodeValue; var c = n.cloneNode(true); ICA.$$("rt,rp", c).forEach(function(r){ r.parentNode.removeChild(r); }); return c.textContent; }).join("").replace(/\s+/g, " ").trim(); };
 function jaNode(n){ return n && n.nodeType === 1 && (n.tagName === "SPAN" || n.tagName === "RUBY") && n.getAttribute("lang") === "ja" && !n.classList.contains("say"); }
+/* a tappable word inside a Japanese line ("Spot it" exercises): part of the spoken line, not a break in it */
+function segNode(n){ return !!(n && n.nodeType === 1 && n.tagName === "BUTTON" && n.classList.contains("seg") && /[ぁ-ヿ㐀-鿿]/.test(n.textContent) && !/[A-Za-z]/.test(n.textContent)); }
+function readOf(x){ if (x.nodeType === 3) return x.nodeValue; if (x.tagName === "RUBY"){ var rt = x.querySelector("rt"); return rt ? rt.textContent : x.textContent; } return Array.prototype.map.call(x.childNodes, readOf).join(""); }
 /* text between two Japanese runs that still belongs to one spoken line: Japanese punctuation, the spaces of beginner
    spacing (わたしは がくせいです), a "+" after a kanji with furigana (飲 + みます), or a placeholder letter (A は B ほど) */
 var PH = /^\s*[XYABC]?\s*$/;
 function joins(x){
-  if (!x || x.nodeType !== 3 || !jaNode(x.nextSibling)) return false;
+  if (!x || x.nodeType !== 3 || !(jaNode(x.nextSibling) || segNode(x.nextSibling))) return false;
   var v = x.nodeValue;
   if (/^[　-〿！-｠]+$/.test(v)) return true;
   if (/^\s*[+＋]\s*$/.test(v)) return !!(x.previousSibling && x.previousSibling.tagName === "RUBY");
@@ -713,13 +716,14 @@ ICA.sayGroups = function(root){
   var out = [], seen = new Set();
   ICA.$$('span[lang="ja"],ruby[lang="ja"]', root).forEach(function(n){
     if (seen.has(n) || n.closest(".say,rt,.ttsb") || (n.parentElement && n.parentElement.closest("ruby"))) return;
-    var prev = n.previousSibling; if (jaNode(prev) || (joins(prev) && jaNode(prev.previousSibling))) return;   // not the start of a run
-    var g = [n]; seen.add(n); var x = n.nextSibling;
-    while (x && (jaNode(x) || (x.nodeType === 3 && /^[　-〿！-｠]+$/.test(x.nodeValue)) || joins(x))){ g.push(x); if (x.nodeType === 1) seen.add(x); x = x.nextSibling; }
+    if (n.parentElement && segNode(n.parentElement)){ if (n.previousSibling) return; n = n.parentElement; }   // a tappable word: its line may start here
+    var prev = n.previousSibling; if (jaNode(prev) || segNode(prev) || (joins(prev) && (jaNode(prev.previousSibling) || segNode(prev.previousSibling)))) return;   // not the start of a run
+    var g = [n]; seen.add(n); if (segNode(n)) ICA.$$('span[lang="ja"],ruby[lang="ja"]', n).forEach(function(c){ seen.add(c); }); var x = n.nextSibling;
+    while (x && (jaNode(x) || segNode(x) || (x.nodeType === 3 && /^[　-〿！-｠]+$/.test(x.nodeValue)) || joins(x))){ g.push(x); if (x.nodeType === 1){ seen.add(x); ICA.$$('span[lang="ja"],ruby[lang="ja"]', x).forEach(function(c){ seen.add(c); }); } x = x.nextSibling; }
     while (g.length > 1 && g[g.length - 1].nodeType === 3 && !/[^\s]/.test(g[g.length - 1].nodeValue)) g.pop();
     var lead = prev && prev.nodeType === 3 && prev.nodeValue.match(/(?:^|[\s(（「“])([XYABC])\s*$/);   // "X は どこですか": the placeholder before it
     if (lead && !/^[ぁ-ゖ]/.test(ICA.sayText(g))) lead = null;   // only before a particle (X は, A な), not a speaker label (A：…) or a noun
-    var key = (lead ? lead[1] + " " : "") + ICA.sayText(g), read = g.map(function(x){ if (x.nodeType === 3) return x.nodeValue; var rt = x.tagName === "RUBY" && x.querySelector("rt"); return rt ? rt.textContent : x.textContent; }).join("").replace(/\s+/g, " ").trim();
+    var key = (lead ? lead[1] + " " : "") + ICA.sayText(g), read = g.map(readOf).join("").replace(/\s+/g, " ").trim();
     if (lead) read = lead[1] + " " + read;
     var core = key.replace(/[　-〿！-｠・\s]/g, "");
     if (!/[ぁ-んァ-ヴ㐀-鿿々]/.test(key) || /^[っゃゅょぁぃぅぇぉッャュョァィゥェォー゛゜]+$/.test(core)) return;
@@ -758,7 +762,8 @@ ICA.voiceScan = function(root){
   var idx = ICA.audioIndex(); if (!root || !root.querySelectorAll) return;
   if (idx.ja && Object.keys(idx.ja).length) ICA.sayGroups(root).forEach(function(g){
     var vk = g.key + "|" + g.read; if (idx.ja[vk]) g.key = vk;   // same words, different furigana (何 read なに in a "spot the mistake" item): its own clip
-    if (!idx.ja[g.key] || g.nodes[0].closest("button,label,select,option,[data-nosay]")) return;
+    var first = segNode(g.nodes[0]) ? g.nodes[0].parentElement : g.nodes[0];   // a line that starts with a tappable word
+    if (!idx.ja[g.key] || first.closest("button,label,select,option,[data-nosay]")) return;
     var w = document.createElement("span"); w.className = "say"; w.setAttribute("lang", "ja");
     g.nodes[0].parentNode.insertBefore(w, g.nodes[0]); g.nodes.forEach(function(n){ w.appendChild(n); });
     w.appendChild(ttsBtn("ja", g.key, "Listen: " + g.key));
