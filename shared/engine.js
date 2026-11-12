@@ -276,9 +276,12 @@ ICA.blocks = function(list){
 var toastT;
 /* Mugi, the academy's guide. mood: hello | think | oops | yay | tip | sleepy */
 ICA.MUGI_ALT = {hello:"Mugi waving hello", think:"Mugi thinking, hand on chin", oops:"Mugi wincing with a sweat drop", yay:"Mugi cheering with sparkly eyes", tip:"Mugi raising one finger to explain", sleepy:"Mugi dozing off"};
+/* opt.say: the lines Mugi speaks for this bubble, when its text changes from time to time (a lesson title, a count):
+   recorded fixed lines that carry the same message. Without it, the bubble's own paragraphs are spoken. */
 ICA.mugi = function(mood, html, opt){
   opt = opt || {};
-  return '<div class="mugi'+(opt.small ? " sm" : "")+(opt.cls ? " "+opt.cls : "")+'"><img src="'+ICA.base+'shared/mascot/'+mood+'.webp" alt="'+ICA.MUGI_ALT[mood]+'" width="'+(opt.small ? 64 : 96)+'" loading="lazy"><div class="bubble">'+html+'</div></div>';
+  var say = opt.say ? ' data-say-lines="'+ICA.esc(opt.say.join("\u0001"))+'"' : '';
+  return '<div class="mugi'+(opt.small ? " sm" : "")+(opt.cls ? " "+opt.cls : "")+'"><img src="'+ICA.base+'shared/mascot/'+mood+'.webp" alt="'+ICA.MUGI_ALT[mood]+'" width="'+(opt.small ? 64 : 96)+'" loading="lazy"><div class="bubble"'+say+'>'+html+'</div></div>';
 };
 ICA.toast = function(msg){
   var t = ICA.$(".toast"); if (!t){ t = document.createElement("div"); t.className = "toast"; t.setAttribute("role","status"); document.body.appendChild(t); }
@@ -337,7 +340,7 @@ ICA.settingsSheet = function(o){
   var snd = s.sound || (st.arcade && st.arcade.jp && st.arcade.jp.snd === false ? "off" : "on");
   function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
   ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
-    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+'</div>'+
+    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+seg("mugiAuto","Mugi speaks by herself",[["off","Off"],["on","On"]],s.mugiAuto || "off")+'</div>'+
     '<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
     '<h3>Backup</h3><p class="small muted">Without sync, progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details'+(o.openRestore ? ' open' : '')+'><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
@@ -736,10 +739,17 @@ ICA.voiceScan = function(root){
     g.nodes[0].parentNode.insertBefore(w, g.nodes[0]); g.nodes.forEach(function(n){ w.appendChild(n); });
     w.appendChild(ttsBtn("ja", g.key, "Listen: " + g.key));
   });
-  /* Mugi's speech bubbles: one button per bubble, playing its paragraphs in turn */
-  if (idx.mugi && Object.keys(idx.mugi).length) ICA.$$(".sbub,.ssay,.bub", root.matches && root.matches(".sbub,.ssay,.bub") ? root.parentNode : root).forEach(function(bub){
-    if (bub.querySelector(".ttsb")) return; var ps = ICA.$$("p", bub), keys = ps.map(function(p){ return p.textContent.replace(/\s+/g, " ").trim(); }).filter(function(k){ return idx.mugi[k]; });
-    if (keys.length) ps[ps.length - 1].appendChild(ttsBtn("mugi", keys.join("\u0001"), "Hear Mugi"));
+  /* Mugi's speech bubbles: one button per bubble, playing its lines in turn (data-say-lines, or its paragraphs) */
+  var BUB = ".sbub,.ssay,.bub,.mugi .bubble,.mline";
+  if (idx.mugi && Object.keys(idx.mugi).length) ICA.$$(BUB, root.matches && root.matches(BUB) ? root.parentNode : root).forEach(function(bub){
+    if (bub.querySelector(".ttsb.mugib")) return;
+    var clean = function(t){ return t.replace(/\s+/g, " ").replace(/^Mugi:\s*/, "").trim(); };
+    var ps = ICA.$$("p", bub), lines = bub.getAttribute("data-say-lines");
+    var keys = (lines ? lines.split("\u0001") : ps.length ? ps.map(function(p){ return clean(p.textContent); }) : [clean(bub.textContent)]).filter(function(k){ return idx.mugi[k]; });
+    if (!keys.length) return;
+    var b = ttsBtn("mugi", keys.join("\u0001"), "Hear Mugi"); b.classList.add("mugib");
+    (ps.length ? ps[ps.length - 1] : bub).appendChild(b);
+    if ((ICA.load().settings || {}).mugiAuto === "on" && !AUTO_DONE.has(bub) && bub.getBoundingClientRect().height && !bub.closest(".sheet")){ AUTO_DONE.add(bub); MUGI_NEXT = b; }
   });
 };
 document.addEventListener("click", function(e){ var b = e.target.closest && e.target.closest(".ttsb"); if (!b) return; e.preventDefault(); e.stopPropagation(); ICA.say(b.getAttribute("data-say"), b.getAttribute("data-key"), b); }, true);
@@ -748,13 +758,22 @@ if (window.MutationObserver) (function(){
   new MutationObserver(function(ms){ ms.forEach(function(m){ m.addedNodes.forEach(function(n){ if (n.nodeType === 1 && !n.classList.contains("ttsb") && !n.classList.contains("say")) q.push(n); }); }); if (!t) t = setTimeout(function(){ var list = q; q = []; t = null; list.forEach(function(n){ if (n.isConnected) ICA.voiceScan(n); }); ICA.autoSay(); }, 40); })
     .observe(document.documentElement, {childList:true, subtree:true});
 })();
-/* auto-play: the first Japanese line of a newly shown exercise, if the setting is on */
-var AUTO_DONE = new WeakSet();
+/* auto-play: a newly shown Mugi bubble (setting "mugiAuto"), else the first Japanese line of a new exercise ("audioAuto") */
+var AUTO_DONE = new WeakSet(), MUGI_NEXT = null;
 ICA.autoSay = function(){
-  var st = ICA.load().settings || {}; if (st.audioAuto !== "on") return;
+  var st = ICA.load().settings || {};
+  if (MUGI_NEXT){ var m = MUGI_NEXT; MUGI_NEXT = null; if (m.isConnected){ ICA.say("mugi", m.getAttribute("data-key"), m); return; } }
+  if (st.audioAuto !== "on") return;
   var q = ICA.$$(".ex .q .ttsb, .qcard .ttsb").filter(function(b){ var ex = b.closest(".ex,.qcard"); return ex && !AUTO_DONE.has(ex) && ex.getBoundingClientRect().height; })[0];
   if (q){ AUTO_DONE.add(q.closest(".ex,.qcard")); ICA.say(q.getAttribute("data-say"), q.getAttribute("data-key"), q); }
 };
+
+/* pages that don't load the course (the labs) still get the audio list, so Mugi's bubbles can speak there too */
+setTimeout(function(){
+  if (window.ICA_AUDIO || !document.body) return;
+  var sc = document.createElement("script"); sc.src = ICA.base + "data/audio-index.js";
+  sc.onload = function(){ ICA.voiceScan(document.body); ICA.autoSay(); }; document.head.appendChild(sc);
+}, 1200);
 
 /* home-screen app: register the service worker from the site root (one folder above shared/) */
 (function(){

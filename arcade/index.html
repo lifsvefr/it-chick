@@ -127,6 +127,7 @@
 .res{justify-items:center;text-align:center;min-height:0}
 .res .rt{font-family:var(--pixel);font-size:13px;letter-spacing:.08em;color:var(--soft)}
 .newhi{font-family:var(--pixel);font-weight:700;font-size:20px;color:var(--gY);text-shadow:var(--glowY);animation:blink .8s steps(1) infinite}
+.newhi.clean{color:var(--gG);text-shadow:var(--glowG,0 0 8px currentColor);animation:none}
 .grow{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap}
 .grade{width:78px;height:78px;border:3px solid var(--gT);display:grid;place-items:center;font-family:var(--pixel);font-weight:700;font-size:46px;color:var(--gT);text-shadow:var(--glowT);animation:fx-jelly .8s .2s}
 .final{text-align:left;font-family:var(--pixel);font-size:12px;color:var(--soft);display:grid;gap:2px;letter-spacing:.03em}
@@ -505,9 +506,10 @@ function results(o){
   var st = ICA.load(), key = o.key, low = AFX.LOWER[key], prev = AFX.top(st, key);
   var isBest = !o.noBoard && o.score > 0 && (prev == null || (low ? o.score < prev : o.score > prev));
   var entry = !o.noBoard && o.score > 0 ? AFX.add(st, key, o.score) : null; ICA.save();
-  beep(isBest ? "best" : "end");
-  var G = o.grade, mood = (isBest && prev != null) || G === "S" || G === "A" ? "yay" : G === "B" ? "hello" : "think";
-  var say = isBest && prev != null ? "Nice run! That’s your best score yet." : G === "S" ? "A perfect round. Brilliant!" : G === "A" ? "Great playing!" : G === "B" ? "Nice work. Keep it up!" : "Good practice. The ones you missed are below.";
+  var clean = !isBest && o.perfect;   // every answer right, but not a new best: its own chime, not the "too bad" one
+  beep(isBest ? "best" : clean ? "clear" : "end");
+  var G = o.grade, mood = (isBest && prev != null) || clean || G === "S" || G === "A" ? "yay" : G === "B" ? "hello" : "think";
+  var say = isBest && prev != null ? "Nice run! That’s your best score yet." : clean ? (low ? "Every answer right! Not your fastest time, but a clean run." : "Every answer right! Not your best score, but a clean run.") : G === "S" ? "A perfect round. Brilliant!" : G === "A" ? "Great playing!" : G === "B" ? "Nice work. Keep it up!" : "Good practice. The ones you missed are below.";
   var rows = AFX.board(st, key).slice(0, 4);
   var board = o.noBoard ? '' : '<div class="board" aria-label="Top five"><h3>'+esc(LNAME[key].toUpperCase())+' · TOP 5</h3>'+
     '<div class="brow mugi"><span>1</span><img src="../shared/mascot/pixel/mugi-px-hello.webp" alt=""><span class="n">MUGI</span><span class="s">'+AFX.fmt(key, AFX.MUGI[key])+'</span></div>'+
@@ -515,7 +517,7 @@ function results(o){
     (rows.length < 4 ? new Array(4 - rows.length + 1).join("x").split("").map(function(_, i){ return '<div class="brow"><span>'+(rows.length+i+2)+'</span><span></span><span class="n">– – –</span><span class="s"></span></div>'; }).join("") : '')+'</div>';
   app.innerHTML = '<div class="stack">'+resultsBar(key)+'<div class="crt res" id="scr">'+
     '<div class="rt">'+esc(o.title.toUpperCase())+'</div>'+
-    (isBest ? '<div class="newhi">NEW HIGH SCORE!</div>' : '')+
+    (isBest ? '<div class="newhi">NEW HIGH SCORE!</div>' : clean ? '<div class="newhi clean">ALL CORRECT!</div>' : '')+
     '<div class="grow"><div class="grade" aria-label="Grade '+G+'">'+G+'</div><div class="final">SCORE<b>'+AFX.fmt(key, o.score)+'</b>'+esc(o.sub)+'</div></div>'+
     (entry ? '<div class="nm"><label for="pname">YOUR NAME ON THE BOARD</label><input id="pname" maxlength="12" value="'+esc(entry.n)+'" autocomplete="off" spellcheck="false"></div>' : '')+
     board+
@@ -544,7 +546,7 @@ function review(missed){
 }
 function endScreen(key, score, sub, missed, right, seen){
   stopTimer(); finish(key);
-  results({key:key, title:LNAME[key], score:score, sub:sub, grade:AFX.grade(right, seen, key === "practice" ? 10 : 5), review:review(missed)});
+  results({key:key, title:LNAME[key], score:score, sub:sub, grade:AFX.grade(right, seen, key === "practice" ? 10 : 5), review:review(missed), perfect: seen > 0 && !missed.length});
 }
 function hudL(left){ return '<div class="hud">'+left+'<span class="combo" id="cb" aria-label="Streak"></span><span>SCORE <span id="sc">0</span></span></div>'; }
 var points = function(streak){ return 100 + 20*Math.min(streak - 1, 10); };
@@ -668,7 +670,7 @@ function todayGame(gm){
     if (dl.last !== td){ dl.streak = dl.last === td - DAY ? (dl.streak || 0) + 1 : 1; dl.last = td; }
     if (!dl.tb || dl.tb.d !== td || score > dl.tb.s) dl.tb = {d:td, s:score};
     ICA.save(); finish("today");
-    results({key:"today", title:"Today’s Challenge · day "+dl.streak, score:score, sub:right+" of "+n+" right · best combo ×"+best, grade:AFX.grade(right, n, 10),
+    results({key:"today", title:"Today’s Challenge · day "+dl.streak, score:score, sub:right+" of "+n+" right · best combo ×"+best, grade:AFX.grade(right, n, 10), perfect: right === n && n > 0,
       review:review(missed)+(jmissed.length ? jpMissList(jmissed, "Japanese to look at again")+'<p class="small" id="labnote">These are due now in the <a href="../labs/kanji.html?from=arcade">Kanji Lab</a>.</p>' : '')});
   }
   next();
@@ -774,7 +776,7 @@ function unmiss(key, btn){
 }
 function jpEnd(g, score, unit, sub, missed, level, stars, lowerBetter){
   stopTimer(); finish(g);
-  results({key:g, title:GAMES[g].name+" · "+LV[level], score:score, sub:sub, grade:AFX.gradeStars(stars, missed.length), noBoard: level === "missed",
+  results({key:g, title:GAMES[g].name+" · "+LV[level], score:score, sub:sub, grade:AFX.gradeStars(stars, missed.length), noBoard: level === "missed", perfect: !missed.length,
     note: (level === "missed" ? '<p class="small">Practice rounds on “My missed ones” don’t go on the board.</p>' : '')+
       (missed.length ? '<p class="small" id="labnote">'+missed.length+' card'+(missed.length === 1 ? "" : "s")+' sent to the <a href="../labs/kanji.html?from=arcade">Kanji Lab</a>: '+(missed.length === 1 ? "it’s" : "they’re")+' due now, so '+(missed.length === 1 ? "it comes" : "they come")+' up in your next Lab session.</p>' : ''),
     review: jpMissList(missed, "Worth another look")});

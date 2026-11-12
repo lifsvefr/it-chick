@@ -49,6 +49,7 @@ var SFX = {
   go:    function(){ tone(1046, 0, .4, "square", .22); noise(0, .2, .22, 6000); },
   tick:  function(){ tone(1397, 0, .05, "square", .12); },
   end:   function(){ [523,494,466,440,415].forEach(function(f, i){ tone(f, i*.15, .17, "square", .16); }); tone(392, .75, .6, "square", .18, 98); },
+  clear: function(){ [659,784,988].forEach(function(f, i){ tone(f, i*.1, .12, "triangle", .2); }); tone(1319, .32, .35, "triangle", .2); tone(988, .32, .35, "square", .08); },   /* all right, no new best: bright, short, no fanfare */
   best:  function(){ [523,659,784,1046,784,1046].forEach(function(f, i){ tone(f, i*.08, .1, "square", .18); }); tone(1319, .5, .6, "square", .2); tone(659, .5, .6, "triangle", .28); noise(.5, .25, .18, 8000); }
 };
 AFX.sfx = function(kind, arg){ if (!AFX.soundOn()) return; try { (SFX[kind] || SFX.tap)(arg); } catch(e){} };

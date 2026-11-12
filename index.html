@@ -187,14 +187,15 @@ function greeting(){ var h = new Date().getHours(); return h < 5 ? "Still up?" :
 function today(st, due){
   var box = $("#today"), sp = $("#spread"), nx = nextLesson(st), fresh = !st.last && !Object.keys(st.lessons).length;
   if (!nx){
-    box.innerHTML = ICA.mugi("yay", '<p><b>'+greeting()+'</b> You’ve finished every lesson on your tracks. Amazing.</p><p class="small">Keep it fresh in the Arcade, or add a track on the Progress note.</p>', {cls:"mpop"});
+    box.innerHTML = ICA.mugi("yay", '<p><b>'+greeting()+'</b> You’ve finished every lesson on your tracks. Amazing.</p><p class="small">Keep it fresh in the Arcade, or add a track on the Progress note.</p>', {cls:"mpop", say:[greeting(), "You’ve finished every lesson on your tracks. Amazing.", "Keep it fresh in the Arcade, or add a track on the Progress note."]});
     sp.innerHTML = '<div class="pg"><h3>Quests</h3><span class="lt">All done!</span><span class="mt">Every lesson on your tracks</span><a class="cta" href="quests/index.html">All courses →</a></div><div class="pg"><h3>Next</h3><span class="mt">Review in the Arcade</span><span class="mt">or add a track</span></div>';
     return;
   }
   var l = nx.l, u = ICA.unitById[l.unit], tr = ICA.tracks[u.track], ls = st.lessons[l.id] || {};
   var where = nx.resume && ls.card ? "You were partway through, and I saved your place." : nx.resume ? "Pick up where you left off." : "Here’s your next lesson.";
   var say = fresh ? '<p><b>Welcome!</b> Your first lesson is ready whenever you are: about '+l.minutes+' minutes, in short cards.</p>'+(st.welcomed ? '' : '<div class="quick"><button id="othertrack">Run setup</button></div>') : '<p><b>'+greeting()+'</b> '+where+(due ? ' You also have '+due+' flashcard'+(due === 1 ? '' : 's')+' ready in the Arcade.' : '')+'</p>';
-  box.innerHTML = ICA.mugi(fresh ? "hello" : nx.resume ? "tip" : "hello", say, {cls:"mpop"});
+  var lines = fresh ? ["Welcome! Your first lesson is ready whenever you are, in short cards."] : [greeting(), where].concat(due ? ["You also have flashcards ready in the Arcade."] : []);
+  box.innerHTML = ICA.mugi(fresh ? "hello" : nx.resume ? "tip" : "hello", say, {cls:"mpop", say:lines});
   /* the unit checklist: up to 6 lessons around the current one */
   var all = ICA.unitLessons(u.id), at = all.indexOf(l), from = Math.max(0, Math.min(at - 2, all.length - 6)), shown = all.slice(from, from + 6);
   var list = shown.map(function(x){ var d = (st.lessons[x.id] || {}).done; return '<li class="'+(d ? 'd' : x === l ? 'cur' : '')+'"><a href="quests/index.html#'+x.id+'"><i aria-hidden="true">'+(d ? '✓' : '')+'</i><span>'+esc(x.title)+'</span></a></li>'; }).join("");
