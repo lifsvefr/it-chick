@@ -348,3 +348,31 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .plate .pj{font-size:1.3rem;font-weight:700}
 .plate .pr{display:none;gap:2px}
 .plate.open .pr{display:grid}
+/* Kamome House: mailbox bank and rubbish station */
+.mbrow{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.mbank{flex:1 1 260px;display:grid;grid-template-columns:repeat(auto-fill,minmax(98px,1fr));gap:5px;padding:8px;background:#6d665f;border-radius:6px;box-shadow:inset 0 0 0 2px #4e4842}
+.mbox{position:relative;display:grid;justify-items:center;align-content:end;gap:4px;min-height:74px;padding:22px 4px 8px;border:0;border-radius:3px;cursor:pointer;color:#222;
+  background:linear-gradient(180deg,#9a9fa3 0%,#c9cdd0 18%,#aeb3b7 55%,#8f9498 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -2px 0 rgba(0,0,0,.25)}
+.mbox .rm{position:absolute;top:4px;left:5px;font:700 .62rem/1 ui-monospace,Menlo,monospace;color:#f4f4f4;background:#2d2d2d;padding:2px 4px;border-radius:2px}
+.mbox .slot{position:absolute;top:24px;left:12%;right:12%;height:5px;border-radius:3px;background:#3a3d40;box-shadow:inset 0 2px 2px rgba(0,0,0,.6)}
+.mbox .lbl{margin-top:14px;max-width:100%;padding:3px 6px;background:#fbfbf7;border:1px solid #9a9a92;border-radius:2px;font-size:.8rem;font-weight:700;white-space:nowrap;text-align:center;min-width:70%;letter-spacing:-.02em}
+.mbox.old .lbl{background:#ece2c6;color:#7d6c4e;border-color:#b9ab88}
+.mbox.empty .lbl{color:transparent}
+.mbox.sel{outline:3px solid var(--accent,#b8546b);outline-offset:1px}
+.mbox.wood{flex:0 0 96px;min-height:86px;background:linear-gradient(180deg,#8a5a36,#6e4426);box-shadow:inset 0 0 0 2px #5a361d}
+.mbox.wood .rm{background:#3b2414}
+.mbox.wood .slot{background:#2a170b}
+.mbinfo{margin-top:8px}
+.gstation{margin-top:6px}
+.groof{height:12px;background:#4f6b57;border-radius:6px 6px 0 0}
+.gnet{padding:10px;background:repeating-linear-gradient(45deg,rgba(79,107,87,.18) 0 2px,transparent 2px 9px),repeating-linear-gradient(-45deg,rgba(79,107,87,.18) 0 2px,transparent 2px 9px);border:2px solid #4f6b57;border-top:0;border-radius:0 0 8px 8px}
+.gbags{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.gbag{display:grid;justify-items:center;gap:4px;padding:10px 8px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:inherit;font:inherit;cursor:pointer;text-align:center}
+.gbag .gi{width:44px;height:44px;color:#3b3b3b}
+.gbag .gl{font-size:1.1rem;font-weight:700}
+.gbag .gx{display:none;text-align:left}
+.gbag.open .gx{display:block}
+.gcal{margin-top:10px;border-collapse:collapse;width:100%;max-width:360px;background:var(--card)}
+.gcal caption{text-align:left;font-weight:700;padding-bottom:4px}
+.gcal th,.gcal td{border:1px solid var(--line);padding:6px 10px;text-align:left}
+.gcal th{width:3.5em;font-size:1.1rem}

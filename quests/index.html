@@ -14,10 +14,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=22">
+<link rel="stylesheet" href="../shared/style.css?v=23">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=22"></script>
-<script src="../data/story.js?v=22"></script>
+<script src="../shared/engine.js?v=23"></script>
+<script src="../data/story.js?v=23"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -366,6 +366,12 @@ function storyShelf(){
   h += storyList().map(function(e){ var u = ICA.unitById[e.unit]; return '<a class="tile storytile" href="#story-'+e.unit+'"><span class="ic"><span class="num">'+e.n+'</span></span><span class="tx"><span class="tt">'+md(e.title)+'</span><span class="st">Unit '+u.n+' · '+esc(u.title)+' · '+esc(e.month)+'</span></span>'+(storyRead(e.unit) ? '<span class="chip done">✓ Read</span>' : '')+'</a>'; }).join("");
   app.innerHTML = h + '</div><div class="card small muted">More episodes arrive as the story is written.</div></div>';
 }
+var GICON = {
+  bag:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 12c-2-4 1-7 4-5l3 3 3-3c3-2 6 1 4 5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 14h22l3 26a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4z" fill="#fff8d6" stroke="currentColor" stroke-width="2"/></svg>',
+  pla:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="30" rx="6" fill="#fff" stroke="currentColor" stroke-width="2.5"/><path d="M13 20a11 11 0 0 1 19-4" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 12v5h-5" fill="none" stroke="currentColor" stroke-width="2.5"/><text x="24" y="34" text-anchor="middle" font-size="11" font-weight="700" fill="currentColor">プラ</text></svg>',
+  pet:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 7l14 24H10z" fill="#fff" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><text x="24" y="28" text-anchor="middle" font-size="11" font-weight="700" fill="currentColor">1</text><text x="24" y="44" text-anchor="middle" font-size="9" font-weight="700" fill="currentColor">PET</text></svg>',
+  can:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="16" width="14" height="24" rx="3" fill="#dfe7ee" stroke="currentColor" stroke-width="2"/><path d="M32 8h4v8c3 2 4 5 4 8v14a2 2 0 0 1-2 2H30a2 2 0 0 1-2-2V24c0-3 1-6 4-8z" fill="#d9efdf" stroke="currentColor" stroke-width="2"/></svg>'
+};
 function story(uid, draft){
   var e = storyEp(uid, draft), u = ICA.unitById[uid], showEn = u.n <= 4;
   setTitle("Episode "+e.n+" · "+e.title.replace(/<[^>]*>/g, ""));
@@ -378,12 +384,20 @@ function story(uid, draft){
     else if (p.t === "note") h += ICA.mugi("tip", '<p>'+md(p.text)+'</p>', {small:true, cls:"mpop", say:[p.text]});
     else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+esc(it.ja)+'</span><span class="pr"><b>'+esc(it.ro)+'</b><span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
     else if (p.t === "ex"){ h += '<div id="sx'+i+'"></div>'; exs.push([i, p.ex]); }
+    else if (p.t === "mailboxes") h += '<div class="mbwrap" data-mb="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="mbrow"><div class="mbank" role="group" aria-label="Mailboxes">'+p.items.map(function(it, k){ return '<button type="button" class="mbox'+(it.old ? ' old' : '')+(it.ja ? '' : ' empty')+'" data-k="'+k+'" aria-label="Room '+it.room+(it.ja ? '' : ', no name')+'"><span class="rm">'+esc(it.room)+'</span><span class="slot"></span><span class="lbl" lang="ja">'+(esc(it.ja) || '&nbsp;')+'</span></button>'; }).join("")+'</div>'+(p.cottage ? '<button type="button" class="mbox wood" data-k="c" aria-label="Cottage mailbox"><span class="rm">はなれ</span><span class="slot"></span><span class="lbl" lang="ja">'+esc(p.cottage.ja)+'</span></button>' : '')+'</div><div class="mbinfo card small" aria-live="polite">Tap a mailbox.</div></div>';
+    else if (p.t === "gomi") h += '<div class="gomi" data-g="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="gstation"><div class="groof"></div><div class="gnet"><div class="gbags">'+p.items.map(function(it, k){ return '<button type="button" class="gbag" data-k="'+k+'" aria-expanded="false">'+GICON[it.icon]+'<span class="gl" lang="ja">'+esc(it.ja)+'</span><span class="gx small"><b>'+esc(it.en)+'</b> ('+esc(it.ro)+')<br>'+md(it.note)+'</span></button>'; }).join("")+'</div></div></div>'+(p.calendar ? '<table class="gcal" data-nosay><caption>Collection days</caption>'+p.calendar.map(function(r){ return '<tr><th scope="row">'+md("["+r[0]+"]{"+r[1]+"}")+'</th><td lang="ja">'+esc(r[2])+'</td></tr>'; }).join("")+'</table><p class="small muted">'+md(p.calnote)+'</p>' : '')+'</div>';
+
     else if (p.t === "lang") h += '<div class="card"><h2>Language in context</h2><ul>'+p.items.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ul></div>';
     else if (p.t === "reflect") h += ICA.mugi("think", '<span class="eyebrow">Think about it</span><p><b>'+md(p.q)+'</b></p>', {cls:"mpop", say:[p.q]});
   });
   h += '<div class="lessonnav"><a class="btn" href="#'+uid+'">Back to the unit</a>'+(u.checkpoint ? '<a class="btn primary" href="#'+uid+'-cp" data-done>Unit checkpoint →</a>' : '')+'</div></div>';
   app.innerHTML = h;
   exs.forEach(function(x){ ICA.exercise(document.getElementById("sx"+x[0]), x[1], {}); });
+  ICA.$$(".mbwrap", app).forEach(function(w){ var P = e.parts[+w.getAttribute("data-mb")], info = w.querySelector(".mbinfo");
+    ICA.$$(".mbox", w).forEach(function(b){ b.addEventListener("click", function(){ var k = b.getAttribute("data-k"), it = k === "c" ? P.cottage : P.items[+k];
+      ICA.$$(".mbox", w).forEach(function(x){ x.classList.toggle("sel", x === b); });
+      info.innerHTML = '<b>'+esc(it.ro)+'</b>'+(it.ja ? ' <span lang="ja">('+esc(it.ja)+')</span>' : '')+(k === "c" ? ' · the cottage' : ' · Room '+esc(it.room))+'<br>'+md(it.who); }); }); });
+  ICA.$$(".gbag", app).forEach(function(b){ b.addEventListener("click", function(){ var o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.classList.toggle("open", o); }); });
   ICA.$$(".plate", app).forEach(function(b){ b.addEventListener("click", function(){ var o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.classList.toggle("open", o); }); });
   var eb = app.querySelector("[data-en]");
   if (eb) eb.addEventListener("click", function(){ var st = app.querySelector(".story"), on = st.classList.toggle("hide-en"); eb.textContent = on ? "Show English" : "Hide English"; eb.setAttribute("aria-pressed", !on); });

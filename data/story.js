@@ -11,17 +11,24 @@ window.ICA_STORY = {
   episodes: [
   {unit:"e3u1", n:1, title:"Names on the mailboxes", month:"April", level:"Kana only", parts:[
     {t:"narr", text:"Before anything else happens at Kamome House, there are mailboxes. It is April in Shioura, a harbour town on the Sea of Japan coast, and eight nameplates hang by the gate of an old wooden share house. In Japan a mailbox usually shows only the family name. Can you read them?"},
-    {t:"plates", title:"The mailboxes", hint:"Tap a nameplate to check your reading.", items:[
-      {ja:"とがわ", ro:"Togawa", who:"Aoi Togawa, a master's student from Saitama."},
-      {ja:"せと", ro:"Seto", who:"Mariya Seto, from an island an hour away by ferry."},
-      {ja:"くぜ", ro:"Kuze", who:"Kaito Kuze, a first-year student from a mountain town."},
-      {ja:"ベルガラ", ro:"Vergara", who:"Cheska Vergara, from the Philippines. Japanese has no *v*, so katakana usually writes it with the ば row."},
-      {ja:"ゴー", ro:"Ngô", who:"Ngô Hải Yến, from Vietnam. Katakana can't spell the *ng* at the start, so it becomes ゴー, with a long vowel."},
-      {ja:"モンドラゴン", ro:"Mondragón", who:"Rodrigo Mondragón, from Mexico. Two ン in one name."},
-      {ja:"ウィットロック", ro:"Whitlock", who:"Toby Whitlock, from Australia. ウィ is a katakana combination for *wi*, and the small ッ is a one-beat pause."},
-      {ja:"さとう", ro:"Satō", who:"The owners, Mr and Mrs Satō, on the cottage across the garden. Three beats: さ・と・う, a long *o*."}
-    ]},
-    {t:"narr", text:"Above the gate, a wooden sign: かもめそう. *Kamome* is a seagull, and *-sō* is a common ending for the name of a small apartment house. By the door, the rubbish calendar: もえるごみ (burnable rubbish), びん (bottles), かん (cans) and ペットボトル (plastic bottles). Everyone will learn this calendar the hard way."},
+    {t:"mailboxes", title:"The mailboxes", hint:"Tap a mailbox to check your reading.", items:[
+      {room:"101", ja:"ベルガラ", ro:"Vergara", who:"Cheska Vergara, from the Philippines. New this April. Japanese has no *v*, so katakana usually writes it with the ば row."},
+      {room:"102", ja:"モンドラゴン", ro:"Mondragón", old:true, who:"Rodrigo Mondragón, from Mexico. He has lived here since last October, so his label is already fading. Two ン in one name."},
+      {room:"103", ja:"せと", ro:"Seto", old:true, who:"Mariya Seto, from an island an hour away by ferry. She moved in a year ago, in her first year at university."},
+      {room:"201", ja:"ウィットロック", ro:"Whitlock", who:"Toby Whitlock, from Australia. New this April. ウィ is a katakana combination for *wi*, and each small ッ is a one-beat pause."},
+      {room:"202", ja:"とがわ", ro:"Togawa", who:"Aoi Togawa, a master's student from Saitama. New this April."},
+      {room:"203", ja:"くぜ", ro:"Kuze", who:"Kaito Kuze, a first-year student from a mountain town. New this April."},
+      {room:"204", ja:"ゴー", ro:"Ngô", who:"Ngô Hải Yến, from Vietnam. New this April. Katakana can't spell the *ng* at the start, so it becomes ゴー, with a long vowel."},
+      {room:"205", ja:"", ro:"(empty)", who:"Room 205 has no name on it. For now."}],
+      cottage:{ja:"さとう", ro:"Satō", who:"The owners, Mr and Mrs Satō, in the cottage across the garden. Three beats: さ・と・う, a long *o*."}},
+    {t:"narr", text:"Above the gate, a wooden sign: かもめそう. *Kamome* is a seagull, and *-sō* is a common ending for the name of a small apartment house. Next to the gate is the neighbourhood's rubbish station, and Mariya, who has lived here a year, is already explaining it to Yến."},
+    {t:"gomi", title:"The rubbish station", hint:"Tap a bag to see what goes in it. Every city has its own rules; these are Shioura's.", items:[
+      {icon:"bag", ja:"もえるごみ", ro:"moeru gomi", en:"burnable rubbish", note:"Food scraps, paper tissues and anything else that burns, in the city's own see-through bags."},
+      {icon:"pla", ja:"プラ", ro:"pura", en:"plastic packaging", note:"Anything with the プラ mark: wrappers, trays, bags, bottle caps. Rinse it first."},
+      {icon:"pet", ja:"ペットボトル", ro:"petto botoru", en:"plastic (PET) drink bottles", note:"Bottles with the PET mark. Caps and labels off (they go in プラ), rinsed and squashed."},
+      {icon:"can", ja:"びん・かん", ro:"bin, kan", en:"glass bottles and cans", note:"Glass bottles and drink or food cans, rinsed."}],
+      calendar:[["月","げつ","もえるごみ"],["火","か","プラ"],["水","すい","びん・かん・ペットボトル"],["木","もく","もえるごみ"],["金","きん","―"]],
+      calnote:"Days of the week are written with kanji; the small kana above them show the reading. Rubbish goes out by 8 in the morning on its day, never the night before."},
     {t:"note", text:"People think the first Japanese they'll read in a new town is a menu. It's the mailboxes. Then the rubbish calendar. Then, much later, the menu."},
     {t:"narr", text:"Mr Satō looks up at the grey sky and says あめ (rain). Yến, who has just arrived with two suitcases, hears あめ (candy) and looks around for it. Same kana, different melody. A black-and-white cat walks along the wall. Yến calls her ミウ. Mariya, a few minutes later, calls her ムゥ. The cat answers to both."},
     {t:"ex", ex:{id:"story-e3u1-x1", type:"mcq", q:"Which mailbox belongs to Toby Whitlock?", options:[
@@ -33,6 +40,11 @@ window.ICA_STORY = {
       {t:"Three", ok:true, why:"さ・と・う: the long *o* takes a beat of its own."},
       {t:"Two", why:"That would be せと (Seto). In さとう the う after と lengthens the vowel and counts as a beat."},
       {t:"Four", why:"There are only three kana, and each is one beat."}]}},
+    {t:"ex", ex:{id:"story-e3u1-x4", type:"mcq", q:"Yến has an empty plastic tray from the supermarket with the プラ mark on it. Which bag does it go in?", options:[
+      {t:"プラ", ok:true, why:"Right: the プラ mark means plastic packaging, and that has its own collection day (火, *ka*, Tuesday, on this calendar)."},
+      {t:"もえるごみ", why:"Not in Shioura: plastic packaging with the プラ mark is collected separately. Some cities do burn it, which is why you always check the local rules."},
+      {t:"ペットボトル", why:"That bag is only for PET drink bottles. A tray isn't a bottle."},
+      {t:"びん・かん", why:"That's for glass bottles and cans."}]}},
     {t:"ex", ex:{id:"story-e3u1-x3", type:"type", q:"The sign by the gate says *Kamome-sō*. Type it in hiragana.", book:"Write *Kamome-sō* in hiragana.", answer:"かもめそう",
       hint:"The long *o* is written with う in hiragana.",
       wrongs:[{v:"かもめそ", why:"The *o* in *sō* is long, so it needs a second kana: そう."},{v:"かもめそお", why:"A long *o* is usually written with う, not お: そう."}],
@@ -41,7 +53,7 @@ window.ICA_STORY = {
     {t:"reflect", q:"Which nameplate took you longest to read, and what made it hard?"}
   ]},
   {unit:"e3u2", n:2, draft:true, title:"はじめまして", month:"April", level:"N5", parts:[
-    {t:"narr", text:"The first Sunday in April. Mrs Satō has decided that the new residents will eat together, whether they like it or not. Cheska and Rodrigo arrived first, so they are setting the table."},
+    {t:"narr", text:"The first Sunday in April. Mrs Satō has decided that the residents, old and new, will eat together, whether they like it or not. Rodrigo has lived here since October, so he is setting the table. Cheska arrived on Friday, and she is helping, mostly by holding things."},
     {t:"line", who:"rodrigo", ja:"はじめまして。ロドリゴです。メキシコから[来]{き}ました。", en:"Nice to meet you. I'm Rodrigo. I came from Mexico."},
     {t:"line", who:"cheska", ja:"はじめまして。チェスカです。フィリピンから[来]{き}ました。[学生]{がくせい}です。", en:"Nice to meet you. I'm Cheska. I came from the Philippines. I'm a student."},
     {t:"line", who:"rodrigo", ja:"よろしくお[願]{ねが}いします。", en:"Pleased to meet you.", gl:"よろしくお願いします: a set phrase for meeting someone, roughly \"please treat me kindly\"."},
