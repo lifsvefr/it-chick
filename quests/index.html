@@ -14,10 +14,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=24">
+<link rel="stylesheet" href="../shared/style.css?v=25">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=24"></script>
-<script src="../data/story.js?v=24"></script>
+<script src="../shared/engine.js?v=25"></script>
+<script src="../data/story.js?v=25"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -388,7 +388,7 @@ function story(uid, draft){
     else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+esc(it.ja)+'</span><span class="pr"><b>'+esc(it.ro)+'</b><span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
     else if (p.t === "ex"){ h += '<div id="sx'+i+'"></div>'; exs.push([i, p.ex]); }
     else if (p.t === "mailboxes") h += '<div class="mbwrap" data-mb="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="mbrow"><div class="mbank" role="group" aria-label="Mailboxes">'+p.items.map(function(it, k){ return '<button type="button" class="mbox'+(it.old ? ' old' : '')+(it.ja ? '' : ' empty')+'" data-k="'+k+'" aria-label="Room '+it.room+(it.ja ? '' : ', no name')+'"><span class="rm">'+esc(it.room)+'</span><span class="slot"></span><span class="lbl" lang="ja">'+(esc(it.ja) || '&nbsp;')+'</span></button>'; }).join("")+'</div>'+(p.cottage ? '<button type="button" class="mbox wood" data-k="c" aria-label="Cottage mailbox"><span class="rm">はなれ</span><span class="slot"></span><span class="lbl" lang="ja">'+esc(p.cottage.ja)+'</span></button>' : '')+'</div><div class="mbinfo card small" aria-live="polite">Tap a mailbox.</div></div>';
-    else if (p.t === "gomi") h += '<div class="gomi" data-g="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="gstation"><div class="groof"></div><div class="gnet"><div class="gbags">'+p.items.map(function(it, k){ return '<button type="button" class="gbag" data-k="'+k+'" aria-expanded="false">'+GICON[it.icon]+'<span class="gl" lang="ja">'+esc(it.ja)+'</span>'+(it.when ? '<span class="gn">'+esc(it.when)+'</span>' : '')+'<span class="gx small"><b>'+esc(it.en)+'</b> ('+esc(it.ro)+')<br>'+md(it.note)+'</span></button>'; }).join("")+'</div></div></div>'+(p.calendar ? '<table class="gcal" data-nosay><caption>Collection days</caption>'+p.calendar.map(function(r){ return '<tr><th scope="row">'+md("["+r[0]+"]{"+r[1]+"}")+'</th><td lang="ja">'+esc(r[2])+'</td></tr>'; }).join("")+'</table><p class="small muted">'+md(p.calnote)+'</p>' : '')+'</div>';
+    else if (p.t === "gomi") h += '<div class="gomi" data-g="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="gstation"><div class="groof"></div><div class="gnet"><div class="gbags">'+p.items.map(function(it, k){ return '<button type="button" class="gbag" data-k="'+k+'" aria-expanded="false">'+GICON[it.icon]+'<span class="gl" lang="ja">'+esc(it.ja)+'</span>'+(it.when ? '<span class="gn">'+esc(it.when)+'</span>' : '')+'<span class="gx small"><b>'+esc(it.en)+'</b> ('+esc(it.ro)+')<br>'+md(it.note)+'</span></button>'; }).join("")+'</div></div></div>'+(p.calendar ? '<table class="gcal" data-nosay><caption>Collection days</caption>'+p.calendar.map(function(r){ return '<tr><th scope="row" lang="ja"><span class="dk"><small>'+esc(r[1])+'</small><b>'+esc(r[0])+'</b></span></th><td lang="ja">'+esc(r[2])+'</td></tr>'; }).join("")+'</table><p class="small muted">'+md(p.calnote)+'</p>' : '')+'</div>';
 
     else if (p.t === "lang") h += '<div class="card"><h2>Language in context</h2><ul>'+p.items.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ul></div>';
     else if (p.t === "reflect") h += ICA.mugi("think", '<span class="eyebrow">Think about it</span><p><b>'+md(p.q)+'</b></p>', {cls:"mpop", say:[p.q]});

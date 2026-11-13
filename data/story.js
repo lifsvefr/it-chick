@@ -12,10 +12,10 @@ window.ICA_STORY = {
   {unit:"e3u1", n:1, title:"Names on the mailboxes", month:"April", level:"Kana only", parts:[
     {t:"narr", text:"Before anything else happens at Kamome House, there are mailboxes. It is April in Shioura, a harbour town on the Sea of Japan coast, and eight nameplates hang by the gate of an old wooden share house. In Japan a mailbox usually shows only the family name. Can you read them?"},
     {t:"mailboxes", title:"The mailboxes", hint:"Tap a mailbox to check your reading.", items:[
-      {room:"101", ja:"ベルガラ", ro:"Vergara", who:"Cheska Vergara, from the Philippines. New this April. Japanese has no *v*, so katakana usually writes it with the ば row."},
-      {room:"102", ja:"モンドラゴン", ro:"Mondragón", old:true, who:"Rodrigo Mondragón, from Mexico. He has lived here since last October, so his label is already fading. Two ン in one name."},
+      {room:"101", ja:"ベルガラ", ro:"Vergara", old:true, who:"Cheska Vergara, from the Philippines. She has lived here since last October, so her label has had a winter of sea air. Japanese has no *v*, so katakana usually writes it with the ば row."},
+      {room:"102", ja:"モンドラゴン", ro:"Mondragón", who:"Rodrigo Mondragón, from Mexico. New this April. Two ン in one name."},
       {room:"103", ja:"せと", ro:"Seto", old:true, who:"Mariya Seto, from an island an hour away by ferry. She moved in a year ago, in her first year at university."},
-      {room:"201", ja:"ウィットロック", ro:"Whitlock", who:"Toby Whitlock, from Australia. New this April. ウィ is a katakana combination for *wi*, and each small ッ is a one-beat pause."},
+      {room:"201", ja:"ウィットロック", ro:"Whitlock", old:true, who:"Toby Whitlock, from Australia. He moved in last October, the same week as Cheska. ウィ is a katakana combination for *wi*, and each small ッ is a one-beat pause."},
       {room:"202", ja:"とがわ", ro:"Togawa", who:"Aoi Togawa, a master's student from Saitama. New this April."},
       {room:"203", ja:"くぜ", ro:"Kuze", who:"Kaito Kuze, a first-year student from a mountain town. New this April."},
       {room:"204", ja:"ゴー", ro:"Ngô", who:"Ngô Hải Yến, from Vietnam. New this April. Katakana can't spell the *ng* at the start, so it becomes ゴー, with a long vowel."},

@@ -377,4 +377,6 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .gcal{margin-top:10px;border-collapse:collapse;width:100%;max-width:360px;background:var(--panel)}
 .gcal caption{text-align:left;font-weight:700;padding-bottom:4px}
 .gcal th,.gcal td{border:1px solid var(--line);padding:6px 10px;text-align:left}
-.gcal th{width:3.5em;font-size:1.1rem}
+.gcal th{width:3.5em;font-size:1.1rem;text-align:center;vertical-align:middle}
+.gcal .dk{display:flex;flex-direction:column;align-items:center;line-height:1.1}.gcal .dk small{font-size:.6em;font-weight:400;color:var(--soft)}
+.gcal td{vertical-align:middle}
