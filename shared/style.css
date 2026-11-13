@@ -392,3 +392,5 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .kamlogo{width:100%;max-width:520px;height:auto;justify-self:center;display:block;margin:0 auto}
 .storynav{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sline .who{display:flex;align-items:center;gap:4px}.sline .who .ttsb.sl{margin:0 0 0 2px;width:26px;height:26px;min-width:26px;min-height:26px}
+.scat{margin:0;display:flex;justify-content:flex-start;background:none;border:0;padding:0}.scat.r{justify-content:flex-end}.scat img{width:130px;height:auto}

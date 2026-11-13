@@ -773,7 +773,7 @@ ICA.applySettings();
 /* ---------- Audio: ▶ buttons for Japanese examples and Mugi's lines ----------
    data/audio-index.js sets window.ICA_AUDIO = {ja:{text:file}, mugi:{text:file}}; clips live in audio/.
    Japanese text is found after rendering: runs of <span lang="ja"> and <ruby lang="ja"> that sit side by side. */
-ICA.audioIndex = function(){ return window.ICA_AUDIO || {ja:{}, mugi:{}}; };
+ICA.audioIndex = function(){ var a = window.ICA_AUDIO || {ja:{}, mugi:{}}; if (window.ICA_STORY_AUDIO) a.story = window.ICA_STORY_AUDIO; return a; };
 ICA.sayText = function(nodes){ return nodes.map(function(n){ if (n.nodeType === 3) return n.nodeValue; var c = n.cloneNode(true); ICA.$$("rt,rp", c).forEach(function(r){ r.parentNode.removeChild(r); }); return c.textContent; }).join("").replace(/\s+/g, " ").trim(); };
 function jaNode(n){ return n && n.nodeType === 1 && (n.tagName === "SPAN" || n.tagName === "RUBY") && n.getAttribute("lang") === "ja" && !n.classList.contains("say"); }
 /* a tappable word inside a Japanese line ("Spot it" exercises): part of the spoken line, not a break in it */

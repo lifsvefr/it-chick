@@ -14,10 +14,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=32">
+<link rel="stylesheet" href="../shared/style.css?v=33">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=32"></script>
-<script src="../data/story.js?v=32"></script>
+<script src="../shared/engine.js?v=33"></script>
+<script src="../data/story.js?v=33"></script>
+<script src="../data/story-audio.js?v=33"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -383,7 +384,8 @@ function story(uid, draft){
   var exs = [], lastWho = null, side = "l";
   e.parts.forEach(function(p, i){
     if (p.t === "narr") h += '<p class="narr">'+md(p.text)+'</p>';
-    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<img class="face" src="../shared/cast/'+p.who+'/'+(p.mood || "hello")+'.webp" alt="" width="56" loading="lazy">' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; h += '<div class="sline '+side+'"'+(c.acc ? ' style="--acc:'+c.acc+'"' : '')+'>'+face+'<div class="sbody"><span class="who">'+esc(c.name)+'</span><p class="ja" lang="ja">'+md(p.ja)+'</p><p class="en small muted">'+esc(p.en)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div></div>'; }
+    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<img class="face" src="../shared/cast/'+p.who+'/'+(p.mood || "hello")+'.webp" alt="" width="56" loading="lazy">' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; h += '<div class="sline '+side+'"'+(c.acc ? ' style="--acc:'+c.acc+'"' : '')+'>'+face+'<div class="sbody"><span class="who">'+esc(c.name)+(window.ICA_STORY_AUDIO && ICA_STORY_AUDIO[p.who+"|"+p.ja] ? '<button type="button" class="ttsb sl" data-say="story" data-key="'+esc(p.who+"|"+p.ja)+'" aria-label="Play '+esc(c.name)+'’s line" title="Play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.8 3.6a6 6 0 0 1 0 8.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>' : '')+'</span><p class="ja" lang="ja">'+md(p.ja)+'</p><p class="en small muted">'+esc(p.en)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div></div>'; }
+    else if (p.t === "cat") h += '<figure class="scat'+(i % 2 ? ' r' : '')+'"><img src="../shared/cast/cat/'+esc(p.pose || "smug")+'.webp" alt="'+esc(p.alt || "The black-and-white cat")+'" width="130" loading="lazy"></figure>';
     else if (p.t === "note") h += ICA.mugi("tip", '<p>'+md(p.text)+'</p>', {small:true, cls:"mpop", say:[p.text]});
     else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+esc(it.ja)+'</span><span class="pr"><b>'+esc(it.ro)+'</b><span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
     else if (p.t === "ex"){ h += '<div id="sx'+i+'"></div>'; exs.push([i, p.ex]); }
