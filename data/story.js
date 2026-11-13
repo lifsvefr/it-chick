@@ -63,7 +63,7 @@ window.ICA_STORY = {
     {t:"lang", items:["Long vowels: さとう (*Satō*, three beats) and せと (*Seto*, two beats) look alike at a glance, but the extra beat makes a different name.", "Small ッ: the pause in ウィットロック counts as a beat, just like the one in きって.", "Pitch: あめ (rain) starts high and drops; あめ (candy) starts low and stays up. The kana are identical, so only your ear can tell them apart."]},
     {t:"reflect", q:"Which nameplate took you longest to read, and what made it hard?"}
   ]},
-  {unit:"e3u2", n:2, draft:true, title:"はじめまして", month:"April", level:"N5", parts:[
+  {unit:"e3u2", n:2, title:"はじめまして", month:"April", level:"N5", parts:[
     {t:"narr", text:"The first Sunday in April. On Sundays the Satōs cross the garden and eat with the house, and Mrs Satō does the cooking, because she has seen what students cook."},
     {t:"narr", text:"Cheska has lived here since October and is on table duty, which is as close to the cooking as she plans to get. Her assistant is the new man from Room 102. He arrived late last night and has been waiting all day for somebody to introduce himself to."},
     {t:"line", mood:"yay", who:"rodrigo", ja:"はじめまして！ロドリゴです！メキシコから[来]{き}ました！", en:"Nice to meet you! I'm Rodrigo! I'm from Mexico!"},
@@ -123,7 +123,7 @@ window.ICA_STORY = {
     {t:"lang", items:["これ・それ・あれ: Rodrigo asks about the bowl in front of him with これ, Cheska answers about the same bowl with それ (it is near him, not her), and the plate far from both of them is あれ.", "じゃありません: the everyday negative of です. [学生]{がくせい}じゃありません, とり[肉]{にく}じゃありません, [魚]{さかな}じゃありません. Three wrong guesses, three polite corrections.", "の without the noun: それはトビーさんのです (*that's Toby's*). Once everyone knows you mean the chopsticks, you can leave them out."]},
     {t:"reflect", q:"Rodrigo stands up and says はじめまして to every person who comes down the stairs. What do you do when you walk into a room full of people you don't know yet?"}
   ]},
-  {unit:"e3u3", n:3, draft:true, title:"The rules on the door", month:"April", level:"N5", parts:[
+  {unit:"e3u3", n:3, title:"The rules on the door", month:"April", level:"N5", parts:[
     {t:"narr", text:"Monday morning. Rodrigo arrived late on Saturday night, so he missed the tour Mrs Satō gives every new resident. Nobody is allowed to miss the tour. It starts at eight, at the bathroom door."},
     {t:"narr", text:"Kamome House has one bath and seven people. The answer is taped to the door: a timetable ruled in pencil by a retired primary-school teacher, seven names, twenty minutes each. Somebody in Room 202 has already underlined her own slot twice."},
     {t:"line", mood:"tip", who:"fumiko", ja:"おふろは[一人]{ひとり}[二十分]{にじゅっぷん}です。ロドリゴさんは[午後]{ごご}[九時]{くじ}から[九時二十分]{くじにじゅっぷん}までです。", en:"The bath is twenty minutes each. Yours is from 9 to 9:20 in the evening, Rodrigo.", gl:"おふろ: the bath."},
@@ -185,7 +185,7 @@ window.ICA_STORY = {
     {t:"lang", items:["～てもいいですか asks permission. Rodrigo uses it three times: [入]{はい}ってもいいですか, [歌]{うた}ってもいいですか, [書]{か}いてもいいですか. Only the last gets a plain yes: [書]{か}いてもいいです.", "A rule and a request: the door says おふろでねてはいけません (*you must not*), which is a rule for everyone. Mrs Satō says [走]{はし}らないでください (*please don't*), which is a request to one person.", "Counters: [一人]{ひとり}[二十分]{にじゅっぷん}, [二回]{にかい}, [四十七番]{よんじゅうななばん}, もう[一枚]{いちまい}. People, minutes, times, queue numbers and sheets of paper each have their own counting word."]},
     {t:"reflect", q:"Mrs Satō corrects Rodrigo once and then trusts him to remember. When someone corrects your Japanese, what makes the correction easy to take?"}
   ]},
-  {unit:"e3u4", n:4, draft:true, title:"The noticeboard", month:"May", level:"N5", parts:[
+  {unit:"e3u4", n:4, title:"The noticeboard", month:"May", level:"N5", parts:[
     {t:"narr", text:"May. The noticeboard by the front door is where Kamome House keeps its public life: the rubbish calendar, a cooking rota, and Mrs Satō's pencil tally of what the cat is called, which this week stands at nine. This morning there is something new, pinned dead centre with four pins."},
     {t:"plates", title:"The notice", hint:"Read each line of the notice, then tap it to check.", items:[
       {ja:"なりはま クリーンデー", ro:"Nari-hama kurīn dē", who:"Nari-hama Clean-up Day. Nari-hama, the *ringing beach*, is the stretch of sand outside the harbour. It squeaks under your feet, but only when it is very clean, so every May the whole town turns out to clean it."},
@@ -247,7 +247,7 @@ window.ICA_STORY = {
     {t:"lang", items:["One kanji, three readings: 日 is にち in 十七日, ひ in 雨の日, and か in 三日 (みっか). The word around it tells you which.", "Position kanji do the pointing in the storeroom: [上]{うえ}のはこ, [下]{した}のはこ, その[右]{みぎ}, ものおきの[中]{なか}, [外]{そと}に[出]{だ}してください.", "A year can be written digit by digit, as in 一九六八年, but it is read as an ordinary number: せんきゅうひゃくろくじゅうはちねん."]},
     {t:"reflect", q:"Toby and Aoi agree to read only the outsides of the envelopes. Where would you have drawn the line?"}
   ]},
-  {unit:"e3u5", n:5, draft:true, title:"Kitchen talk", month:"June", level:"N4", parts:[
+  {unit:"e3u5", n:5, title:"Kitchen talk", month:"June", level:"N4", parts:[
     {t:"narr", text:"*Previously at Kamome House:* Mrs Satō taught Rodrigo, once, that わかった is for friends and わかりました is for landladies. Toby and Aoi found a tin of old airmail letters in the storeroom, and Mrs Satō carried it away without a word."},
     {t:"narr", text:"A Thursday in June, half past five, and it has been raining since Monday. The kitchen at Kamome House has one stove with two rings, and one of the rings has opinions. Kaito is at the good one, filling the big pot. Rodrigo arrives in the doorway holding a cabbage."},
     {t:"line", mood:"oops", who:"kaito", ja:"あの…今日はぼくの[番]{ばん}ですけど。", en:"Um... it's my turn today, actually.", gl:"番 (ばん): a turn. ～けど: \"but…\", left hanging to soften what you say."},
@@ -303,7 +303,7 @@ window.ICA_STORY = {
     {t:"lang", items:["The switch: Kaito opens politely (ぼくの[番]{ばん}ですけど) and only changes when the older Rodrigo offers: 「です・ます」はいらない. He checks first (いいんですか), then drops everything at once: 今日、おれの[番]{ばん}.", "Quoting: Rodrigo quotes with と (「おれが[作]{つく}る」と言った), and Kaito with casual って after the quote (「やる」って). Both mean *said that…*", "～んです explains: Mrs Satō's あじが[安]{やす}かったんです gives the reason she is standing there with seven fish, and Kaito's いいんですか asks for an explanation before he dares to switch."]},
     {t:"reflect", q:"Rodrigo tells Kaito 「です・ます」はいらない. In your own language, how do you know when you can drop the formality with someone, and who usually says so first?"}
   ]},
-  {unit:"e3u6", n:6, draft:true, title:"The house app", month:"June", level:"N4", parts:[
+  {unit:"e3u6", n:6, title:"The house app", month:"June", level:"N4", parts:[
     {t:"narr", text:"*Previously at Kamome House:* Cheska promised one Thursday to two cooks. Kaito and Rodrigo ended up sharing the stove, and Mrs Satō told Yến that a kitchen is not a company."},
     {t:"narr", text:"Kaito does not like a system that can promise one Thursday twice. He came home from his night shift on Friday and did not go to bed. By Saturday lunchtime there was a square code pinned to the noticeboard, under the cat tally, and the house had an app: who cooks, who cleans, whose bath it is, which rubbish goes out tomorrow, and a button marked かわる, *swap*."},
     {t:"narr", text:"Everyone installed it except Mr Satō, who has no smartphone and considers the barometer sufficient. Mrs Satō installed it first. She has since left four sticky notes on the board, each beginning *I noticed*."},
