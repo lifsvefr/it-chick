@@ -337,7 +337,10 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .ttsb.mugib.playing{background:var(--rose);border-color:var(--rose);color:var(--bg)}
 /* Kamome House story episodes */
 .story .narr{font-style:italic;color:var(--ink);line-height:1.7}
-.sline{border-left:3px solid var(--line);padding:4px 0 4px 12px;display:grid;gap:2px}
+.sline{border-left:3px solid var(--acc,var(--line));padding:4px 0 4px 10px;display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:start}
+.sline .sbody{display:grid;gap:2px;min-width:0}
+.sline .face{width:56px;height:auto;max-height:76px;object-fit:contain;object-position:top}
+.sline .face.none{width:44px;height:44px;margin:4px 6px 0;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:var(--acc,var(--soft))}
 .sline .who{font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}
 .sline .ja{font-size:1.2rem;margin:0}
 .sline .en{margin:0}

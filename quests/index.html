@@ -14,10 +14,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=26">
+<link rel="stylesheet" href="../shared/style.css?v=27">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=26"></script>
-<script src="../data/story.js?v=26"></script>
+<script src="../shared/engine.js?v=27"></script>
+<script src="../data/story.js?v=27"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -383,7 +383,7 @@ function story(uid, draft){
   var exs = [];
   e.parts.forEach(function(p, i){
     if (p.t === "narr") h += '<p class="narr">'+md(p.text)+'</p>';
-    else if (p.t === "line"){ var c = STORY.cast[p.who] || {name:p.who, ja:""}; h += '<div class="sline"><span class="who">'+esc(c.name)+'</span><p class="ja" lang="ja">'+md(p.ja)+'</p><p class="en small muted">'+esc(p.en)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>'; }
+    else if (p.t === "line"){ var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<img class="face" src="../shared/cast/'+p.who+'/'+(p.mood || "hello")+'.webp" alt="" width="56" loading="lazy">' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; h += '<div class="sline"'+(c.acc ? ' style="--acc:'+c.acc+'"' : '')+'>'+face+'<div class="sbody"><span class="who">'+esc(c.name)+'</span><p class="ja" lang="ja">'+md(p.ja)+'</p><p class="en small muted">'+esc(p.en)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div></div>'; }
     else if (p.t === "note") h += ICA.mugi("tip", '<p>'+md(p.text)+'</p>', {small:true, cls:"mpop", say:[p.text]});
     else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+esc(it.ja)+'</span><span class="pr"><b>'+esc(it.ro)+'</b><span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
     else if (p.t === "ex"){ h += '<div id="sx'+i+'"></div>'; exs.push([i, p.ex]); }
