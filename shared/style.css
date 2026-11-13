@@ -335,3 +335,16 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .ttsb.mugib{color:var(--rose);border-color:color-mix(in srgb,var(--rose) 45%,transparent)}
 .ttsb.playing{color:var(--bg)}
 .ttsb.mugib.playing{background:var(--rose);border-color:var(--rose);color:var(--bg)}
+/* Kamome House story episodes */
+.story .narr{font-style:italic;color:var(--ink2,inherit);line-height:1.7}
+.sline{border-left:3px solid var(--line);padding:4px 0 4px 12px;display:grid;gap:2px}
+.sline .who{font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sline .ja{font-size:1.2rem;margin:0}
+.sline .en{margin:0}
+.story.hide-en .sline .en{display:none}
+.sline .gl summary{cursor:pointer;color:var(--muted)}
+.plates{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.plate{display:grid;gap:6px;text-align:left;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:inherit;font:inherit;cursor:pointer;min-height:64px}
+.plate .pj{font-size:1.3rem;font-weight:700}
+.plate .pr{display:none;gap:2px}
+.plate.open .pr{display:grid}

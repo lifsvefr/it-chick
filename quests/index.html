@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="../shared/style.css">
 <script src="../shared/catalog.js"></script>
 <script src="../shared/engine.js"></script>
+<script src="../data/story.js"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -71,6 +72,7 @@ function track(id){
   var t = trackOf(id); setTitle(t.name);
   var units = ICA.units.filter(function(u){ return u.track === id; });
   var h = '<div class="stack"><a href="#" class="small">← All tracks</a><div><span class="chip '+t.cls+'">'+tlabel(t)+'</span><h1 style="margin-top:6px">'+esc(t.name)+'</h1><p class="muted">'+esc(t.blurb)+'</p><p class="small muted" style="margin-top:6px"><b>Built from:</b> '+esc(t.basis)+'</p></div>';
+  if (id === "e3" && storyList().length) h += '<a class="tile storytile" href="#story"><span class="ic" aria-hidden="true">🏠</span><span class="tx"><span class="tt">Kamome House: the story so far</span><span class="st">One short, optional episode per unit, written by Mugi. '+storyList().filter(function(e){ return storyRead(e.unit); }).length+' of '+storyList().length+' read.</span></span></a>';
   if (units.length) h += '<div class="stack">'+units.map(function(u){ var p = ICA.unitProgress(u.id), pct = p.total ? Math.round(p.done/p.total*100) : 0; return '<a class="tile" href="#'+u.id+'"><span class="ic" aria-hidden="true">'+u.icon+'</span><span class="tx"><span class="tt">Unit '+u.n+' · '+esc(u.title)+'</span><span class="st">'+esc(u.blurb)+'</span><span class="st">'+p.done+' of '+p.total+' lessons done</span></span><span class="ring" style="--p:'+pct+'"><span>'+pct+'%</span></span></a>'; }).join("")+'</div>';
   h += '<div class="card small muted">'+esc(t.soon)+'</div></div>';
   app.innerHTML = h;
@@ -86,6 +88,8 @@ function unit(id){
   var p = ICA.unitProgress(u.id);
   var h = '<div class="stack"><a href="#'+u.track+'" class="small">← '+esc(t.name)+'</a><div class="unithero"><span class="icon" aria-hidden="true">'+u.icon+'</span><div><span class="chip '+t.cls+'">'+tlabel(t)+' · Unit '+u.n+'</span><h1 style="margin-top:6px">'+esc(u.title)+'</h1></div><p>'+md(u.blurb)+'</p>'+(u.goals ? '<div><b>By the end you can:</b><ul class="goals">'+u.goals.map(function(g){ return "<li>"+md(g)+"</li>"; }).join("")+'</ul></div>' : '')+'<div class="bar" aria-label="'+p.done+' of '+p.total+' lessons done"><i style="width:'+(p.total?p.done/p.total*100:0)+'%"></i></div><span class="small muted">'+p.done+' of '+p.total+' lessons done</span></div>';
   h += '<h2>Lessons</h2><div class="stack">'+u.lessons.map(function(l){ var d = ICA.lessonDone(l.id), s = ICA.load().lessons[l.id]; var started = s && (s.learn || Object.keys(s.tries||{}).length); return '<a class="tile lessonrow" href="#'+l.id+'"><span class="ic"><span class="num">'+l.n+'</span></span><span class="tx"><span class="tt">'+esc(l.title)+'</span><span class="st">About '+l.minutes+' min'+(d ? ' · done' : started ? ' · in progress' : '')+'</span>'+(l.read && l.read.length ? '<span class="st">📖 '+md(l.read[0].where)+(l.read.length > 1 ? ' + '+(l.read.length-1)+' more' : '')+'</span>' : '')+'</span>'+(d ? '<span class="chip done">✓ Done</span>' : '')+'</a>'; }).join("")+'</div>';
+  var ep = storyEp(u.id);
+  if (ep && !ep.draft) h += '<h2>Story <span class="small muted">(optional)</span></h2><a class="tile storytile" href="#story-'+u.id+'"><span class="ic" aria-hidden="true">🏠</span><span class="tx"><span class="tt">Episode '+ep.n+' · '+md(ep.title)+'</span><span class="st">Kamome House · '+esc(ep.month)+' · '+esc(ep.level)+(storyRead(u.id) ? ' · read' : ' · best after the lessons')+'</span></span>'+(storyRead(u.id) ? '<span class="chip done">✓ Read</span>' : '')+'</a>';
   if (u.checkpoint && u.checkpoint.length){ var cp = ICA.load().lessons[u.id+"-cp"]; h += '<h2>Unit checkpoint</h2><a class="tile" href="#'+u.id+'-cp"><span class="ic" aria-hidden="true">🏁</span><span class="tx"><span class="tt">Checkpoint: '+u.checkpoint.length+' questions</span><span class="st">'+(cp && cp.check ? "Best: "+cp.check.best+" of "+cp.check.of+". Retake any time." : "Mixed questions from the whole unit. Take it whenever you feel ready.")+'</span></span></a>'; }
   if (u.read && u.read.length) h += '<h2>Read alongside</h2><div class="stack">'+u.read.map(bookRef).join("")+'</div>';
   h += '<button class="report" data-report="Unit: '+esc(u.title)+'">Report a mistake in this unit</button></div>';
@@ -351,6 +355,42 @@ app.addEventListener("change", function(e){
   var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); s.apply[t.getAttribute("data-task")] = t.checked ? 1 : 0; ICA.save();
 });
 
+/* ---------- Kamome House: optional story episodes (data/story.js) ---------- */
+var STORY = window.ICA_STORY || {episodes:[], cast:{}};
+function storyList(){ return STORY.episodes.filter(function(e){ return !e.draft && ICA.unitById[e.unit]; }); }
+function storyEp(uid, draft){ return STORY.episodes.filter(function(e){ return e.unit === uid && (draft || !e.draft); })[0]; }
+function storyRead(uid){ var st = ICA.load(); return !!(st.story && st.story[uid]); }
+function storyShelf(){
+  setTitle("Kamome House");
+  var h = '<div class="stack"><a href="#e3" class="small">← Japanese Foundations</a><div><div class="eyebrow">The story so far</div><h1>Kamome House</h1><p class="muted">One year in an old share house in a harbour town, written by Mugi. Each Japanese unit has one short, optional episode that uses only what that unit teaches.</p></div><div class="stack">';
+  h += storyList().map(function(e){ var u = ICA.unitById[e.unit]; return '<a class="tile storytile" href="#story-'+e.unit+'"><span class="ic"><span class="num">'+e.n+'</span></span><span class="tx"><span class="tt">'+md(e.title)+'</span><span class="st">Unit '+u.n+' · '+esc(u.title)+' · '+esc(e.month)+'</span></span>'+(storyRead(e.unit) ? '<span class="chip done">✓ Read</span>' : '')+'</a>'; }).join("");
+  app.innerHTML = h + '</div><div class="card small muted">More episodes arrive as the story is written.</div></div>';
+}
+function story(uid, draft){
+  var e = storyEp(uid, draft), u = ICA.unitById[uid], showEn = u.n <= 4;
+  setTitle("Episode "+e.n+" · "+e.title.replace(/<[^>]*>/g, ""));
+  var h = '<div class="stack story'+(showEn ? '' : ' hide-en')+'"><a href="#'+uid+'" class="small">← Unit '+u.n+': '+esc(u.title)+'</a><div><div class="eyebrow">Kamome House · Episode '+e.n+(e.draft ? ' · DRAFT' : '')+'</div><h1>'+md(e.title)+'</h1><p class="small muted">'+esc(e.month)+' · '+esc(e.level)+' · Optional: skip it any time, it never blocks the checkpoint.</p></div>';
+  if (e.parts.some(function(p){ return p.t === "line"; })) h += '<div class="row"><button type="button" class="btn small" data-en aria-pressed="'+showEn+'">'+(showEn ? "Hide English" : "Show English")+'</button></div>';
+  var exs = [];
+  e.parts.forEach(function(p, i){
+    if (p.t === "narr") h += '<p class="narr">'+md(p.text)+'</p>';
+    else if (p.t === "line"){ var c = STORY.cast[p.who] || {name:p.who, ja:""}; h += '<div class="sline"><span class="who">'+esc(c.name)+'</span><p class="ja" lang="ja">'+md(p.ja)+'</p><p class="en small muted">'+esc(p.en)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>'; }
+    else if (p.t === "note") h += ICA.mugi("tip", '<p>'+md(p.text)+'</p>', {small:true, cls:"mpop", say:[p.text]});
+    else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+esc(it.ja)+'</span><span class="pr"><b>'+esc(it.ro)+'</b><span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
+    else if (p.t === "ex"){ h += '<div id="sx'+i+'"></div>'; exs.push([i, p.ex]); }
+    else if (p.t === "lang") h += '<div class="card"><h2>Language in context</h2><ul>'+p.items.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ul></div>';
+    else if (p.t === "reflect") h += ICA.mugi("think", '<span class="eyebrow">Think about it</span><p><b>'+md(p.q)+'</b></p>', {cls:"mpop", say:[p.q]});
+  });
+  h += '<div class="lessonnav"><a class="btn" href="#'+uid+'">Back to the unit</a>'+(u.checkpoint ? '<a class="btn primary" href="#'+uid+'-cp" data-done>Unit checkpoint →</a>' : '')+'</div></div>';
+  app.innerHTML = h;
+  exs.forEach(function(x){ ICA.exercise(document.getElementById("sx"+x[0]), x[1], {}); });
+  ICA.$$(".plate", app).forEach(function(b){ b.addEventListener("click", function(){ var o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.classList.toggle("open", o); }); });
+  var eb = app.querySelector("[data-en]");
+  if (eb) eb.addEventListener("click", function(){ var st = app.querySelector(".story"), on = st.classList.toggle("hide-en"); eb.textContent = on ? "Show English" : "Hide English"; eb.setAttribute("aria-pressed", !on); });
+  if (!e.draft){ var st = ICA.load(); st.story = st.story || {}; if (!st.story[uid]){ st.story[uid] = Date.now(); ICA.save(); } }
+  if (ICA.voiceScan) ICA.voiceScan(app);
+}
+
 function route(){
   ICA.closePop(); ICA.closeSheet();
   var h = location.hash.slice(1);
@@ -358,6 +398,8 @@ function route(){
   else if (ICA.tracks[h]) track(h);
   else if (ICA.unitById[h]) unit(h);
   else if (/-cp$/.test(h) && ICA.unitById[h.replace(/-cp$/,"")]) checkpoint(h.replace(/-cp$/,""));
+  else if (h === "story") storyShelf();
+  else if (/^story-/.test(h) && storyEp(h.replace(/^story-|\?draft$/g, ""), /\?draft$/.test(h))) story(h.replace(/^story-|\?draft$/g, ""), /\?draft$/.test(h));
   else if (ICA.lessons[h]){ curPart = "learn"; lesson(h); var L0 = ICA.lessons[h], S0 = ICA.lessonState(h); if (L0.read && L0.read.length && !S0.readSeen && !S0.readDone && ICA.load().settings.readPop !== "off") readingSheet(L0, true); }
   else home();
   window.scrollTo(0, 0);
