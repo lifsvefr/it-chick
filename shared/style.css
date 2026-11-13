@@ -337,11 +337,16 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .ttsb.mugib.playing{background:var(--rose);border-color:var(--rose);color:var(--bg)}
 /* Kamome House story episodes */
 .story .narr{font-style:italic;color:var(--ink);line-height:1.7}
-.sline{border-left:3px solid var(--acc,var(--line));padding:4px 0 4px 10px;display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:start}
-.sline .sbody{display:grid;gap:2px;min-width:0}
+.sline{display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px;align-items:start;margin-right:28px}
+.sline.r{grid-template-columns:minmax(0,1fr) 56px;margin:0 0 0 28px}
+.sline.r .face{order:2}
+.sline .sbody{position:relative;display:grid;gap:2px;min-width:0;background:var(--panel);border:2px solid var(--acc,var(--line));border-radius:16px;padding:8px 12px 9px}
+.sline.r .sbody{justify-self:stretch}
+.sline .sbody::before{content:"";position:absolute;top:18px;left:-9px;width:14px;height:14px;background:var(--panel);border-left:2px solid var(--acc,var(--line));border-bottom:2px solid var(--acc,var(--line));transform:rotate(45deg)}
+.sline.r .sbody::before{left:auto;right:-9px;transform:rotate(-135deg)}
 .sline .face{width:56px;height:auto;max-height:76px;object-fit:contain;object-position:top}
 .sline .face.none{width:44px;height:44px;margin:4px 6px 0;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:var(--acc,var(--soft))}
-.sline .who{font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}
+.sline .who{font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}
 .sline .ja{font-size:1.2rem;margin:0}
 .sline .en{margin:0}
 .story.hide-en .sline .en{display:none}
