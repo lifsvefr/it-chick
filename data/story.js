@@ -22,13 +22,16 @@ window.ICA_STORY = {
       {room:"205", ja:"", ro:"(empty)", who:"Room 205 has no name on it. For now."}],
       cottage:{ja:"さとう", ro:"Satō", who:"The owners, Mr and Mrs Satō, in the cottage across the garden. Three beats: さ・と・う, a long *o*."}},
     {t:"narr", text:"Above the gate, a wooden sign: かもめそう. *Kamome* is a seagull, and *-sō* is a common ending for the name of a small apartment house. Next to the gate is the neighbourhood's rubbish station, and Mariya, who has lived here a year, is already explaining it to Yến."},
-    {t:"gomi", title:"The rubbish station", hint:"Tap a bag to see what goes in it. Every city has its own rules; these are Shioura's.", items:[
-      {icon:"bag", ja:"もえるごみ", ro:"moeru gomi", en:"burnable rubbish", note:"Food scraps, paper tissues and anything else that burns, in the city's own see-through bags."},
-      {icon:"pla", ja:"プラ", ro:"pura", en:"plastic packaging", note:"Anything with the プラ mark: wrappers, trays, bags, bottle caps. Rinse it first."},
-      {icon:"pet", ja:"ペットボトル", ro:"petto botoru", en:"plastic (PET) drink bottles", note:"Bottles with the PET mark. Caps and labels off (they go in プラ), rinsed and squashed."},
-      {icon:"can", ja:"びん・かん", ro:"bin, kan", en:"glass bottles and cans", note:"Glass bottles and drink or food cans, rinsed."}],
-      calendar:[["月","げつ","もえるごみ"],["火","か","プラ"],["水","すい","びん・かん・ペットボトル"],["木","もく","もえるごみ"],["金","きん","―"]],
-      calnote:"Days of the week are written with kanji; the small kana above them show the reading. Rubbish goes out by 8 in the morning on its day, never the night before."},
+    {t:"gomi", title:"The rubbish station", hint:"Tap a bag to see what goes in it. Every town has its own rules (some have more than twenty types); these are Shioura's main ones.", items:[
+      {icon:"bag", ja:"もえるごみ", ro:"moeru gomi", en:"burnable rubbish", when:"Mon and Thu", note:"Food waste (なまごみ: drain it and wrap it in newspaper first), paper tissues and anything else that burns, in the city's own see-through bags."},
+      {icon:"cup", ja:"もえないごみ", ro:"moenai gomi", en:"non-burnable rubbish", when:"2nd and 4th Wed", note:"Broken crockery, small metal things, light bulbs. Wrap anything sharp and write きけん (danger) on the bag."},
+      {icon:"pla", ja:"プラ", ro:"pura", en:"plastic packaging", when:"Tue", note:"Anything with the プラ mark: wrappers, trays, bags, bottle caps. Rinse it first."},
+      {icon:"pet", ja:"ペットボトル", ro:"petto botoru", en:"plastic (PET) drink bottles", when:"1st and 3rd Wed", note:"Bottles with the PET mark. Caps and labels off (they go in プラ), rinsed and squashed."},
+      {icon:"can", ja:"びん・かん", ro:"bin, kan", en:"glass bottles and cans", when:"1st and 3rd Wed", note:"Glass bottles and drink or food cans, rinsed. Spray cans must be completely empty."},
+      {icon:"box", ja:"ダンボール・しんぶん", ro:"danbōru, shinbun", en:"cardboard and newspaper", when:"Fri", note:"Flattened cardboard boxes, newspapers and magazines, tied with string. Paper is a resource, so it isn't burnable rubbish here."},
+      {icon:"chair", ja:"そだいごみ", ro:"sodai gomi", en:"oversized items", when:"By booking", note:"Furniture, bikes, big appliances. Book a pickup with the city and buy a fee sticker at a convenience store. Air conditioners, TVs, fridges and washing machines follow a separate recycling law."}],
+      calendar:[["月","げつ","もえるごみ"],["火","か","プラ"],["水","すい","びん・かん・ペットボトル (1st and 3rd), もえないごみ (2nd and 4th)"],["木","もく","もえるごみ"],["金","きん","ダンボール・しんぶん"]],
+      calnote:"Days of the week are written with kanji; the small kana above them show the reading. Rubbish goes out by 8 in the morning on its day, never the night before. Food waste goes out twice a week, with the burnables."},
     {t:"note", text:"People think the first Japanese they'll read in a new town is a menu. It's the mailboxes. Then the rubbish calendar. Then, much later, the menu."},
     {t:"narr", text:"Mr Satō looks up at the grey sky and says あめ (rain). Yến, who has just arrived with two suitcases, hears あめ (candy) and looks around for it. Same kana, different melody. A black-and-white cat walks along the wall. Yến calls her ミウ. Mariya, a few minutes later, calls her ムゥ. The cat answers to both."},
     {t:"ex", ex:{id:"story-e3u1-x1", type:"mcq", q:"Which mailbox belongs to Toby Whitlock?", options:[
