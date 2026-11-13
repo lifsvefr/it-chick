@@ -6,8 +6,8 @@
 window.ICA_STORY = {
   cast: {  // art: has a six-mood sheet in shared/cast/<id>/<mood>.webp (hello, think, oops, yay, tip, sleepy); acc: accent colour
     cheska:{name:"Cheska", ja:"チェスカ", art:true, acc:"#7a8450"}, yen:{name:"Yến", ja:"イエン", art:true, acc:"#2f8a8a"},
-    rodrigo:{name:"Rodrigo", ja:"ロドリゴ", art:true, acc:"#b8573a"}, toby:{name:"Toby", ja:"トビー", acc:"#5b9bd5"},
-    aoi:{name:"Aoi", ja:"あおい", art:true, acc:"#7d3c5c"}, mariya:{name:"Mariya", ja:"まりや", acc:"#e8735f"}, kaito:{name:"Kaito", ja:"かいと", acc:"#3f4a8a"},
+    rodrigo:{name:"Rodrigo", ja:"ロドリゴ", art:true, acc:"#b8573a"}, toby:{name:"Toby", ja:"トビー", art:true, acc:"#5b9bd5"},
+    aoi:{name:"Aoi", ja:"あおい", art:true, acc:"#7d3c5c"}, mariya:{name:"Mariya", ja:"まりや", art:true, acc:"#e8735f"}, kaito:{name:"Kaito", ja:"かいと", art:true, acc:"#3f4a8a"},
     fumiko:{name:"Mrs Satō", ja:"さとうさん", art:true, acc:"#9b86c2"}, shoichi:{name:"Mr Satō", ja:"さとうさん", art:true, acc:"#c9a03c"},
     chiyo:{name:"Chiyo", ja:"ちよさん", acc:"#8c7a5b"}, siti:{name:"Siti", ja:"シティ", acc:"#5f8f86"}  // supporting cast with several lines (no art)
   },

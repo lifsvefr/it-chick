@@ -15,9 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/style.css?v=31">
+<link rel="stylesheet" href="shared/style.css?v=32">
 <script src="shared/catalog.js"></script>
-<script src="shared/engine.js?v=31"></script>
+<script src="shared/engine.js?v=32"></script>
 <style>
 /* The hub: a top-down study desk. Every object is a link to an app. */
 .hubhead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding-top:10px}
@@ -28,7 +28,7 @@
 .desk{position:relative;margin-top:28px;border-radius:22px;padding:16px 10px 20px;background:var(--wood1);background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 2px,transparent 2px 19px,rgba(255,255,255,.03) 19px 21px,transparent 21px 47px),linear-gradient(180deg,var(--wood1),var(--wood2));box-shadow:inset 0 0 0 6px rgba(0,0,0,.12),var(--shadow);display:grid;gap:16px}
 .desk[hidden]{display:none}
 /* dot-grid paper: dots every 11px, text on a 22px rhythm (two grid squares per line) */
-.nbook{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:352/250;background:#fffaf2;border-radius:6px;box-shadow:0 7px 0 rgba(0,0,0,.28);position:relative;overflow:hidden;color:#2e1d15;--g:11px}
+.nbook{display:grid;grid-template-columns:1fr 1fr;min-height:230px;background:#fffaf2;border-radius:6px;box-shadow:0 7px 0 rgba(0,0,0,.28);position:relative;overflow:hidden;color:#2e1d15;--g:11px}
 .nbook:after{content:"";position:absolute;left:50%;top:0;bottom:0;width:16px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(0,0,0,.1),transparent);pointer-events:none}
 .pg{min-width:0;padding:22px 11px 22px 13px;background-image:radial-gradient(circle,rgba(107,84,68,.2) .75px,transparent 1.1px);background-size:var(--g) var(--g);background-position:5.5px 5.5px;display:grid;align-content:start;font-size:13px;line-height:22px;overflow-wrap:anywhere}
 /* a paper-coloured halo behind the text, so the dots don't run through the letters */
@@ -60,15 +60,15 @@
 .dpad{width:28px;height:28px;justify-self:center;background:linear-gradient(#2b2440,#2b2440) center/9px 100% no-repeat,linear-gradient(#2b2440,#2b2440) center/100% 9px no-repeat}
 .cscreen{background:#cfe0b7;border:4px solid #3d3456;border-radius:6px;aspect-ratio:1.3/1;display:grid;place-items:center;font-family:var(--mono);font-size:10px;color:#2f3d27;font-weight:600;text-align:center;line-height:1.15}
 .abtn{display:grid;grid-template-columns:1fr 1fr;gap:4px;justify-self:center}.abtn i{width:12px;height:12px;border-radius:50%;background:#e8946c}.abtn i+i{background:#f0d27a;transform:translateY(-7px)}
-.drawer{background:rgba(0,0,0,.2);border-radius:14px;padding:10px 8px 12px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.drawer{background:rgba(0,0,0,.2);border-radius:14px;padding:10px 6px 12px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
 .drawer .dl{grid-column:1/-1;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:#e9d9c2;text-transform:uppercase;padding-left:4px}
 .mini{display:grid;gap:5px;justify-items:center;text-decoration:none}
-.mini .ic{width:68px;height:68px;border-radius:16px;background:rgba(255,250,242,.1);display:grid;place-items:center;transition:transform .15s,background .15s}
+.mini .ic{width:64px;height:64px;border-radius:16px;background:rgba(255,250,242,.1);display:grid;place-items:center;transition:transform .15s,background .15s}
 .mini:hover .ic,.mini:focus-visible .ic{background:rgba(255,250,242,.2);transform:translateY(-3px)}
 .mini span:last-child{font-size:12.5px;font-weight:700;color:#fffaf2}
 .mini small{display:block;font-weight:400;font-size:10.5px;color:#e9d9c2;text-align:center}
 .desk a:focus-visible,.desk button:focus-visible{outline:3px solid #f0d27a;outline-offset:3px}
-@media (min-width:720px){.desk{padding:24px 22px 26px}.pg{font-size:14px}.row2{grid-template-columns:1.2fr 1fr}}
+@media (min-width:720px){.nbook{aspect-ratio:352/250}.desk{padding:24px 22px 26px}.pg{font-size:14px}.row2{grid-template-columns:1.2fr 1fr}}
 @media (prefers-reduced-motion:reduce){.sticky,.console,.mini .ic{transition:none}}
 /* ---------- setup: meet Mugi, pick courses, choose where to start ---------- */
 .setup{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
@@ -130,6 +130,8 @@
 .ptrack summary .bar{grid-column:1/-1}
 .ptrack summary::-webkit-details-marker{display:none}.ptrack .chev{display:inline-block;transition:transform .15s;color:var(--soft)}.ptrack[open] .chev{transform:rotate(90deg)}
 .setlist .seg3 button{min-height:40px}
+.kamband{display:flex;align-items:center;gap:12px;background:#fffaf2;border-radius:10px;padding:8px 14px 8px 8px;text-decoration:none;color:#2e1d15;box-shadow:0 5px 0 rgba(0,0,0,.25)}.kamband img{width:110px;height:auto;flex:none}.kamband span{display:grid;gap:2px;min-width:0;font-size:13px;line-height:1.35}.kamband b{font-family:var(--display);font-size:16px;color:#a24a28}.kamband small{color:#6b5444}.kamband .go{margin-left:auto;font-size:20px;color:#a24a28}.kamband:hover,.kamband:focus-visible{background:#fff3e2}
+.prow{display:block;color:inherit;text-decoration:none;border-radius:8px;padding:4px 6px;margin:0 -6px}.prow:hover,.prow:focus-visible{background:var(--panel2)}
 </style>
 </head>
 <body>
@@ -141,11 +143,13 @@
   <section class="today" id="today" aria-live="polite"></section>
   <div class="desk" id="desk" role="region" aria-label="Your desk">
     <div class="nbook" id="spread"></div>
+    <a class="kamband" id="kamomemini" href="quests/index.html#story" hidden><img src="shared/cast/kamome-logo.webp" alt="" width="120"><span><b>Kamome House</b><small>The story that goes with your Japanese lessons</small></span><span class="go" aria-hidden="true">→</span></a>
     <div class="row2">
       <button class="sticky" id="notebtn" aria-label="Your progress: tracks, lessons and stats"></button>
       <a class="obj" href="arcade/index.html" aria-label="Arcade, practice games"><span class="console" aria-hidden="true"><span class="dpad"></span><span class="cscreen" id="cscreen">▶ PLAY</span><span class="abtn"><i></i><i></i></span></span><span class="tag">Arcade<small>practice games</small></span></a>
     </div>
     <nav class="drawer" aria-label="More on your desk"><span class="dl">More on your desk</span>
+      <a class="mini" href="quests/index.html"><span class="ic" aria-hidden="true"><svg width="46" height="42" viewBox="0 0 34 30"><rect x="3" y="18" width="28" height="7" rx="1.5" fill="#6f9a8a"/><rect x="5" y="11" width="25" height="7" rx="1.5" fill="#d98a5f"/><rect x="2" y="4" width="27" height="7" rx="1.5" fill="#e9c46a"/><path d="M6 7.5h10M9 14.5h12M7 21.5h14" stroke="#3b2419" stroke-width="1.2" opacity=".5"/></svg></span><span>Courses<small>every track</small></span></a>
       <a class="mini" href="labs/index.html"><span class="ic" aria-hidden="true"><svg width="48" height="42" viewBox="0 0 34 30"><rect x="3" y="2" width="28" height="15" rx="2" fill="#2a2f3c" stroke="#9ea3ae" stroke-width="2"/><path d="M7 6h10M7 9h15M7 12h7" stroke="#7cc4c2" stroke-width="1.6"/><rect x="1" y="18" width="32" height="10" rx="2" fill="#c9ccd4"/><path d="M5 21h24M5 24h24" stroke="#8e929d" stroke-width="2" stroke-dasharray="2 1"/></svg></span><span>Labs<small>hands-on</small></span></a>
       <a class="mini" href="codex/index.html"><span class="ic" aria-hidden="true"><svg width="36" height="44" viewBox="0 0 26 32"><rect x="1" y="1" width="24" height="30" rx="3" fill="#efe4cf"/><rect x="1" y="1" width="6" height="30" fill="#8f6ca8"/><path d="M10 13h12M10 18h12" stroke="#5a4180" stroke-width="2"/></svg></span><span>Codex<small>look it up</small></span></a>
       <a class="mini" href="forge/index.html"><span class="ic" aria-hidden="true"><svg width="52" height="46" viewBox="0 0 34 30"><rect x="9" y="0" width="16" height="7" fill="#fffaf2"/><rect x="2" y="5" width="30" height="17" rx="4" fill="#e3dccf"/><rect x="7" y="8" width="20" height="4" rx="2" fill="#cfc6b6"/><rect x="9" y="18" width="16" height="11" fill="#fffaf2"/><path d="M11 22h12M11 25h9" stroke="#d9cdbd" stroke-width="1"/><circle cx="27" cy="15.5" r="1.8" fill="#7fbf6a"/></svg></span><span>Printer<small>printables</small></span></a>
@@ -169,6 +173,7 @@ function refreshDesk(){
   var t = ICA.today(), streak = 0, day = days[t] ? t : t - DAY; while (days[day]){ streak++; day -= DAY; }
   $("#notebtn").innerHTML = '<b>Progress</b><span class="st"><span>Lessons</span><span>'+done+' / '+total+'</span></span><span class="st"><span>Streak</span><span>'+(streak ? streak+' day'+(streak === 1 ? '' : 's') : '–')+'</span></span><span class="st"><span>Tracks</span><span>'+(mine.length || 'pick')+'</span></span><small>tap for details</small>';
   $("#cscreen").innerHTML = due ? due+"<br>DUE" : "▶ PLAY";
+  var km = $("#kamomemini"); if (km) km.hidden = mine.indexOf("e3") < 0;
   today(st, due);
 }
 /* ---------- Today: Mugi's line and the Quests notebook ---------- */
@@ -294,7 +299,7 @@ function progressSheet(){
   var doneAll = 0, totalAll = 0;
   var tracks = trackIds().filter(hasUnits).map(function(tid){
     var t = ICA.tracks[tid], us = ICA.units.filter(function(u){ return u.track === tid; }), d = 0, n = 0;
-    var rows = us.map(function(u){ var p = ICA.unitProgress(u.id); d += p.done; n += p.total; return '<div><div class="spread small"><span>Unit '+u.n+' · '+esc(u.title)+'</span><span>'+p.done+'/'+p.total+'</span></div><div class="bar"><i style="width:'+(p.total?p.done/p.total*100:0)+'%"></i></div></div>'; }).join("");
+    var rows = us.map(function(u){ var p = ICA.unitProgress(u.id); d += p.done; n += p.total; return '<a class="prow" href="quests/index.html#'+u.id+'"><div class="spread small"><span>Unit '+u.n+' · '+esc(u.title)+'</span><span>'+p.done+'/'+p.total+' ›</span></div><div class="bar"><i style="width:'+(p.total?p.done/p.total*100:0)+'%"></i></div></a>'; }).join("") + '<a class="btn small" href="quests/index.html#'+tid+'">Open '+esc(t.name)+' →</a>';
     doneAll += d; totalAll += n; var mine = st.tracks.indexOf(tid) > -1;
     return '<details class="ptrack"'+(mine && d ? " open" : "")+'><summary><span class="pt"><span class="chev" aria-hidden="true">▸</span> <b>'+t.icon+' '+esc(t.name)+'</b>'+(mine ? ' <span class="chip">My track</span>' : '')+'</span><span class="small">'+d+'/'+n+'</span><span class="bar"><i style="width:'+(n?d/n*100:0)+'%"></i></span></summary><div class="stack" style="gap:8px;margin-top:8px">'+rows+'</div></details>';
   }).join("");
@@ -304,7 +309,7 @@ function progressSheet(){
   function stat(n, l){ return '<div class="pstat"><b>'+n+'</b><span>'+l+'</span></div>'; }
   ICA.sheet('<div class="eyebrow">Progress</div><h2>How you’re doing</h2>'+
     '<div class="pstats">'+stat(doneAll+'<small>/'+totalAll+'</small>', 'lessons done')+stat(inReview, 'flashcards in review')+stat(known, 'cards known well')+stat(due, 'cards due now')+(kl ? stat(kl, 'Kanji Lab cards') : '')+'</div>'+
-    '<h3>Tracks</h3><div class="stack" style="gap:8px">'+tracks+'</div>'+
+    '<h3>Tracks</h3><p class="small muted">Tap a unit to open it.</p><div class="stack" style="gap:8px">'+tracks+'</div><a class="btn small" href="quests/index.html">All courses →</a>'+
     '<details><summary><b>Choose my tracks</b></summary><div style="margin-top:8px">'+trackPicker()+'</div></details>'+
     '<h3>Mistake notes</h3>'+(reps.length ? '<p class="small muted">Notes you saved with “Report a mistake”. Copy them to send to whoever maintains the academy.</p><ul class="notes small">'+reps.map(function(r){ return '<li><b>'+esc(r.where)+'</b>: '+esc(r.note)+' <span class="muted">('+new Date(r.ts).toLocaleDateString()+')</span></li>'; }).join("")+'</ul><div class="row"><button class="btn small" id="copyrep">Copy all notes</button><button class="btn small ghost" id="clearrep">Clear notes</button></div><div id="clearconfirm"></div>' : '<p class="small muted">No notes yet. Every lesson and Codex entry has a “Report a mistake” link.</p>')+
     '<div class="row"><button class="btn small ghost" id="gosettings">⚙︎ Settings and backup</button></div>', function(sh){

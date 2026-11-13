@@ -388,3 +388,7 @@ ruby{ruby-position:over}rt{font-size:.62em;font-weight:400;letter-spacing:0}
 .gcal th{width:3.5em;font-size:1.1rem;text-align:center;vertical-align:middle}
 .gcal .dk{display:flex;flex-direction:column;align-items:center;line-height:1.1}.gcal .dk small{font-size:.6em;font-weight:400;color:var(--soft)}
 .gcal td{vertical-align:middle}
+
+.kamlogo{width:100%;max-width:520px;height:auto;justify-self:center;display:block;margin:0 auto}
+.storynav{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
