@@ -337,14 +337,16 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .ttsb.mugib.playing{background:var(--rose);border-color:var(--rose);color:var(--bg)}
 /* Kamome House story episodes */
 .story .narr{color:var(--ink);line-height:1.7}.story .narr p{margin:0}.story .en-narr p{font-style:italic}
-.sline{display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px;align-items:start;margin-right:28px}
-.sline.r{grid-template-columns:minmax(0,1fr) 56px;margin:0 0 0 28px}
-.sline.r .face{order:2}
+.sline{display:grid;grid-template-columns:60px minmax(0,1fr);gap:8px;align-items:start;margin-right:28px}
+.sline.r{grid-template-columns:minmax(0,1fr) 60px;margin:0 0 0 28px}
+.sline.r .facebox,.sline.r .face.none{order:2}
 .sline .sbody{position:relative;display:grid;gap:2px;min-width:0;background:var(--panel);border:2px solid var(--acc,var(--line));border-radius:16px;padding:8px 12px 9px}
 .sline.r .sbody{justify-self:stretch}
 .sline .sbody::before{content:"";position:absolute;top:18px;left:-9px;width:14px;height:14px;background:var(--panel);border-left:2px solid var(--acc,var(--line));border-bottom:2px solid var(--acc,var(--line));transform:rotate(45deg)}
 .sline.r .sbody::before{left:auto;right:-9px;transform:rotate(-135deg)}
-.sline .face{width:56px;height:auto;max-height:76px;object-fit:contain;object-position:top}
+/* every portrait is scaled by its height, so a wide pose (arms out) shows the face at the same size as the others */
+.sline .facebox{width:60px;height:72px;overflow:hidden;display:flex;justify-content:center;align-items:flex-start}
+.sline .facebox .face{height:72px;width:auto;max-width:none;flex:none}
 .sline .face.none{width:44px;height:44px;margin:4px 6px 0;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:var(--acc,var(--soft))}
 .sline .who{font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}
 .sline .ja{font-size:1.2rem;margin:0}
@@ -414,9 +416,31 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .sline .who .entog{margin-left:auto}
 .sline .ja.inen{font-size:1.05rem}
 .story.nofuri rt{display:none}
-.mugibox{border:2.5px dotted var(--soft);border-color:color-mix(in srgb,var(--soft) 55%,transparent);border-radius:22px;background:var(--panel2);background:color-mix(in srgb,var(--panel2) 70%,var(--bg));padding:12px 12px 0;margin:6px 0}
+.mugibox{padding-bottom:14px!important;border:2.5px dotted var(--soft);border-color:color-mix(in srgb,var(--soft) 55%,transparent);border-radius:22px;background:var(--panel2);background:color-mix(in srgb,var(--panel2) 70%,var(--bg));padding:12px 12px 0;margin:6px 0}
 .mugibox .mugi{margin:0}
 .mugibox .bubble .eyebrow{display:block;margin:0 0 4px}
 .mugibox .bubble .jt{line-height:1.9}
 .mugibox .bubble .en{font-style:italic;color:var(--soft);margin-top:6px}
 .mugibox .bubble .entog{margin-top:8px}
+/* Kamome House text: furigana as a box as wide as its reading (set by JS as --rw), so a long reading never spills out of a bubble;
+   Japanese breaks only between phrases (word-break:auto-phrase where supported, otherwise <wbr> from a small phrase heuristic) */
+.story ruby{display:inline-block;position:relative;text-align:center;line-height:1.25;min-width:var(--rw,0);text-indent:0}
+.story rt{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);white-space:nowrap;line-height:1;margin-bottom:-.12em}
+.story.nofuri ruby{min-width:0}
+.story .ja,.story .jt,.story .pj{word-break:keep-all;overflow-wrap:anywhere;line-break:strict}
+.story.phr .ja,.story.phr .jt,.story.phr .pj{word-break:auto-phrase}
+.story .nob{white-space:nowrap}
+.sline .sbody,.story .jn{grid-template-columns:minmax(0,1fr)}.story .ja,.story .jt{min-width:0}
+
+/* episode links at the end of an episode */
+.epnav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.epcard{display:grid;gap:3px;align-content:start;padding:12px 14px;border:2px solid var(--line);border-radius:16px;background:var(--panel);color:var(--ink);text-decoration:none;transition:border-color .15s,transform .15s}
+.epcard:hover,.epcard:focus-visible{border-color:var(--accent,var(--soft));transform:translateY(-1px)}
+.epcard .eyebrow{margin:0}
+.epcard b{font-size:1.02rem;line-height:1.3}
+.epcard .small{color:var(--soft)}
+.epcard.next{grid-column:2;text-align:right}
+.epall{grid-column:1/-1;justify-self:center;display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 10px;border:2px solid var(--line);border-radius:99px;background:var(--panel);color:var(--ink);font-weight:700;text-decoration:none}
+.epall img{width:44px;height:auto}
+.epall:hover,.epall:focus-visible{border-color:var(--accent,var(--soft))}
+@media (max-width:380px){.epnav{grid-template-columns:1fr}.epcard.next{grid-column:1}}

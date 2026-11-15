@@ -14,11 +14,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=34">
+<link rel="stylesheet" href="../shared/style.css?v=35">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=34"></script>
-<script src="../data/story.js?v=34"></script>
-<script src="../data/story-audio.js?v=34"></script>
+<script src="../shared/engine.js?v=35"></script>
+<script src="../data/story.js?v=35"></script>
+<script src="../data/story-audio.js?v=35"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -376,6 +376,51 @@ var GICON = {
   chair:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 6h20v18H14z" fill="#d8b98e" stroke="currentColor" stroke-width="2"/><path d="M10 24h28v6H10z" fill="#c9a676" stroke="currentColor" stroke-width="2"/><path d="M13 30v13M35 30v13M18 30v9M30 30v9" stroke="currentColor" stroke-width="2"/><rect x="26" y="9" width="10" height="7" rx="1" fill="#fff" stroke="currentColor" stroke-width="1.5"/></svg>',
   can:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="16" width="14" height="24" rx="3" fill="#dfe7ee" stroke="currentColor" stroke-width="2"/><path d="M32 8h4v8c3 2 4 5 4 8v14a2 2 0 0 1-2 2H30a2 2 0 0 1-2-2V24c0-3 1-6 4-8z" fill="#d9efdf" stroke="currentColor" stroke-width="2"/></svg>'
 };
+/* Kamome House: keep furigana inside the line box, and break Japanese between phrases, not inside words.
+   A phrase ends after 、。」！？, before 「, and where hiragana meets a kanji, katakana or a ruby (物置で|見つけた|かんの|手紙).
+   Phrases holding furigana are kept on one line (span.nob), so a kanji never parts from its okurigana or from a 」.
+   Elsewhere: word-break:auto-phrase where the browser has it, otherwise <wbr> at the phrase ends. */
+function storyText(root){
+  ICA.$$("ruby", root).forEach(function(r){ var t = r.querySelector("rt"); if (!t) return; var w = t.getBoundingClientRect().width; if (w) r.style.setProperty("--rw", Math.max(0, Math.ceil(w - 6)) + "px"); });
+  if (root.__phr) return; root.__phr = 1;
+  var auto = !!(window.CSS && CSS.supports && CSS.supports("word-break", "auto-phrase"));
+  if (auto) root.classList.add("phr");
+  var cls = function(c){ if (/[一-鿿々〆ヶ]/.test(c)) return "K"; if (/[ぁ-ゟ]/.test(c)) return "H"; if (/[゠-ヿ]/.test(c)) return "T";
+    if (/[、。」』）！？!?…・,，．]/.test(c)) return "P"; if (/[「『（(]/.test(c)) return "O"; if (/[A-Za-z0-9]/.test(c)) return "L"; if (/\s/.test(c)) return "W"; return "S"; };
+  var brk = function(a, b, prefix){ if (!a || !b || b === "P" || a === "O") return false; if (a === "P" || a === "W" || b === "O" || b === "W") return true; return a === "H" && (b === "K" || b === "T" || b === "L") && !prefix; };
+  var afterWo = function(p1, k){ return p1 === "を" && k !== "P"; };
+  ICA.$$(".ja,.jt,.pj", root).forEach(function(el){
+    if (el.getAttribute("lang") === "en" || el.__seg) return; el.__seg = 1; el.setAttribute("data-nosay", "");
+    ICA.$$(":scope > span[lang=ja]:not([class])", el).forEach(function(sp){ while (sp.firstChild) el.insertBefore(sp.firstChild, sp); el.removeChild(sp); });   // md()'s language spans: the paragraph is Japanese already
+    el.normalize();
+    var phrases = [[]], prev = "", p1 = "", p2 = "";
+    var cut = function(){ if (phrases[phrases.length-1].length) phrases.push([]); };
+    Array.prototype.slice.call(el.childNodes).forEach(function(n){
+      if (n.nodeType === 1 && n.tagName === "RUBY"){ if (brk(prev, "K", false)) cut(); phrases[phrases.length-1].push(n); prev = "K"; p1 = ""; return; }
+      if (n.nodeType !== 3){ cut(); phrases[phrases.length-1].push(n); cut(); prev = ""; return; }
+      var t = n.nodeValue, cur = "";
+      for (var i = 0; i < t.length; i++){ var c = t[i], k = cls(c);
+        var prefix = prev === "H" && (p1 === "お" || p1 === "ご") && cls(p2 || " ") !== "H";   // お茶, ご飯
+        if (brk(prev, k, prefix) || afterWo(p1, k)){ if (cur) phrases[phrases.length-1].push(document.createTextNode(cur)); cur = ""; cut(); }
+        cur += c; p2 = p1; p1 = c; prev = k; }
+      if (cur) phrases[phrases.length-1].push(document.createTextNode(cur));
+    });
+    var f = document.createDocumentFragment();
+    phrases.forEach(function(ph, j){ if (!ph.length) return;
+      if (j && !auto) f.appendChild(document.createElement("wbr"));
+      var last = -1; ph.forEach(function(x, i){ if (x.nodeType === 1 && x.tagName === "RUBY") last = i; });
+      if (last < 0){ ph.forEach(function(x){ f.appendChild(x); }); return; }
+      // glue the furigana word to its okurigana or particle (at most 4 characters) and any 」、。 after it; the rest stays breakable
+      var sp = document.createElement("span"); sp.className = "nob"; ph.slice(0, last + 1).forEach(function(x){ sp.appendChild(x); });
+      var rest = ph.slice(last + 1), tail = [];
+      if (rest.length && rest[0].nodeType === 3){ var t = rest[0].nodeValue, m = t.match(/^[\u3041-\u309f]{0,4}[、。」』）！？…]*/)[0]; if (m) sp.appendChild(document.createTextNode(m)); if (t.length > m.length) tail.push(document.createTextNode(t.slice(m.length))); rest = rest.slice(1); }
+      f.appendChild(sp); tail.concat(rest).forEach(function(x){ f.appendChild(x); }); });
+    el.textContent = ""; el.appendChild(f);
+  });
+}
+/* moods the script may use before every character has art for them: the nearest face we do have */
+var MOOD_FALLBACK = {talk:"hello", flat:"sleepy", sad:"think", cross:"think", sleepy:"think", oops:"think", tip:"hello", yay:"hello", think:"hello"};
+function storyMood(c, m){ var have = Array.isArray(c.art) ? c.art : ["hello","think","oops","yay","tip","sleepy"]; m = m || "hello"; var seen = 0; while (have.indexOf(m) < 0 && seen++ < 6) m = MOOD_FALLBACK[m] || "hello"; return have.indexOf(m) < 0 ? have[0] : m; }
 var ENTOG = '<button type="button" class="entog" aria-pressed="false" title="Show the English for this part">EN</button>';
 function storyNarr(p){
   if (p.lang !== "ja") return '<div class="narr en-narr"><p>'+md(p.text)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>';
@@ -396,7 +441,7 @@ function story(uid, draft){
   var exs = [], lastWho = null, side = "l";
   e.parts.forEach(function(p, i){
     if (p.t === "narr") h += storyNarr(p);
-    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<img class="face" src="../shared/cast/'+p.who+'/'+(p.mood || "hello")+'.webp" alt="" width="56" loading="lazy">' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; var en = p.lang === "en";
+    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<span class="facebox"><img class="face" src="../shared/cast/'+p.who+'/'+storyMood(c, p.mood)+'.webp" alt="" height="72" loading="lazy"></span>' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; var en = p.lang === "en";
       h += '<div class="sline '+side+'"'+(c.acc ? ' style="--acc:'+c.acc+'"' : '')+'>'+face+'<div class="sbody"><span class="who">'+esc(c.name)+(window.ICA_STORY_AUDIO && ICA_STORY_AUDIO[p.who+"|"+p.ja] ? '<button type="button" class="ttsb sl" data-say="story" data-key="'+esc(p.who+"|"+p.ja)+'" aria-label="Play '+esc(c.name)+'’s line" title="Play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.8 3.6a6 6 0 0 1 0 8.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>' : '')+(p.en ? ENTOG : '')+'</span><p class="ja'+(en ? ' inen' : '')+'" lang="'+(en ? "en" : "ja")+'">'+(en ? esc(p.ja) : md(p.ja))+'</p>'+(p.en ? '<p class="en small muted"'+(en ? ' lang="ja"' : '')+'>'+md(p.en)+'</p>' : '')+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div></div>'; }
     else if (p.t === "break") h += '<div class="sbreak" role="separator" aria-label="Scene break"><span></span><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M2 6c4-5 8-5 12 0s8 5 12 0 8-5 12 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span></span></div>';
     else if (p.t === "cat") h += '<figure class="scat"><img src="../shared/cast/cat/'+esc(p.pose || "smug")+'.webp" alt="'+esc(p.alt || "The black-and-white cat")+'" width="130" loading="lazy"></figure>';
@@ -410,7 +455,7 @@ function story(uid, draft){
   });
   var eps = storyList(), at = eps.indexOf(e), pv = eps[at-1], nxe = eps[at+1];
   h += '<div class="lessonnav"><a class="btn" href="#'+uid+'">Back to the unit</a>'+(u.checkpoint ? '<a class="btn primary" href="#'+uid+'-cp" data-done>Unit checkpoint →</a>' : '')+'</div>';
-  h += '<div class="row small storynav">'+(pv ? '<a href="#story-'+pv.unit+'" >← Episode '+pv.n+'</a>' : '')+'<a href="#story">All episodes</a>'+(nxe ? '<a href="#story-'+nxe.unit+'" >Episode '+nxe.n+' →</a>' : '')+'</div></div>';
+  h += '<nav class="epnav" aria-label="Episodes">'+(pv ? '<a class="epcard prev" href="#story-'+pv.unit+'"><span class="eyebrow">← Previous</span><b>Episode '+pv.n+'</b><span class="small">'+md(pv.title)+'</span></a>' : '')+(nxe ? '<a class="epcard next" href="#story-'+nxe.unit+'"><span class="eyebrow">Next →</span><b>Episode '+nxe.n+'</b><span class="small">'+md(nxe.title)+'</span></a>' : '')+'<a class="epall" href="#story"><img src="../shared/cast/kamome-logo.webp" alt="" width="44">All episodes</a></nav></div>';
   app.innerHTML = h;
   exs.forEach(function(x){ ICA.exercise(document.getElementById("sx"+x[0]), x[1], {}); });
   ICA.$$(".mbwrap", app).forEach(function(w){ var P = e.parts[+w.getAttribute("data-mb")], info = w.querySelector(".mbinfo");
@@ -423,9 +468,11 @@ function story(uid, draft){
   var root = app.querySelector(".story"), eb = app.querySelector("[data-en]");
   if (eb) eb.addEventListener("click", function(){ var on = root.classList.toggle("hide-en"); eb.textContent = on ? "Show English" : "Hide English"; eb.setAttribute("aria-pressed", !on); ICA.$$(".show-en", root).forEach(function(x){ x.classList.remove("show-en"); }); ICA.$$(".entog", root).forEach(function(x){ x.setAttribute("aria-pressed", "false"); }); });
   var fb = app.querySelector("[data-furi]");
-  if (fb) fb.addEventListener("click", function(){ var off = root.classList.toggle("nofuri"); fb.textContent = off ? "Show furigana" : "Hide furigana"; fb.setAttribute("aria-pressed", !off); var st = ICA.load(); st.settings = st.settings || {}; st.settings.furi = off ? "off" : "on"; ICA.save(); });
+  if (fb) fb.addEventListener("click", function(){ var off = root.classList.toggle("nofuri"); fb.textContent = off ? "Show furigana" : "Hide furigana"; fb.setAttribute("aria-pressed", !off); var st = ICA.load(); st.settings = st.settings || {}; st.settings.furi = off ? "off" : "on"; ICA.save(); if (!off) storyText(root); });
   if (!e.draft){ var st = ICA.load(); st.story = st.story || {}; if (!st.story[uid]){ st.story[uid] = Date.now(); ICA.save(); } }
   if (ICA.voiceScan) ICA.voiceScan(app);
+  storyText(root);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ storyText(root); });
 }
 
 function route(){
