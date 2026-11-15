@@ -418,9 +418,11 @@ function storyText(root){
     el.textContent = ""; el.appendChild(f);
   });
 }
-/* moods the script may use before every character has art for them: the nearest face we do have */
-var MOOD_FALLBACK = {talk:"hello", flat:"sleepy", sad:"think", cross:"think", sleepy:"think", oops:"think", tip:"hello", yay:"hello", think:"hello"};
-function storyMood(c, m){ var have = Array.isArray(c.art) ? c.art : ["hello","think","oops","yay","tip","sleepy"]; m = m || "hello"; var seen = 0; while (have.indexOf(m) < 0 && seen++ < 6) m = MOOD_FALLBACK[m] || "hello"; return have.indexOf(m) < 0 ? have[0] : m; }
+/* a mood a character has no art for falls back to the nearest face they do have (art:true = the first six; or art:[list]) */
+var MOOD_PREF = {talk:["talk","hello","think"], hello:["hello","talk","yay"], tip:["tip","talk","hello"], think:["think","talk","hello"], oops:["oops","think","talk","hello"],
+  yay:["yay","hello","talk"], sleepy:["sleepy","flat","sad","think","talk"], flat:["flat","sleepy","think","talk","hello"], sad:["sad","sleepy","think","talk","hello"], cross:["cross","think","talk","hello"]};
+function storyMood(c, m){ var have = Array.isArray(c.art) ? c.art : ["hello","think","oops","yay","tip","sleepy"], pref = MOOD_PREF[m || "talk"] || [m];
+  for (var i = 0; i < pref.length; i++) if (have.indexOf(pref[i]) >= 0) return pref[i]; return have[0]; }
 var ENTOG = '<button type="button" class="entog" aria-pressed="false" title="Show the English for this part">EN</button>';
 function storyNarr(p){
   if (p.lang !== "ja") return '<div class="narr en-narr"><p>'+md(p.text)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>';
