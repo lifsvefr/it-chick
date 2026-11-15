@@ -14,11 +14,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=33">
+<link rel="stylesheet" href="../shared/style.css?v=34">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=33"></script>
-<script src="../data/story.js?v=33"></script>
-<script src="../data/story-audio.js?v=33"></script>
+<script src="../shared/engine.js?v=34"></script>
+<script src="../data/story.js?v=34"></script>
+<script src="../data/story-audio.js?v=34"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -363,7 +363,7 @@ function storyEp(uid, draft){ return STORY.episodes.filter(function(e){ return e
 function storyRead(uid){ var st = ICA.load(); return !!(st.story && st.story[uid]); }
 function storyShelf(){
   setTitle("Kamome House");
-  var h = '<div class="stack"><a href="#e3" class="small">← Japanese Foundations</a><img class="kamlogo" src="../shared/cast/kamome-logo.webp" alt="かもめ荘, Kamome House"><div><div class="eyebrow">The story so far</div><h1 class="sr-only">Kamome House</h1><p class="muted">One year in an old share house in a harbour town, written by Mugi. Each Japanese unit has one short, optional episode that uses only what that unit teaches.</p></div><div class="stack">';
+  var h = '<div class="stack"><a href="#e3" class="small">← Japanese Foundations</a><img class="kamlogo" src="../shared/cast/kamome-logo.webp" alt="かもめ荘, Kamome House"><div><div class="eyebrow">The story so far</div><h1 class="sr-only">Kamome House</h1><p class="muted">One year in an old share house in a harbor town, written by Mugi. Each Japanese unit has one short, optional episode that uses only what that unit teaches.</p></div><div class="stack">';
   h += storyList().map(function(e){ var u = ICA.unitById[e.unit]; return '<a class="tile storytile" href="#story-'+e.unit+'"><span class="ic"><span class="num">'+e.n+'</span></span><span class="tx"><span class="tt">'+md(e.title)+'</span><span class="st">Unit '+u.n+' · '+esc(u.title)+' · '+esc(e.month)+'</span></span>'+(storyRead(e.unit) ? '<span class="chip done">✓ Read</span>' : '')+'</a>'; }).join("");
   app.innerHTML = h + '</div><div class="card small muted">More episodes arrive as the story is written.</div></div>';
 }
@@ -376,24 +376,37 @@ var GICON = {
   chair:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 6h20v18H14z" fill="#d8b98e" stroke="currentColor" stroke-width="2"/><path d="M10 24h28v6H10z" fill="#c9a676" stroke="currentColor" stroke-width="2"/><path d="M13 30v13M35 30v13M18 30v9M30 30v9" stroke="currentColor" stroke-width="2"/><rect x="26" y="9" width="10" height="7" rx="1" fill="#fff" stroke="currentColor" stroke-width="1.5"/></svg>',
   can:'<svg class="gi" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="16" width="14" height="24" rx="3" fill="#dfe7ee" stroke="currentColor" stroke-width="2"/><path d="M32 8h4v8c3 2 4 5 4 8v14a2 2 0 0 1-2 2H30a2 2 0 0 1-2-2V24c0-3 1-6 4-8z" fill="#d9efdf" stroke="currentColor" stroke-width="2"/></svg>'
 };
+var ENTOG = '<button type="button" class="entog" aria-pressed="false" title="Show the English for this part">EN</button>';
+function storyNarr(p){
+  if (p.lang !== "ja") return '<div class="narr en-narr"><p>'+md(p.text)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>';
+  return '<div class="narr jn'+(p.recap ? ' recap' : '')+'">'+(p.recap ? '<div class="eyebrow"><span lang="ja">これまでのかもめ<ruby>荘<rt>そう</rt></ruby></span> · Previously</div>' : '')+'<p class="jt" lang="ja">'+md(p.text)+'</p>'+(p.en ? '<p class="en">'+md(p.en)+'</p>' : '')+((p.en || p.gl) ? '<div class="ntools">'+(p.en ? ENTOG : '')+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>' : '')+'</div>';
+}
+function mugiBox(mood, label, p, say){
+  var ja = p.lang === "ja";
+  var inner = '<span class="eyebrow">'+label+'</span><p'+(ja ? ' lang="ja" class="jt"' : '')+'>'+md(p.text)+'</p>'+(p.en ? '<p class="en">'+md(p.en)+'</p>'+ENTOG : '');
+  return '<aside class="mugibox'+(p.en ? ' hasen' : '')+'" aria-label="'+label+' (outside the story)">'+ICA.mugi(mood, inner, {small:true, cls:"mpop", say: ja ? null : say})+'</aside>';
+}
 function story(uid, draft){
-  var e = storyEp(uid, draft), u = ICA.unitById[uid], showEn = u.n <= 4;
+  var e = storyEp(uid, draft), u = ICA.unitById[uid], showEn = e.enDefault !== false, st0 = ICA.load(), furiOff = st0.settings && st0.settings.furi === "off";
   setTitle("Episode "+e.n+" · "+e.title.replace(/<[^>]*>/g, ""));
-  var h = '<div class="stack story'+(showEn ? '' : ' hide-en')+'"><div class="row small storynav"><a href="#story">← Kamome House</a><a href="#'+uid+'">Unit '+u.n+': '+esc(u.title)+'</a></div><div><div class="eyebrow">Kamome House · Episode '+e.n+(e.draft ? ' · DRAFT' : '')+'</div><h1>'+md(e.title)+'</h1><p class="small muted">'+esc(e.month)+' · '+esc(e.level)+' · Optional: skip it any time, it never blocks the checkpoint.</p></div>';
-  if (e.parts.some(function(p){ return p.t === "line"; })) h += '<div class="row"><button type="button" class="btn small" data-en aria-pressed="'+showEn+'">'+(showEn ? "Hide English" : "Show English")+'</button></div>';
+  var h = '<div class="stack story'+(showEn ? '' : ' hide-en')+(furiOff ? ' nofuri' : '')+'"><div class="row small storynav"><a href="#story">← Kamome House</a><a href="#'+uid+'">Unit '+u.n+': '+esc(u.title)+'</a></div><div><div class="eyebrow">Kamome House · Episode '+e.n+(e.draft ? ' · DRAFT' : '')+'</div><h1>'+md(e.title)+'</h1><p class="small muted">'+esc(e.month)+' · '+esc(e.level)+' · Optional: skip it any time, it never blocks the checkpoint.</p></div>';
+  var hasRuby = JSON.stringify(e.parts).indexOf("]{") >= 0;
+  h += '<div class="row storytools"><button type="button" class="btn small" data-en aria-pressed="'+showEn+'">'+(showEn ? "Hide English" : "Show English")+'</button>'+(hasRuby ? '<button type="button" class="btn small" data-furi aria-pressed="'+!furiOff+'">'+(furiOff ? "Show furigana" : "Hide furigana")+'</button>' : '')+'</div>';
+  if (!showEn) h += '<p class="small muted storyhint">English is hidden in this episode. Tap <b>EN</b> under any paragraph or line to check it.</p>';
   var exs = [], lastWho = null, side = "l";
   e.parts.forEach(function(p, i){
-    if (p.t === "narr") h += '<p class="narr">'+md(p.text)+'</p>';
-    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<img class="face" src="../shared/cast/'+p.who+'/'+(p.mood || "hello")+'.webp" alt="" width="56" loading="lazy">' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; h += '<div class="sline '+side+'"'+(c.acc ? ' style="--acc:'+c.acc+'"' : '')+'>'+face+'<div class="sbody"><span class="who">'+esc(c.name)+(window.ICA_STORY_AUDIO && ICA_STORY_AUDIO[p.who+"|"+p.ja] ? '<button type="button" class="ttsb sl" data-say="story" data-key="'+esc(p.who+"|"+p.ja)+'" aria-label="Play '+esc(c.name)+'’s line" title="Play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.8 3.6a6 6 0 0 1 0 8.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>' : '')+'</span><p class="ja" lang="ja">'+md(p.ja)+'</p><p class="en small muted">'+esc(p.en)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div></div>'; }
-    else if (p.t === "cat") h += '<figure class="scat'+(i % 2 ? ' r' : '')+'"><img src="../shared/cast/cat/'+esc(p.pose || "smug")+'.webp" alt="'+esc(p.alt || "The black-and-white cat")+'" width="130" loading="lazy"></figure>';
-    else if (p.t === "note") h += ICA.mugi("tip", '<p>'+md(p.text)+'</p>', {small:true, cls:"mpop", say:[p.text]});
-    else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+esc(it.ja)+'</span><span class="pr"><b>'+esc(it.ro)+'</b><span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
+    if (p.t === "narr") h += storyNarr(p);
+    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<img class="face" src="../shared/cast/'+p.who+'/'+(p.mood || "hello")+'.webp" alt="" width="56" loading="lazy">' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; var en = p.lang === "en";
+      h += '<div class="sline '+side+'"'+(c.acc ? ' style="--acc:'+c.acc+'"' : '')+'>'+face+'<div class="sbody"><span class="who">'+esc(c.name)+(window.ICA_STORY_AUDIO && ICA_STORY_AUDIO[p.who+"|"+p.ja] ? '<button type="button" class="ttsb sl" data-say="story" data-key="'+esc(p.who+"|"+p.ja)+'" aria-label="Play '+esc(c.name)+'’s line" title="Play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.8 3.6a6 6 0 0 1 0 8.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>' : '')+(p.en ? ENTOG : '')+'</span><p class="ja'+(en ? ' inen' : '')+'" lang="'+(en ? "en" : "ja")+'">'+(en ? esc(p.ja) : md(p.ja))+'</p>'+(p.en ? '<p class="en small muted"'+(en ? ' lang="ja"' : '')+'>'+md(p.en)+'</p>' : '')+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div></div>'; }
+    else if (p.t === "break") h += '<div class="sbreak" role="separator" aria-label="Scene break"><span></span><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M2 6c4-5 8-5 12 0s8 5 12 0 8-5 12 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span></span></div>';
+    else if (p.t === "cat") h += '<figure class="scat"><img src="../shared/cast/cat/'+esc(p.pose || "smug")+'.webp" alt="'+esc(p.alt || "The black-and-white cat")+'" width="130" loading="lazy"></figure>';
+    else if (p.t === "note") h += mugiBox("tip", "Mugi’s note", p, [p.text]);
+    else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+md(it.ja)+'</span><span class="pr">'+(it.ro ? '<b>'+esc(it.ro)+'</b>' : '')+'<span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
     else if (p.t === "ex"){ h += '<div id="sx'+i+'"></div>'; exs.push([i, p.ex]); }
-    else if (p.t === "mailboxes") h += '<div class="mbwrap" data-mb="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="mbrow"><div class="mbank" role="group" aria-label="Mailboxes">'+p.items.map(function(it, k){ return '<button type="button" class="mbox'+(it.old ? ' old' : '')+(it.ja ? '' : ' empty')+'" data-k="'+k+'" aria-label="Room '+it.room+(it.ja ? '' : ', no name')+'"><span class="rm">'+esc(it.room)+'</span><span class="slot"></span><span class="lbl" lang="ja">'+(esc(it.ja) || '&nbsp;')+'</span></button>'; }).join("")+'</div>'+(p.cottage ? '<button type="button" class="mbox wood" data-k="c" aria-label="Cottage mailbox"><span class="rm">はなれ</span><span class="slot"></span><span class="lbl" lang="ja">'+esc(p.cottage.ja)+'</span></button>' : '')+'</div><div class="mbinfo card small" aria-live="polite">Tap a mailbox.</div></div>';
-    else if (p.t === "gomi") h += '<div class="gomi" data-g="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="gstation"><div class="groof"></div><div class="gnet"><div class="gbags">'+p.items.map(function(it, k){ return '<button type="button" class="gbag" data-k="'+k+'" aria-expanded="false">'+GICON[it.icon]+'<span class="gl" lang="ja">'+esc(it.ja)+'</span>'+(it.when ? '<span class="gn">'+esc(it.when)+'</span>' : '')+'<span class="gx small"><b>'+esc(it.en)+'</b> ('+esc(it.ro)+')<br>'+md(it.note)+'</span></button>'; }).join("")+'</div></div></div>'+(p.calendar ? '<table class="gcal" data-nosay><caption>Collection days</caption>'+p.calendar.map(function(r){ return '<tr><th scope="row" lang="ja"><span class="dk"><small>'+esc(r[1])+'</small><b>'+esc(r[0])+'</b></span></th><td lang="ja">'+esc(r[2])+'</td></tr>'; }).join("")+'</table><p class="small muted">'+md(p.calnote)+'</p>' : '')+'</div>';
-
+    else if (p.t === "mailboxes") h += '<div class="mbwrap" data-mb="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="mbrow"><div class="mbank" role="group" aria-label="Mailboxes">'+p.items.map(function(it, k){ return '<button type="button" class="mbox'+(it.old ? ' old' : '')+(it.ja ? '' : ' empty')+'" data-k="'+k+'" aria-label="Room '+it.room+(it.ja ? '' : ', no name')+'"><span class="rm">'+esc(it.room)+'</span><span class="slot"></span><span class="lbl" lang="ja">'+(esc(it.ja) || '&nbsp;')+'</span></button>'; }).join("")+(p.landlord ? '<button type="button" class="mbox wood'+(p.landlord.old ? ' old' : '')+'" data-k="l" aria-label="'+esc(p.landlord.label)+'"><span class="rm" lang="ja">おおや</span><span class="slot"></span><span class="lbl" lang="ja">'+esc(p.landlord.ja)+'</span></button>' : '')+'</div></div><div class="mbinfo card small" aria-live="polite">Tap a mailbox.</div></div>';
+    else if (p.t === "gomi") h += '<div class="gomi" data-g="'+i+'"><h2 lang="ja">'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="gstation"><div class="groof"></div><div class="gnet"><div class="gbags">'+p.items.map(function(it, k){ return '<button type="button" class="gbag" data-k="'+k+'" aria-expanded="false">'+GICON[it.icon]+'<span class="gl" lang="ja">'+esc(it.ja)+'</span>'+(it.when ? '<span class="gn">'+esc(it.when)+'</span>' : '')+'<span class="gx small"><b>'+esc(it.en)+'</b>'+(it.ro ? ' ('+esc(it.ro)+')' : '')+'<br>'+md(it.note)+'</span></button>'; }).join("")+'</div></div></div>'+(p.calendar ? '<table class="gcal" data-nosay><caption>Collection days</caption>'+p.calendar.map(function(r){ return '<tr><th scope="row" lang="ja"><span class="dk"><small>'+esc(r[1])+'</small><b>'+esc(r[0])+'</b></span></th><td lang="ja">'+esc(r[2])+'</td></tr>'; }).join("")+'</table><p class="small muted">'+md(p.calnote)+'</p>' : '')+'</div>';
     else if (p.t === "lang") h += '<div class="card"><h2>Language in context</h2><ul>'+p.items.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ul></div>';
-    else if (p.t === "reflect") h += ICA.mugi("think", '<span class="eyebrow">Think about it</span><p><b>'+md(p.q)+'</b></p>', {cls:"mpop", say:[p.q]});
+    else if (p.t === "reflect") h += mugiBox("think", "Think about it", {text: "**"+p.q+"**"}, [p.q]);
   });
   var eps = storyList(), at = eps.indexOf(e), pv = eps[at-1], nxe = eps[at+1];
   h += '<div class="lessonnav"><a class="btn" href="#'+uid+'">Back to the unit</a>'+(u.checkpoint ? '<a class="btn primary" href="#'+uid+'-cp" data-done>Unit checkpoint →</a>' : '')+'</div>';
@@ -401,13 +414,16 @@ function story(uid, draft){
   app.innerHTML = h;
   exs.forEach(function(x){ ICA.exercise(document.getElementById("sx"+x[0]), x[1], {}); });
   ICA.$$(".mbwrap", app).forEach(function(w){ var P = e.parts[+w.getAttribute("data-mb")], info = w.querySelector(".mbinfo");
-    ICA.$$(".mbox", w).forEach(function(b){ b.addEventListener("click", function(){ var k = b.getAttribute("data-k"), it = k === "c" ? P.cottage : P.items[+k];
+    ICA.$$(".mbox", w).forEach(function(b){ b.addEventListener("click", function(){ var k = b.getAttribute("data-k"), it = k === "l" ? P.landlord : P.items[+k];
       ICA.$$(".mbox", w).forEach(function(x){ x.classList.toggle("sel", x === b); });
-      info.innerHTML = '<b>'+esc(it.ro)+'</b>'+(it.ja ? ' <span lang="ja">('+esc(it.ja)+')</span>' : '')+(k === "c" ? ' · the cottage' : ' · Room '+esc(it.room))+'<br>'+md(it.who); }); }); });
+      info.innerHTML = (it.ro ? '<b>'+esc(it.ro)+'</b>'+(it.ja ? ' <span lang="ja">('+esc(it.ja)+')</span>' : '')+' · ' : '')+(k === "l" ? esc(it.label) : 'Room '+esc(it.room))+'<br>'+md(it.who); }); }); });
   ICA.$$(".gbag", app).forEach(function(b){ b.addEventListener("click", function(){ var o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.classList.toggle("open", o); }); });
   ICA.$$(".plate", app).forEach(function(b){ b.addEventListener("click", function(){ var o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.classList.toggle("open", o); }); });
-  var eb = app.querySelector("[data-en]");
-  if (eb) eb.addEventListener("click", function(){ var st = app.querySelector(".story"), on = st.classList.toggle("hide-en"); eb.textContent = on ? "Show English" : "Hide English"; eb.setAttribute("aria-pressed", !on); });
+  ICA.$$(".entog", app).forEach(function(b){ b.addEventListener("click", function(){ var box = b.closest(".narr,.sline,.mugibox"), on = !box.classList.contains("show-en"); box.classList.toggle("show-en", on); b.setAttribute("aria-pressed", on); }); });
+  var root = app.querySelector(".story"), eb = app.querySelector("[data-en]");
+  if (eb) eb.addEventListener("click", function(){ var on = root.classList.toggle("hide-en"); eb.textContent = on ? "Show English" : "Hide English"; eb.setAttribute("aria-pressed", !on); ICA.$$(".show-en", root).forEach(function(x){ x.classList.remove("show-en"); }); ICA.$$(".entog", root).forEach(function(x){ x.setAttribute("aria-pressed", "false"); }); });
+  var fb = app.querySelector("[data-furi]");
+  if (fb) fb.addEventListener("click", function(){ var off = root.classList.toggle("nofuri"); fb.textContent = off ? "Show furigana" : "Hide furigana"; fb.setAttribute("aria-pressed", !off); var st = ICA.load(); st.settings = st.settings || {}; st.settings.furi = off ? "off" : "on"; ICA.save(); });
   if (!e.draft){ var st = ICA.load(); st.story = st.story || {}; if (!st.story[uid]){ st.story[uid] = Date.now(); ICA.save(); } }
   if (ICA.voiceScan) ICA.voiceScan(app);
 }
