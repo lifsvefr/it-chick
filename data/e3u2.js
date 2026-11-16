@@ -35,13 +35,13 @@ ICA.addUnit({
       "**まりやさん** is the [[topic-marker|topic]]: what the sentence is about. **は** is a [[particle]]: a small word that comes after a noun and shows its job in the sentence. Here it marks the topic, a bit like “as for Mariya…”. **[学生]{がくせい}** is what you say about the topic. **です** is the polite [[copula]]: it works like “is”, “am” or “are”.",
       "Remember the hook: the particle は is pronounced **わ**. Inside words it keeps its normal sound: はな (flower), はい (yes).",
       {tip:"**Listening to patterns.** When a pattern has a blank, like X は Y です, the audio reads X and Y as **ほにゃらら**: a playful word Japanese speakers use for “something or other” when a word is left out, a bit like “so-and-so” or “blah”. You’ll hear it on TV and in everyday talk all over Japan. It’s casual, so keep it out of formal writing. A and B are read the way Japanese teachers do: エー and ビー."},
-      {table:[["Japanese","English"],["[私]{わたし}はまりやです。","I’m Mariya."],["ケンジさんは[先生]{せんせい}です。","Kenji is a teacher."],["ミンさんは[会社員]{かいしゃいん}です。","Min is an office worker."],["[今日]{きょう}は[休]{やす}みです。","Today is a day off."]]},
+      {table:[["Japanese","English"],["[私]{わたし}はまりやです。","I’m Mariya."],["ふみこさんは[大家]{おおや}さんです。","Fumiko is the landlady."],["ロドリゴさんはメキシコ[人]{じん}です。","Rodrigo is Mexican."],["[今日]{きょう}は[休]{やす}みです。","Today is a day off."]]},
       "Three things that surprise English speakers:",
       {list:["**です doesn’t change for the person.** I am, you are, she is, they are: all です.","**There are no words for “a” or “the”,** and most nouns have no plural ending. [学生]{がくせい} can mean “a student”, “the student” or “students”. The situation tells you which.","**The verb part comes last.** です closes the sentence. Everything about the topic comes before it."]},
       {fig:'<svg viewBox="0 0 340 292"><text x="170" y="20" text-anchor="middle">One pattern, three sentences</text><rect class="d-lup" x="8" y="34" width="84" height="36" rx="6" stroke-width="2"/><text x="50" y="57" text-anchor="middle">まりやさん</text><rect class="d-gold" x="98" y="34" width="32" height="36" rx="6" stroke-width="2"/><text x="114" y="57" text-anchor="middle">は</text><rect class="d-sage" x="136" y="34" width="84" height="36" rx="6" stroke-width="2"/><text x="178" y="57" text-anchor="middle">がくせい</text><rect class="d-rose" x="226" y="34" width="106" height="36" rx="6" stroke-width="2"/><text x="279" y="57" text-anchor="middle">です</text><text class="s" x="50" y="88" text-anchor="middle">topic</text><text class="s" x="114" y="88" text-anchor="middle">particle</text><text class="s" x="178" y="88" text-anchor="middle">comment</text><text class="s" x="279" y="88" text-anchor="middle">polite “is”</text><text x="170" y="110" text-anchor="middle">Mariya is a student.</text><rect class="d-lup" x="8" y="124" width="84" height="36" rx="6" stroke-width="2"/><text x="50" y="147" text-anchor="middle">まりやさん</text><rect class="d-gold" x="98" y="124" width="32" height="36" rx="6" stroke-width="2"/><text x="114" y="147" text-anchor="middle">は</text><rect class="d-sage" x="136" y="124" width="84" height="36" rx="6" stroke-width="2"/><text x="178" y="147" text-anchor="middle">がくせい</text><rect class="d-rose" x="226" y="124" width="106" height="36" rx="6" stroke-width="2"/><text x="279" y="147" text-anchor="middle">じゃありません</text><text x="170" y="182" text-anchor="middle">Mariya is not a student.</text><rect class="d-lup" x="8" y="196" width="84" height="36" rx="6" stroke-width="2"/><text x="50" y="219" text-anchor="middle">まりやさん</text><rect class="d-gold" x="98" y="196" width="32" height="36" rx="6" stroke-width="2"/><text x="114" y="219" text-anchor="middle">は</text><rect class="d-sage" x="136" y="196" width="84" height="36" rx="6" stroke-width="2"/><text x="178" y="219" text-anchor="middle">がくせい</text><rect class="d-rose" x="226" y="196" width="106" height="36" rx="6" stroke-width="2"/><text x="279" y="219" text-anchor="middle">ですか</text><text x="170" y="254" text-anchor="middle">Is Mariya a student?</text><text class="s" x="170" y="280" text-anchor="middle">Only the ending changes. The particle は is read わ.</text></svg>', alt:"Three rows of four boxes. Row one: まりやさん (topic), は (particle), がくせい (comment), です (polite is): Mariya is a student. Row two ends in じゃありません: Mariya is not a student. Row three ends in ですか: Is Mariya a student?", cap:"The topic, は and the comment stay the same. The ending carries “is”, “is not” or the question."}
     ]},
     {h:"Names, さん and leaving things out", body:[
-      "[[honorific-san|さん]] goes after other people’s names, family name or given name: [山田]{やまだ}さん, ケンジさん, イエンさん. It works for everyone, whatever their age or gender, a little like “Mr” or “Ms” but much more common. **Never put さん after your own name.** For teachers and doctors, people use [先生]{せんせい} after the name instead: [山田]{やまだ}[先生]{せんせい}.",
+      "[[honorific-san|さん]] goes after other people’s names, family name or given name: さとうさん, トビーさん, イエンさん. It works for everyone, whatever their age or gender, a little like “Mr” or “Ms” but much more common. **Never put さん after your own name.** For teachers and doctors, people use [先生]{せんせい} after the name instead: さとう[先生]{せんせい} (Mrs. Satō’s old pupils still call her that).",
       "Japanese leaves out words that are already clear. Once everyone knows who you are talking about, the topic and は disappear. Saying [私]{わたし}は in every sentence sounds heavy, like starting every English sentence with “As for me…”. Here is a natural self-introduction:",
       {ex:"はじめまして。\nイエンです。\n[学生]{がくせい}です。\nよろしくおねがいします。\n\nHello, nice to meet you. I’m Yến. I’m a student. I look forward to getting to know you.", label:"A self-introduction"},
       "はじめまして is said only the first time you meet someone. よろしくおねがいします has no exact English partner. It asks the other person for their goodwill, and people use it to close an introduction.",
@@ -118,13 +118,13 @@ ICA.addUnit({
       ["[私]{わたし}の[名前]{なまえ}","my name","[私]{わたし}の is “my”: [私]{わたし} (I) + の."],
       ["[大学]{だいがく}の[友]{とも}だち","a friend from university","の shows where the friend belongs: from university."]
     ]},
-    {id:"e3u2-l1-x7", type:"spot", q:"Mr Tanaka meets someone at a station. Tap the lines with **a mistake**.", ask:"has a mistake", parts:[
-      "A: ",{t:"「すみません、[山田]{やまだ}さんですか。」", flag:false, why:"Correct. A polite yes–no question: name + さん + ですか."},
-      "\nB: ",{t:"「いいえ、ちがいます。」", flag:false, why:"Correct. The short polite “no” to a question about a noun."},
-      " ",{t:"「[田中]{たなか}さんです。」", flag:true, why:"B is talking about himself, so no さん: 「[田中]{たなか}です。」"},
-      "\nA: ",{t:"「[田中]{たなか}さんは[先生]{せんせい}ですか。」", flag:false, why:"Correct. A uses B’s name with さん instead of あなた, which is natural."},
-      "\nB: ",{t:"「いいえ、[先生]{せんせい}ではありませんです。」", flag:true, why:"ありません is already polite, so です is not added: 「[先生]{せんせい}ではありません。」"},
-      " ",{t:"「[会社員]{かいしゃいん}です。」", flag:false, why:"Correct: “I’m an office worker.” The topic (I) is clear, so it is left out."}
+    {id:"e3u2-l1-x7", type:"spot", q:"Mariya is at the bus stop, waiting for a new housemate she hasn’t met. Tap the lines with **a mistake**.", ask:"has a mistake", parts:[
+      "Mariya: ",{t:"「すみません、ゴーさんですか。」", flag:false, why:"Correct. A polite yes–no question: name + さん + ですか."},
+      "\nRodrigo: ",{t:"「いいえ、ちがいます。」", flag:false, why:"Correct. The short polite “no” to a question about a noun."},
+      " ",{t:"「ロドリゴさんです。」", flag:true, why:"Rodrigo is talking about himself, so no さん: 「ロドリゴです。」"},
+      "\nMariya: ",{t:"「ロドリゴさんは[会社員]{かいしゃいん}ですか。」", flag:false, why:"Correct. Mariya uses Rodrigo’s name with さん instead of あなた, which is natural."},
+      "\nRodrigo: ",{t:"「いいえ、[会社員]{かいしゃいん}ではありませんです。」", flag:true, why:"ありません is already polite, so です is not added: 「[会社員]{かいしゃいん}ではありません。」"},
+      " ",{t:"「[学生]{がくせい}です。」", flag:false, why:"Correct: “I’m a student.” The topic (I) is clear, so it is left out."}
     ]}
    ],
    apply:{
@@ -158,7 +158,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e3u2-l2", title:"これ, それ, あれ: pointing, asking, and は vs が", minutes:50,
-   hook:{q:"Kenji is holding a pen in his hand. He asks you 「これは[何]{なん}ですか。」 (“What is this?”). The pen is near him, not you. How do you begin your answer?", options:["これは…","それは…","あれは…","どれは…"], answer:1, reveal:"**それは…** Kenji says これ because the pen is near him. From where you stand, it is near the listener, so you say それ: 「それはペンです。」 Japanese pointing words depend on who the thing is close to, and they change as the speaker changes. This lesson maps all of them."},
+   hook:{q:"Rodrigo is holding his fountain pen. He asks you 「これは[何]{なん}ですか。」 (“What is this?”). The pen is near him, not you. How do you begin your answer?", options:["これは…","それは…","あれは…","どれは…"], answer:1, reveal:"**それは…** Rodrigo says これ because the pen is near him. From where you stand, it is near the listener, so you say それ: 「それはペンです。」 Japanese pointing words depend on who the thing is close to, and they change as the speaker changes. This lesson maps all of them."},
    goals:[
      "Choose これ, それ, あれ or どれ by who the thing is close to",
      "Tell これ (stands alone) from この (needs a noun), and use ここ, そこ, あそこ and どこ for places",
@@ -176,10 +176,10 @@ ICA.addUnit({
     {h:"これ or この?", body:[
       "これ, それ, あれ and どれ **stand alone**. They are like nouns: 「これは[本]{ほん}です。」 (“This is a book.”).",
       "この, その, あの and どの **must have a noun after them**. They work like “this book”, “that umbrella”:",
-      {table:[["Stands alone","Needs a noun","Example with a noun"],["これ","この","この[本]{ほん}は[私]{わたし}のです。 (This book is mine.)"],["それ","その","そのかさはイエンさんのですか。 (Is that umbrella Yến’s?)"],["あれ","あの","あの[人]{ひと}は[田中]{たなか}さんです。 (That person is Ms Tanaka.)"],["どれ","どの","どの[本]{ほん}ですか。 (Which book is it?)"]]},
+      {table:[["Stands alone","Needs a noun","Example with a noun"],["これ","この","この[本]{ほん}は[私]{わたし}のです。 (This book is mine.)"],["それ","その","そのかさはイエンさんのですか。 (Is that umbrella Yến’s?)"],["あれ","あの","あの[人]{ひと}はさとうさんです。 (That person is Mr. Satō.)"],["どれ","どの","どの[本]{ほん}ですか。 (Which book is it?)"]]},
       "So 「✗ これ[本]{ほん}」 and 「✗ このは…」 are both wrong. A quick test: if a noun follows, use the の-word; if not, use the れ-word.",
       {ex:"A (holding a cup): 「これは[日本]{にほん}のお[茶]{ちゃ}です。」\nB: 「そのお[茶]{ちゃ}はおいしいですか。」\nA: “This is Japanese tea.” B: “Is that tea nice?”", label:"The speaker changes, so the word changes"},
-      {warn:"Don’t point at people with これ, それ or あれ: it sounds rude, as if the person were a thing. Use この[人]{ひと}, その[人]{ひと}, あの[人]{ひと}. In polite situations, [方]{かた} replaces [人]{ひと}: あの[方]{かた}. To introduce someone, say こちらは…です: 「こちらは[山田]{やまだ}さんです。」 (“This is Mr Yamada.”)."}
+      {warn:"Don’t point at people with これ, それ or あれ: it sounds rude, as if the person were a thing. Use この[人]{ひと}, その[人]{ひと}, あの[人]{ひと}. In polite situations, [方]{かた} replaces [人]{ひと}: あの[方]{かた}. To introduce someone, say こちらは…です: 「こちらはさとうさんです。」 (“This is Mr. Satō.”)."}
     ]},
     {h:"Places: ここ, そこ, あそこ, どこ", body:[
       "The same pattern gives four place words:",
@@ -206,7 +206,7 @@ ICA.addUnit({
       "「✗ どれはイエンさんのかさですか」 is wrong. And notice the answer: the word that answers the question word takes が too, because it is the new information.",
       {h:"Rule 2: for a known topic, use は"},
       "When the person or thing is already known and you are adding information about it, use は:",
-      {table:[["Sentence","What it answers"],["[山田]{やまだ}さんは[先生]{せんせい}です。","“What about Mr Yamada?” → He is a teacher."],["[山田]{やまだ}さんが[先生]{せんせい}です。","“Who is the teacher?” → Mr Yamada is (he’s the one)."]]},
+      {table:[["Sentence","What it answers"],["ふみこさんは[大家]{おおや}さんです。","“What about Fumiko?” → She is the landlady."],["ふみこさんが[大家]{おおや}さんです。","“Who is the landlady?” → Fumiko is (she’s the one)."]]},
       "The two sentences have the same words but answer different questions. With は, the new part comes after は. With が, the new part comes before が.",
       "You will meet が again with あります and います (Lesson 4) and with [好]{す}き, “to like” (Lesson 5). For the whole picture so far, see {{particles-wa-ga}}.",
       {tip:"Can’t decide? Ask yourself which word is the new information. If it comes **before** the particle, use が. If the new information comes **after** the particle, use は."}
@@ -239,7 +239,7 @@ ICA.addUnit({
     {id:"e3u2-l2-x3", type:"sort", q:"Is each sentence correct, or does it need fixing?", buckets:["Correct","Needs fixing"], items:[
       {t:"この[本]{ほん}は[私]{わたし}のです。", b:0, why:"Correct: この + noun ([本]{ほん})."},
       {t:"これ[本]{ほん}は[私]{わたし}のです。", b:1, why:"これ can’t be followed by a noun. Use この[本]{ほん}."},
-      {t:"どの[人]{ひと}が[山田]{やまだ}さんですか。", b:0, why:"Correct: どの + noun, and が after the question phrase."},
+      {t:"どの[人]{ひと}がさとうさんですか。", b:0, why:"Correct: どの + noun, and が after the question phrase."},
       {t:"だれは[先生]{せんせい}ですか。", b:1, why:"A question word as subject takes が: だれが[先生]{せんせい}ですか。"},
       {t:"トイレはどこですか。", b:0, why:"Correct: X は どこですか asks where X is."},
       {t:"それは[何]{なに}ですか。", b:1, why:"Before です, 何 is read なん: [何]{なん}ですか。"},
@@ -254,11 +254,11 @@ ICA.addUnit({
       ["どれ","which one","どれ asks which thing, out of three or more."],
       ["[何]{なん}","what","何 is read なん before です and の, and なに before を and が."]
     ]},
-    {id:"e3u2-l2-x5", type:"mcq", q:"Looking at a class photo, you want to ask which person is Ken. 「どの[人]{ひと}＿＿ケンさんですか。」", options:[
+    {id:"e3u2-l2-x5", type:"mcq", q:"Looking at a photo of the house, you want to ask which person is Toby. 「どの[人]{ひと}＿＿トビーさんですか。」", options:[
       {t:"が", ok:true, why:"Right. どの[人]{ひと} is a question phrase and the subject, so it takes が."},
       {t:"は", why:"A question word or phrase is new information, so it can’t be the topic. どの[人]{ひと}は is wrong here."},
       {t:"を", why:"を marks the object of a verb (Lesson 3). This sentence has no action verb, just です."},
-      {t:"の", why:"「どの[人]{ひと}のケンさん」 would mean “Ken of which person”, which makes no sense here."}
+      {t:"の", why:"「どの[人]{ひと}のトビーさん」 would mean “Toby of which person”, which makes no sense here."}
     ]},
     {id:"e3u2-l2-x6", type:"order", q:"Put the pieces in order to ask “Where is the station?”", items:[
       {t:"[駅]{えき}", why:"The place you are asking about is the topic, so it comes first."},
@@ -266,8 +266,8 @@ ICA.addUnit({
       {t:"どこ", why:"The question word sits where the answer will go (ここ, そこ or あそこ)."},
       {t:"ですか", why:"です + the question particle か close the sentence."}
     ]},
-    {id:"e3u2-l2-x7", type:"spot", q:"Leila is buying tea. The tin of tea is on the counter right in front of the shop assistant, an arm’s length from Leila. Tap the pointing words that are **wrong**.", ask:"is wrong", parts:[
-      "Leila: 「すみません、",{t:"それ", flag:false, why:"Correct. The tea is near the listener (the assistant), so Leila says それ."},"は[何]{なん}ですか。」\nAssistant: 「",{t:"これ", flag:false, why:"Correct. For the assistant, the tea is close to her, the speaker: これ."},"ですか。[日本]{にほん}のお[茶]{ちゃ}です。」\nLeila: 「",{t:"これ", flag:true, why:"Wrong. The tea is still near the assistant, the listener, so Leila should say それ: 「それはいくらですか。」"},"はいくらですか。」\nAssistant: 「",{t:"この", flag:false, why:"Correct. The tea is near the assistant, and a noun (お[茶]{ちゃ}) follows, so この."},"お[茶]{ちゃ}は[八百円]{はっぴゃくえん}です。」\nLeila: 「じゃ、",{t:"その", flag:true, why:"Wrong. その must have a noun after it. On its own, Leila should say それ: 「じゃ、それをください。」 (“Then I’ll take that, please.”)"},"をください。」"
+    {id:"e3u2-l2-x7", type:"spot", q:"Cheska is buying tea. The tin of tea is on the counter right in front of the shop assistant, an arm’s length from Cheska. Tap the pointing words that are **wrong**.", ask:"is wrong", parts:[
+      "Cheska: 「すみません、",{t:"それ", flag:false, why:"Correct. The tea is near the listener (the assistant), so Cheska says それ."},"は[何]{なん}ですか。」\nAssistant: 「",{t:"これ", flag:false, why:"Correct. For the assistant, the tea is close to her, the speaker: これ."},"ですか。[日本]{にほん}のお[茶]{ちゃ}です。」\nCheska: 「",{t:"これ", flag:true, why:"Wrong. The tea is still near the assistant, the listener, so Cheska should say それ: 「それはいくらですか。」"},"はいくらですか。」\nAssistant: 「",{t:"この", flag:false, why:"Correct. The tea is near the assistant, and a noun (お[茶]{ちゃ}) follows, so この."},"お[茶]{ちゃ}は[八百円]{はっぴゃくえん}です。」\nCheska: 「じゃ、",{t:"その", flag:true, why:"Wrong. その must have a noun after it. On its own, Cheska should say それ: 「じゃ、それをください。」 (“Then I’ll take that, please.”)"},"をください。」"
     ]}
    ],
    apply:{
@@ -398,13 +398,13 @@ ICA.addUnit({
       {t:"[入]{はい}るます", why:"ます never goes straight onto the dictionary form. Change る to り first."},
       {t:"[入]{はい}れます", why:"This is a different form (the potential, “can enter”), taught at N4."}
     ]},
-    {id:"e3u2-l3-x6", type:"mcq", q:"Tomás wants to invite a colleague he doesn’t know well to lunch, and leave her room to say no. What should he say?", options:[
+    {id:"e3u2-l3-x6", type:"mcq", q:"Rodrigo wants to invite a classmate at his language school, whom he doesn’t know well, to lunch, and leave her room to say no. What should he say?", options:[
       {t:"いっしょにお[昼]{ひる}を[食]{た}べませんか。", ok:true, why:"Right. ～ませんか is the polite invitation: “Would you like to have lunch together?”"},
       {t:"いっしょにお[昼]{ひる}を[食]{た}べましょう。", why:"～ましょう (“Let’s…”) is more direct and assumes she wants to. It fits once she has agreed, or with close friends."},
       {t:"いっしょにお[昼]{ひる}を[食]{た}べませんでしたか。", why:"This is past: “Didn’t you have lunch together?” It isn’t an invitation."},
       {t:"いっしょにお[昼]{ひる}を[食]{た}べました。", why:"This is a past statement: “We had lunch together.”"}
     ]},
-    {id:"e3u2-l3-x7", type:"spot", q:"Priya wrote about her day yesterday. Tap the verb forms that are **wrong**.", ask:"is wrong", parts:[
+    {id:"e3u2-l3-x7", type:"spot", q:"Cheska wrote about her day yesterday. Tap the verb forms that are **wrong**.", ask:"is wrong", parts:[
       "[昨日]{きのう}は[六時]{ろくじ}に",{t:"[起]{お}きました", flag:false, why:"Correct. [起]{お}きる is ichidan: [起]{お}きます → [起]{お}きました."},"。コーヒーを",{t:"[飲]{の}みました", flag:false, why:"Correct. [飲]{の}む is godan: む → み, [飲]{の}みました."},"。[朝]{あさ}、[日本語]{にほんご}を",{t:"[勉強]{べんきょう}しました", flag:false, why:"Correct. Noun + する: [勉強]{べんきょう}します → [勉強]{べんきょう}しました."},"。[五時]{ごじ}にうちに",{t:"[帰]{かえ}ました", flag:true, why:"Wrong. [帰]{かえ}る is a godan exception: [帰]{かえ}りました."},"。[夜]{よる}、テレビを",{t:"[見]{み}りました", flag:true, why:"Wrong. [見]{み}る is ichidan: drop る and add ました, [見]{み}ました."},"。[十一時]{じゅういちじ}に",{t:"[寝]{ね}ました", flag:false, why:"Correct. [寝]{ね}る is ichidan: [寝]{ね}ます → [寝]{ね}ました."},"。"
     ]}
    ],
@@ -499,7 +499,7 @@ ICA.addUnit({
       "Two patterns, linked to Lesson 2’s は and が:",
       {ol:["**Place に thing が あります/います** introduces something new: 「[部屋]{へや}にねこがいます。」 (“There’s a cat in the room.”)","**Thing は place に あります/います** says where a known thing is: 「ねこは[部屋]{へや}にいます。」 (“The cat is in the room.”)"]},
       "Positions use の + a position word + に: [机]{つくえ}の[上]{うえ}に (on the desk), [箱]{はこ}の[中]{なか}に (in the box), [駅]{えき}の[前]{まえ}に (in front of the station), [銀行]{ぎんこう}の[隣]{となり}に (next to the bank).",
-      "The negatives are ありません and いません: 「[今]{いま}、[田中]{たなか}さんはいません。」 (“Ms Tanaka isn’t here now.”). In Unit 3 you’ll learn the plain negative of ある, which is irregular: ない (never ✗ あらない).",
+      "The negatives are ありません and いません: 「[今]{いま}、まりやさんはいません。」 (“Mariya isn’t here now.”). In Unit 3 you’ll learn the plain negative of ある, which is irregular: ない (never ✗ あらない).",
       "The same verbs say what you **have**: 「[時間]{じかん}があります。」 (“I have time.”), 「[兄]{あに}がいます。」 (“I have an older brother.”), 「[車]{くるま}がありません。」 (“I don’t have a car.”).",
       "Events use あります, and the place of an event takes で, because something happens there: 「[駅]{えき}の[前]{まえ}でお[祭]{まつ}りがあります。」 (“There’s a festival in front of the station.”). More in {{existence-aru-iru}}."
     ]},
@@ -518,7 +518,7 @@ ICA.addUnit({
     ]},
     {id:"e3u2-l4-x2", type:"sort", q:"Which particle goes in the blank: に or で?", buckets:["に","で"], items:[
       {t:"[図書館]{としょかん}＿[本]{ほん}を[読]{よ}みます。", b:1, why:"Reading is an action, so the place takes で."},
-      {t:"[図書館]{としょかん}＿[田中]{たなか}さんがいます。", b:0, why:"います says where someone is, so the place takes に."},
+      {t:"[図書館]{としょかん}＿イエンさんがいます。", b:0, why:"います says where someone is, so the place takes に."},
       {t:"[十時]{じゅうじ}＿[寝]{ね}ます。", b:0, why:"A clock time takes に."},
       {t:"バス＿[駅]{えき}へ[行]{い}きます。", b:1, why:"The bus is the means of travel: で."},
       {t:"[机]{つくえ}の[上]{うえ}＿かぎがあります。", b:0, why:"あります says where something is: に."},
@@ -552,7 +552,7 @@ ICA.addUnit({
       {t:"[公園]{こうえん}で[犬]{いぬ}がいます。", why:"Where something simply is takes に. で is for the place of an action."},
       {t:"[公園]{こうえん}に[犬]{いぬ}をいます。", why:"います has no object. The thing that exists takes が."}
     ]},
-    {id:"e3u2-l4-x7", type:"spot", q:"Tomás wrote about his weekend. Tap the particles that are **wrong**.", ask:"is wrong", parts:[
+    {id:"e3u2-l4-x7", type:"spot", q:"Rodrigo wrote about his weekend. Tap the particles that are **wrong**.", ask:"is wrong", parts:[
       "[土曜日]{どようび}",{t:"に", flag:false, why:"Correct. A day of the week normally takes に."},"、[友]{とも}だち",{t:"と", flag:false, why:"Correct. と after a person: with a friend."},"[公園]{こうえん}",{t:"に", flag:true, why:"Wrong. Playing tennis is an action, so the place takes で: [公園]{こうえん}でテニスをしました."},"テニスをしました。それから、バス",{t:"で", flag:false, why:"Correct. The bus is the means: で."},"うち",{t:"へ", flag:false, why:"Correct. へ shows direction with [帰]{かえ}る (に would also be fine)."},"[帰]{かえ}りました。[日曜日]{にちようび}はうち",{t:"で", flag:false, why:"Correct. Reading is an action, so the place takes で."},"[本]{ほん}",{t:"に", flag:true, why:"Wrong. [本]{ほん} is the object of [読]{よ}む, so it takes を: [本]{ほん}を[読]{よ}みました."},"[読]{よ}みました。"
     ]},
     {id:"e3u2-l4-x8", type:"number", q:"A café sign says 「[月曜日]{げつようび}から[金曜日]{きんようび}まで」. [月曜日]{げつようび} is Monday and [金曜日]{きんようび} is Friday. On how many days a week is the café open?", answer:5, tol:0, unit:"days", why:"から…まで includes both ends: Monday, Tuesday, Wednesday, Thursday and Friday. That is 5 days.", wrongs:[{v:4, tol:0, why:"4 is Friday minus Monday, which counts the gaps between days. から…まで includes both Monday and Friday, so add one: 5."},{v:2, tol:0, why:"The sign names two days, but から…まで means the whole span from Monday to Friday: 5 days."}]}
@@ -626,7 +626,7 @@ ICA.addUnit({
       "There is no rule you can see from the outside, so learn these few by heart. When in doubt, look the word up: a dictionary will say “na-adjective”.",
       {h:"[好]{す}き and きらい: likes and dislikes"},
       "[好]{す}き (liked) and きらい (disliked) are な-adjectives, and the thing you like or dislike takes **が**, not を:",
-      {ex:"[私]{わたし}はねこが[好]{す}きです。 I like cats.\nケンジさんは[魚]{さかな}がきらいです。 Kenji doesn’t like fish.\n[好]{す}きな[食]{た}べ[物]{もの}は[何]{なん}ですか。 What’s your favourite food?", label:"が with すき and きらい"},
+      {ex:"[私]{わたし}はねこが[好]{す}きです。 I like cats.\nチェスカさんは[料理]{りょうり}がきらいです。 Cheska doesn’t like cooking.\n[好]{す}きな[食]{た}べ[物]{もの}は[何]{なん}ですか。 What’s your favourite food?", label:"が with すき and きらい"},
       "きらい is a strong word, like “hate” in some contexts. To be gentle, many people say あまり[好]{す}きじゃありません (“I don’t like it much”) instead.",
       {h:"[大]{おお}きな and [小]{ちい}さな"},
       "[大]{おお}きい and [小]{ちい}さい are い-adjectives, but you will also see [大]{おお}きな and [小]{ちい}さな before nouns: [大]{おお}きな[家]{いえ} (a big house). These are special pre-noun forms, not な-adjectives: you can’t say 「✗ [大]{おお}きです」. At the end of a sentence, always use [大]{おお}きいです."
@@ -698,7 +698,7 @@ ICA.addUnit({
       {t:"Add くなかった: [高]{たか}くなかった", why:"くなかった is the past negative ending."},
       {t:"Add です to make it polite: [高]{たか}くなかったです", why:"です goes last and only adds politeness."}
     ]},
-    {id:"e3u2-l5-x7", type:"spot", q:"Leila wrote about a trip last week. Tap the adjective forms that are **wrong**.", ask:"is wrong", parts:[
+    {id:"e3u2-l5-x7", type:"spot", q:"Cheska wrote about a trip last week. Tap the adjective forms that are **wrong**.", ask:"is wrong", parts:[
       "[町]{まち}は",{t:"にぎやかでした", flag:false, why:"Correct. にぎやか (lively) is a な-adjective: にぎやかでした."},"。ホテルは",{t:"きれかったです", flag:true, why:"Wrong. きれい is a な-adjective, so its past is きれいでした."},"。でも、[部屋]{へや}は",{t:"[静]{しず}かくなかったです", flag:true, why:"Wrong. [静]{しず}か is a な-adjective: [静]{しず}かじゃありませんでした (or じゃなかったです)."},"。[食]{た}べ[物]{もの}は",{t:"おいしいでした", flag:true, why:"Wrong. おいしい is an い-adjective, so the past is おいしかったです."},"。[人]{ひと}は",{t:"[親切]{しんせつ}でした", flag:false, why:"Correct. [親切]{しんせつ} (kind) is a な-adjective: [親切]{しんせつ}でした."},"。[天気]{てんき}は",{t:"あまりよくなかったです", flag:false, why:"Correct. あまり + a negative, and いい becomes よくなかった."},"。"
     ]},
     {id:"e3u2-l5-x8", type:"mcq", q:"Which sentence means “This curry isn’t very spicy”?", options:[
@@ -755,7 +755,7 @@ ICA.addUnit({
       "**の joins two nouns.** The first noun describes the second: who owns it ([私]{わたし}の[本]{ほん}, my book), what kind it is ([日本語]{にほんご}の[先生]{せんせい}, a teacher of Japanese) or where it belongs ([大学]{だいがく}の[友]{とも}だち, a friend from university). The describing noun always comes first. You can chain の ([私]{わたし}の[友]{とも}だちの[名前]{なまえ}, my friend’s name) and drop the second noun when it is clear: 「[私]{わたし}のです。」 (“It’s mine.”).",
       "**Leaving things out.** After the first sentence, drop what is clear: 「まりやです。[学生]{がくせい}です。」 sounds natural; repeating [私]{わたし}は in every sentence does not.",
       "**Names and “you”.** さん goes after other people’s family or given names; [先生]{せんせい} replaces it for teachers and doctors. Instead of あなた, people usually say the listener’s name with さん.",
-      {table:[["Japanese","English"],["ケンジさんは[先生]{せんせい}です。","Kenji is a teacher."],["[昨日]{きのう}は[休]{やす}みでした。","Yesterday was a day off."],["イエンさんのかばんじゃありません。","It isn’t Yến’s bag."]]}
+      {table:[["Japanese","English"],["ふみこさんは[大家]{おおや}さんです。","Fumiko is the landlady."],["[昨日]{きのう}は[休]{やす}みでした。","Yesterday was a day off."],["イエンさんのかばんじゃありません。","It isn’t Yến’s bag."]]}
      ],
      pro:[
       "**Why は is read わ.** Over the centuries, Japanese changed how は sounded in the middle of words, and the particle came to be pronounced わ. The 1946 spelling reform ([現代]{げんだい}かなづかい, revised in 1986 as [現代]{げんだい}[仮名]{かな}[遣]{づか}い) wrote most words as they sound, but kept the particles は, へ and を in their old spelling. That is why the topic particle is written は and read わ.",
@@ -781,7 +781,7 @@ ICA.addUnit({
      ],
      builder:[
       {table:[["Series","Thing / + noun","Place","Polite direction"],["こ (near me)","これ / この","ここ","こちら"],["そ (near you)","それ / その","そこ","そちら"],["あ (far from both)","あれ / あの","あそこ","あちら"],["ど (question)","どれ / どの","どこ","どちら"]]},
-      "これ-words stand alone (「これは[本]{ほん}です。」). この-words need a noun after them (「この[本]{ほん}は[私]{わたし}のです。」). Don’t point at people with これ or あれ; say この[人]{ひと}, あの[人]{ひと}, or politely あの[方]{かた}. Introduce someone with 「こちらは[山田]{やまだ}さんです。」",
+      "これ-words stand alone (「これは[本]{ほん}です。」). この-words need a noun after them (「この[本]{ほん}は[私]{わたし}のです。」). Don’t point at people with これ or あれ; say この[人]{ひと}, あの[人]{ひと}, or politely あの[方]{かた}. Introduce someone with 「こちらはさとうさんです。」",
       "When you and the listener stand side by side, これ is near both of you, それ a little away and あれ far away.",
       {table:[["Question word","Meaning"],["[何]{なん} / [何]{なに}","what"],["だれ (polite: どなた)","who"],["どこ","where"],["いつ","when"],["どれ","which one (of three or more)"],["どの + noun","which (noun)"],["いくら","how much (price)"]]},
       "A question word as subject takes が: 「どれがイエンさんのかさですか。」 ({{particles-wa-ga}}).",
@@ -805,8 +805,8 @@ ICA.addUnit({
     levels:{
      starter:[
       "Japanese has two particles that can come after the “who” or “what” of a sentence: は and が. Learners meet them on day one and keep refining them for years, so it is fine to start simple.",
-      "**は marks the topic**: something already known, which you are now saying something about. 「[山田]{やまだ}さんは[先生]{せんせい}です。」 (“As for Mr Yamada, he’s a teacher.”) The new information comes **after** は.",
-      "**が marks the subject when it is the new information**: the answer to “who?” or “which?”. 「[山田]{やまだ}さんが[先生]{せんせい}です。」 (“Mr Yamada is the teacher”, he’s the one.) The new information comes **before** が.",
+      "**は marks the topic**: something already known, which you are now saying something about. 「ふみこさんは[大家]{おおや}さんです。」 (“As for Fumiko, she’s the landlady.”) The new information comes **after** は.",
+      "**が marks the subject when it is the new information**: the answer to “who?” or “which?”. 「ふみこさんが[大家]{おおや}さんです。」 (“Fumiko is the teacher”, he’s the one.) The new information comes **before** が.",
       "One rule never fails at this level: **a question word as the subject takes が**, never は. 「だれが[先生]{せんせい}ですか。」 And the word that answers it takes が too.",
       {key:"Known topic → は, news after it. Question word or its answer → が."}
      ],
@@ -821,7 +821,7 @@ ICA.addUnit({
      ],
      pro:[
       "Linguists describe several distinct uses of each particle. Two for が matter early:",
-      {list:["**Exhaustive-listing が:** “X, and only X”. 「[田中]{たなか}さんが[来]{き}ました。」 in answer to “Who came?” means Tanaka is the one who came.","**Neutral-description が:** reporting a whole new event or scene with nothing in it already known: 「あ、[雨]{あめ}が[降]{ふ}っています。」 (“Oh, it’s raining.”). Here there is no topic at all."]},
+      {list:["**Exhaustive-listing が:** “X, and only X”. 「トビーさんが[来]{き}ました。」 in answer to “Who came?” means Toby is the one who came.","**Neutral-description が:** reporting a whole new event or scene with nothing in it already known: 「あ、[雨]{あめ}が[降]{ふ}っています。」 (“Oh, it’s raining.”). Here there is no topic at all."]},
       "And two for は: the **thematic は** (a known topic) and the **contrastive は** (this one, as opposed to others). Contrastive は often appears with negatives: 「[肉]{にく}は[食]{た}べません。」 (“Meat, I don’t eat”, implying other things I do).",
       "**は stacks on other particles.** は can replace が and を, but it is added after other particles: [東京]{とうきょう}には (as for in Tokyo), [図書館]{としょかん}では (as for at the library), [友]{とも}だちとは. The same is true of も.",
       "**In clauses, が wins.** Inside a clause that describes a noun or gives a reason, the subject normally takes が even if it would be a topic in a main sentence: 「[私]{わたし}が[好]{す}きな[食]{た}べ[物]{もの}」 (“the food I like”). You will meet this pattern from Unit 5.",
@@ -872,7 +872,7 @@ ICA.addUnit({
       "English uses one phrase, “there is”, for everything. Japanese has two verbs, and the choice depends on **what** exists:",
       {table:[["Verb","Used for","Example"],["います (いる)","people and animals","[公園]{こうえん}に[犬]{いぬ}がいます。 (There’s a dog in the park.)"],["あります (ある)","things, plants, buildings, events","[机]{つくえ}の[上]{うえ}に[本]{ほん}があります。 (There’s a book on the desk.)"]]},
       "A simple test: can it move by itself? Then use います. A tree is alive, but it can’t walk away, so it takes あります: 「[公園]{こうえん}に[木]{き}があります。」",
-      "The place takes に, and the thing that exists takes が. The negatives are ありません and いません: 「[今]{いま}、[田中]{たなか}さんはいません。」 (“Ms Tanaka isn’t here now.”)",
+      "The place takes に, and the thing that exists takes が. The negatives are ありません and いません: 「[今]{いま}、まりやさんはいません。」 (“Mariya isn’t here now.”)",
       "Like other verbs, they come at the end of the sentence and don’t change for one or many: 「[犬]{いぬ}がいます。」 can mean one dog or several.",
       "The same verbs say what you **have**: 「[時間]{じかん}があります。」 (I have time), 「[兄]{あに}がいます。」 (I have an older brother).",
       {key:"People and animals: います. Everything else: あります. Place に, thing が."}
@@ -1026,12 +1026,12 @@ ICA.addUnit({
    {id:"aru-iru", term:"あります and います (ある, いる)", def:"The two verbs for “there is” and “is (somewhere)”: います (いる) for people and animals, あります (ある) for things, plants, buildings and events. They also say what you have: 「[時間]{じかん}があります。」", codex:"existence-aru-iru"},
    {id:"particle-kara-made", term:"から and まで (from, until)", def:"Particles that mark the start (から, “from”) and the end (まで, “until” or “as far as”) of a span of time or space: [九時]{くじ}から[五時]{ごじ}まで, [駅]{えき}からうちまで.", codex:"particles-o-ni-de"},
    {id:"particle-mo", term:"Particle も (also)", def:"The particle meaning “also” or “too”. It replaces は, が and を, and comes after other particles: [私]{わたし}も, [駅]{えき}にも.", codex:"particles-o-ni-de"},
-   {id:"honorific-san", term:"さん (name suffix)", def:"The polite suffix added to other people’s names, for any gender: [山田]{やまだ}さん, まりやさん. Never used with your own name.", codex:"japanese-sentence-basics"},
+   {id:"honorific-san", term:"さん (name suffix)", def:"The polite suffix added to other people’s names, for any gender: さとうさん, まりやさん. Never used with your own name.", codex:"japanese-sentence-basics"},
    {id:"mashou-masenka", term:"～ましょう and ～ませんか", def:"Polite endings for making plans: ～ませんか invites (“Would you like to…?”), ～ましょう suggests (“Let’s…”), and ～ましょうか offers or asks (“Shall I…? / Shall we…?”).", codex:"masu-verbs"}
   ],
   bank:[
    /* ---- Lesson 1 ---- */
-   {id:"e3u2-q01", lesson:"e3u2-l1", level:1, q:"In 「ケンジさんは[先生]{せんせい}です。」, how is the particle は pronounced?", options:[
+   {id:"e3u2-q01", lesson:"e3u2-l1", level:1, q:"In 「ふみこさんは[大家]{おおや}さんです。」, how is the particle は pronounced?", options:[
      {t:"わ", ok:true, why:"As a topic particle, は is pronounced わ, a spelling kept from older Japanese."},
      {t:"は", why:"は keeps its normal sound inside words such as はな, but as a particle it is read わ."},
      {t:"え", why:"え is how the particle へ is read. The particle は is read わ."},
@@ -1061,8 +1061,8 @@ ICA.addUnit({
      {t:"[先生]{せんせい}のイエンさんの[名前]{なまえ}", why:"This means “the name of Yến, who is the teacher” (roughly “teacher Yến’s name”). The teacher belongs to Yến, so イエンさん comes first."},
      {t:"イエンさん[先生]{せんせい}[名前]{なまえ}の", why:"の must go between each pair of nouns, not at the end."}
    ]},
-   {id:"e3u2-q06", lesson:"e3u2-l1", level:3, q:"Priya introduces herself at work. Which line needs fixing?", options:[
-     {t:"「プリヤさんです。」", ok:true, why:"Priya is talking about herself, so no さん: 「プリヤです。」"},
+   {id:"e3u2-q06", lesson:"e3u2-l1", level:3, q:"Cheska introduces herself at the university. Which line needs fixing?", options:[
+     {t:"「チェスカさんです。」", ok:true, why:"Cheska is talking about herself, so no さん: 「チェスカです。」"},
      {t:"「はじめまして。」", why:"Correct: the standard opening for a first meeting."},
      {t:"「エンジニアです。」", why:"Correct: “I’m an engineer.” The topic (I) is clear, so it is left out."},
      {t:"「よろしくおねがいします。」", why:"Correct: the standard way to close an introduction."}
@@ -1073,11 +1073,11 @@ ICA.addUnit({
      {t:"あなた means “they”, not “you”.", why:"あなた does mean “you”."},
      {t:"Japanese has no word for “you”.", why:"It has several, including あなた; people simply use them less."}
    ]},
-   {id:"e3u2-q08", lesson:"e3u2-l1", level:1, q:"How do you turn 「ミンさんは[医者]{いしゃ}です。」 into a yes–no question?", options:[
-     {t:"Add か at the end: ミンさんは[医者]{いしゃ}ですか。", ok:true, why:"か at the end makes a question. The word order stays the same."},
-     {t:"Move です to the front: ですミンさんは[医者]{いしゃ}。", why:"Japanese doesn’t move words to make questions."},
-     {t:"Put か at the start: かミンさんは[医者]{いしゃ}です。", why:"か is a sentence-final particle: it goes at the end."},
-     {t:"Replace は with か: ミンさんか[医者]{いしゃ}です。", why:"は stays. か is added at the end of the sentence."}
+   {id:"e3u2-q08", lesson:"e3u2-l1", level:1, q:"How do you turn 「チェスカさんはフィリピン[人]{じん}です。」 into a yes–no question?", options:[
+     {t:"Add か at the end: チェスカさんはフィリピン[人]{じん}ですか。", ok:true, why:"か at the end makes a question. The word order stays the same."},
+     {t:"Move です to the front: ですチェスカさんはフィリピン[人]{じん}。", why:"Japanese doesn’t move words to make questions."},
+     {t:"Put か at the start: かチェスカさんはフィリピン[人]{じん}です。", why:"か is a sentence-final particle: it goes at the end."},
+     {t:"Replace は with か: チェスカさんかフィリピン[人]{じん}です。", why:"は stays. か is added at the end of the sentence."}
    ]},
    {id:"e3u2-q09", lesson:"e3u2-l1", level:1, q:"Which sentence-final particle checks that the listener agrees, as in 「いい[天気]{てんき}です＿＿。」 (“Nice weather, isn’t it?”)?", options:[
      {t:"ね", ok:true, why:"ね invites agreement, like “isn’t it?”"},
@@ -1085,7 +1085,7 @@ ICA.addUnit({
      {t:"か", why:"か asks a real question; it doesn’t assume the listener agrees."},
      {t:"の", why:"の here would join nouns or ask casually; it isn’t the agreement particle."}
    ]},
-   {id:"e3u2-q10", lesson:"e3u2-l1", level:3, q:"Kenji points at an umbrella and asks 「イエンさんのかさですか。」. It is your umbrella. Which answer fits?", options:[
+   {id:"e3u2-q10", lesson:"e3u2-l1", level:3, q:"Mariya points at an umbrella and asks 「イエンさんのかさですか。」. It is your umbrella. Which answer fits?", options:[
      {t:"いいえ、[私]{わたし}のです。", ok:true, why:"“No, it’s mine.” の without the second noun means “mine”."},
      {t:"はい、[私]{わたし}のです。", why:"はい agrees that it is Yến’s, and then you say it is yours: the parts clash."},
      {t:"いいえ、[私]{わたし}です。", why:"This means “No, it’s me.” Without の, [私]{わたし} is the person, not the owner."},
@@ -1134,11 +1134,11 @@ ICA.addUnit({
      {t:"そのシャツはいくらですか。", why:"その is for things near the listener. The shirt is in his own hands."},
      {t:"これシャツはいくらですか。", why:"これ can’t take a noun after it. Use この."}
    ]},
-   {id:"e3u2-q18", lesson:"e3u2-l2", level:3, q:"Which question does 「[山田]{やまだ}さんが[先生]{せんせい}です。」 answer most naturally?", options:[
-     {t:"“Who is the teacher?”", ok:true, why:"が marks the new information, Mr Yamada, as the answer to “who?”."},
-     {t:"“What does Mr Yamada do?”", why:"That question would be answered with は: 「[山田]{やまだ}さんは[先生]{せんせい}です。」"},
-     {t:"“Is Mr Yamada a student?”", why:"That would get はい or いいえ, and は."},
-     {t:"“Where is Mr Yamada?”", why:"That would be answered with a place, for example あそこです."}
+   {id:"e3u2-q18", lesson:"e3u2-l2", level:3, q:"Which question does 「ふみこさんが[大家]{おおや}さんです。」 answer most naturally?", options:[
+     {t:"“Who is the landlady?”", ok:true, why:"が marks the new information, Fumiko, as the answer to “who?”."},
+     {t:"“What does Fumiko do?”", why:"That question would be answered with は: 「ふみこさんは[大家]{おおや}さんです。」"},
+     {t:"“Is Fumiko a student?”", why:"That would get はい or いいえ, and は."},
+     {t:"“Where is Fumiko?”", why:"That would be answered with a place, for example あそこです."}
    ]},
    {id:"e3u2-q19", lesson:"e3u2-l2", level:2, q:"A shop assistant is holding a cup and tells you its price. Which sentence does she say?", options:[
      {t:"このカップは[千円]{せんえん}です。", ok:true, why:"The cup is near her, the speaker, and a noun follows: この."},
@@ -1183,7 +1183,7 @@ ICA.addUnit({
      {t:"に", why:"に marks a time, a destination or where something is."},
      {t:"で", why:"で marks the place of an action or the means."}
    ]},
-   {id:"e3u2-q26", lesson:"e3u2-l3", level:3, q:"Tomás texts a friend 「[今]{いま}テレビを[見]{み}ます。」 to say “I’m watching TV right now.” What is the problem?", options:[
+   {id:"e3u2-q26", lesson:"e3u2-l3", level:3, q:"Rodrigo texts a friend 「[今]{いま}テレビを[見]{み}ます。」 to say “I’m watching TV right now.” What is the problem?", options:[
      {t:"The ます form means habit or future, not an action in progress; Japanese uses ～ています for that.", ok:true, why:"「[今]{いま}テレビを[見]{み}ます」 sounds like “I’ll watch TV now.” Unit 3 teaches [見]{み}ています."},
      {t:"[見]{み}る is godan, so it should be [見]{み}ります.", why:"[見]{み}る is ichidan: [見]{み}ます is the correct ます form."},
      {t:"テレビ needs が instead of を.", why:"テレビ is the object of [見]{み}る, so を is correct."},
@@ -1195,7 +1195,7 @@ ICA.addUnit({
      {t:"[来]{く}ります", why:"くる isn’t godan; it is one of the two irregular verbs."},
      {t:"[来]{こ}ます", why:"こ appears in other forms of [来]{く}る (Unit 3), not in the ます form."}
    ]},
-   {id:"e3u2-q28", lesson:"e3u2-l3", level:3, q:"Mei sees the word かえます in a message. Which dictionary form does it come from?", options:[
+   {id:"e3u2-q28", lesson:"e3u2-l3", level:3, q:"Rodrigo sees the word かえます in a message. Which dictionary form does it come from?", options:[
      {t:"[変]{か}える (to change)", ok:true, why:"[変]{か}える is ichidan: drop る, add ます → かえます."},
      {t:"[帰]{かえ}る (to go home)", why:"[帰]{かえ}る is godan, so its ます form is かえります, with り."},
      {t:"[買]{か}う (to buy)", why:"[買]{か}う becomes かいます."},
@@ -1250,11 +1250,11 @@ ICA.addUnit({
      {t:"[九時]{くじ}から[五時]{ごじ}に[働]{はたら}きます。", why:"に marks a point in time, not the end of a span. Use まで."},
      {t:"[九時]{くじ}で[五時]{ごじ}まで[働]{はたら}きます。", why:"で doesn’t mark a starting time. Use から."}
    ]},
-   {id:"e3u2-q37", lesson:"e3u2-l4", level:3, q:"You share a flat with your friend Ms Tanaka. Another friend of hers phones and asks for her, but she has gone out. What do you say?", options:[
-     {t:"すみません、[今]{いま}、[田中]{たなか}さんはいません。", ok:true, why:"People take います, so the negative is いません."},
-     {t:"すみません、[今]{いま}、[田中]{たなか}さんはありません。", why:"ありません is for things. A person takes いません."},
-     {t:"すみません、[今]{いま}、[田中]{たなか}さんにいません。", why:"に marks the place where someone is, not the person."},
-     {t:"すみません、[今]{いま}、[田中]{たなか}さんをいません。", why:"いる has no object, so を can’t be used."}
+   {id:"e3u2-q37", lesson:"e3u2-l4", level:3, q:"You live at Kamome House. A friend of Mariya’s phones and asks for her, but she has gone out. What do you say?", options:[
+     {t:"すみません、[今]{いま}、まりやさんはいません。", ok:true, why:"People take います, so the negative is いません."},
+     {t:"すみません、[今]{いま}、まりやさんはありません。", why:"ありません is for things. A person takes いません."},
+     {t:"すみません、[今]{いま}、まりやさんにいません。", why:"に marks the place where someone is, not the person."},
+     {t:"すみません、[今]{いま}、まりやさんをいません。", why:"いる has no object, so を can’t be used."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e3u2-q38", lesson:"e3u2-l5", level:1, q:"Which of these is a な-adjective?", options:[
@@ -1293,7 +1293,7 @@ ICA.addUnit({
      {t:"で", why:"で marks the place of an action or the means."},
      {t:"に", why:"に marks time, destination or where something is."}
    ]},
-   {id:"e3u2-q44", lesson:"e3u2-l5", level:3, q:"Leila wrote 「ホテルはきれかったです。」 about her trip. How should she fix it?", options:[
+   {id:"e3u2-q44", lesson:"e3u2-l5", level:3, q:"Cheska wrote 「ホテルはきれかったです。」 about her trip. How should she fix it?", options:[
      {t:"ホテルはきれいでした。", ok:true, why:"きれい is a な-adjective, so its past is きれいでした."},
      {t:"ホテルはきれいかったです。", why:"きれい isn’t an い-adjective, so it doesn’t take かった."},
      {t:"ホテルはきれいだったでした。", why:"The past is marked twice. Use きれいでした."},
