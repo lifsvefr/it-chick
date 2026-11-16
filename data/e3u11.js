@@ -553,7 +553,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "Partner words follow [[uchi-soto]], as family words did at N4. For your own partner you say [夫]{おっと} (husband) and [妻]{つま} (wife). For someone else’s, you say ご主人 and [奥]{おく}さん. A married couple is [夫]{ふう}[婦]{ふ}, with the reading フウ. After a family name, [夫]{ふ}[妻]{さい} is a formal way to say “Mr and Mrs”: 田中[夫]{ふ}[妻]{さい}.",
+      "Partner words follow [[uchi-soto]], as family words did at N4. For your own partner you say [夫]{おっと} (husband) and [妻]{つま} (wife). For someone else’s, you say ご主人 and [奥]{おく}さん. A married couple is [夫]{ふう}[婦]{ふ}, with the reading フウ. After a family name, [夫]{ふ}[妻]{さい} is a formal way to say “Mr and Mrs”: [佐藤]{さとう}[夫]{ふ}[妻]{さい}.",
       "Some words here have a second use. [彼]{かれ} (he) and [彼]{かの}女 (she) also mean boyfriend and girlfriend, so Japanese speakers often use the person’s name instead. 〜[君]{くん} goes after the names of boys and younger men, often from a teacher, a boss or a friend; [君]{きみ} (you) is direct: some speakers use it to close friends or juniors, and it is common in songs, but avoid it with anyone above you. [皆]{みな}さん (everyone) opens many speeches and emails: [皆]{みな}さん、こんにちは。",
       "Four kanji make words for people in society: [民]{みん} (people of a place: [市]{し}[民]{みん}, 住[民]{みん}), [師]{し} (an expert: 医[師]{し}, a formal word for doctor), [徒]{と} (a pupil: 生[徒]{と}) and [官]{かん} (an official: [警]{けい}[官]{かん}, police officer)."
      ]
@@ -865,13 +865,13 @@ ICA.addUnit({
       "Read this diary entry. It uses many of the kanji in this lesson.",
       {
        "ex": "[昨日]{きのう}は[忙]{いそが}しい一日だった。朝、[祖]{そ}母から電話があって、入院したと聞いて心[配]{ぱい}になった。夕方、病院に行くと、[祖]{そ}母は[笑]{え}[顔]{がお}で「大[丈]{じょう}[夫]{ぶ}よ」と言った。ほっとして、[涙]{なみだ}が出そうになった。夜は[疲]{つか}れて、すぐに[眠]{ねむ}ってしまった。",
-       "label": "Min’s diary"
+       "label": "Mariya’s diary"
       },
       {
        "list": [
-        "**Why did Min worry in the morning?** Her grandmother ([祖]{そ}母) phoned to say she had gone into hospital (入院).",
+        "**Why did Mariya worry in the morning?** Her grandmother ([祖]{そ}母) phoned to say she had gone into hospital (入院).",
         "**How was her grandmother at the hospital?** Smiling ([笑]{え}[顔]{がお}): she said she was fine. 大[丈]{じょう}[夫]{ぶ} contains 夫 with the reading ぶ.",
-        "**What happened at night?** Min was tired ([疲]{つか}れて) and fell asleep at once ([眠]{ねむ}ってしまった)."
+        "**What happened at night?** Mariya was tired ([疲]{つか}れて) and fell asleep at once ([眠]{ねむ}ってしまった)."
        ]
       },
       {
@@ -974,7 +974,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l1-x3",
      "type": "mcq",
-     "q": "Ana writes in her notebook: 「みらいの自分に手紙を書く」 (write a letter to my future self). Which is the correct kanji for みらい?",
+     "q": "Cheska writes in her notebook: 「みらいの自分に手紙を書く」 (write a letter to my future self). Which is the correct kanji for みらい?",
      "options": [
       {
        "t": "[未]{み}来",
@@ -1022,7 +1022,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l1-x5",
      "type": "spot",
-     "q": "Kenji wrote this about his sister, but two kanji are wrong (they look like the right ones). Tap them.",
+     "q": "Rodrigo wrote this about his sister, but two kanji are wrong (they look like the right ones). Tap them.",
      "ask": "wrong kanji",
      "parts": [
       "姉は",
@@ -1067,7 +1067,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l1-x6",
      "type": "mcq",
-     "q": "At a work dinner, Kenji tells a client that his wife is a nurse. Which word should he use for his own wife?",
+     "q": "At a work dinner, Megumi’s husband tells a client that his wife is a nurse. Which word should he use for his own wife?",
      "options": [
       {
        "t": "[妻]{つま}",
@@ -1091,7 +1091,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l1-x7",
      "type": "number",
-     "q": "Sione adds 8 new N3 kanji a day and never skips a day. On which day does he meet the last of the 370 kanji?",
+     "q": "Rodrigo adds 8 new N3 kanji a day and never skips a day. On which day does he meet the last of the 370 kanji?",
      "answer": 47,
      "tol": 0,
      "unit": "th day",
@@ -1114,7 +1114,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l1-x8",
      "type": "mcq",
-     "q": "Fatima’s cousin writes: 「来月、二十歳になります」. How is 二十歳 (age twenty) read here?",
+     "q": "Kaito writes: 「来月、二十歳になります」. How is 二十歳 (age twenty) read here?",
      "options": [
       {
        "t": "はたち",
@@ -1789,7 +1789,7 @@ ICA.addUnit({
        ]
       },
       "Many Japanese workplaces teach new staff three habits with one word: [報]{ほう}[連]{れん}[相]{そう} (ほうれんそう). It joins the first kanji of [報]{ほう}[告]{こく} (report on your work), [連]{れん}[絡]{らく} (keep people informed) and [相]{そう}[談]{だん} (ask for advice before you decide). It is a pun too: ほうれんそう is also spinach.",
-      "[申]{もう}す is the humble verb for “say”: 山田と[申]{もう}します (my name is Yamada). It also makes [申]{もう}し[込]{こ}む (apply for) and [申]{もう}し[込]{こ}み (an application), words you will see on forms and websites, and the apology [申]{もう}し[訳]{わけ}ありません."
+      "[申]{もう}す is the humble verb for “say”: [平川]{ひらかわ}と[申]{もう}します (my name is Hirakawa). It also makes [申]{もう}し[込]{こ}む (apply for) and [申]{もう}し[込]{こ}み (an application), words you will see on forms and websites, and the apology [申]{もう}し[訳]{わけ}ありません."
      ]
     },
     {
@@ -1908,17 +1908,17 @@ ICA.addUnit({
     {
      "h": "Read it: a notice at work",
      "body": [
-      "Sara works in the general affairs department. She sends this email to everyone in her office. Read it once for the main point, then again for the details.",
+      "Aoi is doing an internship in a company’s general affairs department. Her manager asks her to send this email to everyone in the office. Read it once for the main point, then again for the details.",
       {
-       "ex": "[件]{けん}名：来週の会[議]{ぎ}の[変]{へん}[更]{こう}について\n\n[皆]{みな}さん\n\nお[疲]{つか}れさまです。[総]{そう}[務]{む}[部]{ぶ}のサラです。\n来週水曜日の会[議]{ぎ}は、会[議]{ぎ}室の工事のため、金曜日の午後二時からに[変]{へん}[更]{こう}になりました。[内]{ない}[容]{よう}は、新しい[交]{こう}通[費]{ひ}の[規]{き}[則]{そく}についての[説]{せつ}明です。\n[参]{さん}[加]{か}できない方は、水曜日までに私に[連]{れん}[絡]{らく}してください。[資]{し}料は前の日にメールで送ります。\nよろしくお[願]{ねが}いします。",
-       "label": "An email from Sara"
+       "ex": "[件]{けん}名：来週の会[議]{ぎ}の[変]{へん}[更]{こう}について\n\n[皆]{みな}さん\n\nお[疲]{つか}れさまです。[総]{そう}[務]{む}[部]{ぶ}の[平]{ひら}[川]{かわ}です。\n来週水曜日の会[議]{ぎ}は、会[議]{ぎ}室の工事のため、金曜日の午後二時からに[変]{へん}[更]{こう}になりました。[内]{ない}[容]{よう}は、新しい[交]{こう}通[費]{ひ}の[規]{き}[則]{そく}についての[説]{せつ}明です。\n[参]{さん}[加]{か}できない方は、水曜日までに私に[連]{れん}[絡]{らく}してください。[資]{し}料は前の日にメールで送ります。\nよろしくお[願]{ねが}いします。",
+       "label": "An email from Aoi"
       },
       {
        "list": [
         "**What is the main point?** Next week’s meeting has moved ([変]{へん}[更]{こう}になりました) from Wednesday to Friday at 2 p.m.",
         "**Why?** There is building work (工事) in the meeting room.",
         "**What is the meeting about?** An explanation ([説]{せつ}明) of the new rules ([規]{き}[則]{そく}) for travel costs ([交]{こう}通[費]{ひ}).",
-        "**What should you do if you can’t come?** Contact Sara by Wednesday. The handouts ([資]{し}料) come by email the day before."
+        "**What should you do if you can’t come?** Contact Aoi by Wednesday. The handouts ([資]{し}料) come by email the day before."
        ]
       },
       "Notice the work set phrases: お[疲]{つか}れさまです opens most emails between colleagues, and よろしくお[願]{ねが}いします closes them. [皆]{みな}さん is the greeting line, and [件]{けん}名 (subject) is the subject line.",
@@ -2040,7 +2040,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l2-x4",
      "type": "mcq",
-     "q": "Tomás is looking for a flat. Which word is the monthly rent he pays?",
+     "q": "Dewi is looking for a flat after the flood. Which word is the monthly rent she pays?",
      "options": [
       {
        "t": "[家]{や}[賃]{ちん}",
@@ -2057,7 +2057,7 @@ ICA.addUnit({
       },
       {
        "t": "電気代",
-       "why": "電気代 is the electricity bill. He may pay it too, but it is not the rent."
+       "why": "電気代 is the electricity bill. She may pay it too, but it is not the rent."
       }
      ]
     },
@@ -2102,7 +2102,7 @@ ICA.addUnit({
        "flag": true,
        "why": "せきにんしゃ (the person responsible) is [責]{せき}[任]{にん}者. 積 has the same sound セキ and looks alike, but it adds 禾 (grain) and means pile up: [積]{つ}む."
       },
-      "は山田さんです。",
+      "は[松本]{まつもと}さんです。",
       {
        "t": "[資]{し}料",
        "flag": false,
@@ -2185,7 +2185,7 @@ ICA.addUnit({
       "how": [
        "Write a three- or four-sentence notice for a club, a class or a workplace (real or invented): a meeting has moved, or an event needs people.",
        "Use at least four kango from this lesson: [変]{へん}[更]{こう}, [参]{さん}[加]{か}, [連]{れん}[絡]{らく}, [資]{し}料, [説]{せつ}明…",
-       "Start with [皆]{みな}さん and end with よろしくお[願]{ねが}いします, as Sara did."
+       "Start with [皆]{みな}さん and end with よろしくお[願]{ねが}いします, as Aoi did."
       ],
       "write": "[件]{けん}名： … [皆]{みな}さん …"
      },
@@ -2976,7 +2976,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l3-x1",
      "type": "mcq",
-     "q": "Priya wants to leave a shop. The glass door has a sticker with one kanji: 押. What should she do?",
+     "q": "Rodrigo wants to leave a shop. The glass door has a sticker with one kanji: 押. What should he do?",
      "options": [
       {
        "t": "Push the door.",
@@ -3154,7 +3154,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l3-x7",
      "type": "spot",
-     "q": "Mei wrote this note in a hurry. Two kanji are wrong: they have the right sound but the wrong meaning. Tap them.",
+     "q": "Cheska wrote this note in a hurry. Two kanji are wrong: they have the right sound but the wrong meaning. Tap them.",
      "ask": "wrong kanji",
      "parts": [
       "[今朝]{けさ}は",
@@ -3193,7 +3193,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l3-x8",
      "type": "mcq",
-     "q": "Ken says: 「銀行のATMでお金を[引]{ひ}き出しました」. What did he do?",
+     "q": "Rodrigo says: 「銀行のATMでお金を[引]{ひ}き出しました」. What did he do?",
      "options": [
       {
        "t": "He withdrew money.",
@@ -4997,16 +4997,16 @@ ICA.addUnit({
     {
      "h": "Read it: a weekend away",
      "body": [
-      "Hana wrote this on her blog after a weekend trip. Read it once for the story, then again for the onomatopoeia.",
+      "Yến wrote this on her blog after a weekend trip. Read it once for the story, then again for the onomatopoeia.",
       {
        "ex": "この前の週[末]{まつ}、友[達]{だち}と山の[温]{おん}[泉]{せん}に行きました。一日目は雨がザーザー[降]{ふ}っていて、[遠]{とお}くで[雷]{かみなり}もゴロゴロ[鳴]{な}っていました。[宿]{やど}に着いて[窓]{まど}から外を見ると、[森]{もり}の[緑]{みどり}がとてもきれいでした。\n[二日]{ふつか}目はすっかり[晴]{は}れて、[湖]{みずうみ}が[太]{たい}[陽]{よう}の[光]{ひかり}できらきらしていました。昼ご飯は、お[米]{こめ}も野[菜]{さい}も地元のもので、とてもおいしかったです。夜は[温]{おん}[泉]{せん}に入って、ぐっすり[眠]{ねむ}れました。のんびりできて、[最]{さい}高の週[末]{まつ}でした。",
-       "label": "Hana’s blog"
+       "label": "Yến’s blog"
       },
       {
        "list": [
         "**What was the weather like on the first day?** Heavy rain (ザーザー) and thunder in the distance (ゴロゴロ).",
         "**And on the second day?** It cleared up completely (すっかり[晴]{は}れて), and the lake sparkled in the sun (きらきら).",
-        "**How did Hana sleep?** Soundly (ぐっすり), after a bath in the hot spring.",
+        "**How did Yến sleep?** Soundly (ぐっすり), after a bath in the hot spring.",
         "**How was the weekend?** Relaxing (のんびりできて), the best weekend ([最]{さい}高).",
         "**Which kanji words are about nature?** 雨, [雷]{かみなり}, [森]{もり}, [緑]{みどり}, [晴]{は}れる, [湖]{みずうみ}, [太]{たい}[陽]{よう}, [光]{ひかり}, お[米]{こめ}, 野[菜]{さい}."
        ]
@@ -5245,7 +5245,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l5-x7",
      "type": "spot",
-     "q": "Two onomatopoeia in Hana’s note don’t fit their sentence. Tap them.",
+     "q": "Two onomatopoeia in Yến’s note don’t fit their sentence. Tap them.",
      "ask": "words that don’t fit",
      "parts": [
       "雨が",
@@ -5337,7 +5337,7 @@ ICA.addUnit({
     {
      "book": "irodori",
      "where": "Pre-Intermediate, topic 「旅行の楽しみ」 (enjoying travel), Lesson 16 「いい写真がたくさん[撮]{と}れました」",
-     "note": "Travel, nature and places, like Hana’s weekend."
+     "note": "Travel, nature and places, like Yến’s weekend."
     },
     {
      "book": "irodori",
@@ -6166,7 +6166,7 @@ ICA.addUnit({
    "id": "e3u11-q05",
    "lesson": "e3u11-l1",
    "level": 3,
-   "q": "Ana tells her teacher about her own family: 「[夫]{おっと}は会社員です」. Then she asks about the teacher’s husband. Which word should she use for him?",
+   "q": "Megumi tells Sōta’s teacher about her own family: 「[夫]{おっと}は会社員です」. Then she asks about the teacher’s husband. Which word should she use for him?",
    "options": [
     {
      "t": "ご主人",
@@ -6175,7 +6175,7 @@ ICA.addUnit({
     },
     {
      "t": "[夫]{おっと}",
-     "why": "[夫]{おっと} is for your own husband. Ana used it correctly for hers."
+     "why": "[夫]{おっと} is for your own husband. Megumi used it correctly for hers."
     },
     {
      "t": "[夫]{ふ}[妻]{さい}",
@@ -6191,24 +6191,24 @@ ICA.addUnit({
    "id": "e3u11-q06",
    "lesson": "e3u11-l1",
    "level": 2,
-   "q": "Kenji says 「[寝]{ね}たけど、なかなか[眠]{ねむ}れなかった」. What happened?",
+   "q": "Cheska says 「[寝]{ね}たけど、なかなか[眠]{ねむ}れなかった」. What happened?",
    "options": [
     {
-     "t": "He went to bed but couldn’t fall asleep for a long time.",
+     "t": "She went to bed but couldn’t fall asleep for a long time.",
      "ok": true,
      "why": "Right. [寝]{ね}る is to go to bed (lie down to sleep); [眠]{ねむ}る is to actually be asleep."
     },
     {
-     "t": "He slept well but woke up early.",
-     "why": "[眠]{ねむ}れなかった is “couldn’t sleep”. He did not sleep well."
+     "t": "She slept well but woke up early.",
+     "why": "[眠]{ねむ}れなかった is “couldn’t sleep”. She did not sleep well."
     },
     {
-     "t": "He didn’t go to bed at all.",
-     "why": "[寝]{ね}た says he did go to bed."
+     "t": "She didn’t go to bed at all.",
+     "why": "[寝]{ね}た says she did go to bed."
     },
     {
-     "t": "He fell asleep at once.",
-     "why": "なかなか〜なかった means it took a long time (or didn’t happen). He couldn’t get to sleep."
+     "t": "She fell asleep at once.",
+     "why": "なかなか〜なかった means it took a long time (or didn’t happen). She couldn’t get to sleep."
     }
    ]
   },
@@ -6241,7 +6241,7 @@ ICA.addUnit({
    "id": "e3u11-q08",
    "lesson": "e3u11-l1",
    "level": 3,
-   "q": "Mei’s friend writes: 「[昨日]{きのう}は一日[中]{じゅう}[忙]{いそが}しくて、本[当]{とう}に[疲]{つか}れた」. How does the friend feel?",
+   "q": "Yến’s friend writes: 「[昨日]{きのう}は一日[中]{じゅう}[忙]{いそが}しくて、本[当]{とう}に[疲]{つか}れた」. How does the friend feel?",
    "options": [
     {
      "t": "Really tired after a busy day",
@@ -6266,7 +6266,7 @@ ICA.addUnit({
    "id": "e3u11-q09",
    "lesson": "e3u11-l1",
    "level": 2,
-   "q": "Sione can’t remember 忘 (forget). Which memory story uses its real parts?",
+   "q": "Rodrigo can’t remember 忘 (forget). Which memory story uses its real parts?",
    "options": [
     {
      "t": "A heart (心) that has been lost (亡): you forget.",
@@ -6366,7 +6366,7 @@ ICA.addUnit({
    "id": "e3u11-q13",
    "lesson": "e3u11-l2",
    "level": 2,
-   "q": "Lucía’s company pays back her train fares to work. What is this money called?",
+   "q": "Aoi’s internship company pays back her train fares. What is this money called?",
    "options": [
     {
      "t": "[交]{こう}通[費]{ひ}",
@@ -6466,10 +6466,10 @@ ICA.addUnit({
    "id": "e3u11-q17",
    "lesson": "e3u11-l2",
    "level": 3,
-   "q": "Sara’s email says the meeting 「金曜日の午後二時からに[変]{へん}[更]{こう}になりました」 and asks people who can’t come to 「水曜日までに[連]{れん}[絡]{らく}してください」. Dmitri can’t come. What should he do?",
+   "q": "Aoi’s email says the meeting 「金曜日の午後二時からに[変]{へん}[更]{こう}になりました」 and asks people who can’t come to 「水曜日までに[連]{れん}[絡]{らく}してください」. Yến can’t come. What should she do?",
    "options": [
     {
-     "t": "Contact Sara by Wednesday.",
+     "t": "Contact Aoi by Wednesday.",
      "ok": true,
      "why": "Right. 水曜日までに[連]{れん}[絡]{らく}してください: contact (her) by Wednesday."
     },
@@ -6478,7 +6478,7 @@ ICA.addUnit({
      "why": "The meeting moved from Wednesday to Friday. Wednesday is only the deadline to say you can’t come."
     },
     {
-     "t": "Contact Sara on Friday at 2 p.m.",
+     "t": "Contact Aoi on Friday at 2 p.m.",
      "why": "Friday at 2 p.m. is the new meeting time. He must tell her by Wednesday."
     },
     {
@@ -6566,7 +6566,7 @@ ICA.addUnit({
    "id": "e3u11-q21",
    "lesson": "e3u11-l3",
    "level": 3,
-   "q": "Tomás says 「雨で電車が[遅]{おく}れて、会[議]{ぎ}に間に[合]{あ}わなかった」. What happened?",
+   "q": "Toby says 「雨で電車が[遅]{おく}れて、会[議]{ぎ}に間に[合]{あ}わなかった」. What happened?",
    "options": [
     {
      "t": "The train was late because of the rain, and he was late for the meeting.",
@@ -6641,7 +6641,7 @@ ICA.addUnit({
    "id": "e3u11-q24",
    "lesson": "e3u11-l3",
    "level": 3,
-   "q": "Fatima’s friend lost her keys and says: 「[鍵]{かぎ}が見つかって、本[当]{とう}に[助]{たす}かった！」. What does she mean?",
+   "q": "Cheska’s friend lost her keys and says: 「[鍵]{かぎ}が見つかって、本[当]{とう}に[助]{たす}かった！」. What does she mean?",
    "options": [
     {
      "t": "The keys were found, and that was a real help (a relief).",
@@ -6716,7 +6716,7 @@ ICA.addUnit({
    "id": "e3u11-q27",
    "lesson": "e3u11-l3",
    "level": 2,
-   "q": "Ken writes: 「来月、新しいアパートに（　）ます」 (Next month I’m moving to a new flat). Which verb fits?",
+   "q": "Dewi writes: 「来月、新しいアパートに（　）ます」 (Next month I’m moving to a new flat). Which verb fits?",
    "options": [
     {
      "t": "[引]{ひ}っ[越]{こ}し",
@@ -6866,7 +6866,7 @@ ICA.addUnit({
    "id": "e3u11-q33",
    "lesson": "e3u11-l4",
    "level": 3,
-   "q": "Priya says about her twin cousins: 「同じ家族でも、[好]{す}きなものが[全]{ぜん}[然]{ぜん}[違]{ちが}う。（　）だね」. Which idiom fits?",
+   "q": "Mariya says about her twin cousins: 「同じ家族でも、[好]{す}きなものが[全]{ぜん}[然]{ぜん}[違]{ちが}う。（　）だね」. Which idiom fits?",
    "options": [
     {
      "t": "[十]{じゅう}[人]{にん}[十]{と}[色]{いろ}",
@@ -7116,7 +7116,7 @@ ICA.addUnit({
    "id": "e3u11-q43",
    "lesson": "e3u11-l5",
    "level": 3,
-   "q": "Hana writes: 「[二日]{ふつか}目はすっかり[晴]{は}れて、[湖]{みずうみ}がきらきらしていました」. What was the second day like?",
+   "q": "Yến writes: 「[二日]{ふつか}目はすっかり[晴]{は}れて、[湖]{みずうみ}がきらきらしていました」. What was the second day like?",
    "options": [
     {
      "t": "It cleared up completely, and the lake sparkled.",
@@ -7141,7 +7141,7 @@ ICA.addUnit({
    "id": "e3u11-q44",
    "lesson": "e3u11-l5",
    "level": 2,
-   "q": "Mei adds 10 new cards a day from the Kanji Lab’s N3 words deck (1,983 words). On which day does she meet the last new card?",
+   "q": "Rodrigo adds 10 new cards a day from the Kanji Lab’s N3 words deck (1,983 words). On which day does he meet the last new card?",
    "options": [
     {
      "t": "Day 199",

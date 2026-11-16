@@ -30,7 +30,7 @@ ICA.addUnit({
    title:"The passive: things done to people and things",
    minutes:60,
    hook:{
-    q:"Ana writes in her diary: 「[電車]{でんしゃ}で[足]{あし}を[踏]{ふ}まれました。」 [踏]{ふ}む means “step on”. What happened?",
+    q:"Cheska writes in her diary: 「[電車]{でんしゃ}で[足]{あし}を[踏]{ふ}まれました。」 [踏]{ふ}む means “step on”. What happened?",
     options:[
      "She stepped on someone’s foot",
      "Someone stepped on her foot",
@@ -53,13 +53,13 @@ ICA.addUnit({
      body:[
       {lead:"In a passive sentence, the person or thing that an action happens to becomes the topic. The doer moves to the background, marked with に."},
       {
-       ex:"[先生]{せんせい}がアナさんをほめました。\nThe teacher praised Ana. (active)\n\nアナさんは先生にほめられました。\nAna was praised by the teacher. (passive)",
+       ex:"[先生]{せんせい}がまりやさんをほめました。\nThe teacher praised Mariya. (active)\n\nまりやさんは先生にほめられました。\nMariya was praised by the teacher. (passive)",
        label:"Active and passive"
       },
-      "Three things change. Ana, the person who was praised, becomes the topic with は. The teacher, the doer, takes に. And the verb ほめる (praise) takes its [[passive|passive]] form, ほめられる. The event itself is the same: the teacher still praised Ana.",
+      "Three things change. Mariya, the person who was praised, becomes the topic with は. The teacher, the doer, takes に. And the verb ほめる (praise) takes its [[passive|passive]] form, ほめられる. The event itself is the same: the teacher still praised Mariya.",
       {
-       fig:"<svg viewBox=\"0 0 340 292\"><defs><marker id=\"e3u7a1\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">One event, two viewpoints</text><rect class=\"d-panel\" x=\"6\" y=\"32\" width=\"328\" height=\"108\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"54\">Active: the doer is the topic</text><rect class=\"d-gold\" x=\"16\" y=\"66\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"91\" text-anchor=\"middle\">せんせいが</text><path class=\"d-ink\" d=\"M132 86H206\" stroke-width=\"2\" marker-end=\"url(#e3u7a1)\"/><rect class=\"d-lup\" x=\"212\" y=\"66\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"91\" text-anchor=\"middle\">アナさんを</text><text class=\"s\" x=\"170\" y=\"128\" text-anchor=\"middle\">ほめました (praised)</text><rect class=\"d-panel\" x=\"6\" y=\"152\" width=\"328\" height=\"108\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"174\">Passive: the receiver is the topic</text><rect class=\"d-lup\" x=\"16\" y=\"186\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"211\" text-anchor=\"middle\">アナさんは</text><path class=\"d-ink\" d=\"M208 206H134\" stroke-width=\"2\" marker-end=\"url(#e3u7a1)\"/><rect class=\"d-gold\" x=\"212\" y=\"186\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"211\" text-anchor=\"middle\">せんせいに</text><text class=\"s\" x=\"170\" y=\"248\" text-anchor=\"middle\">ほめられました (was praised)</text><text class=\"s\" x=\"170\" y=\"284\" text-anchor=\"middle\">The arrow, who acts on whom, stays the same.</text></svg>",
-       alt:"Two panels. Top, active: せんせいが with an arrow pointing to アナさんを, labelled ほめました (praised). Bottom, passive: アナさんは comes first, and the arrow still points from せんせいに to アナさん, labelled ほめられました (was praised).",
+       fig:"<svg viewBox=\"0 0 340 292\"><defs><marker id=\"e3u7a1\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">One event, two viewpoints</text><rect class=\"d-panel\" x=\"6\" y=\"32\" width=\"328\" height=\"108\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"54\">Active: the doer is the topic</text><rect class=\"d-gold\" x=\"16\" y=\"66\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"91\" text-anchor=\"middle\">せんせいが</text><path class=\"d-ink\" d=\"M132 86H206\" stroke-width=\"2\" marker-end=\"url(#e3u7a1)\"/><rect class=\"d-lup\" x=\"212\" y=\"66\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"91\" text-anchor=\"middle\">まりやさんを</text><text class=\"s\" x=\"170\" y=\"128\" text-anchor=\"middle\">ほめました (praised)</text><rect class=\"d-panel\" x=\"6\" y=\"152\" width=\"328\" height=\"108\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"174\">Passive: the receiver is the topic</text><rect class=\"d-lup\" x=\"16\" y=\"186\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"211\" text-anchor=\"middle\">まりやさんは</text><path class=\"d-ink\" d=\"M208 206H134\" stroke-width=\"2\" marker-end=\"url(#e3u7a1)\"/><rect class=\"d-gold\" x=\"212\" y=\"186\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"211\" text-anchor=\"middle\">せんせいに</text><text class=\"s\" x=\"170\" y=\"248\" text-anchor=\"middle\">ほめられました (was praised)</text><text class=\"s\" x=\"170\" y=\"284\" text-anchor=\"middle\">The arrow, who acts on whom, stays the same.</text></svg>",
+       alt:"Two panels. Top, active: せんせいが with an arrow pointing to まりやさんを, labelled ほめました (praised). Bottom, passive: まりやさんは comes first, and the arrow still points from せんせいに to まりやさん, labelled ほめられました (was praised).",
        cap:"The passive changes the starting point of the sentence, not the event."
       },
       "English speakers are often taught to avoid the passive. Japanese uses it a lot, and especially with people as the topic: “I was scolded”, “I was asked the way”, “I got rained on”. It lets you tell a story from the point of view of the person it happened to, usually yourself."
@@ -106,7 +106,7 @@ ICA.addUnit({
      body:[
       "The basic pattern is: **person は doer に passive verb**. It reports something that someone did to the person.",
       {
-       ex:"[私]{わたし}は[毎朝]{まいあさ}、[母]{はは}に[起]{お}こされます。\nMy mother wakes me up every morning. (I am woken by my mother.)\n\nミンさんは[部長]{ぶちょう}に[呼]{よ}ばれました。\nMin was called in by the department manager.\n\nケンジさんは[知]{し}らない[人]{ひと}に[道]{みち}を[聞]{き}かれました。\nKenji was asked the way by a stranger.\n\nサラさんは[友達]{ともだち}の[結婚式]{けっこんしき}に[招待]{しょうたい}されました。\nSara was invited to her friend’s wedding.",
+       ex:"[私]{わたし}は[毎朝]{まいあさ}、[母]{はは}に[起]{お}こされます。\nMy mother wakes me up every morning. (I am woken by my mother.)\n\nあおいさんは[部長]{ぶちょう}に[呼]{よ}ばれました。\nAoi was called in by the department manager (at her internship).\n\nトビーさんは[知]{し}らない[人]{ひと}に[道]{みち}を[聞]{き}かれました。\nToby was asked the way by a stranger.\n\nまりやさんは[友達]{ともだち}の[結婚式]{けっこんしき}に[招待]{しょうたい}されました。\nMariya was invited to her friend’s wedding.",
        label:"Person は doer に passive"
       },
       "The doer can be left out when it is unknown, obvious or unimportant, as in the last example: we don’t need to know exactly who sent the invitation.",
@@ -180,7 +180,7 @@ ICA.addUnit({
         ["書かられる", "書かれる", "Godan verbs add れる to the あ-row: か + れる."],
         ["[言]{い}あれる", "[言]{い}われる", "Verbs ending in う use わ, as in [言]{い}わない."],
         ["[来]{く}られる", "[来]{こ}られる", "The reading of [来]{く}る changes to こ, as in [来]{こ}ない."],
-        ["アナさんは先生がほめられました。", "アナさんは先生にほめられました。", "The doer takes に in a passive sentence."],
+        ["まりやさんは先生がほめられました。", "まりやさんは先生にほめられました。", "The doer takes に in a passive sentence."],
         ["[私]{わたし}の[足]{あし}は[踏]{ふ}まれました。", "[私]{わたし}は[足]{あし}を[踏]{ふ}まれました。", "It happened to you; the body part keeps を."],
         [
          "この[絵]{え}は[有名]{ゆうめい}な[画家]{がか}に[描]{か}かれました。",
@@ -233,18 +233,18 @@ ICA.addUnit({
     {
      id:"e3u7-l1-x4",
      type:"mcq",
-     q:"Your friend Tomás had his wallet stolen. Which sentence says this naturally, with Tomás as the topic?",
+     q:"Rodrigo had his wallet stolen. Which sentence says this naturally, with Rodrigo as the topic?",
      options:[
       {
-       t:"トマスさんは[財布]{さいふ}を[盗]{ぬす}まれました。",
+       t:"ロドリゴさんは[財布]{さいふ}を[盗]{ぬす}まれました。",
        ok:true,
-       why:"Right. Tomás is the person affected, so he is the topic; the stolen thing keeps を, and the verb is passive."
+       why:"Right. Rodrigo is the person affected, so he is the topic; the stolen thing keeps を, and the verb is passive."
       },
-      {t:"トマスさんは[財布]{さいふ}に[盗]{ぬす}まれました。", why:"に marks the doer, so this says the wallet stole from him."},
-      {t:"トマスさんは[財布]{さいふ}を[盗]{ぬす}みました。", why:"This is active: it says Tomás stole a wallet."},
+      {t:"ロドリゴさんは[財布]{さいふ}に[盗]{ぬす}まれました。", why:"に marks the doer, so this says the wallet stole from him."},
+      {t:"ロドリゴさんは[財布]{さいふ}を[盗]{ぬす}みました。", why:"This is active: it says Rodrigo stole a wallet."},
       {
-       t:"トマスさんの[財布]{さいふ}は[盗]{ぬす}みました。",
-       why:"The verb is active, so someone else (perhaps the speaker) did the stealing: “Tomás’s wallet, I stole it.” For what happened to Tomás, you need the passive with Tomás as the topic: [盗]{ぬす}まれました."
+       t:"ロドリゴさんの[財布]{さいふ}は[盗]{ぬす}みました。",
+       why:"The verb is active, so someone else (perhaps the speaker) did the stealing: “Rodrigo’s wallet, I stole it.” For what happened to Rodrigo, you need the passive with Rodrigo as the topic: [盗]{ぬす}まれました."
       }
      ]
     },
@@ -262,7 +262,7 @@ ICA.addUnit({
     {
      id:"e3u7-l1-x6",
      type:"mcq",
-     q:"Priya says: 「[帰]{かえ}りに雨に[降]{ふ}られました。」 What does she mean?",
+     q:"Cheska says: 「[帰]{かえ}りに雨に[降]{ふ}られました。」 What does she mean?",
      options:[
       {
        t:"She got caught in the rain on the way home.",
@@ -294,7 +294,7 @@ ICA.addUnit({
     {
      id:"e3u7-l1-x8",
      type:"spot",
-     q:"Ana wrote about a bad day. Tap each passive form that is **wrong**.",
+     q:"Cheska wrote about a bad day. Tap each passive form that is **wrong**.",
      ask:"is wrong",
      parts:[
       "[今日]{きょう}は[大変]{たいへん}な[日]{ひ}でした。[朝]{あさ}、電車で[足]{あし}を",
@@ -433,7 +433,7 @@ ICA.addUnit({
       {ex:"母は[弟]{おとうと}に[部屋]{へや}を[掃除]{そうじ}させました。\n先生は学生にレポートを書かせました。", label:"Object with を, so the person takes に"},
       "If the verb has no object, as with 行く, [来]{く}る, [帰]{かえ}る, [走]{はし}る, [泣]{な}く and [笑]{わら}う, the person usually takes **を**:",
       {
-       ex:"先生は学生を[早]{はや}く[帰]{かえ}らせました。\nThe teacher sent the students home early.\n\nケンジさんはいつもみんなを[笑]{わら}わせます。\nKenji always makes everyone laugh.\n\n[遅]{おく}れて、[友達]{ともだち}を[三十分]{さんじゅっぷん}も[待]{ま}たせてしまいました。\nI was late and kept my friend waiting for thirty minutes.",
+       ex:"先生は学生を[早]{はや}く[帰]{かえ}らせました。\nThe teacher sent the students home early.\n\nロドリゴさんはいつもみんなを[笑]{わら}わせます。\nRodrigo always makes everyone laugh.\n\n[遅]{おく}れて、[友達]{ともだち}を[三十分]{さんじゅっぷん}も[待]{ま}たせてしまいました。\nI was late and kept my friend waiting for thirty minutes.",
        label:"No object, so the person usually takes を"
       },
       "[待]{ま}たせる (keep someone waiting) also takes を for the person who waits: the object of [待]{ま}つ (you) is simply left unsaid.",
@@ -575,7 +575,7 @@ ICA.addUnit({
     {
      id:"e3u7-l2-x5",
      type:"mcq",
-     q:"Lucía wants to ask her manager for permission to leave early today. Which sentence fits?",
+     q:"Rodrigo wants to ask his supervisor at the seafood plant for permission to leave early today. Which sentence fits?",
      options:[
       {t:"今日は[早]{はや}く[帰]{かえ}らせてください。", ok:true, why:"Right. Causative て-form + ください: “please let me go home early”."},
       {t:"今日は[早]{はや}く[帰]{かえ}らせられてください。", why:"The causative-passive means “be made to”; it doesn’t fit a request for permission."},
@@ -613,7 +613,7 @@ ICA.addUnit({
     {
      id:"e3u7-l2-x8",
      type:"spot",
-     q:"Min wrote about her childhood. Tap each form that is **wrong**.",
+     q:"Cheska wrote about her childhood. Tap each form that is **wrong**.",
      ask:"is wrong",
      parts:[
       "子どものころ、父に[毎朝]{まいあさ}",
@@ -738,9 +738,9 @@ ICA.addUnit({
         ["Negative adjective", "ない → なさそう", "高くない → 高くなさそう"]
        ]
       },
-      "With **adjectives**, ～そう means “looks…, judging by its appearance”. You haven’t tasted the cake or asked Min how she feels; you are going by what you see.",
+      "With **adjectives**, ～そう means “looks…, judging by its appearance”. You haven’t tasted the cake or asked Mariya how she feels; you are going by what you see.",
       {
-       ex:"このケーキ、おいしそうですね。\nThis cake looks delicious.\n\nミンさんは[今日]{きょう}、[元気]{げんき}そうです。\nMin looks well today.\n\nこの[靴]{くつ}は高そうです。\nThese shoes look expensive.\n\nその[映画]{えいが}、よさそうですね。\nThat film looks good.",
+       ex:"このケーキ、おいしそうですね。\nThis cake looks delicious.\n\nまりやさんは[今日]{きょう}、[元気]{げんき}そうです。\nMariya looks well today.\n\nこの[靴]{くつ}は高そうです。\nThese shoes look expensive.\n\nその[映画]{えいが}、よさそうですね。\nThat film looks good.",
        label:"Adjective + そう"
       },
       "With **verbs**, ～そう means “looks as if it is about to happen”: a prediction from the signs in front of you.",
@@ -768,13 +768,13 @@ ICA.addUnit({
         ["Before そうです", "Example", "English"],
         ["verb", "雨が[降]{ふ}るそうです。\n雨が[降]{ふ}ったそうです。", "I hear it will rain.\nI hear it rained."],
         ["い-adjective", "あの[店]{みせ}は高いそうです。", "I hear that shop is expensive."],
-        ["な-adjective + だ", "ミンさんは[元気]{げんき}だそうです。", "I hear Min is well."],
+        ["な-adjective + だ", "まりやさんは[元気]{げんき}だそうです。", "I hear Mariya is well."],
         ["noun + だ", "[明日]{あした}は[休]{やす}みだそうです。", "I hear tomorrow is a day off."]
        ]
       },
       "To name the source, start with **によると** (according to) or **の[話]{はなし}では** (from what … says):",
       {
-       ex:"[天気予報]{てんきよほう}によると、[明日]{あした}は雨が[降]{ふ}るそうです。\nAccording to the forecast, it will rain tomorrow.\n\nサラさんの話では、あの[店]{みせ}のラーメンはとてもおいしいそうです。\nSara says the ramen at that shop is very good.",
+       ex:"[天気予報]{てんきよほう}によると、[明日]{あした}は雨が[降]{ふ}るそうです。\nAccording to the forecast, it will rain tomorrow.\n\nチェスカさんの話では、あの[店]{みせ}のラーメンはとてもおいしいそうです。\nCheska says the ramen at that shop is very good.",
        label:"Naming the source"
       },
       {
@@ -809,12 +809,12 @@ ICA.addUnit({
       },
       {key:"よう needs な after a な-adjective and の after a noun. みたい attaches directly: [静]{しず}かみたい, 学生みたい."},
       {
-       ex:"[道]{みち}がぬれています。[夜]{よる}、雨が[降]{ふ}ったようです。\nThe road is wet. It seems it rained in the night.\n\n[電気]{でんき}が[消]{き}えています。ケンジさんはもう[帰]{かえ}ったみたいです。\nThe lights are off. It looks like Kenji has gone home.\n\nのどが[痛]{いた}いです。かぜをひいたみたいです。\nMy throat hurts. I think I’ve caught a cold.",
+       ex:"[道]{みち}がぬれています。[夜]{よる}、雨が[降]{ふ}ったようです。\nThe road is wet. It seems it rained in the night.\n\n[電気]{でんき}が[消]{き}えています。トビーさんはもう[帰]{かえ}ったみたいです。\nThe lights are off. It looks like Toby has gone home.\n\nのどが[痛]{いた}いです。かぜをひいたみたいです。\nMy throat hurts. I think I’ve caught a cold.",
        label:"Conclusions from clues"
       },
       "Both also mean **“like”**, for comparisons. Before a noun they become ような / みたいな, and before a verb or adjective ように / みたいに:",
       {
-       ex:"[夢]{ゆめ}のようです。／[夢]{ゆめ}みたいです。\nIt’s like a dream.\n\n[雪]{ゆき}のような[白]{しろ}い[花]{はな}\n[雪]{ゆき}みたいな白い[花]{はな}\na flower as white as snow\n\nミンさんは[歌手]{かしゅ}みたいに[上手]{じょうず}に[歌]{うた}います。\nMin sings beautifully, like a professional singer.",
+       ex:"[夢]{ゆめ}のようです。／[夢]{ゆめ}みたいです。\nIt’s like a dream.\n\n[雪]{ゆき}のような[白]{しろ}い[花]{はな}\n[雪]{ゆき}みたいな白い[花]{はな}\na flower as white as snow\n\nロドリゴさんは[歌手]{かしゅ}みたいに[上手]{じょうず}に[歌]{うた}います。\nRodrigo sings beautifully, like a professional singer.",
        label:"よう and みたい for “like”"
       },
       "In reports and academic writing you will see ～ようである, the written form of ～ようです, as a careful way to present a conclusion. The Academic Japanese track covers this as [[suiryou|[推量]{すいりょう}]] ({{hedging-japanese}})."
@@ -826,13 +826,13 @@ ICA.addUnit({
       "[[rashii|～らしい]] attaches to the plain form; nouns and な-adjectives take it directly, with no だ: 学生らしい, [静]{しず}からしい. It conjugates like an い-adjective: らしくない, らしかった.",
       "**Meaning 1: apparently.** You are passing on a conclusion based on what you heard or read, without taking responsibility for it. It is often used for rumours and for news you can’t check:",
       {
-       ex:"[来月]{らいげつ}、[駅前]{えきまえ}に[新]{あたら}しいカフェができるらしいです。\nApparently a new café is opening in front of the station next month.\n\n[田中]{たなか}さんは今日、[来]{こ}ないらしいです。\nApparently Tanaka isn’t coming today.",
+       ex:"[来月]{らいげつ}、[駅前]{えきまえ}に[新]{あたら}しいカフェができるらしいです。\nApparently a new café is opening in front of the station next month.\n\nあおいさんは今日、[来]{こ}ないらしいです。\nApparently Aoi isn’t coming today.",
        label:"らしい: apparently"
       },
       "Compare [来]{こ}ないそうです: with そうです you are reporting a message more directly, often from a source you could name. With らしい you are less committed: it’s what people say, or what seems to be the case from what you heard.",
       "**Meaning 2: typical of, a real…** After a noun, らしい can describe something that has the qualities you expect of it:",
       {
-       ex:"今日は[春]{はる}らしい[天気]{てんき}ですね。\nIt’s real spring weather today.\n\nケンジさんが[遅]{おく}れるのは[珍]{めずら}しいですね。今日はケンジさんらしくないです。\nIt’s unusual for Kenji to be late. It’s not like him today.",
+       ex:"今日は[春]{はる}らしい[天気]{てんき}ですね。\nIt’s real spring weather today.\n\nイエンさんが[遅]{おく}れるのは[珍]{めずら}しいですね。今日はイエンさんらしくないです。\nIt’s unusual for Yến to be late. It’s not like him today.",
        label:"らしい: typical of"
       },
       "Sometimes both meanings are possible: 学生らしい can mean “apparently a student” or “student-like”. The context, and whether a noun follows, tells you which."
@@ -904,8 +904,8 @@ ICA.addUnit({
       {t:"雨が[降]{ふ}るそうです。", b:1, why:"The dictionary form [降]{ふ}る + そうです: I hear it will rain."},
       {t:"高そうな[時計]{とけい}ですね。", b:0, why:"高 + そう: an expensive-looking watch."},
       {t:"あの[店]{みせ}は高いそうです。", b:1, why:"The full adjective 高い + そうです: I hear that shop is expensive."},
-      {t:"ミンさんは[元気]{げんき}そうです。", b:0, why:"The bare stem [元気]{げんき} + そう: Min looks well."},
-      {t:"ミンさんは[元気]{げんき}だそうです。", b:1, why:"[元気]{げんき}だ + そうです: I hear Min is well."},
+      {t:"まりやさんは[元気]{げんき}そうです。", b:0, why:"The bare stem [元気]{げんき} + そう: Mariya looks well."},
+      {t:"まりやさんは[元気]{げんき}だそうです。", b:1, why:"[元気]{げんき}だ + そうです: I hear Mariya is well."},
       {t:"その[本]{ほん}、よさそうですね。", b:0, why:"いい → よさそう: that book looks good."},
       {t:"[来週]{らいしゅう}は休みだそうです。", b:1, why:"Noun + だ + そうです: I hear next week is a holiday."}
      ]
@@ -913,12 +913,12 @@ ICA.addUnit({
     {
      id:"e3u7-l3-x4",
      type:"mcq",
-     q:"Sara told you that her new job is busy. How do you pass this on to another friend?",
+     q:"Aoi told you that her summer internship is busy. How do you pass this on to another friend?",
      options:[
-      {t:"サラさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しいそうです。", ok:true, why:"Right. You are reporting what Sara told you: the full adjective + そうです."},
-      {t:"サラさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しそうです。", why:"This describes how the job looks to you. You haven’t seen it; Sara told you."},
-      {t:"サラさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しいそうでした。", why:"Hearsay そうです doesn’t change for tense."},
-      {t:"サラさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しだそうです。", why:"い-adjectives don’t take だ: [忙]{いそが}しいそうです."}
+      {t:"あおいさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しいそうです。", ok:true, why:"Right. You are reporting what Aoi told you: the full adjective + そうです."},
+      {t:"あおいさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しそうです。", why:"This describes how the job looks to you. You haven’t seen it; Aoi told you."},
+      {t:"あおいさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しいそうでした。", why:"Hearsay そうです doesn’t change for tense."},
+      {t:"あおいさんの[新]{あたら}しい[仕事]{しごと}は[忙]{いそが}しだそうです。", why:"い-adjectives don’t take だ: [忙]{いそが}しいそうです."}
      ]
     },
     {
@@ -946,12 +946,12 @@ ICA.addUnit({
     {
      id:"e3u7-l3-x7",
      type:"spot",
-     q:"Kenji wrote a message to his team. Tap each form that is **wrong**.",
+     q:"Aoi wrote a message to her team at her internship. Tap each form that is **wrong**.",
      ask:"is wrong",
      parts:[
       "[天気予報]{てんきよほう}によると、[明日]{あした}は雨が",
       {t:"[降]{ふ}るそうです", flag:false, why:"Correct: hearsay from the forecast, plain form + そうです."},
-      "。今日の[山田]{やまだ}さんは",
+      "。今日の[部長]{ぶちょう}は",
       {t:"[元気]{げんき}なそうでした", flag:true, why:"Wrong. Appearance そう takes the bare stem: [元気]{げんき}そうでした (she looked well)."},
       "。[駅前]{えきまえ}の[新]{あたら}しい[店]{みせ}は",
       {t:"[安]{やす}くておいしいらしいです", flag:false, why:"Correct: らしい after the plain form, “apparently cheap and good”."},
@@ -1260,7 +1260,7 @@ ICA.addUnit({
     {
      id:"e3u7-l4-x6",
      type:"mcq",
-     q:"Ana opens the door of a meeting room and says: 「あ、[窓]{まど}が[開]{あ}けてありますね。」 What does she understand?",
+     q:"Cheska opens the door of the seminar room and says: 「あ、[窓]{まど}が[開]{あ}けてありますね。」 What does she understand?",
      options:[
       {
        t:"Someone opened the window on purpose, and it is still open.",
@@ -1275,7 +1275,7 @@ ICA.addUnit({
     {
      id:"e3u7-l4-x7",
      type:"spot",
-     q:"Ana describes her office when she arrived this morning. Tap each verb form that is **wrong**.",
+     q:"Cheska describes the seminar room as she found it this morning. Tap each verb form that is **wrong**.",
      ask:"is wrong",
      parts:[
       "[事務所]{じむしょ}に[着]{つ}くと、ドアが",
@@ -1405,7 +1405,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex:"[毎日]{まいにち}[練習]{れんしゅう}しているのに、なかなか[上手]{じょうず}になりません。\nEven though I practise every day, I’m just not getting better.\n\n[約束]{やくそく}したのに、ケンジさんは[来]{き}ませんでした。\nKenji promised, but he didn’t come.\n\nこの[店]{みせ}は高いのに、あまりおいしくないです。\nThis restaurant is expensive, and yet it isn’t very good.\n\n[日曜日]{にちようび}なのに、[会社]{かいしゃ}に行かなければなりません。\nIt’s Sunday, and I still have to go to work.",
+       ex:"[毎日]{まいにち}[練習]{れんしゅう}しているのに、なかなか[上手]{じょうず}になりません。\nEven though I practise every day, I’m just not getting better.\n\n[約束]{やくそく}したのに、トビーさんは[来]{き}ませんでした。\nToby promised, but he didn’t come.\n\nこの[店]{みせ}は高いのに、あまりおいしくないです。\nThis restaurant is expensive, and yet it isn’t very good.\n\n[日曜日]{にちようび}なのに、[会社]{かいしゃ}に行かなければなりません。\nIt’s Sunday, and I still have to go to work.",
        label:"～のに"
       },
       "Nouns and な-adjectives take **な** before のに, just as they do before ので: [学生]{がくせい}なのに, [静]{しず}かなのに.",
@@ -1481,7 +1481,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex:"[先生]{せんせい}は[明日]{あした}、いらっしゃいますか。\nWill the professor be in tomorrow?\n\n[何]{なに}を[召]{め}し上がりますか。\nWhat would you like to eat (or drink)?\n\nはじめまして。アナと[申]{もう}します。\nHow do you do? My name is Ana.\n\n[明日]{あした}、[三時]{さんじ}に[伺]{うかが}います。\nI’ll come to see you tomorrow at three.",
+       ex:"[先生]{せんせい}は[明日]{あした}、いらっしゃいますか。\nWill the professor be in tomorrow?\n\n[何]{なに}を[召]{め}し上がりますか。\nWhat would you like to eat (or drink)?\n\nはじめまして。イエンと[申]{もう}します。\nHow do you do? My name is Yến.\n\n[明日]{あした}、[三時]{さんじ}に[伺]{うかが}います。\nI’ll come to see you tomorrow at three.",
        label:"Special keigo verbs"
       },
       {
@@ -1531,10 +1531,10 @@ ICA.addUnit({
       {h:"Your side and their side"},
       "Keigo also depends on **groups**. When you speak to someone outside your group, such as a customer or a caller from another company, you treat your own colleagues, your boss and your family as part of your side: no respectful verbs and no さん for them. This is the idea of [[uchi-soto|ウチ・ソト]] (inside and outside).",
       {
-       ex:"[田中]{たなか}はただいま[席]{せき}を[外]{はず}しております。\nTanaka is away from his desk at the moment.\n(said by a receptionist to an outside caller about her own boss)",
+       ex:"[大西]{おおにし}はただいま[席]{せき}を[外]{はず}しております。\nProfessor Ōnishi is away from his desk at the moment.\n(said by a student in his lab to a caller from outside the university)",
        label:"ウチ・ソト"
       },
-      "Inside the company, the same receptionist would say [田中]{たなか}さん or [田中部長]{たなかぶちょう} and use respectful verbs about him. The common traps are collected in {{keigo-mistakes}}.",
+      "Inside the lab, the same student would say [大西先生]{おおにしせんせい} and use respectful verbs about him. The common traps are collected in {{keigo-mistakes}}.",
       "That completes the N4 grammar in this track. The forms in this unit (passive, causative, transitive and intransitive pairs) use many N4 kanji, so daily review pays off. Forgetting and relearning is normal; short, spaced sessions fix it.",
       {lab:"kl-n4", t:"Practise: the N4 kanji, many of which appear in this unit’s verbs"},
       {lab:"kl-n4-vocab", t:"Practise: N4 vocabulary, including verb pairs"},
@@ -1576,7 +1576,7 @@ ICA.addUnit({
        ok:true,
        why:"Right. After のに, the second half must be a fact, not an invitation. Use けど: [降]{ふ}っているけど、[出]{で}かけましょう."
       },
-      {t:"雨が[降]{ふ}っているのに、ケンジさんは[出]{で}かけました。", why:"Correct: a fact that goes against expectation, with a note of surprise."},
+      {t:"雨が[降]{ふ}っているのに、ロドリゴさんは[出]{で}かけました。", why:"Correct: a fact that goes against expectation, with a note of surprise."},
       {t:"雨が[降]{ふ}っているけど、[出]{で}かけましょう。", why:"Correct: けど is a neutral “but” and can be followed by an invitation."},
       {t:"雨が[降]{ふ}っているから、[出]{で}かけません。", why:"Correct: から gives the reason for not going out."}
      ]
@@ -1623,13 +1623,13 @@ ICA.addUnit({
     {
      id:"e3u7-l5-x7",
      type:"spot",
-     q:"Kenji Yamamoto, a new employee, greets a visitor from another company. Tap each keigo form that is **wrong**.",
+     q:"Aoi, a new intern at a company in Tokyo, greets a visitor from another company. Tap each keigo form that is **wrong**.",
      ask:"is wrong",
      parts:[
-      "いらっしゃいませ。[私]{わたし}は[山本]{やまもと}と",
+      "いらっしゃいませ。[私]{わたし}は[平川]{ひらかわ}と",
       {t:"[申]{もう}します", flag:false, why:"Correct: the humble verb for your own name."},
-      "。[部長]{ぶちょう}の[田中]{たなか}はすぐに",
-      {t:"[参]{まい}ります", flag:false, why:"Correct: to an outside visitor, Kenji treats his own boss as his side (ウチ), so he uses the humble verb and no さん."},
+      "。[部長]{ぶちょう}はすぐに",
+      {t:"[参]{まい}ります", flag:false, why:"Correct: to an outside visitor, Aoi treats her own boss as her side (ウチ), so she uses the humble verb, with no 様 or さん after 部長."},
       "。どうぞ、こちらに",
       {t:"お[座]{すわ}りください", flag:false, why:"Correct: お + stem + ください, a respectful request."},
       "。コーヒーを",
@@ -1637,7 +1637,7 @@ ICA.addUnit({
       "。[資料]{しりょう}はもう",
       {t:"ご[覧]{らん}になりましたか", flag:false, why:"Correct: the respectful verb for the visitor’s looking."},
       "。[明日]{あした}は[私]{わたし}がそちらに",
-      {t:"いらっしゃいます", flag:true, why:"Wrong. Respectful verbs are never for yourself. Kenji should say [伺]{うかが}います or [参]{まい}ります."},
+      {t:"いらっしゃいます", flag:true, why:"Wrong. Respectful verbs are never for yourself. Aoi should say [伺]{うかが}います or [参]{まい}ります."},
       "。"
      ]
     },
@@ -1720,7 +1720,7 @@ ICA.addUnit({
    summary:"How to build the passive of any verb, and its uses: things done to people, actions on your body or belongings, things as the subject, によって for creators, and the “suffering” passive.",
    levels:{
     starter:[
-     "The **passive** turns a sentence around so that the person or thing an action happens to becomes the topic. [先生]{せんせい}がアナさんをほめました (The teacher praised Ana) becomes アナさんは先生にほめられました (Ana was praised by the teacher). The doer takes に, or can be left out.",
+     "The **passive** turns a sentence around so that the person or thing an action happens to becomes the topic. [先生]{せんせい}がまりやさんをほめました (The teacher praised Mariya) becomes まりやさんは先生にほめられました (Mariya was praised by the teacher). The doer takes に, or can be left out.",
      "To build it, take the ない-form stem. Godan verbs add れる ([書]{か}かない → 書かれる, [言]{い}わない → [言]{い}われる); ichidan verbs add られる ([食]{た}べられる). する becomes される and [来]{く}る becomes [来]{こ}られる.",
      "Japanese uses the passive more than English does, especially to tell a story from the point of view of the person it happened to: [電車]{でんしゃ}で[足]{あし}を[踏]{ふ}まれました (Someone stepped on my foot on the train). It can even say that an event was a nuisance for you: [雨]{あめ}に[降]{ふ}られました (I got caught in the rain).",
      "The forms take a little practice. Make a table of ten verbs you know, say the passive of each aloud, and review it for a few days."
@@ -1738,7 +1738,7 @@ ICA.addUnit({
      "**Sentence patterns**",
      {
       list:[
-       "**Done to a person:** person は doer に passive. ミンさんは[部長]{ぶちょう}に[呼]{よ}ばれました. With verbs of saying and giving, から is also common: [先生]{せんせい}から[注意]{ちゅうい}されました.",
+       "**Done to a person:** person は doer に passive. あおいさんは[部長]{ぶちょう}に[呼]{よ}ばれました. With verbs of saying and giving, から is also common: [先生]{せんせい}から[注意]{ちゅうい}されました.",
        "**Done to your body or belongings:** you are still the topic, and the thing keeps を. [財布]{さいふ}を[盗]{ぬす}まれました; [足]{あし}を[踏]{ふ}まれました. [私]{わたし}の[足]{あし}は[踏]{ふ}まれました sounds unnatural.",
        "**A thing as the topic:** common in news, notices and descriptions, usually without a doer. [会議]{かいぎ}は[三階]{さんがい}で[行]{おこな}われます.",
        "**Creators take によって:** 「[源氏物語]{げんじものがたり}」は[紫式部]{むらさきしきぶ}によって書かれました.",
@@ -2020,7 +2020,7 @@ ICA.addUnit({
      "いらっしゃる, おっしゃる, なさる and くださる have ます-forms in い: いらっしゃいます, おっしゃいます, なさいます, くださいます. So does ござる: ございます.",
      "**Regular patterns:** お + stem + になる (お[帰]{かえ}りになる) and the passive form ([来]{こ}られる) for respect; お + stem + ください (お[待]{ま}ちください) and ご + noun + ください (ご[注意]{ちゅうい}ください) for respectful requests; お + stem + する (お[持]{も}ちします) and ご + noun + する (ご[案内]{あんない}します) for humble actions that affect the other person.",
      "**Limits:** one-syllable stems (見る, [寝]{ね}る, いる) use special verbs, not お～になる. お generally goes with native words and ご with Chinese-origin words, with exceptions such as お[電話]{でんわ}.",
-     "**ウチ・ソト:** to outsiders, treat your own colleagues and family as your side: [田中]{たなか}はただいま[席]{せき}を[外]{はず}しております.",
+     "**ウチ・ソト:** to outsiders, treat your own colleagues and family as your side: [大西]{おおにし}はただいま[席]{せき}を[外]{はず}しております.",
      "**Where you hear it.** Shops and restaurants (いらっしゃいませ, かしこまりました, [少々]{しょうしょう}お[待]{ま}ちください), stations and announcements (ご[注意]{ちゅうい}ください), the phone, offices and schools. Start by understanding these set phrases; using them comes later.",
      "**A ladder for requests.** From casual to very polite: [待]{ま}って → [待]{ま}ってください → お[待]{ま}ちください → お[待]{ま}ちいただけますか. The higher you go, the more respect you show, and the more distance."
     ],
@@ -2231,10 +2231,10 @@ ICA.addUnit({
    id:"e3u7-q03",
    lesson:"e3u7-l1",
    level:2,
-   q:"Choose the passive that completes the sentence: ミンさんは[先生]{せんせい}に（　）。 (Min was praised by the teacher.)",
+   q:"Choose the passive that completes the sentence: まりやさんは[先生]{せんせい}に（　）。 (Mariya was praised by the teacher.)",
    options:[
     {t:"ほめられました", ok:true, why:"ほめる is ichidan: drop る, add られる, then ました."},
-    {t:"ほめました", why:"This is active: “Min praised the teacher”, which doesn’t fit に and the meaning."},
+    {t:"ほめました", why:"This is active: “Mariya praised the teacher”, which doesn’t fit に and the meaning."},
     {t:"ほめさせました", why:"This is the causative (Lesson 2): “made someone praise”."},
     {t:"ほめれました", why:"ほめれる is a casual potential (ら[抜]{ぬ}き), never a passive. The passive is ほめられる."}
    ]
@@ -2255,7 +2255,7 @@ ICA.addUnit({
    id:"e3u7-q05",
    lesson:"e3u7-l1",
    level:3,
-   q:"Hana writes: 「[昨日]{きのう}は[友達]{ともだち}に[来]{こ}られて、[勉強]{べんきょう}できませんでした。」 What does she mean?",
+   q:"Cheska writes: 「[昨日]{きのう}は[友達]{ともだち}に[来]{こ}られて、[勉強]{べんきょう}できませんでした。」 What does she mean?",
    options:[
     {
      t:"A friend came over, and because of that she couldn’t study.",
@@ -2313,7 +2313,7 @@ ICA.addUnit({
    id:"e3u7-q09",
    lesson:"e3u7-l1",
    level:3,
-   q:"Sara says: 「[隣]{となり}の[人]{ひと}に[夜]{よる}[遅]{おそ}くまで[騒]{さわ}がれて、[眠]{ねむ}れませんでした。」 ([騒]{さわ}ぐ = make a noise). What happened?",
+   q:"Cheska says: 「[隣]{となり}の[人]{ひと}に[夜]{よる}[遅]{おそ}くまで[騒]{さわ}がれて、[眠]{ねむ}れませんでした。」 ([騒]{さわ}ぐ = make a noise). What happened?",
    options:[
     {
      t:"Her neighbours were noisy until late, and she couldn’t sleep.",
@@ -2322,7 +2322,7 @@ ICA.addUnit({
     },
     {
      t:"She was noisy until late and her neighbours couldn’t sleep.",
-     why:"The passive puts Sara on the receiving end; [隣]{となり}の[人]{ひと}に marks the people who made the noise."
+     why:"The passive puts Cheska on the receiving end; [隣]{となり}の[人]{ひと}に marks the people who made the noise."
     },
     {t:"Her neighbours told her to be quiet.", why:"That would be [注意]{ちゅうい}されました or [言]{い}われました. [騒]{さわ}ぐ means “make a noise”."},
     {
@@ -2359,14 +2359,14 @@ ICA.addUnit({
    id:"e3u7-q12",
    lesson:"e3u7-l2",
    level:2,
-   q:"「[部長]{ぶちょう}は[田中]{たなか}さんを[大阪]{おおさか}へ[出張]{しゅっちょう}させました。」 What happened?",
+   q:"「[部長]{ぶちょう}はあおいさんを[大阪]{おおさか}へ[出張]{しゅっちょう}させました。」 What happened?",
    options:[
-    {t:"The manager sent Tanaka on a business trip to Osaka.", ok:true, why:"The causative: the manager (topic) caused Tanaka (を) to go on the trip."},
-    {t:"Tanaka sent the manager on a business trip to Osaka.", why:"The topic, [部長]{ぶちょう}は, is the causer. Tanaka is the one who went."},
-    {t:"The manager went on a business trip with Tanaka.", why:"“With Tanaka” would be [田中]{たなか}さんと. The causative means the manager made Tanaka go."},
+    {t:"The manager sent Aoi on a business trip to Osaka.", ok:true, why:"The causative: the manager (topic) caused Aoi (を) to go on the trip."},
+    {t:"Aoi sent the manager on a business trip to Osaka.", why:"The topic, [部長]{ぶちょう}は, is the causer. Aoi is the one who went."},
+    {t:"The manager went on a business trip with Aoi.", why:"“With Aoi” would be あおいさんと. The causative means the manager made Aoi go."},
     {
-     t:"The manager was sent on a business trip by Tanaka.",
-     why:"That would need the causative-passive with the manager as the topic: [部長]{ぶちょう}は[田中]{たなか}さんに[出張]{しゅっちょう}させられました."
+     t:"The manager was sent on a business trip by Aoi.",
+     why:"That would need the causative-passive with the manager as the topic: [部長]{ぶちょう}はあおいさんに[出張]{しゅっちょう}させられました."
     }
    ]
   },
@@ -2422,7 +2422,7 @@ ICA.addUnit({
    id:"e3u7-q17",
    lesson:"e3u7-l2",
    level:3,
-   q:"Fatima’s teacher made her rewrite her report, which she didn’t want to do. She tells a friend: 「[先生]{せんせい}にレポートを（　）。」 ([書]{か}き[直]{なお}す = rewrite)",
+   q:"Cheska’s professor made her rewrite her report, which she didn’t want to do. She tells a friend: 「[先生]{せんせい}にレポートを（　）。」 ([書]{か}き[直]{なお}す = rewrite)",
    options:[
     {
      t:"[書]{か}き[直]{なお}させられました",
@@ -2530,7 +2530,7 @@ ICA.addUnit({
    options:[
     {t:"[今日]{きょう}は[春]{はる}らしい[天気]{てんき}です。", ok:true, why:"Noun + らしい before a noun: weather that is typical of spring."},
     {t:"[来月]{らいげつ}、[新]{あたら}しい[店]{みせ}ができるらしいです。", why:"Here らしい means “apparently”, after a plain verb."},
-    {t:"[田中]{たなか}さんは[今日]{きょう}、[来]{こ}ないらしいです。", why:"“Apparently Tanaka isn’t coming”: the hearsay meaning."},
+    {t:"あおいさんは[今日]{きょう}、[来]{こ}ないらしいです。", why:"“Apparently Aoi isn’t coming”: the hearsay meaning."},
     {t:"[昨日]{きのう}、[雨]{あめ}が[降]{ふ}ったらしいです。", why:"“Apparently it rained yesterday”: the hearsay meaning."}
    ]
   },
@@ -2562,12 +2562,12 @@ ICA.addUnit({
    id:"e3u7-q28",
    lesson:"e3u7-l3",
    level:3,
-   q:"A friend says: 「ミンさんは[日本人]{にほんじん}みたいに[日本語]{にほんご}を[話]{はな}しますね。」 What does she mean?",
+   q:"A friend says: 「トビーさんは[日本人]{にほんじん}みたいに[日本語]{にほんご}を[話]{はな}しますね。」 What does she mean?",
    options:[
-    {t:"Min speaks Japanese like a Japanese person.", ok:true, why:"みたいに before a verb means “like, in the manner of”: a comparison."},
-    {t:"It seems that Min is Japanese.", why:"That would end in [日本人]{にほんじん}みたいです. Here みたいに describes how she speaks."},
-    {t:"I hear Min speaks Japanese.", why:"Hearsay would be [話]{はな}すそうです."},
-    {t:"Min speaks Japanese with Japanese people.", why:"“With” would be [日本人]{にほんじん}と."}
+    {t:"Toby speaks Japanese like a Japanese person.", ok:true, why:"みたいに before a verb means “like, in the manner of”: a comparison."},
+    {t:"It seems that Toby is Japanese.", why:"That would end in [日本人]{にほんじん}みたいです. Here みたいに describes how she speaks."},
+    {t:"I hear Toby speaks Japanese.", why:"Hearsay would be [話]{はな}すそうです."},
+    {t:"Toby speaks Japanese with Japanese people.", why:"“With” would be [日本人]{にほんじん}と."}
    ]
   },
   {
@@ -2697,7 +2697,7 @@ ICA.addUnit({
    id:"e3u7-q38",
    lesson:"e3u7-l4",
    level:2,
-   q:"In front of a sign, Kenji asks a friend: 「ここに[何]{なん}と[書]{か}いてありますか。」 What is he asking?",
+   q:"In front of a sign, Rodrigo asks a friend: 「ここに[何]{なん}と[書]{か}いてありますか。」 What is he asking?",
    options:[
     {t:"What does it say here?", ok:true, why:"Right. [書]{か}いてある describes writing that is there: literally, “what has been written here?”"},
     {t:"What should I write here?", why:"That would be [何]{なん}と[書]{か}けばいいですか."},
@@ -2737,16 +2737,16 @@ ICA.addUnit({
    id:"e3u7-q41",
    lesson:"e3u7-l5",
    level:2,
-   q:"Lucía says: 「[約束]{やくそく}したのに、ケンジさんは[来]{き}ませんでした。」 What does のに add?",
+   q:"Mariya says: 「[約束]{やくそく}したのに、トビーさんは[来]{き}ませんでした。」 What does のに add?",
    options:[
     {
      t:"The result went against her expectation, and she is disappointed.",
      ok:true,
      why:"のに means “even though”, with feeling: he promised, yet he didn’t come."
     },
-    {t:"Kenji didn’t come because he had promised.", why:"That would be から. のに shows the opposite of what was expected."},
-    {t:"She is asking Kenji to keep his promise.", why:"A request can’t follow のに; this is a statement about what happened."},
-    {t:"Kenji came, as he had promised.", why:"[来]{き}ませんでした means he didn’t come."}
+    {t:"Toby didn’t come because he had promised.", why:"That would be から. のに shows the opposite of what was expected."},
+    {t:"She is asking Toby to keep his promise.", why:"A request can’t follow のに; this is a statement about what happened."},
+    {t:"Toby came, as he had promised.", why:"[来]{き}ませんでした means he didn’t come."}
    ]
   },
   {
@@ -2780,7 +2780,7 @@ ICA.addUnit({
    q:"What is the respectful ([尊敬語]{そんけいご}) verb for [言]{い}う (say)?",
    options:[
     {t:"おっしゃる", ok:true, why:"おっしゃる raises the person who speaks: [先生]{せんせい}がおっしゃいました."},
-    {t:"[申]{もう}す", why:"[申]{もう}す is humble, for your own speaking: [私]{わたし}はアナと[申]{もう}します."},
+    {t:"[申]{もう}す", why:"[申]{もう}す is humble, for your own speaking: [私]{わたし}はイエンと[申]{もう}します."},
     {t:"いたす", why:"いたす is the humble verb for する."},
     {t:"[拝見]{はいけん}する", why:"[拝見]{はいけん}する is the humble verb for [見]{み}る."}
    ]
@@ -2813,12 +2813,12 @@ ICA.addUnit({
    id:"e3u7-q47",
    lesson:"e3u7-l5",
    level:3,
-   q:"A client phones and asks for your boss, [田中部長]{たなかぶちょう}. He is out of the office. What is the right reply to the client?",
+   q:"Aoi is answering the phone in Professor Ōnishi’s lab. A caller from the city office asks for Professor Ōnishi ([大西先生]{おおにしせんせい}). He is out. What is the right reply?",
    options:[
-    {t:"[田中]{たなか}はただいま[席]{せき}を[外]{はず}しております。", ok:true, why:"To an outsider, your boss is on your side (ウチ): no title or さん, and a humble form (おります)."},
-    {t:"[田中部長]{たなかぶちょう}はいらっしゃいません。", why:"Respectful verbs and titles for your own boss are used inside the company, not when you speak to an outsider."},
-    {t:"[田中]{たなか}さんはおりません。", why:"The verb is humble, but さん still raises your own boss in front of an outsider."},
-    {t:"[田中部長]{たなかぶちょう}は[席]{せき}を[外]{はず}していらっしゃいます。", why:"This uses a title and respectful language for your own side when speaking to an outsider."}
+    {t:"[大西]{おおにし}はただいま[席]{せき}を[外]{はず}しております。", ok:true, why:"To an outsider, your professor is on your side (ウチ): no title or さん, and a humble form (おります)."},
+    {t:"[大西先生]{おおにしせんせい}はいらっしゃいません。", why:"Respectful verbs and titles for your own professor are used inside the lab, not when you speak to an outsider."},
+    {t:"[大西]{おおにし}さんはおりません。", why:"The verb is humble, but さん still raises your own professor in front of an outsider."},
+    {t:"[大西先生]{おおにしせんせい}は[席]{せき}を[外]{はず}していらっしゃいます。", why:"This uses a title and respectful language for your own side when speaking to an outsider."}
    ]
   },
   {

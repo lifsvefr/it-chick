@@ -109,7 +109,7 @@ ICA.addUnit({
       " ",
       {t:"時", flag:false, why:"時 (time) is the N5 kanji in this family: 日 + 寺."}
     ]},
-    {id:"e3u8-l1-x5", type:"mcq", q:"Mei is writing about her own family: 「＿は高校生です。」 She means her younger sister. Which word fits?", options:[
+    {id:"e3u8-l1-x5", type:"mcq", q:"Mariya is writing about her own family: 「＿は高校生です。」 She means her younger sister. Which word fits?", options:[
       {t:"妹 (いもうと)", ok:true, why:"Right. 妹 is “my younger sister”. For your own family you use the plain word, without さん."},
       {t:"姉 (あね)", why:"姉 is an older sister. 姉 and 妹 both have 女; learn them as a pair."},
       {t:"弟 (おとうと)", why:"弟 is a younger brother."},
@@ -207,9 +207,9 @@ ICA.addUnit({
       "仕 and 業 are about work. [仕]{し}[事]{ごと} is work or a job; [授]{じゅ}[業]{ぎょう} is a class at school; [卒]{そつ}[業]{ぎょう} is graduating. [仕]{し}[方]{かた}がない (it can’t be helped) is an everyday phrase you will hear often."
     ]},
     {h:"Read it: a weekend invitation", body:[
-      "Min sends this message to Sara. Read it once for the main idea, then again for the details.",
-      {ex:"サラさん\n今[週]{しゅう}の[土]{ど}[曜]{よう}日、[天]{てん}気がよかったら、[海]{うみ}の[近]{ちか}くの水[族]{ぞく}[館]{かん}に行きませんか。水[族]{ぞく}[館]{かん}は[午]{ご}前[九]{く}時から午[後]{ご}[五]{ご}時[半]{はん}までです。\n[朝]{あさ}十時に[駅]{えき}の北[口]{ぐち}で[会]{あ}いましょう。[昼]{ひる}ご[飯]{はん}は、[駅]{えき}前の[魚]{さかな}[料]{りょう}[理]{り}の[店]{みせ}で食べたいです。[夜]{よる}は[雨]{あめ}が[降]{ふ}るそうなので、[夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう。\nミン", label:"Min’s message"},
-      {list:["**What is Min suggesting?** A trip to the aquarium (水[族]{ぞく}[館]{かん}) near the sea this Saturday, if the weather is good: 〜たら is “if”, and 〜ませんか is an invitation.","**When and where do they meet?** At 10 a.m. at the station’s north exit (北[口]{ぐち}).","**Lunch?** At a fish restaurant in front of the station ([駅]{えき}前).","**Why come back by early evening?** 〜そうなので: “because they say” it will rain at night."]},
+      "Rodrigo sends this message to Cheska. Read it once for the main idea, then again for the details.",
+      {ex:"チェスカさん\n今[週]{しゅう}の[土]{ど}[曜]{よう}日、[天]{てん}気がよかったら、[海]{うみ}の[近]{ちか}くの水[族]{ぞく}[館]{かん}に行きませんか。水[族]{ぞく}[館]{かん}は[午]{ご}前[九]{く}時から午[後]{ご}[五]{ご}時[半]{はん}までです。\n[朝]{あさ}十時に[駅]{えき}の北[口]{ぐち}で[会]{あ}いましょう。[昼]{ひる}ご[飯]{はん}は、[駅]{えき}前の[魚]{さかな}[料]{りょう}[理]{り}の[店]{みせ}で食べたいです。[夜]{よる}は[雨]{あめ}が[降]{ふ}るそうなので、[夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう。\nロドリゴ", label:"Rodrigo’s message"},
+      {list:["**What is Rodrigo suggesting?** A trip to the aquarium (水[族]{ぞく}[館]{かん}) near the sea this Saturday, if the weather is good: 〜たら is “if”, and 〜ませんか is an invitation.","**When and where do they meet?** At 10 a.m. at the station’s north exit (北[口]{ぐち}).","**Lunch?** At a fish restaurant in front of the station ([駅]{えき}前).","**Why come back by early evening?** 〜そうなので: “because they say” it will rain at night."]},
       "Notice how the kanji carried the meaning: the times (土[曜]{よう}日, 九時, 十時, [夕]{ゆう}[方]{がた}), the places ([海]{うみ}, 水[族]{ぞく}[館]{かん}, 北[口]{ぐち}, [駅]{えき}前, [店]{みせ}) and the food ([魚]{さかな}[料]{りょう}[理]{り}) all stand out from the hiragana grammar.",
       {lab:"kl-n4", t:"Practise: today’s N4 kanji review"}
     ]}
@@ -265,13 +265,13 @@ ICA.addUnit({
       "・",
       {t:"[週]{しゅう}[末]{まつ}", flag:false, why:"[週]{しゅう}[末]{まつ} is a time: the weekend."}
     ]},
-    {id:"e3u8-l2-x7", type:"mcq", q:"In Min’s message, why does he want to come back by early evening?", options:[
+    {id:"e3u8-l2-x7", type:"mcq", q:"In Rodrigo’s message, why does he want to come back by early evening?", options:[
       {t:"Because he has heard it will rain at night", ok:true, why:"Right. [夜]{よる}は雨が[降]{ふ}るそうなので: 〜そう after a plain verb reports what someone said, and ので gives the reason."},
       {t:"Because the aquarium closes at 5 p.m.", why:"The aquarium closes at 午後五時半, 5:30 p.m., and that is not the reason he gives."},
       {t:"Because he has work in the evening", why:"The message doesn’t mention work. Look at the sentence that ends in 〜ので: it gives the reason."},
-      {t:"Because Sara doesn’t like the dark", why:"Nothing in the message says this. Answer from the text only."}
+      {t:"Because Cheska doesn’t like the dark", why:"Nothing in the message says this. Answer from the text only."}
     ]},
-    {id:"e3u8-l2-x8", type:"number", q:"Min’s message says the aquarium is open 午前九時から午後五時半まで. How many hours is it open?", answer:8.5, tol:0, unit:"hours", why:"From 9:00 a.m. to 5:30 p.m. (17:30): 17.5 − 9 = 8.5 hours. 半 means half past, so 五時半 is 5:30.", wrongs:[
+    {id:"e3u8-l2-x8", type:"number", q:"Rodrigo’s message says the aquarium is open 午前九時から午後五時半まで. How many hours is it open?", answer:8.5, tol:0, unit:"hours", why:"From 9:00 a.m. to 5:30 p.m. (17:30): 17.5 − 9 = 8.5 hours. 半 means half past, so 五時半 is 5:30.", wrongs:[
       {v:8, tol:0, why:"You may have missed 半 (half): 五時半 is 5:30, not 5:00."},
       {v:3.5, tol:0, why:"午後 means p.m., so 五時半 is 17:30, not 5:30 in the morning. Count from 9:00 to 17:30."}
     ], hint2:"Change 午後五時半 to the 24-hour clock first."}
@@ -317,7 +317,7 @@ ICA.addUnit({
       {lead:"Most N4 verb kanji take their kun reading with okurigana when they stand as a verb ([思]{おも}う), and their on reading inside kanji words ([意]{い}[思]{し}, intention). The tables show both."},
       {table:[["Kanji", "Meaning", "Main readings", "Common words"], ["言", "say; word", "On ゲン, ゴン · Kun い(う), こと", "[言]{い}う say · [言]{こと}[葉]{ば} word, language · [方]{ほう}[言]{げん} dialect"], ["思", "think, feel", "On シ · Kun おも(う)", "[思]{おも}う think, feel · [思]{おも}い[出]{で} memory · [不]{ふ}[思]{し}[議]{ぎ} strange, mysterious"], ["考", "think, consider", "On コウ · Kun かんが(える)", "[考]{かんが}える think about · [考]{かんが}え idea · [参]{さん}[考]{こう} reference"], ["知", "know", "On チ · Kun し(る)", "[知]{し}る get to know · お[知]{し}らせ notice, announcement · [知]{ち}[人]{じん} acquaintance"], ["教", "teach", "On キョウ · Kun おし(える), おそ(わる)", "[教]{おし}える teach · [教]{きょう}[室]{しつ} classroom · [教]{きょう}[科]{か}[書]{しょ} textbook"], ["習", "learn", "On シュウ · Kun なら(う)", "[習]{なら}う learn (from someone) · [練]{れん}[習]{しゅう} practice · [学]{がく}[習]{しゅう} study, learning"], ["勉", "effort", "On ベン", "[勉]{べん}[強]{きょう} study · [勉]{べん}[強]{きょう}になる learn a lot (from something)"], ["研", "polish; study", "On ケン · Kun と(ぐ)", "[研]{けん}[究]{きゅう} research · [研]{けん}[修]{しゅう} training course"], ["究", "research", "On キュウ", "[研]{けん}[究]{きゅう} research · [研]{けん}[究]{きゅう}[者]{しゃ} researcher · [研]{けん}[究]{きゅう}[室]{しつ} laboratory, research room"], ["答", "answer", "On トウ · Kun こた(える), こた(え)", "[答]{こた}える answer · [答]{こた}え an answer · [回]{かい}[答]{とう} reply (to a survey, request)"], ["問", "question", "On モン · Kun と(う), と(い)", "[問]{もん}[題]{だい} problem; exam question · [質]{しつ}[問]{もん} question · 学[問]{もん} learning, scholarship"], ["試", "try, test", "On シ · Kun ため(す)", "[試]{し}[験]{けん} exam · [試]{し}[合]{あい} match, game · [試]{ため}す try out"], ["験", "test; effect", "On ケン", "[試]{し}[験]{けん} exam · [経]{けい}[験]{けん} experience · [体]{たい}[験]{けん} hands-on experience"]]},
       "[思]{おも}う and [考]{かんが}える both translate as “think”. [思]{おも}う is for feelings, opinions and impressions: [楽]{たの}しいと[思]{おも}います (I think it’s fun). [考]{かんが}える is for thinking something through: [計]{けい}[画]{かく}を[考]{かんが}えます (I think about the plan). You will use 〜と[思]{おも}います for opinions ([[to-omou]]).",
-      "Teaching and learning have three verbs. The teacher [教]{おし}える (teaches); the learner [習]{なら}う (learns from someone) or [教]{おそ}わる (is taught). Both people are in the sentence with に: アナさんはケンジさんに[英]{えい}[語]{ご}を[教]{おし}えます, and ケンジさんはアナさんに[英]{えい}語を[習]{なら}います.",
+      "Teaching and learning have three verbs. The teacher [教]{おし}える (teaches); the learner [習]{なら}う (learns from someone) or [教]{おそ}わる (is taught). Both people are in the sentence with に: トビーさんはまりやさんに[英]{えい}[語]{ご}を[教]{おし}えます, and まりやさんはトビーさんに[英]{えい}語を[習]{なら}います.",
       {warn:"For “I know”, Japanese uses the ている form: [知]{し}っています. But “I don’t know” is usually just [知]{し}りません, not [知]{し}っていません. はい、[知]{し}っています。/ いいえ、[知]{し}りません。"}
     ]},
     {h:"Moving, going and stopping", body:[
@@ -349,10 +349,10 @@ ICA.addUnit({
       "Two patterns are both correct: 日本語を[勉]{べん}[強]{きょう}する and 日本語の[勉]{べん}[強]{きょう}をする. Both mean “study Japanese”.",
       {warn:"Not every kanji word takes する. 時[代]{だい} (era), [世]{せ}[界]{かい} (world) and [研]{けん}[究]{きゅう}[室]{しつ} (laboratory) are only nouns. Dictionaries mark the words that do, and the Kanji Lab’s word cards show the tag “takes する”."}
     ]},
-    {h:"Read it: Kenji’s day", body:[
-      "This text describes a day in the life of Kenji, a researcher. Read it for the order of events.",
-      {ex:"ケンジさんは毎[朝]{あさ}[六]{ろく}時[半]{はん}に[起]{お}きて、[近]{ちか}くの[公]{こう}[園]{えん}を[三]{さん}[十]{じゅっ}[分]{ぷん}[走]{はし}ります。それから、シャワーを[浴]{あ}びて、[朝]{あさ}ご[飯]{はん}を[作]{つく}ります。[八]{はち}時に[家]{いえ}を出て、[駅]{えき}まで[歩]{ある}きます。\n[会]{かい}[社]{しゃ}では、[新]{あたら}しい[自]{じ}[転]{てん}車の[研]{けん}[究]{きゅう}をしています。[昼]{ひる}[休]{やす}みには、[同]{おな}じ[研]{けん}[究]{きゅう}[室]{しつ}の人と食[堂]{どう}で[昼]{ひる}ご[飯]{はん}を食べます。\n[仕]{し}[事]{ごと}は六時に[終]{お}わりますが、[火]{か}[曜]{よう}日と[木]{もく}[曜]{よう}日は、[家]{いえ}に[帰]{かえ}る前に[英]{えい}[会]{かい}[話]{わ}の[教]{きょう}[室]{しつ}に[通]{かよ}っています。", label:"Kenji’s day"},
-      {list:["**What does Kenji do before breakfast?** He runs in the park near his home for 30 minutes, then showers.","**What does he research?** New bicycles ([自]{じ}[転]{てん}車).","**Where does he eat lunch?** In the canteen (食[堂]{どう}), with people from the same laboratory.","**What does he do on Tuesdays and Thursdays?** He goes to an English conversation class before going home: 〜に[通]{かよ}っています is going somewhere regularly."]},
+    {h:"Read it: Aoi’s day", body:[
+      "This text describes a day in the life of Aoi, a master’s student. Read it for the order of events.",
+      {ex:"あおいさんは毎[朝]{あさ}[六]{ろく}時[半]{はん}に[起]{お}きて、[近]{ちか}くの[公]{こう}[園]{えん}を[三]{さん}[十]{じゅっ}[分]{ぷん}[走]{はし}ります。それから、シャワーを[浴]{あ}びて、[朝]{あさ}ご[飯]{はん}を[作]{つく}ります。[八]{はち}時に[家]{いえ}を出て、[駅]{えき}まで[歩]{ある}きます。\n[大]{だい}[学]{がく}では、[町]{まち}の[防]{ぼう}[災]{さい}の[研]{けん}[究]{きゅう}をしています。[昼]{ひる}[休]{やす}みには、[同]{おな}じ[研]{けん}[究]{きゅう}[室]{しつ}の人と食[堂]{どう}で[昼]{ひる}ご[飯]{はん}を食べます。\n[研]{けん}[究]{きゅう}は六時に[終]{お}わりますが、[火]{か}[曜]{よう}日と[木]{もく}[曜]{よう}日は、[家]{いえ}に[帰]{かえ}る前に[英]{えい}[会]{かい}[話]{わ}の[教]{きょう}[室]{しつ}に[通]{かよ}っています。", label:"Aoi’s day"},
+      {list:["**What does Aoi do before breakfast?** She runs in the park near her home for 30 minutes, then showers.","**What does she research?** Disaster prevention in towns ([防]{ぼう}[災]{さい}).","**Where does she eat lunch?** In the canteen (食[堂]{どう}), with people from the same laboratory.","**What does she do on Tuesdays and Thursdays?** She goes to an English conversation class before going home: 〜に[通]{かよ}っています is going somewhere regularly."]},
       "Look at the verbs: [起]{お}きる, [走]{はし}る, [作]{つく}る, [歩]{ある}く, [終]{お}わる, [帰]{かえ}る, [通]{かよ}う, and the する word [研]{けん}[究]{きゅう}. With the kanji of this lesson, you can read the whole story of a day.",
       {lab:"kl-n4", t:"Practise: today’s N4 kanji review"},
       {lab:"kl-n4-vocab", t:"Practise: N4 words, including verb pairs and する verbs"}
@@ -367,11 +367,11 @@ ICA.addUnit({
       ["[待]{ま}つ","wait","[待]{ま}つ has 彳 (going, roads) on the left: waiting by the road."],
       ["[運]{はこ}ぶ","carry","[運]{はこ}ぶ: carry or transport something. Its on reading ウン appears in [運]{うん}[転]{てん} and [運]{うん}[動]{どう}."]
     ]},
-    {id:"e3u8-l3-x2", type:"mcq", q:"Ana teaches English, and Kenji learns English from her. Which sentence says this correctly?", options:[
-      {t:"ケンジさんはアナさんに[英]{えい}語を[習]{なら}っています。", ok:true, why:"Right. [習]{なら}う is to learn from someone, and the teacher is marked with に."},
-      {t:"ケンジさんはアナさんに[英]{えい}語を[教]{おし}えています。", why:"This says Kenji teaches Ana. [教]{おし}える is the teacher’s verb."},
-      {t:"アナさんはケンジさんに[英]{えい}語を[習]{なら}っています。", why:"This says Ana learns from Kenji: the roles are the wrong way round."},
-      {t:"ケンジさんはアナさんを[英]{えい}語に[習]{なら}っています。", why:"The particles are swapped. The teacher takes に, and what you learn takes を."}
+    {id:"e3u8-l3-x2", type:"mcq", q:"Toby teaches English, and Mariya learns English from him (on Thursday nights). Which sentence says this correctly?", options:[
+      {t:"まりやさんはトビーさんに[英]{えい}語を[習]{なら}っています。", ok:true, why:"Right. [習]{なら}う is to learn from someone, and the teacher is marked with に."},
+      {t:"まりやさんはトビーさんに[英]{えい}語を[教]{おし}えています。", why:"This says Mariya teaches Toby. [教]{おし}える is the teacher’s verb."},
+      {t:"トビーさんはまりやさんに[英]{えい}語を[習]{なら}っています。", why:"This says Toby learns from Mariya: the roles are the wrong way round."},
+      {t:"まりやさんはトビーさんを[英]{えい}語に[習]{なら}っています。", why:"The particles are swapped. The teacher takes に, and what you learn takes を."}
     ]},
     {id:"e3u8-l3-x3", type:"sort", q:"Does each verb take を (you do it to something) or が (it happens)?", buckets:["を: you do it to something","が: it happens"], items:[
       {t:"[開]{あ}ける", b:0, why:"ドアを[開]{あ}ける: you open the door."},
@@ -395,13 +395,13 @@ ICA.addUnit({
       {t:"でぱつ", why:"で is the kun reading of 出 (出[口]{ぐち}). Two-kanji words like 出[発]{ぱつ} normally use on readings."},
       {t:"しゅっぽつ", why:"ホツ is another on reading of 発, but this word uses ハツ: しゅっぱつ."}
     ]},
-    {id:"e3u8-l3-x6", type:"order", q:"Put Kenji’s day in the order of the text.", items:[
-      {t:"He gets up at 6:30.", why:"The text starts with 六時半に[起]{お}きて."},
-      {t:"He runs in the park for 30 minutes.", why:"〜て joins the actions in order: [起]{お}きて, then [公]{こう}[園]{えん}を[走]{はし}ります."},
-      {t:"He makes breakfast.", why:"それから (after that) he showers and makes breakfast."},
-      {t:"He walks to the station.", why:"At eight he leaves home and walks to the station."},
-      {t:"He eats lunch in the canteen.", why:"[昼]{ひる}休み: in the lunch break."},
-      {t:"He goes to his English class (on Tuesdays and Thursdays).", why:"After work, [帰]{かえ}る前に: before going home."}
+    {id:"e3u8-l3-x6", type:"order", q:"Put Aoi’s day in the order of the text.", items:[
+      {t:"She gets up at 6:30.", why:"The text starts with 六時半に[起]{お}きて."},
+      {t:"She runs in the park for 30 minutes.", why:"〜て joins the actions in order: [起]{お}きて, then [公]{こう}[園]{えん}を[走]{はし}ります."},
+      {t:"She makes breakfast.", why:"それから (after that) she showers and makes breakfast."},
+      {t:"She walks to the station.", why:"At eight she leaves home and walks to the station."},
+      {t:"She eats lunch in the canteen.", why:"[昼]{ひる}休み: in the lunch break."},
+      {t:"She goes to her English class (on Tuesdays and Thursdays).", why:"After her research, [帰]{かえ}る前に: before going home."}
     ]},
     {id:"e3u8-l3-x7", type:"spot", q:"Tap every word that can take する to become a verb.", ask:"can take する", parts:[
       {t:"[勉]{べん}[強]{きょう}", flag:true, why:"[勉]{べん}[強]{きょう}する: to study."},
@@ -418,11 +418,11 @@ ICA.addUnit({
       "・",
       {t:"[注]{ちゅう}[意]{い}", flag:true, why:"[注]{ちゅう}[意]{い}する: to be careful, or to warn someone."}
     ]},
-    {id:"e3u8-l3-x8", type:"mcq", q:"Sara asks: 「[山]{やま}[下]{した}さんを[知]{し}っていますか。」 You have never heard of Ms Yamashita. What is the natural answer?", options:[
+    {id:"e3u8-l3-x8", type:"mcq", q:"Cheska asks: 「[源]{げん}さんを[知]{し}っていますか。」 You have never heard of Gen-san, an old fisherman. What is the natural answer?", options:[
       {t:"いいえ、[知]{し}りません。", ok:true, why:"Right. “I know” is [知]{し}っています, but “I don’t know” is normally [知]{し}りません."},
       {t:"いいえ、[知]{し}っていません。", why:"This is a very common learner mistake. The negative of [知]{し}っています is normally [知]{し}りません."},
       {t:"いいえ、[知]{し}りませんでした。", why:"[知]{し}りませんでした means “I didn’t know (until now)”. It fits when you have just learned something, not here."},
-      {t:"はい、[知]{し}りません。", why:"はい agrees with the question; here you are saying no, you don’t know her, so start with いいえ."}
+      {t:"はい、[知]{し}りません。", why:"はい agrees with the question; here you are saying no, you don’t know him, so start with いいえ."}
     ]}
    ],
    apply:{
@@ -430,7 +430,7 @@ ICA.addUnit({
     tasks:[
      {t:"Your day in ten verbs", how:[
        "Write your usual day in eight to ten short sentences, using verbs from this lesson: [起]{お}きる, [着]{き}る, [飲]{の}む, [作]{つく}る, [歩]{ある}く, [使]{つか}う, [待]{ま}つ, [帰]{かえ}る…",
-       "Join some of them with 〜て, as Kenji’s text does: [起]{お}きて、[朝]{あさ}ご[飯]{はん}を[作]{つく}ります。",
+       "Join some of them with 〜て, as Aoi’s text does: [起]{お}きて、[朝]{あさ}ご[飯]{はん}を[作]{つく}ります。",
        "Underline every kanji you used from this lesson."
      ], write:"毎[朝]{あさ}… それから… …"},
      {t:"Four verb pairs at home", how:[
@@ -541,10 +541,10 @@ ICA.addUnit({
       {t:"食べ物 (food)", why:"食べ[物]{もの} is たべもの: 物 is もの, its kun reading."},
       {t:"買い物 (shopping)", why:"[買]{か}い[物]{もの} is かいもの: もの again."}
     ]},
-    {id:"e3u8-l4-x7", type:"spot", q:"Lina typed this message, and her phone chose two wrong kanji. Tap them.", ask:"wrong kanji", parts:[
+    {id:"e3u8-l4-x7", type:"spot", q:"Cheska typed this message, and her phone chose two wrong kanji. Tap them.", ask:"wrong kanji", parts:[
       {t:"[来]{らい}[週]{しゅう}の[月]{げつ}[曜]{よう}日は、", flag:false, why:"Correct: next Monday."},
       {t:"[山]{やま}[田]{だ}さん", flag:false, why:"A name: correct."},
-      {t:"[意]{い}外", flag:true, why:"Wrong kanji. She means “everyone except Ms Yamada”, which is [以]{い}外. [意]{い}外 means “unexpected”."},
+      {t:"[意]{い}外", flag:true, why:"Wrong kanji. She means “everyone except Aoi”, which is [以]{い}外. [意]{い}外 means “unexpected”."},
       {t:"の人は[休]{やす}みです。", flag:false, why:"Correct: (everyone) else is off."},
       {t:"[駅]{えき}[前]{まえ}の", flag:false, why:"Correct: in front of the station."},
       {t:"[講]{こう}[演]{えん}", flag:true, why:"Wrong kanji. A place in front of the station where people meet is a park, [公]{こう}[園]{えん}. [講]{こう}[演]{えん} is a lecture, not a place."},
@@ -618,16 +618,16 @@ ICA.addUnit({
       "Strategy check: to answer “How much for a 70-year-old?”, you only needed the line with [料]{りょう}金 and the word [以]{い}上. You didn’t need [第]{だい}一 or 水[泳]{えい} for that question."
     ]},
     {h:"An email and a reply", body:[
-      "Min, a student at a Japanese school, writes to his teacher. The shape is the one from Unit 4: subject, name, who I am, message, closing.",
-      {ex:"[件]{けん}[名]{めい}：[来]{らい}[週]{しゅう}の[授]{じゅ}[業]{ぎょう}について\n\n[山]{やま}[下]{した}[先]{せん}生\n\nこんにちは。[火]{か}[曜]{よう}日のクラスのミン・ジュンです。\n来[週]{しゅう}の火[曜]{よう}日は、[仕]{し}[事]{ごと}で[出]{しゅっ}[張]{ちょう}があるので、[授]{じゅ}[業]{ぎょう}を休みます。すみません。\n[宿]{しゅく}[題]{だい}は月[曜]{よう}日までにメールで[送]{おく}ってもいいですか。\n\nよろしくお[願]{ねが}いします。\nミン・ジュン", label:"Min’s email"},
-      {ex:"[件]{けん}名：Re: 来[週]{しゅう}の[授]{じゅ}[業]{ぎょう}について\n\nミンさん\n\nメールをありがとうございます。わかりました。[宿]{しゅく}[題]{だい}は月[曜]{よう}日までに[送]{おく}ってください。\n[次]{つぎ}の[授]{じゅ}[業]{ぎょう}では[第]{だい}5[課]{か}の[会]{かい}[話]{わ}を[練]{れん}[習]{しゅう}しますから、[読]{よ}んでおいてください。\nお[仕]{し}[事]{ごと}、がんばってください。\n\n山下", label:"The teacher’s reply"},
+      "Aoi writes to her seminar professor, Professor Ōnishi. The shape is the one from Unit 4: subject, name, who I am, message, closing.",
+      {ex:"[件]{けん}[名]{めい}：[来]{らい}[週]{しゅう}のゼミについて\n\n[大]{おお}[西]{にし}[先]{せん}生\n\nこんにちは。[火]{か}[曜]{よう}日のゼミの[平]{ひら}[川]{かわ}です。\n来[週]{しゅう}の火[曜]{よう}日は、インターンの[仕]{し}[事]{ごと}で[出]{しゅっ}[張]{ちょう}があるので、ゼミを休みます。すみません。\nレポートは月[曜]{よう}日までにメールで[送]{おく}ってもいいですか。\n\nよろしくお[願]{ねが}いします。\n[平]{ひら}[川]{かわ}あおい", label:"Aoi’s email"},
+      {ex:"[件]{けん}名：Re: 来[週]{しゅう}のゼミについて\n\n[平]{ひら}[川]{かわ}さん\n\nメールをありがとうございます。わかりました。レポートは月[曜]{よう}日までに[送]{おく}ってください。\n[次]{つぎ}のゼミでは[第]{だい}5[章]{しょう}を[読]{よ}みますから、[読]{よ}んでおいてください。\nお[仕]{し}[事]{ごと}、がんばってください。\n\n[大]{おお}[西]{にし}", label:"The professor’s reply"},
       {table:[["Part","In the emails","What it does"],["Reason","出[張]{ちょう}があるので","〜ので gives a polite reason before the main point"],["Asking permission","[送]{おく}ってもいいですか","〜てもいいですか: may I…?"],["The answer","[送]{おく}ってください","The teacher says yes with a request"],["Getting ready","読んでおいてください","〜ておく: do something in advance ([[te-oku]])"],["Kind words","お[仕]{し}[事]{ごと}、がんばってください","A friendly closing: good luck with your work"]]},
-      "Questions to try: Why will Min miss class? (He has a business trip, 出[張]{ちょう}, for work.) What does he ask? (Whether he may send his homework by email by Monday.) What should he do before the next class? (Read the conversation in Lesson 5, [第]{だい}5[課]{か}.)"
+      "Questions to try: Why will Aoi miss the seminar? (She has a business trip, 出[張]{ちょう}, for her internship.) What does she ask? (Whether she may send her report by email by Monday.) What should she do before the next seminar? (Read Chapter 5, [第]{だい}5[章]{しょう}.)"
     ]},
     {h:"A short story", body:[
       "Stories at N4 are often written in the plain form ([[plain-form]], Unit 5), with past tense for the events. Read it once for the gist: who, where, what happened. Then read again for the details.",
-      {ex:"アナは先月、[新]{あたら}しい[町]{まち}に[引]{ひ}っ[越]{こ}した。[会]{かい}[社]{しゃ}まで電車で[三]{さん}[十]{じゅっ}[分]{ぷん}かかる。\nある日[曜]{よう}日の[朝]{あさ}、アナは[町]{まち}のことを[知]{し}りたいと[思]{おも}って、[地]{ち}[図]{ず}を[持]{も}たないで[散]{さん}[歩]{ぽ}に出かけた。[古]{ふる}い[店]{みせ}や小さい[神]{じん}[社]{じゃ}があって、とても[楽]{たの}しかった。でも、一時間ぐらい[歩]{ある}いて、[帰]{かえ}り[道]{みち}が分からなくなってしまった。\nアナが[困]{こま}っていると、[犬]{いぬ}を[連]{つ}れた[男]{おとこ}の人が「どうしましたか」と[声]{こえ}をかけてくれた。男の人は[駅]{えき}までいっしょに[歩]{ある}いて、[近]{ちか}くのおいしいパン[屋]{や}も[教]{おし}えてくれた。\n[次]{つぎ}の[週]{しゅう}[末]{まつ}、アナはそのパン[屋]{や}に[行]{い}った。[店]{みせ}に入ると、あの男の人がいた。パン[屋]{や}の[主]{しゅ}人だったのだ。", label:"The new town"},
-      {list:["**Gist:** Ana moved to a new town, got lost on a walk, and a man with a dog helped her.","**Why did she go for a walk without a map?** She wanted to get to know the town: [町]{まち}のことを[知]{し}りたいと[思]{おも}って.","**What went wrong?** After about an hour she couldn’t find the way back: 〜てしまった shows it was a problem ([[te-shimau]]).","**The surprise at the end:** the man was the owner of the bakery. 〜のだ explains what she suddenly understood ({{explaining-n-desu}})."]},
+      {ex:"イエンは[四]{し}[月]{がつ}、[新]{あたら}しい[町]{まち}に[引]{ひ}っ[越]{こ}した。[大]{だい}[学]{がく}まで電車で[三]{さん}[十]{じゅっ}[分]{ぷん}かかる。\nある日[曜]{よう}日の[朝]{あさ}、イエンは[町]{まち}のことを[知]{し}りたいと[思]{おも}って、[地]{ち}[図]{ず}を[持]{も}たないで[散]{さん}[歩]{ぽ}に出かけた。[古]{ふる}い[店]{みせ}や小さい[神]{じん}[社]{じゃ}があって、とても[楽]{たの}しかった。でも、一時間ぐらい[歩]{ある}いて、[帰]{かえ}り[道]{みち}が分からなくなってしまった。\nイエンが[困]{こま}っていると、[犬]{いぬ}を[連]{つ}れた[男]{おとこ}の人が「どうしましたか」と[声]{こえ}をかけてくれた。男の人は[駅]{えき}までいっしょに[歩]{ある}いて、[近]{ちか}くのおいしいパン[屋]{や}も[教]{おし}えてくれた。\n[次]{つぎ}の[週]{しゅう}[末]{まつ}、イエンはそのパン[屋]{や}に[行]{い}った。[店]{みせ}に入ると、あの男の人がいた。パン[屋]{や}の[主]{しゅ}人だったのだ。", label:"The new town"},
+      {list:["**Gist:** Yến moved to a new town, got lost on a walk, and a man with a dog helped her.","**Why did she go for a walk without a map?** She wanted to get to know the town: [町]{まち}のことを[知]{し}りたいと[思]{おも}って.","**What went wrong?** After about an hour she couldn’t find the way back: 〜てしまった shows it was a problem ([[te-shimau]]).","**The surprise at the end:** the man was the owner of the bakery. 〜のだ explains what she suddenly understood ({{explaining-n-desu}})."]},
       {tip:"でも in the second paragraph is the turning point of the story. In stories and in JLPT passages, the sentence after でも or しかし is often the one the question is about."}
     ]},
     {h:"Instructions: a medicine label", body:[
@@ -662,9 +662,9 @@ ICA.addUnit({
       {t:"Choose the entry for the dictionary form, with matching kanji and reading: [待]{ま}つ (まつ)", why:"Dictionaries list verbs in the dictionary form (待っていた → 待つ). Check that the spelling matches your text before you trust the meaning."},
       {t:"Choose the meaning that fits the sentence: “I was waiting for my friend at the station”", why:"Read all the meanings and pick the one that makes sense in context."}
     ]},
-    {id:"e3u8-l5-x2", type:"number", q:"At the sports centre pool, Ana (35) comes with her son (10) and her mother (70). Using the notice, how much do they pay in total?", answer:600, tol:0, unit:"yen", why:"Ana pays the adult price, 400 yen. Her son is a primary school student, so 中学生[以]{い}下 applies: 200 yen. Her mother is 65 or over: [無]{む}[料]{りょう}, free. 400 + 200 + 0 = 600 yen.", wrongs:[
-      {v:1000, tol:0, why:"You charged Ana’s mother the adult price. 65[歳]{さい}[以]{い}上 is free."},
-      {v:800, tol:0, why:"Check each person once: Ana 400, her son 200 (中学生[以]{い}下), her mother 0 (65 and over)."}
+    {id:"e3u8-l5-x2", type:"number", q:"At the sports centre pool, Megumi (46) comes with her son Sōta (9) and her mother, Fumiko (75). Using the notice, how much do they pay in total?", answer:600, tol:0, unit:"yen", why:"Megumi pays the adult price, 400 yen. Her son is a primary school student, so 中学生[以]{い}下 applies: 200 yen. Her mother is 65 or over: [無]{む}[料]{りょう}, free. 400 + 200 + 0 = 600 yen.", wrongs:[
+      {v:1000, tol:0, why:"You charged Fumiko the adult price. 65[歳]{さい}[以]{い}上 is free."},
+      {v:800, tol:0, why:"Check each person once: Megumi 400, Sōta 200 (中学生[以]{い}下), Fumiko 0 (65 and over)."}
     ], hint2:"Find the [料]{りょう}金 line, then decide which price applies to each person."},
     {id:"e3u8-l5-x3", type:"mcq", q:"An 8-year-old wants to swim at the pool alone. According to the notice, can she?", options:[
       {t:"No: primary school children and younger must come in with an adult", ok:true, why:"Right. 小学生[以]{い}下のお子さんは、大人といっしょに入ってください. An 8-year-old is a primary school student."},
@@ -672,19 +672,19 @@ ICA.addUnit({
       {t:"Yes, except on Mondays", why:"Mondays are the closing day for everyone. The adult rule is a separate line."},
       {t:"No: children can only swim on the first Sunday of the month", why:"The first Sunday morning is when the pool is closed to the public for a class."}
     ]},
-    {id:"e3u8-l5-x4", type:"mcq", q:"Why does Min write to his teacher?", options:[
-      {t:"To say he will miss next Tuesday’s class for a business trip, and to ask if he may email his homework", ok:true, why:"Right. 〜ので gives the reason (出[張]{ちょう}), and 〜てもいいですか asks permission."},
-      {t:"To ask the teacher to move the class to Monday", why:"月[曜]{よう}日 is the homework deadline he suggests, not a new class day."},
-      {t:"To say he can’t do the homework", why:"He plans to send the homework by email; he isn’t refusing it."},
-      {t:"To ask which lesson to read", why:"The teacher tells him to read Lesson 5 in the reply, but Min didn’t ask about it."}
+    {id:"e3u8-l5-x4", type:"mcq", q:"Why does Aoi write to her professor?", options:[
+      {t:"To say she will miss next Tuesday’s seminar for a business trip, and to ask if she may email her report", ok:true, why:"Right. 〜ので gives the reason (出[張]{ちょう}), and 〜てもいいですか asks permission."},
+      {t:"To ask the professor to move the seminar to Monday", why:"月[曜]{よう}日 is the report deadline she suggests, not a new seminar day."},
+      {t:"To say she can’t write the report", why:"She plans to send the report by email; she isn’t refusing it."},
+      {t:"To ask which chapter to read", why:"The professor tells her to read Chapter 5 in the reply, but Aoi didn’t ask about it."}
     ]},
     {id:"e3u8-l5-x5", type:"mcq", q:"In the story, who was the man with the dog?", options:[
       {t:"The owner of the bakery", ok:true, why:"Right. パン[屋]{や}の[主]{しゅ}人だったのだ: he was the bakery’s owner. 〜のだ explains the surprise."},
-      {t:"A station employee", why:"He walked with Ana to the station, but the text doesn’t say he worked there."},
-      {t:"Ana’s new colleague", why:"The text doesn’t connect him with Ana’s company."},
+      {t:"A station employee", why:"He walked with Yến to the station, but the text doesn’t say he worked there."},
+      {t:"Yến’s new classmate", why:"The text doesn’t connect him with Yến’s university."},
       {t:"A customer at the bakery", why:"He was in the shop, but the last sentence says he was its [主]{しゅ}人, the owner."}
     ]},
-    {id:"e3u8-l5-x6", type:"mcq", q:"Leo is exactly 15. The medicine label says 「15[歳]{さい}[未]{み}[満]{まん}の[方]{かた}は[飲]{の}まないでください。」 May he take it?", options:[
+    {id:"e3u8-l5-x6", type:"mcq", q:"Megumi, a nurse, is asked about a patient who is exactly 15. The medicine label says 「15[歳]{さい}[未]{み}[満]{まん}の[方]{かた}は[飲]{の}まないでください。」 May he take it?", options:[
       {t:"Yes: [未]{み}[満]{まん} means “under”, so 15 itself is not included", ok:true, why:"Right. 15[歳]{さい}[未]{み}[満]{まん} is 14 and younger. With [以]{い}下 it would include 15."},
       {t:"No: [未]{み}[満]{まん} includes 15", why:"That is [以]{い}下 (15 and under). [未]{み}[満]{まん} is “less than”, without the number itself."},
       {t:"No: [未]{み}[満]{まん} means “over”", why:"Over 15 would be [以]{い}上 (15 and over). [未]{み}[満]{まん} is “under”."},
@@ -718,7 +718,7 @@ ICA.addUnit({
        "Write the question you want answered first, then read in two passes: gist, then details.",
        "Write what it says in English, and underline every N4 kanji you recognised."
      ], write:"My question… the gist… the details… N4 kanji I knew…"},
-     {t:"Write an email like Min’s", how:[
+     {t:"Write an email like Aoi’s", how:[
        "Write a short email to a teacher or a colleague (real or imaginary) saying you will miss something, with a reason using 〜ので.",
        "Ask permission for one thing with 〜てもいいですか, and finish with よろしくお[願]{ねが}いします.",
        "Check the shape: subject, name, who you are, message, closing, your name."
@@ -731,8 +731,8 @@ ICA.addUnit({
     ],
     proof:"Five words looked up with notes on each method, one real text read in two passes, a short email with a reason and a request, notes on the official N4 samples, and a written study plan with your first week’s result."},
    read:[
-    {book:"irodori", where:"Elementary 1, Lesson 7 “I will be a bit late because I got lost.”", note:"Getting lost and asking for help, like Ana in the story."},
-    {book:"irodori", where:"Elementary 1, Lesson 14 “May I take a day off?”", note:"Asking permission and giving reasons at work, like Min’s email."}
+    {book:"irodori", where:"Elementary 1, Lesson 7 “I will be a bit late because I got lost.”", note:"Getting lost and asking for help, like Yến in the story."},
+    {book:"irodori", where:"Elementary 1, Lesson 14 “May I take a day off?”", note:"Asking permission and giving reasons at work, like Aoi’s email."}
    ]
   }
   ],
@@ -912,7 +912,7 @@ ICA.addUnit({
      {t:"亻 (person)", why:"亻 is the person part, in kanji such as 体 and 住. The kanji here have 氵."},
      {t:"辶 (moving)", why:"辶 runs along the bottom left, as in 近 and 送. These kanji have 氵 on the left."},
      {t:"宀 (roof)", why:"宀 sits on top, as in 家 and 室. These kanji have 氵 on the left."}]},
-   {id:"e3u8-q02", lesson:"e3u8-l1", level:2, q:"Kai meets a new kanji with 辶 along its bottom left. What is the best first guess about it?", options:[
+   {id:"e3u8-q02", lesson:"e3u8-l1", level:2, q:"Rodrigo meets a new kanji with 辶 along its bottom left. What is the best first guess about it?", options:[
      {t:"It is probably about moving, roads or distance", ok:true, why:"Right. 辶 (しんにょう) is in 近, 通, 道, 送 and 運. It is a hint to check, not a rule."},
      {t:"It is about water", why:"Water is 氵 on the left, as in 海."},
      {t:"It is always read シン", why:"しんにょう is the name of the part, not a reading. The sound usually comes from the other part."},
@@ -927,10 +927,10 @@ ICA.addUnit({
      {t:"休", why:"休 is the N5 kanji for rest: 亻 with 木. It looks like 体 but has one line fewer."},
      {t:"本", why:"本 is book or origin. It is the right side of 体, but not the whole kanji."},
      {t:"作", why:"作 (つくる) means make."}]},
-   {id:"e3u8-q05", lesson:"e3u8-l1", level:2, q:"In a polite self-introduction, Mei mentions her own older sister. Which word does she use?", options:[
-     {t:"[姉]{あね}", ok:true, why:"Right. About your own family to other people, you use the plain word: 姉."},
-     {t:"お[姉]{ねえ}さん", why:"お[姉]{ねえ}さん is for someone else’s older sister (and family members also use it to call her). In a self-introduction, Mei says 姉."},
-     {t:"[妹]{いもうと}", why:"妹 is a younger sister."},
+   {id:"e3u8-q05", lesson:"e3u8-l1", level:2, q:"In a polite self-introduction, Megumi mentions her own older brother. Which word does she use?", options:[
+     {t:"[兄]{あに}", ok:true, why:"Right. About your own family to other people, you use the plain word: 兄."},
+     {t:"お[姉]{ねえ}さん", why:"お[姉]{ねえ}さん is for someone else’s older sister (and family members also use it to call her). In a self-introduction, Megumi says 兄."},
+     {t:"[弟]{おとうと}", why:"弟 is a younger brother."},
      {t:"[兄]{あに}", why:"兄 is an older brother."}]},
    {id:"e3u8-q06", lesson:"e3u8-l1", level:1, q:"How is 医者 (doctor) read?", options:[
      {t:"いしゃ", ok:true, why:"Right. 医 (イ, medicine) + 者 (シャ, person)."},
@@ -942,7 +942,7 @@ ICA.addUnit({
      {t:"At a hair salon", why:"A hair salon is びよういん, with a full-size よ (five morae). The colleague said びょういん, and a nurse works at a hospital."},
      {t:"At a library", why:"A library is [図]{と}[書]{しょ}[館]{かん}."},
      {t:"At a bookshop", why:"A bookshop is [本]{ほん}[屋]{や}."}]},
-   {id:"e3u8-q08", lesson:"e3u8-l1", level:2, q:"Leo looks for 問 (question) in a radical index under 門 (gate) and can’t find it. Why?", options:[
+   {id:"e3u8-q08", lesson:"e3u8-l1", level:2, q:"Cheska looks for 問 (question) in a radical index under 門 (gate) and can’t find it. Why?", options:[
      {t:"Most dictionaries file 問 under 口 (mouth)", ok:true, why:"Right. The obvious part is not always the radical. KANJIDIC lists 問 under 口."},
      {t:"問 has no radical", why:"Every kanji is filed under one radical. For 問 it is 口."},
      {t:"問 is filed under 耳 (ear)", why:"That is 聞 (hear), another kanji in the 門 family."},
@@ -962,7 +962,7 @@ ICA.addUnit({
      {t:"[冬]{ふゆ}休み", why:"[冬]{ふゆ}休み is the winter holidays."},
      {t:"[昼]{ひる}休み", why:"[昼]{ひる}休み is the lunch break."},
      {t:"[春]{はる}休み", why:"[春]{はる}休み is the spring break."}]},
-   {id:"e3u8-q12", lesson:"e3u8-l2", level:2, q:"Ana wants to borrow a book for free. Which place should she look for?", options:[
+   {id:"e3u8-q12", lesson:"e3u8-l2", level:2, q:"Yến wants to borrow a book for free. Which place should she look for?", options:[
      {t:"[図]{と}[書]{しょ}[館]{かん}", ok:true, why:"Right. A library: 〜館 is a large public building."},
      {t:"[本]{ほん}[屋]{や}", why:"A bookshop sells books; 〜屋 is a shop."},
      {t:"[映]{えい}[画]{が}[館]{かん}", why:"A cinema shows films."},
@@ -977,9 +977,9 @@ ICA.addUnit({
      {t:"They are two spellings of the same word", why:"Kanji order matters: these are two different, very common words."},
      {t:"[会]{かい}[社]{しゃ} means society and [社]{しゃ}[会]{かい} means company", why:"The other way round: [会]{かい}[社]{しゃ} is a company, [社]{しゃ}[会]{かい} is society."},
      {t:"Only [会]{かい}[社]{しゃ} is a real word", why:"[社]{しゃ}[会]{かい} (society) is a very common word too."}]},
-   {id:"e3u8-q15", lesson:"e3u8-l2", level:3, q:"Min writes: 「[夜]{よる}は[雨]{あめ}が[降]{ふ}るそうなので、[夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう。」 What is he suggesting?", options:[
-     {t:"Going home by early evening, because rain is expected at night", ok:true, why:"Right. 〜そう after a plain verb reports what he heard, ので gives the reason, and [夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう is the suggestion."},
-     {t:"Going home at night, after the rain", why:"He suggests [夕]{ゆう}[方]{がた}, early evening, before the rain at night."},
+   {id:"e3u8-q15", lesson:"e3u8-l2", level:3, q:"Yến writes: 「[夜]{よる}は[雨]{あめ}が[降]{ふ}るそうなので、[夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう。」 What is she suggesting?", options:[
+     {t:"Going home by early evening, because rain is expected at night", ok:true, why:"Right. 〜そう after a plain verb reports what she heard, ので gives the reason, and [夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう is the suggestion."},
+     {t:"Going home at night, after the rain", why:"She suggests [夕]{ゆう}[方]{がた}, early evening, before the rain at night."},
      {t:"Staying in because it is raining now", why:"The rain is expected at night (夜); it isn’t raining now."},
      {t:"Meeting in the evening", why:"[帰]{かえ}りましょう is “let’s go home”, not “let’s meet”."}]},
    {id:"e3u8-q16", lesson:"e3u8-l2", level:2, q:"Which reading of 夜 is used in 今夜 (tonight)?", options:[
@@ -992,7 +992,7 @@ ICA.addUnit({
      {t:"A blue stop light", why:"There is no blue stop light; red (赤) means stop."},
      {t:"A blue road sign", why:"[信]{しん}[号]{ごう} is a traffic light, not a sign."},
      {t:"A warning for young drivers", why:"青 can mean young or inexperienced in some words, but [青]{あお}[信]{しん}[号]{ごう} is the go light."}]},
-   {id:"e3u8-q18", lesson:"e3u8-l2", level:2, q:"Sara reads a sign in a station: 「[地]{ち}[下]{か}[鉄]{てつ}→」. Where does the arrow lead?", options:[
+   {id:"e3u8-q18", lesson:"e3u8-l2", level:2, q:"Cheska reads a sign in a station: 「[地]{ち}[下]{か}[鉄]{てつ}→」. Where does the arrow lead?", options:[
      {t:"To the underground (subway) trains", ok:true, why:"Right. [地]{ち}下 is underground and 鉄 is iron: [地]{ち}下[鉄]{てつ} is the subway or metro."},
      {t:"To the exit", why:"An exit is [出]{で}[口]{ぐち}."},
      {t:"To the ticket office", why:"The sign names a railway, not an office."},
@@ -1007,7 +1007,7 @@ ICA.addUnit({
      {t:"[授]{じゅ}[業]{ぎょう}を九時に[始]{はじ}まります。", why:"を needs a transitive verb. With [始]{はじ}まる, the class takes が."},
      {t:"[授]{じゅ}[業]{ぎょう}が九時に[始]{はじ}めます。", why:"[始]{はじ}める needs someone who starts something (with を): [先]{せん}[生]{せい}が[授]{じゅ}[業]{ぎょう}を[始]{はじ}めます."},
      {t:"[授]{じゅ}[業]{ぎょう}で九時に[始]{はじ}まります。", why:"で marks a place or means; it can’t mark the thing that begins."}]},
-   {id:"e3u8-q21", lesson:"e3u8-l3", level:2, q:"Ken says: 「[毎]{まい}[朝]{あさ}、[会]{かい}[社]{しゃ}まで[自]{じ}[転]{てん}[車]{しゃ}で＿＿います。」 (I go to work by bicycle every morning.) Which verb fits?", options:[
+   {id:"e3u8-q21", lesson:"e3u8-l3", level:2, q:"Kaito says: 「[毎]{まい}[朝]{あさ}、[大]{だい}[学]{がく}まで[自]{じ}[転]{てん}[車]{しゃ}で＿＿います。」 (I go to university by bicycle every morning.) Which verb fits?", options:[
      {t:"[通]{かよ}って", ok:true, why:"Right. [通]{かよ}う is to go somewhere regularly, such as work or school."},
      {t:"[通]{とお}って", why:"[通]{とお}る is to pass through or by a place: [公]{こう}[園]{えん}を[通]{とお}る. It doesn’t mean going to work regularly."},
      {t:"[送]{おく}って", why:"[送]{おく}る is to send, or to see someone off."},
@@ -1022,26 +1022,26 @@ ICA.addUnit({
      {t:"[勉]{べん}[強]{きょう}", why:"[勉]{べん}[強]{きょう}する (study) is a very common する verb."},
      {t:"[旅]{りょ}[行]{こう}", why:"[旅]{りょ}行する is to travel."},
      {t:"[質]{しつ}[問]{もん}", why:"[質]{しつ}[問]{もん}する is to ask a question."}]},
-   {id:"e3u8-q24", lesson:"e3u8-l3", level:3, q:"Lina asks a colleague: 「この[資]{し}[料]{りょう}のこと、[知]{し}っていますか。」 He has never heard of the document. What is the most natural reply?", options:[
+   {id:"e3u8-q24", lesson:"e3u8-l3", level:3, q:"Aoi asks Cheska: 「この[資]{し}[料]{りょう}のこと、[知]{し}っていますか。」 She has never heard of the document. What is the most natural reply?", options:[
      {t:"いいえ、[知]{し}りません。", ok:true, why:"Right. “I know” is [知]{し}っています, but “I don’t know” is normally [知]{し}りません."},
      {t:"いいえ、[知]{し}っていません。", why:"A common learner mistake: the negative of [知]{し}っています is normally [知]{し}りません."},
      {t:"いいえ、[知]{し}りませんでした。", why:"[知]{し}りませんでした means “I didn’t know (until now)”, for something you have just learned."},
-     {t:"はい、[知]{し}りません。", why:"He is saying no, he doesn’t know it, so he starts with いいえ."}]},
+     {t:"はい、[知]{し}りません。", why:"She is saying no, she doesn’t know it, so she starts with いいえ."}]},
    {id:"e3u8-q25", lesson:"e3u8-l3", level:1, q:"The kanji 着 writes two common verbs. Which two?", options:[
      {t:"[着]{き}る (wear) and [着]{つ}く (arrive)", ok:true, why:"Right. The okurigana and the particles tell you which: [服]{ふく}を[着]{き}る, [駅]{えき}に[着]{つ}く."},
      {t:"[着]{き}る (wear) and [切]{き}る (cut)", why:"[切]{き}る is a different kanji with the same sound."},
      {t:"[着]{つ}く (arrive) and [付]{つ}く (stick to)", why:"[付]{つ}く is a different kanji with the same sound."},
      {t:"[着]{き}る (wear) and [聞]{き}く (hear)", why:"聞く is a different kanji that happens to start with き."}]},
-   {id:"e3u8-q26", lesson:"e3u8-l3", level:2, q:"Ana is an English teacher. Choose the verb: 「アナさんは[学]{がく}[生]{せい}に[英]{えい}[語]{ご}を＿＿。」", options:[
-     {t:"[教]{おし}えています", ok:true, why:"Right. [教]{おし}える is the teacher’s verb: Ana teaches English to students."},
-     {t:"[習]{なら}っています", why:"[習]{なら}う is the learner’s verb. This would mean Ana learns English from students."},
+   {id:"e3u8-q26", lesson:"e3u8-l3", level:2, q:"Toby teaches English on Thursday nights. Choose the verb: 「トビーさんはまりやさんに[英]{えい}[語]{ご}を＿＿。」", options:[
+     {t:"[教]{おし}えています", ok:true, why:"Right. [教]{おし}える is the teacher’s verb: Toby teaches English to Mariya."},
+     {t:"[習]{なら}っています", why:"[習]{なら}う is the learner’s verb. This would mean Toby learns English from Mariya."},
      {t:"[教]{おそ}わっています", why:"[教]{おそ}わる is also the learner’s verb: to be taught."},
      {t:"[借]{か}りています", why:"[借]{か}りる is to borrow."}]},
-   {id:"e3u8-q27", lesson:"e3u8-l3", level:3, q:"Kenji’s text says: 「[火]{か}[曜]{よう}[日]{び}と[木]{もく}[曜]{よう}日は、[家]{いえ}に[帰]{かえ}る[前]{まえ}に[英]{えい}[会]{かい}[話]{わ}の[教]{きょう}[室]{しつ}に[通]{かよ}っています。」 What does he do on Tuesdays?", options:[
-     {t:"He goes to an English conversation class before going home", ok:true, why:"Right. [帰]{かえ}る前に is “before going home”, and 〜に[通]{かよ}っています is going somewhere regularly."},
-     {t:"He teaches English at home", why:"[教]{きょう}[室]{しつ} here is a class he goes to ([通]{かよ}っています), not one he gives at home."},
-     {t:"He goes home early and studies English", why:"He goes to the class before he goes home."},
-     {t:"He goes to an English class in the morning", why:"The text says [帰]{かえ}る前に: after work, before going home."}]},
+   {id:"e3u8-q27", lesson:"e3u8-l3", level:3, q:"Aoi’s text says: 「[火]{か}[曜]{よう}[日]{び}と[木]{もく}[曜]{よう}日は、[家]{いえ}に[帰]{かえ}る[前]{まえ}に[英]{えい}[会]{かい}[話]{わ}の[教]{きょう}[室]{しつ}に[通]{かよ}っています。」 What does she do on Tuesdays?", options:[
+     {t:"She goes to an English conversation class before going home", ok:true, why:"Right. [帰]{かえ}る前に is “before going home”, and 〜に[通]{かよ}っています is going somewhere regularly."},
+     {t:"He teaches English at home", why:"[教]{きょう}[室]{しつ} here is a class she goes to ([通]{かよ}っています), not one she gives at home."},
+     {t:"She goes home early and studies English", why:"She goes to the class before she goes home."},
+     {t:"She goes to an English class in the morning", why:"The text says [帰]{かえ}る前に: after work, before going home."}]},
    {id:"e3u8-q28", lesson:"e3u8-l4", level:1, q:"What does [以]{い}[外]{がい} mean?", options:[
      {t:"Except, apart from", ok:true, why:"Right: [日]{にち}[曜]{よう}日[以]{い}外 is every day except Sunday."},
      {t:"Unexpected", why:"That is [意]{い}外, which sounds the same but has 意 (mind)."},
@@ -1092,7 +1092,7 @@ ICA.addUnit({
      {t:"[起]{お}きられ", why:"That is not a form a dictionary lists. Go back to the dictionary form."},
      {t:"[起]{お}こす", why:"[起]{お}こす (wake someone up) is the other verb of the pair, not the one in the text."},
      {t:"[起]{お}きない", why:"[起]{お}きない is the negative form. The dictionary lists [起]{お}きる."}]},
-   {id:"e3u8-q38", lesson:"e3u8-l5", level:2, q:"Kai sees a kanji he can’t read on a paper poster. What is the best way to look it up?", options:[
+   {id:"e3u8-q38", lesson:"e3u8-l5", level:2, q:"Rodrigo sees a kanji he can’t read on a paper poster. What is the best way to look it up?", options:[
      {t:"Draw it in a handwriting box, or choose its parts in a parts search", ok:true, why:"Right. When you can see a kanji but can’t read it, search by its shape."},
      {t:"Type its reading", why:"He doesn’t know the reading, so he can’t type it."},
      {t:"Copy and paste it", why:"The text is on paper, not on a screen."},
@@ -1107,7 +1107,7 @@ ICA.addUnit({
      {t:"80 out of 180", why:"80 is the N5 pass mark."},
      {t:"95 out of 180", why:"95 is the N3 pass mark."},
      {t:"100 out of 180", why:"The N4 pass mark is 90."}]},
-   {id:"e3u8-q41", lesson:"e3u8-l5", level:3, q:"Sam takes the N4: 85 in Language Knowledge (Vocabulary/Grammar) · Reading and 15 in Listening, 100 in total. Does Sam pass?", options:[
+   {id:"e3u8-q41", lesson:"e3u8-l5", level:3, q:"Rodrigo takes the N4: 85 in Language Knowledge (Vocabulary/Grammar) · Reading and 15 in Listening, 100 in total. Does Rodrigo pass?", options:[
      {t:"No: 15 is below the Listening minimum of 19", ok:true, why:"Right. You need 90 overall and at least 38 and 19 in the two scoring sections. One section below its minimum means a fail."},
      {t:"Yes: 100 is above the pass mark of 90", why:"The total is enough, but every section must also reach its minimum."},
      {t:"Yes: 85 is above the minimum of 38", why:"That section passes, but Listening (15) is below 19."},

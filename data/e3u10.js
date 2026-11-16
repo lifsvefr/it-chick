@@ -33,7 +33,7 @@ ICA.addUnit({
    title: "Even if, even, and not only: ～ても, ～としても, ～さえ and ～だけでなく",
    minutes: 60,
    hook: {
-    q: "Kenji yawns and says: 「いくら[寝]{ね}ても、[眠]{ねむ}いんです。」 ([寝]{ね}る = sleep; [眠]{ねむ}い = sleepy) What is his problem?",
+    q: "Kaito yawns and says: 「いくら[寝]{ね}ても、[眠]{ねむ}いんです。」 ([寝]{ね}る = sleep; [眠]{ねむ}い = sleepy) What is his problem?",
     options: [
      "However much he sleeps, he is still sleepy",
      "He can’t get to sleep, however hard he tries",
@@ -344,7 +344,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex: "ミンさんは英語だけでなく、中国語も話せます。\nMin speaks not only English but also Chinese.\n\nこの店は安いだけでなく、味もいいです。\nThis restaurant isn’t just cheap; the food is good too.\n\nこの町は[静]{しず}かなだけでなく、[交通]{こうつう}も[便利]{べんり}です。\nThis town is not only quiet, it also has good transport.\n\n見るだけでなく、[実際]{じっさい}に作ってみましょう。\nLet’s not just watch; let’s actually make one.",
+       ex: "イエンさんは英語だけでなく、日本語も話せます。\nYến speaks not only English but also Japanese.\n\nこの店は安いだけでなく、味もいいです。\nThis restaurant isn’t just cheap; the food is good too.\n\nこの町は[静]{しず}かなだけでなく、[交通]{こうつう}も[便利]{べんり}です。\nThis town is not only quiet, it also has good transport.\n\n見るだけでなく、[実際]{じっさい}に作ってみましょう。\nLet’s not just watch; let’s actually make one.",
        label: "～だけでなく～も"
       },
       "In conversation you will hear **だけじゃなくて**; in writing, **だけではなく**. ～ばかりでなく means the same and is a little more formal.",
@@ -541,7 +541,7 @@ ICA.addUnit({
     {
      id: "e3u10-l1-x5",
      type: "mcq",
-     q: "Sara writes: 「[昨日]{きのう}は[忙]{いそが}しくて、水を飲む時間さえなかった。」 What does she mean?",
+     q: "Cheska writes: 「[昨日]{きのう}は[忙]{いそが}しくて、水を飲む時間さえなかった。」 What does she mean?",
      options: [
       {
        t: "She was so busy she didn’t even have time to drink water.",
@@ -589,7 +589,7 @@ ICA.addUnit({
     {
      id: "e3u10-l1-x7",
      type: "spot",
-     q: "Ana describes her new town. Tap each form that is **wrong**.",
+     q: "Dewi describes her new town. Tap each form that is **wrong**.",
      ask: "is wrong",
      parts: [
       "この町は",
@@ -1115,7 +1115,7 @@ ICA.addUnit({
     {
      id: "e3u10-l2-x6",
      type: "spot",
-     q: "Min writes about a weekend visit. Tap each phrase that is **wrong**.",
+     q: "Dewi writes about a weekend visit. Tap each phrase that is **wrong**.",
      ask: "is wrong",
      parts: [
       "[週末]{しゅうまつ}、[祖母]{そぼ}の家に行きました。[祖母]{そぼ}は、会う",
@@ -1154,7 +1154,7 @@ ICA.addUnit({
     {
      id: "e3u10-l2-x7",
      type: "mcq",
-     q: "Kenji wants to say: “I want to see a lot of Japan while I’m a student.” Which is correct?",
+     q: "Toby wants to say: “I want to see a lot of Japan while I’m a student.” Which is correct?",
      options: [
       {
        t: "学生のうちに、日本のいろいろな[所]{ところ}を見たいです。",
@@ -1253,7 +1253,7 @@ ICA.addUnit({
    title: "Instead of, compared with, and how much: ～かわりに, ～にくらべて, ～ほど and ～くらい",
    minutes: 60,
    hook: {
-    q: "Lucía says: 「[今年]{ことし}の夏は、去年ほど[暑]{あつ}くないですね。」 Which summer was hotter?",
+    q: "Mariya says: 「[今年]{ことし}の夏は、去年ほど[暑]{あつ}くないですね。」 Which summer was hotter?",
     options: [
      "Last year’s",
      "This year’s",
@@ -1414,7 +1414,7 @@ ICA.addUnit({
       {
        h: "All four in a review"
       },
-      "Reviews and comparisons of products are a natural home for this lesson’s patterns. Here Dmitri writes about his new phone:",
+      "Reviews and comparisons of products are a natural home for this lesson’s patterns. Here Toby writes about his new phone:",
       {
        ex: "新しいスマホは、前の[機種]{きしゅ}に[比]{くら}べてずいぶん[軽]{かる}くなりました。[画面]{がめん}は前ほど大きくありませんが、その代わり、[片手]{かたて}で使いやすいです。[電池]{でんち}は前と同じくらいもちます。カメラは、[友達]{ともだち}に[自慢]{じまん}したいくらいきれいに[撮]{と}れます。\nMy new phone is much lighter than the previous model. The screen isn’t as big as before, but to make up for it, it’s easy to use with one hand. The battery lasts about as long as before. The camera takes pictures so good I want to show them off to my friends.",
        label: "A short review"
@@ -1704,7 +1704,7 @@ ICA.addUnit({
     {
      id: "e3u10-l3-x8",
      type: "spot",
-     q: "Hana reviews her new camera. Tap each phrase that is **wrong**.",
+     q: "Cheska reviews her new camera. Tap each phrase that is **wrong**.",
      ask: "is wrong",
      parts: [
       "新しいカメラは、前のカメラ",
@@ -1790,7 +1790,7 @@ ICA.addUnit({
    title: "Not exactly, no need, that’s how it is, and what was it again?: ～わけではない, ～ことはない, ～ものだ and ～っけ",
    minutes: 60,
    hook: {
-    q: "Min’s friend offers her some nattō (fermented soybeans). Min says: 「[嫌]{きら}いなわけではないんですが…」 What does she mean?",
+    q: "Cheska’s friend offers her some nattō (fermented soybeans). Cheska says: 「[嫌]{きら}いなわけではないんですが…」 What does she mean?",
     options: [
      "It’s not that she dislikes it, but she’d rather not have it now",
      "She really hates nattō",
@@ -2006,7 +2006,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex: "[会議]{かいぎ}は何時からだっけ？\nWhat time does the meeting start again?\n\nあの人の名前、何だっけ。\nWhat was that person’s name? (to yourself)\n\nもう[払]{はら}ったっけ？\nDid I already pay?\n\n[明日]{あした}は休みでしたっけ？\nTomorrow is a day off, isn’t it? (just checking)\n\n田中さんも[来]{く}るんでしたっけ？\nIs Tanaka coming too? (I think I heard that)",
+       ex: "[会議]{かいぎ}は何時からだっけ？\nWhat time does the meeting start again?\n\nあの人の名前、何だっけ。\nWhat was that person’s name? (to yourself)\n\nもう[払]{はら}ったっけ？\nDid I already pay?\n\n[明日]{あした}は休みでしたっけ？\nTomorrow is a day off, isn’t it? (just checking)\n\nあおいさんも[来]{く}るんでしたっけ？\nIs Aoi coming too? (I think I heard that)",
        label: "～っけ"
       },
       "Notice that verbs about now or the future usually take **んだっけ / んでしたっけ**, from ～んです ([[n-desu]], Unit 5). For the polite form of an い-adjective, add ん too: 高かったんでしたっけ. Polite ～でしたっけ and ～ましたっけ are fine with teachers and colleagues in conversation.",
@@ -2017,15 +2017,15 @@ ICA.addUnit({
       {
        h: "All four in one conversation"
       },
-      "These patterns often turn up together in friendly talk. Min and Sara are colleagues:",
+      "These patterns often turn up together in friendly talk. Cheska and Aoi are in the same seminar:",
       {
-       ex: "ミン：来週の[発表]{はっぴょう}、何曜日だっけ？\nサラ：水曜日だよ。\nミン：[準備]{じゅんび}が[全然]{ぜんぜん}終わらなくて…。日本語で話すのが[嫌]{いや}なわけじゃないんだけど、すごく[緊張]{きんちょう}する。\nサラ：そんなに[心配]{しんぱい}することはないよ。[最初]{さいしょ}はだれでも[緊張]{きんちょう}するものだよ。私も一年目は、[発表]{はっぴょう}の前の日によく[眠]{ねむ}れなくなったものだよ。\nミン：そうなんだ。ちょっと安心した。\n\nMin: What day is next week’s presentation again?\nSara: Wednesday.\nMin: I’m nowhere near ready… It’s not that I don’t like speaking in Japanese, but I get really nervous.\nSara: There’s no need to worry that much. Everyone gets nervous at first. In my first year, I often couldn’t sleep the night before a presentation.\nMin: Really? That makes me feel a bit better.",
+       ex: "チェスカ：来週の[発表]{はっぴょう}、何曜日だっけ？\nあおい：水曜日だよ。\nチェスカ：[準備]{じゅんび}が[全然]{ぜんぜん}終わらなくて…。日本語で話すのが[嫌]{いや}なわけじゃないんだけど、すごく[緊張]{きんちょう}する。\nあおい：そんなに[心配]{しんぱい}することはないよ。[最初]{さいしょ}はだれでも[緊張]{きんちょう}するものだよ。私も一年目は、[発表]{はっぴょう}の前の日によく[眠]{ねむ}れなくなったものだよ。\nチェスカ：そうなんだ。ちょっと安心した。\n\nCheska: What day is next week’s presentation again?\nAoi: Wednesday.\nCheska: I’m nowhere near ready… It’s not that I don’t like speaking in Japanese, but I get really nervous.\nAoi: There’s no need to worry that much. Everyone gets nervous at first. In my first year, I often couldn’t sleep the night before a presentation.\nCheska: Really? That makes me feel a bit better.",
        label: "Two colleagues"
       },
       {
        list: [
-        "**何曜日だっけ**: Min was told the day and has half forgotten it.",
-        "**[嫌]{いや}なわけじゃない**: she denies the conclusion Sara might draw, that she dislikes speaking Japanese.",
+        "**何曜日だっけ**: Cheska was told the day and has half forgotten it.",
+        "**[嫌]{いや}なわけじゃない**: she denies the conclusion Aoi might draw, that she dislikes speaking Japanese.",
         "**[心配]{しんぱい}することはない**: reassurance, made warmer by そんなに.",
         "**[緊張]{きんちょう}するものだ**: a general truth about people, offered as comfort.",
         "**[眠]{ねむ}れなくなったものだ**: a past habit remembered, with よく."
@@ -2079,7 +2079,7 @@ ICA.addUnit({
     {
      id: "e3u10-l4-x1",
      type: "mcq",
-     q: "After a lecture in Japanese, Tomás says: 「[全部]{ぜんぶ}わかったわけではありません。」 What does he mean?",
+     q: "After a lecture in Japanese, Rodrigo says: 「[全部]{ぜんぶ}わかったわけではありません。」 What does he mean?",
      options: [
       {
        t: "He understood some of it, but not all.",
@@ -2201,7 +2201,7 @@ ICA.addUnit({
     {
      id: "e3u10-l4-x5",
      type: "mcq",
-     q: "Ana is asked if she can eat raw fish. She can, but she doesn’t enjoy it. Which answer fits best?",
+     q: "Rodrigo is asked if he can eat raw fish. He can, but he doesn’t enjoy it. Which answer fits best?",
      options: [
       {
        t: "食べられないことはないですけど、あまり[好]{す}きじゃないです。",
@@ -2591,15 +2591,15 @@ ICA.addUnit({
     {
      h: "On the phone",
      body: [
-      "A caller from another company phones Hinata Trading (an invented company). The receptionist’s colleague, Tanaka, is away from his desk.",
+      "Aoi phones Shioura City Office from the university about the alert page. The person she wants, Mr. Matsumoto of the disaster-prevention section, is away from his desk.",
       {
-       ex: "[受付]{うけつけ}：はい、ひなた[商事]{しょうじ}でございます。\nリー：こもれび[物産]{ぶっさん}のリーと[申]{もう}します。いつもお世話になっております。[営業部]{えいぎょうぶ}の[田中様]{たなかさま}はいらっしゃいますか。\n[受付]{うけつけ}：リー[様]{さま}ですね。いつもお世話になっております。[申]{もう}し[訳]{わけ}ございません。田中はただいま[席]{せき}を外しております。[戻]{もど}りましたら、こちらからお電話いたしましょうか。\nリー：はい、お[願]{ねが}いいたします。\n[受付]{うけつけ}：[念]{ねん}のため、お[電話番号]{でんわばんごう}を[伺]{うかが}ってもよろしいでしょうか。\nリー：はい。（[番号]{ばんごう}を言う）\n[受付]{うけつけ}：[承知]{しょうち}いたしました。田中に[申]{もう}し[伝]{つた}えます。[失礼]{しつれい}いたします。",
+       ex: "[受付]{うけつけ}：はい、[汐浦市役所]{しおうらしやくしょ}[防災課]{ぼうさいか}でございます。\n[平川]{ひらかわ}：[汐浦大学]{しおうらだいがく}の[平川]{ひらかわ}と[申]{もう}します。いつもお世話になっております。[松本様]{まつもとさま}はいらっしゃいますか。\n[受付]{うけつけ}：[平川様]{ひらかわさま}ですね。いつもお世話になっております。[申]{もう}し[訳]{わけ}ございません。[松本]{まつもと}はただいま[席]{せき}を外しております。[戻]{もど}りましたら、こちらからお電話いたしましょうか。\n[平川]{ひらかわ}：はい、お[願]{ねが}いいたします。\n[受付]{うけつけ}：[念]{ねん}のため、お[電話番号]{でんわばんごう}を[伺]{うかが}ってもよろしいでしょうか。\n[平川]{ひらかわ}：はい。（[番号]{ばんごう}を言う）\n[受付]{うけつけ}：[承知]{しょうち}いたしました。[松本]{まつもと}に[申]{もう}し[伝]{つた}えます。[失礼]{しつれい}いたします。",
        label: "A business phone call"
       },
       {
        list: [
         "**いつもお世話になっております**: the standard greeting between business contacts, roughly “thank you for your continued support”. Both sides say it.",
-        "**[田中様]{たなかさま} and 田中**: the caller raises Tanaka with [様]{さま}; the receptionist, speaking to an outsider about her own colleague, uses no さん and the humble おります. This is [[uchi-soto|ウチ・ソト]].",
+        "**[松本様]{まつもとさま} and [松本]{まつもと}**: the caller raises Matsumoto with [様]{さま}; the receptionist, speaking to an outsider about her own colleague, uses no さん and the humble おります. This is [[uchi-soto|ウチ・ソト]].",
         "**お電話いたしましょうか**: お + noun + いたす, humble: “shall I (we) call you?”.",
         "**[伺]{うかが}ってもよろしいでしょうか**: humble “ask” + a very polite “may I?”.",
         "**[申]{もう}し[伝]{つた}えます**: humble “I’ll pass the message on”, about her own colleague."
@@ -2648,8 +2648,8 @@ ICA.addUnit({
          "いただく is humble: it is for your own eating."
         ],
         [
-         "(to a visitor) [部長]{ぶちょう}の田中さんがいらっしゃいます。",
-         "[部長]{ぶちょう}の田中が[参]{まい}ります。",
+         "(to a visitor) [課長]{かちょう}の[松本]{まつもと}さんがいらっしゃいます。",
+         "[課長]{かちょう}の[松本]{まつもと}が[参]{まい}ります。",
          "To outsiders, your colleagues are your side."
         ],
         [
@@ -2694,7 +2694,7 @@ ICA.addUnit({
     {
      id: "e3u10-l5-x1",
      type: "mcq",
-     q: "Mei says about her brother: 「兄は[忘]{わす}れっぽいんです。」 What does she mean?",
+     q: "Megumi says about her older brother: 「兄は[忘]{わす}れっぽいんです。」 What does she mean?",
      options: [
       {
        t: "Her brother is forgetful by nature.",
@@ -2750,23 +2750,23 @@ ICA.addUnit({
     {
      id: "e3u10-l5-x3",
      type: "mcq",
-     q: "Kenji often leaves his umbrella on the train. Which sentence says this correctly?",
+     q: "Toby often leaves his umbrella on the train. Which sentence says this correctly?",
      options: [
       {
-       t: "ケンジさんは[傘]{かさ}を[忘]{わす}れがちです。",
+       t: "トビーさんは[傘]{かさ}を[忘]{わす}れがちです。",
        ok: true,
        why: "Right. Verb stem + がち keeps the object: he tends to forget his umbrella."
       },
       {
-       t: "ケンジさんは[傘]{かさ}を[忘]{わす}れっぽいです。",
-       why: "[忘]{わす}れっぽい is an adjective about the person, so it can’t take [傘]{かさ}を. ケンジさんは[忘]{わす}れっぽいです alone would be fine."
+       t: "トビーさんは[傘]{かさ}を[忘]{わす}れっぽいです。",
+       why: "[忘]{わす}れっぽい is an adjective about the person, so it can’t take [傘]{かさ}を. トビーさんは[忘]{わす}れっぽいです alone would be fine."
       },
       {
-       t: "ケンジさんは[傘]{かさ}を[忘]{わす}れ[気味]{ぎみ}です。",
+       t: "トビーさんは[傘]{かさ}を[忘]{わす}れ[気味]{ぎみ}です。",
        why: "[気味]{ぎみ} means a slight condition right now, not something that keeps happening."
       },
       {
-       t: "ケンジさんは[傘]{かさ}を[忘]{わす}れらしいです。",
+       t: "トビーさんは[傘]{かさ}を[忘]{わす}れらしいです。",
        why: "らしい follows a plain form ([忘]{わす}れたらしい), and it means “apparently”, not “tends to”."
       }
      ]
@@ -2828,15 +2828,15 @@ ICA.addUnit({
      q: "Put the receptionist’s side of a business phone call in order.",
      items: [
       {
-       t: "はい、ひなた[商事]{しょうじ}でございます。",
+       t: "はい、[汐浦市役所]{しおうらしやくしょ}[防災課]{ぼうさいか}でございます。",
        why: "She answers with the company name and でございます."
       },
       {
        t: "いつもお世話になっております。",
-       why: "Once the caller gives his name, she returns the standard business greeting."
+       why: "Once the caller gives her name, she returns the standard business greeting."
       },
       {
-       t: "[申]{もう}し[訳]{わけ}ございません。田中はただいま[席]{せき}を外しております。",
+       t: "[申]{もう}し[訳]{わけ}ございません。[松本]{まつもと}はただいま[席]{せき}を外しております。",
        why: "She apologises and explains that her colleague is away, without さん."
       },
       {
@@ -2844,7 +2844,7 @@ ICA.addUnit({
        why: "She offers a call back, then asks for the number."
       },
       {
-       t: "[承知]{しょうち}いたしました。田中に[申]{もう}し[伝]{つた}えます。",
+       t: "[承知]{しょうち}いたしました。[松本]{まつもと}に[申]{もう}し[伝]{つた}えます。",
        why: "She confirms and promises to pass on the message before saying goodbye."
       }
      ]
@@ -2885,11 +2885,11 @@ ICA.addUnit({
        flag: false,
        why: "Correct: お[越]{こ}しいただき、ありがとうございます is the standard thanks for coming."
       },
-      "、ありがとうございます。[部長]{ぶちょう}の",
+      "、ありがとうございます。[課長]{かちょう}の",
       {
-       t: "田中さん",
+       t: "[松本]{まつもと}さん",
        flag: true,
-       why: "Wrong. Speaking to an outsider about her own boss, she should say 田中, with no さん."
+       why: "Wrong. Speaking to an outsider about her own boss, she should say [松本]{まつもと}, with no さん."
       },
       "はただいま[会議中]{かいぎちゅう}ですので、こちらで",
       {
@@ -3590,7 +3590,7 @@ ICA.addUnit({
      },
      "**お～です** (お待ちです, お持ちですか, お急ぎですか) is a respectful way to describe the other person’s state. It is a regular pattern, like お～になる: Tae Kim’s guide teaches it as “お + stem + です”, and IRODORI Pre-Intermediate teaches it in Lesson 12.",
      "**Shops.** [何名様]{なんめいさま}ですか, ご注文はお[決]{き}まりですか, かしこまりました, お待たせいたしました, ～でございます. Common shop phrases such as 「～になります」 and 「～からお[預]{あず}かりします」 are often criticised as “part-time-job keigo”; the safe standard forms are ～でございます and 千円お[預]{あず}かりします.",
-     "**The phone.** いつもお世話になっております; 田中はただいま[席]{せき}を外しております (no さん for your colleague to an outsider); お電話いたしましょうか; [伺]{うかが}ってもよろしいでしょうか; [申]{もう}し[伝]{つた}えます.",
+     "**The phone.** いつもお世話になっております; [松本]{まつもと}はただいま[席]{せき}を外しております (no さん for your colleague to an outsider); お電話いたしましょうか; [伺]{うかが}ってもよろしいでしょうか; [申]{もう}し[伝]{つた}えます.",
      "**Visitors.** お[越]{こ}しいただき、ありがとうございます; [担当]{たんとう}の者が[参]{まい}ります (者 for your side, [方]{かた} for theirs).",
      "**Requests.** ～ていただけますか (humble potential of いただく), ～ていただけませんか (softer), お～いただけますか, お～いただけないでしょうか, with a cushion phrase such as [恐]{おそ}れ入りますが ([[kushion-kotoba]])."
     ],
@@ -3976,7 +3976,7 @@ ICA.addUnit({
    id: "e3u10-q04",
    lesson: "e3u10-l1",
    level: 3,
-   q: "Mei is tired of calling a friend who never answers. She wants to say: “Whenever I call, he’s out.” Which is correct?",
+   q: "Mariya is tired of calling a friend who never answers. She wants to say: “Whenever I call, he’s out.” Which is correct?",
    options: [
     {
      t: "いつ電話しても、[彼]{かれ}は[留守]{るす}です。",
@@ -4026,7 +4026,7 @@ ICA.addUnit({
    id: "e3u10-q06",
    lesson: "e3u10-l1",
    level: 2,
-   q: "Kenji says: 「せっかく作ったのに、だれも食べなかった。」 (せっかく = with all the effort) How does he feel?",
+   q: "Kaito says: 「せっかく作ったのに、だれも食べなかった。」 (せっかく = with all the effort) How does he feel?",
    options: [
     {
      t: "Disappointed: he made it, and nobody ate it.",
@@ -4126,7 +4126,7 @@ ICA.addUnit({
    id: "e3u10-q10",
    lesson: "e3u10-l1",
    level: 3,
-   q: "Ana wants to recommend a café: it is cheap, and the coffee is good as well. Which sentence says this?",
+   q: "Mariya wants to recommend a café: it is cheap, and the coffee is good as well. Which sentence says this?",
    options: [
     {
      t: "このカフェは安いだけでなく、コーヒーもおいしいです。",
@@ -4201,7 +4201,7 @@ ICA.addUnit({
    id: "e3u10-q13",
    lesson: "e3u10-l2",
    level: 3,
-   q: "Kenji’s mother wants him home before dark. What does she say?",
+   q: "Megumi wants her son Sōta home before dark. What does she say?",
    options: [
     {
      t: "[暗]{くら}くならないうちに帰ってきなさい。",
@@ -4326,7 +4326,7 @@ ICA.addUnit({
    id: "e3u10-q18",
    lesson: "e3u10-l2",
    level: 3,
-   q: "Sara phones a friend, who answers: 「ごめん、今、[晩]{ばん}ごはんの[最中]{さいちゅう}なんだ。あとでかけ[直]{なお}すね。」 What is happening?",
+   q: "Mariya phones a friend, who answers: 「ごめん、今、[晩]{ばん}ごはんの[最中]{さいちゅう}なんだ。あとでかけ[直]{なお}すね。」 What is happening?",
    options: [
     {
      t: "The friend is in the middle of dinner and will call back.",
@@ -4342,7 +4342,7 @@ ICA.addUnit({
      why: "“About to” would be 食べるところ."
     },
     {
-     t: "The friend eats dinner every time Sara calls.",
+     t: "The friend eats dinner every time Mariya calls.",
      why: "“Every time” would need たびに."
     }
    ]
@@ -4376,7 +4376,7 @@ ICA.addUnit({
    id: "e3u10-q20",
    lesson: "e3u10-l2",
    level: 3,
-   q: "Min wants to say: “As we kept meeting, before I knew it I had come to like her.” Which is natural?",
+   q: "Yến wants to say: “As we kept meeting, before I knew it I had come to like her.” Which is natural?",
    options: [
     {
      t: "何度も会っているうちに、[好]{す}きになった。",
@@ -4451,7 +4451,7 @@ ICA.addUnit({
    id: "e3u10-q23",
    lesson: "e3u10-l3",
    level: 3,
-   q: "Lucía describes her flat to a friend: it is small, but the low rent makes up for it. Which sentence says this?",
+   q: "Yến describes her room to a friend: it is small, but the low rent makes up for it. Which sentence says this?",
    options: [
     {
      t: "[部屋]{へや}は[狭]{せま}いかわりに、[家賃]{やちん}が安いんです。",
@@ -4701,7 +4701,7 @@ ICA.addUnit({
    id: "e3u10-q33",
    lesson: "e3u10-l4",
    level: 3,
-   q: "A friend invites Tomás to karaoke. He doesn’t dislike karaoke, but he is tired today and wants to say no gently. What does he say?",
+   q: "A friend invites Kaito to karaoke. He doesn’t dislike karaoke, but he is tired today and wants to say no gently. What does he say?",
    options: [
     {
      t: "カラオケが[嫌]{きら}いなわけじゃないんだけど、[今日]{きょう}はちょっと[疲]{つか}れてて…。",
@@ -5001,7 +5001,7 @@ ICA.addUnit({
    id: "e3u10-q45",
    lesson: "e3u10-l5",
    level: 3,
-   q: "Before a presentation at work, Priya tells her manager she is a little nervous. Which fits best?",
+   q: "Before a presentation at her internship, Aoi tells her manager she is a little nervous. Which fits best?",
    options: [
     {
      t: "少し[緊張]{きんちょう}[気味]{ぎみ}です。",
@@ -5076,23 +5076,23 @@ ICA.addUnit({
    id: "e3u10-q48",
    lesson: "e3u10-l5",
    level: 3,
-   q: "A caller from another company asks for your manager, Suzuki, who is out. What do you say?",
+   q: "At the city office, a caller from the university asks for your section chief, Mr. Matsumoto, who is out. What do you say?",
    options: [
     {
-     t: "[申]{もう}し[訳]{わけ}ございません。[鈴木]{すずき}はただいま外出しております。",
+     t: "[申]{もう}し[訳]{わけ}ございません。[松本]{まつもと}はただいま外出しております。",
      ok: true,
      why: "To an outsider, your own manager is your side: no title or さん, and humble おります."
     },
     {
-     t: "[申]{もう}し[訳]{わけ}ございません。[鈴木部長]{すずきぶちょう}はただいま外出していらっしゃいます。",
+     t: "[申]{もう}し[訳]{わけ}ございません。[松本課長]{まつもとかちょう}はただいま外出していらっしゃいます。",
      why: "A title works like an honorific, and いらっしゃる raises him. Both are wrong for your own side."
     },
     {
-     t: "[申]{もう}し[訳]{わけ}ございません。[鈴木]{すずき}さんはただいま外出しております。",
+     t: "[申]{もう}し[訳]{わけ}ございません。[松本]{まつもと}さんはただいま外出しております。",
      why: "さん raises your colleague in front of an outsider; use just the family name."
     },
     {
-     t: "[申]{もう}し[訳]{わけ}ございません。[鈴木]{すずき}はただいま外出していらっしゃいます。",
+     t: "[申]{もう}し[訳]{わけ}ございません。[松本]{まつもと}はただいま外出していらっしゃいます。",
      why: "いらっしゃる is respectful; for your own side, use the humble おります."
     }
    ]

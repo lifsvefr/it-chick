@@ -33,7 +33,7 @@ ICA.addUnit({
    title: "In order to, so that, and change: ～ために, ～ように, ～ようにする, ～ようになる",
    minutes: 60,
    hook: {
-    q: "Ana practises every day. She wants to say: “I practise every day so that I can speak Japanese.” Which word fits? 「日本語が話せる（　）、毎日[練習]{れんしゅう}しています。」",
+    q: "Cheska practises every day. She wants to say: “I practise every day so that I can speak Japanese.” Which word fits? 「日本語が話せる（　）、毎日[練習]{れんしゅう}しています。」",
     options: [
      "ために",
      "ように",
@@ -226,7 +226,7 @@ ICA.addUnit({
       "Three more uses of ように are worth recognising now.",
       "**Reported requests and instructions.** ～ように言う, ～ように[頼]{たの}む and ～ように[伝]{つた}える report what someone told or asked someone to do. They are softer than quoting the command itself.",
       {
-       ex: "医者にお[酒]{さけ}を飲まないように言われました。\nThe doctor told me not to drink alcohol.\n\n[部長]{ぶちょう}に[資料]{しりょう}を送るように[頼]{たの}まれました。\nMy manager asked me to send the documents.\n\nミンさんに、[明日]{あした}電話するように[伝]{つた}えてください。\nPlease tell Min to call tomorrow.",
+       ex: "医者にお[酒]{さけ}を飲まないように言われました。\nThe doctor told me not to drink alcohol.\n\n[部長]{ぶちょう}に[資料]{しりょう}を送るように[頼]{たの}まれました。\nMy manager asked me to send the documents.\n\nトビーさんに、[明日]{あした}電話するように[伝]{つた}えてください。\nPlease tell Toby to call tomorrow.",
        label: "Requests"
       },
       "**Wishes and prayers.** ～ますように on its own, at the end of a sentence, is a wish: [合格]{ごうかく}しますように (I hope I pass; may I pass). You will see it written on wooden prayer plaques ([絵馬]{えま}) at shrines and on New Year cards.",
@@ -291,7 +291,7 @@ ICA.addUnit({
     {
      id: "e3u9-l1-x1",
      type: "mcq",
-     q: "Fatima is giving a talk in a large room. She says: 「後ろの[席]{せき}の人にも見える（　）、字を大きく書きます。」 Which word fits the gap?",
+     q: "Cheska is giving a talk in a large room. She says: 「後ろの[席]{せき}の人にも見える（　）、字を大きく書きます。」 Which word fits the gap?",
      options: [
       {
        t: "ように",
@@ -388,7 +388,7 @@ ICA.addUnit({
     {
      id: "e3u9-l1-x4",
      type: "mcq",
-     q: "When Min arrived in Japan, she couldn’t read a newspaper. Now, after two years, she can. How does she say this?",
+     q: "When Cheska arrived in Japan, she couldn’t read a newspaper. Now, after two years, she can. How does she say this?",
      options: [
       {
        t: "新聞が読めるようになりました。",
@@ -412,7 +412,7 @@ ICA.addUnit({
     {
      id: "e3u9-l1-x5",
      type: "spot",
-     q: "Luca wrote about his running. Tap each mistake with ために, ように, ようにする or ようになる.",
+     q: "Rodrigo wrote about his running. Tap each mistake with ために, ように, ようにする or ようになる.",
      ask: "is wrong",
      parts: [
       "去年から、[健康]{けんこう}の",
@@ -478,7 +478,7 @@ ICA.addUnit({
     {
      id: "e3u9-l1-x7",
      type: "mcq",
-     q: "Sara moved to a flat with a nice kitchen. She didn’t plan it, but now she cooks every day. Which sentence describes this change?",
+     q: "Rodrigo moved into a share house with a big kitchen. He didn’t plan it, but now he cooks every day. Which sentence describes this change?",
      options: [
       {
        t: "毎日料理するようになりました。",
@@ -487,11 +487,11 @@ ICA.addUnit({
       },
       {
        t: "毎日料理するようにしました。",
-       why: "～ようにする stresses a deliberate effort: “I made a point of cooking”. Sara didn’t plan it, so ～ようになる fits."
+       why: "～ようにする stresses a deliberate effort: “I made a point of cooking”. Rodrigo didn’t plan it, so ～ようになる fits."
       },
       {
        t: "毎日料理することにしました。",
-       why: "～ことにする means “I decided to” (Lesson 2). The question says she didn’t plan it."
+       why: "～ことにする means “I decided to” (Lesson 2). The question says he didn’t plan it."
       },
       {
        t: "毎日料理するために、なりました。",
@@ -824,12 +824,12 @@ ICA.addUnit({
     {
      id: "e3u9-l2-x1",
      type: "mcq",
-     q: "Lucía has made up her own mind to start running every morning. She tells a friend about her new resolution: 「[明日]{あした}から毎朝走る___。」",
+     q: "Aoi has made up her own mind to start running every morning. She tells a friend about her new resolution: 「[明日]{あした}から毎朝走る___。」",
      options: [
       {
        t: "ことにしました",
        ok: true,
-       why: "Right. ～ことにしました reports a decision Lucía made herself."
+       why: "Right. ～ことにしました reports a decision Aoi made herself."
       },
       {
        t: "ことになりました",
@@ -957,7 +957,7 @@ ICA.addUnit({
     {
      id: "e3u9-l2-x5",
      type: "mcq",
-     q: "Tomás bought a phone last month, and it has already broken. Which sentence fits? 「先月買った___のスマホが[壊]{こわ}れました。」",
+     q: "Toby bought a phone last month, and it has already broken. Which sentence fits? 「先月買った___のスマホが[壊]{こわ}れました。」",
      options: [
       {
        t: "ばかり",
@@ -981,7 +981,7 @@ ICA.addUnit({
     {
      id: "e3u9-l2-x6",
      type: "spot",
-     q: "Sione is messaging a new friend. Tap each phrase that is **wrong**.",
+     q: "Rodrigo is messaging a new friend. Tap each phrase that is **wrong**.",
      ask: "is wrong",
      parts: [
       "はじめまして！三か月前に日本に",
@@ -1014,7 +1014,7 @@ ICA.addUnit({
     {
      id: "e3u9-l2-x7",
      type: "mcq",
-     q: "Hana says: 「もう少しで大事な[書類]{しょるい}を[捨]{す}てるところでした。」 What happened?",
+     q: "Yến says: 「もう少しで大事な[書類]{しょるい}を[捨]{す}てるところでした。」 What happened?",
      options: [
       {
        t: "She very nearly threw away an important document, but didn’t.",
@@ -1180,7 +1180,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex: "電車は三時に着くはずです。\nThe train should arrive at three. (that’s the timetable)\n\n[鍵]{かぎ}はかばんに入れたはずです。\nI’m sure I put the key in my bag. (from memory)\n\nミンさんは十年日本に住んでいるから、日本語が[上手]{じょうず}なはずです。\nMin has lived in Japan for ten years, so her Japanese must be good.\n\n[今日]{きょう}は日曜日だから、銀行は休みのはずです。\nIt’s Sunday today, so the bank should be closed.",
+       ex: "電車は三時に着くはずです。\nThe train should arrive at three. (that’s the timetable)\n\n[鍵]{かぎ}はかばんに入れたはずです。\nI’m sure I put the key in my bag. (from memory)\n\nイエンさんは五年日本に住んでいるから、日本語が[上手]{じょうず}なはずです。\nYến has lived in Japan for five years, so her Japanese must be good.\n\n[今日]{きょう}は日曜日だから、銀行は休みのはずです。\nIt’s Sunday today, so the bank should be closed.",
        label: "はず"
       },
       "はず is about expectation, not intention. For your own plans, use つもり ([[tsumori]]): [明日]{あした}は早く起きるつもりです (I intend to get up early tomorrow). はず about yourself means a schedule or a fact you are relying on: [明日]{あした}は九時に出発するはずです (We’re supposed to leave at nine tomorrow)."
@@ -1194,7 +1194,7 @@ ICA.addUnit({
        ex: "あの[優]{やさ}しい人が、そんなことを言うはずがありません。\nThere’s no way someone that kind would say a thing like that.\n\nこんなに[難]{むずか}しい問題が、[一日]{いちにち}でできるはずがない。\nThere’s no way anyone can do such a hard problem in a day.",
        label: "はずがない"
       },
-      "Compare the weaker ～ないはず: ケンさんは[来]{こ}ないはずです (I expect Ken isn’t coming) is a calm expectation. ケンさんが[来]{く}るはずがありません (there’s no way Ken is coming) rules it out.",
+      "Compare the weaker ～ないはず: トビーさんは[来]{こ}ないはずです (I expect Toby isn’t coming) is a calm expectation. トビーさんが[来]{く}るはずがありません (there’s no way Toby is coming) rules it out.",
       "**Was supposed to.** The past ～はずだった (～はずでした) describes an expectation that didn’t come true. It is very common with が or のに after it.",
       {
        ex: "[荷物]{にもつ}は[昨日]{きのう}[届]{とど}くはずでしたが、まだ[来]{き}ません。\nThe parcel was supposed to arrive yesterday, but it hasn’t come yet.\n\n三時に着くはずだったのに、[事故]{じこ}で一時間[遅]{おく}れた。\nWe were supposed to arrive at three, but we were an hour late because of an accident.",
@@ -1236,7 +1236,7 @@ ICA.addUnit({
       },
       "In the “no wonder” use, notice the order. You already know the fact (it’s cold). You discover the reason (the window). わけだ says “that explains it”. Words like どうりで (no wonder) and それで (that’s why) often come first.",
       {
-       ex: "A：ハナさんのお母さんは日本人なんですよ。\nB：そうなんですか。それで日本語が[上手]{じょうず}なわけですね。\nA: Hana’s mother is Japanese, you know.\nB: Really? So that’s why her Japanese is so good.",
+       ex: "A：トビーさんは日本の大学院で勉強しているんですよ。\nB：そうなんですか。それで日本語が[上手]{じょうず}なわけですね。\nA: Toby’s doing a master’s degree at a Japanese university, you know.\nB: Really? So that’s why his Japanese is so good.",
        label: "Worked example: that explains it"
       },
       "Is はず possible here? Yes, in this one use: どうりで[寒]{さむ}いはずだ is also natural for “no wonder it’s cold”. This is a real overlap. The difference shows elsewhere: only はず predicts something you haven’t checked (電車は三時に着くはずです), and only わけ sums up what someone has just told you (つまり、～わけですね).",
@@ -1451,7 +1451,7 @@ ICA.addUnit({
        why: "An expectation from memory: はず."
       },
       {
-       t: "ミンさんは十年日本に住んでいるから、この[言葉]{ことば}を知っている___です。 (I expect so.)",
+       t: "イエンさんは五年日本に住んでいるから、この[言葉]{ことば}を知っている___です。 (I expect so.)",
        b: 0,
        why: "An expectation from facts you know: はず."
       },
@@ -1509,7 +1509,7 @@ ICA.addUnit({
     {
      id: "e3u9-l3-x5",
      type: "spot",
-     q: "Kenji wrote these notes for a debate. Tap each phrase that is **wrong** in form.",
+     q: "Cheska wrote these notes for a debate. Tap each phrase that is **wrong** in form.",
      ask: "is wrong",
      parts: [
       "このレストランは駅から[遠]{とお}いので、",
@@ -1548,7 +1548,7 @@ ICA.addUnit({
     {
      id: "e3u9-l3-x6",
      type: "mcq",
-     q: "Your friend Priya has had a cough for two weeks. You want to suggest, kindly, that she sees a doctor. Which is the best choice?",
+     q: "Mr. Satō has had a cough for two weeks, and he hates going to the doctor. You want to suggest, kindly, that he sees a doctor. Which is the best choice?",
      options: [
       {
        t: "病院に行ったほうがいいよ。",
@@ -1648,7 +1648,7 @@ ICA.addUnit({
    title: "Wishes, credit and blame: ～てほしい, ～ばいい, おかげで, せいで, ～ば～ほど",
    minutes: 60,
    hook: {
-    q: "A friend “helped” Kenji decorate a cake, and it collapsed. Kenji says, half-laughing: 「[君]{きみ}のおかげで、[全部]{ぜんぶ}だめになったよ。」 How does this sound?",
+    q: "A friend “helped” Kaito decorate a cake, and it collapsed. Kaito says, half-laughing: 「[君]{きみ}のおかげで、[全部]{ぜんぶ}だめになったよ。」 How does this sound?",
     options: [
      "Sincerely grateful",
      "Sarcastic: a playful complaint",
@@ -1708,7 +1708,7 @@ ICA.addUnit({
        label: "てほしい"
       },
       "The last example shows that the “other” doesn’t have to be a person. For weather, seasons and events, the thing takes が: 雨がやんでほしい (I want the rain to stop).",
-      "For a third person’s wish, use ～てほしがっている or ～てほしいと言っている, just as with ～たい: ミンさんは[両親]{りょうしん}に[来]{き}てほしがっています (Min wants her parents to come)."
+      "For a third person’s wish, use ～てほしがっている or ～てほしいと言っている, just as with ～たい: チェスカさんは[両親]{りょうしん}に[来]{き}てほしがっています (Cheska wants her parents to come)."
      ]
     },
     {
@@ -2118,14 +2118,14 @@ ICA.addUnit({
     {
      id: "e3u9-l4-x6",
      type: "spot",
-     q: "Amara wrote a short diary entry. Tap each phrase that is **wrong**.",
+     q: "Cheska wrote a short diary entry. Tap each phrase that is **wrong**.",
      ask: "is wrong",
      parts: [
       "[今日]{きょう}は雨の",
       {
        t: "おかげで",
        flag: true,
-       why: "The result (a cancelled match) is bad, and Amara is disappointed. Use せいで, or neutral ので: 雨のせいで."
+       why: "The result (a cancelled match) is bad, and Cheska is disappointed. Use せいで, or neutral ので: 雨のせいで."
       },
       "、[試合]{しあい}が中止になって[残念]{ざんねん}だった。でも、[友達]{ともだち}が電話をくれた",
       {
@@ -2137,7 +2137,7 @@ ICA.addUnit({
       {
        t: "見に[来]{き}てほしい",
        flag: false,
-       why: "Fine: Amara wants her friend to come and watch: ～てほしい."
+       why: "Fine: Cheska wants her friend to come and watch: ～てほしい."
       },
       "。[練習]{れんしゅう}は",
       {
@@ -2151,7 +2151,7 @@ ICA.addUnit({
     {
      id: "e3u9-l4-x7",
      type: "mcq",
-     q: "Mei says: 「[疲]{つか}れているせいか、[最近]{さいきん}よく[頭]{あたま}が[痛]{いた}くなる。」 What does she mean?",
+     q: "Yến says: 「[疲]{つか}れているせいか、[最近]{さいきん}よく[頭]{あたま}が[痛]{いた}くなる。」 What does she mean?",
      options: [
       {
        t: "Maybe because she’s tired, she often gets headaches lately.",
@@ -2566,7 +2566,7 @@ ICA.addUnit({
     {
      id: "e3u9-l5-x1",
      type: "mcq",
-     q: "Kenji is writing a report on Japan’s ageing society. Choose the particle: 「日本の[高齢化]{こうれいか}___レポートを書いています。」",
+     q: "Aoi is writing a report on Japan’s ageing society. Choose the particle: 「日本の[高齢化]{こうれいか}___レポートを書いています。」",
      options: [
       {
        t: "についての",
@@ -2687,7 +2687,7 @@ ICA.addUnit({
     {
      id: "e3u9-l5-x5",
      type: "spot",
-     q: "Lucía wrote part of a report. Tap each phrase that is **wrong**.",
+     q: "Cheska wrote part of a report. Tap each phrase that is **wrong**.",
      ask: "is wrong",
      parts: [
       "私は日本の[文化]{ぶんか}",
@@ -3843,7 +3843,7 @@ ICA.addUnit({
    id: "e3u9-q03",
    lesson: "e3u9-l1",
    level: 2,
-   q: "Min studies kanji every day. Her goal is being able to read the newspaper. Choose the word: 「新聞が読める（　）、毎日漢字を勉強しています。」",
+   q: "Rodrigo studies kanji every day. His goal is being able to read the newspaper. Choose the word: 「新聞が読める（　）、毎日漢字を勉強しています。」",
    options: [
     {
      t: "ように",
@@ -3893,7 +3893,7 @@ ICA.addUnit({
    id: "e3u9-q05",
    lesson: "e3u9-l1",
    level: 2,
-   q: "Ken’s doctor told him to sleep more. Ken says: 「医者に、もっと[寝]{ね}る（　）言われました。」 Choose the word.",
+   q: "Kaito’s doctor told him to sleep more. Kaito says: 「医者に、もっと[寝]{ね}る（　）言われました。」 Choose the word.",
    options: [
     {
      t: "ように",
@@ -3918,7 +3918,7 @@ ICA.addUnit({
    id: "e3u9-q06",
    lesson: "e3u9-l1",
    level: 3,
-   q: "Priya couldn’t ride a bicycle as a child. At thirty she took lessons, and now she can. Which sentence describes this?",
+   q: "Cheska couldn’t ride a bicycle as a child. At twenty-nine she took lessons in Shioura, and now she can. Which sentence describes this?",
    options: [
     {
      t: "自転車に[乗]{の}れるようになりました。",
@@ -3943,7 +3943,7 @@ ICA.addUnit({
    id: "e3u9-q07",
    lesson: "e3u9-l1",
    level: 3,
-   q: "Hana used to drink coffee every day. Recently she has lost interest and doesn’t drink it any more. She didn’t decide this; it just happened. Which sentence fits?",
+   q: "Yến used to drink coffee every day. Recently she has lost interest and doesn’t drink it any more. She didn’t decide this; it just happened. Which sentence fits?",
    options: [
     {
      t: "[最近]{さいきん}、コーヒーを飲まなくなりました。",
@@ -3952,7 +3952,7 @@ ICA.addUnit({
     },
     {
      t: "[最近]{さいきん}、コーヒーを飲まないようにしています。",
-     why: "This is a deliberate effort: “I try not to drink coffee”. Hana made no effort; she just lost interest."
+     why: "This is a deliberate effort: “I try not to drink coffee”. Yến made no effort; she just lost interest."
     },
     {
      t: "[最近]{さいきん}、コーヒーが飲めるようになりました。",
@@ -4043,7 +4043,7 @@ ICA.addUnit({
    id: "e3u9-q11",
    lesson: "e3u9-l2",
    level: 2,
-   q: "Kenji’s company has told him he will move to its Fukuoka office. He tells a friend: 「来月から[福岡]{ふくおか}に[転勤]{てんきん}する（　）。」",
+   q: "Toby’s friend from his English-teaching days now works for a company, and it has told him he will move to its Fukuoka office. The friend tells Toby: 「来月から[福岡]{ふくおか}に[転勤]{てんきん}する（　）。」",
    options: [
     {
      t: "ことになりました",
@@ -4052,7 +4052,7 @@ ICA.addUnit({
     },
     {
      t: "ことにしました",
-     why: "～ことにしました says that Kenji decided himself. His company made the decision."
+     why: "～ことにしました says that the friend decided himself. His company made the decision."
     },
     {
      t: "ところです",
@@ -4068,7 +4068,7 @@ ICA.addUnit({
    id: "e3u9-q12",
    lesson: "e3u9-l2",
    level: 2,
-   q: "Sione has his own rule: he doesn’t eat after nine at night. He says: 「夜九時を[過]{す}ぎたら食べない（　）。」",
+   q: "Yến has her own rule: she doesn’t eat after nine at night. She says: 「夜九時を[過]{す}ぎたら食べない（　）。」",
    options: [
     {
      t: "ことにしています",
@@ -4077,7 +4077,7 @@ ICA.addUnit({
     },
     {
      t: "ことになっています",
-     why: "～ことになっている is an official rule or arrangement, made by others. This is his own rule."
+     why: "～ことになっている is an official rule or arrangement, made by others. This is her own rule."
     },
     {
      t: "ようになっています",
@@ -4168,7 +4168,7 @@ ICA.addUnit({
    id: "e3u9-q16",
    lesson: "e3u9-l2",
    level: 3,
-   q: "Lucía was leaving for the airport when she saw her passport still on the table. She grabbed it just in time. She says: 「もう少しでパスポートを（　）。」",
+   q: "Toby was leaving for the airport when he saw his passport still on the table. He grabbed it just in time. He says: 「もう少しでパスポートを（　）。」",
    options: [
     {
      t: "[忘]{わす}れるところでした",
@@ -4181,7 +4181,7 @@ ICA.addUnit({
     },
     {
      t: "[忘]{わす}れたばかりでした",
-     why: "～たばかり means it happened a short time before; she didn’t actually forget it."
+     why: "～たばかり means it happened a short time before; he didn’t actually forget it."
     },
     {
      t: "[忘]{わす}れることにしました",
@@ -4368,16 +4368,16 @@ ICA.addUnit({
    id: "e3u9-q24",
    lesson: "e3u9-l3",
    level: 3,
-   q: "Ana has always been a great cook. Today she tells you her mother runs a restaurant. You say: “So that’s why you’re such a good cook!” 「それで料理が[上手]{じょうず}な（　）ね。」",
+   q: "Kaito has always been a great cook. Today he tells you his mother runs a restaurant. You say: “So that’s why you’re such a good cook!” 「それで料理が[上手]{じょうず}な（　）ね。」",
    options: [
     {
      t: "わけです",
      ok: true,
-     why: "You knew the fact (she cooks well) and have just learned the reason: わけだ, “that explains it”."
+     why: "You knew the fact (he cooks well) and have just learned the reason: わけだ, “that explains it”."
     },
     {
      t: "べきです",
-     why: "べき would say she ought to be a good cook, as a duty."
+     why: "べき would say he ought to be a good cook, as a duty."
     },
     {
      t: "ところです",
@@ -4418,7 +4418,7 @@ ICA.addUnit({
    id: "e3u9-q26",
    lesson: "e3u9-l3",
    level: 3,
-   q: "Dmitri didn’t book a hotel for the festival weekend. He never planned to, and now every hotel is full. He regrets it: 「もっと早く[予約]{よやく}する（　）。」",
+   q: "Rodrigo didn’t book a hotel for the festival weekend. He never planned to, and now every hotel is full. He regrets it: 「もっと早く[予約]{よやく}する（　）。」",
    options: [
     {
      t: "べきだった",
@@ -4427,7 +4427,7 @@ ICA.addUnit({
     },
     {
      t: "はずだった",
-     why: "～はずだった means “was supposed to”, an expectation or plan that didn’t happen. Dmitri never planned to book."
+     why: "～はずだった means “was supposed to”, an expectation or plan that didn’t happen. Rodrigo never planned to book."
     },
     {
      t: "ところだった",
@@ -4443,7 +4443,7 @@ ICA.addUnit({
    id: "e3u9-q27",
    lesson: "e3u9-l3",
    level: 2,
-   q: "Sara is talking about her own plan: “I intend to study in Japan next year.” 「来年、日本に[留学]{りゅうがく}する（　）です。」",
+   q: "Mariya is talking about her own plan: “I intend to study in Japan next year.” 「来年、日本に[留学]{りゅうがく}する（　）です。」",
    options: [
     {
      t: "つもり",
@@ -4518,7 +4518,7 @@ ICA.addUnit({
    id: "e3u9-q30",
    lesson: "e3u9-l4",
    level: 3,
-   q: "Fatima needs her professor to write a recommendation letter. What should she say to the professor?",
+   q: "Mariya needs her professor to write a recommendation letter. What should she say to the professor?",
    options: [
     {
      t: "[推薦状]{すいせんじょう}を書いていただけませんか。",
@@ -4768,7 +4768,7 @@ ICA.addUnit({
    id: "e3u9-q40",
    lesson: "e3u9-l5",
    level: 2,
-   q: "Tomás works in Japan as an engineer. Choose the particle: 「エンジニア（　）[働]{はたら}いています。」",
+   q: "Kaito works at a convenience store as a part-timer. Choose the particle: 「アルバイト（　）[働]{はたら}いています。」",
    options: [
     {
      t: "として",
@@ -4781,7 +4781,7 @@ ICA.addUnit({
     },
     {
      t: "について",
-     why: "について means “about”; he isn’t working “about” an engineer."
+     why: "について means “about”; he isn’t working “about” an part-timer."
     },
     {
      t: "によって",
@@ -4793,7 +4793,7 @@ ICA.addUnit({
    id: "e3u9-q41",
    lesson: "e3u9-l5",
    level: 2,
-   q: "Choose the particle: 「田中先生は学生（　）とても親切です。」 (Ms Tanaka is very kind to her students.)",
+   q: "Choose the particle: 「大西先生は学生（　）とても親切です。」 (Professor Ōnishi is very kind to his students.)",
    options: [
     {
      t: "に[対]{たい}して",
@@ -4893,7 +4893,7 @@ ICA.addUnit({
    id: "e3u9-q45",
    lesson: "e3u9-l5",
    level: 3,
-   q: "Hana is writing a report on her research. Which sentence is correct?",
+   q: "Cheska is writing a report on her research. Which sentence is correct?",
    options: [
     {
      t: "日本の[祭]{まつ}りについて[調]{しら}べました。",
