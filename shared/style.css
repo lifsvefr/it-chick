@@ -425,7 +425,9 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 /* Kamome House text: furigana as a box as wide as its reading (set by JS as --rw), so a long reading never spills out of a bubble;
    Japanese breaks only between phrases (word-break:auto-phrase where supported, otherwise <wbr> from a small phrase heuristic) */
 .story ruby{display:inline-block;position:relative;text-align:center;line-height:1.25;min-width:var(--rw,0);text-indent:0}
-.story rt{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);white-space:nowrap;line-height:1;margin-bottom:-.12em}
+.story rt{position:absolute;left:50%;bottom:100%;transform:translateX(-50%) scaleX(var(--rs,1));white-space:nowrap;line-height:1;margin-bottom:-.12em}
+/* room for the furigana on a bubble's first line, so it never runs into the name or the play button */
+.story:not(.nofuri) .sline .ja:has(ruby),.story:not(.nofuri) .mugibox .jt:has(ruby){padding-top:.6em}
 .story.nofuri ruby{min-width:0}
 .story .ja,.story .jt,.story .pj{word-break:keep-all;overflow-wrap:anywhere;line-break:strict}
 .story.phr .ja,.story.phr .jt,.story.phr .pj{word-break:auto-phrase}
