@@ -14,11 +14,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=38">
+<link rel="stylesheet" href="../shared/style.css?v=39">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=38"></script>
-<script src="../data/story.js?v=38"></script>
-<script src="../data/story-audio.js?v=38"></script>
+<script src="../shared/engine.js?v=39"></script>
+<script src="../data/story.js?v=39"></script>
+<script src="../data/story-audio.js?v=39"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -381,13 +381,14 @@ var GICON = {
    Phrases holding furigana are kept on one line (span.nob), so a kanji never parts from its okurigana or from a 」.
    Elsewhere: word-break:auto-phrase where the browser has it, otherwise <wbr> at the phrase ends. */
 function storyText(root){
-  ICA.$$("ruby", root).forEach(function(r){ var t = r.querySelector("rt"); if (!t) return; var w = t.getBoundingClientRect().width; if (w) r.style.setProperty("--rw", Math.max(0, Math.ceil(w - 6)) + "px"); });
+  ICA.$$("ruby", root).forEach(function(r){ var t = r.querySelector("rt"); if (!t) return; var w = t.getBoundingClientRect().width; if (w) r.style.setProperty("--rw", Math.max(0, Math.ceil(w - 10)) + "px"); });
   if (root.__phr) return; root.__phr = 1;
   var auto = !!(window.CSS && CSS.supports && CSS.supports("word-break", "auto-phrase"));
   if (auto) root.classList.add("phr");
   var cls = function(c){ if (/[一-鿿々〆ヶ]/.test(c)) return "K"; if (/[ぁ-ゟ]/.test(c)) return "H"; if (/[゠-ヿ]/.test(c)) return "T";
     if (/[、。」』）！？!?…・,，．]/.test(c)) return "P"; if (/[「『（(]/.test(c)) return "O"; if (/[A-Za-z0-9]/.test(c)) return "L"; if (/\s/.test(c)) return "W"; return "S"; };
   var brk = function(a, b, prefix){ if (!a || !b || b === "P" || a === "O") return false; if (a === "P" || a === "W" || b === "O" || b === "W") return true; return a === "H" && (b === "K" || b === "T" || b === "L") && !prefix; };
+  var SMALL = /[っゃゅょぁぃぅぇぉゎー]/;   // 引っ|越す: never end a phrase on a small kana
   var afterWo = function(p1, k){ return p1 === "を" && k !== "P"; };
   ICA.$$(".ja,.jt,.pj", root).forEach(function(el){
     if (el.getAttribute("lang") === "en" || el.__seg) return; el.__seg = 1; el.setAttribute("data-nosay", "");
@@ -396,12 +397,12 @@ function storyText(root){
     var phrases = [[]], prev = "", p1 = "", p2 = "";
     var cut = function(){ if (phrases[phrases.length-1].length) phrases.push([]); };
     Array.prototype.slice.call(el.childNodes).forEach(function(n){
-      if (n.nodeType === 1 && n.tagName === "RUBY"){ if (brk(prev, "K", false)) cut(); phrases[phrases.length-1].push(n); prev = "K"; p1 = ""; return; }
+      if (n.nodeType === 1 && n.tagName === "RUBY"){ if (brk(prev, "K", false) && !SMALL.test(p1)) cut(); phrases[phrases.length-1].push(n); prev = "K"; p1 = ""; return; }
       if (n.nodeType !== 3){ cut(); phrases[phrases.length-1].push(n); cut(); prev = ""; return; }
       var t = n.nodeValue, cur = "";
       for (var i = 0; i < t.length; i++){ var c = t[i], k = cls(c);
         var prefix = prev === "H" && (p1 === "お" || p1 === "ご") && cls(p2 || " ") !== "H";   // お茶, ご飯
-        if (brk(prev, k, prefix) || afterWo(p1, k)){ if (cur) phrases[phrases.length-1].push(document.createTextNode(cur)); cur = ""; cut(); }
+        if ((brk(prev, k, prefix) && !SMALL.test(p1)) || afterWo(p1, k)){ if (cur) phrases[phrases.length-1].push(document.createTextNode(cur)); cur = ""; cut(); }
         cur += c; p2 = p1; p1 = c; prev = k; }
       if (cur) phrases[phrases.length-1].push(document.createTextNode(cur));
     });
@@ -436,7 +437,7 @@ function mugiBox(mood, label, p, say){
 function story(uid, draft){
   var e = storyEp(uid, draft), u = ICA.unitById[uid], showEn = e.enDefault !== false, st0 = ICA.load(), furiOff = st0.settings && st0.settings.furi === "off";
   setTitle("Episode "+e.n+" · "+e.title.replace(/<[^>]*>/g, ""));
-  var h = '<div class="stack story'+(showEn ? '' : ' hide-en')+(furiOff ? ' nofuri' : '')+'"><div class="row small storynav"><a href="#story">← Kamome House</a><a href="#'+uid+'">Unit '+u.n+': '+esc(u.title)+'</a></div><div><div class="eyebrow">Kamome House · Episode '+e.n+(e.draft ? ' · DRAFT' : '')+'</div><h1>'+md(e.title)+'</h1><p class="small muted">'+esc(e.month)+' · '+esc(e.level)+' · Optional: skip it any time, it never blocks the checkpoint.</p></div>';
+  var h = '<div class="stack story'+(showEn ? '' : ' hide-en')+(furiOff ? ' nofuri' : '')+'"><nav class="epnav eptop" aria-label="Kamome House and this unit"><a class="epcard home" href="#story"><img src="../shared/cast/cat/walk.webp" alt="" width="56"><span><span class="eyebrow">← Back to</span><b>Kamome House</b></span></a><a class="epcard next" href="#'+uid+'"><span class="eyebrow">Unit '+u.n+' →</span><b>'+esc(u.title)+'</b></a></nav><div><div class="eyebrow">Kamome House · Episode '+e.n+(e.draft ? ' · DRAFT' : '')+'</div><h1>'+md(e.title)+'</h1><p class="small muted">'+esc(e.month)+' · '+esc(e.level)+' · Optional: skip it any time, it never blocks the checkpoint.</p></div>';
   var hasRuby = JSON.stringify(e.parts).indexOf("]{") >= 0;
   h += '<div class="row storytools"><button type="button" class="btn small" data-en aria-pressed="'+showEn+'">'+(showEn ? "Hide English" : "Show English")+'</button>'+(hasRuby ? '<button type="button" class="btn small" data-furi aria-pressed="'+!furiOff+'">'+(furiOff ? "Show furigana" : "Hide furigana")+'</button>' : '')+'</div>';
   if (!showEn) h += '<p class="small muted storyhint">English is hidden in this episode. Tap <b>EN</b> under any paragraph or line to check it.</p>';
@@ -457,7 +458,7 @@ function story(uid, draft){
   });
   var eps = storyList(), at = eps.indexOf(e), pv = eps[at-1], nxe = eps[at+1];
   h += '<div class="lessonnav"><a class="btn" href="#'+uid+'">Back to the unit</a>'+(u.checkpoint ? '<a class="btn primary" href="#'+uid+'-cp" data-done>Unit checkpoint →</a>' : '')+'</div>';
-  h += '<nav class="epnav" aria-label="Episodes">'+(pv ? '<a class="epcard prev" href="#story-'+pv.unit+'"><span class="eyebrow">← Previous</span><b>Episode '+pv.n+'</b><span class="small">'+md(pv.title)+'</span></a>' : '')+(nxe ? '<a class="epcard next" href="#story-'+nxe.unit+'"><span class="eyebrow">Next →</span><b>Episode '+nxe.n+'</b><span class="small">'+md(nxe.title)+'</span></a>' : '')+'<a class="epall" href="#story"><img src="../shared/cast/kamome-logo.webp" alt="" width="44">All episodes</a></nav></div>';
+  h += '<nav class="epnav" aria-label="Episodes">'+(pv ? '<a class="epcard prev" href="#story-'+pv.unit+'"><span class="eyebrow">← Previous</span><b>Episode '+pv.n+'</b><span class="small">'+md(pv.title)+'</span></a>' : '')+(nxe ? '<a class="epcard next" href="#story-'+nxe.unit+'"><span class="eyebrow">Next →</span><b>Episode '+nxe.n+'</b><span class="small">'+md(nxe.title)+'</span></a>' : '')+'<a class="epall" href="#story"><img src="../shared/cast/cat/loaf.webp" alt="" width="44">All episodes</a></nav></div>';
   app.innerHTML = h;
   exs.forEach(function(x){ ICA.exercise(document.getElementById("sx"+x[0]), x[1], {}); });
   ICA.$$(".mbwrap", app).forEach(function(w){ var P = e.parts[+w.getAttribute("data-mb")], info = w.querySelector(".mbinfo");

@@ -444,3 +444,9 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .epall img{width:44px;height:auto}
 .epall:hover,.epall:focus-visible{border-color:var(--accent,var(--soft))}
 @media (max-width:380px){.epnav{grid-template-columns:1fr}.epcard.next{grid-column:1}}
+
+.epcard.home{display:flex;align-items:center;gap:10px}
+.epcard.home img{width:52px;height:auto;flex:none}
+.epcard.home > span{display:grid;gap:3px}
+.eptop{margin-bottom:2px}
+.eptop .epcard b{font-size:.98rem}
