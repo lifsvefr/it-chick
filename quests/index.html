@@ -14,11 +14,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=39">
+<link rel="stylesheet" href="../shared/style.css?v=40">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=39"></script>
-<script src="../data/story.js?v=39"></script>
-<script src="../data/story-audio.js?v=39"></script>
+<script src="../shared/engine.js?v=40"></script>
+<script src="../data/story.js?v=40"></script>
+<script src="../data/story-audio.js?v=40"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -424,6 +424,8 @@ var MOOD_PREF = {talk:["talk","hello","think"], hello:["hello","talk","yay"], ti
   yay:["yay","hello","talk"], sleepy:["sleepy","flat","sad","think","talk"], flat:["flat","sleepy","think","talk","hello"], sad:["sad","sleepy","think","talk","hello"], cross:["cross","think","talk","hello"]};
 function storyMood(c, m){ var have = Array.isArray(c.art) ? c.art : ["hello","think","oops","yay","tip","sleepy"], pref = MOOD_PREF[m || "talk"] || [m];
   for (var i = 0; i < pref.length; i++) if (have.indexOf(pref[i]) >= 0) return pref[i]; return have[0]; }
+/* a scene outfit (summer, nurse, hospital...) is used when that outfit has a drawing for this mood's nearest face */
+function storyFace(c, p){ var o = p.outfit && c.outfits && c.outfits[p.outfit]; if (o && o.length) return p.outfit + "/" + storyMood({art: o}, p.mood); return storyMood(c, p.mood); }
 var ENTOG = '<button type="button" class="entog" aria-pressed="false" title="Show the English for this part">EN</button>';
 function storyNarr(p){
   if (p.lang !== "ja") return '<div class="narr en-narr"><p>'+md(p.text)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>';
@@ -444,7 +446,7 @@ function story(uid, draft){
   var exs = [], lastWho = null, side = "l";
   e.parts.forEach(function(p, i){
     if (p.t === "narr") h += storyNarr(p);
-    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<span class="facebox"><img class="face" src="../shared/cast/'+p.who+'/'+storyMood(c, p.mood)+'.webp" alt="" height="72" loading="lazy"></span>' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; var en = p.lang === "en";
+    else if (p.t === "line"){ if (lastWho && p.who !== lastWho) side = side === "l" ? "r" : "l"; lastWho = p.who; var c = STORY.cast[p.who] || {name:p.who, ja:""}; var face = c.art ? '<span class="facebox"><img class="face" src="../shared/cast/'+p.who+'/'+storyFace(c, p)+'.webp" alt="" height="72" loading="lazy"></span>' : '<span class="face none" aria-hidden="true">'+esc(c.name.charAt(0))+'</span>'; var en = p.lang === "en";
       h += '<div class="sline '+side+'"'+(c.acc ? ' style="--acc:'+c.acc+'"' : '')+'>'+face+'<div class="sbody"><span class="who">'+esc(c.name)+(window.ICA_STORY_AUDIO && ICA_STORY_AUDIO[p.who+"|"+p.ja] ? '<button type="button" class="ttsb sl" data-say="story" data-key="'+esc(p.who+"|"+p.ja)+'" aria-label="Play '+esc(c.name)+'’s line" title="Play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 6h3l4-3v10l-4-3H2z" fill="currentColor"/><path d="M11 5.5a3.5 3.5 0 0 1 0 5M12.8 3.6a6 6 0 0 1 0 8.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>' : '')+(p.en ? ENTOG : '')+'</span><p class="ja'+(en ? ' inen' : '')+'" lang="'+(en ? "en" : "ja")+'">'+(en ? esc(p.ja) : md(p.ja))+'</p>'+(p.en ? '<p class="en small muted"'+(en ? ' lang="ja"' : '')+'>'+md(p.en)+'</p>' : '')+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div></div>'; }
     else if (p.t === "break") h += '<div class="sbreak" role="separator" aria-label="Scene break"><span></span><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M2 6c4-5 8-5 12 0s8 5 12 0 8-5 12 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span></span></div>';
     else if (p.t === "cat") h += '<figure class="scat"><img src="../shared/cast/cat/'+esc(p.pose || "smug")+'.webp" alt="'+esc(p.alt || "The black-and-white cat")+'" width="130" loading="lazy"></figure>';
