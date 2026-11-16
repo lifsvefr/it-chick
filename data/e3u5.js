@@ -146,13 +146,13 @@ ICA.addUnit({
         {
           h:"The plain style in writing: a diary",
           body:[
-            "Plain forms are not only for chatting. When Japanese people write for themselves, or write stories and articles, they usually use the plain style, called [[futsuu-tai]] ([普通体]{ふつうたい}). Diaries, notes, novels, newspaper articles and most essays use it. (Texts that speak to the reader directly, such as notices, guides and many blogs, often use です・ます instead.) Here is a short diary entry by Priya:",
+            "Plain forms are not only for chatting. When Japanese people write for themselves, or write stories and articles, they usually use the plain style, called [[futsuu-tai]] ([普通体]{ふつうたい}). Diaries, notes, novels, newspaper articles and most essays use it. (Texts that speak to the reader directly, such as notices, guides and many blogs, often use です・ます instead.) Here is a short diary entry by Cheska:",
             {
-              ex:"[十月]{じゅうがつ}[三日]{みっか}\n今日は[朝]{あさ}から雨だった。[午前]{ごぜん}は[家]{いえ}で[本]{ほん}を[読]{よ}んだ。[午後]{ごご}、友だちのミンさんと[駅]{えき}の[近]{ちか}くの[喫茶店]{きっさてん}に行った。コーヒーはおいしかった。でも、ケーキはあまり[甘]{あま}くなかった。[明日]{あした}は[日本語]{にほんご}の[宿題]{しゅくだい}をする。",
-              label:"Priya’s diary (plain style)"
+              ex:"[十月]{じゅうがつ}[三日]{みっか}\n今日は[朝]{あさ}から雨だった。[午前]{ごぜん}は[家]{いえ}で[本]{ほん}を[読]{よ}んだ。[午後]{ごご}、友だちのまりやさんと[駅]{えき}の[近]{ちか}くの[喫茶店]{きっさてん}に行った。コーヒーはおいしかった。でも、ケーキはあまり[甘]{あま}くなかった。[明日]{あした}は[日本語]{にほんご}の[宿題]{しゅくだい}をする。",
+              label:"Cheska’s diary (plain style)"
             },
-            "In English: “3 October. It rained from the morning today. In the morning I read a book at home. In the afternoon I went to a café near the station with my friend Min. The coffee was good. But the cake wasn’t very sweet. Tomorrow I’ll do my Japanese homework.”",
-            "Every sentence ends in a plain form: a noun with だった, two verbs in the た-form (読んだ, 行った), い-adjectives in the past and past negative, and a dictionary form for tomorrow’s plan. If Priya told the same story to a teacher, every ending would switch to polite: 雨でした, 読みました, 行きました, おいしかったです, [甘]{あま}くなかったです, します. Nothing else in the sentences would change.",
+            "In English: “3 October. It rained from the morning today. In the morning I read a book at home. In the afternoon I went to a café near the station with my friend Mariya. The coffee was good. But the cake wasn’t very sweet. Tomorrow I’ll do my Japanese homework.”",
+            "Every sentence ends in a plain form: a noun with だった, two verbs in the た-form (読んだ, 行った), い-adjectives in the past and past negative, and a dictionary form for tomorrow’s plan. If Cheska told the same story to a teacher, every ending would switch to polite: 雨でした, 読みました, 行きました, おいしかったです, [甘]{あま}くなかったです, します. Nothing else in the sentences would change.",
             {
               key:"Choose one style for a whole piece of writing. Mixing です・ます and plain endings in one diary, essay or report looks careless."
             },
@@ -221,7 +221,7 @@ ICA.addUnit({
         {
           id:"e3u5-l1-x4",
           type:"mcq",
-          q:"Kenji writes his diary in the plain style. How does he write “Yesterday was cold”?",
+          q:"Rodrigo writes his diary in the plain style. How does he write “Yesterday was cold”?",
           options:[
             {
               t:"[昨日]{きのう}は[寒]{さむ}かった。",
@@ -256,7 +256,7 @@ ICA.addUnit({
         {
           id:"e3u5-l1-x6",
           type:"spot",
-          q:"Ana writes her diary in the plain style. Tap each part that uses a **wrong form** or **breaks the plain style**.",
+          q:"Cheska writes her diary in the plain style. Tap each part that uses a **wrong form** or **breaks the plain style**.",
           ask:"is wrong or breaks the style",
           parts:[
             {t:"今日は天気がよかった。", flag:false, why:"Correct: いい → よかった, plain."},
@@ -275,10 +275,10 @@ ICA.addUnit({
         {
           id:"e3u5-l1-x7",
           type:"order",
-          q:"Priya wrote a longer diary entry. Put its sentences in time order, from the morning to tomorrow.",
+          q:"Cheska wrote a longer diary entry. Put its sentences in time order, from the morning to tomorrow.",
           items:[
             {t:"午前は[家]{いえ}で本を読んだ。", why:"午前 is the morning: first."},
-            {t:"午後、ミンさんと[喫茶店]{きっさてん}に行った。", why:"午後 is the afternoon: after the morning."},
+            {t:"午後、まりやさんと[喫茶店]{きっさてん}に行った。", why:"午後 is the afternoon: after the morning."},
             {t:"コーヒーを[飲]{の}んで、[家]{いえ}に[帰]{かえ}った。", why:"At the café, then home: after going to the café."},
             {t:"[夜]{よる}は[母]{はは}に[電話]{でんわ}した。", why:"[夜]{よる} is the evening: after coming home."},
             {t:"[明日]{あした}は[宿題]{しゅくだい}をする。", why:"Last: a plan for tomorrow, so it is in the non-past dictionary form."}
@@ -343,7 +343,7 @@ ICA.addUnit({
         "Keep a sentence polite by ending it politely, even with plain forms inside"
       ],
       hook:{
-        q:"Kenji’s manager hands him some papers and asks, in plain form: 「この[資料]{しりょう}、[明日]{あした}までにできる？」 (Can you get this document done by tomorrow?) What is the most natural reply?",
+        q:"Kaito’s manager at the convenience store hands him some papers and asks, in plain form: 「この[資料]{しりょう}、[明日]{あした}までにできる？」 (Can you get this document done by tomorrow?) What is the most natural reply?",
         options:["はい、できます。","うん、できる。","できるよ。","できるだ。"],
         answer:0,
         reveal:"**はい、できます。** Plain speech doesn’t always go both ways. A manager often speaks plainly to people in the team, but the team still answers politely, because the relationship is not equal. (できるだ is never correct: verbs don’t take だ.) This lesson shows who uses which style with whom, how people move from polite to plain, and why polite is always the safe choice while you are learning."
@@ -355,7 +355,7 @@ ICA.addUnit({
             {
               lead:"Every time a Japanese speaker ends a sentence, they choose a style: polite ([[desu-masu-tai]]) or plain ([[futsuu-tai]]). For most sentences there is no neutral middle, so even a simple “I’m going” has to come out as [行]{い}きます or 行く."
             },
-            "English has a similar choice, but it is spread over many words. “Good morning, Dr Lee. Could you possibly…?” and “Hey Sam, can you…?” are different styles. In Japanese the choice is built into the end of almost every sentence, so you meet it constantly.",
+            "English has a similar choice, but it is spread over many words. “Good morning, Professor Ōnishi. Could you possibly…?” and “Hey Toby, can you…?” are different styles. In Japanese the choice is built into the end of almost every sentence, so you meet it constantly.",
             "Plain speech used in conversation is called [[casual-speech|casual speech]]. Japanese has an everyday word for it: タメ[口]{ぐち} ([[tameguchi]]), speaking to someone as an equal. Polite speech is part of [[keigo]], the wider system of respectful language; です and ます are its everyday, basic layer.",
             "The choice is not about the topic and not about grammar. It is about the relationship between the speaker and the listener. The same person may say 行く to a friend, 行きます to a teacher and 行く again to their mother, all in one afternoon.",
             {key:"Style follows the relationship: who you are talking to, not what you are talking about."}
@@ -378,7 +378,7 @@ ICA.addUnit({
               ]
             },
             "Two things decide most of these rows. The first is **closeness**: how far inside your circle the person is. The second is **rank**: age, position, and who joined a group first. The next section looks at both.",
-            "Notice the row for teachers and bosses. A teacher may speak plainly to students, and a boss to the team, as Kenji’s manager did in the warm-up. The students and the team still answer politely. Plain speech going down and polite speech going up is completely normal; it isn’t rude in either direction."
+            "Notice the row for teachers and bosses. A teacher may speak plainly to students, and a boss to the team, as Kaito’s manager did in the warm-up. The students and the team still answer politely. Plain speech going down and polite speech going up is completely normal; it isn’t rude in either direction."
           ]
         },
         {
@@ -487,12 +487,12 @@ ICA.addUnit({
         {
           id:"e3u5-l2-x2",
           type:"mcq",
-          q:"Yuki is a first-year in a university tennis club. A third-year member asks her: 「[週末]{しゅうまつ}、[練習]{れんしゅう}に[来]{く}る？」 (Are you coming to practice at the weekend?) What is the best reply?",
+          q:"Mariya is a second-year in her university’s English club. A third-year member asks her: 「[週末]{しゅうまつ}、[練習]{れんしゅう}に[来]{く}る？」 (Are you coming to practice at the weekend?) What is the best reply?",
           options:[
             {
               t:"はい、行きます。",
               ok:true,
-              why:"Right. The third-year is Yuki’s [先輩]{せんぱい}, so she answers politely. She uses 行きます because she is going to the practice, away from where she is now."
+              why:"Right. The third-year is Mariya’s [先輩]{せんぱい}, so she answers politely. She uses 行きます because she is going to the practice, away from where she is now."
             },
             {
               t:"うん、行く。",
@@ -500,7 +500,7 @@ ICA.addUnit({
             },
             {
               t:"はい、[来]{き}ます。",
-              why:"Polite, but 来る is for movement towards the speaker. Yuki is talking about going to the practice, so she says 行きます."
+              why:"Polite, but 来る is for movement towards the speaker. Mariya is talking about going to the practice, so she says 行きます."
             },
             {t:"はい、行くです。", why:"です doesn’t follow a verb. The polite form is 行きます."}
           ]
@@ -557,7 +557,7 @@ ICA.addUnit({
         {
           id:"e3u5-l2-x5",
           type:"spot",
-          q:"Ana sends this message to her teacher. Tap each part that **ends too casually** for a teacher.",
+          q:"Cheska sends this message to her professor. Tap each part that **ends too casually** for a teacher.",
           ask:"is too casual for a teacher",
           parts:[
             {t:"先[生]{せい}、おはようございます。", flag:false, why:"A polite greeting: fine."},
@@ -585,7 +585,7 @@ ICA.addUnit({
         {
           id:"e3u5-l2-x6",
           type:"mcq",
-          q:"Rina, a close friend from your class, has spoken to you in plain form for months. You still always answer in です・ます. What effect does this most likely have?",
+          q:"Mariya, your housemate and a close friend, has spoken to you in plain form for months. You still always answer in です・ます. What effect does this most likely have?",
           options:[
             {
               t:"It can feel a little distant, but it isn’t rude.",
@@ -601,7 +601,7 @@ ICA.addUnit({
               why:"The choice of style is about relationships, not grammar. Your polite sentences are grammatical."
             },
             {
-              t:"It makes you sound younger than Rina.",
+              t:"It makes you sound younger than Mariya.",
               why:"Style doesn’t mark your own age. It marks how close you are and the difference in rank."
             }
           ]
@@ -785,17 +785,17 @@ ICA.addUnit({
         {
           h:"Putting it together: making plans",
           body:[
-            "Min and Sara are friends. Read their messages and notice each casual feature:",
+            "Rodrigo and Cheska are friends. Read their messages and notice each casual feature:",
             {
-              ex:"ミン：サラ、[今夜]{こんや}、[暇]{ひま}？\nサラ：うん、[暇]{ひま}だよ。どうして？\nミン：[駅]{えき}の[前]{まえ}の[新]{あたら}しいラーメン[屋]{や}、もう行った？\nサラ：ううん、まだ。\nミン：じゃあ、[一緒]{いっしょ}に行かない？\nサラ：いいね！[何時]{なんじ}にする？\nミン：[七時]{しちじ}はどう？\nサラ：オッケー。じゃあ、[七時]{しちじ}に[駅]{えき}で[待]{ま}ってるね。",
-              label:"Min and Sara make plans"
+              ex:"ロドリゴ：チェスカ、[今夜]{こんや}、[暇]{ひま}？\nチェスカ：うん、[暇]{ひま}だよ。どうして？\nロドリゴ：[駅]{えき}の[前]{まえ}の[新]{あたら}しいラーメン[屋]{や}、もう行った？\nチェスカ：ううん、まだ。\nロドリゴ：じゃあ、[一緒]{いっしょ}に行かない？\nチェスカ：いいね！[何時]{なんじ}にする？\nロドリゴ：[七時]{しちじ}はどう？\nチェスカ：オッケー。じゃあ、[七時]{しちじ}に[駅]{えき}で[待]{ま}ってるね。",
+              label:"Rodrigo and Cheska make plans"
             },
-            "In English: “Sara, are you free tonight?” “Yes, I am. Why?” “Have you been to the new ramen place in front of the station yet?” “No, not yet.” “Then do you want to go together?” “Sounds good! What time shall we make it?” “How about seven?” “OK. I’ll wait for you at the station at seven, then.”",
+            "In English: “Cheska, are you free tonight?” “Yes, I am. Why?” “Have you been to the new ramen place in front of the station yet?” “No, not yet.” “Then do you want to go together?” “Sounds good! What time shall we make it?” “How about seven?” “OK. I’ll wait for you at the station at seven, then.”",
             {
               list:[
                 "**Questions without か:** [暇]{ひま}？, もう行った？, 何時にする？ (and no だ after [暇]{ひま}).",
                 "**Dropped particles:** ラーメン[屋]{や}、もう行った？ has no に; the pause does its job.",
-                "**よ and ね:** [暇]{ひま}だよ tells Min something he didn’t know; [待]{ま}ってるね softens the plan.",
+                "**よ and ね:** [暇]{ひま}だよ tells Rodrigo something he didn’t know; [待]{ま}ってるね softens the plan.",
                 "**A contraction:** [待]{ま}ってる for [待]{ま}っている.",
                 "**Casual answers and invitations:** うん, ううん, 行かない？ (the casual ～ませんか from Lesson 1), いいね！",
                 "**Kept particles:** [駅]{えき}で and 七時に stay, because place and time matter."
@@ -878,7 +878,7 @@ ICA.addUnit({
         {
           id:"e3u5-l3-x4",
           type:"mcq",
-          q:"Sara and Min both know that their favourite shop closes early on Sundays. Sara wants to check: 「[日曜日]{にちようび}は[早]{はや}く[閉]{し}まる＿＿？」 What fills the gap?",
+          q:"Cheska and Rodrigo both know that their favourite shop closes early on Sundays. Cheska wants to check: 「[日曜日]{にちようび}は[早]{はや}く[閉]{し}まる＿＿？」 What fills the gap?",
           options:[
             {
               t:"よね",
@@ -908,7 +908,7 @@ ICA.addUnit({
         {
           id:"e3u5-l3-x6",
           type:"spot",
-          q:"Ken is messaging a friend. Tap each part with a **grammar mistake** in casual speech.",
+          q:"Rodrigo is messaging a friend. Tap each part with a **grammar mistake** in casual speech.",
           ask:"has a grammar mistake",
           parts:[
             {t:"今、何してる？", flag:false, why:"Correct: ～てる for ～ている, and a question without か."},
@@ -927,13 +927,13 @@ ICA.addUnit({
         {
           id:"e3u5-l3-x7",
           type:"order",
-          q:"Put Min and Sara’s chat in a natural order.",
+          q:"Put Rodrigo and Cheska’s chat in a natural order.",
           items:[
-            {t:"ミン：今[夜]{や}、[暇]{ひま}？", why:"First Min asks whether Sara is free."},
-            {t:"サラ：うん、[暇]{ひま}だよ。どうして？", why:"Sara answers and asks why."},
-            {t:"ミン：一[緒]{しょ}に[映画]{えいが}、見に行かない？", why:"Min explains why he asked: an invitation."},
-            {t:"サラ：いいね！何時？", why:"Sara accepts and asks about the time."},
-            {t:"ミン：七時はどう？", why:"Min answers her question with a suggestion."}
+            {t:"ロドリゴ：今[夜]{や}、[暇]{ひま}？", why:"First Rodrigo asks whether Cheska is free."},
+            {t:"チェスカ：うん、[暇]{ひま}だよ。どうして？", why:"Cheska answers and asks why."},
+            {t:"ロドリゴ：一[緒]{しょ}に[映画]{えいが}、見に行かない？", why:"Rodrigo explains why he asked: an invitation."},
+            {t:"チェスカ：いいね！何時？", why:"Cheska accepts and asks about the time."},
+            {t:"ロドリゴ：七時はどう？", why:"Rodrigo answers her question with a suggestion."}
           ]
         }
       ],
@@ -1046,7 +1046,7 @@ ICA.addUnit({
             "The clause has its own tense, which tells you when its action happens: [明日]{あした}[来]{く}る人 (the people coming tomorrow) and [昨日]{きのう}来た人 (the people who came yesterday).",
             "～ている clauses are the usual way to describe what people are wearing or a state that continues: [眼鏡]{めがね}をかけている人 (the person wearing glasses), [結婚]{けっこん}している友だち (a friend who is married). In this kind of description the た-form can mean the same thing: [眼鏡]{めがね}をかけた人 is also “the person wearing glasses”, not someone who wore them once.",
             {
-              ex:"あそこで本を[読]{よ}んでいる人は、[私]{わたし}の[姉]{あね}です。\nThe person reading a book over there is my older sister.\n\n[去年]{きょねん}行った[町]{まち}は、とてもきれいでした。\nThe town I went to last year was very beautiful.\n\nアナさんが[作]{つく}った[料理]{りょうり}を食べました。\nI ate the food Ana made.",
+              ex:"あそこで本を[読]{よ}んでいる人は、[私]{わたし}の[姉]{あね}です。\nThe person reading a book over there is my older sister.\n\n[去年]{きょねん}行った[町]{まち}は、とてもきれいでした。\nThe town I went to last year was very beautiful.\n\nかいとさんが[作]{つく}った[料理]{りょうり}を食べました。\nI ate the food Kaito made.",
               label:"Verb clauses in polite sentences"
             }
           ]
@@ -1079,7 +1079,7 @@ ICA.addUnit({
           body:[
             "Inside a noun-modifying clause, the doer of the action is marked with が, not with は:",
             {
-              ex:"[私]{わたし}が[作]{つく}ったケーキ\nthe cake I made\n\nミンさんが[住]{す}んでいる[町]{まち}\nthe town where Min lives\n\n[私]{わたし}が[好]{す}きな食べ[物]{もの}\nfood I like",
+              ex:"[私]{わたし}が[作]{つく}ったケーキ\nthe cake I made\n\nチェスカさんの[家族]{かぞく}が[住]{す}んでいる[町]{まち}\nthe town where Cheska’s family lives\n\n[私]{わたし}が[好]{す}きな食べ[物]{もの}\nfood I like",
               label:"が inside the clause"
             },
             "This is why Unit 2 said the doer of a describing clause takes が. は marks the topic of the **whole sentence**, so it belongs outside the clause. Compare: [私]{わたし}が[作]{つく}ったケーキはおいしい (The cake I made is delicious) has が inside the clause and は on the whole phrase.",
@@ -1203,25 +1203,25 @@ ICA.addUnit({
         {
           id:"e3u5-l4-x5",
           type:"mcq",
-          q:"What does this mean? 「アナさんを[待]{ま}っている人はだれですか。」",
+          q:"What does this mean? 「まりやさんを[待]{ま}っている人はだれですか。」",
           options:[
             {
-              t:"Who is the person waiting for Ana?",
+              t:"Who is the person waiting for Mariya?",
               ok:true,
-              why:"Right. The clause アナさんを[待]{ま}っている describes 人: the person is waiting for Ana (アナさん is the object, with を)."
+              why:"Right. The clause まりやさんを[待]{ま}っている describes 人: the person is waiting for Mariya (まりやさん is the object, with を)."
             },
-            {t:"Who is Ana waiting for?", why:"That would be アナさんが[待]{ま}っている人: with が, Ana is the one waiting."},
-            {t:"Who waited for Ana?", why:"[待]{ま}っている is ongoing (～ている), not past. “Who waited” would be [待]{ま}った人."},
+            {t:"Who is Mariya waiting for?", why:"That would be まりやさんが[待]{ま}っている人: with が, Mariya is the one waiting."},
+            {t:"Who waited for Mariya?", why:"[待]{ま}っている is ongoing (～ている), not past. “Who waited” would be [待]{ま}った人."},
             {
-              t:"Is Ana waiting for someone?",
-              why:"The question word だれ asks who the person is. The sentence is about a person who is waiting for Ana."
+              t:"Is Mariya waiting for someone?",
+              why:"The question word だれ asks who the person is. The sentence is about a person who is waiting for Mariya."
             }
           ]
         },
         {
           id:"e3u5-l4-x6",
           type:"spot",
-          q:"Mei describes a holiday photo. Tap each part with a **grammar mistake**.",
+          q:"Cheska describes a holiday photo. Tap each part with a **grammar mistake**.",
           ask:"has a grammar mistake",
           parts:[
             {t:"これは[去]{きょ}年行った[海]{うみ}の[写真]{しゃしん}です。", flag:false, why:"Correct: [去]{きょ}年行った describes [海]{うみ}."},
@@ -1379,7 +1379,7 @@ ICA.addUnit({
             "Because ～んです always connects a sentence to some situation, using it where there is nothing to connect sounds strange:",
             {
               list:[
-                "**Self-introductions.** はじめまして。アナです。 is right. ✗ はじめまして。アナなんです。 sounds as if you are explaining something nobody asked about.",
+                "**Self-introductions.** はじめまして。イエンです。 is right. ✗ はじめまして。イエンなんです。 sounds as if you are explaining something nobody asked about.",
                 "**Plain facts and simple questions.** A new classmate asks [出身]{しゅっしん}はどこですか (Where are you from?) and you answer ブラジルです. There is nothing to explain, so no んです.",
                 "**Every sentence.** If you put ～んです on everything, you sound as though you are always making excuses or insisting."
               ]
@@ -1396,19 +1396,19 @@ ICA.addUnit({
             "To report what someone said, Japanese uses と, the quotation particle, before [言]{い}う (say). There are two ways, just as in English.",
             "A **direct quote** repeats the exact words inside 「 」, in whatever style the speaker used:",
             {
-              ex:"[田中]{たなか}さんは「[明日]{あした}は休みです」と[言]{い}いました。\nMr Tanaka said, “Tomorrow is a day off.”",
+              ex:"ロドリゴさんは「[明日]{あした}は休みです」と[言]{い}いました。\nRodrigo said, “Tomorrow is a day off.”",
               label:"Direct quote"
             },
             "An **indirect quote** puts the words into your own sentence, in the plain form. Nouns and な-adjectives keep だ before と:",
             {
-              ex:"[田中]{たなか}さんは、[明日]{あした}は休みだと[言]{い}いました。\nMr Tanaka said that tomorrow is a day off.\n\nサラさんは、[日曜日]{にちようび}は[忙]{いそが}しいと[言]{い}っていました。\nSara was saying she’s busy on Sunday.",
+              ex:"ロドリゴさんは、[明日]{あした}は休みだと[言]{い}いました。\nRodrigo said that tomorrow is a day off.\n\nあおいさんは、[日曜日]{にちようび}は[忙]{いそが}しいと[言]{い}っていました。\nSara was saying she’s busy on Sunday.",
               label:"Indirect quote"
             },
             "～と[言]{い}っていました (was saying) is the usual way to pass on a message: you are reporting what someone told you earlier.",
             "Two more uses of と[言]{い}う you will need every day. To ask what something is called: これは日本語で[何]{なん}と[言]{い}いますか。 (What do you call this in Japanese?) And to name something: 「みどり」という[店]{みせ} (a shop called Midori). The glossary entry is [[to-iu]].",
             "In casual speech, って replaces と, and often the verb too:",
             {
-              ex:"[明日]{あした}、休みだって。\nApparently tomorrow’s a day off. / They say tomorrow’s a day off.\n\nユキ、[来]{こ}ないって。\nYuki says she isn’t coming.\n\n[今]{いま}、何て[言]{い}った？\nWhat did you just say?",
+              ex:"[明日]{あした}、休みだって。\nApparently tomorrow’s a day off. / They say tomorrow’s a day off.\n\nあおい、[来]{こ}ないって。\nAoi says she isn’t coming.\n\n[今]{いま}、何て[言]{い}った？\nWhat did you just say?",
               label:"Casual って"
             }
           ]
@@ -1418,7 +1418,7 @@ ICA.addUnit({
           body:[
             "To say what you think, put a plain form before と[思]{おも}います ([[to-omou]]). The rule for だ is the same as in an indirect quote: verbs and い-adjectives go straight in, nouns and な-adjectives keep だ.",
             {
-              ex:"[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.\n\nこの本はおもしろいと[思]{おも}います。\nI think this book is interesting.\n\nあの[人]{ひと}はミンさんのお[兄]{にい}さんだと[思]{おも}います。\nI think that’s Min’s older brother.\n\nこの[町]{まち}は[便利]{べんり}だと[思]{おも}います。\nI think this town is convenient.",
+              ex:"[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.\n\nこの本はおもしろいと[思]{おも}います。\nI think this book is interesting.\n\nあの[人]{ひと}はめぐみさんのお[兄]{にい}さんだと[思]{おも}います。\nI think that’s Megumi’s older brother.\n\nこの[町]{まち}は[便利]{べんり}だと[思]{おも}います。\nI think this town is convenient.",
               label:"Giving opinions"
             },
             {
@@ -1429,7 +1429,7 @@ ICA.addUnit({
             "Japanese speakers use ～と[思]{おも}います a lot, even when they are fairly sure, because it presents a statement as a personal view rather than a hard fact. It makes opinions sound modest and polite.",
             "To say what you **don’t** think, Japanese usually makes the inner sentence negative: 雨は[降]{ふ}らないと[思]{おも}います (I don’t think it will rain; literally, I think it won’t rain). ～とは[思]{おも}いません also exists, but it usually sounds like rejecting an idea someone has put forward: そうは[思]{おも}いません (I don’t think so).",
             "To ask for an opinion, say どう[思]{おも}いますか (What do you think?). To agree: [私]{わたし}もそう[思]{おも}います (I think so too).",
-            "For **other people’s** thoughts, ～と[思]{おも}います doesn’t work, because it always reports the speaker’s own view. Say what they told you, ～と[言]{い}っていました, or use ～と[思]{おも}っています (has been thinking): アナさんは、[来年]{らいねん}日本へ行きたいと[言]{い}っていました。 (Ana was saying she wants to go to Japan next year.)"
+            "For **other people’s** thoughts, ～と[思]{おも}います doesn’t work, because it always reports the speaker’s own view. Say what they told you, ～と[言]{い}っていました, or use ～と[思]{おも}っています (has been thinking): ロドリゴさんは、[来年]{らいねん}[東京]{とうきょう}へ行きたいと[言]{い}っていました。 (Rodrigo was saying he wants to go to Tokyo next year.)"
           ]
         },
         {
@@ -1443,7 +1443,7 @@ ICA.addUnit({
                 ["[高]{たか}いだと[思]{おも}います","高いと[思]{おも}います","い-adjectives never take だ."],
                 ["学生だんです","学生なんです","Before ん, だ becomes な."],
                 ["行きますと[思]{おも}います","行くと[思]{おも}います","Plain form inside; politeness at the end."],
-                ["はじめまして。アナなんです。","はじめまして。アナです。","Nothing to explain, so no んです."]
+                ["はじめまして。イエンなんです。","はじめまして。イエンです。","Nothing to explain, so no んです."]
               ]
             },
             "You have now met the whole plain-form system and its most important uses. Plain forms will be inside almost every N4 pattern from here on: the potential and volitional forms and conditionals in Unit 6, and the passive, causative and ～そうだ in Unit 7. If some forms still feel slow, that is normal; forgetting and relearning is how memory works, and short daily review fixes it.",
@@ -1508,7 +1508,7 @@ ICA.addUnit({
         {
           id:"e3u5-l5-x4",
           type:"match",
-          q:"Sara said each of these. Match her words to the indirect quote: サラさんは＿＿[言]{い}いました。",
+          q:"Cheska said each of these. Match her words to the indirect quote: チェスカさんは＿＿[言]{い}いました。",
           pairs:[
             ["「[明日]{あした}は休みです」","[明日]{あした}は休みだと","Noun: です → だ, and だ stays before と."],
             ["「[疲]{つか}れました」","[疲]{つか}れたと","ました → the plain past た."],
@@ -1520,22 +1520,22 @@ ICA.addUnit({
         {
           id:"e3u5-l5-x5",
           type:"mcq",
-          q:"Ken says to you: 「ユキ、今日は来ないって。」 What does he mean?",
+          q:"Mariya says to you: 「あおい、今日は来ないって。」 What does she mean?",
           options:[
             {
-              t:"Yuki says she isn’t coming today.",
+              t:"Aoi says she isn’t coming today.",
               ok:true,
-              why:"Right. って is the casual quotation marker: Ken is passing on what Yuki said."
+              why:"Right. って is the casual quotation marker: Mariya is passing on what Aoi said."
             },
-            {t:"Yuki, don’t come today.", why:"A casual “don’t come” would be 来ないで. って reports someone’s words."},
-            {t:"Yuki didn’t come today.", why:"来ない is non-past. “Didn’t come” would be 来なかった."},
-            {t:"I think Yuki will come today.", why:"来ない is negative, and って reports speech, not the speaker’s opinion."}
+            {t:"Aoi, don’t come today.", why:"A casual “don’t come” would be 来ないで. って reports someone’s words."},
+            {t:"Aoi didn’t come today.", why:"来ない is non-past. “Didn’t come” would be 来なかった."},
+            {t:"I think Aoi will come today.", why:"来ない is negative, and って reports speech, not the speaker’s opinion."}
           ]
         },
         {
           id:"e3u5-l5-x6",
           type:"spot",
-          q:"Priya writes to her study partner. Tap each part with a **grammar mistake**.",
+          q:"Cheska writes to her study partner. Tap each part with a **grammar mistake**.",
           ask:"has a grammar mistake",
           parts:[
             {t:"[明日]{あした}は日本語のテストなんです。", flag:false, why:"Correct: noun + なんです, giving background."},
@@ -1564,9 +1564,9 @@ ICA.addUnit({
           q:"In which situation is ～んです **out of place**?",
           options:[
             {
-              t:"Introducing yourself: はじめまして。アナなんです。",
+              t:"Introducing yourself: はじめまして。イエンなんです。",
               ok:true,
-              why:"Right. A self-introduction explains nothing, so ～んです sounds as if you are answering a question nobody asked. Say アナです."
+              why:"Right. A self-introduction explains nothing, so ～んです sounds as if you are answering a question nobody asked. Say イエンです."
             },
             {
               t:"Explaining why you’re late: バスが来なかったんです。",
@@ -1902,7 +1902,7 @@ ICA.addUnit({
           "**Gap and no gap.** In most clauses the head noun has a role inside the clause: in 母が[作]{つく}ったケーキ, the cake is what was made. Japanese also allows clauses where the noun has no such role and the clause gives its content: [魚]{さかな}を[焼]{や}くにおい (the smell of fish grilling), [電車]{でんしゃ}が[止]{と}まった[理由]{りゆう} (the reason the train stopped). English often needs “of” or “why” here; Japanese simply puts the clause in front.",
           "**～という + noun.** Nouns of speech and thought, such as [話]{はなし} (story), ニュース and [意見]{いけん} (opinion), usually take という between the clause and the noun: [明日]{あした}[雨]{あめ}が[降]{ふ}るというニュース (the news that it will rain tomorrow).",
           "**Relative tense.** Tense inside a clause is often relative to the main event rather than to now. Before 前 (before) the verb is always non-past, and before [後]{あと} (after) it is always past: [寝]{ね}る前に (before going to bed), [食]{た}べた[後]{あと}で (after eating), even when talking about the past. Before [時]{とき} (when), the choice depends on whether the clause’s action is complete at the time of the main event: [日本]{にほん}へ行く[時]{とき} means on the way or before going, while [日本]{にほん}へ行った[時]{とき} means once there or after going.",
-          "**が and の.** の for the doer (linguists call this the が/の alternation, ガ/ノ[交替]{こうたい}, “ga/no conversion”) is most natural in short clauses where the doer comes right before the verb or adjective. When an object with を comes between the doer and the verb, の sounds wrong to most speakers (✗ [山田]{やまだ}さんの本を[買]{か}った[店]{みせ}), so use が: [山田]{やまだ}さんが本を[買]{か}った[店]{みせ}. In other long clauses, too, が is clearer.",
+          "**が and の.** の for the doer (linguists call this the が/の alternation, ガ/ノ[交替]{こうたい}, “ga/no conversion”) is most natural in short clauses where the doer comes right before the verb or adjective. When an object with を comes between the doer and the verb, の sounds wrong to most speakers (✗ あおいさんの本を[買]{か}った[店]{みせ}), so use が: あおいさんが本を[買]{か}った[店]{みせ}. In other long clauses, too, が is clearer.",
           "**No limit on length, but…** Clauses can nest and grow long, especially in writing. Good writers keep them manageable, and readers handle them by finding each head noun and working outwards."
         ]
       },
@@ -1934,7 +1934,7 @@ ICA.addUnit({
           },
           "To build it, put a plain form before んです. After a noun or な-adjective, add な: [休]{やす}みなんです, [好]{す}きなんです.",
           "In casual speech, statements use ～んだ and questions use ～の: どうしたの？",
-          "Don’t use it when there is nothing to explain. In a self-introduction, say アナです, not ✗ アナなんです.",
+          "Don’t use it when there is nothing to explain. In a self-introduction, say イエンです, not ✗ イエンなんです.",
           {key:"～んです: use it when there is something to explain."},
           "A good test: could you add “you see” or “the thing is” to the English? If so, ～んです probably fits. If the sentence is just a plain fact, such as your name or the time, use です or ます."
         ],
@@ -1997,7 +1997,7 @@ ICA.addUnit({
         starter:[
           "と is the quotation particle: it marks what someone said or thought. It goes before [言]{い}う (say) and [思]{おも}う (think).",
           {
-            ex:"[田中]{たなか}さんは「[明日]{あした}は[休]{やす}みです」と[言]{い}いました。\nMr Tanaka said, “Tomorrow is a day off.”\n\n[田中]{たなか}さんは、[明日]{あした}は休みだと[言]{い}いました。\nMr Tanaka said that tomorrow is a day off.\n\n[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.",
+            ex:"ロドリゴさんは「[明日]{あした}は[休]{やす}みです」と[言]{い}いました。\nRodrigo said, “Tomorrow is a day off.”\n\nロドリゴさんは、[明日]{あした}は休みだと[言]{い}いました。\nRodrigo said that tomorrow is a day off.\n\n[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.",
             label:"Quoting and thinking"
           },
           "In your own words, the quote is in the plain form. Nouns and な-adjectives keep だ before と: 休みだと, [便利]{べんり}だと. い-adjectives and verbs go straight in.",
@@ -2008,18 +2008,18 @@ ICA.addUnit({
         builder:[
           {h:"Saying"},
           "Direct quotes keep the exact words in 「 」, polite or plain. Indirect quotes use plain forms. ～と[言]{い}っていました passes on a message (“was saying”). これは[日本語]{にほんご}で[何]{なん}と[言]{い}いますか asks what something is called; 「みどり」という[店]{みせ} names it (a shop called Midori).",
-          "Inside an indirect quote, the speaker’s politeness disappears: whether Sara said [行]{い}きません or 行かない, you report サラさんは行かないと[言]{い}いました. The politeness of your own sentence is decided by its end, [言]{い}いました or [言]{い}った, according to who you are talking to.",
-          "～という + noun is very useful for things the listener may not know: 「どら[焼]{や}き」というお[菓子]{かし} (a sweet called dorayaki), [山田]{やまだ}さんという[人]{ひと} (a person called Yamada). It politely signals “this may be new to you”.",
+          "Inside an indirect quote, the speaker’s politeness disappears: whether Cheska said [行]{い}きません or 行かない, you report チェスカさんは行かないと[言]{い}いました. The politeness of your own sentence is decided by its end, [言]{い}いました or [言]{い}った, according to who you are talking to.",
+          "～という + noun is very useful for things the listener may not know: 「どら[焼]{や}き」というお[菓子]{かし} (a sweet called dorayaki), さとうさんという[人]{ひと} (a person called Satō). It politely signals “this may be new to you”.",
           {h:"Thinking"},
           "～と[思]{おも}います gives your opinion and makes statements modest. To say you don’t think something, make the inner sentence negative: 雨は[降]{ふ}らないと[思]{おも}います. ～とは[思]{おも}いません sounds like firm disagreement: そうは[思]{おも}いません. Ask with どう[思]{おも}いますか; agree with [私]{わたし}もそう[思]{おも}います.",
-          "～と[思]{おも}います always reports the speaker’s view. For someone else, use ～と[言]{い}っていました or ～と[思]{おも}っています: アナさんは日本で[働]{はたら}きたいと[思]{おも}っています (Ana is thinking of working in Japan; this assumes she has told you).",
+          "～と[思]{おも}います always reports the speaker’s view. For someone else, use ～と[言]{い}っていました or ～と[思]{おも}っています: イエンさんは日本で[働]{はたら}きたいと[思]{おも}っています (Yến is thinking of working in Japan; this assumes she has told you).",
           {h:"Casual って"},
-          "って replaces と, and the verb can drop: ユキ、[来]{こ}ないって (Yuki says she isn’t coming). 何て[言]{い}った？ (What did you say?) って[思]{おも}う is casual と[思]{おも}う.",
+          "って replaces と, and the verb can drop: あおい、[来]{こ}ないって (Aoi says she isn’t coming). 何て[言]{い}った？ (What did you say?) って[思]{おも}う is casual と[思]{おも}う.",
           {h:"Common slips"},
           "✗ [学生]{がくせい}と[思]{おも}います → [学生]{がくせい}だと. ✗ [便利]{べんり}なと → [便利]{べんり}だと. ✗ [高]{たか}いだと → 高いと. ✗ 行きますと[思]{おも}います → 行くと."
         ],
         pro:[
-          "**Perspective in indirect quotes.** Indirect quotes are told from the reporter’s point of view, so words for “come” and “go”, “I” and “you”, and time words may change, as in English. If Ken phones you while you wait at the station and says 「すぐ行きます」 (I’ll be right there), you might tell the friend waiting with you: ケンさんはすぐ[来]{く}ると[言]{い}っていました.",
+          "**Perspective in indirect quotes.** Indirect quotes are told from the reporter’s point of view, so words for “come” and “go”, “I” and “you”, and time words may change, as in English. If Toby phones you while you wait at the station and says 「すぐ行きます」 (I’ll be right there), you might tell the friend waiting with you: トビーさんはすぐ[来]{く}ると[言]{い}っていました.",
           "**Questions and requests.** Reported questions use か before と or without と: [何時]{なんじ}に来るかと[聞]{き}きました (asked what time I would come), 来るかどうかわかりません (I don’t know whether they’ll come). Reported requests and instructions often use ～ように[言]{い}う: [先生]{せんせい}は[宿題]{しゅくだい}を[出]{だ}すように[言]{い}いました (The teacher told us to hand in the homework).",
           "**って as a topic.** Casual って also replaces とは or は when you ask what something is: タメ[口]{ぐち}って何ですか。 (What is “tameguchi”?) Here it means “the thing called…”.",
           "**Hearsay.** Besides ～って and ～と[言]{い}っていました, Japanese reports what it heard with ～そうです (plain form + そうです: 雨が[降]{ふ}るそうです, I hear it will rain), which Unit 7 teaches next to the look-alike ～そうです of appearance ([[sou-hearsay]]).",
@@ -2168,7 +2168,7 @@ ICA.addUnit({
       id:"e3u5-q05",
       lesson:"e3u5-l1",
       level:2,
-      q:"Kenji writes his diary in the plain style. How does he write “I didn’t go to the gym today”?",
+      q:"Rodrigo writes his diary in the plain style. How does he write “I didn’t go to the gym today”?",
       options:[
         {t:"[今日]{きょう}はジムに[行]{い}かなかった。", ok:true, why:"The plain past negative of 行く, which suits a plain-style diary."},
         {t:"今日はジムに行かなかったです。", why:"Grammatical, but polite. A plain-style diary leaves out です."},
@@ -2192,22 +2192,22 @@ ICA.addUnit({
       id:"e3u5-q07",
       lesson:"e3u5-l1",
       level:3,
-      q:"Mei gets a message from a friend: 「[土曜日]{どようび}、[一緒]{いっしょ}に[映画]{えいが}[見]{み}に[行]{い}かない？」 What is the friend doing?",
+      q:"Yến gets a message from Mariya: 「[土曜日]{どようび}、[一緒]{いっしょ}に[映画]{えいが}[見]{み}に[行]{い}かない？」 What is the friend doing?",
       options:[
         {
-          t:"Inviting Mei to go to a film together on Saturday",
+          t:"Inviting Yến to go to a film together on Saturday",
           ok:true,
           why:"～ない？ with a rising voice is the casual form of ～ませんか: an invitation."
         },
         {
-          t:"Asking whether Mei didn’t go to a film on Saturday",
+          t:"Asking whether Yến didn’t go to a film on Saturday",
           why:"That would need a past form, 行かなかった？ ～ない？ about the future is an invitation."
         },
         {
           t:"Saying that she won’t go to a film on Saturday",
           why:"The question mark and the rising voice make it an invitation, not a statement."
         },
-        {t:"Telling Mei not to go to the film", why:"“Don’t go” would be 行かないで. ～ない？ invites."}
+        {t:"Telling Yến not to go to the film", why:"“Don’t go” would be 行かないで. ～ない？ invites."}
       ]
     },
     {
@@ -2230,7 +2230,7 @@ ICA.addUnit({
       id:"e3u5-q09",
       lesson:"e3u5-l1",
       level:3,
-      q:"Priya’s plain-style diary has these four sentences. Which one should she change to keep the style consistent?",
+      q:"Cheska’s plain-style diary has these four sentences. Which one should she change to keep the style consistent?",
       options:[
         {
           t:"[昨日]{きのう}は[寒]{さむ}かったです。",
@@ -2308,18 +2308,18 @@ ICA.addUnit({
       id:"e3u5-q14",
       lesson:"e3u5-l2",
       level:3,
-      q:"Ana and Rina are new classmates of the same age and have spoken politely for a few weeks. Then Rina says: 「タメ[口]{ぐち}でいいよ。」 What is the most natural thing for Ana to do?",
+      q:"Kaito and Rodrigo have lived in the same house for two months and still speak politely. Then Rodrigo says: 「タメ[口]{ぐち}でいいよ。」 What is the most natural thing for Kaito to do?",
       options:[
         {
-          t:"Start speaking to Rina in plain forms",
+          t:"Start speaking to Rodrigo in plain forms",
           ok:true,
-          why:"Rina has invited her to use casual speech, so switching is natural and friendly."
+          why:"Rodrigo has invited him to use casual speech, so switching is natural and friendly."
         },
         {
           t:"Speak even more politely, with more keigo",
-          why:"Rina asked for the opposite: casual speech between equals."
+          why:"Rodrigo asked for the opposite: casual speech between friends."
         },
-        {t:"Stop talking to Rina", why:"The invitation is friendly. Nothing here is a problem."},
+        {t:"Stop talking to Rodrigo", why:"The invitation is friendly. Nothing here is a problem."},
         {t:"Only use plain forms in writing", why:"The invitation is about how they talk to each other."}
       ]
     },
@@ -2484,7 +2484,7 @@ ICA.addUnit({
       id:"e3u5-q25",
       lesson:"e3u5-l3",
       level:2,
-      q:"Sara says: 「[明日]{あした}のパーティー、[八時]{はちじ}からだよね？」 What is she doing?",
+      q:"Cheska says: 「[明日]{あした}のパーティー、[八時]{はちじ}からだよね？」 What is she doing?",
       options:[
         {
           t:"Checking something she thinks they both know",
@@ -2500,7 +2500,7 @@ ICA.addUnit({
       id:"e3u5-q26",
       lesson:"e3u5-l3",
       level:3,
-      q:"At a bus stop, Ken asks a stranger: 「このバス、[駅]{えき}に[行]{い}く？」 What is the problem?",
+      q:"At a bus stop, Rodrigo asks a stranger: 「このバス、[駅]{えき}に[行]{い}く？」 What is the problem?",
       options:[
         {
           t:"It is too casual for a stranger",
@@ -2619,7 +2619,7 @@ ICA.addUnit({
       id:"e3u5-q34",
       lesson:"e3u5-l4",
       level:3,
-      q:"Ana can’t remember the word for “umbrella” (かさ) in a shop. Which description works best?",
+      q:"Cheska can’t remember the word for “umbrella” (かさ) in a shop. Which description works best?",
       options:[
         {
           t:"[雨]{あめ}の[日]{ひ}に[使]{つか}うもの",
@@ -2654,7 +2654,7 @@ ICA.addUnit({
       id:"e3u5-q36",
       lesson:"e3u5-l4",
       level:3,
-      q:"At a party, Kenji asks: 「あそこで[写真]{しゃしん}を[撮]{と}っている[人]{ひと}はだれですか。」 What is he asking?",
+      q:"At a party, Toby asks: 「あそこで[写真]{しゃしん}を[撮]{と}っている[人]{ひと}はだれですか。」 What is he asking?",
       options:[
         {
           t:"Who is the person taking photos over there?",
@@ -2697,12 +2697,12 @@ ICA.addUnit({
       id:"e3u5-q39",
       lesson:"e3u5-l5",
       level:2,
-      q:"Sara said 「[明日]{あした}は[行]{い}きません」. Report it in your own words: サラさんは、[明日]{あした}は＿＿[言]{い}いました。",
+      q:"Cheska said 「[明日]{あした}は[行]{い}きません」. Report it in your own words: チェスカさんは、[明日]{あした}は＿＿[言]{い}いました。",
       options:[
         {t:"行かないと", ok:true, why:"ません → the plain ない-form, then と."},
         {t:"行かないだと", why:"だ follows nouns and な-adjectives only. ない ends in い, like an い-adjective."},
         {t:"行くないと", why:"The ない-form of 行く is 行かない."},
-        {t:"行かなかったと", why:"Past: “she didn’t go”. Sara was talking about tomorrow, so the non-past stays."}
+        {t:"行かなかったと", why:"Past: “she didn’t go”. Cheska was talking about tomorrow, so the non-past stays."}
       ]
     },
     {
@@ -2764,33 +2764,33 @@ ICA.addUnit({
       id:"e3u5-q44",
       lesson:"e3u5-l5",
       level:3,
-      q:"On her first day in a new class, Mei says: 「はじめまして。メイなんです。[中国]{ちゅうごく}から[来]{き}たんです。よろしくお[願]{ねが}いします。」 What sounds odd?",
+      q:"On his first day at the language school, Rodrigo says: 「はじめまして。ロドリゴなんです。メキシコから[来]{き}たんです。よろしくお[願]{ねが}いします。」 What sounds odd?",
       options:[
         {
           t:"The ～んです endings: there is nothing to explain, so plain です・ます would fit better",
           ok:true,
-          why:"In a self-introduction, ～んです sounds as if Mei is answering a question nobody asked. メイです。中国から来ました。 is natural."
+          why:"In a self-introduction, ～んです sounds as if Rodrigo is answering a question nobody asked. ロドリゴです。メキシコから来ました。 is natural."
         },
         {t:"よろしくお[願]{ねが}いします is too casual", why:"It is the standard polite closing of a self-introduction."},
         {t:"はじめまして is rude", why:"はじめまして is the normal greeting when you meet someone for the first time."},
-        {t:"中国から needs が", why:"から (from) is correct. The problem is the ～んです endings."}
+        {t:"メキシコから needs が", why:"から (from) is correct. The problem is the ～んです endings."}
       ]
     },
     {
       id:"e3u5-q45",
       lesson:"e3u5-l5",
       level:2,
-      q:"How do you pass on the message “Ana was saying she’s busy”?",
+      q:"How do you pass on the message “Aoi was saying she’s busy”?",
       options:[
         {
-          t:"アナさんは[忙]{いそが}しいと[言]{い}っていました。",
+          t:"あおいさんは[忙]{いそが}しいと[言]{い}っていました。",
           ok:true,
           why:"い-adjective + と, and ～と[言]{い}っていました for passing on a message."
         },
-        {t:"アナさんは[忙]{いそが}しいだと[言]{い}っていました。", why:"い-adjectives never take だ."},
-        {t:"アナさんは[忙]{いそが}しいと[思]{おも}います。", why:"This means “I think Ana is busy”, your own guess, not her words."},
+        {t:"あおいさんは[忙]{いそが}しいだと[言]{い}っていました。", why:"い-adjectives never take だ."},
+        {t:"あおいさんは[忙]{いそが}しいと[思]{おも}います。", why:"This means “I think Aoi is busy”, your own guess, not her words."},
         {
-          t:"アナさんは[忙]{いそが}しいと[言]{い}っていますでした。",
+          t:"あおいさんは[忙]{いそが}しいと[言]{い}っていますでした。",
           why:"ます and でした can’t be combined. The past of [言]{い}っています is [言]{い}っていました."
         }
       ]
