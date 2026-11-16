@@ -28,11 +28,11 @@ ICA.addUnit({
    learn:[
     {h:"One sentence, three scripts", body:[
       {lead:"Here is an ordinary Japanese sentence. It is short, but it already uses three different kinds of writing."},
-      {ex:"ミンさんは[毎朝]{まいあさ}コーヒーを[飲]{の}みます。\nMin-san wa maiasa kōhī o nomimasu.\n“Min drinks coffee every morning.”", label:"Example"},
+      {ex:"トビーさんは[毎朝]{まいあさ}コーヒーを[飲]{の}みます。\nTobī-san wa maiasa kōhī o nomimasu.\n“Toby drinks coffee every morning.”", label:"Example"},
       "The small kana printed above some characters are [[furigana]]: reading help for the kanji underneath. You will see them on every kanji in this course at N5 level, so you never have to guess a reading.",
-      {table:[["Piece","Script","Why this script?"],["ミン (*Min*)","Katakana","A name from another language"],["さん、は (*san, wa*)","Hiragana","A polite title and a grammar word"],["[毎朝]{まいあさ} (*maiasa*)","Kanji","A word with meaning: “every morning”"],["コーヒー (*kōhī*)","Katakana","A loanword: “coffee”"],["を (*o*)","Hiragana","A grammar word that marks the object"],["[飲]{の} + みます (*no + mimasu*)","Kanji + hiragana","The kanji carries the meaning “drink”; hiragana adds the polite ending"]]},
+      {table:[["Piece","Script","Why this script?"],["トビー (*Tobī*)","Katakana","A name from another language"],["さん、は (*san, wa*)","Hiragana","A polite title and a grammar word"],["[毎朝]{まいあさ} (*maiasa*)","Kanji","A word with meaning: “every morning”"],["コーヒー (*kōhī*)","Katakana","A loanword: “coffee”"],["を (*o*)","Hiragana","A grammar word that marks the object"],["[飲]{の} + みます (*no + mimasu*)","Kanji + hiragana","The kanji carries the meaning “drink”; hiragana adds the polite ending"]]},
       "Notice that there are **no spaces** between words. Japanese doesn’t normally use them. The change from one script to another does much of the work that spaces do in English: your eye sees where the name ends, where the meaning words are and where the grammar is.",
-      {fig:'<svg viewBox="0 0 340 330"><text x="170" y="18" text-anchor="middle">One sentence, three scripts</text><rect class="d-lup" x="16" y="30" width="80" height="56" rx="8" stroke-width="2"/><text x="56" y="54" text-anchor="middle">ミン</text><text class="s" x="56" y="74" text-anchor="middle">Min</text><rect class="d-sage" x="104" y="30" width="100" height="56" rx="8" stroke-width="2"/><text x="154" y="54" text-anchor="middle">さんは</text><text class="s" x="154" y="74" text-anchor="middle">san wa</text><rect class="d-rose" x="212" y="30" width="112" height="56" rx="8" stroke-width="2"/><text x="268" y="54" text-anchor="middle">毎朝</text><text class="s" x="268" y="74" text-anchor="middle">maiasa</text><rect class="d-lup" x="16" y="98" width="96" height="56" rx="8" stroke-width="2"/><text x="64" y="122" text-anchor="middle">コーヒー</text><text class="s" x="64" y="142" text-anchor="middle">kōhī</text><rect class="d-sage" x="120" y="98" width="50" height="56" rx="8" stroke-width="2"/><text x="145" y="122" text-anchor="middle">を</text><text class="s" x="145" y="142" text-anchor="middle">o</text><rect class="d-rose" x="178" y="98" width="50" height="56" rx="8" stroke-width="2"/><text x="203" y="122" text-anchor="middle">飲</text><text class="s" x="203" y="142" text-anchor="middle">no</text><rect class="d-sage" x="236" y="98" width="88" height="56" rx="8" stroke-width="2"/><text x="280" y="122" text-anchor="middle">みます</text><text class="s" x="280" y="142" text-anchor="middle">mimasu</text><text x="170" y="178" text-anchor="middle">“Min drinks coffee every morning.”</text><rect class="d-rose" x="16" y="196" width="22" height="22" rx="4" stroke-width="2"/><text x="48" y="211">Kanji: words and stems with meaning</text><text class="s" x="48" y="228">毎朝 (every morning), 飲 (drink)</text><rect class="d-sage" x="16" y="240" width="22" height="22" rx="4" stroke-width="2"/><text x="48" y="255">Hiragana: grammar, endings, titles</text><text class="s" x="48" y="272">さん, は, を, みます</text><rect class="d-lup" x="16" y="284" width="22" height="22" rx="4" stroke-width="2"/><text x="48" y="299">Katakana: loanwords, foreign names</text><text class="s" x="48" y="316">ミン, コーヒー</text></svg>', alt:"The sentence ミンさんは毎朝コーヒーを飲みます split into coloured boxes: katakana ミン and コーヒー, hiragana さんは, を and みます, and kanji 毎朝 and 飲, with a key explaining each script’s job.", cap:"Each script has a job. Kanji carry meaning, hiragana carry grammar, katakana mark borrowed words and foreign names."}
+      {fig:'<svg viewBox="0 0 340 330"><text x="170" y="18" text-anchor="middle">One sentence, three scripts</text><rect class="d-lup" x="16" y="30" width="80" height="56" rx="8" stroke-width="2"/><text x="56" y="54" text-anchor="middle">トビー</text><text class="s" x="56" y="74" text-anchor="middle">Toby</text><rect class="d-sage" x="104" y="30" width="100" height="56" rx="8" stroke-width="2"/><text x="154" y="54" text-anchor="middle">さんは</text><text class="s" x="154" y="74" text-anchor="middle">san wa</text><rect class="d-rose" x="212" y="30" width="112" height="56" rx="8" stroke-width="2"/><text x="268" y="54" text-anchor="middle">毎朝</text><text class="s" x="268" y="74" text-anchor="middle">maiasa</text><rect class="d-lup" x="16" y="98" width="96" height="56" rx="8" stroke-width="2"/><text x="64" y="122" text-anchor="middle">コーヒー</text><text class="s" x="64" y="142" text-anchor="middle">kōhī</text><rect class="d-sage" x="120" y="98" width="50" height="56" rx="8" stroke-width="2"/><text x="145" y="122" text-anchor="middle">を</text><text class="s" x="145" y="142" text-anchor="middle">o</text><rect class="d-rose" x="178" y="98" width="50" height="56" rx="8" stroke-width="2"/><text x="203" y="122" text-anchor="middle">飲</text><text class="s" x="203" y="142" text-anchor="middle">no</text><rect class="d-sage" x="236" y="98" width="88" height="56" rx="8" stroke-width="2"/><text x="280" y="122" text-anchor="middle">みます</text><text class="s" x="280" y="142" text-anchor="middle">mimasu</text><text x="170" y="178" text-anchor="middle">“Toby drinks coffee every morning.”</text><rect class="d-rose" x="16" y="196" width="22" height="22" rx="4" stroke-width="2"/><text x="48" y="211">Kanji: words and stems with meaning</text><text class="s" x="48" y="228">毎朝 (every morning), 飲 (drink)</text><rect class="d-sage" x="16" y="240" width="22" height="22" rx="4" stroke-width="2"/><text x="48" y="255">Hiragana: grammar, endings, titles</text><text class="s" x="48" y="272">さん, は, を, みます</text><rect class="d-lup" x="16" y="284" width="22" height="22" rx="4" stroke-width="2"/><text x="48" y="299">Katakana: loanwords, foreign names</text><text class="s" x="48" y="316">トビー, コーヒー</text></svg>', alt:"The sentence トビーさんは毎朝コーヒーを飲みます split into coloured boxes: katakana トビー and コーヒー, hiragana さんは, を and みます, and kanji 毎朝 and 飲, with a key explaining each script’s job.", cap:"Each script has a job. Kanji carry meaning, hiragana carry grammar, katakana mark borrowed words and foreign names."}
     ]},
     {h:"Why three scripts?", body:[
       "Japanese borrowed **[[kanji-term|kanji]]** ([漢字]{かんじ}, *kanji*, “Han characters”) from China more than a thousand years ago. Each kanji stands for a meaning and has one or more readings. Kanji are good at meaning, but Japanese grammar is very different from Chinese: it adds endings to verbs and adjectives and uses small grammar words after nouns. Kanji alone could not show those parts clearly.",
@@ -42,7 +42,7 @@ ICA.addUnit({
         "**[[katakana|Katakana]]** (カタカナ) was made from **parts** of kanji. For example, カ (*ka*) is the left side of [加]{か}. Buddhist monks used these quick marks as reading notes. Katakana looks straight and angular."
       ]},
       "Today the three scripts share the work:",
-      {table:[["Script","Main jobs today","Examples"],["Kanji","Nouns and the meaning part (stem) of verbs and adjectives","[山]{やま} mountain, [飲]{の}む drink"],["Hiragana","Grammar words (particles), word endings, native words without common kanji, furigana","は, を, ～ます, ありがとう"],["Katakana","Loanwords, names from other languages, many sound words, emphasis","コーヒー, アナ, ワンワン (woof)"]]},
+      {table:[["Script","Main jobs today","Examples"],["Kanji","Nouns and the meaning part (stem) of verbs and adjectives","[山]{やま} mountain, [飲]{の}む drink"],["Hiragana","Grammar words (particles), word endings, native words without common kanji, furigana","は, を, ～ます, ありがとう"],["Katakana","Loanwords, names from other languages, many sound words, emphasis","コーヒー, チェスカ, ワンワン (woof)"]]},
       "The endings written in hiragana after a kanji, like the みます in [飲]{の}みます, are called [[okurigana]]. You will meet them properly in Unit 4.",
       "There are many kanji. The official list for general use ([常用漢字]{じょうようかんじ}, *jōyō kanji*) has 2,136 of them. That is why you start with kana: with hiragana (46 basic shapes, plus a few marks and small kana you will meet in Lesson 3) you can already write **any** Japanese word by its sound, even before you know its kanji. Children’s books and learner materials do exactly that.",
       {tip:"Writing a word in hiragana when you don’t know its kanji is normal and correct. Japanese children and adults do it too. As you learn kanji, you will switch common words over."}
@@ -96,7 +96,7 @@ ICA.addUnit({
       {t:"ねこ (cat)", b:1, why:"ね and こ are curvy hiragana. Native words are often written in hiragana while you are learning, and in children’s books."},
       {t:"テレビ (TV)", b:2, why:"テ, レ and ビ are angular katakana. テレビ is a loanword, short for “television”."},
       {t:"を (object marker)", b:1, why:"を is a hiragana grammar word. Particles are always written in hiragana."},
-      {t:"サラ (Sara, a name)", b:2, why:"Names from other languages are written in katakana: サ and ラ are angular katakana shapes."},
+      {t:"ロドリゴ (Rodrigo, a name)", b:2, why:"Names from other languages are written in katakana: サ and ラ are angular katakana shapes."},
       {t:"[本]{ほん} (book)", b:0, why:"[本]{ほん} is a single kanji meaning “book”, read ほん (*hon*)."}
     ]},
     {id:"e3u1-l1-x2", type:"mcq", q:"Why is コーヒー (*kōhī*, coffee) written in katakana?", options:[
@@ -108,7 +108,7 @@ ICA.addUnit({
     {id:"e3u1-l1-x3", type:"match", q:"Match each script to its main job.", pairs:[
       ["Kanji","Words and stems that carry meaning","Kanji stand for meanings, such as [山]{やま} (mountain) and the [飲]{の} (drink) in [飲]{の}みます."],
       ["Hiragana","Grammar words and word endings","Particles like は and を, and endings like the みます in [飲]{の}みます, are hiragana."],
-      ["Katakana","Loanwords and names from other languages","コーヒー and names like アナ or ミン are written in katakana."],
+      ["Katakana","Loanwords and names from other languages","コーヒー and names like チェスカ or トビー are written in katakana."],
       ["Romaji","Signs for visitors, passports and typing","Romaji is Japanese in Latin letters. Japanese people use it mainly for typing and for international signs."]
     ]},
     {id:"e3u1-l1-x4", type:"mcq", q:"Which spelling of ふじさん (Mount Fuji) follows Hepburn romaji, the system used in this course?", options:[
@@ -373,7 +373,7 @@ ICA.addUnit({
       {t:"おぱあさん (*opāsan*)", why:"ぱ (*pa*) has the small circle, not the two strokes. Grandmother uses ば (*ba*)."},
       {t:"おばさあん (*obasaan*)", why:"The long vowel is in the wrong place. In *obāsan* it is the *ba* that is long: お・ば・あ・さ・ん."}
     ]},
-    {id:"e3u1-l3-x6", type:"spot", q:"Ana wrote a list of words in hiragana. Tap the spellings that break the standard rules.", ask:"is misspelled", parts:[
+    {id:"e3u1-l3-x6", type:"spot", q:"Cheska wrote a list of words in hiragana. Tap the spellings that break the standard rules.", ask:"is misspelled", parts:[
       {t:"おかあさん", flag:false, why:"Correct: a long *ā* is written by adding あ."},
       " · ",{t:"せんせえ", flag:true, why:"*Sensei* is spelled せんせい. Most words with a long *e* sound are written with い."},
       " · ",{t:"ちょっと", flag:false, why:"Correct: small ょ for *cho*, small っ for the pause."},
@@ -433,7 +433,7 @@ ICA.addUnit({
     ]},
     {h:"What katakana is for", body:[
       "Katakana’s biggest job is writing **[[loanword-katakana|loanwords]]**, words Japanese has taken from other languages. In Japanese these are called [外来語]{がいらいご} ([[gairaigo]], “words that came from outside”). But katakana does more than that:",
-      {table:[["Use","Examples"],["Loanwords from many languages","パン (*pan*, bread, Portuguese), アルバイト (*arubaito*, part-time job, German), コーヒー (*kōhī*, coffee), テレビ (*terebi*, TV)"],["Names of people and places from outside Japan","アナ, サラ, ミン, ルイス; アメリカ (*Amerika*, USA), ブラジル (*Burajiru*, Brazil)"],["Many sound words","ワンワン (*wanwan*, woof)"],["Emphasis, like italics in English","A word normally in hiragana or kanji, written in katakana to make it stand out"],["Names of plant and animal species, especially in science; many company names","ヒト (*hito*, the human species) and サクラ (*sakura*, cherry tree) in a biology text"]]},
+      {table:[["Use","Examples"],["Loanwords from many languages","パン (*pan*, bread, Portuguese), アルバイト (*arubaito*, part-time job, German), コーヒー (*kōhī*, coffee), テレビ (*terebi*, TV)"],["Names of people and places from outside Japan","チェスカ, ロドリゴ, トビー, イエン; アメリカ (*Amerika*, USA), ブラジル (*Burajiru*, Brazil)"],["Many sound words","ワンワン (*wanwan*, woof)"],["Emphasis, like italics in English","A word normally in hiragana or kanji, written in katakana to make it stand out"],["Names of plant and animal species, especially in science; many company names","ヒト (*hito*, the human species) and サクラ (*sakura*, cherry tree) in a biology text"]]},
       "Loanwords don’t always keep their original meaning. マンション (*manshon*, from English “mansion”) means a flat in a block of flats, often a fairly ordinary one. Japanese also builds new words from English parts that English itself doesn’t use. These are called *wasei eigo* (“English made in Japan”): ガソリンスタンド (*gasorin sutando*, “gasoline stand”) is a petrol or gas station.",
       {warn:"Don’t assume a katakana word means the same as the English word it sounds like. Check new ones in a dictionary."}
     ]},
@@ -501,7 +501,7 @@ ICA.addUnit({
       {v:4, tol:0, why:"You left out the two ー bars. Each long-vowel bar adds a full beat."},
       {v:5, tol:0, why:"Close. Check that you counted ン and both ー bars: コ・ン・ピュ・ー・タ・ー."}
     ]},
-    {id:"e3u1-l4-x5", type:"mcq", q:"Kenji is ordering a drink at a café and wants a beer. Which word should he say?", options:[
+    {id:"e3u1-l4-x5", type:"mcq", q:"Toby is ordering a drink at a café and wants a beer. Which word should he say?", options:[
       {t:"ビール (*bīru*)", ok:true, why:"Right. The bar ー makes the *i* long: *bīru*, beer (from Dutch *bier*)."},
       {t:"ビル (*biru*)", why:"With a short *i*, this is “building”. One beat makes the difference."},
       {t:"ベル (*beru*)", why:"This is “bell”: ベ is *be*, not *bi*."},
@@ -683,7 +683,7 @@ ICA.addUnit({
      summary:"Japanese mixes three scripts in one text: kanji for meaning, hiragana for grammar and native words, katakana for loanwords and names, with romaji for typing and signs.",
      levels:{
       starter:[
-        "Japanese is written with **three scripts at once**. **Kanji** are characters borrowed from Chinese; each carries a meaning, like [山]{やま} (mountain). **Hiragana** are curvy sound symbols used for grammar words and endings, such as は and ～ます. **Katakana** are angular sound symbols used mostly for words from other languages and foreign names, such as コーヒー (coffee) and アナ (Ana).",
+        "Japanese is written with **three scripts at once**. **Kanji** are characters borrowed from Chinese; each carries a meaning, like [山]{やま} (mountain). **Hiragana** are curvy sound symbols used for grammar words and endings, such as は and ～ます. **Katakana** are angular sound symbols used mostly for words from other languages and foreign names, such as コーヒー (coffee) and チェスカ (Cheska).",
         "Hiragana and katakana together are called **kana**. Each kana stands for a sound, not a meaning, and the two sets have the same 46 basic sounds.",
         "A fourth system, **romaji**, writes Japanese in Latin letters. You see it on signs for visitors and use it for typing, but ordinary Japanese texts don’t use it.",
         "Japanese has no spaces between words. Switching between scripts helps the reader see where words begin and end.",
@@ -691,8 +691,8 @@ ICA.addUnit({
       ],
       builder:[
         "How the scripts share the work in one sentence:",
-        {ex:"ミンさんは[毎朝]{まいあさ}コーヒーを[飲]{の}みます。\nkatakana name + hiragana title and particle + kanji word + katakana loanword + hiragana particle + kanji stem + hiragana ending", label:"Example"},
-        {table:[["Script","Typical jobs","Examples"],["Kanji","Nouns; stems of verbs and adjectives","[山]{やま}, [飲]{の}む"],["Hiragana","Particles, endings (okurigana), native words without common kanji, furigana","は, を, ～ます, ありがとう"],["Katakana","Loanwords, foreign names, many sound words, emphasis","パン, サラ, ワンワン"],["Romaji","Signs, maps, passports, typing input","Tōkyō, *toukyou* on a keyboard"]]},
+        {ex:"トビーさんは[毎朝]{まいあさ}コーヒーを[飲]{の}みます。\nkatakana name + hiragana title and particle + kanji word + katakana loanword + hiragana particle + kanji stem + hiragana ending", label:"Example"},
+        {table:[["Script","Typical jobs","Examples"],["Kanji","Nouns; stems of verbs and adjectives","[山]{やま}, [飲]{の}む"],["Hiragana","Particles, endings (okurigana), native words without common kanji, furigana","は, を, ～ます, ありがとう"],["Katakana","Loanwords, foreign names, many sound words, emphasis","パン, イエン, ワンワン"],["Romaji","Signs, maps, passports, typing input","Tōkyō, *toukyou* on a keyboard"]]},
         "**Furigana** are small kana printed beside or above kanji to show the reading, common in learner and children’s materials. **Okurigana** are the hiragana endings written after a kanji stem, as in [飲]{の}**みます**.",
         "Japanese can be written **horizontally** (left to right, as in most websites and science texts) or **vertically** (top to bottom, with columns running right to left, as in many novels and newspapers). The characters are the same; a few marks, such as the long-vowel bar ー, turn to fit.",
         "A word may be written in different scripts in different places: ねこ in a children’s book, [猫]{ねこ} in a novel, ネコ in a biology text. All are correct; the choice depends on the reader and the purpose.",
@@ -741,7 +741,7 @@ ICA.addUnit({
      levels:{
       starter:[
         "**Katakana** has the same 46 basic sounds as hiragana, in the same order, but with sharper, straighter shapes: ア イ ウ エ オ, カ キ ク ケ コ, and so on.",
-        "Its main job is writing **loanwords**, words borrowed from other languages: テレビ (TV), コーヒー (coffee), パン (bread, from Portuguese). It is also used for names of people and places from outside Japan (アナ, ブラジル), for many sound words (ワンワン, woof) and to make a word stand out.",
+        "Its main job is writing **loanwords**, words borrowed from other languages: テレビ (TV), コーヒー (coffee), パン (bread, from Portuguese). It is also used for names of people and places from outside Japan (チェスカ, ブラジル), for many sound words (ワンワン, woof) and to make a word stand out.",
         "Long vowels in katakana usually take a **bar, ー**: ケーキ (*kēki*, cake). A small ッ makes a pause, as in hiragana: ベッド (*beddo*, bed).",
         "Many katakana words are easy to guess once you can read them, because you know the original word. That makes katakana a good confidence boost after hiragana.",
         {tip:"Watch the famous look-alikes: シ (*shi*) and ツ (*tsu*), ソ (*so*) and ン (*n*)."}
@@ -902,12 +902,12 @@ ICA.addUnit({
       {t:"Hiragana", why:"Hiragana mostly carries grammar: particles such as は and endings such as ～ます."},
       {t:"Katakana", why:"Katakana mostly writes loanwords and foreign names, by sound."},
       {t:"Romaji", why:"Romaji is Japanese in Latin letters, used for signs and typing, not for ordinary texts."}]},
-    {id:"e3u1-q02", lesson:"e3u1-l1", level:2, q:"In ミンさんは[毎朝]{まいあさ}コーヒーを[飲]{の}みます (“Min drinks coffee every morning”), which part is written in katakana and is a loanword?", options:[
-      {t:"コーヒー", ok:true, why:"コーヒー (*kōhī*, coffee) is angular katakana and a borrowed word. (ミン is katakana too, but it is a name.)"},
+    {id:"e3u1-q02", lesson:"e3u1-l1", level:2, q:"In トビーさんは[毎朝]{まいあさ}コーヒーを[飲]{の}みます (“Toby drinks coffee every morning”), which part is written in katakana and is a loanword?", options:[
+      {t:"コーヒー", ok:true, why:"コーヒー (*kōhī*, coffee) is angular katakana and a borrowed word. (トビー is katakana too, but it is a name.)"},
       {t:"[毎朝]{まいあさ}", why:"[毎朝]{まいあさ} (*maiasa*, every morning) is two kanji."},
       {t:"を", why:"を is the hiragana particle that marks the object."},
       {t:"みます", why:"みます is the hiragana ending of the verb [飲]{の}みます."}]},
-    {id:"e3u1-q03", lesson:"e3u1-l1", level:2, q:"Priya sees サラ on a classmate’s name badge in Japan. Why is the name written in katakana?", options:[
+    {id:"e3u1-q03", lesson:"e3u1-l1", level:2, q:"Yến sees モンドラゴン on one of the mailboxes at her new share house. Why is the name written in katakana?", options:[
       {t:"It is a name from another language, and such names are usually written in katakana", ok:true, why:"Names of people and places from outside Japan are normally written in katakana."},
       {t:"Katakana shows that the person is a teacher", why:"Scripts don’t show someone’s job or status."},
       {t:"Katakana is the polite script for names", why:"Scripts don’t carry politeness. Japanese names are usually written in kanji."},
@@ -922,7 +922,7 @@ ICA.addUnit({
       {t:"50", why:"50 is the number of places in the “fifty sounds” grid, some of which are empty or obsolete."},
       {t:"48", why:"48 includes ゐ and ゑ, which are no longer used in standard spelling."},
       {t:"71", why:"71 adds the 25 kana with ゛ and ゜. The question asks for the basic kana only."}]},
-    {id:"e3u1-q06", lesson:"e3u1-l1", level:3, q:"Tomás notices that Japanese text has no spaces between words. What mainly helps Japanese readers see where words begin and end?", options:[
+    {id:"e3u1-q06", lesson:"e3u1-l1", level:3, q:"Rodrigo notices that Japanese text has no spaces between words. What mainly helps Japanese readers see where words begin and end?", options:[
       {t:"The changes between kanji, hiragana and katakana", ok:true, why:"Meaning words in kanji, grammar in hiragana and loanwords in katakana make word boundaries visible."},
       {t:"Capital letters at the start of each word", why:"Japanese scripts have no capital letters."},
       {t:"A comma after every word", why:"Japanese uses commas (、) for pauses in a sentence, not between every word."},
@@ -932,7 +932,7 @@ ICA.addUnit({
       {t:"The な row", why:"な comes after た: …sa, ta, **na**."},
       {t:"The は row", why:"は comes later: …ta, na, **ha**."},
       {t:"The か row", why:"か comes before さ: a, **ka**, sa."}]},
-    {id:"e3u1-q08", lesson:"e3u1-l1", level:3, q:"Mei reads a Japanese children’s book written almost entirely in hiragana, with spaces between words. What is the best explanation?", options:[
+    {id:"e3u1-q08", lesson:"e3u1-l1", level:3, q:"Cheska reads a Japanese children’s book written almost entirely in hiragana, with spaces between words. What is the best explanation?", options:[
       {t:"Any word can be written in hiragana, and books for young readers often avoid kanji and add spaces", ok:true, why:"Hiragana can spell any word by sound, so children’s books (and learner materials) often use it, with spaces to help."},
       {t:"The book is full of spelling mistakes", why:"Writing words in hiragana is not a mistake; it is normal for young readers."},
       {t:"It must be an old book from before kanji were used", why:"Kanji have been used in Japan for more than a thousand years; children’s books use hiragana by choice."},
@@ -968,7 +968,7 @@ ICA.addUnit({
       {t:"Press the top teeth onto the lower lip, as in English “food”", why:"That is the English *f*. Japanese ふ uses the lips only."},
       {t:"Say a strong English *h*, as in “who”", why:"ふ is close to a breathy sound through the lips, but it isn’t an English “who”."},
       {t:"Tap the tongue behind the teeth", why:"A tongue tap is how the ら row is made."}]},
-    {id:"e3u1-q15", lesson:"e3u1-l2", level:3, q:"Hana keeps reading れ (*re*) as わ (*wa*). Which feature should she check?", options:[
+    {id:"e3u1-q15", lesson:"e3u1-l2", level:3, q:"Rodrigo keeps reading れ (*re*) as わ (*wa*). Which feature should he check?", options:[
       {t:"How the last stroke ends: れ kicks out to the right, わ curves round", ok:true, why:"The left strokes are the same; only the ending of the right-hand stroke differs."},
       {t:"Whether there is a dot on top", why:"Neither has a dot."},
       {t:"How many cross strokes there are", why:"Both have one vertical and one cross stroke on the left; the difference is at the end."},
@@ -1075,7 +1075,7 @@ ICA.addUnit({
       {t:"English", why:"The English word is “bread”, not similar at all."},
       {t:"French", why:"French *pain* sounds similar, but the Japanese word came from Portuguese."},
       {t:"German", why:"German gave Japanese words such as アルバイト, but not パン."}]},
-    {id:"e3u1-q36", lesson:"e3u1-l4", level:3, q:"Ana sees an advert for a マンション (*manshon*) at a price she can afford, and expects a huge house. What does マンション usually mean in Japanese?", options:[
+    {id:"e3u1-q36", lesson:"e3u1-l4", level:3, q:"Yến sees an advert for a マンション (*manshon*) at a price she can afford, and expects a huge house. What does マンション usually mean in Japanese?", options:[
       {t:"A flat (apartment) in a block, often an ordinary one", ok:true, why:"Loanword meanings can shift: マンション is a flat in a block of flats."},
       {t:"A large country house, as in English", why:"That is the English meaning, not the Japanese one."},
       {t:"A hotel", why:"Hotel is ホテル."},
@@ -1121,7 +1121,7 @@ ICA.addUnit({
       {t:"English-style syllables", why:"Japanese poetry counts morae, so ん, っ and long vowels each count."},
       {t:"Kanji", why:"A haiku can use any mix of scripts; the count is in sound."},
       {t:"Words", why:"The count is of beats, not words."}]},
-    {id:"e3u1-q45", lesson:"e3u1-l5", level:3, q:"Tomás has learned both kana and has two weeks before a trip to Japan. What is the best way to keep them?", options:[
+    {id:"e3u1-q45", lesson:"e3u1-l5", level:3, q:"Rodrigo has learned both kana and has two weeks before he moves to Japan. What is the best way to keep them?", options:[
       {t:"A short spaced review every day, and reading real words such as menus and signs", ok:true, why:"Daily spaced review plus real reading keeps kana fresh and fast."},
       {t:"One long session the night before he leaves", why:"Cramming fades quickly; spreading reviews out works much better."},
       {t:"Copy the kana chart once and keep it in his bag", why:"A chart is useful, but memory needs practice in recalling, not just a reference."},

@@ -104,7 +104,7 @@ ICA.addUnit({
       " ",
       {t:"人", flag:false, why:"人 is the full kanji for person. 亻 is the narrow form of 人 used on the left of other kanji, so 人 has no にんべん of its own."}
     ]},
-    {id:"e3u4-l1-x5", type:"mcq", q:"Leila wants to look up 聞 in a paper dictionary that sorts kanji by radical. Under which radical will most dictionaries list it?", options:[
+    {id:"e3u4-l1-x5", type:"mcq", q:"Cheska wants to look up 聞 in a paper dictionary that sorts kanji by radical. Under which radical will most dictionaries list it?", options:[
       {t:"耳 (ear)", ok:true, why:"Right. The ear is the meaning part, and most dictionaries file 聞 under 耳, even though the gate 門 is bigger."},
       {t:"門 (gate)", why:"This is the natural guess, and it catches many people. 門 is only the sound part here; most dictionaries use the ear 耳."},
       {t:"日 (sun)", why:"聞 does not contain 日. You may be thinking of 間 (interval), which is 門 + 日 and is listed under 門."},
@@ -241,7 +241,7 @@ ICA.addUnit({
       {v:2.5, tol:0, why:"That is the length in hours. The question asks for minutes: 2.5 × 60 = 150."},
       {v:180, tol:0, why:"You may have read [十時半]{じゅうじはん} as 10:00. 半 means half past: 10:30."}
     ], hint2:"[午前]{ごぜん} = a.m., [午後]{ごご} = p.m., 半 = half past. Turn both times into a 24-hour clock first."},
-    {id:"e3u4-l2-x7", type:"spot", q:"Minh wrote readings for these words. Tap the readings that are wrong.", ask:"has a wrong reading", parts:[
+    {id:"e3u4-l2-x7", type:"spot", q:"Rodrigo wrote readings for these words. Tap the readings that are wrong.", ask:"has a wrong reading", parts:[
       {t:"三月 (さんがつ)", flag:false, why:"Correct: March is さんがつ."},
       " · ",
       {t:"九時 (きゅうじ)", flag:true, why:"Nine o’clock is くじ. 九 is く on the clock and in 九月 (くがつ)."},
@@ -300,8 +300,8 @@ ICA.addUnit({
       "人 has two on readings with different jobs. **じん** follows a country to make a nationality: [日本人]{にほんじん}, ブラジル[人]{じん}, ベトナム[人]{じん}. **にん** follows a number to count people: [三人]{さんにん}, [何人]{なんにん} (how many people). But one and two people are special: ★[一人]{ひとり}, ★[二人]{ふたり}.",
       "Family words come in two sets, and the choice depends on whose family you mean. This idea of inside and outside (your group and other people’s) runs through Japanese ([[uchi-soto]]).",
       {table:[["","My own family (talking to others)","Someone else’s family, or calling your own"],["Father","[父]{ちち}","お[父]{とう}さん"],["Mother","[母]{はは}","お[母]{かあ}さん"]]},
-      {ex:"[先生]{せんせい}：お[父]{とう}さんはお[元気]{げんき}ですか。\nアナ：はい、[父]{ちち}は[元気]{げんき}です。", label:"Inside and outside in one exchange"},
-      "The teacher asks about Ana’s father with お父さん; Ana answers about her own father with 父. At home, Ana calls him お父さん (or a casual word her family uses)."
+      {ex:"[先生]{せんせい}：お[父]{とう}さんはお[元気]{げんき}ですか。\nまりや：はい、[父]{ちち}は[元気]{げんき}です。", label:"Inside and outside in one exchange"},
+      "The teacher asks about Mariya’s father with お父さん; Mariya answers about her own father with 父. At home, Mariya calls him お父さん (or a casual word her family uses)."
     ]},
     {h:"School, names, countries and languages", body:[
       {table:[["Kanji","Meaning","Main readings","Common words"],["生","life; birth; raw","On セイ, ショウ · Kun い(きる), う(まれる), なま","[学生]{がくせい} student · [先生]{せんせい} teacher · [生]{う}まれる be born · [誕生日]{たんじょうび} birthday"],["学","study","On ガク · Kun まな(ぶ)","[大学]{だいがく} university · [学生]{がくせい} student · [学校]{がっこう} school"],["校","school","On コウ","[学校]{がっこう} school · [高校]{こうこう} high school · [校長]{こうちょう} head teacher"],["名","name","On メイ, ミョウ · Kun な","[名前]{なまえ} name · [有名]{ゆうめい} famous"],["国","country","On コク · Kun くに","[国]{くに} country · [外国]{がいこく} foreign country · [中国]{ちゅうごく} China"],["語","language; word","On ゴ","[日本語]{にほんご} Japanese · [英語]{えいご} English · [単語]{たんご} word (vocabulary)"]]},
@@ -332,8 +332,8 @@ ICA.addUnit({
     ]},
     {h:"Read it: a short self-introduction", body:[
       "Here is a short text that uses many of this lesson’s kanji. Read it once for the main idea, then again for details. Every kanji has furigana, as it will in all N5 units.",
-      {ex:"はじめまして。サラ・ロペスです。フィリピンから[来]{き}ました。[父]{ちち}はフィリピン[人]{じん}で、[母]{はは}は[日本人]{にほんじん}です。[今]{いま}、[大学生]{だいがくせい}です。[日本語]{にほんご}の[先生]{せんせい}は[山川]{やまかわ}[先生]{せんせい}です。[毎週]{まいしゅう}[土曜日]{どようび}に、[友]{とも}だちと[山]{やま}に[行]{い}きます。", label:"Sara’s self-introduction"},
-      {list:["Where is Sara’s mother from? (母は**[日本人]{にほんじん}**です: she is Japanese.)","What does Sara do? (**[大学生]{だいがくせい}**です: she is a university student.)","What does she do on Saturdays? ([毎週土曜日]{まいしゅうどようび}に、友だちと**山**に[行]{い}きます: she goes to the mountains with friends every Saturday.)"]},
+      {ex:"はじめまして。チェスカ・イババオです。フィリピンから[来]{き}ました。[父]{ちち}も[母]{はは}もフィリピン[人]{じん}です。[今]{いま}、[大学]{だいがく}の[学生]{がくせい}です。[日本語]{にほんご}の[先生]{せんせい}は、うちの[大家]{おおや}さんです。[毎週]{まいしゅう}[土曜日]{どようび}に、[友]{とも}だちと[山]{やま}に[行]{い}きます。", label:"Cheska’s self-introduction"},
+      {list:["Where are Cheska’s parents from? (父も母も**フィリピン人**です: both of them are Filipino.)","What does Cheska do? ([大学]{だいがく}の**[学生]{がくせい}**です: she is a university student.)","Who is her Japanese teacher? (うちの[大家]{おおや}さんです: her landlady.)","What does she do on Saturdays? ([毎週土曜日]{まいしゅうどようび}に、友だちと**山**に[行]{い}きます: she goes to the mountains with friends every Saturday.)"]},
       "Notice how much the kanji helped: the people (父, 母, [大学生]{だいがくせい}, [先生]{せんせい}), the place (山) and the time ([毎週土曜日]{まいしゅうどようび}) all stand out from the hiragana grammar around them. That is the skill Lesson 5 builds on.",
       {lab:"kl-n5", t:"Practise: people, places, directions and nature kanji"}
     ]}
@@ -347,11 +347,11 @@ ICA.addUnit({
       ["外","outside","外 (そと): outside, as in 外国 (foreign country)."],
       ["中","inside, middle","中 (なか): inside, as in かばんの中 (in the bag)."]
     ]},
-    {id:"e3u4-l3-x2", type:"mcq", q:"Kenji texts you: 「[駅]{えき}の[西口]{にしぐち}にいます。」 Where is he?", options:[
+    {id:"e3u4-l3-x2", type:"mcq", q:"Toby texts you: 「[駅]{えき}の[西口]{にしぐち}にいます。」 Where is he?", options:[
       {t:"At the station’s west exit", ok:true, why:"Right. 西 is west, and 口 here means exit."},
       {t:"At the station’s east exit", why:"East is 東 (ひがし). 西 (にし) is west."},
-      {t:"Inside the station, at the west platform", why:"口 means an opening or exit, not a platform. Kenji is at the west exit."},
-      {t:"At the station’s south exit", why:"South is 南 (みなみ). Kenji wrote 西, west."}
+      {t:"Inside the station, at the west platform", why:"口 means an opening or exit, not a platform. Toby is at the west exit."},
+      {t:"At the station’s south exit", why:"South is 南 (みなみ). Toby wrote 西, west."}
     ]},
     {id:"e3u4-l3-x3", type:"mcq", q:"In class, your teacher asks about your family. Which word do you use for **your own** father when you talk to your teacher?", options:[
       {t:"[父]{ちち}", ok:true, why:"Right. When you speak to people outside your family, you use the plain word 父 for your own father."},
@@ -372,7 +372,7 @@ ICA.addUnit({
       {t:"[木曜日]{もくようび}", why:"Thursday: the wood day."},
       {t:"[金曜日]{きんようび}", why:"Friday: the metal (gold) day. Then come [土曜日]{どようび} (Saturday) and [日曜日]{にちようび} (Sunday)."}
     ]},
-    {id:"e3u4-l3-x6", type:"spot", q:"Ali added furigana to his homework. Tap the words with **wrong** readings.", ask:"has a wrong reading", parts:[
+    {id:"e3u4-l3-x6", type:"spot", q:"Rodrigo added furigana to his homework. Tap the words with **wrong** readings.", ask:"has a wrong reading", parts:[
       {t:"[外国]{がいこく}", flag:false, why:"Correct: 外国 is がいこく, foreign country."},
       " · ",
       {t:"[先生]{さきせい}", flag:true, why:"先生 is せんせい. さき is the kun reading of 先 (ahead), used when 先 stands alone."},
@@ -579,10 +579,10 @@ ICA.addUnit({
       {warn:"[準備中]{じゅんびちゅう} on a restaurant door means it is **not** open, even if you can see people inside. It is often shown between lunch and dinner. [営業中]{えいぎょうちゅう} means you can go in."}
     ]},
     {h:"A message from a friend", body:[
-      "Ana gets this message from Kenji. Read it once, then answer the questions below.",
-      {ex:"アナさん\nこんにちは。[今週]{こんしゅう}の[土曜日]{どようび}、[時間]{じかん}がありますか。[午後]{ごご}[二時]{にじ}に[駅]{えき}の[東口]{ひがしぐち}で[会]{あ}いませんか。いっしょに[映画]{えいが}を[見]{み}ましょう。\nケンジ", label:"Kenji’s message"},
-      {list:["**When?** [今週]{こんしゅう}の[土曜日]{どようび}、[午後]{ごご}[二時]{にじ}: this Saturday at 2 p.m.","**Where?** [駅]{えき}の[東口]{ひがしぐち}: at the station’s east exit.","**What?** [映画]{えいが}を[見]{み}ましょう: let’s watch a film.","**What does Kenji want?** The endings tell you: ～ませんか (won’t you…?) is an invitation, and ～ましょう (let’s…) is a suggestion."]},
-      "Ana can answer with phrases from Unit 2: 「いいですね。[二時]{にじ}に[東口]{ひがしぐち}に[行]{い}きます。」 (Sounds good. I’ll be at the east exit at two.)"
+      "Cheska gets this message from Rodrigo. Read it once, then answer the questions below.",
+      {ex:"チェスカさん\nこんにちは。[今週]{こんしゅう}の[土曜日]{どようび}、[時間]{じかん}がありますか。[午後]{ごご}[二時]{にじ}に[駅]{えき}の[東口]{ひがしぐち}で[会]{あ}いませんか。いっしょに[映画]{えいが}を[見]{み}ましょう。\nロドリゴ", label:"Rodrigo’s message"},
+      {list:["**When?** [今週]{こんしゅう}の[土曜日]{どようび}、[午後]{ごご}[二時]{にじ}: this Saturday at 2 p.m.","**Where?** [駅]{えき}の[東口]{ひがしぐち}: at the station’s east exit.","**What?** [映画]{えいが}を[見]{み}ましょう: let’s watch a film.","**What does Rodrigo want?** The endings tell you: ～ませんか (won’t you…?) is an invitation, and ～ましょう (let’s…) is a suggestion."]},
+      "Cheska can answer with phrases from Unit 2: 「いいですね。[二時]{にじ}に[東口]{ひがしぐち}に[行]{い}きます。」 (Sounds good. I’ll be at the east exit at two.)"
     ]},
     {h:"A notice", body:[
       "This is a notice on the door of a town library. The weekdays in brackets use the first kanji of each day.",
@@ -592,9 +592,9 @@ ICA.addUnit({
     ]},
     {h:"A simple email", body:[
       "Japanese emails have a fixed shape, even short ones: the subject ([件名]{けんめい}), the person’s name, a greeting that says who you are, the message, a set closing phrase and your name.",
-      {ex:"[件名]{けんめい}：[土曜日]{どようび}のクラス\n\nアナさん\n\nこんにちは。〇〇[日本語]{にほんご}[学校]{がっこう}のキムです。\n[今週]{こんしゅう}の[土曜日]{どようび}のクラスは、[午前]{ごぜん}[十時]{じゅうじ}から[十一時半]{じゅういちじはん}までです。[教室]{きょうしつ}は[三階]{さんがい}の305です。\n[教科書]{きょうかしょ}と[辞書]{じしょ}を[持]{も}ってきてください。\n\nよろしくお[願]{ねが}いします。\nキム・ジウ", label:"An email from a language school"},
-      {table:[["Part","In the email","What it does"],["Subject","[件名]{けんめい}：[土曜日]{どようび}のクラス","Says what the email is about"],["Name","アナさん","さん for a classmate or colleague; [先生]{せんせい} for a teacher"],["Who I am","〇〇[日本語]{にほんご}[学校]{がっこう}のキムです","Your group + の + your name (〇〇, read まるまる, stands for a name)"],["Message","…から…までです。…てください。","The facts and the request"],["Closing","よろしくお[願]{ねが}いします","A set phrase: thanks in advance, please treat this kindly"]]},
-      "Questions to try: How long is the class? (10:00 to 11:30: 90 minutes.) Where is it? (Room 305 on the third floor, [三階]{さんがい}.) What should Ana bring? ([教科書]{きょうかしょ} and [辞書]{じしょ}: her textbook and a dictionary.)",
+      {ex:"[件名]{けんめい}：[土曜日]{どようび}のクラス\n\nロドリゴさん\n\nこんにちは。〇〇[日本語]{にほんご}[学校]{がっこう}の[事務室]{じむしつ}です。\n[今週]{こんしゅう}の[土曜日]{どようび}のクラスは、[午前]{ごぜん}[十時]{じゅうじ}から[十一時半]{じゅういちじはん}までです。[教室]{きょうしつ}は[三階]{さんがい}の305です。\n[教科書]{きょうかしょ}と[辞書]{じしょ}を[持]{も}ってきてください。\n\nよろしくお[願]{ねが}いします。\n〇〇[日本語]{にほんご}[学校]{がっこう} [事務室]{じむしつ}", label:"An email from a language school"},
+      {table:[["Part","In the email","What it does"],["Subject","[件名]{けんめい}：[土曜日]{どようび}のクラス","Says what the email is about"],["Name","ロドリゴさん","さん for a classmate or colleague; [先生]{せんせい} for a teacher"],["Who I am","〇〇[日本語]{にほんご}[学校]{がっこう}の[事務室]{じむしつ}です","Your group + の + who you are (〇〇, read まるまる, stands for a name)"],["Message","…から…までです。…てください。","The facts and the request"],["Closing","よろしくお[願]{ねが}いします","A set phrase: thanks in advance, please treat this kindly"]]},
+      "Questions to try: How long is the class? (10:00 to 11:30: 90 minutes.) Where is it? (Room 305 on the third floor, [三階]{さんがい}.) What should Rodrigo bring? ([教科書]{きょうかしょ} and [辞書]{じしょ}: his textbook and a dictionary.)",
       {tip:"よろしくお願いします has no exact English equivalent. It closes almost every request, introduction and work email. You will write it many times, so it is worth learning to write 願 now."}
     ]},
     {h:"The JLPT in brief", body:[
@@ -631,11 +631,11 @@ ICA.addUnit({
       {t:"It is closed all day", why:"Closed for the day is 本日休業 (ほんじつきゅうぎょう). [準備中]{じゅんびちゅう} means closed for now, opening later."},
       {t:"Seats inside are reserved", why:"[準備中]{じゅんびちゅう} is about the restaurant not being open yet, not about reservations."}
     ]},
-    {id:"e3u4-l5-x3", type:"mcq", q:"In Kenji’s message, 「[午後]{ごご}[二時]{にじ}に[駅]{えき}の[東口]{ひがしぐち}で[会]{あ}いませんか。」 What is he doing?", options:[
-      {t:"Inviting Ana to meet at the station’s east exit at 2 p.m.", ok:true, why:"Right. ～ませんか is an invitation (won’t you…?), [午後二時]{ごごにじ} is 2 p.m. and [東口]{ひがしぐち} is the east exit."},
-      {t:"Saying he can’t meet Ana at 2 p.m.", why:"～ませんか looks negative, but with か it is a polite invitation, not a refusal."},
-      {t:"Asking Ana to meet at the west exit at 2 a.m.", why:"東 is east, not west, and [午後]{ごご} is p.m. (afternoon)."},
-      {t:"Telling Ana the station closes at 2 p.m.", why:"The verb is 会う (meet). The sentence is about meeting, not about the station’s hours."}
+    {id:"e3u4-l5-x3", type:"mcq", q:"In Rodrigo’s message, 「[午後]{ごご}[二時]{にじ}に[駅]{えき}の[東口]{ひがしぐち}で[会]{あ}いませんか。」 What is he doing?", options:[
+      {t:"Inviting Cheska to meet at the station’s east exit at 2 p.m.", ok:true, why:"Right. ～ませんか is an invitation (won’t you…?), [午後二時]{ごごにじ} is 2 p.m. and [東口]{ひがしぐち} is the east exit."},
+      {t:"Saying he can’t meet Cheska at 2 p.m.", why:"～ませんか looks negative, but with か it is a polite invitation, not a refusal."},
+      {t:"Asking Cheska to meet at the west exit at 2 a.m.", why:"東 is east, not west, and [午後]{ごご} is p.m. (afternoon)."},
+      {t:"Telling Cheska the station closes at 2 p.m.", why:"The verb is 会う (meet). The sentence is about meeting, not about the station’s hours."}
     ]},
     {id:"e3u4-l5-x4", type:"mcq", q:"Read the library notice in this lesson again. Bilal wants to return a book on 2 January. What should he do?", options:[
       {t:"Put it in the book drop to the right of the entrance", ok:true, why:"Right. The library is closed from 29 December to 3 January, and the notice asks you to return books to the ブックポスト to the right (右) of the entrance ([入口]{いりぐち})."},
@@ -656,11 +656,11 @@ ICA.addUnit({
       {t:"[立入禁止]{たちいりきんし}", b:1, why:"[立入禁止]{たちいりきんし} means no entry, at any time."},
       {t:"(土)・(日) [休]{やす}み", b:0, why:"Closed on Saturdays and Sundays only, so on a weekday it is open."}
     ]},
-    {id:"e3u4-l5-x7", type:"mcq", q:"Sione takes JLPT N5. His scores: Language Knowledge (Vocabulary/Grammar)・Reading 70/120, Listening 15/60, total 85/180. Does he pass?", options:[
+    {id:"e3u4-l5-x7", type:"mcq", q:"Cheska takes JLPT N5. Her scores: Language Knowledge (Vocabulary/Grammar)・Reading 70/120, Listening 15/60, total 85/180. Does she pass?", options:[
       {t:"No: his Listening score is below the sectional minimum of 19", ok:true, why:"Right. You need 80 in total and at least 38 and 19 in the two parts. 15 in Listening is a fail, even with a total of 85."},
       {t:"Yes: 85 is above the pass mark of 80", why:"The total is enough, but each part also has a minimum. Listening needs 19 or more."},
       {t:"Yes: only the total counts at N5", why:"Every level has sectional pass marks. Failing one part means failing the test."},
-      {t:"No: the N5 pass mark is 90", why:"90 is the N4 pass mark. N5 needs 80, but Sione fails because of his Listening score."}
+      {t:"No: the N5 pass mark is 90", why:"90 is the N4 pass mark. N5 needs 80, but Cheska fails because of her Listening score."}
     ]},
     {id:"e3u4-l5-x8", type:"mcq", q:"A website sells a “complete official JLPT N5 kanji list”. What is true?", options:[
       {t:"No official list exists; it is an estimate based on old lists and textbooks", ok:true, why:"Right. The JLPT has published no kanji, vocabulary or grammar lists since the 2010 revision. Lists are useful guides, but not official."},
@@ -678,7 +678,7 @@ ICA.addUnit({
        "Write what it says in English, and list the kanji you recognised."
      ], write:"What it was… what I worked out… kanji I knew… words I looked up…"},
      {t:"Write a short invitation", how:[
-       "Write a message to a friend like Kenji’s: day, time, place and activity, with ～ませんか and ～ましょう.",
+       "Write a message to a friend like Rodrigo’s: day, time, place and activity, with ～ませんか and ～ましょう.",
        "Use kanji you know, with furigana: [土曜日]{どようび}、[午後]{ごご}[三時]{さんじ}に[駅]{えき}の[北口]{きたぐち}で…",
        "Read it aloud. If you like, record yourself privately and listen back."
      ], write:"〇〇さん、こんにちは。…"},
@@ -696,7 +696,7 @@ ICA.addUnit({
     proof:"One real sign or notice read and explained, a short invitation in Japanese, notes on the official sample questions, and a written daily routine with your first week’s result."},
    read:[
     {book:"irodori", where:"Starter, Lesson 15 “I need some batteries.”: [漢字]{かんじ}のことば (Kanji Words)", note:"Signs you meet in shops and stations: [入口]{いりぐち}, [出口]{でぐち}, [押]{お}す, [引]{ひ}く."},
-    {book:"irodori", where:"Starter, Lesson 12 “Do you want to go for a drink together?”", note:"Inviting someone with ～ませんか, like Kenji’s message in this lesson."}
+    {book:"irodori", where:"Starter, Lesson 12 “Do you want to go for a drink together?”", note:"Inviting someone with ～ませんか, like Rodrigo’s message in this lesson."}
    ]
   }
   ],
@@ -848,7 +848,7 @@ ICA.addUnit({
      builder:[
       "**Endings carry the message.** ～てください is a request; ～ないでください asks you not to do something; ～ませんか is an invitation; ～ましょう is a suggestion; ～ません is a negative. ～から～まで gives a range (from… until…).",
       "**Notices** often show the weekday as one kanji in brackets: (月) Monday, (火), (水), (木), (金), (土), (日) Sunday. 「(土)・(日) [休]{やす}み」 means closed at weekends.",
-      "**Emails** follow a shape, even short ones: subject ([件名]{けんめい}), the reader’s name with さん or [先生]{せんせい}, a greeting with who you are (〇〇[日本語]{にほんご}[学校]{がっこう}のキムです), the message, the closing よろしくお[願]{ねが}いします and your name.",
+      "**Emails** follow a shape, even short ones: subject ([件名]{けんめい}), the reader’s name with さん or [先生]{せんせい}, a greeting with who you are (〇〇[日本語]{にほんご}[学校]{がっこう}の[事務室]{じむしつ}です), the message, the closing よろしくお[願]{ねが}いします and your name.",
       "**Menus and price lists** are an information-retrieval task: scan for the item and the 円. Prices are usually in Arabic numerals (ラーメン 800円), but some traditional menus use kanji numbers ([八百円]{はっぴゃくえん}).",
       "Use [[scanning]] for a specific fact (a time, a price, a place) and [[skimming]] for the main idea (title, first and last lines). Unknown words are normal: mark them and keep going."
      ],
@@ -927,9 +927,9 @@ ICA.addUnit({
      {t:"They are all verbs", why:"語 is not a verb (it means language or word). The shared part is about meaning, not word type."},
      {t:"They were all pictures of mouths", why:"They are combinations of parts, not single pictures."}
    ]},
-   {id:"e3u4-q04", lesson:"e3u4-l1", level:2, q:"Hana can’t find 聞 under 門 (gate) in a paper kanji dictionary. What should she try?", options:[
+   {id:"e3u4-q04", lesson:"e3u4-l1", level:2, q:"Cheska can’t find 聞 under 門 (gate) in a paper kanji dictionary. What should she try?", options:[
      {t:"Look under 耳 (ear), the part that carries the meaning", ok:true, why:"Right. Most dictionaries file 聞 under 耳. If one part fails, try another, or search by reading."},
-     {t:"Look under 日 (sun)", why:"聞 has no 日. Hana may be thinking of 間, which is 門 + 日."},
+     {t:"Look under 日 (sun)", why:"聞 has no 日. Cheska may be thinking of 間, which is 門 + 日."},
      {t:"Give up: 聞 is not in kanji dictionaries", why:"聞 is a common N5 kanji, in every dictionary. It is just filed under a less obvious part."},
      {t:"Look under 口 (mouth)", why:"聞 has no 口; 問 (question) does, and that is a different kanji."}
    ]},
@@ -957,7 +957,7 @@ ICA.addUnit({
      {t:"Both start with ノ", why:"Only 右 starts with ノ. 左 starts with 一."},
      {t:"Both start with the box or the 工 at the bottom", why:"Both start with the top strokes; the parts below come after."}
    ]},
-   {id:"e3u4-q09", lesson:"e3u4-l1", level:3, q:"Dmitri wants to learn the 80 N5 kanji. Which plan fits what research and this lesson suggest?", options:[
+   {id:"e3u4-q09", lesson:"e3u4-l1", level:3, q:"Rodrigo wants to learn the 80 N5 kanji. Which plan fits what research and this lesson suggest?", options:[
      {t:"About 10 new kanji a day in words, with a short daily review", ok:true, why:"Right. Small daily sessions with spaced review, learning kanji through words, beat cramming."},
      {t:"All 80 in one long weekend, then no review", why:"Cramming without review leads to fast forgetting. Spaced review over weeks works better."},
      {t:"Every reading of each kanji first, then words later", why:"Learn the readings that come in words you need. Learning every reading at once is slow and confusing."},
@@ -1012,7 +1012,7 @@ ICA.addUnit({
      {t:"No: it closes at 6 p.m.", why:"[七時]{しちじ} is seven o’clock, not six. Check the reading しちじ."},
      {t:"Only if it is a weekday", why:"The sign gives only the hours, with no weekday limit."}
    ]},
-   {id:"e3u4-q18", lesson:"e3u4-l2", level:3, q:"Priya reads 「[十分]{じゅうぶん}です」 in a reply to “Do you need more coffee?” What does it mean?", options:[
+   {id:"e3u4-q18", lesson:"e3u4-l2", level:3, q:"Cheska reads 「[十分]{じゅうぶん}です」 in a reply to “Do you need more coffee?” What does it mean?", options:[
      {t:"I have enough", ok:true, why:"Right. 十分 read じゅうぶん means enough. Read じゅっぷん (or じっぷん), it means ten minutes; here the furigana and context show “enough”."},
      {t:"Ten minutes, please", why:"Ten minutes is じゅっぷん. じゅうぶん is “enough”."},
      {t:"Ten cups", why:"Cups are counted with a counter like 杯; 十分 is not about cups."},
@@ -1025,7 +1025,7 @@ ICA.addUnit({
      {t:"South platform", why:"口 means opening or exit, not platform."},
      {t:"Main entrance", why:"[南口]{みなみぐち} is the south exit; many stations also have a central exit, [中央口]{ちゅうおうぐち}."}
    ]},
-   {id:"e3u4-q20", lesson:"e3u4-l3", level:2, q:"Talking to a colleague, Tomás wants to say “My mother is a teacher.” Which is correct?", options:[
+   {id:"e3u4-q20", lesson:"e3u4-l3", level:2, q:"Talking to a classmate, Rodrigo wants to say “My mother is a teacher.” Which is correct?", options:[
      {t:"[母]{はは}は[先生]{せんせい}です。", ok:true, why:"Right. For your own mother, talking to others, use 母."},
      {t:"お[母]{かあ}さんは[先生]{せんせい}です。", why:"お母さん is for someone else’s mother, or for calling your own at home. To a colleague, say 母."},
      {t:"[母]{はは}さんは[先生]{せんせい}です。", why:"はは doesn’t take さん. Use 母 alone for your own mother."},
@@ -1049,7 +1049,7 @@ ICA.addUnit({
      {t:"outside", why:"Outside is 外 (そと)."},
      {t:"below", why:"Below is 下 (した)."}
    ]},
-   {id:"e3u4-q24", lesson:"e3u4-l3", level:3, q:"A café calendar shows 「(水) [休]{やす}み」. Lucía wants to go on Wednesday. What should she do?", options:[
+   {id:"e3u4-q24", lesson:"e3u4-l3", level:3, q:"A café calendar shows 「(水) [休]{やす}み」. Mariya wants to go on Wednesday. What should she do?", options:[
      {t:"Choose another day: the café is closed on Wednesdays", ok:true, why:"Right. (水) is short for [水曜日]{すいようび} (Wednesday), and [休]{やす}み means closed or a day off."},
      {t:"Go: (水) means water is served free", why:"In a calendar, a single kanji in brackets stands for the weekday: (水) = Wednesday."},
      {t:"Go: 休み means there is a rest area", why:"On a shop calendar, [休]{やす}み means the shop is closed that day."},
@@ -1067,7 +1067,7 @@ ICA.addUnit({
      {t:"[上]{うえ}", why:"かばんの上 means on top of the bag."},
      {t:"[下]{した}", why:"かばんの下 means under the bag."}
    ]},
-   {id:"e3u4-q27", lesson:"e3u4-l3", level:3, q:"Oluwaseun reads 「お[元気]{げんき}ですか」 at the start of an email from a friend. What is the friend asking?", options:[
+   {id:"e3u4-q27", lesson:"e3u4-l3", level:3, q:"Cheska reads 「お[元気]{げんき}ですか」 at the start of an email from a friend. What is the friend asking?", options:[
      {t:"How are you?", ok:true, why:"Right. [元気]{げんき} means well, healthy, full of energy, so お[元気]{げんき}ですか asks how you are."},
      {t:"How is the weather?", why:"The weather is 天気 (てんき). [元気]{げんき} is about a person."},
      {t:"Is the electricity on?", why:"Electricity is 電気 (でんき)."},
@@ -1116,13 +1116,13 @@ ICA.addUnit({
      {t:"long; opposite [短]{みじか}い (short)", why:"Long is 長い (ながい); its opposite is 短い. 大きい is about size."},
      {t:"many; opposite [少]{すく}ない (few)", why:"Many is 多い (おおい), which sounds similar but is a different word."}
    ]},
-   {id:"e3u4-q35", lesson:"e3u4-l4", level:3, q:"Fatima writes 「[多]{おお}い[人]{ひと}が[駅]{えき}にいます。」 Her teacher marks it unnatural. Why?", options:[
+   {id:"e3u4-q35", lesson:"e3u4-l4", level:3, q:"Cheska writes 「[多]{おお}い[人]{ひと}が[駅]{えき}にいます。」 Her teacher marks it unnatural. Why?", options:[
      {t:"多い doesn’t normally go straight before a noun; say [駅]{えき}は[人]{ひと}が[多]{おお}いです", ok:true, why:"Right. 多い works as a predicate (人が多い). To mean “many people” before a noun, Japanese uses other words, such as たくさんの人."},
      {t:"多い is the wrong reading; it should be たい", why:"The reading おおい is correct. The problem is where the word goes."},
      {t:"Japanese has no word for “many”", why:"It does: 多い. It is just used as a predicate."},
      {t:"いる can’t be used for people", why:"いる is exactly right for people and animals. The problem is 多い人."}
    ]},
-   {id:"e3u4-q36", lesson:"e3u4-l4", level:3, q:"Mei wants N5 vocabulary to stick. Which method best fits this lesson?", options:[
+   {id:"e3u4-q36", lesson:"e3u4-l4", level:3, q:"Rodrigo wants N5 vocabulary to stick. Which method best fits this lesson?", options:[
      {t:"Learn words in phrases with their particles, with opposites, and review daily", ok:true, why:"Right. Phrases like [電車]{でんしゃ}に[乗]{の}る, pairs like [高]{たか}い/[安]{やす}い and a short daily review make words stick."},
      {t:"Memorise a long English–Japanese list once, in alphabetical order", why:"Random lists learned once are quickly forgotten. Groups and spaced review work better."},
      {t:"Learn only the kanji, and the words will follow", why:"Kanji help, but words, their readings and particles need learning as words."},
@@ -1159,7 +1159,7 @@ ICA.addUnit({
      {t:"N3", why:"N3 is the middle level, a bridge between basic and advanced."},
      {t:"N0", why:"There is no N0. The levels are N1 to N5."}
    ]},
-   {id:"e3u4-q42", lesson:"e3u4-l5", level:3, q:"Kenji scores 40/120 in Language Knowledge・Reading and 30/60 in Listening on JLPT N5. Total: 70/180. Does he pass?", options:[
+   {id:"e3u4-q42", lesson:"e3u4-l5", level:3, q:"Rodrigo scores 40/120 in Language Knowledge・Reading and 30/60 in Listening on JLPT N5. Total: 70/180. Does he pass?", options:[
      {t:"No: the total is below the pass mark of 80", ok:true, why:"Right. Both parts are above their minimums (38 and 19), but the total must also reach 80."},
      {t:"Yes: both parts are above their minimums", why:"Sectional minimums are not enough on their own; the total must reach 80 too."},
      {t:"Yes: the N5 pass mark is 60", why:"The N5 pass mark is 80 out of 180."},
@@ -1171,7 +1171,7 @@ ICA.addUnit({
      {t:"Once a year, in April", why:"It is held in July and December."},
      {t:"Whenever you book it, at a test centre", why:"There are fixed dates, twice a year, and you apply well in advance."}
    ]},
-   {id:"e3u4-q44", lesson:"e3u4-l5", level:3, q:"Amara pressed Good on a Kanji Lab card she had only half remembered. What is the likely effect?", options:[
+   {id:"e3u4-q44", lesson:"e3u4-l5", level:3, q:"Cheska pressed Good on a Kanji Lab card she had only half remembered. What is the likely effect?", options:[
      {t:"The card waits longer before coming back, so she may forget it by then", ok:true, why:"Right. Good moves a card to a longer gap. If she didn’t really know it, Again (once more at the end of the session, then tomorrow) would serve her better."},
      {t:"Nothing: Good and Again do the same thing", why:"They differ: Again brings the card back tomorrow; Good makes it wait longer."},
      {t:"The card is deleted from the deck", why:"No answer deletes a card; it only changes when the card comes back."},

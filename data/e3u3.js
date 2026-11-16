@@ -61,7 +61,7 @@ ICA.addUnit({
       {ex:"[朝]{あさ}[起]{お}きて、シャワーをあびます。\nI get up in the morning and take a shower.\n\n[昨日]{きのう}は[友達]{ともだち}に[会]{あ}って、[映画]{えいが}を[見]{み}ました。\nYesterday I met a friend and watched a film.\n\n[駅]{えき}まで[歩]{ある}いて、[電車]{でんしゃ}に[乗]{の}りました。\nI walked to the station and got on a train.", label:"Joining actions"},
       "Only the **last** verb shows tense and politeness. In the second example, ました at the end makes the whole sentence past and polite; [会]{あ}って itself has no tense. So the sentence doesn’t need two past verbs.",
       "Adjectives and nouns have a て-form too, so you can join descriptions:",
-      {table:[["Word type","How","Example"],["い-adjective","drop い, add くて","[安]{やす}い → [安]{やす}くて\nこの[店]{みせ}は[安]{やす}くて、おいしいです。\nThis restaurant is cheap and good."],["いい (good)","irregular: よくて","[天気]{てんき}がよくて、[暖]{あたた}かいです。\nThe weather is nice and warm."],["な-adjective","add で","[静]{しず}か → [静]{しず}かで\n[図書館]{としょかん}は[静]{しず}かで、きれいです。\nThe library is quiet and clean."],["noun","add で","アナさんはブラジル[人]{じん}で、[看護師]{かんごし}です。\nAna is Brazilian and a nurse."]]},
+      {table:[["Word type","How","Example"],["い-adjective","drop い, add くて","[安]{やす}い → [安]{やす}くて\nこの[店]{みせ}は[安]{やす}くて、おいしいです。\nThis restaurant is cheap and good."],["いい (good)","irregular: よくて","[天気]{てんき}がよくて、[暖]{あたた}かいです。\nThe weather is nice and warm."],["な-adjective","add で","[静]{しず}か → [静]{しず}かで\n[図書館]{としょかん}は[静]{しず}かで、きれいです。\nThe library is quiet and clean."],["noun","add で","チェスカさんはフィリピン[人]{じん}で、[学生]{がくせい}です。\nCheska is Filipino and a student."]]},
       "One more pattern: ～てから means “after doing”. It stresses that the first action is finished before the second begins.",
       {ex:"[宿題]{しゅくだい}をしてから、テレビを[見]{み}ます。\nI watch TV after doing my homework.\n\n[手]{て}を[洗]{あら}ってから、[食]{た}べましょう。\nLet’s wash our hands before we eat. (Literally: after washing our hands, let’s eat.)", label:"～てから"}
     ]},
@@ -106,7 +106,7 @@ ICA.addUnit({
       ["[行]{い}く (go)","いって","The one exception among く verbs."],
       ["[死]{し}ぬ (die)","しんで","ぬ → んで, like む and ぶ."]
     ]},
-    {id:"e3u3-l1-x4", type:"spot", q:"Kenji wrote these て-forms in his notebook. Tap each one that is **wrong**.", ask:"is wrong", parts:[
+    {id:"e3u3-l1-x4", type:"spot", q:"Rodrigo wrote these て-forms in his notebook. Tap each one that is **wrong**.", ask:"is wrong", parts:[
       {t:"[会]{あ}う → [会]{あ}って", flag:false, why:"Correct: う → って."},"\n",
       {t:"[書]{か}く → [書]{か}って", flag:true, why:"Wrong. く → いて: [書]{か}いて. Only [行]{い}く becomes って."},"\n",
       {t:"[起]{お}きる → [起]{お}きて", flag:false, why:"Correct: an ichidan verb ([起]{お}きます), so drop る and add て."},"\n",
@@ -122,11 +122,11 @@ ICA.addUnit({
       {t:"Because it is godan, use the godan table and find the row for its last kana, る.", why:"Only godan verbs use the table of rows, so this step needs the group from the step before."},
       {t:"The う・つ・る row gives って: [帰]{かえ}って.", why:"Apply the rule last."}
     ]},
-    {id:"e3u3-l1-x6", type:"mcq", q:"Join two facts about Hana’s room in one sentence: it is quiet ([静]{しず}か, a な-adjective) and bright ([明]{あか}るい).", options:[
-      {t:"ハナさんの[部屋]{へや}は[静]{しず}かで、[明]{あか}るいです。", ok:true, why:"Right. な-adjectives (and nouns) join with で."},
-      {t:"ハナさんの[部屋]{へや}は[静]{しず}かくて、[明]{あか}るいです。", why:"くて is for い-adjectives. [静]{しず}か is a な-adjective, so it takes で."},
-      {t:"ハナさんの[部屋]{へや}は[静]{しず}かです、[明]{あか}るいです。", why:"です can’t be used in the middle to mean “and”. Join with the て-form, [静]{しず}かで."},
-      {t:"ハナさんの[部屋]{へや}は[静]{しず}かて、[明]{あか}るいです。", why:"There is no form [静]{しず}かて: な-adjectives and nouns take で."}
+    {id:"e3u3-l1-x6", type:"mcq", q:"Join two facts about Yến’s room in one sentence: it is quiet ([静]{しず}か, a な-adjective) and bright ([明]{あか}るい).", options:[
+      {t:"イエンさんの[部屋]{へや}は[静]{しず}かで、[明]{あか}るいです。", ok:true, why:"Right. な-adjectives (and nouns) join with で."},
+      {t:"イエンさんの[部屋]{へや}は[静]{しず}かくて、[明]{あか}るいです。", why:"くて is for い-adjectives. [静]{しず}か is a な-adjective, so it takes で."},
+      {t:"イエンさんの[部屋]{へや}は[静]{しず}かです、[明]{あか}るいです。", why:"です can’t be used in the middle to mean “and”. Join with the て-form, [静]{しず}かで."},
+      {t:"イエンさんの[部屋]{へや}は[静]{しず}かて、[明]{あか}るいです。", why:"There is no form [静]{しず}かて: な-adjectives and nouns take で."}
     ]},
     {id:"e3u3-l1-x7", type:"mcq", q:"How do you say “Yesterday I went to the library and studied” in one sentence?", options:[
       {t:"[昨日]{きのう}、[図書館]{としょかん}へ[行]{い}って、[勉強]{べんきょう}しました。", ok:true, why:"Right. [行]{い}って joins the actions, and ました at the end makes the whole sentence past."},
@@ -199,25 +199,25 @@ ICA.addUnit({
     ]},
     {h:"～ています (1): actions in progress, habits and jobs", body:[
       "～ています is the て-form plus います. Its most familiar meaning is an action in progress, like English “-ing”.",
-      {ex:"A: [今]{いま}、[何]{なに}をしていますか。\nB: [音楽]{おんがく}を[聞]{き}いています。\nA: What are you doing now? B: I’m listening to music.\n\n[雨]{あめ}が[降]{ふ}っています。\nIt’s raining.\n\nサラさんは[台所]{だいどころ}で[料理]{りょうり}をしています。\nSara is cooking in the kitchen.", label:"In progress"},
+      {ex:"A: [今]{いま}、[何]{なに}をしていますか。\nB: [音楽]{おんがく}を[聞]{き}いています。\nA: What are you doing now? B: I’m listening to music.\n\n[雨]{あめ}が[降]{ふ}っています。\nIt’s raining.\n\nかいとさんは[台所]{だいどころ}で[料理]{りょうり}をしています。\nKaito is cooking in the kitchen.", label:"In progress"},
       "It also describes things you do regularly at this stage of your life, including your job:",
-      {ex:"[毎朝]{まいあさ}ジョギングをしています。\nI go jogging every morning (these days).\n\nケンジさんは[銀行]{ぎんこう}で[働]{はたら}いています。\nKenji works at a bank.\n\n[日本語]{にほんご}を[勉強]{べんきょう}しています。\nI’m studying Japanese (these days).", label:"Habits and jobs"},
+      {ex:"[毎朝]{まいあさ}ジョギングをしています。\nI go jogging every morning (these days).\n\nロドリゴさんは[魚]{さかな}の[工場]{こうじょう}で[働]{はたら}いています。\nRodrigo works at a seafood plant.\n\n[日本語]{にほんご}を[勉強]{べんきょう}しています。\nI’m studying Japanese (these days).", label:"Habits and jobs"},
       "Compare plain ～ます: [毎朝]{まいあさ}ジョギングをします states a habit as a simple fact. ～ています presents it as something that is going on in your life now. Both are correct.",
       "In this pattern, いる is an ichidan verb, so it has the usual ます forms: ～ています, ～ていません (is not doing), ～ていました (was doing), ～ていませんでした. The glossary entry is [[te-iru]]."
     ]},
     {h:"～ています (2): states that continue", body:[
       "With some verbs, ～ています describes the **state after a change**. The change has already happened, and its result is still true now.",
-      {table:[["Sentence","Meaning"],["[結婚]{けっこん}しています。","is married (not “is getting married”)"],["[大阪]{おおさか}に[住]{す}んでいます。","lives in Osaka"],["[駅]{えき}に[来]{き}ています。","has come to the station and is there now (not “is coming”)"],["[兄]{あに}はアメリカに[行]{い}っています。","My older brother has gone to the US and is there now"],["[車]{くるま}を[持]{も}っています。","has (owns) a car"],["[田中]{たなか}さんを[知]{し}っています。","knows Tanaka-san"]]},
+      {table:[["Sentence","Meaning"],["[結婚]{けっこん}しています。","is married (not “is getting married”)"],["[大阪]{おおさか}に[住]{す}んでいます。","lives in Osaka"],["[駅]{えき}に[来]{き}ています。","has come to the station and is there now (not “is coming”)"],["[兄]{あに}はアメリカに[行]{い}っています。","My older brother has gone to the US and is there now"],["[車]{くるま}を[持]{も}っています。","has (owns) a car"],["さとうさんを[知]{し}っています。","knows Mr. Satō"]]},
       {fig:'<svg viewBox="0 0 340 324"><text x="170" y="20" text-anchor="middle">Two meanings of ～ています</text><rect class="d-panel" x="8" y="32" width="324" height="124" rx="8" stroke-width="1.5"/><text x="20" y="56">いま たべています</text><text class="s" x="20" y="74">an action in progress</text><path class="d-ink" d="M20 116H320" stroke-width="2"/><rect class="d-lup" x="90" y="104" width="170" height="24" rx="4" stroke-width="2"/><text class="s" x="175" y="121" text-anchor="middle">eating</text><path class="d-rose" d="M175 92V140" stroke-width="3"/><text class="s" x="175" y="152" text-anchor="middle">now: in the middle</text><rect class="d-panel" x="8" y="166" width="324" height="150" rx="8" stroke-width="1.5"/><text x="20" y="190">けっこんしています</text><text class="s" x="20" y="208">the state after a change</text><path class="d-ink" d="M20 256H320" stroke-width="2"/><circle class="d-rose" cx="80" cy="256" r="7" stroke-width="2"/><text class="s" x="80" y="236" text-anchor="middle">wedding</text><rect class="d-sage" x="87" y="248" width="233" height="16" rx="4" stroke-width="2"/><text class="s" x="200" y="244" text-anchor="middle">married (the result)</text><path class="d-rose" d="M250 228V280" stroke-width="3"/><text class="s" x="250" y="294" text-anchor="middle">now</text><text class="s" x="20" y="310">also: きています, しっています, すんでいます</text></svg>', alt:"Two timelines. Top: いま たべています, an action in progress; the bar for eating has a start and an end, and now is in the middle of it. Bottom: けっこんしています, the state after a change; the wedding is a single point in the past, and a bar for the result, being married, runs from that point through now. The same pattern covers きています, しっています and すんでいます.", cap:"Activity verbs give “in the middle of it”; change verbs give “the result is still true”."},
       "Verbs such as [結婚]{けっこん}する, [来]{く}る, [行]{い}く and [知]{し}る describe a change that happens in a moment, so their ～ています form describes the result. Verbs such as [食]{た}べる, [読]{よ}む and [聞]{き}く describe an activity that lasts, so their ～ています form describes the activity in progress.",
       "[知]{し}る has one more surprise. “I know” is [知]{し}っています, but “I don’t know” is [知]{し}りません, not [知]{し}っていません.",
-      {ex:"A: リーさんの[電話番号]{でんわばんごう}を[知]{し}っていますか。\nB: はい、[知]{し}っています。 / いいえ、[知]{し}りません。\nA: Do you know Lee’s phone number? B: Yes, I do. / No, I don’t.", label:"[知]{し}っています"},
+      {ex:"A: トビーさんの[電話番号]{でんわばんごう}を[知]{し}っていますか。\nB: はい、[知]{し}っています。 / いいえ、[知]{し}りません。\nA: Do you know Toby’s phone number? B: Yes, I do. / No, I don’t.", label:"[知]{し}っています"},
       "For other verbs, the negative ～ていません is normal: [結婚]{けっこん}していません (I’m not married), [雨]{あめ}は[降]{ふ}っていません (It isn’t raining).",
       {warn:"In casual speech, ～ている often drops い: [食]{た}べてる, [知]{し}ってる. That is **casual** spoken Japanese; keep the い in polite speech and in writing."}
     ]},
     {h:"Which ～ています is it? Working it out", body:[
       "When you meet a ～ています sentence, ask what kind of verb it is, then let the context decide. Here are four worked examples.",
-      {ex:"[姉]{あね}は[今]{いま}、[手紙]{てがみ}を[書]{か}いています。\n[書]{か}く is an activity that lasts, and [今]{いま} (now) points to this moment: “My sister is writing a letter now.”\n\n[姉]{あね}は[二年前]{にねんまえ}に[結婚]{けっこん}しました。[今]{いま}、[大阪]{おおさか}に[住]{す}んでいます。\nThe wedding is one past event (～ました). Being married and living in Osaka are the results that are still true: “My sister got married two years ago. She lives in Osaka now.”\n\nミンさんは[赤]{あか}いシャツを[着]{き}ています。\n[着]{き}る (put on) is a change, so ～ています usually describes the result: “Min is wearing a red shirt.” If you were watching Min pull the shirt on, the same sentence could mean “is putting on”. Context decides.\n\nA: もう[昼]{ひる}ごはんを[食]{た}べましたか。\nB: いいえ、まだ[食]{た}べていません。\nA: Have you had lunch yet? B: No, not yet.", label:"Worked examples"},
+      {ex:"[姉]{あね}は[今]{いま}、[手紙]{てがみ}を[書]{か}いています。\n[書]{か}く is an activity that lasts, and [今]{いま} (now) points to this moment: “My sister is writing a letter now.”\n\n[姉]{あね}は[二年前]{にねんまえ}に[結婚]{けっこん}しました。[今]{いま}、[大阪]{おおさか}に[住]{す}んでいます。\nThe wedding is one past event (～ました). Being married and living in Osaka are the results that are still true: “My sister got married two years ago. She lives in Osaka now.”\n\nまりやさんは[赤]{あか}いシャツを[着]{き}ています。\n[着]{き}る (put on) is a change, so ～ています usually describes the result: “Mariya is wearing a red shirt.” If you were watching Mariya pull the shirt on, the same sentence could mean “is putting on”. Context decides.\n\nA: もう[昼]{ひる}ごはんを[食]{た}べましたか。\nB: いいえ、まだ[食]{た}べていません。\nA: Have you had lunch yet? B: No, not yet.", label:"Worked examples"},
       "The last example shows a very useful pair. To ask whether something has happened, use もう (already) with ～ましたか. To answer “not yet”, use まだ (still, yet) with ～ていません: the state of “not having eaten” continues. ✗ まだ[食]{た}べません would mean “I won’t eat yet”, a different idea.",
       {table:[["Question and answer","Meaning"],["もう[宿題]{しゅくだい}をしましたか。","Have you done your homework yet?"],["はい、もうしました。","Yes, I’ve already done it."],["いいえ、まだしていません。","No, not yet."]]},
       "One more contrast: ～ています versus ～ます. ～ます is non-past, so it covers habits and the future: [毎日]{まいにち}[働]{はたら}きます (I work every day), [明日]{あした}[働]{はたら}きます (I’ll work tomorrow). It does **not** describe what is happening right now. For “I’m working (at the moment)”, you need [今]{いま}、[働]{はたら}いています."
@@ -248,15 +248,15 @@ ICA.addUnit({
       ["[結婚]{けっこん}しています。","is married","[結婚]{けっこん}する is a change; ～ています describes the result."],
       ["[銀行]{ぎんこう}で[働]{はたら}いています。","works at a bank","～ています for a job or a regular activity in your life now."],
       ["[駅]{えき}に[来]{き}ています。","has arrived at the station and is there","[来]{く}る is a change of place; ～ています describes being there now."],
-      ["[田中]{たなか}さんを[知]{し}っています。","knows Tanaka-san","[知]{し}る (come to know) + ～ています = know."]
+      ["さとうさんを[知]{し}っています。","knows Mr. Satō","[知]{し}る (come to know) + ～ています = know."]
     ]},
-    {id:"e3u3-l2-x4", type:"mcq", q:"A colleague asks: [田中]{たなか}さんのメールアドレスを[知]{し}っていますか。 You don’t know it. What is the correct polite answer?", options:[
+    {id:"e3u3-l2-x4", type:"mcq", q:"A housemate asks: ふみこさんのメールアドレスを[知]{し}っていますか。 You don’t know it. What is the correct polite answer?", options:[
       {t:"いいえ、[知]{し}りません。", ok:true, why:"Right. The negative of [知]{し}っています is [知]{し}りません."},
       {t:"いいえ、[知]{し}っていません。", why:"A very common mistake. With other verbs ～ていません is normal, but [知]{し}る uses [知]{し}りません for “I don’t know”."},
       {t:"いいえ、[知]{し}るません。", why:"ません attaches to the ます stem: [知]{し}り + ません. [知]{し}るません is not a form."},
       {t:"はい、[知]{し}りません。", why:"はい (yes) contradicts [知]{し}りません (I don’t know). Answer いいえ."}
     ]},
-    {id:"e3u3-l2-x5", type:"spot", q:"Mei is helping write the rules for a children’s class at a community centre. Tap each rule that has a **grammar mistake**.", ask:"has a grammar mistake", parts:[
+    {id:"e3u3-l2-x5", type:"spot", q:"Cheska is helping write the rules for a children’s disaster-safety class at a community centre. Tap each rule that has a **grammar mistake**.", ask:"has a grammar mistake", parts:[
       {t:"[教室]{きょうしつ}で[食]{た}べてはいけません。", flag:false, why:"Correct: ～てはいけません states a rule."},"\n",
       {t:"[大]{おお}きい[声]{こえ}で[話]{はな}さってはいけません。", flag:true, why:"A mistake. [話]{はな}す → [話]{はな}して, so the rule is [話]{はな}してはいけません."},"\n",
       {t:"くつを[脱]{ぬ}いでください。", flag:false, why:"Correct: [脱]{ぬ}ぐ (take off) → [脱]{ぬ}いで, because ぐ → いで."},"\n",
@@ -353,7 +353,7 @@ ICA.addUnit({
       "Three points about using it:",
       {list:[
         "**For your own wishes, or a question to a friend.** [何]{なに}が[食]{た}べたいですか (What do you want to eat?) is fine with friends and people at your own level.",
-        "**Not for other people’s minds.** Japanese doesn’t normally state someone else’s wishes as a fact, because you can’t see inside their head. Instead of ✗ “サラさんはすしが[食]{た}べたいです” (it sounds as if you can read her mind), report what you know: サラさんはすしが[食]{た}べたいと[言]{い}っています (Sara says she wants to eat sushi). You will meet another way, ～たがっています, later (this track teaches it at N4).",
+        "**Not for other people’s minds.** Japanese doesn’t normally state someone else’s wishes as a fact, because you can’t see inside their head. Instead of ✗ “ロドリゴさんはすしが[食]{た}べたいです” (it sounds as if you can read his mind), report what you know: ロドリゴさんはすしが[食]{た}べたいと[言]{い}っています (Rodrigo says he wants to eat sushi). You will meet another way, ～たがっています, later (this track teaches it at N4).",
         "**Not as an offer to someone senior.** [先生]{せんせい}、コーヒーが[飲]{の}みたいですか sounds as if you are probing your teacher’s private wishes. Offer instead: [先生]{せんせい}、コーヒーはいかがですか (Would you like some coffee?)."
       ]}
     ]},
@@ -422,7 +422,7 @@ ICA.addUnit({
       {t:"[廊下]{ろうか}を[走]{はし}りないでください。", why:"There is no form [走]{はし}りない. Godan verbs change る to ら: [走]{はし}らない."},
       {t:"[廊下]{ろうか}を[走]{はし}ってください。", why:"This means “Please run in the corridor”: the opposite of the sign’s message."}
     ]},
-    {id:"e3u3-l3-x6", type:"spot", q:"Mei sent this message to a friend. Tap each part with a **grammar mistake**.", ask:"has a grammar mistake", parts:[
+    {id:"e3u3-l3-x6", type:"spot", q:"Rodrigo sent this message to a friend. Tap each part with a **grammar mistake**.", ask:"has a grammar mistake", parts:[
       {t:"[昨日]{きのう}は[頭]{あたま}が[痛]{いた}いでしたから、", flag:true, why:"A mistake. The past of an い-adjective uses かった: [痛]{いた}かったですから (or plain [痛]{いた}かったから). [痛]{いた}いでした is a very common slip."},
       {t:"[電話]{でんわ}しませんでした。", flag:false, why:"Correct: the polite past negative of [電話]{でんわ}する."},
       {t:"すみません。", flag:false, why:"Correct and natural."},"\n",
@@ -535,7 +535,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"e3u3-l4-x1", type:"mcq", q:"Ana wants six bottles of water. Bottles (ペットボトル) are counted with ～ほん. How does she say six bottles?", options:[
+    {id:"e3u3-l4-x1", type:"mcq", q:"Cheska wants six bottles of water. Bottles (ペットボトル) are counted with ～ほん. How does she say six bottles?", options:[
       {t:"ろっぽん", ok:true, why:"Right. 6 shrinks to ろっ, and after the small っ, ほ becomes ぽ."},
       {t:"ろくほん", why:"With h-sound counters, 6 changes: ろく → ろっ, and ほ → ぽ."},
       {t:"ろくぼん", why:"The b-sound comes after ん (さんぼん). After 6 it is the small っ with p: ろっぽん."},
@@ -558,7 +558,7 @@ ICA.addUnit({
       {t:"5 + ほん", b:2, why:"ごほん: 5 causes no change."},
       {t:"9 + ほん", b:2, why:"きゅうほん: 9 causes no change."}
     ]},
-    {id:"e3u3-l4-x4", type:"number", q:"At a market, the seller tells Priya the price of a bicycle: にまんさんぜんごひゃくえん. Type the price as a number of yen.", answer:23500, tol:0, unit:"yen", why:"にまん = 2 × 10,000 = 20,000; さんぜん = 3,000; ごひゃく = 500. 20,000 + 3,000 + 500 = 23,500 yen.", wrongs:[
+    {id:"e3u3-l4-x4", type:"number", q:"At a market, the seller tells Yến the price of a bicycle: にまんさんぜんごひゃくえん. Type the price as a number of yen.", answer:23500, tol:0, unit:"yen", why:"にまん = 2 × 10,000 = 20,000; さんぜん = 3,000; ごひゃく = 500. 20,000 + 3,000 + 500 = 23,500 yen.", wrongs:[
       {v:2350, tol:0, why:"This treats まん as 1,000. In Japanese, まん is 10,000, so にまん is 20,000."},
       {v:235000, tol:0, why:"This treats まん as 100,000. まん is 10,000: にまん is 20,000."},
       {v:20350, tol:0, why:"さんぜん is 3,000 (three thousand), not 300 (さんびゃく)."}
@@ -569,7 +569,7 @@ ICA.addUnit({
       {t:"[東京]{とうきょう}と[大阪]{おおさか}と、どちらは[大]{おお}きいですか。", why:"Question words take が, not は: どちらが."},
       {t:"[東京]{とうきょう}は[大阪]{おおさか}より[大]{おお}きいですか。", why:"This is a correct sentence, but it is a yes/no question (“Is Tokyo bigger than Osaka?”), not “Which is bigger?”."}
     ]},
-    {id:"e3u3-l4-x6", type:"spot", q:"Kenji wrote notes about his home. The furigana shows how he says each number. Tap each part with a **counter mistake**.", ask:"has a counter mistake", parts:[
+    {id:"e3u3-l4-x6", type:"spot", q:"Rodrigo wrote notes about his home. The furigana shows how he says each number. Tap each part with a **counter mistake**.", ask:"has a counter mistake", parts:[
       {t:"[家族]{かぞく}は[四人]{よにん}です。", flag:false, why:"Correct: four people is よにん."},"\n",
       {t:"[猫]{ねこ}が[二本]{にほん}います。", flag:true, why:"A mistake. Cats are counted with [匹]{ひき}: [二匹]{にひき}."},"\n",
       {t:"[部屋]{へや}は[三階]{さんがい}にあります。", flag:false, why:"Correct: さんがい (also heard as さんかい)."},"\n",
@@ -972,13 +972,13 @@ ICA.addUnit({
      {t:"[走]{はし}りて", why:"Godan verbs don’t add て to the ます stem."},
      {t:"[走]{はし}んで", why:"んで is for む, ぶ and ぬ."}
    ]},
-   {id:"e3u3-q06", lesson:"e3u3-l1", level:3, q:"Priya writes: [日曜日]{にちようび}に[公園]{こうえん}へ[行]{い}いて、[友達]{ともだち}と[遊]{あそ}びました。 What should she fix?", options:[
+   {id:"e3u3-q06", lesson:"e3u3-l1", level:3, q:"Cheska writes: [日曜日]{にちようび}に[公園]{こうえん}へ[行]{い}いて、[友達]{ともだち}と[遊]{あそ}びました。 What should she fix?", options:[
      {t:"[行]{い}いて → [行]{い}って", ok:true, why:"[行]{い}く is the exception: its て-form is [行]{い}って. The rest of the sentence is correct."},
      {t:"[遊]{あそ}びました → [遊]{あそ}んで", why:"The last verb must carry the tense and politeness, so [遊]{あそ}びました is right."},
      {t:"[行]{い}いて → [行]{い}きました", why:"Two finished clauses can’t be joined with a comma like this; the first verb should be a て-form."},
      {t:"Nothing: the sentence is correct", why:"[行]{い}いて is a mistake: [行]{い}く → [行]{い}って."}
    ]},
-   {id:"e3u3-q07", lesson:"e3u3-l1", level:3, q:"Tomás wants to say “This café is cheap and the coffee is good.” Which sentence is correct?", options:[
+   {id:"e3u3-q07", lesson:"e3u3-l1", level:3, q:"Toby wants to say “This café is cheap and the coffee is good.” Which sentence is correct?", options:[
      {t:"この[喫茶店]{きっさてん}は[安]{やす}くて、コーヒーがおいしいです。", ok:true, why:"[安]{やす}い is an い-adjective: drop い and add くて."},
      {t:"この[喫茶店]{きっさてん}は[安]{やす}いで、コーヒーがおいしいです。", why:"で is for な-adjectives and nouns. い-adjectives use くて."},
      {t:"この[喫茶店]{きっさてん}は[安]{やす}くで、コーヒーがおいしいです。", why:"The ending is くて, with て, not で."},
@@ -990,11 +990,11 @@ ICA.addUnit({
      {t:"こて", why:"こ appears in the negative, [来]{こ}ない, not in the て-form."},
      {t:"きって", why:"There is no small っ: [来]{き}て."}
    ]},
-   {id:"e3u3-q09", lesson:"e3u3-l1", level:2, q:"Mei says: [宿題]{しゅくだい}をしてから、テレビを[見]{み}ます。 What does she mean?", options:[
-     {t:"She watches TV after doing her homework.", ok:true, why:"～てから means “after doing”: the homework comes first."},
-     {t:"She does her homework while watching TV.", why:"“While” is a different pattern (～ながら, which this track teaches at N4). ～てから puts one action after the other."},
-     {t:"She watched TV before doing her homework.", why:"The order is reversed, and ～ます at the end is non-past, not past."},
-     {t:"She does her homework because she watches TV.", why:"～てから shows order in time, not a reason. Reasons use から after a full sentence."}
+   {id:"e3u3-q09", lesson:"e3u3-l1", level:2, q:"Kaito says: [宿題]{しゅくだい}をしてから、テレビを[見]{み}ます。 What does he mean?", options:[
+     {t:"He watches TV after doing his homework.", ok:true, why:"～てから means “after doing”: the homework comes first."},
+     {t:"He does his homework while watching TV.", why:"“While” is a different pattern (～ながら, which this track teaches at N4). ～てから puts one action after the other."},
+     {t:"He watched TV before doing his homework.", why:"The order is reversed, and ～ます at the end is non-past, not past."},
+     {t:"He does his homework because he watches TV.", why:"～てから shows order in time, not a reason. Reasons use から after a full sentence."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e3u3-q10", lesson:"e3u3-l2", level:1, q:"What does ～てもいいですか ask?", options:[
@@ -1009,7 +1009,7 @@ ICA.addUnit({
      {t:"It rained yesterday.", why:"That would be [昨日]{きのう}[雨]{あめ}が[降]{ふ}りました."},
      {t:"Please make it rain.", why:"～ています is not a request. Requests use ～てください."}
    ]},
-   {id:"e3u3-q12", lesson:"e3u3-l2", level:2, q:"Lucía wants to ask a stranger to speak more slowly. Which is correct?", options:[
+   {id:"e3u3-q12", lesson:"e3u3-l2", level:2, q:"Cheska wants to ask a stranger to speak more slowly. Which is correct?", options:[
      {t:"もう[少]{すこ}しゆっくり[話]{はな}してください。", ok:true, why:"[話]{はな}す → [話]{はな}して, plus ください: “Please speak a little more slowly.”"},
      {t:"もう[少]{すこ}しゆっくり[話]{はな}すください。", why:"ください follows the て-form, not the dictionary form."},
      {t:"もう[少]{すこ}しゆっくり[話]{はな}してはいけません。", why:"This says “You must not speak slowly”: the opposite, and far too strong."},
@@ -1021,19 +1021,19 @@ ICA.addUnit({
      {t:"[姉]{あね}は[結婚]{けっこん}してください。", why:"This is a request (“Please get married”), and it doesn’t fit with は."},
      {t:"[姉]{あね}は[結婚]{けっこん}してはいけません。", why:"This says “My sister must not get married”."}
    ]},
-   {id:"e3u3-q14", lesson:"e3u3-l2", level:3, q:"Fatima sees this sign at a museum: [館内]{かんない}で[写真]{しゃしん}をとってはいけません。 What does it tell her?", options:[
+   {id:"e3u3-q14", lesson:"e3u3-l2", level:3, q:"Yến sees this sign at a museum: [館内]{かんない}で[写真]{しゃしん}をとってはいけません。 What does it tell her?", options:[
      {t:"Taking photos inside the building is not allowed.", ok:true, why:"～てはいけません states a rule: you must not."},
      {t:"Please take photos inside.", why:"That would be ～てください."},
      {t:"You may take photos inside.", why:"That would be ～てもいいです."},
      {t:"Someone is taking photos inside.", why:"That would be ～ています."}
    ]},
-   {id:"e3u3-q15", lesson:"e3u3-l2", level:2, q:"A colleague asks: リーさんを[知]{し}っていますか。 You have never heard of Lee. What do you answer?", options:[
+   {id:"e3u3-q15", lesson:"e3u3-l2", level:2, q:"Cheska asks: [大西]{おおにし}[先生]{せんせい}を[知]{し}っていますか。 You have never heard of Professor Ōnishi. What do you answer?", options:[
      {t:"いいえ、[知]{し}りません。", ok:true, why:"The negative of [知]{し}っています is [知]{し}りません."},
      {t:"いいえ、[知]{し}っていません。", why:"A very common mistake. [知]{し}る is special: “I don’t know” is [知]{し}りません."},
      {t:"いいえ、[知]{し}りませんでした。", why:"This is past (“I didn’t know”), which suggests you know now."},
      {t:"はい、[知]{し}りません。", why:"はい contradicts the negative answer. Use いいえ."}
    ]},
-   {id:"e3u3-q16", lesson:"e3u3-l2", level:3, q:"Oluwaseun texts a friend: [今]{いま}、[空港]{くうこう}に[来]{き}ています。 What should the friend understand?", options:[
+   {id:"e3u3-q16", lesson:"e3u3-l2", level:3, q:"Rodrigo texts Cheska: [今]{いま}、[空港]{くうこう}に[来]{き}ています。 What should the friend understand?", options:[
      {t:"He has arrived at the airport and is there now.", ok:true, why:"With [来]{く}る, ～ています describes the state after arriving."},
      {t:"He is on his way to the airport.", why:"That would be [空港]{くうこう}に[向]{む}かっています. [来]{き}ています means he has arrived."},
      {t:"He comes to the airport every day for work.", why:"～ています can describe a habit, but [今]{いま} (now) points to the present moment."},
@@ -1082,11 +1082,11 @@ ICA.addUnit({
      {t:"[会]{あ}ない", why:"[会]{あ}う is godan, not ichidan, so it doesn’t just drop a sound."},
      {t:"[会]{あ}いない", why:"The ない-form uses the a-row: わ."}
    ]},
-   {id:"e3u3-q24", lesson:"e3u3-l3", level:3, q:"Sione told Hana that he wants to go to Osaka. Which is the most natural way for Hana to report this?", options:[
-     {t:"シオネさんは[大阪]{おおさか}へ[行]{い}きたいと[言]{い}っています。", ok:true, why:"Japanese usually reports another person’s wishes as something they said, rather than stating their feelings directly."},
-     {t:"シオネさんは[大阪]{おおさか}へ[行]{い}きたいです。", why:"This states Sione’s inner wish as a fact, as if Hana could read his mind. Japanese normally avoids that."},
-     {t:"シオネさんは[大阪]{おおさか}へ[行]{い}くたいと[言]{い}っています。", why:"たい joins the ます stem: [行]{い}きたい."},
-     {t:"シオネさんは[大阪]{おおさか}へ[行]{い}きたくないと[言]{い}っています。", why:"This reports the opposite: that he doesn’t want to go."}
+   {id:"e3u3-q24", lesson:"e3u3-l3", level:3, q:"Rodrigo told Mariya that he wants to go to Osaka. Which is the most natural way for Mariya to report this?", options:[
+     {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}きたいと[言]{い}っています。", ok:true, why:"Japanese usually reports another person’s wishes as something they said, rather than stating their feelings directly."},
+     {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}きたいです。", why:"This states Rodrigo’s inner wish as a fact, as if Mariya could read his mind. Japanese normally avoids that."},
+     {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}くたいと[言]{い}っています。", why:"たい joins the ます stem: [行]{い}きたい."},
+     {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}きたくないと[言]{い}っています。", why:"This reports the opposite: that he doesn’t want to go."}
    ]},
    {id:"e3u3-q25", lesson:"e3u3-l3", level:2, q:"How do you say “I wanted to see the film” politely?", options:[
      {t:"[映画]{えいが}が[見]{み}たかったです。", ok:true, why:"～たい is an い-adjective: past ～たかった, plus です."},
@@ -1100,7 +1100,7 @@ ICA.addUnit({
      {t:"You may push.", why:"That would be [押]{お}してもいいです."},
      {t:"Someone is pushing.", why:"That would be [押]{お}しています."}
    ]},
-   {id:"e3u3-q27", lesson:"e3u3-l3", level:3, q:"Dmitri says: [暇]{ひま}から、[手伝]{てつだ}います。 (I’m free, so I’ll help.) What should he fix?", options:[
+   {id:"e3u3-q27", lesson:"e3u3-l3", level:3, q:"Rodrigo says: [暇]{ひま}から、[手伝]{てつだ}います。 (I’m free, so I’ll help.) What should he fix?", options:[
      {t:"Add だ or です before から: [暇]{ひま}だから or [暇]{ひま}ですから.", ok:true, why:"After a な-adjective in the plain form, から needs だ."},
      {t:"Change から to まで.", why:"まで means “until”. He wants “because”."},
      {t:"Change [手伝]{てつだ}います to [手伝]{てつだ}って.", why:"The result clause should end the sentence with a full verb: [手伝]{てつだ}います is right."},
@@ -1137,7 +1137,7 @@ ICA.addUnit({
      {t:"いちまんえん", why:"いちまん is 10,000."},
      {t:"ひゃくまんえん", why:"ひゃくまん is 1,000,000."}
    ]},
-   {id:"e3u3-q33", lesson:"e3u3-l4", level:3, q:"Sione writes: [家]{いえ}に[犬]{いぬ}が[二本]{にほん}います。 What should he fix?", options:[
+   {id:"e3u3-q33", lesson:"e3u3-l4", level:3, q:"Cheska writes: [家]{いえ}に[犬]{いぬ}が[二本]{にほん}います。 What should she fix?", options:[
      {t:"[二本]{にほん} → [二匹]{にひき}", ok:true, why:"Dogs are small animals, counted with [匹]{ひき}."},
      {t:"[二本]{にほん} → [二人]{ふたり}", why:"[人]{にん} is for people."},
      {t:"[二本]{にほん} → [二枚]{にまい}", why:"[枚]{まい} is for flat things."},
@@ -1161,7 +1161,7 @@ ICA.addUnit({
      {t:"Twice", why:"“Twice” is [二回]{にかい}, written with a different kanji ([回]{かい})."},
      {t:"Two toilets", why:"[階]{かい} counts floors, not things."}
    ]},
-   {id:"e3u3-q37", lesson:"e3u3-l4", level:2, q:"Lucía hears a price: ろっぴゃくごじゅうえん. How much is it?", options:[
+   {id:"e3u3-q37", lesson:"e3u3-l4", level:2, q:"Yến hears a price: ろっぴゃくごじゅうえん. How much is it?", options:[
      {t:"650 yen", ok:true, why:"ろっぴゃく = 600, ごじゅう = 50."},
      {t:"6,050 yen", why:"6,000 would be ろくせん. ろっぴゃく is 600."},
      {t:"6,500 yen", why:"That would be ろくせんごひゃく."},
@@ -1198,13 +1198,13 @@ ICA.addUnit({
      {t:"[二時間]{にじかん}に[勉強]{べんきょう}しました。", why:"Durations don’t take に."},
      {t:"[二時]{にじ}から[勉強]{べんきょう}しました。", why:"This means “I studied from two o’clock”."}
    ]},
-   {id:"e3u3-q43", lesson:"e3u3-l5", level:3, q:"Amara works 9:30 to 5:00, Monday to Friday. Which sentence says this?", options:[
-     {t:"[月曜日]{げつようび}から[金曜日]{きんようび}まで、[九時半]{くじはん}から[五時]{ごじ}まで[働]{はたら}きます。", ok:true, why:"から marks each start and まで each end."},
-     {t:"[月曜日]{げつようび}まで[金曜日]{きんようび}から、[九時半]{くじはん}まで[五時]{ごじ}から[働]{はたら}きます。", why:"The particles are swapped: this says “until Monday from Friday”."},
-     {t:"[月曜日]{げつようび}に[金曜日]{きんようび}まで、[九時半]{くじはん}に[五時]{ごじ}まで[働]{はたら}きます。", why:"The start of a range takes から, not に."},
-     {t:"[月曜日]{げつようび}から[金曜日]{きんようび}に、[九時半]{くじはん}から[五時]{ごじ}に[働]{はたら}きます。", why:"The end of a range takes まで, not に."}
+   {id:"e3u3-q43", lesson:"e3u3-l5", level:3, q:"Rodrigo has classes at his language school from 9:30 to 5:00, Monday to Friday. Which sentence says this?", options:[
+     {t:"[月曜日]{げつようび}から[金曜日]{きんようび}まで、[九時半]{くじはん}から[五時]{ごじ}まで[勉強]{べんきょう}します。", ok:true, why:"から marks each start and まで each end."},
+     {t:"[月曜日]{げつようび}まで[金曜日]{きんようび}から、[九時半]{くじはん}まで[五時]{ごじ}から[勉強]{べんきょう}します。", why:"The particles are swapped: this says “until Monday from Friday”."},
+     {t:"[月曜日]{げつようび}に[金曜日]{きんようび}まで、[九時半]{くじはん}に[五時]{ごじ}まで[勉強]{べんきょう}します。", why:"The start of a range takes から, not に."},
+     {t:"[月曜日]{げつようび}から[金曜日]{きんようび}に、[九時半]{くじはん}から[五時]{ごじ}に[勉強]{べんきょう}します。", why:"The end of a range takes まで, not に."}
    ]},
-   {id:"e3u3-q44", lesson:"e3u3-l5", level:3, q:"Tomás says ぜんぜん[肉]{にく}を[食]{た}べます to mean “I never eat meat.” How should he say it?", options:[
+   {id:"e3u3-q44", lesson:"e3u3-l5", level:3, q:"Rodrigo says ぜんぜん[肉]{にく}を[食]{た}べます to mean “I never eat meat.” How should he say it?", options:[
      {t:"ぜんぜん[肉]{にく}を[食]{た}べません。", ok:true, why:"ぜんぜん + a negative verb means “not at all, never”."},
      {t:"よく[肉]{にく}を[食]{た}べます。", why:"よく means “often”: the opposite."},
      {t:"ぜんぜん[肉]{にく}を[食]{た}べました。", why:"This is past and still not negative."},
@@ -1216,7 +1216,7 @@ ICA.addUnit({
      {t:"[三回]{さんかい}に[週]{しゅう}", why:"The order is period first: [週]{しゅう}に[三回]{さんかい}."},
      {t:"[週]{しゅう}に[三階]{さんがい}", why:"[三階]{さんがい} is the third floor. Times use [回]{かい}."}
    ]},
-   {id:"e3u3-q46", lesson:"e3u3-l5", level:3, q:"Kenji wants to say “It takes about twenty minutes to the station.” Which is correct?", options:[
+   {id:"e3u3-q46", lesson:"e3u3-l5", level:3, q:"Toby wants to say “It takes about twenty minutes to the station.” Which is correct?", options:[
      {t:"[駅]{えき}まで[二十分]{にじゅっぷん}ぐらいかかります。", ok:true, why:"まで (as far as) + duration + ぐらい (about) + かかります (takes)."},
      {t:"[駅]{えき}まで[二十分]{にじゅっぷん}ごろかかります。", why:"ごろ is “about” for a point in time (at about two o’clock). For an amount of time, use ぐらい."},
      {t:"[駅]{えき}まで[二十分]{にじゅっぷん}にかかります。", why:"Durations don’t take に."},
