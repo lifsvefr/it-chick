@@ -459,3 +459,115 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .volrow input[type=range]{width:100%;accent-color:var(--lupine);margin:0}
 .volrow output{font-size:.85em;color:var(--soft);text-align:right;font-variant-numeric:tabular-nums}
 .volrow label .small{display:block}
+
+/* ---------- Kamome House props (quests/props.js): drawn objects, each Japanese line a tappable button ---------- */
+.propwrap{display:grid;gap:8px}
+.prop{--hand:"Klee One","Yu Kyokasho","Hiragino Maru Gothic ProN",cursive;--print:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;display:flex;justify-content:center;padding:14px 4px;color:#2b211b}
+.prop .pl{all:unset;box-sizing:border-box;display:block;cursor:pointer;border-radius:6px;padding:2px 6px;margin:1px -6px;line-height:1.5;outline-offset:2px;transition:background .15s, box-shadow .15s}
+.prop .pl:hover{background:rgba(255,214,90,.28)}
+.prop .pl:focus-visible{outline:3px solid var(--lupine)}
+.prop .pl.seen{box-shadow:inset 3px 0 0 rgba(31,90,92,.35)}
+.prop .pl.sel{background:rgba(255,214,90,.5);box-shadow:inset 3px 0 0 var(--lupine)}
+.prop rt{font-size:.5em}
+.propinfo{display:grid;gap:4px}
+.propinfo .pij{font-size:1.15rem;font-weight:700}
+.prop .cap{display:block;font:600 10px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#8a7a66;margin-bottom:4px}
+/* notice on the cork board */
+.prop-notice .cork{background:#b98a5a radial-gradient(circle at 20% 30%,#c99a68 1px,transparent 2px) 0 0/9px 9px;border:10px solid #7a5232;border-radius:6px;padding:18px 14px;width:min(100%,420px);box-shadow:var(--shadow)}
+.paper{background:#fffdf6;box-shadow:0 3px 8px rgba(0,0,0,.25);position:relative}
+.paper.notice{padding:16px 18px 18px;transform:rotate(-.8deg);display:grid;gap:6px;text-align:center}
+.paper .pin{position:absolute;top:-7px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff8f80,#c8352b);box-shadow:0 2px 2px rgba(0,0,0,.35)}
+.paper .pin.a{left:14px}.paper .pin.b{right:14px;background:radial-gradient(circle at 35% 35%,#8fd0ff,#2f6fb0)}
+.paper .beach{width:100%;height:34px}
+.prop-notice .pl0{font:800 1.55rem/1.3 var(--print);letter-spacing:.04em;color:#1e5f74}
+.prop-notice .when{display:grid;gap:0;font-size:1.15rem;font-weight:700}
+.prop-notice .pl3{justify-self:center;border:2px solid #c8352b!important;color:#b02c22;font-weight:700;padding:2px 12px;margin:4px 0}
+.prop-notice .pl4{font:600 1.15rem var(--hand);color:#5f5a55;transform:rotate(-3deg);justify-self:end;margin-top:6px}
+/* the cookie tin and the airmail bundle */
+.tinscene{display:grid;gap:14px;justify-items:center;width:min(100%,420px)}
+.tinlid{width:min(100%,300px);aspect-ratio:1.35;border-radius:22px;background:radial-gradient(ellipse at 30% 25%,#e9f1f6,#a8c0cf 45%,#6d8a9c);padding:14px;box-shadow:inset 0 0 0 4px #8aa3b2,inset 0 0 0 8px #c9d9e2,var(--shadow)}
+.tinin{height:100%;border-radius:12px;background:#f3ecdc;display:grid;place-content:center;justify-items:center;box-shadow:inset 0 2px 6px rgba(0,0,0,.25)}
+.prop-tin .pl0{font:600 2.6rem/1.1 var(--hand);color:#262626;writing-mode:vertical-rl;padding:6px 4px;margin:0}
+.bundle{display:grid;gap:14px;width:100%}
+.env{position:relative;background:#e4f0f8;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.env.air{border:7px solid transparent;border-image:repeating-linear-gradient(45deg,#d33a3a 0 10px,#fff 10px 20px,#2c5aa8 20px 30px,#fff 30px 40px) 7}
+.prop-tin .env.air{padding:12px 14px 14px;min-height:130px}
+.env .avion{position:absolute;left:10px;top:8px;font:700 9px/1.25 var(--mono);color:#2c5aa8;border:1.5px solid #2c5aa8;padding:2px 4px}
+.env .stamp{position:absolute;right:10px;top:8px;width:42px;height:50px;background:#f6d77a;border:3px dotted #fff;outline:1px solid #c9a94a;display:grid;place-items:end center}
+.env .stamp i{font:700 6px var(--mono);font-style:normal;color:#7a5a12;padding-bottom:3px}
+.env .stamp::before{content:"";position:absolute;inset:8px 9px 14px;border-radius:50% 50% 40% 40%;background:#d08a35}
+.env .en-addr{display:block;margin:40px 0 4px 18%;font:600 .95rem/1.35 var(--hand);color:#30425e}
+.prop-tin .env.air .pl1{margin-left:18%;font:600 1.2rem var(--hand);color:#30425e}
+.env .string{position:absolute;left:62%;top:-7px;bottom:-7px;width:3px;background:#efe6d2;box-shadow:0 0 0 1px #c9b98f}
+.env.backside{background:#dfeaf3;min-height:110px;display:grid;place-items:end center;padding-bottom:12px!important}
+.env.backside .flap{position:absolute;inset:0 0 40% 0;background:linear-gradient(to bottom right,transparent 49.5%,#b7c9d6 50%,transparent 51%) left/50% 100% no-repeat,linear-gradient(to bottom left,transparent 49.5%,#b7c9d6 50%,transparent 51%) right/50% 100% no-repeat}
+.env.backside .cap{position:absolute;left:10px;top:8px}
+.prop-tin .pl2{font:600 1.1rem var(--hand);color:#6b6560;position:relative}
+/* festival poster */
+.poster{width:min(100%,380px);background:linear-gradient(#18264a,#2c3f73 70%,#3d4f86);color:#fff;border-radius:6px;padding:4px 18px 18px;display:grid;gap:8px;text-align:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.poster .lanterns{width:calc(100% + 36px);margin:0 -18px;height:46px}
+.poster .birds{display:flex;justify-content:space-around;color:#cfe0ff;opacity:.9}
+.poster .swallow{width:38px;height:19px}.poster .swallow:nth-child(2){width:26px;transform:translateY(10px)}.poster .swallow:nth-child(3){width:30px;transform:translateY(-4px)}
+.prop-poster .pl0{font:800 2rem/1.25 var(--print);letter-spacing:.06em;color:#ffe08a;text-shadow:0 2px 0 #b5302a}
+.prop-poster .pmeta{display:grid;font-size:1.2rem;font-weight:700}
+.prop-poster .pl3{justify-self:center;background:#ffe08a;color:#3a2b0e;border-radius:999px;padding:3px 16px;font-weight:700;margin:4px 0}
+.prop-poster .pl3:hover,.prop-poster .pl3.sel{background:#ffd04a}
+.poster .sticker{justify-self:end;background:#fff;color:#2b211b;transform:rotate(3deg);padding:4px 8px;box-shadow:0 2px 3px rgba(0,0,0,.4);font-weight:700}
+.prop-poster .pl:hover,.prop-poster .pl.sel{background:rgba(255,224,138,.25)}
+.poster .sticker .pl:hover,.poster .sticker .pl.sel{background:rgba(255,214,90,.5)}
+/* hazard map */
+.hmap{width:min(100%,440px);background:#fff;border:1px solid #9aa;box-shadow:var(--shadow);display:grid}
+.hbar{background:#1f5a8a;color:#fff;padding:6px 10px}
+.prop-map .pl0{font-weight:800;font-size:1.05rem}
+.prop-map .hbar .pl:hover,.prop-map .hbar .pl.sel{background:rgba(255,255,255,.2)}
+.hbody{position:relative;aspect-ratio:320/210}
+.hbody svg{position:absolute;inset:0;width:100%;height:100%}
+.hshelter{position:absolute;right:2%;top:24%;background:#fff;border:2px solid #2f7a3f;border-radius:6px;font-weight:700;font-size:.92rem;color:#1f5a2c;padding:0 4px}
+.hlegend{position:absolute;left:3%;top:5%;background:rgba(255,255,255,.95);border:1px solid #889;padding:2px 6px;display:flex;align-items:center;gap:4px;font-size:.92rem;font-weight:700}
+.hlegend .sw{width:16px;height:12px;background:#d23a33;opacity:.8;flex:none}
+.hfoot{background:#fff4d6;border-top:2px solid #e2a43a;padding:6px 10px;text-align:center;font-weight:700}
+/* phone alert */
+.phone{width:min(100%,300px);background:#1d1d1f;border-radius:34px;padding:12px;box-shadow:var(--shadow)}
+.pscreen{background:linear-gradient(#5b7fa6,#9fb7cf);border-radius:24px;min-height:300px;padding:10px 10px 18px}
+.pstat{display:flex;justify-content:flex-end;padding:0 8px 10px}
+.pstat .bars{display:flex;gap:2px;align-items:flex-end}.pstat .bars i{width:4px;background:#fff;border-radius:1px}
+.pstat .bars i:nth-child(1){height:5px}.pstat .bars i:nth-child(2){height:8px}.pstat .bars i:nth-child(3){height:11px}.pstat .bars i:nth-child(4){height:14px}
+.palert{background:#fffdf8;border-radius:16px;padding:10px 14px 12px;display:grid;gap:4px;box-shadow:0 4px 14px rgba(0,0,0,.25);border-top:8px solid #e5862d}
+.phone.lv4 .palert{border-top-color:#c62f2f}
+.phead svg{width:26px;height:26px;color:#e5862d}.phone.lv4 .phead svg{color:#c62f2f}
+.prop-alert .pl0{font-weight:800;font-size:1.08rem;color:#9a4a0a}
+.phone.lv4 .pl0{color:#a32020}
+/* address ledger */
+.ledger{width:min(100%,440px);background:#f4e7c4 linear-gradient(90deg,rgba(150,110,60,.06),transparent 30%,transparent 70%,rgba(150,110,60,.1));border:1px solid #c7b07a;box-shadow:var(--shadow);padding:14px 16px 50px;position:relative;font-family:var(--print)}
+.lhead{text-align:center;border-bottom:3px double #8b6b3a;padding-bottom:4px}
+.prop-ledger .pl0{font-weight:700;font-size:1.3rem;letter-spacing:.08em}
+.lsub{text-align:right;font-size:.95rem;margin:4px 0 8px}
+.lrows{border:1px solid #8b6b3a}
+.lrow{border-bottom:1px solid #b89a63;padding:4px 8px;font-size:1.1rem}.lrow:last-child{border-bottom:0}
+.ledger .pencil{font-family:var(--hand);color:#6e6a66;font-size:.9em}
+.ledger .seal{position:absolute;right:14px;bottom:8px;width:34px;height:34px;border:2.5px solid #c0392b;border-radius:50%;opacity:.55;transform:rotate(-12deg)}
+/* hospital ward */
+.ward{width:min(100%,440px);display:grid;gap:12px;background:#e9eef0;border-radius:10px;padding:14px;box-shadow:inset 0 0 0 1px #cfd8dc}
+.wsign{background:#2f7d64;color:#fff;border-radius:6px;padding:6px 12px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,.2)}
+.prop-ward .wsign .pl{font-weight:800;font-size:1.25rem;letter-spacing:.1em}
+.prop-ward .wsign .pl:hover,.prop-ward .wsign .pl.sel{background:rgba(255,255,255,.2)}
+.wboard{background:#fff;border:2px solid #9fb0b6;border-radius:6px;padding:6px 10px;display:flex;align-items:center;gap:8px;font-weight:700;font-size:1.05rem}
+.wboard svg{width:22px;height:22px;color:#2f7d64;flex:none}
+.wbed{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.bedcard{background:#ffd84a;border:2px solid #2b2b2b;border-radius:4px;padding:8px;display:grid;justify-items:center;gap:2px;font-weight:800;font-size:1.15rem}
+.bedcard svg{width:42px;height:42px;color:#2b2b2b}
+.clip{background:#fff;border:1px solid #bbb;border-radius:4px;padding:18px 8px 10px;position:relative;font-size:.98rem;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,.15)}
+.clip .clipt{position:absolute;left:50%;top:-6px;width:44px;height:14px;margin-left:-22px;background:linear-gradient(#c9ccd0,#8e9399);border-radius:4px}
+/* the returned envelope */
+.prop-envelope .env.big{width:min(100%,460px);min-height:250px;padding:12px}
+.prop-envelope .addr{margin:58px 0 0 16%}
+.prop-envelope .en-addr{margin:0 0 4px}
+.prop-envelope .pl0{font:600 1.2rem var(--hand);color:#30425e}
+.prop-envelope .pmark{position:absolute;right:62px;top:14px;width:62px;height:62px;border:2px solid rgba(40,40,40,.55);border-radius:50%;display:grid;place-items:center;transform:rotate(-14deg)}
+.prop-envelope .pmark .pl{font:700 .9rem var(--mono);color:rgba(40,40,40,.75);margin:0;padding:2px}
+.pstamp{display:inline-block;margin:10px 4px 0 0;transform:rotate(-4deg)}
+.pstamp.purple{border:2px solid #7a3d9a;color:#6b2f8a;padding:2px 6px;font-weight:800;font-size:1.05rem;position:relative}
+.pstamp .inconnu{position:absolute;right:-6px;bottom:-16px;font:700 9px var(--mono);background:#fff;border:1px solid #888;color:#333;padding:0 4px;transform:rotate(6deg)}
+.pstamp.hand{display:flex;align-items:center;gap:4px;color:#b02c22;border:2px solid #b02c22;border-radius:4px;padding:2px 8px 2px 4px;font-weight:800;font-size:1.05rem;transform:rotate(3deg);width:max-content;margin-top:16px}
+.pstamp .fing{font-size:1.4rem;line-height:1}
+@media (max-width:420px){.prop-poster .pl0{font-size:1.65rem}.prop-tin .pl0{font-size:2.2rem}.wbed{grid-template-columns:1fr}}

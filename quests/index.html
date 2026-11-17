@@ -13,12 +13,13 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=43">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Klee+One:wght@600&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css?v=44">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=43"></script>
-<script src="../data/story.js?v=43"></script>
-<script src="../data/story-audio.js?v=43"></script>
+<script src="../shared/engine.js?v=44"></script>
+<script src="props.js?v=44"></script>
+<script src="../data/story.js?v=44"></script>
+<script src="../data/story-audio.js?v=44"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -457,6 +458,7 @@ function story(uid, draft){
     else if (p.t === "break") h += '<div class="sbreak" role="separator" aria-label="Scene break"><span></span><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M2 6c4-5 8-5 12 0s8 5 12 0 8-5 12 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span></span></div>';
     else if (p.t === "cat") h += '<figure class="scat"><img src="../shared/cast/cat/'+esc(p.pose || "smug")+'.webp" alt="'+esc(p.alt || "The black-and-white cat")+'" width="130" loading="lazy"></figure>';
     else if (p.t === "note") h += mugiBox("tip", "Mugi’s note", p, [p.text]);
+    else if (p.t === "plates" && p.look && window.StoryProps) h += StoryProps.html(p, i, md, esc);
     else if (p.t === "plates") h += '<div><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="plates">'+p.items.map(function(it, k){ return '<button type="button" class="plate" data-k="'+i+'-'+k+'" aria-expanded="false"><span class="pj" lang="ja">'+md(it.ja)+'</span><span class="pr">'+(it.ro ? '<b>'+esc(it.ro)+'</b>' : '')+'<span class="small">'+md(it.who)+'</span></span></button>'; }).join("")+'</div></div>';
     else if (p.t === "ex"){ h += '<div id="sx'+i+'"></div>'; exs.push([i, p.ex]); }
     else if (p.t === "mailboxes") h += '<div class="mbwrap" data-mb="'+i+'"><h2>'+esc(p.title)+'</h2><p class="small muted">'+esc(p.hint)+'</p><div class="mbrow"><div class="mbank" role="group" aria-label="Mailboxes">'+p.items.map(function(it, k){ return '<button type="button" class="mbox'+(it.old ? ' old' : '')+(it.ja ? '' : ' empty')+'" data-k="'+k+'" aria-label="Room '+it.room+(it.ja ? '' : ', no name')+'"><span class="rm">'+esc(it.room)+'</span><span class="slot"></span><span class="lbl" lang="ja">'+(esc(it.ja) || '&nbsp;')+'</span></button>'; }).join("")+(p.landlord ? '<button type="button" class="mbox wood'+(p.landlord.old ? ' old' : '')+'" data-k="l" aria-label="'+esc(p.landlord.label)+'"><span class="rm" lang="ja">おおや</span><span class="slot"></span><span class="lbl" lang="ja">'+esc(p.landlord.ja)+'</span></button>' : '')+'</div></div><div class="mbinfo card small" aria-live="polite">Tap a mailbox.</div></div>';
@@ -474,6 +476,7 @@ function story(uid, draft){
       ICA.$$(".mbox", w).forEach(function(x){ x.classList.toggle("sel", x === b); });
       info.innerHTML = (it.ro ? '<b>'+esc(it.ro)+'</b>'+(it.ja ? ' <span lang="ja">('+esc(it.ja)+')</span>' : '')+' · ' : '')+(k === "l" ? esc(it.label) : 'Room '+esc(it.room))+'<br>'+md(it.who); }); }); });
   ICA.$$(".gbag", app).forEach(function(b){ b.addEventListener("click", function(){ var o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.classList.toggle("open", o); }); });
+  if (window.StoryProps) StoryProps.bind(app, e.parts, md, esc);
   ICA.$$(".plate", app).forEach(function(b){ b.addEventListener("click", function(){ var o = b.getAttribute("aria-expanded") !== "true"; b.setAttribute("aria-expanded", o); b.classList.toggle("open", o); }); });
   ICA.$$(".entog", app).forEach(function(b){ b.addEventListener("click", function(){ var box = b.closest(".narr,.sline,.mugibox"), on = !box.classList.contains("show-en"); box.classList.toggle("show-en", on); b.setAttribute("aria-pressed", on); }); });
   var root = app.querySelector(".story"), eb = app.querySelector("[data-en]");
