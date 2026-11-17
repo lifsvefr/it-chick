@@ -452,3 +452,10 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .epcard.home > span{display:grid;gap:3px}
 .eptop{margin-bottom:2px}
 .eptop .epcard b{font-size:.98rem}
+
+/* volume sliders in Settings */
+.volrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(110px,40%) 2.8em;align-items:center;gap:10px}
+.volrow.sub label{padding-left:14px;border-left:2px solid var(--line)}
+.volrow input[type=range]{width:100%;accent-color:var(--lupine);margin:0}
+.volrow output{font-size:.85em;color:var(--soft);text-align:right;font-variant-numeric:tabular-nums}
+.volrow label .small{display:block}

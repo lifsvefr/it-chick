@@ -338,9 +338,14 @@ ICA.settingsSheet = function(o){
   o = o || {};
   var st = ICA.load(), s = st.settings;
   var snd = s.sound || (st.arcade && st.arcade.jp && st.arcade.jp.snd === false ? "off" : "on");
+  var V = s.vol || {}; if (snd === "off" && V.fx == null) V.fx = 0;
+  function vol(k, label, sub, hint){ var v = V[k] == null ? 100 : +V[k]; return '<div class="volrow'+(sub ? ' sub' : '')+'"><label for="vol-'+k+'">'+label+(hint ? ' <span class="small muted">'+hint+'</span>' : '')+'</label><input type="range" id="vol-'+k+'" data-vol="'+k+'" min="0" max="100" step="5" value="'+v+'"><output for="vol-'+k+'">'+(v ? v + "%" : "Off")+'</output></div>'; }
   function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
   ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
-    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+seg("sound","Sound effects",[["on","On"],["off","Off"]],snd)+seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+seg("mugiAuto","Mugi speaks by herself",[["off","Off"],["on","On"]],s.mugiAuto || "off")+'</div>'+
+    '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+'</div>'+
+    '<h3>Sound</h3><div class="stack setlist">'+vol("voice","All voices")+vol("mugi","Mugi","sub")+vol("cast","Everyone else","sub","Story and lessons")+vol("music","Arcade music")+vol("fx","Sound effects",null,"Arcade sounds")+
+    seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+seg("mugiAuto","Mugi speaks by herself",[["off","Off"],["on","On"]],s.mugiAuto || "off")+'</div>'+
+    '<h3>Kamome House</h3><div class="stack setlist">'+seg("storyChain","After a line, play the next one",[["off","Off"],["on","On"]],s.storyChain || "off")+seg("furi","Furigana in the story",[["on","On"],["off","Off"]],s.furi || "on")+'</div>'+
     '<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
     '<h3>Backup</h3><p class="small muted">Without sync, progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details'+(o.openRestore ? ' open' : '')+'><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
@@ -348,6 +353,13 @@ ICA.settingsSheet = function(o){
     '<div class="row">'+(o.progress ? '<button class="btn small ghost" id="goprogress">See my progress</button>' : '')+(o.setup ? '<button class="btn small ghost" id="gosetup">Run setup again</button>' : '<a class="btn small ghost" href="'+ICA.base+'index.html#setup">Run setup again</a>')+'</div>'+
     '<p class="small muted">Version: Pass 22 · four tracks, four electives, six labs · International Studies complete (22 units) · Japanese Foundations N5–N3 · Drive sync · Mugi · audio.</p>', function(sh){
     sh.setAttribute("aria-label", "Settings"); sh.id = "settingspanel";
+    sh.addEventListener("input", function(e){
+      var r = e.target.closest("[data-vol]"); if (!r) return; var k = r.getAttribute("data-vol"), v = +r.value;
+      st.settings.vol = st.settings.vol || {}; st.settings.vol[k] = v; r.nextElementSibling.textContent = v ? v + "%" : "Off";
+      if (k === "fx"){ st.settings.sound = v ? "on" : "off"; if (st.arcade && st.arcade.jp) st.arcade.jp.snd = !!v; }
+      ICA.save(true); setVol(); if (ICA.onSettings) ICA.onSettings("vol", k);
+    });
+    sh.addEventListener("change", function(e){ if (e.target.closest("[data-vol]")) ICA.save(); });
     sh.addEventListener("click", function(e){
       var b = e.target.closest("[data-set]");
       if (b){ var k = b.getAttribute("data-set"), v = b.getAttribute("data-val"); st.settings[k] = v; if (k === "sound" && st.arcade && st.arcade.jp) st.arcade.jp.snd = v === "on"; ICA.save(); ICA.applySettings(); if (ICA.onSettings) ICA.onSettings(k, v); ICA.$$('[data-set="'+k+'"]', sh).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
@@ -824,16 +836,42 @@ ICA.sayGroups = function(root){
   });
   return out;
 };
-var AUD = {cache:{}, el:null, btn:null};
+var AUD = {cache:{}, el:null, btn:null, kind:null};
+/* volume, 0..1, from Settings: every voice is "voice" x its own slider (Mugi, or everyone else); arcade music and effects stand alone */
+ICA.vol = function(kind){
+  var v = (ICA.load().settings || {}).vol || {}, g = function(k){ var n = parseFloat(v[k]); return isNaN(n) ? 1 : Math.max(0, Math.min(100, n)) / 100; };
+  if (kind === "music" || kind === "fx") return g(kind);
+  return g("voice") * (kind === "mugi" ? g("mugi") : g("cast"));
+};
+/* phones that ignore audio.volume (iPhone, iPad): route the player through a gain node instead */
+var VOLRO = (function(){ try { var t = new Audio(); t.volume = 0.5; return t.volume === 1; } catch(e){ return false; } })(), VAC = null, VGAIN = null;
+function setVol(){
+  if (!AUD.el) return; var v = ICA.vol(AUD.kind);
+  if (!VOLRO){ AUD.el.volume = v; return; }
+  try {
+    if (!VAC){ VAC = new (window.AudioContext || window.webkitAudioContext)(); VGAIN = VAC.createGain(); VAC.createMediaElementSource(AUD.el).connect(VGAIN); VGAIN.connect(VAC.destination); }
+    if (VAC.state === "suspended" && VAC.resume) VAC.resume(); VGAIN.gain.value = v;
+  } catch(e){}
+}
+ICA.setVolume = setVol;
+/* "Keep playing" in the story: when a line ends, the next character line plays (narration is skipped) */
+function storyNext(btn){
+  if (!btn || !btn.isConnected || ((ICA.load().settings || {}).storyChain !== "on")) return false;
+  var all = ICA.$$(".story .ttsb.sl"), nx = all[all.indexOf(btn) + 1]; if (!nx) return false;
+  try { nx.scrollIntoView({block:"center", behavior:"smooth"}); } catch(e){ nx.scrollIntoView(); }
+  setTimeout(function(){ if (!AUD.btn || AUD.btn === btn) ICA.say("story", nx.getAttribute("data-key"), nx); }, 650);
+  return true;
+}
 ICA.say = function(kind, key, btn){
   var many = String(key).split("\u0001");
   if (many.length > 1){ var i = 0; AUD.gap = kind === "ja" ? 450 : 0; AUD.queue = function(){ i++; if (i < many.length){ ICA.say(kind, many[i], btn); if (btn) btn.classList.add("playing"); } else AUD.queue = null; }; AUD.queueKeep = true; ICA.say(kind, many[0], btn); return true; }
   if (!AUD.queueKeep) AUD.queue = null; AUD.queueKeep = false;
   var f = (ICA.audioIndex()[kind] || {})[key]; if (!f) return false;
   var url = ICA.base + "audio/" + f, st = ICA.load().settings || {}, rate = parseFloat(st.audioSpeed) || 1;
-  if (!AUD.el){ AUD.el = new Audio(); AUD.el.addEventListener("ended", function(){ if (AUD.queue){ var q = AUD.queue; setTimeout(function(){ if (AUD.queue !== q) return; AUD.queueKeep = true; q(); }, AUD.gap || 0); return; } if (AUD.btn) AUD.btn.classList.remove("playing"); AUD.btn = null; }); }
+  if (!AUD.el){ AUD.el = new Audio(); AUD.el.addEventListener("ended", function(){ if (AUD.queue){ var q = AUD.queue; setTimeout(function(){ if (AUD.queue !== q) return; AUD.queueKeep = true; q(); }, AUD.gap || 0); return; } var done = AUD.btn, k = AUD.kind; if (AUD.btn) AUD.btn.classList.remove("playing"); AUD.btn = null; if (k === "story") storyNext(done); }); }
   var a = AUD.el; a.pause(); if (AUD.btn) AUD.btn.classList.remove("playing");
   a.src = AUD.cache[url] || url; a.playbackRate = rate; try { a.preservesPitch = true; } catch(e){}
+  AUD.kind = kind; setVol();
   var p = a.play(); if (p && p.catch) p.catch(function(){});
   if (btn){ btn.classList.add("playing"); AUD.btn = btn; }
   if (!AUD.cache[url] && window.fetch) fetch(url).then(function(r){ return r.ok ? r.blob() : null; }).then(function(b){ if (b) AUD.cache[url] = URL.createObjectURL(b); }).catch(function(){});

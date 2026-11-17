@@ -8,15 +8,18 @@ var RM = root.matchMedia && root.matchMedia("(prefers-reduced-motion: reduce)").
 AFX.reduced = RM;
 
 /* ---------- audio ---------- */
-var AC = null, MASTER = null, NOISE = null;
-AFX.soundOn = function(){ return true; };       // the page replaces these two with its settings
+var AC = null, MASTER = null, NOISE = null, FXG = null, MUSG = null;
+AFX.soundOn = function(){ return true; };       // the page replaces these with its settings
 AFX.musicOn = function(){ return true; };
+AFX.fxVol = function(){ return 1; };            // 0..1, from the volume sliders in Settings
+AFX.musicVol = function(){ return 1; };
 function ac(){
   if (!AC){
     try {
       AC = new (root.AudioContext || root.webkitAudioContext)();
       MASTER = AC.createGain(); MASTER.gain.value = 0.9;
       var comp = AC.createDynamicsCompressor(); MASTER.connect(comp); comp.connect(AC.destination);
+      FXG = AC.createGain(); FXG.connect(MASTER); MUSG = AC.createGain(); MUSG.connect(MASTER);
       NOISE = AC.createBuffer(1, AC.sampleRate * 0.5, AC.sampleRate);
       var d = NOISE.getChannelData(0); for (var i = 0; i < d.length; i++) d[i] = Math.random()*2 - 1;
     } catch(e){ AC = null; }
@@ -24,19 +27,22 @@ function ac(){
   if (AC && AC.state === "suspended" && AC.resume) AC.resume();
   return AC;
 }
+function vols(){ if (FXG){ FXG.gain.value = AFX.fxVol(); MUSG.gain.value = AFX.musicVol(); } }
+AFX.applyVolume = vols;
+var OUT = null;   // which bus the next tones go to: effects by default, music while the tune is scheduled
 function tone(f, t0, d, type, vol, slide){
   var c = ac(); if (!c) return;
   var t = c.currentTime + t0, o = c.createOscillator(), g = c.createGain();
   o.type = type || "square"; o.frequency.setValueAtTime(f, t); if (slide) o.frequency.exponentialRampToValueAtTime(slide, t + d);
   g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol || 0.2, t + 0.006); g.gain.exponentialRampToValueAtTime(0.0001, t + d);
-  o.connect(g); g.connect(MASTER); o.start(t); o.stop(t + d + 0.02);
+  o.connect(g); g.connect(OUT || FXG || MASTER); o.start(t); o.stop(t + d + 0.02);
 }
 function noise(t0, d, vol, freq){
   var c = ac(); if (!c) return;
   var t = c.currentTime + t0, n = c.createBufferSource(), f = c.createBiquadFilter(), g = c.createGain();
   n.buffer = NOISE; f.type = "lowpass"; f.frequency.setValueAtTime(freq || 3000, t); f.frequency.exponentialRampToValueAtTime(80, t + d);
   g.gain.setValueAtTime(vol || 0.5, t); g.gain.exponentialRampToValueAtTime(0.0001, t + d);
-  n.connect(f); f.connect(g); g.connect(MASTER); n.start(t); n.stop(t + d);
+  n.connect(f); f.connect(g); g.connect(OUT || FXG || MASTER); n.start(t); n.stop(t + d);
 }
 var SFX = {
   tap:   function(){ tone(880, 0, .05, "square", .14); tone(1320, .04, .05, "square", .1); },
@@ -52,7 +58,7 @@ var SFX = {
   clear: function(){ [659,784,988].forEach(function(f, i){ tone(f, i*.1, .12, "triangle", .2); }); tone(1319, .32, .35, "triangle", .2); tone(988, .32, .35, "square", .08); },   /* all right, no new best: bright, short, no fanfare */
   best:  function(){ [523,659,784,1046,784,1046].forEach(function(f, i){ tone(f, i*.08, .1, "square", .18); }); tone(1319, .5, .6, "square", .2); tone(659, .5, .6, "triangle", .28); noise(.5, .25, .18, 8000); }
 };
-AFX.sfx = function(kind, arg){ if (!AFX.soundOn()) return; try { (SFX[kind] || SFX.tap)(arg); } catch(e){} };
+AFX.sfx = function(kind, arg){ if (!AFX.soundOn() || !AFX.fxVol()) return; try { ac(); vols(); OUT = FXG; (SFX[kind] || SFX.tap)(arg); } catch(e){} OUT = null; };
 
 /* background tune: an original driving loop in A minor, 168 bpm, 16th-note steps.
    It builds up: bass and kick first, the melody from bar 3, snare and arpeggio from bar 5 (no hi-hat). */
@@ -61,7 +67,7 @@ var CH = [[57,60,64],[53,57,60],[55,59,62],[52,56,59]], ROOT = [45,41,43,40];
 var LEAD = [69,72,76,72,81,79,76,72, 77,76,72,69,72,74,76,72, 74,79,83,79,86,83,79,74, 80,76,71,76,80,83,80,76];
 function mf(n){ return 440*Math.pow(2, (n - 69)/12); }
 function sched(){
-  var c = AC; if (!c) return; var sp = 60/168/4;
+  var c = AC; if (!c) return; var sp = 60/168/4; vols(); OUT = MUSG;
   if (next < c.currentTime) next = c.currentTime + .03;
   while (next < c.currentTime + .12){
     var t = next - c.currentTime, bar = Math.floor(step/16), b4 = bar % 4, s16 = step % 16;
@@ -74,9 +80,10 @@ function sched(){
     if (bar >= 4 && (s16 === 4 || s16 === 12)) noise(t, .12, .32, 2600);
     step++; next += sp;
   }
+  OUT = null;
 }
 AFX.musicStart = function(){
-  if (bgm || !AFX.soundOn() || !AFX.musicOn()) return;
+  if (bgm || !AFX.soundOn() || !AFX.musicOn() || !AFX.musicVol()) return;
   var c = ac(); if (!c) return; step = 0; next = c.currentTime + .05; bgm = setInterval(sched, 25);
 };
 AFX.musicStop = function(){ if (bgm){ clearInterval(bgm); bgm = null; } };

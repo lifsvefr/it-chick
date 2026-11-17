@@ -14,11 +14,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=42">
+<link rel="stylesheet" href="../shared/style.css?v=43">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=42"></script>
-<script src="../data/story.js?v=42"></script>
-<script src="../data/story-audio.js?v=42"></script>
+<script src="../shared/engine.js?v=43"></script>
+<script src="../data/story.js?v=43"></script>
+<script src="../data/story-audio.js?v=43"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -479,6 +479,7 @@ function story(uid, draft){
   var root = app.querySelector(".story"), eb = app.querySelector("[data-en]");
   if (eb) eb.addEventListener("click", function(){ var on = root.classList.toggle("hide-en"); eb.textContent = on ? "Show English" : "Hide English"; eb.setAttribute("aria-pressed", !on); ICA.$$(".show-en", root).forEach(function(x){ x.classList.remove("show-en"); }); ICA.$$(".entog", root).forEach(function(x){ x.setAttribute("aria-pressed", "false"); }); });
   var fb = app.querySelector("[data-furi]");
+  ICA.onSettings = function(k, v){ if (k !== "furi" || !root.isConnected) return; var off = v === "off"; root.classList.toggle("nofuri", off); if (fb){ fb.textContent = off ? "Show furigana" : "Hide furigana"; fb.setAttribute("aria-pressed", !off); } if (!off) storyText(root); };
   if (fb) fb.addEventListener("click", function(){ var off = root.classList.toggle("nofuri"); fb.textContent = off ? "Show furigana" : "Hide furigana"; fb.setAttribute("aria-pressed", !off); var st = ICA.load(); st.settings = st.settings || {}; st.settings.furi = off ? "off" : "on"; ICA.save(); if (!off) storyText(root); });
   if (!e.draft){ var st = ICA.load(); st.story = st.story || {}; if (!st.story[uid]){ st.story[uid] = Date.now(); ICA.save(); } }
   if (ICA.voiceScan) ICA.voiceScan(app);

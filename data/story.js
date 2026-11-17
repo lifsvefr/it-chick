@@ -191,7 +191,7 @@ window.ICA_STORY = {"cast":{"cheska":{"name":"Cheska","ja":"チェスカ","art":
 {"t":"narr","text":"Fumiko-san needs the buckets and tongs for the beach. They are in the downstairs storeroom, along with many years of the Satō family's old things. She asks the first two people who come down the stairs."},
 {"t":"line","who":"fumiko","mood":"talk","ja":"どうぐは、ものおきの[中]{なか}にあります。トビーさん、あおいさん、お[願]{ねが}いします。","en":"The equipment is in the storeroom. Toby, Aoi, could you get it, please?","gl":"どうぐ: tools, equipment. ものおき: a storeroom.","tag":"kindly","ref":"E4·L6"},
 {"t":"line","who":"aoi","mood":"think","ja":"ものおきの、どこですか。","en":"Where in the storeroom?","tag":"brisk","ref":"E4·L7"},
-{"t":"line","who":"fumiko","mood":"think","ja":"…[中]{なか}です。","en":"...Inside.","tag":"pause, vaguely","ref":"E4·L8"},
+{"t":"line","who":"fumiko","mood":"oops","ja":"…わかりません。はこの[字]{じ}を[読]{よ}んでください。","en":"...I don't remember. Read what's written on the boxes.","gl":"[字]{じ}: letters, writing.","tag":"pause, a little sheepish","ref":"E4·L8"},
 {"t":"break"},
 {"t":"narr","text":"ものおき。","lang":"ja"},
 {"t":"narr","text":"Toby has known this house since he was fifteen, when he stayed with the Satōs for three weeks on a sister-city school exchange. Aoi moved here from Tokyo, where she went to university. She still hasn't unpacked all her boxes. The two of them don't quite get along yet. Aoi suspects nobody is really as polite as Toby seems, and Toby thinks Aoi is a little cold. Neither of them says so."},

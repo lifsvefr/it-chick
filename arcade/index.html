@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=42">
+<link rel="stylesheet" href="../shared/style.css?v=43">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=42"></script>
+<script src="../shared/engine.js?v=43"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/arcadefx.js"></script>
@@ -304,11 +304,13 @@ window.addEventListener("popstate", function(e){
 var AFX = window.ArcadeFX;
 function jp(){ return JG.store(ICA.load()); }
 function soundOn(){ var s = ICA.load().settings.sound; return s ? s !== "off" : jp().snd !== false; }
-function setSound(on){ ICA.load().settings.sound = on ? "on" : "off"; jp().snd = on; ICA.save(); if (!on) AFX.musicStop(); else if (cur.s === "play" && cur.alive && cur.g !== "cards") AFX.musicStart(); }
+function volUp(k){ var st = ICA.load().settings; st.vol = st.vol || {}; if (!+((st.vol[k] == null) ? 100 : st.vol[k])) st.vol[k] = 100; }   // the arcade's own switches turn a zeroed slider back up
+function setSound(on){ if (on) volUp("fx"); ICA.load().settings.sound = on ? "on" : "off"; jp().snd = on; ICA.save(); if (!on) AFX.musicStop(); else if (cur.s === "play" && cur.alive && cur.g !== "cards") AFX.musicStart(); }
 /* music has its own switch (Arcade only); it plays during games, never on menus */
 function musicOn(){ return ICA.load().arcade.music !== false; }
-function setMusic(on){ ICA.load().arcade.music = on; ICA.save(); if (!on) AFX.musicStop(); else if (cur.s === "play" && cur.alive && cur.g !== "cards") AFX.musicStart(); }
+function setMusic(on){ if (on) volUp("music"); ICA.load().arcade.music = on; ICA.save(); if (!on) AFX.musicStop(); else if (cur.s === "play" && cur.alive && cur.g !== "cards") AFX.musicStart(); }
 AFX.soundOn = soundOn; AFX.musicOn = musicOn;
+AFX.fxVol = function(){ return ICA.vol ? ICA.vol("fx") : 1; }; AFX.musicVol = function(){ return ICA.vol ? ICA.vol("music") : 1; };
 function beep(kind, arg){ AFX.sfx(kind, arg); }
 function sndBtn(){ var on = soundOn(), mu = musicOn();
   return '<button class="iconbtn sndb" data-snd aria-pressed="'+on+'" aria-label="Sound effects" title="Sound '+(on ? "on" : "off")+'"><span aria-hidden="true">'+(on ? "🔊" : "🔇")+'</span></button>'+
@@ -907,7 +909,7 @@ ICA.onSheet = function(open){
   if (open){ if (cur.s === "play" && cur.alive && !paused && !openD){ sheetPaused = true; setPaused(true); } }
   else if (sheetPaused){ sheetPaused = false; if (cur.s === "play" && cur.alive) setPaused(false); }
 };
-ICA.onSettings = function(k){ if (k === "sound"){ syncSnd(); if (!soundOn()) AFX.musicStop(); } };
+ICA.onSettings = function(k, v){ if (k === "sound" || k === "vol"){ syncSnd(); if (!soundOn()) AFX.musicStop(); AFX.applyVolume(); if (v === "music" && !AFX.musicVol()) AFX.musicStop(); } };
 ICA.loadAll("../", function(){ picked = savedPick(); migrateBoards(); applyFuri(); home(); }, {pixel:true});
 })();
 </script>
