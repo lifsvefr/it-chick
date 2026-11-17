@@ -462,7 +462,7 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 
 /* ---------- Kamome House props (quests/props.js): drawn objects, each Japanese line a tappable button ---------- */
 .propwrap{display:grid;gap:8px}
-.prop{--hand:"Klee One","Yu Kyokasho","Hiragino Maru Gothic ProN",cursive;--print:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;display:flex;justify-content:center;padding:14px 4px;color:#2b211b}
+.prop{--fumiko:"Zen Kurenaido","Klee One",cursive;--hand:"Klee One","Yu Kyokasho","Hiragino Maru Gothic ProN",cursive;--print:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;display:flex;justify-content:center;padding:14px 4px;color:#2b211b}
 .prop .pl{all:unset;box-sizing:border-box;display:block;cursor:pointer;border-radius:6px;padding:2px 6px;margin:1px -6px;line-height:1.5;outline-offset:2px;transition:background .15s, box-shadow .15s}
 .prop .pl:hover{background:rgba(255,214,90,.28)}
 .prop .pl:focus-visible{outline:3px solid var(--lupine)}
@@ -481,28 +481,32 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .paper .beach{width:100%;height:34px}
 .prop-notice .pl0{font:800 1.55rem/1.3 var(--print);letter-spacing:.04em;color:#1e5f74}
 .prop-notice .when{display:grid;gap:0;font-size:1.15rem;font-weight:700}
-.prop-notice .pl3{justify-self:center;border:2px solid #c8352b!important;color:#b02c22;font-weight:700;padding:2px 12px;margin:4px 0}
-.prop-notice .pl4{font:600 1.15rem var(--hand);color:#5f5a55;transform:rotate(-3deg);justify-self:end;margin-top:6px}
-/* the cookie tin and the airmail bundle */
-.tinscene{display:grid;gap:14px;justify-items:center;width:min(100%,420px)}
-.tinlid{width:min(100%,300px);aspect-ratio:1.35;border-radius:22px;background:radial-gradient(ellipse at 30% 25%,#e9f1f6,#a8c0cf 45%,#6d8a9c);padding:14px;box-shadow:inset 0 0 0 4px #8aa3b2,inset 0 0 0 8px #c9d9e2,var(--shadow)}
-.tinin{height:100%;border-radius:12px;background:#f3ecdc;display:grid;place-content:center;justify-items:center;box-shadow:inset 0 2px 6px rgba(0,0,0,.25)}
-.prop-tin .pl0{font:600 2.6rem/1.1 var(--hand);color:#262626;writing-mode:vertical-rl;padding:6px 4px;margin:0}
-.bundle{display:grid;gap:14px;width:100%}
-.env{position:relative;background:#e4f0f8;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.prop-notice .pl3{justify-self:center;border:2px solid #c8352b!important;color:#b02c22;font-weight:700;padding:14px 14px 4px;margin:4px 0;line-height:1.3}
+.prop-notice .pl4{font:400 1.3rem var(--fumiko);color:#5f5a55;transform:rotate(-3deg);justify-self:end;margin-top:6px}
+/* the cookie tin and the airmail letters */
+.tinscene{display:grid;gap:14px;width:min(100%,440px)}
+.lids{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}
+.lids figure{margin:0;display:grid;gap:4px;justify-items:center}
+.lidtop svg{width:100%;height:auto;filter:drop-shadow(0 3px 5px rgba(0,0,0,.25))}
+.tinlid{width:100%;aspect-ratio:200/150;border-radius:14%/18%;background:radial-gradient(ellipse at 30% 25%,#f1f5f8,#b7c6d0 55%,#8197a5);padding:7%;box-shadow:inset 0 0 0 3px #8aa3b2,0 3px 6px rgba(0,0,0,.25)}
+.tinin{height:100%;border-radius:10px;background:#efe8d8;display:grid;place-content:center;justify-items:center;box-shadow:inset 0 2px 5px rgba(0,0,0,.2)}
+.tinin .cap{margin:0}
+.prop-tin .pl0{font:400 2.4rem/1.05 var(--fumiko);color:#222;writing-mode:vertical-rl;padding:4px;margin:0}
+.env{position:relative;background:#e4f0f8;border-radius:3px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
 .env.air{border:7px solid transparent;border-image:repeating-linear-gradient(45deg,#d33a3a 0 10px,#fff 10px 20px,#2c5aa8 20px 30px,#fff 30px 40px) 7}
-.prop-tin .env.air{padding:12px 14px 14px;min-height:130px}
+.prop-tin .env{aspect-ratio:16/9;overflow:hidden}
 .env .avion{position:absolute;left:10px;top:8px;font:700 9px/1.25 var(--mono);color:#2c5aa8;border:1.5px solid #2c5aa8;padding:2px 4px}
 .env .stamp{position:absolute;right:10px;top:8px;width:42px;height:50px;background:#f6d77a;border:3px dotted #fff;outline:1px solid #c9a94a;display:grid;place-items:end center}
 .env .stamp i{font:700 6px var(--mono);font-style:normal;color:#7a5a12;padding-bottom:3px}
 .env .stamp::before{content:"";position:absolute;inset:8px 9px 14px;border-radius:50% 50% 40% 40%;background:#d08a35}
-.env .en-addr{display:block;margin:40px 0 4px 18%;font:600 .95rem/1.35 var(--hand);color:#30425e}
-.prop-tin .env.air .pl1{margin-left:18%;font:600 1.2rem var(--hand);color:#30425e}
-.env .string{position:absolute;left:62%;top:-7px;bottom:-7px;width:3px;background:#efe6d2;box-shadow:0 0 0 1px #c9b98f}
-.env.backside{background:#dfeaf3;min-height:110px;display:grid;place-items:end center;padding-bottom:12px!important}
-.env.backside .flap{position:absolute;inset:0 0 40% 0;background:linear-gradient(to bottom right,transparent 49.5%,#b7c9d6 50%,transparent 51%) left/50% 100% no-repeat,linear-gradient(to bottom left,transparent 49.5%,#b7c9d6 50%,transparent 51%) right/50% 100% no-repeat}
-.env.backside .cap{position:absolute;left:10px;top:8px}
-.prop-tin .pl2{font:600 1.1rem var(--hand);color:#6b6560;position:relative}
+.env .en-addr{display:block;margin:0 0 4px;font:600 .95rem/1.35 var(--hand);color:#30425e}
+.prop-tin .env .addr{position:absolute;left:22%;top:42%}
+.prop-tin .env .pl1{font:600 1.2rem var(--hand);color:#30425e}
+.env.back{background:#dbe8f2}
+.env.back .flap{position:absolute;left:0;right:0;top:0;height:55%;background:#cfdfeb;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 1px 0 #a9bfcf)}
+.env.back::after{content:"";position:absolute;inset:0;background:linear-gradient(to top right,transparent 49.6%,#b9cddc 50%,transparent 50.4%) left bottom/50% 60% no-repeat,linear-gradient(to top left,transparent 49.6%,#b9cddc 50%,transparent 50.4%) right bottom/50% 60% no-repeat;pointer-events:none}
+.env.back .cap{position:absolute;left:10px;bottom:6px;z-index:1}
+.prop-tin .env.back .pl2{position:absolute;left:50%;top:62%;transform:translateX(-50%);font:400 1.25rem var(--fumiko);color:#5f5a55;white-space:nowrap;z-index:1}
 /* festival poster */
 .poster{width:min(100%,380px);background:linear-gradient(#18264a,#2c3f73 70%,#3d4f86);color:#fff;border-radius:6px;padding:4px 18px 18px;display:grid;gap:8px;text-align:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
 .poster .lanterns{width:calc(100% + 36px);margin:0 -18px;height:46px}
@@ -546,18 +550,27 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .lrow{border-bottom:1px solid #b89a63;padding:4px 8px;font-size:1.1rem}.lrow:last-child{border-bottom:0}
 .ledger .pencil{font-family:var(--hand);color:#6e6a66;font-size:.9em}
 .ledger .seal{position:absolute;right:14px;bottom:8px;width:34px;height:34px;border:2.5px solid #c0392b;border-radius:50%;opacity:.55;transform:rotate(-12deg)}
-/* hospital ward */
-.ward{width:min(100%,440px);display:grid;gap:12px;background:#e9eef0;border-radius:10px;padding:14px;box-shadow:inset 0 0 0 1px #cfd8dc}
-.wsign{background:#2f7d64;color:#fff;border-radius:6px;padding:6px 12px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,.2)}
-.prop-ward .wsign .pl{font-weight:800;font-size:1.25rem;letter-spacing:.1em}
-.prop-ward .wsign .pl:hover,.prop-ward .wsign .pl.sel{background:rgba(255,255,255,.2)}
-.wboard{background:#fff;border:2px solid #9fb0b6;border-radius:6px;padding:6px 10px;display:flex;align-items:center;gap:8px;font-weight:700;font-size:1.05rem}
-.wboard svg{width:22px;height:22px;color:#2f7d64;flex:none}
+/* hospital ward: a sign hung from the ceiling, a wall plaque, the card on his bed and his chart */
+.ward{width:min(100%,440px);display:grid;background:#eef2f3;border-radius:8px;box-shadow:inset 0 0 0 1px #cfd8dc;overflow:hidden}
+.ward .ceil{height:12px;background:repeating-linear-gradient(90deg,#dfe5e8 0 38px,#cdd5d9 38px 40px);border-bottom:1px solid #c3ccd1}
+.hang{position:relative;padding:22px 18px 4px;display:grid}
+.hang .rod{position:absolute;top:0;width:2px;height:22px;background:#9aa4aa}.hang .rod:first-child{left:22%}.hang .rod:nth-child(2){right:22%}
+.wsign{display:flex;align-items:stretch;background:#fff;border-radius:4px;box-shadow:0 3px 6px rgba(0,0,0,.18),inset 0 0 0 1px #d4dadd;overflow:hidden}
+.wband{background:#2f7d64;display:grid;place-items:center;padding:0 10px}.wband svg{width:30px;height:30px}
+.wtxt{display:grid;padding:6px 12px}
+.prop-ward .wsign .pl0{font-weight:800;font-size:1.3rem;letter-spacing:.12em;color:#1d3b33}
+.wen{display:block;font:600 11px var(--body);letter-spacing:.04em;color:#6b7b80}
+.wall{padding:14px 16px 16px;display:grid;gap:14px;background:linear-gradient(#eef2f3,#e6ecee)}
+.plaque{position:relative;display:flex;align-items:center;gap:10px;background:linear-gradient(#fdfefe,#eef3f4);border:1px solid #c5d0d4;border-radius:6px;padding:10px 14px;box-shadow:0 2px 3px rgba(0,0,0,.12)}
+.plaque .scr{position:absolute;width:5px;height:5px;border-radius:50%;background:#b5bfc4}.plaque .scr:nth-child(1){left:5px;top:5px}.plaque .scr:nth-child(2){right:5px;top:5px}.plaque .scr:nth-child(3){left:5px;bottom:5px}.plaque .scr:nth-child(4){right:5px;bottom:5px}
+.plaque svg{width:24px;height:24px;color:#2f7d64;flex:none}
+.prop-ward .plaque .pl1{font-weight:800;font-size:1.08rem;color:#1d3b33}
 .wbed{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
-.bedcard{background:#ffd84a;border:2px solid #2b2b2b;border-radius:4px;padding:8px;display:grid;justify-items:center;gap:2px;font-weight:800;font-size:1.15rem}
-.bedcard svg{width:42px;height:42px;color:#2b2b2b}
+.bedcard{background:#ffd84a;border:3px solid #222;border-radius:6px;padding:8px 6px 6px;display:grid;justify-items:center;gap:2px;font-weight:800;font-size:1.15rem;box-shadow:0 2px 4px rgba(0,0,0,.2)}
+.bedcard svg{width:72px;height:63px}
 .clip{background:#fff;border:1px solid #bbb;border-radius:4px;padding:18px 8px 10px;position:relative;font-size:.98rem;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,.15)}
 .clip .clipt{position:absolute;left:50%;top:-6px;width:44px;height:14px;margin-left:-22px;background:linear-gradient(#c9ccd0,#8e9399);border-radius:4px}
+.clip .cap{margin-bottom:2px}
 /* the returned envelope */
 .prop-envelope .env.big{width:min(100%,460px);min-height:250px;padding:12px}
 .prop-envelope .addr{margin:58px 0 0 16%}
@@ -570,4 +583,8 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .pstamp .inconnu{position:absolute;right:-6px;bottom:-16px;font:700 9px var(--mono);background:#fff;border:1px solid #888;color:#333;padding:0 4px;transform:rotate(6deg)}
 .pstamp.hand{display:flex;align-items:center;gap:4px;color:#b02c22;border:2px solid #b02c22;border-radius:4px;padding:2px 8px 2px 4px;font-weight:800;font-size:1.05rem;transform:rotate(3deg);width:max-content;margin-top:16px}
 .pstamp .fing{font-size:1.4rem;line-height:1}
-@media (max-width:420px){.prop-poster .pl0{font-size:1.65rem}.prop-tin .pl0{font-size:2.2rem}.wbed{grid-template-columns:1fr}}
+@media (max-width:420px){.prop-poster .pl0{font-size:1.65rem}.prop-tin .pl0{font-size:2rem}.prop-tin .env .pl1{font-size:1.05rem}}
+.prop .lids figure{background:none;border:0;padding:0;box-shadow:none;border-radius:0}
+.prop .tinin{width:100%;padding:4px}
+.prop .tinin .cap{font-size:9px;text-align:center}
+.prop .lids figure.tinlid{background:radial-gradient(ellipse at 30% 25%,#f1f5f8,#b7c6d0 55%,#8197a5);padding:7%;border-radius:14%/18%;box-shadow:inset 0 0 0 3px #8aa3b2,0 3px 6px rgba(0,0,0,.25);display:block}
