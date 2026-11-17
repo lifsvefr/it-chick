@@ -896,7 +896,7 @@ ICA.autoSay = function(){
   if (MUGI_NEXT){ if (hidden(MUGI_NEXT)) return; var m = MUGI_NEXT; MUGI_NEXT = null; if (m.isConnected){ ICA.say("mugi", m.getAttribute("data-key"), m); return; } }
   if (sheet) return;
   if (st.audioAuto !== "on") return;
-  var q = ICA.$$(".ex .q .ttsb, .qcard .ttsb").filter(function(b){ var ex = b.closest(".ex,.qcard"); return ex && !AUTO_DONE.has(ex) && ex.getBoundingClientRect().height; })[0];
+  var q = ICA.$$(".ex .q .ttsb, .qcard .ttsb").filter(function(b){ var ex = b.closest(".ex,.qcard"); return ex && !AUTO_DONE.has(ex) && !ex.closest(".story") && ex.getBoundingClientRect().height; })[0];   // story check questions never start on their own
   if (q){ AUTO_DONE.add(q.closest(".ex,.qcard")); ICA.say(q.getAttribute("data-say"), q.getAttribute("data-key"), q); }
 };
 
