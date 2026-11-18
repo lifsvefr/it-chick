@@ -35,7 +35,7 @@ ICA.addUnit({
       "**まりやさん** is the [[topic-marker|topic]]: what the sentence is about. **は** is a [[particle]]: a small word that comes after a noun and shows its job in the sentence. Here it marks the topic, a bit like “as for Mariya…”. **[学生]{がくせい}** is what you say about the topic. **です** is the polite [[copula]]: it works like “is”, “am” or “are”.",
       "Remember the hook: the particle は is pronounced **わ**. Inside words it keeps its normal sound: はな (flower), はい (yes).",
       {tip:"**Listening to patterns.** When a pattern has a blank, like X は Y です, the audio reads X and Y as **ほにゃらら**: a playful word Japanese speakers use for “something or other” when a word is left out, a bit like “so-and-so” or “blah”. You’ll hear it on TV and in everyday talk all over Japan. It’s casual, so keep it out of formal writing. A and B are read the way Japanese teachers do: エー and ビー."},
-      {table:[["Japanese","English"],["[私]{わたし}はまりやです。","I’m Mariya."],["ふみこさんは[大家]{おおや}さんです。","Fumiko is the landlady."],["ロドリゴさんはメキシコ[人]{じん}です。","Rodrigo is Mexican."],["[今日]{きょう}は[休]{やす}みです。","Today is a day off."]]},
+      {table:[["Japanese","English"],["[私]{わたし}はまりやです。","I’m Mariya."],["ふみこさんは[大家]{おおや}さんです。","Fumiko-san is the landlady."],["ロドリゴさんはメキシコ[人]{じん}です。","Rodrigo is Mexican."],["[今日]{きょう}は[休]{やす}みです。","Today is a day off."]]},
       "Three things that surprise English speakers:",
       {list:["**です doesn’t change for the person.** I am, you are, she is, they are: all です.","**There are no words for “a” or “the”,** and most nouns have no plural ending. [学生]{がくせい} can mean “a student”, “the student” or “students”. The situation tells you which.","**The verb part comes last.** です closes the sentence. Everything about the topic comes before it."]},
       {fig:'<svg viewBox="0 0 340 292"><text x="170" y="20" text-anchor="middle">One pattern, three sentences</text><rect class="d-lup" x="8" y="34" width="84" height="36" rx="6" stroke-width="2"/><text x="50" y="57" text-anchor="middle">まりやさん</text><rect class="d-gold" x="98" y="34" width="32" height="36" rx="6" stroke-width="2"/><text x="114" y="57" text-anchor="middle">は</text><rect class="d-sage" x="136" y="34" width="84" height="36" rx="6" stroke-width="2"/><text x="178" y="57" text-anchor="middle">がくせい</text><rect class="d-rose" x="226" y="34" width="106" height="36" rx="6" stroke-width="2"/><text x="279" y="57" text-anchor="middle">です</text><text class="s" x="50" y="88" text-anchor="middle">topic</text><text class="s" x="114" y="88" text-anchor="middle">particle</text><text class="s" x="178" y="88" text-anchor="middle">comment</text><text class="s" x="279" y="88" text-anchor="middle">polite “is”</text><text x="170" y="110" text-anchor="middle">Mariya is a student.</text><rect class="d-lup" x="8" y="124" width="84" height="36" rx="6" stroke-width="2"/><text x="50" y="147" text-anchor="middle">まりやさん</text><rect class="d-gold" x="98" y="124" width="32" height="36" rx="6" stroke-width="2"/><text x="114" y="147" text-anchor="middle">は</text><rect class="d-sage" x="136" y="124" width="84" height="36" rx="6" stroke-width="2"/><text x="178" y="147" text-anchor="middle">がくせい</text><rect class="d-rose" x="226" y="124" width="106" height="36" rx="6" stroke-width="2"/><text x="279" y="147" text-anchor="middle">じゃありません</text><text x="170" y="182" text-anchor="middle">Mariya is not a student.</text><rect class="d-lup" x="8" y="196" width="84" height="36" rx="6" stroke-width="2"/><text x="50" y="219" text-anchor="middle">まりやさん</text><rect class="d-gold" x="98" y="196" width="32" height="36" rx="6" stroke-width="2"/><text x="114" y="219" text-anchor="middle">は</text><rect class="d-sage" x="136" y="196" width="84" height="36" rx="6" stroke-width="2"/><text x="178" y="219" text-anchor="middle">がくせい</text><rect class="d-rose" x="226" y="196" width="106" height="36" rx="6" stroke-width="2"/><text x="279" y="219" text-anchor="middle">ですか</text><text x="170" y="254" text-anchor="middle">Is Mariya a student?</text><text class="s" x="170" y="280" text-anchor="middle">Only the ending changes. The particle は is read わ.</text></svg>', alt:"Three rows of four boxes. Row one: まりやさん (topic), は (particle), がくせい (comment), です (polite is): Mariya is a student. Row two ends in じゃありません: Mariya is not a student. Row three ends in ですか: Is Mariya a student?", cap:"The topic, は and the comment stay the same. The ending carries “is”, “is not” or the question."}
@@ -206,7 +206,7 @@ ICA.addUnit({
       "「✗ どれはイエンさんのかさですか」 is wrong. And notice the answer: the word that answers the question word takes が too, because it is the new information.",
       {h:"Rule 2: for a known topic, use は"},
       "When the person or thing is already known and you are adding information about it, use は:",
-      {table:[["Sentence","What it answers"],["ふみこさんは[大家]{おおや}さんです。","“What about Fumiko?” → She is the landlady."],["ふみこさんが[大家]{おおや}さんです。","“Who is the landlady?” → Fumiko is (she’s the one)."]]},
+      {table:[["Sentence","What it answers"],["ふみこさんは[大家]{おおや}さんです。","“What about Fumiko-san?” → She is the landlady."],["ふみこさんが[大家]{おおや}さんです。","“Who is the landlady?” → Fumiko-san is (she’s the one)."]]},
       "The two sentences have the same words but answer different questions. With は, the new part comes after は. With が, the new part comes before が.",
       "You will meet が again with あります and います (Lesson 4) and with [好]{す}き, “to like” (Lesson 5). For the whole picture so far, see {{particles-wa-ga}}.",
       {tip:"Can’t decide? Ask yourself which word is the new information. If it comes **before** the particle, use が. If the new information comes **after** the particle, use は."}
@@ -755,7 +755,7 @@ ICA.addUnit({
       "**の joins two nouns.** The first noun describes the second: who owns it ([私]{わたし}の[本]{ほん}, my book), what kind it is ([日本語]{にほんご}の[先生]{せんせい}, a teacher of Japanese) or where it belongs ([大学]{だいがく}の[友]{とも}だち, a friend from university). The describing noun always comes first. You can chain の ([私]{わたし}の[友]{とも}だちの[名前]{なまえ}, my friend’s name) and drop the second noun when it is clear: 「[私]{わたし}のです。」 (“It’s mine.”).",
       "**Leaving things out.** After the first sentence, drop what is clear: 「まりやです。[学生]{がくせい}です。」 sounds natural; repeating [私]{わたし}は in every sentence does not.",
       "**Names and “you”.** さん goes after other people’s family or given names; [先生]{せんせい} replaces it for teachers and doctors. Instead of あなた, people usually say the listener’s name with さん.",
-      {table:[["Japanese","English"],["ふみこさんは[大家]{おおや}さんです。","Fumiko is the landlady."],["[昨日]{きのう}は[休]{やす}みでした。","Yesterday was a day off."],["イエンさんのかばんじゃありません。","It isn’t Yến’s bag."]]}
+      {table:[["Japanese","English"],["ふみこさんは[大家]{おおや}さんです。","Fumiko-san is the landlady."],["[昨日]{きのう}は[休]{やす}みでした。","Yesterday was a day off."],["イエンさんのかばんじゃありません。","It isn’t Yến’s bag."]]}
      ],
      pro:[
       "**Why は is read わ.** Over the centuries, Japanese changed how は sounded in the middle of words, and the particle came to be pronounced わ. The 1946 spelling reform ([現代]{げんだい}かなづかい, revised in 1986 as [現代]{げんだい}[仮名]{かな}[遣]{づか}い) wrote most words as they sound, but kept the particles は, へ and を in their old spelling. That is why the topic particle is written は and read わ.",
@@ -805,8 +805,8 @@ ICA.addUnit({
     levels:{
      starter:[
       "Japanese has two particles that can come after the “who” or “what” of a sentence: は and が. Learners meet them on day one and keep refining them for years, so it is fine to start simple.",
-      "**は marks the topic**: something already known, which you are now saying something about. 「ふみこさんは[大家]{おおや}さんです。」 (“As for Fumiko, she’s the landlady.”) The new information comes **after** は.",
-      "**が marks the subject when it is the new information**: the answer to “who?” or “which?”. 「ふみこさんが[大家]{おおや}さんです。」 (“Fumiko is the landlady”: she’s the one.) The new information comes **before** が.",
+      "**は marks the topic**: something already known, which you are now saying something about. 「ふみこさんは[大家]{おおや}さんです。」 (“As for Fumiko-san, she’s the landlady.”) The new information comes **after** は.",
+      "**が marks the subject when it is the new information**: the answer to “who?” or “which?”. 「ふみこさんが[大家]{おおや}さんです。」 (“Fumiko-san is the landlady”: she’s the one.) The new information comes **before** が.",
       "One rule never fails at this level: **a question word as the subject takes が**, never は. 「だれが[先生]{せんせい}ですか。」 And the word that answers it takes が too.",
       {key:"Known topic → は, news after it. Question word or its answer → が."}
      ],
@@ -1135,10 +1135,10 @@ ICA.addUnit({
      {t:"これシャツはいくらですか。", why:"これ can’t take a noun after it. Use この."}
    ]},
    {id:"e3u2-q18", lesson:"e3u2-l2", level:3, q:"Which question does 「ふみこさんが[大家]{おおや}さんです。」 answer most naturally?", options:[
-     {t:"“Who is the landlady?”", ok:true, why:"が marks the new information, Fumiko, as the answer to “who?”."},
-     {t:"“What does Fumiko do?”", why:"That question would be answered with は: 「ふみこさんは[大家]{おおや}さんです。」"},
-     {t:"“Is Fumiko a student?”", why:"That would get はい or いいえ, and は."},
-     {t:"“Where is Fumiko?”", why:"That would be answered with a place, for example あそこです."}
+     {t:"“Who is the landlady?”", ok:true, why:"が marks the new information, Fumiko-san, as the answer to “who?”."},
+     {t:"“What does Fumiko-san do?”", why:"That question would be answered with は: 「ふみこさんは[大家]{おおや}さんです。」"},
+     {t:"“Is Fumiko-san a student?”", why:"That would get はい or いいえ, and は."},
+     {t:"“Where is Fumiko-san?”", why:"That would be answered with a place, for example あそこです."}
    ]},
    {id:"e3u2-q19", lesson:"e3u2-l2", level:2, q:"A shop assistant is holding a cup and tells you its price. Which sentence does she say?", options:[
      {t:"このカップは[千円]{せんえん}です。", ok:true, why:"The cup is near her, the speaker, and a noun follows: この."},

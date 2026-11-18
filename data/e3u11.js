@@ -1067,7 +1067,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l1-x6",
      "type": "mcq",
-     "q": "At a work dinner, Megumi’s husband tells a client that his wife is a nurse. Which word should he use for his own wife?",
+     "q": "At a work dinner, Megumi-san’s husband tells a client that his wife is a nurse. Which word should he use for his own wife?",
      "options": [
       {
        "t": "[妻]{つま}",
@@ -6166,7 +6166,7 @@ ICA.addUnit({
    "id": "e3u11-q05",
    "lesson": "e3u11-l1",
    "level": 3,
-   "q": "Megumi tells Sōta’s teacher about her own family: 「[夫]{おっと}は会社員です」. Then she asks about the teacher’s husband. Which word should she use for him?",
+   "q": "Megumi-san tells Sōta’s teacher about her own family: 「[夫]{おっと}は会社員です」. Then she asks about the teacher’s husband. Which word should she use for him?",
    "options": [
     {
      "t": "ご主人",
@@ -6175,7 +6175,7 @@ ICA.addUnit({
     },
     {
      "t": "[夫]{おっと}",
-     "why": "[夫]{おっと} is for your own husband. Megumi used it correctly for hers."
+     "why": "[夫]{おっと} is for your own husband. Megumi-san used it correctly for hers."
     },
     {
      "t": "[夫]{ふ}[妻]{さい}",

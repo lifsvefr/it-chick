@@ -599,7 +599,7 @@ ICA.addUnit({
       "。メキシコの[妹]{いもうと}にはかわいいカードを",
       {t:"もらいました", flag:false, why:"Correct: Rodrigo is the receiver, and the giver, his sister, is marked with に."},
       "。[夜]{よる}、[私]{わたし}はふみこさんにもケーキを[少]{すこ}し",
-      {t:"くれました", flag:true, why:"Wrong: Rodrigo gave some cake to Fumiko, so the verb is あげました."},
+      {t:"くれました", flag:true, why:"Wrong: Rodrigo gave some cake to Fumiko-san, so the verb is あげました."},
       "。[母]{はは}は[電話]{でんわ}で[歌]{うた}を",
       {t:"[歌]{うた}ってくれました", flag:false, why:"Correct: his mother sang to him over the phone, a favour to him."},
       "。"
@@ -1188,10 +1188,10 @@ ICA.addUnit({
      {t:"先生が[辞書]{じしょ}をくださりました。", why:"くださる has an irregular ます-form: くださいます, くださいました."}
    ]},
    {id:"e3u6-q32", lesson:"e3u6-l4", level:2, q:"What does 「ふみこさんに[日本語]{にほんご}を[教]{おし}えてもらいました。」 mean?", options:[
-     {t:"Fumiko taught me Japanese (and I’m grateful).", ok:true, why:"～てもらう: I received the favour of Fumiko teaching me. The helper takes に."},
-     {t:"I taught Fumiko Japanese.", why:"That would be ふみこさんに日本語を[教]{おし}えてあげました."},
-     {t:"Fumiko was taught Japanese by someone.", why:"The subject of もらう is the receiver of the favour, which is the speaker here, not Fumiko."},
-     {t:"I asked Fumiko to teach me, but she refused.", why:"The sentence says the favour happened: もらいました is past and positive."}
+     {t:"Fumiko-san taught me Japanese (and I’m grateful).", ok:true, why:"～てもらう: I received the favour of Fumiko-san teaching me. The helper takes に."},
+     {t:"I taught Fumiko-san Japanese.", why:"That would be ふみこさんに日本語を[教]{おし}えてあげました."},
+     {t:"Fumiko-san was taught Japanese by someone.", why:"The subject of もらう is the receiver of the favour, which is the speaker here, not Fumiko-san."},
+     {t:"I asked Fumiko-san to teach me, but she refused.", why:"The sentence says the favour happened: もらいました is past and positive."}
    ]},
    {id:"e3u6-q33", lesson:"e3u6-l4", level:3, q:"Mariya tells a friend that Toby helped her, and she wants to show she is grateful. Which sentence fits?", options:[
      {t:"トビーさんが[手伝]{てつだ}ってくれました。", ok:true, why:"～てくれる: someone did something for you, with gratitude."},

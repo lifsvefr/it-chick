@@ -1418,7 +1418,7 @@ ICA.addUnit({
           body:[
             "To say what you think, put a plain form before と[思]{おも}います ([[to-omou]]). The rule for だ is the same as in an indirect quote: verbs and い-adjectives go straight in, nouns and な-adjectives keep だ.",
             {
-              ex:"[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.\n\nこの本はおもしろいと[思]{おも}います。\nI think this book is interesting.\n\nあの[人]{ひと}はめぐみさんのお[母]{かあ}さんだと[思]{おも}います。\nI think that’s Megumi’s mother.\n\nこの[町]{まち}は[便利]{べんり}だと[思]{おも}います。\nI think this town is convenient.",
+              ex:"[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.\n\nこの本はおもしろいと[思]{おも}います。\nI think this book is interesting.\n\nあの[人]{ひと}はめぐみさんのお[母]{かあ}さんだと[思]{おも}います。\nI think that’s Megumi-san’s mother.\n\nこの[町]{まち}は[便利]{べんり}だと[思]{おも}います。\nI think this town is convenient.",
               label:"Giving opinions"
             },
             {

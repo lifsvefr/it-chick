@@ -662,9 +662,9 @@ ICA.addUnit({
       {t:"Choose the entry for the dictionary form, with matching kanji and reading: [待]{ま}つ (まつ)", why:"Dictionaries list verbs in the dictionary form (待っていた → 待つ). Check that the spelling matches your text before you trust the meaning."},
       {t:"Choose the meaning that fits the sentence: “I was waiting for my friend at the station”", why:"Read all the meanings and pick the one that makes sense in context."}
     ]},
-    {id:"e3u8-l5-x2", type:"number", q:"At the sports centre pool, Megumi (46) comes with her son Sōta (9) and her mother, Fumiko (75). Using the notice, how much do they pay in total?", answer:600, tol:0, unit:"yen", why:"Megumi pays the adult price, 400 yen. Her son is a primary school student, so 中学生[以]{い}下 applies: 200 yen. Her mother is 65 or over: [無]{む}[料]{りょう}, free. 400 + 200 + 0 = 600 yen.", wrongs:[
-      {v:1000, tol:0, why:"You charged Fumiko the adult price. 65[歳]{さい}[以]{い}上 is free."},
-      {v:800, tol:0, why:"Check each person once: Megumi 400, Sōta 200 (中学生[以]{い}下), Fumiko 0 (65 and over)."}
+    {id:"e3u8-l5-x2", type:"number", q:"At the sports centre pool, Megumi-san (46) comes with her son Sōta (9) and her mother, Fumiko-san (75). Using the notice, how much do they pay in total?", answer:600, tol:0, unit:"yen", why:"Megumi-san pays the adult price, 400 yen. Her son is a primary school student, so 中学生[以]{い}下 applies: 200 yen. Her mother is 65 or over: [無]{む}[料]{りょう}, free. 400 + 200 + 0 = 600 yen.", wrongs:[
+      {v:1000, tol:0, why:"You charged Fumiko-san the adult price. 65[歳]{さい}[以]{い}上 is free."},
+      {v:800, tol:0, why:"Check each person once: Megumi-san 400, Sōta 200 (中学生[以]{い}下), Fumiko-san 0 (65 and over)."}
     ], hint2:"Find the [料]{りょう}金 line, then decide which price applies to each person."},
     {id:"e3u8-l5-x3", type:"mcq", q:"An 8-year-old wants to swim at the pool alone. According to the notice, can she?", options:[
       {t:"No: primary school children and younger must come in with an adult", ok:true, why:"Right. 小学生[以]{い}下のお子さんは、大人といっしょに入ってください. An 8-year-old is a primary school student."},
@@ -684,7 +684,7 @@ ICA.addUnit({
       {t:"Yến’s new classmate", why:"The text doesn’t connect him with Yến’s university."},
       {t:"A customer at the bakery", why:"He was in the shop, but the last sentence says he was its [主]{しゅ}人, the owner."}
     ]},
-    {id:"e3u8-l5-x6", type:"mcq", q:"Megumi, a nurse, is asked about a patient who is exactly 15. The medicine label says 「15[歳]{さい}[未]{み}[満]{まん}の[方]{かた}は[飲]{の}まないでください。」 May he take it?", options:[
+    {id:"e3u8-l5-x6", type:"mcq", q:"Megumi-san, a nurse, is asked about a patient who is exactly 15. The medicine label says 「15[歳]{さい}[未]{み}[満]{まん}の[方]{かた}は[飲]{の}まないでください。」 May he take it?", options:[
       {t:"Yes: [未]{み}[満]{まん} means “under”, so 15 itself is not included", ok:true, why:"Right. 15[歳]{さい}[未]{み}[満]{まん} is 14 and younger. With [以]{い}下 it would include 15."},
       {t:"No: [未]{み}[満]{まん} includes 15", why:"That is [以]{い}下 (15 and under). [未]{み}[満]{まん} is “less than”, without the number itself."},
       {t:"No: [未]{み}[満]{まん} means “over”", why:"Over 15 would be [以]{い}上 (15 and over). [未]{み}[満]{まん} is “under”."},
@@ -927,11 +927,11 @@ ICA.addUnit({
      {t:"休", why:"休 is the N5 kanji for rest: 亻 with 木. It looks like 体 but has one line fewer."},
      {t:"本", why:"本 is book or origin. It is the right side of 体, but not the whole kanji."},
      {t:"作", why:"作 (つくる) means make."}]},
-   {id:"e3u8-q05", lesson:"e3u8-l1", level:2, q:"In a polite self-introduction, Megumi mentions her own older brother. Which word does she use?", options:[
+   {id:"e3u8-q05", lesson:"e3u8-l1", level:2, q:"In a polite self-introduction, Megumi-san mentions her own older brother. Which word does she use?", options:[
      {t:"[兄]{あに}", ok:true, why:"Right. About your own family to other people, you use the plain word: 兄."},
-     {t:"お[姉]{ねえ}さん", why:"お[姉]{ねえ}さん is for someone else’s older sister (and family members also use it to call her). In a self-introduction, Megumi says 兄."},
+     {t:"お[姉]{ねえ}さん", why:"お[姉]{ねえ}さん is for someone else’s older sister (and family members also use it to call her). In a self-introduction, Megumi-san says 兄."},
      {t:"[弟]{おとうと}", why:"弟 is a younger brother."},
-     {t:"お[兄]{にい}さん", why:"お[兄]{にい}さん is for someone else’s older brother (and family members also use it to call him). About her own brother, Megumi says 兄."}]},
+     {t:"お[兄]{にい}さん", why:"お[兄]{にい}さん is for someone else’s older brother (and family members also use it to call him). About her own brother, Megumi-san says 兄."}]},
    {id:"e3u8-q06", lesson:"e3u8-l1", level:1, q:"How is 医者 (doctor) read?", options:[
      {t:"いしゃ", ok:true, why:"Right. 医 (イ, medicine) + 者 (シャ, person)."},
      {t:"いじゃ", why:"者 is シャ here, without voicing."},
