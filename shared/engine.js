@@ -334,18 +334,24 @@ ICA.report = function(where){
 };
 
 /* ---------- Settings (every page): display, text size, sound, backup / restore, erase (short, no progress) ---------- */
+/* "All voices" scales Mugi and Everyone else (heard = all voices x that slider): show what each one actually plays at */
+function effVol(sh){
+  var V = (ICA.load().settings || {}).vol || {}, g = function(k){ return V[k] == null ? 100 : +V[k]; }, all = g("voice");
+  ICA.$$("[data-eff]", sh).forEach(function(el){ var v = g(el.getAttribute("data-eff")), n = Math.round(all * v / 100);
+    el.textContent = all >= 100 || !v ? "" : !all ? "Off, because All voices is off" : "Plays at " + n + "%"; });
+}
 ICA.settingsSheet = function(o){
   o = o || {};
   var st = ICA.load(), s = st.settings;
   var snd = s.sound || (st.arcade && st.arcade.jp && st.arcade.jp.snd === false ? "off" : "on");
   var V = s.vol || {}; if (snd === "off" && V.fx == null) V.fx = 0;
-  function vol(k, label, sub, hint){ var v = V[k] == null ? 100 : +V[k]; return '<div class="volrow'+(sub ? ' sub' : '')+'"><label for="vol-'+k+'">'+label+(hint ? ' <span class="small muted">'+hint+'</span>' : '')+'</label><input type="range" id="vol-'+k+'" data-vol="'+k+'" min="0" max="100" step="5" value="'+v+'"><output for="vol-'+k+'">'+(v ? v + "%" : "Off")+'</output></div>'; }
+  function vol(k, label, sub, hint){ var v = V[k] == null ? 100 : +V[k]; return '<div class="volrow'+(sub ? ' sub' : '')+'"><label for="vol-'+k+'">'+label+(hint ? ' <span class="small muted">'+hint+'</span>' : '')+(sub ? '<span class="small eff" data-eff="'+k+'" aria-live="polite"></span>' : '')+'</label><input type="range" id="vol-'+k+'" data-vol="'+k+'" min="0" max="100" step="5" value="'+v+'"><output for="vol-'+k+'">'+(v ? v + "%" : "Off")+'</output></div>'; }
   function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
   ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
     '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+'</div>'+
     '<h3>Sound</h3><div class="stack setlist">'+vol("voice","All voices")+vol("mugi","Mugi","sub")+vol("cast","Everyone else","sub","Story and lessons")+vol("music","Arcade music")+vol("fx","Sound effects",null,"Arcade sounds")+
     seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+seg("mugiAuto","Mugi speaks by herself",[["off","Off"],["on","On"]],s.mugiAuto || "off")+'</div>'+
-    '<h3>Kamome House</h3><div class="stack setlist">'+seg("storyChain","After a line, play the next one",[["off","Off"],["on","On"]],s.storyChain || "off")+seg("furi","Furigana in the story",[["on","On"],["off","Off"]],s.furi || "on")+'</div>'+
+    '<h3>Kamome House</h3><div class="stack setlist">'+seg("storyChain","Keep playing the conversation",[["off","Off"],["on","On"]],s.storyChain || "off")+seg("furi","Furigana in the story",[["on","On"],["off","Off"]],s.furi || "on")+'</div>'+
     '<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
     '<h3>Backup</h3><p class="small muted">Without sync, progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details'+(o.openRestore ? ' open' : '')+'><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
@@ -357,8 +363,9 @@ ICA.settingsSheet = function(o){
       var r = e.target.closest("[data-vol]"); if (!r) return; var k = r.getAttribute("data-vol"), v = +r.value;
       st.settings.vol = st.settings.vol || {}; st.settings.vol[k] = v; r.nextElementSibling.textContent = v ? v + "%" : "Off";
       if (k === "fx"){ st.settings.sound = v ? "on" : "off"; if (st.arcade && st.arcade.jp) st.arcade.jp.snd = !!v; }
-      ICA.save(true); setVol(); if (ICA.onSettings) ICA.onSettings("vol", k);
+      ICA.save(true); setVol(); effVol(sh); if (ICA.onSettings) ICA.onSettings("vol", k);
     });
+    effVol(sh);
     sh.addEventListener("change", function(e){ if (e.target.closest("[data-vol]")) ICA.save(); });
     sh.addEventListener("click", function(e){
       var b = e.target.closest("[data-set]");
@@ -854,10 +861,11 @@ function setVol(){
   } catch(e){}
 }
 ICA.setVolume = setVol;
-/* "Keep playing" in the story: when a line ends, the next character line plays (narration is skipped) */
+/* "Keep playing" in the story: when a line ends, the next line plays if it follows directly (it stops at narration, props, notes and breaks) */
 function storyNext(btn){
   if (!btn || !btn.isConnected || ((ICA.load().settings || {}).storyChain !== "on")) return false;
-  var all = ICA.$$(".story .ttsb.sl"), nx = all[all.indexOf(btn) + 1]; if (!nx) return false;
+  var cur = btn.closest(".sline"), nl = cur && cur.nextElementSibling;          // stops at narration, a prop, a note or a scene break
+  var nx = nl && nl.classList.contains("sline") ? nl.querySelector(".ttsb.sl") : null; if (!nx) return false;
   try { nx.scrollIntoView({block:"center", behavior:"smooth"}); } catch(e){ nx.scrollIntoView(); }
   setTimeout(function(){ if (!AUD.btn || AUD.btn === btn) ICA.say("story", nx.getAttribute("data-key"), nx); }, 650);
   return true;

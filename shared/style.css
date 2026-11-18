@@ -459,6 +459,7 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .volrow input[type=range]{width:100%;accent-color:var(--lupine);margin:0}
 .volrow output{font-size:.85em;color:var(--soft);text-align:right;font-variant-numeric:tabular-nums}
 .volrow label .small{display:block}
+.volrow .eff{color:var(--lupine);font-weight:600}.volrow .eff:empty{display:none}
 
 /* ---------- Kamome House props (quests/props.js): drawn objects, each Japanese line a tappable button ---------- */
 .propwrap{display:grid;gap:8px}
