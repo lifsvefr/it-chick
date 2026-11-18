@@ -22,7 +22,7 @@ window.ICA_STORY = {"cast":{"cheska":{"name":"Cheska","ja":"チェスカ","art":
 {"t":"narr","text":"A black-and-white cat is watching from the wall. Yến tries a name on her, quietly."},
 {"t":"line","who":"yen","mood":"think","ja":"ミウ。","en":"Miu.","tag":"softly, trying out a name","audio":"two short beats, ミ・ウ.","ref":"E1·L8"},
 {"t":"narr","text":"That is a common name for cats in Vietnam. The cat looks at her. Then Mariya calls out her own name for the cat."},
-{"t":"line","who":"mariya","mood":"yay","ja":"ムゥ〜！","en":"Muuu!","tag":"sing-song, drawn out","audio":"one long ム, drawn out.","ref":"E1·L9"},
+{"t":"line","who":"mariya","mood":"yay","ja":"ん？ あっ、ムゥ〜！","en":"Hm? Oh, Muuu!","tag":"excited, higher pitch","audio":"a short questioning ん, then ムゥ drawn out.","ref":"E1·L9"},
 {"t":"narr","text":"The cat looks at Mariya. She seems happy with both names."},
 {"t":"cat","pose":"curious","alt":"The black-and-white cat, looking up from the wall"},
 {"t":"narr","text":"Then it starts to rain, just as Shōichi-san said."},
