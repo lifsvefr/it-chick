@@ -14,12 +14,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Klee+One:wght@600&family=Zen+Kurenaido&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=48">
+<link rel="stylesheet" href="../shared/style.css?v=49">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=48"></script>
-<script src="props.js?v=48"></script>
-<script src="../data/story.js?v=48"></script>
-<script src="../data/story-audio.js?v=48"></script>
+<script src="../shared/engine.js?v=49"></script>
+<script src="props.js?v=49"></script>
+<script src="../data/story.js?v=49"></script>
+<script src="../data/story-audio.js?v=49"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -260,11 +260,11 @@ function deck(l, el){
     i = Math.max(0, Math.min(cards.length - 1, k)); s.card = i; ICA.save();
     var c = cards[i], h = "";
     if (c.k === "intro"){
-      h = ICA.mugi("hello", '<p><b>Let’s learn: '+esc(l.title)+'</b></p><p class="small">About '+l.minutes+' minutes, in '+(cards.length - 2)+' short cards. Tap <b>Next</b> or swipe. You can stop any time. I’ll remember where you were.</p>', {cls:"mpop", say:["Let’s learn!", "Tap Next or swipe. You can stop any time. I’ll remember where you were."]}) +
+      h = ICA.mugi("hello", '<p><b>Let’s learn: '+esc(l.title)+'</b></p><p class="small">About '+l.minutes+' minutes, in '+(cards.length - 2)+' short cards. Tap <b>Next</b> or swipe. You can stop any time. I’ll remember where you were.</p>', {cls:"mpop", say:["Tap Next or swipe. You can stop any time. I’ll remember where you were."]}) +
         (l.goals ? '<div><span class="eyebrow">By the end, you’ll be able to</span><ul class="goals">'+l.goals.map(function(g){ return "<li>"+md(g)+"</li>"; }).join("")+'</ul></div>' : '');
     } else if (c.k === "hook"){
       var hk = l.hook, picked = s.hook;
-      h = ICA.mugi("think", '<span class="eyebrow">Guess first</span><p><b>'+md(hk.q)+'</b></p><p class="small muted">No pressure: guessing before you learn helps it stick, even when the guess is wrong.</p>', {cls:"mpop", say:["Guess first!", "No pressure: guessing before you learn helps it stick, even when the guess is wrong."]}) +
+      h = ICA.mugi("think", '<span class="eyebrow">Guess first</span><p><b>'+md(hk.q)+'</b></p><p class="small muted">No pressure: guessing before you learn helps it stick, even when the guess is wrong.</p>', {cls:"mpop", say:["No pressure: guessing before you learn helps it stick, even when the guess is wrong."]}) +
         '<div class="hookopts">'+hk.options.map(function(o, j){ var cls = picked != null && j === hk.answer ? ' class="right"' : ''; return '<button data-hook="'+j+'" aria-pressed="'+(picked === j)+'"'+cls+'>'+md(o)+'</button>'; }).join("")+'</div>' +
         (picked != null ? ICA.mugi(picked === hk.answer ? "yay" : "tip", '<p><b>'+(picked === hk.answer ? "Good instinct!" : "Ooh, interesting guess. Here’s the twist:")+'</b></p><p>'+md(hk.reveal)+'</p>', {small:true, cls:"mpop", say:[picked === hk.answer ? "Good instinct!" : "Ooh, interesting guess. Here’s the twist:"]}) : '');
     } else if (c.k === "content"){
@@ -438,10 +438,13 @@ function storyNarr(p){
   if (p.lang !== "ja") return '<div class="narr en-narr"><p>'+md(p.text)+'</p>'+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>';
   return '<div class="narr jn'+(p.recap ? ' recap' : '')+'">'+(p.recap ? '<div class="eyebrow"><span lang="ja">これまでのかもめ<ruby>荘<rt>そう</rt></ruby></span> · Previously</div>' : '')+'<p class="jt" lang="ja">'+md(p.text)+'</p>'+(p.en ? '<p class="en">'+md(p.en)+'</p>' : '')+((p.en || p.gl) ? '<div class="ntools">'+(p.en ? ENTOG : '')+(p.gl ? '<details class="gl small"><summary>Words</summary>'+md(p.gl)+'</details>' : '')+'</div>' : '')+'</div>';
 }
+/* Mugi's story boxes are voiced from their text only (never the "Mugi's note" / "Think about it" label); the clip key is the text
+   without furigana or bold, the same as tools/make_mugi_story.py */
+function mugiKey(t){ return String(t).replace(/\[([^\]]+)\]\{[^}]+\}/g, "$1").replace(/\*\*?/g, "").replace(/\s+/g, " ").trim(); }
 function mugiBox(mood, label, p, say){
   var ja = p.lang === "ja";
   var inner = '<span class="eyebrow">'+label+'</span><p'+(ja ? ' lang="ja" class="jt"' : '')+'>'+md(p.text)+'</p>'+(p.en ? '<p class="en">'+md(p.en)+'</p>'+ENTOG : '');
-  return '<aside class="mugibox'+(p.en ? ' hasen' : '')+'" aria-label="'+label+' (outside the story)">'+ICA.mugi(mood, inner, {small:true, cls:"mpop", say: ja ? null : say})+'</aside>';
+  return '<aside class="mugibox'+(p.en ? ' hasen' : '')+'" aria-label="'+label+' (outside the story)">'+ICA.mugi(mood, inner, {small:true, cls:"mpop", say: say.map(mugiKey)})+'</aside>';
 }
 function story(uid, draft){
   var e = storyEp(uid, draft), u = ICA.unitById[uid], showEn = e.enDefault !== false, st0 = ICA.load(), furiOff = st0.settings && st0.settings.furi === "off";

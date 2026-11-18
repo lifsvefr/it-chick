@@ -337,15 +337,18 @@ ICA.report = function(where){
 /* "All voices" scales Mugi and Everyone else (heard = all voices x that slider): show what each one actually plays at */
 function effVol(sh){
   var V = (ICA.load().settings || {}).vol || {}, g = function(k){ return V[k] == null ? 100 : +V[k]; }, all = g("voice");
-  ICA.$$("[data-eff]", sh).forEach(function(el){ var v = g(el.getAttribute("data-eff")), n = Math.round(all * v / 100);
-    el.textContent = all >= 100 || !v ? "" : !all ? "Off, because All voices is off" : "Plays at " + n + "%"; });
+  ICA.$$("input[data-vol]", sh).forEach(function(r){ var k = r.getAttribute("data-vol"), v = g(k), sub = k === "mugi" || k === "cast";
+    r.style.setProperty("--v", v + "%"); r.style.setProperty("--e", (sub ? all * v / 100 : v) + "%"); });   // the track: dark up to what you hear, pale up to the setting
+  ICA.$$("[data-eff]", sh).forEach(function(el){ var v = g(el.getAttribute("data-eff")), n = Math.round(all * v / 100), o = el.parentNode;
+    el.textContent = all >= 100 || !v ? "" : "→ " + (n ? n + "%" : "off");
+    o.setAttribute("title", el.textContent ? "Plays at " + (n ? n + "%" : "0%") + ": All voices (" + all + "%) × this (" + v + "%)" : ""); });
 }
 ICA.settingsSheet = function(o){
   o = o || {};
   var st = ICA.load(), s = st.settings;
   var snd = s.sound || (st.arcade && st.arcade.jp && st.arcade.jp.snd === false ? "off" : "on");
   var V = s.vol || {}; if (snd === "off" && V.fx == null) V.fx = 0;
-  function vol(k, label, sub, hint){ var v = V[k] == null ? 100 : +V[k]; return '<div class="volrow'+(sub ? ' sub' : '')+'"><label for="vol-'+k+'">'+label+(hint ? ' <span class="small muted">'+hint+'</span>' : '')+(sub ? '<span class="small eff" data-eff="'+k+'" aria-live="polite"></span>' : '')+'</label><input type="range" id="vol-'+k+'" data-vol="'+k+'" min="0" max="100" step="5" value="'+v+'"><output for="vol-'+k+'">'+(v ? v + "%" : "Off")+'</output></div>'; }
+  function vol(k, label, sub, hint){ var v = V[k] == null ? 100 : +V[k]; return '<div class="volrow'+(sub ? ' sub' : '')+'"><label for="vol-'+k+'">'+label+(hint ? ' <span class="small muted">'+hint+'</span>' : '')+'</label><input type="range" id="vol-'+k+'" data-vol="'+k+'" min="0" max="100" step="5" value="'+v+'"><output for="vol-'+k+'"><span class="ov">'+(v ? v + "%" : "Off")+'</span>'+(sub ? '<span class="oe" data-eff="'+k+'"></span>' : '')+'</output></div>'; }
   function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
   ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
     '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+'</div>'+
@@ -361,7 +364,7 @@ ICA.settingsSheet = function(o){
     sh.setAttribute("aria-label", "Settings"); sh.id = "settingspanel";
     sh.addEventListener("input", function(e){
       var r = e.target.closest("[data-vol]"); if (!r) return; var k = r.getAttribute("data-vol"), v = +r.value;
-      st.settings.vol = st.settings.vol || {}; st.settings.vol[k] = v; r.nextElementSibling.textContent = v ? v + "%" : "Off";
+      st.settings.vol = st.settings.vol || {}; st.settings.vol[k] = v; r.nextElementSibling.querySelector(".ov").textContent = v ? v + "%" : "Off";
       if (k === "fx"){ st.settings.sound = v ? "on" : "off"; if (st.arcade && st.arcade.jp) st.arcade.jp.snd = !!v; }
       ICA.save(true); setVol(); effVol(sh); if (ICA.onSettings) ICA.onSettings("vol", k);
     });
