@@ -1115,7 +1115,7 @@ ICA.addUnit({
     {
      id: "e3u10-l2-x6",
      type: "spot",
-     q: "Dewi writes about a weekend visit. Tap each phrase that is **wrong**.",
+     q: "A student writes about a weekend visit to her grandmother. Tap each phrase that is **wrong**.",
      ask: "is wrong",
      parts: [
       "[週末]{しゅうまつ}、[祖母]{そぼ}の家に行きました。[祖母]{そぼ}は、会う",
@@ -2019,7 +2019,7 @@ ICA.addUnit({
       },
       "These patterns often turn up together in friendly talk. Cheska and Aoi are in the same seminar:",
       {
-       ex: "チェスカ：来週の[発表]{はっぴょう}、何曜日だっけ？\nあおい：水曜日だよ。\nチェスカ：[準備]{じゅんび}が[全然]{ぜんぜん}終わらなくて…。日本語で話すのが[嫌]{いや}なわけじゃないんだけど、すごく[緊張]{きんちょう}する。\nあおい：そんなに[心配]{しんぱい}することはないよ。[最初]{さいしょ}はだれでも[緊張]{きんちょう}するものだよ。私も一年目は、[発表]{はっぴょう}の前の日によく[眠]{ねむ}れなくなったものだよ。\nチェスカ：そうなんだ。ちょっと安心した。\n\nCheska: What day is next week’s presentation again?\nAoi: Wednesday.\nCheska: I’m nowhere near ready… It’s not that I don’t like speaking in Japanese, but I get really nervous.\nAoi: There’s no need to worry that much. Everyone gets nervous at first. In my first year, I often couldn’t sleep the night before a presentation.\nCheska: Really? That makes me feel a bit better.",
+       ex: "チェスカ：来週の[発表]{はっぴょう}、何曜日だっけ？\nあおい：水曜日だよ。\nチェスカ：[準備]{じゅんび}が[全然]{ぜんぜん}終わらなくて…。日本語で話すのが[嫌]{いや}なわけじゃないんだけど、すごく[緊張]{きんちょう}する。\nあおい：そんなに[心配]{しんぱい}することはないよ。[最初]{さいしょ}はだれでも[緊張]{きんちょう}するものだよ。私も大学に入ったころは、[発表]{はっぴょう}の前の日によく[眠]{ねむ}れなくなったものだよ。\nチェスカ：そうなんだ。ちょっと安心した。\n\nCheska: What day is next week’s presentation again?\nAoi: Wednesday.\nCheska: I’m nowhere near ready… It’s not that I don’t like speaking in Japanese, but I get really nervous.\nAoi: There’s no need to worry that much. Everyone gets nervous at first. When I started university, I often couldn’t sleep the night before a presentation.\nCheska: Really? That makes me feel a bit better.",
        label: "Two colleagues"
       },
       {
@@ -2694,7 +2694,7 @@ ICA.addUnit({
     {
      id: "e3u10-l5-x1",
      type: "mcq",
-     q: "Megumi says about her older brother: 「兄は[忘]{わす}れっぽいんです。」 What does she mean?",
+     q: "A colleague says about her older brother: 「兄は[忘]{わす}れっぽいんです。」 What does she mean?",
      options: [
       {
        t: "Her brother is forgetful by nature.",
@@ -3976,23 +3976,23 @@ ICA.addUnit({
    id: "e3u10-q04",
    lesson: "e3u10-l1",
    level: 3,
-   q: "Mariya is tired of calling a friend who never answers. She wants to say: “Whenever I call, he’s out.” Which is correct?",
+   q: "Mariya is tired of calling a friend who never answers. She wants to say: “Whenever I call, he doesn’t answer.” Which is correct?",
    options: [
     {
-     t: "いつ電話しても、[彼]{かれ}は[留守]{るす}です。",
+     t: "いつ電話しても、出ません。",
      ok: true,
      why: "Question word + ～ても: “whenever I call, it makes no difference”."
     },
     {
-     t: "いつ電話したら、[彼]{かれ}は[留守]{るす}です。",
+     t: "いつ電話したら、出ません。",
      why: "A question word like いつ needs ～ても for “whenever”; ～たら gives an “if, then” link."
     },
     {
-     t: "いつ電話するのに、[彼]{かれ}は[留守]{るす}です。",
+     t: "いつ電話するのに、出ません。",
      why: "のに can’t follow a question word to mean “whenever”, and it needs a single real fact."
     },
     {
-     t: "いつ電話して、[彼]{かれ}は[留守]{るす}です。",
+     t: "いつ電話して、出ません。",
      why: "A bare て-form only links two events; it doesn’t give “whenever”."
     }
    ]
@@ -4376,7 +4376,7 @@ ICA.addUnit({
    id: "e3u10-q20",
    lesson: "e3u10-l2",
    level: 3,
-   q: "Yến wants to say: “As we kept meeting, before I knew it I had come to like her.” Which is natural?",
+   q: "A friend wants to say: “As we kept meeting, before I knew it I had come to like her.” Which is natural?",
    options: [
     {
      t: "何度も会っているうちに、[好]{す}きになった。",

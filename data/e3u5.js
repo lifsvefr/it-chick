@@ -343,7 +343,7 @@ ICA.addUnit({
         "Keep a sentence polite by ending it politely, even with plain forms inside"
       ],
       hook:{
-        q:"Kaito’s manager at the convenience store hands him some papers and asks, in plain form: 「この[資料]{しりょう}、[明日]{あした}までにできる？」 (Can you get this document done by tomorrow?) What is the most natural reply?",
+        q:"Kaito’s manager at the convenience store checks the shift chart and asks, in plain form: 「[明日]{あした}も[夜勤]{やきん}できる？」 (Can you do the night shift tomorrow too?) What is the most natural reply?",
         options:["はい、できます。","うん、できる。","できるよ。","できるだ。"],
         answer:0,
         reveal:"**はい、できます。** Plain speech doesn’t always go both ways. A manager often speaks plainly to people in the team, but the team still answers politely, because the relationship is not equal. (できるだ is never correct: verbs don’t take だ.) This lesson shows who uses which style with whom, how people move from polite to plain, and why polite is always the safe choice while you are learning."
@@ -496,7 +496,7 @@ ICA.addUnit({
             },
             {
               t:"うん、行く。",
-              why:"Correct Japanese, but plain. A first-year normally answers a [先輩]{せんぱい} politely, even when the [先輩]{せんぱい} speaks plainly."
+              why:"Correct Japanese, but plain. A junior member normally answers a [先輩]{せんぱい} politely, even when the [先輩]{せんぱい} speaks plainly."
             },
             {
               t:"はい、[来]{き}ます。",
@@ -557,7 +557,7 @@ ICA.addUnit({
         {
           id:"e3u5-l2-x5",
           type:"spot",
-          q:"Cheska sends this message to her professor. Tap each part that **ends too casually** for a teacher.",
+          q:"Cheska sends this message to her Japanese teacher. Tap each part that **ends too casually** for a teacher.",
           ask:"is too casual for a teacher",
           parts:[
             {t:"先[生]{せい}、おはようございます。", flag:false, why:"A polite greeting: fine."},
@@ -1401,7 +1401,7 @@ ICA.addUnit({
             },
             "An **indirect quote** puts the words into your own sentence, in the plain form. Nouns and な-adjectives keep だ before と:",
             {
-              ex:"ロドリゴさんは、[明日]{あした}は休みだと[言]{い}いました。\nRodrigo said that tomorrow is a day off.\n\nあおいさんは、[日曜日]{にちようび}は[忙]{いそが}しいと[言]{い}っていました。\nSara was saying she’s busy on Sunday.",
+              ex:"ロドリゴさんは、[明日]{あした}は休みだと[言]{い}いました。\nRodrigo said that tomorrow is a day off.\n\nあおいさんは、[日曜日]{にちようび}は[忙]{いそが}しいと[言]{い}っていました。\nAoi was saying she’s busy on Sunday.",
               label:"Indirect quote"
             },
             "～と[言]{い}っていました (was saying) is the usual way to pass on a message: you are reporting what someone told you earlier.",
@@ -1418,7 +1418,7 @@ ICA.addUnit({
           body:[
             "To say what you think, put a plain form before と[思]{おも}います ([[to-omou]]). The rule for だ is the same as in an indirect quote: verbs and い-adjectives go straight in, nouns and な-adjectives keep だ.",
             {
-              ex:"[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.\n\nこの本はおもしろいと[思]{おも}います。\nI think this book is interesting.\n\nあの[人]{ひと}はめぐみさんのお[兄]{にい}さんだと[思]{おも}います。\nI think that’s Megumi’s older brother.\n\nこの[町]{まち}は[便利]{べんり}だと[思]{おも}います。\nI think this town is convenient.",
+              ex:"[明日]{あした}は[雨]{あめ}が[降]{ふ}ると[思]{おも}います。\nI think it will rain tomorrow.\n\nこの本はおもしろいと[思]{おも}います。\nI think this book is interesting.\n\nあの[人]{ひと}はめぐみさんのお[母]{かあ}さんだと[思]{おも}います。\nI think that’s Megumi’s mother.\n\nこの[町]{まち}は[便利]{べんり}だと[思]{おも}います。\nI think this town is convenient.",
               label:"Giving opinions"
             },
             {
@@ -1520,7 +1520,7 @@ ICA.addUnit({
         {
           id:"e3u5-l5-x5",
           type:"mcq",
-          q:"Mariya says to you: 「あおい、今日は来ないって。」 What does she mean?",
+          q:"Mariya says to you: 「あおいさん、今日は来ないって。」 What does she mean?",
           options:[
             {
               t:"Aoi says she isn’t coming today.",

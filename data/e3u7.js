@@ -309,7 +309,7 @@ ICA.addUnit({
       {t:"食べれていました", flag:true, why:"Wrong. The passive of the ichidan verb 食べる is 食べられる: 食べられていました. 食べれる is a casual potential, never a passive."},
       "。[夜]{よる}は[急]{きゅう}に[友達]{ともだち}に",
       {t:"[来]{く}られて", flag:true, why:"Wrong reading. The passive of [来]{く}る is read こられる: [来]{こ}られて."},
-      "、[宿題]{しゅくだい}ができませんでした。"
+      "、[勉強]{べんきょう}できませんでした。"
      ]
     }
    ],
@@ -832,7 +832,7 @@ ICA.addUnit({
       "Compare [来]{こ}ないそうです: with そうです you are reporting a message more directly, often from a source you could name. With らしい you are less committed: it’s what people say, or what seems to be the case from what you heard.",
       "**Meaning 2: typical of, a real…** After a noun, らしい can describe something that has the qualities you expect of it:",
       {
-       ex:"今日は[春]{はる}らしい[天気]{てんき}ですね。\nIt’s real spring weather today.\n\nイエンさんが[遅]{おく}れるのは[珍]{めずら}しいですね。今日はイエンさんらしくないです。\nIt’s unusual for Yến to be late. It’s not like him today.",
+       ex:"今日は[春]{はる}らしい[天気]{てんき}ですね。\nIt’s real spring weather today.\n\nイエンさんが[遅]{おく}れるのは[珍]{めずら}しいですね。今日はイエンさんらしくないです。\nIt’s unusual for Yến to be late. It’s not like her today.",
        label:"らしい: typical of"
       },
       "Sometimes both meanings are possible: 学生らしい can mean “apparently a student” or “student-like”. The context, and whether a noun follows, tells you which."
@@ -1531,10 +1531,10 @@ ICA.addUnit({
       {h:"Your side and their side"},
       "Keigo also depends on **groups**. When you speak to someone outside your group, such as a customer or a caller from another company, you treat your own colleagues, your boss and your family as part of your side: no respectful verbs and no さん for them. This is the idea of [[uchi-soto|ウチ・ソト]] (inside and outside).",
       {
-       ex:"[大西]{おおにし}はただいま[席]{せき}を[外]{はず}しております。\nProfessor Ōnishi is away from his desk at the moment.\n(said by a student in his lab to a caller from outside the university)",
+       ex:"[浜田]{はまだ}はただいま[出]{で}かけております。\nMrs Hamada is out at the moment.\n(said by Aoi at her grandmother's tea shop, to a supplier on the phone)",
        label:"ウチ・ソト"
       },
-      "Inside the lab, the same student would say [大西先生]{おおにしせんせい} and use respectful verbs about him. The common traps are collected in {{keigo-mistakes}}.",
+      "Inside the family, Aoi says おばあちゃん, and with neighbors she might say 浜田さん. To an outside caller, the owner is on Aoi's side, so the name goes bare. Schools and universities are looser: there, people usually keep 先生 even when they speak to outsiders. The common traps are collected in {{keigo-mistakes}}.",
       "That completes the N4 grammar in this track. The forms in this unit (passive, causative, transitive and intransitive pairs) use many N4 kanji, so daily review pays off. Forgetting and relearning is normal; short, spaced sessions fix it.",
       {lab:"kl-n4", t:"Practise: the N4 kanji, many of which appear in this unit’s verbs"},
       {lab:"kl-n4-vocab", t:"Practise: N4 vocabulary, including verb pairs"},
@@ -2020,7 +2020,7 @@ ICA.addUnit({
      "いらっしゃる, おっしゃる, なさる and くださる have ます-forms in い: いらっしゃいます, おっしゃいます, なさいます, くださいます. So does ござる: ございます.",
      "**Regular patterns:** お + stem + になる (お[帰]{かえ}りになる) and the passive form ([来]{こ}られる) for respect; お + stem + ください (お[待]{ま}ちください) and ご + noun + ください (ご[注意]{ちゅうい}ください) for respectful requests; お + stem + する (お[持]{も}ちします) and ご + noun + する (ご[案内]{あんない}します) for humble actions that affect the other person.",
      "**Limits:** one-syllable stems (見る, [寝]{ね}る, いる) use special verbs, not お～になる. お generally goes with native words and ご with Chinese-origin words, with exceptions such as お[電話]{でんわ}.",
-     "**ウチ・ソト:** to outsiders, treat your own colleagues and family as your side: [大西]{おおにし}はただいま[席]{せき}を[外]{はず}しております.",
+     "**ウチ・ソト:** to outsiders, treat your own colleagues and family as your side: [浜田]{はまだ}はただいま[出]{で}かけております.",
      "**Where you hear it.** Shops and restaurants (いらっしゃいませ, かしこまりました, [少々]{しょうしょう}お[待]{ま}ちください), stations and announcements (ご[注意]{ちゅうい}ください), the phone, offices and schools. Start by understanding these set phrases; using them comes later.",
      "**A ladder for requests.** From casual to very polite: [待]{ま}って → [待]{ま}ってください → お[待]{ま}ちください → お[待]{ま}ちいただけますか. The higher you go, the more respect you show, and the more distance."
     ],
@@ -2565,7 +2565,7 @@ ICA.addUnit({
    q:"A friend says: 「トビーさんは[日本人]{にほんじん}みたいに[日本語]{にほんご}を[話]{はな}しますね。」 What does she mean?",
    options:[
     {t:"Toby speaks Japanese like a Japanese person.", ok:true, why:"みたいに before a verb means “like, in the manner of”: a comparison."},
-    {t:"It seems that Toby is Japanese.", why:"That would end in [日本人]{にほんじん}みたいです. Here みたいに describes how she speaks."},
+    {t:"It seems that Toby is Japanese.", why:"That would end in [日本人]{にほんじん}みたいです. Here みたいに describes how he speaks."},
     {t:"I hear Toby speaks Japanese.", why:"Hearsay would be [話]{はな}すそうです."},
     {t:"Toby speaks Japanese with Japanese people.", why:"“With” would be [日本人]{にほんじん}と."}
    ]
@@ -2813,12 +2813,12 @@ ICA.addUnit({
    id:"e3u7-q47",
    lesson:"e3u7-l5",
    level:3,
-   q:"Aoi is answering the phone in Professor Ōnishi’s lab. A caller from the city office asks for Professor Ōnishi ([大西先生]{おおにしせんせい}). He is out. What is the right reply?",
+   q:"Aoi is answering the phone at her grandmother's tea shop. A supplier asks for the owner, Mrs Hamada ([浜田さん]{はまださん}). She is out. What is the right reply?",
    options:[
-    {t:"[大西]{おおにし}はただいま[席]{せき}を[外]{はず}しております。", ok:true, why:"To an outsider, your professor is on your side (ウチ): no title or さん, and a humble form (おります)."},
-    {t:"[大西先生]{おおにしせんせい}はいらっしゃいません。", why:"Respectful verbs and titles for your own professor are used inside the lab, not when you speak to an outsider."},
-    {t:"[大西]{おおにし}さんはおりません。", why:"The verb is humble, but さん still raises your own professor in front of an outsider."},
-    {t:"[大西先生]{おおにしせんせい}は[席]{せき}を[外]{はず}していらっしゃいます。", why:"This uses a title and respectful language for your own side when speaking to an outsider."}
+    {t:"[浜田]{はまだ}はただいま[出]{で}かけております。", ok:true, why:"To an outsider, the owner of your own shop is on your side (ウチ): no さん, and a humble form (おります)."},
+    {t:"[浜田さん]{はまださん}はいらっしゃいません。", why:"Respectful verbs and さん for your own side are for family and friends, not for an outside caller."},
+    {t:"[浜田]{はまだ}さんはおりません。", why:"The verb is humble, but さん still raises your own side in front of an outsider."},
+    {t:"[浜田さん]{はまださん}は[出]{で}かけていらっしゃいます。", why:"This uses さん and a respectful verb for your own side when speaking to an outsider."}
    ]
   },
   {

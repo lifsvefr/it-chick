@@ -225,7 +225,7 @@ ICA.addUnit({
       ["時計","とけい","時計 (clock, watch) is とけい; the kanji were chosen for the word’s meaning."],
       ["今年","ことし","今年 (this year) is ことし. Compare 来年 (らいねん), which uses regular on readings."]
     ]},
-    {id:"e3u4-l2-x4", type:"number", q:"A price tag at a market says [二万五千円]{にまんごせんえん}. How many yen is that?", answer:25000, tol:0, unit:"yen", why:"[二万]{にまん} = 2 × 10,000 = 20,000, and [五千]{ごせん} = 5,000. 20,000 + 5,000 = 25,000 yen.", wrongs:[
+    {id:"e3u4-l2-x4", type:"number", q:"A handwritten price card in a traditional shop says [二万五千円]{にまんごせんえん}. How many yen is that?", answer:25000, tol:0, unit:"yen", why:"[二万]{にまん} = 2 × 10,000 = 20,000, and [五千]{ごせん} = 5,000. 20,000 + 5,000 = 25,000 yen.", wrongs:[
       {v:2500, tol:0, why:"You read 万 as if it were 千. 万 is 10,000, so [二万]{にまん} is 20,000."},
       {v:250000, tol:0, why:"You may have read 万 as 100,000. One 万 is 10,000 (four zeros)."},
       {v:7000, tol:0, why:"You added the numbers 2 and 5 as thousands. [二万]{にまん} and [五千]{ごせん} are different units: 20,000 and 5,000."}
@@ -332,9 +332,9 @@ ICA.addUnit({
     ]},
     {h:"Read it: a short self-introduction", body:[
       "Here is a short text that uses many of this lesson’s kanji. Read it once for the main idea, then again for details. Every kanji has furigana, as it will in all N5 units.",
-      {ex:"はじめまして。チェスカ・イババオです。フィリピンから[来]{き}ました。[父]{ちち}も[母]{はは}もフィリピン[人]{じん}です。[今]{いま}、[大学]{だいがく}の[学生]{がくせい}です。[日本語]{にほんご}の[先生]{せんせい}は、うちの[大家]{おおや}さんです。[毎週]{まいしゅう}[土曜日]{どようび}に、[友]{とも}だちと[山]{やま}に[行]{い}きます。", label:"Cheska’s self-introduction"},
-      {list:["Where are Cheska’s parents from? (父も母も**フィリピン人**です: both of them are Filipino.)","What does Cheska do? ([大学]{だいがく}の**[学生]{がくせい}**です: she is a university student.)","Who is her Japanese teacher? (うちの[大家]{おおや}さんです: her landlady.)","What does she do on Saturdays? ([毎週土曜日]{まいしゅうどようび}に、友だちと**山**に[行]{い}きます: she goes to the mountains with friends every Saturday.)"]},
-      "Notice how much the kanji helped: the people (父, 母, [大学生]{だいがくせい}, [先生]{せんせい}), the place (山) and the time ([毎週土曜日]{まいしゅうどようび}) all stand out from the hiragana grammar around them. That is the skill Lesson 5 builds on.",
+      {ex:"はじめまして。チェスカ・イババオです。フィリピンから[来]{き}ました。[父]{ちち}も[母]{はは}もフィリピン[人]{じん}です。[今]{いま}、[汐浦]{しおうら}[大学]{だいがく}の[学生]{がくせい}です。[日本語]{にほんご}の[先生]{せんせい}は、うちの[大家]{おおや}さんです。[毎週]{まいしゅう}[土曜日]{どようび}に、[友]{とも}だちと[山]{やま}に[行]{い}きます。", label:"Cheska’s self-introduction"},
+      {list:["Where are Cheska’s parents from? (父も母も**フィリピン人**です: both of them are Filipino.)","What does Cheska do? ([汐浦]{しおうら}[大学]{だいがく}の**[学生]{がくせい}**です: she is a student at Shioura University.)","Who is her Japanese teacher? (うちの[大家]{おおや}さんです: her landlady.)","What does she do on Saturdays? ([毎週土曜日]{まいしゅうどようび}に、友だちと**山**に[行]{い}きます: she goes to the mountains with friends every Saturday.)"]},
+      "Notice how much the kanji helped: the people (父, 母, [学生]{がくせい}, [先生]{せんせい}), the places ([大学]{だいがく}, 山) and the time ([毎週土曜日]{まいしゅうどようび}) all stand out from the hiragana grammar around them. That is the skill Lesson 5 builds on.",
       {lab:"kl-n5", t:"Practise: people, places, directions and nature kanji"}
     ]}
    ],
@@ -637,7 +637,7 @@ ICA.addUnit({
       {t:"Asking Cheska to meet at the west exit at 2 a.m.", why:"東 is east, not west, and [午後]{ごご} is p.m. (afternoon)."},
       {t:"Telling Cheska the station closes at 2 p.m.", why:"The verb is 会う (meet). The sentence is about meeting, not about the station’s hours."}
     ]},
-    {id:"e3u4-l5-x4", type:"mcq", q:"Read the library notice in this lesson again. Bilal wants to return a book on 2 January. What should he do?", options:[
+    {id:"e3u4-l5-x4", type:"mcq", q:"Read the library notice in this lesson again. Toby wants to return a book on 2 January. What should he do?", options:[
       {t:"Put it in the book drop to the right of the entrance", ok:true, why:"Right. The library is closed from 29 December to 3 January, and the notice asks you to return books to the ブックポスト to the right (右) of the entrance ([入口]{いりぐち})."},
       {t:"Go in and hand it to the staff", why:"The library is closed ([休]{やす}み) from 29 December until 3 January, so nobody will be at the desk."},
       {t:"Wait until 4 January, because returns are not possible", why:"Returns are possible: ～てください asks you to use the book drop."},
@@ -776,7 +776,7 @@ ICA.addUnit({
      pro:[
       "Kanji often have several on readings because Japan borrowed Chinese pronunciations in different periods. **Go-on** ([呉音]{ごおん}) readings came earliest (5th–6th centuries) and survive in Buddhist and some everyday words; **kan-on** ([漢音]{かんおん}), from Tang-dynasty Chinese, are the most common; **tō-on** ([唐音]{とうおん}) came later and are rare. 行 shows all three: ギョウ (go-on, [行事]{ぎょうじ}, event), コウ (kan-on, [銀行]{ぎんこう}) and アン (tō-on, [行灯]{あんどん}, a paper lantern).",
       "Mixed compounds have names in Japanese: on + kun is 重箱読み (じゅうばこよみ), as in [毎朝]{まいあさ} or [台所]{だいどころ} (kitchen); kun + on is 湯桶読み (ゆとうよみ), as in [場所]{ばしょ} (place) or [夕刊]{ゆうかん} (evening paper).",
-      "A few kanji were created in Japan ([国字]{こくじ}); most of them have only kun readings, such as 畑 (はたけ, field). Others, such as 校 and 電, have only on readings.",
+      "A few kanji were created in Japan ([国字]{こくじ}); most of them have only kun readings, such as 畑 (はたけ, field). In the other direction, some kanji that came from China, such as 校 and 電, have only on readings.",
       "Rendaku has many exceptions and no rule that predicts it perfectly, so learn sound-changed words as words. Dictionaries such as JMdict list each word’s readings; when a word has two accepted readings ([毎年]{まいとし}: まいとし or まいねん; 十分 meaning ten minutes: じゅっぷん or じっぷん), both are correct.",
       {warn:"[[furigana|Furigana]] in learner materials show the reading of that word in that place. They are not the kanji’s “real” reading; the same kanji may be read differently in the next word."}
      ]
@@ -1006,7 +1006,7 @@ ICA.addUnit({
      {t:"ここのじ", why:"ここの is the kun reading in 九つ (ここのつ). Times use on readings: くじ."},
      {t:"くうじ", why:"There is no long vowel: くじ."}
    ]},
-   {id:"e3u4-q17", lesson:"e3u4-l2", level:3, q:"A shop sign says 「[午前]{ごぜん}[十時]{じゅうじ}から[午後]{ごご}[七時]{しちじ}まで」. Ji-woo arrives at 18:30. Is the shop open?", options:[
+   {id:"e3u4-q17", lesson:"e3u4-l2", level:3, q:"A shop sign says 「[午前]{ごぜん}[十時]{じゅうじ}から[午後]{ごご}[七時]{しちじ}まで」. Kaito arrives at 18:30. Is the shop open?", options:[
      {t:"Yes: it is open from 10 a.m. to 7 p.m., and 18:30 is 6:30 p.m.", ok:true, why:"Right. [午後七時]{ごごしちじ} is 19:00, so at 18:30 there are 30 minutes left."},
      {t:"No: it closes at 7 a.m.", why:"[午後]{ごご} means p.m. The shop closes at 7 p.m. (19:00)."},
      {t:"No: it closes at 6 p.m.", why:"[七時]{しちじ} is seven o’clock, not six. Check the reading しちじ."},

@@ -96,7 +96,7 @@ ICA.addUnit({
       {t:"ねこ (cat)", b:1, why:"ね and こ are curvy hiragana. Native words are often written in hiragana while you are learning, and in children’s books."},
       {t:"テレビ (TV)", b:2, why:"テ, レ and ビ are angular katakana. テレビ is a loanword, short for “television”."},
       {t:"を (object marker)", b:1, why:"を is a hiragana grammar word. Particles are always written in hiragana."},
-      {t:"ロドリゴ (Rodrigo, a name)", b:2, why:"Names from other languages are written in katakana: サ and ラ are angular katakana shapes."},
+      {t:"ロドリゴ (Rodrigo, a name)", b:2, why:"Names from other languages are written in katakana: ロ, ド, リ and ゴ are angular katakana shapes."},
       {t:"[本]{ほん} (book)", b:0, why:"[本]{ほん} is a single kanji meaning “book”, read ほん (*hon*)."}
     ]},
     {id:"e3u1-l1-x2", type:"mcq", q:"Why is コーヒー (*kōhī*, coffee) written in katakana?", options:[
@@ -169,7 +169,7 @@ ICA.addUnit({
       {tip:"Most of these words also have kanji: [犬]{いぬ} for いぬ, [山]{やま} for やま, [本]{ほん} for ほん. Writing them in hiragana is correct while you learn. You will add the kanji in Unit 4."}
     ]},
     {h:"Sounds to listen for", body:[
-      "Most hiragana sounds are close to sounds you know. A few need attention. There is no audio in this app, so the descriptions below say what your mouth does. Lesson 5 lists free sites where you can listen.",
+      "Most hiragana sounds are close to sounds you know. A few need attention. Listen to the audio wherever the app offers it, and use the descriptions below to see what your mouth does. Lesson 5 lists free sites with more recordings.",
       {list:[
         "**ふ (*fu*)**: blow gently through lips that almost touch, like blowing out a candle. Your top teeth don’t touch your lower lip, as they do for English “f”.",
         "**ひ (*hi*)**: a little breathier than English “he”, with the tongue close to the roof of the mouth.",
@@ -367,7 +367,7 @@ ICA.addUnit({
       {v:3, tol:0, why:"You probably left out the small っ. It is silent, but it still takes a full beat."},
       {v:2, tol:0, why:"That is the English way of counting syllables (*gak-kō*). Japanese counts beats: っ and the long vowel each get one."}
     ]},
-    {id:"e3u1-l3-x5", type:"mcq", q:"Kai is talking about his grandmother. Which word does he need?", options:[
+    {id:"e3u1-l3-x5", type:"mcq", q:"Kaito is talking about his grandmother. Which word does he need?", options:[
       {t:"おばあさん (*obāsan*)", ok:true, why:"Right. The long *ā*, written with an extra あ, makes it “grandmother” (or an elderly woman)."},
       {t:"おばさん (*obasan*)", why:"With a short *a*, this means “aunt” or a woman of middle age. One missing beat changes the person."},
       {t:"おぱあさん (*opāsan*)", why:"ぱ (*pa*) has the small circle, not the two strokes. Grandmother uses ば (*ba*)."},
@@ -468,7 +468,7 @@ ICA.addUnit({
       "The most famous katakana trap is two pairs: **シ (*shi*) and ツ (*tsu*)**, and **ソ (*so*) and ン (*n*)**. In print they can look nearly the same. The secret is the **direction of the long stroke** and **where the short strokes sit**.",
       {fig:'<svg viewBox="0 0 340 316"><defs><marker id="e3a3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="3" markerHeight="3" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="18" text-anchor="middle">Follow the long stroke</text><rect class="d-sage" x="10" y="30" width="155" height="134" rx="8" stroke-width="2"/><g transform="translate(45 38)"><path class="d-ink" d="M10 15L24 24" stroke-width="5" stroke-linecap="round"/><path class="d-ink" d="M6 38L20 47" stroke-width="5" stroke-linecap="round"/><path class="d-ink" d="M8 82Q40 72 76 24" stroke-width="5" stroke-linecap="round" marker-end="url(#e3a3)"/></g><text x="87" y="140" text-anchor="middle">シ shi</text><text class="s" x="87" y="157" text-anchor="middle">dots on the left; rises</text><rect class="d-rose" x="175" y="30" width="155" height="134" rx="8" stroke-width="2"/><g transform="translate(210 38)"><path class="d-ink" d="M10 14L16 34" stroke-width="5" stroke-linecap="round"/><path class="d-ink" d="M32 10L38 30" stroke-width="5" stroke-linecap="round"/><path class="d-ink" d="M80 12Q74 60 32 84" stroke-width="5" stroke-linecap="round" marker-end="url(#e3a3)"/></g><text x="252" y="140" text-anchor="middle">ツ tsu</text><text class="s" x="252" y="157" text-anchor="middle">dots along the top; falls</text><rect class="d-sage" x="10" y="174" width="155" height="134" rx="8" stroke-width="2"/><g transform="translate(45 182)"><path class="d-ink" d="M8 20L28 32" stroke-width="5" stroke-linecap="round"/><path class="d-ink" d="M8 82Q44 72 78 30" stroke-width="5" stroke-linecap="round" marker-end="url(#e3a3)"/></g><text x="87" y="284" text-anchor="middle">ン n</text><text class="s" x="87" y="301" text-anchor="middle">long stroke rises</text><rect class="d-rose" x="175" y="174" width="155" height="134" rx="8" stroke-width="2"/><g transform="translate(210 182)"><path class="d-ink" d="M14 14L24 40" stroke-width="5" stroke-linecap="round"/><path class="d-ink" d="M80 10Q72 58 30 84" stroke-width="5" stroke-linecap="round" marker-end="url(#e3a3)"/></g><text x="252" y="284" text-anchor="middle">ソ so</text><text class="s" x="252" y="301" text-anchor="middle">long stroke falls</text></svg>', alt:"Four panels with stroke arrows. シ shi: two short strokes stacked on the left and a long stroke that rises from the bottom left to the top right. ツ tsu: two short strokes side by side along the top and a long stroke that falls from the top right to the bottom left. ン n: one short stroke and a long stroke that rises. ソ so: one short stroke and a long stroke that falls.", cap:"Left: シ and ン, whose long stroke rises from the bottom. Right: ツ and ソ, whose long stroke falls from the top."},
       "A memory trick: シ and ン are written like a smile that **rises**; ツ and ソ **fall** from the top like rain. In シ the short strokes are stacked on the left, almost facing the long stroke; in ツ they stand side by side along the top.",
-      {table:[["Look-alikes","How to tell them apart"],["ク (*ku*) · ケ (*ke*) · タ (*ta*)","タ is ク with an extra short stroke inside; in ケ the long stroke hangs from the middle of a flat line"],["フ (*fu*) · ワ (*wa*) · ウ (*u*)","フ is a single stroke; ワ adds a short vertical on the left; ウ adds a short stroke on top as well"],["ナ (*na*) · メ (*me*)","ナ is a cross with a flat line; メ is two slanting strokes like an x"],["コ (*ko*) · ユ (*yu*)","In ユ the bottom line runs out past the vertical stroke"],["チ (*chi*) · テ (*te*)","In チ the long stroke crosses the flat line; in テ it hangs below two flat lines"],["ヌ (*nu*) · ス (*su*)","ヌ has an extra short stroke crossing it; ス doesn’t"]]},
+      {table:[["Look-alikes","How to tell them apart"],["ク (*ku*) · ケ (*ke*) · タ (*ta*)","タ is ク with an extra short stroke inside; in ケ the long stroke hangs from the middle of a flat line"],["フ (*fu*) · ワ (*wa*) · ウ (*u*)","フ is a single stroke; ワ adds a short vertical on the left; ウ adds a short stroke on top as well"],["ナ (*na*) · メ (*me*)","ナ is a cross with a flat line; メ is two slanting strokes like an x"],["コ (*ko*) · ユ (*yu*)","In ユ the bottom line runs out past the vertical stroke"],["チ (*chi*) · テ (*te*)","In チ the long stroke crosses the flat line; in テ it hangs below two flat lines"],["ヌ (*nu*) · ス (*su*)","Both have two strokes: in ヌ the short stroke crosses the long one; in ス it branches off to the lower right without crossing"]]},
       "A few katakana also look like kanji: エ and [工]{こう} (craft), カ and [力]{ちから} (power), ロ and [口]{くち} (mouth), ニ and [二]{に} (two), ハ and [八]{はち} (eight). In real text the words around them make it clear which is which.",
       {lab:"kl-katakana", t:"Practise: the katakana deck"}
     ]}
@@ -479,8 +479,8 @@ ICA.addUnit({
       ["ツ","tsu","ツ: short strokes side by side on top, long stroke falling from the top."],
       ["ソ","so","ソ: one short stroke, long stroke falling from the top right."],
       ["ン","n","ン: one short stroke, long stroke rising from the bottom left."],
-      ["ヌ","nu","ヌ is ス with an extra short stroke crossing it."],
-      ["ス","su","ス has no extra stroke: just the two strokes."]
+      ["ヌ","nu","ヌ: the short stroke crosses the long stroke."],
+      ["ス","su","ス: the short stroke branches off to the lower right and doesn’t cross."]
     ]},
     {id:"e3u1-l4-x2", type:"mcq", q:"Which is the standard katakana spelling of “coffee”?", options:[
       {t:"コーヒー", ok:true, why:"Right: *kōhī*, with the bar ー for both long vowels."},
@@ -501,7 +501,7 @@ ICA.addUnit({
       {v:4, tol:0, why:"You left out the two ー bars. Each long-vowel bar adds a full beat."},
       {v:5, tol:0, why:"Close. Check that you counted ン and both ー bars: コ・ン・ピュ・ー・タ・ー."}
     ]},
-    {id:"e3u1-l4-x5", type:"mcq", q:"Toby is ordering a drink at a café and wants a beer. Which word should he say?", options:[
+    {id:"e3u1-l4-x5", type:"mcq", q:"Rodrigo is ordering a drink at a café and wants a beer. Which word should he say?", options:[
       {t:"ビール (*bīru*)", ok:true, why:"Right. The bar ー makes the *i* long: *bīru*, beer (from Dutch *bier*)."},
       {t:"ビル (*biru*)", why:"With a short *i*, this is “building”. One beat makes the difference."},
       {t:"ベル (*beru*)", why:"This is “bell”: ベ is *be*, not *bi*."},
@@ -522,11 +522,11 @@ ICA.addUnit({
       {t:"One short stroke, and a long stroke that rises from the bottom left", why:"That is ン (*n*)."},
       {t:"One short stroke, and a long stroke that falls from the top right", why:"That is ソ (*so*). ツ has two short strokes."}
     ]},
-    {id:"e3u1-l4-x8", type:"mcq", q:"Fatima wants to write her name, *Fatima*, in katakana. Which spelling gives the sounds *fa-ti-ma*?", options:[
-      {t:"ファティマ", ok:true, why:"Right. ファ (small ァ) gives *fa* and ティ (small ィ) gives *ti*: three beats, *fa-ti-ma*."},
-      {t:"フアテイマ", why:"With full-size ア and イ, every kana is its own beat: *fu-a-te-i-ma*."},
-      {t:"ファチマ", why:"チ is *chi*, so this reads *fa-chi-ma*. For *ti* you need テ + small ィ."},
-      {t:"ハティマ", why:"ハ is *ha*: this reads *ha-ti-ma*. For *fa* you need フ + small ァ."}
+    {id:"e3u1-l4-x8", type:"mcq", q:"Cheska is writing her name in katakana. Which spelling gives the sounds *che-su-ka*?", options:[
+      {t:"チェスカ", ok:true, why:"Right. チ + small ェ makes one beat, *che*: three beats, *che-su-ka*."},
+      {t:"チエスカ", why:"With a full-size エ, チ and エ are separate beats: *chi-e-su-ka*."},
+      {t:"シェスカ", why:"シェ is *she*, so this reads *she-su-ka*. For *che* you need チ + small ェ."},
+      {t:"チェスカー", why:"The bar makes the last vowel long: *che-su-kā*. Her name ends in a short *ka*."}
     ]},
       {id:"e3u1-l4-x9", type:"type", q:"Listen, then type the loanword in katakana.", book:"In the app you hear the word. Here: write *kōhī* (coffee) in katakana.", say:"コーヒー", answer:"コーヒー",
         hint:"Katakana marks long vowels with ー: type a hyphen after the syllable.",
@@ -778,7 +778,7 @@ ICA.addUnit({
         {table:[["Sound","What to do","Example"],["う *u*","Lips relaxed, not pushed forward","くつ (*kutsu*, shoes)"],["ふ *fu*","Blow through nearly closed lips","ふね (*fune*, ship)"],["ら row","One quick tongue tap behind the top teeth","さくら (*sakura*)"],["ん before m, b, p","Sounds like *m*","さんぽ (*sanpo*, walk)"],["ん before k, g","Sounds like “ng”","ぎんこう (*ginkō*, bank)"],["Small っ","Hold the next consonant for one beat","きって (*kitte*, stamp)"]]},
         "**Whispered vowels.** In standard Tokyo speech, い and う are often whispered (devoiced) between or after voiceless sounds such as k, s, t, h and p: です sounds like “dess”, すき like “ski”. How much speakers do this varies by region and speed.",
         "**Voiced sounds.** The marks ゛ and ゜ turn k→g, s→z, t→d, h→b and h→p. じ/ぢ (*ji*) and ず/づ (*zu*) sound the same in standard Japanese.",
-        "**No audio here.** For listening, use free sources such as OJAD (verbs and adjectives with recordings), the IRODORI course audio, or kana apps with sound. Copy rhythm first, then melody.",
+        "**More listening.** Beyond the app’s own audio, use free sources such as OJAD (verbs and adjectives with recordings), the IRODORI course audio, or kana apps with sound. Copy rhythm first, then melody.",
         "**Particles with old spellings.** は, へ and を as particles are said *wa*, *e* and *o*. This is a spelling rule, not a sound rule: inside other words は and へ keep the sounds *ha* and *he*.",
         "**Rhythm.** Give ん, small っ and each half of a long vowel a full beat. Many learners shorten these; tapping a finger for each beat while speaking is a quick fix."
       ],
@@ -953,7 +953,7 @@ ICA.addUnit({
       {t:"*wa*", why:"*Wa* is how the particle は is said."},
       {t:"*e*", why:"*E* is how the particle へ is said."},
       {t:"It is silent", why:"を is pronounced: *mizu o nomimasu*."}]},
-    {id:"e3u1-q12", lesson:"e3u1-l2", level:2, q:"Oluwaseun writes えきえ いきます for “I go to the station”. Which particle should he write after えき?", options:[
+    {id:"e3u1-q12", lesson:"e3u1-l2", level:2, q:"Rodrigo writes えきえ いきます for “I go to the station”. Which particle should he write after えき?", options:[
       {t:"へ, which is said *e*", ok:true, why:"The direction particle is written へ but said *e*: えきへ いきます (*eki e ikimasu*)."},
       {t:"え, because that is how it sounds", why:"The sound is *e*, but the spelling rules keep the old spelling へ for this particle."},
       {t:"は", why:"は (said *wa*) marks the topic, not direction."},
@@ -1009,7 +1009,7 @@ ICA.addUnit({
       {t:"*shya*", why:"Hepburn doesn’t keep the *y* after *sh*; the sound is *sha*."},
       {t:"*sya*", why:"*Sya* is the older Kunrei spelling."},
       {t:"*shiya*", why:"*Shiya* would be し plus a full-size や, two beats."}]},
-    {id:"e3u1-q23", lesson:"e3u1-l3", level:3, q:"Dmitri writes せんせえ for *sensei* (teacher), because that is how it sounds to him. What is the standard spelling?", options:[
+    {id:"e3u1-q23", lesson:"e3u1-l3", level:3, q:"Cheska writes せんせえ for *sensei* (teacher), because that is how it sounds to her. What is the standard spelling?", options:[
       {t:"せんせい: most words with a long *e* sound are written with い", ok:true, why:"The rules write these words with い, whether said as a long *e* or as *ei*."},
       {t:"せんせえ is standard, because it matches the sound", why:"Only a few words, such as おねえさん and ええ, use え. *Sensei* uses い."},
       {t:"せんせ", why:"This drops a whole beat: *sense*."},
@@ -1019,7 +1019,7 @@ ICA.addUnit({
       {t:"こうこう (high school)", why:"こうこう uses the usual う."},
       {t:"おとうさん (father)", why:"おとうさん uses the usual う."},
       {t:"ありがとう (thank you)", why:"ありがとう uses the usual う."}]},
-    {id:"e3u1-q25", lesson:"e3u1-l3", level:3, q:"Amara wants to say “my husband” but says *oto* (おと). What did she leave out?", options:[
+    {id:"e3u1-q25", lesson:"e3u1-l3", level:3, q:"Cheska is reading a word list aloud and says *oto* (おと) for “husband”. What did she leave out?", options:[
       {t:"The small っ pause: “husband” is おっと (*otto*)", ok:true, why:"おと is “sound”. The one-beat pause before と makes おっと, “husband”."},
       {t:"A long vowel: “husband” is おおと", why:"There is no long vowel in this word; the missing beat is a pause."},
       {t:"A dakuten: “husband” is おど", why:"The consonant stays *t*; the difference is the pause before it."},
@@ -1045,7 +1045,7 @@ ICA.addUnit({
       {t:"It is a hyphen between two words", why:"It is the long-vowel mark, not a hyphen."},
       {t:"It is the kanji for “one”", why:"It looks like [一]{いち}, but in katakana words it is the long-vowel mark."},
       {t:"It makes a pause", why:"A pause is shown by small ッ."}]},
-    {id:"e3u1-q30", lesson:"e3u1-l4", level:2, q:"Sione sees ビル on a sign above a door. Is it a building or beer?", options:[
+    {id:"e3u1-q30", lesson:"e3u1-l4", level:2, q:"Cheska sees ビル on a sign above a door. Is it a building or beer?", options:[
       {t:"A building: ビル (*biru*) has a short *i*", ok:true, why:"ビル is “building”; beer is ビール, with the long-vowel bar."},
       {t:"Beer: ビル is short for ビール", why:"ビル and ビール are different words."},
       {t:"A bell", why:"Bell is ベル, with ベ (*be*)."},
@@ -1055,7 +1055,7 @@ ICA.addUnit({
       {t:"ソ", why:"ソ (*so*) looks similar, but its long stroke falls from the top."},
       {t:"シ", why:"シ (*shi*) has two short strokes on the left."},
       {t:"ツ", why:"ツ (*tsu*) has two short strokes along the top."}]},
-    {id:"e3u1-q32", lesson:"e3u1-l4", level:3, q:"Lucía wants to guess how “bed” is written in katakana. Using the usual patterns, which is right?", options:[
+    {id:"e3u1-q32", lesson:"e3u1-l4", level:3, q:"Rodrigo wants to guess how “bed” is written in katakana. Using the usual patterns, which is right?", options:[
       {t:"ベッド", ok:true, why:"After *d* the extra vowel is *o*, and the short vowel before it brings a small ッ: *beddo*."},
       {t:"ベド", why:"The usual pattern adds a ッ after the short vowel: ベッド."},
       {t:"ベッズ", why:"After *d* the added vowel is *o*, giving ド, not ズ."},
@@ -1075,7 +1075,7 @@ ICA.addUnit({
       {t:"English", why:"The English word is “bread”, not similar at all."},
       {t:"French", why:"French *pain* sounds similar, but the Japanese word came from Portuguese."},
       {t:"German", why:"German gave Japanese words such as アルバイト, but not パン."}]},
-    {id:"e3u1-q36", lesson:"e3u1-l4", level:3, q:"Yến sees an advert for a マンション (*manshon*) at a price she can afford, and expects a huge house. What does マンション usually mean in Japanese?", options:[
+    {id:"e3u1-q36", lesson:"e3u1-l4", level:3, q:"Rodrigo sees an advert for a マンション (*manshon*) at a price he can afford, and expects a huge house. What does マンション usually mean in Japanese?", options:[
       {t:"A flat (apartment) in a block, often an ordinary one", ok:true, why:"Loanword meanings can shift: マンション is a flat in a block of flats."},
       {t:"A large country house, as in English", why:"That is the English meaning, not the Japanese one."},
       {t:"A hotel", why:"Hotel is ホテル."},
@@ -1111,7 +1111,7 @@ ICA.addUnit({
       {t:"A nose: [鼻]{はな} always drops on the particle", why:"[鼻]{はな} is flat [0]: the particle after it stays high."},
       {t:"You can’t tell: they sound identical", why:"Alone they do; the particle tells them apart."},
       {t:"Neither: はな has no pitch accent", why:"Every Tokyo word has a pattern, including the flat one."}]},
-    {id:"e3u1-q43", lesson:"e3u1-l5", level:3, q:"Fatima’s friend from Osaka says some words with a different melody from the Tokyo patterns in her textbook. What is the best explanation?", options:[
+    {id:"e3u1-q43", lesson:"e3u1-l5", level:3, q:"Toby’s friend from Osaka says some words with a different melody from the Tokyo patterns in his textbook. What is the best explanation?", options:[
       {t:"Kansai Japanese has its own accent system; both are correct in their own dialect", ok:true, why:"Accent differs between dialects. Learner materials teach the standard, Tokyo-based accent."},
       {t:"Her friend is making mistakes", why:"Dialect accents are not mistakes; they are different systems."},
       {t:"The textbook must be wrong", why:"The textbook teaches standard Tokyo-based accent, which is correct for standard Japanese."},

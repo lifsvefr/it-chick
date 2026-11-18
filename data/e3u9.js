@@ -388,7 +388,7 @@ ICA.addUnit({
     {
      id: "e3u9-l1-x4",
      type: "mcq",
-     q: "When Cheska arrived in Japan, she couldn’t read a newspaper. Now, after two years, she can. How does she say this?",
+     q: "When Cheska arrived in Japan, she couldn’t read a newspaper. Now, a year later, she can. How does she say this?",
      options: [
       {
        t: "新聞が読めるようになりました。",
@@ -397,7 +397,7 @@ ICA.addUnit({
       },
       {
        t: "新聞が読めるようにしました。",
-       why: "～ようにする means making an effort or arranging things so that something is possible. It doesn’t describe a change that came about over two years."
+       why: "～ようにする means making an effort or arranging things so that something is possible. It doesn’t describe a change that came about over a year."
       },
       {
        t: "新聞が読めることになりました。",
@@ -996,7 +996,7 @@ ICA.addUnit({
        flag: false,
        why: "Fine: ～ているところ for something he is in the middle of right now."
       },
-      "です。来週から、日本語学校に",
+      "です。来週から、[週末]{しゅうまつ}は[図書館]{としょかん}に",
       {
        t: "通うことをしました",
        flag: true,
@@ -1548,7 +1548,7 @@ ICA.addUnit({
     {
      id: "e3u9-l3-x6",
      type: "mcq",
-     q: "Mr. Satō has had a cough for two weeks, and he hates going to the doctor. You want to suggest, kindly, that he sees a doctor. Which is the best choice?",
+     q: "A friend has had a cough for two weeks, and he hates going to the doctor. You want to suggest, kindly, that he sees a doctor. Which is the best choice?",
      options: [
       {
        t: "病院に行ったほうがいいよ。",
@@ -4368,7 +4368,7 @@ ICA.addUnit({
    id: "e3u9-q24",
    lesson: "e3u9-l3",
    level: 3,
-   q: "Kaito has always been a great cook. Today he tells you his mother runs a restaurant. You say: “So that’s why you’re such a good cook!” 「それで料理が[上手]{じょうず}な（　）ね。」",
+   q: "Kaito has always been a great cook. Today he tells you his family runs a soba shop. You say: “So that’s why you’re such a good cook!” 「それで料理が[上手]{じょうず}な（　）ね。」",
    options: [
     {
      t: "わけです",
@@ -4443,7 +4443,7 @@ ICA.addUnit({
    id: "e3u9-q27",
    lesson: "e3u9-l3",
    level: 2,
-   q: "Mariya is talking about her own plan: “I intend to study in Japan next year.” 「来年、日本に[留学]{りゅうがく}する（　）です。」",
+   q: "Mariya is talking about her own plan: “I intend to study abroad next year.” 「来年、[留学]{りゅうがく}する（　）です。」",
    options: [
     {
      t: "つもり",
@@ -4568,7 +4568,7 @@ ICA.addUnit({
    id: "e3u9-q32",
    lesson: "e3u9-l4",
    level: 3,
-   q: "Building work next door kept Ji-ho awake all night, and he is annoyed. Which word puts the blame on the building work? 「[隣]{となり}の工事の（　）、ぜんぜん[眠]{ねむ}れなかった。」",
+   q: "Building work next door kept Rodrigo awake all night, and he is annoyed. Which word puts the blame on the building work? 「[隣]{となり}の工事の（　）、ぜんぜん[眠]{ねむ}れなかった。」",
    options: [
     {
      t: "せいで",
@@ -4793,7 +4793,7 @@ ICA.addUnit({
    id: "e3u9-q41",
    lesson: "e3u9-l5",
    level: 2,
-   q: "Choose the particle: 「大西先生は学生（　）とても親切です。」 (Professor Ōnishi is very kind to his students.)",
+   q: "Choose the particle: 「大西先生は学生（　）とても親切です。」 (Professor Ōnishi is very kind to her students.)",
    options: [
     {
      t: "に[対]{たい}して",

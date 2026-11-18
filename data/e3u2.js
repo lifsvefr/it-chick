@@ -31,7 +31,7 @@ ICA.addUnit({
     ]},
     {h:"The basic sentence: X は Y です", body:[
       "The simplest Japanese sentence says that one thing is another:",
-      {ex:"まりやさんは[学生]{がくせい}です。\nAna is a student.", label:"The pattern"},
+      {ex:"まりやさんは[学生]{がくせい}です。\nMariya is a student.", label:"The pattern"},
       "**まりやさん** is the [[topic-marker|topic]]: what the sentence is about. **は** is a [[particle]]: a small word that comes after a noun and shows its job in the sentence. Here it marks the topic, a bit like “as for Mariya…”. **[学生]{がくせい}** is what you say about the topic. **です** is the polite [[copula]]: it works like “is”, “am” or “are”.",
       "Remember the hook: the particle は is pronounced **わ**. Inside words it keeps its normal sound: はな (flower), はい (yes).",
       {tip:"**Listening to patterns.** When a pattern has a blank, like X は Y です, the audio reads X and Y as **ほにゃらら**: a playful word Japanese speakers use for “something or other” when a word is left out, a bit like “so-and-so” or “blah”. You’ll hear it on TV and in everyday talk all over Japan. It’s casual, so keep it out of formal writing. A and B are read the way Japanese teachers do: エー and ビー."},
@@ -58,7 +58,7 @@ ICA.addUnit({
     ]},
     {h:"Questions with か", body:[
       "To ask a yes–no question, add the [[question-particle-ka|question particle か]] to the end of the sentence. The word order doesn’t change. In speech, your voice rises a little on か.",
-      {ex:"まりやさんは[学生]{がくせい}です。 → まりやさんは[学生]{がくせい}ですか。\nAna is a student. → Is Mariya a student?", label:"Statement to question"},
+      {ex:"まりやさんは[学生]{がくせい}です。 → まりやさんは[学生]{がくせい}ですか。\nMariya is a student. → Is Mariya a student?", label:"Statement to question"},
       "In standard writing, a sentence ending in か usually takes the normal full stop 。, because か already shows it’s a question. The question mark ？ is common in casual writing, messages and learner books.",
       "To answer a question about a noun (“Is it X?”), you have two short options for each answer:",
       {table:[["","Short answer","Full answer"],["Yes","はい、そうです。","はい、[学生]{がくせい}です。"],["No","いいえ、ちがいます。","いいえ、[学生]{がくせい}じゃありません。"]]},
@@ -71,7 +71,7 @@ ICA.addUnit({
       {table:[["Japanese","English","What the first noun does"],["[私]{わたし}の[本]{ほん}","my book","owner"],["イエンさんのかばん","Yến’s bag","owner"],["[日本語]{にほんご}の[先生]{せんせい}","a teacher of Japanese","what kind"],["[大学]{だいがく}の[友]{とも}だち","a friend from university","where from"]]},
       "The order is fixed: the describing noun comes **first**, the main noun last, as in English “Yến’s bag”, never like “the bag of Yến”. You can chain の: [私]{わたし}の[友]{とも}だちの[名前]{なまえ} means “my friend’s name”.",
       "When the main noun is obvious, you can drop it and keep の, like English “mine” or “Yến’s”:",
-      {ex:"「このかばんは[先生]{せんせい}のですか。」\n「いいえ、[私]{わたし}のです。」\n“Is this bag yours?” (literally “the teacher’s”) “No, it’s mine.”", label:"の without the second noun"},
+      {ex:"「このかばんは[先生]{せんせい}のですか。」\n「はい、[私]{わたし}のです。」\n“Is this bag yours?” (literally “the teacher’s”) “Yes, it’s mine.”", label:"の without the second noun"},
       "(この means “this”; Lesson 2 teaches it.) Japanese often uses a title such as [先生]{せんせい} instead of “you” when speaking to a teacher, which is why the question says 「[先生]{せんせい}の」."
     ]},
     {h:"Common mistakes", body:[
@@ -158,7 +158,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e3u2-l2", title:"これ, それ, あれ: pointing, asking, and は vs が", minutes:50,
-   hook:{q:"Rodrigo is holding his fountain pen. He asks you 「これは[何]{なん}ですか。」 (“What is this?”). The pen is near him, not you. How do you begin your answer?", options:["これは…","それは…","あれは…","どれは…"], answer:1, reveal:"**それは…** Rodrigo says これ because the pen is near him. From where you stand, it is near the listener, so you say それ: 「それはペンです。」 Japanese pointing words depend on who the thing is close to, and they change as the speaker changes. This lesson maps all of them."},
+   hook:{q:"Rodrigo finds an odd tool in a kitchen drawer and holds it up. He asks you 「これは[何]{なん}ですか。」 (“What is this?”). The tool is near him, not you. How do you begin your answer?", options:["これは…","それは…","あれは…","どれは…"], answer:1, reveal:"**それは…** Rodrigo says これ because the tool is near him. From where you stand, it is near the listener, so you say それ: 「それはおろし[金]{がね}です。」 (“That’s a grater.”) Japanese pointing words depend on who the thing is close to, and they change as the speaker changes. This lesson maps all of them."},
    goals:[
      "Choose これ, それ, あれ or どれ by who the thing is close to",
      "Tell これ (stands alone) from この (needs a noun), and use ここ, そこ, あそこ and どこ for places",
@@ -806,7 +806,7 @@ ICA.addUnit({
      starter:[
       "Japanese has two particles that can come after the “who” or “what” of a sentence: は and が. Learners meet them on day one and keep refining them for years, so it is fine to start simple.",
       "**は marks the topic**: something already known, which you are now saying something about. 「ふみこさんは[大家]{おおや}さんです。」 (“As for Fumiko, she’s the landlady.”) The new information comes **after** は.",
-      "**が marks the subject when it is the new information**: the answer to “who?” or “which?”. 「ふみこさんが[大家]{おおや}さんです。」 (“Fumiko is the teacher”, he’s the one.) The new information comes **before** が.",
+      "**が marks the subject when it is the new information**: the answer to “who?” or “which?”. 「ふみこさんが[大家]{おおや}さんです。」 (“Fumiko is the landlady”: she’s the one.) The new information comes **before** が.",
       "One rule never fails at this level: **a question word as the subject takes が**, never は. 「だれが[先生]{せんせい}ですか。」 And the word that answers it takes が too.",
       {key:"Known topic → は, news after it. Question word or its answer → が."}
      ],
@@ -1064,7 +1064,7 @@ ICA.addUnit({
    {id:"e3u2-q06", lesson:"e3u2-l1", level:3, q:"Cheska introduces herself at the university. Which line needs fixing?", options:[
      {t:"「チェスカさんです。」", ok:true, why:"Cheska is talking about herself, so no さん: 「チェスカです。」"},
      {t:"「はじめまして。」", why:"Correct: the standard opening for a first meeting."},
-     {t:"「エンジニアです。」", why:"Correct: “I’m an engineer.” The topic (I) is clear, so it is left out."},
+     {t:"「フィリピン[人]{じん}です。」", why:"Correct: “I’m Filipino.” The topic (I) is clear, so it is left out."},
      {t:"「よろしくおねがいします。」", why:"Correct: the standard way to close an introduction."}
    ]},
    {id:"e3u2-q07", lesson:"e3u2-l1", level:1, q:"Why do Japanese speakers usually say the person’s name with さん instead of あなた (“you”)?", options:[
@@ -1104,7 +1104,7 @@ ICA.addUnit({
      {t:"ここ", why:"ここ is a place word (here) and stands alone."},
      {t:"あれ", why:"あれ stands alone: あれは[駅]{えき}です。"}
    ]},
-   {id:"e3u2-q13", lesson:"e3u2-l2", level:3, q:"Oluwaseun is at a station and needs the toilet. What does he ask a member of staff?", options:[
+   {id:"e3u2-q13", lesson:"e3u2-l2", level:3, q:"Rodrigo is at a station and needs the toilet. What does he ask a member of staff?", options:[
      {t:"すみません、トイレはどこですか。", ok:true, why:"X は どこですか asks where X is."},
      {t:"すみません、トイレはどれですか。", why:"どれ asks “which one” among things you can see. For a place, use どこ."},
      {t:"すみません、トイレはだれですか。", why:"だれ asks “who”."},
@@ -1128,7 +1128,7 @@ ICA.addUnit({
      {t:"なんで", why:"なんで is a different word (“why”, in casual speech)."},
      {t:"いつ", why:"いつ is a different question word, “when”."}
    ]},
-   {id:"e3u2-q17", lesson:"e3u2-l2", level:3, q:"Dmitri is in a clothes shop holding a shirt he likes. He wants to know the price. What does he ask?", options:[
+   {id:"e3u2-q17", lesson:"e3u2-l2", level:3, q:"Rodrigo is in a clothes shop holding a shirt he likes. He wants to know the price. What does he ask?", options:[
      {t:"このシャツはいくらですか。", ok:true, why:"The shirt is near him (この + noun), and いくら asks the price."},
      {t:"このシャツはどれですか。", why:"どれ asks “which one”; he already has the shirt."},
      {t:"そのシャツはいくらですか。", why:"その is for things near the listener. The shirt is in his own hands."},
@@ -1220,7 +1220,7 @@ ICA.addUnit({
      {t:"[毎日]{まいにち} (every day)", why:"[毎日]{まいにち} takes no particle."},
      {t:"[今]{いま} (now)", why:"[今]{いま} takes no particle."}
    ]},
-   {id:"e3u2-q32", lesson:"e3u2-l4", level:3, q:"Fatima tells her teacher that she goes home by bus. Which sentence is correct?", options:[
+   {id:"e3u2-q32", lesson:"e3u2-l4", level:3, q:"Cheska tells her teacher that she goes home by bus. Which sentence is correct?", options:[
      {t:"バスでうちに[帰]{かえ}ります。", ok:true, why:"で for the means (bus), に for the destination (home)."},
      {t:"バスにうちで[帰]{かえ}ります。", why:"The particles are swapped: the bus is the means (で) and home is the destination (に)."},
      {t:"バスをうちに[帰]{かえ}ります。", why:"を marks an object; the bus is the means of travel."},

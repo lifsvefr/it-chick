@@ -1022,10 +1022,10 @@ ICA.addUnit({
     {
      "id": "e3u11-l1-x5",
      "type": "spot",
-     "q": "Rodrigo wrote this about his sister, but two kanji are wrong (they look like the right ones). Tap them.",
+     "q": "Rodrigo wrote this about his mother, but two kanji are wrong (they look like the right ones). Tap them.",
      "ask": "wrong kanji",
      "parts": [
-      "姉は",
+      "母は",
       {
        "t": "苦い",
        "flag": true,
@@ -1910,7 +1910,7 @@ ICA.addUnit({
      "body": [
       "Aoi is doing an internship in a company’s general affairs department. Her manager asks her to send this email to everyone in the office. Read it once for the main point, then again for the details.",
       {
-       "ex": "[件]{けん}名：来週の会[議]{ぎ}の[変]{へん}[更]{こう}について\n\n[皆]{みな}さん\n\nお[疲]{つか}れさまです。[総]{そう}[務]{む}[部]{ぶ}の[平]{ひら}[川]{かわ}です。\n来週水曜日の会[議]{ぎ}は、会[議]{ぎ}室の工事のため、金曜日の午後二時からに[変]{へん}[更]{こう}になりました。[内]{ない}[容]{よう}は、新しい[交]{こう}通[費]{ひ}の[規]{き}[則]{そく}についての[説]{せつ}明です。\n[参]{さん}[加]{か}できない方は、水曜日までに私に[連]{れん}[絡]{らく}してください。[資]{し}料は前の日にメールで送ります。\nよろしくお[願]{ねが}いします。",
+       "ex": "[件]{けん}名：来週の会[議]{ぎ}の[変]{へん}[更]{こう}について\n\n[皆]{みな}さん\n\nお[疲]{つか}れさまです。[総]{そう}[務]{む}[部]{ぶ}の[平]{ひら}[川]{かわ}です。\n来週水曜日の会[議]{ぎ}は、会[議]{ぎ}室の工事のため、金曜日の午後二時からに[変]{へん}[更]{こう}になりました。[内]{ない}[容]{よう}は、新しい[交]{こう}通[費]{ひ}の[規]{き}[則]{そく}についての[説]{せつ}明です。\n[参]{さん}[加]{か}できない方は、水曜日までにご[連]{れん}[絡]{らく}ください。[資]{し}料は前の日にメールでお送りします。\nよろしくお[願]{ねが}いします。",
        "label": "An email from Aoi"
       },
       {
@@ -4565,7 +4565,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "[昨]{さく}年 is the formal word for last year (in speech, 去年), and [昨]{さく}日 the formal word for yesterday, used in business. 時[刻]{こく} is a clock time, as in a timetable: 時[刻]{こく}[表]{ひょう}. 〜[期]{き} is a period: 学[期]{き} (school term), [定]{てい}[期]{き}[券]{けん} (season ticket)."
+      "[昨]{さく}年 is the formal word for last year (in speech, 去年), and [昨日]{さくじつ} (the same kanji as きのう) the formal word for yesterday, used in business. 時[刻]{こく} is a clock time, as in a timetable: 時[刻]{こく}[表]{ひょう}. 〜[期]{き} is a period: 学[期]{き} (school term), [定]{てい}[期]{き}[券]{けん} (season ticket)."
      ]
     },
     {
@@ -4999,7 +4999,7 @@ ICA.addUnit({
      "body": [
       "Yến wrote this on her blog after a weekend trip. Read it once for the story, then again for the onomatopoeia.",
       {
-       "ex": "この前の週[末]{まつ}、友[達]{だち}と山の[温]{おん}[泉]{せん}に行きました。一日目は雨がザーザー[降]{ふ}っていて、[遠]{とお}くで[雷]{かみなり}もゴロゴロ[鳴]{な}っていました。[宿]{やど}に着いて[窓]{まど}から外を見ると、[森]{もり}の[緑]{みどり}がとてもきれいでした。\n[二日]{ふつか}目はすっかり[晴]{は}れて、[湖]{みずうみ}が[太]{たい}[陽]{よう}の[光]{ひかり}できらきらしていました。昼ご飯は、お[米]{こめ}も野[菜]{さい}も地元のもので、とてもおいしかったです。夜は[温]{おん}[泉]{せん}に入って、ぐっすり[眠]{ねむ}れました。のんびりできて、[最]{さい}高の週[末]{まつ}でした。",
+       "ex": "この前の週[末]{まつ}、友[達]{だち}と山の[温]{おん}[泉]{せん}に行きました。一日目は雨がザーザー[降]{ふ}っていて、[遠]{とお}くで[雷]{かみなり}もゴロゴロ[鳴]{な}っていました。[宿]{やど}に着いて[窓]{まど}から外を見ると、[森]{もり}の[緑]{みどり}がとてもきれいでした。夜は[温]{おん}[泉]{せん}に入って、ぐっすり[眠]{ねむ}れました。\n[二日]{ふつか}目はすっかり[晴]{は}れて、[湖]{みずうみ}が[太]{たい}[陽]{よう}の[光]{ひかり}できらきらしていました。昼ご飯は、お[米]{こめ}も野[菜]{さい}も地元のもので、とてもおいしかったです。のんびりできて、[最]{さい}高の週[末]{まつ}でした。",
        "label": "Yến’s blog"
       },
       {
@@ -5245,7 +5245,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l5-x7",
      "type": "spot",
-     "q": "Two onomatopoeia in Yến’s note don’t fit their sentence. Tap them.",
+     "q": "Two onomatopoeia in Rodrigo’s note don’t fit their sentence. Tap them.",
      "ask": "words that don’t fit",
      "parts": [
       "雨が",
@@ -5278,7 +5278,7 @@ ICA.addUnit({
     {
      "id": "e3u11-l5-x8",
      "type": "mcq",
-     "q": "Daniel is booking a train seat online and wants to look out of the window. Which seat should he choose?",
+     "q": "Toby is booking a train seat online and wants to look out of the window. Which seat should he choose?",
      "options": [
       {
        "t": "[窓]{まど}[側]{がわ}",
@@ -6466,12 +6466,12 @@ ICA.addUnit({
    "id": "e3u11-q17",
    "lesson": "e3u11-l2",
    "level": 3,
-   "q": "Aoi’s email says the meeting 「金曜日の午後二時からに[変]{へん}[更]{こう}になりました」 and asks people who can’t come to 「水曜日までに[連]{れん}[絡]{らく}してください」. Yến can’t come. What should she do?",
+   "q": "Aoi’s email says the meeting 「金曜日の午後二時からに[変]{へん}[更]{こう}になりました」 and asks people who can’t come to 「水曜日までにご[連]{れん}[絡]{らく}ください」. A colleague in Aoi’s office can’t come. What should he do?",
    "options": [
     {
      "t": "Contact Aoi by Wednesday.",
      "ok": true,
-     "why": "Right. 水曜日までに[連]{れん}[絡]{らく}してください: contact (her) by Wednesday."
+     "why": "Right. 水曜日までにご[連]{れん}[絡]{らく}ください: contact (her) by Wednesday."
     },
     {
      "t": "Go to the meeting on Wednesday instead.",
@@ -6991,7 +6991,7 @@ ICA.addUnit({
    "id": "e3u11-q38",
    "lesson": "e3u11-l5",
    "level": 3,
-   "q": "Daniel’s friend says before a big presentation: 「どうしよう、すごくドキドキする」. How is the friend feeling?",
+   "q": "Toby’s friend says before a big presentation: 「どうしよう、すごくドキドキする」. How is the friend feeling?",
    "options": [
     {
      "t": "Nervous, heart pounding",

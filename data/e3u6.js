@@ -118,7 +118,7 @@ ICA.addUnit({
       {t:"[漢字]{かんじ}を書けることができます。", why:"This says “can” twice: the potential 書ける and ～ことができる. Use the dictionary form 書く."},
       {t:"[漢字]{かんじ}を書きことができます。", why:"こと follows the dictionary form (書く), not the ます stem (書き)."}
     ]},
-    {id:"e3u6-l1-x6", type:"spot", q:"Cheska is writing a polite email to her professor. Tap each form that should be changed for careful writing.", ask:"should change", parts:[
+    {id:"e3u6-l1-x6", type:"spot", q:"Cheska is writing a polite email to her Japanese teacher. Tap each form that should be changed for careful writing.", ask:"should change", parts:[
       "[先生]{せんせい}、[明日]{あした}の[授業]{じゅぎょう}には",
       {t:"[出]{で}れます", flag:true, why:"ら[抜]{ぬ}き: 出る (attend, go out) is ichidan (出ます), so the written potential is 出られます."},
       "。でも、[朝]{あさ}[早]{はや}く",
@@ -127,8 +127,8 @@ ICA.addUnit({
       {t:"できました", flag:false, why:"Fine: the past of できる, the potential of する."},
       "。[今]{いま}は[漢字]{かんじ}が[百]{ひゃく}ぐらい",
       {t:"読めます", flag:false, why:"Fine: 読める is the standard potential of the godan verb 読む."},
-      "。[授業]{じゅぎょう}の[後]{あと}、[七時]{しちじ}までに[家]{いえ}に",
-      {t:"[帰]{かえ}れます", flag:false, why:"Fine: [帰]{かえ}る is godan ([帰]{かえ}ります), so [帰]{かえ}れる is the standard potential, not ら[抜]{ぬ}き."},
+      "。[授業]{じゅぎょう}の[後]{あと}は、[七時]{しちじ}まで[教室]{きょうしつ}に",
+      {t:"[残]{のこ}れます", flag:false, why:"Fine: [残]{のこ}る (stay behind) is godan ([残]{のこ}ります), so [残]{のこ}れる is the standard potential, not ら[抜]{ぬ}き."},
       "。"
     ]},
     {id:"e3u6-l1-x7", type:"mcq", q:"Kaito is reading in his room when he notices a strange sound from the room next door. He wasn’t trying to listen. How does he say “I can hear a strange sound”?", options:[
@@ -221,7 +221,7 @@ ICA.addUnit({
       {ex:"[電車]{でんしゃ}は[三時]{さんじ}に[着]{つ}く[予定]{よてい}です。\nThe train is due to arrive at three.\n\n[来週]{らいしゅう}は[出張]{しゅっちょう}の[予定]{よてい}です。\nI’m scheduled to go on a business trip next week.", label:"よてい (schedule)"}
     ]},
     {h:"Putting it together: talking about plans", body:[
-      "Here is how these patterns sound together in a polite conversation between two colleagues.",
+      "Here is how these patterns sound together in a polite conversation between two housemates.",
       {ex:"イエン：[夏休]{なつやす}みは何をしますか。\nまりや：[北]{きた}の[方]{ほう}へ[旅行]{りょこう}に行こうと[思]{おも}っています。イエンさんは？\nイエン：[国]{くに}へ[帰]{かえ}るつもりです。もう[飛行機]{ひこうき}を[予約]{よやく}しました。[八月]{はちがつ}[三日]{みっか}に[出発]{しゅっぱつ}する[予定]{よてい}です。\nまりや：いいですね。じゃあ、その[前]{まえ}に[一度]{いちど}、[一緒]{いっしょ}に[食事]{しょくじ}しませんか。\nイエン：ええ、そうしましょう。\n\nYến: What are you doing in the summer holidays?\nMariya: I’m thinking of travelling up north. And you, Yến?\nYến: I intend to go back to my country. I’ve already booked the flight; I’m due to leave on 3 August.\nMariya: Sounds good. Then shall we have a meal together once before that?\nYến: Yes, let’s do that.", label:"Worked example: summer plans"},
       "Look at how certain each speaker is. Mariya’s trip is still an idea, so she uses ～ようと[思]{おも}っています. Yến has decided, so つもりです; and her flight has a date, so [予定]{よてい}です. Mariya’s invitation uses polite ～ませんか, and Yến accepts with ～ましょう.",
       "Between close friends the same exchange would use the volitional form directly: [一緒]{いっしょ}にごはん食べない？ — うん、そうしよう。"
@@ -260,11 +260,11 @@ ICA.addUnit({
       {t:"[来]{こ}よう", b:0, why:"The volitional of [来]{く}る."},
       {t:"[来]{こ}られる", b:1, why:"The potential of [来]{く}る."}
     ]},
-    {id:"e3u6-l2-x4", type:"mcq", q:"Mr. Satō is struggling with three heavy bags. You want to offer, casually, to carry one. What do you say?", options:[
+    {id:"e3u6-l2-x4", type:"mcq", q:"Your housemate Kaito is struggling with three heavy shopping bags. You want to offer, casually, to carry one. What do you say?", options:[
       {t:"[一]{ひと}つ[持]{も}とうか。", ok:true, why:"Right. Volitional + か is a casual offer: “Shall I carry one?”"},
-      {t:"一つ[持]{も}てる？", why:"[持]{も}てる is the potential: “Can you carry one?” That asks about Mr. Satō’s ability rather than offering help."},
+      {t:"一つ[持]{も}てる？", why:"[持]{も}てる is the potential: “Can you carry one?” That asks about Kaito’s ability rather than offering help."},
       {t:"一つ[持]{も}ちたい。", why:"～たい says what you want. It sounds as if you want a bag for yourself, not that you are offering help."},
-      {t:"一つ[持]{も}つつもり。", why:"つもり states a plan. It doesn’t offer anything or ask Mr. Satō whether he would like help."}
+      {t:"一つ[持]{も}つつもり。", why:"つもり states a plan. It doesn’t offer anything or ask Kaito whether he would like help."}
     ]},
     {id:"e3u6-l2-x5", type:"mcq", q:"How do you say “Aoi is thinking of buying a car”?", options:[
       {t:"あおいさんは車を[買]{か}おうと[思]{おも}っています。", ok:true, why:"Right. Volitional + と[思]{おも}っています is used for someone else’s intention."},
@@ -272,17 +272,17 @@ ICA.addUnit({
       {t:"あおいさんは車を[買]{か}うと[思]{おも}っています。", why:"With the dictionary form, this means “Aoi thinks (someone) will buy a car”, a guess rather than her plan. The intention needs the volitional [買]{か}おう."},
       {t:"あおいさんは車を[買]{か}おうつもりです。", why:"つもり follows the dictionary form: [買]{か}うつもりです. The volitional form can’t go before つもり."}
     ]},
-    {id:"e3u6-l2-x6", type:"spot", q:"Cheska wrote about her plans. Tap each form that is **wrong**.", ask:"is wrong", parts:[
-      "[来年]{らいねん}の[春]{はる}、日本へ",
+    {id:"e3u6-l2-x6", type:"spot", q:"Before she came to Japan, Cheska wrote about her plans. Tap each form that is **wrong**.", ask:"is wrong", parts:[
+      "[今年]{ことし}の[秋]{あき}、日本へ",
       {t:"行くつもりです", flag:false, why:"Correct: dictionary form + つもりです."},
-      "。[向]{む}こうでは[料理]{りょうり}を",
+      "。[向]{む}こうでは[日本語]{にほんご}を",
       {t:"[習]{なら}おうと[思]{おも}っています", flag:false, why:"Correct: [習]{なら}う (learn) is godan, so う → お + う: [習]{なら}おう."},
       "。[毎日]{まいにち}、[新]{あたら}しい[漢字]{かんじ}を[五]{いつ}つ",
       {t:"[覚]{おぼ}えろうと[思]{おも}います", flag:true, why:"Wrong. [覚]{おぼ}える (memorise) is ichidan ([覚]{おぼ}えます), so it takes よう: [覚]{おぼ}えようと[思]{おも}います."},
       "。[週末]{しゅうまつ}は[山]{やま}に",
       {t:"[登]{のぼ}ろうと[思]{おも}っています", flag:false, why:"Correct: [登]{のぼ}る (climb) is godan ([登]{のぼ}ります): [登]{のぼ}ろう."},
-      "。[兄]{あに}も[一緒]{いっしょ}に",
-      {t:"きようと[思]{おも}っています", flag:true, why:"Wrong. The volitional of [来]{く}る is [来]{こ}よう, read こよう: [兄]{あに}も[一緒]{いっしょ}に[来]{こ}ようと[思]{おも}っています."},
+      "。[弟]{おとうと}も[一緒]{いっしょ}に",
+      {t:"きようと[思]{おも}っています", flag:true, why:"Wrong. The volitional of [来]{く}る is [来]{こ}よう, read こよう: [弟]{おとうと}も[一緒]{いっしょ}に[来]{こ}ようと[思]{おも}っています."},
       "。"
     ]},
     {id:"e3u6-l2-x7", type:"order", q:"Put the pieces in order to say “I’m thinking of studying” ([勉強]{べんきょう}する).", items:[
@@ -591,17 +591,17 @@ ICA.addUnit({
       {t:"を", why:"を already marks the thing ([写真]{しゃしん}). The helper takes に."},
       {t:"で", why:"で marks places and means, not the person who helps you."}
     ]},
-    {id:"e3u6-l4-x6", type:"spot", q:"Megumi, Mrs. Satō’s daughter, wrote about her birthday in her diary. Tap each verb that has the **wrong direction**.", ask:"has the wrong direction", parts:[
-      "[昨日]{きのう}は[私]{わたし}の[誕生日]{たんじょうび}でした。母がケーキを",
-      {t:"[作]{つく}ってくれました", flag:false, why:"Correct: her mother did it for her, so ～てくれる."},
-      "。かもめそうのチェスカさんは[私]{わたし}に[花]{はな}を",
-      {t:"あげました", flag:true, why:"Wrong: the flowers came to Megumi, so the verb is くれました."},
-      "。[息子]{むすこ}にはかわいいカードを",
-      {t:"もらいました", flag:false, why:"Correct: Megumi is the receiver, and the giver, her son, is marked with に."},
-      "。[夜]{よる}、[私]{わたし}はかもめそうのみんなにケーキを[少]{すこ}し",
-      {t:"くれました", flag:true, why:"Wrong: Megumi gave some cake to everyone at Kamome House, so the verb is あげました."},
-      "。父は[駅]{えき}まで[車]{くるま}で",
-      {t:"[送]{おく}ってくれました", flag:false, why:"Correct: her father drove her to the station, a favour to her."},
+    {id:"e3u6-l4-x6", type:"spot", q:"Rodrigo wrote about his birthday in his diary. Tap each verb that has the **wrong direction**.", ask:"has the wrong direction", parts:[
+      "[昨日]{きのう}は[私]{わたし}の[誕生日]{たんじょうび}でした。かいとさんがケーキを",
+      {t:"[作]{つく}ってくれました", flag:false, why:"Correct: Kaito made it for Rodrigo, so ～てくれる."},
+      "。チェスカさんは[私]{わたし}に[花]{はな}を",
+      {t:"あげました", flag:true, why:"Wrong: the flowers came to Rodrigo, so the verb is くれました."},
+      "。メキシコの[妹]{いもうと}にはかわいいカードを",
+      {t:"もらいました", flag:false, why:"Correct: Rodrigo is the receiver, and the giver, his sister, is marked with に."},
+      "。[夜]{よる}、[私]{わたし}はふみこさんにもケーキを[少]{すこ}し",
+      {t:"くれました", flag:true, why:"Wrong: Rodrigo gave some cake to Fumiko, so the verb is あげました."},
+      "。[母]{はは}は[電話]{でんわ}で[歌]{うた}を",
+      {t:"[歌]{うた}ってくれました", flag:false, why:"Correct: his mother sang to him over the phone, a favour to him."},
       "。"
     ]},
     {id:"e3u6-l4-x7", type:"order", q:"Put the pieces in order to ask a stranger, very politely: “Could you take our photo?”", items:[
@@ -758,17 +758,17 @@ ICA.addUnit({
       {t:"午後、[飲]{の}み[物]{もの}を[買]{か}わなくてもいいです。", why:"This says you don’t have to buy drinks, the opposite of the plan."},
       {t:"午後、[飲]{の}み[物]{もの}を[買]{か}ってくれます。", why:"～てくれる means someone else does it for you, not that you will buy them."}
     ]},
-    {id:"e3u6-l5-x7", type:"spot", q:"Aoi is writing a polite email to her team at her summer internship. Tap each casual short form that should be written out in full.", ask:"should be written in full", parts:[
-      "チームのみなさん\n[明日]{あした}の[会議]{かいぎ}の[資料]{しりょう}は、もう",
+    {id:"e3u6-l5-x7", type:"spot", q:"Cheska is writing a polite email to her seminar group. Tap each casual short form that should be written out in full.", ask:"should be written in full", parts:[
+      "ゼミのみなさん\n[明日]{あした}のゼミの[資料]{しりょう}は、もう",
       {t:"[作]{つく}っておきました", flag:false, why:"Fine: the full form of ～ておく, polite past."},
-      "。[会議]{かいぎ}の前に",
-      {t:"読んどいて", flag:true, why:"Casual ～どく. In a work email write 読んでおいてください."},
+      "。ゼミの[前]{まえ}に",
+      {t:"読んどいて", flag:true, why:"Casual ～どく. In a polite email write 読んでおいてください."},
       "ください。[私]{わたし}は午後、[病院]{びょういん}に",
       {t:"行かなければなりません", flag:false, why:"Fine: the full, formal “must”."},
-      "ので、[少]{すこ}し[遅]{おく}れます。[時間]{じかん}の[変更]{へんこう}は、[部長]{ぶちょう}にもう",
-      {t:"話しちゃいました", flag:true, why:"Casual ～ちゃう. In a work email write 話してしまいました (or simply 話しました)."},
-      "。[会議]{かいぎ}の[後]{あと}は、[残]{のこ}らなくても",
-      {t:"いいです", flag:false, why:"Fine: ～なくてもいいです, “you don’t have to stay”."},
+      "ので、[少]{すこ}し[遅]{おく}れます。[遅]{おく}れることは、[大西]{おおにし}[先生]{せんせい}にもう",
+      {t:"話しちゃいました", flag:true, why:"Casual ～ちゃう. In a polite email use the full form; here simply 話しました is best, since there is nothing to regret."},
+      "。ゼミは[私]{わたし}を[待]{ま}たなくても",
+      {t:"いいです", flag:false, why:"Fine: ～なくてもいいです, “you don’t have to wait for me”."},
       "。"
     ]},
     {id:"e3u6-l5-x8", type:"order", q:"Put the steps for building “must come” from [来]{く}る in order.", items:[
@@ -1013,7 +1013,7 @@ ICA.addUnit({
    {id:"e3u6-q03", lesson:"e3u6-l1", level:2, q:"Sōta has an egg allergy. How does he say “I can’t eat eggs”?", options:[
      {t:"[卵]{たまご}は[食]{た}べられません。", ok:true, why:"The potential negative of 食べる: he is not able to eat them."},
      {t:"[卵]{たまご}は食べません。", why:"This means “I don’t eat eggs”, a habit or choice, not an inability."},
-     {t:"[卵]{たまご}は食べてはいけません。", why:"This is a rule: “You must not eat eggs.” It is not about her own ability."},
+     {t:"[卵]{たまご}は食べてはいけません。", why:"This is a rule: “You must not eat eggs.” It is not about his own ability."},
      {t:"[卵]{たまご}は食べたくないです。", why:"This means “I don’t want to eat eggs”: a wish, not an inability."}
    ]},
    {id:"e3u6-q04", lesson:"e3u6-l1", level:2, q:"Which of these is a standard potential form, **not** a ら[抜]{ぬ}き form?", options:[
@@ -1077,11 +1077,11 @@ ICA.addUnit({
      {t:"よし、[勉強]{べんきょう}された。", why:"This is a passive past form (“was studied”), not a decision."},
      {t:"よし、[勉強]{べんきょう}すろう。", why:"The volitional of する is しよう, not すろう."}
    ]},
-   {id:"e3u6-q14", lesson:"e3u6-l2", level:2, q:"Which sentence correctly says that your friend Kaito is thinking of changing jobs?", options:[
-     {t:"かいとさんは[仕事]{しごと}を[変]{か}えようと[思]{おも}っています。", ok:true, why:"For someone else’s intention, use the volitional + と[思]{おも}っています."},
-     {t:"かいとさんは[仕事]{しごと}を[変]{か}えようと[思]{おも}います。", why:"～と[思]{おも}います states your own thoughts. For another person, use ～と[思]{おも}っています."},
-     {t:"かいとさんは[仕事]{しごと}を[変]{か}えろうと[思]{おも}っています。", why:"[変]{か}える (change) is ichidan, so the volitional is [変]{か}えよう."},
-     {t:"かいとさんは[仕事]{しごと}を[変]{か}えようつもりです。", why:"つもり follows the dictionary form: [変]{か}えるつもりです."}
+   {id:"e3u6-q14", lesson:"e3u6-l2", level:2, q:"Which sentence correctly says that your friend Kaito is thinking of changing his part-time job?", options:[
+     {t:"かいとさんはバイトを[変]{か}えようと[思]{おも}っています。", ok:true, why:"For someone else’s intention, use the volitional + と[思]{おも}っています."},
+     {t:"かいとさんはバイトを[変]{か}えようと[思]{おも}います。", why:"～と[思]{おも}います states your own thoughts. For another person, use ～と[思]{おも}っています."},
+     {t:"かいとさんはバイトを[変]{か}えろうと[思]{おも}っています。", why:"[変]{か}える (change) is ichidan, so the volitional is [変]{か}えよう."},
+     {t:"かいとさんはバイトを[変]{か}えようつもりです。", why:"つもり follows the dictionary form: [変]{か}えるつもりです."}
    ]},
    {id:"e3u6-q15", lesson:"e3u6-l2", level:2, q:"How do you say “I intend not to eat sweets this month”?", options:[
      {t:"[今月]{こんげつ}は[甘]{あま}いものを[食]{た}べないつもりです。", ok:true, why:"ない-form + つもりです: “intend not to”."},

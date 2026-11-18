@@ -543,7 +543,7 @@ ICA.addUnit({
     ]},
     {id:"e3u8-l4-x7", type:"spot", q:"Cheska typed this message, and her phone chose two wrong kanji. Tap them.", ask:"wrong kanji", parts:[
       {t:"[来]{らい}[週]{しゅう}の[月]{げつ}[曜]{よう}日は、", flag:false, why:"Correct: next Monday."},
-      {t:"[山]{やま}[田]{だ}さん", flag:false, why:"A name: correct."},
+      {t:"[平]{ひら}[川]{かわ}さん", flag:false, why:"A name (Aoi's family name): correct."},
       {t:"[意]{い}外", flag:true, why:"Wrong kanji. She means “everyone except Aoi”, which is [以]{い}外. [意]{い}外 means “unexpected”."},
       {t:"の人は[休]{やす}みです。", flag:false, why:"Correct: (everyone) else is off."},
       {t:"[駅]{えき}[前]{まえ}の", flag:false, why:"Correct: in front of the station."},
@@ -619,14 +619,14 @@ ICA.addUnit({
     ]},
     {h:"An email and a reply", body:[
       "Aoi writes to her seminar professor, Professor Ōnishi. The shape is the one from Unit 4: subject, name, who I am, message, closing.",
-      {ex:"[件]{けん}[名]{めい}：[来]{らい}[週]{しゅう}のゼミについて\n\n[大]{おお}[西]{にし}[先]{せん}生\n\nこんにちは。[火]{か}[曜]{よう}日のゼミの[平]{ひら}[川]{かわ}です。\n来[週]{しゅう}の火[曜]{よう}日は、インターンの[仕]{し}[事]{ごと}で[出]{しゅっ}[張]{ちょう}があるので、ゼミを休みます。すみません。\nレポートは月[曜]{よう}日までにメールで[送]{おく}ってもいいですか。\n\nよろしくお[願]{ねが}いします。\n[平]{ひら}[川]{かわ}あおい", label:"Aoi’s email"},
-      {ex:"[件]{けん}名：Re: 来[週]{しゅう}のゼミについて\n\n[平]{ひら}[川]{かわ}さん\n\nメールをありがとうございます。わかりました。レポートは月[曜]{よう}日までに[送]{おく}ってください。\n[次]{つぎ}のゼミでは[第]{だい}5[章]{しょう}を[読]{よ}みますから、[読]{よ}んでおいてください。\nお[仕]{し}[事]{ごと}、がんばってください。\n\n[大]{おお}[西]{にし}", label:"The professor’s reply"},
-      {table:[["Part","In the emails","What it does"],["Reason","出[張]{ちょう}があるので","〜ので gives a polite reason before the main point"],["Asking permission","[送]{おく}ってもいいですか","〜てもいいですか: may I…?"],["The answer","[送]{おく}ってください","The teacher says yes with a request"],["Getting ready","読んでおいてください","〜ておく: do something in advance ([[te-oku]])"],["Kind words","お[仕]{し}[事]{ごと}、がんばってください","A friendly closing: good luck with your work"]]},
-      "Questions to try: Why will Aoi miss the seminar? (She has a business trip, 出[張]{ちょう}, for her internship.) What does she ask? (Whether she may send her report by email by Monday.) What should she do before the next seminar? (Read Chapter 5, [第]{だい}5[章]{しょう}.)"
+      {ex:"[件]{けん}[名]{めい}：[来]{らい}[週]{しゅう}のゼミについて\n\n[大]{おお}[西]{にし}[先]{せん}生\n\nお[世]{せ}[話]{わ}になっております。[大]{おお}[西]{にし}ゼミの[平]{ひら}[川]{かわ}です。\n来[週]{しゅう}の火[曜]{よう}日は、[東]{とう}[京]{きょう}でインターンの[面]{めん}[接]{せつ}があるので、ゼミを休みます。[申]{もう}し[訳]{わけ}ありません。\nレポートは月[曜]{よう}日までにメールで[送]{おく}ってもいいですか。\n\nよろしくお[願]{ねが}いします。\n[平]{ひら}[川]{かわ}あおい", label:"Aoi’s email"},
+      {ex:"[件]{けん}名：Re: 来[週]{しゅう}のゼミについて\n\n[平]{ひら}[川]{かわ}さん\n\nメールをありがとうございます。わかりました。レポートは月[曜]{よう}日までに[送]{おく}ってください。\n[次]{つぎ}のゼミでは[第]{だい}5[章]{しょう}を[読]{よ}みますから、[読]{よ}んでおいてください。\n[面]{めん}[接]{せつ}、がんばってください。\n\n[大]{おお}[西]{にし}", label:"The professor’s reply"},
+      {table:[["Part","In the emails","What it does"],["Reason","[面]{めん}[接]{せつ}があるので","〜ので gives a polite reason before the main point"],["Asking permission","[送]{おく}ってもいいですか","〜てもいいですか: may I…?"],["The answer","[送]{おく}ってください","The teacher says yes with a request"],["Getting ready","読んでおいてください","〜ておく: do something in advance ([[te-oku]])"],["Kind words","[面]{めん}[接]{せつ}、がんばってください","A friendly closing: good luck with the interview"]]},
+      "Questions to try: Why will Aoi miss the seminar? (She has an internship interview, [面]{めん}[接]{せつ}, in Tokyo.) What does she ask? (Whether she may send her report by email by Monday.) What should she do before the next seminar? (Read Chapter 5, [第]{だい}5[章]{しょう}.)"
     ]},
     {h:"A short story", body:[
       "Stories at N4 are often written in the plain form ([[plain-form]], Unit 5), with past tense for the events. Read it once for the gist: who, where, what happened. Then read again for the details.",
-      {ex:"イエンは[四]{し}[月]{がつ}、[新]{あたら}しい[町]{まち}に[引]{ひ}っ[越]{こ}した。[大]{だい}[学]{がく}まで電車で[三]{さん}[十]{じゅっ}[分]{ぷん}かかる。\nある日[曜]{よう}日の[朝]{あさ}、イエンは[町]{まち}のことを[知]{し}りたいと[思]{おも}って、[地]{ち}[図]{ず}を[持]{も}たないで[散]{さん}[歩]{ぽ}に出かけた。[古]{ふる}い[店]{みせ}や小さい[神]{じん}[社]{じゃ}があって、とても[楽]{たの}しかった。でも、一時間ぐらい[歩]{ある}いて、[帰]{かえ}り[道]{みち}が分からなくなってしまった。\nイエンが[困]{こま}っていると、[犬]{いぬ}を[連]{つ}れた[男]{おとこ}の人が「どうしましたか」と[声]{こえ}をかけてくれた。男の人は[駅]{えき}までいっしょに[歩]{ある}いて、[近]{ちか}くのおいしいパン[屋]{や}も[教]{おし}えてくれた。\n[次]{つぎ}の[週]{しゅう}[末]{まつ}、イエンはそのパン[屋]{や}に[行]{い}った。[店]{みせ}に入ると、あの男の人がいた。パン[屋]{や}の[主]{しゅ}人だったのだ。", label:"The new town"},
+      {ex:"イエンは[四]{し}[月]{がつ}、[新]{あたら}しい[町]{まち}に[引]{ひ}っ[越]{こ}した。[大]{だい}[学]{がく}まで[自]{じ}[転]{てん}[車]{しゃ}で[二]{に}[十]{じゅう}[五]{ご}[分]{ふん}かかる。\nある日[曜]{よう}日の[朝]{あさ}、イエンは[町]{まち}のことを[知]{し}りたいと[思]{おも}って、[地]{ち}[図]{ず}を[持]{も}たないで[散]{さん}[歩]{ぽ}に出かけた。[古]{ふる}い[店]{みせ}や小さい[神]{じん}[社]{じゃ}があって、とても[楽]{たの}しかった。でも、一時間ぐらい[歩]{ある}いて、[帰]{かえ}り[道]{みち}が分からなくなってしまった。\nイエンが[困]{こま}っていると、[犬]{いぬ}を[連]{つ}れた[男]{おとこ}の人が「どうしましたか」と[声]{こえ}をかけてくれた。男の人は[駅]{えき}までいっしょに[歩]{ある}いて、[近]{ちか}くのおいしいパン[屋]{や}も[教]{おし}えてくれた。\n[次]{つぎ}の[週]{しゅう}[末]{まつ}、イエンはそのパン[屋]{や}に[行]{い}った。[店]{みせ}に入ると、あの男の人がいた。パン[屋]{や}の[主]{しゅ}人だったのだ。", label:"The new town"},
       {list:["**Gist:** Yến moved to a new town, got lost on a walk, and a man with a dog helped her.","**Why did she go for a walk without a map?** She wanted to get to know the town: [町]{まち}のことを[知]{し}りたいと[思]{おも}って.","**What went wrong?** After about an hour she couldn’t find the way back: 〜てしまった shows it was a problem ([[te-shimau]]).","**The surprise at the end:** the man was the owner of the bakery. 〜のだ explains what she suddenly understood ({{explaining-n-desu}})."]},
       {tip:"でも in the second paragraph is the turning point of the story. In stories and in JLPT passages, the sentence after でも or しかし is often the one the question is about."}
     ]},
@@ -673,7 +673,7 @@ ICA.addUnit({
       {t:"No: children can only swim on the first Sunday of the month", why:"The first Sunday morning is when the pool is closed to the public for a class."}
     ]},
     {id:"e3u8-l5-x4", type:"mcq", q:"Why does Aoi write to her professor?", options:[
-      {t:"To say she will miss next Tuesday’s seminar for a business trip, and to ask if she may email her report", ok:true, why:"Right. 〜ので gives the reason (出[張]{ちょう}), and 〜てもいいですか asks permission."},
+      {t:"To say she will miss next Tuesday’s seminar for an internship interview, and to ask if she may email her report", ok:true, why:"Right. 〜ので gives the reason ([面]{めん}[接]{せつ}), and 〜てもいいですか asks permission."},
       {t:"To ask the professor to move the seminar to Monday", why:"月[曜]{よう}日 is the report deadline she suggests, not a new seminar day."},
       {t:"To say she can’t write the report", why:"She plans to send the report by email; she isn’t refusing it."},
       {t:"To ask which chapter to read", why:"The professor tells her to read Chapter 5 in the reply, but Aoi didn’t ask about it."}
@@ -931,7 +931,7 @@ ICA.addUnit({
      {t:"[兄]{あに}", ok:true, why:"Right. About your own family to other people, you use the plain word: 兄."},
      {t:"お[姉]{ねえ}さん", why:"お[姉]{ねえ}さん is for someone else’s older sister (and family members also use it to call her). In a self-introduction, Megumi says 兄."},
      {t:"[弟]{おとうと}", why:"弟 is a younger brother."},
-     {t:"[兄]{あに}", why:"兄 is an older brother."}]},
+     {t:"お[兄]{にい}さん", why:"お[兄]{にい}さん is for someone else’s older brother (and family members also use it to call him). About her own brother, Megumi says 兄."}]},
    {id:"e3u8-q06", lesson:"e3u8-l1", level:1, q:"How is 医者 (doctor) read?", options:[
      {t:"いしゃ", ok:true, why:"Right. 医 (イ, medicine) + 者 (シャ, person)."},
      {t:"いじゃ", why:"者 is シャ here, without voicing."},
