@@ -15,9 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/style.css?v=55">
+<link rel="stylesheet" href="shared/style.css?v=56">
 <script src="shared/catalog.js"></script>
-<script src="shared/engine.js?v=55"></script>
+<script src="shared/engine.js?v=56"></script>
 <style>
 /* The hub: a top-down study desk. Every object is a link to an app. */
 .hubhead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding-top:10px}
@@ -321,6 +321,15 @@ function setup(){
   render();
 }
 function welcome(){ setup(); }
+/* First launch and "Run setup again": Piyo's way to school (shared/intro.js) plays first, then the welcome. */
+function setupWithIntro(){
+  var go = function(){ try { ICA.intro(setup); } catch(e){ setup(); } };
+  if (ICA.intro) return go();
+  var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "shared/intro.css?v=1"; document.head.appendChild(css);
+  var font = document.createElement("link"); font.rel = "stylesheet"; font.href = "https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"; document.head.appendChild(font);
+  var n = 0, fail = false, ready = function(){ if (++n === 2 && !fail) go(); };
+  ["shared/arcadefx.js?v=1", "shared/intro.js?v=1"].forEach(function(src){ var s = document.createElement("script"); s.src = src; s.onload = ready; s.onerror = function(){ if (!fail){ fail = true; setup(); } }; document.head.appendChild(s); });
+}
 function trackPicker(){
   var st = ICA.load();
   return '<div class="trackpick">'+trackIds().map(function(id){ var t = ICA.tracks[id], ready = hasUnits(id); return '<label><input type="checkbox" data-track="'+id+'"'+(st.tracks.indexOf(id) > -1 ? " checked" : "")+(ready ? "" : " disabled")+'><span><b>'+t.icon+' '+esc(t.name)+'</b>'+(t.elective ? ' <span class="chip">Elective</span>' : '')+'<br><span class="small muted">'+esc(ready ? t.blurb : t.soon)+'</span></span></label>'; }).join("")+'</div>';
@@ -357,7 +366,7 @@ function progressSheet(){
   });
 }
 
-function settingsSheet(){ ICA.settingsSheet({progress:progressSheet, after:refreshDesk, setup:function(){ ICA.closeSheet(); setup(); }}); }
+function settingsSheet(){ ICA.settingsSheet({progress:progressSheet, after:refreshDesk, setup:function(){ ICA.closeSheet(); setupWithIntro(); }}); }
 
 document.getElementById("notebtn").addEventListener("click", progressSheet);
 document.getElementById("settingsbtn").addEventListener("click", settingsSheet);
@@ -365,7 +374,7 @@ document.getElementById("settingsbtn").addEventListener("click", settingsSheet);
 ICA.loadAll("./", function(){
   refreshDesk();
   var st = ICA.load();
-  if (location.hash === "#setup" || (!st.welcomed && !st.last && !Object.keys(st.lessons).length)){ if (location.hash) history.replaceState(null, "", location.pathname); setup(); }
+  if (location.hash === "#setup" || (!st.welcomed && !st.last && !Object.keys(st.lessons).length)){ if (location.hash) history.replaceState(null, "", location.pathname); setupWithIntro(); }
 });
 })();
 </script>

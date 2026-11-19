@@ -1,0 +1,38 @@
+/* "Piyo's way to school" first-launch intro (shared/intro.js). A warm cocoa handheld-console look; text in DotGothic16. */
+.pintro{position:fixed;inset:0;z-index:200;background:#2b1a12;color:#fff6e6;font-family:"DotGothic16",ui-monospace,monospace;display:flex;flex-direction:column;align-items:center;gap:10px;padding:max(12px,env(safe-area-inset-top)) 14px max(14px,env(safe-area-inset-bottom));overflow:auto;transition:opacity .45s}
+.pintro.out{opacity:0}
+.pintro button{font-family:inherit;cursor:pointer}
+.pintro>.pi-top{margin-top:clamp(0px,5vh,48px)}
+.pi-top{width:100%;max-width:560px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pi-title{letter-spacing:.14em;font-size:13px;color:#ffd65c}
+.pi-skip{background:none;border:2px solid #8c5c3e;color:#f3e6d2;border-radius:6px;padding:6px 14px;font-size:15px}
+.pi-stage{position:relative;line-height:0}
+.pi-stage canvas{image-rendering:pixelated;image-rendering:crisp-edges;display:block;border:3px solid #fff6e6;border-radius:4px;box-shadow:0 0 0 3px #4a2d22,0 8px 0 3px #1c110b}
+.pi-bubble{position:absolute;line-height:1;transform:translate(-50%,-100%);background:#fff6e6;color:#3b2419;border:2px solid #3b2419;border-radius:6px;padding:3px 7px;font-size:15px;white-space:nowrap;pointer-events:none}
+.pi-box{width:100%;max-width:560px;box-sizing:border-box;background:#fff6e6;color:#3b2419;border:3px solid #3b2419;box-shadow:inset 0 0 0 3px #f3e6d2;border-radius:6px;padding:10px 14px 18px;display:grid;grid-template-columns:auto 1fr;align-items:start;gap:4px 12px;min-height:92px;position:relative;font-size:16px;line-height:1.55;cursor:pointer}
+.pi-box[hidden]{display:none}
+.pi-who{grid-column:1/-1;font-size:12px;letter-spacing:.14em;color:#d9644a;min-height:0}
+.pi-who:empty{display:none}
+.pi-face{width:64px;height:64px;image-rendering:pixelated}
+.pi-face[hidden]{display:none}
+.pi-face[hidden]+.pi-text{grid-column:1/-1}
+.pi-text{margin:0}
+.pi-next{position:absolute;right:10px;bottom:2px;background:none;border:0;color:#d9644a;font-size:14px;padding:4px;animation:pi-blink 1s steps(2) infinite}
+.pi-next[hidden]{display:none}
+.pi-choice{margin-top:10px;background:#ffd65c;border:2px solid #3b2419;border-radius:6px;padding:7px 16px;font-size:16px;color:#3b2419;box-shadow:0 3px 0 #3b2419}
+.pi-code{width:100%;max-width:560px;display:grid;gap:10px}
+.pi-code[hidden]{display:none}
+.pi-prog{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;align-items:center;min-height:44px}
+.pi-slot{width:38px;height:38px;box-sizing:border-box;border:2px dashed #8c5c3e;border-radius:6px;display:grid;place-items:center;font-size:22px;line-height:1;color:#3b2419;transition:transform .12s}
+.pi-slot.on{border-style:solid;border-color:#3b2419;background:#fff6e6}
+.pi-slot.now{background:#ffd65c;transform:translateY(-4px)}
+.pi-x{color:#ffd65c;font-size:22px;margin-left:4px}
+.pi-pad{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.pi-pad button{min-height:50px;font-size:24px;line-height:1;background:#f3e6d2;color:#3b2419;border:2px solid #3b2419;border-radius:8px;box-shadow:0 4px 0 #3b2419}
+.pi-pad button:active{transform:translateY(3px);box-shadow:0 1px 0 #3b2419}
+.pi-pad .pi-run{grid-column:span 2;background:#ffd65c;font-size:20px}
+.pi-pad .pi-rep{font-size:19px}
+.pi-pad .pi-rep[hidden]+button{grid-column:span 2}
+.pi-code.busy .pi-pad button{opacity:.45;pointer-events:none}
+@keyframes pi-blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){ .pi-next{animation:none} .pintro{transition:none} }
