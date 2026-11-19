@@ -15,9 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/style.css?v=53">
+<link rel="stylesheet" href="shared/style.css?v=54">
 <script src="shared/catalog.js"></script>
-<script src="shared/engine.js?v=53"></script>
+<script src="shared/engine.js?v=54"></script>
 <style>
 /* The hub: a top-down study desk. Every object is a link to an app. */
 .hubhead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding-top:10px}
@@ -80,6 +80,12 @@
 .setup .linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--lupine);font-weight:700;text-decoration:underline;cursor:pointer}
 .setup .ghost{color:var(--soft);background:none;border:0;font:inherit;font-size:.95em;padding:8px 4px;cursor:pointer}
 .setup .shi{font-family:var(--display);font-weight:800;font-size:clamp(24px,6vw,32px);line-height:1.1;margin:6px 0 0}
+.hubbrand{display:flex;align-items:center;gap:10px;min-width:0;flex:1 1 0}.hubbrand img{width:clamp(52px,15vw,76px);height:auto;flex:none}.hubbrand h1{font-size:clamp(21px,6.2vw,34px)}
+.hubhead{flex-wrap:nowrap;align-items:center}
+.setup .slogo{display:block;width:min(200px,52vw);height:auto;margin:6px 0 0}
+/* dark mode: give the cocoa lettering a cream sticker edge so it reads on the dark page */
+[data-theme="dark"] .setup .slogo,[data-theme="dark"] .hubbrand img{filter:drop-shadow(2px 0 0 #f6ecdc) drop-shadow(-2px 0 0 #f6ecdc) drop-shadow(0 2px 0 #f6ecdc) drop-shadow(0 -2px 0 #f6ecdc)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .setup .slogo,:root:not([data-theme="light"]) .hubbrand img{filter:drop-shadow(2px 0 0 #f6ecdc) drop-shadow(-2px 0 0 #f6ecdc) drop-shadow(0 2px 0 #f6ecdc) drop-shadow(0 -2px 0 #f6ecdc)}}
 .setup .shi small{display:block;font-family:var(--mono);font-size:11px;font-weight:400;letter-spacing:.13em;color:var(--rose);margin-bottom:4px}
 .smeet{display:grid;grid-template-columns:40% minmax(0,1fr);gap:12px;align-items:start}
 .smeet img{width:100%;height:auto;max-height:68vh;object-fit:contain;object-position:top}
@@ -137,7 +143,7 @@
 <body>
 <main class="wrap" id="app">
   <div class="hubhead">
-    <div><div class="eyebrow">Your study desk</div><h1>IT CHICK Academy</h1></div>
+    <div class="hubbrand"><img src="shared/brand/emblem.webp" alt="" width="64" height="42"><div><div class="eyebrow">Your study desk</div><h1>IT CHICK Academy</h1></div></div>
     <button class="iconbtn" id="settingsbtn" aria-label="Settings">⚙︎</button>
   </div>
   <section class="today" id="today" aria-live="polite"></section>
@@ -229,7 +235,7 @@ function setup(){
   function render(){
     var body = "", back = '<button class="ghost" data-s="back">‹ Back</button>', next = '<button class="btn primary" data-s="next">Continue →</button>';
     if (step === 1){
-      body = '<div class="shi"><small>WELCOME TO</small>IT CHICK Academy</div><div class="smeet"><img src="shared/mascot/full.webp" alt="Mugi, in a cream shirt, knit vest, wide brown trousers and loafers, carrying an IT CHICK tote">'+
+      body = '<div class="shi"><small>WELCOME TO</small><img class="slogo" src="shared/brand/logo.webp" alt="IT CHICK Academy" width="200" height="155"></div><div class="smeet"><img src="shared/mascot/full.webp" alt="Mugi, in a cream shirt, knit vest, wide brown trousers and loafers, carrying an IT CHICK tote">'+
         '<div class="sbub"><p>Hello! You can call me <b>Mugi</b>.</p>'+
         '<p>I’ll be your tutor here. IT is my specialty, but I’m curious about almost everything: languages and accents, how societies work, how good research gets done. And stationery. And loafers.</p>'+
         '<p>Let’s make this place yours. It only takes a minute.</p></div></div>'+
