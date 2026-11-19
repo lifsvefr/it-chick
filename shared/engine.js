@@ -343,6 +343,99 @@ function effVol(sh){
     el.textContent = all >= 100 || !v ? "" : "→ " + (n ? n + "%" : "off");
     o.setAttribute("title", el.textContent ? "Plays at " + (n ? n + "%" : "0%") + ": All voices (" + all + "%) × this (" + v + "%)" : ""); });
 }
+/* ---------- Use offline: save the whole app in this browser (Settings) ----------
+   tools/build_offline.py writes offline.json (every file, grouped core / audio / labs, with a short hash). Saving puts the
+   files in the same cache the service worker (sw.js) reads when the signal is weak or gone. Only changed files are fetched
+   again; the hashes already saved live in the cache itself (__offline_meta.json), the choices in localStorage. */
+ICA.offline = (function(){
+  var CACHE = "itchick-v19", PREF = "itchick-offline", META = "__offline_meta.json", busy = null, listeners = [];
+  var ok = typeof caches !== "undefined" && "serviceWorker" in navigator;
+  function abs(p){ return new URL(ICA.base + p, location.href).href.split("?")[0]; }
+  function pref(v){ try { if (v) localStorage.setItem(PREF, JSON.stringify(v)); return JSON.parse(localStorage.getItem(PREF) || "null") || {}; } catch(e){ return v || {}; } }
+  function meta(c, v){ return v ? c.put(abs(META), new Response(JSON.stringify(v), {headers:{"Content-Type":"application/json"}})) : c.match(abs(META)).then(function(r){ return r ? r.json() : {}; }).catch(function(){ return {}; }); }
+  function list(){ return fetch(ICA.base + "offline.json", {cache:"no-store"}).then(function(r){ if (!r.ok) throw new Error("list"); return r.json(); }); }
+  function emit(s){ busy = s; listeners.forEach(function(f){ try { f(s); } catch(e){} }); }
+  function mb(n){ return n >= 1e9 ? (n/1e9).toFixed(1) + " GB" : Math.max(1, Math.round(n/1e6)) + " MB"; }
+  function want(p){ return ["core"].concat(p.audio ? ["audio"] : [], p.labs ? ["labs"] : []); }
+  // Download every file in the chosen groups whose hash changed; drop files from groups no longer chosen.
+  function sync(quiet){
+    if (!ok) return Promise.reject(new Error("unsupported"));
+    if (busy && busy.running) return Promise.resolve();
+    var p = pref(), done = 0, bytes = 0, fails = 0;
+    emit({running:true, quiet:quiet, done:0, total:0});
+    if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function(){});
+    return Promise.all([list(), caches.open(CACHE)]).then(function(a){
+      var L = a[0], c = a[1];
+      return meta(c).then(function(have){
+        have = have || {}; var keep = {}, todo = [], total = 0, drop = [];
+        want(p).forEach(function(g){ (L.groups[g] || []).forEach(function(f){ keep[f[0]] = 1; if (have[f[0]] !== f[1]){ todo.push(f); total += f[2]; } }); });
+        Object.keys(have).forEach(function(k){ if (!keep[k]) drop.push(k); });
+        emit({running:true, quiet:quiet, done:0, total:total, files:todo.length});
+        var i = 0, since = 0;
+        function next(){
+          if (i >= todo.length) return Promise.resolve();
+          var f = todo[i++];
+          return fetch(ICA.base + f[0], {cache:"no-store"}).then(function(r){
+            if (!r.ok) throw new Error(r.status);
+            return c.put(abs(f[0]), r).then(function(){ have[f[0]] = f[1]; });
+          }).catch(function(){ fails++; }).then(function(){
+            bytes += f[2]; done++; emit({running:true, quiet:quiet, done:bytes, total:total, files:todo.length, n:done});
+            if (++since >= 250){ since = 0; return meta(c, have).then(next); }
+            return next();
+          });
+        }
+        var lanes = []; for (var k = 0; k < (quiet ? 3 : 6); k++) lanes.push(next());
+        return Promise.all(lanes).then(function(){
+          return Promise.all(drop.map(function(k){ delete have[k]; return c.delete(abs(k)); }));
+        }).then(function(){ return meta(c, have); }).then(function(){
+          var q = pref(); q.on = true; q.ver = L.version; q.date = Date.now(); q.size = want(q).reduce(function(s, g){ return s + (L.groups[g] || []).reduce(function(t, f){ return t + f[2]; }, 0); }, 0); q.fails = fails; pref(q);
+          emit({running:false, fails:fails});
+        });
+      });
+    }).catch(function(e){ emit({running:false, error:true}); throw e; });
+  }
+  function remove(){
+    return caches.open(CACHE).then(function(c){ return meta(c).then(function(have){
+      return Promise.all(Object.keys(have || {}).map(function(k){ return c.delete(abs(k)); })).then(function(){ return c.delete(abs(META)); });
+    }); }).then(function(){ pref({}); try { localStorage.removeItem(PREF); } catch(e){} emit({running:false}); });
+  }
+  // When the app opens with a signal, quietly fetch whatever changed since the last save.
+  if (ok) window.addEventListener("load", function(){ setTimeout(function(){
+    var p = pref(); if (!p.on || navigator.onLine === false) return;
+    list().then(function(L){ if (L.version !== p.ver) sync(true).catch(function(){}); }).catch(function(){});
+  }, 8000); });
+  function draw(box){
+    if (!box) return;
+    if (!ok){ box.innerHTML = '<p class="small muted">This browser can’t save the app for offline use.</p>'; return; }
+    var p = pref();
+    function render(s){
+      s = s || busy || {};
+      var on = !!p.on, run = s.running && !s.quiet, pct = s.total ? Math.round(100 * s.done / s.total) : 0;
+      var status = run ? (s.total ? 'Saving… ' + pct + '% (' + mb(s.done) + ' of ' + mb(s.total) + ')' : 'Checking what to save…')
+        : s.error ? 'Couldn’t reach the server. Try again when you have a signal.'
+        : on ? 'Saved on this device' + (p.size ? ' · ' + mb(p.size) : '') + (p.date ? ' · last updated ' + new Date(p.date).toLocaleDateString(undefined, {day:"numeric", month:"short"}) : '') + (p.fails ? ' · ' + p.fails + ' files didn’t download, so tap Update' : '') + '.'
+        : 'Not saved yet. Pages you’ve opened before may still work without a signal.';
+      box.innerHTML = '<p class="small muted">Save IT CHICK Academy on this device so lessons, the story and the labs work with no signal. Your progress is always kept on the device; Drive sync catches up when you’re back online.</p>' +
+        '<div class="stack offpick">' +
+        '<label class="chk"><input type="checkbox" checked disabled> Lessons, story, pictures <span class="small muted">· about 31 MB</span></label>' +
+        '<label class="chk"><input type="checkbox" id="off-audio"' + (p.audio ? ' checked' : '') + (run ? ' disabled' : '') + '> Voice audio <span class="small muted">· about 116 MB</span></label>' +
+        '<label class="chk"><input type="checkbox" id="off-labs"' + (p.labs ? ' checked' : '') + (run ? ' disabled' : '') + '> Coding labs: Python, SQL and R <span class="small muted">· about 62 MB</span></label></div>' +
+        (run ? '<progress max="100" value="' + pct + '" aria-label="Saving for offline use"></progress>' : '') +
+        '<p class="small" role="status">' + status + '</p>' +
+        '<div class="row"><button class="btn small" id="off-go"' + (run ? ' disabled' : '') + '>' + (on ? 'Update offline copy' : 'Save for offline use') + '</button>' + (on && !run ? '<button class="btn small ghost" id="off-rm">Remove offline copy</button>' : '') + '</div>' +
+        '<p class="small muted">On iPhone and iPad, add the app to your Home Screen (Share → Add to Home Screen) and open it from there: Safari can clear saved website data after about a week without a visit.</p>';
+      var go = box.querySelector("#off-go"), rm = box.querySelector("#off-rm"), A = box.querySelector("#off-audio"), B = box.querySelector("#off-labs");
+      if (A) A.onchange = function(){ p.audio = A.checked; pref(p); };
+      if (B) B.onchange = function(){ p.labs = B.checked; pref(p); };
+      if (go) go.onclick = function(){ p.audio = A.checked; p.labs = B.checked; pref(p); sync(false).then(function(){ p = pref(); ICA.toast(p.fails ? "Saved, but some files didn’t download. Tap Update to try again." : "Saved for offline use."); }).catch(function(){}); };
+      if (rm) rm.onclick = function(){ remove().then(function(){ p = {}; render({}); ICA.toast("Offline copy removed."); }); };
+    }
+    listeners = [function(s){ if (document.body.contains(box)) { p = pref(); render(s); } }];
+    render();
+  }
+  return {sync:sync, remove:remove, draw:draw, pref:pref};
+})();
+
 ICA.settingsSheet = function(o){
   o = o || {};
   var st = ICA.load(), s = st.settings;
@@ -355,7 +448,7 @@ ICA.settingsSheet = function(o){
     '<h3>Sound</h3><div class="stack setlist">'+vol("voice","All voices")+vol("mugi","Mugi","sub")+vol("cast","Everyone else","sub","Story and lessons")+vol("music","Arcade music")+vol("fx","Sound effects",null,"Arcade sounds")+
     seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+seg("mugiAuto","Mugi speaks by herself",[["off","Off"],["on","On"]],s.mugiAuto || "off")+'</div>'+
     '<h3>Kamome House</h3><div class="stack setlist">'+seg("storyChain","Keep playing the conversation",[["off","Off"],["on","On"]],s.storyChain || "off")+seg("furi","Furigana in the story",[["on","On"],["off","Off"]],s.furi || "on")+'</div>'+
-    '<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
+    '<h3>Use offline</h3><div id="offbox"></div>'+'<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
     '<h3>Backup</h3><p class="small muted">Without sync, progress is saved in this browser only. A backup lets you move it to another device or keep it safe.</p><div class="row"><button class="btn small" id="dl">Download backup</button><button class="btn small" id="cp">Copy backup</button></div>'+
     '<details'+(o.openRestore ? ' open' : '')+'><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
     '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, every lab’s progress (including Kanji Lab reviews), tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
@@ -382,6 +475,7 @@ ICA.settingsSheet = function(o){
       sh.querySelector("#erasecancel").onclick = function(){ box.innerHTML = ""; };
       sh.querySelector("#eraseyes").onclick = function(){ ICA.eraseAll(); ICA.applySettings(); ICA.closeSheet(); window.scrollTo(0, 0); if (o.after){ o.after(); ICA.toast("All progress erased. Fresh start!"); } else location.reload(); };
     };
+    ICA.offline.draw(sh.querySelector("#offbox"));
     var sbox = sh.querySelector("#syncbox");
     var drawSync = function(msg, bad){
       var on = ICA.syncOn();

@@ -600,3 +600,7 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .volrow input[type=range]:focus-visible{outline:none}.volrow input[type=range]:focus-visible::-webkit-slider-thumb{outline:3px solid var(--lupine);outline-offset:2px}
 .volrow output{display:grid;justify-items:end;line-height:1.15;font-size:.85em;color:var(--soft);font-variant-numeric:tabular-nums}
 .volrow .oe{font-size:.82em;color:var(--lupine);white-space:nowrap}.volrow .oe:empty{display:none}
+/* Settings · Use offline */
+.offpick .chk{display:flex;gap:10px;align-items:center;cursor:pointer}.offpick .chk input{width:20px;height:20px;accent-color:var(--lupine);flex:none}
+#offbox progress{width:100%;height:10px;accent-color:var(--lupine)}
+.offpick .chk .muted{white-space:nowrap}
