@@ -36,3 +36,11 @@
 .pi-code.busy .pi-pad button{opacity:.45;pointer-events:none}
 @keyframes pi-blink{50%{opacity:0}}
 @media (prefers-reduced-motion: reduce){ .pi-next{animation:none} .pintro{transition:none} }
+/* the code panel: the player's arrows as Python, each line lit as it runs */
+.pi-learn{margin-top:4px;background:#1f130d;border:2px solid #4a2d22;border-radius:8px;padding:10px 12px;display:grid;gap:6px}
+.pi-lt{font-size:11px;letter-spacing:.14em;color:#ffd65c}
+.pi-src{margin:0;font-family:"DotGothic16",ui-monospace,monospace;font-size:15px;line-height:1.5;color:#f3e6d2;white-space:pre;overflow-x:auto;min-height:1.5em}
+.pi-src span{display:inline-block;min-width:100%;padding:0 4px;margin:0 -4px;border-radius:3px}
+.pi-src span.cm{color:#8c7a6a}
+.pi-src span.now{background:#ffd65c;color:#3b2419}
+.pi-tip{margin:0;font-size:13px;line-height:1.5;color:#cbb8a2}
