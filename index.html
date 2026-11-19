@@ -15,9 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/style.css?v=54">
+<link rel="stylesheet" href="shared/style.css?v=55">
 <script src="shared/catalog.js"></script>
-<script src="shared/engine.js?v=54"></script>
+<script src="shared/engine.js?v=55"></script>
 <style>
 /* The hub: a top-down study desk. Every object is a link to an app. */
 .hubhead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding-top:10px}
@@ -83,6 +83,34 @@
 .hubbrand{display:flex;align-items:center;gap:10px;min-width:0;flex:1 1 0}.hubbrand img{width:clamp(52px,15vw,76px);height:auto;flex:none}.hubbrand h1{font-size:clamp(21px,6.2vw,34px)}
 .hubhead{flex-wrap:nowrap;align-items:center}
 .setup .slogo{display:block;width:min(200px,52vw);height:auto;margin:6px 0 0}
+.setup .shi:has(.logoanim){text-align:center}
+/* Welcome: the logo builds itself (chick pops up on its book, brackets snap in, dots burst, name drops), then Mugi walks in.
+   Pieces are cut from the owner's emblem (shared/brand/em-*.webp); positions are percentages of the whole emblem. */
+.logoanim{width:min(230px,58vw);margin:8px auto 0;display:grid;justify-items:center;gap:4px;cursor:pointer;outline:none}
+.la-em{position:relative;width:100%;aspect-ratio:640/421;container-type:inline-size}
+.la-em img{position:absolute;height:auto;display:block}
+.la-bl{left:0;top:20.9%;width:22.5%}.la-core{left:13.35%;top:0;width:73.3%;transform-origin:50% 92%}.la-br{left:77.5%;top:21.5%;width:22.5%}
+.la-wm{width:100%;height:auto;display:block}
+.la-dot{position:absolute;left:50%;top:50%;width:7px;height:7px;margin:-3.5px;border-radius:50%;background:var(--c);opacity:0}
+@media (prefers-reduced-motion: no-preference){
+  .la-core{animation:la-pop .62s cubic-bezier(.3,1.5,.5,1) .05s both, la-sway 6s ease-in-out 2.6s infinite}
+  .la-bl{animation:la-inl .5s cubic-bezier(.3,1.6,.5,1) .38s both}.la-br{animation:la-inr .5s cubic-bezier(.3,1.6,.5,1) .38s both}
+  .la-dot{animation:la-dot .7s cubic-bezier(.2,.9,.3,1) .62s forwards}
+  .la-wm{animation:la-drop .55s cubic-bezier(.3,1.5,.5,1) .78s both}
+  .logoanim.hop .la-core{animation:la-hop .55s ease-out both}
+  .smeet>img{animation:la-walk .7s ease-out 1.05s both}
+  .smeet .sbub{animation:la-bub .45s cubic-bezier(.3,1.5,.5,1) 1.45s both;transform-origin:0 40px}
+}
+@media (prefers-reduced-motion: reduce){ .la-dot{opacity:1;transform:translate(var(--x),var(--y))} }
+@keyframes la-pop{0%{opacity:0;transform:translateY(26%) scale(.25)}55%{opacity:1;transform:translateY(-4%) scale(1.06,.94)}75%{transform:translateY(0) scale(.96,1.05)}100%{transform:none}}
+@keyframes la-inl{0%{opacity:0;transform:translateX(-90%) rotate(-25deg)}100%{opacity:1;transform:none}}
+@keyframes la-inr{0%{opacity:0;transform:translateX(90%) rotate(25deg)}100%{opacity:1;transform:none}}
+@keyframes la-dot{0%{opacity:0;transform:scale(.2)}35%{opacity:1}100%{opacity:1;transform:translate(var(--x),var(--y))}}
+@keyframes la-drop{0%{opacity:0;transform:translateY(-22px) scale(.92)}100%{opacity:1;transform:none}}
+@keyframes la-sway{0%,86%,100%{transform:none}90%{transform:rotate(-3deg)}95%{transform:rotate(2.5deg)}}
+@keyframes la-hop{0%{transform:none}30%{transform:translateY(-14%) scale(.95,1.06)}62%{transform:translateY(0) scale(1.08,.92)}80%{transform:scale(.97,1.03)}100%{transform:none}}
+@keyframes la-walk{0%{opacity:0;transform:translateX(-36px) translateY(0)}25%{transform:translateX(-27px) translateY(-4px)}50%{opacity:1;transform:translateX(-18px) translateY(0)}75%{transform:translateX(-9px) translateY(-4px)}100%{opacity:1;transform:none}}
+@keyframes la-bub{0%{opacity:0;transform:scale(.6)}100%{opacity:1;transform:none}}
 /* dark mode: give the cocoa lettering a cream sticker edge so it reads on the dark page */
 [data-theme="dark"] .setup .slogo,[data-theme="dark"] .hubbrand img{filter:drop-shadow(2px 0 0 #f6ecdc) drop-shadow(-2px 0 0 #f6ecdc) drop-shadow(0 2px 0 #f6ecdc) drop-shadow(0 -2px 0 #f6ecdc)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .setup .slogo,:root:not([data-theme="light"]) .hubbrand img{filter:drop-shadow(2px 0 0 #f6ecdc) drop-shadow(-2px 0 0 #f6ecdc) drop-shadow(0 2px 0 #f6ecdc) drop-shadow(0 -2px 0 #f6ecdc)}}
@@ -235,9 +263,10 @@ function setup(){
   function render(){
     var body = "", back = '<button class="ghost" data-s="back">‹ Back</button>', next = '<button class="btn primary" data-s="next">Continue →</button>';
     if (step === 1){
-      body = '<div class="shi"><small>WELCOME TO</small><img class="slogo" src="shared/brand/logo.webp" alt="IT CHICK Academy" width="200" height="155"></div><div class="smeet"><img src="shared/mascot/full.webp" alt="Mugi, in a cream shirt, knit vest, wide brown trousers and loafers, carrying an IT CHICK tote">'+
+      body = '<div class="shi"><small>WELCOME TO</small><div class="logoanim" role="img" aria-label="IT CHICK Academy" tabindex="-1"><div class="la-em"><i class="la-dot" style="--x:-50cqw;--y:-6cqw;--c:#9cc0d8"></i><i class="la-dot" style="--x:-40cqw;--y:-30cqw;--c:#cca854"></i><i class="la-dot" style="--x:42cqw;--y:-31cqw;--c:#c0a8cc"></i><i class="la-dot" style="--x:52cqw;--y:-3cqw;--c:#e08a6c"></i><i class="la-dot" style="--x:-55cqw;--y:15cqw;--c:#7aaaa8"></i><i class="la-dot" style="--x:55cqw;--y:17cqw;--c:#f0b8a8"></i>'+
+          '<img class="la-bl" src="shared/brand/em-bl.webp" alt=""><img class="la-core" src="shared/brand/em-core.webp" alt=""><img class="la-br" src="shared/brand/em-br.webp" alt=""></div><img class="la-wm" src="shared/brand/wordmark.webp" alt=""></div></div><div class="smeet"><img src="shared/mascot/full.webp" alt="Mugi, in a cream shirt, knit vest, wide brown trousers and loafers, carrying an IT CHICK tote">'+
         '<div class="sbub"><p>Hello! You can call me <b>Mugi</b>.</p>'+
-        '<p>I’ll be your tutor here. IT is my specialty, but I’m curious about almost everything: languages and accents, how societies work, how good research gets done. And stationery. And loafers.</p>'+
+        '<p>I’ll be your tutor here. IT is my specialty, but I’m curious about almost everything: languages and accents, how societies work, how good research gets done. And stationery. And stories!</p>'+
         '<p>Let’s make this place yours. It only takes a minute.</p></div></div>'+
         '<p class="small muted" style="text-align:center;margin:0">Coming back on a new device? <button class="linkbtn" data-s="restore">Restore a backup</button></p>';
       back = '<button class="ghost" data-s="skip">Skip for now</button>'; next = '<button class="btn primary" data-s="next">Let’s set up →</button>';
@@ -269,6 +298,7 @@ function setup(){
     var f = ov.querySelector('[data-s="next"],[data-s="done"]'); if (f && step === 1) f.focus();
   }
   ov.addEventListener("click", function(e){
+    var la = e.target.closest(".logoanim"); if (la){ la.classList.remove("hop"); void la.offsetWidth; la.classList.add("hop"); return; }   // tap the chick: it hops
     var b = e.target.closest("button"); if (!b) return;
     if (b.dataset.t){ var i = picks.indexOf(b.dataset.t); if (i > -1) picks.splice(i, 1); else picks.push(b.dataset.t); render(); return; }
     if (b.dataset.f){ first = b.dataset.f; render(); return; }
