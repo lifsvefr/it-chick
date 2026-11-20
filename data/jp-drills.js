@@ -230,7 +230,7 @@ builder: [
   {id:"b5-042", lv:"N5", tiles:["しゅくだいを","してから","テレビを","[見]{み}ます"], orders:[[0,1,2,3]], en:"I'll watch TV after I do my homework.", why:"〜てから: the first action comes first. Swapping the objects would make nonsense."},
   {id:"b5-043", lv:"N5", tiles:["[外]{そと}は","さむいですから","コートを","きて","[行]{い}きましょう"], orders:[[0,1,2,3,4]], en:"It's cold outside, so let's wear coats.", why:"Reason first; コートをきて (wearing a coat) comes before the main verb."},
   {id:"b5-044", lv:"N5", tiles:["まりやさんの","お[母]{かあ}さんは","しおじまに","すんでいます"], orders:[[0,1,2,3]], en:"Mariya's mother lives on Shiojima.", why:"まりやさんの describes お[母]{かあ}さん; place に before すんでいます."},
-  {id:"b5-045", lv:"N5", tiles:["トビーさんは","いつも","[何時]{なんじ}ごろ","ねますか"], orders:[[0,1,2,3]], en:"About what time does Toby usually go to bed?", why:"Topic, then いつも, then the question word and the verb."},
+  {id:"b5-045", lv:"N5", tiles:["トビーさんは","たいてい","[何時]{なんじ}ごろ","ねますか"], orders:[[0,1,2,3]], en:"About what time does Toby usually go to bed?", why:"Topic, then たいてい (usually), then the question word and the verb. いつも would be “always”."},
   {id:"b5-046", lv:"N5", tiles:["このケーキ、","[一]{ひと}つ","[食]{た}べても","いいですか"], orders:[[0,1,2,3]], en:"May I have one of these cakes?", why:"The thing first, then the number, then 〜てもいいですか."},
   {id:"b5-047", lv:"N5", tiles:["[学校]{がっこう}は","[九時]{くじ}から","[三時]{さんじ}まで","です"], orders:[[0,1,2,3]], en:"School is from nine to three.", why:"から comes before まで, and です ends the sentence."},
   {id:"b5-048", lv:"N5", tiles:["[来月]{らいげつ}","[友]{とも}だちが","[国]{くに}から","[来]{き}ます"], orders:[[0,1,2,3],[1,0,2,3],[0,2,1,3],[1,2,0,3]], en:"Next month a friend is coming from my home country.", why:"The verb is last; the time, the person and 'from my country' can move around before it."},
