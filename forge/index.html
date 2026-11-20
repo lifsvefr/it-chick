@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=60">
+<link rel="stylesheet" href="../shared/style.css?v=61">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=60"></script>
+<script src="../shared/engine.js?v=61"></script>
 <style>
 .kinds{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
 .kind{display:grid;gap:4px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:12px;color:var(--ink)}
@@ -42,6 +42,7 @@
 .paper dt{font-weight:700}
 .paper dd{margin:0 0 6px}
 .paper .box{border:1.5px solid #1d1511;border-radius:6px;padding:8px 10px;margin:8px 0}
+.paper .box.mine{border-style:dashed;font-family:inherit;white-space:normal}
 .paper .seg{text-decoration:underline}
 .paper .seg sup{font-weight:700}
 .paper .check{font-size:16px}
@@ -77,7 +78,8 @@ var KINDS = [
   ["worksheet","Worksheet","A lesson’s practice exercises on paper, with the answer key at the end."],
   ["quiz","Quiz","A lesson’s check questions or the unit checkpoint, with answers on a separate page."],
   ["notes","Notes pages","A lesson’s Apply tasks with space to write."],
-  ["reading","Reading checklist","Every reading for a unit, with boxes to tick."]
+  ["reading","Reading checklist","Every reading for a unit, with boxes to tick."],
+  ["portfolio","My portfolio","Everything you wrote in a unit’s Apply tasks, your self-checks and scores, ready to keep or show."]
 ];
 var L = "ABCDEFGHIJ";
 
@@ -154,7 +156,7 @@ function docWorksheet(l){
   return h+'<h2>Exercises</h2>'+qs.join("")+'<div class="answers"><h2>Answer key</h2>'+as.join("")+'</div>';
 }
 function docQuiz(l, u){
-  var qs = l ? ICA.lessonBank(l.id) : (u.checkpoint||[]).map(function(id){ return ICA.bankById[id]; }).filter(Boolean);
+  var qs = l ? ICA.lessonBank(l.id) : ICA.checkpointQs(u.id);
   var h = head(l ? l.title : "Checkpoint: "+u.title, (l ? "Unit "+ICA.unitById[l.unit].n : "Unit "+u.n)+" · quiz"), Q = [], A = [];
   qs.forEach(function(qd, i){ var p = paperQuiz(i+1, qd); Q.push(p.q); A.push(p.a); });
   return h+Q.join("")+'<div class="answers"><h2>Answers</h2>'+A.join("")+'</div>';
@@ -167,9 +169,27 @@ function docNotes(l){
     if (Array.isArray(tk.how)) h += '<ol>'+tk.how.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol>';
     else if (tk.how){ [["win","Windows"],["mac","Mac"],["chromeos","Chromebook"],["phone","Phone or tablet"],["all","Any device"]].forEach(function(o){ if (tk.how[o[0]]) h += '<p><b>'+o[1]+'</b></p><ol>'+tk.how[o[0]].map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol>'; }); }
     if (tk.app){ var nm = l.apps || (ICA.unitById[l.unit]||{}).apps || {}; [["ms","Microsoft 365"],["google","Google"],["libre","LibreOffice"],["apple","Apple"],["all","Any app"]].forEach(function(o){ if (tk.app[o[0]]) h += '<p><b>'+esc(nm[o[0]]||o[1])+'</b></p><ol>'+tk.app[o[0]].map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol>'; }); }
-    if (tk.write) h += (typeof tk.write === "string" ? '<p><i>'+esc(tk.write)+'</i></p>' : '')+'<div class="lines"></div><div class="lines"></div>';
+    var saved = ((ICA.load().lessons[l.id] || {}).notes || {})[i];
+    if (tk.write) h += (typeof tk.write === "string" ? '<p><i>'+esc(tk.write)+'</i></p>' : '')+(saved ? '<div class="box mine">'+esc(saved).replace(/\n/g, "<br>")+'</div><div class="lines"></div>' : '<div class="lines"></div><div class="lines"></div>');
   });
   if (a.proof) h += '<div class="box"><b>Proof for yourself:</b> '+md(a.proof)+'</div>';
+  return h;
+}
+/* the learner's own work for one unit: Apply tasks done, notes written, self-checks and scores (Nov 2026) */
+function docPortfolio(u){
+  var st = ICA.load(), h = '<div class="meta">IT CHICK Academy · portfolio</div><h1>'+esc(ICA.tracks[u.track].name)+' · Unit '+u.n+': '+esc(u.title)+'</h1><p class="meta">Printed '+new Date().toISOString().slice(0, 10)+'</p>', any = false;
+  var SELF = ["Not yet", "Partly", "Yes"], cp = st.lessons[u.id+"-cp"];
+  u.lessons.forEach(function(l){
+    var s = st.lessons[l.id] || {}, a = l.apply || {tasks:[]}, notes = s.notes || {}, apply = s.apply || {};
+    h += '<h2>Lesson '+l.n+': '+esc(l.title)+'</h2><p class="meta">'+(s.done ? "Completed "+new Date(s.done).toISOString().slice(0, 10) : "Not completed yet")+(s.check ? " · Check: best "+s.check.best+" of "+s.check.of : "")+'</p>';
+    a.tasks.forEach(function(tk, i){
+      var n = notes[i]; if (apply[i] || n) any = true;
+      h += '<p>'+(apply[i] ? "☑" : "☐")+' '+md(tk.t)+'</p>'+(n ? '<div class="box mine">'+esc(n).replace(/\n/g, "<br>")+'</div>' : '');
+    });
+    if (a.proof) h += '<div class="box"><b>Proof for yourself:</b> '+md(a.proof)+'<br><b>My self-check:</b> '+(s.proof == null ? "not done" : SELF[s.proof])+'</div>';
+  });
+  if (cp && cp.check) h += '<h2>Unit checkpoint</h2><p>Best score: '+cp.check.best+' of '+cp.check.of+'.</p>';
+  if (!any) h += '<p class="meta">Nothing written yet. Your notes from the Apply tasks appear here as you save them.</p>';
   return h;
 }
 function docReading(u){
@@ -198,6 +218,7 @@ function show(kind, uid, lid){
   var u = ICA.unitById[uid], l = lid && lid !== "cp" ? ICA.lessons[lid] : null, html, name;
   if (kind === "cheat"){ html = docCheat(u); name = "Cheat sheet"; }
   else if (kind === "reading"){ html = docReading(u); name = "Reading checklist"; }
+  else if (kind === "portfolio"){ html = docPortfolio(u); name = "My portfolio"; }
   else if (kind === "quiz"){ html = docQuiz(l, u); name = "Quiz"; }
   else { if (!l) l = u.lessons[0]; html = kind === "worksheet" ? docWorksheet(l) : docNotes(l); name = kind === "worksheet" ? "Worksheet" : "Notes pages"; }
   setTitle(name);

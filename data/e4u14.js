@@ -1,6 +1,6 @@
-/* International Studies · Unit 14 · Development: ideas, measures and debates */
+/* International Studies · Unit 15 · Development: ideas, measures and debates */
 ICA.addUnit({
-  id:"e4u14", track:"e4", n:14, title:"Development: ideas, measures and debates", icon:"🌱",
+  id:"e4u14", track:"e4", n:15, title:"Development: ideas, measures and debates", icon:"🌱",
   blurb:"Development studies at seminar level: what “development” means and how it is measured, from GDP and the international poverty line to Sen’s capabilities, the Human Development Index, multidimensional poverty and the “beyond GDP” agenda; the rival theories, from modernisation and dependency to post-development; the East Asian developmental state and the Washington Consensus; whether aid works, from the Sachs–Easterly debate to randomised trials and new donors; and the deep causes of prosperity and inequality, told neutrally with the evidence on each side.",
   goals:[
     "Explain the difference between growth and human development, and use Sen’s capability approach to analyse a real case",
@@ -35,7 +35,7 @@ ICA.addUnit({
       {key:"Every development measure is a theory of the good life in disguise. Ask what it counts, what it leaves out, and who chose."}
     ]},
     {h:"Growth as development, and its limits", body:[
-      "[[gdp|Gross domestic product]] (GDP) is the market value of final goods and services produced in a country in a year; [[gni|gross national income]] (GNI) adds income residents earn abroad and subtracts income sent out. The World Bank’s income groups use GNI per person. Both are averages, measured in money.",
+      "[[gdp|Gross domestic product]] (GDP) is the market value of final goods and services produced in a country in a year; [[gni|gross national income]] (GNI) adds income residents earn abroad and subtracts income sent out. The World Bank’s income groups use GNI per person. Both are averages, measured in money. Unit 14 shows how these totals are built ({{national-accounts-gdp}}) and why comparing them across countries depends on whether you convert at market exchange rates or PPP ({{ppp-vs-market-rates}}).",
       "The case for growth is strong. Poverty fell fastest where economies grew fastest, in East and then South Asia. David Dollar and Aart Kraay’s much-cited paper “Growth Is Good for the Poor” (2002) found that, on average across countries, incomes of the poorest fifth rose in step with average incomes. Growth also pays for schools, clinics and pensions.",
       "The case against equating the two is just as old. Simon Kuznets, who built the first US national accounts, warned in his 1934 report to the US Senate that the welfare of a nation can scarcely be inferred from a measure of national income. GDP counts output, not who gets it; it ignores unpaid care work, mostly done by women; it counts the cleanup after a disaster as a gain; and it says nothing about depleting forests, fish or the climate.",
       "One of Sen’s best-known illustrations in *Development as Freedom* (1999) is about survival: he noted that African American men in the United States, though far richer in income than people in China or the Indian state of Kerala, had a lower chance of reaching advanced ages than men there. Income was not turning into the most basic freedom, staying alive."
@@ -77,14 +77,14 @@ ICA.addUnit({
     {h:"Beyond GDP, as of November 2026", body:[
       "The search for better compasses has a long history. Bhutan’s fourth king is credited with the idea of [[gross-national-happiness|Gross National Happiness]] in the 1970s, and Bhutan’s 2008 constitution asks the state to promote conditions for it. In 2009 the [[stiglitz-sen-fitoussi-commission|Stiglitz–Sen–Fitoussi Commission]], set up by France’s president, recommended dashboards of well-being and sustainability alongside GDP.",
       "The UN took the idea up in the Pact for the Future (2024; see {{pact-for-the-future}}). On 7 May 2026 the Secretary-General’s independent High-Level Expert Group on Beyond GDP, co-chaired by Kaushik Basu and Nora Lustig, presented its report *Counting what counts: A compass of progress for people and planet*, proposing a dashboard of 31 indicators, about half drawn from the SDGs. Intergovernmental consultations followed; an elements paper was finalised in September 2026, and governments remain divided over whether the framework should include a single headline number.",
-      "Sceptics argue that dashboards spread attention thinly and that no single rival number has dethroned GDP because GDP answers a narrower question well. Supporters reply that what is measured is what gets managed, and that GDP alone rewards depleting nature (Unit 16 takes up the environmental side; Unit 17 the SDG indicators).",
+      "Sceptics argue that dashboards spread attention thinly and that no single rival number has dethroned GDP because GDP answers a narrower question well. Supporters reply that what is measured is what gets managed, and that GDP alone rewards depleting nature (Unit 17 takes up the environmental side; Unit 18 the SDG indicators).",
       {terms:["economic-growth","gdp","gni","capability","functioning","conversion-factor","human-development","human-development-report","multidimensional-poverty-index","poverty-headcount","societal-poverty-line","gross-national-happiness","stiglitz-sen-fitoussi-commission"]}
     ]}
    ],
    try:[
     {id:"e4u14-l1-x1", type:"mcq", q:"Hana compares two countries with the same GNI per person. In one, life expectancy is nine years higher. Which statement fits the lesson best?", options:[
-      {t:"Income is a means; how far it turns into longer, freer lives depends on other conditions, such as health systems and who gets the income", ok:true, why:"Right. That is the core of the capability approach, and the reason the HDI adds health and education to income."},
-      {t:"The measurements must be wrong, because equal income means equal development", why:"That assumes what is in question. Countries with similar incomes really do differ widely in health and schooling."},
+      {t:"Income is a means; how far it becomes longer lives depends on other conditions", ok:true, why:"Right: conditions such as health systems and who gets the income. That is the core of the capability approach, and the reason the HDI adds health and education to income."},
+      {t:"The measurements must be wrong, because equal income always means equal development", why:"That assumes what is in question. Countries with similar incomes really do differ widely in health and schooling."},
       {t:"The country with longer lives must have higher GDP growth", why:"Growth rates and income levels are different things, and neither guarantees longer lives."},
       {t:"Life expectancy is not a development indicator", why:"It is one of the HDI’s three dimensions and one of Sen’s favourite examples of a basic capability."}
     ]},
@@ -211,7 +211,7 @@ ICA.addUnit({
         ["Arturo Escobar, *Encountering Development* (1995)","Development is a [[development-discourse|discourse]] that made Asia, Africa and Latin America into a “Third World” defined by lack, and made peasants, women and nature objects of expert planning; his case is Colombia"],
         ["James C. Scott, *Seeing Like a State* (1998)","“High-modernist” schemes, such as Tanzania’s forced villagisation in the 1970s, fail when states impose simplified plans on complex lives"]
       ]},
-      "Post-development writers look for **alternatives to development** rather than alternative development, often in social movements and indigenous ideas. Ecuador’s 2008 constitution (*sumak kawsay*) and Bolivia’s 2009 constitution wrote [[buen-vivir|buen vivir]], “living well” in harmony with community and nature, into law; degrowth thinkers in rich countries make a parallel argument (Unit 16). The critique also has older Asian roots: Mohandas Gandhi’s *Hind Swaraj* (1909) rejected industrial civilisation as a goal, and Vandana Shiva’s *Staying Alive* (1988) argued that “maldevelopment” in India harmed women and ecosystems together.",
+      "Post-development writers look for **alternatives to development** rather than alternative development, often in social movements and indigenous ideas. Ecuador’s 2008 constitution (*sumak kawsay*) and Bolivia’s 2009 constitution wrote [[buen-vivir|buen vivir]], “living well” in harmony with community and nature, into law; degrowth thinkers in rich countries make a parallel argument (Unit 17). The critique also has older Asian roots: Mohandas Gandhi’s *Hind Swaraj* (1909) rejected industrial civilisation as a goal, and Vandana Shiva’s *Staying Alive* (1988) argued that “maldevelopment” in India harmed women and ecosystems together.",
       "The replies are pointed. Ray Kiely (1999) and Jan Nederveen Pieterse (2000) argued that post-development romanticises the local, treats “development” as one monolithic thing, and has little to say to people who want clean water, vaccines and schooling, which, the critics note, many poor people say they want. Escobar’s 2011 edition answered some critics by reframing the project as “pluriversal” studies."
     ]},
     {h:"Using the theories today", body:[
@@ -222,10 +222,10 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u14-l2-x1", type:"mcq", q:"Why do critics such as Escobar and Esteva treat Truman’s 1949 Point Four speech as a turning point?", options:[
-      {t:"It framed much of the world as “underdeveloped”, defined by what it lacked, and made development a programme run by outside experts", ok:true, why:"Right. Post-development writers date the development era from this framing, not from any change in people’s lives."},
+      {t:"It framed much of the world as “underdeveloped”", ok:true, why:"Right: defined by what it lacked, with development as a programme run by outside experts. Post-development writers date the development era from this framing, not from any change in people’s lives."},
       {t:"It created the World Bank", why:"The World Bank was agreed at Bretton Woods in 1944."},
       {t:"It announced the end of colonial empires", why:"Decolonisation was a separate, longer process driven largely by independence movements."},
-      {t:"It introduced the Human Development Index", why:"The HDI dates from 1990."}
+      {t:"It introduced the Human Development Index to the UN", why:"The HDI dates from 1990."}
     ]},
     {id:"e4u14-l2-x2", type:"sort", q:"Which theory would make each claim?", buckets:["Modernisation","Structuralism or dependency","Post-development"], items:[
       {t:"Poor countries need higher savings, new technology and modern values to reach take-off.", b:0, why:"Rostow’s internal obstacles and stages."},
@@ -248,7 +248,7 @@ ICA.addUnit({
       ["James Ferguson","A failing project can still expand state power while presenting politics as technical problems","*The Anti-Politics Machine* (1990), on Lesotho."]
     ]},
     {id:"e4u14-l2-x5", type:"mcq", q:"Cardoso and Faletto’s “dependent development” differs from Frank’s version of dependency mainly because it…", options:[
-      {t:"accepts that industrial growth can happen in dependent countries, and stresses local class alliances and the state", ok:true, why:"Right. They rejected the idea that dependency simply blocks growth, and looked at how internal coalitions shape it."},
+      {t:"accepts that dependent countries can industrialise", ok:true, why:"Right, and it stresses local class alliances and the state. They rejected the idea that dependency simply blocks growth, and looked at how internal coalitions shape it."},
       {t:"denies that the world economy has a core and a periphery", why:"They kept the structural picture; they changed what it predicts."},
       {t:"argues that free trade will make all countries converge", why:"That is closer to liberal economics than to any dependency writer."},
       {t:"was written by Wallerstein", why:"Wallerstein developed world-systems theory from 1974."}
@@ -334,7 +334,7 @@ ICA.addUnit({
     {h:"The World Bank’s East Asian Miracle", body:[
       "In 1993 the World Bank published [[east-asian-miracle|*The East Asian Miracle: Economic Growth and Public Policy*]], studying eight [[high-performing-asian-economies|high-performing Asian economies]] from 1965 to 1990: Japan; the four “tigers” (Hong Kong, South Korea, Singapore, Taiwan); and Indonesia, Malaysia and Thailand.",
       "Its verdict was a compromise. Most of the growth, it argued, came from getting the **fundamentals** right: macroeconomic stability, high saving and investment, broad schooling, agricultural development and openness to foreign technology. Some selective interventions, such as directed credit and export promotion, had worked in Japan, Korea and Taiwan, but only under conditions (capable bureaucracies, strict performance tests) that were hard to copy elsewhere. Its recommended model was “market-friendly”.",
-      "Robert Wade read the report as “paradigm maintenance” (*New Left Review*, 1996). In his account, Japan’s government, which had pressed the Bank to take industrial policy seriously and paid for the study, got an acknowledgement, but the Bank’s market-led framework survived. Amsden and others said the report’s own evidence supported a bigger role for the state than its conclusions admitted. From the other side, Paul Krugman’s “The Myth of Asia’s Miracle” (1994) argued that growth came mostly from more inputs, not rising efficiency. The 1997–98 Asian financial crisis (Unit 1; Unit 15 covers financial crises) then reopened every argument."
+      "Robert Wade read the report as “paradigm maintenance” (*New Left Review*, 1996). In his account, Japan’s government, which had pressed the Bank to take industrial policy seriously and paid for the study, got an acknowledgement, but the Bank’s market-led framework survived. Amsden and others said the report’s own evidence supported a bigger role for the state than its conclusions admitted. From the other side, Paul Krugman’s “The Myth of Asia’s Miracle” (1994) argued that growth came mostly from more inputs, not rising efficiency. The 1997–98 Asian financial crisis (Unit 1; Unit 16 covers financial crises) then reopened every argument."
     ]},
     {h:"The Washington Consensus and after", body:[
       "John Williamson coined the phrase [[washington-consensus|Washington Consensus]] in a paper for a 1989 conference, published in 1990 as “What Washington Means by Policy Reform”. By “Washington” he meant the technocratic Washington of the IMF, the World Bank and the US Treasury, and he listed ten reforms they broadly agreed Latin America needed:",
@@ -348,7 +348,7 @@ ICA.addUnit({
         "Ha-Joon Chang’s *Kicking Away the Ladder* (2002): today’s rich countries used protection and subsidies when they were catching up, and now deny those tools to others.",
         "The [[beijing-consensus|“Beijing Consensus”]] (Joshua Cooper Ramo, 2004): China’s gradual, experimental, state-heavy path as a model. Many scholars doubt that China’s path can be copied or that a single “China model” exists."
       ]},
-      "As of November 2026, industrial policy is back in the mainstream: many governments, rich and poor, subsidise strategic sectors such as semiconductors and clean energy (Unit 15 and Unit 16). Economists still disagree about when it works. The World Bank’s *World Development Report 2024* frames the challenge as escaping a [[middle-income-trap|middle-income trap]] by moving from investment to adopting foreign technology and then to innovation."
+      "As of November 2026, industrial policy is back in the mainstream: many governments, rich and poor, subsidise strategic sectors such as semiconductors and clean energy (Unit 16 and Unit 17). Economists still disagree about when it works. The World Bank’s *World Development Report 2024* frames the challenge as escaping a [[middle-income-trap|middle-income trap]] by moving from investment to adopting foreign technology and then to innovation."
     ]},
     {h:"Beyond East Asia", body:[
       "The Malawian economist Thandika Mkandawire (2001) challenged the common view that developmental states were impossible in Africa: Botswana and Mauritius had grown fast for decades, and many African states had grown well in the 1960s and 1970s before the debt crisis. Since the 2000s Ethiopia and Rwanda have often been debated as would-be developmental states, praised for growth and service delivery and criticised for authoritarian rule. Vietnam’s Đổi Mới reforms (from 1986) and India’s 1991 liberalisation are other cases where scholars disagree about how much credit belongs to the state and how much to markets.",
@@ -380,9 +380,9 @@ ICA.addUnit({
       {t:"Planners chose target industries in successive five-year plans.", b:0, why:"Deliberate sectoral targeting is industrial policy."}
     ]},
     {id:"e4u14-l3-x4", type:"mcq", q:"According to Doner, Ritchie and Slater, why did South Korea and Taiwan build stronger developmental institutions than Thailand or the Philippines?", options:[
-      {t:"Their leaders faced at once the threat of mass unrest, serious external security threats and tight resource constraints", ok:true, why:"Right. Systemic vulnerability gave elites strong reasons to build capable institutions that delivered broad growth."},
+      {t:"Their leaders faced unrest, external threats and scarce resources at once", ok:true, why:"Right: the threat of mass unrest, serious external security threats and tight resource constraints. Systemic vulnerability gave elites strong reasons to build capable institutions that delivered broad growth."},
       {t:"Their cultures valued hard work more", why:"The article deliberately explains the difference through political conditions, not cultural traits."},
-      {t:"They followed the Washington Consensus more closely", why:"The Washington Consensus came much later (1989) and these states were interventionist."},
+      {t:"They followed the Washington Consensus more closely than their neighbours", why:"The Washington Consensus came much later (1989) and these states were interventionist."},
       {t:"They had larger natural resource exports", why:"The opposite: scarce resources were one of the pressures."}
     ]},
     {id:"e4u14-l3-x5", type:"sort", q:"Was each policy on Williamson’s original 1989–90 list?", buckets:["On the list","Not on the list"], items:[
@@ -479,13 +479,13 @@ ICA.addUnit({
         "**Mutual accountability** of donors and recipients."
       ]},
       "The Accra Agenda for Action (2008) added a role for parliaments and civil society. The fourth forum, in Busan, South Korea (29 November–1 December 2011), produced the [[busan-partnership|Busan Partnership for Effective Development Co-operation]], built on four principles: ownership by developing countries, a focus on results, inclusive partnerships and transparency and mutual accountability. Crucially, it brought in South–South providers, though only “on a voluntary basis”, and it led to the Global Partnership for Effective Development Co-operation.",
-      "Monitoring showed progress on some targets and little on others, and critics on both sides note that donors’ attention shifted from aid effectiveness to “development effectiveness” and private finance (Unit 15)."
+      "Monitoring showed progress on some targets and little on others, and critics on both sides note that donors’ attention shifted from aid effectiveness to “development effectiveness” and private finance (Unit 16)."
     ]},
     {h:"The randomista turn", body:[
       "While macro-level studies stalled, a group of economists asked smaller questions with a method borrowed from medicine. A [[randomised-controlled-trial|randomised controlled trial]] (RCT) assigns a programme by lottery, so the treated and untreated groups differ only by chance; the difference in outcomes then estimates the programme’s effect (see [[random-assignment|random assignment]]).",
       {fig:'<svg viewBox="0 0 340 452"><defs><marker id="e4u14-l4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-panel" x="20" y="8" width="300" height="50" rx="8" stroke-width="2"/><text x="170" y="30" text-anchor="middle">Eligible schools, villages</text><text x="170" y="48" text-anchor="middle">or households</text><path class="d-ink" d="M170 60 V84" stroke-width="2" marker-end="url(#e4u14-l4-a)"/><rect class="d-gold" x="60" y="88" width="220" height="40" rx="20" stroke-width="2"/><text x="170" y="113" text-anchor="middle">Random assignment</text><path class="d-ink" d="M130 130 L90 156" stroke-width="2" marker-end="url(#e4u14-l4-a)"/><path class="d-ink" d="M210 130 L250 156" stroke-width="2" marker-end="url(#e4u14-l4-a)"/><rect class="d-sage" x="14" y="160" width="150" height="62" rx="8" stroke-width="2"/><text x="89" y="184" text-anchor="middle">Treatment</text><text class="s" x="89" y="204" text-anchor="middle">gets the programme</text><rect class="d-soft" x="176" y="160" width="150" height="62" rx="8" stroke-width="2"/><text x="251" y="184" text-anchor="middle">Control</text><text class="s" x="251" y="204" text-anchor="middle">does not (yet)</text><path class="d-ink" d="M89 224 L130 250" stroke-width="2" marker-end="url(#e4u14-l4-a)"/><path class="d-ink" d="M251 224 L210 250" stroke-width="2" marker-end="url(#e4u14-l4-a)"/><rect class="d-lup" x="20" y="254" width="300" height="58" rx="8" stroke-width="2"/><text x="170" y="278" text-anchor="middle">Compare average outcomes</text><text class="s" x="170" y="298" text-anchor="middle">difference = the programme’s effect here</text><rect class="d-rose" x="20" y="328" width="300" height="116" rx="8" stroke-width="2"/><text x="32" y="352">What the trial can’t tell you alone</text><text class="s" x="32" y="374">• Would it work in another place or year?</text><text class="s" x="32" y="394">• Would it work at scale, run by government?</text><text class="s" x="32" y="414">• Did it affect people outside the trial?</text><text class="s" x="32" y="434">• Why did it work, and for whom?</text></svg>', alt:"A flow diagram. Eligible schools, villages or households go through random assignment into two groups: a treatment group that gets the programme and a control group that does not, or not yet. Both feed into a comparison of average outcomes, where the difference is the programme’s effect in that setting. A panel below lists what the trial can’t tell you alone: would it work in another place or year; would it work at scale, run by government; did it affect people outside the trial; and why did it work, and for whom.", cap:"The logic of a randomised controlled trial, and the questions it leaves open."},
       "In the mid-1990s Michael Kremer and colleagues ran field experiments on schooling in western Kenya. Abhijit Banerjee and Esther Duflo, with Sendhil Mullainathan, founded the Poverty Action Lab at MIT in 2003 (now the Abdul Latif Jameel Poverty Action Lab, J-PAL), and their *Poor Economics* (2011) argued for testing specific interventions one by one. In 2019 the three shared the economics Nobel prize “for their experimental approach to alleviating global poverty”; the Nobel committee noted that more than five million Indian children had benefited from remedial tutoring programmes evaluated this way.",
-      "Some results changed practice: free distribution of bed nets, remedial teaching at the right level for each child, and cash transfers. Others overturned hopes, such as the 2015 set of microcredit trials, which found modest average effects (Unit 17 covers microfinance)."
+      "Some results changed practice: free distribution of bed nets, remedial teaching at the right level for each child, and cash transfers. Others overturned hopes, such as the 2015 set of microcredit trials, which found modest average effects (Unit 18 covers microfinance)."
     ]},
     {h:"Critics of the trials", body:[
       "The critics include other Nobel laureates. Angus Deaton (Nobel 2015) and the philosopher Nancy Cartwright argued in “Understanding and Misunderstanding Randomized Controlled Trials” (2018) that RCTs are not automatically the gold standard. Their main points, with others’:",
@@ -500,7 +500,7 @@ ICA.addUnit({
     ]},
     {h:"New and returning donors", body:[
       "[[south-south-cooperation|South–South cooperation]] is not new: the Kuwait Fund (1961), the Abu Dhabi Fund (1971) and the Saudi Fund for Development (1974) are decades old, and India’s technical cooperation programme dates from 1964. South Korea, once a major aid recipient, joined the DAC in 2010. Japan’s aid, with its loans for infrastructure and stress on recipients’ self-help, is covered in Unit 4 ({{japan-development-cooperation}}).",
-      "China is now a major provider. Its 2021 white paper, *China’s International Development Cooperation in the New Era*, presents its aid as South–South cooperation based on equality and non-interference, overseen since 2018 by the China International Development Cooperation Agency. Much of its finance comes as loans rather than grants, so researchers such as AidData estimate it from project records (Unit 15 covers {{china-overseas-lending|China’s overseas lending}} and the debt debate).",
+      "China is now a major provider. Its 2021 white paper, *China’s International Development Cooperation in the New Era*, presents its aid as South–South cooperation based on equality and non-interference, overseen since 2018 by the China International Development Cooperation Agency. Much of its finance comes as loans rather than grants, so researchers such as AidData estimate it from project records (Unit 16 covers {{china-overseas-lending|China’s overseas lending}} and the debt debate).",
       "Views on these [[non-dac-donors|non-DAC providers]] differ. Recipient governments often value speed, infrastructure, fewer policy conditions and the language of partnership. Critics, including some DAC donors and civil society groups, point to less transparency, loans tied to the provider’s own firms, and weaker attention to governance and the environment. Researchers stress that DAC donors also tie aid and pursue interests, so comparisons need the same yardstick for both.",
       {h:"Common misconceptions"},
       {table:[["Misconception","Closer to the truth"],["Aid is a large share of rich countries’ spending.","Most DAC donors give well under the 0.7% of national income target; only a few meet it."],["A randomised trial shows what works everywhere.","It shows what worked in one setting; whether it travels is a separate question."],["China’s development finance is mostly grants like DAC aid.","Much of it is loans, often at near-commercial terms, which is why it is counted differently."],["Aid effectiveness means giving more aid.","The Paris and Busan agendas are mainly about how aid is delivered and who leads."]]},
@@ -528,8 +528,8 @@ ICA.addUnit({
     ]},
     {id:"e4u14-l4-x3", type:"mcq", q:"A donor funds a national health plan, sends one joint mission with other donors a year, and channels money through the recipient’s own budget. Which Paris principles does this mostly illustrate?", options:[
       {t:"Ownership, alignment and harmonisation", ok:true, why:"Right. The plan is the recipient’s (ownership), the donor uses its systems (alignment) and coordinates with others (harmonisation)."},
-      {t:"Tied aid", why:"Tied aid requires buying from the donor’s firms, the opposite of using country systems."},
-      {t:"A big push", why:"The big push is Sachs’s argument about scale, not about delivery."},
+      {t:"Tied aid, spent through the donor’s firms", why:"Tied aid requires buying from the donor’s firms, the opposite of using country systems."},
+      {t:"A big push through large-scale funding", why:"The big push is Sachs’s argument about scale, not about delivery."},
       {t:"Conditionality", why:"Conditionality attaches policy demands; the scenario is about who leads and how aid is channelled."}
     ]},
     {id:"e4u14-l4-x4", type:"number", q:"In a school trial, children in randomly chosen treatment schools attended 82% of school days and children in control schools 76%. What is the estimated effect of the programme on attendance, in percentage points?", answer:6, tol:0.1, unit:"percentage points", why:"82 − 76 = **6 percentage points**. Because schools were assigned by lottery, the groups differ only by chance, so the difference estimates the programme’s effect in this setting.", wrongs:[
@@ -552,10 +552,10 @@ ICA.addUnit({
       {t:"They pay less attention to environmental and social safeguards.", b:1, why:"A criticism made by some civil society groups and DAC donors."}
     ]},
     {id:"e4u14-l4-x7", type:"mcq", q:"What did the Busan Partnership (2011) do that earlier aid effectiveness agreements had not?", options:[
-      {t:"It brought South–South providers into the framework, on a voluntary basis", ok:true, why:"Right. Busan’s outcome document is a reference for South–South partners on a voluntary basis, and it led to the Global Partnership for Effective Development Co-operation."},
+      {t:"It brought in South–South providers, on a voluntary basis", ok:true, why:"Right. Busan’s outcome document is a reference for South–South partners on a voluntary basis, and it led to the Global Partnership for Effective Development Co-operation."},
       {t:"It created the 0.7% target", why:"The 0.7% target dates from a UN General Assembly resolution of 1970."},
       {t:"It abolished tied aid worldwide", why:"No agreement abolished tied aid; the DAC has recommendations to untie parts of it."},
-      {t:"It set up the OECD’s Development Assistance Committee", why:"The DAC dates from the early 1960s."}
+      {t:"It set up the OECD’s Development Assistance Committee (DAC)", why:"The DAC dates from the early 1960s."}
     ]}
    ],
    apply:{
@@ -656,8 +656,8 @@ ICA.addUnit({
       {t:"Income per person today", why:"The outcome to be explained."}
     ]},
     {id:"e4u14-l5-x3", type:"mcq", q:"Glaeser and co-authors (2004) accept that former settler colonies are richer today. What alternative explanation do they offer?", options:[
-      {t:"Settlers brought human capital (skills and schooling), and better institutions often followed growth", ok:true, why:"Right. If skills, not institutions, travelled with settlers, the settler-mortality evidence can’t separate the two."},
-      {t:"Settler colonies had better climates for crops", why:"That is closer to the geography argument of Sachs."},
+      {t:"Settlers brought skills, and good institutions followed growth", ok:true, why:"Right: human capital (skills and schooling), with better institutions often following growth. If skills, not institutions, travelled with settlers, the settler-mortality evidence can’t separate the two."},
+      {t:"Settler colonies had better climates and soils for growing crops", why:"That is closer to the geography argument of Sachs."},
       {t:"Settler mortality figures were invented", why:"Albouy questioned how the figures were assembled; Glaeser and co-authors made a different point."},
       {t:"Culture determines everything", why:"Their argument is about human capital and the order of causation."}
     ]},
@@ -668,9 +668,9 @@ ICA.addUnit({
       ["The far left","The world’s poorest","Gains there were smaller than in the middle, in percentage terms."]
     ]},
     {id:"e4u14-l5-x5", type:"mcq", q:"In plain words, what does Piketty’s inequality r > g imply?", options:[
-      {t:"When the return on wealth exceeds the economy’s growth rate, inherited wealth tends to grow faster than incomes from work, so wealth concentrates", ok:true, why:"Right. Piketty argues policy, such as progressive taxes on wealth, is needed to counter the tendency."},
+      {t:"Inherited wealth tends to grow faster than incomes from work", ok:true, why:"Right. When the return on wealth exceeds the economy’s growth rate, inherited wealth tends to grow faster than incomes from work, so wealth concentrates. Piketty argues policy, such as progressive taxes on wealth, is needed to counter the tendency."},
       {t:"Rich countries always grow faster than poor ones", why:"r > g compares the return on capital with growth inside an economy, not growth across countries."},
-      {t:"Interest rates should always be higher than growth", why:"It is a description of a tendency, not a policy rule."},
+      {t:"Interest rates should always be kept higher than the growth rate", why:"It is a description of a tendency, not a policy rule."},
       {t:"Inequality between countries must rise", why:"His book focuses mainly on inequality within countries."}
     ]},
     {id:"e4u14-l5-x6", type:"spot", q:"A seminar paragraph argues about development. Tap each sentence that has a **flaw in its reasoning**.", ask:"a flaw in its reasoning", parts:[
@@ -720,6 +720,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u14-q02","e4u14-q06","e4u14-q09","e4u14-q12","e4u14-q15","e4u14-q20","e4u14-q23","e4u14-q27","e4u14-q31","e4u14-q36","e4u14-q39","e4u14-q44"],
+  cpBank:[
+   {id:"e4u14-cp01", lesson:"e4u14-l1", level:2, q:"Neither Ravi nor Esi eats today. Ravi is fasting for religious reasons and has food at home. Esi has no money for food. In Sen’s terms, what is the key difference?", options:[
+     {t:"Their functionings differ: one eats and the other does not", why:"Today neither of them eats, so their functioning (what they actually do) is the same."},
+     {t:"Their capabilities differ: Ravi could eat if he chose, Esi could not", ok:true, why:"Yes. A capability is a real freedom. Ravi has the freedom to be well fed and uses his agency to fast; Esi lacks it."},
+     {t:"Their conversion factors are the same, so there is no difference", why:"The difference is not in conversion factors but in the real freedom each person has."},
+     {t:"There is no difference, because development is measured by what people actually do", why:"Sen’s point is the reverse: development is the expansion of capabilities, so the freedom to choose matters, not just the outcome."}]},
+   {id:"e4u14-cp02", lesson:"e4u14-l1", level:2, q:"Two invented countries. **A** scores 0.9 on health, 0.9 on education and 0.3 on income. **B** scores 0.7 on all three. Both have a simple average of 0.7. On today’s HDI method, which scores higher?", options:[
+     {t:"A, because its health and education scores are higher", why:"High scores in two dimensions cannot fully make up for a very low one under a geometric mean."},
+     {t:"They tie, because the HDI uses a simple average", why:"Since 2010 the HDI has used a geometric mean, not a simple average."},
+     {t:"B, because a geometric mean penalises one very low score", ok:true, why:"Right. A’s geometric mean is about 0.62, B’s is 0.7: the method stops a very low score in one dimension being fully offset by the others."},
+     {t:"A, because income is given double weight in the HDI formula", why:"Income is one of three dimensions and is not double-weighted; the HDI uses the logarithm of GNI per person."}]},
+   {id:"e4u14-cp03", lesson:"e4u14-l1", level:1, q:"Two students argue about whether trade made an invented country “develop”. One looks only at GDP per person; the other at schooling and life expectancy. What should they settle first?", options:[
+     {t:"Which grand theory of development is correct for every country", why:"Theories answer “what causes development?”, which they cannot test until they agree on what they are explaining."},
+     {t:"Which dataset has the most countries", why:"Data coverage matters, but it does not solve the real problem: they are measuring different things."},
+     {t:"Whether trade is good or bad in general", why:"That is a broader and more normative question; it skips over their hidden disagreement about the outcome."},
+     {t:"What they mean by development and how they will measure it", ok:true, why:"Yes. The lesson warns that many arguments about causes go wrong because people disagree, without noticing, about the definition and measure."}]},
+   {id:"e4u14-cp04", lesson:"e4u14-l5", level:3, q:"A paper concludes that “institutions explain development”. Its only outcome variable is GDP per person in one year. Drawing on Lessons 1 and 5, what is the sharpest critique?", options:[
+     {t:"It defines development narrowly: other outcomes, such as life expectancy, might differ", ok:true, why:"Right. Lesson 5 notes that “rich” usually means GDP per person, and Lesson 1 shows that any one measure leaves things out."},
+     {t:"GDP is never a useful measure, so the paper’s data and findings should be discarded", why:"Too strong. GDP answers a narrower question well; the point is that it is one measure among several."},
+     {t:"Institutions cannot be measured at all, so no cross-country study of them is ever possible", why:"Researchers do measure institutions, and the colonial-origins debate is about how well. The problem here is the outcome variable."},
+     {t:"It should have used the elephant curve of global income growth instead of GDP", why:"The elephant curve shows growth across the global income distribution. It is not an alternative outcome for a cross-country study."}]},
+   {id:"e4u14-cp05", lesson:"e4u14-l2", level:2, q:"A government moves scattered farmers into planned grid villages so that it can deliver services and collect taxes more easily. It ignores local farming knowledge, and harvests fall. Which work analyses this kind of scheme?", options:[
+     {t:"Rostow, *The Stages of Economic Growth*", why:"Rostow described stages towards take-off. He did not analyse why state plans fail when imposed on complex lives."},
+     {t:"Scott, *Seeing Like a State*", ok:true, why:"Yes. Scott argued that “high-modernist” schemes, such as Tanzania’s villagisation, fail when states impose simplified plans."},
+     {t:"Prebisch, on the terms of trade", why:"Prebisch analysed the falling prices of commodity exports relative to manufactures, not resettlement schemes."},
+     {t:"Lewis, on the dual economy", why:"Lewis described labour moving from a traditional to a modern sector. He did not study failed state planning."}]},
+   {id:"e4u14-cp06", lesson:"e4u14-l2", level:1, q:"An adviser says one clinic or one road fails on its own, so donors should fund health, farming, schools and roads together, at scale. Which idea is this, and where does it come from?", options:[
+     {t:"Searchers, Easterly’s idea of small, tested projects", why:"Easterly argued the opposite: small, specific steps with feedback, not a large coordinated plan."},
+     {t:"Getting prices wrong, Amsden’s idea about Korean industrial policy", why:"That describes cheap credit and protection for new industries in return for performance standards."},
+     {t:"The big push, from Rosenstein-Rodan, which Sachs applied to aid", ok:true, why:"Right. Rosenstein-Rodan (1943) argued for coordinated investment; Sachs’s *The End of Poverty* called for a big push of aid."},
+     {t:"Dependent development, from Cardoso and Faletto", why:"That is a version of dependency theory about growth on terms shaped by outsiders, not a plan for aid."}]},
+   {id:"e4u14-cp07", lesson:"e4u14-l3", level:2, q:"Ji-woo argues that every country must follow the same stages of growth that Britain did. Which scholar’s work, from Lesson 3, most directly challenges this?", options:[
+     {t:"Williamson, because the Washington Consensus set one path for every country to follow", why:"Williamson listed policy reforms; he did not study whether industrialisation follows one historical path."},
+     {t:"Gerschenkron: late developers industrialise differently, using banks or the state", ok:true, why:"Yes. Gerschenkron showed that the further behind a country is, the bigger the role of banks or the state. There is no single path, against Rostow."},
+     {t:"Krugman, because East Asian growth came mostly from more inputs", why:"Krugman’s argument is about the sources of East Asia’s growth, not about whether all countries follow Britain’s path."},
+     {t:"Piketty, because r > g means wealth concentrates", why:"Piketty is about inequality within countries, not about paths of industrialisation."}]},
+   {id:"e4u14-cp08", lesson:"e4u14-l3", level:2, q:"A ministry does not make chips itself. It offers shared laboratories, training and early loans so that new private chip firms can start. Which of Evans’s state roles is this?", options:[
+     {t:"Custodian", why:"A custodian regulates. This ministry is helping firms come into being, not just setting rules."},
+     {t:"Demiurge", why:"A demiurge produces goods itself, for example through a state company. This ministry does not make chips."},
+     {t:"Husbandry", why:"Husbandry nurses firms that already exist. Here the aim is to help new firms emerge."},
+     {t:"Midwife", ok:true, why:"Right. The midwife role helps new private firms emerge, as Evans found in the computer industries he studied."}]},
+   {id:"e4u14-cp09", lesson:"e4u14-l3", level:3, q:"A finance minister fully opens the country to short-term capital flows, without new bank regulation, “as the Washington Consensus requires”. How would Williamson and Stiglitz each respond?", options:[
+     {t:"Both would approve, because opening to capital flows was the very core of the consensus", why:"Williamson objected that full liberalisation of short-term capital flows was not on his list, and Stiglitz warned against it."},
+     {t:"Williamson would approve; Stiglitz would say the problem is too much regulation", why:"Both halves are wrong: Williamson left this off his list, and Stiglitz called for stronger regulation."},
+     {t:"Williamson: not on his list. Stiglitz: liberalisation without regulation is dangerous", ok:true, why:"Yes. Williamson resisted reading his list as full neoliberalism, and Stiglitz’s post-Washington Consensus stressed institutions and regulation."},
+     {t:"Neither would comment, because capital flows are not a development issue", why:"Both wrote directly about it, and the 1997–98 Asian financial crisis made it a central development debate."}]},
+   {id:"e4u14-cp10", lesson:"e4u14-l4", level:1, q:"Agency X announces a master plan from headquarters to end hunger in a region within ten years. Team Y tests seed varieties with farmers and keeps only what works for them. In Easterly’s terms, what are X and Y?", options:[
+     {t:"X is a planner, Y is a searcher", ok:true, why:"Right. Planners announce grand goals and answer to donors; searchers find what works through trial and feedback from the people served."},
+     {t:"X is a searcher, Y is a planner", why:"This reverses Easterly’s terms. The grand plan from headquarters is the planner."},
+     {t:"Both are planners, because both have goals", why:"Having a goal is not the test. The difference is top-down plans versus trial and feedback."},
+     {t:"Both are examples of Moyo’s aid dependency", why:"Moyo criticised open-ended aid to governments. The scenario contrasts two ways of working, which is Easterly’s distinction."}]},
+   {id:"e4u14-cp11", lesson:"e4u14-l4", level:3, q:"A donor cites one study finding that aid raises growth only in countries with good policies, and cuts all aid, including vaccination, to the others. What is the best caution?", options:[
+     {t:"The study is final, because it was published in a top journal", why:"Publication is not proof. When Easterly, Levine and Roodman added more data, the result disappeared."},
+     {t:"It did not survive more data, and growth is the wrong yardstick for health aid", ok:true, why:"Right. Burnside and Dollar’s result weakened with new data, and most researchers agree that health aid should be judged by health outcomes, not growth."},
+     {t:"Aid always raises growth everywhere, so donors never need to be selective at all", why:"The research is mixed. Later studies disagree about whether aid’s effect on growth is small and positive or close to zero."},
+     {t:"Vaccination should be judged by GDP growth, like all aid", why:"This repeats the donor’s mistake. Lesson 1 warns that a measure carries a view of what matters, and vaccines aim at health."}]},
+   {id:"e4u14-cp12", lesson:"e4u14-l5", level:3, q:"A critic says that places where European settlers died of malaria may still be poor today **because of malaria itself**. Which assumption of the colonial-origins argument does this challenge?", options:[
+     {t:"That institutions and income are correlated", why:"The critic does not deny the correlation. The question is what causes what."},
+     {t:"That colonies were either settled by Europeans or used for extracting resources", why:"The critic accepts the colonial history and questions a later link in the argument."},
+     {t:"That richer countries can afford better institutions", why:"That is the reverse-causation problem the instrument was meant to solve, not the assumption under attack."},
+     {t:"That settler mortality affects income today only through institutions", ok:true, why:"Yes. An instrument must not affect the outcome directly. Sachs and other geography critics argue that disease holds incomes down directly."}]}
+  ],
   codex:[
    {id:"capability-approach", title:"The capability approach", aka:["capabilities approach","development as freedom","functionings and capabilities"], tags:["development","theory","well-being"],
     summary:"Sen’s framework that judges development by people’s real freedoms to be and do what they have reason to value, not by income alone.",
@@ -912,7 +974,7 @@ ICA.addUnit({
      builder:[
       "**The ten items** (Williamson, “What Washington Means by Policy Reform”, 1990): fiscal discipline; reordering public spending priorities towards health, education and infrastructure; tax reform; market-determined interest rates; competitive exchange rates; trade liberalisation; openness to FDI; privatisation; deregulation; property rights.",
       "**What came after.** Stiglitz’s post-Washington Consensus (1998): institutions, regulation, competition, more goals than growth. Rodrik (2006, 2007): “one economics, many recipes”; diagnose binding constraints. The Growth Commission (2008): 13 economies with 7%+ growth for 25 years, pragmatic and varied. Chang (2002): rich countries “kicked away the ladder” of protection. Ramo (2004): a “Beijing Consensus”.",
-      "**Unit links.** Structural adjustment and IMF conditionality are in the primer ({{bretton-woods-institutions}}) and Unit 9 ({{bretton-woods-governance}}); financial crises in Unit 15."
+      "**Unit links.** Structural adjustment and IMF conditionality are in the primer ({{bretton-woods-institutions}}) and Unit 9 ({{bretton-woods-governance}}); financial crises in Unit 16."
      ],
      pro:[
       "**Assessment.** Supporters credit the reforms with ending hyperinflation and debt crises in parts of Latin America; critics cite slow growth, rising inequality and financial crises in the 1990s. Rodrik’s 2006 review of the World Bank’s own retrospective noted a shift towards humility and country diagnosis.",
@@ -943,7 +1005,7 @@ ICA.addUnit({
      pro:[
       "**The 2025 contraction.** OECD preliminary data (April 2026): US$174.3 billion from DAC members, down 23.1%; the United States drove about three-quarters of the fall after USAID stopped implementing foreign assistance on 1 July 2025; Germany became the largest DAC provider (US$29.1 billion). Only eight DAC members increased their ODA.",
       "**Measurement issues.** ODA figures include in-donor refugee costs, debt relief and loan grant-equivalents under rules that took effect with 2018 data; compare like with like. Non-DAC providers report differently or not at all.",
-      "**Political economy.** Aid allocation follows donors’ strategic interests as well as need (for example votes at the UN, former colonies). Recipients’ ownership is limited by donor earmarking. Localisation and humanitarian reform are covered in Unit 17 ({{participation-localisation}}).",
+      "**Political economy.** Aid allocation follows donors’ strategic interests as well as need (for example votes at the UN, former colonies). Recipients’ ownership is limited by donor earmarking. Localisation and humanitarian reform are covered in Unit 18 ({{participation-localisation}}).",
       "**Arguments in 2026.** Supporters of the cuts stress national interest, fiscal pressure and self-reliance; critics stress lost health and humanitarian programmes and reputational costs. Present both, with evidence on specific sectors."
      ]
     },
@@ -1042,7 +1104,7 @@ ICA.addUnit({
      ],
      builder:[
       {table:[["Work","Year","Contribution"],["*Collective Choice and Social Welfare*","1970","Social choice theory"],["*Poverty and Famines*","1981","Famines as failures of entitlements, not just food supply"],["*Commodities and Capabilities*","1985","Functionings and capabilities"],["*Development as Freedom*","1999","Development as expanding freedoms"],["*The Idea of Justice*","2009","Comparative, practical approach to justice"]]},
-      "**Famines.** His entitlement approach showed that famines can occur without a fall in food supply, when people lose the means to obtain food; he also argued that no major famine has occurred in a functioning democracy with a free press (Unit 17 develops this: {{famine-entitlements}}).",
+      "**Famines.** His entitlement approach showed that famines can occur without a fall in food supply, when people lose the means to obtain food; he also argued that no major famine has occurred in a functioning democracy with a free press (Unit 18 develops this: {{famine-entitlements}}).",
       "**Human development.** With his friend Mahbub ul Haq he shaped the Human Development Report (1990) and the HDI, though he was initially sceptical of compressing development into one number."
      ],
      pro:[
@@ -1165,10 +1227,10 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u14-q01", lesson:"e4u14-l1", level:1, q:"In Sen’s capability approach, what is a “capability”?", options:[
-     {t:"A real freedom to achieve valuable beings and doings, such as being healthy or taking part in community life", ok:true, why:"Right. Capabilities are effective opportunities; functionings are what is actually achieved."},
-     {t:"A person’s income and wealth", why:"Those are resources, the means that may or may not turn into capabilities."},
+     {t:"A real freedom to achieve valuable beings and doings", ok:true, why:"Right, such as being healthy or taking part in community life. Capabilities are effective opportunities; functionings are what is actually achieved."},
+     {t:"A person’s income, wealth and other resources", why:"Those are resources, the means that may or may not turn into capabilities."},
      {t:"A skill learned at school", why:"Skills can be conversion factors, but a capability is a real freedom to be or do something."},
-     {t:"A government’s capacity to deliver services", why:"That is state capacity, a different idea."}]},
+     {t:"A government’s capacity to deliver services to its people", why:"That is state capacity, a different idea."}]},
    {id:"e4u14-q02", lesson:"e4u14-l1", level:2, q:"Kenji and Amara receive the same monthly income. Amara uses a wheelchair and her town has no accessible transport, so she can’t reach work or the clinic. What does the capability approach call the factors that make the difference?", options:[
      {t:"Conversion factors", ok:true, why:"Right. Personal (disability), social and environmental (transport) conditions affect how far the same resources become real freedoms."},
      {t:"Functionings", why:"Functionings are what people actually achieve; the question asks what shapes the gap."},
@@ -1190,23 +1252,23 @@ ICA.addUnit({
      {t:"0.40", why:"That is only the incidence (H); the MPI adjusts it for intensity."},
      {t:"1.8", why:"Check the decimals: 0.40 × 0.45 = 0.18."}]},
    {id:"e4u14-q06", lesson:"e4u14-l1", level:3, q:"A newspaper says: “The World Bank admits extreme poverty rose by 125 million in 2025.” What is the best correction?", options:[
-     {t:"The 2025 change raised the estimate for the same year (2022) because the Bank adopted new price data and a higher $3.00 line; it does not show that poverty rose in 2025", ok:true, why:"Right. The revision changed the measuring stick, not people’s lives."},
+     {t:"The revision raised the estimate for the same year (2022), using new prices and a $3.00 line", ok:true, why:"Right. It reflects new price data and a higher $3.00 line, and does not show that poverty rose in 2025: the revision changed the measuring stick, not people’s lives."},
      {t:"The figure is correct: a global recession pushed 125 million people into poverty", why:"The jump came from revising the line and price data for the same year."},
      {t:"Poverty can’t be measured, so the figure means nothing", why:"Measures have limits, but the issue here is a specific misreading of a revision."},
-     {t:"The World Bank measures poverty at market exchange rates, so currency changes caused it", why:"The line is in PPP dollars."}]},
+     {t:"The World Bank measures poverty at market exchange rates, so currency changes in 2025 caused it", why:"The line is in PPP dollars."}]},
    {id:"e4u14-q07", lesson:"e4u14-l1", level:1, q:"Who led the team that produced the first Human Development Report in 1990?", options:[
      {t:"Mahbub ul Haq", ok:true, why:"Right, the Pakistani economist working at UNDP, with Amartya Sen among his collaborators."},
      {t:"Raúl Prebisch", why:"Prebisch led ECLA and UNCTAD decades earlier."},
      {t:"Jeffrey Sachs", why:"Sachs is known for *The End of Poverty* (2005) and the Millennium Villages."},
      {t:"Esther Duflo", why:"Duflo is known for randomised trials in development."}]},
    {id:"e4u14-q08", lesson:"e4u14-l1", level:2, q:"What did the UN’s High-Level Expert Group on Beyond GDP propose in its report presented on 7 May 2026?", options:[
-     {t:"A dashboard of 31 indicators of equitable, inclusive and sustainable well-being, about half drawn from the SDGs", ok:true, why:"Right. Governments then began consultations and remain divided on whether to add a headline number."},
+     {t:"A dashboard of 31 indicators of well-being", ok:true, why:"Right: 31 indicators of equitable, inclusive and sustainable well-being, about half drawn from the SDGs. Governments then began consultations and remain divided on whether to add a headline number."},
      {t:"Abolishing GDP statistics", why:"The aim is to complement GDP, not abolish it."},
      {t:"Replacing the HDI with Gross National Happiness", why:"No such proposal was made."},
      {t:"A single global happiness score for every country", why:"The report proposed a dashboard; whether to add a headline number is still debated."}]},
    {id:"e4u14-q09", lesson:"e4u14-l1", level:3, q:"Lucía’s country ranks much higher on GNI per person than on the HDI. Which conclusion is best supported?", options:[
-     {t:"Its income is converting less well than usual into health and schooling, so she should look at how income is distributed and how services work", ok:true, why:"Right. A gap between the GNI and HDI ranks points to unusually weak conversion of income into health and education."},
-     {t:"The HDI must be wrong, because income determines development", why:"That assumes the conclusion; the HDI exists to show such gaps."},
+     {t:"Its income converts weakly into health and schooling", ok:true, why:"Right. A gap between the GNI and HDI ranks points to unusually weak conversion of income into health and education, so she should look at how income is distributed and how services work."},
+     {t:"The HDI must be wrong, because income alone determines development", why:"That assumes the conclusion; the HDI exists to show such gaps."},
      {t:"The country is in extreme poverty", why:"Neither ranking measures the extreme poverty headcount."},
      {t:"The country has high multidimensional poverty", why:"Possibly, but the ranking gap alone doesn’t show it; she would need MPI data."}]},
    /* ---- Lesson 2 ---- */
@@ -1216,8 +1278,8 @@ ICA.addUnit({
      {t:"Dependency and Development", why:"That is close to Cardoso and Faletto’s title."},
      {t:"The Making and Unmaking of the Third World", why:"That is the subtitle of Escobar’s *Encountering Development* (1995)."}]},
    {id:"e4u14-q11", lesson:"e4u14-l2", level:1, q:"What does the Prebisch–Singer thesis claim?", options:[
-     {t:"The prices of primary commodities tend to fall over time relative to manufactures", ok:true, why:"Right, so the terms of trade tend to move against exporters of raw materials."},
-     {t:"Free trade always benefits all countries equally", why:"Prebisch and Singer challenged that view."},
+     {t:"Primary commodity prices tend to fall relative to manufactures", ok:true, why:"Right: over time, so the terms of trade tend to move against exporters of raw materials."},
+     {t:"Free trade always benefits all countries equally, rich and poor", why:"Prebisch and Singer challenged that view."},
      {t:"Aid should be doubled to create a big push", why:"That is closer to Sachs or Rosenstein-Rodan."},
      {t:"Institutions are the main cause of prosperity", why:"That is Acemoglu, Johnson and Robinson."}]},
    {id:"e4u14-q12", lesson:"e4u14-l2", level:2, q:"A country exports copper. Over ten years copper prices fall by a third while the price of imported machinery rises. What has happened to its terms of trade, and which theory predicted this kind of trend?", options:[
@@ -1231,7 +1293,7 @@ ICA.addUnit({
      {t:"Walter Rodney, *How Europe Underdeveloped Africa* (1972)", why:"Rodney wrote a dependency history of Africa."},
      {t:"Dambisa Moyo, *Dead Aid* (2009)", why:"Moyo criticised aid to African governments, but not with this concept."}]},
    {id:"e4u14-q14", lesson:"e4u14-l2", level:2, q:"How does Cardoso and Faletto’s “dependent development” differ from Frank’s “development of underdevelopment”?", options:[
-     {t:"It allows that industrial growth can happen in dependent countries, shaped by local class alliances and foreign capital", ok:true, why:"Right. Frank stressed blocked development; Cardoso and Faletto stressed growth on dependent terms."},
+     {t:"It allows industrial growth in dependent countries", ok:true, why:"Right: growth shaped by local class alliances and foreign capital. Frank stressed blocked development; Cardoso and Faletto stressed growth on dependent terms."},
      {t:"It denies that colonialism mattered", why:"They kept the historical-structural view."},
      {t:"It argues that poor countries should copy Rostow’s stages", why:"That is modernisation theory."},
      {t:"It was based on studies of East Asia", why:"Their work was on Latin America."}]},
@@ -1241,18 +1303,18 @@ ICA.addUnit({
      {t:"The Prebisch–Singer thesis", why:"That is about commodity prices."},
      {t:"Embedded autonomy", why:"That describes effective developmental states, not depoliticisation."}]},
    {id:"e4u14-q16", lesson:"e4u14-l2", level:2, q:"Which is a standard criticism of post-development?", options:[
-     {t:"It romanticises the local and offers little to people who want health care, schooling and electricity", ok:true, why:"Right: the critique of Kiely (1999) and Nederveen Pieterse (2000)."},
+     {t:"It romanticises the local", ok:true, why:"Right. It also offers little to people who want health care, schooling and electricity. This is the critique of Kiely (1999) and Nederveen Pieterse (2000)."},
      {t:"It relies too heavily on randomised trials", why:"Post-development is critical and qualitative; it doesn’t use RCTs."},
      {t:"It ignores discourse and power", why:"Discourse and power are its central themes."},
      {t:"It treats GDP growth as the only goal", why:"It rejects that view."}]},
    {id:"e4u14-q17", lesson:"e4u14-l2", level:1, q:"Which concept did W. Arthur Lewis contribute to development economics in 1954?", options:[
-     {t:"A dual economy in which workers move from a traditional sector into a modern one", ok:true, why:"Right. Lewis shared the 1979 economics Nobel prize."},
+     {t:"The dual economy", ok:true, why:"Right: a dual economy in which workers move from a traditional sector into a modern one. Lewis shared the 1979 economics Nobel prize."},
      {t:"Embedded autonomy", why:"That is Peter Evans (1995)."},
      {t:"The capability approach", why:"That is Amartya Sen."},
      {t:"The elephant curve", why:"That is Lakner and Milanovic (2016)."}]},
    {id:"e4u14-q18", lesson:"e4u14-l2", level:3, q:"Tomás argues: “South Korea’s rise disproves every version of dependency theory.” What is the most accurate response?", options:[
-     {t:"It sits badly with the strong claim that ties to the core block development, but Cardoso and Faletto’s version allowed growth on dependent terms, and world-systems theory allows mobility", ok:true, why:"Right. A good seminar answer distinguishes versions of a theory before declaring it refuted."},
-     {t:"He is right: dependency theory has been abandoned by all scholars", why:"Dependency ideas still inform debates on value chains, commodities and debt."},
+     {t:"It challenges the strong version, but other versions allow growth on dependent terms", ok:true, why:"Right. It sits badly with the strong claim that ties to the core block development, but Cardoso and Faletto’s version allowed growth on dependent terms, and world-systems theory allows mobility. Distinguish versions of a theory before declaring it refuted."},
+     {t:"He is right: every scholar has abandoned dependency theory because of Korea and Taiwan", why:"Dependency ideas still inform debates on value chains, commodities and debt."},
      {t:"Korea is not relevant because it was never a colony", why:"Korea was a Japanese colony from 1910 to 1945."},
      {t:"Korea grew by delinking from world markets", why:"It grew through exports to world markets."}]},
    /* ---- Lesson 3 ---- */
@@ -1262,13 +1324,13 @@ ICA.addUnit({
      {t:"John Williamson", why:"Williamson named the Washington Consensus in 1989."},
      {t:"Chalmers Johnson", why:"Johnson coined “developmental state” for Japan in 1982."}]},
    {id:"e4u14-q20", lesson:"e4u14-l3", level:2, q:"In South Korea, a business group received cheap loans to build a shipyard but lost them when it failed to meet export targets. Which idea does this illustrate?", options:[
-     {t:"Amsden’s reciprocity: subsidies in exchange for performance standards", ok:true, why:"Right. Discipline tied to support is the core of Amsden’s account of Korea."},
+     {t:"Amsden’s reciprocity", ok:true, why:"Right: subsidies in exchange for performance standards. Discipline tied to support is the core of Amsden’s account of Korea."},
      {t:"Tied aid", why:"Tied aid is donor aid that must be spent in the donor country."},
      {t:"The Washington Consensus", why:"Williamson’s list did not include targeted subsidies."},
      {t:"The anti-politics machine", why:"That is Ferguson’s concept about development projects."}]},
    {id:"e4u14-q21", lesson:"e4u14-l3", level:1, q:"Which economies did the World Bank’s *East Asian Miracle* (1993) study?", options:[
-     {t:"Japan, Hong Kong, South Korea, Singapore, Taiwan, Indonesia, Malaysia and Thailand", ok:true, why:"Right: eight high-performing Asian economies, 1965–1990."},
-     {t:"China, India, Japan and South Korea", why:"China and India were not among the eight HPAEs."},
+     {t:"Japan, the four tigers, Indonesia, Malaysia and Thailand", ok:true, why:"Right: eight high-performing Asian economies (Japan, Hong Kong, South Korea, Singapore, Taiwan, Indonesia, Malaysia and Thailand), 1965–1990."},
+     {t:"China, India, Japan, South Korea, Taiwan, Vietnam and the Philippines", why:"China and India were not among the eight HPAEs."},
      {t:"Only the four tigers", why:"It also included Japan and three Southeast Asian economies."},
      {t:"All members of ASEAN", why:"It covered eight economies, three of them in Southeast Asia."}]},
    {id:"e4u14-q22", lesson:"e4u14-l3", level:2, q:"Peter Evans’s idea of “embedded autonomy” describes a state that…", options:[
@@ -1277,27 +1339,27 @@ ICA.addUnit({
      {t:"is captured by business groups", why:"That is embeddedness without autonomy."},
      {t:"extracts resources without developing the economy", why:"That is his predatory state."}]},
    {id:"e4u14-q23", lesson:"e4u14-l3", level:3, q:"Fatima compares two Southeast Asian countries with large natural resources and few external threats, and finds weaker developmental institutions than in Taiwan. Which explanation fits best?", options:[
-     {t:"Doner, Ritchie and Slater’s systemic vulnerability: without mass pressure, security threats and scarce resources together, elites had less reason to build capable institutions", ok:true, why:"Right. Their 2005 article explains exactly this Northeast–Southeast Asian contrast."},
+     {t:"Doner, Ritchie and Slater’s systemic vulnerability", ok:true, why:"Right. Without mass pressure, security threats and scarce resources together, elites had less reason to build capable institutions. Their 2005 article explains exactly this Northeast–Southeast Asian contrast."},
      {t:"Rostow’s stages: they had not reached take-off", why:"Stages don’t explain institutional quality."},
      {t:"Dependency: ties to the core blocked them", why:"Taiwan was at least as tied to the core."},
-     {t:"Cultural differences in work ethic", why:"The lesson warns against untested cultural claims; the systemic vulnerability argument is about political conditions."}]},
+     {t:"Cultural differences in work ethic between the regions", why:"The lesson warns against untested cultural claims; the systemic vulnerability argument is about political conditions."}]},
    {id:"e4u14-q24", lesson:"e4u14-l3", level:1, q:"In Williamson’s original Washington Consensus, which reform was NOT on the list?", options:[
-     {t:"Full liberalisation of short-term capital flows", ok:true, why:"Right. He listed openness to foreign direct investment only."},
+     {t:"Freeing short-term capital flows", ok:true, why:"Right: full liberalisation of short-term capital flows was not on it. He listed openness to foreign direct investment only."},
      {t:"Fiscal discipline", why:"Item 1 on the list."},
-     {t:"Privatisation", why:"Item 8 on the list."},
+     {t:"Privatisation of state enterprises", why:"Item 8 on the list."},
      {t:"Trade liberalisation", why:"Item 6 on the list."}]},
    {id:"e4u14-q25", lesson:"e4u14-l3", level:2, q:"What is Rodrik’s “one economics, many recipes” argument?", options:[
-     {t:"Sound economic principles can be met through very different policies, so countries should diagnose their own binding constraints", ok:true, why:"Right. It rejects a single blueprint while keeping common principles."},
-     {t:"All countries should follow the same ten reforms", why:"That is closer to how the Washington Consensus was often applied."},
+     {t:"Common principles, but different policies for each country", ok:true, why:"Right. Sound economic principles can be met through very different policies, so countries should diagnose their own binding constraints. It rejects a single blueprint while keeping common principles."},
+     {t:"All countries should follow the same ten reforms in the same order", why:"That is closer to how the Washington Consensus was often applied."},
      {t:"Economics is irrelevant to development", why:"Rodrik says the opposite: the principles matter, the policies vary."},
      {t:"China’s model should be copied everywhere", why:"Rodrik is sceptical of any universal model."}]},
    {id:"e4u14-q26", lesson:"e4u14-l3", level:2, q:"How did Robert Wade read *The East Asian Miracle* in 1996?", options:[
-     {t:"As “paradigm maintenance”: it acknowledged industrial policy, under Japanese pressure, but kept the market-friendly framework", ok:true, why:"Right. Wade analysed the politics behind the report."},
+     {t:"As “paradigm maintenance” by the World Bank", ok:true, why:"Right. The report acknowledged industrial policy, under Japanese pressure, but kept the market-friendly framework. Wade analysed the politics behind it."},
      {t:"As proof that free markets alone explain East Asia", why:"Wade argued for a governed market, not free markets alone."},
      {t:"As a study of China’s reforms", why:"China was not among the eight economies studied."},
      {t:"As a critique of Japan’s aid", why:"His argument was about the World Bank’s framework."}]},
    {id:"e4u14-q27", lesson:"e4u14-l3", level:3, q:"Oluwaseun’s government plans subsidies for a new electronics industry. Drawing on the developmental state literature, which design is most likely to win scholars’ approval?", options:[
-     {t:"Support tied to clear performance targets, such as exports or productivity, run by a capable agency that can withdraw support", ok:true, why:"Right. Amsden and Evans stress discipline and bureaucratic capacity, not subsidies alone."},
+     {t:"Support tied to performance targets, run by a capable agency", ok:true, why:"Right: targets such as exports or productivity, and an agency that can withdraw support. Amsden and Evans stress discipline and bureaucratic capacity, not subsidies alone."},
      {t:"Open-ended subsidies to whichever firms are politically connected", why:"That risks the capture Evans and others warn against."},
      {t:"Permanent protection from all imports", why:"East Asian states pushed firms to compete in export markets."},
      {t:"No conditions, because markets will discipline firms automatically", why:"The debate is about how states create discipline when protection removes market pressure."}]},
@@ -1333,7 +1395,7 @@ ICA.addUnit({
      {t:"33%", why:"That is the relative increase (15 ÷ 45), which should be labelled as such."},
      {t:"105 percentage points", why:"That adds the two groups; the effect is the difference."}]},
    {id:"e4u14-q34", lesson:"e4u14-l4", level:3, q:"A minister wants to copy a programme that worked in a well-run NGO trial in another country. Which question, raised by critics such as Deaton and Cartwright, should come first?", options:[
-     {t:"Why did it work there, and do the conditions that made it work exist here, at scale and run by government?", ok:true, why:"Right. That is the external-validity problem: the trial shows an effect in one setting, not everywhere."},
+     {t:"Do the conditions that made it work exist here, at scale?", ok:true, why:"Right: why did it work there, and would it work here, at scale and run by government? That is the external-validity problem: the trial shows an effect in one setting, not everywhere."},
      {t:"Was the original trial randomised?", why:"It was; the question is whether the result travels."},
      {t:"Can we skip evaluation because the trial proved it works?", why:"Critics argue for local testing, especially at scale."},
      {t:"Did the trial use enough decimal places?", why:"Precision isn’t the main problem; context is."}]},
@@ -1343,15 +1405,15 @@ ICA.addUnit({
      {t:"They were excluded from the forum", why:"They took part; the outcome document addressed them."},
      {t:"Their aid would be counted as ODA from 2012", why:"Busan did not change ODA rules."}]},
    {id:"e4u14-q36", lesson:"e4u14-l4", level:3, q:"Ana must present the debate on China’s development finance neutrally in a seminar. Which framing does that best?", options:[
-     {t:"Recipients often value its speed, infrastructure and fewer policy conditions; critics point to limited transparency and loans tied to Chinese firms; researchers stress comparing it with DAC donors on the same measures", ok:true, why:"Right. Attributed positions plus a methodological point, with no side taken."},
-     {t:"China’s finance is a debt trap designed to seize assets", why:"That is one contested claim; Unit 15 shows the evidence is disputed. Presenting it as fact is not neutral."},
-     {t:"China’s finance is purely generous and has no strategic goals", why:"That is also one-sided; all providers pursue interests."},
+     {t:"Recipients value its speed; critics cite poor transparency; researchers compare it with DAC donors", ok:true, why:"Right. Recipients often value its speed, infrastructure and fewer policy conditions; critics point to limited transparency and loans tied to Chinese firms; researchers stress comparing it with DAC donors on the same measures. Attributed positions plus a methodological point, with no side taken."},
+     {t:"China’s finance is a debt trap designed to seize assets, as critics and many Western governments have shown", why:"That is one contested claim; Unit 16 shows the evidence is disputed. Presenting it as fact is not neutral."},
+     {t:"China’s finance is purely generous and serves no strategic goals of any kind", why:"That is also one-sided; all providers pursue interests."},
      {t:"There is no information about China’s finance at all", why:"Researchers such as AidData estimate it from project records."}]},
    /* ---- Lesson 5 ---- */
    {id:"e4u14-q37", lesson:"e4u14-l5", level:1, q:"What did Acemoglu, Johnson and Robinson use to separate the effect of institutions from the effect of income in their 2001 article?", options:[
-     {t:"Historical death rates of European settlers in the colonies", ok:true, why:"Right. Settler mortality shaped the type of colony and its institutions, but should not affect income today directly, they argued."},
+     {t:"Historical death rates of European settlers", ok:true, why:"Right: in the colonies. Settler mortality shaped the type of colony and its institutions, but should not affect income today directly, they argued."},
      {t:"Randomised trials in former colonies", why:"Institutions can’t be randomised; they used history."},
-     {t:"Surveys of business confidence", why:"They used historical data on settler mortality."},
+     {t:"Surveys of business confidence in former colonies", why:"They used historical data on settler mortality."},
      {t:"The HDI", why:"The outcome was income per person, and the HDI didn’t exist for the colonial period."}]},
    {id:"e4u14-q38", lesson:"e4u14-l5", level:1, q:"For what did Acemoglu, Johnson and Robinson receive the 2024 economics Nobel prize?", options:[
      {t:"Studies of how institutions are formed and affect prosperity", ok:true, why:"Right: the prize motivation."},
@@ -1359,14 +1421,14 @@ ICA.addUnit({
      {t:"Measuring global poverty", why:"Not the prize motivation."},
      {t:"Theories of international trade", why:"Not the prize motivation."}]},
    {id:"e4u14-q39", lesson:"e4u14-l5", level:2, q:"Which critique argues that settlers brought skills and schooling as well as institutions, so settler mortality can’t isolate the effect of institutions?", options:[
-     {t:"The human capital critique of Glaeser and co-authors (2004)", ok:true, why:"Right. If settlers carried human capital, the same historical variable affects both."},
-     {t:"Albouy’s data critique (2012)", why:"Albouy questioned how the mortality data were assembled."},
+     {t:"The human capital critique (Glaeser and others)", ok:true, why:"Right: Glaeser and co-authors (2004). If settlers carried human capital, the same historical variable affects both."},
+     {t:"Albouy’s 2012 critique of the settler mortality data", why:"Albouy questioned how the mortality data were assembled."},
      {t:"Sachs’s geography critique", why:"Sachs stressed disease, soils and location."},
      {t:"Piketty’s r > g", why:"That is about wealth concentration within countries."}]},
    {id:"e4u14-q40", lesson:"e4u14-l5", level:2, q:"On the elephant curve for 1988–2008, which group is at the dip near the 80th global percentile?", options:[
-     {t:"Many in rich countries’ lower middle class, together with some weak performers", ok:true, why:"Right, though Corlett (2016) warns that the point mixes different countries."},
+     {t:"Many in rich countries’ lower middle class", ok:true, why:"Right, together with some weak performers, though Corlett (2016) warns that the point mixes different countries."},
      {t:"The global top 1%", why:"They are at the rising trunk on the far right."},
-     {t:"The global middle in Asia", why:"They are at the high point in the middle."},
+     {t:"The rising middle classes of China and other Asian economies", why:"They are at the high point in the middle."},
      {t:"The world’s poorest", why:"They are at the far left."}]},
    {id:"e4u14-q41", lesson:"e4u14-l5", level:1, q:"In Piketty’s shorthand r > g, what are r and g?", options:[
      {t:"The return on capital and the growth rate of the economy", ok:true, why:"Right. When r exceeds g, inherited wealth tends to grow faster than incomes from work."},
@@ -1374,8 +1436,8 @@ ICA.addUnit({
      {t:"Remittances and grants", why:"No; r is the return on capital."},
      {t:"The poverty rate and the Gini coefficient", why:"Those are inequality and poverty measures, not Piketty’s r and g."}]},
    {id:"e4u14-q42", lesson:"e4u14-l5", level:3, q:"Dmitri writes: “Confucian culture explains East Asia’s growth.” Which reply best reflects the lesson?", options:[
-     {t:"Weber once used Confucianism to explain stagnation; a cultural claim needs a measured, changeable trait and a mechanism, tested against institutional and policy explanations", ok:true, why:"Right. When the same culture explains opposite outcomes, it may be explaining neither."},
-     {t:"Culture can never matter for development", why:"Some cultural traits, such as trust, have been measured and linked to outcomes; the issue is how to study them."},
+     {t:"Test it: name a measured trait and a mechanism, and compare other explanations", ok:true, why:"Right. Weber once used Confucianism to explain stagnation; when the same culture explains opposite outcomes, it may be explaining neither. A cultural claim needs a measured, changeable trait and a mechanism, tested against institutional and policy explanations."},
+     {t:"Culture can never matter for development, so the claim should be dropped from the paper", why:"Some cultural traits, such as trust, have been measured and linked to outcomes; the issue is how to study them."},
      {t:"He is right because the region grew fast", why:"Correlation with growth doesn’t establish a cultural cause."},
      {t:"Culture is fixed by geography", why:"That conflates two different explanations."}]},
    {id:"e4u14-q43", lesson:"e4u14-l5", level:2, q:"Using the rule of 70, about how long does it take income per person to double at 7% growth a year?", options:[
@@ -1384,14 +1446,14 @@ ICA.addUnit({
      {t:"About 14 years", why:"That is 100 ÷ 7, which ignores compounding."},
      {t:"About 49 years", why:"That multiplies 7 by 7."}]},
    {id:"e4u14-q44", lesson:"e4u14-l5", level:3, q:"Priya argues in a seminar that Botswana proves institutions matter more than geography. What would make her argument strongest?", options:[
-     {t:"Showing the mechanism (how its institutions shaped decisions about diamond revenue), comparing with a similar neighbour, and answering the resource and inequality counter-arguments", ok:true, why:"Right: outcome, mechanism, comparison and counter-argument, the lesson’s five steps."},
+     {t:"A mechanism, a comparison with a similar neighbour, and replies to counter-arguments", ok:true, why:"Right: the mechanism (how its institutions shaped decisions about diamond revenue), a comparison, and answers to the resource and inequality counter-arguments, following the lesson’s steps."},
      {t:"Noting that Botswana is landlocked and stopping there", why:"That only rules out one simple geographic story."},
      {t:"Citing the 2024 Nobel prize as proof", why:"A prize recognises research; it doesn’t settle a specific case."},
-     {t:"Arguing that Botswana’s people are naturally more honest", why:"An untestable national-character claim, which the lesson warns against."}]},
+     {t:"Arguing that Botswana’s people are naturally more honest than people in neighbouring states", why:"An untestable national-character claim, which the lesson warns against."}]},
    {id:"e4u14-q45", lesson:"e4u14-l5", level:1, q:"Which statement about global inequality is most accurate?", options:[
-     {t:"For most of the last two centuries the gap between countries widened, but since about 2000 many poorer countries have grown faster than rich ones", ok:true, why:"Right: Pritchett’s “divergence, big time”, followed by more convergence in recent decades."},
+     {t:"Gaps between countries mostly widened until about 2000, then began to narrow", ok:true, why:"Right: for most of the last two centuries the gap widened (Pritchett’s “divergence, big time”), but since about 2000 many poorer countries have grown faster than rich ones."},
      {t:"Inequality between countries has fallen steadily since 1800", why:"Between-country gaps grew for most of that period."},
      {t:"Global inequality means only inequality within countries", why:"It can mean between countries, within them, or among all the world’s people."},
-     {t:"The elephant curve shows that everyone gained equally from globalisation", why:"It shows very unequal gains across the distribution."}]}
+     {t:"The elephant curve shows that everyone gained equally from globalisation since 1988", why:"It shows very unequal gains across the distribution."}]}
   ]
 });

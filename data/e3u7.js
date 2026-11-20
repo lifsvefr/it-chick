@@ -6,7 +6,7 @@ ICA.addUnit({
  n:7,
  title:"N4 grammar II",
  icon:"🧩",
- blurb:"The passive (including the “suffering” passive), the causative and the causative-passive; four ways to say how you know something (～そう, ～そうだ, ～ようだ・みたい, ～らしい); transitive and intransitive verb pairs with ～てある and ～ている; ～ながら, ～のに and ～し; and a first look at respectful and humble speech.",
+ blurb:"The passive (including the “suffering” passive), the causative and the causative-passive; four ways to say how you know something (～そう, ～そうだ, ～ようだ・みたい, ～らしい); transitive and intransitive verb pairs with ～てある and ～ている; ～ながら, ～のに and ～し; and a first look at respectful and humble speech; then degree and ease with ～すぎる, ～やすい and ～にくい, ways of doing with ～[方]{かた}, other people’s wishes with ～たがる, direction and change with ～てくる and ～ていく, and questions inside sentences with ～か and ～かどうか.",
  goals:[
   "Build the passive, causative and causative-passive forms of any verb, group by group, including する and [来]{く}る",
   "Use the passive for things done to people and things, and the “suffering” passive for events that affect you",
@@ -14,7 +14,8 @@ ICA.addUnit({
   "Choose between ～そう, ～そうだ, ～ようだ, ～みたい and ～らしい according to how you know something",
   "Use transitive and intransitive pairs such as [開]{あ}ける and [開]{あ}く with を and が, and tell ～てある from ～ている",
   "Join ideas with ～ながら, ～のに and ～し",
-  "Recognise the most common respectful and humble verbs, and use a few of them safely"
+  "Recognise the most common respectful and humble verbs, and use a few of them safely",
+  "Say “too much”, “easy to”, “hard to” and “the way to” on the ます stem, describe others’ wishes with ～たがる, use ～てくる and ～ていく for direction and change, and put questions inside sentences with ～か and ～かどうか"
  ],
  read:[
   {book:"taekim", where:"Special Expressions: “Causative and Passive Verbs”, “Honorific and Humble Forms” and “Similarity or hearsay”"},
@@ -311,6 +312,40 @@ ICA.addUnit({
       {t:"[来]{く}られて", flag:true, why:"Wrong reading. The passive of [来]{く}る is read こられる: [来]{こ}られて."},
       "、[勉強]{べんきょう}できませんでした。"
      ]
+    },
+    {
+     id:"e3u7-l1-x9",
+     type:"type",
+     q:"Rodrigo tells a colleague what happened on his way to work: “This morning a stranger asked me the way.” Type the passive in hiragana, polite past: 「[今朝]{けさ}、[知]{し}らない人に[道]{みち}を（　）。」 (聞く, ask)",
+     answer:"きかれました",
+     wrongs:[
+      {v:"ききました", why:"That is active: Rodrigo asked the way. He was on the receiving end, and the stranger takes に, so use the passive: 聞かれました."},
+      {v:"きかられました", why:"聞く is godan, so it takes れる after the a-sound: 聞か + れる → 聞かれる. られる is for ichidan verbs."},
+      {v:"きけました", why:"聞ける is the potential (“could ask”). The passive uses the a-sound: 聞かれる."}
+     ],
+     why:"聞く → 聞かない → 聞かれる → 聞かれました. The doer, the stranger, takes に."
+    },
+    {
+     id:"e3u7-l1-x10",
+     type:"type",
+     q:"A guidebook says: “This temple was built 800 years ago.” Type the passive in hiragana, polite past: 「このお[寺]{てら}は[八百年前]{はっぴゃくねんまえ}に（　）。」 ([建]{た}てる, build)",
+     answer:"たてられました",
+     wrongs:[
+      {v:"たてれました", why:"[建]{た}てる is ichidan, so drop る and add られる: [建]{た}てられる. Without ら it isn’t a passive."},
+      {v:"たてました", why:"That is active: the temple would be doing the building. The temple is what was built: [建]{た}てられました."}
+     ],
+     why:"Ichidan: [建]{た}てる → [建]{た}て + られる → [建]{た}てられました. This passive about things, with no doer named, is common in guides and the news."
+    },
+    {
+     id:"e3u7-l1-x11",
+     type:"type",
+     q:"Type the particle that marks the doer: 「トビーさんは[犬]{いぬ}（　）かまれました。」 (“Toby was bitten by a dog.”)",
+     answer:"に",
+     wrongs:[
+      {v:"が", why:"In a passive the doer takes に. が would make the dog the one that was bitten."},
+      {v:"を", why:"を marks the object of an active verb. In a passive about a person, the doer takes に."}
+     ],
+     why:"Passive: the person it happens to is the topic (トビーさんは), and the doer takes に: [犬]{いぬ}にかまれました."
     }
    ],
    apply:{
@@ -628,6 +663,42 @@ ICA.addUnit({
       {t:"書かさせられました", flag:true, why:"Wrong. The causative of 書く is 書かせる, with no extra さ: 書かせられました, or the short form 書かされました."},
       "。"
      ]
+    },
+    {
+     id:"e3u7-l2-x9",
+     type:"type",
+     q:"Type the causative in hiragana, polite past: 「先生は学生に[教科書]{きょうかしょ}を（　）。」 (“The teacher had the students read the textbook.” 読む, read)",
+     answer:"よませました",
+     wrongs:[
+      {v:"よまれました", why:"読まれる is the passive (“was read”). The causative of a godan verb is the a-sound + せる: 読ませる."},
+      {v:"よみさせました", why:"させる doesn’t attach to the ます stem. For godan verbs: 読ま + せる → 読ませる."},
+      {v:"よまさせました", why:"Godan verbs take せる, with no extra さ: 読ませる."}
+     ],
+     why:"読む → 読まない → 読ませる → 読ませました. The person who is made to do it, the students, takes に."
+    },
+    {
+     id:"e3u7-l2-x10",
+     type:"type",
+     q:"Mariya and Toby are at a café. Toby paid last time, so Mariya says: “Let me pay today.” Type the missing part in hiragana: 「[今日]{きょう}は[私]{わたし}に（　）ください。」 ([払]{はら}う, pay)",
+     answer:"はらわせて",
+     wrongs:[
+      {v:"はらさせて", why:"Verbs ending in う use わ before せる, as in the ない-form [払]{はら}わない: [払]{はら}わせて."},
+      {v:"はらいさせて", why:"させる doesn’t attach to the ます stem. Godan verbs take the a-sound + せる: [払]{はら}わせる."},
+      {v:"はらって", why:"[払]{はら}ってください asks Toby to pay. To ask to be allowed to pay yourself, use the causative: [払]{はら}わせてください."}
+     ],
+     why:"Causative て-form + ください asks to be allowed to do something: [払]{はら}う → [払]{はら}わせる → [払]{はら}わせてください, “please let me pay”."
+    },
+    {
+     id:"e3u7-l2-x11",
+     type:"type",
+     q:"Yến talks about her childhood: “When I was a child, my mother made me practise the piano every day.” Type the causative-passive in hiragana, polite past: 「子どものころ、母に毎日ピアノを（　）。」 ([練習]{れんしゅう}する, practise)",
+     answer:"れんしゅうさせられました",
+     wrongs:[
+      {v:"れんしゅうさせました", why:"That is the causative: Yến made someone else practise. She was the one made to practise, so add the passive: させられました."},
+      {v:"れんしゅうされました", why:"される is the passive of する (“was practised”). Being made to do something is させられる."},
+      {v:"れんしゅうさされました", why:"The short form ～される is only for godan verbs. する always becomes させられる."}
+     ],
+     why:"する → させる (causative) → させられる (causative-passive): [練習]{れんしゅう}させられました, “was made to practise”. The person who made her do it takes に."
     }
    ],
    apply:{
@@ -974,6 +1045,39 @@ ICA.addUnit({
       {t:"～そうです after the ます stem", why:"This is appearance そう, “it looks as if…”, which describes what you see, not a conclusion in a report."},
       {t:"～っぽいです", why:"っぽい is casual slang for “-ish, seems like”, not for reports."}
      ]
+    },
+    {
+     id:"e3u7-l3-x9",
+     type:"type",
+     q:"Rodrigo sees Fumiko carrying a big box: “That box looks heavy. Shall I carry it?” Type the appearance form in hiragana: 「ふみこさん、その[箱]{はこ}、（　）ですね。[持]{も}ちましょうか。」 ([重]{おも}い, heavy)",
+     answer:"おもそう",
+     wrongs:[
+      {v:"おもいそう", why:"For appearance, drop the い: [重]{おも}そう. With the い, [重]{おも}いそうです is hearsay: “I hear it’s heavy”."},
+      {v:"おもさそう", why:"Only いい and ない add さ (よさそう, なさそう). Other い-adjectives just drop い: [重]{おも}そう."}
+     ],
+     why:"Appearance: い-adjective minus い + そう. Rodrigo is judging by what he sees, so [重]{おも}そうですね."
+    },
+    {
+     id:"e3u7-l3-x10",
+     type:"type",
+     q:"Kaito and Mariya walk past a new café. Kaito says: “This place looks good. Let’s try it.” Type the appearance form of いい in hiragana: 「この[店]{みせ}、（　）だね。[入]{はい}ってみよう。」",
+     answer:"よさそう",
+     wrongs:[
+      {v:"いいそう", why:"いいそうだ is hearsay: “I hear it’s good”. For appearance, いい changes to よ and adds さ: よさそう."},
+      {v:"よそう", why:"いい is irregular: よ + さ + そう. Without さ, よそう is a different word ([予想]{よそう}, a guess or forecast)."}
+     ],
+     why:"いい → よさそう, one of the two irregulars (with ない → なさそう). Kaito is going by how the café looks."
+    },
+    {
+     id:"e3u7-l3-x11",
+     type:"type",
+     q:"Aoi told you about a new café. You pass the news on: “According to Aoi, a new café is opening in front of the station.” Type the missing verb in hiragana: 「あおいさんの話では、[駅前]{えきまえ}に[新]{あたら}しいカフェが（　）そうです。」 (できる, open, be built)",
+     answer:["できる", "できた"],
+     wrongs:[
+      {v:"でき", why:"The ます stem + そう is appearance: できそう means “it looks as if it will be possible”. For what you heard, use the plain form: できるそうです."},
+      {v:"できるだ", why:"Hearsay そうだ follows the plain form directly. Only nouns and な-adjectives take だ before it."}
+     ],
+     why:"Hearsay: plain form + そうです. ～の話では (from what … says) names the source. できるそうです is “is opening”; できたそうです is “has opened”."
     }
    ],
    apply:{
@@ -1307,6 +1411,39 @@ ICA.addUnit({
       {t:"つけてありました", why:"～てある means someone switched it on deliberately and left it on. Here it came on by itself."},
       {t:"ついてありました", why:"～てある goes only with transitive verbs, and つく is intransitive."}
      ]
+    },
+    {
+     id:"e3u7-l4-x9",
+     type:"type",
+     q:"Type the verb in hiragana, polite past: “The door closed in the wind.” 「[風]{かぜ}で、ドアが（　）。」 ([閉]{し}める / [閉]{し}まる)",
+     answer:"しまりました",
+     wrongs:[
+      {v:"しめました", why:"[閉]{し}める is transitive: someone closes something (を). Nobody closed the door; it closed by itself, so use the intransitive [閉]{し}まる."},
+      {v:"しまいました", why:"[閉]{し}まる is godan: [閉]{し}まります, [閉]{し}まりました. (しまいました is the ending of ～てしまう.)"}
+     ],
+     why:"ドアが + intransitive [閉]{し}まる: the door closed, with no one doing it. The wind is the cause (で), not a doer."
+    },
+    {
+     id:"e3u7-l4-x10",
+     type:"type",
+     q:"Before a trip, Mariya checks her bag: “The map is already in the bag (I put it there).” Type the て-form in hiragana: 「[地図]{ちず}は、もうかばんに（　）あります。」 ([入]{い}れる / [入]{はい}る)",
+     answer:"いれて",
+     wrongs:[
+      {v:"はいって", why:"～てある needs a transitive verb, one that someone does to something: [入]{い}れる. With [入]{はい}る, say かばんに[入]{はい}っています."},
+      {v:"いれって", why:"[入]{い}れる is ichidan, so its て-form is just [入]{い}れて, with no small っ."}
+     ],
+     why:"Transitive [入]{い}れる + てある: someone put it in on purpose, and it is still there: [地図]{ちず}は、もうかばんに[入]{い}れてあります."
+    },
+    {
+     id:"e3u7-l4-x11",
+     type:"type",
+     q:"Cheska takes a glass out of the cupboard: “Oh, this glass is broken.” Type the て-form in hiragana: 「あ、このコップ、（　）いますね。」 ([割]{わ}る / [割]{わ}れる)",
+     answer:"われて",
+     wrongs:[
+      {v:"わって", why:"[割]{わ}っています uses the transitive [割]{わ}る: someone is breaking it. For the state of the glass, use the intransitive: [割]{わ}れています."},
+      {v:"われって", why:"[割]{わ}れる is ichidan, so its て-form is just [割]{わ}れて, with no small っ."}
+     ],
+     why:"Intransitive verb + ている describes the state after a change: [割]{わ}れています, “is broken”."
     }
    ],
    apply:{
@@ -1651,6 +1788,40 @@ ICA.addUnit({
       {t:"[少々]{しょうしょう}お[待]{ま}ちになります。", why:"This describes the customer waiting, as a statement; it isn’t a request."},
       {t:"[少々]{しょうしょう}[待]{ま}たれてください。", why:"The passive-form respect doesn’t combine with ください. Use お[待]{ま}ちください."}
      ]
+    },
+    {
+     id:"e3u7-l5-x9",
+     type:"type",
+     q:"Fumiko warns Rodrigo: “Walking while looking at your phone is dangerous.” Type the missing part in hiragana: 「スマホを（　）[歩]{ある}くのは[危]{あぶ}ないですよ。」 (見る, look)",
+     answer:"みながら",
+     wrongs:[
+      {v:"みるながら", why:"ながら attaches to the ます stem, not the dictionary form: 見ます → 見 + ながら."},
+      {v:"みてながら", why:"No て-form here. ます stem + ながら: 見ながら."}
+     ],
+     why:"ます stem + ながら: one person doing two things at once. The main action, walking, comes last."
+    },
+    {
+     id:"e3u7-l5-x10",
+     type:"type",
+     q:"Type the missing part in hiragana: “Yến is good at Japanese, and yet she always says ‘I’ve still got a long way to go’.” 「イエンさんは日本語が[上手]{じょうず}（　）、いつも「まだまだです」と[言]{い}います。」",
+     answer:"なのに",
+     wrongs:[
+      {v:"のに", why:"[上手]{じょうず} is a な-adjective, and な-adjectives and nouns take な before のに: [上手]{じょうず}なのに."},
+      {v:"だのに", why:"だ changes to な before のに, just as before ので: [上手]{じょうず}なのに."}
+     ],
+     why:"のに means “even though”: Yến is good, so you would expect her to say so, but she doesn’t. な-adjectives and nouns take な before のに."
+    },
+    {
+     id:"e3u7-l5-x11",
+     type:"type",
+     q:"At Aoi’s internship, a colleague in her own team asks where the department head is. Aoi answers with respect: “He’s in the meeting room now.” Type the respectful verb in hiragana: 「[部長]{ぶちょう}は今、[会議室]{かいぎしつ}に（　）。」 (いる, be)",
+     answer:"いらっしゃいます",
+     wrongs:[
+      {v:"いらっしゃります", why:"いらっしゃる is one of the special godan verbs whose ます-form uses い: いらっしゃいます."},
+      {v:"おります", why:"おる is humble, for what you or your side do. Inside the team, the department head is someone to respect. (To a caller from another company, Aoi would treat him as her side and say おります: that is ウチ・ソト.)"},
+      {v:"います", why:"います is polite but not respectful. For a superior, use the special respectful verb いらっしゃる."}
+     ],
+     why:"いる → respectful いらっしゃる → いらっしゃいます. Respectful verbs are for what the people you respect do."
     }
    ],
    apply:{
@@ -1708,9 +1879,581 @@ ICA.addUnit({
      note:"Lesson 18 “I would be happy if you would allow me to work there.” brings keigo together in a job interview."
     }
    ]
+  },
+  {
+   id:"e3u7-l6",
+   title:"Too much, easy or hard, how to, wants to: ～すぎる, ～やすい・～にくい, ～かた and ～たがる",
+   minutes:55,
+   hook:{
+    q:"Kaito tastes the curry he is making and says: 「ちょっと[辛]{から}すぎる。」 What does he mean?",
+    options:["It’s a bit too spicy.", "It’s spicy enough now.", "It isn’t spicy at all.", "It was spicy before."],
+    answer:0,
+    reveal:"**It’s a bit too spicy.** すぎる means “go past, exceed”. After the stem of an adjective or a verb it means “too much”: [辛]{から}すぎる (too spicy), [食]{た}べすぎる (eat too much). This lesson covers five patterns that all attach to the same stem: ～すぎる, ～やすい (easy to), ～にくい (hard to), ～[方]{かた} (the way to) and ～たがる (someone else wants to)."
+   },
+   goals:[
+    "Say “too much” with ～すぎる after verb and adjective stems, including よすぎる and なさすぎる",
+    "Say that something is easy or hard to do with ～やすい and ～にくい, and conjugate them as い-adjectives",
+    "Name the way of doing something with ～[方]{かた} ([書]{か}き[方]{かた}, [使]{つか}い[方]{かた}), changing を to の",
+    "Describe what someone else wants with ～たがる and ～たがっている, and use it with care",
+    "Build all five patterns from the ます stem without mixing up the forms"
+   ],
+   learn:[
+    {
+     h:"One stem, five patterns",
+     body:[
+      {lead:"Each pattern in this lesson attaches to the ます stem you know from Unit 2: [書]{か}きます → [書]{か}き. Learn the stem once and you have all five."},
+      {
+       fig:"<svg viewBox=\"0 0 340 294\"><defs><marker id=\"e3u7a9\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">One stem, five patterns</text><rect class=\"d-gold\" x=\"6\" y=\"124\" width=\"100\" height=\"60\" rx=\"8\" stroke-width=\"2\"/><text x=\"56\" y=\"148\" text-anchor=\"middle\">かきます</text><text x=\"56\" y=\"170\" text-anchor=\"middle\">→ かき</text><path class=\"d-ink\" d=\"M106 136L148 58\" stroke-width=\"1.5\" marker-end=\"url(#e3u7a9)\"/><path class=\"d-ink\" d=\"M106 146L148 108\" stroke-width=\"1.5\" marker-end=\"url(#e3u7a9)\"/><path class=\"d-ink\" d=\"M106 154L148 160\" stroke-width=\"1.5\" marker-end=\"url(#e3u7a9)\"/><path class=\"d-ink\" d=\"M106 162L148 210\" stroke-width=\"1.5\" marker-end=\"url(#e3u7a9)\"/><path class=\"d-ink\" d=\"M106 172L148 262\" stroke-width=\"1.5\" marker-end=\"url(#e3u7a9)\"/><rect class=\"d-panel\" x=\"150\" y=\"34\" width=\"184\" height=\"44\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"160\" y=\"52\">かきすぎる</text><text class=\"s\" x=\"160\" y=\"70\">write too much</text><rect class=\"d-panel\" x=\"150\" y=\"86\" width=\"184\" height=\"44\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"160\" y=\"104\">かきやすい</text><text class=\"s\" x=\"160\" y=\"122\">easy to write</text><rect class=\"d-panel\" x=\"150\" y=\"138\" width=\"184\" height=\"44\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"160\" y=\"156\">かきにくい</text><text class=\"s\" x=\"160\" y=\"174\">hard to write</text><rect class=\"d-panel\" x=\"150\" y=\"190\" width=\"184\" height=\"44\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"160\" y=\"208\">かきかた</text><text class=\"s\" x=\"160\" y=\"226\">the way to write (a noun)</text><rect class=\"d-panel\" x=\"150\" y=\"242\" width=\"184\" height=\"44\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"160\" y=\"260\">かきたがる</text><text class=\"s\" x=\"160\" y=\"278\">someone wants to write</text></svg>",
+       alt:"The ます form かきます gives the stem かき. Arrows lead from the stem to five patterns: かきすぎる, write too much; かきやすい, easy to write; かきにくい, hard to write; かきかた, the way to write (a noun); かきたがる, someone wants to write.",
+       cap:"[書]{か}きすぎる, [書]{か}きやすい, [書]{か}きにくい, [書]{か}き[方]{かた}, [書]{か}きたがる: one stem, five meanings. ～すぎる also attaches to adjective stems."
+      },
+      "The [[masu-stem]] is the form before ます: [食]{た}べます → [食]{た}べ, [飲]{の}みます → [飲]{の}み, します → し, [来]{き}ます → [来]{き}. Only ～すぎる also takes adjectives, so it comes first."
+     ]
+    },
+    {
+     h:"Too much: ～すぎる",
+     body:[
+      "[[sugiru|すぎる]] is an ichidan verb meaning “go past, exceed”. Attach it like this:",
+      {table:[["Word type", "Rule", "Examples"], ["verb", "ます stem + すぎる", "[食]{た}べすぎる, [飲]{の}みすぎる, [働]{はたら}きすぎる"], ["い-adjective", "drop い + すぎる", "[高]{たか}すぎる, [辛]{から}すぎる"], ["な-adjective", "stem + すぎる", "[静]{しず}かすぎる, [複雑]{ふくざつ}すぎる"], ["いい, ない", "add さ", "よすぎる, ([時間]{じかん}が) なさすぎる"]]},
+      "Like any ichidan verb it conjugates: すぎます, すぎた, すぎない, すぎて. Its stem すぎ also works as a noun: [食]{た}べすぎ (overeating), [飲]{の}みすぎ (drinking too much).",
+      {
+       ex:"[昨日]{きのう}は[飲]{の}みすぎました。[頭]{あたま}が[痛]{いた}いです。\nI drank too much yesterday. My head hurts.\n\nこの[部屋]{へや}は、[一人]{ひとり}には[広]{ひろ}すぎます。\nThis room is too big for one person.\n\nテストが[簡単]{かんたん}すぎて、つまらなかったです。\nThe test was too easy, so it was boring.\n\nまりや：このかばん、[重]{おも}すぎ！\nMariya: This bag is way too heavy!",
+       label:"～すぎる"
+      },
+      "すぎる is usually negative: “too much” means there is a problem. For a positive “very”, use とても: とてもおいしい. (Young people do say おいしすぎる as strong praise, but that is slang.)",
+      "One pair to watch: [少]{すく}ない (few) is an ordinary い-adjective, so it becomes [少]{すく}なすぎる. Only ない meaning “there isn’t” takes さ, like いい: [時間]{じかん}がなさすぎる (there’s far too little time).",
+      "Two more patterns you will hear every day. For “too many” or “too much” of something, use [多]{おお}すぎる: [人]{ひと}が[多]{おお}すぎる (there are too many people). And ～すぎて gives a reason for a problem that follows: [忙]{いそが}しすぎて、[寝]{ね}る[時間]{じかん}がない (I’m so busy I have no time to sleep), [辛]{から}すぎて[食]{た}べられない (too spicy to eat)."
+     ]
+    },
+    {
+     h:"Easy and hard to do: ～やすい and ～にくい",
+     body:[
+      "Add [[yasui-nikui|やすい]] (easy) or にくい (hard) to the ます stem. The result is an い-adjective, so it conjugates like one: [読]{よ}みやすくない, [読]{よ}みにくかった, [読]{よ}みやすくて.",
+      {
+       ex:"この[辞書]{じしょ}は[字]{じ}が[大]{おお}きくて、[読]{よ}みやすいです。\nThis dictionary has large print, so it’s easy to read.\n\nこのペンは[書]{か}きにくいです。\nThis pen is hard to write with.\n\n[汐浦]{しおうら}は[静]{しず}かで、[住]{す}みやすい[町]{まち}です。\nShioura is quiet and an easy place to live.\n\nこの[靴]{くつ}は[軽]{かる}くて、[歩]{ある}きやすいですね。\nThese shoes are light and easy to walk in, aren’t they?",
+       label:"～やすい and ～にくい"
+      },
+      "やすい has a second meaning: “likely to, tends to”. It is used for things that happen easily, often unwelcome ones:",
+      {
+       ex:"このコップは[割]{わ}れやすいので、[気]{き}をつけてください。\nThis glass breaks easily, so please be careful.\n\n[冬]{ふゆ}は[風邪]{かぜ}をひきやすいです。\nIt’s easy to catch a cold in winter.",
+       label:"やすい: tends to"
+      },
+      {list:[
+        "**Hard, or impossible?** にくい means difficult but possible: この[字]{じ}は[読]{よ}みにくい (this handwriting is hard to read). The potential negative from Unit 6 means you can’t at all: この[字]{じ}は[読]{よ}めない (I can’t read this handwriting).",
+        "**Not the same やすい.** [安]{やす}い (cheap) and [易]{やさ}しい (easy) are different words. After a stem, やすい is usually written in hiragana.",
+        "**More at N3.** ～づらい also means “hard to”, with a feeling that it is uncomfortable for you: [言]{い}いづらい (awkward to say)."
+      ]}
+     ]
+    },
+    {
+     h:"The way to do it: ～[方]{かた}",
+     body:[
+      "[方]{かた} after a ます stem makes a noun meaning “the way of doing”: [書]{か}き[方]{かた} (how to write), [読]{よ}み[方]{かた} (how to read), [使]{つか}い[方]{かた} (how to use), [行]{い}き[方]{かた} (how to get there), [作]{つく}り[方]{かた} (how to make). The glossary entry is [[kata-way]].",
+      "Because the result is a noun, the particles change. The object takes の instead of を: [漢字]{かんじ}を[書]{か}く → [漢字]{かんじ}の[書]{か}き[方]{かた}. A destination keeps its particle and adds の: [駅]{えき}までの[行]{い}き[方]{かた}, [駅]{えき}への[行]{い}き[方]{かた} (how to get to the station).",
+      {
+       ex:"この[漢字]{かんじ}の[読]{よ}み[方]{かた}を[教]{おし}えてください。\nPlease tell me how to read this kanji.\n\n[駅]{えき}までの[行]{い}き[方]{かた}が[分]{わ}かりません。\nI don’t know how to get to the station.\n\nかいとさんに、そばの[作]{つく}り[方]{かた}を[習]{なら}いました。\nI learned how to make soba from Kaito.\n\n[洗濯機]{せんたくき}の[使]{つか}い[方]{かた}、[分]{わ}かる？\nDo you know how to use the washing machine?",
+       label:"～[方]{かた}"
+      },
+      "する verbs work a little differently: [勉強]{べんきょう}する becomes [勉強]{べんきょう}の[仕方]{しかた} (or [勉強]{べんきょう}のしかた), the way of studying. ✗ [勉強]{べんきょう}し[方]{かた}. The set phrase [仕方]{しかた}がない means “it can’t be helped”.",
+      {warn:"Don’t confuse this [方]{かた} (way) with [方]{ほう} (side) in ～より～のほうが and ～たほうがいい. Same kanji, different reading and meaning: [書]{か}き[方]{かた} (how to write), [書]{か}いたほうがいい (you’d better write)."}
+     ]
+    },
+    {
+     h:"What others want: ～たがる",
+     body:[
+      "In Unit 3 you learned ～たい (want to). It describes **your own** wish, or asks about the listener’s: [行]{い}きたいですか. Japanese is careful about stating what is going on in someone else’s mind, so for a third person ～たいです sounds odd: ✗ そうたくんは[猫]{ねこ}に[会]{あ}いたいです.",
+      "Instead, describe what you can see, or what you were told:",
+      {list:[
+        "**～たがる / ～たがっている** (shows signs of wanting): [[tagaru]]. Add たがる to the ます stem; it conjugates as a godan verb. ～たがっている describes a particular person now; ～たがる describes a habit or people in general.",
+        "**～たいと[言]{い}っていました** (said they want to), from Unit 5.",
+        "**～たいそうです / ～たいらしいです** (I hear they want to), from Lesson 3."
+      ]},
+      {table:[["Form", "Example", "Meaning"], ["～たがっている", "そうたくんは[猫]{ねこ}に[会]{あ}いたがっています。", "Sōta wants to see the cat."], ["～たがる (habit)", "[子]{こ}どもは[何]{なん}でも[自分]{じぶん}でやりたがります。", "Children want to do everything themselves."], ["～たがらない", "[弟]{おとうと}は[歯医者]{はいしゃ}に[行]{い}きたがりません。", "My little brother doesn’t want to go to the dentist."]]},
+      "With たい, the object can take が or を ([水]{みず}が[飲]{の}みたい / [水]{みず}を[飲]{の}みたい). With たがる it is always を: [水]{みず}を[飲]{の}みたがっている (✗ [水]{みず}が[飲]{の}みたがっている). The same がる turns some feeling adjectives into verbs: [寒]{さむ}がる (feel cold, act cold), [欲]{ほ}しがる (want something): そうたくんは[新]{あたら}しいゲームを[欲]{ほ}しがっています.",
+      {warn:"～たがる describes wanting from the outside, the way you might describe a child, so it can sound rude about people above you, and you never use it to the person themselves. Ask ～たいですか, or offer something (コーヒーはいかがですか). About someone above you, the polite choice is ～たいとおっしゃっていました, from Lesson 5."}
+     ]
+    },
+    {
+     h:"Putting the patterns together",
+     body:[
+      "The five patterns combine with each other and with patterns from earlier units. A few combinations are so common that they are worth learning whole:",
+      {list:[
+        "**[使]{つか}い[方]{かた}が[分]{わ}かりにくい**: the way to use it is hard to understand. ～[方]{かた} is a noun, so it can be the subject of another pattern.",
+        "**[食]{た}べすぎないほうがいい**: you’d better not eat too much. すぎる is a verb, so it has a ない-form: すぎない.",
+        "**[読]{よ}みやすくなりました**: it has become easier to read. やすい is an い-adjective, so it takes く before なる.",
+        "**[行]{い}きたがらない**: doesn’t want to go. たがる is a godan verb: たがらない, たがった, たがっている."
+      ]}
+     ]
+    },
+    {
+     h:"In conversation: the soba lesson",
+     body:[
+      "Kaito grew up in his family’s soba shop, and Rodrigo has asked him to teach him. They speak casually, as friends do.",
+      {
+       ex:"ロドリゴ：かいと、これ、[切]{き}りにくいよ。\nかいと：[包丁]{ほうちょう}の[持]{も}ち[方]{かた}がちょっと[違]{ちが}う。こう[持]{も}つと、[切]{き}りやすいよ。\nロドリゴ：あ、ほんとだ！でも、ちょっと[太]{ふと}すぎる？\nかいと：[大丈夫]{だいじょうぶ}。[最初]{さいしょ}はみんなそうだから。\nロドリゴ：メキシコの[妹]{いもうと}も、[日本]{にほん}のそばを[食]{た}べたがってるんだ。[作]{つく}り[方]{かた}、[送]{おく}ってもいい？\nかいと：いいよ。[今度]{こんど}、ゆっくり[説明]{せつめい}する。\nRodrigo: Kaito, this is hard to cut.\nKaito: You’re holding the knife slightly wrong. If you hold it like this, it’s easier to cut.\nRodrigo: Oh, you’re right! But is it a bit too thick?\nKaito: It’s fine. Everyone does that at first.\nRodrigo: My sister in Mexico wants to try Japanese soba too. Can I send her the recipe?\nKaito: Sure. Next time I’ll explain it properly.",
+       label:"The soba lesson"
+      },
+      {list:[
+        "**[切]{き}りにくい / [切]{き}りやすい**: hard and easy to cut, on the ます stem [切]{き}り.",
+        "**[持]{も}ち[方]{かた}**: the way of holding; **[作]{つく}り[方]{かた}**: the way of making, here “the recipe”.",
+        "**[太]{ふと}すぎる？**: too thick, with a rising voice as a casual question.",
+        "**[食]{た}べたがってる**: Rodrigo describes his sister’s wish with ～たがっている (casual ～たがってる), not ～たい."
+      ]}
+     ]
+    },
+    {
+     h:"Common mistakes",
+     body:[
+      {table:[["✗ Mistake", "✓ Correct", "Why"], ["[高]{たか}いすぎる", "[高]{たか}すぎる", "Drop the い before すぎる."], ["[静]{しず}かなすぎる", "[静]{しず}かすぎる", "な-adjectives use the bare stem."], ["いすぎる", "よすぎる", "いい changes to よ and adds さ."], ["[少]{すく}なさすぎる", "[少]{すく}なすぎる", "[少]{すく}ない is an ordinary い-adjective."], ["[書]{か}くやすい", "[書]{か}きやすい", "やすい and にくい follow the ます stem."], ["[漢字]{かんじ}を[書]{か}き[方]{かた}", "[漢字]{かんじ}の[書]{か}き[方]{かた}", "[方]{かた} makes a noun, so を becomes の."], ["[勉強]{べんきょう}し[方]{かた}", "[勉強]{べんきょう}の[仕方]{しかた}", "する verbs use noun + の[仕方]{しかた}."], ["(about a friend) ミンさんは[行]{い}きたいです", "ミンさんは[行]{い}きたがっています / [行]{い}きたいと[言]{い}っていました", "For other people, avoid a bare ～たいです."]]},
+      "All five patterns hang on the ます stem, so if a form looks wrong, check the stem first. The full reference, with notes for later levels, is in {{degree-ease-way-wants}}.",
+      {terms:["sugiru", "yasui-nikui", "kata-way", "tagaru"]}
+     ]
+    }
+   ],
+   try:[
+    {
+     id:"e3u7-l6-x1",
+     type:"mcq",
+     q:"How do you say “This bag is too expensive”?",
+     options:[
+      {t:"このかばんは[高]{たか}すぎます。", ok:true, why:"Right. An い-adjective drops い before すぎる: 高 + すぎます."},
+      {t:"このかばんは[高]{たか}いすぎます。", why:"The い has to go: 高すぎます."},
+      {t:"このかばんは[高]{たか}くすぎます。", why:"く is the adverb form. すぎる attaches to the bare stem: 高すぎます."},
+      {t:"このかばんは[高]{たか}さすぎます。", why:"Only いい and ない add さ (よすぎる, なさすぎる). 高い just drops い."}
+     ]
+    },
+    {
+     id:"e3u7-l6-x2",
+     type:"match",
+     q:"Match each word with its すぎる form.",
+     pairs:[
+      ["いい (good)", "よすぎる", "いい changes to よ and adds さ."],
+      ["[静]{しず}か (quiet)", "しずかすぎる", "A な-adjective: bare stem + すぎる."],
+      ["[食]{た}べる (eat)", "たべすぎる", "A verb: ます stem 食べ + すぎる."],
+      ["[少]{すく}ない (few)", "すくなすぎる", "An ordinary い-adjective: drop い."],
+      ["([時間]{じかん}が) ない (there isn’t)", "なさすぎる", "ない meaning “there isn’t” adds さ, like いい."]
+     ]
+    },
+    {
+     id:"e3u7-l6-x3",
+     type:"type",
+     q:"Type the noun in hiragana: “how to use” ([使]{つか}う, use) → ＿＿＿＿",
+     answer:"つかいかた",
+     hint:"Take the ます stem of [使]{つか}う, then add [方]{かた} (read かた).",
+     wrongs:[
+      {v:"つかうかた", why:"[方]{かた} attaches to the ます stem: [使]{つか}い + [方]{かた} = [使]{つか}い[方]{かた}."},
+      {v:"つかいほう", why:"When [方]{かた} means “the way of doing”, it is read かた. ほう is the “side” in ～ほうがいい."},
+      {v:"つかったかた", why:"[方]{かた} attaches to the ます stem, not the た-form: [使]{つか}い[方]{かた}."}
+     ],
+     why:"[使]{つか}います → stem [使]{つか}い → [使]{つか}い[方]{かた} (つかいかた), “how to use”."
+    },
+    {
+     id:"e3u7-l6-x4",
+     type:"type",
+     q:"Type the missing word in hiragana: “This pen is hard to write with.” 「このペンは＿＿＿＿＿です。」 ([書]{か}く, write)",
+     answer:"かきにくい",
+     hint:"ます stem + にくい.",
+     wrongs:[
+      {v:"かくにくい", why:"にくい follows the ます stem: 書き + にくい."},
+      {v:"かけない", why:"書けない means “can’t write” at all. にくい means it is possible but hard: 書きにくい."},
+      {v:"かきやすい", why:"That’s the opposite: easy to write with."},
+      {v:"かきにくいだ", why:"にくい words are い-adjectives, so no だ. Before です, just 書きにくい."}
+     ],
+     why:"書きます → stem 書き → 書きにくい, an い-adjective: このペンは書きにくいです."
+    },
+    {
+     id:"e3u7-l6-x5",
+     type:"mcq",
+     q:"What does 「このコップは[割]{わ}れやすいです。」 mean?",
+     options:[
+      {t:"This glass breaks easily.", ok:true, why:"Right. With a verb like [割]{わ}れる (break), やすい means “tends to”."},
+      {t:"This glass is cheap.", why:"Cheap is [安]{やす}い, a different word. [割]{わ}れやすい is the stem of [割]{わ}れる + やすい."},
+      {t:"This glass is hard to break.", why:"That would be [割]{わ}れにくい."},
+      {t:"This glass has broken.", why:"That would be [割]{わ}れました. やすい describes a tendency, not an event."}
+     ]
+    },
+    {
+     id:"e3u7-l6-x6",
+     type:"mcq",
+     q:"You want to tell a friend that Sōta wants to play with the cat. Which sentence is natural?",
+     options:[
+      {t:"そうたくんは[猫]{ねこ}と[遊]{あそ}びたがっています。", ok:true, why:"Right. ～たがっている describes another person’s wish as you can see it."},
+      {t:"そうたくんは[猫]{ねこ}と[遊]{あそ}びたいです。", why:"A bare ～たいです about someone else sounds as if you could read his mind. Use ～たがっています."},
+      {t:"そうたくんの[猫]{ねこ}が[遊]{あそ}びたがっています。", why:"This says that Sōta’s cat wants to play. It changes who wants what."},
+      {t:"そうたくんは[猫]{ねこ}と[遊]{あそ}びたがりです。", why:"たがり is not the form here. Use the verb: [遊]{あそ}びたがっています."}
+     ]
+    },
+    {
+     id:"e3u7-l6-x7",
+     type:"sort",
+     q:"Natural or not natural? Sort the sentences.",
+     buckets:["Natural", "Not natural"],
+     items:[
+      {t:"この[町]{まち}は[住]{す}みやすいです。", b:0, why:"ます stem [住]{す}み + やすい."},
+      {t:"[漢字]{かんじ}を[書]{か}き[方]{かた}が[分]{わ}かりません。", b:1, why:"[方]{かた} makes a noun, so the object takes の: [漢字]{かんじ}の書き[方]{かた}."},
+      {t:"[昨日]{きのう}、[食]{た}べすぎました。", b:0, why:"ます stem 食べ + すぎました."},
+      {t:"この[部屋]{へや}は[静]{しず}かなすぎます。", b:1, why:"な-adjectives use the bare stem: [静]{しず}かすぎます."},
+      {t:"[勉強]{べんきょう}の[仕方]{しかた}を[教]{おし}えてください。", b:0, why:"する verb: noun + の[仕方]{しかた}."},
+      {t:"(to your teacher) [先生]{せんせい}、コーヒーを[飲]{の}みたがっていますか。", b:1, why:"Never use たがる to the person themselves. Ask コーヒーはいかがですか."},
+      {t:"[弟]{おとうと}は[新]{あたら}しいゲームを[欲]{ほ}しがっています。", b:0, why:"[欲]{ほ}しがる describes someone else’s wanting, with を."},
+      {t:"この[字]{じ}は[小]{ちい}さくて、[読]{よ}みにくいです。", b:0, why:"ます stem 読み + にくい."}
+     ]
+    },
+    {
+     id:"e3u7-l6-x8",
+     type:"spot",
+     q:"Rodrigo writes in his Japanese class diary. Tap each part that is **wrong**.",
+     ask:"is wrong",
+     parts:[
+      "[昨日]{きのう}、かいとさんに",
+      {t:"カレーの[作]{つく}り[方]{かた}", flag:false, why:"Correct: noun + の + ます stem + [方]{かた}."},
+      "を[教]{おし}えてもらいました。でも、",
+      {t:"[辛]{から}いすぎて", flag:true, why:"Drop the い before すぎる: [辛]{から}すぎて."},
+      "、[全部]{ぜんぶ}は[食]{た}べられませんでした。かいとさんのレシピは",
+      {t:"[分]{わ}かりやすい", flag:false, why:"Correct: ます stem 分かり + やすい."},
+      "ですが、[漢字]{かんじ}が[多]{おお}くて",
+      {t:"[読]{よ}むにくい", flag:true, why:"にくい follows the ます stem: 読みにくい."},
+      "です。メキシコの[妹]{いもうと}も、[日本]{にほん}の[料理]{りょうり}を",
+      {t:"[作]{つく}りたいです", flag:true, why:"For someone else, a bare ～たいです sounds odd. Use [作]{つく}りたがっています or [作]{つく}りたいと[言]{い}っていました."},
+      "。"
+     ]
+    }
+   ],
+   apply:{
+    intro:"Describe your own things and people with these patterns. Keep the notes for yourself.",
+    tasks:[
+     {t:"Too much, too little", how:["Write five sentences with ～すぎる about your life: food, weather, prices, work or study, sleep.", "Include one verb (～すぎました), one い-adjective, one な-adjective and one with よすぎる or なさすぎる.", "Check each one: is “too much” really a problem in that sentence?"], write:"…すぎます。…すぎました。"},
+     {t:"Review three things", how:["Pick three things you use: an app, a pen, a pair of shoes, a bag, a website.", "For each, write one sentence with ～やすい or ～にくい and a reason with ～て or ので.", "Add one sentence with やすい meaning “tends to”, such as ～は[壊]{こわ}れやすい."], write:"…は…やすいです。…は…にくいです。"},
+     {t:"Ask how", how:["Write four questions with ～[方]{かた}: [読]{よ}み[方]{かた}, [行]{い}き[方]{かた}, [使]{つか}い[方]{かた}, [作]{つく}り[方]{かた}.", "Write one more with a する verb: ～の[仕方]{しかた}.", "Check that every object takes の: ～の～[方]{かた}."], write:"…の…[方]{かた}を[教]{おし}えてください。"},
+     {t:"What do they want?", how:["Think of three people or pets you know.", "Describe what each one wants with ～たがっています, ～たがりません or ～たいと[言]{い}っていました.", "Mark any that are about someone above you, and rewrite them politely."], write:"…は…たがっています。…と[言]{い}っていました。"}
+    ],
+    proof:"Five ～すぎる sentences, three product reviews with ～やすい and ～にくい, five “how to” questions, and three sentences about what other people want."
+   },
+   read:[
+    {book:"taekim", where:"“Expressing Amounts”, section “Saying there's too much of something using 「すぎる」”", note:"Includes よすぎる, なさすぎる and すぎ as a noun."},
+    {book:"taekim", where:"“Actions that are easy or hard to do”: 「～やすい、～にくい」, and the variations 「～がたい」 and 「～づらい」", note:"The last part goes beyond N4."},
+    {book:"taekim", where:"“Using 「方」 and 「よる」”, section “Using 「方」 to express a way to do something”"},
+    {book:"taekim", where:"“Showing signs of something”, section “Showing outward signs of an emotion using 「～がる」”", note:"Covers ～たがる and ～がる with feeling adjectives."},
+    {book:"irodori", where:"Elementary 1, Lessons 9 “Will you tell me how to read this?” (V-[方]{かた}) and 16 “I try not to eat too much.” (V-すぎます)", note:"With audio."},
+    {book:"irodori", where:"Elementary 2, Lessons 11 “I forgot to bring my point card.” (ナA- ／イA- すぎます) and 12 “This vacuum cleaner is light and easy to move around.” (V-やすいです / V-にくいです)", note:"With audio."}
+   ]
+  },
+  {
+   id:"e3u7-l7",
+   title:"Coming and going, and asking indirectly: ～てくる, ～ていく, ～か and ～かどうか",
+   minutes:60,
+   hook:{
+    q:"Aoi posts in the house group chat: 「コンビニ[行]{い}ってくるね。」 What does she mean?",
+    options:["I’m popping out to the convenience store (and I’ll be back).", "Please come to the convenience store.", "I’ve just come back from the convenience store.", "I’m going to the convenience store and staying there."],
+    answer:0,
+    reveal:"**I’m popping out to the convenience store.** ～てくる after a verb can mean “go and do something, then come back”. It is the same くる as in いってきます, which literally means “I’ll go and come back”. This lesson covers ～てくる and ～ていく, which add direction and change over time, and then shows how to put a question inside a sentence: [何時]{なんじ}か[分]{わ}かりません, [来]{く}るかどうか[分]{わ}かりません."
+   },
+   goals:[
+    "Use ～てくる and ～ていく for direction: toward you ([持]{も}ってくる) and away ([持]{も}っていく)",
+    "Say “go and do something, then come back” with ～てくる",
+    "Describe change over time with ～てきた (up to now) and ～ていく (from now on)",
+    "Put a question-word question inside a sentence: [何時]{なんじ}に[始]{はじ}まるか、[知]{し}っていますか",
+    "Put a yes-no question inside a sentence with ～かどうか"
+   ],
+   learn:[
+    {
+     h:"Toward you and away: ～てくる and ～ていく",
+     body:[
+      {lead:"くる (come) is movement toward where the speaker is; いく (go) is movement away. After a て-form they add that direction to another verb."},
+      {table:[["Verb", "～てくる (toward here)", "～ていく (away from here)"], ["[持]{も}つ (hold)", "[持]{も}ってくる: bring (a thing)", "[持]{も}っていく: take (a thing)"], ["[連]{つ}れる (take along)", "[連]{つ}れてくる: bring (a person)", "[連]{つ}れていく: take (a person)"], ["[帰]{かえ}る (return)", "[帰]{かえ}ってくる: come back (here)", "[帰]{かえ}っていく: go back (there)"], ["[走]{はし}る (run)", "[走]{はし}ってくる: come running", "[走]{はし}っていく: run off"]]},
+      "As helpers, くる and いく are usually written in hiragana, and they conjugate as usual: [持]{も}ってきます, [持]{も}ってきた, [持]{も}ってこない; [持]{も}っていきます, [持]{も}っていった. The glossary entry is [[te-kuru-te-iku]].",
+      {
+       ex:"[明日]{あした}のパーティーに、[飲]{の}み[物]{もの}を[持]{も}っていきます。\nI’ll take some drinks to tomorrow’s party.\n\n[友]{とも}だちを[連]{つ}れてきてもいいですか。\nMay I bring a friend?\n\n[猫]{ねこ}が[庭]{にわ}に[入]{はい}ってきました。\nThe cat came into the garden.\n\n[駅]{えき}から[歩]{ある}いてきました。\nI walked here from the station.",
+       label:"Direction"
+      },
+      "The choice depends on where **you** are, or will be. If you are hosting a party, you say [飲]{の}み[物]{もの}を[持]{も}ってきてください (please bring drinks). If you are a guest talking about it beforehand, you say [持]{も}っていきます (I’ll take some).",
+      {warn:"English “bring” often follows the listener: “I’ll bring snacks to your place.” Japanese usually follows the speaker: unless you are already there, it is お[菓子]{かし}を[持]{も}っていきます. When you ask a host about their own party, you will hear both: [連]{つ}れていってもいいですか (from where you are now) and [連]{つ}れてきてもいいですか (from the host’s side)."},
+      "～てくる also marks actions that come **toward you** from someone else: [友]{とも}だちがメッセージを[送]{おく}ってきました (A friend sent me a message), [母]{はは}が[電話]{でんわ}をかけてきました (My mother called me)."
+     ]
+    },
+    {
+     h:"Go and do, then come back: ～てくる",
+     body:[
+      "～てくる has an everyday meaning that English expresses with “go and…”: go somewhere, do something, and come back.",
+      {
+       ex:"ちょっと[郵便局]{ゆうびんきょく}に[行]{い}ってきます。\nI’m just going to the post office (and I’ll be back).\n\n[飲]{の}み[物]{もの}を[買]{か}ってくるね。\nI’ll go and get some drinks.\n\nちょっと[外]{そと}を[見]{み}てきます。\nI’ll go and take a look outside.",
+       label:"Go and do"
+      },
+      "This is why you say いってきます (I’ll go and come back) when you leave home, and いってらっしゃい (go and come back) to someone who is leaving. When they return: ただいま and おかえりなさい.",
+      "At work you will hear the same pattern when someone steps out for a short while: [昼]{ひる}ご[飯]{はん}を[食]{た}べてきます (I’m going to get lunch), ちょっと[銀行]{ぎんこう}に[行]{い}ってきます (I’m just popping to the bank). Both promise that the speaker will be back, which is exactly what ～てくる says.",
+      "Compare [買]{か}ってくる (go and buy, then come back) with [買]{か}っていく (buy and take it with you, somewhere else): ケーキを[買]{か}っていきます means you will buy a cake on the way and take it there."
+     ]
+    },
+    {
+     h:"Change over time",
+     body:[
+      "With verbs of change, such as なる (become), [増]{ふ}える (increase), [慣]{な}れる (get used to) and [分]{わ}かる (understand), くる and いく move along a timeline instead of a map. ～てくる shows a change that has been happening **up to now**, or has just started. ～ていく shows a change that will continue **from now on**.",
+      {
+       fig:"<svg viewBox=\"0 0 340 204\"><defs><marker id=\"e3u7b1\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">Change over time</text><path class=\"d-ink\" d=\"M8 100H332\" stroke-width=\"2\" marker-end=\"url(#e3u7b1)\"/><rect class=\"d-lup\" x=\"14\" y=\"86\" width=\"144\" height=\"28\" rx=\"6\" stroke-width=\"2\"/><text x=\"86\" y=\"105\" text-anchor=\"middle\">なってきた</text><rect class=\"d-sage\" x=\"182\" y=\"86\" width=\"136\" height=\"28\" rx=\"6\" stroke-width=\"2\"/><text x=\"250\" y=\"105\" text-anchor=\"middle\">なっていく</text><path class=\"d-ink\" d=\"M170 68V132\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"60\" text-anchor=\"middle\">now</text><text class=\"s\" x=\"86\" y=\"140\" text-anchor=\"middle\">up to now</text><text class=\"s\" x=\"250\" y=\"140\" text-anchor=\"middle\">from now on</text><text class=\"s\" x=\"86\" y=\"158\" text-anchor=\"middle\">～てくる</text><text class=\"s\" x=\"250\" y=\"158\" text-anchor=\"middle\">～ていく</text><text class=\"s\" x=\"86\" y=\"188\" text-anchor=\"middle\">さむく なってきた</text><text class=\"s\" x=\"250\" y=\"188\" text-anchor=\"middle\">もっと さむく なっていく</text></svg>",
+       alt:"A timeline with a mark for now in the middle. Before now: なってきた, up to now, ～てくる, with the example さむく なってきた (it has been getting colder). After now: なっていく, from now on, ～ていく, with the example もっと さむく なっていく (it will get colder and colder).",
+       cap:"Stand at “now”: a change coming toward you takes くる, a change going on ahead of you takes いく."
+      },
+      {
+       ex:"だんだん[寒]{さむ}くなってきましたね。\nIt’s been getting colder, hasn’t it?\n\n[日本]{にほん}の[生活]{せいかつ}に、[少]{すこ}しずつ[慣]{な}れてきました。\nI’ve been getting used to life in Japan, little by little.\n\nこれからも、[日本語]{にほんご}の[勉強]{べんきょう}を[続]{つづ}けていきたいです。\nI want to keep on studying Japanese from now on.\n\nあ、[雨]{あめ}が[降]{ふ}ってきました。\nOh, it’s started to rain.",
+       label:"Change over time"
+      },
+      "With weather and the body, ～てきた often means “has started to”: [雨]{あめ}が[降]{ふ}ってきました (It’s started to rain), おなかがすいてきた (I’m getting hungry). ✗ [雨]{あめ}が[降]{ふ}っていきました.",
+      {table:[["Use of ～てくる", "Example", "English"], ["direction: toward here", "[本]{ほん}を[持]{も}ってきた", "brought a book"], ["go, do, come back", "パンを[買]{か}ってくる", "go and buy bread"], ["an action toward me", "メッセージを[送]{おく}ってきた", "sent me a message"], ["change up to now", "[日本]{にほん}の[生活]{せいかつ}に[慣]{な}れてきた", "have got used to life in Japan"], ["a start", "[雨]{あめ}が[降]{ふ}ってきた", "it’s started to rain"]]},
+      "The same verb くる does all five jobs, so the context decides. If there is movement in the sentence, think direction; if there is a verb of change, think time."
+     ]
+    },
+    {
+     h:"Questions inside sentences: ～か",
+     body:[
+      {lead:"Sometimes a question is part of a bigger sentence: “I don’t know **what time it starts**”, “Do you remember **where you put it**?” Japanese puts the question, in the plain form, followed by か, in front of the main verb."},
+      "This is an [[embedded-question]]. The question keeps its question word ([何]{なに}, いつ, どこ, [誰]{だれ}, どう…), the verb goes into the plain form, and か closes it. After a noun or な-adjective, だ is dropped: [何時]{なんじ}か, どこか. Inside, は often becomes が, as in other clauses: [会議]{かいぎ}**が**[何時]{なんじ}に[始]{はじ}まるか. (は is also heard when the noun is the topic of the whole sentence: [会議]{かいぎ}は[何時]{なんじ}に[始]{はじ}まるか、[知]{し}っていますか.)",
+      {table:[["Direct question", "Inside a sentence"], ["[会議]{かいぎ}は[何時]{なんじ}に[始]{はじ}まりますか。", "[会議]{かいぎ}が[何時]{なんじ}に[始]{はじ}まるか、[知]{し}っていますか。"], ["[駅]{えき}はどこですか。", "[駅]{えき}がどこか、[分]{わ}かりません。"], ["どこに[置]{お}きましたか。", "どこに[置]{お}いたか、[覚]{おぼ}えていません。"], ["これは[何]{なん}ですか。", "これが[何]{なん}か、[教]{おし}えてください。"]]},
+      {
+       ex:"イエンさんがいつ[帰]{かえ}ってくるか、[聞]{き}いてみます。\nI’ll ask when Yến is coming back.\n\n[何]{なに}を[買]{か}えばいいか、[分]{わ}かりません。\nI don’t know what I should buy.\n\nこの[漢字]{かんじ}をどう[読]{よ}むか、[教]{おし}えてください。\nPlease tell me how to read this kanji.",
+       label:"Question word + か"
+      },
+      "Common main verbs: [分]{わ}かる, [知]{し}っている, [覚]{おぼ}えている, [忘]{わす}れる, [聞]{き}く, [教]{おし}える, [考]{かんが}える, [決]{き}める. Particles such as を and が after か are usually left out in speech: [何時]{なんじ}に[始]{はじ}まるか(を)[知]{し}っていますか."
+     ]
+    },
+    {
+     h:"Whether or not: ～かどうか",
+     body:[
+      "For a yes-no question there is no question word, so Japanese adds どうか: [[ka-dou-ka|～かどうか]], “whether (or not)”. Nouns and な-adjectives again drop だ: [本当]{ほんとう}かどうか, [大丈夫]{だいじょうぶ}かどうか.",
+      {
+       ex:"[明日]{あした}、パーティーに[行]{い}けるかどうか、まだ[分]{わ}かりません。\nI don’t know yet whether I can go to the party tomorrow.\n\nあおいさんが[来]{く}るかどうか、[聞]{き}いてみてくれる？\nCould you ask whether Aoi is coming?\n\nこの[答]{こた}えが[正]{ただ}しいかどうか、[確]{たし}かめてください。\nPlease check whether this answer is correct.\n\nその[話]{はなし}が[本当]{ほんとう}かどうか、[誰]{だれ}も[知]{し}りません。\nNobody knows whether that story is true.",
+       label:"～かどうか"
+      },
+      "Two other ways you will meet: どうか can be left out ([来]{く}るか、[分]{わ}かりません), and you can list both answers: [来]{く}るか[来]{こ}ないか、[分]{わ}かりません (whether they’ll come or not).",
+      "Any plain form can go inside, including the past and the negative: [宿題]{しゅくだい}を[出]{だ}したかどうか[覚]{おぼ}えていません (I don’t remember whether I handed in the homework), [誰]{だれ}が[来]{こ}なかったか[知]{し}っていますか (Do you know who didn’t come?).",
+      {key:"A question word inside → ～か. No question word (yes or no) → ～かどうか. Never both: ✗ [何時]{なんじ}かどうか."},
+      "Embedded questions are also a polite way to ask, because they leave the listener room: [会議]{かいぎ}が[何時]{なんじ}か、[教]{おし}えてもらえませんか sounds softer than [会議]{かいぎ}は[何時]{なんじ}ですか."
+     ]
+    },
+    {
+     h:"In conversation: the barbecue",
+     body:[
+      "Mariya and Aoi are getting ready for a university barbecue tomorrow. Listen for direction, change and indirect questions.",
+      {
+       ex:"まりや：あおいさん、[明日]{あした}のバーベキュー、[何]{なに}か[持]{も}っていく？\nあおい：うん、[飲]{の}み[物]{もの}を[買]{か}っていくつもり。まりやちゃんは？\nまりや：[島]{しま}の[母]{はは}が[魚]{さかな}を[送]{おく}ってきたから、それを[持]{も}っていこうかな。\nあおい：いいね。でも、[会場]{かいじょう}で[魚]{さかな}を[焼]{や}いてもいいかどうか、[分]{わ}からないよね。\nまりや：じゃあ、トビーさんに[聞]{き}いてくる。[何時]{なんじ}に[始]{はじ}まるかも[聞]{き}いておくね。\nあおい：ありがとう。だんだん[暑]{あつ}くなってきたから、[魚]{さかな}は[冷]{ひ}やして[持]{も}っていったほうがいいよ。\nMariya: Aoi, are you taking anything to tomorrow’s barbecue?\nAoi: Yes, I’m going to buy some drinks on the way. What about you, Mariya?\nMariya: My mom on the island sent me some fish, so maybe I’ll take that.\nAoi: Nice. But we don’t know whether we’re allowed to grill fish there, do we?\nMariya: I’ll go and ask Toby, then. I’ll ask him what time it starts, too.\nAoi: Thanks. It’s been getting hotter, so you’d better keep the fish cold when you take it.",
+       label:"The barbecue"
+      },
+      {list:[
+        "**[持]{も}っていく, [買]{か}っていく**: they are at home, talking about taking things to the barbecue.",
+        "**[送]{おく}ってきた**: the fish came toward Mariya, from her mother on the island.",
+        "**[焼]{や}いてもいいかどうか** and **[何時]{なんじ}に[始]{はじ}まるか**: a yes-no question and a question-word question inside sentences.",
+        "**[聞]{き}いてくる**: Mariya will go to Toby’s room, ask, and come back.",
+        "**[暑]{あつ}くなってきた**: a change that has been happening up to now."
+      ]},
+      "One false friend: どうか on its own, as in どうかよろしくお[願]{ねが}いします, is a different word meaning “please, I beg you”. In ～かどうか it always follows か."
+     ]
+    },
+    {
+     h:"Common mistakes",
+     body:[
+      {table:[["✗ Mistake", "✓ Correct", "Why"], ["[会議]{かいぎ}は[何時]{なんじ}ですか[知]{し}っていますか", "[会議]{かいぎ}が[何時]{なんじ}か[知]{し}っていますか", "Inside a sentence: plain form + か, with no です."], ["[来]{き}ますかどうか", "[来]{く}るかどうか", "Use the plain form inside."], ["[本当]{ほんとう}だかどうか", "[本当]{ほんとう}かどうか", "Nouns and な-adjectives drop だ before か."], ["どこかどうか[分]{わ}かりません", "どこか[分]{わ}かりません", "With a question word, no どうか."], ["(you are the host) [飲]{の}み[物]{もの}を[持]{も}っていってください", "[飲]{の}み[物]{もの}を[持]{も}ってきてください", "Toward where you are: くる."], ["[雨]{あめ}が[降]{ふ}っていきました", "[雨]{あめ}が[降]{ふ}ってきました", "A change that has started: ～てきた."]]},
+      "With this lesson you have met the core grammar of N4. Unit 8 turns to N4 kanji and reading, where all of these patterns appear again in real texts. The full reference for this lesson, with notes for later levels, is in {{direction-and-embedded-questions}}.",
+      {terms:["te-kuru-te-iku", "embedded-question", "ka-dou-ka"]}
+     ]
+    }
+   ],
+   try:[
+    {
+     id:"e3u7-l7-x1",
+     type:"mcq",
+     q:"You are hosting a party at your place. You ask your guests: 「[飲]{の}み[物]{もの}を＿＿＿ください。」 Which form fits?",
+     options:[
+      {t:"[持]{も}ってきて", ok:true, why:"Right. The drinks come toward you, the host: [持]{も}ってきてください (please bring)."},
+      {t:"[持]{も}っていって", why:"[持]{も}っていってください means “please take (them) away from here”."},
+      {t:"[持]{も}ちてきて", why:"The て-form of [持]{も}つ is [持]{も}って (つ → って)."},
+      {t:"[持]{も}ってみて", why:"～てみる means “try”: “please try holding the drinks”."}
+     ]
+    },
+    {
+     id:"e3u7-l7-x2",
+     type:"mcq",
+     q:"Kaito says: 「ちょっとパン[買]{か}ってくる。」 What will he do?",
+     options:[
+      {t:"Go out, buy some bread and come back.", ok:true, why:"Right. ～てくる here means go and do something, then come back."},
+      {t:"Buy bread on the way and take it somewhere else.", why:"That would be パンを[買]{か}っていく."},
+      {t:"He has already bought the bread.", why:"[買]{か}ってくる is non-past: he is about to go."},
+      {t:"He is asking you to buy bread.", why:"A request would be パン[買]{か}ってきて."}
+     ]
+    },
+    {
+     id:"e3u7-l7-x3",
+     type:"sort",
+     q:"Up to now, or from now on? Sort the sentences.",
+     buckets:["Change up to now (～てきた)", "Change from now on (～ていく)"],
+     items:[
+      {t:"だんだん[暑]{あつ}くなってきました。", b:0, why:"～てきました: it has been getting hotter up to now."},
+      {t:"[日本語]{にほんご}が[少]{すこ}しずつ[分]{わ}かってきました。", b:0, why:"～てきました: understanding has grown up to now."},
+      {t:"[雨]{あめ}が[降]{ふ}ってきました。", b:0, why:"～てきました: the rain has just started."},
+      {t:"これからも[練習]{れんしゅう}を[続]{つづ}けていきます。", b:1, why:"～ていきます with これからも: from now on."},
+      {t:"これから、もっと[寒]{さむ}くなっていくでしょう。", b:1, why:"～ていく with これから: the change will continue."},
+      {t:"この[町]{まち}で、[友]{とも}だちを[増]{ふ}やしていきたいです。", b:1, why:"～ていきたい: a change you want to keep making from now on."}
+     ]
+    },
+    {
+     id:"e3u7-l7-x4",
+     type:"type",
+     q:"Kaito tells the house chat that he will go and buy drinks, then come back. Type the missing part in hiragana: 「[飲]{の}み[物]{もの}、＿＿＿＿＿ね。」 ([買]{か}う, buy)",
+     answer:["かってくる","かってきます"],
+     hint:"The て-form of [買]{か}う, then くる.",
+     wrongs:[
+      {v:"かっていく", why:"[買]{か}っていく means buying them and taking them somewhere else. He is coming back: [買]{か}ってくる."},
+      {v:"かいてくる", why:"かいて is the て-form of [書]{か}く (write). [買]{か}う → [買]{か}って."},
+      {v:"かってきる", why:"くる is irregular: its dictionary form is くる, not きる."}
+     ],
+     why:"[買]{か}う → [買]{か}って (う → って) + くる: go and buy, then come back. In the casual house chat, [買]{か}ってくるね; politely, [買]{か}ってきますね."
+    },
+    {
+     id:"e3u7-l7-x5",
+     type:"type",
+     q:"Type the missing part in hiragana, using ～かどうか: “I don’t know whether Aoi is coming tomorrow.” 「あおいさんが[明日]{あした}＿＿＿＿＿＿、[分]{わ}かりません。」 ([来]{く}る, come)",
+     answer:["くるかどうか", "くるのかどうか"],
+     hint:"Plain form of 来る + かどうか.",
+     wrongs:[
+      {v:"きますかどうか", why:"Inside a sentence, use the plain form: 来るかどうか."},
+      {v:"くるどうか", why:"You need か before どうか: 来るかどうか."},
+      {v:"くるか", why:"That is also correct Japanese (どうか can be left out), but this question asks for ～かどうか: 来るかどうか."},
+      {v:"こないかどうか", why:"The negative changes the question to “whether she isn’t coming”. Use 来るかどうか."}
+     ],
+     why:"来る (plain) + かどうか: whether she is coming. 来るのかどうか, with explanatory の, is also natural."
+    },
+    {
+     id:"e3u7-l7-x6",
+     type:"mcq",
+     q:"You want to say “I don’t remember where I put my key.” Which sentence is correct?",
+     options:[
+      {t:"[鍵]{かぎ}をどこに[置]{お}いたか、[覚]{おぼ}えていません。", ok:true, why:"Right. Question word + plain form + か, then the main verb."},
+      {t:"[鍵]{かぎ}をどこに[置]{お}きましたか、[覚]{おぼ}えていません。", why:"Inside a sentence, the question takes the plain form: [置]{お}いたか."},
+      {t:"[鍵]{かぎ}をどこに[置]{お}いたかどうか、[覚]{おぼ}えていません。", why:"With a question word (どこ), use か alone, not かどうか."},
+      {t:"[鍵]{かぎ}をどこに[置]{お}いた、[覚]{おぼ}えていません。", why:"Without か, the question part doesn’t work. Add か: [置]{お}いたか."}
+     ]
+    },
+    {
+     id:"e3u7-l7-x7",
+     type:"match",
+     q:"Match each sentence with its meaning.",
+     pairs:[
+      ["[本]{ほん}を[持]{も}ってきました。", "I brought a book (here).", "～てくる: toward the speaker."],
+      ["[本]{ほん}を[持]{も}っていきました。", "I took a book (there).", "～ていく: away from the speaker."],
+      ["[本]{ほん}を[買]{か}ってきました。", "I went and bought a book (and came back).", "～てくる: go, do something, come back."],
+      ["[漢字]{かんじ}が[分]{わ}かってきました。", "I’ve started to understand kanji.", "～てきた with a change: up to now."]
+     ]
+    },
+    {
+     id:"e3u7-l7-x8",
+     type:"type",
+     q:"Type the missing verb form in hiragana: “Oh, it’s started to rain.” 「あ、[雨]{あめ}が＿＿＿きました。」 ([降]{ふ}る, fall)",
+     answer:"ふって",
+     hint:"～てくる needs the て-form.",
+     wrongs:[
+      {v:"ふり", why:"～てくる follows the て-form, not the ます stem: [降]{ふ}って."},
+      {v:"ふった", why:"Before きました use the て-form: [降]{ふ}ってきました."},
+      {v:"ふて", why:"[降]{ふ}る is a godan verb, so る → って: [降]{ふ}って."}
+     ],
+     why:"[降]{ふ}る → [降]{ふ}って (godan: る → って) + きました: the rain has started, up to now."
+    },
+    {
+     id:"e3u7-l7-x9",
+     type:"spot",
+     q:"Cheska writes to Yến about a study session at the university library. Tap each part that is **wrong**.",
+     ask:"is wrong",
+     parts:[
+      "イエンさん、[明日]{あした}の[勉強会]{べんきょうかい}は[大学]{だいがく}の[図書館]{としょかん}ですね。",
+      {t:"[何時]{なんじ}に[始]{はじ}まるか", flag:false, why:"Correct: question word + plain form + か."},
+      "、[教]{おし}えてもらえませんか。[私]{わたし}はお[菓子]{かし}を",
+      {t:"[持]{も}ってきます", flag:true, why:"Cheska is at home, talking about taking snacks to the library, away from where she is: [持]{も}っていきます. English “bring” misleads here."},
+      "。トビーさんが",
+      {t:"[来]{き}ますかどうか", flag:true, why:"Inside a sentence, use the plain form: 来るかどうか."},
+      "、まだ[分]{わ}かりません。それから、",
+      {t:"[図書館]{としょかん}で[食]{た}べてもいいかどうか", flag:false, why:"Correct: a yes-no question in the plain form + かどうか."},
+      "、[知]{し}っていますか。"
+     ]
+    }
+   ],
+   apply:{
+    intro:"Use direction, change and indirect questions about your own life. Keep the notes for yourself.",
+    tasks:[
+     {t:"Bring and take", how:["Imagine a party or a visit to a friend’s home.", "Write four sentences: what you will take (～ていきます), what the host asks guests to bring (～てきてください), who you will take with you ([連]{つ}れていきます), and something you will go and buy first (～てきます).", "Check each one: where are you when you say it?"], write:"…を[持]{も}っていきます。…を[持]{も}ってきてください。"},
+     {t:"How things have changed", how:["Write three sentences with ～てきました about changes in your life or your Japanese.", "Write three with ～ていきたいです about what you want to keep doing from now on.", "Add one weather sentence with ～てきました meaning “has started to”."], write:"…てきました。…ていきたいです。"},
+     {t:"Things I don’t know yet", how:["Write five sentences about things you are unsure of this week.", "Use a question word + か in three of them, and ～かどうか in two.", "Check that every embedded question is in the plain form, with no だ after nouns."], write:"…か、[分]{わ}かりません。…かどうか、…"}
+    ],
+    proof:"Four sentences about bringing and taking, seven about change over time, and five embedded questions, each checked for the plain form."
+   },
+   read:[
+    {book:"taekim", where:"“Other uses of the te-form”, section “Using motion verbs （行く、来る） with the te-form”", note:"Direction, and change over time, with examples."},
+    {book:"taekim", where:"“The Question Marker”, section “「か」 used in relative clauses”", note:"Embedded questions, including どうか and 行ったか行かなかったか."},
+    {book:"irodori", where:"Elementary 1, Lesson 11 “I will bring meat and vegetables.” (V-て[行]{い}きます／[来]{き}ます)", note:"Bringing things to a party, with audio."},
+    {book:"irodori", where:"Elementary 2, Lessons 8 “Do you know where the food stands are?” (【interrogative】＋S（plain-form）か、～) and 16 “Do not panic in case of an earthquake.” (V（plain-form）かどうか、～)", note:"Embedded questions in everyday situations, with audio."},
+    {book:"irodori", where:"Pre-Intermediate, Lesson 10 “How do you study Japanese?” (V-てくる)", note:"～てくる for change over time."}
+   ]
   }
  ],
  checkpoint:["e3u7-q01", "e3u7-q05", "e3u7-q11", "e3u7-q13", "e3u7-q20", "e3u7-q23", "e3u7-q26", "e3u7-q31", "e3u7-q34", "e3u7-q41", "e3u7-q45", "e3u7-q47"],
+  cpBank:[
+    {id:"e3u7-cp01", lesson:"e3u7-l1", level:1, q:"[呼]{よ}ぶ (call) is a godan verb. What is its passive form (“be called”)?", options:[
+      {t:"[呼]{よ}べる", why:"This is the potential form, “can call”. The passive uses the あ row + れる."},
+      {t:"[呼]{よ}ばせる", why:"This is the causative, “make or let someone call”."},
+      {t:"[呼]{よ}ばれる", ok:true, why:"Godan verbs move to the あ row and add れる: ぶ → ば + れる."},
+      {t:"[呼]{よ}びられる", why:"られる is for ichidan verbs, added to the stem. [呼]{よ}ぶ is godan: [呼]{よ}ばれる."}]},
+    {id:"e3u7-cp02", lesson:"e3u7-l2", level:1, q:"What is the causative form of する (make or let someone do)?", options:[
+      {t:"される", why:"される is the passive of する: “be done”."},
+      {t:"させる", ok:true, why:"する is irregular: its causative is させる, as in [掃除]{そうじ}させる (make someone clean)."},
+      {t:"できる", why:"できる is the potential of する: “can do”."},
+      {t:"しさせる", why:"させる replaces する completely. You don’t keep し."}]},
+    {id:"e3u7-cp03", lesson:"e3u7-l6", level:1, q:"Mariya’s new bag is light, with a good handle. How does she say “It’s easy to carry”?", options:[
+      {t:"[持]{も}ちにくいです", why:"～にくい means “hard to do”: the opposite."},
+      {t:"[持]{も}ちすぎます", why:"～すぎる means “too much”: “I carry too much.”"},
+      {t:"[持]{も}ちたがります", why:"～たがる describes what someone else wants to do."},
+      {t:"[持]{も}ちやすいです", ok:true, why:"ます stem + やすい means “easy to do”: [持]{も}ちやすい, easy to carry."}]},
+    {id:"e3u7-cp04", lesson:"e3u7-l1", level:2, q:"A poster says 「この[町]{まち}の[夏祭]{なつまつ}りは、毎年八月に[開]{ひら}かれます。」 What does it mean?", options:[
+      {t:"The summer festival is held in August every year", ok:true, why:"[開]{ひら}く (hold an event) in the passive, [開]{ひら}かれる: notices use the passive for events, without naming who holds them."},
+      {t:"The town opens its doors in August every year", why:"[開]{ひら}かれる here goes with [夏祭]{なつまつ}り: it is the festival that is held."},
+      {t:"The summer festival can be held in August", why:"“Can be held” would be a potential form. [開]{ひら}かれます here is the passive of an event: it is held."},
+      {t:"Someone opened the festival last August", why:"毎年 (every year) and the non-past ます describe what happens each year, not one past event."}]},
+    {id:"e3u7-cp05", lesson:"e3u7-l3", level:2, q:"Aoi told Cheska that today’s seminar is cancelled ([休講]{きゅうこう}, a noun). How does Cheska pass this on?", options:[
+      {t:"「今日のゼミは[休講]{きゅうこう}だそうです。」", ok:true, why:"Hearsay そうだ follows plain forms, and a noun takes だ: [休講]{きゅうこう}だそうです, “I hear the seminar is cancelled”."},
+      {t:"「今日のゼミは[休講]{きゅうこう}そうです。」", why:"Appearance そう doesn’t attach to nouns, and hearsay needs だ: [休講]{きゅうこう}だそうです."},
+      {t:"「今日のゼミは[休講]{きゅうこう}のそうです。」", why:"そうだ doesn’t take の. After a noun, use だ: [休講]{きゅうこう}だそうです."},
+      {t:"「今日のゼミは[休講]{きゅうこう}でそうです。」", why:"There is no で here. Plain noun + だ + そうです."}]},
+    {id:"e3u7-cp06", lesson:"e3u7-l4", level:2, q:"Fumiko set out chairs in rows for the neighbourhood meeting. When Cheska comes in, which sentence shows it was done on purpose?", options:[
+      {t:"「あ、いすが[並]{なら}んでいます。」", why:"Intransitive + ている says only that the chairs are in rows now. It doesn’t say anyone did it on purpose."},
+      {t:"「あ、いすが[並]{なら}びました。」", why:"[並]{なら}ぶ is intransitive, “line up”, as people do in a queue. It doesn’t show that someone set the chairs out."},
+      {t:"「あ、いすが[並]{なら}べてあります。」", ok:true, why:"Transitive + てある (with が) describes a state that someone created on purpose."},
+      {t:"「あ、いすが[並]{なら}べています。」", why:"[並]{なら}べる is transitive and needs を: いすを[並]{なら}べています, “someone is setting out the chairs”."}]},
+    {id:"e3u7-cp07", lesson:"e3u7-l5", level:3, q:"Rodrigo’s teacher offers to show him her photos of Mexico. How does he say, humbly, “May I look at them?”", options:[
+      {t:"「ご[覧]{らん}になってもいいですか。」", why:"ご[覧]{らん}になる is respectful ([尊敬語]{そんけいご}), for what the other person does. For your own action, use the humble form."},
+      {t:"「[拝見]{はいけん}してもいいですか。」", ok:true, why:"[拝見]{はいけん}する is the humble ([謙譲語]{けんじょうご}) verb for 見る: it lowers Rodrigo’s own action."},
+      {t:"「[見]{み}られてもいいですか。」", why:"見られる here would be the passive, “May I be seen?”"},
+      {t:"「[拝見]{はいけん}されてもいいですか。」", why:"[拝見]{はいけん}する is already humble. Making it passive turns it into nonsense."}]},
+    {id:"e3u7-cp08", lesson:"e3u7-l7", level:2, q:"A report says the town’s population will keep getting smaller from now on. Which form fits? 「これから、[町]{まち}の[人口]{じんこう}は[少]{すく}なく＿＿でしょう。」", options:[
+      {t:"なってきた", why:"～てきた describes a change up to now. これから points to the future."},
+      {t:"なっていく", ok:true, why:"～ていく describes a change that continues from now on: “will go on getting smaller”."},
+      {t:"なってある", why:"～てある is for states that someone created on purpose. なる is intransitive."},
+      {t:"なっておく", why:"～ておく is doing something ahead of time. A population can’t prepare."}]},
+    {id:"e3u7-cp09", lesson:"e3u7-l6", level:2, q:"Toby says 「このかばんは[重]{おも}すぎて、[持]{も}てません。」 What does he mean?", options:[
+      {t:"The bag is a little heavy, but he can carry it", why:"[持]{も}てません is the negative potential: he can’t carry it."},
+      {t:"The bag is so heavy that he can’t carry it", ok:true, why:"い-adjective stem + すぎる means “too”: [重]{おも}すぎて gives the reason, and [持]{も}てません says he can’t."},
+      {t:"The bag is easy to carry", why:"“Easy to carry” is [持]{も}ちやすい. すぎる means “too much”."},
+      {t:"Someone made him carry the heavy bag", why:"“Made to carry” would be the causative-passive, [持]{も}たされる."}]},
+    {id:"e3u7-cp10", lesson:"e3u7-l2", level:3, q:"Kaito’s manager at the convenience store made him work late, though he didn’t want to. Which fits? 「[店長]{てんちょう}に[夜]{よる}[遅]{おそ}くまで[働]{はたら}＿＿。」", options:[
+      {t:"かせました", why:"[働]{はたら}かせました is the causative: Kaito would be making someone else work."},
+      {t:"かれました", why:"[働]{はたら}かれました is the passive. It doesn’t say that someone made him do it."},
+      {t:"かされました", ok:true, why:"The causative-passive (here the short form [働]{はたら}かされる) says he was made to work, against his wishes."},
+      {t:"かせてもらいました", why:"～させてもらう means he was allowed to, and is grateful. He didn’t want to work late."}]},
+    {id:"e3u7-cp11", lesson:"e3u7-l3", level:3, q:"Nobody has told Kaito anything, but he sees Toby’s shoes at the door and the light on in his room. What does he say?", options:[
+      {t:"「トビーさんは[帰]{かえ}っているそうです。」", why:"Hearsay そうだ needs a source: someone told you. Kaito is judging from what he sees."},
+      {t:"「トビーさんは[帰]{かえ}りそうです。」", why:"Stem + そう means something looks about to happen: “Toby looks about to go home.”"},
+      {t:"「トビーさんは[帰]{かえ}ってくるようです。」", why:"[帰]{かえ}ってくる is about coming back later. The shoes and the light show he is already home."},
+      {t:"「トビーさんは[帰]{かえ}っているようです。」", ok:true, why:"～ようです is a judgement from what you see yourself: the shoes and the light."}]},
+    {id:"e3u7-cp12", lesson:"e3u7-l7", level:3, q:"Mariya says 「パン[屋]{や}が[開]{あ}いているかどうか、[見]{み}てくるね。」 What will she do?", options:[
+      {t:"Look up the bakery’s opening hours on her phone", why:"見てくる is “go and look, then come back”. She is going there."},
+      {t:"Go and check whether the bakery is open, then come back", ok:true, why:"～かどうか is “whether or not”, and ～てくる is “go and do, then come back”."},
+      {t:"Buy bread if it is open and take it to a friend", why:"Taking something away to somewhere else would be ～ていく. She will come back."},
+      {t:"Wait in front of the bakery until it opens", why:"Nothing here says she will wait. ～てくる means she comes back after checking."}]}
+  ],
  codex:[
   {
    id:"passive-form",
@@ -2108,6 +2851,100 @@ ICA.addUnit({
     }
    ],
    checked:"2026-11"
+  },
+  {
+   id:"degree-ease-way-wants",
+   title:"Too much, easy or hard, how to, wants to: ～すぎる, ～やすい・～にくい, ～かた, ～たがる",
+   aka:["sugiru","すぎる","too much","yasui","nikui","やすい","にくい","easy to","hard to","kata","方","かた","how to","way of doing","tagaru","たがる","がる","someone wants"],
+   tags:["japanese","grammar","n4"],
+   summary:"Five patterns on the ます stem: ～すぎる (too much; also after adjectives), ～やすい and ～にくい (easy and hard to), ～[方]{かた} (the way to do), and ～たがる for what someone else wants.",
+   levels:{
+    starter:[
+      "Take the ます stem ([書]{か}きます → [書]{か}き) and add an ending:",
+      {ex:"[食]{た}べすぎました。\nI ate too much.\n\nこの[本]{ほん}は[読]{よ}みやすいです。\nThis book is easy to read.\n\nこのペンは[書]{か}きにくいです。\nThis pen is hard to write with.\n\n[漢字]{かんじ}の[読]{よ}み[方]{かた}を[教]{おし}えてください。\nPlease tell me how to read this kanji.\n\n[弟]{おとうと}は[犬]{いぬ}を[飼]{か}いたがっています。\nMy little brother wants to keep a dog.", label:"Examples"},
+      {list:[
+        "**～すぎる**: too much. Also after adjectives: [高]{たか}すぎる, [静]{しず}かすぎる.",
+        "**～やすい / ～にくい**: easy / hard to. They work like い-adjectives.",
+        "**～[方]{かた}**: the way to. It makes a noun, so を becomes の.",
+        "**～たがる**: someone else wants to. Not for yourself."
+      ]},
+      {key:"Check the stem first: [書]{か}き, [食]{た}べ, し, [来]{き}."},
+      "～たいです is for your own wishes. For other people, use ～たがっています or ～たいと[言]{い}っていました."
+    ],
+    builder:[
+      {h:"Forms"},
+      {table:[["Pattern","Attaches to","Notes"],["～すぎる","ます stem; い-adj minus い; な-adj stem","いい → よすぎる; ない → なさすぎる; [少]{すく}ない → [少]{すく}なすぎる"],["～やすい / ～にくい","ます stem","conjugate as い-adjectives: [読]{よ}みにくかった"],["～[方]{かた}","ます stem","noun; object + の: [漢字]{かんじ}の[書]{か}き[方]{かた}; する → の[仕方]{しかた}"],["～たがる","ます stem","godan verb; usually ～たがっている; object takes を"]]},
+      {h:"Meaning points"},
+      "～すぎる means a problem (too much). Its stem すぎ is a noun ([飲]{の}みすぎ). For positive “very”, use とても.",
+      "～やすい also means “tends to”: [割]{わ}れやすい (breaks easily), [風邪]{かぜ}をひきやすい. ～にくい is “hard but possible”; the potential negative ([読]{よ}めない) is “can’t”. Don’t confuse やすい with [安]{やす}い (cheap) or [易]{やさ}しい (easy).",
+      "～[方]{かた} (かた) is not ～ほう in ～たほうがいい. A destination keeps its particle and adds の: [駅]{えき}への[行]{い}き[方]{かた}.",
+      {h:"Talking about other people’s wishes"},
+      "Japanese avoids stating someone else’s feelings as fact. Use ～たがっている (signs you can see), ～たいと[言]{い}っていました (what they said) or ～たいそうです / ～たいらしいです (what you heard). ～たがる sounds as if you are describing a child, so avoid it about people above you, and never use it to the person themselves.",
+      "The same がる appears with some feeling adjectives: [寒]{さむ}がる, [怖]{こわ}がる, [欲]{ほ}しがる. With all of them, the object takes を: [新]{あたら}しいゲームを[欲]{ほ}しがっている."
+    ],
+    pro:[
+      "**すぎる with negatives.** For a verb, “not … enough” is usually said another way ([野菜]{やさい}が[足]{た}りない, not enough vegetables), though ～なさすぎる exists in speech ([寝]{ね}なさすぎ, not sleeping enough). With adjectives, なさすぎる is standard: [自信]{じしん}がなさすぎる (far too little confidence).",
+      "**Slang praise.** Younger speakers use ～すぎる as an intensifier: かわいすぎる, おいしすぎ. It is informal and can sound childish in serious contexts.",
+      "**～づらい and ～がたい.** Two more “hard to” endings appear at N3. ～づらい adds discomfort for the speaker: [言]{い}いづらい (awkward to say), [歩]{ある}きづらい (uncomfortable to walk in). ～がたい is formal and means “almost impossible”, mostly with verbs of thinking and feeling: [信]{しん}じがたい (hard to believe).",
+      "**[方]{かた} in compounds.** [仕方]{しかた}がない / しかたない (it can’t be helped) and やり[方]{かた} (way of doing it) are everyday words. In formal writing, ～[方法]{ほうほう} (method) replaces ～[方]{かた} for procedures: [申請]{しんせい}の[方法]{ほうほう} (how to apply).",
+      "**たがる and the speaker.** ～たがる can describe yourself only when you look at yourself from outside, for example when you retell what others said about you as a child: [子]{こ}どものころ、[私]{わたし}はいつも[外]{そと}で[遊]{あそ}びたがっていたそうです (I’m told I always wanted to play outside). In everyday speech, keep it for others.",
+      "**Respect.** About someone above you, report their wish with keigo: ～たいとおっしゃっていました. To the listener, ask ～たいですか only in casual or neutral situations; with guests, offer instead: お[茶]{ちゃ}はいかがですか, [何]{なに}かお[飲]{の}みになりますか."
+    ]
+   },
+   related:["polite-speech-basics","appearance-sou-you-rashii","potential-form","guessing-trying-advice"],
+   sources:[
+    {t:"Tae Kim’s Guide to Learning Japanese: Expressing Amounts (“Saying there's too much of something using 「すぎる」”)", url:"https://guidetojapanese.org/learn/grammar/amount"},
+    {t:"Tae Kim’s Guide to Learning Japanese: Actions that are easy or hard to do (～やすい, ～にくい, ～づらい, ～がたい)", url:"https://guidetojapanese.org/learn/grammar/easyhard"},
+    {t:"Tae Kim’s Guide to Learning Japanese: Showing signs of something (～がる, including ～たがる)", url:"https://guidetojapanese.org/learn/grammar/signs"}
+   ],
+   checked:"2026-11"
+  },
+  {
+   id:"direction-and-embedded-questions",
+   title:"Coming, going and indirect questions: ～てくる, ～ていく, ～か and ～かどうか",
+   aka:["te kuru","te iku","てくる","ていく","てきた","bring","take","come back","change over time","embedded question","indirect question","か","kadouka","かどうか","whether"],
+   tags:["japanese","grammar","n4"],
+   summary:"～てくる and ～ていく add direction (toward or away from the speaker), “go and do, then come back”, and change over time; question word + plain form + か and ～かどうか put questions inside sentences.",
+   levels:{
+    starter:[
+      "Two sets of patterns: one for direction and time, one for questions inside sentences.",
+      {ex:"[飲]{の}み[物]{もの}を[持]{も}っていきます。\nI’ll take some drinks (there).\n\nパンを[買]{か}ってきます。\nI’ll go and buy some bread (and come back).\n\n[寒]{さむ}くなってきました。\nIt’s getting colder.\n\n[会議]{かいぎ}が[何時]{なんじ}か、[知]{し}っていますか。\nDo you know what time the meeting is?\n\n[明日]{あした}[来]{く}るかどうか、[分]{わ}かりません。\nI don’t know whether they’re coming tomorrow.", label:"Examples"},
+      {list:[
+        "**～てくる**: toward me; or go, do and come back; or a change up to now.",
+        "**～ていく**: away from me; or a change from now on.",
+        "**～か**: a question with a question word, inside a sentence.",
+        "**～かどうか**: a yes-no question inside a sentence."
+      ]},
+      {key:"Inside a sentence, questions use the plain form, and nouns drop だ: [何時]{なんじ}か, [本当]{ほんとう}かどうか."},
+      "いってきます (I’ll go and come back) is ～てくる in action."
+    ],
+    builder:[
+      {h:"Direction"},
+      "[持]{も}ってくる / [持]{も}っていく (bring / take a thing), [連]{つ}れてくる / [連]{つ}れていく (bring / take a person), [帰]{かえ}ってくる (come back here). Japanese follows the speaker’s position more strictly than English: to a friend’s party you are going to, お[菓子]{かし}を[持]{も}っていきます, even where English says “I’ll bring”. ～てくる also marks actions toward you: [電話]{でんわ}をかけてきた (called me).",
+      {h:"Go and come back"},
+      "[買]{か}ってくる, [見]{み}てくる, [行]{い}ってくる: do something elsewhere and return. Compare [買]{か}っていく: buy on the way and take it with you.",
+      {h:"Change over time"},
+      "With verbs of change (なる, [増]{ふ}える, [慣]{な}れる, [分]{わ}かる), ～てきた means up to now, and ～ていく means from now on: [慣]{な}れてきました, [続]{つづ}けていきます. With weather and the body, ～てきた often means “has started to”: [雨]{あめ}が[降]{ふ}ってきた.",
+      {h:"Embedded questions"},
+      {table:[["Kind","Form","Example"],["question word","plain form + か","どこに[置]{お}いたか[覚]{おぼ}えていない"],["yes-no","plain form + かどうか","[行]{い}けるかどうか[分]{わ}からない"],["noun / な-adj","no だ","[何時]{なんじ}か, [大丈夫]{だいじょうぶ}かどうか"]]},
+      "Inside the question, は often becomes が. どうか can be dropped ([来]{く}るか[分]{わ}からない), or both answers can be listed ([来]{く}るか[来]{こ}ないか)."
+    ],
+    pro:[
+      "**Viewpoint.** Japanese takes the speaker’s position by default. Even going toward the listener is [行]{い}く, where English says “come”: あとでそっちに[行]{い}くね (I’ll come over to you later). The listener, speaking from their side, says [来]{き}てね. With ～てくる and ～ていく the same rule holds, although in conversations about the listener’s own place both viewpoints can be heard.",
+      "**くる for things coming at you.** Besides physical movement, ～てくる marks actions and feelings directed at the speaker: [急]{きゅう}に[話]{はな}しかけてきた (suddenly started talking to me), [悲]{かな}しくなってきた (I started to feel sad). This is one way Japanese shows the speaker’s viewpoint without saying [私]{わたし}.",
+      "**ていく for disappearing.** ～ていく can describe something moving away out of sight or out of existence: [鳥]{とり}が[飛]{と}んでいった (the bird flew off), [人]{ひと}が[減]{へ}っていく (people keep decreasing).",
+      "**Written forms.** In writing, embedded questions often keep the particle: [何]{なに}が[問題]{もんだい}なのかを[考]{かんが}える (consider what the problem is). The explanatory の (～のか, ～のかどうか) is common in both speech and writing and adds a feeling of “what the situation is”.",
+      "**Politeness.** An embedded question softens a request because it asks about the listener’s knowledge rather than demanding an answer: [何時]{なんじ}に[着]{つ}くか[教]{おし}えていただけますか. ～かどうか[分]{わ}かりませんが… is a common cushion before a suggestion: うまくいくかどうか[分]{わ}かりませんが、やってみます (I don’t know whether it will work, but I’ll try).",
+      "**Next steps.** At N3, change over time continues with ～ようになる (come to do, reach the point where) and ～ようにする (make a point of), in Unit 9 ({{purpose-you-ni-tame-ni}})."
+    ]
+   },
+   related:["te-form","guessing-trying-advice","polite-speech-basics","purpose-you-ni-tame-ni","question-sentences"],
+   sources:[
+    {t:"Tae Kim’s Guide to Learning Japanese: Other uses of the te-form (“Using motion verbs （行く、来る） with the te-form”)", url:"https://guidetojapanese.org/learn/grammar/teform"},
+    {t:"Tae Kim’s Guide to Learning Japanese: The Question Marker (“「か」 used in relative clauses”)", url:"https://guidetojapanese.org/learn/grammar/question"},
+    {t:"The Japan Foundation, いろどり IRODORI Elementary 2: table of contents with grammar points by lesson (PDF)", url:"https://www.irodori.jpf.go.jp/assets/data/elementary02/pdf/Z_contents_en.pdf"}
+   ],
+   checked:"2026-11"
   }
  ],
  terms:[
@@ -2200,7 +3037,14 @@ ICA.addUnit({
    term:"～し (and what’s more)",
    def:"Plain form + し lists reasons or points: [安]{やす}いし、おいしいし、よく[来]{き}ます. Nouns and な-adjectives take だ: [雨]{あめ}だし. A single し hints at other reasons.",
    codex:"n4-grammar-patterns"
-  }
+  },
+  {id:"sugiru", term:"～すぎる (too much)", def:"The ます stem or an adjective stem + すぎる: “too…, …too much”. [食]{た}べすぎる, [高]{たか}すぎる, [静]{しず}かすぎる; いい → よすぎる. It is an ichidan verb, and すぎ is also a noun: [飲]{の}みすぎ.", codex:"degree-ease-way-wants"},
+  {id:"yasui-nikui", term:"～やすい / ～にくい (easy / hard to)", def:"The ます stem + やすい (easy to, tends to) or にくい (hard to): [読]{よ}みやすい, [書]{か}きにくい, [割]{わ}れやすい. The result is an い-adjective. にくい means hard but possible, unlike the potential negative.", codex:"degree-ease-way-wants"},
+  {id:"kata-way", term:"～[方]{かた} (the way to do)", def:"The ます stem + [方]{かた} makes a noun meaning “the way of doing”: [読]{よ}み[方]{かた}, [使]{つか}い[方]{かた}. The object takes の: [漢字]{かんじ}の[書]{か}き[方]{かた}. する verbs use noun + の[仕方]{しかた}.", codex:"degree-ease-way-wants"},
+  {id:"tagaru", term:"～たがる (someone else wants to)", def:"The ます stem + たがる (a godan verb): someone else shows signs of wanting to. Usually ～たがっている for a person now: [行]{い}きたがっています. Not for yourself, the listener, or people above you.", codex:"degree-ease-way-wants"},
+  {id:"te-kuru-te-iku", term:"～てくる / ～ていく", def:"The て-form + くる (toward here, or a change up to now) or いく (away from here, or a change from now on): [持]{も}ってくる (bring), [持]{も}っていく (take), [寒]{さむ}くなってきた (it has got colder). ～てくる also means “go and do, then come back”.", codex:"direction-and-embedded-questions"},
+  {id:"embedded-question", term:"Embedded question", def:"A question inside a larger sentence, in the plain form + か, keeping its question word: [何時]{なんじ}に[始]{はじ}まるか[知]{し}っていますか (Do you know what time it starts?). Nouns and な-adjectives drop だ.", codex:"direction-and-embedded-questions"},
+  {id:"ka-dou-ka", term:"～かどうか (whether or not)", def:"A plain form + かどうか puts a yes-no question inside a sentence: [来]{く}るかどうか[分]{わ}かりません (I don’t know whether they’re coming). Nouns and な-adjectives drop だ: [本当]{ほんとう}かどうか.", codex:"direction-and-embedded-questions"}
  ],
  bank:[
   {
@@ -2668,9 +3512,9 @@ ICA.addUnit({
    q:"At a party the host says: 「[飲]{の}み[物]{もの}は[冷蔵庫]{れいぞうこ}に[冷]{ひ}やしてあります。」 What is she telling you?",
    options:[
     {
-     t:"The drinks have been chilled in the fridge and are ready for you.",
+     t:"The drinks have been chilled for you.",
      ok:true,
-     why:"[冷]{ひ}やしてある: someone chilled them on purpose, and they are ready. ～てある often suggests preparation."
+     why:"[冷]{ひ}やしてある: someone chilled them on purpose, and they are ready in the fridge. ～てある often suggests preparation."
     },
     {t:"The drinks are being chilled right now.", why:"That would be [冷]{ひ}やしています."},
     {t:"Please put the drinks in the fridge.", why:"A request would be [冷]{ひ}やしてください or [冷蔵庫]{れいぞうこ}に[入]{い}れてください."},
@@ -2684,9 +3528,9 @@ ICA.addUnit({
    q:"[出]{で}る is intransitive. Why can you still say [部屋]{へや}を[出]{で}る (leave the room)?",
    options:[
     {
-     t:"Here を marks the place you move out of, not an object that changes.",
+     t:"Here を marks the place you leave.",
      ok:true,
-     why:"With verbs of movement, を can mark the place you leave or move through, as in [道]{みち}を[歩]{ある}く."
+     why:"With verbs of movement, を can mark the place you move out of or through, not an object that changes, as in [道]{みち}を[歩]{ある}く."
     },
     {t:"Because [出]{で}る is transitive when it means “leave”.", why:"[出]{で}る stays intransitive. Its transitive partner is [出]{だ}す, “take out”."},
     {t:"It is a mistake that everyone makes.", why:"It isn’t a mistake: [部屋]{へや}を[出]{で}る is standard Japanese."},
@@ -2740,9 +3584,9 @@ ICA.addUnit({
    q:"Mariya says: 「[約束]{やくそく}したのに、トビーさんは[来]{き}ませんでした。」 What does のに add?",
    options:[
     {
-     t:"The result went against her expectation, and she is disappointed.",
+     t:"It went against what she expected.",
      ok:true,
-     why:"のに means “even though”, with feeling: he promised, yet he didn’t come."
+     why:"のに means “even though”, with feeling: he promised, yet he didn’t come, and she is disappointed."
     },
     {t:"Toby didn’t come because he had promised.", why:"That would be から. のに shows the opposite of what was expected."},
     {t:"She is asking Toby to keep his promise.", why:"A request can’t follow のに; this is a statement about what happened."},
@@ -2832,6 +3676,114 @@ ICA.addUnit({
     {t:"I will eat, thank you.", why:"Your own eating would be いただきます."},
     {t:"Please come in.", why:"That would be どうぞ、お[入]{はい}りください or いらっしゃい."}
    ]
-  }
+  },
+  {id:"e3u7-q49", lesson:"e3u7-l6", level:1, q:"What is the すぎる form of [静]{しず}か (quiet)?", options:[
+   {t:"[静]{しず}かすぎる", ok:true, why:"A な-adjective adds すぎる to its bare stem."},
+   {t:"[静]{しず}かなすぎる", why:"No な before すぎる: [静]{しず}かすぎる."},
+   {t:"[静]{しず}かだすぎる", why:"No だ before すぎる: [静]{しず}かすぎる."},
+   {t:"[静]{しず}かさすぎる", why:"Only いい and ない add さ (よすぎる, なさすぎる)."}
+  ]},
+  {id:"e3u7-q50", lesson:"e3u7-l6", level:1, q:"What does [使]{つか}い[方]{かた} mean?", options:[
+   {t:"how to use (the way of using)", ok:true, why:"ます stem + [方]{かた} (かた): the way of doing."},
+   {t:"the person who uses it", why:"That would be [使]{つか}う[人]{ひと}. [方]{かた} here means “way”."},
+   {t:"easy to use", why:"That would be [使]{つか}いやすい."},
+   {t:"using it too much", why:"That would be [使]{つか}いすぎ."}
+  ]},
+  {id:"e3u7-q51", lesson:"e3u7-l6", level:1, q:"Which is the correct way to say “easy to read”?", options:[
+   {t:"[読]{よ}みやすい", ok:true, why:"やすい follows the ます stem: 読み + やすい."},
+   {t:"[読]{よ}むやすい", why:"やすい doesn’t follow the dictionary form. Use the ます stem: 読みやすい."},
+   {t:"[読]{よ}んでやすい", why:"やすい doesn’t follow the て-form. Use the ます stem: 読みやすい."},
+   {t:"[読]{よ}みやすいだ", why:"読みやすい is an い-adjective, so it never takes だ."}
+  ]},
+  {id:"e3u7-q52", lesson:"e3u7-l6", level:2, q:"How do you say “how to make curry”?", options:[
+   {t:"カレーの[作]{つく}り[方]{かた}", ok:true, why:"[方]{かた} makes a noun, so the object takes の: カレーの[作]{つく}り[方]{かた}."},
+   {t:"カレーを[作]{つく}り[方]{かた}", why:"[作]{つく}り[方]{かた} is a noun, so を changes to の."},
+   {t:"カレーが[作]{つく}り[方]{かた}", why:"[作]{つく}り[方]{かた} is a noun, so the object takes の: カレーの[作]{つく}り[方]{かた}."},
+   {t:"カレーの[作]{つく}る[方]{かた}", why:"[方]{かた} (way) follows the ます stem: [作]{つく}り[方]{かた}."}
+  ]},
+  {id:"e3u7-q53", lesson:"e3u7-l6", level:2, q:"Kaito says: 「[昨日]{きのう}、[寝]{ね}すぎた。」 What happened?", options:[
+   {t:"He slept too long.", ok:true, why:"ます stem [寝]{ね} + すぎた: slept too much."},
+   {t:"He couldn’t sleep.", why:"That would be [寝]{ね}られなかった."},
+   {t:"He slept well.", why:"That would be よく[寝]{ね}た. すぎる means too much, which is a problem."},
+   {t:"He wanted to sleep.", why:"That would be [寝]{ね}たかった."}
+  ]},
+  {id:"e3u7-q54", lesson:"e3u7-l6", level:2, q:"Yến says a certain word is hard for her to pronounce, though she can say it if she goes slowly. Which sentence fits?", options:[
+   {t:"この[言葉]{ことば}は[言]{い}いにくいです。", ok:true, why:"にくい: hard but possible."},
+   {t:"この[言葉]{ことば}は[言]{い}えません。", why:"[言]{い}えません means she can’t say it at all, but she can say it slowly."},
+   {t:"この[言葉]{ことば}は[言]{い}いやすいです。", why:"That is the opposite: easy to say."},
+   {t:"この[言葉]{ことば}は[言]{い}いすぎです。", why:"[言]{い}いすぎ means “saying too much, going too far”, which is a different idea."}
+  ]},
+  {id:"e3u7-q55", lesson:"e3u7-l6", level:3, q:"You tell a colleague that your manager said he wants to attend the meeting. Which sentence is most appropriate?", options:[
+   {t:"[部長]{ぶちょう}は[会議]{かいぎ}に[出]{で}たいとおっしゃっていました。", ok:true, why:"It reports what the manager said, with the respectful verb おっしゃる."},
+   {t:"[部長]{ぶちょう}は[会議]{かいぎ}に[出]{で}たがっています。", why:"たがる describes wanting from the outside, like describing a child, which sounds rude about a superior."},
+   {t:"[部長]{ぶちょう}は[会議]{かいぎ}に[出]{で}たいです。", why:"A bare ～たいです about someone else sounds as if you could read his mind."},
+   {t:"[部長]{ぶちょう}は[会議]{かいぎ}に[出]{で}たがります。", why:"This describes a habit, and たがる about a superior sounds disrespectful."}
+  ]},
+  {id:"e3u7-q56", lesson:"e3u7-l6", level:3, q:"Megumi tells a friend: 「そうたは、[何]{なん}でも[自分]{じぶん}でやりたがるの。」 What does she mean?", options:[
+   {t:"Sōta always wants to do everything by himself.", ok:true, why:"～たがる (plain) describes a habit of wanting, seen from outside."},
+   {t:"Sōta can do everything by himself.", why:"“Can do” would be できる or the potential form. たがる is about wanting."},
+   {t:"Sōta doesn’t want to do anything himself.", why:"That would be やりたがらない."},
+   {t:"Sōta did everything by himself.", why:"That would be [自分]{じぶん}でやった."}
+  ]},
+  {id:"e3u7-q57", lesson:"e3u7-l6", level:3, q:"Which sentence is correct?", options:[
+   {t:"[白]{しろ}い[服]{ふく}は[汚]{よご}れやすいです。", ok:true, why:"ます stem [汚]{よご}れ + やすい: white clothes get dirty easily."},
+   {t:"[白]{しろ}い[服]{ふく}は[汚]{よご}れるやすいです。", why:"やすい follows the ます stem: [汚]{よご}れやすい."},
+   {t:"[白]{しろ}い[服]{ふく}は[汚]{よご}れやすいでした。", why:"やすい is an い-adjective, so its polite past is [汚]{よご}れやすかったです."},
+   {t:"[白]{しろ}い[服]{ふく}は[汚]{よご}れやすくです。", why:"Before です, an い-adjective keeps い: [汚]{よご}れやすいです."}
+  ]},
+  {id:"e3u7-q58", lesson:"e3u7-l7", level:1, q:"Which verb means “bring (a thing)”?", options:[
+   {t:"[持]{も}ってくる", ok:true, why:"～てくる: toward where the speaker is."},
+   {t:"[持]{も}っていく", why:"～ていく: away from the speaker, “take”."},
+   {t:"[持]{も}っている", why:"[持]{も}っている means “have, be holding”."},
+   {t:"[持]{も}ってみる", why:"～てみる means “try holding”."}
+  ]},
+  {id:"e3u7-q59", lesson:"e3u7-l7", level:1, q:"What does いってきます literally mean?", options:[
+   {t:"I’ll go and come back.", ok:true, why:"[行]{い}って + きます: go, then come back. It is said when leaving home."},
+   {t:"I have come.", why:"That would be [来]{き}ました. いってきます starts with going."},
+   {t:"Please go.", why:"That would be いってください. The reply to いってきます is いってらっしゃい."},
+   {t:"I went.", why:"That would be [行]{い}きました."}
+  ]},
+  {id:"e3u7-q60", lesson:"e3u7-l7", level:1, q:"Which sentence means “It has started to rain”?", options:[
+   {t:"[雨]{あめ}が[降]{ふ}ってきました。", ok:true, why:"～てきた with weather: a change that has started up to now."},
+   {t:"[雨]{あめ}が[降]{ふ}っていきました。", why:"～ていく points into the future, away from now. A start of rain is ～てきた."},
+   {t:"[雨]{あめ}が[降]{ふ}ってみました。", why:"～てみる means “try”. Rain doesn’t try anything."},
+   {t:"[雨]{あめ}が[降]{ふ}っておきました。", why:"～ておく means doing something in advance, which doesn’t fit rain."}
+  ]},
+  {id:"e3u7-q61", lesson:"e3u7-l7", level:2, q:"How do you ask “Do you know where Mariya is?”", options:[
+   {t:"まりやさんがどこにいるか、[知]{し}っていますか。", ok:true, why:"Question word + plain form + か, then the main verb."},
+   {t:"まりやさんがどこにいますか、[知]{し}っていますか。", why:"Inside a sentence, the question takes the plain form: いるか."},
+   {t:"まりやさんがどこにいるかどうか、[知]{し}っていますか。", why:"With a question word (どこ), use か alone, not かどうか."},
+   {t:"まりやさんがどこにいる、[知]{し}っていますか。", why:"The embedded question needs か: どこにいるか."}
+  ]},
+  {id:"e3u7-q62", lesson:"e3u7-l7", level:2, q:"How do you say “I’ll ask whether the shop is open tomorrow”?", options:[
+   {t:"[明日]{あした}、[店]{みせ}が[開]{あ}いているかどうか、[聞]{き}いてみます。", ok:true, why:"A yes-no question in the plain form + かどうか."},
+   {t:"[明日]{あした}、[店]{みせ}が[開]{あ}いていますかどうか、[聞]{き}いてみます。", why:"Inside a sentence, use the plain form: [開]{あ}いているかどうか."},
+   {t:"[明日]{あした}、[店]{みせ}が[開]{あ}いているどうか、[聞]{き}いてみます。", why:"か is needed before どうか."},
+   {t:"[明日]{あした}、[店]{みせ}が[開]{あ}いているだかどうか、[聞]{き}いてみます。", why:"だ never goes before か here. Verbs simply take かどうか."}
+  ]},
+  {id:"e3u7-q63", lesson:"e3u7-l7", level:2, q:"Rodrigo says: 「[日本]{にほん}の[生活]{せいかつ}に、だいぶ[慣]{な}れてきました。」 What does he mean?", options:[
+   {t:"I’ve got quite used to life in Japan (over time, up to now).", ok:true, why:"～てきた with a change: it has been happening up to now."},
+   {t:"I will get used to life in Japan from now on.", why:"That would be [慣]{な}れていくでしょう. ～てきた looks back to now."},
+   {t:"I came to Japan to get used to life here.", why:"きました here is the helper ～てくる, not the verb “come” with a purpose."},
+   {t:"I can’t get used to life in Japan.", why:"That would be [慣]{な}れられません. [慣]{な}れてきました is positive."}
+  ]},
+  {id:"e3u7-q64", lesson:"e3u7-l7", level:3, q:"You are going to a friend’s home for dinner. On the phone, your friend asks what you will bring. You will take a cake. What do you say?", options:[
+   {t:"ケーキを[持]{も}っていきます。", ok:true, why:"You are not there yet, so the cake goes away from where you are: [持]{も}っていきます."},
+   {t:"ケーキを[持]{も}ってきます。", why:"English “I’ll bring” misleads here. Japanese usually follows the speaker’s position: [持]{も}っていきます."},
+   {t:"ケーキを[持]{も}ってきてください。", why:"That asks your friend to bring a cake."},
+   {t:"ケーキを[持]{も}っていってください。", why:"That asks your friend to take a cake somewhere."}
+  ]},
+  {id:"e3u7-q65", lesson:"e3u7-l7", level:3, q:"Megumi texts: 「そうたが[熱]{ねつ}を[出]{だ}したので、[病院]{びょういん}に[連]{つ}れていきます。」 What will she do?", options:[
+   {t:"Take Sōta to the hospital.", ok:true, why:"[連]{つ}れていく: take a person along, away from where she is now."},
+   {t:"Bring Sōta home from the hospital.", why:"That would be [病院]{びょういん}から[連]{つ}れて[帰]{かえ}ります."},
+   {t:"Ask you to take Sōta to the hospital.", why:"That would be [連]{つ}れていってくれませんか. Megumi says what she will do."},
+   {t:"Wait for Sōta to come to the hospital.", why:"[連]{つ}れていく means she goes with him."}
+  ]},
+  {id:"e3u7-q66", lesson:"e3u7-l7", level:3, q:"Which sentence is correct?", options:[
+   {t:"その[話]{はなし}が[本当]{ほんとう}かどうか、[分]{わ}かりません。", ok:true, why:"A noun takes かどうか directly, with no だ."},
+   {t:"その[話]{はなし}が[本当]{ほんとう}だかどうか、[分]{わ}かりません。", why:"Nouns and な-adjectives drop だ before か."},
+   {t:"その[話]{はなし}が[本当]{ほんとう}ですかどうか、[分]{わ}かりません。", why:"Inside a sentence, use the plain form, not です."},
+   {t:"その[話]{はなし}が[本当]{ほんとう}なかどうか、[分]{わ}かりません。", why:"な doesn’t go before か. Say [本当]{ほんとう}かどうか (or [本当]{ほんとう}なのかどうか, with の)."}
+  ]}
  ]
 });

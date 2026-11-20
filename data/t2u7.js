@@ -131,7 +131,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u7-l1-x1", type:"mcq", q:"Fatima keeps `budget.xlsx`, `budget_old.xlsx`, `budget_final.xlsx` and `budget_final_fixed.xlsx`. Which question is version control specifically designed to answer that her file names can’t?", options:[
-      {t:"What exactly changed between two versions, who changed it and why", ok:true, why:"Right. Each commit records the changes, the author, the date and a message, so the history explains itself."},
+      {t:"What exactly changed, who changed it and why", ok:true, why:"Right. Each commit records the changes, the author, the date and a message, so the history explains itself."},
       {t:"How to make the spreadsheet calculate faster", why:"Version control records versions; it has nothing to do with how fast a spreadsheet calculates."},
       {t:"How to stop anyone else from opening the file", why:"That’s about permissions and sharing, not version history."},
       {t:"How to make the file smaller", why:"Git compresses its own storage, but making a file smaller isn’t its purpose."}
@@ -164,15 +164,15 @@ ICA.addUnit({
       {t:"Run `git init` in her project folder and make her first commit", why:"Last: the commit will now carry her name and private email."}
     ]},
     {id:"t2u7-l1-x6", type:"mcq", q:"Lucía set `user.email` to her personal address and has made commits. She’s about to share the repository publicly. What should she know?", options:[
-      {t:"Her personal address will be visible in those commits; she should switch to her noreply address now, which affects future commits", ok:true, why:"Right. The email is stored in each commit. Changing the setting only affects commits made afterwards."},
+      {t:"Her address is visible in those commits", ok:true, why:"Right. The email is stored in each commit. She should switch to her noreply address now; changing the setting only affects commits made afterwards."},
       {t:"GitHub hides the author email in public repositories automatically", why:"Commit authors, including email addresses, can be read by anyone who looks at or downloads the history."},
       {t:"Changing the setting now will update the email in all her old commits", why:"Settings apply to new commits only. Existing commits keep the email they were made with."},
       {t:"The email doesn’t matter because Git never uses it", why:"Git records it in every commit, and GitHub uses it to link commits to accounts."}
     ]},
     {id:"t2u7-l1-x7", type:"mcq", q:"Sione wants to use Git but is nervous about the command line. He uses a Windows laptop. Which statement is accurate?", options:[
-      {t:"GitHub Desktop (Windows and macOS) can stage, commit and push with buttons, and it uses the same ideas as the commands", ok:true, why:"Right. It’s a free GitHub app for Windows and macOS. Understanding the commands still helps, because the buttons do the same things."},
+      {t:"GitHub Desktop can stage, commit and push with buttons", ok:true, why:"Right. It’s a free GitHub app for Windows and macOS, and it uses the same ideas as the commands. Understanding the commands still helps, because the buttons do the same things."},
       {t:"Git can only ever be used by typing commands", why:"GitHub Desktop, code editors such as VS Code, and GitHub’s website all offer point-and-click Git."},
-      {t:"GitHub Desktop replaces Git with a different system", why:"It’s a front end for Git: the repository it makes is an ordinary Git repository."},
+      {t:"GitHub Desktop replaces Git with a different, simpler system", why:"It’s a front end for Git: the repository it makes is an ordinary Git repository."},
       {t:"He must install Linux first", why:"Git for Windows and GitHub Desktop both run on Windows directly."}
     ]}
    ],
@@ -312,7 +312,7 @@ ICA.addUnit({
       ["`git restore file`","From the staging area back into the working tree, discarding edits","Unstaged edits in that file are thrown away."]
     ]},
     {id:"t2u7-l2-x2", type:"mcq", q:"Priya runs `git status` and sees `index.html` under **Changes to be committed** and also under **Changes not staged for commit**. What does that mean?", options:[
-      {t:"She staged the file, then edited it again: the staged version and the newer edits are different", ok:true, why:"Right. Staging copies the file at that moment. The second listing is the newer edits. `git add index.html` again would stage those too."},
+      {t:"She staged the file, then edited it again", ok:true, why:"Right. The staged version and the newer edits are different. Staging copies the file at that moment. The second listing is the newer edits. `git add index.html` again would stage those too."},
       {t:"Git is confused and the repository is damaged", why:"This is a normal state, and `git status` is describing it accurately."},
       {t:"There are two different files called `index.html`", why:"It’s one file, in two states: the staged copy and the working tree copy."},
       {t:"The commit will include both versions", why:"A commit takes only what’s staged. The later edits stay out until she adds them."}
@@ -340,7 +340,7 @@ ICA.addUnit({
       {t:"   <p><a href=\"about.html\">About</a></p>", flag:false, why:"Unchanged context after the change."}
     ]},
     {id:"t2u7-l2-x6", type:"mcq", q:"Mei committed “Add price list” an hour ago and already pushed it to a shared repository. The prices were wrong. What’s the safest way to undo that commit?", options:[
-      {t:"`git revert` with that commit’s hash, which adds a new commit undoing it", ok:true, why:"Right. Revert keeps the history intact, so it’s safe even after others have the commit."},
+      {t:"`git revert` with that commit’s hash", ok:true, why:"Right. It adds a new commit undoing the old one. Revert keeps the history intact, so it’s safe even after others have the commit."},
       {t:"`git reset --hard HEAD~1`", why:"That removes the commit from her branch and throws away uncommitted work. Rewriting shared history causes problems for everyone who already has it."},
       {t:"Delete the `.git` folder and start again", why:"That deletes the entire history, not just one commit."},
       {t:"`git restore price-list.html`", why:"`git restore` only discards uncommitted edits in the working tree. It doesn’t undo a commit."}
@@ -474,7 +474,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u7-l3-x1", type:"mcq", q:"Which description of a Git branch is accurate?", options:[
-      {t:"A movable label that points at a commit and moves forward when you commit on it", ok:true, why:"Right. That’s why branches are instant to create and take almost no space."},
+      {t:"A movable label that points at a commit", ok:true, why:"Right. It moves forward when you commit on it. That’s why branches are instant to create and take almost no space."},
       {t:"A full copy of the project in a separate folder", why:"Git doesn’t copy files to make a branch. Your one folder changes to match whichever branch you switch to."},
       {t:"A backup of the repository on GitHub", why:"Branches exist locally too, with or without GitHub. A backup copy elsewhere is a remote or a clone."},
       {t:"A list of files that someone else is allowed to edit", why:"Branches aren’t about permissions; they’re separate lines of commits."}
@@ -515,8 +515,8 @@ ICA.addUnit({
       {t:"`git branch -d main`", why:"Deleting `main` isn’t possible while you’re on it, and wouldn’t undo the merge anyway."}
     ]},
     {id:"t2u7-l3-x7", type:"mcq", q:"Lucía runs `git switch fix-menu` and gets “Your local changes to the following files would be overwritten by checkout”. What does it mean?", options:[
-      {t:"She has uncommitted edits that switching would overwrite, so Git stopped to protect them", ok:true, why:"Right. Commit them on the current branch, or undo them with `git restore`, then switch."},
-      {t:"The branch `fix-menu` doesn’t exist", why:"Then Git would say it can’t find that branch. This message is about uncommitted changes."},
+      {t:"Switching would overwrite her uncommitted edits", ok:true, why:"Right. Git stopped to protect them. Commit them on the current branch, or undo them with `git restore`, then switch."},
+      {t:"The branch `fix-menu` doesn’t exist in her repository", why:"Then Git would say it can’t find that branch. This message is about uncommitted changes."},
       {t:"Her repository is damaged", why:"Nothing is damaged. Git refused the switch precisely so nothing is lost."},
       {t:"Git has already overwritten her changes", why:"No: “Aborting” means the switch didn’t happen, and her edits are untouched."}
     ]}
@@ -652,7 +652,7 @@ ICA.addUnit({
       ["`git pull`","Downloads new commits and merges them into your current branch","A fetch plus a merge."]
     ]},
     {id:"t2u7-l4-x2", type:"mcq", q:"Fatima makes three commits on her laptop at a café with no Wi-Fi. Her colleague checks the GitHub repository. What does the colleague see?", options:[
-      {t:"None of the three commits: they exist only on Fatima’s laptop until she pushes", ok:true, why:"Right. Committing is local. Pushing is the step that sends commits to GitHub."},
+      {t:"None of them, until she pushes", ok:true, why:"Right. They exist only on Fatima’s laptop: committing is local. Pushing is the step that sends commits to GitHub."},
       {t:"All three, because Git syncs automatically", why:"Git never syncs on its own. Nothing moves until a push or a pull."},
       {t:"The commits, but not their messages", why:"Nothing has reached GitHub yet, messages or otherwise."},
       {t:"An error saying Fatima is offline", why:"GitHub doesn’t know about her local repository at all until she pushes."}
@@ -684,7 +684,7 @@ ICA.addUnit({
       {t:"Wait an hour and push again", why:"The rejection isn’t temporary. Until she has the other commits locally, it will keep happening."}
     ]},
     {id:"t2u7-l4-x7", type:"mcq", q:"Tomás pushes a commit to his GitHub Pages repository’s `main` branch, which is the publishing source. What happens next?", options:[
-      {t:"Pages starts a new deploy; when the run in the Actions tab gets a green tick, the live site shows the new version", ok:true, why:"Right. A push is a new commit on the publishing branch, exactly like a commit made on the website."},
+      {t:"Pages starts a new deploy, and the live site updates", ok:true, why:"Right. When the run in the Actions tab gets a green tick, the live site shows the new version. A push is a new commit on the publishing branch, exactly like a commit made on the website."},
       {t:"Nothing until he presses Publish in Settings → Pages", why:"Once Pages is set up, every new commit on the publishing branch deploys automatically."},
       {t:"The site updates instantly, with no deploy", why:"There is a deploy run, which usually takes a few minutes."},
       {t:"Only files edited on the website are published; pushed files are ignored", why:"Pages doesn’t care how a commit was made. Pushed commits deploy the same way."}
@@ -818,8 +818,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u7-l5-x1", type:"mcq", q:"Sione wants to fix a typo in a community recipe project on GitHub. He isn’t a collaborator. What’s the usual route?", options:[
-      {t:"Fork it, commit the fix on a branch in his fork, then open a pull request to the original", ok:true, why:"Right. A fork gives him a copy he can push to, and the pull request asks the owners to merge his change."},
-      {t:"Clone it and `git push` directly to the original", why:"Without write access his push would be rejected. That’s exactly what forks and pull requests are for."},
+      {t:"Fork it, fix it on a branch, then open a pull request", ok:true, why:"Right. A fork gives him a copy he can push to: he commits the fix on a branch there, and the pull request asks the owners of the original to merge it."},
+      {t:"Clone it and `git push` the fix directly to the original", why:"Without write access his push would be rejected. That’s exactly what forks and pull requests are for."},
       {t:"Email the owners his password so they can add him", why:"Never share passwords. Owners can invite collaborators by username if they want to."},
       {t:"Open an issue containing the whole corrected file", why:"An issue can report the typo, but a pull request is how a change is proposed and merged."}
     ]},
@@ -861,7 +861,7 @@ ICA.addUnit({
       ["`Fixes #12` in a PR description","Closes issue 12 automatically when the PR is merged","A closing keyword links the change to the problem it solves."]
     ]},
     {id:"t2u7-l5-x7", type:"mcq", q:"Hana publishes a small JavaScript game in a public GitHub repository with no LICENSE file. Lucía wants to copy the code into her own project. What’s the position?", options:[
-      {t:"Lucía can view and fork it on GitHub, but without a licence, normal copyright applies and she has no permission to reuse the code", ok:true, why:"Right. GitHub’s terms let people view and fork public repositories, but reuse needs a licence. Hana can add one, such as MIT, if she wants to allow it."},
+      {t:"She can view and fork it, but not reuse the code", ok:true, why:"Right. GitHub’s terms let people view and fork public repositories, but reuse needs a licence. Hana can add one, such as MIT, if she wants to allow it."},
       {t:"Public means anyone can reuse it for anything", why:"Public means visible. Without a licence, copyright still applies."},
       {t:"No one, including Lucía, can even view it without a licence", why:"Viewing and forking on GitHub are allowed for public repositories. The licence is about reuse."},
       {t:"Lucía may reuse it if she makes her copy private", why:"Making a copy private doesn’t create permission to reuse someone else’s code."}
@@ -885,6 +885,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u7-q02","t2u7-q05","t2u7-q12","t2u7-q16","t2u7-q19","t2u7-q23","t2u7-q27","t2u7-q32","t2u7-q35","t2u7-q38","t2u7-q44","t2u7-q47"],
+  cpBank:[
+    {id:"t2u7-cp01", lesson:"t2u7-l1", level:1, q:"Kofi has just installed Git on a new laptop. Which command sets the name shown on every commit he makes on it?", options:[{t:"None: Git uses his GitHub username automatically", why:"Git runs on his computer and doesn’t know about his GitHub account. He sets `user.name` himself, and it needn’t match his username."}, {t:"`git config --global user.email \"Kofi Boateng\"`", why:"`user.email` holds an email address, not a name. The name goes in `user.name`."}, {t:"`git config --global user.name \"Kofi Boateng\"`", ok:true, why:"`user.name` is the name recorded on your commits, and `--global` applies it to every repository on this computer."}, {t:"`git commit -m \"Kofi Boateng\"`", why:"`-m` sets a commit’s message, which describes the change. It doesn’t set the author."}]},
+    {id:"t2u7-cp02", lesson:"t2u7-l1", level:2, q:"Lucía wants version history for her thesis notes, which are plain text files. She doesn’t want them online anywhere. What does she need?", options:[{t:"Only Git on her computer; GitHub is optional", ok:true, why:"Git keeps the whole history inside her project folder, on her own computer. GitHub is just one place to share a copy."}, {t:"A GitHub account, because Git stores the history on GitHub", why:"The history lives in her project, on her computer. GitHub is a separate website for sharing."}, {t:"A private GitHub repository, because Git can’t work without one", why:"Git works fully offline: committing, `git log` and `git diff` all happen on her own computer."}, {t:"Nothing: version control only works for program code", why:"Git suits any plain-text files, such as notes, web pages or data in CSV."}]},
+    {id:"t2u7-cp03", lesson:"t2u7-l2", level:1, q:"Which command lists, one line each, only the commits that changed `menu.html`?", options:[{t:"`git diff menu.html`", why:"That shows the unstaged changes in the file now, not its past commits."}, {t:"`git status menu.html`", why:"`git status` shows the current state of files, not their history."}, {t:"`git show menu.html`", why:"`git show` takes a commit, such as a hash, and shows that one commit in full."}, {t:"`git log --oneline -- menu.html`", ok:true, why:"`--oneline` gives one short line per commit, and `-- menu.html` limits the list to commits that changed that file."}]},
+    {id:"t2u7-cp04", lesson:"t2u7-l2", level:2, q:"Mia’s last commit has a typo in its message. She hasn’t pushed it, and she wants to redo the commit while keeping her changes. What fits best?", options:[{t:"`git reset --hard HEAD~1`", why:"`--hard` also throws away the changes in her files. She wants to keep them."}, {t:"`git reset --soft HEAD~1`, then commit again", ok:true, why:"For a last commit that isn’t shared, `reset --soft HEAD~1` removes the commit and leaves its changes staged, ready to commit with a better message."}, {t:"`git revert HEAD`", why:"Revert adds a new commit that undoes the changes, which suits shared commits. She wants to redo an unshared one and keep the changes."}, {t:"Delete the project’s hidden `.git` folder and start again", why:"That destroys the whole history. One unshared commit can be redone with `reset --soft`."}]},
+    {id:"t2u7-cp05", lesson:"t2u7-l2", level:3, q:"Omar wants `style.css` exactly as it was in commit `a1b2c3d`, without changing any other file. Which command does that?", options:[{t:"`git reset --hard a1b2c3d`", why:"That moves the whole branch back and throws away uncommitted work in every tracked file, not just one file."}, {t:"`git revert a1b2c3d`", why:"Revert undoes the changes that commit made. It doesn’t bring back the file as it was at that commit."}, {t:"`git restore --source a1b2c3d style.css`", ok:true, why:"It puts that old version of one file into the working tree. He then commits it if he wants to keep it."}, {t:"`git show a1b2c3d`", why:"`git show` only displays that commit. It changes no files."}]},
+    {id:"t2u7-cp06", lesson:"t2u7-l2", level:2, q:"Nadia created a new file, `contact.html`, and edited `index.html`, which Git already tracks. She runs `git commit -am \"Add contact page\"`. What goes into the commit?", options:[{t:"Both files", why:"`-a` skips new, untracked files, so `contact.html` is left out."}, {t:"Only `contact.html`", why:"It’s the other way round: tracked files are included, and new ones are skipped."}, {t:"Nothing, because `-a` needs a `git add` first", why:"`-a` does the staging itself for tracked files. It just skips new ones."}, {t:"Only the change to `index.html`", ok:true, why:"`-a` stages changes to files Git already tracks. New files are skipped and still need `git add`."}]},
+    {id:"t2u7-cp07", lesson:"t2u7-l3", level:2, q:"Ivo runs `git branch -d draft-menu`, but that branch has commits that aren’t merged anywhere. What happens?", options:[{t:"The branch and all its commits are deleted", why:"`-d` refuses in this case. When it does delete a merged branch, only the label goes; the commits stay."}, {t:"Git refuses, to protect the unmerged work", ok:true, why:"`-d` deletes only branches whose commits are merged somewhere, so you can’t lose unfinished work by mistake."}, {t:"Git merges it into `main` first, then deletes it", why:"Git never merges on its own. Merging is a separate command you choose to run."}, {t:"Git deletes the branch’s files from his folder but keeps the label", why:"Git refuses the delete, so nothing changes, neither the label nor his files."}]},
+    {id:"t2u7-cp08", lesson:"t2u7-l3", level:3, q:"Kenji edits `about.html` on `main` but doesn’t commit. Then he runs `git switch -c fix-typo`. Where are his edits now?", options:[{t:"They move with him to `fix-typo`, still uncommitted", ok:true, why:"Uncommitted edits belong to no branch yet. Switching here overwrites nothing, so the edits simply stay in his working tree."}, {t:"They stay behind on `main` and vanish from his folder", why:"Only committed work belongs to a branch. Uncommitted edits stay in the working tree when he switches."}, {t:"Git refuses to switch until he commits", why:"Git refuses only when switching would overwrite uncommitted changes. A new branch from the same commit overwrites nothing."}, {t:"Git commits them to `main` automatically first", why:"Git never commits for you. A commit happens only when you run `git commit`."}]},
+    {id:"t2u7-cp09", lesson:"t2u7-l4", level:1, q:"Ama cloned a repository last month. She wants to check which address `origin` points to. Which command shows it?", options:[{t:"`git status`", why:"`git status` says how your branch compares with the remote, but it doesn’t show the remote’s address."}, {t:"`git log --oneline`", why:"That lists commits, not remotes."}, {t:"`git remote -v`", ok:true, why:"`git remote -v` lists the repository’s remotes with their addresses. After a clone, `origin` is the address you cloned from."}, {t:"`git config --global --list`", why:"That shows your settings for every repository, such as your name and email. A remote belongs to one repository."}]},
+    {id:"t2u7-cp10", lesson:"t2u7-l4", level:3, q:"Amara’s `git pull` stops with a merge conflict in `index.html`: she and Kenji changed the same line. What should she do?", options:[{t:"Run `git push --force` so her version replaces his on GitHub", why:"That would delete Kenji’s commit from the remote’s history. Resolve the conflict instead."}, {t:"Delete her local repository and clone a fresh copy again", why:"That throws away her unpushed commits. Conflicts are normal and can be resolved."}, {t:"Push first, then pull again", why:"Her push is rejected until she has merged Kenji’s work. Resolve the conflict first."}, {t:"Resolve it: edit, remove markers, `git add`, commit, push", ok:true, why:"A pull merges, so its conflicts are resolved like any merge conflict. Once the merge is committed, her push will go through."}]},
+    {id:"t2u7-cp11", lesson:"t2u7-l5", level:3, q:"Kenji made a branch called `winter-hours` with two commits on his laptop. On GitHub, the branch isn’t listed and there’s no **Compare & pull request** banner. What did he miss?", options:[{t:"Pushing it: `git push -u origin winter-hours`", ok:true, why:"Branches and commits stay on his computer until he pushes them. Once the branch is on GitHub, he can open a pull request from it."}, {t:"Merging `winter-hours` into `main` on his laptop first", why:"A pull request is how a branch gets reviewed before it’s merged. Merging first skips that."}, {t:"Forking his own repository", why:"Forks are for projects you can’t push to. He can push his branch directly."}, {t:"Writing `Fixes #12` in a commit message", why:"That closes an issue when a pull request is merged. It doesn’t put his branch on GitHub."}]},
+    {id:"t2u7-cp12", lesson:"t2u7-l5", level:2, q:"Sara committed `settings.json` (no secrets in it) and later added it to `.gitignore`. Git still tracked it, so she ran `git rm --cached settings.json` and committed. What’s true now?", options:[{t:"It’s deleted from her computer and from every earlier commit", why:"`--cached` only stops tracking: her copy stays on disk. And earlier commits are never changed, so the old versions are still there."}, {t:"Git keeps tracking it until she pushes the change to GitHub", why:"Tracking happens in her own repository. The commit already stopped it; pushing only shares that commit."}, {t:"Her copy is kept, and old versions stay in the history", ok:true, why:"`git rm --cached` removes the file from Git’s tracking, not from her folder. Now `.gitignore` applies to it, and its earlier versions stay in the history."}, {t:"It’s gone from her folder, but Git still records her future edits", why:"It’s the other way round: the file stays in her folder, and because it’s untracked and ignored, Git no longer records her edits."}]}
+  ],
   codex:[
    {id:"why-version-control", title:"Version control, and why Git", aka:["version control","VCS","source control","revision control","Git vs GitHub","GitLab","Codeberg"], tags:["git","basics"],
     summary:"Version control records a history of meaningful snapshots of a project; Git is the most widely used system, and GitHub is one website for sharing Git repositories.",
@@ -1265,14 +1279,14 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u7-q01", lesson:"t2u7-l1", level:1, q:"What is the main difference between Git and GitHub?", options:[
-     {t:"Git is a program that keeps history on your computer; GitHub is a website for sharing Git repositories", ok:true, why:"Git works locally without an account; GitHub is one hosting service among several."},
+     {t:"Git is a program; GitHub is a hosting website", ok:true, why:"Git keeps history on your computer and works locally without an account; GitHub is a website for sharing Git repositories, one hosting service among several."},
      {t:"They are two names for the same thing", why:"They’re separate: you can use Git with no GitHub account at all."},
      {t:"GitHub is the newer version of Git", why:"GitHub isn’t a version of Git; it’s a website that stores Git repositories."},
-     {t:"Git is for websites and GitHub is for apps", why:"Both can hold any project made of files; the difference is program versus hosting service."}
+     {t:"Git is for websites, and GitHub is for apps and games", why:"Both can hold any project made of files; the difference is program versus hosting service."}
    ]},
    {id:"t2u7-q02", lesson:"t2u7-l1", level:1, q:"What does a Git commit record?", options:[
-     {t:"A snapshot of the whole project, with a message, author, date, a link to its parent and a unique hash", ok:true, why:"That’s the full picture: a commit is a snapshot plus the information that makes it part of a history."},
-     {t:"Only the one file you changed most recently", why:"A commit covers every tracked file; unchanged ones just reuse stored copies."},
+     {t:"A snapshot of the project, with its details", ok:true, why:"A commit is a snapshot of the whole project, with a message, author, date, a link to its parent and a unique hash: the information that makes it part of a history."},
+     {t:"Only the one file that you changed most recently", why:"A commit covers every tracked file; unchanged ones just reuse stored copies."},
      {t:"An automatic save every few minutes", why:"Git never saves automatically. You choose when to commit."},
      {t:"A backup copy on GitHub", why:"Commits are made on your computer. Nothing goes to GitHub until you push."}
    ]},
@@ -1289,20 +1303,20 @@ ICA.addUnit({
      {t:"`github --check`", why:"Not a real command. GitHub is a website, not something you check from the terminal."}
    ]},
    {id:"t2u7-q05", lesson:"t2u7-l1", level:3, q:"Oluwaseun is about to make his first commits for a public project. He wants to keep his personal email private. What should he do before committing?", options:[
-     {t:"Turn on “Keep my email addresses private” on GitHub and set his noreply address as `user.email`", ok:true, why:"Commits store the email publicly. The noreply address links commits to his account without exposing his real one."},
+     {t:"Use his GitHub noreply address as `user.email`", ok:true, why:"First turn on “Keep my email addresses private” on GitHub. Commits store the email publicly. The noreply address links commits to his account without exposing his real one."},
      {t:"Nothing: GitHub hides commit emails automatically", why:"The email recorded in a commit is visible to anyone who reads the history."},
      {t:"Leave `user.email` empty", why:"Git normally refuses to commit without an email (or guesses one from the computer’s name), and neither gives him a private address that links commits to his account."},
      {t:"Set it later; Git will update old commits", why:"Changing the setting affects only new commits. Old ones keep the address they were made with."}
    ]},
    {id:"t2u7-q06", lesson:"t2u7-l1", level:2, q:"What does `git config --global init.defaultBranch main` do?", options:[
-     {t:"Makes new repositories start with a branch called `main`, matching GitHub", ok:true, why:"Without it, many Git versions name the first branch `master` and print a hint."},
+     {t:"Names the first branch of new repositories `main`", ok:true, why:"This matches GitHub. Without it, many Git versions name the first branch `master` and print a hint."},
      {t:"Renames every branch on GitHub to `main`", why:"It’s a local setting for new repositories only; it doesn’t touch GitHub."},
      {t:"Prevents anyone from creating other branches", why:"It only names the first branch; you can still create any branches you like."},
      {t:"Deletes the `master` branch in existing repositories", why:"It affects only repositories created afterwards with `git init`."}
    ]},
    {id:"t2u7-q07", lesson:"t2u7-l1", level:3, q:"Mei uses a school Chromebook. The Linux development environment option is greyed out. What’s the realistic plan?", options:[
-     {t:"Her administrator has turned Linux off; she can follow the unit on GitHub’s website and with the exercises, and use Git on another computer when she can", ok:true, why:"Managed Chromebooks often block Linux. Everything in the unit can be learned by reading and through the website."},
-     {t:"Use `sudo` in Chrome’s address bar to force it on", why:"`sudo` is a Linux command; it doesn’t exist in the browser and can’t override administrator policy."},
+     {t:"Learn on GitHub’s website and the exercises for now", ok:true, why:"Her administrator has turned Linux off, as managed Chromebooks often do. Everything in the unit can be learned by reading and through the website, and she can use Git on another computer later."},
+     {t:"Use `sudo` in Chrome’s address bar to force Linux on", why:"`sudo` is a Linux command; it doesn’t exist in the browser and can’t override administrator policy."},
      {t:"Install Git for Windows on the Chromebook", why:"Windows installers don’t run on ChromeOS."},
      {t:"Git can’t be learned without installing it", why:"The concepts, the website and the exercises all work without a local Git."}
    ]},
@@ -1313,8 +1327,8 @@ ICA.addUnit({
      {t:"A video game save file that changes every second", why:"Constant binary changes are a poor fit for deliberate, message-based commits."}
    ]},
    {id:"t2u7-q09", lesson:"t2u7-l1", level:3, q:"Tomás says: “If every commit is a snapshot of the whole project, my repository will be 100 times bigger after 100 commits.” What’s the accurate reply?", options:[
-     {t:"Not so: unchanged files are reused rather than stored again, and Git compresses what it stores", ok:true, why:"Snapshots only store new content; small projects’ whole histories are usually tiny."},
-     {t:"He’s right, which is why you should commit rarely", why:"The premise is wrong; frequent small commits are good practice."},
+     {t:"Not so: Git reuses unchanged files and compresses the rest", ok:true, why:"Unchanged files are reused rather than stored again, and Git compresses what it stores. Snapshots only store new content; small projects’ whole histories are usually tiny."},
+     {t:"He’s right, which is why you should commit as rarely as possible", why:"The premise is wrong; frequent small commits are good practice."},
      {t:"Git only stores the first and last versions", why:"Git keeps every commit; it just avoids storing identical content twice."},
      {t:"GitHub deletes old commits to save space", why:"Hosting services keep the full history you push."}
    ]},
@@ -1326,7 +1340,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t2u7-q11", lesson:"t2u7-l2", level:1, q:"What does `git add index.html` do?", options:[
-     {t:"Copies the file’s current contents into the staging area for the next commit", ok:true, why:"It stages a snapshot of the file as it is now."},
+     {t:"Stages the file as it is now", ok:true, why:"It copies the file’s current contents into the staging area for the next commit."},
      {t:"Makes a commit of `index.html`", why:"Only `git commit` makes a commit; `git add` prepares it."},
      {t:"Uploads `index.html` to GitHub", why:"Nothing goes to GitHub until you push."},
      {t:"Tells Git to save the file automatically from now on", why:"Git never saves automatically. If you edit again, you add again."}
@@ -1344,9 +1358,9 @@ ICA.addUnit({
      {t:"The line is unchanged context", why:"Unchanged context lines start with a space."}
    ]},
    {id:"t2u7-q14", lesson:"t2u7-l2", level:2, q:"Hana runs `git diff` and sees nothing, but she knows she changed `style.css`. What’s the most likely reason?", options:[
-     {t:"She already staged the change; `git diff --staged` will show it", ok:true, why:"Plain `git diff` compares the working tree with the staging area, so staged changes don’t appear."},
+     {t:"She already staged the change", ok:true, why:"Plain `git diff` compares the working tree with the staging area, so staged changes don’t appear. `git diff --staged` will show it."},
      {t:"Git lost her change", why:"Git doesn’t lose changes; `git status` would show the file under “Changes to be committed”."},
-     {t:"CSS files can’t be diffed", why:"CSS is text; Git diffs it like any other text file."},
+     {t:"CSS files can’t be diffed, only HTML files", why:"CSS is text; Git diffs it like any other text file."},
      {t:"She needs to push first", why:"Diffs are local and have nothing to do with pushing."}
    ]},
    {id:"t2u7-q15", lesson:"t2u7-l2", level:1, q:"Which commit message is clearest?", options:[
@@ -1362,7 +1376,7 @@ ICA.addUnit({
      {t:"Delete `notes.txt` from her folder", why:"She wants to keep the file. Unstaging is enough."}
    ]},
    {id:"t2u7-q17", lesson:"t2u7-l2", level:2, q:"Why is `git revert` safer than `git reset --hard` for undoing a commit that others already have?", options:[
-     {t:"Revert adds a new commit that reverses the change, keeping history intact; reset rewrites history and discards uncommitted work", ok:true, why:"Others’ copies stay consistent with a revert, and nothing uncommitted is thrown away."},
+     {t:"Revert adds an undoing commit; reset rewrites history", ok:true, why:"Revert adds a new commit that reverses the change, keeping history intact; reset rewrites history and discards uncommitted work. Others’ copies stay consistent with a revert, and nothing uncommitted is thrown away."},
      {t:"Revert is faster", why:"Speed isn’t the point; the difference is what happens to history and your work."},
      {t:"Reset only works on GitHub", why:"Reset is a local Git command."},
      {t:"Revert deletes the commit completely so nobody can see it", why:"The opposite: the original commit stays in history, followed by the revert."}
@@ -1380,9 +1394,9 @@ ICA.addUnit({
      {t:"`git show --all`", why:"`git show` displays one object in detail; it doesn’t list history one per line."}
    ]},
    {id:"t2u7-q20", lesson:"t2u7-l2", level:3, q:"Dmitri runs `git init` in his home folder by mistake, and now `git status` lists thousands of untracked files. What’s the right fix?", options:[
-     {t:"Delete the `.git` folder that `git init` created in his home folder, and only that", ok:true, why:"Removing `.git` turns the folder back into an ordinary one; his files are untouched. Then run `git init` in the project folder."},
+     {t:"Delete only the new `.git` folder", ok:true, why:"That’s the folder `git init` created in his home folder. Removing it turns the folder back into an ordinary one; his files are untouched. Then run `git init` in the project folder."},
      {t:"Run `git add .` to tidy them up", why:"That would stage his entire home folder, the opposite of what he wants."},
-     {t:"Delete all the untracked files", why:"Those are his real files. The problem is the misplaced `.git` folder, not the files."},
+     {t:"Delete all the untracked files it lists", why:"Those are his real files. The problem is the misplaced `.git` folder, not the files."},
      {t:"Run `git reset --hard`", why:"There are no commits yet, and reset would not remove the repository anyway."}
    ]},
    /* ---- Lesson 3 ---- */
@@ -1405,10 +1419,10 @@ ICA.addUnit({
      {t:"Only the file names are merged, not the contents", why:"A merge combines the actual changes in the commits."}
    ]},
    {id:"t2u7-q24", lesson:"t2u7-l3", level:2, q:"When does Git make a fast-forward merge?", options:[
-     {t:"When the receiving branch has no new commits since the other branch started", ok:true, why:"Then Git can just move the label forward; no merge commit is needed."},
+     {t:"When only the other branch has new commits", ok:true, why:"If the receiving branch has no new commits since the other branch started, Git can just move the label forward; no merge commit is needed."},
      {t:"When both branches have new commits", why:"That needs a merge commit with two parents."},
      {t:"When there’s a conflict", why:"Conflicts stop the merge until you resolve them; they’re unrelated to fast-forwarding."},
-     {t:"Only on GitHub, never on your computer", why:"Fast-forwards happen locally whenever the history allows."}
+     {t:"Only on GitHub, and never on your own computer", why:"Fast-forwards happen locally whenever the history allows."}
    ]},
    {id:"t2u7-q25", lesson:"t2u7-l3", level:2, q:"In a conflicted file, what is between `<<<<<<< HEAD` and `=======`?", options:[
      {t:"Your current branch’s version of those lines", ok:true, why:"`HEAD` is where you are. The incoming branch’s version comes after `=======`."},
@@ -1418,12 +1432,12 @@ ICA.addUnit({
    ]},
    {id:"t2u7-q26", lesson:"t2u7-l3", level:3, q:"Lucía resolved a conflict, saved the file and ran `git commit`, but forgot to delete the `=======` line. Her page is published from `main`. What will visitors see?", options:[
      {t:"A line of equals signs appearing as text on the page", ok:true, why:"Git doesn’t check for leftover markers. Search for `<<<<<<<` and `=======` before committing."},
-     {t:"Nothing: browsers hide conflict markers", why:"To a browser, the markers are ordinary text."},
+     {t:"Nothing: browsers hide conflict markers from visitors", why:"To a browser, the markers are ordinary text."},
      {t:"Git blocked the commit, so nothing changed", why:"Git doesn’t stop you committing files that contain markers."},
      {t:"An error page instead of her site", why:"HTML is forgiving; the page loads with the stray text in it."}
    ]},
    {id:"t2u7-q27", lesson:"t2u7-l3", level:3, q:"Kenji and Hana both edit `index.html` on separate branches: Kenji changes the heading, Hana changes the footer, 40 lines apart. What happens when the branches are merged?", options:[
-     {t:"Git merges both changes automatically, because they touch different lines", ok:true, why:"Conflicts only arise when the same (or directly neighbouring) lines changed. Lines 40 apart are combined without asking."},
+     {t:"Git combines both changes without asking", ok:true, why:"Conflicts only arise when the same (or directly neighbouring) lines changed. Lines 40 apart are combined without asking."},
      {t:"A merge conflict, because they edited the same file", why:"Same file isn’t enough; Git merges different parts of a file without asking."},
      {t:"Only the later change survives", why:"Git keeps both changes."},
      {t:"Git refuses to merge files edited on two branches", why:"Merging changes from both branches is exactly what Git does."}
@@ -1435,28 +1449,28 @@ ICA.addUnit({
      {t:"`git push --force`", why:"That changes the remote and has nothing to do with cancelling a local merge."}
    ]},
    {id:"t2u7-q29", lesson:"t2u7-l3", level:3, q:"Sione switches from `new-design` to `main` and `design.css` disappears from his folder. What happened?", options:[
-     {t:"The file exists only in `new-design`’s commits; switching back will bring it back", ok:true, why:"Switching makes the folder match the branch’s latest commit."},
+     {t:"It exists only on `new-design`", ok:true, why:"The file exists only in `new-design`’s commits, and switching makes the folder match the branch’s latest commit. Switching back will bring it back."},
      {t:"Git deleted the file permanently", why:"It’s safely stored in the branch’s commits."},
      {t:"The file moved to the trash", why:"Git doesn’t use the trash; the file is in the repository’s history."},
      {t:"He must restore it from GitHub", why:"It’s in his local repository; `git switch new-design` is enough."}
    ]},
    {id:"t2u7-q30", lesson:"t2u7-l3", level:2, q:"Which habit makes merge conflicts smaller and rarer?", options:[
-     {t:"Keeping branches short-lived and merging `main` into them often", ok:true, why:"Small, frequent merges meet small conflicts early."},
+     {t:"Short-lived branches that merge `main` in often", ok:true, why:"Small, frequent merges meet small conflicts early."},
      {t:"Reformatting every file before each commit", why:"Mass reformatting touches every line and causes conflicts with everyone."},
      {t:"Working on one long branch for months", why:"The longer branches drift apart, the bigger the conflicts."},
      {t:"Never telling teammates which files you’re editing", why:"Talking about who edits what prevents many conflicts."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t2u7-q31", lesson:"t2u7-l4", level:1, q:"What is `origin` in Git?", options:[
-     {t:"The usual name for the main remote, often the repository you cloned from", ok:true, why:"It’s a conventional name, set automatically by `git clone`."},
+     {t:"The usual name for the main remote", ok:true, why:"It’s often the repository you cloned from. It’s a conventional name, set automatically by `git clone`."},
      {t:"The first commit in a repository", why:"That’s the root commit; `origin` names a remote."},
      {t:"A special GitHub-only command", why:"It’s an ordinary remote name; any hosting service works."},
-     {t:"The original author of the project", why:"`origin` refers to a location, not a person."}
+     {t:"The original author of the project, who created it", why:"`origin` refers to a location, not a person."}
    ]},
    {id:"t2u7-q32", lesson:"t2u7-l4", level:2, q:"What’s the difference between `git fetch` and `git pull`?", options:[
-     {t:"`fetch` downloads new commits without changing your files; `pull` downloads them and merges them into your branch", ok:true, why:"`pull` is a fetch followed by a merge."},
+     {t:"`fetch` only downloads; `pull` also merges", ok:true, why:"`fetch` downloads new commits without changing your files; `pull` is a fetch followed by a merge into your branch."},
      {t:"They are identical", why:"`fetch` never changes your branch or files; `pull` does."},
-     {t:"`fetch` uploads and `pull` downloads", why:"Uploading is `push`. Both `fetch` and `pull` download."},
+     {t:"`fetch` uploads your commits and `pull` downloads them", why:"Uploading is `push`. Both `fetch` and `pull` download."},
      {t:"`pull` only works on GitHub Desktop", why:"`git pull` is a standard Git command."}
    ]},
    {id:"t2u7-q33", lesson:"t2u7-l4", level:3, q:"Git asks Fatima for a password when she pushes over HTTPS. She has no credential manager set up. What should she type?", options:[
@@ -1472,20 +1486,20 @@ ICA.addUnit({
      {t:"Your passphrase", why:"The passphrase protects the private key on your computer; you never give it to GitHub."}
    ]},
    {id:"t2u7-q35", lesson:"t2u7-l4", level:3, q:"Amara’s push is rejected with “the remote contains work that you do not have locally”. A colleague says “just use `--force`”. What’s the right response?", options:[
-     {t:"Pull first (resolving any conflicts), then push; `--force` would delete the other person’s commits from the shared branch", ok:true, why:"The rejection protects someone else’s work. Pulling combines it with hers."},
+     {t:"Pull first, then push", ok:true, why:"Resolve any conflicts in between. `--force` would delete the other person’s commits from the shared branch. The rejection protects someone else’s work; pulling combines it with hers."},
      {t:"Use `--force`; it’s the standard fix", why:"Force-pushing a shared branch replaces its history and removes others’ commits from it."},
      {t:"Delete the repository on GitHub and push again", why:"That destroys everyone’s shared history and settings."},
      {t:"Make a new repository for her changes", why:"Unnecessary; a pull then push solves it."}
    ]},
    {id:"t2u7-q36", lesson:"t2u7-l4", level:2, q:"Before pushing an existing local repository to a new GitHub repository, why should the GitHub repository be created empty (no README)?", options:[
-     {t:"Otherwise GitHub has a commit your local history lacks, and the first push is rejected until you combine the two histories", ok:true, why:"An empty remote can simply receive your history."},
+     {t:"Otherwise GitHub has a commit that your history lacks", ok:true, why:"Then the first push is rejected until you combine the two histories. An empty remote can simply receive your history."},
      {t:"READMEs aren’t allowed on repositories that receive pushes", why:"You can add a README later; it just shouldn’t exist before the first push from a separate history."},
      {t:"Empty repositories are faster", why:"Speed isn’t the issue; matching histories is."},
      {t:"GitHub deletes the README when you push", why:"GitHub doesn’t delete it; the push is refused instead."}
    ]},
    {id:"t2u7-q37", lesson:"t2u7-l4", level:1, q:"How do you open github.dev for a repository?", options:[
-     {t:"Press the full stop (.) key on the repository page, or change `github.com` to `github.dev` in the address", ok:true, why:"Both open the browser version of the VS Code editor."},
-     {t:"Install it from an app store", why:"It runs in the browser; there’s nothing to install."},
+     {t:"Press the full stop (.) key on its page", ok:true, why:"You can also change `github.com` to `github.dev` in the address. Both open the browser version of the VS Code editor."},
+     {t:"Install it from your phone’s or computer’s app store", why:"It runs in the browser; there’s nothing to install."},
      {t:"Run `git dev` in a terminal", why:"There’s no such command."},
      {t:"It only opens from GitHub Desktop", why:"It’s opened from the website."}
    ]},
@@ -1496,27 +1510,27 @@ ICA.addUnit({
      {t:"To make the commits on GitHub’s website instead", why:"Pushed commits deploy exactly like website commits."}
    ]},
    {id:"t2u7-q39", lesson:"t2u7-l4", level:2, q:"Which is the safest way to handle a personal access token?", options:[
-     {t:"Give it only the access it needs and an expiry date, and keep it in a password manager", ok:true, why:"Limited, expiring tokens kept securely reduce the damage if one leaks."},
+     {t:"Limit its access, give it an expiry date and store it safely", ok:true, why:"Give it only the access it needs and an expiry date, and keep it in a password manager. Limited, expiring tokens kept securely reduce the damage if one leaks."},
      {t:"Save it in a text file in the repository so it’s always handy", why:"Anything in a repository can become public, and history keeps it."},
      {t:"Share it with teammates so they can push", why:"A token acts as you. Add teammates as collaborators instead."},
      {t:"Use one token with full access forever", why:"Unlimited, permanent tokens are the most dangerous if leaked."}
    ]},
    {id:"t2u7-q40", lesson:"t2u7-l4", level:3, q:"Kenji’s `git pull` stops with “You have divergent branches and need to specify how to reconcile them.” What’s going on, and what’s a simple fix?", options:[
-     {t:"Both he and the remote have new commits; setting `git config --global pull.rebase false` makes pulls merge them", ok:true, why:"Git wants to know how to combine diverged histories. Merging is the beginner-friendly choice."},
+     {t:"Both sides have new commits; tell Git to merge them", ok:true, why:"Git wants to know how to combine diverged histories. Setting `git config --global pull.rebase false` makes pulls merge them, the beginner-friendly choice."},
      {t:"His repository is corrupted and must be cloned again", why:"Nothing is broken; Git is asking a question."},
      {t:"He must `git push --force` first", why:"That would overwrite the remote’s commits."},
      {t:"His internet connection dropped", why:"The fetch worked; the message is about combining histories."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t2u7-q41", lesson:"t2u7-l5", level:1, q:"What is a pull request?", options:[
-     {t:"A request, on GitHub, to merge the commits on one branch into another, with a page for discussion and review", ok:true, why:"It proposes a merge and gives people a place to review it first."},
-     {t:"The `git pull` command run on GitHub", why:"Despite the name, a PR isn’t a pull; it asks the owner to merge your work."},
+     {t:"A request to merge one branch into another", ok:true, why:"On GitHub, it proposes merging the commits on one branch into another, with a page where people can discuss and review it first."},
+     {t:"The `git pull` command, run on GitHub’s servers", why:"Despite the name, a PR isn’t a pull; it asks the owner to merge your work."},
      {t:"A request to download a repository", why:"That’s cloning."},
      {t:"A bug report", why:"That’s an issue. A PR contains changes."}
    ]},
    {id:"t2u7-q42", lesson:"t2u7-l5", level:2, q:"When do you need a fork rather than just a branch?", options:[
-     {t:"When you want to contribute to a repository you don’t have permission to push to", ok:true, why:"Your fork is a copy you can push to; you then open a pull request to the original."},
-     {t:"Whenever you start any new feature", why:"In a repository you can push to, a branch is enough."},
+     {t:"When you can’t push to the repository", ok:true, why:"To contribute to a repository you don’t have permission to push to, you fork it: your fork is a copy you can push to, and you then open a pull request to the original."},
+     {t:"Whenever you start work on any new feature", why:"In a repository you can push to, a branch is enough."},
      {t:"When you want to work offline", why:"A clone handles offline work; forks live on GitHub."},
      {t:"When you want to delete a repository", why:"Forking has nothing to do with deleting."}
    ]},
@@ -1524,10 +1538,10 @@ ICA.addUnit({
      {t:"Issue 8 is closed automatically", ok:true, why:"Closing keywords link the PR to the issue and close it on merge."},
      {t:"Commit number 8 is reverted", why:"`#8` refers to issue or PR number 8, not a commit."},
      {t:"Eight files are fixed", why:"It’s a reference to issue 8, not a count."},
-     {t:"Nothing; it’s just a comment", why:"GitHub recognises closing keywords such as “Fixes”."}
+     {t:"Nothing; it’s just a comment for people to read", why:"GitHub recognises closing keywords such as “Fixes”."}
    ]},
    {id:"t2u7-q44", lesson:"t2u7-l5", level:3, q:"Ana committed `.env` with an API key last month, and only now adds `.env` to `.gitignore`. Is the key now protected?", options:[
-     {t:"No: `.gitignore` doesn’t affect already-tracked files, and the key is in the history. She must revoke the key, then `git rm --cached .env` and commit", ok:true, why:"Revocation stops misuse; untracking stops future commits of the file."},
+     {t:"No: it’s still in the history", ok:true, why:"`.gitignore` doesn’t affect already-tracked files, and the key is in the history. She must revoke the key, then `git rm --cached .env` and commit. Revocation stops misuse; untracking stops future commits of the file."},
      {t:"Yes: ignoring the file removes it from history", why:"Ignoring never changes history, and doesn’t even stop tracking an already-tracked file."},
      {t:"Yes, as long as the repository is private", why:"Anyone with access, and any clone, still has the key. It should be changed."},
      {t:"No, but deleting the repository’s README fixes it", why:"The README is unrelated."}
@@ -1545,19 +1559,19 @@ ICA.addUnit({
      {t:"Approving without comment", why:"The problem would go live; a review should point it out."}
    ]},
    {id:"t2u7-q47", lesson:"t2u7-l5", level:3, q:"Dmitri finds an access token committed to his public repository three months ago. What should he do first?", options:[
-     {t:"Revoke the token on GitHub (or the service that issued it) and create a new one", ok:true, why:"Revoking or rotating comes first: a revoked token is useless to anyone who copied it."},
+     {t:"Revoke the token and create a new one", ok:true, why:"Revoke it on GitHub (or the service that issued it). Revoking or rotating comes first: a revoked token is useless to anyone who copied it."},
      {t:"Rewrite history to remove it, then carry on using the token", why:"After three months in public, assume it has been copied. Removing it from history doesn’t stop someone who already has it."},
      {t:"Make the repository private and keep the token", why:"Anyone who saw or cloned it still has it."},
      {t:"Add a comment asking people not to use it", why:"A request doesn’t stop misuse; revocation does."}
    ]},
    {id:"t2u7-q48", lesson:"t2u7-l5", level:2, q:"A public GitHub repository has no LICENSE file. What may other people do with its code?", options:[
-     {t:"View and fork it on GitHub, but not reuse it elsewhere, because normal copyright applies", ok:true, why:"GitHub’s terms allow viewing and forking; reuse needs a licence."},
+     {t:"View and fork it on GitHub, but not reuse it", ok:true, why:"Normal copyright applies. GitHub’s terms allow viewing and forking; reuse elsewhere needs a licence."},
      {t:"Anything, because it’s public", why:"Public means visible, not licensed for reuse."},
      {t:"Nothing at all, not even view it", why:"Public repositories can be viewed and forked on GitHub."},
-     {t:"Reuse it only if they credit the author", why:"Attribution conditions come from a licence; without one, there’s no permission to reuse."}
+     {t:"Reuse it anywhere, but only if they credit the author", why:"Attribution conditions come from a licence; without one, there’s no permission to reuse."}
    ]},
    {id:"t2u7-q49", lesson:"t2u7-l5", level:1, q:"Which item is NOT usually needed in a good bug report (issue)?", options:[
-     {t:"Your GitHub password, so the maintainer can check your account", ok:true, why:"Never share passwords. Everything else listed is useful in a report."},
+     {t:"Your GitHub password", ok:true, why:"Never share passwords, not even so a maintainer can check your account. Everything else listed is useful in a report."},
      {t:"Steps to reproduce the problem", why:"Useful: steps let someone else see the bug for themselves."},
      {t:"What you expected and what actually happened", why:"Useful: the gap between the two is the bug."},
      {t:"The exact error message or a screenshot", why:"Useful: exact messages save a lot of guessing."}

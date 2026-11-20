@@ -129,10 +129,10 @@ ICA.addUnit({
         {t:"A friend’s phone downloads it and plays it through the speaker", why:"Finally, output to a person, on another computer."}
       ]},
       {id:"t1u1-l1-x5", type:"mcq", q:"Lucía taps “Back up photos to the cloud”. Physically, where do her photos end up?", options:[
-        {t:"On storage drives in servers, in data centres run by the service provider", ok:true, why:"The cloud is other organisations’ computers that you reach over the internet. Her photos are real files on real drives."},
+        {t:"On storage drives in servers in the provider’s data centres", ok:true, why:"The cloud is other organisations’ computers that you reach over the internet. Her photos are real files on real drives."},
         {t:"Floating in the internet itself, not on any particular machine", why:"Data always has to be stored on some physical hardware. The internet only carries data between computers."},
         {t:"In a satellite orbiting the Earth", why:"Satellites can carry internet signals in some places, but cloud storage lives in ground-based data centres."},
-        {t:"Only on her phone, with a link to it online", why:"That would not protect her photos if the phone were lost. A cloud backup copies the files onto the provider’s servers."}
+        {t:"Only on her phone, with a link to it saved online", why:"That would not protect her photos if the phone were lost. A cloud backup copies the files onto the provider’s servers."}
       ]},
       {id:"t1u1-l1-x6", type:"match", q:"Match each problem to the job that is most likely failing.", pairs:[
         ["Letters you type don’t appear anywhere","Input","Nothing is getting into the computer. Check the keyboard connection or battery first."],
@@ -259,8 +259,8 @@ ICA.addUnit({
     ],
     try:[
       {id:"t1u1-l2-x1", type:"mcq", q:"Tomás’s phone box says **8 GB RAM · 256 GB**. He tells a friend, “My phone has 256 GB of memory.” What is the 256 GB actually measuring?", options:[
-        {t:"Storage: the space for photos, apps and files that stays when the phone is off", ok:true, why:"The big number on a phone box is storage. RAM is the 8 GB figure."},
-        {t:"RAM: the working memory for open apps", why:"The RAM here is 8 GB. Storage is usually many times larger than RAM, which is a good clue."},
+        {t:"Storage: the space for photos, apps and files", ok:true, why:"The big number on a phone box is storage, which stays when the phone is off. RAM is the 8 GB figure."},
+        {t:"RAM: the working memory that open apps use while they run", why:"The RAM here is 8 GB. Storage is usually many times larger than RAM, which is a good clue."},
         {t:"The speed of the processor", why:"Processor speed is measured in GHz, not GB. GB measures an amount of data."},
         {t:"How much mobile data he can use each month", why:"That depends on his phone plan, not on the phone itself."}
       ], why:"In everyday speech people say “memory” for both, but on a spec sheet RAM and storage are different parts."},
@@ -294,7 +294,7 @@ ICA.addUnit({
         "\nWireless: ",{t:"Wi-Fi 6, Bluetooth 5", flag:false, why:"Current wireless standards; nothing to worry about."}
       ], why:"Meeting the bare minimum is not the same as being comfortable. RAM and storage at the minimum are the usual causes of a frustrating cheap laptop."},
       {id:"t1u1-l2-x6", type:"mcq", q:"Ana plugs her laptop into a monitor with a USB-C cable that charges her phone fine. The monitor says “No signal”. What is the most likely reason?", options:[
-        {t:"The cable or the laptop’s port doesn’t carry a video signal, even though it fits", ok:true, why:"USB-C is a shape. Video over USB-C needs the port, the cable and the monitor to support it."},
+        {t:"The cable or the laptop’s port doesn’t carry video", ok:true, why:"It fits, but USB-C is only a shape. Video over USB-C needs the port, the cable and the monitor to support it."},
         {t:"USB-C can never carry video", why:"Many USB-C ports do carry video; it depends on the port and the cable."},
         {t:"The laptop needs more RAM to use a monitor", why:"RAM has nothing to do with whether a signal reaches the monitor."},
         {t:"The monitor is broken, because the cable works with her phone", why:"A cable that charges a phone may carry only power and slow data. That says nothing about the monitor."}
@@ -441,7 +441,7 @@ ICA.addUnit({
         {v:1600, tol:0, why:"You multiplied by 8. Going from bits to bytes gives a smaller number, because a byte is the bigger unit."}
       ]},
       {id:"t1u1-l3-x5", type:"mcq", q:"Ana pays for **50 Mbps** internet. While downloading a big file, her browser shows **6 MB/s**. What’s going on?", options:[
-        {t:"Nothing is wrong: 50 Mbps ÷ 8 is about 6.25 MB/s, so she is getting nearly the full speed", ok:true, why:"Her provider measures in megabits; her browser measures in megabytes. 6 MB/s is almost exactly what 50 Mbps can deliver."},
+        {t:"Nothing is wrong: 50 Mbps ÷ 8 is about 6.25 MB/s", ok:true, why:"Her provider measures in megabits; her browser measures in megabytes. 6 MB/s is almost exactly what 50 Mbps can deliver, so she is getting nearly the full speed."},
         {t:"She’s getting only about an eighth of what she pays for", why:"That compares 6 megabytes with 50 megabits. Convert first: 6 MB/s × 8 = 48 Mbps, which is close to 50."},
         {t:"Her browser is showing the wrong number", why:"The browser is right; it just uses a different unit (MB/s) from the plan (Mbps)."},
         {t:"Her plan must really be 6 Mbps", why:"6 Mbps would give only about 0.75 MB/s. Her download is much faster than that."}
@@ -536,7 +536,8 @@ ICA.addUnit({
           ["Offline","Usually works","Often limited or not at all"],
           ["Uses device storage","Yes","Very little"]
         ]},
-        "Many services offer both: an email service, an office suite or a video-call tool may have a website **and** an app. Some web apps can also be “installed” from the browser so they open in their own window; they are still web apps underneath."
+        "Many services offer both: an email service, an office suite or a video-call tool may have a website **and** an app. Some web apps can also be “installed” from the browser so they open in their own window; they are still web apps underneath.",
+        "Every app, installed or web, started life as code a person wrote. Unit 12, Lesson 1 shows how a program is made and turned into something a processor can run, and Unit 12, Lesson 5 follows one tap through an app’s front end, back end and data."
       ]},
       {h:"Installing apps safely", body:[
         "Most harmful software arrives because someone was tricked into installing it. A few habits avoid almost all of that risk.",
@@ -611,7 +612,7 @@ ICA.addUnit({
         {t:"Open it, review its permissions and turn on updates", why:"Adjust permissions to the minimum and keep it updated."}
       ]},
       {id:"t1u1-l4-x6", type:"mcq", q:"Dmitri uses an **administrator** account every day. He opens an email attachment that quietly tries to install software for all users. If he had been using a **standard** account, what would most likely happen?", options:[
-        {t:"Windows would ask for an administrator password before that system-wide change, giving him a chance to stop it", ok:true, why:"Standard accounts can’t make system-wide changes without an administrator’s approval, so the hidden install becomes a visible prompt."},
+        {t:"Windows would ask for an administrator password first", ok:true, why:"Standard accounts can’t make system-wide changes without an administrator’s approval, so the hidden install becomes a visible prompt that gives him a chance to stop it."},
         {t:"Nothing different: account type makes no difference to security", why:"Account type decides what programs running as you are allowed to change. That is exactly what limits malware."},
         {t:"The attachment couldn’t have opened at all", why:"Standard accounts can open files normally. The protection applies to system-wide changes."},
         {t:"He would be completely protected from all harm", why:"A standard account limits damage but isn’t a full shield. Malware could still reach his own files, which is why backups matter."}
@@ -764,7 +765,7 @@ ICA.addUnit({
         {t:"Search the exact error message or contact the app’s support", why:"Once the simple fixes are done, look for specific help."}
       ]},
       {id:"t1u1-l5-x2", type:"mcq", q:"Fatima’s Windows laptop has a strange glitch. She chose **Shut down**, turned it on again, and the glitch is still there. A colleague says, “Choose **Restart** instead.” Why might that help?", options:[
-        {t:"With Fast Startup on, Shut down saves the core of Windows to storage like hibernating; Restart does a full fresh boot", ok:true, why:"Microsoft documents that Fast Startup hibernates the kernel session at shut down and doesn’t apply to Restart. So a stuck state can survive shut down but not restart."},
+        {t:"With Fast Startup on, only Restart does a full fresh boot", ok:true, why:"With Fast Startup on, Shut down saves the core of Windows to storage, like hibernating. Microsoft documents that Fast Startup doesn’t apply to Restart, so a stuck state can survive shut down but not restart."},
         {t:"Restart is just a quicker way to do exactly the same thing", why:"On Windows with Fast Startup on, they really are different. That difference is the whole point."},
         {t:"Restart deletes temporary files and frees storage", why:"Restarting clears RAM, not storage. It doesn’t delete your files."},
         {t:"Restart reinstalls Windows from scratch", why:"Restart only reloads Windows from storage. Reinstalling is a much bigger step."}
@@ -794,7 +795,7 @@ ICA.addUnit({
         " ",{t:"Please fix it ASAP!!", flag:false, why:"Urgency is fine to mention, but on its own it gives no information about the problem."}
       ], why:"Device and system, the exact message, when it started, and what you’ve tried: that is a description someone can act on."},
       {id:"t1u1-l5-x6", type:"mcq", q:"While browsing, Lucía sees a full-screen warning: “Your computer is infected! Call Microsoft Support now on this number.” What should she do?", options:[
-        {t:"Not call. Close the browser tab or window (using Task Manager if it won’t close), then run her normal security scan if she’s worried", ok:true, why:"Microsoft says its error and warning messages never include a phone number. This is a tech support scam page, not a real infection report."},
+        {t:"Not call, and close the browser tab or window", ok:true, why:"She can use Task Manager if it won’t close, and run her normal security scan if she’s worried. Microsoft says its error and warning messages never include a phone number. This is a tech support scam page, not a real infection report."},
         {t:"Call the number quickly before the infection spreads", why:"The number connects to scammers who try to get remote access or payment. Real Microsoft warnings don’t include phone numbers."},
         {t:"Download the cleaning tool the page offers", why:"Tools offered by scam pages are often malware themselves."},
         {t:"Turn off her antivirus so the page can fix the problem", why:"Never turn off protection because a web page tells you to. That is a classic scam instruction."}
@@ -832,6 +833,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u1-q02","t1u1-q07","t1u1-q11","t1u1-q14","t1u1-q17","t1u1-q20","t1u1-q23","t1u1-q26","t1u1-q30","t1u1-q34","t1u1-q38","t1u1-q43"],
+  cpBank:[
+    {id:"t1u1-cp01", lesson:"t1u1-l1", level:1, q:"A smart doorbell has a camera, a press button, a small chip running a program, a memory card and a chime. Which part does the **processing** job?", options:[
+      {t:"The camera that films visitors", why:"The camera captures images coming in, so it does the input job, not the processing."},
+      {t:"The memory card that keeps clips", why:"The memory card keeps video clips for later. That is the storage job."},
+      {t:"The chip that runs a program", ok:true, why:"Processing means following instructions to work on the data. The chip runs the doorbell’s program, so it does this job."},
+      {t:"The chime that rings inside the house", why:"The chime makes a sound for people in the house. That is output."}
+    ]},
+    {id:"t1u1-cp02", lesson:"t1u1-l3", level:1, q:"A podcast app says an episode is **40 MB**. Jamal’s friend writes it down as **40 Mb**. What is the difference?", options:[
+      {t:"40 MB is eight times more: B means bytes, b means bits", ok:true, why:"Capital B is bytes and lowercase b is bits. One byte is eight bits, so 40 MB is eight times more data than 40 Mb."},
+      {t:"There is no difference; letter case doesn’t matter in units", why:"Case matters here. Mb is megabits and MB is megabytes, and they differ by a factor of eight."},
+      {t:"40 Mb is bigger, because the lowercase b stands for binary", why:"The lowercase b stands for bits, not binary. Bits are smaller than bytes, so 40 Mb is the smaller amount."},
+      {t:"40 MB is 1,024 times bigger, because MB is a binary unit", why:"1,024 is the step between binary prefixes such as KiB and MiB. Bits and bytes differ by eight."}
+    ]},
+    {id:"t1u1-cp03", lesson:"t1u1-l4", level:1, q:"Rania’s college gives her a link. She opens it in her browser and writes essays there, with nothing installed on her laptop. What kind of software is she using?", options:[
+      {t:"A driver", why:"A driver lets the operating system talk to one piece of hardware, such as a printer. It isn’t something you write essays in."},
+      {t:"Firmware", why:"Firmware is software stored inside a piece of hardware, such as a router or the start-up program. It doesn’t open from a link in a browser."},
+      {t:"An installed app", why:"An installed app is downloaded onto the device and runs from its storage. Rania installed nothing."},
+      {t:"A web app", ok:true, why:"A web app runs inside the browser and loads from a server. You just visit the address, and your work is often saved online."}
+    ]},
+    {id:"t1u1-cp04", lesson:"t1u1-l2", level:2, q:"Kwame edits videos on his laptop while it rests on a soft cushion. After about 15 minutes it gets very hot and suddenly becomes sluggish. What is the most likely explanation?", options:[
+      {t:"His storage is filling up with the large video files he is working on", why:"A full drive gives “storage full” messages. The heat and the soft cushion point to a cooling problem instead."},
+      {t:"The cushion blocks the vents, so the chip gets too hot and slows down", ok:true, why:"Processors turn electricity into heat. When a chip gets too hot, it slows down to protect itself. Keeping vents clear on a hard, flat surface helps."},
+      {t:"His internet connection is too slow for video editing", why:"Editing a video already on the laptop happens on the device. The internet speed has nothing to do with this slowdown."},
+      {t:"The laptop’s GPU has worn out and needs replacing", why:"Parts don’t usually fail after 15 minutes and then recover. The pattern (heat after a while on a cushion) points to blocked cooling."}
+    ]},
+    {id:"t1u1-cp05", lesson:"t1u1-l3", level:2, q:"Leilani’s camera has a **128 GB** memory card. Her high-quality photos average **25 MB** each. Using decimal units (1 GB = 1,000 MB), about how many photos fit?", options:[
+      {t:"About 5", why:"This divides 128 by 25 without first turning 128 GB into 128,000 MB. A memory card holding five photos is not a sensible answer."},
+      {t:"About 640", why:"This divides by 8 as if bits were involved. There is no speed in this question, so no ×8 or ÷8 is needed."},
+      {t:"About 5,120", ok:true, why:"128 GB = 128,000 MB, and 128,000 ÷ 25 = 5,120. Real photos vary in size, so it is a rough count."},
+      {t:"About 3,200,000", why:"This multiplies 128,000 by 25 instead of dividing. To find how many fit, divide the space by the size of one photo."}
+    ]},
+    {id:"t1u1-cp06", lesson:"t1u1-l1", level:2, q:"In a video call, Nadia can see and hear everyone, and they can see her. But nobody can hear her. Using the four jobs, where should she look first?", options:[
+      {t:"Input: check her microphone is on, selected and allowed for the app", ok:true, why:"Her sound is not getting into the computer, so this is an input problem. The app also needs the operating system’s microphone permission."},
+      {t:"Output: turn up her speaker volume", why:"She can hear the others, so her output works. The problem is her voice getting in, not sound coming out."},
+      {t:"Storage: delete files to make room for the call", why:"A call doesn’t need free storage to send her voice. Nothing points to a storage problem."},
+      {t:"Processing: her processor is too slow to send sound during a video call", why:"Her video and the others’ sound work fine, so the processor is coping. Only her voice is missing, which points to input."}
+    ]},
+    {id:"t1u1-cp07", lesson:"t1u1-l4", level:2, q:"Chen’s home Wi-Fi router shows a notice: “New firmware available.” What should he understand about this?", options:[
+      {t:"Routers have no software, so the notice must be a scam", why:"A router is a computer with no screen. It runs firmware, and makers do release updates for it."},
+      {t:"Installing it will raise his internet plan’s speed", why:"Firmware updates fix bugs and security holes. They can’t change the speed his provider sells him."},
+      {t:"It is safe to unplug the router halfway through if the update is slow", why:"Interrupting a firmware update can leave a device unable to start. Keep it powered until the update finishes."},
+      {t:"The router is a small computer; updates fix its bugs and security holes", ok:true, why:"Anything that runs software can have bugs and security risks. Installing the router’s firmware update, and keeping it powered during it, is a good habit."}
+    ]},
+    {id:"t1u1-cp08", lesson:"t1u1-l5", level:2, q:"Kofi’s laptop Wi-Fi kept dropping. In one evening he updated a driver, changed two network settings, reset his router and installed a new browser. It worked, but a week later the problem returns. What did his method cost him?", options:[
+      {t:"Nothing; doing many fixes at once is the fastest way to solve problems", why:"It can feel faster, but when the problem comes back he has no idea which change mattered."},
+      {t:"He can’t tell which change fixed it, so he can’t repeat the right fix later", ok:true, why:"Changing one thing at a time, and checking after each one, shows what actually fixed the problem, or what made it worse."},
+      {t:"He should have deleted files to free up storage first", why:"Nothing here points to a storage problem. The issue with his method is that he changed many things at once."},
+      {t:"He should have used a “driver updater” tool from a search advert", why:"Drivers should come from the maker’s official site, never from advertised updater tools. And the real problem was changing many things at once."}
+    ]},
+    {id:"t1u1-cp09", lesson:"t1u1-l3", level:3, q:"Elif must upload a **1.5 GB** video for a class. Her plan is **200 Mbps** download and **20 Mbps** upload. At best, about how long will the upload take? (1 GB = 1,000 MB)", options:[
+      {t:"About 1 minute", why:"This uses the download speed. Sending a file uses the upload speed, which is much slower on her plan."},
+      {t:"About 75 seconds", why:"This divides 1,500 MB by 20 without changing bytes to bits. Multiply by 8 first, because speeds are in megabits."},
+      {t:"About 10 minutes", ok:true, why:"1.5 GB = 1,500 MB = 12,000 megabits. 12,000 ÷ 20 = 600 seconds, which is 10 minutes at best. Real life will be a little slower."},
+      {t:"About 7.5 seconds", why:"This makes two mistakes: it uses the download speed and forgets the ×8 from bytes to bits."}
+    ]},
+    {id:"t1u1-cp10", lesson:"t1u1-l3", level:3, q:"Rosa’s external drive says **2 TB** on the box. Her Windows PC shows its total size as about **1.8 TB**. What total will her brother’s Mac most likely show for it?", options:[
+      {t:"About 1.6 TB, because macOS also keeps a share of external drives", why:"The operating system’s share mostly reduces free space on the drive it runs from. It doesn’t shrink the total size of an external drive."},
+      {t:"About 1.8 TB, because every computer counts the same bytes the same way", why:"The bytes are the same, but the counting isn’t. Windows divides by 1,024 at each step and still writes “TB”; current macOS divides by 1,000."},
+      {t:"About 1.8 TB, but labelled “TiB” instead of “TB”", why:"Current macOS calculates in decimal, matching the box, so it shows about 2 TB. Honest binary names like “GiB” appear in some Linux tools and apps."},
+      {t:"About 2 TB, because current macOS divides by 1,000 like the box", ok:true, why:"2,000,000,000,000 bytes ÷ 1,000⁴ = 2 TB on the Mac. Windows divides by 1,024⁴ instead (≈ 1.82) but still writes “TB”. Same bytes, different counting."}
+    ]},
+    {id:"t1u1-cp11", lesson:"t1u1-l5", level:3, q:"Yusuf’s phone camera says it can’t save photos, and an app update failed yesterday. A shop assistant says, “You need a new phone with more RAM.” What is the best response?", options:[
+      {t:"Storage is full, not RAM: free space by removing unused apps or backed-up videos", ok:true, why:"Can’t save and failed updates are signs of full storage. RAM shortage makes a device slow with many things open. Freeing storage is the first-aid step."},
+      {t:"Agree, because RAM is where the phone keeps photos and app updates", why:"RAM empties when the power goes off, so photos can’t live there. Photos are kept in storage."},
+      {t:"Restart the phone, because restarting frees up room on its storage for new photos", why:"A restart clears RAM and finishes stuck tasks, but it doesn’t make room on a full drive."},
+      {t:"Delete system files you don’t recognise, since they are the quickest space to free", why:"Never delete system files to make room. Remove things you recognise, such as unused apps or videos that are already backed up."}
+    ]},
+    {id:"t1u1-cp12", lesson:"t1u1-l2", level:3, q:"Ravi’s course needs a program that runs only on Windows. He compares a Chromebook (16 GB RAM, 512 GB SSD) with a Windows laptop (8 GB RAM, 256 GB SSD). Which one should he choose, and why?", options:[
+      {t:"The Chromebook, because more RAM and storage always matter most", why:"Bigger numbers don’t help if the program can’t run at all. The operating system decides which apps you can use."},
+      {t:"The Windows laptop, because its operating system can run the program", ok:true, why:"Check the operating system first. If the course needs a Windows program, that settles it, and 8 GB RAM with an SSD is fine for everyday study."},
+      {t:"The Chromebook, because any Windows program can run inside the Chrome browser", why:"ChromeOS runs web apps, and many models run Android and Linux apps. It doesn’t run Windows programs just because it has a browser."},
+      {t:"Either one, because the processor’s GHz is what decides which programs run", why:"GHz describes speed, not which programs a device can run. The operating system decides that."}
+    ]},
+  ],
   codex:[
     {id:"what-is-a-computer", title:"What a computer is", aka:["computer","input-process-output","IPO model"], tags:["hardware","basics"],
      summary:"A machine that takes input, processes it by following a program, stores it and produces output.",
@@ -1444,16 +1519,16 @@ ICA.addUnit({
       {t:"A laptop charger", why:"A charger is a physical object: hardware."}
     ]},
     {id:"t1u1-q04", lesson:"t1u1-l1", level:1, q:"What is firmware?", options:[
-      {t:"Software stored inside a piece of hardware that controls it at a low level", ok:true, why:"For example a computer’s start-up program or a router’s built-in software."},
+      {t:"Software built into a device that controls its hardware", ok:true, why:"It is stored inside the hardware and controls it at a low level, for example a computer’s start-up program or a router’s built-in software."},
       {t:"Any hardware that is fixed firmly inside the case", why:"Firmware is software, not a physical part."},
-      {t:"Apps installed by a company on work computers", why:"Those are ordinary apps. Firmware lives inside the hardware itself."},
+      {t:"Apps that a company installs on all of its work computers", why:"Those are ordinary apps. Firmware lives inside the hardware itself."},
       {t:"A protective case for a laptop", why:"That’s an accessory, not software of any kind."}
     ]},
     {id:"t1u1-q05", lesson:"t1u1-l1", level:3, q:"Lucía says, “My photos are safe because they’re in the cloud, which isn’t a physical place.” What’s the most accurate reply?", options:[
-      {t:"The cloud is real storage on servers in data centres run by a provider; your photos are files on their drives", ok:true, why:"“The cloud” means other organisations’ computers that you reach over the internet."},
+      {t:"The cloud is real storage: her photos are files on a provider’s servers", ok:true, why:"“The cloud” means servers in data centres run by a provider, which you reach over the internet. Her photos are files on their drives."},
       {t:"She’s right: cloud files exist only as internet signals", why:"Data always has to be stored on physical hardware somewhere."},
       {t:"The cloud means her photos are stored in satellites", why:"Cloud storage is in ground-based data centres, not satellites."},
-      {t:"The cloud is a folder on her own phone with a special name", why:"A local folder wouldn’t survive losing the phone. Cloud storage copies files to the provider’s servers."}
+      {t:"The cloud is just a folder on her own phone, given a special name by the app", why:"A local folder wouldn’t survive losing the phone. Cloud storage copies files to the provider’s servers."}
     ]},
     {id:"t1u1-q06", lesson:"t1u1-l1", level:2, q:"Which device does **not** count as a computer?", options:[
       {t:"A mechanical wind-up alarm clock", ok:true, why:"It works with springs and gears; there is no program and no data processing."},
@@ -1462,8 +1537,8 @@ ICA.addUnit({
       {t:"A fitness watch", why:"It has a processor, memory, storage and software, so it is a computer."}
     ]},
     {id:"t1u1-q07", lesson:"t1u1-l1", level:3, q:"Tomás’s laptop screen stays black, but he hears the usual start-up sound and the keyboard lights up. Where should he look first?", options:[
-      {t:"The output path: brightness, display settings, or the screen or its cable", ok:true, why:"The sounds and lights show the computer is running. The picture just isn’t reaching him."},
-      {t:"The storage drive, because it might be full", why:"A full drive gives error messages; it doesn’t stop the screen from showing anything."},
+      {t:"The output: brightness, display settings, the screen or its cable", ok:true, why:"The sound and the keyboard lights show the computer is running. The picture just isn’t reaching him, so check the output path."},
+      {t:"The storage drive, because a full drive can stop the screen working", why:"A full drive gives error messages; it doesn’t stop the screen from showing anything."},
       {t:"The keyboard, because input must be broken", why:"The keyboard lights up and isn’t related to a black screen."},
       {t:"Nowhere: the laptop is completely dead", why:"A dead laptop wouldn’t make start-up sounds. Something is running."}
     ]},
@@ -1474,10 +1549,10 @@ ICA.addUnit({
       {t:"Storage", why:"A touchscreen doesn’t keep files."}
     ]},
     {id:"t1u1-q09", lesson:"t1u1-l1", level:1, q:"What is a server?", options:[
-      {t:"A computer that provides services, such as web pages or email, to other computers over a network", ok:true, why:"Your device is the client that asks; the server answers."},
-      {t:"A cable that connects a laptop to the internet", why:"Cables carry data, but a server is a computer."},
+      {t:"A computer that answers requests from other computers over a network", ok:true, why:"It provides services, such as web pages or email. Your device is the client that asks; the server answers."},
+      {t:"A special cable that connects a laptop or phone to the internet", why:"Cables carry data, but a server is a computer."},
       {t:"The person who fixes computers at work", why:"That person may manage servers, but a server is a machine."},
-      {t:"A program that speeds up your browser", why:"That isn’t what the word means. A server is a computer that serves others."}
+      {t:"A program that makes your web browser faster by saving pages in advance", why:"That isn’t what the word means. A server is a computer that serves others."}
     ]},
     /* ---- Lesson 2 ---- */
     {id:"t1u1-q10", lesson:"t1u1-l2", level:1, q:"What happens to the contents of RAM when the power goes off?", options:[
@@ -1511,28 +1586,28 @@ ICA.addUnit({
       {t:"Lower the screen brightness", why:"Brightness affects the battery, not memory."}
     ]},
     {id:"t1u1-q15", lesson:"t1u1-l2", level:2, q:"Why can’t you compare two processors by their GHz alone?", options:[
-      {t:"Newer designs can do more work in each cycle, so a lower GHz chip can be faster", ok:true, why:"Clock speed is only one factor; work per cycle and number of cores matter too."},
-      {t:"GHz measures storage, not speed", why:"GHz measures cycles per second. Storage is measured in bytes."},
-      {t:"All processors have the same GHz", why:"Clock speeds vary widely between processors."},
-      {t:"GHz only matters for phones", why:"Clock speed applies to processors in every kind of device."}
+      {t:"Chips differ in how much work they do per cycle", ok:true, why:"Newer designs can do more in each cycle, so a lower-GHz chip can be faster. The number of cores matters too."},
+      {t:"GHz measures storage space, not processing speed", why:"GHz measures cycles per second. Storage is measured in bytes."},
+      {t:"All modern processors run at the same GHz", why:"Clock speeds vary widely between processors."},
+      {t:"GHz only matters for phones, not for laptops", why:"Clock speed applies to processors in every kind of device."}
     ]},
     {id:"t1u1-q16", lesson:"t1u1-l2", level:3, q:"Ana’s USB-C cable charges her phone, but when she uses it to connect her laptop to a monitor, the monitor says “No signal”. What is the most likely explanation?", options:[
-      {t:"The cable or the laptop’s USB-C port doesn’t support video, even though the plug fits", ok:true, why:"USB-C is a shape; video needs support from the port, the cable and the monitor."},
-      {t:"The monitor must be broken", why:"A cable that charges a phone may carry only power and slow data. That says nothing about the monitor."},
+      {t:"The cable or the laptop’s port doesn’t support video", ok:true, why:"The plug fits, but USB-C is only a shape. Video needs support from the port, the cable and the monitor."},
+      {t:"The monitor must be broken, since the cable works with her phone", why:"A cable that charges a phone may carry only power and slow data. That says nothing about the monitor."},
       {t:"Her laptop needs more storage to show a picture", why:"Storage has nothing to do with sending a video signal."},
       {t:"USB-C can never carry a picture", why:"Many USB-C ports do carry video; this particular port or cable may not."}
     ]},
     {id:"t1u1-q17", lesson:"t1u1-l2", level:2, q:"What does a GPU mainly do?", options:[
-      {t:"Many simple calculations at once, for the display, video, games, editing and AI", ok:true, why:"GPUs are built for massively parallel work like working out millions of pixels."},
-      {t:"Stores photos and videos", why:"That’s storage. The GPU processes images; it doesn’t keep them."},
+      {t:"Many simple calculations at once, for graphics, video and AI", ok:true, why:"GPUs are built for massively parallel work, like working out millions of pixels for the display, video, games, editing and AI."},
+      {t:"Stores the photos and videos that you see on the screen", why:"That’s storage. The GPU processes images; it doesn’t keep them."},
       {t:"Provides the Wi-Fi connection", why:"That’s the wireless chip."},
-      {t:"Holds the apps you have open", why:"That’s the job of RAM, the working memory."}
+      {t:"Holds the apps you have open so that you can switch between them", why:"That’s the job of RAM, the working memory."}
     ]},
     {id:"t1u1-q18", lesson:"t1u1-l2", level:3, q:"Sione wants a laptop for study: documents, browsing with many tabs and weekly video calls. Which spec matters most to check?", options:[
       {t:"That it has enough RAM and an SSD with room to spare", ok:true, why:"For this kind of work, RAM and fast storage affect everyday comfort most."},
-      {t:"That it has the highest GHz available", why:"GHz alone says little, and almost any current processor handles this workload."},
+      {t:"That it has the highest GHz processor available", why:"GHz alone says little, and almost any current processor handles this workload."},
       {t:"That it has a dedicated graphics card", why:"Integrated graphics are fine for documents, browsing and video calls."},
-      {t:"That it has the largest possible hard disk", why:"A big hard disk is slower than an SSD and isn’t what this workload needs."}
+      {t:"That it has the largest possible hard disk for storing files", why:"A big hard disk is slower than an SSD and isn’t what this workload needs."}
     ]},
     /* ---- Lesson 3 ---- */
     {id:"t1u1-q19", lesson:"t1u1-l3", level:1, q:"How many bits are in one byte?", options:[
@@ -1591,9 +1666,9 @@ ICA.addUnit({
     ]},
     /* ---- Lesson 4 ---- */
     {id:"t1u1-q28", lesson:"t1u1-l4", level:1, q:"Which of these is a job of the operating system?", options:[
-      {t:"Deciding which program gets the processor and how much memory each one uses", ok:true, why:"Sharing hardware between programs is a core OS job."},
+      {t:"Sharing the processor and memory between programs", ok:true, why:"Deciding which program gets the processor and how much memory each one uses is a core OS job."},
       {t:"Writing your essay for you", why:"That’s what a writing app helps with; the OS runs the app."},
-      {t:"Providing your internet connection", why:"Your internet provider and router do that; the OS just uses the connection."},
+      {t:"Supplying the internet connection that your apps use", why:"Your internet provider and router do that; the OS just uses the connection."},
       {t:"Manufacturing the processor", why:"Chips are made by hardware companies; the OS is software."}
     ]},
     {id:"t1u1-q29", lesson:"t1u1-l4", level:1, q:"Which operating system runs on Chromebooks?", options:[
@@ -1603,38 +1678,38 @@ ICA.addUnit({
       {t:"Windows", why:"Windows runs on PCs; Chromebooks come with ChromeOS."}
     ]},
     {id:"t1u1-q30", lesson:"t1u1-l4", level:3, q:"Oluwaseun searches for a popular free video editor. The first result is an advert for “Free Video Editor Download” on a site he doesn’t recognise. What should he do?", options:[
-      {t:"Skip the advert and get the app from the official store or the developer’s own website", ok:true, why:"Look-alike sites in search adverts sometimes bundle unwanted or harmful software."},
+      {t:"Skip the advert and use the official store or developer’s site", ok:true, why:"Get the app from the official store or the developer’s own website. Look-alike sites in search adverts sometimes bundle unwanted or harmful software."},
       {t:"Download from the advert, since adverts are checked by the search engine", why:"Checks on adverts aren’t perfect, and look-alike download sites do appear in them."},
       {t:"Ask a friend to send him the installer file in a chat", why:"A file passed around in chats has no trustworthy source."},
       {t:"Download it and turn off his antivirus if it complains", why:"Never turn off protection to install something; a warning is a reason to stop."}
     ]},
     {id:"t1u1-q31", lesson:"t1u1-l4", level:2, q:"A simple torch (flashlight) app asks for access to your contacts. What does that suggest?", options:[
-      {t:"It wants data it doesn’t need for its job, so refuse or choose a different app", ok:true, why:"A torch app has no reason to read your contacts."},
+      {t:"It wants data it doesn’t need, so refuse or pick another app", ok:true, why:"A torch app has no reason to read your contacts. It is asking for data it doesn’t need for its job."},
       {t:"All apps need contacts access to work", why:"Most apps work fine without it; only apps that deal with contacts need it."},
-      {t:"It needs contacts to switch on the light", why:"The light doesn’t depend on your address book at all."},
-      {t:"It is a sign the app is from an official store", why:"Permission requests don’t show where an app came from."}
+      {t:"It needs your contacts list so it can switch on the light", why:"The light doesn’t depend on your address book at all."},
+      {t:"It shows the app comes from an official store that checks apps", why:"Permission requests don’t show where an app came from."}
     ]},
     {id:"t1u1-q32", lesson:"t1u1-l4", level:1, q:"What is a driver?", options:[
-      {t:"Software that lets the operating system control a particular piece of hardware", ok:true, why:"A driver translates between the OS and a device, such as a printer."},
-      {t:"The person who sets up your computer", why:"In computing, a driver is software."},
+      {t:"Software that lets the operating system control a device", ok:true, why:"A driver translates between the OS and a particular piece of hardware, such as a printer."},
+      {t:"The person who installs and looks after your computer", why:"In computing, a driver is software."},
       {t:"The main circuit board", why:"That’s the motherboard."},
-      {t:"A type of storage drive", why:"Storage drives are hardware; drivers are software."}
+      {t:"A type of storage drive that holds the operating system files", why:"Storage drives are hardware; drivers are software."}
     ]},
     {id:"t1u1-q33", lesson:"t1u1-l4", level:2, q:"Which is a key difference between a web app and an installed app?", options:[
-      {t:"A web app runs in the browser with nothing to install; an installed app runs from your device’s storage", ok:true, why:"Web apps load from a server each time; installed apps live on your device."},
-      {t:"Web apps always work without internet", why:"Web apps usually need a connection; installed apps more often work offline."},
+      {t:"A web app runs in the browser; an installed app is on your device", ok:true, why:"Web apps load from a server each time, with nothing to install; installed apps live in your device’s storage."},
+      {t:"Web apps always work offline, but installed apps need the internet", why:"Web apps usually need a connection; installed apps more often work offline."},
       {t:"Installed apps never need updates", why:"Installed apps need updates; web apps are updated on the server."},
       {t:"Only phones can use web apps", why:"Any device with a modern browser can use web apps."}
     ]},
     {id:"t1u1-q34", lesson:"t1u1-l4", level:3, q:"Fatima uses an administrator account for everything. A friend suggests a standard account for daily work. What is the main benefit?", options:[
-      {t:"Anything harmful that runs as her gets limited rights, and system changes need an admin password", ok:true, why:"Microsoft, CISA and the Australian Signals Directorate all recommend standard accounts for day-to-day use for this reason."},
+      {t:"Harmful software running as her can’t make system changes", ok:true, why:"System changes need an admin password, so anything harmful that runs as her gets limited rights. Microsoft, CISA and the Australian Signals Directorate all recommend standard accounts for day-to-day use for this reason."},
       {t:"Her computer will run faster", why:"Account type doesn’t change speed."},
       {t:"She will never need to update anything", why:"Updates are still needed whatever the account type."},
-      {t:"It makes malware impossible", why:"It limits damage but isn’t a complete shield; her own files can still be reached."}
+      {t:"It makes it impossible for any malware to reach her computer", why:"It limits damage but isn’t a complete shield; her own files can still be reached."}
     ]},
     {id:"t1u1-q35", lesson:"t1u1-l4", level:3, q:"Hana wants to make her everyday Windows account a standard account. It is currently the **only** administrator. What should she do first?", options:[
-      {t:"Create a second administrator account and check she can sign in to it", ok:true, why:"Otherwise she could be left with no account able to make system changes."},
-      {t:"Change her account to standard straight away", why:"With no other administrator, she couldn’t install software or change settings afterwards."},
+      {t:"Create a second administrator account and test it", ok:true, why:"She should check she can sign in to it. Otherwise she could be left with no account able to make system changes."},
+      {t:"Change her account to standard straight away in Settings", why:"With no other administrator, she couldn’t install software or change settings afterwards."},
       {t:"Delete her account and start again", why:"That would remove her files and settings unnecessarily."},
       {t:"Turn off all security prompts", why:"Prompts are part of the protection; turning them off defeats the purpose."}
     ]},
@@ -1646,16 +1721,16 @@ ICA.addUnit({
     ]},
     /* ---- Lesson 5 ---- */
     {id:"t1u1-q37", lesson:"t1u1-l5", level:1, q:"Why does restarting fix so many problems?", options:[
-      {t:"It clears memory, ends stuck programs and reloads the system from a clean state", ok:true, why:"Small problems that build up while a device runs are wiped away."},
-      {t:"It deletes temporary files from storage", why:"A restart clears RAM, not your stored files."},
+      {t:"It clears memory and starts the system fresh", ok:true, why:"It clears memory, ends stuck programs and reloads the system from a clean state, so small problems that build up while a device runs are wiped away."},
+      {t:"It deletes temporary files and old caches from storage", why:"A restart clears RAM, not your stored files."},
       {t:"It reinstalls the operating system", why:"A restart only reloads the existing system; reinstalling is much bigger."},
       {t:"It speeds up your internet plan", why:"Your plan’s speed is set by your provider."}
     ]},
     {id:"t1u1-q38", lesson:"t1u1-l5", level:3, q:"Kenji’s Windows PC has a glitch that survives Shut down and power on. Why might Restart work where Shut down didn’t?", options:[
-      {t:"With Fast Startup on, Shut down saves the Windows core to storage; Restart does a full fresh boot", ok:true, why:"Microsoft documents that Fast Startup doesn’t apply to Restart."},
+      {t:"With Fast Startup, only Restart does a full fresh boot", ok:true, why:"With Fast Startup on, Shut down saves the Windows core to storage, so a stuck state can survive it. Microsoft documents that Fast Startup doesn’t apply to Restart."},
       {t:"Restart is identical to Shut down, so it won’t help", why:"On Windows with Fast Startup on, they behave differently."},
       {t:"Restart frees storage space", why:"Restart clears memory, not storage."},
-      {t:"Restart contacts Microsoft to repair the PC", why:"Restart works locally; nothing is sent for repair."}
+      {t:"Restart contacts Microsoft online so they can repair the PC", why:"Restart works locally; nothing is sent for repair."}
     ]},
     {id:"t1u1-q39", lesson:"t1u1-l5", level:1, q:"On Windows, which keys open Task Manager directly?", options:[
       {t:"Ctrl + Shift + Esc", ok:true, why:"That shortcut opens Task Manager straight away."},
@@ -1664,14 +1739,14 @@ ICA.addUnit({
       {t:"Windows key + L", why:"That locks the computer."}
     ]},
     {id:"t1u1-q40", lesson:"t1u1-l5", level:2, q:"An update keeps failing with “not enough space”. What should you check first?", options:[
-      {t:"Storage settings, to see what is using space and free some", ok:true, why:"Updates need free storage to download and install."},
+      {t:"Storage settings, to see what is using space", ok:true, why:"Updates need free storage to download and install, so find what is using space and free some."},
       {t:"The screen brightness", why:"Brightness has nothing to do with update space."},
       {t:"The keyboard connection", why:"Input devices aren’t involved in storing updates."},
-      {t:"How much RAM is in use", why:"The message is about storage space, not working memory."}
+      {t:"How much RAM the open apps are using right now", why:"The message is about storage space, not working memory."}
     ]},
     {id:"t1u1-q41", lesson:"t1u1-l5", level:3, q:"Priya needs space and finds a folder of system files she doesn’t recognise inside the Windows folder. What should she do?", options:[
-      {t:"Leave them alone and use Storage settings to remove downloads, unused apps and emptied Recycle Bin items", ok:true, why:"System files keep Windows running; the built-in tools show safe things to remove."},
-      {t:"Delete them, since she didn’t create them", why:"Deleting system files can stop Windows from starting."},
+      {t:"Leave them alone and use Storage settings instead", ok:true, why:"System files keep Windows running. Storage settings shows safe things to remove, such as downloads, unused apps and items in the Recycle Bin."},
+      {t:"Delete them, since she didn’t create them and doesn’t use them", why:"Deleting system files can stop Windows from starting."},
       {t:"Move them to a USB stick", why:"Windows still needs them in place; moving them can break the system."},
       {t:"Rename them so Windows ignores them", why:"Renaming system files can also break Windows."}
     ]},
@@ -1682,14 +1757,14 @@ ICA.addUnit({
       {t:"“Updates are annoying, can you fix it ASAP?”", why:"No device, no message, no detail to diagnose."}
     ]},
     {id:"t1u1-q43", lesson:"t1u1-l5", level:3, q:"A pop-up says: “Virus detected! Call Microsoft Support at this number now.” What should Amara do?", options:[
-      {t:"Not call; close the tab or browser (with Task Manager if needed)", ok:true, why:"Microsoft says its error and warning messages never include a phone number. This is a tech support scam."},
+      {t:"Not call, and close the tab or browser", ok:true, why:"Use Task Manager if it won’t close. Microsoft says its error and warning messages never include a phone number. This is a tech support scam."},
       {t:"Call quickly to stop the virus spreading", why:"The number reaches scammers who try to get remote access or payment."},
       {t:"Download the repair tool the pop-up offers", why:"Tools from scam pages are often malware."},
       {t:"Give them remote access so they can check", why:"Never grant remote access to someone you didn’t contact yourself."}
     ]},
     {id:"t1u1-q44", lesson:"t1u1-l5", level:2, q:"Which situation means you should stop first aid and get professional help?", options:[
       {t:"The battery is swollen and the case is bulging", ok:true, why:"A swollen battery is a physical safety risk; stop using and charging the device."},
-      {t:"An app froze once", why:"Close and reopen it, or restart: normal first aid."},
+      {t:"An app froze once and then worked after a restart", why:"Close and reopen it, or restart: normal first aid."},
       {t:"An update is waiting to install", why:"Install it; that’s routine maintenance."},
       {t:"Storage is 80% full", why:"Tidying up storage is normal first aid."}
     ]},

@@ -85,8 +85,8 @@ ICA.addUnit({
         "about **99.7%** lie within 3 standard deviations"
       ]},
       {ex:"Suppose exam scores are roughly normal with mean 65 and SD 10.\nWithin 1 SD: 55 to 75  → about 68% of students\nWithin 2 SD: 45 to 85  → about 95%\nWithin 3 SD: 35 to 95  → about 99.7%\nSo a score above 85 is unusual: only about 2.5% (half of the remaining 5%) score that high.", label:"Worked example", mono:true},
-      "Many real measurements are roughly normal, and Unit 6 of this track explains why averages of samples tend to be normal even when the data aren’t (the sampling distribution). But plenty of data are not normal at all: the clinic and museum data are skewed, and the rule would give nonsense for them. Check the shape before you use it.",
-      {tip:"The 68–95–99.7 percentages are approximate even for perfectly normal data (more precisely 68.3%, 95.4% and 99.7%). For data that are only roughly normal, treat them as a rough guide."}
+      "Many real measurements are roughly normal, and Unit 7 of this track explains why averages of samples tend to be normal even when the data aren’t (the sampling distribution). But plenty of data are not normal at all: the clinic and museum data are skewed, and the rule would give nonsense for them. Check the shape before you use it.",
+      {tip:"The 68–95–99.7 percentages are approximate even for perfectly normal data (more precisely 68.3%, 95.4% and 99.7%). For data that are only roughly normal, treat them as a rough guide. Unit 6, Lesson 5 shows how to get exact areas under the curve ({{normal-calculations}})."}
     ]},
     {h:"Outliers: look before you leap", body:[
       "An [[outlier]] is a value that sits far from the rest of the distribution, like the 41-minute wait. Lesson 3 gives a standard rule for flagging one; for now, the important part is what to do next. An outlier can be:",
@@ -106,7 +106,7 @@ ICA.addUnit({
       {v:16, tol:0, why:"16 is only the visitors under 10 minutes. Add the next bin as well."}
     ], hint2:"Add up the counts of every bin that ends at or before 20 minutes."},
     {id:"t3u5-l1-x2", type:"mcq", q:"Two charts show the same 60 visit times. One uses bins 5 minutes wide, the other bins 30 minutes wide. Which statement is right?", options:[
-      {t:"Both are honest pictures of the same data; the wide bins hide the long right tail, and the narrow bins show more detail but also more chance bumps.", ok:true, why:"Bin width is a choice. Neither chart is false, but they emphasise different things, which is why you try several widths and report the one you use."},
+      {t:"Both are honest; they just show different detail.", ok:true, why:"The wide bins hide the long right tail, and the narrow bins show more detail but also more chance bumps. Bin width is a choice. Neither chart is false, but they emphasise different things, which is why you try several widths and report the one you use."},
       {t:"The 30-minute version is more accurate because it has fewer bars.", why:"Fewer bars means less detail, not more accuracy. Here it squashes 54 of 60 visitors into one bar and hides the shape."},
       {t:"The 5-minute version is always best because narrower bins mean more precision.", why:"With only 60 values, very narrow bins show random bumps that may not mean anything. More bins isn’t automatically better."},
       {t:"They can’t both be right, so one must contain an error.", why:"Both count the same values correctly. They differ only in how the number line is cut into bins."}
@@ -131,7 +131,7 @@ ICA.addUnit({
       {v:47.5, tol:0.5, why:"47.5% is the share between the mean and 2 SD on one side only. The interval covers both sides."}
     ], hint2:"How many standard deviations is 60 milliseconds?"},
     {id:"t3u5-l1-x6", type:"mcq", q:"Kenji is analysing the times volunteers took to sort a box of donations. One entry says 410 minutes; every other entry is between 15 and 60. What should he do first?", options:[
-      {t:"Check where the value came from: it may be a typing error for 41, or a real case that needs explaining.", ok:true, why:"An outlier is a question. If the original record shows 41, fix it and note the change; if 410 is real, keep it and report it."},
+      {t:"Check where the value came from before deciding.", ok:true, why:"It may be a typing error for 41, or a real case that needs explaining. An outlier is a question. If the original record shows 41, fix it and note the change; if 410 is real, keep it and report it."},
       {t:"Delete it, because outliers always distort the analysis.", why:"Deleting it without checking could throw away a real and important case, and deleting silently hides what you did."},
       {t:"Keep it and report only the mean, so every value counts.", why:"If 410 is a typo, the mean would be badly wrong. And with a possible outlier, the median is the safer summary."},
       {t:"Replace it with the mean of the other values.", why:"Inventing a value hides the problem. Fix it only if you can confirm the right value from the source."}
@@ -217,7 +217,7 @@ ICA.addUnit({
     ]},
     {h:"Common misunderstandings about spread", body:[
       {list:[
-        "**“A bigger sample gives a smaller SD.”** No. The SD describes how varied the individuals are; collecting more people doesn’t make them more alike. What shrinks with more data is the uncertainty in the **mean**, the [[standard-error|standard error]] (see the Research Skills unit on reading papers, and Unit 6 of this track).",
+        "**“A bigger sample gives a smaller SD.”** No. The SD describes how varied the individuals are; collecting more people doesn’t make them more alike. What shrinks with more data is the uncertainty in the **mean**, the [[standard-error|standard error]] (see the Research Skills unit on reading papers, and Unit 7 of this track).",
         "**“The SD is the average distance from the mean.”** Close in spirit, but not exactly: it’s the square root of the average **squared** distance (with n − 1), which gives extra weight to big deviations. The plain average distance is a different, less used measure.",
         "**“Mean ± 2 SD always covers 95% of the data.”** Only for roughly normal data. For the volunteer hours in the surveys unit (2, 3, 3, 4, 5, 5, 5, 6, 30), the mean is 7 and the SD 8.7, so “mean − 1 SD” is −1.7 hours, which is impossible. When mean − 2 SD (or even mean − 1 SD) falls below a natural minimum like zero, that’s a strong hint the data are skewed and mean ± SD is the wrong summary.",
         "**“A large SD means bad data.”** Spread is often the most interesting finding: which patients wait longest, and why?"
@@ -257,7 +257,7 @@ ICA.addUnit({
       ["Favourite type of library event (talks, films, crafts)","Mode and percentages","Unordered categories have no mean or SD; report the most common and the percentages."]
     ]},
     {id:"t3u5-l2-x6", type:"mcq", q:"A report says: “Volunteers gave a mean of 7 hours (SD 8.7).” Lucía notices that the mean minus one SD is negative. What does that tell her?", options:[
-      {t:"The hours are probably strongly skewed right, so the median and IQR would describe them better.", ok:true, why:"Hours can’t be negative. An SD larger than the mean, for data with a floor of zero, signals a long right tail (here one person gave 30 hours)."},
+      {t:"The hours are probably strongly skewed right.", ok:true, why:"Hours can’t be negative. An SD larger than the mean, for data with a floor of zero, signals a long right tail (here one person gave 30 hours). The median and IQR would describe them better."},
       {t:"There must be a calculation error, because an SD can’t be bigger than the mean.", why:"An SD can be bigger than the mean. It just means the data are very spread out relative to their centre, often because of a long tail."},
       {t:"Some volunteers gave negative hours.", why:"Nobody can give negative hours. The negative number comes from applying a symmetric summary to skewed data."},
       {t:"The sample is too small for an SD.", why:"You can calculate an SD for any data set with 2 or more values. The issue is shape, not size."}
@@ -355,7 +355,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t3u5-l3-x1", type:"mcq", q:"Tomás’s exam result is reported as “68%, 85th percentile”. Which statement is correct?", options:[
-      {t:"He answered 68% of the questions correctly, and about 85% of candidates scored the same as him or lower.", ok:true, why:"The percentage is his own mark; the percentile is his position in the group. On a hard exam, 68% can be a high-ranking score."},
+      {t:"He scored 68%, and about 85% scored the same or lower.", ok:true, why:"The percentage is his own mark; the percentile is his position in the group. On a hard exam, 68% can be a high-ranking score."},
       {t:"He answered 85% of the questions correctly.", why:"The percentile isn’t his mark. It’s the percentage of candidates at or below his score."},
       {t:"85% of candidates scored higher than him.", why:"That’s the wrong way round. At the 85th percentile, about 85% scored the same or lower, so only about 15% scored higher."},
       {t:"The two numbers contradict each other, so one is a mistake.", why:"They measure different things: his mark out of 100, and his rank within the group. Both can be true."}
@@ -393,7 +393,7 @@ ICA.addUnit({
       {t:"19 minutes", b:1, why:"Well inside the fences; it sits between Q3 and the end of the whisker."}
     ]},
     {id:"t3u5-l3-x7", type:"mcq", q:"Ana compares two boxplots that look identical: same median, same box, same whiskers. What could still be very different about the two data sets?", options:[
-      {t:"One could have two separate peaks while the other has one, and they could have very different numbers of values.", ok:true, why:"A boxplot shows only five numbers and the outliers. It hides the number of values and any bimodal shape, which is why showing the dots or n helps."},
+      {t:"Their shapes and their numbers of values could differ.", ok:true, why:"One could have two separate peaks while the other has one, and the numbers of values could be very different. A boxplot shows only five numbers and the outliers. It hides the number of values and any bimodal shape, which is why showing the dots or n helps."},
       {t:"Their medians could be different.", why:"The median is drawn as the line inside the box, so identical boxplots have identical medians."},
       {t:"Their interquartile ranges could be different.", why:"The IQR is the length of the box. Identical boxes mean identical IQRs."},
       {t:"Nothing: identical boxplots always mean identical data.", why:"Many different data sets share the same five-number summary."}
@@ -440,7 +440,7 @@ ICA.addUnit({
       {lab:"fl-abs", t:"Practise: lock a reference with $ so a formula can be filled down"}
     ]},
     {h:"Reading z-scores sensibly", body:[
-      "For roughly [[normal-distribution|normal]] data, the 68–95–99.7 rule turns z-scores into a feel for how unusual a value is: about 95% of values have z between −2 and +2, and a z beyond ±3 is rare (about 3 in 1,000). That’s why tables and reports sometimes flag values with |z| above 2 or 3. Those cut-offs are conventions, not laws.",
+      "For roughly [[normal-distribution|normal]] data, the 68–95–99.7 rule turns z-scores into a feel for how unusual a value is: about 95% of values have z between −2 and +2, and a z beyond ±3 is rare (about 3 in 1,000). That’s why tables and reports sometimes flag values with |z| above 2 or 3. Those cut-offs are conventions, not laws. To turn a z-score into an exact share of values above or below it, see {{normal-calculations}} (Unit 6, Lesson 5).",
       "For skewed data the same z means different things on the two sides. In the clinic data (mean 13.1, SD 9.0), the 41-minute wait has z = (41 − 13.1) ÷ 9.0 ≈ **3.1**, while the shortest wait, 4 minutes, has z ≈ **−1.0**. The long right tail allows large positive z-scores; the floor at zero makes large negative ones impossible. For skewed data, percentiles usually describe position better.",
       {tip:"Be consistent about which SD you use. A z-score built with the sample SD (STDEV.S) is very slightly smaller than one built with the population SD (STDEV.P). For comparisons it matters little, as long as every z-score uses the same one."}
     ]},
@@ -468,7 +468,7 @@ ICA.addUnit({
       "Researchers often express this as an [[effect-size|effect size]], such as the difference in means divided by a typical SD (see Unit 3 of the Research Skills track). The idea is the same as a z-score: measure a difference in units of spread, so it can be judged and compared.",
       "But be careful what you claim:",
       {list:[
-        "**Description isn’t inference.** With 12 repairs per district, chance alone could produce some difference. Whether this one is bigger than chance would explain is a question for Unit 6 (tests and confidence intervals).",
+        "**Description isn’t inference.** With 12 repairs per district, chance alone could produce some difference. Whether this one is bigger than chance would explain is a question for Unit 7 (tests and confidence intervals).",
         "**Difference isn’t cause.** B might have more complex faults, fewer crews, or longer travel distances. Groups that differ in one way often differ in others; a hidden factor that drives both is a [[confounder]].",
         "**Fair comparisons** use the same units and time period, rates rather than raw counts when group sizes differ (see {{percentages-rates}} in Unit 1 of this track), and the same quartile method for every group."
       ]},
@@ -567,7 +567,7 @@ ICA.addUnit({
     {h:"What r does not tell you", body:[
       {list:[
         "**It only measures straight-line patterns.** Points on a perfect U-shaped curve can have r = 0, even though y is completely determined by x (left panel below).",
-        "**It isn’t a percentage.** r = 0.6 doesn’t mean “60% related”. Its square, r², has a percentage-style meaning in regression (Unit 6 of this track), but r itself doesn’t.",
+        "**It isn’t a percentage.** r = 0.6 doesn’t mean “60% related”. Its square, r², has a percentage-style meaning in regression (Unit 7 of this track), but r itself doesn’t.",
         "**It isn’t the slope.** r = 0.9 can come from a steep line or a shallow one. The slope of the best-fit line (the regression line) depends on units; r doesn’t, so changing minutes to hours or centimetres to inches leaves r unchanged.",
         "**It’s symmetric.** The correlation of x with y is the same as y with x. r alone says nothing about which variable affects which.",
         "**It depends on the range you look at.** Measure only a narrow slice of x (for example, only students who all practise 3 to 4 hours) and r usually shrinks, even if the relationship is just as real."
@@ -599,7 +599,7 @@ ICA.addUnit({
         "**Chance**: compare enough pairs of unrelated variables and some will show high r by luck, especially with few data points or many years of trending data."
       ]},
       "A strong r is a reason to investigate, not a conclusion. Establishing [[causation]] needs study design: experiments, or careful comparisons that rule out other explanations (see {{correlation-causation}}).",
-      {tip:"Unit 6 of this track goes from r to the regression line, r² and residuals, and asks when a correlation is too large to be chance."}
+      {tip:"Unit 7 of this track goes from r to the regression line, r² and residuals, and asks when a correlation is too large to be chance."}
     ]}
    ],
    try:[
@@ -623,7 +623,7 @@ ICA.addUnit({
       {t:"Whether one outlier is driving the result", b:1, why:"r can’t show this; Anscombe’s set IV has r = 0.82 created by a single point."}
     ]},
     {id:"t3u5-l5-x4", type:"mcq", q:"Oluwaseun finds r = 0.02 between the daily outdoor temperature and an office building’s daily energy use over a year. He concludes the two are unrelated. What should he do before concluding that?", options:[
-      {t:"Look at a scatterplot: a strong curved relationship (high energy use for heating on cold days and for cooling on hot days) can give r near 0.", ok:true, why:"r measures only straight-line patterns. A U-shape or other curve can be a strong relationship with r close to zero."},
+      {t:"Look at a scatterplot, since a curve can give r near 0.", ok:true, why:"Energy use may be high for heating on cold days and for cooling on hot days. r measures only straight-line patterns. A U-shape or other curve can be a strong relationship with r close to zero."},
       {t:"Nothing: r = 0.02 proves there is no relationship of any kind.", why:"It shows little straight-line relationship, not no relationship. Curves can hide behind r ≈ 0."},
       {t:"Square r to get the real strength.", why:"r² would be 0.0004, even smaller. It doesn’t reveal a curve either."},
       {t:"Swap the axes, which will give a different r.", why:"r is symmetric: swapping x and y gives exactly the same value."}
@@ -663,6 +663,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u5-q02","t3u5-q05","t3u5-q08","t3u5-q11","t3u5-q15","t3u5-q20","t3u5-q23","t3u5-q26","t3u5-q31","t3u5-q35","t3u5-q39","t3u5-q44"],
+  cpBank:[
+   {id:"t3u5-cp01", lesson:"t3u5-l1", level:1, q:"A school records the share of days each pupil attended. Most pupils are at 95–100%, and a few are far lower, around 40–60%. What shape is this?", options:[
+     {t:"Skewed right, because the peak is at the high end", why:"Skew is named after the side the tail points to, not the peak. Here the tail points to the low values."},
+     {t:"Skewed left: a tail stretches towards low values", ok:true, why:"The peak is near 100% and a few low values form a tail to the left. Values bunched against a top limit often look like this."},
+     {t:"Symmetric, because the values stay between 0 and 100%", why:"A fixed scale doesn’t make data symmetric. The two sides of the peak look very different here."},
+     {t:"Bimodal, because there are high values and low values", why:"Bimodal means two separate peaks. A few scattered low values form a tail, not a second peak."}]},
+   {id:"t3u5-cp02", lesson:"t3u5-l1", level:2, q:"A phone’s battery life is roughly normal, with mean 20 hours and SD 1.5 hours. About what percentage of phones last **more than 23 hours**?", options:[
+     {t:"About 2.5%", ok:true, why:"23 is 2 SDs above the mean. About 95% lie within 2 SDs, so 5% lie outside, half of them above: about 2.5%."},
+     {t:"About 5%", why:"5% lie outside 2 SDs on both sides together. Only half of that, about 2.5%, is above 23 hours."},
+     {t:"About 16%", why:"16% is roughly the share above 1 SD (21.5 hours). 23 hours is 2 SDs above the mean."},
+     {t:"About 0.15%", why:"0.15% is roughly the share more than 3 SDs above the mean (26.5 hours). 23 hours is only 2 SDs above."}]},
+   {id:"t3u5-cp03", lesson:"t3u5-l2", level:2, q:"Daily temperatures have mean 20 °C and SD 4 °C. Converted to Fahrenheit (multiply by 1.8, then add 32), what is the new standard deviation?", options:[
+     {t:"4 °F, because the spread of the days hasn’t changed", why:"Multiplying every value by 1.8 stretches the gaps between them, so the SD is multiplied by 1.8 too."},
+     {t:"39.2 °F", why:"That applies the whole formula (4 × 1.8 + 32). Adding 32 moves every value equally, so it doesn’t change the SD."},
+     {t:"68 °F", why:"68 °F is the new mean (20 × 1.8 + 32). The SD changes only with the multiplication."},
+     {t:"7.2 °F", ok:true, why:"Multiplying by 1.8 multiplies the SD by 1.8; adding 32 doesn’t change it. 4 × 1.8 = 7.2."}]},
+   {id:"t3u5-cp04", lesson:"t3u5-l2", level:3, q:"Nine people’s monthly mobile data use, in GB: 1, 2, 2, 3, 3, 4, 5, 6, 46. Which summary describes a typical person best? (Use the textbook quartile method.)", options:[
+     {t:"Mean 8 GB with SD about 14 GB", why:"The 46 pulls the mean above eight of the nine people and inflates the SD. For skewed data, use median and IQR."},
+     {t:"Median 3 GB with IQR 45 GB", why:"45 is the range (46 − 1). The IQR is Q3 − Q1 = 5.5 − 2 = 3.5."},
+     {t:"Median 3 GB with IQR 3.5 GB", ok:true, why:"Median = 5th value = 3. Lower half 1, 2, 2, 3 gives Q1 = 2; upper half 4, 5, 6, 46 gives Q3 = 5.5. IQR = 3.5."},
+     {t:"Mean 8 GB with IQR 3.5 GB", why:"The IQR is right, but pair it with the median. The mean (8) is pulled up by one value."}]},
+   {id:"t3u5-cp05", lesson:"t3u5-l3", level:2, q:"Repair times have Q1 = 25 and Q3 = 41 minutes. The five largest values are 52, 58, 63, 67 and 80. In a boxplot that marks outliers, where does the upper whisker end?", options:[
+     {t:"At 80, the largest value in the whole data set", why:"That is the simpler style without fences. With fences, values beyond Q3 + 1.5 × IQR are drawn as points."},
+     {t:"At 65, exactly on the upper fence", why:"The fence is a cut-off, not a data value. The whisker stops at the largest value inside it."},
+     {t:"At 63, with 67 and 80 as separate points", ok:true, why:"IQR = 41 − 25 = 16, so the upper fence is 41 + 1.5 × 16 = 65. The largest value inside it is 63; 67 and 80 lie beyond."},
+     {t:"At 41, the third quartile (Q3)", why:"Q3 is the end of the box. The whisker reaches beyond it to the most extreme value inside the fence."}]},
+   {id:"t3u5-cp06", lesson:"t3u5-l3", level:1, q:"A city report says the third quartile (Q3) of commute times is 40 minutes. What does that tell you?", options:[
+     {t:"About 75% of commuters take 40 minutes or less", ok:true, why:"Q3 is the 75th percentile: about three quarters of the values are at or below it."},
+     {t:"The average commute is 40 minutes", why:"Q3 isn’t an average. The median is Q2; Q3 sits a quarter of the way down from the top."},
+     {t:"About 25% of commuters take 40 minutes or less", why:"That describes Q1, the 25th percentile. At Q3, about 75% are at or below."},
+     {t:"Three commuters took 40 minutes", why:"“Third” names which quartile it is, not a count of people."}]},
+   {id:"t3u5-cp07", lesson:"t3u5-l4", level:2, q:"Lina scored 31 on a reading test (mean 40, SD 6). What score on a maths test (mean 70, SD 12) would be equally far below average?", options:[
+     {t:"61: the same 9 points below the mean", why:"Raw points ignore spread. 9 points is 1.5 SDs in reading but only 0.75 SDs in maths."},
+     {t:"52: z = −1.5 on both tests", ok:true, why:"Reading: (31 − 40) ÷ 6 = −1.5. Maths: 70 − 1.5 × 12 = 70 − 18 = 52."},
+     {t:"58: one SD below the maths mean", why:"Lina was 1.5 SDs below in reading, not 1. One SD below the maths mean is 70 − 12 = 58."},
+     {t:"54: the same share of the mean (77.5%)", why:"31 ÷ 40 = 77.5%, and 77.5% of 70 is about 54. But percentages of the mean ignore spread; z-scores use it."}]},
+   {id:"t3u5-cp08", lesson:"t3u5-l4", level:3, q:"Cafés P and Q have median service times of 6 and 8 minutes, with IQRs of 7 and 8. Cafés R and S also have medians of 6 and 8, with IQRs of 1 and 1.5. Where is the 2-minute gap clearer?", options:[
+     {t:"Equally clear: both gaps are 2 minutes", why:"A difference matters more when it is large compared with the spread within each group."},
+     {t:"Between P and Q, because their times vary more widely", why:"Wide spread makes a 2-minute gap small by comparison: P’s and Q’s boxes overlap a lot."},
+     {t:"R and S: 2 minutes is large next to IQRs of 1 and 1.5", ok:true, why:"With such narrow middle halves, S’s median sits well above R’s box. For P and Q the gap is small next to IQRs of 7 and 8."},
+     {t:"Neither: only means can be compared, not medians", why:"Medians and IQRs are a fair way to compare groups, especially for skewed data."}]},
+   {id:"t3u5-cp09", lesson:"t3u5-l5", level:1, q:"The correlation between the hours a shop is open (x) and its daily sales (y) is r = 0.62. What is the correlation between sales (as x) and opening hours (as y)?", options:[
+     {t:"−0.62, because the axes are swapped", why:"Swapping axes doesn’t change the direction. Points high on one are still high on the other."},
+     {t:"0.62", ok:true, why:"r is symmetric: the correlation of x with y equals that of y with x. That’s also why r alone can’t show which affects which."},
+     {t:"0.38, because 1 − 0.62 = 0.38", why:"There is no such rule. Swapping the variables leaves r exactly the same."},
+     {t:"It depends on which variable causes the other", why:"r says nothing about cause or direction, and it doesn’t change when the variables are swapped."}]},
+   {id:"t3u5-cp10", lesson:"t3u5-l5", level:2, q:"A coach finds r close to 0 between height and points scored, using only players in a professional league, who are all very tall. What is the best explanation?", options:[
+     {t:"Height probably has no link with scoring in this sport", why:"The data cover only a narrow slice of heights. A link could still exist across the full range of players."},
+     {t:"r can’t be used with heights measured in centimetres", why:"Units don’t affect r at all. The issue is the narrow range of heights."},
+     {t:"The relationship is probably negative instead", why:"r near 0 doesn’t point to a negative link. It means no straight-line pattern within these data."},
+     {t:"A narrow range of heights usually shrinks r", ok:true, why:"r depends on the range you look at. Measuring only very tall players hides a pattern that may exist across all players."}]},
+   {id:"t3u5-cp11", lesson:"t3u5-l5", level:3, q:"Across 30 neighbourhoods, the number of cafés and the number of reported thefts have r = 0.75. A blogger says cafés attract thieves. What is the strongest objection?", options:[
+     {t:"An r of 0.75 is too weak to mean anything", why:"0.75 is a fairly strong linear pattern. The problem is what drives it, not its size."},
+     {t:"Busy areas have more of both; compare rates per resident first", ok:true, why:"Busier neighbourhoods have more of both. Comparing rates and looking for third variables comes before any claim about cause."},
+     {t:"With only 30 neighbourhoods, r can’t be trusted at all", why:"30 cases can show a clear pattern. Even so, a reliable r can’t show cause on its own."},
+     {t:"The thefts probably cause the cafés to open", why:"Reversing the direction is just another guess. A third factor, such as how busy an area is, is more likely."}]},
+   {id:"t3u5-cp12", lesson:"t3u5-l1", level:3, q:"A parent-and-child swim class has children about 130 cm tall and adults about 170 cm. A report calls the mean, 150 cm, “a typical height”. What is wrong?", options:[
+     {t:"Nothing: the mean is the typical value of any set of heights", why:"The mean is a balance point. With two groups far apart it can land where almost nobody is."},
+     {t:"The mean must be miscalculated, because no one is 150 cm tall", why:"The arithmetic can be right. A mean that matches nobody is a sign of two groups mixed together, not a slip."},
+     {t:"It is bimodal: few are near 150, so describe each group", ok:true, why:"Two peaks usually mean two groups. One centre can’t describe both, so give each group’s centre and spread, and show the histogram."},
+     {t:"Only the choice of average: the median would be typical", why:"With two peaks the median can also fall in the gap, and it still describes neither group. Describe the two groups separately."}]},
+  ],
   codex:[
    {id:"distributions", title:"Distributions and their shapes", aka:["distribution","histogram","dot plot","skew","skewness","bimodal","normal distribution","bell curve","68–95–99.7 rule","empirical rule"], tags:["statistics","data","charts"],
     summary:"What a distribution is, how dot plots and histograms show it, the words for its shape, and the normal distribution with its 68–95–99.7 rule.",
@@ -682,7 +744,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Skewness as a number.** Software reports a skewness coefficient (based on cubed deviations from the mean); positive means right skew. Different programs use slightly different small-sample adjustments, and with small samples the value is unstable, so a plot is usually more informative.",
-      "**The empirical rule’s exact values** for a normal distribution are 68.27%, 95.45% and 99.73%. Within ±1.96 SD is 95% (to three significant figures), which is where the 1.96 in confidence intervals comes from (Unit 6 of this track).",
+      "**The empirical rule’s exact values** for a normal distribution are 68.27%, 95.45% and 99.73%. Within ±1.96 SD is 95% (to three significant figures), which is where the 1.96 in confidence intervals comes from (Unit 7 of this track).",
       "**Checking normality.** A histogram with a bell shape is a start; a normal quantile plot (Q–Q plot), which should be roughly a straight line for normal data, is more sensitive. Many methods need only approximate normality, and sample means are close to normal for large samples even when the data aren’t (the central limit theorem).",
       "**Kernel density plots** smooth a histogram into a curve; they avoid bin edges but introduce a bandwidth choice that plays the same role as bin width.",
       "**Transformations.** Strongly right-skewed positive data (incomes, concentrations) often look roughly symmetric after taking logarithms, which can make summaries and models more sensible. OpenIntro Section 2.1.7 introduces this.",
@@ -827,7 +889,7 @@ ICA.addUnit({
       "**Use matching summaries.** If either group is skewed or has outliers, compare medians and IQRs. In the streetlight data, A’s SD (5.1) is bigger than B’s (3.8) only because of one value; without it, A’s SD is 2.2.",
       "**Judge size against spread.** Here the medians differ by 3.5 days, close to one IQR, and B’s median is above A’s Q3. An [[effect-size|effect size]] such as a standardised mean difference expresses this in SD units.",
       "**Be fair.** Same units, same time period, rates rather than counts when group sizes differ, and the same quartile method for every group. Give n for each group.",
-      "**Don’t overclaim.** With small groups, chance alone produces differences; whether a difference is bigger than chance is an inference question (Unit 6). And groups often differ in other ways ([[confounder|confounders]]), so a difference doesn’t show cause.",
+      "**Don’t overclaim.** With small groups, chance alone produces differences; whether a difference is bigger than chance is an inference question (Unit 7). And groups often differ in other ways ([[confounder|confounders]]), so a difference doesn’t show cause.",
       "**Pictures.** Side-by-side boxplots on one axis are the standard. For small groups, add the individual points (jittered dot plots). OpenIntro also shows hollow histograms, outlines of each group’s histogram drawn over each other.",
       "**Write it up.** One sentence each for centre, spread and unusual values, with numbers, then one sentence on what the comparison can’t show.",
       "**Overlap matters.** Even when medians differ clearly, many individuals in the “slower” group may do better than many in the “faster” one. Saying how much the boxes overlap keeps a comparison honest."
@@ -866,7 +928,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Anscombe’s values.** In all four sets: mean of x = 9, variance of x = 11, mean of y ≈ 7.50, variance of y ≈ 4.12–4.13, r ≈ 0.816, and least-squares line y ≈ 3.00 + 0.500x. The data ship with R as `datasets::anscombe` (from Anscombe, 1973, *The American Statistician* 27(1)).",
-      "**r and regression.** The slope of the least-squares line is r × (SD of y ÷ SD of x), and r² is the share of the variance in y accounted for by the linear fit (simple linear regression, Unit 6 of this track).",
+      "**r and regression.** The slope of the least-squares line is r × (SD of y ÷ SD of x), and r² is the share of the variance in y accounted for by the linear fit (simple linear regression, Unit 7 of this track).",
       "**Alternatives.** Spearman’s rank correlation (Pearson’s r computed on ranks) measures monotonic relationships and resists outliers; Kendall’s tau is another rank-based measure.",
       "**Ecological correlations.** Correlations between group averages (countries, towns) are usually much stronger than between individuals, and don’t describe individuals (the ecological fallacy).",
       "**Significance versus size.** With very large n, tiny r values become “statistically significant” (OpenStax Section 12.4 tests r); with small n, large r values can arise by chance. Report r with n and, ideally, a confidence interval.",
@@ -898,7 +960,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t3u5-q01", lesson:"t3u5-l1", level:1, q:"What does a histogram show?", options:[
-     {t:"How many values fall into each of a series of equal-width intervals on a number line", ok:true, why:"A histogram counts values in bins and draws touching bars, so you see the shape of a numeric distribution."},
+     {t:"How many values fall in each equal-width interval", ok:true, why:"The intervals sit on a number line. A histogram counts values in bins and draws touching bars, so you see the shape of a numeric distribution."},
      {t:"How separate categories compare, with gaps between the bars", why:"That’s a bar chart. Histogram bars sit on a continuous number line in a fixed order."},
      {t:"How one variable changes over time", why:"That’s usually a line chart (a time series)."},
      {t:"How two numeric variables relate", why:"That’s a scatterplot."}
@@ -922,7 +984,7 @@ ICA.addUnit({
      {t:"The mode is always the largest of the three.", why:"In right-skewed data the mode is usually the smallest, sitting at the peak on the left."}
    ]},
    {id:"t3u5-q05", lesson:"t3u5-l1", level:3, q:"Lucía’s histogram of the ages of everyone attending a community festival shows two clear peaks, one around age 8 and one around age 38. What is the most likely explanation?", options:[
-     {t:"The crowd is a mix of two groups, such as children and their parents.", ok:true, why:"Two peaks often mean two populations mixed together. Here children and the adults who bring them are a natural explanation, worth checking."},
+     {t:"The crowd mixes two groups, such as children and parents.", ok:true, why:"Two peaks often mean two populations mixed together. Here children and the adults who bring them are a natural explanation, worth checking."},
      {t:"The ages must have been entered wrongly.", why:"Two peaks are a common, real pattern. They’re a clue about the groups present, not a sign of error."},
      {t:"The distribution is skewed right.", why:"Skew describes one peak with a long tail. Two separate peaks make it bimodal."},
      {t:"The mean age, about 23, describes a typical attendee well.", why:"With two peaks, very few people may be near the mean. Describe both groups instead."}
@@ -940,14 +1002,14 @@ ICA.addUnit({
      {t:"A pie chart of the bins instead", why:"A pie chart loses the order of the number line. A histogram with a sensible bin width is the right tool."}
    ]},
    {id:"t3u5-q08", lesson:"t3u5-l1", level:3, q:"In a survey of household sizes, one entry is 47 people; every other entry is between 1 and 9. What is the best first step?", options:[
-     {t:"Check the original response or source: it may be a typing error, or perhaps a shared residence that belongs in a separate category.", ok:true, why:"An outlier is a question. Checking tells you whether to correct it, analyse it separately, or keep it and report it."},
+     {t:"Check the original response or source before deciding.", ok:true, why:"It may be a typing error, or perhaps a shared residence that belongs in a separate category. An outlier is a question. Checking tells you whether to correct it, analyse it separately, or keep it and report it."},
      {t:"Delete it without comment, because it would distort the mean.", why:"Silent deletion hides a decision from readers, and the value might be real."},
      {t:"Replace it with the median household size.", why:"Inventing a value hides the problem. Only correct it when you can confirm the right value."},
      {t:"Keep it and report only the mean.", why:"If it’s an error, the mean will be wrong; even if it’s real, the median would describe a typical household better."}
    ]},
    {id:"t3u5-q09", lesson:"t3u5-l1", level:1, q:"What does a dot plot show that a single average can’t?", options:[
-     {t:"Every individual value, so you can see clusters, gaps, spread and unusual values", ok:true, why:"A dot plot keeps all the data, so the whole distribution is visible."},
-     {t:"The exact mean, more accurately than a calculation", why:"A dot plot doesn’t calculate anything; the mean comes from a formula."},
+     {t:"Every value, so you can see clusters, gaps and spread", ok:true, why:"Unusual values show up too. A dot plot keeps all the data, so the whole distribution is visible."},
+     {t:"The exact mean, more accurately than a calculation could", why:"A dot plot doesn’t calculate anything; the mean comes from a formula."},
      {t:"Which variable causes which", why:"A dot plot shows one variable’s distribution. It can’t show cause."},
      {t:"How values change over time", why:"Dot plots usually ignore order in time. A line chart shows change over time."}
    ]},
@@ -983,13 +1045,13 @@ ICA.addUnit({
      {t:"The mode price", why:"With prices that are nearly all different, the mode is rarely meaningful."}
    ]},
    {id:"t3u5-q15", lesson:"t3u5-l2", level:3, q:"Kenji says: “Our survey had 50 people last year and 500 this year, so the standard deviation of ages should be much smaller this year.” Is he right?", options:[
-     {t:"No. The SD describes how varied individuals are; it doesn’t shrink just because more people are measured. The standard error of the mean does shrink.", ok:true, why:"More data estimate the spread more precisely, but the population is just as varied. The uncertainty in the mean, SD ÷ √n, is what gets smaller."},
+     {t:"No. The SD measures how varied people are, not sample size.", ok:true, why:"It doesn’t shrink just because more people are measured; the standard error of the mean does. More data estimate the spread more precisely, but the population is just as varied. The uncertainty in the mean, SD ÷ √n, is what gets smaller."},
      {t:"Yes. The SD always falls as the sample size grows.", why:"That confuses the SD with the standard error. The SD of ages stays about the same if the people are similar."},
      {t:"Yes, because dividing by n − 1 makes a bigger difference with large samples.", why:"The n − 1 adjustment matters more for small samples, and it’s a small correction either way."},
      {t:"No, because the SD always grows with sample size.", why:"The SD doesn’t systematically grow either. (The range does tend to grow with more data.)"}
    ]},
    {id:"t3u5-q16", lesson:"t3u5-l2", level:2, q:"Ten people report the hours they spent on a hobby last week. The mean is 6 hours and the SD is 9 hours. What does this suggest?", options:[
-     {t:"The data are probably strongly skewed right, with a few people giving many hours.", ok:true, why:"Hours can’t be negative, yet mean − SD is −3. An SD larger than the mean for data with a floor at zero is a sign of a long right tail."},
+     {t:"The data are probably strongly skewed right.", ok:true, why:"A few people probably gave many hours. Hours can’t be negative, yet mean − SD is −3. An SD larger than the mean for data with a floor at zero is a sign of a long right tail."},
      {t:"There’s an error, because an SD can’t be bigger than the mean.", why:"It can. The SD measures spread, which can exceed the centre when values are very uneven."},
      {t:"Most people spent between −3 and 15 hours.", why:"Negative hours are impossible. Mean ± SD is the wrong summary for strongly skewed data."},
      {t:"The data are roughly normal.", why:"Normal data with mean 6 and SD 9 would include many negative values, which can’t happen here."}
@@ -1026,19 +1088,19 @@ ICA.addUnit({
      {t:"28", why:"28 is well inside the fences (0 to 32)."}
    ]},
    {id:"t3u5-q22", lesson:"t3u5-l3", level:3, q:"Ana and Tomás calculate Q1 for the same 8 values. Ana uses QUARTILE.INC and gets 62.25; Tomás uses QUARTILE.EXC and gets 60.75. What should they conclude?", options:[
-     {t:"Both are correct for their method; they should pick one method, state it, and use it consistently.", ok:true, why:"The .INC and .EXC functions place percentiles differently (positions 1 + p(n − 1) and p(n + 1)). Small data sets show the difference clearly."},
+     {t:"Both are right; they should pick one method and state it.", ok:true, why:"They should also use it consistently. The .INC and .EXC functions place percentiles differently (positions 1 + p(n − 1) and p(n + 1)). Small data sets show the difference clearly."},
      {t:"One of them typed the data wrongly.", why:"Same data, different methods: the functions are designed to give different answers here."},
      {t:"QUARTILE.EXC is broken and should never be used.", why:"It’s a standard method (Hyndman and Fan’s type 6, the default in NIST’s statistics handbook). It just refuses percentiles too close to the ends of small data sets."},
      {t:"They should average the two and call that the true quartile.", why:"There’s no single “true” sample quartile. Averaging creates yet another method; better to state the one you used."}
    ]},
    {id:"t3u5-q23", lesson:"t3u5-l3", level:2, q:"In a boxplot that marks outliers, where does the upper whisker end?", options:[
-     {t:"At the largest data value that is still inside the upper fence (Q3 + 1.5 × IQR)", ok:true, why:"The whisker reaches the most extreme value within the fence; values beyond it are drawn as points."},
-     {t:"Exactly at the upper fence, Q3 + 1.5 × IQR", why:"The fence is usually not drawn. The whisker stops at an actual data value inside it."},
+     {t:"At the largest value still inside the upper fence", ok:true, why:"The fence is Q3 + 1.5 × IQR. The whisker reaches the most extreme value within the fence; values beyond it are drawn as points."},
+     {t:"Exactly at the upper fence itself, at Q3 + 1.5 × IQR", why:"The fence is usually not drawn. The whisker stops at an actual data value inside it."},
      {t:"Always at the maximum", why:"That’s true only for the simpler style without outlier points, or when no value is beyond the fence."},
      {t:"At the 90th percentile", why:"Some charts use other conventions, but the standard (Tukey-style) boxplot uses the fences."}
    ]},
    {id:"t3u5-q24", lesson:"t3u5-l3", level:3, q:"Fatima analyses 20,000 sensor readings that look roughly normal. Her boxplot flags about 140 points as outliers. What’s the most sensible interpretation?", options:[
-     {t:"That’s about what the 1.5 × IQR rule flags by chance in large normal data (about 0.7%), so most are probably ordinary; investigate any that are far beyond the fences.", ok:true, why:"For normal data, the fences sit near ±2.7 SD and catch about 0.7% of values: 0.007 × 20,000 = 140."},
+     {t:"That’s about what the rule flags by chance in normal data.", ok:true, why:"Most are probably ordinary; investigate any that are far beyond the fences. For normal data, the 1.5 × IQR fences sit near ±2.7 SD and catch about 0.7% of values: 0.007 × 20,000 = 140."},
      {t:"All 140 are errors and should be deleted.", why:"The rule is a screen, not a verdict, and in large data it flags many genuine values."},
      {t:"The data can’t be normal, because normal data have no outliers.", why:"Normal data have tails; some values will always fall beyond the fences."},
      {t:"She should switch to a method that flags nothing.", why:"Hiding flags doesn’t help. Understanding what the flags mean does."}
@@ -1050,16 +1112,16 @@ ICA.addUnit({
      {t:"The five most common values", why:"The five-number summary is about positions in sorted data, not frequency."}
    ]},
    {id:"t3u5-q26", lesson:"t3u5-l3", level:3, q:"Sione is told a reaction time is “at the 30th percentile” and that lower times are better. What does this mean?", options:[
-     {t:"About 30% of people were as fast or faster, so this time is quicker than about 70% of the group.", ok:true, why:"At the 30th percentile, about 30% of times are at or below it. Since lower is better, about 70% were slower."},
+     {t:"It was quicker than about 70% of the group.", ok:true, why:"At the 30th percentile, about 30% of times are at or below it. Since lower is better, about 70% were slower."},
      {t:"The time was 30% slower than average.", why:"A percentile is a position in the group, not a percentage difference from the mean."},
      {t:"The person was slower than about 70% of the group.", why:"Most of the group (about 70%) had higher, slower times."},
      {t:"It was 30 milliseconds.", why:"A percentile is a rank, not the measurement itself."}
    ]},
    {id:"t3u5-q27", lesson:"t3u5-l3", level:2, q:"PERCENTILE.EXC(range, 0.95) returns #NUM! for a list of 10 values. Why?", options:[
-     {t:"The exclusive method needs position 0.95 × 11 = 10.45, which is beyond the last value.", ok:true, why:"PERCENTILE.EXC uses position p(n + 1). Positions outside 1 to n can’t be interpolated, so it returns an error."},
+     {t:"The exclusive method needs a position beyond the last value.", ok:true, why:"PERCENTILE.EXC uses position p(n + 1), here 0.95 × 11 = 10.45. Positions outside 1 to n can’t be interpolated, so it returns an error."},
      {t:"The data must contain text.", why:"Text is ignored or causes other errors; the issue here is the position."},
      {t:"Percentiles above 90 can never be calculated.", why:"PERCENTILE.INC would return a value. The exclusive method just needs more data for extreme percentiles."},
-     {t:"The percentile must be written as 95, not 0.95.", why:"The spreadsheet functions take a fraction from 0 to 1, so 0.95 is correct."}
+     {t:"The percentile must be written as 95, not as the fraction 0.95.", why:"The spreadsheet functions take a fraction from 0 to 1, so 0.95 is correct."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t3u5-q28", lesson:"t3u5-l4", level:1, q:"What does a z-score of −2 mean?", options:[
@@ -1081,7 +1143,7 @@ ICA.addUnit({
      {t:"Exactly equal on both", why:"The z-scores are close (1.5 and 1.6) but not equal."}
    ]},
    {id:"t3u5-q31", lesson:"t3u5-l4", level:3, q:"Dmitri flags outliers in a sample of 8 measurements by looking for |z| > 3, and finds none, though one value looks like a mistake. What’s the best advice?", options:[
-     {t:"Use the 1.5 × IQR rule or a plot instead: in small samples an extreme value inflates the SD, and with 8 values no |z| can exceed about 2.5.", ok:true, why:"With the sample SD, the maximum possible |z| is (n − 1) ÷ √n = 7 ÷ √8 ≈ 2.47 for n = 8, so the rule can’t flag anything. Robust rules don’t have this problem."},
+     {t:"Use the 1.5 × IQR rule or a plot instead.", ok:true, why:"In small samples an extreme value inflates the SD, and with 8 values no |z| can exceed about 2.5. With the sample SD, the maximum possible |z| is (n − 1) ÷ √n = 7 ÷ √8 ≈ 2.47 for n = 8, so the rule can’t flag anything. Robust rules don’t have this problem."},
      {t:"Accept the result: if |z| < 3, the value is fine.", why:"The z-score rule can’t work here, so its silence proves nothing."},
      {t:"Lower the cut-off to |z| > 0.5 so more values are flagged.", why:"That would flag ordinary values too. A robust method is the better fix."},
      {t:"Use the population SD, which solves the problem.", why:"It raises the maximum only slightly (to √7 ≈ 2.65 for n = 8), so a cut-off of 3 still can’t be reached."}
@@ -1093,20 +1155,20 @@ ICA.addUnit({
      {t:"82 kg", why:"82 is one full SD above the mean (z = 1)."}
    ]},
    {id:"t3u5-q33", lesson:"t3u5-l4", level:3, q:"Two clinics report waiting times. Clinic North: median 12 minutes, IQR 6, mean 18, SD 20 (a few very long waits). Clinic South: median 15, IQR 7, mean 15.5, SD 5. Which comparison is fairest?", options:[
-     {t:"Typical waits are shorter at North (median 12 versus 15), but North has some very long waits that South doesn’t.", ok:true, why:"North’s mean and SD are inflated by a long tail, so medians compare typical waits fairly, and the tail is worth reporting separately."},
+     {t:"North’s typical wait is shorter, but it has some very long waits.", ok:true, why:"The medians are 12 versus 15, and South has no very long waits. North’s mean and SD are inflated by a long tail, so medians compare typical waits fairly, and the tail is worth reporting separately."},
      {t:"South is faster, because its mean is lower.", why:"North’s mean is pulled up by a few long waits. The typical (median) wait is shorter at North."},
      {t:"North is four times as variable, because its SD is four times larger.", why:"The SD is dominated by a few long waits. The IQRs (6 and 7) show the middle halves are similarly spread."},
      {t:"The clinics can’t be compared because they have different shapes.", why:"Different shapes are exactly why you compare medians and IQRs and describe the tail."}
    ]},
    {id:"t3u5-q34", lesson:"t3u5-l4", level:3, q:"A report finds that pupils at schools with breakfast clubs score higher, on average, than pupils at schools without. What’s the most careful conclusion from this comparison alone?", options:[
-     {t:"The groups differ, but other differences between the schools (such as funding or the pupils’ backgrounds) could explain it.", ok:true, why:"A group comparison describes a difference; confounders could drive both breakfast clubs and scores. Showing cause needs a design that rules them out."},
+     {t:"Other differences between the schools could explain it.", ok:true, why:"Examples are funding or the pupils’ backgrounds. A group comparison describes a difference; confounders could drive both breakfast clubs and scores. Showing cause needs a design that rules them out."},
      {t:"Breakfast clubs raise test scores.", why:"That’s a causal claim the comparison can’t support on its own."},
      {t:"Breakfast clubs make no difference.", why:"The data don’t show that either; they show a difference whose cause is unknown."},
-     {t:"The difference must be due to chance.", why:"It might partly be chance, but that needs an inferential test; and chance isn’t the only alternative to cause."}
+     {t:"The difference between the schools must be due to chance.", why:"It might partly be chance, but that needs an inferential test; and chance isn’t the only alternative to cause."}
    ]},
    {id:"t3u5-q35", lesson:"t3u5-l4", level:2, q:"Why should you put side-by-side boxplots on the same scale?", options:[
-     {t:"So that differences in position and length reflect real differences in the data, not different axes", ok:true, why:"Comparisons by eye only work when both groups are drawn against one shared axis."},
-     {t:"Because boxplot software requires it", why:"Software can draw separate axes; the point is that separate axes make comparisons misleading."},
+     {t:"So differences you see reflect the data, not different axes", ok:true, why:"Comparisons by eye only work when both groups are drawn against one shared axis."},
+     {t:"Because boxplot software requires a shared scale to draw them", why:"Software can draw separate axes; the point is that separate axes make comparisons misleading."},
      {t:"So both boxes are the same size", why:"The boxes should differ if the data differ. A shared scale lets you see that."},
      {t:"To hide outliers", why:"A shared scale doesn’t hide anything; it makes differences visible and honest."}
    ]},
@@ -1142,25 +1204,25 @@ ICA.addUnit({
      {t:"Replacing one value with a wrongly typed one", why:"Changing the data changes r, sometimes a lot."}
    ]},
    {id:"t3u5-q41", lesson:"t3u5-l5", level:1, q:"What is the main lesson of Anscombe’s quartet?", options:[
-     {t:"Data sets with the same summary statistics, including r, can look completely different, so always plot the data.", ok:true, why:"Anscombe’s four sets share means, variances, r ≈ 0.82 and the same line, but their scatterplots tell four different stories."},
+     {t:"Always plot the data: summaries can hide their shape.", ok:true, why:"Data sets with the same summary statistics, including r, can look completely different. Anscombe’s four sets share means, variances, r ≈ 0.82 and the same line, but their scatterplots tell four different stories."},
      {t:"r is always wrong.", why:"r is calculated correctly for all four. It just can’t describe curves, outliers or single dominant points."},
      {t:"Small data sets can’t have high correlations.", why:"The sets have only 11 points each and r ≈ 0.82."},
      {t:"Correlation proves causation when r is above 0.8.", why:"No value of r proves causation."}
    ]},
    {id:"t3u5-q42", lesson:"t3u5-l5", level:3, q:"Across 50 countries, a blog reports r = 0.7 between the number of public libraries per person and life expectancy. What’s the best response?", options:[
-     {t:"It’s a correlation between country averages; national wealth could drive both, so it doesn’t show that libraries lengthen anyone’s life.", ok:true, why:"A third variable (national wealth) is a plausible cause of both, and correlations between group averages don’t describe individuals."},
+     {t:"It’s a correlation; national wealth could drive both.", ok:true, why:"It doesn’t show that libraries lengthen anyone’s life. A third variable (national wealth) is a plausible cause of both, and correlations between group averages don’t describe individuals."},
      {t:"Using a library more will make you live longer.", why:"That turns a group-level correlation into an individual causal claim, which the data can’t support."},
      {t:"r = 0.7 means 70% of life expectancy is explained by libraries.", why:"r isn’t a percentage, and correlation isn’t explanation."},
      {t:"With 50 countries the correlation must be a coincidence.", why:"It might not be chance at all; a shared cause is a likelier explanation. Chance is only one possibility."}
    ]},
    {id:"t3u5-q43", lesson:"t3u5-l5", level:2, q:"Adding a single point to six well-behaved points changes r from 0.95 to −0.12. What should a report do?", options:[
-     {t:"Show the scatterplot, report r with and without the point, and explain what is known about it.", ok:true, why:"Readers need to see that one case dominates. Checking whether it’s an error or a real case decides how to treat it."},
+     {t:"Show the plot and report r with and without the point.", ok:true, why:"Also explain what is known about the point. Readers need to see that one case dominates. Checking whether it’s an error or a real case decides how to treat it."},
      {t:"Report only r = −0.12, because all data must be included.", why:"Including it silently hides that one point controls the result."},
      {t:"Report only r = 0.95 and delete the point without comment.", why:"Silent deletion hides a decision; the point might be real and important."},
      {t:"Average the two values of r.", why:"An average of 0.95 and −0.12 means nothing; it doesn’t describe either version of the data."}
    ]},
    {id:"t3u5-q44", lesson:"t3u5-l5", level:3, q:"In a study of 200 adults, people who walk more have lower blood pressure (r = −0.4). Tomás says this proves walking lowers blood pressure. What is the strongest objection?", options:[
-     {t:"Other factors, such as age or overall health, could affect both, and people with health problems may walk less: the direction and cause are unclear.", ok:true, why:"A correlation can come from a third variable or reverse causation. Showing that walking lowers blood pressure needs an experiment or careful control of these factors."},
+     {t:"Other factors, such as age, could affect both.", ok:true, why:"Overall health matters too, and people with health problems may walk less, so the direction and cause are unclear. A correlation can come from a third variable or reverse causation. Showing that walking lowers blood pressure needs an experiment or careful control of these factors."},
      {t:"A negative r means there is no relationship.", why:"Negative r means one variable tends to fall as the other rises: here a moderate relationship."},
      {t:"r = −0.4 is too small to mean anything.", why:"A moderate correlation in 200 people is worth attention; the problem is the causal claim, not the size."},
      {t:"r should be positive for a healthy relationship.", why:"The sign shows direction, not whether something is good or bad."}

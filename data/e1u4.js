@@ -132,7 +132,7 @@ ICA.addUnit({
     {id:"e1u4-l1-x2", type:"mcq", q:"After a short pause, the lecturer says: “Right. So, now let’s turn to the second cause.” What does “Right. So, now” mainly do here?", options:[
       {t:"It marks the start of a new section of the lecture", ok:true, why:"“Right”, “so” and “now” are discourse markers. At the start of a sentence, after a pause, they usually close one part and open the next, and “let’s turn to” confirms it."},
       {t:"It means the lecturer agrees with a student", why:"“Right” can mean “correct” in other contexts, but here nobody has said anything to agree with. At the start of a turn, after a pause, it organises the talk."},
-      {t:"It is meaningless filler and can be ignored", why:"These little words do a job: they tell listeners a boundary is coming. Treating them as filler means missing the structure."},
+      {t:"It is meaningless filler that listeners can safely ignore", why:"These little words do a job: they tell listeners a boundary is coming. Treating them as filler means missing the structure."},
       {t:"It shows the lecture is ending", why:"“The second cause” shows there is more to come. Endings sound like “To sum up…” or “That’s all for today.”"}
     ]},
     {id:"e1u4-l1-x3", type:"sort", q:"Sort what you hear: does it usually signal **a main point to note** or **a side comment you can note briefly or skip**?", buckets:["Main point to note","Side comment"], items:[
@@ -479,7 +479,7 @@ ICA.addUnit({
       {t:"“That’s a good question. Let me think about that for a moment.”", ok:true, why:"It welcomes the question and honestly signals a short pause. Audiences expect this."},
       {t:"“Sorry, my English is not good.”", why:"Her English isn’t the problem: she understood the question. This apology moves attention away from her ideas."},
       {t:"“Could you repeat the question?”", why:"Useful when you haven’t understood, but she has. Asking for a repeat just to gain time can confuse the questioner."},
-      {t:"Start answering immediately, then change her answer halfway", why:"Rushing produces a muddled answer. A few seconds of thinking time gives a clearer one."}
+      {t:"Start answering immediately, then change her answer halfway through", why:"Rushing produces a muddled answer. A few seconds of thinking time gives a clearer one."}
     ]}
    ],
    apply:{intro:"These tasks need only paper or a notes app; a phone voice recorder helps with the second.", tasks:[
@@ -599,7 +599,7 @@ ICA.addUnit({
       {t:"The second: phoTOgraphy", ok:true, why:"The stress mark comes before the second syllable: /fəˈtɒɡrəfi/ (UK), /fəˈtɑːɡrəfi/ (US). The ending moves the stress from PHOtograph."},
       {t:"The first: PHOtography", why:"That is the stress of “photograph”. Adding “-y” moves it to the second syllable."},
       {t:"The third: photoGRAphy", why:"The third syllable is unstressed. Stressing it is the pattern of “photographic”, not “photography”."},
-      {t:"All syllables equally", why:"English words of several syllables usually have one main stress. Even varieties with more even syllables keep the stress on the second one here."}
+      {t:"All syllables equally stressed", why:"English words of several syllables usually have one main stress. Even varieties with more even syllables keep the stress on the second one here."}
     ]},
     {id:"e1u4-l4-x4", type:"match", q:"Match each word to its stress pattern, as given in learner dictionaries (capitals = stressed syllable).", pairs:[
       ["economy","eCONomy","Stress on the second syllable: e-CON-o-my."],
@@ -815,6 +815,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e1u4-q02","e1u4-q05","e1u4-q11","e1u4-q14","e1u4-q19","e1u4-q23","e1u4-q26","e1u4-q30","e1u4-q33","e1u4-q37","e1u4-q41","e1u4-q44"],
+  cpBank:[
+   {id:"e1u4-cp01", lesson:"e1u4-l1", level:1, q:"A lecturer says: “Take the case of Lagos, where the population doubled in twenty years.” What is this signpost telling you?", options:[
+     {t:"A definition is coming: write it down word for word, in full", why:"Definitions are signalled by “By X, I mean…” or “X refers to…”. “Take the case of…” introduces something else."},
+     {t:"An example is coming: note it briefly beside its point", ok:true, why:"“Take the case of…” signals an example, like “For example…”. Note it in a few words beside the point it supports."},
+     {t:"An aside is coming: you can skip it completely", why:"Asides are signalled by “By the way…” or “Incidentally…”. An example supports the main line, so it is worth a short note."},
+     {t:"The lecture is ending: wait for the summary", why:"Endings sound like “To sum up…” or “Next week we’ll look at…”. This phrase introduces a case."}]},
+   {id:"e1u4-cp02", lesson:"e1u4-l1", level:2, q:"A lecturer says: “Because fees went up, the number of part-time students fell by about a fifth.” Which note is most useful?", options:[
+     {t:"Because fees went up, the number of part-time students fell by about a fifth.", why:"Copying every word leaves no attention for understanding. Lecture notes compress: key words and symbols."},
+     {t:"fees ↓ → part-time students ↑ ≈ 1/5", why:"The arrows are reversed: fees went **up** (↑) and student numbers went **down** (↓)."},
+     {t:"fees → part-time students, fifth", why:"This keeps key words but loses the direction of each change, so the note can’t be rebuilt later."},
+     {t:"fees ↑ → part-time students ↓ ≈ 1/5", ok:true, why:"↑ and ↓ show the two changes, → shows the cause, and ≈ keeps the number approximate, as the lecturer said."}]},
+   {id:"e1u4-cp03", lesson:"e1u4-l1", level:2, q:"Before an economics lecture, Marco lists key terms he already knows in writing, such as *economy* and *economic*. Why should he also check how they sound?", options:[
+     {t:"Because spoken and written English use different words for the same ideas", why:"The words are the same. The problem is that a word known on paper can sound unfamiliar when you hear it."},
+     {t:"Because a word known on paper can sound unfamiliar, and stress can move within a family (eCONomy, ecoNOMic)", ok:true, why:"Knowing the sound helps you match what you hear to words you expect. Word families often move the stress."},
+     {t:"Because lecturers expect students to use British pronunciation in class", why:"Lecturers speak with many different accents and don’t expect one from students. Checking UK or US audio helps you recognise words, not copy an accent."},
+     {t:"Because he must copy the lecturer’s accent in his own talks", why:"The goal is to recognise words when you hear them, not to copy anyone’s accent."}]},
+   {id:"e1u4-cp04", lesson:"e1u4-l2", level:2, q:"In a seminar, a classmate says “the policy ignores externalities”. Nour heard the sentence clearly but doesn’t know the word. What is the best thing to say?", options:[
+     {t:"“Sorry, I didn’t catch the last part.”", why:"That asks the speaker to repeat, but Nour heard every word. Her problem is the meaning of one word."},
+     {t:"“So are you saying that the policy is too expensive?”", why:"Checking is useful once you understand, but this guesses a meaning that may be wrong."},
+     {t:"“What do you mean by ‘externalities’ here?”", ok:true, why:"This asks about the meaning of one word, in this context. Clarification requests show you are engaged."},
+     {t:"Say nothing, and look the word up after the seminar", why:"She can check later, but asking now keeps her in the discussion. Everyone needs clarification sometimes."}]},
+   {id:"e1u4-cp05", lesson:"e1u4-l2", level:3, q:"Ruth leads a discussion in a group with five different first languages. She asks a question, and nobody speaks for three seconds. What should she do?", options:[
+     {t:"Repeat the same question louder and a little faster, so all can hear", why:"Louder and faster makes listening harder. If people look unsure, rephrase in plainer words instead."},
+     {t:"Answer the question herself, so that the discussion doesn’t stall", why:"Filling the silence takes away thinking time. Silence often means people are preparing what to say."},
+     {t:"Wait a little longer, then rephrase or let them talk in pairs first", ok:true, why:"Waiting gives thinking time, rephrasing helps listeners who use English as a lingua franca, and pair talk gives everyone something ready to say."},
+     {t:"Name the quietest student and insist that they answer the question", why:"Inviting by name can help, but gently, and accepting a pass. Insisting puts one person under pressure."}]},
+   {id:"e1u4-cp06", lesson:"e1u4-l2", level:2, q:"Lin finds it hard to join fast seminar discussions: by the time her sentence is ready, the topic has moved on. Which plan best follows this unit’s advice?", options:[
+     {t:"Wait until the end of the seminar, after she has heard everyone’s views", why:"The end is often the hardest moment to join. The first ten minutes, before the discussion speeds up, are easier."},
+     {t:"Prepare one point and its first sentence, and use it early", ok:true, why:"A ready first sentence removes the delay, and speaking early makes it easier to speak again."},
+     {t:"Talk louder than the others so that she can take the floor", why:"Getting in politely uses phrases such as “Could I come in on that?”, not volume."},
+     {t:"Stay quiet, because participation never affects learning or grades", why:"In many universities participation is expected and sometimes graded. If joining stays hard, she can tell the tutor."}]},
+   {id:"e1u4-cp07", lesson:"e1u4-l3", level:1, q:"Pablo will say that 15 people took part, in a large lecture hall. What will most help listeners hear the number correctly?", options:[
+     {t:"Say fifTEEN clearly and show 15 on the slide", ok:true, why:"*Fifteen* and *fifty* can sound alike. Clear stress on the end, plus the figure on the slide, makes it unmistakable."},
+     {t:"Say it quickly, so that he sounds more confident", why:"Speed makes numbers harder to catch. Slow down for key information such as numbers."},
+     {t:"Stress the first syllable clearly: FIFteen", why:"FIFty stresses the first syllable. Stressing *fifteen* the same way makes the two numbers even easier to confuse."},
+     {t:"Avoid saying any numbers aloud in the talk", why:"Numbers are often essential. Round them when you speak and show exact figures on the slide."}]},
+   {id:"e1u4-cp08", lesson:"e1u4-l3", level:3, q:"Ibrahim feels much safer presenting in English with a full script. What is the best advice?", options:[
+     {t:"Use the written paragraphs from his essay as the script", why:"Essay sentences are built for reading. Listeners hear each sentence once, so a script needs spoken style."},
+     {t:"Never use a script: speaking from memory is the only good method", why:"A script is a common and reasonable support when presenting in another language, if it is prepared well."},
+     {t:"Read the text on his slides aloud, word for word", why:"Reading slides keeps his eyes off the audience and gives them nothing extra. Slides and speech should support each other."},
+     {t:"Write the script in spoken style, mark pauses and stressed words, and rehearse until he only glances at it", ok:true, why:"Short sentences, marked pauses (/) and stresses (CAPITALS), and rehearsal let him look up and talk naturally."}]},
+   {id:"e1u4-cp09", lesson:"e1u4-l4", level:2, q:"Use the stress pattern for words ending in *-ity* (as in uniVERsity, aBILity). Where does the main stress usually fall in *electricity* (e-lec-tri-ci-ty)?", options:[
+     {t:"On the first syllable, *e-*", why:"Before *-ity*, the stress usually falls on the syllable just before the ending, not at the start of the word."},
+     {t:"On the second syllable, *-lec-*", why:"Close, but the syllable just before the ending is *-tri-*, not *-lec-*."},
+     {t:"On the third syllable, *-tri-*", ok:true, why:"e-lec-TRI-ci-ty: the stress falls just before the ending, as in uni-VER-si-ty and a-BIL-i-ty."},
+     {t:"On the fourth syllable, *-ci-*", why:"The *i* of *-ity* is in this syllable, so it is part of the ending. The stress falls on the syllable before it, *-tri-*."}]},
+   {id:"e1u4-cp10", lesson:"e1u4-l4", level:3, q:"Zara has two weeks to prepare a talk for an international audience. She can work on only a few things. Which priority best fits Jenkins’s core and Field’s later findings?", options:[
+     {t:"Mastering the “th” sounds in *thin* and *this*", why:"“Th” is non-core in Jenkins’s proposal, and many established varieties use other sounds for it."},
+     {t:"Producing weak forms, such as “to” said as /tə/", why:"Jenkins found weak forms aren’t needed for being understood internationally. Recognising them helps listening, but it isn’t the priority here."},
+     {t:"Changing her accent to sound like a London or New York speaker", why:"The goal research supports is intelligibility, not nativeness. Accent and intelligibility are partly independent."},
+     {t:"Long and short vowels (ship/sheep), main stress for contrast, and the stress of her key field terms", ok:true, why:"Vowel length and main stress are core. Field (2005) showed misplaced word stress can hurt intelligibility, so key terms deserve checking too."}]},
+   {id:"e1u4-cp11", lesson:"e1u4-l5", level:3, q:"Jae-won grew up in Singapore with English as his first language at home. Which criticism of Kachru’s three circles does his case illustrate best?", options:[
+     {t:"The model sorts countries, not people", ok:true, why:"Singapore is usually placed in the outer circle, yet Jae-won is a first-language speaker. A country label doesn’t describe each person."},
+     {t:"The model puts the inner circle at the centre", why:"That is a real criticism, but his case is about a person not fitting his country’s circle."},
+     {t:"The model can’t describe written English", why:"This is not one of the criticisms in the unit. The model is about the spread and status of English."},
+     {t:"The model wrongly calls Singapore English a mistake", why:"The opposite: the model treated outer-circle Englishes as legitimate varieties with their own norms."}]},
+   {id:"e1u4-cp12", lesson:"e1u4-l5", level:1, q:"At office hours, Dr Mensah promises to send Akosua a short reading list. What should Akosua do next?", options:[
+     {t:"Email the lecturer every day until the list arrives", why:"Repeated messages are too much. One short, friendly email is enough."},
+     {t:"Note what they agreed, and send a short thank-you email", ok:true, why:"Noting the next steps while they are fresh, plus a brief thank-you, is the usual “after” step of an office-hours visit."},
+     {t:"Do nothing: lecturers dislike any email after office hours", why:"A short thank-you email is normal and can remind the lecturer of what she promised."},
+     {t:"Go back the next day and ask the same questions again", why:"The visit already answered her questions. Next she should act on what they agreed."}]}
+  ],
   codex:[
    {id:"lecture-listening", title:"Listening to lectures", aka:["lecture comprehension","lecture signposts","note-taking in lectures","abbreviations and symbols"], tags:["academic English","listening"],
     summary:"How to follow lectures in English: signposts and discourse markers, cues for importance, prediction, fast notes with symbols, and using recordings and captions.",
@@ -1108,14 +1170,14 @@ ICA.addUnit({
   bank:[
    /* ---------- Lesson 1 ---------- */
    {id:"e1u4-q01", lesson:"e1u4-l1", level:1, q:"What is a lecture signpost?", options:[
-     {t:"A phrase that shows the structure of the talk, such as “Moving on to…”", ok:true, why:"Signposts organise the talk and tell listeners where they are."},
+     {t:"A phrase that shows the structure of the talk", ok:true, why:"Signposts such as “Moving on to…” organise the talk and tell listeners where they are."},
      {t:"A key technical term the lecturer defines", why:"Technical terms are content. Signposts organise content."},
      {t:"A slide with the lecture title", why:"Slides can help, but a signpost is something the speaker says."},
-     {t:"A reading the lecturer recommends", why:"Readings are sources, not structure signals."}
+     {t:"A reading the lecturer recommends before the talk", why:"Readings are sources, not structure signals."}
    ]},
    {id:"e1u4-q02", lesson:"e1u4-l1", level:2, q:"A lecturer says: “By the way, I spent a year working in that hospital.” How should you usually treat this?", options:[
-     {t:"As an aside: note it briefly or skip it, and wait for the return to the main point", ok:true, why:"“By the way” plus a personal story usually marks a side comment, not a main point."},
-     {t:"As the lecture’s main point", why:"Main points are signalled by emphasis such as “The key point is…”. “By the way” signals the opposite."},
+     {t:"As an aside: note it briefly or skip it", ok:true, why:"“By the way” plus a personal story usually marks a side comment, not a main point. Wait for the return to the main point."},
+     {t:"As the lecture’s main point, to note in full", why:"Main points are signalled by emphasis such as “The key point is…”. “By the way” signals the opposite."},
      {t:"As a definition to copy exactly", why:"Nothing is being defined here."},
      {t:"As a sign the lecture is ending", why:"Endings sound like “To sum up…” or “That’s all for today.”"}
    ]},
@@ -1126,14 +1188,14 @@ ICA.addUnit({
      {t:"leads to", why:"“Leads to” is usually an arrow, →."}
    ]},
    {id:"e1u4-q04", lesson:"e1u4-l1", level:2, q:"Which is the best way to prepare for a lecture on a topic that’s new to you?", options:[
-     {t:"Skim the reading and slides, list key terms and check how they are pronounced", ok:true, why:"Knowing the words and their sounds in advance makes them much easier to recognise when you hear them."},
+     {t:"Skim the reading, list key terms and check their pronunciation", ok:true, why:"Skimming the reading and slides, and knowing the key words and their sounds in advance, makes them much easier to recognise when you hear them."},
      {t:"Nothing: preparing spoils the surprise", why:"Prediction makes listening easier; unexpected vocabulary is what makes lectures hard."},
      {t:"Learn the whole reading by heart", why:"Too much effort for little gain. Skimming and a key-term list are enough."},
-     {t:"Plan to record the lecture and listen to all of it twice", why:"Re-listening to everything takes a lot of time; preparing before is far more efficient."}
+     {t:"Plan to record the lecture and listen to all of it twice later", why:"Re-listening to everything takes a lot of time; preparing before is far more efficient."}
    ]},
    {id:"e1u4-q05", lesson:"e1u4-l1", level:3, q:"Fatima’s lecture notes are full sentences copied word for word, and she says she often doesn’t understand what she wrote. What is the most likely problem?", options:[
-     {t:"Writing every word leaves no attention for understanding; she should note key words and use symbols", ok:true, why:"Verbatim copying overloads attention. Compressed notes free the mind to follow the argument."},
-     {t:"Her handwriting is too slow, so she needs a faster pen", why:"Speed isn’t the main issue: even fast copying doesn’t lead to understanding."},
+     {t:"Copying every word leaves no attention for understanding", ok:true, why:"Verbatim copying overloads attention. Noting key words and using symbols frees the mind to follow the argument."},
+     {t:"Her handwriting is too slow, so she needs a faster pen or a laptop", why:"Speed isn’t the main issue: even fast copying doesn’t lead to understanding."},
      {t:"She should stop taking notes altogether", why:"Notes help memory and review; the fix is better notes, not none."},
      {t:"The lecturer must be speaking unclearly", why:"Possibly, but her copying strategy is the clearest cause, and one she can change."}
    ]},
@@ -1144,7 +1206,7 @@ ICA.addUnit({
      {t:"“Incidentally…”", why:"This signals an aside."}
    ]},
    {id:"e1u4-q07", lesson:"e1u4-l1", level:3, q:"Hana watches a recorded lecture with automatic captions. A key researcher’s name appears as a strange string of ordinary words. What should she do?", options:[
-     {t:"Check the name against the slides or reading list, because automatic captions often get names wrong", ok:true, why:"Names, technical terms and numbers are where automatic captions most often fail."},
+     {t:"Check the name against the slides or reading list", ok:true, why:"Names, technical terms and numbers are where automatic captions most often fail, so check them against another source."},
      {t:"Copy the caption exactly: captions are always correct", why:"Automatic captions make mistakes, especially with names."},
      {t:"Ignore the name; names never matter", why:"In academic work, names matter: they lead you to sources."},
      {t:"Turn off captions for the rest of the course", why:"Captions help many listeners. Checking key words is better than giving up a useful tool."}
@@ -1163,7 +1225,7 @@ ICA.addUnit({
    ]},
    /* ---------- Lesson 2 ---------- */
    {id:"e1u4-q10", lesson:"e1u4-l2", level:1, q:"What is turn-taking?", options:[
-     {t:"How people share a conversation: who speaks, when, and how they get in and out", ok:true, why:"That is the definition: the system behind who talks next."},
+     {t:"How people share a conversation: who speaks, and when", ok:true, why:"That is the definition: the system behind who talks next, and how people get in and out of a conversation."},
      {t:"Taking turns to read aloud from a textbook", why:"That is one classroom activity, not the conversational system."},
      {t:"Changing your opinion during a discussion", why:"That is changing your mind, not turn-taking."},
      {t:"A formal rule that each person speaks for exactly one minute", why:"Some activities have rules like this, but turn-taking is the general way conversations are shared."}
@@ -1187,15 +1249,15 @@ ICA.addUnit({
      {t:"It ends the discussion", why:"It invites a reply, so it keeps the discussion going."}
    ]},
    {id:"e1u4-q14", lesson:"e1u4-l2", level:3, q:"In an online seminar, Mei wants to speak but the discussion is fast and she can’t find a gap. What is the most practical option?", options:[
-     {t:"Use the raise-hand button or the chat, or a short phrase like “Could I come in here?” at a pause", ok:true, why:"Online tools and short entry phrases are normal ways to get a turn."},
+     {t:"Use the raise-hand button or chat, or ask “Could I come in here?”", ok:true, why:"Online tools and short entry phrases, used at a pause, are normal ways to get a turn."},
      {t:"Unmute and start talking over the current speaker", why:"Talking over someone online is especially confusing, because audio overlaps badly."},
      {t:"Give up and say nothing for the rest of the seminar", why:"There are easy ways in; giving up loses her contribution."},
-     {t:"Leave the meeting and email her point to everyone afterwards", why:"Possible as a last resort, but she can contribute in the meeting with the tools available."}
+     {t:"Leave the meeting and email her point to everyone in the group afterwards", why:"Possible as a last resort, but she can contribute in the meeting with the tools available."}
    ]},
    {id:"e1u4-q15", lesson:"e1u4-l2", level:2, q:"Which phrase **builds on** another person’s point?", options:[
      {t:"“To add to what Amara said, the same happened in Nairobi.”", ok:true, why:"It links a new example to Amara’s point and develops it."},
      {t:"“Sorry, I didn’t catch that.”", why:"That asks for repetition."},
-     {t:"“I disagree with Amara.”", why:"That disagrees rather than builds."},
+     {t:"“I disagree with Amara: that didn’t happen in Nairobi at all.”", why:"That disagrees rather than builds."},
      {t:"“Can we change the subject?”", why:"That moves away from the point."}
    ]},
    {id:"e1u4-q16", lesson:"e1u4-l2", level:3, q:"A student starts: “I’m sorry, this is probably a stupid idea and maybe wrong, but possibly perhaps…” What would help most?", options:[
@@ -1205,16 +1267,16 @@ ICA.addUnit({
      {t:"Speak louder", why:"Volume isn’t the problem; the wording is."}
    ]},
    {id:"e1u4-q17", lesson:"e1u4-l2", level:2, q:"What is a backchannel?", options:[
-     {t:"A small listener signal such as “mm-hm” or a nod, showing you’re following", ok:true, why:"Backchannels show attention without taking the turn."},
-     {t:"A private chat with a friend during the seminar", why:"That is a side conversation, not a backchannel in this sense."},
+     {t:"A small listener signal, such as “mm-hm” or a nod", ok:true, why:"Backchannels show you’re following, without taking the turn."},
+     {t:"A private chat with a friend during the seminar discussion", why:"That is a side conversation, not a backchannel in this sense."},
      {t:"A secret way to contact the tutor", why:"Not what the term means here."},
      {t:"Interrupting to change the topic", why:"Backchannels don’t take the turn or change the topic."}
    ]},
    {id:"e1u4-q18", lesson:"e1u4-l2", level:3, q:"Dmitri’s seminar group includes students from many countries. One student, Sione, waits to be invited before speaking. What is the fairest interpretation?", options:[
-     {t:"He may be following a different classroom norm, such as waiting to be invited; that isn’t a lack of interest", ok:true, why:"Norms about when to speak differ; silence or waiting can show respect or reflection."},
+     {t:"He may be following a different classroom norm about when to speak", ok:true, why:"Norms about when to speak differ; waiting to be invited can show respect or reflection, not a lack of interest."},
      {t:"He has nothing to say", why:"There is no evidence for this."},
      {t:"He is being rude", why:"Waiting to be invited is polite in many settings."},
-     {t:"Everyone from his country behaves this way", why:"A stereotype: people within any country vary enormously."}
+     {t:"Everyone from his country behaves this way, so it is just his culture", why:"A stereotype: people within any country vary enormously."}
    ]},
    /* ---------- Lesson 3 ---------- */
    {id:"e1u4-q19", lesson:"e1u4-l3", level:2, q:"Which sentence is correct?", options:[
@@ -1239,11 +1301,11 @@ ICA.addUnit({
      {t:"Listeners can’t re-read, and a new word might seem to mean something new", ok:true, why:"Repetition helps listeners keep track; synonyms can make them wonder whether you mean something different."},
      {t:"Synonyms are grammatically wrong in speech", why:"They aren’t wrong; they’re just harder to follow by ear."},
      {t:"Repetition makes the talk longer, which looks better", why:"Length isn’t the goal; clarity is."},
-     {t:"Audiences prefer simple vocabulary at all times", why:"Technical terms are fine; the point is consistency, not avoiding them."}
+     {t:"Audiences prefer simple, familiar vocabulary at all times, even in lectures", why:"Technical terms are fine; the point is consistency, not avoiding them."}
    ]},
    {id:"e1u4-q23", lesson:"e1u4-l3", level:3, q:"During Q&A, Oluwaseun isn’t sure what a question means. What is the best response?", options:[
-     {t:"“If I understand correctly, you’re asking whether the results apply to adults?”", ok:true, why:"Checking avoids answering the wrong question and gives a moment to think."},
-     {t:"Answer what he guesses it means, at length", why:"He may answer the wrong question and waste everyone’s time."},
+     {t:"“So you’re asking whether the results apply to adults?”", ok:true, why:"Checking avoids answering the wrong question and gives a moment to think."},
+     {t:"Answer what he guesses it means, at length, and hope it was right", why:"He may answer the wrong question and waste everyone’s time."},
      {t:"“That’s a silly question.”", why:"Dismissive, and the fault may be in his understanding, not the question."},
      {t:"Pretend he didn’t hear it", why:"Discourteous, and it loses a chance to engage."}
    ]},
@@ -1260,10 +1322,10 @@ ICA.addUnit({
      {t:"“With respect to crop changes among the farmer interviewees, the principal reason was water-related.”", why:"Dense written style and vague (“water-related”)."}
    ]},
    {id:"e1u4-q26", lesson:"e1u4-l3", level:3, q:"Ana is presenting in English for the first time and plans to begin with “Sorry, my English is not very good.” What is the best advice?", options:[
-     {t:"Skip the apology and start with a clear greeting and topic; correct any slip calmly if it happens", ok:true, why:"The apology makes the audience listen for problems instead of ideas. Calm self-correction is normal for all speakers."},
+     {t:"Skip the apology and start with a clear greeting and topic", ok:true, why:"The apology makes the audience listen for problems instead of ideas. If a slip happens, correct it calmly: self-correction is normal for all speakers."},
      {t:"Keep it, and repeat it before every slide", why:"Repeating it would keep drawing attention away from her ideas."},
      {t:"Avoid presenting until her accent sounds native", why:"A native-like accent isn’t needed; clear structure and pace matter more."},
-     {t:"Speak as fast as possible so mistakes go unnoticed", why:"Speed makes talks harder for everyone to follow."}
+     {t:"Speak as fast as possible so that any mistakes go unnoticed", why:"Speed makes talks harder for everyone to follow."}
    ]},
    {id:"e1u4-q27", lesson:"e1u4-l3", level:2, q:"Which describes a change correctly with a noun?", options:[
      {t:"“There was a sharp rise of 15% in applications.”", ok:true, why:"Adjective “sharp” before the noun “rise”, and “of” for the size with a noun."},
@@ -1282,7 +1344,7 @@ ICA.addUnit({
      {t:"Speech can be strongly accented and still fully intelligible", ok:true, why:"Accent and intelligibility were related but partly independent."},
      {t:"Any accent makes speech unintelligible", why:"The study found the opposite for many speakers."},
      {t:"Only native speakers are intelligible", why:"Second-language speakers in the study were often fully understood."},
-     {t:"Accent and intelligibility are the same thing", why:"The study showed they are distinct dimensions."}
+     {t:"Accent and intelligibility are the same thing, measured in two ways", why:"The study showed they are distinct dimensions."}
    ]},
    {id:"e1u4-q30", lesson:"e1u4-l4", level:2, q:"In Jenkins’s Lingua Franca Core, which of these is a **core** feature?", options:[
      {t:"The difference between long and short vowels, as in “sheep” and “ship”", ok:true, why:"Vowel length is core: losing it can change one word into another."},
@@ -1297,9 +1359,9 @@ ICA.addUnit({
      {t:"information", why:"in-for-MA-tion: third-syllable stress, before -tion."}
    ]},
    {id:"e1u4-q32", lesson:"e1u4-l4", level:2, q:"“We need to reCORD the interviews.” Why is “record” stressed on the second syllable here?", options:[
-     {t:"It is a verb, and many two-syllable noun–verb pairs stress the second syllable in the verb", ok:true, why:"a REcord (noun) / to reCORD (verb)."},
+     {t:"It is a verb, and verbs like this stress the second syllable", ok:true, why:"In many two-syllable noun–verb pairs, the verb stresses the second syllable: a REcord (noun) / to reCORD (verb)."},
      {t:"It is a noun", why:"Here it follows “to” and takes an object: it’s a verb. The noun is REcord."},
-     {t:"All English words are stressed on the second syllable", why:"Many words are stressed on the first or later syllables."},
+     {t:"All two-syllable English words are stressed on the second syllable", why:"Many words are stressed on the first or later syllables."},
      {t:"Because it comes at the end of the sentence", why:"Position in the sentence doesn’t change word stress."}
    ]},
    {id:"e1u4-q33", lesson:"e1u4-l4", level:3, q:"Ana asks: “Is the exam in Room 12?” Priya answers: “No, it’s in Room 20.” Which word should Priya stress most?", options:[
@@ -1315,10 +1377,10 @@ ICA.addUnit({
      {t:"“After the workshop most participants felt / more / confident.”", why:"Pauses come in the wrong places and break the final phrase apart."}
    ]},
    {id:"e1u4-q35", lesson:"e1u4-l4", level:3, q:"Kenji says “thin” with a sound close to “t”, as many speakers of established varieties do. His tutor says he must fix this before presenting. What does the research in this lesson suggest?", options:[
-     {t:"“Th” is non-core in Jenkins’s proposal; substitutes are usually understood, so other features are a better priority", ok:true, why:"Jenkins found “th” substitutes rarely caused breakdowns, and many varieties use t/d or f/v."},
+     {t:"“Th” is non-core for Jenkins; other features are a better priority", ok:true, why:"Jenkins found that “th” substitutes rarely caused breakdowns, so they are usually understood, and many varieties use t/d or f/v."},
      {t:"He cannot be understood until he masters “th”", why:"Listeners generally understand common substitutes for “th”."},
      {t:"He should stop presenting in English", why:"No feature of his accent requires that."},
-     {t:"Only American speakers pronounce “th” correctly", why:"Many varieties pronounce “th” differently, and no single variety is the correct one."}
+     {t:"Only American speakers pronounce “th” correctly, so he should copy them", why:"Many varieties pronounce “th” differently, and no single variety is the correct one."}
    ]},
    {id:"e1u4-q36", lesson:"e1u4-l4", level:2, q:"Two learner dictionaries both list REsearch and reSEARCH for the noun “research”. What should you conclude?", options:[
      {t:"Both stress patterns are accepted", ok:true, why:"When a dictionary lists two patterns, either is fine."},
@@ -1328,8 +1390,8 @@ ICA.addUnit({
    ]},
    /* ---------- Lesson 5 ---------- */
    {id:"e1u4-q37", lesson:"e1u4-l5", level:1, q:"What are office hours?", options:[
-     {t:"Regular times when a lecturer or teaching assistant is available for students’ questions", ok:true, why:"Some universities call them student hours or consultation hours."},
-     {t:"The lecturer’s private time, which students should never interrupt", why:"Office hours exist precisely for students."},
+     {t:"Regular times when a lecturer is available for students’ questions", ok:true, why:"A lecturer or teaching assistant holds them. Some universities call them student hours or consultation hours."},
+     {t:"The lecturer’s private working time, which students should never interrupt", why:"Office hours exist precisely for students."},
      {t:"Opening times of the university’s administration office", why:"That’s a different service."},
      {t:"Compulsory extra classes", why:"Most lecturers don’t require attendance; office hours are a resource."}
    ]},
@@ -1346,9 +1408,9 @@ ICA.addUnit({
      {t:"“Dear Sir or Madam”", why:"She knows the lecturer’s name; using it is more appropriate."}
    ]},
    {id:"e1u4-q40", lesson:"e1u4-l5", level:1, q:"What is English as a lingua franca (ELF)?", options:[
-     {t:"English used for communication between people who don’t share a first language", ok:true, why:"That is the core of the definition."},
+     {t:"English used between people who don’t share a first language", ok:true, why:"That is the core of the definition: English used for communication between speakers of different first languages."},
      {t:"The English spoken in England", why:"That is one variety, not ELF."},
-     {t:"A simplified artificial language based on English", why:"ELF is real English in use, not a designed language."},
+     {t:"A simplified artificial language that was designed from English", why:"ELF is real English in use, not a designed language."},
      {t:"English used only by native speakers", why:"ELF is defined by speakers of different first languages."}
    ]},
    {id:"e1u4-q41", lesson:"e1u4-l5", level:2, q:"In Kachru’s 1985 model, which circle is Singapore usually placed in?", options:[
@@ -1364,14 +1426,14 @@ ICA.addUnit({
      {t:"They were invented in 2020", why:"The model dates from 1985."}
    ]},
    {id:"e1u4-q43", lesson:"e1u4-l5", level:3, q:"In an international project group, Ben (a first-language English speaker) uses idioms like “let’s touch base” and speaks fast. Others look confused. What would help most?", options:[
-     {t:"Ben slows down, uses plain words instead of idioms, and checks understanding", ok:true, why:"Accommodation is an ELF skill that first-language speakers need too."},
-     {t:"The others should learn all English idioms", why:"Unrealistic, and communication is a shared responsibility."},
+     {t:"Ben slows down, uses plain words and checks understanding", ok:true, why:"Slowing down, replacing idioms with plain words and checking understanding is accommodation, an ELF skill that first-language speakers need too."},
+     {t:"The others should learn all common English idioms before the next meeting", why:"Unrealistic, and communication is a shared responsibility."},
      {t:"Ben should speak louder", why:"Volume doesn’t fix speed or idioms."},
      {t:"Nothing: native speakers are always easiest to understand", why:"Jenkins argued native accents and styles aren’t necessarily the most intelligible internationally."}
    ]},
    {id:"e1u4-q44", lesson:"e1u4-l5", level:3, q:"Hana writes her essay with US spelling, but her university is in Australia. Her course has no spelling rule. What is the best advice?", options:[
-     {t:"US spelling is fine if she uses it consistently; check whether the course or any journal sets a style", ok:true, why:"Consistency matters most; both systems are accepted unless a style is set."},
-     {t:"She must change to Australian spelling", why:"Not required unless the course sets a style."},
+     {t:"US spelling is fine if she uses it consistently", ok:true, why:"Consistency matters most. Both systems are accepted unless the course or a journal sets a style, so she should check that."},
+     {t:"She must change to Australian spelling because she studies in Australia", why:"Not required unless the course sets a style."},
      {t:"Mixing US and UK spelling shows range", why:"Mixing looks careless; choose one."},
      {t:"Only UK spelling is academic", why:"US spelling is fully acceptable in academic writing."}
    ]},

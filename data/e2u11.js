@@ -83,7 +83,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u11-l1-x1", type:"mcq", q:"Dmitri says: “Human rights law says everyone may live in any country they like.” Which reply is accurate?", options:[
-      {t:"Human rights law gives a right to leave any country and to return to your own, but no general right to enter another; the main exception is protection from being returned to persecution.", ok:true, why:"Right. UDHR Article 13 and ICCPR Article 12 cover leaving and returning; entry is mostly up to the receiving state, limited by rules such as non-refoulement."},
+      {t:"There is a right to leave and to return home, but no general right to enter.", ok:true, why:"Right. There is no general right to enter another country; the main exception is protection from being returned to persecution. UDHR Article 13 and ICCPR Article 12 cover leaving and returning; entry is mostly up to the receiving state, limited by rules such as non-refoulement."},
       {t:"He is right: the Universal Declaration gives everyone a right to enter any country.", why:"The Declaration gives a right to *leave* any country and to *return* to one’s own, not to enter others."},
       {t:"Human rights law says nothing at all about movement between countries.", why:"It does: Article 13 (leaving and returning) and Article 14 (seeking asylum) of the Universal Declaration are about exactly that."},
       {t:"Only citizens of rich countries have a right to leave their country.", why:"The right to leave applies to everyone, whatever their nationality."}
@@ -111,7 +111,7 @@ ICA.addUnit({
       ["Nansen passport","An identity certificate for refugees without valid passports, from 1922","An early tool of the international refugee regime."]
     ]},
     {id:"e2u11-l1-x5", type:"mcq", q:"Hana reads: “Country X has the most powerful passport in the world.” What is the most useful first question to ask?", options:[
-      {t:"Which index, which edition and date, and what does it count as visa-free?", ok:true, why:"Right. Indexes are made by private firms with different methods, and rankings change several times a year."},
+      {t:"Which index made the ranking, and when?", ok:true, why:"Right. Check the edition and what the index counts as visa-free. Indexes are made by private firms with different methods, and rankings change several times a year."},
       {t:"Is the passport printed on stronger paper?", why:"“Power” here means how many destinations holders can enter without a visa in advance, not the physical document."},
       {t:"Did the United Nations approve the ranking?", why:"No UN body publishes these rankings; private companies do."},
       {t:"How many pages does the passport have?", why:"Page count has nothing to do with visa-free access."}
@@ -130,8 +130,8 @@ ICA.addUnit({
       {t:"Describing migration mainly as a security threat is called securitisation.", flag:false, why:"Accurate: that is the IR term, applied to borders as border securitisation."}
     ]},
     {id:"e2u11-l1-x7", type:"mcq", q:"A newspaper column calls arriving asylum seekers “an invasion” and demands an emergency military response. In securitisation terms, what is happening?", options:[
-      {t:"The writer is presenting migration as an existential threat to justify extraordinary measures.", ok:true, why:"Right. That is the core move of securitisation: emergency language that makes unusual measures seem necessary. Spotting it doesn’t settle whether any policy is right or wrong."},
-      {t:"The writer is giving a neutral statistical description.", why:"Words like “invasion” and calls for emergency action frame the issue; they are not neutral statistics."},
+      {t:"The writer is framing migration as an existential threat.", ok:true, why:"Right. The aim is to justify extraordinary measures. That is the core move of securitisation: emergency language that makes unusual measures seem necessary. Spotting it doesn’t settle whether any policy is right or wrong."},
+      {t:"The writer is giving a neutral statistical description of arrivals.", why:"Words like “invasion” and calls for emergency action frame the issue; they are not neutral statistics."},
       {t:"The writer is applying the 1951 Refugee Convention.", why:"The Convention defines refugees and their rights; it says nothing about invasions."},
       {t:"The writer is describing a visa waiver.", why:"Visa waivers are about travel without visas, unrelated to this framing."}
     ]}
@@ -230,7 +230,7 @@ ICA.addUnit({
       {t:"Fatima, a refugee, uses a shortened route to apply for citizenship after years of residence.", b:2, why:"An application route for adults, even an easier one, is naturalisation."}
     ]},
     {id:"e2u11-l2-x2", type:"mcq", q:"In an invented case, a child is born in Country A, which grants citizenship only by descent. The parents are citizens of Country B, which grants citizenship only to children born on its own territory. What is the risk?", options:[
-      {t:"The child may be left stateless, because neither country’s rule covers them.", ok:true, why:"Right. A has no jus soli and B has no jus sanguinis, so neither law reaches the child. Many countries have safeguards (the 1961 Statelessness Convention asks for them), but gaps like this are a real cause of statelessness."},
+      {t:"The child may be left stateless.", ok:true, why:"Right. Neither country’s rule covers the child: A has no jus soli and B has no jus sanguinis, so neither law reaches the child. Many countries have safeguards (the 1961 Statelessness Convention asks for them), but gaps like this are a real cause of statelessness."},
       {t:"The child automatically gets both citizenships.", why:"That would happen if both rules applied. Here neither does."},
       {t:"The child gets Country A’s citizenship because they were born there.", why:"Country A grants citizenship only by descent, and the parents are not A’s citizens."},
       {t:"The child gets Country B’s citizenship through the parents.", why:"Country B grants citizenship only by birth on its territory, and the child was born in A."}
@@ -247,7 +247,7 @@ ICA.addUnit({
       ["Naturalisation","Thandiwe passes a language test and becomes a citizen of her new country","Gaining citizenship after birth through an application."]
     ]},
     {id:"e2u11-l2-x5", type:"mcq", q:"Which statement about dual citizenship is accurate?", options:[
-      {t:"Most countries now accept it at least in some cases, but some, such as China, do not recognise it.", ok:true, why:"Right. The long-term trend has been towards acceptance, with important exceptions."},
+      {t:"Most countries accept it in some cases, but some, like China, don’t.", ok:true, why:"Right. The long-term trend has been towards acceptance, with important exceptions."},
       {t:"It is banned by international law.", why:"No treaty bans it. Each state decides whether to accept it."},
       {t:"Every country has always allowed it.", why:"For much of the 20th century many states took citizenship away from people who naturalised elsewhere."},
       {t:"India’s Overseas Citizenship is full dual citizenship with the right to vote.", why:"It gives long-term visa rights, not citizenship or the vote. India does not allow dual citizenship."}
@@ -407,8 +407,8 @@ ICA.addUnit({
       {t:"Someone who has no passport", why:"Lacking documents is common for refugees and is no reason for exclusion."}
     ]},
     {id:"e2u11-l3-x7", type:"mcq", q:"A country is not party to the 1951 Convention. Can it lawfully send a person back to a place where they face a real risk of torture?", options:[
-      {t:"No: the Convention against Torture bans such returns without exception for its parties, and many experts treat non-refoulement as customary international law binding all states.", ok:true, why:"Right. Protection from return to torture comes from human rights law as well as refugee law, and customary law binds states that haven’t signed a treaty."},
-      {t:"Yes, because the 1951 Convention doesn’t apply to it.", why:"Refugee law is not the only source. Human rights treaties and customary law also forbid such returns."},
+      {t:"No: human rights law and customary law also ban such returns.", ok:true, why:"Right. The Convention against Torture bans such returns without exception for its parties, and many experts treat non-refoulement as customary international law binding all states. Protection from return to torture comes from human rights law as well as refugee law, and customary law binds states that haven’t signed a treaty."},
+      {t:"Yes, because the 1951 Refugee Convention doesn’t apply to that country.", why:"Refugee law is not the only source. Human rights treaties and customary law also forbid such returns."},
       {t:"Yes, if the person entered without a visa.", why:"The ban on returning people to torture has no exceptions for irregular entry."},
       {t:"Only if the UN Security Council approves.", why:"No Security Council approval is involved; the rule binds states directly."}
     ]}
@@ -502,8 +502,8 @@ ICA.addUnit({
       {t:"An appeal or review can follow a refusal", why:"Most systems allow an appeal before a decision is final."}
     ]},
     {id:"e2u11-l4-x2", type:"mcq", q:"Ravi’s asylum interview contains small inconsistencies about dates, but his account is detailed and matches reports on his country. What does UNHCR guidance suggest?", options:[
-      {t:"Weigh the whole account and give him the benefit of the doubt if it is generally credible, bearing in mind that trauma can affect memory.", ok:true, why:"Right. UNHCR asks decision-makers to assess credibility overall and give the benefit of the doubt to generally credible accounts."},
-      {t:"Reject the claim automatically because of any inconsistency.", why:"Minor inconsistencies are common, especially after trauma; guidance warns against automatic rejection."},
+      {t:"Weigh the whole account and give him the benefit of the doubt.", ok:true, why:"Right. Trauma can affect memory. UNHCR asks decision-makers to assess credibility overall and give the benefit of the doubt to generally credible accounts."},
+      {t:"Reject the claim automatically because of any inconsistency at all.", why:"Minor inconsistencies are common, especially after trauma; guidance warns against automatic rejection."},
       {t:"Accept the claim without considering any evidence.", why:"Evidence still matters: the benefit of the doubt applies to accounts that are generally credible."},
       {t:"Ask the police of the country he fled to confirm his story.", why:"Contacting the alleged persecutor could put him and his family in danger, and breaches confidentiality."}
     ]},
@@ -521,8 +521,8 @@ ICA.addUnit({
       ["Community sponsorship","Groups of residents support a refugee family’s arrival and settling in","A complementary pathway Canada has used since the late 1970s."]
     ]},
     {id:"e2u11-l4-x5", type:"mcq", q:"Which statement about the Global Compact on Refugees is accurate?", options:[
-      {t:"It was affirmed by the UN General Assembly in December 2018 and is not legally binding; its aim is more predictable responsibility-sharing.", ok:true, why:"Right. 181 states voted in favour; the United States and Hungary voted against; three abstained."},
-      {t:"It is a binding treaty that replaced the 1951 Convention.", why:"It is a political commitment that builds on the 1951 Convention; it doesn’t replace it."},
+      {t:"It isn’t binding; it aims at predictable responsibility-sharing.", ok:true, why:"Right. The UN General Assembly affirmed it in December 2018; its aim is more predictable responsibility-sharing. 181 states voted in favour; the United States and Hungary voted against; three abstained."},
+      {t:"It is a binding treaty that replaced the 1951 Refugee Convention.", why:"It is a political commitment that builds on the 1951 Convention; it doesn’t replace it."},
       {t:"Every UN member voted for it.", why:"The United States and Hungary voted against, and three states abstained."},
       {t:"It only covers migrant workers.", why:"That is closer to the Global Compact for Migration. This one is about refugees."}
     ]},
@@ -634,7 +634,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u11-l5-x1", type:"mcq", q:"Which statement about the Global Compact for Migration is accurate?", options:[
-      {t:"It was adopted in Marrakech in December 2018, has 23 objectives, is not legally binding and reaffirms states’ right to set their own migration policy.", ok:true, why:"Right. The General Assembly endorsed it on 19 December 2018 by 152 votes to 5, with 12 abstentions."},
+      {t:"It has 23 objectives and is not legally binding.", ok:true, why:"Right. It was adopted in Marrakech in December 2018 and reaffirms states’ right to set their own migration policy. The General Assembly endorsed it on 19 December 2018 by 152 votes to 5, with 12 abstentions."},
       {t:"It is a binding treaty that obliges states to admit a quota of migrants.", why:"It is non-binding and sets no admission quotas."},
       {t:"It was adopted unanimously by every UN member.", why:"Five states voted against and twelve abstained."},
       {t:"It only covers refugees.", why:"Refugees have their own compact; the GCM covers migration in all its forms."}
@@ -675,7 +675,7 @@ ICA.addUnit({
       {t:"Whether the UN Security Council has approved it", why:"Regional free-movement protocols don’t need Security Council approval."}
     ]},
     {id:"e2u11-l5-x7", type:"mcq", q:"Which statement about remittances is best supported by the World Bank’s figures?", options:[
-      {t:"Recorded remittances to low- and middle-income countries were about $685 billion in 2024, more than foreign direct investment and aid combined, and the true total is higher.", ok:true, why:"Right. That is the World Bank/KNOMAD estimate (December 2024); informal transfers aren’t fully recorded."},
+      {t:"Recorded remittances exceeded foreign investment and aid combined.", ok:true, why:"Right. Recorded remittances to low- and middle-income countries were about $685 billion in 2024, more than foreign direct investment and aid combined, and the true total is higher. That is the World Bank/KNOMAD estimate (December 2024); informal transfers aren’t fully recorded."},
       {t:"Remittances mostly go from poor countries to rich ones.", why:"The large recorded flows go to low- and middle-income countries."},
       {t:"The global average cost of sending money has already reached the 3 per cent SDG target.", why:"The 2025 global average was about 6.4 per cent, more than double the target."},
       {t:"Remittances are counted exactly, so the figures never change.", why:"Recent-year figures are estimates that are later revised, and informal transfers are missed."}
@@ -710,6 +710,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u11-q02","e2u11-q05","e2u11-q11","e2u11-q14","e2u11-q20","e2u11-q22","e2u11-q26","e2u11-q30","e2u11-q33","e2u11-q38","e2u11-q41","e2u11-q44"],
+  cpBank:[
+   {id:"e2u11-cp01", lesson:"e2u11-l1", level:1, q:"Ana, a citizen of Country P, has lived abroad for 20 years. She now wants to move back to P. Under human rights law, can P refuse to let her return?", options:[
+     {t:"Yes: after 20 years away, P may treat her like a foreigner", why:"Ana is not a foreigner in P. Human rights law protects every person’s right to return to their own country."},
+     {t:"No: she has a right to return to her own country", ok:true, why:"Correct. UDHR Article 13 and ICCPR Article 12 protect everyone’s right to leave any country and to return to their own, however long they have been away."},
+     {t:"Only if she first gets a visa from P", why:"A citizen doesn’t need a visa to enter her own country. Visas are permissions states give to non-nationals."},
+     {t:"Only if she was also born in P", why:"The right to return depends on it being her own country, through her citizenship, not on where she was born."}]},
+   {id:"e2u11-cp02", lesson:"e2u11-l2", level:1, q:"Kai is born in Country Z, which gives citizenship only by descent. Both his parents are citizens of Country W, which passes citizenship from parent to child wherever the child is born. Which citizenship does Kai most likely have?", options:[
+     {t:"Z’s, because he was born there", why:"Z gives citizenship only by descent (jus sanguinis), so birth on its territory isn’t enough."},
+     {t:"Both, because birth and descent always add up", why:"Kai would hold both only if Z gave citizenship by birth. It doesn’t."},
+     {t:"None: he is stateless", why:"Kai isn’t left in a gap. W’s rule of descent covers him, because his parents are W’s citizens."},
+     {t:"W’s, through his parents (jus sanguinis)", ok:true, why:"Right. W passes citizenship from parent to child wherever the child is born, so Kai is a citizen of W by descent."}]},
+   {id:"e2u11-cp03", lesson:"e2u11-l4", level:1, q:"A group of residents in a small town raises money and agrees to help a refugee family with housing, schooling and jobs for their first year after arrival. What is this an example of?", options:[
+     {t:"Community sponsorship", ok:true, why:"Yes. In community sponsorship, groups of residents support a refugee family’s arrival. It is a complementary pathway, adding routes beyond the limited resettlement places."},
+     {t:"Voluntary repatriation", why:"Voluntary repatriation is refugees returning home by free choice once it is safe. This family is arriving in a new country."},
+     {t:"Temporary protection", why:"Temporary protection is quick, group-based protection for a limited time during mass arrivals. It isn’t organised by local residents."},
+     {t:"Externalisation", why:"Externalisation is a state acting beyond its borders to prevent or manage arrivals. This is local support for a family that has arrived."}]},
+   {id:"e2u11-cp04", lesson:"e2u11-l1", level:2, q:"Lior’s passport lets him visit Country K without a visa for short trips. But before he flies, K requires him to fill in an online form and receive approval. What is this?", options:[
+     {t:"A residence permit", why:"A residence permit sets out how long someone may stay and what they may do on a longer stay. Lior is making a short visit."},
+     {t:"A visa on arrival at the airport", why:"A visa on arrival is given at the border. Lior’s approval comes online before he travels."},
+     {t:"An electronic travel authorisation", ok:true, why:"Correct. Some destinations ask visa-free travellers to get an electronic travel authorisation online before flying. It is quicker than a visa but still a check before travel."},
+     {t:"The visa waiver arrangement itself", why:"The visa waiver is what lets Lior visit without a visa. The extra online approval that visa-free travellers must get before flying is a separate check."}]},
+   {id:"e2u11-cp05", lesson:"e2u11-l2", level:2, q:"Meera holds an “Overseas Citizen” card from her parents’ country of origin. It gives her long-term visa rights there, but not the right to vote. Is she a citizen of that country?", options:[
+     {t:"Yes, because the word “citizen” is on the card", why:"The name can mislead. What matters is whether the status gives an unconditional right to live in the country and to vote."},
+     {t:"Yes, because her family’s ancestry in that country makes her a citizen", why:"Ancestry may open an easier route, but each state decides who its nationals are. Ancestry alone doesn’t make someone a citizen."},
+     {t:"No: a visa status without the vote falls short of citizenship", ok:true, why:"Right. “Overseas citizenship” statuses can sound like citizenship but usually aren’t. Check for the vote and an unconditional right to live there; this card gives neither."},
+     {t:"No, because nobody may hold rights in two countries", why:"Many countries accept dual citizenship, and statuses like this give rights in a second country. The question is whether this card is citizenship."}]},
+   {id:"e2u11-cp06", lesson:"e2u11-l3", level:2, q:"Joseph flees across a border from a region where a foreign army’s invasion has caused widespread disorder. Nobody targeted him personally. He reaches an African country that is party to the OAU Refugee Convention. Which statement fits best?", options:[
+     {t:"He cannot be a refugee anywhere, because no one targeted him", why:"The 1951 definition may not cover him, but the OAU Convention adds people fleeing external aggression or events seriously disturbing public order."},
+     {t:"He can qualify under the OAU Convention’s wider definition", ok:true, why:"Correct. Article I(2) adds people who flee external aggression, occupation, foreign domination or events seriously disturbing public order."},
+     {t:"He qualifies under the 1951 Convention, so the OAU text isn’t needed", why:"The 1951 definition needs a well-founded fear of persecution for one of five reasons. Fleeing general disorder may not meet that test."},
+     {t:"He is an internally displaced person", why:"IDPs haven’t crossed an international border. Joseph has left his country."}]},
+   {id:"e2u11-cp07", lesson:"e2u11-l4", level:2, q:"A sudden war sends a million people into neighbouring countries within weeks. A regional bloc gives them group protection for a limited period, without examining each claim first. What tool is this?", options:[
+     {t:"Resettlement", why:"Resettlement is the selected transfer of refugees to a third country that admits them permanently. This is quick protection in the countries they reached."},
+     {t:"Subsidiary protection", why:"Subsidiary protection is decided case by case for individuals who don’t meet the 1951 definition. Here no individual claims are examined first."},
+     {t:"Local integration", why:"Local integration is a durable solution with secure long-term status. This protection is for a limited time."},
+     {t:"Temporary protection", ok:true, why:"Yes. Temporary protection gives quick, group-based protection for a limited time during mass arrivals, as the EU did in March 2022."}]},
+   {id:"e2u11-cp08", lesson:"e2u11-l5", level:2, q:"Sending $200 costs a $4 fee plus an exchange-rate margin of 2%. What is the total cost as a percentage of $200, and how does it compare with SDG target 10.c?", options:[
+     {t:"2%; already below the 3% target, so the goal is met", why:"This counts only the margin. Add the $4 fee: $4 + $4 = $8, which is 4% of $200."},
+     {t:"4%; above the 3% target, below the 5% level", ok:true, why:"Correct. The margin is 2% of $200 = $4; with the $4 fee the total is $8, or 4%. SDG 10.c aims for under 3% and no corridors above 5%."},
+     {t:"6%; above both the 3% target and the 5% level", why:"Check the sum: $4 fee + $4 margin = $8, which is 4% of $200, not 6%."},
+     {t:"$4; the fee is the only real cost", why:"The exchange-rate margin is also a cost. The true cost is the fee plus the margin."}]},
+   {id:"e2u11-cp09", lesson:"e2u11-l3", level:3, q:"Country R says: “There is no right to enter our country, so we may turn back any boat at sea, even if people on board say they fear persecution.” What is the best response?", options:[
+     {t:"R is right: a state’s power over its borders has no limits", why:"Border control is a sovereign power, but international law limits it. Non-refoulement is one of the clearest limits."},
+     {t:"R is wrong: everyone has a right to enter any country they choose", why:"There is no general right to enter another country. The problem with R’s claim lies elsewhere."},
+     {t:"There is no general right to enter, but non-refoulement bars returning refugees to persecution in any manner, including at sea", ok:true, why:"Right. Article 33 covers return “in any manner whatsoever”, and it applies wherever a state exercises control, as in *Hirsi Jamaa v. Italy*."},
+     {t:"Non-refoulement applies only once people are inside the country’s territory", why:"It applies at the border and wherever a state exercises control, including at sea."}]},
+   {id:"e2u11-cp10", lesson:"e2u11-l2", level:3, q:"Nadia was born stateless in Country S and has always lived there. She faces persecution in S because of her religion, and flees to Country T. Can she be a refugee under the 1951 Convention?", options:[
+     {t:"No: only people with a nationality can be refugees", why:"The definition explicitly covers people without a nationality who are outside their country of former habitual residence."},
+     {t:"Yes: the definition covers stateless people outside their country of former habitual residence who fear persecution for a Convention reason", ok:true, why:"Correct. Religion is one of the five reasons, and for a stateless person the test looks at the country where she habitually lived."},
+     {t:"She is an internally displaced person", why:"Nadia has crossed into Country T, so she isn’t internally displaced."},
+     {t:"She automatically becomes a citizen of T on arrival", why:"Citizenship rules are set by each state. Arriving in T doesn’t make her a citizen, though T may make naturalisation easier for refugees later."}]},
+   {id:"e2u11-cp11", lesson:"e2u11-l4", level:3, q:"There are serious reasons to believe an asylum applicant committed war crimes. He would face a real risk of torture if sent home. What follows?", options:[
+     {t:"He must be recognised as a refugee, because he fears serious harm", why:"Article 1F excludes people for whom there are serious reasons to believe they committed war crimes, even if they fear persecution."},
+     {t:"Once excluded, he can be sent anywhere, including home", why:"Exclusion from refugee status doesn’t remove all protection. The ban on return to torture has no exceptions."},
+     {t:"He is excluded because of his nationality", why:"Exclusion is decided case by case on serious reasons about a person’s own acts. It is never a list of nationalities."},
+     {t:"He is excluded from refugee status, but the Convention against Torture still bars returning him to torture", ok:true, why:"Right. Article 1F stops the regime protecting perpetrators, but human rights law, such as the Convention against Torture, bans return to a real risk of torture without exception."}]},
+   {id:"e2u11-cp12", lesson:"e2u11-l5", level:3, q:"Lukas, a Norwegian citizen, moves to Portugal for a job. Later he drives from Spain into France with no passport check. Then he flies to Ireland, where his passport is checked. Which explanation is correct?", options:[
+     {t:"Norway is in the EU, so all three trips are covered by the same rules", why:"Norway is outside the EU. It takes part in EU free movement and is in the Schengen area."},
+     {t:"Free movement lets him work in Portugal; Schengen removes routine checks between Spain and France; Ireland is outside Schengen, so his passport is checked", ok:true, why:"Correct. EU free movement extends to Norway, so he may work in Portugal. Border-free travel is the separate Schengen arrangement, which Ireland is not part of."},
+     {t:"Ireland checks his passport because it isn’t in the EU", why:"Ireland is in the EU. It checks passports because it is outside the Schengen area."},
+     {t:"Free movement means no passport checks anywhere in Europe", why:"Free movement is about rights to live and work. Removing passport checks is a separate arrangement, Schengen, which not every country joins."}]}
+  ],
   codex:[
    {id:"borders-and-sovereignty", title:"Borders, passports and visas", aka:["border control","passport","visa","right to leave","carrier sanctions","border securitisation","mobility divide"], tags:["migration studies","borders","governance"],
     summary:"What borders do, why controlling entry is tied to sovereignty and limited by law, and how passports, visas and border securitisation work.",
@@ -1016,10 +1078,10 @@ ICA.addUnit({
      {t:"To receive a passport from any country", why:"Passports are issued by one’s own state of nationality."},
      {t:"To travel without any documents", why:"The Declaration says nothing of the kind; states may require documents."}]},
    {id:"e2u11-q02", lesson:"e2u11-l1", level:2, q:"Tomás holds a valid tourist visa, but the officer at the airport refuses him entry. In most countries, is that possible?", options:[
-     {t:"Yes: a visa lets you travel and ask to be admitted, but the border officer usually makes the final decision.", ok:true, why:"Right. A visa is not a guarantee of entry in most systems."},
+     {t:"Yes: a visa lets you ask to enter, but officers decide.", ok:true, why:"Right. A visa lets you travel and ask to be admitted, but the border officer usually makes the final decision. It is not a guarantee of entry in most systems."},
      {t:"No: a visa is a legal guarantee of entry.", why:"In most countries the decision at the border remains with the officer."},
      {t:"Only if the UN approves the refusal.", why:"The UN plays no role in individual entry decisions."},
-     {t:"No: visas can only be cancelled before the flight.", why:"Entry can be refused at the border, for example if the purpose of the trip seems different from the visa."}]},
+     {t:"No: visas can only be cancelled before the flight leaves.", why:"Entry can be refused at the border, for example if the purpose of the trip seems different from the visa."}]},
    {id:"e2u11-q03", lesson:"e2u11-l1", level:1, q:"What did the 1920 League of Nations conference in Paris do for passports?", options:[
      {t:"It agreed a standard booklet format, the ancestor of today’s passport", ok:true, why:"Correct: 32 pages, 15.5 by 10.5 centimetres, with the bearer’s description."},
      {t:"It abolished passports in Europe", why:"It did the opposite, standardising a document that had become compulsory during the war."},
@@ -1031,39 +1093,39 @@ ICA.addUnit({
      {t:"A visa waiver between European states", why:"It was an identity document for refugees, not a visa arrangement."},
      {t:"The first e-passport with a chip", why:"Chips came at the end of the 20th century, not in 1922."}]},
    {id:"e2u11-q05", lesson:"e2u11-l1", level:3, q:"An airline refuses to let Nour board because her papers for the destination seem incomplete. What does this show about modern border control?", options:[
-     {t:"Control often happens before travel, partly because carriers can be fined for transporting people without valid documents.", ok:true, why:"Right. Carrier sanctions turn check-in desks far away into part of the border."},
+     {t:"Control often happens before travel, through carriers.", ok:true, why:"Right. Carriers can be fined for transporting people without valid documents. These carrier sanctions turn check-in desks far away into part of the border."},
      {t:"Airlines make the final decision on entry into countries.", why:"Airlines decide whether to carry passengers; entry decisions belong to the destination state."},
      {t:"Border control only happens at the line.", why:"This example shows control happening before travel."},
      {t:"Nour has been refused asylum.", why:"Nobody has examined any asylum claim; this is a document check before boarding."}]},
    {id:"e2u11-q06", lesson:"e2u11-l1", level:2, q:"Which description of passport indexes is accurate?", options:[
-     {t:"Private firms rank passports by how many destinations holders can enter without a visa in advance, using differing methods.", ok:true, why:"Right. Methods differ (for example on visas on arrival), and rankings change often."},
+     {t:"Private firms rank them by visa-free access.", ok:true, why:"Right. They count how many destinations holders can enter without a visa in advance. Methods differ (for example on visas on arrival), and rankings change often."},
      {t:"The UN publishes one official ranking every year.", why:"No UN body publishes such rankings."},
      {t:"They measure the physical quality of passports.", why:"“Power” here refers to visa-free access, not the document itself."},
      {t:"They rank countries by how many migrants they admit.", why:"They count where a passport’s holders can go, not who a country admits."}]},
    {id:"e2u11-q07", lesson:"e2u11-l1", level:2, q:"Researchers describe a “global mobility divide”. What does it refer to?", options:[
-     {t:"Visa-free travel has grown mainly for citizens of richer countries, while many people from poorer countries still face visa requirements.", ok:true, why:"Correct: studies of visa policies, such as Mau and colleagues (2015), describe this pattern."},
-     {t:"Rich and poor countries are separated by physical walls everywhere.", why:"The term describes unequal visa access, not walls."},
+     {t:"Visa-free travel has grown mainly for citizens of richer countries.", ok:true, why:"Correct. Many people from poorer countries still face visa requirements. Studies of visa policies, such as Mau and colleagues (2015), describe this pattern."},
+     {t:"Rich and poor countries are separated by physical walls almost everywhere.", why:"The term describes unequal visa access, not walls."},
      {t:"Mobile phone access differs between countries.", why:"Here “mobility” means international travel, not mobile phones."},
      {t:"Everyone now travels freely without visas.", why:"Access remains very unequal."}]},
    {id:"e2u11-q08", lesson:"e2u11-l1", level:3, q:"A politician says: “Our border is under attack; we must deploy the army now.” Using the lesson’s concepts, what is the best analysis?", options:[
-     {t:"It is a securitising move: framing migration as an existential threat to justify extraordinary measures. Analysts would then examine the evidence and the effects.", ok:true, why:"Right. Naming the move doesn’t decide whether the policy is right; it helps you analyse the framing."},
+     {t:"It is a securitising move.", ok:true, why:"Right. It frames migration as an existential threat to justify extraordinary measures; analysts would then examine the evidence and the effects. Naming the move doesn’t decide whether the policy is right; it helps you analyse the framing."},
      {t:"It is a neutral statistical statement.", why:"“Under attack” is threat framing, not a statistic."},
      {t:"It proves that migrants are dangerous.", why:"A speech is a claim, not evidence; the lesson asks you to check the evidence."},
      {t:"It is an example of jus soli.", why:"Jus soli is a citizenship rule, unrelated to this framing."}]},
    {id:"e2u11-q09", lesson:"e2u11-l1", level:3, q:"Javier can visit a country for 90 days without a visa, but takes a paid job there during his stay. What is the most likely problem?", options:[
-     {t:"Visa-free visits usually allow tourism or business meetings, not paid work, so he may be breaching his conditions of stay.", ok:true, why:"Right. Permission to enter comes with conditions; work usually needs a work visa or permit."},
-     {t:"There is no problem: visa-free means no rules.", why:"Visa-free entry still comes with conditions about purpose and length of stay."},
+     {t:"Visa-free visits usually don’t allow paid work.", ok:true, why:"Right. They usually allow tourism or business meetings, so he may be breaching his conditions of stay. Permission to enter comes with conditions; work usually needs a work visa or permit."},
+     {t:"There is no problem: visa-free means no rules at all.", why:"Visa-free entry still comes with conditions about purpose and length of stay."},
      {t:"He becomes a citizen after 90 days.", why:"Citizenship requires birth rules or naturalisation, not a short visit."},
      {t:"He is automatically a refugee.", why:"Refugee status depends on a well-founded fear of persecution, not on working."}]},
    /* ---- Lesson 2 ---- */
    {id:"e2u11-q10", lesson:"e2u11-l2", level:1, q:"What does jus sanguinis mean?", options:[
-     {t:"Citizenship passed from a parent to a child, wherever the child is born", ok:true, why:"Correct: “right of blood”."},
+     {t:"Citizenship passed from a parent to a child", ok:true, why:"Correct: “right of blood”, wherever the child is born."},
      {t:"Citizenship given to anyone born on the territory", why:"That is jus soli, “right of the soil”."},
      {t:"Citizenship gained after years of residence", why:"That is naturalisation."},
      {t:"Citizenship of two countries at once", why:"That is dual citizenship."}]},
    {id:"e2u11-q11", lesson:"e2u11-l2", level:2, q:"Lucía’s parents are visiting Mexico when she is born there. Neither parent is Mexican or a diplomat. What is most likely?", options:[
-     {t:"She is Mexican by birth, because Mexico, like most countries in the Americas, follows jus soli.", ok:true, why:"Right. Birth on the territory is enough in most of the Americas, with narrow exceptions such as diplomats’ children."},
-     {t:"She can’t be Mexican because her parents aren’t.", why:"That would be true under pure jus sanguinis, but Mexico uses jus soli."},
+     {t:"She is Mexican by birth, because Mexico follows jus soli.", ok:true, why:"Right. Birth on the territory is enough in most of the Americas, with narrow exceptions such as diplomats’ children."},
+     {t:"She can’t be Mexican, because neither of her parents is Mexican.", why:"That would be true under pure jus sanguinis, but Mexico uses jus soli."},
      {t:"She must live in Mexico for ten years first.", why:"Jus soli gives citizenship at birth, without a residence period."},
      {t:"She is automatically stateless.", why:"She gets Mexican citizenship at birth, and may also get her parents’ by descent."}]},
    {id:"e2u11-q12", lesson:"e2u11-l2", level:1, q:"Since 1983, what decides whether a child born in the United Kingdom is British at birth?", options:[
@@ -1077,7 +1139,7 @@ ICA.addUnit({
      {t:"Owning a house and a car", why:"Property ownership isn’t a standard requirement, though some states ask for means of support."},
      {t:"Approval by the UN", why:"Naturalisation is decided by each state."}]},
    {id:"e2u11-q14", lesson:"e2u11-l2", level:3, q:"A child is born in a country without jus soli, to parents whose own country passes citizenship only to children born on its territory. Which concern does this raise?", options:[
-     {t:"The child may be stateless, because neither law covers them.", ok:true, why:"Right. Gaps between nationality laws are a known cause of statelessness, which is why safeguards exist."},
+     {t:"The child may be left stateless.", ok:true, why:"Right. Neither law covers the child. Gaps between nationality laws are a known cause of statelessness, which is why safeguards exist."},
      {t:"The child will have two citizenships.", why:"That needs both rules to apply; here neither does."},
      {t:"The child will be a refugee.", why:"Statelessness and refugee status are different; this child hasn’t fled persecution."},
      {t:"There is no concern: every child has a citizenship.", why:"Millions of people are stateless, often because of gaps like this."}]},
@@ -1087,23 +1149,23 @@ ICA.addUnit({
      {t:"Tourists on short visits", why:"Denizens are long-term residents, not short-term visitors."},
      {t:"People with no nationality", why:"That is statelessness."}]},
    {id:"e2u11-q16", lesson:"e2u11-l2", level:2, q:"Which statement about dual citizenship is accurate as of 2026?", options:[
-     {t:"Most countries accept it in some cases; China does not recognise it, and India offers an overseas status instead.", ok:true, why:"Right. The trend is towards acceptance, with important exceptions."},
+     {t:"Most countries accept it, with some exceptions.", ok:true, why:"Right. China does not recognise it, and India offers an overseas status instead. The trend is towards acceptance."},
      {t:"International law forbids it.", why:"No treaty forbids it; each state decides."},
-     {t:"Germany still forbids it in all cases.", why:"Germany has generally accepted dual citizenship since June 2024."},
+     {t:"Germany still forbids it in all cases, as before.", why:"Germany has generally accepted dual citizenship since June 2024."},
      {t:"No country in Africa allows it.", why:"Kenya (since 2010) and Ghana are among African countries that allow it."}]},
    {id:"e2u11-q17", lesson:"e2u11-l2", level:3, q:"Mei has lived in a country for 15 years as a permanent resident. She uses public health care, works and pays taxes, but cannot vote in national elections. Which statement best describes her position?", options:[
-     {t:"She is a denizen: secure residence and many rights, but not full citizenship.", ok:true, why:"Right. Hammar’s concept fits; whether she should get the vote is a normative debate."},
-     {t:"She is a citizen because she pays taxes.", why:"Paying taxes doesn’t make someone a citizen."},
+     {t:"She is a denizen, without full citizenship.", ok:true, why:"Right. She has secure residence and many rights. Hammar’s concept fits; whether she should get the vote is a normative debate."},
+     {t:"She is a citizen because she pays taxes and works.", why:"Paying taxes doesn’t make someone a citizen."},
      {t:"She is stateless.", why:"She presumably has a nationality elsewhere; statelessness means none at all."},
      {t:"She is an asylum seeker.", why:"Nothing suggests she has asked for international protection."}]},
    {id:"e2u11-q18", lesson:"e2u11-l2", level:2, q:"What happened to Germany’s naturalisation rules in 2024–25?", options:[
-     {t:"A 2024 reform cut the usual residence period to five years and accepted dual citizenship; a three-year fast route it added was abolished in October 2025.", ok:true, why:"Correct. The five-year rule and acceptance of dual citizenship remained."},
+     {t:"Germany cut residence to five years and accepted dual citizenship.", ok:true, why:"Correct. The 2024 reform also added a three-year fast route, which was abolished in October 2025. The five-year rule and acceptance of dual citizenship remained."},
      {t:"Germany introduced unconditional jus soli for all children born there.", why:"Germany’s birthright rule depends on a parent’s lawful residence."},
      {t:"Germany banned naturalisation.", why:"It changed the rules but didn’t ban naturalisation."},
      {t:"Germany required ten years of residence.", why:"The usual requirement became five years, not ten."}]},
    /* ---- Lesson 3 ---- */
    {id:"e2u11-q19", lesson:"e2u11-l3", level:1, q:"What did the 1967 Protocol change?", options:[
-     {t:"It removed the 1951 Convention’s limits to events before 1951 and the option to cover only Europe.", ok:true, why:"Correct. It made the refugee definition universal in time and place."},
+     {t:"It removed the Convention’s time and place limits.", ok:true, why:"Correct. It removed the limit to events before 1951 and the option to cover only Europe. It made the refugee definition universal in time and place."},
      {t:"It created UNHCR.", why:"UNHCR was created by the General Assembly in 1950 and began work in 1951."},
      {t:"It added climate change as a reason for refugee status.", why:"No refugee treaty includes climate change as a ground."},
      {t:"It abolished non-refoulement.", why:"Non-refoulement remains the Convention’s cornerstone."}]},
@@ -1118,17 +1180,17 @@ ICA.addUnit({
      {t:"A stateless person", why:"Nothing suggests she lacks a nationality."},
      {t:"A denizen", why:"Denizenship is about long-term residents abroad without citizenship."}]},
    {id:"e2u11-q22", lesson:"e2u11-l3", level:3, q:"Dmitri asks for asylum at a border. Before examining his claim, officials plan to send him straight back to the country he fled. Why is this a problem?", options:[
-     {t:"Non-refoulement protects people while their claims are pending, because a refugee is a refugee before being recognised; rejection at the border counts.", ok:true, why:"Right. Return “in any manner whatsoever” includes rejection at the frontier."},
+     {t:"Non-refoulement protects him while his claim is pending.", ok:true, why:"Right. A refugee is a refugee before being recognised. Return “in any manner whatsoever” includes rejection at the frontier."},
      {t:"There is no problem: protection only starts after recognition.", why:"Recognition is declaratory; protection from return applies before it."},
      {t:"The problem is only that he lacks a visa.", why:"Lacking a visa doesn’t remove protection from return."},
      {t:"The UN must approve every return.", why:"The issue is the state’s own obligation, not UN approval."}]},
    {id:"e2u11-q23", lesson:"e2u11-l3", level:1, q:"What does the OAU Refugee Convention (1969) add to the 1951 definition?", options:[
-     {t:"People fleeing external aggression, occupation, foreign domination or events seriously disturbing public order", ok:true, why:"Correct: Article I(2)."},
+     {t:"People fleeing aggression, occupation or major disorder", ok:true, why:"Correct: Article I(2) covers external aggression, occupation, foreign domination or events seriously disturbing public order."},
      {t:"People moving for better jobs", why:"Economic migration is not covered by either definition."},
      {t:"Only people from Europe", why:"That was an option in the original 1951 Convention, not the OAU Convention."},
-     {t:"Nothing: it repeats the 1951 Convention word for word", why:"It keeps the 1951 definition and adds a wider second paragraph."}]},
+     {t:"Nothing new: it repeats the 1951 Convention word for word", why:"It keeps the 1951 definition and adds a wider second paragraph."}]},
    {id:"e2u11-q24", lesson:"e2u11-l3", level:2, q:"Which statement about the Cartagena Declaration (1984) is accurate?", options:[
-     {t:"It is non-binding, but many Latin American countries have written its wider definition into their national laws.", ok:true, why:"Correct. Its influence comes through national legislation."},
+     {t:"It is non-binding, but many states wrote it into law.", ok:true, why:"Correct. Many Latin American countries have written its wider definition into their national laws. Its influence comes through national legislation."},
      {t:"It is a binding treaty ratified by every country in the world.", why:"It is a declaration from a regional meeting, not a global treaty."},
      {t:"It narrowed the refugee definition.", why:"It recommends a wider definition, adding generalised violence and massive human rights violations."},
      {t:"It created the European asylum system.", why:"It concerns Latin America, especially Central America."}]},
@@ -1138,25 +1200,25 @@ ICA.addUnit({
      {t:"1984, with the Cartagena Declaration", why:"Cartagena is a Latin American declaration."},
      {t:"It has never been adopted.", why:"It was adopted in May 2024 and applies from 12 June 2026."}]},
    {id:"e2u11-q26", lesson:"e2u11-l3", level:3, q:"A recognised refugee returns voluntarily to live permanently in her home country after conditions there change fundamentally. What does the Convention provide?", options:[
-     {t:"Her refugee status can cease, because protection is no longer needed (Article 1C).", ok:true, why:"Right. Voluntary re-establishment and fundamental, lasting change are cessation grounds."},
+     {t:"Her refugee status can cease (Article 1C).", ok:true, why:"Right. Protection is no longer needed. Voluntary re-establishment and fundamental, lasting change are cessation grounds."},
      {t:"She is excluded for having committed a crime.", why:"Exclusion (Article 1F) concerns serious crimes, not returning home."},
      {t:"She remains a refugee forever, whatever happens.", why:"The Convention provides for status to end when protection is no longer needed."},
      {t:"She becomes stateless.", why:"She keeps her nationality; she simply no longer needs international protection."}]},
    {id:"e2u11-q27", lesson:"e2u11-l3", level:2, q:"Why do many experts say even states that haven’t joined the 1951 Convention must respect non-refoulement?", options:[
-     {t:"Because it is widely considered customary international law, and human rights treaties such as the Convention against Torture also ban such returns.", ok:true, why:"Right. Customary law binds states regardless of treaty membership."},
+     {t:"Because it is widely considered customary international law.", ok:true, why:"Right. Human rights treaties such as the Convention against Torture also ban such returns. Customary law binds states regardless of treaty membership."},
      {t:"Because the Security Council passed a resolution requiring it every year.", why:"Its force comes from customary and treaty law, not annual resolutions."},
      {t:"Because all states are automatically parties to the 1951 Convention.", why:"149 states are parties to the Convention or Protocol (November 2026), not all."},
      {t:"Because UNHCR can punish states that break it.", why:"UNHCR supervises and advises; it doesn’t punish states."}]},
    /* ---- Lesson 4 ---- */
    {id:"e2u11-q28", lesson:"e2u11-l4", level:1, q:"Who carries out most refugee status determination worldwide?", options:[
-     {t:"National governments, through asylum authorities and courts", ok:true, why:"Correct. UNHCR does it in some countries without a working national system."},
+     {t:"National governments", ok:true, why:"Correct. They work through asylum authorities and courts. UNHCR does it in some countries without a working national system."},
      {t:"The UN Security Council", why:"The Security Council doesn’t decide individual claims."},
      {t:"Airlines", why:"Airlines check documents; they don’t decide asylum claims."},
      {t:"The International Court of Justice", why:"The ICJ decides disputes between states, not individual asylum claims."}]},
    {id:"e2u11-q29", lesson:"e2u11-l4", level:2, q:"What does prima facie recognition mean?", options:[
-     {t:"Recognising a whole group as refugees on first appearance, without full individual interviews, when the reasons for flight are clear", ok:true, why:"Correct. It is common in large movements, especially in Africa."},
+     {t:"Recognising a whole group as refugees at once", ok:true, why:"Correct. It happens on first appearance, without full individual interviews, when the reasons for flight are clear. It is common in large movements, especially in Africa."},
      {t:"Refusing all claims from a country", why:"It is a way of recognising, not refusing."},
-     {t:"Recognising someone only after ten years", why:"It is fast, group-based recognition."},
+     {t:"Recognising someone only after ten years of waiting", why:"It is fast, group-based recognition."},
      {t:"Granting citizenship at birth", why:"That is a citizenship rule, unrelated to RSD."}]},
    {id:"e2u11-q30", lesson:"e2u11-l4", level:3, q:"Hana faces a real risk of serious harm from indiscriminate violence in an armed conflict at home, but no one targets her for any Convention reason. Under EU law, which status fits best?", options:[
      {t:"Subsidiary protection, a form of complementary protection", ok:true, why:"Right. EU subsidiary protection covers serious individual threats from indiscriminate violence in armed conflict."},
@@ -1169,38 +1231,38 @@ ICA.addUnit({
      {t:"Visas, passports and permits", why:"These are documents, not durable solutions."},
      {t:"Jus soli, jus sanguinis and naturalisation", why:"These are citizenship rules."}]},
    {id:"e2u11-q32", lesson:"e2u11-l4", level:2, q:"Which description of resettlement is accurate?", options:[
-     {t:"The selected transfer of refugees from a first country of asylum to a third country that agrees to admit them permanently", ok:true, why:"Correct. UNHCR usually identifies people; the receiving state decides."},
+     {t:"Moving refugees on to a third country that admits them", ok:true, why:"Correct. Selected refugees move from a first country of asylum to a third country that agrees to admit them permanently. UNHCR usually identifies people; the receiving state decides."},
      {t:"Returning refugees to their country of origin", why:"That is voluntary repatriation."},
      {t:"Building new houses in a refugee camp", why:"Resettlement means moving to a third country."},
-     {t:"Moving within one’s own country after a disaster", why:"That is internal displacement."}]},
+     {t:"Moving within one’s own country after a disaster strikes", why:"That is internal displacement."}]},
    {id:"e2u11-q33", lesson:"e2u11-l4", level:3, q:"About 40,000 refugees of one nationality have lived in a low-income host country for seven years. How would UNHCR classify this?", options:[
      {t:"As a protracted refugee situation", ok:true, why:"Right: 25,000 or more refugees of the same nationality, in exile for five or more consecutive years in a low- or middle-income host country."},
      {t:"As temporary protection", why:"That is a legal status for mass arrivals, not a description of long exile."},
      {t:"As a resettlement quota", why:"Resettlement is a solution, not a classification of the situation."},
      {t:"As cessation", why:"Cessation means refugee status has ended."}]},
    {id:"e2u11-q34", lesson:"e2u11-l4", level:1, q:"How did the UN General Assembly vote on affirming the Global Compact on Refugees on 17 December 2018?", options:[
-     {t:"181 in favour, 2 against (the United States and Hungary), 3 abstentions", ok:true, why:"Correct. The Dominican Republic, Eritrea and Libya abstained."},
+     {t:"181 in favour, 2 against, 3 abstentions", ok:true, why:"Correct. The United States and Hungary voted against; the Dominican Republic, Eritrea and Libya abstained."},
      {t:"Unanimously", why:"Two states voted against and three abstained."},
      {t:"152 in favour, 5 against, 12 abstentions", why:"That was the vote on the Global Compact for Migration two days later."},
      {t:"It was never put to the General Assembly.", why:"The Assembly affirmed it on 17 December 2018."}]},
    {id:"e2u11-q35", lesson:"e2u11-l4", level:2, q:"What do UNHCR’s 2012 Detention Guidelines say about detaining asylum seekers?", options:[
-     {t:"Seeking asylum is not unlawful, and detention should be a necessary and proportionate last resort.", ok:true, why:"Correct. They also encourage alternatives to detention."},
-     {t:"All asylum seekers should be detained until a decision.", why:"The guidelines say the opposite: detention should be exceptional."},
+     {t:"Detention should be a necessary, proportionate last resort.", ok:true, why:"Correct. Seeking asylum is not unlawful. They also encourage alternatives to detention."},
+     {t:"All asylum seekers should be detained until a decision is made.", why:"The guidelines say the opposite: detention should be exceptional."},
      {t:"Detention is a punishment for irregular entry.", why:"Immigration detention is administrative, and Article 31 limits penalties for irregular entry."},
      {t:"Children should be detained with priority.", why:"UNHCR’s position is that children should not be detained for immigration purposes."}]},
    {id:"e2u11-q36", lesson:"e2u11-l4", level:3, q:"A student essay says: “Externalisation obviously works and everyone who opposes it is naive.” What is the main weakness?", options:[
-     {t:"It states a contested claim as fact and dismisses the other side; researchers disagree about deterrence, and critics raise legal and human rights concerns.", ok:true, why:"Right. A fair account gives evidence and arguments on each side."},
+     {t:"It treats a contested claim as fact and dismisses critics.", ok:true, why:"Right. Researchers disagree about deterrence, and critics raise legal and human rights concerns. A fair account gives evidence and arguments on each side."},
      {t:"It is too short.", why:"Length isn’t the issue; one-sidedness is."},
      {t:"It uses the word “externalisation”, which is not a real term.", why:"It is a standard term in migration research."},
      {t:"Nothing: it is a neutral summary.", why:"Words like “obviously” and “naive” take a side."}]},
    /* ---- Lesson 5 ---- */
    {id:"e2u11-q37", lesson:"e2u11-l5", level:1, q:"Which statement about the Global Compact for Migration is accurate?", options:[
-     {t:"It is non-binding, has 23 objectives and reaffirms states’ sovereign right to set their migration policy.", ok:true, why:"Correct. It was endorsed by the General Assembly on 19 December 2018 as a political framework, not a treaty."},
+     {t:"It is non-binding and has 23 objectives.", ok:true, why:"Correct. It reaffirms states’ sovereign right to set their migration policy. It was endorsed by the General Assembly on 19 December 2018 as a political framework, not a treaty."},
      {t:"It is a treaty that obliges states to accept migrants.", why:"It is non-binding and sets no obligation to admit."},
      {t:"It covers only refugees.", why:"It covers migration in all its forms; refugees have their own compact."},
      {t:"It was adopted in 1990.", why:"It dates from December 2018; 1990 is the year of the Migrant Workers Convention."}]},
    {id:"e2u11-q38", lesson:"e2u11-l5", level:2, q:"What is striking about who has ratified the UN Migrant Workers Convention?", options:[
-     {t:"Its parties (60 as of November 2026) are mostly countries of origin; the main destination countries in Western Europe, the United States, Canada and the Gulf have not ratified it.", ok:true, why:"Correct. Scholars offer several explanations for this pattern."},
+     {t:"Its parties are mostly countries of origin.", ok:true, why:"Correct. It has 60 parties (November 2026); the main destination countries in Western Europe, the United States, Canada and the Gulf have not ratified it. Scholars offer several explanations for this pattern."},
      {t:"Every UN member has ratified it.", why:"It has 60 parties, far fewer than the UN’s membership."},
      {t:"Only destination countries have ratified it.", why:"It is the reverse: mostly countries of origin."},
      {t:"It has never entered into force.", why:"It entered into force on 1 July 2003."}]},
@@ -1210,18 +1272,18 @@ ICA.addUnit({
      {t:"The worker’s trade union", why:"Residence depended on the sponsor, not a union."},
      {t:"Nothing: workers had full freedom to change jobs", why:"Restrictions on changing jobs were a central feature."}]},
    {id:"e2u11-q40", lesson:"e2u11-l5", level:2, q:"What did Qatar’s laws of 30 August 2020 do?", options:[
-     {t:"Let workers change jobs without an employer’s no objection certificate and set a minimum wage for all workers", ok:true, why:"Correct. The ILO said this effectively dismantled kafala; enforcement has remained a concern for rights groups."},
+     {t:"Let workers change jobs and set a minimum wage", ok:true, why:"Correct. Workers no longer needed an employer’s no objection certificate, and the minimum wage covers all workers. The ILO said this effectively dismantled kafala; enforcement has remained a concern for rights groups."},
      {t:"Introduced kafala for the first time", why:"Kafala existed long before; these laws reformed it."},
      {t:"Banned all foreign workers", why:"The laws changed workers’ rights; they didn’t ban migration."},
-     {t:"Ratified the UN Migrant Workers Convention", why:"Qatar has not ratified that convention."}]},
+     {t:"Ratified the UN Migrant Workers Convention in full", why:"Qatar has not ratified that convention."}]},
    {id:"e2u11-q41", lesson:"e2u11-l5", level:3, q:"Priya is an Irish citizen. She moves to Belgium for a job, and on a later trip drives from Belgium into the Netherlands without a passport check. Which arrangements does she use?", options:[
-     {t:"EU free movement for the job, and the Schengen area for the check-free drive", ok:true, why:"Right. Ireland is outside Schengen, but Belgium and the Netherlands are both in it, and EU free movement gives her the right to work in Belgium."},
-     {t:"Schengen for both, because Ireland is in Schengen", why:"Ireland is in the EU but not in Schengen. Her right to work comes from EU free movement."},
+     {t:"EU free movement for the job, Schengen for the drive", ok:true, why:"Right. Ireland is outside Schengen, but Belgium and the Netherlands are both in it, and EU free movement gives her the right to work in Belgium."},
+     {t:"Schengen for both, because Ireland is in the Schengen area", why:"Ireland is in the EU but not in Schengen. Her right to work comes from EU free movement."},
      {t:"The ECOWAS protocol", why:"ECOWAS is a West African regime."},
      {t:"Naturalisation in Belgium", why:"She doesn’t need to naturalise to work in another EU country."}]},
    {id:"e2u11-q42", lesson:"e2u11-l5", level:2, q:"What is the status of the African Union Free Movement Protocol (adopted January 2018)?", options:[
-     {t:"It is not in force: it needs 15 ratifications and had 4 by mid-2026.", ok:true, why:"Correct. Many states have signed it, but few have ratified."},
-     {t:"It has been in force across Africa since 2018.", why:"It needs 15 ratifications to enter into force, and had 4 by mid-2026."},
+     {t:"It is not in force: it lacks enough ratifications.", ok:true, why:"Correct. It needs 15 ratifications and had 4 by mid-2026. Many states have signed it, but few have ratified."},
+     {t:"It has been in force across all of Africa since 2018.", why:"It needs 15 ratifications to enter into force, and had 4 by mid-2026."},
      {t:"It was replaced by the Schengen area.", why:"Schengen is European and unrelated."},
      {t:"It applies only to ECOWAS members.", why:"It is an AU protocol for the whole continent; ECOWAS has its own 1979 protocol."}]},
    {id:"e2u11-q43", lesson:"e2u11-l5", level:1, q:"What is the SDG target for remittance costs?", options:[
@@ -1235,7 +1297,7 @@ ICA.addUnit({
      {t:"They cost the same.", why:"A costs $12 and B costs $10."},
      {t:"It can’t be worked out.", why:"Fee plus margin gives the total: $12 for A, $10 for B."}]},
    {id:"e2u11-q45", lesson:"e2u11-l5", level:2, q:"Why are recorded remittance figures thought to understate the true total?", options:[
-     {t:"Money carried by hand or sent through informal networks isn’t fully counted.", ok:true, why:"Correct. Recorded figures cover formal channels; the latest year is also an estimate, revised later."},
+     {t:"Informal transfers aren’t fully counted.", ok:true, why:"Correct. Money carried by hand or sent through informal networks is missed. Recorded figures cover formal channels; the latest year is also an estimate, revised later."},
      {t:"Because banks deliberately hide all transfers", why:"Formal transfers are recorded; the gap comes mainly from informal channels."},
      {t:"Because remittances are counted only every ten years", why:"The World Bank publishes estimates at least yearly."},
      {t:"They don’t: figures are exact.", why:"Measurement gaps are well documented."}]}

@@ -1,6 +1,6 @@
-/* Track 3 · Unit 10 · Open data, FAIR and data ethics */
+/* Track 3 · Unit 11 · Open data, FAIR and data ethics */
 ICA.addUnit({
-  id:"t3u10", track:"t3", n:10, title:"Open data, FAIR and data ethics", icon:"🌐",
+  id:"t3u10", track:"t3", n:11, title:"Open data, FAIR and data ethics", icon:"🌐",
   blurb:"Find trustworthy open data from statistics offices, international bodies, cities and research repositories; read its licence and cite it properly; share your own data the FAIR and safe way; and ask who data serve, who they leave out and who gets to decide.",
   goals:[
     "Explain what makes data open under the Open Definition, and find data from national statistics offices, international organisations, government portals, research repositories and search tools",
@@ -137,9 +137,9 @@ ICA.addUnit({
       {t:"Full dataset available only by paid request; a 100-row sample is free.", flag:true, why:"Openness requires access to the whole work at no more than a reasonable reproduction cost, ideally a free download. A free sample isn’t enough."}
     ]},
     {id:"t3u10-l1-x4", type:"mcq", q:"Which statement about Google Dataset Search is accurate?", options:[
-      {t:"It indexes descriptions that publishers add to their pages, and links you to where the data live; it doesn’t check quality or licences.", ok:true, why:"Right. It relies on schema.org Dataset markup from publishers, which can be incomplete or wrong, so you still judge each dataset yourself."},
+      {t:"It indexes publishers’ descriptions and links to the data.", ok:true, why:"Right. It doesn’t check quality or licences. It relies on schema.org Dataset markup from publishers, which can be incomplete or wrong, so you still judge each dataset yourself."},
       {t:"It stores verified copies of every public dataset.", why:"It’s an index of descriptions, not an archive, and it doesn’t verify datasets."},
-      {t:"Only datasets with an open licence can appear in it.", why:"Any publisher can describe a dataset with markup, whatever its licence."},
+      {t:"Only datasets with an open licence are allowed to appear in it.", why:"Any publisher can describe a dataset with markup, whatever its licence."},
       {t:"A dataset that doesn’t appear in it doesn’t exist.", why:"A common reason a dataset is missing is that its page has no markup. Always check the producer’s own site too."}
     ]},
     {id:"t3u10-l1-x5", type:"order", q:"Put Tomás’s search for rainfall data for his region in a sensible order.", items:[
@@ -150,7 +150,7 @@ ICA.addUnit({
       {t:"Download from the original, noting the version or date he downloaded it", why:"Recording when and where he got it lets him cite it and lets others repeat his work."}
     ]},
     {id:"t3u10-l1-x6", type:"mcq", q:"Kenji finds a Kaggle dataset of national happiness scores, labelled CC0 by the person who uploaded it. He wants to use it in a published report. What should he do?", options:[
-      {t:"Find the original source the uploader copied from, check its terms and documentation, and use and cite that original.", ok:true, why:"Right. The uploader may not have had the right to release someone else’s data as CC0, and the original has the definitions and version details he’ll need."},
+      {t:"Find and check the original source, and cite that.", ok:true, why:"Right. Check the original’s terms and documentation. The uploader may not have had the right to release someone else’s data as CC0, and the original has the definitions and version details he’ll need."},
       {t:"Use it freely: CC0 means no conditions.", why:"CC0 only works if the person applying it holds the rights. A copied dataset’s real terms are set by its original publisher."},
       {t:"Cite Kaggle as the publisher of the data.", why:"Kaggle hosts the file; it didn’t produce the scores. Cite the producer of the data you actually rely on."},
       {t:"Avoid it entirely: data on Kaggle are never accurate.", why:"Many Kaggle datasets are fine and useful for practice. The issue is checking provenance and licence, not banning a site."}
@@ -268,10 +268,10 @@ ICA.addUnit({
       {t:"Regions follow the 2019 boundaries.", flag:false, why:"Documenting boundaries is good practice; it helps you compare like with like."}
     ]},
     {id:"t3u10-l2-x4", type:"mcq", q:"Recorded thefts in a district rose 20% in the year a simple online reporting form was introduced. What is the most careful conclusion?", options:[
-      {t:"Reporting may have become easier, so the rise could be partly or wholly in reporting, not in thefts.", ok:true, why:"Right. Recorded crime is administrative data: it counts what reaches police records. A change in the recording process can change the numbers. A victimisation survey could help check."},
+      {t:"The rise may be in reporting, not in thefts.", ok:true, why:"Right. Reporting became easier, so the rise could be partly or wholly in reporting. Recorded crime is administrative data: it counts what reaches police records. A change in the recording process can change the numbers. A victimisation survey could help check."},
       {t:"Thefts definitely rose by 20%.", why:"That treats recorded crime as a count of all crime, which it isn’t."},
       {t:"The online form caused more thefts.", why:"Nothing suggests the form changed behaviour by thieves. It changed how easily victims could report."},
-      {t:"The data are useless and should be ignored.", why:"They’re still useful, with the limitation stated. Understanding how they were made is the point."}
+      {t:"The recorded data are now useless and should be ignored.", why:"They’re still useful, with the limitation stated. Understanding how they were made is the point."}
     ]},
     {id:"t3u10-l2-x5", type:"match", q:"Match each question to where you’d usually find the answer.", pairs:[
       ["What does the column `hh_size` mean?","The data dictionary or codebook","The codebook explains every variable and code."],
@@ -281,7 +281,7 @@ ICA.addUnit({
       ["Which regions and years are included?","The coverage section of the metadata","Metadata states the population, area and period covered."]
     ]},
     {id:"t3u10-l2-x6", type:"mcq", q:"Lucía finds that the population of Porto Lindo is 0.9 million in one source and 3.2 million in another. What should she check first?", options:[
-      {t:"Whether each figure covers the same area: the municipality, the urban area or the metropolitan region.", ok:true, why:"Right. Different area definitions are the most common reason city populations differ, and the gap here is far too big for rounding or one year’s growth."},
+      {t:"Whether both figures cover the same area.", ok:true, why:"Right. One may be the municipality, another the urban area or the metropolitan region. Different area definitions are the most common reason city populations differ, and the gap here is far too big for rounding or one year’s growth."},
       {t:"Which source is newer, and use that one.", why:"Date matters, but no city grows from 0.9 to 3.2 million in a year or two. The definitions differ."},
       {t:"Average the two figures.", why:"Averaging two different definitions gives a number that describes nothing."},
       {t:"Whichever has more decimal places, since it’s more precise.", why:"Decimal places show how a number is displayed, not whether it measures what you need."}
@@ -399,9 +399,9 @@ ICA.addUnit({
       {t:"https://doi.org/10.5281/zenodo.1234500 (the concept DOI, for all versions)", flag:true, why:"Writing the DOI as a link is right, but this is the wrong DOI. She analysed version 3, so she should cite version 3’s own DOI and add “(Version 3)” after the title. The concept DOI sends readers to whatever the latest version is. (Both DOIs here are invented.)"}
     ]},
     {id:"t3u10-l3-x5", type:"mcq", q:"Ana finds a useful CSV on a personal web page. There is no licence and no terms. What can she safely assume?", options:[
-      {t:"Nothing about reuse: she should find out where the data came from and ask the owner or the original publisher.", ok:true, why:"Right. Without a licence, the default rules of copyright and database law apply, and they vary by country. Tracing the source may reveal an original under a clear licence."},
+      {t:"Nothing about reuse: she should trace the source and ask.", ok:true, why:"Right. She should ask the owner or the original publisher. Without a licence, the default rules of copyright and database law apply, and they vary by country. Tracing the source may reveal an original under a clear licence."},
       {t:"It’s public domain, because it’s on a public website.", why:"Being online doesn’t put something in the public domain."},
-      {t:"She may reuse it if she credits the page.", why:"Credit is what CC BY asks; without a licence, there’s no permission to rely on."},
+      {t:"She may reuse it freely as long as she credits the web page.", why:"Credit is what CC BY asks; without a licence, there’s no permission to rely on."},
       {t:"Data can never be protected, so she may do anything.", why:"Facts may not be copyrightable in many places, but database rights and creative elements can still apply."}
     ]},
     {id:"t3u10-l3-x6", type:"mcq", q:"Priya downloads unemployment figures from a statistics portal that updates monthly and has no version numbers. What should her citation include so others can check her numbers?", options:[
@@ -522,9 +522,9 @@ ICA.addUnit({
       {t:"Cite the DOI in your paper’s data availability statement and in the README", why:"Now readers can find exactly what you shared."}
     ]},
     {id:"t3u10-l4-x4", type:"mcq", q:"Sione surveyed all 40 adults on a small island about their health. His file has exact ages, jobs and the street each person lives on, but no names. Consent allowed sharing “anonymised data”. What is the best plan?", options:[
-      {t:"Not share this file openly. Coarsen it heavily (age bands, no streets, broad job groups) and check the risk, or deposit it with controlled access, while publishing the description.", ok:true, why:"Right. In a community of 40, exact age, job and street identify almost everyone, so the data aren’t anonymised yet. Reducing detail and controlling access keep the promise made in the consent."},
+      {t:"Not openly: coarsen it heavily or use controlled access.", ok:true, why:"Right. Use age bands, no streets and broad job groups, check the risk, and publish the description. In a community of 40, exact age, job and street identify almost everyone, so the data aren’t anonymised yet. Reducing detail and controlling access keep the promise made in the consent."},
       {t:"Share it openly: there are no names.", why:"Indirect identifiers identify people easily in a small community, and health data are especially sensitive."},
-      {t:"Share it openly under CC BY-NC so no one can misuse it.", why:"A licence controls reuse rights, not privacy. Anyone could still read the file and recognise neighbours."},
+      {t:"Share it openly under CC BY-NC, so that no one is allowed to misuse it.", why:"A licence controls reuse rights, not privacy. Anyone could still read the file and recognise neighbours."},
       {t:"Delete the data so no one can ever use it.", why:"Deleting loses research value and may break funder or journal rules. Controlled access or a coarsened version is usually possible."}
     ]},
     {id:"t3u10-l4-x5", type:"spot", q:"Tap each line of this invented README that needs improving.", ask:"needs improving", mono:true, parts:[
@@ -541,8 +541,8 @@ ICA.addUnit({
       {t:"Contact: project email and ORCID iD", flag:false, why:"An ORCID iD links you to the data even if your email changes."}
     ]},
     {id:"t3u10-l4-x6", type:"mcq", q:"Kenji has an anonymised survey of teachers’ workloads, with no sensitive personal data left. His field has a national social science data archive that curates deposits. Which choice is usually best?", options:[
-      {t:"Deposit in the national social science data archive, which will check the documentation and is where his field looks for data.", ok:true, why:"Right. A subject repository that curates deposits adds checks and visibility. A generalist repository would also be acceptable if the archive couldn’t take it."},
-      {t:"Put it in a shared cloud folder and post the link.", why:"Links break, there’s no preservation promise and no DOI."},
+      {t:"Deposit it in the national social science data archive.", ok:true, why:"Right. It will check the documentation, and it is where his field looks for data. A subject repository that curates deposits adds checks and visibility. A generalist repository would also be acceptable if the archive couldn’t take it."},
+      {t:"Put it in a shared cloud folder and post the link online.", why:"Links break, there’s no preservation promise and no DOI."},
       {t:"Email it to anyone who asks.", why:"That isn’t findable, accessible by a standard route, or durable."},
       {t:"Post it on his personal website with no licence.", why:"No DOI, no preservation and no licence: reusers can’t rely on it."}
     ]}
@@ -666,7 +666,7 @@ ICA.addUnit({
       {t:"A school ranks pupils with a model trained on past grades from schools with unequal funding", b:1, why:"The model learns patterns shaped by past inequality, a historical bias in how it works."}
     ]},
     {id:"t3u10-l5-x4", type:"mcq", q:"Which statement about FAIR and CARE is accurate?", options:[
-      {t:"FAIR focuses on making data reusable; CARE adds people and purpose, so Indigenous peoples benefit from and keep authority over data about them. They are meant to be used together.", ok:true, why:"Right. The CARE authors describe the goal as being “FAIR and CARE”."},
+      {t:"FAIR makes data reusable; CARE adds people and purpose.", ok:true, why:"Right. CARE means Indigenous peoples benefit from and keep authority over data about them, and the two are meant to be used together. The CARE authors describe the goal as being “FAIR and CARE”."},
       {t:"CARE replaces FAIR for all research data.", why:"CARE complements FAIR; it doesn’t replace it."},
       {t:"CARE means Indigenous data must never be shared.", why:"CARE is about authority and benefit. Communities may choose to share widely, under conditions they set."},
       {t:"FAIR already requires community consent, so CARE adds nothing.", why:"FAIR is about data qualities such as findability and licences; it says nothing about community authority."}
@@ -703,6 +703,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u10-q02","t3u10-q06","t3u10-q11","t3u10-q14","t3u10-q19","t3u10-q23","t3u10-q26","t3u10-q30","t3u10-q34","t3u10-q38","t3u10-q42","t3u10-q45"],
+  cpBank:[
+   {id:"t3u10-cp01", lesson:"t3u10-l1", level:1, q:"Nour is building a paid app about city parks. She finds four invented park datasets. Which one can she use without asking anyone?", options:[
+     {t:"A PDF of park opening hours, “all rights reserved”", why:"Neither legally open (no licence to reuse) nor technically open (a PDF isn’t easily machine readable)."},
+     {t:"A CSV of park facilities, “for non-commercial use only”", why:"A non-commercial condition limits the purpose, so the data aren’t open, and a paid app is commercial use."},
+     {t:"A CSV of park trees, under CC BY 4.0", ok:true, why:"CC BY allows any use, including commercial, as long as she credits the city, links the licence and notes changes."},
+     {t:"A CSV of playgrounds, “for personal use only”", why:"Personal-use terms forbid reuse in a product. Free to download isn’t the same as open."}]},
+   {id:"t3u10-cp02", lesson:"t3u10-l1", level:2, q:"Joon finds a blog post with a table of literacy rates. Its footnote says “Source: World Bank”. He wants to use the figures in a published report. What is the best next step?", options:[
+     {t:"Cite the blog post, since that is where he found the numbers", why:"The blog is a copy. Cite the original producer, after checking the figures and their terms there."},
+     {t:"Find it on World Bank Open Data, check its licence, cite it", ok:true, why:"Go upstream to the original home. World Bank data are usually CC BY 4.0, but the metadata can say otherwise."},
+     {t:"Use the numbers freely, because World Bank data are always public domain", why:"Most World Bank data are under CC BY 4.0, which needs credit, and some third-party data have stricter terms."},
+     {t:"Search Google Dataset Search and cite the search tool", why:"A search tool only points to datasets. Cite the dataset’s publisher, not the tool that found it."}]},
+   {id:"t3u10-cp03", lesson:"t3u10-l2", level:1, q:"A city’s air-quality dataset comes from 12 sensors, all placed in the city centre. What is this dataset most likely to miss?", options:[
+     {t:"Pollution levels in neighbourhoods that have no sensors", ok:true, why:"Sensor data cover only where sensors are. Places with none, often outer districts, go unmeasured."},
+     {t:"Pollution levels in the city centre", why:"The centre is exactly where the sensors are, so it is well covered."},
+     {t:"Changes from hour to hour", why:"Continuous measurement over time is a strength of sensors, not a gap."},
+     {t:"Nothing, because sensors measure automatically", why:"Automatic doesn’t mean complete. Coverage depends on where sensors are placed, and faulty ones can miss readings."}]},
+   {id:"t3u10-cp04", lesson:"t3u10-l2", level:2, q:"Report A says average household income rose 12% from 2016 to 2026. Report B, using the same survey, says it fell about 3%. What is the most likely explanation?", options:[
+     {t:"One report must contain a calculation error", why:"Two honest figures can differ because of definitions. Check them before deciding one is wrong."},
+     {t:"Report B used a smaller sample, so its result is random noise", why:"Both use the same survey. A gap this big in opposite directions points to a definition difference."},
+     {t:"A is nominal (current prices); B is adjusted for inflation", ok:true, why:"Money can be in current prices or real terms. If prices rose faster than incomes, real income fell while nominal income rose."},
+     {t:"Report B counted households and Report A counted people", why:"That could change levels, but it wouldn’t usually turn a 12% rise into a fall. Start with nominal versus real."}]},
+   {id:"t3u10-cp05", lesson:"t3u10-l2", level:3, q:"In March, Dmitri downloaded monthly jobs figures from a statistics portal with no version numbers. In June a colleague downloads the same table and gets different figures for January. What explains this, and how should Dmitri cite his data?", options:[
+     {t:"The portal was hacked; he should cite the version he trusts", why:"Provisional figures are routinely revised as more information arrives. That is normal and documented."},
+     {t:"January was revised; cite the table and the retrieval date", ok:true, why:"For a live database without versions, the table and retrieval date pin down which state of the data he used."},
+     {t:"His colleague made an error; nothing needs changing", why:"Revisions are common in official figures. Without a retrieval date, readers can’t tell which state he used."},
+     {t:"The figures changed, so he should cite the concept DOI", why:"This portal has no DOIs. Concept DOIs belong to versioned repositories such as Zenodo, and point to the latest version."}]},
+   {id:"t3u10-cp06", lesson:"t3u10-l3", level:1, q:"Yuki improves a trail-marker dataset licensed CC BY-SA 4.0 and wants to publish her improved version. What must she do?", options:[
+     {t:"Nothing: once she has changed it, the data are hers", why:"Adapting data doesn’t remove the original licence. Its conditions still apply to her version."},
+     {t:"Ask the original creator for permission first", why:"The licence already gives permission in advance, on stated conditions."},
+     {t:"Publish it under CC BY-NC, so nobody profits from it", why:"Share-alike means the same or a compatible licence. Adding a non-commercial condition breaks it."},
+     {t:"Credit the source and share it under CC BY-SA too", ok:true, why:"BY means credit; SA (share-alike) means adapted data stay under the same or compatible terms."}]},
+   {id:"t3u10-cp07", lesson:"t3u10-l3", level:2, q:"A blogger republishes a UK council’s data under the Open Government Licence v3.0, credits the council, and adds “Officially endorsed by the council”. Which part breaks the licence?", options:[
+     {t:"Republishing the data on a blog", why:"OGL v3.0 allows copying, adapting and publishing the information."},
+     {t:"Crediting the council by name", why:"Acknowledging the source is required, not forbidden."},
+     {t:"Claiming official endorsement", ok:true, why:"OGL v3.0 says you mustn’t suggest the provider endorses your use. Credit is required; endorsement claims aren’t allowed."},
+     {t:"Using the data on a site with adverts", why:"OGL v3.0 allows commercial use. Adverts aren’t the problem here."}]},
+   {id:"t3u10-cp08", lesson:"t3u10-l3", level:3, q:"Ines, a paid consultant, writes a report for a client. She uses rainfall data (CC0), a council’s road counts (UK OGL v3.0) and a survey table (CC BY-NC 4.0). Which source needs the owner’s permission?", options:[
+     {t:"The rainfall data, because CC0 gives no permission to reuse", why:"CC0 waives the rights: anyone may use the data for any purpose, commercial included. Credit is kind but not required."},
+     {t:"The road counts, because OGL v3.0 is only for public bodies", why:"OGL v3.0 lets anyone copy, adapt and use the information, commercially too, with the provider’s attribution statement."},
+     {t:"The survey table, because a paid report is commercial use", ok:true, why:"Work done for payment, such as a consultant’s report, is commercial, and the NC term forbids that. She needs the owner’s permission or another source."},
+     {t:"None: a report isn’t a product, so NC doesn’t apply", why:"NC is about the purpose, not the format. A report written for payment counts as commercial use."}]},
+   {id:"t3u10-cp09", lesson:"t3u10-l4", level:2, q:"Which change mainly makes Leila’s shared dataset more **interoperable**?", options:[
+     {t:"Writing dates as `2026-05-02` and using standard country codes", ok:true, why:"Interoperable means others’ tools can combine and read the data: open formats and standard codes such as ISO dates."},
+     {t:"Getting a DOI from a repository", why:"A DOI mainly makes data findable (and citable). It doesn’t change how the data can be combined."},
+     {t:"Adding a licence file", why:"A licence makes data reusable by stating what’s allowed. It doesn’t change formats or codes."},
+     {t:"Keeping the description public while the files are restricted", why:"That supports accessibility: people can find out the data exist and how to request them."}]},
+   {id:"t3u10-cp10", lesson:"t3u10-l5", level:2, q:"A city’s wellbeing survey offers only “male” and “female” for gender, and lets people tick just one ethnicity. Which concern does this raise most directly?", options:[
+     {t:"The survey will have too large a sample", why:"Sample size isn’t the issue. The categories decide who can be counted at all."},
+     {t:"The answers won’t be machine readable", why:"Tick boxes are easy for machines to read. The problem is who the boxes leave out."},
+     {t:"Some people, like non-binary people, can’t be counted", ok:true, why:"People of mixed ethnicity are squeezed out too. Every form forces people into boxes. What can’t be recorded can’t be noticed, funded or fixed."},
+     {t:"The data can’t then be shared under an open licence", why:"Licensing is a separate question. The concern here is representation."}]},
+   {id:"t3u10-cp11", lesson:"t3u10-l4", level:3, q:"Researchers mapped sacred sites together with an Indigenous community. Their journal asks for open data. What approach fits both FAIR and the CARE principles?", options:[
+     {t:"Publish every exact location openly, because FAIR requires all data to be open", why:"FAIR doesn’t mean open. Data can be FAIR with controlled access and a public description."},
+     {t:"Delete the data so nobody can misuse them", why:"That loses the community’s data too. Shared decisions about access are better than destruction."},
+     {t:"Share the exact locations under CC BY-NC to protect the sites", why:"A licence controls reuse rights, not harm. Anyone could still visit or disturb the sites."},
+     {t:"Agree access with the community: open description, restricted locations", ok:true, why:"CARE gives the community authority to control; FAIR is met through public metadata and a clear access route."}]},
+   {id:"t3u10-cp12", lesson:"t3u10-l5", level:3, q:"A school picks pupils for extra reading help by ranking them on how many library books they borrowed last year. What is the main ethical risk?", options:[
+     {t:"Borrowing is a proxy shaped by access to books, so it can misjudge need", ok:true, why:"A proxy stands in for what you care about. Distance to a library or books at home affect borrowing, so some pupils are wrongly picked or missed."},
+     {t:"Library records are administrative data, so they can’t be used for decisions", why:"Administrative data can be useful. The problem is what this measure stands in for."},
+     {t:"The ranking uses too few pupils to be reliable", why:"The issue isn’t sample size. A biased proxy stays biased with any number of pupils."},
+     {t:"There is no risk, because no personal characteristics such as ethnicity are used", why:"Bias can enter through a proxy even when protected characteristics aren’t inputs."}]},
+  ],
   codex:[
    {id:"open-data-sources", title:"Finding open data", aka:["open data","Open Definition","data portals","where to find data","national statistics offices","dataset search"], tags:["data","open"],
     summary:"What makes data open, the main kinds of data sources around the world, and how to search for datasets and trace copies back to their source.",
@@ -1016,12 +1078,12 @@ ICA.addUnit({
   bank:[
    /* Lesson 1 */
    {id:"t3u10-q01", lesson:"t3u10-l1", level:1, q:"According to the Open Definition, which conditions may an open licence impose?", options:[
-     {t:"Only conditions such as attribution, share-alike and keeping notices", ok:true, why:"These preserve provenance and openness, which the Open Definition allows."},
+     {t:"Only attribution, share-alike and similar conditions", ok:true, why:"Keeping notices is another. These preserve provenance and openness, which the Open Definition allows."},
      {t:"Non-commercial use only", why:"Restricting purpose isn’t allowed: open means use for any purpose."},
      {t:"A fee for each use", why:"Open licences must not require royalties or fees."},
-     {t:"Use only by people in certain countries", why:"Open licences must not discriminate against any person or group."}]},
+     {t:"Use only by people living in certain approved countries", why:"Open licences must not discriminate against any person or group."}]},
    {id:"t3u10-q02", lesson:"t3u10-l1", level:2, q:"A ministry publishes election results under CC BY, but only as scanned images of printed tables. Is this open data?", options:[
-     {t:"Not fully: the licence is open, but the data aren’t machine readable", ok:true, why:"Openness needs both an open licence and a form a computer can readily process."},
+     {t:"Not fully: the data aren’t machine readable", ok:true, why:"The licence is open, but openness needs both an open licence and a form a computer can readily process."},
      {t:"Yes: CC BY is an open licence, so nothing else matters", why:"The Open Definition also requires machine readability and an open format."},
      {t:"No, because CC BY requires attribution", why:"Attribution is an allowed condition; it doesn’t stop data being open."},
      {t:"Yes, as long as the images are free to download", why:"Free download covers access, but a picture of a table isn’t readily machine readable."}]},
@@ -1036,12 +1098,12 @@ ICA.addUnit({
      {t:"A general web search for “Samoa population”", why:"This tends to give headline figures and copies, not the detailed original tables."},
      {t:"A global dataset search tool only", why:"Search tools help, but start at the producer who would have counted this."}]},
    {id:"t3u10-q05", lesson:"t3u10-l1", level:1, q:"What does Google Dataset Search rely on to find datasets?", options:[
-     {t:"Descriptions that publishers add to their pages using schema.org Dataset markup", ok:true, why:"It indexes that structured metadata and links to where the data live."},
+     {t:"Descriptions publishers add with schema.org markup", ok:true, why:"Publishers add schema.org Dataset markup to their pages. It indexes that structured metadata and links to where the data live."},
      {t:"A team that checks the quality of every dataset", why:"It doesn’t verify datasets; metadata can be incomplete or wrong."},
-     {t:"Copies of each dataset stored on Google’s servers", why:"It indexes descriptions; it isn’t an archive."},
+     {t:"Copies of each dataset stored on Google’s own servers", why:"It indexes descriptions; it isn’t an archive."},
      {t:"Only datasets that have DOIs", why:"Any page with the markup can be indexed. DataCite Commons is the tool focused on DOIs."}]},
    {id:"t3u10-q06", lesson:"t3u10-l1", level:3, q:"Mei finds a chart on Our World in Data built from World Bank data and wants to reuse the data in a report. What should she do about credit?", options:[
-     {t:"Credit both Our World in Data and the World Bank, and check the World Bank’s terms for that indicator", ok:true, why:"Our World in Data asks for credit to itself and the original provider, and third-party data stay under the provider’s terms."},
+     {t:"Credit both, and check the World Bank’s terms", ok:true, why:"Credit Our World in Data and the World Bank, and check the terms for that indicator. Our World in Data asks for credit to itself and the original provider, and third-party data stay under the provider’s terms."},
      {t:"Credit only Our World in Data, since its work is CC BY", why:"Its CC BY licence covers its own work; the World Bank data remain under the World Bank’s terms."},
      {t:"Credit only the World Bank", why:"Our World in Data also asks to be credited when its data or charts are reused."},
      {t:"No credit is needed for numbers", why:"Both licences involved require attribution."}]},
@@ -1056,22 +1118,22 @@ ICA.addUnit({
      {t:"child health facts", why:"Too vague: no measure, place or file type."},
      {t:"best data website", why:"This finds opinions about websites, not a specific dataset."}]},
    {id:"t3u10-q09", lesson:"t3u10-l1", level:3, q:"A portal page says “Licence: CC BY 4.0” and, in its terms, “You may not redistribute these data.” What follows under the Open Definition?", options:[
-     {t:"The extra term contradicts the licence, so the data aren’t clearly open; ask the publisher to resolve it", ok:true, why:"Additional terms must not contradict the licence. Conflicting terms create doubt, so seek clarification before redistributing."},
+     {t:"The terms clash with the licence; ask the publisher", ok:true, why:"The data aren’t clearly open. Additional terms must not contradict the licence. Conflicting terms create doubt, so seek clarification before redistributing."},
      {t:"The CC BY label wins, so ignore the terms", why:"Contradictory terms create legal uncertainty; don’t assume either side wins."},
      {t:"The data are open because they’re on a government site", why:"Being on a government site doesn’t make data open."},
      {t:"CC BY always forbids redistribution", why:"CC BY explicitly allows redistribution with credit."}]},
 
    /* Lesson 2 */
    {id:"t3u10-q10", lesson:"t3u10-l2", level:1, q:"What does a codebook or data dictionary tell you?", options:[
-     {t:"What each column and code means, including units and how missing values are recorded", ok:true, why:"That’s its job: explaining every variable."},
-     {t:"Who is allowed to use the data", why:"That’s the licence or terms of use."},
+     {t:"What each column and code means, including units", ok:true, why:"It also says how missing values are recorded. That’s its job: explaining every variable."},
+     {t:"Who is allowed to use the data, and on what terms", why:"That’s the licence or terms of use."},
      {t:"Where to download the data", why:"That’s the landing page or portal."},
      {t:"Which statistical test to run", why:"A codebook describes the data, not the analysis."}]},
    {id:"t3u10-q11", lesson:"t3u10-l2", level:2, q:"Ana sees that a survey dataset codes missing incomes as 0. What is the main problem?", options:[
-     {t:"“No income” and “didn’t answer” look the same, so averages and counts will be wrong", ok:true, why:"Missing values need their own documented code."},
+     {t:"“No income” and “didn’t answer” look the same", ok:true, why:"So averages and counts will be wrong. Missing values need their own documented code."},
      {t:"Zero isn’t allowed in a CSV", why:"CSV files can hold zeros; the issue is meaning."},
      {t:"It makes the file too large", why:"File size isn’t the concern."},
-     {t:"Nothing: 0 is the standard missing code", why:"Using 0 for missing is a well-known error; use blanks, NA or a documented code."}]},
+     {t:"Nothing: 0 is the standard missing code in surveys", why:"Using 0 for missing is a well-known error; use blanks, NA or a documented code."}]},
    {id:"t3u10-q12", lesson:"t3u10-l2", level:1, q:"Which method collects information as a by-product of providing a service?", options:[
      {t:"Administrative records", ok:true, why:"Tax, school, hospital and police records are created while running services."},
      {t:"A census", why:"A census deliberately counts everyone for statistical purposes."},
@@ -1083,9 +1145,9 @@ ICA.addUnit({
      {t:"Hana, a full-time student not looking for work", why:"Not seeking work, so outside the labour force."},
      {t:"Kenji, working 10 hours a week but wanting more", why:"He is employed (underemployed), not unemployed."}]},
    {id:"t3u10-q14", lesson:"t3u10-l2", level:3, q:"A national survey and a UN IGME modelled estimate give different under-five mortality rates for the same country and year. What should Amara do?", options:[
-     {t:"Read both methods, choose the one that fits her question (comparison across countries or local detail), and explain her choice", ok:true, why:"Both can be honest; the right one depends on the purpose, and stating the choice keeps her work transparent."},
+     {t:"Pick the method that fits her question, and say why", ok:true, why:"Read both methods: one may suit comparison across countries, the other local detail. Both can be honest; the right one depends on the purpose, and stating the choice keeps her work transparent."},
      {t:"Assume the survey is wrong because the UN is bigger", why:"Size of organisation doesn’t decide accuracy; methods do."},
-     {t:"Average the two", why:"Averaging different methods creates a figure with no clear meaning."},
+     {t:"Average the two figures so that neither method is favoured", why:"Averaging different methods creates a figure with no clear meaning."},
      {t:"Drop the topic, because the data are unreliable", why:"Differences between methods are normal and can be explained."}]},
    {id:"t3u10-q15", lesson:"t3u10-l2", level:2, q:"Why might recorded crime rise when crime itself hasn’t?", options:[
      {t:"Reporting or recording became easier or stricter", ok:true, why:"Recorded crime is administrative data; changes in reporting or recording change the count."},
@@ -1093,30 +1155,30 @@ ICA.addUnit({
      {t:"Because surveys always overestimate", why:"Recorded crime doesn’t come from surveys."},
      {t:"It can’t: recorded crime equals all crime", why:"Many crimes are never reported, so recorded crime is not all crime."}]},
    {id:"t3u10-q16", lesson:"t3u10-l2", level:1, q:"What is a “break in the series”?", options:[
-     {t:"A jump in a data series caused by a change in method or definition, not by the real world", ok:true, why:"Producers flag breaks so you don’t mistake them for real change."},
+     {t:"A jump caused by a change in method or definition", ok:true, why:"The jump isn’t caused by the real world. Producers flag breaks so you don’t mistake them for real change."},
      {t:"A year with no data", why:"That’s a gap, which may or may not be a break."},
      {t:"A file that won’t open", why:"That’s a technical problem, not a statistical term."},
-     {t:"The point where a trend reverses", why:"A real reversal isn’t a break in the series."}]},
+     {t:"The point where a real-world trend reverses direction", why:"A real reversal isn’t a break in the series."}]},
    {id:"t3u10-q17", lesson:"t3u10-l2", level:3, q:"Dmitri saved a GDP growth figure from a statistics office last year. Today the same table shows a different number for that year. What is most likely?", options:[
-     {t:"The figure was revised as fuller information arrived, which is normal and documented", ok:true, why:"Early economic estimates are routinely revised; check the revision notes."},
+     {t:"The figure was revised as fuller information arrived", ok:true, why:"This is normal and documented. Early economic estimates are routinely revised; check the revision notes."},
      {t:"The office is hiding something", why:"Revisions are planned and published; they aren’t evidence of wrongdoing."},
-     {t:"His saved figure was a typing error", why:"Possible, but routine revision is far more likely."},
+     {t:"His saved figure must have been a typing error on his part", why:"Possible, but routine revision is far more likely."},
      {t:"The website has been hacked", why:"There’s no reason to assume this when revisions are routine."}]},
    {id:"t3u10-q18", lesson:"t3u10-l2", level:2, q:"Which dataset description gives you the most confidence?", options:[
-     {t:"National household survey, 2024, 8,400 households, methods note and codebook linked, version 2.1", ok:true, why:"It states method, date, size, documentation and version."},
+     {t:"Household survey, 2024, 8,400 homes, methods and codebook, v2.1", ok:true, why:"It states method, date, size, documentation and version."},
      {t:"Compiled from various websites", why:"Vague provenance can’t be checked or cited."},
-     {t:"Very large dataset, millions of rows", why:"Size says nothing about coverage or quality."},
-     {t:"Popular dataset, downloaded 50,000 times", why:"Popularity isn’t evidence of accuracy."}]},
+     {t:"Very large dataset, millions of rows, updated every single day", why:"Size says nothing about coverage or quality."},
+     {t:"Popular dataset, downloaded 50,000 times and rated five stars", why:"Popularity isn’t evidence of accuracy."}]},
 
    /* Lesson 3 */
    {id:"t3u10-q19", lesson:"t3u10-l3", level:1, q:"What does CC BY 4.0 require when you reuse data?", options:[
-     {t:"Credit the creator, link to the licence and indicate any changes", ok:true, why:"Attribution is the only condition; commercial use is allowed."},
+     {t:"Credit the creator, link the licence, note changes", ok:true, why:"Attribution is the only condition; commercial use is allowed."},
      {t:"Non-commercial use only", why:"That’s an NC licence, not CC BY."},
-     {t:"Share your adapted data under the same licence", why:"That’s share-alike (BY-SA or ODbL)."},
+     {t:"Share your adapted data under the same licence as the original", why:"That’s share-alike (BY-SA or ODbL)."},
      {t:"Nothing at all", why:"That describes CC0."}]},
    {id:"t3u10-q20", lesson:"t3u10-l3", level:2, q:"Oluwaseun prints a poster map made from OpenStreetMap data (ODbL). What must he do?", options:[
-     {t:"Include a notice that the map uses OpenStreetMap data under the ODbL", ok:true, why:"A map image is a produced work: it needs a notice but needn’t be ODbL itself."},
-     {t:"Release the poster under the ODbL", why:"Share-alike applies to adapted databases, not to produced works like a printed map."},
+     {t:"Include a notice that the map uses OpenStreetMap data", ok:true, why:"The notice says the data are under the ODbL. A map image is a produced work: it needs a notice but needn’t be ODbL itself."},
+     {t:"Release the poster itself under the ODbL, as share-alike requires", why:"Share-alike applies to adapted databases, not to produced works like a printed map."},
      {t:"Pay OpenStreetMap a fee", why:"The ODbL is an open licence with no fees."},
      {t:"Nothing: maps are facts", why:"The licence requires the notice."}]},
    {id:"t3u10-q21", lesson:"t3u10-l3", level:1, q:"Under the UK Open Government Licence v3.0, if a provider gives no attribution statement, what should you include?", options:[
@@ -1130,9 +1192,9 @@ ICA.addUnit({
      {t:"Datasets in CSV format", why:"Format doesn’t matter to the licence."},
      {t:"Information used in a commercial product", why:"The OGL allows commercial use."}]},
    {id:"t3u10-q23", lesson:"t3u10-l3", level:3, q:"Lucía improves an ODbL database and wants to publish her improved version under CC BY only. What’s the problem?", options:[
-     {t:"The ODbL requires publicly used adapted databases to stay under the ODbL or a compatible licence, and CC BY has no share-alike", ok:true, why:"Share-alike keeps derivatives open on the same terms."},
+     {t:"Share-alike requires the ODbL or a compatible licence", ok:true, why:"Publicly used adapted databases must stay under the ODbL or a compatible licence, and CC BY has no share-alike. Share-alike keeps derivatives open on the same terms."},
      {t:"CC BY isn’t an open licence", why:"CC BY is open; the issue is the ODbL’s share-alike condition."},
-     {t:"She may not adapt ODbL data at all", why:"Adaptation is allowed; sharing the adaptation has conditions."},
+     {t:"She may not adapt ODbL data at all, only use it unchanged", why:"Adaptation is allowed; sharing the adaptation has conditions."},
      {t:"There is no problem", why:"Changing to a licence without share-alike breaks the ODbL’s condition."}]},
    {id:"t3u10-q24", lesson:"t3u10-l3", level:1, q:"Which shows DataCite’s preferred citation format, in the right order?", options:[
      {t:"Creator (PublicationYear): Title. Version. Publisher. (resourceTypeGeneral). Identifier", ok:true, why:"That is DataCite’s preferred format, with Version as an optional addition."},
@@ -1145,13 +1207,13 @@ ICA.addUnit({
      {t:"The version 4 DOI, since it’s newest", why:"She didn’t analyse version 4, so readers couldn’t check her work."},
      {t:"No DOI; the Zenodo home page is enough", why:"A home page doesn’t identify the dataset or version."}]},
    {id:"t3u10-q26", lesson:"t3u10-l3", level:3, q:"Tomás cites a dataset as “Retrieved from Google Dataset Search”. What should he change?", options:[
-     {t:"Cite the dataset’s actual publisher (for example the repository) and its DOI, not the search tool", ok:true, why:"The search tool only found the dataset; the publisher and identifier let others find it."},
+     {t:"Cite the dataset’s actual publisher and its DOI", ok:true, why:"The publisher may be the repository. The search tool only found the dataset; the publisher and identifier let others find it."},
      {t:"Nothing: search tools are publishers", why:"Search tools index descriptions; they don’t publish data."},
      {t:"Add the date he searched", why:"A date doesn’t fix the wrong publisher."},
-     {t:"Replace it with the Google home page URL", why:"That doesn’t identify the dataset at all."}]},
+     {t:"Replace it with the Google Dataset Search home page URL", why:"That doesn’t identify the dataset at all."}]},
    {id:"t3u10-q27", lesson:"t3u10-l3", level:2, q:"Why do many open data licences explicitly cover database rights?", options:[
-     {t:"In the EU and UK, databases can be protected by a database right even when the facts in them aren’t copyrighted", ok:true, why:"Covering both rights gives reusers clear permission."},
-     {t:"Because all facts are copyrighted everywhere", why:"In many countries individual facts aren’t protected by copyright."},
+     {t:"Databases can be protected by a separate database right", ok:true, why:"In the EU and UK this applies even when the facts in them aren’t copyrighted. Covering both rights gives reusers clear permission."},
+     {t:"Because all facts are protected by copyright in every country", why:"In many countries individual facts aren’t protected by copyright."},
      {t:"To charge fees for databases", why:"Open licences don’t charge fees."},
      {t:"Because databases can’t be shared otherwise", why:"They can be shared; the licence clarifies the rights involved."}]},
 
@@ -1162,24 +1224,24 @@ ICA.addUnit({
      {t:"Only the format of the program you used", why:"Program-specific formats may not open in the future or in other tools; also export CSV."},
      {t:"A PDF of the table", why:"PDF tables are hard to extract reliably."}]},
    {id:"t3u10-q29", lesson:"t3u10-l4", level:1, q:"What is a persistent identifier for a dataset?", options:[
-     {t:"A long-lasting reference such as a DOI that keeps working even if the web address changes", ok:true, why:"Repositories register and maintain DOIs so links don’t break."},
+     {t:"A long-lasting reference, such as a DOI", ok:true, why:"It keeps working even if the web address changes. Repositories register and maintain DOIs so links don’t break."},
      {t:"The file name", why:"File names change and aren’t globally unique."},
-     {t:"The author’s email address", why:"Emails change and don’t identify the dataset."},
+     {t:"The email address of the dataset’s author", why:"Emails change and don’t identify the dataset."},
      {t:"A password for the data", why:"That controls access; it doesn’t identify anything."}]},
    {id:"t3u10-q30", lesson:"t3u10-l4", level:2, q:"Sione wants to share a dataset that is not about people. Which home is usually best?", options:[
-     {t:"A repository that issues DOIs and promises preservation, ideally one his field uses", ok:true, why:"That makes it findable, citable and durable."},
-     {t:"His personal website", why:"Links break when he moves jobs, and there’s no DOI or preservation promise."},
+     {t:"A repository that gives DOIs and preserves data", ok:true, why:"Ideally it is one his field uses. That makes it findable, citable and durable."},
+     {t:"His personal website, where he controls everything", why:"Links break when he moves jobs, and there’s no DOI or preservation promise."},
      {t:"A shared cloud folder", why:"No DOI, no preservation and no metadata standard."},
-     {t:"Attached to emails on request", why:"Not findable or accessible by a standard route."}]},
+     {t:"Attached to emails, sent to anyone who asks for it", why:"Not findable or accessible by a standard route."}]},
    {id:"t3u10-q31", lesson:"t3u10-l4", level:2, q:"Which belongs in a dataset’s README?", options:[
-     {t:"What the data are, who made them, how and when, the files, missing-value codes, licence and how to cite", ok:true, why:"These let a stranger understand and reuse the data correctly."},
-     {t:"The key linking participant codes to names", why:"That must stay in secure storage, never in a shared package."},
+     {t:"Methods, file list, codes, licence and how to cite", ok:true, why:"It says what the data are, who made them, how and when, and gives the missing-value codes. These let a stranger understand and reuse the data correctly."},
+     {t:"The key linking participant codes to people’s names", why:"That must stay in secure storage, never in a shared package."},
      {t:"Signed consent forms", why:"These contain personal data and stay private."},
      {t:"Only the title", why:"A title alone doesn’t explain how to use or cite the data."}]},
    {id:"t3u10-q32", lesson:"t3u10-l4", level:3, q:"Hana removed names from a survey of 300 nurses in one hospital, but kept exact age, ward and years of service. Can she share it openly?", options:[
-     {t:"Not yet: in one hospital those details could identify individuals, so she should coarsen them or use controlled access", ok:true, why:"Indirect identifiers combine to single people out, especially in a small, known group."},
+     {t:"Not yet: those details could still identify individuals", ok:true, why:"She should coarsen them or use controlled access. Indirect identifiers combine to single people out, especially in a small, known group."},
      {t:"Yes: removing names makes data anonymous", why:"This is the most common misconception about anonymisation."},
-     {t:"Yes, if she uses a non-commercial licence", why:"A licence doesn’t stop people recognising colleagues."},
+     {t:"Yes, if she shares it under a non-commercial licence only", why:"A licence doesn’t stop people recognising colleagues."},
      {t:"Yes, if the file is a CSV", why:"File format has nothing to do with identifiability."}]},
    {id:"t3u10-q33", lesson:"t3u10-l4", level:1, q:"What does a metadata standard such as DDI or Darwin Core provide?", options:[
      {t:"Shared rules for describing data so people and machines can find and understand them", ok:true, why:"Standards fix which fields to describe and how."},
@@ -1187,12 +1249,12 @@ ICA.addUnit({
      {t:"Encryption for sensitive data", why:"Standards describe data; they don’t protect it."},
      {t:"A way to collect survey answers", why:"They describe data after collection."}]},
    {id:"t3u10-q34", lesson:"t3u10-l4", level:3, q:"Kenji’s interview participants were told only the research team would see the transcripts. His journal asks for open data. What should he do?", options:[
-     {t:"Keep the transcripts closed, publish a description and documentation, and explain the restriction in a data availability statement", ok:true, why:"Consent comes first; FAIR can still be met through a findable description and a clear access explanation."},
-     {t:"Share the transcripts openly to meet the journal’s policy", why:"A journal policy can’t override promises made to participants."},
+     {t:"Keep them closed and explain why in a data availability statement", ok:true, why:"He can still publish a description and documentation. Consent comes first; FAIR can still be met through a findable description and a clear access explanation."},
+     {t:"Share the transcripts openly, because the journal’s policy requires it", why:"A journal policy can’t override promises made to participants."},
      {t:"Remove names and share openly", why:"That would still break the consent terms, and stories can identify people."},
      {t:"Withdraw the paper", why:"Journals routinely accept justified restrictions."}]},
    {id:"t3u10-q35", lesson:"t3u10-l4", level:2, q:"Which statement about FAIR is correct?", options:[
-     {t:"Data can be FAIR with controlled access, if the description is public and the access route is clear", ok:true, why:"FAIR doesn’t require openness."},
+     {t:"Data can be FAIR with controlled access", ok:true, why:"FAIR doesn’t require openness. Data with controlled access can be FAIR if the description is public and the access route is clear."},
      {t:"FAIR data must always be open to everyone", why:"FAIR and open are different ideas."},
      {t:"FAIR only applies to very large datasets", why:"FAIR applies to data of any size."},
      {t:"FAIR means data must be free of errors", why:"FAIR is about findability and reuse, not perfection."}]},
@@ -1219,22 +1281,22 @@ ICA.addUnit({
      {t:"Anonymous", why:"Not part of CARE."},
      {t:"Accurate", why:"Not part of CARE."}]},
    {id:"t3u10-q40", lesson:"t3u10-l5", level:2, q:"What did Gender Shades (2018) find about three commercial face-classification systems?", options:[
-     {t:"Error rates were up to 34.7% for darker-skinned women but at most 0.8% for lighter-skinned men", ok:true, why:"The study showed large gaps hidden by overall accuracy."},
+     {t:"Errors were far higher for darker-skinned women", ok:true, why:"Error rates were up to 34.7% for darker-skinned women but at most 0.8% for lighter-skinned men. The study showed large gaps hidden by overall accuracy."},
      {t:"All groups had similar error rates", why:"The study found large differences between groups."},
      {t:"Lighter-skinned men were most often misclassified", why:"They had the lowest error rates."},
      {t:"The systems refused to classify anyone", why:"They classified faces, with unequal accuracy."}]},
    {id:"t3u10-q41", lesson:"t3u10-l5", level:3, q:"A city plans new bus routes using only location data from a popular smartphone app. Which Data Feminism question is most urgent?", options:[
-     {t:"Who is missing from the data, and how will that affect them?", ok:true, why:"People without smartphones or that app, often poorer or older residents, aren’t counted, so routes may not serve them."},
+     {t:"Who is missing from the data?", ok:true, why:"Then ask how that will affect them. People without smartphones or that app, often poorer or older residents, aren’t counted, so routes may not serve them."},
      {t:"Is the app’s logo attractive?", why:"Irrelevant to whether the data represent riders."},
-     {t:"How many rows does the dataset have?", why:"Size doesn’t fix who is missing."},
-     {t:"Is the data stored as CSV?", why:"Format doesn’t affect coverage."}]},
+     {t:"How many rows does the dataset have, and is that enough?", why:"Size doesn’t fix who is missing."},
+     {t:"Is the data stored in an open format such as CSV?", why:"Format doesn’t affect coverage."}]},
    {id:"t3u10-q42", lesson:"t3u10-l5", level:2, q:"How do the CARE principles relate to FAIR?", options:[
-     {t:"They complement FAIR, adding people and purpose; the aim is to be “FAIR and CARE”", ok:true, why:"CARE’s authors describe them as working together."},
+     {t:"They complement FAIR, adding people and purpose", ok:true, why:"The aim is to be “FAIR and CARE”. CARE’s authors describe them as working together."},
      {t:"They replace FAIR", why:"They add to FAIR rather than replace it."},
-     {t:"They forbid sharing Indigenous data", why:"They give communities authority, which may include sharing on their terms."},
+     {t:"They forbid sharing any data about Indigenous peoples", why:"They give communities authority, which may include sharing on their terms."},
      {t:"They are a file format standard", why:"They are governance principles."}]},
    {id:"t3u10-q43", lesson:"t3u10-l5", level:3, q:"A loan model doesn’t use ethnicity, but it uses postcode in a city where postcodes closely track ethnicity. What is the risk?", options:[
-     {t:"Postcode can act as a proxy, bringing ethnic bias into decisions even without ethnicity as an input", ok:true, why:"Proxies correlated with group membership carry bias in."},
+     {t:"Postcode can act as a proxy and bring in ethnic bias", ok:true, why:"This happens even without ethnicity as an input. Proxies correlated with group membership carry bias in."},
      {t:"None: without ethnicity, the model can’t be biased", why:"The Obermeyer study shows bias can enter through proxies."},
      {t:"Postcodes make the model run slowly", why:"Speed isn’t the ethical concern."},
      {t:"Postcodes are personal data, so the model is illegal", why:"Legality varies; the key issue here is unfair outcomes through a proxy."}]},
@@ -1244,8 +1306,8 @@ ICA.addUnit({
      {t:"CC BY 4.0", why:"Its licence is CC BY-NC-ND, which adds non-commercial and no-derivatives conditions that CC BY doesn’t have."},
      {t:"The ODbL", why:"The ODbL is for databases, not books."}]},
    {id:"t3u10-q45", lesson:"t3u10-l5", level:2, q:"Which practice puts the principle “make labor visible” into action?", options:[
-     {t:"Crediting the field workers, data cleaners and annotators who produced the data", ok:true, why:"The principle asks us to recognise the many hands behind data work."},
-     {t:"Automating data collection so no people are involved", why:"This doesn’t recognise anyone’s work."},
+     {t:"Crediting the people who collected and cleaned the data", ok:true, why:"That includes field workers, data cleaners and annotators. The principle asks us to recognise the many hands behind data work."},
+     {t:"Automating data collection so that no people are involved", why:"This doesn’t recognise anyone’s work."},
      {t:"Listing only the lead author", why:"That hides the labour of everyone else."},
      {t:"Keeping methods secret", why:"Hiding methods hides labour and context."}]}
   ]

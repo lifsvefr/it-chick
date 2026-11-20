@@ -117,7 +117,7 @@ ICA.addUnit({
       "”"
     ], why:"Good crime reporting gives rates, says what was counted, and notes changes in how it was counted."},
     {id:"e2u3-l1-x7", type:"mcq", q:"In one country, a man wearing a sarong to an office is unremarkable; in another, the same outfit draws stares and a word from a manager. What does this best show?", options:[
-      {t:"Deviance depends on the norms of a particular society and setting, not on the act itself.", ok:true, why:"Right. The act is identical; the norms and the audience differ, so the reaction differs. That is what sociologists mean by deviance being relative."},
+      {t:"Deviance depends on the norms of a society and setting.", ok:true, why:"Right. Deviance doesn’t lie in the act itself. The act is identical; the norms and the audience differ, so the reaction differs. That is what sociologists mean by deviance being relative."},
       {t:"Wearing a sarong to an office is a crime in the second country.", why:"Nothing suggests a law is broken. A stare and a word from a manager are sanctions for breaking an informal workplace norm, and deviance is much wider than crime."},
       {t:"People in the second country are less tolerant by nature.", why:"Sociology looks for social explanations. The reaction comes from learned norms about office dress, not from people’s nature."},
       {t:"Deviance only exists where there are formal sanctions.", why:"The stares are informal sanctions, and the manager’s word may be too. Most deviance is controlled informally."}
@@ -522,7 +522,7 @@ ICA.addUnit({
       ["Intersectional","A migrant care worker and the professional she works for experience care work very differently.","Looking at how gender combines with class, migration and race is intersectional."]
     ]},
     {id:"e2u3-l5-x4", type:"mcq", q:"At a meeting, Oluwaseun (a man) and Lucía (a woman) make the same firm point. Colleagues later call him “decisive” and her “aggressive”. Which concept best explains this?", options:[
-      {t:"Doing gender: behaviour is judged against expectations for each gender, so the same act draws different reactions.", ok:true, why:"Right. West and Zimmerman stress accountability: people’s actions are assessed against gender expectations, and breaking them brings informal sanctions."},
+      {t:"Doing gender: the same act is judged against gender expectations.", ok:true, why:"Right. Behaviour is judged against expectations for each gender, so the same act draws different reactions. West and Zimmerman stress accountability: people’s actions are assessed against gender expectations, and breaking them brings informal sanctions."},
       {t:"Sexual orientation shapes how firm people are in meetings.", why:"Orientation is about attraction and is unrelated to this situation."},
       {t:"Biological sex makes women more aggressive than men.", why:"The behaviour was identical; only the label changed. That points to social expectations, not biology."},
       {t:"Structural mobility.", why:"That’s about whole groups moving between classes as the economy changes."}
@@ -558,6 +558,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u3-q02","e2u3-q05","e2u3-q08","e2u3-q11","e2u3-q14","e2u3-q17","e2u3-q21","e2u3-q24","e2u3-q30","e2u3-q33","e2u3-q38","e2u3-q42"],
+  cpBank:[
+   {id:"e2u3-cp01", lesson:"e2u3-l1", level:1, q:"Which of these would be **deviant but not a crime** in most countries?", options:[
+     {t:"Taking money from the till at work", why:"This breaks a formal law the state can punish (theft), so it is a crime as well as deviant."},
+     {t:"Driving to work without a licence", why:"Driving without a licence breaks a law and can be punished by the state, so it is a crime."},
+     {t:"Wearing pyjamas to a job interview", ok:true, why:"Right. It breaks a strong informal norm and would draw stares, but no law forbids it. Deviance is wider than crime."},
+     {t:"Selling fake concert tickets online", why:"Selling fake tickets is fraud, a formal law the state can punish. That makes it a crime."}]},
+   {id:"e2u3-cp02", lesson:"e2u3-l2", level:1, q:"Rafael buys an expensive watch with a large, visible logo, mainly so that colleagues and clients will notice it. Which concept fits best?", options:[
+     {t:"Status consistency", why:"Status consistency is how evenly a person ranks across education, occupation and income. It is not about buying goods to be seen."},
+     {t:"Intragenerational mobility", why:"Intragenerational mobility is moving up or down within one lifetime. Buying a watch doesn’t change Rafael’s class position."},
+     {t:"Meritocracy", why:"A meritocracy is a hypothetical system that rewards people purely on merit. It has nothing to do with showing off purchases."},
+     {t:"Conspicuous consumption", ok:true, why:"Yes. Buying visible goods to signal status is conspicuous consumption, a term coined by Thorstein Veblen."}]},
+   {id:"e2u3-cp03", lesson:"e2u3-l4", level:1, q:"A landlord refuses to rent a flat to a couple because of their ethnic background. Which term names what the landlord **did**?", options:[
+     {t:"Discrimination", ok:true, why:"Correct. Discrimination is an action: treating people unequally because of their group. Refusing to rent is an action."},
+     {t:"A stereotype", why:"A stereotype is an oversimplified belief about a group. The landlord may hold one, but refusing to rent is an action."},
+     {t:"Prejudice", why:"Prejudice is an attitude. The question asks about what the landlord did, which is an action: discrimination."},
+     {t:"Double consciousness", why:"Double consciousness, Du Bois’s idea, describes how people facing racism see themselves through others’ eyes. It doesn’t describe the landlord’s act."}]},
+   {id:"e2u3-cp04", lesson:"e2u3-l1", level:2, q:"Asked why she has never shoplifted, Rosa says: “My parents would be so disappointed. I’m busy with football training most evenings. And I want to become a nurse, so I can’t get a record.” Which theory does her answer fit best?", options:[
+     {t:"Strain theory", why:"Strain theory explains deviance when goals are promoted but legitimate means are blocked. Rosa is explaining why she conforms."},
+     {t:"Differential association", why:"Differential association says deviance is learned from close associates. Rosa talks about her bonds, not about who taught her what."},
+     {t:"Control theory", ok:true, why:"Right. Hirschi asked why most people conform. Rosa names attachment (parents), involvement (training) and commitment (her career plans)."},
+     {t:"Labeling theory", why:"Labeling theory explains how a label can lead to secondary deviance. No one has labeled Rosa, and she isn’t deviant."}]},
+   {id:"e2u3-cp05", lesson:"e2u3-l3", level:2, q:"Leila’s family can afford food, housing and heating. But they have far less than most families in their city, and the children miss the school trips most classmates go on. Which kind of poverty does this describe?", options:[
+     {t:"Extreme (absolute) poverty", why:"Extreme poverty means lacking basics such as food, clean water and shelter. Leila’s family has these basics."},
+     {t:"Relative poverty", ok:true, why:"Yes. Having much less than most people in your own society, so you can’t join in ordinary activities, is relative poverty."},
+     {t:"Subjective poverty", why:"Subjective poverty is about whether people *feel* their income meets their needs. The description compares the family with others instead."},
+     {t:"Debt bondage", why:"Debt bondage is being forced to work to pay off a debt, one of the worst consequences of poverty. Nothing here suggests it."}]},
+   {id:"e2u3-cp06", lesson:"e2u3-l3", level:2, q:"Country Z exports raw cocoa beans, relies on cheap labour and has little control over world prices. It imports chocolate made in industrialised countries. In Wallerstein’s world-systems approach, Country Z is part of…", options:[
+     {t:"the core", why:"Core countries are industrialised, high-wage and dominant. Country Z exports raw materials and has little control over prices."},
+     {t:"the semi-periphery", why:"Semi-periphery countries are exploited by the core but can exploit the periphery. Nothing suggests Country Z exploits anyone."},
+     {t:"the Second World", why:"First, Second and Third World are outdated Cold War labels, not part of Wallerstein’s approach."},
+     {t:"the periphery", ok:true, why:"Correct. Supplying raw materials and cheap labour with little control over prices is the mark of the periphery."}]},
+   {id:"e2u3-cp07", lesson:"e2u3-l4", level:2, q:"In a city, no law separates ethnic groups. But housing is divided by income and ethnicity, so most schools end up with pupils mainly from one group. Which pattern is this?", options:[
+     {t:"*De jure* segregation", why:"*De jure* segregation is separation by law. The question says no law separates the groups."},
+     {t:"Pluralism", why:"Pluralism means groups keep their identities with equal standing. Here groups are separated by unequal housing, not side by side as equals."},
+     {t:"*De facto* segregation", ok:true, why:"Right. Separation that happens in practice, through housing and income, without a law requiring it, is *de facto* segregation."},
+     {t:"Assimilation", why:"Assimilation means a minority takes on the dominant culture. This describes groups being kept apart, not blended in."}]},
+   {id:"e2u3-cp08", lesson:"e2u3-l5", level:2, q:"Kai identifies as a man and is attracted to women. He often wears nail polish and long, decorated hair. The nail polish and hairstyle are part of his…", options:[
+     {t:"gender identity", why:"Gender identity is a person’s deeply held sense of their own gender. Kai’s identity is a man; his style is how he presents himself."},
+     {t:"sexual orientation", why:"Sexual orientation is who someone is attracted to. Kai’s appearance tells you nothing about that."},
+     {t:"sex", why:"Sex refers to physical differences such as anatomy and chromosomes. Nail polish and hairstyle are social choices."},
+     {t:"gender expression", ok:true, why:"Yes. Gender expression is outward presentation, such as clothes and hair. Knowing it doesn’t tell you a person’s identity or orientation."}]},
+   {id:"e2u3-cp09", lesson:"e2u3-l1", level:3, q:"Police in a city patrol Neighbourhood A, where most residents belong to an ethnic minority, far more often than Neighbourhood B. Recorded drug offences are higher in A. Which conclusion is most careful?", options:[
+     {t:"Residents of A commit more drug offences, and the police records prove it", why:"Police records count crimes known to police. More patrols find more offences, so the records may reflect where police look."},
+     {t:"Recorded figures partly reflect where police look, and a routine with unequal effects can be systemic even if no one intends harm", ok:true, why:"Right. Recorded crime depends on policing (the dark figure is larger where police look less). Systemic racism is about unequal effects built into routines, not only intentions."},
+     {t:"The officers must be personally prejudiced, since that is the only way such a gap can appear", why:"Systemic racism can produce unequal effects without individual prejudice. And the data alone can’t show what officers feel."},
+     {t:"Recorded crime figures are useless, so nothing can be learned about either area", why:"This goes too far. Recorded figures have limits, so researchers compare them with other sources, such as victim surveys."}]},
+   {id:"e2u3-cp10", lesson:"e2u3-l2", level:3, q:"Over 30 years, a country moves from exporting raw rubber to assembling cars and electronics for export. Millions of farmers’ children take factory and office jobs. Which pair of ideas describes this best?", options:[
+     {t:"Individual intragenerational mobility; a move from the core into the periphery", why:"The change affects whole groups because the economy changed, which is structural. And industrialising moves a country away from the periphery, not into it."},
+     {t:"Structural mobility; a move from the semi-periphery into the periphery", why:"Structural mobility fits, but the direction is wrong. Moving from raw materials to manufacturing means rising out of the periphery."},
+     {t:"Downward mobility; a sign that industrialisation has failed", why:"Farmers’ children moving into factory and office jobs is mostly upward movement, and it reflects growth, not failure."},
+     {t:"Structural mobility; a move from the periphery toward the semi-periphery", ok:true, why:"Yes. Whole groups moved because the economy changed (structural mobility). And countries can change position in the world system, here from raw materials toward manufacturing."}]},
+   {id:"e2u3-cp11", lesson:"e2u3-l5", level:3, q:"Ji-woo, a 12-year-old boy, joins a ballet class. Classmates tease him and say ballet is “for girls”. Within a month he quits, and the teasing stops. Which pair of ideas fits best?", options:[
+     {t:"An informal negative sanction; peers acting as an agent of gender socialization", ok:true, why:"Right. Teasing is an unofficial punishment (informal, negative). The classmates are teaching gender expectations, and peers are one of the four main agents of gender socialization."},
+     {t:"A formal negative sanction; the glass ceiling", why:"Teasing has no official rule or body behind it, so it is informal. The glass ceiling is a barrier to top jobs, not playground pressure."},
+     {t:"A positive informal sanction; doing gender", why:"Teasing is a punishment, not a reward, so it is negative. (Doing gender is related, but this option gets the sanction wrong.)"},
+     {t:"Secondary deviance; patriarchy", why:"Secondary deviance means a label sticks and the person continues the deviance. Ji-woo stopped, so the label did not lead to more deviance."}]},
+   {id:"e2u3-cp12", lesson:"e2u3-l2", level:3, q:"In Country Q, primary teachers are mostly women and engineers mostly men. Both jobs need four years’ training, are called vital and are short of staff. Engineers earn far more. What does this suggest about Davis–Moore?", options:[
+     {t:"It supports the thesis: engineering must be the more important job, since it pays more", why:"This uses pay to prove importance. The scenario says both jobs are seen as vital, need the same training and lack staff, so Davis–Moore’s factors can’t explain the gap."},
+     {t:"It shows a meritocracy at work: the engineers have simply shown more merit", why:"No real society is a meritocracy; the unit treats it as a hypothetical system. Similar training and importance with unequal pay points to social factors such as gender."},
+     {t:"It challenges the thesis: pay doesn’t just follow importance, and gender can shape it", ok:true, why:"Yes. Davis–Moore says vital jobs needing long training pay more, but these two jobs match on both. The gap fits Tumin’s point that the thesis ignores inequalities such as gender."},
+     {t:"It is irrelevant: the pay gap must come from a difference in training", why:"The scenario says both jobs need the same four years of training. The unit also shows that female-dominated work, such as care work, tends to pay less."}]}
+  ],
   codex:[
    {id:"deviance", title:"Deviance", aka:["norm violation","deviant behaviour","relativity of deviance"], tags:["sociology","deviance"],
     summary:"Breaking social norms, and why what counts as deviant depends on place, time and audience.",
@@ -1332,14 +1394,14 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e2u3-q01", lesson:"e2u3-l1", level:1, q:"How do sociologists define deviance?", options:[
-     {t:"Breaking a social norm, whether a custom, a moral rule or a law", ok:true, why:"Deviance covers any norm violation, from small customs to laws."},
+     {t:"Breaking a social norm, from customs to laws", ok:true, why:"Deviance covers any norm violation, from small customs to laws."},
      {t:"Breaking a criminal law", why:"That’s crime, which is only one part of deviance."},
-     {t:"Behaviour that harms other people", why:"Some deviance harms no one, and some harmful acts are seen as normal. The definition is about norms, not harm."},
+     {t:"Behaviour that harms other people or their property", why:"Some deviance harms no one, and some harmful acts are seen as normal. The definition is about norms, not harm."},
      {t:"Behaviour caused by mental illness", why:"Deviance is a social definition. It has nothing to do with diagnosing individuals."}
    ]},
    {id:"e2u3-q02", lesson:"e2u3-l1", level:2, q:"Mei’s office expects formal suits; at her friend’s tech start-up, a suit would draw jokes. What does this best illustrate?", options:[
-     {t:"Deviance is relative: the same act is judged differently in different settings.", ok:true, why:"Identical behaviour is deviant in one place and conforming in another because the norms differ."},
-     {t:"Suits are deviant everywhere.", why:"In Mei’s office a suit is the norm, so it isn’t deviant there."},
+     {t:"Deviance is relative to the setting.", ok:true, why:"The same act is judged differently in different settings. Identical behaviour is deviant in one place and conforming in another because the norms differ."},
+     {t:"Suits are deviant in every workplace.", why:"In Mei’s office a suit is the norm, so it isn’t deviant there."},
      {t:"Jokes are a formal sanction.", why:"Jokes are informal: there’s no official rule or body behind them."},
      {t:"This is secondary deviance.", why:"Secondary deviance involves a label changing someone’s identity, which isn’t described."}
    ]},
@@ -1356,7 +1418,7 @@ ICA.addUnit({
      {t:"Conformity", why:"Conformists accept both the goals and the legitimate means. Fraud isn’t a legitimate means."}
    ]},
    {id:"e2u3-q05", lesson:"e2u3-l1", level:3, q:"A town’s recorded sexual offences doubled in two years, but the national victim survey shows no rise. Police had also changed how they record reports. What is the most reasonable conclusion?", options:[
-     {t:"The rise may largely reflect changes in reporting or recording, so the figures can’t be read as a doubling of offences.", ok:true, why:"When recording practice changes and the survey shows no rise, recorded crime is measuring counting as much as crime. The UK ONS reported exactly this kind of effect."},
+     {t:"The rise may mostly reflect changes in reporting or recording.", ok:true, why:"The figures can’t be read as a doubling of offences. When recording practice changes and the survey shows no rise, recorded crime is measuring counting as much as crime. The UK ONS reported exactly this kind of effect."},
      {t:"Sexual offences definitely doubled; the survey must be wrong.", why:"Victim surveys capture unreported crime, so a mismatch is a reason for caution, not for dismissing the survey."},
      {t:"Recorded crime and surveys always agree, so there must be a calculation error.", why:"They often diverge because they measure different things in different ways."},
      {t:"The rise proves the police are failing.", why:"Better recording or more willingness to report can raise figures; it may even reflect improvement."}
@@ -1387,7 +1449,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e2u3-q10", lesson:"e2u3-l2", level:1, q:"What is the difference between income and wealth?", options:[
-     {t:"Income is money coming in over time; wealth is the net value of what you own minus what you owe.", ok:true, why:"Income is a flow; wealth is a stock at one moment."},
+     {t:"Income is money coming in; wealth is assets minus debts.", ok:true, why:"Income is money coming in over time (a flow); wealth is the net value of what you own minus what you owe at one moment (a stock)."},
      {t:"They are the same thing measured in different currencies.", why:"They measure different things: flow versus stock."},
      {t:"Income includes property; wealth includes only wages.", why:"It’s the other way round: property is part of wealth; wages are income."},
      {t:"Wealth is income after tax.", why:"Income after tax is still income. Wealth is assets minus debts."}
@@ -1399,8 +1461,8 @@ ICA.addUnit({
      {t:"The Davis–Moore thesis", why:"That’s a theory of why roles are rewarded, not a description of her situation."}
    ]},
    {id:"e2u3-q12", lesson:"e2u3-l2", level:1, q:"Which feature is typical of a caste system?", options:[
-     {t:"Position fixed at birth, with marriage expected within the group", ok:true, why:"Closed, ascribed position and endogamy are the core features of caste."},
-     {t:"Movement up through education and hard work", why:"That describes a class system’s openness."},
+     {t:"Position fixed at birth, marrying within the group", ok:true, why:"Closed, ascribed position and endogamy are the core features of caste."},
+     {t:"Movement up the ranks through education and hard work", why:"That describes a class system’s openness."},
      {t:"Rewards based purely on merit", why:"That describes the ideal of meritocracy."},
      {t:"Marriage across groups is common", why:"Exogamous marriage is a class-system feature."}
    ]},
@@ -1411,7 +1473,7 @@ ICA.addUnit({
      {t:"Proof that the society is a meritocracy", why:"Mass upward movement caused by new jobs says nothing about whether chances are equal."}
    ]},
    {id:"e2u3-q14", lesson:"e2u3-l2", level:3, q:"A politician says: “Surgeons earn far more than care workers because surgery is more important to society.” Which response reflects Tumin’s critique of the Davis–Moore thesis?", options:[
-     {t:"Rewards also reflect inherited advantage and who can afford long training, so stratification can block talented people rather than sorting them.", ok:true, why:"Tumin (1953) argued stratification limits the discovery of talent and that ‘importance’ is hard to measure objectively."},
+     {t:"Rewards also reflect inherited advantage, so talent can be blocked.", ok:true, why:"Rewards reflect who can afford long training, so stratification can block talented people rather than sorting them. Tumin (1953) argued stratification limits the discovery of talent and that ‘importance’ is hard to measure objectively."},
      {t:"Surgeons should earn less than care workers.", why:"Tumin’s critique is analytical, not a pay recommendation."},
      {t:"Davis and Moore were right that inequality always rewards the most important jobs.", why:"That’s the thesis Tumin was criticising."},
      {t:"Pay is decided only by government.", why:"Tumin’s point is about how stratification works, not who sets pay."}
@@ -1429,14 +1491,14 @@ ICA.addUnit({
      {t:"Merton: strain theory", why:"Strain theory is about deviance, not dimensions of rank."}
    ]},
    {id:"e2u3-q17", lesson:"e2u3-l2", level:3, q:"Amara’s grandparents were street vendors; her parents were teachers; Amara is a doctor. A newspaper says this proves “anyone can make it” in her country. What’s the strongest critique?", options:[
-     {t:"One family’s upward mobility can’t show how common it is; mobility must be measured across the whole population.", ok:true, why:"Individual stories are real but can be exceptional. Rates of mobility, and whether chances differ by family background, need population data."},
+     {t:"One family’s story can’t show how common mobility is.", ok:true, why:"Mobility must be measured across the whole population. Individual stories are real but can be exceptional. Rates of mobility, and whether chances differ by family background, need population data."},
      {t:"Her family experienced downward mobility.", why:"Each generation moved up, so this is upward intergenerational mobility."},
      {t:"Doctors aren’t part of any social class.", why:"Occupation is a key indicator of class."},
      {t:"Mobility between generations isn’t possible in class systems.", why:"Class systems allow mobility; the question is how much and for whom."}
    ]},
    {id:"e2u3-q18", lesson:"e2u3-l2", level:1, q:"An OECD study (2018) compared income and wealth inequality. What did it find?", options:[
-     {t:"Wealth was about twice as concentrated as income; the top 10% held on average 52% of household wealth.", ok:true, why:"These are the study’s findings for the OECD countries it covered."},
-     {t:"Income was more unequal than wealth.", why:"It found the opposite: wealth is far more concentrated."},
+     {t:"Wealth was about twice as concentrated as income.", ok:true, why:"The top 10% held on average 52% of household wealth. These are the study’s findings for the OECD countries it covered."},
+     {t:"Income was more unequal than wealth in most countries.", why:"It found the opposite: wealth is far more concentrated."},
      {t:"Wealth and income were equally unequal.", why:"Wealth concentration was about twice the level of income inequality."},
      {t:"The bottom 60% held most of the wealth.", why:"The least wealthy 60% held a little over 12%."}
    ]},
@@ -1472,7 +1534,7 @@ ICA.addUnit({
      {t:"The Davis–Moore thesis", why:"That’s a functionalist theory of stratification within societies."}
    ]},
    {id:"e2u3-q24", lesson:"e2u3-l3", level:3, q:"An analyst says: “South Korea grew rich through deep involvement in world trade with rich countries.” Which theory does this fact challenge most?", options:[
-     {t:"Dependency theory, which predicts that close ties to rich countries keep poorer countries poor", ok:true, why:"Successful growth through trade with the core is hard to square with classic dependency predictions."},
+     {t:"Dependency theory, which links rich-country ties to poverty", ok:true, why:"Dependency theory predicts that close ties to rich countries keep poorer countries poor. Successful growth through trade with the core is hard to square with classic dependency predictions."},
      {t:"Modernization theory, which predicts countries can industrialise", why:"Industrialisation and growth are broadly what modernization theory predicts."},
      {t:"World-systems theory, which says no country can change position", why:"World-systems theory expects that countries can move between positions."},
      {t:"Conflict theory of deviance", why:"That’s about crime and power, not national development."}
@@ -1484,33 +1546,33 @@ ICA.addUnit({
      {t:"Second World countries", why:"That’s a Cold War label, not a world-systems category."}
    ]},
    {id:"e2u3-q26", lesson:"e2u3-l3", level:2, q:"Why does the World Bank express its poverty line in PPP dollars?", options:[
-     {t:"To adjust for differences in what money can buy in each country", ok:true, why:"PPP converts according to local prices, so $3.00 means the same purchasing power everywhere."},
+     {t:"To reflect what money buys in each country", ok:true, why:"PPP converts according to local prices, so $3.00 means the same purchasing power everywhere."},
      {t:"Because all countries use US dollars", why:"They don’t; PPP is a conversion method for comparing local currencies."},
      {t:"To make poverty look lower", why:"PPP is about accuracy in comparing living standards, not changing the result."},
      {t:"Because exchange rates are always equal to PPP", why:"They often differ a lot, which is why PPP is needed."}
    ]},
    {id:"e2u3-q27", lesson:"e2u3-l3", level:3, q:"A report on a country says: “Its income group moved from low to lower-middle income, so poverty is solved.” What is the main flaw?", options:[
-     {t:"Income groups use average GNI per person, which can rise while many people remain below the poverty line.", ok:true, why:"Averages hide distribution: a country can move up a group while many households stay in extreme poverty."},
+     {t:"Average GNI can rise while many people stay poor.", ok:true, why:"Income groups use average GNI per person. Averages hide distribution: a country can move up a group while many households stay in extreme poverty."},
      {t:"Countries never change income groups.", why:"They can; the classification is updated every 1 July."},
      {t:"The lower-middle group is poorer than the low group.", why:"Lower-middle is the higher of the two."},
      {t:"Income groups are based on HDI values.", why:"They’re based on GNI per capita; HDI is a separate measure."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"e2u3-q28", lesson:"e2u3-l4", level:1, q:"What do sociologists mean when they say race is a social construction?", options:[
-     {t:"Racial categories are created by societies and vary across places and times, though they have real effects.", ok:true, why:"The categories are social decisions, not natural boundaries, yet they shape people’s lives."},
+     {t:"Societies create the categories, which have real effects.", ok:true, why:"Racial categories vary across places and times. They are social decisions, not natural boundaries, yet they shape people’s lives."},
      {t:"Race has no effect on people’s lives.", why:"Socially constructed doesn’t mean unreal; race shapes treatment, wealth and health."},
      {t:"Racial categories are fixed by genetics.", why:"Human genetic variation is mostly gradual and greater within groups than between them."},
-     {t:"Race and ethnicity mean exactly the same thing.", why:"Ethnicity is about shared culture; race is about perceived physical difference given meaning."}
+     {t:"Race and ethnicity mean exactly the same thing in every society.", why:"Ethnicity is about shared culture; race is about perceived physical difference given meaning."}
    ]},
    {id:"e2u3-q29", lesson:"e2u3-l4", level:1, q:"Which is an example of ethnicity rather than race?", options:[
-     {t:"Identifying as Kurdish through shared language, customs and history", ok:true, why:"Ethnicity is based on shared culture and history."},
+     {t:"Identifying as Kurdish through shared culture", ok:true, why:"Ethnicity is based on shared culture and history, such as language and customs."},
      {t:"Being classified by skin colour on an official form", why:"Classification by perceived physical features is a racial category."},
      {t:"Having a particular blood type", why:"That’s a biological trait, not an ethnic identity."},
      {t:"Being a citizen of a country", why:"Citizenship is a legal status; many ethnic groups can share one nationality."}
    ]},
    {id:"e2u3-q30", lesson:"e2u3-l4", level:2, q:"A hiring manager doesn’t dislike any group but follows a company rule to reject applicants without a local school certificate, which excludes most migrants. Which concept fits best?", options:[
-     {t:"Institutional discrimination: a routine rule with unequal effects, regardless of personal feelings", ok:true, why:"The disadvantage comes from the rule, not from individual prejudice."},
-     {t:"Prejudice", why:"Prejudice is an attitude; the manager has none here."},
+     {t:"Institutional discrimination", ok:true, why:"A routine rule has unequal effects, regardless of personal feelings. The disadvantage comes from the rule, not from individual prejudice."},
+     {t:"Individual prejudice against migrants", why:"Prejudice is an attitude; the manager has none here."},
      {t:"A stereotype", why:"No generalised belief about a group is being applied."},
      {t:"Pluralism", why:"Pluralism is a pattern of equal standing between groups, the opposite of this situation."}
    ]},
@@ -1521,7 +1583,7 @@ ICA.addUnit({
      {t:"Discrimination is a belief; prejudice is a law.", why:"Neither is right: prejudice is an attitude, discrimination an action."}
    ]},
    {id:"e2u3-q32", lesson:"e2u3-l4", level:2, q:"Under apartheid, Black South Africans were the majority of the population. Sociologically, they were:", options:[
-     {t:"A minority group, because they had less power and faced unequal treatment", ok:true, why:"Minority status in sociology is about power, not numbers."},
+     {t:"A minority group, because they had less power", ok:true, why:"They had less power and faced unequal treatment. Minority status in sociology is about power, not numbers."},
      {t:"The dominant group, because they were the majority", why:"A smaller white population held power, making it the dominant group."},
      {t:"Neither, because minority means under 50%", why:"Wirth’s definition is based on unequal treatment, not percentages."},
      {t:"An example of amalgamation", why:"Apartheid enforced separation, the opposite of blending."}
@@ -1533,10 +1595,10 @@ ICA.addUnit({
      {t:"Both are expulsion.", why:"No one is forced to leave a territory."}
    ]},
    {id:"e2u3-q34", lesson:"e2u3-l4", level:1, q:"Du Bois’s idea of double consciousness describes:", options:[
-     {t:"Always looking at oneself through the eyes of others, creating a divided sense of identity under racism", ok:true, why:"These are Du Bois’s own words from 1897 and The Souls of Black Folk (1903)."},
+     {t:"Seeing oneself through others’ eyes under racism", ok:true, why:"“Always looking at one’s self through the eyes of others” creates a divided sense of identity. These are Du Bois’s own words from 1897 and The Souls of Black Folk (1903)."},
      {t:"Speaking two languages fluently", why:"Bilingualism isn’t what Du Bois meant."},
      {t:"Holding two jobs at once", why:"That’s unrelated."},
-     {t:"Being aware of two theoretical perspectives", why:"Double consciousness is about identity under racism, not theory."}
+     {t:"Being aware of two theoretical perspectives at once", why:"Double consciousness is about identity under racism, not theory."}
    ]},
    {id:"e2u3-q35", lesson:"e2u3-l4", level:2, q:"Researchers send employers pairs of identical CVs that differ only in a name signalling ethnicity. What is this method best at showing?", options:[
      {t:"Whether discrimination occurs at the stage of being invited to interview", ok:true, why:"Holding everything else equal isolates the effect of the name at the first step of hiring."},
@@ -1545,20 +1607,20 @@ ICA.addUnit({
      {t:"How much people are paid after being hired", why:"The method measures callbacks, not later pay."}
    ]},
    {id:"e2u3-q36", lesson:"e2u3-l4", level:3, q:"Which explanation of ethnic inequality comes from the conflict perspective?", options:[
-     {t:"Dominant groups benefit from keeping others in low-paid work and protect their advantage through law and custom.", ok:true, why:"Asking who gains from inequality and how power keeps it in place is the conflict lens."},
+     {t:"Dominant groups gain from it and use power to keep it.", ok:true, why:"Dominant groups benefit from keeping others in low-paid work and protect their advantage through law and custom. Asking who gains from inequality and how power keeps it in place is the conflict lens."},
      {t:"Prejudice strengthens loyalty inside the in-group.", why:"That’s a functionalist observation about what prejudice does for a group."},
      {t:"People learn what race ‘means’ from everyday interactions.", why:"That’s interactionist."},
      {t:"Inequality is a natural result of biological difference.", why:"Sociologists reject this; race isn’t a biological category."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e2u3-q37", lesson:"e2u3-l5", level:1, q:"What is the difference between sex and gender in sociology?", options:[
-     {t:"Sex refers to biological characteristics; gender to socially constructed roles, behaviours and expectations.", ok:true, why:"This is the textbook’s and the WHO’s distinction."},
+     {t:"Sex is biological; gender is socially constructed.", ok:true, why:"Sex refers to biological characteristics; gender to socially constructed roles, behaviours and expectations. This is the textbook’s and the WHO’s distinction."},
      {t:"They mean the same thing.", why:"Sociologists separate them because they have different causes and vary differently."},
-     {t:"Gender refers to chromosomes; sex to clothing.", why:"That reverses and distorts the definitions."},
+     {t:"Gender refers to chromosomes; sex refers to clothing.", why:"That reverses and distorts the definitions."},
      {t:"Sex is about attraction; gender about bodies.", why:"Attraction is sexual orientation; bodies relate to sex."}
    ]},
    {id:"e2u3-q38", lesson:"e2u3-l5", level:2, q:"Lucía was assigned female at birth and knows herself to be a woman. She is attracted to women. Which description is accurate?", options:[
-     {t:"She is cisgender, and her attraction to women is part of her sexual orientation, a separate dimension.", ok:true, why:"Her identity matches her assigned sex (cisgender); who she is attracted to is her orientation, whatever word she uses for it (lesbian, gay, bisexual or another). The two dimensions are separate."},
+     {t:"She is cisgender; orientation is a separate dimension.", ok:true, why:"Her identity matches her assigned sex (cisgender); who she is attracted to is her orientation, whatever word she uses for it (lesbian, gay, bisexual or another). The two dimensions are separate."},
      {t:"She is transgender because she is attracted to women.", why:"Transgender is about gender identity, not attraction."},
      {t:"Her gender identity is lesbian.", why:"Lesbian describes sexual orientation, not gender identity."},
      {t:"She is intersex.", why:"Intersex refers to sex characteristics, which aren’t described here."}
@@ -1582,7 +1644,7 @@ ICA.addUnit({
      {t:"Edwin Lemert (1951)", why:"Lemert distinguished primary and secondary deviance."}
    ]},
    {id:"e2u3-q42", lesson:"e2u3-l5", level:3, q:"A study finds that a company pays men and women the same for each job, yet its overall median pay gap is 20%. What is the most likely explanation?", options:[
-     {t:"Women and men are concentrated in different jobs and levels, for example fewer women in senior, higher-paid roles.", ok:true, why:"A raw gap can come from occupational segregation and the glass ceiling even when equal pay for equal work is respected."},
+     {t:"Women and men are concentrated in different jobs and levels.", ok:true, why:"For example, there may be fewer women in senior, higher-paid roles. A raw gap can come from occupational segregation and the glass ceiling even when equal pay for equal work is respected."},
      {t:"The figures must be wrong, because equal pay for each job means no overall gap.", why:"The two measures are different; equal pay per job can coexist with a raw gap."},
      {t:"Women are paid less for doing identical jobs.", why:"The study found equal pay for each job, so that’s ruled out here."},
      {t:"The pay gap is caused by sexual orientation.", why:"Nothing in the study relates to orientation."}
@@ -1600,7 +1662,7 @@ ICA.addUnit({
      {t:"Exactly ten times as much", why:"The reported figure is more than 2.5 times."}
    ]},
    {id:"e2u3-q45", lesson:"e2u3-l5", level:3, q:"Which explanation of the gender division of labour reflects the functionalist perspective, and what is its main critique?", options:[
-     {t:"Separate earning and caring roles help families function; critics say it treats one family form as natural and ignores inequality.", ok:true, why:"Parsons’s instrumental and expressive roles are the classic functionalist view, criticised for ignoring power and change."},
+     {t:"Separate roles help families function; critics say this ignores inequality.", ok:true, why:"Critics also say it treats one family form as natural. Parsons’s instrumental (earning) and expressive (caring) roles are the classic functionalist view, criticised for ignoring power and change."},
      {t:"Men benefit from women’s unpaid labour; critics say it’s too focused on biology.", why:"That’s a conflict view, and the critique doesn’t fit it."},
      {t:"Gender is done in everyday interaction; critics say it’s a macro theory.", why:"That’s interactionist and it’s a micro theory, so the critique is reversed."},
      {t:"Race, class and gender combine; critics say it ignores gender.", why:"That’s intersectionality, which centres gender along with other positions."}

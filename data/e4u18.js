@@ -1,6 +1,6 @@
-/* International Studies · Unit 18 · Japan in the world */
+/* International Studies · Unit 19 · Japan in the world */
 ICA.addUnit({
-  id:"e4u18", track:"e4", n:18, title:"Japan in the world", icon:"🗾",
+  id:"e4u18", track:"e4", n:19, title:"Japan in the world", icon:"🗾",
   blurb:"Japan’s foreign policy at seminar level: the postwar traditions and the schools that argue over them; the security reforms of 2014–15 and 2022 and the arms-export and spending debates; the US alliance, Okinawa, the Free and Open Indo-Pacific and Japan’s new security partners; relations with China, the Koreas and Russia told neutrally; and Japan as a donor, UN member, trade and climate actor, with a method for writing about it. Facts as of November 2026.",
   goals:[
     "Explain the main traditions of postwar Japanese foreign policy and the schools of thought that interpret them (mercantile and reluctant realism, normal nation, middle power, antimilitarism)",
@@ -114,7 +114,7 @@ ICA.addUnit({
       {t:"Ozawa’s *Blueprint for a New Japan* appears in English", why:"1994; the Japanese original came out in 1993."}
     ]},
     {id:"e4u18-l1-x5", type:"mcq", q:"Kenji writes: “Japan’s 1980 idea of comprehensive security meant only that the SDF should cover land, sea and air.” What is wrong?", options:[
-      {t:"Comprehensive security went beyond the military: energy, food, economic stability and disaster preparedness, pursued through diplomacy, aid and the alliance", ok:true, why:"Right. The point was that a resource-poor trading state faces non-military threats too."},
+      {t:"It went beyond the military, to energy, food and disasters", ok:true, why:"Right: energy, food, economic stability and disaster preparedness, pursued through diplomacy, aid and the alliance. The point was that a resource-poor trading state faces non-military threats too."},
       {t:"Nothing; that is the definition", why:"The concept was explicitly broader than military coverage."},
       {t:"The idea came from the United States, not Japan", why:"It came from a Japanese study group set up by Prime Minister Ōhira."},
       {t:"It was adopted only in 2022", why:"It dates from around 1980; the 2022 documents are much later."}
@@ -252,8 +252,8 @@ ICA.addUnit({
       {t:"Enemy forces land on a remote Japanese island", b:0, why:"An attack on Japanese territory."}
     ]},
     {id:"e4u18-l2-x3", type:"mcq", q:"Which statement about **counterstrike capabilities** matches the government’s own description in the 2022 documents?", options:[
-      {t:"They allow strikes on an opponent’s territory after an armed attack, under the three new conditions, at the minimum necessary, and exclude pre-emptive strikes", ok:true, why:"Right: that is how the documents frame them. Critics dispute whether the line holds in practice."},
-      {t:"They allow Japan to strike first whenever it expects an attack", why:"The government explicitly says they exclude pre-emptive strikes."},
+      {t:"Strikes only after an armed attack, excluding pre-emptive ones", ok:true, why:"Right: strikes on an opponent’s territory after an armed attack, under the three new conditions, at the minimum necessary. That is how the documents frame them; critics dispute whether the line holds in practice."},
+      {t:"They allow Japan to strike first whenever it expects an attack soon", why:"The government explicitly says they exclude pre-emptive strikes."},
       {t:"They are nuclear weapons for deterrence", why:"They rely on conventional stand-off missiles; the Three Non-Nuclear Principles remain."},
       {t:"They are cyber tools only", why:"They are mainly missile capabilities, such as Type-12 upgrades and Tomahawks."}
     ]},
@@ -321,7 +321,7 @@ ICA.addUnit({
     {h:"An alliance that keeps changing", body:[
       {lead:"The treaty text of 1960 has never changed. Almost everything around it has."},
       "Unit 4 covered the basics: Article 5 (defence of territories under Japan’s administration), Article 6 (US bases) and the asymmetry between them ({{us-japan-alliance}}). Since then the alliance has been rebuilt through practice: defence guidelines in 1978, 1997 and 2015; joint planning; and a regular dialogue on [[extended-deterrence|extended deterrence]], the US nuclear umbrella (Unit 12).",
-      "Glenn Snyder’s pair of fears from Unit 4 still frames Japanese debate: **abandonment** (Washington will not help) and **entrapment** (Japan is dragged into a US war). Changes in US policy, such as tariff measures in 2025 (Unit 15), tend to revive fears of abandonment; a crisis over Taiwan raises fears of entrapment."
+      "Glenn Snyder’s pair of fears from Unit 4 still frames Japanese debate: **abandonment** (Washington will not help) and **entrapment** (Japan is dragged into a US war). Changes in US policy, such as tariff measures in 2025 (Unit 16), tend to revive fears of abandonment; a crisis over Taiwan raises fears of entrapment."
     ]},
     {h:"Paying for the alliance: host-nation support", body:[
       "Since 1978 Japan has paid part of the cost of stationing US forces, known as [[host-nation-support|host-nation support]] ([思いやり予算]{おもいやりよさん}, literally “sympathy budget”, still the popular name; since 2022 the government’s own nickname has been the “alliance resilience budget”, [同盟強靱化予算]{どうめいきょうじんかよさん}). Since 1987 the details have been set in [[special-measures-agreement|Special Measures Agreements]], most of them covering five years. The current agreement covers fiscal 2022–2026: 1,055.1 billion yen over five years, ending in March 2027.",
@@ -341,7 +341,7 @@ ICA.addUnit({
       {ex:"Not neutral: “Okinawans are forced to host bases they all reject.” Not neutral either: “Okinawa’s objections are just local politics.” Neutral: “The national government argues that Henoko is the only way to close Futenma while keeping deterrence; successive prefectural governments from 2014 to 2026 opposed it, citing the prefecture’s share of bases and environmental harm; in 2019 a non-binding referendum rejected the landfill, and in 2026 voters elected a governor who accepts the plan.”", label:"Writing it neutrally"}
     ]},
     {h:"The Free and Open Indo-Pacific", body:[
-      "The [[free-and-open-indo-pacific|Free and Open Indo-Pacific]] (FOIP) grew from Abe’s 2007 speech in India on the “confluence of the two seas” (Unit 21 covers the Indo-Pacific as an idea). Abe launched it as policy at TICAD VI in Nairobi in August 2016. Its core values: freedom, the rule of law and open markets across the Pacific and Indian Oceans.",
+      "The [[free-and-open-indo-pacific|Free and Open Indo-Pacific]] (FOIP) grew from Abe’s 2007 speech in India on the “confluence of the two seas” (Unit 22 covers the Indo-Pacific as an idea). Abe launched it as policy at TICAD VI in Nairobi in August 2016. Its core values: freedom, the rule of law and open markets across the Pacific and Indian Oceans.",
       "On 20 March 2023, in New Delhi, Prime Minister Kishida Fumio announced a “new plan” with four pillars:",
       {ol:["Principles for peace and rules for prosperity.","Addressing challenges in an Indo-Pacific way (climate, food, health, cyber).","Multi-layered connectivity.","Extending efforts for security and safe use of the “sea” to the “air”."]},
       "He pledged to mobilise more than 75 billion US dollars of public and private funds for infrastructure in the region by 2030, and stressed “inclusiveness” and “openness” as well as the rule of law.",
@@ -361,7 +361,7 @@ ICA.addUnit({
       "Many Southeast Asian states welcome the activity but practise [[strategic-hedging|hedging]] and avoid choosing sides."
     ]},
     {h:"Economic security", body:[
-      "[[economic-security|Economic security]] (Unit 15, {{geoeconomics}}) is now a pillar of Japanese policy, echoing the comprehensive security of 1980 (Lesson 1). The [[economic-security-promotion-act|Economic Security Promotion Act]] (May 2022) has four pillars: stable supply of critical materials, secure critical infrastructure, support for critical technologies, and secret patents for sensitive inventions. A 2024 law created a [[security-clearance-system|security clearance system]] for economic security information.",
+      "[[economic-security|Economic security]] (Unit 16, {{geoeconomics}}) is now a pillar of Japanese policy, echoing the comprehensive security of 1980 (Lesson 1). The [[economic-security-promotion-act|Economic Security Promotion Act]] (May 2022) has four pillars: stable supply of critical materials, secure critical infrastructure, support for critical technologies, and secret patents for sensitive inventions. A 2024 law created a [[security-clearance-system|security clearance system]] for economic security information.",
       "Experience shapes the policy. In 2010, after a collision near the Senkaku Islands, Japanese firms reported a halt in Chinese rare-earth shipments; China’s government denied any official ban. In 2025–26 Chinese restrictions on rare-earth exports to Japan were again reported. Supporters of the law stress resilience; critics in business warn of costs and red tape, and some scholars warn that “security” can justify almost any industrial subsidy (see {{japan-economic-security}}).",
       {terms:["host-nation-support","special-measures-agreement","saco","futenma-relocation","southwest-islands-defence","security-latticework","reciprocal-access-agreement","acsa","official-security-assistance","economic-security-promotion-act","security-clearance-system"]}
     ]}
@@ -376,8 +376,8 @@ ICA.addUnit({
       {t:"Reclamation threatens dugong habitat and coral in Oura Bay", b:1, why:"An environmental argument the prefecture raised with both governments."}
     ]},
     {id:"e4u18-l3-x3", type:"mcq", q:"Hana reads that Japan’s host-nation support is called [思いやり予算]{おもいやりよさん}. What is it?", options:[
-      {t:"Japan’s payments towards the costs of stationing US forces, set since 1987 in Special Measures Agreements, usually for five years", ok:true, why:"Right. The current agreement, for fiscal 2022–2026, totals 1,055.1 billion yen."},
-      {t:"US payments to Okinawa for land rent", why:"Host-nation support is paid by Japan, the host."},
+      {t:"Japan’s payments towards the cost of US forces in Japan", ok:true, why:"Right: set since 1987 in Special Measures Agreements, usually for five years. The current agreement, for fiscal 2022–2026, totals 1,055.1 billion yen."},
+      {t:"US payments to Okinawa’s landowners for renting base land", why:"Host-nation support is paid by Japan, the host."},
       {t:"Japan’s aid budget for Asia", why:"That is ODA, a different budget."},
       {t:"A fund for victims of base accidents", why:"Compensation exists but is not what the term means."}
     ]},
@@ -396,10 +396,10 @@ ICA.addUnit({
       ["Economic Security Promotion Act","Secures supply chains, infrastructure, technologies and sensitive patents","Passed in May 2022."]
     ]},
     {id:"e4u18-l3-x6", type:"mcq", q:"Which description of Japan’s ties with Australia and the Philippines is accurate as of November 2026?", options:[
-      {t:"They are security partnerships with access agreements and defence cooperation, but not mutual defence treaties", ok:true, why:"Right. Japan’s only treaty ally is the United States."},
+      {t:"Security partnerships, but not mutual defence treaties", ok:true, why:"Right: access agreements and defence cooperation. Japan’s only treaty ally is the United States."},
       {t:"Japan has mutual defence treaties with both", why:"Neither RAA contains a mutual defence commitment."},
       {t:"They are trade agreements only", why:"They include training, access and equipment cooperation."},
-      {t:"Japan has stationed permanent bases in both", why:"RAAs cover visits for training and exercises, not permanent bases."}
+      {t:"Japan has stationed permanent military bases in both countries", why:"RAAs cover visits for training and exercises, not permanent bases."}
     ]},
     {id:"e4u18-l3-x7", type:"spot", q:"A blog post about Okinawa, written in October 2026. Tap each sentence that is **inaccurate or not neutral**.", ask:"is inaccurate or not neutral", parts:[
       {t:"Okinawa hosts about 70% of the area used exclusively by US forces in Japan on about 0.6% of the land.", flag:false, why:"Accurate (Ministry of Defense and prefecture figures)."},
@@ -451,21 +451,21 @@ ICA.addUnit({
    learn:[
     {h:"Hot economics, cold politics", body:[
       {lead:"Japan’s neighbours are among its largest trading partners and sources of visitors. They are also where its hardest disputes lie."},
-      "Commentators call this mix [[seirei-keinetsu|“cold politics, hot economics”]] ([政冷経熱]{せいれいけいねつ}). It is a real puzzle for theory. Liberals expect interdependence to restrain conflict; realists expect rivalry to limit cooperation; constructivists point to memory and identity, the [[history-problem|history issues]] of Unit 4 ({{japan-and-neighbours}}). Unit 19 covers the region from China’s and Korea’s side; here the focus is Japan’s diplomacy.",
+      "Commentators call this mix [[seirei-keinetsu|“cold politics, hot economics”]] ([政冷経熱]{せいれいけいねつ}). It is a real puzzle for theory. Liberals expect interdependence to restrain conflict; realists expect rivalry to limit cooperation; constructivists point to memory and identity, the [[history-problem|history issues]] of Unit 4 ({{japan-and-neighbours}}). Unit 20 covers the region from China’s and Korea’s side; here the focus is Japan’s diplomacy.",
       {warn:"For every disputed place, use all the names on first mention, say who administers it, and attribute each claim to the government that makes it."}
     ]},
     {h:"Japan and China: from normalisation to crisis", body:[
       "In the [[japan-china-joint-communique|Joint Communiqué]] of 29 September 1972, Japan recognised the government of the People’s Republic of China (PRC) as China’s sole legal government and said it “fully understands and respects” the PRC’s position that Taiwan is an inalienable part of its territory (Unit 12). Japan ended official relations with Taipei but kept unofficial ties. The [[japan-china-peace-treaty|Treaty of Peace and Friendship]] followed in 1978, with a clause opposing “hegemony”.",
       "From 1979 Japan lent China large sums in yen for ports, railways and power plants, and Japanese firms built supply chains there. In 2006 the two governments agreed to pursue a [[mutually-beneficial-strategic-relationship|“mutually beneficial relationship based on common strategic interests”]], set out in a joint statement in 2008. Tension grew in parallel: a 2010 collision between a Chinese fishing boat and Japan Coast Guard vessels near the Senkakus, Japan’s 2012 purchase of three of the islands from a private owner, which China protested as “nationalisation”, and China’s 2013 [[air-defence-identification-zone|air defence identification zone]] covering them.",
       "On 7 November 2025, a week after meeting Xi Jinping at the APEC summit in South Korea, Prime Minister Takaichi Sanae told the Diet that a Taiwan contingency could become a [[survival-threatening-situation|survival-threatening situation]] for Japan (Lesson 2). China’s government demanded that she retract the remarks. It urged Chinese citizens to avoid Japan, curbed seafood imports, put Japanese firms on lists restricting their access to dual-use goods and restricted rare-earth exports to Japan. Takaichi did not retract; Japan’s government says its position on Taiwan, as set out in the 1972 Communiqué, is unchanged, and rejects Beijing’s charge that Japan is returning to militarism.",
-      "One year on, China’s Foreign Ministry said that “the responsibility lies entirely with the Japanese side” and that Japan must “correct its erroneous words and deeds on the Taiwan question” (CGTN, 6 November 2026). Reuters described ties as at one of their lowest points since 1972. The two leaders had not met since the dispute began; trade ministers spoke only briefly at an APEC meeting in May 2026. As of 13 November 2026 the APEC leaders’ meeting in Shenzhen (18–19 November) was the next chance for contact."
+      "One year on, China’s Foreign Ministry said that “the responsibility lies entirely with the Japanese side” and that Japan must “correct its erroneous words and deeds on the Taiwan question” (CGTN, 6 November 2026). Reuters described ties as at one of their lowest points since 1972. The two leaders had not met since the dispute began; trade ministers spoke only briefly at an APEC meeting in May 2026. Both attended the APEC leaders’ meeting in Shenzhen on 18–19 November 2026, but they held no formal talks; Takaichi said afterwards that she still wanted dialogue with Xi (Jiji Press via Nippon.com, 19 November 2026)."
     ]},
     {h:"Islands: three disputes, mirror-image positions", body:[
       {fig:'<svg viewBox="0 0 340 420"><text x="170" y="20" text-anchor="middle">North</text><rect class="d-panel" x="8" y="32" width="324" height="112" rx="8" stroke-width="2"/><text x="170" y="54" text-anchor="middle">Northern Territories (Japan)</text><text x="170" y="72" text-anchor="middle">Southern Kurils (Russia)</text><rect class="d-sage" x="18" y="84" width="146" height="50" rx="6" stroke-width="2"/><text class="s" x="91" y="104" text-anchor="middle">Administered by</text><text x="91" y="124" text-anchor="middle">Russia</text><rect class="d-rose" x="176" y="84" width="146" height="50" rx="6" stroke-width="2"/><text class="s" x="249" y="104" text-anchor="middle">Also claimed by</text><text x="249" y="124" text-anchor="middle">Japan</text><rect class="d-panel" x="8" y="156" width="324" height="112" rx="8" stroke-width="2"/><text x="170" y="178" text-anchor="middle">Takeshima (Japan)</text><text x="170" y="196" text-anchor="middle">Dokdo (South Korea)</text><rect class="d-sage" x="18" y="208" width="146" height="50" rx="6" stroke-width="2"/><text class="s" x="91" y="228" text-anchor="middle">Administered by</text><text x="91" y="248" text-anchor="middle">South Korea</text><rect class="d-rose" x="176" y="208" width="146" height="50" rx="6" stroke-width="2"/><text class="s" x="249" y="228" text-anchor="middle">Also claimed by</text><text x="249" y="248" text-anchor="middle">Japan</text><rect class="d-panel" x="8" y="280" width="324" height="112" rx="8" stroke-width="2"/><text x="170" y="302" text-anchor="middle">Senkaku (Japan) / Diaoyu (PRC)</text><text x="170" y="320" text-anchor="middle">/ Diaoyutai (Taiwan)</text><rect class="d-sage" x="18" y="332" width="146" height="50" rx="6" stroke-width="2"/><text class="s" x="91" y="352" text-anchor="middle">Administered by</text><text x="91" y="372" text-anchor="middle">Japan</text><rect class="d-rose" x="176" y="332" width="146" height="50" rx="6" stroke-width="2"/><text class="s" x="249" y="352" text-anchor="middle">Also claimed by</text><text x="249" y="372" text-anchor="middle">PRC and Taiwan</text><text x="170" y="412" text-anchor="middle">South</text></svg>', alt:"Three panels from north to south. First: Northern Territories, Japan’s name, or Southern Kurils, Russia’s name; administered by Russia, also claimed by Japan. Second: Takeshima, Japan’s name, or Dokdo, South Korea’s name; administered by South Korea, also claimed by Japan. Third: Senkaku, Japan’s name, Diaoyu, the PRC’s name, or Diaoyutai, Taiwan’s name; administered by Japan, also claimed by the PRC and Taiwan.", cap:"Japan’s three island disputes. Where Japan administers, it says there is no dispute; where South Korea administers, Seoul says the same."},
       "On the **[[senkaku-diaoyu-islands|Senkaku/Diaoyu Islands]]**, Japan’s government says it incorporated the islands in 1895 after surveys showed they were [[terra-nullius|terra nullius]] (unclaimed), and that China and Taiwan began to claim them only in the 1970s, after a 1968 survey carried out with a UN regional commission pointed to possible oil under the seabed. The PRC’s 2012 white paper *Diaoyu Dao, an Inherent Territory of China* cites records from a Ming envoy’s account of 1534 on, argues that Japan took the islands secretly near the end of the 1894–95 war and with Taiwan under the Treaty of Shimonoseki, and says the Cairo and Potsdam declarations required their return. China also says leaders reached an understanding in the 1970s to leave the issue for later; Japan’s Foreign Ministry denies any agreement to “shelve” it. Taiwan’s authorities make a claim of their own, on similar historical grounds. Chinese coast guard ships now patrol near the islands regularly. Unit 10’s method for maritime law applies here too ({{south-china-sea-arbitration}})."
     ]},
     {h:"Japan and South Korea: a settlement and its limits", body:[
-      "The 1965 [[treaty-on-basic-relations-1965|Treaty on Basic Relations]] came with a [[claims-agreement-1965|Claims Agreement]]: Japan provided grants and loans, and both sides declared property and claims problems settled “completely and finally”. Japan’s government holds that this closed all claims. In 2018 South Korea’s Supreme Court ruled in [[forced-labour-rulings|wartime forced-labour cases]] that victims’ claims for compensation arising from unlawful colonial rule were not extinguished, and ordered Japanese firms to pay. Japan called the rulings a breach of the agreement; trade measures and a near-collapse of intelligence sharing followed in 2019 (Unit 15).",
+      "The 1965 [[treaty-on-basic-relations-1965|Treaty on Basic Relations]] came with a [[claims-agreement-1965|Claims Agreement]]: Japan provided grants and loans, and both sides declared property and claims problems settled “completely and finally”. Japan’s government holds that this closed all claims. In 2018 South Korea’s Supreme Court ruled in [[forced-labour-rulings|wartime forced-labour cases]] that victims’ claims for compensation arising from unlawful colonial rule were not extinguished, and ordered Japanese firms to pay. Japan called the rulings a breach of the agreement; trade measures and a near-collapse of intelligence sharing followed in 2019 (Unit 16).",
       "On 6 March 2023 President Yoon Suk Yeol’s government announced a [[third-party-compensation|third-party compensation plan]]: a Korean government-backed foundation would pay the plaintiffs from voluntary donations, without Japanese firms paying. Prime Minister Kishida said Japan upheld “in its entirety” the position of previous cabinets on history, including the 1998 Obuchi–Kim declaration that expressed “deep remorse and heartfelt apology”. At a Tokyo summit on 16 March 2023 the leaders restored [[shuttle-diplomacy|shuttle diplomacy]], ended the export dispute and fully normalised the [[gsomia|GSOMIA]] intelligence pact.",
       "Reactions show that rapprochement is contested at home. A Gallup Korea poll (March 2023) found 59% opposed and 35% supported the plan; an *Asahi Shimbun* poll in Japan found 55% positive. Some surviving victims refused the payments; by mid-April 2023, ten of the fifteen plaintiffs or their families had accepted. The opposition leader Lee Jae-myung called the plan “the biggest humiliation and stain in diplomatic history”, yet as president (from June 2025) he kept up shuttle diplomacy: he visited Prime Minister Takaichi’s home prefecture, Nara, in January 2026, and she visited his home town, Andong, in May 2026. Since taking office Lee has avoided statements on the most divisive history issues, and Takaichi has not visited Yasukuni Shrine; a Japanese official still said that “seeds of history-related issues still exist” (Jiji Press, May 2026). The 2015 agreement on the “comfort women” issue, and its later review in Seoul, are covered in Unit 4. On **[[takeshima-dokdo|Takeshima/Dokdo]]**, administered by South Korea, Japan says it incorporated the islets in 1905 and has proposed going to the International Court of Justice; South Korea says they are historically Korean, that the 1905 step was part of colonisation, and that there is no dispute."
     ]},
@@ -511,13 +511,13 @@ ICA.addUnit({
       {t:"Prime Minister Takaichi’s Diet remarks on a Taiwan contingency", why:"7 November 2025."}
     ]},
     {id:"e4u18-l4-x4", type:"mcq", q:"What did South Korea’s 2023 third-party compensation plan provide?", options:[
-      {t:"A Korean government-backed foundation would pay the plaintiffs from voluntary donations, without the Japanese firms paying", ok:true, why:"Right. Critics objected that Japanese firms did not contribute; supporters said it unblocked relations."},
-      {t:"Japan’s government would pay all victims directly", why:"Japan holds that the 1965 agreement settled claims; it did not pay under the plan."},
+      {t:"A Korean foundation would pay, so Japanese firms would not", ok:true, why:"Right: a Korean government-backed foundation would pay the plaintiffs from voluntary donations. Critics objected that Japanese firms did not contribute; supporters said it unblocked relations."},
+      {t:"Japan’s government would pay all victims directly from its budget", why:"Japan holds that the 1965 agreement settled claims; it did not pay under the plan."},
       {t:"The Japanese firms would pay under court order", why:"The plan was designed so they would not have to."},
       {t:"The 1965 treaty would be cancelled", why:"The treaty remains in force."}
     ]},
     {id:"e4u18-l4-x5", type:"mcq", q:"Which statement about the abduction issue matches the official record?", options:[
-      {t:"Japan officially identifies 17 abductees; five returned in October 2002; Japan rejects North Korea’s claim that the issue is resolved", ok:true, why:"Right, according to Japan’s Headquarters for the Abduction Issue."},
+      {t:"Japan names 17 abductees, five of whom returned in 2002", ok:true, why:"Right, according to Japan’s Headquarters for the Abduction Issue: five returned in October 2002, and Japan rejects North Korea’s claim that the issue is resolved."},
       {t:"All abductees have returned", why:"Only five returned (with family members later); Japan says the others’ fate is unknown."},
       {t:"North Korea has always denied any abductions", why:"Kim Jong Il admitted them at the 2002 summit."},
       {t:"Japan and North Korea established diplomatic relations in 2002", why:"They have no diplomatic relations."}
@@ -532,8 +532,8 @@ ICA.addUnit({
       {t:"Japan and Russia signed a peace treaty in 2018 in Singapore.", flag:true, why:"Inaccurate. In 2018 Abe and Putin agreed only to speed up talks; no treaty has been signed."}
     ]},
     {id:"e4u18-l4-x7", type:"mcq", q:"Tomás writes that “interdependence keeps Japan–China relations calm”. Which evidence from 2025–26 most challenges his claim?", options:[
-      {t:"After a political dispute in November 2025, China used travel advisories, seafood suspensions and rare-earth restrictions, turning economic ties into pressure", ok:true, why:"Right: interdependence did not prevent a crisis, and economic links became tools in it. A liberal might reply that both sides still avoided escalation to force."},
-      {t:"Japan and China both signed RCEP in 2020", why:"That supports, rather than challenges, the interdependence story."},
+      {t:"China used travel, seafood and rare-earth measures in the dispute", ok:true, why:"Right: after a political dispute in November 2025, China used travel advisories, seafood suspensions and rare-earth restrictions, turning economic ties into pressure. A liberal might reply that both sides still avoided escalation to force."},
+      {t:"Japan and China both signed RCEP in 2020, deepening their trade ties", why:"That supports, rather than challenges, the interdependence story."},
       {t:"The 1978 treaty is still in force", why:"Its survival says little about whether interdependence calms tension."},
       {t:"Japanese firms still invest in China", why:"That is evidence of continued interdependence, not of its limits."}
     ]}
@@ -588,12 +588,12 @@ ICA.addUnit({
       "Two methods stand out. Japanese aid long followed a [[request-based-principle|request-based principle]]: projects started from the partner government’s request, in the spirit of “self-help”. The 2023 Charter adds [[offer-type-cooperation|offer-type cooperation]]: Japan “proactively proposes attractive cooperation menus”, packages built on its own strengths, to partner countries (Diplomatic Bluebook 2026). And Japan promotes [[quality-infrastructure|quality infrastructure]]: projects judged on life-cycle cost, resilience to disasters, environmental and social standards and debt sustainability, not only on price, an idea endorsed by the G20 at Osaka in 2019.",
       "The Charter keeps aid **non-military**. Support for partners’ armed forces goes through the separate [[official-security-assistance|Official Security Assistance]] created in April 2023 (Lesson 3).",
       {fig:'<svg viewBox="0 0 340 430"><text x="170" y="20" text-anchor="middle">Three channels, three rulebooks</text><rect class="d-sage" x="10" y="34" width="320" height="112" rx="10" stroke-width="2"/><text x="24" y="58">Development cooperation (ODA)</text><text class="s" x="24" y="80">To: governments, civilian agencies,</text><text class="s" x="24" y="96">including coast guards</text><text class="s" x="24" y="116">Rule: Development Cooperation</text><text class="s" x="24" y="132">Charter, non-military use only</text><rect class="d-gold" x="10" y="160" width="320" height="112" rx="10" stroke-width="2"/><text x="24" y="184">Official Security Assistance</text><text class="s" x="24" y="206">To: partners’ armed forces</text><text class="s" x="24" y="222">(radars, patrol boats, drones)</text><text class="s" x="24" y="242">Rule: grants within the Three</text><text class="s" x="24" y="258">Principles on equipment transfer</text><rect class="d-rose" x="10" y="286" width="320" height="112" rx="10" stroke-width="2"/><text x="24" y="310">Defence equipment transfer</text><text class="s" x="24" y="332">To: states with a transfer</text><text class="s" x="24" y="348">agreement with Japan</text><text class="s" x="24" y="368">Rule: Three Principles, NSC review</text><text class="s" x="24" y="384">case by case (Lesson 2)</text><text class="s" x="170" y="420" text-anchor="middle">More military in purpose, further down</text></svg>', alt:"Three stacked boxes. Top: development cooperation or ODA, given to governments and civilian agencies including coast guards, under the Development Cooperation Charter, for non-military use only. Middle: Official Security Assistance, given to partners’ armed forces as radars, patrol boats and drones, as grants within the Three Principles on equipment transfer. Bottom: defence equipment transfer, to states with a transfer agreement with Japan, under the Three Principles with case-by-case National Security Council review. A note says the channels become more military in purpose further down.", cap:"Since 2023 Japan has kept aid, security assistance and arms transfers in separate channels with separate rules. Scholars debate how firm the walls between them are."},
-      "Debates, attributed. Supporters say the Charter is honest about interests and offers partners an alternative to lenders with weaker standards (compare China’s lending, Unit 15, {{china-overseas-lending}}). Some development NGOs and scholars worry that “national interests” and offer-type packages tie aid back to Japanese firms, as critics said of tied aid in the 1980s ([[tied-aid]]), and that the line between development and security is blurring."
+      "Debates, attributed. Supporters say the Charter is honest about interests and offers partners an alternative to lenders with weaker standards (compare China’s lending, Unit 16, {{china-overseas-lending}}). Some development NGOs and scholars worry that “national interests” and offer-type packages tie aid back to Japanese firms, as critics said of tied aid in the 1980s ([[tied-aid]]), and that the line between development and security is blurring."
     ]},
     {h:"Human security and Africa", body:[
       "Japan has made [[human-security|human security]] a signature idea since Prime Minister Obuchi’s speeches of 1998 (Unit 12). It funded the UN Trust Fund for Human Security, and Ogata Sadako ({{sadako-ogata}}) co-chaired the Commission on Human Security with Amartya Sen, whose report *Human Security Now* appeared in 2003. Japanese usage leans to the broad “freedom from want” version: health, livelihoods and dignity as well as protection from violence.",
       "Africa is where these ideas meet Japan’s diplomacy. The Tokyo International Conference on African Development (TICAD), first held in 1993 (Unit 4), is co-organised with the UN, UNDP, the World Bank and the African Union Commission. It met in Africa for the first time in Nairobi in 2016 (Lesson 3). TICAD 9 took place in August 2025 under the theme “Co-create innovative solutions with Africa”.",
-      "Readings differ. Supporters stress TICAD’s multilateral design and its language of African “ownership”. Sceptics ask how far the pledges made at each conference are delivered and how much private Japanese investment follows, and scholars often compare TICAD with China’s Forum on China–Africa Cooperation (Unit 22 compares the Africa–Asia forums)."
+      "Readings differ. Supporters stress TICAD’s multilateral design and its language of African “ownership”. Sceptics ask how far the pledges made at each conference are delivered and how much private Japanese investment follows, and scholars often compare TICAD with China’s Forum on China–Africa Cooperation (Unit 23 compares the Africa–Asia forums)."
     ]},
     {h:"Japan at the United Nations", body:[
       "Japan joined the UN in December 1956. It has been elected a non-permanent member of the Security Council **12 times**, more than any other member; its latest term ran from January 2023 to December 2024 (Diplomatic Bluebook 2025). In 2023 Japan was reported to have decided to stand next in the 2032 election, for 2033–34, leaving room for other Asia-Pacific candidates (Yomiuri, May 2023).",
@@ -605,14 +605,14 @@ ICA.addUnit({
       ]}
     ]},
     {h:"A rule-maker in trade", body:[
-      "When the United States left the Trans-Pacific Partnership in January 2017, Japan led the remaining eleven to rescue it. They signed the [[cptpp|CPTPP]] in March 2018; the United Kingdom joined in December 2024, making twelve parties (Unit 15). Japan also joined [[rcep|RCEP]], in force from 2022, which includes China and South Korea, and concluded an Economic Partnership Agreement with the EU (in force 2019).",
+      "When the United States left the Trans-Pacific Partnership in January 2017, Japan led the remaining eleven to rescue it. They signed the [[cptpp|CPTPP]] in March 2018; the United Kingdom joined in December 2024, making twelve parties (Unit 16). Japan also joined [[rcep|RCEP]], in force from 2022, which includes China and South Korea, and concluded an Economic Partnership Agreement with the EU (in force 2019).",
       "Scholars read this activism in two ways. One sees a **middle power** filling a gap left by the United States and locking in high-standard rules on state firms, data and investment. The other sees **hedging**: Japan keeps both a US-centred network and a China-inclusive one. Applications to CPTPP from China and from Taiwan (both lodged in 2021) put the question sharply; the CPTPP parties, Japan among them, say that new members must meet the agreement’s high standards and show a record of keeping their trade commitments, and that decisions are taken by consensus.",
       "Economic security (Lesson 3) now runs through trade policy too: supply-chain agreements, export controls and the 2026 FOIP’s focus on critical minerals sit beside free-trade rules ([[economic-security]])."
     ]},
     {h:"Climate and energy diplomacy", body:[
-      "Japan’s targets, as submitted to the UN in February 2025: cut greenhouse-gas emissions by 46% by fiscal 2030 (striving for 50%), 60% by fiscal 2035 and 73% by fiscal 2040, all from fiscal 2013 levels, on a path to [[net-zero|net zero]] by 2050, a goal declared in October 2020. At home the [[green-transformation|Green Transformation]] (GX) policy funds the shift with transition bonds and an emissions trading scheme (Unit 16).",
+      "Japan’s targets, as submitted to the UN in February 2025: cut greenhouse-gas emissions by 46% by fiscal 2030 (striving for 50%), 60% by fiscal 2035 and 73% by fiscal 2040, all from fiscal 2013 levels, on a path to [[net-zero|net zero]] by 2050, a goal declared in October 2020. At home the [[green-transformation|Green Transformation]] (GX) policy funds the shift with transition bonds and an emissions trading scheme (Unit 17).",
       {list:[
-        "**[[joint-crediting-mechanism|Joint Crediting Mechanism]] (JCM):** Japan funds low-carbon projects in partner countries and counts part of the resulting credits towards its own target, about 100 million tonnes of CO₂ by fiscal 2030 under its NDC, now as cooperation under Article 6 of the Paris Agreement (Unit 16).",
+        "**[[joint-crediting-mechanism|Joint Crediting Mechanism]] (JCM):** Japan funds low-carbon projects in partner countries and counts part of the resulting credits towards its own target, about 100 million tonnes of CO₂ by fiscal 2030 under its NDC, now as cooperation under Article 6 of the Paris Agreement (Unit 17).",
         "**[[azec|Asia Zero Emission Community]] (AZEC):** launched in 2023 with Australia and Southeast Asian partners to promote decarbonisation through pathways suited to each country. Supporters say it fits countries that still depend on coal and gas; environmental groups argue that its support for LNG and for ammonia or hydrogen co-firing in coal plants prolongs fossil fuel use."
       ]},
       "One dispute mixes environment, science and neighbours. Since August 2023 Japan has released [[alps-treated-water|treated water]] from the damaged Fukushima Daiichi nuclear plant into the sea, after a review by the International Atomic Energy Agency (IAEA) found the plan consistent with international safety standards. China’s government calls it “nuclear-contaminated water” and banned Japanese seafood imports; it began to lift the ban in June 2025, then halted imports again in November 2025 during the dispute in Lesson 4. South Korea’s government accepted the IAEA’s findings while many Korean citizens protested; some Pacific Island leaders asked for more consultation. Name the source of each claim, and keep the scientific review separate from the political reactions."
@@ -666,9 +666,9 @@ ICA.addUnit({
       {t:"The United Kingdom becomes a CPTPP party", why:"December 2024."}
     ]},
     {id:"e4u18-l5-x6", type:"mcq", q:"Priya writes about the release of treated water from Fukushima Daiichi. Which sentence is accurate and neutral?", options:[
-      {t:"Japan began releases in August 2023 after an IAEA review found the plan consistent with international safety standards; China’s government, which calls it “nuclear-contaminated water”, banned Japanese seafood imports", ok:true, why:"Right: dated, sourced, and each position attributed."},
+      {t:"After an IAEA review, Japan began releases in 2023; China’s government objected", ok:true, why:"Right: dated, sourced, and each position attributed. Japan began releases in August 2023 after an IAEA review found the plan consistent with international safety standards; China’s government, which calls it “nuclear-contaminated water”, banned Japanese seafood imports."},
       {t:"Japan is dumping radioactive waste into the Pacific", why:"This adopts one side’s framing as fact and ignores the IAEA review."},
-      {t:"The water is perfectly safe and all objections are political", why:"This takes Japan’s side and dismisses others’ concerns instead of attributing them."},
+      {t:"The water is perfectly safe, as the IAEA proved, and all objections are political", why:"This takes Japan’s side and dismisses others’ concerns instead of attributing them."},
       {t:"All of Japan’s neighbours accepted the release", why:"Inaccurate: China objected strongly, and many South Korean citizens protested even though their government accepted the IAEA’s findings."}
     ]},
     {id:"e4u18-l5-x7", type:"spot", q:"A draft seminar paragraph. Tap each sentence that is a **weak argument** for a seminar paper.", ask:"is a weak argument", parts:[
@@ -909,7 +909,7 @@ ICA.addUnit({
      starter:[
       "The **Free and Open Indo-Pacific** (FOIP) is Japan’s name for its vision of the region stretching from the Pacific to the Indian Ocean and on to Africa: freedom of navigation, the rule of law, open markets and good connections.",
       "Prime Minister Abe Shinzō launched it in August 2016 at a conference on African development in Nairobi. Prime Minister Kishida added a “new plan” in 2023, and Prime Minister Takaichi presented an updated version in Hanoi in May 2026.",
-      "The idea of the Indo-Pacific as a region is covered in Unit 21; this entry covers Japan’s policy.",
+      "The idea of the Indo-Pacific as a region is covered in Unit 22; this entry covers Japan’s policy.",
       {key:"FOIP began as a values-and-connectivity vision and has become steadily more about resilience, supply chains and security."}
      ],
      builder:[
@@ -923,7 +923,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Readings.** Realists read FOIP as soft balancing against China; liberals as rule-making and connectivity; constructivists as identity-building, Japan as a “maritime democracy”. Its early wording called it a “strategy”; later official texts preferred “vision”, which some scholars read as an effort to reassure ASEAN states.",
-      "**Others’ views.** China’s government describes Indo-Pacific strategies as aimed at containing it; ASEAN states welcome investment but avoid choosing sides; India and Australia have their own Indo-Pacific policies (Unit 21).",
+      "**Others’ views.** China’s government describes Indo-Pacific strategies as aimed at containing it; ASEAN states welcome investment but avoid choosing sides; India and Australia have their own Indo-Pacific policies (Unit 22).",
       "**Evaluating it.** Ask what is new money versus relabelled existing aid, which projects were delivered, and how partners describe them.",
       {tip:"Quote FOIP from the Foreign Ministry’s own documents, with the version and date, and compare with a partner’s or a critic’s statement."}
      ]
@@ -975,8 +975,8 @@ ICA.addUnit({
      ],
      builder:[
       "**The 2022 Act’s four pillars:** stable supply of critical materials (such as semiconductors, batteries, rare earths); secure critical infrastructure (vetting key equipment); support for critical technologies; and non-disclosure of sensitive patents.",
-      "**Wider toolkit:** export controls coordinated with the US and the Netherlands on chipmaking tools (2023, Unit 15), subsidies for domestic chip plants, and supply-chain agreements with partners; the 2026 FOIP update puts critical minerals at its centre.",
-      "Link the general concepts in Unit 15: [[economic-security]], [[weaponised-interdependence|weaponised interdependence]], [[economic-coercion|economic coercion]]."
+      "**Wider toolkit:** export controls coordinated with the US and the Netherlands on chipmaking tools (2023, Unit 16), subsidies for domestic chip plants, and supply-chain agreements with partners; the 2026 FOIP update puts critical minerals at its centre.",
+      "Link the general concepts in Unit 16: [[economic-security]], [[weaponised-interdependence|weaponised interdependence]], [[economic-coercion|economic coercion]]."
      ],
      pro:[
       "**Debates.** Supporters stress resilience and bargaining power. Business groups worry about compliance costs and lost markets; economists warn that “security” can justify almost any subsidy and invite retaliation; civil-liberties groups raised privacy concerns about clearance checks.",
@@ -987,7 +987,7 @@ ICA.addUnit({
     },
     related:["geoeconomics","japan-china-relations","foip-policy","japan-foreign-policy-schools"],
     read:[{book:"dbb", where:"Chapter 3, Section 3 “Economic Diplomacy”"}],
-    sources:[{t:"Reuters via The Star, “Japan works to shield Takaichi from any Xi snub at China’s APEC summit”, 9 November 2026", url:"https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/09/japan-works-to-shield-takaichi-from-any-xi-snub-at-china039s-apec-summit"}],
+    sources:[{t:"Reuters via The Star, “Japan works to shield Takaichi from any Xi snub at China’s APEC summit”, 9 November 2026", url:"https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/09/japan-works-to-shield-takaichi-from-any-xi-snub-at-china039s-apec-summit"},{t:"Jiji Press via Nippon.com, “Japan’s Takaichi Ends APEC Summit without Talks with China’s Xi”, 19 November 2026", url:"https://www.nippon.com/en/articles/-/57742"}],
     checked:"2026-11"},
 
    {id:"japan-china-relations", title:"Japan–China relations", aka:["Sino-Japanese relations","Senkaku/Diaoyu","1972 normalisation","seirei keinetsu"], tags:["Japan","China","East Asia"],
@@ -1007,12 +1007,12 @@ ICA.addUnit({
         ["2006–08","[[mutually-beneficial-strategic-relationship|Mutually beneficial strategic relationship]]"],
         ["2010–13","Boat collision; Japan buys three islands (2012); China’s [[air-defence-identification-zone|ADIZ]] (2013)"],
         ["Nov 2025","Takaichi’s Diet remark; travel advisory, seafood curbs, dual-use and rare-earth restrictions"],
-        ["Nov 2026","No leaders’ meeting since; APEC in Shenzhen, 18–19 November"]
+        ["Nov 2026","Both at APEC in Shenzhen (18–19 November), but no formal talks"]
       ]},
       "**Island positions.** Japan: incorporated by cabinet decision on 14 January 1895 after finding no sign of Qing control; no territorial issue exists; no “shelving” agreement. PRC (2012 white paper): Chinese since the Ming era, taken with Taiwan, to be returned under Cairo and Potsdam; leaders agreed in the 1970s to leave the issue for later. Taiwan also claims the islands."
      ],
      pro:[
-      "**Explaining the pattern.** Liberals stress how interdependence and institutions (RCEP, the trilateral process with Korea) limited escalation; realists stress a power shift and the East China Sea; constructivists stress memory and nationalism on both sides (Unit 19 covers memory politics).",
+      "**Explaining the pattern.** Liberals stress how interdependence and institutions (RCEP, the trilateral process with Korea) limited escalation; realists stress a power shift and the East China Sea; constructivists stress memory and nationalism on both sides (Unit 20 covers memory politics).",
       "**The 2025–26 crisis.** China’s Foreign Ministry says “the responsibility lies entirely with the Japanese side” and that Japan must “correct its erroneous words and deeds on the Taiwan question”; Japan’s government says its Taiwan position is unchanged and rejects the charge of militarism. Describe the measures as each government describes them, with dates.",
       "**Sources.** Read both governments’ foreign ministry statements, and data on trade, tourism and coast guard activity from the issuing bodies.",
       {warn:"Use all names for the islands on first mention, say who administers them, and attribute every legal claim."}
@@ -1172,13 +1172,13 @@ ICA.addUnit({
      ],
      builder:[
       "**NDC (February 2025):** −60% by FY2035 and −73% by FY2040 versus FY2013; JCM credits of about 100 million tonnes of CO₂ by FY2030 and 200 million by FY2040, counted towards the target.",
-      "**[[green-transformation|GX]]:** transition bonds and a compulsory emissions trading scheme for large emitters (Unit 16).",
-      "**Coalitions:** Japan negotiates in the Umbrella Group of developed countries (Unit 16).",
+      "**[[green-transformation|GX]]:** transition bonds and a compulsory emissions trading scheme for large emitters (Unit 17).",
+      "**Coalitions:** Japan negotiates in the Umbrella Group of developed countries (Unit 17).",
       "**[[alps-treated-water|Treated water]]:** releases since August 2023 after an IAEA review found the plan consistent with international safety standards; China’s government calls it “nuclear-contaminated water” and banned Japanese seafood from August 2023, began lifting the ban in June 2025 and halted imports again in November 2025."
      ],
      pro:[
       "**Debates.** Climate analysts criticised the 2035 target as below a 1.5 °C pathway; the government calls it ambitious and “aligned with the global 1.5°C goal”. AZEC’s support for LNG and ammonia or hydrogen co-firing is praised by some partners as practical and criticised by environmental groups as delaying coal phase-out.",
-      "**Article 6.** The JCM is now a test case for cooperative approaches under the Paris Agreement: watch for rules on double counting and transparency (Unit 16).",
+      "**Article 6.** The JCM is now a test case for cooperative approaches under the Paris Agreement: watch for rules on double counting and transparency (Unit 17).",
       "**Science and politics.** In the treated-water dispute, keep the IAEA’s technical review separate from governments’ political reactions, and note that South Korea’s government accepted the review while many citizens protested.",
       {tip:"Quote targets from the NDC text on the UNFCCC registry, with base year and fiscal-year basis."}
      ]
@@ -1281,17 +1281,79 @@ ICA.addUnit({
    {id:"green-transformation", term:"Green Transformation (GX)", def:"Japan’s policy, set in law in 2023, for decarbonising the economy while keeping energy supply stable and industry competitive, funded partly by transition bonds.", codex:"japan-climate-energy-diplomacy"}
   ],
   checkpoint:["e4u18-q02","e4u18-q06","e4u18-q11","e4u18-q14","e4u18-q17","e4u18-q21","e4u18-q24","e4u18-q29","e4u18-q32","e4u18-q36","e4u18-q39","e4u18-q44"],
+  cpBank:[
+   {id:"e4u18-cp01", lesson:"e4u18-l1", level:1, q:"A policy paper treats stable gas imports, food stockpiles and earthquake preparedness as security issues, to be pursued through diplomacy, aid and the alliance together. Which Japanese idea does it echo?", options:[
+     {t:"The exclusively defence-oriented policy", why:"That principle limits the use of force to responding to an attack. It does not widen security to energy or food."},
+     {t:"Comprehensive security", ok:true, why:"Yes. Ōhira’s study group (1980) defined security to include energy, food, economic stability and disaster preparedness."},
+     {t:"The normal-nation idea", why:"Ozawa’s normal nation is about taking on international security responsibilities, especially under the UN."},
+     {t:"Checkbook diplomacy", why:"That was critics’ label for paying money without sending personnel in the Gulf War."}]},
+   {id:"e4u18-cp02", lesson:"e4u18-l1", level:2, q:"An analyst argues: “Once economic weight stopped guaranteeing influence, and a neighbour’s power grew, Tokyo became more assertive and independent, but only reluctantly.” Whose explanation is this?", options:[
+     {t:"Michael Green’s reluctant realism", ok:true, why:"Right. Green (2001) argued that these pressures pushed Japan towards a more assertive realism, reluctantly."},
+     {t:"Heginbotham and Samuels’ mercantile realism", why:"Mercantile realism stresses techno-economic security: technology and markets as core security interests."},
+     {t:"Kent Calder’s reactive state", why:"The reactive-state view says policy moved mainly under outside pressure, above all from Washington."},
+     {t:"Hanns Maull’s civilian power", why:"Maull argued Japan chose trade and institutions over force; he did not describe a turn to assertiveness."}]},
+   {id:"e4u18-cp03", lesson:"e4u18-l1", level:3, q:"A paper concludes that Japan “has remilitarised” because the law now allows limited collective self-defence. Drawing on Lessons 1 and 2, which objection is strongest?", options:[
+     {t:"The relevant law has not changed since 1960, so nothing new has happened in Japan at all", why:"The 2014 decision and 2015 laws did change what Japan may legally do. The question is what that change shows."},
+     {t:"Only public opinion polls matter, so changes in the law are beside the point", why:"No single indicator settles it. The lesson asks you to use several and say why."},
+     {t:"Law is one indicator; capability, deployments and spending can move at other speeds", ok:true, why:"Yes. Scholars disagree partly about indicators, and Lesson 2 asks you to separate what Japan can legally do, can do and has done."},
+     {t:"The objection fails: any change in security law is proof of remilitarisation", why:"This is the paper’s own error. Liff and Oros read the same changes as incremental or as renegotiated identity."}]},
+   {id:"e4u18-cp04", lesson:"e4u18-l2", level:1, q:"In a debate on raising defence spending, an economist asks how a country with high public debt will pay for permanent increases. Which of the lesson’s four cases is this?", options:[
+     {t:"The deterrence case", why:"The deterrence case argues that credible capabilities make war less likely. It is not about how to pay."},
+     {t:"The security-dilemma case", why:"That case warns that one side’s defence looks like a threat to the other."},
+     {t:"The constitutional and democratic case", why:"That case is about how changes were made: by reinterpretation rather than amendment."},
+     {t:"The fiscal case", ok:true, why:"Right. The fiscal case asks how permanent increases will be funded; the government has linked part of it to tax measures and spending reviews."}]},
+   {id:"e4u18-cp05", lesson:"e4u18-l2", level:2, q:"An armed attack on a country in a close relationship with Japan threatens Japan’s survival. But other appropriate means to repel the attack are still available. Under the 2014 conditions, may Japan use force?", options:[
+     {t:"Yes, because the first condition is met", why:"All three conditions must be met, not just the first."},
+     {t:"No, because the second condition (no other appropriate means) is not met", ok:true, why:"Yes. Force is allowed only when there is no other appropriate means to repel the attack and protect the people."},
+     {t:"Yes, because collective self-defence has no limits at all after the 2014 decision", why:"The 2014 decision allows only limited collective self-defence, under three strict conditions."},
+     {t:"No, because Japan may never use force for another country", why:"Since 2014, limited collective self-defence is possible when all three conditions are met."}]},
+   {id:"e4u18-cp06", lesson:"e4u18-l2", level:2, q:"Why did changing the official reading of Article 9 become the main route to changing Japan’s security policy? Use Lessons 1 and 2.", options:[
+     {t:"Because Article 9 of the Constitution was formally amended by referendum in 2014", why:"The Constitution has not been amended. The 2014 change was a cabinet reinterpretation."},
+     {t:"Because the 1960 US alliance treaty requires Japan to reinterpret Article 9 every few years", why:"The 1960 treaty text has never changed and does not require reinterpretation."},
+     {t:"Because the Cabinet Legislation Bureau’s readings worked like case law, so new readings set new limits", ok:true, why:"Right. Each reading built on earlier Diet answers, so a new interpretation, as in 2014, was the route to new policy."},
+     {t:"Because the UN Security Council ordered Japan to accept collective self-defence", why:"No UN body ordered this; it was a domestic decision."}]},
+   {id:"e4u18-cp07", lesson:"e4u18-l3", level:1, q:"Japanese commentators worry that if a crisis breaks out over Taiwan, Japan could be dragged into a war the United States is fighting. Which of Snyder’s fears is this?", options:[
+     {t:"Abandonment", why:"Abandonment is the fear that the ally will not help. Here the fear is being pulled into the ally’s war."},
+     {t:"Gaiatsu", why:"Gaiatsu means outside pressure on policy, not a fear about alliance commitments."},
+     {t:"Entrapment", ok:true, why:"Yes. Entrapment is the fear of being dragged into an ally’s war; the lesson notes a Taiwan crisis raises it."},
+     {t:"The security dilemma", why:"The security dilemma is about rivals misreading each other’s defence. This worry is about the ally."}]},
+   {id:"e4u18-cp08", lesson:"e4u18-l3", level:2, q:"In cost-sharing talks, one side’s officials stress how much Japan pays per US soldier. The other side’s officials stress the land, the risk and the capabilities Japan provides. What does the lesson say about this?", options:[
+     {t:"Only the money measure is valid, because it can be counted", why:"The lesson treats both measures as real. Each side tends to choose the one that favours it."},
+     {t:"Each side tends to pick the measure, money or contributions, that favours it", ok:true, why:"Right. One argument counts money; the other counts territory, risk and capabilities."},
+     {t:"Only contributions count, because host-nation support ended", why:"Host-nation support continues under Special Measures Agreements."},
+     {t:"The two sides agree, because both measures always give exactly the same answer", why:"The measures can point in different directions, which is why each side picks its own."}]},
+   {id:"e4u18-cp09", lesson:"e4u18-l3", level:3, q:"A student writes: “Japan’s economic security policy is completely new, starting with the 2022 law.” Drawing on Lessons 1 and 3, which correction is best?", options:[
+     {t:"It echoes comprehensive security (1980) and mercantile realism’s techno-economic security", ok:true, why:"Yes. The lesson links today’s economic security to the 1980 comprehensive security idea, and mercantile realism treated technology and markets as security interests."},
+     {t:"Japan never treated supply chains, energy or other resources as a security issue before 2022", why:"The oil shocks of the 1970s already showed Japan’s exposure and led to the comprehensive security report."},
+     {t:"Economic security is only about weapons exports, not materials or technology", why:"The 2022 law’s pillars are critical materials, infrastructure, technologies and secret patents, not weapons exports."},
+     {t:"The 2022 law began by repealing the Three Non-Nuclear Principles of 1967", why:"The law has nothing to do with nuclear principles; it concerns economic security."}]},
+   {id:"e4u18-cp10", lesson:"e4u18-l4", level:2, q:"Writing about Takeshima/Dokdo, which statement is a fact that both governments refer to, rather than a disputed claim?", options:[
+     {t:"The islets are inherent Japanese territory", why:"This is Japan’s government’s claim; South Korea rejects it."},
+     {t:"There is no territorial dispute over the islets at all", why:"This is South Korea’s government’s position; Japan says there is a dispute and has proposed going to the ICJ."},
+     {t:"In 1905 Japan took a step to incorporate the islets", ok:true, why:"Right. Japan cites the 1905 incorporation; South Korea calls that step part of colonisation. The event is shared; its meaning is disputed."},
+     {t:"The 1905 step was lawful", why:"Whether it was lawful is exactly what is disputed, so it must be attributed."}]},
+   {id:"e4u18-cp11", lesson:"e4u18-l4", level:3, q:"A paper says South Korea’s March 2023 compensation plan “settled the forced-labour issue for good”. Which revision best fits the evidence in the lesson?", options:[
+     {t:"Keep it: Japanese firms paid all the plaintiffs in full, so the issue is closed", why:"Under the plan, a Korean government-backed foundation paid from voluntary donations, without Japanese firms paying."},
+     {t:"Say the plan was rejected by both governments and shuttle diplomacy ended", why:"Both governments embraced it: shuttle diplomacy resumed and the export dispute ended."},
+     {t:"Say the plan was imposed on both countries by a ruling of the International Court of Justice", why:"The ICJ played no part; it was a decision of the Yoon government."},
+     {t:"It restored ties, but most Koreans polled opposed it and some victims refused payment", ok:true, why:"Yes. The thaw was real, yet a Gallup Korea poll found 59% opposed, and some plaintiffs refused the payments."}]},
+   {id:"e4u18-cp12", lesson:"e4u18-l5", level:3, q:"Japan gives coastal radars to a partner country’s navy. A critic says this breaks the Development Cooperation Charter’s non-military rule. Drawing on Lessons 3 and 5, what is the most accurate reply?", options:[
+     {t:"The critic is right: the Charter was amended to allow aid to armed forces", why:"The Charter still keeps ODA non-military. Support for armed forces goes through a separate channel."},
+     {t:"Such grants go through Official Security Assistance, a channel separate from ODA", ok:true, why:"Right. OSA (from April 2023) is kept apart from development aid, and the lesson attributes the blurring concern to some NGOs and scholars."},
+     {t:"Radars are not defence equipment, so no rule on transfers applies to them", why:"Radars for armed forces are exactly the kind of equipment OSA provides, under its own rules."},
+     {t:"Japan cannot give any equipment to foreign armed forces under any of its current rules", why:"OSA was created precisely to provide equipment such as coastal radars to partners’ armed forces."}]}
+  ],
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u18-q01", lesson:"e4u18-l1", level:1, q:"What did the Three Non-Nuclear Principles commit Japan to?", options:[
-     {t:"Not possessing, not producing and not permitting the introduction of nuclear weapons", ok:true, why:"Right: stated by Satō in 1967 and affirmed by the Diet in 1971."},
+     {t:"Not possessing, making or letting in nuclear weapons", ok:true, why:"Right: not possessing, not producing and not permitting the introduction of nuclear weapons, stated by Satō in 1967 and affirmed by the Diet in 1971."},
      {t:"Not using nuclear power for electricity", why:"Japan has used nuclear power since the 1960s; the principles concern weapons."},
      {t:"Leaving the US nuclear umbrella", why:"Japan relies on US extended deterrence."},
      {t:"Signing the Treaty on the Prohibition of Nuclear Weapons", why:"Japan has not joined that treaty."}]},
    {id:"e4u18-q02", lesson:"e4u18-l1", level:2, q:"Kenji argues that Japan’s 1992 peacekeeping law happened mainly because Washington and other governments criticised Japan’s money-only role in the Gulf War. Which explanation is he using?", options:[
-     {t:"The reactive-state (gaiatsu) argument", ok:true, why:"Right: outside pressure is the trigger in Calder’s account."},
+     {t:"The reactive-state argument", ok:true, why:"Right: the reactive-state (gaiatsu) argument. Outside pressure is the trigger in Calder’s account."},
      {t:"Mercantile realism", why:"That stresses techno-economic security as Japan’s own strategy."},
-     {t:"Antimilitarist norms", why:"Those would explain the law’s limits rather than its timing."},
+     {t:"Antimilitarist norms after defeat", why:"Those would explain the law’s limits rather than its timing."},
      {t:"Civilian power", why:"That describes a preference for trade and institutions, not a response to pressure."}]},
    {id:"e4u18-q03", lesson:"e4u18-l1", level:1, q:"In Samuels’ map of Japan’s security debate, which group wants a bigger military role **inside** the US alliance?", options:[
      {t:"Normal nationalists", ok:true, why:"Right: close to the US and willing to use force."},
@@ -1299,22 +1361,22 @@ ICA.addUnit({
      {t:"Pacifists", why:"They are wary of both the alliance and the military."},
      {t:"Middle-power internationalists", why:"They favour restraint and multilateral diplomacy."}]},
    {id:"e4u18-q04", lesson:"e4u18-l1", level:1, q:"What did “comprehensive security” (1980) add to the idea of security?", options:[
-     {t:"Non-military dimensions such as energy, food, economic stability and disasters", ok:true, why:"Right: a resource-poor trading state faces threats beyond armed attack."},
-     {t:"Nuclear deterrence of its own", why:"It did nothing of the kind; Japan kept the non-nuclear principles."},
-     {t:"Collective self-defence", why:"That came only with the 2014 reinterpretation."},
-     {t:"Withdrawal from the US alliance", why:"The alliance remained one of its tools."}]},
+     {t:"Non-military threats such as energy and food", ok:true, why:"Right: energy, food, economic stability and disasters. A resource-poor trading state faces threats beyond armed attack."},
+     {t:"Plans for a nuclear deterrent of its own", why:"It did nothing of the kind; Japan kept the non-nuclear principles."},
+     {t:"Collective self-defence with the United States", why:"That came only with the 2014 reinterpretation."},
+     {t:"A gradual withdrawal from the US alliance", why:"The alliance remained one of its tools."}]},
    {id:"e4u18-q05", lesson:"e4u18-l1", level:2, q:"Which work argued that a culture of antimilitarism, built after defeat, shaped Japan’s security policy?", options:[
      {t:"Thomas Berger, *Cultures of Antimilitarism* (1998)", ok:true, why:"Right: a constructivist account, alongside Katzenstein (1996)."},
      {t:"Michael Green, *Japan’s Reluctant Realism* (2001)", why:"Green stresses realist adaptation."},
      {t:"Ozawa Ichirō, *Blueprint for a New Japan*", why:"That is a policy proposal for a normal nation."},
      {t:"Heginbotham and Samuels (1998)", why:"They argued for mercantile realism."}]},
    {id:"e4u18-q06", lesson:"e4u18-l1", level:3, q:"Lucía must decide whether Japan has “fundamentally changed” since 1990. Which plan is strongest?", options:[
-     {t:"Define indicators (spending, legal authority, capabilities, deployments, opinion), track each over time, and say where they diverge", ok:true, why:"Right: the scholarly disagreement is largely about indicators."},
+     {t:"Define indicators, track each over time, and say where they diverge", ok:true, why:"Right: indicators such as spending, legal authority, capabilities, deployments and opinion. The scholarly disagreement is largely about indicators."},
      {t:"Compare the text of Article 9 in 1990 and today", why:"The text is unchanged; interpretation, laws and budgets changed."},
      {t:"Quote one prime minister’s speech", why:"One speech shows intentions, not change across indicators."},
-     {t:"Count how many times “normal” appears in newspapers", why:"That measures framing, not policy."}]},
+     {t:"Count how many times “normal nation” appears in Japanese newspapers since 1990", why:"That measures framing, not policy."}]},
    {id:"e4u18-q07", lesson:"e4u18-l1", level:2, q:"Why did critics object to the phrase “normal nation”?", options:[
-     {t:"It implies postwar Japan was abnormal and treats one model of military power as the norm", ok:true, why:"Right: the label carries a judgement as well as a proposal."},
+     {t:"It implies postwar Japan was abnormal", ok:true, why:"Right: it implies postwar Japan was abnormal and treats one model of military power as the norm, so the label carries a judgement as well as a proposal."},
      {t:"Because Ozawa wanted Japan to leave the UN", why:"He wanted more UN-centred roles, not less."},
      {t:"Because it called for nuclear weapons", why:"His proposal did not."},
      {t:"Because it was proposed by the Communist Party", why:"Ozawa was then an LDP politician."}]},
@@ -1324,7 +1386,7 @@ ICA.addUnit({
      {t:"The National Diet Library", why:"It is a library and research service."},
      {t:"The Bank of Japan", why:"It is the central bank."}]},
    {id:"e4u18-q09", lesson:"e4u18-l1", level:3, q:"Mei writes: “Japan stayed lightly armed because Japanese people are naturally peaceful.” What is the best criticism?", options:[
-     {t:"It is a national-character claim that cannot be tested; explain restraint through specific norms, institutions, interests and pressures with evidence", ok:true, why:"Right: scholars such as Berger trace norms historically rather than assuming a fixed character."},
+     {t:"It is an untestable national-character claim", ok:true, why:"Right: explain restraint through specific norms, institutions, interests and pressures, with evidence. Scholars such as Berger trace norms historically rather than assuming a fixed character."},
      {t:"It is fine because constructivists agree", why:"Constructivists study historically built norms, not innate traits."},
      {t:"It is wrong because Japan has no armed forces", why:"Japan has had the SDF since 1954."},
      {t:"It is wrong because Japan always followed US orders", why:"That replaces one sweeping claim with another."}]},
@@ -1345,30 +1407,30 @@ ICA.addUnit({
      {t:"Three Principles, Five Categories, SMA", why:"These are arms-export rules and a cost-sharing agreement."},
      {t:"FOIP, CPTPP, RCEP", why:"These are a regional vision and trade agreements."}]},
    {id:"e4u18-q13", lesson:"e4u18-l2", level:2, q:"How does Japan’s government describe counterstrike capabilities?", options:[
-     {t:"Strikes on an opponent’s territory after an armed attack, under the three conditions, at the minimum necessary, excluding pre-emptive strikes", ok:true, why:"Right; critics question whether the line holds in practice."},
-     {t:"First strikes whenever an attack is expected", why:"The government explicitly excludes pre-emptive strikes."},
+     {t:"Strikes only after an armed attack, excluding pre-emption", ok:true, why:"Right: strikes on an opponent’s territory after an armed attack, under the three conditions, at the minimum necessary, excluding pre-emptive strikes. Critics question whether the line holds in practice."},
+     {t:"First strikes on enemy bases whenever an attack is expected to come", why:"The government explicitly excludes pre-emptive strikes."},
      {t:"Nuclear retaliation", why:"They are conventional missiles."},
      {t:"Cyber operations only", why:"They are mainly stand-off missiles."}]},
    {id:"e4u18-q14", lesson:"e4u18-l2", level:3, q:"Fatima reads that Japan “reached 2% of GDP in fiscal 2025”. What should her paper add?", options:[
-     {t:"Whose count it is (the government’s, including related items and a supplementary budget) and how NATO or SIPRI definitions differ", ok:true, why:"Right: defence spending figures depend on definitions."},
+     {t:"Whose count it is, and how other definitions differ", ok:true, why:"Right: the government’s count includes related items and a supplementary budget, and NATO or SIPRI definitions differ. Defence spending figures depend on definitions."},
      {t:"Nothing; 2% is 2% everywhere", why:"Definitions differ between governments and databases."},
      {t:"That the 2% was reached in 2022", why:"2022 set the target for fiscal 2027."},
-     {t:"That the figure excludes all supplementary budgets", why:"The government’s count combined initial and supplementary budgets."}]},
+     {t:"That the figure excludes all supplementary budget spending", why:"The government’s count combined initial and supplementary budgets."}]},
    {id:"e4u18-q15", lesson:"e4u18-l2", level:1, q:"What happened to arms exports in April 2026?", options:[
-     {t:"The five-categories limit was abolished; lethal exports became possible to countries with transfer agreements, after NSC review", ok:true, why:"Right: recorded in the 2026 defence white paper and reported on 21 April 2026."},
+     {t:"The five-categories limit was abolished", ok:true, why:"Right: lethal exports became possible to countries with transfer agreements, after NSC review. Recorded in the 2026 defence white paper and reported on 21 April 2026."},
      {t:"All exports were banned again", why:"The change loosened the rules."},
      {t:"Japan started selling to any buyer", why:"Exports are limited to countries with agreements and screened."},
      {t:"Exports now need a Diet vote for each sale", why:"Screening is by the National Security Council."}]},
    {id:"e4u18-q16", lesson:"e4u18-l2", level:2, q:"Which argument uses **security-dilemma** logic?", options:[
-     {t:"Japan’s new missiles may look offensive to neighbours, who then build up too, leaving everyone less secure", ok:true, why:"Right: defensive steps read as threats feed a spiral."},
+     {t:"Neighbours may see Japan’s missiles as offensive and arm in reply", ok:true, why:"Right: defensive steps read as threats feed a spiral that can leave everyone less secure."},
      {t:"Stronger deterrence makes war less likely", why:"That is the deterrence argument."},
-     {t:"The changes bypassed constitutional amendment", why:"That is the constitutional argument."},
+     {t:"The changes bypassed constitutional amendment, so they lack legitimacy", why:"That is the constitutional argument."},
      {t:"High public debt limits spending", why:"That is the fiscal argument."}]},
    {id:"e4u18-q17", lesson:"e4u18-l2", level:3, q:"In June 2026 the Japan Innovation Party asked for a “realistic” review of the Three Non-Nuclear Principles. How should a neutral paper report this?", options:[
-     {t:"As one party’s proposal in the 2026 review, dated and attributed, alongside groups that defend the principles; not as government policy", ok:true, why:"Right: a party proposal is not a decision."},
+     {t:"As one party’s dated, attributed proposal, not government policy", ok:true, why:"Right: report it as one party’s proposal in the 2026 review, alongside groups that defend the principles. A party proposal is not a decision."},
      {t:"As proof that Japan will build nuclear weapons", why:"That leaps from a proposal to a prediction."},
      {t:"As the government’s new policy", why:"Party proposals are inputs to a review."},
-     {t:"Leave it out because it is controversial", why:"Controversial facts can be reported neutrally."}]},
+     {t:"Leave it out, because a neutral paper should avoid controversial topics", why:"Controversial facts can be reported neutrally."}]},
    {id:"e4u18-q18", lesson:"e4u18-l2", level:1, q:"Which body did the Abe government create in December 2013 to direct security policy from the Prime Minister’s Office?", options:[
      {t:"A National Security Council", ok:true, why:"Right, with a secretariat added in 2014."},
      {t:"The Ministry of Defense", why:"The Defense Agency became a ministry in 2007."},
@@ -1376,8 +1438,8 @@ ICA.addUnit({
      {t:"The Cabinet Legislation Bureau", why:"It is much older."}]},
    /* ---- Lesson 3 ---- */
    {id:"e4u18-q19", lesson:"e4u18-l3", level:1, q:"What is host-nation support?", options:[
-     {t:"Japan’s payments towards the cost of stationing US forces, set in agreements usually lasting five years", ok:true, why:"Right: the fiscal 2022–2026 agreement totals 1,055.1 billion yen."},
-     {t:"US payments for renting Japanese land", why:"Japan, the host, pays."},
+     {t:"Japan’s payments towards the cost of US forces in Japan", ok:true, why:"Right: set in agreements usually lasting five years; the fiscal 2022–2026 agreement totals 1,055.1 billion yen."},
+     {t:"US payments to Japanese landowners for renting base land", why:"Japan, the host, pays."},
      {t:"Japan’s aid to Asian countries", why:"That is ODA."},
      {t:"NATO support for Japan", why:"Japan is not a NATO member."}]},
    {id:"e4u18-q20", lesson:"e4u18-l3", level:2, q:"Okinawa has about 0.6% of Japan’s land and about 70% of the area used exclusively by US forces. What does this comparison support?", options:[
@@ -1386,9 +1448,9 @@ ICA.addUnit({
      {t:"That bases bring no benefits", why:"The figure says nothing about income or jobs."},
      {t:"That Henoko has been cancelled", why:"It does not concern the plan’s status."}]},
    {id:"e4u18-q21", lesson:"e4u18-l3", level:3, q:"Which sentence about Okinawa is accurate and neutral as of November 2026?", options:[
-     {t:"The national government backs Henoko; governors from 2014 to 2026 opposed it; a 2019 non-binding referendum rejected the landfill; in September 2026 voters elected Koja Genta, who accepts the plan", ok:true, why:"Right: dated and attributed."},
+     {t:"Tokyo backs Henoko; governors since 2014 opposed it, but the one elected in 2026 accepts it", ok:true, why:"Right: dated and attributed. The national government backs Henoko; governors from 2014 to 2026 opposed it; a 2019 non-binding referendum rejected the landfill; in September 2026 voters elected Koja Genta, who accepts the plan."},
      {t:"All Okinawans oppose every base", why:"A sweeping claim; residents are divided."},
-     {t:"The base question was settled in 2019", why:"The referendum was not binding."},
+     {t:"The base question was settled in 2019, when a binding referendum approved the landfill at Henoko", why:"The 2019 referendum was non-binding, and it rejected the landfill."},
      {t:"Tamaki Denny won a third term in 2026", why:"He lost to Koja Genta on 13 September 2026."}]},
    {id:"e4u18-q22", lesson:"e4u18-l3", level:1, q:"Where did Prime Minister Abe launch the Free and Open Indo-Pacific in August 2016?", options:[
      {t:"At TICAD VI in Nairobi", ok:true, why:"Right: the first TICAD held in Africa."},
@@ -1396,18 +1458,18 @@ ICA.addUnit({
      {t:"In the US Congress", why:"No: the setting was an African development conference."},
      {t:"At an ASEAN summit in Jakarta", why:"No: it was launched in Nairobi, Kenya."}]},
    {id:"e4u18-q23", lesson:"e4u18-l3", level:2, q:"Which best describes the 2026 update of FOIP?", options:[
-     {t:"It keeps the 2016 principles and focuses on AI- and data-age infrastructure, supply chains for energy and critical minerals, rule-sharing and security cooperation", ok:true, why:"Right: from values and connectivity towards resilience and security."},
-     {t:"It replaces FOIP with a military alliance", why:"It is a policy vision, not a treaty."},
+     {t:"It keeps the 2016 principles and stresses resilience and security", ok:true, why:"Right: it focuses on AI- and data-age infrastructure, supply chains for energy and critical minerals, rule-sharing and security cooperation, moving from values and connectivity towards resilience and security."},
+     {t:"It replaces FOIP with a formal military alliance of Indo-Pacific states", why:"It is a policy vision, not a treaty."},
      {t:"It drops the rule of law", why:"It upholds the 2016 principles."},
      {t:"It excludes trade", why:"It includes CPTPP expansion."}]},
    {id:"e4u18-q24", lesson:"e4u18-l3", level:2, q:"What is a Reciprocal Access Agreement?", options:[
-     {t:"Legal rules for one side’s forces visiting the other for training and exercises; not a basing or mutual defence treaty", ok:true, why:"Right: Japan’s include those with Australia, the UK and the Philippines."},
+     {t:"Rules for one side’s forces visiting the other to train", ok:true, why:"Right: legal rules for training and exercises, not a basing or mutual defence treaty. Japan’s include those with Australia, the UK and the Philippines."},
      {t:"A mutual defence treaty", why:"RAAs contain no defence commitment."},
      {t:"A free trade agreement", why:"They concern military visits."},
-     {t:"A permission to build permanent bases", why:"The Japan–Philippines RAA says it gives no basis for facilities."}]},
+     {t:"A permission to build permanent bases in the partner country", why:"The Japan–Philippines RAA says it gives no basis for facilities."}]},
    {id:"e4u18-q25", lesson:"e4u18-l3", level:1, q:"Official Security Assistance (OSA), created in 2023, provides…", options:[
-     {t:"Grants of equipment such as radars and patrol boats to partners’ armed forces, separately from ODA", ok:true, why:"Right: created in April 2023, outside the non-military ODA rules."},
-     {t:"Loans for railways", why:"That is ODA."},
+     {t:"Grants of equipment to partners’ armed forces", ok:true, why:"Right: equipment such as radars and patrol boats, created in April 2023 separately from ODA, outside the non-military ODA rules."},
+     {t:"Loans for railways and ports in partner countries", why:"That is ODA."},
      {t:"Payments to US forces", why:"That is host-nation support."},
      {t:"Peacekeeping troops", why:"Peacekeeping falls under the 1992 law."}]},
    {id:"e4u18-q26", lesson:"e4u18-l3", level:2, q:"Which is one of the four pillars of the 2022 Economic Security Promotion Act?", options:[
@@ -1416,24 +1478,24 @@ ICA.addUnit({
      {t:"Nationalising all chip firms", why:"It supports, not nationalises."},
      {t:"Leaving the WTO", why:"Japan remains a WTO member."}]},
    {id:"e4u18-q27", lesson:"e4u18-l3", level:3, q:"Sione argues that Japan’s latticework of partners makes it less dependent on the United States. What is the best counter-argument?", options:[
-     {t:"Most partners are themselves US allies or partners, and none has a mutual defence treaty with Japan, so the network may bind Japan more tightly into US-centred planning", ok:true, why:"Right: a fair counter, though supporters reply that it adds options."},
-     {t:"Japan has no partners other than the US", why:"Factually wrong."},
+     {t:"Most partners are US allies too, so the network may tie Japan closer to the US", ok:true, why:"Right: most partners are themselves US allies or partners, and none has a mutual defence treaty with Japan. A fair counter, though supporters reply that it adds options."},
+     {t:"Japan has no security partners other than the United States, so the claim is empty", why:"Factually wrong."},
      {t:"The RAAs are mutual defence treaties", why:"They are not."},
      {t:"Japan has left the alliance", why:"Untrue: the US alliance remains the core of Japan’s security."}]},
    /* ---- Lesson 4 ---- */
    {id:"e4u18-q28", lesson:"e4u18-l4", level:1, q:"In the 1972 Joint Communiqué, what did Japan say about the PRC’s position that Taiwan is part of its territory?", options:[
-     {t:"That it “fully understands and respects” it", ok:true, why:"Right: the exact wording matters; Unit 19 compares it with other governments’ formulas."},
+     {t:"That it “fully understands and respects” it", ok:true, why:"Right: the exact wording matters; Unit 20 compares it with other governments’ formulas."},
      {t:"That it recognises Taiwan as an independent state", why:"Japan ended official relations with Taipei."},
      {t:"That it rejects it", why:"The text does not reject it."},
      {t:"Nothing", why:"Taiwan is addressed directly."}]},
    {id:"e4u18-q29", lesson:"e4u18-l4", level:2, q:"Which argument does Japan’s government make about the Senkaku Islands?", options:[
-     {t:"It incorporated them by cabinet decision in January 1895 after finding no sign of Qing control, and no territorial issue exists", ok:true, why:"Right: Japan’s Foreign Ministry position."},
+     {t:"It incorporated them in 1895, finding no Qing control", ok:true, why:"Right: Japan’s Foreign Ministry says it incorporated them by cabinet decision in January 1895 after finding no sign of Qing control, and that no territorial issue exists."},
      {t:"They were returned to China under the Potsdam Proclamation", why:"That is the PRC’s argument."},
      {t:"Leaders agreed in the 1970s to leave the issue for later", why:"That is China’s claim; Japan denies it."},
      {t:"They belong to South Korea", why:"South Korea is not a party to this dispute."}]},
    {id:"e4u18-q30", lesson:"e4u18-l4", level:3, q:"Which sentence on the 2025–26 Japan–China dispute is best for a seminar paper?", options:[
-     {t:"After Takaichi’s Diet remark of 7 November 2025, China demanded a retraction and took economic measures; Japan says its Taiwan position is unchanged; as of November 2026 the leaders had not met", ok:true, why:"Right: dated, attributed, factual."},
-     {t:"Japan provoked China for no reason", why:"Takes one side."},
+     {t:"China demanded a retraction of Takaichi’s 2025 remark; Japan says its Taiwan stance is unchanged", ok:true, why:"Right: dated, attributed, factual. After Takaichi’s Diet remark of 7 November 2025, China demanded a retraction and took economic measures; Japan says its Taiwan position is unchanged; as of November 2026 the leaders had not met."},
+     {t:"Japan provoked China for no reason, and China was right to answer with travel warnings and seafood curbs", why:"Takes one side."},
      {t:"China’s reaction was illegal", why:"An unattributed legal judgement."},
      {t:"Relations returned to normal in 2026", why:"Inaccurate as of November 2026."}]},
    {id:"e4u18-q31", lesson:"e4u18-l4", level:1, q:"What did the 1965 Claims Agreement between Japan and South Korea state?", options:[
@@ -1442,8 +1504,8 @@ ICA.addUnit({
      {t:"That Takeshima/Dokdo belonged to Japan", why:"The agreement did not settle the islets."},
      {t:"That the two would form an alliance", why:"They have no alliance with each other."}]},
    {id:"e4u18-q32", lesson:"e4u18-l4", level:2, q:"How did the March 2023 plan get round the 2018 forced-labour rulings?", options:[
-     {t:"A Korean government-backed foundation pays the plaintiffs from voluntary donations, so the Japanese firms do not have to pay", ok:true, why:"Right; it sidestepped rather than settled the legal question."},
-     {t:"Japan’s Supreme Court overturned the rulings", why:"A Japanese court cannot overturn Korean rulings."},
+     {t:"A Korean foundation pays the plaintiffs, so Japanese firms do not", ok:true, why:"Right: a Korean government-backed foundation pays from voluntary donations. It sidestepped rather than settled the legal question."},
+     {t:"Japan’s Supreme Court overturned the rulings on appeal from the firms", why:"A Japanese court cannot overturn Korean rulings."},
      {t:"The plaintiffs withdrew all cases", why:"Some victims refused the payments."},
      {t:"The 1965 treaty was renegotiated", why:"No: the treaty and agreement stayed unchanged."}]},
    {id:"e4u18-q33", lesson:"e4u18-l4", level:1, q:"How many abductees does Japan’s government officially identify, and how many returned in 2002?", options:[
@@ -1457,25 +1519,25 @@ ICA.addUnit({
      {t:"Japan renounced all four", why:"Japan claims all four."},
      {t:"The islands would be shared", why:"No joint sovereignty was agreed."}]},
    {id:"e4u18-q35", lesson:"e4u18-l4", level:3, q:"Amara writes: “The Southern Kurils, which Japan wrongly claims…”. How should she revise it?", options:[
-     {t:"Use both names, say Russia administers the islands and Japan claims them, and attribute each government’s argument", ok:true, why:"Right: neutral naming and attribution."},
-     {t:"Use only the Japanese name", why:"That takes the other side."},
+     {t:"Use both names and attribute each side’s position", ok:true, why:"Right: neutral naming and attribution. Say that Russia administers the islands and Japan claims them, and give each government’s argument."},
+     {t:"Use only the Japanese name, the Northern Territories", why:"That takes the other side."},
      {t:"Delete the islands from the paper", why:"They can be discussed neutrally."},
-     {t:"Say the dispute was settled in 2018", why:"Abe and Putin only agreed to speed up talks."}]},
+     {t:"Say the dispute was settled in 2018 by Abe and Putin", why:"Abe and Putin only agreed to speed up talks."}]},
    {id:"e4u18-q36", lesson:"e4u18-l4", level:3, q:"Which evidence most challenges the claim that economic interdependence keeps Japan–China relations stable?", options:[
-     {t:"In 2025–26 China used travel advice, seafood curbs and export restrictions in a political dispute", ok:true, why:"Right: economic ties became tools of pressure; a liberal might reply that neither side used force."},
+     {t:"China used economic measures in a 2025–26 political dispute", ok:true, why:"Right: travel advice, seafood curbs and export restrictions. Economic ties became tools of pressure; a liberal might reply that neither side used force."},
      {t:"Both joined RCEP", why:"That supports interdependence."},
      {t:"The 1978 treaty is in force", why:"Says little about the mechanism."},
-     {t:"Japanese firms still invest in China", why:"That shows continued interdependence."}]},
+     {t:"Japanese firms still invest heavily in China despite tension", why:"That shows continued interdependence."}]},
    /* ---- Lesson 5 ---- */
    {id:"e4u18-q37", lesson:"e4u18-l5", level:1, q:"By 2025 preliminary OECD data, where did Japan rank among DAC donors by ODA volume?", options:[
-     {t:"Fourth, after Germany, the United States and the United Kingdom", ok:true, why:"Right: about 16.2 billion US dollars."},
+     {t:"Fourth", ok:true, why:"Right: fourth, after Germany, the United States and the United Kingdom, with about 16.2 billion US dollars."},
      {t:"First", why:"Japan was first by volume in 1989, not in 2025."},
      {t:"Tenth", why:"It was thirteenth by ODA/GNI ratio, but fourth by volume."},
      {t:"Japan is not a DAC member", why:"Japan has been a DAC member since the 1960s."}]},
    {id:"e4u18-q38", lesson:"e4u18-l5", level:2, q:"What is “offer-type cooperation” in the 2023 Charter?", options:[
-     {t:"Japan proactively proposes cooperation packages built on its own strengths, not only responding to requests", ok:true, why:"Right: it complements the request-based principle."},
+     {t:"Japan proposes packages built on its own strengths", ok:true, why:"Right: Japan proactively proposes cooperation packages, not only responding to requests. It complements the request-based principle."},
      {t:"Japan offers weapons through ODA", why:"ODA stays non-military."},
-     {t:"Partners make offers to Japan for aid", why:"It is Japan that proposes."},
+     {t:"Partners make offers to Japan, which then chooses what to fund", why:"It is Japan that proposes."},
      {t:"Japan ends all loans", why:"Yen loans continue."}]},
    {id:"e4u18-q39", lesson:"e4u18-l5", level:2, q:"How many times has Japan been elected a non-permanent member of the UN Security Council (as of 2026)?", options:[
      {t:"12, more than any other member", ok:true, why:"Right; the latest term was 2023–24."},
@@ -1483,9 +1545,9 @@ ICA.addUnit({
      {t:"3", why:"Far too few: it has served 12 elected terms."},
      {t:"It is a permanent member", why:"It seeks a permanent seat but does not have one."}]},
    {id:"e4u18-q40", lesson:"e4u18-l5", level:1, q:"What are the UN Charter’s “enemy state” clauses?", options:[
-     {t:"References in Articles 53, 77 and 107 to the Allies’ Second World War enemies, which the 2005 World Summit resolved to delete", ok:true, why:"Right; the Charter has not been amended."},
-     {t:"Rules allowing sanctions on any state", why:"Sanctions come under Chapter VII."},
-     {t:"A list of states banned from the UN", why:"No such list exists."},
+     {t:"References to the Allies’ wartime enemies, still in the text", ok:true, why:"Right: Articles 53, 77 and 107 refer to the Allies’ Second World War enemies. The 2005 World Summit resolved to delete them, but the Charter has not been amended."},
+     {t:"Rules allowing the Security Council to sanction any state at all", why:"Sanctions come under Chapter VII."},
+     {t:"A list of states banned from joining the UN after the Second World War", why:"No such list exists."},
      {t:"Clauses added in 1990", why:"They date from 1945."}]},
    {id:"e4u18-q41", lesson:"e4u18-l5", level:2, q:"After the US left the TPP in 2017, what did Japan do?", options:[
      {t:"Led the other eleven to sign the CPTPP in 2018", ok:true, why:"Right; the UK joined in 2024."},
@@ -1493,24 +1555,24 @@ ICA.addUnit({
      {t:"Joined NAFTA", why:"Not relevant."},
      {t:"Signed a free trade agreement only with China", why:"Not what happened."}]},
    {id:"e4u18-q42", lesson:"e4u18-l5", level:1, q:"Japan’s NDC (February 2025) targets cuts from fiscal 2013 levels of…", options:[
-     {t:"60% by fiscal 2035 and 73% by fiscal 2040", ok:true, why:"Right, on a path to net zero by 2050."},
+     {t:"60% by fiscal 2035", ok:true, why:"Right, and 73% by fiscal 2040, on a path to net zero by 2050."},
      {t:"20% by 2035", why:"Too low: the 2035 target is 60%."},
      {t:"100% by 2030", why:"Net zero is set for 2050."},
      {t:"No numerical target", why:"The NDC gives numbers."}]},
    {id:"e4u18-q43", lesson:"e4u18-l5", level:2, q:"How does the Joint Crediting Mechanism work?", options:[
-     {t:"Japan supports low-carbon projects abroad and counts part of the reductions towards its own target, under Article 6 of the Paris Agreement", ok:true, why:"Right: about 100 million tonnes of CO₂ by fiscal 2030 under the NDC."},
+     {t:"Japan backs green projects abroad and counts some cuts as its own", ok:true, why:"Right: Japan supports low-carbon projects abroad and counts part of the reductions towards its own target, under Article 6 of the Paris Agreement; about 100 million tonnes of CO₂ by fiscal 2030 under the NDC."},
      {t:"Japan buys oil at a discount", why:"Not related."},
      {t:"It taxes imports by carbon content", why:"That is a border carbon adjustment."},
-     {t:"It is a UN fund for loss and damage", why:"That is a different mechanism."}]},
+     {t:"It is a UN fund that pays poorer countries for loss and damage", why:"That is a different mechanism."}]},
    {id:"e4u18-q44", lesson:"e4u18-l5", level:3, q:"Which research design is strongest for a paper on why Japan created OSA in 2023?", options:[
-     {t:"Compare realist, institutional and domestic-politics explanations, trace documents and Diet debates from 2022–23, and check partners’ statements", ok:true, why:"Right: rival explanations tested with primary sources."},
+     {t:"Test rival explanations against documents and Diet debates", ok:true, why:"Right: compare realist, institutional and domestic-politics explanations, trace documents and Diet debates from 2022–23, and check partners’ statements."},
      {t:"Quote the Foreign Ministry’s press release as proof of motive", why:"Official texts are claims, not proof."},
      {t:"Explain it by Japanese culture", why:"A national-character explanation."},
      {t:"Use only one newspaper", why:"Too narrow and possibly slanted."}]},
    {id:"e4u18-q45", lesson:"e4u18-l5", level:3, q:"Which sentence about the Fukushima treated-water release is neutral and accurate?", options:[
-     {t:"Japan began releases in August 2023 after an IAEA review found the plan consistent with international safety standards; China’s government objected and banned Japanese seafood", ok:true, why:"Right: dated and attributed."},
+     {t:"After an IAEA review, Japan began releases in 2023; China’s government objected", ok:true, why:"Right: dated and attributed. Japan began releases in August 2023 after an IAEA review found the plan consistent with international safety standards; China’s government objected and banned Japanese seafood."},
      {t:"Japan is poisoning the ocean", why:"Adopts one side’s framing."},
-     {t:"All objections are unscientific politics", why:"Dismisses critics instead of attributing."},
+     {t:"All objections are unscientific politics, since the IAEA review settled every question", why:"Dismisses critics instead of attributing."},
      {t:"No country objected", why:"China objected strongly."}]}
   ]
 });

@@ -1,6 +1,6 @@
-/* Track 3 · Unit 8 · R for wrangling and charts */
+/* Track 3 · Unit 9 · R for wrangling and charts */
 ICA.addUnit({
-  id:"t3u8", track:"t3", n:8, title:"R for wrangling and charts", icon:"🛠️",
+  id:"t3u8", track:"t3", n:9, title:"R for wrangling and charts", icon:"🛠️",
   blurb:"Use the tidyverse to pick, change, group, summarise and reshape data with readable pipelines, draw clear charts with ggplot2, and turn the whole analysis into a report that rebuilds itself. Every idea comes with its base R twin, so you can practise in the Data Lab on any device.",
   goals:[
     "Install and load tidyverse packages, and choose where to run them: R on a computer, Posit Cloud, or base R in the Data Lab",
@@ -51,7 +51,7 @@ ICA.addUnit({
       {warn:"Install packages only by their exact names, from CRAN or a source you trust. AI assistants sometimes invent package names that don’t exist, and a look-alike name could be someone else’s code. Check the name on CRAN or in the package’s documentation first."}
     ]},
     {h:"Where to run it: computer, Posit Cloud or the Data Lab", body:[
-      "Unit 7 showed three ways to run R. They differ in one way that matters for this unit: **only two of them can run the tidyverse**.",
+      "Unit 8 showed three ways to run R. They differ in one way that matters for this unit: **only two of them can run the tidyverse**.",
       {table:[["Where","Tidyverse?","Good for"],["R + RStudio on your computer","Yes, after `install.packages()`","Regular work; Windows, macOS, Linux"],["Posit Cloud (RStudio in a web browser)","Yes, install it inside each project","Chromebooks, tablets, shared computers"],["This app’s **Data Lab** (webR)","No: base R only","Practising on any device, including phones"]]},
       "**[[posit-cloud|Posit Cloud]]** runs RStudio on Posit’s servers, so all you need is a browser and a free account. The free plan limits how much computing time you can use (counted in “compute hours”), and a project that’s idle (not running code) is suspended after about 15 minutes. Check posit.cloud’s plans page for the current limits before relying on it for a course. It works on a phone’s browser too, but the screen is cramped; a tablet with a keyboard or a Chromebook is much easier.",
       "The **Data Lab** runs real R (version 4.6) inside your browser, but it can’t install packages. So each code block in this unit is labelled:",
@@ -112,8 +112,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"t3u8-l1-x1", type:"mcq", q:"Kenji installed the tidyverse on his laptop yesterday. Today he opens R again and `mutate(survey, x = 1)` gives `could not find function \"mutate\"`. What should he do?", options:[
-      {t:"Run `library(tidyverse)` (or `library(dplyr)`) at the start of the session", ok:true, why:"Right. Installing puts the package on the computer once; loading makes its functions available in each new session. A restart forgets what was loaded."},
-      {t:"Run `install.packages(\"tidyverse\")` again", why:"It’s already installed, so reinstalling doesn’t help: he’d still need `library()` afterwards. The missing step is loading, not installing."},
+      {t:"Run `library(tidyverse)` at the start of the session", ok:true, why:"Right. (`library(dplyr)` also works.) Installing puts the package on the computer once; loading makes its functions available in each new session. A restart forgets what was loaded."},
+      {t:"Run `install.packages(\"tidyverse\")` again to reinstall it", why:"It’s already installed, so reinstalling doesn’t help: he’d still need `library()` afterwards. The missing step is loading, not installing."},
       {t:"Use `Mutate()` with a capital M", why:"R names are case-sensitive, and the function is `mutate()` in lower case. The problem is that dplyr isn’t loaded."},
       {t:"Convert survey to a tibble first", why:"`mutate()` works on ordinary data frames too. R can’t find the function at all, which means the package isn’t loaded."}
     ]},
@@ -134,7 +134,7 @@ ICA.addUnit({
     ]},
     {id:"t3u8-l1-x5", type:"spot", q:"Mei wants group A people who answered Yes or Unsure. Tap the parts of her code that are mistakes.", ask:"is a mistake", mono:true, parts:["filter(",{t:"survey", flag:false, why:"The data frame goes first. That’s correct."},", ",{t:"group = \"A\"", flag:true, why:"One `=` names an argument; it doesn’t compare. Use `group == \"A\"`."},", ",{t:"answer == \"Yes\" | \"Unsure\"", flag:true, why:"`| \"Unsure\"` doesn’t compare anything. Write `answer == \"Yes\" | answer == \"Unsure\"`, or `answer %in% c(\"Yes\", \"Unsure\")`."},", ",{t:"hours >= 0", flag:false, why:"Pointless (everyone has 0 or more hours) but not a mistake: it keeps every row."},")"]},
     {id:"t3u8-l1-x6", type:"mcq", q:"Tomás’s data has a missing age (NA) for one person. In base R he writes `d[d$age > 30, ]` and sees an extra row full of NA. Why?", options:[
-      {t:"R can’t tell whether a missing age is over 30, so the condition is NA, and brackets turn an NA condition into a row of NAs", ok:true, why:"Exactly. `filter()` and `subset()` treat NA as “don’t keep”; plain brackets don’t. `which(d$age > 30)` or `subset()` avoids the surprise."},
+      {t:"The missing age makes the condition NA", ok:true, why:"Exactly. R can’t tell whether a missing age is over 30, and brackets turn an NA condition into a row of NAs. `filter()` and `subset()` treat NA as “don’t keep”; plain brackets don’t. `which(d$age > 30)` or `subset()` avoids the surprise."},
       {t:"The file is corrupted and needs to be read again", why:"Nothing is wrong with the file; this is how bracket subsetting treats missing values."},
       {t:"He forgot the comma inside the brackets", why:"The comma is there: `d[d$age > 30, ]`. Without it he’d get an error about columns, not an NA row."},
       {t:"`>` can’t be used with ages; he needs `>=`", why:"`>` works fine with numbers. The extra row comes from the missing value."}
@@ -142,8 +142,8 @@ ICA.addUnit({
    ],
    apply:{intro:"Set up somewhere to run tidyverse code, then practise the base R versions in the Data Lab. If you only have a phone, do task 3 and read the others.", tasks:[
      {t:"Install R and the tidyverse (optional, on a computer)", how:{
-       win:["Install R and RStudio Desktop if you haven’t yet (Unit 7 has the steps: R from **cran.r-project.org**, then RStudio Desktop from **posit.co**)","Open **RStudio**. In the **Console** pane, type `install.packages(\"tidyverse\")` and press [[kbd:Enter]]","Wait until the `>` prompt comes back (a few minutes), then type `library(tidyverse)`","Check you see “Attaching core tidyverse packages” with ticks, and the Conflicts list"],
-       mac:["Install R (choose the installer for your Mac’s chip: Apple silicon or Intel) and RStudio Desktop, as in Unit 7","Open **RStudio**. In the **Console**, type `install.packages(\"tidyverse\")` and press [[kbd:Return]]","When the `>` prompt returns, type `library(tidyverse)`","Check for the list of attached packages and the Conflicts section"],
+       win:["Install R and RStudio Desktop if you haven’t yet (Unit 8 has the steps: R from **cran.r-project.org**, then RStudio Desktop from **posit.co**)","Open **RStudio**. In the **Console** pane, type `install.packages(\"tidyverse\")` and press [[kbd:Enter]]","Wait until the `>` prompt comes back (a few minutes), then type `library(tidyverse)`","Check you see “Attaching core tidyverse packages” with ticks, and the Conflicts list"],
+       mac:["Install R (choose the installer for your Mac’s chip: Apple silicon or Intel) and RStudio Desktop, as in Unit 8","Open **RStudio**. In the **Console**, type `install.packages(\"tidyverse\")` and press [[kbd:Return]]","When the `>` prompt returns, type `library(tidyverse)`","Check for the list of attached packages and the Conflicts section"],
        chromeos:["Open Chrome and go to **posit.cloud**; sign up for the free plan","Choose **New Project → New RStudio Project** and wait for it to open","In the **Console**, run `install.packages(\"tidyverse\")` (each new project needs its own install), then `library(tidyverse)`","(Alternative: if you use ChromeOS’s Linux development environment, you can install R there as on Linux)"],
        phone:["Installing R isn’t possible on iPhone or Android; use the Data Lab instead (task 3)","You *can* open **posit.cloud** in Safari (iPhone) or Chrome (Android) and follow the ChromeOS steps, but the screen is small. Turn the phone sideways and zoom out if you try it"]}},
      {t:"Run the first three verbs on survey.csv (computer or Posit Cloud)", how:["Paste the “make the file” code from this lesson into the Console and run it","Run `survey <- read_csv(\"survey.csv\")` and look at the column types under the names","Run `filter(survey, group == \"B\", score > 70)`: how many rows? (You should get 4: ids 4, 8, 10 and 12.)","Run `arrange(survey, desc(hours))` and note who studies most"]},
@@ -215,7 +215,7 @@ ICA.addUnit({
     {h:"The magrittr pipe %>%, and how they differ", body:[
       "Before R had its own pipe, the magrittr package (2014) introduced `%>%`. It’s loaded with the tidyverse, and you’ll meet it in older books, course notes and answers online. For everyday chains the two behave identically. The differences, in outline:",
       {table:[["","|> (native)","%>% (magrittr)"],["Needs a package?","No, R 4.1.0 or later","Yes: magrittr (comes with the tidyverse)"],["Brackets on the right","Required: `x |> sum()`","Optional: `x %>% sum` also works"],["Placeholder for a different argument","`_`, only as a named argument (R 4.2.0+), or to start an extraction such as `_$coef` (R 4.3.0+)","`.`, can go almost anywhere"],["Design","Simpler and slightly faster","More features, most rarely needed"]]},
-      "The placeholder matters when the data isn’t the first argument. `lm()` (Unit 7 and Unit 6) expects a formula first and the data later:",
+      "The placeholder matters when the data isn’t the first argument. `lm()` (Unit 8 and Unit 7) expects a formula first and the data later:",
       {code:"survey %>% lm(score ~ hours, data = .)\nsurvey |> lm(score ~ hours, data = _)", lang:"r", label:"R · computer or Posit Cloud"},
       "Both fit the same straight line (slope 5.646 points per hour). With `|>`, the `_` must be given to a named argument such as `data = _`; plain `nrow(_)` is an error.",
       "Which should you use? *R for Data Science* (2nd edition) recommends `|>` for new code, because it’s always available and simpler. This unit follows that. Recognise `%>%` when you see it; mixing them in one script works, but pick one for consistency.",
@@ -255,7 +255,7 @@ ICA.addUnit({
       {t:"Works in the Data Lab", b:0, why:"The lab is base R, so `|>` works there; magrittr isn’t available."}
     ]},
     {id:"t3u8-l2-x5", type:"mcq", q:"Sione writes `case_when(age < 45 ~ \"30 to 44\", age < 30 ~ \"under 30\", .default = \"45 and over\")`. What happens to a 24-year-old?", options:[
-      {t:"They’re labelled “30 to 44”, because the first TRUE condition wins and 24 < 45", ok:true, why:"Right. case_when() checks conditions top to bottom and stops at the first TRUE. Put the narrower condition (`age < 30`) first."},
+      {t:"They’re labelled “30 to 44”: the first TRUE condition wins", ok:true, why:"Right. 24 < 45 is TRUE, and case_when() checks conditions top to bottom and stops at the first TRUE. Put the narrower condition (`age < 30`) first."},
       {t:"They’re labelled “under 30”, because R picks the most specific condition", why:"R doesn’t judge which condition is more specific; it uses order. The first TRUE condition wins."},
       {t:"They get both labels", why:"Each row gets exactly one value: the one from the first matching condition."},
       {t:"They get “45 and over”, the default", why:"The default is only used when no condition is TRUE. Here `age < 45` is TRUE."}
@@ -358,10 +358,10 @@ ICA.addUnit({
       {t:"12 rows, one per person", why:"That would be a grouped mutate(). summarise() collapses each group to one row."}
     ]},
     {id:"t3u8-l3-x4", type:"mcq", q:"Dmitri’s summary says the mean score is `NA`. He checks: one person’s score is missing. What’s the best next step?", options:[
-      {t:"Use `mean(score, na.rm = TRUE)` and report how many values the mean is based on", ok:true, why:"na.rm = TRUE averages the values you have; reporting the count (for example with `sum(!is.na(score))`) keeps readers informed that one value is missing."},
+      {t:"Use `na.rm = TRUE` and report how many values it uses", ok:true, why:"`mean(score, na.rm = TRUE)` averages the values you have; reporting the count (for example with `sum(!is.na(score))`) keeps readers informed that one value is missing."},
       {t:"Replace the missing score with 0 and recompute", why:"0 is a real score, not “unknown”. It would pull the mean down and misrepresent that person."},
       {t:"Delete the whole column", why:"That throws away 11 good scores to hide one missing one."},
-      {t:"Nothing: an NA mean means the scores average to zero", why:"NA means R can’t compute the answer because a value is unknown. It doesn’t mean zero."}
+      {t:"Nothing: an NA mean means the scores average to exactly zero", why:"NA means R can’t compute the answer because a value is unknown. It doesn’t mean zero."}
     ]},
     {id:"t3u8-l3-x5", type:"sort", q:"Each call is run on a 3-person, 3-week table. Does it make the table **longer** (more rows) or **wider** (more columns)?", buckets:["Longer","Wider"], items:[
       {t:"`pivot_longer(walks, week1:week3, names_to = \"week\", values_to = \"km\")`", b:0, why:"Stacks 3 columns into rows: 3 rows become 9."},
@@ -449,7 +449,7 @@ ICA.addUnit({
       {code:"plot(d$hours, d$score)\nhist(d$hours)\nboxplot(score ~ group, data = d)\nbarplot(table(d$answer))", lang:"r", label:"R · base R, runs in the Data Lab"},
       "`plot()` makes a scatterplot, `hist()` a histogram, `boxplot(score ~ group)` one box per group, and `barplot(table(…))` a bar chart of counts. Colouring by group means building the colours and the legend yourself:",
       {code:"plot(score ~ hours, data = d, pch = 19,\n  col = ifelse(d$group == \"A\", \"darkorange\", \"steelblue\"))\nlegend(\"topleft\", legend = c(\"A\", \"B\"), pch = 19,\n  col = c(\"darkorange\", \"steelblue\"))", lang:"r", label:"R · base R, runs in the Data Lab"},
-      "That manual work is the main reason people move to ggplot2: the mapping, legend and facets come from the grammar. Unit 7 covers base plots in more detail ({{base-plots-r}}).",
+      "That manual work is the main reason people move to ggplot2: the mapping, legend and facets come from the grammar. Unit 8 covers base plots in more detail ({{base-plots-r}}).",
       {lab:"dl-r-hist", t:"Practise: a histogram of hours with a title and axis label, in base R"},
       {lab:"dl-r-cor", t:"Practise: plot(d$hours, d$score), then measure the pattern with cor()"}
     ]}
@@ -566,7 +566,7 @@ ICA.addUnit({
         "**Keep raw data raw** (Unit 2): read the original file and do every cleaning step in code, never by hand in the data.",
         "**Load packages at the top** of each script or report, so it runs from a fresh start.",
         "**Use relative paths** like `\"survey.csv\"` or `\"data/survey.csv\"` inside a project folder, not `C:/Users/…` paths that exist only on your computer. (RStudio Projects and Posit Cloud projects give you a folder to work in.)",
-        "**Set a seed** with `set.seed()` before anything random, so simulations give the same result each time (Unit 6).",
+        "**Set a seed** with `set.seed()` before anything random, so simulations give the same result each time (Unit 7).",
         "**Record versions**: `sessionInfo()` prints your R and package versions. Results can change slightly when packages update.",
         "**Track changes** with Git (Track 2) if the project matters."
       ]},
@@ -636,6 +636,68 @@ ICA.addUnit({
  "t3u8-q38",
  "t3u8-q42"
 ],
+  cpBank:[
+   {id:"t3u8-cp01", lesson:"t3u8-l1", level:1, q:"The survey tibble has the columns id, group, age, hours, score and answer, in that order. Which columns does `select(survey, group:hours)` keep?", options:[
+     {t:"group and hours only", why:"The colon means a range of neighbouring columns, so everything between them is kept too."},
+     {t:"group, age and hours", ok:true, why:"`group:hours` keeps every column from group to hours: group, age and hours."},
+     {t:"id, group, age and hours", why:"The range starts at group, so id (before it) is not included."},
+     {t:"Every column except group and hours", why:"Dropping columns needs a minus sign, such as `-group`. The colon picks a range to keep."}]},
+   {id:"t3u8-cp02", lesson:"t3u8-l1", level:2, q:"In the 12-person survey, the people under 30 are ids 1, 4, 7 and 11, and the people who scored over 80 are ids 7 and 10. How many rows does `filter(survey, age < 30 | score > 80)` return?", options:[
+     {t:"1", why:"That is the count for *and* (a comma or `&`): only id 7 is both. `|` means or."},
+     {t:"6", why:"That counts id 7 twice. A row is kept once if either condition is TRUE."},
+     {t:"5", ok:true, why:"`|` keeps rows where at least one condition is TRUE: ids 1, 4, 7, 10 and 11."},
+     {t:"2", why:"2 is just the number who scored over 80. Rows meeting the age condition are kept too."}]},
+   {id:"t3u8-cp03", lesson:"t3u8-l2", level:1, q:"R rewrites code that uses the native pipe before running it. Which line means exactly the same as `survey |> filter(age > 40)`?", options:[
+     {t:"`filter(age > 40, survey)`", why:"The pipe puts the left side in as the **first** argument, not the last."},
+     {t:"`survey(filter(age > 40))`", why:"`survey` is data, not a function. The pipe passes survey into filter()."},
+     {t:"`filter(survey) > 40`", why:"The condition stays inside filter(). The pipe only adds survey as the first argument."},
+     {t:"`filter(survey, age > 40)`", ok:true, why:"`x |> f(y)` becomes `f(x, y)`: the left side becomes the first argument."}]},
+   {id:"t3u8-cp04", lesson:"t3u8-l2", level:2, q:"Survey scores are 61, 70, 55, 78, 66, 49, 83, 72, 60, 88, 52 and 75. After `mutate(band = case_when(score >= 80 ~ \"high\", score >= 60 ~ \"mid\", .default = \"low\"))`, `count(band)` shows how many in \"mid\"?", options:[
+     {t:"9", why:"That puts 83 and 88 in “mid” too. case_when uses the first TRUE condition, so they are already “high”."},
+     {t:"7", ok:true, why:"Conditions are checked top to bottom. 83 and 88 are high; 61, 70, 78, 66, 72, 60 and 75 are mid (7); 55, 49 and 52 are low."},
+     {t:"5", why:"Check each score against 60: seven scores are from 60 to 79."},
+     {t:"10", why:"That counts every score of 50 or more. The `.default` covers scores below 60, which are “low”."}]},
+   {id:"t3u8-cp05", lesson:"t3u8-l2", level:3, q:"Group B’s scores are 55, 78, 49, 72, 88 and 75. In `survey |> group_by(group) |> mutate(vs_group = score - mean(score)) |> ungroup()`, what is `vs_group` for person 10 (group B, score 88)?", options:[
+     {t:"About 20.6", why:"That uses the mean of all 12 people (67.4). After group_by(), mean(score) is computed within each group."},
+     {t:"0, because mutate() after group_by() returns one row per group", why:"That is what summarise() does. Grouped mutate() keeps every row and adds the group’s value to each."},
+     {t:"88, because the mean is subtracted only in summarise()", why:"mutate() does the calculation for every row. Here it subtracts B’s mean from each B score."},
+     {t:"18.5", ok:true, why:"B’s mean is 417 ÷ 6 = 69.5. Grouped mutate() keeps every row: 88 − 69.5 = 18.5."}]},
+   {id:"t3u8-cp06", lesson:"t3u8-l3", level:1, q:"In the survey, `answer` is Yes, No or Unsure. How many rows does `summarise(survey, m = mean(score), .by = answer)` return?", options:[
+     {t:"1", why:"Without `.by`, summarise() gives one row. With `.by = answer`, it gives one row per answer."},
+     {t:"12", why:"summarise() boils rows down; it doesn’t keep one row per person. That would be mutate()."},
+     {t:"3", ok:true, why:"`.by` groups for this one summary: one row each for Yes, No and Unsure."},
+     {t:"6", why:"6 would be the combinations of group and answer. Here the grouping is by answer alone."}]},
+   {id:"t3u8-cp07", lesson:"t3u8-l3", level:2, q:"The four people who answered No scored 55, 49, 60 and 52. In `survey |> group_by(answer) |> summarise(mean_score = mean(score))`, what is `mean_score` for No?", options:[
+     {t:"54", ok:true, why:"(55 + 49 + 60 + 52) ÷ 4 = 216 ÷ 4 = 54. Each answer gets its own mean."},
+     {t:"67.4", why:"That is the mean of all 12 scores. group_by(answer) makes summarise() work within each answer."},
+     {t:"53.5", why:"That is the median of the four scores (52 and 55 averaged). mean() adds them and divides by 4."},
+     {t:"216", why:"That is the sum. mean() divides it by the 4 people."}]},
+   {id:"t3u8-cp08", lesson:"t3u8-l3", level:3, q:"A wide table has 6 rows (classrooms) and the columns `room`, `floor` and `temp_mon` to `temp_fri`. After `pivot_longer(cols = starts_with(\"temp_\"), names_to = \"day\", values_to = \"temp\")`, how many rows does `summarise(m = mean(temp), .by = day)` return?", options:[
+     {t:"6, one per classroom", why:"That would need `.by = room`. Here the grouping column is day, which holds 5 values (temp_mon to temp_fri)."},
+     {t:"30, one for each room and day", why:"30 (6 × 5) is the size of the long table. summarise() boils each group down to one row."},
+     {t:"5, one per day", ok:true, why:"pivot_longer() makes 6 × 5 = 30 rows, with a day column holding 5 different values. Grouping by day gives one summary row for each."},
+     {t:"1, the mean of all readings", why:"Without `.by`, summarise() would give one row. `.by = day` gives one row per day."}]},
+   {id:"t3u8-cp09", lesson:"t3u8-l4", level:2, q:"Which line makes each point’s size depend on study hours, with a legend explaining it?", options:[
+     {t:"`geom_point(aes(size = hours))`", ok:true, why:"Inside `aes()` is a mapping: size comes from the hours column, and ggplot2 adds a legend."},
+     {t:"`geom_point(size = hours)`", why:"Outside `aes()` is a setting, which expects a fixed value. R looks for an object called hours and doesn’t find one."},
+     {t:"`geom_point(size = 3)`", why:"That sets every point to size 3. Nothing depends on the data, so there is no legend."},
+     {t:"`geom_point(aes(size = \"hours\"))`", why:"In quotes, “hours” is one fixed value, so every point gets the same size and the legend is pointless."}]},
+   {id:"t3u8-cp10", lesson:"t3u8-l4", level:3, q:"In group B, two people answered No, three Yes and one Unsure. How tall is the tallest bar in `survey |> filter(group == \"B\") |> ggplot(aes(x = answer)) + geom_bar()`?", options:[
+     {t:"6, the number of rows in group B", why:"geom_bar() draws one bar per answer, each counting its own rows. The six rows are split into 2, 3 and 1."},
+     {t:"3, the Yes bar", ok:true, why:"filter() keeps group B’s 6 rows; geom_bar() counts rows for each answer. Yes has 3."},
+     {t:"6, the Yes bar for the whole survey", why:"The pipe passes only group B into ggplot(). Across all 12 people Yes is 6, but here it is 3."},
+     {t:"An error, because a pipe can’t lead into ggplot()", why:"Piping data into ggplot() is fine. Only the layers after it must be joined with `+`."}]},
+   {id:"t3u8-cp11", lesson:"t3u8-l5", level:2, q:"A Quarto report says “The mean score was `r round(mean(survey$score), 1)`.” The 12 scores add up to 809. Two new responses, scoring 90 and 58, are added and the report is rendered again. What does the sentence say now?", options:[
+     {t:"67.4, because inline values are fixed once written", why:"Inline code is rerun at every render. That’s what keeps the sentence in step with the data."},
+     {t:"74.0, the mean of the two new scores", why:"mean() uses every score in the data, old and new: 14 in all."},
+     {t:"68.4", ok:true, why:"(809 + 90 + 58) ÷ 14 = 957 ÷ 14 ≈ 68.36, which rounds to 68.4. The render recomputes it."},
+     {t:"79.8, because the new total is divided by 12", why:"There are now 14 responses, so the total is divided by 14."}]},
+   {id:"t3u8-cp12", lesson:"t3u8-l5", level:3, q:"Ravi’s bar chart maps `fill = group`. He adds `scale_colour_viridis_d()`, but the bars keep their default colours. Why, and what is the fix?", options:[
+     {t:"viridis only works on scatterplots; use a Brewer palette instead", why:"viridis scales work with any geom. The problem is which aesthetic the scale is for."},
+     {t:"The scale must come before `geom_col()`; move it up", why:"Layer order doesn’t matter for scales. The scale has to match the aesthetic that was mapped."},
+     {t:"The bars use fill, not colour; use `scale_fill_viridis_d()`", ok:true, why:"Each scale controls one aesthetic. A colour scale changes outlines and points; a fill scale changes bar insides."},
+     {t:"`_d` is for numbers; use `scale_colour_viridis_c()`", why:"`_d` is for discrete categories, which group is. The fix is a fill scale, not a continuous one."}]},
+  ],
   codex:[
  {
   "id": "tidyverse",
@@ -1425,12 +1487,12 @@ ICA.addUnit({
   "q": "What is the tidyverse?",
   "options": [
    {
-    "t": "A collection of R packages designed to work together on tidy data",
+    "t": "A collection of R packages that work together on tidy data",
     "ok": true,
     "why": "dplyr, tidyr, ggplot2, readr and others share one design: data first, verbs, tidy tables."
    },
    {
-    "t": "A separate programming language that replaces R",
+    "t": "A separate programming language that replaces R for data work",
     "why": "It’s a set of R packages; you still write R."
    },
    {
@@ -1475,9 +1537,9 @@ ICA.addUnit({
   "q": "After `library(tidyverse)`, R prints `dplyr::filter() masks stats::filter()`. What does that mean?",
   "options": [
    {
-    "t": "Plain `filter()` now means dplyr’s version; stats’ version is still reachable as `stats::filter()`",
+    "t": "Plain `filter()` now means dplyr’s version",
     "ok": true,
-    "why": "Two packages have a function with that name; the one loaded last wins. `package::function()` chooses explicitly."
+    "why": "stats’ version is still reachable as `stats::filter()`. Two packages have a function with that name; the one loaded last wins. `package::function()` chooses explicitly."
    },
    {
     "t": "An error: the tidyverse didn’t load",
@@ -1575,12 +1637,12 @@ ICA.addUnit({
   "q": "Ama runs `arrange(survey, score)` and sees a sorted table. Later, `head(survey)` shows the original order. Why?",
   "options": [
    {
-    "t": "dplyr verbs return a new table; she didn’t store it, so survey is unchanged",
+    "t": "dplyr verbs return a new table, and she didn’t store it",
     "ok": true,
-    "why": "To keep the sorted version: `survey_sorted <- arrange(survey, score)`."
+    "why": "So survey is unchanged. To keep the sorted version: `survey_sorted <- arrange(survey, score)`."
    },
    {
-    "t": "arrange() only sorts temporarily for 5 minutes",
+    "t": "arrange() only sorts temporarily, for about five minutes",
     "why": "There’s no timer; the sorted result was simply never stored."
    },
    {
@@ -1600,9 +1662,9 @@ ICA.addUnit({
   "q": "Chen’s teaching laptop can’t install software, and his students use Chromebooks. They need dplyr and ggplot2. What’s the most practical option?",
   "options": [
    {
-    "t": "Posit Cloud: RStudio in the browser, where each project can install the tidyverse",
+    "t": "Posit Cloud, which runs RStudio in the browser",
     "ok": true,
-    "why": "It needs only a browser and account. Check the free plan’s compute-hour limit before relying on it for a whole class."
+    "why": "Each project can install the tidyverse, and it needs only a browser and account. Check the free plan’s compute-hour limit before relying on it for a whole class."
    },
    {
     "t": "The app’s Data Lab",
@@ -1613,7 +1675,7 @@ ICA.addUnit({
     "why": "Spreadsheets don’t run R code."
    },
    {
-    "t": "There’s no way without installing R locally",
+    "t": "There’s no way to do it without installing R locally",
     "why": "Posit Cloud runs R on a server, so nothing is installed on the Chromebook."
    }
   ]
@@ -1800,9 +1862,9 @@ ICA.addUnit({
   "q": "Lucía finds tutorial code using `%>%`. She uses `|>` in her own scripts. What’s good advice?",
   "options": [
    {
-    "t": "Either works for simple chains; recognise both, and use one consistently in new code",
+    "t": "Recognise both, and use one consistently in new code",
     "ok": true,
-    "why": "For everyday chains they behave the same; R for Data Science recommends |> for new code."
+    "why": "Either works: for everyday chains they behave the same; R for Data Science recommends |> for new code."
    },
    {
     "t": "%>% code is broken and must be rewritten",
@@ -1813,7 +1875,7 @@ ICA.addUnit({
     "why": "|> works with any function call, including base R functions on data frames."
    },
    {
-    "t": "Mixing them in one script causes wrong answers",
+    "t": "Mixing the two pipes in one script causes wrong answers",
     "why": "Mixing works; it’s just less tidy."
    }
   ]
@@ -1825,7 +1887,7 @@ ICA.addUnit({
   "q": "Oluwaseun’s pipeline is 25 lines long and hard to debug. What does the tidyverse style guide suggest?",
   "options": [
    {
-    "t": "Break it at a sensible point and give that intermediate result a good name",
+    "t": "Break it up and give the intermediate result a good name",
     "ok": true,
     "why": "Pipelines over about 10–15 lines get hard to follow; named pieces can be checked one at a time."
    },
@@ -1838,7 +1900,7 @@ ICA.addUnit({
     "why": "The pipe type doesn’t change the length or readability."
    },
    {
-    "t": "Nest every function instead",
+    "t": "Nest every function inside the next one instead of piping",
     "why": "Nesting is harder to read than a pipeline."
    }
   ]
@@ -1875,7 +1937,7 @@ ICA.addUnit({
   "q": "What does `group_by(group)` on its own do to a table?",
   "options": [
    {
-    "t": "Marks the groups, so later verbs work group by group; the rows themselves don’t change",
+    "t": "Marks the groups for later verbs; the rows don’t change",
     "ok": true,
     "why": "Printing shows `# Groups: group [2]`; the effect appears with summarise() or mutate()."
    },
@@ -1884,7 +1946,7 @@ ICA.addUnit({
     "why": "It doesn’t reorder rows; use arrange() for that."
    },
    {
-    "t": "Collapses the table to one row per group",
+    "t": "Collapses the table to one row per group, like a summary",
     "why": "That’s summarise() after group_by()."
    },
    {
@@ -1975,16 +2037,16 @@ ICA.addUnit({
   "q": "Tomás reports “Group C has the highest mean satisfaction: 9.5”. His summary shows group C has n = 2, while others have n = 150 or more. What’s the best response?",
   "options": [
    {
-    "t": "Report the group sizes; a mean from 2 people is very unstable and shouldn’t be headlined",
+    "t": "Report the group sizes; a mean from 2 people is unstable",
     "ok": true,
-    "why": "Small groups produce extreme averages by chance; always show n alongside a grouped mean."
+    "why": "It shouldn’t be headlined: small groups produce extreme averages by chance; always show n alongside a grouped mean."
    },
    {
     "t": "Delete group C from the data",
     "why": "Hiding data isn’t honest; report it with its size and a caution."
    },
    {
-    "t": "Multiply group C’s mean by 75 to match the others",
+    "t": "Multiply group C’s mean by 75 so it matches the larger groups",
     "why": "That makes no statistical sense."
    },
    {
@@ -2025,16 +2087,16 @@ ICA.addUnit({
   "q": "In `pivot_wider(names_from = answer, values_from = n, values_fill = 0)`, what does `values_fill = 0` do?",
   "options": [
    {
-    "t": "Puts 0 where a combination doesn’t occur, instead of NA",
+    "t": "Puts 0 where a combination doesn’t occur",
     "ok": true,
-    "why": "For counts, an absent combination really is zero."
+    "why": "Without it, those cells would be NA. For counts, an absent combination really is zero."
    },
    {
-    "t": "Replaces every value with 0",
+    "t": "Replaces every value in the table with 0",
     "why": "Only the missing cells are filled."
    },
    {
-    "t": "Removes columns that contain 0",
+    "t": "Removes any columns that contain a 0",
     "why": "It adds zeros; it doesn’t remove columns."
    },
    {
@@ -2050,9 +2112,9 @@ ICA.addUnit({
   "q": "Sione has blood-pressure readings in a wide table and uses `values_fill = 0` when widening, so missing readings become 0. What’s wrong?",
   "options": [
    {
-    "t": "A missing reading is unknown, not zero; 0 would wrongly pull averages down",
+    "t": "A missing reading is unknown, not zero",
     "ok": true,
-    "why": "values_fill = 0 suits counts, where absence means none, not measurements, where absence means unknown. Leave them NA."
+    "why": "0 would wrongly pull averages down. values_fill = 0 suits counts, where absence means none, not measurements, where absence means unknown. Leave them NA."
    },
    {
     "t": "Nothing; 0 is the standard code for missing",
@@ -2075,9 +2137,9 @@ ICA.addUnit({
   "q": "Kenji wants to chart each walker’s distance over the weeks with ggplot2, but his data has columns `name, week1, week2, week3`. What should he do first?",
   "options": [
    {
-    "t": "pivot_longer() the week columns into `week` and `km`, so each aesthetic has one column to map",
+    "t": "pivot_longer() the week columns into `week` and `km`",
     "ok": true,
-    "why": "ggplot2 maps columns to x, y and colour; the week variable must be in a column, not spread across names."
+    "why": "Then each aesthetic has one column to map. ggplot2 maps columns to x, y and colour; the week variable must be in a column, not spread across names."
    },
    {
     "t": "pivot_wider() the table",
@@ -2088,7 +2150,7 @@ ICA.addUnit({
     "why": "That throws away data instead of reshaping it."
    },
    {
-    "t": "Nothing; ggplot2 reads column names as x values",
+    "t": "Nothing; ggplot2 reads the column names as the x values",
     "why": "ggplot2 maps columns, not column names, to aesthetics."
    }
   ]
@@ -2100,9 +2162,9 @@ ICA.addUnit({
   "q": "In ggplot2, what does `aes()` do?",
   "options": [
    {
-    "t": "Maps columns of the data to visual properties such as x, y and colour",
+    "t": "Maps data columns to visual properties such as x and y",
     "ok": true,
-    "why": "aes() is short for aesthetic mappings."
+    "why": "aes() is short for aesthetic mappings, such as x, y and colour."
    },
    {
     "t": "Adds a title",
@@ -2113,7 +2175,7 @@ ICA.addUnit({
     "why": "That’s ggsave()."
    },
    {
-    "t": "Chooses the type of mark (points, bars)",
+    "t": "Chooses the type of mark to draw, such as points or bars",
     "why": "That’s the geom."
    }
   ]
@@ -2175,12 +2237,12 @@ ICA.addUnit({
   "q": "What’s the difference between `geom_bar()` and `geom_col()`?",
   "options": [
    {
-    "t": "geom_bar() counts rows for each x; geom_col() draws the y values you give it",
+    "t": "geom_bar() counts rows; geom_col() draws the y values given",
     "ok": true,
     "why": "Use geom_col() when the counts (or other values) are already in a column."
    },
    {
-    "t": "geom_bar() is horizontal and geom_col() vertical",
+    "t": "geom_bar() draws horizontal bars and geom_col() draws vertical ones",
     "why": "Both draw vertical bars by default; orientation is changed by mapping."
    },
    {
@@ -2200,12 +2262,12 @@ ICA.addUnit({
   "q": "Fatima’s code is `ggplot(d, aes(hours, score))` on one line and `+ geom_point()` on the next. R draws an empty chart and gives an error. Why?",
   "options": [
    {
-    "t": "R ran the first line as complete; `+` must go at the end of the line to continue",
+    "t": "The `+` must go at the end of the first line",
     "ok": true,
-    "why": "A line ending with + tells R more is coming. A line starting with + is a new command."
+    "why": "R ran the first line as complete. A line ending with + tells R more is coming. A line starting with + is a new command."
    },
    {
-    "t": "geom_point() needs aes() inside it",
+    "t": "geom_point() needs its own aes() inside the brackets",
     "why": "It inherits the mappings from ggplot(); the problem is the line break."
    },
    {
@@ -2225,12 +2287,12 @@ ICA.addUnit({
   "q": "Priya’s scatterplot colours two groups red and green. A colleague with red–green colour blindness can’t tell them apart. Which change helps most?",
   "options": [
    {
-    "t": "Also map shape to group (`aes(colour = group, shape = group)`), and use a colour-blind-safe palette",
+    "t": "Map shape to group too, and use a safer palette",
     "ok": true,
-    "why": "A second channel (shape) doesn’t rely on colour at all, and palettes such as viridis or Dark2 are designed to stay distinguishable."
+    "why": "Use `aes(colour = group, shape = group)` and a colour-blind-safe palette. A second channel (shape) doesn’t rely on colour at all, and palettes such as viridis or Dark2 are designed to stay distinguishable."
    },
    {
-    "t": "Make the points bigger",
+    "t": "Make the points bigger so the colours are easier to see",
     "why": "Size alone doesn’t separate the two colours."
    },
    {
@@ -2238,7 +2300,7 @@ ICA.addUnit({
     "why": "Useful, but it doesn’t help tell the groups apart."
    },
    {
-    "t": "Use theme_dark()",
+    "t": "Use theme_dark() so the colours stand out more",
     "why": "A dark background doesn’t solve the red–green confusion."
    }
   ]
@@ -2275,12 +2337,12 @@ ICA.addUnit({
   "q": "Ana makes `facet_wrap(~ region)` with 6 regions. One region has 10 times as many people as the others, and its points crowd the panel. She sets `scales = \"free_y\"`. What’s the trade-off?",
   "options": [
    {
-    "t": "Each panel fits its own y-axis, so patterns are visible, but heights are no longer comparable across panels",
+    "t": "Easier to read each panel, harder to compare across panels",
     "ok": true,
-    "why": "Shared scales allow fair comparison; free scales help reading within a panel. Say so in a note if you use them."
+    "why": "Each panel fits its own y-axis, so heights are no longer comparable. Shared scales allow fair comparison; free scales help reading within a panel. Say so in a note if you use them."
    },
    {
-    "t": "No trade-off; free scales are always better",
+    "t": "No trade-off; free scales are always better than shared ones",
     "why": "They make cross-panel comparison misleading if readers assume shared axes."
    },
    {
@@ -2350,12 +2412,12 @@ ICA.addUnit({
   "q": "Dmitri writes `p + theme(legend.position = \"bottom\") + theme_minimal()` and the legend is still on the right. Why?",
   "options": [
    {
-    "t": "The complete theme added afterwards resets the legend position; put theme() after theme_minimal()",
+    "t": "The complete theme added afterwards resets it",
     "ok": true,
-    "why": "Later layers override earlier ones; a complete theme replaces all theme settings."
+    "why": "Put theme() after theme_minimal(). Later layers override earlier ones; a complete theme replaces all theme settings."
    },
    {
-    "t": "legend.position doesn’t accept \"bottom\"",
+    "t": "legend.position doesn’t accept \"bottom\" as a value",
     "why": "\"bottom\" is a valid value."
    },
    {
@@ -2450,12 +2512,12 @@ ICA.addUnit({
   "q": "What does inline code like `r nrow(survey)` (between backticks) in a Quarto sentence do?",
   "options": [
    {
-    "t": "Inserts the computed value, so the sentence updates when the data changes",
+    "t": "Inserts the computed value into the sentence",
     "ok": true,
-    "why": "It becomes “12” today and a new number after new data, with no retyping."
+    "why": "The sentence updates when the data changes. It becomes “12” today and a new number after new data, with no retyping."
    },
    {
-    "t": "Shows the code in grey",
+    "t": "Shows the code in grey, without running it",
     "why": "It’s run and replaced by its result."
    },
    {
@@ -2463,7 +2525,7 @@ ICA.addUnit({
     "why": "Inline code lives inside the sentence."
    },
    {
-    "t": "Only works in PDF output",
+    "t": "Only works when the report is rendered to PDF",
     "why": "It works in every format."
    }
   ]
@@ -2475,9 +2537,9 @@ ICA.addUnit({
   "q": "Mei wants a PDF from Quarto but can’t install LaTeX on a work computer. What can she try?",
   "options": [
    {
-    "t": "`format: typst`, which uses the Typst engine bundled with Quarto",
+    "t": "`format: typst`, which needs no LaTeX",
     "ok": true,
-    "why": "Typst makes PDFs without a separate TeX installation; `format: pdf` needs LaTeX (for example TinyTeX)."
+    "why": "It uses the Typst engine bundled with Quarto. Typst makes PDFs without a separate TeX installation; `format: pdf` needs LaTeX (for example TinyTeX)."
    },
    {
     "t": "`format: html` and rename the file to .pdf",
@@ -2500,12 +2562,12 @@ ICA.addUnit({
   "q": "Amara’s report renders on her computer but a colleague gets `cannot open file 'C:/Users/amara/Desktop/survey.csv'`. What’s the best fix?",
   "options": [
    {
-    "t": "Keep survey.csv in the project folder and read it with a relative path, `read_csv(\"survey.csv\")`",
+    "t": "Keep the file in the project and use a relative path",
     "ok": true,
-    "why": "Relative paths work wherever the project folder is copied."
+    "why": "Put survey.csv in the project folder and read it with `read_csv(\"survey.csv\")`. Relative paths work wherever the project folder is copied."
    },
    {
-    "t": "Ask the colleague to create a folder called amara",
+    "t": "Ask the colleague to create a folder called amara on their C drive",
     "why": "A workaround that breaks again on the next computer."
    },
    {
@@ -2525,12 +2587,12 @@ ICA.addUnit({
   "q": "Which statement about reproducible reports is accurate?",
   "options": [
    {
-    "t": "They make every number traceable to code, but can still reproduce a mistake perfectly",
+    "t": "Every number traces to code, but a mistake repeats exactly",
     "ok": true,
     "why": "Reproducibility makes errors findable and fixable; it doesn’t guarantee correctness."
    },
    {
-    "t": "A reproducible report is guaranteed to be correct",
+    "t": "A reproducible report is guaranteed to give correct results",
     "why": "Wrong code gives the same wrong answer every time."
    },
    {

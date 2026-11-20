@@ -14,13 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Klee+One:wght@600&family=Zen+Kurenaido&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=60">
+<link rel="stylesheet" href="../shared/style.css?v=61">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=60"></script>
-<script src="../shared/theme.js?v=1"></script>
-<script src="props.js?v=60"></script>
-<script src="../data/story.js?v=60"></script>
-<script src="../data/story-audio.js?v=60"></script>
+<script src="../shared/engine.js?v=61"></script>
+<script src="../shared/theme.js?v=2"></script>
+<script src="props.js?v=61"></script>
+<script src="../data/story.js?v=61"></script>
+<script src="../data/story-audio.js?v=61"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -93,7 +93,9 @@ function unit(id){
   h += '<h2>Lessons</h2><div class="stack">'+u.lessons.map(function(l){ var d = ICA.lessonDone(l.id), s = ICA.load().lessons[l.id]; var started = s && (s.learn || Object.keys(s.tries||{}).length); return '<a class="tile lessonrow" href="#'+l.id+'"><span class="ic"><span class="num">'+l.n+'</span></span><span class="tx"><span class="tt">'+esc(l.title)+'</span><span class="st">About '+l.minutes+' min'+(d ? ' · done' : started ? ' · in progress' : '')+'</span>'+(l.read && l.read.length ? '<span class="st">📖 '+md(l.read[0].where)+(l.read.length > 1 ? ' + '+(l.read.length-1)+' more' : '')+'</span>' : '')+'</span>'+(d ? '<span class="chip done">✓ Done</span>' : '')+'</a>'; }).join("")+'</div>';
   var ep = storyEp(u.id);
   if (ep && !ep.draft) h += '<h2>Story <span class="small muted">(optional)</span></h2><a class="tile storytile" href="#story-'+u.id+'"><span class="ic" aria-hidden="true"><img src="../shared/cast/cat/smug.webp" alt="" width="34" style="width:34px;height:auto"></span><span class="tx"><span class="tt">Episode '+ep.n+' · '+md(ep.title)+'</span><span class="st">Kamome House · '+esc(ep.month)+' · '+esc(ep.level)+(storyRead(u.id) ? ' · read' : ' · best after the lessons')+'</span></span>'+(storyRead(u.id) ? '<span class="chip done">✓ Read</span>' : '')+'</a>';
-  if (u.checkpoint && u.checkpoint.length){ var cp = ICA.load().lessons[u.id+"-cp"]; h += '<h2>Unit checkpoint</h2><a class="tile" href="#'+u.id+'-cp"><span class="ic" aria-hidden="true">🏁</span><span class="tx"><span class="tt">Checkpoint: '+u.checkpoint.length+' questions</span><span class="st">'+(cp && cp.check ? "Best: "+cp.check.best+" of "+cp.check.of+". Retake any time." : "Mixed questions from the whole unit. Take it whenever you feel ready.")+'</span></span></a>'; }
+  var cpq = ICA.checkpointQs(u.id);
+  if (cpq.length){ var cp = ICA.load().lessons[u.id+"-cp"], fresh = !!(u.cpBank && u.cpBank.length), need = Math.ceil(cpq.length * ICA.CP_PASS), passed = cp && cp.check && cp.check.best >= need;
+    h += '<h2>Unit checkpoint</h2><a class="tile" href="#'+u.id+'-cp"><span class="ic" aria-hidden="true">'+(passed ? "✅" : "🏁")+'</span><span class="tx"><span class="tt">Checkpoint: '+cpq.length+' questions'+(passed ? ' · passed' : '')+'</span><span class="st">'+(cp && cp.check ? "Best: "+cp.check.best+" of "+cp.check.of+(passed ? "." : ". "+need+" right is a pass, if you want one.")+" Retake any time." : (fresh ? "New questions you haven’t seen in the lessons, mixing the whole unit. "+need+" of "+cpq.length+" is a pass, if you want one." : "Mixed questions from the whole unit.")+" Take it whenever you feel ready.")+'</span></span></a>'; }
   if (u.read && u.read.length) h += '<h2>Read alongside</h2><div class="stack">'+u.read.map(bookRef).join("")+'</div>';
   h += '<button class="report" data-report="Unit: '+esc(u.title)+'">Report a mistake in this unit</button></div>';
   app.innerHTML = h;
@@ -201,7 +203,9 @@ function renderPart(l){
       var wr = tk.write ? '<label class="lb" for="w'+i+'" style="display:block;margin-top:8px">Your notes</label><textarea id="w'+i+'" data-write="'+i+'" placeholder="'+esc(tk.write === true ? "Write what you noticed…" : tk.write)+'">'+esc((s.notes||{})[i]||"")+'</textarea><span class="small muted">Saved on this device as you type.</span>' : '';
       return '<div class="task"><input type="checkbox" id="tk'+i+'" data-task="'+i+'"'+(s.apply[i]?" checked":"")+'><div style="flex:1;min-width:0"><label for="tk'+i+'">'+md(tk.t)+'</label>'+how+wr+'</div></div>';
     }).join("")+'</div>';
-    if (a.proof) h += '<div class="callout key"><b class="h">Proof for yourself</b>'+md(a.proof)+'</div>';
+    if (a.proof){ var pv = s.proof == null ? -1 : s.proof;
+      h += '<div class="callout key"><b class="h">Proof for yourself</b>'+md(a.proof)+'<div class="selfcheck"><span class="small">Could you show this now?</span><div class="seg3" role="group" aria-label="Could you show this now?">'+
+        [["0","Not yet"],["1","Partly"],["2","Yes"]].map(function(o){ return '<button type="button" data-proof="'+o[0]+'" aria-pressed="'+(+o[0] === pv)+'">'+o[1]+'</button>'; }).join("")+'</div><span class="small muted">Just for you: it goes into your portfolio in the Printer.</span></div></div>'; }
     h += '<div class="lessonnav"><button class="btn" data-later>I’ll do this later</button><button class="btn primary" data-applydone>'+(s.applyDone ? "Done ✓ · Next: Check →" : "Done. Next: Check →")+'</button></div>';
     el.innerHTML = h;
   } else if (curPart === "check"){
@@ -330,7 +334,7 @@ function checkQuiz(el, key, qs, onFinish, after){
 }
 function checkpoint(uid){
   var u = ICA.unitById[uid]; setTitle("Checkpoint · "+u.title);
-  var qs = u.checkpoint.map(function(id){ return ICA.bankById[id]; }).filter(Boolean);
+  var qs = ICA.checkpointQs(uid);
   app.innerHTML = '<div class="stack"><a href="#'+uid+'" class="small">← Unit '+u.n+': '+esc(u.title)+'</a><div><div class="eyebrow">Unit checkpoint</div><h1>'+esc(u.title)+'</h1></div><div id="cp"></div></div>';
   var s = ICA.lessonState(uid+"-cp");
   checkQuiz(document.getElementById("cp"), uid+"-cp", qs, function(score, of){ s.check = {best:Math.max(score, s.check ? s.check.best : 0), of:of}; ICA.save(); }, function(){ return '<div class="lessonnav"><a class="btn" href="#'+uid+'">Back to the unit</a><a class="btn primary" href="../arcade/index.html">Practice more in the Arcade →</a></div>'; });
@@ -352,6 +356,11 @@ app.addEventListener("click", function(e){
 app.addEventListener("input", function(e){
   var t = e.target.closest("[data-write]"); if (!t) return;
   var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); if (!s.notes) s.notes = {}; s.notes[t.getAttribute("data-write")] = t.value; ICA.save();
+});
+app.addEventListener("click", function(e){
+  var b = e.target.closest("[data-proof]"); if (!b) return;
+  var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); s.proof = +b.getAttribute("data-proof"); ICA.save();
+  ICA.$$("[data-proof]", b.parentNode).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
 });
 app.addEventListener("change", function(e){
   var t = e.target.closest("[data-task]"); if (!t) return;

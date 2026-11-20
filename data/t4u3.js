@@ -100,8 +100,8 @@ ICA.addUnit({
       {t:"“This study asks whether a 12-week gardening programme reduces loneliness.”", b:0, why:"Stating the aim or question usually closes the introduction."}
     ]},
     {id:"t4u3-l1-x3", type:"mcq", q:"Amara opens a philosophy journal article and finds no Methods or Results headings, just sections titled “I. The Puzzle”, “II. Two Replies”, “III. A Better Answer”. What should she conclude?", options:[
-      {t:"It’s probably an argued essay; she should look for the thesis early on and follow how each section supports it", ok:true, why:"Humanities and philosophy articles usually argue a thesis through sections rather than reporting a study, so there’s no Methods heading to find."},
-      {t:"It isn’t a scholarly article, because scholarly articles always use IMRaD", why:"IMRaD is common in the sciences and social sciences, but argued essays are the normal form of scholarship in the humanities."},
+      {t:"It’s an argued essay; she should follow how each section supports the thesis", ok:true, why:"Humanities and philosophy articles usually argue a thesis through sections rather than reporting a study, so there’s no Methods heading to find. Look for the thesis early on."},
+      {t:"It isn’t a scholarly article, because all scholarly articles use IMRaD headings", why:"IMRaD is common in the sciences and social sciences, but argued essays are the normal form of scholarship in the humanities."},
       {t:"The methods were left out, so the article can’t be trusted", why:"An argument-based article has no data-collection method to report. Its ‘method’ is the reasoning and the sources, which she can judge directly."},
       {t:"She should skip to the last section, because that’s where the results are", why:"There are no results in the IMRaD sense. The conclusion helps, but the thesis is normally stated early and defended throughout."}
     ]},
@@ -217,9 +217,9 @@ ICA.addUnit({
    ],
    try:[
     {id:"t4u3-l2-x1", type:"mcq", q:"Kenji has found 40 papers that might be relevant to a report due next week. What’s the most sensible plan?", options:[
-      {t:"Give each a quick first pass (title, abstract, headings, conclusion), then read the most relevant few in depth", ok:true, why:"A first pass is designed for exactly this: deciding which papers deserve more time."},
+      {t:"Give each a quick first pass, then read the most relevant few in depth", ok:true, why:"A first pass covers the title, abstract, headings and conclusion. A first pass is designed for exactly this: deciding which papers deserve more time."},
       {t:"Read all 40 in full, in the order he found them", why:"That spends the same effort on irrelevant papers as on key ones, and he’ll run out of time before reaching the best."},
-      {t:"Read only the abstracts and cite the ones that agree with his view", why:"Abstracts alone can’t show whether a finding is trustworthy, and choosing only agreeing papers is [[confirmation-bias|confirmation bias]]."},
+      {t:"Read only the abstracts, then cite the ones that agree with his own view", why:"Abstracts alone can’t show whether a finding is trustworthy, and choosing only agreeing papers is [[confirmation-bias|confirmation bias]]."},
       {t:"Ask an AI tool to summarise all 40 and cite the summaries", why:"Summaries can help you sort papers, but they can be wrong, and you can only cite what you’ve checked in the paper itself (Lesson 5)."}
     ]},
     {id:"t4u3-l2-x2", type:"match", q:"Keshav’s ‘five Cs’ are questions to answer after a first pass. Match each C to its question.", pairs:[
@@ -354,7 +354,7 @@ ICA.addUnit({
     ]},
     {id:"t4u3-l3-x3", type:"number", q:"An invented trial reports that 5 in every 100 people in the comparison group got an infection, against 4 in every 100 in the treatment group. By what percentage was the risk reduced in relative terms?", answer:20, tol:0.5, unit:"%", why:"The absolute difference is 5% − 4% = 1 percentage point. Relative to the starting risk: 1 ÷ 5 = 0.20, a 20% relative reduction.", wrongs:[{v:1, tol:0.2, why:"1 is the absolute difference, in percentage points. The question asks for the relative reduction: divide that 1 by the starting risk of 5."},{v:25, tol:0.5, why:"25% is 1 ÷ 4, using the treatment group as the base. Relative reduction compares with the comparison (starting) group: 1 ÷ 5."},{v:80, tol:0.5, why:"80% is the risk ratio (4 ÷ 5 = 0.8): the treated group had 80% of the comparison group’s risk. The reduction is 100% − 80% = 20%."}], hint2:"Work out the absolute difference first, then divide it by the comparison group’s risk."},
     {id:"t4u3-l3-x4", type:"mcq", q:"A paper reports: “mean difference 4 points (95% CI 1 to 7)”. Which interpretation is correct?", options:[
-      {t:"The interval came from a method that captures the true difference in about 95% of repeated studies; values from 1 to 7 are reasonably compatible with the data", ok:true, why:"That’s the correct frequentist reading: the 95% is a property of the method, and the interval shows which values fit the data reasonably well."},
+      {t:"The CI method captures the true difference in about 95% of repeated studies", ok:true, why:"That’s the correct frequentist reading: the 95% is a property of the method, and the interval shows which values fit the data reasonably well. Here, values from 1 to 7 are reasonably compatible with the data."},
       {t:"There is a 95% probability that the true difference lies between 1 and 7", why:"This is the most common misreading. For a confidence interval, the 95% describes how often the method succeeds over many studies, not the chance that this one interval is right."},
       {t:"95% of participants improved by between 1 and 7 points", why:"The interval is about the average difference, not individuals, whose scores spread much more widely."},
       {t:"If the study were repeated, 95% of new estimates would fall between 1 and 7", why:"Not quite. Repeats would give different intervals; it’s the intervals, not the estimates, that would contain the true value about 95% of the time."}
@@ -439,9 +439,9 @@ ICA.addUnit({
    ],
    try:[
     {id:"t4u3-l4-x1", type:"mcq", q:"Which statement correctly describes a p-value?", options:[
-      {t:"The probability of getting a result at least as extreme as the one observed, if the null hypothesis and the model’s other assumptions were true", ok:true, why:"That is the definition: a probability about the data, calculated in an imagined world where the null model holds."},
+      {t:"The probability of a result at least this extreme if the null model were true", ok:true, why:"That is the definition: a probability about the data, calculated in an imagined world where the null model holds. The null model means the null hypothesis plus the model’s other assumptions."},
       {t:"The probability that the null hypothesis is true", why:"p is calculated by assuming the null is true, so it can’t measure the probability that it is (ASA principle 2)."},
-      {t:"The probability that the result happened by chance", why:"This sounds similar but reverses the logic. p is the chance of data this extreme given chance alone, not the chance that chance alone explains the data."},
+      {t:"The probability that the observed result happened by chance alone, with no real effect", why:"This sounds similar but reverses the logic. p is the chance of data this extreme given chance alone, not the chance that chance alone explains the data."},
       {t:"The size of the effect", why:"p says nothing about size (ASA principle 5). A tiny effect in a huge study can have a tiny p."}
     ]},
     {id:"t4u3-l4-x2", type:"spot", q:"A student wrote this summary of an invented study. Which phrases misread the statistics?", ask:"misreads the statistics", parts:[
@@ -467,7 +467,7 @@ ICA.addUnit({
       {t:"A p-value should be weighed together with the design, effect size and other evidence.", b:0, why:"Principle 6: by itself, a p-value isn’t a good measure of evidence."}
     ]},
     {id:"t4u3-l4-x5", type:"mcq", q:"Two invented studies test the same tutoring programme. Study 1 (30 students) finds 5 points (95% CI −2 to 12), p = 0.16. Study 2 (3,000 students) finds 0.6 points (95% CI 0.1 to 1.1), p = 0.02. Which summary is fairest?", options:[
-      {t:"Study 2 shows a small but fairly certain benefit; Study 1 is inconclusive, compatible with anything from slight harm to a large benefit", ok:true, why:"This reads both by size and interval, as the ASA and Lesson 3 recommend."},
+      {t:"Study 2 shows a small but fairly certain benefit; Study 1 is inconclusive", ok:true, why:"This reads both by size and interval, as the ASA and Lesson 3 recommend. Study 1 is compatible with anything from slight harm to a large benefit."},
       {t:"Study 2 found a big effect because it’s significant; Study 1 shows the programme doesn’t work", why:"Two misreadings at once: significance isn’t size, and non-significance isn’t proof of no effect."},
       {t:"The studies contradict each other, so the programme can’t be judged", why:"They don’t contradict: Study 1’s wide interval includes Study 2’s small effect. They just have very different precision."},
       {t:"Study 1 is better because its effect is bigger", why:"Its estimate is bigger but very uncertain; the interval even includes harm. Precision matters as much as the point estimate."}
@@ -592,10 +592,10 @@ ICA.addUnit({
       {t:"The findings apply to adults in general.", flag:true, why:"The authors say the sample was not representative. The summary dropped that limitation and over-generalised."}
     ]},
     {id:"t4u3-l5-x5", type:"mcq", q:"Tomás used a document-question tool on an open access paper. It answered: “The study found a 12% improvement (see Results).” What should he do before using this in his report?", options:[
-      {t:"Find the passage and table in the paper, check the 12% and what it’s 12% of, and cite the paper itself", ok:true, why:"Checking the source passage and number is the only way to know the claim is right, and you cite the paper, not the summary."},
+      {t:"Check the 12% against the paper’s own passage and table, then cite the paper", ok:true, why:"Check what it’s 12% of, too. Checking the source passage and number is the only way to know the claim is right, and you cite the paper, not the summary."},
       {t:"Nothing: the tool pointed to the Results, so it’s accurate", why:"A pointer helps, but tools can misread or mix up numbers. He still needs to read the passage himself."},
       {t:"Cite the AI tool as the source of the finding", why:"The finding comes from the paper. If the tool’s use needs disclosing, that’s separate; the evidence is the paper."},
-      {t:"Ask the tool again and use the answer if it’s the same twice", why:"Repeating a question tests consistency, not accuracy. Only the paper can confirm the number."}
+      {t:"Ask the tool the same question again and use the answer if it’s the same twice", why:"Repeating a question tests consistency, not accuracy. Only the paper can confirm the number."}
     ]},
     {id:"t4u3-l5-x6", type:"mcq", q:"Which of these is appropriate to upload to a general AI chatbot? Choose all that apply (assume the chatbot’s terms allow uploads).", options:[
       {t:"An open access paper published under a licence that allows reuse", ok:true, why:"Openly licensed, published material is generally fine to process, though you should still check your institution’s rules."},
@@ -613,6 +613,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t4u3-q02","t4u3-q06","t4u3-q11","t4u3-q15","t4u3-q20","t4u3-q22","t4u3-q25","t4u3-q29","t4u3-q31","t4u3-q34","t4u3-q39","t4u3-q43"],
+  cpBank:[
+   {id:"t4u3-cp01", lesson:"t4u3-l1", level:1, q:"Gabriel finds a paper titled **“Why some fishing cooperatives last: a review of 64 studies”**. What kind of paper is it most likely to be?", options:[
+     {t:"An original research article reporting a new study", why:"An original article reports data the authors collected or analysed themselves. “A review of 64 studies” signals a summary of other people’s work."},
+     {t:"A review article that summarises many studies on one question", ok:true, why:"A review brings many studies together, which makes it a good place to start a topic."},
+     {t:"A case study of one fishing cooperative", why:"A case study gives a detailed account of one organisation or place. This title covers 64 studies."},
+     {t:"A commentary giving one expert’s opinion", why:"A commentary is an opinion or reply, not a structured summary of many studies."}]},
+   {id:"t4u3-cp02", lesson:"t4u3-l1", level:1, q:"Rosa wants to know whether the authors of a paper have shared their data and code. Which section should she look at?", options:[
+     {t:"Funding", why:"The funding statement says who paid for the work, not whether the data are shared."},
+     {t:"Competing interests", why:"This section declares financial or personal stakes. It doesn’t say where data are."},
+     {t:"Author contributions", why:"This section says who did what in the project, not whether data and code are available."},
+     {t:"Data availability", ok:true, why:"The data availability statement, in the back matter, says whether the data and code are shared, and where."}]},
+   {id:"t4u3-cp03", lesson:"t4u3-l2", level:1, q:"Leilani highlights almost every sentence of a paper in yellow. Later she can’t find the key points. What would work better?", options:[
+     {t:"Highlight only key points and add short notes in her own words", ok:true, why:"If everything is yellow, nothing stands out. A few highlights plus notes in her own words make the paper usable later."},
+     {t:"Use a second colour to highlight the sentences that are even more important", why:"More colouring doesn’t fix the problem. Good annotation is a conversation with the paper, not colouring it in."},
+     {t:"Stop annotating and reread the whole paper each time she needs it", why:"Rereading is slow. Brief, selective annotations and notes save that time."},
+     {t:"Copy every highlighted sentence into her notes without quotation marks", why:"Copying without quotation marks risks using the authors’ words as her own, and it adds no thinking."}]},
+   {id:"t4u3-cp04", lesson:"t4u3-l3", level:2, q:"A headline says a hand-washing campaign **“cuts infections by a quarter”**. In the study, 8 in every 100 children got an infection without the campaign and 6 in every 100 with it. Which description is correct?", options:[
+     {t:"25 percentage points lower in absolute terms; 2% lower in relative terms", why:"These are swapped. The absolute drop is 8% − 6% = 2 percentage points; the relative drop is 2 ÷ 8 = 25%."},
+     {t:"2 percentage points lower in absolute terms; about 33% lower in relative terms", why:"33% comes from dividing by 6. The relative change compares with the starting risk: 2 ÷ 8 = 25%."},
+     {t:"2 percentage points lower in absolute terms; 25% lower in relative terms", ok:true, why:"Both are true at once: 2 fewer infections per 100 children (absolute), which is a quarter of the starting risk (relative). The headline uses the relative figure."},
+     {t:"The absolute and relative changes are the same: 2%", why:"They differ. The absolute change is 2 percentage points; the relative change is 25%, because it is measured against the starting risk of 8%."}]},
+   {id:"t4u3-cp05", lesson:"t4u3-l3", level:2, q:"In an invented trial, one group averages 72 on a test and the other averages 66. Scores in each group spread with a standard deviation of about 15. What is Cohen’s d, roughly?", options:[
+     {t:"6", why:"6 is the raw difference in test points. Cohen’s d divides that difference by the standard deviation."},
+     {t:"0.4", ok:true, why:"d = difference ÷ standard deviation = 6 ÷ 15 = 0.4: between Cohen’s ballpark ‘small’ (0.2) and ‘medium’ (0.5), to be judged in context."},
+     {t:"2.5", why:"This divides the standard deviation by the difference (15 ÷ 6), which is upside down."},
+     {t:"0.08", why:"This divides the difference by one group’s average (6 ÷ 72). Cohen’s d uses the standard deviation, the typical spread of scores."}]},
+   {id:"t4u3-cp06", lesson:"t4u3-l4", level:2, q:"A table cell reads `2.1**`. The footnote says: “`*` p < 0.05; `**` p < 0.01”. Which reading is correct?", options:[
+     {t:"There is less than a 1% chance this result is due to chance", why:"This is the classic misreading. A p-value is the chance of data this extreme if the null were true, not the chance that chance produced the result."},
+     {t:"The effect is about twice as large as a result with one asterisk", why:"Asterisks mark p-value thresholds, not effect sizes. They say nothing about how big the effect is."},
+     {t:"An effect of 2.1 is large and important", why:"Significance doesn’t measure size or importance. Whether 2.1 matters depends on the scale and the context."},
+     {t:"p < 0.01, which alone says nothing about size or importance", ok:true, why:"The footnote defines the stars: two means p < 0.01. To judge size and importance, look at the effect itself, its units and its confidence interval."}]},
+   {id:"t4u3-cp07", lesson:"t4u3-l4", level:3, q:"Two labs test the same idea in the same way. Lab A finds a 3-point difference (95% CI 0 to 6), p = 0.049. Lab B finds 3 points (95% CI −0.1 to 6.1), p = 0.051. A blog says Lab A made a discovery and Lab B failed. What is the fairest reading?", options:[
+     {t:"The blog is right: only Lab A crossed the 0.05 line", why:"0.05 is a convention, not a law of nature. Results either side of it can be practically the same evidence."},
+     {t:"Lab B’s result disproves Lab A’s", why:"A non-significant result doesn’t show there’s no effect. Here both labs estimated the same size of effect."},
+     {t:"Practically the same evidence: same effect, near-identical intervals", ok:true, why:"p = 0.049 and p = 0.051 are nearly identical, and the effect sizes and intervals agree. The size and interval do most of the work."},
+     {t:"Neither result means anything, because both p-values are close to 0.05", why:"Both studies give useful estimates: about 3 points, plausibly from about 0 to 6. Being close to a threshold doesn’t make data worthless."}]},
+   {id:"t4u3-cp08", lesson:"t4u3-l5", level:2, q:"A trial’s main outcome was students’ grades, which showed no difference. Attendance, a secondary outcome, improved. The abstract opens: “Mentoring boosts attendance.” Which kind of spin is this?", options:[
+     {t:"Giving relative figures only", why:"This kind of spin gives a relative change without absolute numbers. The problem here is which outcome is highlighted."},
+     {t:"Switching the spotlight to a secondary outcome", ok:true, why:"The main outcome showed nothing, so the abstract leads with a secondary outcome that did. Readers may never learn the main result."},
+     {t:"Over-generalising attendance results to all students", why:"Over-generalising is about who the result applies to. Nothing here stretches the population."},
+     {t:"No spin: reporting any positive outcome is fair", why:"Reporting the secondary result is fine, but leading with it while hiding a null main outcome makes the results look better than they are."}]},
+   {id:"t4u3-cp09", lesson:"t4u3-l5", level:2, q:"Rhea is appraising a history article arguing that guild records show women ran many businesses in an 18th-century port. Which question fits this kind of article best?", options:[
+     {t:"Was the sample chosen at random, and how many people dropped out?", why:"Sampling and dropout questions fit quantitative studies. A humanities article argues from sources such as archives."},
+     {t:"Is the main p-value below 0.05, so the result is significant?", why:"An argued essay from archives usually has no statistical test. It is judged by its evidence and argument."},
+     {t:"Was there a comparison group assigned by chance, as in a trial?", why:"Randomised comparison groups belong to experiments, not to historical arguments from records."},
+     {t:"Are sources used well, and are rival readings handled fairly?", ok:true, why:"Humanities articles are argued essays. Appraise the thesis, the use of sources, the handling of counter-evidence, and whether footnotes let you check."}]},
+   {id:"t4u3-cp10", lesson:"t4u3-l5", level:3, q:"A well-run trial in large city hospitals in Norway found a discharge programme reduced readmissions. Amina runs a small rural clinic in Malawi. How should she appraise the trial for her purpose?", options:[
+     {t:"Accept it fully: a sound trial gives results that apply everywhere", why:"Internal soundness isn’t the same as relevance. A result may not transfer to a very different setting."},
+     {t:"It is sound, but ask whether it fits her setting and patients", ok:true, why:"Appraisal has two sides: is the study sound, and does it apply to your situation? A modest study in a setting like hers may tell her more."},
+     {t:"Reject it, because a study from another country is never relevant", why:"That goes too far. It may still be useful evidence; she needs to judge how well it transfers."},
+     {t:"Look only at its p-value to decide", why:"A p-value says nothing about whether the setting matches hers, or about the size of the effect."}]},
+   {id:"t4u3-cp11", lesson:"t4u3-l2", level:3, q:"An abstract says tutoring “greatly improved maths scores”. Table 2 (page 7) shows a difference of 1.5 points on a 100-point test (95% CI −0.5 to 3.5). What should Pablo write in his literature note?", options:[
+     {t:"“Tutoring greatly improves maths scores (Table 2).”", why:"This repeats the abstract’s claim as if it were his own summary, and the table doesn’t support “greatly”."},
+     {t:"Nothing: the abstract is misleading, so the paper should be ignored", why:"The paper still contains useful data. He should record what it actually found."},
+     {t:"“1.5 points (95% CI −0.5 to 3.5), Table 2, p. 7. ME: abstract overstates.”", ok:true, why:"The note records the actual size, interval and location, and labels his own judgement. The abstract is the authors’ claim; the Results show whether to believe it."},
+     {t:"Copy the abstract’s sentence without quotation marks, since abstracts are summaries", why:"Unquoted copying mixes the authors’ words with his own, which risks plagiarism. And it records the claim, not the evidence."}]},
+   {id:"t4u3-cp12", lesson:"t4u3-l3", level:3, q:"A pilot study with 16 people found a large, statistically significant effect (d = 1.2). A later trial with 900 people, same design, found d = 0.2. What is the most likely explanation?", options:[
+     {t:"The later trial must have been done badly", why:"Nothing suggests that. Large trials give more precise estimates; the pattern fits the pilot’s small size."},
+     {t:"Small studies are imprecise, and significant ones tend to overestimate", ok:true, why:"In a small sample only unusually large estimates reach significance, so they tend to overstate. The larger trial’s estimate is more precise."},
+     {t:"Larger samples shrink effects, so neither result can be trusted", why:"Sample size doesn’t change the true effect. It changes how precisely the effect is estimated."},
+     {t:"The effect must have faded because people got used to the treatment", why:"That’s a guess with no evidence here. The known pattern of small studies explains the difference without it."}]},
+  ],
   codex:[
    {id:"paper-structure", title:"How academic papers are structured", aka:["IMRaD","anatomy of a paper","parts of a research article"], tags:["research","reading"],
     summary:"The IMRaD pattern of most empirical papers, the other shapes scholarship takes, and the parts around the main text.",
@@ -870,24 +932,24 @@ ICA.addUnit({
      {t:"A case report", why:"A case report describes one case in detail."},
      {t:"A methods paper", why:"A methods paper presents a new way to measure or analyse something."}]},
    {id:"t4u3-q04", lesson:"t4u3-l1", level:2, q:"Sione reads an abstract that says a programme “significantly improved wellbeing”. What should he do before quoting this finding?", options:[
-     {t:"Read the Methods and Results to see how wellbeing was measured, how big the change was and how certain", ok:true, why:"The abstract is the authors’ summary; the evidence for judging the claim is in the Methods and Results."},
+     {t:"Read the Methods and Results to judge the evidence", ok:true, why:"Check how wellbeing was measured, how big the change was and how certain. The abstract is the authors’ summary; the evidence for judging the claim is in the Methods and Results."},
      {t:"Nothing: abstracts are peer-reviewed, so they’re accurate", why:"Peer review covers the whole paper and doesn’t guarantee the abstract is free of overstatement."},
      {t:"Check how many times the paper has been downloaded", why:"Popularity doesn’t tell you whether the claim is supported."},
      {t:"Look only at the title to confirm the topic", why:"The title can’t show whether the finding is well supported."}]},
    {id:"t4u3-q05", lesson:"t4u3-l1", level:2, q:"In a history journal, Priya can’t find a Methods section in an article. Which is the best explanation?", options:[
-     {t:"Humanities articles are usually argued essays; the method shows in how sources are chosen and used, often through the footnotes", ok:true, why:"History articles defend a thesis with evidence from sources rather than reporting an experiment."},
-     {t:"The article must be a popular magazine piece, not scholarship", why:"Many scholarly humanities articles have no Methods heading; that’s the norm in the field."},
+     {t:"It’s probably an argued essay; the method shows in how sources are used", ok:true, why:"History articles defend a thesis with evidence from sources rather than reporting an experiment. Look at how sources are chosen and used, often through the footnotes."},
+     {t:"The article must be a popular magazine piece, not scholarship, if it has no Methods", why:"Many scholarly humanities articles have no Methods heading; that’s the norm in the field."},
      {t:"The methods were removed during peer review", why:"Reviewers don’t remove methods; this format simply doesn’t use a separate section."},
      {t:"The methods are always in the abstract instead", why:"Humanities articles sometimes have no abstract at all."}]},
    {id:"t4u3-q06", lesson:"t4u3-l1", level:3, q:"A paper on a new water filter declares that two authors own shares in the company that makes it. How should Oluwaseun treat this?", options:[
-     {t:"As a reason to read the methods and outcomes extra carefully, not as proof the results are wrong", ok:true, why:"A declared interest is a signal to check design choices and framing closely. It doesn’t, by itself, show bias."},
+     {t:"As a reason to read the methods extra carefully, not as proof of bias", ok:true, why:"A declared interest is a signal to check design choices and framing closely. It doesn’t, by itself, show bias."},
      {t:"As proof the study is fraudulent", why:"Declaring an interest is honest practice; many industry-linked studies are sound."},
-     {t:"As irrelevant, because the journal published it", why:"Publication doesn’t make interests irrelevant; they’re declared precisely so readers can weigh them."},
+     {t:"As irrelevant, because the journal already checked for this before publishing it", why:"Publication doesn’t make interests irrelevant; they’re declared precisely so readers can weigh them."},
      {t:"As a reason to rely only on the abstract", why:"If anything, an interest is a reason to read more of the paper, not less."}]},
    {id:"t4u3-q07", lesson:"t4u3-l1", level:1, q:"What is a DOI?", options:[
-     {t:"A permanent identifier for a paper or other item, which can be written as a link starting https://doi.org/", ok:true, why:"DOI stands for Digital Object Identifier; it keeps working even if the publisher’s website changes."},
+     {t:"A permanent identifier for a paper or other item", ok:true, why:"It can be written as a link starting https://doi.org/. DOI stands for Digital Object Identifier; it keeps working even if the publisher’s website changes."},
      {t:"The date of issue of a journal", why:"Dates are separate; a DOI is an identifier."},
-     {t:"A measure of how often a paper is cited", why:"Citation counts are a different thing."},
+     {t:"A number that measures how often a paper has been cited", why:"Citation counts are a different thing."},
      {t:"The name of the peer reviewer", why:"Reviewers are usually anonymous; a DOI identifies the item."}]},
    {id:"t4u3-q08", lesson:"t4u3-l1", level:2, q:"Which sentence would you most expect in a Discussion section?", options:[
      {t:"“Because our sample came from one city, the findings may not apply to rural areas.”", ok:true, why:"Stating limitations and what they mean is a job of the Discussion."},
@@ -895,16 +957,16 @@ ICA.addUnit({
      {t:"“Mean waiting time was 34 minutes (SD 11).”", why:"A raw finding belongs in the Results."},
      {t:"“Little research has examined waiting times in rural clinics.”", why:"Identifying a gap is usually done in the Introduction."}]},
    {id:"t4u3-q09", lesson:"t4u3-l1", level:3, q:"Dmitri finds a preprint reporting a striking result on a new battery material. Which approach is most sensible?", options:[
-     {t:"Treat it as promising but unchecked by peer review, read the methods carefully, and look for later versions or a published version", ok:true, why:"Preprints are shared before peer review and can change; careful reading and checking for updates is appropriate."},
+     {t:"Treat it as promising but not yet peer-reviewed, and look for later versions", ok:true, why:"Preprints are shared before peer review and can change; careful reading and checking for updates is appropriate. Read the methods carefully too."},
      {t:"Ignore it completely: preprints are never useful", why:"Preprints can be excellent and are often the fastest way to see new work; they just need extra care."},
-     {t:"Treat it exactly like a published, peer-reviewed article", why:"No outside experts have checked it yet, so it deserves more caution."},
+     {t:"Treat it exactly like a published, peer-reviewed article, since it’s on a research site", why:"No outside experts have checked it yet, so it deserves more caution."},
      {t:"Cite the abstract only, since the rest may change", why:"Citing an abstract without reading the paper is risky whatever the publication status."}]},
    /* Lesson 2 */
    {id:"t4u3-q10", lesson:"t4u3-l2", level:1, q:"In Keshav’s three-pass method, what is the first pass for?", options:[
-     {t:"A quick look (about 5–10 minutes) to grasp the paper’s gist and decide whether to read further", ok:true, why:"The first pass covers title, abstract, introduction, headings and conclusion."},
+     {t:"A quick look to grasp the gist and decide whether to read further", ok:true, why:"It takes about 5–10 minutes. The first pass covers title, abstract, introduction, headings and conclusion."},
      {t:"Checking every calculation in the paper", why:"That belongs to the third pass, for papers you must master."},
      {t:"Reading every word from start to finish", why:"The method exists to avoid reading every paper that way."},
-     {t:"Writing the paper’s reference in a citation style", why:"Useful, but not what the first pass is for."}]},
+     {t:"Writing the paper’s full reference in a citation style before reading it", why:"Useful, but not what the first pass is for."}]},
    {id:"t4u3-q11", lesson:"t4u3-l2", level:2, q:"A figure shows two group averages with error bars, and the caption says “bars show standard deviation”. What do the bars tell Ana?", options:[
      {t:"How spread out individual values were in each group", ok:true, why:"Standard deviation describes the spread of individual scores, not the uncertainty of the average."},
      {t:"The 95% confidence interval for each average", why:"A confidence interval is a different, usually much narrower, range around the average."},
@@ -916,14 +978,14 @@ ICA.addUnit({
      {t:"Fell by 12.", why:"12 what? Without a unit and page, the number is useless later."},
      {t:"Great paper, agree completely.", why:"An opinion with no content; it won’t help you use the paper later."}]},
    {id:"t4u3-q13", lesson:"t4u3-l2", level:1, q:"What is the main reason to keep quotations, paraphrase and your own ideas clearly apart in notes?", options:[
-     {t:"So you don’t later copy the authors’ words by accident or credit them with ideas that were yours", ok:true, why:"Mixed-up notes are a common cause of accidental plagiarism and misattribution."},
+     {t:"So you don’t copy authors’ words by accident or mix up whose ideas are whose", ok:true, why:"Mixed-up notes are a common cause of accidental plagiarism and misattribution."},
      {t:"Because journals require readers to submit their notes", why:"No journal asks for this; the habit protects you."},
-     {t:"Because paraphrase is never allowed in academic writing", why:"Paraphrase with citation is normal and useful."},
+     {t:"Because paraphrase is never allowed in academic writing, only direct quotation", why:"Paraphrase with citation is normal and useful."},
      {t:"To make notes longer", why:"Length isn’t the goal; clarity about whose words and ideas they are is."}]},
    {id:"t4u3-q14", lesson:"t4u3-l2", level:2, q:"Fatima is reading a philosophy article for a seminar. Which approach suits it best?", options:[
-     {t:"Find the thesis in the introduction, skim the headings and conclusion, then read the whole argument in order", ok:true, why:"Humanities arguments build step by step, so after orienting yourself, a full linear read works best."},
-     {t:"Jump to the Results section", why:"Philosophy articles rarely have one."},
-     {t:"Read only the figures and tables", why:"There may be none; the argument is in the prose."},
+     {t:"Find the thesis, skim the headings and conclusion, then read it all in order", ok:true, why:"Humanities arguments build step by step, so after orienting yourself, a full linear read works best."},
+     {t:"Jump straight to the Results section and read the main findings there first", why:"Philosophy articles rarely have one."},
+     {t:"Read only the figures and tables, since they hold the key evidence", why:"There may be none; the argument is in the prose."},
      {t:"Read only the last page", why:"The conclusion helps, but she’d miss how the argument is built and defended."}]},
    {id:"t4u3-q15", lesson:"t4u3-l2", level:3, q:"Mei is writing a policy brief and needs to decide whether a trial’s result can be relied on. How deeply should she read the trial report?", options:[
      {t:"Fully, including the methods, tables and any supplementary material", ok:true, why:"Relying on a finding for a decision needs the deepest read; that’s where problems with the evidence show."},
@@ -936,12 +998,12 @@ ICA.addUnit({
      {t:"Inside the PDF file, changing it permanently", why:"Zotero stores them separately in its database."},
      {t:"On the journal’s website", why:"They’re in your own Zotero library."}]},
    {id:"t4u3-q17", lesson:"t4u3-l2", level:3, q:"Kenji reads in his second language and uses a translation tool. The tool renders a sentence as “the result was important (p = 0.04)”. What should he check?", options:[
-     {t:"Whether the original says ‘statistically significant’, which is a technical term, not a judgement of importance", ok:true, why:"Translation can blur technical terms; ‘significant’ in statistics only means p fell below a threshold."},
+     {t:"Whether the original says ‘statistically significant’, a technical term", ok:true, why:"Translation can blur technical terms; ‘significant’ in statistics only means p fell below a threshold."},
      {t:"Nothing: translation tools never change meaning", why:"They can mistranslate technical terms, especially words with everyday meanings."},
      {t:"Whether 0.04 means the result is 4% important", why:"A p-value isn’t a measure of importance at all."},
-     {t:"Whether the paper is in the right language for his course", why:"The issue is the technical term, not the paper’s language."}]},
+     {t:"Whether the paper is written in the right language for the course he is taking", why:"The issue is the technical term, not the paper’s language."}]},
    {id:"t4u3-q18", lesson:"t4u3-l2", level:1, q:"What should you read first when looking at a figure?", options:[
-     {t:"The caption (legend), which says what is shown and what symbols mean", ok:true, why:"Without the caption you may misread axes, units or error bars."},
+     {t:"The caption (legend)", ok:true, why:"It says what is shown and what the symbols mean. Without the caption you may misread axes, units or error bars."},
      {t:"The colours, which show significance", why:"Colour is a design choice and has no standard meaning."},
      {t:"The authors’ conclusion in the Discussion", why:"It helps to read the evidence before the interpretation."},
      {t:"The references", why:"They don’t explain the figure."}]},
@@ -952,8 +1014,8 @@ ICA.addUnit({
      {t:"How many people took part", why:"That’s the sample size."},
      {t:"Whether the study was peer-reviewed", why:"Unrelated to effect size."}]},
    {id:"t4u3-q20", lesson:"t4u3-l3", level:2, q:"A study reports “difference 3 kg (95% CI 1 to 5)”. Which reading is correct?", options:[
-     {t:"The interval came from a method that would capture the true difference in about 95% of repeated studies; 1 to 5 kg are values reasonably compatible with the data", ok:true, why:"The 95% describes the method; the interval shows compatible values."},
-     {t:"There is a 95% probability that the true difference is between 1 and 5 kg", why:"The common misreading: for a confidence interval, this particular range either contains the true value or not."},
+     {t:"The CI method captures the true difference in about 95% of repeated studies", ok:true, why:"The 95% describes the method; the interval shows values (1 to 5 kg) that are reasonably compatible with the data."},
+     {t:"There is a 95% probability that the true difference in the population is between 1 and 5 kg", why:"The common misreading: for a confidence interval, this particular range either contains the true value or not."},
      {t:"95% of participants lost between 1 and 5 kg", why:"The interval is about the average difference, not individuals."},
      {t:"The difference is exactly 3 kg in the population", why:"3 kg is the best estimate; the interval shows the uncertainty around it."}]},
    {id:"t4u3-q21", lesson:"t4u3-l3", level:2, q:"Risk of a side effect falls from 2% to 1%. Which pair of descriptions is correct?", options:[
@@ -962,18 +1024,18 @@ ICA.addUnit({
      {t:"1% lower in both absolute and relative terms", why:"The relative change is 50%, because the starting risk was only 2%."},
      {t:"2 percentage points lower; 100% lower in relative terms", why:"Risk fell from 2% to 1%, not to zero."}]},
    {id:"t4u3-q22", lesson:"t4u3-l3", level:3, q:"An online poll of 80,000 volunteers and a random sample of 1,500 people give different estimates of how many adults read books. Which is more likely to be accurate, and why?", options:[
-     {t:"The random sample, because the volunteers chose themselves and may differ from adults in general", ok:true, why:"Size doesn’t fix selection bias. A well-drawn random sample gives everyone a known chance of inclusion."},
+     {t:"The random sample, because volunteers choose themselves", ok:true, why:"Volunteers may differ from adults in general. Size doesn’t fix selection bias. A well-drawn random sample gives everyone a known chance of inclusion."},
      {t:"The poll, because 80,000 is far larger", why:"A large biased sample gives a precise answer to the wrong question."},
      {t:"Neither can ever be useful", why:"The random sample is designed to represent the population."},
-     {t:"They are equally accurate because both are samples", why:"How a sample is chosen matters as much as its size."}]},
+     {t:"They are equally accurate, because both of them are samples of adults", why:"How a sample is chosen matters as much as its size."}]},
    {id:"t4u3-q23", lesson:"t4u3-l3", level:2, q:"Roughly how does the width of a confidence interval change if a study uses four times as many participants (same design)?", options:[
      {t:"It roughly halves", ok:true, why:"Width shrinks with the square root of the sample size: √4 = 2."},
      {t:"It shrinks to a quarter", why:"That would be direct proportion; the relationship is with the square root."},
      {t:"It doubles", why:"More participants make estimates more precise, not less."},
      {t:"It stays the same", why:"Sample size is one of the main things that affects width."}]},
    {id:"t4u3-q24", lesson:"t4u3-l3", level:3, q:"An observational study finds that people who own dogs have lower blood pressure. Which is the best next question?", options:[
-     {t:"Could something else, such as activity level or income, explain both dog ownership and blood pressure?", ok:true, why:"That asks about confounders, the key weakness of observational comparisons."},
-     {t:"How quickly can everyone get a dog?", why:"That assumes cause, which an observational study can’t establish."},
+     {t:"Could something else, such as income, explain both?", ok:true, why:"Activity level or income, for example, could affect both dog ownership and blood pressure. That asks about confounders, the key weakness of observational comparisons."},
+     {t:"How quickly can everyone with high blood pressure get a dog?", why:"That assumes cause, which an observational study can’t establish."},
      {t:"Was the p-value below 0.05?", why:"Significance doesn’t address whether the link is causal."},
      {t:"Which breed works best?", why:"Again, this assumes dogs cause the difference."}]},
    {id:"t4u3-q25", lesson:"t4u3-l3", level:2, q:"Study A (20 people) reports a 6-point improvement, 95% CI −5 to 17. What’s the fairest conclusion?", options:[
@@ -982,12 +1044,12 @@ ICA.addUnit({
      {t:"The treatment clearly doesn’t work", why:"The interval also includes large benefits; the study can’t tell."},
      {t:"Exactly 6 points of improvement is proven", why:"6 is just the best estimate, with large uncertainty."}]},
    {id:"t4u3-q26", lesson:"t4u3-l3", level:1, q:"What is a confounder?", options:[
-     {t:"A third factor linked to both the supposed cause and the outcome, which can create a misleading association", ok:true, why:"Confounders are why observational associations can’t simply be read as causes."},
+     {t:"A third factor linked to both the supposed cause and the outcome", ok:true, why:"It can create a misleading association. Confounders are why observational associations can’t simply be read as causes."},
      {t:"A participant who drops out", why:"That’s attrition or dropout."},
      {t:"A statistical test", why:"A confounder is a variable, not a test."},
-     {t:"A reviewer who disagrees with the authors", why:"Unrelated to the statistical term."}]},
+     {t:"A reviewer who disagrees with the authors about how to interpret the outcome", why:"Unrelated to the statistical term."}]},
    {id:"t4u3-q27", lesson:"t4u3-l3", level:3, q:"A study of 50,000 people finds an average difference of 0.2 points on a 100-point wellbeing scale (95% CI 0.1 to 0.3). What’s the best summary?", options:[
-     {t:"Precisely estimated but very small; probably too small to matter in practice", ok:true, why:"The narrow interval shows precision; the size shows the effect is tiny."},
+     {t:"Precisely estimated but probably too small to matter", ok:true, why:"The narrow interval shows precision; the size shows the effect is tiny."},
      {t:"A large effect, because the interval doesn’t include zero", why:"Excluding zero says the estimate is probably above zero, not that it’s large."},
      {t:"Inconclusive, because the interval is so narrow", why:"A narrow interval means the result is precise, not inconclusive."},
      {t:"Meaningless, because large studies always give wrong answers", why:"Large studies give precise estimates; the issue is only that this one is small."}]},
@@ -998,23 +1060,23 @@ ICA.addUnit({
      {t:"That the sample size is at least 100", why:"p-values can be calculated for samples of any size."},
      {t:"That the effect is large", why:"It makes no assumption about size."}]},
    {id:"t4u3-q29", lesson:"t4u3-l4", level:2, q:"A news report says: “p = 0.02, so there’s only a 2% chance the result is a fluke.” What’s wrong?", options:[
-     {t:"A p-value is the chance of data this extreme if there were no effect, not the chance that the result is a fluke", ok:true, why:"ASA principle 2: p doesn’t measure the probability that the data were produced by chance alone."},
+     {t:"It’s the chance of data this extreme if there were no effect, not of a fluke", ok:true, why:"ASA principle 2: p doesn’t measure the probability that the data were produced by chance alone."},
      {t:"Nothing: that is exactly what a p-value means", why:"It’s the most common misreading of p-values."},
      {t:"The chance of a fluke is actually 98%", why:"p doesn’t give that either way; 1 − p isn’t meaningful as a probability of truth."},
-     {t:"It should say a 2% chance the effect is large", why:"p says nothing about size."}]},
+     {t:"It should say there is a 2% chance that the effect is large, not that it is a fluke", why:"p says nothing about size."}]},
    {id:"t4u3-q30", lesson:"t4u3-l4", level:1, q:"What does ‘statistically significant’ mean?", options:[
      {t:"The p-value fell below a threshold chosen in advance, often 0.05", ok:true, why:"That’s the whole technical meaning."},
      {t:"The effect is large", why:"Size is shown by the effect size, not significance."},
      {t:"The result is important for practice", why:"Importance is a judgement about size and context."},
      {t:"The result has been proven true", why:"No single test proves a result."}]},
    {id:"t4u3-q31", lesson:"t4u3-l4", level:3, q:"A small trial finds p = 0.31 for a new physiotherapy routine. Lucía’s manager says this “proves it doesn’t work”. What’s the best reply?", options:[
-     {t:"A non-significant result isn’t proof of no effect; the interval may include worthwhile benefits, so the trial may be too small to tell", ok:true, why:"Absence of significance isn’t evidence of absence, especially in small studies."},
-     {t:"The manager is right: p > 0.05 shows there is no effect", why:"A classic misreading listed by Greenland and colleagues."},
+     {t:"Non-significance isn’t proof of no effect; the trial may be too small to tell", ok:true, why:"The interval may include worthwhile benefits. Absence of significance isn’t evidence of absence, especially in small studies."},
+     {t:"The manager is right: any p-value above 0.05 shows that the routine has no effect", why:"A classic misreading listed by Greenland and colleagues."},
      {t:"p = 0.31 means a 31% chance the routine works", why:"p isn’t the probability that a hypothesis is true."},
      {t:"p = 0.31 means a 69% chance it doesn’t work", why:"Neither p nor 1 − p is the probability of a hypothesis."}]},
    {id:"t4u3-q32", lesson:"t4u3-l4", level:2, q:"Which is one of the six principles in the ASA’s 2016 statement on p-values?", options:[
-     {t:"A p-value, or statistical significance, does not measure the size of an effect or the importance of a result", ok:true, why:"That’s principle 5."},
-     {t:"Results with p < 0.05 should always guide policy", why:"Principle 3 says decisions shouldn’t rest only on crossing a threshold."},
+     {t:"A p-value does not measure the size of an effect or the importance of a result", ok:true, why:"That’s principle 5."},
+     {t:"Results with p < 0.05 should always be used to guide policy and practice decisions", why:"Principle 3 says decisions shouldn’t rest only on crossing a threshold."},
      {t:"P-values measure the probability that the hypothesis is true", why:"Principle 2 says the opposite."},
      {t:"P-values should never be reported", why:"The statement warns against misuse; it doesn’t ban p-values."}]},
    {id:"t4u3-q33", lesson:"t4u3-l4", level:2, q:"An invented study tests 60 outcomes and reports 3 that are significant at 0.05. If none of the outcomes had a real effect, about how many significant results would you expect by chance?", options:[
@@ -1023,8 +1085,8 @@ ICA.addUnit({
      {t:"About 30", why:"That would be a 50% false-alarm rate."},
      {t:"About 57", why:"That’s the expected number of non-significant results."}]},
    {id:"t4u3-q34", lesson:"t4u3-l4", level:3, q:"A paper reports that a drug was “significant in adults over 60 (p = 0.01) but not in younger adults (p = 0.25), so it works only in older people”. What’s the flaw?", options:[
-     {t:"To show the effect differs by age, the difference between the groups must be tested directly; one p below and one above 0.05 don’t show that", ok:true, why:"A difference in significance isn’t a significant difference."},
-     {t:"There is no flaw: different p-values prove different effects", why:"The younger group may just be smaller or noisier."},
+     {t:"The difference between the age groups must be tested directly", ok:true, why:"One p below and one above 0.05 don’t show that the effect differs by age. A difference in significance isn’t a significant difference."},
+     {t:"There is no flaw: different p-values in two groups prove the effects are different", why:"The younger group may just be smaller or noisier."},
      {t:"The p-values should have been added together", why:"p-values aren’t added; the comparison needs its own test."},
      {t:"The study should have used p = 0.10 for younger adults", why:"Changing thresholds after seeing data makes things worse."}]},
    {id:"t4u3-q35", lesson:"t4u3-l4", level:2, q:"Which reported result gives the most useful information?", options:[
@@ -1033,8 +1095,8 @@ ICA.addUnit({
      {t:"“p = 0.01”", why:"A p-value alone doesn’t tell you how big the effect is."},
      {t:"“A significant improvement was found” (marked with two stars)", why:"Stars and the word ‘significant’ leave out size and uncertainty."}]},
    {id:"t4u3-q36", lesson:"t4u3-l4", level:1, q:"In a coin test, 9 heads in 10 tosses gives p ≈ 0.02 (two-sided). What does that mean?", options:[
-     {t:"If the coin were fair, a result this lopsided (either way) would happen about 2% of the time", ok:true, why:"That’s the p-value: the probability of data this extreme under the fair-coin model."},
-     {t:"There is a 2% chance the coin is fair", why:"p can’t give the probability of the hypothesis; that would need more information."},
+     {t:"If the coin were fair, a result this lopsided would happen about 2% of the time", ok:true, why:"That’s the p-value: the probability of data this extreme (either way) under the fair-coin model."},
+     {t:"There is only a 2% chance that the coin is fair, so it is almost certainly biased", why:"p can’t give the probability of the hypothesis; that would need more information."},
      {t:"The coin lands heads 2% of the time", why:"It landed heads 90% of the time in this test."},
      {t:"There is a 98% chance the coin is biased", why:"1 − p isn’t the probability that the coin is biased."}]},
    /* Lesson 5 */
@@ -1044,23 +1106,23 @@ ICA.addUnit({
      {t:"Checking a paper’s spelling and grammar", why:"Clarity matters, but appraisal is about the evidence."},
      {t:"Counting how often a paper is cited", why:"Citations show attention, not trustworthiness."}]},
    {id:"t4u3-q38", lesson:"t4u3-l5", level:2, q:"An abstract based on a one-off survey says screen time “causes anxiety in teenagers”. What’s the main problem?", options:[
-     {t:"A single survey can show association, not cause; anxious teenagers may use screens more, or other factors may affect both", ok:true, why:"Causal language from a non-causal design is a classic form of spin."},
-     {t:"Surveys can never be published", why:"Surveys are widely and usefully published; the issue is the claim."},
-     {t:"Anxiety can’t be measured", why:"It can be measured with validated questionnaires."},
+     {t:"A single survey shows association, not cause", ok:true, why:"Anxious teenagers may use screens more, or other factors may affect both. Causal language from a non-causal design is a classic form of spin."},
+     {t:"Surveys can never be published as research", why:"Surveys are widely and usefully published; the issue is the claim."},
+     {t:"Anxiety can’t be measured by asking teenagers questions", why:"It can be measured with validated questionnaires."},
      {t:"Teenagers shouldn’t be studied", why:"With proper ethics they can be; the issue is the causal claim."}]},
    {id:"t4u3-q39", lesson:"t4u3-l5", level:3, q:"An AI tool summarises a paper as “a large trial proving the diet causes weight loss in all adults”. The paper is a 12-week trial in 90 women aged 30–50, with an uncertain result. What has the summary done?", options:[
-     {t:"Exaggerated the size and certainty and over-generalised beyond the sample, so every claim must be checked against the paper", ok:true, why:"‘Large’, ‘proving’ and ‘all adults’ all go beyond what the paper reports."},
-     {t:"Summarised accurately, since AI tools read the whole paper", why:"Tools can misread or overstate; this summary contradicts the paper."},
+     {t:"Exaggerated the size and certainty and over-generalised beyond the sample", ok:true, why:"‘Large’, ‘proving’ and ‘all adults’ all go beyond what the paper reports. Check every claim against the paper."},
+     {t:"Summarised it accurately, since AI tools read the whole paper before answering", why:"Tools can misread or overstate; this summary contradicts the paper."},
      {t:"Made only a harmless simplification", why:"Changing ‘uncertain’ to ‘proving’ and ‘90 women’ to ‘all adults’ changes the meaning."},
      {t:"Shown that the paper is wrong", why:"The summary is wrong, not necessarily the paper."}]},
    {id:"t4u3-q40", lesson:"t4u3-l5", level:2, q:"What is a reporting guideline such as CONSORT?", options:[
-     {t:"A checklist of what a report of a particular type of study (for CONSORT, a randomised trial) should include", ok:true, why:"Reporting guidelines help authors report fully and readers check what’s missing."},
-     {t:"A rule that decides whether a trial’s results are true", why:"It covers reporting, not truth."},
+     {t:"A checklist of what a report of a particular type of study should include", ok:true, why:"For CONSORT, the type of study is a randomised trial. Reporting guidelines help authors report fully and readers check what’s missing."},
+     {t:"A rule that journals use to decide whether a trial’s results are true or false", why:"It covers reporting, not truth."},
      {t:"A citation style", why:"Citation styles format references; reporting guidelines cover content."},
      {t:"A law that applies in every country", why:"It’s a professional standard, adopted by many journals."}]},
    {id:"t4u3-q41", lesson:"t4u3-l5", level:2, q:"Hana is appraising an interview study of 20 refugees’ experiences of finding work. Which question fits best?", options:[
-     {t:"Is the analysis transparent, with quotations that support each theme, and do the researchers reflect on their own role?", ok:true, why:"Qualitative studies are judged on fit, transparency and reflexivity."},
-     {t:"Is 20 people enough to estimate the national employment rate?", why:"Interview studies don’t aim to estimate population rates."},
+     {t:"Is the analysis transparent, and do the researchers reflect on their own role?", ok:true, why:"Look for quotations that support each theme. Qualitative studies are judged on fit, transparency and reflexivity."},
+     {t:"Is a sample of 20 people enough to estimate the national employment rate for refugees?", why:"Interview studies don’t aim to estimate population rates."},
      {t:"Was the p-value below 0.05?", why:"Qualitative studies don’t usually test hypotheses with p-values."},
      {t:"Were participants randomly assigned to conditions?", why:"There are no conditions to assign in an interview study."}]},
    {id:"t4u3-q42", lesson:"t4u3-l5", level:1, q:"When you use an AI summary of a paper, what should you cite?", options:[
@@ -1069,18 +1131,18 @@ ICA.addUnit({
      {t:"Nothing, if the summary was short", why:"Using a source’s findings always needs a citation."},
      {t:"The summary’s first sentence", why:"Summaries can be wrong; verify and cite the paper."}]},
    {id:"t4u3-q43", lesson:"t4u3-l5", level:3, q:"Ana has been asked to peer-review a manuscript for a journal and wonders whether to upload it to an AI chatbot for a summary. What should she do?", options:[
-     {t:"Not upload it: peer review is confidential, and she should check the journal’s policy on AI use", ok:true, why:"A manuscript under review is someone else’s unpublished work shared in confidence."},
+     {t:"Not upload it, because peer review is confidential", ok:true, why:"A manuscript under review is someone else’s unpublished work shared in confidence. She should also check the journal’s policy on AI use."},
      {t:"Upload it, since the chatbot is free", why:"Price doesn’t affect confidentiality."},
      {t:"Upload only the abstract and methods", why:"Those parts are also confidential."},
-     {t:"Upload it if she deletes the authors’ names", why:"Removing names doesn’t make the unpublished work hers to share."}]},
+     {t:"Upload it, as long as she deletes the authors’ names first", why:"Removing names doesn’t make the unpublished work hers to share."}]},
    {id:"t4u3-q44", lesson:"t4u3-l5", level:2, q:"Which phrase in a results section is a common sign of spin?", options:[
      {t:"“A trend towards significance (p = 0.08)”", ok:true, why:"It presents an inconclusive result as if it were nearly positive."},
      {t:"“Difference 2.1 points (95% CI 0.4 to 3.8)”", why:"A plain report of size and uncertainty."},
      {t:"“The primary outcome did not differ between groups”", why:"An honest report of a null result."},
      {t:"“Our sample was drawn from one region, which limits generalisability”", why:"An honest limitation, the opposite of spin."}]},
    {id:"t4u3-q45", lesson:"t4u3-l5", level:3, q:"Amara finds one well-designed study supporting a claim she likes. What should she do before relying on it?", options:[
-     {t:"Check whether it has been corrected or retracted, look for reviews and later studies, and appraise it as strictly as one she disagrees with", ok:true, why:"One paper is one voice; checking context and her own bias guards against overconfidence."},
-     {t:"Rely on it: one good study settles the question", why:"Single studies often aren’t replicated; context matters."},
+     {t:"Check for corrections, look for reviews and later studies, and appraise it strictly", ok:true, why:"She should also check whether it has been retracted. One paper is one voice; checking context and her own bias guards against overconfidence. She should appraise it as strictly as a study she disagrees with."},
+     {t:"Rely on it, because one well-designed study is enough to settle the question for good", why:"Single studies often aren’t replicated; context matters."},
      {t:"Look only for studies that agree", why:"That’s confirmation bias."},
      {t:"Check its download count", why:"Popularity says nothing about whether it holds up."}]}
   ]

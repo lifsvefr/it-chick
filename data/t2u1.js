@@ -294,7 +294,7 @@ ICA.addUnit({
       ["`button.addEventListener(\"click\", …)`","Runs code whenever the button is clicked","JavaScript: wait for an event, then react."]
     ]},
     {id:"t2u1-l2-x3", type:"mcq", q:"Tomás opens his page and sees a plain serif font, blue underlined links and none of his colours, though the text is all there. What’s the most likely cause?", options:[
-      {t:"The browser didn’t load his CSS file, perhaps because of a wrong path or file name", ok:true, why:"Right. All content present but default styles is the signature of missing CSS. Check the `href` in the `<link>` against the real file name and folder."},
+      {t:"The browser didn’t load his CSS file", ok:true, why:"Right. All content present but default styles is the signature of missing CSS, often from a wrong path or file name. Check the `href` in the `<link>` against the real file name and folder."},
       {t:"His JavaScript has a syntax error", why:"A broken script stops behaviour, but it doesn’t remove CSS. The colours would still show."},
       {t:"His HTML file is missing", why:"Without HTML there would be no text at all. The content is there, so the HTML loaded."},
       {t:"His internet connection is too slow for colours", why:"Colours aren’t separate downloads; they’re in the CSS. If the CSS arrived, they’d appear."}
@@ -303,8 +303,8 @@ ICA.addUnit({
       {t:"h1 {", flag:false, why:"The selector is fine: it targets the main heading."}, "\n  ", {t:"color: #8a3b12", flag:true, why:"There’s no semicolon after the colour, so the browser reads it together with the next line as one invalid value, and drops it."}, "\n  ", {t:"font-size: 2.5rem;", flag:true, why:"This line is correct on its own, but it was swallowed into the broken `color` value above, so it’s ignored too."}, "\n}\n", {t:"p {", flag:false, why:"A valid selector for paragraphs."}, "\n  ", {t:"line-height: 1.5;", flag:false, why:"Valid and in its own rule, so it applies. That’s why the paragraphs look right."}, "\n}"
     ]},
     {id:"t2u1-l2-x5", type:"mcq", q:"Kenji puts `<script src=\"script.js\"><\/script>` in his page’s `<head>`. Chrome’s Console says: `Cannot read properties of null (reading 'addEventListener')`. What happened?", options:[
-      {t:"The script ran before the browser had read the button, so it found nothing", ok:true, why:"Right. Without `defer`, a script in the head runs as soon as it arrives, before the body is read. `querySelector` returned `null`. Add `defer`, or move the script to the end of the body."},
-      {t:"The file script.js doesn’t exist", why:"If the file were missing, nothing would run and there’d be a 404, not an error from inside the script. This error came from code that did run."},
+      {t:"The script ran before the browser had read the button", ok:true, why:"Right. Without `defer`, a script in the head runs as soon as it arrives, before the body is read. `querySelector` returned `null`. Add `defer`, or move the script to the end of the body."},
+      {t:"The file script.js doesn’t exist, so the browser can’t find it", why:"If the file were missing, nothing would run and there’d be a 404, not an error from inside the script. This error came from code that did run."},
       {t:"Buttons can’t be used with JavaScript", why:"They can; this error is about timing, not about buttons."},
       {t:"There’s a missing semicolon in the CSS", why:"CSS mistakes never produce JavaScript errors; the browser skips them silently."}
     ]},
@@ -458,13 +458,13 @@ ICA.addUnit({
       "<a href=\"", {t:"about.html", flag:false, why:"about.html sits in the same folder as index.html, so the bare file name is right."}, "\">About</a>\n<img src=\"", {t:"images/Logo.PNG", flag:true, why:"The real file is `logo.png`. Most servers are case-sensitive, so `Logo.PNG` is a different name and gives a 404."}, "\" alt=\"Logo\">\n<img src=\"", {t:"file:///C:/Users/amara/site/images/cake.jpg", flag:true, why:"A file URL points into Amara’s own computer. Visitors’ browsers look on their own devices and find nothing. Use `images/cake.jpg`."}, "\" alt=\"A cake\">\n<a href=\"", {t:"https://example.org/recipes", flag:false, why:"A complete absolute URL to another site: correct."}, "\">Recipes</a>\n<img src=\"", {t:"image/cake.jpg", flag:true, why:"The folder is called `images`, not `image`. One missing letter, one 404."}, "\" alt=\"A cake\">"
     ]},
     {id:"t2u1-l3-x5", type:"mcq", q:"Kenji links his style sheet as `href=\"/styles/style.css\"`. It works on his test server, but on his GitHub Pages project site at `kenji.github.io/recipes/` the page has no styles. Why?", options:[
-      {t:"The leading `/` points to kenji.github.io/styles/, outside the recipes project", ok:true, why:"Right. A root-relative path starts at the top of the domain. His site lives in /recipes/, so the browser asks for a file that isn’t there. `styles/style.css` (relative) works in both places."},
-      {t:"GitHub Pages doesn’t allow CSS files", why:"GitHub Pages serves CSS like any other host. The path pointed to the wrong place."},
+      {t:"The leading `/` points outside the recipes project", ok:true, why:"Right. A root-relative path starts at the top of the domain, so the browser asks for kenji.github.io/styles/style.css, which isn’t there: his site lives in /recipes/. `styles/style.css` (relative) works in both places."},
+      {t:"GitHub Pages doesn’t allow CSS files in project sites", why:"GitHub Pages serves CSS like any other host. The path pointed to the wrong place."},
       {t:"The file must be called index.css", why:"Style sheets can have any sensible name; only the home page has to be index.html."},
       {t:"The browser cached an old version", why:"A cache problem would show old styles, not none at all. A missing style sheet points at the path."}
     ]},
     {id:"t2u1-l3-x6", type:"mcq", q:"Oluwaseun right-clicked in File Explorer, chose **New → Text Document**, renamed it `index.html` and typed his page into it with Notepad. File Explorer shows `index.html`, but when he opens it, the browser shows his tags as plain text instead of a page. What’s the most likely cause?", options:[
-      {t:"The file is really index.html.txt, with the .txt hidden", ok:true, why:"Right. Windows hides known extensions by default, so renaming “New Text Document.txt” only changed the part before the hidden .txt. The browser sees .txt and shows plain text. Turn on file name extensions and rename it to index.html (or save from Notepad with Save as type set to All files)."},
+      {t:"It’s really index.html.txt, with the .txt hidden", ok:true, why:"Right. Windows hides known extensions by default, so renaming “New Text Document.txt” only changed the part before the hidden .txt. The browser sees .txt and shows plain text. Turn on file name extensions and rename it to index.html (or save from Notepad with Save as type set to All files)."},
       {t:"Notepad can’t write HTML", why:"Notepad saves plain text, which is exactly what HTML is. The problem is the hidden extension."},
       {t:"He needs to upload it before it works", why:"HTML files open fine from your own computer. This is about the file’s real name."},
       {t:"The browser doesn’t support HTML files from Windows", why:"Every browser opens local HTML files; it’s treating this one as text because of its extension."}
@@ -589,7 +589,7 @@ ICA.addUnit({
     {id:"t2u1-l4-x1", type:"sort", q:"Which of these files are plain text that you could open and read in any text editor?", buckets:["Plain text","Not plain text"], items:[
       {t:"index.html", b:0, why:"HTML is plain text with a .html extension."},
       {t:"style.css", b:0, why:"CSS files are plain text."},
-      {t:"members.csv", b:0, why:"A CSV is a plain-text table (Unit 9 of Digital Foundations)."},
+      {t:"members.csv", b:0, why:"A CSV is a plain-text table (Unit 10 of Digital Foundations)."},
       {t:"report.docx", b:1, why:"A .docx is a zipped package of files describing text and formatting. A text editor shows gibberish."},
       {t:"logo.png", b:1, why:"An image is binary data: numbers for pixels, not characters."},
       {t:"notes.txt", b:0, why:".txt is the classic plain-text file."}
@@ -598,7 +598,7 @@ ICA.addUnit({
       "<p class=", {t:"\"intro\"", flag:false, why:"Straight double quotes: fine."}, ">Hi</p>\n<a href=", {t:"“menu.html”", flag:true, why:"Curly quotes. The browser treats them as part of the address, so the link goes nowhere."}, ">Menu</a>\n<script>\n", {t:"const name = ‘Amara’;", flag:true, why:"Curly single quotes aren’t string quotes in JavaScript: a syntax error that stops the whole script."}, "\n", {t:"console.log(\"Hi \" + name);", flag:false, why:"Straight quotes and correct brackets: fine (if the line above were fixed)."}, "\n<\/script>"
     ]},
     {id:"t2u1-l4-x3", type:"mcq", q:"Lucía typed her first page in TextEdit on her Mac, saved it as index.html, and opened it in a browser. The page shows her tags, like `<h1>`, as visible text. What went wrong?", options:[
-      {t:"TextEdit was in rich-text mode, so it saved a page that displays her code as text", ok:true, why:"Right. In rich-text mode TextEdit treats what you type as words to display. Choose **Format → Make Plain Text** first, then save."},
+      {t:"TextEdit saved it as rich text, not plain text", ok:true, why:"Right. In rich-text mode TextEdit treats what you type as words to display, so the saved page shows her code as text. Choose **Format → Make Plain Text** first, then save."},
       {t:"Macs can’t create HTML files", why:"They can: TextEdit in plain-text mode, or any code editor, saves perfectly good HTML."},
       {t:"She needed to upload the file before the tags would work", why:"Local HTML files render fine. The file itself contains code that displays the tags."},
       {t:"Her browser doesn’t support the h1 tag", why:"Every browser supports h1. The tags are being shown because they were saved as text, not as code."}
@@ -611,7 +611,7 @@ ICA.addUnit({
       ["Extensions","Add formatting, checking or live previews","Add-ons extend what the editor can do."]
     ]},
     {id:"t2u1-l4-x5", type:"mcq", q:"Dmitri’s school Chromebook is managed, and the Linux development environment is switched off. He wants to edit HTML files with a proper code editor. What can he do?", options:[
-      {t:"Use an editor that runs in the browser, such as vscode.dev, or the Web Lab", ok:true, why:"Right. Both run in Chrome with nothing to install, so they work even when Linux apps are blocked. vscode.dev can open folders in Chrome."},
+      {t:"Use an editor that runs in the browser, such as vscode.dev", ok:true, why:"Right. Browser editors such as vscode.dev, or the Web Lab, run in Chrome with nothing to install, so they work even when Linux apps are blocked. vscode.dev can open folders in Chrome."},
       {t:"Write the code in Google Docs and download it as .html", why:"Docs curls quotes and adds its own formatting; it’s the wrong kind of tool for code."},
       {t:"Nothing: Chromebooks can’t be used for coding", why:"They can, through browser editors, or through Linux where it’s allowed."},
       {t:"Ask a friend to email him a copy of VS Code’s Windows installer", why:"Windows programs don’t run on ChromeOS, and installing unknown files on a school device is against most policies anyway."}
@@ -741,8 +741,8 @@ ICA.addUnit({
       {t:"Nothing: you can’t edit pages in DevTools", why:"You can edit your local copy; that’s a feature for testing. It just doesn’t reach the server."}
     ]},
     {id:"t2u1-l5-x3", type:"mcq", q:"Tomás views the source of a busy news site and sees almost nothing: `<div id=\"app\"></div>` and a few script tags. The page itself is full of articles. Why?", options:[
-      {t:"JavaScript builds the content after the page loads; the Inspector would show it", ok:true, why:"Right. View source shows the HTML file as sent. Here the scripts fetch and add the articles afterwards, so they appear only in the live DOM, which the Inspector shows."},
-      {t:"The site is hiding its code to keep it secret", why:"Everything the browser runs can be read. The content is added later by scripts, which are visible too."},
+      {t:"JavaScript adds the content after the page loads", ok:true, why:"Right. View source shows the HTML file as sent. Here the scripts fetch and add the articles afterwards, so they appear only in the live DOM, which the Inspector shows."},
+      {t:"The site is hiding its code to keep it secret from visitors", why:"Everything the browser runs can be read. The content is added later by scripts, which are visible too."},
       {t:"View source is broken in his browser", why:"It’s working: it shows exactly what the server sent, which is a small file that relies on JavaScript."},
       {t:"News sites are made with images, not HTML", why:"The articles are HTML; they’re just added by JavaScript after loading."}
     ]},
@@ -791,6 +791,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u1-q02","t2u1-q06","t2u1-q11","t2u1-q14","t2u1-q17","t2u1-q21","t2u1-q24","t2u1-q30","t2u1-q33","t2u1-q37","t2u1-q40","t2u1-q43"],
+  cpBank:[
+    {id:"t2u1-cp01", lesson:"t2u1-l1", level:2, q:"Zara uploads a page called `menu`, with no extension. When visitors open its address, their browsers download the file instead of showing it. What is the best fix?", options:[{t:"Add `<!doctype html>` at the top so the browser knows", why:"The browser decides what to do with a file from its `Content-Type` label. The doctype is fine to have, but the missing extension is what gives the wrong label."}, {t:"Tell visitors to try a different browser", why:"Every browser trusts the label the server sends. The problem is the missing extension, so it is the same for every visitor."}, {t:"Rename it `menu.html`, so the host labels it as HTML", ok:true, why:"Hosts choose the `Content-Type` label from the file’s extension. With `.html`, the response says `text/html`, and the browser shows it as a page."}, {t:"Retype the page in a word processor to fix its format", why:"A word processor would add hidden changes and curly quotes. The file is fine; the host just needs the `.html` extension to label it."}]},
+    {id:"t2u1-cp02", lesson:"t2u1-l3", level:3, q:"Leo double-clicks `index.html` in his `shop` folder. His photo `images/hat.jpg` appears, but the style sheet linked as `/styles/main.css` doesn’t load. Why?", options:[{t:"Style sheets only load when a real web server sends them", why:"CSS loads from a file URL just as his photo does. The leading `/` is what sends the browser to the wrong place."}, {t:"Browsers block all CSS on file URLs for security reasons", why:"Some JavaScript features, such as modules, are blocked on file URLs, but style sheets are not. The path’s starting point is the problem."}, {t:"On a `file:///` page, `/` starts at the top of the drive", ok:true, why:"With no server involved, a path that starts with `/` begins at the top of the whole drive. `styles/main.css` would start from the page’s own folder and work."}, {t:"The style sheet must be called `style.css` to load", why:"Any safe file name works. The browser is looking in the wrong folder because the path starts with `/`."}]},
+    {id:"t2u1-cp03", lesson:"t2u1-l1", level:2, q:"On Ines’s page, tapping a button makes JavaScript add a new paragraph under it. What does the browser do next?", options:[{t:"Asks the server for a fresh copy of the HTML file", why:"The change happens in the browser’s own copy of the page, the DOM. No new request for the HTML is needed."}, {t:"Redoes the layout and painting for what changed", ok:true, why:"Scripts can change the DOM tree at any moment. The browser then works out sizes and positions again and repaints what was affected."}, {t:"Nothing changes on screen until the page is reloaded", why:"The visitor sees the new paragraph at once. The browser updates the page whenever a script changes the tree."}, {t:"Waits for the server to send a new picture of the page", why:"Servers never send pictures of pages. The visitor’s browser does all the building and drawing itself."}]},
+    {id:"t2u1-cp04", lesson:"t2u1-l2", level:1, q:"Hamid’s order page must add up the prices a visitor picks and show the total. Which language does the adding?", options:[{t:"HTML, because the prices are written in the HTML", why:"HTML marks up content: it says what each part is. It isn’t a programming language, so it can’t calculate anything."}, {t:"CSS, because it controls how the total looks", why:"CSS decides appearance only. It can style the total, but it can’t work it out."}, {t:"JavaScript, because it can do sums", ok:true, why:"JavaScript is the page’s programming language: it can calculate, make decisions and change the page while it’s open."}, {t:"Java, which JavaScript is short for", why:"Java and JavaScript are different languages that happen to share part of a name. Browsers run JavaScript."}]},
+    {id:"t2u1-cp05", lesson:"t2u1-l2", level:2, q:"A visitor’s browser blocks all scripts. Ravi’s recipe page has its recipes in the HTML, a style sheet, and a **Print list** button that uses JavaScript. What does this visitor get?", options:[{t:"A blank page, because the script never ran", why:"Only the HTML is essential. Without JavaScript, the HTML and CSS still arrive and show."}, {t:"The recipes in the browser’s plain default styles", why:"The style sheet is a separate file, and it still loads. Only the JavaScript layer is missing."}, {t:"An error page from the browser instead of the recipes", why:"Browsers don’t replace a page with an error when scripts are blocked. The page still shows; it just doesn’t respond."}, {t:"Styled recipes, but the button does nothing", ok:true, why:"The layers are separate, so the page degrades: the content and the styles still work, and only the behaviour is lost."}]},
+    {id:"t2u1-cp06", lesson:"t2u1-l2", level:3, q:"Tunde’s heading won’t turn green. He opens the Console and sees no errors at all. What should he conclude?", options:[{t:"CSS fails silently, so he should check the heading in the Inspector", ok:true, why:"CSS problems are silent, and the Console mainly reports JavaScript errors. The Inspector shows which CSS rules reach the heading, and from which file and line."}, {t:"His CSS must be correct, because no error appeared", why:"A common misconception. HTML and CSS almost never show error messages: HTML guesses and CSS skips. No message proves nothing."}, {t:"The browser has a bug, because a CSS mistake would show in the Console", why:"Browsers skip CSS they can’t read quietly, by design. Silence in the Console is normal for a CSS mistake."}, {t:"His JavaScript must have stopped before it could colour the heading", why:"A colour in a CSS file doesn’t depend on JavaScript. And a stopped script would normally leave an error in the Console."}]},
+    {id:"t2u1-cp07", lesson:"t2u1-l3", level:2, q:"Amara moves `contact.html` from the top of her site into a new `pages/` folder. Its logo used `src=\"images/logo.png\"`, and `images/` stays at the top. What should the `src` be now?", options:[{t:"`images/logo.png`, unchanged", why:"Relative paths start from the page’s own folder. From `pages/`, this asks for `pages/images/logo.png`, which doesn’t exist."}, {t:"`../images/logo.png`", ok:true, why:"`../` climbs from `pages/` up to the top of the site; then the path goes down into `images/`."}, {t:"`pages/images/logo.png`", why:"This would ask for `pages/pages/images/logo.png`. The path has to go up a level, not deeper."}, {t:"`../logo.png`", why:"This climbs to the top of the site but skips the `images/` folder, where the logo actually is."}]},
+    {id:"t2u1-cp08", lesson:"t2u1-l3", level:3, q:"The address `https://lena.example/recipes/Index.html` works, but `https://lena.example/recipes/` gives a 404. What should Lena change?", options:[{t:"Add a link to `/recipes/` from her home page", why:"A link would lead to the same 404. The folder needs a file the server will send for it."}, {t:"Wait a day for the server to notice the folder", why:"The server isn’t slow: it looked for `index.html` and found nothing. A 404 means the address didn’t match a file."}, {t:"Rename the folder to `Recipes/`, with a capital", why:"That would break the address that works now. The capital letter causing trouble is in the file name."}, {t:"Rename `Index.html` to `index.html`", ok:true, why:"For an address ending in a folder, the server sends exactly `index.html`. Most servers are case-sensitive, so `Index.html` doesn’t count."}]},
+    {id:"t2u1-cp09", lesson:"t2u1-l4", level:1, q:"Which is a good way to write a CSS file on a Windows laptop with nothing extra installed?", options:[{t:"Word, then **Save as Web Page**", why:"Word’s web export adds Word-specific extras, and its smart quotes break code. Use a text editor or code editor."}, {t:"Notepad, choosing **All files** as the type and saving it as `style.css`", ok:true, why:"Notepad saves plain text. Choosing **All files** and typing the full name stops the name ending up as something else, such as `style.css.txt`."}, {t:"Google Docs, then download the document", why:"Google Docs keeps documents in its own format and curls your quotes. Code needs a plain-text file."}, {t:"Any app at all, if the code looks right on screen", why:"Code that looks right can still hide curly quotes or invisible characters. The app must save plain text."}]},
+    {id:"t2u1-cp10", lesson:"t2u1-l4", level:3, q:"Ji-ho types a script on his phone. Line 1 should be `const total = 0;`, but the keyboard made it `Const total = 0;`. Lines 2 to 10 are correct. What happens when the page loads?", options:[{t:"Only line 1 fails; lines 2 to 10 still run", why:"With a syntax mistake, the browser can’t understand the script at all, so even the correct lines never run."}, {t:"The browser guesses he meant `const` and carries on", why:"Guessing is how browsers treat HTML mistakes. JavaScript doesn’t guess; it stops."}, {t:"None of it runs, because it’s a syntax error", ok:true, why:"JavaScript doesn’t recognise `Const`. A syntax mistake means the browser can’t understand the file, so no line of it runs."}, {t:"Line 1 is skipped, the way a bad CSS declaration is", why:"Skipping is how CSS reacts. A JavaScript syntax error stops the whole script."}]},
+    {id:"t2u1-cp11", lesson:"t2u1-l5", level:2, q:"Elena’s gallery page loads slowly on phones, although every image appears. Which check will show the cause most quickly?", options:[{t:"View source, to count the `<img>` tags", why:"Source shows the HTML, not how heavy each file is. A page with few images can still be slow."}, {t:"The Console, looking for red errors", why:"Every image loaded, so there may be no errors at all. Large files don’t cause error messages."}, {t:"The Inspector, unticking CSS declarations one by one", why:"The Inspector changes how your copy looks, not what is downloaded. File sizes are in the Network panel."}, {t:"The Network panel: reload, then sort by Size", ok:true, why:"Every file gets a row with its size. A huge photo shown as a small thumbnail stands out at once."}]},
+    {id:"t2u1-cp12", lesson:"t2u1-l5", level:1, q:"Chen checked his layout with Chrome’s device toolbar at phone width, and it looks good. What’s the best next step before publishing?", options:[{t:"Also test the page on a real phone", ok:true, why:"Device mode imitates phone widths very well, but not perfectly. A real phone catches what it misses."}, {t:"Nothing: device mode is identical to a real phone", why:"Device modes are very good but not perfect. The advice is to test on a real phone before you publish."}, {t:"Remove the wide-screen styles, since phones matter most", why:"One page should work on every screen. Checking phones doesn’t mean dropping the laptop layout."}, {t:"Make a second copy of the site just for phones", why:"One page can adapt to every screen, because each browser lays it out for its own screen size."}]}
+  ],
   codex:[
    {id:"how-a-page-loads", title:"How a web page loads", aka:["rendering","page load","critical rendering path","DOM","render tree","layout","paint"], tags:["web","making"],
     summary:"The browser requests the HTML, discovers and fetches the other files it names, then builds a tree, matches CSS, lays out, paints, and lets JavaScript change it.",
@@ -1083,7 +1097,7 @@ ICA.addUnit({
      {t:"500", why:"500 is a server error: something broke on the server, not a missing file."}
    ]},
    {id:"t2u1-q04", lesson:"t2u1-l1", level:1, q:"What does the `Content-Type` header in a response do?", options:[
-     {t:"Tells the browser what kind of file it’s receiving, such as text/html or image/png", ok:true, why:"The browser uses this label to decide how to handle the file. Hosts usually set it from the extension."},
+     {t:"Says what kind of file is being sent", ok:true, why:"It labels the file, such as text/html or image/png, so the browser knows how to handle it. Hosts usually set it from the extension."},
      {t:"Lists the words that appear on the page", why:"Headers describe the response; the content itself is in the body."},
      {t:"Sets the page’s font", why:"Fonts are set in CSS, not in response headers."},
      {t:"Tells the server which browser is asking", why:"That information travels in the request, not the response."}
@@ -1113,10 +1127,10 @@ ICA.addUnit({
      {t:"The phone downloaded a different style sheet automatically", why:"The browser fetches the style sheet the HTML names, the same one on both devices."}
    ]},
    {id:"t2u1-q09", lesson:"t2u1-l1", level:3, q:"Priya sees `304` next to her logo in her browser’s tools after reloading. What should she do?", options:[
-     {t:"Nothing: the browser confirmed its cached copy is current and reused it", ok:true, why:"304 Not Modified is normal caching, not an error."},
+     {t:"Nothing: its cached copy is current and was reused", ok:true, why:"304 Not Modified means the browser confirmed its cached copy is current and reused it. That’s normal caching, not an error."},
      {t:"Re-upload the logo, because it’s broken", why:"A broken logo would show 404. 304 means the server confirmed the saved copy is still good."},
      {t:"Rename the logo file", why:"Nothing is wrong with the name; the file was found."},
-     {t:"Contact her host about a server failure", why:"Server failures are 5xx codes. 304 is part of normal operation."}
+     {t:"Contact her host, because 304 means a server failure", why:"Server failures are 5xx codes. 304 is part of normal operation."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t2u1-q10", lesson:"t2u1-l2", level:1, q:"Which language gives a web page its content and structure?", options:[
@@ -1132,25 +1146,25 @@ ICA.addUnit({
      {t:"The server’s settings", why:"Appearance is decided by the page’s CSS in the browser, not by the server."}
    ]},
    {id:"t2u1-q12", lesson:"t2u1-l2", level:1, q:"In the CSS rule `h1 { color: teal; }`, what is `h1`?", options:[
-     {t:"The selector: it says which elements the rule applies to", ok:true, why:"Selectors pick the parts of the page; declarations in the braces say what to do to them."},
+     {t:"The selector", ok:true, why:"It says which elements the rule applies to. Selectors pick the parts of the page; declarations in the braces say what to do to them."},
      {t:"A property", why:"The property is `color`; `h1` picks the elements."},
      {t:"A value", why:"The value is `teal`."},
      {t:"A JavaScript variable", why:"This is CSS; `h1` targets every main heading."}
    ]},
    {id:"t2u1-q13", lesson:"t2u1-l2", level:1, q:"What does `defer` do in `<script src=\"script.js\" defer><\/script>`?", options:[
-     {t:"Runs the script only after the browser has read all of the HTML", ok:true, why:"The script downloads straight away but waits to run, so it can find every element on the page."},
+     {t:"Runs the script after all the HTML has been read", ok:true, why:"The script downloads straight away but waits to run, so it can find every element on the page."},
      {t:"Stops the script from running at all", why:"Deferred scripts do run, just later."},
      {t:"Makes the script run before the HTML is read", why:"That’s the opposite: a plain script in the head runs before the body is read; defer delays it."},
-     {t:"Hides the script’s code from visitors", why:"Nothing hides code that runs in a browser; defer only changes timing."}
+     {t:"Hides the script’s code from people who visit the page", why:"Nothing hides code that runs in a browser; defer only changes timing."}
    ]},
    {id:"t2u1-q14", lesson:"t2u1-l2", level:3, q:"Ana’s page loads, but its style sheet has a typo in its address, so it 404s. What do visitors see?", options:[
-     {t:"All the content, in the browser’s plain default styles", ok:true, why:"Without CSS, the HTML still shows: default fonts, big bold headings, blue underlined links."},
+     {t:"All the content, in plain default styles", ok:true, why:"Without CSS, the HTML still shows in the browser’s default styles: default fonts, big bold headings, blue underlined links."},
      {t:"A blank page", why:"The content is in the HTML, which loaded. Only the styling is missing."},
-     {t:"An error message instead of the page", why:"Browsers don’t replace a page with an error because a style sheet is missing."},
+     {t:"An error message in place of the whole page", why:"Browsers don’t replace a page with an error because a style sheet is missing."},
      {t:"The page with styles but no JavaScript", why:"The CSS is what failed, so the styles are what’s missing."}
    ]},
    {id:"t2u1-q15", lesson:"t2u1-l2", level:2, q:"What happens when a CSS declaration contains a value the browser doesn’t understand?", options:[
-     {t:"The browser ignores that declaration and carries on with the rest", ok:true, why:"CSS skips what it can’t read, which is why a typo silently fails to apply."},
+     {t:"It ignores that declaration and carries on", ok:true, why:"CSS skips what it can’t read and carries on with the rest, which is why a typo silently fails to apply."},
      {t:"The whole style sheet stops working", why:"Only the bad declaration (and anything swallowed into it, such as after a missing semicolon) is skipped."},
      {t:"The page shows an error message", why:"CSS mistakes never show messages to visitors."},
      {t:"The browser guesses the nearest valid value", why:"Browsers repair broken HTML, but invalid CSS values are dropped, not guessed."}
@@ -1168,10 +1182,10 @@ ICA.addUnit({
      {t:"The browser repaired the quote, but in the wrong place", why:"Browsers don’t repair JavaScript; they report a syntax error."}
    ]},
    {id:"t2u1-q18", lesson:"t2u1-l2", level:2, q:"Why should a café put its opening hours in the HTML rather than adding them only with JavaScript?", options:[
-     {t:"Content in the HTML still reaches visitors if a script fails or is blocked", ok:true, why:"That’s progressive enhancement: the essential content works for everyone; scripts add extras."},
+     {t:"Visitors still see it if a script fails or is blocked", ok:true, why:"That’s progressive enhancement: the essential content works for everyone; scripts add extras."},
      {t:"JavaScript can’t show text", why:"It can; the point is reliability, not ability."},
      {t:"HTML loads more slowly, so it should hold less", why:"HTML arrives first. Putting essentials there makes them appear sooner, not later."},
-     {t:"Search engines refuse to read JavaScript sites", why:"Many can run JavaScript; HTML is still the most reliable home for content."}
+     {t:"Search engines refuse to read sites built with JavaScript", why:"Many can run JavaScript; HTML is still the most reliable home for content."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t2u1-q19", lesson:"t2u1-l3", level:1, q:"Which file name is safest for a web page?", options:[
@@ -1181,7 +1195,7 @@ ICA.addUnit({
      {t:"spring-fair", why:"Without an extension, a host may not send it as HTML."}
    ]},
    {id:"t2u1-q20", lesson:"t2u1-l3", level:1, q:"In a path, what does `../` mean?", options:[
-     {t:"Go up one folder from the folder this file is in", ok:true, why:"Two dots mean the parent folder."},
+     {t:"Go up one folder", ok:true, why:"Two dots mean the parent: the folder above the one this file is in."},
      {t:"Go to the home page", why:"It goes up one folder, whatever is there; that’s only the home folder if you were one level down."},
      {t:"Go to the top of the domain", why:"That’s what a leading `/` does."},
      {t:"Stay in the same folder", why:"That’s `./`, or just the file name on its own."}
@@ -1193,10 +1207,10 @@ ICA.addUnit({
      {t:"C:/site/images/group.jpg", why:"A path on your own drive fails for every visitor."}
    ]},
    {id:"t2u1-q22", lesson:"t2u1-l3", level:3, q:"Sione’s logo shows on his Windows laptop but is broken online. His HTML says `images/Logo.png`; the file is `images/logo.png`. What’s the cause?", options:[
-     {t:"His laptop ignores letter case in names, but the web server doesn’t", ok:true, why:"Windows and macOS are usually case-insensitive; most web servers aren’t, so Logo.png and logo.png are different files online."},
+     {t:"His laptop ignores letter case; the server doesn’t", ok:true, why:"Windows and macOS are usually case-insensitive; most web servers aren’t, so Logo.png and logo.png are different files online."},
      {t:"The server doesn’t support PNG images", why:"PNG works everywhere. The name doesn’t match."},
      {t:"The image is too big", why:"A large image would load slowly, not give a 404."},
-     {t:"Windows changed the file while uploading", why:"The file is fine; the reference in the HTML has a capital L."}
+     {t:"Windows changed the file’s name while it was uploading", why:"The file is fine; the reference in the HTML has a capital L."}
    ]},
    {id:"t2u1-q23", lesson:"t2u1-l3", level:2, q:"Which link correctly points to another website?", options:[
      {t:"href=\"https://example.org/seeds\"", ok:true, why:"Other sites need a complete, absolute URL including https://."},
@@ -1211,34 +1225,34 @@ ICA.addUnit({
      {t:"GitHub fixes the paths automatically", why:"Hosts serve files at the addresses requested; they don’t rewrite your paths."}
    ]},
    {id:"t2u1-q25", lesson:"t2u1-l3", level:2, q:"Why is `notes#2.html` a bad file name?", options:[
-     {t:"In a URL, # starts a fragment, so the browser requests `notes` and never the real file", ok:true, why:"Everything after # is treated as a place within a page and isn’t sent to the server."},
+     {t:"In a URL, # starts a fragment", ok:true, why:"Everything after # is treated as a place within a page and isn’t sent to the server, so the browser requests `notes` and never the real file."},
      {t:"Numbers aren’t allowed in file names", why:"Digits are fine; the # is the problem."},
      {t:"It’s too short", why:"Length isn’t the issue; the special character is."},
      {t:"It has no extension", why:"It ends in .html, but the # cuts the address off before it."}
    ]},
    {id:"t2u1-q26", lesson:"t2u1-l3", level:1, q:"Why is the home page of a site always called `index.html`?", options:[
-     {t:"Servers send index.html when an address ends in a folder, such as the bare domain", ok:true, why:"It’s the default file name servers look for, so the top-level index.html is what visitors to the domain get."},
-     {t:"Browsers can only open files called index.html", why:"Browsers open any HTML file; index.html matters to servers."},
+     {t:"Servers send it when an address ends in a folder", ok:true, why:"It’s the default file name servers look for when an address ends in a folder, such as the bare domain, so the top-level index.html is what visitors to the domain get."},
+     {t:"Browsers can only open files that are called index.html", why:"Browsers open any HTML file; index.html matters to servers."},
      {t:"It loads faster than other names", why:"The name doesn’t affect speed."},
      {t:"Search engines require it", why:"It’s a server convention, not a search-engine rule."}
    ]},
    {id:"t2u1-q27", lesson:"t2u1-l3", level:3, q:"Kenji’s page has `<img src=\"C:\\Users\\kenji\\Pictures\\cat.jpg\" alt=\"Our cat\">`. It works for him. What should he do before publishing?", options:[
-     {t:"Copy the photo into the project’s images folder and use src=\"images/cat.jpg\"", ok:true, why:"A path to his own drive works only on his computer. Inside the project with a relative path, it travels with the site."},
+     {t:"Copy the photo into the project and use a relative path", ok:true, why:"A path to his own drive works only on his computer. With the photo in the project’s images folder and `src=\"images/cat.jpg\"`, it travels with the site."},
      {t:"Nothing, since it works", why:"It works only because the file is on his computer; visitors’ browsers look on their own devices."},
-     {t:"Change the backslashes to forward slashes", why:"The slashes aren’t the main problem: the path still points to his own drive."},
+     {t:"Change the backslashes to forward slashes, as the web uses", why:"The slashes aren’t the main problem: the path still points to his own drive."},
      {t:"Add file:/// in front", why:"A file URL still points to his own computer."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t2u1-q28", lesson:"t2u1-l4", level:1, q:"Why is a word processor the wrong tool for writing HTML?", options:[
-     {t:"It adds formatting and changes characters, such as straight quotes into curly ones", ok:true, why:"Code must be saved as exactly the characters you type; word processors are designed to change and decorate them."},
-     {t:"It can’t type angle brackets", why:"It can type them; the trouble is what else it changes and how it saves."},
+     {t:"It changes characters and adds formatting", ok:true, why:"Word processors change characters, such as straight quotes into curly ones, and save formatting with the text. Code must be saved as exactly the characters you type."},
+     {t:"It has no way to type the angle brackets of tags", why:"It can type them; the trouble is what else it changes and how it saves."},
      {t:"It’s too slow", why:"Speed isn’t the issue; the file it saves is."},
      {t:"HTML must be written in capital letters", why:"HTML is usually written in lowercase, and any editor can type either."}
    ]},
    {id:"t2u1-q29", lesson:"t2u1-l4", level:1, q:"What does “plain text” mean?", options:[
-     {t:"A file that holds only characters, with no fonts or formatting stored in it", ok:true, why:"That’s exactly what HTML, CSS and JavaScript files are."},
+     {t:"Only characters, with no fonts or formatting stored", ok:true, why:"That’s exactly what HTML, CSS and JavaScript files are."},
      {t:"Text without any punctuation", why:"Plain text can include any characters; it just stores no formatting."},
-     {t:"Text in a simple font such as Arial", why:"A plain-text file stores no font at all; the app showing it chooses one."},
+     {t:"Text written in a simple font, such as Arial or Verdana", why:"A plain-text file stores no font at all; the app showing it chooses one."},
      {t:"A file that only contains English", why:"Plain text in UTF-8 can hold every writing system."}
    ]},
    {id:"t2u1-q30", lesson:"t2u1-l4", level:3, q:"Mei pastes a line of JavaScript from a shared document into her editor: `console.log(“Hi”);`. It fails with “Invalid or unexpected token”. What’s wrong?", options:[
@@ -1248,20 +1262,20 @@ ICA.addUnit({
      {t:"Her browser is out of date", why:"No browser accepts curly quotes as string delimiters."}
    ]},
    {id:"t2u1-q31", lesson:"t2u1-l4", level:2, q:"What does syntax highlighting do?", options:[
-     {t:"Shows different parts of code in different colours, making mistakes easier to spot", ok:true, why:"Tags, properties, strings and numbers get their own colours, so an unclosed quote shows up as a run of the wrong colour."},
+     {t:"Colours parts of code to make mistakes easier to spot", ok:true, why:"Tags, properties, strings and numbers get their own colours, so an unclosed quote shows up as a run of the wrong colour."},
      {t:"Fixes errors automatically", why:"It points at structure; it doesn’t change your code."},
      {t:"Makes the website colourful", why:"The colours are only in the editor, not on the page."},
-     {t:"Translates code into another language", why:"It only colours code."}
+     {t:"Translates your code into another programming language", why:"It only colours code."}
    ]},
    {id:"t2u1-q32", lesson:"t2u1-l4", level:2, q:"Which statement about vscode.dev is accurate?", options:[
-     {t:"It runs VS Code in a browser with no installation, though some features, like the terminal, are missing", ok:true, why:"Microsoft describes it as a zero-install VS Code in the browser for lightweight editing, without a terminal or debugger."},
+     {t:"It runs VS Code in a browser with nothing to install", ok:true, why:"Microsoft describes it as a zero-install VS Code in the browser for lightweight editing. Some features, like the terminal and debugger, are missing."},
      {t:"It only works on Windows", why:"It runs in current Chrome, Edge, Firefox and Safari, including on Chromebooks and tablets."},
      {t:"It’s a paid service", why:"It’s free to use; no payment or subscription is needed."},
-     {t:"It can open local folders in every browser", why:"Opening folders needs the File System Access API, which Chrome and Edge support; other browsers can open single files."}
+     {t:"It can open whole local folders in every browser, including Safari", why:"Opening folders needs the File System Access API, which Chrome and Edge support; other browsers can open single files."}
    ]},
    {id:"t2u1-q33", lesson:"t2u1-l4", level:3, q:"Oluwaseun’s file shows as `index.html` in File Explorer, but File Explorer’s Type column says “Text Document”, and the browser shows his code as text. What’s the likely problem and fix?", options:[
-     {t:"It’s really index.html.txt with the .txt hidden; show extensions and rename it", ok:true, why:"Windows hides known extensions by default. Turn on View → Show → File name extensions, rename the file to index.html, and in Notepad choose Save as type: All files in future."},
-     {t:"Notepad can’t save HTML; he must buy a code editor", why:"Notepad saves plain text, which is what HTML is. The extension is the issue."},
+     {t:"It’s really index.html.txt; show extensions and rename it", ok:true, why:"Windows hides known extensions by default, so the .txt is invisible. Turn on View → Show → File name extensions, rename the file to index.html, and in Notepad choose Save as type: All files in future."},
+     {t:"Notepad can’t save HTML, so he must buy a proper code editor", why:"Notepad saves plain text, which is what HTML is. The extension is the issue."},
      {t:"His HTML needs a closing tag", why:"A missing tag wouldn’t make the browser show all the code as text; a .txt extension would."},
      {t:"He must upload the file before it works", why:"Local HTML files open fine when they have the right extension."}
    ]},
@@ -1272,8 +1286,8 @@ ICA.addUnit({
      {t:"It can’t be turned off", why:"It can, in the Keyboard settings."}
    ]},
    {id:"t2u1-q35", lesson:"t2u1-l4", level:3, q:"Priya wants to try an online code playground to share a demo. Which habit is most important?", options:[
-     {t:"Never paste passwords, keys or private data, because saved work may be public", ok:true, why:"Some playgrounds make saved work public by default. Treat anything you paste as potentially visible."},
-     {t:"Always use the playground’s AI to write the code", why:"Writing it yourself is how you learn; AI suggestions need checking either way."},
+     {t:"Never paste passwords, keys or private data into it", ok:true, why:"Saved work may be public: some playgrounds make it public by default. Treat anything you paste as potentially visible."},
+     {t:"Always use the playground’s AI to write the code for you", why:"Writing it yourself is how you learn; AI suggestions need checking either way."},
      {t:"Turn off HTTPS so the editor runs faster", why:"HTTPS protects your connection; never turn it off."},
      {t:"Only use playgrounds on a phone", why:"Playgrounds work on any device; the device isn’t the risk."}
    ]},
@@ -1303,13 +1317,13 @@ ICA.addUnit({
      {t:"Sources / Debugger", why:"That’s for reading and stepping through scripts."}
    ]},
    {id:"t2u1-q39", lesson:"t2u1-l5", level:2, q:"You untick a CSS declaration in the Inspector and the heading changes colour. What has happened to the website?", options:[
-     {t:"Nothing: only your copy in this tab changed, until you reload", ok:true, why:"Inspector edits never reach the server."},
+     {t:"Nothing: only your copy in this tab changed", ok:true, why:"Inspector edits never reach the server, and they’re gone when you reload."},
      {t:"Everyone now sees the new colour", why:"Other visitors load the real files from the server."},
      {t:"The site’s CSS file has been edited on the server", why:"DevTools edits the page in your browser, not files on the server."},
      {t:"The change is saved in your account", why:"Inspector changes aren’t saved anywhere; reload and they’re gone."}
    ]},
    {id:"t2u1-q40", lesson:"t2u1-l5", level:3, q:"Ana’s source shows `<div id=\"app\"></div>` and some scripts, but the page is full of content. Where should she look to see that content’s HTML?", options:[
-     {t:"The Inspector, which shows the live page after JavaScript has built it", ok:true, why:"Scripts added the content after the HTML arrived, so it exists only in the live DOM."},
+     {t:"The Inspector, which shows the live page", ok:true, why:"The Inspector shows the live page after JavaScript has built it. Scripts added the content after the HTML arrived, so it exists only in the live DOM."},
      {t:"View source again after waiting a minute", why:"View source always shows the original file, however long you wait."},
      {t:"The Network panel’s waterfall", why:"That shows timing of requests, not the page’s current HTML."},
      {t:"Nowhere: content built by JavaScript can’t be seen", why:"It can, in the Inspector."}
@@ -1333,7 +1347,7 @@ ICA.addUnit({
      {t:"Switch to the Console to see the files", why:"The Console shows messages; the list of files is in Network, after a reload."}
    ]},
    {id:"t2u1-q44", lesson:"t2u1-l5", level:2, q:"Sione has only an iPhone. Which is the best way for him to practise reading errors in his own HTML, CSS and JavaScript today?", options:[
-     {t:"Use the Web Lab, which shows a live preview and explains errors with line numbers", ok:true, why:"Safari on iPhone has no DevTools or view source on the device; the Web Lab gives him a preview and error messages."},
+     {t:"Practise in the Web Lab", ok:true, why:"Safari on iPhone has no DevTools or view source on the device; the Web Lab gives him a live preview and explains errors with line numbers."},
      {t:"Open Safari’s Console on the iPhone", why:"Safari on iPhone has no built-in Console; Web Inspector needs a connected Mac."},
      {t:"Use view-source: in Safari", why:"Safari on iPhone doesn’t support view source."},
      {t:"Wait until he buys a computer", why:"He can learn and practise now in the Web Lab."}

@@ -130,8 +130,8 @@ ICA.addUnit({
       ["How do refugee families experience their first school year in a new country?","Exploratory","It asks about experiences and meanings that aren’t yet known well enough to measure."]
     ]},
     {id:"t4u6-l1-x3", type:"mcq", q:"Tomás is a student with six months and no budget. Which version of his question passes the **Feasible** test best?", options:[
-      {t:"How do part-time students at his own college balance paid work and study? (about 15 interviews)", ok:true, why:"Yes. He can reach these students, 15 interviews fit in six months, and it needs no money beyond his time."},
-      {t:"How do all university students in his country balance work and study?", why:"A national study needs a large random sample, funding and a team. Interesting, but not feasible for one student in six months."},
+      {t:"How do part-time students at his college balance work and study? (about 15 interviews)", ok:true, why:"Yes. He can reach these students, 15 interviews fit in six months, and it needs no money beyond his time."},
+      {t:"How do all university students in his country balance work and study? (a national survey)", why:"A national study needs a large random sample, funding and a team. Interesting, but not feasible for one student in six months."},
       {t:"Does part-time work cause lower grades among students worldwide?", why:"A worldwide causal question would need huge data and a strong causal design. Not feasible here, and the causal claim would be hard to support."},
       {t:"What have students thought about work throughout history?", why:"Far too broad: no clear group, place, period or sources."}
     ]},
@@ -159,9 +159,9 @@ ICA.addUnit({
       {t:"Method: short interviews with 12 gardeners who agree to take part.", flag:false, why:"A reasonable, feasible method for learning what gardens mean to the people who use them."}
     ]},
     {id:"t4u6-l1-x7", type:"mcq", q:"Fatima’s question is: “Does owning a dog increase how much older adults walk?” She plans one survey asking older adults whether they own a dog and how much they walk. What is the best advice?", options:[
-      {t:"Reword it as a relational question (“Is dog ownership associated with walking?”), or choose a design that can test cause.", ok:true, why:"Yes. One survey at one time can show that the two go together, but not which causes which, or whether something else (such as health) explains both."},
+      {t:"Reword it as a relational question, or choose a design that can test cause.", ok:true, why:"Yes. A relational version is “Is dog ownership associated with walking?” One survey at one time can show that the two go together, but not which causes which, or whether something else (such as health) explains both."},
       {t:"Keep the question; a large enough survey proves cause.", why:"Size doesn’t fix the problem. A huge survey still shows only an association."},
-      {t:"Drop the walking part, because walking can’t be measured.", why:"Walking can be measured (questions, step counters). The issue is the causal wording."},
+      {t:"Drop the walking part of the question, because walking can’t be measured well.", why:"Walking can be measured (questions, step counters). The issue is the causal wording."},
       {t:"Add “in the world” so the question is more relevant.", why:"That makes it less feasible and doesn’t fix the mismatch between a causal question and a one-time survey."}
     ]}
    ],
@@ -282,7 +282,7 @@ ICA.addUnit({
       {t:"Climate affects everything.", b:1, why:"No specific variables, population or direction, so nothing could count against it."}
     ]},
     {id:"t4u6-l2-x5", type:"mcq", q:"Researchers find that people who carry a lighter are more likely to develop lung disease. Which is the best explanation?", options:[
-      {t:"Smoking is a confounding variable: it makes people carry lighters and causes lung disease.", ok:true, why:"Right. Smoking affects both the presumed cause (carrying a lighter) and the effect (lung disease), creating a misleading link."},
+      {t:"Smoking is a confounding variable that explains both.", ok:true, why:"Right. Smoking affects both the presumed cause (carrying a lighter) and the effect (lung disease), creating a misleading link."},
       {t:"Lighters give off fumes that damage lungs.", why:"That would be a direct causal claim with no evidence. The obvious third variable explains the pattern."},
       {t:"Lung disease is a mediator between lighters and smoking.", why:"A mediator is the route from cause to effect. Here lung disease is the outcome, not a route."},
       {t:"Carrying a lighter is a moderator.", why:"A moderator changes the strength of an effect. It doesn’t explain a misleading link."}
@@ -402,10 +402,10 @@ ICA.addUnit({
    ],
    try:[
     {id:"t4u6-l3-x1", type:"mcq", q:"Why does **random assignment** make an experiment such a strong test of cause?", options:[
-      {t:"Chance makes the groups alike on average in everything else, including things nobody measured, so a difference afterwards is most likely due to the intervention.", ok:true, why:"Exactly. That is what lets experiments rule out confounding variables, even unknown ones."},
+      {t:"Chance makes the groups alike on average, even in things nobody measured.", ok:true, why:"Exactly. So a difference afterwards is most likely due to the intervention. That is what lets experiments rule out confounding variables, even unknown ones."},
       {t:"It makes the sample represent the whole population.", why:"That’s random **sampling**, which is about generalising. Random assignment is about fair comparison between groups (Lesson 4 compares the two)."},
       {t:"It makes the experiment cheaper.", why:"Random assignment costs almost nothing extra, but saving money isn’t why it’s powerful."},
-      {t:"It guarantees participants don’t know they’re in a study.", why:"Participants usually do know, and must consent. Random assignment is about who gets the intervention, not secrecy."}
+      {t:"It guarantees that participants don’t know they’re taking part in a study.", why:"Participants usually do know, and must consent. Random assignment is about who gets the intervention, not secrecy."}
     ]},
     {id:"t4u6-l3-x2", type:"sort", q:"Is each study a **true experiment** (random assignment) or a **quasi-experiment** (comparison without random assignment)?", buckets:["True experiment","Quasi-experiment"], items:[
       {t:"A computer randomly decides which of 200 enrolled clinics get a new training course.", b:0, why:"Chance decides which clinics get the course: random assignment."},
@@ -422,10 +422,10 @@ ICA.addUnit({
       ["A new random sample of voters is asked the same questions every four years.","Repeated cross-sectional","Same questions and population, but new people each time: it shows change in the population, not in individuals."]
     ]},
     {id:"t4u6-l3-x4", type:"mcq", q:"Mei surveyed 800 office workers once. Those who exercise more report less stress. Why can’t her cross-sectional design show that exercise reduces stress?", options:[
-      {t:"Both were measured at the same time, so stress might reduce exercise, and other factors (like free time) might drive both.", ok:true, why:"Right. A single snapshot can’t establish time order or rule out confounders. A panel or an experiment would be needed for a causal claim."},
+      {t:"Both were measured at once, so the direction and other causes are unclear.", ok:true, why:"Right. Stress might reduce exercise, and other factors (like free time) might drive both. A single snapshot can’t establish time order or rule out confounders. A panel or an experiment would be needed for a causal claim."},
       {t:"800 people is too few for any conclusion.", why:"800 is a reasonable sample for an association. The problem is the design, not the size."},
       {t:"Stress can only be studied with interviews.", why:"Stress can be measured with validated questionnaires. The issue is timing and confounding."},
-      {t:"Cross-sectional studies can’t find associations.", why:"They can and do find associations. They just can’t show which came first."}
+      {t:"Cross-sectional studies can’t find associations between two variables at all.", why:"They can and do find associations. They just can’t show which came first."}
     ]},
     {id:"t4u6-l3-x5", type:"order", q:"Put the stages of an **exploratory sequential** mixed methods study in order.", items:[
       {t:"Interview a small group to learn how they understand the issue", why:"This design starts qualitative, because too little is known to measure well."},
@@ -443,7 +443,7 @@ ICA.addUnit({
       {t:"Is household income associated with internet use among adults in one region?", b:1, why:"A relational question that a survey of a random sample can answer."}
     ]},
     {id:"t4u6-l3-x7", type:"mcq", q:"Sione runs a survey and interviews in the same month, writes up each in separate chapters, and never compares them. What is missing for this to count as good mixed methods research?", options:[
-      {t:"Integration: bringing the two strands together to reach conclusions neither gives alone.", ok:true, why:"Yes. Collecting both types isn’t enough; mixed methods means deliberately comparing, connecting or building one strand on the other."},
+      {t:"Integration of the two strands.", ok:true, why:"Yes. Integration means bringing the strands together to reach conclusions neither gives alone. Collecting both types isn’t enough; mixed methods means deliberately comparing, connecting or building one strand on the other."},
       {t:"A larger survey sample.", why:"Sample size might matter for the survey, but it doesn’t make the study mixed methods."},
       {t:"Doing the interviews first.", why:"Convergent designs collect both strands at the same time; the order isn’t the problem."},
       {t:"A hypothesis for the interviews.", why:"Qualitative strands usually work from questions, not hypotheses. That isn’t what’s missing."}
@@ -561,7 +561,7 @@ ICA.addUnit({
       {v:0.25, tol:0.01, why:"That’s 100 ÷ 400. The rule uses the square root of the sample size: 1 ÷ √400."}
     ], hint2:"Find the square root of 400 first, then divide 1 by it and turn the result into a percentage."},
     {id:"t4u6-l4-x4", type:"mcq", q:"Dmitri says: “The country has 40 million adults, so a survey of 1,500 randomly chosen adults can’t tell us anything.” What is the best reply?", options:[
-      {t:"Precision depends mainly on the sample size, not the population size; 1,500 random adults gives a margin of only a few percentage points.", ok:true, why:"Right. Once a population is large, its size makes almost no difference. How people are chosen, and how many, is what counts."},
+      {t:"Precision depends mainly on sample size, not population size.", ok:true, why:"Right. 1,500 random adults give a margin of only a few percentage points. Once a population is large, its size makes almost no difference. How people are chosen, and how many, is what counts."},
       {t:"He’s right: you need at least 10% of the population.", why:"That’s a common myth. 10% of 40 million is 4 million people, far more than needed for good precision."},
       {t:"He’s right unless the survey is done online.", why:"Mode isn’t the issue here; random selection and size are."},
       {t:"Any sample over 1,000 is perfectly accurate.", why:"No sample is perfectly accurate; there is always a margin of error, and bias can still creep in."}
@@ -574,7 +574,7 @@ ICA.addUnit({
       ["Testing whether a draft questionnaire is easy to understand","Convenience","For piloting, any few willing people from the target group will reveal unclear questions."]
     ]},
     {id:"t4u6-l4-x6", type:"mcq", q:"A trial randomly assigns 200 volunteers from one city to a new exercise programme or to usual activity. What can it support, and what can’t it?", options:[
-      {t:"It can support a causal claim for people like these volunteers, but not automatically generalise to all adults, because the volunteers weren’t randomly sampled.", ok:true, why:"Yes. Random assignment gives internal validity; the lack of random sampling limits external validity."},
+      {t:"A causal claim for people like these volunteers, but not for all adults.", ok:true, why:"Yes. The volunteers weren’t randomly sampled. Random assignment gives internal validity; the lack of random sampling limits external validity."},
       {t:"It can generalise to all adults, because assignment was random.", why:"Random assignment makes the comparison fair; it doesn’t make volunteers represent everyone."},
       {t:"It can’t support any causal claim, because the volunteers weren’t randomly sampled.", why:"Causal claims rest on random assignment, which the trial has. Sampling affects who the result applies to."},
       {t:"It shows only a correlation, like a survey.", why:"Because chance decided who got the programme, it can test cause, unlike a survey."}
@@ -731,7 +731,7 @@ ICA.addUnit({
       {t:"Conclusion she plans to draw: solar lamps cause children to study longer.", flag:true, why:"A causal claim about a different outcome, which her descriptive survey doesn’t measure or test."}
     ]},
     {id:"t4u6-l5-x7", type:"mcq", q:"Kenji’s qualitative study has 18 interviews with nurses in one hospital. A reviewer asks how his findings could apply elsewhere. What is the best answer?", options:[
-      {t:"Describe the setting and participants in rich detail so readers can judge transferability, and link the findings to theory.", ok:true, why:"Yes. Qualitative studies don’t generalise statistically; they support transferability and theoretical generalisation through detail and connection to existing ideas."},
+      {t:"Describe the setting and people in detail so readers can judge transferability.", ok:true, why:"Yes. Qualitative studies don’t generalise statistically; they support transferability and theoretical generalisation through detail and connection to existing ideas. Linking the findings to theory also helps."},
       {t:"Claim the findings apply to all nurses, because 18 is a large number of interviews.", why:"18 interviews in one hospital can’t represent all nurses statistically, however rich they are."},
       {t:"Add a margin of error to the interview themes.", why:"Margins of error need a probability sample and numerical estimates; they don’t apply to interview themes."},
       {t:"Say that qualitative research never needs to consider other settings.", why:"Readers rightly want to know where findings might apply. Qualitative research answers that with transferability, not by ignoring it."}
@@ -750,6 +750,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t4u6-q02","t4u6-q06","t4u6-q11","t4u6-q15","t4u6-q19","t4u6-q22","t4u6-q26","t4u6-q30","t4u6-q33","t4u6-q37","t4u6-q41","t4u6-q44"],
+  cpBank:[
+   {id:"t4u6-cp01", lesson:"t4u6-l1", level:1, q:"Wairimu drafts: **“How has the closing of rural banks harmed small farmers?”** Which revision best fixes its main weakness?", options:[
+     {t:"“How badly have rural bank closures harmed small farmers across the country?”", why:"This keeps the built-in assumption that closures caused harm, and makes the question broader too. A good question doesn’t take its answer for granted."},
+     {t:"“Should governments stop rural banks from closing, to protect small farmers?”", why:"This turns it into a value question, which evidence alone can’t settle. Research can answer the factual parts: what happened, to whom."},
+     {t:"“How did small farmers in one district manage money after their bank closed?”", ok:true, why:"The draft assumes closures harmed farmers. This version asks what actually happened, so harm, benefit or no change can all show up, and it names one district."},
+     {t:"“Have rural bank closures harmed small farmers and raised local food prices?”", why:"This is two questions in one, and the first part still assumes the harm is the thing to look for. Split it, or pick one open question."}]},
+   {id:"t4u6-cp02", lesson:"t4u6-l2", level:1, q:"Kemal records how far each family lives from the nearest clinic, in kilometres. What level of measurement is this?", options:[
+     {t:"Ratio", ok:true, why:"Distance has equal gaps and a true zero (0 km means no distance), so 10 km really is twice 5 km."},
+     {t:"Interval", why:"Interval scales have equal gaps but no true zero, like °C. Distance does have a true zero."},
+     {t:"Ordinal", why:"Ordinal data are ordered categories with uneven gaps, such as never/sometimes/often. Kilometres have equal gaps."},
+     {t:"Nominal", why:"Nominal data are unordered categories, such as language spoken at home. Distances are ordered numbers."}]},
+   {id:"t4u6-cp03", lesson:"t4u6-l4", level:1, q:"To learn what makes restaurants succeed, Bruno interviews the owners of restaurants that have been open for more than ten years. Which bias should worry him most?", options:[
+     {t:"Non-response", why:"Non-response is about invited people not replying. Bruno’s problem is who could be invited at all."},
+     {t:"Regression to the mean", why:"That is about extreme scores drifting back towards average on a second measurement. It doesn’t fit this sample."},
+     {t:"Self-selection", why:"Self-selection is when people choose to take part. Here, Bruno chose them, but only from the restaurants that lasted."},
+     {t:"Survivorship", ok:true, why:"He only sees the restaurants that “survived”. Those that closed may have done the same things, so he can’t tell what made the difference."}]},
+   {id:"t4u6-cp04", lesson:"t4u6-l1", level:2, q:"Nadia asks: **“How do midwives in rural clinics decide when to refer a woman to hospital?”** What type of question is this, and which design fits?", options:[
+     {t:"Causal: a randomised experiment", why:"Nothing here asks whether one thing changes another. It asks how people make sense of a decision."},
+     {t:"Exploratory: in-depth interviews or a case study", ok:true, why:"“How do people decide…?” is an exploratory question about a process and its meanings. Qualitative designs suit it."},
+     {t:"Descriptive: a cross-sectional survey of a random sample", why:"A survey suits “how many” or “how often”. Here the aim is to understand how a decision is made."},
+     {t:"Relational: correlating two measured variables", why:"A relational question asks whether two things go together. This question doesn’t name two variables to measure."}]},
+   {id:"t4u6-cp05", lesson:"t4u6-l2", level:2, q:"A reading app raises scores much more for children who already read at home with family than for those who don’t. In this study, reading at home is a…", options:[
+     {t:"Mediator", why:"A mediator is the route by which a cause works. Reading at home doesn’t carry the app’s effect; it changes how big the effect is."},
+     {t:"Control variable", why:"A control variable is held constant in the analysis. Here, reading at home is the key to who benefits."},
+     {t:"Confounding variable", why:"A confounder affects both the presumed cause and the effect, creating a misleading link. Here it changes the size of a real effect."},
+     {t:"Moderator", ok:true, why:"A moderator changes how strong an effect is, or for whom it occurs. The app helps one group of children more than another."}]},
+   {id:"t4u6-cp06", lesson:"t4u6-l2", level:2, q:"A study of household food security asks: “In the last 30 days, on how many days did anyone in your home skip a meal because there wasn’t enough food?” What is this question?", options:[
+     {t:"An indicator: the specific item used to measure a variable", ok:true, why:"Operationalisation turns a concept (food security) into a variable (skipped-meal days) measured by an indicator (this survey item)."},
+     {t:"A concept: the abstract idea being studied", why:"The concept is food security itself. This question is one concrete way of observing it."},
+     {t:"A theory: an explanation of why food insecurity happens", why:"A theory explains how and why something happens. This question only measures."},
+     {t:"A hypothesis: the relationship the study expects", why:"A hypothesis states an expected relationship between variables. This is a survey item."}]},
+   {id:"t4u6-cp07", lesson:"t4u6-l3", level:2, q:"A city introduced a tax on sugary drinks in 2022. Researchers collect monthly sales figures for five years before and three years after, looking for a break in the trend. What design is this?", options:[
+     {t:"A randomised controlled trial", why:"Nobody was assigned by chance. The whole city got the tax at once."},
+     {t:"A cut-off (regression discontinuity) design", why:"That compares people just above and just below a threshold. Here the comparison is before and after a change over time."},
+     {t:"An interrupted time series", ok:true, why:"Many measurements before and after a change show whether the trend breaks, and reveal any existing trend."},
+     {t:"A case-control study", why:"A case-control study starts from people with and without an outcome and looks back at exposures."}]},
+   {id:"t4u6-cp08", lesson:"t4u6-l3", level:3, q:"One school chooses to adopt a new maths scheme; a similar nearby school doesn’t. Both are tested before and after the year, and the scheme school improves more. Which threat to internal validity remains the biggest?", options:[
+     {t:"Maturation", why:"Pupils in both schools mature over the year. A comparison group handles that."},
+     {t:"Testing", why:"Both schools sat the same tests twice, so any practice effect affects both groups."},
+     {t:"Selection", ok:true, why:"The school chose the scheme, so it may differ from the start (keener teachers, say). Without random assignment, this quasi-experiment can’t rule that out."},
+     {t:"Regression to the mean", why:"That applies when a group is picked for extreme scores. Nothing says the schools were chosen that way."}]},
+   {id:"t4u6-cp09", lesson:"t4u6-l4", level:3, q:"A national survey draws 1,000 adults at random. Ravi wants to use it to compare opinion across the country’s 10 regions. What is the main problem?", options:[
+     {t:"None: 1,000 people give about ±3 points for every region", why:"±3 applies to the whole sample. Each region has only about 100 people, so its own margin is much wider."},
+     {t:"Each region has about 100 people: roughly ±10 points, too wide", ok:true, why:"Subgroups need their own numbers. With about 1 ÷ √100 = ±10 points per region, real differences can hide in the noise."},
+     {t:"1,000 is too small for a whole country, whatever he analyses", why:"Once a population is large, its size barely matters. 1,000 is fine for a national estimate; the regions are the issue."},
+     {t:"He should switch to snowball sampling inside each region", why:"Snowball sampling suits hidden groups. It can’t give estimates of how common opinions are."}]},
+   {id:"t4u6-cp10", lesson:"t4u6-l4", level:3, q:"An agency surveys 5,000 people drawn at random from a list of landline numbers, to estimate how young adults get their news. A colleague says, “5,000 is plenty.” What is the real problem?", options:[
+     {t:"5,000 is too few for a national estimate", why:"The sample is large. Size isn’t the problem; who can be selected is."},
+     {t:"It needs random assignment to be valid", why:"Random assignment is for testing cause in experiments. This is a descriptive survey."},
+     {t:"No problem: random selection from the list represents all young adults", why:"Random selection represents the frame, not people missing from it."},
+     {t:"Many young adults have no landline, so the frame misses them", ok:true, why:"Coverage error means some of the population can never be chosen. A bigger sample shrinks random error, not bias, so results may not generalise."}]},
+   {id:"t4u6-cp11", lesson:"t4u6-l5", level:2, q:"A team tests a new two-minute hearing app by comparing its results with a full hearing test by an audiologist, in 300 people. What kind of evidence are they gathering?", options:[
+     {t:"Test–retest reliability", why:"That would give the same app to the same people twice. Here the app is compared with a different, established measure."},
+     {t:"Criterion validity", ok:true, why:"Checking a new measure against an established one (here, the full test) is criterion validity."},
+     {t:"Inter-rater reliability", why:"That checks whether different observers agree when rating the same material."},
+     {t:"Internal consistency", why:"That checks whether the items of one scale hang together, for example with Cronbach’s alpha."}]},
+   {id:"t4u6-cp12", lesson:"t4u6-l5", level:3, q:"Aisha’s proposal asks: **“How common is food insecurity among university students in one city?”** She plans 15 in-depth interviews with students she meets at a campus food bank. What is the best revision?", options:[
+     {t:"Interview 50 food-bank users instead of 15", why:"A bigger sample from the same place is still biased: everyone at a food bank is likely to be food insecure."},
+     {t:"Keep the plan, because qualitative depth is always better", why:"Depth is valuable, but interviews can’t estimate how common something is. The design must fit the question."},
+     {t:"Survey a random sample from enrolment lists", ok:true, why:"A “how common?” question needs a probability sample. Alignment means the question, sample and design fit together."},
+     {t:"Randomly assign students to receive food aid or not", why:"Random assignment tests cause; this question is descriptive. Withholding food aid would also raise serious ethical problems."}]},
+  ],
   codex:[
    {id:"research-questions", title:"Research questions", aka:["formulating a research question","topic to question","aims and objectives","question types"], tags:["research","design"],
     summary:"How a broad topic becomes a focused, answerable question, and how the kind of question shapes the rest of a study.",
@@ -1090,7 +1152,7 @@ ICA.addUnit({
    /* Lesson 1 */
    {id:"t4u6-q01", lesson:"t4u6-l1", level:1, q:"Which of these is a research question rather than a topic?", options:[
      {t:"How do first-time voters in one city decide which candidate to support?", ok:true, why:"It names who, where and what will be found out, so evidence could answer it."},
-     {t:"Elections and young people", why:"An area of interest with no specific question."},
+     {t:"First-time voters, social media and local elections in one city since 2020", why:"An area of interest with no specific question."},
      {t:"Voting", why:"Far too broad: no group, place, period or question."},
      {t:"Politics in my country", why:"A broad topic; it doesn’t say what will be found out."}]},
    {id:"t4u6-q02", lesson:"t4u6-l1", level:2, q:"“Does a free school breakfast improve pupils’ concentration in the morning?” What type of question is this?", options:[
@@ -1099,8 +1161,8 @@ ICA.addUnit({
      {t:"Exploratory", why:"Exploratory questions ask how people experience or make sense of something; this one asks about an effect."},
      {t:"Relational", why:"A relational question asks whether two things go together, without claiming cause. “Improve” makes this causal."}]},
    {id:"t4u6-q03", lesson:"t4u6-l1", level:1, q:"In FINER, what does the N stand for, and what does it include?", options:[
-     {t:"Novel: it confirms, refutes or extends what is known, so a careful replication can count", ok:true, why:"Right. Novel doesn’t mean never studied; adding new evidence about a known finding counts."},
-     {t:"Necessary: the study must be required by law", why:"N stands for novel, not necessary."},
+     {t:"Novel: it confirms, refutes or extends what is known", ok:true, why:"Right. Novel doesn’t mean never studied; adding new evidence about a known finding counts. So a careful replication can count."},
+     {t:"Necessary: the study must be required by law or by a funder", why:"N stands for novel, not necessary."},
      {t:"Neutral: the researcher must have no opinion", why:"N stands for novel. Neutrality is a separate issue."},
      {t:"Numerical: the study must use numbers", why:"FINER applies to qualitative studies too; N stands for novel."}]},
    {id:"t4u6-q04", lesson:"t4u6-l1", level:2, q:"A review asks: “In adults living near busy roads, is long-term traffic noise, compared with living in quiet areas, associated with high blood pressure?” Which framework fits best?", options:[
@@ -1114,14 +1176,14 @@ ICA.addUnit({
      {t:"A 2012 article in Qualitative Health Research", why:"That 2012 article proposed SPIDER as an alternative to PICO."},
      {t:"A 2018 article in Environment International", why:"That article set out PECO for exposure questions."}]},
    {id:"t4u6-q06", lesson:"t4u6-l1", level:3, q:"Priya, a nurse, drafts: “Should hospitals use more volunteers?” Which revision makes it a researchable question?", options:[
-     {t:"“How do patients and staff on two wards describe the effect of volunteer visitors on patients’ days?”", ok:true, why:"It replaces a value question with one evidence can answer, and names who and where."},
-     {t:"“Should all hospitals in the world use more volunteers?”", why:"Still a value question, and even broader."},
+     {t:"“How do patients and staff on two wards describe the effect of volunteer visitors?”", ok:true, why:"It replaces a value question with one evidence can answer, and names who and where."},
+     {t:"“Should all hospitals in the world use more volunteers, and how many more should they use?”", why:"Still a value question, and even broader."},
      {t:"“Are volunteers good?”", why:"Still a value judgement with no group, setting or measurable focus."},
      {t:"“Why are volunteers the best way to help patients?”", why:"It assumes the answer (that volunteers are best) instead of finding out."}]},
    {id:"t4u6-q07", lesson:"t4u6-l1", level:3, q:"Tomás wants to know whether a new fertiliser increases maize yields. His plan is to ask farmers once whether they use it and how good their harvest was. What is the main mismatch?", options:[
      {t:"A causal question with a one-off survey that can show only an association", ok:true, why:"Farmers who choose the fertiliser may differ in many ways (land, money, skill). A trial or careful comparison over time is needed for a causal claim."},
      {t:"Maize yields can’t be measured", why:"Yields can be measured in weight per area. The problem is the design."},
-     {t:"The question is too narrow to be interesting", why:"A focused question about one crop and one input is a strength."},
+     {t:"The question is too narrow to be interesting to other farmers or researchers", why:"A focused question about one crop and one input is a strength."},
      {t:"Farmers shouldn’t be asked questions", why:"Asking farmers is fine with consent; the issue is what one survey can show."}]},
    {id:"t4u6-q08", lesson:"t4u6-l1", level:2, q:"Which is the best example of an **objective** (rather than an aim or a question)?", options:[
      {t:"Interview 15 market traders about how they set prices", ok:true, why:"An objective is a concrete step that helps achieve the aim."},
@@ -1129,8 +1191,8 @@ ICA.addUnit({
      {t:"How do market traders set prices?", why:"That is a research question."},
      {t:"Markets in West Africa", why:"That is a topic."}]},
    {id:"t4u6-q09", lesson:"t4u6-l1", level:3, q:"Kenji’s question is: “Does tourism damage island cultures and economies?” A supervisor says it fails the F in FINER. What is the best fix?", options:[
-     {t:"Narrow it to one aspect, place and period, such as rental prices in two towns on one island since 2015", ok:true, why:"Narrowing who, what, where and when makes it feasible for one researcher."},
-     {t:"Add more islands so the results are more general", why:"That makes it even less feasible."},
+     {t:"Narrow it to one aspect, place and period, such as rents in two towns since 2015", ok:true, why:"Narrowing who, what, where and when makes it feasible for one researcher. For example, rental prices in two towns on one island since 2015."},
+     {t:"Add more islands and a longer period so that the results are more general", why:"That makes it even less feasible."},
      {t:"Remove the word “Does” so it’s a statement", why:"A statement isn’t a question, and the scope is still huge."},
      {t:"Keep it, but promise to work harder", why:"Feasibility is about scope and resources, not effort."}]},
    /* Lesson 2 */
@@ -1150,14 +1212,14 @@ ICA.addUnit({
      {t:"The chapter of a thesis that contains the analysis", why:"Not a research design term."},
      {t:"The software used to analyse data", why:"Software is a tool; the unit of analysis is what conclusions are about."}]},
    {id:"t4u6-q13", lesson:"t4u6-l2", level:3, q:"Regions with more doctors per person have higher recorded rates of cancer. Ana concludes that seeing a doctor gives people cancer. What is the best explanation for the pattern?", options:[
-     {t:"More doctors find and record more cancers, and older populations need more doctors and have more cancer, so the link more likely reflects confounding and detection than cause", ok:true, why:"Detection and population age can link the two. Region-level data also can’t show anything about individual patients."},
+     {t:"More doctors find more cancers, and older populations have more of both", ok:true, why:"The link more likely reflects detection and confounding than cause: older populations need more doctors and have more cancer. Detection and population age can link the two. Region-level data also can’t show anything about individual patients."},
      {t:"Doctors spread cancer between patients", why:"There’s no evidence for this; the pattern has obvious alternative explanations."},
-     {t:"The correlation proves cause because it’s based on whole regions", why:"Group-level correlations are especially risky for conclusions about individuals."},
+     {t:"The correlation proves cause because it’s based on data from whole regions", why:"Group-level correlations are especially risky for conclusions about individuals."},
      {t:"Cancer causes doctors to move to a region, so the study is fine", why:"Reverse causation may play a small part, but it doesn’t support Ana’s claim."}]},
    {id:"t4u6-q14", lesson:"t4u6-l2", level:2, q:"Which hypothesis is best written?", options:[
-     {t:"Among delivery riders in one city, those working more than 50 hours a week report more road near-misses than those working fewer hours.", ok:true, why:"It names the population, two measurable variables and the expected direction, and data could show it’s wrong."},
+     {t:"Delivery riders in one city who work over 50 hours a week report more near-misses than others.", ok:true, why:"It names the population, two measurable variables and the expected direction, and data could show it’s wrong."},
      {t:"Work affects safety.", why:"No population, no direction, and “work” isn’t defined."},
-     {t:"Some riders might have accidents.", why:"So vague nothing could contradict it."},
+     {t:"Some delivery riders in the city might have more accidents, depending on many different factors.", why:"So vague nothing could contradict it."},
      {t:"Delivery work is dangerous because it is unsafe.", why:"Circular: it explains danger with danger."}]},
    {id:"t4u6-q15", lesson:"t4u6-l2", level:3, q:"Oluwaseun finds that pupils with more books at home get better grades. A colleague says household income may explain both. In this situation, income is a…", options:[
      {t:"Confounding variable", ok:true, why:"It may influence both the presumed cause (books) and the effect (grades), creating a misleading link."},
@@ -1170,14 +1232,14 @@ ICA.addUnit({
      {t:"Confounder", why:"A confounder causes both variables independently; here belonging is caused by mentoring."},
      {t:"Control group", why:"A control group is a set of participants, not a variable."}]},
    {id:"t4u6-q17", lesson:"t4u6-l2", level:1, q:"Which statement about theory-building and theory-testing research is correct?", options:[
-     {t:"Theory-testing research is usually deductive; theory-building research is usually inductive, and many projects do both", ok:true, why:"Testing starts from theory and checks predictions; building starts from data and develops explanations."},
-     {t:"Only theory-testing research counts as real research", why:"Theory-building research, often qualitative, is equally legitimate."},
+     {t:"Theory-testing is usually deductive and theory-building usually inductive", ok:true, why:"Testing starts from theory and checks predictions; building starts from data and develops explanations. Many projects do both."},
+     {t:"Only theory-testing research counts as real research, because it uses deduction", why:"Theory-building research, often qualitative, is equally legitimate."},
      {t:"Theory-building research always uses experiments", why:"It usually uses qualitative data such as interviews and observation."},
      {t:"Theory is only needed in the natural sciences", why:"Every field uses theory to explain why things happen."}]},
    {id:"t4u6-q18", lesson:"t4u6-l2", level:3, q:"Hana defines “digital skills” only as being able to search for information, then reports that “older adults lack digital skills”. What is the main weakness?", options:[
      {t:"Her measure covers one dimension, but her claim is about the whole concept", ok:true, why:"Digital skills also include communicating, staying safe and creating; she should limit her claim or measure more dimensions."},
      {t:"Older adults can’t be studied", why:"They can, with appropriate consent and methods."},
-     {t:"Searching for information isn’t a digital skill", why:"It is one; the issue is that it’s only one."},
+     {t:"Searching for information isn’t a digital skill, so her whole measure is invalid", why:"It is one; the issue is that it’s only one."},
      {t:"She should have used no definition at all", why:"Without a definition there’s nothing to measure."}]},
    /* Lesson 3 */
    {id:"t4u6-q19", lesson:"t4u6-l3", level:1, q:"What makes a true experiment different from a quasi-experiment?", options:[
@@ -1187,7 +1249,7 @@ ICA.addUnit({
      {t:"It measures outcomes with numbers", why:"Both designs usually measure numerically."}]},
    {id:"t4u6-q20", lesson:"t4u6-l3", level:2, q:"A country changes its minimum driving age. Researchers compare crash rates of drivers born just before and just after the cut-off date. What kind of design is this?", options:[
      {t:"A quasi-experiment using a cut-off (a natural experiment)", ok:true, why:"A rule, not the researcher, created comparable groups on either side of the cut-off."},
-     {t:"A randomised controlled trial", why:"Nobody was randomly assigned by the researchers."},
+     {t:"A randomised controlled trial, because the researchers compare two groups", why:"Comparing two groups isn’t enough: nobody was randomly assigned by the researchers."},
      {t:"An ethnography", why:"Ethnography means long-term immersion in a community; this compares crash statistics."},
      {t:"A case-control study", why:"Case-control studies start from people with and without an outcome; this starts from birth dates."}]},
    {id:"t4u6-q21", lesson:"t4u6-l3", level:1, q:"Which design measures the same people repeatedly over time?", options:[
@@ -1201,7 +1263,7 @@ ICA.addUnit({
      {t:"Convergent", why:"Convergent designs collect both strands in the same phase; here one follows from the other."},
      {t:"Cross-sectional only", why:"There is a cross-sectional survey, but the planned qualitative follow-up makes it mixed methods."}]},
    {id:"t4u6-q23", lesson:"t4u6-l3", level:3, q:"Fatima wants to know whether long night shifts lead to weight gain among factory workers over several years. Which design fits best, given that shifts can’t ethically be assigned?", options:[
-     {t:"A longitudinal panel following night and day workers, measuring weight and other factors each year", ok:true, why:"It shows time order and can track change in the same people, while measuring confounders such as age and diet."},
+     {t:"A longitudinal panel following night and day workers each year", ok:true, why:"It measures weight and other factors each year. It shows time order and can track change in the same people, while measuring confounders such as age and diet."},
      {t:"A single cross-sectional survey", why:"It can’t show whether weight gain followed the shifts or came first."},
      {t:"A randomised experiment assigning people to night shifts for years", why:"Assigning harmful work patterns for years wouldn’t be ethical."},
      {t:"Eight interviews with one worker’s family", why:"Useful for experiences, but it can’t estimate changes in weight across workers."}]},
@@ -1209,16 +1271,16 @@ ICA.addUnit({
      {t:"Explaining how and why something happened, in depth and in context", ok:true, why:"Case studies reveal mechanisms and meanings using several sources."},
      {t:"Estimating how common something is in a population", why:"That needs a representative sample; case studies aren’t designed for it."},
      {t:"Proving cause through random assignment", why:"Case studies don’t randomly assign anything."},
-     {t:"Being quick and cheap to run with thousands of cases", why:"Case studies are usually detailed studies of one or a few cases."}]},
+     {t:"Being quick and cheap to run, even with many thousands of cases at once", why:"Case studies are usually detailed studies of one or a few cases."}]},
    {id:"t4u6-q25", lesson:"t4u6-l3", level:3, q:"Dmitri runs a cohort study of 2,000 people for ten years. By the end, 40% have dropped out, mostly those in poorer health. Which problem should worry him most?", options:[
      {t:"Attrition bias: the people who stayed are healthier than those who left", ok:true, why:"Uneven drop-out can make the remaining group unrepresentative and distort results."},
-     {t:"The Hawthorne effect", why:"Possible, but the scenario points to uneven drop-out."},
+     {t:"The Hawthorne effect: people change because they know they are being studied", why:"Possible, but the scenario points to uneven drop-out."},
      {t:"The ecological fallacy", why:"He studies individuals, not groups, so that isn’t the issue."},
      {t:"Too large a sample", why:"Large samples aren’t a problem; losing a particular kind of participant is."}]},
    {id:"t4u6-q26", lesson:"t4u6-l3", level:2, q:"What does “integration” mean in mixed methods research?", options:[
-     {t:"Deliberately combining the quantitative and qualitative strands to reach conclusions neither gives alone", ok:true, why:"It is what distinguishes mixed methods from simply collecting two kinds of data."},
+     {t:"Deliberately combining the two strands to reach conclusions neither gives alone", ok:true, why:"The two strands are the quantitative and the qualitative. It is what distinguishes mixed methods from simply collecting two kinds of data."},
      {t:"Using the same software for both kinds of data", why:"Software choices don’t create integration."},
-     {t:"Converting all interview data into numbers", why:"That is one possible technique, but integration is broader."},
+     {t:"Converting all the interview data into numbers, so that only numbers are analysed", why:"Turning some qualitative data into numbers is one possible technique, but integration is broader and keeps what each strand adds."},
      {t:"Collecting data from both men and women", why:"That concerns the sample, not the mixing of methods."}]},
    {id:"t4u6-q27", lesson:"t4u6-l3", level:1, q:"What can a cross-sectional study usually **not** establish?", options:[
      {t:"Which of two related variables came first", ok:true, why:"Both are measured at the same time, so time order is unclear."},
@@ -1242,13 +1304,13 @@ ICA.addUnit({
      {t:"It doubles", why:"More people means more precision, so the margin shrinks."},
      {t:"It doesn’t change", why:"Larger random samples do give smaller margins."}]},
    {id:"t4u6-q31", lesson:"t4u6-l4", level:1, q:"Which statement about random sampling and random assignment is correct?", options:[
-     {t:"Random sampling supports generalising to a population; random assignment supports causal claims", ok:true, why:"They solve different problems: who is in the study versus which group they join."},
+     {t:"Random sampling supports generalising; random assignment supports causal claims", ok:true, why:"They solve different problems: who is in the study versus which group they join."},
      {t:"They are two names for the same thing", why:"A study can have one without the other."},
-     {t:"Random assignment makes a sample represent the population", why:"That is the job of random sampling."},
+     {t:"Random assignment is what makes a sample represent the whole population it came from", why:"That is the job of random sampling."},
      {t:"Surveys need random assignment", why:"Surveys usually need random sampling; assignment belongs to experiments."}]},
    {id:"t4u6-q32", lesson:"t4u6-l4", level:3, q:"Sione wants to interview people who sell goods informally at a border crossing; there is no list of them. Which approach is most suitable?", options:[
-     {t:"Snowball or purposive sampling, starting with a few trusted contacts and seeking varied participants", ok:true, why:"Without a list, probability sampling isn’t possible, and the aim is understanding, which suits purposive approaches."},
-     {t:"Simple random sampling from the official traders’ register", why:"Informal traders aren’t on the register, so they’d be missed entirely."},
+     {t:"Snowball or purposive sampling, starting with a few trusted contacts", ok:true, why:"Without a list, probability sampling isn’t possible, and the aim is understanding, which suits purposive approaches. He should seek varied participants."},
+     {t:"Simple random sampling from the official register of traders at the crossing", why:"Informal traders aren’t on the register, so they’d be missed entirely."},
      {t:"A national random telephone survey", why:"It would reach very few of this specific group."},
      {t:"Stratified sampling by tax band", why:"Informal traders aren’t recorded in tax bands."}]},
    {id:"t4u6-q33", lesson:"t4u6-l4", level:3, q:"A website poll gets 80,000 votes on a local transport plan. A random sample of 1,000 residents gives a different answer. Which should you trust more for what residents think, and why?", options:[
@@ -1257,25 +1319,25 @@ ICA.addUnit({
      {t:"Neither, because polls can never be useful", why:"Well-designed random samples are very useful."},
      {t:"Both equally, because they used the same question", why:"The way people were chosen differs, and that matters most."}]},
    {id:"t4u6-q34", lesson:"t4u6-l4", level:2, q:"Why might a researcher deliberately oversample a small group in a stratified sample?", options:[
-     {t:"To have enough people from that group to analyse it, then weight results so the overall figures still represent the population", ok:true, why:"Oversampling plus weighting gives precise subgroup results without distorting totals."},
-     {t:"To make the overall results favour that group", why:"Weighting corrects for oversampling, so totals aren’t distorted."},
+     {t:"To have enough of that group to analyse, then weight the overall results", ok:true, why:"Weighting means the overall figures still represent the population. Oversampling plus weighting gives precise subgroup results without distorting totals."},
+     {t:"To make the overall results favour that group over the rest of the population", why:"Weighting corrects for oversampling, so totals aren’t distorted."},
      {t:"Because small groups are easier to reach", why:"They are often harder to reach; that is part of why oversampling is needed."},
      {t:"To avoid needing a sampling frame", why:"Stratified sampling still needs a frame with group information."}]},
    {id:"t4u6-q35", lesson:"t4u6-l4", level:1, q:"How do qualitative researchers usually justify how many people to interview?", options:[
-     {t:"By their aims and the richness of the data, often stopping when new interviews stop adding new insights, and reporting how they decided", ok:true, why:"Qualitative sample size is about depth and variation, not statistical formulas."},
+     {t:"By their aims and the richness of the data, reporting how they decided", ok:true, why:"They often stop when new interviews stop adding new insights. Qualitative sample size is about depth and variation, not statistical formulas."},
      {t:"By using a margin-of-error formula", why:"Margins of error apply to probability samples and numerical estimates."},
      {t:"Always exactly 30 people", why:"No fixed number fits every study."},
-     {t:"As many as possible, regardless of time", why:"More isn’t always better; depth of analysis matters."}]},
+     {t:"As many interviews as possible, regardless of the time and money available", why:"More isn’t always better; depth of analysis matters."}]},
    {id:"t4u6-q36", lesson:"t4u6-l4", level:3, q:"Amara plans a trial expecting only a small effect of a new app on sleep. A colleague warns her sample of 40 may be too small. What is the colleague’s concern?", options:[
-     {t:"Low statistical power: with a small effect, 40 people give a poor chance of detecting it even if it’s real", ok:true, why:"Small effects need larger samples; a power calculation would show roughly how many."},
+     {t:"Low statistical power: 40 people may miss a small effect even if it’s real", ok:true, why:"Small effects need larger samples; a power calculation would show roughly how many."},
      {t:"40 people can’t give informed consent", why:"Consent doesn’t depend on sample size."},
-     {t:"Small samples always produce biased results", why:"Small samples are imprecise, not necessarily biased."},
+     {t:"Small samples always produce biased results, whatever the size of the effect", why:"Small samples are imprecise, not necessarily biased."},
      {t:"Trials must have at least 1,000 participants", why:"There is no fixed minimum; it depends on the effect size and variability."}]},
    /* Lesson 5 */
    {id:"t4u6-q37", lesson:"t4u6-l5", level:1, q:"Internal validity is about…", options:[
      {t:"Whether the presumed cause, not something else, produced the observed effect", ok:true, why:"It concerns ruling out alternative explanations within the study."},
      {t:"Whether results apply to other places", why:"That is external validity."},
-     {t:"Whether the measures capture the intended concepts", why:"That is construct validity."},
+     {t:"Whether the measures really capture the concepts that the researchers intended", why:"That is construct validity."},
      {t:"Whether the report is well written", why:"Writing quality isn’t a type of validity."}]},
    {id:"t4u6-q38", lesson:"t4u6-l5", level:2, q:"A study of a new reading app compares pupils before and after one school year, with no comparison group. Scores rise. Which threat is most obvious?", options:[
      {t:"Maturation: pupils’ reading improves over a year anyway", ok:true, why:"Without a comparison group, normal growth can’t be separated from the app’s effect."},
@@ -1283,8 +1345,8 @@ ICA.addUnit({
      {t:"Coverage error", why:"That concerns who is missing from a sampling frame."},
      {t:"Inter-rater disagreement", why:"Nothing suggests raters disagreed."}]},
    {id:"t4u6-q39", lesson:"t4u6-l5", level:2, q:"Pupils chosen for extra support because they scored lowest on a test score higher on the next test, even before the support starts. What best explains this?", options:[
-     {t:"Regression to the mean: unusually extreme scores tend to move back towards average", ok:true, why:"Some of the lowest scores were partly bad luck on the day, so they tend to rise on retesting."},
-     {t:"The support worked before it began", why:"The rise happened before any support, so it can’t be the cause."},
+     {t:"Regression to the mean: extreme scores tend to move back towards average", ok:true, why:"Some of the lowest scores were partly bad luck on the day, so they tend to rise on retesting."},
+     {t:"The support worked before it began, which shows it is very effective", why:"The rise happened before any support, so it can’t be the cause."},
      {t:"History", why:"No outside event is mentioned; the pattern comes from selecting extreme scores."},
      {t:"Attrition", why:"Nobody dropped out in this scenario."}]},
    {id:"t4u6-q40", lesson:"t4u6-l5", level:1, q:"Which check tests whether two observers agree when coding the same material?", options:[
@@ -1293,23 +1355,23 @@ ICA.addUnit({
      {t:"External validity", why:"That concerns generalising to other people and places."},
      {t:"Criterion validity", why:"That compares a measure with an established standard or later outcome."}]},
    {id:"t4u6-q41", lesson:"t4u6-l5", level:3, q:"A happiness scale developed in one country is translated word for word and used in another. What should researchers do before trusting the results?", options:[
-     {t:"Check translation (for example with back-translation) and test whether the items work the same way with local participants", ok:true, why:"A scale valid in one culture and language may not measure the same concept elsewhere."},
-     {t:"Nothing: a validated scale is valid everywhere", why:"Validity is about a particular use with particular people; it doesn’t transfer automatically."},
+     {t:"Check the translation and test whether the items work the same way locally", ok:true, why:"Back-translation is one way to check a translation. A scale valid in one culture and language may not measure the same concept elsewhere."},
+     {t:"Nothing: a scale that was validated in one country is valid in every other country", why:"Validity is about a particular use with particular people; it doesn’t transfer automatically."},
      {t:"Double the sample size", why:"More people won’t fix a measure that captures the wrong thing."},
      {t:"Drop all questions about feelings", why:"That would remove what the scale is meant to measure."}]},
    {id:"t4u6-q42", lesson:"t4u6-l5", level:2, q:"What does “alignment” mean in a research proposal?", options:[
-     {t:"The question, design, sample, measures and analysis all fit together and serve the question", ok:true, why:"Each part should follow from the last; mismatches are a common reason proposals are rejected."},
+     {t:"The question, design, sample, measures and analysis all fit together", ok:true, why:"Each part should follow from the last; mismatches are a common reason proposals are rejected."},
      {t:"All headings are lined up on the page", why:"It’s about logic, not layout."},
      {t:"The study agrees with the supervisor’s opinion", why:"Alignment is internal consistency, not agreement with anyone’s views."},
-     {t:"The proposal uses the same citation style throughout", why:"Consistent citation is good, but that isn’t alignment."}]},
+     {t:"The proposal uses the same citation style and heading format throughout", why:"Consistent citation is good, but that isn’t alignment."}]},
    {id:"t4u6-q43", lesson:"t4u6-l5", level:3, q:"A memory study run entirely with first-year psychology students in one country finds a strong effect. What is the most reasonable reading?", options:[
-     {t:"The effect may be real for that group, but external validity is uncertain until it is tested with other people and settings", ok:true, why:"A narrow sample limits how far results can be generalised, whatever the internal validity."},
-     {t:"The effect applies to all humans, because memory is universal", why:"That assumes generalisation instead of testing it."},
+     {t:"The effect may be real for that group, but external validity is uncertain", ok:true, why:"It needs testing with other people and settings. A narrow sample limits how far results can be generalised, whatever the internal validity."},
+     {t:"The effect applies to all humans, because human memory works the same everywhere", why:"That assumes generalisation instead of testing it."},
      {t:"The study is worthless", why:"It can be valid for its sample; its reach is the open question."},
      {t:"The effect must be due to selection bias", why:"Nothing suggests the groups compared inside the study differed, so there’s no reason to dismiss the effect. The open question is how far it generalises beyond students like these."}]},
    {id:"t4u6-q44", lesson:"t4u6-l5", level:3, q:"Tomás’s proposal asks whether a community radio programme changed farmers’ planting decisions. He plans to interview 12 farmers who listened, once. A reviewer says the design doesn’t support his question. What is the best revision?", options:[
-     {t:"Either reword the question to explore how listeners describe the programme’s influence, or add a comparison of listeners and non-listeners before and after", ok:true, why:"Both fix the mismatch: one changes the question to fit the design, the other changes the design to fit a causal question."},
-     {t:"Interview 24 farmers instead of 12", why:"More interviews with listeners only still can’t show what would have happened without the programme."},
+     {t:"Reword the question to fit interviews, or add a before-and-after comparison group", ok:true, why:"He could explore how listeners describe the programme’s influence, or compare listeners and non-listeners before and after. Both fix the mismatch: one changes the question to fit the design, the other changes the design to fit a causal question."},
+     {t:"Interview 24 farmers instead of 12, so the results are strong enough to show cause", why:"More interviews with listeners only still can’t show what would have happened without the programme."},
      {t:"Remove the ethics section to save space", why:"Ethics is essential and unrelated to the mismatch."},
      {t:"Add a hypothesis to the interviews", why:"A hypothesis doesn’t give the design a comparison."}]},
    {id:"t4u6-q45", lesson:"t4u6-l5", level:1, q:"Which set of criteria is widely used to judge the trustworthiness of qualitative research?", options:[

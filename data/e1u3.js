@@ -559,7 +559,7 @@ ICA.addUnit({
       {t:"Thanks in advance, D.", flag:true, why:"The supervisor may need his full name to find his records. End with a closing and full name, for example “Kind regards, Dmitri Volkov”."}
     ]},
     {id:"e1u3-l4-x7", type:"mcq", q:"Which request is the clearest and most polite for an email to a lecturer?", options:[
-      {t:"Would it be possible to submit my essay on Monday 17 March instead of Friday 14 March? I was ill this week, and I have attached a medical note.", ok:true, why:"Right. Indirect (“Would it be possible…”), specific (exact dates), with a reason and evidence attached."},
+      {t:"Would it be possible to submit my essay on Monday 17 March? I was ill, and I attach a medical note.", ok:true, why:"Right. Indirect (“Would it be possible…”), specific (an exact date in words), with a reason and evidence attached."},
       {t:"I need an extension because I was ill.", why:"“I need” sounds like a demand, and it doesn’t say how long an extension or until when."},
       {t:"I was wondering if maybe it might be possible to perhaps have some more time, if that is not too much trouble.", why:"Very polite, but so vague and hedged that the lecturer can’t tell what is being asked."},
       {t:"Please give me until 17/3.", why:"Too direct for this request, and a date like “17/3” is clear only in day–month countries. Write the date in words."}
@@ -692,7 +692,7 @@ ICA.addUnit({
       {t:"hospitals need more staff.", flag:false, why:"Correct: a general plural (“hospitals” in general) usually takes no article."}
     ]},
     {id:"e1u3-l5-x4", type:"mcq", q:"Lucía writes in UK English. Her grammar checker underlines “analyse” and “behaviour” and suggests “analyze” and “behavior”. What should she do?", options:[
-      {t:"Ignore the suggestions and set the checker’s language to UK English, since her spelling is correct and consistent.", ok:true, why:"Right. Both spellings are correct. The checker is set to US English, so it flags UK forms. Consistency is what matters, unless her course requires one variety."},
+      {t:"Ignore them and set the checker to UK English: her spelling is correct.", ok:true, why:"Right. Both spellings are correct. The checker is set to US English, so it flags UK forms. Consistency is what matters, unless her course requires one variety."},
       {t:"Accept both changes, because the US spellings are the correct ones.", why:"Neither variety is “the correct one”. Accepting would also make her spelling inconsistent with the rest of her UK-spelled essay."},
       {t:"Accept one change and ignore the other, so the essay shows both spellings.", why:"Mixing varieties looks careless. Choose one and use it throughout."},
       {t:"Stop using a spelling checker altogether.", why:"The checker is still useful for real typos. She only needs to set it to the variety she uses."}
@@ -712,7 +712,7 @@ ICA.addUnit({
       ["Flattens your voice","Rewrites a clear personal argument into generic phrases","Rewrites tend towards common, general wording that sounds like everyone else."]
     ]},
     {id:"e1u3-l5-x7", type:"mcq", q:"Fatima’s course policy says: “You may use AI tools to check grammar, but you must say which tool you used.” She used an AI tool to correct grammar in her essay. What should she do?", options:[
-      {t:"Add the disclosure the policy asks for (which tool, and that she used it for grammar), and keep her drafts.", ok:true, why:"Right. Her use is allowed, and disclosing it as the policy requires keeps her honest and protected. Drafts show how her work developed."},
+      {t:"Add the disclosure the policy asks for, and keep her drafts.", ok:true, why:"Right. Her use is allowed. Disclosing it as the policy requires (which tool, and that she used it for grammar) keeps her honest and protected. Drafts show how her work developed."},
       {t:"Say nothing, because grammar correction is too small to matter.", why:"The policy explicitly asks for disclosure. Leaving it out breaks the rule, even though the use itself is allowed."},
       {t:"Rewrite the essay without any tool, because AI is never allowed.", why:"Her course allows AI for grammar. Policies differ: read and follow the one that applies to you."},
       {t:"Also ask the tool to add some references, since it is already allowed.", why:"The policy allows grammar checking, not adding content. AI tools can also invent references, so every source must be one she has read."}
@@ -748,6 +748,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e1u3-q02","e1u3-q06","e1u3-q11","e1u3-q15","e1u3-q20","e1u3-q24","e1u3-q29","e1u3-q32","e1u3-q35","e1u3-q38","e1u3-q41","e1u3-q44"],
+  cpBank:[
+   {id:"e1u3-cp01", lesson:"e1u3-l1", level:1, q:"Laila’s essay question says: “Suggest ways to reduce litter on university campuses.” Which essay shape does it most likely call for?", options:[
+     {t:"Compare–contrast", why:"Compare–contrast questions say “Compare…”, “Contrast…” or ask for similarities and differences. This one asks for ways to solve something."},
+     {t:"Cause–effect", why:"Cause–effect questions ask why something happens or what its effects are. You may mention causes, but the task is to propose responses."},
+     {t:"Problem–solution", ok:true, why:"“Suggest ways to…” asks you to describe a problem, propose solutions and evaluate them."},
+     {t:"Argumentative, with no solutions needed", why:"Argumentative questions usually say “To what extent…?” or “Do you agree…?”. Here the task word asks for solutions."}]},
+   {id:"e1u3-cp02", lesson:"e1u3-l1", level:2, q:"Joon is comparing the cost of two kinds of transport. Which sentence compares like with like?", options:[
+     {t:"The cost of rail travel is much higher than travelling by bus.", why:"This compares a cost with an activity (travelling by bus). Add *that of* so that cost is compared with cost."},
+     {t:"The cost of rail travel is higher than that of bus travel.", ok:true, why:"*That of* stands for “the cost of”, so the sentence compares one cost with another cost."},
+     {t:"The cost of rail travel is higher than the bus.", why:"This compares a cost with a vehicle. Compare the cost with the cost of bus travel."},
+     {t:"Rail travel’s cost is higher than bus travel.", why:"Still a cost compared with travel. Write “higher than bus travel’s” or “than that of bus travel”."}]},
+   {id:"e1u3-cp03", lesson:"e1u3-l1", level:3, q:"Camila’s problem–solution essay proposes free bus passes for students to reduce parking problems on campus. Which sentence best does the **evaluation** step?", options:[
+     {t:"Free bus passes are introduced for all students in September, starting with first-years.", why:"This describes the solution as if it has already happened. A proposal uses modals (*would*, *could*), and evaluation weighs it."},
+     {t:"Many students drive to campus, and the car parks are full by 9 a.m. on most weekdays.", why:"This describes the situation and the problem. Evaluation comes after the solution and judges how well it would work."},
+     {t:"Free bus passes will clearly solve every parking problem on campus, for every student.", why:"This overclaims with a booster and weighs nothing. Evaluation looks at costs, who benefits and what could go wrong."},
+     {t:"Although the passes would cost the university money, they would cut demand for parking.", ok:true, why:"It weighs a cost against a benefit, with *would* for a proposal. The main clause carries the point she wants remembered: the benefit."}]},
+   {id:"e1u3-cp04", lesson:"e1u3-l2", level:2, q:"Claim: “Bike lanes can make cycling safer.” Evidence: “After lanes opened on two streets, cyclist injuries there fell by 40%, while injuries on similar nearby streets did not change.” Which sentence adds the best **reasoning**?", options:[
+     {t:"Since similar streets saw no change, the fall is more likely due to the lanes than to a general trend.", ok:true, why:"Reasoning explains why the evidence supports the claim: the comparison streets make a general trend unlikely, and *more likely* keeps it honest."},
+     {t:"In another city, cyclist injuries fell by 25% in the year after bike lanes were built there.", why:"This adds more evidence, but it doesn’t explain why the first evidence supports the claim. Evidence doesn’t speak for itself."},
+     {t:"Therefore, as the figures above show, bike lanes can make cycling safer on city streets.", why:"This only repeats the claim and points at the figures. Reasoning answers “so what?”: why does the evidence show this?"},
+     {t:"This proves that bike lanes prevent all cycling injuries, on every kind of street in a city.", why:"This overclaims: two streets can’t prove anything about all injuries. Reasoning should also be honest about limits."}]},
+   {id:"e1u3-cp05", lesson:"e1u3-l2", level:1, q:"Critics say a new library booking app is expensive. Kwame replies: “The licence is costly, but it is cheaper than keeping the library open two extra evenings a week.” Which rebuttal strategy is this?", options:[
+     {t:"Refute: it is wrong, or its evidence is weak", why:"Kwame accepts that the licence is costly. Refuting would mean showing the objection or its evidence is wrong."},
+     {t:"Limit: it is true, but only in some cases", why:"He doesn’t say the cost matters only in some situations. He compares it with a bigger cost."},
+     {t:"A straw man: the critics’ view is made weaker than it is", why:"A straw man distorts the other side. Kwame states the objection fairly and accepts it."},
+     {t:"Outweigh: it is true, but something else matters more", ok:true, why:"He admits the cost and argues that the alternative would cost more, so the saving outweighs it."}]},
+   {id:"e1u3-cp06", lesson:"e1u3-l2", level:2, q:"Esther is writing an essay that supports school uniforms. Which sentence introduces a counterargument **fairly**?", options:[
+     {t:"Some people think students should be allowed to wear anything at all, even pyjamas.", why:"This is a straw man: a silly version of the other side that is easy to knock down. Nobody serious argues it."},
+     {t:"Critics argue that uniforms add costs for low-income families.", ok:true, why:"A reasonable objection that a thoughtful reader might hold, introduced with a reporting verb and some distance."},
+     {t:"Opponents of uniforms simply don’t care about discipline.", why:"This attacks the people, not their argument, and distorts their view. Present the strongest version of the objection."},
+     {t:"Obviously, no sensible person could object to uniforms.", why:"This dismisses the other side instead of presenting it. A fair counterargument is one your rebuttal must really answer."}]},
+   {id:"e1u3-cp07", lesson:"e1u3-l3", level:3, q:"Bao writes: “Okafor (2020) demonstrates that the tax reduced sugar intake.” Okafor’s study had 15 participants and no comparison group. What is the main problem?", options:[
+     {t:"*Demonstrates* needs a past tense here, so it should be *demonstrated*", why:"Tense is a choice of field and message; present or past can both work. The real problem is what the verb says about the evidence."},
+     {t:"*Demonstrates* signals strong evidence, but the evidence here is weak", ok:true, why:"*Demonstrates* tells readers that Bao accepts the finding as well supported. Accepting verbs (*shows*, *demonstrates*) are for strong evidence. *Suggests*, or a note on the small sample, would match it better."},
+     {t:"An integral citation can’t be used when only one study is cited", why:"Integral citations suit a study that is central to the point. The citation type is fine here."},
+     {t:"*Demonstrates* must be followed by an object, not by a that-clause", why:"*Demonstrate* can take a that-clause, like *show*. The grammar is fine; the strength of the claim is not."}]},
+   {id:"e1u3-cp08", lesson:"e1u3-l3", level:2, q:"Yusuf’s tutor has marked “The study of Ahmed found…” in three of his essays. What is the best response?", options:[
+     {t:"Keep it, because the tutor’s mark is only about style", why:"It is a real pattern error: the study is *by* Ahmed. Repeated marks are exactly what an error list is for."},
+     {t:"Write “According to Ahmed, Ahmed’s study found…” and reread the essay once for every kind of error", why:"This doubles the source (choose one structure). One read looking for everything also misses a lot; check one problem at a time."},
+     {t:"Write “A study by Ahmed found…”, and add the pattern to his error list to search for", ok:true, why:"That fixes the structure, and a repeated mistake belongs on a personal error list, where a quick search can find every case."},
+     {t:"Write “The study of Ahmed’s found…” and let a grammar checker find any other cases", why:"This is still not the standard pattern, and checkers miss many errors. Check for your own patterns on purpose."}]},
+   {id:"e1u3-cp09", lesson:"e1u3-l4", level:2, q:"Freya’s abstract says what the study investigated, how 30 teachers were interviewed, and what they reported. A reader says it never explains why the findings matter. Which move is missing?", options:[
+     {t:"Purpose", why:"The abstract already says what the study investigated, which is the purpose move."},
+     {t:"Method", why:"The interviews with 30 teachers are the method move, and they are there."},
+     {t:"Product", why:"What the teachers reported is the product (the main findings), and it is there."},
+     {t:"Conclusion", ok:true, why:"Hyland’s conclusion move says what the findings mean, with implications or applications. That is what the reader is missing."}]},
+   {id:"e1u3-cp10", lesson:"e1u3-l4", level:3, q:"Tariq studies in Australia. He writes his first email to his lecturer, Dr Ana Moreno: “Hi teacher, I want the slides from Tuesday’s lecture. Reply ASAP.” Which version fixes the main problems?", options:[
+     {t:"Dear Dr Moreno, I am in your Tuesday lecture. Could you tell me where the slides are? Kind regards, Tariq Aziz", ok:true, why:"Title and family name, who he is, an indirect but specific request, and his full name: the usual email moves."},
+     {t:"Respected Sir, I am a student in your Tuesday lecture. Kindly revert with the slides. Best regards, Tariq", why:"“Sir” guesses the reader’s gender (wrongly here), and “Kindly revert” may confuse readers in Australia. Use a title and family name and a clear request."},
+     {t:"Dear Ana, I am in your Tuesday lecture. Please send me the slides as soon as possible. Thanks, Tariq", why:"A first name alone is too familiar for a first email, and “as soon as possible” still sounds like a demand."},
+     {t:"Dear Teacher, Would it be possible to get the slides from the lecture? Thank you very much, Tariq", why:"The request is polite, but “Dear Teacher” is best avoided with lecturers in Australia, and he doesn’t say which lecture or who he is."}]},
+   {id:"e1u3-cp11", lesson:"e1u3-l5", level:1, q:"Two hours before her deadline, Aditi notices that her second paragraph doesn’t support her thesis, and that the essay has several typos. What should she do first?", options:[
+     {t:"Correct all the typos first, so that the essay at least looks finished", why:"Fixing typos in a paragraph she may rewrite wastes time. Fix big things first and proofread last."},
+     {t:"Fix or rewrite the second paragraph, then proofread the whole essay", ok:true, why:"Structure and argument come first; proofreading for typos is the final pass, on the text that will actually be submitted."},
+     {t:"Run a grammar checker and accept all its changes at once", why:"A checker can’t fix a paragraph that doesn’t support the thesis, and changes should be accepted one at a time."},
+     {t:"Read the essay backwards, sentence by sentence", why:"Reading backwards is a proofreading technique for grammar. It hides the argument, which is the bigger problem here."}]},
+   {id:"e1u3-cp12", lesson:"e1u3-l5", level:3, q:"Mateus studies ecology. A tool rewrote his sentence “The data suggest that the species may be endemic to the island” (*endemic* means found only there) as “The data show that the species is common on the island.” What is the best response?", options:[
+     {t:"Accept it: the new sentence is more fluent, more confident and easier to read", why:"Fluent is not the same as accurate. The rewrite changes both the meaning and the strength of the claim."},
+     {t:"Accept it, but add a citation after it to make the stronger claim safe", why:"A citation doesn’t fix a changed meaning. He should keep his own accurate sentence."},
+     {t:"Reject it: the tool removed his hedges and changed a field term’s meaning", ok:true, why:"Tools are unreliable for claim strength and field terms: *endemic* (found only there) is not *common*. A suggestion is a question, not an instruction."},
+     {t:"Reject all tool suggestions from now on, since tools are never useful", why:"Tools are often helpful for typos and many grammar errors. Check each suggestion instead of accepting or rejecting everything."}]}
+  ],
   codex:[
    {id:"essay-types", title:"Essay types and their shapes", aka:["essay structure","rhetorical modes","patterns of organisation"], tags:["academic English","writing","essays"], summary:"Argumentative, compare–contrast, cause–effect and problem–solution essays: how to spot each from the question, how each is organised, and the language that holds it together.",
     levels:{
@@ -955,9 +1017,9 @@ ICA.addUnit({
      {t:"Higher food prices can lead to higher fuel prices.", why:"“Lead to” is cause → effect, so this also reverses the relationship."},
      {t:"Higher fuel prices are caused by higher food prices.", why:"This also makes food prices the cause. The intended cause is fuel prices."}]},
    {id:"e1u3-q04", lesson:"e1u3-l1", level:1, q:"In a compare–contrast essay, what is the **block** pattern?", options:[
-     {t:"Everything about the first item, then everything about the second, often followed by comparison", ok:true, why:"That is the block pattern. It suits short essays with few points."},
+     {t:"Everything about the first item, then everything about the second", ok:true, why:"That is the block pattern, often followed by a direct comparison. It suits short essays with few points."},
      {t:"One paragraph per point of comparison, covering both items in each", why:"That is the point-by-point pattern."},
-     {t:"Similarities in one paragraph and nothing about differences", why:"A comparison can focus on similarities, but that isn’t what “block” means."},
+     {t:"Similarities in one paragraph and nothing at all about the differences", why:"A comparison can focus on similarities, but that isn’t what “block” means."},
      {t:"A table instead of paragraphs", why:"Essays use paragraphs; a table may help planning, but “block” describes paragraph order."}]},
    {id:"e1u3-q05", lesson:"e1u3-l1", level:2, q:"Which sentence is grammatically correct in formal writing?", options:[
      {t:"The flight was cancelled because of the storm.", ok:true, why:"Correct: “because of” is followed by a noun phrase (“the storm”)."},
@@ -968,16 +1030,16 @@ ICA.addUnit({
      {t:"An evaluation of how well the solution would work, including its limits", ok:true, why:"The evaluation step (situation → problem → solution → evaluation) is the one most often forgotten, and markers expect it."},
      {t:"A personal story", why:"Personal stories aren’t a standard part of a problem–solution essay."},
      {t:"A second problem unrelated to the first", why:"Adding an unrelated problem would weaken the focus, not complete the essay."},
-     {t:"More boosters such as “clearly” and “undoubtedly”", why:"Boosters make claims stronger without evidence. They don’t replace evaluation."}]},
+     {t:"More boosters such as “clearly” and “undoubtedly” to make the solution convincing", why:"Boosters make claims stronger without evidence. They don’t replace evaluation."}]},
    {id:"e1u3-q07", lesson:"e1u3-l1", level:2, q:"In a proposal, which sentence best describes a solution that hasn’t happened yet?", options:[
      {t:"Introducing a night bus would help shift workers get home safely.", ok:true, why:"Right: “would” marks a hypothetical proposal and its expected result."},
      {t:"Introducing a night bus helped shift workers get home safely.", why:"The past tense says it already happened, which isn’t true of a proposal."},
      {t:"Introducing a night bus has helped shift workers get home safely.", why:"The present perfect also suggests it has already happened."},
      {t:"Introducing a night bus is helping shift workers get home safely.", why:"The present continuous says it is happening now."}]},
    {id:"e1u3-q08", lesson:"e1u3-l1", level:3, q:"Hana writes: “Cities with more parks have lower crime rates. Therefore parks cause lower crime.” What is the main language problem?", options:[
-     {t:"She states a cause too strongly from evidence that only shows the two things occur together", ok:true, why:"A correlation doesn’t prove causation. A hedged claim fits better: “Parks may be one factor linked to lower crime.”"},
+     {t:"She claims a cause, but the evidence only shows the two occur together", ok:true, why:"A correlation doesn’t prove causation. A hedged claim fits better: “Parks may be one factor linked to lower crime.”"},
      {t:"“Therefore” is never used in academic writing", why:"“Therefore” is common and correct. The problem is the strength of the causal claim."},
-     {t:"She should use “whereas” instead of “therefore”", why:"“Whereas” shows contrast, which isn’t the relationship here."},
+     {t:"She should use “whereas” instead of “therefore” to join the two sentences", why:"“Whereas” shows contrast, which isn’t the relationship here."},
      {t:"The sentences are too short", why:"Short sentences are fine. The problem is the overclaim."}]},
    {id:"e1u3-q09", lesson:"e1u3-l1", level:1, q:"Which is usually true of university essays?", options:[
      {t:"They have as many body paragraphs as the argument needs", ok:true, why:"The five-paragraph essay is a school model; university essays follow the argument."},
@@ -1006,10 +1068,10 @@ ICA.addUnit({
      {t:"Outweighing the objection with a bigger factor", why:"He doesn’t introduce a more important factor; he restricts the objection’s scope."},
      {t:"Making a straw man", why:"A straw man misrepresents the other side. He states the objection and partly accepts it."}]},
    {id:"e1u3-q14", lesson:"e1u3-l2", level:1, q:"What is a “straw man” in an argument?", options:[
-     {t:"A weak or distorted version of the opposing view, set up so it is easy to defeat", ok:true, why:"That is a straw man. Present the strongest opposing view instead."},
+     {t:"A distorted version of the opposing view that is easy to defeat", ok:true, why:"That is a straw man: a weak or distorted version set up to be knocked down. Present the strongest opposing view instead."},
      {t:"The strongest counterargument to your claim", why:"Answering the strongest objection is the opposite of a straw man."},
      {t:"A claim supported by data", why:"That is just a supported claim."},
-     {t:"A hedge such as “may” or “suggests”", why:"Hedges adjust certainty; they are not a straw man."}]},
+     {t:"A hedge such as “may” or “suggests” that weakens your own claim", why:"Hedges adjust certainty; they are not a straw man."}]},
    {id:"e1u3-q15", lesson:"e1u3-l2", level:3, q:"Mei wants to admit that a new app is hard to learn, but leave readers thinking about how much **time it saves**. Which sentence is best?", options:[
      {t:"Although the app is hard to learn at first, it saves staff several hours a week.", ok:true, why:"The concession is in the “although” clause, and the point to remember is in the main clause."},
      {t:"Although the app saves staff several hours a week, it is hard to learn at first.", why:"This puts the difficulty in the main clause, so readers remember the difficulty."},
@@ -1021,14 +1083,14 @@ ICA.addUnit({
      {t:"“Everyone knows that…”", why:"This overclaims and doesn’t signal an opposing view."},
      {t:"“It is obvious that…”", why:"This is a booster for your own view, not a fair way to introduce an objection."}]},
    {id:"e1u3-q17", lesson:"e1u3-l2", level:3, q:"Amara has one interview in which a farmer says a new seed failed. Which claim matches this evidence best?", options:[
-     {t:"At least one farmer reported that the new seed failed, which suggests its performance may vary.", ok:true, why:"One interview can show that a problem exists, not how common it is. This claim stays within the evidence."},
-     {t:"The new seed fails for most farmers.", why:"One case can’t show what happens to “most” farmers."},
+     {t:"At least one farmer reported that the new seed failed.", ok:true, why:"One interview can show that a problem exists, not how common it is. This claim stays within the evidence."},
+     {t:"The new seed fails for most of the farmers who plant it.", why:"One case can’t show what happens to “most” farmers."},
      {t:"The new seed clearly does not work.", why:"“Clearly” is a booster unsupported by one interview."},
      {t:"Farmers always reject new seeds.", why:"This generalises far beyond the evidence, and to a different claim."}]},
    {id:"e1u3-q18", lesson:"e1u3-l2", level:2, q:"What is the difference between “even though” and “even if”?", options:[
-     {t:"“Even though” concedes a fact; “even if” introduces a possibility that may not be true", ok:true, why:"“Even though prices rose” says they did; “even if prices rise” says they might."},
+     {t:"“Even though” concedes a fact; “even if” gives a possibility", ok:true, why:"“Even though prices rose” says they did; “even if prices rise” says they might, and they may not."},
      {t:"There is no difference", why:"They differ: one is about facts, the other about possibilities."},
-     {t:"“Even if” is more formal than “even though”", why:"The difference is meaning, not formality."},
+     {t:"“Even if” is more formal than “even though”, so it suits essays", why:"The difference is meaning, not formality."},
      {t:"“Even though” is only used in speech", why:"“Even though” is common in academic writing."}]},
    /* ---- Lesson 3 ---- */
    {id:"e1u3-q19", lesson:"e1u3-l3", level:1, q:"Which is a **non-integral** citation?", options:[
@@ -1067,26 +1129,26 @@ ICA.addUnit({
      {t:"The report by Okafor and Bello (2020) report that costs fell.", why:"The subject is “the report” (singular), so “reports”."},
      {t:"Okafor et al. (2020) reports that costs fell.", why:"“Et al.” means “and others”, a plural subject, so “report”."}]},
    {id:"e1u3-q26", lesson:"e1u3-l3", level:3, q:"Lucía wants to show that two studies disagree. Which sentence does this most clearly?", options:[
-     {t:"While Ito (2018) argues that the tax reduced smoking, Mwangi (2021) suggests that prices had little effect.", ok:true, why:"“While” sets the two positions against each other in one sentence."},
-     {t:"Both Ito (2018) and Mwangi (2021) found that the tax reduced smoking.", why:"This shows agreement, not disagreement."},
+     {t:"While Ito (2018) argues that the tax reduced smoking, Mwangi (2021) disagrees.", ok:true, why:"“While” sets the two positions against each other in one sentence, and “disagrees” makes the contrast explicit."},
+     {t:"Both Ito (2018) and Mwangi (2021) found that the tax reduced smoking in young adults.", why:"This shows agreement, not disagreement."},
      {t:"The tax reduced smoking (Ito, 2018; Mwangi, 2021).", why:"Grouping the citations suggests both support the same claim."},
      {t:"Ito (2018) and Mwangi (2021) wrote about smoking.", why:"This mentions both but says nothing about how they relate."}]},
    {id:"e1u3-q27", lesson:"e1u3-l3", level:1, q:"Why might a writer choose an integral citation?", options:[
-     {t:"To put the researcher or their position in focus, for example when contrasting two scholars", ok:true, why:"Integral citations foreground the author, which helps when who said it matters."},
+     {t:"To put the researcher or their position in focus", ok:true, why:"Integral citations foreground the author, which helps when who said it matters, for example when contrasting two scholars."},
      {t:"Because integral citations don’t need a year", why:"Author–date styles include the year either way."},
-     {t:"Because non-integral citations are incorrect", why:"Both kinds are correct; good writers mix them."},
+     {t:"Because non-integral citations are incorrect in academic writing", why:"Both kinds are correct; good writers mix them."},
      {t:"To avoid citing the source at all", why:"Both kinds cite the source."}]},
    /* ---- Lesson 4 ---- */
    {id:"e1u3-q28", lesson:"e1u3-l4", level:1, q:"In the CARS model, what does Move 2 (“establish a niche”) do?", options:[
      {t:"Shows a gap, problem or open question in existing research", ok:true, why:"Move 2 creates the space the paper will fill."},
      {t:"Describes the method in detail", why:"Methods belong in the method section; Move 3 may only outline the research."},
      {t:"Thanks the funders", why:"Acknowledgements are separate from the introduction’s moves."},
-     {t:"Summarises the conclusions", why:"Conclusions come at the end; Move 3 may announce main findings briefly."}]},
+     {t:"Summarises the conclusions that the paper will reach at the end", why:"Conclusions come at the end; Move 3 may announce main findings briefly."}]},
    {id:"e1u3-q29", lesson:"e1u3-l4", level:2, q:"Which sentence is most typical of **Move 3** (occupying the niche)?", options:[
      {t:"This paper examines how rent controls affect housing supply in two cities.", ok:true, why:"It announces what the present research does."},
      {t:"Housing costs are a major concern in many cities.", why:"This establishes the territory (Move 1)."},
      {t:"However, few studies have compared rent controls across cities.", why:"This indicates a gap (Move 2)."},
-     {t:"Previous research has examined rent controls in single cities.", why:"This reviews previous research (Move 1)."}]},
+     {t:"Previous research has examined the effects of rent controls in single cities.", why:"This reviews previous research (Move 1)."}]},
    {id:"e1u3-q30", lesson:"e1u3-l4", level:1, q:"Hyland (2000) described five common moves in abstracts. Which list is right?", options:[
      {t:"Introduction, purpose, method, product, conclusion", ok:true, why:"These are Hyland’s five moves; “product” means the main findings or argument."},
      {t:"Title, author, date, keywords, references", why:"These are parts of a publication record, not abstract moves."},
@@ -1096,7 +1158,7 @@ ICA.addUnit({
      {t:"These findings suggest that peer feedback improves revision.", ok:true, why:"Interpreting what findings mean is usually in the present."},
      {t:"We interviewed 30 teachers.", why:"What the researchers did is usually in the past, as here."},
      {t:"Participants completed two writing tasks.", why:"Procedures are usually in the past, as here."},
-     {t:"Most students revised more after peer feedback.", why:"Specific results are usually in the past, as here."}]},
+     {t:"Most students revised their drafts more after receiving peer feedback.", why:"Specific results are usually in the past, as here."}]},
    {id:"e1u3-q32", lesson:"e1u3-l4", level:3, q:"Priya is writing her first email to a lecturer at a university in the UK. The staff page says “Dr Ana Ruiz, Lecturer”. Which greeting is the safest choice?", options:[
      {t:"Dear Dr Ruiz,", ok:true, why:"Title and family name from the staff page: accurate and respectful. If she later signs “Ana”, Priya can follow her lead."},
      {t:"Hey Ana,", why:"Too informal for a first email, and uses her first name before being invited."},
@@ -1111,12 +1173,12 @@ ICA.addUnit({
      {t:"Could we meet for 20 minutes next week to discuss my survey questions?", ok:true, why:"Indirect (“Could we…”), specific (20 minutes, next week, the topic) and easy to answer."},
      {t:"I want to meet you.", why:"“I want” sounds demanding in English academic email, and there is no topic or time."},
      {t:"We need to meet ASAP.", why:"“ASAP” sounds like a demand and gives no detail."},
-     {t:"Maybe if it’s possible at some point we could perhaps talk?", why:"Polite but too vague to act on."}]},
+     {t:"Maybe if it’s possible at some point next week we could perhaps talk about things?", why:"Polite but too vague to act on."}]},
    {id:"e1u3-q35", lesson:"e1u3-l4", level:3, q:"Tomás emailed his lecturer on Monday and has had no reply by Tuesday afternoon. What is the most appropriate next step?", options:[
-     {t:"Wait a few working days, then send a short, friendly follow-up referring to his first email", ok:true, why:"Lecturers receive many emails. A polite follow-up after a few working days is normal."},
+     {t:"Wait a few working days, then send a short, polite follow-up", ok:true, why:"Lecturers receive many emails. A polite follow-up after a few working days, referring to his first email, is normal."},
      {t:"Email again immediately, marked urgent", why:"One day is not long; an “urgent” follow-up can seem demanding."},
      {t:"Complain to the head of department", why:"Far too soon, and an escalation the situation doesn’t justify."},
-     {t:"Write “You didn’t answer my email” in a new message", why:"This sounds like an accusation. “I am writing to follow up on my email of…” is better."}]},
+     {t:"Write “You didn’t answer my email” in a new message to the lecturer", why:"This sounds like an accusation. “I am writing to follow up on my email of…” is better."}]},
    {id:"e1u3-q36", lesson:"e1u3-l4", level:1, q:"Why is “Friday 14 March” better than “14/3” in an email?", options:[
      {t:"Number-only dates are read in different orders in different countries", ok:true, why:"Day–month and month–day orders differ, so words avoid confusion."},
      {t:"Numbers are not allowed in emails", why:"Numbers are fine; the problem is the ambiguous order."},
@@ -1124,22 +1186,22 @@ ICA.addUnit({
      {t:"Lecturers can’t read numbers", why:"The issue is the order of day and month, not reading numbers."}]},
    /* ---- Lesson 5 ---- */
    {id:"e1u3-q37", lesson:"e1u3-l5", level:1, q:"What is the main difference between editing and proofreading?", options:[
-     {t:"Editing improves paragraphs and sentences; proofreading is the final check for surface errors", ok:true, why:"That is the distinction used in this lesson and in Research Skills."},
+     {t:"Editing improves the writing; proofreading is the final surface check", ok:true, why:"Editing improves paragraphs and sentences; proofreading is the final check for surface errors such as spelling. That is the distinction used in this lesson and in Research Skills."},
      {t:"They are the same thing", why:"They are different jobs, best done in order."},
-     {t:"Proofreading comes first, then editing", why:"Proofreading comes last; edits could introduce new surface errors."},
+     {t:"Proofreading comes first, and editing is done after it at the very end", why:"Proofreading comes last; edits could introduce new surface errors."},
      {t:"Editing is only for spelling", why:"Spelling belongs to proofreading."}]},
    {id:"e1u3-q38", lesson:"e1u3-l5", level:2, q:"Why check one problem at a time when proofreading?", options:[
-     {t:"Attention is limited, so a focused pass catches more errors of that type", ok:true, why:"Looking for everything at once makes it easy to read past small errors."},
+     {t:"Attention is limited, so a focused pass catches more errors", ok:true, why:"Looking for everything at once makes it easy to read past small errors; a pass for one type catches more of that type."},
      {t:"Because checkers can only find one error per page", why:"That isn’t a property of checkers; the reason is human attention."},
      {t:"To make proofreading take less time overall", why:"Several passes may take longer; the aim is accuracy."},
-     {t:"Because only one error is allowed per paragraph", why:"There is no such rule."}]},
+     {t:"Because only one error is allowed in each paragraph of an essay", why:"There is no such rule."}]},
    {id:"e1u3-q39", lesson:"e1u3-l5", level:2, q:"A grammar checker suggests changing “The results suggest” to “The results prove”. What is the best response?", options:[
      {t:"Reject it, unless the evidence really is conclusive", ok:true, why:"“Prove” is much stronger than “suggest”. The tool doesn’t know your evidence."},
-     {t:"Accept it, because checkers know academic style", why:"Checkers can make claims stronger than the evidence."},
+     {t:"Accept it, because checkers know academic style well", why:"Checkers can make claims stronger than the evidence."},
      {t:"Accept it, because shorter words are better", why:"Length isn’t the issue; meaning is."},
      {t:"Delete the sentence", why:"The original sentence was fine; just keep it."}]},
    {id:"e1u3-q40", lesson:"e1u3-l5", level:1, q:"Which statement about US and UK spelling in academic writing is accurate?", options:[
-     {t:"Both are correct; use one consistently unless your course requires one", ok:true, why:"Neither variety is “the correct one”; consistency matters."},
+     {t:"Both are correct; use one consistently", ok:true, why:"Neither variety is “the correct one”. Use one consistently, unless your course requires one."},
      {t:"Only US spelling is accepted internationally", why:"UK spelling is widely accepted, as is US spelling."},
      {t:"Only UK spelling is academic", why:"US spelling is equally academic."},
      {t:"Mixing them shows a wide vocabulary", why:"Mixing looks careless."}]},
@@ -1149,20 +1211,20 @@ ICA.addUnit({
      {t:"Asking an AI tool to check the verb tenses in a sentence he wrote", why:"This is grammar checking of his own writing, which the policy allows with disclosure."},
      {t:"Disclosing which tool he used for grammar", why:"Disclosure is what the policy requires."}]},
    {id:"e1u3-q42", lesson:"e1u3-l5", level:2, q:"Which is the best way to use a personal error list?", options:[
-     {t:"Check your draft for each item on the list, one at a time, before submitting", ok:true, why:"A targeted check finds your most frequent errors efficiently."},
+     {t:"Check your draft for each item, one at a time", ok:true, why:"Before submitting, check your draft for each item on the list in turn. A targeted check finds your most frequent errors efficiently."},
      {t:"Read it once at the start of the year", why:"It only helps if you use it while checking each piece of writing."},
      {t:"Give it to a tool and accept all its suggestions", why:"Accepting suggestions blindly can introduce new problems."},
      {t:"Hide it, because errors are embarrassing", why:"Errors are normal; the list is a learning tool."}]},
    {id:"e1u3-q43", lesson:"e1u3-l5", level:3, q:"Hana wrote her essay in Japanese and used a translation tool to make the English version. What should she check first?", options:[
-     {t:"Whether her course policy allows machine translation, and then the output’s technical terms and hedges", ok:true, why:"Translation is a language tool often covered by policy, and its output can change terms or claim strength."},
+     {t:"Whether her course allows machine translation, then key terms and hedges", ok:true, why:"Translation is a language tool often covered by course policy, and its output can change technical terms or claim strength (hedges)."},
      {t:"Nothing: translated text is always accurate", why:"Translation tools can choose wrong terms or lose hedges."},
      {t:"Only the word count", why:"Word count matters, but policy and accuracy matter more."},
-     {t:"Whether the translation sounds more formal than her own English", why:"Formality isn’t the first concern; permission and meaning are."}]},
+     {t:"Whether the translation sounds more formal and academic than her own English", why:"Formality isn’t the first concern; permission and meaning are."}]},
    {id:"e1u3-q44", lesson:"e1u3-l5", level:3, q:"What did Liang and colleagues (2023) find about AI-writing detectors?", options:[
-     {t:"On average, they wrongly labelled more than half of a set of essays by non-native English writers as AI-generated", ok:true, why:"This is why detector results alone are not reliable proof, and why keeping drafts helps."},
+     {t:"They often wrongly labelled non-native writers’ essays as AI-generated", ok:true, why:"On average, they labelled more than half of a set of essays by non-native English writers as AI-generated. This is why detector results alone are not reliable proof, and why keeping drafts helps."},
      {t:"They never make mistakes", why:"The study found many false positives."},
      {t:"They were most accurate for non-native writers", why:"The opposite: non-native writers’ essays were often misclassified."},
-     {t:"They can detect any kind of plagiarism", why:"The study tested AI-text detection, and found serious problems."}]},
+     {t:"They can reliably detect any kind of plagiarism, including AI-written text", why:"The study tested AI-text detection, and found serious problems."}]},
    {id:"e1u3-q45", lesson:"e1u3-l5", level:1, q:"Which technique helps you notice missing or repeated words in your own writing?", options:[
      {t:"Reading the text aloud slowly, or using text-to-speech", ok:true, why:"Hearing the text makes missing and repeated words stand out."},
      {t:"Reading it quickly once straight after writing", why:"You tend to read what you meant, not what is on the page."},

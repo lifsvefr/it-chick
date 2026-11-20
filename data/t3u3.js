@@ -116,8 +116,8 @@ ICA.addUnit({
       {t:"A blank, `n/a` and `-` all meaning “no phone number”", b:0, why:"Once you’ve confirmed they all mean “not given”, recording them one way (for example, an empty cell) is a clear rule."},
       {t:"Two rows for “Ana Silva” with different email addresses", b:1, why:"They could be one person with two emails or two different people. Check more fields before merging."}]},
     {id:"t3u3-l1-x4", type:"mcq", q:"A farm survey has a village column with the value `49` in one row. What is the best next step?", options:[
-      {t:"Look for evidence in other columns, such as GPS position or interview date, before changing it", ok:true, why:"Right. This is what the Data Carpentry lesson does: the row sits among interviews from one village, so the correction is justified and can be recorded."},
-      {t:"Change it to the most common village name", why:"That is a guess. The most common value is not evidence about this row."},
+      {t:"Look for evidence in other columns before changing it", ok:true, why:"Right. Check columns such as GPS position or interview date. This is what the Data Carpentry lesson does: the row sits among interviews from one village, so the correction is justified and can be recorded."},
+      {t:"Change it to the most common village name in the column", why:"That is a guess. The most common value is not evidence about this row."},
       {t:"Delete the row", why:"The rest of the row may be perfectly good data. Deleting it loses information and can bias results."},
       {t:"Leave it and say nothing", why:"Leaving it unexplained means anyone counting by village gets a fake village called 49. If you can’t fix it, at least flag it and note it in the log."}]},
     {id:"t3u3-l1-x5", type:"spot", q:"Mei received this sign-up list. Tap the entries that need cleaning before she can count volunteers by town or total their hours.", ask:"needs cleaning", mono:true, parts:[
@@ -130,7 +130,7 @@ ICA.addUnit({
       {t:"Find and resolve duplicate records", why:"Duplicates are easiest to see once values are written the same way."},
       {t:"Check counts against the “before” numbers and finish the log", why:"Checking last confirms nothing was lost by accident."}]},
     {id:"t3u3-l1-x7", type:"mcq", q:"A list of names shows `NgÃ´ Thá»‹` and `MÃ¼ller`. What’s the best fix?", options:[
-      {t:"Import the original file again and choose UTF-8 as the encoding", ok:true, why:"Right. This is mojibake: the bytes are fine, they were just read with the wrong encoding. Re-reading them correctly fixes every name at once."},
+      {t:"Import the original file again as UTF-8", ok:true, why:"Right. This is mojibake: the bytes are fine, they were just read with the wrong encoding. Re-reading them correctly fixes every name at once."},
       {t:"Use find and replace to change each `Ã¼` to `ü`", why:"That might fix some letters, but there are many patterns and it’s easy to miss or damage some. Fix the reading, not the symptoms."},
       {t:"Retype the names by hand", why:"Slow and error-prone, and unnecessary: the original file still holds the right bytes."},
       {t:"Remove the accents so everything is plain A–Z", why:"That changes people’s names. Accents are part of the correct spelling, and UTF-8 can store them."}]}
@@ -220,14 +220,14 @@ ICA.addUnit({
       {t:"`=PROPER(A2)`", why:"PROPER only changes letter case; it doesn’t touch spaces."},
       {t:"Format the cell as Text", why:"Formatting changes how a value is displayed or entered, not the characters it already contains."}]},
     {id:"t3u3-l2-x3", type:"mcq", q:"Oluwaseun’s membership list has names typed in capitals, such as `MCKENZIE` and `VAN DER BERG`. He wants to apply `=PROPER(A2)` to every name. What’s the best advice?", options:[
-      {t:"It will fix most names, but check the results: it gives “Mckenzie” and “Van Der Berg”, which may not be how those families write their names", ok:true, why:"Right. PROPER follows a simple rule (capital after any non-letter, small letters elsewhere), but names have their own conventions. Review the results, and ask people where it matters."},
+      {t:"It will fix most names, but check the results", ok:true, why:"Right. It gives “Mckenzie” and “Van Der Berg”, which may not be how those families write their names. PROPER follows a simple rule (capital after any non-letter, small letters elsewhere), but names have their own conventions. Review the results, and ask people where it matters."},
       {t:"PROPER is always correct for names, so apply it everywhere", why:"PROPER can’t know that a family writes McKenzie or van der Berg; it makes those Mckenzie and Van Der Berg."},
       {t:"Use UPPER instead, because capitals are always correct", why:"Leaving names in capitals avoids errors but doesn’t solve the readability problem; and it’s a choice, not a correction."},
       {t:"PROPER will delete the spaces in VAN DER BERG", why:"PROPER doesn’t remove spaces; it only changes letter case."}]},
     {id:"t3u3-l2-x4", type:"spot", q:"Hana plans to replace every `Rd` with `Road` across her whole address sheet, with “Match case” off and “Match entire cell contents” off. Which of these cells would be changed wrongly?", ask:"would be damaged", mono:true, parts:[
       {t:"12 Mill Rd", flag:false, why:"This is the change Hana wants: “12 Mill Road”."},"\n",{t:"Ford Close", flag:true, why:"“Ford” contains “rd”. With case ignored it becomes “FoRoad Close”."},"\n",{t:"7 Hill Street", flag:false, why:"No “rd” anywhere in it, so it stays as it is."},"\n",{t:"Birdsong Lane", flag:true, why:"“Birdsong” contains “rd”, so it would become “BiRoadsong Lane”."},"\n",{t:"4 Station Rd", flag:false, why:"Wanted: “4 Station Road”."}]},
     {id:"t3u3-l2-x5", type:"mcq", q:"In Google Sheets, A2 holds `Kerrow, 4`. Tomás writes `=SPLIT(A2, \", \")`. What happens?", options:[
-      {t:"It splits at the comma and at the space separately, which here still gives `Kerrow` and `4`, but would also split `Port Ellis, 4` into three cells", ok:true, why:"Right. By default SPLIT treats each character in the delimiter as its own separator. `Kerrow, 4` survives by luck; any value with a space in it gets cut up. Use `\",\"` plus TRIM, or set the third argument to FALSE."},
+      {t:"It splits at the comma and the space separately", ok:true, why:"Right. By default SPLIT treats each character in the delimiter as its own separator. Here it still gives `Kerrow` and `4`, but `Port Ellis, 4` would become three cells. `Kerrow, 4` survives by luck; any value with a space in it gets cut up. Use `\",\"` plus TRIM, or set the third argument to FALSE."},
       {t:"It splits only where the exact two characters comma-space appear", why:"That’s what you might expect, but SPLIT’s third argument (split_by_each) is TRUE by default, so each character is a separator on its own."},
       {t:"It returns an error because SPLIT needs a single character", why:"SPLIT accepts longer delimiters; the catch is how it treats them."},
       {t:"It changes A2 itself into two cells", why:"A formula never changes its source cell. The results appear in the formula’s cell and the cells to its right."}]},
@@ -312,7 +312,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t3u3-l3-x1", type:"mcq", q:"Sione starts OpenRefine and his browser opens `http://127.0.0.1:3333`. His internet connection then drops. What happens to his project?", options:[
-      {t:"Nothing: OpenRefine runs on his own computer, and the browser is talking to it there", ok:true, why:"Right. 127.0.0.1 (localhost) means this computer. Only features that deliberately contact web services, such as reconciliation or fetching URLs, need the internet."},
+      {t:"Nothing: OpenRefine runs on his own computer", ok:true, why:"Right. The browser is talking to it there. 127.0.0.1 (localhost) means this computer. Only features that deliberately contact web services, such as reconciliation or fetching URLs, need the internet."},
       {t:"The project is lost because the server is unreachable", why:"The server is on his own computer, so the internet isn’t involved in reaching it."},
       {t:"It switches to a read-only copy stored in the browser", why:"There’s no such mode; the browser never held the data. The OpenRefine program keeps working as before."},
       {t:"He must reinstall OpenRefine", why:"Nothing has changed on his computer; he can carry on working."}]},
@@ -427,7 +427,7 @@ ICA.addUnit({
       {t:"`Port Elis` and `Port Ellis`", why:"Different letters, so different keys. Try n-gram with n = 1, or Levenshtein with radius 1."}]},
     {id:"t3u3-l4-x3", type:"number", q:"What is the Levenshtein distance between `chirdozo` and `chirodzo`?", answer:2, tol:0, unit:"edits", why:"The strings differ only in positions 5 and 6: `do` versus `od`. Levenshtein distance counts insertions, deletions and substitutions, so the swap needs two substitutions (d→o and o→d): distance 2.", wrongs:[{v:1, tol:0, why:"Swapping two neighbouring letters counts as one edit in a different measure (Damerau-Levenshtein), but plain Levenshtein, which OpenRefine uses, has no swap operation: it takes two substitutions."},{v:4, tol:0, why:"Only two characters differ; the other six already match."}]},
     {id:"t3u3-l4-x4", type:"mcq", q:"Fatima’s cluster window suggests merging `Ana Silva` (12 rows) and `Ana Silvia` (3 rows) into `Ana Silva`. What should she do?", options:[
-      {t:"Leave the box unticked until she has checked other details, such as email or date of birth", ok:true, why:"Right. Two people can have names one letter apart. A merge would quietly give one person’s records to another. Check other columns first."},
+      {t:"Leave it unticked until she has checked other details", ok:true, why:"Right. Two people can have names one letter apart. A merge would quietly give one person’s records to another. Check other columns, such as email or date of birth, first."},
       {t:"Merge: the most common spelling is always right", why:"The count tells you which spelling is common, not whether these are the same person."},
       {t:"Merge, because a distance of 1 proves they’re the same", why:"Edit distance measures how similar the characters are, not whether they mean the same thing."},
       {t:"Delete the 3 `Ana Silvia` rows", why:"Deleting loses real records, and these may belong to a different person."}]},
@@ -522,9 +522,9 @@ ICA.addUnit({
       {t:"Two different people called Mei Tanaka, both on 5 Oct, with different emails", b:1, why:"Same name, different people. Their different emails are the clue."}]},
     {id:"t3u3-l5-x2", type:"number", q:"A table has 240 rows. A Duplicates facet on the member ID column shows 18 rows as `true`, made up of 7 different IDs. After removing duplicate rows by member ID (keeping the first of each), how many rows remain?", answer:229, tol:0, unit:"rows", why:"The 7 repeated IDs each keep one row. The rows removed are 18 − 7 = 11, so 240 − 11 = 229.", wrongs:[{v:222, tol:0, why:"That removes all 18 flagged rows, deleting those 7 members completely. Each repeated ID keeps one row."},{v:233, tol:0, why:"That subtracts the 7 distinct IDs instead of the extra copies. The extra copies are 18 − 7 = 11."}]},
     {id:"t3u3-l5-x3", type:"mcq", q:"Priya matches typed town names to an official list with a similarity cutoff of 0.8. `Ashby Vail` matches both `Ashby Vale` (0.9) and `Ashby Dale` (0.8). What does this show?", options:[
-      {t:"A threshold finds candidates, but borderline matches need checking with other evidence", ok:true, why:"Right. Both scores pass the cutoff, yet only one place can be meant. A person, or another field such as the postcode, has to decide."},
+      {t:"A cutoff finds candidates, but close calls need checking", ok:true, why:"Right. Both scores pass the cutoff, yet only one place can be meant. They need other evidence: a person, or another field such as the postcode, has to decide."},
       {t:"The cutoff should be 0, so nothing is missed", why:"A cutoff of 0 would match every value to something, producing many wrong matches."},
-      {t:"Fuzzy matching doesn’t work and should never be used", why:"It works well for finding candidates. The lesson is that its output needs review."},
+      {t:"Fuzzy matching doesn’t work and should never be used for names", why:"It works well for finding candidates. The lesson is that its output needs review."},
       {t:"The higher score is always the right match", why:"Usually a good guess, but not a guarantee: the person could have meant Ashby Dale and mistyped it."}]},
     {id:"t3u3-l5-x4", type:"mcq", q:"In OpenRefine, Dmitri clicks back to step 3 of 8 in Undo / Redo, then trims a column. What happens to steps 4–8?", options:[
       {t:"They are erased and can’t be redone, after OpenRefine asks him to confirm", ok:true, why:"Right. A new operation after going back replaces everything that came after that point. To keep them, he could first extract them as JSON."},
@@ -538,8 +538,8 @@ ICA.addUnit({
       {t:"Fix the new problems and add them to the cleaning log", why:"Record each new step and its reason."},
       {t:"Remove all facets, check the row count, and export a CSV", why:"Exports use the current selection, so clear facets first."}]},
     {id:"t3u3-l5-x6", type:"mcq", q:"Oluwaseun removed participants’ names from a survey during cleaning in OpenRefine. A colleague asks for “the project, so I can see what you did”. What should he share?", options:[
-      {t:"The cleaning log and the extracted JSON steps, plus the cleaned CSV, but not the project archive", ok:true, why:"Right. The archive contains the original data, names included, because history can be undone. The log and JSON show exactly what he did without the personal data."},
-      {t:"The project archive: the names were removed, so it’s safe", why:"The archive keeps the full history back to step 0, and the raw data with it. Undoing the removal step would bring the names back."},
+      {t:"The log, the JSON steps and the cleaned CSV, not the archive", ok:true, why:"Right. The archive contains the original data, names included, because history can be undone. The log and JSON show exactly what he did without the personal data."},
+      {t:"The project archive: the names were removed, so it’s safe to share", why:"The archive keeps the full history back to step 0, and the raw data with it. Undoing the removal step would bring the names back."},
       {t:"A screenshot of the final grid", why:"That shows the result, not the steps, and can’t be checked or repeated."},
       {t:"Nothing: cleaning steps should stay private", why:"Sharing the steps is what makes the work checkable; the question is how to share them safely."}]},
     {id:"t3u3-l5-x7", type:"spot", q:"Here is Lucía’s cleaning log. Tap the entries that don’t give enough information for someone else to check or repeat the step.", ask:"too vague", parts:[
@@ -558,6 +558,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u3-q02","t3u3-q05","t3u3-q09","t3u3-q12","t3u3-q15","t3u3-q20","t3u3-q23","t3u3-q27","t3u3-q30","t3u3-q34","t3u3-q38","t3u3-q42"],
+  cpBank:[
+   {id:"t3u3-cp01", lesson:"t3u3-l1", level:1, q:"A `dept` column holds `Finance`, `finance`, `Finance ` (space at the end) and `Fin.`. You trim the spaces and put every value in one case. Which variant is still separate?", options:[
+     {t:"`finance`, because it started with a small letter", why:"Putting every value in one case is exactly what joins `finance` and `Finance`."},
+     {t:"`Finance `, because the space is part of the value", why:"Trimming removes spaces at the ends, so `Finance ` becomes `Finance`."},
+     {t:"`Fin.`, because an abbreviation is a different spelling", ok:true, why:"Trim and case fix whitespace and capitals only. An abbreviation needs its own rule, such as a reviewed replacement."},
+     {t:"None: after trimming and fixing case, all four match", why:"`Fin.` has different letters from `Finance`. Rule-based fixes for spaces and case can’t know that it is an abbreviation."}]},
+   {id:"t3u3-cp02", lesson:"t3u3-l1", level:2, q:"A volunteer’s hours are recorded as 3, 4, `2 hrs`, 5 and `1.5 hrs`. `=SUM()` of the five cells returns 12. What should the total be, and why is the sum low?", options:[
+     {t:"12 is right: the cells with “hrs” were not real hours", why:"They are real hours typed with a unit. The unit turned them into text, which SUM skips."},
+     {t:"15.5: two cells are text because of the unit, so SUM skipped them", ok:true, why:"3 + 4 + 5 = 12 is what SUM counted. Adding the 2 and 1.5 hidden in text cells gives 15.5."},
+     {t:"15.5: SUM rounds decimals down, so 1.5 was lost", why:"SUM doesn’t round. Both `2 hrs` and `1.5 hrs` were skipped because they are text."},
+     {t:"14: only the `2 hrs` cell was skipped", why:"`1.5 hrs` is text too. Both unit cells were skipped: 15.5 − 12 = 3.5 hours missing."}]},
+   {id:"t3u3-cp03", lesson:"t3u3-l3", level:3, q:"Leila’s CSV has towns such as `Kerrow ` (space at the end). After an OpenRefine import with the default options, her text facet shows no such variants. Why?", options:[
+     {t:"A text facet joins values that differ only by spaces at the end", why:"A text facet lists every distinct value exactly as stored. If `Kerrow ` were still there, it would have its own line."},
+     {t:"The import trims spaces by default; untick it to count them first", ok:true, why:"For CSV and pasted text, “Trim leading & trailing whitespace” is ticked by default, so the spaces went as the file was read. To count them for her log, she re-imports with it unticked."},
+     {t:"The import used the wrong character encoding, which drops spaces", why:"Encoding decides how letters such as é are read; a wrong choice gives marks like `Ã©`. It doesn’t remove spaces."},
+     {t:"Her spreadsheet added the spaces on screen; they were never in the CSV", why:"Spreadsheets don’t add characters to values. The difference comes from OpenRefine’s import options, which can trim on the way in."}]},
+   {id:"t3u3-cp04", lesson:"t3u3-l2", level:1, q:"For a town name in A2, `=LEN(A2)` gives 9 and `=LEN(TRIM(A2))` gives 7. What does this tell you?", options:[
+     {t:"It has 2 extra spaces that TRIM removes", ok:true, why:"TRIM removes spaces at the ends and doubles in the middle. A difference of 2 means 2 such spaces."},
+     {t:"The town name is misspelled by 2 letters", why:"LEN counts characters; it can’t check spelling. The gap shows only spaces TRIM would remove."},
+     {t:"The cell contains 2 non-breaking spaces", why:"TRIM doesn’t remove non-breaking spaces (that needs SUBSTITUTE first), so they wouldn’t change the length. These are ordinary spaces."},
+     {t:"Nothing: LEN and TRIM give unrelated results", why:"Comparing LEN before and after TRIM is a quick test for hidden spaces: if the numbers differ, there were some."}]},
+   {id:"t3u3-cp05", lesson:"t3u3-l2", level:2, q:"Bao uses Text to Columns on cells like `Kerrow, 0731`, splitting at the comma. The second column shows 731. What happened, and how can he avoid it?", options:[
+     {t:"The comma deleted the zero; he should split at a space instead", why:"The delimiter isn’t the issue. The split part was turned into a number, and numbers drop leading zeros."},
+     {t:"The app rounded the value; he should add decimal places", why:"Nothing was rounded. 0731 became the number 731; extra decimals would show 731.00, not 0731."},
+     {t:"It’s only a display issue; the zero is still stored", why:"Once text becomes a number, the leading zero is gone. Prevent it by choosing Text for that column."},
+     {t:"It became a number; set that column to Text in the dialog", ok:true, why:"Splitting can change types. Choosing Text in the Text to Columns dialog keeps codes like 0731 as typed."}]},
+   {id:"t3u3-cp06", lesson:"t3u3-l5", level:3, q:"Rows 5, 9 and 14 hold `kim@example.org`, `Kim@Example.org` and `kim@example.org ` (space at the end). A helper column has `=COUNTIF($C$2:$C$200, C2)>1`. What does it show for these rows?", options:[
+     {t:"TRUE for all three, since they are the same email", why:"COUNTIF ignores capitals but not spaces. Row 14’s trailing space makes it a different value."},
+     {t:"TRUE for rows 5 and 9; FALSE for row 14", ok:true, why:"COUNTIF treats rows 5 and 9 as equal despite capitals. Row 14’s trailing space hides it, so trim before checking."},
+     {t:"FALSE for all three, since no two are exactly alike", why:"That would be true of an exact comparison. COUNTIF ignores capitals, so rows 5 and 9 match each other."},
+     {t:"TRUE for rows 5 and 14; FALSE for row 9", why:"This assumes COUNTIF cares about capitals but not spaces. It is the other way round."}]},
+   {id:"t3u3-cp07", lesson:"t3u3-l3", level:1, q:"In OpenRefine, Leila wants to see quickly how many volunteers have no phone number recorded. Which facet answers this fastest?", options:[
+     {t:"Numeric facet", why:"A numeric facet shows the range of numbers. Phone numbers are codes, not quantities, and the question is about blanks."},
+     {t:"Timeline facet", why:"A timeline facet shows how dates are spread. The question is about empty cells."},
+     {t:"Word facet", why:"A word facet lists the words in cells. Empty cells have no words to list."},
+     {t:"Facet by blank", ok:true, why:"Facet by blank shows which rows are missing a value in that column, with a count."}]},
+   {id:"t3u3-cp08", lesson:"t3u3-l3", level:2, q:"Hamid is cleaning a confidential client list in OpenRefine on his laptop. Which of these actions would send some of the data off his computer?", options:[
+     {t:"Opening a text facet on the town column", why:"Facets run inside OpenRefine’s local server. The browser at 127.0.0.1 is only its screen."},
+     {t:"Reconciling town names against Wikidata", ok:true, why:"Reconciling sends values to an online service. Think twice before doing that with confidential data."},
+     {t:"Running Common transforms → To titlecase", why:"Transforms run locally on his computer. Most of OpenRefine works offline."},
+     {t:"Using the browser to view `http://127.0.0.1:3333`", why:"127.0.0.1 always means “this same computer”, so the browser talks only to his laptop."}]},
+   {id:"t3u3-cp09", lesson:"t3u3-l4", level:2, q:"In GREL, what does `value.toLowercase().replace(\"pt. \", \"port \")` return for the cell `PT. ELLIS`?", options:[
+     {t:"`PT. ELLIS`, unchanged", why:"The lowercasing happens first, so the text is `pt. ellis` before `replace` looks for `pt. `."},
+     {t:"`pt. ellis`", why:"`replace` runs after lowercasing, and `pt. ` is now in the text, so it is replaced."},
+     {t:"`port ellis`", ok:true, why:"Read left to right: lowercase gives `pt. ellis`, then `pt. ` becomes `port `."},
+     {t:"`Port Ellis`, with capitals", why:"Nothing here adds capitals. `toTitlecase()` would be needed for that."}]},
+   {id:"t3u3-cp10", lesson:"t3u3-l4", level:3, q:"After merging fingerprint clusters in a name column, `Mohammed Ali`, `Muhammad Ali` and `Mohamed Ali` remain separate. What is the best next step?", options:[
+     {t:"Raise the nearest-neighbour radius to 5 and merge every suggestion", why:"A big radius finds many wrong matches too. Merging everything unchecked could join different people."},
+     {t:"Leave them: clustering can only find exact matches", why:"Fingerprint is strict, but looser methods exist. Phonetic keys are designed for names spelled from sound."},
+     {t:"Try a phonetic key, then check each cluster against other details", ok:true, why:"Work from strict to lax, reviewing more as you go. Same-sounding names may still be different people, so check emails or dates."},
+     {t:"Delete two of the spellings so only one is left", why:"Deleting values destroys data. And without other evidence you don’t know these are one person."}]},
+   {id:"t3u3-cp11", lesson:"t3u3-l5", level:2, q:"Nadia’s sheet has one row per tutoring session, with columns student, date and tutor. She runs Remove Duplicates using only the student column. What goes wrong?", options:[
+     {t:"Nothing: each student should appear once", why:"One row is one session here, not one student. A student with several sessions should have several rows."},
+     {t:"Real sessions are deleted, keeping one per student", ok:true, why:"Repeat sessions are legitimate repeats. A fitting key would be student plus date (and perhaps tutor)."},
+     {t:"Only sessions with typos in the name are removed", why:"Remove Duplicates removes matching values, not typos. Every second and later session for a student goes."},
+     {t:"It keeps the last row of each group instead of the first", why:"These commands keep the first row. The real problem is the key: student alone doesn’t identify a session."}]},
+   {id:"t3u3-cp12", lesson:"t3u3-l5", level:3, q:"In October, Ren merged `Kerow` into `Kerrow` with clustering, then extracted the steps as JSON. In November she applies them to a new file that contains `Kerrw`. What should she expect?", options:[
+     {t:"`Kerrw` is fixed too, because the recipe reruns the clustering", why:"The recipe repeats the merge of the exact values it saw, such as `Kerow`. It doesn’t re-cluster new values."},
+     {t:"The recipe fails because the file has a new value", why:"Recipes run fine on new files with the same columns. They just won’t touch values they never saw."},
+     {t:"Every town name is reset to the October values", why:"The steps only change matching values. Other cells are left as they are."},
+     {t:"`Kerrw` stays as it is, so she should check the facets again", ok:true, why:"A clustering merge replaces specific values. New misspellings need a new look at the facets."}]},
+  ],
 
   codex:[
    {id:"data-cleaning", title:"Data cleaning", aka:["data cleansing","dirty data","messy data","data wrangling"], tags:["data","cleaning"],
@@ -772,13 +834,13 @@ ICA.addUnit({
      {t:"A cell containing the formula `=2+2`", why:"The formula produces the number 4."},
      {t:"An empty cell", why:"An empty cell holds nothing, not text."}]},
    {id:"t3u3-q04", lesson:"t3u3-l1", level:3, q:"Kenji finds an age of 214 in a survey of adults and has no paper forms. What is the most honest treatment?", options:[
-     {t:"Set it to missing in the clean copy, keep the raw value, and record why in the log", ok:true, why:"Right. The value is impossible, but the true age can’t be known. Missing plus a note is honest and checkable."},
-     {t:"Change it to 21, the most likely intended value", why:"That is a guess presented as data. It might be 41, or 24."},
-     {t:"Replace it with the average age", why:"That invents a value and also makes the data look less varied than it is."},
+     {t:"Set it to missing in the clean copy and note why in the log", ok:true, why:"Right. The value is impossible, but the true age can’t be known. Missing plus a note, with the raw value kept, is honest and checkable."},
+     {t:"Change it to 21, since that is the most likely intended value", why:"That is a guess presented as data. It might be 41, or 24."},
+     {t:"Replace it with the average age of the other adults", why:"That invents a value and also makes the data look less varied than it is."},
      {t:"Delete the whole row", why:"The other answers in that row may be fine. Deleting loses them and can bias results."}]},
    {id:"t3u3-q05", lesson:"t3u3-l1", level:2, q:"A file shows `SÃ£o TomÃ©` instead of `São Tomé`. What most likely happened?", options:[
-     {t:"UTF-8 text was opened as if it were another encoding, such as Windows-1252", ok:true, why:"Right. That Ã-pattern is classic mojibake. Re-importing as UTF-8 fixes it."},
-     {t:"Someone typed the name wrongly", why:"Typos don’t produce this regular Ã pattern on every accented letter."},
+     {t:"UTF-8 text was opened as if it were another encoding", ok:true, why:"Right. The other encoding is often Windows-1252. That Ã-pattern is classic mojibake. Re-importing as UTF-8 fixes it."},
+     {t:"Someone typed the name wrongly when they entered the data", why:"Typos don’t produce this regular Ã pattern on every accented letter."},
      {t:"The file is damaged beyond repair", why:"The bytes are usually fine; only the way they were read is wrong."},
      {t:"The spreadsheet removed the accents", why:"The accents aren’t removed; they’re shown as two wrong characters each."}]},
    {id:"t3u3-q06", lesson:"t3u3-l1", level:1, q:"Why should you keep the raw data file untouched while cleaning?", options:[
@@ -787,15 +849,15 @@ ICA.addUnit({
      {t:"Because raw files are always correct", why:"Raw files are often messy. They are kept as evidence, not because they’re right."},
      {t:"To save storage space", why:"Keeping a copy uses more space, not less; it’s worth it."}]},
    {id:"t3u3-q07", lesson:"t3u3-l1", level:2, q:"Why is trimming whitespace usually done before standardising spellings?", options:[
-     {t:"Trimming makes many apparent variants identical, leaving fewer real spelling differences to review", ok:true, why:"Right. “Kerrow ” and “Kerrow” look like two values until the space is gone."},
+     {t:"Trimming makes many variants identical, leaving fewer to review", ok:true, why:"Right. “Kerrow ” and “Kerrow” look like two values until the space is gone."},
      {t:"Spelling tools only work on numbers", why:"Spelling fixes are about text; this isn’t the reason."},
      {t:"Trimming deletes duplicate rows", why:"Trimming changes values, not rows."},
-     {t:"It doesn’t matter which comes first", why:"It does: trimming first reduces the work and the chance of errors in the spelling step."}]},
+     {t:"It doesn’t matter which comes first, as both change the same values", why:"It does: trimming first reduces the work and the chance of errors in the spelling step."}]},
    {id:"t3u3-q08", lesson:"t3u3-l1", level:3, q:"In a farm survey, Lucía sees both `Kerrow` and `Kerrow North` in the village column. What should she do?", options:[
-     {t:"Keep them separate unless someone who knows the area confirms they are the same place", ok:true, why:"Right. They may be two places. Merging them would change the meaning of the data."},
+     {t:"Keep them separate until a local says they’re one place", ok:true, why:"Right. They may be two places. Merging them would change the meaning of the data."},
      {t:"Merge them, because they share a word", why:"Sharing a word isn’t evidence of being the same place."},
      {t:"Delete the `Kerrow North` rows as errors", why:"There’s no evidence they’re errors; they may be real interviews from another village."},
-     {t:"Merge them only if `Kerrow North` is rare", why:"How common a value is doesn’t tell you what it means."}]},
+     {t:"Merge them only if `Kerrow North` appears in very few rows", why:"How common a value is doesn’t tell you what it means."}]},
    {id:"t3u3-q09", lesson:"t3u3-l1", level:2, q:"Which column problem is about structure rather than individual values?", options:[
      {t:"One cell holding both a town and a day, like `Kerrow; Mon`", ok:true, why:"Right. Two facts in one cell is a structure (tidy-data) problem; split it into two columns."},
      {t:"A town typed in capitals", why:"That’s a value problem: the letters need standardising."},
@@ -813,22 +875,22 @@ ICA.addUnit({
      {t:"`=UPPER(TRIM(A2))`", why:"UPPER changes case; the non-breaking space would still be there."},
      {t:"`=VALUE(A2)`", why:"VALUE converts number-like text to numbers; it doesn’t remove spaces from words."}]},
    {id:"t3u3-q12", lesson:"t3u3-l2", level:2, q:"What does Excel’s `=PROPER(\"mckenzie\")` return?", options:[
-     {t:"`Mckenzie` (only the first letter a capital)", ok:true, why:"Right. PROPER capitalises the first letter (and letters after non-letters) and lowercases the rest, so it can’t know the family writes McKenzie."},
+     {t:"`Mckenzie`, first letter capital only", ok:true, why:"Right. PROPER capitalises the first letter (and letters after non-letters) and lowercases the rest, so it can’t know the family writes McKenzie."},
      {t:"`McKenzie`, as the family writes it", why:"PROPER has no knowledge of name conventions; it only capitalises after spaces and other non-letters."},
-     {t:"`MCKENZIE`, all capitals", why:"That’s what UPPER would return."},
+     {t:"`MCKENZIE`, with every letter a capital", why:"That’s what UPPER would return."},
      {t:"`mckenzie`, unchanged", why:"PROPER does change the first letter to a capital."}]},
    {id:"t3u3-q13", lesson:"t3u3-l2", level:3, q:"Hana replaces every `Rd` with `Road` in her whole sheet, with match case and match entire cell both off. What is the risk?", options:[
-     {t:"Words containing “rd”, like Ford or Birdsong, are changed too", ok:true, why:"Right. Replacing inside other words is the classic find-and-replace accident. Limit it to the column, match case, or use a checked helper formula."},
+     {t:"Words like Ford or Birdsong are changed too", ok:true, why:"Right. Any word containing “rd” changes. Replacing inside other words is the classic find-and-replace accident. Limit it to the column, match case, or use a checked helper formula."},
      {t:"Nothing: find and replace only changes whole words", why:"Unless you choose “Match entire cell contents”, it changes the text wherever it appears, including inside words."},
      {t:"It deletes the rows that contain Rd", why:"Replace changes text; it doesn’t delete rows."},
      {t:"It only works on the first match", why:"Replace All changes every match, which is the risk here."}]},
    {id:"t3u3-q14", lesson:"t3u3-l2", level:2, q:"In Google Sheets, `=SPLIT(\"Port Ellis, 4\", \", \")` gives three cells: Port, Ellis and 4. Why?", options:[
-     {t:"By default SPLIT treats each character of the delimiter, the comma and the space, as a separate separator", ok:true, why:"Right. Set the third argument to FALSE (`SPLIT(A2, \", \", FALSE)`) or split on the comma only and TRIM."},
-     {t:"SPLIT always splits at spaces", why:"It splits at the delimiter you give; the issue is that each character of it counts separately by default."},
-     {t:"The value contains a non-breaking space", why:"An ordinary space is enough to cause this with the default settings."},
+     {t:"It treats the comma and the space as two separate separators", ok:true, why:"Right. That’s SPLIT’s default. Set the third argument to FALSE (`SPLIT(A2, \", \", FALSE)`) or split on the comma only and TRIM."},
+     {t:"SPLIT always splits at every space, whatever delimiter you give", why:"It splits at the delimiter you give; the issue is that each character of it counts separately by default."},
+     {t:"The value contains a non-breaking space after the word Port", why:"An ordinary space is enough to cause this with the default settings."},
      {t:"Because 4 is a number", why:"The number has nothing to do with it; the space in “Port Ellis” is what splits."}]},
    {id:"t3u3-q15", lesson:"t3u3-l2", level:1, q:"Why clean in a helper column instead of typing over the original values?", options:[
-     {t:"You can compare raw and clean side by side, and the original stays as evidence", ok:true, why:"Right. Mistakes are visible and reversible; paste values only when you’re sure."},
+     {t:"You can compare raw and clean side by side", ok:true, why:"Right. The original also stays as evidence. Mistakes are visible and reversible; paste values only when you’re sure."},
      {t:"Helper columns make the file smaller", why:"They add a column, so the file is slightly larger."},
      {t:"Formulas can’t change other cells, so it’s the only way", why:"There are in-place tools too (Trim whitespace, Find and replace); helper columns are the safer choice, not the only one."},
      {t:"Helper columns are required for sorting", why:"Sorting doesn’t need helper columns."}]},
@@ -838,7 +900,7 @@ ICA.addUnit({
      {t:"`=CLEAN(A2)`", why:"CLEAN removes control characters such as line breaks; the € stays, so the result is still text."},
      {t:"`=PROPER(A2)`", why:"PROPER changes letter case, which doesn’t help here."}]},
    {id:"t3u3-q17", lesson:"t3u3-l2", level:3, q:"Ana’s data comes from a country where the comma is the decimal mark. She plans to remove all commas from an Amount column before converting it to numbers. What happens to `1,5`?", options:[
-     {t:"It becomes 15 instead of one and a half", ok:true, why:"Right. Removing a decimal comma multiplies the value by ten (or more). Know the locale convention before changing separators."},
+     {t:"It becomes 15", ok:true, why:"Right. It should be one and a half. Removing a decimal comma multiplies the value by ten (or more). Know the locale convention before changing separators."},
      {t:"It becomes 1.5 automatically", why:"Removing the comma leaves “15”; nothing puts a decimal point back."},
      {t:"It stays 1,5", why:"The plan removes commas, so it changes."},
      {t:"It becomes an error", why:"“15” is a perfectly valid number, which is why the mistake is easy to miss."}]},
@@ -849,14 +911,14 @@ ICA.addUnit({
      {t:"`=LEN(C2)>1`", why:"That tests whether the email is longer than one character."}]},
    /* Lesson 3 */
    {id:"t3u3-q19", lesson:"t3u3-l3", level:1, q:"What does `http://127.0.0.1:3333` refer to when OpenRefine is running?", options:[
-     {t:"The OpenRefine program running on your own computer, on port 3333", ok:true, why:"Right. 127.0.0.1 (localhost) always means this computer."},
-     {t:"OpenRefine’s website", why:"The website is openrefine.org; this address never leaves your machine."},
-     {t:"A file on your desktop", why:"It’s a server address, not a file."},
+     {t:"The OpenRefine program on your own computer", ok:true, why:"Right. It runs on port 3333, and 127.0.0.1 (localhost) always means this computer."},
+     {t:"OpenRefine’s website, where the tool runs online", why:"The website is openrefine.org; this address never leaves your machine."},
+     {t:"A project file saved on your desktop", why:"It’s a server address, not a file."},
      {t:"Your internet router", why:"Routers have other addresses; 127.0.0.1 is always the computer itself."}]},
    {id:"t3u3-q20", lesson:"t3u3-l3", level:2, q:"Priya wants to use OpenRefine on her Android phone. What is accurate?", options:[
-     {t:"There is no phone version; she can learn by reading and use spreadsheet functions on the phone, and run OpenRefine on a computer later", ok:true, why:"Right. OpenRefine needs Windows, macOS or Linux (including ChromeOS’s Linux environment)."},
+     {t:"There’s no phone version; she can run it on a computer later", ok:true, why:"Right. Meanwhile she can learn by reading and use spreadsheet functions on the phone. OpenRefine needs Windows, macOS or Linux (including ChromeOS’s Linux environment)."},
      {t:"She can install it from the Play Store", why:"There is no official OpenRefine app for phones."},
-     {t:"She can open openrefine.org and use it online", why:"The website offers downloads and documentation, not a hosted cleaning tool."},
+     {t:"She can open openrefine.org in her phone’s browser and use it online", why:"The website offers downloads and documentation, not a hosted cleaning tool."},
      {t:"It works on phones if Java is installed", why:"Java isn’t the issue: OpenRefine is a desktop program."}]},
    {id:"t3u3-q21", lesson:"t3u3-l3", level:1, q:"Which download needs Java to be installed separately?", options:[
      {t:"Linux", ok:true, why:"Right. The Windows and Mac downloads include Java; on Linux (and ChromeOS’s Linux) you install Java 11 or later yourself."},
@@ -866,7 +928,7 @@ ICA.addUnit({
    {id:"t3u3-q22", lesson:"t3u3-l3", level:2, q:"When OpenRefine imports a CSV file, what happens to the original file?", options:[
      {t:"Nothing: OpenRefine works on its own copy in a project", ok:true, why:"Right. Your file stays as it was; you export a new file when you’re done."},
      {t:"It is overwritten each time you save", why:"OpenRefine never writes back to the imported file."},
-     {t:"It is moved into the workspace folder", why:"A copy of the data goes into the project; the original stays where it was."},
+     {t:"It is moved into OpenRefine’s workspace folder on your computer", why:"A copy of the data goes into the project; the original stays where it was."},
      {t:"It is deleted after import", why:"OpenRefine doesn’t delete your files."}]},
    {id:"t3u3-q23", lesson:"t3u3-l3", level:3, q:"Fatima has an active text facet including only “Kerrow”. She runs Common transforms → To uppercase on the town column. What changes?", options:[
      {t:"Only the Kerrow rows that match the facet", ok:true, why:"Right. Operations apply to the rows currently selected by facets and filters."},
@@ -874,9 +936,9 @@ ICA.addUnit({
      {t:"Nothing, because facets block editing", why:"Facets select rows; editing still works on the selection."},
      {t:"Only the first row", why:"Transforms apply to all selected rows, not just one."}]},
    {id:"t3u3-q24", lesson:"t3u3-l3", level:1, q:"What does a text facet show?", options:[
-     {t:"Each distinct value in the column with the number of rows that have it", ok:true, why:"Right. It’s a summary you can also click to select rows."},
-     {t:"The average of the column", why:"Averages aren’t part of a text facet."},
-     {t:"Only the first 10 rows", why:"It summarises the whole column (or the current selection)."},
+     {t:"Each distinct value, with how many rows have it", ok:true, why:"Right. It’s a summary you can also click to select rows."},
+     {t:"The average and the total of the values in the column", why:"Averages and totals aren’t part of a text facet."},
+     {t:"Only the first 10 rows of the column, for a quick look", why:"It summarises the whole column (or the current selection)."},
      {t:"A chart of dates", why:"That’s the timeline facet."}]},
    {id:"t3u3-q25", lesson:"t3u3-l3", level:2, q:"The import preview shows `cafÃ©` in a column of café names. Which import option should Tomás change?", options:[
      {t:"Character encoding, to UTF-8", ok:true, why:"Right. The file is UTF-8 being read with another encoding; correcting the encoding fixes every accented letter."},
@@ -889,14 +951,14 @@ ICA.addUnit({
      {t:"Duplicates facet", why:"That finds repeated values, not wrong lengths."},
      {t:"Facet by star", why:"That shows rows you starred, not value lengths."}]},
    {id:"t3u3-q27", lesson:"t3u3-l3", level:3, q:"Sione runs To number on 180 cells and the message says 176 were changed. A Numeric facet shows 4 non-numeric cells: `12 `, `n/a`, `1,5` and `seven`. Which statement is right?", options:[
-     {t:"Each needs its own decision: trim, treat n/a as missing, check the decimal convention, and replace `seven` with 7 only if that’s clearly meant", ok:true, why:"Right. They fail for different reasons, and some (like `1,5`) depend on the data’s conventions."},
-     {t:"Delete the 4 rows so the column is fully numeric", why:"That throws away 4 records over problems that are mostly fixable."},
+     {t:"Each needs its own decision, because they fail for different reasons", ok:true, why:"Right. Trim `12 `, treat n/a as missing, check the decimal convention for `1,5`, and replace `seven` with 7 only if that’s clearly meant."},
+     {t:"Delete the 4 rows, so that the whole column is fully numeric for analysis", why:"That throws away 4 records over problems that are mostly fixable."},
      {t:"Run To number again until all 180 convert", why:"The contents prevent conversion; repeating it changes nothing."},
      {t:"Set all 4 to 0", why:"0 is a real value; it would distort totals and averages."}]},
    /* Lesson 4 */
    {id:"t3u3-q28", lesson:"t3u3-l4", level:1, q:"In OpenRefine, what does clustering do?", options:[
-     {t:"Suggests groups of different values that might mean the same thing, for you to approve", ok:true, why:"Right. It changes only the clusters you tick."},
-     {t:"Automatically merges all similar values", why:"Nothing is merged until you tick Merge? and confirm."},
+     {t:"Suggests values that may mean the same, for you to approve", ok:true, why:"Right. It changes only the clusters you tick."},
+     {t:"Automatically merges all similar values as soon as you open it", why:"Nothing is merged until you tick Merge? and confirm."},
      {t:"Groups rows into charts", why:"Clustering works on text values, not charts."},
      {t:"Deletes duplicate rows", why:"Removing rows is a different command."}]},
    {id:"t3u3-q29", lesson:"t3u3-l4", level:2, q:"What is the fingerprint key of `␣Fernández, Lucía`?", options:[
@@ -905,9 +967,9 @@ ICA.addUnit({
      {t:"`lucía fernández`", why:"Accents are removed, and the sorted order is fernandez before lucia."},
      {t:"`fernandezlucia`", why:"The words stay separated by a space; only punctuation is removed."}]},
    {id:"t3u3-q30", lesson:"t3u3-l4", level:2, q:"Why does fingerprint clustering not group `Port-Ellis` with `Port Ellis`?", options:[
-     {t:"Removing the hyphen joins the words into `portellis`, which differs from `ellis port`", ok:true, why:"Right. Punctuation is removed without adding a space, so the keys differ. n-Gram fingerprint or a manual edit will catch it."},
+     {t:"Removing the hyphen gives `portellis`, not `ellis port`", ok:true, why:"Right. Punctuation is removed without adding a space, so the keys differ. n-Gram fingerprint or a manual edit will catch it."},
      {t:"Fingerprint is case-sensitive", why:"Fingerprint lowercases everything first."},
-     {t:"Fingerprint ignores hyphens and spaces both", why:"It keeps spaces as word separators; that’s why the keys differ."},
+     {t:"Fingerprint removes both the hyphens and the spaces between words", why:"It keeps spaces as word separators; that’s why the keys differ."},
      {t:"The values are too short to cluster", why:"Length isn’t the issue; the keys are simply different."}]},
    {id:"t3u3-q31", lesson:"t3u3-l4", level:1, q:"What is the Levenshtein distance between `Kerow` and `Kerrow`?", options:[
      {t:"1", ok:true, why:"Right. One insertion (an r) turns Kerow into Kerrow."},
@@ -915,7 +977,7 @@ ICA.addUnit({
      {t:"2", why:"Only one character needs to be added."},
      {t:"6", why:"That’s the length of Kerrow, not the number of edits."}]},
    {id:"t3u3-q32", lesson:"t3u3-l4", level:3, q:"Nearest-neighbour clustering with radius 1 suggests merging `Ana Silva` and `Ana Silvia`. What should Mei do?", options:[
-     {t:"Check other details (email, birth year) before deciding; they may be two people", ok:true, why:"Right. A small edit distance shows similar characters, not the same person."},
+     {t:"Check other details, like email, before deciding", ok:true, why:"Right. They may be two people; check email or birth year. A small edit distance shows similar characters, not the same person."},
      {t:"Merge, because distance 1 proves they’re the same", why:"Edit distance can’t prove identity; plenty of different names are one letter apart."},
      {t:"Increase the radius to find more merges", why:"That finds more candidates, including more wrong ones; it doesn’t answer this question."},
      {t:"Merge into whichever spelling is shorter", why:"Length isn’t evidence."}]},
@@ -935,13 +997,13 @@ ICA.addUnit({
      {t:"The number of rows", why:"value refers to one cell, not a count."},
      {t:"The value of the first row only", why:"It changes for every row the transform visits."}]},
    {id:"t3u3-q36", lesson:"t3u3-l4", level:3, q:"Kenji’s column has `St. Ann’s` and `Saint Ann’s`. No clustering method groups them. What’s the best approach?", options:[
-     {t:"Agree the preferred form and replace it explicitly (for example with `value.replace(\"St. \", \"Saint \")`), then log it", ok:true, why:"Right. Abbreviations differ by too many characters for clustering; a written rule is clear and repeatable."},
+     {t:"Agree one form, replace it with a written rule, and log it", ok:true, why:"Right. For example, use `value.replace(\"St. \", \"Saint \")`. Abbreviations differ by too many characters for clustering; a written rule is clear and repeatable."},
      {t:"Raise the radius until they cluster", why:"A radius large enough would also merge many unrelated values."},
      {t:"Use PPM, which will find everything", why:"PPM is very lax and produces many false matches; a rule is better here."},
-     {t:"Leave both, since clustering found nothing", why:"They mean the same thing, so counts would split. A rule fixes it safely."}]},
+     {t:"Leave both as they are, since clustering found nothing to merge", why:"They mean the same thing, so counts would split. A rule fixes it safely."}]},
    /* Lesson 5 */
    {id:"t3u3-q37", lesson:"t3u3-l5", level:1, q:"What is a duplicate record?", options:[
-     {t:"Two or more rows describing the same real thing, even if some details differ", ok:true, why:"Right. Fatima on paper and online is one person in two rows."},
+     {t:"Two or more rows about the same real thing", ok:true, why:"Right. Some details may differ. Fatima on paper and online is one person in two rows."},
      {t:"Any two rows with the same value in some column", why:"Two shifts by the same volunteer share a name but are different records."},
      {t:"A row with a blank cell", why:"That’s missing data, not duplication."},
      {t:"A copy of the whole file", why:"That’s a backup."}]},
@@ -951,13 +1013,13 @@ ICA.addUnit({
      {t:"292", why:"That subtracts the 8 IDs instead of the 12 extra copies."},
      {t:"300", why:"Removing duplicates does remove rows: the 12 extra copies."}]},
    {id:"t3u3-q39", lesson:"t3u3-l5", level:2, q:"Remove Duplicates keeps the first row of each group. How can you make sure it keeps the most recent sign-up?", options:[
-     {t:"Sort by sign-up date, newest first, before removing", ok:true, why:"Right. Then the newest row of each group is first and survives. In OpenRefine, make the sort permanent first (Reorder rows permanently)."},
+     {t:"Sort newest first before removing", ok:true, why:"Right. Sort by sign-up date. Then the newest row of each group is first and survives. In OpenRefine, make the sort permanent first (Reorder rows permanently)."},
      {t:"Remove duplicates twice", why:"The second run finds nothing to remove; the first run already decided which row stayed."},
-     {t:"Format the date column as a date", why:"Formatting doesn’t change which row comes first."},
+     {t:"Format the date column as a date first", why:"Formatting doesn’t change which row comes first."},
      {t:"There is no way to control it", why:"Row order controls it, so sorting first does."}]},
    {id:"t3u3-q40", lesson:"t3u3-l5", level:3, q:"Priya fuzzy-matches typed town names to an official list. Lowering the similarity cutoff from 0.9 to 0.6 will most likely…", options:[
      {t:"find more real matches but also more wrong ones", ok:true, why:"Right. A lower threshold accepts less similar pairs, so it catches more typos and more unrelated names."},
-     {t:"find fewer matches overall", why:"A lower cutoff lets more pairs through, not fewer."},
+     {t:"find fewer matches overall, because it is stricter", why:"A lower cutoff is less strict: it lets more pairs through, not fewer."},
      {t:"make every match correct", why:"No threshold guarantees correct matches; review is still needed."},
      {t:"have no effect", why:"The cutoff decides which pairs count as matches; changing it changes the results."}]},
    {id:"t3u3-q41", lesson:"t3u3-l5", level:1, q:"In OpenRefine, how do you save your cleaning steps to reuse on another file?", options:[
@@ -976,10 +1038,10 @@ ICA.addUnit({
      {t:"An empty file", why:"The matching rows are exported."},
      {t:"Only the facet’s summary counts", why:"The rows themselves are exported, not the facet summary."}]},
    {id:"t3u3-q44", lesson:"t3u3-l5", level:2, q:"Why might sharing an OpenRefine project archive be a privacy problem even after you removed names?", options:[
-     {t:"It contains the full history, back to the original raw data", ok:true, why:"Right. Anyone can undo back to step 0 and see the names. Share a cleaned export and the steps instead."},
+     {t:"It keeps the full history, back to the raw data", ok:true, why:"Right. Anyone can undo back to step 0 and see the names. Share a cleaned export and the steps instead."},
      {t:"It uploads the data to OpenRefine’s servers", why:"Exporting saves a file on your computer; nothing is uploaded."},
      {t:"It includes your passwords", why:"Project archives hold data and history, not passwords."},
-     {t:"It can’t be opened by anyone else", why:"It can: that’s the point of the archive, and the reason for care."}]},
+     {t:"It can be opened only on the computer that made it", why:"It can be opened anywhere: that’s the point of the archive, and the reason for care."}]},
    {id:"t3u3-q45", lesson:"t3u3-l5", level:2, q:"Which entry belongs in a cleaning log but is not recorded by OpenRefine’s history?", options:[
      {t:"Why Kerrow and Kerrow North were kept separate", ok:true, why:"Right. History records what was done; only you can record the reasons and evidence."},
      {t:"The expression used to trim the town column", why:"The history records each transform with its exact expression."},

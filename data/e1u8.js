@@ -1,7 +1,7 @@
-/* Academic Language · Academic Japanese Unit 8 · Presentations, seminars and keigo with professors (the last unit of IT CHICK Academy) */
+/* Academic Language · Academic Japanese Unit 8 · Presentations, seminars and keigo with professors (the last unit of the Academic Language elective) */
 ICA.addUnit({
   id:"e1u8", track:"e1", n:8, title:"Presentations, seminars and keigo with professors", icon:"🎤",
-  blurb:"Give a 発表 in a ゼミ or at a conference, answer questions calmly and take part in discussion; learn how keigo works through the five categories of 敬語の指針 (2007), avoid the common mistakes, and write to and visit professors with confidence. The unit, and IT CHICK Academy, ends with a send-off.",
+  blurb:"Give a 発表 in a ゼミ or at a conference, answer questions calmly and take part in discussion; learn how keigo works through the five categories of 敬語の指針 (2007), avoid the common mistakes, and write to and visit professors with confidence. The unit, and the Academic Language elective, ends with a send-off.",
   goals:[
     "Prepare a レジュメ and give a short 発表 in a ゼミ or at a conference, using the stock phrases for each stage and for describing figures",
     "Handle 質疑応答 politely: thank, check the question, buy time, say honestly when you don’t know and offer to follow up",
@@ -118,7 +118,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e1u8-l1-x1", type:"mcq", q:"In Alejandro’s ゼミ, each member presents one chapter of a book that everyone is reading together. What is this kind of ゼミ activity called?", options:[
-      {t:"輪読（りんどく）", ok:true, why:"輪読 is reading a book together, with members taking turns to present its chapters."},
+      {t:"輪読", ok:true, why:"輪読 is reading a book together, with members taking turns to present its chapters."},
       {t:"学会発表", why:"A 学会発表 is a talk at an academic society’s conference, not a chapter in a class reading."},
       {t:"卒論中間発表", why:"That is an interim presentation of your own graduation thesis."},
       {t:"履歴書", why:"A 履歴書 is a CV, not a presentation at all."}
@@ -757,9 +757,9 @@ ICA.addUnit({
       "If the door is open and the professor is clearly busy, ask first: 「今、少しよろしいでしょうか。」 If they say now isn’t good, ask when would suit them: 「では、いつ頃でしたらよろしいでしょうか。」",
       {tip:"失礼します on entering literally means “I’m being rude (by interrupting you)”. It is the set phrase for coming into a teacher’s room, an office or an interview, and is not an apology for anything you did."}
     ]},
-    {h:"The end of Academic Japanese, and of IT CHICK Academy", body:[
+    {h:"The end of Academic Japanese", body:[
       "You have reached the last lesson of **Academic Japanese**: the styles and words of academic Japanese, reading papers and kanji-heavy text, writing reports and theses, and now presenting, discussing and using keigo with professors. Academic Japanese is hard even for people who grew up speaking Japanese. If you have worked through these units, you have done something genuinely difficult. Thank you.",
-      "This is also the last unit of **IT CHICK Academy** as a whole. Everything you have studied stays here for you to come back to:",
+      "This is also the last unit of the **Academic Language** elective. Here is everything else in IT CHICK Academy, all of it here for you to come back to:",
       {table:[
         ["Part","What it covers"],
         ["💻 Digital Foundations","How computers, files, the internet and everyday software work, and staying safe"],
@@ -768,7 +768,10 @@ ICA.addUnit({
         ["🔎 Research Skills","Finding, reading and citing research, methods, ethics and academic writing"],
         ["✍️ Academic Language (elective)","Academic English and Academic Japanese for study and research"],
         ["🌏 Social Science Primers (elective)","Sociology, International Relations and Migration Studies"],
-        ["🧪 The Labs","Formula, Web, Python, Citation and Data Labs: try things for real, safely"]
+        ["🗾 Japanese Foundations (elective)","Japanese from the first kana to JLPT N3, with the Kamome House story"],
+        ["🗺️ International Studies (elective)","Going deeper after the primers: history, theory, methods, global governance, development, Japan and the regions"],
+        ["🧪 The Labs","Formula, Web, Python, Citation, Data and Kanji Labs: try things for real, safely"],
+        ["🕹️ The Arcade","Quick games and flashcards that bring back what you studied"]
       ]},
       "The Codex keeps every reference entry in one place, and the Labs are always open for practice. Skills fade without use and grow with it, so come back, redo an exercise, try a new Lab challenge, or open a unit you skipped.",
       "Wherever you go next (a degree, a job, a research project, or simply your own curiosity), keep learning, keep asking questions, and be kind to yourself when something is hard. Hard things are how you grow.",
@@ -810,12 +813,12 @@ ICA.addUnit({
       {t:"「ご返信いただき、ありがとうございます。承知いたしました。木曜日の15時に研究室へ伺います。」", ok:true, why:"Thanks, accepts with 承知いたしました, and confirms the time and place with 伺う."},
       {t:"「了解です。行きます。」", why:"Casual for a teacher; 「承知いたしました」 and 伺います are expected."},
       {t:"「ありがとうございます。木曜日の15時に研究室へいらっしゃいます。」", why:"いらっしゃる is 尊敬語: it raises Priya’s own going. Use 伺います."},
-      {t:"No reply: she will just go on Thursday.", why:"A short confirmation tells the professor the time works. Without it, they can’t be sure."}
+      {t:"No reply needed: she will simply turn up on Thursday as asked.", why:"A short confirmation tells the professor the time works. Without it, they can’t be sure."}
     ]},
     {id:"e1u8-l5-x5", type:"mcq", q:"Oluwaseun emailed his supervisor a week ago about a non-urgent question and has had no reply. What is the best next step?", options:[
       {t:"Reply in the same thread: 「先日お送りした〜の件で、再度ご連絡いたしました。お忙しいところ申し訳ありませんが、ご確認いただけますと幸いです。」", ok:true, why:"Polite, keeps the original message visible, and doesn’t blame the professor."},
       {t:"Send a new email: 「なぜ返信がないのですか。」", why:"Blaming and abrupt. Professors miss emails for many ordinary reasons."},
-      {t:"Send the same email again every day until there is a reply", why:"Repeated messages are irritating and don’t explain anything."},
+      {t:"Send the same email again every day, marked urgent, until the supervisor finally replies", why:"Repeated messages marked urgent are irritating and don’t explain anything."},
       {t:"Give up: no reply means the answer is no", why:"Emails get missed. A polite reminder is normal."}
     ]},
     {id:"e1u8-l5-x6", type:"order", q:"Put the steps of a visit to a professor’s 研究室 in order.", items:[
@@ -845,6 +848,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e1u8-q02","e1u8-q06","e1u8-q11","e1u8-q14","e1u8-q19","e1u8-q23","e1u8-q26","e1u8-q30","e1u8-q33","e1u8-q37","e1u8-q41","e1u8-q44"],
+  cpBank:[
+   {id:"e1u8-cp01", lesson:"e1u8-l1", level:1, q:"Kenji will tell his ゼミ how his own graduation research is going: what he has done so far and what he will do next. What kind of 発表 is this?", options:[
+     {t:"輪読", why:"In 輪読, members take turns presenting chapters of a book that the ゼミ reads together."},
+     {t:"文献紹介", why:"In a 文献紹介, you summarise and comment on one paper or book by someone else."},
+     {t:"進捗報告", ok:true, why:"A 進捗報告 reports how your own research is going."},
+     {t:"学会発表", why:"A 学会発表 is a talk at an academic society’s conference, not an update in a ゼミ."}]},
+   {id:"e1u8-cp02", lesson:"e1u8-l1", level:2, q:"In her 発表, Ana is moving on to the next part, where she will explain her method to the audience. Which sentence is correct?", options:[
+     {t:"「次に、調査の方法についてご説明になります。」", why:"ご〜になる is 尊敬語, so it would raise Ana’s own explaining. Her action towards the audience takes ご〜する."},
+     {t:"「次に、調査の方法についてご説明します。」", ok:true, why:"ご〜する is 謙譲語Ⅰ: Ana’s own explaining, which goes towards the audience. It is the standard light keigo of a 発表."},
+     {t:"「次に、調査の方法についてご説明ください。」", why:"お／ご〜ください is a request, so this asks the audience to do the explaining."},
+     {t:"「次に、調査の方法について説明しちゃいます。」", why:"～ちゃう is a casual spoken contraction. A 発表 uses です・ます with light keigo: ご説明します."}]},
+   {id:"e1u8-cp03", lesson:"e1u8-l2", level:1, q:"While her professor explains a point, Hana keeps answering 「なるほど」. What do some etiquette guides advise?", options:[
+     {t:"Keep saying なるほど, because it is the most respectful 相槌", why:"Some etiquette guides advise against a bare なるほど to a senior person."},
+     {t:"Stay completely silent, because 相槌 interrupt the speaker", why:"相槌 are expected in Japanese conversation. They show that you are following."},
+     {t:"Say 「了解です」 after each point, to sound more formal", why:"了解 is felt by many to be casual, and a 相槌 is a short signal such as はい."},
+     {t:"Use はい or そうなんですね instead of a bare なるほど", ok:true, why:"A bare なるほど can sound as if she is judging the professor’s point. With teachers, はい and そうなんですね are safe 相槌."}]},
+   {id:"e1u8-cp04", lesson:"e1u8-l2", level:2, q:"In 質疑応答, a teacher points out that Ana interviewed only eight people. Ana chose a small number on purpose, to interview each person in depth. Which reply is best?", options:[
+     {t:"「それは違います。8名で十分だと思います。」", why:"Blunt disagreement, with no thanks and no reason. Thank first, then explain your choice calmly."},
+     {t:"「勉強不足で申し訳ありませんが、まだ調べておりません。」", why:"That phrase is for something you don’t know yet. Ana knows why she chose eight people, so she should explain."},
+     {t:"「ご指摘ありがとうございます。ただ、本研究では一人ひとりに詳しく話を聞くため、対象者を8名としました。」", ok:true, why:"She thanks the teacher for the 指摘, then explains her choice calmly with ただ and a reason."},
+     {t:"「ご指摘ありがとうございます。その点は、今後の課題とさせていただきます。」", why:"That phrase is for points beyond the study. The number of interviews is part of her design, which she can explain."}]},
+   {id:"e1u8-cp05", lesson:"e1u8-l2", level:3, q:"In 質疑応答, Kofi is asked why scores fell in the second year. He didn’t study the cause, but he has a reasoned idea. Which reply is best?", options:[
+     {t:"「2年生はアルバイトが増えるからです。データでは約6割です。」", why:"This states a guess as fact and adds a figure he never checked. Never invent a number to fill a silence."},
+     {t:"「わかりません。」", why:"Too abrupt. If he really had no idea, 勉強不足で申し訳ありませんが… would be the polite way; here he can offer a labelled guess."},
+     {t:"「推測になりますが、2年生になるとアルバイトの時間が増えるためではないかと考えています。確認して、後日ご報告いたします。」", ok:true, why:"推測になりますが labels the guess clearly, and offering to check is honest and helpful."},
+     {t:"「その点は、今後の課題とさせていただきます。」", why:"This avoids the question. It suits points beyond the study, but a clearly labelled guess is more helpful here."}]},
+   {id:"e1u8-cp06", lesson:"e1u8-l3", level:2, q:"Priya’s professor asks: 「金曜日は図書館が早く閉まるそうですが、知っていますか。」 Priya knows about it. Which reply is correct?", options:[
+     {t:"「はい、存じ上げております。」", why:"存じ上げる (謙譲語Ⅰ) is for knowing a respected person or something of theirs, such as their name. A library’s opening hours are neither."},
+     {t:"「はい、ご存じです。」", why:"ご存じ is 尊敬語, for the other person’s knowing, not Priya’s."},
+     {t:"「はい、存じております。」", ok:true, why:"存じる (謙譲語Ⅱ) is “know” said politely to the listener. What Priya knows is a plain fact, not a respected person."},
+     {t:"「はい、知っていらっしゃいます。」", why:"いらっしゃる is 尊敬語, so this would raise Priya herself."}]},
+   {id:"e1u8-cp07", lesson:"e1u8-l3", level:3, q:"Kenji brings tea to a visiting professor and says 「お茶をお持ちしました。」 What do the two お do?", options:[
+     {t:"お茶 is 美化語; お持ちする is 謙譲語Ⅰ, raising the professor", ok:true, why:"Ask whose thing it is and who it is for: お茶 raises nobody, while お〜する raises the person the action goes towards."},
+     {t:"Both are 尊敬語, raising the professor", why:"お持ちする is お〜する, which is 謙譲語Ⅰ: Kenji’s own action. 尊敬語 would be お〜になる."},
+     {t:"お茶 is 尊敬語 because the tea is for the professor; お持ちする is 美化語", why:"お茶 is the standard example of 美化語, and お〜する is a 謙譲語Ⅰ verb pattern."},
+     {t:"Both are 美化語, so neither raises anyone", why:"お茶 is 美化語, but お持ちする raises the professor, who receives the action."}]},
+   {id:"e1u8-cp08", lesson:"e1u8-l3", level:3, q:"In her private diary, written in plain style, Mei writes 「今日は午後から大学に参った。」 Why does 参った sound odd here?", options:[
+     {t:"参る is 尊敬語, so Mei is raising herself", why:"参る is 謙譲語Ⅱ (丁重語), not 尊敬語."},
+     {t:"参る is 謙譲語Ⅱ, a courtesy to a listener or reader, and a private diary has none", ok:true, why:"謙譲語Ⅱ nearly always comes with ます, because it is politeness to the person addressed. With nobody addressed, it sounds odd."},
+     {t:"参る raises the university, which isn’t a person", why:"参る raises nobody in the sentence; that is how it differs from 伺う."},
+     {t:"Keigo verbs can never be used in the past tense", why:"Past forms are fine: 参りました, 伺いました. The problem is that there is no listener."}]},
+   {id:"e1u8-cp09", lesson:"e1u8-l4", level:1, q:"Mei writes to her professor: 「先生はこの資料をお使いになられましたか。」 What should she change?", options:[
+     {t:"Remove られ: 「お使いになりましたか」", ok:true, why:"お〜になる + 〜れる doubles the 尊敬語 (二重敬語). One correct form is enough."},
+     {t:"Change it to 「お使いしましたか」", why:"お〜する is 謙譲語Ⅰ, for your own action. It would lower the professor."},
+     {t:"Change it to 「使わせていただきましたか」", why:"〜させていただく describes your own action, done with permission, not the professor’s."},
+     {t:"Nothing: double forms are always the most polite choice", why:"The guidelines say 二重敬語 is generally not appropriate, apart from a few forms accepted by custom."}]},
+   {id:"e1u8-cp10", lesson:"e1u8-l4", level:2, q:"A professor visiting from another university asks Kofi whether she can use the 研究室’s Wi-Fi. Which reply is correct?", options:[
+     {t:"「はい、ご利用できます。」", why:"ご〜できる is the potential of ご〜する, which is 謙譲語Ⅰ, so it describes Kofi’s own action. Her using needs 尊敬語."},
+     {t:"「はい、ご利用になられます。」", why:"ご利用になる + 〜れる doubles the 尊敬語 (二重敬語). Make ご利用になる potential instead: ご利用になれます."},
+     {t:"「はい、利用させていただけます。」", why:"〜させていただく is for your own action, done with permission. Here the visitor is the one using the Wi-Fi."},
+     {t:"「はい、ご利用になれます。」", ok:true, why:"The 尊敬語 form first (ご利用になる), then its potential (ご利用になれる). ご利用いただけます is also accepted."}]},
+   {id:"e1u8-cp11", lesson:"e1u8-l5", level:2, q:"Amara attaches the outline of her report to an email and wants her professor to look at it. Which sentence fits best?", options:[
+     {t:"「レポートの構成案を添付いたしましたので、ご確認してください。」", why:"ご〜する is 謙譲語Ⅰ, for your own action, so ご確認して points it at the professor by mistake."},
+     {t:"「レポートの構成案を添付しましたので、見ておいてください。」", why:"見ておいてください is an instruction, the way a teacher speaks to a student. Ask softly instead."},
+     {t:"「レポートの構成案を添付いたしましたので、ご確認いただけますと幸いです。」", ok:true, why:"添付いたしました says what she sent, and ご確認いただけますと幸いです is a standard soft request."},
+     {t:"「レポートの構成案を添付いたしました。以上、よろしく。」", why:"よろしく alone is casual, and she doesn’t say what she would like the professor to do."}]},
+   {id:"e1u8-cp12", lesson:"e1u8-l5", level:3, q:"Amara is emailing her own ゼミ teacher, Professor Yamada, to ask about a report deadline. Which opening is best?", options:[
+     {t:"「山田教授様　お疲れさまです。レポートの締め切りについて質問です。」", why:"教授様 doubles the title, お疲れさまです is not the usual email opening to a professor, and there is no 名乗り."},
+     {t:"「山田先生　お世話になっております。至急返信ください。」", why:"至急返信ください sounds like a demand, and there is no 名乗り and no clear purpose."},
+     {t:"「山田先生　はじめてご連絡いたします。文学部2年のアマラ・オコロです。レポートの締め切りについて、ご相談したくご連絡いたしました。」", why:"はじめてご連絡いたします is for first contact, but her own teacher knows her, so お世話になっております fits."},
+     {t:"「山田先生　お世話になっております。文学部2年のアマラ・オコロです。レポートの締め切りについて、ご相談したくご連絡いたしました。」", ok:true, why:"先生 as the title, the usual greeting, a 名乗り, then the purpose in one sentence."}]}
+  ],
   codex:[
    {id:"japanese-presentations", title:"Presentations in Japanese (発表)", aka:["happyō","ゼミ発表","学会発表","レジュメ","presenting in Japanese"], tags:["academic Japanese","speaking"],
     summary:"How academic presentations work in Japanese: kinds of 発表, the レジュメ handout, the stages of a talk, stock phrases, describing figures and the right speaking style.",
@@ -1054,7 +1119,7 @@ ICA.addUnit({
     sources:[{t:"Tokyo Tech Study Tips vol. 6「東工大共通メールシステムの使い方・メールの書き方」(2021, PDF)", url:"https://www.titech.ac.jp/student-support/pdf/studytipsvol6-3.pdf"}],
     checked:"2026-11"},
 
-   {id:"academic-japanese-next-steps", title:"Academic Japanese: keeping going", aka:["after Academic Japanese","IT CHICK Academy send-off","keep learning"], tags:["academic Japanese","study skills"],
+   {id:"academic-japanese-next-steps", title:"Academic Japanese: keeping going", aka:["after Academic Japanese","Academic Language send-off","keep learning"], tags:["academic Japanese","study skills"],
     summary:"A map of what Academic Japanese covered, how to keep practising, and where to go next in IT CHICK Academy.",
     levels:{
      starter:[
@@ -1066,7 +1131,7 @@ ICA.addUnit({
       {h:"A weekly practice plan"},
       {list:["**Read**: one article from J-STAGE or a 新書 chapter; write a three-line 要約 in である体","**Collect**: five 漢語 or 接続詞 in a phrase notebook","**Write**: one paragraph in である体, then check it for 話し言葉","**Speak**: a 2-minute summary aloud, recorded privately","**Keigo**: one real email or message, checked for direction and 二重敬語"]},
       {h:"Where else to go in IT CHICK Academy"},
-      "Research Skills for finding, reading and citing research in any language; Academic English if you also study in English; Data Literacy for statistics and charts; and the Labs for hands-on practice."
+      "Japanese Foundations and the Kanji Lab to keep your grammar and kanji strong; Research Skills for finding, reading and citing research in any language; Academic English if you also study in English; Data Literacy for statistics and charts; International Studies for Japan and the Asia-Pacific in depth; and the Labs for hands-on practice."
      ],
      pro:[
       {h:"Use the real thing"},
@@ -1137,30 +1202,30 @@ ICA.addUnit({
      {t:"Use the set opening: 「それでは、発表を始めます。〇〇学部〇年の〇〇です。本日は、大学生のアルバイトについて発表いたします。」", ok:true, why:"It replaces fillers and casual words with the expected opening: start, name, topic."},
      {t:"Add more keigo to every sentence", why:"The problem is casual speech and a missing frame, not too little keigo."},
      {t:"Switch to である体 to sound academic", why:"である is the written style; a spoken 発表 uses です・ます."},
-     {t:"Keep it: a relaxed style makes the audience comfortable", why:"In a ゼミ or 学会, えっと, じゃあ, で and バイト sound unprepared."}
+     {t:"Keep it: a relaxed, casual style makes the audience feel comfortable and listen", why:"In a ゼミ or 学会, えっと, じゃあ, で and バイト sound unprepared."}
    ]},
    {id:"e1u8-q07", lesson:"e1u8-l1", level:1, q:"What is 輪読?", options:[
-     {t:"Reading a book together, with members taking turns to present chapters", ok:true, why:"A common ゼミ format."},
-     {t:"Reading your thesis aloud to the teacher", why:"That isn’t what 輪読 means."},
+     {t:"Reading a book together, taking turns to present chapters", ok:true, why:"A common ゼミ format, in which members take turns to present chapters."},
+     {t:"Reading your own thesis aloud to the teacher, chapter by chapter", why:"That isn’t what 輪読 means."},
      {t:"A conference poster session", why:"That is ポスター発表."},
      {t:"Proofreading a classmate’s report", why:"That would be 添削 or peer review, not 輪読."}
    ]},
-   {id:"e1u8-q08", lesson:"e1u8-l1", level:2, q:"Kofi’s slide says 「回答者の約3割」. How many respondents is that, roughly?", options:[
+   {id:"e1u8-q08", lesson:"e1u8-l1", level:2, q:"Kofi’s slide says 「回答者の約3割」. What share of the respondents is that, roughly?", options:[
      {t:"About 30%", ok:true, why:"1割 is 10%, so 3割 is 30%."},
      {t:"About 3%", why:"That would be 3パーセント; 割 is tenths."},
      {t:"About 0.3%", why:"割 means tenths of the whole, so 3割 is 30%, not 0.3%."},
      {t:"Three people", why:"割 is a proportion, not a count."}
    ]},
    {id:"e1u8-q09", lesson:"e1u8-l1", level:3, q:"Dmitri plans to read his whole レジュメ aloud, word for word, to avoid mistakes. What is the main problem?", options:[
-     {t:"Listeners can read it themselves, and its written style doesn’t suit speech; he should talk through it and point to sections", ok:true, why:"Many teachers advise against reading the handout aloud; talking through it keeps contact with listeners."},
+     {t:"Its written style doesn’t suit speech; he should talk through it instead", ok:true, why:"Listeners can read the handout themselves. Many teachers advise against reading it aloud; talking through it and pointing to sections keeps contact with listeners."},
      {t:"レジュメ must never contain full sentences", why:"Some do; the issue is reading the handout aloud, not its sentences."},
      {t:"It will make the talk too short", why:"Length isn’t the main issue; reading aloud loses the audience."},
-     {t:"Reading aloud is against university rules", why:"There’s no such general rule; it’s advice about effective presenting."}
+     {t:"Reading a handout aloud is against the rules at most Japanese universities", why:"There’s no such general rule; it’s advice about effective presenting."}
    ]},
    /* ---------- Lesson 2 ---------- */
    {id:"e1u8-q10", lesson:"e1u8-l2", level:1, q:"What is 質疑応答?", options:[
      {t:"The question-and-answer part after a presentation", ok:true, why:"質疑 (questions) + 応答 (answers)."},
-     {t:"The handout for a presentation", why:"That is the レジュメ."},
+     {t:"The handout that the presenter gives out before a presentation", why:"That is the レジュメ."},
      {t:"A written exam", why:"質疑応答 is spoken questions and answers after a talk."},
      {t:"The chair of a session", why:"That is the 司会 or 座長."}
    ]},
@@ -1178,13 +1243,13 @@ ICA.addUnit({
    ]},
    {id:"e1u8-q13", lesson:"e1u8-l2", level:1, q:"What does the set phrase 勉強不足で申し訳ありませんが… signal in 質疑応答?", options:[
      {t:"That you don’t know the answer yet, said humbly", ok:true, why:"It politely admits a gap in your knowledge."},
-     {t:"That the question was badly asked", why:"It blames yourself, not the questioner."},
+     {t:"That the question was badly asked or hard to understand", why:"It blames yourself, not the questioner."},
      {t:"That you want to end the session", why:"It is about a gap in knowledge, not ending the session."},
      {t:"That you disagree strongly", why:"Disagreement uses different phrases, such as 確かに〜。ただ、〜."}
    ]},
    {id:"e1u8-q14", lesson:"e1u8-l2", level:3, q:"At a 学会, Amara is asked about data she doesn’t have. Which answer is best?", options:[
      {t:"「勉強不足で申し訳ありませんが、そのデータはまだ確認しておりません。確認して、後日ご報告いたします。」", ok:true, why:"Honest, humble and helpful, with a concrete offer."},
-     {t:"Give an approximate number that sounds plausible", why:"Inventing data damages trust and may mislead."},
+     {t:"Give an approximate number that sounds plausible to the audience", why:"Inventing data damages trust and may mislead."},
      {t:"「その質問は発表と関係ないと思います。」", why:"Dismissive of a fair question."},
      {t:"Stay silent until the 座長 moves on", why:"Silence leaves the questioner without any answer; a polite admission is better."}
    ]},
@@ -1293,8 +1358,8 @@ ICA.addUnit({
      {t:"お帰りになられる", why:"Doubles 尊敬語; お帰りになる is enough."}
    ]},
    {id:"e1u8-q32", lesson:"e1u8-l4", level:2, q:"When does 〜させていただく fit best, according to the guidelines?", options:[
-     {t:"When you act with the other person’s permission and benefit from it", ok:true, why:"For example 「録音させていただいてもよろしいでしょうか」."},
-     {t:"Whenever you want to be extra polite", why:"That leads to over-use, such as 在籍させていただいております."},
+     {t:"When you act with permission and benefit from it", ok:true, why:"It fits your own actions done with the other person’s permission, which benefit you. For example 「録音させていただいてもよろしいでしょうか」."},
+     {t:"Whenever you want to sound extra polite to someone senior", why:"That leads to over-use, such as 在籍させていただいております."},
      {t:"Only for the professor’s actions", why:"It is about your own actions."},
      {t:"Never: it is always wrong", why:"It is correct where permission and benefit are involved."}
    ]},
@@ -1337,7 +1402,7 @@ ICA.addUnit({
    ]},
    {id:"e1u8-q39", lesson:"e1u8-l5", level:2, q:"What should come straight after the 名乗り in an email to a professor?", options:[
      {t:"The 用件: why you are writing, in one sentence", ok:true, why:"Professors should know your purpose in the first lines."},
-     {t:"A long explanation of your background", why:"Details come after the purpose, and briefly."},
+     {t:"A long explanation of your background and studies so far", why:"Details come after the purpose, and briefly."},
      {t:"Your signature", why:"The 署名 goes at the end."},
      {t:"An apology for writing", why:"Not needed; state your purpose politely."}
    ]},
@@ -1357,7 +1422,7 @@ ICA.addUnit({
      {t:"A professor’s office, and also their research group or lab", ok:true, why:"Both meanings are common."},
      {t:"The university library", why:"That is 図書館."},
      {t:"A lecture hall", why:"That is 講義室 or 教室."},
-     {t:"The student affairs office", why:"That is 学生課 or a similar office."}
+     {t:"The student affairs office, which helps with everyday student life", why:"That is 学生課 or a similar office."}
    ]},
    {id:"e1u8-q43", lesson:"e1u8-l5", level:1, q:"What do you say as you enter a professor’s office?", options:[
      {t:"「失礼します。」", ok:true, why:"The set phrase for entering a teacher’s room."},

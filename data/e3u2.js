@@ -125,7 +125,19 @@ ICA.addUnit({
       "\nMariya: ",{t:"「ロドリゴさんは[会社員]{かいしゃいん}ですか。」", flag:false, why:"Correct. Mariya uses Rodrigo’s name with さん instead of あなた, which is natural."},
       "\nRodrigo: ",{t:"「いいえ、[会社員]{かいしゃいん}ではありませんです。」", flag:true, why:"ありません is already polite, so です is not added: 「[会社員]{かいしゃいん}ではありません。」"},
       " ",{t:"「[学生]{がくせい}です。」", flag:false, why:"Correct: “I’m a student.” The topic (I) is clear, so it is left out."}
-    ]}
+    ]},
+    {id:"e3u2-l1-x8", type:"type", q:"Fumiko is telling a visitor about Toby. Type the missing particle: 「トビーさん＿＿[学生]{がくせい}です。」 (“Toby is a student.”)", answer:"は",
+      wrongs:[{v:"わ", why:"It sounds like わ, but the topic particle is always written は. On a keyboard, type *ha*."},
+              {v:"が", why:"が would make Toby the new information, as if answering “Who is the student?” Here Toby is the topic and the news is what he is, so は. Lesson 2 says more about は and が."}],
+      why:"Toby is the topic, what the sentence is about, so he takes は: トビーさんは[学生]{がくせい}です. It is written は and pronounced わ."},
+    {id:"e3u2-l1-x9", type:"type", q:"Type the particle that joins the two nouns to make “Yến’s bag”: イエンさん＿＿かばん", answer:"の",
+      wrongs:[{v:"は", why:"は marks the topic of a sentence. To show that one noun owns or describes another, join them with の."}],
+      why:"の joins two nouns, with the owner first: イエンさんのかばん, “Yến’s bag”."},
+    {id:"e3u2-l1-x10", type:"type", q:"Rodrigo asks Mariya: 「まりやさんは[先生]{せんせい}ですか。」 She is a student, not a teacher. Type the polite ending of her answer: 「いいえ、[先生]{せんせい}＿＿。」", answer:["じゃありません", "ではありません", "じゃないです", "ではないです"],
+      wrongs:[{v:"ではありませんです", why:"ありません is already polite, so です is not added after it."},
+              {v:"じゃありませんです", why:"ありません is already polite, so です is not added after it."},
+              {v:"です", why:"です says she *is* a teacher, which contradicts いいえ. The negative ending replaces です."}],
+      why:"The negative ending replaces です. じゃありません and じゃないです are the everyday polite forms in conversation; ではありません is the most formal, and the one to write."}
    ],
    apply:{
     intro:"Write in Japanese, using kana and any kanji you like. Keep your notes private unless you choose to share them.",
@@ -268,7 +280,18 @@ ICA.addUnit({
     ]},
     {id:"e3u2-l2-x7", type:"spot", q:"Cheska is buying tea. The tin of tea is on the counter right in front of the shop assistant, an arm’s length from Cheska. Tap the pointing words that are **wrong**.", ask:"is wrong", parts:[
       "Cheska: 「すみません、",{t:"それ", flag:false, why:"Correct. The tea is near the listener (the assistant), so Cheska says それ."},"は[何]{なん}ですか。」\nAssistant: 「",{t:"これ", flag:false, why:"Correct. For the assistant, the tea is close to her, the speaker: これ."},"ですか。[日本]{にほん}のお[茶]{ちゃ}です。」\nCheska: 「",{t:"これ", flag:true, why:"Wrong. The tea is still near the assistant, the listener, so Cheska should say それ: 「それはいくらですか。」"},"はいくらですか。」\nAssistant: 「",{t:"この", flag:false, why:"Correct. The tea is near the assistant, and a noun (お[茶]{ちゃ}) follows, so この."},"お[茶]{ちゃ}は[八百円]{はっぴゃくえん}です。」\nCheska: 「じゃ、",{t:"その", flag:true, why:"Wrong. その must have a noun after it. On its own, Cheska should say それ: 「じゃ、それをください。」 (“Then I’ll take that, please.”)"},"をください。」"
-    ]}
+    ]},
+    {id:"e3u2-l2-x8", type:"type", q:"Rodrigo is at a station and needs the toilet. Type the missing question word: 「すみません、トイレは＿＿ですか。」 (“Excuse me, where is the toilet?”)", answer:["どこ","どちら"],
+      wrongs:[{v:"どれ", why:"どれ asks “which one?” among several things. For a place, ask with どこ."},
+              {v:"なん", why:"[何]{なん} asks “what?”. To ask where something is, use どこ."}],
+      why:"どこ is the ど-word for places. X はどこですか is the pattern for “Where is X?”, and the answer often uses ここ, そこ or あそこ. どちら, the politer word, is also correct here."},
+    {id:"e3u2-l2-x9", type:"type", q:"Several umbrellas stand by the door. Toby asks which one is Yến’s. Type the missing particle: 「どれ＿＿イエンさんのかさですか。」", answer:"が",
+      wrongs:[{v:"は", why:"A question word can’t be the topic, because it is the new information. As the subject it takes が: どれが…"}],
+      why:"どれ is a question word and the subject, so it takes が. The answer keeps が too: 「あれがイエンさんのかさです。」"},
+    {id:"e3u2-l2-x10", type:"type", q:"Cheska holds up a book she has just bought. Type the missing word: 「＿＿[本]{ほん}は[私]{わたし}のです。」 (“This book is mine.”)", answer:"この",
+      wrongs:[{v:"これ", why:"これ stands alone. A noun ([本]{ほん}) follows, so you need この: この[本]{ほん}."},
+              {v:"その", why:"その is for things near the listener. The book is in Cheska’s own hand, so it is この."}],
+      why:"The book is near the speaker and a noun follows, so この: この[本]{ほん}は[私]{わたし}のです."}
    ],
    apply:{
     intro:"Use the things around you. You can do these tasks anywhere: at home, at work or on a walk.",
@@ -406,7 +429,19 @@ ICA.addUnit({
     ]},
     {id:"e3u2-l3-x7", type:"spot", q:"Cheska wrote about her day yesterday. Tap the verb forms that are **wrong**.", ask:"is wrong", parts:[
       "[昨日]{きのう}は[六時]{ろくじ}に",{t:"[起]{お}きました", flag:false, why:"Correct. [起]{お}きる is ichidan: [起]{お}きます → [起]{お}きました."},"。コーヒーを",{t:"[飲]{の}みました", flag:false, why:"Correct. [飲]{の}む is godan: む → み, [飲]{の}みました."},"。[朝]{あさ}、[日本語]{にほんご}を",{t:"[勉強]{べんきょう}しました", flag:false, why:"Correct. Noun + する: [勉強]{べんきょう}します → [勉強]{べんきょう}しました."},"。[五時]{ごじ}にうちに",{t:"[帰]{かえ}ました", flag:true, why:"Wrong. [帰]{かえ}る is a godan exception: [帰]{かえ}りました."},"。[夜]{よる}、テレビを",{t:"[見]{み}りました", flag:true, why:"Wrong. [見]{み}る is ichidan: drop る and add ました, [見]{み}ました."},"。[十一時]{じゅういちじ}に",{t:"[寝]{ね}ました", flag:false, why:"Correct. [寝]{ね}る is ichidan: [寝]{ね}ます → [寝]{ね}ました."},"。"
-    ]}
+    ]},
+    {id:"e3u2-l3-x8", type:"type", q:"Type the ます form of [帰]{かえ}る (go home), in hiragana.", answer:"かえります",
+      wrongs:[{v:"かえます", why:"[帰]{かえ}る looks ichidan, but it is one of the godan exceptions, so る becomes り. (かえます is the ます form of a different verb, [変]{か}える, “change”.)"}],
+      why:"[帰]{かえ}る is a godan verb, even though it ends in -eru. The last sound moves from る to り, then ます: かえります."},
+    {id:"e3u2-l3-x9", type:"type", q:"Type the polite form for “didn’t eat” ([食]{た}べる = eat): 「[今朝]{けさ}は[何]{なに}も＿＿。」 (“I didn’t eat anything this morning.”)", answer:["たべませんでした","たべなかったです"],
+      wrongs:[{v:"たべないでした", why:"The polite past negative is ません + でした. ない is a plain form, and it doesn’t combine with でした."},
+              {v:"たべりませんでした", why:"[食]{た}べる is ichidan: drop る and add the ending. Only godan verbs change る to り."},
+              {v:"たべません", why:"That is non-past: “I don’t eat” or “I won’t eat”. This morning is in the past, so add でした."}],
+      why:"[食]{た}べる is ichidan, so the ます stem is たべ, and the polite past negative is たべませんでした. (たべなかったです is also heard in conversation.) With [何]{なに}も, a negative verb means “nothing”."},
+    {id:"e3u2-l3-x10", type:"type", q:"Mariya invites Yến: 「[土曜日]{どようび}、いっしょに[映画]{えいが}を[見]{み}ませんか。」 Yến is happy to go. Type the missing ending: 「いいですね。[見]{み}＿＿。」 (“Sounds good. Let’s.”)", answer:"ましょう",
+      wrongs:[{v:"ません", why:"[見]{み}ません means “I won’t watch it”, the opposite of what Yến means. To agree to a plan, use ～ましょう."},
+              {v:"ませんか", why:"～ませんか is the invitation itself. Mariya has already invited her; to accept, Yến says ～ましょう, “let’s”."}],
+      why:"Once someone has invited you, ～ましょう agrees to the plan: [見]{み}ましょう, “let’s (see it)”."}
    ],
    apply:{
     intro:"Use your own days. Short, true sentences are the best practice.",
@@ -555,7 +590,18 @@ ICA.addUnit({
     {id:"e3u2-l4-x7", type:"spot", q:"Rodrigo wrote about his weekend. Tap the particles that are **wrong**.", ask:"is wrong", parts:[
       "[土曜日]{どようび}",{t:"に", flag:false, why:"Correct. A day of the week normally takes に."},"、[友]{とも}だち",{t:"と", flag:false, why:"Correct. と after a person: with a friend."},"[公園]{こうえん}",{t:"に", flag:true, why:"Wrong. Playing tennis is an action, so the place takes で: [公園]{こうえん}でテニスをしました."},"テニスをしました。それから、バス",{t:"で", flag:false, why:"Correct. The bus is the means: で."},"うち",{t:"へ", flag:false, why:"Correct. へ shows direction with [帰]{かえ}る (に would also be fine)."},"[帰]{かえ}りました。[日曜日]{にちようび}はうち",{t:"で", flag:false, why:"Correct. Reading is an action, so the place takes で."},"[本]{ほん}",{t:"に", flag:true, why:"Wrong. [本]{ほん} is the object of [読]{よ}む, so it takes を: [本]{ほん}を[読]{よ}みました."},"[読]{よ}みました。"
     ]},
-    {id:"e3u2-l4-x8", type:"number", q:"A café sign says 「[月曜日]{げつようび}から[金曜日]{きんようび}まで」. [月曜日]{げつようび} is Monday and [金曜日]{きんようび} is Friday. On how many days a week is the café open?", answer:5, tol:0, unit:"days", why:"から…まで includes both ends: Monday, Tuesday, Wednesday, Thursday and Friday. That is 5 days.", wrongs:[{v:4, tol:0, why:"4 is Friday minus Monday, which counts the gaps between days. から…まで includes both Monday and Friday, so add one: 5."},{v:2, tol:0, why:"The sign names two days, but から…まで means the whole span from Monday to Friday: 5 days."}]}
+    {id:"e3u2-l4-x8", type:"number", q:"A café sign says 「[月曜日]{げつようび}から[金曜日]{きんようび}まで」. [月曜日]{げつようび} is Monday and [金曜日]{きんようび} is Friday. On how many days a week is the café open?", answer:5, tol:0, unit:"days", why:"から…まで includes both ends: Monday, Tuesday, Wednesday, Thursday and Friday. That is 5 days.", wrongs:[{v:4, tol:0, why:"4 is Friday minus Monday, which counts the gaps between days. から…まで includes both Monday and Friday, so add one: 5."},{v:2, tol:0, why:"The sign names two days, but から…まで means the whole span from Monday to Friday: 5 days."}]},
+    {id:"e3u2-l4-x9", type:"type", q:"Rodrigo is meeting a friend. Type the missing particle: 「[駅]{えき}＿＿[友]{とも}だちを[待]{ま}ちます。」 (“I’ll wait for my friend at the station.”)", answer:"で",
+      wrongs:[{v:"に", why:"に marks where something simply is (with あります and います) or where you go. Waiting is an action, so the place takes で."},
+              {v:"へ", why:"へ shows the direction of a movement. Waiting happens at a place, so で."}],
+      why:"Waiting is an action that happens at the station, so the place takes で: [駅]{えき}で[友]{とも}だちを[待]{ま}ちます."},
+    {id:"e3u2-l4-x10", type:"type", q:"Fumiko looks out of the window. Type the missing verb: 「あ、[庭]{にわ}にねこが＿＿よ。」 (“Oh, there’s a cat in the garden.”)", answer:"います",
+      wrongs:[{v:"あります", why:"あります is for things, plants and events. A cat is an animal that moves by itself, so います."}],
+      why:"People and animals, living things that move by themselves, take います: [庭]{にわ}にねこがいます."},
+    {id:"e3u2-l4-x11", type:"type", q:"Mariya says 「[私]{わたし}はコーヒーを[飲]{の}みます。」 Kaito drinks coffee too. Type the missing particle in his reply: 「ぼく＿＿[飲]{の}みます。」", answer:"も",
+      wrongs:[{v:"はも", why:"も replaces は; the two never go together. Say ぼくも."},
+              {v:"は", why:"ぼくは[飲]{の}みます is correct Japanese, but it doesn’t say “too”. For “me too”, も replaces は."}],
+      why:"も means “also, too”, and it replaces は: ぼくも[飲]{の}みます, “I drink it too”."}
    ],
    apply:{
     intro:"Turn the particles into sentences about your own week.",
@@ -706,7 +752,21 @@ ICA.addUnit({
       {t:"このカレーはあまり[辛]{から}いです。", why:"あまり needs a negative ending. Without one the sentence is wrong."},
       {t:"このカレーはとても[辛]{から}いです。", why:"とても [辛]{から}いです means “This curry is very spicy”: the opposite."},
       {t:"このカレーはあまり[辛]{から}いじゃないです。", why:"じゃないです is the negative for nouns and な-adjectives. [辛]{から}い is an い-adjective: [辛]{から}くないです."}
-    ]}
+    ]},
+    {id:"e3u2-l5-x9", type:"type", q:"Type the polite way to say “was cold” ([寒]{さむ}い = cold): 「[昨日]{きのう}はとても＿＿。」 (“It was very cold yesterday.”)", answer:"さむかったです",
+      wrongs:[{v:"さむいでした", why:"With い-adjectives the tense lives in the adjective, not in です: drop い, add かった, then です."},
+              {v:"さむかったでした", why:"The past is already in さむかった. です only adds politeness, and it doesn’t change to でした here."},
+              {v:"さむいです", why:"That is “is cold”. For yesterday, make the adjective past: さむかったです."}],
+      why:"さむい is an い-adjective. Drop い, add かった for the past, then add です to be polite: さむかったです."},
+    {id:"e3u2-l5-x10", type:"type", q:"Yến asks Toby about a café near the station. He doesn’t think much of it. Type the polite negative of いい: 「あそこは、あまり＿＿。」 (“That place isn’t very good.”)", answer:["よくないです", "よくありません"],
+      wrongs:[{v:"いくないです", why:"いい is irregular: every changed form is built on よ, from the older word よい. The negative is よくないです."},
+              {v:"いいじゃないです", why:"じゃないです is for な-adjectives and nouns. いい is an い-adjective, and its negative is よくないです."}],
+      why:"いい changes on its older form よい: よくないです, or the slightly more formal よくありません. With あまり, a negative means “not very”."},
+    {id:"e3u2-l5-x11", type:"type", q:"Type the missing ending, the past negative of a な-adjective: 「[昔]{むかし}、この[町]{まち}は[有名]{ゆうめい}＿＿。」 (“In the past, this town wasn’t famous.”)", answer:["じゃありませんでした", "ではありませんでした", "じゃなかったです", "ではなかったです"],
+      wrongs:[{v:"くなかったです", why:"く endings are for い-adjectives. [有名]{ゆうめい} is a な-adjective, so it changes like a noun: じゃありませんでした."},
+              {v:"じゃありません", why:"That is the present, “isn’t famous”. For the past, add でした: じゃありませんでした."},
+              {v:"でした", why:"でした says it *was* famous. For “wasn’t”, use じゃありませんでした."}],
+      why:"な-adjectives change like nouns: [有名]{ゆうめい}じゃありませんでした, or ではありませんでした in writing. じゃなかったです is also common in polite conversation."}
    ],
    apply:{
     intro:"Describe your own world with adjectives. Keep it simple and true.",
@@ -735,6 +795,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e3u2-q02","e3u2-q05","e3u2-q11","e3u2-q15","e3u2-q20","e3u2-q24","e3u2-q27","e3u2-q31","e3u2-q36","e3u2-q38","e3u2-q43","e3u2-q46"],
+  cpBank:[
+    {id:"e3u2-cp01", lesson:"e3u2-l1", level:1, q:"Mariya is telling Fumiko about Rodrigo. How does she say “Rodrigo is Mexican”?", options:[
+      {t:"「ロドリゴはさんメキシコ[人]{じん}です。」", why:"さん goes straight after the name: ロドリゴさん. The particle は comes after that."},
+      {t:"「ロドリゴさんはメキシコ[人]{じん}ですか。」", why:"か at the end turns the sentence into a question: “Is Rodrigo Mexican?”"},
+      {t:"「ロドリゴさんはメキシコ[人]{じん}です。」", ok:true, why:"X は Y です: the topic (ロドリゴさん) with は, then what he is, then です."},
+      {t:"「ロドリゴさんをメキシコ[人]{じん}です。」", why:"を marks the object of a verb. The person the sentence is about is the topic, so it takes は."}]},
+    {id:"e3u2-cp02", lesson:"e3u2-l1", level:2, q:"Fumiko asks Yến 「[昨日]{きのう}は[休]{やす}みでしたか。」. Yến had classes yesterday. Which answer is right?", options:[
+      {t:"「いいえ、[休]{やす}みじゃありません。」", why:"This is present: “It isn’t a day off.” For yesterday, add でした: じゃありませんでした."},
+      {t:"「いいえ、[休]{やす}みじゃありませんでした。」", ok:true, why:"The past negative of a noun with です: じゃありません + でした. いいえ fits, because it was not a day off."},
+      {t:"「いいえ、[休]{やす}みでした。」", why:"いいえ (no) and [休]{やす}みでした (it was a day off) contradict each other."},
+      {t:"「いいえ、[休]{やす}みじゃありませんでしたです。」", why:"ありませんでした is already polite. Don’t add です after it."}]},
+    {id:"e3u2-cp03", lesson:"e3u2-l2", level:2, q:"Cheska calls down the stairs: 「トビーさん、[私]{わたし}のくつはどこですか。」 Her shoes are right next to Toby, by the front door. What does he say?", options:[
+      {t:"「そこです。」", why:"そこ is near the listener. The shoes are next to Toby, the speaker, and far from Cheska."},
+      {t:"「あそこです。」", why:"あそこ is far from both people. The shoes are right next to Toby."},
+      {t:"「ここです。」", ok:true, why:"ここ is the place near the speaker. The shoes are next to Toby, so he says ここ."},
+      {t:"「どこです。」", why:"どこ is the question word “where?”. It asks; it doesn’t answer."}]},
+    {id:"e3u2-cp04", lesson:"e3u2-l2", level:3, q:"One evening Fumiko asks 「だれがカレーを[作]{つく}りましたか。」 Kaito made it. What is the most natural answer?", options:[
+      {t:"「ぼくは[作]{つく}りました。」", why:"With は, ぼく becomes the topic or a contrast (“I, at least, made it”), so it doesn’t simply answer だれ. The word that answers a question word takes が, like だれが."},
+      {t:"「ぼくが[作]{つく}りました。」", ok:true, why:"ぼく answers だれ, so it is the new information and takes が. [作]{つく}りました is past, because the curry is already made."},
+      {t:"「ぼくが[作]{つく}ります。」", why:"The non-past ます form means a habit or the future: “I will make it.” The curry is already made, so use the past."},
+      {t:"「ぼくを[作]{つく}りました。」", why:"を marks the object, the thing made. This would mean that someone made Kaito."}]},
+    {id:"e3u2-cp05", lesson:"e3u2-l3", level:1, q:"Rodrigo is making ます forms. For which verb does he simply take off る and add ます?", options:[
+      {t:"[走]{はし}る (to run)", why:"[走]{はし}る is on the list of godan exceptions, so it becomes [走]{はし}ります."},
+      {t:"[起]{お}きる (to get up)", ok:true, why:"An i-sound (き) comes before る, and it isn’t an exception, so it is ichidan: [起]{お}きます."},
+      {t:"[乗]{の}る (to ride, get on)", why:"An o-sound (の) comes before る, so it is godan: [乗]{の}ります."},
+      {t:"[作]{つく}る (to make)", why:"A u-sound (く) comes before る, so it is godan: [作]{つく}ります."}]},
+    {id:"e3u2-cp06", lesson:"e3u2-l3", level:2, q:"Fumiko is cooking dinner for everyone. Cheska wants to offer to wash the dishes. What does she say?", options:[
+      {t:"「お[皿]{さら}を[洗]{あら}いませんか。」", why:"～ませんか invites the other person: “Won’t you wash the dishes?” Cheska wants to do it herself."},
+      {t:"「お[皿]{さら}を[洗]{あら}いますか。」", why:"This asks about Fumiko’s plans: “Will you wash the dishes?” It doesn’t offer anything."},
+      {t:"「お[皿]{さら}を[洗]{あら}いました。」", why:"ました is past: “I washed the dishes.” Dinner isn’t even finished yet."},
+      {t:"「お[皿]{さら}を[洗]{あら}いましょうか。」", ok:true, why:"～ましょうか can offer help: “Shall I wash the dishes?” Fumiko is still free to say yes or no."}]},
+    {id:"e3u2-cp07", lesson:"e3u2-l3", level:3, q:"Rodrigo wants to tell Mariya “I’ll come at seven tomorrow.” くる means “to come”. Which sentence is right?", options:[
+      {t:"「[明日]{あした}、[七時]{しちじ}にくます。」", why:"くる is irregular: its ます form is きます, not くます."},
+      {t:"「[明日]{あした}に、[七時]{しちじ}にきます。」", why:"Time words relative to now, such as [明日]{あした}, take no particle. Only the clock time takes に."},
+      {t:"「[明日]{あした}、[七時]{しちじ}にきました。」", why:"ました is past: “I came.” For tomorrow, use the non-past ます."},
+      {t:"「[明日]{あした}、[七時]{しちじ}にきます。」", ok:true, why:"くる is irregular, so it becomes きます. [明日]{あした} takes no particle, and the clock time [七時]{しちじ} takes に."}]},
+    {id:"e3u2-cp08", lesson:"e3u2-l4", level:2, q:"Cheska writes her reports in English. Which particle fills the gap? 「レポートは[英語]{えいご}＿＿[書]{か}きます。」", options:[
+      {t:"で", ok:true, why:"で marks the means, tool or language: [英語]{えいご}で[書]{か}きます, “I write (them) in English”."},
+      {t:"に", why:"に marks a point in time, a destination or where something is. A language you use takes で."},
+      {t:"を", why:"を marks the object, the thing written. Here the reports are the topic, and English is the language they are written in."},
+      {t:"と", why:"と means “with” after a person, or “and” between nouns. It can’t mark the language you use."}]},
+    {id:"e3u2-cp09", lesson:"e3u2-l4", level:3, q:"Toby points to a building far from both him and a visitor. How does he say “There’s a post office over there”?", options:[
+      {t:"「あそこに[郵便局]{ゆうびんきょく}がいます。」", why:"います is for people and animals. A building takes あります."},
+      {t:"「あれに[郵便局]{ゆうびんきょく}があります。」", why:"あれ means “that thing”. For a place, use あそこ."},
+      {t:"「あそこで[郵便局]{ゆうびんきょく}があります。」", why:"で marks where something happens. A building that is simply there takes に."},
+      {t:"「あそこに[郵便局]{ゆうびんきょく}があります。」", ok:true, why:"あそこ is a place far from both people; place に thing が あります introduces a building that is there."}]},
+    {id:"e3u2-cp10", lesson:"e3u2-l5", level:1, q:"[元気]{げんき} (healthy, well) is a な-adjective. Which is its polite negative?", options:[
+      {t:"[元気]{げんき}くないです", why:"くない is the ending for い-adjectives. な-adjectives change like nouns."},
+      {t:"[元気]{げんき}なじゃありません", why:"な appears only before a noun, not before じゃありません."},
+      {t:"[元気]{げんき}じゃありません", ok:true, why:"な-adjectives change like nouns: [元気]{げんき}です → [元気]{げんき}じゃありません."},
+      {t:"[元気]{げんき}じゃありませんでした", why:"This is the past negative: “wasn’t well”. The present negative stops at じゃありません."}]},
+    {id:"e3u2-cp11", lesson:"e3u2-l5", level:2, q:"Toby saw a film yesterday, and it wasn’t good. How does he say so politely? 「[昨日]{きのう}の[映画]{えいが}は＿＿。」", options:[
+      {t:"いくなかったです", why:"いい changes on よ in all its other forms, so the negative starts よく-, not いく-."},
+      {t:"よくないでした", why:"い-adjectives carry their own past: ない becomes なかった, then add です."},
+      {t:"いいじゃありませんでした", why:"じゃありませんでした is for nouns and な-adjectives. いい is an い-adjective."},
+      {t:"よくなかったです", ok:true, why:"いい changes on よ: よくない (not good) → よくなかった (wasn’t good), plus です for politeness."}]},
+    {id:"e3u2-cp12", lesson:"e3u2-l5", level:3, q:"Cheska wants to say “My room is small, but it’s bright.” Which sentence is correct?", options:[
+      {t:"「[部屋]{へや}は[小]{ちい}さいと[明]{あか}るいです。」", why:"と joins nouns only. To join two sentences with “but”, use ですが."},
+      {t:"「[部屋]{へや}は[小]{ちい}さいですが、[明]{あか}るいです。」", ok:true, why:"が after です means “but” and joins two sentences: “It’s small, but it’s bright.”"},
+      {t:"「[部屋]{へや}は[小]{ちい}さいでも、[明]{あか}るいです。」", why:"でも starts a new sentence: [小]{ちい}さいです。でも、[明]{あか}るいです。 To join the two in one sentence, use ですが."},
+      {t:"「[部屋]{へや}は[小]{ちい}さいですが、[明]{あか}るくないです。」", why:"[明]{あか}るくないです means “it isn’t bright”, the opposite of what Cheska wants to say."}]}
+  ],
   codex:[
    {id:"japanese-sentence-basics", title:"Japanese sentence basics: は, です and の", aka:["X は Y です","です","the copula","の (possessive)"], tags:["japanese","grammar","n5"],
     summary:"The first Japanese sentence pattern: a topic marked by は, a comment, and the polite copula です, with its negative and past forms, and の to join nouns.",

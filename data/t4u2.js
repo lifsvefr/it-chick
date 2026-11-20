@@ -127,8 +127,8 @@ ICA.addUnit({
       ["older adults","elderly, seniors, aged","Different eras and fields use different words for older people; searching only one misses work using the others."]
     ]},
     {id:"t4u2-l1-x3", type:"mcq", q:"Lucía searches a database for `community gardens improve mental health in cities` and gets two results. What’s the best next step?", options:[
-      {t:"Cut it to the concepts (community gardens, mental health, urban) and add synonyms such as “allotments”, “urban gardening”, “wellbeing” and “psychological”", ok:true, why:"Right. Dropping relationship and filler words (“improve”, “in”) and adding synonyms raises recall; there is plenty of research on this under other words."},
-      {t:"Conclude that almost no research exists on the topic", why:"Two results usually means the words don’t match how authors describe the topic, not that the research doesn’t exist."},
+      {t:"Cut it to the concepts and add synonyms such as “allotments” and “wellbeing”", ok:true, why:"Right. Dropping relationship and filler words (“improve”, “in”) and adding synonyms raises recall; there is plenty of research on this under other words. The concepts are community gardens, mental health and urban; other synonyms include “urban gardening” and “psychological”."},
+      {t:"Conclude that almost no research exists on community gardens and mental health", why:"Two results usually means the words don’t match how authors describe the topic, not that the research doesn’t exist."},
       {t:"Add more words, such as `benefits` and `evidence`", why:"In most databases each added word is another condition every result must meet, so this would find even fewer."},
       {t:"Put the whole sentence in quotation marks", why:"Quotation marks demand that exact phrase. Almost no paper contains that sentence word for word, so this finds fewer, not more."}
     ]},
@@ -284,9 +284,9 @@ ICA.addUnit({
       ["OpenAlex","Boolean operators must be typed in capitals","AND, OR and NOT in uppercase combine terms in its search."]
     ]},
     {id:"t4u2-l2-x5", type:"mcq", q:"Tomás is studying teenagers and wants to avoid studies of young children, so he searches `adolescents NOT children`. What’s the main problem?", options:[
-      {t:"It also removes every study of “children and adolescents”, which may be exactly the evidence he needs", ok:true, why:"NOT removes any record that mentions the word at all, even studies that include his group alongside another."},
+      {t:"It also removes studies of “children and adolescents”, which he may need", ok:true, why:"NOT removes any record that mentions the word at all, even studies that include his group alongside another."},
       {t:"NOT isn’t a real Boolean operator", why:"NOT is one of the three standard Boolean operators; the problem is how bluntly it works."},
-      {t:"It will return more results than `adolescents` alone", why:"NOT can only remove records, never add them."},
+      {t:"It will return even more results than searching for `adolescents` on its own", why:"NOT can only remove records, never add them."},
       {t:"Nothing: NOT is the best way to focus on a group", why:"An age filter, or adding a concept with AND, focuses a search without throwing away mixed-age studies."}
     ]},
     {id:"t4u2-l2-x6", type:"number", q:"In a small database, 120 records mention “anxiety”, 80 mention “depression”, and 30 mention both. How many records does `anxiety OR depression` find?", answer:170, tol:0, unit:"records", why:"OR finds records with either word. Add the two sets and subtract the overlap, which would otherwise be counted twice: 120 + 80 − 30 = 170.", wrongs:[
@@ -421,8 +421,8 @@ ICA.addUnit({
       ["Theses and reports held in university repositories","BASE","BASE, run by Bielefeld University Library, searches what repositories hold."]
     ]},
     {id:"t4u2-l3-x2", type:"mcq", q:"Amara types `(stress OR anxiety) AND nurses` into Semantic Scholar and the results look odd. What’s the most likely reason?", options:[
-      {t:"Semantic Scholar doesn’t support Boolean operators, so it doesn’t treat AND, OR and the brackets as instructions", ok:true, why:"Its FAQ says Boolean operators and wildcards aren’t supported (quoted phrases are). Run short keyword searches there instead."},
-      {t:"The operators must be in lowercase in Semantic Scholar", why:"Case isn’t the issue; Semantic Scholar doesn’t support Boolean operators at all."},
+      {t:"Semantic Scholar doesn’t treat AND, OR and brackets as instructions", ok:true, why:"Its FAQ says Boolean operators and wildcards aren’t supported (quoted phrases are). Run short keyword searches there instead."},
+      {t:"The operators must be typed in lowercase letters for Semantic Scholar to use them", why:"Case isn’t the issue; Semantic Scholar doesn’t support Boolean operators at all."},
       {t:"Semantic Scholar only covers computer science", why:"It covers all fields of science, though mostly English-language work."},
       {t:"There is no research on stress in nurses", why:"There’s plenty. The search syntax, not the topic, is the problem."}
     ]},
@@ -435,8 +435,8 @@ ICA.addUnit({
       {t:"Groups copies of a paper from different sites as “All versions”", b:1, why:"Gathering versions from across the web is a Google Scholar feature."}
     ]},
     {id:"t4u2-l3-x4", type:"mcq", q:"Fatima’s keyword search in a health database misses several papers she knows are relevant, because their authors used unusual terms. What’s the best fix?", options:[
-      {t:"Find the subject heading indexers use for her concept and search it, combined with her keywords using OR", ok:true, why:"Headings gather papers whatever words authors used, and keywords still catch records that haven’t been indexed. Together they raise recall."},
-      {t:"Replace all her keywords with the subject heading", why:"Headings alone miss the newest records and any that are never indexed. Combine them with keywords."},
+      {t:"Search the subject heading for her concept, combined with her keywords using OR", ok:true, why:"Headings gather papers whatever words authors used, and keywords still catch records that haven’t been indexed. Together they raise recall."},
+      {t:"Replace all her keywords with the subject heading, so only indexed papers are found", why:"Headings alone miss the newest records and any that are never indexed. Combine them with keywords."},
       {t:"Switch to Google Scholar only", why:"Google Scholar has no subject headings, so it doesn’t solve the vocabulary problem, and it has its own coverage gaps."},
       {t:"Add NOT for the unusual terms", why:"NOT removes records, which is the opposite of what she needs."}
     ]},
@@ -454,9 +454,9 @@ ICA.addUnit({
       {t:"MeSH can’t be searched; it’s only for display", why:"MeSH headings can be searched directly, for example with the [mh] tag."}
     ]},
     {id:"t4u2-l3-x7", type:"mcq", q:"Oluwaseun has no university access and wants a free tool to explore research across all fields, including work from many countries and languages. What’s a fair summary of OpenAlex for this?", options:[
-      {t:"Free and broad, but its records are often less complete than curated subscription databases, so he should check details and judge quality himself", ok:true, why:"That matches how librarians describe it: inclusive and free, with gaps such as missing abstracts."},
+      {t:"Free and broad, but records are often less complete, so he should check details", ok:true, why:"That matches how librarians describe it: inclusive and free, with gaps such as missing abstracts. Curated subscription databases are often more complete, and he still has to judge quality himself."},
       {t:"A paid database he can only use through a university", why:"OpenAlex is free to use."},
-      {t:"Complete and fully checked, so he never needs another tool", why:"No tool is complete; OpenAlex’s records can be patchy, and quality judgements are up to the user."},
+      {t:"Complete and fully checked by expert indexers, so he never needs to use another tool", why:"No tool is complete; OpenAlex’s records can be patchy, and quality judgements are up to the user."},
       {t:"Only useful for computer science", why:"OpenAlex covers all fields."}
     ]}
    ],
@@ -563,15 +563,15 @@ ICA.addUnit({
       {t:"Checking which sources a review article used", b:0, why:"The review’s sources are in its reference list: backward."}
     ]},
     {id:"t4u2-l4-x2", type:"mcq", q:"Mei sees a paper with 412 citations in Google Scholar and 268 in another database. What’s the most likely explanation?", options:[
-      {t:"Each tool counts only citations from the documents it covers, and Google Scholar covers more kinds of documents", ok:true, why:"Google Scholar also counts theses, preprints and other web documents, so its counts are often higher."},
-      {t:"One of the tools has made an error and should be ignored", why:"Different counts are normal; both can be accurate for what each tool covers."},
+      {t:"Each tool counts citations only from the documents it covers", ok:true, why:"Google Scholar also counts theses, preprints and other web documents, so its counts are often higher."},
+      {t:"One of the tools has made a counting error, so its number should be ignored", why:"Different counts are normal; both can be accurate for what each tool covers."},
       {t:"The paper lost citations after a retraction", why:"Citations don’t disappear when a paper is retracted, and a retraction wouldn’t explain a gap between two tools."},
       {t:"Citation counts are random", why:"They follow from each tool’s coverage, which is why they differ in predictable ways."}
     ]},
     {id:"t4u2-l4-x3", type:"mcq", q:"Paper A (published 1998) has 900 citations. Paper B (published last year) has 12. Both study the same question. What can Sione conclude?", options:[
-      {t:"Not much about quality: A has had far longer to collect citations, and counts reflect attention, not soundness", ok:true, why:"Age, field size, criticism and visibility all affect counts. He needs to read both and judge their methods."},
-      {t:"Paper A is more reliable", why:"High counts can include criticism, and older papers simply had more time. Counts aren’t quality scores."},
-      {t:"Paper B is probably wrong", why:"A new paper’s low count says nothing about whether it’s right."},
+      {t:"Not much about quality: A has simply had far longer to collect citations", ok:true, why:"Counts reflect attention, not soundness. Age, field size, criticism and visibility all affect counts. He needs to read both and judge their methods."},
+      {t:"Paper A is more reliable, because far more researchers have cited it", why:"High counts can include criticism, and older papers simply had more time. Counts aren’t quality scores."},
+      {t:"Paper B is probably wrong, because so few researchers have chosen to cite it", why:"A new paper’s low count says nothing about whether it’s right."},
       {t:"He should only read Paper A", why:"Newer work may update or overturn older findings. Read both."}
     ]},
     {id:"t4u2-l4-x4", type:"order", q:"Put a round of citation chasing in a sensible order.", items:[
@@ -731,8 +731,8 @@ ICA.addUnit({
       {t:"The extension is broken", why:"Grey is a normal result meaning no free copy was found."}
     ]},
     {id:"t4u2-l5-x5", type:"mcq", q:"Hana found a free accepted manuscript of a paper. She wants to quote one sentence with a page number. What’s the best approach?", options:[
-      {t:"Use the version of record for the page number if she can reach it; otherwise quote from the manuscript and say that’s the version she used", ok:true, why:"The accepted manuscript has the peer-reviewed text but not the journal’s page numbers. Being clear about the version keeps the citation honest."},
-      {t:"Use the page number from the manuscript as if it were the journal’s", why:"The manuscript’s pages don’t match the published version, so a reader couldn’t find the quote."},
+      {t:"Use the version of record’s page number if possible; if not, say she used the manuscript", ok:true, why:"The accepted manuscript has the peer-reviewed text but not the journal’s page numbers. Being clear about the version keeps the citation honest."},
+      {t:"Use the manuscript’s page number and present it as if it were the journal’s page number", why:"The manuscript’s pages don’t match the published version, so a reader couldn’t find the quote."},
       {t:"Don’t use the manuscript at all, because it isn’t peer reviewed", why:"An accepted manuscript has been through peer review; it’s the preprint that hasn’t."},
       {t:"Quote it without any page number or citation", why:"Quotations always need a citation, and usually a page or location (Unit 4)."}
     ]},
@@ -750,7 +750,7 @@ ICA.addUnit({
       {t:"Thank you for your work on this topic.", flag:false, why:"A courteous close."}
     ]},
     {id:"t4u2-l5-x7", type:"mcq", q:"Fatima needs a 1990s book chapter. Her public library doesn’t hold the book, and no free copy exists. What’s the best next step?", options:[
-      {t:"Ask her public library for an interlibrary loan, using WorldCat to show which libraries hold the book", ok:true, why:"ILL is designed for this, and many public libraries offer it, sometimes for a small fee."},
+      {t:"Ask her public library for an interlibrary loan", ok:true, why:"WorldCat can show which libraries hold the book. ILL is designed for this, and many public libraries offer it, sometimes for a small fee."},
       {t:"Give up: if her library doesn’t have it, she can’t get it", why:"Interlibrary loan exists exactly for items a library doesn’t hold."},
       {t:"Download it from a shadow library", why:"That infringes copyright; ILL is a legal route."},
       {t:"Cite it anyway based on its title", why:"Citing what you haven’t read misrepresents your research."}
@@ -767,6 +767,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t4u2-q02","t4u2-q05","t4u2-q10","t4u2-q12","t4u2-q14","t4u2-q19","t4u2-q21","t4u2-q26","t4u2-q28","t4u2-q31","t4u2-q35","t4u2-q38"],
+  cpBank:[
+   {id:"t4u2-cp01", lesson:"t4u2-l1", level:1, q:"One column of Kaveh’s concept table holds: **elderly, older adults, seniors, aged**. How should these words be joined in his search string?", options:[
+     {t:"With AND, so every result is clearly about older people", why:"AND would demand all four words in every record, which narrows sharply. Words for the same concept are alternatives."},
+     {t:"With NOT, to keep the results tidy", why:"NOT removes records that mention a word. It would throw out exactly the papers he wants."},
+     {t:"As one phrase in quotation marks", why:"A phrase requires the words side by side in that order, which no paper would contain. Quote only short fixed terms like `\"older adults\"`."},
+     {t:"With OR inside brackets, because any one of them will do", ok:true, why:"Words in one column are synonyms: OR within a column, AND between columns. Brackets keep the group together."}]},
+   {id:"t4u2-cp02", lesson:"t4u2-l2", level:1, q:"Ravi wants records where *food* and *insecurity* appear next to each other, in that order. Which search does that?", options:[
+     {t:"`food AND insecurity`", why:"AND finds both words anywhere in the record, not necessarily together."},
+     {t:"`\"food insecurity\"`", ok:true, why:"Quotation marks make a phrase search: the words must appear together, in that order. It raises precision."},
+     {t:"`food OR insecurity`", why:"OR finds records with either word, which broadens the search a lot."},
+     {t:"`food* insecurit*`", why:"Truncation finds different word endings. It doesn’t make the words appear together, and some tools don’t support it."}]},
+   {id:"t4u2-cp03", lesson:"t4u2-l3", level:1, q:"Nikhil’s library catalogue shows that the library subscribes to the journal *Ecology Letters*. But when he types the title of one article from that journal, the catalogue finds nothing. What is the most likely reason?", options:[
+     {t:"The article must have been retracted from the journal", why:"Nothing suggests a retraction. The search failed because of what the catalogue lists, not because of the article."},
+     {t:"The library doesn’t really have the journal", why:"The catalogue says it does. The problem is that the catalogue describes the journal, not each article inside it."},
+     {t:"Catalogues list journals, not the articles inside them", ok:true, why:"A catalogue lists what a library owns or licenses at the level of titles. Discovery search and databases cover individual articles."},
+     {t:"He needs to add truncation to the words of the article title", why:"Truncation helps match word endings. It can’t find records that the tool doesn’t hold."}]},
+   {id:"t4u2-cp04", lesson:"t4u2-l1", level:2, q:"Zainab’s search returns **120** results, and **48** of them are relevant. Later she learns the database holds **64** relevant papers on her question. What are her search’s precision and recall?", options:[
+     {t:"Precision 75%, recall 40%", why:"These are swapped. Precision is relevant results ÷ all results (48 ÷ 120); recall is relevant results ÷ all relevant items (48 ÷ 64)."},
+     {t:"Precision 53%, recall 75%", why:"53% is 64 ÷ 120, which compares the total relevant in the database with her results. Precision uses only the relevant results she actually got: 48 ÷ 120."},
+     {t:"Precision 40%, recall 53%", why:"Recall divides by all relevant items in the database: 48 ÷ 64 = 75%, not 64 ÷ 120."},
+     {t:"Precision 40%, recall 75%", ok:true, why:"Precision = 48 ÷ 120 = 40% (how clean the results are). Recall = 48 ÷ 64 = 75% (how complete they are)."}]},
+   {id:"t4u2-cp05", lesson:"t4u2-l2", level:2, q:"Tunde searches PubMed for `\"night shift nurses\"`. This phrase is not in PubMed’s phrase index. According to PubMed’s help, what happens?", options:[
+     {t:"PubMed returns no results at all", why:"PubMed doesn’t simply fail. It falls back to searching the words separately."},
+     {t:"The quotes are dropped and the words searched separately", ok:true, why:"PubMed checks quoted phrases against its phrase index. If the phrase isn’t there, the quotes are dropped. Search Details shows how a search was translated."},
+     {t:"PubMed adds the phrase to its index and searches it exactly", why:"Searching doesn’t change PubMed’s phrase index. Phrases not in the index are searched as separate words."},
+     {t:"PubMed searches the phrase in titles only", why:"Quotation marks don’t limit a search to titles. Field tags such as `[ti]` do that."}]},
+   {id:"t4u2-cp06", lesson:"t4u2-l2", level:2, q:"Mariam wants *economy*, *economic*, *economics* and *economies* in a tool that supports `*` truncation. Which stem is the best choice?", options:[
+     {t:"`eco*`", why:"Too short: it also finds ecology, ecosystem and many more, so precision falls. In PubMed it would also break the four-letter rule."},
+     {t:"`economic*`", why:"This misses *economy* and *economies*, because those words don’t start with “economic”."},
+     {t:"`econom*`", ok:true, why:"This stem covers all four forms with little noise. Choose the shortest stem that every form shares, but no shorter."},
+     {t:"`economy*`", why:"This misses *economic*, *economics* and *economies*, which don’t begin with “economy”."}]},
+   {id:"t4u2-cp07", lesson:"t4u2-l3", level:3, q:"Ibrahim searched only Google Scholar for his thesis literature review. His supervisor asks, “Which sources does it cover, and what might you have missed?” What is the main problem?", options:[
+     {t:"Its coverage isn’t published, so he should add a subject database", ok:true, why:"Scholar is an excellent first stop and a poor only stop. A thesis review leans towards recall, so a second, field-specific tool is needed, with every search logged."},
+     {t:"Google Scholar contains only preprints, which aren’t peer-reviewed", why:"Scholar includes journal articles, books, theses and preprints. The problem is that its coverage is unknown and unlabelled, not that it lacks articles."},
+     {t:"There is no problem: Google Scholar covers everything other tools do", why:"This is a common misconception. Scholar is broad, but it misses things that subject databases index carefully."},
+     {t:"He used too few search words; a longer string in Scholar would fix it", why:"Scholar’s syntax is limited and adding words usually narrows results. The issue is relying on one tool, not string length."}]},
+   {id:"t4u2-cp08", lesson:"t4u2-l4", level:2, q:"Tamsin is chasing the references of a seed paper on youth unemployment. All 40 references are English-language studies from North America. What should she do?", options:[
+     {t:"Nothing: if the authors didn’t cite other studies, none exist", why:"Authors cite selectively, often favouring their own language and well-known work. Missing regions don’t mean missing research."},
+     {t:"Search deliberately for studies from other regions and languages", ok:true, why:"Noticing what’s missing is part of backward chasing. Its limits (selective citing, one language) are reasons to search beyond the list."},
+     {t:"Drop the seed paper, because its reference list is biased", why:"The paper can still be a good seed. Use its references, and fill the gaps with other searches."},
+     {t:"Only use forward chasing from now on, because backward chasing is unreliable", why:"Both directions are useful. Forward chasing finds newer work but won’t fix a gap in region or language by itself."}]},
+   {id:"t4u2-cp09", lesson:"t4u2-l4", level:3, q:"Ama finished her literature search in March, at the point where new searches kept returning papers she already had. She kept a search log. She will submit her thesis in October. What should she do before writing up?", options:[
+     {t:"Nothing more: reaching saturation in March means the search is finished", why:"Stopping isn’t the same as finishing. New work appears all the time, and key papers can be corrected or retracted."},
+     {t:"Start a completely new search with different words, because the old one is out of date", why:"There’s no need to start again. The log lets her rerun the same searches and see only what has changed."},
+     {t:"Check only the first page of Google Scholar for anything new", why:"Ranking isn’t a quality judgement, and one tool on one page is far less than her original search."},
+     {t:"Rerun the logged searches and check key papers for retractions", ok:true, why:"A log with exact strings makes rerunning easy. Rechecking before writing up catches new studies and changes in a paper’s status."}]},
+   {id:"t4u2-cp10", lesson:"t4u2-l5", level:2, q:"Kofi finds a free copy of a paywalled article in two places: on an academic networking site and in the author’s university repository. Which should he prefer, and why?", options:[
+     {t:"The networking site, because more researchers use and share it", why:"Popularity doesn’t make a copy permitted. Uploads to commercial networking sites aren’t always allowed by the publisher."},
+     {t:"Either one, because any free copy found online is legal to read", why:"Free doesn’t automatically mean legal. Some uploads break publisher agreements."},
+     {t:"The repository, as networking-site uploads aren’t always allowed", ok:true, why:"Institutional repositories hold copies authors are allowed to deposit (green OA), so a repository copy is the safer choice when there is one."},
+     {t:"Neither; he should buy the article from the publisher to be safe", why:"Paying isn’t required when a legal free copy exists. The repository copy is a legal route."}]},
+   {id:"t4u2-cp11", lesson:"t4u2-l5", level:3, q:"Thandiwe is a nurse with a public library card but no university access. She needs health research for a workplace project. Which plan is strongest?", options:[
+     {t:"Search Google Scholar only, and use a shadow library for anything behind a paywall", why:"One tool misses a lot, and shadow libraries infringe copyright. There are legal routes that often work."},
+     {t:"PubMed’s Free full text filter, then library databases, interlibrary loan and authors", ok:true, why:"PubMed is free, carefully indexed for health, and its filter finds free copies. Then her library’s databases, interlibrary loan and author requests follow the legal routes in order."},
+     {t:"Buy every paywalled article she finds, since public libraries can’t help with research", why:"Many public libraries give cardholders databases and interlibrary loan. Free copies often exist too."},
+     {t:"Read only abstracts, and cite the papers as if she had read them in full", why:"Citing a paper as if read in full when you’ve seen only the abstract isn’t honest, and legal full-text routes are available."}]},
+   {id:"t4u2-cp12", lesson:"t4u2-l5", level:3, q:"Yuki has tried every legal route for a key paper: no free copy, no library access, interlibrary loan failed and the author hasn’t replied. She can read only the abstract. What is the honest way forward?", options:[
+     {t:"Cite the paper as usual, adding details she guesses from the abstract", why:"Guessing details and citing as if read misrepresents her reading. Abstracts leave out much of the method and the limits."},
+     {t:"Use a shadow library just this once, since every legal route has failed", why:"Failing to find a legal copy doesn’t make copyright infringement acceptable."},
+     {t:"Drop the whole topic, because she can’t read every paper on it", why:"That overreacts. She can still use what she can read and be open about it."},
+     {t:"Work from the abstract and citing papers, and say so openly", ok:true, why:"When full text is out of reach, use the abstract and citing papers carefully, and never present the paper as if you had read it in full."}]},
+  ],
   codex:[
    {id:"search-strategy", title:"Planning a research search", aka:["search strategy","concept table","keyword grid","search log","precision and recall"], tags:["research","search"],
     summary:"Turning a topic into a question, concepts and search terms; balancing precision and recall; and logging searches so they can be repeated.",
@@ -1163,9 +1225,9 @@ ICA.addUnit({
    /* Lesson 1 */
    {id:"t4u2-q01", lesson:"t4u2-l1", level:1, q:"What is a “concept” when planning a research search?", options:[
      {t:"One of the two to four main ideas every relevant paper must involve", ok:true, why:"Concepts come from the question, such as phone use, sleep and teenagers."},
-     {t:"Any word that appears in your question", why:"Question words, linking words and relationship words usually stay out of the search."},
+     {t:"Any word that appears in your research question, including linking words", why:"Question words, linking words and relationship words usually stay out of the search."},
      {t:"The name of the database you search", why:"The tool is where you search, not what you search for."},
-     {t:"A filter such as year or language", why:"Years and languages are better handled as filters, separate from concepts."}
+     {t:"A filter such as the year of publication or the language of the paper", why:"Years and languages are better handled as filters, separate from concepts."}
    ]},
    {id:"t4u2-q02", lesson:"t4u2-l1", level:2, q:"Ana’s question is “Do school breakfast programmes improve attendance in primary schools?” Which set of concepts is best to search?", options:[
      {t:"school breakfast programmes; attendance; primary schools", ok:true, why:"These are the main ideas. “Do” and “improve” stay out: studies finding no effect may never say “improve”."},
@@ -1186,8 +1248,8 @@ ICA.addUnit({
      {t:"500%", why:"That’s 300 ÷ 60 × 100, the division the wrong way round."}
    ]},
    {id:"t4u2-q05", lesson:"t4u2-l1", level:3, q:"Dmitri is starting a systematic review, where missing an eligible study is a serious flaw. Which should his search favour?", options:[
-     {t:"Recall, accepting that he’ll have many irrelevant results to screen", ok:true, why:"Systematic reviews aim to find every eligible study, so completeness matters more than a clean result list."},
-     {t:"Precision, so he only has a few results to read", why:"A highly precise search risks missing eligible studies, which undermines a systematic review."},
+     {t:"Recall, accepting many irrelevant results to screen", ok:true, why:"Systematic reviews aim to find every eligible study, so completeness matters more than a clean result list."},
+     {t:"Precision, so that he only has a small number of relevant results to read", why:"A highly precise search risks missing eligible studies, which undermines a systematic review."},
      {t:"Neither: one quick search is enough", why:"Systematic reviews need thorough, documented searches across several sources."},
      {t:"Whatever gives the fewest results", why:"Few results usually means low recall, the opposite of what he needs."}
    ]},
@@ -1204,9 +1266,9 @@ ICA.addUnit({
      {t:"It isn’t useful; titles of good papers are enough", why:"Titles show what you found, not how, so you can’t repeat or explain the search."}
    ]},
    {id:"t4u2-q08", lesson:"t4u2-l1", level:3, q:"Sione’s search finds 400 results, but two papers he knows are central to his topic aren’t among them. What should he do first?", options:[
-     {t:"Look at how those two papers describe his concepts and add their words to his search", ok:true, why:"Missing known items reveal missing vocabulary; adding their terms raises recall."},
+     {t:"Add the words those two papers use for his concepts to his search", ok:true, why:"Missing known items reveal missing vocabulary; adding their terms raises recall."},
      {t:"Ignore it, since 400 results is plenty", why:"A large number doesn’t mean good recall; missing key papers shows the search has gaps."},
-     {t:"Add NOT for words in his irrelevant results", why:"NOT removes records; it won’t bring the missing papers in."},
+     {t:"Add NOT for words in his irrelevant results so the two papers rise to the top", why:"NOT removes records; it won’t bring the missing papers in."},
      {t:"Search only in titles", why:"That narrows the search further, making it even less likely to find them."}
    ]},
    /* Lesson 2 */
@@ -1223,16 +1285,16 @@ ICA.addUnit({
      {t:"`(nurses AND midwives) OR burnout`", why:"This accepts every record about burnout in any group."}
    ]},
    {id:"t4u2-q11", lesson:"t4u2-l2", level:1, q:"What does `educat*` find in a tool that supports truncation?", options:[
-     {t:"Words starting with “educat”, such as education, educational and educator", ok:true, why:"The asterisk stands for any ending."},
-     {t:"Only the exact word “educat”", why:"The asterisk is the instruction to include all endings."},
+     {t:"Words starting with “educat”, such as education and educator", ok:true, why:"The asterisk stands for any ending, so it also finds educational."},
+     {t:"Only the exact word “educat”, because the asterisk is ignored", why:"The asterisk is the instruction to include all endings."},
      {t:"Records that don’t mention education", why:"That would be a NOT search."},
      {t:"Words that end in “educat”", why:"Truncation varies the end of the word, not the beginning."}
    ]},
    {id:"t4u2-q12", lesson:"t4u2-l2", level:3, q:"Kenji pastes `(climat* OR \"global warming\") AND farm*` into Semantic Scholar and Google Scholar. What should he expect?", options:[
-     {t:"Neither tool supports truncation, and Semantic Scholar ignores Boolean operators, so he should run short keyword searches with a quoted phrase instead", ok:true, why:"Both support quoted phrases, but not the asterisk, and Semantic Scholar doesn’t support Boolean operators at all."},
+     {t:"Neither tool will run it as written; use short keyword searches with a quoted phrase", ok:true, why:"Both support quoted phrases, but not the asterisk, and Semantic Scholar doesn’t support Boolean operators at all."},
      {t:"Both tools will run it exactly as written", why:"Neither supports truncation, and Semantic Scholar doesn’t support Boolean operators."},
      {t:"Only the quotation marks will be ignored", why:"Quoted phrases are one of the few things both tools do support."},
-     {t:"Both tools will report a syntax error and refuse to search", why:"They usually run the search anyway, which is why unsupported syntax can quietly give odd results."}
+     {t:"Both tools will report a syntax error and refuse to run the search until he removes the brackets", why:"They usually run the search anyway, which is why unsupported syntax can quietly give odd results."}
    ]},
    {id:"t4u2-q13", lesson:"t4u2-l2", level:2, q:"PubMed processes searches left to right. What does `diabetes AND diet OR exercise` find there?", options:[
      {t:"Records on diabetes and diet, plus every record about exercise", ok:true, why:"Left to right it becomes `(diabetes AND diet) OR exercise`. Use `diabetes AND (diet OR exercise)` for the likely meaning."},
@@ -1241,9 +1303,9 @@ ICA.addUnit({
      {t:"Nothing, because AND and OR can’t be mixed", why:"Mixing operators is allowed; brackets control the grouping."}
    ]},
    {id:"t4u2-q14", lesson:"t4u2-l2", level:3, q:"Lucía searches `depression NOT anxiety` to focus on depression. Why might this be a poor choice?", options:[
-     {t:"It removes every study that mentions anxiety, including many depression studies that also measured anxiety", ok:true, why:"Depression and anxiety are often studied together; NOT throws all of those away."},
+     {t:"It also throws away depression studies that measured anxiety", ok:true, why:"Depression and anxiety are often studied together; NOT throws all of those away."},
      {t:"NOT only works in Google, not in databases", why:"Most databases support NOT; the issue is what it removes."},
-     {t:"It will find more results than `depression` alone", why:"NOT can only remove records."},
+     {t:"It will find more results than searching for `depression` on its own", why:"NOT can only remove records."},
      {t:"There’s nothing wrong with it", why:"NOT is blunt; it often discards relevant work."}
    ]},
    {id:"t4u2-q15", lesson:"t4u2-l2", level:2, q:"Why does `sl*` fail as a truncation in PubMed?", options:[
@@ -1253,17 +1315,17 @@ ICA.addUnit({
      {t:"Truncation only works inside quotation marks", why:"Quotes are optional; PubMed truncates unquoted words too."}
    ]},
    {id:"t4u2-q16", lesson:"t4u2-l2", level:1, q:"Which is a field search?", options:[
-     {t:"`sleep[ti]` in PubMed, which looks for sleep in titles only", ok:true, why:"Field tags limit words to one part of the record, here the title."},
-     {t:"`sleep OR insomnia`", why:"That combines terms; it doesn’t restrict where they appear."},
-     {t:"`\"sleep quality\"`", why:"That’s a phrase search."},
-     {t:"`sleep*`", why:"That’s truncation."}
+     {t:"`sleep[ti]` in PubMed", ok:true, why:"It looks for sleep in titles only. Field tags limit words to one part of the record, here the title."},
+     {t:"`sleep OR insomnia` in PubMed", why:"That combines terms; it doesn’t restrict where they appear."},
+     {t:"`\"sleep quality\"` in PubMed", why:"That’s a phrase search."},
+     {t:"`sleep*` in PubMed", why:"That’s truncation."}
    ]},
    /* Lesson 3 */
    {id:"t4u2-q17", lesson:"t4u2-l3", level:1, q:"What does a library catalogue usually list?", options:[
-     {t:"What the library owns or licenses, such as books, e-books, journal titles and theses", ok:true, why:"Catalogues describe the library’s holdings; they usually list journals by title, not each article."},
-     {t:"Every article ever published", why:"No catalogue does that; article indexes and databases cover articles."},
+     {t:"What the library owns or licenses, such as books and journal titles", ok:true, why:"Catalogues describe the library’s holdings; they usually list journals by title, not each article."},
+     {t:"Every journal article ever published, searchable one by one", why:"No catalogue does that; article indexes and databases cover articles."},
      {t:"Only the books currently on loan", why:"It lists the whole collection, with availability."},
-     {t:"Websites the librarians recommend", why:"Some libraries keep such guides, but that isn’t the catalogue."}
+     {t:"Websites and online articles that the librarians recommend to readers", why:"Some libraries keep such guides, but that isn’t the catalogue."}
    ]},
    {id:"t4u2-q18", lesson:"t4u2-l3", level:2, q:"Fatima wants to know which libraries near her hold a specific out-of-print book. Which free tool fits best?", options:[
      {t:"WorldCat", ok:true, why:"WorldCat combines library catalogues worldwide and lists holding libraries by distance."},
@@ -1278,22 +1340,22 @@ ICA.addUnit({
      {t:"They replace the need for keywords entirely", why:"New and unindexed records lack headings, so combine headings with keywords."}
    ]},
    {id:"t4u2-q20", lesson:"t4u2-l3", level:1, q:"What happened to Microsoft Academic?", options:[
-     {t:"Microsoft stopped it at the end of 2021; the free index OpenAlex launched in January 2022 as a successor", ok:true, why:"The Microsoft Academic Graph stopped updating on 31 December 2021, and the nonprofit OurResearch built OpenAlex to replace it."},
-     {t:"It merged into Google Scholar", why:"Google Scholar is a separate service; Microsoft Academic was retired."},
+     {t:"It stopped at the end of 2021; OpenAlex launched in 2022 as a free successor", ok:true, why:"The Microsoft Academic Graph stopped updating on 31 December 2021, and the nonprofit OurResearch built OpenAlex to replace it."},
+     {t:"It merged into Google Scholar at the end of 2021, which now hosts all of its records", why:"Google Scholar is a separate service; Microsoft Academic was retired."},
      {t:"It’s still the main free index", why:"It no longer exists."},
      {t:"It became PubMed", why:"PubMed is run by the US National Library of Medicine and long predates it."}
    ]},
    {id:"t4u2-q21", lesson:"t4u2-l3", level:3, q:"Priya, a teacher, wants peer-reviewed education research and has no university access. Which plan is strongest?", options:[
-     {t:"Search ERIC with its Peer reviewed only filter and Thesaurus descriptors, plus Google Scholar or OpenAlex, logging both", ok:true, why:"ERIC is free and built for education, with a peer-review filter; a broad tool adds coverage."},
-     {t:"Search Google Scholar only, because it has everything", why:"Scholar doesn’t publish its coverage and lacks subject headings and a peer-review filter."},
+     {t:"Search ERIC with its Peer reviewed only filter, plus Google Scholar or OpenAlex", ok:true, why:"ERIC is free and built for education, with a peer-review filter; a broad tool adds coverage. Use its Thesaurus descriptors too, and log both searches."},
+     {t:"Search Google Scholar only, because it already includes everything that ERIC and other databases have", why:"Scholar doesn’t publish its coverage and lacks subject headings and a peer-review filter."},
      {t:"Use PubMed, because it’s the biggest free database", why:"PubMed covers biomedicine; ERIC fits education."},
      {t:"Search DOAJ only", why:"DOAJ covers only open access journals, a small part of education research."}
    ]},
    {id:"t4u2-q22", lesson:"t4u2-l3", level:2, q:"Which statement about Google Scholar is accurate?", options:[
-     {t:"Its results mix peer-reviewed articles with theses, preprints and other material, without labelling which is which", ok:true, why:"That’s why each result needs judging; it’s part of Scholar’s breadth."},
+     {t:"It mixes peer-reviewed articles with theses and preprints, without labelling them", ok:true, why:"That’s why each result needs judging; it’s part of Scholar’s breadth."},
      {t:"It only includes peer-reviewed journal articles", why:"It covers many document types."},
      {t:"It supports truncation with an asterisk", why:"It has no truncation; it matches some word forms automatically."},
-     {t:"It publishes a full list of the journals it covers", why:"It doesn’t, so you can’t tell exactly what’s missing."}
+     {t:"It publishes a full, regularly updated list of all the journals and sources it covers", why:"It doesn’t, so you can’t tell exactly what’s missing."}
    ]},
    {id:"t4u2-q23", lesson:"t4u2-l3", level:3, q:"Oluwaseun’s PubMed search uses only the MeSH heading for his topic. A colleague mentions a relevant paper from last month that his search missed. What’s the likely reason and fix?", options:[
      {t:"New records may not have MeSH headings yet; add keywords with OR alongside the heading", ok:true, why:"Indexing lags behind publication, and keywords catch unindexed records."},
@@ -1302,10 +1364,10 @@ ICA.addUnit({
      {t:"He needs a paid subscription to see recent records", why:"PubMed is free."}
    ]},
    {id:"t4u2-q24", lesson:"t4u2-l3", level:1, q:"What is discovery search?", options:[
-     {t:"A library’s single search box covering its catalogue plus articles from its licensed databases", ok:true, why:"It searches many of the library’s resources at once."},
+     {t:"A library’s single search box across its catalogue and licensed databases", ok:true, why:"It searches many of the library’s resources at once."},
      {t:"A search engine that finds new species", why:"That’s a joke reading of the name; it’s a library search tool."},
      {t:"Any Google search", why:"Discovery search is a library service."},
-     {t:"An AI that writes literature reviews", why:"Discovery systems search and link; they don’t write reviews."}
+     {t:"An AI tool that searches every database at once and writes the literature review for you", why:"Discovery systems search and link; they don’t write reviews."}
    ]},
    /* Lesson 4 */
    {id:"t4u2-q25", lesson:"t4u2-l4", level:1, q:"What is forward citation chasing?", options:[
@@ -1321,14 +1383,14 @@ ICA.addUnit({
      {t:"The journal’s homepage", why:"A homepage won’t show later work from other journals."}
    ]},
    {id:"t4u2-q27", lesson:"t4u2-l4", level:1, q:"Which part of a seed paper is the best place to start backward chasing?", options:[
-     {t:"The introduction or literature review, where authors explain which earlier work matters", ok:true, why:"It shows which references are central rather than passing mentions."},
-     {t:"The acknowledgements", why:"Acknowledgements thank people and funders; they don’t discuss earlier research."},
+     {t:"The introduction or literature review", ok:true, why:"That’s where authors explain which earlier work matters. It shows which references are central rather than passing mentions."},
+     {t:"The acknowledgements and funding statement", why:"Acknowledgements thank people and funders; they don’t discuss earlier research."},
      {t:"The author biographies", why:"Biographies describe the authors, not the research they built on."},
      {t:"The figures", why:"Figures show results, not the earlier work."}
    ]},
    {id:"t4u2-q28", lesson:"t4u2-l4", level:3, q:"A paper shows 512 citations in Google Scholar and 301 in Scopus. Ana concludes one tool must be wrong. What should you tell her?", options:[
-     {t:"Both can be right: each counts citations only from the documents it covers, and Google Scholar covers more document types", ok:true, why:"Different coverage, not error, explains most of the gap."},
-     {t:"Google Scholar is always right", why:"It isn’t always right, but the difference here is mainly about coverage."},
+     {t:"Both can be right: each counts only citations from the documents it covers", ok:true, why:"Different coverage, not error, explains most of the gap. Google Scholar covers more document types."},
+     {t:"Google Scholar is right, because Scopus misses citations from its own journals", why:"Scopus isn’t making an error: it counts citations only from the documents it covers. The gap comes mainly from different coverage."},
      {t:"Scopus is always right", why:"Its count reflects its own coverage; neither is “the” true count."},
      {t:"The paper must have been retracted", why:"Retraction doesn’t remove citations or explain a gap between tools."}
    ]},
@@ -1336,7 +1398,7 @@ ICA.addUnit({
      {t:"A citation its model judges to have significantly shaped the citing paper", ok:true, why:"A machine-learning model flags these; its FAQ notes it depends on full-text access."},
      {t:"A citation from a famous researcher", why:"It’s about the role of the citation in the paper, not the citer’s fame."},
      {t:"Any citation in a top journal", why:"The journal doesn’t decide it."},
-     {t:"A citation that has been peer reviewed twice", why:"Citations aren’t peer reviewed separately."}
+     {t:"A citation that appears in a paper which has passed peer review at least twice", why:"Citations aren’t peer reviewed separately."}
    ]},
    {id:"t4u2-q30", lesson:"t4u2-l4", level:2, q:"What does PubMed need before it will email you alerts for a saved search?", options:[
      {t:"A free My NCBI account", ok:true, why:"PubMed’s help says you must sign in to My NCBI to use email alerts."},
@@ -1345,21 +1407,21 @@ ICA.addUnit({
      {t:"A reference manager", why:"Not needed for alerts."}
    ]},
    {id:"t4u2-q31", lesson:"t4u2-l4", level:3, q:"Tomás has done four rounds of citation chasing and several database searches. Almost every new result is a paper he already has. What does that suggest?", options:[
-     {t:"He’s probably near saturation for a normal project, so he can stop searching widely, keep alerts on and log what he did", ok:true, why:"Repeated results are a sign he has covered the field; alerts keep it up to date."},
+     {t:"He’s probably near saturation, so he can stop searching widely and keep alerts on", ok:true, why:"Repeated results are a sign he has covered the field; alerts keep it up to date. He should also log what he did."},
      {t:"His searches are broken", why:"Repeats are expected once coverage is good."},
      {t:"He should switch topics", why:"Nothing suggests the topic is wrong."},
-     {t:"He must keep going until there are zero new results anywhere", why:"That point may never come; for most projects, saturation plus alerts is enough."}
+     {t:"He must keep searching until no tool he can find shows any new results at all", why:"That point may never come; for most projects, saturation plus alerts is enough."}
    ]},
    {id:"t4u2-q32", lesson:"t4u2-l4", level:1, q:"Which is a reason a high citation count doesn’t prove a paper is good?", options:[
-     {t:"Papers are also cited to criticise them, and older papers have had longer to collect citations", ok:true, why:"Counts reflect attention and age, not soundness."},
-     {t:"Citation counts are invented by publishers", why:"They’re counted from reference lists, but they measure attention, not quality."},
+     {t:"Papers are also cited to criticise them, and older papers have had more time to be cited", ok:true, why:"Counts reflect attention and age, not soundness."},
+     {t:"Citation counts are invented by publishers, who raise them to help sell journal subscriptions", why:"They’re counted from reference lists, but they measure attention, not quality."},
      {t:"Only bad papers get cited", why:"Good and bad papers are both cited."},
      {t:"Counts are always identical across tools", why:"They differ by tool, and that isn’t the reason they can’t prove quality."}
    ]},
    /* Lesson 5 */
    {id:"t4u2-q33", lesson:"t4u2-l5", level:1, q:"What is an accepted manuscript?", options:[
      {t:"The authors’ final text after peer review, without the publisher’s formatting", ok:true, why:"It has the peer-reviewed content but not the journal’s layout or page numbers."},
-     {t:"The version shared before peer review", why:"That’s a preprint."},
+     {t:"The version the authors share before peer review, which is often called a preprint", why:"That’s a preprint."},
      {t:"The publisher’s final formatted version", why:"That’s the version of record."},
      {t:"A rejected paper", why:"“Accepted” means the journal accepted it."}
    ]},
@@ -1372,24 +1434,24 @@ ICA.addUnit({
    {id:"t4u2-q35", lesson:"t4u2-l5", level:3, q:"Mei can’t get a paper: no free copy, and her library doesn’t subscribe. A classmate suggests a shadow library. What’s the best response?", options:[
      {t:"Decline; ask the library for an interlibrary loan and email the author instead", ok:true, why:"Shadow libraries infringe copyright; ILL and author requests are legal and often work."},
      {t:"Use it, since everyone does", why:"Popularity doesn’t change copyright law, and courts in several countries have ruled against these sites."},
-     {t:"Use it, but don’t cite the paper", why:"Not citing a source you used is a separate problem, and the download still infringes copyright."},
+     {t:"Use it, but leave the paper out of her reference list so nobody can tell where it came from", why:"Not citing a source you used is a separate problem, and the download still infringes copyright."},
      {t:"Borrow a friend’s login instead", why:"That breaks library licence terms and risks the friend’s account."}
    ]},
    {id:"t4u2-q36", lesson:"t4u2-l5", level:1, q:"What is interlibrary loan?", options:[
-     {t:"A service where your library gets a book or article copy for you from another library", ok:true, why:"It extends your library’s collection; some libraries charge a fee."},
+     {t:"Your library getting a book or article for you from another library", ok:true, why:"It extends your library’s collection; some libraries charge a fee."},
      {t:"Borrowing money from a library", why:"It’s about items, not money."},
      {t:"Downloading from a shadow library", why:"Shadow libraries are unauthorised; ILL is a legal library service."},
-     {t:"Lending your library card to someone", why:"Library cards are personal."}
+     {t:"Lending your library card to a friend at another library so they can borrow", why:"Library cards are personal."}
    ]},
    {id:"t4u2-q37", lesson:"t4u2-l5", level:2, q:"Why might a free copy of a paper in a university repository appear only months after the journal published it?", options:[
-     {t:"The publisher set an embargo before the accepted manuscript could be made public", ok:true, why:"Embargo periods are common for repository copies."},
+     {t:"The publisher set an embargo on the accepted manuscript", ok:true, why:"Publishers often set an embargo period before the accepted manuscript can be made public in a repository."},
      {t:"Repositories only update once a year", why:"Timing usually follows publisher policy, not a fixed schedule."},
      {t:"The paper had to be peer reviewed again", why:"Repository copies aren’t re-reviewed."},
      {t:"Free copies are always illegal until a court approves them", why:"Repository copies are legal when they follow the publisher’s policy."}
    ]},
    {id:"t4u2-q38", lesson:"t4u2-l5", level:3, q:"Kenji found a preprint that exactly matches his argument, posted two years ago. What should he check before relying on it?", options:[
-     {t:"Whether a peer-reviewed version has since been published, and whether its results changed", ok:true, why:"Preprints aren’t peer reviewed, results can change before publication, and some are never published."},
-     {t:"Nothing; preprints are final", why:"Preprints come before peer review and can change."},
+     {t:"Whether a peer-reviewed version has been published since", ok:true, why:"Preprints aren’t peer reviewed, results can change before publication, and some are never published. If one has, check whether the results changed."},
+     {t:"Nothing, because preprints are final once they have been posted online", why:"Preprints come before peer review and can change."},
      {t:"Only the number of downloads", why:"Popularity doesn’t show whether it passed peer review."},
      {t:"Whether it’s in PDF format", why:"The file format says nothing about its status."}
    ]},
@@ -1400,10 +1462,10 @@ ICA.addUnit({
      {t:"Search a shadow library", why:"That infringes copyright and isn’t an acceptable route."}
    ]},
    {id:"t4u2-q40", lesson:"t4u2-l5", level:3, q:"Amara has an accepted manuscript of a paper and wants to post it on her public blog so others can read it. What should she know?", options:[
-     {t:"Reposting it may not be allowed; it’s better to link to the legal copy in the repository", ok:true, why:"Whether a version may be shared, and where, depends on the publisher’s policy; linking avoids redistributing it."},
+     {t:"Reposting may not be allowed; link to the repository copy instead", ok:true, why:"Whether a version may be shared, and where, depends on the publisher’s policy; linking avoids redistributing it."},
      {t:"Anything free to read is free to repost", why:"Free to read isn’t the same as free to redistribute; licences and policies differ."},
      {t:"Accepted manuscripts aren’t covered by copyright", why:"They’re covered by copyright like any other version."},
-     {t:"She must convert it to a different file format first", why:"The file format doesn’t change the rights."}
+     {t:"She can repost it, but must convert it to a different file format first", why:"The file format doesn’t change the rights."}
    ]}
   ]
 });

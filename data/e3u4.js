@@ -657,7 +657,7 @@ ICA.addUnit({
       {t:"(土)・(日) [休]{やす}み", b:0, why:"Closed on Saturdays and Sundays only, so on a weekday it is open."}
     ]},
     {id:"e3u4-l5-x7", type:"mcq", q:"Cheska takes JLPT N5. Her scores: Language Knowledge (Vocabulary/Grammar)・Reading 70/120, Listening 15/60, total 85/180. Does she pass?", options:[
-      {t:"No: his Listening score is below the sectional minimum of 19", ok:true, why:"Right. You need 80 in total and at least 38 and 19 in the two parts. 15 in Listening is a fail, even with a total of 85."},
+      {t:"No: her Listening score is below the sectional minimum of 19", ok:true, why:"Right. You need 80 in total and at least 38 and 19 in the two parts. 15 in Listening is a fail, even with a total of 85."},
       {t:"Yes: 85 is above the pass mark of 80", why:"The total is enough, but each part also has a minimum. Listening needs 19 or more."},
       {t:"Yes: only the total counts at N5", why:"Every level has sectional pass marks. Failing one part means failing the test."},
       {t:"No: the N5 pass mark is 90", why:"90 is the N4 pass mark. N5 needs 80, but Cheska fails because of her Listening score."}
@@ -701,6 +701,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e3u4-q02","e3u4-q05","e3u4-q08","e3u4-q11","e3u4-q14","e3u4-q17","e3u4-q20","e3u4-q24","e3u4-q28","e3u4-q32","e3u4-q38","e3u4-q42"],
+  cpBank:[
+    {id:"e3u4-cp01", lesson:"e3u4-l1", level:1, q:"[男]{おとこ} (man) is [田]{た} (rice field) + [力]{ちから} (strength): the one who works in the fields. Which way of building kanji is this?", options:[
+      {t:"A picture of a thing", why:"A picture kanji is one simplified drawing, such as 山 or 木. 男 is made of two parts that each have a meaning."},
+      {t:"Two or more meanings combined", ok:true, why:"Meaningful parts are put together for a new idea: field + strength gives man, as person + tree gives 休 (rest)."},
+      {t:"A sign that points to an idea", why:"Signs are marks or lines that point to an idea, such as 上 and 下, or the mark at the root of 木 in 本."},
+      {t:"One part for meaning, one for sound", why:"In a meaning + sound kanji, one part hints at the reading, as 寺 does in 時. In 男 both parts carry meaning."}]},
+    {id:"e3u4-cp02", lesson:"e3u4-l2", level:2, q:"Rodrigo knows 外 (そと, outside) and 国 (くに, country). Now he meets the word 外国 (foreign country). Which reading is most likely? (Furigana left out on purpose.)", options:[
+      {t:"そとくに", why:"These are the kun readings, which a kanji usually has when it stands alone or takes okurigana. Two kanji together usually take on readings."},
+      {t:"がいくに", why:"This mixes an on reading with a kun reading. That happens, but the usual pattern for two kanji with no kana is on + on."},
+      {t:"がいこく", ok:true, why:"Two or more kanji together with no kana usually take their on readings: ガイ + コク. 外国 is read がいこく."},
+      {t:"そとこく", why:"This mixes a kun reading with an on reading. For two kanji with no kana, expect on + on: がいこく."}]},
+    {id:"e3u4-cp03", lesson:"e3u4-l3", level:1, q:"The cleanup notice says to meet outside the building, not inside. Which kanji means **outside**? (Furigana left out on purpose.)", options:[
+      {t:"中", why:"中 (なか) means the middle or inside: the opposite of outside."},
+      {t:"上", why:"上 (うえ) means up, above or on top."},
+      {t:"外", ok:true, why:"外 (そと) means outside, as in 外国 (foreign country)."},
+      {t:"下", why:"下 (した) means down, below or under."}]},
+    {id:"e3u4-cp04", lesson:"e3u4-l4", level:1, q:"Which kanji fits both gaps, to make “train” and “telephone”? 「＿[車]{しゃ}」「＿[話]{わ}」", options:[
+      {t:"[電]{でん}", ok:true, why:"電 (electricity) + 車 (vehicle) is 電車, a train; 電 + 話 (talk) is 電話, a telephone. One kanji opens a family of words."},
+      {t:"[気]{き}", why:"気 appears in 電気 (electricity) and 天気 (weather), but 気車 and 気話 are not the words for train and telephone."},
+      {t:"[自]{じ}", why:"自 is in 自転車 (bicycle), but it doesn’t make “train” or “telephone”."},
+      {t:"[会]{かい}", why:"会 is in 会社 (company) and 会う (meet). It doesn’t join with 車 or 話 for these words."}]},
+    {id:"e3u4-cp05", lesson:"e3u4-l2", level:2, q:"At the cinema, Mariya buys tickets for 「大人二人」. How is it read? (Furigana left out on purpose.)", options:[
+      {t:"だいじん ににん", why:"大人 and 二人 both have special readings for the whole word. You can’t build them from the readings of each kanji."},
+      {t:"おとな ににん", why:"大人 is right, but one and two people have special readings: ひとり, ふたり. Regular ～にん starts at three."},
+      {t:"たいじん ふたり", why:"ふたり is right, but 大人 (adult) is read as a whole word: おとな."},
+      {t:"おとな ふたり", ok:true, why:"大人 (adult) is a special reading, おとな, and 二人 (two people) is ふたり: “two adults”."}]},
+    {id:"e3u4-cp06", lesson:"e3u4-l3", level:2, q:"The weather forecast says 「あしたは[北東]{ほくとう}の[風]{かぜ}です。」 Which way does the wind come from?", options:[
+      {t:"The north-west", why:"北 is north and 東 is east, so this is north-east. North-west would be 北西."},
+      {t:"The south-east", why:"南 would be south. 北東 has 北 (north) first, then 東 (east)."},
+      {t:"The north-east", ok:true, why:"Modern Japanese puts 北 or 南 first for in-between directions, as weather forecasts do: 北 + 東 = north-east."},
+      {t:"The east, then the north", why:"北東 is one direction between north and east, not two directions one after the other."}]},
+    {id:"e3u4-cp07", lesson:"e3u4-l4", level:2, q:"Fumiko asks Rodrigo to put the garbage out tomorrow morning. Which verb fits? 「[明日]{あした}の[朝]{あさ}、ごみを＿＿ください。」", options:[
+      {t:"[出]{で}て", why:"出る is going out yourself, so ごみを出て makes no sense. To put something out, use 出す."},
+      {t:"[出]{だ}して", ok:true, why:"出す means “put out, take out” something, and its て-form is 出して. 出る is about you going out."},
+      {t:"[入]{い}れて", why:"入れる means “put in”: the opposite of putting the garbage out."},
+      {t:"[入]{はい}って", why:"入る means “enter, go in” yourself. It can’t take ごみ as its object."}]},
+    {id:"e3u4-cp08", lesson:"e3u4-l5", level:2, q:"At 10 a.m. Toby finds 「[本日休業]{ほんじつきゅうぎょう}」 on the bakery door. What should he do?", options:[
+      {t:"Wait a little: they are preparing to open", why:"That would be 準備中 (preparing). 休業 contains 休 (rest): the shop is not working."},
+      {t:"Go in: the shop is open for business", why:"“Open for business” is 営業中. 本日休業 means closed today."},
+      {t:"Come back another day: it is closed today", ok:true, why:"本日 is a formal word for “today”, and 休 means rest: 本日休業 means “closed today”."},
+      {t:"Push the door, because it is an entrance", why:"Push is 押す and entrance is 入口. This sign is about whether the shop is open."}]},
+    {id:"e3u4-cp09", lesson:"e3u4-l5", level:3, q:"Rodrigo is writing a short email to his teacher, [田中]{たなか}[先生]{せんせい}, to ask a question. Which start and end fit?", options:[
+      {t:"「[田中]{たなか}さん」 … 「よろしくお[願]{ねが}いします。」", why:"さん is for a classmate or colleague. For a teacher, write the name + 先生."},
+      {t:"「[田中]{たなか}[先生]{せんせい}さん」 … 「よろしくお[願]{ねが}いします。」", why:"先生 is already the title. Don’t add さん after it."},
+      {t:"「[田中]{たなか}[先生]{せんせい}」 … 「よろしくお[願]{ねが}いします。」", ok:true, why:"Name + 先生 for a teacher, and よろしくお願いします, the set closing for almost every request email."},
+      {t:"「[田中]{たなか}[先生]{せんせい}」 … 「じゃあ、また。」", why:"The name line is right, but a request email closes with よろしくお願いします, not a casual goodbye."}]},
+    {id:"e3u4-cp10", lesson:"e3u4-l1", level:3, q:"Rodrigo learns that 時 is 日 + 寺 (read じ). He decides that kanji with 日 on the left are read じ. What is wrong with his idea? (Furigana left out on purpose.)", options:[
+      {t:"日 is the meaning part of 時; the sound hint is 寺, and only sometimes", ok:true, why:"In a meaning + sound kanji, one part gives the meaning and the other hints at the sound. In 時 that is 寺, and sound hints work only sometimes."},
+      {t:"Nothing: any kanji with 日 on the left is read じ", why:"明 also has 日 on the left, but it is read めい or あかるい. In 時, 日 is the meaning part (sun, time)."},
+      {t:"日 gives the kun reading, so those kanji are read ひ", why:"The meaning part of a kanji doesn’t give its reading. 日 tells you the meaning of 時; 寺 hints at the sound."},
+      {t:"Only picture kanji, such as 山 and 木, have readings to guess", why:"Picture kanji are single drawings with no sound part. Sound hints belong to meaning + sound kanji, the largest type."}]},
+    {id:"e3u4-cp11", lesson:"e3u4-l5", level:3, q:"Rodrigo is looking ahead to N3. On a practice test he gets Language Knowledge 40/60, Reading 18/60 and Listening 40/60: 98/180 in all. Would that pass?", options:[
+      {t:"Yes: 98 is above the N3 total pass mark of 95", why:"The total is enough, but N3 also needs at least 19 in each of its three parts. Reading has only 18."},
+      {t:"No: in N3, Reading is a separate part, and 18 is below 19", ok:true, why:"N3 has three scoring parts, 0–60 each, and each needs 19. The total of 98 is above 95, but Reading fails."},
+      {t:"Yes: Language Knowledge and Reading together make 58, above 38", why:"That is how N5 and N4 count, as one part out of 120. N3 scores Language Knowledge and Reading separately, 0–60 each."},
+      {t:"No: the N3 total pass mark is 100", why:"N3 needs 95 in total, so 98 would be enough. The problem is Reading: 18 is below the minimum of 19."}]},
+    {id:"e3u4-cp12", lesson:"e3u4-l4", level:3, q:"Cheska meets a neighbour’s dog. Which pair fills both gaps? 「＿＿[犬]{いぬ}ですね。[目]{め}も＿＿ね。」", options:[
+      {t:"[大]{おお}きい / [大]{おお}きなです", why:"[大]{おお}きい[犬]{いぬ} is fine, but 大きな can’t end a sentence. At the end, only 大きい works: [目]{め}も[大]{おお}きいですね."},
+      {t:"[大]{おお}きな / [大]{おお}きいです", ok:true, why:"大きな goes only before a noun (大きな犬). At the end of a sentence, use 大きい: [目]{め}も[大]{おお}きいですね."},
+      {t:"[大]{おお}きな / [大]{おお}きなです", why:"The first gap is right, but 大きな only goes before a noun. At the end of a sentence, say 大きいです."},
+      {t:"[大]{おお}きいな / [大]{おお}きいです", why:"大きい is an い-adjective, so it goes straight before a noun: 大きい犬 or 大きな犬, never 大きいな."}]}
+  ],
   codex:[
    {id:"how-kanji-work", title:"How kanji work", aka:["漢字","kanji","Chinese characters"], tags:["japanese","kanji","writing system"],
     summary:"Kanji are characters borrowed from Chinese writing. Each stands for a meaning and has one or more readings, and most are built from smaller, repeating parts.",
@@ -917,9 +979,9 @@ ICA.addUnit({
    ]},
    {id:"e3u4-q02", lesson:"e3u4-l1", level:1, q:"Which is the most common way kanji were built?", options:[
      {t:"A meaning part combined with a sound part", ok:true, why:"Right. Meaning + sound compounds such as 時 (日 + 寺) are the largest group by far."},
-     {t:"Pictures of things", why:"Pictures such as 山 and 木 are famous, but they are a small minority."},
+     {t:"Simple pictures of the things they mean", why:"Pictures such as 山 and 木 are famous, but they are a small minority."},
      {t:"Signs that point to an idea", why:"Signs such as 上 and 下 are a small group."},
-     {t:"Two meanings combined", why:"Combined-meaning kanji such as 休 exist, but meaning + sound kanji are far more numerous."}
+     {t:"Two meaning parts combined, with no sound part", why:"Combined-meaning kanji such as 休 exist, but meaning + sound kanji are far more numerous."}
    ]},
    {id:"e3u4-q03", lesson:"e3u4-l1", level:2, q:"語 (language), 話 (talk) and 読 (read) share the part 言 on the left. What does that tell you?", options:[
      {t:"They share the radical ごんべん, which hints at words and speech", ok:true, why:"Right. 言 on the left is ごんべん, the speech radical, and all three are about language."},
@@ -928,7 +990,7 @@ ICA.addUnit({
      {t:"They were all pictures of mouths", why:"They are combinations of parts, not single pictures."}
    ]},
    {id:"e3u4-q04", lesson:"e3u4-l1", level:2, q:"Cheska can’t find 聞 under 門 (gate) in a paper kanji dictionary. What should she try?", options:[
-     {t:"Look under 耳 (ear), the part that carries the meaning", ok:true, why:"Right. Most dictionaries file 聞 under 耳. If one part fails, try another, or search by reading."},
+     {t:"Look under 耳 (ear)", ok:true, why:"Right. 耳 is the part that carries the meaning, and most dictionaries file 聞 under 耳. If one part fails, try another, or search by reading."},
      {t:"Look under 日 (sun)", why:"聞 has no 日. Cheska may be thinking of 間, which is 門 + 日."},
      {t:"Give up: 聞 is not in kanji dictionaries", why:"聞 is a common N5 kanji, in every dictionary. It is just filed under a less obvious part."},
      {t:"Look under 口 (mouth)", why:"聞 has no 口; 問 (question) does, and that is a different kanji."}
@@ -958,7 +1020,7 @@ ICA.addUnit({
      {t:"Both start with the box or the 工 at the bottom", why:"Both start with the top strokes; the parts below come after."}
    ]},
    {id:"e3u4-q09", lesson:"e3u4-l1", level:3, q:"Rodrigo wants to learn the 80 N5 kanji. Which plan fits what research and this lesson suggest?", options:[
-     {t:"About 10 new kanji a day in words, with a short daily review", ok:true, why:"Right. Small daily sessions with spaced review, learning kanji through words, beat cramming."},
+     {t:"About 10 new kanji a day in words, reviewed daily", ok:true, why:"Right. Small daily sessions with spaced review, learning kanji through words, beat cramming."},
      {t:"All 80 in one long weekend, then no review", why:"Cramming without review leads to fast forgetting. Spaced review over weeks works better."},
      {t:"Every reading of each kanji first, then words later", why:"Learn the readings that come in words you need. Learning every reading at once is slow and confusing."},
      {t:"Only reading them, never writing any by hand", why:"Reading is essential, but writing some kanji by hand helps memory. A mix works best."}
@@ -1123,7 +1185,7 @@ ICA.addUnit({
      {t:"いる can’t be used for people", why:"いる is exactly right for people and animals. The problem is 多い人."}
    ]},
    {id:"e3u4-q36", lesson:"e3u4-l4", level:3, q:"Rodrigo wants N5 vocabulary to stick. Which method best fits this lesson?", options:[
-     {t:"Learn words in phrases with their particles, with opposites, and review daily", ok:true, why:"Right. Phrases like [電車]{でんしゃ}に[乗]{の}る, pairs like [高]{たか}い/[安]{やす}い and a short daily review make words stick."},
+     {t:"Learn words in phrases and pairs, and review daily", ok:true, why:"Right. Phrases like [電車]{でんしゃ}に[乗]{の}る, pairs like [高]{たか}い/[安]{やす}い and a short daily review make words stick."},
      {t:"Memorise a long English–Japanese list once, in alphabetical order", why:"Random lists learned once are quickly forgotten. Groups and spaced review work better."},
      {t:"Learn only the kanji, and the words will follow", why:"Kanji help, but words, their readings and particles need learning as words."},
      {t:"Wait until N4 to learn katakana words", why:"Katakana loanwords are core N5 vocabulary and often the easiest to learn."}
@@ -1137,8 +1199,8 @@ ICA.addUnit({
    ]},
    {id:"e3u4-q38", lesson:"e3u4-l5", level:2, q:"In a message, a friend writes 「[一緒]{いっしょ}に[映画]{えいが}を[見]{み}ませんか。」 What is the friend doing?", options:[
      {t:"Inviting you to watch a film together", ok:true, why:"Right. ～ませんか is a polite invitation: won’t you…?"},
-     {t:"Saying they won’t watch the film", why:"～ません alone is negative, but with か it becomes an invitation."},
-     {t:"Telling you they watched a film", why:"That would be 見ました (past)."},
+     {t:"Saying they won’t watch the film with you", why:"～ません alone is negative, but with か it becomes an invitation."},
+     {t:"Telling you they watched a film together", why:"That would be 見ました (past)."},
      {t:"Asking you to stop watching", why:"Asking someone not to do something is ～ないでください."}
    ]},
    {id:"e3u4-q39", lesson:"e3u4-l5", level:2, q:"You need to find what time a notice says a library opens. Which reading approach fits?", options:[
@@ -1160,28 +1222,28 @@ ICA.addUnit({
      {t:"N0", why:"There is no N0. The levels are N1 to N5."}
    ]},
    {id:"e3u4-q42", lesson:"e3u4-l5", level:3, q:"Rodrigo scores 40/120 in Language Knowledge・Reading and 30/60 in Listening on JLPT N5. Total: 70/180. Does he pass?", options:[
-     {t:"No: the total is below the pass mark of 80", ok:true, why:"Right. Both parts are above their minimums (38 and 19), but the total must also reach 80."},
+     {t:"No: the total is below 80", ok:true, why:"Right. Both parts are above their minimums (38 and 19), but the total must also reach the pass mark of 80."},
      {t:"Yes: both parts are above their minimums", why:"Sectional minimums are not enough on their own; the total must reach 80 too."},
      {t:"Yes: the N5 pass mark is 60", why:"The N5 pass mark is 80 out of 180."},
      {t:"No: Listening needs at least 38", why:"38 is the minimum for the Language Knowledge・Reading part. Listening needs 19."}
    ]},
    {id:"e3u4-q43", lesson:"e3u4-l5", level:2, q:"When is the JLPT held?", options:[
-     {t:"Twice a year, in July and December (in 2026: 5 July and 6 December)", ok:true, why:"Right. Some cities outside Japan hold only one of the two sessions."},
+     {t:"Twice a year, in July and December", ok:true, why:"Right. In 2026 the dates are 5 July and 6 December. Some cities outside Japan hold only one of the two sessions."},
      {t:"Every month, online", why:"The JLPT is a paper test held twice a year, not monthly."},
      {t:"Once a year, in April", why:"It is held in July and December."},
      {t:"Whenever you book it, at a test centre", why:"There are fixed dates, twice a year, and you apply well in advance."}
    ]},
    {id:"e3u4-q44", lesson:"e3u4-l5", level:3, q:"Cheska pressed Good on a Kanji Lab card she had only half remembered. What is the likely effect?", options:[
-     {t:"The card waits longer before coming back, so she may forget it by then", ok:true, why:"Right. Good moves a card to a longer gap. If she didn’t really know it, Again (once more at the end of the session, then tomorrow) would serve her better."},
+     {t:"The card comes back later than it should", ok:true, why:"Right. Good moves a card to a longer gap, so she may forget it by then. If she didn’t really know it, Again (once more at the end of the session, then tomorrow) would serve her better."},
      {t:"Nothing: Good and Again do the same thing", why:"They differ: Again brings the card back tomorrow; Good makes it wait longer."},
      {t:"The card is deleted from the deck", why:"No answer deletes a card; it only changes when the card comes back."},
      {t:"She gets more new cards that day", why:"New cards depend on the daily setting, not on how she answers."}
    ]},
    {id:"e3u4-q45", lesson:"e3u4-l5", level:2, q:"What is a graded reader?", options:[
-     {t:"A book written for learners at a set level, with controlled vocabulary and kanji", ok:true, why:"Right. Graded readers let you read a lot at your level, often with little or no dictionary use."},
+     {t:"A book written for learners at a set level", ok:true, why:"Right. Graded readers control their vocabulary and kanji, so they let you read a lot at your level, often with little or no dictionary use."},
      {t:"A test that gives you a grade", why:"That would be a test like the JLPT. A graded reader is a book."},
      {t:"A Japanese school textbook for children", why:"Graded readers are written for language learners, not for Japanese school subjects."},
-     {t:"An app that reads texts aloud", why:"A graded reader is a book (print or online), though some have audio."}
+     {t:"An app that reads Japanese texts aloud to you", why:"A graded reader is a book (print or online), though some have audio."}
    ]}
   ]
 });

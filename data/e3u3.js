@@ -133,7 +133,19 @@ ICA.addUnit({
       {t:"[昨日]{きのう}、[図書館]{としょかん}へ[行]{い}って、[勉強]{べんきょう}します。", why:"します at the end makes the sentence non-past, which clashes with [昨日]{きのう} (yesterday). The last verb carries the tense."},
       {t:"[昨日]{きのう}、[図書館]{としょかん}へ[行]{い}いて、[勉強]{べんきょう}しました。", why:"[行]{い}く is the exception: [行]{い}って, not [行]{い}いて."},
       {t:"[昨日]{きのう}、[図書館]{としょかん}へ[行]{い}くて、[勉強]{べんきょう}しました。", why:"The て-form isn’t the dictionary form plus て. [行]{い}く becomes [行]{い}って."}
-    ]}
+    ]},
+    {id:"e3u3-l1-x8", type:"type", q:"Type the て-form of [書]{か}く (write), in hiragana.", answer:"かいて",
+      wrongs:[{v:"かって", why:"Verbs ending in く change to いて. Only [行]{い}く has って."},
+              {v:"かきて", why:"That adds て to the ます stem, the old form. Godan verbs smooth the sound: く → いて."}],
+      why:"[書]{か}く ends in く, and く → いて: かいて."},
+    {id:"e3u3-l1-x9", type:"type", q:"Type the て-form of [行]{い}く (go).", answer:"いって",
+      wrongs:[{v:"いいて", why:"[行]{い}く is the one exception to the く → いて rule. Its て-form is いって."},
+              {v:"いきて", why:"That adds て to the ます stem. Godan verbs change shape, and [行]{い}く is the exception among く verbs: いって."}],
+      why:"[行]{い}く is the only common く verb that doesn’t follow く → いて. Its て-form is いって, and its past is いった."},
+    {id:"e3u3-l1-x10", type:"type", q:"Type the て-form of [泳]{およ}ぐ (swim).", answer:"およいで",
+      wrongs:[{v:"およいて", why:"ぐ is a voiced sound, and it gives a voiced ending: ぐ → いで."},
+              {v:"およんで", why:"んで is for verbs ending in む, ぶ and ぬ. Verbs ending in ぐ give いで."}],
+      why:"Verbs ending in ぐ change to いで: およいで."}
    ],
    apply:{
     intro:"Short, regular practice beats one long session. Keep these notes for yourself.",
@@ -276,7 +288,18 @@ ICA.addUnit({
       {t:"いいえ、[止]{と}めてはいけません。", why:"Grammatically correct, but it sounds like announcing a rule or telling someone off. Too harsh for a neighbour’s polite question."},
       {t:"はい、どうぞ。", why:"This means “Yes, go ahead”: the opposite of what you want."},
       {t:"[止]{と}めてください。", why:"This asks them to park there."}
-    ]}
+    ]},
+    {id:"e3u3-l2-x8", type:"type", q:"In a shop, Rodrigo can’t follow the assistant. Type the missing form of [話]{はな}す (speak): 「すみません、ゆっくり＿＿ください。」 (“Excuse me, please speak slowly.”)", answer:"はなして",
+      wrongs:[{v:"はなす", why:"ください needs the て-form before it. The dictionary form can’t join it."},
+              {v:"はないて", why:"Verbs ending in す change to して, not いて: [話]{はな}して."}],
+      why:"～てください makes a polite request. [話]{はな}す ends in す, and す → して: ゆっくり[話]{はな}してください."},
+    {id:"e3u3-l2-x9", type:"type", q:"The kitchen is hot. Yến asks Fumiko for permission. Type the missing form of [開]{あ}ける (open): 「[窓]{まど}を＿＿もいいですか。」 (“May I open the window?”)", answer:"あけて",
+      wrongs:[{v:"あけって", why:"[開]{あ}ける is ichidan ([開]{あ}けます): just drop る and add て. って is for godan verbs."},
+              {v:"あける", why:"もいいですか joins the て-form: [開]{あ}けてもいいですか."}],
+      why:"[開]{あ}ける is ichidan, so its て-form is [開]{あ}けて. ～てもいいですか asks for permission."},
+    {id:"e3u3-l2-x10", type:"type", q:"A housemate asks: 「トビーさんの[電話番号]{でんわばんごう}を[知]{し}っていますか。」 You don’t know it. Type the polite negative of [知]{し}っています: 「いいえ、＿＿。」", answer:"しりません",
+      wrongs:[{v:"しっていません", why:"[知]{し}っています is special: “I don’t know” is [知]{し}りません, not [知]{し}っていません."}],
+      why:"“I know” is [知]{し}っています, but “I don’t know” is [知]{し}りません. It is the one common verb whose negative drops ～ています."}
    ],
    apply:{
     intro:"Use the patterns about your own life and surroundings. Keep the notes for yourself.",
@@ -437,7 +460,21 @@ ICA.addUnit({
       {t:"[帰]{かえ}りますから、[疲]{つか}れました。", why:"This reverses cause and result: “I’m going home, so I’m tired”. The reason goes before から."},
       {t:"[疲]{つか}れましたから、[帰]{かえ}りました。", why:"Grammatical, but it means “I was tired, so I went home”: the going home is already over."},
       {t:"[疲]{つか}れましたまで、[帰]{かえ}ります。", why:"まで means “until”, not “because”."}
-    ]}
+    ]},
+    {id:"e3u3-l3-x8", type:"type", q:"Type the ない-form (plain negative) of [来]{く}る (come).", answer:"こない",
+      wrongs:[{v:"くない", why:"[来]{く}る is irregular: in the ない-form its kanji is read こ, so [来]{こ}ない."},
+              {v:"きない", why:"き is the reading in [来]{き}ます and [来]{き}て. In the ない-form it is こ: [来]{こ}ない."},
+              {v:"くらない", why:"[来]{く}る isn’t a godan verb, so る doesn’t become ら. It is irregular: [来]{こ}ない."}],
+      why:"[来]{く}る is irregular, with three readings: く ([来]{く}る), き ([来]{き}ます, [来]{き}て) and こ ([来]{こ}ない)."},
+    {id:"e3u3-l3-x9", type:"type", q:"Rodrigo missed the festival because he had work. Type the missing ending for “wanted to”: 「お[祭]{まつ}りに[行]{い}き＿＿です。」", answer:"たかった",
+      wrongs:[{v:"たいでした", why:"～たい ends in い and works like an い-adjective, so its past is ～たかった, and です stays です."},
+              {v:"たい", why:"[行]{い}きたいです is “I want to go”. The festival is over, so use the past: [行]{い}きたかったです."}],
+      why:"～たい changes like an い-adjective: [行]{い}きたい → [行]{い}きたかった. Add です to be polite: [行]{い}きたかったです, “I wanted to go”."},
+    {id:"e3u3-l3-x10", type:"type", q:"A sign by the door of a shop. Type the missing form of [吸]{す}う (smoke): 「ここでたばこを＿＿ください。」 (“Please don’t smoke here.”)", answer:"すわないで",
+      wrongs:[{v:"すあないで", why:"Verbs ending in う change う to わ in the ない-form, not to あ: [吸]{す}わない."},
+              {v:"すわない", why:"でください needs で after the ない-form: [吸]{す}わないでください."},
+              {v:"すって", why:"[吸]{す}ってください means “please smoke”. For “please don’t”, use the ない-form + でください."}],
+      why:"～ないでください means “please don’t”. [吸]{す}う ends in う, so its ない-form is [吸]{す}わない (う → わ): [吸]{す}わないでください."}
    ],
    apply:{
     intro:"Write about your own life, using the forms from this lesson. Keep the notes for yourself.",
@@ -583,7 +620,19 @@ ICA.addUnit({
       {t:"[冬]{ふゆ}より[好]{す}きです。", why:"より means “than”, so this says “I like (it) more than winter”: the opposite of what you mean."},
       {t:"[冬]{ふゆ}のほうが[好]{す}きじゃないです。", why:"This says you like winter **less**."},
       {t:"どちらも[好]{す}きです。", why:"This says you like both equally, but you prefer winter."}
-    ]}
+    ]},
+    {id:"e3u3-l4-x8", type:"type", q:"Kaito is buying three pencils. Pencils are long and thin, so they are counted with ～ほん. Type how he says “three of them” in hiragana: 「[鉛筆]{えんぴつ}を＿＿ください。」", answer:"さんぼん",
+      wrongs:[{v:"さんほん", why:"After さん, ほん becomes ぼん: さんぼん."},
+              {v:"さんぽん", why:"ぽん comes after 1, 6, 8 and 10 (いっぽん, ろっぽん, はっぽん, じゅっぽん). After 3 it is ぼん."}],
+      why:"With ～ほん, 3 takes the voiced sound: さんぼん. The question word does the same: [何本]{なんぼん}."},
+    {id:"e3u3-l4-x9", type:"type", q:"Toby asks Yến which she likes better. Type the missing question word: 「コーヒーとお[茶]{ちゃ}と、＿＿が[好]{す}きですか。」", answer:["どちら", "どっち"],
+      wrongs:[{v:"どれ", why:"どれ is for choosing among three or more. For a choice between two, use どちら."},
+              {v:"なに", why:"[何]{なに} asks “what?” in general. When you name two choices, ask with どちら."}],
+      why:"Between two things, ask with どちら (casually どっち), and answer with のほう: 「お[茶]{ちゃ}のほうが[好]{す}きです。」"},
+    {id:"e3u3-l4-x10", type:"type", q:"Type the missing particle: 「[今日]{きょう}は[昨日]{きのう}＿＿[寒]{さむ}いです。」 (“Today is colder than yesterday.”)", answer:"より",
+      wrongs:[{v:"のほうが", why:"のほうが marks the winner of a comparison, the one that is colder. [昨日]{きのう} is what today is compared against, so it takes より."},
+              {v:"から", why:"から means “from” or “because”. “Than” is より."}],
+      why:"より means “than”, and it goes after the thing you compare against: A は B より… means “A is more … than B”."}
    ],
    apply:{
     intro:"Count real things around you. Saying numbers aloud helps them stick. Keep the notes for yourself.",
@@ -732,7 +781,17 @@ ICA.addUnit({
       {t:"[九時]{くじ}まで[五時]{ごじ}から[働]{はたら}きます。", why:"This swaps the particles: “until nine, from five”."},
       {t:"[九時]{くじ}から[五時]{ごじ}に[働]{はたら}きます。", why:"に marks a point in time (“at five”), not the end of a range. Use まで."},
       {t:"[九時]{くじ}に[五時]{ごじ}まで[働]{はたら}きます。", why:"The start of a range takes から, not に."}
-    ]}
+    ]},
+    {id:"e3u3-l5-x8", type:"type", q:"A form asks for the date. How do you say 20日 (the 20th)? Type the reading in hiragana.", answer:"はつか",
+      wrongs:[{v:"にじゅうにち", why:"The 20th has an old native reading: はつか. Most other dates in the twenties are regular (にじゅういちにち), except the 24th, にじゅうよっか."}],
+      why:"20日 is はつか, one of the dates with an old native reading, like ついたち, ふつか… とおか, and the 14th and 24th."},
+    {id:"e3u3-l5-x9", type:"type", q:"Type the reading of 8日 (the 8th) in hiragana.", answer:"ようか",
+      wrongs:[{v:"はちにち", why:"The first ten days of the month have native readings. The 8th is ようか."},
+              {v:"よっか", why:"よっか is the 4th. The 8th is ようか, with a long よう."}],
+      why:"8日 is ようか. Don’t mix it up with よっか (the 4th): the 8th has a long よう, the 4th a small っ."},
+    {id:"e3u3-l5-x10", type:"type", q:"Type the missing particle: 「[週]{しゅう}＿＿[二回]{にかい}ジムへ[行]{い}きます。」 (“I go to the gym twice a week.”)", answer:"に",
+      wrongs:[{v:"で", why:"For “so many times per period”, the period takes に: [週]{しゅう}に[二回]{にかい}."}],
+      why:"An exact frequency is period + に + number + [回]{かい}: [週]{しゅう}に[二回]{にかい}, [一日]{いちにち}に[三回]{さんかい}."}
    ],
    apply:{
     intro:"Use time words about your own week. Say them aloud as you write. Keep the notes for yourself.",
@@ -765,6 +824,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e3u3-q02","e3u3-q05","e3u3-q07","e3u3-q12","e3u3-q15","e3u3-q20","e3u3-q23","e3u3-q29","e3u3-q32","e3u3-q36","e3u3-q41","e3u3-q44"],
+  cpBank:[
+    {id:"e3u3-cp01", lesson:"e3u3-l1", level:1, q:"[遊]{あそ}ぶ (to play, hang out) is a godan verb ending in ぶ. What is its て-form?", options:[
+      {t:"[遊]{あそ}って", why:"って is for godan verbs ending in う, つ and る. ぶ verbs take んで."},
+      {t:"[遊]{あそ}んで", ok:true, why:"Godan verbs ending in ぶ, む and ぬ change to んで: [遊]{あそ}ぶ → [遊]{あそ}んで."},
+      {t:"[遊]{あそ}いで", why:"いで is only for verbs ending in ぐ, such as [泳]{およ}ぐ → [泳]{およ}いで."},
+      {t:"[遊]{あそ}びて", why:"Godan verbs don’t simply add て to the ます stem. The last kana decides: ぶ → んで."}]},
+    {id:"e3u3-cp02", lesson:"e3u3-l2", level:2, q:"A neighbour asks Yến where she lives. Which answer is right?", options:[
+      {t:"「[駅]{えき}の[近]{ちか}くに[住]{す}みます。」", why:"The ます form is for habits and the future: “I will live near the station.” For where you live now, use ～ています."},
+      {t:"「[駅]{えき}の[近]{ちか}くに[住]{す}んでいます。」", ok:true, why:"[住]{す}む describes a change (moving in), so ～ています describes the result that is still true: “I live near the station.”"},
+      {t:"「[駅]{えき}の[近]{ちか}くに[住]{す}みました。」", why:"The past says only that it happened: “I lived (moved in) near the station.” It doesn’t say she lives there now."},
+      {t:"「[駅]{えき}の[近]{ちか}くに[住]{す}んでください。」", why:"～てください is a request: “Please live near the station.”"}]},
+    {id:"e3u3-cp03", lesson:"e3u3-l2", level:2, q:"Mariya has photos from the island on her phone. How does Rodrigo ask if he may look at them?", options:[
+      {t:"「[写真]{しゃしん}を[見]{み}ってもいいですか。」", why:"[見]{み}る is ichidan, so its て-form is [見]{み}て: drop る, add て."},
+      {t:"「[写真]{しゃしん}を[見]{み}てください。」", why:"～てください asks someone else to do something: “Please look at the photos.”"},
+      {t:"「[写真]{しゃしん}を[見]{み}てもいいですか。」", ok:true, why:"て-form + もいいですか asks permission. [見]{み}る is ichidan, so the て-form is [見]{み}て."},
+      {t:"「[写真]{しゃしん}を[見]{み}てはいけませんか。」", why:"～てはいけません is for rules: “You must not”. As a question it sounds like checking a ban, not asking politely."}]},
+    {id:"e3u3-cp04", lesson:"e3u3-l2", level:3, q:"Kaito asks 「トビーさん、[車]{くるま}を[持]{も}っていますか。」 Toby doesn’t have a car. What does he answer?", options:[
+      {t:"「いいえ、[持]{も}っていません。」", ok:true, why:"For “have, own”, the negative of [持]{も}っています is the normal ～ていません. Only [知]{し}る has the special negative [知]{し}りません."},
+      {t:"「いいえ、[持]{も}ちません。」", why:"That copies the [知]{し}りません pattern, but [知]{し}る is the only verb that works like that. [持]{も}ちません means “I won’t carry it”."},
+      {t:"「いいえ、[持]{も}っていませんでした。」", why:"This is past: “I didn’t have one.” Kaito is asking about now."},
+      {t:"「はい、[持]{も}っていません。」", why:"はい agrees with the question “Do you have a car?”, so it clashes with [持]{も}っていません. Start with いいえ."}]},
+    {id:"e3u3-cp05", lesson:"e3u3-l3", level:1, q:"The て-form of [買]{か}う (to buy) is [買]{か}って. What is its plain past, the た-form?", options:[
+      {t:"[買]{か}いた", why:"いた is the た-form pattern for verbs ending in く, such as [書]{か}く → [書]{か}いた."},
+      {t:"[買]{か}うた", why:"The た-form isn’t the dictionary form plus た. Make the て-form, then change て to た."},
+      {t:"[買]{か}んだ", why:"んだ is for verbs ending in む, ぶ and ぬ. [買]{か}う ends in う."},
+      {t:"[買]{か}った", ok:true, why:"The た-form is the て-form with て changed to た: [買]{か}って → [買]{か}った."}]},
+    {id:"e3u3-cp06", lesson:"e3u3-l3", level:2, q:"Kaito has a test tomorrow. He asks Rodrigo not to talk loudly. Which ending fits? 「[大]{おお}きい[声]{こえ}で＿＿。」", options:[
+      {t:"[話]{はな}しないでください", why:"The ない-form of a godan verb uses the あ-sound: す → さ, so [話]{はな}さない."},
+      {t:"[話]{はな}さないでください", ok:true, why:"“Please don’t” is ない-form + でください. [話]{はな}す is godan, so す → さ: [話]{はな}さない."},
+      {t:"[話]{はな}さないください", why:"The pattern needs で: ～ないでください."},
+      {t:"[話]{はな}してください", why:"This asks Rodrigo to talk loudly: “Please speak in a loud voice.”"}]},
+    {id:"e3u3-cp07", lesson:"e3u3-l3", level:3, q:"Rodrigo’s bicycle is old. How does he say “I want a new bicycle” politely?", options:[
+      {t:"「[新]{あたら}しい[自転車]{じてんしゃ}をほしいです。」", why:"The thing you want with ほしい takes が, not を."},
+      {t:"「[新]{あたら}しい[自転車]{じてんしゃ}がほしいたいです。」", why:"ほしい is already an い-adjective meaning “want”. たい attaches to verb stems, not to ほしい."},
+      {t:"「[新]{あたら}しい[自転車]{じてんしゃ}がほしいです。」", ok:true, why:"For a thing you want to have: noun が ほしいです."},
+      {t:"「[新]{あたら}しい[自転車]{じてんしゃ}がほしかったです。」", why:"ほしかった is past: “I wanted one.” Rodrigo still wants it."}]},
+    {id:"e3u3-cp08", lesson:"e3u3-l4", level:1, q:"Kaito sees three small fish in a bucket at the harbour. How does he count them? 「バケツに[魚]{さかな}が＿＿います。」", options:[
+      {t:"みっつ", why:"～つ is the general counter for things. Fish, like small animals, take ～[匹]{ひき}."},
+      {t:"さんにん", why:"～[人]{にん} is for people. Fish are counted with ～[匹]{ひき}."},
+      {t:"さんぼん", why:"～[本]{ほん} is for long, thin things such as pencils and umbrellas, not for fish."},
+      {t:"さんびき", ok:true, why:"Small animals, fish and insects take ～[匹]{ひき}. After 3, which ends in ん, ひ becomes び: さんびき."}]},
+    {id:"e3u3-cp09", lesson:"e3u3-l4", level:2, q:"Fumiko says 「[昨日]{きのう}は[今日]{きょう}より[寒]{さむ}かったです。」 What does she mean?", options:[
+      {t:"Yesterday was colder than today", ok:true, why:"A は B より～: A is more ～ than B. [昨日]{きのう} is A, and [寒]{さむ}かった is the past of [寒]{さむ}い."},
+      {t:"Today is colder than yesterday", why:"The word before より is the one being compared against: “than today”. So yesterday was colder."},
+      {t:"Yesterday was the coldest day", why:"“The most” needs いちばん. より compares just two things."},
+      {t:"It will be colder tomorrow", why:"The sentence talks about yesterday and today, and [寒]{さむ}かった is past."}]},
+    {id:"e3u3-cp10", lesson:"e3u3-l5", level:2, q:"Mariya says 「[昨日]{きのう}、[三時間]{さんじかん}[勉強]{べんきょう}しました。」 What did she say?", options:[
+      {t:"She studied at three o’clock", why:"“At three o’clock” would be [三時]{さんじ}に. [間]{かん} turns [三時]{さんじ} into a length of time."},
+      {t:"She studied three times", why:"“Three times” uses the counter ～[回]{かい}: [三回]{さんかい}."},
+      {t:"She studied until three", why:"“Until three” would be [三時]{さんじ}まで."},
+      {t:"She studied for three hours", ok:true, why:"～[時間]{じかん} is a duration: [三時間]{さんじかん} means “three hours”, and it takes no particle."}]},
+    {id:"e3u3-cp11", lesson:"e3u3-l4", level:3, q:"Which of these is read correctly?", options:[
+      {t:"[三本]{さんぼん}: three pencils", ok:true, why:"After 3, which ends in ん, the h-sound of [本]{ほん} becomes b: さんぼん."},
+      {t:"[一分]{いちふん}: one minute", why:"1 shrinks to a small っ before [分]{ふん}, and h becomes p: いっぷん."},
+      {t:"[六匹]{ろくひき}: six cats", why:"6 shrinks to a small っ before [匹]{ひき}, and h becomes p: ろっぴき."},
+      {t:"[三分]{さんぶん}: three minutes", why:"With [分]{ふん}, the sound after ん becomes p, not b: さんぷん."}]},
+    {id:"e3u3-cp12", lesson:"e3u3-l5", level:3, q:"Today is Monday the 14th. Cheska’s seminar talk is 「[来週]{らいしゅう}の[水曜日]{すいようび}」. Which date is that?", options:[
+      {t:"じゅうろくにち (the 16th)", why:"The 16th is this week’s Wednesday. [来週]{らいしゅう} means next week."},
+      {t:"にじゅうさんにち (the 23rd)", ok:true, why:"Next Monday is the 21st, so next week’s Wednesday is the 23rd: にじゅうさんにち."},
+      {t:"にじゅうよっか (the 24th)", why:"The 24th is next Thursday. Count again: Monday 21, Tuesday 22, Wednesday 23."},
+      {t:"はつか (the 20th)", why:"The 20th is this Sunday, not next week’s Wednesday."}]}
+  ],
   codex:[
    {id:"te-form", title:"The て-form", aka:["te-form","te form","てけい","～て","～ています","te-iru"], tags:["japanese","grammar","n5","verbs"],
     summary:"The verb form ending in て or で: the connector behind “and then”, ～てください, ～てもいいです, ～てはいけません and ～ています.",
@@ -916,7 +1037,7 @@ ICA.addUnit({
       "Unit 2’s pages ({{japanese-sentence-basics}}, {{particles-wa-ga}}, {{particles-o-ni-de}}, {{i-and-na-adjectives}}, {{masu-verbs}}) give the details for the first rows; this unit’s pages ({{te-form}}, {{nai-and-ta-forms}}, {{requests-and-permission}}, {{counters}}, {{time-and-dates}}) cover the rest."
      ],
      pro:[
-      "**Edges of the N5 list.** Because there is no official list, some patterns appear at N5 in one source and at N4 in another. Common border cases: ～てから (after doing), ほしい (want), まだ～ていません (not yet), ～たことがあります (have done), ～たり～たりします (do things like…), ～ながら (while), ～たほうがいいです (had better), ～ので (because) and ～たがる (someone else wants). This track teaches the first three at N5 and leaves the others for N4. Other textbooks and lists draw the line in different places, so don’t worry if yours differs.",
+      "**Edges of the N5 list.** Because there is no official list, some patterns appear at N5 in one source and at N4 in another. Common border cases: ～てから (after doing), ほしい (want), まだ～ていません (not yet), ～たことがあります (have done), ～たり～たりします (do things like…), ～ながら (while), ～たほうがいいです (had better), ～ので (because) and ～たがる (someone else wants). This track teaches the first three at N5 and the others at N4: ～たことがある and ～たり in Unit 5, Lesson 6 (with ～とき); ～ので in Unit 5, Lesson 7 (with ～[前]{まえ}に and ～[後]{あと}で); ～たほうがいい in Unit 6, Lesson 6 (with ～かもしれない, ～でしょう and ～てみる); ～ながら in Unit 7, Lesson 5; and ～たがる in Unit 7, Lesson 6 (with ～すぎる, ～やすい and ～[方]{かた}). Unit 7, Lesson 7 adds ～てくる, ～ていく and ～かどうか. Other textbooks and lists draw the line in different places, so don’t worry if yours differs.",
       "**What the test does with grammar.** At N5, grammar has its own part of the test, in the section “Language Knowledge (Grammar)・Reading”: questions ask you to choose the right particle or form for a gap, to put parts of a sentence in order, and to choose words that fit a short text. Reading and listening questions then use the same grammar in context. Knowing a form passively is not enough; practise choosing between near neighbours (は/が, に/で, ～ています/～ます, どちら/どれ).",
       "**Why the て-form and plain forms matter so much.** Almost all N4 grammar is built on them: ～てみる, ～てしまう, ～ておく, ～と[思]{おも}う, ～つもり, relative clauses, conditionals. Time spent making them automatic now pays back many times.",
       "**Next steps.** Unit 4 covers N5 kanji, vocabulary and reading. Unit 5 turns the plain forms into natural casual speech. For more practice with audio, the Japan Foundation’s Irodori course (A1–A2) and Tae Kim’s free online guide are good companions."
@@ -1022,7 +1143,7 @@ ICA.addUnit({
      {t:"[姉]{あね}は[結婚]{けっこん}してはいけません。", why:"This says “My sister must not get married”."}
    ]},
    {id:"e3u3-q14", lesson:"e3u3-l2", level:3, q:"Yến sees this sign at a museum: [館内]{かんない}で[写真]{しゃしん}をとってはいけません。 What does it tell her?", options:[
-     {t:"Taking photos inside the building is not allowed.", ok:true, why:"～てはいけません states a rule: you must not."},
+     {t:"Photos are not allowed inside.", ok:true, why:"～てはいけません states a rule: you must not take photos inside the building."},
      {t:"Please take photos inside.", why:"That would be ～てください."},
      {t:"You may take photos inside.", why:"That would be ～てもいいです."},
      {t:"Someone is taking photos inside.", why:"That would be ～ています."}

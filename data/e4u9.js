@@ -113,10 +113,10 @@ ICA.addUnit({
       {t:"Governments agree to extend integration to a wider common market.", why:"The result: a deeper and wider union, as with the treaties of 1957."}
     ]},
     {id:"e4u9-l1-x5", type:"mcq", q:"Members of an international agency complain that its staff keep starting projects the governing board never approved. In principal–agent terms, which response targets the problem most directly?", options:[
-      {t:"Require prior board approval for new projects and fund an independent evaluation office that reports to the board", ok:true, why:"Yes. This tightens the mandate and adds monitoring, two standard controls against slippage."},
+      {t:"Require prior approval and add independent evaluation", ok:true, why:"Yes. Prior board approval for new projects and an evaluation office reporting to the board tighten the mandate and add monitoring, two standard controls against slippage."},
       {t:"Double the agency’s unearmarked budget", why:"More unconditional money usually increases the agent’s room to act; it does not control slack."},
       {t:"Let the agency’s head choose who sits on the board", why:"That would let the agent pick its own principals, weakening control even further."},
-      {t:"Do nothing: agents always follow their principals", why:"The whole theory starts from the risk that agents have their own preferences."}
+      {t:"Do nothing, because agents always follow their principals", why:"The whole theory starts from the risk that agents have their own preferences."}
     ]},
     {id:"e4u9-l1-x6", type:"spot", q:"A student essay explains why an international organisation exists. Tap the claims that **commit the functionalist fallacy or ignore power**.", ask:"weak reasoning", parts:[
       {t:"The organisation lowers the cost of sharing weather data among its members.", flag:false, why:"A reasonable description of a function it performs. The problem only arises if you conclude it was created for that reason without evidence."},
@@ -130,7 +130,7 @@ ICA.addUnit({
       {t:"The two largest contributors insisted on weighted voting before they would join.", flag:false, why:"Evidence about power and bargaining over design: a strong point, not a flaw."}
     ]},
     {id:"e4u9-l1-x7", type:"mcq", q:"Why can an IO secretariat sometimes act more freely on the very issues where its member states disagree most?", options:[
-      {t:"A divided collective principal cannot agree on new instructions or sanctions, which leaves the agent room to act", ok:true, why:"Right. With many principals, reining in the agent needs agreement among them; division weakens control."},
+      {t:"Because divided principals cannot agree on instructions or sanctions", ok:true, why:"Right. With many principals, reining in the agent needs agreement among them; division weakens control."},
       {t:"Because international law gives secretariats a veto over divisive issues", why:"No secretariat has such a veto. The freedom comes from the politics of control, not from a legal power."},
       {t:"Because divided states stop paying, so the agency has more money", why:"Funding cuts usually reduce an agency’s capacity; they do not explain greater freedom."},
       {t:"Because agents only obey principals who agree with each other in advance", why:"Agents are formally bound either way; the point is that disagreement makes it hard for principals to enforce their will."}
@@ -211,7 +211,7 @@ ICA.addUnit({
       "Principal–agent scholars read these as slack that states tolerated; constructivists read them as authority in action. Both agree that the people at the top matter, which is why their selection is fought over (Lesson 3)."
     ]},
     {h:"Case: the IMF", body:[
-      "The [[imf|IMF]] lends to members with balance-of-payments problems and monitors economies. Its votes follow each member’s [[imf-quota|quota]], plus a small number of basic votes per member: a form of [[weighted-voting|weighted voting]]. As of 2026 the United States held about **16.5%** of votes; major decisions need **85%**. By an informal convention its Managing Director has always been European (Kristalina Georgieva has held the post since 2019), while the World Bank’s president has always been a US national.",
+      "The [[imf|IMF]] lends to members with balance-of-payments problems and monitors economies, chiefly through regular [[article-iv-consultation|Article IV consultations]] with each member, whose published reports are a key data source ({{imf-world-bank-data}}, Unit 14). Its votes follow each member’s [[imf-quota|quota]], plus a small number of basic votes per member: a form of [[weighted-voting|weighted voting]]. As of 2026 the United States held about **16.5%** of votes; major decisions need **85%**. By an informal convention its Managing Director has always been European (Kristalina Georgieva has held the post since 2019), while the World Bank’s president has always been a US national.",
       "The Fund’s handling of the 1997–98 Asian financial crisis remains a seminar classic. Its loans to Thailand, Indonesia and South Korea came with strict [[conditionality]]: budget cuts, high interest rates, bank closures and structural reforms. Joseph Stiglitz, a former World Bank chief economist, attacked this in *Globalization and Its Discontents* (2002). The IMF’s own Independent Evaluation Office, in a 2003 evaluation of the crises in Indonesia, Korea and Brazil, also found weaknesses, especially in Indonesia, while defenders argue the programmes helped restore stability.",
       "Ideas inside the Fund change. Jeffrey Chwieroth’s *Capital Ideas* (2010) traced how the training of its staff economists shaped its enthusiasm for freeing capital flows; in 2012 the Fund adopted an “institutional view” accepting that controls on capital flows can be appropriate in some circumstances.",
       "Voice reforms are slow. A 2010 reform, in force from 2016, raised the shares of China and other emerging economies. A 50% quota increase without changing shares was approved in December 2023, but as of early November 2026 it had not taken effect: it needed consent from members holding 85% of quotas, including the United States, whose Congress had not yet authorised it (the consent deadline had been extended to 15 November 2026)."
@@ -257,7 +257,7 @@ ICA.addUnit({
       {v:1.49, tol:0.02, why:"That is 16.49 − 15, how far the US is above the 15% blocking line, not the size of the “yes” side."}
     ], hint2:"Subtract the US share from 100%."},
     {id:"e4u9-l2-x5", type:"mcq", q:"Which statement best captures Barnett and Finnemore’s argument about the UN Secretariat and Rwanda in 1994?", options:[
-      {t:"An institutional culture of impartiality led it to present the situation as a two-sided civil war, which helped block a strong response to genocide", ok:true, why:"Yes. They locate part of the failure in the Secretariat’s bureaucratic culture, alongside the choices of states."},
+      {t:"Its culture of impartiality helped block a strong response", ok:true, why:"Yes. It presented the situation as a two-sided civil war rather than genocide. They locate part of the failure in the Secretariat’s bureaucratic culture, alongside the choices of states."},
       {t:"The Secretariat secretly wanted the genocide to happen", why:"No. Their point is that normal bureaucratic features can produce terrible outcomes without any such intention."},
       {t:"Only the Security Council’s members were to blame, never the staff", why:"They argue the Secretariat itself contributed; the UN’s 1999 inquiry also criticised both."},
       {t:"The Secretariat had the legal power to send troops but refused", why:"The Secretariat cannot deploy troops on its own; only the Council authorises missions."}
@@ -274,7 +274,7 @@ ICA.addUnit({
       {t:"Critics such as Weaver argue that a gap between its rhetoric and its practice is built into its situation.", flag:false, why:"A fair summary of the “hypocrisy trap” argument, attributed to its author."}
     ]},
     {id:"e4u9-l2-x7", type:"mcq", q:"A principal–agent scholar and a constructivist both study why an IO kept recommending the same reforms after they failed. What would the constructivist most likely add?", options:[
-      {t:"That shared professional ideas and the staff’s culture made the reforms look right from inside, regardless of what members wanted", ok:true, why:"Right. Constructivists look at ideas, culture and expertise inside the bureaucracy, not only at state control."},
+      {t:"That the staff’s shared ideas made the reforms look right", ok:true, why:"Right. Professional culture made them look right from inside, regardless of what members wanted. Constructivists look at ideas, culture and expertise inside the bureaucracy, not only at state control."},
       {t:"That the member states must have secretly ordered the failed reforms", why:"That is an extreme principal–agent reading and needs evidence; it is not what a constructivist adds."},
       {t:"That bureaucracies never have their own ideas", why:"The opposite: constructivists argue that they do."},
       {t:"That the reforms failed because the IO had no budget", why:"Budget is a control lever; it does not explain why the same advice persisted."}
@@ -390,7 +390,7 @@ ICA.addUnit({
       {t:"The General Assembly appoints the new Secretary-General.", why:"The final, formal step."}
     ]},
     {id:"e4u9-l3-x5", type:"mcq", q:"An agency receives most of its money as voluntary contributions earmarked for donors’ chosen projects. What is the most likely consequence?", options:[
-      {t:"Donors gain more say over its priorities, and core functions not chosen by donors may be underfunded", ok:true, why:"Right. Earmarking shifts control towards donors and away from the governing body’s overall plan."},
+      {t:"Donors gain more say, and core work may be underfunded", ok:true, why:"Right. Earmarking shifts control towards donors and away from the governing body’s overall plan."},
       {t:"Every member gains an equal say over how money is spent", why:"Earmarking does the opposite: the donor decides where its money goes."},
       {t:"The agency becomes legally independent of its members", why:"Funding type does not change the agency’s legal status."},
       {t:"Its budget becomes more predictable than an assessed budget", why:"Voluntary money is usually less predictable, since donors decide each year."}
@@ -407,7 +407,7 @@ ICA.addUnit({
       {t:"The UN80 initiative was launched by the Secretary-General in 2025.", flag:false, why:"Correct: it was launched in March 2025."}
     ]},
     {id:"e4u9-l3-x7", type:"mcq", q:"Why has Security Council reform made so little progress despite broad agreement that the Council should change?", options:[
-      {t:"Reform needs very high thresholds, including every permanent member’s ratification, and rival groups prefer no deal to a deal that favours their neighbours", ok:true, why:"Yes. The Article 108 rules and regional rivalries together create the deadlock."},
+      {t:"High thresholds plus regional rivalries", ok:true, why:"Yes. Reform needs every permanent member’s ratification, and rival groups prefer no deal to one that favours their neighbours. The Article 108 rules and regional rivalries together create the deadlock."},
       {t:"No state has ever proposed a reform model", why:"Many models exist (G4, Uniting for Consensus, the African position, L.69 and others)."},
       {t:"The Charter forbids any change to the Security Council", why:"The Charter can be amended; it was in 1965, when the Council grew from 11 to 15 members."},
       {t:"The Secretary-General has vetoed every proposal", why:"The Secretary-General has no vote or veto on Charter amendments."}
@@ -511,13 +511,13 @@ ICA.addUnit({
       {t:"Members agree single-market rules by majority vote rather than unanimity.", b:0, why:"Majority voting among governments is pooling."}
     ]},
     {id:"e4u9-l4-x3", type:"mcq", q:"Lucía writes that “ASEAN has failed because it has not built institutions like the EU’s.” What is the strongest scholarly objection?", options:[
-      {t:"It assumes the EU is the yardstick; ASEAN’s members deliberately chose a consensus design, and its success should be judged against its own aims", ok:true, why:"Right. Comparative regionalists criticise this Eurocentric yardstick; whether ASEAN meets its own goals is a separate, debatable question."},
+      {t:"It wrongly treats the EU as the yardstick for ASEAN", ok:true, why:"Right. ASEAN’s members deliberately chose a consensus design, and its success should be judged against its own aims. Comparative regionalists criticise this Eurocentric yardstick; whether ASEAN meets its own goals is a separate, debatable question."},
       {t:"ASEAN actually has a supranational court more powerful than the EU’s", why:"Factually wrong: ASEAN has no supranational court."},
       {t:"ASEAN has no members, so it cannot fail", why:"ASEAN has eleven members since Timor-Leste joined in 2025."},
       {t:"No scholar has ever criticised ASEAN", why:"Jones and Smith (2007) and others criticise it sharply; the objection is to the yardstick, not to criticism."}
     ]},
     {id:"e4u9-l4-x4", type:"mcq", q:"Which statement about the AU’s Article 4(h) is accurate as of 2026?", options:[
-      {t:"It gives the Union a right to intervene in grave circumstances, but it has never been used against a government’s will", ok:true, why:"Correct. The text is strong, but practice has been cautious; the AU has relied on suspensions, mediation and missions with consent."},
+      {t:"It has never been used against a government’s will", ok:true, why:"Correct. It gives the Union a right to intervene in grave circumstances. The text is strong, but practice has been cautious; the AU has relied on suspensions, mediation and missions with consent."},
       {t:"It obliges the AU to intervene whenever a coup happens", why:"Coups lead to suspension under separate rules; 4(h) covers war crimes, genocide and crimes against humanity, and it is a right, not a duty."},
       {t:"It was copied from the ASEAN Charter", why:"ASEAN’s Charter has no such provision; it keeps non-interference."},
       {t:"It was removed from the Constitutive Act in 2015", why:"It remains in the Act."}
@@ -541,7 +541,7 @@ ICA.addUnit({
       {t:"Governments delegated to a court to make each other’s promises credible.", b:1, why:"Delegation for credible commitments is a liberal intergovernmentalist argument."}
     ]},
     {id:"e4u9-l4-x7", type:"mcq", q:"Why might a newly independent group of states choose an intergovernmental, consensus-based regional body rather than a supranational one?", options:[
-      {t:"States that recently won sovereignty, often after colonial rule, tend to guard it closely and prefer bodies they can each block", ok:true, why:"Right. History and identity are central explanations of design in comparative regionalism."},
+      {t:"Because states that recently won sovereignty guard it closely", ok:true, why:"Right. Often after colonial rule, they tend to prefer bodies they can each block. History and identity are central explanations of design in comparative regionalism."},
       {t:"Because supranational bodies are illegal under the UN Charter", why:"The Charter does not forbid them; the EU exists alongside it, and Chapter VIII welcomes regional arrangements."},
       {t:"Because consensus bodies can never achieve anything", why:"Consensus slows decisions but does not make them impossible; this is not why states choose it."},
       {t:"Because the EU forbids other regions from copying it", why:"No such rule exists."}
@@ -647,7 +647,7 @@ ICA.addUnit({
       ["Orchestration","An IO steering other actors towards shared goals","Abbott, Genschel, Snidal and Zangl (2015)."]
     ]},
     {id:"e4u9-l5-x3", type:"mcq", q:"A study finds that countries in a UN programme still had high rates of a disease, and concludes the programme failed. What is the main methodological problem?", options:[
-      {t:"Selection effects: the programme may have been sent to the hardest cases, so a counterfactual comparison is needed", ok:true, why:"Right. Without asking what would have happened otherwise, a high rate cannot show failure."},
+      {t:"Selection effects: no counterfactual comparison", ok:true, why:"Right. The programme may have been sent to the hardest cases. Without asking what would have happened otherwise, a high rate cannot show failure."},
       {t:"Disease rates can never be measured", why:"They can be measured; the problem is interpreting them without a comparison."},
       {t:"UN programmes are always effective by definition", why:"No. The point is that the study’s design cannot tell either way."},
       {t:"The study should have asked only the programme’s staff", why:"Staff views would add bias, not solve the comparison problem."}
@@ -714,6 +714,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u9-q02","e4u9-q05","e4u9-q08","e4u9-q11","e4u9-q15","e4u9-q18","e4u9-q21","e4u9-q25","e4u9-q29","e4u9-q33","e4u9-q38","e4u9-q43"],
+  cpBank:[
+   {id:"e4u9-cp01", lesson:"e4u9-l1", level:1, q:"Farmers’ unions from five member states used to protest only at home. Once a regional farm fund starts work, they hold joint protests at its headquarters instead. Which kind of spillover is this?", options:[
+     {t:"Functional spillover", why:"Functional spillover comes from linked tasks, such as a coal market needing shared transport rules. Here the change is in where groups direct their pressure."},
+     {t:"Cultivated spillover", why:"Cultivated spillover is pushed by supranational officials themselves. Here it is interest groups that move."},
+     {t:"Political spillover", ok:true, why:"Right. Political spillover happens when interest groups and parties shift their lobbying to the new centre, as Haas described."},
+     {t:"Ramification", why:"Ramification is Mitrany’s term for cooperation spreading from one technical field to another through experts. It isn’t about where interest groups press their demands."}]},
+   {id:"e4u9-cp02", lesson:"e4u9-l3", level:2, q:"Article 100 of the UN Charter forbids UN staff to seek or receive instructions from any government. Which design logic best explains why states accept this?", options:[
+     {t:"Abbott and Snidal’s “independence”: a neutral monitor or mediator is useful only if no state steers it", ok:true, why:"Right. This combines Lesson 1 (IOs offer centralisation and independence) with Lesson 3 (the ideal of an international civil service in Article 100)."},
+     {t:"The collective principal: states wanted to give up all control over the UN’s work", why:"A collective principal gives agents room when members disagree. States still control budgets and mandates; Article 100 protects impartiality, not loss of control."},
+     {t:"Weighted voting: the largest budget contributors are meant to direct UN staff", why:"Article 100 says the opposite: staff take instructions from no government, large or small."},
+     {t:"Pooling: states agree to take decisions by majority vote rather than unanimity", why:"Pooling is about how members vote. Article 100 is about staff independence from governments."}]},
+   {id:"e4u9-cp03", lesson:"e4u9-l2", level:2, q:"Over twenty years, a global health agency moves from delivering vaccines into nutrition, health data systems and climate projects. Which pair of readings fits the unit?", options:[
+     {t:"Both lenses agree that it was simply what the agency’s largest donor ordered", why:"Only one lens stresses the principals’ wishes. The constructivist lens looks at how staff expertise reshaped the agency’s goals."},
+     {t:"Functionalism says it proves loyalty has shifted from states to the agency", why:"Mitrany expected loyalty to shift over time, but the expansion itself doesn’t show that, and the unit’s debate here is between principal–agent and constructivist readings."},
+     {t:"Rational design says such growth is impossible without a new founding treaty", why:"Mandates often grow without treaty changes, as the World Bank’s history shows."},
+     {t:"Principal–agent: donors wanted it or staff used slack; constructivist: experts redefined the problem", ok:true, why:"Right. This combines Lesson 1 (principal–agent theory) with Lesson 2 (IOs as bureaucracies that redefine problems) on a new case. Critics would call it mission creep; supporters would call it learning."}]},
+   {id:"e4u9-cp04", lesson:"e4u9-l2", level:2, q:"An IO’s annual reports slowly define “good governance” as including independent central banks and anti-corruption agencies. Donors start using that definition. Which kind of IO power is this?", options:[
+     {t:"Classifying", why:"Classifying sorts cases into categories, such as who counts as a refugee. Here the IO is setting what a concept means in practice."},
+     {t:"Fixing meanings", ok:true, why:"Right. Barnett and Finnemore say IOs fix meanings, such as what “development” or “good governance” means in practice, and others then act on them."},
+     {t:"Delegated authority", why:"Delegated authority is lent by states for a task. The power here comes from the IO’s reports shaping others’ understanding."},
+     {t:"Agency slack", why:"Slack is an agent shirking or slipping from its principals’ wishes. Defining a concept that donors adopt is a form of power, not shirking."}]},
+   {id:"e4u9-cp05", lesson:"e4u9-l3", level:1, q:"Several Security Council members invite a women’s rights group and two academics to brief them informally, outside the Council’s formal meetings. What is this kind of meeting called?", options:[
+     {t:"A straw poll", why:"Straw polls are informal votes on Secretary-General candidates, not briefings by civil society."},
+     {t:"An Arria-formula meeting", ok:true, why:"Right. Arria-formula meetings, started in 1992, let members hear informally from civil society and experts."},
+     {t:"A penholder meeting", why:"A penholder is the member who drafts resolutions on a file. That is a role, not a type of informal briefing."},
+     {t:"A veto-initiative debate", why:"Under the 2022 veto initiative, the General Assembly meets after a veto. It is not an informal Council briefing."}]},
+   {id:"e4u9-cp06", lesson:"e4u9-l3", level:3, q:"A powerful state dislikes parts of a Security Council draft. Yet it still lobbies hard for a resolution instead of acting alone, because other states see the Council as the rightful voice on peace and security. Which reading fits best?", options:[
+     {t:"The Council is purely a tool of the P5; this is output legitimacy", why:"Hurd’s point is that the Council’s power rests partly on legitimacy, not only on the P5’s power. And the state is responding to beliefs, not to results."},
+     {t:"Article 108 forces states to seek the Council’s approval; this is normative legitimacy", why:"Article 108 is about amending the Charter. Normative legitimacy asks whether an IO deserves belief; the scenario is about what states actually believe."},
+     {t:"Hurd: the Council’s power rests partly on legitimacy, here sociological legitimacy", ok:true, why:"Right. This combines Lesson 3 (Hurd’s *After Anarchy*) with Lesson 5 (sociological versus normative legitimacy)."},
+     {t:"The Council has become a zombie organisation", why:"Zombie IOs are formally alive but do little. A body whose approval states fight for is the opposite."}]},
+   {id:"e4u9-cp07", lesson:"e4u9-l4", level:1, q:"Six ASEAN members want to open their digital-trade markets now; four are not ready. Which ASEAN Charter provision lets the willing members move first?", options:[
+     {t:"Qualified majority voting", why:"That is an EU rule. ASEAN’s basic rule is consultation and consensus."},
+     {t:"The right to intervene in grave circumstances", why:"That is Article 4(h) of the AU’s Constitutive Act, not an ASEAN economic rule."},
+     {t:"A democracy clause allowing suspension", why:"That is the OAS’s Inter-American Democratic Charter. ASEAN has no suspension rule of that kind."},
+     {t:"The “ASEAN minus X” formula", ok:true, why:"Right. For some economic commitments the Charter allows “ASEAN minus X”, letting willing members go ahead while consensus remains the basic rule."}]},
+   {id:"e4u9-cp08", lesson:"e4u9-l4", level:2, q:"In the EU Council, a proposal is backed by 16 of the 27 member states, which together hold 60% of the EU’s population. Does it reach a qualified majority?", options:[
+     {t:"No: 16 states clear 55%, but 60% of the population is below the 65% needed", ok:true, why:"Right. A qualified majority needs 55% of member states (15 of 27) representing at least 65% of the EU’s population. The population test fails."},
+     {t:"Yes: 16 states is a majority, and a majority of the 27 states is enough on its own", why:"A qualified majority has two tests, states and population. A majority of states alone is not enough."},
+     {t:"Yes: 60% of the population is above the 55% threshold for passing", why:"This mixes up the thresholds: 55% applies to the number of states, 65% to population."},
+     {t:"No: a qualified majority needs every one of the 27 states to agree", why:"That describes unanimity, which applies only to some areas, such as foreign policy and taxation."}]},
+   {id:"e4u9-cp09", lesson:"e4u9-l4", level:3, q:"Organisation A is a regional body with a broad agenda. Organisation B handles only one commodity’s trade rules. According to Hooghe, Marks and colleagues, which pattern is most likely?", options:[
+     {t:"A pools more by majority voting, and B delegates more power to its secretariat and court", why:"This reverses the finding. Broad, general-purpose bodies tend to delegate more but pool less."},
+     {t:"Both delegate and pool to the same degree, because the two always go together", why:"Their data show that delegation and pooling do not simply go together."},
+     {t:"A delegates more to its secretariat and court but pools less; B decides more by majority", ok:true, why:"Right. This combines Lesson 2 (measuring IO authority) with Lesson 4 (pooling and delegation). No treaty can settle a broad agenda in advance, but governments fear being outvoted on sensitive matters."},
+     {t:"Neither has any authority, because IOs are just their members", why:"The lesson lists this as a misconception. Authority varies hugely, and it can be measured."}]},
+   {id:"e4u9-cp10", lesson:"e4u9-l5", level:2, q:"Within a year after a leading power leaves an IO, two of its close allies leave too. What do von Borzyskowski and Vabulas’s findings suggest about this pattern?", options:[
+     {t:"Exits are driven mainly by rising nationalism in the allied states", why:"Their study found exits linked mainly to geopolitics rather than nationalism."},
+     {t:"Exits are linked mainly to geopolitics: others follow a leading power out", ok:true, why:"Right. Their dataset of more than 200 withdrawals found that others often follow when a leading power leaves."},
+     {t:"Withdrawals are so rare that this case has no real precedent at all", why:"Withdrawal is more common than often assumed: they found more than 200 between 1945 and 2014."},
+     {t:"The IO will now certainly have to close down within a few years", why:"Many IOs survive the exit of large members by cutting costs, finding new donors or reforming; some become zombies."}]},
+   {id:"e4u9-cp11", lesson:"e4u9-l5", level:3, q:"Two environmental regimes have similar budgets. In Regime 1, cutting the pollutant is cheap and benefits everyone. In Regime 2, costs fall heavily on a few states that gain little. Which prediction fits Miles, Underdal and colleagues?", options:[
+     {t:"Both should be equally effective, because their budgets are equal", why:"Their study found that success depended on the kind of problem, not on budget alone."},
+     {t:"Regime 2 should be more effective, because conflict between states creates urgency", why:"Conflict-laden (“malign”) problems made success harder, not easier."},
+     {t:"Neither can be judged, because effectiveness can’t be measured", why:"They did measure it, against a no-regime counterfactual and a collective optimum."},
+     {t:"Regime 1 is more likely to change behaviour, because its problem is benign", ok:true, why:"Right. They found regimes often made a real difference, but success depended on how malign or benign the problem was."}]},
+   {id:"e4u9-cp12", lesson:"e4u9-l5", level:3, q:"In the same year, one large member leaves an IO and three other states apply to join it. What does the unit suggest an analyst should conclude?", options:[
+     {t:"Who wants in says as much about legitimacy as who wants out; study what triggered the exit and how the IO adapts, since withdrawal rarely kills an IO", ok:true, why:"Right. The lesson treats entry as the mirror image of exit and warns that many IOs survive large exits."},
+     {t:"The IO has lost all legitimacy, because a large member left", why:"One exit doesn’t settle legitimacy, especially when others are queuing to join."},
+     {t:"The applications prove the IO solves its problem well", why:"States join for voice, markets and status. Entry is a sign about legitimacy, not proof of effectiveness."},
+     {t:"Exit and entry cancel out, so there is nothing to explain", why:"Both moves need explaining: what triggered the exit, and what draws the applicants."}]},
+  ],
   codex:[
    {id:"theories-of-international-organization", title:"Theories of international organisation", aka:["why states create IOs","IO theory","functionalism and its successors"], tags:["international organisations","theory","cooperation"],
     summary:"The main answers to why states create international organisations and design them as they do: functionalism, neofunctionalism, rational design, principal–agent theory, and constructivist and realist alternatives.",
@@ -1153,7 +1215,7 @@ ICA.addUnit({
      {t:"*After Hegemony*", why:"That was Robert Keohane’s 1984 book on institutions after US dominance."},
      {t:"*Rules for the World*", why:"That was Barnett and Finnemore’s 2004 book on IOs as bureaucracies."}]},
    {id:"e4u9-q02", lesson:"e4u9-l1", level:2, q:"Which statement best captures how Haas’s neofunctionalism differed from Mitrany’s functionalism?", options:[
-     {t:"Haas argued that integration is driven by self-interested political actors, not only by technical experts", ok:true, why:"Yes. Haas added interest groups, parties and supranational officials as the engines of spillover."},
+     {t:"Haas stressed self-interested political actors, not only experts", ok:true, why:"Yes. Haas added interest groups, parties and supranational officials as the engines of spillover."},
      {t:"Haas rejected any idea that cooperation could spread from one sector to another", why:"The opposite: spillover between sectors is the core of his theory."},
      {t:"Haas favoured world government over regional integration", why:"Haas studied regional integration, especially in Europe; he did not advocate world government."},
      {t:"Haas believed only great powers could create international organisations", why:"That is closer to some realist views, not neofunctionalism."}]},
@@ -1163,22 +1225,22 @@ ICA.addUnit({
      {t:"Centralisation", why:"Centralisation (whether a central body gathers information, decides or enforces) is one of the five."},
      {t:"Flexibility", why:"Flexibility (whether rules can be adapted or escaped) is one of the five."}]},
    {id:"e4u9-q04", lesson:"e4u9-l1", level:2, q:"In the 1980s a group of states created a commission to share scientific data on a fish stock. Today the commission is useful for data sharing, so a student concludes “states created it to share data”. What is the main weakness of this reasoning?", options:[
-     {t:"It reads the founders’ intentions from a current effect without checking the historical record", ok:true, why:"Right. This is the functionalist fallacy Wendt and others warned about; the negotiating record would show the actual purpose."},
+     {t:"It reads intentions from a current effect", ok:true, why:"Right. It infers the founders’ intentions without checking the historical record. This is the functionalist fallacy Wendt and others warned about; the negotiating record would show the actual purpose."},
      {t:"Commissions can never share data", why:"They can and do; the problem is the inference about intentions."},
      {t:"Rational design theory forbids explaining IOs by their functions", why:"Rational design does explain IOs by the problems they solve; the weakness is assuming without evidence."},
      {t:"Only realists may study fisheries", why:"Any theory can be applied; this is not the issue."}]},
    {id:"e4u9-q05", lesson:"e4u9-l1", level:2, q:"In principal–agent theory, what is “slippage”?", options:[
-     {t:"An agent moving policy towards its own preferences rather than its principals’", ok:true, why:"Right. Slippage and shirking are the two forms of agency slack."},
-     {t:"An agent putting in less effort than agreed", why:"That is shirking, the other form of agency slack."},
+     {t:"An agent moving policy towards its own preferences", ok:true, why:"Right. Slippage and shirking are the two forms of agency slack."},
+     {t:"An agent putting in less effort than its principals agreed", why:"That is shirking, the other form of agency slack."},
      {t:"Principals cutting an agent’s budget", why:"That is a control mechanism, not a form of slack."},
      {t:"States leaving an organisation", why:"That is withdrawal, a different concept."}]},
    {id:"e4u9-q06", lesson:"e4u9-l1", level:3, q:"An agency’s members are deeply split over a controversial programme. Its secretariat continues the programme, and members cannot agree on a resolution to stop it. Which concept best explains the secretariat’s freedom?", options:[
      {t:"The collective principal problem", ok:true, why:"Right. With many principals who disagree, no instruction or sanction can be agreed, so the agent gains room to act."},
-     {t:"Ramification", why:"Ramification is Mitrany’s idea of cooperation spreading between fields, not about controlling staff."},
-     {t:"Weighted voting", why:"Voting rules matter, but the key is that divided principals cannot act together."},
-     {t:"Functional spillover", why:"Spillover concerns integration spreading across sectors, not agency autonomy."}]},
+     {t:"Mitrany’s ramification", why:"Ramification is Mitrany’s idea of cooperation spreading between fields, not about controlling staff."},
+     {t:"Weighted voting on the board", why:"Voting rules matter, but the key is that divided principals cannot act together."},
+     {t:"Functional spillover between sectors", why:"Spillover concerns integration spreading across sectors, not agency autonomy."}]},
    {id:"e4u9-q07", lesson:"e4u9-l1", level:3, q:"Negotiators expect large shocks in a commodity market but cannot predict when. According to rational design, which feature are they most likely to include in a new agreement?", options:[
-     {t:"Safeguard or escape clauses that let members suspend commitments temporarily", ok:true, why:"Right. Uncertainty about the state of the world predicts more flexibility."},
+     {t:"Safeguard or escape clauses", ok:true, why:"Right. They let members suspend commitments temporarily. Uncertainty about the state of the world predicts more flexibility."},
      {t:"A ban on any future amendment", why:"Rigidity is what uncertainty argues against."},
      {t:"Membership limited to one state", why:"An agreement needs several members; uncertainty does not predict this."},
      {t:"A permanent veto for the smallest member", why:"Nothing in the uncertainty argument predicts this control rule."}]},
@@ -1188,9 +1250,9 @@ ICA.addUnit({
      {t:"Rational design", why:"Rational design explains institutional features, not referendum politics."},
      {t:"Neofunctionalism", why:"Neofunctionalism predicts spreading integration; Haas himself struggled to explain reversals."}]},
    {id:"e4u9-q09", lesson:"e4u9-l1", level:1, q:"Which is usually described as the oldest international organisation still working today?", options:[
-     {t:"The Central Commission for the Navigation of the Rhine (1815)", ok:true, why:"Right. Created by the Congress of Vienna, it still meets in Strasbourg."},
+     {t:"The Rhine navigation commission (1815)", ok:true, why:"Right. The Central Commission for the Navigation of the Rhine was created by the Congress of Vienna; it still meets in Strasbourg."},
      {t:"The United Nations (1945)", why:"The UN is much younger than several technical bodies."},
-     {t:"The World Health Organization (1948)", why:"WHO was created after the Second World War."},
+     {t:"The World Health Organization in Geneva (1948)", why:"WHO was created after the Second World War."},
      {t:"The League of Nations (1920)", why:"The League was dissolved in 1946."}]},
    /* Lesson 2 */
    {id:"e4u9-q10", lesson:"e4u9-l2", level:1, q:"In which book did Barnett and Finnemore fully develop their view of IOs as bureaucracies?", options:[
@@ -1219,18 +1281,18 @@ ICA.addUnit({
      {t:"Always from the largest borrower country", why:"No such rule exists."},
      {t:"Rotating among all regions every five years", why:"There is no formal rotation; the convention has favoured Europe and the US."}]},
    {id:"e4u9-q15", lesson:"e4u9-l2", level:3, q:"Priya argues that the IMF’s strict conditions in Asia in 1997–98 simply reflected what its largest shareholders wanted. Which response is most in the spirit of Barnett and Finnemore?", options:[
-     {t:"Staff economists’ shared ideas and professional culture also shaped what conditions looked necessary", ok:true, why:"Right. Constructivists look at expertise and culture inside the IO, not only at shareholder control."},
+     {t:"Staff ideas and culture also shaped them", ok:true, why:"Right. Staff economists’ shared ideas and professional culture shaped what conditions looked necessary. Constructivists look at expertise and culture inside the IO, not only at shareholder control."},
      {t:"The IMF had no staff in 1997", why:"Factually wrong, and beside the point."},
      {t:"Shareholders have no influence on the IMF", why:"Too strong; constructivists accept state influence but add the bureaucracy’s own role."},
      {t:"The conditions were chosen by the borrowers alone", why:"Conditions were negotiated with the Fund; this does not engage the argument."}]},
    {id:"e4u9-q16", lesson:"e4u9-l2", level:2, q:"Why was the 50% IMF quota increase approved in December 2023 still not in effect in early November 2026?", options:[
-     {t:"Members holding 85% of quotas, including the United States, had not yet consented", ok:true, why:"Right. Without US consent the 85% threshold cannot be reached, and Congress had not authorised it."},
+     {t:"The US had not yet given its consent", ok:true, why:"Right. It needs consent from members holding 85% of quotas. Without US consent that threshold cannot be reached, and Congress had not authorised it."},
      {t:"The Managing Director vetoed it", why:"The Managing Director has no veto over quota reform."},
      {t:"The Security Council blocked it", why:"The Security Council has no role in IMF quotas."},
      {t:"It needed every member’s unanimous consent", why:"It needs consent from members with 85% of quotas, not unanimity."}]},
    {id:"e4u9-q17", lesson:"e4u9-l2", level:2, q:"What did Catherine Weaver mean by the World Bank’s “hypocrisy trap”?", options:[
-     {t:"Contradictory demands from shareholders and a staff culture rewarding lending create a lasting gap between what the Bank says and does", ok:true, why:"Right. She calls it organised hypocrisy, built into its situation."},
-     {t:"The Bank secretly refuses to lend to anyone", why:"The Bank lends large sums; the gap is between stated goals and practice."},
+     {t:"A lasting gap between what the Bank says and does", ok:true, why:"Right. Contradictory demands from shareholders and a staff culture rewarding lending create the gap. She calls it organised hypocrisy, built into its situation."},
+     {t:"The Bank secretly refuses to lend to anyone who asks", why:"The Bank lends large sums; the gap is between stated goals and practice."},
      {t:"Borrowers lie about their economies", why:"Her argument is about the Bank itself, not borrowers."},
      {t:"The Bank was created by mistake", why:"Not her claim."}]},
    {id:"e4u9-q18", lesson:"e4u9-l2", level:3, q:"An agency judges its success only by indicators its own staff designed and dismisses outside evaluations as uninformed. Which pathology is this, and what reform fits it best?", options:[
@@ -1240,23 +1302,23 @@ ICA.addUnit({
      {t:"Mission creep; double the mandate", why:"Expanding the mandate does nothing about feedback."}]},
    /* Lesson 3 */
    {id:"e4u9-q19", lesson:"e4u9-l3", level:1, q:"Under Article 97 of the UN Charter, how is the Secretary-General appointed?", options:[
-     {t:"By the General Assembly on the recommendation of the Security Council", ok:true, why:"Right. The Council’s recommendation means any permanent member can block a candidate."},
+     {t:"By the Assembly, on the Council’s recommendation", ok:true, why:"Right. The General Assembly appoints on the Security Council’s recommendation, which means any permanent member can block a candidate."},
      {t:"By the Security Council alone", why:"The Council recommends; the Assembly appoints."},
      {t:"By a vote of all UN staff", why:"Staff have no vote in the selection."},
-     {t:"By the International Court of Justice", why:"The Court has no role in the selection."}]},
+     {t:"By the judges of the International Court of Justice", why:"The Court has no role in the selection."}]},
    {id:"e4u9-q20", lesson:"e4u9-l3", level:2, q:"What is a “penholder” in the Security Council?", options:[
-     {t:"The member that drafts resolutions and leads negotiations on a particular file", ok:true, why:"Right. France, the UK and the US hold most pens, sometimes with an elected co-penholder."},
+     {t:"The member that drafts texts on a particular file", ok:true, why:"Right. It drafts resolutions and leads negotiations. France, the UK and the US hold most pens, sometimes with an elected co-penholder."},
      {t:"The member holding the monthly presidency", why:"The presidency rotates monthly; the pen on a file is a different role."},
      {t:"The Secretary-General’s chief of staff", why:"Penholders are Council members, not Secretariat officials."},
-     {t:"The member that signs treaties for the UN", why:"No such role exists."}]},
+     {t:"The member that signs treaties on behalf of the whole UN", why:"No such role exists."}]},
    {id:"e4u9-q21", lesson:"e4u9-l3", level:2, q:"Which group opposes new permanent Security Council seats and prefers more elected seats, some with longer terms?", options:[
      {t:"Uniting for Consensus", ok:true, why:"Right. Members include Italy, Pakistan, Argentina, Mexico and the Republic of Korea."},
      {t:"The G4", why:"The G4 seek permanent seats for Brazil, Germany, India and Japan."},
      {t:"The African Union", why:"The AU’s Ezulwini Consensus asks for two permanent African seats."},
      {t:"The permanent five", why:"The P5 are not a reform group with this platform."}]},
    {id:"e4u9-q22", lesson:"e4u9-l3", level:3, q:"A commentator says Security Council reform will pass once two-thirds of the General Assembly votes for a model. What is missing from this account?", options:[
-     {t:"Ratification by two-thirds of members, including all five permanent members, is also required", ok:true, why:"Right. Article 108 requires both adoption and ratification, giving each permanent member a veto over reform."},
-     {t:"The Secretary-General must also sign it", why:"The Secretary-General has no such role."},
+     {t:"Ratification by two-thirds, including the P5", ok:true, why:"Right. Two-thirds of members, including all five permanent members, must also ratify. Article 108 requires both adoption and ratification, giving each permanent member a veto over reform."},
+     {t:"The Secretary-General must also sign it into force", why:"The Secretary-General has no such role."},
      {t:"The ICJ must approve it", why:"The Court plays no part in Charter amendments."},
      {t:"Nothing: an Assembly vote is enough", why:"An Assembly vote alone does not amend the Charter."}]},
    {id:"e4u9-q23", lesson:"e4u9-l3", level:2, q:"In Secretary-General selection, why do later straw polls use colour-coded ballots?", options:[
@@ -1270,17 +1332,17 @@ ICA.addUnit({
      {t:"Earmarked donations", why:"Earmarked money is voluntary, tied to donor-chosen purposes."},
      {t:"Private philanthropy", why:"Private gifts are voluntary and not paid by members."}]},
    {id:"e4u9-q25", lesson:"e4u9-l3", level:3, q:"An agency finds that its emergency budget is well funded but its core research unit is starving, though members approved both. Which explanation is most likely?", options:[
-     {t:"Donors earmark their voluntary money for emergencies they choose, leaving unearmarked core work underfunded", ok:true, why:"Right. Earmarking shifts priorities towards what donors want to fund."},
+     {t:"Donors earmark voluntary money for emergencies", ok:true, why:"Right. Donors choose emergencies, leaving unearmarked core work underfunded. Earmarking shifts priorities towards what donors want to fund."},
      {t:"Assessed contributions can only be spent on research", why:"Assessed funds are not restricted this way."},
      {t:"The Security Council has frozen research", why:"The Council does not manage agency research budgets."},
      {t:"The research unit is funded by weighted votes", why:"Weighted voting is a decision rule, not a source of money."}]},
    {id:"e4u9-q26", lesson:"e4u9-l3", level:2, q:"What did the General Assembly approve for the UN regular budget in December 2025?", options:[
-     {t:"About US$3.45 billion for 2026, following a revised proposal with deep cuts to resources and posts", ok:true, why:"Right. UN News reported that it largely reflected a proposal with about 15% less in resources and nearly 19% fewer staff."},
+     {t:"About US$3.45 billion, with deep cuts to posts", ok:true, why:"Right. The 2026 budget followed a revised proposal with deep cuts to resources and posts. UN News reported that it largely reflected a proposal with about 15% less in resources and nearly 19% fewer staff."},
      {t:"A doubling of the budget to fund new peace operations", why:"The opposite: 2026 brought deep cuts."},
      {t:"Abolition of assessed contributions", why:"Assessed contributions remain the basis of the regular budget."},
      {t:"A budget paid entirely by the five permanent members", why:"All members pay according to the scale of assessments."}]},
    {id:"e4u9-q27", lesson:"e4u9-l3", level:1, q:"Since a 2022 General Assembly resolution, what happens after a permanent member casts a veto?", options:[
-     {t:"The General Assembly meets to debate it, and the state that vetoed is invited to explain", ok:true, why:"Right. This is the “veto initiative”, resolution 76/262 of April 2022."},
+     {t:"The General Assembly meets to debate it", ok:true, why:"Right. The state that vetoed is invited to explain. This is the “veto initiative”, resolution 76/262 of April 2022."},
      {t:"The veto is automatically overturned", why:"Nothing overturns a veto; the debate adds accountability only."},
      {t:"The state loses its permanent seat", why:"No such rule exists."},
      {t:"The Secretary-General decides the matter", why:"The Secretary-General has no power to decide in place of the Council."}]},
@@ -1291,7 +1353,7 @@ ICA.addUnit({
      {t:"The Bangkok and Vienna Declarations (1993)", why:"These are human rights declarations, not court rulings."},
      {t:"The Maastricht and Lisbon Treaties", why:"These are treaties, not court rulings."}]},
    {id:"e4u9-q29", lesson:"e4u9-l4", level:2, q:"Under the ASEAN Charter, what is the basic rule for decision-making?", options:[
-     {t:"Consultation and consensus, with an “ASEAN minus X” option for some economic commitments", ok:true, why:"Right. Article 20 sets consensus; the minus-X formula lets willing members move first in economics."},
+     {t:"Consultation and consensus", ok:true, why:"Right. Article 20 sets consensus; an “ASEAN minus X” option lets willing members move first on some economic commitments."},
      {t:"Qualified majority voting weighted by population", why:"That is an EU rule, not ASEAN’s."},
      {t:"Decisions by the ASEAN Secretary-General alone", why:"The Secretary-General has no such power."},
      {t:"Weighted votes according to GDP", why:"ASEAN does not weight votes."}]},
@@ -1311,28 +1373,28 @@ ICA.addUnit({
      {t:"Indonesia and Malaysia", why:"Neither is an SCO member."},
      {t:"Turkey and Egypt", why:"They are dialogue partners, not members."}]},
    {id:"e4u9-q33", lesson:"e4u9-l4", level:3, q:"Tomás writes that “the SCO is an authoritarian club, full stop”. How should a neutral seminar paper handle this claim?", options:[
-     {t:"Attribute it (for example to scholars such as Ambrosio) and set it beside members’ own account and other readings", ok:true, why:"Right. Contested labels should be attributed and balanced with other views."},
+     {t:"Attribute it and set it beside other readings", ok:true, why:"Right. Attribute it, for example to scholars such as Ambrosio, and set it beside members’ own account. Contested labels should be attributed and balanced with other views."},
      {t:"Repeat it as fact, since some scholars agree", why:"Agreement by some scholars does not make a contested label a fact."},
      {t:"Leave the SCO out entirely", why:"Avoiding a topic is not neutrality; describing the debate is."},
      {t:"Replace it with the members’ official view as fact", why:"That simply swaps one side for the other."}]},
    {id:"e4u9-q34", lesson:"e4u9-l4", level:2, q:"In Moravcsik’s terms, what is the difference between pooling and delegation?", options:[
-     {t:"Pooling is deciding together by majority; delegation is handing powers to independent bodies", ok:true, why:"Right. EU qualified majority voting is pooling; the Commission’s agenda power and the Court are delegation."},
+     {t:"Pooling is majority voting; delegation empowers independent bodies", ok:true, why:"Right. Pooling is deciding together by majority; delegation is handing powers to independent bodies. EU qualified majority voting is pooling; the Commission’s agenda power and the Court are delegation."},
      {t:"Pooling is sharing money; delegation is sharing armies", why:"Neither definition matches his use of the terms."},
-     {t:"Pooling happens only in ASEAN; delegation only in the AU", why:"Both concepts were developed mainly with the EU in mind."},
+     {t:"Pooling happens only in ASEAN, and delegation only in the AU", why:"Both concepts were developed mainly with the EU in mind."},
      {t:"They mean the same thing", why:"They are distinct ways of transferring sovereignty."}]},
    {id:"e4u9-q35", lesson:"e4u9-l4", level:2, q:"What does the OAS’s Inter-American Democratic Charter (2001) allow?", options:[
-     {t:"Suspension of a member whose democratic order has been interrupted, by a two-thirds vote", ok:true, why:"Right. Honduras was suspended after its 2009 coup and readmitted in 2011."},
+     {t:"Suspending a member whose democracy is interrupted", ok:true, why:"Right. Suspension needs a two-thirds vote. Honduras was suspended after its 2009 coup and readmitted in 2011."},
      {t:"Military intervention to restore democracy without any vote", why:"The Charter provides diplomatic steps and suspension, not automatic force."},
      {t:"Expulsion of any member that criticises the OAS", why:"No such rule exists."},
      {t:"A common currency for the Americas", why:"The Charter concerns democracy, not money."}]},
    {id:"e4u9-q36", lesson:"e4u9-l4", level:3, q:"East Asian trade and investment networks grew strongly for decades before formal agreements such as RCEP came into force in 2022. Which distinction does this illustrate?", options:[
-     {t:"Regionalisation (market-driven integration) can run ahead of regionalism (state-led projects)", ok:true, why:"Right. East Asia was long described as highly regionalised but lightly institutionalised."},
+     {t:"Regionalisation can run ahead of regionalism", ok:true, why:"Right. Market-driven integration (regionalisation) can run ahead of state-led projects (regionalism). East Asia was long described as highly regionalised but lightly institutionalised."},
      {t:"Pooling versus delegation", why:"That distinction concerns ways of sharing sovereignty in institutions."},
-     {t:"Input versus output legitimacy", why:"That concerns how institutions are judged."},
+     {t:"Input versus output legitimacy of institutions", why:"That concerns how institutions are judged."},
      {t:"Regime shifting versus competitive creation", why:"That concerns contesting institutions."}]},
    /* Lesson 5 */
    {id:"e4u9-q37", lesson:"e4u9-l5", level:1, q:"Which state is the only one ever to have announced its withdrawal from the UN itself?", options:[
-     {t:"Indonesia, in 1965 (it resumed cooperation in 1966)", ok:true, why:"Right. It protested at Malaysia’s election to the Security Council."},
+     {t:"Indonesia, in 1965", ok:true, why:"Right. It resumed cooperation in 1966. It protested at Malaysia’s election to the Security Council."},
      {t:"The United States, in 2026", why:"The US withdrew from several UN bodies and agencies in 2025–26, but not from the UN itself."},
      {t:"Russia, in 2022", why:"Russia was expelled from the Council of Europe in 2022, not the UN."},
      {t:"The United Kingdom, in 2020", why:"The UK left the EU in 2020, not the UN."}]},
@@ -1352,20 +1414,20 @@ ICA.addUnit({
      {t:"Orchestration", why:"Orchestration is an IO steering other actors, not states moving an issue."},
      {t:"Withdrawal", why:"No state left WIPO."}]},
    {id:"e4u9-q41", lesson:"e4u9-l5", level:2, q:"What did Julia Gray (2018) mean by “zombie” international organisations?", options:[
-     {t:"IOs that formally continue, with meetings and staff, but do little", ok:true, why:"Right. Institutions are easier to create than to close."},
+     {t:"IOs that continue formally but do little", ok:true, why:"Right. They keep meetings and staff. Institutions are easier to create than to close."},
      {t:"IOs that have been formally dissolved", why:"Those are dead IOs, a different category."},
      {t:"IOs that have expanded their mandates rapidly", why:"That is closer to mission creep."},
      {t:"IOs run by former heads of state", why:"Not her meaning."}]},
    {id:"e4u9-q42", lesson:"e4u9-l5", level:3, q:"A study finds that countries in a regional disease programme still had high infection rates and concludes the programme failed. What should a careful evaluator ask first?", options:[
-     {t:"What would rates have been without the programme, given that it may have targeted the hardest-hit countries?", ok:true, why:"Right. Selection effects mean you need a counterfactual comparison before judging effectiveness."},
+     {t:"What rates would have been without the programme", ok:true, why:"Right. It may have targeted the hardest-hit countries. Selection effects mean you need a counterfactual comparison before judging effectiveness."},
      {t:"How many staff the programme employs", why:"Staff numbers say little about effects."},
      {t:"Whether the programme’s logo is well known", why:"Visibility is not effectiveness."},
-     {t:"Whether its budget is assessed or voluntary", why:"Funding type matters for control, but it is not the first question about effects."}]},
+     {t:"Whether its budget comes from assessed or voluntary funds", why:"Funding type matters for control, but it is not the first question about effects."}]},
    {id:"e4u9-q43", lesson:"e4u9-l5", level:3, q:"Ana evaluates the Mekong River Commission. Which verdict is best written for a seminar?", options:[
-     {t:"“Effective as a source of shared data and science, limited in stopping disputed dams, because it has no veto and key upstream states are not members.”", ok:true, why:"Right. Conditional, specific and explained by design and membership."},
+     {t:"“Useful for shared data, weak on dams, given its design.”", ok:true, why:"Right. Conditional and specific; a full verdict would explain that it has no veto and key upstream states are not members."},
      {t:"“A useless talking shop.”", why:"Loaded and unsupported; it ignores evidence of its data role."},
      {t:"“A perfect model for every river.”", why:"Sweeping and unsupported; it ignores its known limits."},
-     {t:"“Impossible to judge, so no verdict is possible.”", why:"Evaluation is hard but possible with clear criteria and evidence."}]},
+     {t:"“Impossible to judge fairly, so no verdict of any kind is possible.”", why:"Evaluation is hard but possible with clear criteria and evidence."}]},
    {id:"e4u9-q44", lesson:"e4u9-l5", level:2, q:"In Hirschman’s vocabulary, a member that stays in an IO but cuts its voluntary funding to press for reform is mainly using…", options:[
      {t:"Voice", ok:true, why:"Right. It stays a member and uses pressure to change the organisation."},
      {t:"Exit", why:"Exit means leaving, which the member has not done."},

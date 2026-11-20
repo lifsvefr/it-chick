@@ -134,9 +134,9 @@ ICA.addUnit({
       ["Is every even number greater than 2 the sum of two primes?","Mathematical proof","This needs a proof. No number of examples would settle it (and nobody has proved it yet)."]
     ]},
     {id:"t4u1-l1-x4", type:"mcq", q:"Kenji’s company asks him whether a four-day week would reduce staff burnout in their own offices. A university team is studying how workload affects the hormones involved in stress. Which statement is accurate?", options:[
-      {t:"Kenji’s project is applied research; the university’s is closer to basic research", ok:true, why:"Kenji wants to solve a specific practical problem. The university team wants to understand a general mechanism, which may only be useful later."},
+      {t:"Kenji’s is applied research; the university’s is closer to basic research", ok:true, why:"Kenji wants to solve a specific practical problem. The university team wants to understand a general mechanism, which may only be useful later."},
       {t:"Only the university’s project counts as research", why:"Applied projects are research too, if they use a systematic method and are shared for checking."},
-      {t:"Both are basic research because both involve stress", why:"The topic doesn’t decide it; the purpose does. Kenji’s question is about a practical decision."},
+      {t:"Both are basic research, because both projects study what causes stress at work", why:"The topic doesn’t decide it; the purpose does. Kenji’s question is about a practical decision."},
       {t:"Kenji’s is basic research because it is small", why:"Size has nothing to do with it. Basic versus applied is about whether the aim is understanding or solving a practical problem."}
     ]},
     {id:"t4u1-l1-x5", type:"spot", q:"Lucía wrote this paragraph in a report. Tap each claim that **misunderstands how research works**.", ask:"misunderstands research", parts:[
@@ -152,9 +152,9 @@ ICA.addUnit({
       {t:"Interview studies with teachers don’t count, because they aren’t experiments.", flag:true, why:"Qualitative research is research. Interviews answer different questions from experiments (for example, why a garden worked in one school and not another)."}
     ]},
     {id:"t4u1-l1-x6", type:"mcq", q:"Which of these is the best reason that sharing work for others to check is part of what makes research “research”?", options:[
-      {t:"Other people can find mistakes, repeat the work and build on it, which is how claims become reliable", ok:true, why:"Scrutiny by others is the error-correcting step. Private work, however careful, can’t benefit from it."},
+      {t:"Others can find mistakes, repeat the work and build on it", ok:true, why:"This is how claims become reliable. Scrutiny by others is the error-correcting step. Private work, however careful, can’t benefit from it."},
       {t:"Researchers are required to become famous", why:"Fame isn’t the point; plenty of solid research is read by few people. The point is that it can be checked."},
-      {t:"Publishing makes the results true", why:"Publishing doesn’t make anything true. It makes the work open to checking, which is different."},
+      {t:"Once results are published, that makes them true and final", why:"Publishing doesn’t make anything true. It makes the work open to checking, which is different."},
       {t:"Only published work is protected by copyright", why:"Unpublished work is protected by copyright too in most countries; copyright isn’t the reason research is shared."}
     ]}
    ],
@@ -293,7 +293,7 @@ ICA.addUnit({
       ["Editorial","A journal editor’s short opinion or introduction","Editorials are opinion or commentary, not peer-reviewed research."]
     ]},
     {id:"t4u1-l2-x5", type:"mcq", q:"Tomás is writing a report on how well a clean-cooking-stove programme worked in his region last year. A database search finds no peer-reviewed articles about it. What should he do next?", options:[
-      {t:"Look for grey literature: the programme’s own evaluation, government or NGO reports, and official data, judging each carefully", ok:true, why:"Recent, local programmes are often only documented in grey literature, which appears much sooner than journal articles."},
+      {t:"Look for grey literature: the programme’s own evaluation, official reports and data", ok:true, why:"Recent, local programmes are often only documented in grey literature, which appears much sooner than journal articles. Judge each one carefully."},
       {t:"Conclude there is no evidence and stop", why:"No journal articles yet doesn’t mean no evidence. The information cycle says reports and data come first."},
       {t:"Use only news stories, because they’re more recent", why:"News may help, but it usually summarises reports. Go to the reports and data themselves."},
       {t:"Cite peer-reviewed articles about stove programmes in other countries as if they described his region", why:"They can give context, but presenting them as evidence about his region would be misleading."}
@@ -433,15 +433,15 @@ ICA.addUnit({
       {v:420, tol:1, why:"That’s 840 ÷ 2: dividing by the number of years. The JIF divides by the number of citable items."}
     ], hint2:"Use only the two years before 2025 for both the citations and the items."},
     {id:"t4u1-l3-x5", type:"mcq", q:"A hiring panel ranks two applicants by the average impact factor of the journals they published in. Which response best reflects the San Francisco Declaration on Research Assessment (DORA)?", options:[
-      {t:"Judge the applicants’ actual work and contributions, not the impact factors of the journals it appeared in", ok:true, why:"DORA’s main recommendation is not to use journal-based metrics as a stand-in for the quality of individual articles or to judge individuals in hiring, promotion or funding."},
+      {t:"Judge the applicants’ actual work, not the journals it appeared in", ok:true, why:"DORA’s main recommendation is not to use journal-based metrics as a stand-in for the quality of individual articles or to judge individuals in hiring, promotion or funding."},
       {t:"Use the impact factor, because it measures the quality of each article", why:"It’s an average for a journal over two years. Individual articles in the same journal vary enormously."},
       {t:"Use the impact factor, but only for applicants from different fields", why:"Comparing across fields is the worst use: citation habits differ greatly between fields."},
       {t:"Count only papers in journals with an impact factor above 10", why:"That rewards where someone published, not what they found, and excludes good journals in fields with low citation rates."}
     ]},
     {id:"t4u1-l3-x6", type:"mcq", q:"Priya reads: “This study was peer-reviewed, so its results are correct.” What’s the most accurate correction?", options:[
-      {t:"Peer review checks that the work is reasonable and well done; whether the results are correct depends on later testing and other studies", ok:true, why:"Peer review is a quality filter. Replication and the wider body of evidence decide whether a finding holds."},
+      {t:"Peer review checks the work is sound; later testing shows if the results are correct", ok:true, why:"Peer review is a quality filter. Replication and the wider body of evidence decide whether a finding holds."},
       {t:"Peer review is meaningless, so the study is probably wrong", why:"Overcorrecting. Peer review catches many problems and is a real quality signal; it just isn’t proof."},
-      {t:"Peer-reviewed results are always correct unless the paper is retracted", why:"Many findings turn out to be wrong or overstated without any retraction; retraction is for serious problems."},
+      {t:"Peer-reviewed results are always correct, unless the journal later decides to retract the paper", why:"Many findings turn out to be wrong or overstated without any retraction; retraction is for serious problems."},
       {t:"Only double-anonymous review makes results correct", why:"No review model guarantees correctness; they differ in how they handle bias, not in producing truth."}
     ]},
     {id:"t4u1-l3-x7", type:"mcq", q:"A journal’s website says “Indexed in Scopus and Web of Science”. What should you do with that claim?", options:[
@@ -534,7 +534,7 @@ ICA.addUnit({
       "Many research funders now require the work they pay for to be open access. Two examples:",
       {list:[
         "**Plan S**, launched in 2018 by cOAlition S (a group of mainly European national funders and charities), requires funded publications from 2021 onwards to be open access immediately, in OA journals, on OA platforms or in repositories without an embargo.",
-        "**In the United States**, a 2022 guidance memo from the White House Office of Science and Technology Policy asked federal agencies to make publications from research they fund free to read without an embargo, with updated agency policies due by the end of 2025 (the National Institutes of Health brought its policy forward to July 2025). Each agency sets its own details."
+        "**In the United States**, a 2022 guidance memo from the White House Office of Science and Technology Policy asked federal agencies to make publications from research they fund free to read without an embargo, with updated agency policies due to take effect by 31 December 2025 (the National Institutes of Health brought its policy forward to July 2025). Each agency sets its own details, so check the current policy of the agency that funds the work."
       ]},
       "Policies differ by country, funder and institution, and they change, so researchers check their own funder’s current rules. For you as a reader, the trend means more research is free to read every year, and more of it is available as accepted manuscripts in repositories.",
       {key:"Free to read isn’t the same as reliable, and paywalled isn’t the same as better. Access tells you who can read it; Lessons 3 and 5 tell you how far to trust it."}
@@ -555,16 +555,16 @@ ICA.addUnit({
       {t:"Correction notice linked to the article", why:"Corrections can only follow publication, when readers spot an error."}
     ]},
     {id:"t4u1-l4-x3", type:"mcq", q:"Dmitri finds a diagram in an open access article and wants to reuse it in a training booklet his company will sell. What does he need to check first?", options:[
-      {t:"The article’s licence: CC BY allows commercial reuse with credit; a licence with NC or no open licence does not", ok:true, why:"Free to read doesn’t automatically mean free to reuse. The licence sets the terms."},
-      {t:"Nothing: open access means anyone can reuse it for anything", why:"Only some OA licences (such as CC BY) allow commercial reuse, and bronze OA has no open licence at all."},
+      {t:"The article’s licence, because it decides whether commercial reuse is allowed", ok:true, why:"Free to read doesn’t automatically mean free to reuse. The licence sets the terms. CC BY allows commercial reuse with credit; a licence with NC, or no open licence, does not."},
+      {t:"Nothing, because open access means anyone can reuse it for any purpose they like", why:"Only some OA licences (such as CC BY) allow commercial reuse, and bronze OA has no open licence at all."},
       {t:"Whether the article has an impact factor", why:"The impact factor is about citations to the journal; it says nothing about reuse rights."},
       {t:"Whether the article was peer-reviewed", why:"Peer review affects how much to trust the content, not whether he may reuse it."}
     ]},
     {id:"t4u1-l4-x4", type:"mcq", q:"Mei sees a news story: “Scientists discover that a common spice prevents dementia.” The link goes to a medRxiv paper posted ten days ago. What is the most sensible reading?", options:[
-      {t:"It’s an unreviewed early report; check for a published version and what other experts say, and treat the claim as provisional", ok:true, why:"medRxiv papers haven’t been peer-reviewed, and the server itself warns they shouldn’t be reported as established information."},
-      {t:"It’s established, because it’s on a scientific website", why:"Preprint servers screen submissions but don’t peer-review them."},
+      {t:"It’s an unreviewed early report, so treat the claim as provisional for now", ok:true, why:"Check for a published version and what other experts say. medRxiv papers haven’t been peer-reviewed, and the server itself warns they shouldn’t be reported as established information."},
+      {t:"It’s an established finding, because it’s posted on a scientific website", why:"Preprint servers screen submissions but don’t peer-review them."},
       {t:"It must be false, because preprints are unreliable", why:"Preprints are legitimate research, just not yet checked. Many are later published with few changes."},
-      {t:"It’s reliable if the news story quotes the author", why:"The author’s confidence doesn’t replace review by independent experts."}
+      {t:"It’s reliable, as long as the news story quotes one of the paper’s authors", why:"The author’s confidence doesn’t replace review by independent experts."}
     ]},
     {id:"t4u1-l4-x5", type:"spot", q:"Ana asked a group chat how to read a paywalled article. Tap each suggestion that is **illegal or wrong**.", ask:"illegal or wrong", parts:[
       {t:"“Search the title in Google Scholar and check ‘All versions’.”", flag:false, why:"Legal and often successful: Scholar links to repository and author copies."},
@@ -729,15 +729,15 @@ ICA.addUnit({
       {t:"Decide how much weight the paper can carry in her brief", why:"Only after checking status and newer evidence can she judge how far to rely on it."}
     ]},
     {id:"t4u1-l5-x6", type:"mcq", q:"A research team discovers a coding error that reverses the main finding of their own published paper. They ask the journal to retract it. What does this tell you?", options:[
-      {t:"The team is behaving with integrity; retraction for honest error is how the record is corrected", ok:true, why:"COPE’s guidelines include honest error as a reason to retract. Self-correction is good practice."},
+      {t:"The team is acting with integrity by correcting the record", ok:true, why:"Retraction for honest error is how the record is corrected. COPE’s guidelines include honest error as a reason to retract. Self-correction is good practice."},
       {t:"The team committed misconduct", why:"An honest error isn’t misconduct. Misconduct means fabrication, falsification or plagiarism."},
       {t:"All their other papers are unreliable", why:"One error doesn’t make all their work unreliable; their willingness to correct is a good sign."},
-      {t:"The journal should quietly delete the paper", why:"Retracted papers stay visible and clearly marked, with a notice explaining why, so the record stays complete."}
+      {t:"The journal should quietly delete the paper so nobody is misled", why:"Retracted papers stay visible and clearly marked, with a notice explaining why, so the record stays complete."}
     ]},
     {id:"t4u1-l5-x7", type:"mcq", q:"Lucía cited a paper in her thesis draft. She now learns it was retracted last month because the data couldn’t be verified. What should she do?", options:[
-      {t:"Check what she used it for, then remove or replace the citation, or cite it as retracted if she discusses the retraction", ok:true, why:"A retracted finding shouldn’t support an argument. Citing it as retracted is fine when the retraction itself is relevant."},
+      {t:"Remove or replace the citation, unless she is discussing the retraction itself", ok:true, why:"Check what she used it for. A retracted finding shouldn’t support an argument. Citing it as retracted is fine when the retraction itself is relevant."},
       {t:"Keep it: it was valid when she found it", why:"What matters is whether the finding can be relied on now. It can’t."},
-      {t:"Keep it, but use the PDF she downloaded before the retraction", why:"The old PDF doesn’t change the paper’s status; it just hides the notice."},
+      {t:"Keep it, but quote from the PDF she downloaded before the retraction was announced", why:"The old PDF doesn’t change the paper’s status; it just hides the notice."},
       {t:"Delete her whole thesis chapter", why:"An overreaction. Usually only the claims that depended on that paper need attention."}
     ]}
    ],
@@ -753,6 +753,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t4u1-q02","t4u1-q05","t4u1-q10","t4u1-q13","t4u1-q15","t4u1-q19","t4u1-q22","t4u1-q24","t4u1-q28","t4u1-q31","t4u1-q35","t4u1-q38"],
+  cpBank:[
+   {id:"t4u1-cp01", lesson:"t4u1-l1", level:1, q:"Wanjiru counts cyclists at five junctions every morning for six months. She writes down exactly how she counted and posts her data and report online. What most clearly makes this research in the academic sense?", options:[
+     {t:"It took six months of careful counting every morning", why:"Time spent isn’t a defining feature. A long project can still be everyday research, and a short one can be systematic."},
+     {t:"It produced numbers and counts rather than interview notes", why:"Qualitative work such as interviews is research too. What matters is a fitting method, honest evidence and sharing for checking."},
+     {t:"Her stated method and shared data let others check it", ok:true, why:"A clear question, a method someone else could follow, and sharing for scrutiny are what turn private looking-up into research."},
+     {t:"It was done by a trained researcher at a university", why:"Research happens in agencies, companies, NGOs and communities too. The setting doesn’t make work research; the way it is done does."}]},
+   {id:"t4u1-cp02", lesson:"t4u1-l2", level:1, q:"Rafael’s question is: **“How did teachers in 1970s Nairobi describe their working conditions?”** Which source is primary for this question?", options:[
+     {t:"A 2015 history book about schools in Kenya", why:"A modern historian’s book about the period is secondary for this question: it interprets the evidence rather than being it."},
+     {t:"An encyclopedia entry on education in East Africa", why:"An encyclopedia summarises other sources, so it’s tertiary. Use it to get your bearings, not as evidence."},
+     {t:"A review article comparing teacher pay across Africa", why:"A review summarises earlier studies, so it’s secondary. It also answers a different question (pay, not how teachers described their work)."},
+     {t:"Letters that Nairobi teachers wrote to a newspaper in 1974", ok:true, why:"Documents from the time, written by the people the question is about, are the primary evidence for a historical question like this."}]},
+   {id:"t4u1-cp03", lesson:"t4u1-l4", level:1, q:"A university repository record for an article says **“Version: accepted manuscript”**. What are you most likely reading?", options:[
+     {t:"The peer-reviewed text without the publisher’s layout", ok:true, why:"An accepted manuscript has the peer-reviewed content but not the publisher’s editing, typesetting or page numbers. Repositories often hold it legally (green OA)."},
+     {t:"The author’s first draft, before any peer review", why:"That is the author’s original, or preprint. The accepted manuscript comes after review and revision."},
+     {t:"The publisher’s final formatted version with page numbers", why:"That is the version of record. It comes after the accepted manuscript, once copyediting and typesetting are done."},
+     {t:"A summary of the article written by repository staff", why:"Repositories hold the authors’ own versions of the full text, not summaries written by staff."}]},
+   {id:"t4u1-cp04", lesson:"t4u1-l3", level:2, q:"A journal’s 2026 impact factor is **2.5**. It published **90** citable items in 2024 and **110** in 2025. How many 2026 citations did those items receive?", options:[
+     {t:"225", why:"This uses the 2024 items only (90 × 2.5). The impact factor counts citable items from **both** previous years: 90 + 110."},
+     {t:"500", ok:true, why:"Impact factor = citations ÷ citable items, so citations = 2.5 × (90 + 110) = 2.5 × 200 = 500."},
+     {t:"275", why:"This uses the 2025 items only (110 × 2.5). Both previous years go into the count of items."},
+     {t:"80", why:"This divides the items by the impact factor (200 ÷ 2.5). The impact factor is citations ÷ items, so you multiply to get citations."}]},
+   {id:"t4u1-cp05", lesson:"t4u1-l3", level:3, q:"Rahim compares two papers. One is in a cell biology journal with an impact factor of 9.0. The other is in a mathematics journal with an impact factor of 1.2. A colleague says the first paper must be stronger. What is the best reply?", options:[
+     {t:"Agreed: a journal with a higher impact factor checks its papers more strictly", why:"The impact factor counts citations, not how strict review is. It says nothing direct about how one paper was checked."},
+     {t:"The opposite: low-impact journals are more careful because they have less pressure", why:"There is no rule like this either. Neither number tells you how good a particular paper is."},
+     {t:"Citation habits differ by field; judge each paper on its own merits", ok:true, why:"Comparing impact factors across fields is meaningless, and an average hides uneven citations. The questions from Lesson 5 (who, how, others’ responses, still standing?) judge the article itself."},
+     {t:"Only the mathematics paper can be judged, because its field cites less", why:"Both papers can be judged the same way: by who wrote them, how they were done, and how others have responded."}]},
+   {id:"t4u1-cp06", lesson:"t4u1-l4", level:2, q:"A journal run by a university press is free to read online under CC BY. It charges authors nothing, because a national research council pays its costs. Which open access route is this?", options:[
+     {t:"Green", why:"Green OA is when an author deposits a version in a repository. Here the journal itself publishes the article openly."},
+     {t:"Bronze", why:"Bronze means free to read with no open licence, and access can be withdrawn. This journal uses CC BY."},
+     {t:"Hybrid", why:"Hybrid is a subscription journal that opens single articles for a fee. This journal is fully open and charges no fee."},
+     {t:"Diamond", ok:true, why:"Diamond OA charges neither readers nor authors; costs are covered by universities, societies, governments or foundations."}]},
+   {id:"t4u1-cp07", lesson:"t4u1-l5", level:2, q:"After a week-long power cut, a town council asks two questions: (a) how many homes lost power, and for how long, and (b) how older residents coped. Which pairing fits best?", options:[
+     {t:"(a) the electricity company’s records, analysed as numbers; (b) interviews with older residents", ok:true, why:"The method follows the question. Records give quantitative answers on scale; residents have the authority of lived experience on what coping was like."},
+     {t:"(a) interviews with older residents; (b) the electricity company’s records", why:"This swaps the methods. A few interviews can’t count homes, and company records can’t show how people experienced the cut."},
+     {t:"Both from the electricity company, because it is the official source", why:"Authority is contextual. The company has authority on outages, not on what residents lived through."},
+     {t:"Both from a survey of engineers, because they are the experts", why:"Engineers have expertise on the network, but the second question asks about residents’ experience, where residents themselves have authority."}]},
+   {id:"t4u1-cp08", lesson:"t4u1-l5", level:2, q:"Sung-min checks a long-established subscription journal published by a respected scholarly society. It isn’t listed in the DOAJ. What should he conclude from that alone?", options:[
+     {t:"It is probably predatory, because good journals are in the DOAJ", why:"The DOAJ lists open access journals only. A missing listing is not proof of anything, least of all for a subscription journal."},
+     {t:"Very little, since the DOAJ lists open access journals only", ok:true, why:"Being in the DOAJ is a good sign for an OA journal; not being in it says nothing on its own. He should use other checks, such as the ISSN Portal or indexes."},
+     {t:"It has been removed from the DOAJ for breaking its rules", why:"There’s no evidence of removal. A subscription journal would never be in the DOAJ in the first place."},
+     {t:"It is safe, because society journals can’t be predatory", why:"A society publisher is a good sign, but no single feature proves a journal good. Here, though, the DOAJ result simply tells him nothing."}]},
+   {id:"t4u1-cp09", lesson:"t4u1-l5", level:2, q:"A journal links this notice to a paper: **“The labels on the two lines in Figure 2 were swapped. The results and conclusions are unchanged.”** What kind of notice is this, and what is the paper’s status?", options:[
+     {t:"A retraction; the paper should no longer be relied on", why:"A retraction is for findings that can’t be relied on or for ethics breaches. A swapped label that leaves the conclusions intact doesn’t meet that bar."},
+     {t:"An expression of concern; the editors doubt the findings", why:"An expression of concern signals serious doubts, often during an investigation. This notice says the conclusions are unchanged."},
+     {t:"A correction; the paper still stands, with the fix linked", ok:true, why:"A correction (erratum or corrigendum) fixes an error that doesn’t undermine the main findings. The article stands."},
+     {t:"No formal notice; the old version has been quietly deleted", why:"Journals fix the record openly with linked notices. They don’t silently delete published articles."}]},
+   {id:"t4u1-cp10", lesson:"t4u1-l4", level:3, q:"Nadia posts a preprint on bioRxiv; it appears within two days. Ten months later, the peer-reviewed journal version is published with a larger sample and softer conclusions. Which statement is accurate?", options:[
+     {t:"The preprint is more trustworthy, because it shows the results before editors changed them", why:"Changes after review are usually corrections and improvements, not distortion. The preprint is the less-checked version."},
+     {t:"The two versions are equivalent, because the authors are the same", why:"Same authors don’t mean same content. Peer review and revision can change methods, samples and conclusions, as here."},
+     {t:"Ten months is suspiciously slow, which suggests the journal is not legitimate", why:"Months to a year is normal for peer review and revision. Very **fast** guaranteed review is the warning sign."},
+     {t:"Screening isn’t peer review; cite the journal version and note what changed", ok:true, why:"Preprint servers screen but don’t peer review. The version of record is the one to cite, and differences between versions are worth noticing."}]},
+   {id:"t4u1-cp11", lesson:"t4u1-l1", level:3, q:"A 2016 study reported a large effect. Three later teams found little or none, and a 2023 review concludes the effect is small. The 2016 paper has 900 citations. A blogger says, “900 citations prove it’s right.” What is the best reply?", options:[
+     {t:"Citations can be critical; the review of all the studies is a better guide", ok:true, why:"A paper is one turn in a conversation. A high citation count can include citations that challenge it, and a review summarising many studies shows the weight of evidence."},
+     {t:"The blogger is right: so many citations mean experts accept the finding", why:"Being cited means being discussed, not being accepted. Here the later studies and the review point the other way."},
+     {t:"The later studies cancel it out, so nothing at all can be known about the effect", why:"Disagreement is normal. The review gives a reasoned answer (a small effect); uncertainty comes in degrees."},
+     {t:"Only the 2016 paper really counts, because it was the first to report it", why:"Being first doesn’t make a finding correct. Findings become reliable when different teams reach similar results."}]},
+   {id:"t4u1-cp12", lesson:"t4u1-l2", level:3, q:"Chen finds a think-tank report on a fuel tax. It was funded by a car industry association and not peer-reviewed, but it describes its method and lets readers download the data. What is the fairest way to use it?", options:[
+     {t:"Ignore it completely, because work that hasn’t been peer-reviewed isn’t real research", why:"Grey literature is often valuable, fast and local. Lack of peer review is a reason for care, not automatic rejection."},
+     {t:"Rely on it fully, because its method and data are open for anyone to check", why:"Open data are a good sign, but the funder has an interest in the result. The method and conclusions still need checking against other sources."},
+     {t:"Use it with care: weigh the funder’s interest, check the data, compare sources", ok:true, why:"These are the questions for judging grey literature: who produced it and why, is the method described, is the data available, and does it agree with other sources?"},
+     {t:"Use only the parts that support the argument you have already chosen", why:"Choosing evidence to fit a conclusion is the bias careful research avoids. Judge the whole report on its method and evidence."}]},
+  ],
   codex:[
    {id:"what-is-research", title:"What research is", aka:["research","scholarly research","inquiry","basic and applied research","empirical research"], tags:["research"],
     summary:"Research as systematic inquiry that creates new knowledge and shares it for checking, in every field, not only laboratories.",
@@ -936,7 +998,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Definitions.** The Budapest Open Access Initiative (2002) defined OA as free availability on the public internet permitting any users to read, download, copy, distribute, print, search or link to full texts and use them for any lawful purpose, without financial, legal or technical barriers other than internet access, with authors keeping control over the integrity of their work and the right to be acknowledged and cited. That is closer to CC BY than to “free to read”.",
-      "**Policy.** Plan S (cOAlition S, announced September 2018) requires funded publications from 2021 to be OA immediately via OA journals, OA platforms or repositories with no embargo. In the US, the 2022 OSTP memo asked federal agencies to make funded publications and supporting data freely available on publication, with updated agency policies due by the end of 2025 (NIH’s took effect in July 2025); each agency sets the details. Many other countries and funders have their own rules; check the current version for any project.",
+      "**Policy.** Plan S (cOAlition S, announced September 2018) requires funded publications from 2021 to be OA immediately via OA journals, OA platforms or repositories with no embargo. In the US, the 2022 OSTP memo asked federal agencies to make funded publications and supporting data freely available on publication, with updated agency policies due to take effect by 31 December 2025 (NIH’s took effect in July 2025); each agency sets the details, so check the funder’s current policy. Many other countries and funders have their own rules; check the current version for any project.",
       "**Economics.** APCs shift costs from readers to authors, which can exclude researchers without funding; waivers, institutional agreements and diamond OA respond to that. Hybrid OA has been criticised for letting publishers charge both subscriptions and APCs. These debates are live, and reasonable people disagree on the best model.",
       "**Licences matter for reuse**, including text and data mining and AI training. Check the specific licence of each article rather than the journal’s general policy.",
       "**Preprints in practice:** look for “now published in” links, compare versions, and note that health preprints in particular should not be treated as established findings."
@@ -1099,8 +1161,8 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t4u1-q01", lesson:"t4u1-l1", level:1, q:"In the academic sense, what makes something research?", options:[
-     {t:"Systematic inquiry that creates new knowledge and is shared so others can check it", ok:true, why:"A clear question, a fitting method, honest evidence and sharing for scrutiny are the defining features."},
-     {t:"Reading many sources on a topic", why:"That’s everyday research: learning what is known, not creating something new."},
+     {t:"Systematic inquiry that creates new knowledge and shares it for checking", ok:true, why:"A clear question, a fitting method, honest evidence and sharing for scrutiny are the defining features."},
+     {t:"Reading many sources on a topic carefully and summarising what they all say", why:"That’s everyday research: learning what is known, not creating something new."},
      {t:"Any work done in a laboratory", why:"Labs are one setting. Archives, interviews, proofs and fieldwork are research too, and lab work isn’t research unless it’s systematic and shared."},
      {t:"Any article with a reference list", why:"References show the writer used sources; they don’t make the work new or systematic."}
    ]},
@@ -1117,21 +1179,21 @@ ICA.addUnit({
      {t:"Tertiary research", why:"“Tertiary” describes sources that summarise others, not a kind of study."}
    ]},
    {id:"t4u1-q04", lesson:"t4u1-l1", level:1, q:"What does the ACRL idea of “Scholarship as Conversation” mean for a reader?", options:[
-     {t:"A single paper is one contribution in an ongoing discussion, so look at how it relates to other work", ok:true, why:"Scholars respond to and build on each other’s work over time; a single paper is rarely the last word."},
-     {t:"Researchers should write in a chatty style", why:"The frame is about how knowledge develops, not about writing style."},
+     {t:"Each paper is one turn in an ongoing discussion, so read it alongside related work", ok:true, why:"Scholars respond to and build on each other’s work over time; a single paper is rarely the last word."},
+     {t:"Researchers should write in a friendly, chatty style so more readers join in", why:"The frame is about how knowledge develops, not about writing style."},
      {t:"Only spoken conference talks count as scholarship", why:"Articles, books and reports are all part of the conversation."},
-     {t:"The newest paper always overrides the older ones", why:"Newer isn’t automatically better. The conversation weighs all the evidence."}
+     {t:"The newest paper in the discussion always overrides and replaces all the older ones", why:"Newer isn’t automatically better. The conversation weighs all the evidence."}
    ]},
    {id:"t4u1-q05", lesson:"t4u1-l1", level:3, q:"Tomás hears: “Scientists keep changing their advice on this, so research can’t be trusted.” What is the best response?", options:[
-     {t:"Updating conclusions when new evidence arrives is how research corrects itself; ask how strong the current evidence is", ok:true, why:"Change is the system working. Some conclusions are well established, others provisional; the strength of evidence varies."},
-     {t:"He’s right: if advice changes, none of it is reliable", why:"This ignores that many conclusions rest on consistent evidence from many independent teams."},
-     {t:"Research never changes its conclusions once published", why:"It does, and should, when new evidence appears."},
+     {t:"Changing advice is research correcting itself; ask how strong the current evidence is", ok:true, why:"Change is the system working. Some conclusions are well established, others provisional; the strength of evidence varies."},
+     {t:"He’s right: if the advice keeps changing, none of it can be relied on at all", why:"This ignores that many conclusions rest on consistent evidence from many independent teams."},
+     {t:"Real research never changes its conclusions once it is published, so this isn’t research", why:"It does, and should, when new evidence appears."},
      {t:"Only trust the very first study on any topic", why:"Early studies are often the least reliable; later work refines or corrects them."}
    ]},
    {id:"t4u1-q06", lesson:"t4u1-l1", level:3, q:"Mei wants to know whether a new reading programme helps children. She finds one exciting study from a single school. What should she do before recommending it?", options:[
-     {t:"Look for other studies and any review that combines them, and check where this study sits among them", ok:true, why:"One study is one turn in the conversation; reviews of many studies give a better picture."},
-     {t:"Recommend it: one positive study is proof", why:"Research gives evidence, not proof, and results from one school may not generalise."},
-     {t:"Reject it because it’s only one study", why:"One study is weak evidence, not no evidence. Look for more before deciding."},
+     {t:"Look for other studies and reviews, and see where this one fits among them", ok:true, why:"One study is one turn in the conversation; reviews of many studies give a better picture."},
+     {t:"Recommend it straight away: one positive study from a real school is proof", why:"Research gives evidence, not proof, and results from one school may not generalise."},
+     {t:"Reject it completely, because a study from only one school can’t tell her anything", why:"One study is weak evidence, not no evidence. Look for more before deciding."},
      {t:"Ask a chatbot whether the programme works and use its answer", why:"A chatbot may summarise or invent; she still needs to check the actual studies."}
    ]},
    {id:"t4u1-q07", lesson:"t4u1-l1", level:2, q:"Which question would interviews answer best?", options:[
@@ -1142,9 +1204,9 @@ ICA.addUnit({
    ]},
    {id:"t4u1-q08", lesson:"t4u1-l1", level:1, q:"Why is “sharing the work for others to check” part of what makes research reliable?", options:[
      {t:"Others can find errors, repeat the work and build on it", ok:true, why:"Scrutiny by other people is the error-correcting step in the research cycle."},
-     {t:"Shared work is automatically correct", why:"Sharing makes checking possible; it doesn’t make anything correct by itself."},
+     {t:"Once work is shared publicly, it is automatically correct", why:"Sharing makes checking possible; it doesn’t make anything correct by itself."},
      {t:"It makes the researcher famous, which proves expertise", why:"Fame isn’t evidence of correctness."},
-     {t:"Unshared work is illegal", why:"It isn’t illegal; it just can’t benefit from others’ checking."}
+     {t:"Keeping research unshared is against the law in most countries", why:"It isn’t illegal; it just can’t benefit from others’ checking."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t4u1-q09", lesson:"t4u1-l2", level:1, q:"Which is a tertiary source?", options:[
@@ -1160,10 +1222,10 @@ ICA.addUnit({
      {t:"Not a source, because it isn’t written", why:"Recordings, images and objects are sources too."}
    ]},
    {id:"t4u1-q11", lesson:"t4u1-l2", level:1, q:"Which feature best identifies a scholarly source?", options:[
-     {t:"Written by experts for experts, with full references, usually peer-reviewed", ok:true, why:"Audience, documentation and expert checking are the defining features."},
-     {t:"Long and hard to read", why:"Difficulty isn’t a defining feature; some scholarly articles are short and clear."},
+     {t:"Written by experts for experts, with full references", ok:true, why:"Audience and full documentation are the defining features. Most are also peer-reviewed, which means other experts checked them."},
+     {t:"Long, hard to read and full of technical words", why:"Difficulty isn’t a defining feature; some scholarly articles are short and clear."},
      {t:"Has an impressive title", why:"Titles can imitate scholarly style; look at authors, references and review."},
-     {t:"Appears in search results first", why:"Ranking says nothing about whether a source is scholarly."}
+     {t:"Appears near the top of search results and has many views", why:"Ranking says nothing about whether a source is scholarly."}
    ]},
    {id:"t4u1-q12", lesson:"t4u1-l2", level:2, q:"Which is grey literature?", options:[
      {t:"A national statistics office’s annual report on household income", ok:true, why:"Produced by a government body whose main job isn’t publishing: grey literature."},
@@ -1172,16 +1234,16 @@ ICA.addUnit({
      {t:"A newspaper column", why:"That’s a popular source from a commercial publisher."}
    ]},
    {id:"t4u1-q13", lesson:"t4u1-l2", level:3, q:"Kenji is writing about a flood that happened three weeks ago. He finds no journal articles about it. Why?", options:[
-     {t:"Journal articles usually take months or years to appear; for now, look for agency reports, data and news", ok:true, why:"The information cycle: scholarly sources come later. Grey literature and news come first."},
+     {t:"Journal articles take months or years to appear; use reports, data and news for now", ok:true, why:"The information cycle: scholarly sources come later. Grey literature and news come first."},
      {t:"The flood wasn’t important enough for research", why:"Timing, not importance, explains the gap."},
-     {t:"Journals don’t publish on natural disasters", why:"They do, once research has been done and reviewed."},
-     {t:"He needs a paid database; free searches never show journal articles", why:"Free tools do show journal articles; there just aren’t any yet."}
+     {t:"Journals don’t publish research about floods or other natural disasters", why:"They do, once research has been done and reviewed."},
+     {t:"He needs a paid database, because free search tools never show any journal articles", why:"Free tools do show journal articles; there just aren’t any yet."}
    ]},
    {id:"t4u1-q14", lesson:"t4u1-l2", level:2, q:"Why do careful systematic reviews also search grey literature such as reports, theses and trial registries?", options:[
-     {t:"Studies with null or disappointing results are less likely to appear in journals, so leaving them out can bias the review", ok:true, why:"This is publication bias; grey literature helps balance the evidence."},
-     {t:"Grey literature is always more reliable than journals", why:"It varies in quality; it’s searched for completeness, not because it’s better."},
+     {t:"Studies with null results often never reach journals, so leaving them out biases the review", ok:true, why:"This is publication bias; grey literature helps balance the evidence."},
+     {t:"Grey literature is always more reliable than journal articles, so careful reviews should prefer it", why:"It varies in quality; it’s searched for completeness, not because it’s better."},
      {t:"Journals forbid reviews from citing other journals", why:"They don’t. Reviews cite many journal articles."},
-     {t:"Grey literature is peer-reviewed more strictly", why:"Much grey literature isn’t peer-reviewed at all."}
+     {t:"Grey literature goes through stricter peer review than most journal articles do", why:"Much grey literature isn’t peer-reviewed at all."}
    ]},
    {id:"t4u1-q15", lesson:"t4u1-l2", level:2, q:"In which field are peer-reviewed conference papers often the main way new results are published?", options:[
      {t:"Computer science", ok:true, why:"In computing (and some engineering fields), major conferences are central, selective, peer-reviewed venues."},
@@ -1190,15 +1252,15 @@ ICA.addUnit({
      {t:"Literary studies", why:"Monographs and journal articles dominate."}
    ]},
    {id:"t4u1-q16", lesson:"t4u1-l2", level:3, q:"Priya finds an editorial in a top medical journal arguing for a new screening test. What should she keep in mind?", options:[
-     {t:"An editorial is opinion, usually not peer-reviewed research; look for the studies it relies on", ok:true, why:"Article type matters. Editorials argue; research articles and reviews provide the evidence."},
-     {t:"Everything in a top journal is peer-reviewed research", why:"Journals publish editorials, letters, news and commentary as well as research."},
+     {t:"An editorial is opinion; look for the studies it relies on", ok:true, why:"Editorials are usually not peer-reviewed research. Article type matters. Editorials argue; research articles and reviews provide the evidence."},
+     {t:"Everything published in a top journal is peer-reviewed research", why:"Journals publish editorials, letters, news and commentary as well as research."},
      {t:"Editorials are tertiary sources and can be ignored", why:"They can be useful, as opinions from experts; they just aren’t research evidence."},
      {t:"It must be wrong because it’s opinion", why:"Opinions can be well informed. She should check the evidence behind it."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t4u1-q17", lesson:"t4u1-l3", level:1, q:"What is a desk rejection?", options:[
      {t:"A journal editor rejects a paper without sending it to peer reviewers", ok:true, why:"Editors screen submissions first; many are rejected at this stage for scope or quality."},
-     {t:"Reviewers reject a paper after reading it", why:"That’s rejection after review, not desk rejection."},
+     {t:"Peer reviewers reject a paper after reading it in full and writing reports", why:"That’s rejection after review, not desk rejection."},
      {t:"An author withdraws a paper", why:"That’s a withdrawal by the author."},
      {t:"A paper is retracted after publication", why:"Retraction happens after publication; desk rejection happens at the very start."}
    ]},
@@ -1215,10 +1277,10 @@ ICA.addUnit({
      {t:"225", why:"That’s 450 ÷ 2: dividing by years instead of items."}
    ]},
    {id:"t4u1-q20", lesson:"t4u1-l3", level:2, q:"Why is a journal’s impact factor a poor guide to the quality of one article in it?", options:[
-     {t:"It’s a journal-wide average of very uneven citation counts, so it says little about any single paper", ok:true, why:"A few highly cited papers can raise the average; most papers in the journal may be cited far less."},
-     {t:"It’s calculated by reviewers of each article", why:"It’s calculated by Clarivate from citation data, not by reviewers."},
+     {t:"It’s an average for the whole journal, so it says little about any single paper", ok:true, why:"Citation counts are very uneven. A few highly cited papers can raise the average; most papers in the journal may be cited far less."},
+     {t:"It’s worked out separately by the peer reviewers of each article, so it varies too much", why:"It’s calculated by Clarivate from citation data, not by reviewers."},
      {t:"It counts only citations from the same journal", why:"It counts citations from across the indexed literature."},
-     {t:"It is random", why:"It follows a defined formula; the problem is what it measures, not randomness."}
+     {t:"It is a random number the publisher assigns each year", why:"It follows a defined formula; the problem is what it measures, not randomness."}
    ]},
    {id:"t4u1-q21", lesson:"t4u1-l3", level:2, q:"Which problem is ordinary peer review **least** likely to catch?", options:[
      {t:"Data that was fabricated but looks plausible", ok:true, why:"Reviewers rarely see raw data and aren’t investigators; skilful fabrication often passes."},
@@ -1227,7 +1289,7 @@ ICA.addUnit({
      {t:"Ignoring the most important earlier study", why:"Experts in the field usually notice missing key literature."}
    ]},
    {id:"t4u1-q22", lesson:"t4u1-l3", level:3, q:"A university promotion committee plans to score staff by the impact factors of the journals they published in. Which statement reflects DORA?", options:[
-     {t:"They should assess the work itself, not use journal metrics as a stand-in for its quality", ok:true, why:"DORA’s general recommendation is not to use journal-based metrics such as impact factors to judge individual articles or researchers."},
+     {t:"Assess the work itself, not the journals it appeared in", ok:true, why:"DORA’s general recommendation is not to use journal-based metrics such as impact factors to judge individual articles or researchers."},
      {t:"Impact factors are fine for individuals if averaged over many papers", why:"Averaging journal averages still measures venues, not the person’s work."},
      {t:"DORA requires all journals to stop calculating impact factors", why:"DORA is about how metrics are used in assessment, not a ban on calculating them."},
      {t:"DORA applies only to journals, not universities", why:"Its recommendations are addressed to funders, institutions, publishers, metric providers and researchers."}
@@ -1239,9 +1301,9 @@ ICA.addUnit({
      {t:"Whether the paper is true", why:"Review judges whether the work is sound; whether findings hold needs replication."}
    ]},
    {id:"t4u1-q24", lesson:"t4u1-l3", level:3, q:"In a 2015 project, about 100 psychology studies were repeated; 97% of the originals had significant results but only 36% of the repetitions did. What is the most accurate lesson?", options:[
-     {t:"Passing peer review doesn’t guarantee a result will replicate, so look for repeated findings", ok:true, why:"The project showed that published, reviewed findings often didn’t repeat, which is why replication matters."},
+     {t:"Peer review doesn’t guarantee a result will replicate", ok:true, why:"The project showed that published, reviewed findings often didn’t repeat, which is why replication matters. So look for findings that have been repeated."},
      {t:"64% of psychology is fraud", why:"Failed replications have many causes (chance, small samples, differences in setting); they aren’t evidence of fraud."},
-     {t:"Peer review is useless and should be abolished", why:"The project prompted reforms to strengthen research, not to abandon review."},
+     {t:"Peer review is useless and should be abolished in psychology", why:"The project prompted reforms to strengthen research, not to abandon review."},
      {t:"The repeated studies must have been done badly", why:"The replications were carefully planned; dismissing them misses the point."}
    ]},
    /* ---- Lesson 4 ---- */
@@ -1254,7 +1316,7 @@ ICA.addUnit({
    {id:"t4u1-q26", lesson:"t4u1-l4", level:1, q:"What is a version of record?", options:[
      {t:"The publisher’s final, formally published version of an article", ok:true, why:"It’s the copyedited, typeset version, usually with a DOI, that you normally cite."},
      {t:"The first draft an author posts online", why:"That’s the author’s original or preprint."},
-     {t:"The text after peer review but before copyediting", why:"That’s the accepted manuscript."},
+     {t:"The author’s accepted text after peer review but before copyediting", why:"That’s the accepted manuscript."},
      {t:"A recording of a conference talk", why:"Not a version of a journal article."}
    ]},
    {id:"t4u1-q27", lesson:"t4u1-l4", level:2, q:"An article is free to read on the publisher’s site but has no open licence. What kind of access is this?", options:[
@@ -1264,8 +1326,8 @@ ICA.addUnit({
      {t:"Hybrid", why:"Hybrid OA articles are paid-for OA in subscription journals, normally with an open licence."}
    ]},
    {id:"t4u1-q28", lesson:"t4u1-l4", level:3, q:"Oluwaseun reads a medRxiv paper claiming a common drug halves hospital stays. A friend says, “It’s on a science website, so it’s been checked.” What’s accurate?", options:[
-     {t:"medRxiv screens papers but doesn’t peer-review them, and warns they shouldn’t guide clinical practice", ok:true, why:"Preprint servers do basic screening only; the findings are unchecked by reviewers."},
-     {t:"Everything on medRxiv has passed peer review", why:"medRxiv is a preprint server: papers are posted before peer review."},
+     {t:"medRxiv only screens papers; they haven’t been peer-reviewed", ok:true, why:"Preprint servers do basic screening only; the findings are unchecked by reviewers. medRxiv also warns they shouldn’t guide clinical practice."},
+     {t:"Everything posted on medRxiv has already passed full peer review", why:"medRxiv is a preprint server: papers are posted before peer review."},
      {t:"medRxiv papers are fake", why:"They are genuine research reports, just not yet reviewed."},
      {t:"It’s reliable once it has been shared widely", why:"Popularity isn’t a check on quality."}
    ]},
@@ -1276,14 +1338,14 @@ ICA.addUnit({
      {t:"Screenshot the abstract and assume that’s the paper", why:"The abstract isn’t the paper, and reading only it can mislead."}
    ]},
    {id:"t4u1-q30", lesson:"t4u1-l4", level:3, q:"Hana wants to reuse a chart from an open access article in a workshop handout she will sell. The article uses CC BY-NC. What applies?", options:[
-     {t:"NC means non-commercial, so selling the handout isn’t covered; she needs permission or another source", ok:true, why:"CC BY-NC allows reuse with credit only for non-commercial purposes."},
-     {t:"Open access means any reuse is allowed", why:"Reuse depends on the licence; NC rules out commercial use."},
-     {t:"She can reuse it if she doesn’t credit the authors", why:"All CC licences require credit (attribution)."},
+     {t:"Selling isn’t allowed under NC; she needs permission or another source", ok:true, why:"NC means non-commercial. CC BY-NC allows reuse with credit only for non-commercial purposes."},
+     {t:"Open access means any reuse is allowed, including selling it", why:"Reuse depends on the licence; NC rules out commercial use."},
+     {t:"She can sell the handout if she removes the authors’ names and credit line", why:"All CC licences require credit (attribution)."},
      {t:"Charts are never covered by licences", why:"Figures in articles are covered by the article’s licence and copyright."}
    ]},
    {id:"t4u1-q31", lesson:"t4u1-l4", level:2, q:"What does Plan S, launched in 2018 by a group of research funders, require?", options:[
-     {t:"Publications from research they fund must be open access immediately, from 2021", ok:true, why:"Plan S requires immediate OA via OA journals, platforms or repositories with no embargo."},
-     {t:"All journals worldwide must stop charging fees", why:"Plan S applies to research funded by its members, not to all journals."},
+     {t:"Research they fund must be open access immediately, from 2021", ok:true, why:"Plan S requires immediate OA via OA journals, platforms or repositories with no embargo."},
+     {t:"All journals worldwide must stop charging any fees to authors or readers", why:"Plan S applies to research funded by its members, not to all journals."},
      {t:"Preprints must replace journals", why:"Plan S is about open access, not abolishing journals."},
      {t:"Researchers must pay to read research", why:"The opposite: it aims to make funded research free to read."}
    ]},
@@ -1295,9 +1357,9 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t4u1-q33", lesson:"t4u1-l5", level:1, q:"What does “Authority Is Constructed and Contextual” mean?", options:[
-     {t:"Communities recognise different kinds of authority, and the question decides how much authority you need", ok:true, why:"Authority depends on expertise relevant to the question and on the context of use."},
-     {t:"Only people with doctorates have authority", why:"Lived experience and official position can also carry authority, for the right question."},
-     {t:"Authority is the same for every question", why:"A specialist in one field isn’t an authority in another."},
+     {t:"Kinds of authority differ, and the question decides how much you need", ok:true, why:"Communities recognise different kinds of authority. Authority depends on expertise relevant to the question and on the context of use."},
+     {t:"Only people with doctorates in the field have real authority on any question", why:"Lived experience and official position can also carry authority, for the right question."},
+     {t:"An expert’s authority is the same for every question and in every setting", why:"A specialist in one field isn’t an authority in another."},
      {t:"No one has more authority than anyone else", why:"Authority varies; the frame asks you to judge it in context, not to deny it."}
    ]},
    {id:"t4u1-q34", lesson:"t4u1-l5", level:2, q:"Which is the strongest warning sign of a predatory journal?", options:[
@@ -1309,13 +1371,13 @@ ICA.addUnit({
    {id:"t4u1-q35", lesson:"t4u1-l5", level:3, q:"Amara gets an email inviting her to submit to a journal with the same name as a well-known one, but the website address is different from the one in Scopus. What is this most likely to be?", options:[
      {t:"A hijacked journal: a fake site copying a real journal’s identity", ok:true, why:"Matching name, different site: compare the ISSN and URL with the index record and reach the journal from the index or publisher."},
      {t:"A preprint server", why:"Preprint servers don’t pose as journals or invite submissions this way."},
-     {t:"A normal second website the journal uses", why:"Possible but unlikely; the mismatch with the index record is a classic hijacking sign that needs checking."},
+     {t:"A normal second website that the journal uses for its submissions", why:"Possible but unlikely; the mismatch with the index record is a classic hijacking sign that needs checking."},
      {t:"A diamond open access version of the journal", why:"Access models don’t create a separate site with a different address under the same name."}
    ]},
    {id:"t4u1-q36", lesson:"t4u1-l5", level:1, q:"What usually happens to a retracted article?", options:[
      {t:"It stays online, clearly marked as retracted, with a notice explaining why", ok:true, why:"Keeping it visible but marked keeps the record complete and warns readers."},
      {t:"It is deleted without trace", why:"Deleting it would confuse anyone who cited it; journals mark it instead."},
-     {t:"Its authors are automatically banned from publishing", why:"Retraction isn’t a punishment and can result from honest error."},
+     {t:"It is removed, and all its authors are automatically banned from publishing again", why:"Retraction isn’t a punishment and can result from honest error."},
      {t:"It is moved to a preprint server", why:"Retracted articles aren’t turned into preprints."}
    ]},
    {id:"t4u1-q37", lesson:"t4u1-l5", level:2, q:"According to COPE’s guidelines, which can be a reason to retract a paper?", options:[
@@ -1325,21 +1387,21 @@ ICA.addUnit({
      {t:"The paper has few citations", why:"Citation counts aren’t a reason to retract."}
    ]},
    {id:"t4u1-q38", lesson:"t4u1-l5", level:3, q:"Fatima is citing a 2012 paper in a report. What is the best way to check it hasn’t been retracted?", options:[
-     {t:"Open the publisher’s page through the DOI and also search the Retraction Watch Database", ok:true, why:"The publisher’s page shows current notices; the database is a second, independent check."},
+     {t:"Check the publisher’s page via the DOI and the Retraction Watch Database", ok:true, why:"The publisher’s page shows current notices; the database is a second, independent check."},
      {t:"Check the PDF she downloaded in 2015", why:"Old PDFs don’t update; they won’t show a later retraction."},
-     {t:"Count its citations: highly cited papers can’t be retracted", why:"Highly cited papers can be, and have been, retracted."},
+     {t:"Count its citations, because highly cited papers can’t be retracted later on", why:"Highly cited papers can be, and have been, retracted."},
      {t:"Assume a paper in a good journal is safe", why:"Retractions happen in famous journals too, as the Lancet case shows."}
    ]},
    {id:"t4u1-q39", lesson:"t4u1-l5", level:2, q:"What is an expression of concern?", options:[
-     {t:"A notice warning readers that editors have serious doubts about a paper, often during an investigation", ok:true, why:"It flags a possible problem while the outcome is uncertain."},
-     {t:"A reviewer’s comment before publication", why:"Reviewer comments are part of peer review, not public notices about published papers."},
+     {t:"A notice that editors have serious doubts about a paper", ok:true, why:"It warns readers of a possible problem, often during an investigation, while the outcome is uncertain."},
+     {t:"A reviewer’s comment about weak points, sent before publication", why:"Reviewer comments are part of peer review, not public notices about published papers."},
      {t:"A correction of a typo", why:"That’s a correction (erratum or corrigendum)."},
      {t:"The final step of a retraction", why:"An expression of concern may come before a retraction, a correction or no further action."}
    ]},
    {id:"t4u1-q40", lesson:"t4u1-l5", level:3, q:"Sione is judging a study that a company funded about its own product. What is the most reasonable approach?", options:[
-     {t:"Funding doesn’t make it wrong, but check the design, the conflict-of-interest statement and whether independent studies agree", ok:true, why:"Conflicts of interest justify extra scrutiny, not automatic rejection."},
-     {t:"Reject it: company-funded research is always false", why:"Much industry-funded research is sound; judge the evidence."},
-     {t:"Accept it: if a journal published it, funding doesn’t matter", why:"Funding can shape questions, design and reporting; it’s worth checking."},
+     {t:"Read it with extra care: check the design and look for independent studies", ok:true, why:"Funding doesn’t make it wrong, but conflicts of interest justify extra scrutiny: check the design, the conflict-of-interest statement and whether independent studies agree."},
+     {t:"Reject it, because research a company pays for about its own product is always false", why:"Much industry-funded research is sound; judge the evidence."},
+     {t:"Accept it: if a journal published it, the funding doesn’t matter at all", why:"Funding can shape questions, design and reporting; it’s worth checking."},
      {t:"Ignore the funding statement; it’s just a formality", why:"Funding and conflict-of-interest statements are key information for judging a study."}
    ]}
   ]

@@ -184,7 +184,7 @@ ICA.addUnit({
       ["A draft report a manager should comment on but not change","Share a link with comment access","Comment access lets the manager add notes without editing the text."]
     ]},
     {id:"t1u11-l1-x7", type:"mcq", q:"Oluwaseun is writing to a supplier contact in another country for the first time. He doesn’t know their workplace’s habits. What’s the best approach to tone?", options:[
-      {t:"Be polite and a little formal, use the name as they write it, keep sentences plain, and mirror their style once they reply", ok:true, why:"This works across cultures without guessing: start slightly formal, follow the reader’s lead, and avoid idioms that don’t translate."},
+      {t:"Start a little formally, then mirror their style once they reply", ok:true, why:"Be polite, use the name as they write it and keep sentences plain. This works across cultures without guessing: start slightly formal, follow the reader’s lead, and avoid idioms that don’t translate."},
       {t:"Look up what people from that country are “like” and write in that style", why:"National stereotypes are unreliable; individuals and workplaces vary hugely. Mirroring the actual person is safer and more respectful."},
       {t:"Be very casual with jokes and emoji to seem friendly", why:"Humour and emoji often don’t survive translation or a first contact; they can read as unprofessional."},
       {t:"Write “Dear Sir” because most suppliers are men", why:"Guessing gender is risky and can offend. Use their full name or role instead."}
@@ -360,13 +360,13 @@ ICA.addUnit({
       "\n",{t:"Kenji", flag:false, why:"Signing off with his name is fine."}
     ]},
     {id:"t1u11-l2-x6", type:"mcq", q:"Lucía has 9,000 emails in her inbox and feels overwhelmed. What’s the most realistic first step?", options:[
-      {t:"Archive everything older than a month, then deal with new mail using a simple routine", ok:true, why:"Archiving keeps every email searchable, so nothing is lost, and she gets a manageable inbox today instead of spending days sorting."},
+      {t:"Archive everything older than a month", ok:true, why:"Then she can deal with new mail using a simple routine. Archiving keeps every email searchable, so nothing is lost, and she gets a manageable inbox today instead of spending days sorting."},
       {t:"Delete all 9,000 so she can start fresh", why:"Deleting is permanent once the Trash empties; receipts and important threads could be lost. Archive gives the same fresh start safely."},
       {t:"Read every email from oldest to newest this weekend", why:"That could take days and most of the mail no longer needs anything. A fresh start plus search is far more realistic."},
       {t:"Create 30 folders and sort every email into one", why:"Sorting 9,000 emails by hand is slow, and most will never be opened again. Search can find them if needed."}
     ]},
     {id:"t1u11-l2-x7", type:"mcq", q:"Sione finds a rule in his email settings, created last week, that forwards every message to an address he doesn’t recognise. He didn’t make it. What should he do?", options:[
-      {t:"Delete the rule, change his email password, turn on two-step verification and check other settings such as forwarding and recovery details", ok:true, why:"An unknown forwarding rule is a common sign someone else got into the account. Removing it isn’t enough; he must lock them out and check what else they changed."},
+      {t:"Delete the rule and secure his account", ok:true, why:"He should delete it, change his email password, turn on two-step verification and check other settings such as forwarding and recovery details. An unknown forwarding rule is a common sign someone else got into the account. Removing it isn’t enough; he must lock them out and check what else they changed."},
       {t:"Leave it: email apps sometimes create rules automatically", why:"Apps don’t silently create forwarding rules to unknown addresses. This is a warning sign of account takeover."},
       {t:"Just delete the rule", why:"If someone made it, they may still have his password and can add it back. He needs to change the password and secure the account too."},
       {t:"Email the unknown address and ask who they are", why:"That alerts a likely attacker and doesn’t secure anything. Secure the account first."}
@@ -516,9 +516,9 @@ ICA.addUnit({
       {v:6, tol:0, why:"The gap never reaches 6 hours. In this week London is UTC+0 and New York UTC−4: a difference of 4."}
     ]},
     {id:"t1u11-l3-x3", type:"mcq", q:"Lucía receives: “Call at 3 pm CST on Thursday.” What’s the problem?", options:[
-      {t:"“CST” is ambiguous: it can mean US Central Standard Time or China Standard Time, among others", ok:true, why:"Abbreviations aren’t unique. A city name or a UTC time (“21:00 UTC”), or a proper calendar invitation, avoids the confusion."},
+      {t:"“CST” can mean more than one time zone", ok:true, why:"It can mean US Central Standard Time or China Standard Time, among others. Abbreviations aren’t unique. A city name or a UTC time (“21:00 UTC”), or a proper calendar invitation, avoids the confusion."},
       {t:"Nothing: everyone knows CST", why:"CST means different zones in different places, and US Central and China Standard Time are 14 hours apart."},
-      {t:"Times should never include a time zone", why:"The opposite: when people are in different places, a time without a clear zone is the problem."},
+      {t:"Times should never include a time zone at all", why:"The opposite: when people are in different places, a time without a clear zone is the problem."},
       {t:"“3 pm” should be written “15:00”", why:"Either format is fine. The real issue is which time zone CST refers to."}
     ]},
     {id:"t1u11-l3-x4", type:"sort", q:"Does each of these need a meeting, or would something else work better?", buckets:["Meeting","Email, chat or document"], items:[
@@ -544,10 +544,10 @@ ICA.addUnit({
       {t:"Mute himself while presenting", why:"He needs to speak while presenting. Muting is for when you’re not talking."}
     ]},
     {id:"t1u11-l3-x7", type:"mcq", q:"Ana wants to record a parent–teacher committee call for members who can’t attend. What should she do?", options:[
-      {t:"Ask everyone before the call, explain where the recording will be kept and for how long, and offer an alternative if someone objects", ok:true, why:"Consent comes before recording. People need to know what happens to it, and a real choice. This also respects laws and policies that differ between places."},
+      {t:"Ask everyone first, and offer an alternative if anyone objects", ok:true, why:"Ask before the call, and explain where the recording will be kept and for how long. Consent comes before recording. People need to know what happens to it, and a real choice. This also respects laws and policies that differ between places."},
       {t:"Just start recording; the app shows a notice", why:"The notice tells people after the fact. Asking first is what makes it consent."},
       {t:"Record secretly so people behave naturally", why:"Secret recording breaks trust and can be illegal in many places."},
-      {t:"Record, then delete the parts where people object", why:"People should be able to say no before they are recorded, not after."}
+      {t:"Record it, then delete the parts where people object afterwards", why:"People should be able to say no before they are recorded, not after."}
     ]}
    ],
    apply:{intro:"These tasks work with free accounts: Outlook on the web (outlook.com), Google Calendar, Thunderbird’s built-in calendar, or Calendar on a Mac.", tasks:[
@@ -666,7 +666,7 @@ ICA.addUnit({
       ["Someone from another charity who asked “can I see an example?”","No access: send a PDF of the final version","They don’t need ongoing access to your live working document. A PDF of the final version shares only what you choose, and you can’t accidentally give away more later."]
     ]},
     {id:"t1u11-l4-x2", type:"mcq", q:"Kenji’s team emailed a report back and forth and now has `report_v4_Ana.docx`, `report_v4_Tomas.docx` and `report_v5.docx`, all different. What would have prevented this?", options:[
-      {t:"Keeping one copy in the cloud, sharing it with the team and using suggestions or comments for changes", ok:true, why:"With one shared copy there is nothing to merge: everyone edits the same file and the history records who changed what."},
+      {t:"One shared cloud copy, with suggestions or comments", ok:true, why:"With one copy in the cloud, shared with the team, there is nothing to merge: everyone edits the same file and the history records who changed what."},
       {t:"Stricter file names, such as adding the date to each attachment", why:"Better names help people tell copies apart, but there would still be several copies to merge. The cause is the separate copies."},
       {t:"Sending the attachment as a PDF", why:"A PDF stops people editing easily; it doesn’t give them one place to edit together."},
       {t:"Asking only one person to reply", why:"That avoids the merge by excluding people, not by giving them a better way to work together."}
@@ -680,7 +680,7 @@ ICA.addUnit({
       {t:"`2026_grant-application_city-arts-fund.docx`", b:0, why:"Year, topic and funder: clear without opening it."}
     ]},
     {id:"t1u11-l4-x4", type:"mcq", q:"Sione is leaving the choir committee. The choir’s music list and accounts spreadsheets are owned by his personal Google account. What should happen before he goes?", options:[
-      {t:"Sione transfers ownership of the files to the next committee member, who accepts the request", ok:true, why:"Ownership moves to someone staying, so the files and their links survive if Sione later deletes his account. For personal accounts the new owner must accept and must already have the file shared with them."},
+      {t:"He transfers ownership to a member who is staying", ok:true, why:"The next committee member accepts the request, so the files and their links survive if Sione later deletes his account. For personal accounts the new owner must accept and must already have the file shared with them."},
       {t:"Nothing: anyone with edit access already owns the files", why:"Editors can change the files but don’t own them. If the owner’s account is deleted, the files go with it."},
       {t:"Sione emails everyone copies as attachments", why:"That creates separate copies with no single, up-to-date version, and the live files still depend on his account."},
       {t:"Sione changes the link to “anyone with the link can edit”", why:"That widens access to anyone the link reaches, and he is still the owner, so it doesn’t solve the handover."}
@@ -700,7 +700,7 @@ ICA.addUnit({
       "\nFile name: ",{t:"2026-11_volunteer-contacts.xlsx", flag:false, why:"A clear, dated name."}
     ]},
     {id:"t1u11-l4-x7", type:"mcq", q:"Lucía wants a colleague to propose wording changes to her Google Doc without being able to change the text directly. What should she do?", options:[
-      {t:"Share it with the colleague as Commenter; they can then make suggestions she accepts or rejects", ok:true, why:"In Google Docs, people with comment access can suggest edits, which stay proposals until the owner accepts them."},
+      {t:"Share it with the colleague as Commenter", ok:true, why:"The colleague can then make suggestions she accepts or rejects. In Google Docs, people with comment access can suggest edits, which stay proposals until the owner accepts them."},
       {t:"Share it as Viewer", why:"Viewers can read but can’t comment or suggest, so the colleague couldn’t propose anything."},
       {t:"Share it as Editor and ask them to be careful", why:"Editors can change text directly (and reshare the file by default). Commenter gives exactly the access needed."},
       {t:"Email a copy and ask for a marked-up version back", why:"That works, but recreates the separate-copies problem. Commenter access keeps everything in one place."}
@@ -850,10 +850,10 @@ ICA.addUnit({
       " ",{t:"Also, Kenji still owes money for the raffle tickets and hasn’t paid.", flag:true, why:"Discussing one person’s money problem in front of 60 people is unkind and unprofessional. Raise it with Kenji privately."}
     ]},
     {id:"t1u11-l5-x5", type:"mcq", q:"Mei works in Singapore (UTC+8). At the end of her day she needs an answer from Tomás in Mexico City (UTC−6), where it’s 4:00. What should she do?", options:[
-      {t:"Write the full question with context and deadline, and schedule it (or just send it) so he can answer when his day starts", ok:true, why:"This is asynchronous work at its best: a complete message he can act on in his morning, without waking him."},
+      {t:"Send a full question with context and a deadline", ok:true, why:"Schedule it (or just send it) so he can answer when his day starts. This is asynchronous work at its best: a complete message he can act on in his morning, without waking him."},
       {t:"Call him now, because chat is too slow", why:"It’s 4:00 for Tomás. Unless it’s a real emergency, a complete written message is kinder and works just as well."},
       {t:"Send “ping” and wait for him to reply", why:"He’ll see “ping” hours later and still have to ask what she wants, costing another day."},
-      {t:"Post it with @everyone so someone answers faster", why:"It interrupts the whole team for a question meant for Tomás."}
+      {t:"Post it with @everyone so that someone answers faster", why:"It interrupts the whole team for a question meant for Tomás."}
     ]},
     {id:"t1u11-l5-x6", type:"order", q:"Put the steps for agreeing team communication norms in a sensible order.", items:[
       {t:"Notice the friction: missed messages, late replies, too many pings", why:"Start from real problems, so the agreement solves something."},
@@ -863,7 +863,7 @@ ICA.addUnit({
       {t:"Review it after a month or two and adjust", why:"Norms that don’t fit real work get ignored; revisit them."}
     ]},
     {id:"t1u11-l5-x7", type:"mcq", q:"Hana’s team chat pings her phone late in the evening with non-urgent questions. What is the most effective change?", options:[
-      {t:"Set a notification schedule or Do not disturb outside her working hours, and agree with the team how to reach her for real emergencies", ok:true, why:"The tool stops the pings, and the agreement means nobody worries that urgent things will be missed."},
+      {t:"Set a notification schedule and agree an emergency route", ok:true, why:"A notification schedule or Do not disturb outside her working hours stops the pings, and agreeing how the team can reach her for real emergencies means nobody worries that urgent things will be missed."},
       {t:"Reply to everything immediately so the questions stop sooner", why:"Instant replies teach people to expect them and make the evenings worse."},
       {t:"Leave the team channel", why:"She would miss important information. Notification settings solve the problem without cutting her off."},
       {t:"Ask everyone to stop using chat", why:"Chat is useful for quick questions; the issue is notifications and expectations, not the tool."}
@@ -881,6 +881,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u11-q02","t1u11-q05","t1u11-q08","t1u11-q12","t1u11-q15","t1u11-q20","t1u11-q22","t1u11-q25","t1u11-q30","t1u11-q33","t1u11-q39","t1u11-q43"],
+  cpBank:[
+    {id:"t1u11-cp01", lesson:"t1u11-l1", level:1, q:"Gaby emails her landlord to ask for a broken heater to be fixed. She wants her flatmate to see the email, but the flatmate doesn’t need to do anything. Where should the flatmate go?", options:[
+      {t:"Cc", ok:true, why:"Cc is for people who should be kept informed but don’t need to act. Everyone can see who was copied."},
+      {t:"To", why:"To is for the people who must read and act, here the landlord."},
+      {t:"Bcc", why:"Bcc hides the address from others. There’s no reason to hide the flatmate from the landlord."},
+      {t:"In a separate forwarded email later", why:"Forwarding later adds work and can split the conversation. Cc keeps her informed from the start."}
+    ]},
+    {id:"t1u11-cp02", lesson:"t1u11-l2", level:1, q:"Kemal gets an email confirming that his rent deposit was paid. Nothing more needs doing, but he may need it next year. What should he do with it?", options:[
+      {t:"Delete it, so his inbox stays tidy", why:"Deleted mail is gone once the Trash is emptied. He may need this one later."},
+      {t:"Mark it as spam", why:"It isn’t spam. Marking it trains the filter wrongly and hides real mail."},
+      {t:"Forward it to a friend to keep", why:"That spreads private details and doesn’t help him find it later."},
+      {t:"Archive it", ok:true, why:"Archiving takes it out of the inbox but keeps it, and search finds it again whenever he needs it."}
+    ]},
+    {id:"t1u11-cp03", lesson:"t1u11-l5", level:1, q:"In a busy #events channel, Ravi wants to answer a question that someone posted yesterday. How should he reply to keep the channel easy to follow?", options:[
+      {t:"Post a new message at the bottom of the channel", why:"A loose reply gets tangled with other conversations, and people can’t tell what it answers."},
+      {t:"Reply in the thread under the original question", ok:true, why:"Threads keep a question and its answers together, so the channel stays a list of topics."},
+      {t:"Use @channel so everyone sees his answer", why:"@channel interrupts every member. Save it for things everyone needs to know soon."},
+      {t:"Send his answer by email instead", why:"Moving to email splits the conversation. A thread keeps the answer next to the question."}
+    ]},
+    {id:"t1u11-cp04", lesson:"t1u11-l3", level:2, q:"Wairimu is in Nairobi (UTC+3). She sets a call for 10:00 her time. Her colleague is in Tokyo (UTC+9). Neither place uses daylight saving. What time is the call in Tokyo?", options:[
+      {t:"13:00", why:"This adds Nairobi’s offset instead of going through UTC. Convert to UTC first."},
+      {t:"04:00", why:"This goes the wrong way. Tokyo is ahead of Nairobi, so the time is later, not earlier."},
+      {t:"16:00", ok:true, why:"10:00 − 3 h = 07:00 UTC. Then 07:00 + 9 h = 16:00 in Tokyo."},
+      {t:"19:00", why:"This adds Tokyo’s offset to Nairobi time without first converting to UTC."}
+    ]},
+    {id:"t1u11-cp05", lesson:"t1u11-l2", level:2, q:"Wanjiru’s Gmail storage is nearly full, mostly because colleagues email her large videos. Which pair of steps helps most?", options:[
+      {t:"Archive all the video emails, and create a new folder for future ones", why:"Archived mail is kept, so it still uses storage. A folder doesn’t free space either."},
+      {t:"Mark the videos as spam so they stop arriving", why:"They aren’t spam, and this trains the filter wrongly. Colleagues still need a better way to share big files."},
+      {t:"Delete big emails found with `larger:10M`, and ask for share links", ok:true, why:"The search finds the biggest messages fast, so she can delete the ones she no longer needs. A share link points to one copy in cloud storage instead of filling her mailbox."},
+      {t:"Turn off new-mail notifications", why:"Notifications affect interruptions, not storage. The large emails are still there."}
+    ]},
+    {id:"t1u11-cp06", lesson:"t1u11-l4", level:2, q:"Juma wants to share last year’s grant spreadsheet with an outside partner as an editor, so they can reuse the layout. What should he check first?", options:[
+      {t:"Nothing, because editors can only ever see the latest version of the file", why:"Editors can often open version history, where earlier figures or deleted text may still be visible."},
+      {t:"Whether its version history still shows old figures; if so, share a fresh copy", ok:true, why:"Deleted text, earlier numbers and comments may be visible to editors through the history. A fresh copy (or a PDF) avoids exposing them."},
+      {t:"That the link is set to “anyone with the link”", why:"That would let anyone the link is forwarded to open it. Share with the specific partner instead."},
+      {t:"That the file name includes the word “final”", why:"The file name doesn’t affect what is visible in the history."}
+    ]},
+    {id:"t1u11-cp07", lesson:"t1u11-l1", level:2, q:"Ayumi’s email asks her manager to approve her leave, review a budget and recommend a printer. The manager replies only about the printer. What should Ayumi do differently next time?", options:[
+      {t:"Mark the email URGENT in capital letters", why:"Capitals read as shouting and don’t make three asks easier to answer."},
+      {t:"Write a longer email that explains each request in more detail", why:"Longer emails are harder to act on. The problem is mixing three asks."},
+      {t:"Cc the manager’s manager to add pressure", why:"Copying someone’s manager into a small issue can feel like a threat, and it doesn’t fix the mixed asks."},
+      {t:"Send separate emails, each with one clear ask and a deadline", ok:true, why:"With several unrelated asks, people often answer the easiest one. One ask per email is easier to answer and file."}
+    ]},
+    {id:"t1u11-cp08", lesson:"t1u11-l5", level:2, q:"Volunteers keep sending the coordinator direct messages asking the same question: can they swap shifts themselves? What is the best way to answer?", options:[
+      {t:"Answer once in the channel and add the rule to the shared rota", ok:true, why:"Channels make answers findable for everyone, and the shared document is where rules that people need to keep belong."},
+      {t:"Keep answering each direct message privately", why:"Private answers can’t be found by others, so the same question keeps coming."},
+      {t:"Post the answer with @everyone every morning so nobody misses it", why:"Repeated @everyone pings make people mute the channel and miss important messages."},
+      {t:"Ask volunteers to email instead of using chat", why:"Changing tools doesn’t make the answer findable. Put it where everyone can see it."}
+    ]},
+    {id:"t1u11-cp09", lesson:"t1u11-l3", level:3, q:"A weekly call is fixed at 10:00 New York time. New York is UTC−5 in winter and UTC−4 in summer. What time is the call in Nairobi (UTC+3, no daylight saving)?", options:[
+      {t:"18:00 all year", why:"This ignores daylight saving. When New York’s offset changes, the call moves for Nairobi."},
+      {t:"18:00 in winter and 17:00 in summer", ok:true, why:"Winter: 10:00 + 5 h = 15:00 UTC, + 3 h = 18:00. Summer: 10:00 + 4 h = 14:00 UTC, + 3 h = 17:00."},
+      {t:"17:00 in winter and 18:00 in summer", why:"This is the wrong way round. In summer New York is closer to UTC, so the call is earlier in Nairobi."},
+      {t:"13:00 in winter and 14:00 in summer", why:"This adds only Nairobi’s +3 to New York time and skips New York’s own offset. Go through UTC: in winter 10:00 + 5 h = 15:00 UTC, which is 18:00 in Nairobi."}
+    ]},
+    {id:"t1u11-cp10", lesson:"t1u11-l3", level:3, q:"Lerato in Johannesburg emails a partner in another country: “Let’s meet Thursday 4/5 at 3 pm.” What is the best way to avoid confusion?", options:[
+      {t:"Add “sharp” after the time so the partner arrives promptly", why:"Punctuality isn’t the problem. The date and the time zone can both be misread."},
+      {t:"Write the date in words and send an invite set in her time zone", ok:true, why:"“4/5” can mean 4 May or April 5. An invite created in the right zone shows the partner the time in their own zone."},
+      {t:"Write “3 pm my time” and let the partner work out what that means", why:"“My time” leaves the partner to guess her zone and do the sums. Name the zone with a city or UTC (“15:00 Johannesburg time”), or send an invite that converts for them."},
+      {t:"Add an exclamation mark so it stands out", why:"Exclamation marks don’t fix an unclear date or a missing time zone."}
+    ]},
+    {id:"t1u11-cp11", lesson:"t1u11-l5", level:3, q:"Three weeks ago, Ines’s team agreed in chat to change the shop’s opening hours. Now nobody can find the decision, and the free chat plan may hide old messages. What should they do from now on?", options:[
+      {t:"Repeat important decisions every week with @channel so nobody forgets", why:"Frequent @channel pings make people mute the channel, and the decision is still lost in the scroll."},
+      {t:"Screenshot the chat and email it to everyone", why:"Screenshots scatter across inboxes and go out of date. One shared place is easier to find."},
+      {t:"Record decisions in the shared plan document, and link it from the channel", ok:true, why:"Chat is good for quick discussion but weak as a record. A shared document keeps decisions findable."},
+      {t:"Make all decisions in direct messages instead", why:"Direct messages are even harder for the team to find. Decisions belong in a shared record."}
+    ]},
+    {id:"t1u11-cp12", lesson:"t1u11-l2", level:3, q:"Bilal misses emails from his daughter’s school among about 50 shop newsletters each day. Some he wants to keep reading; most he doesn’t. Which plan works best?", options:[
+      {t:"Mark all the newsletters as spam", why:"He signed up for them, so this hides real mail and trains the filter wrongly. Unsubscribing asks the sender to stop."},
+      {t:"Create a rule that deletes every email with “offer” in its subject line", why:"Delete rules can hide something important. Start with label or move actions."},
+      {t:"Unsubscribe from most, filter the rest, and star the school’s emails", ok:true, why:"Unsubscribing from the ones he doesn’t read cuts the volume, a filter moves the rest out of the inbox, and a star or label makes the important sender stand out."},
+      {t:"Make 30 folders and sort every email by hand", why:"Lots of folders take time to maintain. Filters and unsubscribing do the sorting automatically."}
+    ]},
+  ],
   codex:[
    {id:"email-writing", title:"Writing emails that get answered", aka:["email etiquette","subject lines","professional email","undo send"], tags:["email","communication"],
     summary:"A clear subject, one ask with a deadline, a simple structure and a quick check before sending.",
@@ -1242,19 +1316,19 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t1u11-q01", lesson:"t1u11-l1", level:1, q:"What is the main job of an email’s subject line?", options:[
-     {t:"To tell the reader the topic and, ideally, what you need, before they open it", ok:true, why:"The subject is what people see in a crowded inbox; it decides whether the email is opened and helps both of you find it later."},
+     {t:"To tell the reader the topic and what you need", ok:true, why:"It tells them this before they open the email. The subject is what people see in a crowded inbox; it decides whether the email is opened and helps both of you find it later."},
      {t:"To greet the reader politely", why:"The greeting belongs in the body. A subject like “Hello” hides what the email is about."},
      {t:"To show how urgent you feel, with capitals and exclamation marks", why:"Capitals read as shouting and still don’t say what the email is about."},
-     {t:"Nothing important: most people ignore it", why:"Most people decide what to open from the sender and subject, so it matters a lot."}
+     {t:"Nothing important, because most people ignore it", why:"Most people decide what to open from the sender and subject, so it matters a lot."}
    ]},
    {id:"t1u11-q02", lesson:"t1u11-l1", level:1, q:"Who can see the addresses in the Bcc line?", options:[
-     {t:"Nobody except the sender (each Bcc recipient sees only that they got a copy)", ok:true, why:"Bcc addresses are hidden from all other recipients, including other Bcc recipients."},
+     {t:"Nobody except the sender", ok:true, why:"Bcc addresses are hidden from all other recipients, including other Bcc recipients. Each Bcc recipient sees only that they got a copy."},
      {t:"Everyone who receives the email", why:"That describes To and Cc. Bcc exists precisely to hide addresses."},
      {t:"Only the people in the To line", why:"To recipients can’t see Bcc addresses either."},
      {t:"Only people who click Reply All", why:"Reply All never goes to Bcc recipients, and doesn’t reveal their addresses to anyone."}
    ]},
    {id:"t1u11-q03", lesson:"t1u11-l1", level:1, q:"What does Undo Send actually do?", options:[
-     {t:"Holds the email for a few seconds after you press Send, so you can cancel it", ok:true, why:"It’s a short delay. Once the time is up, the email has gone and can’t be called back."},
+     {t:"Holds the email for a few seconds so you can cancel it", ok:true, why:"It’s a short delay after you press Send. Once the time is up, the email has gone and can’t be called back."},
      {t:"Deletes an email from the recipient’s inbox at any time", why:"No standard email feature can remove a delivered email from someone else’s inbox."},
      {t:"Recalls an email that has been opened", why:"Even Outlook’s recall (work accounts in one organisation only) fails once the email has been opened."},
      {t:"Saves the email as a draft automatically", why:"Drafts are saved separately; Undo Send is about the moments after pressing Send."}
@@ -1266,10 +1340,10 @@ ICA.addUnit({
      {t:"Next Thursday", why:"“Next” is ambiguous (this week or the following?), and the email may be read days later."}
    ]},
    {id:"t1u11-q05", lesson:"t1u11-l1", level:3, q:"Fatima emails 35 parents about a school trip and puts every address in the To line. What is the main risk?", options:[
-     {t:"Every parent can see every other parent’s email address, and replies can go to all 35", ok:true, why:"Families’ addresses have been shared without consent, and Reply All chains can follow. Bcc, or the school’s messaging system, avoids both."},
+     {t:"Every parent can see every other parent’s address", ok:true, why:"Families’ addresses have been shared without consent, and replies can go to all 35 in Reply All chains. Bcc, or the school’s messaging system, avoids both."},
      {t:"The email will be too large to send", why:"35 addresses don’t make an email meaningfully bigger. The problem is privacy."},
      {t:"Parents won’t be able to reply to Fatima", why:"They can reply; the problem is that they can also reply to everyone and see everyone."},
-     {t:"There is no risk if the parents are friendly", why:"Sharing personal email addresses without consent is a privacy problem regardless of how friendly people are."}
+     {t:"There is no risk, as long as the parents are friendly", why:"Sharing personal email addresses without consent is a privacy problem regardless of how friendly people are."}
    ]},
    {id:"t1u11-q06", lesson:"t1u11-l1", level:3, q:"Kenji was in Bcc on an email from his manager to a client. He clicks Reply All to say “Noted”. What happens?", options:[
      {t:"His reply goes to the manager and the client, revealing that he was copied", ok:true, why:"Reply All sends to the visible To and Cc recipients. The client now learns Kenji had a hidden copy. Reply (to the manager only) would have kept it private."},
@@ -1278,32 +1352,32 @@ ICA.addUnit({
      {t:"The client sees his reply but not his name", why:"His reply is sent from his address, so his name shows."}
    ]},
    {id:"t1u11-q07", lesson:"t1u11-l1", level:2, q:"Lucía needs her team to review a draft that will change several times this week. How should she send it?", options:[
-     {t:"Share a link to one copy in cloud storage, with comment or edit access for the team", ok:true, why:"Everyone works on the same up-to-date copy, so there are no conflicting versions to merge."},
+     {t:"Share a link to one copy in cloud storage", ok:true, why:"Give the team comment or edit access. Everyone works on the same up-to-date copy, so there are no conflicting versions to merge."},
      {t:"Attach it to an email and ask everyone to reply with their edited copy", why:"That creates several copies that drift apart and must be merged by hand."},
      {t:"Attach a PDF", why:"A PDF is good for final versions but awkward to edit and comment on together."},
      {t:"Paste the whole draft into the email body", why:"Each reply becomes another separate version, with the same merging problem."}
    ]},
    {id:"t1u11-q08", lesson:"t1u11-l1", level:3, q:"Tomás is writing for the first time to a contact at a partner organisation abroad. He isn’t sure how formal to be. What should he do?", options:[
-     {t:"Start politely and a little formally, use the name as they sign it, write plainly, and match their style once they reply", ok:true, why:"This respects the reader without relying on stereotypes, and adjusts to the real person’s style."},
-     {t:"Use the style he’s read is typical for that country", why:"National generalisations are unreliable; workplaces and people vary widely. Mirroring the actual reader is safer."},
+     {t:"Start a little formally, then match their style once they reply", ok:true, why:"Being polite, using the name as they sign it and writing plainly respects the reader without relying on stereotypes; matching their style adjusts to the real person."},
+     {t:"Use the writing style he’s read is typical for people in that country", why:"National generalisations are unreliable; workplaces and people vary widely. Mirroring the actual reader is safer."},
      {t:"Be very informal so they feel relaxed", why:"Very informal first contacts, jokes and emoji can read as unprofessional, and may not translate."},
      {t:"Avoid greetings entirely to save time", why:"A short greeting is expected almost everywhere and helps the tone."}
    ]},
    {id:"t1u11-q09", lesson:"t1u11-l1", level:2, q:"Before forwarding a long email thread to a new volunteer, what should Ana do first?", options:[
-     {t:"Read the whole thread, remove anything the volunteer shouldn’t see, and add a line saying why she’s forwarding it", ok:true, why:"Forwarding sends everything below; earlier messages may contain private details. A one-line note says what she needs."},
-     {t:"Nothing: forwarding only sends the latest message", why:"Forwarding includes the thread below the latest message, often many earlier emails."},
+     {t:"Read the whole thread and remove anything private", ok:true, why:"Forwarding sends everything below; earlier messages may contain details the volunteer shouldn’t see. A one-line note saying why she’s forwarding it says what she needs."},
+     {t:"Nothing, because forwarding only sends the latest message", why:"Forwarding includes the thread below the latest message, often many earlier emails."},
      {t:"Change the subject to “FW”", why:"Apps add “Fw:” automatically; it doesn’t make the content safe or clear."},
      {t:"Reply All and add the volunteer", why:"That sends her reply to everyone and still includes the whole thread, without checking it."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u11-q10", lesson:"t1u11-l2", level:1, q:"What happens to an email when you archive it?", options:[
-     {t:"It leaves the inbox but is kept, and you can still find it by searching", ok:true, why:"Archiving is the safe way to clear the inbox without losing anything."},
+     {t:"It leaves the inbox but is kept, and stays searchable", ok:true, why:"Archiving is the safe way to clear the inbox without losing anything: you can still find the email by searching."},
      {t:"It is permanently deleted", why:"That’s deleting (and emptying the Trash), not archiving."},
      {t:"It is sent back to the sender", why:"Archiving only changes where the email sits in your own mailbox."},
-     {t:"It moves to the Spam folder", why:"That’s reporting spam, which is for unwanted bulk mail."}
+     {t:"It moves to the Spam folder, where it is deleted later", why:"That’s reporting spam, which is for unwanted bulk mail."}
    ]},
    {id:"t1u11-q11", lesson:"t1u11-l2", level:1, q:"What is the main difference between a Gmail label and a folder?", options:[
-     {t:"One email can have several labels, but sits in only one folder", ok:true, why:"Labels work like tags, so an email can appear under “School” and “Receipts” at once."},
+     {t:"One email can have several labels, but only one folder", ok:true, why:"Labels work like tags, so an email can appear under “School” and “Receipts” at once."},
      {t:"Labels delete emails after 30 days", why:"Labels don’t delete anything; they’re just tags."},
      {t:"Folders are private but labels are visible to the sender", why:"Gmail labels are private: the people you email don’t see them."},
      {t:"There is no difference", why:"The key difference is that labels can be combined; folders can’t."}
@@ -1315,16 +1389,16 @@ ICA.addUnit({
      {t:"`subject:landlord larger:10M`", why:"This finds emails with “landlord” in the subject that are over 10 MB, which isn’t the same thing."}
    ]},
    {id:"t1u11-q13", lesson:"t1u11-l2", level:2, q:"A clothing shop you bought from once keeps emailing offers. You did tick a box to receive them. What’s the best action?", options:[
-     {t:"Unsubscribe, using the app’s Unsubscribe button or the shop’s link", ok:true, why:"You signed up, so unsubscribing is the honest fix, and reputable senders stop."},
+     {t:"Unsubscribe, using the app’s button or the shop’s link", ok:true, why:"You signed up, so unsubscribing (with the app’s Unsubscribe button or the shop’s link) is the honest fix, and reputable senders stop."},
      {t:"Report every email as phishing", why:"It isn’t a scam, just marketing you agreed to. Phishing reports are for fraud."},
-     {t:"Reply asking them to stop", why:"Replies often go to an unmonitored address. Unsubscribing is the mechanism built for this."},
+     {t:"Reply to each email asking them to stop sending offers", why:"Replies often go to an unmonitored address. Unsubscribing is the mechanism built for this."},
      {t:"Delete them one by one forever", why:"That works but costs time every week. Unsubscribing removes the cause."}
    ]},
    {id:"t1u11-q14", lesson:"t1u11-l2", level:1, q:"What is an email filter (or rule)?", options:[
-     {t:"An instruction that automatically does something to new emails that match a condition", ok:true, why:"For example: if it’s from a newsletter, label it and skip the inbox."},
+     {t:"An automatic action for new emails that match a condition", ok:true, why:"It’s an instruction the app follows by itself. For example: if it’s from a newsletter, label it and skip the inbox."},
      {t:"A spam blocker you must buy separately", why:"Filters are built into Gmail, Outlook, Thunderbird and Apple Mail, and do much more than block spam."},
      {t:"A way to make emails smaller", why:"Filters sort and act on mail; they don’t compress it."},
-     {t:"A list of people who can email you", why:"That’s closer to an allow list. A filter is an if-then action on incoming mail."}
+     {t:"A list of the only people who are allowed to send you email", why:"That’s closer to an allow list. A filter is an if-then action on incoming mail."}
    ]},
    {id:"t1u11-q15", lesson:"t1u11-l2", level:3, q:"Amara is going on holiday. Which out-of-office message is best?", options:[
      {t:"“I’m away until Monday 30 November. For urgent orders, please contact Mei at orders@example.com.”", ok:true, why:"Return date and an urgent contact, nothing more. It doesn’t reveal where she is or that her home is empty."},
@@ -1339,13 +1413,13 @@ ICA.addUnit({
      {t:"Forward all his email to a friend", why:"That shares his private mail with someone else and doesn’t send replies."}
    ]},
    {id:"t1u11-q17", lesson:"t1u11-l2", level:3, q:"Hana finds a filter she didn’t create that moves every email from her bank to a folder called “zz”. What does it most likely mean?", options:[
-     {t:"Someone else has had access to her account, so she should remove it, change her password and turn on two-step verification", ok:true, why:"Hidden rules that divert bank emails are a known sign of account takeover, often to hide fraud."},
+     {t:"Someone else has got into her account", ok:true, why:"Hidden rules that divert bank emails are a known sign of account takeover, often to hide fraud. She should remove it, change her password and turn on two-step verification."},
      {t:"The bank set it up to help her", why:"Banks can’t create rules inside your email account."},
      {t:"It’s a normal Gmail or Outlook default", why:"No standard default hides bank emails in an oddly named folder."},
      {t:"It doesn’t matter as long as she can find the folder", why:"The rule may be hiding fraud alerts, and whoever made it may still have access."}
    ]},
    {id:"t1u11-q18", lesson:"t1u11-l2", level:2, q:"Oluwaseun has 12,000 emails in his inbox. What’s a safe way to start fresh?", options:[
-     {t:"Search for inbox emails older than 30 days, select them all and archive them", ok:true, why:"They leave the inbox but remain searchable, so nothing is lost, and he can manage new mail from today."},
+     {t:"Archive all inbox emails older than 30 days", ok:true, why:"He can search for them, select them all and archive them. They leave the inbox but remain searchable, so nothing is lost, and he can manage new mail from today."},
      {t:"Select all and delete them", why:"Deleting can lose receipts and important records permanently."},
      {t:"Mark them all as spam", why:"That trains the spam filter wrongly and buries genuine mail in Spam."},
      {t:"Create a new email address and abandon the old one", why:"Drastic: he’d lose contacts and logins tied to the old address. Archiving solves the problem."}
@@ -1364,27 +1438,27 @@ ICA.addUnit({
      {t:"14:00", why:"That’s UTC, not Mumbai time."}
    ]},
    {id:"t1u11-q21", lesson:"t1u11-l3", level:1, q:"Which statement about daylight saving time is correct?", options:[
-     {t:"Many places don’t use it, and places that do change their clocks on different dates", ok:true, why:"For example, India and Japan don’t change; the US and EU both do but on different Sundays."},
+     {t:"Many places don’t use it, and others change on different dates", ok:true, why:"For example, India and Japan don’t change; the US and EU both do but on different Sundays."},
      {t:"Every country moves its clocks on the same day", why:"Dates differ (US: second Sunday in March; EU: last Sunday in March), and many places never change."},
      {t:"It changes UTC by one hour", why:"UTC never changes; local offsets do."},
-     {t:"Southern hemisphere countries change in March like the north", why:"Where they use it, they move clocks forward around September or October, the start of their summer."}
+     {t:"Southern hemisphere countries change their clocks in March like the north", why:"Where they use it, they move clocks forward around September or October, the start of their summer."}
    ]},
    {id:"t1u11-q22", lesson:"t1u11-l3", level:3, q:"A weekly call is set for 10:00 New York time. Normally that’s 15:00 for Ana in London. On Wednesday 11 March 2026, what time is it for her, and why?", options:[
-     {t:"14:00, because US clocks went forward on 8 March but UK clocks don’t change until 29 March", ok:true, why:"For those weeks New York is UTC−4 and London still UTC+0, so the gap is 4 hours."},
+     {t:"14:00, because US and UK clocks change on different dates", ok:true, why:"US clocks went forward on 8 March but UK clocks don’t change until 29 March. For those weeks New York is UTC−4 and London still UTC+0, so the gap is 4 hours."},
      {t:"15:00, because the time difference never changes", why:"The two countries change clocks on different Sundays, so the gap changes for a few weeks."},
-     {t:"16:00, because daylight saving adds an hour to everyone", why:"Only places that observe it change, and here the US change narrows the gap."},
+     {t:"16:00, because daylight saving adds an extra hour for everyone", why:"Only places that observe it change, and here the US change narrows the gap."},
      {t:"10:00, because calendars show the organiser’s time", why:"Calendars show each person’s local time, so Ana sees London time."}
    ]},
    {id:"t1u11-q23", lesson:"t1u11-l3", level:2, q:"Why is “3 pm CST” a risky way to write a meeting time?", options:[
-     {t:"CST stands for more than one time zone, such as US Central and China Standard Time", ok:true, why:"Abbreviations aren’t unique. A city name, UTC, or a calendar invitation avoids the confusion."},
-     {t:"It should be written in 24-hour time", why:"Either format is fine; the zone is the problem."},
+     {t:"CST can mean more than one time zone", ok:true, why:"For example, US Central Standard Time or China Standard Time. Abbreviations aren’t unique. A city name, UTC, or a calendar invitation avoids the confusion."},
+     {t:"It should be written in 24-hour time instead", why:"Either format is fine; the zone is the problem."},
      {t:"Nobody uses CST any more", why:"It is used, by more than one region, which is exactly the problem."},
      {t:"Times in emails are never allowed", why:"They’re fine with a clear time zone; a calendar invite is even better."}
    ]},
    {id:"t1u11-q24", lesson:"t1u11-l3", level:1, q:"What should a meeting agenda include?", options:[
-     {t:"The purpose, topics with rough times, decisions needed and anything to read first", ok:true, why:"That lets people decide whether to come, prepare, and keep the meeting on track."},
+     {t:"The purpose, topics with rough times and decisions needed", ok:true, why:"It should also list anything to read first. That lets people decide whether to come, prepare, and keep the meeting on track."},
      {t:"Only the start time", why:"The invitation already has the time; the agenda says what the meeting is for."},
-     {t:"A full transcript of what people will say", why:"An agenda is a short plan, not a script."},
+     {t:"A full written script of what each person is going to say", why:"An agenda is a short plan, not a script."},
      {t:"Everyone’s personal phone numbers", why:"That’s unnecessary personal data and not part of an agenda."}
    ]},
    {id:"t1u11-q25", lesson:"t1u11-l3", level:3, q:"Sione wants to tell 25 volunteers that the hall’s opening hours have changed. Nothing needs discussing. What’s the best approach?", options:[
@@ -1400,17 +1474,17 @@ ICA.addUnit({
      {t:"Email the spreadsheet during the call", why:"That gives the client a copy of the file, which may be more than they should have."}
    ]},
    {id:"t1u11-q27", lesson:"t1u11-l3", level:3, q:"Kenji’s team uses an AI note-taker that records and transcribes calls. A new client joins today’s call. What should Kenji do?", options:[
-     {t:"Tell the client at the start, explain what is recorded and where it goes, and turn it off if they object", ok:true, why:"A transcript is a recording. Consent should come before it starts, and the client needs a real choice."},
+     {t:"Tell the client at the start and turn it off if they object", ok:true, why:"He should explain what is recorded and where it goes. A transcript is a recording; consent should come before it starts, and the client needs a real choice."},
      {t:"Nothing: the tool shows a small icon", why:"A notice isn’t the same as asking. Many people don’t notice icons."},
      {t:"Leave it on but delete the transcript later if the client complains", why:"Consent comes before recording, not after."},
      {t:"Rename the note-taker so it looks like a person", why:"That deceives participants and breaks trust."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t1u11-q28", lesson:"t1u11-l4", level:1, q:"What is the main advantage of sharing one cloud copy instead of emailing attachments?", options:[
-     {t:"Everyone works on the same up-to-date file, so there are no separate versions to merge", ok:true, why:"One copy plus version history replaces several drifting copies."},
+     {t:"Everyone works on the same up-to-date file", ok:true, why:"There are no separate versions to merge. One copy plus version history replaces several drifting copies."},
      {t:"Cloud files can never be deleted", why:"Cloud files can be deleted, especially if the owner’s account is deleted."},
      {t:"Attachments can’t be opened on phones", why:"They can; the issue is multiple copies, not devices."},
-     {t:"It stops anyone else from reading the file", why:"Sharing gives others access; privacy depends on the settings you choose."}
+     {t:"It stops anyone else from reading or copying the file", why:"Sharing gives others access; privacy depends on the settings you choose."}
    ]},
    {id:"t1u11-q29", lesson:"t1u11-l4", level:2, q:"A reviewer should comment on and suggest changes to a Google Doc, but not edit directly. Which role fits?", options:[
      {t:"Commenter", ok:true, why:"Commenters can add comments and suggestions, which stay proposals until accepted."},
@@ -1419,15 +1493,15 @@ ICA.addUnit({
      {t:"Owner", why:"Ownership gives full control, including deleting the file."}
    ]},
    {id:"t1u11-q30", lesson:"t1u11-l4", level:3, q:"A community group’s accounts spreadsheet is owned by the treasurer’s personal Google account. The treasurer is stepping down. What is the best step?", options:[
-     {t:"The treasurer transfers ownership to the next treasurer, who accepts the request", ok:true, why:"Then the file no longer depends on the old treasurer’s account. With personal accounts the new owner must accept, and the file must already be shared with them."},
+     {t:"The treasurer transfers ownership to the next treasurer", ok:true, why:"Once the new treasurer accepts the request, the file no longer depends on the old treasurer’s account. With personal accounts the new owner must accept, and the file must already be shared with them."},
      {t:"Nothing: editors automatically become owners when the owner leaves", why:"Ownership doesn’t move by itself. If the owner’s account is deleted, the file can disappear."},
      {t:"Make a copy and email it to everyone", why:"That creates separate copies and loses the history; the original still depends on the old account."},
      {t:"Set the link to “anyone with the link can edit”", why:"That widens access dangerously and doesn’t change who owns the file."}
    ]},
    {id:"t1u11-q31", lesson:"t1u11-l4", level:1, q:"In Google Docs, what is Suggesting mode for?", options:[
-     {t:"Proposing edits that show in colour until the owner accepts or rejects them", ok:true, why:"The author sees exactly what changed and decides."},
+     {t:"Proposing edits for the owner to accept or reject", ok:true, why:"Suggested edits show in colour until they are accepted or rejected, so the author sees exactly what changed and decides."},
      {t:"Letting Google suggest words as you type", why:"That’s a different feature; Suggesting mode is about tracking your proposed edits."},
-     {t:"Suggesting new people to share the file with", why:"Sharing is managed in the Share dialog, not Suggesting mode."},
+     {t:"Suggesting new people that you could share the file with", why:"Sharing is managed in the Share dialog, not Suggesting mode."},
      {t:"Locking the document so nobody else can edit", why:"Suggesting mode doesn’t lock anything; others can keep working."}
    ]},
    {id:"t1u11-q32", lesson:"t1u11-l4", level:2, q:"Which is the clearest name for a file in a shared folder?", options:[
@@ -1437,38 +1511,38 @@ ICA.addUnit({
      {t:"`minutes_Kenji-version.docx`", why:"A personal version creates the multiple-copies problem shared editing avoids."}
    ]},
    {id:"t1u11-q33", lesson:"t1u11-l4", level:3, q:"Someone accidentally overwrote a shared rota an hour ago, and others have added good changes since. What should Mei do?", options:[
-     {t:"Open version history, find the version from before the mistake, and copy back only the lost part", ok:true, why:"Copying the lost section keeps the good changes made since; restoring the whole old version would undo them."},
+     {t:"Use version history to copy back only the lost part", ok:true, why:"Find the version from before the mistake and copy back only the lost part. That keeps the good changes made since; restoring the whole old version would undo them."},
      {t:"Restore the version from yesterday without telling anyone", why:"That throws away everyone’s good changes since then, and surprises collaborators."},
      {t:"Retype the rota from memory", why:"Slow and error-prone when the old version is still in the history."},
      {t:"Delete the file and start again", why:"That loses everything, including the history that could fix it."}
    ]},
    {id:"t1u11-q34", lesson:"t1u11-l4", level:1, q:"Why isn’t version history a backup?", options:[
-     {t:"It lives in the same account and service as the file, for a limited time", ok:true, why:"If the file or account is deleted, its history usually goes too. Backups are separate copies."},
+     {t:"It lives with the file, in the same account", ok:true, why:"It’s in the same account and service as the file, and only for a limited time. If the file or account is deleted, its history usually goes too. Backups are separate copies."},
      {t:"It only keeps the first version", why:"It keeps many versions, but they’re still tied to the same file and account."},
-     {t:"It is stored on your own computer", why:"In cloud editors it’s stored with the file in the cloud."},
+     {t:"It is stored on your own computer, not with the file", why:"In cloud editors it’s stored with the file in the cloud."},
      {t:"Nobody can open it", why:"You can open and restore versions; the issue is where they live and for how long."}
    ]},
    {id:"t1u11-q35", lesson:"t1u11-l4", level:2, q:"Amara wants classmates to review her Pages document on iCloud. What does Pages offer?", options:[
-     {t:"Access for only invited people or anyone with the link, with View only or Can make changes permission", ok:true, why:"Those are Pages’ collaboration settings; there isn’t a separate comment-only role."},
-     {t:"Viewer, Commenter and Editor roles, exactly like Google Docs", why:"Those are Google’s role names. Pages has View only and Can make changes."},
+     {t:"View only or Can make changes, for invited people or a link", ok:true, why:"Pages shares with only invited people or anyone with the link, with View only or Can make changes permission. There isn’t a separate comment-only role."},
+     {t:"Viewer, Commenter and Editor roles, exactly the same as Google Docs", why:"Those are Google’s role names. Pages has View only and Can make changes."},
      {t:"No way to collaborate at all", why:"Pages can share a link to collaborate through iCloud."},
      {t:"Collaboration only by emailing attachments", why:"Pages can share one copy through iCloud with a link."}
    ]},
    {id:"t1u11-q36", lesson:"t1u11-l4", level:3, q:"Tomás’s team edits a LibreOffice file stored in a shared cloud folder. Two people opened it at the same time and saved. What has likely happened, and what should they do?", options:[
-     {t:"There may be a conflict copy or lost changes; they should agree that one person edits at a time, or move to an editor that supports co-editing", ok:true, why:"LibreOffice doesn’t co-edit cloud files in real time, so simultaneous saves can clash. Turn-taking or a co-editing tool fixes it."},
+     {t:"There may be a conflict; they should take turns editing", ok:true, why:"There may be a conflict copy or lost changes. LibreOffice doesn’t co-edit cloud files in real time, so simultaneous saves can clash. They should agree that one person edits at a time, or move to an editor that supports co-editing."},
      {t:"Both sets of changes were merged automatically", why:"That happens in cloud editors such as Google Docs; desktop LibreOffice doesn’t merge simultaneous edits this way."},
      {t:"The file is now corrupted and must be deleted", why:"Corruption is unlikely. Depending on the sync service, one person’s save replaced the other’s or was kept as a separate conflict copy. Deleting the file would lose both."},
-     {t:"Nothing could go wrong, because the folder is shared", why:"Sharing a folder doesn’t make desktop apps co-edit safely."}
+     {t:"Nothing could go wrong, because the whole folder is shared", why:"Sharing a folder doesn’t make desktop apps co-edit safely."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t1u11-q37", lesson:"t1u11-l5", level:1, q:"What is a thread in a chat tool?", options:[
-     {t:"A set of replies attached to one message, kept together", ok:true, why:"Threads stop separate conversations in a channel from tangling."},
+     {t:"A set of replies kept together under one message", ok:true, why:"Threads stop separate conversations in a channel from tangling."},
      {t:"A private chat with one person", why:"That’s a direct message."},
-     {t:"A list of everyone in the workspace", why:"That’s the member list, not a thread."},
+     {t:"A list of everyone who is a member of the workspace", why:"That’s the member list, not a thread."},
      {t:"An alert that notifies everyone", why:"That’s a broadcast mention such as @channel."}
    ]},
    {id:"t1u11-q38", lesson:"t1u11-l5", level:1, q:"When should you use @channel or @everyone?", options:[
-     {t:"Rarely: for time-sensitive information that every member genuinely needs", ok:true, why:"It interrupts everyone, often on their phones. Overuse teaches people to mute the channel."},
+     {t:"Rarely, for urgent news every member needs", ok:true, why:"Use it only for time-sensitive information that every member genuinely needs. It interrupts everyone, often on their phones. Overuse teaches people to mute the channel."},
      {t:"Whenever you want a quick answer", why:"Mention the person who can answer instead."},
      {t:"For every message, so nobody misses anything", why:"People will mute the channel and miss the important ones."},
      {t:"Never: it doesn’t do anything", why:"It notifies every member, which is why it should be used sparingly."}
@@ -1486,26 +1560,26 @@ ICA.addUnit({
      {t:"A 👍 reaction to say you’ve seen a message", why:"Reactions are a chat feature, perfect for acknowledgement."}
    ]},
    {id:"t1u11-q41", lesson:"t1u11-l5", level:2, q:"What does setting your status to Do not disturb do?", options:[
-     {t:"Silences notifications; messages still arrive and you see them later", ok:true, why:"It protects focus or rest without blocking people from writing."},
-     {t:"Deletes messages sent while it’s on", why:"Nothing is deleted; you just aren’t alerted."},
+     {t:"Silences notifications; messages still arrive", ok:true, why:"You see the messages later. It protects focus or rest without blocking people from writing."},
+     {t:"Deletes any messages that are sent while it’s on", why:"Nothing is deleted; you just aren’t alerted."},
      {t:"Blocks everyone from messaging you", why:"People can still send messages."},
      {t:"Logs you out of the app", why:"You stay signed in; only notifications change."}
    ]},
    {id:"t1u11-q42", lesson:"t1u11-l5", level:3, q:"In a 50-person volunteer channel, Ana is about to post the shared login for the group’s van-booking account. What should she do instead?", options:[
-     {t:"Share it privately with the one person who needs it, ideally through a password manager", ok:true, why:"A password in a channel is visible to all 50 and stays in the history. Share it narrowly and securely."},
+     {t:"Share it privately with the one person who needs it", ok:true, why:"A password manager is the best way to do this. A password in a channel is visible to all 50 and stays in the history."},
      {t:"Post it, then delete the message after a minute", why:"People may already have seen, copied or been notified of it; deletion isn’t reliable."},
      {t:"Post it with @channel so everyone knows where to find it", why:"That spreads the password even further."},
      {t:"Put it in the channel’s name", why:"That makes it visible to everyone permanently."}
    ]},
    {id:"t1u11-q43", lesson:"t1u11-l5", level:3, q:"Lucía’s team members keep getting non-urgent chat pings late at night and feel they must reply. What’s the best fix?", options:[
-     {t:"Agree team quiet hours and an urgent route (such as a phone call), and have people set notification schedules", ok:true, why:"Settings stop the pings; the shared agreement removes the pressure to reply and keeps emergencies covered."},
+     {t:"Agree quiet hours and an urgent route; set notification schedules", ok:true, why:"Agree team quiet hours and an urgent route (such as a phone call), and have people set notification schedules. Settings stop the pings; the shared agreement removes the pressure to reply and keeps emergencies covered."},
      {t:"Tell everyone to reply faster so conversations finish sooner", why:"That increases pressure and late-night work."},
      {t:"Ban chat and use only email", why:"Chat is useful; the problem is expectations and notifications, not the tool."},
      {t:"Ask members to leave the channel at night and rejoin each morning", why:"Clumsy and easy to forget; notification schedules do the same job automatically."}
    ]},
    {id:"t1u11-q44", lesson:"t1u11-l5", level:2, q:"Why should work chat be written as if others might read it later?", options:[
-     {t:"In work and school accounts, messages are records that can be searched, exported or screenshotted", ok:true, why:"Organisations can usually access and export messages, and anyone in a channel can screenshot them."},
-     {t:"Chat messages are printed and posted on noticeboards", why:"Not usually; the point is that they’re stored and shareable."},
+     {t:"Work messages are records that can be searched or exported", ok:true, why:"In work and school accounts, organisations can usually access and export messages, and anyone in a channel can screenshot them."},
+     {t:"Chat messages are often printed out and posted on noticeboards", why:"Not usually; the point is that they’re stored and shareable."},
      {t:"Chat messages disappear after a minute", why:"Most work chat is stored, often for a long time."},
      {t:"Only managers can read chat", why:"Everyone in a channel can read it, and administrators may have access to more."}
    ]},

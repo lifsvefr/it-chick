@@ -1,6 +1,6 @@
-/* International Studies · Unit 21 · South Asia, the Pacific islands and the Indo-Pacific */
+/* International Studies · Unit 22 · South Asia, the Pacific islands and the Indo-Pacific */
 ICA.addUnit({
-  id:"e4u21", track:"e4", n:21, title:"South Asia, the Pacific islands and the Indo-Pacific", icon:"🪷",
+  id:"e4u21", track:"e4", n:22, title:"South Asia, the Pacific islands and the Indo-Pacific", icon:"🪷",
   blurb:"Two regions that seminars often skip, and the idea that joins them to East Asia: South Asia’s states and their contested politics, India’s foreign policy from non-alignment to multi-alignment, the Pacific islands’ regionalism and their place in great-power competition, the Indo-Pacific as a map that governments draw differently, and how scholars compare regions in Asia. Contested issues are told neutrally, with each side’s position attributed and dated as of November 2026.",
   goals:[
     "Describe the main political systems of South Asia and the scholarly debates about India’s democracy, Pakistan’s civil–military relations and the 2022–2026 upheavals in Sri Lanka, Bangladesh and Nepal, attributing every contested claim",
@@ -68,7 +68,7 @@ ICA.addUnit({
       "Positions differ. In November 2025 a domestic tribunal sentenced Hasina to death in absentia for crimes against humanity; she denies the charges, calls the tribunal “rigged” and politically motivated, and says the election excluded her party. The interim government and its supporters said that barring the party was needed for accountability. The European Union’s observers called the election “credible and competently managed”, while noting sporadic local violence and limits on inclusion. How to implement the Charter, whose reforms need constitutional amendments, remained disputed: as of November 2026 the BNP government was drafting amendments through a parliamentary committee, while the Jamaat-led opposition insisted on a separate constitutional reform council."
     ]},
     {h:"Sri Lanka and Nepal: crisis, protest and the ballot", body:[
-      "**Sri Lanka.** In 2022 a foreign-currency crisis brought fuel queues and power cuts, and the country defaulted on its external debt (Unit 15 covers the restructuring). The protest movement known as the [[aragalaya|aragalaya]] (“struggle” in Sinhala) forced President Gotabaya Rajapaksa to flee and resign in July 2022. In 2024 voters elected Anura Kumara Dissanayake of the National People’s Power, a coalition led by a party with Marxist origins, as president, and gave the alliance a two-thirds majority in parliament. His government kept the IMF programme it inherited; in September 2026 IMF staff reported eleven consecutive quarters of growth, alongside recovery from Cyclone Ditwah.",
+      "**Sri Lanka.** In 2022 a foreign-currency crisis brought fuel queues and power cuts, and the country defaulted on its external debt (Unit 16 covers the restructuring). The protest movement known as the [[aragalaya|aragalaya]] (“struggle” in Sinhala) forced President Gotabaya Rajapaksa to flee and resign in July 2022. In 2024 voters elected Anura Kumara Dissanayake of the National People’s Power, a coalition led by a party with Marxist origins, as president, and gave the alliance a two-thirds majority in parliament. His government kept the IMF programme it inherited; in September 2026 IMF staff reported eleven consecutive quarters of growth, alongside recovery from Cyclone Ditwah.",
       "**Nepal.** After a civil war (1996–2006) and the abolition of the monarchy in 2008, Nepal adopted a federal constitution in 2015. In September 2025 youth-led protests, many of them organised online, met deadly force; the government fell, parliament was dissolved and a former chief justice, Sushila Karki, led an interim government. In the March 2026 election the Rastriya Swatantra Party (RSP) won 182 of 275 seats, and Balendra Shah, a former rapper and mayor of Kathmandu, became prime minister.",
       {warn:"Avoid the tempting story of one “South Asian Spring”. The triggers differed (economic collapse, a quota ruling, a social-media ban among other grievances), so did the role of armies and courts, and new governments face old constraints."}
     ]}
@@ -94,8 +94,8 @@ ICA.addUnit({
       {t:"It was held in one day", why:"Polling ran in seven phases from 19 April to 1 June 2024."}
     ]},
     {id:"e4u21-l1-x4", type:"mcq", q:"Ayesha Siddiqa’s concept of Milbus describes…", options:[
-      {t:"Military capital used for the benefit of officers and kept outside the defence budget, which gives the army a stake in steering politics", ok:true, why:"Right: her 2007 book *Military Inc.* traced the business empire and its political effects."},
-      {t:"A Pakistani bus company owned by the government", why:"A distractor based on the word’s sound; Milbus means military business."},
+      {t:"Military business capital kept outside the defence budget", ok:true, why:"Right: military capital used for the benefit of officers and kept outside the defence budget, which gives the army a stake in steering politics. Her 2007 book *Military Inc.* traced the business empire and its political effects."},
+      {t:"A Pakistani bus company owned and run by the federal government", why:"A distractor based on the word’s sound; Milbus means military business."},
       {t:"Foreign military aid from the United States", why:"Aid shaped the early state (Jalal’s argument), but Milbus is the military’s own internal economy."},
       {t:"The army’s official defence budget", why:"Milbus is precisely what is *not* in the budget."}
     ]},
@@ -118,8 +118,8 @@ ICA.addUnit({
       {t:"Everyone agrees it was simply a technical reform.", flag:true, why:"One-sided and false: UN human rights officials, opposition parties and analysts criticised it."}
     ]},
     {id:"e4u21-l1-x7", type:"mcq", q:"Priya argues: “Sri Lanka 2022, Bangladesh 2024 and Nepal 2025 prove that a single South Asian Spring is under way.” What is the strongest **neutral** response?", options:[
-      {t:"The cases share youth mobilisation and anti-incumbent elections, but their triggers, the roles of armies and courts, and outcomes differ, so the claim needs careful comparison", ok:true, why:"Right: it takes the similarity seriously and tests it against the differences."},
-      {t:"She is right; the three countries are essentially the same", why:"That ignores very different triggers and institutions."},
+      {t:"The cases share features, but triggers and outcomes differ, so compare carefully", ok:true, why:"Right: it takes the similarity seriously (youth mobilisation, anti-incumbent elections) and tests it against the differences in triggers, the roles of armies and courts, and outcomes."},
+      {t:"She is right; the three countries are essentially the same and followed one script", why:"That ignores very different triggers and institutions."},
       {t:"Protests never matter in South Asia", why:"Untrue: these protests helped bring down three governments."},
       {t:"Only economic crises cause protests", why:"Bangladesh began over job quotas and Nepal amid a social-media ban and wider grievances."}
     ]}
@@ -223,8 +223,8 @@ ICA.addUnit({
       {t:"Look East (1992)", b:2, why:"The original policy towards Southeast Asia after 1991."}
     ]},
     {id:"e4u21-l2-x3", type:"mcq", q:"Which description of the India–China boundary is accurate and neutral?", options:[
-      {t:"India treats the McMahon Line as the eastern boundary and Aksai Chin as Indian territory; China rejects the McMahon Line and administers Aksai Chin", ok:true, why:"Right: it states both positions and the facts on the ground without endorsing either."},
-      {t:"The boundary was fixed by a treaty both sides ratified in 1914", why:"China never accepted the 1914 McMahon Line."},
+      {t:"India claims Aksai Chin and the McMahon Line; China rejects both", ok:true, why:"Right: India treats the McMahon Line as the eastern boundary and Aksai Chin as Indian territory; China rejects the McMahon Line and administers Aksai Chin. It states both positions without endorsing either."},
+      {t:"The boundary was fixed by a treaty that both sides ratified in 1914", why:"China never accepted the 1914 McMahon Line."},
       {t:"China illegally occupies Aksai Chin", why:"That is India’s position stated as fact; a neutral account attributes it."},
       {t:"Arunachal Pradesh is Chinese territory known as Zangnan", why:"That is China’s position stated as fact."}
     ]},
@@ -248,9 +248,9 @@ ICA.addUnit({
       {t:"The UN observer mission was closed in 1972.", flag:true, why:"Inaccurate. UNMOGIP still operates; India says its mandate lapsed, Pakistan disagrees, and the UN says only the Security Council can end it."}
     ]},
     {id:"e4u21-l2-x6", type:"mcq", q:"Hana says: “India’s membership of both the Quad and BRICS is a contradiction.” Which reply best uses this lesson’s concepts?", options:[
-      {t:"Under multi-alignment India joins different groups for different purposes, so membership of rival clubs is the strategy, not a contradiction", ok:true, why:"Right: the point of strategic autonomy is to avoid choosing one camp."},
+      {t:"Under multi-alignment, joining rival clubs is the strategy", ok:true, why:"Right: India joins different groups for different purposes. The point of strategic autonomy is to avoid choosing one camp."},
       {t:"India has left BRICS", why:"Inaccurate: India chaired BRICS in 2026."},
-      {t:"The Quad is a military alliance, so India must choose", why:"The Quad has no mutual defence commitment, and India stresses that it is not an alliance."},
+      {t:"The Quad is a military alliance, so India must choose one camp", why:"The Quad has no mutual defence commitment, and India stresses that it is not an alliance."},
       {t:"BRICS is a security alliance against the Quad", why:"BRICS is an economic and political club, not an alliance."}
     ]},
     {id:"e4u21-l2-x7", type:"mcq", q:"Which piece of evidence would a **sceptic** of India’s claim to lead the Global South most likely cite?", options:[
@@ -309,7 +309,7 @@ ICA.addUnit({
       "The Forum also manages outsiders. It has 21 dialogue partners, from China, Japan and the United States to the EU, and Taiwan attends as a “development partner”. After disputes over who could attend the 2025 meeting, leaders adopted a policy that sorts partners into two streams, and in 2026 the full list was invited again."
     ]},
     {h:"Climate at the centre", body:[
-      "For Pacific governments climate change is the first security issue. Unit 2 analysed the Forum’s Boe Declaration (2018), which called it “the single greatest threat” to Pacific peoples, and Unit 16 the islands’ legal diplomacy: Vanuatu’s campaign for the ICJ’s 2025 advisory opinion, the 2023 Forum declaration on the continuity of statehood despite sea-level rise, and Tuvalu’s [[falepili-union|Falepili Union]] with Australia, which includes a pathway for Tuvaluans to move to Australia (see also {{climate-and-mobility}}).",
+      "For Pacific governments climate change is the first security issue. Unit 2 analysed the Forum’s Boe Declaration (2018), which called it “the single greatest threat” to Pacific peoples, and Unit 17 the islands’ legal diplomacy: Vanuatu’s campaign for the ICJ’s 2025 advisory opinion, the 2023 Forum declaration on the continuity of statehood despite sea-level rise, and Tuvalu’s [[falepili-union|Falepili Union]] with Australia, which includes a pathway for Tuvaluans to move to Australia (see also {{climate-and-mobility}}).",
       "At their 2026 meeting in Koror, Palau, leaders again made 1.5 °C the benchmark in their Belau Declaration while acknowledging that the target will be overshot. Critics, including Vanuatu’s climate minister, said Australia, a Forum member and a large coal and gas exporter, was not doing enough; Australia’s government points to its support for Pacific programmes, including initial funding for a regional Renewable Energy Commissioner, a post whose terms of reference leaders approved at the meeting (see {{small-island-climate-diplomacy}})."
     ]},
     {h:"Great powers in a contested ocean", body:[
@@ -331,9 +331,9 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u21-l3-x1", type:"mcq", q:"What was Hau‘ofa’s main argument in “Our Sea of Islands”?", options:[
-      {t:"Seeing Pacific states only as tiny land areas ignores the ocean, voyaging and kinship that connect Oceanians, which makes them larger and less dependent than outsiders assume", ok:true, why:"Right: a “sea of islands”, not “islands in a far sea”."},
+      {t:"Seeing only small land areas ignores the ocean that connects Oceanians", ok:true, why:"Right: the ocean, voyaging and kinship connect Oceanians, which makes them larger and less dependent than outsiders assume: a “sea of islands”, not “islands in a far sea”."},
       {t:"Pacific states are too small to survive without aid", why:"That is the view he attacked."},
-      {t:"The region should be divided into Melanesia, Micronesia and Polynesia", why:"Those colonial categories are not his argument."},
+      {t:"The region should be divided into Melanesia, Micronesia and Polynesia for study", why:"Those colonial categories are not his argument."},
       {t:"Islanders should stop migrating", why:"He saw migration and remittances as part of an expanding Oceanian world."}
     ]},
     {id:"e4u21-l3-x2", type:"match", q:"Match each Pacific term to its meaning.", pairs:[
@@ -371,14 +371,14 @@ ICA.addUnit({
       {t:"Provincial elections are held", why:"28 June 2026."}
     ]},
     {id:"e4u21-l3-x6", type:"mcq", q:"Sione writes: “The Pacific is just a chessboard for China, the US and Australia.” Which response draws best on the new Pacific diplomacy literature?", options:[
-      {t:"Island states have built their own forums and used competition to bargain, so treating them as pawns misses their agency", ok:true, why:"Right: Fry and Tarte’s argument, with examples such as fisheries bargaining and UN coalitions."},
-      {t:"Great powers have no interest in the Pacific", why:"Untrue: competition has clearly sharpened."},
+      {t:"Island states have used competition to bargain, showing agency", ok:true, why:"Right: island states have built their own forums and used competition to bargain, so treating them as pawns misses their agency. This is Fry and Tarte’s argument, with examples such as fisheries bargaining and UN coalitions."},
+      {t:"Great powers have no real interest in the small Pacific island states", why:"Untrue: competition has clearly sharpened."},
       {t:"All island states have chosen China", why:"Untrue: three recognise Taiwan, and many deepened ties with Australia and the US."},
       {t:"The Forum has dissolved", why:"Untrue: it met in Palau in 2026."}
     ]},
     {id:"e4u21-l3-x7", type:"mcq", q:"Why did pro-independence parties reject the result of New Caledonia’s 2021 referendum?", options:[
-      {t:"They had asked for a delay during a COVID-19 outbreak and mourning period, boycotted the vote, and say a vote with 43.9% turnout cannot settle the question", ok:true, why:"Right: their position, attributed. France’s government held that the vote was valid."},
-      {t:"They won it but France ignored the result", why:"96.5% voted against independence among those who voted."},
+      {t:"They had asked for a delay, then boycotted the vote", ok:true, why:"Right: they asked for a delay during a COVID-19 outbreak and mourning period, boycotted the vote, and say a vote with 43.9% turnout cannot settle the question. France’s government held that the vote was valid."},
+      {t:"They won it, but France ignored the result and kept New Caledonia", why:"96.5% voted against independence among those who voted."},
       {t:"No referendum was held in 2021", why:"It was held on 12 December 2021."},
       {t:"The UN cancelled it", why:"The UN did not cancel it; New Caledonia remains on its list of non-self-governing territories."}
     ]}
@@ -432,7 +432,7 @@ ICA.addUnit({
         "January 2007: the Indian naval officer Gurpreet Khurana, writing on sea-lane security and India–Japan cooperation, used it for the maritime space linking the two oceans.",
         "August 2007: Abe’s “Confluence of the Two Seas” speech in New Delhi; the same year the Quad first met (Unit 12).",
         "2013: Australia’s Defence White Paper made a “stable Indo-Pacific” a key strategic interest, defined as an arc from India through Southeast Asia to Northeast Asia.",
-        "2016: Japan launched its Free and Open Indo-Pacific ([[free-and-open-indo-pacific|FOIP]]) at a conference on African development in Nairobi, linking Asia and Africa across the two oceans (Unit 18 covers Japan’s policy).",
+        "2016: Japan launched its Free and Open Indo-Pacific ([[free-and-open-indo-pacific|FOIP]]) at a conference on African development in Nairobi, linking Asia and Africa across the two oceans (Unit 19 covers Japan’s policy).",
         "2017–18: the US government adopted “free and open Indo-Pacific”, and in May 2018 renamed its Pacific Command the Indo-Pacific Command, citing “the increasing connectivity between the Indian and Pacific Oceans”.",
         "2018–19: India’s prime minister set out India’s view at the Shangri-La Dialogue (June 2018) and launched the [[ipoi|Indo-Pacific Oceans Initiative]] (2019); ASEAN adopted its Outlook (June 2019).",
         "2018–21: European governments followed: France from 2018, Germany and the Netherlands in 2020, and the EU (September 2021)."
@@ -513,16 +513,16 @@ ICA.addUnit({
       {t:"Critics such as Rajagopalan and Taylor question whether their own governments’ Indo-Pacific strategies are coherent.", flag:false, why:"Accurate: each examines his own country’s strategy."}
     ]},
     {id:"e4u21-l4-x6", type:"mcq", q:"Kenji says: “Calling the region ‘Indo-Pacific’ is just geography.” Which reply best uses the idea of a strategic narrative?", options:[
-      {t:"The label tells governments which partners and threats count, so choosing it is a political act that shapes behaviour", ok:true, why:"Right: regional names are stories meant to shape how others see and act."},
+      {t:"The label signals which partners and threats count", ok:true, why:"Right: so choosing it is a political act that shapes behaviour. Regional names are stories meant to shape how others see and act."},
       {t:"He is right: names never matter", why:"The lesson shows governments arguing over names precisely because they matter."},
       {t:"Only China uses strategic narratives", why:"All governments do; the Indo-Pacific and the Blue Pacific are examples."},
       {t:"Geography and politics have nothing to do with each other", why:"Mental maps join them."}
     ]},
     {id:"e4u21-l4-x7", type:"mcq", q:"Which argument would Rory Medcalf most likely make?", options:[
-      {t:"The Indo-Pacific describes a real, connected maritime region where middle powers can cooperate so that no single state dominates", ok:true, why:"Right: the case made in *Contest for the Indo-Pacific* (2020)."},
+      {t:"The Indo-Pacific is a real region where middle powers can cooperate", ok:true, why:"Right: a real, connected maritime region where middle powers can cooperate so that no single state dominates, the case made in *Contest for the Indo-Pacific* (2020)."},
       {t:"The Indo-Pacific will dissipate like sea foam", why:"That was Wang Yi’s prediction in 2018."},
       {t:"Southeast Asia is consigned to hedge", why:"That is See Seng Tan’s argument."},
-      {t:"Pacific islands should use the Blue Pacific instead", why:"That is a Pacific perspective, not Medcalf’s thesis."}
+      {t:"Pacific islands should use the Blue Pacific frame instead of the Indo-Pacific", why:"That is a Pacific perspective, not Medcalf’s thesis."}
     ]}
    ],
    apply:{
@@ -638,8 +638,8 @@ ICA.addUnit({
       {t:"Some analysts read India’s investment in BIMSTEC as a way around SAARC’s deadlock.", flag:false, why:"Attributed to analysts; a fair summary."}
     ]},
     {id:"e4u21-l5-x5", type:"mcq", q:"Which statement about “open regionalism” is accurate?", options:[
-      {t:"It means lowering barriers among members without discriminating against outsiders, the founding idea of APEC", ok:true, why:"Right: members cut barriers but extend the benefits to non-members too."},
-      {t:"It means a customs union with a common external tariff", why:"That is closed, discriminatory regionalism, as in the EU’s customs union."},
+      {t:"It means lowering barriers without discriminating against outsiders", ok:true, why:"Right: the founding idea of APEC. Members cut barriers but extend the benefits to non-members too."},
+      {t:"It means a customs union with a common external tariff for all members", why:"That is closed, discriminatory regionalism, as in the EU’s customs union."},
       {t:"It means any state can join any regional body", why:"Membership rules still apply; the term is about trade treatment."},
       {t:"It was invented by SAARC", why:"It is associated with the Pacific Economic Cooperation Council and APEC."}
     ]},
@@ -685,6 +685,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u21-q02","e4u21-q06","e4u21-q08","e4u21-q11","e4u21-q15","e4u21-q17","e4u21-q20","e4u21-q24","e4u21-q29","e4u21-q33","e4u21-q38","e4u21-q42"],
+  cpBank:[
+   {id:"e4u21-cp01", lesson:"e4u21-l1", level:1, q:"In an invented country, one large party absorbs rival factions and wins every national election. Smaller parties survive mainly by pressing it from the margins. Which concept from the lesson describes this?", options:[
+     {t:"Hindutva", why:"Hindutva is an ideology of Hindu nationalism, not a description of a party system."},
+     {t:"The Congress system", ok:true, why:"Yes. Rajni Kothari described a dominant “party of consensus” with opposition “parties of pressure” at its margins."},
+     {t:"The establishment", why:"In Pakistan, “the establishment” means the army leadership and intelligence services."},
+     {t:"A caretaker government", why:"That is a temporary administration to run elections, not a dominant-party pattern."}]},
+   {id:"e4u21-cp02", lesson:"e4u21-l1", level:2, q:"A researcher finds that firms run by an army own banks, housing schemes and farms. Their profits benefit officers and are kept out of the defence budget. Which concept and argument fit?", options:[
+     {t:"Electoral autocracy: the army rigs elections to keep civilian leaders weak", why:"Electoral autocracy is V-Dem’s regime category; it does not describe military business interests."},
+     {t:"The July Charter: a reform programme", why:"The July Charter is Bangladesh’s 2025 reform programme, unrelated to military business."},
+     {t:"Panchsheel: principles of peaceful coexistence", why:"Panchsheel is the 1954 India–China set of principles."},
+     {t:"Siddiqa’s Milbus, which gives the army a stake in steering politics", ok:true, why:"Right. Siddiqa coined Milbus for military capital used for officers’ benefit and kept off the defence budget."}]},
+   {id:"e4u21-cp03", lesson:"e4u21-l1", level:3, q:"Two indices downgrade an invented country’s democracy. Its government calls them biased. Months later, the ruling party loses its majority in an election. Which approach follows the lesson’s advice?", options:[
+     {t:"Conclude that the election proves the indices were simply wrong", why:"One election result does not settle whether the indices’ methods are sound or what the trend means."},
+     {t:"Separate what the indices measure, how sound their methods are, and what trends mean", ok:true, why:"Yes. People can agree on the first question and still disagree on the third, as in the debate about India."},
+     {t:"Accept the government’s view, because governments always know their own countries best", why:"A government’s objection is a position to report and weigh, not proof."},
+     {t:"Accept the indices without question, because they are international", why:"Their methods are themselves debated; a paper should examine them, not take them on trust."}]},
+   {id:"e4u21-cp04", lesson:"e4u21-l2", level:1, q:"India calls the Indo-Pacific inclusive, “not a club of limited members”, and belongs to both the Quad and BRICS without joining any alliance. Drawing on Lessons 2 and 4, which idea links these choices?", options:[
+     {t:"Multi-alignment in pursuit of strategic autonomy", ok:true, why:"Right. Jaishankar’s “convergence with many but congruence with none” keeps freedom of action by working with many partners."},
+     {t:"Bandwagoning with whichever great power is strongest", why:"Bandwagoning means joining the strongest side; India explicitly avoids joining any bloc."},
+     {t:"The hub-and-spoke system", why:"That is the US system of separate Asian alliances, which India is not part of."},
+     {t:"Open regionalism", why:"Open regionalism is APEC’s idea of lowering barriers without discriminating against outsiders."}]},
+   {id:"e4u21-cp05", lesson:"e4u21-l2", level:2, q:"A third country’s foreign minister offers to mediate between India and Pakistan on Kashmir. Based on their stated positions, how would each government most likely respond?", options:[
+     {t:"Both would accept, since both governments rely on UN resolutions", why:"Only Pakistan stresses UN resolutions and international involvement; India rejects a third-party role."},
+     {t:"India would welcome it as neutral help; Pakistan would insist on bilateral talks only", why:"This reverses the positions."},
+     {t:"India would decline, citing Simla; Pakistan would welcome international involvement", ok:true, why:"Yes. India holds that the issue is bilateral; Pakistan calls for UN resolutions and international involvement."},
+     {t:"Both would refer it to UNMOGIP, which both say is active", why:"India says UNMOGIP’s mandate has lapsed; Pakistan says it continues."}]},
+   {id:"e4u21-cp06", lesson:"e4u21-l2", level:3, q:"While SAARC holds no summits, India invests in BIMSTEC around the Bay of Bengal. Drawing on Lessons 2 and 5, which explanation is most accurate and best attributed?", options:[
+     {t:"SAARC was formally dissolved in 2016, so BIMSTEC simply replaced it as the region’s body", why:"SAARC still exists, with a secretariat in Kathmandu; it has simply held no summit since 2014."},
+     {t:"BIMSTEC includes Pakistan as a full member, so it lets India and Pakistan cooperate without SAARC’s deadlock", why:"BIMSTEC leaves Pakistan out; it links five SAARC members with Myanmar and Thailand."},
+     {t:"India and Pakistan jointly agreed in 2016 to move all regional cooperation to BIMSTEC", why:"Pakistan blames India for blocking SAARC; there was no joint decision."},
+     {t:"BIMSTEC leaves out Pakistan; India says SAARC cannot work while Pakistan backs cross-border terrorism", ok:true, why:"Right. This attributes the claim to India’s government; Pakistan blames India for the stall, and some analysts add that India prefers forums it can shape."}]},
+   {id:"e4u21-cp07", lesson:"e4u21-l3", level:1, q:"A donor report calls a Pacific state “tiny, remote and too isolated to stand alone”, counting only its land area. Whose argument most directly challenges this view?", options:[
+     {t:"Hau‘ofa’s “Our Sea of Islands”: count the ocean and its connections", ok:true, why:"Yes. Hau‘ofa contrasted “islands in a far sea” with “a sea of islands” linked by voyaging, kinship and migration."},
+     {t:"Dumont d’Urville’s division of the region into Melanesia, Micronesia and Polynesia", why:"That colonial scheme, with racial rankings, is part of the outside view Hau‘ofa criticised."},
+     {t:"Deutsch’s security community", why:"Deutsch’s concept concerns expectations of peaceful change, not how to see island states."},
+     {t:"Medcalf’s *Contest for the Indo-Pacific*", why:"Medcalf defends the Indo-Pacific frame; he is not answering the “too small” view of island states."}]},
+   {id:"e4u21-cp08", lesson:"e4u21-l3", level:2, q:"Island states that once accepted foreign fleets’ terms now act together to sell fishing days, and their revenues rise sharply. Which idea best describes this shift?", options:[
+     {t:"The great game: islanders as pawns of outside powers", why:"The scenario shows the opposite: island states bargaining skilfully on their own terms."},
+     {t:"The new Pacific diplomacy: islanders as authors of regional plans", ok:true, why:"Right. Fry and Tarte use the Vessel Day Scheme as an example of this shift."},
+     {t:"Open regionalism: lowering barriers to all outsiders without discrimination", why:"The island states are raising the price of access, not lowering barriers."},
+     {t:"The Compacts of Free Association", why:"The Compacts are US agreements with three Micronesian states, not a joint fishing scheme."}]},
+   {id:"e4u21-cp09", lesson:"e4u21-l3", level:3, q:"A Pacific leader says she prefers “Blue Pacific” to “Indo-Pacific”. Drawing on Lessons 3 and 4, which analysis is strongest?", options:[
+     {t:"The two labels describe the same space, so the choice is only a matter of style", why:"Lesson 4 warns that a regional label is never neutral."},
+     {t:"Blue Pacific centres islanders’ identity; some Indo-Pacific maps place them at the edge", ok:true, why:"Yes. Asking who drew a label, where its edges are and what it does shows why island governments prefer their own frame."},
+     {t:"“Blue Pacific” is a US military term for the Indo-Pacific Command’s area", why:"Pacific leaders adopted the Blue Pacific narrative themselves from 2017."},
+     {t:"The leader is signalling that climate change is no longer a priority for the region’s states", why:"Climate change is at the centre of the Blue Pacific agenda and the 2050 Strategy."}]},
+   {id:"e4u21-cp10", lesson:"e4u21-l4", level:2, q:"ASEAN adopts an outside idea, the Indo-Pacific, but reframes it around its own centrality, inclusion and “dialogue … instead of rivalry”. Which concept describes what ASEAN did?", options:[
+     {t:"Securitisation", why:"Securitisation means presenting an issue as an existential threat; ASEAN did the opposite, stressing dialogue."},
+     {t:"Bandwagoning", why:"ASEAN did not join one side; its Outlook avoids blocs."},
+     {t:"Norm localisation", ok:true, why:"Right. ASEAN fitted an outside idea to its own norms of centrality and inclusion."},
+     {t:"Regionalisation from below", why:"Regionalisation is bottom-up integration through firms and flows, not reframing a concept."}]},
+   {id:"e4u21-cp11", lesson:"e4u21-l5", level:2, q:"Region X: members have not prepared for war with each other for decades and share norms of consultation. Region Y: two nuclear-armed rivals fought recently. Drawing on Lessons 1 and 5, which pair of concepts fits?", options:[
+     {t:"X is an insulator; Y is a security community", why:"Y’s rivalry is the opposite of a security community, and an insulator lies between complexes."},
+     {t:"X is a regional security complex defined by rivalry; Y is a mature security community", why:"This reverses the cases."},
+     {t:"Both are pluralistic security communities", why:"Y’s members clearly still prepare for war with each other."},
+     {t:"X: at least a nascent security community; Y: a regional security complex of rivalry", ok:true, why:"Yes. Acharya argued ASEAN built a nascent security community; South Asia is the classic rivalry complex."}]},
+   {id:"e4u21-cp12", lesson:"e4u21-l5", level:3, q:"A student compares ASEAN in its busiest year with SAARC in its worst year, counts the meetings each held, and judges both against the EU. What are the main flaws?", options:[
+     {t:"There are none, because the number of meetings is the best measure of regional success", why:"The lesson warns not to confuse the number of meetings with results."},
+     {t:"Only that SAARC and ASEAN have different founding dates", why:"Founding dates are not the problem. The design of the comparison is."},
+     {t:"Different periods, meetings mistaken for results, and Europe as the yardstick", ok:true, why:"Right. Compare the same period, measure outcomes as well as meetings, and ask what each region’s members want from it."},
+     {t:"Regions cannot be compared at all", why:"They can, with a puzzle, defined regions, indicators and rival explanations."}]}
+  ],
   codex:[
    {id:"south-asia-politics", title:"South Asian politics: states, regimes and upheavals", aka:["South Asia","SAARC region","Indian subcontinent"], tags:["area studies","South Asia","comparative politics"],
     summary:"The eight states of South Asia, their political systems as of November 2026, and the 2022–2026 wave of protests and elections in Sri Lanka, Bangladesh and Nepal.",
@@ -972,7 +1034,7 @@ ICA.addUnit({
      pro:[
       "**Theory.** Realists read the concept as a balancing coalition; liberals as a project for rules and connectivity; constructivists as a [[strategic-narrative|strategic narrative]] that helps create the region it names. Lewis and Wigen’s “metageography” (*The Myth of Continents*, 1997) shows how all such maps encode power.",
       "**Defence of the concept.** Rory Medcalf’s *Contest for the Indo-Pacific* (2020) argues that it captures a real, connected, multipolar maritime region and empowers middle powers.",
-      "**Research use.** Map definitions across official documents and over time; code which states are named; compare languages (for example the Japanese, Indonesian and Chinese terms used). Japan’s own policy is covered in Unit 18.",
+      "**Research use.** Map definitions across official documents and over time; code which states are named; compare languages (for example the Japanese, Indonesian and Chinese terms used). Japan’s own policy is covered in Unit 19.",
       {tip:"The *International Affairs* special section of January 2020 (Kai He and Mingjiang Li, eds.) is a good one-stop collection of national perspectives."}
      ]
     },
@@ -1160,8 +1222,8 @@ ICA.addUnit({
      {t:"India, China, Pakistan, Nepal, Bhutan, Bangladesh, Sri Lanka and the Maldives", why:"China is an East Asian state, not a SAARC member."},
      {t:"The members of the Indian Ocean Rim alone", why:"That is a different, much wider grouping."}]},
    {id:"e4u21-q02", lesson:"e4u21-l1", level:2, q:"A news report says “V-Dem classifies India as an electoral autocracy, so India no longer holds elections.” What is wrong with this?", options:[
-     {t:"An electoral autocracy, by definition, still holds multiparty elections; the category concerns their fairness and wider freedoms", ok:true, why:"Right: India held a general election with more than 960 million eligible voters in 2024."},
-     {t:"Nothing: V-Dem says India has abolished elections", why:"V-Dem says no such thing."},
+     {t:"An electoral autocracy still holds multiparty elections", ok:true, why:"Right: the category concerns their fairness and wider freedoms. India held a general election with more than 960 million eligible voters in 2024."},
+     {t:"Nothing: V-Dem says India has abolished national elections", why:"V-Dem says no such thing."},
      {t:"V-Dem only measures economic growth", why:"V-Dem measures democracy across many dimensions."},
      {t:"V-Dem classifies India as a liberal democracy", why:"Its reports since 2021 classify India as an electoral autocracy, a classification India’s government disputes."}]},
    {id:"e4u21-q03", lesson:"e4u21-l1", level:1, q:"In the 2024 Indian general election, how many seats did the BJP win on its own out of 543?", options:[
@@ -1170,7 +1232,7 @@ ICA.addUnit({
      {t:"293", why:"That is the National Democratic Alliance’s total, not the BJP’s alone."},
      {t:"99", why:"That is the Congress party’s total."}]},
    {id:"e4u21-q04", lesson:"e4u21-l1", level:2, q:"Mei writes: “Since India’s government rejects the indices, they must be wrong.” What is the best response?", options:[
-     {t:"A government’s rejection is a position to report, not proof; judge the indices by their methods and other evidence", ok:true, why:"Right: attribute positions and evaluate evidence separately."},
+     {t:"A rejection is a position to report, not proof", ok:true, why:"Right: judge the indices by their methods and other evidence. Attribute positions and evaluate evidence separately."},
      {t:"She is right; governments always know best", why:"That is an appeal to authority."},
      {t:"The indices must be right because they are foreign", why:"Also an appeal to authority, the other way round."},
      {t:"Indices and governments never disagree", why:"They often do, as here."}]},
@@ -1180,30 +1242,30 @@ ICA.addUnit({
      {t:"Jaffrelot, *The India Way* (2020); Jaishankar, *Modi’s India* (2021)", why:"Swapped authors."},
      {t:"Kothari, *A World of Regions* (2005)", why:"That book is Katzenstein’s; Kothari wrote on the Congress system."}]},
    {id:"e4u21-q06", lesson:"e4u21-l1", level:3, q:"An analyst calls Pakistan since 2018 a “hybrid regime”. Which evidence would best **support** the label, and which reply would its critics make?", options:[
-     {t:"Support: elections and civilian governments coexist with strong military influence, as the 2025 amendment shows; reply: the government says the changes modernise command and that elected institutions still govern", ok:true, why:"Right: evidence for the label plus the attributed counter-position."},
+     {t:"Support: military influence beside elections; reply: elected bodies still govern", ok:true, why:"Right: evidence for the label plus the attributed counter-position. Elections and civilian governments coexist with strong military influence, as the 2025 amendment shows; the government says the changes modernise command and that elected institutions still govern."},
      {t:"Support: Pakistan has no parliament; reply: none", why:"Pakistan has a parliament; the label assumes elections exist."},
      {t:"Support: Pakistan is a monarchy; reply: it is a republic", why:"Pakistan is a federal parliamentary republic."},
-     {t:"Support: the army never takes positions on politics; reply: it always does", why:"This contradicts the claim it is meant to support."}]},
+     {t:"Support: the army never takes positions on politics or elections; reply: it always does", why:"This contradicts the claim it is meant to support."}]},
    {id:"e4u21-q07", lesson:"e4u21-l1", level:2, q:"Which statement about Bangladesh’s February 2026 election is accurate?", options:[
-     {t:"The Awami League was barred; the BNP won 209 of 300 directly elected seats and Jamaat-e-Islami a record 68", ok:true, why:"Right, with a referendum on the July Charter held the same day."},
+     {t:"The Awami League was barred, and the BNP won a large majority", ok:true, why:"Right: the BNP won 209 of 300 directly elected seats and Jamaat-e-Islami a record 68; a referendum on the July Charter was held the same day."},
      {t:"The Awami League won a narrow majority", why:"The party was barred from the election."},
-     {t:"The student-founded NCP won a majority", why:"It won 6 seats."},
+     {t:"The student-founded NCP won a majority of directly elected seats", why:"It won 6 seats."},
      {t:"The election was postponed to 2027", why:"It was held on 12 February 2026."}]},
    {id:"e4u21-q08", lesson:"e4u21-l1", level:3, q:"Oluwaseun is writing about Bangladesh’s 2024–26 transition. Which sentence is best for a neutral seminar paper?", options:[
-     {t:"A UN report found reasonable grounds to believe crimes against humanity may have been committed in 2024; Hasina denies the charges against her and calls the tribunal that sentenced her “rigged”", ok:true, why:"Right: findings attributed to their source, with the accused’s response."},
-     {t:"Hasina is guilty of everything she was accused of", why:"States a contested legal conclusion as fact."},
+     {t:"A UN report found possible crimes against humanity; Hasina denies the charges", ok:true, why:"Right: findings attributed to their source, with the accused’s response. The UN report found reasonable grounds to believe crimes against humanity may have been committed in 2024; Hasina calls the tribunal that sentenced her “rigged”."},
+     {t:"Hasina is guilty of everything she was accused of, as the tribunal and the UN proved", why:"States a contested legal conclusion as fact."},
      {t:"The uprising was a foreign plot", why:"An unsupported claim stated as fact."},
      {t:"Nothing happened in 2024 that matters", why:"Ignores well-documented events."}]},
    {id:"e4u21-q09", lesson:"e4u21-l1", level:2, q:"What do Sri Lanka 2022, Bangladesh 2024 and Nepal 2025 have in common, and what is the main caution?", options:[
-     {t:"Protests helped topple governments and new forces then won elections; but triggers and institutions differ, so avoid one “South Asian Spring” story", ok:true, why:"Right: similarity plus difference."},
+     {t:"Protests toppled governments, but the cases differ, so avoid one story", ok:true, why:"Right: similarity plus difference. Protests helped topple governments and new forces then won elections, but triggers and institutions differ, so avoid one “South Asian Spring” story."},
      {t:"All were military coups", why:"None was a military coup."},
-     {t:"All were caused by the same court ruling", why:"Only Bangladesh’s began with a ruling on job quotas."},
+     {t:"All were caused by the same court ruling on public-sector job quotas", why:"Only Bangladesh’s began with a ruling on job quotas."},
      {t:"All ended with the same party in power everywhere", why:"Different parties won in each country."}]},
    /* ---- Lesson 2 ---- */
    {id:"e4u21-q10", lesson:"e4u21-l2", level:1, q:"Where did the Panchsheel principles first appear?", options:[
-     {t:"In a 1954 India–China agreement on trade and travel with the Tibet region", ok:true, why:"Right: signed on 29 April 1954."},
+     {t:"In a 1954 India–China agreement", ok:true, why:"Right: an agreement on trade and travel with the Tibet region, signed on 29 April 1954."},
      {t:"In the UN Charter", why:"The Charter (1945) has its own principles, not Panchsheel."},
-     {t:"In the 1972 Simla Agreement", why:"That was an India–Pakistan agreement."},
+     {t:"In the 1972 Simla Agreement with Pakistan", why:"That was an India–Pakistan agreement."},
      {t:"In the 2019 ASEAN Outlook", why:"Far later and unrelated."}]},
    {id:"e4u21-q11", lesson:"e4u21-l2", level:2, q:"Which phrase from Jaishankar’s *The India Way* best captures multi-alignment?", options:[
      {t:"“Convergence with many but congruence with none”", ok:true, why:"Right: close cooperation without alliance."},
@@ -1216,28 +1278,28 @@ ICA.addUnit({
      {t:"Strategic Alliance for Greater Asian Resilience", why:"India avoids alliances; this is invented."},
      {t:"Sea Area Governance and Rules", why:"Invented; SAGAR is about security and growth in the Indian Ocean region."}]},
    {id:"e4u21-q13", lesson:"e4u21-l2", level:2, q:"Which statement about the Line of Actual Control is accurate?", options:[
-     {t:"It separates Indian and Chinese forces, and each side reads its exact course differently", ok:true, why:"Right: one reason incidents occur."},
+     {t:"It separates Indian and Chinese forces", ok:true, why:"Right; each side reads its exact course differently, one reason incidents occur."},
      {t:"It is a treaty boundary both sides ratified in 1914", why:"China never accepted the 1914 McMahon Line, and the LAC is not a treaty line."},
      {t:"It divides Indian- and Pakistan-administered Kashmir", why:"That is the Line of Control."},
      {t:"It was abolished in 2024", why:"The 2024 understanding ended a standoff; the LAC still exists."}]},
    {id:"e4u21-q14", lesson:"e4u21-l2", level:1, q:"What did India’s Supreme Court decide in December 2023?", options:[
-     {t:"It unanimously upheld the 2019 removal of Jammu and Kashmir’s special status under Article 370", ok:true, why:"Right; it also ordered assembly elections by 30 September 2024."},
+     {t:"It upheld ending Kashmir’s special status", ok:true, why:"Right: it unanimously upheld the 2019 removal of Jammu and Kashmir’s special status under Article 370, and ordered assembly elections by 30 September 2024."},
      {t:"It restored Article 370", why:"It upheld the removal."},
-     {t:"It ruled the Indus Waters Treaty invalid", why:"That was not the case before it."},
+     {t:"It ruled the Indus Waters Treaty invalid for India", why:"That was not the case before it."},
      {t:"It handed Kashmir to the UN", why:"No court did anything of the kind."}]},
    {id:"e4u21-q15", lesson:"e4u21-l2", level:3, q:"Fatima must summarise the May 2025 India–Pakistan ceasefire neutrally. Which sentence is best?", options:[
-     {t:"A ceasefire took effect on 10 May 2025; Pakistan’s prime minister credited US mediation, while India said the two militaries agreed it directly", ok:true, why:"Right: both accounts attributed."},
+     {t:"Pakistan credited US mediation; India said the militaries agreed it directly", ok:true, why:"Right: both accounts attributed. A ceasefire took effect on 10 May 2025; Pakistan’s prime minister credited US mediation, while India said the two militaries agreed it directly."},
      {t:"The United States forced both sides to stop", why:"States one account as fact."},
      {t:"India and Pakistan never fought in 2025", why:"They exchanged strikes from 7 to 10 May."},
-     {t:"The ceasefire was agreed at the UN Security Council", why:"No Council resolution produced it."}]},
+     {t:"The ceasefire was agreed in a binding UN Security Council resolution on 10 May 2025", why:"No Council resolution produced it."}]},
    {id:"e4u21-q16", lesson:"e4u21-l2", level:2, q:"What are India’s and Pakistan’s positions on UNMOGIP?", options:[
-     {t:"India says its mandate lapsed after 1972; Pakistan says it continues and lodges complaints; the UN says only the Security Council can end it", ok:true, why:"Right: three attributed positions."},
-     {t:"Both want it expanded into a peacekeeping force", why:"Neither government has taken that position."},
+     {t:"India says its mandate lapsed; Pakistan says it continues", ok:true, why:"Right: India says its mandate lapsed after 1972; Pakistan says it continues and lodges complaints; the UN says only the Security Council can end it."},
+     {t:"Both want it expanded into a full UN peacekeeping force in Kashmir", why:"Neither government has taken that position."},
      {t:"Both say it ended in 1949", why:"It began in 1949."},
      {t:"India lodges complaints; Pakistan ignores it", why:"Reversed: Pakistan lodges complaints; India has not since 1972."}]},
    {id:"e4u21-q17", lesson:"e4u21-l2", level:3, q:"Which argument would a **constructivist** most likely make about India’s refusal to join alliances?", options:[
-     {t:"A post-colonial, civilisational identity makes formal alliances feel like a loss of independence", ok:true, why:"Right: identity and memory explain the preference."},
-     {t:"India hedges because China is strong and the US is far away", why:"A realist, power-based argument."},
+     {t:"A post-colonial identity makes alliances feel like lost independence", ok:true, why:"Right: a post-colonial, civilisational identity and memory explain the preference."},
+     {t:"India hedges because China is strong and the United States is far away", why:"A realist, power-based argument."},
      {t:"Trade ties make alliances unnecessary", why:"A liberal, interdependence argument."},
      {t:"India has no foreign policy", why:"Plainly false."}]},
    {id:"e4u21-q18", lesson:"e4u21-l2", level:2, q:"During India’s G20 presidency in 2023, what change to the G20’s membership was agreed?", options:[
@@ -1252,24 +1314,24 @@ ICA.addUnit({
      {t:"Greg Fry", why:"Fry co-edited *The New Pacific Diplomacy*."},
      {t:"Peter Katzenstein", why:"Katzenstein wrote *A World of Regions*."}]},
    {id:"e4u21-q20", lesson:"e4u21-l3", level:2, q:"Why do Pacific leaders describe their region as a “Blue Pacific Continent”?", options:[
-     {t:"To present scattered island states as one large ocean community with shared interests and a stronger joint voice", ok:true, why:"Right: an identity and a diplomatic strategy."},
+     {t:"To present scattered islands as one ocean community", ok:true, why:"Right: one large ocean community with shared interests and a stronger joint voice; an identity and a diplomatic strategy."},
      {t:"Because the islands are joined by land", why:"They are not."},
      {t:"Because the UN created a new continent", why:"No such decision exists."},
-     {t:"To exclude Australia and New Zealand from the Forum", why:"Both remain members."}]},
+     {t:"To exclude Australia and New Zealand from the Pacific Islands Forum", why:"Both remain members."}]},
    {id:"e4u21-q21", lesson:"e4u21-l3", level:1, q:"What does the Vessel Day Scheme do?", options:[
      {t:"It lets the Parties to the Nauru Agreement sell days of fishing to foreign fleets", ok:true, why:"Right: it sharply raised their revenues."},
      {t:"It bans all fishing in the Pacific", why:"It regulates and prices fishing."},
      {t:"It schedules cruise ships", why:"Unrelated: the scheme is about tuna fishing."},
      {t:"It is a US naval patrol plan", why:"It is run by island states."}]},
    {id:"e4u21-q22", lesson:"e4u21-l3", level:2, q:"Which description of the Falepili Union is accurate?", options:[
-     {t:"An Australia–Tuvalu treaty, in force since 2024, combining climate cooperation, a migration pathway and a security guarantee", ok:true, why:"Right; any new third-party security engagement in Tuvalu is to be mutually agreed."},
+     {t:"An Australia–Tuvalu treaty on climate, migration and security", ok:true, why:"Right: in force since 2024, combining climate cooperation, a migration pathway and a security guarantee; any new third-party security engagement in Tuvalu is to be mutually agreed."},
      {t:"A Chinese security pact with Tuvalu", why:"Tuvalu recognises Taiwan, and the treaty is with Australia."},
-     {t:"A fisheries agreement among Micronesian states", why:"That describes neither the treaty nor its parties."},
+     {t:"A fisheries and shipping agreement among Micronesian states and Japan", why:"That describes neither the treaty nor its parties."},
      {t:"A US Compact of Free Association", why:"The Compacts are with the FSM, the Marshall Islands and Palau."}]},
    {id:"e4u21-q23", lesson:"e4u21-l3", level:3, q:"Ana argues that recent Pacific treaties with Australia “trade sovereignty for aid”. Which reply is most balanced?", options:[
-     {t:"Clauses giving Australia a say over third-party security deals do limit choices, but the governments that signed them call them freely chosen partnerships, so the trade-off is contested", ok:true, why:"Right: engages her point and the other side’s stated position."},
+     {t:"Some clauses limit choices, but signatories call the treaties freely chosen", ok:true, why:"Right: it engages her point and the other side’s stated position. Clauses giving Australia a say over third-party security deals do limit choices, but the governments that signed them call them freely chosen partnerships, so the trade-off is contested."},
      {t:"Treaties never affect sovereignty", why:"Some clauses clearly constrain choices."},
-     {t:"Island states had no say in the treaties", why:"They negotiated and signed them."},
+     {t:"Island states had no say in the treaties, which Australia drafted and imposed", why:"They negotiated and signed them."},
      {t:"Only China signs treaties in the Pacific", why:"Australia, the US and others do too."}]},
    {id:"e4u21-q24", lesson:"e4u21-l3", level:2, q:"As of late October 2026, what was the status of Bougainville’s 2019 independence vote?", options:[
      {t:"Papua New Guinea’s parliament had opened debate but not voted; the two governments disputed the majority required", ok:true, why:"Right: PNG’s government says 89 of 118 MPs; Bougainville’s leaders reject that threshold."},
@@ -1282,15 +1344,15 @@ ICA.addUnit({
      {t:"The Biketawa Declaration", why:"That is a Forum crisis-response framework."},
      {t:"The Treaty of Rarotonga", why:"That created a South Pacific nuclear-free zone."}]},
    {id:"e4u21-q26", lesson:"e4u21-l3", level:3, q:"Tomás writes: “New Caledonia settled its future in 2021 when 96.5% rejected independence.” What is the most important missing context?", options:[
-     {t:"Turnout was 43.9% because pro-independence parties boycotted the vote after asking for a delay, and they do not accept it as settling the question", ok:true, why:"Right: the result is accurate but its legitimacy is disputed."},
-     {t:"The vote was held in France, not New Caledonia", why:"It was held in New Caledonia."},
+     {t:"Pro-independence parties boycotted it, so turnout was 43.9%", ok:true, why:"Right: the result is accurate but its legitimacy is disputed. Pro-independence parties had asked for a delay, boycotted the vote and do not accept it as settling the question."},
+     {t:"The vote was held in mainland France, not in New Caledonia itself", why:"It was held in New Caledonia."},
      {t:"Independence actually won", why:"It did not: 96.5% of those who voted chose to stay with France."},
      {t:"There was no vote in 2021", why:"It was held on 12 December 2021."}]},
    {id:"e4u21-q27", lesson:"e4u21-l3", level:2, q:"Which statement about Pacific island recognition of Taiwan is accurate as of May 2026?", options:[
-     {t:"The Marshall Islands, Palau and Tuvalu recognised Taiwan; Solomon Islands, Kiribati and Nauru (now Naoero) had switched to Beijing", ok:true, why:"Right: switches in 2019 (Solomon Islands, Kiribati) and 2024 (Nauru, renamed Naoero in 2026)."},
+     {t:"The Marshall Islands, Palau and Tuvalu recognised Taiwan", ok:true, why:"Right. Solomon Islands and Kiribati had switched to Beijing in 2019, and Nauru (renamed Naoero in 2026) in 2024."},
      {t:"No Pacific state recognised Taiwan", why:"Three did: the Marshall Islands, Palau and Tuvalu."},
      {t:"All Forum members recognised Taiwan", why:"Most recognise Beijing."},
-     {t:"Fiji and Papua New Guinea recognised Taiwan", why:"Both recognise Beijing."}]},
+     {t:"Fiji, Papua New Guinea and Solomon Islands recognised Taiwan", why:"All three recognise Beijing; Solomon Islands switched in 2019."}]},
    /* ---- Lesson 4 ---- */
    {id:"e4u21-q28", lesson:"e4u21-l4", level:1, q:"Where and when did Shinzo Abe give his “Confluence of the Two Seas” speech?", options:[
      {t:"In India’s parliament, on 22 August 2007", ok:true, why:"Right: in the Central Hall of India’s parliament, during an official visit."},
@@ -1298,29 +1360,29 @@ ICA.addUnit({
      {t:"At the first Quad leaders’ summit in 2021", why:"Wrong event."},
      {t:"At APEC in 1989", why:"Wrong event and date."}]},
    {id:"e4u21-q29", lesson:"e4u21-l4", level:2, q:"Which version of the Indo-Pacific explicitly describes the region “not as contiguous territorial spaces but as a closely integrated and interconnected region”?", options:[
-     {t:"The ASEAN Outlook on the Indo-Pacific (2019)", ok:true, why:"Right: with ASEAN at the centre."},
+     {t:"The ASEAN Outlook (2019)", ok:true, why:"Right: the ASEAN Outlook on the Indo-Pacific, with ASEAN at the centre."},
      {t:"Australia’s 2013 Defence White Paper", why:"It described an arc from India to Northeast Asia."},
      {t:"The EU strategy (2021)", why:"It describes a span from East Africa to the Pacific Islands."},
      {t:"The US renaming of Pacific Command (2018)", why:"That was a military command decision."}]},
    {id:"e4u21-q30", lesson:"e4u21-l4", level:1, q:"What does a “mental map” mean in the study of regions?", options:[
-     {t:"A shared picture of which places belong together and where a region’s edges are", ok:true, why:"Right: regions are drawn by people, not simply found."},
-     {t:"A map drawn from memory in an exam", why:"Not the IR meaning."},
+     {t:"A shared picture of which places belong together", ok:true, why:"Right: a shared picture of which places belong together and where a region’s edges are. Regions are drawn by people, not simply found."},
+     {t:"A map of the world drawn from memory in a geography exam", why:"Not the IR meaning."},
      {t:"A satellite map", why:"Satellites show land and sea, not regions."},
      {t:"A map of brain activity", why:"Unrelated to the study of regions."}]},
    {id:"e4u21-q31", lesson:"e4u21-l4", level:2, q:"Why is India’s absence from APEC relevant to the shift from “Asia-Pacific” to “Indo-Pacific”?", options:[
-     {t:"The Asia-Pacific institutions stopped at Southeast Asia, so the Indo-Pacific frame brought India into the regional picture", ok:true, why:"Right: one material and strategic reason for the new label."},
+     {t:"Asia-Pacific bodies stopped at Southeast Asia, leaving India out", ok:true, why:"Right: the Asia-Pacific institutions stopped at Southeast Asia, so the Indo-Pacific frame brought India into the regional picture; one material and strategic reason for the new label."},
      {t:"India founded APEC", why:"India is not a member; APEC was founded by twelve other economies in 1989."},
-     {t:"APEC banned the term Asia-Pacific", why:"APEC still uses it."},
+     {t:"APEC formally banned the term Asia-Pacific after India asked to join", why:"APEC still uses it."},
      {t:"India left APEC in 2018", why:"India was never a member."}]},
    {id:"e4u21-q32", lesson:"e4u21-l4", level:3, q:"Hana reads a 2025 speech by a Southeast Asian minister that uses “Asia-Pacific” throughout and never says “Indo-Pacific”. What is the best analytical response?", options:[
-     {t:"Treat the choice as possible evidence of a position, check the speaker’s other texts and context, and avoid concluding too much from one speech", ok:true, why:"Right: labels can signal positions, but one text is thin evidence."},
-     {t:"Conclude the minister supports China", why:"Overreads one word choice."},
+     {t:"Treat it as possible evidence, and check other texts before concluding", ok:true, why:"Right: labels can signal positions, but one speech is thin evidence; check the speaker’s other texts and context."},
+     {t:"Conclude the minister supports China, since China prefers “Asia-Pacific”", why:"Overreads one word choice."},
      {t:"Ignore it: words never matter", why:"Regional labels often carry meaning."},
      {t:"Conclude the speech is from before 2007", why:"It is dated 2025."}]},
    {id:"e4u21-q33", lesson:"e4u21-l4", level:3, q:"Which argument is a **realist** reading of the Indo-Pacific concept?", options:[
-     {t:"It is a balancing coalition against China’s rising power expressed in geographic language", ok:true, why:"Right: power and balancing."},
+     {t:"It is a balancing coalition against China in geographic language", ok:true, why:"Right: power and balancing against China’s rising power, expressed in geographic language."},
      {t:"It is a narrative that helps create the region it names", why:"A constructivist reading."},
-     {t:"It is a project to spread rules, standards and connectivity", why:"A liberal reading."},
+     {t:"It is a project to spread rules, standards and connectivity across the region", why:"A liberal reading."},
      {t:"It is an ocean science term with no politics", why:"Ignores its strategic use."}]},
    {id:"e4u21-q34", lesson:"e4u21-l4", level:2, q:"How did China’s foreign minister Wang Yi describe the Indo-Pacific idea in 2018?", options:[
      {t:"As something that would dissipate “like sea foam”", ok:true, why:"Right: China’s government prefers “Asia-Pacific”."},
@@ -1336,17 +1398,17 @@ ICA.addUnit({
      {t:"“a strategy or as a club of limited members”", ok:true, why:"Right: India stresses inclusiveness and freedom of action."},
      {t:"a region at all", why:"India uses the term and launched the IPOI in 2019."},
      {t:"important for trade", why:"India stresses trade and connectivity."},
-     {t:"including the Indian Ocean", why:"The Indian Ocean is central to India’s view."}]},
+     {t:"a region that stretches into the Indian Ocean", why:"The Indian Ocean is central to India’s view."}]},
    /* ---- Lesson 5 ---- */
    {id:"e4u21-q37", lesson:"e4u21-l5", level:1, q:"What is the difference between regionalism and regionalisation?", options:[
-     {t:"Regionalism is state-led institution-building; regionalisation is bottom-up integration through markets and people", ok:true, why:"Right: Pempel and colleagues’ distinction."},
+     {t:"Regionalism is state-led; regionalisation is market- and people-led", ok:true, why:"Right: regionalism is state-led institution-building; regionalisation is bottom-up integration through markets and people (Pempel and colleagues)."},
      {t:"They are synonyms", why:"Scholars use them for different processes."},
-     {t:"Regionalism is economic; regionalisation is military", why:"Not the distinction."},
+     {t:"Regionalism is economic, while regionalisation is military and strategic", why:"Not the distinction."},
      {t:"Regionalisation means joining the EU", why:"It applies to any region."}]},
    {id:"e4u21-q38", lesson:"e4u21-l5", level:2, q:"Which feature of SAARC’s Charter helps explain its paralysis?", options:[
-     {t:"Unanimity, plus the exclusion of bilateral and contentious issues from its deliberations", ok:true, why:"Right: one member can block, and the main conflict cannot be discussed."},
+     {t:"Unanimity, and a bar on bilateral and contentious issues", ok:true, why:"Right: one member can block, and the main conflict cannot be discussed, because of unanimity plus the exclusion of bilateral and contentious issues from its deliberations."},
      {t:"A rule that summits must be held in India", why:"No such rule; the 2016 summit was due in Islamabad."},
-     {t:"Majority voting that outvotes India", why:"SAARC uses unanimity."},
+     {t:"Majority voting that lets the smaller members outvote India", why:"SAARC uses unanimity."},
      {t:"A ban on trade agreements", why:"SAARC has a free-trade-area agreement (2004)."}]},
    {id:"e4u21-q39", lesson:"e4u21-l5", level:1, q:"Which states belong to both SAARC and BIMSTEC?", options:[
      {t:"Bangladesh, Bhutan, India, Nepal and Sri Lanka", ok:true, why:"Right: BIMSTEC adds Myanmar and Thailand and leaves out Afghanistan, the Maldives and Pakistan."},
@@ -1354,29 +1416,29 @@ ICA.addUnit({
      {t:"All eight SAARC members", why:"Three are not in BIMSTEC."},
      {t:"Myanmar and Thailand", why:"They are in BIMSTEC and ASEAN, not SAARC."}]},
    {id:"e4u21-q40", lesson:"e4u21-l5", level:2, q:"Deutsch defined a security community as a group with…", options:[
-     {t:"dependable expectations of “peaceful change”, so members no longer prepare for war with each other", ok:true, why:"Right (1957)."},
-     {t:"a mutual defence treaty against outsiders", why:"That is an alliance; a security community concerns relations among members."},
+     {t:"dependable expectations of “peaceful change”", ok:true, why:"Right (1957): members no longer prepare for war with each other."},
+     {t:"a mutual defence treaty against outside threats", why:"That is an alliance; a security community concerns relations among members."},
      {t:"a single government", why:"That is only the amalgamated type; pluralistic communities keep sovereignty."},
      {t:"no armed forces", why:"Members can keep armies; they do not expect to use them on each other."}]},
    {id:"e4u21-q41", lesson:"e4u21-l5", level:2, q:"What does Chen Kuan-Hsing’s “Asia as method” propose?", options:[
-     {t:"Using other Asian societies as reference points, instead of always measuring Asia against Europe or the US", ok:true, why:"Right: building on Takeuchi Yoshimi’s 1960 lecture."},
+     {t:"Using other Asian societies as reference points", ok:true, why:"Right: instead of always measuring Asia against Europe or the US, building on Takeuchi Yoshimi’s 1960 lecture."},
      {t:"Adopting European institutions everywhere in Asia", why:"The opposite of his argument."},
      {t:"Studying only one Asian country at a time", why:"He urges inter-Asian comparison."},
      {t:"Ending area studies", why:"He seeks to change, not end, how Asia is studied."}]},
    {id:"e4u21-q42", lesson:"e4u21-l5", level:3, q:"Kenji’s puzzle: “Why did ASEAN keep meeting through crises while SAARC stalled?” Which plan follows this lesson’s method best?", options:[
-     {t:"Define both bodies and dates, choose indicators (summits, trade, agreements), test power, design and norms explanations, and answer the best counter-argument", ok:true, why:"Right: puzzle, definitions, indicators, rival explanations, counter-argument."},
+     {t:"Define, choose indicators, test rival explanations, answer counter-arguments", ok:true, why:"Right: puzzle, definitions, indicators, rival explanations, counter-argument. Define both bodies and dates, choose indicators (summits, trade, agreements), test power, design and norms explanations, and answer the best counter-argument."},
      {t:"Describe ASEAN’s history in detail and stop", why:"Description is not comparison."},
      {t:"Assume ASEAN is better because it is older", why:"An assumption, not an explanation."},
-     {t:"Use the EU as the standard and grade both", why:"A Eurocentric yardstick the lesson warns against."}]},
+     {t:"Use the EU as the standard of success and grade both ASEAN and SAARC against it", why:"A Eurocentric yardstick the lesson warns against."}]},
    {id:"e4u21-q43", lesson:"e4u21-l5", level:3, q:"Hemmer and Katzenstein (2002) explain why there is no NATO in Asia mainly by…", options:[
-     {t:"US policymakers’ sense of shared identity with Western Europeans but not with Asian partners", ok:true, why:"Right: a constructivist, identity-based argument."},
-     {t:"Asia’s lack of any security threats", why:"The Cold War in Asia brought wars in Korea and Vietnam."},
+     {t:"US policymakers’ shared identity with Europe, not Asia", ok:true, why:"Right: a constructivist, identity-based argument. US policymakers felt a shared identity with Western Europeans but not with Asian partners."},
+     {t:"Asia’s lack of any serious security threats after 1945", why:"The Cold War in Asia brought wars in Korea and Vietnam."},
      {t:"A UN ban on Asian alliances", why:"No such ban exists."},
      {t:"Geography alone", why:"They stress identity, not geography alone."}]},
    {id:"e4u21-q44", lesson:"e4u21-l5", level:2, q:"Which example best shows that institutions cross the lines drawn on regional maps?", options:[
-     {t:"The East Asia Summit includes India, Australia, New Zealand, Russia and the United States as well as ASEAN, China, Japan and South Korea", ok:true, why:"Right: “East Asia” as an institution reaches far beyond East Asia."},
+     {t:"The East Asia Summit includes India, Australia and the US", ok:true, why:"Right: it includes India, Australia, New Zealand, Russia and the United States as well as ASEAN, China, Japan and South Korea, so “East Asia” as an institution reaches far beyond East Asia."},
      {t:"SAARC includes only South Asian states", why:"That is an example of a body matching its region."},
-     {t:"The Pacific Islands Forum meets in the Pacific", why:"Location is not the point."},
+     {t:"The Pacific Islands Forum meets in different Pacific countries", why:"Location is not the point."},
      {t:"ASEAN has eleven members", why:"True but not an example of crossing regional lines."}]},
    {id:"e4u21-q45", lesson:"e4u21-l5", level:1, q:"Which idea is associated with APEC’s founding?", options:[
      {t:"Open regionalism: lowering barriers without discriminating against outsiders", ok:true, why:"Right: the approach APEC adopted from its founding in 1989."},

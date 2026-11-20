@@ -1,6 +1,6 @@
-/* International Studies · Unit 22 · Other world regions: Africa, Latin America and the Middle East */
+/* International Studies · Unit 23 · Other world regions: Africa, Latin America and the Middle East */
 ICA.addUnit({
-  id:"e4u22", track:"e4", n:22, title:"Other world regions: Africa, Latin America and the Middle East", icon:"🌍",
+  id:"e4u22", track:"e4", n:23, title:"Other world regions: Africa, Latin America and the Middle East", icon:"🌍",
   blurb:"How to study a region you don’t know, then Africa, Latin America and the Caribbean, and the Middle East and North Africa at seminar level: the debates about their states, regional institutions, development, democracy, populism, oil, uprisings and peace, and their ties with Asia, told neutrally and dated as of November 2026. The last lesson draws the whole International Studies track together and points to free ways to keep learning.",
   goals:[
     "Define a world region for a research question, read its own scholars, and choose between intra-, inter- and cross-regional comparison",
@@ -29,7 +29,7 @@ ICA.addUnit({
    learn:[
     {h:"Regions are made, not found", body:[
       {lead:"Imagine you are asked to write a seminar paper on “the Middle East”. Before you start, ask: whose middle, and east of what?"},
-      "This last unit of the track turns to three large world regions: Africa, Latin America and the Caribbean, and the Middle East and North Africa. Unit 4 introduced [[area-studies|area studies]] through Japan ({{area-studies}}); Units 19–21 applied it to East, Southeast and South Asia. Here the first step is to notice that region names are themselves historical and political.",
+      "This last unit of the track turns to three large world regions: Africa, Latin America and the Caribbean, and the Middle East and North Africa. Unit 4 introduced [[area-studies|area studies]] through Japan ({{area-studies}}); Units 20–22 applied it to East, Southeast and South Asia. Here the first step is to notice that region names are themselves historical and political.",
       {table:[
         ["Name","Where it came from","What to watch for"],
         ["The Middle East","Possibly British India Office usage in the 1850s; spread after the US naval strategist Alfred Thayer Mahan used it in a September 1902 article on the Persian Gulf","It names the region from the viewpoint of Europe and British India. Some writers in the region, such as the Egyptian philosopher Hassan Hanafi, have called it Eurocentric."],
@@ -56,7 +56,7 @@ ICA.addUnit({
       "A second lesson of Units 2 and 4 ([[global-ir|Global IR]]) is that these regions are not only places to be studied. They are places where influential theory was made.",
       {list:[
         "**Latin America** gave the world [[dependency-theory|dependency theory]] and structuralist economics through Raúl Prebisch and the UN Economic Commission for Latin America (see {{dependency-debates}}), Guillermo O’Donnell’s work on authoritarianism and democracy ({{guillermo-odonnell}}), and the regional social science council CLACSO, founded in 1967.",
-        "**Africa** produced Pan-Africanist thought ([[pan-africanism]]), the Council for the Development of Social Science Research in Africa (CODESRIA, based in Dakar, founded in 1973), and scholars such as Thandika Mkandawire on developmental states (Unit 14) and Mahmood Mamdani on the colonial state ({{mahmood-mamdani}}).",
+        "**Africa** produced Pan-Africanist thought ([[pan-africanism]]), the Council for the Development of Social Science Research in Africa (CODESRIA, based in Dakar, founded in 1973), and scholars such as Thandika Mkandawire on developmental states (Unit 15) and Mahmood Mamdani on the colonial state ({{mahmood-mamdani}}).",
         "**The Middle East** produced Edward Said’s critique of [[orientalism|Orientalism]] (Unit 5), and large Arabic-, Persian-, Turkish- and Hebrew-language scholarships on the state, religion and political economy."
       ]},
       "Researchers who fly in, collect data and publish abroad without local partners are criticised for [[parachute-research|parachute research]], sometimes called extractive or “helicopter” research. Funders and journals increasingly ask for fair partnerships: local co-authors, shared data and results returned to the people studied. This links to the ethics of fieldwork in Unit 3 ({{fieldwork-ethics}}) and to [[positionality]].",
@@ -113,10 +113,10 @@ ICA.addUnit({
       ["MENA","Groups the Middle East with North Africa","A common analytic grouping, used by many scholars and international agencies."]
     ]},
     {id:"e4u22-l1-x2", type:"mcq", q:"A student writes: “Latin America is a natural region defined by geography.” What is the best correction?", options:[
-      {t:"The term was coined in the 1850s and carries political meanings; whether it includes the English-speaking Caribbean depends on the definition", ok:true, why:"Right. The name has a history (Bilbao, Torres Caicedo, French pan-Latinism) and its borders vary with the definition."},
+      {t:"The term was coined in the 1850s, and its borders vary by definition", ok:true, why:"Right. The name has a history (Bilbao, Torres Caicedo, French pan-Latinism) and political meanings, and whether it includes the English-speaking Caribbean depends on the definition."},
       {t:"Latin America is defined by the Andes mountains", why:"Geography alone does not define it: Mexico, Cuba and Brazil’s Amazon are all included."},
       {t:"The UN defined Latin America in its Charter in 1945", why:"The Charter does not define regions; the name is far older."},
-      {t:"It means every country in the Americas south of Canada", why:"That would include the United States. Most definitions centre on Spanish- and Portuguese-speaking states."}
+      {t:"It means every country in the Americas south of Canada, by definition", why:"That would include the United States. Most definitions centre on Spanish- and Portuguese-speaking states."}
     ]},
     {id:"e4u22-l1-x3", type:"sort", q:"Which comparative area studies design does each project use?", buckets:["Intra-regional","Inter-regional","Cross-regional"], items:[
       {t:"Why did Ghana and Côte d’Ivoire follow different economic paths after independence?", b:0, why:"Two cases within one region, West Africa."},
@@ -127,7 +127,7 @@ ICA.addUnit({
       {t:"How does Mercosur compare with ASEAN as a trade project?", b:1, why:"Regional organisations compared as wholes."}
     ]},
     {id:"e4u22-l1-x4", type:"mcq", q:"Which statement about regional scholarship is accurate?", options:[
-      {t:"Dependency theory and structuralist economics were developed largely by Latin American economists linked to the UN’s regional commission", ok:true, why:"Right: Prebisch and the ECLA/CEPAL school, then Cardoso, Faletto and others."},
+      {t:"Dependency theory grew largely from Latin American economists’ work", ok:true, why:"Right: dependency theory and structuralist economics came from Prebisch and the ECLA/CEPAL school, linked to the UN’s regional commission, then Cardoso, Faletto and others."},
       {t:"African universities have produced no social theory of their own", why:"Wrong: CODESRIA, Mamdani, Mkandawire and many others are widely cited."},
       {t:"Area knowledge about the Middle East comes only from Western universities", why:"Large scholarships exist in Arabic, Persian, Turkish and Hebrew, among others."},
       {t:"Citing one scholar from a region means you know what the region thinks", why:"Scholars from the same region disagree; one voice is not a region."}
@@ -209,7 +209,7 @@ ICA.addUnit({
       "So does the record of peace-making. Ethiopia and Eritrea made peace in 2018 after two decades of hostility; the African Union brokered an agreement between Ethiopia’s government and Tigrayan forces in Pretoria in November 2022; and most of Africa’s 54 states are not at war. Describing both patterns is not optimism or pessimism; it is accuracy."
     ]},
     {h:"Development debates: “Africa rising” and its critics", body:[
-      "Unit 14 covered aid and developmental states, and Unit 15 debt, the [[afcfta|AfCFTA]] and Chinese lending. A narrative overlay frames those debates ({{africa-rising-debate}}). In May 2000 *The Economist* called Africa “the hopeless continent”; in December 2011 a famous cover announced [[africa-rising|“Africa rising”]], pointing to growth, mobile phones and a growing middle class. Commodity prices then fell, several economies ran into debt distress, and critics such as Ian Taylor (*Africa Rising? BRICS – Diversifying Dependency*, 2014) argued that growth had rested on exporting raw materials without transforming economies.",
+      "Unit 15 covered aid and developmental states, and Unit 16 debt, the [[afcfta|AfCFTA]] and Chinese lending. A narrative overlay frames those debates ({{africa-rising-debate}}). In May 2000 *The Economist* called Africa “the hopeless continent”; in December 2011 a famous cover announced [[africa-rising|“Africa rising”]], pointing to growth, mobile phones and a growing middle class. Commodity prices then fell, several economies ran into debt distress, and critics such as Ian Taylor (*Africa Rising? BRICS – Diversifying Dependency*, 2014) argued that growth had rested on exporting raw materials without transforming economies.",
       "The statistics themselves are contested. In *Poor Numbers* (2013), Morten Jerven showed how weak national statistical systems made African growth figures unreliable: when Ghana revised its national accounts in 2010, measured GDP rose by about 60 per cent overnight.",
       "Demography is now central. Using the UN’s *World Population Prospects 2024*, Pew Research Center (2026) reports that Africa has about 19 per cent of the world’s people and 28 per cent of its under-25s, with a median age of about 19 and a fertility rate of about 3.9 births per woman, projected to fall to 2.8 by 2050. A [[demographic-dividend|demographic dividend]], a growth boost when the working-age share rises, is possible but not automatic: it depends on jobs, education and health. The AU’s long-term plan, [[agenda-2063|Agenda 2063]], adopted in 2015, sets continental goals on industrialisation, integration and governance."
     ]},
@@ -221,7 +221,7 @@ ICA.addUnit({
         ["[[focac|FOCAC]] (China)","2000","2024 Beijing summit: Xi Jinping pledged RMB 360 billion (about US$50.7 billion) over three years"],
         ["[[india-africa-forum-summit|India–Africa Forum Summit]]","2008","The third summit, in New Delhi in 2015, was the largest"]
       ]},
-      "South Korea held its first Korea–Africa summit in 2024, and Türkiye and the Gulf states have also expanded their presence. Japan stresses African “ownership” and partnership; China stresses South–South solidarity and infrastructure; India stresses shared colonial history and capacity-building. Critics and defenders argue about debt (Unit 15’s [[debt-trap-diplomacy|“debt-trap” debate]]), labour and environmental standards, and whether summits produce what they promise.",
+      "South Korea held its first Korea–Africa summit in 2024, and Türkiye and the Gulf states have also expanded their presence. Japan stresses African “ownership” and partnership; China stresses South–South solidarity and infrastructure; India stresses shared colonial history and capacity-building. Critics and defenders argue about debt (Unit 16’s [[debt-trap-diplomacy|“debt-trap” debate]]), labour and environmental standards, and whether summits produce what they promise.",
       "A growing literature insists on **African agency**: African governments set terms, play partners against each other and use the AU to negotiate collectively. Analyse each relationship from both ends.",
       {key:"Africa is not a stage on which outsiders act. It is 54 states, a continental union and eight regional communities with their own strategies, debates and scholars."},
       {terms:["juridical-statehood","empirical-statehood","decentralised-despotism","neopatrimonialism","politics-of-the-belly","unconstitutional-change-of-government","alliance-of-sahel-states","apsa","peace-and-security-council","regional-economic-communities","african-solutions","african-standby-force","africa-rising","demographic-dividend","agenda-2063","ticad","focac","india-africa-forum-summit"]}
@@ -236,10 +236,10 @@ ICA.addUnit({
       ["Neopatrimonialism as a catch-all label","Thandika Mkandawire’s critique","*World Politics* (2015)."]
     ]},
     {id:"e4u22-l2-x2", type:"mcq", q:"Why, in Jeffrey Herbst’s account, did many African states struggle to project power across their territory?", options:[
-      {t:"Low population densities made it costly to extend control, and fixed borders removed the pressure of interstate war that built states elsewhere", ok:true, why:"Right: his argument turns on geography, population and the international guarantee of borders."},
+      {t:"Sparse populations made control costly, and fixed borders removed war’s pressure", ok:true, why:"Right: low population densities made it costly to extend control, and fixed borders removed the pressure of interstate war that built states elsewhere. His argument turns on geography, population and the international guarantee of borders."},
       {t:"African cultures reject central authority", why:"Herbst makes a structural argument, not a cultural one; cultural explanations of this kind are widely rejected."},
       {t:"The OAU redrew all colonial borders in 1964", why:"The opposite: the OAU resolved to keep the borders existing at independence."},
-      {t:"Colonial powers left behind strong bureaucracies everywhere", why:"Herbst argues colonial states were mostly thin outside capitals."}
+      {t:"Colonial powers left behind strong bureaucracies everywhere, which then collapsed", why:"Herbst argues colonial states were mostly thin outside capitals."}
     ]},
     {id:"e4u22-l2-x3", type:"sort", q:"Is each body one of APSA’s four pillars, another part of the architecture, or outside APSA?", buckets:["One of the four pillars","Other part of APSA","Outside APSA"], items:[
       {t:"Panel of the Wise", b:0, why:"A pillar: eminent persons who support preventive diplomacy."},
@@ -251,8 +251,8 @@ ICA.addUnit({
       {t:"The UN Security Council", b:2, why:"A UN organ; it cooperates with the AU but is not part of APSA."}
     ]},
     {id:"e4u22-l2-x4", type:"mcq", q:"What did UN Security Council Resolution 2719 (December 2023) decide?", options:[
-      {t:"To consider AU requests case by case for UN assessed contributions to African-led peace support operations, up to 75 per cent of each budget", ok:true, why:"Right. It opened a route to predictable funding, with a cap and case-by-case approval."},
-      {t:"To fund all African peace operations in full from the UN budget", why:"Funding is neither automatic nor full; it is capped at 75 per cent."},
+      {t:"To consider UN funding for AU-led operations case by case, capped at 75%", ok:true, why:"Right: AU requests for UN assessed contributions are considered case by case, up to 75 per cent of each budget. It opened a route to predictable funding."},
+      {t:"To fund all African peace operations in full from the UN’s regular budget", why:"Funding is neither automatic nor full; it is capped at 75 per cent."},
       {t:"To give the AU a permanent seat on the Security Council", why:"Council membership is set by the Charter; 2719 concerns financing."},
       {t:"To end all UN peacekeeping in Africa", why:"It says nothing of the kind; it is about AU-led operations."}
     ]},
@@ -294,7 +294,7 @@ ICA.addUnit({
   {id:"e4u22-l3", title:"Latin America and the Caribbean: development, democracy and the pink tide", minutes:60,
    hook:{q:"Who is usually credited with first putting the words “Latin America” into print?", options:["A Chilean writer, in a speech in Paris","A Spanish king, in a royal decree","A US president, in a message to Congress","A Portuguese explorer, in a ship’s log"], answer:0, reveal:"**A Chilean writer in Paris.** Francisco Bilbao used “América latina” in a speech in 1856, and the Colombian José María Torres Caicedo used it in a poem the next year. Both wanted the region’s republics to unite against intervention, especially from the United States. The name later also served French ambitions. This lesson follows the region’s own debates: dependency, dictatorship and democracy, populism, the pink tide, and its place between the United States, Europe and Asia."},
    goals:[
-     "Link Latin America’s development debates (structuralism, the debt crisis, reform and the commodity boom) to Units 14 and 15",
+     "Link Latin America’s development debates (structuralism, the debt crisis, reform and the commodity boom) to Units 15 and 16",
      "Explain bureaucratic authoritarianism, pacted transitions, the third wave and delegative democracy, with their authors",
      "Compare ideational, strategic and discursive definitions of populism and apply them neutrally",
      "Describe the pink tide, the turns that followed it and the competing explanations, dated as of November 2026",
@@ -303,8 +303,8 @@ ICA.addUnit({
    learn:[
     {h:"From structuralism to the commodity boom", body:[
       {lead:"Few regions have argued about development as long, or exported as many development ideas, as Latin America."},
-      "Unit 14 told how Raúl Prebisch and the UN Economic Commission for Latin America argued that falling [[terms-of-trade|terms of trade]] trapped commodity exporters ([[prebisch-singer-thesis]]), and how Cardoso and Faletto described [[dependent-development|dependent development]] ({{dependency-debates}}). Many governments followed [[import-substitution|import-substituting industrialisation]] from the 1930s to the 1970s.",
-      "Then came the debt crisis. In August 1982 Mexico announced it could not service its foreign debt, and crisis spread across the region. The 1980s became known in the region as the “lost decade”. Governments turned, often under [[imf|IMF]] programmes, to [[structural-adjustment|structural adjustment]] and the reforms summarised as the [[washington-consensus|Washington Consensus]] (Unit 14: {{washington-consensus-debate}}; Unit 15: {{financial-crises-ipe}}).",
+      "Unit 15 told how Raúl Prebisch and the UN Economic Commission for Latin America argued that falling [[terms-of-trade|terms of trade]] trapped commodity exporters ([[prebisch-singer-thesis]]), and how Cardoso and Faletto described [[dependent-development|dependent development]] ({{dependency-debates}}). Many governments followed [[import-substitution|import-substituting industrialisation]] from the 1930s to the 1970s.",
+      "Then came the debt crisis. In August 1982 Mexico announced it could not service its foreign debt, and crisis spread across the region. The 1980s became known in the region as the “lost decade”. Governments turned, often under [[imf|IMF]] programmes, to [[structural-adjustment|structural adjustment]] and the reforms summarised as the [[washington-consensus|Washington Consensus]] (Unit 15: {{washington-consensus-debate}}; Unit 16: {{financial-crises-ipe}}).",
       "From the early 2000s, Chinese demand fuelled a [[commodity-boom|commodity boom]] in soy, copper, iron ore and oil. Growth and social spending rose, and poverty fell in many countries. When prices fell after about 2013–14, budgets tightened again. The boom matters for politics: it paid for the programmes of the pink tide, and its end helped bring the turns that followed."
     ]},
     {h:"Dictatorship and democratisation", body:[
@@ -346,7 +346,7 @@ ICA.addUnit({
       "Pía Riggirozzi and Diana Tussie called the bodies of the 2000s “post-hegemonic” regionalism (2012): projects that put social policy and autonomy from the United States ahead of trade. Critics reply that bodies built around like-minded governments decline when governments change, as UNASUR did."
     ]},
     {h:"Latin America and Asia; people on the move", body:[
-      "Asia is now central to the region’s economy. China is the largest trading partner of several South American countries and a major lender and investor (Unit 15: {{china-overseas-lending}}); the port of Chancay in Peru, majority-owned by the Chinese company COSCO Shipping, opened in November 2024. A China–CELAC Forum has met at ministerial level since 2015. Chile, Mexico and Peru belong to APEC and the [[cptpp|CPTPP]].",
+      "Asia is now central to the region’s economy. China is the largest trading partner of several South American countries and a major lender and investor (Unit 16: {{china-overseas-lending}}); the port of Chancay in Peru, majority-owned by the Chinese company COSCO Shipping, opened in November 2024. A China–CELAC Forum has met at ministerial level since 2015. Chile, Mexico and Peru belong to APEC and the [[cptpp|CPTPP]].",
       "Japan’s ties are older and human. Japanese migration to Brazil began in 1908, and Brazil has the largest population of Japanese descent outside Japan. From 1990 Japan’s immigration rules eased entry for descendants of Japanese emigrants, and many Brazilian and Peruvian *Nikkei* moved to Japan to work: a reversed migration that the migration primer’s ideas of [[diaspora]] and return help explain.",
       "Migration is also a regional story. Millions of Venezuelans have left their country since the mid-2010s, most to other Latin American states; Colombia’s 2021 temporary protection status for them is a much-studied case (see the migration primer, {{refugees-and-displacement}}). [[remittances|Remittances]] from the United States sustain many households in Mexico and Central America.",
       {terms:["commodity-boom","bureaucratic-authoritarianism","pacted-transition","third-wave-democratisation","delegative-democracy","thin-centred-ideology","populism","neoliberal-populism","pink-tide","alba","unasur","celac","pacific-alliance"]}
@@ -435,7 +435,7 @@ ICA.addUnit({
       "Why do oil-rich states so often stay authoritarian? The Iranian economist Hossein Mahdavy (1970) coined the idea of the [[rentier-state|rentier state]]: one living on external rents, such as oil revenue paid by foreigners, rather than on taxing its citizens. Hazem Beblawi and Giacomo Luciani’s edited volume *The Rentier State* (1987) made it a theory ({{rentier-state-theory}}). Luciani contrasted the [[allocation-state|allocation state]], which distributes oil income, with the production state, which must tax a productive economy.",
       {fig:'<svg viewBox="0 0 340 330"><defs><marker id="e4u22-l4-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-gold" x="60" y="8" width="220" height="46" rx="8" stroke-width="2"/><text x="170" y="28" text-anchor="middle">Oil and gas rents</text><text class="s" x="170" y="45" text-anchor="middle">paid by foreign buyers</text><path class="d-ink" d="M170 54 V76" stroke-width="2" marker-end="url(#e4u22-l4-ar)"/><rect class="d-rose" x="60" y="80" width="220" height="46" rx="8" stroke-width="3"/><text x="170" y="100" text-anchor="middle">The state</text><text class="s" x="170" y="117" text-anchor="middle">receives and allocates</text><path class="d-ink" d="M170 126 V148" stroke-width="2" marker-end="url(#e4u22-l4-ar)"/><rect class="d-soft" x="20" y="152" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="174" text-anchor="middle">Citizens</text><text class="s" x="170" y="192" text-anchor="middle">public jobs, subsidies, services;</text><text class="s" x="170" y="207" text-anchor="middle">low or no income tax</text><path class="d-ink" d="M170 214 V236" stroke-width="2" marker-end="url(#e4u22-l4-ar)"/><rect class="d-panel" x="20" y="240" width="300" height="80" rx="8" stroke-width="1"/><text x="170" y="262" text-anchor="middle">Predicted result</text><text class="s" x="170" y="282" text-anchor="middle">weaker demands for representation</text><text class="s" x="170" y="298" text-anchor="middle">(“no taxation, no representation”);</text><text class="s" x="170" y="314" text-anchor="middle">critics: opposition still emerges</text></svg>', alt:"A vertical flow diagram of the rentier state. Oil and gas rents, paid by foreign buyers, flow to the state, which receives and allocates them. The state passes them to citizens as public jobs, subsidies and services, with low or no income tax. The predicted result is weaker demands for representation, summed up as no taxation, no representation; critics note that opposition still emerges.", cap:"The core mechanism of rentier state theory, and the point its critics contest."},
       "Michael Ross tested the idea statistically in “Does Oil Hinder Democracy?” (*World Politics*, 2001) and *The Oil Curse* (2012), linking it to the [[resource-curse|resource curse]] of Unit 12. Critics reply that oil does not stop political demands: Gwenn Okruhlik (1999) showed opposition arising in Saudi Arabia from the unequal way rents were shared, and Michael Herb (*The Wages of Oil*, 2014) showed how much Gulf states differ from one another.",
-      "Matthew Gray’s theory of [[late-rentierism|late rentierism]] (Center for International and Regional Studies, Georgetown University in Qatar, 2011) describes how Gulf states have adapted to globalisation: more responsive (though not democratic), more entrepreneurial, investing abroad and branding themselves. Diversification plans such as Saudi Arabia’s Vision 2030 (2016) and the energy transition (Unit 16: {{energy-transition-politics}}) test the model."
+      "Matthew Gray’s theory of [[late-rentierism|late rentierism]] (Center for International and Regional Studies, Georgetown University in Qatar, 2011) describes how Gulf states have adapted to globalisation: more responsive (though not democratic), more entrepreneurial, investing abroad and branding themselves. Diversification plans such as Saudi Arabia’s Vision 2030 (2016) and the energy transition (Unit 17: {{energy-transition-politics}}) test the model."
     ]},
     {h:"The Arab uprisings and after", body:[
       "On 17 December 2010 a Tunisian street vendor, Mohamed Bouazizi, set himself on fire after a confrontation with officials. Protests forced President Ben Ali to flee on 14 January 2011, and Egypt’s President Mubarak resigned on 11 February. Uprisings followed in Libya, Yemen, Bahrain, Syria and elsewhere ({{arab-uprisings}}). Outcomes diverged sharply:",
@@ -472,8 +472,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u22-l4-x1", type:"mcq", q:"A classmate says: “The Sykes–Picot Agreement drew today’s borders of Iraq and Syria.” What is the best reply?", options:[
-      {t:"It set out Anglo-French zones in 1916, but the actual borders came from later agreements such as San Remo (1920), Lausanne (1923) and boundary commissions", ok:true, why:"Right: historians separate the 1916 plan from the borders that emerged after the war."},
-      {t:"It is correct: the borders follow the 1916 lines exactly", why:"The post-war borders differ substantially from the 1916 zones."},
+      {t:"It set out zones in 1916, but later agreements drew the actual borders", ok:true, why:"Right: the actual borders came from later agreements such as San Remo (1920), Lausanne (1923) and boundary commissions. Historians separate the 1916 plan from the borders that emerged after the war."},
+      {t:"It is correct: today’s borders follow the 1916 lines exactly, mile by mile", why:"The post-war borders differ substantially from the 1916 zones."},
       {t:"Sykes–Picot was signed by the Ottoman Empire", why:"It was a secret Anglo-French agreement; the Ottomans were not party to it."},
       {t:"The borders were drawn by the UN in 1945", why:"The mandates and borders predate the UN."}
     ]},
@@ -502,8 +502,8 @@ ICA.addUnit({
       {t:"A ceasefire in Gaza under a US-brokered plan", why:"October 2025."}
     ]},
     {id:"e4u22-l4-x5", type:"mcq", q:"Which sentence is written in the neutral, attributed style expected in a seminar paper?", options:[
-      {t:"“Israel’s government opposes a Palestinian state, citing security, while the Palestinian Authority seeks a state on the 1967 lines with East Jerusalem as its capital.”", ok:true, why:"Right: each position is attributed to its holder and stated in their terms."},
-      {t:"“Everyone knows the two-state solution is dead.”", why:"An unattributed opinion presented as fact."},
+      {t:"“Israel’s government opposes a Palestinian state, citing security; the PA seeks one on the 1967 lines.”", ok:true, why:"Right: each position is attributed to its holder and stated in their terms. The Palestinian Authority seeks a state on the 1967 lines with East Jerusalem as its capital."},
+      {t:"“Everyone knows the two-state solution is dead, since Israel’s government now opposes a Palestinian state.”", why:"An unattributed opinion presented as fact."},
       {t:"“The Nakba is a myth.”", why:"Denies a documented history; the UN records the mass displacement of 1948."},
       {t:"“Israel’s independence was simply a colonial plot.”", why:"A one-sided claim presented as fact; it ignores the other narrative and the history."}
     ]},
@@ -536,7 +536,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e4u22-l5", title:"Putting it together: the map of international studies, and how to keep learning", minutes:55,
-   hook:{q:"The UN had 51 founding members in 1945 and has 193 today. From which region did the largest number of the new members come?", options:["Africa","Asia and the Pacific","Europe","Latin America and the Caribbean"], answer:0, reveal:"**Africa.** Only four African states (Egypt, Ethiopia, Liberia and South Africa) were among the founders; today all 54 African states are members. Decolonisation (Unit 1) remade the international system, changed who sits in global institutions (Units 9–13), and shaped the development debates (Units 14–17) and the regional studies (Units 18–22) of this track. This final lesson draws those threads together and points to free ways to keep learning."},
+   hook:{q:"The UN had 51 founding members in 1945 and has 193 today. From which region did the largest number of the new members come?", options:["Africa","Asia and the Pacific","Europe","Latin America and the Caribbean"], answer:0, reveal:"**Africa.** Only four African states (Egypt, Ethiopia, Liberia and South Africa) were among the founders; today all 54 African states are members. Decolonisation (Unit 1) remade the international system, changed who sits in global institutions (Units 9–13), and shaped the development debates (Units 15–18) and the regional studies (Units 19–23) of this track. This final lesson draws those threads together and points to free ways to keep learning."},
    goals:[
      "Describe how the track’s foundations and its four clusters fit together as a field",
      "Use six cross-cutting debates to connect topics from different units",
@@ -552,19 +552,19 @@ ICA.addUnit({
         ["Foundations","1–4: history since 1900, IR theory, research methods, Japan studies","What happened, how do we explain it, and how do we know?"],
         ["Culture, society and media","5–8","How do meaning, identity, media and attraction shape world politics?"],
         ["Global governance","9–13: organisations, law, human rights, security, governance beyond the state","How is a world without a world government governed?"],
-        ["Sustainable development","14–17: development, IPE, environment, the SDGs","Who gets what, how, and at what cost to the planet?"],
-        ["Area studies","4 and 18–22: Japan, East, Southeast and South Asia, the Pacific, Africa, Latin America, the Middle East","How do these questions look from particular places, and what do those places teach the theories?"]
+        ["Economics and sustainable development","14–18: economics, development, IPE, environment, the SDGs","Who gets what, how, and at what cost to the planet?"],
+        ["Area studies","4 and 19–23: Japan, East, Southeast and South Asia, the Pacific, Africa, Latin America, the Middle East","How do these questions look from particular places, and what do those places teach the theories?"]
       ]},
-      {fig:'<svg viewBox="0 0 340 360"><rect class="d-panel" x="70" y="140" width="200" height="80" rx="12" stroke-width="2"/><text x="170" y="166" text-anchor="middle">Foundations</text><text class="s" x="170" y="186" text-anchor="middle">history · theory · methods</text><text class="s" x="170" y="204" text-anchor="middle">Units 1–4</text><rect class="d-rose" x="8" y="10" width="156" height="104" rx="10" stroke-width="2"/><text x="86" y="40" text-anchor="middle">Culture,</text><text x="86" y="58" text-anchor="middle">society, media</text><text class="s" x="86" y="84" text-anchor="middle">Units 5–8</text><rect class="d-gold" x="176" y="10" width="156" height="104" rx="10" stroke-width="2"/><text x="254" y="40" text-anchor="middle">Global</text><text x="254" y="58" text-anchor="middle">governance</text><text class="s" x="254" y="84" text-anchor="middle">Units 9–13</text><rect class="d-sage" x="8" y="246" width="156" height="104" rx="10" stroke-width="2"/><text x="86" y="276" text-anchor="middle">Sustainable</text><text x="86" y="294" text-anchor="middle">development</text><text class="s" x="86" y="320" text-anchor="middle">Units 14–17</text><rect class="d-soft" x="176" y="246" width="156" height="104" rx="10" stroke-width="2"/><text x="254" y="276" text-anchor="middle">Area</text><text x="254" y="294" text-anchor="middle">studies</text><text class="s" x="254" y="320" text-anchor="middle">Units 4, 18–22</text><path class="d-ink" d="M110 114 L130 140 M230 114 L210 140 M110 246 L130 220 M230 246 L210 220" stroke-width="2"/><path class="d-ink" d="M164 62 H176 M164 298 H176 M30 114 V246 M310 114 V246" stroke-width="1" stroke-dasharray="4 4"/></svg>', alt:"A map of the field. In the centre, Foundations: history, theory and methods, Units 1 to 4. Around it, four clusters linked to the centre by solid lines: culture, society and media (Units 5 to 8); global governance (Units 9 to 13); sustainable development (Units 14 to 17); and area studies (Units 4 and 18 to 22). Dashed lines link each cluster to its neighbours.", cap:"The foundations feed every cluster, and the clusters constantly borrow from one another. Area studies tests all of them in real places."},
+      {fig:'<svg viewBox="0 0 340 360"><rect class="d-panel" x="70" y="140" width="200" height="80" rx="12" stroke-width="2"/><text x="170" y="166" text-anchor="middle">Foundations</text><text class="s" x="170" y="186" text-anchor="middle">history · theory · methods</text><text class="s" x="170" y="204" text-anchor="middle">Units 1–4</text><rect class="d-rose" x="8" y="10" width="156" height="104" rx="10" stroke-width="2"/><text x="86" y="40" text-anchor="middle">Culture,</text><text x="86" y="58" text-anchor="middle">society, media</text><text class="s" x="86" y="84" text-anchor="middle">Units 5–8</text><rect class="d-gold" x="176" y="10" width="156" height="104" rx="10" stroke-width="2"/><text x="254" y="40" text-anchor="middle">Global</text><text x="254" y="58" text-anchor="middle">governance</text><text class="s" x="254" y="84" text-anchor="middle">Units 9–13</text><rect class="d-sage" x="8" y="246" width="156" height="104" rx="10" stroke-width="2"/><text x="86" y="276" text-anchor="middle">Sustainable</text><text x="86" y="294" text-anchor="middle">development</text><text class="s" x="86" y="320" text-anchor="middle">Units 15–18</text><rect class="d-soft" x="176" y="246" width="156" height="104" rx="10" stroke-width="2"/><text x="254" y="276" text-anchor="middle">Area</text><text x="254" y="294" text-anchor="middle">studies</text><text class="s" x="254" y="320" text-anchor="middle">Units 4, 19–23</text><path class="d-ink" d="M110 114 L130 140 M230 114 L210 140 M110 246 L130 220 M230 246 L210 220" stroke-width="2"/><path class="d-ink" d="M164 62 H176 M164 298 H176 M30 114 V246 M310 114 V246" stroke-width="1" stroke-dasharray="4 4"/></svg>', alt:"A map of the field. In the centre, Foundations: history, theory and methods, Units 1 to 4. Around it, four clusters linked to the centre by solid lines: culture, society and media (Units 5 to 8); global governance (Units 9 to 13); sustainable development (Units 15 to 18); and area studies (Units 4 and 19 to 22). Dashed lines link each cluster to its neighbours.", cap:"The foundations feed every cluster, and the clusters constantly borrow from one another. Area studies tests all of them in real places."},
       "Notice the dashed lines. A seminar on climate finance (development) quickly becomes one on law (governance), on how media frame small island states (culture) and on Pacific diplomacy (area studies). Strong graduate work moves along these lines on purpose."
     ]},
     {h:"Six debates that run through everything", body:[
       "Topics change; the underlying arguments recur. If you can place a new reading in one of these debates, you can usually follow the seminar.",
       {table:[
         ["Debate","The question","Where you met it"],
-        ["Order and change","Is the post-1945 order adapting, fragmenting or being replaced, and by whom?","Units 1, 13, 19; the Gulf states and BRICS here"],
+        ["Order and change","Is the post-1945 order adapting, fragmenting or being replaced, and by whom?","Units 1, 13, 20; the Gulf states and BRICS here"],
         ["Material and ideational","Do interests and power drive outcomes, or ideas, norms and identities?","Units 2, 5, 8; rentier theory versus identity here"],
-        ["Structure and agency","Do global structures set the limits, or do states and people make their own paths?","Units 14–15; African agency in Asian partnerships here"],
+        ["Structure and agency","Do global structures set the limits, or do states and people make their own paths?","Units 15–16; African agency in Asian partnerships here"],
         ["Universal and particular","Do concepts such as rights, democracy and development travel across regions?","Units 4, 11; comparative area studies here"],
         ["State and beyond","Is the state still the main actor, or do networks, firms and movements govern?","Units 9, 13, 7; regional communities in Africa here"],
         ["Knowledge and power","Who produces knowledge about whom, and with what effects?","Units 3, 5; region names and parachute research here"]
@@ -587,8 +587,8 @@ ICA.addUnit({
     {h:"One issue across the map: lithium", body:[
       "Take a single commodity and follow it through the clusters. Lithium, used in batteries for electric vehicles and power storage, is found in large quantities in the salt flats where Argentina, Bolivia and Chile meet, among other places.",
       {list:[
-        "**Development and IPE** (Units 14–15): can exporters move up the [[global-value-chain|value chain]] from raw material to refining and batteries, or does the old [[prebisch-singer-thesis|Prebisch–Singer]] trap return? See {{global-value-chains}}.",
-        "**Environment** (Unit 16): the energy transition needs lithium, but extraction uses scarce water in arid regions. Is that a trade-off or an injustice? See {{energy-transition-politics}}.",
+        "**Development and IPE** (Units 15–16): can exporters move up the [[global-value-chain|value chain]] from raw material to refining and batteries, or does the old [[prebisch-singer-thesis|Prebisch–Singer]] trap return? See {{global-value-chains}}.",
+        "**Environment** (Unit 17): the energy transition needs lithium, but extraction uses scarce water in arid regions. Is that a trade-off or an injustice? See {{energy-transition-politics}}.",
         "**Culture, identity and rights** (Units 6 and 11): Indigenous communities near the salt flats claim a say over extraction ({{minority-and-indigenous-rights}}).",
         "**Governance** (Units 9–10, 13): governments in the region have chosen different mixes of state control and private investment; buyers in China, Japan, South Korea, Europe and North America compete for supply, under rules of trade and [[critical-minerals|critical-minerals]] policy.",
         "**Area studies** (Lesson 3): the pink tide and its turns shaped these choices, and populist and technocratic arguments about who owns natural resources recur."
@@ -636,10 +636,10 @@ ICA.addUnit({
       {t:"Research methods for international studies", b:0, why:"Unit 3, part of the foundations."},
       {t:"Soft power, public diplomacy and cultural diplomacy", b:1, why:"Unit 8."},
       {t:"International law in depth", b:2, why:"Unit 10."},
-      {t:"Environment and climate governance", b:3, why:"Unit 16."},
+      {t:"Environment and climate governance", b:3, why:"Unit 17."},
       {t:"Identity, nation and race", b:1, why:"Unit 6."},
       {t:"Security, conflict and peacebuilding", b:2, why:"Unit 12."},
-      {t:"International political economy", b:3, why:"Unit 15."}
+      {t:"International political economy", b:3, why:"Unit 16."}
     ]},
     {id:"e4u22-l5-x2", type:"match", q:"Match each seminar question to the cross-cutting debate it belongs to.", pairs:[
       ["Is the liberal international order ending?","Order and change","A question about how the post-1945 order is changing."],
@@ -649,9 +649,9 @@ ICA.addUnit({
       ["Who decides what counts as knowledge about the Middle East?","Knowledge and power","The politics of knowledge production."]
     ]},
     {id:"e4u22-l5-x3", type:"mcq", q:"In the lithium example, which question belongs mainly to **international political economy**?", options:[
-      {t:"Can exporting countries move from mining into refining and battery-making?", ok:true, why:"Right: a value-chain upgrading question (Unit 15)."},
+      {t:"Can exporters move into refining and battery-making?", ok:true, why:"Right: whether exporting countries can move from mining into refining and battery-making is a value-chain upgrading question (Unit 16)."},
       {t:"Do Indigenous communities have a right to be consulted?", why:"Mainly a rights and identity question (Units 6 and 11)."},
-      {t:"How do salt-flat ecosystems respond to water extraction?", why:"Mainly an environmental question (Unit 16)."},
+      {t:"How do salt-flat ecosystems respond to water extraction?", why:"Mainly an environmental question (Unit 17)."},
       {t:"Which survey best measures attitudes to democracy?", why:"A methods and area studies question, unrelated to lithium’s political economy."}
     ]},
     {id:"e4u22-l5-x4", type:"order", q:"Put the steps of a strong seminar argument in a sensible order.", items:[
@@ -662,7 +662,7 @@ ICA.addUnit({
       {t:"Reply, and say what your argument implies", why:"Ends with why it matters."}
     ]},
     {id:"e4u22-l5-x5", type:"mcq", q:"Which of these was confirmed in November 2026 to be a fully open-access journal?", options:[
-      {t:"*Global Studies Quarterly*, published by the International Studies Association", ok:true, why:"Right: its site describes it as the ISA’s fully open-access journal."},
+      {t:"*Global Studies Quarterly*", ok:true, why:"Right: published by the International Studies Association; its site describes it as the ISA’s fully open-access journal."},
       {t:"Every journal on Google Scholar", why:"Many listed articles are behind paywalls."},
       {t:"Any journal that emails you an invitation to publish", why:"Unsolicited invitations are a warning sign of predatory journals (Track 4)."},
       {t:"No journal in international studies is free", why:"Several are, including those named in this lesson."}
@@ -687,7 +687,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Close the track by building your own map and plan.", tasks:[
      {t:"Draw your map of the field", how:["On one page, draw the foundations and four clusters.","Add the three units you found most useful and one link between clusters that you would like to research.","Note which of the six debates your link touches."], write:"My three units… My cross-cluster link… The debates it touches…"},
-     {t:"Draft a thesis puzzle", how:["Write one research puzzle that crosses two clusters and involves at least one region from Units 18–22.","Name your design (intra-, inter- or cross-regional) and two free sources you would start with."], write:"Puzzle… Clusters… Region(s)… Design… Two sources…"},
+     {t:"Draft a thesis puzzle", how:["Write one research puzzle that crosses two clusters and involves at least one region from Units 19–23.","Name your design (intra-, inter- or cross-regional) and two free sources you would start with."], write:"Puzzle… Clusters… Region(s)… Design… Two sources…"},
      {t:"Seminar questions", how:["Choose one and write 150–250 words with a position and a counter-argument.","1. Should international studies be organised by clusters, by regions, or by problems?","2. Which of the six debates do you think matters most for the next decade, and why?","3. What would a truly “global” international studies curriculum include that this one does not?"], write:"My question… My position… Evidence… Counter-argument… My reply…"}
    ], proof:"A one-page map of the field, a thesis puzzle with a design and sources, and a final seminar paragraph."},
    read:[
@@ -697,6 +697,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u22-q03","e4u22-q06","e4u22-q12","e4u22-q15","e4u22-q16","e4u22-q20","e4u22-q22","e4u22-q25","e4u22-q30","e4u22-q33","e4u22-q34","e4u22-q41"],
+  cpBank:[
+   {id:"e4u22-cp01", lesson:"e4u22-l1", level:1, q:"A student compares Mercosur as a whole with the Gulf Cooperation Council as a whole, asking how each regional body handles disputes among its members. Which comparative area studies design is this?", options:[
+     {t:"Intra-regional", why:"An intra-regional design compares cases within one region. Mercosur and the GCC belong to different regions."},
+     {t:"Cross-regional", why:"A cross-regional design compares cases (often countries) from different regions that share a feature, not two regional bodies as wholes."},
+     {t:"Inter-regional", ok:true, why:"Yes. Comparing regions or regional institutions as wholes, like the AU and ASEAN, is inter-regional."},
+     {t:"A single case study", why:"Two bodies are being compared, so it is not a single case."}]},
+   {id:"e4u22-cp02", lesson:"e4u22-l1", level:2, q:"A paper says: “Populism is simply part of the Argentine national character.” Drawing on Lessons 1 and 3, which critique is strongest?", options:[
+     {t:"It is correct, because every Argentine president since the 1940s has been a populist", why:"Not every president has been populist, and even a long list of populists would show a pattern, not a fixed national character."},
+     {t:"It treats a pattern as an essence; Perón and Menem show populism changes form", ok:true, why:"Right. Lesson 1 calls this the exceptionalism trap. Lesson 3 shows that Argentina’s classical (Perón) and neoliberal (Menem) populists differed sharply, so populism is a pattern to compare, not a fixed trait."},
+     {t:"Populism has only ever existed in Europe, so the claim cannot be true", why:"Populism has been studied in Latin America for decades, from Perón and Vargas onwards."},
+     {t:"The claim is fine as long as it cites one famous populist leader, such as Perón, as proof", why:"One case cannot support a claim about a whole nation’s “nature”."}]},
+   {id:"e4u22-cp03", lesson:"e4u22-l1", level:2, q:"A regional survey in a country with harsh limits on free speech finds that 90% of respondents say they fully trust the government. How should a careful researcher use this result?", options:[
+     {t:"Treat it as proof that the government is very popular with almost all its citizens", why:"Under repression, people may not answer political questions honestly, so the figure may overstate trust."},
+     {t:"Discard all surveys from the region as useless for any research", why:"The surveys are valuable; the lesson asks you to use them with care and alongside other evidence."},
+     {t:"Assume the opposite: about 90% must secretly distrust the government", why:"That is a guess, not evidence. The point is uncertainty, not reversal."},
+     {t:"Note that repression can bias answers, and check the survey against other evidence", ok:true, why:"Yes. Repression, translation and conflict all limit surveys, so they should be checked against other sources."}]},
+   {id:"e4u22-cp04", lesson:"e4u22-l2", level:1, q:"A government keeps its UN seat, its embassies and its international loans, although armed groups control half of its territory. Which idea describes this situation?", options:[
+     {t:"Juridical statehood without full empirical statehood", ok:true, why:"Right. Jackson and Rosberg argued many states survived through international recognition even without full control on the ground."},
+     {t:"Bayart’s politics of the belly", why:"Bayart’s phrase describes the scramble for state resources through patronage, not recognition without control."},
+     {t:"The principle of uti possidetis applied to colonial borders", why:"Uti possidetis is the principle of keeping borders at independence; it does not describe loss of control inside them."},
+     {t:"A demographic dividend at work", why:"That is a growth boost from a rising working-age share."}]},
+   {id:"e4u22-cp05", lesson:"e4u22-l2", level:2, q:"Colonial rulers governed town residents under civil law, but ruled rural people through appointed chiefs applying “customary” law. After independence the pattern persisted. Which argument describes this?", options:[
+     {t:"Herbst’s argument about power over distance", why:"Herbst explains weak state reach through low population density and fixed borders, not two systems of law."},
+     {t:"Mamdani’s bifurcated state: a “decentralised despotism”", ok:true, why:"Yes. In *Citizen and Subject* Mamdani described citizens ruled by civil law and subjects ruled through customary chiefs."},
+     {t:"Neopatrimonialism, as Bratton and van de Walle used the term", why:"Neopatrimonialism describes personal patronage networks beside formal bureaucracy."},
+     {t:"Gray’s theory of late rentierism", why:"Gray’s late rentierism describes how Gulf states adapted to globalisation."}]},
+   {id:"e4u22-cp06", lesson:"e4u22-l2", level:3, q:"A briefing lists wars in Sudan, the eastern DRC and the Sahel, then concludes: “Africa is a continent at war.” Which correction is best?", options:[
+     {t:"The briefing is accurate, because those conflicts are real", why:"The conflicts are real, but the conclusion generalises from them to 54 states."},
+     {t:"Africa has no armed conflicts, so the briefing is false", why:"The lesson treats these conflicts as serious; the problem is the overgeneralisation, not the facts listed."},
+     {t:"Describe the conflicts accurately, with peace-making and the many states at peace", ok:true, why:"Right. Avoiding the single story means accuracy: Ethiopia–Eritrea (2018) and the Pretoria agreement (2022) belong in the picture too."},
+     {t:"Only outside powers can explain African conflicts, so the briefing should focus on them", why:"This repeats another framing trap: outsiders as the only actors."}]},
+   {id:"e4u22-cp07", lesson:"e4u22-l3", level:1, q:"In a presidential system, the president and congress both claim a popular mandate. When they deadlock, there is no easy way to resolve it before the president’s fixed term ends. Whose argument is this?", options:[
+     {t:"O’Donnell’s bureaucratic authoritarianism", why:"That concept describes military-technocratic regimes, not deadlock in democratic presidential systems."},
+     {t:"Huntington’s third wave", why:"Huntington described the global spread of democracy from 1974."},
+     {t:"Mudde’s populist zeitgeist", why:"Mudde defined populism as a thin-centred ideology."},
+     {t:"Linz’s “The Perils of Presidentialism”", ok:true, why:"Yes. Linz argued that fixed terms and dual legitimacy make crises harder to resolve."}]},
+   {id:"e4u22-cp08", lesson:"e4u22-l3", level:2, q:"A regional body built by like-minded left-of-centre governments loses most of its members after elections bring different governments to power. Which critique does this support?", options:[
+     {t:"Bodies built around like-minded governments decline when governments change", ok:true, why:"Right. Critics of “post-hegemonic” regionalism make this point, citing UNASUR."},
+     {t:"Customs unions always collapse", why:"Mercosur, a customs union, has lasted since 1991, and the scenario is not about a customs union."},
+     {t:"Regional bodies cannot be created or survive without the United States as a member", why:"CELAC and ALBA were created without the United States."},
+     {t:"Democracy clauses prevent any change of members", why:"Democracy clauses concern unconstitutional changes of government, not members leaving after elections."}]},
+   {id:"e4u22-cp09", lesson:"e4u22-l3", level:3, q:"A populist government extends voting access to excluded rural Indigenous communities. It also attacks judges and journalists as “enemies of the people”. How would Mudde and Rovira Kaltwasser assess this?", options:[
+     {t:"Purely positive, because more excluded people can now vote", why:"They warn that attacks on courts and media as enemies of the people threaten democracy."},
+     {t:"Purely negative, because every form of populism, left or right, destroys democracy", why:"They argue populism can also be a corrective that brings excluded groups into politics."},
+     {t:"Both: a corrective that includes the excluded, and a threat to courts and media", ok:true, why:"Yes. Their argument is that populism can be both, as this mixed case shows."},
+     {t:"Neither, because only right-wing leaders can be populist", why:"Under the ideational definition, leaders of the left and right can both be populist."}]},
+   {id:"e4u22-cp10", lesson:"e4u22-l4", level:2, q:"In an oil-rich state with no income tax, an opposition movement grows in one region, complaining that oil revenue is shared unfairly between regions. Which argument does this support?", options:[
+     {t:"Mahdavy’s original claim that rentier states face no political demands from citizens", why:"The scenario shows demands arising despite oil rents, which challenges the simple version of the theory."},
+     {t:"The Sykes–Picot myth", why:"That debate concerns the origins of borders, not oil and opposition."},
+     {t:"Okruhlik’s critique: opposition can arise from the unequal way rents are shared", ok:true, why:"Right. Okruhlik (1999) showed opposition emerging in Saudi Arabia for exactly this reason."},
+     {t:"Bayat’s revolution without revolutionaries", why:"Bayat analysed the 2011 uprisings’ lack of a programme for power, not regional grievances over rents."}]},
+   {id:"e4u22-cp11", lesson:"e4u22-l4", level:3, q:"In invented Country A, the army splits, refuses to fire on protesters, and the ruler falls. In Country B, an oil-rich monarchy with foreign allies survives. Which arguments explain these best?", options:[
+     {t:"Rentier theory for A, and the legacy of Sykes–Picot for B", why:"A’s outcome turns on the army’s choice, and Sykes–Picot concerns borders, not survival in 2011."},
+     {t:"Bellin on the army’s will to repress (A); Yom and Gause on monarchies’ assets (B)", ok:true, why:"Yes. Bellin stresses whether the security forces are willing and able to repress; Yom and Gause explain monarchical survival."},
+     {t:"Linz on the perils of presidential deadlock for A, and Mamdani’s bifurcated state for B", why:"Linz concerns presidential deadlock and Mamdani the colonial African state; neither explains these outcomes."},
+     {t:"Gray’s late rentierism for both countries’ outcomes", why:"Late rentierism describes Gulf states adapting to globalisation, not why an army split in A."}]},
+   {id:"e4u22-cp12", lesson:"e4u22-l5", level:3, q:"A student applies a model drawn from East Asia to one African country and concludes that “developmental states are impossible in Africa”. Drawing on Lessons 2 and 5, which response is best?", options:[
+     {t:"Agree, because theories from one region never apply to another", why:"Concepts can travel; whether they do is the question to test, not to assume either way."},
+     {t:"Agree, because neopatrimonialism explains the economic performance of all African states", why:"Mkandawire criticised neopatrimonialism as a catch-all that cannot explain why some economies grew fast."},
+     {t:"Reject the question, because development is not part of international studies", why:"Development is one of the track’s four clusters."},
+     {t:"One case cannot settle it, and Mkandawire (Unit 15) cited Botswana and Mauritius", ok:true, why:"Right. Unit 15 records Mkandawire’s (2001) case against calling developmental states impossible in Africa; Lesson 2 adds capable states such as Botswana built inside inherited borders, and Lesson 5 frames this as the universal–particular debate."}]}
+  ],
   codex:[
    {id:"comparative-area-studies", title:"Studying regions: area studies, comparison and comparative area studies", aka:["CAS","cross-regional comparison","regional surveys","Global Barometer Surveys"], tags:["methods","area studies","regions"],
     summary:"How to study a world region well: constructed region names, the area studies–discipline debate, comparative area studies designs, regional scholars, surveys and the ethics of research partnerships.",
@@ -792,11 +854,11 @@ ICA.addUnit({
       "**Narratives.** *The Economist*’s covers of May 2000 (“The hopeless continent”) and December 2011 (“Africa rising”) bracket a decade of fast growth. Critics such as Ian Taylor (*Africa Rising? BRICS – Diversifying Dependency*, 2014) and Patrick Bond argued that growth rested on commodity exports and did not transform economies.",
       "**Statistics.** Morten Jerven’s *Poor Numbers* (2013) showed how weak statistical offices and old base years made GDP estimates unreliable; Ghana’s 2010 revision of its national accounts raised measured GDP by about 60 per cent.",
       "**Demography.** Using the UN’s *World Population Prospects 2024*, Pew Research Center (2026) reports that Africa has about 19 per cent of the world’s population and 28 per cent of its under-25s; a median age of about 19; fertility of about 3.9 births per woman, projected to fall to 2.8 by 2050 and 2.0 by 2100; and a projected population of 3.8 billion by 2100 (medium variant).",
-      "**Plans.** The AU’s Agenda 2063 (adopted 2015) and the AfCFTA (Unit 15) aim at industrialisation and integration."
+      "**Plans.** The AU’s Agenda 2063 (adopted 2015) and the AfCFTA (Unit 16) aim at industrialisation and integration."
      ],
      pro:[
       "**The demographic dividend** depends on the speed of fertility decline, education (especially of girls), health and job creation. Without jobs, a large youth cohort can mean unemployment and emigration pressure; with them, a growth boost. Avoid framing demography as a threat: it is a policy question.",
-      "**Structural transformation.** Development economists debate whether African economies can industrialise in a world of automation and Asian competition, or whether services and agro-processing offer other paths (see Unit 14 on developmental states and Unit 15 on value chains).",
+      "**Structural transformation.** Development economists debate whether African economies can industrialise in a world of automation and Asian competition, or whether services and agro-processing offer other paths (see Unit 15 on developmental states and Unit 16 on value chains).",
       "**Measurement politics.** Rebasing GDP changes debt ratios, aid eligibility and income classifications. Read growth claims alongside the statistical methods behind them.",
       {tip:"When using UN projections, state the variant (usually medium) and the edition, and remember that projections are scenarios, not forecasts of certainty."}
      ]
@@ -814,13 +876,13 @@ ICA.addUnit({
       {key:"Ask what each side wants, and remember that African governments negotiate too."}
      ],
      builder:[
-      "**TICAD.** Led by Japan since 1993, co-organised with the UN, UNDP, the World Bank and the African Union Commission, and built on the principles of African ownership and international partnership. TICAD 9 met in Yokohama in 2025 and adopted the Yokohama Declaration (see Japan’s side in Units 4 and 18).",
+      "**TICAD.** Led by Japan since 1993, co-organised with the UN, UNDP, the World Bank and the African Union Commission, and built on the principles of African ownership and international partnership. TICAD 9 met in Yokohama in 2025 and adopted the Yokohama Declaration (see Japan’s side in Units 4 and 19).",
       "**FOCAC.** Begun in 2000, meeting every three years. At the 2024 Beijing summit Xi Jinping pledged RMB 360 billion (about US$50.7 billion) over three years: RMB 210 billion in credit lines, RMB 80 billion in assistance and at least RMB 70 billion in investment by Chinese companies.",
       "**India.** India–Africa Forum Summits in 2008 (New Delhi), 2011 (Addis Ababa) and 2015 (New Delhi, the largest), with lines of credit, training and education links and an emphasis on shared anti-colonial history.",
       "**Others.** South Korea’s first Korea–Africa summit (2024); Türkiye’s and the Gulf states’ expanding embassies, investment and security roles."
      ],
      pro:[
-      "**Debates.** On Chinese finance, see Unit 15’s “debt-trap” debate ({{china-overseas-lending}}): Deborah Brautigam and others found little evidence of deliberate asset seizure, while critics point to opaque contracts and debt distress. On Japan, debates concern whether “quality infrastructure” and private investment match rhetoric. On India, whether lines of credit are delivered on time.",
+      "**Debates.** On Chinese finance, see Unit 16’s “debt-trap” debate ({{china-overseas-lending}}): Deborah Brautigam and others found little evidence of deliberate asset seizure, while critics point to opaque contracts and debt distress. On Japan, debates concern whether “quality infrastructure” and private investment match rhetoric. On India, whether lines of credit are delivered on time.",
       "**African agency.** A growing literature argues that African governments set terms, bargain among partners and use the AU and regional bodies to negotiate collectively; others note large asymmetries of power. Analyse each relationship from both ends.",
       "**Comparison.** The three forums differ in institutional form (TICAD’s multilateral co-organisers; FOCAC’s bilateral-plus-continental format), in instruments and in rhetoric, which makes them a good inter-regional comparison.",
       {tip:"Use the declarations and action plans of each summit as primary sources, and check later implementation reports rather than headline pledges."}
@@ -969,7 +1031,7 @@ ICA.addUnit({
      pro:[
       "**Why so many bodies?** Explanations include presidential diplomacy (bodies tied to leaders), overlapping sub-regional identities (Andean, Central American, Caribbean, Southern Cone), and hedging between the US, Europe and China. Critics speak of “regionalism without integration”.",
       "**Democracy clauses.** The OAS’s Inter-American Democratic Charter (2001) and Mercosur’s democracy clause have been used to suspend members (Unit 9); their use is contested as selective by some governments.",
-      "**Asia debates.** Supporters see Chinese demand and investment as diversification away from the US; critics fear a new commodity dependence (link the Prebisch–Singer argument, Unit 14). Japanese and Korean firms compete in autos, mining and infrastructure.",
+      "**Asia debates.** Supporters see Chinese demand and investment as diversification away from the US; critics fear a new commodity dependence (link the Prebisch–Singer argument, Unit 15). Japanese and Korean firms compete in autos, mining and infrastructure.",
       {tip:"For a comparison with Asia, set the Pacific Alliance beside ASEAN’s economic community, or CELAC beside ASEAN+3."}
      ]
     },
@@ -992,7 +1054,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Critiques.** Gwenn Okruhlik (*Comparative Politics*, 1999) showed that rents can fuel opposition when distributed unequally; Michael Herb (*The Wages of Oil*, 2014) showed large differences among Gulf states, from Kuwait’s strong parliament to the UAE; others argue that rentier theory neglects history, religion, tribal structures and external alliances.",
-      "**Diversification and transition.** Saudi Arabia’s Vision 2030 (2016) and similar plans try to build non-oil economies; the energy transition (Unit 16: {{energy-transition-politics}}) raises the question of what happens to rentier bargains if demand falls.",
+      "**Diversification and transition.** Saudi Arabia’s Vision 2030 (2016) and similar plans try to build non-oil economies; the energy transition (Unit 17: {{energy-transition-politics}}) raises the question of what happens to rentier bargains if demand falls.",
       "**Beyond the Middle East.** Rentier arguments are applied to Nigeria, Venezuela, Brunei and Timor-Leste, and to aid- or remittance-dependent states: good material for cross-regional comparison.",
       {tip:"Measure rentierism with the share of government revenue from resources versus taxes, not just with oil production."}
      ]
@@ -1109,8 +1171,8 @@ ICA.addUnit({
       {key:"Place every new reading in a debate, and look for a reading on the other side."}
      ],
      builder:[
-      "**In this track.** Foundations: Units 1–4. Culture, society and media: 5–8. Global governance: 9–13. Sustainable development: 14–17. Area studies: 4 and 18–22.",
-      "**The six debates.** Order and change (Units 1, 13, 19); material and ideational (Units 2, 5, 8); structure and agency (Units 14–15, 22); universal and particular (Units 4, 11, 22); state and beyond (Units 7, 9, 13); knowledge and power (Units 3, 5, 22).",
+      "**In this track.** Foundations: Units 1–4. Culture, society and media: 5–8. Global governance: 9–13. Economics: 14. Sustainable development: 15–18. Area studies: 4 and 19–23.",
+      "**The six debates.** Order and change (Units 1, 13, 20); material and ideational (Units 2, 5, 8); structure and agency (Units 15–16, 23); universal and particular (Units 4, 11, 23); state and beyond (Units 7, 9, 13); knowledge and power (Units 3, 5, 23).",
       "**Free resources (checked November 2026).** *Global Studies Quarterly* (the International Studies Association’s fully open-access journal); *Africa Spectrum* and the *Journal of Politics in Latin America* (open access, GIGA); E-International Relations’ open textbooks; Crisis Group’s *CrisisWatch* (monthly, 70+ conflicts, back to 2003); V-Dem (version 16, March 2026, free) and UCDP; Afrobarometer, Latinobarómetro and Arab Barometer."
      ],
      pro:[
@@ -1180,10 +1242,10 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u22-q01", lesson:"e4u22-l1", level:1, q:"Which statement about the name “Middle East” is accurate?", options:[
-     {t:"It spread after Alfred Thayer Mahan used it in a 1902 article, and some writers in the region call it Eurocentric", ok:true, why:"Right: it names the region from a European and British Indian viewpoint."},
+     {t:"It spread after Mahan used it in 1902; some in the region find it Eurocentric", ok:true, why:"Right: it spread after Alfred Thayer Mahan’s 1902 article, and it names the region from a European and British Indian viewpoint."},
      {t:"It is the region’s own ancient name for itself", why:"It is a modern term from outside the region."},
      {t:"The UN’s Charter defines it", why:"The Charter defines no regions."},
-     {t:"It has always included Pakistan and Afghanistan in every definition", why:"Definitions vary; most do not include them."}]},
+     {t:"It has always included Pakistan and Afghanistan in every definition since 1902", why:"Definitions vary; most do not include them."}]},
    {id:"e4u22-q02", lesson:"e4u22-l1", level:1, q:"Who is usually credited with first putting “Latin America” into print, and when?", options:[
      {t:"Francisco Bilbao, a Chilean writer, in Paris in 1856", ok:true, why:"Right; José María Torres Caicedo used it the following year."},
      {t:"Simón Bolívar in 1819", why:"Bolívar did not use the term; it dates from the 1850s."},
@@ -1195,8 +1257,8 @@ ICA.addUnit({
      {t:"Inter-regional comparison", why:"That compares regions as wholes, not individual states."},
      {t:"A single-case study", why:"There are two cases."}]},
    {id:"e4u22-q04", lesson:"e4u22-l1", level:2, q:"Kenji is writing about public trust in courts in five Latin American countries and cannot read Spanish or Portuguese yet. What is the most defensible approach?", options:[
-     {t:"Use Latinobarómetro data and translated sources, work with a colleague who reads the languages, and state the limitation in his methods section", ok:true, why:"Right: honest use of accessible sources and partners, with the limit made explicit."},
-     {t:"Rely only on English-language news from outside the region and say nothing", why:"This hides a major limitation and misses local voices."},
+     {t:"Use surveys, translations and a bilingual partner, and state the limits", ok:true, why:"Right: use Latinobarómetro data and translated sources, work with a colleague who reads the languages, and state the limitation in his methods section."},
+     {t:"Rely only on English-language news from outside the region, and say nothing about it", why:"This hides a major limitation and misses local voices."},
      {t:"Assume all five countries are the same", why:"That is exactly the single-story trap."},
      {t:"Abandon the topic because only native speakers can study it", why:"Position shapes what you see, but careful outsiders can contribute."}]},
    {id:"e4u22-q05", lesson:"e4u22-l1", level:1, q:"Which survey interviews people face to face in the language of their choice in more than 30 African countries?", options:[
@@ -1205,7 +1267,7 @@ ICA.addUnit({
      {t:"Arab Barometer", why:"That covers Arab states of the Middle East and North Africa."},
      {t:"The World Values Survey only", why:"That is a separate global survey, not the African regional barometer."}]},
    {id:"e4u22-q06", lesson:"e4u22-l1", level:3, q:"A paper argues: “The Middle East is uniquely resistant to democracy because of its culture.” Which critique applies most directly?", options:[
-     {t:"It treats a pattern as an essence; the claim should be tested comparatively, with attention to institutions and history", ok:true, why:"Right: exceptionalist, essentialist claims need comparative testing."},
+     {t:"It treats a pattern as an essence, without comparative testing", ok:true, why:"Right: exceptionalist, essentialist claims should be tested comparatively, with attention to institutions and history."},
      {t:"It uses too many statistics", why:"The problem is an untested cultural generalisation, not statistics."},
      {t:"It should have said “Latin America” instead", why:"Swapping regions does not fix the reasoning."},
      {t:"It is correct because some countries in the region are not democracies", why:"Some cases do not establish a cultural cause."}]},
@@ -1215,29 +1277,29 @@ ICA.addUnit({
      {t:"Selecting on the dependent variable", why:"That concerns case selection, not partnership."},
      {t:"Self-orientalism", why:"That concerns how a society presents itself."}]},
    {id:"e4u22-q08", lesson:"e4u22-l1", level:1, q:"How does the African Union define its membership area?", options:[
-     {t:"The whole continent, north and south of the Sahara; its 55 members include all 54 of Africa’s UN member states", ok:true, why:"Right: unlike “sub-Saharan” statistical groupings."},
+     {t:"The whole continent, north and south of the Sahara", ok:true, why:"Right: its 55 members include all 54 of Africa’s UN member states, unlike “sub-Saharan” statistical groupings."},
      {t:"Only sub-Saharan Africa", why:"North African states such as Egypt and Algeria are members."},
-     {t:"Africa plus the Arab states of Western Asia", why:"Western Asian states are not AU members."},
+     {t:"Africa plus the Arab states of Western Asia and the Gulf", why:"Western Asian states are not AU members."},
      {t:"Only states that were never colonised", why:"Almost all members were colonised."}]},
    {id:"e4u22-q09", lesson:"e4u22-l1", level:3, q:"Priya’s draft on Senegal mentions only donors, foreign peacekeepers and international NGOs as actors. What is the best advice?", options:[
-     {t:"Add what Senegalese governments, movements and businesses decided and why, using local sources", ok:true, why:"Right: it fixes the “outsiders as the only actors” trap."},
+     {t:"Add what Senegalese actors decided and why, from local sources", ok:true, why:"Right: add what Senegalese governments, movements and businesses decided and why. It fixes the “outsiders as the only actors” trap."},
      {t:"Remove all mention of donors", why:"Donors matter; the problem is that local actors are missing."},
      {t:"Generalise the findings to all of West Africa", why:"That adds a single-story problem."},
-     {t:"Switch to a purely statistical study to avoid the issue", why:"Methods do not remove the need to identify actors."}]},
+     {t:"Switch to a purely statistical study so the actors do not matter", why:"Methods do not remove the need to identify actors."}]},
 
    /* ---- Lesson 2 ---- */
    {id:"e4u22-q10", lesson:"e4u22-l2", level:1, q:"What did Jackson and Rosberg (1982) mean by “juridical statehood”?", options:[
-     {t:"Statehood secured by international legal recognition, even where control on the ground is weak", ok:true, why:"Right: contrasted with empirical statehood (actual capacity)."},
+     {t:"Statehood secured by international recognition, not control", ok:true, why:"Right: statehood secured by international legal recognition, even where control on the ground is weak. It is contrasted with empirical statehood (actual capacity)."},
      {t:"A state run by judges", why:"It concerns recognition, not who governs."},
      {t:"A state with a written constitution", why:"Constitutions are not the point of the distinction."},
-     {t:"A state that has signed every human rights treaty", why:"Treaty ratification is a different matter."}]},
+     {t:"A state that has signed and ratified every human rights treaty", why:"Treaty ratification is a different matter."}]},
    {id:"e4u22-q11", lesson:"e4u22-l2", level:1, q:"Which book argued that colonial rule created a “bifurcated state” of citizens and subjects?", options:[
      {t:"Mahmood Mamdani, *Citizen and Subject* (1996)", ok:true, why:"Right: he called rural rule through chiefs “decentralised despotism”."},
      {t:"Jeffrey Herbst, *States and Power in Africa* (2000)", why:"Herbst focused on population density and power over distance."},
      {t:"Morten Jerven, *Poor Numbers* (2013)", why:"Jerven wrote about economic statistics."},
      {t:"Robert Jackson, *Quasi-States* (1990)", why:"Jackson wrote on juridical statehood."}]},
    {id:"e4u22-q12", lesson:"e4u22-l2", level:2, q:"Tomás says: “Neopatrimonialism explains all of Africa’s economic performance.” Which scholar’s critique would you cite in reply?", options:[
-     {t:"Thandika Mkandawire (*World Politics*, 2015), who argued the concept cannot explain variation in performance across countries and time", ok:true, why:"Right: a catch-all label cannot explain differences."},
+     {t:"Thandika Mkandawire (2015)", ok:true, why:"Right: in *World Politics* (2015), Mkandawire argued the concept cannot explain variation in performance across countries and time; a catch-all label cannot explain differences."},
      {t:"Jean-François Bayart, who invented the term", why:"Bayart wrote of the “politics of the belly”; he did not make this critique."},
      {t:"Samuel Huntington", why:"Huntington wrote on democratisation waves, not this debate."},
      {t:"Hossein Mahdavy", why:"Mahdavy wrote on rentier states."}]},
@@ -1252,23 +1314,23 @@ ICA.addUnit({
      {t:"All 55 AU members", why:"That is the Assembly."},
      {t:"The heads of the eight RECs", why:"The RECs are building blocks, not the Council’s members."}]},
    {id:"e4u22-q15", lesson:"e4u22-l2", level:2, q:"An AU-led peace support operation needs predictable funding. Under Resolution 2719 (2023), what can it hope for?", options:[
-     {t:"Case-by-case access to UN assessed contributions, up to 75 per cent of its budget, with the rest raised jointly", ok:true, why:"Right: neither automatic nor full funding."},
-     {t:"Full funding from the UN budget automatically", why:"It is case by case and capped."},
+     {t:"Case-by-case access to UN funds, up to 75 per cent", ok:true, why:"Right: case-by-case access to UN assessed contributions, up to 75 per cent of its budget, with the rest raised jointly. Neither automatic nor full funding."},
+     {t:"Full funding from the UN budget, automatically and at once", why:"It is case by case and capped."},
      {t:"Funding only from the AU’s own levy", why:"2719 opened a UN route."},
      {t:"Nothing: 2719 concerns sanctions on Sudan", why:"2719 is about financing AU-led operations."}]},
    {id:"e4u22-q16", lesson:"e4u22-l2", level:3, q:"A government comes to power in a military takeover. The AU suspends it; the regional community imposes sanctions; the new rulers then form an alliance with two neighbours under similar governments and leave the community. Which real case does this most resemble?", options:[
-     {t:"Mali, Burkina Faso and Niger forming the Alliance of Sahel States and leaving ECOWAS in January 2025", ok:true, why:"Right: the sequence matches."},
-     {t:"Egypt and Jordan making peace with Israel", why:"Unrelated to coups and regional communities."},
+     {t:"Mali, Burkina Faso and Niger leaving ECOWAS", ok:true, why:"Right: they formed the Alliance of Sahel States and left ECOWAS in January 2025; the sequence matches."},
+     {t:"Egypt and Jordan making peace with Israel after wars", why:"Unrelated to coups and regional communities."},
      {t:"The founding of the Pacific Alliance", why:"A trade grouping of elected governments in Latin America."},
      {t:"The founding of the GCC in 1981", why:"A Gulf organisation unrelated to coups and sanctions."}]},
    {id:"e4u22-q17", lesson:"e4u22-l2", level:2, q:"Why does Morten Jerven’s *Poor Numbers* (2013) matter for the “Africa rising” debate?", options:[
-     {t:"It showed that weak statistical systems make GDP growth figures unreliable, so big claims need caution", ok:true, why:"Right: Ghana’s 2010 revision raised measured GDP by about 60 per cent."},
+     {t:"It showed weak statistics make GDP figures unreliable", ok:true, why:"Right: weak statistical systems make growth figures unreliable, so big claims need caution. Ghana’s 2010 revision raised measured GDP by about 60 per cent."},
      {t:"It proved that African growth was invented", why:"He showed the figures were unreliable, not invented."},
      {t:"It was the 2011 magazine cover that coined “Africa rising”", why:"That was *The Economist*."},
      {t:"It is a study of population projections", why:"It concerns economic statistics."}]},
    {id:"e4u22-q18", lesson:"e4u22-l2", level:3, q:"Fatima reads that “Africa’s young population guarantees fast growth.” What is the most accurate response?", options:[
-     {t:"A demographic dividend is possible but depends on fertility decline, education, health and jobs", ok:true, why:"Right: it is a policy question, not a guarantee."},
-     {t:"Young populations always reduce growth", why:"Not always: with jobs and education, a rising working-age share can boost growth."},
+     {t:"A dividend is possible but depends on policy, not age alone", ok:true, why:"Right: a demographic dividend depends on fertility decline, education, health and jobs; it is a policy question, not a guarantee."},
+     {t:"Young populations always reduce growth, whatever governments do", why:"Not always: with jobs and education, a rising working-age share can boost growth."},
      {t:"Africa’s median age is about 40", why:"It is about 19 (UN data via Pew, 2026)."},
      {t:"Demography has no link to growth", why:"The age structure affects labour supply and saving."}]},
 
@@ -1299,13 +1361,13 @@ ICA.addUnit({
      {t:"Hugo Chávez and Evo Morales", why:"They are usually placed in the radical-left wave."},
      {t:"Guillermo O’Donnell and Philippe Schmitter", why:"They are political scientists, not leaders."}]},
    {id:"e4u22-q24", lesson:"e4u22-l3", level:2, q:"Which set of factors do scholars commonly use to explain the first pink tide?", options:[
-     {t:"Reaction against inequality left by 1990s reforms, democratic consolidation, and the commodity boom", ok:true, why:"Right: usually combined rather than treated singly."},
+     {t:"Reaction to inequality, democratic consolidation and the commodity boom", ok:true, why:"Right: reaction against inequality left by 1990s reforms, democratic consolidation, and the commodity boom, usually combined rather than treated singly."},
      {t:"US promotion of left governments", why:"Several pink-tide governments had tense relations with Washington."},
      {t:"The end of elections in the region", why:"Left parties came to power through elections."},
-     {t:"A fall in commodity prices in the 2000s", why:"Prices rose in the 2000s; their fall came later."}]},
+     {t:"A sharp fall in world commodity prices in the 2000s that hurt the incumbents", why:"Prices rose in the 2000s; their fall came later."}]},
    {id:"e4u22-q25", lesson:"e4u22-l3", level:3, q:"After Lula’s re-election on 25 October 2026, a commentator writes: “This proves Latin America has turned left again.” Which response is most careful?", options:[
-     {t:"One result ended a run of seven conservative victories (AP); many scholars read such swings as anti-incumbent voting, so the claim needs more evidence", ok:true, why:"Right: dated, attributed and cautious about trends."},
-     {t:"It is proven: Brazil decides the whole region", why:"One country’s election cannot show a regional trend."},
+     {t:"One result ended a run of conservative wins; swings may be anti-incumbent", ok:true, why:"Right: dated, attributed and cautious about trends. It ended a run of seven conservative victories (AP); many scholars read such swings as anti-incumbent voting, so the claim needs more evidence."},
+     {t:"It is proven: Brazil is the largest country, so it decides the whole region", why:"One country’s election cannot show a regional trend."},
      {t:"Lula lost, so the claim is false", why:"Lula won the run-off, 51.8 to 48.2 per cent."},
      {t:"Elections tell us nothing about politics", why:"They tell us a lot; the issue is how far to generalise."}]},
    {id:"e4u22-q26", lesson:"e4u22-l3", level:1, q:"Which regional body includes all 33 states of Latin America and the Caribbean but excludes the United States and Canada?", options:[
@@ -1314,20 +1376,20 @@ ICA.addUnit({
      {t:"Mercosur", why:"Mercosur is a smaller customs union."},
      {t:"The Pacific Alliance", why:"It has four members: Chile, Colombia, Mexico and Peru."}]},
    {id:"e4u22-q27", lesson:"e4u22-l3", level:2, q:"Which statement about the EU–Mercosur trade agreement is accurate as of November 2026?", options:[
-     {t:"It was signed on 17 January 2026 and has applied provisionally since 1 May 2026, while legal challenges by EU lawmakers were pending at the EU’s Court of Justice", ok:true, why:"Right, according to AP and Euronews reports."},
+     {t:"Signed in January 2026, it has applied provisionally since May 2026", ok:true, why:"Right, according to AP and Euronews: signed on 17 January 2026 and applied provisionally from 1 May 2026, while legal challenges by EU lawmakers were pending at the EU’s Court of Justice."},
      {t:"It was rejected and never signed", why:"It was signed in January 2026."},
-     {t:"It has been fully ratified by every EU member state", why:"Provisional application is not full ratification."},
+     {t:"It has been fully ratified by every EU member state and Mercosur country", why:"Provisional application is not full ratification."},
      {t:"It includes the United States", why:"It is between the EU and Mercosur only."}]},
 
    /* ---- Lesson 4 ---- */
    {id:"e4u22-q28", lesson:"e4u22-l4", level:1, q:"What was the Sykes–Picot Agreement?", options:[
-     {t:"A secret Anglo-French plan of 1916 to divide Ottoman Arab lands into zones of control", ok:true, why:"Right; the later borders came from other agreements."},
-     {t:"The 1923 treaty that founded the Turkish Republic", why:"That was the Treaty of Lausanne."},
+     {t:"A secret 1916 Anglo-French plan to divide Ottoman lands", ok:true, why:"Right: a plan for zones of control over Ottoman Arab lands; the later borders came from other agreements."},
+     {t:"The 1923 treaty that founded the modern Turkish Republic", why:"That was the Treaty of Lausanne."},
      {t:"A 1947 UN plan to partition Palestine", why:"That was a General Assembly recommendation of November 1947."},
      {t:"The founding charter of the Arab League", why:"The Arab League was founded in 1945."}]},
    {id:"e4u22-q29", lesson:"e4u22-l4", level:1, q:"According to rentier state theory, why might an oil-rich state face weaker demands for democracy?", options:[
-     {t:"It does not need to tax citizens and can distribute oil income as jobs and subsidies", ok:true, why:"Right: “no taxation, no representation”."},
-     {t:"Oil makes citizens uninterested in politics by nature", why:"The theory is about fiscal bargains, not human nature."},
+     {t:"It need not tax citizens and can buy support with oil income", ok:true, why:"Right: it can distribute oil income as jobs and subsidies: “no taxation, no representation”."},
+     {t:"Oil makes citizens uninterested in politics by their very nature", why:"The theory is about fiscal bargains, not human nature."},
      {t:"Oil states always hold free elections", why:"The theory predicts the opposite tendency."},
      {t:"Foreign oil buyers vote in its elections", why:"Buyers pay the state; they do not vote."}]},
    {id:"e4u22-q30", lesson:"e4u22-l4", level:2, q:"A Gulf state invests abroad through a sovereign wealth fund, brands itself through sport and culture, and has become more responsive to citizens without democratising. Which concept fits best?", options:[
@@ -1342,28 +1404,28 @@ ICA.addUnit({
      {t:"Jeffrey Herbst’s on African states", why:"Herbst wrote on power over distance in Africa."}]},
    {id:"e4u22-q32", lesson:"e4u22-l4", level:1, q:"Which states are members of the Gulf Cooperation Council?", options:[
      {t:"Saudi Arabia, Kuwait, Bahrain, Qatar, the UAE and Oman", ok:true, why:"Right: its six founding members (1981)."},
-     {t:"Saudi Arabia, Iran, Iraq and Kuwait", why:"Iran and Iraq are not members."},
+     {t:"Saudi Arabia, Iran, Iraq, Kuwait, Qatar, the UAE and Oman", why:"Iran and Iraq are not members."},
      {t:"All Arab League members", why:"The GCC has only six members."},
      {t:"Egypt, Jordan and Saudi Arabia", why:"Egypt and Jordan are not members."}]},
    {id:"e4u22-q33", lesson:"e4u22-l4", level:3, q:"Which sentence about 1948 is written in the neutral, attributed style a seminar paper needs?", options:[
-     {t:"“Israel declared independence on 14 May 1948; in the war that followed, more than half of the Palestinian population was permanently displaced (UN), an event Palestinians call the Nakba.”", ok:true, why:"Right: dated, sourced, and naming each memory."},
-     {t:"“1948 was simply a victory for one side.”", why:"One-sided and unsourced."},
+     {t:"“Israel declared independence in May 1948; over half of Palestinians were displaced in the war (UN), an event they call the Nakba.”", ok:true, why:"Right: dated, sourced, and naming each memory. The UN records that more than half of the Palestinian population was permanently displaced in the war after 14 May 1948."},
+     {t:"“1948 was simply a victory for one side, which the other side has never accepted.”", why:"One-sided and unsourced."},
      {t:"“Nothing important happened to Palestinians in 1948.”", why:"Denies documented displacement."},
-     {t:"“Israel was created illegitimately, as everyone agrees.”", why:"Presents a contested view as universal fact."}]},
+     {t:"“Israel was created illegitimately in May 1948, as everyone in the region agrees, and Palestinians rightly call that year the Nakba.”", why:"Presents a contested view as universal fact."}]},
    {id:"e4u22-q34", lesson:"e4u22-l4", level:2, q:"Which statement about the Gaza ceasefire is accurate as of November 2026?", options:[
-     {t:"It began in October 2025 under a US-brokered plan endorsed by Resolution 2803; it had not been formally ended, but Israeli strikes continued and the stabilisation force had not deployed", ok:true, why:"Right, as reported by the UN and AP."},
+     {t:"It began in October 2025; it had not been formally ended, but strikes continued", ok:true, why:"Right, as reported by the UN and AP: it began in October 2025 under a US-brokered plan endorsed by Resolution 2803; Israeli strikes continued and the stabilisation force had not deployed."},
      {t:"It collapsed in November 2025 and full-scale war resumed", why:"AP reported in October 2026 that it was fragile but had not been formally ended."},
      {t:"It ended with a final peace treaty and a Palestinian state", why:"No final-status agreement has been reached."},
-     {t:"The International Stabilization Force had fully deployed by mid-2026", why:"AP reported in October 2026 that it had not deployed."}]},
+     {t:"The International Stabilization Force had fully deployed across Gaza by mid-2026", why:"AP reported in October 2026 that it had not deployed."}]},
    {id:"e4u22-q35", lesson:"e4u22-l4", level:1, q:"Which states signed the Abraham Accords with Israel in September 2020?", options:[
      {t:"The United Arab Emirates and Bahrain", ok:true, why:"Right; Morocco and Sudan followed."},
      {t:"Egypt and Jordan", why:"They made peace with Israel in 1979 and 1994."},
      {t:"Saudi Arabia and Qatar", why:"Neither has normalised relations with Israel."},
      {t:"Iran and Iraq", why:"Neither has done so."}]},
    {id:"e4u22-q36", lesson:"e4u22-l4", level:2, q:"Why is Gulf security described as an Asian concern in energy terms?", options:[
-     {t:"In 2024, 84 per cent of the crude oil and condensate through Hormuz went to Asian markets", ok:true, why:"Right (US EIA): China, India, Japan and South Korea alone took 69 per cent."},
+     {t:"Most of the oil through Hormuz goes to Asian markets", ok:true, why:"Right (US EIA): in 2024, 84 per cent of the crude oil and condensate through Hormuz went to Asian markets; China, India, Japan and South Korea alone took 69 per cent."},
      {t:"Asian navies own the Strait of Hormuz", why:"No outside state owns the strait."},
-     {t:"Asia exports oil to the Gulf", why:"The flow runs the other way."},
+     {t:"Asia exports most of its oil to the Gulf through Hormuz", why:"The flow runs the other way."},
      {t:"Hormuz carries little oil", why:"About 20 million barrels a day passed through in 2024."}]},
 
    /* ---- Lesson 5 ---- */
@@ -1383,27 +1445,27 @@ ICA.addUnit({
      {t:"Material and ideational", why:"That concerns interests versus ideas."},
      {t:"State and beyond", why:"That concerns the centrality of the state."}]},
    {id:"e4u22-q40", lesson:"e4u22-l5", level:1, q:"Which resource was confirmed in November 2026 as fully open access?", options:[
-     {t:"*Global Studies Quarterly*, the International Studies Association’s journal", ok:true, why:"Right: its site describes it as fully open access."},
+     {t:"*Global Studies Quarterly*", ok:true, why:"Right: the International Studies Association’s journal; its site describes it as fully open access."},
      {t:"Every peer-reviewed IR journal", why:"Many are behind paywalls."},
      {t:"Any journal that invites you to publish for a fee by email", why:"Unsolicited invitations are a warning sign of predatory journals."},
      {t:"None: all IR journals charge readers", why:"Several are free, including *Africa Spectrum*."}]},
    {id:"e4u22-q41", lesson:"e4u22-l5", level:3, q:"Mei wants a thesis puzzle that crosses two clusters. Which is the strongest?", options:[
-     {t:"Why did Chile and Bolivia choose different mixes of state and private control over lithium, and what did that mean for Indigenous communities’ consultation rights?", ok:true, why:"Right: a concrete comparative puzzle linking political economy and rights in real places."},
+     {t:"Why did Chile and Bolivia govern lithium differently, with what effect on consultation?", ok:true, why:"Right: a concrete comparative puzzle linking political economy and rights in real places: different mixes of state and private control, and what they meant for Indigenous communities’ consultation rights."},
      {t:"Lithium in general", why:"A topic, not a puzzle."},
      {t:"Is the world getting better?", why:"Too broad to research."},
-     {t:"List every regional body in Latin America", why:"A description task, not a puzzle."}]},
+     {t:"List every regional body in Latin America, from Mercosur to the Pacific Alliance, and describe each one", why:"A description task, not a puzzle."}]},
    {id:"e4u22-q42", lesson:"e4u22-l5", level:2, q:"Which theory was **developed largely from research in Latin America**?", options:[
-     {t:"Dependency theory and structuralist economics", ok:true, why:"Right: Prebisch, ECLA/CEPAL, Cardoso and Faletto."},
+     {t:"Dependency theory", ok:true, why:"Right: dependency theory and structuralist economics (Prebisch, ECLA/CEPAL, Cardoso and Faletto)."},
      {t:"Rentier state theory", why:"That came mainly from research on Iran and the Arab Gulf."},
      {t:"Juridical statehood", why:"That came from research on African states."},
      {t:"Securitisation theory", why:"That came from the Copenhagen School in Europe."}]},
    {id:"e4u22-q43", lesson:"e4u22-l5", level:3, q:"A classmate says: “Neutral writing means I shouldn’t have any view.” What is the best reply?", options:[
-     {t:"Neutrality means representing each position fairly and attributing it; you can still argue your own view with evidence", ok:true, why:"Right: seminar writing combines fair description with a supported argument."},
-     {t:"Neutral writing means always splitting the difference", why:"Evidence may support one side more; neutrality is about fairness, not false balance."},
+     {t:"Neutrality means attributing positions fairly; you can still argue", ok:true, why:"Right: represent each position fairly and attribute it; you can still argue your own view with evidence. Seminar writing combines fair description with a supported argument."},
+     {t:"Neutral writing means always splitting the difference between the sides", why:"Evidence may support one side more; neutrality is about fairness, not false balance."},
      {t:"Neutral writing means avoiding contested topics", why:"Contested topics can be written about neutrally."},
      {t:"Neutral writing means quoting only one source", why:"Fair representation needs several."}]},
    {id:"e4u22-q44", lesson:"e4u22-l5", level:1, q:"Which tool gives a monthly update on more than 70 conflicts and crises, searchable back to 2003?", options:[
-     {t:"International Crisis Group’s *CrisisWatch*", ok:true, why:"Right: an early-warning tracker that is free to read."},
+     {t:"*CrisisWatch*", ok:true, why:"Right: International Crisis Group’s *CrisisWatch*, an early-warning tracker that is free to read."},
      {t:"Latinobarómetro", why:"An opinion survey, not a conflict tracker."},
      {t:"The CPTPP", why:"A trade agreement."},
      {t:"The Global Studies Quarterly", why:"A journal of research articles."}]},

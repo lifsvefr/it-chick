@@ -78,7 +78,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u10-l1-x1", type:"mcq", q:"A treaty between two states says one thing; a later customary rule says another. What is the starting point for deciding which applies?", options:[
-      {t:"Neither automatically wins: lawyers use maxims such as the more specific rule and the later rule, unless jus cogens or Article 103 of the Charter is involved.", ok:true, why:"Right. Article 38 is not a ranking. Hierarchy enters only through jus cogens and the Charter’s Article 103."},
+      {t:"Neither automatically wins; lawyers use maxims.", ok:true, why:"Right. Maxims such as the more specific rule and the later rule apply. Article 38 is not a ranking. Hierarchy enters only through jus cogens and the Charter’s Article 103."},
       {t:"The treaty always wins, because Article 38 lists treaties first.", why:"The order in Article 38 is not a ranking; treaties and custom have equal force."},
       {t:"Custom always wins, because it binds all states.", why:"Custom’s wider reach does not make it superior; two states can agree a special treaty rule between themselves (unless it conflicts with jus cogens)."},
       {t:"The writings of the most respected scholars decide.", why:"Court decisions and scholars’ writings are subsidiary means for identifying law, not a tiebreaker source."}
@@ -98,7 +98,7 @@ ICA.addUnit({
       {t:"Coastal states claim rights over their continental shelf as rights, and others accept the claims as lawful.", b:2, why:"The Truman Proclamation pattern: conduct plus acceptance as law."}
     ]},
     {id:"e4u10-l1-x4", type:"mcq", q:"State A joins a human rights treaty with a reservation excluding the treaty’s central non-discrimination article. Under the Vienna Convention, what is the main problem?", options:[
-      {t:"A reservation incompatible with the object and purpose of the treaty is not permitted.", ok:true, why:"Yes. Article 19 bars reservations that defeat the treaty’s purpose, the test from the 1951 Genocide Convention opinion."},
+      {t:"It is incompatible with the treaty’s object and purpose.", ok:true, why:"Yes. Article 19 bars reservations that defeat the treaty’s purpose, the test from the 1951 Genocide Convention opinion."},
       {t:"Reservations are never allowed to multilateral treaties.", why:"Reservations are generally allowed unless the treaty forbids them or they defeat its purpose."},
       {t:"The reservation needs the approval of the UN Secretary-General.", why:"The Secretary-General acts as depositary, circulating reservations; it does not approve them."},
       {t:"Only the ICJ can decide whether any reservation is valid.", why:"Other parties can object, and treaty bodies have claimed a role; who finally decides is debated, but it is not only the ICJ."}
@@ -115,7 +115,7 @@ ICA.addUnit({
       {t:"Custom can exist among a group of states in one region.", flag:false, why:"Correct: regional custom is possible, as the *Asylum* case (1950) discussed, though Colombia failed to prove it."}
     ]},
     {id:"e4u10-l1-x6", type:"mcq", q:"Why could The Gambia bring a case against Myanmar about the Rohingya when it was not directly harmed?", options:[
-      {t:"Obligations under the Genocide Convention are owed to all its parties (erga omnes partes), so any party has standing.", ok:true, why:"Right. The ICJ accepted this common-interest reasoning in 2020."},
+      {t:"The Convention’s duties are owed to all parties (erga omnes partes).", ok:true, why:"Right. So any party has standing. The ICJ accepted this common-interest reasoning in 2020."},
       {t:"Because genocide is jus cogens, the ICJ automatically has jurisdiction over every case about it.", why:"The Court has said jus cogens does not by itself create jurisdiction (*Armed Activities*, 2006). Jurisdiction here came from the Convention’s Article IX."},
       {t:"The Security Council referred the case to the ICJ.", why:"The Council did not refer it; states brought it, and the ICJ hears cases between states that consented."},
       {t:"The Gambia is a neighbour of Myanmar.", why:"The Gambia is in West Africa. Its standing came from the treaty, not geography."}
@@ -361,7 +361,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u10-l3-x1", type:"mcq", q:"Which of these uses of force fits one of the Charter’s two clear exceptions to Article 2(4)?", options:[
-      {t:"Force authorised by a Security Council resolution under Chapter VII using “all necessary measures”.", ok:true, why:"Right. Council authorisation is one of the two clear exceptions; self-defence under Article 51 is the other."},
+      {t:"Force authorised by the Security Council under Chapter VII.", ok:true, why:"Right. Such resolutions use words like “all necessary measures”. Council authorisation is one of the two clear exceptions; self-defence under Article 51 is the other."},
       {t:"Force approved by a two-thirds vote of the General Assembly.", why:"The Assembly can recommend, including under Uniting for Peace, but it cannot authorise force with binding effect."},
       {t:"Force by a regional organisation without Council approval.", why:"Article 53 says regional enforcement action needs Council authorisation."},
       {t:"Force to recover territory lost in a war decades ago.", why:"No exception covers this; the 1970 Friendly Relations Declaration rejects force to settle territorial disputes."}
@@ -381,9 +381,9 @@ ICA.addUnit({
       {t:"State B is enlarging its army but has made no threat.", b:2, why:"A capability, not an imminent attack."}
     ]},
     {id:"e4u10-l3-x4", type:"mcq", q:"An armed group based in State C launches attacks across the border into State D. C’s government condemns the group but has no control over that region. D strikes the group in C without C’s consent. Which argument is D most likely to make?", options:[
-      {t:"That C is “unwilling or unable” to stop the threat, so D may act in self-defence on C’s territory.", ok:true, why:"Right. This is the doctrine invoked by the United States and some partners in Syria from 2014; it is contested."},
+      {t:"That C is “unwilling or unable” to stop the threat.", ok:true, why:"Right. D would claim it may act in self-defence on C’s territory. This is the doctrine invoked by the United States and some partners in Syria from 2014; it is contested."},
       {t:"That the ICJ’s *Wall* opinion clearly allows it.", why:"The *Wall* opinion pointed the other way, describing Article 51 as about attacks by one state against another."},
-      {t:"That humanitarian intervention is clearly lawful.", why:"The case is about self-defence against attacks, not protecting a population, and there is no agreed humanitarian right."},
+      {t:"That humanitarian intervention is clearly lawful here.", why:"The case is about self-defence against attacks, not protecting a population, and there is no agreed humanitarian right."},
       {t:"That C consented.", why:"The scenario says C did not consent."}
     ]},
     {id:"e4u10-l3-x5", type:"spot", q:"A draft paragraph on humanitarian intervention. Tap each sentence that is **inaccurate or one-sided**.", ask:"inaccurate or one-sided", parts:[
@@ -398,7 +398,7 @@ ICA.addUnit({
       {t:"Today every state accepts that humanitarian intervention without the Council is lawful.", flag:true, why:"Inaccurate. Most states, including the large Group of 77, reject such a right; it is deeply contested."}
     ]},
     {id:"e4u10-l3-x6", type:"mcq", q:"Which sentence describes Iraq 2003 most neutrally for a seminar paper?", options:[
-      {t:"The United States, the United Kingdom and Australia argued that earlier resolutions authorised force; France, Germany, Russia and others argued they did not; Annan later said the war was not in conformity with the Charter.", ok:true, why:"Yes. It attributes each position and the Secretary-General’s view, with no adjectives doing the arguing."},
+      {t:"Coalition states said earlier resolutions sufficed; others said not.", ok:true, why:"Yes. The US, UK and Australia argued that earlier resolutions authorised force; France, Germany, Russia and others argued they did not; Annan later said the war was not in conformity with the Charter. It attributes each position and the Secretary-General’s view, with no adjectives doing the arguing."},
       {t:"The illegal invasion of Iraq was condemned by everyone.", why:"It asserts a conclusion and overstates agreement; several governments argued it was lawful."},
       {t:"The coalition clearly had Council authorisation under Resolution 1441.", why:"That was one side’s argument, strongly disputed; 1441 did not expressly authorise force."},
       {t:"International law had nothing to say about Iraq in 2003.", why:"Governments argued at length in legal terms; the debate shows law shaping justification."}
@@ -671,7 +671,7 @@ ICA.addUnit({
       {t:"The Court has no police and depends on states to make arrests.", flag:false, why:"Accurate."}
     ]},
     {id:"e4u10-l5-x7", type:"mcq", q:"Which statement about the ECCC in Cambodia is most balanced?", options:[
-      {t:"It drew large public attendance and built a lasting archive, but was slow and costly, convicted only three people and faced allegations of political interference.", ok:true, why:"Yes. It states both supporters’ and critics’ main points."},
+      {t:"It drew public interest but was slow, costly and criticised.", ok:true, why:"Yes. It drew large public attendance and built a lasting archive, but convicted only three people and faced allegations of political interference. It states both supporters’ and critics’ main points."},
       {t:"It was a complete failure that achieved nothing.", why:"One-sided: it convicted senior leaders, including of genocide, and engaged the public widely."},
       {t:"It was a purely international court with no Cambodian judges.", why:"Inaccurate: it was a hybrid court with Cambodian and international judges."},
       {t:"It tried hundreds of Khmer Rouge officials.", why:"Inaccurate: only three people were convicted."}
@@ -707,6 +707,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u10-q02","e4u10-q05","e4u10-q08","e4u10-q12","e4u10-q15","e4u10-q20","e4u10-q23","e4u10-q27","e4u10-q31","e4u10-q35","e4u10-q39","e4u10-q43"],
+  cpBank:[
+   {id:"e4u10-cp01", lesson:"e4u10-l1", level:1, q:"A new agreement is legally binding and sets exact numerical limits, but it creates no court or panel to interpret it. In the legalisation framework of Abbott and colleagues, how would you describe it?", options:[
+     {t:"Soft law, because it has no court", why:"Soft law means non-binding. This agreement is binding; lacking a court affects only one dimension."},
+     {t:"High obligation, high precision, low delegation", ok:true, why:"Right. Legalisation has three dimensions: obligation (binding), precision (exact) and delegation (third parties interpret and apply). This agreement scores high, high and low."},
+     {t:"High delegation, because the states apply it themselves", why:"Delegation means handing interpretation to third parties such as courts. States applying it themselves is low delegation."},
+     {t:"Jus cogens, because it is binding and precise", why:"Jus cogens are a few peremptory norms, such as the ban on genocide, that no treaty can override. Being binding and precise doesn’t make a rule peremptory."}]},
+   {id:"e4u10-cp02", lesson:"e4u10-l1", level:2, q:"After months of a crushing trade embargo, a small state signs a treaty giving fishing rights to the state that imposed the embargo. Later it claims the treaty is void under Article 52 of the VCLT. What is the best assessment?", options:[
+     {t:"The treaty is void, because Article 52 covers all coercion, including economic pressure of this kind", why:"Article 52 covers the threat or use of force. States that tried to add economic pressure failed."},
+     {t:"The treaty is void, because all unequal treaties were annulled in 1969", why:"The Vienna Convention annulled no existing treaties. It set rules for treaties, mostly applied to later ones."},
+     {t:"The treaty is valid only if the small state’s parliament approves it a second time", why:"Article 27 says a state can’t use its own law to escape an obligation. Domestic approval doesn’t decide validity here."},
+     {t:"The claim will probably fail: Article 52 covers force, and economic pressure was left out", ok:true, why:"Right. At Vienna, states from Asia, Africa and Latin America won only a non-binding declaration condemning economic and political coercion."}]},
+   {id:"e4u10-cp03", lesson:"e4u10-l1", level:2, q:"When joining a treaty, a state files a statement titled “Interpretative understanding”. It says that one article “shall not apply” to that state. How will lawyers treat it?", options:[
+     {t:"As a reservation, because substance counts, not the label", ok:true, why:"Right. A statement that excludes a provision works as a reservation whatever it is called, and Article 19 forbids reservations that defeat the treaty’s object and purpose."},
+     {t:"As an interpretative declaration, because that is the title the state chose for it", why:"An interpretative declaration only explains how a party understands a clause. This one excludes the clause, so the title doesn’t decide."},
+     {t:"As void, because reservations to treaties are never allowed under the VCLT", why:"Reservations are allowed unless the treaty forbids them or they defeat its purpose."},
+     {t:"As a persistent objection to a customary rule, made at the moment of joining", why:"Persistent objection concerns customary law, not statements made on joining a treaty."}]},
+   {id:"e4u10-cp04", lesson:"e4u10-l1", level:3, q:"Two states sign a treaty in which they agree to invade a third state together and divide its territory. What is the treaty’s legal status?", options:[
+     {t:"Valid between the two parties, because treaties must be performed in good faith", why:"Pacta sunt servanda applies to valid treaties. A treaty that conflicts with a peremptory norm is void from the start."},
+     {t:"Valid unless the third state objects persistently", why:"Persistent objection is about forming custom. It has no role in deciding whether a treaty to commit aggression is valid."},
+     {t:"Void, because it conflicts with the prohibition of aggression, a jus cogens norm that no treaty may override", ok:true, why:"Right. This combines Lesson 1 (VCLT Article 53: treaties conflicting with jus cogens are void) with Lesson 3 (the ban on aggression, listed by the ILC as jus cogens)."},
+     {t:"Valid until the Security Council condemns it", why:"Validity doesn’t depend on a Council resolution. A treaty contrary to jus cogens is void whatever the Council does."}]},
+   {id:"e4u10-cp05", lesson:"e4u10-l2", level:1, q:"A state keeps a costly treaty promise, though breaking it would pay this year. Its officials say others would stop trusting its promises, might stop keeping their side, and could punish it. Whose account fits best?", options:[
+     {t:"The Chayeses’ managerial model of capacity and ambiguity", why:"The managerial model explains breaches by ambiguity, lack of capacity and time lags. The officials here weigh costs of breaking a promise."},
+     {t:"Franck’s compliance pull of legitimate rules", why:"Franck linked compliance to a rule’s legitimacy: clarity, symbolic validation, coherence and adherence. The officials talk about costs, not legitimacy."},
+     {t:"Goldsmith and Posner’s coincidence of interest", why:"Coincidence of interest means the state would act the same way without the treaty. Here breaking it would pay, so the treaty is doing work."},
+     {t:"Guzman’s reputation, reciprocity and retaliation", ok:true, why:"Right. Guzman argued that law matters because breaking a legal promise costs more, through reputation, reciprocity and retaliation."}]},
+   {id:"e4u10-cp06", lesson:"e4u10-l2", level:2, q:"A critic says a new rule was drafted to match exactly what the most powerful states already do, so it restrains no one. In Koskenniemi’s terms, the rule risks being what?", options:[
+     {t:"A utopia with no grip on reality", why:"That is the other pole: a rule so far from state behaviour that it has no grip. This rule is too close to behaviour."},
+     {t:"An apology for power", ok:true, why:"Right. Koskenniemi argued that legal argument swings between apology (too close to state behaviour) and utopia (too far from it)."},
+     {t:"A jus cogens norm", why:"Jus cogens norms override other rules. A rule that just mirrors powerful states’ practice is the opposite of a strong constraint."},
+     {t:"A coordination focal point", why:"That is Goldsmith and Posner’s category for picking one convention, such as a shipping lane. The critic’s point is about power, not coordination."}]},
+   {id:"e4u10-cp07", lesson:"e4u10-l2", level:3, q:"Lina argues that debt conditions and non-proliferation demands fall heavily on weaker states, while breaches by powerful states cost little. She says the same pattern shapes which situations reach international criminal courts. Which tradition is she drawing on?", options:[
+     {t:"TWAIL (Third World Approaches to International Law)", ok:true, why:"Right. This combines Lesson 2 (TWAIL asks who is asked to comply) with Lesson 5 (TWAIL critiques of selectivity in international criminal justice)."},
+     {t:"The managerial model", why:"The managerial model explains breaches by ambiguity, capacity and time lags. It doesn’t focus on hierarchy between states."},
+     {t:"Hart’s view of international law as a “primitive” system", why:"Hart pointed to the lack of institutions to make and apply rules, not to unequal burdens on weaker states."},
+     {t:"Feminist critiques of the public/private divide", why:"Feminist approaches criticise how law left violence in homes outside international concern. Lina’s argument is about hierarchy between states."}]},
+   {id:"e4u10-cp08", lesson:"e4u10-l3", level:2, q:"State M is attacked. Its neighbour, State N, sends forces to help, citing collective self-defence, but M has said nothing. According to *Nicaragua* (1986), what is missing?", options:[
+     {t:"Security Council authorisation, which all collective self-defence needs", why:"Self-defence, individual or collective, is an exception that doesn’t need prior Council authorisation, though measures must be reported."},
+     {t:"An armed attack on N itself", why:"Collective self-defence is about helping another state. N doesn’t need to be attacked itself."},
+     {t:"A declaration by M that it has been attacked, and a request for help", ok:true, why:"Right. *Nicaragua* held that collective self-defence requires the victim to declare it has been attacked and ask for help."},
+     {t:"A formal alliance treaty between M and N", why:"Alliance treaties are framed around Article 51, but the legal requirement in *Nicaragua* is the victim’s declaration and request, not a treaty."}]},
+   {id:"e4u10-cp09", lesson:"e4u10-l4", level:1, q:"Coastguard officers stop a boat smuggling goods 20 nautical miles off State R’s coast. In which zone may R enforce its customs laws at that distance?", options:[
+     {t:"The territorial sea", why:"The territorial sea ends at 12 nautical miles. The boat is beyond it."},
+     {t:"None: beyond 12 nm only the high seas begin", why:"Beyond the territorial sea come the contiguous zone and the EEZ, where the coastal state keeps certain rights."},
+     {t:"The continental shelf", why:"The continental shelf gives seabed resource rights, not customs enforcement on the water."},
+     {t:"The contiguous zone", ok:true, why:"Right. The contiguous zone extends to 24 nautical miles and allows enforcement of customs, fiscal, immigration and health laws."}]},
+   {id:"e4u10-cp10", lesson:"e4u10-l4", level:3, q:"State S has never joined UNCLOS, yet it lets foreign ships pass innocently through its territorial sea and claims a 200-nautical-mile EEZ. Other states treat these rules as binding on S. Why?", options:[
+     {t:"Because signing any treaty binds a state to all its rules even without ratification", why:"Signature alone doesn’t bind a state to a treaty’s rules. The binding force here comes from custom."},
+     {t:"Because many UNCLOS zone and navigation rules are also customary law, which binds states whether or not they ratify", ok:true, why:"Right. This combines Lesson 1 (custom binds independently of treaties, as with VCLT rules) with Lesson 4 (the US treats most UNCLOS navigation and zone rules as custom)."},
+     {t:"Because UNCLOS is a jus cogens treaty", why:"UNCLOS is not jus cogens. Its rules bind non-parties only where they are also customary law."},
+     {t:"Because customary law binds only states that consent in writing", why:"Custom rests on general practice and opinio juris, not written consent. Only a persistent objector can escape a new rule."}]},
+   {id:"e4u10-cp11", lesson:"e4u10-l5", level:2, q:"Country T has not joined the Rome Statute. Its army is accused of crimes against humanity inside T. No state has accepted jurisdiction, and the Security Council has not acted. Can the Prosecutor investigate proprio motu?", options:[
+     {t:"No: without a Council referral, the crime needs a state party’s territory or national", ok:true, why:"Right. Proprio motu is only a trigger (Article 13). Unless the Council refers, Article 12 still requires a crime on a state party’s territory or by its national, or a state accepting jurisdiction. None applies here."},
+     {t:"Yes: universal jurisdiction lets the ICC try crimes against humanity wherever they happen", why:"Universal jurisdiction lets national courts try certain crimes wherever committed. The ICC’s reach is set by Article 12 of the Rome Statute."},
+     {t:"Yes: acting proprio motu, the Prosecutor needs no other link to the case at all", why:"Proprio motu means the Prosecutor opens an investigation on her own initiative, with judges’ approval. The Article 12 preconditions still apply."},
+     {t:"No: the ICC can open cases only when the Security Council refers a situation", why:"The answer is no, but not for this reason. A state party’s referral or the Prosecutor acting proprio motu can also trigger a case, if Article 12 is met."}]},
+   {id:"e4u10-cp12", lesson:"e4u10-l5", level:3, q:"The leader of a state that is not party to the Rome Statute orders an invasion of a state party. Can the ICC try that leader for the crime of aggression?", options:[
+     {t:"Yes, because territorial jurisdiction reaches non-party nationals for every crime", why:"That is true for genocide, crimes against humanity and war crimes, but not for aggression, which has its own narrow rules."},
+     {t:"Yes, as long as the victim state refers the situation", why:"A state referral doesn’t open aggression jurisdiction over nationals of non-parties."},
+     {t:"Not unless the Security Council refers it, because aggression jurisdiction excludes nationals of non-parties", ok:true, why:"Right. This combines Lesson 3 (the crime of aggression) with Lesson 5: since 2018 the ICC can try aggression, but not over non-party nationals or territory, unless the Council refers."},
+     {t:"No, because aggression is not a crime under the Rome Statute", why:"It is: the ICC has been able to try aggression since 17 July 2018, within narrow limits."}]},
+  ],
   codex:[
    {id:"sources-of-international-law", title:"Sources of international law in depth", aka:["Article 38","formal sources","hierarchy of norms"], tags:["international law","sources","custom"],
     summary:"How treaties, custom, general principles and the subsidiary means relate to each other, how each is proved, and where hierarchy enters.",
@@ -1222,14 +1284,14 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u10-q01", lesson:"e4u10-l1", level:1, q:"Which statement about the sources in Article 38(1) of the ICJ Statute is correct?", options:[
-     {t:"Treaties and custom have equal force; hierarchy comes only from jus cogens and Article 103 of the Charter.", ok:true, why:"Right. The list is not a ranking; conflicts are handled by maxims such as lex specialis."},
+     {t:"Treaties and custom have equal force.", ok:true, why:"Right. Hierarchy comes only from jus cogens and Article 103 of the Charter. The list is not a ranking; conflicts are handled by maxims such as lex specialis."},
      {t:"Treaties always prevail over custom because they are listed first.", why:"The order in Article 38 is not a hierarchy."},
      {t:"Scholarly writings are a main source equal to treaties.", why:"They are subsidiary means for identifying law, not a source in their own right."},
      {t:"General Assembly resolutions are listed as a binding source.", why:"They are not in Article 38; they can be evidence of opinio juris."}]},
    {id:"e4u10-q02", lesson:"e4u10-l1", level:2, q:"Ana argues that a rule has become custom because many states follow it. Her opponent replies that every state says it does so “as a courtesy”. What is missing from Ana’s case?", options:[
-     {t:"Opinio juris: evidence that states follow the practice because they believe it is legally required.", ok:true, why:"Yes. Practice without a sense of legal obligation is courtesy or habit, not custom."},
+     {t:"Opinio juris: a sense of legal obligation.", ok:true, why:"Yes. She needs evidence that states follow the practice because they believe it is legally required. Practice without a sense of legal obligation is courtesy or habit, not custom."},
      {t:"A treaty that writes the rule down.", why:"Custom does not need a treaty; it is unwritten law."},
-     {t:"A century of consistent practice.", why:"*North Sea* (1969) said a long time is not required if practice is extensive and virtually uniform."},
+     {t:"A century of consistent practice by every state.", why:"*North Sea* (1969) said a long time is not required if practice is extensive and virtually uniform."},
      {t:"A Security Council resolution.", why:"Council resolutions are not required to form custom."}]},
    {id:"e4u10-q03", lesson:"e4u10-l1", level:1, q:"What did the ICJ’s 1951 opinion on *Reservations to the Genocide Convention* contribute to treaty law?", options:[
      {t:"The test that a reservation must be compatible with the treaty’s object and purpose.", ok:true, why:"Right. The VCLT later adopted this test in Article 19."},
@@ -1237,7 +1299,7 @@ ICA.addUnit({
      {t:"The rule that every party must accept every reservation.", why:"That was the older unanimity view the Court moved away from."},
      {t:"The definition of jus cogens.", why:"Jus cogens is defined in VCLT Article 53 (1969)."}]},
    {id:"e4u10-q04", lesson:"e4u10-l1", level:2, q:"A new government says it no longer needs to perform a treaty because its parliament has passed a law contradicting it. Under the VCLT, what is the answer?", options:[
-     {t:"Article 27: a state may not invoke its internal law to justify failing to perform a treaty.", ok:true, why:"Yes. Domestic law does not change an international obligation."},
+     {t:"Article 27: internal law is no excuse for not performing.", ok:true, why:"Yes. A state may not invoke its internal law to justify failing to perform a treaty. Domestic law does not change an international obligation."},
      {t:"The new law automatically ends the treaty.", why:"Treaties end only under their own terms or the VCLT’s narrow grounds."},
      {t:"Any change of government is a fundamental change of circumstances.", why:"Article 62 is narrow; courts have rejected such broad readings (*Gabčíkovo–Nagymaros*, 1997)."},
      {t:"The treaty is void under Article 52.", why:"Article 52 concerns treaties procured by force, not later domestic laws."}]},
@@ -1247,22 +1309,22 @@ ICA.addUnit({
      {t:"Neither is exempt because the persistent objector rule was abolished in 2018.", why:"The ILC’s 2018 conclusions include the persistent objector rule."},
      {t:"Q is exempt because new states are never bound by existing custom.", why:"New states are generally bound by existing custom."}]},
    {id:"e4u10-q06", lesson:"e4u10-l1", level:1, q:"What is the difference between jus cogens and erga omnes?", options:[
-     {t:"Jus cogens is about hierarchy (which rules prevail); erga omnes is about to whom an obligation is owed, and so who may complain.", ok:true, why:"Yes. The two often overlap but answer different questions."},
+     {t:"Jus cogens concerns hierarchy; erga omnes, who is owed.", ok:true, why:"Yes. Jus cogens is about which rules prevail; erga omnes is about to whom an obligation is owed, and so who may complain. The two often overlap but answer different questions."},
      {t:"They are two names for the same thing.", why:"They overlap in examples, but the concepts differ."},
      {t:"Erga omnes norms override treaties; jus cogens norms do not.", why:"It is the reverse: jus cogens voids conflicting treaties."},
      {t:"Jus cogens applies only in human rights treaties.", why:"It is general international law; the ILC list includes the ban on aggression."}]},
    {id:"e4u10-q07", lesson:"e4u10-l1", level:2, q:"Mei reads that the Helsinki Final Act “shaped Cold War diplomacy” though it was not a treaty. Which concept best describes it?", options:[
-     {t:"Soft law: a non-binding instrument that still shapes behaviour.", ok:true, why:"Right. It was deliberately a political commitment, not a treaty."},
-     {t:"Jus cogens.", why:"Jus cogens norms are binding and peremptory; the Final Act was not binding."},
-     {t:"Customary law.", why:"Custom requires general practice and opinio juris; the Act itself is a document, not custom."},
-     {t:"A reservation.", why:"A reservation is a statement modifying a treaty obligation."}]},
+     {t:"Soft law, which is non-binding.", ok:true, why:"Right. Soft law still shapes behaviour. The Act was deliberately a political commitment, not a treaty."},
+     {t:"Jus cogens, a binding peremptory norm.", why:"Jus cogens norms are binding and peremptory; the Final Act was not binding."},
+     {t:"Customary international law.", why:"Custom requires general practice and opinio juris; the Act itself is a document, not custom."},
+     {t:"A reservation to a treaty.", why:"A reservation is a statement modifying a treaty obligation."}]},
    {id:"e4u10-q08", lesson:"e4u10-l1", level:3, q:"A government negotiator prefers a non-binding declaration to a treaty on a new technology because the science is uncertain and her parliament is wary. Which theory best supports her choice?", options:[
-     {t:"Abbott and Snidal’s argument that soft law lowers contracting and sovereignty costs and handles uncertainty.", ok:true, why:"Yes. Their work on hard and soft law explains exactly this choice."},
+     {t:"Abbott and Snidal on soft law.", ok:true, why:"Yes. They argue soft law lowers contracting and sovereignty costs and handles uncertainty. Their work on hard and soft law explains exactly this choice."},
      {t:"Weil’s warning about relative normativity.", why:"Weil criticised soft law; he would not support the choice."},
      {t:"The persistent objector rule.", why:"That concerns custom, not the choice of instrument."},
      {t:"Pacta sunt servanda.", why:"That rule applies to binding treaties, which she is avoiding."}]},
    {id:"e4u10-q09", lesson:"e4u10-l1", level:2, q:"Why could The Gambia bring a Genocide Convention case against Myanmar?", options:[
-     {t:"Because obligations under the Convention are owed to all its parties, giving each party standing, and the Convention’s Article IX gives the ICJ jurisdiction.", ok:true, why:"Right. Standing came from erga omnes partes reasoning; jurisdiction from the treaty."},
+     {t:"Because Convention duties are owed to all its parties.", ok:true, why:"Right. That gives each party standing, and the Convention’s Article IX gives the ICJ jurisdiction. Standing came from erga omnes partes reasoning; jurisdiction from the treaty."},
      {t:"Because jus cogens automatically gives the ICJ jurisdiction.", why:"The Court has said jus cogens does not by itself create jurisdiction."},
      {t:"Because the Security Council ordered the case.", why:"The Council did not; one state sued another."},
      {t:"Because The Gambia was directly injured.", why:"It was not; that is why the case mattered for standing."}]},
@@ -1273,12 +1335,12 @@ ICA.addUnit({
      {t:"The absence of a world government.", why:"They accepted that condition and still found a propensity to comply."},
      {t:"Cultural differences between states.", why:"Not one of their three sources."}]},
    {id:"e4u10-q11", lesson:"e4u10-l2", level:1, q:"What was the main point of Downs, Rocke and Barsoom (1996)?", options:[
-     {t:"High compliance may reflect shallow treaties; deeper cooperation needs enforcement.", ok:true, why:"Yes: the selection and depth critique."},
+     {t:"High compliance may just reflect shallow treaties.", ok:true, why:"Yes: the selection and depth critique. Deeper cooperation needs enforcement."},
      {t:"States always comply with international law.", why:"They questioned what high compliance means."},
      {t:"International law is illegitimate.", why:"Their argument was about incentives, not legitimacy."},
-     {t:"Courts should replace treaties.", why:"Not their argument."}]},
+     {t:"International courts should replace treaties entirely.", why:"Not their argument."}]},
    {id:"e4u10-q12", lesson:"e4u10-l2", level:3, q:"Two invented treaties both report 95% compliance. Treaty A asks states to keep emissions at current levels; Treaty B requires a 40% cut and has inspections. A researcher concludes “both treaties are equally effective.” What is the best critique?", options:[
-     {t:"Compliance is not effectiveness: Treaty A may ask for nothing states would not do anyway, so its figure shows little.", ok:true, why:"Right. This is the depth and selection point; effectiveness needs a counterfactual."},
+     {t:"Compliance is not effectiveness.", ok:true, why:"Right. Treaty A may ask for nothing states would not do anyway, so its figure shows little. This is the depth and selection point; effectiveness needs a counterfactual."},
      {t:"Compliance figures are always fabricated.", why:"Too sweeping; the issue is interpretation, not fabrication."},
      {t:"Treaty B must be less effective because it is harder.", why:"Harder treaties with 95% compliance are more impressive, not less."},
      {t:"Inspections never matter.", why:"The enforcement model says they matter for deep treaties."}]},
@@ -1288,17 +1350,17 @@ ICA.addUnit({
      {t:"Emergence, cascade, internalisation", why:"That is Finnemore and Sikkink’s norm life cycle, a related but different model."},
      {t:"Coincidence, coordination, coercion", why:"Those are among Goldsmith and Posner’s patterns."}]},
    {id:"e4u10-q14", lesson:"e4u10-l2", level:2, q:"Countries all follow one convention for radio frequencies because any agreed system is better than interference. How would Goldsmith and Posner classify this?", options:[
-     {t:"Coordination: the law supplies a focal point, but interests drive behaviour.", ok:true, why:"Yes. They argue such compliance says little about law’s independent force."},
+     {t:"Coordination: the law is a focal point.", ok:true, why:"Yes. Interests drive behaviour, and they argue such compliance says little about law’s independent force."},
      {t:"Coercion.", why:"No stronger state is forcing others."},
      {t:"Obedience in Koh’s sense.", why:"Koh’s obedience implies internalised norms, not convenience."},
-     {t:"A breach of international law.", why:"Following the convention is compliance."}]},
+     {t:"A breach of international law by all of them.", why:"Following the convention is compliance."}]},
    {id:"e4u10-q15", lesson:"e4u10-l2", level:3, q:"After an ICJ judgment against it, a state’s supreme court rules that the judgment cannot be enforced domestically without legislation, and the legislature does nothing. Which case does this resemble, and what does it show?", options:[
-     {t:"*Medellín v. Texas* (2008) after *Avena*: domestic institutions can limit compliance even when the executive does not reject the judgment.", ok:true, why:"Right. It shows that compliance runs through domestic law and politics."},
+     {t:"*Medellín v. Texas*: domestic limits on compliance.", ok:true, why:"Right. In *Medellín* (2008), after *Avena*, domestic institutions limited compliance even though the executive did not reject the judgment. Compliance runs through domestic law and politics."},
      {t:"*Pedra Branca* (2008): a smooth implementation.", why:"Malaysia and Singapore implemented that judgment through a joint committee."},
      {t:"*Whaling in the Antarctic* (2014): a state ignoring a ruling.", why:"Japan stopped the programme concerned."},
      {t:"*Gabčíkovo–Nagymaros* (1997): a treaty termination.", why:"That case was about ending a treaty, not domestic enforcement."}]},
    {id:"e4u10-q16", lesson:"e4u10-l2", level:2, q:"Which feature of the Montreal Protocol best illustrates the managerial model?", options:[
-     {t:"A non-compliance procedure and a Multilateral Fund that help states that fall behind.", ok:true, why:"Yes: assistance and review, rather than punishment."},
+     {t:"Help for states that fall behind.", ok:true, why:"Yes. A non-compliance procedure and a Multilateral Fund offer assistance and review, rather than punishment."},
      {t:"Automatic military sanctions against violators.", why:"The Protocol has no such provision."},
      {t:"Its being a General Assembly resolution.", why:"It is a treaty."},
      {t:"Its lack of any reporting.", why:"Reporting is central to it."}]},
@@ -1308,9 +1370,9 @@ ICA.addUnit({
      {t:"Whether the rule is written in English.", why:"Not one of his indicators."},
      {t:"How old the treaty is.", why:"Age is not one of the four."}]},
    {id:"e4u10-q18", lesson:"e4u10-l2", level:3, q:"Kenji writes: “Most ICJ judgments are complied with, so international law clearly changes state behaviour.” Which objection is strongest?", options:[
-     {t:"Selection: states that consent to a court may already be willing to comply, so high compliance does not prove the law changed behaviour.", ok:true, why:"Yes. This is the methodological core of the enforcement critique."},
+     {t:"Selection: consenting states may comply anyway.", ok:true, why:"Yes. States that consent may already be willing to comply, so high compliance does not prove the law changed behaviour. This is the methodological core of the enforcement critique."},
      {t:"Most ICJ judgments are ignored.", why:"Studies find most are complied with in whole or part."},
-     {t:"The ICJ has no judges from Asia.", why:"Inaccurate: its President since 2025 is from Japan, and irrelevant to the logic."},
+     {t:"The ICJ has no judges from Asia to hear such cases.", why:"Inaccurate: its President since 2025 is from Japan, and irrelevant to the logic."},
      {t:"Compliance cannot be studied.", why:"It can, with care about selection and counterfactuals."}]},
    /* ---- Lesson 3 ---- */
    {id:"e4u10-q19", lesson:"e4u10-l3", level:1, q:"What are the two clear exceptions to the Charter’s prohibition of force?", options:[
@@ -1319,7 +1381,7 @@ ICA.addUnit({
      {t:"Humanitarian intervention and reprisals", why:"Both are contested or unlawful; armed reprisals are widely regarded as prohibited."},
      {t:"Recovering lost territory and protecting investments", why:"Neither is a lawful ground for force."}]},
    {id:"e4u10-q20", lesson:"e4u10-l3", level:2, q:"Border guards of two states exchange a few shots in a brief incident. State A then bombs State B’s capital, citing self-defence. Which requirement is A most likely to fail?", options:[
-     {t:"Armed attack and proportionality: a minor incident may not be an armed attack, and bombing a capital far exceeds it.", ok:true, why:"Yes. *Nicaragua* set a gravity threshold; proportionality limits the response."},
+     {t:"Armed attack and proportionality.", ok:true, why:"Yes. A minor incident may not be an armed attack, and bombing a capital far exceeds it. *Nicaragua* set a gravity threshold; proportionality limits the response."},
      {t:"Reporting: A forgot to tell the General Assembly.", why:"Reports go to the Security Council; and the bigger problems are gravity and proportionality."},
      {t:"Consent: B did not agree to be bombed.", why:"Self-defence never requires the attacker’s consent; the issue is whether its conditions are met."},
      {t:"Nothing: any use of force allows any response.", why:"Self-defence requires necessity and proportionality."}]},
@@ -1334,7 +1396,7 @@ ICA.addUnit({
      {t:"Collective self-defence; lawful if an ally agrees.", why:"Collective self-defence still requires an armed attack."},
      {t:"Humanitarian intervention; lawful under R2P.", why:"Nothing humanitarian is claimed, and R2P does not authorise unilateral force."}]},
    {id:"e4u10-q23", lesson:"e4u10-l3", level:3, q:"Sione is drafting a seminar paper on force against an armed group in a neighbouring state that cannot control its border regions. Which framing is most accurate and neutral?", options:[
-     {t:"Some states, including the United States in 2014, argue force is allowed if the territorial state is “unwilling or unable”; others, including Russia, reject this, and the ICJ’s *Wall* opinion read Article 51 narrowly.", ok:true, why:"Right. It attributes each position and notes the unsettled law."},
+     {t:"Some states accept an “unwilling or unable” test; others reject it.", ok:true, why:"Right. The United States argued for the test in 2014; Russia and others reject it, and the ICJ’s *Wall* opinion read Article 51 narrowly. It attributes each position and notes the unsettled law."},
      {t:"International law clearly permits such strikes.", why:"The law is contested; “clearly” overstates it."},
      {t:"International law clearly forbids any force against non-state actors.", why:"Also overstated: the Council recognised self-defence after 9/11, and practice is divided."},
      {t:"The question is purely political and has no legal dimension.", why:"States argue at length in legal terms."}]},
@@ -1344,18 +1406,18 @@ ICA.addUnit({
      {t:"As Security Council-authorised operations", why:"None was authorised by the Council."},
      {t:"As consent from the governments they overthrew", why:"Those governments did not consent."}]},
    {id:"e4u10-q25", lesson:"e4u10-l3", level:2, q:"Which body rejected “the so-called ‘right’ of humanitarian intervention” as having no basis in the Charter?", options:[
-     {t:"The Group of 77 at the South Summit in Havana, April 2000", ok:true, why:"Yes, in paragraph 54 of its Declaration."},
+     {t:"The Group of 77, in 2000", ok:true, why:"Yes, at the South Summit in Havana, April 2000, in paragraph 54 of its Declaration."},
      {t:"The NATO summit of 1999", why:"NATO states carried out the Kosovo campaign."},
      {t:"The UK government in 2018", why:"The UK argued that a limited right exists."},
      {t:"The ICJ in 1986", why:"*Nicaragua* rejected a right to intervene in support of rebels, but the quoted words are from the G77."}]},
    {id:"e4u10-q26", lesson:"e4u10-l3", level:2, q:"What did General Assembly Resolution ES-11/1 of 2 March 2022 do?", options:[
-     {t:"It deplored the aggression by Russia against Ukraine, by 141 votes to 5 with 35 abstentions.", ok:true, why:"Right. Assembly resolutions are recommendations, but this one recorded a wide majority view."},
+     {t:"It deplored Russia’s aggression, by 141 votes to 5.", ok:true, why:"Right. There were 35 abstentions. Assembly resolutions are recommendations, but this one recorded a wide majority view."},
      {t:"It authorised force against Russia.", why:"The Assembly cannot authorise force with binding effect, and it did not try to."},
      {t:"It expelled Russia from the UN.", why:"No such step was taken."},
-     {t:"It referred the situation to the ICJ.", why:"Ukraine itself brought a case to the ICJ."}]},
+     {t:"It referred the situation to the ICJ for an opinion.", why:"Ukraine itself brought a case to the ICJ."}]},
    {id:"e4u10-q27", lesson:"e4u10-l3", level:3, q:"Fatima must summarise the legal debate over Iraq 2003 in one sentence for a neutral briefing. Which is best?", options:[
-     {t:"The US, UK and Australia argued that Resolutions 678, 687 and 1441 together authorised force; France, Germany, Russia and others argued that a further Council decision was needed.", ok:true, why:"Yes: it attributes both legal positions without loaded words."},
-     {t:"The war was an obvious crime that everyone condemned.", why:"Loaded and inaccurate about the range of views."},
+     {t:"The coalition claimed authority; France and others disputed it.", ok:true, why:"Yes. The US, UK and Australia argued that Resolutions 678, 687 and 1441 together authorised force; France, Germany, Russia and others argued that a further Council decision was needed. It attributes both positions without loaded words."},
+     {t:"The war was an obvious crime that everyone in the world condemned.", why:"Loaded and inaccurate about the range of views."},
      {t:"Resolution 1441 expressly authorised the invasion.", why:"It did not expressly authorise force; that was the core of the dispute."},
      {t:"No one raised legal arguments about the war.", why:"Legal argument was central to the debate."}]},
    /* ---- Lesson 4 ---- */
@@ -1370,45 +1432,45 @@ ICA.addUnit({
      {t:"Its customs powers in the contiguous zone", why:"The contiguous zone ends at 24 nm."},
      {t:"No rights: this is the high seas", why:"The high seas begin beyond the EEZ."}]},
    {id:"e4u10-q30", lesson:"e4u10-l4", level:1, q:"Under Article 121(3) of UNCLOS, what do rocks that cannot sustain human habitation or economic life of their own generate?", options:[
-     {t:"Only a 12-nautical-mile territorial sea, no EEZ or continental shelf", ok:true, why:"Right. Article 121(3) limits such rocks to a territorial sea, which is why the 2016 tribunal’s classification of features mattered so much."},
+     {t:"Only a territorial sea", ok:true, why:"Right. They get 12 nautical miles, with no EEZ or continental shelf. Article 121(3) limits such rocks to a territorial sea, which is why the 2016 tribunal’s classification of features mattered so much."},
      {t:"A full EEZ and continental shelf", why:"That is for islands under Article 121(2)."},
      {t:"Nothing at all", why:"That describes low-tide elevations outside a territorial sea, not rocks."},
      {t:"A 24-nautical-mile territorial sea", why:"The territorial sea is 12 nm for any feature."}]},
    {id:"e4u10-q31", lesson:"e4u10-l4", level:3, q:"A student writes: “In 2016 the tribunal gave the Spratly Islands to the Philippines, and China’s claims are therefore void.” What is wrong?", options:[
-     {t:"The tribunal did not decide sovereignty over any feature; it ruled on maritime entitlements and conduct, and the conclusion should attribute positions.", ok:true, why:"Right. The award expressly avoided sovereignty and delimitation."},
-     {t:"Nothing: that is what the award said.", why:"The award did not rule on sovereignty."},
+     {t:"The tribunal did not rule on sovereignty.", ok:true, why:"Right. It ruled on maritime entitlements and conduct, and the conclusion should attribute positions. The award expressly avoided sovereignty and delimitation."},
+     {t:"Nothing: that is exactly what the 2016 award said.", why:"The award did not rule on sovereignty."},
      {t:"The tribunal ruled for China.", why:"It found largely for the Philippines on the claims it heard."},
      {t:"The case was decided by the ICJ.", why:"It was an UNCLOS Annex VII arbitral tribunal, with the PCA as registry."}]},
    {id:"e4u10-q32", lesson:"e4u10-l4", level:2, q:"What was China’s main legal argument against the arbitration?", options:[
-     {t:"The tribunal lacked jurisdiction because the dispute concerned sovereignty and boundaries, excluded by UNCLOS and its 2006 Article 298 declaration.", ok:true, why:"Yes, as set out in its 2014 Position Paper and later statements."},
+     {t:"The tribunal lacked jurisdiction.", ok:true, why:"Yes. China argued the dispute concerned sovereignty and boundaries, excluded by UNCLOS and its 2006 Article 298 declaration, as set out in its 2014 Position Paper and later statements."},
      {t:"China is not a party to UNCLOS.", why:"China is a party; that is why the case could be brought."},
      {t:"The Philippines had no coastline on the South China Sea.", why:"Factually wrong."},
      {t:"The tribunal had already ruled for China in 2015.", why:"The 2015 award found jurisdiction over several claims."}]},
    {id:"e4u10-q33", lesson:"e4u10-l4", level:1, q:"What did Max Huber decide in *Island of Palmas* (1928)?", options:[
-     {t:"Discovery gives only an inchoate title; continuous and peaceful display of state authority prevails.", ok:true, why:"Right. The Netherlands’ display of authority beat the US claim derived from Spain’s discovery."},
+     {t:"Effective display of authority beats discovery.", ok:true, why:"Right. Discovery gives only an inchoate title; continuous and peaceful display of state authority prevails. The Netherlands’ display of authority beat the US claim derived from Spain’s discovery."},
      {t:"The first state to discover an island always owns it.", why:"Huber held the opposite."},
      {t:"Islands near a continent belong to the nearest state.", why:"Proximity alone does not give title."},
      {t:"The island should be shared.", why:"He awarded it to the Netherlands."}]},
    {id:"e4u10-q34", lesson:"e4u10-l4", level:2, q:"State K ran a lighthouse on a disputed rock for 130 years; State L never protested until a dispute arose. Which concepts will a court weigh?", options:[
-     {t:"Effectivités, acquiescence and the critical date", ok:true, why:"Yes, as in *Pedra Branca* (2008), where Singapore’s conduct and Malaysia’s silence mattered."},
+     {t:"Effectivités and acquiescence", ok:true, why:"Yes, along with the critical date, as in *Pedra Branca* (2008), where Singapore’s conduct and Malaysia’s silence mattered."},
      {t:"Uti possidetis only", why:"It concerns inherited colonial boundaries, which may not be at issue."},
      {t:"Jus cogens", why:"No peremptory norm is engaged."},
      {t:"Innocent passage", why:"That concerns navigation, not title to land."}]},
    {id:"e4u10-q35", lesson:"e4u10-l4", level:3, q:"Two new states emerge from a former colony and disagree over their border. One proposes redrawing it along ethnic lines; the other cites the old administrative line. Which principle supports the second, and what is the main critique?", options:[
-     {t:"Uti possidetis, applied in *Burkina Faso/Mali* (1986); critics say it freezes lines drawn by empires.", ok:true, why:"Right. Its defenders say it prevents wars; its critics stress colonial origins."},
+     {t:"Uti possidetis; critics cite its colonial origins.", ok:true, why:"Right. It was applied in *Burkina Faso/Mali* (1986). Its defenders say it prevents wars; its critics say it freezes lines drawn by empires."},
      {t:"Terra nullius; critics say it is too recent.", why:"Terra nullius is a colonial doctrine for unclaimed land, not a border rule."},
      {t:"The Caroline test; critics say it is too strict.", why:"That concerns self-defence."},
      {t:"Historic rights; critics say UNCLOS replaced them.", why:"That concerns maritime claims."}]},
    {id:"e4u10-q36", lesson:"e4u10-l4", level:2, q:"Why might a long-running island dispute between two states never reach the ICJ?", options:[
-     {t:"Because the Court needs the consent of both parties, through a special agreement, a treaty clause or the optional clause.", ok:true, why:"Yes. Consent is the foundation of its jurisdiction."},
+     {t:"Because the Court needs both parties’ consent.", ok:true, why:"Yes. Consent can come through a special agreement, a treaty clause or the optional clause. It is the foundation of its jurisdiction."},
      {t:"Because the ICJ hears only human rights cases.", why:"It hears all kinds of interstate disputes."},
      {t:"Because island disputes go only to ITLOS.", why:"Sovereignty over land is generally outside UNCLOS; the ICJ has decided many island cases."},
      {t:"Because the Security Council must approve every case.", why:"No such approval is needed."}]},
    /* ---- Lesson 5 ---- */
    {id:"e4u10-q37", lesson:"e4u10-l5", level:1, q:"Which principle did the Nuremberg tribunal establish?", options:[
-     {t:"Individuals, including leaders, can be held criminally responsible under international law.", ok:true, why:"Right: “crimes against international law are committed by men, not by abstract entities.”"},
+     {t:"Individuals can be criminally responsible.", ok:true, why:"Right. Individuals, including leaders, can be held responsible under international law: “crimes against international law are committed by men, not by abstract entities.”"},
      {t:"Only states can violate international law.", why:"Nuremberg rejected this."},
-     {t:"Superior orders are a complete defence.", why:"At most they can reduce punishment."},
+     {t:"Superior orders are a complete defence for soldiers.", why:"At most they can reduce punishment."},
      {t:"Genocide is the gravest crime.", why:"Genocide was not charged; it was defined by treaty only in 1948."}]},
    {id:"e4u10-q38", lesson:"e4u10-l5", level:1, q:"What was historic about the ICTR’s *Akayesu* judgment (1998)?", options:[
      {t:"It was the first international conviction for genocide and held that rape could be an act of genocide.", ok:true, why:"Right. Nuremberg could not convict of genocide, and the ICJ judges states, not people."},
@@ -1416,27 +1478,27 @@ ICA.addUnit({
      {t:"It convicted a former head of state.", why:"Akayesu was a former mayor."},
      {t:"It was decided by the ICJ.", why:"The ICJ does not try individuals."}]},
    {id:"e4u10-q39", lesson:"e4u10-l5", level:3, q:"Crimes are alleged against nationals of State M (not an ICC party) on the territory of State N (a party). M says the ICC cannot touch its nationals. Which response is most accurate?", options:[
-     {t:"Under Article 12 the Court may act on crimes on a state party’s territory, whatever the suspect’s nationality; M’s objection is a political and legal argument some non-parties make.", ok:true, why:"Right. This is the basis of the Myanmar/Bangladesh and other situations; non-parties dispute it."},
+     {t:"The Court may act on crimes on a state party’s territory.", ok:true, why:"Right. Under Article 12 the suspect’s nationality does not matter; M’s objection is a political and legal argument some non-parties make. This is the basis of the Myanmar/Bangladesh and other situations; non-parties dispute it."},
      {t:"M is right: the Court has no jurisdiction over non-party nationals in any circumstances.", why:"Territorial jurisdiction covers them."},
      {t:"The Court needs the ICJ’s permission.", why:"The two courts are independent."},
      {t:"Only the General Assembly can refer the case.", why:"Referrals come from states parties or the Security Council, or the Prosecutor acts proprio motu."}]},
    {id:"e4u10-q40", lesson:"e4u10-l5", level:2, q:"Which describes a hybrid tribunal?", options:[
-     {t:"A court mixing national and international judges and law, often in the affected country, like the ECCC in Cambodia.", ok:true, why:"Yes. Hybrids aim to combine international standards with closeness to the affected society."},
+     {t:"A court mixing national and international elements.", ok:true, why:"Yes. It mixes judges and law, often in the affected country, like the ECCC in Cambodia. Hybrids aim to combine international standards with closeness to the affected society."},
      {t:"A UN court in The Hague with only international judges.", why:"That describes the ICTY."},
      {t:"A national court using only domestic law.", why:"Hybrid courts mix national and international elements."},
      {t:"An NGO-run people’s tribunal.", why:"People’s tribunals have no legal authority; hybrids are official courts."}]},
    {id:"e4u10-q41", lesson:"e4u10-l5", level:2, q:"A state gives notice of withdrawal from the Rome Statute. What follows under Article 127?", options:[
-     {t:"Withdrawal takes effect one year after notice, and the Court keeps jurisdiction over crimes committed while the state was a party.", ok:true, why:"Right, as the Philippines case showed."},
+     {t:"It takes effect a year after notice.", ok:true, why:"Right. The Court keeps jurisdiction over crimes committed while the state was a party, as the Philippines case showed."},
      {t:"Withdrawal is immediate and erases past jurisdiction.", why:"There is a one-year delay and no erasure."},
      {t:"Withdrawal needs the Security Council’s approval.", why:"It is a unilateral treaty act."},
      {t:"Withdrawal is impossible.", why:"Several states have withdrawn, including Burundi and the Philippines."}]},
    {id:"e4u10-q42", lesson:"e4u10-l5", level:1, q:"As of November 2026, which statement about ICC membership is accurate?", options:[
-     {t:"There were 125 states parties; Burkina Faso, Mali, Niger, Venezuela and Chad had given notice of withdrawal taking effect in 2027.", ok:true, why:"Right, according to reports in 2026; Hungary reversed its planned withdrawal and remained a party."},
+     {t:"There were 125 states parties.", ok:true, why:"Right. Burkina Faso, Mali, Niger, Venezuela and Chad had given notice of withdrawal taking effect in 2027, according to reports in 2026; Hungary reversed its planned withdrawal and remained a party."},
      {t:"Every UN member was a party.", why:"China, India, Russia and the United States, among others, are not parties."},
      {t:"Hungary had left the Court in 2026.", why:"Hungary reversed its planned withdrawal in 2026 and remained a party."},
      {t:"The ICC had no states parties in Asia.", why:"Several Asia-Pacific states are parties, including Japan, South Korea and Bangladesh."}]},
    {id:"e4u10-q43", lesson:"e4u10-l5", level:3, q:"Amara writes: “The ICC is a neo-colonial court because it only prosecutes Africans.” What would a balanced seminar response include?", options:[
-     {t:"That the African Union and others made this critique, that several African cases were self-referrals, and that the Court has since opened situations and issued warrants elsewhere.", ok:true, why:"Yes. It attributes the critique and gives the main replies."},
+     {t:"That the AU raised this critique, and that there are replies.", ok:true, why:"Yes. The African Union and others made this critique; several African cases were self-referrals, and the Court has since opened situations and issued warrants elsewhere. It attributes the critique and gives the main replies."},
      {t:"That the claim is simply true and needs no discussion.", why:"Contested claims need attribution and counter-arguments."},
      {t:"That the claim is simply false and was never made seriously.", why:"The critique was made seriously by the AU and scholars."},
      {t:"That the ICC has never prosecuted anyone from Africa.", why:"Factually wrong."}]},
@@ -1446,7 +1508,7 @@ ICA.addUnit({
      {t:"Charlesworth and Chinkin, *The Boundaries of International Law* (2000)", why:"A feminist classic."},
      {t:"Henkin, *How Nations Behave* (1968)", why:"A classic on compliance."}]},
    {id:"e4u10-q45", lesson:"e4u10-l5", level:2, q:"Which idea is most associated with feminist approaches to international law?", options:[
-     {t:"The public/private divide kept much harm to women outside international concern.", ok:true, why:"Right: a core argument of Charlesworth, Chinkin and Wright (1991)."},
+     {t:"The public/private divide hid harm to women.", ok:true, why:"Right. It kept much harm to women outside international concern: a core argument of Charlesworth, Chinkin and Wright (1991)."},
      {t:"Colonialism shaped the concept of sovereignty.", why:"That is TWAIL’s central theme."},
      {t:"States comply when compliance pays.", why:"A rational-choice argument."},
      {t:"Islands generate maritime zones.", why:"A law of the sea rule."}]}

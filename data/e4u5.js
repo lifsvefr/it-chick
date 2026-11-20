@@ -99,7 +99,7 @@ ICA.addUnit({
       {t:"“Colonial officials claimed to bring culture to ‘backward’ peoples.”", b:0, why:"This uses culture as a ladder of development, the first sense, in its imperial form."}
     ]},
     {id:"e4u5-l1-x2", type:"mcq", q:"Two researchers watch the same wedding in Accra. One writes: “Guests stood, clapped and pressed banknotes on the dancers’ foreheads for four minutes.” The other explains what the money-spraying means, who is honoured by it and what guests expect in return. What is the difference?", options:[
-      {t:"The first is thin description; the second is thick description of the meanings involved", ok:true, why:"Right. Thick description adds the shared codes that make the action meaningful to the people involved."},
+      {t:"The first is thin description; the second is thick", ok:true, why:"Right. The second describes the meanings involved: thick description adds the shared codes that make the action meaningful to the people involved."},
       {t:"The first is objective and the second is biased, so only the first is science", why:"Geertz argued that interpretation is not bias but the task: the meaning is part of what happened."},
       {t:"Both are thick, because both are detailed", why:"Detail about movements is still thin. Thickness comes from meanings and context, not length."},
       {t:"The second is a survey and the first is an ethnography", why:"Neither is a survey; both are observations. They differ in how much meaning they record."}
@@ -119,13 +119,13 @@ ICA.addUnit({
       {t:"“What counts as ‘traditional dress’ in Ghana has changed with trade and fashion.”", b:1, why:"Culture changes, borrows and is argued about over time."}
     ]},
     {id:"e4u5-l1-x5", type:"mcq", q:"What did Johnston’s *Cultural Realism* (1995) find about Ming China’s strategic culture?", options:[
-      {t:"Confucian texts praising restraint coexisted with a practical culture that favoured force when China was strong", ok:true, why:"Right. Johnston found a “parabellum” strategic culture close to realism behind the idealised texts."},
+      {t:"Texts praising restraint hid a practical culture of force", ok:true, why:"Right. Confucian texts praising restraint coexisted with a practical culture that favoured force when China was strong. Johnston found a “parabellum” strategic culture close to realism behind the idealised texts."},
       {t:"China always avoided force because Confucian culture forbade it", why:"That is the idealised picture Johnston tested and found incomplete."},
       {t:"Culture had no effect at all, so the concept should be dropped", why:"He argued culture did matter, but that its content was more realist than the classics suggest."},
       {t:"Ming policy copied European strategic thinking", why:"His case is about Chinese texts and decisions, with no European model."}
     ]},
     {id:"e4u5-l1-x6", type:"mcq", q:"In the Asian values debate, what was Kim Dae-jung’s main reply to Lee Kuan Yew (1994)?", options:[
-      {t:"Asian traditions contain democratic ideas, so culture does not rule out democracy in Asia", ok:true, why:"Right. His article’s title asked “Is Culture Destiny?” and argued that the anti-democratic reading of Asia was a myth."},
+      {t:"Asian traditions contain democratic ideas too", ok:true, why:"Right. So culture does not rule out democracy in Asia. His article’s title asked “Is Culture Destiny?” and argued that the anti-democratic reading of Asia was a myth."},
       {t:"Asian cultures are uniform, so they should adopt one regional government", why:"He argued against treating Asia as culturally uniform in an anti-democratic way."},
       {t:"Culture is irrelevant to politics everywhere", why:"He drew on Asian traditions; his claim was about their content, not their irrelevance."},
       {t:"Only economic growth matters, so values debates are pointless", why:"His reply was about values and democracy, not growth alone."}
@@ -221,10 +221,10 @@ ICA.addUnit({
       ["“A white dress signals a wedding in some places and mourning in others.”","Constructionist","Meaning depends on shared, changeable codes."]
     ]},
     {id:"e4u5-l2-x2", type:"mcq", q:"An airline advert shows a smiling flight attendant in national dress bowing to a passenger. In Barthes’ terms, which is the connotation, or myth?", options:[
-      {t:"That the airline, and the nation, offer timeless, gracious hospitality", ok:true, why:"Right. The second-order meaning, felt as natural, is about the nation’s character and the brand."},
+      {t:"That the nation offers timeless, gracious hospitality", ok:true, why:"Right. The second-order meaning, felt as natural, is about the nation’s character and the brand."},
       {t:"That a woman in a dress is bowing", why:"That is the denotation, the first-level meaning of the image."},
       {t:"That the photo is made of pixels or ink", why:"That is the material signifier, not a meaning at either level."},
-      {t:"That the advert is false advertising", why:"A myth in Barthes’ sense is not a lie; it is a meaning that hides its history."}
+      {t:"That the advert is false advertising aimed at tourists", why:"A myth in Barthes’ sense is not a lie; it is a meaning that hides its history."}
     ]},
     {id:"e4u5-l2-x3", type:"sort", q:"A state broadcaster’s report presents a new dam as national progress. Which reading position does each viewer take?", buckets:["Dominant","Negotiated","Oppositional"], items:[
       {t:"Ana feels proud: the dam proves the country is modernising.", b:0, why:"She takes the preferred meaning as intended."},
@@ -234,7 +234,7 @@ ICA.addUnit({
       {t:"Mei, an environmental campaigner, calls the report spin and argues the country should never have built the dam.", b:2, why:"She rejects the frame of progress and reads the report within an alternative framework."}
     ]},
     {id:"e4u5-l2-x4", type:"mcq", q:"What did Liebes and Katz’s study of *Dallas* (1990) most directly challenge?", options:[
-      {t:"The assumption that imported television automatically spreads the exporter’s values", ok:true, why:"Right. Viewers from different groups negotiated and reworked the show’s meanings."},
+      {t:"The belief that imported TV automatically spreads its values", ok:true, why:"Right. Imported television does not automatically spread the exporter’s values: viewers from different groups negotiated and reworked the show’s meanings."},
       {t:"The idea that people watch television at all", why:"Their groups watched closely; the issue was how they read it."},
       {t:"The claim that American shows were exported", why:"Export was the starting fact; the question was what it did."},
       {t:"Hall’s idea that audiences decode from social positions", why:"Their findings support Hall’s point that decoding depends on position."}
@@ -340,9 +340,9 @@ ICA.addUnit({
       {t:"“Mexican border cities produce art that is neither simply Mexican nor American.”", b:2, why:"García Canclini’s hybrid cultures."}
     ]},
     {id:"e4u5-l3-x2", type:"mcq", q:"Which point is part of Tomlinson’s critique of the cultural imperialism thesis (1991)?", options:[
-      {t:"It assumes audiences passively absorb what they watch and that nations have authentic cultures to lose", ok:true, why:"Right. Tomlinson questioned both the passive audience and the idea of a pure national culture."},
+      {t:"It assumes passive audiences and pure national cultures", ok:true, why:"Right. Tomlinson questioned both the passive audience and the idea of a pure national culture."},
       {t:"It exaggerates how many American films are exported", why:"His critique was conceptual, about what the flows mean, not mainly about the size of exports."},
-      {t:"It ignores the power of military alliances", why:"The thesis already stressed links to US power; Tomlinson’s concern was culture and audiences."},
+      {t:"It ignores the power of military alliances behind culture", why:"The thesis already stressed links to US power; Tomlinson’s concern was culture and audiences."},
       {t:"It proves that culture never travels", why:"Tomlinson accepted that culture travels; he questioned what that does."}
     ]},
     {id:"e4u5-l3-x3", type:"match", q:"Match each example to Appadurai’s scape.", pairs:[
@@ -470,15 +470,15 @@ ICA.addUnit({
       {t:"Methodological nationalism", why:"That is a research habit, not an experience of class in a field."}
     ]},
     {id:"e4u5-l4-x4", type:"mcq", q:"What did Peterson and Kern (1996) find about taste among high-status Americans?", options:[
-      {t:"They had become omnivores, liking many genres, so distinction lay in breadth", ok:true, why:"Right. The cultural omnivore challenged the snob-versus-mass picture of taste."},
+      {t:"They had become omnivores, liking many genres", ok:true, why:"Right. Distinction lay in breadth. The cultural omnivore challenged the snob-versus-mass picture of taste."},
       {t:"They liked only opera and classical music", why:"That is the older “snob” picture their findings questioned."},
       {t:"Taste no longer had any link to status", why:"They found a new link: breadth, rather than exclusive highbrow taste."},
       {t:"Their tastes were identical to those of French elites in the 1960s", why:"Their point was that patterns had changed."}
     ]},
     {id:"e4u5-l4-x5", type:"mcq", q:"Pouliot (2010) used Bourdieu to study NATO–Russia relations. What did habitus help him explain?", options:[
-      {t:"How diplomats’ taken-for-granted sense of rank and status shaped which kinds of cooperation seemed possible", ok:true, why:"Right. Practices and dispositions limited cooperation even when interests overlapped."},
+      {t:"How diplomats’ sense of rank limited cooperation", ok:true, why:"Right. Diplomats’ taken-for-granted sense of rank and status shaped which kinds of cooperation seemed possible. Practices and dispositions limited cooperation even when interests overlapped."},
       {t:"Why military budgets rose", why:"His focus was on diplomatic practice and dispositions, not budgets."},
-      {t:"How taste in music divided the two sides", why:"Habitus is broader than taste; his case is about diplomatic practice."},
+      {t:"How differences in taste in music divided the two sides", why:"Habitus is broader than taste; his case is about diplomatic practice."},
       {t:"Why Russia joined the European Union", why:"Russia has not joined the EU; the option is false."}
     ]},
     {id:"e4u5-l4-x6", type:"match", q:"Match each thinker to their idea about cosmopolitanism.", pairs:[
@@ -580,10 +580,10 @@ ICA.addUnit({
       {t:"A study follows fans who turn a film gesture into a protest symbol.", b:3, why:"Fans act politically with popular culture: a site of action."}
     ]},
     {id:"e4u5-l5-x2", type:"mcq", q:"What is the main claim of Grayson, Davies and Philpott’s “Pop Goes IR?” (2009)?", options:[
-      {t:"Popular culture and world politics form a continuum, bound together rather than separate", ok:true, why:"Right. Meanings and practices flow both ways between them."},
+      {t:"Popular culture and world politics form a continuum", ok:true, why:"Right. They are bound together rather than separate: meanings and practices flow both ways between them."},
       {t:"Popular culture has no political content", why:"The article argues the opposite."},
       {t:"Only state-funded films matter for IR", why:"The continuum includes all kinds of popular culture."},
-      {t:"IR should replace theory with film criticism", why:"They propose studying the link, not abandoning IR theory."}
+      {t:"IR should replace its theories with film and TV criticism", why:"They propose studying the link, not abandoning IR theory."}
     ]},
     {id:"e4u5-l5-x3", type:"mcq", q:"The 1956 American version of *Godzilla* cut or trimmed many of the 1954 film’s political themes. In circuit-of-culture terms, what does this show?", options:[
       {t:"Production and regulation for a new market changed what the text represented", ok:true, why:"Right. A new production context reshaped the representation that audiences received."},
@@ -610,9 +610,9 @@ ICA.addUnit({
       "“",{t:"The film was the highest-grossing domestic release of its year",flag:false,why:"A checkable fact about reception is fine, if sourced."},". ",{t:"It therefore caused a wave of nationalism",flag:true,why:"Box-office success is not evidence of effects on attitudes; you need audience research."},". ",{t:"Its villains are foreign mercenaries, and the hero rescues fellow citizens abroad",flag:false,why:"An accurate description from close reading is fine."},". ",{t:"Every viewer understood it as a message about the government’s foreign policy",flag:true,why:"Ignores polysemy and Hall’s reading positions."},". ",{t:"Clearly the director intended this, so the case is closed",flag:true,why:"Intention does not settle meaning, and the claim is not supported."},".”"
     ]},
     {id:"e4u5-l5-x7", type:"mcq", q:"After the 2014 coup in Thailand, protesters used the three-finger salute from *The Hunger Games*. What does the case best show?", options:[
-      {t:"A sign from popular culture can be taken up and given new political meaning by its users", ok:true, why:"Right. Fans and protesters turned a fictional gesture into a real political symbol."},
+      {t:"Users can give a pop-culture sign new political meaning", ok:true, why:"Right. Fans and protesters turned a fictional gesture into a real political symbol."},
       {t:"The film’s makers planned the Thai protests", why:"There is no evidence of that; meaning was made by the users."},
-      {t:"Popular culture only matters in Western democracies", why:"The case is from Southeast Asia and spread across the region."},
+      {t:"Popular culture only matters politically in Western democracies", why:"The case is from Southeast Asia and spread across the region."},
       {t:"Governments ignore popular culture", why:"The military government warned that displaying the salute could lead to arrest."}
     ]}
    ],
@@ -629,6 +629,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u5-q02","e4u5-q06","e4u5-q11","e4u5-q15","e4u5-q19","e4u5-q22","e4u5-q26","e4u5-q30","e4u5-q33","e4u5-q37","e4u5-q41","e4u5-q44"],
+  cpBank:[
+   {id:"e4u5-cp01", lesson:"e4u5-l1", level:1, q:"Before a project in Bangkok, a manager reads Thailand’s Hofstede score for power distance and decides his new colleague, Niran, will never question a boss. What is the main problem?", options:[
+     {t:"Hofstede’s scores came from fieldwork in Thai street markets rather than in offices", why:"The data came from surveys of employees of one multinational company, IBM, around 1967–73, not from market fieldwork."},
+     {t:"The scores are national averages of survey answers and can’t predict one person", ok:true, why:"Right. Hofstede himself warned that the scores describe national averages, not individuals. Using them to predict one colleague treats culture as a fixed essence."},
+     {t:"Power distance measures income inequality in a country, not attitudes to authority", why:"Power distance is a dimension of survey answers about authority, not an income measure. The problem is applying an average to one person."},
+     {t:"Nothing: national scores predict individual behaviour well", why:"That is exactly the move Hofstede warned against, and critics such as McSweeney add that even national uniformity is doubtful."}]},
+   {id:"e4u5-cp02", lesson:"e4u5-l1", level:2, q:"Reza reads a royal festival’s symbols as a shared story the whole society tells about itself. He never asks who decides what the symbols mean, or what happens to people who reject them. Which critique fits?", options:[
+     {t:"Ryle’s point that a thin description records only bodily movements", why:"Reza’s reading is about meanings, so it is thick, not thin. The gap is power, not depth of description."},
+     {t:"Swidler’s point that culture is a toolkit people draw on for action", why:"The toolkit idea is about how people pick cultural tools for action. It is not mainly a critique of reading symbols without power."},
+     {t:"Williams’s point that culture is ordinary, not only for the elite", why:"Williams argued working people’s culture is as real as the elite’s. Reza’s problem is ignoring authority and punishment, a different issue."},
+     {t:"Asad’s critique of Geertz: symbols read as free of power and history", ok:true, why:"Right. Asad asked who authorises a meaning and who is punished for rejecting it, which is exactly what Reza leaves out."}]},
+   {id:"e4u5-cp03", lesson:"e4u5-l2", level:2, q:"A travel guide says: “The people of this island are naturally gentle, spiritual and never in a hurry.” A reader says this is harmless because the traits are positive. What is the best reply?", options:[
+     {t:"It still essentialises: it fixes a whole people into a few traits, and can be used to judge those who don’t fit", ok:true, why:"Right. This combines Lesson 1 (essentialism, culture as a fixed inner nature) with Lesson 2 (Hall: stereotyping reduces, exaggerates and fixes). Positive stereotypes do this too."},
+     {t:"It is harmless, because only negative images count as stereotypes", why:"A stereotype is any fixed picture applied to individuals. “Hard-working” or “spiritual” still reduce people to a type."},
+     {t:"It is fine if most islanders like the description", why:"Liking a description doesn’t make it accurate for every person. Societies sometimes present themselves in exotic terms (self-Orientalism)."},
+     {t:"It is a problem only because it is untrue, as Adichie says", why:"Adichie says the problem with stereotypes is not that they are untrue “but that they are incomplete”."}]},
+   {id:"e4u5-cp04", lesson:"e4u5-l2", level:1, q:"White clothing signals mourning at funerals in some societies and celebration at weddings in others. What does this illustrate in Saussure’s terms?", options:[
+     {t:"Meaning lies in the object itself, and words and images simply mirror it", why:"That is the reflective view, which Hall rejected. The same object carries different meanings in different codes."},
+     {t:"Meaning is whatever the person wearing white intends", why:"That is the intentional view. Meaning comes from shared codes, not one person’s intention."},
+     {t:"The link between signifier and signified is arbitrary, set by shared codes", ok:true, why:"Right. Saussure showed that the link between a sound or image and a concept is arbitrary, just as red means luck in one setting and danger in another."},
+     {t:"White clothing here is a myth in Barthes’ sense, which means a deliberate lie", why:"Barthes’ myth is a second-level meaning that feels natural, not a lie. And the point here is simpler: the basic sign is arbitrary."}]},
+   {id:"e4u5-cp05", lesson:"e4u5-l2", level:2, q:"Sofía studies a 1950s Belgian radio comedy about a happy Brussels family. She reads it alongside records of the Congo mining firm that pays the father’s salary, which the programme barely mentions. What is she doing?", options:[
+     {t:"Studying imaginative geography", why:"Imaginative geography is dividing the world into “our” and “their” space. Sofía is reading a text together with the colonial world it keeps offstage."},
+     {t:"Contrapuntal reading", ok:true, why:"Right. In *Culture and Imperialism* Said read *Mansfield Park* alongside the Antigua plantation that funds the house. Sofía applies the same method to a radio programme and the colony behind it."},
+     {t:"Testing Hall’s decoding positions", why:"Decoding positions are about how audiences read a media message. Sofía is reading the programme against historical records, not studying audiences."},
+     {t:"Writing a thick description", why:"Thick description reconstructs the meanings of an action for the people involved. Sofía is uncovering the empire behind a text."}]},
+   {id:"e4u5-cp06", lesson:"e4u5-l2", level:3, q:"Western European travel writers describe a nearby European region as half-civilised: European, but not fully. Kenji calls this simply Orientalism. Which refinement does Maria Todorova offer?", options:[
+     {t:"Occidentalism: the region’s own stereotyped and simplified images of the West", why:"Occidentalism is about images of “the West”. Here Western writers are picturing their eastern neighbours."},
+     {t:"Techno-Orientalism: the region shown as futuristic, high-tech but inhuman", why:"Techno-Orientalism describes images of Japan as futuristic and cold. The writers here picture the region as backward, not futuristic."},
+     {t:"It is identical to Orientalism, so no refinement is needed", why:"Todorova argued it differs, which is why she gave it its own name."},
+     {t:"Balkanism: the region seen as an incomplete self, not an opposite other", ok:true, why:"Right. Todorova argued that Western Europe pictured the Balkans as a half-civilised version of itself, which is different from Orientalism’s distant, opposite “Orient”."}]},
+   {id:"e4u5-cp07", lesson:"e4u5-l3", level:3, q:"A Nigerian singer’s songs top charts worldwide on a US-owned streaming platform, which keeps the listening data and much of the advertising revenue. Amina says this proves global cultural inequality is over. What is the best response?", options:[
+     {t:"She is right: contra-flows end inequality in global media", why:"The lesson lists this as a misconception. Hits from Lagos or Seoul still often travel through platforms owned elsewhere."},
+     {t:"It is Schiller’s media imperialism, because the songs spread American values around the world", why:"The content is Nigerian, so this isn’t American values spreading. The inequality lies in who owns the channel."},
+     {t:"A contra-flow, but in Jin’s “platform imperialism” data and revenue go to the owner", ok:true, why:"Right. Content can come from anywhere, but a few platform companies control the channels and gain the data and advertising revenue."},
+     {t:"It shows cultural proximity, because listeners prefer foreign songs", why:"Cultural proximity means audiences prefer national, then regional, content first. A global hit doesn’t show that, and it isn’t the point here."}]},
+   {id:"e4u5-cp08", lesson:"e4u5-l3", level:2, q:"A luxury hotel chain markets its “fusion” menus as proof that its guests are open, worldly people. Which reading combines two of the unit’s critiques?", options:[
+     {t:"It is colonial mimicry, “almost the same, but not quite”, as Bhabha described", why:"Bhabha’s mimicry is about colonised subjects copying colonisers. A hotel’s menu marketing is a different situation."},
+     {t:"Hybridity sold by marketers, with “cosmopolitan” taste used as cultural capital", ok:true, why:"Right. This combines Lesson 3 (Kraidy: hybridity can be marketed and hide who profits) with Lesson 4 (Igarashi and Saito: cosmopolitan openness works as cultural capital)."},
+     {t:"It is cultural homogenisation, because every national cuisine is becoming the same", why:"Fusion menus mix cuisines rather than replace them with one. The critique is about selling mixture as status."},
+     {t:"It is methodological nationalism, treating the nation as a container", why:"Methodological nationalism treats the nation-state as society’s natural container. It doesn’t describe marketing a fusion menu."}]},
+   {id:"e4u5-cp09", lesson:"e4u5-l4", level:2, q:"A family in Kathmandu sells land to pay for their son’s master’s degree abroad. Years later, the degree helps him win a well-paid job. How would Bourdieu describe this?", options:[
+     {t:"Social capital turned into symbolic capital", why:"No network or prestige is the main resource here. The family spends money on a qualification."},
+     {t:"Embodied cultural capital turned into objectified cultural capital", why:"Objectified capital is things such as books or instruments. The key resource here is a degree, which is institutionalised."},
+     {t:"No conversion, because a degree is a form of economic capital", why:"A degree is institutionalised cultural capital. Its value comes from recognition by schools and employers, not from being money."},
+     {t:"Economic capital converted into institutionalised cultural capital, then back into economic capital", ok:true, why:"Right. Money buys schooling (economic to cultural), and the diploma opens a job (cultural to economic). Conversion takes time and money, which is how advantage passes on."}]},
+   {id:"e4u5-cp10", lesson:"e4u5-l4", level:3, q:"Kai studies “the culture of Manila” using only national statistics, treating the Philippines as a sealed container. He ignores remittances from workers abroad and the foreign dramas residents stream. Which pair of ideas names what he misses?", options:[
+     {t:"Beck’s warning against methodological nationalism, and Appadurai’s ethnoscapes, financescapes and mediascapes", ok:true, why:"Right. This combines Lesson 4 and Lesson 3: Beck criticised treating the nation as society’s natural container, and Appadurai’s scapes name the flows of people, money and images Kai leaves out."},
+     {t:"Bourdieu’s habitus and Lamont’s symbolic boundaries", why:"These are about class dispositions and how groups draw lines. They don’t address treating the nation as a sealed container."},
+     {t:"Ritzer’s McDonaldization and Schiller’s media imperialism", why:"These predict homogenisation. Kai’s problem is ignoring cross-border flows altogether, not predicting sameness."},
+     {t:"Geertz’s thick description and Ryle’s wink", why:"These are about interpreting meanings in detail. Kai’s gap is about scale and flows across borders."}]},
+   {id:"e4u5-cp11", lesson:"e4u5-l5", level:1, q:"A researcher studies contracts in which a defence ministry lends jets and advisers to a film studio and asks for script changes in return. Which idea fits this research best?", options:[
+     {t:"Peterson and Kern’s thesis of the cultural omnivore", why:"The omnivore thesis is about high-status people liking many genres. It says nothing about deals between armed forces and studios."},
+     {t:"Der Derian’s MIME-NET of defence, media and entertainment", ok:true, why:"Right. Der Derian called the links between defence, media and entertainment the military–industrial–media–entertainment network (MIME-NET). The contracts are exactly such links."},
+     {t:"Dittmer’s popular geopolitics of friends, enemies and danger", why:"Popular geopolitics reads the texts themselves for how they map the world. This study looks at the institutional deals behind a film, not at its map of enemies."},
+     {t:"Glocalisation: the global adapted to local tastes", why:"Glocalisation is about global products adapted to local settings. The contracts are about armed forces shaping entertainment."}]},
+   {id:"e4u5-cp12", lesson:"e4u5-l5", level:3, q:"A state-funded war film’s makers intended a patriotic message. Viewers abroad mock it as propaganda. Viewers at home accept its patriotism but say it ignores soldiers from their own region. Which conclusion fits the unit?", options:[
+     {t:"The film’s meaning is what its makers intended, so every audience reads it as patriotic", why:"Hall showed that encoding doesn’t fix decoding. The makers’ intention is one moment in the circuit, not the meaning."},
+     {t:"Because a state funded it, it is propaganda and nothing else, whatever viewers do", why:"The lesson lists this as a misconception: funded texts can be ambiguous, popular for other reasons, or read against the grain."},
+     {t:"Audiences can make a text mean anything, so the preferred reading has no weight at all", why:"Hall insisted that the preferred reading carries weight: readings are free, but not equally easy."},
+     {t:"Decoding varies: viewers abroad read it oppositionally, and home viewers negotiate it", ok:true, why:"Right. This combines Lesson 2 (encoding/decoding) with Lesson 5 (reception research). Mocking it as propaganda rejects its frame (oppositional). Accepting the patriotism but adapting it to local experience is a negotiated reading. Claims about the film’s effects need this kind of audience evidence."}]},
+  ],
   codex:[
    {id:"cultural-turn-ir", title:"The cultural turn in IR", aka:["Culture in international relations","Return of culture and identity"], tags:["international relations","culture","theory"],
     summary:"How culture, identity and meaning moved from the margins of IR to the centre of many debates from the 1990s, and the three roles culture can play in an argument: cause, context and resource.",
@@ -1078,19 +1140,19 @@ ICA.addUnit({
      {t:"Gabriel Almond", why:"Almond, with Verba, studied political culture in 1963."}
    ]},
    {id:"e4u5-q06", lesson:"e4u5-l1", level:3, q:"Kenji’s thesis argues that a country’s defence policy follows its “culture of restraint”. A reviewer asks whether culture is a cause, a context or a resource in his argument. Why does the question matter?", options:[
-     {t:"Each role needs different evidence: a cause must be shown to push choices; a context to shape what is thinkable; a resource to be invoked by actors", ok:true, why:"Correct. Saying which role culture plays tells the reader what evidence will test the claim."},
+     {t:"Each role needs different evidence to test the claim", ok:true, why:"Correct. A cause must be shown to push choices; a context to shape what is thinkable; a resource to be invoked by actors. Saying which role culture plays tells the reader what evidence will test the claim."},
      {t:"It does not matter, because culture explains everything", why:"An argument that explains everything cannot be tested."},
      {t:"Only causes count in IR, so the other roles are irrelevant", why:"Interpretive scholars stress context and constitution; all three roles appear in good research."},
      {t:"Because culture can only be a resource, never a cause", why:"Scholars disagree; the point is to say which claim you make."}
    ]},
    {id:"e4u5-q07", lesson:"e4u5-l1", level:2, q:"What did Johnston’s *Cultural Realism* (1995) conclude about Ming China?", options:[
-     {t:"A practical “parabellum” strategic culture favouring force when strong lay behind texts praising restraint", ok:true, why:"Correct. Johnston found culture mattered, but its content was close to realism."},
+     {t:"A culture favouring force when strong", ok:true, why:"Correct. This practical “parabellum” strategic culture lay behind texts praising restraint. Johnston found culture mattered, but its content was close to realism."},
      {t:"Confucian pacifism prevented any use of force", why:"Johnston found the opposite in practice."},
      {t:"Strategic culture does not exist", why:"He found a distinct strategic culture; its content surprised readers."},
      {t:"Ming China copied Mongol strategy unchanged", why:"That was not his finding."}
    ]},
    {id:"e4u5-q08", lesson:"e4u5-l1", level:2, q:"Which statement about the Asian values debate is accurate and neutral?", options:[
-     {t:"Some Asian leaders promoted the idea in the 1990s, and other Asian voices, such as Kim Dae-jung, rejected it", ok:true, why:"Correct. The debate was internal to Asia as well as between Asia and the West."},
+     {t:"Some Asian leaders promoted it; other Asian voices rejected it", ok:true, why:"Correct. Leaders promoted the idea in the 1990s, and others, such as Kim Dae-jung, rejected it. The debate was internal to Asia as well as between Asia and the West."},
      {t:"All Asian governments agreed that democracy is foreign to Asia", why:"Asian governments and leaders disagreed sharply."},
      {t:"The debate proved that culture is destiny", why:"Whether culture is destiny was the very point in dispute."},
      {t:"It was only an argument among Western scholars", why:"Asian leaders and thinkers led both sides."}
@@ -1109,8 +1171,8 @@ ICA.addUnit({
      {t:"Biology", why:"Hall’s point is that meaning is cultural, not biological."}
    ]},
    {id:"e4u5-q11", lesson:"e4u5-l2", level:2, q:"A tourism poster shows a smiling farmer in a rice field at sunrise, with the slogan “Timeless hospitality”. In Barthes’ terms, which is the myth?", options:[
-     {t:"That the country is unchanging, gentle and welcoming by nature", ok:true, why:"Correct. The second-order meaning presents a historical image as natural and timeless."},
-     {t:"That a farmer is standing in a field", why:"That is the denotation, the first-level meaning."},
+     {t:"That the country is gentle and welcoming by nature", ok:true, why:"Correct. The second-order meaning presents a historical image as natural and timeless."},
+     {t:"That a farmer is standing in a rice field at sunrise", why:"That is the denotation, the first-level meaning."},
      {t:"That the poster uses colour ink", why:"That is the material signifier."},
      {t:"That the poster is lying", why:"Barthes’ myth is not a lie but a naturalised meaning."}
    ]},
@@ -1121,38 +1183,38 @@ ICA.addUnit({
      {t:"Production, consumption and regulation", why:"These are moments in the circuit of culture."}
    ]},
    {id:"e4u5-q13", lesson:"e4u5-l2", level:3, q:"Priya studies how viewers in three countries discuss an international news channel’s coverage of a summit. Some accept its framing, some accept it but complain about their country’s portrayal, and some call it propaganda. What does this pattern most support?", options:[
-     {t:"Hall’s point that decoding depends on viewers’ social and national positions", ok:true, why:"Correct. The three responses map onto dominant, negotiated and oppositional readings."},
+     {t:"Hall’s point that decoding depends on social position", ok:true, why:"Correct. Viewers’ social and national positions shape their readings. The three responses map onto dominant, negotiated and oppositional readings."},
      {t:"The media imperialism thesis that audiences absorb what they see", why:"The variety of readings challenges passive absorption."},
      {t:"Barthes’ claim that all images are lies", why:"Barthes did not say that, and the study is about reception."},
      {t:"That the channel encoded no preferred reading", why:"Viewers recognised a framing; they reacted to it differently."}
    ]},
    {id:"e4u5-q14", lesson:"e4u5-l2", level:2, q:"What did Liebes and Katz’s *The Export of Meaning* (1990) study?", options:[
-     {t:"How groups in Israel and the United States retold and judged the soap *Dallas* differently", ok:true, why:"Correct. The study found active, negotiated readings of an exported show."},
+     {t:"Different groups’ readings of *Dallas*", ok:true, why:"Correct. Groups in Israel and the United States retold and judged the soap differently. The study found active, negotiated readings of an exported show."},
      {t:"The share of US films in world box offices", why:"Their study was about audiences’ readings, not market share."},
      {t:"Hollywood images of Arabs", why:"That was Jack Shaheen’s *Reel Bad Arabs*."},
      {t:"Paris Match covers", why:"That was Barthes."}
    ]},
    {id:"e4u5-q15", lesson:"e4u5-l2", level:2, q:"Which is one of Said’s three senses of “Orientalism”?", options:[
-     {t:"A corporate institution for dealing with the Orient: describing, teaching, settling and ruling it", ok:true, why:"Correct. Alongside an academic field and a style of thought."},
+     {t:"A corporate institution for dealing with the Orient", ok:true, why:"Correct. It described, taught, settled and ruled the Orient. The other two senses are an academic field and a style of thought."},
      {t:"Any Western interest in Asian art", why:"Said criticised a style of thought bound up with power, not interest as such."},
      {t:"A school of Asian philosophy", why:"Orientalism in Said’s sense is about Western representations."},
-     {t:"An economic theory of trade with Asia", why:"Said’s concept is cultural and political, not a trade theory."}
+     {t:"An economic theory of Western trade and investment in Asia", why:"Said’s concept is cultural and political, not a trade theory."}
    ]},
    {id:"e4u5-q16", lesson:"e4u5-l2", level:2, q:"Sadiq Jalal al-Azm (1981) warned of “Orientalism in reverse”. What did he mean?", options:[
-     {t:"Critiques of Orientalism can essentialise “the West” and simply reverse the binary", ok:true, why:"Correct. Al-Azm feared a mirror-image essentialism."},
-     {t:"Western scholars should stop studying Asia", why:"That was not his argument."},
+     {t:"Critiques can essentialise “the West” in turn", ok:true, why:"Correct. Critiques of Orientalism can simply reverse the binary. Al-Azm feared a mirror-image essentialism."},
+     {t:"Western scholars should stop studying Asia and the Middle East", why:"That was not his argument."},
      {t:"Orientalism was a German invention", why:"Irwin discussed German scholars; al-Azm’s point was about essentialism."},
      {t:"Said was right in every respect", why:"Al-Azm was a critic of parts of Said’s argument."}
    ]},
    {id:"e4u5-q17", lesson:"e4u5-l2", level:3, q:"Dmitri notices that a government’s media portray “the West” as morally decadent, while opposition writers in the same country portray it as a model of freedom. Which idea best describes this?", options:[
-     {t:"Occidentalism in Xiaomei Chen’s sense: images of the West used for domestic political purposes", ok:true, why:"Correct. Both the state and its critics use images of the West to argue about home politics."},
-     {t:"Orientalism in Said’s sense", why:"Said’s Orientalism concerns Western images of the Orient."},
+     {t:"Occidentalism in Xiaomei Chen’s sense", ok:true, why:"Correct. Images of the West are used for domestic political purposes: both the state and its critics use images of the West to argue about home politics."},
+     {t:"Orientalism in Edward Said’s sense of the term", why:"Said’s Orientalism concerns Western images of the Orient."},
      {t:"Techno-Orientalism", why:"That concerns images of East Asia as hyper-technological."},
      {t:"Cultural proximity", why:"That is about audience preferences for nearby content."}
    ]},
    {id:"e4u5-q18", lesson:"e4u5-l2", level:1, q:"According to Hall’s “The Spectacle of the ‘Other’” (1997), what does stereotyping do?", options:[
-     {t:"Reduces people to a few traits, fixes them, and draws a boundary between “normal” and “other”", ok:true, why:"Correct. Hall linked stereotyping to power and boundary-making."},
-     {t:"Gives an accurate average of a group", why:"Stereotypes simplify and fix; they are not accurate averages."},
+     {t:"Reduces and fixes people, and marks them as “other”", ok:true, why:"Correct. It reduces people to a few traits and draws a boundary between “normal” and “other”. Hall linked stereotyping to power and boundary-making."},
+     {t:"Gives an accurate summary of a group’s average traits", why:"Stereotypes simplify and fix; they are not accurate averages."},
      {t:"Only happens in advertising", why:"Hall found it across media, science and politics."},
      {t:"Is harmless when positive", why:"Positive stereotypes still reduce and fix people."}
    ]},
@@ -1176,9 +1238,9 @@ ICA.addUnit({
      {t:"It blames America for the spread of capitalism and modernity", why:"This is one of his criticisms."}
    ]},
    {id:"e4u5-q22", lesson:"e4u5-l3", level:3, q:"Ana compares a global coffee chain’s menus: in Japan it sells seasonal sakura drinks, in India it offers locally inspired snacks, but its logo, store design and loyalty app are identical everywhere. How would Robertson and Ritzer each read this?", options:[
-     {t:"Robertson sees glocalisation (global and local together); Ritzer stresses grobalisation (the standard core imposed everywhere)", ok:true, why:"Correct. The same case supports both readings; the debate is about which matters more."},
+     {t:"Robertson sees glocalisation; Ritzer stresses grobalisation", ok:true, why:"Correct. Glocalisation is global and local together; grobalisation is the standard core imposed everywhere. The same case supports both readings; the debate is about which matters more."},
      {t:"Both see pure homogenisation", why:"Robertson’s glocalisation stresses the local adaptations."},
-     {t:"Both see hybridity in Bhabha’s colonial sense", why:"Bhabha’s concept concerns colonial culture, not menu adaptation."},
+     {t:"Both see hybridity in the colonial sense used by Homi Bhabha", why:"Bhabha’s concept concerns colonial culture, not menu adaptation."},
      {t:"Neither would discuss a company", why:"Both used companies as key examples."}
    ]},
    {id:"e4u5-q23", lesson:"e4u5-l3", level:2, q:"Remittances sent from Gulf states to families in Kerala are, in Appadurai’s terms, part of which scape?", options:[
@@ -1188,19 +1250,19 @@ ICA.addUnit({
      {t:"Technoscape", why:"Technoscapes are flows of technology."}
    ]},
    {id:"e4u5-q24", lesson:"e4u5-l3", level:1, q:"What did Watson’s *Golden Arches East* (1997) find?", options:[
-     {t:"Customers in East Asian cities reshaped how McDonald’s was used, as much as it reshaped them", ok:true, why:"Correct. Watson stressed localisation."},
+     {t:"Customers reshaped how McDonald’s was used", ok:true, why:"Correct. Customers in East Asian cities reshaped McDonald’s as much as it reshaped them. Watson stressed localisation."},
      {t:"McDonald’s failed in every East Asian city", why:"The restaurants were popular."},
      {t:"Fast food erased local food cultures entirely", why:"That is the homogenisation claim his study complicated."},
      {t:"Only prices differed between cities", why:"Uses of space and meaning differed widely."}
    ]},
    {id:"e4u5-q25", lesson:"e4u5-l3", level:2, q:"What did Bhabha mean by colonial mimicry being “almost the same, but not quite”?", options:[
-     {t:"The colonised who copy the coloniser expose a gap that unsettles and mocks colonial authority", ok:true, why:"Correct. Mimicry produces ambivalence, not simple obedience."},
+     {t:"The copying exposes a gap that unsettles colonial authority", ok:true, why:"Correct. When the colonised copy the coloniser, the gap unsettles and mocks colonial authority. Mimicry produces ambivalence, not simple obedience."},
      {t:"Colonised people always failed to learn the coloniser’s language", why:"The point is the unsettling gap, not failure."},
      {t:"Copying is always a form of cultural imperialism", why:"Bhabha stressed the subversive ambivalence of mimicry."},
      {t:"Colonial cultures were pure", why:"Bhabha argued the opposite."}
    ]},
    {id:"e4u5-q26", lesson:"e4u5-l3", level:3, q:"Oluwaseun argues: “Nollywood and K-pop prove cultural imperialism is over.” Which response is strongest?", options:[
-     {t:"Contra-flows are real, but distribution and platforms are often owned elsewhere, so ask who controls which part of the flow", ok:true, why:"Correct. Thussu’s contra-flows coexist with concentrated ownership (Jin’s platform argument)."},
+     {t:"Contra-flows are real, but ask who controls them", ok:true, why:"Correct. Distribution and platforms are often owned elsewhere, so ask who controls which part of the flow. Thussu’s contra-flows coexist with concentrated ownership (Jin’s platform argument)."},
      {t:"Nollywood and K-pop are not popular abroad", why:"Both have large international audiences."},
      {t:"Cultural imperialism was never discussed by scholars", why:"It was a major thesis (Schiller and others)."},
      {t:"Popularity proves political influence", why:"Popularity does not by itself show influence."}
@@ -1225,44 +1287,44 @@ ICA.addUnit({
      {t:"Objectified cultural capital", why:"Objectified capital is cultural goods such as books or art."}
    ]},
    {id:"e4u5-q30", lesson:"e4u5-l4", level:3, q:"Mei, a first-generation student from a rural area, joins a diplomacy training programme. She scores well on exams but struggles with the informal style of receptions, and colleagues describe her as “not a natural”. Which analysis is most Bourdieusian?", options:[
-     {t:"The field rewards a habitus that others acquired at home, and calling it “natural” is symbolic violence", ok:true, why:"Correct. Learned dispositions are misrecognised as innate talent."},
+     {t:"The field rewards a habitus others learned at home", ok:true, why:"Correct. Calling it “natural” is symbolic violence: learned dispositions are misrecognised as innate talent."},
      {t:"She lacks economic capital, so nothing else matters", why:"The case is about habitus and recognition, not money alone."},
      {t:"Receptions are irrelevant to diplomacy", why:"In this field they are where capital is displayed and judged."},
      {t:"She is a cultural omnivore", why:"Omnivorousness concerns broad taste, not fit with a field."}
    ]},
    {id:"e4u5-q31", lesson:"e4u5-l4", level:2, q:"How did Pouliot (2010) use Bourdieu in IR?", options:[
-     {t:"To show how diplomats’ habitus and sense of rank shaped NATO–Russia cooperation", ok:true, why:"Correct. A key work of the practice turn."},
+     {t:"To show how diplomats’ habitus shaped NATO–Russia ties", ok:true, why:"Correct. Their habitus and sense of rank shaped NATO–Russia cooperation. A key work of the practice turn."},
      {t:"To measure GDP growth in Russia", why:"His study is about diplomatic practice."},
      {t:"To study French taste in music", why:"That was Bourdieu’s own *Distinction*."},
-     {t:"To prove that habitus does not exist in diplomacy", why:"He argued it mattered."}
+     {t:"To prove that habitus does not exist in diplomacy at all", why:"He argued it mattered."}
    ]},
    {id:"e4u5-q32", lesson:"e4u5-l4", level:2, q:"What did Michèle Lamont’s *Money, Morals, and Manners* (1992) find?", options:[
-     {t:"American upper-middle-class men drew moral and economic boundaries more than cultural ones, unlike their French counterparts", ok:true, why:"Correct. Bourdieu’s France was not everywhere."},
-     {t:"Taste is identical in France and the US", why:"She found important differences."},
+     {t:"US elite men stressed moral more than cultural lines", ok:true, why:"Correct. American upper-middle-class men drew moral and economic boundaries more than cultural ones, unlike their French counterparts. Bourdieu’s France was not everywhere."},
+     {t:"Taste is identical among elites in France and the US", why:"She found important differences."},
      {t:"Cultural capital does not exist", why:"She argued its weight varies between societies."},
      {t:"Only economic capital matters in France", why:"Cultural boundaries were stronger in her French sample."}
    ]},
    {id:"e4u5-q33", lesson:"e4u5-l4", level:3, q:"Fatima argues that “being a global citizen” is mostly available to those with passports, money and international schooling. Which thinker’s critique is closest?", options:[
-     {t:"Craig Calhoun, on “the class consciousness of frequent travellers”", ok:true, why:"Correct. Calhoun argued much cosmopolitan theory reflects mobile elites."},
+     {t:"Craig Calhoun, on “frequent travellers”", ok:true, why:"Correct. He wrote of “the class consciousness of frequent travellers”: Calhoun argued much cosmopolitan theory reflects mobile elites."},
      {t:"Immanuel Kant, on hospitality", why:"Kant defended a cosmopolitan right; he is not this critic."},
-     {t:"Martha Nussbaum, on moral cosmopolitanism", why:"Nussbaum defended cosmopolitanism."},
+     {t:"Martha Nussbaum, on moral cosmopolitanism and world citizenship", why:"Nussbaum defended cosmopolitanism."},
      {t:"Arjun Appadurai, on the scapes", why:"Appadurai described flows, not this class critique."}
    ]},
    {id:"e4u5-q34", lesson:"e4u5-l4", level:1, q:"What did Ulrich Beck mean by “methodological nationalism”?", options:[
-     {t:"The habit of treating the nation-state as the natural container of society in research", ok:true, why:"Correct. Beck urged social science to look beyond it."},
-     {t:"A method for building national identity", why:"It is a critique of research habits, not a nation-building method."},
+     {t:"Treating the nation-state as society’s natural container", ok:true, why:"Correct. It is a habit of research. Beck urged social science to look beyond it."},
+     {t:"A research method for building national identity in schools", why:"It is a critique of research habits, not a nation-building method."},
      {t:"A nationalist political party programme", why:"It is not a political programme."},
      {t:"The study of national anthems", why:"It concerns how research frames society."}
    ]},
    {id:"e4u5-q35", lesson:"e4u5-l4", level:2, q:"Which best summarises Appiah’s rooted cosmopolitanism?", options:[
-     {t:"Concern for all humanity alongside loyalty to one’s own people and respect for legitimate difference", ok:true, why:"Correct. Appiah combines universal concern with local attachment."},
+     {t:"Concern for all humanity alongside local loyalty", ok:true, why:"Correct. It adds respect for legitimate difference. Appiah combines universal concern with local attachment."},
      {t:"Rejecting all local loyalties", why:"Appiah explicitly keeps local loyalties."},
      {t:"A world government replacing states", why:"That is closer to strong political cosmopolitanism."},
-     {t:"Keeping cultures separate to avoid contact", why:"Appiah stresses conversation across difference."}
+     {t:"Keeping cultures separate to avoid contact and conflict", why:"Appiah stresses conversation across difference."}
    ]},
    {id:"e4u5-q36", lesson:"e4u5-l4", level:2, q:"Peterson and Kern’s “cultural omnivore” (1996) challenged which picture of taste?", options:[
-     {t:"That high status means liking only exclusive highbrow forms", ok:true, why:"Correct. High-status Americans liked many genres; distinction lay in breadth."},
-     {t:"That taste is linked to status at all", why:"They found a new link, not no link."},
+     {t:"That high status means liking only highbrow forms", ok:true, why:"Correct. High-status Americans liked many genres; distinction lay in breadth."},
+     {t:"That taste is linked to social status at all, in any way", why:"They found a new link, not no link."},
      {t:"That people have any musical taste", why:"Their study measured taste in detail."},
      {t:"That habitus exists", why:"Their focus was the content of taste, not rejecting habitus."}
    ]},
@@ -1274,13 +1336,13 @@ ICA.addUnit({
      {t:"Said, “The Clash of Ignorance” (2001)", why:"Said’s essay criticised Huntington."}
    ]},
    {id:"e4u5-q38", lesson:"e4u5-l5", level:2, q:"Weldes argued that *Star Trek* matters for IR because:", options:[
-     {t:"Popular texts help build the common sense that makes foreign policy seem natural", ok:true, why:"Correct. This is the constitutive view."},
+     {t:"It builds common sense about foreign policy", ok:true, why:"Correct. Popular texts help build the common sense that makes foreign policy seem natural. This is the constitutive view."},
      {t:"It accurately predicts future wars", why:"Her claim is about meaning and common sense, not prediction."},
-     {t:"It was made by the State Department", why:"It was a commercial series."},
+     {t:"It was made with help from the State Department", why:"It was a commercial series."},
      {t:"Only science fiction is political", why:"She used science fiction as one case."}
    ]},
    {id:"e4u5-q39", lesson:"e4u5-l5", level:2, q:"Why do scholars compare the 1954 Japanese *Godzilla* with its 1956 US version?", options:[
-     {t:"The re-edit added new scenes and trimmed political themes, showing how production for a new market changes a text", ok:true, why:"Correct. Same monster, two texts, two politics."},
+     {t:"The re-edit trimmed political themes for a new market", ok:true, why:"Correct. It also added new scenes, showing how production for a new market changes a text. Same monster, two texts, two politics."},
      {t:"The two versions are identical", why:"They differ substantially."},
      {t:"The 1956 version added more criticism of nuclear testing", why:"Many political themes were trimmed, not added."},
      {t:"Neither version mentions nuclear weapons", why:"The 1954 film clearly echoed nuclear testing."}
@@ -1292,10 +1354,10 @@ ICA.addUnit({
      {t:"An encryption standard", why:"It has nothing to do with encryption."}
    ]},
    {id:"e4u5-q41", lesson:"e4u5-l5", level:3, q:"Sione’s draft says: “The film topped the box office, so it caused a rise in nationalism.” What is the best advice?", options:[
-     {t:"Box office shows popularity, not effects; add audience evidence such as surveys, reviews or fan discussion before claiming influence", ok:true, why:"Correct. Claims about effects need reception evidence."},
+     {t:"Add audience evidence before claiming influence", ok:true, why:"Correct. Box office shows popularity, not effects; surveys, reviews or fan discussion are reception evidence, which claims about effects need."},
      {t:"Box office is enough evidence of any effect", why:"Popularity does not show how people interpreted a film."},
      {t:"Remove the box-office figure", why:"It is useful evidence of reach; the problem is the causal leap."},
-     {t:"Quote the director’s intention instead", why:"Intention does not settle meaning or effects."}
+     {t:"Quote the director’s stated intention instead of figures", why:"Intention does not settle meaning or effects."}
    ]},
    {id:"e4u5-q42", lesson:"e4u5-l5", level:2, q:"In the circuit of culture, censorship rules and age ratings belong to which moment?", options:[
      {t:"Regulation", ok:true, why:"Correct. Rules, censorship and platform policies."},
@@ -1304,13 +1366,13 @@ ICA.addUnit({
      {t:"Representation", why:"Representation is the meanings the text offers."}
    ]},
    {id:"e4u5-q43", lesson:"e4u5-l5", level:2, q:"After the 2014 coup, Thai protesters used the three-finger salute from *The Hunger Games*. What does the case illustrate?", options:[
-     {t:"Fans and protesters can take up a sign from popular culture and give it new political meaning", ok:true, why:"Correct. Popular culture as a site of action."},
+     {t:"Users can give a film’s sign new political meaning", ok:true, why:"Correct. Fans and protesters took up a sign from popular culture: popular culture as a site of action."},
      {t:"The films were made to support Thai protesters", why:"The meaning was made by users, not the makers."},
      {t:"Popular culture has no political effects", why:"The authorities’ warnings show they took it seriously."},
-     {t:"The salute was invented by the Thai military", why:"It came from the films."}
+     {t:"The salute was invented by the Thai military government", why:"It came from the films."}
    ]},
    {id:"e4u5-q44", lesson:"e4u5-l5", level:3, q:"Hana wants to quote individual fans’ posts from a public forum in her seminar paper. What is the most ethical approach?", options:[
-     {t:"Paraphrase patterns and avoid identifying individuals, following online research ethics guidance", ok:true, why:"Correct. Public posts may still carry an expectation of privacy."},
+     {t:"Paraphrase patterns and avoid identifying individuals", ok:true, why:"Correct. This follows online research ethics guidance: public posts may still carry an expectation of privacy."},
      {t:"Quote usernames and posts exactly, because everything public is fair to use", why:"Public is not the same as consenting to be quoted in research."},
      {t:"Contact fans pretending to be another fan to get more quotes", why:"Deception is unethical and not needed."},
      {t:"Screenshot profiles to prove the posts are real", why:"This increases identifiability and risk."}

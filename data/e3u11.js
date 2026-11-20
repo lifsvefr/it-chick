@@ -5361,6 +5361,68 @@ ICA.addUnit({
   "e3u11-q38",
   "e3u11-q43"
  ],
+  cpBank:[
+    {id:"e3u11-cp01", lesson:"e3u11-l1", level:1, q:"Sōta’s teacher calls him そうた[君]{くん}. What does 〜[君]{くん} tell you?", options:[
+      {t:"It is a very polite title, used for customers", why:"The very polite title for customers is 〜[様]{さま}, as in お[客様]{きゃくさま}."},
+      {t:"It goes after the names of boys and younger men", ok:true, why:"〜[君]{くん} follows the name of a boy or a younger man, often from a teacher, a boss or a friend."},
+      {t:"It means “you” and takes the place of his name", why:"[君]{きみ} alone can mean “you”, but after a name, 〜[君]{くん} is a title."},
+      {t:"It shows that Sōta is the teacher’s own son", why:"Teachers, bosses and friends all use 〜[君]{くん}. It says nothing about family."}]},
+    {id:"e3u11-cp02", lesson:"e3u11-l1", level:2, q:"Yến gets an envelope marked 招待状 from Dr Amoako’s lab. 招 has 召 (ショウ) on the right. What is the best guess for the reading? (No furigana: that is the point.)", options:[
+      {t:"めしたいじょう", why:"めす is a kun reading of 召. A sound part hints at the on reading, ショウ."},
+      {t:"てたいじょう", why:"扌 (hand) is the meaning part of [招]{しょう}. It doesn’t give the reading."},
+      {t:"しょうまちじょう", why:"In a three-kanji word with no kana, 待 takes its on reading, タイ, not まつ."},
+      {t:"しょうたいじょう", ok:true, why:"召 hints at ショウ, as in [招]{しょう}待 (invitation). With [状]{じょう} (ジョウ, a letter), [招]{しょう}待[状]{じょう} is an invitation card."}]},
+    {id:"e3u11-cp03", lesson:"e3u11-l2", level:2, q:"Megumi works for the city hospital. Which particle fits? 「[市]{し}の病院＿＿[勤]{つと}めています。」", options:[
+      {t:"に", ok:true, why:"[勤]{つと}める (work for, be employed at) takes に: 病院に[勤]{つと}める."},
+      {t:"で", why:"で marks the place with [働]{はたら}く: 病院で[働]{はたら}く. [勤]{つと}める takes に."},
+      {t:"を", why:"を goes with [辞]{や}める, “quit”: 病院を[辞]{や}める. That is the opposite."},
+      {t:"が", why:"が would make the hospital the subject, the one doing the work."}]},
+    {id:"e3u11-cp04", lesson:"e3u11-l2", level:2, q:"In a formal report, which kango means the same as [調]{しら}べる (look into, check)?", options:[
+      {t:"開始する", why:"開始する is the kango for 始める (begin)."},
+      {t:"[決定]{けってい}する", why:"[決定]{けってい}する is the kango for [決]{き}める (decide)."},
+      {t:"[調査]{ちょうさ}する", ok:true, why:"[調査]{ちょうさ}する shares 調 with [調]{しら}べる. The kango is more formal and common in reports."},
+      {t:"[増加]{ぞうか}する", why:"[増加]{ぞうか}する is the kango for [増]{ふ}える (increase)."}]},
+    {id:"e3u11-cp05", lesson:"e3u11-l2", level:3, q:"A headline reads 「[汐浦]{しおうら}[市]{し}の人口、10年で5％[減少]{げんしょう}」. What does it report?", options:[
+      {t:"Shioura’s population fell by 5% in ten years", ok:true, why:"Read the noun at the end first: [減少]{げんしょう} (decrease) is what happened, to 人口 (population), over 10年."},
+      {t:"Shioura’s population rose by 5% in ten years", why:"A rise would be [増加]{ぞうか}. [減]{げん} means decrease."},
+      {t:"Shioura plans to cut its population within ten years", why:"A headline ending in a noun reports what happened. Nothing here is a plan."},
+      {t:"5% of Shioura’s people moved away last year", why:"The headline gives a period, 10年 (ten years), and a fall in population, not a move last year."}]},
+    {id:"e3u11-cp06", lesson:"e3u11-l3", level:1, q:"After a coffee break, Yến goes back to the lab. Which verb fits? 「研究室に＿＿。」", options:[
+      {t:"[戻]{もど}ります", ok:true, why:"[戻]{もど}る is to go back to an earlier place or state, such as your seat or the lab."},
+      {t:"帰ります", why:"帰る is to go home, or back to where you belong. Yến is going back to the lab, not home."},
+      {t:"[返]{かえ}します", why:"[返]{かえ}す is to give something back, such as a book. It needs an object."},
+      {t:"[遅]{おく}れます", why:"[遅]{おく}れる is to be late, as a train is. It doesn’t say where she goes."}]},
+    {id:"e3u11-cp07", lesson:"e3u11-l3", level:3, q:"Which sentence uses the right kanji?", options:[
+      {t:"「地図を[差]{さ}して[説]{せつ}明した。」", why:"Pointing at something is [指]{さ}す: 地図を[指]{さ}す. [差]{さ}す is for holding up an umbrella."},
+      {t:"「やっと空[港]{こう}に[着]{つ}いた。」", ok:true, why:"Arriving is [着]{つ}く: 空[港]{こう}に[着]{つ}いた. [付]{つ}く means “be attached”, as a stain is."},
+      {t:"「川で魚を[撮]{と}った。」", why:"Catching a fish is [捕]{と}る: 魚を[捕]{と}る. [撮]{と}る is for taking photos."},
+      {t:"「シャツにシミが[着]{つ}いた。」", why:"A stain that gets onto clothes is [付]{つ}く (be attached): シミが[付]{つ}く. [着]{つ}く is to arrive."}]},
+    {id:"e3u11-cp08", lesson:"e3u11-l4", level:2, q:"Rodrigo’s friend says 「試験、不[合格]{ごうかく}だった…。」 What happened?", options:[
+      {t:"She hasn’t taken the exam yet", why:"“Not yet” is [未]{み}, as in [未定]{みてい}. 不 means “not, un-”."},
+      {t:"The exam was free of charge", why:"Free of charge is [無]{む}料, with [無]{む} (without)."},
+      {t:"She failed the exam", ok:true, why:"不 makes the opposite: [合格]{ごうかく} is passing, so 不[合格]{ごうかく} is failing."},
+      {t:"It was an unofficial practice exam", why:"Unofficial is [非]{ひ}[公式]{こうしき}, with [非]{ひ}. 不[合格]{ごうかく} is about the result."}]},
+    {id:"e3u11-cp09", lesson:"e3u11-l4", level:3, q:"Which sentence is correct?", options:[
+      {t:"「この町は国[際]{さい}的しています。」", why:"〜的 words are な-adjectives, like 国[際]{さい}的な町. They don’t take する."},
+      {t:"「この町は国[際]{さい}[化]{か}な町です。」", why:"〜[化]{か} words are nouns that take する. They can’t take な."},
+      {t:"「この町は国[際]{さい}[性]{せい}しています。」", why:"〜[性]{せい} makes a noun (a quality), as in 女[性]{せい}. It doesn’t make a verb."},
+      {t:"「この町は国[際]{さい}[化]{か}しています。」", ok:true, why:"〜[化]{か} words take する: 国[際]{さい}[化]{か}する, “become international”."}]},
+    {id:"e3u11-cp10", lesson:"e3u11-l4", level:2, q:"Kaito helps a friend choose a flat. One is near the station but noisy; the other is quiet but far from the shops. Which idiom fits? 「どっちも（　）だね。」", options:[
+      {t:"[一長一短]{いっちょういったん}", ok:true, why:"One strong point, one weak point: each flat has a good side and a bad side."},
+      {t:"[一石二鳥]{いっせきにちょう}", why:"One stone, two birds: one action gives two good results. Here each flat has one good and one bad point."},
+      {t:"[十人十色]{じゅうにんといろ}", why:"Ten people, ten colours: everyone is different. It is about people, not about choosing between things."},
+      {t:"[自業自得]{じごうじとく}", why:"You reap what you sow: a bad result that is your own fault. Nobody has done anything wrong here."}]},
+    {id:"e3u11-cp11", lesson:"e3u11-l5", level:1, q:"Cheska hears that her friend’s plane has landed safely. She says 「ああ、ほっとした。」 How does she feel?", options:[
+      {t:"Nervous, with her heart pounding", why:"A pounding heart is ドキドキ. ほっと is the feeling after a worry ends."},
+      {t:"Disappointed that she missed the plane", why:"Nothing in ほっとした is about disappointment. It is relief."},
+      {t:"Relieved that the worry is over", ok:true, why:"ほっとする is a [擬態語]{ぎたいご} for relief: the tension goes when the worry ends."},
+      {t:"Sleepy after waiting so long", why:"ほっと describes relief, not tiredness."}]},
+    {id:"e3u11-cp12", lesson:"e3u11-l5", level:3, q:"Yến writes: 「夜中に[雷]{かみなり}の音で目が[覚]{さ}めて、そのあとは[全然]{ぜんぜん}[眠]{ねむ}れなかった。」 What happened?", options:[
+      {t:"She slept deeply all night, even through the thunder", why:"目が[覚]{さ}めて means she woke up, and [眠]{ねむ}れなかった means she couldn’t sleep."},
+      {t:"Thunder woke her in the night, and she couldn’t get back to sleep", ok:true, why:"目が[覚]{さ}める is to wake up; [眠]{ねむ}る is to be asleep, so [眠]{ねむ}れなかった is “couldn’t get to sleep”."},
+      {t:"She went to bed late because of the thunder, then slept well", why:"Going to bed is [寝]{ね}る. [全然]{ぜんぜん}[眠]{ねむ}れなかった says she didn’t sleep at all after that."},
+      {t:"In the morning she remembered hearing thunder in the night", why:"[覚]{さ}める (wake up) and [覚]{おぼ}える (remember) share a kanji. 目が[覚]{さ}める is waking up."}]}
+  ],
  "codex": [
   {
    "id": "n3-kanji",
@@ -6194,9 +6256,9 @@ ICA.addUnit({
    "q": "Cheska says 「[寝]{ね}たけど、なかなか[眠]{ねむ}れなかった」. What happened?",
    "options": [
     {
-     "t": "She went to bed but couldn’t fall asleep for a long time.",
+     "t": "She went to bed but couldn’t get to sleep.",
      "ok": true,
-     "why": "Right. [寝]{ね}る is to go to bed (lie down to sleep); [眠]{ねむ}る is to actually be asleep."
+     "why": "Right. [寝]{ね}る is to go to bed (lie down to sleep); [眠]{ねむ}る is to actually be asleep. なかなか〜なかった: for a long time, she couldn’t."
     },
     {
      "t": "She slept well but woke up early.",
@@ -6207,7 +6269,7 @@ ICA.addUnit({
      "why": "[寝]{ね}た says she did go to bed."
     },
     {
-     "t": "She fell asleep at once.",
+     "t": "She fell asleep as soon as she went to bed.",
      "why": "なかなか〜なかった means it took a long time (or didn’t happen). She couldn’t get to sleep."
     }
    ]
@@ -6274,15 +6336,15 @@ ICA.addUnit({
      "why": "Right. 忘 is 亡 on top of 心. A good story uses the real parts."
     },
     {
-     "t": "A mouth (口) under a roof (宀).",
+     "t": "A mouth (口) under a roof (宀): you keep quiet.",
      "why": "忘 has no 口 and no 宀. A story built on parts the kanji doesn’t have will mislead you."
     },
     {
-     "t": "A hand (扌) that drops something.",
+     "t": "A hand (扌) that drops something: you lose it.",
      "why": "忘 has no 扌. Its parts are 亡 and 心."
     },
     {
-     "t": "Water (氵) running away.",
+     "t": "Water (氵) that runs away: your memory flows off.",
      "why": "忘 has no 氵. Look at the kanji: 亡 above 心."
     }
    ]
@@ -6569,9 +6631,9 @@ ICA.addUnit({
    "q": "Toby says 「雨で電車が[遅]{おく}れて、会[議]{ぎ}に間に[合]{あ}わなかった」. What happened?",
    "options": [
     {
-     "t": "The train was late because of the rain, and he was late for the meeting.",
+     "t": "The rain delayed his train, so he was late.",
      "ok": true,
-     "why": "Right. [遅]{おく}れて (was late, and so) and 間に[合]{あ}わなかった (didn’t make it in time)."
+     "why": "Right. [遅]{おく}れて (was late, and so) and 間に[合]{あ}わなかった (didn’t make it in time): he was late for the meeting."
     },
     {
      "t": "The train was slow, but he arrived early.",
@@ -6599,11 +6661,11 @@ ICA.addUnit({
      "why": "Right. [取]{と}る (take) + [消]{け}す (erase): take back, cancel."
     },
     {
-     "t": "take out (of a bag)",
+     "t": "take out (of a bag, a box)",
      "why": "That is [取]{と}り出す."
     },
     {
-     "t": "receive",
+     "t": "receive (a parcel, a letter)",
      "why": "That is [受]{う}け[取]{と}る."
     },
     {
@@ -6644,12 +6706,12 @@ ICA.addUnit({
    "q": "Cheska’s friend lost her keys and says: 「[鍵]{かぎ}が見つかって、本[当]{とう}に[助]{たす}かった！」. What does she mean?",
    "options": [
     {
-     "t": "The keys were found, and that was a real help (a relief).",
+     "t": "The keys were found, and she is relieved.",
      "ok": true,
      "why": "Right. [助]{たす}かる (be saved, be a help) is how people say “that saved me” or “what a relief”."
     },
     {
-     "t": "She helped someone find their keys.",
+     "t": "She helped a friend look for their lost keys.",
      "why": "Helping someone is [助]{たす}ける, with を. [助]{たす}かった is about her being helped."
     },
     {
@@ -7119,7 +7181,7 @@ ICA.addUnit({
    "q": "Yến writes: 「[二日]{ふつか}目はすっかり[晴]{は}れて、[湖]{みずうみ}がきらきらしていました」. What was the second day like?",
    "options": [
     {
-     "t": "It cleared up completely, and the lake sparkled.",
+     "t": "It cleared up, and the lake sparkled.",
      "ok": true,
      "why": "Right. すっかり (completely) [晴]{は}れて (cleared up), and きらきら (sparkling)."
     },
@@ -7128,7 +7190,7 @@ ICA.addUnit({
      "why": "That was the first day (ザーザー). [晴]{は}れる is to clear up."
     },
     {
-     "t": "It snowed, and the lake froze.",
+     "t": "It snowed, and the lake froze in the cold.",
      "why": "Snow is [雪]{ゆき}; nothing here is about snow or ice."
     },
     {

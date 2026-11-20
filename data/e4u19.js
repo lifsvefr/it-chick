@@ -1,6 +1,6 @@
-/* International Studies · Unit 19 · East Asia: China, the Koreas and the regional order */
+/* International Studies · Unit 20 · East Asia: China, the Koreas and the regional order */
 ICA.addUnit({
-  id:"e4u19", track:"e4", n:19, title:"East Asia: China, the Koreas and the regional order", icon:"🏯",
+  id:"e4u19", track:"e4", n:20, title:"East Asia: China, the Koreas and the regional order", icon:"🏯",
   blurb:"East Asia at seminar level: how China’s party-state works and how scholars study it; China’s foreign policy from “keeping a low profile” to major-country diplomacy and the debate about its rise; the two Koreas, from division and democratisation to nuclear weapons and the “two states” turn; Taiwan’s history, democracy and economy, with the exact wording of the key documents on its status; Mongolia in brief; and the regional order, its institutions and its politics of memory, all told neutrally and dated as of November 2026.",
   goals:[
     "Describe how the Chinese Communist Party, the state and the army fit together, and compare the main scholarly explanations of the party-state",
@@ -86,9 +86,9 @@ ICA.addUnit({
       {t:"Provincial governments", b:1, why:"State administration, though each is led in practice by a provincial Party secretary."}
     ]},
     {id:"e4u19-l1-x2", type:"mcq", q:"Kenji writes: “The National People’s Congress is the highest organ of state power, so it is where China’s key decisions are made.” What is the best correction?", options:[
-      {t:"Formally the NPC is the highest state organ, but key decisions are made in Party bodies and the NPC acts within Party guidance", ok:true, why:"Right. The constitution’s formal hierarchy and the Party’s leadership are both true; a precise writer distinguishes them."},
+      {t:"Formally it is, but key decisions are made in Party bodies", ok:true, why:"Right. Formally the NPC is the highest state organ, but key decisions are made in Party bodies and the NPC acts within Party guidance. Both are true; a precise writer distinguishes them."},
       {t:"The NPC has no legal role at all", why:"Too strong: it passes laws and plans, such as the 15th Five-Year Plan in March 2026."},
-      {t:"Key decisions are made by the Premier alone", why:"The Premier leads the State Council, but the Party’s Standing Committee is the core of power."},
+      {t:"Key decisions are made by the Premier alone, not by the NPC", why:"The Premier leads the State Council, but the Party’s Standing Committee is the core of power."},
       {t:"The sentence is correct as it stands", why:"It confuses the formal constitutional position with where power lies in practice."}
     ]},
     {id:"e4u19-l1-x3", type:"order", q:"Put these steps in the centralisation of the Xi era in chronological order.", items:[
@@ -183,12 +183,12 @@ ICA.addUnit({
         "**Domestic politics.** Jessica Chen Weiss (*Powerful Patriots*, 2014) showed how the government allows or curbs nationalist protest to signal resolve. Shirk (*Overreach*, 2022) blames centralised, personal rule for policies that provoked counter-balancing.",
         "**Strategy.** Rush Doshi (*The Long Game*, 2021) argues that the Party has pursued a consistent grand strategy since the Cold War’s end, shifting from blunting US power to building Chinese order. Critics question whether internal speeches show a single plan."
       ]},
-      "Behaviour varies by issue, which complicates any single story. M. Taylor Fravel (*Strong Borders, Secure Nation*, 2008) found that China compromised in most of its territorial disputes on land, often when facing unrest at home, but rarely over offshore islands; it has since asserted its maritime claims strongly (see {{south-china-sea-disputes}}). Its border with India remains disputed (Unit 21). China is also now the second-largest contributor to the UN regular budget after the United States and a major contributor of peacekeepers, which fits neither a simple “challenger” nor a simple “joiner” label.",
+      "Behaviour varies by issue, which complicates any single story. M. Taylor Fravel (*Strong Borders, Secure Nation*, 2008) found that China compromised in most of its territorial disputes on land, often when facing unrest at home, but rarely over offshore islands; it has since asserted its maritime claims strongly (see {{south-china-sea-disputes}}). Its border with India remains disputed (Unit 22). China is also now the second-largest contributor to the UN regular budget after the United States and a major contributor of peacekeepers, which fits neither a simple “challenger” nor a simple “joiner” label.",
       "Style changed too. [[wolf-warrior-diplomacy|“Wolf warrior” diplomacy]], named after two Chinese action films (2015 and 2017), describes the combative public tone some diplomats adopted from about 2019 (Peter Martin, *China’s Civilian Army*, 2021)."
     ]},
     {h:"The Belt and Road and its readings", body:[
       "The [[belt-and-road-initiative|Belt and Road Initiative]] (BRI; 一带一路, *Yídài Yílù*) was written into the Party constitution in 2017. Beijing has hosted three Belt and Road Forums (2017, 2019, 2023). Counts vary with the source: China’s government said in a 2023 white paper that more than 150 countries had signed cooperation documents; Italy, the only G7 member to join (2019), announced its exit in December 2023. The Asian Infrastructure Investment Bank, which began operating in 2016, is a separate multilateral bank with its own rules.",
-      "Scholars read the BRI in two main ways. **Grand strategy**: a plan to bind Eurasia, Africa and beyond to China through infrastructure, ports and standards. **Fragmented and demand-driven**: Lee Jones and Shahar Hameiri (*Fractured China*, 2021) argue that state firms, provinces and banks chase their own interests, and that host governments propose many projects. The lending debate, including [[debt-trap-diplomacy|“debt-trap diplomacy”]] and AidData’s findings, is covered in Unit 15 ({{china-overseas-lending}}); link to it rather than retell it.",
+      "Scholars read the BRI in two main ways. **Grand strategy**: a plan to bind Eurasia, Africa and beyond to China through infrastructure, ports and standards. **Fragmented and demand-driven**: Lee Jones and Shahar Hameiri (*Fractured China*, 2021) argue that state firms, provinces and banks chase their own interests, and that host governments propose many projects. The lending debate, including [[debt-trap-diplomacy|“debt-trap diplomacy”]] and AidData’s findings, is covered in Unit 16 ({{china-overseas-lending}}); link to it rather than retell it.",
       "Recipients have their own agendas. Laos’s railway to China (opened December 2021) and Indonesia’s Jakarta–Bandung high-speed line (opened October 2023) are flagship projects; host governments present them as development they chose, while critics in those countries question their cost, debt and terms. Good BRI research therefore studies the host country’s politics as closely as China’s."
     ]},
     {h:"Four global initiatives", body:[
@@ -203,7 +203,7 @@ ICA.addUnit({
     ]},
     {h:"Is a clash coming? Power transition and its critics", body:[
       "[[power-transition-theory|Power transition theory]] (A. F. K. Organski, 1958; Robert Gilpin’s *War and Change*, 1981, in Unit 2) holds that danger peaks when a dissatisfied rising power nears a leader. Graham Allison’s [[thucydides-trap|“Thucydides’s Trap”]] (2017) made this popular. John Mearsheimer ({{john-mearsheimer}}) expects intense security competition whatever China intends.",
-      "Critics of Allison’s count say that several of his cases were not really power transitions, and that the list leaves out transitions that stayed peaceful. Policy debates in Washington changed too: the 2017 US National Security Strategy described “great power competition” with China, later administrations kept the frame, and the tariff and export-control rounds since 2018 are covered in Unit 15. Chinese officials reject the “Thucydides” framing and say China seeks no hegemony.",
+      "Critics of Allison’s count say that several of his cases were not really power transitions, and that the list leaves out transitions that stayed peaceful. Policy debates in Washington changed too: the 2017 US National Security Strategy described “great power competition” with China, later administrations kept the frame, and the tariff and export-control rounds since 2018 are covered in Unit 16. Chinese officials reject the “Thucydides” framing and say China seeks no hegemony.",
       "Others ask whether China is dissatisfied at all. Alastair Iain Johnston (“Is China a Status Quo Power?”, *International Security*, 2003) found that China had joined most international institutions and largely kept their rules: a [[status-quo-power]] in many areas, though not on Taiwan or territory. G. John Ikenberry (*Foreign Affairs*, 2008) argued that the Western-led order is hard to overturn and easy to join, so a rising China has reasons to work within it."
     ]},
     {h:"Kang’s hierarchy argument", body:[
@@ -223,10 +223,10 @@ ICA.addUnit({
       {t:"The Global Governance Initiative", why:"1 September 2025."}
     ]},
     {id:"e4u19-l2-x2", type:"mcq", q:"Lucía translates 韬光养晦 as “hide your capabilities and bide your time” in her essay without comment. What should she add?", options:[
-      {t:"That the translation is contested: Chinese officials render it “keep a low profile”, and the choice implies different readings of China’s intentions", ok:true, why:"Right. Translation choices carry arguments; a seminar paper should flag them."},
+      {t:"That the translation is contested and implies a reading of intent", ok:true, why:"Right. Chinese officials render it “keep a low profile”, and the choice implies different readings of China’s intentions. Translation choices carry arguments; a seminar paper should flag them."},
       {t:"Nothing: the translation is the official one", why:"It is not the official rendering; Chinese officials prefer “keep a low profile”."},
       {t:"That the phrase was invented by Xi Jinping in 2013", why:"It is attributed to Deng Xiaoping around 1990; Xi’s era moved towards “striving for achievement”."},
-      {t:"That the phrase is a line from Sun Tzu’s *Art of War*", why:"It is a classical-sounding idiom attributed to Deng, not a quotation from that text."}
+      {t:"That the phrase is a line quoted directly from Sun Tzu’s *Art of War*", why:"It is a classical-sounding idiom attributed to Deng, not a quotation from that text."}
     ]},
     {id:"e4u19-l2-x3", type:"match", q:"Match each global initiative to where it was first proposed.", pairs:[
       ["Global Development Initiative","UN General Assembly, September 2021","Proposed in Xi’s address to the General Assembly."],
@@ -257,7 +257,7 @@ ICA.addUnit({
     {id:"e4u19-l2-x7", type:"spot", q:"A student’s paragraph on China’s rise. Tap the sentences that are **inaccurate or unattributed opinion**.", ask:"inaccurate or unattributed", parts:[
       {t:"Graham Allison’s *Destined for War* (2017) argued that a rising power challenging a ruling one has often led to war.", flag:false, why:"Accurate summary, attributed."},
       " ",
-      {t:"The Belt and Road is obviously a debt trap designed to seize ports.", flag:true, why:"Unattributed opinion presented as fact; the evidence is debated (see Unit 15). Attribute the claim and its critics."},
+      {t:"The Belt and Road is obviously a debt trap designed to seize ports.", flag:true, why:"Unattributed opinion presented as fact; the evidence is debated (see Unit 16). Attribute the claim and its critics."},
       " ",
       {t:"China’s government says the Global Security Initiative supports the UN Charter, while some critics argue it privileges state sovereignty over human rights.", flag:false, why:"Both positions attributed."},
       " ",
@@ -370,10 +370,10 @@ ICA.addUnit({
       {t:"Officials present the bomb as proof that the country now ranks among the world’s strategic powers.", b:2, why:"Prestige and standing among states: the norms and status model."}
     ]},
     {id:"e4u19-l3-x4", type:"mcq", q:"Tomás writes: “Soviet archives proved Cumings wrong: the war was simply Stalin’s aggression.” What is the most accurate response?", options:[
-      {t:"The archives showed that Stalin approved Kim Il Sung’s plan in 1950, but most historians combine this with the civil war roots Cumings stressed", ok:true, why:"Right. The documents settled who decided to attack in June 1950; the deeper causes are still debated."},
+      {t:"Stalin approved the attack, but most historians still weigh civil-war roots", ok:true, why:"Right. The archives showed that Stalin approved Kim Il Sung’s plan in 1950, settling who decided to attack; most historians combine this with the civil-war roots Cumings stressed."},
       {t:"The archives proved South Korea started the war", why:"No: they showed Stalin approving the North’s plan to attack."},
       {t:"Soviet archives on Korea have never been opened", why:"Many documents were released in the 1990s and studied by Weathersby and others."},
-      {t:"Cumings argued that Stalin started the war", why:"Cumings stressed the civil-war origins from 1945, not Soviet direction."}
+      {t:"Cumings argued that Stalin alone started the war, so the archives support him", why:"Cumings stressed the civil-war origins from 1945, not Soviet direction."}
     ]},
     {id:"e4u19-l3-x5", type:"spot", q:"A news summary on the Koreas. Tap the sentences that are **inaccurate**.", ask:"inaccurate", parts:[
       {t:"South Korea’s National Assembly voted to lift President Yoon’s martial law within hours in December 2024.", flag:false, why:"Accurate."},
@@ -387,10 +387,10 @@ ICA.addUnit({
       {t:"North Korea’s revised constitution of 2026 drops references to unification.", flag:false, why:"Accurate, as reported in May 2026."}
     ]},
     {id:"e4u19-l3-x6", type:"mcq", q:"Which description of South Korea’s policy as of November 2026 is most accurate and neutral?", options:[
-      {t:"The government’s white paper speaks of a “peace-oriented two-state relationship” while “still aiming for unification”; critics in South Korea argue this conflicts with the special relationship and the Constitution", ok:true, why:"Right: the government’s words are quoted, and its critics are attributed."},
+      {t:"Seoul seeks a “peace-oriented two-state relationship” and unification; critics object", ok:true, why:"Right: the government’s words are quoted (it is “still aiming for unification”), and its critics, who argue this conflicts with the special relationship and the Constitution, are attributed."},
       {t:"South Korea has abandoned unification as a goal", why:"Inaccurate: the government says it still aims for unification, though not by absorption."},
-      {t:"South Korea has adopted North Korea’s “two hostile states” doctrine", why:"Inaccurate: Seoul speaks of peaceful coexistence, not hostility."},
-      {t:"South Korea’s policy is a dangerous surrender to Pyongyang", why:"An opinion stated as fact; attribute such views to those who hold them."}
+      {t:"South Korea has adopted North Korea’s “two hostile states” doctrine, as its white paper states", why:"Inaccurate: Seoul speaks of peaceful coexistence, not hostility."},
+      {t:"South Korea’s policy is a dangerous surrender to Pyongyang, as critics in Seoul have shown", why:"An opinion stated as fact; attribute such views to those who hold them."}
     ]},
     {id:"e4u19-l3-x7", type:"sort", q:"Was each event a step of **engagement** or of **tension** between the Koreas?", buckets:["Engagement","Tension"], items:[
       {t:"The 4 July 1972 Joint Statement", b:0, why:"Agreed principles for peaceful unification."},
@@ -452,8 +452,8 @@ ICA.addUnit({
       {tip:"Identity and status preferences are different questions. A respondent can feel “Taiwanese” and still prefer the status quo."}
     ]},
     {h:"An economy built on chips", body:[
-      "Unit 14 described Taiwan’s growth as a “governed market” (Robert Wade, 1990; {{developmental-state-debate}}). A key step came from the state: the Industrial Technology Research Institute (1973), the Hsinchu Science Park (1980) and, in 1987, Taiwan Semiconductor Manufacturing Company (TSMC), founded by Morris Chang with government backing. TSMC pioneered the **foundry** model: making chips that other firms design. Taiwan’s firms now make most of the world’s most advanced logic chips (a 2021 industry study put 92 per cent of capacity below 10 nanometres in Taiwan).",
-      "That concentration feeds a debate. The [[silicon-shield|“silicon shield”]] argument (from Craig Addison’s book *Silicon Shield: Taiwan’s Protection Against Chinese Attack*, 2001) holds that the world’s dependence on Taiwan’s chips deters an attack and gives others reasons to defend it. Critics reply that dependence can cut both ways, and that the shield thins as TSMC builds plants in the United States and Japan. Chris Miller’s *Chip War* (2022) tells the industry’s history; Unit 15 covers export controls ({{geoeconomics}}).",
+      "Unit 15 described Taiwan’s growth as a “governed market” (Robert Wade, 1990; {{developmental-state-debate}}). A key step came from the state: the Industrial Technology Research Institute (1973), the Hsinchu Science Park (1980) and, in 1987, Taiwan Semiconductor Manufacturing Company (TSMC), founded by Morris Chang with government backing. TSMC pioneered the **foundry** model: making chips that other firms design. Taiwan’s firms now make most of the world’s most advanced logic chips (a 2021 industry study put 92 per cent of capacity below 10 nanometres in Taiwan).",
+      "That concentration feeds a debate. The [[silicon-shield|“silicon shield”]] argument (from Craig Addison’s book *Silicon Shield: Taiwan’s Protection Against Chinese Attack*, 2001) holds that the world’s dependence on Taiwan’s chips deters an attack and gives others reasons to defend it. Critics reply that dependence can cut both ways, and that the shield thins as TSMC builds plants in the United States and Japan. Chris Miller’s *Chip War* (2022) tells the industry’s history; Unit 16 covers export controls ({{geoeconomics}}).",
       "Economic ties across the Strait grew from the late 1980s. In 2010 the two sides signed an Economic Cooperation Framework Agreement (ECFA). In 2014 students occupied the legislature for more than three weeks against a services trade agreement, the Sunflower Movement, which shows how economic integration became a question of identity and democracy."
     ]},
     {h:"The status question, word by word", body:[
@@ -474,7 +474,7 @@ ICA.addUnit({
       "**Beijing.** The PRC holds the [[one-china-principle|one-China principle]]. Its [[anti-secession-law|Anti-Secession Law]] (14 March 2005) states that “There is only one China in the world” and that, in certain circumstances, “the state shall employ non-peaceful means and other necessary measures”. It proposes [[one-country-two-systems|“one country, two systems”]], first applied to Hong Kong. Its 2022 white paper says: “We will work with the greatest sincerity and exert our utmost efforts to achieve peaceful reunification. But we will not renounce the use of force.” It asks Taipei to accept the [[1992-consensus|1992 Consensus]]. Since 2022 its forces have held large drills around Taiwan, several of them named, such as “Justice Mission 2025” in December 2025; Beijing describes them as warnings to “Taiwan independence” forces, and Taipei calls them provocations.",
       "**Taipei.** The government uses the name Republic of China (Taiwan). President Lai says the ROC and the PRC “are not subordinate to each other”, and in March 2025 he said China “satisfies the definition of a ‘foreign hostile force’” under Taiwan’s Anti-Infiltration Act. Parties differ: the KMT accepts the 1992 Consensus, reading it as “one China, respective interpretations”; the DPP does not accept it.",
       "**Washington.** The US [[one-china-policy|one China policy]] rests on the communiqués, the Taiwan Relations Act and the Six Assurances. On whether it would defend Taiwan, it practises [[strategic-ambiguity|strategic ambiguity]]; Richard Haass and David Sacks argued in 2020 for “strategic clarity”, and critics replied that clarity could provoke Beijing. Leaving Beijing after a state visit in May 2026, President Trump said that US policy was unchanged and told Fox News: “I’m not looking to have somebody go independent.” Taiwan’s foreign ministry replied that Taiwan is sovereign and independent, would maintain the status quo, and that US policy “remains unchanged”.",
-      "**Others.** Japan “fully understands and respects” the PRC’s position (Unit 4: {{japan-and-neighbours}}; Unit 18 goes deeper); Canada “takes note” of it. As of mid-2026, 12 states recognised the ROC ({{cross-strait-relations}}).",
+      "**Others.** Japan “fully understands and respects” the PRC’s position (Unit 4: {{japan-and-neighbours}}; Unit 19 goes deeper); Canada “takes note” of it. As of mid-2026, 12 states recognised the ROC ({{cross-strait-relations}}).",
       {key:"Write “the PRC holds that…”, “Taipei states that…”, “the US acknowledges…”. “Reunification”, “unification”, “independence” and “status quo” each carry a position."}
     ]},
     {h:"Mongolia in brief", body:[
@@ -502,9 +502,9 @@ ICA.addUnit({
       ["Six Assurances (1982)","Not agreed “to take any position regarding sovereignty over Taiwan”","Conveyed to Taipei in July 1982."]
     ]},
     {id:"e4u19-l4-x3", type:"mcq", q:"Fatima writes: “In 1979 the United States recognised that Taiwan is part of China.” What is the most accurate correction?", options:[
-      {t:"The US recognised the PRC government as the sole legal government of China, and “acknowledges the Chinese position” that Taiwan is part of China", ok:true, why:"Right. “Recognizes” applies to the government; on Taiwan the English text uses “acknowledges”, which records a position without endorsing it."},
+      {t:"It recognised the PRC government and “acknowledges” its Taiwan position", ok:true, why:"Right: the US recognised the PRC government as the sole legal government of China, and “acknowledges the Chinese position” that Taiwan is part of China. “Recognizes” applies to the government; on Taiwan the English text uses “acknowledges”, which records a position without endorsing it."},
       {t:"The sentence is accurate as it stands", why:"It turns “acknowledges the Chinese position” into recognition of a fact, which the English text does not say."},
-      {t:"The US recognised Taiwan as an independent state in 1979", why:"No: in 1979 the US ended diplomatic relations with the ROC and kept unofficial ties."},
+      {t:"The US recognised Taiwan as an independent state in 1979, instead of the PRC", why:"No: in 1979 the US ended diplomatic relations with the ROC and kept unofficial ties."},
       {t:"The US took no position on anything in 1979", why:"It recognised the PRC government and set out its wording on Taiwan; it simply did not adopt the PRC’s position as its own."}
     ]},
     {id:"e4u19-l4-x4", type:"sort", q:"Is each statement the PRC’s **one-China principle** or another government’s **one China policy**?", buckets:["One-China principle (PRC)","A one China policy (another government)"], items:[
@@ -529,7 +529,7 @@ ICA.addUnit({
       {t:"TSMC pioneered the foundry model in 1987", why:"A fact about the industry, not a criticism of the argument."}
     ]},
     {id:"e4u19-l4-x7", type:"mcq", q:"Which best describes Mongolia’s “third neighbour” policy?", options:[
-      {t:"Balanced ties with Russia and China, plus partnerships with distant states such as the US, Japan, South Korea, India and European countries", ok:true, why:"Right: a way for a landlocked state to widen its options without picking a side."},
+      {t:"Balanced ties with Russia and China, plus distant partners", ok:true, why:"Right: partners such as the US, Japan, South Korea, India and European countries. A way for a landlocked state to widen its options without picking a side."},
       {t:"An alliance with the United States against China and Russia", why:"Mongolia has no such alliance; balance with both neighbours is the first pillar."},
       {t:"A plan to join the Shanghai Cooperation Organisation as a full member", why:"Not what the term means."},
       {t:"Mongolia’s claim to territory in a third neighbouring state", why:"The policy concerns partnerships, not territory."}
@@ -572,7 +572,7 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 420"><rect class="d-soft" x="8" y="8" width="324" height="226" rx="10" stroke-width="2"/><text x="170" y="30" text-anchor="middle">East Asia Summit (from 2005)</text><text class="s" x="170" y="48" text-anchor="middle">+ Australia, India, New Zealand;</text><text class="s" x="170" y="64" text-anchor="middle">Russia and the United States from 2011</text><rect class="d-gold" x="24" y="76" width="292" height="146" rx="10" stroke-width="2"/><text x="170" y="98" text-anchor="middle">ASEAN Plus Three (from 1997)</text><text class="s" x="170" y="116" text-anchor="middle">+ China, Japan, South Korea</text><rect class="d-sage" x="44" y="130" width="252" height="80" rx="10" stroke-width="2"/><text x="170" y="160" text-anchor="middle">ASEAN members</text><text class="s" x="170" y="180" text-anchor="middle">Southeast Asian states:</text><text class="s" x="170" y="196" text-anchor="middle">the hub that convenes the others</text><rect class="d-rose" x="8" y="246" width="324" height="74" rx="10" stroke-width="2"/><text x="170" y="268" text-anchor="middle">China–Japan–South Korea</text><text class="s" x="170" y="288" text-anchor="middle">leaders’ summits from 2008;</text><text class="s" x="170" y="306" text-anchor="middle">secretariat in Seoul from 2011</text><rect class="d-panel" x="8" y="332" width="324" height="80" rx="10" stroke-width="2"/><text x="170" y="354" text-anchor="middle">RCEP trade agreement</text><text class="s" x="170" y="374" text-anchor="middle">Signed 2020 by the ten ASEAN members</text><text class="s" x="170" y="390" text-anchor="middle">of the time plus China, Japan, South</text><text class="s" x="170" y="406" text-anchor="middle">Korea, Australia and New Zealand</text></svg>', alt:"Nested boxes. The outer box is the East Asia Summit, from 2005, which adds Australia, India and New Zealand, and from 2011 Russia and the United States. Inside it is ASEAN Plus Three, from 1997, which adds China, Japan and South Korea. Inside that is ASEAN, the hub that convenes the others. Below, separate boxes show the China–Japan–South Korea process, with leaders’ summits from 2008 and a secretariat in Seoul from 2011, and the RCEP trade agreement, signed in 2020 by the ten ASEAN members of the time plus China, Japan, South Korea, Australia and New Zealand.", cap:"Overlapping circles, not one organisation: East Asia’s institutions nest and overlap."}
     ]},
     {h:"ASEAN Plus Three and the money question", body:[
-      "The Asian financial crisis of 1997–98 (Unit 15) taught governments that they could be left alone with the IMF’s conditions. In December 1997 ASEAN leaders met their Chinese, Japanese and South Korean counterparts informally in Kuala Lumpur, and in 1999 a Joint Statement on East Asia Cooperation institutionalised [[asean-plus-three|ASEAN Plus Three]] (APT). An East Asia Vision Group reported in 2001 under the title “East Asia Community of Peace, Prosperity, and Progress”.",
+      "The Asian financial crisis of 1997–98 (Unit 16) taught governments that they could be left alone with the IMF’s conditions. In December 1997 ASEAN leaders met their Chinese, Japanese and South Korean counterparts informally in Kuala Lumpur, and in 1999 a Joint Statement on East Asia Cooperation institutionalised [[asean-plus-three|ASEAN Plus Three]] (APT). An East Asia Vision Group reported in 2001 under the title “East Asia Community of Peace, Prosperity, and Progress”.",
       "Finance is APT’s most concrete product. The [[chiang-mai-initiative|Chiang Mai Initiative]] (May 2000) built a network of currency swaps; it was turned into a single multilateral arrangement (CMIM), now with a total size of US$240 billion. A surveillance office, AMRO, became an international organisation on 9 February 2016. The Asian Bond Markets Initiative (2003) and an emergency rice reserve (agreement signed in 2011) followed.",
       "Critics note that the swap facility has not been drawn on in a crisis (analysts at CSIS reported in 2020 that it had never been used): in 2008 South Korea turned instead to a swap line with the US Federal Reserve. Defenders reply that a backstop matters even unused, and that AMRO’s surveillance builds regional expertise.",
       "Membership itself was contested. When the East Asia Summit was launched in 2005, governments and analysts debated whether East Asian cooperation should centre on APT, an option China favoured, or on a wider group including India, Australia and New Zealand, which Japan backed. Both survived, side by side, a pattern scholars call overlapping or “nested” regionalism."
@@ -584,7 +584,7 @@ ICA.addUnit({
     ]},
     {h:"History and memory politics", body:[
       "In East Asia the past is a live political issue. [[memory-politics|Memory politics]] is the study of how governments, movements and citizens use and contest accounts of the past: in textbooks, museums, anniversaries, apologies and court cases.",
-      "Unit 4 introduced Japan’s [[history-problem|“history problem”]] with its neighbours ({{japan-and-neighbours}}), and Unit 18 covers Japan’s side of each relationship. This lesson adds the wider regional picture:",
+      "Unit 4 introduced Japan’s [[history-problem|“history problem”]] with its neighbours ({{japan-and-neighbours}}), and Unit 19 covers Japan’s side of each relationship. This lesson adds the wider regional picture:",
       {list:[
         "**China.** Zheng Wang (*Never Forget National Humiliation*, 2012) shows how the [[century-of-humiliation|“century of humiliation”]] narrative and the [[patriotic-education|patriotic education]] campaign of the 1990s shaped identity and foreign policy; a Patriotic Education Law took effect on 1 January 2024. Since 2014, 13 December has been a national memorial day for the victims of the Nanjing Massacre.",
         "**China and Korea.** A Chinese state research project on the north-east (2002–07) prompted a dispute in 2004 over whether the ancient kingdom of Goguryeo (고구려) belongs to Chinese or Korean history.",
@@ -625,7 +625,7 @@ ICA.addUnit({
       {t:"AMRO becomes an international organisation.", why:"9 February 2016."}
     ]},
     {id:"e4u19-l5-x3", type:"mcq", q:"Which statement about the China–Japan–South Korea summit is accurate as of November 2026?", options:[
-      {t:"The last summit met in Seoul in May 2024; a tenth, to be hosted by Japan, had not been held, after China said conditions were “not yet ready”", ok:true, why:"Right, with the dates and China’s stated reason attributed."},
+      {t:"The last summit met in Seoul in May 2024; a tenth had not been held", ok:true, why:"Right. A tenth, to be hosted by Japan, had not been held after China said conditions were “not yet ready”; the dates and China’s stated reason are attributed."},
       {t:"The summit has met every year since 2008", why:"After 2012 it met only in 2015, 2018, 2019 and 2024."},
       {t:"The three governments formally dissolved the trilateral process in 2025", why:"No government has dissolved it; the secretariat in Seoul still exists."},
       {t:"The summit was replaced by RCEP", why:"RCEP is a trade agreement, not a replacement for leaders’ meetings."}
@@ -638,7 +638,7 @@ ICA.addUnit({
       ["*Remapping East Asia* (2005)","T. J. Pempel (ed.)","Region-building through markets and networks as well as states."]
     ]},
     {id:"e4u19-l5-x5", type:"mcq", q:"Hana argues: “Japan should simply apologise more often; that always improves relations.” Which response draws best on Lind’s work?", options:[
-      {t:"Lind found that apologies can trigger domestic backlash that alarms neighbours, so the effect depends on politics at home as well as on the words", ok:true, why:"Right: her argument is about the domestic reaction to apologies, not their sincerity."},
+      {t:"Apologies can provoke backlash at home that alarms neighbours", ok:true, why:"Right: so the effect depends on politics at home as well as on the words. Her argument is about the domestic reaction to apologies, not their sincerity."},
       {t:"Lind found that apologies always make relations worse", why:"Too strong: she argues that contrition can help but can also provoke counterproductive backlash."},
       {t:"Lind argues that history plays no role in international relations", why:"Her book argues the opposite: remembrance shapes threat perception."},
       {t:"Lind’s work is about trade, not memory", why:"*Sorry States* is about apologies and memory."}
@@ -674,6 +674,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u19-q04","e4u19-q06","e4u19-q11","e4u19-q15","e4u19-q20","e4u19-q26","e4u19-q29","e4u19-q31","e4u19-q33","e4u19-q38","e4u19-q39","e4u19-q43"],
+  cpBank:[
+   {id:"e4u19-cp01", lesson:"e4u19-l1", level:1, q:"At a Party meeting, officials argue openly about a draft plan. Once the plan is decided, every member must carry it out and none may criticise it in public. Which principle is this?", options:[
+     {t:"Democratic centralism", ok:true, why:"Yes. It allows discussion before a decision and demands obedience after it."},
+     {t:"The nomenklatura system", why:"That is how Party organisation departments appoint and promote officials, not how decisions are made and obeyed."},
+     {t:"United front work", why:"United front work manages relations with groups outside the Party."},
+     {t:"Fragmented authoritarianism", why:"That is a scholars’ model of policy made by bargaining among ministries and regions, not a Party rule."}]},
+   {id:"e4u19-cp02", lesson:"e4u19-l1", level:2, q:"A coastal city tries out a new rule on rural land use. After three years, the central government adopts a revised version for the whole country. Which scholarly idea does this illustrate best?", options:[
+     {t:"Authoritarian resilience through succession rules", why:"Nathan’s resilience argument is about institutions such as succession rules and promotion, not local pilots that spread."},
+     {t:"The promotion tournament", why:"That idea concerns how officials are rewarded for growth, not how policies spread from pilots."},
+     {t:"Personalistic rule", why:"Shirk’s argument is about power concentrated in one leader, not local trials adopted by the centre."},
+     {t:"Experimentation under hierarchy", ok:true, why:"Right. Heilmann described local pilots, such as the Shenzhen zone, tested and then spread from the centre."}]},
+   {id:"e4u19-cp03", lesson:"e4u19-l1", level:2, q:"A researcher finds that posts criticising a county official often stay online, but posts urging people to gather outside the official’s office are quickly deleted. Which finding does this fit?", options:[
+     {t:"Censors delete all criticism of the state equally", why:"The pattern is the opposite: criticism survives while calls to gather are removed."},
+     {t:"King, Pan and Roberts: censors target collective action more than criticism", ok:true, why:"Yes. Their 2013 study found exactly this pattern."},
+     {t:"Greitens and Truex: China scholars are sometimes “invited to tea” by the authorities", why:"Their survey concerned pressures on researchers, not what online censors delete."},
+     {t:"Official growth statistics are overstated", why:"That is a finding about economic data, not about online censorship."}]},
+   {id:"e4u19-cp04", lesson:"e4u19-l2", level:2, q:"On an anniversary linked to the “century of humiliation”, the government lets crowds protest against a neighbour. When talks with that neighbour begin, it stops the protests. Which ideas from Lessons 2 and 5 explain this best?", options:[
+     {t:"Weiss on protest as a signal of resolve; Zheng Wang on patriotic education", ok:true, why:"Right. Weiss (*Powerful Patriots*) explains the timing; Zheng Wang shows how the humiliation narrative shapes identity."},
+     {t:"Kang’s tribute system, and the ASEAN way of informal consultation", why:"Neither explains why protests are allowed and then stopped."},
+     {t:"Fravel’s compromises over land borders, and the Chiang Mai Initiative of 2000", why:"These concern territorial bargaining and regional finance, not managing nationalist protest."},
+     {t:"Wolf-warrior diplomacy by officials, and Taiwan’s silicon shield", why:"Wolf-warrior describes diplomats’ combative tone; the silicon shield is about Taiwan’s chips."}]},
+   {id:"e4u19-cp05", lesson:"e4u19-l2", level:3, q:"A rising state defends WTO trade rules and state sovereignty at the UN, but resists human rights monitoring and promotes state-led internet rules. Which argument fits this mixed pattern best?", options:[
+     {t:"Johnston’s finding that China is fully a status quo power on every issue", why:"Johnston found China kept most institutional rules, but not on every issue; the scenario shows clear contestation in some areas."},
+     {t:"Weiss and Wallace’s selective engagement: back what suits the system, contest the rest", ok:true, why:"Yes. They argue China supports trade and sovereignty and contests human rights and internet governance."},
+     {t:"Power transition theory: a dissatisfied challenger rejects the whole international order", why:"The state supports large parts of the order, so it is not rejecting it wholesale."},
+     {t:"Kang’s hierarchy: neighbours accommodate the strongest state", why:"Kang describes how other states treat China, not which global rules China supports."}]},
+   {id:"e4u19-cp06", lesson:"e4u19-l2", level:3, q:"A student uses power transition theory to predict war in East Asia. Drawing on Lessons 2 and 5, which regional pattern most challenges her case, and how is it read?", options:[
+     {t:"China’s WTO entry in 2001, which all the lenses read as proof of liberal convergence", why:"WTO entry is one event, not a regional pattern of peace or war, and the lenses do not agree on what it shows."},
+     {t:"The Agreed Framework of 1994, which ended all nuclear risk in the region", why:"The Agreed Framework collapsed in 2002, and it is not a long regional pattern that bears on a war prediction."},
+     {t:"The East Asian peace since 1979, which rival lenses credit to different causes", ok:true, why:"Right. Lesson 5 says every picture of the regional order must explain it; realists credit deterrence, liberals trade, Tønnesson development priorities and constructivists norms."},
+     {t:"Allison’s finding that every power transition has ended in war", why:"That is not what Allison found, and critics say his list leaves out transitions that stayed peaceful. It is also not a regional pattern."}]},
+   {id:"e4u19-cp07", lesson:"e4u19-l3", level:1, q:"A South Korean government offers the North joint tourism, factories with mixed workforces and leaders’ summits, hoping that contact will build trust over time. Which policy does this most resemble?", options:[
+     {t:"*Byungjin*", why:"*Byungjin* is Kim Jong Un’s 2013 line of developing nuclear weapons and the economy together."},
+     {t:"The Sunshine Policy", ok:true, why:"Yes. Kim Dae-jung’s policy led to the 2000 summit, Mount Kumgang tourism and the Kaesong complex."},
+     {t:"The “two hostile states” doctrine", why:"That is North Korea’s 2023 description of the relationship, the opposite of engagement."},
+     {t:"*Songun*", why:"*Songun* is Kim Jong Il’s military-first priority."}]},
+   {id:"e4u19-cp08", lesson:"e4u19-l3", level:2, q:"A researcher cannot trust a closed state’s own economic figures. Drawing on Lessons 1 and 3, which pair of tools would best help her check them?", options:[
+     {t:"State media reports and official five-year plans", why:"These give the official line. They are statements of position, not independent checks."},
+     {t:"Defectors’ testimony alone, since it comes from people who lived inside the system", why:"Testimony is rich but comes only from those who left, so it needs other sources beside it."},
+     {t:"Partners’ mirror statistics, and satellite data such as night-time lights", ok:true, why:"Right. Partners’ records check trade claims, and Martinez used night-time lights to show that autocracies tend to inflate growth figures."},
+     {t:"Party formulations (*tifa*) tracked across official reports", why:"Formulations show what the leadership wants to be heard saying, not what the economy is doing."}]},
+   {id:"e4u19-cp09", lesson:"e4u19-l4", level:2, q:"An invented poll finds that 60% of respondents in Taiwan see themselves as “Taiwanese” only. A commentator concludes that 60% want formal independence now. What is the main error?", options:[
+     {t:"Polls in Taiwan have never asked people about their identity", why:"The Election Study Center has asked about identity since 1992."},
+     {t:"Identity and status preference differ; many who feel Taiwanese back the status quo", ok:true, why:"Yes. The same surveys find that most respondents prefer some form of the status quo."},
+     {t:"Feeling Taiwanese means supporting unification", why:"Identity does not map onto unification either. The point is that identity and status are separate questions."},
+     {t:"The commentator should have relied on the wording of the 1971 UN resolution instead", why:"Resolution 2758 concerns China’s UN seat; it says nothing about public opinion in Taiwan."}]},
+   {id:"e4u19-cp10", lesson:"e4u19-l4", level:3, q:"In a 1975 communiqué with the PRC, invented Country Z “respects” the PRC’s position on Taiwan. A student writes that Z “accepts the one-China principle”. Best correction?", options:[
+     {t:"The student is right: any communiqué with the PRC means accepting its principle", why:"Partners choose their own verbs. “Acknowledges”, “takes note” and “respects” each record a position differently."},
+     {t:"Z recognises the ROC, so it has no relations with the PRC", why:"Z signed a communiqué with the PRC, so it has relations with it; most such partners keep only unofficial ties with Taiwan."},
+     {t:"Z has violated the Taiwan Relations Act", why:"The Taiwan Relations Act is a US law and does not bind Z."},
+     {t:"Quote Z’s own verb: it has its own one China policy, not the PRC’s principle", ok:true, why:"Right. Each partner’s wording forms its own policy; a paper should quote the exact text."}]},
+   {id:"e4u19-cp11", lesson:"e4u19-l5", level:3, q:"A student writes: “Memory politics in East Asia is only a quarrel between states.” Drawing on Lessons 3, 4 and 5, which correction is best?", options:[
+     {t:"Memory also divides societies, as debates over Gwangju and the 228 Incident show", ok:true, why:"Yes. The lesson stresses that memory divides societies as well as states; Taiwan passed a transitional justice law in 2017."},
+     {t:"Memory politics ended with the joint history projects of the 2000s and their reports", why:"Those projects recorded disagreements as well as agreement, and memory disputes continue."},
+     {t:"Only Japan has memory politics, so the claim is too broad", why:"The lesson covers China, Korea and Taiwan too, from patriotic education to Goguryeo."},
+     {t:"Memory politics is about museums only, not states", why:"It covers textbooks, apologies, anniversaries and court cases, used by governments, movements and citizens."}]},
+   {id:"e4u19-cp12", lesson:"e4u19-l5", level:1, q:"Two regional groupings with overlapping members, ASEAN Plus Three and the wider East Asia Summit, both continue side by side. What do scholars call this pattern?", options:[
+     {t:"Pooled, supranational sovereignty", why:"That describes the EU’s supranational institutions, which East Asian groupings lack."},
+     {t:"Calder and Ye’s regional organization gap", why:"Calder and Ye used that term for the lack of strong institutions, not for overlapping groups."},
+     {t:"Overlapping or “nested” regionalism", ok:true, why:"Right. After the 2005 debate over membership, both groupings survived side by side."},
+     {t:"Neofunctionalist spillover", why:"Spillover is the neofunctionalist idea that cooperation in one area spreads to others."}]}
+  ],
   codex:[
   {id:"chinese-party-state", title:"China’s party-state", aka:["Chinese Communist Party","CCP","CPC","party-state","Xi era"], tags:["China","politics","area studies"],
    summary:"How the Chinese Communist Party leads the state and the army, the institutions involved, and how power has been centralised since 2012.",
@@ -766,7 +828,7 @@ ICA.addUnit({
      "**Not the same as the AIIB**, a multilateral bank (operating since 2016) with its own rules."
     ],
     pro:[
-     "**Debt.** The “debt-trap” debate and AidData’s evidence belong to Unit 15 ({{china-overseas-lending}}).",
+     "**Debt.** The “debt-trap” debate and AidData’s evidence belong to Unit 16 ({{china-overseas-lending}}).",
      "**Research design.** Study the host country’s politics as closely as China’s: who proposed the project, who negotiated the loan, how the contract was enforced. Comparative cases across hosts can separate Chinese strategy from local demand.",
      "**Sources.** The official Belt and Road Portal states Beijing’s view; project databases and host-government documents add others."
     ]
@@ -829,7 +891,7 @@ ICA.addUnit({
     builder:[
      "**Dates.** Coup, May 1961; Park assassinated, October 1979; Chun Doo-hwan’s military coup, December 1979, and the Gwangju Uprising, May 1980; June Democratic Struggle and the June 29 Declaration, 1987; new constitution with a single five-year presidential term, October 1987; Kim Dae-jung’s election, December 1997, the first transfer to the opposition.",
      "**Accountability.** Former presidents Chun and Roh Tae-woo were convicted in 1996; Park Geun-hye was removed by the Constitutional Court in 2017; Yoon was impeached on 14 December 2024 and removed by a unanimous 8–0 ruling on 4 April 2025. Lee Jae-myung took office in June 2025.",
-     "**Development.** Amsden (1989) and the developmental-state school (Unit 14: {{developmental-state-debate}})."
+     "**Development.** Amsden (1989) and the developmental-state school (Unit 15: {{developmental-state-debate}})."
     ],
     pro:[
      "**Causes of democratisation.** Middle-class and student mobilisation, labour, churches, elite splits, US pressure and the 1988 Olympics. Scholars weigh structure (growth produced a civil society) against agency (movement strategy, regime miscalculation).",
@@ -1028,7 +1090,7 @@ ICA.addUnit({
    levels:{
     starter:[
      "Memory politics is about how people and governments use the past: in textbooks, museums, anniversaries, apologies and court cases. In East Asia, memories of empire, war, colonial rule and dictatorship shape relations between states and debates inside them.",
-     "Japan’s relations with its neighbours are one part (Unit 4 and Unit 18). Others include China’s “century of humiliation”, a China–Korea dispute over ancient Goguryeo, and debates within South Korea and Taiwan about past repression.",
+     "Japan’s relations with its neighbours are one part (Unit 4 and Unit 19). Others include China’s “century of humiliation”, a China–Korea dispute over ancient Goguryeo, and debates within South Korea and Taiwan about past repression.",
      {key:"Describe whose memory, in which source, for what purpose; do not rank suffering."}
     ],
     builder:[
@@ -1111,8 +1173,8 @@ ICA.addUnit({
   ],
   bank:[
    {id:"e4u19-q01", lesson:"e4u19-l1", level:1, q:"In China’s party-state, which body is the core of political power?", options:[
-     {t:"The Politburo Standing Committee of the Chinese Communist Party", ok:true, why:"Right: the Party’s inner core, headed by the General Secretary."},
-     {t:"The National People’s Congress", why:"Formally the highest organ of state power, but it acts within Party guidance."},
+     {t:"The Party’s Politburo Standing Committee", ok:true, why:"Right: the Chinese Communist Party’s inner core, headed by the General Secretary."},
+     {t:"The National People’s Congress and its deputies", why:"Formally the highest organ of state power, but it acts within Party guidance."},
      {t:"The Supreme People’s Court", why:"Courts are state bodies under Party leadership, not the core of power."},
      {t:"The provincial governments", why:"Local state administrations, each led in practice by a provincial Party secretary."}]},
    {id:"e4u19-q02", lesson:"e4u19-l1", level:1, q:"What is the nomenklatura system?", options:[
@@ -1126,17 +1188,17 @@ ICA.addUnit({
      {t:"Merit-based promotion of provincial officials", why:"That was a key part of Nathan’s resilience argument."},
      {t:"Local pilots of new policies", why:"That supports Heilmann’s experimentation argument."}]},
    {id:"e4u19-q04", lesson:"e4u19-l1", level:3, q:"Mei finds that provinces whose leaders were later promoted had grown faster. A classmate says this proves growth is what gets officials promoted in China. What is the best response?", options:[
-     {t:"Li and Zhou found such a link for provincial leaders, but Shih, Adolph and Liu found factional ties mattered more at the top; state the level and period your claim covers", ok:true, why:"Right: both findings can hold at different levels, so scope conditions matter."},
+     {t:"The link holds for provincial leaders, not clearly at the top; state your scope", ok:true, why:"Right: Li and Zhou found such a link for provincial leaders, but Shih, Adolph and Liu found factional ties mattered more at the top. Both findings can hold at different levels, so scope conditions matter."},
      {t:"Growth has no relation to promotion at all", why:"Too strong: Li and Zhou found a link at the provincial level."},
-     {t:"The correlation proves causation because it is based on official data", why:"Official data do not turn a correlation into a cause, and their reliability is itself debated."},
+     {t:"The correlation proves causation because it is based on official provincial data", why:"Official data do not turn a correlation into a cause, and their reliability is itself debated."},
      {t:"Promotion in China is random", why:"No study cited here finds that; the debate is about which factors matter."}]},
    {id:"e4u19-q05", lesson:"e4u19-l1", level:2, q:"In 2013 the Party changed the market’s role from “basic” to “decisive”. How should a researcher treat this change?", options:[
-     {t:"As a signal of the leadership’s stated priorities, to be checked against what policies actually did later", ok:true, why:"Right: tifa show intent; implementation needs separate evidence."},
+     {t:"As a signal of stated priorities, to check against later policy", ok:true, why:"Right: tifa show the leadership’s intent; what policies actually did later needs separate evidence."},
      {t:"As proof that China privatised its state sector", why:"The state sector was strengthened in the following years."},
-     {t:"As meaningless, since official texts are propaganda", why:"Formulations matter to officials and are worth tracking."},
+     {t:"As meaningless, since all official Party texts are just propaganda", why:"Formulations matter to officials and are worth tracking."},
      {t:"As a law passed by the National People’s Congress", why:"It was a Party plenum decision, not an NPC law."}]},
    {id:"e4u19-q06", lesson:"e4u19-l1", level:3, q:"Tomás plans to interview local officials in China and publish their names and towns so readers can verify his claims. What should he do instead?", options:[
-     {t:"Anonymise interviewees, secure his notes and avoid details that could identify them, following do-no-harm rules", ok:true, why:"Right: interviewees may face risks the researcher does not."},
+     {t:"Anonymise interviewees and avoid identifying details", ok:true, why:"Right: anonymise, secure his notes and avoid details that could identify people, following do-no-harm rules. Interviewees may face risks the researcher does not."},
      {t:"Publish names but leave out the towns", why:"Names alone can expose people to risk."},
      {t:"Record interviews secretly so the officials speak freely", why:"Deception violates consent and could endanger people."},
      {t:"Nothing: transparency always comes first", why:"In risky settings, protecting participants comes before verifiability."}]},
@@ -1146,12 +1208,12 @@ ICA.addUnit({
      {t:"About 50 million", why:"Membership passed that level decades ago."},
      {t:"About 400 million", why:"Far too high: roughly one Chinese person in fourteen is a member."}]},
    {id:"e4u19-q08", lesson:"e4u19-l1", level:2, q:"Greitens and Truex (2020) surveyed over 500 China scholars. Which finding did they report?", options:[
-     {t:"About 9 per cent had been “invited to tea” by the authorities, and about a quarter of archive users had been denied access", ok:true, why:"Right: repressive experiences were “rare but real”."},
-     {t:"Most scholars had been expelled from China", why:"The survey found such experiences were relatively rare."},
+     {t:"About 9 per cent had been “invited to tea”", ok:true, why:"Right: about 9 per cent had been “invited to tea” by the authorities, and about a quarter of archive users had been denied access. Repressive experiences were “rare but real”."},
+     {t:"Most scholars had been expelled from China at least once", why:"The survey found such experiences were relatively rare."},
      {t:"No scholar reported any restriction", why:"Several kinds of restriction were reported."},
      {t:"Self-censorship was not seen as a problem", why:"Around 70 per cent agreed it was a problem in the field."}]},
    {id:"e4u19-q09", lesson:"e4u19-l1", level:3, q:"A thesis draft says: “China thinks local debt is not a problem.” What is the main weakness?", options:[
-     {t:"It treats China as one mind; it should say which body or person holds the view, in which source", ok:true, why:"Right: ministries, provinces, scholars and citizens disagree."},
+     {t:"It treats China as one mind", ok:true, why:"Right: it should say which body or person holds the view, in which source. Ministries, provinces, scholars and citizens disagree."},
      {t:"It should use “Beijing believes” instead", why:"That is the same overgeneralisation with a new word."},
      {t:"Local debt cannot be studied", why:"It can, with official data, bond records and interviews."},
      {t:"It should cite only Western sources", why:"Chinese sources are essential; the problem is attribution."}]},
@@ -1167,13 +1229,13 @@ ICA.addUnit({
      {t:"Global Security Initiative: the UN General Assembly, 2021", why:"The GSI was proposed at the Boao Forum in April 2022."},
      {t:"Global Civilization Initiative: Tianjin, 2025", why:"The GCI was proposed in Beijing in March 2023."}]},
    {id:"e4u19-q12", lesson:"e4u19-l2", level:3, q:"Amara finds that a Chinese provincial firm relabelled an old dam project as “Belt and Road” to win state loans, and that the host government had requested the dam. Which reading of the BRI does this support best?", options:[
-     {t:"The fragmented, demand-driven reading (Jones and Hameiri)", ok:true, why:"Right: local firms and host governments drive projects under the label."},
-     {t:"The grand-strategy reading", why:"Nothing here shows central planning; it shows local interests."},
+     {t:"The fragmented, demand-driven reading", ok:true, why:"Right: Jones and Hameiri’s reading, in which local firms and host governments drive projects under the label."},
+     {t:"The grand-strategy reading from Beijing", why:"Nothing here shows central planning; it shows local interests."},
      {t:"Power transition theory", why:"That theory is about rising and leading powers, not project origins."},
      {t:"The debt-trap thesis", why:"The case says nothing about debt distress or asset seizure."}]},
    {id:"e4u19-q13", lesson:"e4u19-l2", level:2, q:"Alastair Iain Johnston’s “Is China a Status Quo Power?” (2003) found that China…", options:[
-     {t:"had joined most major international institutions and largely kept their rules, though not on issues such as Taiwan", ok:true, why:"Right: he measured participation and compliance."},
-     {t:"was a revisionist power seeking to overturn every institution", why:"He found the opposite for most institutions."},
+     {t:"had joined most major institutions and largely kept their rules", ok:true, why:"Right: he measured participation and compliance, with exceptions on issues such as Taiwan."},
+     {t:"was a revisionist power seeking to overturn every major institution", why:"He found the opposite for most institutions."},
      {t:"had refused to join the WTO", why:"China joined the WTO in December 2001."},
      {t:"would inevitably go to war with the United States", why:"That is closer to a power transition reading, which he questioned."}]},
    {id:"e4u19-q14", lesson:"e4u19-l2", level:1, q:"Graham Allison’s “Thucydides’s Trap” project counted how many cases of a rising power challenging a ruling one over 500 years, and how many ended in war?", options:[
@@ -1182,23 +1244,23 @@ ICA.addUnit({
      {t:"16 cases, all wars", why:"Four ended without war."},
      {t:"4 cases, 1 war", why:"Too few: four is the number of cases that avoided war."}]},
    {id:"e4u19-q15", lesson:"e4u19-l2", level:3, q:"After a regional crisis, most of China’s neighbours increase trade with China and avoid joining a US-led coalition, while keeping their own militaries. Which argument does this evidence fit best?", options:[
-     {t:"Kang’s accommodation argument, or Southeast Asian hedging, depending on whether they defer to China", ok:true, why:"Right: no balancing coalition forms; whether it is accommodation or hedging depends on further evidence of deference."},
+     {t:"Kang’s accommodation argument, or hedging", ok:true, why:"Right: no balancing coalition forms. Whether it is Kang’s accommodation or Southeast Asian hedging depends on further evidence of deference to China."},
      {t:"Mearsheimer’s prediction of balancing", why:"Balancing would mean joining coalitions or arming against China."},
      {t:"The democratic peace", why:"That theory concerns wars between democracies."},
      {t:"Power transition theory’s prediction of war", why:"Nothing here involves war or a challenger nearing the leader."}]},
    {id:"e4u19-q16", lesson:"e4u19-l2", level:2, q:"Why do translations of 韬光养晦 matter?", options:[
-     {t:"“Keep a low profile” and “hide your capabilities and bide your time” imply different intentions", ok:true, why:"Right: a translation can carry an argument."},
+     {t:"Different renderings imply different intentions", ok:true, why:"Right: “keep a low profile” and “hide your capabilities and bide your time” imply different intentions; a translation can carry an argument."},
      {t:"There is only one correct translation, agreed by all", why:"Chinese officials and critics render it differently."},
      {t:"The phrase was coined by Xi Jinping", why:"It is attributed to Deng Xiaoping around 1990."},
      {t:"It is the name of a treaty", why:"It is a guideline, not a treaty."}]},
    {id:"e4u19-q17", lesson:"e4u19-l2", level:2, q:"What did M. Taylor Fravel find in *Strong Borders, Secure Nation* (2008)?", options:[
-     {t:"China compromised in most of its territorial disputes on land, often when facing unrest at home", ok:true, why:"Right: behaviour varies by issue."},
-     {t:"China never compromised on any territory", why:"He found many compromises on land borders."},
+     {t:"China compromised in most land disputes, often amid unrest at home", ok:true, why:"Right: China compromised in most of its territorial disputes on land, often when facing unrest at home; behaviour varies by issue."},
+     {t:"China never compromised on any territory, whether on land or at sea", why:"He found many compromises on land borders."},
      {t:"China had no territorial disputes", why:"China had many disputes with neighbours."},
      {t:"China gave up its maritime claims", why:"Maritime claims have been pressed hard."}]},
    {id:"e4u19-q18", lesson:"e4u19-l2", level:3, q:"Priya writes: “China’s Global Security Initiative is simply a plan to dominate the world.” How should she revise it?", options:[
-     {t:"State the Chinese government’s description and critics’ arguments, each attributed, then give her own assessment with evidence", ok:true, why:"Right: attribution, then argument."},
-     {t:"Replace it with “China’s Global Security Initiative is harmless”", why:"Equally unattributed opinion."},
+     {t:"Attribute both Beijing’s description and critics’ views, then argue with evidence", ok:true, why:"Right: state the Chinese government’s description and critics’ arguments, each attributed, then give her own assessment with evidence. Attribution, then argument."},
+     {t:"Replace it with “China’s Global Security Initiative is harmless and purely peaceful”", why:"Equally unattributed opinion."},
      {t:"Delete any mention of the initiative", why:"Avoiding the topic is not neutrality."},
      {t:"Quote only Western critics", why:"One-sided sourcing; include Beijing’s stated aims."}]},
 
@@ -1213,14 +1275,14 @@ ICA.addUnit({
      {t:"China planned the attack alone", why:"China entered later, in October 1950."},
      {t:"The war had no Korean causes at all", why:"Most historians combine international decisions with civil-war roots."}]},
    {id:"e4u19-q21", lesson:"e4u19-l3", level:1, q:"What did South Korea’s June Democratic Struggle of 1987 achieve?", options:[
-     {t:"Acceptance of direct presidential elections and a new constitution", ok:true, why:"Right: the June 29 Declaration and the October 1987 constitution."},
-     {t:"Unification with the North", why:"No: the peninsula remains divided."},
+     {t:"Direct presidential elections", ok:true, why:"Right: acceptance of direct presidential elections and a new constitution, through the June 29 Declaration and the October 1987 constitution."},
+     {t:"Unification with the North under one government", why:"No: the peninsula remains divided."},
      {t:"The end of the Korean War", why:"The armistice was signed in 1953."},
      {t:"Membership of the OECD", why:"Unrelated; that came in 1996."}]},
    {id:"e4u19-q22", lesson:"e4u19-l3", level:2, q:"In December 2024 South Korea’s president declared martial law. What happened next?", options:[
-     {t:"The National Assembly voted to lift it within hours, impeached him, and the Constitutional Court removed him in April 2025", ok:true, why:"Right: the 8–0 ruling came on 4 April 2025."},
+     {t:"The Assembly lifted it within hours, and he was later removed", ok:true, why:"Right: the National Assembly voted to lift it within hours and impeached him; the Constitutional Court removed him by 8–0 on 4 April 2025."},
      {t:"The army took power for two years", why:"Martial law lasted about six hours."},
-     {t:"The Constitutional Court upheld martial law", why:"It removed the president."},
+     {t:"The Constitutional Court upheld martial law and the president stayed", why:"It removed the president."},
      {t:"Nothing changed", why:"He was impeached and removed."}]},
    {id:"e4u19-q23", lesson:"e4u19-l3", level:3, q:"A policy paper says North Korea builds nuclear weapons mainly to keep the ruling family in power and reward its elites. Which of Sagan’s models is this?", options:[
      {t:"The domestic politics model", ok:true, why:"Right: internal coalitions and legitimacy."},
@@ -1228,22 +1290,22 @@ ICA.addUnit({
      {t:"The norms and status model", why:"That stresses prestige and recognition."},
      {t:"Power transition theory", why:"Not one of Sagan’s three models."}]},
    {id:"e4u19-q24", lesson:"e4u19-l3", level:1, q:"What was the Agreed Framework (1994)?", options:[
-     {t:"A US–North Korea deal freezing the North’s plutonium programme in return for fuel oil and light-water reactors", ok:true, why:"Right; it collapsed in 2002."},
-     {t:"The peace treaty ending the Korean War", why:"No peace treaty has been signed."},
-     {t:"The inter-Korean Basic Agreement", why:"That was signed by the two Koreas in 1991."},
+     {t:"A US–North Korea deal to freeze plutonium work", ok:true, why:"Right: the North froze its plutonium programme in return for fuel oil and light-water reactors; the deal collapsed in 2002."},
+     {t:"The peace treaty that formally ended the Korean War", why:"No peace treaty has been signed."},
+     {t:"The inter-Korean Basic Agreement on reconciliation", why:"That was signed by the two Koreas in 1991."},
      {t:"A UN sanctions resolution", why:"Sanctions resolutions began in 2006."}]},
    {id:"e4u19-q25", lesson:"e4u19-l3", level:2, q:"According to SIPRI (June 2026), how many nuclear warheads has North Korea possibly assembled?", options:[
-     {t:"Around 60, with fissile material for at least 30 more", ok:true, why:"Right: an estimate, with uncertainty."},
+     {t:"Around 60", ok:true, why:"Right: around 60, with fissile material for at least 30 more; an estimate, with uncertainty."},
      {t:"None", why:"It has tested six times and assembled warheads, by SIPRI’s estimate."},
      {t:"Around 600", why:"That is closer to SIPRI’s estimate for China (about 620)."},
      {t:"Exactly 6", why:"Six is the number of nuclear tests, not warheads."}]},
    {id:"e4u19-q26", lesson:"e4u19-l3", level:3, q:"Kenji writes: “Both Koreas now agree they are two separate states, so the issue is settled.” What is the most accurate correction as of November 2026?", options:[
-     {t:"The North calls them hostile states and has dropped unification; the South speaks of peaceful two-state coexistence while still aiming for unification, and critics in the South object", ok:true, why:"Right: the positions differ in content and are contested."},
+     {t:"The North calls them hostile states; the South still aims for unification", ok:true, why:"Right: the positions differ in content and are contested. The North has dropped unification; the South speaks of peaceful two-state coexistence while still aiming for unification, and critics in the South object."},
      {t:"Both have signed a treaty recognising each other", why:"No such treaty exists."},
-     {t:"South Korea has adopted the North’s “hostile states” line", why:"Seoul speaks of peaceful coexistence."},
+     {t:"South Korea has adopted the North’s “hostile states” line and dropped unification from its goals", why:"Seoul speaks of peaceful coexistence."},
      {t:"North Korea now seeks unification by peaceful means", why:"Its 2026 constitution drops unification wording."}]},
    {id:"e4u19-q27", lesson:"e4u19-l3", level:2, q:"What did the inter-Korean Basic Agreement (1991) say about the two Koreas’ relationship?", options:[
-     {t:"It was “not being a relationship between states” but a special interim relationship towards reunification", ok:true, why:"Right: the special-relationship formula."},
+     {t:"A special interim relationship, not one between states", ok:true, why:"Right: “not being a relationship between states” but a special interim relationship towards reunification."},
      {t:"It was a normal relationship between two foreign states", why:"The agreement explicitly rejected that."},
      {t:"The North would join the South", why:"No: it set out a special relationship, not absorption."},
      {t:"Both would give up their UN seats", why:"They had just joined the UN."}]},
@@ -1254,9 +1316,9 @@ ICA.addUnit({
      {t:"Twice, granting it observer status", why:"No: the text never mentions Taiwan."},
      {t:"Five times", why:"No: the text never mentions Taiwan."}]},
    {id:"e4u19-q29", lesson:"e4u19-l4", level:2, q:"Which wording appears in the US–PRC Shanghai Communiqué of 1972?", options:[
-     {t:"The US “acknowledges” that all Chinese on either side of the Strait maintain there is but one China, and “does not challenge that position”", ok:true, why:"Right: exact wording from the 1972 text."},
+     {t:"The US “acknowledges” the one-China view and “does not challenge” it", ok:true, why:"Right: the US “acknowledges” that all Chinese on either side of the Strait maintain there is but one China, and “does not challenge that position”: exact wording from the 1972 text."},
      {t:"The US “recognizes Taiwan as part of the PRC”", why:"The text does not say this."},
-     {t:"The US will “defend Taiwan with armed forces”", why:"No such commitment appears."},
+     {t:"The US will “defend Taiwan with armed forces” if it is ever attacked", why:"No such commitment appears."},
      {t:"The US “takes note of” China’s position", why:"That is Canada’s 1970 formula."}]},
    {id:"e4u19-q30", lesson:"e4u19-l4", level:2, q:"What is the Taiwan Relations Act?", options:[
      {t:"A US law of 1979 governing unofficial relations with Taiwan, including the provision of defensive arms", ok:true, why:"Right: Public Law 96-8."},
@@ -1264,19 +1326,19 @@ ICA.addUnit({
      {t:"A defence treaty committing US troops to Taiwan", why:"It does not commit forces."},
      {t:"A Taiwanese law on independence", why:"It is a US law."}]},
    {id:"e4u19-q31", lesson:"e4u19-l4", level:3, q:"Lucía writes: “Most countries agree that Taiwan is part of the PRC.” What is the best correction?", options:[
-     {t:"Most recognise the PRC government, but their one China policies use different wordings, such as “acknowledge” or “take note of”, which do not necessarily adopt the PRC’s position", ok:true, why:"Right: recognition of a government is not the same as endorsing a territorial claim."},
-     {t:"Most countries recognise Taiwan as independent", why:"As of mid-2026, 12 states recognised the ROC."},
+     {t:"Most recognise the PRC government, but use varied wordings on Taiwan", ok:true, why:"Right: their one China policies use different wordings, such as “acknowledge” or “take note of”, which do not necessarily adopt the PRC’s position. Recognising a government is not the same as endorsing a territorial claim."},
+     {t:"Most countries recognise Taiwan as an independent state rather than the PRC", why:"As of mid-2026, 12 states recognised the ROC."},
      {t:"The sentence is correct", why:"It ignores the different wordings governments chose."},
      {t:"No country has any position", why:"Every government that recognises the PRC has some stated position."}]},
    {id:"e4u19-q32", lesson:"e4u19-l4", level:2, q:"How do Beijing, the KMT and the DPP differ on the “1992 Consensus”?", options:[
-     {t:"Beijing reads it as both sides of the Strait belonging to one China and working together towards reunification; the KMT as “one China, respective interpretations”; the DPP does not accept it", ok:true, why:"Right: each reading is attributed to its holder."},
-     {t:"All three accept it with the same meaning", why:"They disagree."},
+     {t:"Beijing stresses one China; the KMT, separate interpretations; the DPP rejects it", ok:true, why:"Right: each reading is attributed. Beijing reads it as both sides belonging to one China and working towards reunification; the KMT as “one China, respective interpretations”; the DPP does not accept it."},
+     {t:"All three accept it with the same meaning: one China, with respective interpretations", why:"They disagree."},
      {t:"Only the DPP accepts it", why:"The DPP does not accept it."},
      {t:"It is a treaty signed by both governments", why:"It is a disputed understanding, not a signed treaty."}]},
    {id:"e4u19-q33", lesson:"e4u19-l4", level:3, q:"A student writes that the US has promised to defend Taiwan under the Taiwan Relations Act. Which correction is most accurate?", options:[
-     {t:"The Act provides for defensive arms and keeps US capacity to resist coercion, but leaves open whether the US would intervene: strategic ambiguity", ok:true, why:"Right: the Act does not commit US forces."},
+     {t:"It provides defensive arms but leaves intervention open: strategic ambiguity", ok:true, why:"Right: the Act provides for defensive arms and keeps US capacity to resist coercion, but does not commit US forces."},
      {t:"The Act forbids any arms sales to Taiwan", why:"It provides for “arms of a defensive character”."},
-     {t:"The Act was replaced by a defence treaty in 2026", why:"No such treaty exists."},
+     {t:"The Act was replaced in 2026 by a defence treaty that commits US troops to Taiwan", why:"No such treaty exists."},
      {t:"The Act recognises Taiwan as a state", why:"It governs unofficial relations."}]},
    {id:"e4u19-q34", lesson:"e4u19-l4", level:1, q:"What did President Lai Ching-te say about the ROC and the PRC in March 2025?", options:[
      {t:"They “are not subordinate to each other”", ok:true, why:"Right, in his press conference of 13 March 2025."},
@@ -1289,9 +1351,9 @@ ICA.addUnit({
      {t:"A claim to territory in a third state", why:"It concerns partnerships."},
      {t:"Membership of NATO", why:"Mongolia is not a member."}]},
    {id:"e4u19-q36", lesson:"e4u19-l4", level:3, q:"Sione argues that Taiwan’s chip industry guarantees its security. Which response is most balanced?", options:[
-     {t:"The “silicon shield” argument holds that dependence deters attack, but critics say it may cut both ways and thin as production spreads abroad", ok:true, why:"Right: both the argument and its critics are attributed."},
+     {t:"Some say dependence deters attack; critics say it may cut both ways", ok:true, why:"Right: the “silicon shield” argument and its critics are both attributed. Critics add that the shield may thin as production spreads abroad."},
      {t:"Chips have no political significance", why:"The debate exists because they do."},
-     {t:"The shield is a binding international treaty", why:"It is an argument, not a treaty."},
+     {t:"The shield is a binding international treaty that obliges states to defend Taiwan", why:"It is an argument, not a treaty."},
      {t:"All analysts agree with Sione", why:"Many analysts dispute it."}]},
 
    {id:"e4u19-q37", lesson:"e4u19-l5", level:1, q:"What prompted ASEAN Plus Three’s financial cooperation, such as the Chiang Mai Initiative?", options:[
@@ -1300,8 +1362,8 @@ ICA.addUnit({
      {t:"The founding of the EU", why:"Unrelated to Asian financial cooperation."},
      {t:"The Korean War", why:"Far earlier."}]},
    {id:"e4u19-q38", lesson:"e4u19-l5", level:2, q:"Which is accurate about the China–Japan–South Korea leaders’ summit as of November 2026?", options:[
-     {t:"The ninth met in Seoul in May 2024; a tenth, with Japan as host, had not been held", ok:true, why:"Right: China said in November 2025 that conditions were “not yet ready”."},
-     {t:"It has met every year since 2008", why:"After 2012 it met only in 2015, 2018, 2019 and 2024."},
+     {t:"The ninth met in May 2024; a tenth had not been held", ok:true, why:"Right: the ninth met in Seoul in May 2024; a tenth, with Japan as host, had not been held. China said in November 2025 that conditions were “not yet ready”."},
+     {t:"It has met every year without a break since its first summit in 2008", why:"After 2012 it met only in 2015, 2018, 2019 and 2024."},
      {t:"It was dissolved by treaty in 2025", why:"No government has dissolved it."},
      {t:"It has never met", why:"It first met as a stand-alone summit in 2008."}]},
    {id:"e4u19-q39", lesson:"e4u19-l5", level:3, q:"A paper argues: “East Asia has failed because it has no EU.” Which critique draws on Global IR?", options:[
@@ -1310,33 +1372,33 @@ ICA.addUnit({
      {t:"The EU has no institutions", why:"Inaccurate: the EU has many strong institutions."},
      {t:"Comparison between regions is never useful", why:"Comparison is useful if the outcome is defined and Europe is not the norm."}]},
    {id:"e4u19-q40", lesson:"e4u19-l5", level:2, q:"Jennifer Lind’s *Sorry States* (2008) argues that…", options:[
-     {t:"apologies can trigger domestic backlash that alarms neighbours, so their effects depend on domestic politics", ok:true, why:"Right: her focus is the domestic reaction to contrition."},
+     {t:"apologies can trigger backlash at home that alarms neighbours", ok:true, why:"Right: so their effects depend on domestic politics. Her focus is the domestic reaction to contrition."},
      {t:"apologies always resolve history disputes", why:"She argues their effects can be counterproductive."},
-     {t:"memory has no effect on threat perception", why:"Her book argues it does."},
+     {t:"memory has no effect on how states perceive threats from neighbours", why:"Her book argues it does."},
      {t:"only economic ties matter", why:"Her focus is memory."}]},
    {id:"e4u19-q41", lesson:"e4u19-l5", level:1, q:"What does “victimhood nationalism” (Lim Jie-Hyun) describe?", options:[
-     {t:"Nationalism built on a nation’s claimed status as a victim, which can make acknowledging its own wrongs harder", ok:true, why:"Right: nations compete to be recognised as victims."},
-     {t:"A treaty on war reparations", why:"It is a concept, not a treaty."},
+     {t:"Nationalism built on a nation’s claimed victimhood", ok:true, why:"Right: it can make acknowledging a nation’s own wrongs harder, as nations compete to be recognised as victims."},
+     {t:"A treaty on war reparations signed between Asian states", why:"It is a concept, not a treaty."},
      {t:"A policy of open borders", why:"Unrelated: it is a concept about memory."},
      {t:"The study of election results", why:"Unrelated: it is a concept about memory."}]},
    {id:"e4u19-q42", lesson:"e4u19-l5", level:3, q:"Ana sees East Asian states deepening trade and supply chains while summits are cancelled over history and territory. Which idea names this pattern?", options:[
-     {t:"The “Asia paradox” of deep economic interdependence alongside persistent political tension", ok:true, why:"Right: economics and politics pull in different directions."},
-     {t:"Democratic peace", why:"About wars between democracies."},
+     {t:"The “Asia paradox”", ok:true, why:"Right: deep economic interdependence alongside persistent political tension. Economics and politics pull in different directions."},
+     {t:"The democratic peace", why:"About wars between democracies."},
      {t:"Supranationalism", why:"East Asia lacks supranational institutions."},
      {t:"The tribute system", why:"A historic order, not today’s pattern."}]},
    {id:"e4u19-q43", lesson:"e4u19-l5", level:2, q:"What do scholars mean by the “East Asian peace”?", options:[
-     {t:"No full-scale interstate war between East Asian states since 1979, with a sharp fall in battle deaths", ok:true, why:"Right: Kivimäki (2014) and Tønnesson (2017)."},
-     {t:"A peace treaty signed by all East Asian states", why:"No such treaty exists; the Korean War ended only in an armistice."},
+     {t:"No full-scale interstate war in the region since 1979", ok:true, why:"Right: no full-scale interstate war between East Asian states since 1979, with a sharp fall in battle deaths (Kivimäki 2014; Tønnesson 2017)."},
+     {t:"A peace treaty signed by all East Asian states after the Cold War", why:"No such treaty exists; the Korean War ended only in an armistice."},
      {t:"The end of all disputes in the region", why:"Disputes and clashes continue."},
      {t:"A UN peacekeeping mission", why:"Unrelated: it is a scholarly description of a trend."}]},
    {id:"e4u19-q44", lesson:"e4u19-l5", level:3, q:"Dmitri wants to compare how museums in two countries present the same war. Which design is strongest?", options:[
-     {t:"Code the events, actors and emotions each museum presents and omits, with sources, and explain differences without ranking suffering", ok:true, why:"Right: systematic comparison with attribution."},
+     {t:"Code what each museum shows and omits, without ranking suffering", ok:true, why:"Right: code the events, actors and emotions each museum presents and omits, with sources, and explain differences without ranking suffering. Systematic comparison with attribution."},
      {t:"Decide which country is right, then select exhibits that prove it", why:"That is advocacy, not analysis."},
      {t:"Visit one museum and assume the other is similar", why:"No comparison."},
      {t:"Count visitors only", why:"Visitor numbers alone cannot show how the war is presented."}]},
    {id:"e4u19-q45", lesson:"e4u19-l5", level:2, q:"Which describes RCEP?", options:[
-     {t:"A trade agreement signed in 2020, the first to link China, Japan and South Korea, with ASEAN members, Australia and New Zealand", ok:true, why:"Right: in force from 2022."},
-     {t:"A security alliance led by the United States", why:"It is a trade agreement, and the US is not a member."},
+     {t:"A 2020 trade deal linking China, Japan, South Korea and others", ok:true, why:"Right: signed in 2020, the first agreement to link China, Japan and South Korea, with ASEAN members, Australia and New Zealand; in force from 2022."},
+     {t:"A security alliance led by the United States with its Asian allies", why:"It is a trade agreement, and the US is not a member."},
      {t:"An EU institution", why:"No: RCEP is an Asia-Pacific trade agreement."},
      {t:"The secretariat of the trilateral summit", why:"That is the TCS in Seoul."}]}
   ]

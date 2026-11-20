@@ -160,7 +160,7 @@ ICA.addUnit({
       {t:"`A` and `C`; the browser skips the broken line", why:"Browsers skip CSS they don’t understand, but JavaScript stops at an uncaught error."}
     ]},
     {id:"t2u4-l1-x7", type:"mcq", q:"Tomás’s friend says: “JavaScript is just the lightweight version of Java for websites.” What’s the accurate reply?", options:[
-      {t:"They’re separate languages with different rules; the similar name was chosen for marketing in 1995", ok:true, why:"Right. JavaScript was named to ride on Java’s popularity. The languages are designed differently and run in different ways."},
+      {t:"They’re separate languages; the name was a marketing choice", ok:true, why:"Right. JavaScript was named in 1995 to ride on Java’s popularity. The languages are designed differently and run in different ways."},
       {t:"True: JavaScript is Java with fewer features", why:"JavaScript isn’t a subset of Java. Code written for one doesn’t run in the other."},
       {t:"True, but only in older browsers", why:"At no point has JavaScript been a version of Java. Browsers once had a separate Java plug-in, which is now gone."},
       {t:"JavaScript is the old name for ECMAScript, which is Java’s web edition", why:"ECMAScript is the official standard **for JavaScript**, published by Ecma International. It has nothing to do with Java."}
@@ -200,7 +200,7 @@ ICA.addUnit({
    learn:[
     {h:"Values come in types", body:[
       {lead:"Everything a program works with is a value, and every value has a type that decides what you can do with it."},
-      "You can add two numbers, but “adding” two pieces of text joins them. You can ask whether something is true. So JavaScript keeps track of what kind of value each one is. The five you’ll use first:",
+      "You can add two numbers, but “adding” two pieces of text joins them. You can ask whether something is true. So JavaScript keeps track of what kind of value each one is. (This builds on Digital Foundations Unit 12, which introduces {{data-types-basics|data types}} without any one language.) The five you’ll use first:",
       {table:[
         ["Type","Examples","Used for"],
         ["[[string|String]]","`\"Amara\"`, `'café'`, `\"42\"`","Text of any kind, in quotes"],
@@ -587,7 +587,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u4-l4-x1", type:"mcq", q:"Priya writes a function that works out a total and `console.log`s it, with no `return`. The Console shows the right number, but `const total = basketTotal(prices);` leaves `total` as `undefined`. Why?", options:[
-      {t:"`console.log` only displays the value; without `return`, the function gives back `undefined`", ok:true, why:"Right. Logging shows the number to a person; returning hands it to the program. Add `return` with the total at the end of the function."},
+      {t:"Without `return`, the function gives back `undefined`", ok:true, why:"Right. `console.log` only displays the value: logging shows the number to a person; returning hands it to the program. Add `return` with the total at the end of the function."},
       {t:"`const` can’t store the result of a function", why:"`const` can store any value, including a function’s return value. There just isn’t one to store yet."},
       {t:"The function ran twice and the second time it was empty", why:"Calling it once runs it once. The problem is that nothing is returned."},
       {t:"The variable name `total` is reserved", why:"`total` is an ordinary name. The `undefined` comes from the missing `return`."}
@@ -751,7 +751,7 @@ ICA.addUnit({
       {t:"title.textContent = \"Noticeboard\";", flag:false, why:"Fixed text, and `textContent` never treats text as HTML. Safe."}, "\n", {t:"note.innerHTML = noteBox.value;", flag:true, why:"Whatever the visitor typed is parsed as HTML, so typed HTML with an event handler would run. Use `textContent`."}, "\n", {t:"list.innerHTML = \"\";", flag:false, why:"Setting it to an empty string just clears the list. Nothing from a visitor is involved."}, "\n", {t:"banner.innerHTML = \"<strong>New!</strong>\";", flag:false, why:"Fixed HTML written by Kenji himself, with no outside data. That’s the one acceptable use."}, "\n", {t:"author.innerHTML = `By ${nameBox.value}`;", flag:true, why:"A template literal doesn’t make it safe: the visitor’s name still goes into `innerHTML` and is parsed as HTML. Use `textContent`."}, "\n", {t:"count.textContent = noteBox.value.length;", flag:false, why:"`textContent` shows the number as plain text. Safe."}
     ]},
     {id:"t2u4-l5-x3", type:"mcq", q:"Mei writes `button.addEventListener(\"click\", showTotal());`. When the page loads, the total appears straight away, and later clicks do nothing. Why?", options:[
-      {t:"The brackets after `showTotal` call it immediately; the listener receives its result instead of the function", ok:true, why:"Right. `showTotal()` runs once, now, and returns `undefined`, so there’s no function left to run on clicks. Pass the function itself: `addEventListener(\"click\", showTotal)`."},
+      {t:"The brackets call `showTotal` immediately", ok:true, why:"Right. The listener receives its result instead of the function. `showTotal()` runs once, now, and returns `undefined`, so there’s no function left to run on clicks. Pass the function itself: `addEventListener(\"click\", showTotal)`."},
       {t:"The event name should be `\"onclick\"`", why:"The event is called `\"click\"`; `onclick` is the name of the old HTML attribute. The problem is the brackets."},
       {t:"A button can only be clicked once", why:"Listeners run on every click. This one never got a function to run."},
       {t:"`addEventListener` only works with arrow functions", why:"Any function works: a named one like `showTotal`, or an arrow function. It just has to be passed, not called."}
@@ -797,6 +797,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u4-q02","t2u4-q06","t2u4-q11","t2u4-q14","t2u4-q17","t2u4-q22","t2u4-q25","t2u4-q29","t2u4-q32","t2u4-q37","t2u4-q40","t2u4-q44"],
+  cpBank:[
+    {id:"t2u4-cp01", lesson:"t2u4-l1", level:2, q:"What does this line store in `site`?\n\n`const site = \"https://club.example\"; // our home page`", options:[{t:"`\"https:\"`", why:"That treats the first `//` as the start of a comment. Inside a string, it’s ordinary text."}, {t:"Nothing, because the whole line is a comment", why:"A comment runs from `//` to the end of the line, but only when that `//` is outside quotes. The statement before it runs."}, {t:"`\"https://club.example // our home page\"`", why:"The comment after the semicolon is outside the string, so JavaScript ignores it. It isn’t added to the text."}, {t:"`\"https://club.example\"`", ok:true, why:"Inside quotes, `//` is just text. The comment starts only at the `//` after the semicolon."}]},
+    {id:"t2u4-cp02", lesson:"t2u4-l1", level:1, q:"Bilal types `Console.log(\"Ready\");` with a capital C. Which kind of error does the Console report?", options:[{t:"A SyntaxError, because a bracket is missing", why:"The brackets and quotes are all there, so the grammar is fine. The problem is the name."}, {t:"A ReferenceError, because `Console` is a name that doesn’t exist", ok:true, why:"JavaScript is case-sensitive, so `Console` and `console` are different names. A name that doesn’t exist gives a ReferenceError."}, {t:"No error, because JavaScript ignores capital letters", why:"JavaScript is case-sensitive. `Console.log` and `console.Log` are both errors."}, {t:"A TypeError, because `\"Ready\"` is a string", why:"Logging a string is completely normal. The capital C is the problem."}]},
+    {id:"t2u4-cp03", lesson:"t2u4-l2", level:2, q:"What does `typeof (\"five\" * 2)` give?", options:[{t:"`\"string\"`", why:"`*` prefers numbers, so the result isn’t text. It’s NaN, and NaN’s type is `\"number\"`."}, {t:"`\"NaN\"`", why:"NaN is a value, not a type. `typeof NaN` gives `\"number\"`."}, {t:"`\"number\"`", ok:true, why:"`\"five\" * 2` gives NaN, and, confusingly, `typeof NaN` is `\"number\"`."}, {t:"`\"undefined\"`", why:"The calculation does give a value: NaN. Its type is `\"number\"`."}]},
+    {id:"t2u4-cp04", lesson:"t2u4-l2", level:2, q:"`const boxes = \"6\";` What does `console.log(boxes * 2, boxes + 2);` show?", options:[{t:"`12 62`", ok:true, why:"`*` prefers numbers, so `\"6\"` becomes 6 and the result is 12. `+` prefers joining text, so it gives `\"62\"`."}, {t:"`12 8`", why:"`+` with a string joins text, so `\"6\" + 2` is `\"62\"`, not 8."}, {t:"`66 62`", why:"`*` doesn’t repeat text. It converts `\"6\"` to a number and multiplies."}, {t:"`NaN NaN`", why:"`\"6\"` converts cleanly to a number, so both work. Only text that isn’t a number gives NaN."}]},
+    {id:"t2u4-cp05", lesson:"t2u4-l2", level:3, q:"Raj’s bill splitter converts both boxes with `Number(…)` but doesn’t check the number of people. Someone enters a bill of 60 and **0** people. The code shows `(bill / people).toFixed(2)`. What appears?", options:[{t:"An error message in the Console", why:"Dividing by zero doesn’t cause an error. It quietly gives `Infinity`."}, {t:"`Infinity`", ok:true, why:"Dividing by zero isn’t an error in JavaScript: `60 / 0` is `Infinity`, and `toFixed(2)` keeps it as `\"Infinity\"`. Check for zero before dividing."}, {t:"`0.00`", why:"That would be 0 ÷ 60. Here 60 is divided by 0, which gives `Infinity`."}, {t:"`NaN`", why:"NaN comes from calculations with no sensible number, such as `\"five\" * 2`. 60 ÷ 0 gives `Infinity`."}]},
+    {id:"t2u4-cp06", lesson:"t2u4-l3", level:1, q:"`const basket = [];` Then: `if (basket.length) { show(\"Checkout\"); } else { show(\"Your basket is empty\"); }`, where `show` puts a message on the page. What is shown?", options:[{t:"Checkout", why:"The condition is `basket.length`, which is 0. 0 is falsy, so the `if` block is skipped."}, {t:"Both messages, one after the other", why:"`if … else` runs exactly one of its two blocks, never both."}, {t:"Your basket is empty", ok:true, why:"An empty array’s `length` is 0, and 0 is falsy, so the `else` block runs."}, {t:"An error, because the condition isn’t `true` or `false`", why:"An `if` accepts any value and converts it. 0 counts as false."}]},
+    {id:"t2u4-cp07", lesson:"t2u4-l3", level:2, q:"How many times does the body of `for (let i = 10; i > 0; i = i - 3) { … }` run?", options:[{t:"3", why:"That misses the round where `i` is 1, which is still greater than 0."}, {t:"4", ok:true, why:"`i` is 10, 7, 4 and then 1, and each passes `i > 0`. Then `i` becomes -2, the check fails, and the loop ends."}, {t:"10", why:"`i` goes down by 3 each round, not by 1, so there are far fewer rounds."}, {t:"It never ends", why:"`i` gets smaller every round, so `i > 0` becomes false in the end."}]},
+    {id:"t2u4-cp08", lesson:"t2u4-l3", level:3, q:"Two input boxes hold 25 and 100. Asha’s code says `if (a.value > b.value) { … }`. Does the block run?", options:[{t:"Yes: `.value` gives strings, and `\"25\" > \"100\"` is true as text", ok:true, why:"Strings compare character by character, and “2” comes after “1”. Convert with `Number(…)` before comparing amounts."}, {t:"No, because 25 is less than 100", why:"That’s true for numbers, but `.value` is always a string. As text, `\"25\"` comes after `\"100\"`."}, {t:"No, because comparing two strings causes an error", why:"Strings can be compared without any error. The result just follows text order."}, {t:"Yes, because JavaScript turns typed digits into numbers", why:"`.value` stays a string, even for `<input type=\"number\">`. The block runs only because of text order."}]},
+    {id:"t2u4-cp09", lesson:"t2u4-l4", level:1, q:"`function ticket(price, qty = 1) { return price * qty; }` What is `ticket(8)`?", options:[{t:"NaN", why:"That’s what happens without a default: `8 * undefined`. Here `qty = 1` fills the gap."}, {t:"undefined", why:"The function has a `return`, so it gives back a value: 8."}, {t:"An error, because an argument is missing", why:"Leaving out an argument is allowed. The parameter gets its default, or `undefined` if it has none."}, {t:"8", ok:true, why:"The second argument is missing, so `qty` uses its default value, 1: 8 × 1 = 8."}]},
+    {id:"t2u4-cp10", lesson:"t2u4-l4", level:3, q:"`const half = (n) => { n / 2; };` What does `console.log(half(10));` show?", options:[{t:"`undefined`", ok:true, why:"With braces, an arrow function has an ordinary body and needs `return`. Without it, the function gives back `undefined`."}, {t:"`5`", why:"The value is worked out but never returned. Only an arrow with no braces returns its expression automatically."}, {t:"An error, because arrow functions can’t use braces", why:"Braces are allowed. They just mean you have to write `return` yourself."}, {t:"The text `n / 2`", why:"JavaScript doesn’t show code as text here. The function returns nothing, so `undefined` is logged."}]},
+    {id:"t2u4-cp11", lesson:"t2u4-l4", level:3, q:"`const stall = { name: \"Plant swap\", tables: 12 };` Later the code runs `stall.tables = stall.tables + 2;`. What happens?", options:[{t:"A TypeError: assignment to a constant variable", why:"That error comes from reassigning the name itself, as in `stall = …`. Changing a property is allowed."}, {t:"Nothing changes, because `const` objects are read-only", why:"`const` doesn’t make the contents read-only, just as you can still `push` to a `const` array."}, {t:"It works: `stall.tables` becomes 14", ok:true, why:"`const` stops the name `stall` pointing to a different object. It doesn’t freeze the object’s properties."}, {t:"It adds a second `tables` property", why:"An object has one property for each name. Assigning to `stall.tables` replaces its value."}]},
+    {id:"t2u4-cp12", lesson:"t2u4-l5", level:2, q:"Nia wants every `.price` on the page to get the class `sale`. `document.querySelector(\".price\").classList.add(\"sale\");` changes only the first one. What fixes it?", options:[{t:"Change the selector to `#price`", why:"An id matches one element at most. She needs every matching element."}, {t:"Run the same line again once for each price", why:"Each run of `querySelector(\".price\")` finds the same first element again."}, {t:"Use `classList.toggle` instead of `add`", why:"`toggle` still changes only that one element. The problem is that only one element was found."}, {t:"Use `querySelectorAll(\".price\")` and add the class in a `for...of` loop", ok:true, why:"`querySelector` gives back only the first match. `querySelectorAll` gives all of them, in a list you can loop over."}]}
+  ],
   codex:[
    {id:"js-what-it-does", title:"What JavaScript does, and where it runs", aka:["JavaScript","JS","ECMAScript","script element","defer"], tags:["javascript","basics","web"],
     summary:"JavaScript is the programming language that gives web pages behaviour; browsers download it with the page and run it on your device.",
@@ -1255,9 +1269,9 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u4-q01", lesson:"t2u4-l1", level:1, q:"What does JavaScript add to a web page that HTML and CSS can’t?", options:[
-     {t:"Behaviour: responding to taps and typing, calculating, and changing the page while it’s open", ok:true, why:"HTML gives structure and CSS gives presentation; reacting and calculating need a programming language."},
+     {t:"Behaviour: reacting to what visitors do", ok:true, why:"Responding to taps and typing, calculating, and changing the page while it’s open. HTML gives structure and CSS gives presentation; reacting and calculating need a programming language."},
      {t:"The text and headings", why:"Content is HTML’s job. JavaScript can change text, but the page’s content belongs in the HTML."},
-     {t:"Colours, fonts and layout", why:"That’s CSS. JavaScript can switch classes that CSS styles, but the styling itself lives in CSS."},
+     {t:"Colours, fonts and the layout of the page", why:"That’s CSS. JavaScript can switch classes that CSS styles, but the styling itself lives in CSS."},
      {t:"The web address of the page", why:"Addresses come from where the file is hosted, not from JavaScript."}
    ]},
    {id:"t2u4-q02", lesson:"t2u4-l1", level:1, q:"Where does the JavaScript of an ordinary web page run?", options:[
@@ -1291,19 +1305,19 @@ ICA.addUnit({
      {t:"Anywhere: errors don’t say where they happened", why:"They do: the file, line and column are right there, and clicking them in the Console jumps to the line."}
    ]},
    {id:"t2u4-q07", lesson:"t2u4-l1", level:3, q:"Kenji gets a message in a game’s chat: “Open your browser Console on the game site and paste this code to unlock free coins.” What should he do?", options:[
-     {t:"Not paste it: code in the Console runs with his login on that site and could take over his account", ok:true, why:"This is a known scam. Console code can do anything the page can do as him. Some browsers warn about pasting for exactly this reason."},
+     {t:"Not paste it: it could take over his account", ok:true, why:"Code in the Console runs with his login on that site. This is a known scam: Console code can do anything the page can do as him. Some browsers warn about pasting for exactly this reason."},
      {t:"Paste it, because the Console can’t change anything important", why:"The Console runs real JavaScript on the page, with his session: it can read and send his data."},
      {t:"Paste it, but only on a phone", why:"Phones have no Console anyway, and the risk is the same wherever the code runs."},
      {t:"Paste it and then close the tab quickly", why:"The code runs the instant it’s entered; closing the tab afterwards doesn’t undo what it did."}
    ]},
    {id:"t2u4-q08", lesson:"t2u4-l1", level:1, q:"What is ECMAScript?", options:[
-     {t:"The official standard that defines the JavaScript language", ok:true, why:"Ecma International publishes it, and the TC39 committee updates it every year. Browsers implement it."},
+     {t:"The official standard for the JavaScript language", ok:true, why:"Ecma International publishes it, and the TC39 committee updates it every year. Browsers implement it."},
      {t:"A newer version of Java for web pages", why:"It has nothing to do with Java; it’s the standard for JavaScript."},
      {t:"A browser made by Ecma", why:"It’s a specification document, not a browser."},
-     {t:"A library you must install to use JavaScript", why:"Nothing needs installing: browsers already implement the ECMAScript standard."}
+     {t:"A library you must install before you can use JavaScript", why:"Nothing needs installing: browsers already implement the ECMAScript standard."}
    ]},
    {id:"t2u4-q09", lesson:"t2u4-l1", level:3, q:"Hana types `console.log(\"Hello\")` into the Console. It shows `Hello`, then a grey `undefined`. What does the `undefined` mean?", options:[
-     {t:"The Console is showing the result of the line she typed; `console.log` gives back no value", ok:true, why:"The Console prints the value of each line you enter. `console.log` displays its message and returns nothing, which shows as `undefined`. It isn’t an error."},
+     {t:"`console.log` gives back no value", ok:true, why:"The Console prints the value of each line you enter. `console.log` displays its message and returns nothing, which shows as `undefined`. It isn’t an error."},
      {t:"Her code has an error", why:"Errors appear in red with a type such as ReferenceError. This is just a value."},
      {t:"The word Hello wasn’t defined", why:"`\"Hello\"` is a string, and it was logged successfully."},
      {t:"The browser doesn’t support console.log", why:"Every browser supports it; the Hello line proves it worked."}
@@ -1334,10 +1348,10 @@ ICA.addUnit({
      {t:"A SyntaxError", why:"It’s a valid string that happens to contain a dollar sign and braces."}
    ]},
    {id:"t2u4-q14", lesson:"t2u4-l2", level:3, q:"Mei’s page adds two amounts typed into boxes, 15 and 25, and shows 1525 instead of 40. What’s the fix?", options:[
-     {t:"Convert each value with `Number(…)` before adding", ok:true, why:"Typed values arrive as strings, and `+` joins strings. `Number(\"15\") + Number(\"25\")` is 40."},
+     {t:"Convert each value with `Number(…)`", ok:true, why:"Convert before adding. Typed values arrive as strings, and `+` joins strings. `Number(\"15\") + Number(\"25\")` is 40."},
      {t:"Use `*` instead of `+`", why:"That would multiply (375), not add. The problem is the type, not the operator."},
      {t:"Put the values in quotes", why:"They’re already strings; that’s the problem."},
-     {t:"Use `toFixed(2)` on the result", why:"Rounding a joined string doesn’t turn it into a sum."}
+     {t:"Use `toFixed(2)` on the result of the sum", why:"Rounding a joined string doesn’t turn it into a sum."}
    ]},
    {id:"t2u4-q15", lesson:"t2u4-l2", level:1, q:"Which of these is **not** a valid JavaScript variable name?", options:[
      {t:"`first-name`", ok:true, why:"A hyphen is the minus operator, so this reads as `first` minus `name`. Use `firstName`."},
@@ -1346,29 +1360,29 @@ ICA.addUnit({
      {t:"`$price`", why:"`$` is allowed in names."}
    ]},
    {id:"t2u4-q16", lesson:"t2u4-l2", level:2, q:"What does `0.1 + 0.2 === 0.3` give?", options:[
-     {t:"`false`, because 0.1 + 0.2 is stored as 0.30000000000000004", ok:true, why:"Most decimals can’t be stored exactly in binary, so the sum is very slightly off. Round for display, or compare with a small tolerance."},
-     {t:"`true`, because that’s basic arithmetic", why:"In exact maths it would be true, but computer numbers store decimals approximately."},
+     {t:"`false`: the sum is 0.30000000000000004", ok:true, why:"Most decimals can’t be stored exactly in binary, so 0.1 + 0.2 is very slightly off. Round for display, or compare with a small tolerance."},
+     {t:"`true`, because that’s just basic arithmetic", why:"In exact maths it would be true, but computer numbers store decimals approximately."},
      {t:"An error", why:"The comparison works fine; it just gives a surprising result."},
      {t:"`NaN`", why:"All three are real numbers, so nothing is NaN. The comparison gives a boolean."}
    ]},
    {id:"t2u4-q17", lesson:"t2u4-l2", level:3, q:"Dmitri writes `const total = 0;` and later, in a loop, `total = total + price;`. The Console shows `TypeError: Assignment to constant variable.` What should he change?", options:[
-     {t:"Declare it with `let total = 0;`, because its value is reassigned", ok:true, why:"`const` names can’t be pointed at a new value. A running total changes, so it needs `let`."},
+     {t:"Declare it with `let total = 0;`", ok:true, why:"Its value is reassigned, and `const` names can’t be pointed at a new value. A running total changes, so it needs `let`."},
      {t:"Use `==` instead of `=`", why:"`==` compares; it doesn’t store anything. He needs assignment, which requires `let`."},
      {t:"Put the 0 in quotes", why:"That would make it a string and cause joining instead of adding. The error is about `const`."},
-     {t:"Move the `const` inside the loop", why:"It would still be a `const`, so the same error appears. And a total created inside the loop would restart at 0 on every round, so it could never build up."}
+     {t:"Move the `const` inside the loop instead", why:"It would still be a `const`, so the same error appears. And a total created inside the loop would restart at 0 on every round, so it could never build up."}
    ]},
    {id:"t2u4-q18", lesson:"t2u4-l2", level:1, q:"What is the usual difference between `undefined` and `null`?", options:[
-     {t:"`undefined` means nothing has been set; `null` is a value someone chose to mean “empty”", ok:true, why:"JavaScript produces `undefined` for unset things; code and browser features use `null` on purpose, such as `querySelector` finding no match."},
+     {t:"`undefined`: never set; `null`: empty on purpose", ok:true, why:"`undefined` means nothing has been set; `null` is a value someone chose to mean “empty”. JavaScript produces `undefined` for unset things; code and browser features use `null` on purpose, such as `querySelector` finding no match."},
      {t:"They are exactly the same value", why:"They’re different values of different types (`null === undefined` is false), though both mean “no real value”."},
-     {t:"`null` is an error and `undefined` isn’t", why:"Neither is an error by itself; errors happen when you try to use them like real values."},
+     {t:"`null` means an error happened and `undefined` doesn’t", why:"Neither is an error by itself; errors happen when you try to use them like real values."},
      {t:"`undefined` is a string and `null` is a number", why:"Each is its own type. `typeof undefined` is \"undefined\"; `typeof null` is \"object\" only because of an old bug."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t2u4-q19", lesson:"t2u4-l3", level:1, q:"Why is `===` usually preferred over `==`?", options:[
-     {t:"`===` compares without converting types, so there are no hidden conversions", ok:true, why:"`==` converts values first with rules that surprise people (`\"\" == 0` is true). `===` needs the same type and value."},
+     {t:"`===` doesn’t convert types before comparing", ok:true, why:"That means there are no hidden conversions. `==` converts values first with rules that surprise people (`\"\" == 0` is true). `===` needs the same type and value."},
      {t:"`===` is faster to type", why:"It’s one character longer. The reason is predictability."},
      {t:"`==` doesn’t work in modern browsers", why:"It still works; it’s just easy to misread."},
-     {t:"`===` assigns and compares at the same time", why:"Comparison operators never assign. Assignment is a single `=`."}
+     {t:"`===` assigns a value and compares it at the same time", why:"Comparison operators never assign. Assignment is a single `=`."}
    ]},
    {id:"t2u4-q20", lesson:"t2u4-l3", level:2, q:"`const fruits = [\"fig\", \"kiwi\", \"lime\"];` What is `fruits[fruits.length - 1]`?", options:[
      {t:"`\"lime\"`", ok:true, why:"`length` is 3, so this is `fruits[2]`, the last item (indexes are 0, 1, 2)."},
@@ -1377,7 +1391,7 @@ ICA.addUnit({
      {t:"`3`", why:"3 is the length; the expression uses it to find the last item."}
    ]},
    {id:"t2u4-q21", lesson:"t2u4-l3", level:2, q:"`const list = [\"tea\", \"rice\"];` then `list.push(\"oil\");`. What is `list.length` now, and did the `const` cause an error?", options:[
-     {t:"3, and no error: `const` stops reassigning the name, not changing the array’s contents", ok:true, why:"`push` adds to the same array. Only `list = [...]` (pointing the name elsewhere) would be an error."},
+     {t:"3, and no error", ok:true, why:"`const` stops reassigning the name, not changing the array’s contents. `push` adds to the same array. Only `list = [...]` (pointing the name elsewhere) would be an error."},
      {t:"2, because `const` arrays can’t grow", why:"`const` doesn’t freeze contents. The array now has three items."},
      {t:"An error: Assignment to constant variable", why:"That error is for `list = …`. `push` changes the array without reassigning the name."},
      {t:"3, but only if `list` was declared with `let`", why:"`let` or `const` makes no difference to `push`."}
@@ -1444,14 +1458,14 @@ ICA.addUnit({
      {t:"An error, because arrow functions can’t be stored in `const`", why:"Storing a function in a `const` is normal; it’s called like any function."}
    ]},
    {id:"t2u4-q32", lesson:"t2u4-l4", level:3, q:"Lucía writes this (earlier in her script, `hour` is set to 9):\n\n`if (hour < 12) { const greeting = \"Good morning\"; }`\n`console.log(greeting);`\n\nWhat happens?", options:[
-     {t:"A ReferenceError, because `greeting` only exists inside the `if` block", ok:true, why:"`const` and `let` are block-scoped: they disappear at the closing brace. Declare the variable before the `if` (with `let`) and assign it inside."},
+     {t:"A ReferenceError", ok:true, why:"`greeting` only exists inside the `if` block. `const` and `let` are block-scoped: they disappear at the closing brace. Declare the variable before the `if` (with `let`) and assign it inside."},
      {t:"It logs Good morning", why:"That’s what the older `var` would do, because `var` ignores blocks. `const` was created inside the braces and isn’t visible after them."},
      {t:"It logs `undefined`", why:"A `const` used outside its block doesn’t give `undefined`; the name simply doesn’t exist there, which is a ReferenceError."},
      {t:"A SyntaxError", why:"The grammar is fine; the name simply isn’t in scope where it’s used."}
    ]},
    {id:"t2u4-q33", lesson:"t2u4-l4", level:1, q:"What is a method?", options:[
-     {t:"A function stored in an object’s property, called with a dot and brackets", ok:true, why:"For example `\"hi\".toUpperCase()` or `list.push(4)`."},
-     {t:"Any variable declared with `const`", why:"That’s just a constant variable; it may or may not hold a function."},
+     {t:"A function stored in an object’s property", ok:true, why:"It’s called with a dot and brackets, for example `\"hi\".toUpperCase()` or `list.push(4)`."},
+     {t:"Any variable that is declared with `const`", why:"That’s just a constant variable; it may or may not hold a function."},
      {t:"A comment that explains a function", why:"Comments are ignored by JavaScript; a method is runnable code."},
      {t:"The value a function returns", why:"That’s a return value."}
    ]},
@@ -1475,8 +1489,8 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t2u4-q37", lesson:"t2u4-l5", level:1, q:"What is the DOM?", options:[
-     {t:"The browser’s live tree of objects that represents the page, which JavaScript can read and change", ok:true, why:"The browser builds it from the HTML; changes to it show on screen immediately."},
-     {t:"The HTML file exactly as it was downloaded", why:"That’s the source. The DOM starts from it but changes as scripts run."},
+     {t:"The browser’s live tree of objects for the page", ok:true, why:"The browser builds it from the HTML, and JavaScript can read and change it; changes show on screen immediately."},
+     {t:"The HTML file exactly as it was downloaded from the server", why:"That’s the source. The DOM starts from it but changes as scripts run."},
      {t:"A JavaScript library you have to install", why:"Every browser provides the DOM; no installation needed."},
      {t:"The list of websites in your history", why:"That’s browser history, unrelated to the structure of one page."}
    ]},
@@ -1487,10 +1501,10 @@ ICA.addUnit({
      {t:"It throws an error immediately", why:"The search itself succeeds and returns `null`. The error comes when you try to use that `null`."}
    ]},
    {id:"t2u4-q39", lesson:"t2u4-l5", level:3, q:"A recipe site shows visitors’ comments with `box.innerHTML = comment;`. A reviewer warns it’s unsafe. What’s the risk, and the fix?", options:[
-     {t:"A comment containing HTML with event-handler code could run in every reader’s browser (XSS); use `textContent`", ok:true, why:"`innerHTML` parses text as HTML, so attackers can plant code. `textContent` shows any text literally and never runs it."},
+     {t:"Code in a comment could run (XSS); use `textContent`", ok:true, why:"A comment containing HTML with event-handler code could run in every reader’s browser: cross-site scripting (XSS). `innerHTML` parses text as HTML, so attackers can plant code. `textContent` shows any text literally and never runs it."},
      {t:"Comments might be too long; use `toFixed`", why:"Length isn’t the danger, and `toFixed` is for numbers."},
      {t:"`innerHTML` is slow; use `console.log` instead", why:"`console.log` only writes to the Console, so readers would see nothing. The real issue is security."},
-     {t:"There’s no risk as long as the site uses HTTPS", why:"HTTPS protects data in transit; it doesn’t stop the page itself running planted code."}
+     {t:"There’s no risk at all as long as the site uses HTTPS", why:"HTTPS protects data in transit; it doesn’t stop the page itself running planted code."}
    ]},
    {id:"t2u4-q40", lesson:"t2u4-l5", level:2, q:"Which line adds the class `open` if it’s missing and removes it if it’s there?", options:[
      {t:"`panel.classList.toggle(\"open\");`", ok:true, why:"`toggle` switches the class each time it runs."},
@@ -1505,14 +1519,14 @@ ICA.addUnit({
      {t:"She needs `innerHTML` instead of `value`", why:"An input’s typed text is in `value`. `innerHTML` of an input is empty, and it would also be unsafe for display."}
    ]},
    {id:"t2u4-q42", lesson:"t2u4-l5", level:2, q:"What is wrong with `saveBtn.addEventListener(\"click\", save());`?", options:[
-     {t:"`save()` runs once immediately, and its result (not the function) is given to the listener", ok:true, why:"Pass the function itself: `addEventListener(\"click\", save)`, or wrap it: `() => save()`."},
+     {t:"`save()` runs at once instead of on click", ok:true, why:"Its result (not the function) is given to the listener. Pass the function itself: `addEventListener(\"click\", save)`, or wrap it: `() => save()`."},
      {t:"The event should be called `\"onclick\"`", why:"The event’s name is `\"click\"`. `onclick` is the old attribute name."},
      {t:"Buttons can’t have event listeners", why:"Buttons are the most common place for click listeners."},
-     {t:"Nothing; this is the correct form", why:"The brackets call the function now, which is the bug."}
+     {t:"Nothing; this is the correct form for a listener", why:"The brackets call the function now, which is the bug."}
    ]},
    {id:"t2u4-q43", lesson:"t2u4-l5", level:1, q:"Why should something people click be a `<button>` rather than a `<div>` with a click listener?", options:[
-     {t:"A button already works with the keyboard and with screen readers", ok:true, why:"Buttons can be focused with Tab, activated with Enter or Space, and are announced as buttons. A `<div>` needs extra code for all of that."},
-     {t:"Divs can’t have event listeners", why:"They can, but they lack built-in keyboard and screen-reader support."},
+     {t:"Buttons work with keyboards and screen readers", ok:true, why:"Buttons can be focused with Tab, activated with Enter or Space, and are announced as buttons. A `<div>` needs extra code for all of that."},
+     {t:"Divs can’t have event listeners for clicks or taps", why:"They can, but they lack built-in keyboard and screen-reader support."},
      {t:"Buttons load faster", why:"Speed isn’t the difference; accessibility is."},
      {t:"`<div>` elements are invalid HTML", why:"Divs are valid; they’re just not interactive controls."}
    ]},

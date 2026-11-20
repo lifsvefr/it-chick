@@ -109,7 +109,7 @@ ICA.addUnit({
       ["Foundation","Amara gains permanent residence and the right to vote locally","Rights and citizenship are the foundation the framework places under everything else."]
     ]},
     {id:"e2u12-l1-x4", type:"mcq", q:"After leaders in several European countries said multiculturalism had failed, what did Banting and Kymlicka’s Multiculturalism Policy Index suggest about policies between 1980 and 2010?", options:[
-      {t:"In most Western democracies multicultural policies mostly held steady or grew, with some exceptions such as the Netherlands.", ok:true, why:"Correct. The index tracked laws and programmes and found the “retreat” was clearer in speeches than in policy, with notable exceptions."},
+      {t:"Policies mostly held steady or grew, with some exceptions.", ok:true, why:"Correct. This was true in most Western democracies, with exceptions such as the Netherlands. The index tracked laws and programmes and found the “retreat” was clearer in speeches than in policy."},
       {t:"Every country studied abolished all its multicultural policies.", why:"The index found the opposite in most countries: policies largely stayed or expanded."},
       {t:"Multicultural policies existed only in Canada.", why:"Canada was first, in 1971, but Australia and many other democracies also adopted such policies."},
       {t:"It showed that multiculturalism causes higher crime.", why:"The index measures policies, not crime. It can’t show causes of that kind, and the lesson made no such claim."}
@@ -126,7 +126,7 @@ ICA.addUnit({
       {t:"distinguish integration policies from integration outcomes.", flag:false, why:"Accurate: a policy index such as MIPEX measures laws; outcome indicators measure jobs, income, education and so on."}
     ]},
     {id:"e2u12-l1-x6", type:"mcq", q:"A study reports that a country has strong anti-discrimination laws but that migrants with foreign degrees earn much less than similar native-born workers. Which conclusion is best supported?", options:[
-      {t:"Policies and outcomes can diverge, so researchers need to look at how laws work in practice, for example how foreign qualifications are recognised.", ok:true, why:"Yes. A good policy score doesn’t guarantee good outcomes; the gap points to something worth investigating."},
+      {t:"Policies and outcomes can diverge.", ok:true, why:"Yes. Researchers need to look at how laws work in practice, for example how foreign qualifications are recognised. A good policy score doesn’t guarantee good outcomes; the gap points to something worth investigating."},
       {t:"The anti-discrimination laws must be causing the pay gap.", why:"Nothing in the study links the laws to the gap. Treating a co-occurrence as a cause is the [[correlation]]–[[causation]] mistake."},
       {t:"The pay gap proves migrants are less skilled.", why:"Similar workers are being compared, and the gap could come from non-recognition of degrees, discrimination or networks. The data alone can’t show lower skill."},
       {t:"Outcome data are useless; only policy indexes matter.", why:"Both are needed. Outcome data reveal problems that policy scores alone would hide."}
@@ -245,7 +245,7 @@ ICA.addUnit({
       {t:"A young woman feels rejected by the wider society because of discrimination, and also distant from her parents’ culture.", b:3, why:"Little connection to either culture is marginalisation. Note it is driven here by rejection, not choice."}
     ]},
     {id:"e2u12-l2-x2", type:"mcq", q:"According to Berry, why can’t a newcomer always “choose” integration?", options:[
-      {t:"Because integration needs the wider society to accept people keeping their heritage while taking part; if it demands assimilation or excludes them, the option isn’t really open.", ok:true, why:"Right. Berry paired individual strategies with the wider society’s strategies, such as multiculturalism, the melting pot, segregation and exclusion."},
+      {t:"Because the wider society must also accept it.", ok:true, why:"Right. Integration needs the wider society to accept people keeping their heritage while taking part; if it demands assimilation or excludes them, the option isn’t really open. Berry paired individual strategies with the wider society’s strategies, such as multiculturalism, the melting pot, segregation and exclusion."},
       {t:"Because integration is only possible for people who arrived as children.", why:"Berry’s model applies to people of all ages; age at arrival can matter, but it isn’t the reason given."},
       {t:"Because integration is a legal status that only governments can grant.", why:"In Berry’s model integration is a psychological strategy, not a legal status like citizenship."},
       {t:"Because people must first pass through separation and marginalisation.", why:"The model doesn’t describe fixed stages; the four strategies are alternatives, not steps."}
@@ -257,7 +257,7 @@ ICA.addUnit({
       ["Third generation","Kenji, whose grandparents migrated and whose parents were born locally","Grandchildren of migrants, with locally born parents, are usually called the third generation."]
     ]},
     {id:"e2u12-l2-x4", type:"mcq", q:"In Portes and Zhou’s theory, what mainly decides which of the three paths the children of immigrants take?", options:[
-      {t:"The mode of incorporation (policy, the wider society’s reception and the co-ethnic community), together with parents’ resources and local conditions", ok:true, why:"Yes. The theory explains paths by structural conditions and reception, not by any group’s character."},
+      {t:"The mode of incorporation and parents’ resources", ok:true, why:"Yes. The mode of incorporation means policy, the wider society’s reception and the co-ethnic community; local conditions matter too. The theory explains paths by structural conditions and reception, not by any group’s character."},
       {t:"How hard each child works, and nothing else", why:"Effort matters to individuals, but the theory’s point is that conditions outside the child shape the paths available."},
       {t:"The children’s genes", why:"Nothing in the theory is biological; it is about social conditions."},
       {t:"Whether the parents speak the local language perfectly on arrival", why:"Parents’ resources matter, but the theory stresses reception, policy, discrimination and community, not one skill."}
@@ -420,7 +420,7 @@ ICA.addUnit({
       {t:"Vertovec describes superdiversity", why:"2007."}
     ]},
     {id:"e2u12-l3-x6", type:"mcq", q:"A city plans a single outreach programme for everyone born in one large country, assuming they all share the same needs. What would Vertovec’s superdiversity idea suggest?", options:[
-      {t:"People from one country can differ greatly by language, religion, legal status, skills, age and time since arrival, so one programme may miss many of them.", ok:true, why:"Yes. Superdiversity stresses differences that cut across country of origin."},
+      {t:"People from one country can differ in many ways.", ok:true, why:"Yes. They can differ by language, religion, legal status, skills, age and time since arrival, so one programme may miss many of them. Superdiversity stresses differences that cut across country of origin."},
       {t:"There is no need for any programme, because diversity solves itself.", why:"Superdiversity is a description of complexity, not a claim that services are unnecessary."},
       {t:"The city should group everyone by continent instead.", why:"That would hide even more differences, the opposite of what superdiversity suggests."},
       {t:"Only the size of the community matters.", why:"Size matters for planning, but superdiversity is about the many variables within and across groups."}
@@ -694,16 +694,16 @@ ICA.addUnit({
       {t:"Two newcomers interviewed said they were looking for work in the town’s care homes.", flag:false, why:"Fine: it reports what migrants themselves said, adding their voices to the story."}
     ]},
     {id:"e2u12-l5-x4", type:"mcq", q:"What did the US National Academies’ 2017 report conclude about the long-run effect of immigration on the wages of native-born workers?", options:[
-      {t:"Overall it is very small; any negative effects are most likely for earlier immigrants and native-born workers without a high-school diploma.", ok:true, why:"That is the report’s finding, limited to the United States and to the evidence it reviewed."},
+      {t:"Overall it is very small.", ok:true, why:"Any negative effects are most likely for earlier immigrants and native-born workers without a high-school diploma. That is the report’s finding, limited to the United States and to the evidence it reviewed."},
       {t:"It cuts all native-born workers’ wages sharply.", why:"The report found the overall long-run effect to be very small."},
       {t:"It raises every worker’s wages by the same amount.", why:"The report didn’t find uniform gains; effects vary between groups."},
       {t:"It can’t be studied at all.", why:"It can be studied, though methods and results are debated, as the Mariel boatlift case shows."}
     ]},
     {id:"e2u12-l5-x5", type:"mcq", q:"Fatima reads two articles. One says “immigrants are a huge drain on public finances”; the other says “immigrants are a huge boost”. What does the OECD’s 2014 summary of research suggest?", options:[
-      {t:"Where there is a net fiscal impact in OECD countries, it is usually small, rarely more than 0.5% of GDP either way, and it depends on factors such as age, employment and accounting choices.", ok:true, why:"Yes. Both “huge” claims go beyond what this research found."},
+      {t:"Where there is a net impact, it is usually small.", ok:true, why:"Yes. It is rarely more than 0.5% of GDP either way in OECD countries, and it depends on factors such as age, employment and accounting choices. Both “huge” claims go beyond what this research found."},
       {t:"The first article is right everywhere.", why:"The research found impacts are usually small and vary by country and group."},
       {t:"The second article is right everywhere.", why:"The same applies: the impact is usually small and varies."},
-      {t:"Fiscal impacts are always exactly zero.", why:"They are usually small, but not exactly zero; they can be slightly positive or negative."}
+      {t:"Fiscal impacts are always exactly zero in every country.", why:"They are usually small, but not exactly zero; they can be slightly positive or negative."}
     ]},
     {id:"e2u12-l5-x6", type:"sort", q:"Sort each research practice into good practice or a problem.", buckets:["Good practice","A problem"], items:[
       {t:"Explaining the study in a language the person understands, and checking they know they can stop at any time", b:0, why:"Consent must be understood and voluntary, and stopping must be a real option."},
@@ -714,10 +714,10 @@ ICA.addUnit({
       {t:"Never telling participants what the research found", b:1, why:"Mackenzie and colleagues argue for going beyond “do no harm”: share findings and give something back."}
     ]},
     {id:"e2u12-l5-x7", type:"mcq", q:"A student says: “The 2018 meta-analysis proves immigration reduces crime everywhere.” What is the most accurate correction?", options:[
-      {t:"It found the link between immigration and crime rates, in studies mostly from the United States, to be negative but very weak, and results varied with study design and place.", ok:true, why:"Right. The finding is real but small and limited to the studies reviewed; it doesn’t prove an effect everywhere."},
+      {t:"It found a very weak negative link, mostly in US studies.", ok:true, why:"Right. The link between immigration and crime rates was negative but very weak, and results varied with study design and place. The finding is real but small and limited to the studies reviewed; it doesn’t prove an effect everywhere."},
       {t:"It found immigration doubles crime.", why:"That is the opposite of what Ousey and Kubrin reported."},
       {t:"It found no studies on the topic.", why:"It combined many studies published between 1994 and 2014."},
-      {t:"It proves crime statistics are always accurate.", why:"It doesn’t; crime statistics reflect reporting and policing as well as offending."}
+      {t:"It proves that crime statistics are always fully accurate.", why:"It doesn’t; crime statistics reflect reporting and policing as well as offending."}
     ]}
    ],
    apply:{
@@ -754,6 +754,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u12-q02","e2u12-q05","e2u12-q11","e2u12-q14","e2u12-q20","e2u12-q23","e2u12-q29","e2u12-q32","e2u12-q35","e2u12-q38","e2u12-q41","e2u12-q44"],
+  cpBank:[
+   {id:"e2u12-cp01", lesson:"e2u12-l1", level:1, q:"Amir, who arrived two years ago, joins a neighbourhood gardening club whose members were mostly born locally. In Ager and Strang’s framework, what kind of social connection is this?", options:[
+     {t:"A bond", why:"Bonds are connections within one’s own community. The gardening club connects Amir with people from other groups."},
+     {t:"A bridge", ok:true, why:"Right. Bridges are connections with other groups, such as long-settled local residents."},
+     {t:"A link", why:"Links are connections with institutions, such as local government or services. A gardening club of neighbours is a social group."},
+     {t:"A foundation", why:"In the framework, the foundation level is rights and citizenship. A club membership is a social connection."}]},
+   {id:"e2u12-cp02", lesson:"e2u12-l2", level:1, q:"Lan keeps her heritage language, food and friendships, but avoids contact with the wider society where she lives. Which of Berry’s strategies fits best?", options:[
+     {t:"Integration", why:"Integration means keeping heritage culture and also taking part in the wider society. Lan avoids the wider society."},
+     {t:"Assimilation", why:"Assimilation means giving up heritage culture to join the wider society. Lan does the opposite."},
+     {t:"Marginalisation", why:"Marginalisation means little connection to either culture. Lan keeps her heritage culture strongly."},
+     {t:"Separation", ok:true, why:"Correct. Keeping heritage culture while avoiding the wider society is separation. Berry notes that discrimination can push people towards it."}]},
+   {id:"e2u12-cp03", lesson:"e2u12-l4", level:1, q:"After ten years abroad, Kwesi returns to his home village and tries to introduce farming methods he learned there. Many neighbours resist the changes. Which of Cerase’s types of return fits best?", options:[
+     {t:"Return of innovation", ok:true, why:"Yes. Cerase described returnees who try to bring new ideas and skills, and often meet resistance, as the return of innovation."},
+     {t:"Return of failure", why:"Return of failure describes people who never settled abroad. Kwesi stayed ten years and came back with new skills."},
+     {t:"Return of conservatism", why:"Returnees of conservatism fit back into old ways, for example buying land and living as before. Kwesi is trying to change things."},
+     {t:"Return of retirement", why:"Return of retirement is going home at the end of a working life. Kwesi is actively trying to change how the village farms."}]},
+   {id:"e2u12-cp04", lesson:"e2u12-l1", level:2, q:"A city funds mixed neighbourhood projects that bring residents of different backgrounds together around shared civic goals, with equal participation by all. Which model does this fit best?", options:[
+     {t:"Assimilation", why:"Assimilation expects newcomers to give up their own ways and become like the majority. This policy builds exchange between groups."},
+     {t:"Civic integration", why:"Civic integration requires newcomers to take courses or pass tests. This policy is about interaction among all residents."},
+     {t:"Interculturalism", ok:true, why:"Right. Interculturalism stresses contact and exchange between groups within a shared civic core, with equality, diversity, interaction and participation."},
+     {t:"Multiculturalism", why:"Multiculturalism publicly recognises and supports groups’ distinct cultures, for example by funding community organisations. This policy puts the emphasis on mixing and shared goals."}]},
+   {id:"e2u12-cp05", lesson:"e2u12-l2", level:2, q:"Yuki was born in a country that passes citizenship mainly through parents. Her parents migrated there before she was born, and she has never lived anywhere else. Which statement is accurate?", options:[
+     {t:"She is first generation, because her family migrated", why:"The first generation are the people who migrated themselves, her parents. Yuki was born in the country."},
+     {t:"She is 1.5 generation, because her parents are migrants", why:"The 1.5 generation were born abroad and arrived as children. Yuki was born in the country."},
+     {t:"She is second generation, and may lack citizenship where she was born", ok:true, why:"Correct. She was born to migrant parents, so she is second generation. Under a jus sanguinis system, she may not get citizenship by birth there."},
+     {t:"She is a citizen there, because everyone born in a country is its citizen", why:"Only countries with birthright citizenship (jus soli) give citizenship to children born there. This country passes it mainly through parents."}]},
+   {id:"e2u12-cp06", lesson:"e2u12-l3", level:2, q:"A study of a town’s social life counts only activities inside the country. It ignores residents’ daily calls, money transfers and family obligations with relatives abroad. Which problem does this show?", options:[
+     {t:"Methodological nationalism", ok:true, why:"Right. Wimmer and Glick Schiller named the habit of treating the nation-state as the natural container of social life, so research assumes societies stop at borders."},
+     {t:"Superdiversity among residents", why:"Superdiversity describes many cross-cutting differences among residents. The problem here is ignoring ties that cross borders."},
+     {t:"Selective acculturation", why:"Selective acculturation is the second generation learning new ways while keeping key parts of their parents’ culture. It isn’t a research flaw."},
+     {t:"Transnational repression", why:"Transnational repression is governments monitoring or intimidating critics abroad. It has nothing to do with how this study was designed."}]},
+   {id:"e2u12-cp07", lesson:"e2u12-l4", level:2, q:"Researchers find that a government’s embassy photographs and threatens its critics who live abroad. What do researchers call this?", options:[
+     {t:"Diaspora engagement by the state", why:"Diaspora engagement is states reaching out to emigrants, through ministries, voting from abroad or diaspora bonds. Threatening critics is a different practice."},
+     {t:"A social remittance", why:"Social remittances are ideas, practices and connections that migrants send home. This is pressure from a state on people abroad."},
+     {t:"A diaspora bond", why:"A diaspora bond is a way for states to borrow money from emigrants. It has nothing to do with threatening critics."},
+     {t:"Transnational repression", ok:true, why:"Correct. Researchers have documented governments monitoring or intimidating critics living abroad, and call this transnational repression."}]},
+   {id:"e2u12-cp08", lesson:"e2u12-l5", level:2, q:"A town wants to reduce prejudice between long-term residents and newcomers. Which programme fits Allport’s contact hypothesis best?", options:[
+     {t:"A public lecture about newcomers’ home countries, with no chance to meet them", why:"Information can help, but the contact hypothesis is about meeting. Here residents and newcomers never interact."},
+     {t:"Mixed teams with equal roles on a shared project, backed by the council", ok:true, why:"Yes. Allport proposed that contact reduces prejudice when people meet as equals, with shared goals and support from institutions."},
+     {t:"A contest in which residents’ and newcomers’ teams compete for one prize", why:"Competing for one prize sets the groups against each other. The hypothesis calls for shared goals, not rival ones."},
+     {t:"An event where residents watch newcomers perform, without talking", why:"Watching from a distance isn’t contact as equals, and there is no shared goal."}]},
+   {id:"e2u12-cp09", lesson:"e2u12-l1", level:3, q:"A government says integration is “a two-way process”. But its schools punish pupils for speaking heritage languages, and employers routinely ignore foreign qualifications. What does Berry’s work suggest about this situation?", options:[
+     {t:"Because the policy says “two-way”, all newcomers will integrate", why:"Words in a policy don’t decide outcomes. What institutions actually do shapes which options are open."},
+     {t:"Newcomers who end up marginalised have freely chosen to reject both cultures", why:"Marginalisation is rarely chosen. Exclusion and discrimination by the wider society often drive it."},
+     {t:"Berry’s “integration” is the same thing as government policy, so the policy’s wording settles it", why:"Berry’s integration is a psychological strategy of individuals or groups. It is related to, but not the same as, a government’s integration policy."},
+     {t:"In practice the society demands assimilation, so newcomers can’t freely choose integration and some may be pushed to the margins", ok:true, why:"Right. Berry argued that people can only choose integration if the wider society lets them keep their heritage while taking part. Two-way rhetoric doesn’t help if practice is one-way."}]},
+   {id:"e2u12-cp10", lesson:"e2u12-l3", level:3, q:"Adaeze works as a surgeon in London for twelve years, then opens a hospital in Lagos. She still teaches in London twice a year and runs projects with colleagues in both cities. Which ideas fit best?", options:[
+     {t:"A return of failure, as neoclassical theory would read it", why:"She succeeded abroad and went home to build a hospital. Neoclassical theory reads return as failure, but this case shows return as part of ongoing ties."},
+     {t:"Cerase’s return of conservatism", why:"Returnees of conservatism fit back into old ways. She brings new skills, contacts and capital."},
+     {t:"Brain circulation within a transnational social field, where return isn’t final", ok:true, why:"Correct. Like the engineers Saxenian followed, she carries skills and contacts between places (brain circulation, Unit 10). Transnational approaches see such return as part of ongoing cross-border ties that may not be final."},
+     {t:"Methodological nationalism, because she belongs to one country", why:"Methodological nationalism is a research flaw, not a description of a person. Her life clearly spans two places."}]},
+   {id:"e2u12-cp11", lesson:"e2u12-l5", level:3, q:"A news story describes “the migrants” from one country as a single mass who all think and act alike. Which pair of ideas from this unit best exposes the problem?", options:[
+     {t:"Othering, and superdiversity", ok:true, why:"Right. Othering describes a group as one mass, not individuals. Superdiversity shows that people from one country differ by language, religion, legal status, skills, age and time since arrival."},
+     {t:"Methodological nationalism, and diaspora bonds", why:"Methodological nationalism is about research assuming societies stop at borders, and diaspora bonds are a funding tool. Neither explains the stereotyping here."},
+     {t:"Selective acculturation, and the contact hypothesis", why:"These describe how the second generation combines cultures and how contact can reduce prejudice. They don’t name the flaw in the story."},
+     {t:"Transnational repression, and resettlement", why:"Neither idea is about how news describes a group of people."}]},
+   {id:"e2u12-cp12", lesson:"e2u12-l5", level:3, q:"A student plans to study a diaspora community. She will recruit participants only through the government’s diaspora office and will record each person’s legal status. What are the main concerns?", options:[
+     {t:"There are none, because a government office is a neutral source", why:"A government office is a gatekeeper with its own purposes. Its idea of “the diaspora” is a claim, and it may create pressure to take part."},
+     {t:"The office may define “the diaspora” in its own way and pressure people, and recording legal status could cause harm unless it is essential", ok:true, why:"Right. Brubaker warns that diaspora is often a claim made by states, which may leave people out. Gatekeepers can undermine voluntary consent, and status data should be collected only if essential and protected."},
+     {t:"The only problem is that the sample will be too small", why:"Sample size matters less here than who controls access, who is left out and what harm the data could cause."},
+     {t:"Recording legal status is always required in migration research", why:"Researchers should not ask about legal status unless it is essential to the question and protected. Collect only what you need."}]}
+  ],
   codex:[
    {id:"integration-models", title:"Models of integration", aka:["incorporation","assimilation vs integration","multiculturalism","interculturalism","civic integration"], tags:["migration","integration"],
     summary:"The different answers societies give to “who adapts to whom?”: assimilation, two-way integration, multiculturalism, interculturalism and civic integration, and the debates about each.",
@@ -1092,12 +1154,12 @@ ICA.addUnit({
      {t:"France, in 1905", why:"France is usually described as following a republican model, not official multiculturalism."},
      {t:"Germany, in 2005", why:"Germany introduced national integration courses in 2005, a civic integration measure."}]},
    {id:"e2u12-q04", lesson:"e2u12-l1", level:2, q:"Which is an example of civic integration?", options:[
-     {t:"A newcomer must pass a language and civic knowledge test to get permanent residence.", ok:true, why:"Required courses or tests as a condition of residence or citizenship define civic integration."},
-     {t:"A city funds a festival celebrating many cultures.", why:"Public support for cultural diversity is closer to multiculturalism."},
+     {t:"A newcomer must pass a language and civics test to stay.", ok:true, why:"Here a test is required for permanent residence. Required courses or tests as a condition of residence or citizenship define civic integration."},
+     {t:"A city funds a festival celebrating many different cultures.", why:"Public support for cultural diversity is closer to multiculturalism."},
      {t:"Neighbours start a shared community garden.", why:"Everyday contact like this fits interculturalism’s emphasis on interaction, not a legal requirement."},
      {t:"A migrant sends money home.", why:"That is a remittance, a transnational tie, not an integration policy."}]},
    {id:"e2u12-q05", lesson:"e2u12-l1", level:3, q:"Priya reads: “Multiculturalism was abandoned across Europe after 2010.” What does the Multiculturalism Policy Index suggest?", options:[
-     {t:"Despite leaders’ speeches, multicultural policies mostly held steady or grew in most Western democracies up to 2010, with exceptions such as the Netherlands.", ok:true, why:"The index measured laws and programmes and found the “retreat” was clearer in rhetoric than in policy."},
+     {t:"Policies mostly held steady or grew, despite leaders’ speeches.", ok:true, why:"Multicultural policies mostly held steady or grew in most Western democracies up to 2010, with exceptions such as the Netherlands. The index measured laws and programmes and found the “retreat” was clearer in rhetoric than in policy."},
      {t:"The claim is exactly right for every country.", why:"The index found most countries did not abolish their policies."},
      {t:"Multiculturalism never existed in Europe.", why:"Several European countries had multicultural policies; the index tracked them."},
      {t:"The index shows multiculturalism caused the 2008 financial crisis.", why:"The index measures policies only and makes no such claim."}]},
@@ -1107,17 +1169,17 @@ ICA.addUnit({
      {t:"Social bridges", why:"Bridges are social connections, with bonds and links."},
      {t:"Language and cultural knowledge", why:"These are facilitators, with safety and stability."}]},
    {id:"e2u12-q07", lesson:"e2u12-l1", level:3, q:"Two countries have identical scores on a migrant integration policy index, but migrants’ employment rates differ greatly between them. What is the best conclusion?", options:[
-     {t:"Policy scores measure laws, not outcomes; something else, such as implementation, the economy or discrimination, may explain the difference.", ok:true, why:"Policies and outcomes can diverge, so the gap needs further investigation."},
+     {t:"Policy scores measure laws, not outcomes.", ok:true, why:"Something else, such as implementation, the economy or discrimination, may explain the difference. Policies and outcomes can diverge, so the gap needs further investigation."},
      {t:"The policy index must be wrong.", why:"It may be accurate about laws; it simply doesn’t measure outcomes."},
      {t:"Employment has nothing to do with integration.", why:"Employment is one of the core markers and means of integration."},
      {t:"The country with lower employment has worse laws.", why:"The laws scored the same; the difference lies elsewhere."}]},
    {id:"e2u12-q08", lesson:"e2u12-l1", level:2, q:"Why do classic integration models fit poorly in several Gulf states?", options:[
-     {t:"Most migrant workers there are on temporary, employer-tied contracts with very limited routes to citizenship, while the models assume settlement.", ok:true, why:"The models were built for countries expecting migrants to settle and become members."},
-     {t:"There are very few migrants in Gulf states.", why:"Migrants make up a large share of the population and workforce in several Gulf states."},
+     {t:"Most migrants there are on temporary contracts.", ok:true, why:"Contracts are employer-tied, with very limited routes to citizenship. The models were built for countries expecting migrants to settle and become members."},
+     {t:"There are very few migrants living in Gulf states.", why:"Migrants make up a large share of the population and workforce in several Gulf states."},
      {t:"Gulf states have no laws about migration.", why:"They have detailed rules, including sponsorship systems."},
      {t:"Migrants there all become citizens quickly.", why:"Routes to citizenship are very limited, which is the point."}]},
    {id:"e2u12-q09", lesson:"e2u12-l1", level:2, q:"How did Alba and Nee (2003) reinterpret assimilation?", options:[
-     {t:"As the fading over time of an ethnic difference that affects life chances, with the mainstream itself changing as newcomers join it", ok:true, why:"Their “new assimilation theory” rejects a one-way, forced picture."},
+     {t:"As ethnic difference fading, with the mainstream changing too", ok:true, why:"They meant the fading over time of an ethnic difference that affects life chances, with the mainstream itself changing as newcomers join it. Their “new assimilation theory” rejects a one-way, forced picture."},
      {t:"As a policy the state should impose by banning minority languages", why:"They describe a social process, not a policy to impose."},
      {t:"As something that never happens", why:"They argued it happens for many families over generations."},
      {t:"As the same thing as multiculturalism", why:"Multiculturalism is a policy of recognising diversity; their concept is different."}]},
@@ -1143,7 +1205,7 @@ ICA.addUnit({
      {t:"Migrants who stay for one and a half years", why:"The term refers to age at arrival, not length of stay."},
      {t:"Grandchildren of migrants", why:"They are usually called the third generation."}]},
    {id:"e2u12-q14", lesson:"e2u12-l2", level:3, q:"A report says children of Turkish-origin parents reach university far more often in one European country than another. Which explanation does TIES research make most plausible?", options:[
-     {t:"Differences in national institutions, such as how early schools separate children into tracks", ok:true, why:"TIES linked cross-country differences for the same origin group to institutional context."},
+     {t:"Different national institutions, such as schools", ok:true, why:"For example, schools differ in how early they separate children into tracks. TIES linked cross-country differences for the same origin group to institutional context."},
      {t:"Turkish culture is different in each country.", why:"The origin group is similar; the study points to institutions, not culture."},
      {t:"The parents in one country care more about education.", why:"Nothing in the findings supports this generalisation."},
      {t:"It must be random chance.", why:"The differences were large and linked to institutional features."}]},
@@ -1153,25 +1215,25 @@ ICA.addUnit({
      {t:"Automatic citizenship at age 18", why:"The paths concern social and economic outcomes, not legal rules."},
      {t:"Moving to a third country", why:"Onward migration is not one of the paths."}]},
    {id:"e2u12-q16", lesson:"e2u12-l2", level:2, q:"In segmented assimilation theory, the “mode of incorporation” includes…", options:[
-     {t:"government policy towards the group, the wider society’s reception and the co-ethnic community", ok:true, why:"These three together shape the resources and obstacles children meet."},
-     {t:"the type of transport migrants used to arrive", why:"How people travelled isn’t part of the concept."},
+     {t:"government policy, social reception and the co-ethnic community", ok:true, why:"It means government policy towards the group, the wider society’s reception and the co-ethnic community. These three together shape the resources and obstacles children meet."},
+     {t:"the type of transport migrants used to arrive and how long it took", why:"How people travelled isn’t part of the concept."},
      {t:"the number of languages a child speaks", why:"Language matters, but it isn’t the definition of mode of incorporation."},
      {t:"the parents’ country’s population size", why:"This isn’t part of the concept."}]},
    {id:"e2u12-q17", lesson:"e2u12-l2", level:3, q:"Mei, born to immigrant parents, writes: “I hate being called a second-generation migrant.” Which response best reflects the lesson?", options:[
-     {t:"She has a point: she never migrated, the label describes her parents’ history, and many people prefer other descriptions.", ok:true, why:"Researchers use the label for analysis, but it can misdescribe people who never moved."},
+     {t:"She has a point: she never migrated herself.", ok:true, why:"The label describes her parents’ history, and many people prefer other descriptions. Researchers use the label for analysis, but it can misdescribe people who never moved."},
      {t:"She is wrong; anyone with migrant parents is a migrant.", why:"A migrant is someone who has moved; she hasn’t."},
      {t:"The label is a legal status she must accept.", why:"It is a research category, not a legal status."},
      {t:"Only first-generation people dislike labels.", why:"There is no evidence for this, and it dismisses her view."}]},
    {id:"e2u12-q18", lesson:"e2u12-l2", level:1, q:"Which critique of Berry’s model is accurate?", options:[
-     {t:"People may combine cultures differently in different areas of life, and discrimination can limit their choices.", ok:true, why:"Both are standard critiques: strategies are domain-specific and not freely chosen."},
+     {t:"People mix cultures differently across areas of life.", ok:true, why:"Discrimination can also limit their choices. Both are standard critiques: strategies are domain-specific and not freely chosen."},
      {t:"The model ignores culture entirely.", why:"Culture is at the heart of the model."},
      {t:"The model only applies to tourists.", why:"It was developed for people in long-term contact, including immigrants."},
-     {t:"The model says integration is impossible.", why:"It names integration as one of four strategies."}]},
+     {t:"The model says integration is impossible for most people.", why:"It names integration as one of four strategies."}]},
    /* ---- Lesson 3 ---- */
    {id:"e2u12-q19", lesson:"e2u12-l3", level:1, q:"Glick Schiller, Basch and Szanton Blanc (1992) defined transnationalism as…", options:[
-     {t:"the processes by which immigrants build social fields that link their country of origin and their country of settlement", ok:true, why:"This is close to their opening definition."},
+     {t:"how immigrants build social fields linking two countries", ok:true, why:"The fields link the country of origin and the country of settlement. This is close to their opening definition."},
      {t:"the movement of goods between countries", why:"That is trade; transnationalism is about migrants’ social fields."},
-     {t:"the replacement of nation-states by a world government", why:"Transnationalism describes cross-border ties, not world government."},
+     {t:"the replacement of nation-states by a single world government", why:"Transnationalism describes cross-border ties, not world government."},
      {t:"the decision to cut ties with home", why:"That is the “uprooted” picture they challenged."}]},
    {id:"e2u12-q20", lesson:"e2u12-l3", level:2, q:"Ana’s mother has never left their village, but she receives weekly video calls and money from Ana abroad, and sends back advice and food. In transnational terms, the mother is…", options:[
      {t:"part of a transnational social field, even though she has not migrated", ok:true, why:"Social fields include people who don’t move but take part in cross-border ties."},
@@ -1184,23 +1246,23 @@ ICA.addUnit({
      {t:"brain drain", why:"Brain drain is the loss of skilled people, not the spread of a practice."},
      {t:"a hometown association", why:"A hometown association is an organisation; this is one person bringing back a practice."}]},
    {id:"e2u12-q22", lesson:"e2u12-l3", level:1, q:"What is methodological nationalism?", options:[
-     {t:"Treating the nation-state as the natural container of social life in research", ok:true, why:"Wimmer and Glick Schiller (2002) named this habit."},
+     {t:"Treating the nation-state as society’s natural unit", ok:true, why:"Researchers treat the nation-state as the natural container of social life. Wimmer and Glick Schiller (2002) named this habit."},
      {t:"A political movement for national independence", why:"That is nationalism or self-determination, not this research critique."},
-     {t:"Collecting data only through national censuses", why:"Census use may reflect it, but the term names a broader assumption."},
+     {t:"Collecting data only through national censuses and registers", why:"Census use may reflect it, but the term names a broader assumption."},
      {t:"Studying only one’s own country’s history", why:"The critique is about assuming societies stop at borders, wherever you study."}]},
    {id:"e2u12-q23", lesson:"e2u12-l3", level:3, q:"A columnist claims: “Transnational ties are new; before the internet, migrants cut all links with home.” Which evidence best answers this?", options:[
-     {t:"Foner’s comparison showing New York immigrants around 1900 sent money, travelled back and followed homeland politics", ok:true, why:"It shows the pattern is old; technology changed its speed and cost."},
-     {t:"Vertovec’s work on superdiversity in London", why:"That concerns the complexity of diversity, not whether old migrants kept ties."},
+     {t:"Foner’s study of New York immigrants around 1900", ok:true, why:"Foner showed those immigrants sent money, travelled back and followed homeland politics. The pattern is old; technology changed its speed and cost."},
+     {t:"Vertovec’s work on superdiversity in present-day London", why:"That concerns the complexity of diversity, not whether old migrants kept ties."},
      {t:"Berry’s acculturation grid", why:"Berry’s model is about combining cultures, not about historical cross-border ties."},
      {t:"Portes and Zhou on the second generation", why:"Their work concerns children’s paths, not historical ties to home."}]},
    {id:"e2u12-q24", lesson:"e2u12-l3", level:2, q:"Which statement about transnational ties and integration does research support?", options:[
-     {t:"They can add up, reinforce each other or sometimes pull against each other, depending on the person and context.", ok:true, why:"Erdal and Oeppen (2013) describe this range of interactions."},
-     {t:"Transnational ties always prevent integration.", why:"Research doesn’t find a simple trade-off."},
+     {t:"It depends: they can reinforce or pull against each other.", ok:true, why:"They can add up, reinforce each other or sometimes pull against each other, depending on the person and context. Erdal and Oeppen (2013) describe this range of interactions."},
+     {t:"Transnational ties always prevent migrants from integrating.", why:"Research doesn’t find a simple trade-off."},
      {t:"Integrated migrants never keep ties with home.", why:"Many well-integrated people keep strong ties."},
      {t:"Only refugees keep transnational ties.", why:"All kinds of migrants can keep them."}]},
    {id:"e2u12-q25", lesson:"e2u12-l3", level:1, q:"Superdiversity, in Vertovec’s sense, refers to…", options:[
-     {t:"diversity shaped by many cross-cutting variables, such as legal status, rights, skills, age and time since arrival, not just ethnicity", ok:true, why:"That “diversification of diversity” is his central point."},
-     {t:"a city with more than a million people", why:"Size isn’t the definition."},
+     {t:"diversity shaped by many variables, not just ethnicity", ok:true, why:"Cross-cutting variables include legal status, rights, skills, age and time since arrival. That “diversification of diversity” is his central point."},
+     {t:"a city with more than a million people from many places", why:"Size isn’t the definition."},
      {t:"diversity in the natural environment", why:"That is biodiversity."},
      {t:"a single large immigrant community", why:"It stresses complexity within and across groups."}]},
    {id:"e2u12-q26", lesson:"e2u12-l3", level:2, q:"Portes, Guarnizo and Landolt (1999) argued that “transnational” should be used for…", options:[
@@ -1209,9 +1271,9 @@ ICA.addUnit({
      {t:"only multinational companies", why:"Their concern was migrants’ activities."},
      {t:"only people with dual citizenship", why:"Legal status wasn’t their criterion."}]},
    {id:"e2u12-q27", lesson:"e2u12-l3", level:3, q:"Sione, without secure legal status, hasn’t visited his family for eight years, while his cousin with citizenship visits every year. What point does this illustrate?", options:[
-     {t:"Transnational lives depend on resources and rights, so they are unevenly shared.", ok:true, why:"Status and money shape who can keep ties in person."},
+     {t:"Transnational lives depend on resources and rights.", ok:true, why:"So they are unevenly shared: status and money shape who can keep ties in person."},
      {t:"Sione doesn’t care about his family.", why:"Nothing suggests this; his situation constrains him."},
-     {t:"Transnationalism only applies to citizens.", why:"Ties exist in many forms, including calls and remittances, whatever one’s status."},
+     {t:"Transnationalism only applies to people who are citizens.", why:"Ties exist in many forms, including calls and remittances, whatever one’s status."},
      {t:"Superdiversity makes travel impossible.", why:"Superdiversity is a description of diversity, not a cause of travel limits."}]},
    /* ---- Lesson 4 ---- */
    {id:"e2u12-q28", lesson:"e2u12-l4", level:1, q:"The Greek root of “diaspora” refers to…", options:[
@@ -1230,18 +1292,18 @@ ICA.addUnit({
      {t:"Trade, empire and labour", why:"These resemble Cohen’s types, not Brubaker’s elements."},
      {t:"Return, failure and retirement", why:"These resemble Cerase’s types of return."}]},
    {id:"e2u12-q31", lesson:"e2u12-l4", level:3, q:"A government minister says: “Our diaspora of ten million stands united behind our policies.” What would Brubaker advise an analyst to do?", options:[
-     {t:"Treat “diaspora” here as a claim: ask who is making it, for what purpose, and who among people of that origin disagrees or doesn’t identify with it.", ok:true, why:"Brubaker warned against treating a diaspora as a unified, countable group."},
+     {t:"Treat it as a claim: ask who makes it, why, and who disagrees.", ok:true, why:"Ask too who among people of that origin doesn’t identify with it. Brubaker warned against treating a diaspora as a unified, countable group."},
      {t:"Accept the number and unity as facts.", why:"That is the “groupism” Brubaker cautioned against."},
-     {t:"Ignore the claim because diasporas don’t exist.", why:"He doesn’t deny diasporas; he asks how the category is used."},
+     {t:"Ignore the claim completely because diasporas don’t really exist.", why:"He doesn’t deny diasporas; he asks how the category is used."},
      {t:"Count only people who plan to return.", why:"Return isn’t one of his core elements."}]},
    {id:"e2u12-q32", lesson:"e2u12-l4", level:2, q:"Which is an example of diaspora engagement by an origin state?", options:[
-     {t:"Selling bonds to emigrants to fund national projects", ok:true, why:"Diaspora bonds, used by Israel and India, are a classic tool."},
+     {t:"Selling special bonds to emigrants", ok:true, why:"The money funds national projects. Diaspora bonds, used by Israel and India, are a classic tool."},
      {t:"A destination city opening a welcome centre", why:"That is integration by the destination, not engagement by the origin state."},
      {t:"A migrant joining a local choir", why:"That is a personal social tie, not state policy."},
      {t:"A company hiring foreign engineers", why:"That is recruitment by an employer, not diaspora engagement."}]},
    {id:"e2u12-q33", lesson:"e2u12-l4", level:2, q:"How does the new economics of labour migration tend to interpret return?", options:[
-     {t:"As a planned success, after reaching a savings or family target", ok:true, why:"NELM sees migration as a household strategy with goals."},
-     {t:"As proof that migration failed", why:"That is closer to the neoclassical view."},
+     {t:"As a planned success, once goals are met", ok:true, why:"NELM sees migration as a household strategy with goals, such as a savings or family target."},
+     {t:"As proof that the migration project failed", why:"That is closer to the neoclassical view."},
      {t:"As impossible", why:"NELM expects many migrants to return."},
      {t:"As always forced", why:"NELM focuses on planned, voluntary return."}]},
    {id:"e2u12-q34", lesson:"e2u12-l4", level:2, q:"Dmitri saved for years abroad, then returned to buy land and farm in his home village, living much as his family always had. Which of Cerase’s types is this?", options:[
@@ -1250,13 +1312,13 @@ ICA.addUnit({
      {t:"Return of failure", why:"He reached his goal; he didn’t fail to settle abroad."},
      {t:"Return of retirement", why:"He returns to work the land, not at the end of his working life."}]},
    {id:"e2u12-q35", lesson:"e2u12-l4", level:3, q:"Hana, raised abroad, moves to her parents’ home country and struggles with the language and with having her degree recognised. What does this show?", options:[
-     {t:"“Return” can be to a place someone has never lived, and reintegration, or integration, can be hard even for people of that origin.", ok:true, why:"Ancestral return and reintegration difficulties are both covered in the lesson."},
+     {t:"Even descendants can find “return” hard.", ok:true, why:"“Return” can be to a place someone has never lived, and reintegration, or integration, can be hard even for people of that origin. Ancestral return and reintegration difficulties are both covered in the lesson."},
      {t:"Return migration is always easy for descendants.", why:"Her experience shows the opposite."},
      {t:"She isn’t a migrant at all.", why:"She has moved countries, so she is migrating."},
      {t:"Degrees are always recognised in a parent’s country.", why:"Recognition of qualifications is a common problem."}]},
    {id:"e2u12-q36", lesson:"e2u12-l4", level:1, q:"Which criticism was made of Safran’s 1991 checklist?", options:[
-     {t:"It was modelled closely on the Jewish experience, and many groups don’t share features such as a wish to return.", ok:true, why:"Critics noted few groups fit every point, especially the return criterion."},
-     {t:"It ignored the homeland completely.", why:"Homeland memory and orientation run through his list."},
+     {t:"It was modelled closely on the Jewish experience.", ok:true, why:"Many groups don’t share features such as a wish to return; critics noted few groups fit every point, especially the return criterion."},
+     {t:"It ignored the homeland and its memory completely.", why:"Homeland memory and orientation run through his list."},
      {t:"It was written in 2015.", why:"It appeared in 1991, in the journal’s first issue."},
      {t:"It defined diaspora only by wealth.", why:"Wealth isn’t one of his features."}]},
    /* ---- Lesson 5 ---- */
@@ -1266,13 +1328,13 @@ ICA.addUnit({
      {t:"They greatly underestimated it.", why:"The error went the other way."},
      {t:"The study didn’t ask.", why:"This was a central question of the study."}]},
    {id:"e2u12-q38", lesson:"e2u12-l5", level:2, q:"A headline reads: “Wave of arrivals swamps local services.” Which framing device is most obvious?", options:[
-     {t:"Water metaphors that present people as a natural disaster", ok:true, why:"“Wave” and “swamps” frame migration as an overwhelming force."},
+     {t:"Water metaphors for people", ok:true, why:"“Wave” and “swamps” present people as a natural disaster and frame migration as an overwhelming force."},
      {t:"A human interest story about one person", why:"No individual is mentioned."},
      {t:"A sourced statistic with a year", why:"The headline gives no figures or sources."},
      {t:"A quotation from a migrant", why:"No one is quoted."}]},
    {id:"e2u12-q39", lesson:"e2u12-l5", level:1, q:"According to Entman (1993), framing works by…", options:[
-     {t:"selecting some aspects of reality and making them more salient, to promote a problem definition, cause, moral judgement and remedy", ok:true, why:"This is his widely cited definition."},
-     {t:"printing every available fact equally", why:"Framing is about selection and emphasis."},
+     {t:"selecting and emphasising some aspects of reality", ok:true, why:"Some aspects are made more salient to promote a problem definition, cause, moral judgement and remedy. This is his widely cited definition."},
+     {t:"printing every available fact equally and in full", why:"Framing is about selection and emphasis."},
      {t:"only using false information", why:"Frames can be built entirely from true details."},
      {t:"putting pictures in frames", why:"The term is a metaphor for selection and emphasis."}]},
    {id:"e2u12-q40", lesson:"e2u12-l5", level:2, q:"What did Pettigrew and Tropp’s 2006 meta-analysis of more than 500 studies find?", options:[
@@ -1281,13 +1343,13 @@ ICA.addUnit({
      {t:"Contact has no measurable effect.", why:"They found a consistent effect."},
      {t:"Only online contact matters.", why:"The studies covered many kinds of contact."}]},
    {id:"e2u12-q41", lesson:"e2u12-l5", level:3, q:"Tomás reads: “Study proves immigration destroys wages.” The article cites a single reanalysis of the 1980 Mariel boatlift. What is the most careful response?", options:[
-     {t:"The Mariel case is contested: different researchers using different samples reached different results, and broad reviews such as the US National Academies’ find very small overall long-run effects.", ok:true, why:"One contested study can’t prove a general claim; reviews weigh many studies."},
+     {t:"The Mariel case is contested; reviews find small effects.", ok:true, why:"Different researchers using different samples reached different results, and broad reviews such as the US National Academies’ find very small overall long-run effects. One contested study can’t prove a general claim; reviews weigh many studies."},
      {t:"The headline is proven, because the study is about a real event.", why:"A real event can still be analysed in disputed ways."},
      {t:"Wages can never be affected by anything.", why:"Wages respond to many things; the question is size and who is affected."},
      {t:"Any study about Miami is irrelevant.", why:"It is relevant evidence, just not the final word."}]},
    {id:"e2u12-q42", lesson:"e2u12-l5", level:2, q:"Which statement about xenophobia is accurate?", options:[
-     {t:"It is hostility towards people seen as foreigners; it overlaps with racism but is not identical, and it occurs in every region.", ok:true, why:"The 2001 Durban conference named them together; cases such as South Africa in 2008 show it isn’t limited to one region."},
-     {t:"It exists only in rich countries.", why:"Xenophobic violence has occurred in many regions, including South Africa in 2008."},
+     {t:"It is hostility towards people seen as foreigners.", ok:true, why:"It overlaps with racism but is not identical, and it occurs in every region. The 2001 Durban conference named them together; cases such as South Africa in 2008 show it isn’t limited to one region."},
+     {t:"It exists only in rich countries with many migrants.", why:"Xenophobic violence has occurred in many regions, including South Africa in 2008."},
      {t:"It is exactly the same as racism.", why:"It targets perceived foreignness, which can cut across racial categories."},
      {t:"It is a legal status.", why:"It is an attitude and behaviour, not a status."}]},
    {id:"e2u12-q43", lesson:"e2u12-l5", level:2, q:"According to the OECD’s 2014 summary, the net fiscal impact of immigration in OECD countries is usually…", options:[
@@ -1296,12 +1358,12 @@ ICA.addUnit({
      {t:"a gain of more than 10% of GDP", why:"Estimates were far smaller in both directions."},
      {t:"impossible to estimate", why:"It can be estimated, with careful accounting choices."}]},
    {id:"e2u12-q44", lesson:"e2u12-l5", level:3, q:"A student plans to interview workers at a factory and asks the manager to choose participants and sit in on interviews. What is the main ethical problem?", options:[
-     {t:"The manager’s power undermines voluntary consent and confidentiality; workers may feel unable to refuse or speak freely.", ok:true, why:"Gatekeeper pressure is a key risk in migration research, especially for workers tied to employers."},
+     {t:"The manager’s power undermines consent and confidentiality.", ok:true, why:"Workers may feel unable to refuse or speak freely. Gatekeeper pressure is a key risk in migration research, especially for workers tied to employers."},
      {t:"There is no problem, because the manager knows the workers best.", why:"Knowing the workers doesn’t remove the pressure created by power over their jobs."},
      {t:"Interviews should never be used in research.", why:"Interviews are a standard method; the problem is how this one is set up."},
      {t:"The problem is only that the interviews might be too long.", why:"Length matters less than consent and confidentiality here."}]},
    {id:"e2u12-q45", lesson:"e2u12-l5", level:2, q:"What did Mackenzie, McDowell and Pittaway (2007) argue about refugee research?", options:[
-     {t:"It should go beyond “do no harm”, building respectful, reciprocal relationships and involving refugees as partners.", ok:true, why:"That is the argument of “Beyond ‘Do No Harm’”."},
+     {t:"It should go beyond “do no harm”.", ok:true, why:"Research should build respectful, reciprocal relationships and involve refugees as partners. That is the argument of “Beyond ‘Do No Harm’”."},
      {t:"Refugees should never be researched.", why:"They argued for better research relationships, not for no research."},
      {t:"Consent isn’t needed in emergencies.", why:"They called for more care, not less."},
      {t:"Researchers should only use government records.", why:"Their focus was on ethical relationships with participants."}]}

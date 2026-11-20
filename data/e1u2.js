@@ -847,6 +847,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e1u2-q02","e1u2-q05","e1u2-q12","e1u2-q15","e1u2-q20","e1u2-q23","e1u2-q25","e1u2-q30","e1u2-q33","e1u2-q38","e1u2-q40","e1u2-q43"],
+  cpBank:[
+   {id:"e1u2-cp01", lesson:"e1u2-l1", level:1, q:"Olumide wants something more formal than “a lot of” in this sentence: “A lot of farmers have left the region.” Which version is correct?", options:[
+     {t:"Much farmers have left the region.", why:"*Much* goes with uncountable nouns (much research). *Farmers* is a countable plural."},
+     {t:"A great deal of farmers have left the region.", why:"*A great deal of* goes with uncountable nouns (a great deal of research), not with countable plurals."},
+     {t:"Many farmers have left the region.", ok:true, why:"*Farmers* is a countable plural, so *many* is right. A figure (“Over 2,000 farmers…”) would be even more precise."},
+     {t:"Lots of farmers have left the region.", why:"*Lots of* is just as conversational as *a lot of*. Use *many* or give a figure."}]},
+   {id:"e1u2-cp02", lesson:"e1u2-l1", level:2, q:"Wanjiru must write a reflective journal and a lab report for the same course. Which advice is most accurate?", options:[
+     {t:"Both should avoid “I” and “we”, because academic writing is meant to be impersonal", why:"The use of “I” varies by field and genre. A reflective journal is about the writer’s own experience, and many fields accept “I” or “we”."},
+     {t:"The journal can be less formal; the lab report needs a formal style, without contractions", ok:true, why:"Register changes with the genre. Reflective journals can be less formal; lab reports are usually quite formal."},
+     {t:"Both should use the same style, because register depends on the subject, not on the genre", why:"Register changes with the type of text, so one course can need different levels of formality."},
+     {t:"The lab report should use long, rare words, so that it sounds properly formal", why:"Formal means precise, not decorated. *Use* is usually better than *utilise*."}]},
+   {id:"e1u2-cp03", lesson:"e1u2-l2", level:2, q:"What type of sentence is this? “The survey was short, but many residents skipped it because they distrusted the council.”", options:[
+     {t:"Simple", why:"A simple sentence has only one clause. This one has three verbs that show tense: *was*, *skipped* and *distrusted*."},
+     {t:"Compound", why:"It does have two independent clauses joined by *but*, but it also has a dependent clause beginning with *because*."},
+     {t:"Complex", why:"A complex sentence has only one independent clause. Here *but* joins two, and there is a *because* clause as well."},
+     {t:"Compound-complex", ok:true, why:"Two independent clauses (*The survey was short*; *many residents skipped it*) joined by *but*, plus one dependent clause (*because they distrusted the council*)."}]},
+   {id:"e1u2-cp04", lesson:"e1u2-l2", level:2, q:"Noor’s draft says: “Many crops failed. Such as maize and beans.” Which revision is correct?", options:[
+     {t:"Many crops failed. For example, maize and beans.", why:"Still a fragment: there is no verb after *For example*. It can begin a sentence, but only a full one."},
+     {t:"Many crops failed, for example, maize and beans produced almost nothing.", why:"This joins two independent clauses with only commas: a comma splice. *For example* is not a conjunction."},
+     {t:"Many crops failed. For example, maize and beans produced almost nothing.", ok:true, why:"*For example* can begin a full sentence with its own subject and verb (*maize and beans produced*). *Such as* can’t."},
+     {t:"Many crops failed. Such as maize and beans, which produced almost nothing.", why:"Still a fragment: *such as* introduces examples inside a sentence, and this piece has no main verb."}]},
+   {id:"e1u2-cp05", lesson:"e1u2-l2", level:1, q:"Ines lists the aims of her project as three bullet points. Which list has parallel structure?", options:[
+     {t:"Map the clinics; Interview staff; Compare waiting times", ok:true, why:"Every bullet starts with a base verb, so items doing the same job have the same form."},
+     {t:"Map the clinics; Interviewing staff; Comparison of waiting times", why:"A verb, an *-ing* form and a noun phrase are mixed. If one bullet starts with a verb, they all should."},
+     {t:"Mapping the clinics; Interview staff; To compare waiting times", why:"Three different forms for three items that do the same job."},
+     {t:"Map the clinics; Staff interviews; Waiting times will be compared", why:"A verb, a noun phrase and a full passive sentence: the items are not parallel."}]},
+   {id:"e1u2-cp06", lesson:"e1u2-l3", level:1, q:"Which sentence is correct for a methods section?", options:[
+     {t:"Two equipments were borrowed from the physics lab.", why:"*Equipment* is usually uncountable, so it has no plural. Count it with *pieces of equipment*, or name the instruments."},
+     {t:"Two pieces of equipment were borrowed from the physics lab.", ok:true, why:"*Equipment* is uncountable, so you count it with *a piece of* / *pieces of*."},
+     {t:"An equipment was borrowed from the physics lab.", why:"Uncountable nouns normally don’t take *a* or *an*. Write *a piece of equipment*."},
+     {t:"Many equipment were borrowed from the physics lab.", why:"*Many* goes with countable plurals. Uncountable nouns take *much*, or you count pieces."}]},
+   {id:"e1u2-cp07", lesson:"e1u2-l3", level:3, q:"Thabo is writing about a survey he finished last year. Which version uses tenses in the usual way for most fields?", options:[
+     {t:"Several studies examine commuting stress. We survey 200 bus users. Most report long delays. These findings suggested that reliability matters.", why:"The method and results of a finished study are usually in the past simple, and what the findings mean is usually in the present."},
+     {t:"Several studies examined commuting stress since 2015. We have surveyed 200 bus users. Most have reported long delays. These findings suggest that reliability matters.", why:"*Since 2015* needs the present perfect, and a finished method and its results are usually in the past simple."},
+     {t:"Several studies had examined commuting stress. We were surveying 200 bus users. Most were reporting long delays. These findings were suggesting that reliability matters.", why:"Past perfect and continuous forms don’t match these jobs. Use past simple for method and results, present simple for meaning."},
+     {t:"Several studies have examined commuting stress. We surveyed 200 bus users. Most reported long delays. These findings suggest that reliability matters.", ok:true, why:"Present perfect for research up to now, past simple for his method and results, present simple for what the results mean."}]},
+   {id:"e1u2-cp08", lesson:"e1u2-l4", level:2, q:"Rohan’s paragraph explains why a city’s new bus lanes cut journey times. His topic sentence is: “In 2022, the city opened 14 km of bus lanes.” What is the main problem?", options:[
+     {t:"It states one fact, so it is too narrow to control the paragraph", ok:true, why:"A single fact gives a topic but no controlling idea. A better topic sentence says what the paragraph will show: why the lanes cut journey times."},
+     {t:"It is too broad to guide the paragraph", why:"It is very specific (one year, one figure). The problem is the opposite: it is too narrow."},
+     {t:"It only announces what the paragraph will talk about", why:"An announcement says “This paragraph will discuss…”. This sentence states a fact instead."},
+     {t:"There is no problem: a figure is the best way to begin any paragraph", why:"Figures make good support, but a topic sentence needs a controlling idea: what you will say about the topic."}]},
+   {id:"e1u2-cp09", lesson:"e1u2-l4", level:3, q:"A writer chose this pair: “Many villages rely on a single well. These wells can be polluted by floodwater.” Why is the passive a good choice in the second sentence?", options:[
+     {t:"The passive is more formal than the active, so it suits academic writing", why:"Formality doesn’t depend on voice, and APA even recommends the active in most writing. The reason here is word order."},
+     {t:"The actor is unknown, so the passive is needed to leave it out", why:"The actor is named: *by floodwater*. The passive is doing a different job here."},
+     {t:"It puts the wells, already mentioned, at the start of the sentence", ok:true, why:"Given-to-new order: the wells were just mentioned, so they come first, and the new information (floodwater) comes at the end."},
+     {t:"Modal verbs such as *can* must be followed by a passive verb", why:"Modals can be followed by an active verb too: “Floodwater can pollute these wells” is correct grammar."}]},
+   {id:"e1u2-cp10", lesson:"e1u2-l5", level:2, q:"Engineers have not finished checking an old bridge after last spring’s floods. Which sentence is correct and suitably cautious?", options:[
+     {t:"The bridge may have damaged by the floods.", why:"This is active in form, so it says the bridge damaged something. The bridge received the action: *may have been damaged*."},
+     {t:"The bridge may have been damaged by the floods.", ok:true, why:"Past possibility (*may have*) plus the passive (*been damaged*): the bridge received the action, and the hedge fits an unfinished check."},
+     {t:"The bridge may been damaged by the floods.", why:"Possibility in the past needs *have*: modal + *have* + *been* + past participle."},
+     {t:"The bridge must have been damaged by the floods.", why:"The grammar is right, but *must* is a strong deduction (a booster). With the checks unfinished, *may* fits the evidence."}]},
+   {id:"e1u2-cp11", lesson:"e1u2-l5", level:3, q:"Sofía measured carbon dioxide in 20 classrooms, and 18 were above the safe limit. Which pair of sentences hedges in the right places?", options:[
+     {t:"18 of the 20 classrooms may have been above the limit. This proves that ventilation is poor.", why:"This hedges the measured result and boosts the explanation: exactly the wrong way round."},
+     {t:"It could possibly be that some classrooms might have exceeded the limit. Ventilation may perhaps be a factor.", why:"Over-hedged: a measured result needs no hedge, and one hedge is enough for the explanation."},
+     {t:"18 of the 20 classrooms were above the limit. This clearly shows that poor ventilation is the cause.", why:"The result is stated well, but the cause was not measured. *Clearly shows* overclaims the explanation."},
+     {t:"18 of the 20 classrooms were above the limit. Poor ventilation may explain this.", ok:true, why:"Don’t hedge what you measured; do hedge the explanation, which goes beyond what you observed."}]},
+   {id:"e1u2-cp12", lesson:"e1u2-l5", level:3, q:"Which is the best concise version of “Due to the fact that the past history of the site was unknown, the team took soil samples in order to check for pollution”?", options:[
+     {t:"Because the site’s history was unknown, the team took soil samples to check for pollution.", ok:true, why:"*Due to the fact that* → *because*, *past history* → *history*, *in order to* → *to*. All of the meaning stays."},
+     {t:"The team took soil samples.", why:"Shorter, but it cuts the reason and the purpose. Concision removes empty words, not meaning."},
+     {t:"Because the site’s past history was unknown, the team took soil samples in order to check for pollution.", why:"Still wordy: *past history* says the same thing twice, and *in order to* can simply be *to*."},
+     {t:"Owing to the fact of the site’s history being unknown, soil samples were taken for the purpose of pollution checking.", why:"As wordy as the original, with extra nominalisations. The action and the actor are harder to see."}]}
+  ],
   codex:[
    {id:"formal-informal-choices", title:"Formal and informal choices in academic English", aka:["formality","contractions","phrasal verbs","vague language","general you","US and UK spelling"], tags:["academic english","writing","style"],
     summary:"Which everyday features to change in a formal essay (contractions, conversational phrasal verbs, the general “you”, vague words) and which are fine.",
@@ -1128,8 +1190,8 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e1u2-q01", lesson:"e1u2-l1", level:1, q:"In academic English, what does “formal” mainly mean?", options:[
-     {t:"Precise, written rather than spoken in style, and focused on the ideas", ok:true, why:"These are the core features. Formality is about saying exactly what you mean for a reader who can’t ask questions."},
-     {t:"Using the longest and rarest words available", why:"Long words are not more formal or precise. “Use” is usually better than “utilise”."},
+     {t:"Precise, written not spoken, and focused on the ideas", ok:true, why:"These are the core features: precise, written rather than spoken in style, and focused on the ideas. Formality is about saying exactly what you mean for a reader who can’t ask questions."},
+     {t:"Using the longest and rarest words available in English", why:"Long words are not more formal or precise. “Use” is usually better than “utilise”."},
      {t:"Writing every verb in the passive", why:"The passive is useful in some places, but formal writing uses active verbs too."},
      {t:"Never expressing any opinion", why:"Academic writing makes and argues claims. Formality is about how you express them."}
    ]},
@@ -1158,7 +1220,7 @@ ICA.addUnit({
      {t:"The authors discusses three possible causes.", why:"“The authors” is plural, so the verb is “discuss”."}
    ]},
    {id:"e1u2-q06", lesson:"e1u2-l1", level:1, q:"What is the best advice about US and UK spelling in an academic essay?", options:[
-     {t:"Either is correct; choose one (or the one required) and use it consistently.", ok:true, why:"Both are standard. Consistency is what readers and editors look for."},
+     {t:"Either is correct; choose one and use it consistently.", ok:true, why:"Both are standard. Use the one your university or journal requires, if it names one. Consistency is what readers and editors look for."},
      {t:"Always use US spelling, because it is the international standard.", why:"There is no single international standard; many publishers use UK spelling."},
      {t:"Always use UK spelling, because it is more academic.", why:"UK spelling is not more academic than US spelling."},
      {t:"Mix them freely; nobody notices.", why:"Inconsistent spelling is noticeable and looks careless."}
@@ -1170,7 +1232,7 @@ ICA.addUnit({
      {t:"It should start with “And”.", why:"Starting with “And” would not help, and the problem is vagueness."}
    ]},
    {id:"e1u2-q08", lesson:"e1u2-l1", level:3, q:"Kenji’s tutor says, “Use fewer phrasal verbs.” Kenji replaces every one, including “carried out”, with long Latin-based verbs such as “utilise” and “effectuate”. What is the problem?", options:[
-     {t:"He has made the writing stiffer without making it more precise; some phrasal verbs are standard, and simple words like “use” are often best.", ok:true, why:"The aim is precision. Change conversational phrasal verbs; keep standard ones and prefer natural words."},
+     {t:"He has made the writing stiffer without making it more precise.", ok:true, why:"The aim is precision. Some phrasal verbs, such as “carried out”, are standard, and simple words like “use” are often best. Change conversational phrasal verbs; keep standard ones and prefer natural words."},
      {t:"There is no problem: Latin-based verbs are always more academic.", why:"Rare Latinate verbs can make writing heavy and less clear. They are not automatically more academic."},
      {t:"Phrasal verbs are forbidden, so he should delete the sentences.", why:"Phrasal verbs are not forbidden; many are standard."},
      {t:"He should use contractions instead.", why:"Contractions are less formal, not more."}
@@ -1262,8 +1324,8 @@ ICA.addUnit({
      {t:"The numbers of complaint has doubled.", why:"“Complaint” should be plural after “number of”, and the phrase should be “the number”."}
    ]},
    {id:"e1u2-q23", lesson:"e1u2-l3", level:3, q:"Ana writes in her results section: “Scores rise by 10% in the second term.” Her tutor marks the verb. Why?", options:[
-     {t:"Results of a completed study are usually reported in the past simple: “Scores rose…”.", ok:true, why:"Her results describe what happened in her study, so most fields expect the past."},
-     {t:"Results must always be in the future tense.", why:"The future fits plans in a proposal, not results already found."},
+     {t:"Completed results are usually reported in the past: “Scores rose…”.", ok:true, why:"Her results describe what happened in her completed study, so most fields expect the past simple."},
+     {t:"Results must always be written in the future tense: “Scores will rise…”.", why:"The future fits plans in a proposal, not results already found."},
      {t:"“Rise” can only be used in the passive.", why:"“Rise” has no object, so it can’t be passive at all."},
      {t:"Results must be in the present perfect.", why:"APA guidance and common practice use the past for results."}
    ]},
@@ -1275,7 +1337,7 @@ ICA.addUnit({
    ]},
    {id:"e1u2-q25", lesson:"e1u2-l3", level:3, q:"A company report says: “Unfortunately, 300 jobs were lost this year.” Why might a critical reader object to the passive here?", options:[
      {t:"It hides who made the decision: the company cut the jobs.", ok:true, why:"The agentless passive makes the loss sound like something that just happened. Naming the actor shows responsibility: “The company cut 300 jobs.”"},
-     {t:"The passive is always grammatically wrong.", why:"The passive is correct English and often useful."},
+     {t:"The passive is always grammatically wrong in a company report.", why:"The passive is correct English and often useful."},
      {t:"“Lost” cannot be used in the passive.", why:"“Lose” takes an object, so it has a normal passive."},
      {t:"The sentence is in the present tense.", why:"“Were lost” is past."}
    ]},
@@ -1299,9 +1361,9 @@ ICA.addUnit({
      {t:"A greeting and a summary", why:"Paragraphs don’t have greetings."}
    ]},
    {id:"e1u2-q29", lesson:"e1u2-l4", level:1, q:"What is the difference between cohesion and coherence?", options:[
-     {t:"Cohesion is the language links between sentences; coherence is whether the ideas make sense together.", ok:true, why:"You can point to cohesion in the words; coherence is about the logic and order of ideas."},
+     {t:"Cohesion means language links; coherence means ideas making sense together.", ok:true, why:"You can point to cohesion in the words that link sentences; coherence is about the logic and order of ideas."},
      {t:"They mean exactly the same.", why:"They are related but different. A text can be cohesive yet incoherent."},
-     {t:"Cohesion is about spelling; coherence is about grammar.", why:"Neither term is about spelling or grammar accuracy."},
+     {t:"Cohesion is about accurate spelling; coherence is about accurate grammar and punctuation.", why:"Neither term is about spelling, grammar or punctuation accuracy."},
      {t:"Cohesion is for speech; coherence is for writing.", why:"Both apply to speech and writing."}
    ]},
    {id:"e1u2-q30", lesson:"e1u2-l4", level:2, q:"Choose the best signal: “The new seeds produced higher yields. _____, they cost twice as much as local varieties.”", options:[
@@ -1323,22 +1385,22 @@ ICA.addUnit({
      {t:"For instance", why:"Rising costs are not an example of “did not reduce”; they go further."}
    ]},
    {id:"e1u2-q33", lesson:"e1u2-l4", level:3, q:"Priya’s paragraph uses “participants”, “subjects”, “respondents” and “people” for the same group. Her reader is confused. Why?", options:[
-     {t:"In academic writing, different terms can suggest different groups; a key term should stay the same.", ok:true, why:"Consistent key terms are a cohesive device. Swapping synonyms for variety makes readers wonder if the groups differ."},
-     {t:"Synonyms are grammatically incorrect.", why:"They are correct English; the problem is clarity."},
+     {t:"Different terms suggest different groups; keep one key term.", ok:true, why:"In academic writing, consistent key terms are a cohesive device. Swapping synonyms for variety makes readers wonder if the groups differ."},
+     {t:"Synonyms are grammatically incorrect when they refer to the same people.", why:"They are correct English; the problem is clarity."},
      {t:"She should have used pronouns only.", why:"Only pronouns would create unclear reference."},
      {t:"Academic writing never repeats words.", why:"Repetition of key terms is normal and helpful in academic writing."}
    ]},
    {id:"e1u2-q34", lesson:"e1u2-l4", level:3, q:"Tomás’s paragraph is about why a recycling scheme succeeded. One sentence says the town also has a new football stadium. What is the problem?", options:[
-     {t:"The sentence breaks the paragraph’s unity: it doesn’t support the controlling idea.", ok:true, why:"It may be true, but it is off topic. Cut it or move it to a relevant paragraph."},
+     {t:"It breaks the paragraph’s unity: it doesn’t support the controlling idea.", ok:true, why:"It may be true, but it is off topic. Cut it or move it to a relevant paragraph."},
      {t:"The sentence is too short.", why:"Length is not the problem."},
-     {t:"The sentence needs a transition signal.", why:"A signal can’t make an unrelated idea relevant."},
-     {t:"The paragraph needs a second topic sentence.", why:"That would make the paragraph do two jobs."}
+     {t:"The sentence needs a transition signal such as “In addition” before it.", why:"A signal can’t make an unrelated idea relevant."},
+     {t:"The paragraph now needs a second topic sentence to introduce the new stadium.", why:"That would make the paragraph do two jobs."}
    ]},
    {id:"e1u2-q35", lesson:"e1u2-l4", level:2, q:"What should a concluding or linking sentence usually do?", options:[
      {t:"Say why the point matters, qualify it, or link to the next paragraph", ok:true, why:"It should add something, not just repeat."},
      {t:"Repeat the topic sentence in different words", why:"Pure repetition wastes the reader’s time."},
      {t:"Introduce a completely new topic", why:"A new topic needs its own paragraph."},
-     {t:"Give the paragraph’s first piece of evidence", why:"Evidence belongs in the supporting sentences."}
+     {t:"Give the first piece of evidence that supports the paragraph’s main claim", why:"Evidence belongs in the supporting sentences."}
    ]},
    {id:"e1u2-q36", lesson:"e1u2-l4", level:2, q:"“Water samples were collected from 12 wells.” Which next sentence keeps the given information (the samples) at the start?", options:[
      {t:"The samples were then tested for bacteria in a district laboratory.", ok:true, why:"It starts with the given idea (“the samples”) and ends with the new information (the test and where it happened). The passive makes this order possible."},
@@ -1384,8 +1446,8 @@ ICA.addUnit({
      {t:"because", why:"“Because” gives a reason, not a purpose, so the meaning changes."}
    ]},
    {id:"e1u2-q43", lesson:"e1u2-l5", level:3, q:"Dmitri cuts this sentence to save words: “Results suggest that the scheme may have helped in two of the three towns.” → “The scheme helped.” What went wrong?", options:[
-     {t:"He cut the hedge and the limitation, so the claim is now stronger and wider than the evidence.", ok:true, why:"Concision must keep needed hedges and limits. A good cut: “The scheme may have helped in two of the three towns.”"},
-     {t:"Nothing: shorter is always better.", why:"Concise is not the same as short. Accuracy comes first."},
+     {t:"He cut the hedge and the limitation, so the claim is now too strong.", ok:true, why:"Concision must keep needed hedges and limits; now the claim is stronger and wider than the evidence. A good cut: “The scheme may have helped in two of the three towns.”"},
+     {t:"Nothing: shorter is always better, so the new sentence is an improvement.", why:"Concise is not the same as short. Accuracy comes first."},
      {t:"He should have added “clearly”.", why:"A booster would make the over-claim worse."},
      {t:"The new sentence is a fragment.", why:"“The scheme helped” is a complete sentence; the problem is accuracy."}
    ]},

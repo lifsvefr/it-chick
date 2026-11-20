@@ -66,7 +66,7 @@ ICA.addUnit({
       {t:"In many countries, women are much more likely than men to leave paid work to care for young children or older relatives.", b:1, why:"A difference between whole groups, repeated across many countries, points to social arrangements such as expectations, pay gaps and childcare, not just individual preferences."}
     ]},
     {id:"e2u1-l1-x2", type:"mcq", q:"Priya is researching why so many people in her town commute more than two hours a day. Which question shows the sociological imagination most clearly?", options:[
-      {t:"How have housing costs, job locations and transport policy changed in the region, and who has been pushed farthest from work?", ok:true, why:"Right. This links many individual commutes to history and social structure: the housing market, where jobs are and public decisions about transport."},
+      {t:"How have housing costs, job locations and transport policy changed here?", ok:true, why:"Right. Asking how these have changed, and who has been pushed farthest from work, links many individual commutes to history and social structure: the housing market, where jobs are and public decisions about transport."},
       {t:"Why don’t these people just get up earlier and plan their journeys better?", why:"This treats a widespread pattern as a matter of individual effort only. It ignores why so many people face the same problem at once."},
       {t:"Which podcast would make a long commute more enjoyable?", why:"That may help one person cope, but it doesn’t explain anything about why long commutes are common."},
       {t:"Is commuting good or bad?", why:"This asks for a judgement, not an explanation. The sociological imagination asks how personal experience connects to wider social forces."}
@@ -80,7 +80,7 @@ ICA.addUnit({
       ["Macro-level study","Comparing how school systems in 30 countries sort students","Large structures compared across whole countries are macro-level."]
     ]},
     {id:"e2u1-l1-x4", type:"mcq", q:"Dmitri says: “Sociology is just common sense with long words.” What is the best response?", options:[
-      {t:"Common sense often contradicts itself and is sometimes wrong; sociology tests claims with systematic evidence.", ok:true, why:"Yes. “Birds of a feather flock together” and “opposites attract” can’t both be the rule. Research checks which is true, for whom and when."},
+      {t:"Common sense can contradict itself; sociology tests claims with systematic evidence.", ok:true, why:"Yes. “Birds of a feather flock together” and “opposites attract” can’t both be the rule. Research checks which is true, for whom and when."},
       {t:"He’s right: sociology only describes what everyone already knows.", why:"Research regularly finds results that surprise people, such as Durkheim showing that suicide, a seemingly private act, follows stable social patterns."},
       {t:"Sociology avoids common sense by relying only on theory, never on evidence.", why:"The opposite: sociology’s strength is gathering evidence carefully. Theories are tested against data."},
       {t:"Sociology is about opinions, so there’s no way to say whether it’s more than common sense.", why:"Sociology isn’t a collection of opinions. It uses methods such as surveys, observation and experiments that others can check."}
@@ -102,7 +102,7 @@ ICA.addUnit({
       {t:"It is basically the same thing as social work.", flag:true, why:"Social work is a helping profession that may draw on sociology. Sociology itself is a research discipline."}
     ]},
     {id:"e2u1-l1-x6", type:"mcq", q:"Sione notices that most of his relatives in a Pacific island village have family members working abroad who send money home. Which explanation best uses the sociological imagination?", options:[
-      {t:"Limited local jobs, overseas labour demand, migration schemes and family obligations together shape many families’ decisions in the same way.", ok:true, why:"Right. It explains a shared pattern through economic and social structures, while still leaving room for each family’s own choices."},
+      {t:"Few local jobs and demand for workers abroad shape many families’ choices.", ok:true, why:"Right. Limited local jobs, overseas labour demand, migration schemes and family obligations together shape many families’ decisions in the same way. This explains a shared pattern through economic and social structures, while still leaving room for each family’s own choices."},
       {t:"His relatives simply prefer living abroad to living at home.", why:"Individual preference alone can’t explain why the same choice is so common across a whole community."},
       {t:"It’s a coincidence that so many families made the same choice.", why:"When the same choice repeats across many families, sociologists look for social causes rather than coincidence."},
       {t:"Because it’s a pattern, every family member there will eventually move abroad.", why:"A pattern describes a tendency, not a certainty about each person. Many people stay."}
@@ -201,7 +201,7 @@ ICA.addUnit({
       {t:"Use census data to measure how average household size has changed over 50 years.", b:0, why:"Counting and comparing measurable patterns over time: positivist."}
     ]},
     {id:"e2u1-l2-x4", type:"mcq", q:"Why did sociology emerge as a discipline in 19th-century Europe in particular?", options:[
-      {t:"Rapid industrialisation, the growth of cities and political revolutions disrupted traditional life and raised new questions about order and change.", ok:true, why:"Right. Familiar communities, work and authority were transformed, and the success of natural science suggested society might be studied systematically too."},
+      {t:"Industrialisation, cities and revolutions disrupted traditional life.", ok:true, why:"Right. Rapid industrialisation, the growth of cities and political revolutions raised new questions about order and change. Familiar communities, work and authority were transformed, and the success of natural science suggested society might be studied systematically too."},
       {t:"Nobody had ever thought about society before that time.", why:"Thinkers such as Confucius, Plato, Aristotle, Ma Duanlin and Ibn Khaldun reflected on social life much earlier. What was new was a named, organised discipline."},
       {t:"Governments ordered universities to create a new subject.", why:"Sociology grew from thinkers responding to social change, not from a government order."},
       {t:"Societies had become stable, so people finally had time to study them.", why:"The reverse: it was rapid, unsettling change that made understanding society feel urgent."}
@@ -220,7 +220,7 @@ ICA.addUnit({
       {t:"Du Bois carried out door-to-door research in Philadelphia.", flag:false, why:"True: his 1896–97 fieldwork led to The Philadelphia Negro (1899)."}
     ]},
     {id:"e2u1-l2-x6", type:"mcq", q:"Hana wants to understand why young people in her city spend so much time in internet cafés. A Weberian researcher would most likely start by…", options:[
-      {t:"talking with the young people to understand what the cafés mean to them: friendship, escape, gaming, a place of their own.", ok:true, why:"Yes. Weber’s verstehen means grasping the meaning of an action from the actor’s point of view."},
+      {t:"talking with the young people to learn what the cafés mean to them.", ok:true, why:"Yes. The cafés might mean friendship, escape, gaming or a place of their own. Weber’s verstehen means grasping the meaning of an action from the actor’s point of view."},
       {t:"counting café visits and ignoring what the visitors say about them.", why:"Counting can be useful, but a Weberian approach insists on understanding meaning too."},
       {t:"assuming the cafés exist because they serve a function for society as a whole.", why:"That is closer to a functionalist assumption, not Weber’s focus on meaning."},
       {t:"deciding in advance that the young people are wasting their time.", why:"That’s a value judgement, which Weber argued researchers should keep out of their analysis."}
@@ -311,10 +311,10 @@ ICA.addUnit({
       {t:"Studying how friends use humour to settle an argument in a group chat", b:1, why:"Small-group interaction and meaning: micro."}
     ]},
     {id:"e2u1-l3-x4", type:"mcq", q:"Which critique is most often made of structural functionalism?", options:[
-      {t:"It struggles to explain social change and can make unequal arrangements look necessary.", ok:true, why:"Right. By focusing on stability and function, it can miss conflict and change, and treat inequality as if it served everyone."},
+      {t:"It struggles to explain change and can make inequality look necessary.", ok:true, why:"Right. By focusing on stability and function, it can miss conflict and change, and treat inequality as if it served everyone."},
       {t:"It focuses so much on conflict that it ignores stability.", why:"That is the usual critique of conflict theory, the opposite perspective."},
       {t:"It studies only tiny face-to-face interactions.", why:"Functionalism is a macro perspective. That critique fits symbolic interactionism better."},
-      {t:"It refuses to consider institutions such as schools or families.", why:"Institutions are exactly what functionalism analyses."}
+      {t:"It refuses to consider institutions such as schools, families or religion.", why:"Institutions are exactly what functionalism analyses."}
     ]},
     {id:"e2u1-l3-x5", type:"mcq", q:"Lucía studies a hospital’s promotion data. Women are well represented among senior doctors, and so are doctors from minority ethnic groups, but almost no senior doctors are women from minority ethnic groups. Which concept best explains why she needed to look at the categories together?", options:[
       {t:"Intersectionality", ok:true, why:"Yes. Looking at gender and ethnicity separately hid a gap that only appears where they combine. This mirrors the problem Crenshaw identified in 1989."},
@@ -441,9 +441,9 @@ ICA.addUnit({
       {t:"A counting tool gives different totals each time it processes the same files.", b:0, why:"Inconsistent results from identical input: reliability."}
     ]},
     {id:"e2u1-l4-x6", type:"mcq", q:"A study finds that neighbourhoods with more cafés have lower crime rates. Ana concludes that opening cafés reduces crime. What is the most important thing she has overlooked?", options:[
-      {t:"A third variable, such as neighbourhood wealth, may explain both more cafés and less crime.", ok:true, why:"Right. Wealthier areas may attract cafés and also have lower recorded crime for many other reasons. The correlation may be spurious."},
+      {t:"A third variable, such as neighbourhood wealth, may explain both.", ok:true, why:"Right. Wealthier areas may attract cafés and also have lower recorded crime for many other reasons. The correlation may be spurious."},
       {t:"The sample of neighbourhoods was too large.", why:"A larger sample generally makes a correlation more trustworthy, not less. The problem is reading it as cause."},
-      {t:"Correlations can never tell researchers anything useful.", why:"Correlations are useful evidence and often the first step. They just don’t prove cause on their own."},
+      {t:"Correlations can never tell researchers anything useful about crime.", why:"Correlations are useful evidence and often the first step. They just don’t prove cause on their own."},
       {t:"Crime and cafés can’t be measured.", why:"Both can be measured, with care. Measurement isn’t the main issue here."}
     ]},
     {id:"e2u1-l4-x7", type:"mcq", q:"Kenji wants to study whether “social isolation” affects older adults’ health. Which is the best operational definition of social isolation?", options:[
@@ -579,6 +579,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u1-q04","e2u1-q07","e2u1-q11","e2u1-q14","e2u1-q18","e2u1-q20","e2u1-q24","e2u1-q26","e2u1-q29","e2u1-q31","e2u1-q38","e2u1-q42"],
+  cpBank:[
+   {id:"e2u1-cp01", lesson:"e2u1-l1", level:1, q:"Which of these is the best example of a **social fact** in Durkheim’s sense?", options:[
+     {t:"Mira’s private habit of reading for an hour in bed every night", why:"A private habit belongs to one person. Social facts are shared rules, customs and values that exist outside any one individual."},
+     {t:"One student’s nervous feeling in the hour before a maths exam", why:"A feeling inside one person is not a social fact. Durkheim meant patterns of rules, customs and beliefs that exist beyond any individual."},
+     {t:"A shared custom of taking off shoes before entering a home", ok:true, why:"A custom like this exists before any one person is born, applies to everyone in the group and shapes how they act. That is a social fact."},
+     {t:"The colour of a person’s eyes, which is passed on by parents", why:"Eye colour is biological, not social. Social facts are laws, morals, customs, fashions and rituals that shape behaviour."}]},
+   {id:"e2u1-cp02", lesson:"e2u1-l2", level:1, q:"A history quiz app says: “Auguste Comte was the first person ever to write the word *sociology*.” Which correction fits what you learned?", options:[
+     {t:"Ibn Khaldun first wrote it in the *Muqaddimah*, and Comte translated it into French", why:"Ibn Khaldun is seen as a forerunner of sociology, but he did not coin the word. Sieyès first wrote it, around 1780."},
+     {t:"Durkheim first wrote it in *Suicide*, and Comte copied it from him later", why:"Comte lived before *Suicide* (1897) appeared. The word was first written by Sieyès around 1780 and made famous by Comte from 1838."},
+     {t:"Marx first wrote it in *The Communist Manifesto*", why:"Marx never even called himself a sociologist. The word comes from Sieyès’s unpublished manuscript of around 1780."},
+     {t:"Sieyès wrote it first, around 1780; Comte reintroduced and popularised it", ok:true, why:"Correct. Sieyès used the word in an unpublished manuscript. Comte brought it back decades later and made it widely known."}]},
+   {id:"e2u1-cp03", lesson:"e2u1-l3", level:1, q:"A city installs free wifi in its parks so that residents can get online. Soon, groups of teenagers start meeting in the parks to do homework together. In Merton’s terms, the homework meetings are a…", options:[
+     {t:"manifest function", why:"A manifest function is the intended purpose. The city intended to give residents internet access, not to create study groups."},
+     {t:"latent function", ok:true, why:"Yes. The study groups are a real, useful result that nobody planned. Unintended positive consequences are latent functions."},
+     {t:"dysfunction", why:"A dysfunction is a harmful consequence. Teenagers studying together is helpful, so it is not a dysfunction."},
+     {t:"social fact", why:"A social fact is a shared rule or custom that shapes behaviour. Merton’s terms describe the consequences of a practice, and this one was unintended."}]},
+   {id:"e2u1-cp04", lesson:"e2u1-l4", level:2, q:"A town grew from 50,000 to 80,000 residents. Yearly burglaries rose from 20 to 24. A headline says “Burglary up 20%”. What happened to the **burglary rate** per 100,000?", options:[
+     {t:"It rose by 20%, from 40 to 48, just as the headline says", why:"48 comes from dividing this year’s 24 burglaries by last year’s population. Use each year’s own population: 24 ÷ 80,000 × 100,000 = 30."},
+     {t:"It fell from 40 to 30, because the population grew faster than burglaries", ok:true, why:"Correct. 20 ÷ 50,000 × 100,000 = 40, and 24 ÷ 80,000 × 100,000 = 30. The count rose, but each resident’s risk fell. Rates, not raw counts, show this."},
+     {t:"It stayed the same, because burglaries and population both went up", why:"Both rose, but not by the same share: burglaries by 20%, population by 60%. So the rate fell from 40 to 30 per 100,000."},
+     {t:"It can’t be calculated, because the town’s population changed between years", why:"That is exactly why we use rates. Dividing each year’s count by that year’s population (× 100,000) makes the two years comparable."}]},
+   {id:"e2u1-cp05", lesson:"e2u1-l5", level:2, q:"Ikaika wants to know whether newspapers in his country have described climate change differently since the 1990s. He can use a digital archive of old articles. Which method fits best?", options:[
+     {t:"An experiment that shows readers different articles", why:"An experiment could test how articles affect readers today, but it cannot show how newspaper coverage changed over 30 years."},
+     {t:"Participant observation in a newsroom for six months", why:"This shows how journalists work now. It cannot show how articles from the 1990s were written."},
+     {t:"A survey asking readers what they remember about past coverage", why:"Memories are unreliable and show readers’ views, not what the articles actually said. The archive holds the real evidence."},
+     {t:"Content analysis of archived articles from each period", ok:true, why:"Right. Systematically coding texts across time shows how coverage changed, and it is nonreactive: old articles can’t change because they are studied."}]},
+   {id:"e2u1-cp06", lesson:"e2u1-l5", level:2, q:"Hyun-woo emails a wellbeing survey to all 5,000 staff in a hospital network. 400 complete it. What is the response rate, and why does it matter?", options:[
+     {t:"8%; the staff who replied may differ from those who did not, so the results could be biased", ok:true, why:"Correct: 400 ÷ 5,000 × 100 = 8%. Non-response can bias results. For example, the most overworked staff may have had no time to reply."},
+     {t:"80%; that is high enough to trust the results", why:"Check the calculation: 400 ÷ 5,000 × 100 = 8%, not 80%. Only a small share of staff replied."},
+     {t:"8%; but 400 replies is a large number, so the results represent all staff", why:"How people end up in a sample matters more than how many. A low response rate can leave out whole groups, however many replies there are."},
+     {t:"12.5%; low, but normal for online surveys", why:"12.5 is 5,000 ÷ 400. The response rate is completed ÷ invited × 100, which is 8%."}]},
+   {id:"e2u1-cp07", lesson:"e2u1-l4", level:2, q:"Two students do a content analysis of 200 TV adverts. They code whether each advert shows a woman “in a position of authority”, but they disagree on a third of the adverts. What is the problem, and the best fix?", options:[
+     {t:"A Hawthorne effect; the adverts changed because they were being studied", why:"Content analysis is nonreactive: adverts can’t change their behaviour when studied. The problem is the coders’ inconsistency."},
+     {t:"Weak reliability; agree a precise operational definition, then recode", ok:true, why:"Right. Coders who disagree produce inconsistent results that wouldn’t replicate. A clear operational definition (for example, giving orders, or a job title such as manager) makes coding consistent."},
+     {t:"A sample that is too small; code 2,000 adverts instead", why:"More adverts would not fix the disagreement. Unless the definition is clearer, the coders will still disagree on a third of them."},
+     {t:"Weak validity; they should replace the adverts with a survey of viewers", why:"Disagreement between coders is a consistency (reliability) problem. A survey would answer a different question: what viewers think, not what adverts show."}]},
+   {id:"e2u1-cp08", lesson:"e2u1-l3", level:2, q:"Nadia asks: “In households where both partners work full time, why do cooking and caring for older relatives still fall mostly on women?” Which lens frames her question most directly?", options:[
+     {t:"Structural functionalism", why:"Functionalism asks how a practice helps keep society stable. Nadia’s question asks why work is divided unequally by gender."},
+     {t:"Symbolic interactionism", why:"Interactionism could explore what housework means to each partner, but Nadia’s question puts gender inequality at the centre."},
+     {t:"Feminist theory", ok:true, why:"Yes. Feminist theory puts gender at the centre and studies how inequality is produced, including who does unpaid care at home."},
+     {t:"Positivism", why:"Positivism is an approach to evidence (finding laws through observation), not a lens that focuses on gender."}]},
+   {id:"e2u1-cp09", lesson:"e2u1-l1", level:3, q:"A report finds that, across 300 towns, those with more public parks have lower rates of heart disease. An official says: “Kwame lives in a town with many parks, so his heart is healthy. And building parks will cut heart disease.” What is the best criticism?", options:[
+     {t:"Nothing is wrong: a pattern across 300 towns proves both claims", why:"A pattern across many towns shows an association. It doesn’t prove cause, and it never tells you about one person."},
+     {t:"The claim about Kwame is fair, but the claim about building parks is not", why:"Group rates describe averages; they never predict what is true of one individual, so the claim about Kwame is not fair either."},
+     {t:"The only problem is the sample: 300 towns is too few to show a pattern", why:"300 towns is plenty to show a pattern. The real problems are applying a group rate to one person and treating correlation as cause."},
+     {t:"Town rates say nothing certain about Kwame, and a third variable, such as town wealth, could explain both", ok:true, why:"Right. Patterns describe groups, not individuals. And wealthier towns may have more parks and less heart disease for other reasons, so the link may be spurious."}]},
+   {id:"e2u1-cp10", lesson:"e2u1-l2", level:3, q:"Lerato plans a study of how families cope with rising food prices. First she analyses census figures on household income by neighbourhood. Then she interviews 20 families about how they get by. How does her design relate to sociology’s two ways of knowing?", options:[
+     {t:"It is purely positivist, because it includes statistics", why:"The interviews seek meanings from the inside, which is interpretive. A study with some statistics can still use both approaches."},
+     {t:"It combines a positivist, quantitative strand with an interpretive one", ok:true, why:"Yes. Census figures show patterns; interviews show meanings and experiences. Most sociologists today use both, and combining them covers each one’s weak spots."},
+     {t:"It mixes two approaches that cannot be combined in one study", why:"Positivist and interpretive research are often combined. The guide says most sociologists today use both, and mixed methods is common."},
+     {t:"It is purely interpretive, because the census figures don’t count as evidence", why:"Census figures are secondary data and are real evidence. They give the quantitative, positivist side of the study."}]},
+   {id:"e2u1-cp11", lesson:"e2u1-l3", level:3, q:"Ji-ho uses conflict theory to study a national university entrance exam. Which is a **testable hypothesis** that fits his lens?", options:[
+     {t:"The exam is deeply unfair and should be abolished.", why:"This is a value judgement, not a testable statement about how variables are related. Evidence alone can’t show it is right or wrong."},
+     {t:"The exam helps society by sorting people into suitable jobs.", why:"This is a functionalist claim about stability, and as worded it is too vague to test. Conflict theory asks who benefits and who pays."},
+     {t:"Students from high-income families score higher than students from low-income families with similar school grades.", ok:true, why:"Right. It asks who benefits from the exam (the conflict question), and it relates two measurable variables, family income and exam score, so evidence could prove it wrong."},
+     {t:"For students, sitting the exam feels like a rite of passage into adulthood.", why:"This is about meanings, which fits symbolic interactionism or interpretive research. It doesn’t ask who gains and who loses."}]},
+   {id:"e2u1-cp12", lesson:"e2u1-l5", level:3, q:"Selin wants to study how staff in a fast-food restaurant deal with rude customers. She fears staff will act differently if they know they are being studied. She plans to take a job there and observe secretly. What is the best advice?", options:[
+     {t:"Go ahead without approval: avoiding the Hawthorne effect is enough reason on its own", why:"The Hawthorne effect is a real problem, but it doesn’t remove the need for ethical review. Deception needs approval and strict conditions."},
+     {t:"Get ethics review approval first; secret observation is allowed only if risk is minimal, there is no other way, and staff are debriefed", ok:true, why:"Correct. Deception is acceptable only under these conditions, and the ethics review must happen before any data is collected."},
+     {t:"Start now and ask an ethics committee for approval later, once she knows the data is useful", why:"Ethics review happens before any data is collected, not after. Approval cannot be given to research that has already been done."},
+     {t:"Drop the project, because any study where people know they are observed is worthless", why:"The Hawthorne effect is a risk to manage, not a reason to give up. Mixed methods or triangulation can help cover it."}]}
+  ],
   codex:[
    {id:"sociology", title:"Sociology", aka:["the study of society","social science"], tags:["sociology","basics"],
     summary:"The systematic study of society and social interaction, from two-person conversations to the global economy.",
@@ -1333,8 +1395,8 @@ ICA.addUnit({
      {t:"The study of ancient civilisations through their objects", why:"That is closer to archaeology."}
    ]},
    {id:"e2u1-q02", lesson:"e2u1-l1", level:1, q:"What is the difference between a society and a culture?", options:[
-     {t:"A society is a group of people who interact in an area; culture is their shared practices, values and beliefs.", ok:true, why:"Society is the people and their relationships; culture is the way of life they share."},
-     {t:"They mean exactly the same thing.", why:"They are closely linked but distinct. One society can contain many cultures."},
+     {t:"A society is people who interact; culture is their shared way of life.", ok:true, why:"Society is the people who interact in an area and their relationships; culture is their shared practices, values and beliefs."},
+     {t:"They mean the same thing: both name a group of people who share one way of life.", why:"They are closely linked but distinct. One society can contain many cultures."},
      {t:"Culture refers only to art, music and literature.", why:"In sociology culture means a group’s whole way of life, not only the arts."},
      {t:"A society is always one country, and a culture is always one religion.", why:"Neither is true. Cultures can cross borders, and societies can contain many religions."}
    ]},
@@ -1345,13 +1407,13 @@ ICA.addUnit({
      {t:"Max Weber, in The Protestant Ethic (1904–05)", why:"Weber is known for verstehen, not the sociological imagination."}
    ]},
    {id:"e2u1-q04", lesson:"e2u1-l1", level:2, q:"Which situation is best described as a public issue rather than a personal trouble?", options:[
-     {t:"Across a country, many small farmers lose their land after a change in trade rules.", ok:true, why:"Many people are affected at once by a structural cause, the trade rules. That is a public issue."},
+     {t:"Across a country, many small farmers lose land after trade rules change.", ok:true, why:"Many people are affected at once by a structural cause, the trade rules. That is a public issue."},
      {t:"Lucía loses her phone on a bus.", why:"One event within one person’s life is a personal trouble."},
-     {t:"Kenji and his flatmate argue about the washing-up.", why:"A disagreement in one household, with no wider cause described, is a personal trouble."},
+     {t:"Kenji and his flatmate argue for the third time this week about the washing-up.", why:"A disagreement in one household, with no wider cause described, is a personal trouble."},
      {t:"Amara catches a cold after walking home in the rain.", why:"A one-off personal event with an individual cause is a personal trouble."}
    ]},
    {id:"e2u1-q05", lesson:"e2u1-l1", level:3, q:"Dmitri says: “Durkheim showed suicide follows social patterns, so I can predict which of my neighbours will take their own life.” What is wrong with his reasoning?", options:[
-     {t:"Patterns describe rates in groups, not what any individual will do.", ok:true, why:"Group rates show tendencies. Using them to predict or judge one person is a basic error."},
+     {t:"Patterns describe group rates, not what one person will do.", ok:true, why:"Group rates show tendencies. Using them to predict or judge one person is a basic error."},
      {t:"Durkheim actually found suicide has no social patterns.", why:"He found the opposite: rates differed steadily between groups."},
      {t:"Nothing: social patterns let you predict individuals exactly.", why:"Social patterns are probabilities across groups. They never determine one person’s actions."},
      {t:"Durkheim only studied one person in depth.", why:"Durkheim compared statistics for whole populations, not one person."}
@@ -1363,34 +1425,34 @@ ICA.addUnit({
      {t:"Measuring the growth of cities worldwide since 1950", why:"Global urbanisation is a macro-level trend."}
    ]},
    {id:"e2u1-q07", lesson:"e2u1-l1", level:3, q:"Ana notices that in her extended family, women who moved to the city in the 1990s mostly trained as nurses, while their brothers became drivers or mechanics. Which response best uses the sociological imagination?", options:[
-     {t:"Ask how the job market, training opportunities and ideas about gender at that time shaped the choices open to each sibling.", ok:true, why:"This links individual biographies to the history and structure of their society, while still allowing for personal choice."},
-     {t:"Conclude that women naturally prefer caring work.", why:"That assumes a fixed, natural explanation without looking at the social forces that shaped the options."},
+     {t:"Ask how jobs, training and gender ideas then shaped each sibling’s options.", ok:true, why:"Asking how the job market, training opportunities and ideas about gender at that time shaped the choices open to each sibling links individual biographies to the history and structure of their society, while still allowing for personal choice."},
+     {t:"Conclude that women naturally prefer caring work, and men prefer work with machines.", why:"That assumes a fixed, natural explanation without looking at the social forces that shaped the options."},
      {t:"Assume it’s a coincidence.", why:"A repeated pattern across a family and generation calls for a social explanation, not coincidence."},
      {t:"Decide which sibling made the better choice.", why:"That is a value judgement, not an explanation of the pattern."}
    ]},
    {id:"e2u1-q08", lesson:"e2u1-l1", level:2, q:"Someone says, “Sociology is just common sense.” Which reply is most accurate?", options:[
-     {t:"Common sense often contradicts itself or is wrong; sociology tests claims with systematic evidence.", ok:true, why:"Sayings like “birds of a feather flock together” and “opposites attract” can’t both be the rule. Research finds out which holds, when."},
+     {t:"No: sociology tests common-sense claims with systematic evidence.", ok:true, why:"Common sense often contradicts itself or is wrong. Sayings like “birds of a feather flock together” and “opposites attract” can’t both be the rule. Research finds out which holds, when."},
      {t:"Yes, sociologists just write down what everyone already believes.", why:"Research often contradicts popular beliefs. That’s much of its value."},
      {t:"No, because sociology never uses evidence from everyday life.", why:"Sociology studies everyday life constantly; the difference is that it gathers evidence systematically."},
      {t:"Yes, so sociological findings don’t need to be checked.", why:"All findings need checking. That is why methods are reported in detail."}
    ]},
    {id:"e2u1-q09", lesson:"e2u1-l1", level:2, q:"Which job most directly uses the sociological skill of designing surveys and interviews?", options:[
-     {t:"A user researcher finding out how different people use a public transport app", ok:true, why:"Planning questions, choosing whom to ask and analysing answers are core research skills from sociology."},
-     {t:"A pilot flying a passenger plane", why:"Piloting relies on technical flight skills, not survey design."},
+     {t:"A user researcher studying how people use an app", ok:true, why:"Finding out how different people use, say, a public transport app is social research. Planning questions, choosing whom to ask and analysing answers are core research skills from sociology."},
+     {t:"A pilot flying a passenger plane between two cities", why:"Piloting relies on technical flight skills, not survey design."},
      {t:"A chef creating a new menu", why:"Cooking skills are central here, not social research methods."},
      {t:"A plumber repairing a leak", why:"Plumbing is a technical trade that doesn’t centre on survey design."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e2u1-q10", lesson:"e2u1-l2", level:1, q:"Which changes formed the main backdrop to the rise of sociology in 19th-century Europe?", options:[
-     {t:"Industrialisation, urbanisation and political revolutions", ok:true, why:"Factories, fast-growing cities and revolutions transformed everyday life and raised new questions about order and change."},
+     {t:"Industrialisation, city growth and revolutions", ok:true, why:"Industrialisation, urbanisation and political revolutions: factories, fast-growing cities and revolutions transformed everyday life and raised new questions about order and change."},
      {t:"The invention of the internet and social media", why:"Those came more than a century later."},
      {t:"The end of all religious belief in Europe", why:"Religion changed and its authority was challenged, but it didn’t end, and that wasn’t the main backdrop."},
      {t:"A long period of social stability with little change", why:"The opposite: rapid change made understanding society feel urgent."}
    ]},
    {id:"e2u1-q11", lesson:"e2u1-l2", level:1, q:"What is Ibn Khaldun best known for in the history of sociology?", options:[
-     {t:"Proposing a science of society in the Muqaddimah, centred on ʿasabiyyah (social cohesion)", ok:true, why:"His 14th-century Muqaddimah linked group cohesion to the rise and fall of dynasties, and he is often seen as a forerunner of sociology."},
+     {t:"Proposing a science of society based on ʿasabiyyah", ok:true, why:"In his 14th-century Muqaddimah he proposed a science of society centred on ʿasabiyyah (social cohesion). He linked group cohesion to the rise and fall of dynasties, and he is often seen as a forerunner of sociology."},
      {t:"Inventing positivism in the 1830s", why:"Positivism was named by Comte in the 19th century."},
-     {t:"Founding the American Sociological Association", why:"The ASA was founded in 1905 in the United States, centuries after Ibn Khaldun."},
+     {t:"Founding the American Sociological Association in 1905", why:"The ASA was founded in 1905 in the United States, centuries after Ibn Khaldun."},
      {t:"Writing The Philadelphia Negro", why:"That was W. E. B. Du Bois, in 1899."}
    ]},
    {id:"e2u1-q12", lesson:"e2u1-l2", level:1, q:"What did Auguste Comte mean by positivism?", options:[
@@ -1400,20 +1462,20 @@ ICA.addUnit({
      {t:"Rejecting all numbers in research", why:"Positivism relies heavily on observable, often numerical, evidence."}
    ]},
    {id:"e2u1-q13", lesson:"e2u1-l2", level:2, q:"Harriet Martineau is important to sociology because she…", options:[
-     {t:"translated Comte into English and wrote early systematic studies of society, including Society in America (1837)", ok:true, why:"She brought Comte to English readers (1853) and analysed slavery and women’s position in the US."},
-     {t:"was the first person ever to use the word sociology", why:"Sieyès used it around 1780 and Comte popularised it in 1838."},
+     {t:"translated Comte and wrote early systematic studies of society", ok:true, why:"She brought Comte to English readers (1853) and wrote early systematic studies such as Society in America (1837), which analysed slavery and women’s position in the US."},
+     {t:"was the first person ever to use the word sociology, before Comte", why:"Sieyès used it around 1780 and Comte popularised it in 1838."},
      {t:"founded conflict theory", why:"Conflict theory grew mainly from Marx."},
      {t:"invented the survey experiment", why:"That isn’t one of her contributions."}
    ]},
    {id:"e2u1-q14", lesson:"e2u1-l2", level:2, q:"In Suicide (1897), what did Durkheim argue explains differences in suicide rates between groups?", options:[
-     {t:"How strongly people are integrated into and regulated by social groups", ok:true, why:"He linked rates to social integration and regulation, showing a social cause behind a seemingly private act."},
+     {t:"How strongly groups integrate and regulate their members", ok:true, why:"He linked rates to social integration and regulation, showing a social cause behind a seemingly private act."},
      {t:"Differences in the weather between countries", why:"Durkheim considered and rejected explanations like climate in favour of social ones."},
      {t:"Purely individual psychology, with no social pattern", why:"His point was the opposite: rates followed stable social patterns."},
-     {t:"How wealthy each individual was, and nothing else", why:"Wealth wasn’t his central explanation; integration and regulation were."}
+     {t:"How wealthy each individual was, and nothing else about their lives", why:"Wealth wasn’t his central explanation; integration and regulation were."}
    ]},
    {id:"e2u1-q15", lesson:"e2u1-l2", level:2, q:"Which statement best captures Weber’s idea of verstehen?", options:[
-     {t:"To explain social action, researchers must understand what it means to the people doing it.", ok:true, why:"Verstehen is understanding action from the actor’s point of view."},
-     {t:"Researchers should count behaviours and ignore people’s reasons.", why:"That is the opposite of verstehen."},
+     {t:"Researchers must understand what an action means to those doing it.", ok:true, why:"Verstehen is understanding action from the actor’s point of view."},
+     {t:"Researchers should count behaviours and ignore the reasons people give.", why:"That is the opposite of verstehen."},
      {t:"Society is a body whose organs each have a function.", why:"That is Spencer’s organic analogy, part of functionalism."},
      {t:"History is driven only by class conflict.", why:"That is Marx’s view; Weber added the role of beliefs and meanings."}
    ]},
@@ -1424,14 +1486,14 @@ ICA.addUnit({
      {t:"Case study: analysing a single organisation in depth", why:"Fifty countries compared statistically is the opposite of a single case."}
    ]},
    {id:"e2u1-q17", lesson:"e2u1-l2", level:2, q:"What did W. E. B. Du Bois show in The Philadelphia Negro (1899)?", options:[
-     {t:"That problems often blamed on Black residents’ character were rooted in discrimination, poverty and history", ok:true, why:"His door-to-door study of 1896–97 used evidence to challenge explanations based on character or biology."},
+     {t:"That problems blamed on character came from discrimination and poverty", ok:true, why:"Problems often blamed on Black residents’ character were rooted in discrimination, poverty and history. His door-to-door study of 1896–97 used evidence to challenge explanations based on character or biology."},
      {t:"That cities have no effect on people’s lives", why:"His study showed how urban conditions and discrimination shaped life chances."},
      {t:"That positivist methods can never be used to study race", why:"He used systematic empirical methods to study race."},
-     {t:"That the Industrial Revolution never reached the United States", why:"That’s untrue and not his topic."}
+     {t:"That the Industrial Revolution never reached cities in the United States", why:"That’s untrue and not his topic."}
    ]},
    {id:"e2u1-q18", lesson:"e2u1-l2", level:3, q:"Tomás reads a textbook timeline that lists only Comte, Marx, Durkheim and Weber as sociology’s founders. What is the strongest criticism of this list?", options:[
-     {t:"It leaves out figures such as Martineau, Du Bois and Ibn Khaldun, who were overlooked largely because of gender, race or region.", ok:true, why:"Historians of sociology now recognise that the standard canon excluded important contributors for reasons unrelated to the quality of their work."},
-     {t:"Marx should be removed because he lived in London.", why:"Where Marx lived is irrelevant to his influence on the discipline."},
+     {t:"It leaves out figures such as Martineau, Du Bois and Ibn Khaldun.", ok:true, why:"These figures were overlooked largely because of gender, race or region. Historians of sociology now recognise that the standard canon excluded important contributors for reasons unrelated to the quality of their work."},
+     {t:"Marx should be removed from the list because he lived in London.", why:"Where Marx lived is irrelevant to his influence on the discipline."},
      {t:"Weber shouldn’t be included because he used interpretive methods.", why:"Interpretive sociology is a core tradition, and Weber was central to it."},
      {t:"There’s nothing wrong; only European men made contributions.", why:"That ignores well-documented contributions by women, Black scholars and thinkers outside Europe."}
    ]},
@@ -1467,25 +1529,25 @@ ICA.addUnit({
      {t:"Auguste Comte, in 1838", why:"Comte popularised the word sociology, not intersectionality."}
    ]},
    {id:"e2u1-q24", lesson:"e2u1-l3", level:3, q:"A government report finds that, on average, women and men in a profession earn similar pay, and so do workers born in and outside the country. Fatima suspects a problem is still hidden. What analysis would best test her suspicion?", options:[
-     {t:"Compare pay for combined groups, such as women born outside the country, with other groups.", ok:true, why:"This is an intersectional analysis: gaps can hide where categories combine, even when each category looks equal on its own."},
+     {t:"Compare pay for combined groups, such as women born abroad.", ok:true, why:"Comparing combined groups, such as women born outside the country, with other groups is an intersectional analysis: gaps can hide where categories combine, even when each category looks equal on its own."},
      {t:"Look only at the overall average pay for the whole profession.", why:"An overall average would hide even more than the separate comparisons."},
      {t:"Interview one manager about whether there is a problem.", why:"One person’s opinion can’t test whether a pay gap exists in the data."},
      {t:"Accept the report, because averages can’t hide anything.", why:"Averages for single categories can hide gaps at their intersections. That was Crenshaw’s point."}
    ]},
    {id:"e2u1-q25", lesson:"e2u1-l3", level:2, q:"Which critique is most often made of symbolic interactionism?", options:[
-     {t:"It can neglect the large structures and power differences that shape interactions.", ok:true, why:"Its micro focus is both its strength and its main weakness."},
+     {t:"It tends to neglect large structures and power.", ok:true, why:"It can neglect the large structures and power differences that shape interactions. Its micro focus is both its strength and its main weakness."},
      {t:"It ignores what things mean to people.", why:"Meaning is precisely what it studies."},
-     {t:"It explains everything through economic class.", why:"That critique is aimed at some versions of conflict theory."},
+     {t:"It tends to explain everything through economic class.", why:"That critique is aimed at some versions of conflict theory."},
      {t:"It assumes society is always stable and harmonious.", why:"That critique is aimed at functionalism."}
    ]},
    {id:"e2u1-q26", lesson:"e2u1-l3", level:3, q:"A city introduces a congestion charge for driving into the centre. Which statement correctly applies a perspective?", options:[
-     {t:"A conflict theorist asks whether lower-income drivers, who may have fewer alternatives, pay a larger share of their income.", ok:true, why:"Asking who bears the costs and who gains is the conflict perspective applied correctly."},
+     {t:"A conflict theorist asks if poorer drivers pay a bigger share of their income.", ok:true, why:"Lower-income drivers may have fewer alternatives. Asking who bears the costs and who gains is the conflict perspective applied correctly."},
      {t:"A symbolic interactionist calculates the total revenue the charge raises.", why:"Revenue totals are a macro, economic question, not a study of meaning in interaction."},
      {t:"A functionalist asks only what the charge means to individual drivers emotionally.", why:"Meanings to individuals are an interactionist focus. A functionalist would ask how the charge affects the city system, such as traffic flow and public transport."},
      {t:"Feminist theory can’t say anything about transport.", why:"Feminist researchers study transport often, for example how travel patterns and safety differ by gender."}
    ]},
    {id:"e2u1-q27", lesson:"e2u1-l3", level:2, q:"Why do sociologists often use several theoretical perspectives together?", options:[
-     {t:"Each asks different questions and notices different things, so together they give a fuller picture.", ok:true, why:"Like different maps of one city, each perspective shows something the others leave out."},
+     {t:"Each asks different questions, so together they give a fuller picture.", ok:true, why:"Each perspective notices different things. Like different maps of one city, each perspective shows something the others leave out."},
      {t:"Because all the perspectives are wrong.", why:"They aren’t wrong; each is partial, which is why combining them helps."},
      {t:"Because the perspectives always agree, so using more makes a study longer.", why:"They often disagree. Their different questions are what make combining them useful."},
      {t:"Because a study must use exactly five perspectives.", why:"There’s no such rule. Researchers choose what fits the question."}
@@ -1504,15 +1566,15 @@ ICA.addUnit({
      {t:"The company’s location", why:"Location isn’t mentioned in the hypothesis."}
    ]},
    {id:"e2u1-q30", lesson:"e2u1-l4", level:1, q:"What is an operational definition?", options:[
-     {t:"A definition of a concept in terms of the concrete steps used to measure it", ok:true, why:"For example, measuring “isolation” as the number of conversations in the past week."},
-     {t:"The dictionary meaning of a word", why:"A dictionary meaning doesn’t say how to measure the concept."},
+     {t:"A definition stating exactly how a concept will be measured", ok:true, why:"It defines a concept by the concrete steps used to measure it: for example, measuring “isolation” as the number of conversations in the past week."},
+     {t:"The dictionary meaning of a word, as used in everyday speech", why:"A dictionary meaning doesn’t say how to measure the concept."},
      {t:"A definition used only by surgeons", why:"In research, “operational” means how a concept is put into practice as a measure."},
      {t:"A summary of a study’s results", why:"Results come after measurement. An operational definition is set before."}
    ]},
    {id:"e2u1-q31", lesson:"e2u1-l4", level:3, q:"A news story says: “Cities with more libraries have lower crime, so building libraries cuts crime.” What is the best criticism?", options:[
-     {t:"A third variable, such as city wealth or public spending, could explain both more libraries and less crime.", ok:true, why:"The correlation may be spurious. Without ruling out third variables, it can’t show that libraries cause lower crime."},
+     {t:"A third variable, such as city wealth, may explain both.", ok:true, why:"City wealth or public spending could explain both more libraries and less crime, so the correlation may be spurious. Without ruling out third variables, it can’t show that libraries cause lower crime."},
      {t:"Libraries and crime can’t be counted.", why:"Both can be counted. The flaw is in the causal leap."},
-     {t:"Correlations are always meaningless.", why:"Correlations are useful evidence; they just don’t prove cause on their own."},
+     {t:"Correlations are always meaningless, so the story tells us nothing.", why:"Correlations are useful evidence; they just don’t prove cause on their own."},
      {t:"There’s no problem: a correlation always proves cause.", why:"Correlation alone never proves causation."}
    ]},
    {id:"e2u1-q32", lesson:"e2u1-l4", level:2, q:"A bathroom scale always shows a weight exactly 2 kg too high. Its readings are…", options:[
@@ -1522,7 +1584,7 @@ ICA.addUnit({
      {t:"neither reliable nor valid", why:"It gives the same reading every time, so it is reliable."}
    ]},
    {id:"e2u1-q33", lesson:"e2u1-l4", level:3, q:"Priya measures how religious people are in her country by counting attendance at weekly services. Several faith communities there don’t hold weekly gatherings. What is the main problem?", options:[
-     {t:"Validity: the measure undercounts religiosity in traditions that don’t centre on weekly services.", ok:true, why:"The operational definition doesn’t capture the concept equally for everyone, so it doesn’t measure what it claims to."},
+     {t:"Validity: it misses traditions that don’t hold weekly services.", ok:true, why:"The measure undercounts religiosity in traditions that don’t centre on weekly services. The operational definition doesn’t capture the concept equally for everyone, so it doesn’t measure what it claims to."},
      {t:"Reliability: people won’t remember how many services they attended.", why:"Recall could be an issue, but the central problem is that the measure misses whole ways of being religious."},
      {t:"There’s no problem, because attendance can be counted precisely.", why:"Being countable doesn’t make a measure valid."},
      {t:"Value neutrality: Priya is biased against religion.", why:"Nothing suggests personal bias. The problem lies in the measure’s design."}
@@ -1534,7 +1596,7 @@ ICA.addUnit({
      {t:"Prove that one theoretical perspective is correct", why:"It aims at understanding, not at proving a perspective right."}
    ]},
    {id:"e2u1-q35", lesson:"e2u1-l4", level:2, q:"Which action best follows Weber’s principle of value neutrality?", options:[
-     {t:"Reporting all significant findings, including those that contradict the researcher’s own views", ok:true, why:"Value neutrality means not letting personal values distort what is collected or reported."},
+     {t:"Reporting all findings, even those against the researcher’s own views", ok:true, why:"Value neutrality means not letting personal values distort what is collected or reported."},
      {t:"Leaving out results the researcher finds politically uncomfortable", why:"That is exactly what value neutrality forbids."},
      {t:"Choosing only participants who share the researcher’s opinions", why:"That would bias the study."},
      {t:"Changing the hypothesis after seeing the data so it always looks confirmed", why:"That undermines honest testing."}
@@ -1559,10 +1621,10 @@ ICA.addUnit({
      {t:"It has no problems.", why:"It both pushes towards an answer and combines two separate issues."}
    ]},
    {id:"e2u1-q39", lesson:"e2u1-l5", level:2, q:"Oluwaseun wants to understand how street vendors decide where to set up each morning and what their pitches mean to them. Which method fits best?", options:[
-     {t:"Field research, such as participant observation and conversations with vendors", ok:true, why:"Decisions and meanings in a real setting are best studied in the field."},
+     {t:"Field research, observing and talking with vendors", ok:true, why:"Field research, such as participant observation and conversations, suits this. Decisions and meanings in a real setting are best studied in the field."},
      {t:"A laboratory experiment", why:"A lab can’t reproduce the street setting, and the question isn’t about cause and effect."},
      {t:"Analysis of national census tables", why:"Census data can’t show how vendors make daily decisions or what pitches mean to them."},
-     {t:"A large online poll of the general public", why:"The general public isn’t the group being studied, and a poll can’t capture these meanings well."}
+     {t:"A large online poll of the general public about street markets", why:"The general public isn’t the group being studied, and a poll can’t capture these meanings well."}
    ]},
    {id:"e2u1-q40", lesson:"e2u1-l5", level:1, q:"What is the Hawthorne effect?", options:[
      {t:"People changing their behaviour because they know they are being studied", ok:true, why:"Named after workplace studies at the Hawthorne Works near Chicago in the 1920s and 1930s."},
@@ -1571,7 +1633,7 @@ ICA.addUnit({
      {t:"The rise of sociology in the industrial era", why:"That is unrelated to the Hawthorne effect."}
    ]},
    {id:"e2u1-q41", lesson:"e2u1-l5", level:2, q:"What is the key feature of an experiment that lets it test cause and effect?", options:[
-     {t:"Randomly assigning people to an experimental group and a control group", ok:true, why:"Random assignment makes the groups alike on average, so differences in outcome can be credited to the independent variable."},
+     {t:"Random assignment to experimental and control groups", ok:true, why:"Random assignment makes the groups alike on average, so differences in outcome can be credited to the independent variable."},
      {t:"Asking participants what they think caused their behaviour", why:"People’s own explanations can be useful, but they don’t isolate cause."},
      {t:"Studying a single case in great depth", why:"That is a case study, which can’t isolate cause in the same way."},
      {t:"Using data someone else collected", why:"That is secondary data analysis."}
@@ -1583,7 +1645,7 @@ ICA.addUnit({
      {t:"Value neutrality", why:"Value neutrality is about impartial analysis, not protecting identities."}
    ]},
    {id:"e2u1-q43", lesson:"e2u1-l5", level:3, q:"A student plans to join an online support group for people with a health condition, pretending to be a member, and quote posts in a class project without telling anyone. What is the best advice?", options:[
-     {t:"Don’t do it: it involves deception and no consent, and quotes could identify vulnerable people. Any such study would need ethics review.", ok:true, why:"Covert research with vulnerable people raises serious risks of harm, and ethics codes allow deception only rarely, with review and debriefing."},
+     {t:"Don’t do it: it deceives members and lacks their consent.", ok:true, why:"Quotes could also identify vulnerable people, and any such study would need ethics review. Covert research with vulnerable people raises serious risks of harm, and ethics codes allow deception only rarely, with review and debriefing."},
      {t:"It’s fine because the posts are online.", why:"Being online doesn’t make posts free to use. Members may reasonably expect privacy, and quotes can be traced."},
      {t:"It’s fine as long as the student changes the group’s name.", why:"Changing one name doesn’t address deception, consent or traceable quotes."},
      {t:"It’s fine because class projects don’t involve real people.", why:"The posts come from real people who could be harmed."}
@@ -1595,7 +1657,7 @@ ICA.addUnit({
      {t:"How do new members of a choir learn its unwritten rules?", why:"That calls for field research."}
    ]},
    {id:"e2u1-q45", lesson:"e2u1-l5", level:1, q:"What must happen for consent to research to count as informed consent?", options:[
-     {t:"The person agrees voluntarily after being told what the study involves, its risks, and that they can stop at any time.", ok:true, why:"Consent must be both informed and voluntary, and it continues throughout the study."},
+     {t:"The person agrees freely after learning about the study and its risks.", ok:true, why:"They must also know they can stop at any time. Consent must be both informed and voluntary, and it continues throughout the study."},
      {t:"The person signs a form, even if they weren’t told what the study is about.", why:"A signature without information isn’t informed consent."},
      {t:"The researcher decides the person would probably agree.", why:"Consent must come from the person, not be assumed."},
      {t:"The person’s employer agrees on their behalf.", why:"An employer can’t consent for an adult employee."}

@@ -287,10 +287,10 @@ ICA.addUnit({
       ["`/` at the start","The root, the top of the tree","Paths starting with `/` are absolute."]
     ]},
     {id:"t2u6-l2-x5", type:"mcq", q:"Lucía runs `ls` in her home folder and sees `Documents  Music  notes.txt`. Her friend says there’s also a settings file called `.zshrc` there. Why didn’t `ls` show it?", options:[
-      {t:"Names starting with a dot are hidden from normal listings; `ls -a` shows them", ok:true, why:"Right. Dot-files are usually settings, left out to keep listings tidy. `ls -a` lists everything."},
+      {t:"Dot-files are hidden from normal listings", ok:true, why:"Right. Names starting with a dot are usually settings, left out to keep listings tidy. `ls -a` lists everything."},
       {t:"It’s been deleted", why:"Hidden isn’t deleted. The file is there; `ls` just skips names starting with a dot unless you ask with `-a`."},
       {t:"`ls` only shows folders", why:"`ls` shows files too: `notes.txt` is a file."},
-      {t:"She needs administrator power to see it", why:"It’s her own file in her own home folder. She only needs the `-a` flag."}
+      {t:"She needs administrator power to see that file", why:"It’s her own file in her own home folder. She only needs the `-a` flag."}
     ]},
     {id:"t2u6-l2-x6", type:"mcq", q:"Oluwaseun types `cd Family photos` and gets `bash: cd: too many arguments`. What’s the fix?", options:[
       {t:"`cd \"Family photos\"`", ok:true, why:"Right. Quotes keep the two words together as one argument, so `cd` receives one folder name. `cd Family\\ photos` or Tab completion also work."},
@@ -428,8 +428,8 @@ ICA.addUnit({
       {t:"`ls`, to check what’s left", why:"Confirm the result: the .log files are gone and nothing else is."}
     ]},
     {id:"t2u6-l3-x5", type:"mcq", q:"Ana runs `echo rm * .txt` in a folder containing `budget.xlsx`, `notes.txt` and `photo.jpg`. What does it print, and what does that tell her?", options:[
-      {t:"`rm budget.xlsx notes.txt photo.jpg .txt`: the real command would try to delete every file", ok:true, why:"Right. The space makes `*` a separate word, which matches every name in the folder. The dry run caught a disaster before it happened."},
-      {t:"`rm notes.txt`: only the text file would be deleted", why:"That’s what `rm *.txt` (no space) would do. With the space, `*` stands alone and matches everything."},
+      {t:"`rm budget.xlsx notes.txt photo.jpg .txt`: every file would go", ok:true, why:"Right. The space makes `*` a separate word, which matches every name in the folder. The dry run caught a disaster before it happened."},
+      {t:"`rm notes.txt`: only the text file would be deleted, as she wanted", why:"That’s what `rm *.txt` (no space) would do. With the space, `*` stands alone and matches everything."},
       {t:"An error, because echo can’t take wildcards", why:"The shell expands wildcards before any command runs, `echo` included. That’s exactly why `echo` makes a good preview."},
       {t:"It deletes the files, then prints their names", why:"`echo` only prints. The `rm` here is just a word being printed, not a command being run."}
     ]},
@@ -556,8 +556,8 @@ ICA.addUnit({
       ["See the first 3 lines","`head -n 3 harvest.txt`","`head` shows the start of a file."]
     ]},
     {id:"t2u6-l4-x2", type:"mcq", q:"Amara runs `grep tomatoes harvest.txt` and gets 2 lines, but she knows 3 people picked tomatoes. What’s the most likely reason?", options:[
-      {t:"One line spells it with a capital T, and grep is case-sensitive; `grep -i` finds all 3", ok:true, why:"Right. Hana wrote “Tomatoes”. `-i` ignores case."},
-      {t:"grep only shows the first two matches", why:"grep shows every matching line, however many."},
+      {t:"One line has “Tomatoes”, with a capital T", ok:true, why:"Right. Hana wrote “Tomatoes”, and grep is case-sensitive. `grep -i` ignores case and finds all 3."},
+      {t:"grep only shows the first two matches it finds", why:"grep shows every matching line, however many."},
       {t:"The file is too big for grep", why:"grep handles files of millions of lines. Seven lines are nothing."},
       {t:"She needs `-n` to see all the lines", why:"`-n` adds line numbers; it doesn’t find more lines."}
     ]},
@@ -677,7 +677,7 @@ ICA.addUnit({
         ["A web page asking you to open a terminal or the Run box and paste something to “prove you’re human” or “fix an error”","A scam pattern. Legitimate sites don’t ask this. Close the page."]
       ]},
       "Running a **script** someone sent you is the same decision in bigger form: a script is a file full of commands, and it runs with all your permissions. On Windows, PowerShell’s **execution policy** may refuse to run script files, depending on how the computer is set up. Microsoft is clear that it isn’t a security boundary: it helps prevent accidents, but it won’t stop a determined attacker, and it’s no reason to trust a script.",
-      "**AI tools** are good at suggesting commands and explaining them, and Missing Semester has a whole section on using them in the shell. They can also be confidently wrong: inventing flags, mixing up Mac and Linux versions, or suggesting software packages that don’t exist (attackers sometimes publish malicious packages under such made-up names; Unit 10 covers this). Ask the tool to explain each part, check unfamiliar pieces against `--help` or official documentation, and test in a practice folder.",
+      "**AI tools** are good at suggesting commands and explaining them, and Missing Semester has a whole section on using them in the shell. They can also be confidently wrong: inventing flags, mixing up Mac and Linux versions, or suggesting software packages that don’t exist (attackers sometimes publish malicious packages under such made-up names; Unit 11 covers this). Ask the tool to explain each part, check unfamiliar pieces against `--help` or official documentation, and test in a practice folder.",
       {warn:"Never paste passwords, access keys or other secrets into a command you’re sharing, a forum post or an AI chat. Commands are saved in your history too."}
     ]},
     {h:"PowerShell and bash side by side", body:[
@@ -709,7 +709,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u6-l5-x1", type:"mcq", q:"A simplified usage line for `cp` reads `cp [OPTION]... SOURCE DEST`. What does it tell you?", options:[
-      {t:"Options are optional and can be repeated; a source and a destination are both required, in that order", ok:true, why:"Right. Square brackets mean optional, three dots mean “more than one allowed”, and capitalised words without brackets are things you must fill in."},
+      {t:"Options are optional, but SOURCE and DEST aren’t", ok:true, why:"Right. Square brackets mean optional, three dots mean “more than one allowed”, and capitalised words without brackets are things you must fill in, in that order."},
       {t:"You must give exactly one option", why:"The square brackets mean options are optional, and the dots allow several."},
       {t:"The destination comes first, then the source", why:"The usage line shows the order: SOURCE, then DEST. From, then to."},
       {t:"Words in capitals must be typed in capitals", why:"Capitals mark placeholders: replace SOURCE with your file’s name."}
@@ -722,9 +722,9 @@ ICA.addUnit({
       ["`cd: notes.txt: Not a directory`","Trying to `cd` into a file","You can only change into folders."]
     ]},
     {id:"t2u6-l5-x3", type:"mcq", q:"Sione runs `mkdir /opt/garden` and gets `Permission denied`. A friend says “just use `sudo mkdir /opt/garden`”. What’s the best response?", options:[
-      {t:"First ask why: does this folder need to be in a system location? If not, make it in the home folder instead", ok:true, why:"Right. `/opt` is a system folder, and the error is a protection. For personal files, `mkdir ~/garden` needs no special power. Use `sudo` only when you know the system location is really needed."},
+      {t:"First ask whether it really needs a system folder", ok:true, why:"Right. `/opt` is a system folder, and the error is a protection. If the folder doesn’t need to be there, `mkdir ~/garden` in the home folder needs no special power. Use `sudo` only when you know the system location is really needed."},
       {t:"Always add sudo when you see Permission denied", why:"That turns off a protection without knowing why it was there, and files made with `sudo` then belong to root."},
-      {t:"Run the same command again until it works", why:"The answer won’t change: the account still lacks permission."},
+      {t:"Run the same command again and again until it works", why:"The answer won’t change: the account still lacks permission."},
       {t:"Restart the computer to reset permissions", why:"Permissions are settings on files and folders, not a temporary glitch."}
     ]},
     {id:"t2u6-l5-x4", type:"sort", q:"Sort these copied commands: fine to run in a practice folder after reading, or stop and investigate first?", buckets:["Fine after reading","Stop and investigate"], items:[
@@ -766,6 +766,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u6-q02","t2u6-q06","t2u6-q12","t2u6-q15","t2u6-q21","t2u6-q24","t2u6-q26","t2u6-q30","t2u6-q33","t2u6-q39","t2u6-q42","t2u6-q44"],
+  cpBank:[
+    {id:"t2u6-cp01", lesson:"t2u6-l1", level:1, q:"Ana opens the Windows Terminal app, and a PowerShell prompt appears inside it. Which of the two is the shell?", options:[{t:"Windows Terminal, because it’s the app she opened", why:"The terminal is the window. Different shells, such as PowerShell or bash, can run inside it."}, {t:"PowerShell, the program that reads and runs each line", ok:true, why:"The shell interprets what you type. The terminal is the window app that shows the text and passes your typing on."}, {t:"Both, because the two words mean the same thing", why:"People use the words loosely, but they’re different: the terminal is the window, the shell is the program inside it."}, {t:"Neither: the shell is the line where she types", why:"That line is the command line. The shell is the program that reads it and runs commands."}]},
+    {id:"t2u6-cp02", lesson:"t2u6-l1", level:2, q:"Kemi types `ls-l` and sees `command not found`. What’s wrong?", options:[{t:"The shell looks for a program named `ls-l`", ok:true, why:"Spaces separate a command from its flags. `command not found` means there is no program with that exact name."}, {t:"`ls` isn’t installed on her computer", why:"`ls` is a basic command that’s always there. The missing space created a different name."}, {t:"She needs `sudo` before she can list files", why:"Listing her own files needs no extra power. The message is about the name, not permission."}, {t:"`-l` isn’t a real flag for the `ls` command", why:"`-l` is a real flag. Without the space, the shell never even reaches `ls`."}]},
+    {id:"t2u6-cp03", lesson:"t2u6-l2", level:1, q:"Juma has wandered deep into his folders. Which command takes him straight back to his home folder?", options:[{t:"`cd /`", why:"`/` is the top of the whole file system, not your home folder."}, {t:"`cd ..`", why:"`..` goes up only one folder. From deep inside, that isn’t home yet."}, {t:"`pwd`", why:"`pwd` tells you where you are. It doesn’t move you anywhere."}, {t:"`cd ~`", ok:true, why:"`~` means your home folder, so `cd ~` takes you home from anywhere. In bash and zsh, `cd` on its own does too."}]},
+    {id:"t2u6-cp04", lesson:"t2u6-l2", level:2, q:"Sam is in `/home/sam/Documents/cv`. He runs `cd ../../Pictures`, then `cd ../Music`. What does `pwd` print now?", options:[{t:"`/home/sam/Pictures/Music`", why:"The second `..` first climbs out of `Pictures`, so `Music` is looked for beside it, not inside it."}, {t:"`/home/Music`", why:"That climbs one level too many. From `/home/sam/Pictures`, one `..` reaches `/home/sam`."}, {t:"`/home/sam/Music`", ok:true, why:"`../..` from `cv` reaches `/home/sam`, then he goes into `Pictures`. From there, `..` goes back to `/home/sam` and then into `Music`."}, {t:"`/home/sam/Documents/Music`", why:"The first command already left `Documents`: two `..` from `cv` reach `/home/sam`."}]},
+    {id:"t2u6-cp05", lesson:"t2u6-l2", level:3, q:"A folder contains `notes.txt`, `plan.txt` and a hidden file called `.settings`. In bash, what does `echo rm *` print?", options:[{t:"`rm notes.txt plan.txt .settings`", why:"Hidden names are skipped by `*` unless the pattern itself starts with a dot."}, {t:"`rm notes.txt plan.txt`", ok:true, why:"The shell expands `*` into names before the command runs, and in bash and zsh wildcards skip names that start with a dot."}, {t:"`rm *`", why:"The shell replaces the pattern with the matching names before `echo` runs, so you see the list."}, {t:"Nothing, and the three files are deleted", why:"`echo` only prints the line it receives. Nothing is deleted, which is why this is a safe dry run."}]},
+    {id:"t2u6-cp06", lesson:"t2u6-l3", level:2, q:"A folder holds `1.csv`, `2.csv`, `10.csv` and `notes.csv`. Which files does `ls ?.csv` list?", options:[{t:"All four files", why:"That would be `*.csv`. `?` matches exactly one character."}, {t:"`1.csv`, `2.csv` and `10.csv`", why:"`10` is two characters, so a single `?` can’t match it."}, {t:"Only a file literally named `?.csv`", why:"In the shell, `?` is a wildcard. It is expanded into matching names before `ls` runs."}, {t:"`1.csv` and `2.csv`", ok:true, why:"`?` matches exactly one character, so only names with a single character before `.csv` match."}]},
+    {id:"t2u6-cp07", lesson:"t2u6-l3", level:2, q:"Lior runs `mv budget.csv receipts` to put the file in a folder. No error appears. Now `ls -l` shows `receipts` as a file, with no `d`, and no `budget.csv`. What happened?", options:[{t:"There was no `receipts` folder here, so `mv` renamed the file", ok:true, why:"If the destination isn’t an existing folder, `mv` treats it as a new name. His data is safe in `receipts`; `mv receipts budget.csv` puts the name back."}, {t:"`mv` deleted his file and made an empty file called `receipts`", why:"`mv` never empties a file. The same contents are still there, now under the name `receipts`."}, {t:"The file moved into the folder, and `ls -l` hides what’s inside", why:"A folder would show a `d` at the start of its `ls -l` line. Here `receipts` is a plain file: his renamed CSV."}, {t:"`mv` copied the file, and the original is now a hidden file", why:"Hidden names start with a dot, and `mv` never hides files. `mv` moves or renames; it doesn’t copy."}]},
+    {id:"t2u6-cp08", lesson:"t2u6-l3", level:3, q:"Rosa runs `rmdir old-photos` and gets `rmdir: failed to remove 'old-photos': Directory not empty`. What’s the best next step?", options:[{t:"Run `sudo rmdir old-photos` so it has the power to remove it", why:"This isn’t a permission problem. `rmdir` removes only empty folders, with or without `sudo`."}, {t:"Run `rm -rf old-photos` straight away to finish the job", why:"That deletes everything inside with no questions and no bin. Look first."}, {t:"Nothing was deleted; she should look inside with `ls` first", ok:true, why:"`Directory not empty` is a safety refusal. Check what’s there before using `rm -r`, which deletes everything inside with no bin."}, {t:"Restore the photos from the Trash", why:"Nothing was deleted, so there is nothing to restore. And `rm` doesn’t use a Trash anyway."}]},
+    {id:"t2u6-cp09", lesson:"t2u6-l4", level:1, q:"`tasks.txt` has one task per line, and finished tasks contain the word `done`. Which command shows only the unfinished tasks?", options:[{t:"`grep done tasks.txt`", why:"That prints the finished tasks: the opposite of what’s wanted."}, {t:"`grep -v done tasks.txt`", ok:true, why:"`-v` inverts the search: it prints the lines that don’t match."}, {t:"`grep -c done tasks.txt`", why:"`-c` counts the matching lines. It doesn’t show any tasks."}, {t:"`grep -i done tasks.txt`", why:"`-i` ignores capitals, but it still shows lines that contain `done`."}]},
+    {id:"t2u6-cp10", lesson:"t2u6-l4", level:3, q:"`scores.txt` has four lines: `Ana 12`, `Ben 9`, `Cai 30` and `Dev 100`. What does `sort -k2 -n scores.txt | head -n 1` print?", options:[{t:"`Dev 100`", why:"That would come first if the numbers were sorted as text (“100” before “12”) or largest first with `-r`. `-n` sorts numbers, smallest first."}, {t:"`Ana 12`", why:"That’s the file’s first line before sorting. The pipe passes the sorted lines to `head`."}, {t:"All four lines, sorted", why:"`head -n 1` keeps only the first line of what it receives."}, {t:"`Ben 9`", ok:true, why:"`-k2 -n` sorts by the second word, as numbers, smallest first. `head -n 1` keeps the first line of that sorted output."}]},
+    {id:"t2u6-cp11", lesson:"t2u6-l5", level:2, q:"On Linux, Lee types `cp notes.txt` and sees `cp: missing destination file operand after 'notes.txt'`. What does it mean?", options:[{t:"`notes.txt` doesn’t exist", why:"That would say `No such file or directory`. Here an argument is missing."}, {t:"He isn’t allowed to copy that file", why:"That would say `Permission denied`. The message is about a missing operand."}, {t:"He gave a source but no destination", ok:true, why:"`missing operand` means an argument is missing. `cp` needs a source and a destination, as in `cp notes.txt notes-copy.txt`."}, {t:"He used a flag that `cp` doesn’t know", why:"An unknown flag gives `invalid option`. He didn’t use any flag."}]},
+    {id:"t2u6-cp12", lesson:"t2u6-l5", level:3, q:"A forum answer says: “Fix your Wi-Fi by running `echo` followed by a long scrambled string, then `| base64 -d | bash`.” What should Ines notice first?", options:[{t:"The scrambled text hides what `| bash` will run at once", ok:true, why:"Scrambled text and `base64 -d` are red flags: she can’t read the command before it runs. Stop and investigate first."}, {t:"Nothing: answers on big forums are checked by experts first", why:"Forum answers can be old, wrong or even harmful. Read every command before you run it."}, {t:"It’s safe, because `echo` only prints text and runs nothing", why:"`echo` prints, but the pipes pass that text on to be decoded and then run by `bash`."}, {t:"It will only work in PowerShell", why:"These are bash commands. The real issue is that she can’t see what will run."}]}
+  ],
   codex:[
    {id:"what-a-shell-is", title:"What a shell is", aka:["shell","terminal","command line","CLI","bash","zsh","PowerShell","prompt"], tags:["command line","basics"],
     summary:"A shell is the program that reads the commands you type and runs them; the terminal is the window it runs in.",
@@ -975,7 +989,7 @@ ICA.addUnit({
       "`sudo` is configured in `/etc/sudoers` (edit only with `visudo`); it logs use and caches your credentials for a few minutes. Running editors or installers under `sudo` can leave root-owned files in your home folder that later cause Permission denied.",
       "Piping a download straight into a shell means a compromised server, a typo-squatted domain or an interrupted download all run as code. Safer: download, inspect, verify a checksum or signature if offered, then run; or use the system’s package manager.",
       "PowerShell’s execution policy (`Get-ExecutionPolicy`) controls whether script files run. Microsoft describes it as defence in depth, not a security boundary: it can be bypassed and doesn’t replace judging a script.",
-      "AI assistants can produce plausible commands with invented flags or for the wrong platform, and can suggest packages that don’t exist, names that attackers may register; Unit 10 covers this. Ask for an explanation of each part and verify against documentation. Missing Semester’s “AI in the Shell” section discusses using these tools at the command line."
+      "AI assistants can produce plausible commands with invented flags or for the wrong platform, and can suggest packages that don’t exist, names that attackers may register; Unit 11 covers this. Ask for an explanation of each part and verify against documentation. Missing Semester’s “AI in the Shell” section discusses using these tools at the command line."
      ]
     },
     related:["shell-files","powershell-vs-bash","what-a-shell-is"],
@@ -1044,10 +1058,10 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u6-q01", lesson:"t2u6-l1", level:1, q:"What is a shell?", options:[
-     {t:"The program that reads the commands you type and runs them", ok:true, why:"bash, zsh and PowerShell are shells: they interpret each line and run programs."},
+     {t:"The program that runs the commands you type", ok:true, why:"It reads each line you type and runs it. bash, zsh and PowerShell are shells: they interpret each line and run programs."},
      {t:"The window that shows the text", why:"That’s the terminal. The shell runs inside it."},
      {t:"A protective case for a laptop", why:"Not in computing. Here, a shell is the command interpreter."},
-     {t:"A program that only programmers can install", why:"Every common system already includes a shell."}
+     {t:"A program that only programmers are able to install", why:"Every common system already includes a shell."}
    ]},
    {id:"t2u6-q02", lesson:"t2u6-l1", level:1, q:"Which shell does a current Mac use by default?", options:[
      {t:"zsh", ok:true, why:"Apple made zsh the default in macOS 10.15 Catalina."},
@@ -1062,7 +1076,7 @@ ICA.addUnit({
      {t:"Nothing: lines with `$` are output", why:"It’s the other way round: lines with `$` are typed; lines without it are output."}
    ]},
    {id:"t2u6-q04", lesson:"t2u6-l1", level:2, q:"In `grep -n beans harvest.txt`, what is `-n`?", options:[
-     {t:"A flag that changes how grep behaves (here: show line numbers)", ok:true, why:"Words starting with `-` are flags (options)."},
+     {t:"A flag (an option)", ok:true, why:"Words starting with `-` are flags (options). They change how the program behaves; here, `-n` shows line numbers."},
      {t:"The program being run", why:"The first word, `grep`, is the program."},
      {t:"The file to search", why:"The file is `harvest.txt`."},
      {t:"The text being searched for", why:"The pattern is `beans`."}
@@ -1074,7 +1088,7 @@ ICA.addUnit({
      {t:"onetwo", why:"echo puts one space between its words."}
    ]},
    {id:"t2u6-q06", lesson:"t2u6-l1", level:3, q:"Mei types `echo \"Good morning` and presses Enter. Instead of her usual prompt, she sees `>`. What happened?", options:[
-     {t:"She left a quote open, so the shell is waiting for the rest of the line", ok:true, why:"The `>` is a continuation prompt. Ctrl + C cancels; then retype with both quotes."},
+     {t:"She left a quote open", ok:true, why:"The shell is waiting for the rest of the line. The `>` is a continuation prompt. Ctrl + C cancels; then retype with both quotes."},
      {t:"She switched to PowerShell by accident", why:"The shell didn’t change; it’s waiting for the closing quote."},
      {t:"She deleted a file", why:"echo only prints; nothing was changed."},
      {t:"She now has administrator power", why:"An administrator prompt ends in `#`, and nothing here grants power."}
@@ -1092,20 +1106,20 @@ ICA.addUnit({
      {t:"The terminal is broken", why:"Silence is normal behaviour for successful commands."}
    ]},
    {id:"t2u6-q09", lesson:"t2u6-l1", level:3, q:"Fatima uses a Chromebook from her school. She can’t find the Linux development environment in Settings. What’s the most likely reason?", options:[
-     {t:"The school’s administrator has turned Linux off for managed Chromebooks", ok:true, why:"Google’s help notes that work and school Chromebooks may not allow Linux. She can still learn from the lessons and exercises."},
+     {t:"Her school has turned Linux off", ok:true, why:"A school’s administrator can turn Linux off for managed Chromebooks; Google’s help notes that work and school Chromebooks may not allow it. She can still learn from the lessons and exercises."},
      {t:"Chromebooks can’t run a shell at all", why:"Most personal Chromebooks can turn on Linux and get a bash terminal."},
      {t:"She must install Windows first", why:"Linux runs inside ChromeOS; no other system is needed."},
      {t:"Linux is in the Chrome Web Store", why:"It’s turned on in Settings → About ChromeOS → Developers, not installed from the store."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t2u6-q10", lesson:"t2u6-l2", level:1, q:"What does `pwd` do?", options:[
-     {t:"Shows the folder the shell is currently in", ok:true, why:"Print working directory. It changes nothing."},
+     {t:"Shows the folder you’re in", ok:true, why:"Print working directory: it shows the folder the shell is currently in. It changes nothing."},
      {t:"Changes your password", why:"That’s `passwd` on Linux, a different command."},
      {t:"Lists the files in the folder", why:"That’s `ls`."},
      {t:"Moves to your home folder", why:"That’s `cd ~`."}
    ]},
    {id:"t2u6-q11", lesson:"t2u6-l2", level:1, q:"In a path, what does `..` mean?", options:[
-     {t:"The parent folder, one level up", ok:true, why:"`cd ..` climbs one level."},
+     {t:"The parent folder", ok:true, why:"The folder one level up. `cd ..` climbs one level."},
      {t:"The current folder", why:"That’s a single dot, `.`."},
      {t:"Your home folder", why:"Your home folder is written `~`."},
      {t:"The root of the drive", why:"The root is `/` (or `C:\\`)."}
@@ -1129,9 +1143,9 @@ ICA.addUnit({
      {t:"`-r`", why:"For ls, `-r` reverses the sort order."}
    ]},
    {id:"t2u6-q15", lesson:"t2u6-l2", level:3, q:"Dmitri types `cd My Projects` and gets `bash: cd: too many arguments`. Why?", options:[
-     {t:"The space splits the name into two words; he needs quotes or a backslash", ok:true, why:"`cd \"My Projects\"` or `cd My\\ Projects` passes one name. Tab completion adds the backslash."},
+     {t:"The space splits the name into two words", ok:true, why:"`cd \"My Projects\"` or `cd My\\ Projects` passes one name. Tab completion adds the backslash."},
      {t:"The folder doesn’t exist", why:"That would say `No such file or directory`. This error is about the number of words."},
-     {t:"cd can’t enter folders with capitals", why:"Capitals are fine if they match the real name."},
+     {t:"cd can’t enter folders whose names have capitals", why:"Capitals are fine if they match the real name."},
      {t:"He needs administrator rights", why:"Permissions aren’t involved; it’s how the shell split the line."}
    ]},
    {id:"t2u6-q16", lesson:"t2u6-l2", level:2, q:"In `ls -l` output, a line begins with `d`. What is that item?", options:[
@@ -1141,15 +1155,15 @@ ICA.addUnit({
      {t:"A file you’re not allowed to read", why:"Permissions are the next nine characters, not the first."}
    ]},
    {id:"t2u6-q17", lesson:"t2u6-l2", level:3, q:"Sione presses Tab after typing `cd Proj` and nothing happens. What does that suggest?", options:[
-     {t:"No name starting with Proj exists in the current folder, or several do and he needs to press Tab again", ok:true, why:"Tab completes when exactly one name fits. Check `ls` and `pwd`, or press Tab twice to see choices."},
+     {t:"No single name starting with Proj fits here", ok:true, why:"Either no name starting with Proj exists in the current folder, or several do. Tab completes when exactly one name fits. Check `ls` and `pwd`, or press Tab twice to see choices."},
      {t:"Tab completion is broken", why:"Silence is Tab’s way of saying no single match."},
-     {t:"He must type the whole path from the root", why:"Tab works with relative names too, if they exist where he is."},
+     {t:"He must type the whole path, starting from the root", why:"Tab works with relative names too, if they exist where he is."},
      {t:"The folder is hidden", why:"Hidden names start with a dot, so a name starting with Proj can’t be hidden. Check spelling, case and the current folder instead."}
    ]},
    {id:"t2u6-q18", lesson:"t2u6-l2", level:2, q:"Which key brings back the command you typed last?", options:[
      {t:"The Up arrow", ok:true, why:"↑ steps back through the history; you can edit before pressing Enter."},
-     {t:"Tab", why:"Tab completes names."},
-     {t:"Esc", why:"Esc doesn’t recall history in a standard shell."},
+     {t:"The Tab key", why:"Tab completes names."},
+     {t:"The Escape key", why:"Esc doesn’t recall history in a standard shell."},
      {t:"Ctrl + C", why:"That stops a running command."}
    ]},
    /* ---- Lesson 3 ---- */
@@ -1160,9 +1174,9 @@ ICA.addUnit({
      {t:"`rm draft.txt final.txt`", why:"That would delete both files."}
    ]},
    {id:"t2u6-q20", lesson:"t2u6-l3", level:1, q:"Where does a file go after `rm notes.txt`?", options:[
-     {t:"It’s removed immediately; there’s no bin or undo", ok:true, why:"Only a backup is a reliable way back."},
+     {t:"It’s removed at once, with no bin or undo", ok:true, why:"Only a backup is a reliable way back."},
      {t:"The Recycle Bin or Trash", why:"File managers use the bin; `rm` doesn’t."},
-     {t:"A hidden folder called .trash", why:"rm keeps no copy anywhere."},
+     {t:"A hidden folder called .trash in your home", why:"rm keeps no copy anywhere."},
      {t:"Your Downloads folder", why:"It isn’t moved; it’s removed."}
    ]},
    {id:"t2u6-q21", lesson:"t2u6-l3", level:2, q:"Hana runs `cp photos photos-backup` and gets `cp: -r not specified; omitting directory 'photos'`. What should she run?", options:[
@@ -1184,8 +1198,8 @@ ICA.addUnit({
      {t:"It makes the command faster", why:"It adds questions; it doesn’t change speed."}
    ]},
    {id:"t2u6-q24", lesson:"t2u6-l3", level:3, q:"Oluwaseun wants to delete only the `.tmp` files in a folder. What should he do before running `rm *.tmp`?", options:[
-     {t:"Check the folder with `pwd`, then preview the matches with `ls *.tmp`", ok:true, why:"The shell expands the pattern the same way for ls as for rm, so ls shows exactly what rm would receive."},
-     {t:"Add `-f` so it doesn’t ask questions", why:"That removes a safety check rather than adding one."},
+     {t:"Check with `pwd`, then preview with `ls *.tmp`", ok:true, why:"The shell expands the pattern the same way for ls as for rm, so ls shows exactly what rm would receive."},
+     {t:"Add `-f` so that it doesn’t stop to ask questions", why:"That removes a safety check rather than adding one."},
      {t:"Run it with sudo to be sure", why:"sudo removes protections; it never makes a deletion safer."},
      {t:"Nothing: wildcards only match what you meant", why:"A wrong folder or a stray space can match far more than intended."}
    ]},
@@ -1221,13 +1235,13 @@ ICA.addUnit({
      {t:"`-v`", why:"`-v` shows lines that don’t match."}
    ]},
    {id:"t2u6-q30", lesson:"t2u6-l4", level:2, q:"What does `grep -i error app.log | wc -l` print?", options:[
-     {t:"The number of lines in app.log that contain “error” in any case", ok:true, why:"grep keeps the matching lines; the pipe hands them to `wc -l`, which counts them."},
+     {t:"The number of matching lines", ok:true, why:"That’s the lines in app.log that contain “error” in any case. grep keeps the matching lines; the pipe hands them to `wc -l`, which counts them."},
      {t:"Every line containing “error”", why:"The lines go into wc, which prints only a count."},
      {t:"The number of lines in the whole file", why:"wc only sees the lines grep passed on."},
      {t:"A new file called wc", why:"A pipe sends output to a command, not a file."}
    ]},
    {id:"t2u6-q31", lesson:"t2u6-l4", level:1, q:"What’s the difference between `>` and `>>`?", options:[
-     {t:"`>` replaces the file’s contents; `>>` adds to the end", ok:true, why:"One arrow overwrites, two arrows append."},
+     {t:"`>` overwrites; `>>` appends", ok:true, why:"`>` replaces the file’s contents; `>>` adds to the end. One arrow overwrites, two arrows append."},
      {t:"`>>` replaces; `>` adds", why:"It’s the other way round."},
      {t:"They are the same", why:"The difference is exactly overwrite versus append."},
      {t:"`>>` sends output to two files", why:"It appends to one file."}
@@ -1245,14 +1259,14 @@ ICA.addUnit({
      {t:"`sort > members.txt`", why:"sort would wait for keyboard input, and members.txt would already be emptied."}
    ]},
    {id:"t2u6-q34", lesson:"t2u6-l4", level:2, q:"What does `wc -l *.csv` do in a folder with three CSV files?", options:[
-     {t:"Shows the line count of each CSV file, plus a total", ok:true, why:"The shell expands `*.csv` into the three names; wc reports each and adds a total."},
+     {t:"Shows each CSV file’s line count, plus a total", ok:true, why:"The shell expands `*.csv` into the three names; wc reports each and adds a total."},
      {t:"Counts the number of CSV files", why:"It counts lines inside them. `ls *.csv | wc -l` would count the files."},
      {t:"Merges the files", why:"wc only counts."},
-     {t:"Fails, because wc takes one file", why:"wc accepts many files."}
+     {t:"Fails, because wc can only take one file at a time", why:"wc accepts many files."}
    ]},
    {id:"t2u6-q35", lesson:"t2u6-l4", level:3, q:"Amara runs `Select-String tomatoes harvest.txt` in PowerShell and gets one more line than `grep tomatoes harvest.txt` gave on her Mac. Why?", options:[
-     {t:"Select-String ignores case by default, so it also matched “Tomatoes”", ok:true, why:"grep is case-sensitive unless you add `-i`; Select-String is the opposite and needs `-CaseSensitive`."},
-     {t:"PowerShell reads files twice", why:"It reads once; the difference is case handling."},
+     {t:"Select-String ignores case by default", ok:true, why:"That’s why it also matched “Tomatoes”. grep is case-sensitive unless you add `-i`; Select-String is the opposite and needs `-CaseSensitive`."},
+     {t:"PowerShell reads each file twice and repeats a line", why:"It reads once; the difference is case handling."},
      {t:"The Mac’s grep is broken", why:"grep did exactly what it should: case-sensitive matching."},
      {t:"Select-String counts blank lines", why:"Blank lines don’t contain “tomatoes”."}
    ]},
@@ -1276,10 +1290,10 @@ ICA.addUnit({
      {t:"That part needs administrator rights", why:"Brackets say nothing about permissions."}
    ]},
    {id:"t2u6-q39", lesson:"t2u6-l5", level:2, q:"Read this message: `mv: cannot stat 'budget.xlsx': No such file or directory`. What should you check first?", options:[
-     {t:"That budget.xlsx exists in the current folder, with that exact spelling", ok:true, why:"mv is speaking, budget.xlsx is what it worked on, and it couldn’t find it. Check with `pwd` and `ls`, or use Tab."},
+     {t:"That budget.xlsx is really in this folder", ok:true, why:"mv is speaking, budget.xlsx is what it worked on, and it couldn’t find it. Check the folder and the exact spelling with `pwd` and `ls`, or use Tab."},
      {t:"Whether you need sudo", why:"The problem is a missing name, not permission."},
      {t:"Whether mv is installed", why:"mv ran: it printed the error."},
-     {t:"Whether the destination folder is full", why:"The message is about the source file."}
+     {t:"Whether the destination folder is already full", why:"The message is about the source file."}
    ]},
    {id:"t2u6-q40", lesson:"t2u6-l5", level:1, q:"What does `sudo` do?", options:[
      {t:"Runs one command as the administrator (root) account", ok:true, why:"“Superuser do”. Use it only when you understand the command."},
@@ -1288,26 +1302,26 @@ ICA.addUnit({
      {t:"Makes a command run slower but more safely", why:"It makes a command more powerful, not safer."}
    ]},
    {id:"t2u6-q41", lesson:"t2u6-l5", level:2, q:"Hana types her password after `sudo` and nothing appears on screen. What’s going on?", options:[
-     {t:"That’s normal: the password is accepted without showing any characters", ok:true, why:"Most systems show nothing at all while you type a password in the terminal (a few newer ones show a `*` per key). Type it and press Enter."},
+     {t:"That’s normal for passwords", ok:true, why:"Most systems show nothing at all while you type a password in the terminal (a few newer ones show a `*` per key). Type it and press Enter."},
      {t:"The keyboard has stopped working", why:"The keys are being read; they just aren’t shown."},
      {t:"She must click the window first", why:"The window already has the input."},
      {t:"Her account has no password", why:"Hidden typing is a deliberate privacy feature."}
    ]},
    {id:"t2u6-q42", lesson:"t2u6-l5", level:3, q:"A pop-up on a website says: “To verify you’re human, press Windows + R, paste this and press Enter.” What should Kenji do?", options:[
-     {t:"Close the page without pasting anything: it’s a scam to run a command on his computer", ok:true, why:"Legitimate sites never ask this. The pasted text would run with his permissions."},
+     {t:"Close the page without pasting anything", ok:true, why:"It’s a scam to run a command on his computer. Legitimate sites never ask this. The pasted text would run with his permissions."},
      {t:"Paste it, since CAPTCHAs are normal", why:"Real human checks happen in the browser, never in the Run box or a terminal."},
      {t:"Paste it into PowerShell instead of the Run box", why:"Same danger, different window."},
      {t:"Run it as administrator to make sure it works", why:"That would give the attacker full control."}
    ]},
    {id:"t2u6-q43", lesson:"t2u6-l5", level:2, q:"Why is `curl -fsSL https://example.com/install.sh | bash` worth pausing over?", options:[
-     {t:"It downloads a script and runs it immediately, without you seeing what it does", ok:true, why:"Safer: download it, read it, check it’s from the official source, then run it."},
+     {t:"It runs a script you haven’t read", ok:true, why:"It downloads a script and runs it immediately, without you seeing what it does. Safer: download it, read it, check it’s from the official source, then run it."},
      {t:"curl can’t download scripts", why:"It can download any file."},
      {t:"The pipe saves the script to your desktop", why:"The pipe passes it straight to bash; nothing is saved."},
      {t:"It only works on Windows", why:"It’s a bash pipeline, typical on Mac and Linux."}
    ]},
    {id:"t2u6-q44", lesson:"t2u6-l5", level:3, q:"An AI assistant suggests `rm -rf build/ *` to “clean the build folder”. What should Amara notice?", options:[
-     {t:"The space before `*` means it would also delete everything in the current folder", ok:true, why:"`build/` and `*` are separate arguments: the `*` matches every name here. Ask for an explanation and preview with `echo` first."},
-     {t:"Nothing: AI suggestions are tested before they’re shown", why:"AI tools can produce plausible but harmful commands. Read before running."},
+     {t:"The space before `*` makes it delete everything here too", ok:true, why:"`build/` and `*` are separate arguments: the `*` matches every name here. Ask for an explanation and preview with `echo` first."},
+     {t:"Nothing: AI suggestions are always tested before they’re shown", why:"AI tools can produce plausible but harmful commands. Read before running."},
      {t:"`-rf` makes it ask before each file", why:"`-f` means force: no questions."},
      {t:"It only deletes empty folders", why:"`rm -r` deletes folders with all their contents."}
    ]},

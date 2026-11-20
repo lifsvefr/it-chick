@@ -153,13 +153,13 @@ ICA.addUnit({
       {t:"Cakes¶  (style: Heading 1)", flag:false, why:"A section title with a heading style: exactly right."}
     ]},
     {id:"t1u8-l1-x6", type:"mcq", q:"Kenji is writing a numbered list of instructions. In step 3 he wants a second line (“Tip: wear gloves.”) without creating a new number. What should he press at the end of the first line?", options:[
-      {t:"Shift+Enter, for a line break inside the same list item", ok:true, why:"A line break starts a new line in the same paragraph, so the list item keeps one number."},
+      {t:"Shift+Enter, for a line break in the same item", ok:true, why:"A line break starts a new line in the same paragraph, so the list item keeps one number."},
       {t:"Enter", why:"Enter starts a new paragraph, which in a list means a new item with the next number."},
-      {t:"Space until the cursor wraps to the next line", why:"Typed spaces only look right at one width. Change the font or the window and the line breaks somewhere else."},
+      {t:"Space until the cursor wraps round to the next line", why:"Typed spaces only look right at one width. Change the font or the window and the line breaks somewhere else."},
       {t:"Tab", why:"Tab in a list usually demotes the item to a sub-level, or adds a gap, not a new line."}
     ]},
     {id:"t1u8-l1-x7", type:"mcq", q:"Sione’s report goes Heading 1 → Heading 3, because Heading 2 “looks too big”. What’s the best fix?", options:[
-      {t:"Use Heading 2 there, and change the Heading 2 style to the size he prefers", ok:true, why:"The level follows the outline; the look follows the style. Changing Heading 2 once fixes every Heading 2 and keeps the outline correct."},
+      {t:"Use Heading 2, and make the Heading 2 style smaller", ok:true, why:"The level follows the outline; the look follows the style. Changing Heading 2 once fixes every Heading 2 and keeps the outline correct."},
       {t:"Keep Heading 3; levels don’t matter as long as it looks right", why:"Levels matter to the outline, the TOC and screen readers. A skipped level suggests a missing section."},
       {t:"Use Normal text made bold instead", why:"Then it isn’t a heading at all: it disappears from the outline and TOC."},
       {t:"Use Heading 1 for every heading", why:"That flattens the structure: subsections look like main sections in the outline, TOC and to screen-reader users."}
@@ -290,7 +290,7 @@ ICA.addUnit({
       {v:247, tol:0, why:"That uses the A4 height (297 − 30 − 20). Use the width, 210 mm."}
     ], hint2:"Start with the paper width and take off both side margins."},
     {id:"t1u8-l2-x2", type:"mcq", q:"Dmitri pressed Enter 14 times to push the heading “Appendix” to the top of a new page. Then he added a paragraph near the start. What happens, and what should he use?", options:[
-      {t:"The heading slides down to the middle of the next page; he should delete the empty lines and insert a page break", ok:true, why:"Empty paragraphs move with the text above them. A page break always starts a new page, wherever the text above ends."},
+      {t:"The heading slides down; he should use a page break", ok:true, why:"The heading slides to the middle of the next page, because empty paragraphs move with the text above them. He should delete the empty lines and insert a page break, which always starts a new page."},
       {t:"Nothing changes, because the app remembers where the heading should be", why:"The app only sees 14 empty paragraphs. It has no idea they were meant to start a page."},
       {t:"The heading stays put, but the new paragraph is hidden", why:"Text isn’t hidden; it flows. Everything after the new paragraph moves down."},
       {t:"He should add a 15th empty line to fix it", why:"That fixes it only until the next edit. The reliable fix is a page break (or a heading style set to start on a new page)."}
@@ -311,10 +311,10 @@ ICA.addUnit({
       ["The first line of each paragraph pushed in a little","A paragraph first-line indent","An indent is part of the paragraph format, so it stays right in any font, unlike typed spaces."]
     ]},
     {id:"t1u8-l2-x5", type:"mcq", q:"Oluwaseun designs a form on US Letter paper. It will be printed by people in a country that uses A4. What’s the best thing to do?", options:[
-      {t:"Set the paper size to A4 before laying the form out, and check the margins", ok:true, why:"Designing for the paper people actually use avoids cut-off edges and squashed pages. Changing it at the end can push boxes and lines onto new pages."},
+      {t:"Set the paper size to A4 before laying out the form", ok:true, why:"Then check the margins. Designing for the paper people actually use avoids cut-off edges and squashed pages. Changing it at the end can push boxes and lines onto new pages."},
       {t:"Nothing: A4 and Letter are the same size", why:"They aren’t. A4 is about 6 mm narrower and 18 mm taller than Letter."},
       {t:"Tell everyone to print at 90 percent", why:"Scaling shrinks everything and still won’t match the page shape. Set the right size instead."},
-      {t:"Use landscape orientation so it fits either size", why:"Orientation doesn’t solve a size mismatch; the page shape still differs."}
+      {t:"Use landscape orientation so the form fits either size", why:"Orientation doesn’t solve a size mismatch; the page shape still differs."}
     ]},
     {id:"t1u8-l2-x6", type:"order", q:"Put the steps for making one landscape page in a portrait document (Word desktop or Google Docs) in order.", items:[
       {t:"Click just before the wide table", why:"The new section must start where the landscape page begins."},
@@ -324,9 +324,9 @@ ICA.addUnit({
       {t:"Check the pages before and after are still portrait, and check headers and page numbers", why:"Verify. In Word, linked headers and footers may need attention in the new sections."}
     ]},
     {id:"t1u8-l2-x7", type:"mcq", q:"Fatima lined up a list of names and phone numbers using spaces. On her screen it’s perfect, but her colleague sees jagged columns. What’s the root cause?", options:[
-      {t:"Spaces have different widths in different fonts and sizes, so the line-up only holds on her setup", ok:true, why:"Proportional fonts give each character (and space) its own width. A different font, size or app changes every line differently."},
+      {t:"Spaces have different widths in different fonts and sizes", ok:true, why:"That’s why the line-up only holds on her setup. Proportional fonts give each character (and space) its own width. A different font, size or app changes every line differently."},
       {t:"Her colleague’s screen is broken", why:"The screen is fine. The document only appeared aligned under one exact font and size."},
-      {t:"Phone numbers can’t be aligned in a word processor", why:"They can: with a table or a single tab and a tab stop."},
+      {t:"Phone numbers can’t be lined up neatly in a word processor at all", why:"They can: with a table or a single tab and a tab stop."},
       {t:"She didn’t type enough spaces", why:"More spaces can’t fix it; the widths still differ between fonts."}
     ]}
    ],
@@ -468,9 +468,9 @@ ICA.addUnit({
       {t:"Monthly rainfall for each of four garden plots", b:0, why:"Rows (plots) and columns (months) of numbers: data, with a header row and maybe a header column."}
     ]},
     {id:"t1u8-l3-x2", type:"mcq", q:"Priya typed her 10 instructions as “1.”, “2.”, “3.”… by hand. She needs to add a new step between 4 and 5. What’s the main advantage of converting the steps to a real numbered list first?", options:[
-      {t:"The steps renumber automatically, and screen readers announce it as a list", ok:true, why:"A real list numbers itself, so inserting a step updates everything after it, with consistent indents. Typed numbers must be fixed by hand."},
+      {t:"The steps renumber themselves automatically", ok:true, why:"Screen readers also announce it as a list. A real list numbers itself, so inserting a step updates everything after it, with consistent indents. Typed numbers must be fixed by hand."},
       {t:"It makes the numbers bigger", why:"Size has nothing to do with it; the list feature is about structure and automatic numbering."},
-      {t:"It stops anyone from editing the steps", why:"Lists don’t lock anything. They just make editing safer."},
+      {t:"It stops anyone from changing the steps by mistake", why:"Lists don’t lock anything. They just make editing safer."},
       {t:"Typed numbers are invisible to printers", why:"Typed numbers print fine. The problem is maintaining them when the list changes."}
     ]},
     {id:"t1u8-l3-x3", type:"match", q:"Match each wrapping choice with what it does.", pairs:[
@@ -493,15 +493,15 @@ ICA.addUnit({
       {t:"A screenshot of the settings screen in a how-to guide", b:0, why:"It shows the reader what to look for. Describe the key part (which option, where) in the alt text or steps."}
     ]},
     {id:"t1u8-l3-x6", type:"mcq", q:"Ana adds a caption “Figure 3: Plot map” under a map, and decides it doesn’t need alt text. What’s wrong with that?", options:[
-      {t:"The caption names the figure, but someone who can’t see it still doesn’t know what the map shows", ok:true, why:"Captions and alt text do different jobs. The alt text should give what matters: for example, where the plots are and which ones are free."},
+      {t:"The caption doesn’t say what the map shows", ok:true, why:"The caption names the figure, but someone who can’t see it still doesn’t know what the map shows. Captions and alt text do different jobs. The alt text should give what matters: for example, where the plots are and which ones are free."},
       {t:"Nothing: captions are read instead of alt text", why:"Screen readers read the caption as ordinary text, but it doesn’t describe the map’s content."},
       {t:"Captions aren’t allowed on maps", why:"Captions are fine on any figure."},
       {t:"She should delete the caption and use only alt text", why:"The caption helps everyone and lets text refer to “Figure 3”. Keep it and add alt text."}
     ]},
     {id:"t1u8-l3-x7", type:"mcq", q:"In Word, Lucía’s photo keeps jumping to the next page when she edits the paragraph above it. What’s the most likely explanation?", options:[
-      {t:"The photo is wrapped and anchored to a paragraph that moves to the next page", ok:true, why:"A wrapped picture follows its anchor’s paragraph. Moving the anchor, or setting the photo to In Line with Text, fixes it."},
+      {t:"It’s wrapped and anchored to a paragraph that moves", ok:true, why:"The photo is anchored to a paragraph that moves to the next page. A wrapped picture follows its anchor’s paragraph. Moving the anchor, or setting the photo to In Line with Text, fixes it."},
       {t:"The photo file is damaged", why:"A damaged file wouldn’t display at all. Movement comes from wrapping and anchoring."},
-      {t:"Word can’t show photos on the same page as text", why:"It can; wrapping and anchoring decide where."},
+      {t:"Word can’t show photos on the same page as a lot of text", why:"It can; wrapping and anchoring decide where."},
       {t:"She needs a faster computer", why:"Speed doesn’t affect layout rules. The picture is following its anchor."}
     ]}
    ],
@@ -630,7 +630,7 @@ ICA.addUnit({
       {t:"The tone of a paragraph seems too harsh for volunteers", b:0, why:"A judgement call worth discussing. A comment explains your concern without imposing your wording."}
     ]},
     {id:"t1u8-l4-x2", type:"mcq", q:"Tomás finishes reviewing, switches Word to **No Markup** so the document looks clean, and emails it to a client. What’s the risk?", options:[
-      {t:"The tracked changes and comments are still in the file, and the client can display them again", ok:true, why:"No Markup only changes the view. Deleted text and comments travel with the file. He should accept or reject every change, remove comments, and ideally send a PDF of the clean version."},
+      {t:"The changes and comments are still in the file", ok:true, why:"The client can display them again. No Markup only changes the view. Deleted text and comments travel with the file. He should accept or reject every change, remove comments, and ideally send a PDF of the clean version."},
       {t:"None: No Markup removes all changes permanently", why:"It doesn’t remove anything; it hides markup on his screen only."},
       {t:"The client won’t be able to open a document that had tracked changes", why:"They can open it fine, which is exactly the problem: they can also show the markup."},
       {t:"Word will automatically reject all changes when the file is emailed", why:"Word never accepts or rejects changes on its own."}
@@ -649,20 +649,20 @@ ICA.addUnit({
       ["You want to ask the treasurer whether a figure is final","A comment","A question goes in a comment; it doesn’t change the text."]
     ]},
     {id:"t1u8-l4-x5", type:"mcq", q:"Mei shares a Google Doc with a volunteer and gives them **Commenter** access. The volunteer wants to fix a typo. What can they do?", options:[
-      {t:"Make a suggestion, which Mei can then accept or reject", ok:true, why:"Google’s help says people can suggest edits when they have permission to comment on or edit the document. Commenters’ edits arrive as suggestions."},
-      {t:"Nothing at all; commenters can only read", why:"That describes Viewer access. Commenters can comment and suggest."},
+      {t:"Make a suggestion for Mei to accept or reject", ok:true, why:"Google’s help says people can suggest edits when they have permission to comment on or edit the document. Commenters’ edits arrive as suggestions."},
+      {t:"Nothing at all, because commenters can only read", why:"That describes Viewer access. Commenters can comment and suggest."},
       {t:"Fix it directly, the same as an editor", why:"Commenters can’t change the text directly; their changes become suggestions."},
       {t:"Accept their own suggestion", why:"Accepting suggestions needs edit access, so Mei (an editor) decides."}
     ]},
     {id:"t1u8-l4-x6", type:"mcq", q:"Sione emails a newsletter draft to four volunteers. Four edited copies come back, two with changes to the same paragraph. What would have avoided most of the trouble?", options:[
-      {t:"Sharing one file with the volunteers as commenters or editors, with suggestions or tracking on", ok:true, why:"Everyone works on the same file, sees each other’s changes, and Sione accepts or rejects each one in one place."},
+      {t:"Sharing one file with suggestions or tracking turned on", ok:true, why:"Share one file with the volunteers as commenters or editors. Everyone works on the same file, sees each other’s changes, and Sione accepts or rejects each one in one place."},
       {t:"Asking the volunteers to reply faster", why:"Speed doesn’t stop copies drifting apart. The problem is having four separate copies."},
-      {t:"Sending the draft as a PDF so nobody can edit it", why:"A PDF suits a final version, but reviewers then can’t suggest edits directly."},
+      {t:"Sending the draft as a PDF so that nobody could edit it at all", why:"A PDF suits a final version, but reviewers then can’t suggest edits directly."},
       {t:"Giving each copy a different font colour", why:"That doesn’t merge anything. Sione would still compare four files by hand."}
     ]},
     {id:"t1u8-l4-x7", type:"mcq", q:"Hana uses Word for the web with a free account. She has two versions of a file (no tracked changes) and wants to see the differences. What can she do?", options:[
-      {t:"Use Compare in desktop Word if she has it, or convert both to Google Docs and use Tools → Compare documents, or use LibreOffice’s Compare Document", ok:true, why:"Microsoft lists Compare as a desktop-only feature, so the web version can’t do it. Google Docs (once both files are converted to Google Docs) and LibreOffice are free tools that can."},
-      {t:"Turn on Track Changes now; it will show what changed earlier", why:"Tracking only records edits made after it’s turned on."},
+      {t:"Use a Compare tool in desktop Word, Google Docs or LibreOffice", ok:true, why:"Microsoft lists Compare as a desktop-only feature, so the web version can’t do it. In Google Docs, convert both files and use Tools → Compare documents; in LibreOffice, use Compare Document. Both are free."},
+      {t:"Turn on Track Changes now, and it will show what changed earlier", why:"Tracking only records edits made after it’s turned on."},
       {t:"Switch to No Markup view", why:"Markup views show existing tracked changes; there are none to show."},
       {t:"She can’t compare documents without paying", why:"Free options exist: Google Docs and LibreOffice both compare documents."}
     ]}
@@ -840,7 +840,7 @@ ICA.addUnit({
       ["PDF/A","A PDF for long-term archiving, with fonts embedded","ISO 19005: designed so files still display correctly years from now."]
     ]},
     {id:"t1u8-l5-x7", type:"mcq", q:"Word’s accessibility checker reports no issues for Tomás’s report. Every image’s alt text is “picture”. What’s true?", options:[
-      {t:"The report still isn’t accessible: the checker can only see that alt text exists, not whether it’s useful", ok:true, why:"Checkers detect missing items. “picture” tells a listener nothing; each image needs a real description (or a decorative mark)."},
+      {t:"It still isn’t accessible: “picture” describes nothing", ok:true, why:"The checker can only see that alt text exists, not whether it’s useful. Checkers detect missing items. “picture” tells a listener nothing; each image needs a real description (or a decorative mark)."},
       {t:"It’s fully accessible, because the checker passed it", why:"Checkers can’t judge meaning. A human read-through is still needed."},
       {t:"Alt text doesn’t matter if there are captions", why:"Captions and alt text do different jobs; and he doesn’t have captions either."},
       {t:"He should delete the alt text so the checker reports an error", why:"That makes things worse. Write meaningful descriptions instead."}
@@ -874,6 +874,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u8-q02","t1u8-q05","t1u8-q08","t1u8-q12","t1u8-q15","t1u8-q20","t1u8-q23","t1u8-q28","t1u8-q31","t1u8-q37","t1u8-q40","t1u8-q44"],
+  cpBank:[
+    {id:"t1u8-cp01", lesson:"t1u8-l1", level:1, q:"In Marta’s report, “Introduction” uses Heading 1. “Background” is a smaller section inside the Introduction. Which style should “Background” use?", options:[
+      {t:"Heading 1", why:"Heading 1 is for main sections. “Background” sits inside one, so it belongs a level down."},
+      {t:"Heading 2", ok:true, why:"A section inside a Heading 1 section is a Heading 2. Choose the level by its place in the outline."},
+      {t:"Heading 3", why:"Going from Heading 1 straight to Heading 3 skips a level, which confuses screen-reader users."},
+      {t:"Normal text made bold", why:"Bold Normal text only looks like a heading. It won’t appear in the navigation pane or table of contents."}
+    ]},
+    {id:"t1u8-cp02", lesson:"t1u8-l2", level:1, q:"Ngozi lives in a country that uses A4 paper. A colleague sends a form designed on US Letter. When Ngozi prints it at full size, a strip down one side is cut off. What is the cause?", options:[
+      {t:"Her printer is running low on ink, so part of the page is blank", why:"Low ink makes printing faint or streaky. It doesn’t cut off a strip of the page."},
+      {t:"The form uses too many heading styles", why:"Heading styles don’t change the paper size. The page frame was set for a different sheet."},
+      {t:"The form has too few page breaks", why:"Page breaks decide where new pages start. They don’t change the size of each page."},
+      {t:"Letter and A4 are different sizes, so the page doesn’t fit", ok:true, why:"Letter is wider and shorter than A4, so a Letter page printed on A4 loses a strip at the side (or has to be squeezed). Setting the paper size the reader uses avoids this."}
+    ]},
+    {id:"t1u8-cp03", lesson:"t1u8-l3", level:1, q:"Kofi is writing a list of things to bring to a picnic. The order doesn’t matter. Which kind of list fits best?", options:[
+      {t:"A bulleted list made with the list feature", ok:true, why:"Use bullets when order and count don’t matter. A real list also indents neatly and is announced by screen readers."},
+      {t:"A numbered list made with the list feature", why:"Numbers suggest order or steps people refer to. A picnic list has no order."},
+      {t:"Lines that start with typed hyphens", why:"Typed hyphens only look like a list. They don’t indent properly or get announced as a list."},
+      {t:"A table with one item per row", why:"Tables are for data with several attributes. A simple list of items needs a list."}
+    ]},
+    {id:"t1u8-cp04", lesson:"t1u8-l1", level:2, q:"In the navigation pane of Ruth’s report, “Costs” appears as a main section. It should sit inside the “Budget” section, which uses Heading 1. What is the right fix?", options:[
+      {t:"Make the “Costs” text smaller by hand", why:"Changing the size by hand doesn’t change its level. The navigation pane follows heading styles, not looks."},
+      {t:"Change “Costs” from Heading 1 to Heading 2", ok:true, why:"The pane shows the outline built from heading styles. With the right level, “Costs” moves under “Budget” automatically."},
+      {t:"Add empty lines before “Costs”", why:"Empty paragraphs add nothing to the outline and cause layout problems."},
+      {t:"Delete the navigation pane and type a table of contents", why:"A typed table of contents gets out of date. Fixing the style corrects the pane and any automatic table of contents."}
+    ]},
+    {id:"t1u8-cp05", lesson:"t1u8-l2", level:2, q:"In Word, Anil’s report has a cover page and a contents page. These should show no page numbers, and numbering should start at 1 on the Introduction. What should he do?", options:[
+      {t:"Type the page numbers into the footer by hand, starting at 1 on the Introduction", why:"Typed numbers are wrong as soon as pages move. Page numbers should be fields the app keeps up to date."},
+      {t:"Tick “Different first page” and nothing else", why:"That only removes the number from the cover. The contents page would still be numbered, and the Introduction wouldn’t start at 1."},
+      {t:"Add a section break before the Introduction, unlink its footer, start at 1", ok:true, why:"A next-page section break starts a new section, which can have its own footer and restart page numbers at 1. Turning off “Link to Previous” keeps the earlier pages unnumbered."},
+      {t:"Delete the footer on the cover and contents pages", why:"While the footers are linked, deleting one deletes it everywhere. A section break separates the two parts."}
+    ]},
+    {id:"t1u8-cp06", lesson:"t1u8-l3", level:2, q:"Elena’s volunteer table runs over four pages. On pages 2 to 4, readers can’t tell which column is which, and a screen-reader user hears cell contents with no column names. What fixes both problems?", options:[
+      {t:"Make the first row bold and a bigger size", why:"Bold only changes the look. Screen readers and page breaks don’t treat it as a header."},
+      {t:"Add an empty row between each group of volunteers", why:"Blank rows confuse people moving cell by cell. They don’t name the columns."},
+      {t:"Split the table into four separate tables, each with a typed title", why:"That makes the data harder to use. Marking and repeating a header row keeps one clear table."},
+      {t:"Mark the first row as a header row that repeats on each page", ok:true, why:"A real header row lets screen readers announce the column names. Repeating it shows the headings at the top of every page."}
+    ]},
+    {id:"t1u8-cp07", lesson:"t1u8-l4", level:2, q:"Two days ago, Rafael’s co-author deleted a whole section from their shared online document. Tracking was not on. How can Rafael get the section back?", options:[
+      {t:"Switch the view to All Markup to show the deleted text", why:"All Markup shows tracked changes. Since tracking was off, there are none to show."},
+      {t:"Copy the section back from an earlier version in version history", ok:true, why:"Version history saves snapshots of the whole document over time. It works even when tracking wasn’t on."},
+      {t:"Turn on Track Changes now to see what the co-author deleted", why:"Tracking records only edits made after it is turned on. It can’t show earlier changes."},
+      {t:"Accept all suggestions", why:"There are no suggestions to accept, because tracking was off. Accepting all changes is also risky."}
+    ]},
+    {id:"t1u8-cp08", lesson:"t1u8-l5", level:2, q:"A newsletter heading is 20 point text. A contrast checker gives its colours a ratio of 3.4:1. Under WCAG 2.2 level AA, does it pass?", options:[
+      {t:"Yes: large text (18 point or more) needs only 3:1", ok:true, why:"Large text needs at least 3:1, and 3.4:1 is above that. Normal-size body text would need 4.5:1."},
+      {t:"No, because all text, whatever its size, needs at least 4.5:1", why:"4.5:1 is for normal-size text. Large text, at least 18 point or 14 point bold, needs 3:1."},
+      {t:"No, because all text needs at least 7:1", why:"7:1 is the stricter AAA level. Level AA asks for 3:1 for large text."},
+      {t:"Contrast rules apply only to websites, not documents", why:"Low contrast is hard to read in any document. Guidance for documents uses the same idea."}
+    ]},
+    {id:"t1u8-cp09", lesson:"t1u8-l1", level:3, q:"Rosa’s 20-chapter handbook uses Heading 1 for chapter titles. Every chapter should start on a new page, even after more editing. What is the most reliable way?", options:[
+      {t:"Press Enter until each chapter title reaches the top of a page", why:"Empty paragraphs move as soon as text above changes, leaving titles mid-page or blank pages."},
+      {t:"Insert a continuous section break before every chapter", why:"A continuous section break starts a new section on the same page, so the chapter title wouldn’t move to a new page."},
+      {t:"Turn on “Page break before” in the Heading 1 style", ok:true, why:"Setting it once in the style means every Heading 1 starts a new page automatically, however the text changes."},
+      {t:"Switch the document to pageless format", why:"Pageless documents have no pages at all, so chapters can’t start on a new one."}
+    ]},
+    {id:"t1u8-cp10", lesson:"t1u8-l3", level:3, q:"Abena built her CV as a two-column table: skills on the left, jobs on the right. She will upload it to a system that may use a screen reader. What is the best change?", options:[
+      {t:"Keep the table but make its borders invisible", why:"Hiding the borders doesn’t change how it is read. Screen readers still read it cell by cell, often in the wrong order."},
+      {t:"Rebuild it without a table, using heading styles for its sections", ok:true, why:"Tables are for data, not layout. Real headings and normal text keep a clear reading order for screen readers and phones."},
+      {t:"Turn the whole CV into one image", why:"An image of text can’t be read by screen readers or searched. It makes the CV less accessible."},
+      {t:"Add more empty rows so the sections are spaced out more clearly", why:"Blank rows add confusion for people moving cell by cell. The problem is using a table for layout."}
+    ]},
+    {id:"t1u8-cp11", lesson:"t1u8-l4", level:3, q:"Yusuf’s grant application has three reviewers’ tracked changes and several comments. It must go to the funder today as a final, fixed copy. What should he do?", options:[
+      {t:"Switch to No Markup and send the .docx", why:"No Markup only hides changes. The funder could show them again, including deleted text and comments."},
+      {t:"Accept All, then send the .docx with the comments still in it", why:"Accepting everything without checking can slip in unwanted edits, and the comments would still be in the file."},
+      {t:"Send it as it is; funders expect to see the review", why:"Reviewers’ notes and old wording shouldn’t go to an outside reader. Clean the file first."},
+      {t:"Settle every change and comment, then export a PDF", ok:true, why:"Accept or reject each change, resolve or delete the comments, and check with All Markup that nothing is left. A PDF of the clean file is a fixed copy that can’t be confused with the working file."}
+    ]},
+    {id:"t1u8-cp12", lesson:"t1u8-l5", level:3, q:"Leon’s newsletter has 20 photos of about 5 MB each. After compressing, each is about 0.4 MB. Members will only read it on their phones. About how much do the photos add now, and what should he send?", options:[
+      {t:"About 100 MB, as a PDF", why:"100 MB is the size before compressing (20 × 5). After compressing, it is 20 × 0.4 = 8 MB."},
+      {t:"About 8 MB, as an editable .docx", why:"8 MB is right, but members only need to read it. A PDF looks the same everywhere and can’t be changed by accident."},
+      {t:"About 8 MB, as a PDF", ok:true, why:"20 × 0.4 = 8 MB, small enough to email and open on a phone. A PDF suits a final version for reading."},
+      {t:"About 0.4 MB, as a PDF", why:"0.4 MB is the size of one photo. Twenty photos add about 8 MB."}
+    ]},
+  ],
   codex:[
    {id:"styles-headings", title:"Styles and headings", aka:["paragraph styles","heading styles","Heading 1","document outline","table of contents"], tags:["documents","structure"],
     summary:"Named formatting that says what text is, so headings, the outline, the table of contents and accessibility all work from one source.",
@@ -1164,15 +1238,15 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t1u8-q01", lesson:"t1u8-l1", level:1, q:"What is a style in a word processor?", options:[
-     {t:"A named set of formatting you apply in one step, which updates everywhere when changed", ok:true, why:"That’s the point of styles: consistency and one-place changes."},
+     {t:"A named set of formatting you can apply in one step", ok:true, why:"When you change the style, every paragraph using it updates. That’s the point of styles: consistency and one-place changes."},
      {t:"Any text that has been made bold", why:"Bold text is direct formatting. A style is a named, reusable set of formatting."},
      {t:"A font", why:"A font is one part of a style; a style also sets size, spacing, colour and more."},
-     {t:"A template for the whole document", why:"A template contains styles (and more), but a style applies to paragraphs or words."}
+     {t:"A template that controls the look of the whole document", why:"A template contains styles (and more), but a style applies to paragraphs or words."}
    ]},
    {id:"t1u8-q02", lesson:"t1u8-l1", level:2, q:"Why do headings made with heading styles appear in the navigation pane but bold, large text doesn’t?", options:[
-     {t:"The pane lists paragraphs that have heading styles; bold text is still an ordinary paragraph", ok:true, why:"The app knows a paragraph is a heading only from its style, not from how it looks."},
+     {t:"The pane lists only paragraphs that have heading styles", ok:true, why:"Bold text is still an ordinary paragraph. The app knows a paragraph is a heading only from its style, not from how it looks."},
      {t:"Bold text is too small to show", why:"Size isn’t the test. Even huge bold text isn’t a heading without a heading style."},
-     {t:"The pane only shows text in the first 10 pages", why:"There’s no such limit."},
+     {t:"The pane only shows headings that are in the first 10 pages", why:"There’s no such limit."},
      {t:"Bold text must be underlined to count", why:"No formatting makes something a heading; only a heading style does."}
    ]},
    {id:"t1u8-q03", lesson:"t1u8-l1", level:1, q:"What does pressing Shift+Enter insert?", options:[
@@ -1183,15 +1257,15 @@ ICA.addUnit({
    ]},
    {id:"t1u8-q04", lesson:"t1u8-l1", level:2, q:"A report goes Heading 1, then straight to Heading 3, because Heading 2 looked too big. What’s the best practice?", options:[
      {t:"Use Heading 2 and change the Heading 2 style’s size", ok:true, why:"Choose levels by the outline, and change the look in the style. Skipping levels confuses the outline and screen-reader users."},
-     {t:"Keep Heading 3, since only the look matters", why:"Levels carry the structure for the outline, TOC and screen readers."},
+     {t:"Keep Heading 3, since only the look of headings matters", why:"Levels carry the structure for the outline, TOC and screen readers."},
      {t:"Use bold Normal text instead", why:"Then it isn’t a heading at all."},
      {t:"Make every heading Heading 1", why:"That hides which sections are inside others."}
    ]},
    {id:"t1u8-q05", lesson:"t1u8-l1", level:3, q:"Priya added two new sections to a Word report after inserting the table of contents. She’s about to export a PDF. What should she do first?", options:[
-     {t:"Update the table of contents (References → Update Table) and check the entries", ok:true, why:"Word doesn’t update the TOC by itself. Updating adds the new sections and fixes page numbers."},
+     {t:"Update the table of contents and check the entries", ok:true, why:"In Word, use References → Update Table. Word doesn’t update the TOC by itself; updating adds the new sections and fixes page numbers."},
      {t:"Nothing: the TOC updates automatically in Word", why:"In Word (and LibreOffice) the TOC only changes when you update it."},
      {t:"Delete the TOC and type a new one by hand", why:"A typed TOC goes out of date at the next change. Update the automatic one."},
-     {t:"Add the new sections to the TOC by typing them in", why:"Typed entries are overwritten at the next update and have no links. Update the table instead."}
+     {t:"Add the two new sections to the TOC by typing them in", why:"Typed entries are overwritten at the next update and have no links. Update the table instead."}
    ]},
    {id:"t1u8-q06", lesson:"t1u8-l1", level:1, q:"Which menu shows formatting marks in Google Docs?", options:[
      {t:"View → Show non-printing characters", ok:true, why:"That’s Google’s name for formatting marks."},
@@ -1200,19 +1274,19 @@ ICA.addUnit({
      {t:"Insert → Break", why:"That inserts page, section and column breaks."}
    ]},
    {id:"t1u8-q07", lesson:"t1u8-l1", level:3, q:"With formatting marks on, Kenji sees eight empty ¶ marks between a paragraph and a heading. What’s the problem and fix?", options:[
-     {t:"Empty paragraphs used for spacing; delete them and set spacing in the style (or use a page break if the heading should start a page)", ok:true, why:"Empty paragraphs move with the text and are read as blank lines by screen readers. Spacing and page breaks do the job reliably."},
+     {t:"Empty paragraphs used for spacing; set spacing in the style", ok:true, why:"He should delete them and set spacing in the style (or use a page break if the heading should start a page). Empty paragraphs move with the text and are read as blank lines by screen readers. Spacing and page breaks do the job reliably."},
      {t:"It’s fine: empty paragraphs are the standard way to add space", why:"They’re a common habit, but they break when text changes."},
      {t:"The heading is corrupt and must be retyped", why:"Nothing is corrupt; the spacing method is the problem."},
      {t:"He should add more empty paragraphs so the heading starts a new page", why:"That works only until the next edit. Use a page break."}
    ]},
    {id:"t1u8-q08", lesson:"t1u8-l1", level:2, q:"Hana wants all 30 headings in her handbook to change from green to blue. What’s the quickest reliable way?", options:[
-     {t:"Change the heading style once, so every heading using it updates", ok:true, why:"One change to the style updates every heading, with none missed."},
+     {t:"Change the heading style once", ok:true, why:"Every heading using the style updates, with none missed."},
      {t:"Select each heading and change its colour", why:"That works but is slow and easy to get wrong; that’s exactly what styles avoid."},
      {t:"Use Find and Replace on the word “green”", why:"Find and Replace changes text, not formatting colours applied to headings."},
      {t:"Insert a table of contents", why:"A TOC lists headings; it doesn’t change how they look."}
    ]},
    {id:"t1u8-q09", lesson:"t1u8-l1", level:2, q:"In Word, what happens when you drag a heading in the Navigation pane?", options:[
-     {t:"The heading and all the text under it move to the new place", ok:true, why:"Microsoft’s help: select the heading and drag it to move that part of the document."},
+     {t:"The heading and all the text under it move", ok:true, why:"Microsoft’s help: select the heading and drag it to move that part of the document to the new place."},
      {t:"Only the heading text moves; its paragraphs stay behind", why:"The whole section moves with the heading."},
      {t:"The heading changes level", why:"Dragging moves it; changing level is done by applying a different heading style."},
      {t:"Nothing: the pane is read-only", why:"In desktop Word, the pane lets you reorganise the document by dragging."}
@@ -1237,26 +1311,26 @@ ICA.addUnit({
      {t:"Pressing Enter deletes the next page", why:"It doesn’t delete anything; it just adds empty paragraphs."}
    ]},
    {id:"t1u8-q13", lesson:"t1u8-l2", level:1, q:"What does a section break let you do that a page break doesn’t?", options:[
-     {t:"Use different settings, such as orientation, columns or page numbering, for part of the document", ok:true, why:"Sections carry their own page settings, headers and footers."},
+     {t:"Use different page settings for part of the document", ok:true, why:"For example orientation, columns or page numbering. Sections carry their own page settings, headers and footers."},
      {t:"Start a new page", why:"A page break does that too (and a continuous section break doesn’t)."},
-     {t:"Make the text bigger", why:"Text size comes from styles, not breaks."},
+     {t:"Make the text in just one part of the document bigger", why:"Text size comes from styles, not breaks."},
      {t:"Add comments", why:"Comments are a review feature, unrelated to breaks."}
    ]},
    {id:"t1u8-q14", lesson:"t1u8-l2", level:3, q:"Amara uses Word for the web and needs one landscape page in a portrait report. What should she know?", options:[
-     {t:"Microsoft lists section breaks as desktop-only, so she needs desktop Word or another app such as Google Docs or LibreOffice", ok:true, why:"Word for the web can’t insert section breaks. Google Docs (in Pages format) and LibreOffice (page styles) can do it for free."},
+     {t:"Word for the web can’t add section breaks, so she needs another app", ok:true, why:"Microsoft lists section breaks as desktop-only, so Word for the web can’t insert them. Desktop Word, Google Docs (in Pages format) and LibreOffice (page styles) can do it; the last two are free."},
      {t:"She can make the whole document landscape, which is the only option anywhere", why:"Section breaks (or LibreOffice page styles) let one page change."},
      {t:"Pressing Enter several times will turn the page", why:"Empty lines never change orientation."},
      {t:"She must convert the document to PDF first", why:"PDFs aren’t edited that way. Change the layout in the source document."}
    ]},
    {id:"t1u8-q15", lesson:"t1u8-l2", level:2, q:"Why shouldn’t page numbers be typed into the footer by hand?", options:[
-     {t:"Typed numbers are the same on every page and go wrong when pages move; a page-number field updates itself", ok:true, why:"A field fills in the right number for each page and stays correct."},
+     {t:"Typed numbers don’t change from page to page", ok:true, why:"Typed numbers are the same on every page and go wrong when pages move. A page-number field fills in the right number for each page and stays correct."},
      {t:"Footers can’t contain text", why:"They can hold any text, including titles and dates."},
      {t:"Typed numbers are invisible when printed", why:"They print; they’re just wrong."},
-     {t:"Page numbers are only allowed in headers", why:"They can go in either a header or a footer."}
+     {t:"Page numbers are only allowed in headers, not footers", why:"They can go in either a header or a footer."}
    ]},
    {id:"t1u8-q16", lesson:"t1u8-l2", level:3, q:"Mei lines up a bakery price list with spaces. It looks right on her laptop but jagged on her partner’s phone. What’s the most reliable fix?", options:[
-     {t:"One tab per line with a right-aligned tab stop (with dot leaders), or a table", ok:true, why:"Tab stops and tables are fixed positions that don’t depend on the width of spaces in a font."},
-     {t:"Add more spaces until it lines up on the phone", why:"Then it will be wrong on the laptop. Space widths vary by font and size."},
+     {t:"Use one tab and a right-aligned tab stop, or a table", ok:true, why:"Tab stops (with dot leaders) and tables are fixed positions that don’t depend on the width of spaces in a font."},
+     {t:"Add more spaces on each line until it lines up on the phone", why:"Then it will be wrong on the laptop. Space widths vary by font and size."},
      {t:"Use a bigger font", why:"Spaces still vary; the alignment still depends on the font."},
      {t:"Send a screenshot instead", why:"A picture of a price list can’t be edited, searched or read by screen readers."}
    ]},
@@ -1274,20 +1348,20 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u8-q19", lesson:"t1u8-l3", level:1, q:"What is the main advantage of a real numbered list over typed numbers?", options:[
-     {t:"It renumbers itself when items are added or removed, and screen readers announce it as a list", ok:true, why:"The app manages the numbers and the structure."},
+     {t:"It renumbers itself when items change", ok:true, why:"It renumbers when items are added or removed, and screen readers announce it as a list. The app manages the numbers and the structure."},
      {t:"It uses a nicer font", why:"Font has nothing to do with it."},
-     {t:"It can’t be edited by others", why:"Lists don’t lock anything."},
+     {t:"It can’t be changed by others by mistake", why:"Lists don’t lock anything."},
      {t:"It prints in colour", why:"Colour is unrelated to list structure."}
    ]},
    {id:"t1u8-q20", lesson:"t1u8-l3", level:2, q:"When is a table the right choice?", options:[
-     {t:"For data: rows of similar things, with columns for the same details", ok:true, why:"Tables are for data. Google: “Use tables to present data, not to change the visual layout of the page.”"},
+     {t:"For data: rows of similar things with the same details", ok:true, why:"Each column holds the same detail for every row. Tables are for data. Google: “Use tables to present data, not to change the visual layout of the page.”"},
      {t:"To put a photo next to a paragraph", why:"That’s layout; use image wrapping instead."},
      {t:"To make a two-column CV", why:"Layout tables are read cell by cell and can come out in the wrong order."},
-     {t:"Whenever text needs to look tidy", why:"Tidy layout comes from styles, tab stops and columns. Tables are for data."}
+     {t:"Whenever text needs to look tidy, for example in a letter", why:"Tidy layout comes from styles, tab stops and columns. Tables are for data."}
    ]},
    {id:"t1u8-q21", lesson:"t1u8-l3", level:1, q:"Why mark the first row of a data table as a header row (not just make it bold)?", options:[
-     {t:"Screen readers can then announce the column name for each cell, and the row can repeat on each page", ok:true, why:"A marked header row is structure the app and assistive technology can use."},
-     {t:"Header rows are required before you can type in a table", why:"You can type without one; it just helps readers."},
+     {t:"Screen readers can announce the column name for each cell", ok:true, why:"The row can also repeat on each page. A marked header row is structure the app and assistive technology can use."},
+     {t:"Header rows are required before you can type in a table at all", why:"You can type without one; it just helps readers."},
      {t:"Bold text can’t be printed", why:"Bold prints fine; it simply isn’t structure."},
      {t:"It makes the table load faster", why:"Speed isn’t affected."}
    ]},
@@ -1310,8 +1384,8 @@ ICA.addUnit({
      {t:"Delete it, because decorative images aren’t allowed", why:"Decoration is fine; it just shouldn’t be announced."}
    ]},
    {id:"t1u8-q25", lesson:"t1u8-l3", level:1, q:"How is a caption different from alt text?", options:[
-     {t:"A caption is visible to everyone; alt text is hidden and read by screen readers in place of the image", ok:true, why:"They do different jobs, and most informative images benefit from both."},
-     {t:"They are the same thing with different names", why:"One is visible text; the other is a hidden description."},
+     {t:"A caption is visible; alt text is read by screen readers", ok:true, why:"A caption is visible to everyone; alt text is hidden and read in place of the image. They do different jobs, and most informative images benefit from both."},
+     {t:"They are exactly the same thing, just with two different names", why:"One is visible text; the other is a hidden description."},
      {t:"Captions are only for tables", why:"Figures, tables and equations can all have captions."},
      {t:"Alt text is printed under the image", why:"Alt text isn’t shown on the page."}
    ]},
@@ -1322,16 +1396,16 @@ ICA.addUnit({
      {t:"Her printer is set to A4", why:"Paper size doesn’t make an image jump between pages while editing."}
    ]},
    {id:"t1u8-q27", lesson:"t1u8-l3", level:3, q:"Dmitri needs a caption under a figure in Google Docs. What can he do?", options:[
-     {t:"Place the image in line and type the caption in the paragraph directly below it", ok:true, why:"Google Docs has no caption tool, so a typed caption next to an in-line image is the practical way, and it stays with the image."},
+     {t:"Place the image in line and type the caption below it", ok:true, why:"Google Docs has no caption tool, so a caption typed in the paragraph directly below an in-line image is the practical way, and it stays with the image."},
      {t:"Use References → Insert Caption", why:"That’s Word desktop’s command; Google Docs doesn’t have it."},
      {t:"Put the caption in the alt text", why:"Alt text isn’t visible, so sighted readers wouldn’t see it."},
-     {t:"Captions are impossible in Google Docs, so skip it", why:"There’s no caption tool, but a typed caption works fine."}
+     {t:"Captions are impossible in Google Docs, so he should skip it", why:"There’s no caption tool, but a typed caption works fine."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t1u8-q28", lesson:"t1u8-l4", level:1, q:"What does a tracked change (or suggestion) do?", options:[
-     {t:"Records an edit with who made it and when, waiting to be accepted or rejected", ok:true, why:"It’s a proposal, not yet final."},
+     {t:"Records an edit, waiting to be accepted or rejected", ok:true, why:"It records who made the edit and when. It’s a proposal, not yet final."},
      {t:"Saves a copy of the whole document", why:"That’s version history."},
-     {t:"Adds a note in the margin without changing the text", why:"That’s a comment."},
+     {t:"Adds a note in the margin without changing any of the text", why:"That’s a comment."},
      {t:"Locks the document so nobody else can edit", why:"Tracking doesn’t lock anything."}
    ]},
    {id:"t1u8-q29", lesson:"t1u8-l4", level:2, q:"You’re not sure whether a figure in a colleague’s report includes tax. What should you add?", options:[
@@ -1341,9 +1415,9 @@ ICA.addUnit({
      {t:"A new version in version history", why:"Version history saves snapshots; it doesn’t ask questions."}
    ]},
    {id:"t1u8-q30", lesson:"t1u8-l4", level:3, q:"Kenji set Word to No Markup and sent the file to a client. The client switched to All Markup and saw a deleted earlier price. What should Kenji have done?", options:[
-     {t:"Accepted or rejected every change and removed comments, checked with All Markup, then ideally sent a PDF", ok:true, why:"No Markup only hides changes. Resolving them (and exporting a PDF) removes them from what the client receives."},
+     {t:"Resolved every change and comment, then sent a PDF", ok:true, why:"He should have accepted or rejected every change and removed comments, checked with All Markup, then ideally sent a PDF. No Markup only hides changes; resolving them removes them from what the client receives."},
      {t:"Used Simple Markup instead", why:"Simple Markup also just changes the view."},
-     {t:"Turned off Track Changes before sending", why:"Turning tracking off stops new tracking; existing changes stay in the file."},
+     {t:"Turned off Track Changes in the Review tab before sending", why:"Turning tracking off stops new tracking; existing changes stay in the file."},
      {t:"Nothing: clients can’t see markup", why:"They can, as this client did."}
    ]},
    {id:"t1u8-q31", lesson:"t1u8-l4", level:2, q:"In Google Docs, what access lets a reviewer suggest edits but not change the text directly?", options:[
@@ -1359,20 +1433,20 @@ ICA.addUnit({
      {t:"Turning on Track Changes now", why:"Tracking only records edits made after it’s turned on."}
    ]},
    {id:"t1u8-q33", lesson:"t1u8-l4", level:1, q:"How is version history different from tracked changes?", options:[
-     {t:"Version history keeps snapshots of the whole document over time; tracked changes record each edit as a proposal to accept or reject", ok:true, why:"They answer different questions: “what did it look like before?” versus “do I accept this edit?”"},
+     {t:"Versions are snapshots; tracked changes are proposals", ok:true, why:"Version history keeps snapshots of the whole document over time; tracked changes record each edit as a proposal to accept or reject. They answer different questions: “what did it look like before?” versus “do I accept this edit?”"},
      {t:"They are the same feature", why:"They’re separate features with different jobs."},
      {t:"Version history only works for PDFs", why:"It works for documents in cloud storage and online editors."},
-     {t:"Tracked changes are deleted after 24 hours", why:"Tracked changes stay until accepted or rejected."}
+     {t:"Tracked changes are deleted automatically after 24 hours", why:"Tracked changes stay until accepted or rejected."}
    ]},
    {id:"t1u8-q34", lesson:"t1u8-l4", level:3, q:"Ana gets 50 suggestions from three reviewers. Which approach is best?", options:[
-     {t:"Accept the proofreader’s typo fixes, then go through number and wording changes one by one with Next", ok:true, why:"Bulk-accept only what you fully trust; check changes that affect meaning or numbers individually."},
+     {t:"Accept trusted typo fixes, then check the rest one by one", ok:true, why:"Accept the proofreader’s typo fixes, then go through number and wording changes one by one with Next. Bulk-accept only what you fully trust; check changes that affect meaning or numbers individually."},
      {t:"Accept All immediately to save time", why:"One wrong accepted change can alter a figure or meaning unnoticed."},
      {t:"Reject All and rewrite it herself", why:"That throws away useful work and annoys reviewers."},
-     {t:"Hide the markup and send it as it is", why:"Hidden changes are still in the file and unresolved."}
+     {t:"Hide the markup and send it as it is, since it looks clean", why:"Hidden changes are still in the file and unresolved."}
    ]},
    {id:"t1u8-q35", lesson:"t1u8-l4", level:2, q:"Why is one shared file usually better than emailing copies for review?", options:[
-     {t:"Everyone works on the current version, changes stay in one place, and history is kept", ok:true, why:"Copies drift apart; a shared file stays one file."},
-     {t:"Emailed files can’t contain comments", why:"They can; the problem is merging several copies."},
+     {t:"Everyone works on the current version, in one place", ok:true, why:"Changes stay in one place and history is kept. Copies drift apart; a shared file stays one file."},
+     {t:"Emailed files can’t contain comments or tracked changes", why:"They can; the problem is merging several copies."},
      {t:"Shared files can’t be printed", why:"They print normally."},
      {t:"Email is never allowed for documents", why:"Email is fine for final copies, ideally as PDF."}
    ]},
@@ -1397,7 +1471,7 @@ ICA.addUnit({
    ]},
    {id:"t1u8-q39", lesson:"t1u8-l5", level:2, q:"Which apps have a built-in accessibility checker?", options:[
      {t:"Word and LibreOffice Writer", ok:true, why:"Word: Review → Check Accessibility. LibreOffice: Tools → Accessibility Check. Google Docs and Pages need checking by hand (or add-ons for Docs)."},
-     {t:"Google Docs and Pages", why:"Neither has a built-in checker; Word and LibreOffice do."},
+     {t:"Google Docs and Apple Pages", why:"Neither has a built-in checker; Word and LibreOffice do."},
      {t:"All four apps", why:"Only Word and LibreOffice have one built in."},
      {t:"None of them", why:"Word and LibreOffice both have one."}
    ]},
@@ -1414,25 +1488,25 @@ ICA.addUnit({
      {t:".pages, so the layout is kept", why:"People without Pages may not be able to open it."}
    ]},
    {id:"t1u8-q42", lesson:"t1u8-l5", level:1, q:"What is PDF/A for?", options:[
-     {t:"Long-term archiving: everything needed to display the file is inside it", ok:true, why:"PDF/A (ISO 19005) is designed so files still open correctly years later."},
+     {t:"Long-term archiving, so files still open years later", ok:true, why:"Everything needed to display the file is inside it. PDF/A (ISO 19005) is designed so files still open correctly years later."},
      {t:"Making PDFs editable", why:"PDF/A is still a fixed-layout format."},
      {t:"Adding animations", why:"PDF/A excludes features that could stop it displaying in the future."},
-     {t:"Password protecting PDFs", why:"Encryption isn’t allowed in PDF/A."}
+     {t:"Password protecting PDFs so only some people can open them", why:"Encryption isn’t allowed in PDF/A."}
    ]},
    {id:"t1u8-q43", lesson:"t1u8-l5", level:2, q:"Why might a document full of phone photos be too big to email, and what helps?", options:[
-     {t:"Full-size photos take many megabytes each; compressing them shrinks the file", ok:true, why:"Images dominate file size. Compress Pictures (Word), Compress (LibreOffice) or Reduce File Size (Pages) helps."},
+     {t:"Full-size photos are large; compress them", ok:true, why:"Full-size photos take many megabytes each, and images dominate file size. Compress Pictures (Word), Compress (LibreOffice) or Reduce File Size (Pages) helps."},
      {t:"Text takes up most of the space; delete some paragraphs", why:"Text is tiny compared with photos."},
      {t:"Fonts make files huge; change the font", why:"Fonts usually aren’t embedded in editable documents; photos are the issue."},
      {t:"Headings add megabytes; remove them", why:"Headings add almost nothing, and they’re needed for structure."}
    ]},
    {id:"t1u8-q44", lesson:"t1u8-l5", level:3, q:"Hana must send 60 personalised award certificates, each with a name and an achievement. What’s the best approach?", options:[
-     {t:"Mail merge: one certificate with merge fields, plus a list with one row per person", ok:true, why:"Mail merge makes one personalised copy per row and avoids typing errors."},
+     {t:"Mail merge: one certificate plus a list of names", ok:true, why:"One certificate with merge fields, plus a list with one row per person. Mail merge makes one personalised copy per row and avoids typing errors."},
      {t:"Copy and paste the certificate 60 times and edit each by hand", why:"Slow and error-prone: names end up on the wrong certificates."},
      {t:"Use track changes to edit each name", why:"Track changes records edits; it doesn’t generate copies."},
      {t:"Make a template and open it 60 times", why:"A template helps, but she’d still type every name; mail merge fills them in automatically."}
    ]},
    {id:"t1u8-q45", lesson:"t1u8-l5", level:2, q:"Why use a template for monthly meeting minutes?", options:[
-     {t:"Each new copy starts with the right styles, layout and placeholders, so every month looks consistent", ok:true, why:"Templates save setup time and keep documents consistent, and the template itself stays unchanged."},
+     {t:"Every month starts with the same styles and layout", ok:true, why:"Each new copy starts with the right styles, layout and placeholders, so every month looks consistent. Templates save setup time, and the template itself stays unchanged."},
      {t:"Templates automatically write the minutes", why:"They provide structure; people still write the content."},
      {t:"Templates can’t be edited, so mistakes are impossible", why:"Documents made from templates are fully editable."},
      {t:"Templates make the file a PDF", why:"Templates create editable documents."}

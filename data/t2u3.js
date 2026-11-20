@@ -863,6 +863,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u3-q02","t2u3-q05","t2u3-q07","t2u3-q11","t2u3-q14","t2u3-q17","t2u3-q20","t2u3-q24","t2u3-q30","t2u3-q34","t2u3-q39","t2u3-q43"],
+  cpBank:[
+    {id:"t2u3-cp01", lesson:"t2u3-l1", level:2, q:"Sam wants to colour the `h2` and `h3` headings inside his `.sidebar`, and no other headings. Which selector does exactly that?", options:[{t:"`.sidebar h2, h3`", why:"After a comma, a new selector starts from scratch. This styles the `h2`s inside `.sidebar` and also every `h3` on the whole page."}, {t:"`h2.sidebar, h3.sidebar`", why:"With no space, `h2.sidebar` means an `h2` that itself has the class `sidebar`. Headings inside the sidebar don’t match."}, {t:"`.sidebar h2, .sidebar h3`", ok:true, why:"Each part of a comma list stands alone, so each needs its own `.sidebar` and a space, meaning “inside”."}, {t:"`.sidebar, h2, h3`", why:"Commas only: this styles the sidebar itself, and every `h2` and `h3` on the page, wherever they are."}]},
+    {id:"t2u3-cp02", lesson:"t2u3-l1", level:2, q:"Tomás’s CSS has `.price { color: teal; }`, and his HTML says `<span class=\"Price\">`. In DevTools, his rule isn’t listed at all for that span. What’s the most likely cause?", options:[{t:"The capital P: class names are case-sensitive", ok:true, why:"If a rule isn’t listed, its selector doesn’t match (or the file isn’t loading). Here the capital P is the difference."}, {t:"Another, more specific rule is winning over it", why:"A losing rule is still listed in the Styles pane, with a line through it. Not being listed means it doesn’t match."}, {t:"The value `teal` isn’t a valid CSS colour", why:"`teal` is a named colour. And an invalid declaration would still be listed, with a warning icon."}, {t:"It needs `!important` before it will show", why:"`!important` only helps a rule that matches. This selector never matches the span."}]},
+    {id:"t2u3-cp03", lesson:"t2u3-l2", level:1, q:"Kim’s page links `theme.css` first and `base.css` second. Both contain an `h1` rule with a different colour. Which colour do the headings get?", options:[{t:"The one in `theme.css`, because it is linked first", why:"Coming first doesn’t win. When specificity ties, the later rule wins."}, {t:"The one in `base.css`, because it comes later", ok:true, why:"The selectors are equally specific, so the later declaration wins, and that includes the order of linked files."}, {t:"A mix of the two colours", why:"The cascade picks one value for each property. Colours are never blended."}, {t:"Whichever file is shorter", why:"File length has nothing to do with it. Here only the order decides."}]},
+    {id:"t2u3-cp04", lesson:"t2u3-l2", level:2, q:"Early in Ana’s CSS: `.card { background-color: white; padding: 1rem; }`. Later: `.card { background-color: ivory; }`. What does a card get?", options:[{t:"An ivory background and no padding", why:"A losing rule doesn’t vanish. Only its conflicting declaration loses, so the padding stays."}, {t:"A white background and 1rem of padding", why:"The selectors are equally specific, so the later declaration, ivory, wins."}, {t:"No background at all, because the rules conflict", why:"Conflicts are normal. The browser always settles them and picks one value."}, {t:"An ivory background and 1rem of padding", ok:true, why:"The cascade works one property at a time. The later rule wins the background; the padding has no rival, so it still applies."}]},
+    {id:"t2u3-cp05", lesson:"t2u3-l2", level:3, q:"Near the top of Leo’s CSS is `a:hover { color: crimson; }`. Further down is `nav a { color: navy; }`. A visitor points at a link in the nav. What colour is it?", options:[{t:"Navy, because `nav a` comes later", why:"Order only decides between equally specific selectors, and 0-1-1 beats 0-0-2."}, {t:"Navy, because two type selectors outweigh one pseudo-class", why:"Columns are compared from the left. One in the class column beats any number of type selectors."}, {t:"Crimson: `a:hover` (0-1-1) beats `nav a` (0-0-2)", ok:true, why:"A pseudo-class counts in the class column. Specificity is compared before order, so the earlier rule wins."}, {t:"Crimson, but only if he adds `!important`", why:"No `!important` is needed: `a:hover` already wins on specificity."}]},
+    {id:"t2u3-cp06", lesson:"t2u3-l3", level:1, q:"Lin’s club site uses the same teal in 30 rules, and the committee may change it next year. What’s the best way to write it?", options:[{t:"Write `teal` in all 30 rules and use find-and-replace later", why:"That works, but it’s easy to miss one. A custom property needs only one edit."}, {t:"Store it once as `--club: teal;` and use `var(--club)`", ok:true, why:"Declare the custom property once, in a `:root` rule, and write `color: var(--club);` in each rule. Change it there and every rule that uses it changes too."}, {t:"Put an inline `style` on each element instead", why:"Inline styles scatter the colour through the HTML, which makes it harder to change, not easier."}, {t:"Add `!important` so nothing can override the colour", why:"`!important` makes styles harder to change later. It doesn’t store the colour in one place."}]},
+    {id:"t2u3-cp07", lesson:"t2u3-l3", level:2, q:"Kemal writes only `font-family: \"Garden Sans\";` and loads that font from a font service. Some visitors’ browsers block the download. What do they see?", options:[{t:"No text at all, ever, because the font never arrives", why:"Browsers don’t hide text for good when a font fails. They show a font they have; the question is which one."}, {t:"Verdana, because browsers pick the most similar font they have", why:"Browsers don’t look for a similar font. They try only the fonts listed, then use their default."}, {t:"Garden Sans, because the font is built into the page", why:"A web font is a separate download. If it’s blocked, the visitor doesn’t have it."}, {t:"Text in the browser’s default font, which may be a serif", ok:true, why:"With no fallbacks and no generic family, the browser uses its own default. End every stack with a generic family such as `sans-serif`."}]},
+    {id:"t2u3-cp08", lesson:"t2u3-l4", level:2, q:"Nina’s `.card` has `max-width: 20rem`. She adds `text-align: center` to the card, hoping to put it in the middle of the page. What happens?", options:[{t:"The card moves to the middle of the page", why:"A common mix-up: `text-align` works on the content, not on the box’s position."}, {t:"Nothing, because `text-align` needs a width in px", why:"`text-align` works with any width. It centres the content, not the card."}, {t:"The text centres; the card stays on the left", ok:true, why:"`text-align` centres the content inside a box. To centre the box itself, give it `margin: 0 auto`."}, {t:"The card stretches to fill the page", why:"`text-align` doesn’t change the width. The card keeps its `max-width`."}]},
+    {id:"t2u3-cp09", lesson:"t2u3-l4", level:3, q:"A button has `font-size: 1.5rem` and `padding: 0.5em 1em`. The reader uses the usual 16 px default. How much padding does the button get on its **left** side?", options:[{t:"16 px", why:"That treats `em` like `rem`. Here `em` follows the button’s own 24 px text."}, {t:"24 px", ok:true, why:"For properties other than `font-size`, `em` means the element’s own font size: 1.5 × 16 = 24 px. The left and right padding is `1em`, so 24 px."}, {t:"12 px", why:"12 px is the top and bottom padding (`0.5em`). With two values, the second one sets left and right."}, {t:"8 px", why:"That is 0.5 × 16, which mixes up both the side and the unit. The left side gets `1em` of 24 px."}]},
+    {id:"t2u3-cp10", lesson:"t2u3-l5", level:3, q:"Two cards sit one above the other in a one-column grid with no `gap`. Each card has `margin: 20px`. How much space is there between them?", options:[{t:"20 px, because vertical margins collapse to the larger one", why:"That’s true for blocks in normal flow, but it doesn’t happen between flex or grid items."}, {t:"0 px, because grid ignores margins", why:"Grid items keep their margins. `gap` is the usual way to space them, but margins still apply."}, {t:"60 px, because the grid adds a gap of its own", why:"With no `gap` set, the grid adds no space. Only the two margins count."}, {t:"40 px, because margins don’t collapse between grid items", ok:true, why:"Margin collapsing happens only between blocks in normal flow. In a grid, the bottom margin and the top margin both count."}]},
+    {id:"t2u3-cp11", lesson:"t2u3-l5", level:1, q:"Ayo’s 15 tag links sit in a flex row. On phones they squeeze onto one cramped line. Which declaration on the container lets them flow onto new lines?", options:[{t:"`flex-wrap: wrap;`", ok:true, why:"Flex items squeeze onto one line by default. `flex-wrap: wrap` lets them move onto new lines, and `gap` still spaces them."}, {t:"`justify-content: space-between;`", why:"That shares out space along the row, but the items still stay on one line."}, {t:"`align-items: center;`", why:"That lines items up across the row. It doesn’t start new lines."}, {t:"`display: inline;`", why:"That stops the container being a flex container at all. Wrapping is done with `flex-wrap`."}]},
+    {id:"t2u3-cp12", lesson:"t2u3-l5", level:3, q:"Hana’s CSS has `@media (min-width: 40rem) { .plots { grid-template-columns: repeat(3, 1fr); } }` and, **below** it, `.plots { grid-template-columns: 1fr; }`. On a wide laptop, the plots stay in one column. Why?", options:[{t:"Media queries don’t work on laptop screens", why:"They work on every screen. The query applies here, but its rule loses to the later one."}, {t:"40rem is wider than a laptop screen", why:"With the usual 16 px default, 40rem is 640 px, much narrower than a laptop."}, {t:"Media queries add no specificity, so the later rule wins", ok:true, why:"Both selectors are 0-1-0. The query only decides whether its rules apply; then order settles the tie. Mobile-first CSS puts the base rule first."}, {t:"Rules inside a media query always lose to rules outside it", why:"They follow the normal cascade. They lose here only because the rule outside is equally specific and comes later."}]}
+  ],
   codex:[
    {id:"css-rules", title:"CSS rules and where CSS goes", aka:["CSS syntax","declaration","property","value","stylesheet","link rel stylesheet","style element","inline style","CSS comments"], tags:["css","basics"],
     summary:"A CSS rule is a selector plus a block of property: value declarations; rules live best in a linked .css file.",
@@ -1285,8 +1299,8 @@ ICA.addUnit({
      {t:"A class", why:"A class selector starts with a dot, like `.note`. There’s no class here."}
    ]},
    {id:"t2u3-q02", lesson:"t2u3-l1", level:1, q:"Which is the recommended way to apply one set of styles to every page of a website?", options:[
-     {t:"A separate `.css` file linked from each page with `<link rel=\"stylesheet\">`", ok:true, why:"One file reaches every page, is cached by the browser, and a change is made in one place."},
-     {t:"A `<style>` element copied into every page", why:"Every page would hold its own copy, so a change means editing every page."},
+     {t:"A separate `.css` file linked from each page", ok:true, why:"Link one `.css` file from each page with `<link rel=\"stylesheet\">`. One file reaches every page, is cached by the browser, and a change is made in one place."},
+     {t:"A `<style>` element copied into the head of every page", why:"Every page would hold its own copy, so a change means editing every page."},
      {t:"A `style` attribute on each element", why:"That repeats the styling on every element and is the hardest approach to maintain or override."},
      {t:"A `<script>` that sets the styles", why:"JavaScript can set styles, but it’s the wrong tool for a site’s basic look and fails if scripts don’t run."}
    ]},
@@ -1358,13 +1372,13 @@ ICA.addUnit({
      {t:"`margin`", why:"Margins aren’t inherited."}
    ]},
    {id:"t2u3-q14", lesson:"t2u3-l2", level:3, q:"Lucía sets `body { color: #333333; }`, but her links stay blue. Why?", options:[
-     {t:"The browser’s built-in stylesheet has a rule targeting links directly, which beats inheritance", ok:true, why:"Inherited values lose to any rule that targets the element itself, including the browser’s own `a` rule. `a { color: inherit; }` makes links follow the text colour."},
+     {t:"The browser’s own stylesheet targets links directly", ok:true, why:"A rule that targets links directly beats inheritance. Inherited values lose to any rule that targets the element itself, including the browser’s own `a` rule. `a { color: inherit; }` makes links follow the text colour."},
      {t:"Links can’t be recoloured with CSS", why:"They can: any rule targeting `a` can set its colour."},
      {t:"Her `body` rule has too low a specificity; it needs an id", why:"Specificity doesn’t help here: the body rule matches the body, not the links, so it never competes with the link rule."},
      {t:"`color` isn’t an inherited property", why:"`color` is inherited, which is why her paragraphs turned dark grey. Links are different because something targets them directly."}
    ]},
    {id:"t2u3-q15", lesson:"t2u3-l2", level:3, q:"Priya’s `.alert { color: darkred; }` doesn’t work on `<p class=\"alert\" style=\"color: gray\">`. What’s happening?", options:[
-     {t:"The inline style attribute beats any selector in the stylesheet", ok:true, why:"Inline styles outrank all normal stylesheet rules, whatever their specificity. Removing the inline style is the clean fix."},
+     {t:"The inline style beats the stylesheet rule", ok:true, why:"Inline styles outrank all normal stylesheet rules, whatever their selector’s specificity. Removing the inline style is the clean fix."},
      {t:"Class selectors can’t set colours", why:"They can. The inline style is simply stronger."},
      {t:"The `.alert` rule needs to come before the HTML", why:"Where the stylesheet sits doesn’t matter here; inline styles beat stylesheet rules wherever they are."},
      {t:"`darkred` isn’t a valid colour", why:"`darkred` is a named colour. The problem is the inline style."}
@@ -1376,7 +1390,7 @@ ICA.addUnit({
      {t:"It’s been deleted from the file", why:"The tools show what the browser loaded; deleted code wouldn’t appear."}
    ]},
    {id:"t2u3-q17", lesson:"t2u3-l2", level:3, q:"Tomás’s teammate wants to fix a style that won’t apply by adding `!important`. What’s the best reply?", options:[
-     {t:"Find out which rule is winning in developer tools, then fix the order or specificity instead", ok:true, why:"That solves the cause. `!important` can only be beaten by another `!important`, so it makes every later change harder."},
+     {t:"Find the winning rule in developer tools and fix the cause", ok:true, why:"Developer tools show which rule is winning; then fix its order or specificity. That solves the cause. `!important` can only be beaten by another `!important`, so it makes every later change harder."},
      {t:"Fine, `!important` is the normal way to make styles work", why:"It’s a last resort. MDN advises never using it unless you absolutely have to."},
      {t:"Use an inline style instead; it’s stronger than `!important`", why:"An `!important` declaration in a stylesheet beats a normal inline style, and inline styles create their own maintenance problems."},
      {t:"Give the element an id and style that", why:"An id raises specificity, but piling on ids makes future overrides harder too. Understand the conflict first."}
@@ -1413,13 +1427,13 @@ ICA.addUnit({
      {t:"It depends on the parent’s font size", why:"That’s true of `em`. `rem` always uses the root font size."}
    ]},
    {id:"t2u3-q23", lesson:"t2u3-l3", level:2, q:"Why is `rem` better than `px` for font sizes?", options:[
-     {t:"`rem` sizes follow the reader’s browser text-size setting; `px` font sizes ignore it", ok:true, why:"People who need larger text often set a bigger default. Text in rem grows with it."},
+     {t:"`rem` follows the reader’s chosen text size", ok:true, why:"`rem` font sizes follow the reader’s browser text-size setting; `px` font sizes ignore it. People who need larger text often set a bigger default, and text in rem grows with it."},
      {t:"`px` can’t be used for fonts", why:"It can; it just ignores the reader’s default text-size preference."},
      {t:"`rem` text is sharper on high-resolution screens", why:"Both are drawn equally sharply. The difference is how they respond to settings."},
      {t:"Zoom doesn’t work on `px` text", why:"Page zoom enlarges `px` text too. The difference is the default text-size setting."}
    ]},
    {id:"t2u3-q24", lesson:"t2u3-l3", level:3, q:"Fatima’s design uses mid-grey text `#777777` on white for body copy. A checker says 4.48:1. Her colleague says “that rounds to 4.5, it passes”. Who’s right?", options:[
-     {t:"The checker: WCAG thresholds aren’t rounded, so 4.48:1 fails; `#767676` (4.54:1) or darker would pass", ok:true, why:"The WAI guidance says the ratios are exact thresholds. A slightly darker grey solves it with no visible change in style."},
+     {t:"The checker: thresholds aren’t rounded, so 4.48:1 fails", ok:true, why:"The WAI guidance says the ratios are exact thresholds. A slightly darker grey, such as `#767676` (4.54:1), solves it with no visible change in style."},
      {t:"The colleague: ratios are rounded to one decimal place", why:"WCAG explicitly says not to round; 4.499:1 fails."},
      {t:"It passes because grey is a neutral colour", why:"Contrast depends only on brightness difference, not on which colour is used."},
      {t:"It doesn’t matter; contrast rules only apply to headings", why:"1.4.3 covers all text, and body text most of all."}
@@ -1431,7 +1445,7 @@ ICA.addUnit({
      {t:"20 px", why:"The paragraph sets its own size, 1.5 times its parent’s, so it’s larger."}
    ]},
    {id:"t2u3-q26", lesson:"t2u3-l3", level:3, q:"Hana’s club site loads its font from a third-party font service. A member in the EU asks whether that shares their data. What’s accurate?", options:[
-     {t:"Their browser contacts the font service, which receives their IP address; hosting the font files on the club’s own site avoids that", ok:true, why:"Any file loaded from another server reveals the visitor’s IP address to it. In 2022 one German regional court ruled that doing this with Google Fonts without consent breached the GDPR."},
+     {t:"The font service sees their IP address", ok:true, why:"Their browser contacts the font service, and any file loaded from another server reveals the visitor’s IP address to it. Hosting the font files on the club’s own site avoids that. In 2022 one German regional court ruled that doing this with Google Fonts without consent breached the GDPR."},
      {t:"Fonts are just files, so no data is shared", why:"Downloading any file means connecting to the server that sends it, which sees the visitor’s IP address."},
      {t:"Only visitors who click on text share data", why:"The font loads when the page loads, without any clicks."},
      {t:"Nothing can be done except removing all custom fonts", why:"Self-hosting the same font files keeps the custom look without contacting a third party."}
@@ -1468,10 +1482,10 @@ ICA.addUnit({
      {t:"`<h3>`", why:"Headings are block boxes."}
    ]},
    {id:"t2u3-q32", lesson:"t2u3-l4", level:3, q:"Sione sets `width: 120px; height: 40px;` on a `<span>` but nothing changes. What’s the fix?", options:[
-     {t:"Give it `display: inline-block` (or `block`), because width and height don’t apply to inline boxes", ok:true, why:"Spans are inline by default, and inline boxes ignore width and height. Inline-block keeps it in the line but respects the sizes."},
+     {t:"Give it `display: inline-block` (or `block`)", ok:true, why:"Width and height don’t apply to inline boxes, and spans are inline by default. Inline-block keeps it in the line but respects the sizes."},
      {t:"Use `!important` on the width and height", why:"The declarations aren’t losing a conflict; they simply don’t apply to inline boxes."},
      {t:"Use `rem` instead of `px`", why:"The unit isn’t the problem. Inline boxes ignore width and height in any unit."},
-     {t:"Add a border so the size can be seen", why:"A border would show the span’s actual size, which still follows its text, not 120 × 40."}
+     {t:"Add a border so the box’s new size can be seen", why:"A border would show the span’s actual size, which still follows its text, not 120 × 40."}
    ]},
    {id:"t2u3-q33", lesson:"t2u3-l4", level:2, q:"Two paragraphs in normal flow: the first has `margin-bottom: 20px`, the second `margin-top: 30px`. What’s the gap between them?", options:[
      {t:"30 px", ok:true, why:"Adjacent vertical margins collapse to the larger one."},
@@ -1480,7 +1494,7 @@ ICA.addUnit({
      {t:"25 px", why:"Collapsed margins aren’t averaged."}
    ]},
    {id:"t2u3-q34", lesson:"t2u3-l4", level:3, q:"Dmitri’s search box has `width: 100%; padding: 12px;` and makes his page scroll sideways on phones. Which single change fixes it?", options:[
-     {t:"Add `box-sizing: border-box` so the padding fits inside the 100%", ok:true, why:"With the default model, the box is 100% plus 24 px of padding (and any border), which is wider than its container."},
+     {t:"Add `box-sizing: border-box`", ok:true, why:"Then the padding fits inside the 100%. With the default model, the box is 100% plus 24 px of padding (and any border), which is wider than its container."},
      {t:"Change `width: 100%` to `width: 110%`", why:"That makes it even wider."},
      {t:"Remove the `<meta name=\"viewport\">` tag", why:"That would make the whole page tiny on phones, hiding the problem rather than fixing it."},
      {t:"Add `margin: 0 auto`", why:"Automatic margins centre a box that’s narrower than its container. This one is too wide."}
@@ -1505,7 +1519,7 @@ ICA.addUnit({
      {t:"In a media query", why:"Media queries can contain any rules, but flexbox doesn’t need one to work."}
    ]},
    {id:"t2u3-q38", lesson:"t2u3-l5", level:1, q:"What does `gap: 1rem` do in a flex or grid container?", options:[
-     {t:"Adds 1rem of space between items, but not around the outside", ok:true, why:"`gap` only goes between items (and between rows or lines)."},
+     {t:"Adds 1rem of space between items only", ok:true, why:"There’s no space around the outside: `gap` only goes between items (and between rows or lines)."},
      {t:"Adds 1rem of margin around every item", why:"Margins would also add space at the outer edges. `gap` doesn’t."},
      {t:"Adds 1rem of padding inside the container", why:"Padding is set with `padding`. `gap` is only between items."},
      {t:"Sets each item 1rem wide", why:"`gap` sets spacing, not item size."}
@@ -1523,8 +1537,8 @@ ICA.addUnit({
      {t:"200 px", why:"200 px is one fraction. The last column is two fractions."}
    ]},
    {id:"t2u3-q41", lesson:"t2u3-l5", level:1, q:"What does this line in a page’s `<head>` do: `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">`?", options:[
-     {t:"Tells phone browsers to lay the page out at the device’s real width", ok:true, why:"Without it, many phone browsers assume about 980 px and shrink the page, so mobile layouts never apply."},
-     {t:"Makes the page responsive by itself", why:"It’s needed, but you still need flexible CSS. It only sets the width the browser lays the page out at."},
+     {t:"Tells phone browsers to use the device’s real width", ok:true, why:"It sets the width the page is laid out at. Without it, many phone browsers assume about 980 px and shrink the page, so mobile layouts never apply."},
+     {t:"Makes the page responsive by itself, with no other CSS", why:"It’s needed, but you still need flexible CSS. It only sets the width the browser lays the page out at."},
      {t:"Stops readers zooming in", why:"`initial-scale=1` sets the starting zoom. It doesn’t block zooming, and you shouldn’t block it."},
      {t:"Sets the page’s width to 1 px", why:"`initial-scale=1` means a starting zoom level of 100%, not a width."}
    ]},
@@ -1541,7 +1555,7 @@ ICA.addUnit({
      {t:"It depends on how many photos there are", why:"With `auto-fit`, the column count depends on the available width, not on the number of items (unless there are fewer items than columns that fit)."}
    ]},
    {id:"t2u3-q44", lesson:"t2u3-l5", level:3, q:"Kenji’s page scrolls sideways on phones. He finds `.banner { width: 900px; }`. What’s the best fix?", options:[
-     {t:"`.banner { max-width: 900px; }` (or a rem equivalent), so it can shrink on narrow screens", ok:true, why:"A fixed width wider than the screen forces sideways scrolling; `max-width` keeps the limit on wide screens and lets it shrink on phones."},
+     {t:"`.banner { max-width: 900px; }`", ok:true, why:"A rem value works too. A fixed width wider than the screen forces sideways scrolling; `max-width` keeps the limit on wide screens and lets it shrink on phones."},
      {t:"Add a media query that sets `width: 900px` only on phones", why:"That keeps the problem exactly where it’s causing trouble."},
      {t:"`body { overflow-x: hidden; }`", why:"That hides the overflow, cutting off part of the banner, instead of fixing its size."},
      {t:"Remove the viewport meta tag", why:"Without it the whole page shrinks to fit a pretend 980 px width; text becomes tiny instead."}

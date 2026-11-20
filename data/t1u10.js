@@ -160,7 +160,7 @@ ICA.addUnit({
       {t:"a slide that just says “Questions?”", flag:true, why:"The close should restate the message and give a call to action, such as “Sign up by Friday”. Questions can follow."}
     ]},
     {id:"t1u10-l1-x7", type:"mcq", q:"Lucía’s manager wants “a deck” summarising a policy change that staff will read on their own, with no meeting. What should she suggest?", options:[
-      {t:"A short document or PDF written in full sentences, because nobody will be there to explain the slides", ok:true, why:"Slides for a talk rely on the speaker. A reading deck needs complete explanations, which a document does better."},
+      {t:"A short document or PDF written in full sentences", ok:true, why:"Nobody will be there to explain the slides. Slides for a talk rely on the speaker. A reading deck needs complete explanations, which a document does better."},
       {t:"Normal presentation slides with one word per slide, so it looks modern", why:"Without a speaker, single-word slides leave readers guessing what they mean."},
       {t:"Slides with the full text in tiny type", why:"That is a document squeezed onto slides, and tiny type is hard to read, especially on phones."},
       {t:"A video of the slides with music and no narration", why:"Music adds nothing to understanding a policy, and there is still no explanation."}
@@ -293,8 +293,8 @@ ICA.addUnit({
       {t:"18 pt regular text at 7.2:1", b:0, why:"7.2:1 passes every level, including the enhanced AAA level for normal text."}
     ]},
     {id:"t1u10-l2-x3", type:"mcq", q:"Amara switched her deck to a new theme. The colours changed everywhere, but on some slides the old text stayed in the old font and position. What is the most likely reason?", options:[
-      {t:"That text was typed into loose text boxes she drew, not into the layout’s placeholders", ok:true, why:"Placeholders follow the theme and layout; text boxes you draw yourself keep their own position and formatting."},
-      {t:"The new theme is broken and should be reinstalled", why:"The theme worked on the other slides. The difference is in how those particular slides were built."},
+      {t:"That text was in text boxes she drew, not placeholders", ok:true, why:"Placeholders follow the theme and layout; text boxes you draw yourself keep their own position and formatting."},
+      {t:"The new theme is broken and should be downloaded and reinstalled", why:"The theme worked on the other slides. The difference is in how those particular slides were built."},
       {t:"Themes can only change colours, never fonts", why:"Themes include fonts as well as colours. The text that changed shows the fonts were applied where placeholders were used."},
       {t:"She needs a faster computer to apply themes fully", why:"Applying a theme isn’t limited by speed. The text boxes simply aren’t linked to the theme."}
     ]},
@@ -321,13 +321,13 @@ ICA.addUnit({
       {t:"written in 11 pt ALL CAPITALS", flag:true, why:"Too small to read in most rooms, and all capitals are harder to read. Make it larger and use bold for emphasis."}
     ]},
     {id:"t1u10-l2-x6", type:"mcq", q:"Hana’s slide has eight bullet points, each a full sentence, and she reads them aloud. What change would help her audience most?", options:[
-      {t:"Replace them with a headline sentence that makes the point and one supporting visual; put the details in her notes or a handout", ok:true, why:"The audience can listen instead of reading ahead, and the detail isn’t lost: it moves to where it is useful."},
+      {t:"Use a headline that makes the point, plus one visual", ok:true, why:"The details can go in her notes or a handout. The audience can listen instead of reading ahead, and the detail isn’t lost: it moves to where it is useful."},
       {t:"Keep the text but make the font smaller so it all fits with a picture", why:"Smaller text is harder to read and the competition between reading and listening remains."},
       {t:"Add a spinning entrance animation to each bullet", why:"Animation doesn’t fix too much text and can distract further."},
       {t:"Read faster so she finishes before the audience does", why:"Rushing makes it harder to follow and doesn’t solve the reading-versus-listening problem."}
     ]},
     {id:"t1u10-l2-x7", type:"mcq", q:"Dmitri uses PowerPoint for the web with a free account. He wants to change the title font on every slide at once, but he can’t find Slide Master. Why?", options:[
-      {t:"PowerPoint for the web can’t open or edit the slide master; that needs a desktop app", ok:true, why:"Microsoft’s help says viewing the slide master isn’t possible in PowerPoint for the web. He can apply a different theme or variant on the Design tab, or open the file in a desktop app, or in another app, to edit the master."},
+      {t:"The web version can’t edit the slide master", ok:true, why:"Microsoft’s help says viewing the slide master isn’t possible in PowerPoint for the web; that needs a desktop app. He can apply a different theme or variant on the Design tab, or open the file in a desktop app, or in another app, to edit the master."},
       {t:"He has to switch on Slide Master in his account settings", why:"There is no such setting. The feature simply isn’t in the web version."},
       {t:"Slide masters only exist in Google Slides", why:"PowerPoint has slide masters; they are in the desktop apps (View → Slide Master)."},
       {t:"He must first delete all his slides", why:"That would lose his work and wouldn’t add the feature."}
@@ -472,7 +472,7 @@ ICA.addUnit({
       {t:"An image from the app’s built-in stock library, used within the library’s terms", b:0, why:"Stock libraries built into apps license their images for use in those apps, within their stated terms."}
     ]},
     {id:"t1u10-l3-x2", type:"mcq", q:"Ana wants to open her training session with the slide “People remember 10% of what they read but 90% of what they do”. What should she do?", options:[
-      {t:"Drop it, or replace it with a claim she can trace to a real source; researchers found no study behind these percentages", ok:true, why:"The figures have been traced and found to be invented, and wrongly credited to Edgar Dale. A training session shouldn’t start with a myth."},
+      {t:"Drop it: no study has been found behind these numbers", ok:true, why:"Or replace it with a claim she can trace to a real source. The figures have been traced and found to be invented, and wrongly credited to Edgar Dale. A training session shouldn’t start with a myth."},
       {t:"Keep it, because it is widely quoted so it must be true", why:"Repetition doesn’t make a claim true. This one has been traced and debunked."},
       {t:"Keep it but change the numbers to look more precise, such as 11.5%", why:"That would make an invented statistic look even more trustworthy. The problem is the missing evidence, not the rounding."},
       {t:"Credit it to Edgar Dale so it sounds authoritative", why:"Dale’s Cone of Experience contained no percentages. Crediting him would add a false citation to a false claim."}
@@ -497,9 +497,9 @@ ICA.addUnit({
       ["The organisation’s logo on the title slide","The organisation’s name","The logo’s job is to identify the organisation, so its name is what matters."]
     ]},
     {id:"t1u10-l3-x5", type:"mcq", q:"Tomás inserted a video from his laptop’s Downloads folder as a link, then copied only the deck file to the venue’s computer. The video won’t play. What went wrong?", options:[
-      {t:"The deck only pointed to the video’s location on his laptop, and the video wasn’t copied", ok:true, why:"A linked video isn’t inside the deck. On another computer the link points nowhere. Embed it, or copy the video alongside and relink it, and test on the presenting computer."},
+      {t:"The deck only linked to the video, which wasn’t copied", ok:true, why:"The deck only pointed to the video’s location on his laptop. A linked video isn’t inside the deck, so on another computer the link points nowhere. Embed it, or copy the video alongside and relink it, and test on the presenting computer."},
       {t:"Presentation apps can’t play video at all", why:"They can. The problem is where this particular video was stored."},
-      {t:"The venue’s screen is the wrong aspect ratio", why:"The aspect ratio affects the shape of the picture, not whether a video plays."},
+      {t:"The venue’s screen has the wrong aspect ratio for video", why:"The aspect ratio affects the shape of the picture, not whether a video plays."},
       {t:"He needed to add captions first", why:"Captions matter for accessibility, but missing captions don’t stop a video playing."}
     ]},
     {id:"t1u10-l3-x6", type:"order", q:"Put the steps for turning a table of figures into a chart slide in order.", items:[
@@ -655,7 +655,7 @@ ICA.addUnit({
       {v:2.3, tol:0.05, why:"Two slips: 30 seconds was read as 0.3 minutes, and the question time was forgotten."}
     ]},
     {id:"t1u10-l4-x5", type:"mcq", q:"Fatima will present her Google Slides deck in a meeting room. One colleague is hard of hearing. Which plan helps most?", options:[
-      {t:"Turn on Slides’ live captions, test the microphone first, and put key names and terms on the slides", ok:true, why:"Captions show her words as she speaks, a tested microphone improves accuracy, and written terms help where automatic captions get names wrong."},
+      {t:"Turn on Slides’ live captions and put key terms on slides", ok:true, why:"She should also test the microphone first. Captions show her words as she speaks, a tested microphone improves accuracy, and written terms help where automatic captions get names wrong."},
       {t:"Speak louder and skip the captions", why:"Volume alone may not be enough, and shouting is tiring for everyone. Captions give a text version of the talk."},
       {t:"Turn on captions and rely on them completely without checking", why:"Automatic captions make mistakes, especially with names and technical terms. They need a good microphone and back-up on the slides."},
       {t:"Email the slides afterwards instead", why:"Sending slides later is useful, but her colleague would miss the talk itself as it happens."}
@@ -833,21 +833,21 @@ ICA.addUnit({
       "."
     ]},
     {id:"t1u10-l5-x5", type:"mcq", q:"Priya’s 16:9 deck is shown on an older 4:3 projector at the village hall. What will happen?", options:[
-      {t:"The whole slide shows, with empty bands above and below, so it looks a little smaller", ok:true, why:"A 16:9 slide fits the width of a 4:3 screen, leaving bands top and bottom. Nothing is cut off."},
-      {t:"The left and right edges of every slide are cut off", why:"Presentation software scales the slide to fit; it doesn’t crop it."},
+      {t:"The whole slide shows, with empty bands above and below", ok:true, why:"A 16:9 slide fits the width of a 4:3 screen, leaving bands top and bottom, so it looks a little smaller. Nothing is cut off."},
+      {t:"The left and right edges of every single slide are cut off", why:"Presentation software scales the slide to fit; it doesn’t crop it."},
       {t:"The slides won’t display at all", why:"Mismatched ratios still display; they just don’t fill the screen."},
       {t:"All her text will be stretched taller", why:"The slide keeps its proportions; it isn’t distorted."}
     ]},
     {id:"t1u10-l5-x6", type:"mcq", q:"A screen reader user says Mei’s slide is read as “photo, caption, body text, title”. What should she do?", options:[
-      {t:"Reorder the objects so the title is read first, using the Reading Order pane in PowerPoint (or rebuild with placeholders in other apps)", ok:true, why:"Screen readers follow the reading order, which reflects the order objects were added. Fixing it puts the title first without changing the look."},
-      {t:"Move the title lower on the slide", why:"Position on the slide doesn’t set the reading order, so this changes the look but not what is heard."},
+      {t:"Change the reading order so the title is read first", ok:true, why:"In PowerPoint, use the Reading Order pane (or rebuild with placeholders in other apps). Screen readers follow the reading order, which reflects the order objects were added. Fixing it puts the title first without changing the look."},
+      {t:"Move the title to a different position on the slide", why:"Position on the slide doesn’t set the reading order, so this changes the look but not what is heard."},
       {t:"Make the title bigger and bold", why:"Formatting doesn’t change the reading order."},
       {t:"Delete the caption", why:"That loses information and leaves the title still read after the photo."}
     ]},
     {id:"t1u10-l5-x7", type:"mcq", q:"Kenji’s chart shows “on track” projects in green and “late” projects in red, and nothing else. What is the best fix?", options:[
-      {t:"Add a second signal, such as the words “on track” and “late” or a ✓ and ✗, next to each bar", ok:true, why:"Then the meaning survives for people with colour vision deficiency, on washed-out projectors and in greyscale printouts."},
+      {t:"Add a second signal, such as words or ✓ and ✗", ok:true, why:"Put the words “on track” and “late”, or a ✓ and ✗, next to each bar. Then the meaning survives for people with colour vision deficiency, on washed-out projectors and in greyscale printouts."},
       {t:"Use brighter red and green", why:"Brightness doesn’t help people who can’t tell red from green; the meaning still depends on colour alone."},
-      {t:"Add a colour legend in the corner", why:"A legend still relies on matching colours, which is the problem."},
+      {t:"Add a colour legend in the corner of the chart", why:"A legend still relies on matching colours, which is the problem."},
       {t:"Swap red and green", why:"The two colours are just as hard to tell apart either way round."}
     ]}
    ],
@@ -878,6 +878,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u10-q02","t1u10-q05","t1u10-q11","t1u10-q14","t1u10-q17","t1u10-q21","t1u10-q24","t1u10-q28","t1u10-q31","t1u10-q36","t1u10-q40","t1u10-q44"],
+  cpBank:[
+    {id:"t1u10-cp01", lesson:"t1u10-l1", level:1, q:"A library worker will show colleagues how to check in returned books with a new scanner, step by step. Which kind of presentation is this?", options:[
+      {t:"Persuasive", why:"A persuasive talk tries to convince people to act or decide. Here, the scanner has already been chosen."},
+      {t:"Instructional", ok:true, why:"An instructional talk teaches people to do something. A step-by-step structure with practice suits it."},
+      {t:"Inspirational", why:"An inspirational talk aims to motivate or move people. This one teaches a task."},
+      {t:"Informational", why:"Informational talks share facts so people understand. The goal here is for colleagues to be able to do the task."}
+    ]},
+    {id:"t1u10-cp02", lesson:"t1u10-l2", level:1, q:"On Nuno’s slide, a photo sits in the top-left corner and its caption is in the bottom-right corner. Which design principle does this break?", options:[
+      {t:"Repetition", why:"Repetition is about keeping titles, fonts and colours the same across slides. This problem is about distance."},
+      {t:"Contrast", why:"Contrast makes important things look different. The problem here is that related things are far apart."},
+      {t:"Proximity", ok:true, why:"Proximity means putting related things close together, such as a photo and its caption."},
+      {t:"White space", why:"White space is useful empty space. The issue is that the caption is far from the photo it describes."}
+    ]},
+    {id:"t1u10-cp03", lesson:"t1u10-l4", level:1, q:"In the middle of her talk, Aiko wants the audience to stop looking at the slide and listen to a short story. Which key, in most presentation apps, blacks out the screen?", options:[
+      {t:"B", ok:true, why:"Pressing B blacks the screen, and pressing it again brings the slide back. It pulls attention back to the speaker."},
+      {t:"J", why:"In PowerPoint, J turns live subtitles on and off. It doesn’t black the screen."},
+      {t:"Enter", why:"Enter moves on, or jumps to a slide after typing its number. It doesn’t black the screen."},
+      {t:"Esc", why:"Esc ends the slide show. Aiko wants to pause on a black screen, not stop."}
+    ]},
+    {id:"t1u10-cp04", lesson:"t1u10-l1", level:2, q:"Tunde will present a new shift system to nurses who used the old one for years. His draft has five slides explaining basic terms they already use daily. What should he do?", options:[
+      {t:"Keep them all, because more slides show more effort", why:"Audiences remember clear messages, not slide counts. Repeating basics bores experts."},
+      {t:"Move all five to the start so nobody gets lost", why:"Experts don’t need the basics, wherever they go. Their time is better spent on what changes."},
+      {t:"Cut or shorten them, and focus on what changes for the nurses", ok:true, why:"Plan for the audience: what they already know and what they care about. Experts get bored by basics."},
+      {t:"Turn them into a long handout for the nurses to read during the talk", why:"Reading during the talk competes with listening. And these nurses don’t need the basics at all."}
+    ]},
+    {id:"t1u10-cp05", lesson:"t1u10-l2", level:2, q:"PowerPoint’s accessibility checker reports no problems. But in rehearsal, Leila’s white title over a photo of a bright sky is hard to read. Why did the checker miss it, and what helps?", options:[
+      {t:"The checker can miss text over photos; put the title on a solid colour band", ok:true, why:"Text over a photo can be light on one part and dark on another. A solid band of colour (or a darkened photo) gives steady contrast you can check."},
+      {t:"The checker is always right, so the room’s lights are the only problem", why:"Microsoft says its checker misses some contrast problems. A human check catches them."},
+      {t:"Make the title smaller so less of it covers the sky", why:"Smaller text is harder to read, not easier. The contrast is the problem."},
+      {t:"Add a spinning animation so the title stands out", why:"Movement distracts and doesn’t fix contrast. The text still needs a steady background."}
+    ]},
+    {id:"t1u10-cp06", lesson:"t1u10-l3", level:2, q:"Bruno’s slide chart shows loaves sold on each day of the week. His point is that Sunday sells the most. How should he design the chart?", options:[
+      {t:"Use a 3D pie chart in seven colours with a legend", why:"3D effects distort sizes, and matching seven colours to a legend is slow. Bars compare amounts better."},
+      {t:"Add a line for every product and every week of the year", why:"A slide chart should make one point. Extra lines turn it into a puzzle."},
+      {t:"Keep heavy gridlines and two decimal places so that the chart looks precise", why:"Clutter hides the point. Remove what the audience doesn’t need."},
+      {t:"Use a bar chart, label the Sunday bar, and state the point in the title", ok:true, why:"One point per chart: a simple bar chart, the Sunday bar highlighted with a direct label (not colour alone), and a headline that states the point."}
+    ]},
+    {id:"t1u10-cp07", lesson:"t1u10-l4", level:2, q:"Before her talk, Rosa worries that everyone will see how nervous she is. What does research on the “illusion of transparency” suggest?", options:[
+      {t:"Nerves are obvious to every audience, so she should apologise for them", why:"Research found the opposite: we overestimate how visible our nerves are."},
+      {t:"Her nerves show much less than she thinks, and knowing it helps", ok:true, why:"We overestimate how visible our nerves are. In the study, speakers told this gave speeches that observers rated better, and they felt calmer."},
+      {t:"She should skip rehearsal so she feels more relaxed", why:"Rehearsing aloud is one of the things that does help. Skipping it usually makes nerves worse."},
+      {t:"She should memorise every word so nothing can go wrong", why:"A word-for-word script means any slip can throw her. Prompts and a well-practised opening work better."}
+    ]},
+    {id:"t1u10-cp08", lesson:"t1u10-l5", level:2, q:"Halfway through building a 30-slide deck in 16:9, Leah learns the venue screen is 4:3. She changes the slide size. What should she expect?", options:[
+      {t:"Only the slide she is on will change", why:"Changing the aspect ratio changes every slide at once."},
+      {t:"Nothing changes, because the app adjusts every slide perfectly", why:"The app must stretch, shrink or crop. Content can spill off the slide or become smaller."},
+      {t:"Every slide changes at once, so she must check each one afterwards", ok:true, why:"PowerPoint asks whether to Maximize (content may spill) or Ensure Fit (content shrinks). Either way, check each slide."},
+      {t:"The slides will refuse to display on the 4:3 screen", why:"A mismatch doesn’t stop slides showing. A 16:9 deck on a 4:3 screen just gets empty bands."}
+    ]},
+    {id:"t1u10-cp09", lesson:"t1u10-l5", level:3, q:"Omar’s opening slide shows the talk’s name as an image of hand-drawn lettering, with no title placeholder. The accessibility checker warns that the slide has no title. What is the best fix?", options:[
+      {t:"Ignore the warning, because the lettering already shows the talk’s name clearly", why:"Screen-reader users move through a deck by slide titles. Words inside a picture aren’t a slide title, so this slide has no name for them."},
+      {t:"Type the name in a new text box placed on top of the lettering", why:"A loose text box isn’t treated as the slide’s title, and it would cover the lettering."},
+      {t:"Put the talk’s name into the image’s alt text instead of a title", why:"Alt text describes the image. The slide still needs its own title for navigation."},
+      {t:"Add a title placeholder with the name, moved just off the slide’s edge", ok:true, why:"It counts as the slide’s title for screen readers and navigation, but the audience doesn’t see it, so the lettering stays as designed."}
+    ]},
+    {id:"t1u10-cp10", lesson:"t1u10-l3", level:3, q:"Ewa’s 10-minute talk asks parents to use a new school pick-up zone. To keep it lively, she adds a funny animal photo and a spinning transition to every slide. What is the best advice?", options:[
+      {t:"Keep them; more pictures always help people remember", why:"Irrelevant pictures, called seductive details, can pull attention away from the main point."},
+      {t:"Swap them for visuals that do a job, such as a map of the zone", ok:true, why:"A good visual shows what words can’t, like where the zone is. Movement helps only when it means something, so one subtle transition is plenty."},
+      {t:"Keep the photos but make the transitions faster", why:"Faster spinning still draws the eye to the effect. And the photos still don’t support her message."},
+      {t:"Remove all the visuals and use only full paragraphs of text instead", why:"Text-heavy slides make people read instead of listen. Relevant visuals help."}
+    ]},
+    {id:"t1u10-cp11", lesson:"t1u10-l4", level:3, q:"During Mirela’s online talk, a private chat message pops up on screen, and everyone sees it. She had shared her entire screen. What would have prevented this?", options:[
+      {t:"Sharing the presenter view instead of the slides", why:"Presenter view would show her notes to everyone. It doesn’t stop pop-ups."},
+      {t:"Turning up the meeting volume", why:"Volume has nothing to do with what appears on the shared screen."},
+      {t:"Sharing one window, with notifications turned off", ok:true, why:"Sharing only the slide-show window shows less. Turning on Do not disturb (or a Focus) and closing chat apps stops messages appearing."},
+      {t:"Presenting faster so there is less time for messages to arrive", why:"Speed doesn’t stop notifications. Changing what she shares, and turning notifications off, does."}
+    ]},
+    {id:"t1u10-cp12", lesson:"t1u10-l5", level:3, q:"Joel’s deck will keep changing over the next month. Twenty colleagues need the latest version, and two partners outside his organisation can’t open his shared files. How should he share it?", options:[
+      {t:"Email the deck file to everyone each time it changes", why:"Copies multiply and drift apart, and big decks can bounce off email limits."},
+      {t:"Share an edit link with “anyone with the link” for all of them", why:"Anyone holding the link could change the deck. Colleagues who only need to read it should get view access."},
+      {t:"Print handouts once and post them", why:"Printed copies go out of date as soon as the deck changes."},
+      {t:"Give colleagues a view-only link and the partners a PDF", ok:true, why:"A live link means one copy that is always the latest. A PDF works for people who can’t open the shared file."}
+    ]},
+  ],
   codex:[
    {id:"presentation-planning", title:"Planning a presentation", aka:["audience analysis","main message","storyboard","presentation structure"], tags:["presentations","planning"],
     summary:"Decide who is listening, what should change, and the one message, then storyboard the talk on paper before building slides.",
@@ -1141,9 +1215,9 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t1u10-q01", lesson:"t1u10-l1", level:1, q:"What is the main job of slides in a talk?", options:[
-     {t:"To support the speaker by showing what is easier to see than hear", ok:true, why:"Slides are a visual aid. The speaker explains; the slides show pictures, charts, key words and numbers."},
+     {t:"To show what is easier to see than to hear", ok:true, why:"Slides are a visual aid that supports the speaker. The speaker explains; the slides show pictures, charts, key words and numbers."},
      {t:"To hold every word the speaker will say", why:"Then the audience reads instead of listening, and the speaker becomes a narrator."},
-     {t:"To replace the speaker so the talk can be skipped", why:"If slides can replace the speaker, a document would do the job better."},
+     {t:"To replace the speaker so the talk itself can be skipped", why:"If slides can replace the speaker, a document would do the job better."},
      {t:"To show off the app’s animation effects", why:"Effects that don’t explain anything distract from the message."}
    ]},
    {id:"t1u10-q02", lesson:"t1u10-l1", level:1, q:"Which of these is a main message rather than a topic?", options:[
@@ -1159,7 +1233,7 @@ ICA.addUnit({
      {t:"As everything you know about the topic", why:"Including everything usually buries the message."}
    ]},
    {id:"t1u10-q04", lesson:"t1u10-l1", level:2, q:"Why storyboard on paper before opening the app?", options:[
-     {t:"Boxes are quick to rearrange or discard, and you fix the story before spending time on design", ok:true, why:"Paper keeps the plan cheap to change and stops you decorating slides before the structure works."},
+     {t:"Boxes are easy to move, so you can fix the story first", ok:true, why:"Paper boxes are quick to rearrange or discard, so you fix the story before spending time on design."},
      {t:"Apps can’t create more than ten slides without a storyboard", why:"There is no such limit. The benefit is in the thinking."},
      {t:"Paper storyboards are required for slides to be accessible", why:"Accessibility depends on titles, alt text, contrast and so on, not on paper planning."},
      {t:"It makes the final file smaller", why:"File size depends on pictures and media, not planning."}
@@ -1171,35 +1245,35 @@ ICA.addUnit({
      {t:"About 7", why:"That plans only for the question time, not the talk."}
    ]},
    {id:"t1u10-q06", lesson:"t1u10-l1", level:3, q:"Dmitri’s storyboard headlines read: “Introduction. Background. Data. More data. Conclusion.” What does this suggest?", options:[
-     {t:"The headlines are topics, so the slides probably don’t make clear points; he should rewrite them as short claims", ok:true, why:"Headlines that tell the story on their own (“Repairs fell by half after the change”) are a sign the structure works. Topic labels hide whether it does."},
+     {t:"The headlines are topics; he should rewrite them as claims", ok:true, why:"Topic labels suggest the slides don’t make clear points. Headlines that tell the story on their own (“Repairs fell by half after the change”) are a sign the structure works."},
      {t:"The storyboard is perfect because it follows a standard order", why:"A standard order isn’t enough if no slide says what it shows."},
      {t:"He needs more slides of data", why:"The issue is clarity of each slide’s point, not the amount of data."},
      {t:"He should add a theme before going further", why:"Design comes later. The story isn’t clear yet."}
    ]},
    {id:"t1u10-q07", lesson:"t1u10-l1", level:3, q:"Hana’s manager wants slides that will be emailed to staff and read alone, with no meeting. Which plan fits best?", options:[
-     {t:"Write a short document or PDF with full explanations, since no speaker will be there", ok:true, why:"Slides for talks depend on a speaker. A reading document needs the explanation on the page."},
+     {t:"A short document or PDF with full explanations", ok:true, why:"No speaker will be there. Slides for talks depend on a speaker; a reading document needs the explanation on the page."},
      {t:"Normal talk slides with single-word headlines", why:"Without a speaker, readers won’t know what the words mean."},
      {t:"A video of the slides with background music only", why:"Music explains nothing."},
      {t:"Slides with the full text at 10 pt", why:"That is a document squeezed onto slides, and hard to read."}
    ]},
    {id:"t1u10-q08", lesson:"t1u10-l1", level:2, q:"Which closing is strongest for a persuasive talk asking neighbours to volunteer?", options:[
-     {t:"Restate the message, recap the key points, then ask people to sign up on the sheet by the door tonight", ok:true, why:"It reinforces the message and gives a clear, easy call to action."},
+     {t:"Restate the message, then ask people to sign up by the door", ok:true, why:"Restating the message and recapping the key points reinforces it, and asking people to sign up on the sheet by the door tonight gives a clear, easy call to action."},
      {t:"A slide that says only “Questions?”", why:"Questions can follow, but the close should end on the message and the action."},
      {t:"A new topic the talk hasn’t covered", why:"New material at the end confuses rather than reinforces."},
-     {t:"Thanking the audience and leaving without saying what to do", why:"Politeness is good, but without a call to action people don’t know the next step."}
+     {t:"Thanking the audience and leaving without saying what to do next", why:"Politeness is good, but without a call to action people don’t know the next step."}
    ]},
    {id:"t1u10-q09", lesson:"t1u10-l1", level:3, q:"Kenji’s rehearsal of a 10-minute talk takes 15 minutes. What is the best fix?", options:[
      {t:"Cut or merge whole points until it fits at a normal pace", ok:true, why:"Cutting content keeps the talk clear. Nerves often slow you on the day, so a talk that only fits when rushed will overrun."},
      {t:"Speak faster on the day", why:"Rushed talks are hard to follow and still tend to overrun."},
      {t:"Remove the time for questions", why:"That takes away the audience’s chance to clear up doubts, and the organiser may not allow it."},
-     {t:"Make the text smaller so slides hold more", why:"Smaller text doesn’t shorten the talk and is harder to read."}
+     {t:"Make the text smaller so each slide holds more information", why:"Smaller text doesn’t shorten the talk and is harder to read."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u10-q10", lesson:"t1u10-l2", level:1, q:"What does the slide master do?", options:[
-     {t:"Holds the deck’s design, so a change there updates every slide that uses it", ok:true, why:"Fonts, colours, background and repeated items like a logo live on the master."},
+     {t:"Holds the deck’s design, so one change updates every slide", ok:true, why:"Fonts, colours, background and repeated items like a logo live on the master, and a change there updates every slide that uses it."},
      {t:"Stores the speaker’s notes", why:"Notes are attached to each slide, not the master."},
      {t:"Controls the order of the slides", why:"Order is set in the slide sorter or thumbnail pane."},
-     {t:"Records how long each slide is shown", why:"That is rehearsal timing, not the master."}
+     {t:"Records how long each slide is shown when you rehearse the talk", why:"That is rehearsal timing, not the master."}
    ]},
    {id:"t1u10-q11", lesson:"t1u10-l2", level:1, q:"Under WCAG 2.2 level AA, what is the minimum contrast ratio for normal-size text?", options:[
      {t:"4.5:1", ok:true, why:"Success criterion 1.4.3 sets 4.5:1 for normal text and 3:1 for large text."},
@@ -1214,51 +1288,51 @@ ICA.addUnit({
      {t:"At least 12 point", why:"12 point is normal text and needs 4.5:1."}
    ]},
    {id:"t1u10-q13", lesson:"t1u10-l2", level:2, q:"Why type slide titles into the title placeholder instead of a text box you draw?", options:[
-     {t:"The placeholder text becomes the slide’s real title, follows theme changes, and is used by screen readers and navigation", ok:true, why:"A drawn text box looks the same but isn’t treated as the title and keeps its own formatting."},
+     {t:"It becomes the slide’s real title, used by screen readers", ok:true, why:"Placeholder text becomes the slide’s real title: it follows theme changes and is used by screen readers and navigation. A drawn text box looks the same but isn’t treated as the title and keeps its own formatting."},
      {t:"Text boxes can’t hold bold text", why:"They can. The difference is how the app treats the text."},
      {t:"Placeholders make the file smaller", why:"File size isn’t the reason; behaviour is."},
-     {t:"Drawn text boxes can’t be printed", why:"They print fine. The problems are structure and consistency."}
+     {t:"Text boxes you draw yourself can’t be printed or exported to PDF", why:"They print fine. The problems are structure and consistency."}
    ]},
    {id:"t1u10-q14", lesson:"t1u10-l2", level:2, q:"A checker reports white text on a pale yellow band at 4.47:1, for 16 pt regular text. Does it meet WCAG AA?", options:[
-     {t:"No: normal text needs 4.5:1 and WCAG says not to round up", ok:true, why:"4.47 is below 4.5. Darken the band or the text, or make it large text if the design allows."},
+     {t:"No: normal text needs 4.5:1, with no rounding up", ok:true, why:"WCAG says computed values shouldn’t be rounded, and 4.47 is below 4.5. Darken the band or the text, or make it large text if the design allows."},
      {t:"Yes: 4.47 rounds to 4.5", why:"WCAG explicitly says computed values shouldn’t be rounded."},
      {t:"Yes: 16 pt counts as large text", why:"Large text starts at 18 pt (or 14 pt bold)."},
-     {t:"Contrast rules don’t apply to slides", why:"They are the accepted reference for readable digital content, including slides."}
+     {t:"Contrast rules don’t apply to slides, only to websites", why:"They are the accepted reference for readable digital content, including slides."}
    ]},
    {id:"t1u10-q15", lesson:"t1u10-l2", level:1, q:"How should you treat advice such as “never more than six bullets of six words”?", options:[
-     {t:"As a rule of thumb some presenters find useful, not a standard", ok:true, why:"Heuristics can help, but the real tests are readability and whether the slide supports what you say."},
+     {t:"As a rule of thumb, not a standard", ok:true, why:"Some presenters find it useful. Heuristics can help, but the real tests are readability and whether the slide supports what you say."},
      {t:"As an international accessibility standard", why:"No standard sets bullet counts. WCAG sets things like contrast ratios."},
      {t:"As a legal requirement for workplace slides", why:"There is no such law."},
      {t:"As a feature every app enforces automatically", why:"Apps don’t limit bullets."}
    ]},
    {id:"t1u10-q16", lesson:"t1u10-l2", level:3, q:"Ana uses free PowerPoint for the web and wants every slide title in a new font at once. What can she do?", options:[
-     {t:"Apply a different theme or variant on the Design tab, or open the file in a desktop app that can edit the master", ok:true, why:"PowerPoint for the web can’t open the slide master, so deck-wide changes there come through themes and variants, or another app."},
-     {t:"Choose View → Slide Master in the web version", why:"Microsoft says viewing the slide master isn’t possible in PowerPoint for the web."},
+     {t:"Apply a different theme or variant, or use a desktop app", ok:true, why:"PowerPoint for the web can’t open the slide master, so deck-wide changes come through themes and variants on the Design tab, or by opening the file in a desktop app that can edit the master."},
+     {t:"Choose View → Slide Master in the web version of PowerPoint", why:"Microsoft says viewing the slide master isn’t possible in PowerPoint for the web."},
      {t:"Retype every title in a new text box", why:"That creates loose text boxes that won’t follow the design and aren’t real titles."},
      {t:"It is impossible in any app", why:"The desktop apps, Google Slides, Impress and Keynote can all edit masters or layouts."}
    ]},
    {id:"t1u10-q17", lesson:"t1u10-l2", level:3, q:"Priya’s slides look crisp on her laptop, but in the hall the pale blue text on white is hard to read. What best explains it?", options:[
-     {t:"Projectors in lit rooms wash out colours, so a low-contrast pair becomes even weaker", ok:true, why:"WCAG minimums were written for screens. Slides need more contrast, not less, to survive projection."},
-     {t:"The hall’s projector can’t show the colour blue", why:"Projectors show blue; the problem is contrast."},
+     {t:"Projectors in lit rooms make low contrast even weaker", ok:true, why:"Projectors in lit rooms wash out colours. WCAG minimums were written for screens; slides need more contrast, not less, to survive projection."},
+     {t:"The hall’s projector can’t show the colour blue at all", why:"Projectors show blue; the problem is contrast."},
      {t:"Her font is too modern", why:"Font style matters less than contrast here."},
      {t:"The slide master is broken", why:"The master only sets the design. The design itself has too little contrast for the room."}
    ]},
    {id:"t1u10-q18", lesson:"t1u10-l2", level:2, q:"Why does Microsoft’s Speaker Coach warn presenters who read their slide text aloud?", options:[
-     {t:"Reading the same words the audience is reading splits attention and turns the speaker into a narrator", ok:true, why:"The audience reads ahead and stops listening; the speaker faces the screen. Keep headlines short and explain aloud."},
+     {t:"It splits attention and turns the speaker into a narrator", ok:true, why:"The audience reads the same words ahead and stops listening; the speaker faces the screen. Keep headlines short and explain aloud."},
      {t:"Reading aloud damages the microphone", why:"It doesn’t. The warning is about how people take in information."},
-     {t:"Slide text can’t be read by Speaker Coach", why:"It can detect it; that’s why it warns you."},
+     {t:"Speaker Coach can’t read slide text, so it gets confused by it", why:"It can detect it; that’s why it warns you."},
      {t:"It is against PowerPoint’s licence terms", why:"Nothing in licences covers this. It is presentation advice."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u10-q19", lesson:"t1u10-l3", level:1, q:"Does finding an image through your slides app’s built-in web image search mean you may use it?", options:[
-     {t:"No. You still need to check the image’s licence on its source page", ok:true, why:"Google’s help says it can’t know whether your use is permitted and leaves that check to you."},
+     {t:"No. You still need to check its licence", ok:true, why:"Check the licence on the image’s source page. Google’s help says it can’t know whether your use is permitted and leaves that check to you."},
      {t:"Yes, anything the app finds is licensed", why:"Search finds images; it doesn’t license them."},
-     {t:"Yes, as long as the deck is free", why:"Copyright applies whether or not you charge."},
+     {t:"Yes, as long as the deck is free to view", why:"Copyright applies whether or not you charge."},
      {t:"Only if you resize it", why:"Changing size doesn’t change permission."}
    ]},
    {id:"t1u10-q20", lesson:"t1u10-l3", level:1, q:"What should a chart on a slide do?", options:[
-     {t:"Make one point, stated in the headline, with the key data highlighted", ok:true, why:"The audience sees it for seconds. One clear point is what they can take in."},
-     {t:"Show every value from the spreadsheet", why:"That is a spreadsheet’s job; on a slide it overwhelms."},
+     {t:"Make one point, stated in the headline", ok:true, why:"Highlight the key data. The audience sees it for seconds, and one clear point is what they can take in."},
+     {t:"Show every value from the spreadsheet it came from", why:"That is a spreadsheet’s job; on a slide it overwhelms."},
      {t:"Use 3D to look more impressive", why:"3D distorts sizes and makes comparisons harder."},
      {t:"Use as many colours as possible", why:"Too many colours hide what matters; highlight one thing."}
    ]},
@@ -1269,25 +1343,25 @@ ICA.addUnit({
      {t:"“signups_final_v3.png”", why:"A file name means nothing to a listener."}
    ]},
    {id:"t1u10-q22", lesson:"t1u10-l3", level:1, q:"What is the truth about “people remember 10% of what they read, 20% of what they hear…”?", options:[
-     {t:"The percentages have no research behind them, and they were wrongly attached to Edgar Dale’s Cone of Experience", ok:true, why:"Dale’s cone had no numbers; researchers who traced the figures found no study supporting them."},
+     {t:"They have no research behind them", ok:true, why:"They were wrongly attached to Edgar Dale’s Cone of Experience, which had no numbers; researchers who traced the figures found no study supporting them."},
      {t:"They come from a large, well-known study by Edgar Dale", why:"Dale’s 1946 cone contained no percentages."},
      {t:"They are exact for adults but not children", why:"There is no evidence for the figures at any age."},
      {t:"They are a WCAG requirement", why:"WCAG has nothing to do with these figures."}
    ]},
    {id:"t1u10-q23", lesson:"t1u10-l3", level:2, q:"Why might a linked video fail on the venue’s computer when an embedded one works?", options:[
-     {t:"A linked video stays outside the deck file, so it is missing if only the deck was copied", ok:true, why:"Embedded media travels inside the file; linked media needs the video copied too, or an internet connection for online video."},
+     {t:"A linked video stays outside the deck file", ok:true, why:"If only the deck was copied, the video is missing. Embedded media travels inside the file; linked media needs the video copied too, or an internet connection for online video."},
      {t:"Linked videos only play in a newer version of the app", why:"The app version isn’t the problem: the video file itself was never copied."},
      {t:"Embedded videos are always smaller", why:"Embedded videos make files bigger, not smaller."},
      {t:"Venue computers block all video", why:"The embedded one worked, so video itself isn’t blocked."}
    ]},
    {id:"t1u10-q24", lesson:"t1u10-l3", level:3, q:"Tomás compressed his deck with PowerPoint’s Compress Media after adding caption files to his videos. What should he check?", options:[
-     {t:"Whether the captions are still there, because Microsoft says Compress Media removes caption files", ok:true, why:"Compress first, then add captions, or keep an uncompressed copy."},
+     {t:"Whether the captions are still there", ok:true, why:"Microsoft says Compress Media removes caption files. Compress first, then add captions, or keep an uncompressed copy."},
      {t:"Whether the slide master was deleted", why:"Compressing media doesn’t affect the master."},
      {t:"Whether his speaker notes were translated", why:"Compression doesn’t translate notes."},
      {t:"Nothing: compression never changes media", why:"Compression changes the media files, and Microsoft documents that captions are removed."}
    ]},
    {id:"t1u10-q25", lesson:"t1u10-l3", level:2, q:"Lucía wants to use a photo licensed CC BY-NC in slides for a paid workshop she runs as a business. What is the issue?", options:[
-     {t:"NC means non-commercial, so a paid business workshop may fall outside the licence; she should find another image or ask permission", ok:true, why:"The NC condition restricts commercial use. When in doubt, choose an image with a licence that clearly allows it."},
+     {t:"NC means non-commercial, so this use may not be allowed", ok:true, why:"A paid business workshop may fall outside the licence, so she should find another image or ask permission. The NC condition restricts commercial use."},
      {t:"No issue, because any Creative Commons image can be used for anything", why:"CC licences have conditions; NC limits commercial use."},
      {t:"No issue if she removes the credit", why:"Removing credit breaks the licence further; BY requires attribution."},
      {t:"No issue if she crops the photo", why:"Cropping doesn’t change the licence conditions."}
@@ -1299,8 +1373,8 @@ ICA.addUnit({
      {t:"When it delays each word by a few seconds", why:"That slows the talk without adding meaning."}
    ]},
    {id:"t1u10-q27", lesson:"t1u10-l3", level:3, q:"Fatima’s slide shows a stock photo of a smiling team in suits beside her point about volunteer rotas. What is the best advice?", options:[
-     {t:"Replace it with something that shows the point, such as a simple rota diagram, or leave the space empty", ok:true, why:"Decorative pictures can pull attention away from the message. A relevant visual or white space works better."},
-     {t:"Keep it; any photo makes slides more memorable", why:"Irrelevant pictures don’t aid memory of the point and can distract."},
+     {t:"Replace it with a visual that shows the point, or leave space", ok:true, why:"Something such as a simple rota diagram shows the point. Decorative pictures can pull attention away from the message; a relevant visual or white space works better."},
+     {t:"Keep it, because any photo makes slides more memorable for people", why:"Irrelevant pictures don’t aid memory of the point and can distract."},
      {t:"Add three more stock photos for balance", why:"More decoration makes the distraction worse."},
      {t:"Animate the photo to spin in", why:"Motion draws even more attention to the irrelevant picture."}
    ]},
@@ -1312,8 +1386,8 @@ ICA.addUnit({
      {t:"The audience’s webcams", why:"That is the meeting app, not presenter view."}
    ]},
    {id:"t1u10-q29", lesson:"t1u10-l4", level:1, q:"Which kind of speaker notes usually works best?", options:[
-     {t:"Short prompts: the point, an example, a number, the link to the next slide", ok:true, why:"Prompts let you glance and talk. A full script tempts you to read."},
-     {t:"A full word-for-word script for every slide", why:"Reading a script usually sounds flat and is easy to lose your place in."},
+     {t:"Short prompts: the point, an example, a number", ok:true, why:"Prompts such as the point, an example, a number and the link to the next slide let you glance and talk. A full script tempts you to read."},
+     {t:"A full word-for-word script written out for every slide", why:"Reading a script usually sounds flat and is easy to lose your place in."},
      {t:"A copy of the slide text", why:"That adds nothing you can’t already see."},
      {t:"Private comments about audience members", why:"Notes travel with the file and may be seen. Never write anything you wouldn’t say."}
    ]},
@@ -1324,38 +1398,38 @@ ICA.addUnit({
      {t:"A Microsoft account", why:"LibreOffice doesn’t use Microsoft accounts."}
    ]},
    {id:"t1u10-q31", lesson:"t1u10-l4", level:2, q:"Sione has one screen and presents online. What should he share?", options:[
-     {t:"A window running the slide show (for example PowerPoint’s “Browsed by an individual (window)” mode), not his whole screen", ok:true, why:"Sharing just the slide window hides notifications and private windows and lets him still see the meeting."},
+     {t:"A window running the slide show, not his whole screen", ok:true, why:"For example, PowerPoint’s “Browsed by an individual (window)” mode. Sharing just the slide window hides notifications and private windows and lets him still see the meeting."},
      {t:"His entire screen, with email open in case questions arrive", why:"Everything on screen is shared, including messages that pop up."},
      {t:"Presenter view, so people can read his notes", why:"Notes are for him, and the slide appears small."},
      {t:"Nothing; he should describe the slides aloud", why:"That loses the visual aid entirely."}
    ]},
    {id:"t1u10-q32", lesson:"t1u10-l4", level:2, q:"What do PowerPoint’s live subtitles need to work well?", options:[
-     {t:"A reliable internet connection and a good microphone; speech is sent to Microsoft’s speech service", ok:true, why:"Microsoft says the feature relies on a cloud speech service, recommends a headset microphone and notes your speech is sent to Microsoft."},
-     {t:"Nothing: they work offline on any computer", why:"They rely on a cloud service, so a connection is needed."},
+     {t:"A reliable internet connection and a good microphone", ok:true, why:"The feature relies on Microsoft’s cloud speech service, so your speech is sent to Microsoft. Microsoft recommends a headset microphone."},
+     {t:"Nothing special, because they work offline on any computer", why:"They rely on a cloud service, so a connection is needed."},
      {t:"A second monitor", why:"Subtitles work on one screen."},
      {t:"A slide master with captions turned on", why:"Subtitles are set in Subtitle Settings, not the master."}
    ]},
    {id:"t1u10-q33", lesson:"t1u10-l4", level:3, q:"Amara is very nervous before a talk. Which tip has the best evidence behind it?", options:[
-     {t:"Rehearse aloud in realistic conditions, and remember that nerves show far less than they feel", ok:true, why:"Rehearsal builds familiarity, and research on the illusion of transparency found that knowing about it improved speeches."},
+     {t:"Rehearse aloud, and remember nerves show less than they feel", ok:true, why:"Rehearsing aloud in realistic conditions builds familiarity, and research on the illusion of transparency found that knowing about it improved speeches."},
      {t:"Avoid rehearsing so she doesn’t overthink it", why:"Skipping rehearsal means discovering problems in front of the audience."},
      {t:"Memorise every word so she never has to think", why:"Word-for-word memorising is fragile: one slip can derail the whole talk."},
      {t:"Tell herself the audience can see how scared she is, so she tries harder", why:"That belief is the illusion of transparency, and it tends to make anxiety worse."}
    ]},
    {id:"t1u10-q34", lesson:"t1u10-l4", level:3, q:"Halfway through an online talk, Oluwaseun’s audience hears no sound from his video. He is sharing a window in Google Meet. What is the likely fix?", options:[
-     {t:"Share the sound as well: in Meet, present a Chrome tab (which shares tab audio) or turn on system audio when sharing a window or screen", ok:true, why:"Google’s help says window and full-screen sharing need system audio turned on; tab sharing includes the tab’s audio."},
-     {t:"Turn up the volume on his laptop", why:"The audience can’t hear what isn’t being shared, however loud it is locally."},
+     {t:"Share the sound too: present a tab or turn on system audio", ok:true, why:"In Meet, presenting a Chrome tab shares the tab’s audio; Google’s help says window and full-screen sharing need system audio turned on."},
+     {t:"Turn up the volume on his own laptop so the audience can hear", why:"The audience can’t hear what isn’t being shared, however loud it is locally."},
      {t:"Switch to presenter view", why:"Presenter view doesn’t send sound to the meeting."},
      {t:"Add captions to the video", why:"Captions help, but they don’t fix missing audio."}
    ]},
    {id:"t1u10-q35", lesson:"t1u10-l4", level:2, q:"Why repeat or rephrase an audience question before answering?", options:[
-     {t:"So the whole room, remote listeners and any recording hear what you are answering", ok:true, why:"Questions from the floor often aren’t picked up by microphones or heard at the back."},
+     {t:"So everyone, including remote listeners, hears the question", ok:true, why:"Questions from the floor often aren’t picked up by microphones or heard at the back, so repeating helps the whole room, remote listeners and any recording."},
      {t:"To use up time", why:"Repeating briefly isn’t about time; it is about everyone hearing the question."},
      {t:"Because you must never answer the first time", why:"There is no such rule; repetition is for clarity."},
-     {t:"To change the question into an easier one", why:"Rephrasing should be faithful, not a way to dodge."}
+     {t:"To change the question into an easier one that you can answer", why:"Rephrasing should be faithful, not a way to dodge."}
    ]},
    {id:"t1u10-q36", lesson:"t1u10-l4", level:3, q:"Mei’s talk uses Keynote, and a colleague who is hard of hearing will join online. What is the best way to provide live captions?", options:[
-     {t:"Use the meeting app’s live captions (or the computer’s own captions), and put key names and terms on the slides", ok:true, why:"Keynote has no built-in live captions, but most meeting apps do, and everyone can turn them on. Written terms help when captions get names wrong."},
-     {t:"Turn on Keynote’s Subtitle Settings", why:"That is a PowerPoint feature; Keynote doesn’t have built-in live captions."},
+     {t:"Use the meeting app’s live captions, plus key terms on slides", ok:true, why:"Keynote has no built-in live captions, but most meeting apps do (or the computer’s own captions), and everyone can turn them on. Written names and terms help when captions get them wrong."},
+     {t:"Turn on Keynote’s Subtitle Settings before the meeting starts", why:"That is a PowerPoint feature; Keynote doesn’t have built-in live captions."},
      {t:"Speak more slowly and skip captions", why:"Pace helps a little, but captions give a text version of the talk."},
      {t:"Send the slides afterwards only", why:"Useful, but the colleague would miss the talk itself."}
    ]},
@@ -1367,10 +1441,10 @@ ICA.addUnit({
      {t:"View → Slide Master", why:"That edits the deck’s design."}
    ]},
    {id:"t1u10-q38", lesson:"t1u10-l5", level:1, q:"Why should every slide have a unique title, even if it is hidden?", options:[
-     {t:"Screen reader users navigate by slide titles, and identical or missing titles leave them lost", ok:true, why:"Microsoft recommends a unique, descriptive title on every slide; a title can be moved off the slide if the design needs it hidden."},
+     {t:"Screen reader users navigate by slide titles", ok:true, why:"Identical or missing titles leave them lost. Microsoft recommends a unique, descriptive title on every slide; a title can be moved off the slide if the design needs it hidden."},
      {t:"Titles make the file smaller", why:"Titles don’t affect file size meaningfully."},
      {t:"Apps won’t save a deck without titles", why:"They will; the problem is accessibility and navigation."},
-     {t:"Titles are needed for transitions to work", why:"Transitions work without titles."}
+     {t:"Titles are needed for slide transitions to work", why:"Transitions work without titles."}
    ]},
    {id:"t1u10-q39", lesson:"t1u10-l5", level:1, q:"What usually decides the order in which a screen reader reads objects on a slide?", options:[
      {t:"The reading order, which usually follows the order objects were added", ok:true, why:"It may not match where objects sit, so check it in PowerPoint’s Reading Order pane, or build with placeholders."},
@@ -1385,7 +1459,7 @@ ICA.addUnit({
      {t:"About 2 MB", why:"Far too small: the rate is per second, over 120 seconds."}
    ]},
    {id:"t1u10-q41", lesson:"t1u10-l5", level:2, q:"Which is a good reason to share a PDF rather than a live link?", options:[
-     {t:"You want a fixed final version that opens anywhere and can’t be accidentally edited", ok:true, why:"A PDF keeps the layout and fonts; a link gives the latest version and control over access."},
+     {t:"You want a fixed final version that opens anywhere", ok:true, why:"A PDF keeps the layout and fonts and can’t be accidentally edited; a link gives the latest version and control over access."},
      {t:"You want several people editing together this week", why:"That needs a shared link with edit permission."},
      {t:"You want the animations to play", why:"PDFs don’t keep animations or video."},
      {t:"You want to update it later and have everyone see the change", why:"A PDF is a snapshot; only a live link updates."}
@@ -1397,19 +1471,19 @@ ICA.addUnit({
      {t:"The deck refuses to play", why:"Mismatched ratios still play."}
    ]},
    {id:"t1u10-q43", lesson:"t1u10-l5", level:3, q:"Kenji’s chart uses only red for “late” and green for “on time”. A colleague with colour vision deficiency can’t tell them apart. What’s the best fix?", options:[
-     {t:"Add labels or symbols (“late” ✗, “on time” ✓) so colour isn’t the only signal", ok:true, why:"A second signal works for everyone, including on washed-out projectors and greyscale printouts."},
+     {t:"Add labels or symbols, so colour isn’t the only signal", ok:true, why:"For example “late” ✗ and “on time” ✓. A second signal works for everyone, including on washed-out projectors and greyscale printouts."},
      {t:"Make the red brighter", why:"Brightness doesn’t fix colour-only meaning for someone who can’t distinguish the hues."},
-     {t:"Add a colour legend", why:"A legend still depends on matching colours."},
+     {t:"Add a colour legend that explains what red and green mean", why:"A legend still depends on matching colours."},
      {t:"Use two shades of green", why:"Two similar colours are even harder to tell apart."}
    ]},
    {id:"t1u10-q44", lesson:"t1u10-l5", level:3, q:"Before emailing her deck to another organisation, what should Ana check that people often forget?", options:[
-     {t:"The speaker notes, comments and hidden slides, because they travel with the file", ok:true, why:"Private notes or comments can reach the recipients. PowerPoint’s Inspect Document can find and remove them."},
-     {t:"Whether the transitions are all the same", why:"Consistency is nice, but it isn’t a risk when sharing."},
+     {t:"The speaker notes, comments and hidden slides", ok:true, why:"They travel with the file, so private notes or comments can reach the recipients. PowerPoint’s Inspect Document can find and remove them."},
+     {t:"Whether the transitions are all the same style", why:"Consistency is nice, but it isn’t a risk when sharing."},
      {t:"Whether the file name is in capitals", why:"File name style isn’t the risk here."},
      {t:"Whether the slide numbers start at 1", why:"Minor, and not a privacy or accessibility risk."}
    ]},
    {id:"t1u10-q45", lesson:"t1u10-l5", level:3, q:"Lucía made her deck in Google Slides and wants a quick accessibility check. What should she know?", options:[
-     {t:"Google Slides has no built-in accessibility checker, so she should check titles, alt text, contrast, colour use and link text by hand", ok:true, why:"Google’s help covers alt text, contrast and links but doesn’t offer a checker, so a manual list is the way."},
+     {t:"It has no built-in checker, so she must check by hand", ok:true, why:"Google Slides has no built-in accessibility checker, so she should check titles, alt text, contrast, colour use and link text by hand. Google’s help covers alt text, contrast and links but doesn’t offer a checker."},
      {t:"She can run Review → Check Accessibility in Google Slides", why:"That is PowerPoint’s menu, not Google Slides’."},
      {t:"Google Slides decks are automatically accessible", why:"Accessibility depends on how the deck is built."},
      {t:"Accessibility checks only matter for printed handouts", why:"They matter most for people using the deck on screen, such as screen reader users."}

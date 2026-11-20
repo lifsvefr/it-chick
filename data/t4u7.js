@@ -94,8 +94,8 @@ ICA.addUnit({
       {t:"What does a weekly market mean to the older people who visit it?", b:0, why:"Meaning to participants is qualitative territory."}
     ]},
     {id:"t4u7-l1-x2", type:"mcq", q:"Kenji interviews 18 delivery riders in one city about how they deal with app ratings. Which claim can his study support?", options:[
-      {t:"Riders described several strategies, such as avoiding certain neighbourhoods, and explained why.", ok:true, why:"Yes. Qualitative findings describe what participants experienced and how, with their reasons, without turning them into population percentages."},
-      {t:"61% of delivery riders in the country avoid certain neighbourhoods.", why:"18 purposively chosen riders can’t estimate a national percentage. That needs a representative survey."},
+      {t:"Riders described strategies, such as avoiding certain neighbourhoods, and why.", ok:true, why:"Yes. Qualitative findings describe what participants experienced and how, with their reasons, without turning them into population percentages."},
+      {t:"61% of delivery riders in the whole country avoid certain neighbourhoods at night.", why:"18 purposively chosen riders can’t estimate a national percentage. That needs a representative survey."},
       {t:"App ratings cause riders to avoid neighbourhoods.", why:"Interviews can show how riders explain their choices, but measuring a causal effect needs a different design."},
       {t:"His findings are invalid because 18 is too few people.", why:"For an in-depth interview study, 18 can be plenty. Sample size is judged against the question and the claims made."}
     ]},
@@ -118,7 +118,7 @@ ICA.addUnit({
       {t:"Readers should consider whether the carers’ situations resemble those in their own area.", flag:false, why:"Exactly right: readers judge how far findings transfer to their own setting."}
     ]},
     {id:"t4u7-l1-x5", type:"mcq", q:"Fatima, a nurse, plans to interview nurses on her own ward about workload. What is the best way to handle her insider position?", options:[
-      {t:"Reflect on it in a journal, plan how it might shape answers, and report it in her methods section", ok:true, why:"That is reflexivity: accounting for the researcher’s position rather than pretending it doesn’t exist."},
+      {t:"Reflect on it in a journal, and report it in her methods section", ok:true, why:"She should also plan how it might shape answers. That is reflexivity: accounting for the researcher’s position rather than pretending it doesn’t exist."},
       {t:"Hide that she is a nurse so participants treat her as neutral", why:"Concealing her role would be deceptive and wouldn’t remove her influence anyway."},
       {t:"Nothing: insiders produce objective data because they understand the setting", why:"Insider knowledge helps, but it also shapes what people say and what she notices. It needs reflection, not assumption."},
       {t:"Cancel the study: insiders can never do valid qualitative research", why:"Insider research is common and valuable. It needs reflexivity and care (for example about colleagues feeling pressure to take part), not cancellation."}
@@ -261,7 +261,7 @@ ICA.addUnit({
       {v:1000, tol:0, why:"Close, but 10% of 12,000 is 1,200: multiply 12,000 by 0.10."}
     ], hint2:"Multiply the total words by 0.10."},
     {id:"t4u7-l2-x7", type:"mcq", q:"Priya wants to understand how young people in her town talk about mental health among friends: the jokes, the shared words, what’s seen as normal. Which method fits best, and why?", options:[
-      {t:"Focus groups of friends or peers, because the interaction itself shows shared language and norms", ok:true, why:"Focus groups reveal how talk works between people, which is exactly her question. She would still need care, support information and a plan for anyone who becomes upset."},
+      {t:"Focus groups of friends or peers, because the interaction shows shared norms", ok:true, why:"Focus groups reveal how talk works between people, which is exactly her question. She would still need care, support information and a plan for anyone who becomes upset."},
       {t:"A structured questionnaire, because it is quicker", why:"A questionnaire can’t show how people talk with each other or the words they use together."},
       {t:"Individual unstructured interviews only, because groups never work for sensitive topics", why:"Individual interviews suit personal disclosures, but her question is about talk among friends. Groups can work if they discuss general norms rather than personal stories."},
       {t:"Recording conversations in a café without telling anyone", why:"Covert recording breaks consent and is unethical."}
@@ -377,7 +377,7 @@ ICA.addUnit({
       {t:"A very long account of every dish served, in order.", why:"Long isn’t the same as thick. Without meaning and context, length adds little."}
     ]},
     {id:"t4u7-l3-x6", type:"mcq", q:"Ana is studying how patients talk about long waits for surgery and finds a public online forum full of relevant posts. What should she do?", options:[
-      {t:"Check her ethics committee’s and the platform’s rules, and avoid quoting identifiable posts word for word unless she has permission", ok:true, why:"Public posts are still people’s words. A word-for-word quote can be searched back to its author, so care and approval come first."},
+      {t:"Check the ethics and platform rules, and avoid quoting identifiable posts", ok:true, why:"Without permission, she shouldn’t quote identifiable posts word for word. Public posts are still people’s words. A word-for-word quote can be searched back to its author, so care and approval come first."},
       {t:"Copy and publish the most dramatic posts with usernames, because they’re public", why:"Publishing usernames and exact quotes can identify and harm people, especially on health topics."},
       {t:"Join the forum pretending to be a patient to get more stories", why:"Deceiving people to generate data is covert research, which needs strong justification and approval and is rarely allowed."},
       {t:"Ignore online material entirely, because it can never be used in research", why:"Online material is used in research all the time, with appropriate care and approval."}
@@ -507,7 +507,7 @@ ICA.addUnit({
       {t:"Not coding at all, because codes must come only from the data", why:"Codes from theory are a legitimate starting point; many approaches use them."}
     ]},
     {id:"t4u7-l4-x7", type:"mcq", q:"Lucía has 12 interview transcripts and a few photos, no budget, and wants software she can keep using after her course ends. Which choice fits best?", options:[
-      {t:"A free, open-source program such as QualCoder (which handles text and images) or Taguette (text)", ok:true, why:"Free tools cover a small project well and stay available. QualCoder also handles images; Taguette is for text."},
+      {t:"A free, open-source program such as QualCoder or Taguette", ok:true, why:"Free tools cover a small project well and stay available. QualCoder also handles images; Taguette is for text."},
       {t:"Buy the most expensive program, because only paid software produces valid analysis", why:"Validity comes from the analysis, not the price of the software."},
       {t:"Use an AI chatbot to code everything and report what it says", why:"AI suggestions need checking, and uploading transcripts to an outside service may break consent and ethics approval."},
       {t:"No tool can help: qualitative analysis can only be done on paper", why:"Paper works, but software makes retrieving and comparing coded segments much easier."}
@@ -634,15 +634,15 @@ ICA.addUnit({
       {t:"We describe the clinic, its staff and patients in detail so readers can judge relevance to their own settings.", flag:false, why:"Thick description supporting transferability."}
     ]},
     {id:"t4u7-l5-x6", type:"mcq", q:"Sione sends his themes to participants. One replies, “That’s not how I see it at all.” What is the best response?", options:[
-      {t:"Treat the reply as more data: reflect on why the views differ, check the theme against the dataset, and report the disagreement if relevant", ok:true, why:"Member checking feeds reflection. A theme drawing on many people may not match one person’s view and can still be sound, or the reply may reveal a real problem."},
-      {t:"Delete the theme, because any participant disagreement proves it wrong", why:"A member check isn’t a veto. Themes summarise patterns across participants, so one person may not recognise themselves in all of them."},
+      {t:"Treat it as more data: reflect on it and check the theme against the dataset", ok:true, why:"Think about why the views differ, and report the disagreement if relevant. Member checking feeds reflection. A theme drawing on many people may not match one person’s view and can still be sound, or the reply may reveal a real problem."},
+      {t:"Delete the theme, because any disagreement from a participant proves it is wrong", why:"A member check isn’t a veto. Themes summarise patterns across participants, so one person may not recognise themselves in all of them."},
       {t:"Ignore the reply, because participants can’t understand analysis", why:"Dismissing participants is disrespectful and wastes useful information."},
       {t:"Remove that participant’s data from the study", why:"Removing data because it challenges your analysis is a serious integrity problem."}
     ]},
     {id:"t4u7-l5-x7", type:"mcq", q:"Ana studies how teachers in one region respond to a new assessment policy. She interviews teachers, observes staff meetings and reads the policy documents and school guidance. What is she mainly doing, and what does it add?", options:[
-      {t:"Triangulating methods and data sources, so each can test and enrich what the others show", ok:true, why:"Interviews, observation and documents give different angles; agreement builds confidence and differences prompt deeper analysis."},
+      {t:"Triangulating methods and data sources, so each can test the others", ok:true, why:"Interviews, observation and documents give different angles; agreement builds confidence and differences prompt deeper analysis."},
       {t:"Member checking, because she involves teachers", why:"Member checking returns data or findings to participants. She is collecting different kinds of data."},
-      {t:"Collecting more data to reach a statistically significant result", why:"Qualitative studies don’t use significance tests. The aim is different perspectives, not statistical power."},
+      {t:"Collecting more data so that she can reach a statistically significant result", why:"Qualitative studies don’t use significance tests. The aim is different perspectives, not statistical power."},
       {t:"Creating bias, because using several methods mixes things up", why:"Combining methods is a recognised strategy for strengthening credibility."}
     ]}
    ],
@@ -660,6 +660,68 @@ ICA.addUnit({
   ],
 
   checkpoint:["t4u7-q02","t4u7-q06","t4u7-q11","t4u7-q14","t4u7-q17","t4u7-q21","t4u7-q25","t4u7-q29","t4u7-q32","t4u7-q37","t4u7-q40","t4u7-q44"],
+  cpBank:[
+   {id:"t4u7-cp01", lesson:"t4u7-l1", level:1, q:"Which of these is data a researcher **generates** by asking, rather than data that already exists?", options:[
+     {t:"The minutes of a town council’s meetings from 2015 to 2025", why:"Minutes are documents made for the council’s own purposes, without any researcher. They already exist."},
+     {t:"Transcripts of interviews the researcher held with council staff", ok:true, why:"Interviews and focus groups generate data by asking. Without the researcher, these transcripts wouldn’t exist."},
+     {t:"Public forum posts in which residents discuss the council", why:"Online posts happen anyway, for their own audience. They are existing material, used with care."},
+     {t:"Newspaper reports about council decisions", why:"News reports are media documents produced without the researcher. They already exist."}]},
+   {id:"t4u7-cp02", lesson:"t4u7-l2", level:1, q:"Haruto’s draft guide asks: “Don’t you think the new canteen is too expensive?” Which rewrite makes it a good interview question?", options:[
+     {t:"“Isn’t the new canteen too expensive?”", why:"This still pushes towards one answer. It’s a leading question in different words."},
+     {t:"“How expensive and unhealthy is the new canteen?”", why:"This asks two things at once (double-barrelled), and it assumes the food is unhealthy."},
+     {t:"“Do you agree the canteen is overpriced, yes or no?”", why:"A yes/no question gets a one-word answer, and “overpriced” still leads."},
+     {t:"“What do you make of the prices at the new canteen?”", ok:true, why:"It is open, neutral and asks one thing, so the participant can answer in their own words."}]},
+   {id:"t4u7-cp03", lesson:"t4u7-l3", level:1, q:"Leila studies how a street market runs. She mostly watches and takes notes, wears a badge saying she is a researcher, and chats briefly with stallholders. Which observer role is this?", options:[
+     {t:"Complete participant", why:"A complete participant is a full member of the group, and others may not know about the research. Leila doesn’t trade, and her badge makes her role open."},
+     {t:"Participant as observer", why:"This role takes a full part in the activity, openly, such as working on a stall. Leila mostly watches."},
+     {t:"Complete observer", why:"A complete observer only watches, with no contact at all. Leila chats with stallholders."},
+     {t:"Observer as participant", ok:true, why:"She mainly watches, with brief, open contact: the badge and the short chats. It gives easier notes and a more outside view."}]},
+   {id:"t4u7-cp04", lesson:"t4u7-l2", level:2, q:"Sipho wants to understand how market traders experience debt: who they borrow from, the pressures and the shame. Which method fits best?", options:[
+     {t:"One-to-one interviews, since people may hold back in a group", ok:true, why:"Interviews suit sensitive topics and detailed personal stories. In a group, privacy can’t be guaranteed."},
+     {t:"Focus groups, because traders know each other and will speak freely", why:"Knowing each other may make people hold back about debt. Group members can’t be guaranteed to keep things private."},
+     {t:"A structured questionnaire read aloud", why:"A closed questionnaire read aloud is a survey. It won’t capture the pressures and meanings he’s after."},
+     {t:"Observation only, so traders aren’t asked anything", why:"Borrowing and shame are largely private. Watching the market can’t show how people experience debt."}]},
+   {id:"t4u7-cp05", lesson:"t4u7-l4", level:2, q:"Beatriz studies how doctors and patients interrupt each other: the overlaps, pause lengths and emphasis. Which transcription style suits her study?", options:[
+     {t:"Intelligent (clean) verbatim", why:"Clean verbatim removes fillers and false starts. Her analysis needs exactly those details of talk."},
+     {t:"A summary of what each person said", why:"A summary is not a transcript. It loses the overlaps and pauses she wants to study."},
+     {t:"An automatic transcript, used without checking", why:"Automatic drafts miss tone and timing and must always be checked. They don’t record pause lengths or overlaps."},
+     {t:"Detailed notation, such as the Jefferson system", ok:true, why:"Detailed notation records pause lengths, overlaps, emphasis and intonation, which suits close study of talk."}]},
+   {id:"t4u7-cp06", lesson:"t4u7-l4", level:2, q:"A transcript reads: “I’m the only woman harbour pilot in Port Elan, and my brother Kofi says…” What should Grace change before analysis?", options:[
+     {t:"Nothing, as long as the participant’s name isn’t on the file", why:"Details like a rare job, a named place and a relative’s name can identify someone even without their name."},
+     {t:"Delete the whole passage, because it contains personal details", why:"The content may be important. Remove or change the identifying details, not the data."},
+     {t:"Use an ID and change the job, place and brother’s name", ok:true, why:"Transcripts use IDs or pseudonyms, and identifying details such as a rare job title, a named place or a sibling’s name are removed or changed."},
+     {t:"Replace only her brother’s name with a pseudonym", why:"“The only woman harbour pilot in Port Elan” identifies her on its own."}]},
+   {id:"t4u7-cp07", lesson:"t4u7-l3", level:2, q:"Jun is studying how a hospital handles complaints. In interviews, staff say every complaint gets an answer within a week. What could the hospital’s complaint logs add?", options:[
+     {t:"Nothing: documents are less trustworthy than what people say", why:"Every source has a purpose and gaps. Documents aren’t worse; they’re different, and comparing them is useful."},
+     {t:"A separate record, to compare with what staff say", ok:true, why:"Existing documents are nonreactive. Comparing them with interviews is triangulation; a difference would be a prompt to dig deeper."},
+     {t:"Proof of the truth, because official records are always neutral", why:"A document is a made thing, not a window onto the truth. Ask who made it, for whom and why, and what is missing."},
+     {t:"A way to replace the interviews entirely", why:"Logs show what was recorded, not how staff understand complaints. Each source answers something the other can’t."}]},
+   {id:"t4u7-cp08", lesson:"t4u7-l5", level:2, q:"Ana interviews nurses working day, night and weekend shifts, in three different hospitals, to check whether a theme holds across them. Which kind of triangulation is this?", options:[
+     {t:"Investigator triangulation", why:"That uses different researchers. Ana varies her sources, not the researchers."},
+     {t:"Method triangulation", why:"That combines different methods, such as interviews plus observation. Ana uses interviews only."},
+     {t:"Theory triangulation", why:"That looks at data through different theories. Ana is varying people, times and places."},
+     {t:"Data triangulation", ok:true, why:"Denzin’s data triangulation uses different data sources: different people, times and places."}]},
+   {id:"t4u7-cp09", lesson:"t4u7-l5", level:3, q:"Lin’s candidate theme is “Night shifts erode family routines.” But two participants say night shifts gave them more time with their children. What should she do?", options:[
+     {t:"Leave the two accounts out, because most participants agree", why:"Hiding data that don’t fit weakens credibility. Readers should see the whole pattern."},
+     {t:"Drop the theme, because it isn’t true for everyone", why:"A theme is a pattern of shared meaning, not a rule for every person. Contradicting cases help refine it."},
+     {t:"Count the two as errors in the interviews", why:"There’s no sign the interviews went wrong. Different experiences are data to understand."},
+     {t:"Examine the two cases, refine the theme and report them", ok:true, why:"Negative case analysis means actively seeking data that contradict a theme and using them to sharpen it."}]},
+   {id:"t4u7-cp10", lesson:"t4u7-l1", level:3, q:"A report on 14 purposive interviews with teachers states: “64% of teachers feel unsupported by their head teacher.” What is the main problem?", options:[
+     {t:"64% of 14 chosen people reads as a population estimate", ok:true, why:"Qualitative studies can’t estimate how common something is. Careful wording such as “most participants”, with the analysis of why, fits better."},
+     {t:"The percentage should have been rounded to 60%", why:"Rounding doesn’t fix it. The problem is presenting a count from 14 chosen people as if it described all teachers."},
+     {t:"Qualitative studies must never mention numbers", why:"Counts can appear, but they aren’t the point and shouldn’t be dressed up as population estimates."},
+     {t:"14 interviews are too few for any qualitative study", why:"There is no formula for qualitative sample size. The issue is the claim, not the number of interviews."}]},
+   {id:"t4u7-cp11", lesson:"t4u7-l5", level:3, q:"Nour studies how the nine specialist children’s palliative care nurses in her region make end-of-life decisions. A reviewer says qualitative studies always need at least 30 participants. What is the best reply?", options:[
+     {t:"Agree, and add general nurses until she reaches 30 people", why:"General nurses don’t hold the specialist knowledge her narrow question needs. Adding them wouldn’t help."},
+     {t:"Write that “saturation was reached” and leave it at that", why:"Claiming saturation without showing how it was judged is a common weakness."},
+     {t:"Use information power: a narrow aim needs fewer people", ok:true, why:"There are no hard-and-fast rules. Information power ties the number to the aim and to how much relevant information each participant holds."},
+     {t:"Switch to a survey so the numbers look bigger", why:"A survey can’t explore how decisions are made, and nine people are still nine people."}]},
+   {id:"t4u7-cp12", lesson:"t4u7-l4", level:3, q:"After coding 3 of his 20 interviews, Femi groups his codes into a theme, “Work as a hidden second home”, and starts writing up. What is the main problem?", options:[
+     {t:"Themes must come only from codes decided before reading the data", why:"Codes can be inductive, deductive or both. Where the codes came from isn’t the problem."},
+     {t:"Three interviews only suggest a candidate; he must code all 20", ok:true, why:"Coding works through the whole dataset, and themes are developed and reviewed against all of it. Phases loop back when a candidate doesn’t hold."},
+     {t:"Writing should never begin until every phase is finished", why:"Writing is part of the analysis. The problem is building the theme from too little of the data."},
+     {t:"He should count how many times each code appears and report the top three as themes", why:"A theme is a pattern of shared meaning built through interpretation, not simply the most frequent codes."}]},
+  ],
 
   codex:[
    {id:"qualitative-approach", title:"Qualitative research", aka:["qualitative methods","interpretive research"], tags:["research","methods","qualitative"],
@@ -995,35 +1057,35 @@ ICA.addUnit({
      {t:"Does a home-visit programme reduce hospital admissions?", why:"Measuring an effect needs an experimental or quasi-experimental design."},
      {t:"How many hours a week do new parents sleep on average?", why:"An average across a group is a measurement question."}]},
    {id:"t4u7-q02", lesson:"t4u7-l1", level:2, q:"Mei interviewed 15 bus drivers about how they handle aggressive passengers. Which conclusion is appropriate?", options:[
-     {t:"Drivers described several strategies, such as calming talk and calling control, and explained when they used each.", ok:true, why:"It reports what participants described, in depth, without claiming population percentages."},
+     {t:"Drivers described several strategies, such as calming talk, and when they used each.", ok:true, why:"It reports what participants described, in depth, without claiming population percentages."},
      {t:"Most bus drivers nationally use calming talk.", why:"15 purposively chosen drivers can’t support a national claim."},
      {t:"Calming talk causes fewer assaults.", why:"Interviews can’t measure causal effects."},
-     {t:"The study proves nothing because 15 is too few.", why:"15 can be a reasonable size for an in-depth interview study; the claims just have to fit."}]},
+     {t:"The study proves nothing, because 15 drivers are far too few to support any conclusion.", why:"15 can be a reasonable size for an in-depth interview study; the claims just have to fit."}]},
    {id:"t4u7-q03", lesson:"t4u7-l1", level:1, q:"What does “purposive” sampling mean in qualitative research?", options:[
      {t:"Choosing participants deliberately because they can speak to the research question", ok:true, why:"Participants are selected for what they can tell you, not at random."},
      {t:"Choosing participants completely at random", why:"That is random sampling, typical of quantitative surveys."},
      {t:"Interviewing anyone who happens to be nearby", why:"That is convenience sampling, which isn’t chosen for relevance."},
      {t:"Choosing only people who agree with the researcher", why:"That would bias the study. Purposive sampling aims for relevant, often varied, perspectives."}]},
    {id:"t4u7-q04", lesson:"t4u7-l1", level:1, q:"What is reflexivity?", options:[
-     {t:"Examining and reporting how the researcher’s own background and assumptions shape the research", ok:true, why:"That is the core of reflexivity."},
+     {t:"Examining and reporting how the researcher’s own background shapes the research", ok:true, why:"That is the core of reflexivity. This includes the researcher’s assumptions."},
      {t:"Asking participants the same question twice to check reliability", why:"That isn’t reflexivity; it’s about the researcher’s influence, not repeated questions."},
-     {t:"Removing all of the researcher’s opinions so the study is objective", why:"Qualitative researchers accept they can’t remove themselves; reflexivity accounts for their influence instead."},
+     {t:"Removing all of the researcher’s opinions and background so that the study is objective", why:"Qualitative researchers accept they can’t remove themselves; reflexivity accounts for their influence instead."},
      {t:"Reflecting participants’ words back to them during an interview", why:"That describes an echo probe, not reflexivity."}]},
    {id:"t4u7-q05", lesson:"t4u7-l1", level:3, q:"A city wants to know both how common loneliness is among older residents and what makes it better or worse for them. What design fits best?", options:[
-     {t:"Mixed methods: a representative survey for how common it is, plus interviews to understand experiences and causes as people describe them", ok:true, why:"Each method answers the part of the question it is good at."},
+     {t:"Mixed methods: a representative survey plus interviews", ok:true, why:"The survey shows how common loneliness is; interviews show experiences and causes as people describe them. Each method answers the part of the question it is good at."},
      {t:"Only interviews with 20 residents", why:"Interviews can’t estimate how common loneliness is across the city."},
-     {t:"Only a survey with fixed answer options", why:"A survey measures prevalence but is weak at uncovering unexpected reasons and meanings."},
+     {t:"Only a survey with fixed answer options, sent to every older resident", why:"A survey measures prevalence but is weak at uncovering unexpected reasons and meanings."},
      {t:"Only counting visits to community centres", why:"Visits are an indirect measure and say little about loneliness or what affects it."}]},
    {id:"t4u7-q06", lesson:"t4u7-l1", level:2, q:"Which of these is an example of photo elicitation?", options:[
-     {t:"Young people photograph places where they feel welcome, then discuss the photos in interviews", ok:true, why:"Participants’ photos are used to prompt discussion: photo elicitation."},
+     {t:"Young people photograph places where they feel welcome, then discuss the photos", ok:true, why:"Participants’ photos are used to prompt discussion: photo elicitation."},
      {t:"A researcher counts how often adverts show older people", why:"That is content analysis of media."},
-     {t:"A researcher secretly photographs people in a park", why:"That is covert and unethical, not elicitation."},
+     {t:"A researcher secretly photographs people in a park, then analyses the photos", why:"That is covert and unethical, not elicitation."},
      {t:"A survey asks people to rate photos from 1 to 5", why:"Ratings produce numbers; elicitation uses images to prompt conversation."}]},
    {id:"t4u7-q07", lesson:"t4u7-l1", level:3, q:"Priya plans to quote public social media posts word for word in a study about vaccine fears. What is the main risk?", options:[
-     {t:"Searching the quoted words can lead straight to the authors, identifying them on a sensitive topic", ok:true, why:"Exact quotes from public posts are easily traced, so public doesn’t mean risk-free."},
+     {t:"Searching the quoted words can identify the authors on a sensitive topic", ok:true, why:"Exact quotes from public posts are easily traced, so public doesn’t mean risk-free."},
      {t:"Public posts can never be used in research", why:"They can, with care and appropriate approval."},
      {t:"Quotes make research quantitative", why:"Quoting doesn’t change the type of research."},
-     {t:"There is no risk because the posts are already public", why:"Being public doesn’t remove the risk of harm from drawing attention to identifiable people."}]},
+     {t:"There is no risk, because the posts are already public and anyone can read them", why:"Being public doesn’t remove the risk of harm from drawing attention to identifiable people."}]},
    {id:"t4u7-q08", lesson:"t4u7-l1", level:1, q:"Which statement about qualitative research is accurate?", options:[
      {t:"It uses systematic methods and has its own criteria for judging quality", ok:true, why:"Rigour in qualitative research comes from systematic, transparent procedures."},
      {t:"It is just the researcher’s opinion", why:"Good qualitative research is evidence-based and documents how conclusions were reached."},
@@ -1038,7 +1100,7 @@ ICA.addUnit({
    /* Lesson 2 */
    {id:"t4u7-q10", lesson:"t4u7-l2", level:1, q:"What makes an interview semi-structured?", options:[
      {t:"A guide of questions and topics, with freedom to change order and follow up", ok:true, why:"That combination is the definition."},
-     {t:"Identical questions in identical order for everyone", why:"That is structured."},
+     {t:"Identical questions in identical order for everyone, with no follow-up questions", why:"That is structured."},
      {t:"No questions planned at all", why:"That is unstructured."},
      {t:"Only yes/no questions", why:"Closed questions aren’t a defining feature of any qualitative interview type."}]},
    {id:"t4u7-q11", lesson:"t4u7-l2", level:2, q:"Which is the best opening question for an interview about people’s experiences of moving to a new city?", options:[
@@ -1057,8 +1119,8 @@ ICA.addUnit({
      {t:"Fifty to sixty", why:"That would be a questionnaire and couldn’t be covered in depth."},
      {t:"Exactly three", why:"There’s no fixed number; Hurst suggests a range of five to ten."}]},
    {id:"t4u7-q14", lesson:"t4u7-l2", level:3, q:"Ana is interviewing staff about workplace bullying. A participant starts crying. What should she do first?", options:[
-     {t:"Pause, ask if they’d like a break or to stop, and offer information about support", ok:true, why:"Wellbeing comes before data. Consent is ongoing, and the participant can pause or withdraw."},
-     {t:"Move quickly to the next question so the interview stays on schedule", why:"Ignoring distress is harmful and disrespectful."},
+     {t:"Pause, ask if they’d like a break or to stop, and offer support information", ok:true, why:"Wellbeing comes before data. Consent is ongoing, and the participant can pause or withdraw."},
+     {t:"Move quickly on to the next question so that the interview stays on schedule", why:"Ignoring distress is harmful and disrespectful."},
      {t:"Keep probing, because emotional moments give the best data", why:"Data never outweighs a participant’s wellbeing."},
      {t:"End the interview without explanation and delete the recording", why:"Abrupt endings can make things worse. Ask what they want; the data can only be deleted if they withdraw."}]},
    {id:"t4u7-q15", lesson:"t4u7-l2", level:1, q:"According to Hurst, what is a good size for a focus group?", options:[
@@ -1075,29 +1137,29 @@ ICA.addUnit({
      {t:"Interview without recording, take notes, and write them up fully straight away", ok:true, why:"Consent to record is separate; notes are a legitimate alternative."},
      {t:"Record on a hidden device", why:"Covert recording breaks consent."},
      {t:"Refuse to interview them", why:"Unnecessary; useful data can still be gathered through notes."},
-     {t:"Record only the parts you think are most important", why:"Any recording needs consent."}]},
+     {t:"Record only the parts you think are most important, and switch off for the rest", why:"Any recording needs consent."}]},
    {id:"t4u7-q18", lesson:"t4u7-l2", level:3, q:"Fatima tells a focus group, “Everything you say here is guaranteed to stay completely private.” What is wrong with this?", options:[
      {t:"She can’t guarantee that other group members won’t repeat what they heard", ok:true, why:"She can ask members to keep things private, but should be honest that it can’t be guaranteed."},
-     {t:"Nothing: it is a standard and accurate promise", why:"It overpromises, because other participants aren’t bound by her ethics."},
+     {t:"Nothing: it is a standard and accurate promise that every researcher makes", why:"It overpromises, because other participants aren’t bound by her ethics."},
      {t:"Focus groups must always be public", why:"Focus groups aren’t public events; confidentiality is still asked for."},
      {t:"She should say nothing about privacy", why:"Participants need honest information about privacy before agreeing."}]},
 
    /* Lesson 3 */
    {id:"t4u7-q19", lesson:"t4u7-l3", level:1, q:"What are jottings?", options:[
      {t:"Brief notes taken in the field to be expanded later", ok:true, why:"Key words, times and short quotes that act as reminders."},
-     {t:"Finished fieldnotes ready for publication", why:"Full notes are written from jottings afterwards."},
+     {t:"Finished, detailed fieldnotes that are ready for publication", why:"Full notes are written from jottings afterwards."},
      {t:"A type of interview question", why:"Jottings are notes, not questions."},
      {t:"Codes from a codebook", why:"Codes are applied later, during analysis."}]},
    {id:"t4u7-q20", lesson:"t4u7-l3", level:2, q:"Which line belongs in the descriptive column of fieldnotes?", options:[
-     {t:"The teacher wrote three questions on the board and waited about ten seconds before anyone answered.", ok:true, why:"Observable actions, described concretely."},
+     {t:"The teacher wrote three questions on the board and waited about ten seconds.", ok:true, why:"Observable actions, described concretely."},
      {t:"The teacher seemed bored.", why:"An interpretation of feelings: reflection."},
-     {t:"I think the class is afraid of being wrong.", why:"A hunch: reflection."},
+     {t:"I think the class is afraid of being wrong, so nobody wants to be the first to answer.", why:"A hunch: reflection."},
      {t:"This was a badly run lesson.", why:"A judgement: reflection, with the behaviour behind it in the description."}]},
    {id:"t4u7-q21", lesson:"t4u7-l3", level:2, q:"Tomás observed a market for three hours. When should he write his full fieldnotes?", options:[
      {t:"The same day if possible, or the next morning if he is exhausted", ok:true, why:"Memory fades fast; Hurst suggests the same day or the next morning."},
      {t:"At the end of the month, all at once", why:"Most detail would be lost by then."},
      {t:"Never: jottings are enough", why:"Jottings are reminders, not usable data on their own."},
-     {t:"Only once he has a hypothesis to test", why:"Notes are written up after every visit, whatever stage the analysis is at."}]},
+     {t:"Only once he has formed a hypothesis to test against his observations", why:"Notes are written up after every visit, whatever stage the analysis is at."}]},
    {id:"t4u7-q22", lesson:"t4u7-l3", level:1, q:"Who popularised the term “thick description” in a 1973 essay?", options:[
      {t:"Clifford Geertz", ok:true, why:"Geertz popularised it, borrowing the term from the philosopher Gilbert Ryle."},
      {t:"Max Weber", why:"Weber wrote about verstehen (interpretive understanding) but not this term."},
@@ -1114,32 +1176,32 @@ ICA.addUnit({
      {t:"Is it true?", why:"Too simple: it may be accurate but selective. Start with purpose and audience."},
      {t:"Can I quote it without reading it?", why:"Documents need careful reading like any other data."}]},
    {id:"t4u7-q25", lesson:"t4u7-l3", level:3, q:"Lucía’s fieldnote says: “The shop assistant was rude to the customer.” What is the best improvement?", options:[
-     {t:"Describe what was said and done (for example, “She didn’t look up, said ‘Next,’ and turned away”), and move “rude” to her reflections", ok:true, why:"Concrete description lets readers judge; the interpretation stays, but labelled as hers."},
-     {t:"Delete the line, since interpretation isn’t allowed in fieldnotes", why:"Interpretation is welcome, just kept separate from description."},
+     {t:"Describe what was said and done, and move “rude” to her reflections", ok:true, why:"For example: “She didn’t look up, said ‘Next,’ and turned away.” Concrete description lets readers judge; the interpretation stays, but labelled as hers."},
+     {t:"Delete the line completely, since interpretation isn’t allowed in fieldnotes", why:"Interpretation is welcome, just kept separate from description."},
      {t:"Change “rude” to “very rude” for accuracy", why:"That adds emphasis, not evidence."},
      {t:"Ask the customer for their name to follow up", why:"That intrudes on a member of the public and doesn’t fix the note."}]},
    {id:"t4u7-q26", lesson:"t4u7-l3", level:1, q:"Why do researchers keep description and reflection separate in fieldnotes?", options:[
-     {t:"So that what was observed can be told apart from how the researcher interpreted it", ok:true, why:"That keeps interpretations open to checking and revision."},
-     {t:"Because reflection is useless and will be deleted", why:"Reflection is valuable: it feeds memos and reflexivity."},
+     {t:"So what was observed can be told apart from how it was interpreted", ok:true, why:"That keeps interpretations open to checking and revision."},
+     {t:"Because reflection is useless and will be deleted before anyone reads the notes", why:"Reflection is valuable: it feeds memos and reflexivity."},
      {t:"Because ethics committees ban reflection", why:"They don’t; this is about analytic clarity."},
      {t:"To make the notes twice as long", why:"Length isn’t the goal."}]},
    {id:"t4u7-q27", lesson:"t4u7-l3", level:2, q:"Hana wants to observe how people use a public library’s computers. Which plan is ethical for a practice exercise?", options:[
-     {t:"Note general patterns of use from a seat, without photographing anyone, reading their screens or recording names", ok:true, why:"Observing public behaviour in general terms, without intruding, is appropriate for practice."},
+     {t:"Note general patterns of use from a seat, without recording anyone’s details", ok:true, why:"That means no photographs, no reading screens and no names. Observing public behaviour in general terms, without intruding, is appropriate for practice."},
      {t:"Photograph people’s screens to see what they search for", why:"That invades privacy and captures personal information."},
-     {t:"Follow individual users around to note everything they do", why:"Following someone singles them out and could alarm them."},
+     {t:"Follow individual users around the library and note everything they do on screen", why:"Following someone singles them out and could alarm them."},
      {t:"Pretend to be library staff to ask users questions", why:"Deception isn’t acceptable, especially in practice work."}]},
 
    /* Lesson 4 */
    {id:"t4u7-q28", lesson:"t4u7-l4", level:1, q:"What is the difference between verbatim and intelligent verbatim transcription?", options:[
-     {t:"Intelligent verbatim leaves out fillers and false starts but keeps the speaker’s words and meaning", ok:true, why:"That is the defining difference."},
+     {t:"Intelligent verbatim leaves out fillers and false starts but keeps the words", ok:true, why:"That is the defining difference. The speaker’s meaning stays the same."},
      {t:"Intelligent verbatim rewrites answers in better grammar", why:"Clean verbatim doesn’t rewrite or “improve” what people said."},
-     {t:"Verbatim is a summary; intelligent verbatim is word for word", why:"Both are word for word; verbatim keeps even more."},
+     {t:"Verbatim is a summary of each answer; intelligent verbatim is fully word for word", why:"Both are word for word; verbatim keeps even more."},
      {t:"There is no difference", why:"They differ in whether fillers and false starts are kept."}]},
    {id:"t4u7-q29", lesson:"t4u7-l4", level:3, q:"Sione’s consent form says recordings will be “seen only by the research team.” He now wants to use a free online transcription website. What should he do?", options:[
-     {t:"Not upload: using the service would share recordings with a third party, against what participants were told; use a local or approved tool, or seek ethics advice", ok:true, why:"Uploading would break the promise in the consent form."},
+     {t:"Not upload: it would share recordings with a third party, against the consent form", ok:true, why:"Uploading would break the promise in the consent form. Use a local or approved tool, or seek ethics advice."},
      {t:"Upload, because the website is free", why:"Cost doesn’t change the privacy promise he made."},
      {t:"Upload, but don’t tell anyone", why:"Hiding it makes the breach worse."},
-     {t:"Upload only the recordings of participants who spoke quietly", why:"Every recording carries the same promise."}]},
+     {t:"Upload only the recordings of the participants who spoke too quietly to hear clearly", why:"Every recording carries the same promise."}]},
    {id:"t4u7-q30", lesson:"t4u7-l4", level:1, q:"Which is an in vivo code?", options:[
      {t:"“JUST GETTING BY”", ok:true, why:"The participant’s own words, in quotation marks."},
      {t:"FINANCES", why:"A topic label: descriptive."},
@@ -1149,21 +1211,21 @@ ICA.addUnit({
      {t:"CUTTING EVERYDAY COSTS", ok:true, why:"An “-ing” code capturing an action over time."},
      {t:"LUNCH", why:"A noun naming a topic: descriptive."},
      {t:"“SAVE MONEY”", why:"The participant’s words: in vivo."},
-     {t:"TRANSPORT", why:"A topic label: descriptive."}]},
+     {t:"LUNCH AND TRANSPORT COSTS", why:"A topic label: descriptive."}]},
    {id:"t4u7-q32", lesson:"t4u7-l4", level:2, q:"Kenji begins coding with categories from a published model of technology acceptance, then adds codes for issues participants raise that the model doesn’t cover. This is…", options:[
      {t:"A mix of deductive and inductive coding", ok:true, why:"Starting from theory is deductive; adding codes from the data is inductive."},
-     {t:"Only inductive coding", why:"He started with codes from a model, which is deductive."},
+     {t:"Only inductive coding, since he adds new codes", why:"He started with codes from a model, which is deductive."},
      {t:"Only deductive coding", why:"He also added codes from the data."},
      {t:"Thematic analysis phase 6", why:"Phase 6 is writing up, not coding."}]},
    {id:"t4u7-q33", lesson:"t4u7-l4", level:1, q:"What does a codebook entry usually include?", options:[
-     {t:"The code’s name, what it means, when (and when not) to use it, and an example", ok:true, why:"These parts keep coding consistent."},
+     {t:"The code’s name, its meaning, when to use it, and an example", ok:true, why:"“When to use it” includes when not to use it. These parts keep coding consistent."},
      {t:"Only the code’s name", why:"A name alone lets meanings drift."},
-     {t:"Participants’ real names and contact details", why:"Identifying details never belong in a codebook."},
+     {t:"Participants’ real names and contact details, for following up later", why:"Identifying details never belong in a codebook."},
      {t:"The final themes of the study", why:"Themes come later; a codebook records codes."}]},
    {id:"t4u7-q34", lesson:"t4u7-l4", level:3, q:"Priya’s CAQDAS program offers an AI button that suggests codes for all her interview transcripts by sending them to an external AI service. What should she do first?", options:[
-     {t:"Check that her consent forms and ethics approval allow sending transcripts to that service, and treat any suggestions as starting points to check", ok:true, why:"External processing is a data-sharing question, and AI suggestions need checking against the data."},
+     {t:"Check that her consent and ethics approval allow sending transcripts there", ok:true, why:"External processing is a data-sharing question, and AI suggestions need checking against the data. Any suggestions are only starting points to check."},
      {t:"Click it and report the suggested codes as her findings", why:"Suggestions aren’t findings, and sending data may not be allowed."},
-     {t:"Nothing: software features are always approved automatically", why:"Ethics approval covers what you told participants, not what software can do."},
+     {t:"Nothing: software features are always approved automatically by ethics committees", why:"Ethics approval covers what you told participants, not what software can do."},
      {t:"Delete her transcripts so the AI can’t see them", why:"Unnecessary; she just shouldn’t use the feature without checking."}]},
    {id:"t4u7-q35", lesson:"t4u7-l4", level:1, q:"Which of these is free and open-source qualitative analysis software?", options:[
      {t:"QualCoder", ok:true, why:"QualCoder is a free, open-source desktop program."},
@@ -1171,8 +1233,8 @@ ICA.addUnit({
      {t:"MAXQDA", why:"MAXQDA is paid software from VERBI."},
      {t:"ATLAS.ti", why:"ATLAS.ti is paid software, now part of Lumivero."}]},
    {id:"t4u7-q36", lesson:"t4u7-l4", level:2, q:"Why is coding described as a way into analysis rather than the analysis itself?", options:[
-     {t:"Because after coding you still need to compare, interpret and connect codes to answer the question", ok:true, why:"A list of codes isn’t yet a set of findings."},
-     {t:"Because codes are only used in quantitative research", why:"Coding is central to qualitative analysis."},
+     {t:"Because after coding you still need to interpret and connect the codes", ok:true, why:"You still need to compare codes and use them to answer the question. A list of codes isn’t yet a set of findings."},
+     {t:"Because codes are only used in quantitative research, not in interview studies", why:"Coding is central to qualitative analysis."},
      {t:"Because software does the analysis after you code", why:"Software retrieves; people interpret."},
      {t:"Because codes must be deleted before writing up", why:"Codes are kept as part of the audit trail."}]},
 
@@ -1183,9 +1245,9 @@ ICA.addUnit({
      {t:"Producing the report", why:"That was the 2006 name for phase 6."},
      {t:"Coding", why:"That is phase 2."}]},
    {id:"t4u7-q38", lesson:"t4u7-l5", level:2, q:"Which is a theme rather than a topic summary?", options:[
-     {t:"“Care as a debt”: adult children described caring for parents as repaying what they had received, which made asking for help feel like failure", ok:true, why:"A central idea interpreting shared meaning."},
-     {t:"“Caring”: participants talked about caring", why:"Names the topic only."},
-     {t:"“Costs”: some mentioned money, some time", why:"A list under a heading, no shared meaning."},
+     {t:"“Care as a debt”: caring felt like repaying parents, so asking for help felt like failure", ok:true, why:"Adult children described caring for parents as repaying what they had received. A central idea interpreting shared meaning."},
+     {t:"“Caring”: participants talked about caring for their parents in many different ways", why:"Names the topic only."},
+     {t:"“Costs”: some participants mentioned money, some mentioned time, and a few mentioned their health", why:"A list under a heading, no shared meaning."},
      {t:"“Question 4 answers”", why:"Organised by interview question, not interpretation."}]},
    {id:"t4u7-q39", lesson:"t4u7-l5", level:1, q:"Which criterion did Lincoln and Guba propose as the counterpart of external validity?", options:[
      {t:"Transferability", ok:true, why:"Whether findings might apply elsewhere, judged by readers using thick description."},
@@ -1193,34 +1255,34 @@ ICA.addUnit({
      {t:"Dependability", why:"Dependability parallels reliability."},
      {t:"Confirmability", why:"Confirmability parallels objectivity."}]},
    {id:"t4u7-q40", lesson:"t4u7-l5", level:3, q:"A paper says it used reflexive thematic analysis and reports “95% agreement between two coders, confirming the themes.” What is the problem?", options:[
-     {t:"Coder agreement belongs to coding reliability approaches; reflexive TA treats coding as interpretation, so this mixes incompatible assumptions", ok:true, why:"Braun and Clarke warn against exactly this mix."},
+     {t:"Coder agreement belongs to a different approach; reflexive TA treats coding as interpretation", ok:true, why:"Agreement scores belong to coding reliability approaches, so this mixes incompatible assumptions. Braun and Clarke warn against exactly this mix."},
      {t:"95% is too low", why:"The issue isn’t the number but whether agreement fits the approach."},
-     {t:"Thematic analysis should never involve more than one person", why:"Teams can do TA; they just need consistent assumptions."},
+     {t:"Thematic analysis should never involve more than one person, so using a second coder is a flaw", why:"Teams can do TA; they just need consistent assumptions."},
      {t:"There is no problem", why:"The approach and the quality claims don’t match."}]},
    {id:"t4u7-q41", lesson:"t4u7-l5", level:2, q:"In Guest, Bunce and Johnson’s (2006) study of 60 interviews, almost all codes had appeared within the first twelve interviews. What is the most accurate lesson to draw?", options:[
-     {t:"In a fairly similar group all asked the same questions, codes can stop appearing early, but this isn’t a universal rule", ok:true, why:"The finding depended on their sample and design."},
-     {t:"Every qualitative study needs exactly twelve interviews", why:"Sample needs depend on the question, the participants and the approach."},
+     {t:"Codes can stop appearing early in a similar group, but it isn’t a universal rule", ok:true, why:"Their participants were fairly similar and all asked the same questions. The finding depended on their sample and design."},
+     {t:"Every qualitative interview study needs exactly twelve interviews, no more and no fewer", why:"Sample needs depend on the question, the participants and the approach."},
      {t:"Interviews after the twelfth are always wasted", why:"Later interviews may deepen understanding even if they add few new codes."},
      {t:"Saturation is impossible", why:"Their study observed it under particular conditions."}]},
    {id:"t4u7-q42", lesson:"t4u7-l5", level:2, q:"Which is an example of investigator triangulation?", options:[
-     {t:"Two researchers from different backgrounds analyse the same data and discuss their interpretations", ok:true, why:"Using more than one investigator is investigator triangulation (Denzin)."},
+     {t:"Two researchers analyse the same data and discuss their interpretations", ok:true, why:"Ideally they come from different backgrounds. Using more than one investigator is investigator triangulation (Denzin)."},
      {t:"Interviewing the same person twice", why:"That is repeated data collection, not a different investigator."},
      {t:"Using interviews and documents", why:"That is methods or data triangulation."},
-     {t:"Sending themes back to participants", why:"That is member checking."}]},
+     {t:"Sending your themes back to the participants to check whether they agree with them", why:"That is member checking."}]},
    {id:"t4u7-q43", lesson:"t4u7-l5", level:3, q:"Amara sends her themes to participants. Most agree, but one strongly disagrees with a theme. What does this mean?", options:[
-     {t:"It is more data: she should reflect on it, re-check the theme against the dataset, and consider reporting it", ok:true, why:"Member checks inform analysis rather than acting as a vote."},
-     {t:"The theme is automatically wrong and must be removed", why:"A theme summarises a pattern across people; one person may not see themselves in it."},
+     {t:"It is more data: she should reflect on it and re-check the theme", ok:true, why:"She should check the theme against the dataset and consider reporting the disagreement. Member checks inform analysis rather than acting as a vote."},
+     {t:"The theme is automatically wrong and must be removed from the report", why:"A theme summarises a pattern across people; one person may not see themselves in it."},
      {t:"The participant must be removed from the study", why:"Removing inconvenient data is an integrity problem."},
      {t:"Member checking proves the other themes are true", why:"Agreement increases confidence but doesn’t prove truth."}]},
    {id:"t4u7-q44", lesson:"t4u7-l5", level:3, q:"A student writes: “Data collection stopped when saturation was reached.” What would make this stronger?", options:[
-     {t:"Explaining how the decision was judged (for example, what was tracked and what later interviews added) and why the sample suits the question", ok:true, why:"Saturation claims need showing, not just stating, and some approaches prefer other rationales."},
+     {t:"Explaining how the decision was judged and why the sample suits the question", ok:true, why:"For example, say what was tracked and what later interviews added. Saturation claims need showing, not just stating, and some approaches prefer other rationales."},
      {t:"Adding “complete” before “saturation”", why:"A stronger word isn’t evidence."},
-     {t:"Removing any mention of when data collection stopped", why:"Readers need to know the stopping rationale."},
+     {t:"Removing any mention of when or why data collection stopped, to keep it short", why:"Readers need to know the stopping rationale."},
      {t:"Stating that 30 is always enough", why:"There’s no universal number."}]},
    {id:"t4u7-q45", lesson:"t4u7-l5", level:1, q:"What is an audit trail?", options:[
-     {t:"A record of data, notes, codebook versions and decisions that lets someone follow how conclusions were reached", ok:true, why:"It supports dependability and confirmability."},
+     {t:"A record of data, notes and decisions showing how conclusions were reached", ok:true, why:"It includes codebook versions too. It supports dependability and confirmability."},
      {t:"A financial record of research spending", why:"In qualitative research the term means a record of analytic decisions."},
-     {t:"A list of participants’ names and addresses", why:"Identifying details are kept separately and securely, not in an audit trail."},
+     {t:"A list of participants’ names and addresses kept for checking who took part", why:"Identifying details are kept separately and securely, not in an audit trail."},
      {t:"The final published report", why:"The report draws on the audit trail but isn’t it."}]}
   ]
 });

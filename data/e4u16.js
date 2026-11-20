@@ -1,6 +1,6 @@
-/* International Studies · Unit 16 · Environment and climate governance */
+/* International Studies · Unit 17 · Environment and climate governance */
 ICA.addUnit({
-  id:"e4u16", track:"e4", n:16, title:"Environment and climate governance", icon:"🌍",
+  id:"e4u16", track:"e4", n:17, title:"Environment and climate governance", icon:"🌍",
   blurb:"Environmental politics at seminar level: the ideas that frame it (commons, sustainable development, the Anthropocene, planetary boundaries, environmental justice); the UN climate regime from Rio to Paris and the IPCC; climate justice, finance, loss and damage and the 2025 ICJ advisory opinion; ozone, biodiversity, oceans and plastics; and the contested politics of the energy transition, with a method for analysing a climate negotiation. Figures and treaty status as of November 2026.",
   goals:[
     "Use the commons literature (Hardin, Ostrom, polycentric governance) and the ideas of sustainable development, the Anthropocene, planetary boundaries and environmental justice accurately, with their critics",
@@ -46,7 +46,7 @@ ICA.addUnit({
     {h:"Sustainable development: Stockholm to Rio", body:[
       "The 1972 UN Conference on the Human Environment in Stockholm created the UN Environment Programme (UNEP), based in Nairobi. Developing countries feared that environmental rules would block their growth. India’s prime minister Indira Gandhi asked the conference: “Are not poverty and need the greatest polluters?” The same year, *The Limits to Growth* (Meadows and colleagues, for the Club of Rome) used computer models to argue that exponential growth would hit physical limits: the [[limits-to-growth|limits to growth]] debate.",
       "The World Commission on Environment and Development, chaired by Norway’s Gro Harlem Brundtland, tried to join the two concerns. Its report *Our Common Future* (1987) defined [[sustainable-development|sustainable development]] as development “that meets the needs of the present without compromising the ability of future generations to meet their own needs”. Two ideas sit inside it: priority to the needs of the world’s poor, and limits set by technology and social organisation.",
-      "The 1992 Earth Summit in Rio de Janeiro turned this into texts: the climate and biodiversity conventions, Agenda 21 and the Rio Declaration, whose Principle 7 states common but differentiated responsibilities and Principle 15 the [[precautionary-principle|precautionary approach]]. Twenty years later, Rio+20 (2012) launched the process that produced the Sustainable Development Goals (see [[sustainable-development-goals]] and Unit 17).",
+      "The 1992 Earth Summit in Rio de Janeiro turned this into texts: the climate and biodiversity conventions, Agenda 21 and the Rio Declaration, whose Principle 7 states common but differentiated responsibilities and Principle 15 the [[precautionary-principle|precautionary approach]]. Twenty years later, Rio+20 (2012) launched the process that produced the Sustainable Development Goals (see [[sustainable-development-goals]] and Unit 18).",
       {table:[
         ["Position","Core claim","Associated with"],
         ["[[weak-sustainability|Weak sustainability]]","Natural capital can be replaced by human-made capital if total capital does not fall","Neoclassical environmental economics"],
@@ -85,7 +85,7 @@ ICA.addUnit({
       {t:"A stable global climate", b:1, why:"Everyone benefits and no one can be shut out. (The atmosphere’s limited capacity to absorb emissions, by contrast, behaves like a common-pool resource.)"}
     ]},
     {id:"e4u16-l1-x2", type:"mcq", q:"Why did Ciriacy-Wantrup and Bishop (1975) say Hardin’s “tragedy of the commons” was mislabelled?", options:[
-      {t:"Hardin described open access, with no rules or owners; historic commons were usually common property governed by a defined group", ok:true, why:"Right. The distinction between open access and common property is the starting point of the later commons literature, including Ostrom’s."},
+      {t:"Hardin described open access, not common property", ok:true, why:"Right: open access has no rules or owners; historic commons were usually common property governed by a defined group. This distinction is the starting point of the later commons literature, including Ostrom’s."},
       {t:"Hardin got the date of the enclosure movement wrong", why:"Their critique was conceptual, about property regimes, not historical dating."},
       {t:"Pastures are not rival goods", why:"Pastures are rival: grass one animal eats is not available to another."},
       {t:"Only private property can protect a commons", why:"That was close to Hardin’s own conclusion, which their critique questioned."}
@@ -236,8 +236,8 @@ ICA.addUnit({
       ["First global stocktake decision (2023)","Call to contribute to transitioning away from fossil fuels in energy systems","COP28, Dubai."]
     ]},
     {id:"e4u16-l2-x2", type:"mcq", q:"Why is the Copenhagen Accord often described as a turning point, despite the conference’s reputation as a failure?", options:[
-      {t:"It introduced national pledges from developed and developing countries alike, the approach Paris later formalised", ok:true, why:"Right. Bodansky and others see it as the move from top-down targets to pledge and review."},
-      {t:"It was adopted unanimously as a binding treaty", why:"The COP only took note of it; it was neither adopted by consensus nor binding."},
+      {t:"It brought in pledges from developing countries too", ok:true, why:"Right: pledges from developed and developing countries alike, the approach Paris later formalised. Bodansky and others see it as the move from top-down targets to pledge and review."},
+      {t:"It was adopted unanimously as a binding treaty text", why:"The COP only took note of it; it was neither adopted by consensus nor binding."},
       {t:"It created the IPCC", why:"The IPCC dates from 1988."},
       {t:"It set binding targets for China and India", why:"No such targets were set; pledges were voluntary."}
     ]},
@@ -261,10 +261,10 @@ ICA.addUnit({
       {v:160, tol:0, why:"That adds the two numbers; budgets are divided by the annual rate."}
     ]},
     {id:"e4u16-l2-x6", type:"mcq", q:"Mei is writing about why the IPCC could not agree its AR7 timeline. Which summary is accurate and neutral?", options:[
-      {t:"Many developed and vulnerable countries wanted reports by 2028 to inform the second global stocktake; some governments, including Saudi Arabia, India and Russia, favoured a later schedule, citing scientific rigour and inclusiveness", ok:true, why:"Right: it gives both positions and the reasons each side gives, without endorsing either."},
+      {t:"Many wanted reports by 2028; others, including India and Russia, wanted later ones, citing rigour", ok:true, why:"Right. Many developed and vulnerable countries wanted reports by 2028 to inform the second global stocktake; some governments, including Saudi Arabia, India and Russia, favoured a later schedule, citing scientific rigour and inclusiveness. It gives both positions and reasons without endorsing either."},
       {t:"Scientists refused to write the reports on time", why:"The disagreement was among governments in the plenary, not a refusal by authors."},
       {t:"All governments agreed but the budget ran out", why:"Funding pressures exist, but the core problem was the lack of consensus on the timeline."},
-      {t:"Oil-producing states blocked science because they reject climate change", why:"That attributes motives rather than reporting stated positions; a neutral summary says what each side argues."}
+      {t:"Oil-producing states blocked the reports because their governments reject the science of climate change", why:"That attributes motives rather than reporting stated positions; a neutral summary says what each side argues."}
     ]},
     {id:"e4u16-l2-x7", type:"spot", q:"A news paragraph about climate figures. Tap each sentence that is **wrong or misleading**.", ask:"is wrong or misleading", parts:[
       {t:"WMO estimates that 2024 was about 1.55 °C warmer than the 1850–1900 average.", flag:false, why:"Correct, with an uncertainty of ± 0.13 °C."},
@@ -333,7 +333,7 @@ ICA.addUnit({
       "Under the UNFCCC and Article 9 of Paris, developed countries are to provide finance to developing countries. At Copenhagen (2009) they set a goal of mobilising 100 billion US dollars a year by 2020. The OECD reported that they first met it in 2022, two years late, with 115.9 billion dollars provided and mobilised. Critics, including NGOs such as Oxfam, argue that counting loans at face value overstates the real effort; donors reply that loans from development banks are a legitimate and efficient tool.",
       "At COP29 in Baku (November 2024) parties agreed the [[new-collective-quantified-goal|New Collective Quantified Goal]] (NCQG): developed countries “taking the lead” in mobilising **at least 300 billion dollars a year by 2035** for developing countries, from many sources, public and private. A wider call asks all actors to scale up finance to at least 1.3 trillion dollars a year by 2035. India’s delegate objected strongly in the closing plenary, and several developing-country groups called the sum far too low; developed countries called it a realistic floor.",
       {fig:'<svg viewBox="0 0 340 300"><text x="10" y="24">Finance goals for developing countries</text><text class="s" x="10" y="42">(US dollars a year; bars drawn to scale)</text><rect class="d-soft" x="10" y="80" width="23" height="28" stroke-width="2"/><text x="42" y="99">100 billion by 2020</text><text class="s" x="10" y="70">Copenhagen goal (2009)</text><text class="s" x="42" y="122">OECD: first met in 2022</text><rect class="d-gold" x="10" y="160" width="69" height="28" stroke-width="2"/><text x="88" y="179">at least 300 billion</text><text class="s" x="10" y="150">NCQG (COP29, 2024)</text><text class="s" x="88" y="202">by 2035; developed countries</text><text class="s" x="88" y="218">take the lead</text><rect class="d-sage" x="10" y="250" width="300" height="28" stroke-width="2"/><text x="160" y="269" text-anchor="middle">1.3 trillion by 2035</text><text class="s" x="10" y="240">Call to all actors, public and private</text><text class="s" x="10" y="294">Each bar’s length matches its dollar value.</text></svg>', alt:"Three horizontal bars drawn to scale. A short bar for the Copenhagen goal of 100 billion dollars a year by 2020, first met in 2022 according to the OECD. A bar three times longer for the COP29 goal of at least 300 billion dollars a year by 2035, with developed countries taking the lead. A long bar for the call to all actors, public and private, to reach 1.3 trillion dollars a year by 2035.", cap:"The step from 100 billion to 300 billion is threefold in nominal terms; inflation means the real increase is smaller."},
-      "COP30 in Belém (November 2025) added a call for efforts to at least triple [[adaptation-finance|adaptation finance]] by 2035, without stating a baseline, and adopted voluntary indicators for the [[global-goal-on-adaptation|global goal on adaptation]]. Finance debates now run through other bodies too: reform of multilateral development banks, debt relief and [[debt-swap|debt-for-nature or debt-for-climate swaps]], [[climate-resilient-debt-clause|climate-resilient debt clauses]] that pause repayments after a disaster (Unit 15), and reform campaigns such as Barbados’s Bridgetown Initiative (Unit 13). Who counts as a contributor is itself disputed: some developed countries want large emerging economies such as China to join the donor base; those countries reply that the Convention places the duty on developed countries."
+      "COP30 in Belém (November 2025) added a call for efforts to at least triple [[adaptation-finance|adaptation finance]] by 2035, without stating a baseline, and adopted voluntary indicators for the [[global-goal-on-adaptation|global goal on adaptation]]. Finance debates now run through other bodies too: reform of multilateral development banks, debt relief and [[debt-swap|debt-for-nature or debt-for-climate swaps]], [[climate-resilient-debt-clause|climate-resilient debt clauses]] that pause repayments after a disaster (Unit 16), and reform campaigns such as Barbados’s Bridgetown Initiative (Unit 13). Who counts as a contributor is itself disputed: some developed countries want large emerging economies such as China to join the donor base; those countries reply that the Convention places the duty on developed countries."
     ]},
     {h:"Loss and damage: from taboo to fund", body:[
       "Some harms cannot be adapted to: a cyclone that destroys an island’s crops, a coast that disappears. [[loss-and-damage|Loss and damage]] is the term for them. In 1991 Vanuatu, for the Alliance of Small Island States, proposed an international insurance pool; for two decades developed countries resisted anything that sounded like liability.",
@@ -403,9 +403,9 @@ ICA.addUnit({
       ["Agreed to establish a loss and damage fund","COP27","Sharm el-Sheikh, 2022."]
     ]},
     {id:"e4u16-l3-x7", type:"mcq", q:"Sione argues in a seminar: “Loss and damage finance is compensation for historical harm.” Which is the strongest counter-argument a neutral discussant could raise?", options:[
-      {t:"The Paris decision states that Article 8 provides no basis for liability or compensation, and many contributors frame payments as solidarity", ok:true, why:"Right. It engages his claim with the text and with the other side’s stated position, without saying who is right."},
+      {t:"The Paris text excludes liability, and many donors frame payments as solidarity", ok:true, why:"Right. The Paris decision states that Article 8 provides no basis for liability or compensation, and many contributors frame payments as solidarity. It engages his claim with the text and the other side’s stated position, without saying who is right."},
       {t:"Loss and damage does not exist", why:"Losses beyond adaptation are well documented; this is not a serious counter-argument."},
-      {t:"Small islands emit a lot, so they should pay", why:"Small island states’ emissions are tiny; this is inaccurate."},
+      {t:"Small island states emit a great deal themselves, so they should pay for their own losses", why:"Small island states’ emissions are tiny; this is inaccurate."},
       {t:"The ICJ banned compensation in 2025", why:"The Court said breaches can entail reparation; it did not ban compensation."}
     ]}
    ],
@@ -524,9 +524,9 @@ ICA.addUnit({
       ["Target 19","Mobilise at least 200 billion dollars a year from all sources by 2030","Finance."]
     ]},
     {id:"e4u16-l4-x5", type:"mcq", q:"Fatima writes in November 2026: “The High Seas Treaty is still waiting for ratifications.” What should she write instead?", options:[
-      {t:"It entered into force on 17 January 2026, passed 100 parties in September 2026, and its first COP is scheduled for January 2027", ok:true, why:"Right: the dated, accurate status."},
+      {t:"It entered into force on 17 January 2026", ok:true, why:"Right: the dated, accurate status. It passed 100 parties in September 2026, and its first COP is scheduled for January 2027."},
       {t:"It was abandoned in 2023", why:"It was adopted in June 2023, not abandoned."},
-      {t:"It entered into force in 1994 with UNCLOS", why:"1994 is UNCLOS; BBNJ is a separate, later agreement."},
+      {t:"It entered into force in 1994, together with UNCLOS", why:"1994 is UNCLOS; BBNJ is a separate, later agreement."},
       {t:"It only covers fishing quotas", why:"It covers genetic resources, protected areas, impact assessments and capacity-building; fishing quotas stay with fisheries bodies."}
     ]},
     {id:"e4u16-l4-x6", type:"spot", q:"A briefing on the plastics talks. Tap each sentence that is **wrong**.", ask:"is wrong", parts:[
@@ -608,7 +608,7 @@ ICA.addUnit({
       "In March 2025 the United States withdrew from the partner groups for South Africa, Indonesia and Viet Nam and cancelled its pledges; Germany and other partners said the work would continue. Each country published an investment plan (South Africa in 2022, Indonesia in 2023). Debates cover the mix of loans and grants, coal workers in places such as South Africa’s Mpumalanga province, Indonesia’s coal plants that power industrial parks, and who sets the pace."
     ]},
     {h:"Critical minerals and clean-technology supply chains", body:[
-      "Solar panels, wind turbines, batteries and grids need copper, lithium, nickel, cobalt, graphite and rare earths. Unit 15 covered [[critical-minerals|critical minerals]] as geoeconomics (see {{geoeconomics}}); here the question is what they mean for the transition.",
+      "Solar panels, wind turbines, batteries and grids need copper, lithium, nickel, cobalt, graphite and rare earths. Unit 16 covered [[critical-minerals|critical minerals]] as geoeconomics (see {{geoeconomics}}); here the question is what they mean for the transition.",
       "The International Energy Agency’s *Global Critical Minerals Outlook 2026* reports that, excluding rare earths, the top refining country’s average share of key minerals rose to 72 per cent in 2025. China is the leading refiner for most of them and Indonesia for nickel; China also holds over three-quarters of global battery pre-treatment capacity. The IEA counts a tripling since 2023 of mineral tariff codes under Chinese export controls.",
       "Producer countries want more of the value. Indonesia banned exports of nickel ore from 2020 to attract processing at home; the Democratic Republic of the Congo, the main source of cobalt, and Chile, with large lithium reserves, have also tightened state control. Communities near mines raise water, land and labour concerns (see {{business-and-human-rights}}).",
       "Positions on China’s role differ and should be attributed. The IEA and many developing-country governments note that low-cost Chinese panels and batteries have made clean energy cheaper worldwide. US, EU and some Asian governments warn of overcapacity and dependence. China’s government rejects the “overcapacity” label and says its industries reflect competitiveness and help the world meet climate goals."
@@ -622,7 +622,7 @@ ICA.addUnit({
         "**Japan**: the GX (Green Transformation) Promotion Act (2023), with 20 trillion yen of GX transition bonds over a decade and a mandatory emissions trading scheme from fiscal year 2026 for companies emitting 100,000 tonnes of CO₂ or more a year.",
         "**India**: production-linked incentives for solar modules and batteries."
       ]},
-      "CBAM shows the clash. The EU says it puts a [[carbon-pricing|carbon price]] on imports to prevent [[carbon-leakage|carbon leakage]], with production moving to countries with weaker rules. India, China, South Africa and others call it unilateral and inconsistent with CBDR-RC. COP30 launched a dialogue on climate and trade, with the WTO, UNCTAD and the International Trade Centre.",
+      "CBAM shows the clash. The EU says it puts a [[carbon-pricing|carbon price]] on imports to prevent [[carbon-leakage|carbon leakage]], with production moving to countries with weaker rules. (Who ends up paying a tax like this, buyers or sellers, is the question of tax incidence: {{price-interventions}}, Unit 14.) India, China, South Africa and others call it unilateral and inconsistent with CBDR-RC. COP30 launched a dialogue on climate and trade, with the WTO, UNCTAD and the International Trade Centre.",
       "A Global South argument cuts across these debates. Governments such as India’s and Indonesia’s note that rich countries now subsidise their own clean industries heavily while trade rules and conditions on finance limit the **policy space** of poorer countries to do the same. Supporters of open trade reply that subsidy races divert scarce public money and that cheap imports, wherever they come from, speed up the transition."
     ]},
     {h:"How to analyse a climate negotiation", body:[
@@ -651,8 +651,8 @@ ICA.addUnit({
       ["Senegal (2023)","2.5 billion euros","Announced in June 2023."]
     ]},
     {id:"e4u16-l5-x3", type:"mcq", q:"Why does the Glasgow Climate Pact (2021) speak of a “phasedown” of unabated coal power rather than a “phase-out”?", options:[
-      {t:"India and China pressed for the softer word in the final hours, and other parties accepted it to keep consensus", ok:true, why:"Right. Under the consensus rule, a few major parties could insist on the change."},
-      {t:"Scientists recommended a slower path for coal", why:"The wording was a political compromise, not a scientific recommendation."},
+      {t:"India and China pressed for the softer word at the last minute", ok:true, why:"Right, and other parties accepted it to keep consensus. Under the consensus rule, a few major parties could insist on the change."},
+      {t:"Scientists recommended a slower path for coal in the IPCC report", why:"The wording was a political compromise, not a scientific recommendation."},
       {t:"The EU proposed it to protect its own coal plants", why:"The EU was among those disappointed by the change."},
       {t:"It was a translation error", why:"It was a deliberate, much-reported amendment."}
     ]},
@@ -716,6 +716,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u16-q02","e4u16-q06","e4u16-q08","e4u16-q11","e4u16-q15","e4u16-q19","e4u16-q22","e4u16-q26","e4u16-q30","e4u16-q34","e4u16-q38","e4u16-q43"],
+  cpBank:[
+   {id:"e4u16-cp01", lesson:"e4u16-l1", level:1, q:"Over twenty years, pesticide run-off slowly poisons a river. People downstream fall ill one by one, and the harm almost never makes the news. Which concept names this kind of harm?", options:[
+     {t:"The tragedy of the commons", why:"That describes overuse of an open-access resource. The term for gradual, unseen harm is different."},
+     {t:"Slow violence", ok:true, why:"Yes. Rob Nixon named harms that unfold over years, and so escape the news, slow violence."},
+     {t:"The precautionary principle", why:"That is a rule for acting under scientific uncertainty, not a name for a kind of harm."},
+     {t:"Strong sustainability", why:"That is a position on whether natural capital can be replaced, not a description of gradual harm."}]},
+   {id:"e4u16-cp02", lesson:"e4u16-l1", level:2, q:"A minister says the economy can keep growing while emissions and resource use fall. An activist replies that rich economies must shrink material use, and so output, by design. Which positions are these?", options:[
+     {t:"Weak sustainability and strong sustainability", why:"Those positions are about whether natural capital can be replaced by human-made capital, not about whether output must shrink."},
+     {t:"Limits to growth and the Anthropocene", why:"The Anthropocene names an age of human impact; it is not a position on growth policy."},
+     {t:"Polluter pays and ability to pay", why:"Those are principles for sharing the costs of climate action between countries."},
+     {t:"Green growth and degrowth", ok:true, why:"Right. Green growth claims growth can be decoupled from harm (OECD, 2011); degrowth (Jackson, Hickel) argues rich economies must shrink material use."}]},
+   {id:"e4u16-cp03", lesson:"e4u16-l1", level:2, q:"While global talks stall, a region’s cities, utilities and firms each try their own climate measures, copy what works and build trust with each other. Which idea describes this best?", options:[
+     {t:"Polycentric governance", ok:true, why:"Yes. Ostrom (2010) argued for many overlapping centres of decision that experiment and learn, instead of waiting for one global treaty."},
+     {t:"A climate club with outsider penalties", why:"Nordhaus’s climate club is a group of ambitious states imposing penalties on outsiders. There are no penalties here."},
+     {t:"Open access", why:"Open access means no rules and no owner. These actors are making rules."},
+     {t:"Pledge and review", why:"Pledge and review describes national pledges inside the UN process, such as NDCs, not local actors experimenting outside it."}]},
+   {id:"e4u16-cp04", lesson:"e4u16-l2", level:1, q:"In a negotiating session, one coalition argues hardest for limiting warming to 1.5 °C and for funding to deal with loss and damage. Which coalition is it most likely to be?", options:[
+     {t:"The Umbrella Group", why:"Its typical priority is ambition from all major emitters and transparency, not 1.5 °C and loss and damage above all."},
+     {t:"The Like-Minded Developing Countries, including China", why:"This group stresses differentiation and policy space."},
+     {t:"The Alliance of Small Island States (AOSIS)", ok:true, why:"Right. AOSIS pressed for 1.5 °C long before Paris and proposed an insurance pool for loss and damage in 1991."},
+     {t:"BASIC", why:"Brazil, South Africa, India and China mainly stress differentiation and policy space."}]},
+   {id:"e4u16-cp05", lesson:"e4u16-l2", level:2, q:"Country T’s NDC pledges a 40% emissions cut; it achieves only 25%. As the Paris Agreement was designed in 2015, which of these is a legally binding duty?", options:[
+     {t:"Achieving the 40% emissions target it chose for itself", why:"In the 2015 design the targets themselves are not binding; this is a key difference from Kyoto. (Lesson 3 shows how the ICJ’s 2025 opinion later limited parties’ freedom over what an NDC contains.)"},
+     {t:"Cutting its emissions at least 5% below 1990 levels", why:"That was the collective Kyoto target for Annex B countries, not a Paris duty."},
+     {t:"Submitting its NDC and reporting on progress", ok:true, why:"Yes. Paris makes the duties to submit, explain and report binding, with transparency and peer pressure meant to raise ambition."},
+     {t:"Paying a set share into the loss and damage fund", why:"Contributions to the fund are not a binding Paris duty, and the Paris decision says Article 8 is no basis for liability."}]},
+   {id:"e4u16-cp06", lesson:"e4u16-l2", level:3, q:"A minister says: “Under Paris we choose our NDC freely, so a weak one is our business alone.” What is the best reply?", options:[
+     {t:"The government is right: the ICJ confirmed that NDCs are entirely at each party’s discretion", why:"The Court said the opposite: NDC content is not entirely discretionary."},
+     {t:"NDCs are self-chosen, but the ICJ said each must show the highest possible ambition", ok:true, why:"Right. Paris is bottom-up, but the 2025 advisory opinion limited that discretion."},
+     {t:"NDCs are binding targets negotiated by all parties, as in Kyoto", why:"That describes Kyoto’s Annex B targets. Paris targets are self-chosen."},
+     {t:"The ICJ ordered the government to double its NDC", why:"An advisory opinion gives no binding judgment and named no state as responsible."}]},
+   {id:"e4u16-cp07", lesson:"e4u16-l3", level:1, q:"A report counts a rice farmer’s methane and a frequent flyer’s CO₂ in exactly the same way. Which distinction from the lesson would a critic use?", options:[
+     {t:"Shue’s distinction between subsistence and luxury emissions", ok:true, why:"Yes. Shue (1993) separated emissions needed to survive from those for comfort, echoing Agarwal and Narain’s 1991 critique."},
+     {t:"Weak versus strong sustainability, from ecological economics", why:"That debate is about replacing natural capital, not about the moral weight of different emissions."},
+     {t:"Annex I versus non-Annex I parties under the UNFCCC", why:"That is a division between countries in the UNFCCC, not between kinds of emissions."},
+     {t:"Mitigation versus adaptation in climate policy", why:"That distinguishes cutting emissions from coping with impacts, not survival from comfort."}]},
+   {id:"e4u16-cp08", lesson:"e4u16-l3", level:2, q:"Country E makes steel almost entirely for export to Country F. Under which way of counting are the emissions from making that steel assigned to F?", options:[
+     {t:"Cumulative emissions", why:"Cumulative counting adds up emissions over time. It does not move emissions from the producer to the buyer."},
+     {t:"Per person emissions", why:"Per person counting divides a country’s emissions by its population; it does not reassign them across borders."},
+     {t:"Current annual emissions by territory", why:"Standard annual totals count emissions where they happen, which is Country E."},
+     {t:"Consumption-based accounting", ok:true, why:"Right. Consumption-based accounts move emissions from the country that makes goods to the country that buys them."}]},
+   {id:"e4u16-cp09", lesson:"e4u16-l4", level:2, q:"After a regional fisheries agreement began, fishing effort fell. In the same years, fuel prices doubled. Using Miles, Underdal and colleagues’ approach, which question matters most before crediting the agreement?", options:[
+     {t:"Would effort have fallen anyway, without the agreement?", ok:true, why:"Yes. Judging effectiveness means asking whether behaviour changed because of the regime, not just after it."},
+     {t:"Was the agreement legally binding on all of its parties?", why:"Legal form matters, but it does not tell you whether the agreement caused the change."},
+     {t:"How many states signed the agreement?", why:"Participation is not the same as effect. The fuel price rise is a rival explanation that must be checked."},
+     {t:"Is the fishery a common-pool resource?", why:"It is, but that does not settle whether the agreement or fuel prices reduced fishing."}]},
+   {id:"e4u16-cp10", lesson:"e4u16-l4", level:3, q:"To meet “30 by 30”, a government expands a protected area and moves out Indigenous herders, who were not consulted. Drawing on Lessons 1 and 4, which concerns apply most directly?", options:[
+     {t:"Carbon leakage and the Kigali Amendment", why:"Neither fits. Leakage concerns production moving to laxer countries; Kigali phases down HFCs. The scenario is about conservation and people’s rights."},
+     {t:"The tragedy of the commons, which requires removing all users", why:"Ostrom and others showed that user communities can govern resources well. Removing them is not what the commons research recommends."},
+     {t:"“Fortress conservation”, and failures of recognition and participation", ok:true, why:"Right. Critics warn 30 by 30 could expel people, and Schlosberg’s framework flags whose knowledge counts and who has a say."},
+     {t:"Weak sustainability, because the lost land can simply be replaced elsewhere", why:"The issue is not substitution of natural capital but the treatment of the people who live there."}]},
+   {id:"e4u16-cp11", lesson:"e4u16-l5", level:3, q:"A’s parliament will ratify emission cuts of up to 20%; B’s will ratify only cuts of at least 30%. Then elections in A produce a majority that accepts cuts of up to 35%. In Putnam’s model, what changes?", options:[
+     {t:"Nothing, because only Level I bargaining decides the outcome", why:"Putnam’s point is that every deal must also win approval at home (Level II)."},
+     {t:"The win-sets now overlap, so a deal between 30% and 35% can be ratified", ok:true, why:"Yes. Before the election there was no overlap; after it, deals in the shared range are possible."},
+     {t:"A’s position is weaker, so it must now accept B’s exact 30% demand in full", why:"Overlap makes a deal possible; where it falls inside the range is still a matter of bargaining."},
+     {t:"Agreement becomes impossible, because A’s win-set grew", why:"A larger win-set makes agreement easier, not harder, although it can weaken A’s bargaining position."}]},
+   {id:"e4u16-cp12", lesson:"e4u16-l5", level:3, q:"An invented rich country imposes a carbon charge on imported steel. A developing exporter objects. Drawing on Lessons 2 and 5, which pair of concepts best frames each side’s stated case?", options:[
+     {t:"Importer: stranded assets. Exporter: the Paris ratchet mechanism", why:"Neither concept fits. Stranded assets concern unburnable reserves; the ratchet is the Paris ambition cycle."},
+     {t:"Importer: polycentric governance. Exporter: the doughnut", why:"Neither is an argument in the CBAM debate. Polycentric governance is Ostrom’s idea of many centres of decision; Raworth’s doughnut sets social and planetary limits."},
+     {t:"Importer: CBDR-RC. Exporter: carbon leakage", why:"This reverses the positions. The importer cites leakage; the exporter cites CBDR-RC."},
+     {t:"Importer: carbon leakage. Exporter: CBDR-RC and policy space", ok:true, why:"Right. This mirrors the CBAM debate: the EU cites leakage, while India, China, South Africa and others call it unilateral and inconsistent with CBDR-RC."}]}
+  ],
   codex:[
    {id:"commons-governance", title:"Governing the commons: from Hardin to polycentricity", aka:["common-pool resources","tragedy of the commons","polycentric governance","common property"], tags:["environment","theory","cooperation"],
     summary:"How shared resources are used up or sustained, from Hardin’s open-access tragedy to Ostrom’s design principles and polycentric governance of global problems.",
@@ -788,7 +850,7 @@ ICA.addUnit({
       "**Growth debates.** Green growth (OECD 2011; South Korea’s 2008 strategy; the Global Green Growth Institute) holds that growth can be decoupled from emissions and resource use. Degrowth scholars (Tim Jackson, *Prosperity without Growth*, 2009; Jason Hickel, *Less is More*, 2020; Giorgos Kallis) argue that rich countries cannot decouple fast enough."
      ],
      pro:[
-      "**Critiques from the South.** Post-development writers (Unit 14) argue that “sustainable development” keeps a Western model of progress and adds environmental management on top. Latin American ideas such as *buen vivir* propose other goals.",
+      "**Critiques from the South.** Post-development writers (Unit 15) argue that “sustainable development” keeps a Western model of progress and adds environmental management on top. Latin American ideas such as *buen vivir* propose other goals.",
       "**Critiques from ecology.** Ecological economists such as Herman Daly called “sustainable growth” an oxymoron for physical throughput, while accepting qualitative development.",
       "**Evidence on decoupling.** Many countries have cut territorial emissions while their economies grew; the debate is over whether absolute decoupling can be fast enough and global enough, including consumption-based emissions and material use.",
       "**In law.** Sustainable development appears in many treaties and judgments as an objective or a principle of integration (balancing development and environment); its legal force is debated.",
@@ -1224,7 +1286,7 @@ ICA.addUnit({
       "**Theory.** Rodrik (2014) argues that green industrial policy can address learning spillovers and coordination failures if governments keep discipline (clear goals, sunset clauses, monitoring). Critics in the trade-law community see risks to WTO rules on subsidies and national treatment.",
       "**Global South view.** India, China, South Africa and others call CBAM unilateral and inconsistent with CBDR-RC, and argue that rich countries’ subsidies shrink the policy space of poorer ones; the EU replies that CBAM mirrors its domestic carbon price.",
       "**China’s role.** The IEA and many importers credit Chinese manufacturing with cutting clean-energy costs; US, EU and some Asian governments warn of overcapacity and dependence; China’s government rejects the “overcapacity” label.",
-      {tip:"Unit 15 covers the geoeconomics of export controls and critical minerals; combine both units for a paper on clean-tech supply chains."}
+      {tip:"Unit 16 covers the geoeconomics of export controls and critical minerals; combine both units for a paper on clean-tech supply chains."}
      ]
     },
     related:["energy-transition-politics","geoeconomics","unfccc-regime"],
@@ -1249,7 +1311,7 @@ ICA.addUnit({
       "**Consensus.** The UNFCCC’s rules of procedure were never adopted because parties could not agree on the voting rule, so decisions are taken by consensus; presidencies sometimes gavel through texts over objections, which then become controversies (as in Belém, 2025)."
      ],
      pro:[
-      "**COP31 (as of 12 November 2026).** Opened on 9 November in Antalya, Türkiye, scheduled to end on 20 November; Türkiye holds the presidency (Murat Kurum) and Australia’s Chris Bowen leads the negotiations under a 2025 compromise; billed as an “implementation COP”. The US administration sent no officials, though a congressional delegation was due to attend. Outcomes were not yet known.",
+      "**COP31 (as of 12 November 2026).** Opened on 9 November in Antalya, Türkiye, scheduled to end on 20 November; Türkiye holds the presidency (Murat Kurum) and Australia’s Chris Bowen leads the negotiations under a 2025 compromise; billed as an “implementation COP”. The US administration sent no officials, though a congressional delegation was due to attend. Outcomes were still under negotiation when this was written; the *Earth Negotiations Bulletin* summary report is the place to check what was agreed.",
       "**Sources.** Decision texts and submissions on the UNFCCC website; the IISD *Earth Negotiations Bulletin*; group statements; national delegations’ press releases; specialist media. Triangulate, and quote at least one position you disagree with.",
       "**Pitfalls.** Treating announcements as decisions; ignoring what happens outside the COP (G20, courts, markets); reading outcomes only as wins and losses rather than as steps in a long cycle.",
       {tip:"Write the analysis in the past tense only after the closing plenary; before that, describe positions and possible outcomes."}
@@ -1353,10 +1415,10 @@ ICA.addUnit({
      {t:"Rules imposed by a distant central government without user input", why:"She found that users taking part in making rules was a feature of success."},
      {t:"No monitoring, to build trust", why:"Monitoring by users or accountable monitors was one of her principles."}]},
    {id:"e4u16-q04", lesson:"e4u16-l1", level:2, q:"Kenji argues: “Ostrom proves that the climate can be governed like a village pasture.” Which response best reflects the scholarly debate?", options:[
-     {t:"Ostrom herself argued for polycentric climate action, but critics note that her principles came from small, bounded groups and are hard to scale to the atmosphere", ok:true, why:"Right: it credits her polycentric argument and states the scale critique."},
+     {t:"Ostrom backed polycentric climate action, but critics doubt her principles scale up", ok:true, why:"Right: it credits her polycentric argument and states the scale critique: her principles came from small, bounded groups and are hard to scale to the atmosphere."},
      {t:"Ostrom never wrote about climate change", why:"She did, notably in a 2010 article in *Global Environmental Change*."},
      {t:"Ostrom argued only states can govern commons", why:"She argued the opposite: communities often govern commons without the state or the market."},
-     {t:"The atmosphere is a private good, so Ostrom’s work is irrelevant", why:"The atmosphere as a waste sink is a common-pool resource."}]},
+     {t:"The atmosphere is a private good owned by states, so Ostrom’s work is irrelevant to it", why:"The atmosphere as a waste sink is a common-pool resource."}]},
    {id:"e4u16-q05", lesson:"e4u16-l1", level:1, q:"Which report defined sustainable development as meeting “the needs of the present without compromising the ability of future generations to meet their own needs”?", options:[
      {t:"*Our Common Future* (the Brundtland Report, 1987)", ok:true, why:"Right: the World Commission on Environment and Development, chaired by Gro Harlem Brundtland."},
      {t:"*The Limits to Growth* (1972)", why:"That report modelled physical limits to growth; it did not give this definition."},
@@ -1368,13 +1430,13 @@ ICA.addUnit({
      {t:"Open access versus common property", why:"That debate is about property regimes for shared resources."},
      {t:"Mitigation versus adaptation", why:"Those are climate policy strategies, not views on substitution."}]},
    {id:"e4u16-q07", lesson:"e4u16-l1", level:1, q:"What happened to the proposal to make the Anthropocene a formal geological epoch?", options:[
-     {t:"It was rejected in March 2024, though the term remains widely used informally", ok:true, why:"Right: the stratigraphy bodies voted it down; their statement says the term remains a valuable descriptor."},
+     {t:"It was rejected in March 2024", ok:true, why:"Right: the stratigraphy bodies voted it down, though the term remains widely used informally; their statement calls it a valuable descriptor."},
      {t:"It was adopted in 2024, starting in the 1950s", why:"The proposal was rejected, not adopted."},
      {t:"It was adopted in 2000 by Crutzen and Stoermer", why:"They proposed the term; formal adoption is up to geological bodies."},
      {t:"It is still awaiting a vote", why:"The vote took place in 2024."}]},
    {id:"e4u16-q08", lesson:"e4u16-l1", level:2, q:"A report says: “Seven of nine planetary boundaries have been crossed.” What should a careful student add?", options:[
-     {t:"The source and year (for example the Planetary Health Check 2026), since the count has changed with each update", ok:true, why:"Right: 2009, 2015, 2023, 2025 and 2026 assessments differ."},
-     {t:"Nothing: the number has been the same since 2009", why:"It has changed: six of nine in 2023, seven in 2025 and 2026."},
+     {t:"The source and year, since the count changes with updates", ok:true, why:"Right: for example the Planetary Health Check 2026. The 2009, 2015, 2023, 2025 and 2026 assessments differ."},
+     {t:"Nothing: the number has stayed the same since the first count in 2009", why:"It has changed: six of nine in 2023, seven in 2025 and 2026."},
      {t:"That all nine are legally binding limits", why:"Planetary boundaries are a scientific framework, not legal limits."},
      {t:"That ozone depletion is the worst boundary", why:"Ozone is one of the two boundaries reported within the safe zone."}]},
    {id:"e4u16-q09", lesson:"e4u16-l1", level:3, q:"Villagers are told a mine’s environmental review is complete, but the hearing was held far away, in a language few of them speak, and officials dismissed their knowledge of the river. Which two dimensions of environmental justice are most at stake?", options:[
@@ -1384,22 +1446,22 @@ ICA.addUnit({
      {t:"Mitigation and adaptation", why:"Those are climate policy categories."}]},
    /* ---- Lesson 2 ---- */
    {id:"e4u16-q10", lesson:"e4u16-l2", level:1, q:"What is the objective in Article 2 of the UNFCCC?", options:[
-     {t:"To stabilise greenhouse gas concentrations at a level that would prevent dangerous anthropogenic interference with the climate system", ok:true, why:"Right: the Convention’s ultimate objective."},
+     {t:"To prevent dangerous human interference with the climate", ok:true, why:"Right: to stabilise greenhouse gas concentrations at a level that would prevent dangerous anthropogenic interference with the climate system. This is the Convention’s ultimate objective."},
      {t:"To limit warming to 1.5 °C", why:"The 1.5 °C goal is from the Paris Agreement (2015)."},
-     {t:"To cut emissions 5 per cent below 1990 levels", why:"That was Kyoto’s target for Annex B countries."},
+     {t:"To cut rich countries’ emissions 5 per cent below 1990 levels", why:"That was Kyoto’s target for Annex B countries."},
      {t:"To ban fossil fuels by 2050", why:"No climate treaty contains such a ban."}]},
    {id:"e4u16-q11", lesson:"e4u16-l2", level:2, q:"Why do many scholars describe the Paris Agreement as a reversal of Kyoto’s design?", options:[
-     {t:"Kyoto set negotiated binding targets for some countries; Paris lets every party set its own target and relies on transparency and review", ok:true, why:"Right: top-down and partial versus bottom-up and universal."},
-     {t:"Kyoto had no market mechanisms; Paris introduced them", why:"Kyoto created emissions trading, joint implementation and the CDM."},
-     {t:"Kyoto covered all countries; Paris only developed ones", why:"It is the other way round."},
+     {t:"Kyoto negotiated binding targets; Paris lets parties set their own", ok:true, why:"Right: Kyoto set negotiated binding targets for some countries; Paris lets every party set its own and relies on transparency and review. Top-down and partial versus bottom-up and universal."},
+     {t:"Kyoto had no market mechanisms; Paris was the first to introduce them", why:"Kyoto created emissions trading, joint implementation and the CDM."},
+     {t:"Kyoto covered all countries; Paris covers only developed ones", why:"It is the other way round."},
      {t:"Paris makes every target legally binding", why:"The targets in NDCs are not binding; the procedural duties are."}]},
    {id:"e4u16-q12", lesson:"e4u16-l2", level:1, q:"What did the US Senate’s Byrd–Hagel resolution of 1997 oppose?", options:[
-     {t:"Any climate treaty that did not include binding commitments for developing countries", ok:true, why:"Right: passed 95–0 months before Kyoto, it signalled that ratification was unlikely."},
+     {t:"A treaty binding rich countries but not developing ones", ok:true, why:"Right: any climate treaty without binding commitments for developing countries. Passed 95–0 months before Kyoto, it signalled that ratification was unlikely."},
      {t:"The creation of the IPCC", why:"The IPCC dated from 1988 and was not its target."},
-     {t:"The Montreal Protocol", why:"The resolution concerned climate negotiations."},
+     {t:"The Montreal Protocol’s controls on ozone-depleting gases", why:"The resolution concerned climate negotiations."},
      {t:"The Paris Agreement", why:"Paris came 18 years later."}]},
    {id:"e4u16-q13", lesson:"e4u16-l2", level:2, q:"Which description of the Copenhagen Accord (2009) is accurate?", options:[
-     {t:"A leaders’ text with national pledges and a 100 billion dollar finance goal, of which the COP only took note because some parties objected", ok:true, why:"Right: it lacked consensus but contained the seeds of Paris."},
+     {t:"A leaders’ text with national pledges that the COP only took note of", ok:true, why:"Right. It contained pledges and a 100 billion dollar finance goal, but the COP only took note of it because some parties objected. It lacked consensus but contained the seeds of Paris."},
      {t:"A binding protocol adopted unanimously", why:"It was not adopted by consensus, and it was not binding."},
      {t:"The agreement that created the Green Climate Fund’s first replenishment", why:"The Fund was set up later, under the Cancún Agreements."},
      {t:"A treaty that set binding targets for China and India", why:"It set no binding targets for anyone."}]},
@@ -1409,10 +1471,10 @@ ICA.addUnit({
      {t:"At COP26 in Glasgow, 2021", why:"Glasgow agreed the Paris rulebook items and the coal “phasedown”, not the stocktake outcome."},
      {t:"It has not yet happened", why:"It concluded in 2023; the second is due in 2028."}]},
    {id:"e4u16-q15", lesson:"e4u16-l2", level:3, q:"A minister says: “The planet passed 1.5 °C in 2024, so the Paris goal is dead and our country need not try.” Which reply is accurate?", options:[
-     {t:"WMO estimates 2024 at about 1.55 °C, but the Paris goal refers to long-term warming over about two decades; each increment of warming avoided still matters", ok:true, why:"Right: it gets the figure and the distinction right without exaggerating either way."},
+     {t:"2024 was about 1.55 °C, but the Paris goal refers to long-term warming", ok:true, why:"Right. WMO estimates 2024 at about 1.55 °C, but the goal refers to warming over about two decades, and each increment of warming avoided still matters. The reply gets the figure and the distinction right."},
      {t:"2024 was below 1.5 °C, so there is no problem", why:"WMO and Copernicus both put 2024 above 1.5 °C."},
-     {t:"The Paris goal was formally abandoned at COP30", why:"No such decision exists."},
-     {t:"The IPCC declared the goal impossible in 2026", why:"The IPCC made no such declaration; its AR7 reports were not yet published."}]},
+     {t:"The Paris goal was formally abandoned at COP30 after 2024’s record", why:"No such decision exists."},
+     {t:"The IPCC formally declared the goal impossible in 2026, so the minister is right", why:"The IPCC made no such declaration; its AR7 reports were not yet published."}]},
    {id:"e4u16-q16", lesson:"e4u16-l2", level:1, q:"Which group formed before Copenhagen in 2009 and helped write the Copenhagen Accord with the United States?", options:[
      {t:"BASIC (Brazil, South Africa, India, China)", ok:true, why:"Right: its leaders drafted the Accord with the US president in the final hours."},
      {t:"AOSIS", why:"AOSIS dates from 1990 and was critical of the Accord’s 2 °C goal."},
@@ -1424,13 +1486,13 @@ ICA.addUnit({
      {t:"It contains new research not in the reports", why:"The IPCC does no new research, and the summary must be consistent with the underlying report."},
      {t:"It is legally binding on governments", why:"IPCC reports are assessments, not legal instruments."}]},
    {id:"e4u16-q18", lesson:"e4u16-l2", level:3, q:"Priya writes: “The IPCC failed to agree its AR7 timeline because scientists could not finish their work.” How should she correct it?", options:[
-     {t:"The deadlock was among governments: some wanted reports by 2028 to inform the second global stocktake, others favoured a later schedule citing rigour and inclusiveness", ok:true, why:"Right: it locates the dispute and gives each side’s stated reasons."},
+     {t:"The deadlock was among governments, which disagreed on timing", ok:true, why:"Right: some governments wanted reports by 2028 to inform the second global stocktake; others favoured a later schedule, citing rigour and inclusiveness. The correction locates the dispute among governments."},
      {t:"The IPCC was abolished in 2026", why:"The IPCC continues; its 65th session was suspended, not the panel."},
-     {t:"There was no disagreement; the timeline was agreed in 2024", why:"Governments failed six times from 2024 to October 2026 to agree it."},
+     {t:"There was no disagreement at all; the timeline was agreed in 2024", why:"Governments failed six times from 2024 to October 2026 to agree it."},
      {t:"The United Nations Security Council blocked it", why:"The Security Council has no role in IPCC decisions."}]},
    /* ---- Lesson 3 ---- */
    {id:"e4u16-q19", lesson:"e4u16-l3", level:2, q:"Which way of counting emissions most strengthens the argument that the United States and Europe bear special responsibility?", options:[
-     {t:"Cumulative emissions since the industrial revolution", ok:true, why:"Right: CO₂ persists for centuries, and these economies emitted most over time."},
+     {t:"Cumulative emissions over time", ok:true, why:"Right: cumulative emissions since the industrial revolution. CO₂ persists for centuries, and these economies emitted most over time."},
      {t:"Current annual emissions", why:"By that measure China is the largest emitter today."},
      {t:"Emissions in the year 2025 only", why:"A single recent year is a version of current annual emissions."},
      {t:"Emissions from small island states", why:"These are very small and do not bear on this argument."}]},
@@ -1440,13 +1502,13 @@ ICA.addUnit({
      {t:"Robert Putnam (1988)", why:"Putnam developed two-level games."},
      {t:"Paul Crutzen (2000)", why:"Crutzen proposed the term Anthropocene."}]},
    {id:"e4u16-q21", lesson:"e4u16-l3", level:1, q:"According to the OECD, when did developed countries first meet the goal of 100 billion dollars a year in climate finance?", options:[
-     {t:"In 2022, two years after the 2020 target date", ok:true, why:"Right: 115.9 billion dollars provided and mobilised, by the OECD’s count."},
+     {t:"In 2022, two years late", ok:true, why:"Right: in 2022, two years after the 2020 target date, with 115.9 billion dollars provided and mobilised, by the OECD’s count."},
      {t:"In 2009, when the goal was set", why:"2009 was when the goal was set at Copenhagen."},
      {t:"In 2020, on time", why:"The OECD found it was met two years late."},
      {t:"It has never been met", why:"The OECD reports it was met in 2022; some NGOs dispute how it is counted."}]},
    {id:"e4u16-q22", lesson:"e4u16-l3", level:2, q:"Which statement about the New Collective Quantified Goal agreed at COP29 in Baku is accurate?", options:[
-     {t:"At least 300 billion dollars a year by 2035, with developed countries taking the lead, plus a call for 1.3 trillion a year from all actors", ok:true, why:"Right: the two layers of the goal."},
-     {t:"1.3 trillion dollars a year in grants from developed countries", why:"The 1.3 trillion is a wider call on all actors and sources."},
+     {t:"At least 300 billion a year by 2035, plus a call for 1.3 trillion", ok:true, why:"Right: the two layers of the goal. Developed countries take the lead on at least 300 billion dollars a year by 2035; the 1.3 trillion a year is a call on all actors."},
+     {t:"1.3 trillion dollars a year in public grants from developed countries", why:"The 1.3 trillion is a wider call on all actors and sources."},
      {t:"100 billion dollars a year by 2025", why:"That was the old goal, extended to 2025 pending the NCQG."},
      {t:"A binding obligation on China to pay 300 billion dollars", why:"Developing countries’ contributions are voluntary."}]},
    {id:"e4u16-q23", lesson:"e4u16-l3", level:1, q:"What does the decision adopting the Paris Agreement say about Article 8 on loss and damage?", options:[
@@ -1455,8 +1517,8 @@ ICA.addUnit({
      {t:"It abolishes the Warsaw International Mechanism", why:"Article 8 builds on the Warsaw Mechanism."},
      {t:"It sets a 100 billion dollar loss and damage fund", why:"The fund came in 2022–2023, with no such sum."}]},
    {id:"e4u16-q24", lesson:"e4u16-l3", level:2, q:"Which body advised in May 2024 that greenhouse gas emissions are marine pollution under UNCLOS?", options:[
-     {t:"The International Tribunal for the Law of the Sea (ITLOS)", ok:true, why:"Right: at the request of the Commission of Small Island States on Climate Change and International Law."},
-     {t:"The International Court of Justice", why:"The ICJ gave its climate opinion in July 2025."},
+     {t:"The law of the sea tribunal (ITLOS)", ok:true, why:"Right: the International Tribunal for the Law of the Sea, at the request of the Commission of Small Island States on Climate Change and International Law."},
+     {t:"The International Court of Justice (ICJ)", why:"The ICJ gave its climate opinion in July 2025."},
      {t:"The UN Security Council", why:"The Council gives no such advisory opinions."},
      {t:"The IPCC", why:"The IPCC assesses science; it does not interpret UNCLOS."}]},
    {id:"e4u16-q25", lesson:"e4u16-l3", level:1, q:"How did the ICJ treat the 1.5 °C goal in its 2025 advisory opinion?", options:[
@@ -1465,12 +1527,12 @@ ICA.addUnit({
      {t:"As replaced by a 2 °C goal", why:"The Court said the opposite."},
      {t:"It did not mention temperature goals", why:"Temperature goals were central to its reasoning on NDCs."}]},
    {id:"e4u16-q26", lesson:"e4u16-l3", level:3, q:"A headline reads: “World court orders oil producers to pay climate damages.” What is wrong with it?", options:[
-     {t:"The ICJ gave a non-binding advisory opinion that named no state; it said breaches, including through fossil fuel policies, may be wrongful acts with consequences such as reparation", ok:true, why:"Right: it corrects the overstatement while keeping what the Court did say."},
+     {t:"It was a non-binding advisory opinion that named no state", ok:true, why:"Right. The ICJ said breaches, including through fossil fuel policies, may be wrongful acts with consequences such as reparation, but it ordered no one to pay. This corrects the overstatement while keeping what the Court did say."},
      {t:"Nothing: the Court ordered specific payments", why:"An advisory opinion orders no payments and names no state."},
      {t:"The Court said fossil fuels are irrelevant to climate obligations", why:"The Court explicitly mentioned fossil fuel production, consumption, licences and subsidies."},
      {t:"The opinion was given by the International Criminal Court", why:"It was the International Court of Justice."}]},
    {id:"e4u16-q27", lesson:"e4u16-l3", level:2, q:"What did the ICJ’s 2025 opinion say about statehood and sea-level rise?", options:[
-     {t:"Once a state is established, the loss of a constituent element such as territory would not necessarily end its statehood", ok:true, why:"Right: important for low-lying atoll states."},
+     {t:"Losing territory would not necessarily end a state’s statehood", ok:true, why:"Right: once a state is established, the loss of a constituent element such as territory would not necessarily end its statehood. This is important for low-lying atoll states."},
      {t:"States lose their UN membership when half their land is submerged", why:"The Court said nothing of the kind."},
      {t:"Statehood questions were outside the request, so it said nothing", why:"The Court addressed the question in its reasoning."},
      {t:"Island states must merge with larger neighbours", why:"No such finding exists."}]},
@@ -1486,18 +1548,18 @@ ICA.addUnit({
      {t:"An intermediate", why:"Intermediates are highly vulnerable but face high costs."},
      {t:"A bystander", why:"Bystanders have low vulnerability and low costs."}]},
    {id:"e4u16-q30", lesson:"e4u16-l4", level:3, q:"Ana argues that climate negotiators should simply copy the Montreal Protocol. What is the strongest qualification?", options:[
-     {t:"Ozone involved a few chemicals with available substitutes made by few firms; climate involves energy for the whole economy, so costs and draggers are far greater, though finance and trade measures may still transfer", ok:true, why:"Right: it names what transfers and what does not."},
-     {t:"The Montreal Protocol failed, so nothing can be learned", why:"It is widely judged a success."},
+     {t:"Ozone had few chemicals with substitutes; climate involves all energy use", ok:true, why:"Right. Ozone involved a few chemicals with available substitutes made by few firms; climate involves energy for the whole economy, so costs and draggers are far greater, though finance and trade measures may still transfer."},
+     {t:"The Montreal Protocol failed, so there is nothing that climate negotiators can learn", why:"It is widely judged a success."},
      {t:"Ozone depletion was never a real problem", why:"The science and the Antarctic ozone loss are well established."},
      {t:"Montreal has no funding mechanism", why:"Its Multilateral Fund is one of its key features."}]},
    {id:"e4u16-q31", lesson:"e4u16-l4", level:1, q:"What is “30 by 30” in the Kunming-Montreal Global Biodiversity Framework?", options:[
-     {t:"Target 3: at least 30 per cent of land, inland waters and coastal and marine areas effectively conserved by 2030", ok:true, why:"Right, recognising Indigenous and traditional territories."},
-     {t:"Cutting emissions 30 per cent by 2030", why:"That is not a biodiversity framework target."},
+     {t:"Conserving at least 30 per cent of land and sea by 2030", ok:true, why:"Right: Target 3, at least 30 per cent of land, inland waters and coastal and marine areas effectively conserved by 2030, recognising Indigenous and traditional territories."},
+     {t:"Cutting greenhouse gas emissions 30 per cent by 2030", why:"That is not a biodiversity framework target."},
      {t:"Thirty new protected species by 2030", why:"The target concerns areas, not a species count."},
-     {t:"30 billion dollars of finance by 2030", why:"International finance targets are in Target 19; “30 by 30” refers to area."}]},
+     {t:"Restoring at least 30 per cent of degraded ecosystems by 2030", why:"That is Target 2, on restoration; “30 by 30” is Target 3, on conserving areas."}]},
    {id:"e4u16-q32", lesson:"e4u16-l4", level:2, q:"What did the first global review of the Kunming-Montreal framework at COP17 (Yerevan, October 2026) conclude?", options:[
-     {t:"The world is off track to meet the 23 targets by 2030; parties adopted the Yerevan Pathway to speed up action", ok:true, why:"Right, per the CBD’s closing release."},
-     {t:"All 23 targets had already been met", why:"The review found the world off track."},
+     {t:"The world is off track to meet the targets by 2030", ok:true, why:"Right, per the CBD’s closing release: the world is off track on the 23 targets, and parties adopted the Yerevan Pathway to speed up action."},
+     {t:"All 23 targets had already been met, years ahead of 2030", why:"The review found the world off track."},
      {t:"The framework was abandoned", why:"Parties reaffirmed and prioritised it."},
      {t:"The United States joined the CBD", why:"The United States remains outside the Convention."}]},
    {id:"e4u16-q33", lesson:"e4u16-l4", level:1, q:"When did the BBNJ Agreement (High Seas Treaty) enter into force?", options:[
@@ -1506,14 +1568,14 @@ ICA.addUnit({
      {t:"1994", why:"1994 is when UNCLOS entered into force."},
      {t:"It has not entered into force", why:"It passed the ratification threshold in 2025 and entered into force in January 2026."}]},
    {id:"e4u16-q34", lesson:"e4u16-l4", level:3, q:"A minister says: “The plastics treaty failed because countries disagree about recycling technology.” Which description of the divisions is more accurate and neutral?", options:[
-     {t:"Some countries want global limits on production and harmful chemicals; others, many of them petrochemical producers, want the treaty to focus on waste management; parties also disagree on decision rules and finance", ok:true, why:"Right: it names the main divisions and attributes positions without taking sides."},
-     {t:"All countries want production caps but cannot agree on the date", why:"Production limits are themselves the central disagreement."},
+     {t:"Some want limits on production; others, many of them producers, want a focus on waste", ok:true, why:"Right. Some countries want global limits on production and harmful chemicals; others, many of them petrochemical producers, want the treaty to focus on waste management; parties also disagree on decision rules and finance. Positions are attributed without taking sides."},
+     {t:"All countries want production caps but cannot agree on the date, so the talks are stuck on timing", why:"Production limits are themselves the central disagreement."},
      {t:"The talks were cancelled in 2024", why:"Talks continued after Busan and Geneva, with a new chair elected in 2026."},
      {t:"Only NGOs oppose production limits", why:"The positions in the negotiations are those of governments."}]},
    {id:"e4u16-q35", lesson:"e4u16-l4", level:2, q:"What does the WTO Agreement on Fisheries Subsidies, in force since September 2025, prohibit?", options:[
-     {t:"Subsidies to illegal, unreported and unregulated fishing, to fishing overfished stocks and to fishing on the unregulated high seas", ok:true, why:"Right: its core prohibitions."},
+     {t:"Subsidies for illegal fishing or for overfished stocks", ok:true, why:"Right: subsidies to illegal, unreported and unregulated fishing, to fishing overfished stocks and to fishing on the unregulated high seas are its core prohibitions."},
      {t:"All fishing on the high seas", why:"It disciplines subsidies, not fishing itself."},
-     {t:"Fish imports from developing countries", why:"It does not restrict trade in fish."},
+     {t:"Fish imports from developing countries into rich markets", why:"It does not restrict trade in fish."},
      {t:"Aquaculture", why:"Aquaculture is not its subject."}]},
    {id:"e4u16-q36", lesson:"e4u16-l4", level:2, q:"Why is the Kunming-Montreal framework weaker legally than the Montreal Protocol?", options:[
      {t:"It is a COP decision under the CBD, politically agreed but not a separate binding treaty with trade measures", ok:true, why:"Right: its targets rely on national plans and review."},
@@ -1522,13 +1584,13 @@ ICA.addUnit({
      {t:"It covers only the oceans", why:"It covers land, freshwater and marine biodiversity."}]},
    /* ---- Lesson 5 ---- */
    {id:"e4u16-q37", lesson:"e4u16-l5", level:1, q:"What wording on fossil fuels did parties agree in the first global stocktake decision at COP28 (2023)?", options:[
-     {t:"Transitioning away from fossil fuels in energy systems, in a just, orderly and equitable manner", ok:true, why:"Right: the first COP decision to call for moving away from fossil fuels in general, not only coal."},
-     {t:"A full phase-out of fossil fuels by 2040", why:"No phase-out date was agreed."},
+     {t:"Transitioning away from fossil fuels in energy systems", ok:true, why:"Right: “in a just, orderly and equitable manner”. It was the first COP decision to call for moving away from fossil fuels in general, not only coal."},
+     {t:"A full phase-out of all fossil fuels by 2040 at the latest", why:"No phase-out date was agreed."},
      {t:"A ban on new oil exploration", why:"No such ban was agreed."},
      {t:"Phasedown of unabated coal power only", why:"That was Glasgow’s wording in 2021."}]},
    {id:"e4u16-q38", lesson:"e4u16-l5", level:2, q:"What are “stranded assets” in climate politics?", options:[
-     {t:"Fossil-fuel reserves or infrastructure that lose value early because climate policy or market change prevents their profitable use", ok:true, why:"Right: the risk Carney called a “tragedy of the horizon”."},
-     {t:"Aid money that never reaches developing countries", why:"That is a finance-delivery problem, not stranded assets."},
+     {t:"Fossil-fuel assets that lose value early because of climate policy", ok:true, why:"Right: reserves or infrastructure that lose value early because climate policy or market change prevents their profitable use. This is the risk Carney called a “tragedy of the horizon”."},
+     {t:"Aid money that never reaches the developing countries it was promised to", why:"That is a finance-delivery problem, not stranded assets."},
      {t:"Ships stuck in ports during storms", why:"The term is financial, not literal."},
      {t:"Carbon credits that cannot be sold", why:"Those may lose value, but the term usually refers to fossil assets."}]},
    {id:"e4u16-q39", lesson:"e4u16-l5", level:1, q:"Which country was the first to receive a Just Energy Transition Partnership, announced at COP26 in 2021?", options:[
@@ -1537,22 +1599,22 @@ ICA.addUnit({
      {t:"Viet Nam", why:"Viet Nam’s JETP was announced in December 2022."},
      {t:"Senegal", why:"Senegal’s JETP was announced in 2023."}]},
    {id:"e4u16-q40", lesson:"e4u16-l5", level:2, q:"What happened to US participation in the JETPs in March 2025?", options:[
-     {t:"The United States withdrew from the partner groups for South Africa, Indonesia and Viet Nam; Germany and other partners said the work would continue", ok:true, why:"Right, per South African and German government statements."},
+     {t:"It withdrew from the partner groups; other partners said work would continue", ok:true, why:"Right: it withdrew from the partner groups for South Africa, Indonesia and Viet Nam; Germany and other partners said the work would continue, per South African and German government statements."},
      {t:"The United States doubled its pledges", why:"It withdrew its pledges."},
      {t:"All JETPs were dissolved", why:"Other partners continued."},
-     {t:"The United States became the lead partner for Senegal", why:"No such change occurred."}]},
+     {t:"The United States moved its pledges from South Africa to become the lead partner for Senegal", why:"No such change occurred."}]},
    {id:"e4u16-q41", lesson:"e4u16-l5", level:2, q:"What did the IEA’s *Global Critical Minerals Outlook 2026* report about refining?", options:[
-     {t:"Excluding rare earths, the top refining country’s average share rose to 72 per cent in 2025, with China leading most minerals and Indonesia leading nickel", ok:true, why:"Right: concentration increased."},
+     {t:"The top refiner’s average share rose to 72 per cent in 2025", ok:true, why:"Right: excluding rare earths, with China leading most minerals and Indonesia leading nickel. Concentration increased."},
      {t:"Refining is now spread evenly worldwide", why:"The report found greater concentration."},
-     {t:"Indonesia leads refining of all minerals", why:"Indonesia leads nickel; China leads most others."},
-     {t:"Export controls on minerals have disappeared", why:"The report found that mineral codes under Chinese export controls had tripled since 2023."}]},
+     {t:"Indonesia now leads refining of all minerals, not just nickel", why:"Indonesia leads nickel; China leads most others."},
+     {t:"Export controls on minerals have disappeared since 2023", why:"The report found that mineral codes under Chinese export controls had tripled since 2023."}]},
    {id:"e4u16-q42", lesson:"e4u16-l5", level:3, q:"An Indian trade official and an EU official debate CBAM. Which summary attributes their positions accurately?", options:[
-     {t:"The EU says CBAM prevents carbon leakage by pricing imports like domestic production; India and others call it a unilateral measure inconsistent with CBDR-RC", ok:true, why:"Right: each side’s stated case, without judging."},
-     {t:"Both sides agree CBAM is a tax on developing countries", why:"The EU rejects that description."},
+     {t:"The EU says CBAM stops carbon leakage; India calls it unilateral and against CBDR-RC", ok:true, why:"Right: each side’s stated case, without judging. The EU says pricing imports like domestic production prevents carbon leakage; India and others call it a unilateral measure inconsistent with CBDR-RC."},
+     {t:"Both sides agree CBAM is a tax on developing countries, but differ on how high it should be", why:"The EU rejects that description."},
      {t:"India supports CBAM as a model for its own exports", why:"India has criticised CBAM."},
-     {t:"The EU says CBAM is temporary and will end in 2026", why:"Its definitive period began in 2026."}]},
+     {t:"The EU says CBAM is temporary and will end in 2026, while India says it should be permanent", why:"Its definitive period began in 2026."}]},
    {id:"e4u16-q43", lesson:"e4u16-l5", level:2, q:"In Putnam’s two-level game, why can a narrow domestic win-set be a bargaining asset?", options:[
-     {t:"A negotiator can credibly say a concession would be rejected at home, pushing the other side to concede more", ok:true, why:"Right: “my parliament will never accept that” can strengthen one’s hand, at the risk of no deal."},
+     {t:"It makes threats of rejection at home credible", ok:true, why:"Right: a negotiator can credibly say a concession would be rejected at home, pushing the other side to concede more. “My parliament will never accept that” can strengthen one’s hand, at the risk of no deal."},
      {t:"It means the government can sign anything", why:"That would be a broad win-set, which weakens bargaining leverage."},
      {t:"Domestic politics plays no role in Putnam’s model", why:"Domestic ratification is the second level of the game."},
      {t:"It guarantees agreement", why:"Narrow win-sets make agreement less likely."}]},
@@ -1562,8 +1624,8 @@ ICA.addUnit({
      {t:"Because the Paris Agreement bans voting", why:"Paris says nothing to that effect."},
      {t:"Because the COP president decides alone", why:"The president facilitates, but decisions need consensus."}]},
    {id:"e4u16-q45", lesson:"e4u16-l5", level:3, q:"On 12 November 2026 a student writes about COP31. Which sentence is accurate and appropriately dated?", options:[
-     {t:"COP31 opened in Antalya on 9 November 2026 under a Turkish presidency, with Australia leading the negotiations; its outcomes are not yet known", ok:true, why:"Right: settled facts only, with the outcome left open."},
-     {t:"COP31 agreed a fossil fuel phase-out on 10 November 2026", why:"No such outcome had been agreed; the conference was under way."},
+     {t:"COP31 opened in Antalya on 9 November 2026; its outcomes are not yet known", ok:true, why:"Right: settled facts only, with the outcome left open. It is held under a Turkish presidency, with Australia leading the negotiations."},
+     {t:"COP31 agreed a fossil fuel phase-out on 10 November 2026, a day after opening", why:"No such outcome had been agreed; the conference was under way."},
      {t:"COP31 is being held in Australia", why:"It is held in Antalya, Türkiye; Australia leads the negotiations."},
      {t:"COP31 was cancelled", why:"It opened on 9 November 2026."}]}
   ]

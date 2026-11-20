@@ -737,6 +737,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e3u8-q02","e3u8-q05","e3u8-q07","e3u8-q12","e3u8-q15","e3u8-q20","e3u8-q24","e3u8-q29","e3u8-q31","e3u8-q38","e3u8-q41","e3u8-q43"],
+  cpBank:[
+    {id:"e3u8-cp01", lesson:"e3u8-l1", level:1, q:"Cheska writes 大 when she means “dog” (いぬ). What is missing?", options:[
+      {t:"A second flat line on top, as in 天", why:"天 (sky, as in [天気]{てんき}) has an extra line on top. The dog kanji is 大 with a dot instead."},
+      {t:"A roof on top, as in the 宀 of 家", why:"宀 is the roof part, as in [家]{いえ}. 犬 adds only a dot."},
+      {t:"Nothing: 大 can also be read いぬ", why:"大 means “big” (おおきい). “Dog” is a different kanji, 犬."},
+      {t:"A dot at the top right: 犬", ok:true, why:"犬 (いぬ, dog) is 大 with a dot at the top right. It is one of the look-alike pairs to keep apart."}]},
+    {id:"e3u8-cp02", lesson:"e3u8-l2", level:1, q:"Which word means “abroad”, as in a trip abroad?", options:[
+      {t:"[空港]{くうこう}", why:"空港 is an airport: 空 (sky) + 港 (port). You may leave from one, but it doesn’t mean “abroad”."},
+      {t:"[海外]{かいがい}", ok:true, why:"海外 is “abroad, overseas”: 海 (sea) + 外 (outside), the places beyond the sea."},
+      {t:"[世界]{せかい}", why:"世界 means “the world”. [世界中]{せかいじゅう} is “all over the world”."},
+      {t:"[地下]{ちか}", why:"地下 means “underground”, as in [地下鉄]{ちかてつ} (the underground railway)."}]},
+    {id:"e3u8-cp03", lesson:"e3u8-l3", level:1, q:"Rodrigo wants a train that stops at every station. Which name should he look for on the board?", options:[
+      {t:"[急行]{きゅうこう}", why:"急行 is an express (急, hurry): it skips some stations."},
+      {t:"[特急]{とっきゅう}", why:"特急 is a limited express: it skips even more stations and often needs an extra ticket."},
+      {t:"[出発]{しゅっぱつ}", why:"出発 means “departure”. It appears on the board, but it isn’t a type of train."},
+      {t:"[普通]{ふつう}", ok:true, why:"A 普通 train usually stops at every station. Names vary by company, so check the board."}]},
+    {id:"e3u8-cp04", lesson:"e3u8-l1", level:2, q:"A sign says 駐車場 (car park). 駐 has 主 on the right, like 住 (ジュウ) and 注 (チュウ). Which reading is the best guess? (No furigana: that is the point.)", options:[
+      {t:"ちゅうしゃじょう", ok:true, why:"主 hints at a チュウ-like on reading, as in 注. Add 車 (シャ) and 場 (ジョウ): ちゅうしゃじょう, which is right."},
+      {t:"しゅしゃじょう", why:"主 itself is シュ, but its family members drift: 住 is ジュウ, 注 is チュウ. 駐 follows 注."},
+      {t:"すむしゃじょう", why:"すむ is the kun reading of 住. A sound part hints at an on reading, and 駐 doesn’t contain 住."},
+      {t:"ちゅうくるまば", why:"In a three-kanji word with no kana, expect on readings throughout: シャ for 車 and ジョウ for 場."}]},
+    {id:"e3u8-cp05", lesson:"e3u8-l2", level:2, q:"A school map shows 「[音楽室]{おんがくしつ}」. What is it?", options:[
+      {t:"A music shop", why:"A shop usually ends in 〜屋 or 〜店, as in [本屋]{ほんや} and [喫茶店]{きっさてん}."},
+      {t:"A concert hall", why:"A public building usually ends in 〜館, as in [図書館]{としょかん}. 〜室 is a room."},
+      {t:"A music company", why:"A company is [会社]{かいしゃ}, and 〜社 ends company words."},
+      {t:"A room for music lessons", ok:true, why:"〜室 is a room, as in [教室]{きょうしつ} (classroom) and [研究室]{けんきゅうしつ}. [音楽]{おんがく} is music."}]},
+    {id:"e3u8-cp06", lesson:"e3u8-l3", level:2, q:"A notice asks people to gather in front of the station at eight: 「[八時]{はちじ}に[駅]{えき}の[前]{まえ}に＿＿ください。」 Which verb fits?", options:[
+      {t:"[集]{あつ}めて", why:"[集]{あつ}める is transitive: you collect something (を). Here the people themselves gather, so use [集]{あつ}まる."},
+      {t:"[集]{あつ}まって", ok:true, why:"[集]{あつ}まる is intransitive: people gather. Its て-form + ください asks everyone to meet there."},
+      {t:"[始]{はじ}まって", why:"[始]{はじ}まる means “(something) begins”. A notice can’t ask people to begin in front of the station."},
+      {t:"[止]{と}まって", why:"[止]{と}まる means “come to a stop”, as a bus does. The notice is about meeting."}]},
+    {id:"e3u8-cp07", lesson:"e3u8-l4", level:2, q:"At an inn, Cheska can choose a [和室]{わしつ} or a [洋室]{ようしつ}. What is a 和室?", options:[
+      {t:"A Japanese-style room", ok:true, why:"和 means Japanese and 洋 means Western: 和室 and 洋室, like [和服]{わふく} and [洋服]{ようふく}."},
+      {t:"A Western-style room", why:"That is 洋室. 洋 (Western) is the part you know from [洋服]{ようふく} (Western clothes)."},
+      {t:"A meeting room", why:"A meeting room is [会議室]{かいぎしつ}. 室 means room in all three words."},
+      {t:"A room for two people", why:"和 here is about style, not number. 和室 is a Japanese-style room."}]},
+    {id:"e3u8-cp08", lesson:"e3u8-l5", level:2, q:"Cheska wants to use the new verb [通]{かよ}う in her own sentence. Which part of the dictionary entry helps most with the particle it takes?", options:[
+      {t:"The first English meaning", why:"The first meaning doesn’t show particles, and it may not be the meaning she needs."},
+      {t:"An example sentence", ok:true, why:"Example sentences show the particles: 大学に[通]{かよ}う. That is the part people forget."},
+      {t:"The JLPT level tag", why:"JLPT tags on dictionary sites are unofficial estimates, and they say nothing about particles."},
+      {t:"The stroke count of 通", why:"The stroke count helps you find a kanji, not use the word."}]},
+    {id:"e3u8-cp09", lesson:"e3u8-l1", level:3, q:"Cheska wrote 「[駅]{えき}の[前]{まえ}でバスを[持]{も}っています。」 for “I’m waiting for the bus in front of the station.” What should she fix?", options:[
+      {t:"を should be に: バスに", why:"“Wait for” takes を: バスを[待]{ま}つ. The particle is fine."},
+      {t:"持 should be 特, the kanji with 牛", why:"特 (with 牛, cow) means “special”. Waiting is 待, with 彳."},
+      {t:"持 should be 待, the kanji with 彳", ok:true, why:"持 (with 扌, hand) means “hold”. 待 (with 彳) means “wait”: バスを[待]{ま}っています."},
+      {t:"ています should be ます", why:"～ています is right for an action in progress: “I am waiting”."}]},
+    {id:"e3u8-cp10", lesson:"e3u8-l4", level:3, q:"In which sentence is 方 a polite word for a person?", options:[
+      {t:"「[漢字]{かんじ}の[書]{か}き[方]{かた}を[教]{おし}えてください。」", why:"After a verb stem, 〜方 means “the way of doing”: 書き[方]{かた}, how to write."},
+      {t:"「バスの[方]{ほう}が[安]{やす}いです。」", why:"This is the 方 of comparisons: “The bus is cheaper.”"},
+      {t:"「あの[方]{かた}は[先生]{せんせい}です。」", ok:true, why:"方 alone, read かた, is a polite word for a person: “That person is a teacher.”"},
+      {t:"「[駅]{えき}はあちらの[方]{ほう}です。」", why:"Here 方 is a direction or side: “The station is that way.”"}]},
+    {id:"e3u8-cp11", lesson:"e3u8-l5", level:3, q:"A notice: 「さくら[公園]{こうえん}でお[花見]{はなみ}をします。4月4日（土）午前11時～午後3時。雨が[降]{ふ}ったら、5日（日）にします。[飲]{の}み[物]{もの}は[用意]{ようい}します。食べ[物]{もの}は[持]{も}ってきてください。」 Rodrigo wants to go, and it rains on the 4th. What happens?", options:[
+      {t:"It moves to Sunday the 5th, and Rodrigo brings food", ok:true, why:"雨が[降]{ふ}ったら、5日にします: if it rains, it is on the 5th instead. Drinks are provided; food is yours to bring."},
+      {t:"It moves to Sunday the 5th, and Rodrigo brings drinks", why:"[飲]{の}み[物]{もの}は[用意]{ようい}します: the drinks are prepared for you. 食べ[物]{もの}は[持]{も}ってきてください asks for food."},
+      {t:"It is cancelled, and nobody needs to bring anything", why:"Cancelled would be [中止]{ちゅうし}. 5日にします means it moves to another day."},
+      {t:"It goes ahead on the 4th, and Rodrigo brings food", why:"Read the condition: 雨が[降]{ふ}ったら、5日にします. Rain moves it to the 5th."}]},
+    {id:"e3u8-cp12", lesson:"e3u8-l2", level:3, q:"Toby writes 「[今日]{きょう}はぼくの[代]{か}わりに、まりやさんが[源]{げん}さんに[会]{あ}います。」 What does he mean?", options:[
+      {t:"Toby and Mariya will both meet Gen-san today", why:"[代]{か}わりに means “instead of”: one person takes the other’s place."},
+      {t:"Mariya will meet Gen-san today instead of Toby", ok:true, why:"ぼくの[代]{か}わりに is “in my place, instead of me”: Mariya goes, Toby doesn’t."},
+      {t:"Toby will meet Gen-san today instead of Mariya", why:"It is the other way round: ぼくの[代]{か}わりに puts Mariya in Toby’s place."},
+      {t:"Mariya will pay for Toby’s meeting with Gen-san", why:"代 can mean a charge, as in [電気代]{でんきだい}, but [代]{か}わりに means “instead”."}]}
+  ],
   codex:[
    {id:"n4-kanji", title:"The N4 kanji", aka:["JLPT N4 kanji","N4 kanji list","167 kanji"], tags:["japanese","kanji","jlpt","n4"],
     summary:"The 167 kanji that common JLPT N4 lists add to the 80 N5 kanji, grouped by meaning, with how they build on what you know.",
@@ -913,10 +975,10 @@ ICA.addUnit({
      {t:"辶 (moving)", why:"辶 runs along the bottom left, as in 近 and 送. These kanji have 氵 on the left."},
      {t:"宀 (roof)", why:"宀 sits on top, as in 家 and 室. These kanji have 氵 on the left."}]},
    {id:"e3u8-q02", lesson:"e3u8-l1", level:2, q:"Rodrigo meets a new kanji with 辶 along its bottom left. What is the best first guess about it?", options:[
-     {t:"It is probably about moving, roads or distance", ok:true, why:"Right. 辶 (しんにょう) is in 近, 通, 道, 送 and 運. It is a hint to check, not a rule."},
-     {t:"It is about water", why:"Water is 氵 on the left, as in 海."},
+     {t:"It is about moving, roads or distance", ok:true, why:"Right. 辶 (しんにょう) is in 近, 通, 道, 送 and 運. It is a hint to check, not a rule."},
+     {t:"It is about water or liquids", why:"Water is 氵 on the left, as in 海."},
      {t:"It is always read シン", why:"しんにょう is the name of the part, not a reading. The sound usually comes from the other part."},
-     {t:"It is about a person", why:"A person is 亻 on the left, as in 住 and 使."}]},
+     {t:"It is about a person or what people do", why:"A person is 亻 on the left, as in 住 and 使."}]},
    {id:"e3u8-q03", lesson:"e3u8-l1", level:2, q:"時, 持, 待 and 特 all contain 寺. What does this family show about sound parts?", options:[
      {t:"A sound part gives a first guess at the on reading, but it can fail: 待 is タイ and 特 is トク", ok:true, why:"Right. 時 and 持 are ジ like 寺, but 待 and 特 drifted. Check the guess in a real word."},
      {t:"Every kanji with 寺 is read ジ", why:"待 (タイ) and 特 (トク) show that this isn’t true."},
@@ -968,17 +1030,17 @@ ICA.addUnit({
      {t:"[映]{えい}[画]{が}[館]{かん}", why:"A cinema shows films."},
      {t:"[病]{びょう}[院]{いん}", why:"A hospital: 〜院 is an institution."}]},
    {id:"e3u8-q13", lesson:"e3u8-l2", level:1, q:"What does the ending 〜院 usually tell you about a place?", options:[
-     {t:"It is an institution, such as a hospital or a graduate school", ok:true, why:"Right: [病]{びょう}[院]{いん}, [大]{だい}[学]{がく}[院]{いん}, [美]{び}[容]{よう}[院]{いん}."},
-     {t:"It is a shop", why:"Shops are usually 〜屋 or 〜店."},
-     {t:"It is a room", why:"A room is 〜室: [教]{きょう}[室]{しつ}."},
-     {t:"It is a park", why:"A park is [公]{こう}[園]{えん}."}]},
+     {t:"It is an institution", ok:true, why:"Right. It is an institution, such as a hospital or a graduate school: [病]{びょう}[院]{いん}, [大]{だい}[学]{がく}[院]{いん}, [美]{び}[容]{よう}[院]{いん}."},
+     {t:"It is a shop or a restaurant", why:"Shops are usually 〜屋 or 〜店."},
+     {t:"It is a room in a building", why:"A room is 〜室: [教]{きょう}[室]{しつ}."},
+     {t:"It is a park or a garden", why:"A park is [公]{こう}[園]{えん}."}]},
    {id:"e3u8-q14", lesson:"e3u8-l2", level:2, q:"Which statement about [会]{かい}[社]{しゃ} and [社]{しゃ}[会]{かい} is right?", options:[
      {t:"[会]{かい}[社]{しゃ} means company and [社]{しゃ}[会]{かい} means society", ok:true, why:"Right. The same two kanji in a different order make a different word."},
      {t:"They are two spellings of the same word", why:"Kanji order matters: these are two different, very common words."},
      {t:"[会]{かい}[社]{しゃ} means society and [社]{しゃ}[会]{かい} means company", why:"The other way round: [会]{かい}[社]{しゃ} is a company, [社]{しゃ}[会]{かい} is society."},
      {t:"Only [会]{かい}[社]{しゃ} is a real word", why:"[社]{しゃ}[会]{かい} (society) is a very common word too."}]},
    {id:"e3u8-q15", lesson:"e3u8-l2", level:3, q:"Yến writes: 「[夜]{よる}は[雨]{あめ}が[降]{ふ}るそうなので、[夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう。」 What is she suggesting?", options:[
-     {t:"Going home by early evening, because rain is expected at night", ok:true, why:"Right. 〜そう after a plain verb reports what she heard, ので gives the reason, and [夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう is the suggestion."},
+     {t:"Going home early, before the rain", ok:true, why:"Right. Rain is expected at night, so she suggests going home by early evening. 〜そう after a plain verb reports what she heard, ので gives the reason, and [夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう is the suggestion."},
      {t:"Going home at night, after the rain", why:"She suggests [夕]{ゆう}[方]{がた}, early evening, before the rain at night."},
      {t:"Staying in because it is raining now", why:"The rain is expected at night (夜); it isn’t raining now."},
      {t:"Meeting in the evening", why:"[帰]{かえ}りましょう is “let’s go home”, not “let’s meet”."}]},
@@ -1039,7 +1101,7 @@ ICA.addUnit({
      {t:"[借]{か}りています", why:"[借]{か}りる is to borrow."}]},
    {id:"e3u8-q27", lesson:"e3u8-l3", level:3, q:"Aoi’s text says: 「[火]{か}[曜]{よう}[日]{び}と[木]{もく}[曜]{よう}日は、[家]{いえ}に[帰]{かえ}る[前]{まえ}に[英]{えい}[会]{かい}[話]{わ}の[教]{きょう}[室]{しつ}に[通]{かよ}っています。」 What does she do on Tuesdays?", options:[
      {t:"She goes to an English conversation class before going home", ok:true, why:"Right. [帰]{かえ}る前に is “before going home”, and 〜に[通]{かよ}っています is going somewhere regularly."},
-     {t:"He teaches English at home", why:"[教]{きょう}[室]{しつ} here is a class she goes to ([通]{かよ}っています), not one she gives at home."},
+     {t:"She teaches English at home", why:"[教]{きょう}[室]{しつ} here is a class she goes to ([通]{かよ}っています), not one she gives at home."},
      {t:"She goes home early and studies English", why:"She goes to the class before she goes home."},
      {t:"She goes to an English class in the morning", why:"The text says [帰]{かえ}る前に: after work, before going home."}]},
    {id:"e3u8-q28", lesson:"e3u8-l4", level:1, q:"What does [以]{い}[外]{がい} mean?", options:[
@@ -1064,7 +1126,7 @@ ICA.addUnit({
      {t:"Say こうりつ for both", why:"[公]{こう}[立]{りつ} means public in general, and it would hide the difference."}]},
    {id:"e3u8-q32", lesson:"e3u8-l4", level:1, q:"食べ物, 動物 and 荷物 all contain 物. How many different readings of 物 do they show?", options:[
      {t:"Three: もの, ぶつ and もつ", ok:true, why:"Right: たべもの, どうぶつ, にもつ. The word decides the reading."},
-     {t:"One: もの", why:"Only [食]{た}べ[物]{もの} uses もの. [動]{どう}[物]{ぶつ} uses ブツ and [荷]{に}[物]{もつ} uses モツ."},
+     {t:"One: もの, the same in every word", why:"Only [食]{た}べ[物]{もの} uses もの. [動]{どう}[物]{ぶつ} uses ブツ and [荷]{に}[物]{もつ} uses モツ."},
      {t:"Two: もの and ぶつ", why:"[荷]{に}[物]{もつ} adds a third: モツ."},
      {t:"Four", why:"There are three here: もの, ぶつ and もつ."}]},
    {id:"e3u8-q33", lesson:"e3u8-l4", level:2, q:"How is 人気 read in 「[夜]{よる}は人気のない[道]{みち}を[歩]{ある}かないでください」 (please don’t walk on a ___ road at night)?", options:[
@@ -1074,9 +1136,9 @@ ICA.addUnit({
      {t:"ひとき", why:"ひとき is not a reading of 人気."}]},
    {id:"e3u8-q34", lesson:"e3u8-l4", level:1, q:"What does [不]{ふ}[便]{べん} mean?", options:[
      {t:"Inconvenient", ok:true, why:"Right. 不 (not) + 便 (convenience)."},
-     {t:"Worried", why:"Worried is [不]{ふ}[安]{あん}."},
+     {t:"Worried, uneasy", why:"Worried is [不]{ふ}[安]{あん}."},
      {t:"A shortage", why:"A shortage is [不]{ふ}[足]{そく}."},
-     {t:"Unkind", why:"Unkind is [不]{ふ}[親]{しん}[切]{せつ}."}]},
+     {t:"Unkind, unhelpful", why:"Unkind is [不]{ふ}[親]{しん}[切]{せつ}."}]},
    {id:"e3u8-q35", lesson:"e3u8-l4", level:2, q:"A colleague asks: 「[来]{らい}[週]{しゅう}の[水]{すい}[曜]{よう}[日]{び}、[空]{あ}いていますか。」 What is she asking?", options:[
      {t:"Whether you are free next Wednesday", ok:true, why:"Right. A time that is [空]{あ}いている is free."},
      {t:"Whether the office is open next Wednesday", why:"A shop or office being open is [開]{あ}いている, with 開."},
@@ -1128,9 +1190,9 @@ ICA.addUnit({
      {t:"なって", why:"なって is part of 分からなくなってしまった; it describes the change, but でも signals the turn."},
      {t:"しかった", why:"That is just the end of the adjective [楽]{たの}しかった (was fun)."}]},
    {id:"e3u8-q45", lesson:"e3u8-l5", level:2, q:"In the Kanji Lab, what happens when you press Again after a card?", options:[
-     {t:"The card comes back once more at the end of today’s session, and again tomorrow", ok:true, why:"Right. Again puts the card back in box 1, so it returns tomorrow, with one more try today."},
+     {t:"The card comes back later today and tomorrow", ok:true, why:"Right. Again puts the card back in box 1, so it returns tomorrow, with one more try today."},
      {t:"The card is deleted from the deck", why:"Cards are never deleted; Again just brings them back sooner."},
-     {t:"The card moves up one box", why:"That is Good. Again sends it back to box 1."},
+     {t:"The card moves up one box, so it waits longer", why:"That is Good. Again sends it back to box 1."},
      {t:"The card comes back in 30 days", why:"30 days is the last box, for cards you know very well."}]}
   ]
 });

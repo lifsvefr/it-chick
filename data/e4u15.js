@@ -1,6 +1,6 @@
-/* International Studies · Unit 15 · International political economy: trade, money and finance */
+/* International Studies · Unit 16 · International political economy: trade, money and finance */
 ICA.addUnit({
-  id:"e4u15", track:"e4", n:15, title:"International political economy: trade, money and finance", icon:"💱",
+  id:"e4u15", track:"e4", n:16, title:"International political economy: trade, money and finance", icon:"💱",
   blurb:"International political economy at seminar level: how scholars study power in the world economy, from Susan Strange’s structural power to hegemonic stability and the Open Economy Politics debate; the trade regime from GATT to a WTO without an appeals court, mega-regional agreements and the tariff shifts of 2025–2026; the dollar, exchange rates, the IMF and financial crises; global value chains and geoeconomics; and sovereign debt, development banks, China’s lending and the 2025 Seville conference, all told neutrally and dated.",
   goals:[
     "Explain how IPE studies power in the world economy, using Strange’s structural power, the three traditions and the hegemonic stability debate",
@@ -194,7 +194,7 @@ ICA.addUnit({
         ["Specialise: Altavia 80 days on lamps; Bremo all coffee","480, 60","0, 200"],
         ["Trade 95 sacks for 95 lamps","385, 155","95, 105"]
       ]},
-      "World output rises from 350 lamps and 250 sacks to 480 and 260, and after trade **both** countries have more of **both** goods. Any price between half a sack and 2 sacks per lamp leaves both better off; where it settles is a matter of bargaining power.",
+      "World output rises from 350 lamps and 250 sacks to 480 and 260, and after trade **both** countries have more of **both** goods. Any price between half a sack and 2 sacks per lamp leaves both better off; where it settles is a matter of bargaining power. Unit 14 sets out the same reasoning with supply and demand ({{gains-from-trade}}) and shows what a tariff or quota does to prices, winners and losers ({{tariffs-and-quotas}}).",
       {h:"Inside each country"},
       "Now look inside Bremo. Its lamp workshops close. The **[[stolper-samuelson|Stolper–Samuelson]]** theorem (1941) generalises the point: opening trade raises the returns of the factor a country has in abundance and lowers the returns of the scarce one. National gains can coexist with concentrated local losses.",
       "David Autor, David Dorn and Gordon Hanson’s “The China Syndrome” (*American Economic Review*, 2013) found that US regions more exposed to Chinese imports after 2000 suffered lasting job losses and lower wages, the [[china-shock|“China shock”]]. Others reply that the same trade cut prices for consumers, supported jobs elsewhere and lifted hundreds of millions out of poverty in China. Both findings can be true; which one you stress is a political choice.",
@@ -268,10 +268,10 @@ ICA.addUnit({
       {t:"MC14 in Yaoundé ends without a declaration", why:"March 2026."}
     ]},
     {id:"e4u15-l2-x4", type:"mcq", q:"A WTO panel rules against Country K, which is not part of the MPIA. K files an appeal. What happens?", options:[
-      {t:"The appeal goes “into the void”: no Appellate Body can hear it, so the panel ruling never becomes binding", ok:true, why:"Right. This is the main effect of the Appellate Body’s paralysis since December 2019."},
+      {t:"It goes “into the void”, and the ruling never becomes binding", ok:true, why:"Right. No Appellate Body can hear it, so the panel ruling never becomes binding. This is the main effect of the Appellate Body’s paralysis since December 2019."},
       {t:"The MPIA hears the appeal automatically", why:"The MPIA covers only members that have joined it, and both parties must be participants."},
       {t:"The panel ruling becomes binding after 90 days anyway", why:"Under the WTO’s rules an appealed report cannot be adopted until the appeal is decided."},
-      {t:"The International Court of Justice takes over the case", why:"The ICJ has no role in WTO disputes."}
+      {t:"The International Court of Justice takes over the case on appeal", why:"The ICJ has no role in WTO disputes."}
     ]},
     {id:"e4u15-l2-x5", type:"match", q:"Match each arrangement with its feature.", pairs:[
       ["EU single market","Free movement of goods, services, capital and people, with a common court","In place since 1993."],
@@ -355,7 +355,7 @@ ICA.addUnit({
     {h:"The impossible trinity", body:[
       "Why do countries choose so differently? Economists since Robert Mundell and Marcus Fleming in the early 1960s have described the [[impossible-trinity|impossible trinity]] (or monetary trilemma): a country can have only two of three things at once.",
       {fig:'<svg viewBox="0 0 340 416"><polygon class="d-panel" points="170,42 40,230 300,230" stroke-width="2"/><text x="170" y="28" text-anchor="middle">Fixed exchange rate</text><text x="64" y="252" text-anchor="middle">Free capital</text><text x="64" y="268" text-anchor="middle">movement</text><text x="276" y="252" text-anchor="middle">Independent</text><text x="276" y="268" text-anchor="middle">monetary policy</text><text x="94" y="142" text-anchor="middle">A</text><text x="246" y="142" text-anchor="middle">B</text><text x="170" y="222" text-anchor="middle">C</text><text class="s" x="170" y="150" text-anchor="middle">Choose two</text><text class="s" x="170" y="166" text-anchor="middle">corners</text><rect class="d-rose" x="8" y="284" width="324" height="40" rx="6" stroke-width="1.5"/><text x="20" y="309">A</text><text class="s" x="40" y="300">Fixed rate + free capital: no own</text><text class="s" x="40" y="316">monetary policy (Hong Kong’s peg)</text><rect class="d-gold" x="8" y="330" width="324" height="40" rx="6" stroke-width="1.5"/><text x="20" y="355">B</text><text class="s" x="40" y="346">Fixed rate + own policy: controls on</text><text class="s" x="40" y="362">capital (the Bretton Woods era)</text><rect class="d-lup" x="8" y="376" width="324" height="34" rx="6" stroke-width="1.5"/><text x="20" y="398">C</text><text class="s" x="40" y="390">Free capital + own policy: a floating</text><text class="s" x="40" y="405">currency (Japan, United States)</text></svg>', alt:"A triangle with three corners: fixed exchange rate at the top, free capital movement at bottom left, independent monetary policy at bottom right. A note in the middle says choose two corners. Side A joins fixed rate and free capital: no monetary policy of your own, as with Hong Kong’s peg. Side B joins fixed rate and independent policy: controls on capital, as in the Bretton Woods era. Side C joins free capital and independent policy: a floating currency, as in Japan and the United States.", cap:"The monetary trilemma. Unit 1’s Rodrik trilemma is a different, political one, about globalisation, democracy and sovereignty."},
-      "Hong Kong and euro area members chose side A: they cannot set interest rates to suit themselves. Bretton Woods chose B. Most large economies today choose C. China has long sat between B and C, managing its currency while limiting capital flows. In the Asian crisis Malaysia, which did not take an IMF programme, imposed [[capital-controls|capital controls]] in September 1998 to defend a fixed rate, against much expert advice at the time; in 2012 the IMF itself accepted that such controls can be appropriate in some circumstances.",
+      "Hong Kong and euro area members chose side A: they cannot set interest rates to suit themselves. Bretton Woods chose B. Most large economies today choose C, though many sit somewhere in between ({{exchange-rate-regimes}}), and the capital flows at stake show up in the {{balance-of-payments}} (both in Unit 14). China has long sat between B and C, managing its currency while limiting capital flows. In the Asian crisis Malaysia, which did not take an IMF programme, imposed [[capital-controls|capital controls]] in September 1998 to defend a fixed rate, against much expert advice at the time; in 2012 the IMF itself accepted that such controls can be appropriate in some circumstances.",
       "Hélène Rey added a twist (“Dilemma not Trilemma”, 2013): because a global financial cycle driven by US monetary policy moves money everywhere, even floating countries struggle to control their own conditions unless they also manage capital flows."
     ]},
     {h:"The dollar’s international roles", body:[
@@ -389,7 +389,7 @@ ICA.addUnit({
       {table:[
         ["Crisis","What happened","Lessons drawn"],
         ["Latin American debt, 1982","US interest rates soared; Mexico announced in August 1982 that it could not pay; a “lost decade” followed until the Brady Plan (1989)","Borrowing in dollars at floating rates is dangerous"],
-        ["Asian, 1997–98","Thailand floated the baht on 2 July 1997; money fled Indonesia, Korea and others","[[sudden-stop|Sudden stops]] and [[financial-contagion|contagion]]; Asia built reserves and the Chiang Mai Initiative (2000)"],
+        ["Asian, 1997–98","Thailand floated the baht on 2 July 1997; money fled Indonesia, Korea and others (see {{asian-financial-crisis}})","[[sudden-stop|Sudden stops]] and [[financial-contagion|contagion]]; Asia built reserves and the Chiang Mai Initiative (2000)"],
         ["Global, 2008","US housing losses froze world credit after Lehman Brothers collapsed (see [[global-financial-crisis]])","Fed swap lines, the G20 at leaders’ level, tighter bank rules"],
         ["Euro area, 2010–12","Greece, Ireland, Portugal and others lost market access; no national currency to devalue","A monetary union needs crisis tools; ECB’s “whatever it takes” (July 2012)"]
       ]},
@@ -527,7 +527,7 @@ ICA.addUnit({
       "Responses include the EU’s [[anti-coercion-instrument|Anti-Coercion Instrument]] (in force December 2023) and the G7’s Coordination Platform on Economic Coercion (2023)."
     ]},
     {h:"Critical minerals and the arguments", body:[
-      "[[critical-minerals|Critical minerals]] are those essential to key technologies and at risk of supply disruption: lithium, cobalt, nickel, graphite, rare earths and others. The International Energy Agency’s *Global Critical Minerals Outlook 2025* found China the leading refiner of 19 of 20 key energy minerals, with an average share of about 70%, and the top three refining countries holding 86% of supply on average in 2024. Producer countries are acting too: Indonesia’s nickel ore ban (Lesson 1), and a temporary suspension of cobalt exports by the Democratic Republic of the Congo (2025). Unit 16 looks at minerals and the energy transition (see {{energy-transition-politics}}).",
+      "[[critical-minerals|Critical minerals]] are those essential to key technologies and at risk of supply disruption: lithium, cobalt, nickel, graphite, rare earths and others. The International Energy Agency’s *Global Critical Minerals Outlook 2025* found China the leading refiner of 19 of 20 key energy minerals, with an average share of about 70%, and the top three refining countries holding 86% of supply on average in 2024. Producer countries are acting too: Indonesia’s nickel ore ban (Lesson 1), and a temporary suspension of cobalt exports by the Democratic Republic of the Congo (2025). Unit 17 looks at minerals and the energy transition (see {{energy-transition-politics}}).",
       {table:[
         ["Security case","Efficiency and openness case"],
         ["Dependence on one supplier is a vulnerability that can be used against you","Diversification is costly; duplicating chains raises prices and slows the energy transition"],
@@ -666,7 +666,7 @@ ICA.addUnit({
         ["Hambantota port: in 2017 Sri Lanka leased it to a Chinese firm for 99 years","Sri Lanka’s government had proposed the port; the lease raised money that helped pay other debts (Brautigam and Rithmire, 2021)"],
         ["Opaque contracts and collateral give leverage","Lee Jones and Shahar Hameiri (Chatham House, 2020): recipient governments drive many projects"]
       ]},
-      "A careful position separates questions. Was lending opaque and sometimes costly? Much evidence says yes. Was it designed to seize strategic assets? The evidence for that is weak. China’s government rejects the label and points to its part in the G20 debt initiatives. Unit 14 discusses China among [[non-dac-donors|non-DAC donors]]."
+      "A careful position separates questions. Was lending opaque and sometimes costly? Much evidence says yes. Was it designed to seize strategic assets? The evidence for that is weak. China’s government rejects the label and points to its part in the G20 debt initiatives. Unit 15 discusses China among [[non-dac-donors|non-DAC donors]]."
     ]},
     {h:"Financing for development: from Monterrey to Seville", body:[
       "The UN’s [[financing-for-development|Financing for Development]] process brings all the money questions together: aid, tax, trade, debt and the international financial system. Its conferences produced the Monterrey Consensus (2002), the Doha Declaration (2008) and the Addis Ababa Action Agenda (2015).",
@@ -698,8 +698,8 @@ ICA.addUnit({
       ["Climate-resilient debt clause","Pauses payments after a natural disaster","Promoted at Seville in 2025."]
     ]},
     {id:"e4u15-l5-x4", type:"mcq", q:"Which statement best reflects Brautigam and Rithmire’s (2021) account of the Hambantota port?", options:[
-      {t:"Sri Lanka’s government proposed the port, and the 2017 lease raised money that helped it pay other debts", ok:true, why:"Right. Their account challenges the claim that China designed the loan to seize the port."},
-      {t:"China seized the port after Sri Lanka defaulted on its debts in 2022", why:"The lease was in 2017, five years before Sri Lanka’s default, and it was a lease, not a seizure."},
+      {t:"Sri Lanka’s government proposed the port, and the lease raised needed money", ok:true, why:"Right. The 2017 lease raised money that helped it pay other debts. Their account challenges the claim that China designed the loan to seize the port."},
+      {t:"China seized the port after Sri Lanka defaulted on its debts to China in 2022", why:"The lease was in 2017, five years before Sri Lanka’s default, and it was a lease, not a seizure."},
       {t:"The port was built with a World Bank loan", why:"It was financed by Chinese loans."},
       {t:"China forgave all of Sri Lanka’s debt in exchange for the port", why:"No such cancellation took place."}
     ]},
@@ -722,9 +722,9 @@ ICA.addUnit({
       {t:"China has taken part in creditor committees under the G20 Common Framework.", flag:false, why:"Supported: it co-chaired committees for cases such as Zambia."}
     ]},
     {id:"e4u15-l5-x7", type:"mcq", q:"Sri Lanka defaulted in 2022 but did not restructure under the G20 Common Framework. Why?", options:[
-      {t:"The Framework is open only to the poorer countries that were eligible for the earlier debt service suspension (DSSI), and Sri Lanka was not one of them", ok:true, why:"Right. Eligibility followed the DSSI list of mostly low-income countries; middle-income Sri Lanka was outside it. This gap is one of the main criticisms of the Framework."},
+      {t:"Only poorer countries eligible for the DSSI can use it", ok:true, why:"Right. The Framework is open only to countries that were eligible for the earlier debt service suspension (DSSI), mostly low-income; middle-income Sri Lanka was outside it. This gap is one of the main criticisms of the Framework."},
       {t:"China refused to let it join", why:"Eligibility is set by the Framework’s rules, not by one creditor."},
-      {t:"Sri Lanka owed no money to official creditors", why:"It owed large sums to China, Japan, India and others."},
+      {t:"Sri Lanka owed no money to official creditors, only to bondholders", why:"It owed large sums to China, Japan, India and others."},
       {t:"The Framework closed in 2021", why:"The suspension initiative ended in 2021; the Framework continued."}
     ]}
    ],
@@ -758,6 +758,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u15-q02","e4u15-q06","e4u15-q08","e4u15-q12","e4u15-q15","e4u15-q19","e4u15-q23","e4u15-q27","e4u15-q31","e4u15-q35","e4u15-q39","e4u15-q43"],
+  cpBank:[
+   {id:"e4u15-cp01", lesson:"e4u15-l1", level:1, q:"Nadia asks how a trade shock that closed export factories changed unpaid care work at home, and whether women or men absorbed the extra work. Which approach is she using?", options:[
+     {t:"Open Economy Politics", why:"OEP derives interests from economic theory and traces them through institutions and bargaining. Unpaid care work is not its focus."},
+     {t:"Ecological political economy", why:"That approach asks what growth does to the planet, not how care work is shared."},
+     {t:"Feminist IPE", ok:true, why:"Yes. Feminist IPE asks how the world economy depends on unpaid care work and why shocks fall differently on women and men."},
+     {t:"Constructivist IPE", why:"Constructivist IPE studies how economic ideas spread through institutions, not the division of care work."}]},
+   {id:"e4u15-cp02", lesson:"e4u15-l1", level:2, q:"A dominant economy declines in relative terms. No other state takes over its role, yet members keep following a trade body’s rules because it gives them information and lowers costs. Which critique of hegemonic stability theory does this support?", options:[
+     {t:"Krasner’s: a dominant, productive state builds an open system", why:"Krasner’s argument is a version of hegemonic stability theory, not a critique of it."},
+     {t:"Keohane’s *After Hegemony*: institutions can sustain cooperation after decline", ok:true, why:"Right. The institution itself sustains cooperation, without a new hegemon. This is the neoliberal institutionalist reply."},
+     {t:"Snidal’s: a small group of states can jointly provide the public goods a hegemon did", why:"Snidal’s point needs a group of states taking on the stabiliser’s role. Here no state or group takes over."},
+     {t:"Kindleberger’s: the world economy needs a single stabiliser", why:"Kindleberger argued the opposite: without a stabiliser the system breaks down, as in the 1930s."}]},
+   {id:"e4u15-cp03", lesson:"e4u15-l2", level:1, q:"Inside the WTO, seventy members agree new rules on digital trade that bind only themselves. The other members stay out. What kind of agreement is this?", options:[
+     {t:"A single undertaking", why:"A single undertaking means all members accept almost all agreements as one package, as in the Uruguay Round. Here most members stay out."},
+     {t:"A regional trade agreement", why:"Regional agreements are separate free trade deals among particular partners, such as RCEP. This deal is a set of rules agreed by willing members within the WTO itself."},
+     {t:"A most-favoured-nation commitment", why:"MFN means treating all members alike, which is the opposite of a deal that binds only some."},
+     {t:"A plurilateral agreement", ok:true, why:"Yes. Plurilateral agreements bind only willing members, like the Information Technology Agreement and newer texts on e-commerce."}]},
+   {id:"e4u15-cp04", lesson:"e4u15-l2", level:3, q:"Country Z bans imports of a rival’s telecom equipment, citing “essential security interests”. The rival takes the case to the WTO. Drawing on Lessons 2 and 4, what is the central legal dispute?", options:[
+     {t:"Whether a panel may review the claim, or each member alone judges its own security", ok:true, why:"Right. In *Russia – Traffic in Transit* a panel said it could review good faith; the United States argues the exception is self-judging. Economic security laws make this more pressing."},
+     {t:"Whether the ban breaks the rules of origin in a regional trade agreement both have signed", why:"Rules of origin decide whether goods qualify for a regional deal’s tariffs. The dispute here is about a security exception."},
+     {t:"Whether the rival has a comparative advantage in telecom equipment", why:"Comparative advantage explains gains from trade; it does not decide whether a security measure is lawful."},
+     {t:"Whether the MPIA covers security disputes automatically", why:"The MPIA is an appeal arrangement for members that join it. It does not settle whether security claims can be reviewed."}]},
+   {id:"e4u15-cp05", lesson:"e4u15-l3", level:2, q:"Country S floats its currency and allows free capital flows, so in theory it controls its own interest rates. Yet when US rates rise, money flows out and local credit tightens anyway. Whose argument explains this best?", options:[
+     {t:"Triffin’s dilemma", why:"Triffin explained why the dollar–gold link under Bretton Woods could not last. He was not describing floating countries today."},
+     {t:"Rey’s “Dilemma not Trilemma”", ok:true, why:"Yes. Rey argued that a global financial cycle driven by US monetary policy limits even floating countries unless they also manage capital flows."},
+     {t:"Eichengreen and Hausmann’s “original sin”", why:"Original sin is about borrowing abroad in foreign currency. Nothing in the scenario mentions the currency of S’s debts."},
+     {t:"Polanyi’s double movement", why:"Polanyi described society pushing back against markets. It does not explain capital flowing out when US rates rise."}]},
+   {id:"e4u15-cp06", lesson:"e4u15-l3", level:2, q:"Governments A and B owe the same amount abroad. A borrowed in its own currency; B borrowed in dollars. Both currencies fall sharply against the dollar. Whose debt burden rises in local-currency terms, and why?", options:[
+     {t:"A’s, because any currency fall raises all debts", why:"A owes in its own currency, so the amount it must repay in local terms does not change when the currency falls."},
+     {t:"Neither, because exchange rates do not affect the size of any debt", why:"They do. When debt is in dollars, a weaker local currency means more local currency is needed to repay it."},
+     {t:"Both equally, because they owe the same amount", why:"The currency of the debt matters. Only the dollar debt grows in local terms."},
+     {t:"B’s, because its debt is in dollars (“original sin”)", ok:true, why:"Right. Countries that cannot borrow abroad in their own currency see a currency fall swell their debt, while tax revenue stays in local currency."}]},
+   {id:"e4u15-cp07", lesson:"e4u15-l3", level:3, q:"Under Bretton Woods, governments kept fixed exchange rates and also ran their own full-employment policies. Drawing on Lessons 1 and 3, what made that combination possible?", options:[
+     {t:"Free capital flows, which let money move to wherever it was needed", why:"Free capital plus a fixed rate would have removed their own monetary policy. That is side A of the trinity, not Bretton Woods."},
+     {t:"Floating exchange rates, which absorbed shocks", why:"Rates were fixed to the dollar until the early 1970s. Floating came after the system broke down."},
+     {t:"Capital controls, part of the embedded liberalism of the post-1945 order", ok:true, why:"Yes. With capital controls they chose side B of the impossible trinity. Ruggie called this domestic room inside an open order embedded liberalism."},
+     {t:"A single world currency issued by the IMF", why:"The SDR came later and plays a modest role. Currencies were pegged to the dollar, which was linked to gold."}]},
+   {id:"e4u15-cp08", lesson:"e4u15-l4", level:1, q:"A small country sends 60% of its exports to a large neighbour. For the neighbour, that trade is about 1% of its total. What would Hirschman say about this relationship?", options:[
+     {t:"Asymmetric dependence gives the large neighbour power over the small one", ok:true, why:"Right. Hirschman showed how 1930s Germany used such lopsided trade with small partners: asymmetric dependence is power."},
+     {t:"Trade is mutually beneficial, so neither side gains power", why:"Trade can benefit both and still create power. Hirschman’s point is that the side that depends less gains leverage."},
+     {t:"The small country has the power, because the large neighbour needs its goods", why:"The small country depends far more on the neighbour than the reverse, so it is the more vulnerable side."},
+     {t:"Power depends only on military strength, not trade", why:"That is the “high politics” view that IPE rejects. Economic ties can be a source of power."}]},
+   {id:"e4u15-cp09", lesson:"e4u15-l4", level:2, q:"A government plans to subsidise a domestic refinery for a critical mineral, at three times the cost of importing it. Which argument belongs to the **efficiency and openness** side of the debate?", options:[
+     {t:"Markets underprice the risk that a supplier will cut us off", why:"This is part of the security case for subsidising domestic supply."},
+     {t:"Dependence on one supplier is a vulnerability that can be used against us", why:"This is the core security argument, drawing on Hirschman and Farrell–Newman."},
+     {t:"Duplicating supply chains raises prices and slows the energy transition", ok:true, why:"Yes. The efficiency case also warns that governments may overstate risks and protect favoured firms under a security label."},
+     {t:"Welcome investment from all sides and bargain for processing at home", why:"This is the third, hedging position many developing countries take, not the efficiency case."}]},
+   {id:"e4u15-cp10", lesson:"e4u15-l4", level:3, q:"A politician says: “Our big trade deficit with Country A in assembled laptops proves A trades unfairly.” Drawing on Lessons 2 and 4, which reply is strongest?", options:[
+     {t:"The politician is right: a bilateral deficit is direct proof of unfair practices", why:"Critics of this view argue overall deficits reflect saving and investment, and gross figures can misplace where value was created."},
+     {t:"Deficits only matter for trade in services, so a deficit in laptops tells us nothing", why:"Nothing in the unit supports this. The issue is how goods trade is measured and what drives deficits."},
+     {t:"Laptops come from buyer-driven chains, so they are left out of official trade statistics", why:"Gereffi’s chain types describe who runs a chain. All goods count in trade statistics."},
+     {t:"Value-added data may place most value elsewhere, and critics link deficits to saving", ok:true, why:"Right. The iPhone example shows gross figures can overstate one country’s share, and Lesson 2 attributes the saving-and-investment view to critics of tariffs."}]},
+   {id:"e4u15-cp11", lesson:"e4u15-l5", level:2, q:"An analyst says a government in debt trouble should keep paying its bondholders, because honouring contracts keeps future borrowing cheap and default is costly. Which tradition from Lesson 1 is this?", options:[
+     {t:"Economic nationalism", why:"Nationalists stress sovereignty and the leverage creditors gain over policy, not honouring contracts to keep markets open."},
+     {t:"Liberalism", ok:true, why:"Yes. Liberals stress contracts, market discipline and the cost of default to future borrowing."},
+     {t:"The critical tradition", why:"Critical scholars see debt as structural power in the finance structure and ask who pays for adjustment."},
+     {t:"Open Economy Politics", why:"OEP is a method for explaining policy through interests and institutions, not one of Gilpin’s three traditions."}]},
+   {id:"e4u15-cp12", lesson:"e4u15-l5", level:3, q:"A study of an invented state lender finds confidential contracts and collateral accounts, but no evidence that loans were planned to seize borrowers’ assets. Which conclusion follows the lesson’s method?", options:[
+     {t:"The lender practises debt-trap diplomacy, because confidential contracts prove a plan to seize assets", why:"This merges two questions. Opaque contracts are evidence of opacity, not of a design to seize assets."},
+     {t:"The lending is opaque and may give leverage, but the evidence does not show a design to seize assets", ok:true, why:"Right. The careful position separates the questions: was lending opaque? was it designed to seize assets? Each needs its own evidence."},
+     {t:"Nothing can be concluded, because all lending data are unreliable", why:"Researchers such as AidData and Gelpern’s team draw conclusions from project records and contracts. The study gives evidence on one question."},
+     {t:"The lender is blameless, because no asset seizure was planned", why:"This ignores the finding about confidential contracts and collateral, which raises real concerns about leverage."}]}
+  ],
   codex:[
    {id:"ipe-schools", title:"IPE as a field: traditions and schools", aka:["international political economy","global political economy","Open Economy Politics","British school of IPE","three traditions of IPE"], tags:["international political economy","theory"],
     summary:"How IPE emerged in the 1970s, its three classic traditions, and the debate between Open Economy Politics and the “British school”.",
@@ -1306,23 +1368,23 @@ ICA.addUnit({
      {t:"Charles Kindleberger, *The World in Depression* (1973)", why:"Kindleberger argued that the world economy needs a stabiliser."},
      {t:"Robert Keohane, *After Hegemony* (1984)", why:"Keohane argued that institutions can sustain cooperation after hegemony."}]},
    {id:"e4u15-q02", lesson:"e4u15-l1", level:2, q:"A state controls the payments messaging network that most banks use. Without making any demand, its rules decide which foreign banks can take part in international finance. Which concept fits best?", options:[
-     {t:"Structural power in the finance structure", ok:true, why:"Yes. It shapes the framework others must operate in, rather than bargaining over one decision."},
+     {t:"Structural power", ok:true, why:"Yes: structural power in the finance structure. It shapes the framework others must operate in, rather than bargaining over one decision."},
      {t:"Relational power", why:"Relational power is A getting B to do something specific; here no demand is made."},
      {t:"The double movement", why:"Polanyi’s concept concerns society’s reaction against market expansion."},
      {t:"Embedded liberalism", why:"That describes the postwar compromise between open trade and domestic welfare."}]},
    {id:"e4u15-q03", lesson:"e4u15-l1", level:1, q:"What did John Ruggie (1982) mean by “embedded liberalism”?", options:[
-     {t:"Open trade abroad combined with welfare states, capital controls and full-employment policies at home", ok:true, why:"Right. Liberalism was “embedded” in domestic social protection."},
+     {t:"Open trade abroad, with welfare and full employment at home", ok:true, why:"Right: open trade combined with welfare states, capital controls and full-employment policies at home. Liberalism was “embedded” in domestic social protection."},
      {t:"Full liberalisation of trade and capital with no domestic intervention", why:"That is closer to what critics later called neoliberal globalisation, the opposite of Ruggie’s compromise."},
      {t:"A world economy run by one hegemon", why:"That is hegemonic stability theory."},
      {t:"Free trade only within regional blocs", why:"Ruggie described the multilateral postwar order, not regional blocs."}]},
    {id:"e4u15-q04", lesson:"e4u15-l1", level:1, q:"In David Lake’s account of Open Economy Politics, what comes first in the analysis?", options:[
-     {t:"Actors’ interests, derived from economic theory", ok:true, why:"Correct. OEP then turns to domestic institutions and finally to international bargaining."},
+     {t:"Actors’ interests", ok:true, why:"Correct: interests derived from economic theory. OEP then turns to domestic institutions and finally to international bargaining."},
      {t:"International bargaining between states", why:"That is the final step of the OEP chain."},
      {t:"The history of world capitalism", why:"That is closer to the British school’s historical approach."},
      {t:"Norms and identities", why:"OEP is rationalist; norms are a constructivist focus."}]},
    {id:"e4u15-q05", lesson:"e4u15-l1", level:3, q:"Tomás argues in a seminar: “US tariffs and sanctions since 2025 prove the hegemon has abandoned the system.” Which reply draws most directly on Duncan Snidal’s critique of hegemonic stability theory?", options:[
-     {t:"A hegemon can be coercive rather than benevolent, using its power to make others pay, so the same policies may show power being used, not abandoned", ok:true, why:"Yes. Snidal distinguished benevolent from coercive hegemony, which allows a rival reading of the evidence."},
-     {t:"Institutions always collapse when a hegemon declines", why:"That is what hegemonic stability theory predicted; Snidal and Keohane questioned it."},
+     {t:"A hegemon can be coercive, so the policies may show power used, not abandoned", ok:true, why:"Yes. Snidal distinguished benevolent from coercive hegemony: a coercive hegemon uses its power to make others pay, which allows a rival reading of the evidence."},
+     {t:"Institutions always collapse when a hegemon declines, so the system is already over", why:"That is what hegemonic stability theory predicted; Snidal and Keohane questioned it."},
      {t:"The United States has never been a hegemon", why:"Snidal did not argue this."},
      {t:"Tariffs have no effect on the world economy", why:"That is an empirical claim unrelated to Snidal and not supported by evidence."}]},
    {id:"e4u15-q06", lesson:"e4u15-l1", level:2, q:"According to Kindleberger, which task belongs to a world economy’s stabiliser?", options:[
@@ -1357,9 +1419,9 @@ ICA.addUnit({
      {t:"Neither, because X is better at both goods", why:"Ricardo’s point is that trade can benefit both even when one country is better at everything."},
      {t:"Both equally", why:"Their opportunity costs differ (2 baskets versus 1), so one has the comparative advantage."}]},
    {id:"e4u15-q12", lesson:"e4u15-l2", level:3, q:"Research shows that a country gained overall from more trade with a large partner, while some manufacturing regions lost jobs for years. A minister says: “The national gain proves nobody lost.” What is the best reply?", options:[
-     {t:"National gains can coexist with concentrated local losses, as the China shock research shows; whether winners compensate losers is a political choice", ok:true, why:"Yes. This is the Stolper–Samuelson logic and Autor, Dorn and Hanson’s evidence."},
+     {t:"National gains can coexist with concentrated local losses", ok:true, why:"Yes, as the China shock research shows; whether winners compensate losers is a political choice. This is the Stolper–Samuelson logic and Autor, Dorn and Hanson’s evidence."},
      {t:"Trade never produces national gains", why:"Comparative advantage shows national gains are possible; the issue is distribution."},
-     {t:"The job losses must have had nothing to do with trade", why:"Research linked them to import exposure; dismissing it is not evidence-based."},
+     {t:"The job losses must have had nothing to do with trade at all", why:"Research linked them to import exposure; dismissing it is not evidence-based."},
      {t:"Only tariffs can ever help the losing regions", why:"Retraining, regional support and social insurance are among the options debated."}]},
    {id:"e4u15-q13", lesson:"e4u15-l2", level:1, q:"Which agreement was the first free trade agreement linking China, Japan and Korea?", options:[
      {t:"RCEP", ok:true, why:"Right. Signed in 2020 and in force from 2022, it brings ASEAN together with China, Japan, Korea, Australia and New Zealand."},
@@ -1367,15 +1429,15 @@ ICA.addUnit({
      {t:"AfCFTA", why:"That is the African Continental Free Trade Area."},
      {t:"The EU single market", why:"It covers EU members only."}]},
    {id:"e4u15-q14", lesson:"e4u15-l2", level:2, q:"Which statement about the MPIA is accurate as of November 2026?", options:[
-     {t:"It lets participating WTO members hear appeals among themselves through arbitration; the United States is not part of it", ok:true, why:"Correct. It had grown to 61 members by MC14."},
+     {t:"It lets members that join hear appeals among themselves", ok:true, why:"Correct: participating WTO members hear appeals among themselves through arbitration. The United States is not part of it; it had grown to 61 members by MC14."},
      {t:"It replaced the WTO in 2020", why:"It is a stand-in arrangement within WTO rules, not a replacement for the organisation."},
      {t:"It binds all WTO members", why:"Only participants are covered."},
-     {t:"It restored the Appellate Body’s seven members", why:"The Appellate Body remains without members."}]},
+     {t:"It restored the Appellate Body’s full set of seven members", why:"The Appellate Body remains without members."}]},
    {id:"e4u15-q15", lesson:"e4u15-l2", level:3, q:"A blog post from November 2026 says: “The Supreme Court allowed the emergency tariffs, so the April 2025 tariffs are still in force unchanged.” What is the most accurate correction?", options:[
-     {t:"The Court ruled 6–3 in February 2026 that IEEPA does not authorise tariffs; the administration then used Section 122 and, from July 2026, Section 301, while Section 232 tariffs remained", ok:true, why:"Yes. The legal basis and rates changed, though many tariffs continued under other laws."},
-     {t:"The Court abolished all US tariffs, including those on steel", why:"Section 232 tariffs rest on another law and were not affected."},
+     {t:"The Court ruled in 2026 that IEEPA does not authorise tariffs; other laws now carry many of them", ok:true, why:"Yes. The Court ruled 6–3 in February 2026; the administration then used Section 122 and, from July 2026, Section 301, while Section 232 tariffs remained. The legal basis and rates changed, though many tariffs continued under other laws."},
+     {t:"The Court abolished all US tariffs in 2026, including those on steel and aluminium under Section 232", why:"Section 232 tariffs rest on another law and were not affected."},
      {t:"The Court has not yet ruled", why:"It ruled on 20 February 2026."},
-     {t:"The WTO Appellate Body struck the tariffs down", why:"The Appellate Body cannot hear appeals, and the ruling came from the US Supreme Court."}]},
+     {t:"The WTO Appellate Body struck the tariffs down in 2026, so the United States removed them", why:"The Appellate Body cannot hear appeals, and the ruling came from the US Supreme Court."}]},
    {id:"e4u15-q16", lesson:"e4u15-l2", level:1, q:"Which country joined the CPTPP in December 2024, becoming its first new party?", options:[
      {t:"The United Kingdom", ok:true, why:"Right. Its accession entered into force on 15 December 2024."},
      {t:"China", why:"China applied in 2021 but is not a party."},
@@ -1387,14 +1449,14 @@ ICA.addUnit({
      {t:"The impossible trinity", why:"That concerns exchange rates and monetary policy."},
      {t:"The MPIA", why:"The MPIA concerns appeals in WTO disputes."}]},
    {id:"e4u15-q18", lesson:"e4u15-l2", level:2, q:"Why did the Doha Round stall?", options:[
-     {t:"Mainly over farm subsidies and market access, and over how much special treatment fast-growing emerging economies should keep", ok:true, why:"Right. Agriculture and the status of China, India and others were central disagreements."},
+     {t:"Mainly over farming and emerging economies’ status", ok:true, why:"Right: over farm subsidies and market access, and over how much special treatment fast-growing emerging economies such as China and India should keep."},
      {t:"Because the WTO had no members from Asia", why:"China, India, Japan and many other Asian economies are members."},
-     {t:"Because the Appellate Body ruled against it", why:"The Appellate Body hears disputes, not negotiations."},
+     {t:"Because the Appellate Body ruled that the round was illegal", why:"The Appellate Body hears disputes, not negotiations."},
      {t:"Because it was completed in 2005", why:"It was never completed."}]},
    /* ---- Lesson 3 ---- */
    {id:"e4u15-q19", lesson:"e4u15-l3", level:3, q:"Country Q pegs its currency firmly to the dollar and lets capital move freely. A recession hits, and its government wants the central bank to cut interest rates well below US rates. What does the impossible trinity predict?", options:[
-     {t:"It cannot do so for long without giving up the peg or controlling capital flows", ok:true, why:"Yes. With a fixed rate and free capital, it has given up independent monetary policy."},
-     {t:"It can cut rates freely with no side effects", why:"Capital would flow out and pressure the peg."},
+     {t:"It cannot do so for long, unless it drops the peg or controls capital", ok:true, why:"Yes. With a fixed rate and free capital, it has given up independent monetary policy."},
+     {t:"It can cut rates as far as it likes, with no effect on the peg or capital", why:"Capital would flow out and pressure the peg."},
      {t:"Cutting rates will strengthen the peg", why:"Lower rates make the currency less attractive, adding pressure on it."},
      {t:"The IMF will set its interest rates", why:"The IMF does not set members’ interest rates."}]},
    {id:"e4u15-q20", lesson:"e4u15-l3", level:1, q:"What happened on 15 August 1971?", options:[
@@ -1413,17 +1475,17 @@ ICA.addUnit({
      {t:"About 21%", why:"That is close to the euro’s share."},
      {t:"About 2%", why:"That is close to the renminbi’s share."}]},
    {id:"e4u15-q23", lesson:"e4u15-l3", level:3, q:"An analyst writes: “The dollar’s reserve share fell from 71% to 57%, so the renminbi will replace the dollar soon.” What is the strongest evidence-based critique?", options:[
-     {t:"Most of the shift went to a range of non-traditional currencies, the renminbi’s share is about 2%, and the dollar still dominates trading", ok:true, why:"Yes. The evidence points to gradual diversification, not replacement by one rival."},
+     {t:"Most of the shift went to smaller currencies; the renminbi has about 2%", ok:true, why:"Yes. Most of the shift went to a range of non-traditional currencies, the renminbi’s share is about 2%, and the dollar still dominates trading: gradual diversification, not replacement by one rival."},
      {t:"The dollar’s reserve share has not fallen at all", why:"It has fallen; the issue is how to interpret it."},
      {t:"Reserve shares never change", why:"They have changed over decades."},
-     {t:"The renminbi already holds a larger share than the dollar", why:"Its share was about 2.1% in 2026."}]},
+     {t:"The renminbi already holds a larger share of world reserves than the dollar", why:"Its share was about 2.1% in 2026."}]},
    {id:"e4u15-q24", lesson:"e4u15-l3", level:2, q:"A government owes 5 billion dollars. Its currency falls from 10 to 20 per dollar. What happens to the debt measured in its own currency?", options:[
      {t:"It doubles, from 50 to 100 billion units", ok:true, why:"Right: 5 × 10 = 50 before and 5 × 20 = 100 after. This is the danger of original sin."},
      {t:"It halves", why:"A weaker currency makes foreign-currency debt more expensive, not less."},
      {t:"It stays the same because the dollar amount is unchanged", why:"The dollar amount is unchanged, but the government’s revenue is in its own currency."},
      {t:"It rises by 10 billion units", why:"The rise is 50 billion units (from 50 to 100)."}]},
    {id:"e4u15-q25", lesson:"e4u15-l3", level:1, q:"Which regional arrangement did East Asian governments build after the 1997–98 crisis?", options:[
-     {t:"The Chiang Mai Initiative, a network of currency swaps", ok:true, why:"Correct. Launched in 2000 and made multilateral in 2010."},
+     {t:"The Chiang Mai Initiative", ok:true, why:"Correct: a network of currency swaps, launched in 2000 and made multilateral in 2010."},
      {t:"The European Stability Mechanism", why:"That is the euro area’s crisis fund (2012)."},
      {t:"The Paris Club", why:"That is a group of creditor governments, founded in 1956."},
      {t:"The MPIA", why:"That concerns WTO appeals."}]},
@@ -1433,7 +1495,7 @@ ICA.addUnit({
      {t:"A sudden stop", why:"That is an abrupt halt in capital inflows."},
      {t:"The double movement", why:"That is Polanyi’s concept of society’s reaction against markets."}]},
    {id:"e4u15-q27", lesson:"e4u15-l3", level:3, q:"In a debate on IMF conditionality, which argument would the IMF itself most likely make?", options:[
-     {t:"Countries arrive already in crisis; Fund loans make adjustment gentler than it would otherwise be, and programmes now include social spending floors", ok:true, why:"Yes. This is the Fund’s standard defence."},
+     {t:"Countries arrive in crisis, and Fund loans make adjustment gentler", ok:true, why:"Yes. Fund loans make adjustment gentler than it would otherwise be, and programmes now include social spending floors. This is the Fund’s standard defence."},
      {t:"Structural conditions returned after 2008 despite promises of restraint", why:"That is Kentikelenis, Stubbs and King’s critique."},
      {t:"Conditions impose austerity that deepens downturns", why:"That is the critics’ case, associated with Stiglitz and others."},
      {t:"Countries should never borrow from the IMF", why:"Neither side argues this as a general rule."}]},
@@ -1454,7 +1516,7 @@ ICA.addUnit({
      {t:"Branding and marketing", why:"Brands sit high on the right of the curve."},
      {t:"After-sales services", why:"Services sit on the right, higher-value side."}]},
    {id:"e4u15-q31", lesson:"e4u15-l4", level:3, q:"Gross trade statistics recorded each iPhone 3G’s full production cost of about 179 dollars as a Chinese export to the United States in 2009. What does value-added accounting show?", options:[
-     {t:"Only about 6.50 dollars was added by assembly in China; most of the value came from parts made elsewhere and from US design", ok:true, why:"Yes. Bilateral balances in gross terms can mislead about who earns what."},
+     {t:"Only about 6.50 dollars was added by assembly in China", ok:true, why:"Yes. Most of the value came from parts made elsewhere and from US design. Bilateral balances in gross terms can mislead about who earns what."},
      {t:"China added almost all of the value", why:"Xing and Detert found assembly in China added under 4%."},
      {t:"The United States added nothing", why:"US firms supplied design, brand and some parts."},
      {t:"Value-added data and gross data always give the same balance", why:"The example shows they can differ greatly."}]},
@@ -1474,12 +1536,12 @@ ICA.addUnit({
      {t:"The world economy needs one stabiliser", why:"That is Kindleberger’s argument."},
      {t:"Value chains have five governance types", why:"That is Gereffi, Humphrey and Sturgeon (2005)."}]},
    {id:"e4u15-q35", lesson:"e4u15-l4", level:3, q:"Hana is writing about Japan’s 2019 export controls on chemicals to Korea. Which sentence meets the standard of neutral analysis?", options:[
-     {t:"Japan’s government said the measures concerned export-control management; Korea’s government called them retaliation for court rulings on wartime labour", ok:true, why:"Yes. It attributes each position and states no motive as fact."},
-     {t:"Japan obviously punished Korea and lied about its reasons", why:"This states a motive as fact and is not neutral."},
+     {t:"Japan’s government cited export-control management; Korea’s government called the measures retaliation", ok:true, why:"Yes. Korea’s government called the measures retaliation for court rulings on wartime labour. The sentence attributes each position and states no motive as fact."},
+     {t:"Japan obviously punished Korea for the court rulings on wartime labour and lied about its reasons", why:"This states a motive as fact and is not neutral."},
      {t:"Korea’s complaints were obviously exaggerated", why:"This takes a side without evidence."},
      {t:"Nothing important happened between the two countries in 2019", why:"Inaccurate: the measures were significant and widely debated."}]},
    {id:"e4u15-q36", lesson:"e4u15-l4", level:2, q:"What did the IEA’s *Global Critical Minerals Outlook 2025* find about refining?", options:[
-     {t:"China was the leading refiner of 19 of 20 key energy minerals, with an average share of about 70%", ok:true, why:"Correct. The top three refiners held 86% of supply on average in 2024."},
+     {t:"China led refining of 19 of 20 key energy minerals", ok:true, why:"Correct, with an average share of about 70%. The top three refiners held 86% of supply on average in 2024."},
      {t:"Refining is evenly spread across dozens of countries", why:"The report found high and rising concentration."},
      {t:"The United States refines most rare earths", why:"The report identifies China as the dominant refiner."},
      {t:"Export controls on minerals have disappeared", why:"The report notes that more than half of a broader group of energy-related minerals face some form of export control."}]},
@@ -1490,15 +1552,15 @@ ICA.addUnit({
      {t:"By the Paris Club alone, in 1956", why:"The Paris Club dates from 1956; the Common Framework is a G20 initiative."},
      {t:"By the IMF and World Bank, in 1996", why:"That was the HIPC initiative."}]},
    {id:"e4u15-q38", lesson:"e4u15-l5", level:2, q:"In a bond restructuring, 85% of bondholders accept new terms, but one fund refuses and sues for full payment. Which contract tool is designed to deal with this?", options:[
-     {t:"A collective action clause, which lets a qualified majority bind all holders", ok:true, why:"Correct. It limits holdout creditors."},
-     {t:"A swap line", why:"Swap lines are central-bank currency arrangements."},
+     {t:"A collective action clause", ok:true, why:"Correct. It lets a qualified majority bind all holders, which limits holdout creditors."},
+     {t:"A central bank swap line", why:"Swap lines are central-bank currency arrangements."},
      {t:"A rules-of-origin clause", why:"That concerns trade agreements."},
-     {t:"A security exception", why:"That is GATT Article XXI."}]},
+     {t:"A national security exception", why:"That is GATT Article XXI."}]},
    {id:"e4u15-q39", lesson:"e4u15-l5", level:3, q:"A student writes: “Hambantota proves that China designs loans to seize ports.” Which evidence would a critic of the debt-trap thesis cite?", options:[
-     {t:"Sri Lanka’s government proposed the port, and the 2017 lease raised money that helped it pay other debts", ok:true, why:"Yes. This is Brautigam and Rithmire’s (2021) account; it challenges the claim of design."},
+     {t:"Sri Lanka’s government proposed the port, and the lease raised needed money", ok:true, why:"Yes. The port was Sri Lanka’s proposal, and the 2017 lease raised money that helped it pay other debts. This is Brautigam and Rithmire’s (2021) account; it challenges the claim of design."},
      {t:"Sri Lanka defaulted in 2022, so China took the port then", why:"The lease came in 2017, before the default, and was a lease, not a seizure."},
      {t:"China has never lent to Sri Lanka", why:"China lent heavily to Sri Lanka."},
-     {t:"AidData found that China lends nothing to high-income countries", why:"AidData found the opposite: most current lending goes to upper-middle- and high-income countries."}]},
+     {t:"AidData found that China lends nothing to high-income countries, only to poor ones", why:"AidData found the opposite: most current lending goes to upper-middle- and high-income countries."}]},
    {id:"e4u15-q40", lesson:"e4u15-l5", level:1, q:"What is the outcome document of the fourth Financing for Development conference (Seville, 2025) called?", options:[
      {t:"The Compromiso de Sevilla (Sevilla Commitment)", ok:true, why:"Correct. It was adopted by consensus on 30 June 2025."},
      {t:"The Addis Ababa Action Agenda", why:"That came from the third conference, in 2015."},
@@ -1510,22 +1572,22 @@ ICA.addUnit({
      {t:"China stopped lending abroad in 2013", why:"It lent about 140 billion dollars in 2023 alone."},
      {t:"All Chinese lending is in the form of grants", why:"Most is lending, not grants; ODA commitments fell in 2023."}]},
    {id:"e4u15-q42", lesson:"e4u15-l5", level:2, q:"What did the G20’s 2022 review of MDB capital adequacy frameworks argue?", options:[
-     {t:"The banks could lend more from their existing capital without endangering their financial strength", ok:true, why:"Correct. It recommended changes such as giving more weight to callable capital."},
+     {t:"The banks could lend more from their existing capital", ok:true, why:"Correct, without endangering their financial strength. It recommended changes such as giving more weight to callable capital."},
      {t:"The banks should stop lending to middle-income countries", why:"That was not its recommendation."},
      {t:"The banks should be merged into the IMF", why:"No such proposal was made."},
      {t:"Capital rules should be tightened to lend less", why:"The review argued the opposite: rules were too cautious."}]},
    {id:"e4u15-q43", lesson:"e4u15-l5", level:3, q:"In a seminar, Kenji says: “The Common Framework has completely failed.” Which response is best grounded in the evidence of the lesson?", options:[
-     {t:"It has been slow and limited to the poorer countries, but Zambia and Ghana reached agreements and later cases moved faster, so “learning but slow” fits the evidence better than “complete failure”", ok:true, why:"Yes. It weighs criticisms against outcomes with dated evidence."},
-     {t:"It has solved the debt problem, since all cases closed in 2021", why:"Cases were still under way in 2026."},
+     {t:"Slow, but Zambia and Ghana reached deals, so “learning but slow” fits better", ok:true, why:"Yes. It has been slow and limited to the poorer countries, but Zambia and Ghana reached agreements and later cases moved faster. The answer weighs criticisms against outcomes with dated evidence."},
+     {t:"It has solved the debt problem completely, since all of its cases closed in 2021", why:"Cases were still under way in 2026."},
      {t:"It never had any cases", why:"Chad, Zambia, Ghana and Ethiopia applied."},
-     {t:"Only the IMF can judge it, so seminars should not discuss it", why:"Scholars, debtors and creditors all assess it."}]},
+     {t:"Only the IMF can judge whether it works, so seminars should not discuss it at all", why:"Scholars, debtors and creditors all assess it."}]},
    {id:"e4u15-q44", lesson:"e4u15-l5", level:1, q:"When was the Heavily Indebted Poor Countries (HIPC) initiative launched?", options:[
      {t:"1996", ok:true, why:"Correct. It was enhanced in 1999 and followed by the MDRI in 2005."},
      {t:"1971", why:"That was the year of the Nixon shock."},
      {t:"2005", why:"That was the Multilateral Debt Relief Initiative."},
      {t:"2020", why:"That was the Common Framework."}]},
    {id:"e4u15-q45", lesson:"e4u15-l5", level:2, q:"Why are the IMF and World Bank usually not asked to cut their claims in a sovereign debt restructuring?", options:[
-     {t:"By convention they have preferred creditor status, and they keep lending to the country during and after the crisis", ok:true, why:"Right. Their preferred status is a long-standing convention, though some borrowers and campaigners question it."},
+     {t:"By convention they have preferred creditor status", ok:true, why:"Right, and they keep lending to the country during and after the crisis. Their preferred status is a long-standing convention, though some borrowers and campaigners question it."},
      {t:"They never lend to governments", why:"Lending to governments is their core business."},
      {t:"International law forbids any restructuring of debts owed to them", why:"It rests mainly on convention and practice, not an explicit treaty ban."},
      {t:"They are private bondholders", why:"They are multilateral institutions owned by governments."}]}

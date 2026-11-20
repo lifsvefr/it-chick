@@ -98,13 +98,13 @@ ICA.addUnit({
       ["Authoritarian influence that manipulates rather than attracts","Walker & Ludwig (2017)","Their term sharp power, in *Foreign Affairs* and a report."]
     ]},
     {id:"e4u8-l1-x3", type:"mcq", q:"Kenji notes that a country has the world’s most-watched streaming dramas, yet it lost an important UN vote. Which idea best explains the gap?", options:[
-      {t:"Soft power resources are not outcomes; converting attraction into a policy result can fail.", ok:true, why:"Right. Nye distinguishes resources from outcomes and calls the step between them power conversion."},
+      {t:"Resources are not outcomes; conversion can fail.", ok:true, why:"Right. Nye distinguishes resources from outcomes and calls the step between them power conversion."},
       {t:"Soft power does not exist, so the dramas are irrelevant.", why:"Too strong. The gap shows that resources do not automatically produce outcomes, not that attraction never matters."},
       {t:"The country must have used sharp power.", why:"Nothing in the case suggests manipulation or censorship. Sharp power is a separate claim that needs its own evidence."},
       {t:"Popular dramas are hard power.", why:"Popular culture is a soft power resource; hard power means coercion or payment."}
     ]},
     {id:"e4u8-l1-x4", type:"mcq", q:"Which statement is the best summary of Mattern’s critique?", options:[
-      {t:"Attraction is constructed through narratives that can corner the listener, so soft power can be coercive in its own way.", ok:true, why:"Yes. Representational force threatens the listener’s identity if they refuse; hence soft power “isn’t so soft”."},
+      {t:"Narratives can corner listeners, so attraction can coerce.", ok:true, why:"Yes. Attraction is constructed through narratives, so soft power can be coercive in its own way. Representational force threatens the listener’s identity if they refuse; hence soft power “isn’t so soft”."},
       {t:"Soft power is impossible to measure, so it should be dropped.", why:"Measurement problems are a different critique, made by Hall and others. Mattern’s point is about how attraction is produced."},
       {t:"Only authoritarian states use soft power.", why:"Mattern’s main example was a US framing after 2001; her argument applies to any actor."},
       {t:"Soft power is simply economic power in disguise.", why:"That is closer to some realist critiques, not Mattern’s linguistic argument."}
@@ -125,7 +125,7 @@ ICA.addUnit({
       {v:93, tol:0, why:"That adds the two figures instead of subtracting them."}
     ], hint2:"Subtract the earlier percentage from the later one."},
     {id:"e4u8-l1-x7", type:"mcq", q:"A ministry argues that its embassy’s new cultural centre is “pure soft power”, while a critic calls it “sharp power”. What would best help you judge between them?", options:[
-      {t:"Evidence about methods: is the centre open about who runs it, and does it try to censor or pressure anyone?", ok:true, why:"Right. Nye and Walker and Ludwig agree that the difference lies in openness versus manipulation, which is a question of evidence."},
+      {t:"Evidence about its methods: openness or pressure.", ok:true, why:"Right. Is the centre open about who runs it, and does it try to censor or pressure anyone? Nye and Walker and Ludwig agree that the difference lies in openness versus manipulation, which is a question of evidence."},
       {t:"Which country runs it: centres run by some countries are sharp power by definition.", why:"Judging by the owner alone assumes the answer. The concepts are about methods, so you need evidence about them."},
       {t:"How popular the centre’s events are.", why:"Popularity tells you about attraction, not about whether manipulation is also happening."},
       {t:"Whether the centre’s budget is large.", why:"Size of budget does not distinguish attraction from manipulation."}
@@ -253,7 +253,7 @@ ICA.addUnit({
       {t:"A foreign ministry tracks social media in a partner country and adjusts its messages.", b:0, why:"Monitoring and adjusting is listening, even when done digitally."}
     ]},
     {id:"e4u8-l2-x3", type:"mcq", q:"Which feature best marks the “new public diplomacy” described by Melissen (2005)?", options:[
-      {t:"A shift from one-way messaging by governments to dialogue through networks that include non-state actors.", ok:true, why:"Right: dialogue, networks and many actors are the core of the new public diplomacy."},
+      {t:"A shift from one-way messaging to networked dialogue.", ok:true, why:"Right: dialogue, networks and many actors are the core of the new public diplomacy."},
       {t:"A return to Cold War information agencies with larger budgets.", why:"That would be the “old” model of state-run messaging."},
       {t:"The replacement of public diplomacy by military power.", why:"The debate is about how public diplomacy is done, not about replacing it."},
       {t:"A rule that only foreign ministries may engage foreign publics.", why:"The opposite: the new public diplomacy stresses cities, NGOs, companies and diasporas too."}
@@ -283,7 +283,7 @@ ICA.addUnit({
       {t:"Favourable views never matter.", why:"Too strong, and not the methodological point. Goldsmith and Horiuchi, for example, found that foreign opinion can affect cooperation."}
     ]},
     {id:"e4u8-l2-x7", type:"mcq", q:"Why does Cull include Sayyid Qutb among his cases of failure?", options:[
-      {t:"He studied in the United States in 1948–50 and returned deeply hostile to American society, showing that exchanges do not guarantee attraction.", ok:true, why:"Yes. Contact can deepen understanding or produce rejection; exchange has no guaranteed direction."},
+      {t:"His exchange produced hostility, not attraction.", ok:true, why:"Yes. He studied in the United States in 1948–50 and returned deeply hostile to American society. Contact can deepen understanding or produce rejection; exchange has no guaranteed direction."},
       {t:"He ran a broadcaster that spread false news.", why:"Qutb was an educator and writer; his case concerns exchange, not broadcasting."},
       {t:"He was the official who closed the US information agency.", why:"The agency was folded into the State Department in 1999 by US legislation, not by Qutb."},
       {t:"He proved that exchanges always fail.", why:"One case cannot prove that; Cull also presents exchange successes, such as Franco-German reconciliation."}
@@ -397,7 +397,7 @@ ICA.addUnit({
       {t:"Cultural centres abroad run by the government", b:0, why:"Government-run cultural institutes are state cultural diplomacy."}
     ]},
     {id:"e4u8-l3-x3", type:"mcq", q:"Which sentence describes the Confucius Institute debate most neutrally?", options:[
-      {t:"Critics argue that hosting the institutes inside universities risks self-censorship; China’s government and many hosts say they teach language and culture like other national institutes.", ok:true, why:"Right: both positions, each attributed, with the specific concern named."},
+      {t:"Critics see a self-censorship risk; China and many hosts disagree.", ok:true, why:"Right. Critics say hosting them inside universities risks self-censorship; China’s government and many hosts say they teach language and culture like other national institutes. Both positions, each attributed, with the specific concern named."},
       {t:"Confucius Institutes are propaganda centres, as everyone now agrees.", why:"Not neutral and not accurate: the institutes have defenders, and the claim needs evidence."},
       {t:"Confucius Institutes are just language schools and all criticism is prejudice.", why:"Not neutral either: it dismisses documented concerns, such as those in the 2019 US review."},
       {t:"Confucius Institutes are identical to the British Council.", why:"Inaccurate: most are partnerships placed inside host institutions, unlike the British Council’s own centres."}
@@ -535,8 +535,8 @@ ICA.addUnit({
       {t:"Tourism rises in the years after the event.", b:0, why:"A possible legacy gain, though other causes must be ruled out."}
     ]},
     {id:"e4u8-l4-x3", type:"mcq", q:"Which sentence about the Meiji Industrial Revolution sites is most accurate and neutral?", options:[
-      {t:"At inscription in 2015 Japan acknowledged that Koreans were brought against their will to work at some sites; Japan and South Korea have since disagreed over what this means and how the history is shown.", ok:true, why:"Accurate and attributed: the statement, then both governments’ readings."},
-      {t:"UNESCO rejected the sites because of South Korea’s objections.", why:"Inaccurate: the sites were inscribed in 2015."},
+      {t:"Japan and South Korea disagree over what Japan’s 2015 statement meant.", ok:true, why:"Accurate and attributed. At inscription in 2015 Japan acknowledged that Koreans were brought against their will to work at some sites; the two governments have since disagreed over what this means and how the history is shown."},
+      {t:"UNESCO rejected the sites in 2015 because of South Korea’s objections.", why:"Inaccurate: the sites were inscribed in 2015."},
       {t:"Japan has fully resolved the issue, as UNESCO confirmed.", why:"Inaccurate: the committee has repeatedly asked Japan to improve its interpretation; Japan says it has implemented its commitments."},
       {t:"The sites concern only the 1940s.", why:"Inaccurate: they are presented as the story of industrialisation from the 1850s to 1910; the dispute is about the wartime period at some sites."}
     ]},
@@ -559,16 +559,16 @@ ICA.addUnit({
       ["Qatar 2022","First FIFA World Cup in the Arab world","It was also the first held in November and December."]
     ]},
     {id:"e4u8-l4-x6", type:"mcq", q:"Tomás writes: “The 1969 Football War shows that sport causes wars.” What is the best correction?", options:[
-      {t:"The matches were a trigger; historians trace the war’s causes to land, migration and border tensions between El Salvador and Honduras.", ok:true, why:"Right. A trigger is not a cause. The same logic applies to sports diplomacy: sport signals and channels, it rarely causes."},
+      {t:"The matches were a trigger, not the cause.", ok:true, why:"Right. Historians trace the war’s causes to land, migration and border tensions between El Salvador and Honduras. A trigger is not a cause. The same logic applies to sports diplomacy: sport signals and channels, it rarely causes."},
       {t:"The war never happened; the name is a myth.", why:"The war happened in July 1969; the nickname exaggerates football’s role."},
       {t:"The war was caused by FIFA.", why:"FIFA organised the qualifiers, but no historian blames it for the war."},
       {t:"Sport is always a force for peace, so the case is irrelevant.", why:"Too strong. Sport can inflame tensions too; the point is to separate triggers from causes."}
     ]},
     {id:"e4u8-l4-x7", type:"mcq", q:"Why can World Heritage nominations become political?", options:[
-      {t:"States nominate sites and a committee of states decides, so national narratives and diplomatic alliances can shape outcomes.", ok:true, why:"Right. Expert bodies advise, but states decide, which is Meskell’s central concern."},
+      {t:"States nominate sites and a committee of states decides.", ok:true, why:"Right. National narratives and diplomatic alliances can shape outcomes. Expert bodies advise, but states decide, which is Meskell’s central concern."},
       {t:"UNESCO staff choose sites at random.", why:"Sites are nominated by states and evaluated by expert advisory bodies."},
       {t:"Only private companies can nominate sites.", why:"Nominations come from states parties to the Convention."},
-      {t:"Listing a site transfers its sovereignty to UNESCO.", why:"Listing does not change sovereignty; the state remains responsible for the site."}
+      {t:"Listing a site transfers its sovereignty to UNESCO in Paris.", why:"Listing does not change sovereignty; the state remains responsible for the site."}
     ]}
    ],
    apply:{
@@ -691,7 +691,7 @@ ICA.addUnit({
       {t:"The festival was too small to matter.", why:"Size alone does not settle the question either way; you need evidence about cause."}
     ]},
     {id:"e4u8-l5-x3", type:"mcq", q:"What did Goldsmith and Horiuchi (2012) find?", options:[
-      {t:"Foreign public opinion about US foreign policy affected countries’ cooperation with the US, strongly for troop commitments to Iraq, depending on issue salience.", ok:true, why:"Yes. Their surveys covered 58 countries; effects were conditional on how salient the issue was."},
+      {t:"Foreign opinion affected cooperation with the US.", ok:true, why:"Yes. Opinion about US foreign policy mattered strongly for troop commitments to Iraq, depending on issue salience. Their surveys covered 58 countries; effects were conditional on how salient the issue was."},
       {t:"Foreign opinion has no effect on governments.", why:"The opposite: they found significant effects on some decisions."},
       {t:"Exchange programmes spread liberal values.", why:"That is Atkinson (2010)."},
       {t:"Leaders’ visits raise approval by about 2 percentage points.", why:"That is Goldsmith, Horiuchi and Matush (2021)."}
@@ -763,6 +763,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u8-q02","e4u8-q06","e4u8-q09","e4u8-q12","e4u8-q16","e4u8-q20","e4u8-q23","e4u8-q27","e4u8-q31","e4u8-q36","e4u8-q40","e4u8-q44"],
+  cpBank:[
+   {id:"e4u8-cp01", lesson:"e4u8-l1", level:1, q:"Country A’s plan for a region pairs naval patrols and arms sales with scholarships, film festivals and language classes, all run as one strategy. Which idea names this?", options:[
+     {t:"Sharp power", why:"Sharp power means manipulating, censoring or deceiving rather than attracting. Open scholarships and festivals are not that, and patrols are ordinary hard power."},
+     {t:"Command power", why:"Command power is getting others to do what you want against their wishes. The plan deliberately adds attraction to the military tools."},
+     {t:"Soft disempowerment", why:"Soft disempowerment is losing attraction because of the scrutiny a big event brings. Nothing here is about losing attraction."},
+     {t:"Smart power", ok:true, why:"Right. Smart power means combining hard and soft tools in one strategy, a phrase used by Suzanne Nossel and by Nye."}]},
+   {id:"e4u8-cp02", lesson:"e4u8-l1", level:2, q:"Over decades, a powerful state’s universities, films and textbooks shape a neighbour’s elites, so that they come to want the same economic model. There is no pressure or payment. Which ideas fit best?", options:[
+     {t:"Dahl’s first face: A gets B to do something B would not otherwise do", why:"The first face is about getting someone to act against their preference. Here the elites’ preferences themselves have changed."},
+     {t:"Lukes’s third face of power, shaping wants, and Nye’s “co-optive power”", ok:true, why:"Right. Lukes’s third face is power that shapes people’s wants and beliefs. Nye’s early phrase was co-optive power: getting others to want what you want."},
+     {t:"Bachrach and Baratz’s second face: keeping issues off the agenda", why:"The second face works by controlling what gets discussed. Nothing is being kept off an agenda here."},
+     {t:"Hard power, because the state is far larger and richer than its neighbour", why:"Hard power works through coercion or payment, and the scenario rules both out."}]},
+   {id:"e4u8-cp03", lesson:"e4u8-l1", level:3, q:"A think tank says Country A’s TV dramas won it a fishing treaty with Country B. Using the lesson’s checklist, which evidence would test this claim best?", options:[
+     {t:"The dramas’ huge viewing figures in Country B during the years before the treaty was signed", why:"Viewing figures show that a resource reached an audience. They don’t show that attraction changed the decision, or rule out money or pressure."},
+     {t:"Country A’s rise in a published soft power index in the year that the treaty was signed", why:"An index rank measures resources or reputation, and resources are not outcomes. It says nothing about how this decision was made."},
+     {t:"Signs that B’s lawmakers warmed to A through the dramas, and that no money or pressure was used", ok:true, why:"Right. The checklist asks for the audience, the mechanism and evidence that would show it at work, and what would show inducement instead. Many such claims turn out to be about loans or contracts."},
+     {t:"A statement from Country A’s culture ministry saying its drama programme fully achieved its aims", why:"The actor’s own claim is not independent evidence. It doesn’t show the mechanism or rule out inducement."}]},
+   {id:"e4u8-cp04", lesson:"e4u8-l2", level:1, q:"A small island state focuses its diplomacy on ocean science and fisheries rules, where it is seen as expert and credible, rather than trying to be heard on every issue. What is this called?", options:[
+     {t:"Niche diplomacy", ok:true, why:"Right. Gareth Evans spoke of niche diplomacy, and Andrew Cooper’s book studied how middle and smaller powers concentrate on a few issues where they are useful and credible."},
+     {t:"Advocacy", why:"Advocacy is promoting a policy to foreign publics. The scenario is about choosing which issues to focus on."},
+     {t:"Nation branding", why:"Nation branding manages a country’s image through campaigns. Choosing a specialist policy field is a diplomatic strategy, not a brand campaign."},
+     {t:"Ping-pong diplomacy", why:"Ping-pong diplomacy used sporting contact to open US–China relations. It has nothing to do with a policy niche."}]},
+   {id:"e4u8-cp05", lesson:"e4u8-l2", level:2, q:"A ministry is designing a new exchange programme. Which design best matches Carol Atkinson’s three conditions for exchanges that spread values?", options:[
+     {t:"A two-day tour of monuments for as many visitors as possible", why:"A short tour gives little social contact and no sense of community with hosts. Large numbers don’t replace depth."},
+     {t:"An online lecture series watched by a million people", why:"Lectures give no personal contact or shared community, which are central to Atkinson’s conditions."},
+     {t:"A long stay in a separate compound with only fellow nationals, for applicants picked at random", why:"Living apart blocks deep contact with hosts, and random picking ignores the condition of later influence at home."},
+     {t:"Year-long stays with host families, for young officials likely to rise to influential posts", ok:true, why:"Right. Atkinson’s conditions are deep social interaction, a shared sense of community with hosts, and a later position of political influence."}]},
+   {id:"e4u8-cp06", lesson:"e4u8-l2", level:2, q:"A ministry wants to reach a sceptical foreign public. Which messenger best fits both Cull’s point about broadcasters and the hypothesis that “credibility depends on distance”?", options:[
+     {t:"Daily posts by the minister repeating the official line", why:"Messages seen as coming straight from a government are discounted, so this is the least credible choice."},
+     {t:"Former exchange students and artists in their own voices, plus a broadcaster with real editorial independence", ok:true, why:"Right. This combines Lesson 2 (broadcasters need independence to be believed) with Lesson 5 (independent voices carry more weight than government messages)."},
+     {t:"A broadcaster told never to report the government’s failures", why:"Cull’s point is that credibility needs independence, which can mean reporting the funder’s failures. Banning that destroys trust."},
+     {t:"Accounts that praise the government without saying who pays them", why:"Hidden funding is deception, closer to sharp power, and it destroys trust once exposed."}]},
+   {id:"e4u8-cp07", lesson:"e4u8-l3", level:1, q:"A national promotion video shows only young people in the capital, old temples and famous dishes. Rural regions, minorities and migrants never appear. Which critique of branding does this illustrate?", options:[
+     {t:"Soft disempowerment", why:"Soft disempowerment is losing attraction because of scrutiny, usually around a big event. The issue here is who is left out of the image."},
+     {t:"Representational force", why:"Representational force is a narrative that leaves listeners no acceptable way to refuse. The video simply leaves people out."},
+     {t:"Exclusion", ok:true, why:"Right. Critics such as Kaneva and Aronczyk note that minorities, regions and uncomfortable histories drop out of national brands."},
+     {t:"Listening", why:"Listening is one of Cull’s elements of public diplomacy, collecting foreign opinion. It is not a critique of branding."}]},
+   {id:"e4u8-cp08", lesson:"e4u8-l3", level:3, q:"A ministry ran a two-year slogan campaign abroad. Its country then rose two places in the Nation Brands Index. The minister calls this proof that the campaign worked. What is the best response?", options:[
+     {t:"Anholt found no evidence campaigns change images; a two-place rise may be noise or have other causes", ok:true, why:"Right. This combines Lesson 3 (Anholt’s competitive identity) with Lessons 1 and 5 (index limits and the attribution problem)."},
+     {t:"Agreed, because the Nation Brands Index measures influence over foreign governments", why:"The Nation Brands Index measures reputation in surveys, built for marketing. It doesn’t measure influence over policy."},
+     {t:"Agreed, as long as the higher rank lasts for more than a single year", why:"Lasting rank still doesn’t show the campaign caused it. Trade, news or policy changes could explain it."},
+     {t:"The rise proves that the campaign was a form of sharp power", why:"Nothing suggests deception or censorship. The issue is whether the campaign had any effect at all."}]},
+   {id:"e4u8-cp09", lesson:"e4u8-l4", level:2, q:"Advisory experts recommend that a site should not be inscribed on the World Heritage List. After lobbying, Committee members vote to inscribe it anyway. Whose argument does this pattern support?", options:[
+     {t:"Brannagan and Giulianotti’s", why:"They coined “soft disempowerment” for losing attraction through scrutiny of mega-events. They weren’t writing about heritage votes."},
+     {t:"Lynn Meskell’s", ok:true, why:"Right. In *A Future in Ruins* Meskell argued that Committee members increasingly vote on political lines, sometimes against expert advice."},
+     {t:"Grix and Lee’s", why:"Grix and Lee argued that emerging states seek status through mega-events. Heritage voting is a different topic."},
+     {t:"Simon Anholt’s", why:"Anholt wrote about nation brands and competitive identity, not about voting in the World Heritage Committee."}]},
+   {id:"e4u8-cp10", lesson:"e4u8-l4", level:3, q:"Two neighbouring countries each seek UNESCO recognition for a pickling tradition that people on both sides practise. Which reading draws best on the unit?", options:[
+     {t:"It falls under the 1972 Convention’s “outstanding universal value”, as judged by IUCN experts", why:"Living practices are listed under UNESCO’s separate 2003 Convention on intangible heritage. IUCN advises on natural sites."},
+     {t:"A shared tradition can never be recognised for more than one state at a time", why:"Listings can cross borders: China, Kazakhstan and Kyrgyzstan jointly inscribed a stretch of the Silk Roads in 2014. The issue is rivalry, not a rule against it."},
+     {t:"It is a form of sportswashing, since both states want to clean up their image", why:"Sportswashing is a critics’ term about sport and damaged reputations. It doesn’t describe heritage listings."},
+     {t:"Listings can feed nation branding and spark rivalry over who “owns” a shared tradition", ok:true, why:"Right. This combines Lesson 4 (heritage diplomacy and rivalry over shared traditions) with Lesson 3 (gastrodiplomacy and the question of whose dishes represent the nation)."}]},
+   {id:"e4u8-cp11", lesson:"e4u8-l5", level:2, q:"A ministry’s plan reads: “Fund a film week abroad → ? → the partner government supports our trade proposal.” What should a theory of change put in the middle so it can be tested?", options:[
+     {t:"The number of tickets sold and the amount of media coverage", why:"Tickets are an output. A theory of change must say how outputs lead to outcomes and then to impact."},
+     {t:"Our country’s rise in a published soft power index afterwards", why:"An index rank measures reputation or resources, not the link between this event and a policy decision."},
+     {t:"Which audience’s attitudes it should change, and how that audience can sway the partner government", ok:true, why:"Right. A theory of change spells out each link, here the outcome (changed attitudes in a named audience) and the route to impact, so each can be checked."},
+     {t:"Nothing: if outputs are high enough, the impact can safely be assumed", why:"That skips the hardest part. Most reports count outputs, but impact is what matters and must be shown, not assumed."}]},
+   {id:"e4u8-cp12", lesson:"e4u8-l5", level:3, q:"Surveys show that foreign publics now view Country A more favourably. A’s minister says this will win support from those governments on any issue. Which reply best combines Nye’s ideas with the evidence?", options:[
+     {t:"Conversion can fail: opinion swayed governments mainly on issues their publics cared about", ok:true, why:"Right. This combines Lesson 1 (resources are not outcomes; conversion can fail) with Lesson 5 (opinion had a large effect on Iraq troop commitments, weaker effects on less salient issues)."},
+     {t:"Agreed: favourable foreign opinion always converts into support from governments", why:"Nye himself warns that conversion from resources to outcomes can fail."},
+     {t:"Foreign opinion never affects governments, so the surveys are irrelevant", why:"Goldsmith and Horiuchi found it can matter, strongly on salient issues. “Never” goes too far."},
+     {t:"Leaders’ visits make lasting changes in opinion, so the minister should simply travel abroad more", why:"Goldsmith, Horiuchi and Matush found visits gave a small rise lasting about three weeks, not lasting change."}]},
+  ],
   codex:[
    {id:"soft-power-theory", title:"Soft power: the concept and its debates", aka:["soft power in depth","co-optive power","attraction"], tags:["power","soft power","theory"],
     summary:"Nye’s idea of influence through attraction, placed in the wider debate on power, with its main refinements and critiques.",
@@ -1184,17 +1246,17 @@ ICA.addUnit({
      {t:"*The Future of Power* (2011)", why:"A later book that revised the concept."}]},
    {id:"e4u8-q02", lesson:"e4u8-l1", level:2, q:"A chair of negotiations arranges the agenda so a rival’s proposal is never discussed. Which kind of power is this on Nye’s spectrum?", options:[
      {t:"Agenda-setting, the second face of power", ok:true, why:"Yes. Keeping options off the table is Bachrach and Baratz’s second face, which Nye places on the co-optive side."},
-     {t:"Coercion", why:"No threat is used; the rival simply never gets the option."},
-     {t:"Inducement", why:"No payment is offered."},
-     {t:"Attraction", why:"The rival has not been persuaded to want anything; their option has been excluded."}]},
+     {t:"Coercion through threats", why:"No threat is used; the rival simply never gets the option."},
+     {t:"Inducement through payment", why:"No payment is offered."},
+     {t:"Attraction through persuasion", why:"The rival has not been persuaded to want anything; their option has been excluded."}]},
    {id:"e4u8-q03", lesson:"e4u8-l1", level:1, q:"Which is NOT one of Nye’s three sources of soft power?", options:[
      {t:"Military bases abroad", ok:true, why:"Correct. Military bases are hard power resources, even if they can sometimes produce goodwill."},
      {t:"Culture that others find attractive", why:"Culture is one of the three sources."},
      {t:"Political values the country lives up to", why:"Political values are one of the three sources."},
      {t:"Foreign policies others see as legitimate", why:"Legitimate foreign policies are one of the three sources."}]},
    {id:"e4u8-q04", lesson:"e4u8-l1", level:2, q:"Ana says: “Our country tops the culture rankings, so our soft power must be winning us allies.” What concept best explains the flaw?", options:[
-     {t:"Resources are not outcomes: power conversion may fail.", ok:true, why:"Right. Cultural resources do not automatically translate into allies or votes."},
-     {t:"Representational force", why:"That concerns how narratives corner an audience, not the gap between resources and results."},
+     {t:"Resources are not outcomes.", ok:true, why:"Right. Power conversion may fail: cultural resources do not automatically translate into allies or votes."},
+     {t:"Mattern’s representational force", why:"That concerns how narratives corner an audience, not the gap between resources and results."},
      {t:"Sharp power", why:"Nothing in her claim involves manipulation."},
      {t:"The first face of power", why:"Dahl’s face concerns direct control of behaviour, not this measurement mistake."}]},
    {id:"e4u8-q05", lesson:"e4u8-l1", level:1, q:"Who argued that soft power “isn’t so soft” because attraction can be produced through representational force?", options:[
@@ -1203,12 +1265,12 @@ ICA.addUnit({
      {t:"Suzanne Nossel (2004)", why:"Nossel wrote about smart power."},
      {t:"Steven Lukes (1974)", why:"Lukes wrote on the third face of power, before the term soft power existed."}]},
    {id:"e4u8-q06", lesson:"e4u8-l1", level:3, q:"A report says a government covertly funded commentators abroad to praise its policies without disclosing the payments. A student calls it “soft power”. What is the best reply?", options:[
-     {t:"Covert payment and concealment are closer to what Walker and Ludwig call sharp power; Nye ties soft power to openness and voluntary attraction.", ok:true, why:"Right. The method, deception, places it outside soft power as Nye defines it."},
+     {t:"It is closer to what Walker and Ludwig call sharp power.", ok:true, why:"Right. Nye ties soft power to openness and voluntary attraction. The method, covert payment and concealment, places it outside soft power as Nye defines it."},
      {t:"It is soft power because no military force was used.", why:"Soft power is not everything that is non-military; payment and deception are excluded."},
      {t:"It is hard power because money is involved, and nothing more can be said.", why:"Payment is inducement, but the concealment is the key feature; sharp power names it."},
      {t:"It cannot be classified without knowing which country did it.", why:"Classification depends on the method, not on the identity of the country."}]},
    {id:"e4u8-q07", lesson:"e4u8-l1", level:2, q:"Two indices rank Country Q 5th and 14th in the same year. What is the most likely explanation?", options:[
-     {t:"They survey different people about different things, with different weights.", ok:true, why:"Yes. Methods differ, so ranks differ; neither is simply “right”."},
+     {t:"Different methods, samples and weights.", ok:true, why:"Yes. They survey different people about different things. Methods differ, so ranks differ; neither is simply “right”."},
      {t:"One index must contain a typing error.", why:"Large gaps are normal between indices with different designs."},
      {t:"Country Q’s soft power changed during the year.", why:"Both refer to the same period; the difference is in method."},
      {t:"Soft power cannot be measured, so both are random.", why:"Too strong: indices measure something (perceptions, resources) even if not influence itself."}]},
@@ -1218,7 +1280,7 @@ ICA.addUnit({
      {t:"Joining the Soft Power 30 index", why:"Countries do not join indices; and that index began in 2015."},
      {t:"Replacing the term “soft power” with “sharp power”", why:"Sharp power was coined in 2017 by US-based authors and rejected by Chinese officials."}]},
    {id:"e4u8-q09", lesson:"e4u8-l1", level:3, q:"Priya’s thesis argues that a country’s rise in a soft power index caused its partners to support it in a vote. Which addition would most strengthen her design?", options:[
-     {t:"Evidence linking specific audiences’ views to the partners’ decision, such as statements, timing and comparison with partners whose publics’ views did not change", ok:true, why:"Yes. She needs a mechanism and a comparison, not just a correlation between a rank and a vote."},
+     {t:"Evidence of a mechanism and a comparison", ok:true, why:"Yes. For example, link specific audiences’ views to the partners’ decision through statements and timing, and compare partners whose publics’ views did not change. She needs a mechanism and a comparison, not just a correlation between a rank and a vote."},
      {t:"A second index showing the same rise", why:"That confirms the rise, not that it caused the vote."},
      {t:"A longer quotation from Nye defining soft power", why:"Definitions do not establish causation."},
      {t:"Photographs of cultural events in the partner countries", why:"Evidence of activity, not of effect on the vote."}]},
@@ -1234,12 +1296,12 @@ ICA.addUnit({
      {t:"Jan Melissen, in 2005", why:"Melissen wrote on the new public diplomacy in 2005."},
      {t:"The BBC, in 1932", why:"The BBC started its Empire Service in 1932, but did not coin the term."}]},
    {id:"e4u8-q12", lesson:"e4u8-l2", level:2, q:"A city government in Japan twins with a city in Brazil, and local schools run student exchanges. Which idea does this illustrate best?", options:[
-     {t:"The new public diplomacy, in which non-state and sub-state actors engage foreign publics", ok:true, why:"Right. Cities and schools are among the many actors Melissen’s model includes."},
+     {t:"The new public diplomacy of sub-state actors", ok:true, why:"Right. Non-state and sub-state actors engage foreign publics. Cities and schools are among the many actors Melissen’s model includes."},
      {t:"Sharp power", why:"Nothing here is covert or manipulative."},
      {t:"Hard power", why:"No coercion or payment for policy is involved."},
-     {t:"International broadcasting", why:"No broadcasting is involved."}]},
+     {t:"International broadcasting to foreign audiences", why:"No broadcasting is involved."}]},
    {id:"e4u8-q13", lesson:"e4u8-l2", level:2, q:"Why might a government-funded broadcaster deliberately report its own government’s failures?", options:[
-     {t:"Credibility: audiences trust it more if it is not simply the funder’s voice, which helps the funder in the long run.", ok:true, why:"Yes. This is the central paradox of international broadcasting."},
+     {t:"Credibility, which helps the funder in the long run.", ok:true, why:"Yes. Audiences trust it more if it is not simply the funder’s voice. This is the central paradox of international broadcasting."},
      {t:"Because broadcasters have no editorial rules.", why:"Most have detailed editorial rules; the reason is credibility."},
      {t:"To reduce its audience.", why:"Credible reporting usually aims to grow trust and audience."},
      {t:"Because the law requires every broadcaster to criticise its government.", why:"No such general law exists; independence rules vary."}]},
@@ -1249,22 +1311,22 @@ ICA.addUnit({
      {t:"Suspended RT across the European Union", why:"The EU suspended RT in March 2022; Ofcom is a UK body."},
      {t:"Created NHK World-Japan", why:"NHK is Japan’s public broadcaster."}]},
    {id:"e4u8-q15", lesson:"e4u8-l2", level:3, q:"Oluwaseun studies an embassy’s social media and finds that 95% of posts announce events and policies, almost none reply to comments, and no surveys are run. How would Cull and Melissen describe this practice?", options:[
-     {t:"Mostly old, one-way public diplomacy, weak on listening", ok:true, why:"Right. It is a monologue on new platforms, lacking the listening and dialogue both authors stress."},
+     {t:"Mostly old, one-way public diplomacy", ok:true, why:"Right. It is weak on listening: a monologue on new platforms, lacking the listening and dialogue both authors stress."},
      {t:"A model of the new public diplomacy", why:"Using social media is not enough; the new model is defined by dialogue and networks."},
      {t:"Sharp power", why:"Nothing indicates deception or manipulation."},
-     {t:"Exchange diplomacy", why:"No people are being sent or received."}]},
+     {t:"Exchange diplomacy through social media", why:"No people are being sent or received."}]},
    {id:"e4u8-q16", lesson:"e4u8-l2", level:3, q:"A ministry reports that alumni of its exchange programme are far more favourable to it than the general population. Which design would best test whether the programme caused this?", options:[
-     {t:"Compare applicants who were accepted with similar applicants who were not, before and after the exchange", ok:true, why:"Yes. This deals with selection bias by comparing like with like over time."},
+     {t:"Compare accepted with rejected applicants", ok:true, why:"Yes. Compare them with similar applicants who were not accepted, before and after the exchange. This deals with selection bias by comparing like with like over time."},
      {t:"Survey more alumni", why:"A larger sample of the same group does not solve selection bias."},
      {t:"Ask alumni whether the programme changed their views", why:"Self-reports are useful but weak evidence of cause."},
      {t:"Count how many alumni there are", why:"An output, not evidence of effect."}]},
    {id:"e4u8-q17", lesson:"e4u8-l2", level:2, q:"Which example is cultural diplomacy rather than advocacy?", options:[
-     {t:"A national institute offers language classes and hosts a film festival.", ok:true, why:"Right. Making culture known abroad, not arguing a specific policy."},
+     {t:"A national institute offers language classes.", ok:true, why:"Right. Classes and film festivals make culture known abroad, not arguing a specific policy."},
      {t:"An ambassador gives interviews defending a trade policy.", why:"That is advocacy."},
      {t:"An embassy rebuts a newspaper report about its military.", why:"That is advocacy."},
      {t:"A minister writes an op-ed on a border dispute.", why:"That is advocacy."}]},
    {id:"e4u8-q18", lesson:"e4u8-l2", level:1, q:"In Cull’s cases, what does Sayyid Qutb’s period of study in the United States (1948–50) illustrate?", options:[
-     {t:"That exchange can produce rejection as well as attraction", ok:true, why:"Right. Qutb returned hostile to American society."},
+     {t:"That exchange can produce rejection", ok:true, why:"Right. It can produce rejection as well as attraction: Qutb returned hostile to American society."},
      {t:"That broadcasting is the most effective tool", why:"His case is about exchange."},
      {t:"That listening always works", why:"Unrelated to his case."},
      {t:"That cultural institutes should be closed", why:"Cull draws no such conclusion."}]},
@@ -1275,9 +1337,9 @@ ICA.addUnit({
      {t:"Population size", why:"Not a dimension."},
      {t:"Climate", why:"Not a dimension."}]},
    {id:"e4u8-q20", lesson:"e4u8-l3", level:2, q:"Sione advises a small Pacific state that wants a better image. Following Anholt’s later view, what should he recommend first?", options:[
-     {t:"Focus on real policies and actions that people abroad can notice and value, rather than an advertising campaign", ok:true, why:"Yes: competitive identity. Reputation follows behaviour."},
+     {t:"Improve real policies people abroad notice", ok:true, why:"Yes: competitive identity. Focus on actions people abroad can notice and value, not an advertising campaign. Reputation follows behaviour."},
      {t:"Hire a firm to design a new logo and slogan", why:"Anholt argues campaigns alone rarely change reputations."},
-     {t:"Buy a higher place in a soft power index", why:"Rankings cannot be bought, and a rank is not a reputation."},
+     {t:"Buy a higher place in a well-known soft power index", why:"Rankings cannot be bought, and a rank is not a reputation."},
      {t:"Avoid all international engagement", why:"Engagement is how reputations are formed."}]},
    {id:"e4u8-q21", lesson:"e4u8-l3", level:1, q:"Where was the term “Korean Wave” (Hallyu) first used, according to the best-known account?", options:[
      {t:"In Chinese media, in the *Beijing Youth Daily* in 1999", ok:true, why:"Right: about Chinese viewers’ enthusiasm for Korean dramas and pop songs."},
@@ -1285,12 +1347,12 @@ ICA.addUnit({
      {t:"In a US magazine in 2012, after “Gangnam Style”", why:"The term was more than a decade older."},
      {t:"In Japan, after *Winter Sonata*", why:"*Winter Sonata* spread the term in Japan in 2003–04, but it originated in China."}]},
    {id:"e4u8-q22", lesson:"e4u8-l3", level:2, q:"Which statement about the Korean Wave is best supported by the evidence discussed?", options:[
-     {t:"It grew from a mix of private industry, platforms and fans, which state policy supported and amplified.", ok:true, why:"Right. Most scholars describe a combination rather than a purely state-led or purely market-led wave."},
+     {t:"Industry and fans led; the state supported it.", ok:true, why:"Right. It grew from private industry, platforms and fans, which state policy supported and amplified. Most scholars describe a combination rather than a purely state-led or purely market-led wave."},
      {t:"It was entirely planned by the government from the start.", why:"Too strong: private firms and fans played central roles."},
      {t:"The government played no role at all.", why:"Too strong: a 1999 law and later agencies supported cultural industries."},
      {t:"It has removed all political tensions in the region.", why:"Counter-evidence: reported restrictions in China after THAAD and anti-Korean sentiment in Japan."}]},
    {id:"e4u8-q23", lesson:"e4u8-l3", level:3, q:"Mei is writing about Confucius Institutes. Which sentence best fits academic neutrality?", options:[
-     {t:"Critics such as the AAUP argue the institutes risk self-censorship inside universities; China’s government says they do not interfere with academic freedom, and many hosts value their teaching.", ok:true, why:"Right: specific concerns and specific replies, each attributed."},
+     {t:"Critics see a risk of self-censorship; China rejects this.", ok:true, why:"Right. In full: critics such as the AAUP argue the institutes risk self-censorship inside universities; China’s government says they do not interfere with academic freedom, and many hosts value their teaching. Specific concerns and replies, each attributed."},
      {t:"Confucius Institutes are clearly espionage centres.", why:"An unsupported conclusion stated as fact."},
      {t:"Concerns about Confucius Institutes are entirely invented.", why:"Dismisses documented concerns, such as those in the 2019 US review."},
      {t:"Confucius Institutes work exactly like the Goethe-Institut.", why:"Inaccurate: most are placed inside host institutions, unlike the Goethe-Institut’s own centres."}]},
@@ -1300,17 +1362,17 @@ ICA.addUnit({
      {t:"Launching the International Day of Yoga", why:"That was India’s initiative at the UN (2014)."},
      {t:"Opening the first Confucius Institute", why:"That was China’s programme (2004)."}]},
    {id:"e4u8-q25", lesson:"e4u8-l3", level:2, q:"What is the main point of Iwabuchi’s critique of “brand nationalism”?", options:[
-     {t:"State branding turns popular culture into a national asset and narrows the nation to marketable images", ok:true, why:"Right. It leaves out diversity and difficult histories."},
+     {t:"Branding narrows the nation to marketable images", ok:true, why:"Right. State branding turns popular culture into a national asset. It leaves out diversity and difficult histories."},
      {t:"Japanese companies should stop exporting anime", why:"His critique concerns state framing, not exports as such."},
      {t:"Popular culture cannot cross borders", why:"His earlier work showed how Japanese culture travels in Asia."},
      {t:"Nation branding is the only effective form of public diplomacy", why:"He is a critic of branding."}]},
    {id:"e4u8-q26", lesson:"e4u8-l3", level:1, q:"How did the UN General Assembly create the International Day of Yoga?", options:[
-     {t:"By resolution 69/131 of 11 December 2014, with 177 co-sponsors", ok:true, why:"Correct. It made 21 June the International Day of Yoga."},
+     {t:"By resolution 69/131 in December 2014", ok:true, why:"Correct. Adopted on 11 December 2014 with 177 co-sponsors, it made 21 June the International Day of Yoga."},
      {t:"By a Security Council decision in 2010", why:"Observance days are created by the General Assembly, and the date is wrong."},
      {t:"By UNESCO’s World Heritage Committee", why:"The Committee lists sites; it does not create international days."},
      {t:"By a vote of the Indian Parliament alone", why:"India proposed it, but the UN General Assembly adopted it."}]},
    {id:"e4u8-q27", lesson:"e4u8-l3", level:3, q:"Dmitri claims that the global success of *RRR*’s “Naatu Naatu” proves India’s government has a successful soft power strategy. What is the best response?", options:[
-     {t:"The film is a commercial Telugu production; its success shows India’s cultural assets, but Thussu argues these are not yet converted into influence by a strategy.", ok:true, why:"Right. It separates market success from state strategy and corrects the “Bollywood” assumption."},
+     {t:"It was a commercial film; assets aren’t yet a strategy.", ok:true, why:"Right. It is a commercial Telugu production. Its success shows India’s cultural assets, but Thussu argues these are not yet converted into influence by a strategy. This separates market success from state strategy and corrects the “Bollywood” assumption."},
      {t:"The film was made by the Indian Council for Cultural Relations.", why:"Inaccurate: it was a commercial production."},
      {t:"Films have no relation to soft power.", why:"Too strong: culture is one of Nye’s sources."},
      {t:"It proves soft power is sharp power.", why:"Nothing in the case involves manipulation."}]},
@@ -1321,34 +1383,34 @@ ICA.addUnit({
      {t:"Seoul (1988 and 2018)", why:"The 2018 Winter Games were in PyeongChang, not Seoul."},
      {t:"Rio de Janeiro (2016)", why:"Rio hosted only the Summer Games."}]},
    {id:"e4u8-q29", lesson:"e4u8-l4", level:1, q:"What does “soft disempowerment” mean, as used by Brannagan and Giulianotti?", options:[
-     {t:"Losing attraction because of the scrutiny or offence a country’s actions bring", ok:true, why:"Right. Mega-events invite scrutiny that can reduce attraction."},
-     {t:"Giving up hard power voluntarily", why:"That is not their concept."},
+     {t:"Losing attraction because of scrutiny", ok:true, why:"Right. A country’s actions can bring scrutiny or offence; mega-events invite scrutiny that can reduce attraction."},
+     {t:"Giving up hard power voluntarily to look peaceful", why:"That is not their concept."},
      {t:"Banning foreign broadcasters", why:"That is a media restriction, not the concept, which is about losing attraction."},
      {t:"Hosting a smaller event", why:"Unrelated to event size."}]},
    {id:"e4u8-q30", lesson:"e4u8-l4", level:2, q:"A government says criticism of its World Cup is unfair and shows double standards; a human rights group calls the tournament sportswashing. How should a seminar paper treat “sportswashing”?", options:[
-     {t:"As a contested claim: state who makes it, what is allegedly being washed, for which audience, and whether evidence shows views changed", ok:true, why:"Right. Treat it as a hypothesis to test, attributing both sides."},
+     {t:"As a contested claim to be tested", ok:true, why:"Right. State who makes it, what is allegedly being washed, for which audience, and whether evidence shows views changed. Treat it as a hypothesis to test, attributing both sides."},
      {t:"As a neutral technical term everyone accepts", why:"Host governments reject it; it is not neutral."},
      {t:"As meaningless, so it should be ignored", why:"It names a real debate that scholars study."},
      {t:"As proven whenever an authoritarian state hosts an event", why:"That assumes the conclusion; evidence is needed case by case."}]},
    {id:"e4u8-q31", lesson:"e4u8-l4", level:2, q:"Who decides whether a site is inscribed on the World Heritage List?", options:[
-     {t:"The 21-member World Heritage Committee, made up of states, advised by expert bodies", ok:true, why:"Correct. ICOMOS and IUCN advise; states decide."},
+     {t:"The 21-member World Heritage Committee of states", ok:true, why:"Correct. ICOMOS and IUCN advise; states decide."},
      {t:"ICOMOS alone", why:"ICOMOS evaluates cultural sites and advises; it does not decide."},
      {t:"The UN Security Council", why:"The Security Council has no role in World Heritage listing."},
-     {t:"The country that owns the site", why:"States nominate; the Committee decides."}]},
+     {t:"The government of the country that owns the site", why:"States nominate; the Committee decides."}]},
    {id:"e4u8-q32", lesson:"e4u8-l4", level:3, q:"Hana writes about the 2015 inscription of the Sites of Japan’s Meiji Industrial Revolution. Which sentence is most accurate and balanced?", options:[
-     {t:"Japan acknowledged at inscription that Koreans were brought against their will to work at some sites; Japan and South Korea have disagreed since about what that meant and how the history is presented.", ok:true, why:"Right: the documented statement, then both governments’ readings."},
+     {t:"Japan and South Korea disagree over Japan’s 2015 statement.", ok:true, why:"Right. Japan acknowledged at inscription that Koreans were brought against their will to work at some sites; the two governments have disagreed since about what that meant and how the history is presented."},
      {t:"South Korea blocked the inscription.", why:"Inaccurate: the sites were inscribed."},
      {t:"The dispute is about the sites’ 19th-century architecture.", why:"Inaccurate: it concerns wartime labour at some sites."},
      {t:"UNESCO confirmed that the matter is closed.", why:"Inaccurate: the committee has continued to ask Japan to improve its interpretation."}]},
    {id:"e4u8-q33", lesson:"e4u8-l4", level:1, q:"Which sequence is correct for ping-pong diplomacy?", options:[
-     {t:"Nagoya championships → US team visits China (April 1971) → Kissinger’s secret trip (July 1971) → Nixon in China (February 1972)", ok:true, why:"Correct order."},
+     {t:"Nagoya → US team in China → Kissinger → Nixon", ok:true, why:"Correct order: Nagoya championships, US team visits China (April 1971), Kissinger’s secret trip (July 1971), Nixon in China (February 1972)."},
      {t:"Nixon in China → US team visits China → Kissinger’s secret trip", why:"Nixon’s visit came last, in 1972."},
      {t:"Kissinger’s secret trip → Nagoya championships → Nixon in China", why:"The championships came first, in spring 1971."},
      {t:"US team visits China (1969) → Nagoya championships (1971)", why:"The visit followed the 1971 championships."}]},
    {id:"e4u8-q34", lesson:"e4u8-l4", level:2, q:"Why do historians call the 1969 Football War’s matches a trigger rather than a cause?", options:[
-     {t:"The war’s roots lay in land, migration and border tensions between El Salvador and Honduras; the matches sparked an existing conflict.", ok:true, why:"Right. A trigger sets off a conflict whose causes lie elsewhere."},
-     {t:"No matches were played.", why:"World Cup qualifiers were played in 1969."},
-     {t:"FIFA declared the war.", why:"FIFA played no such role."},
+     {t:"Its causes lay in older tensions.", ok:true, why:"Right. Its roots lay in land, migration and border tensions between El Salvador and Honduras; the matches sparked an existing conflict. A trigger sets off a conflict whose causes lie elsewhere."},
+     {t:"No matches were actually played that year.", why:"World Cup qualifiers were played in 1969."},
+     {t:"FIFA declared the war after the matches.", why:"FIFA played no such role."},
      {t:"The war lasted only one hour.", why:"It lasted about 100 hours; its length is not the point."}]},
    {id:"e4u8-q35", lesson:"e4u8-l4", level:2, q:"Why did Grix and Lee argue that emerging states are especially drawn to mega-events?", options:[
      {t:"They see them as a way to seek attraction and international status", ok:true, why:"Right: “the lure of the politics of attraction”."},
@@ -1356,10 +1418,10 @@ ICA.addUnit({
      {t:"Only emerging states are allowed to bid", why:"Any state can bid."},
      {t:"They want to avoid international attention", why:"The opposite: attention is the point."}]},
    {id:"e4u8-q36", lesson:"e4u8-l4", level:3, q:"Lucía compares Tokyo 2020 and Qatar 2022 for a paper on soft power. Which comparison question would best use both cases?", options:[
-     {t:"How did the main source of scrutiny (a pandemic and domestic opinion in Tokyo; labour and rights in Qatar) shape each host’s image for different audiences?", ok:true, why:"Right. It compares a specific mechanism across cases and separates audiences."},
+     {t:"How did scrutiny shape each host’s image?", ok:true, why:"Right. The scrutiny differed (a pandemic and domestic opinion in Tokyo; labour and rights in Qatar), and so did audiences. It compares a specific mechanism across cases and separates audiences."},
      {t:"Which host had the better weather?", why:"Not a soft power question."},
-     {t:"Which host is morally superior?", why:"A normative judgement, not an analytical comparison; it also invites bias."},
-     {t:"Which event sold more souvenirs?", why:"An output with no clear link to image or influence."}]},
+     {t:"Which host is morally superior to the other overall?", why:"A normative judgement, not an analytical comparison; it also invites bias."},
+     {t:"Which event sold more souvenirs and tickets abroad?", why:"An output with no clear link to image or influence."}]},
    /* ---- Lesson 5 ---- */
    {id:"e4u8-q37", lesson:"e4u8-l5", level:1, q:"In evaluation terms, “10,000 people attended our festival” is…", options:[
      {t:"An output", ok:true, why:"Right: a count of what was done and who was reached."},
@@ -1372,12 +1434,12 @@ ICA.addUnit({
      {t:"Outcomes are illegal to measure", why:"They are not; surveys and interviews can measure them."},
      {t:"Impact cannot exist in public diplomacy", why:"Impact can exist; showing it is the challenge."}]},
    {id:"e4u8-q39", lesson:"e4u8-l5", level:1, q:"What did Goldsmith, Horiuchi and Matush (2021) find about leaders’ visits abroad?", options:[
-     {t:"They raised host publics’ approval of the visiting leader by about 2 percentage points, for up to about three weeks, more with media coverage", ok:true, why:"Correct, using Gallup World Poll interviews around 86 visits."},
+     {t:"A small, short rise in approval of the visitor", ok:true, why:"Correct. Host publics’ approval rose by about 2 percentage points, for up to about three weeks, more with media coverage, using Gallup World Poll interviews around 86 visits."},
      {t:"They had no effect at all", why:"They found a small effect that lasted up to about three weeks."},
-     {t:"They raised approval by about 20 points", why:"The effect was much smaller."},
+     {t:"They raised approval of the visitor by about 20 points", why:"The effect was much smaller."},
      {t:"They always reduced approval", why:"Approval rose on average."}]},
    {id:"e4u8-q40", lesson:"e4u8-l5", level:3, q:"Kenji notes that surveys find mostly unfavourable views of China in many high-income countries but more positive views of China’s influence in parts of Africa. What is the most careful conclusion?", options:[
-     {t:"Audience matters, and the pattern may reflect economic ties, foreign policy and public diplomacy, which need separating before crediting any one cause", ok:true, why:"Right. This is the attribution problem applied to real survey patterns."},
+     {t:"Audience matters, and several causes need separating", ok:true, why:"Right. Economic ties, foreign policy and public diplomacy may all play a part. This is the attribution problem applied to real survey patterns."},
      {t:"China’s public diplomacy works in Africa and fails elsewhere", why:"That jumps to one cause; other factors may explain the pattern."},
      {t:"The surveys must be wrong", why:"Different patterns across regions are plausible and well documented."},
      {t:"Soft power does not exist", why:"Too strong; the pattern shows that attraction varies by audience."}]},
@@ -1397,10 +1459,10 @@ ICA.addUnit({
      {t:"India and a small island state", why:"Very different in size and resources; not most-similar."},
      {t:"China and a city government", why:"Different kinds of actors; not a like-for-like comparison."}]},
    {id:"e4u8-q44", lesson:"e4u8-l5", level:3, q:"Amara drafts a brief recommending that a ministry double its festival budget, citing only rising attendance. What is the strongest improvement?", options:[
-     {t:"Add evidence on outcomes and impact, acknowledge the attribution problem, and compare options such as exchanges or surveys", ok:true, why:"Right. Attendance is an output; a brief needs evidence closer to results and real options."},
+     {t:"Add evidence on outcomes and compare options", ok:true, why:"Right. Also acknowledge the attribution problem and weigh options such as exchanges or surveys. Attendance is an output; a brief needs evidence closer to results and real options."},
      {t:"Add more attendance figures", why:"More outputs do not show effect."},
      {t:"Remove the recommendation", why:"A brief needs a recommendation; it must be better supported."},
-     {t:"Write a longer historical introduction", why:"A brief should be shorter and more focused."}]},
+     {t:"Write a longer historical introduction to the festival", why:"A brief should be shorter and more focused."}]},
    {id:"e4u8-q45", lesson:"e4u8-l5", level:1, q:"Which case is best described as largely market-led, with limited state strategy?", options:[
      {t:"Nigeria’s Nollywood and Afrobeats", ok:true, why:"Right. They spread mainly through markets, fans and diaspora."},
      {t:"China’s Confucius Institutes", why:"A state-backed programme."},

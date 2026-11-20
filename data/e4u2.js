@@ -77,7 +77,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u2-l1-x1", type:"mcq", q:"A dominant state’s leader says: “The current order and free trade benefit everyone equally, so any country that challenges them is an enemy of peace.” Which of E. H. Carr’s ideas fits a critique of this statement best?", options:[
-      {t:"The harmony of interests: satisfied powers present their own interest in the status quo as a universal good", ok:true, why:"Right. Carr argued that the claim of a natural harmony of interests suited the powers that benefited from the existing order, making challengers look immoral."},
+      {t:"The harmony of interests", ok:true, why:"Right. Satisfied powers present their own interest in the status quo as a universal good. Carr argued that the claim of a natural harmony of interests suited the powers that benefited from the existing order, making challengers look immoral."},
       {t:"The stopping power of water", why:"That is Mearsheimer’s idea about why global hegemony is impossible. It says nothing about how powerful states justify an order."},
       {t:"The offence–defence balance", why:"That is Jervis’s idea about military technology and the security dilemma, not about the language of order and morality."},
       {t:"Balance of threat", why:"That is Walt’s theory of alliance choice. It does not address how a leading state describes the order as good for all."}
@@ -97,7 +97,7 @@ ICA.addUnit({
       {t:"A dilemma, but manageable, because forces look alike", why:"These forces are easy to tell apart: coastal guns and short-range air defences can’t invade."}
     ]},
     {id:"e4u2-l1-x4", type:"mcq", q:"An analyst is convinced that a rival government is building up its army mainly because it feels insecure. Which policy does Jervis’s spiral model suggest, and what is its risk?", options:[
-      {t:"Reassurance and arms-control offers; if the analyst is wrong and the rival is aggressive, concessions may invite more demands", ok:true, why:"Right. The spiral model treats insecurity as the problem, and Jervis stressed that misjudging which model fits is costly either way."},
+      {t:"Reassurance; but if the rival is aggressive, it may invite more demands", ok:true, why:"Right. It suggests reassurance and arms-control offers, but concessions to an aggressive rival may invite more demands. The spiral model treats insecurity as the problem, and Jervis stressed that misjudging which model fits is costly either way."},
       {t:"Firm deterrence and clear threats; if the analyst is wrong, nothing is lost", why:"That is the deterrence model’s advice, and it also has a cost: against an insecure rival, threats feed the spiral."},
       {t:"Doing nothing, because the security dilemma solves itself", why:"Neither model says the dilemma solves itself; both ask what policy reduces danger."},
       {t:"Seeking regional hegemony to remove the threat for good", why:"That is offensive realist advice, not the spiral model’s."}
@@ -110,10 +110,10 @@ ICA.addUnit({
       ["Graham Allison (2017)","Counted 12 wars in 16 cases of a rising power challenging a ruling one","*Destined for War* popularised “Thucydides’s Trap”."]
     ]},
     {id:"e4u2-l1-x6", type:"mcq", q:"A scholar explains a war by the ruling party’s ideology, a coalition of domestic interest groups and popular nationalism, and calls the explanation realist. Which critique would Legro and Moravcsik (1999) make?", options:[
-      {t:"If realism absorbs ideology, coalitions and nationalism, it loses what made it distinct from liberal and constructivist theories", ok:true, why:"Right. Their article argued that realism had been stretched until it no longer had a distinctive core."},
+      {t:"Realism that absorbs all these loses its distinct core", ok:true, why:"Right. If realism absorbs ideology, coalitions and nationalism, it loses what made it distinct from liberal and constructivist theories. Their article argued that realism had been stretched until it no longer had a distinctive core."},
       {t:"Realism should never use evidence from inside states", why:"Neoclassical realists do use domestic factors; the critique is about whether these become the main explanation."},
       {t:"Wars can only be explained by human nature", why:"That is closer to early classical realism, and it is not Legro and Moravcsik’s point."},
-      {t:"Realism is true, so the explanation must be right", why:"A critique asks whether an explanation fits the theory’s claims, not whether the theory is true by definition."}
+      {t:"Realism is true by definition, so the explanation must be right", why:"A critique asks whether an explanation fits the theory’s claims, not whether the theory is true by definition."}
     ]},
     {id:"e4u2-l1-x7", type:"spot", q:"A classmate’s seminar notes on realism. Tap the claims that are wrong.", ask:"wrong", parts:[
       {t:"Herz named the security dilemma in 1950.", flag:false, why:"Correct: John Herz, “Idealist Internationalism and the Security Dilemma”, *World Politics*, 1950."}," ",
@@ -203,19 +203,19 @@ ICA.addUnit({
       {t:"Firms with investments abroad lobby their governments against conflict with host countries.", b:0, why:"Economic ties creating interests in peace is commercial liberalism."}
     ]},
     {id:"e4u2-l2-x2", type:"mcq", q:"A state whose banks run a payment-messaging network used worldwide threatens to cut a rival’s banks off from it. Which idea fits best?", options:[
-      {t:"Weaponised interdependence: control of a network hub lets a state use the chokepoint effect", ok:true, why:"Right. Farrell and Newman (2019) showed how control over hubs in global networks becomes a tool of coercion."},
+      {t:"Weaponised interdependence: control of a hub creates a chokepoint", ok:true, why:"Right. Farrell and Newman (2019) showed how control over hubs in global networks becomes a tool of coercion."},
       {t:"Complex interdependence shows that force has no role, so the threat cannot matter", why:"Keohane and Nye described an ideal type, and this is a case of economic, not military, pressure. Interdependence can be used as power."},
       {t:"The democratic peace predicts the threat will never be carried out", why:"The democratic peace is about war between democracies; it says nothing about network sanctions."},
       {t:"Hegemonic stability theory says only the hegemon may join networks", why:"The theory is about who stabilises an open economy, not who may join networks."}
     ]},
     {id:"e4u2-l2-x3", type:"mcq", q:"Using Krasner’s definition, which of these is best described as an international regime?", options:[
-      {t:"The principles, norms, rules and decision procedures that many states follow on ozone-depleting chemicals", ok:true, why:"Right. A regime is the converging set of principles, norms, rules and procedures in one issue area, here built around the Montreal Protocol."},
+      {t:"Shared rules on ozone-depleting chemicals", ok:true, why:"Right. Many states follow the same principles, norms, rules and decision procedures here. A regime is the converging set of principles, norms, rules and procedures in one issue area, here built around the Montreal Protocol."},
       {t:"A single joint statement after a two-day summit", why:"One statement may contribute to a regime, but on its own it is not a set of converging expectations and procedures."},
       {t:"One country’s export-control law", why:"A national law is domestic; a regime is shared among states."},
       {t:"A company’s internal code of conduct", why:"A private code may matter, but it is not a set of rules around which states’ expectations converge."}
     ]},
     {id:"e4u2-l2-x4", type:"mcq", q:"In the 1970s many expected the post-war economic institutions to weaken as US dominance declined. What was Keohane’s answer in *After Hegemony* (1984)?", options:[
-      {t:"Institutions can persist because they keep providing information and lowering the costs of cooperation, even without a hegemon", ok:true, why:"Right. Once built, institutions are cheaper to keep than to rebuild, so states maintain them for their own reasons."},
+      {t:"Institutions can persist without a hegemon", ok:true, why:"Right. They keep providing information and lowering the costs of cooperation. Once built, institutions are cheaper to keep than to rebuild, so states maintain them for their own reasons."},
       {t:"Institutions would collapse, just as hegemonic stability theory predicted", why:"That was the expectation Keohane challenged."},
       {t:"A new hegemon would instantly replace the United States", why:"Keohane’s argument did not depend on a new hegemon; it explained cooperation “after hegemony”."},
       {t:"Institutions only matter between democracies", why:"Keohane’s argument is about rational states in general, not regime type."}
@@ -229,7 +229,7 @@ ICA.addUnit({
     ]},
     {id:"e4u2-l2-x6", type:"mcq", q:"Kenji points out that democracies have fought many wars against non-democracies. Which claim does this evidence challenge?", options:[
       {t:"The monadic claim that democracies are more peaceful in general", ok:true, why:"Right. Wars between democracies and non-democracies are evidence against the monadic claim, not the dyadic one."},
-      {t:"The dyadic claim that democracies rarely fight each other", why:"The dyadic claim is only about pairs of democracies, so these wars do not count against it."},
+      {t:"The dyadic claim that democracies rarely or never fight each other", why:"The dyadic claim is only about pairs of democracies, so these wars do not count against it."},
       {t:"Hegemonic stability theory", why:"That theory is about who stabilises the world economy, not about regime type and war."},
       {t:"Complex interdependence", why:"Kenji’s point concerns regime type and war, not interdependence."}
     ]},
@@ -320,7 +320,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u2-l3-x1", type:"mcq", q:"In Wendt’s terms, a state respects a neighbour’s borders only because it calculates that invading would cost more than it gains. Which degree of internalisation is this?", options:[
-      {t:"The second degree: price, following the rule because it serves self-interest", ok:true, why:"Right. The rule is followed for its costs and benefits, not because the state is forced or because it accepts the rule as legitimate."},
+      {t:"The second degree: price", ok:true, why:"Right. The state follows the rule because it serves its self-interest, after weighing costs and benefits. It is not forced, and it does not accept the rule as legitimate."},
       {t:"The first degree: force", why:"Force means the state is made to comply, for example by an occupying army. Here it chooses after a calculation."},
       {t:"The third degree: legitimacy", why:"Legitimacy would mean the state accepts the rule as right in itself, whatever the cost calculation."},
       {t:"None: Wendt says only material power matters", why:"Wendt argued the opposite: shared ideas shape what material power means."}
@@ -436,8 +436,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u2-l4-x1", type:"mcq", q:"Tomás says: “The critical approaches are basically one school: they all agree with each other and only attack realism.” What is the best reply?", options:[
-      {t:"They share questions about how the order arose and whom it serves, but disagree among themselves, for example Marxists criticising postcolonial theory", ok:true, why:"Right. Chibber’s Marxist critique of postcolonial theory is one example; feminists and Marxists also argue over whether class or gender matters more."},
-      {t:"He is right: they form a single school with one leader", why:"There is no single school; “critical” covers several traditions with different starting points."},
+      {t:"They share key questions but often disagree among themselves", ok:true, why:"Right. They share questions about how the order arose and whom it serves. Chibber’s Marxist critique of postcolonial theory is one example; feminists and Marxists also argue over whether class or gender matters more."},
+      {t:"He is right: they form a single school with one leader and one method", why:"There is no single school; “critical” covers several traditions with different starting points."},
       {t:"They have nothing in common at all", why:"They share the habit of asking how the order arose, whom it serves and how it could change."},
       {t:"They all reject the study of the economy", why:"Historical materialists put the economy at the centre."}
     ]},
@@ -469,13 +469,13 @@ ICA.addUnit({
       {t:"Grovogui studied how international law treated African self-determination.", flag:false, why:"Correct: *Sovereigns, Quasi Sovereigns, and Africans* (1996)."}
     ]},
     {id:"e4u2-l4-x6", type:"mcq", q:"Which claim best summarises Robyn Eckersley’s argument in *The Green State* (2004)?", options:[
-      {t:"States can be reformed to practise ecological democracy, giving a voice to those affected by environmental harm, including people abroad and future generations", ok:true, why:"Right. Eckersley argued for transforming the state rather than abolishing it."},
+      {t:"States can be reformed to practise ecological democracy", ok:true, why:"Right. Such a state would give a voice to those affected by environmental harm, including people abroad and future generations. Eckersley argued for transforming the state rather than abolishing it."},
       {t:"States should be abolished at once and replaced by local communes", why:"Some radical greens argue something like this, but Eckersley’s point was that states can be reformed."},
       {t:"Environmental problems are best left to markets alone", why:"That is not a green theory position."},
       {t:"Only great powers matter for environmental politics", why:"Eckersley stressed giving a voice to those affected by harm, wherever they are."}
     ]},
     {id:"e4u2-l4-x7", type:"mcq", q:"Which statement fits David Campbell’s argument in *Writing Security* (1992)?", options:[
-      {t:"US foreign policy helped produce American identity by naming what was dangerous and foreign", ok:true, why:"Right. For Campbell, identity is not fixed before policy; it is written through the dangers a state names."},
+      {t:"US foreign policy helped produce American identity", ok:true, why:"Right. It did so by naming what was dangerous and foreign. For Campbell, identity is not fixed before policy; it is written through the dangers a state names."},
       {t:"US foreign policy is best explained by the distribution of capabilities", why:"That is a structural realist claim, which Campbell rejected."},
       {t:"Security threats are objective facts that discourse cannot affect", why:"Post-structuralists argue that how threats are known depends on discourse."},
       {t:"Democracies never construct enemies", why:"Campbell’s case was a democracy constructing dangers."}
@@ -537,7 +537,7 @@ ICA.addUnit({
         ["Feminist","Who absorbed the costs in households and informal work, a question many accounts never ask","The international bargaining"],
         ["Postcolonial and Global IR","Memories of outside control; regional agency in Malaysia’s controls and the Chiang Mai Initiative","Divisions within the region"]
       ]},
-      "Even critics who were not radical joined in: the trade economist Jagdish Bhagwati (“The Capital Myth”, 1998) attacked the push for free capital flows. Economists still debate whether the IMF’s conditions and Malaysia’s controls helped or hurt. The point is not to crown a winner but to see that each lens asks a different question."
+      "Even critics who were not radical joined in: the trade economist Jagdish Bhagwati (“The Capital Myth”, 1998) attacked the push for free capital flows. Economists still debate whether the IMF’s conditions and Malaysia’s controls helped or hurt; Unit 14 tells the economic side of the story ({{asian-financial-crisis}}). The point is not to crown a winner but to see that each lens asks a different question."
     ]},
     {h:"Using theory in a thesis", body:[
       "Graduate programmes expect a thesis to have a [[theoretical-framework|theoretical framework]] (see {{theoretical-framework}}): the theory or theories that tell you what to look for, and what you would expect to find. Unit 3 of this track covers research design; here is how theory fits in.",
@@ -599,7 +599,7 @@ ICA.addUnit({
       {t:"The argument is limited to Southeast Asian states after 1997.", flag:false, why:"Good practice: stating scope conditions."}
     ]},
     {id:"e4u2-l5-x7", type:"mcq", q:"Pinar Bilgin (2008) said non-Western thought about world politics is often “almost the same but not quite” as Western thought. What was her point?", options:[
-      {t:"Long, unequal contact with the West has produced thought that looks similar but differs in unexpected ways, so searching only for radical difference misses it", ok:true, why:"Right. Borrowing Homi Bhabha’s idea of mimicry, she argued that difference often hides inside apparent sameness, and asked how “Western” Western IR really is."},
+      {t:"Similar-looking thought can hide real differences", ok:true, why:"Right. Long, unequal contact with the West has produced thought that looks similar but differs in unexpected ways, so searching only for radical difference misses it. Borrowing Homi Bhabha’s idea of mimicry, she argued that difference often hides inside apparent sameness, and asked how “Western” Western IR really is."},
       {t:"Non-Western thought is a poor copy that adds nothing", why:"That is not her claim; she argued the difference is subtle, not absent or worthless."},
       {t:"Only Western theory can be called theory", why:"Bilgin was questioning that kind of boundary, not defending it."},
       {t:"Non-Western thought is completely different from Western thought", why:"Her phrase says the opposite: almost the same, but not quite."}
@@ -618,6 +618,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u2-q02","e4u2-q05","e4u2-q11","e4u2-q15","e4u2-q20","e4u2-q23","e4u2-q28","e4u2-q31","e4u2-q35","e4u2-q38","e4u2-q42","e4u2-q45"],
+  cpBank:[
+   {id:"e4u2-cp01", lesson:"e4u2-l1", level:2, q:"Country Y is weaker overall than Country X. But Y borders small State Z, has tanks built for invasion, and its leaders threaten Z. Z allies with distant X against Y. Which theory explains Z’s choice best?", options:[
+     {t:"Balance of power: states ally against whichever state is strongest overall", why:"A pure balance-of-power reading would expect Z to balance against X, the strongest state. Z does the opposite, so power alone doesn’t explain it."},
+     {t:"Bandwagoning for profit: Z joins the stronger side to share in its gains", why:"Schweller’s bandwagoning is about joining a rising side for gain. Z is acting out of fear of a nearby threat, not hoping for spoils."},
+     {t:"Walt’s balance of threat: Y is near, has offensive forces and shows hostile intent", ok:true, why:"Right. Walt argued states balance against threats, made of power, geographic nearness, offensive capability and perceived intentions. Y scores high on three of the four."},
+     {t:"Offshore balancing: Z waits for a distant great power to step in and contain Y alone", why:"Offshore balancing is a strategy for the distant great power, which steps in only when needed. Z is actively forming an alliance."}]},
+   {id:"e4u2-cp02", lesson:"e4u2-l1", level:2, q:"A state’s leaders agree that a neighbour is rising fast and is a threat. But rival elite factions block new taxes, so defence spending barely grows. Which approach explains this best?", options:[
+     {t:"Neoclassical realism, as in Schweller’s account of underbalancing by divided elites", ok:true, why:"Right. Neoclassical realism says system pressures pass through domestic “transmission belts”. Schweller’s *Unanswered Threats* explains why divided elites can make a state underbalance."},
+     {t:"Structural realism, because Waltz’s theory predicts each government’s budget choices", why:"Waltz insisted his theory explains recurring patterns in the system, not one government’s foreign policy. Domestic splits are outside it."},
+     {t:"Offensive realism, because Mearsheimer says states always maximise relative power", why:"Offensive realism would expect a threatened state to seek more power. It doesn’t explain why domestic politics held this state back."},
+     {t:"Neoliberal institutionalism, because institutions persist after hegemony", why:"Keohane’s argument is about why international institutions survive, not about domestic quarrels over defence taxes."}]},
+   {id:"e4u2-cp03", lesson:"e4u2-l2", level:1, q:"At trade talks, a negotiator tells the other side: “I could accept this deal, but my parliament will never ratify it, so you must offer more.” Which idea describes her position?", options:[
+     {t:"Krasner’s definition of an international regime", why:"A regime is a set of principles, norms, rules and procedures in an issue area. The quote is about bargaining with two audiences at once."},
+     {t:"Jervis’s spiral model", why:"The spiral model is about insecure rivals whose threats make each other more afraid. It says nothing about legislatures ratifying deals."},
+     {t:"The shadow of the future", why:"The shadow of the future is the expectation of repeated dealings that makes cooperation pay. The negotiator is pointing to domestic limits, not future rounds."},
+     {t:"Putnam’s two-level game", ok:true, why:"Right. Putnam showed that negotiators bargain at once with foreign governments and with their own legislatures and voters, and can use domestic limits as leverage abroad."}]},
+   {id:"e4u2-cp04", lesson:"e4u2-l2", level:2, q:"Small Country S sends 60% of its exports to Big Country B. B sends only 2% of its exports to S. A commercial liberal says the trade restrains both sides equally. Which reply best uses Hirschman (1945)?", options:[
+     {t:"Agreed: trade raises the cost of conflict for both, so the restraint is equal", why:"This ignores the imbalance. Hirschman’s point was that dependence is rarely equal, and the less dependent side gains power."},
+     {t:"B gains influence over S, because S depends on B far more than B depends on S", ok:true, why:"Right. Hirschman argued that a large economy can gain influence over small partners that depend on it more than it depends on them: interdependence is a source of power as well as restraint."},
+     {t:"B can watch S’s data through a network hub, the “panopticon” effect", why:"The panopticon effect, from Farrell and Newman, is about controlling a network hub. This case is about the share of trade, not hubs or data."},
+     {t:"The trade itself is a regime that binds both sides to the same rules", why:"A trade flow is not a regime. A regime needs shared principles, norms, rules and procedures, and it would not remove the imbalance anyway."}]},
+   {id:"e4u2-cp05", lesson:"e4u2-l2", level:2, q:"Two elected governments avoid war in a crisis. Newspapers in both countries called the other side “a fellow free nation we cannot fight”. Which argument puts this evidence at its centre?", options:[
+     {t:"Layne’s “Kant or Cant”: power and national interest, not democracy, decided the crisis", why:"Layne would look at the military balance and national interests, not at how each side described the other."},
+     {t:"Owen: the peace holds when democracies perceive each other as liberal", ok:true, why:"Right. Owen added a constructivist twist to the democratic peace: what matters is whether each side sees the other as liberal, which is exactly what the newspapers show."},
+     {t:"Gartzke’s capitalist peace: market economies explain the pattern", why:"Gartzke points to markets and shared interests. The evidence here is about perceptions of each other as free nations, not economics."},
+     {t:"Spiro’s argument that peace between democracies may be due to chance", why:"Spiro made a statistical point about small numbers. He would not explain one crisis by what newspapers wrote."}]},
+   {id:"e4u2-cp06", lesson:"e4u2-l3", level:3, q:"Two newly independent neighbours each read the other’s first border patrols as hostile and arm in response. Within a few years both treat rivalry as normal. Which pair of readings fits best?", options:[
+     {t:"Jervis’s deterrence model fits, since both are aggressive; Wendt would agree that anarchy made rivalry unavoidable", why:"Nothing shows either side was aggressive, and Wendt argued the opposite: self-help is an institution that actors create, not a fact of anarchy."},
+     {t:"Both would say the rivalry is now permanent, because shared expectations can never change", why:"Wendt’s whole point is that cultures of anarchy can change, although one held by legitimacy is very hard to shift. Jervis also says reassurance can help in a spiral."},
+     {t:"Mearsheimer’s offensive realism fits best, and Wendt is a classic source for that theory", why:"Wendt is a constructivist critic of structural realism, not a source for offensive realism."},
+     {t:"Jervis would see a spiral of mutual insecurity; Wendt would add that their readings built a self-help culture that anarchy alone did not fix", ok:true, why:"Right. This combines Lesson 1 and Lesson 3: insecure states made each other more afraid (a spiral), and, as Wendt argued, their readings of first moves became shared expectations of rivalry."}]},
+   {id:"e4u2-cp07", lesson:"e4u2-l3", level:1, q:"A minister says foreign streaming services threaten “the very survival of our national language” and asks for emergency powers to block them. In Buzan, Wæver and de Wilde’s terms, which sector is this?", options:[
+     {t:"The societal sector, with the national language as referent object", ok:true, why:"Right. The societal sector’s typical referent object is a collective identity such as a nation, religion or language."},
+     {t:"The military sector, with the state’s territory as referent object", why:"Nothing here threatens borders or territory. The claimed threat is to a language, a collective identity."},
+     {t:"The economic sector, with the streaming firms as referent object", why:"The firms are presented as the threat, not as the thing to protect. The referent object is the language."},
+     {t:"The environmental sector, with ecosystems as referent object", why:"The environmental sector covers ecosystems, climate and species. A language belongs to the societal sector."}]},
+   {id:"e4u2-cp08", lesson:"e4u2-l3", level:3, q:"Diego describes the 1955 Bandung Conference as part of Bull’s “revolt against the West”. Which point would a postcolonial critic most likely add?", options:[
+     {t:"That Bandung shows Asian and African states fully accepted the old standard of civilisation", why:"The revolt Bull described was a struggle against unequal sovereignty and racial hierarchy, so this misreads both Bull and Bandung."},
+     {t:"That racial equality was never among the revolt’s demands", why:"Racial equality was one of Bull’s five struggles, and race is central to postcolonial and race-critical IR, from Du Bois’s colour line onwards."},
+     {t:"That “expansion” of international society is a polite word for conquest, and non-European polities had their own orders before Europe arrived", ok:true, why:"Right. This links Lesson 3 and Lesson 4: postcolonial critics accept that a revolt happened but challenge the English School’s story of a peaceful “expansion”."},
+     {t:"That the revolt was only about class, so race and empire do not matter", why:"That is closer to a Marxist critique like Chibber’s, and even he does not say empire is irrelevant. Postcolonial scholars put empire and race at the centre."}]},
+   {id:"e4u2-cp09", lesson:"e4u2-l4", level:1, q:"Marisol interviews women who trade food at a heavily guarded border crossing. She argues that their daily experience shows how the security policy really works, in ways officials miss. Which feminist tradition is this?", options:[
+     {t:"Liberal feminism", why:"Liberal feminists ask about women’s inclusion and rights, such as how many women sit in decision-making roles. Marisol’s claim is about what women’s lives reveal."},
+     {t:"Standpoint feminism", ok:true, why:"Right. Standpoint feminists argue that the view from women’s lives reveals what the powerful miss."},
+     {t:"Post-structural feminism", why:"Post-structural feminists study how gender categories themselves are made in discourse, not mainly what one group’s experience reveals."},
+     {t:"Postcolonial feminism", why:"In the lesson, postcolonial feminists, like post-structural ones, study how gender categories are made. Marisol’s claim is about what women’s own lives reveal."}]},
+   {id:"e4u2-cp10", lesson:"e4u2-l4", level:3, q:"Scholar 1 says an open world economy needs one dominant power willing to stabilise it. Scholar 2 says an order lasts when the dominant group’s ideas seem like common sense to ministries, firms and organisations. Which matching is right?", options:[
+     {t:"1 is Cox’s Gramscian hegemony; 2 is hegemonic stability theory", why:"This reverses them. Cox’s hegemony is about ideas becoming common sense; hegemonic stability theory is about one stabilising power."},
+     {t:"Both describe Waltz’s idea of polarity", why:"Polarity is the distribution of capabilities among great powers. Neither statement is about counting poles."},
+     {t:"1 is Keohane’s *After Hegemony*; 2 is Mearsheimer’s regional hegemony", why:"Keohane argued that institutions can persist without a hegemon, and Mearsheimer’s regional hegemony is about military dominance, not ideas."},
+     {t:"1 is hegemonic stability theory; 2 is Cox’s Gramscian hegemony", ok:true, why:"Right. This links Lesson 2 and Lesson 4. The same word means a stabilising state in one theory and an order of ideas and social forces in the other."}]},
+   {id:"e4u2-cp11", lesson:"e4u2-l5", level:2, q:"Wei argues: “East Asia’s future order will be a stable hierarchy around China, because the old tribute system brought less war than European anarchy.” Whose argument is closest, and who replied?", options:[
+     {t:"Kang’s; Acharya replied that the history was more varied and Southeast Asia rejects a new hierarchy", ok:true, why:"Right. Kang argued the tribute system produced a stable hierarchy with less war; Acharya’s “Will Asia’s Past Be Its Future?” pushed back."},
+     {t:"Acharya’s; Kang replied that Southeast Asian states will reject any revived hierarchy around China", why:"This reverses the two scholars. Kang made the hierarchy argument and Acharya criticised it."},
+     {t:"Qin Yaqing’s relational theory; Jackson and Nexon replied that it was wrong", why:"Qin’s theory is about actors-in-relations, not the tribute system. Jackson and Nexon are cited as making a similar relational move, not as rebutting him."},
+     {t:"Mearsheimer’s offshore balancing; Glaser replied that conflict with a rising China is not inevitable", why:"Offshore balancing is about a distant power containing a rising one. Wei’s argument rests on East Asian historical hierarchy."}]},
+   {id:"e4u2-cp12", lesson:"e4u2-l5", level:3, q:"Mina’s thesis asks why some Southeast Asian states balance against a rising power while others hedge. Which framework plan best follows the unit?", options:[
+     {t:"Choose offensive realism because it is the most famous theory, then describe the cases", why:"A theory should be chosen for the puzzle, not for fame. One theory also can’t easily explain why states respond differently."},
+     {t:"Summarise every IR paradigm in the theory chapter to show breadth, and let the cases speak", why:"This is theory as decoration: a framework chapter that the cases never use. It also states no expectations."},
+     {t:"Set Walt’s balance of threat against Kuik’s idea of hedging, state what each predicts she should observe, set scope conditions, and return to both in the conclusion", ok:true, why:"Right. This combines Lesson 1’s theories with Lesson 5’s steps: choose for the puzzle, state expectations, operationalise with scope conditions, and return to theory at the end."},
+     {t:"Avoid stating predictions, because expectations would bias the research", why:"The lesson asks you to state what you should observe if a theory is right and what would count against it. That makes the test honest, not biased."}]},
+  ],
   codex:[
    {id:"e-h-carr", title:"E. H. Carr", aka:["Edward Hallett Carr"], tags:["international relations","thinker","realism"],
     summary:"British diplomat, historian and IR scholar (1892–1982) whose *The Twenty Years’ Crisis* (1939) attacked interwar “utopianism” while warning that pure realism is sterile.",
@@ -1023,13 +1085,13 @@ ICA.addUnit({
      {t:"Structural, relational and productive power", why:"These are categories from much later IR debates, not Carr’s."}
    ]},
    {id:"e4u2-q02", lesson:"e4u2-l1", level:2, q:"Priya writes: “Realists such as Carr simply defended power politics and rejected all ideals.” What is the most accurate correction?", options:[
-     {t:"Carr attacked utopianism but also called pure realism sterile, arguing that sound thought combines utopia and reality", ok:true, why:"Correct. Carr is better read as a critic of both one-sided positions."},
+     {t:"Carr attacked utopianism but also called pure realism sterile", ok:true, why:"Correct. He argued that sound thought combines utopia and reality, so he is better read as a critic of both one-sided positions."},
      {t:"Carr was actually a liberal who supported the League without reservation", why:"Carr sharply criticised interwar liberal hopes; he was not their defender."},
      {t:"Carr wrote nothing about ideals at all", why:"He wrote at length about the relation between morality and power."},
      {t:"Carr argued that power over opinion does not exist", why:"The opposite: he named it as one of three kinds of power."}
    ]},
    {id:"e4u2-q03", lesson:"e4u2-l1", level:1, q:"According to Mearsheimer, why is global hegemony practically impossible?", options:[
-     {t:"The “stopping power of water”: oceans make it very hard to project land power across them", ok:true, why:"Correct. That is why he argues great powers aim at regional hegemony."},
+     {t:"The “stopping power of water”", ok:true, why:"Correct. Oceans make it very hard to project land power across them. That is why he argues great powers aim at regional hegemony."},
      {t:"International law forbids it", why:"Mearsheimer does not think law restrains great powers this way."},
      {t:"Democracies never seek power", why:"His theory is about great powers in general, whatever their regime type."},
      {t:"Nuclear weapons make all states equal", why:"He does not argue this; the reason he gives is geographical."}
@@ -1047,9 +1109,9 @@ ICA.addUnit({
      {t:"All three equally, because weapons do not matter", why:"Jervis’s whole point is that the kind of weapons and the offence–defence balance matter."}
    ]},
    {id:"e4u2-q06", lesson:"e4u2-l1", level:2, q:"Which statement best describes Walt’s balance of threat theory?", options:[
-     {t:"States balance against threats, which combine aggregate power, nearness, offensive capability and perceived intentions", ok:true, why:"Correct. *The Origins of Alliances* (1987) refined the balance of power this way."},
+     {t:"States balance against threats, not just against power", ok:true, why:"Correct. Threat combines aggregate power, nearness, offensive capability and perceived intentions. *The Origins of Alliances* (1987) refined the balance of power this way."},
      {t:"States always join the strongest power", why:"That is bandwagoning, which Walt found less common than balancing."},
-     {t:"States balance only against the richest state", why:"Wealth is part of aggregate power, but Walt added nearness, offensive capability and intentions."},
+     {t:"States balance only against the richest state in the system", why:"Wealth is part of aggregate power, but Walt added nearness, offensive capability and intentions."},
      {t:"Alliances depend only on shared ideology", why:"Walt considered ideology but found threat more important."}
    ]},
    {id:"e4u2-q07", lesson:"e4u2-l1", level:3, q:"A small Southeast Asian state expands trade with a rising power while also holding regular military exercises with a distant great power. Which concept describes this best?", options:[
@@ -1059,13 +1121,13 @@ ICA.addUnit({
      {t:"Offshore balancing", why:"Offshore balancing is a strategy for a distant great power, not for a small state in the region."}
    ]},
    {id:"e4u2-q08", lesson:"e4u2-l1", level:2, q:"Fareed Zakaria’s *From Wealth to Power* (1998) explained the slow growth of US influence abroad after 1865 mainly by…", options:[
-     {t:"The federal government’s limited ability to draw on the nation’s wealth: weak state power despite great national power", ok:true, why:"Correct. This is a classic neoclassical realist argument with a domestic “transmission belt”."},
+     {t:"Weak state power despite great national power", ok:true, why:"Correct. The federal government had only a limited ability to draw on the nation’s wealth. This is a classic neoclassical realist argument with a domestic “transmission belt”."},
      {t:"The democratic peace", why:"Zakaria’s argument is about state capacity, not peace between democracies."},
-     {t:"A lack of economic resources", why:"The US was already very rich; his point is that the state could not yet use that wealth."},
+     {t:"A lack of economic resources in the young country", why:"The US was already very rich; his point is that the state could not yet use that wealth."},
      {t:"The stopping power of water alone", why:"That is Mearsheimer’s idea, not Zakaria’s explanation."}
    ]},
    {id:"e4u2-q09", lesson:"e4u2-l1", level:3, q:"A realist explains a war by rising nationalism, the ruling party’s ideology and pressure from domestic lobbies. What would Legro and Moravcsik (1999) most likely say?", options:[
-     {t:"The explanation relies on factors that liberal and constructivist theories emphasise, so calling it realist stretches realism until it loses its distinct core", ok:true, why:"Correct. That was the argument of “Is Anybody Still a Realist?”."},
+     {t:"Calling it realist stretches realism too far", ok:true, why:"Correct. The explanation relies on factors that liberal and constructivist theories emphasise, so calling it realist stretches realism until it loses its distinct core. That was the argument of “Is Anybody Still a Realist?”."},
      {t:"It is a perfect example of Waltz’s structural realism", why:"Waltz’s theory explains patterns by the system, not by domestic ideology and lobbies."},
      {t:"Realism has always been about domestic lobbies", why:"Realism traditionally focuses on power and the international system."},
      {t:"Nationalism cannot cause war", why:"They did not argue that; their point was about which theory the explanation belongs to."}
@@ -1079,20 +1141,20 @@ ICA.addUnit({
    ]},
    {id:"e4u2-q11", lesson:"e4u2-l2", level:2, q:"A researcher shows that democracies have started many wars against non-democracies. Which claim does this weaken?", options:[
      {t:"The monadic claim that democracies are more peaceful in general", ok:true, why:"Correct. The dyadic claim, about pairs of democracies, is untouched by these wars."},
-     {t:"The dyadic claim that democracies rarely fight each other", why:"Wars against non-democracies are not evidence about pairs of democracies."},
+     {t:"The dyadic claim that democracies rarely or never fight each other", why:"Wars against non-democracies are not evidence about pairs of democracies."},
      {t:"Krasner’s definition of regimes", why:"A definition of regimes is not tested by data on wars."},
      {t:"Hegemonic stability theory", why:"That theory concerns the stability of the world economy."}
    ]},
    {id:"e4u2-q12", lesson:"e4u2-l2", level:1, q:"In Krasner’s definition, an international regime is…", options:[
-     {t:"Principles, norms, rules and decision-making procedures around which actors’ expectations converge in an issue area", ok:true, why:"Correct. A regime can exist with or without a single organisation running it."},
-     {t:"A government that rules several countries", why:"That would be an empire or federation, not a regime in this sense."},
+     {t:"Principles, norms, rules and procedures in one issue area", ok:true, why:"Correct. They are the principles, norms, rules and decision-making procedures around which actors’ expectations converge. A regime can exist with or without a single organisation running it."},
+     {t:"A government that rules several countries at the same time", why:"That would be an empire or federation, not a regime in this sense."},
      {t:"A military alliance with a joint command", why:"An alliance may be part of a security regime, but the definition is broader."},
      {t:"Any single treaty, however small", why:"A treaty can be part of a regime; the regime is the wider set of converging expectations."}
    ]},
    {id:"e4u2-q13", lesson:"e4u2-l2", level:2, q:"Which statement captures Keohane’s argument in *After Hegemony* (1984)?", options:[
-     {t:"Institutions can sustain cooperation after a hegemon declines, because they keep providing information and lowering transaction costs", ok:true, why:"Correct. This answered hegemonic stability theory’s gloomy expectation."},
+     {t:"Institutions can sustain cooperation after a hegemon declines", ok:true, why:"Correct. They keep providing information and lowering transaction costs. This answered hegemonic stability theory’s gloomy expectation."},
      {t:"Without a hegemon, cooperation is impossible", why:"That is the expectation Keohane challenged."},
-     {t:"Hegemons always act against their own interests", why:"Keohane did not argue this."},
+     {t:"Hegemons always end up acting against their own long-term interests", why:"Keohane did not argue this."},
      {t:"Institutions matter only between democracies", why:"His argument applies to rational states generally."}
    ]},
    {id:"e4u2-q14", lesson:"e4u2-l2", level:3, q:"Lucía argues that peace among rich democracies is really due to their market economies and shared interests, not their democratic institutions. Whose argument is closest to hers?", options:[
@@ -1102,9 +1164,9 @@ ICA.addUnit({
      {t:"Wendt’s cultures of anarchy", why:"Wendt’s argument is about shared ideas, not market economies."}
    ]},
    {id:"e4u2-q15", lesson:"e4u2-l2", level:3, q:"A state whose firms dominate a key semiconductor technology restricts exports of it to a rival. Which idea best explains how this gives the state leverage?", options:[
-     {t:"Weaponised interdependence: control of a hub in a global network creates a chokepoint", ok:true, why:"Correct. Farrell and Newman (2019) showed how network hubs become tools of coercion."},
+     {t:"Weaponised interdependence", ok:true, why:"Correct. Control of a hub in a global network creates a chokepoint. Farrell and Newman (2019) showed how network hubs become tools of coercion."},
      {t:"The democratic peace", why:"The democratic peace concerns war between democracies, not export controls."},
-     {t:"The shadow of the future", why:"That concerns expectations of repeated cooperation, not leverage from controlling a hub."},
+     {t:"The shadow of the future in repeated trade", why:"That concerns expectations of repeated cooperation, not leverage from controlling a hub."},
      {t:"Norm localisation", why:"Localisation is about adapting norms to local beliefs."}
    ]},
    {id:"e4u2-q16", lesson:"e4u2-l2", level:1, q:"Which three “legs” did Russett and Oneal’s *Triangulating Peace* (2001) link to peace?", options:[
@@ -1114,7 +1176,7 @@ ICA.addUnit({
      {t:"Hegemony, regimes and sanctions", why:"These are not the three legs they named."}
    ]},
    {id:"e4u2-q17", lesson:"e4u2-l2", level:2, q:"In *Liberal Leviathan* (2011), how did Ikenberry describe the post-1945 US-led order?", options:[
-     {t:"Liberal and hierarchical, with its troubles a crisis of authority rather than of its principles", ok:true, why:"Correct. He argued that the order’s liberal features could outlast changes in US leadership."},
+     {t:"Liberal and hierarchical", ok:true, why:"Correct. He saw its troubles as a crisis of authority rather than of its principles, and argued that the order’s liberal features could outlast changes in US leadership."},
      {t:"A system of equal states with no leader", why:"He stressed US leadership and hierarchy."},
      {t:"A purely realist balance of power", why:"He emphasised institutions and rules as well as power."},
      {t:"A failure from the start", why:"That is closer to his critics, not to Ikenberry."}
@@ -1163,10 +1225,10 @@ ICA.addUnit({
      {t:"Buck-passing", why:"Buck-passing is a realist idea about balancing."}
    ]},
    {id:"e4u2-q25", lesson:"e4u2-l3", level:2, q:"Which critique of securitisation theory did Lene Hansen (2000) make?", options:[
-     {t:"A speech-centred model silences people who cannot speak publicly about their insecurity", ok:true, why:"Correct. She called this “security as silence”: some insecurity, often gendered, cannot be voiced, or grows worse if it is."},
+     {t:"A speech-centred model silences those who cannot speak out", ok:true, why:"Correct. Some people cannot speak publicly about their insecurity. She called this “security as silence”: some insecurity, often gendered, cannot be voiced, or grows worse if it is."},
      {t:"Security can never be studied through language", why:"Hansen herself developed discourse methods for security studies."},
      {t:"Only military threats count as security", why:"She did not argue this; the Copenhagen School itself has five sectors."},
-     {t:"Securitisation only happens in authoritarian states", why:"That is not her argument."}
+     {t:"Securitisation only happens in authoritarian states, not democracies", why:"That is not her argument."}
    ]},
    {id:"e4u2-q26", lesson:"e4u2-l3", level:3, q:"A government argues that humanitarian intervention must never override sovereignty, because states disagree about values and intervention can mask self-interest. Which English School position is this?", options:[
      {t:"Pluralism", ok:true, why:"Correct. Pluralists defend coexistence among states with different values."},
@@ -1175,9 +1237,9 @@ ICA.addUnit({
      {t:"World-systems theory", why:"That is a Marxist approach to the world economy."}
    ]},
    {id:"e4u2-q27", lesson:"e4u2-l3", level:2, q:"In Buzan’s English School terms, what is the difference between primary and secondary institutions?", options:[
-     {t:"Primary institutions are deep evolved practices such as sovereignty and diplomacy; secondary ones are organisations such as the UN", ok:true, why:"Correct. Secondary institutions rest on primary ones."},
+     {t:"Primary ones are evolved practices; secondary ones are bodies like the UN", ok:true, why:"Correct. Primary institutions are deep evolved practices such as sovereignty and diplomacy; secondary ones are organisations such as the UN, and they rest on primary ones."},
      {t:"Primary institutions are older organisations; secondary ones are newer", why:"The distinction is between kinds of institution, not their age."},
-     {t:"Primary institutions belong to great powers; secondary to small states", why:"The distinction has nothing to do with the size of states."},
+     {t:"Primary institutions belong to great powers; secondary ones to small states", why:"The distinction has nothing to do with the size of states."},
      {t:"There is no difference; the terms are synonyms", why:"Buzan drew the distinction deliberately."}
    ]},
    /* ---- Lesson 4 ---- */
@@ -1194,8 +1256,8 @@ ICA.addUnit({
      {t:"Military, economic and opinion power", why:"Those are Carr’s three kinds of power."}
    ]},
    {id:"e4u2-q30", lesson:"e4u2-l4", level:1, q:"What did Justin Rosenberg’s *The Empire of Civil Society* (1994) argue about realism?", options:[
-     {t:"It mistakes features of capitalist modernity, such as the separation of politics from economics, for timeless laws", ok:true, why:"Correct. Rosenberg offered a historical materialist critique of realism."},
-     {t:"It is the only scientific theory of IR", why:"Rosenberg was a critic of realism, not its defender."},
+     {t:"It mistakes features of capitalist modernity for timeless laws", ok:true, why:"Correct. One such feature is the separation of politics from economics. Rosenberg offered a historical materialist critique of realism."},
+     {t:"It is the only properly scientific theory of international relations", why:"Rosenberg was a critic of realism, not its defender."},
      {t:"It should focus more on human nature", why:"His critique pointed to social structure and history, not human nature."},
      {t:"It explains the democratic peace", why:"That is not his argument."}
    ]},
@@ -1206,31 +1268,31 @@ ICA.addUnit({
      {t:"Moral realism, as in Yan Xuetong (2019)", why:"Yan’s theory concerns great-power leadership."}
    ]},
    {id:"e4u2-q32", lesson:"e4u2-l4", level:2, q:"What did Robert Vitalis argue in *White World Order, Black Power Politics* (2015)?", options:[
-     {t:"Early US IR was openly concerned with “race development”, and the critiques of Black scholars at Howard University were later forgotten", ok:true, why:"Correct. He traced *Foreign Affairs* back to the *Journal of Race Development*."},
-     {t:"Race has never mattered in world politics", why:"His book argues the opposite."},
+     {t:"Early US IR was openly concerned with “race development”", ok:true, why:"Correct. He also showed that the critiques of Black scholars at Howard University were later forgotten, and traced *Foreign Affairs* back to the *Journal of Race Development*."},
+     {t:"Race has never really mattered in world politics or in IR", why:"His book argues the opposite."},
      {t:"IR began only after 1945", why:"Vitalis studied the field’s earlier history."},
      {t:"Realism began at Howard University", why:"That is not his claim; the Howard scholars were critics of the field’s racial assumptions."}
    ]},
    {id:"e4u2-q33", lesson:"e4u2-l4", level:2, q:"Which best describes Vivek Chibber’s *Postcolonial Theory and the Specter of Capital* (2013)?", options:[
-     {t:"A Marxist critique arguing that postcolonial theory overstates cultural difference and neglects capitalism", ok:true, why:"Correct. It shows that critical approaches argue with each other."},
+     {t:"A Marxist critique of postcolonial theory", ok:true, why:"Correct. Chibber argues that postcolonial theory overstates cultural difference and neglects capitalism. It shows that critical approaches argue with each other."},
      {t:"A defence of postcolonial theory against Marxists", why:"Chibber wrote from a Marxist position against postcolonial theory."},
      {t:"A realist account of decolonisation", why:"Chibber is not a realist."},
      {t:"A study of the democratic peace", why:"The book is about social theory and capitalism."}
    ]},
    {id:"e4u2-q34", lesson:"e4u2-l4", level:3, q:"Sione, writing on a low-lying Pacific atoll state, asks whether sovereign states can protect people from harms they did not cause and that cross every border. Which approach is he drawing on most directly?", options:[
-     {t:"Green theory, for example Eckersley’s argument for a green state practising ecological democracy", ok:true, why:"Correct. Green theory puts ecological limits and justice at the centre."},
-     {t:"Offensive realism", why:"Offensive realism focuses on great-power competition, not ecological justice."},
+     {t:"Green theory, such as Eckersley’s green state", ok:true, why:"Correct. Eckersley argues for a green state practising ecological democracy; green theory puts ecological limits and justice at the centre."},
+     {t:"Offensive realism, as in Mearsheimer’s great-power theory", why:"Offensive realism focuses on great-power competition, not ecological justice."},
      {t:"Hegemonic stability theory", why:"That concerns stabilising the world economy."},
      {t:"Balance of threat", why:"That concerns alliance choices."}
    ]},
    {id:"e4u2-q35", lesson:"e4u2-l4", level:2, q:"Which claim fits R. B. J. Walker’s *Inside/Outside* (1993)?", options:[
-     {t:"The line between order inside states and anarchy outside is a political construction, not a natural fact", ok:true, why:"Correct. Walker is a key post-structuralist thinker in IR."},
-     {t:"Anarchy outside states is a timeless fact of nature", why:"Walker challenged exactly this assumption."},
+     {t:"The line between inside order and outside anarchy is constructed", ok:true, why:"Correct. For Walker it is a political construction, not a natural fact. He is a key post-structuralist thinker in IR."},
+     {t:"Anarchy outside states is a timeless fact of nature, not a choice", why:"Walker challenged exactly this assumption."},
      {t:"States should merge into a world government at once", why:"Walker’s book is a critique of how IR thinks, not a blueprint."},
      {t:"Domestic politics never affects foreign policy", why:"That is not his argument."}
    ]},
    {id:"e4u2-q36", lesson:"e4u2-l4", level:1, q:"Which idea is associated with W. E. B. Du Bois’s writing on world politics?", options:[
-     {t:"The colour line: racial hierarchy structured world politics, and European rivalry over Africa lay behind the First World War", ok:true, why:"Correct. See *The Souls of Black Folk* (1903) and “The African Roots of War” (1915)."},
+     {t:"The global colour line", ok:true, why:"Correct. Racial hierarchy structured world politics, and European rivalry over Africa lay behind the First World War. See *The Souls of Black Folk* (1903) and “The African Roots of War” (1915)."},
      {t:"The stopping power of water", why:"That is Mearsheimer’s idea."},
      {t:"The harmony of interests", why:"Carr criticised that idea; it is not Du Bois’s."},
      {t:"Cultures of anarchy", why:"That is Wendt’s idea."}
@@ -1249,7 +1311,7 @@ ICA.addUnit({
      {t:"Scarce resources and few publishing outlets in many countries", why:"They listed these among the barriers."}
    ]},
    {id:"e4u2-q39", lesson:"e4u2-l5", level:2, q:"Which is the strongest version of William Callahan’s critique of tianxia theory (2008)?", options:[
-     {t:"Its inclusive, harmonious language can make a hierarchical order centred on one power sound benign", ok:true, why:"Correct. His title asked whether tianxia is post-hegemonic or a new hegemony."},
+     {t:"It can make a hierarchical order sound benign", ok:true, why:"Correct. Its inclusive, harmonious language can make an order centred on one power sound benign. His title asked whether tianxia is post-hegemonic or a new hegemony."},
      {t:"It was invented in the 21st century and has no historical roots", why:"The concept is ancient; Callahan’s point concerns its modern use."},
      {t:"It is identical to liberal institutionalism", why:"Callahan did not make that comparison."},
      {t:"It ignores the idea of a whole-world order", why:"A whole-world order is exactly what tianxia proposes."}
@@ -1267,13 +1329,13 @@ ICA.addUnit({
      {t:"Campbell’s *Writing Security*", why:"Campbell studied US identity and discourse."}
    ]},
    {id:"e4u2-q42", lesson:"e4u2-l5", level:3, q:"Analysing the 1997–98 Asian financial crisis, Dmitri says: “The IMF’s conditions reflected the interests of Wall Street and the US Treasury, which pushed open capital markets.” Which reading is this?", options:[
-     {t:"A critical, political-economy reading like Wade and Veneroso’s “Wall Street–Treasury–IMF complex”", ok:true, why:"Correct. It asks whose economic interests the rules served."},
+     {t:"A critical political-economy reading", ok:true, why:"Correct. It is like Wade and Veneroso’s “Wall Street–Treasury–IMF complex”, asking whose economic interests the rules served."},
      {t:"A constructivist reading about regional identity", why:"Dmitri’s point is about economic interests, not identity."},
      {t:"An English School reading about diplomacy", why:"Nothing here is about the shared institutions of a society of states."},
      {t:"A democratic peace reading", why:"The democratic peace concerns war between democracies."}
    ]},
    {id:"e4u2-q43", lesson:"e4u2-l5", level:2, q:"What do Jones and Smith (2007) argue about ASEAN?", options:[
-     {t:"It produces process rather than progress: many meetings, limited results and overstated unity", ok:true, why:"Correct. Their article challenged constructivist accounts of an ASEAN security community."},
+     {t:"It produces process rather than progress", ok:true, why:"Correct. They point to many meetings, limited results and overstated unity. Their article challenged constructivist accounts of an ASEAN security community."},
      {t:"It has become a supranational union like the EU", why:"Neither they nor most scholars describe ASEAN this way."},
      {t:"It proves the democratic peace", why:"ASEAN includes many non-democracies; this is not their argument."},
      {t:"It was founded to balance Japan", why:"That is not their argument."}
@@ -1285,7 +1347,7 @@ ICA.addUnit({
      {t:"To leave it undefined so that readers can interpret it freely", why:"Undefined concepts make a framework impossible to check."}
    ]},
    {id:"e4u2-q45", lesson:"e4u2-l5", level:3, q:"Oluwaseun’s thesis has a strong theory chapter on constructivism, but the case chapters never mention its concepts, and the conclusion does not return to theory. What is the main problem?", options:[
-     {t:"Theory as decoration: the framework is not used to guide what is observed or to interpret the findings", ok:true, why:"Correct. A framework should shape the evidence chapters and be revisited in the conclusion."},
+     {t:"Theory as decoration: the framework isn’t used", ok:true, why:"Correct. The framework doesn’t guide what is observed or how the findings are interpreted. A framework should shape the evidence chapters and be revisited in the conclusion."},
      {t:"Constructivism cannot be used in a thesis", why:"It is widely used; the problem is how it is used here."},
      {t:"The thesis should have used every theory at once", why:"More theories would not fix the problem of not using the chosen one."},
      {t:"A conclusion should never mention theory", why:"The opposite: a good conclusion says what the case shows about theory."}

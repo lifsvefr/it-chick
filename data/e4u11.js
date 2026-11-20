@@ -73,7 +73,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u11-l1-x1", type:"mcq", q:"Why do historians’ arguments about the origins of human rights matter for present-day debates?", options:[
-      {t:"Because each history implies a view on whether human rights are genuinely universal or the product of one region’s politics", ok:true, why:"Right. Histories are used as evidence for or against the claim that human rights belong to everyone, so they shape arguments about legitimacy."},
+      {t:"Each history implies a view on whether rights are universal", ok:true, why:"Right. Each history suggests rights are either genuinely universal or the product of one region’s politics. Histories are used as evidence for or against the claim that human rights belong to everyone, so they shape arguments about legitimacy."},
       {t:"Because only the oldest version of human rights is legally binding", why:"Legal force comes from treaties and custom, not from how old an idea is."},
       {t:"Because international courts decide cases by asking when human rights began", why:"Courts apply treaties and custom; historians’ dating debates do not decide cases."},
       {t:"They do not matter; the history is settled", why:"The history is actively contested, which is why the debate between Moyn, Sikkink and others is so lively."}
@@ -94,7 +94,7 @@ ICA.addUnit({
       {t:"African and Asian states push the convention against racial discrimination through the UN in 1965", b:2, why:"Burke and Jensen use the 1960s to show the Global South shaping human rights law."}
     ]},
     {id:"e4u11-l1-x4", type:"mcq", q:"Priya writes: “Moyn proves human rights are only fifty years old, so Sikkink is wrong.” What is the best response?", options:[
-      {t:"They date different things: Moyn a transnational movement and politics, Sikkink ideas, norms and law and who made them, so they partly talk past each other.", ok:true, why:"Right. Distinguishing what each author dates is the key to using the debate well."},
+      {t:"They date different things, so they partly talk past each other.", ok:true, why:"Right. Moyn dates a transnational movement and politics; Sikkink dates ideas, norms and law and who made them. Distinguishing what each author dates is the key to using the debate well."},
       {t:"Moyn agrees with Sikkink that human rights began in Latin America.", why:"Moyn locates the breakthrough in the 1970s; Sikkink stresses Latin American and other origins in the 1940s."},
       {t:"Sikkink argues human rights began with the Cyrus Cylinder.", why:"Sikkink focuses on the twentieth century; the Cyrus Cylinder claim is one historians dispute."},
       {t:"The debate is settled in Moyn’s favour by the UN.", why:"The UN does not settle historical debates, and many historians disagree with Moyn."}
@@ -216,7 +216,7 @@ ICA.addUnit({
       {t:"The Subcommittee on Prevention of Torture", b:1, why:"Created by the Optional Protocol to the Convention against Torture; it visits places of detention."}
     ]},
     {id:"e4u11-l2-x2", type:"mcq", q:"Kenji’s country has ratified the ICCPR but not its First Optional Protocol. He believes his rights under the Covenant were violated and his national courts rejected his case. Can he send a complaint to the Human Rights Committee?", options:[
-      {t:"No: the Committee hears individual complaints only against states that have accepted that procedure, here by ratifying the Optional Protocol", ok:true, why:"Right. Ratifying the Covenant creates reporting duties; complaints need the extra step."},
+      {t:"No: his state has not accepted the complaints procedure", ok:true, why:"Right. The Committee hears individual complaints only against states that have accepted the procedure, here by ratifying the Optional Protocol. Ratifying the Covenant creates reporting duties; complaints need the extra step."},
       {t:"Yes: every state party to a treaty is open to complaints", why:"Complaint procedures are optional; states must accept them separately."},
       {t:"Yes, but only after the Human Rights Council approves", why:"The Council has no role in treaty body complaints."},
       {t:"No, because individuals can never complain to UN bodies", why:"They can, against states that have accepted the procedure."}
@@ -229,7 +229,7 @@ ICA.addUnit({
       ["Country visit report","A special rapporteur’s findings after a visit made by invitation","Visits need the state’s consent."]
     ]},
     {id:"e4u11-l2-x4", type:"mcq", q:"Which statement about Human Rights Council membership is accurate?", options:[
-      {t:"Its 47 seats are allocated by regional group, and the General Assembly can suspend a member by a two-thirds vote, as it did with Libya (2011) and Russia (2022)", ok:true, why:"Correct on both points."},
+      {t:"The Assembly can suspend a member by a two-thirds vote", ok:true, why:"Correct. The General Assembly did so with Libya (2011) and Russia (2022). The Council’s 47 seats are allocated by regional group."},
       {t:"Its members are independent experts, not states", why:"That describes treaty bodies and special procedures. The Council is made up of states."},
       {t:"The five permanent members of the Security Council hold permanent seats", why:"There are no permanent seats; members are elected for three years."},
       {t:"Only states with clean human rights records may be elected", why:"Candidates are asked to uphold high standards, but there is no such test, which is one criticism of the Council."}
@@ -345,7 +345,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u11-l3-x1", type:"mcq", q:"Why is it hard to tell whether ratifying a treaty causes better behaviour?", options:[
-      {t:"States choose whether to ratify, so ratifiers may differ from non-ratifiers in ways that also affect their behaviour", ok:true, why:"Right. Ratification is not randomly assigned; selection and confounding make simple comparisons misleading."},
+      {t:"Ratifiers may differ from non-ratifiers in other ways", ok:true, why:"Right. States choose whether to ratify, and those differences may also affect their behaviour. Ratification is not randomly assigned; selection and confounding make simple comparisons misleading."},
       {t:"No data on human rights practices exist", why:"There are several datasets; the difficulty is interpreting them, not their absence."},
       {t:"Treaties forbid researchers from studying compliance", why:"No treaty does this."},
       {t:"All states have ratified all treaties, so there is no variation", why:"Ratification varies a great deal by treaty, state and year."}
@@ -471,7 +471,7 @@ ICA.addUnit({
       {t:"Outside criticism of a society’s practices is mostly illegitimate, except for a handful of acts condemned everywhere, such as slavery.", b:0, why:"Culture mainly decides, with only narrow universal limits: strong relativism."}
     ]},
     {id:"e4u11-l4-x2", type:"mcq", q:"Which statement best summarises the difference between the governments’ Bangkok Declaration and the Vienna Declaration of 1993?", options:[
-      {t:"Both accepted universality; Bangkok stressed regional particularities and non-interference, while Vienna said particularities must be borne in mind but that states must protect all rights regardless of their systems", ok:true, why:"Right. The difference is one of emphasis and of which principle has the last word."},
+      {t:"Both accepted universality but differed in emphasis", ok:true, why:"Right. Bangkok stressed regional particularities and non-interference; Vienna said particularities must be borne in mind but states must protect all rights regardless of their systems. The difference is one of emphasis and of which principle has the last word."},
       {t:"Bangkok rejected human rights entirely; Vienna accepted them", why:"Bangkok explicitly accepted that human rights are universal in nature."},
       {t:"Vienna said culture overrides human rights", why:"Vienna said states must protect rights regardless of their cultural systems."},
       {t:"They were adopted by the same meeting", why:"Bangkok was an Asian regional meeting in April; Vienna the World Conference in June."}
@@ -484,7 +484,7 @@ ICA.addUnit({
       ["Universal concept, variable interpretation and implementation","Jack Donnelly","Relative universality."]
     ]},
     {id:"e4u11-l4-x4", type:"mcq", q:"A government says: “We cannot afford the right to health yet, so we owe nothing now.” Which reply fits the ICESCR as the treaty committee interprets it?", options:[
-      {t:"Progressive realisation allows gradual progress, but minimum core obligations and non-discrimination apply immediately", ok:true, why:"Right. General Comment No. 3 (1990) sets a floor and immediate duties within progressive realisation."},
+      {t:"Minimum core duties and non-discrimination apply now", ok:true, why:"Right. Progressive realisation allows gradual progress, but not a delay of everything. General Comment No. 3 (1990) sets a floor and immediate duties within progressive realisation."},
       {t:"The government is right: economic rights create no obligations", why:"The treaty creates obligations, including immediate ones."},
       {t:"The government must provide the same health care as the richest country at once", why:"The standard is relative to available resources, with a minimum core."},
       {t:"Only courts can decide, so the committee has no view", why:"The committee has a well-known interpretation, and some courts apply similar ideas."}
@@ -507,7 +507,7 @@ ICA.addUnit({
       {t:"The Declaration on the Right to Development was adopted unanimously.", flag:true, why:"It passed 146–1–8; the United States voted against."}
     ]},
     {id:"e4u11-l4-x7", type:"mcq", q:"Lucía reads that “human rights are imposed on the Global South”. Which response best reflects the scholarship in this lesson?", options:[
-      {t:"The claim captures a real critique (Mutua, Kapur) but ignores Global South contributions and the many Global South voices, such as the Bangkok NGOs, who defend universal rights", ok:true, why:"Right. A balanced answer attributes the critique and its limits."},
+      {t:"It captures a real critique but ignores Global South voices", ok:true, why:"Right. The critique comes from scholars such as Mutua and Kapur, but Global South contributions and voices, such as the Bangkok NGOs, defend universal rights. A balanced answer attributes the critique and its limits."},
       {t:"The claim is simply true, as all postcolonial scholars want to abolish human rights", why:"Most postcolonial critics want a more plural practice, not abolition."},
       {t:"The claim is simply false, as no scholar has made it", why:"Serious scholars make versions of it; it deserves engagement."},
       {t:"The claim is about economics, not human rights", why:"It is a claim about the legitimacy of human rights."}
@@ -610,7 +610,7 @@ ICA.addUnit({
       {t:"A law against hate speech is challenged as a limit on free expression", b:0, why:"Protection from incitement and free expression pull in different directions."}
     ]},
     {id:"e4u11-l5-x2", type:"mcq", q:"Fatima notes that a state has not ratified the 1951 Refugee Convention. Can it still be bound not to send someone to face torture?", options:[
-      {t:"Yes: the Convention against Torture and the ICCPR also forbid return to a real risk of torture, absolutely, for their states parties", ok:true, why:"Right. The human rights layer of non-refoulement does not depend on the Refugee Convention."},
+      {t:"Yes: other treaties, such as the ICCPR, also forbid it", ok:true, why:"Right. The Convention against Torture and the ICCPR forbid return to a real risk of torture, absolutely, for their states parties. The human rights layer of non-refoulement does not depend on the Refugee Convention."},
       {t:"No: non-refoulement exists only in the Refugee Convention", why:"Human rights treaties contain their own, wider non-refoulement obligations."},
       {t:"Only if the person is a recognised refugee", why:"The torture protection covers everyone, including people excluded from refugee status."},
       {t:"Only if the Security Council orders it", why:"Treaty obligations apply without any Security Council decision."}
@@ -688,6 +688,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u11-q02","e4u11-q06","e4u11-q09","e4u11-q12","e4u11-q15","e4u11-q19","e4u11-q22","e4u11-q26","e4u11-q30","e4u11-q34","e4u11-q38","e4u11-q43"],
+  cpBank:[
+   {id:"e4u11-cp01", lesson:"e4u11-l1", level:1, q:"A historian argues that eighteenth-century novels and campaigns against torture taught readers to feel for strangers, and that this made equal rights thinkable. Whose argument is this?", options:[
+     {t:"Samuel Moyn’s", why:"Moyn dates the breakthrough of human rights as a movement to the 1970s. He doesn’t build his case on eighteenth-century empathy."},
+     {t:"Mary Ann Glendon’s", why:"Glendon called Latin America the “forgotten crucible” of the universal human rights idea. That is a different story."},
+     {t:"Lynn Hunt’s", ok:true, why:"Right. In *Inventing Human Rights* (2007) Hunt argued that novels and anti-torture campaigns taught empathy for strangers, which made equal rights thinkable."},
+     {t:"Mark Mazower’s", why:"Mazower showed that some UN founders saw the organisation as a way to preserve empire. He isn’t the source of the empathy argument."}]},
+   {id:"e4u11-cp02", lesson:"e4u11-l1", level:2, q:"A scholar shows that a statesman who helped write the UN Charter’s preamble saw the new organisation as a way to keep his country’s empire. Which point does this evidence support best?", options:[
+     {t:"Mazower’s point that the founding texts served different projects, even empire", ok:true, why:"Right. Mazower’s *No Enchanted Palace* used figures such as Jan Smuts to show that rights language at the UN’s founding could serve empire as well as freedom."},
+     {t:"Hunt’s point that empathy for strangers made equal rights thinkable", why:"Hunt’s argument is about eighteenth-century culture, not about the UN founders’ imperial aims."},
+     {t:"Sikkink’s point that Latin American states pushed hard for rights language in 1945", why:"Sikkink stresses Global South contributions. This evidence is about a founder who wanted to preserve empire."},
+     {t:"Vasak’s point that rights come in three generations, from civil to collective", why:"Vasak’s scheme classifies kinds of rights. It says nothing about the founders’ motives."}]},
+   {id:"e4u11-cp03", lesson:"e4u11-l2", level:1, q:"Leila believes her rights under the European Convention were violated. She sends her complaint straight to the European Court of Human Rights without trying her own country’s courts. What problem will she face?", options:[
+     {t:"The Court hears complaints only from states, not individuals", why:"Since 1998 any individual can reach the full-time European Court."},
+     {t:"She needs an invitation from her government first", why:"Invitations matter for visits by UN special procedures, not for complaints to the European Court."},
+     {t:"The Court can hear her only if the Human Rights Council refers the case", why:"The Human Rights Council is a UN body with no role in sending cases to the European Court."},
+     {t:"She must normally exhaust domestic remedies first", ok:true, why:"Right. Before a regional court will hear a complaint, a person must normally go through national courts first."}]},
+   {id:"e4u11-cp04", lesson:"e4u11-l2", level:2, q:"A country that recently became a democracy rushes to accept a regional human rights court’s binding judgments. Its leaders say they want to make it harder for any future government to slide back. Which explanation fits best?", options:[
+     {t:"The realist view that the human rights machinery is only cheap talk", why:"Accepting binding judgments is costly, not cheap talk, and the leaders’ reason is about the future at home."},
+     {t:"Moravcsik’s argument that new democracies “lock in” rights against backsliding", ok:true, why:"Right. Moravcsik (2000) offered this domestic explanation for why newly democratic governments in Europe accepted the European Convention."},
+     {t:"Hathaway’s expressive function, in which ratifying a treaty substitutes for real change", why:"Hathaway described low-cost signals that replace real change. Accepting a binding court to tie future governments is the opposite."},
+     {t:"The boomerang pattern of activists finding allies abroad", why:"The boomerang is about activists blocked at home finding allies abroad. Here the government itself is choosing to bind its successors."}]},
+   {id:"e4u11-cp05", lesson:"e4u11-l2", level:3, q:"The ASEAN Human Rights Declaration (2012) allows rights to be balanced against “national and regional contexts”. Which earlier text does this echo, and how did each side respond?", options:[
+     {t:"The Vienna Declaration’s “universal, indivisible” formula; all sides welcomed the new clause", why:"Vienna stressed that states must protect rights regardless of their systems. And the clause was criticised, not welcomed by all."},
+     {t:"The Cairo Declaration of the OIC; ASEAN members made all rights subject to Sharia", why:"The Cairo Declaration came from the OIC. The ASEAN text refers to national and regional contexts, not to Sharia."},
+     {t:"The Bangkok Declaration (1993); critics attacked the clause and ASEAN governments defended it", ok:true, why:"Right. This combines Lesson 2 (the AICHR and the 2012 Declaration) with Lesson 4 (the Bangkok Declaration’s “national and regional particularities” and the Asian values debate). NGOs and the then High Commissioner criticised the clause; ASEAN governments said it reflected the region’s approach of consultation and non-interference."},
+     {t:"The African Charter’s peoples’ rights; the clause came with a new regional court for Southeast Asia", why:"The AICHR has no court and no complaint procedure. Peoples’ rights are a feature of the African system."}]},
+   {id:"e4u11-cp06", lesson:"e4u11-l3", level:2, q:"After years of NGO reports, media coverage and UN statements about Country V, political rights improve somewhat, but killings by the security forces rise. Which research finding does this pattern match?", options:[
+     {t:"Simmons’s finding that treaties work best in transitional, partly democratic states", why:"Simmons studied treaty ratification and domestic mobilisation, not the effects of public shaming."},
+     {t:"Fariss’s finding that the standards of accountability used by monitors have risen", why:"Fariss explains why scores may hide improvement. The pattern here is mixed effects after shaming."},
+     {t:"Hathaway’s finding that ratification often goes with worse practices, not better", why:"Hathaway compared ratification with practices. Nothing here involves ratification."},
+     {t:"Hafner-Burton: shaming helped some rights, while terror sometimes rose", ok:true, why:"Right. Hafner-Burton (2008) found shaming associated with improvements in rights such as political rights, while terror sometimes increased."}]},
+   {id:"e4u11-cp07", lesson:"e4u11-l3", level:2, q:"A dataset coded from NGO and government reports gives Country W the same physical-integrity score in 1985 and 2015. Jun concludes that nothing improved. What would Christopher Fariss say?", options:[
+     {t:"Monitors grow stricter over time, so a constant score can hide real improvement", ok:true, why:"Right. Fariss argued that the standard of accountability has risen; correcting for it shows gradual improvement in physical integrity rights."},
+     {t:"The scores are objective counts of events, so the question is already settled", why:"The scores are coded from reports, which depend on how hard monitors look and how strictly they judge."},
+     {t:"The constant score proves that the treaties W ratified made things worse", why:"A constant score can’t show things got worse, and Fariss’s point is that it may hide improvement."},
+     {t:"The constant score shows selection bias in which kinds of states ratify treaties", why:"Selection bias is about which states join treaties. Fariss’s point is about how the scores themselves are produced."}]},
+   {id:"e4u11-cp08", lesson:"e4u11-l3", level:3, q:"A dictatorship ratifies several human rights treaties within a year and praises its own record at its UPR, yet its practices don’t change. Which pair of readings best explains the gap?", options:[
+     {t:"Moravcsik’s lock-in and Simmons’s mobilisation", why:"Lock-in describes new democracies binding their successors, and mobilisation needs citizens able to use the treaty. Neither fits a closed dictatorship."},
+     {t:"A realist would call the machinery cheap talk; Hathaway’s “expressive function” says ratifying sends a low-cost signal that can replace real change", ok:true, why:"Right. This combines Lesson 2 (IR lenses on the machinery) with Lesson 3 (Hathaway’s explanation of the commitment–compliance gap)."},
+     {t:"The state has reached rule-consistent behaviour, the final phase of the spiral model", why:"Rule-consistent behaviour means practice follows the rules. Here practice hasn’t changed."},
+     {t:"Liberal institutionalism: reviews produce public facts, so practice must already have improved", why:"Producing information doesn’t mean practice has improved. The scenario says it hasn’t."}]},
+   {id:"e4u11-cp09", lesson:"e4u11-l4", level:1, q:"Amina, a legal scholar, argues for ending child marriage using arguments from within her own religious and legal tradition, and invites dialogue with other traditions. Whose approach is this closest to?", options:[
+     {t:"Radical relativism", why:"Radical relativism treats culture as the only source of moral validity, so it gives no basis for arguing for change across traditions."},
+     {t:"Makau Mutua’s “savages, victims and saviours” critique", why:"Mutua criticises how human rights stories cast their characters. Amina is building support for a right from inside her tradition."},
+     {t:"Vasak’s three generations of rights", why:"Vasak’s scheme classifies kinds of rights. It isn’t a method for justifying rights within a culture."},
+     {t:"An-Na’im’s cross-cultural legitimacy", ok:true, why:"Right. An-Na’im argued that rights last when people can justify them from within their own traditions, through internal and cross-cultural dialogue."}]},
+   {id:"e4u11-cp10", lesson:"e4u11-l4", level:2, q:"Marco believes his state has violated his right to food. Can he take a complaint to a UN body?", options:[
+     {t:"No: economic and social rights are only goals, so no complaint procedure exists", why:"An optional protocol to the ICESCR (2008, in force 2013) allows individual complaints, and General Comment No. 3 sets minimum core obligations."},
+     {t:"Yes, to the Security Council, which can enforce the right", why:"The Security Council doesn’t hear individual human rights complaints."},
+     {t:"Yes, if his state has ratified the ICESCR’s Optional Protocol; the committee’s views are not enforceable, though many argue states must consider them in good faith", ok:true, why:"Right. This combines Lesson 4 (the 2008 Optional Protocol on economic and social rights) with Lesson 2 (complaints need an optional protocol, and “views” can’t be enforced)."},
+     {t:"Yes, any individual from any state may complain, without using national courts first", why:"Complaints are possible only against states that accepted the procedure, and domestic remedies must normally be exhausted first."}]},
+   {id:"e4u11-cp11", lesson:"e4u11-l5", level:3, q:"A minister argues: “The three-part test allows torture if a law permits it, the aim is national security and it is proportionate to an imminent attack.” What is the best reply?", options:[
+     {t:"The ban on torture is absolute, so no balancing test applies to it", ok:true, why:"Right. Some rights, such as the ban on torture, are absolute and allow no balancing at all, whatever the law or aim. The three-part test is for restrictable rights such as privacy or expression."},
+     {t:"He is right, as long as the law allowing it is published in advance", why:"Being provided by law is one part of the test for restrictable rights. It can’t make torture lawful."},
+     {t:"He is right, but only for detainees who are not citizens of the state", why:"The ban on torture protects every person. Human rights law even forbids sending anyone to face torture abroad."},
+     {t:"He is right if a truth commission later grants the officials an amnesty", why:"An amnesty decision years later can’t make an act lawful at the time, and torture is never permitted."}]},
+   {id:"e4u11-cp12", lesson:"e4u11-l5", level:3, q:"A draft paragraph reads: “A barbaric regime brutalised helpless villagers until heroic Western NGOs came to save them.” Which feedback best uses the unit?", options:[
+     {t:"It is fine, because NGO accounts are neutral", why:"The unit says to treat every source as having a position, including NGOs, governments and UN bodies."},
+     {t:"It tells Mutua’s savage–victim–saviour story; use neutral verbs, attribute claims, and add the government’s reply and local actors", ok:true, why:"Right. This combines Lesson 4 (Mutua’s critique) with Lesson 5 (description, attribution and clearly marked evaluation)."},
+     {t:"Remove only the word “heroic”; the rest is plain description", why:"“Barbaric”, “brutalised” and “helpless” are also evaluative and unattributed, and the whole story shape is the problem."},
+     {t:"Replace it with the government’s account, because official sources are neutral", why:"Swapping one side’s story for the other’s isn’t neutral. Attribute both and describe the evidence."}]},
+  ],
   codex:[
    {id:"human-rights-histories", title:"Histories of human rights", aka:["origins of human rights","Moyn–Sikkink debate","the last utopia debate"], tags:["human rights","history","historiography"],
     summary:"The rival accounts of when and where human rights began, and why the dating debate matters for arguments about universality.",
@@ -1089,7 +1151,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u11-q01", lesson:"e4u11-l1", level:1, q:"What is the central claim of Samuel Moyn’s *The Last Utopia* (2010)?", options:[
-     {t:"Human rights as an international movement broke through in the 1970s, after other utopias faded", ok:true, why:"Right. Moyn accepts older rights talk but dates the movement to the 1970s."},
+     {t:"Human rights as a movement broke through in the 1970s", ok:true, why:"Right. The international movement grew after other utopias faded. Moyn accepts older rights talk but dates the movement to the 1970s."},
      {t:"Human rights began with the Cyrus Cylinder", why:"Moyn rejects long histories of this kind."},
      {t:"Human rights were invented by Latin American diplomats in 1945", why:"That is closer to Sikkink’s and Glendon’s emphasis, not Moyn’s."},
      {t:"Human rights are a utopia that has now been fully achieved", why:"“Last utopia” means the last remaining utopian project, not an achieved one."}]},
@@ -1109,12 +1171,12 @@ ICA.addUnit({
      {t:"51 in favour, 2 against", why:"No state voted against."},
      {t:"193 in favour", why:"The UN had far fewer members in 1948; 193 is today’s membership."}]},
    {id:"e4u11-q05", lesson:"e4u11-l1", level:2, q:"Critics say long histories of human rights are often anachronistic. What do they mean?", options:[
-     {t:"Older texts often describe rulers’ duties or justice, not individual rights held against the state, so reading them as human rights projects today’s ideas backwards", ok:true, why:"Right. Anachronism means attributing present concepts to the past."},
-     {t:"Old documents are too difficult to read", why:"The point is about concepts, not difficulty."},
+     {t:"They project today’s idea of rights onto older texts", ok:true, why:"Right. Older texts often describe rulers’ duties or justice, not individual rights held against the state. Anachronism means attributing present concepts to the past."},
+     {t:"Old documents are too difficult for modern readers to understand", why:"The point is about concepts, not difficulty."},
      {t:"Long histories focus too much on the 1970s", why:"Long histories reach much further back; the 1970s focus is Moyn’s."},
      {t:"Long histories ignore Europe", why:"Most long histories are, if anything, centred on Europe."}]},
    {id:"e4u11-q06", lesson:"e4u11-l1", level:3, q:"Oluwaseun argues: “Since most of Africa was colonised in 1948, the UDHR cannot claim universal legitimacy.” Which reply best reflects the scholarship?", options:[
-     {t:"The point about absence is real, but Burke, Jensen and others show that newly independent states soon adopted and reshaped human rights law, for example with ICERD in 1965", ok:true, why:"Right. A balanced answer accepts the fact and adds the later evidence."},
+     {t:"The absence is real, but new states soon reshaped rights law", ok:true, why:"Right. Burke, Jensen and others show that newly independent states soon adopted and reshaped human rights law, for example with ICERD in 1965. A balanced answer accepts the fact and adds the later evidence."},
      {t:"The claim is false because African states drafted the UDHR", why:"Most of Africa was indeed absent in 1948."},
      {t:"Legitimacy depends only on the vote count in 1948", why:"Legitimacy is a broader question that includes later acceptance and use."},
      {t:"The UDHR was later replaced by a new declaration drafted in Africa", why:"No such replacement exists; the African Charter is a regional treaty."}]},
@@ -1124,19 +1186,19 @@ ICA.addUnit({
      {t:"All nine core treaties", why:"The term refers only to the UDHR and the two covenants."},
      {t:"The European and American conventions", why:"Those are regional treaties."}]},
    {id:"e4u11-q08", lesson:"e4u11-l1", level:2, q:"Why is Vasak’s “three generations of rights” scheme contested?", options:[
-     {t:"It can suggest a ranking and a sequence between kinds of rights, which clashes with the UN principle that rights are indivisible", ok:true, why:"Right. Critics worry that “first generation” sounds more important or more urgent."},
+     {t:"It can suggest a ranking of rights", ok:true, why:"Right. A ranking and sequence clash with the UN principle that rights are indivisible. Critics worry that “first generation” sounds more important or more urgent."},
      {t:"It was never published", why:"Vasak set it out in 1977."},
      {t:"It includes only civil and political rights", why:"It covers three kinds, including economic and solidarity rights."},
      {t:"It was rejected by every scholar immediately", why:"It is widely used as a teaching device, despite criticism."}]},
    {id:"e4u11-q09", lesson:"e4u11-l1", level:3, q:"Mei is writing about Maritain’s remark that the UNESCO participants agreed on rights “on condition that no one asks us why”. Which interpretation fits the lesson best?", options:[
-     {t:"The drafters reached practical agreement on rights without a shared philosophical foundation, which some see as a strength and others as a weakness", ok:true, why:"Right. Both readings are held by scholars."},
+     {t:"They agreed on rights but not on their basis", ok:true, why:"Right. Practical agreement without a shared philosophical foundation is seen by some as a strength and by others as a weakness."},
      {t:"The drafters refused to discuss the content of rights", why:"They debated the content in great detail; it was the justification they did not share."},
      {t:"Maritain opposed the Declaration", why:"Maritain was describing how agreement was possible."},
      {t:"It proves human rights have no foundation at all", why:"That overstates it; it shows foundations differ."}]},
    /* ---- Lesson 2 ---- */
    {id:"e4u11-q10", lesson:"e4u11-l2", level:1, q:"What distinguishes treaty-based bodies from Charter-based bodies?", options:[
-     {t:"Treaty bodies are independent experts covering only states parties; Charter bodies derive from the UN Charter and cover all members", ok:true, why:"Correct: the difference lies in membership, coverage and authority."},
-     {t:"Treaty bodies are made up of governments", why:"Treaty bodies are made up of independent experts."},
+     {t:"Their legal basis and which states they cover", ok:true, why:"Correct. Treaty bodies are independent experts covering only states parties; Charter bodies derive from the UN Charter and cover all members."},
+     {t:"Treaty bodies are made up of government representatives", why:"Treaty bodies are made up of independent experts."},
      {t:"Charter bodies issue binding judgments", why:"No UN human rights body issues binding judgments on states."},
      {t:"There is no difference", why:"The distinction matters for membership, coverage and authority."}]},
    {id:"e4u11-q11", lesson:"e4u11-l2", level:1, q:"How many seats does the Human Rights Council have, and how are they shared?", options:[
@@ -1145,7 +1207,7 @@ ICA.addUnit({
      {t:"193, one per UN member", why:"That is the General Assembly."},
      {t:"18 independent experts", why:"That describes the size of some treaty bodies."}]},
    {id:"e4u11-q12", lesson:"e4u11-l2", level:2, q:"Sione wants a UN expert to examine prison conditions in a country. The government has not invited anyone. What is most accurate?", options:[
-     {t:"A special rapporteur can write to the government and report publicly, but a country visit requires the government’s invitation", ok:true, why:"Right. Visits need consent; communications and reports do not."},
+     {t:"A rapporteur can report, but a visit needs an invitation", ok:true, why:"Right. A special rapporteur can write to the government and report publicly. Visits need consent; communications and reports do not."},
      {t:"A special rapporteur can enter without consent", why:"Visits require the state’s invitation."},
      {t:"Only the Security Council can ask questions about prisons", why:"Special procedures and treaty bodies regularly address detention."},
      {t:"Nothing can be done without a treaty body’s judgment", why:"Treaty bodies do not issue judgments, and other tools exist."}]},
@@ -1160,43 +1222,43 @@ ICA.addUnit({
      {t:"The Inter-American system", why:"Its landmark *Velásquez Rodríguez* case concerned disappearance."},
      {t:"The ASEAN system", why:"AICHR hears no complaints."}]},
    {id:"e4u11-q15", lesson:"e4u11-l2", level:3, q:"Hana compares two outputs on the same country: a treaty body’s detailed concluding observations and a UPR outcome with many mild recommendations from friendly states. What best explains the difference?", options:[
-     {t:"Treaty bodies are independent experts applying a treaty; the UPR is peer review among states, so politics shapes who recommends what", ok:true, why:"Right. Different authors, different logics."},
+     {t:"Independent experts versus peer review among states", ok:true, why:"Right. Treaty bodies apply a treaty; in the UPR, politics shapes who recommends what. Different authors, different logics."},
      {t:"The UPR has no recommendations", why:"The UPR produces many recommendations."},
      {t:"Treaty bodies are elected by the country under review", why:"Members are elected by states parties and serve in their personal capacity."},
      {t:"The two must always say the same thing", why:"They are separate mechanisms with different methods."}]},
    {id:"e4u11-q16", lesson:"e4u11-l2", level:2, q:"Which statement about the UN human rights system in 2025–26 is accurate?", options:[
-     {t:"Budget shortfalls cut treaty body meeting time by about 30% in 2025, and some committees cancelled sessions for the first time", ok:true, why:"Correct, according to the High Commissioner’s figures as compiled by the International Service for Human Rights."},
+     {t:"Budget cuts reduced treaty body meetings in 2025", ok:true, why:"Correct. Meeting time fell by about 30%, and some committees cancelled sessions for the first time, according to the High Commissioner’s figures as compiled by the International Service for Human Rights."},
      {t:"The treaty bodies were abolished in 2025", why:"They continue, with reduced meeting time."},
-     {t:"OHCHR received more money than ever in 2025", why:"It received only part of its approved budget."},
+     {t:"OHCHR received more money than ever before in 2025", why:"It received only part of its approved budget."},
      {t:"All UPR reviews were cancelled in 2025", why:"Reviews continued; the US review was rescheduled after the US did not take part."}]},
    {id:"e4u11-q17", lesson:"e4u11-l2", level:1, q:"What is the “margin of appreciation”?", options:[
-     {t:"Room the European Court gives states to decide sensitive questions their own way, within limits", ok:true, why:"Correct: the Court still reviews whether states stayed within the limits."},
+     {t:"Room the Court gives states on sensitive questions", ok:true, why:"Correct. States may decide such questions their own way, within limits; the European Court still reviews whether states stayed within the limits."},
      {t:"The period a state has to pay compensation", why:"That is a matter of execution, not the margin."},
      {t:"A rule that the Court must agree with national courts", why:"The Court can and does find violations despite national decisions."},
      {t:"The number of judges needed for a decision", why:"That is a procedural rule, unrelated to the margin."}]},
    {id:"e4u11-q18", lesson:"e4u11-l2", level:3, q:"A minister says: “Our region does not need a human rights court; dialogue works better.” A critic replies: “Without complaints there is no protection.” Which description of ASEAN’s AICHR is accurate and neutral?", options:[
-     {t:"It promotes rights by consensus and dialogue but has no court or complaint procedure; defenders see this as fitting the ASEAN way, critics as avoiding scrutiny", ok:true, why:"Right. Both positions are attributed."},
+     {t:"It works by dialogue, with no court; views on this differ", ok:true, why:"Right. It promotes rights by consensus and has no complaint procedure; defenders see this as fitting the ASEAN way, critics as avoiding scrutiny. Both positions are attributed."},
      {t:"It is a court whose judgments bind ASEAN members", why:"AICHR is not a court."},
      {t:"It has been abolished", why:"It continues to exist."},
-     {t:"Its members are independent judges elected by citizens", why:"Members are appointed by governments."}]},
+     {t:"Its members are independent judges elected directly by citizens", why:"Members are appointed by governments."}]},
    /* ---- Lesson 3 ---- */
    {id:"e4u11-q19", lesson:"e4u11-l3", level:1, q:"What is the “commitment–compliance gap”?", options:[
-     {t:"The difference between the human rights commitments states make and how they actually behave", ok:true, why:"Correct: promises on paper versus practice."},
-     {t:"The time between signing and ratifying a treaty", why:"That is part of the treaty process, not the gap."},
+     {t:"The gap between commitments and actual behaviour", ok:true, why:"Correct: promises on paper versus practice."},
+     {t:"The time between signing a treaty and ratifying it at home", why:"That is part of the treaty process, not the gap."},
      {t:"A gap in the UN budget", why:"Unrelated to the concept."},
      {t:"The difference between two regional courts", why:"Unrelated to the concept of the gap."}]},
    {id:"e4u11-q20", lesson:"e4u11-l3", level:2, q:"Hathaway explained her finding by the “expressive function” of treaties. What does that mean?", options:[
-     {t:"Ratifying sends a cheap signal of commitment that can earn approval and substitute for real change", ok:true, why:"Right. Weak enforcement makes the signal cheap."},
+     {t:"Ratifying is a cheap signal that can replace real change", ok:true, why:"Right. The signal of commitment can earn approval; weak enforcement makes it cheap."},
      {t:"Treaties express the will of the UN Secretary-General", why:"Treaties are agreements between states."},
      {t:"Treaties are only about free expression", why:"The term refers to the signalling role of ratification."},
-     {t:"Treaties must be read aloud to take effect", why:"Not a real requirement."}]},
+     {t:"Treaties must be read aloud in parliament to take effect", why:"Not a real requirement."}]},
    {id:"e4u11-q21", lesson:"e4u11-l3", level:2, q:"According to Simmons (2009), in which kind of state do human rights treaties have the largest effects?", options:[
      {t:"Transitional or partially democratic states", ok:true, why:"Right. People there have both motive and means to mobilise."},
      {t:"Stable democracies", why:"Rights are already largely protected there, so treaties add less."},
      {t:"Closed autocracies", why:"People there cannot easily use treaties."},
      {t:"States that have not ratified", why:"The question is about the effects of ratification."}]},
    {id:"e4u11-q22", lesson:"e4u11-l3", level:3, q:"Researchers find that multi-party dictatorships are more likely both to join the torture convention and to torture. Which interpretation is best?", options:[
-     {t:"Organised opposition may lead such regimes both to repress more and to make concessions like ratifying, so the correlation does not show the treaty causes torture", ok:true, why:"Right. This is Vreeland’s (2008) argument about a common cause."},
+     {t:"A common cause may drive both", ok:true, why:"Right. Organised opposition may lead such regimes both to repress more and to make concessions like ratifying, so the correlation does not show the treaty causes torture. This is Vreeland’s (2008) argument about a common cause."},
      {t:"Joining the convention causes governments to torture", why:"That reads correlation as causation."},
      {t:"The data must be wrong", why:"The pattern can be explained without dismissing the data."},
      {t:"Only democracies join treaties", why:"Many non-democracies have ratified."}]},
@@ -1216,19 +1278,19 @@ ICA.addUnit({
      {t:"Human rights have worsened everywhere since 1980", why:"His corrected estimates suggest improvement."},
      {t:"Only government statistics should be used", why:"The datasets rely mainly on NGO and State Department reports."}]},
    {id:"e4u11-q26", lesson:"e4u11-l3", level:3, q:"Tomás writes: “Since abuses persist in most countries, human rights law has failed.” Which response best uses the lesson?", options:[
-     {t:"It depends on the benchmark: Sikkink compares with the past and sees progress, pessimists compare with the ideal; a strong claim specifies the right, mechanism, type of state and period", ok:true, why:"Right. This reframes a sweeping claim into a testable one."},
+     {t:"It depends on the benchmark", ok:true, why:"Right. Sikkink compares with the past and sees progress, pessimists compare with the ideal; a strong claim specifies the right, mechanism, type of state and period. This reframes a sweeping claim into a testable one."},
      {t:"He is right; every study shows no effect", why:"Studies such as Simmons (2009) find conditional effects."},
      {t:"He is wrong; every study shows strong effects", why:"Evidence is mixed and conditional."},
      {t:"The question cannot be studied at all", why:"It is studied, with careful designs."}]},
    {id:"e4u11-q27", lesson:"e4u11-l3", level:1, q:"In *The Persistent Power of Human Rights* (2013), what does “limited statehood” refer to?", options:[
-     {t:"Situations where a government lacks the capacity to implement its decisions, which can block compliance despite good will", ok:true, why:"Correct: the problem is capacity, not will."},
+     {t:"Governments lacking capacity, not will", ok:true, why:"Correct. A government that cannot implement its decisions may fail to comply despite good will."},
      {t:"States that are not UN members", why:"It concerns capacity, not membership."},
      {t:"Small states with few people", why:"Size is not the issue; control is."},
      {t:"States that limit their own power by treaty", why:"That is a different idea."}]},
    /* ---- Lesson 4 ---- */
    {id:"e4u11-q28", lesson:"e4u11-l4", level:1, q:"What did the governments’ Bangkok Declaration of April 1993 say about universality?", options:[
-     {t:"Rights are universal in nature but must be considered bearing in mind national and regional particularities", ok:true, why:"Correct; it also stressed sovereignty and non-interference."},
-     {t:"Human rights are a Western idea to be rejected", why:"It accepted universality."},
+     {t:"Universal, but with regional particularities in mind", ok:true, why:"Correct. Rights are universal in nature but must be considered bearing in mind national and regional particularities; it also stressed sovereignty and non-interference."},
+     {t:"Human rights are a Western idea that Asia should reject", why:"It accepted universality."},
      {t:"Culture can never be considered", why:"It stressed cultural and regional backgrounds."},
      {t:"Only economic rights are universal", why:"It did not say this, though it stressed the right to development."}]},
    {id:"e4u11-q29", lesson:"e4u11-l4", level:1, q:"Which phrase comes from the Vienna Declaration of 1993?", options:[
@@ -1237,19 +1299,19 @@ ICA.addUnit({
      {t:"Anarchy is what states make of it", why:"That is Wendt (1992)."},
      {t:"Protect, respect and remedy", why:"That is the business and human rights framework."}]},
    {id:"e4u11-q30", lesson:"e4u11-l4", level:2, q:"Which position is closest to Donnelly’s “relative universality”?", options:[
-     {t:"The right to a fair trial is universal, but legal systems may organise trials differently within limits", ok:true, why:"Right: universal concept, variable implementation."},
+     {t:"Fair trials are universal; their procedures may vary", ok:true, why:"Right. Legal systems may organise trials differently within limits: universal concept, variable implementation."},
      {t:"Each culture decides which rights exist", why:"That is strong or radical relativism."},
-     {t:"Every state must use identical procedures", why:"That is radical universalism."},
+     {t:"Every state must use identical procedures for fair trials", why:"That is radical universalism."},
      {t:"Rights apply only to citizens", why:"Human rights apply to all persons."}]},
    {id:"e4u11-q31", lesson:"e4u11-l4", level:2, q:"Charlotte Bunch’s “Women’s Rights as Human Rights” (1990) is best known for challenging what?", options:[
-     {t:"The public/private divide that left violence in homes and families outside human rights", ok:true, why:"Right. Feminist scholars pushed human rights into the “private” sphere."},
+     {t:"The public/private divide in human rights", ok:true, why:"Right. It left violence in homes and families outside human rights. Feminist scholars pushed human rights into the “private” sphere."},
      {t:"The existence of the UN", why:"She worked within and with the UN system."},
      {t:"Economic rights", why:"Her focus was gender-based violence and the scope of rights."},
-     {t:"The European Court of Human Rights", why:"Not the focus of the article."}]},
+     {t:"The authority of the European Court of Human Rights", why:"Not the focus of the article."}]},
    {id:"e4u11-q32", lesson:"e4u11-l4", level:2, q:"Which statement about the ICESCR is accurate?", options:[
-     {t:"It allows progressive realisation within available resources but, according to its committee, requires minimum core obligations and non-discrimination immediately", ok:true, why:"Correct (General Comment No. 3, 1990)."},
+     {t:"Some duties, like non-discrimination, apply immediately", ok:true, why:"Correct. It allows progressive realisation within available resources, but its committee says minimum core obligations and non-discrimination apply immediately (General Comment No. 3, 1990)."},
      {t:"It creates no obligations", why:"It creates obligations, some immediate."},
-     {t:"It cannot be enforced by any court anywhere", why:"Courts such as South Africa’s have enforced similar rights; an optional protocol allows complaints."},
+     {t:"It cannot be enforced by any court anywhere in the world", why:"Courts such as South Africa’s have enforced similar rights; an optional protocol allows complaints."},
      {t:"It was adopted in 1948 with the UDHR", why:"It was adopted in 1966."}]},
    {id:"e4u11-q33", lesson:"e4u11-l4", level:1, q:"What are the three pillars of the UN Guiding Principles on Business and Human Rights?", options:[
      {t:"State duty to protect, corporate responsibility to respect, access to remedy", ok:true, why:"Correct: protect, respect and remedy."},
@@ -1257,17 +1319,17 @@ ICA.addUnit({
      {t:"Agenda setting, litigation, mobilisation", why:"Those are Simmons’s mechanisms."},
      {t:"Respect, protect, fulfil for companies only", why:"The UNGPs assign protection to states and respect to companies."}]},
    {id:"e4u11-q34", lesson:"e4u11-l4", level:3, q:"Amara reads that the EU “abandoned” its due diligence directive in 2026. What is the accurate, neutral description?", options:[
-     {t:"In February 2026 the EU adopted amendments that narrowed the directive to the largest companies and delayed compliance to 2029; NGOs called it a weakening, business groups a simplification", ok:true, why:"Right. Facts plus attributed positions."},
+     {t:"It was amended to narrow it and delay compliance", ok:true, why:"Right. In February 2026 amendments narrowed it to the largest companies and delayed compliance to 2029; NGOs called it a weakening, business groups a simplification. Facts plus attributed positions."},
      {t:"The directive was repealed entirely", why:"It was amended, not repealed."},
      {t:"The directive now applies to all companies of any size", why:"The amendments raised the thresholds."},
      {t:"Nothing changed", why:"Significant amendments were adopted."}]},
    {id:"e4u11-q35", lesson:"e4u11-l4", level:2, q:"Makau Mutua’s “savages, victims and saviors” critique argues that human rights discourse often…", options:[
-     {t:"casts Global South states as savages, their people as victims and Western actors as saviours", ok:true, why:"Right. Mutua wants a less hierarchical practice."},
+     {t:"casts Western actors as saviours", ok:true, why:"Right. It casts Global South states as savages and their people as victims. Mutua wants a less hierarchical practice."},
      {t:"ignores the role of NGOs entirely", why:"His critique includes Western NGOs among the “saviours”."},
      {t:"is too focused on economic rights", why:"Not his argument."},
      {t:"should be abolished", why:"Mutua argues for reconstruction, not abolition."}]},
    {id:"e4u11-q36", lesson:"e4u11-l4", level:3, q:"A government argues that a binding business and human rights treaty would harm investment, while a coalition of NGOs argues that voluntary principles leave victims without remedy. As of November 2026, what was the status of the treaty talks?", options:[
-     {t:"Negotiations in a Human Rights Council working group had produced several drafts but no agreed text", ok:true, why:"Correct; the working group held its twelfth session in October 2026, still without an agreed text."},
+     {t:"Several drafts, but no agreed text", ok:true, why:"Correct. A Human Rights Council working group negotiates; it held its twelfth session in October 2026, still without an agreed text."},
      {t:"A treaty entered into force in 2020", why:"No treaty has been agreed."},
      {t:"The talks were never started", why:"They started in 2014."},
      {t:"The Guiding Principles became binding in 2011", why:"They remain soft law."}]},
@@ -1278,12 +1340,12 @@ ICA.addUnit({
      {t:"Temporary, secret and effective", why:"Secrecy is not a criterion; legality requires accessible law."},
      {t:"Signed, ratified and in force", why:"Those are treaty stages."}]},
    {id:"e4u11-q38", lesson:"e4u11-l5", level:2, q:"Why does the human rights layer of non-refoulement matter for a state that is not party to the Refugee Convention?", options:[
-     {t:"The Convention against Torture and the ICCPR forbid return to a real risk of torture for their states parties, regardless of the Refugee Convention", ok:true, why:"Right. Many Asian states are outside the Refugee Convention but party to these treaties."},
+     {t:"Other treaties, such as the ICCPR, forbid such returns too", ok:true, why:"Right. The Convention against Torture and the ICCPR forbid return to a real risk of torture for their states parties. Many Asian states are outside the Refugee Convention but party to these treaties."},
      {t:"Non-refoulement applies only to Refugee Convention parties", why:"Human rights treaties contain their own obligations."},
      {t:"It does not matter at all", why:"It matters greatly in regions with few Refugee Convention parties."},
      {t:"It applies only to recognised refugees", why:"The torture protection covers everyone."}]},
    {id:"e4u11-q39", lesson:"e4u11-l5", level:2, q:"What did the UN Human Rights Committee decide in *Teitiota v. New Zealand* (views published 2020)?", options:[
-     {t:"No violation on the facts, but climate change could in future make return unlawful under the right to life", ok:true, why:"Correct: no violation on the facts, but a door left open."},
+     {t:"No violation, but a door left open", ok:true, why:"Correct. There was no violation on the facts, but climate change could in future make return unlawful under the right to life."},
      {t:"New Zealand must grant him refugee status", why:"The Committee found no violation."},
      {t:"Climate change is irrelevant to human rights", why:"The Committee said it could be relevant."},
      {t:"The case was inadmissible", why:"The Committee examined the merits."}]},
@@ -1293,27 +1355,27 @@ ICA.addUnit({
      {t:"It was run by the United Nations", why:"It was a national body created by South African law."},
      {t:"It refused to hear victims", why:"Victims’ hearings were central to its work."}]},
    {id:"e4u11-q41", lesson:"e4u11-l5", level:2, q:"What is a distinctive feature of Timor-Leste’s CAVR?", options:[
-     {t:"A Community Reconciliation Process for lesser offences, and a report, *Chega!*, estimating at least 102,800 conflict-related deaths", ok:true, why:"Correct: both are distinctive features of the CAVR."},
+     {t:"Community reconciliation and the report *Chega!*", ok:true, why:"Correct. Its Community Reconciliation Process handled lesser offences, and *Chega!* estimated at least 102,800 conflict-related deaths."},
      {t:"It covered only the year 1999", why:"Its mandate ran from April 1974 to October 1999."},
-     {t:"It sentenced Indonesian generals", why:"It had no power to prosecute."},
+     {t:"It sentenced Indonesian generals in its own court", why:"It had no power to prosecute."},
      {t:"It was set up in 2015", why:"It was established in 2001 and reported in 2005."}]},
    {id:"e4u11-q42", lesson:"e4u11-l5", level:2, q:"What was Mahmood Mamdani’s main criticism of South Africa’s TRC?", options:[
-     {t:"By focusing on individual gross violations, it left out apartheid’s everyday system and its many beneficiaries", ok:true, why:"Right (*Diacritics*, 2002)."},
+     {t:"It missed apartheid’s everyday system", ok:true, why:"Right (*Diacritics*, 2002). By focusing on individual gross violations, it left out the everyday system and its many beneficiaries."},
      {t:"It prosecuted too many people", why:"It prosecuted no one; it was not a court."},
-     {t:"It should have been run by the UN", why:"Not his argument."},
+     {t:"It should have been run by the UN, not South Africa", why:"Not his argument."},
      {t:"It ignored the amnesty question", why:"Amnesty was central to the TRC."}]},
    {id:"e4u11-q43", lesson:"e4u11-l5", level:3, q:"Dmitri’s draft says: “The regime’s outrageous spying proves it is evil.” Which revision best fits a seminar paper?", options:[
-     {t:"“A 2021 journalists’ investigation reported that spyware was used against reporters in the country; the government denied wrongdoing. Whether the use met the test of necessity and proportionality is assessed below.”", ok:true, why:"Right: dated, attributed, and evaluation clearly signposted."},
+     {t:"“A 2021 investigation reported spyware use; the government denied it.”", ok:true, why:"Right: dated and attributed. The paper can then assess, clearly signposted, whether the use met the test of necessity and proportionality."},
      {t:"“Everyone agrees the regime is evil.”", why:"False consensus and loaded language."},
-     {t:"“Spying is always wrong, so no evidence is needed.”", why:"Human rights law does not ban all surveillance, and evidence is always needed."},
+     {t:"“Spying is always wrong in every case, so no further evidence is needed.”", why:"Human rights law does not ban all surveillance, and evidence is always needed."},
      {t:"“The government is obviously lying.”", why:"An unattributed accusation; report positions and evidence instead."}]},
    {id:"e4u11-q44", lesson:"e4u11-l5", level:1, q:"What is the “justice cascade”?", options:[
-     {t:"Sikkink’s term for the trend since the 1980s towards criminal accountability for state leaders", ok:true, why:"Correct (*The Justice Cascade*, 2011)."},
-     {t:"A rule that lower courts follow higher ones", why:"That is precedent, not the justice cascade."},
+     {t:"A trend towards criminal accountability for leaders", ok:true, why:"Correct. It is Sikkink’s term for the trend since the 1980s (*The Justice Cascade*, 2011)."},
+     {t:"A rule that lower courts must follow higher courts’ rulings", why:"That is precedent, not the justice cascade."},
      {t:"A UN funding mechanism", why:"Unrelated: the term describes a trend in accountability."},
      {t:"The fall of a government after protests", why:"Unrelated: the term is about prosecutions of leaders."}]},
    {id:"e4u11-q45", lesson:"e4u11-l5", level:3, q:"Priya is planning a paper on Rohingya refugees in Bangladesh. Which approach best avoids an advocacy tone while staying accurate?", options:[
-     {t:"Describe the legal framework, report Bangladesh’s stated position and the UN agencies’ assessment of conditions for return with dates, then evaluate the evidence for a clear question", ok:true, why:"Right: description, attribution, then marked evaluation."},
+     {t:"Describe and attribute first, then evaluate", ok:true, why:"Right. Describe the legal framework, report Bangladesh’s stated position and the UN agencies’ assessment of conditions for return with dates, then evaluate the evidence for a clear question."},
      {t:"Quote only one NGO’s campaign material", why:"A single positioned source cannot support balanced analysis."},
      {t:"Avoid all facts and give only her opinion", why:"Seminar papers need evidence and attribution."},
      {t:"Leave out Bangladesh’s position because it is controversial", why:"Fairness requires stating each side’s position."}]}

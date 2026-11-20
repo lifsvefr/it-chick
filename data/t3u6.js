@@ -1,6 +1,6 @@
-/* Track 3 · Unit 6 · Samples, uncertainty and inference */
+/* Track 3 · Unit 7 · Samples, uncertainty and inference */
 ICA.addUnit({
-  id:"t3u6", track:"t3", n:6, title:"Samples, uncertainty and inference", icon:"🎲",
+  id:"t3u6", track:"t3", n:7, title:"Samples, uncertainty and inference", icon:"🎲",
   apps:{ms:"Excel", google:"Google Sheets", libre:"LibreOffice Calc", apple:"Numbers"},
   blurb:"Learn how a sample can tell you about a whole population, and how sure it lets you be. Simulate sampling distributions, build confidence intervals, run t-tests, chi-square tests and a regression line, and learn how tests go wrong.",
   goals:[
@@ -43,9 +43,9 @@ ICA.addUnit({
         "**The spread shrinks.** The SD of the results falls from 1.71 to 1.22 to 0.54 as each sample gets bigger.",
         "**The shape changes.** Flat for one roll, a triangle for two, a bell for ten. Extreme averages need almost every roll to be extreme: the chance that ten rolls are all 6 is (1/6)¹⁰, about 1 in 60 million. Averages near 3.5 can happen in a huge number of ways."
       ]},
-      "You can run the same simulation yourself. In [[r-language|R]] (the language Unit 7 teaches, {{r-intro}}; the app’s **Data Lab** runs it in your browser with [[webr|webR]]):",
+      "You can run the same simulation yourself. In [[r-language|R]] (the language Unit 8 teaches, {{r-intro}}; the app’s **Data Lab** runs it in your browser with [[webr|webR]]):",
       {code:"set.seed(1)\nmeans <- replicate(1000,\n  mean(sample(1:6, 10, replace = TRUE)))\nmean(means)   # close to 3.5\nsd(means)     # close to 0.54\nhist(means)", lang:"txt", label:"R"},
-      "`sample(1:6, 10, replace = TRUE)` rolls a die 10 times; `replicate(1000, …)` repeats the whole thing 1,000 times and keeps the 1,000 averages. `set.seed(1)` makes the “random” numbers repeatable. In Python, using only the standard library:",
+      "`sample(1:6, 10, replace = TRUE)` rolls a die 10 times; `replicate(1000, …)` repeats the whole thing 1,000 times and keeps the 1,000 averages. `set.seed(1)` makes the “random” numbers repeatable (Unit 6, Lesson 1 explains seeds and simulation in general: {{simulating-chance}}). In Python, using only the standard library:",
       {code:"import random, statistics\nrandom.seed(1)\nmeans = []\nfor _ in range(1000):\n    rolls = [random.randint(1, 6) for _ in range(10)]\n    means.append(statistics.mean(rolls))\nprint(round(statistics.mean(means), 2))   # 3.5\nprint(round(statistics.stdev(means), 2))  # 0.54", lang:"py", label:"Python"},
       {lab:"dl-r-sim", t:"Practise: simulate a sampling distribution in the Data Lab"}
     ]},
@@ -165,7 +165,7 @@ ICA.addUnit({
       {warn:"Error bars on charts may show the SD, the SE or a confidence interval, and they look very different (see [[error-bar|error bars]]). SE bars are much shorter than SD bars, so a chart can look more certain than the data are. A good caption always says which one is drawn."}
     ]},
     {h:"Why about two standard errors?", body:[
-      "The central limit theorem says sample means are roughly normal, centred on the true mean μ, with spread SE. For a normal curve, 95% of values lie within **1.96** SDs of the centre (Unit 5, {{distributions}}). So in about 95% of samples, the sample mean lands within 1.96 SE of μ.",
+      "The central limit theorem says sample means are roughly normal, centred on the true mean μ, with spread SE. For a normal curve, 95% of values lie within **1.96** SDs of the centre (Unit 5, {{distributions}}; Unit 6, Lesson 5 shows where the 1.96 comes from, {{normal-calculations}}). So in about 95% of samples, the sample mean lands within 1.96 SE of μ.",
       "Now flip it round. If x̄ is within 1.96 SE of μ, then μ is within 1.96 SE of x̄. So the range **x̄ ± 1.96 × SE** contains μ for about 95% of the samples we could have drawn. That range is a 95% [[confidence-interval|confidence interval]] (CI).",
       {key:"A confidence interval is estimate ± (a multiplier) × (standard error). The multiplier sets the confidence level; the standard error carries the sample’s precision."},
       "There is one catch: we used s, not σ, and with a small sample s itself is uncertain. The interval needs to be a little wider to make up for it."
@@ -201,7 +201,7 @@ ICA.addUnit({
       {tip:"Report the confidence level with the interval (“95% CI 491.8 to 499.2 g”). Without it, readers can’t tell how much the range is worth."}
     ]},
     {h:"Intervals for a proportion, and what no interval can fix", body:[
-      "For a percentage, the standard error is √(p̂(1 − p̂) ÷ n), where p̂ (“p-hat”) is the sample proportion. The large-sample 95% interval is p̂ ± 1.96 × SE.",
+      "For a percentage, the standard error is √(p̂(1 − p̂) ÷ n), where p̂ (“p-hat”) is the sample proportion. It comes from the spread of a binomial count, divided by n ({{binomial-model}}, Unit 6, Lesson 4). The large-sample 95% interval is p̂ ± 1.96 × SE.",
       {ex:"A random sample of 400 residents: 240 (60%) support a new cycle lane.\n\nSE      = √(0.60 × 0.40 ÷ 400) = 0.0245\nMargin  = 1.96 × 0.0245 = 0.048, i.e. 4.8 points\n95% CI  = 55.2% to 64.8%", label:"Worked example (invented)", mono:true},
       "That ± 4.8 points is exactly the [[margin-of-error|margin of error]] polls report ({{survey-sampling}}). It needs a random sample and at least 10 “yes” and 10 “no” answers. For small samples or percentages near 0% or 100%, better methods exist (the **Wilson** interval is a common one; here it gives 55.1% to 64.7%, almost the same).",
       {warn:"A confidence interval measures only **sampling error**: the chance wobble from who happened to be picked. It does nothing about a biased sample, people who refused to answer, a leading question or a broken scale. OpenIntro makes the same point: careful data collection, not formulas, protects against bias."}
@@ -222,7 +222,7 @@ ICA.addUnit({
       {v:7.4, tol:0.004, why:"That adds one SE (0.2) and forgets the multiplier. The margin is t* × SE."}
     ], hint2:"Standard error first (s ÷ √n), then multiply by t*, then add to the mean."},
     {id:"t3u6-l2-x3", type:"mcq", q:"Lucía’s 95% confidence interval for the batch’s mean loaf weight is 491.8 g to 499.2 g. Which statement is correct?", options:[
-      {t:"If she repeated the sampling many times, about 95% of intervals made this way would contain the batch’s true mean", ok:true, why:"The 95% describes how often the method succeeds over repeated samples."},
+      {t:"About 95% of intervals made this way would contain the true mean", ok:true, why:"Imagine repeating the sampling many times. The 95% describes how often the method succeeds over repeated samples."},
       {t:"95% of the loaves in the batch weigh between 491.8 g and 499.2 g", why:"The interval is about the mean, not individual loaves. Loaves vary with SD about 6 g, so many lie outside it."},
       {t:"There’s a 95% chance that her next sample’s mean will be between 491.8 g and 499.2 g", why:"A CI gives plausible values for the parameter, not a prediction for future sample means (a new sample’s mean could easily fall outside)."},
       {t:"The batch’s true mean is 495.5 g", why:"495.5 g is the estimate from this sample. The interval exists precisely because the true mean is uncertain."}
@@ -278,7 +278,7 @@ ICA.addUnit({
    learn:[
     {h:"The logic of a test", body:[
       {lead:"A hypothesis test asks one narrow question: are these data surprising if nothing interesting is going on?"},
-      "You met the p-value and its pitfalls in the research-papers unit ({{statistical-significance-basics}}). Here you’ll build tests yourself. Every test has the same parts:",
+      "You met the p-value and its pitfalls in the research-papers unit ({{statistical-significance-basics}}). Here you’ll build tests yourself. Unit 6, Lesson 4 gave a first taste with a seed packet: if 90% of seeds really sprout, 14 or fewer out of 20 would happen only about 1 time in 90. Every test has the same parts:",
       {ol:[
         "**Hypotheses.** The [[null-hypothesis|null hypothesis]] (H₀) is the “nothing going on” claim: no difference, no relationship. The [[alternative-hypothesis|alternative hypothesis]] (H₁) is what you would conclude instead: a difference exists (in either direction, or in one stated direction).",
         "**A [[test-statistic|test statistic]]:** one number measuring how far the data are from what H₀ predicts, such as a difference in means, or that difference divided by its standard error.",
@@ -341,8 +341,8 @@ ICA.addUnit({
       {t:"Report the effect size, its confidence interval and the p-value", why:"Finally, tell the reader how much, how sure and how surprising."}
     ]},
     {id:"t3u6-l3-x2", type:"mcq", q:"Amara’s shuffling test gives p ≈ 0.021. Which sentence states correctly what that means?", options:[
-      {t:"If the guide made no difference, a gap of 3.5 minutes or more (either way) would arise from random splitting about 2% of the time", ok:true, why:"That is exactly what the shuffles measured: how often chance alone, with no guide effect, produces a gap this large."},
-      {t:"There is a 2.1% chance that the new guide doesn’t work", why:"The p-value is calculated by assuming the guide doesn’t work; it can’t also be the probability of that assumption."},
+      {t:"Chance alone would give a gap this big about 2% of the time", ok:true, why:"If the guide made no difference, a gap of 3.5 minutes or more (either way) would arise from random splitting about 2% of the time. That is exactly what the shuffles measured: how often chance alone, with no guide effect, produces a gap this large."},
+      {t:"There is a 2.1% chance that the new guide doesn’t really work at all", why:"The p-value is calculated by assuming the guide doesn’t work; it can’t also be the probability of that assumption."},
       {t:"The new guide saves 2.1% of the time", why:"The p-value says nothing about the size of the effect. The saving is 3.5 minutes (about 17% of 20.7)."},
       {t:"97.9% of people will be faster with the new guide", why:"p-values aren’t about individuals. Several people using the new guide were slower than some using the old one."}
     ]},
@@ -358,7 +358,7 @@ ICA.addUnit({
       ["Whether preferred drink (tea, coffee, neither) differs between two age groups","Not a t-test: a chi-square test (Lesson 4)","Both variables are categories, so there are no means to compare."]
     ]},
     {id:"t3u6-l3-x5", type:"mcq", q:"Amara planned a two-sided test. After seeing that the new guide was faster, a colleague suggests switching to a one-sided test “since we know which way it went”, halving p to 0.010. What’s the problem?", options:[
-      {t:"Choosing the direction after seeing the data doubles the real false-alarm rate, so the p-value no longer means what it says", ok:true, why:"If you always pick the side the data point to, a “5%” test rejects a true H₀ about 10% of the time."},
+      {t:"Choosing the side after seeing the data inflates false alarms", ok:true, why:"It doubles the real false-alarm rate, so the p-value no longer means what it says. If you always pick the side the data point to, a “5%” test rejects a true H₀ about 10% of the time."},
       {t:"One-sided tests are never allowed in statistics", why:"They are allowed when the direction is stated in advance for a good reason. The problem here is deciding afterwards."},
       {t:"Nothing: one-sided tests are more powerful, so they are always better", why:"More power in one direction comes at the price of ignoring the other, and only if chosen beforehand."},
       {t:"A one-sided p-value would be larger, not smaller", why:"When the result goes the predicted way, the one-sided p is half the two-sided p."}
@@ -401,7 +401,7 @@ ICA.addUnit({
       "A library asks a random sample of 300 members their age group and how they prefer to be contacted (invented data). The result is a two-way table, or [[crosstab]] ({{crosstabs}}):",
       {table:[["Age group","Email","Phone","Text"],["Under 40 (160)","64","22","74"],["40 and over (140)","46","38","56"],["Total (300)","110","60","130"]]},
       "Row percentages show the pattern: 13.8% of under-40s prefer phone, against 27.1% of those 40 and over. But is that gap bigger than random sampling would produce if age and preference were unrelated in the whole membership?",
-      "H₀ says the two variables are **independent**: every age group has the same mix of preferences. If so, each group should mirror the overall mix. That gives each cell an [[expected-count|expected count]]:",
+      "H₀ says the two variables are **independent**: every age group has the same mix of preferences (the same idea as [[independent-events|independent events]] in Unit 6, Lesson 2, {{conditional-independence}}). If so, each group should mirror the overall mix. That gives each cell an [[expected-count|expected count]]:",
       {ex:"Expected count = row total × column total ÷ grand total\n\nUnder 40, phone: 160 × 60 ÷ 300 = 32\n\n                 Email   Phone   Text\nUnder 40         58.67   32.00   69.33\n40 and over      51.33   28.00   60.67", label:"Worked example", mono:true},
       "Expected counts needn’t be whole numbers; they are averages over imagined repeat samples. Each row and column of expected counts adds up to the same total as the observed table."
     ]},
@@ -466,9 +466,9 @@ ICA.addUnit({
       {v:36.67, tol:0.01, why:"That is 110 ÷ 300 as a percentage (36.7%). Multiply that share by the 140 members in the row to get a count."}
     ], hint2:"Row total times column total, divided by the grand total."},
     {id:"t3u6-l4-x2", type:"mcq", q:"The chi-square test for the library table gives χ² = 8.41, df = 2, p = 0.015. Which conclusion is best?", options:[
-      {t:"The data give evidence that contact preference is associated with age group among members; the main difference is in preferring phone", ok:true, why:"A small p-value suggests the table fits poorly with independence, and the phone cells contribute most to χ²."},
+      {t:"The data suggest preference is associated with age group", ok:true, why:"The main difference is in preferring phone. A small p-value suggests the table fits poorly with independence, and the phone cells contribute most to χ²."},
       {t:"Being over 40 causes people to prefer phone calls", why:"A chi-square test detects association, not cause. Other factors that differ by age could explain the pattern."},
-      {t:"There is a 1.5% chance that age and preference are unrelated", why:"The p-value is calculated assuming they are unrelated; it isn’t the probability of that assumption."},
+      {t:"There is a 1.5% chance that age group and preference are unrelated", why:"The p-value is calculated assuming they are unrelated; it isn’t the probability of that assumption."},
       {t:"The association is strong, because p is small", why:"p doesn’t measure strength. The gap in phone preference is 13 percentage points, and Cramér’s V is a modest 0.17."}
     ]},
     {id:"t3u6-l4-x3", type:"sort", q:"Can you use a chi-square test of independence as described? Sort each situation.", buckets:["Fine","A problem"], items:[
@@ -638,6 +638,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u6-q02","t3u6-q05","t3u6-q11","t3u6-q14","t3u6-q17","t3u6-q21","t3u6-q23","t3u6-q29","t3u6-q32","t3u6-q36","t3u6-q40","t3u6-q43"],
+  cpBank:[
+   {id:"t3u6-cp01", lesson:"t3u6-l1", level:1, q:"Carla records 1,000 taxi fares, and their histogram is strongly skewed right. A colleague says: “With 1,000 values, the central limit theorem says the fares should look normal.” What is the best reply?", options:[
+     {t:"He is right: something must be wrong with the data", why:"Nothing is wrong. A large sample shows the population’s shape more clearly; it doesn’t change it."},
+     {t:"He is right only if the fares were rounded", why:"Rounding has nothing to do with it. The theorem is about means of samples, not the data values."},
+     {t:"The theorem needs at least 10,000 values to work", why:"No number of values makes the data themselves normal. It’s the sample mean whose distribution becomes bell-shaped."},
+     {t:"The theorem is about sample means, not the data; the fares stay skewed", ok:true, why:"The data keep their shape however many you collect. The means of many samples are what become roughly normal."}]},
+   {id:"t3u6-cp02", lesson:"t3u6-l1", level:2, q:"Journey times in a city have an SD of 15 minutes. For random samples of 225 journeys, about 95% of sample means fall within how many minutes of the true mean?", options:[
+     {t:"About 2 minutes", ok:true, why:"SE = 15 ÷ √225 = 15 ÷ 15 = 1 minute. About 95% of sample means lie within 1.96 SE, roughly 2 minutes."},
+     {t:"About 30 minutes", why:"That is 2 SDs, which describes individual journeys. Sample means vary far less: by the SE, 15 ÷ √225 = 1."},
+     {t:"About 1 minute", why:"1 minute is one standard error. About 95% of means lie within 1.96 SE, so about 2 minutes."},
+     {t:"About 0.13 minutes", why:"That divides by n (15 ÷ 225 × 2) instead of √n. The SE uses the square root: 15 ÷ 15 = 1."}]},
+   {id:"t3u6-cp03", lesson:"t3u6-l1", level:3, q:"A school has 400 pupils. Ama samples 120 of them at random, without replacement, and uses s ÷ √n for the standard error. What is the main issue?", options:[
+     {t:"Nothing: s ÷ √n is exact for any sample without replacement", why:"Sampling without replacement is close to independent only while the sample is a small part of the population."},
+     {t:"Her sample is 30% of the school, so the formula overstates the error", ok:true, why:"OpenIntro’s rule of thumb is a sample of no more than 10% of the population. Beyond that, the usual formulas overstate the error."},
+     {t:"Her standard error is too small, so her interval is too narrow", why:"It’s the other way round. Covering a big share of a finite population leaves less to be uncertain about."},
+     {t:"She must use n = 400 in the formula, because that is the population", why:"n is always the sample size. The issue is that 120 is a large share of 400."}]},
+   {id:"t3u6-cp04", lesson:"t3u6-l2", level:1, q:"A report gives a 95% confidence interval of 41% to 49% for the share of residents who use the library. What are the estimate and the margin of error?", options:[
+     {t:"Estimate 49%, margin 8 points", why:"49% is the upper end. The estimate sits in the middle, and the margin is half the width."},
+     {t:"Estimate 45%, margin 8 points", why:"8 points is the full width of the interval. The margin goes each way from the estimate: 8 ÷ 2 = 4."},
+     {t:"Estimate 45%, margin 4 points", ok:true, why:"The interval is estimate ± margin. The middle of 41 and 49 is 45, and each end is 4 points away."},
+     {t:"Estimate 41%, margin 4 points", why:"41% is the lower end. The estimate is the centre, 45%."}]},
+   {id:"t3u6-cp05", lesson:"t3u6-l2", level:2, q:"A random sample of 9 parcels gives a 95% confidence interval for the mean weight of 77.4 to 86.6 g, using t* = 2.306. What was the sample SD?", options:[
+     {t:"About 2 g", why:"2 g is the standard error: margin 4.6 ÷ 2.306 ≈ 2. The SD is the SE times √n: 2 × 3 = 6 g."},
+     {t:"About 4.6 g", why:"4.6 g is the margin of error, half the interval’s width. Divide by t* for the SE, then multiply by √9 for the SD."},
+     {t:"About 6 g", ok:true, why:"Margin = (86.6 − 77.4) ÷ 2 = 4.6. SE = 4.6 ÷ 2.306 ≈ 2. SE = s ÷ √n, so s = 2 × √9 = 6 g."},
+     {t:"About 18 g", why:"That multiplies the SE by n (2 × 9). The SE divides the SD by √n, so going back multiplies by √9 = 3."}]},
+   {id:"t3u6-cp06", lesson:"t3u6-l2", level:2, q:"A random poll of 400 people finds 60% support, with a 95% margin of error of about 4.8 points. Roughly how many people would be needed for a margin of about 2.4 points?", options:[
+     {t:"800", why:"Doubling n divides the margin by √2 ≈ 1.41, not by 2. To halve it, you need four times as many people."},
+     {t:"1,600", ok:true, why:"The margin shrinks with √n. Halving it needs √n twice as big, so n four times as big: 4 × 400 = 1,600."},
+     {t:"200", why:"Fewer people make the margin wider, not narrower."},
+     {t:"4,000", why:"That is ten times as many. Four times as many (1,600) already halves the margin."}]},
+   {id:"t3u6-cp07", lesson:"t3u6-l3", level:2, q:"In a permutation test, 40 of 5,000 random shuffles of the group labels gave a difference at least as large as the observed one, in either direction. What is the approximate p-value?", options:[
+     {t:"0.04", why:"That would be 40 out of 1,000. Here it is 40 out of 5,000."},
+     {t:"0.992", why:"That is the share of shuffles with a smaller difference. The p-value counts those at least as extreme."},
+     {t:"0.008", ok:true, why:"p ≈ 40 ÷ 5,000 = 0.008: if the labels didn’t matter, a gap this big would appear in under 1% of shuffles."},
+     {t:"40%, the number of extreme shuffles as a percentage", why:"40 is a count, not a percentage. Divide by the 5,000 shuffles."}]},
+   {id:"t3u6-cp08", lesson:"t3u6-l3", level:3, q:"A study with 50,000 people per group finds that an app raised a 100-point wellbeing score by 0.3 points. The 95% CI is 0.2 to 0.4, and p < 0.001. What is the fairest summary?", options:[
+     {t:"The app has a large effect, because p is so small", why:"A tiny p shows the difference is unlikely to be chance, not that it is big. The interval shows the size."},
+     {t:"The result is probably a false alarm, because the effect is small", why:"With huge samples, power is high and small effects are detected reliably. Small isn’t the same as false."},
+     {t:"Nothing can be concluded without a one-sided test", why:"A two-sided test is the usual default, and it already gives clear evidence here."},
+     {t:"A real effect is likely, but it is tiny: 0.2 to 0.4 points", ok:true, why:"Report the size and interval with the p-value. Huge samples give high power, so even very small effects reach significance."}]},
+   {id:"t3u6-cp09", lesson:"t3u6-l4", level:2, q:"Of 300 café customers, 120 are first-time visitors and 90 bought a drink. 45 first-time visitors bought a drink. Under independence, what does this cell add to χ²?", options:[
+     {t:"9", why:"9 is the gap O − E (45 − 36). The contribution is (O − E)² ÷ E = 81 ÷ 36."},
+     {t:"2.25", ok:true, why:"Expected = 120 × 90 ÷ 300 = 36. Contribution = (45 − 36)² ÷ 36 = 81 ÷ 36 = 2.25."},
+     {t:"1.8", why:"That divides by the observed count (81 ÷ 45). Chi-square divides by the expected count, 36."},
+     {t:"0.25", why:"That divides the gap by E without squaring it (9 ÷ 36). Each gap is squared first."}]},
+   {id:"t3u6-cp10", lesson:"t3u6-l4", level:3, q:"For days between 12 °C and 30 °C, a kiosk’s ice-cream sales follow ŷ = −40 + 15x, where x is the temperature in °C. Which use of this line is sound?", options:[
+     {t:"Predicting about 260 sales on a 20 °C day", ok:true, why:"−40 + 15 × 20 = 260, and 20 °C is inside the range of the data, where predictions are most trustworthy."},
+     {t:"Predicting −10 sales on a 2 °C day", why:"2 °C is outside the data (extrapolation), and negative sales are impossible. The line can’t be trusted there."},
+     {t:"Saying a 1 °C rise causes 15 more sales", why:"The slope describes how sales change with temperature in these data. Cause needs a study design that rules out other factors."},
+     {t:"Saying the kiosk sells −40 ice creams at 0 °C", why:"The intercept is an anchor for the line. 0 °C is outside the data, and negative sales can’t happen."}]},
+   {id:"t3u6-cp11", lesson:"t3u6-l5", level:1, q:"A spam filter tests each email against H₀: “this email is genuine.” It sends a real message from your bank to the spam folder. What kind of error is this?", options:[
+     {t:"A type II error, because something was missed", why:"A type II error fails to reject a false H₀, such as letting real spam through. Here a true H₀ was rejected."},
+     {t:"A type I error: a true H₀ was rejected, a false alarm", ok:true, why:"The email really was genuine (H₀ true), but the filter rejected that. That is a false alarm."},
+     {t:"No error, because filters are allowed to be cautious", why:"Whatever the reason, rejecting a true H₀ is a type I error."},
+     {t:"A power failure, because the filter lacked data", why:"Power is about detecting real effects. Flagging a genuine email is a false alarm, a type I error."}]},
+   {id:"t3u6-cp12", lesson:"t3u6-l5", level:3, q:"A trial has 6 pre-planned outcomes with p = 0.004, 0.009, 0.011, 0.03, 0.2 and 0.6. At an overall level of 0.05, which statement is right?", options:[
+     {t:"Holm keeps 1 result; Benjamini–Hochberg keeps 4", why:"1 is plain Bonferroni (only 0.004 < 0.05 ÷ 6 ≈ 0.0083). Holm loosens the threshold at each step: 0.009 < 0.05 ÷ 5 and 0.011 < 0.05 ÷ 4 pass too."},
+     {t:"Holm keeps 3 results; Benjamini–Hochberg keeps 4", ok:true, why:"Holm: 0.004 < 0.0083, 0.009 < 0.01, 0.011 < 0.0125, then 0.03 > 0.0167, so stop at 3. BH: 0.03 ≤ 4 × 0.05 ÷ 6 ≈ 0.033, so ranks 1 to 4."},
+     {t:"Holm keeps 4 results; Benjamini–Hochberg keeps 3", why:"This swaps them. BH controls the false discovery rate, which is less strict than Holm’s family-wise control, so BH never keeps fewer."},
+     {t:"Both keep 3 results, because both control false alarms", why:"They control different things. Holm controls the chance of any false alarm; BH controls the expected share of false discoveries, and keeps 4 here."}]},
+  ],
   codex:[
    {id:"sampling-distributions", title:"Sampling distributions", aka:["sampling distribution","sampling variability","parameter","statistic","simulation","bootstrap"], tags:["statistics","inference"],
     summary:"How a statistic varies from sample to sample, why that variation is the foundation of inference, and how simulation lets you see it.",
@@ -662,7 +724,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Unbiased and consistent.** x̄ is an unbiased estimator of μ (its sampling distribution is centred on μ) and consistent (it concentrates around μ as n grows). The sample variance with divisor n − 1 is unbiased for σ²; the sample SD s is very slightly biased low for σ, which rarely matters.",
-      "**Simulation-based inference.** Two families of methods use simulation directly. *Permutation tests* shuffle group labels to build a null distribution (Lesson 3 of Unit 6). The **bootstrap** resamples the observed data *with replacement* many times, recalculating the statistic each time; the spread of those bootstrap statistics approximates the standard error, and their middle 95% gives a simple percentile interval. The bootstrap works for statistics with no easy formula (medians, ratios, correlations), but it can do badly with very small samples or for extremes such as the maximum.",
+      "**Simulation-based inference.** Two families of methods use simulation directly. *Permutation tests* shuffle group labels to build a null distribution (Lesson 3 of Unit 7). The **bootstrap** resamples the observed data *with replacement* many times, recalculating the statistic each time; the spread of those bootstrap statistics approximates the standard error, and their middle 95% gives a simple percentile interval. The bootstrap works for statistics with no easy formula (medians, ratios, correlations), but it can do badly with very small samples or for extremes such as the maximum.",
       "**Monte Carlo error.** A simulated answer is itself an estimate. A p-value from R shuffles has standard error √(p(1 − p) ÷ R): for p = 0.021 from 10,000 shuffles, about ±0.0014. Report the number of repetitions and the seed so others can reproduce it.",
       "**Sampling designs matter.** The formulas in this unit assume simple random sampling. [[stratified-sampling|Stratified samples]] can have *smaller* standard errors; [[cluster-sampling|cluster samples]] usually have larger ones (the **design effect**). Survey software handles these designs; plain formulas don’t ({{sampling-methods}}, {{survey-sampling}})."
      ]},
@@ -918,8 +980,8 @@ ICA.addUnit({
   bank:[
    /* Lesson 1 */
    {id:"t3u6-q01", lesson:"t3u6-l1", level:1, q:"What is a sampling distribution?", options:[
-     {t:"The distribution of a statistic, such as the mean, across all possible samples of the same size", ok:true, why:"It describes how the statistic varies from sample to sample."},
-     {t:"The distribution of the values in your sample", why:"That’s the data (one sample’s distribution), not the sampling distribution."},
+     {t:"How a statistic, such as the mean, varies across samples", ok:true, why:"It is the distribution of the statistic across all possible samples of the same size."},
+     {t:"The distribution of the individual values in your one sample", why:"That’s the data (one sample’s distribution), not the sampling distribution."},
      {t:"The list of people a sample is drawn from", why:"That’s a [[sampling-frame|sampling frame]], a different idea."},
      {t:"A normal curve fitted to the data", why:"A sampling distribution is about statistics across samples, and it isn’t always normal."}]},
    {id:"t3u6-q02", lesson:"t3u6-l1", level:2, q:"Test scores in a large population have an SD of 20 points. What is the standard error of the mean for random samples of 100 students?", options:[
@@ -928,7 +990,7 @@ ICA.addUnit({
      {t:"20 points", why:"20 is the SD of individual scores. Means of 100 vary much less."},
      {t:"10 points", why:"That divides by 2 rather than by √100 = 10."}]},
    {id:"t3u6-q03", lesson:"t3u6-l1", level:3, q:"Kenji simulates the average price of 5 houses drawn at random from a town where prices are very skewed (a few mansions). His histogram of 5,000 simulated averages is still clearly skewed right. What is the best explanation?", options:[
-     {t:"For a very skewed population, samples of 5 are too small for the central limit theorem to have produced a bell shape", ok:true, why:"The CLT is a large-sample result; the more skewed the population, the larger n must be."},
+     {t:"Samples of 5 are too small for the CLT to give a bell shape here", ok:true, why:"The CLT is a large-sample result; the more skewed the population, the larger n must be."},
      {t:"He needs to simulate more than 5,000 averages", why:"More simulated samples make a smoother picture of the same skewed sampling distribution. The fix is a larger sample size per average."},
      {t:"The central limit theorem doesn’t apply to prices", why:"It applies to any population with finite spread; it just needs a larger n here."},
      {t:"His simulation must have a mistake, because averages are always normal", why:"Averages of small samples from skewed populations are skewed too, as the waiting-time example showed."}]},
@@ -938,8 +1000,8 @@ ICA.addUnit({
      {t:"6", why:"More data makes estimates more precise, so the SE gets smaller, not bigger."},
      {t:"3", why:"The SE does depend on n: more data, smaller SE."}]},
    {id:"t3u6-q05", lesson:"t3u6-l1", level:3, q:"A website asks visitors to rate a product, and 8,000 do. Ana says: “With 8,000 responses, the central limit theorem guarantees the average rating is close to what all customers think.” What is wrong?", options:[
-     {t:"The responses are self-selected, so the sampling distribution may be centred on the wrong value; the CLT doesn’t fix bias", ok:true, why:"The CLT describes the spread and shape around the centre. A biased selection moves the centre, and more responses don’t move it back."},
-     {t:"8,000 is too small for the central limit theorem", why:"It is plenty for the CLT. The problem is who chose to respond."},
+     {t:"The responses are self-selected, and the CLT doesn’t fix bias", ok:true, why:"The sampling distribution may be centred on the wrong value. The CLT describes the spread and shape around the centre. A biased selection moves the centre, and more responses don’t move it back."},
+     {t:"8,000 is still too small for the central limit theorem to apply", why:"It is plenty for the CLT. The problem is who chose to respond."},
      {t:"Ratings can’t be averaged", why:"Averaging ratings is common and can be informative. The flaw is the self-selected sample."},
      {t:"Nothing: large samples are always representative", why:"Size doesn’t make a sample representative; the selection method does."}]},
    {id:"t3u6-q06", lesson:"t3u6-l1", level:1, q:"In the formula σ ÷ √n for the standard error of a mean, what is n?", options:[
@@ -953,8 +1015,8 @@ ICA.addUnit({
      {t:"Proportions never follow the central limit theorem", why:"They do, because a proportion is a mean of 0s and 1s, once np and n(1 − p) are at least about 10."},
      {t:"The population is too large", why:"Population size isn’t the issue; the expected number of “yes” answers is."}]},
    {id:"t3u6-q08", lesson:"t3u6-l1", level:3, q:"Priya wants the average reading score of pupils in a region. She tests all 28 pupils in one class and uses σ ÷ √28 for the standard error. What is the main problem?", options:[
-     {t:"Pupils in one class aren’t independent random draws from the region, so the formula understates the real uncertainty (and the class may not represent the region)", ok:true, why:"Clustered observations share a teacher and school; independence and representativeness both fail."},
-     {t:"28 is under 30, so no calculation is possible", why:"30 is only a rule of thumb, and small samples can be analysed. The issue is clustering."},
+     {t:"One class isn’t a set of independent random draws from the region", ok:true, why:"So the formula understates the real uncertainty, and the class may not represent the region. Clustered observations share a teacher and school; independence and representativeness both fail."},
+     {t:"28 is under 30, so no standard error calculation is possible at all", why:"30 is only a rule of thumb, and small samples can be analysed. The issue is clustering."},
      {t:"She should use the median instead", why:"Changing the summary doesn’t fix a non-random, clustered sample."},
      {t:"Nothing: any 28 pupils form a random sample", why:"A whole class chosen as a unit isn’t a random sample of pupils."}]},
    {id:"t3u6-q09", lesson:"t3u6-l1", level:1, q:"According to the central limit theorem, what becomes approximately normal as samples get larger?", options:[
@@ -964,27 +1026,27 @@ ICA.addUnit({
      {t:"Every statistic, including the maximum", why:"Not every statistic: the theorem covers means, sums and proportions."}]},
    /* Lesson 2 */
    {id:"t3u6-q10", lesson:"t3u6-l2", level:1, q:"What is the difference between a standard deviation and a standard error of the mean?", options:[
-     {t:"The SD describes how individual values vary; the SE describes how much the sample mean would vary between samples", ok:true, why:"SE = SD ÷ √n: a measure of the estimate’s precision."},
+     {t:"The SD describes individuals; the SE describes the sample mean", ok:true, why:"The SE is how much the sample mean would vary between samples. SE = SD ÷ √n: a measure of the estimate’s precision."},
      {t:"They are two names for the same thing", why:"They measure different things and differ by a factor of √n."},
      {t:"The SE is always larger than the SD", why:"For n > 1 the SE is smaller."},
-     {t:"The SD is used for proportions, the SE for means", why:"Both ideas apply to means and proportions."}]},
+     {t:"The SD is used for proportions, while the SE is used only for means", why:"Both ideas apply to means and proportions."}]},
    {id:"t3u6-q11", lesson:"t3u6-l2", level:2, q:"A random sample of 16 bus journeys has a mean of 50 minutes and an SD of 8 minutes. With t* = 2.131 (15 df), what is the 95% confidence interval for the mean?", options:[
      {t:"45.7 to 54.3 minutes", ok:true, why:"SE = 8 ÷ √16 = 2; margin = 2.131 × 2 = 4.26; 50 ± 4.26."},
      {t:"46.1 to 53.9 minutes", why:"That uses 1.96 instead of t* (50 ± 3.92). With 15 df the multiplier is 2.131."},
      {t:"33.0 to 67.0 minutes", why:"That uses the SD instead of the SE (50 ± 2.131 × 8)."},
      {t:"48.0 to 52.0 minutes", why:"That is ± one SE only. Multiply the SE by t*."}]},
    {id:"t3u6-q12", lesson:"t3u6-l2", level:3, q:"Ana’s chart shows two group averages with short error bars, and the caption says “bars show ± 1 SE”. A reader concludes that individuals in each group barely vary. What should Ana tell them?", options:[
-     {t:"SE bars show the precision of each average, not the spread of individuals; the SD is about √n times larger", ok:true, why:"SE bars shrink as n grows, even though individuals vary as much as ever."},
+     {t:"SE bars show how precise each average is, not spread", ok:true, why:"They don’t show the spread of individuals; the SD is about √n times larger. SE bars shrink as n grows, even though individuals vary as much as ever."},
      {t:"The reader is right: short bars mean similar individuals", why:"That would be true for SD bars, not SE bars."},
      {t:"SE bars are 95% confidence intervals", why:"± 1 SE gives only about 68% coverage for a normal sampling distribution; a 95% interval is about ± 2 SE."},
      {t:"Error bars always show the range of the data", why:"Error bars can show the SD, SE or a CI; the caption must say which."}]},
    {id:"t3u6-q13", lesson:"t3u6-l2", level:2, q:"Why do we use a t multiplier instead of 1.96 for a mean from a small sample?", options:[
-     {t:"Because the SD is estimated from the sample, which adds uncertainty that the heavier-tailed t distribution allows for", ok:true, why:"With s in place of σ, a 1.96 interval would capture the truth less than 95% of the time."},
+     {t:"Because the SD is estimated from the sample", ok:true, why:"This adds uncertainty that the heavier-tailed t distribution allows for. With s in place of σ, a 1.96 interval would capture the truth less than 95% of the time."},
      {t:"Because small samples are always biased", why:"Small samples are imprecise, not necessarily biased. t deals with the estimated SD."},
      {t:"Because the population must be skewed", why:"t is used even for normal populations when σ is unknown."},
-     {t:"Because t makes intervals narrower", why:"t* is larger than 1.96, so t intervals are wider."}]},
+     {t:"Because t makes intervals narrower and so more precise", why:"t* is larger than 1.96, so t intervals are wider."}]},
    {id:"t3u6-q14", lesson:"t3u6-l2", level:3, q:"A council survey reports: mean commute 31 minutes (95% CI 28 to 34). A councillor says: “So 95% of residents commute between 28 and 34 minutes.” What is the best reply?", options:[
-     {t:"The interval is about the average commute, not individual residents, whose commutes vary far more", ok:true, why:"A CI for a mean gives plausible values for the population mean only."},
+     {t:"The interval is about the average commute, not individual residents", ok:true, why:"Individual commutes vary far more. A CI for a mean gives plausible values for the population mean only."},
      {t:"Correct: that is what a 95% interval means", why:"That would describe a range for individuals, which a CI for the mean is not."},
      {t:"Nearly: it should be 95% of the people surveyed", why:"Not even for the sample: the interval is about the mean, not people."},
      {t:"It means there’s a 95% chance the next resident asked commutes 28 to 34 minutes", why:"Individual commutes are far more spread out; that would need a prediction interval."}]},
@@ -1010,15 +1072,15 @@ ICA.addUnit({
      {t:"Numbers divides by n instead of √n", why:"It divides by √n correctly; the difference is 1.96 versus 2.201."}]},
    /* Lesson 3 */
    {id:"t3u6-q19", lesson:"t3u6-l3", level:1, q:"In a test of whether a new fertiliser changes crop yield, what is the alternative hypothesis (two-sided)?", options:[
-     {t:"The mean yield with the fertiliser differs from the mean yield without it", ok:true, why:"The alternative is what you conclude if H₀ (no difference) is rejected."},
-     {t:"The fertiliser makes no difference to mean yield", why:"That is the null hypothesis."},
+     {t:"The mean yield differs with and without the fertiliser", ok:true, why:"The alternative is what you conclude if H₀ (no difference) is rejected."},
+     {t:"The fertiliser makes no difference to the mean yield of the crop", why:"That is the null hypothesis."},
      {t:"The p-value is below 0.05", why:"That is a decision rule, not a hypothesis about the population."},
-     {t:"The sample means are different", why:"Sample means almost always differ a little. Hypotheses are about population means."}]},
+     {t:"The two sample means in the experiment are different", why:"Sample means almost always differ a little. Hypotheses are about population means."}]},
    {id:"t3u6-q20", lesson:"t3u6-l3", level:2, q:"In a permutation test, why do we shuffle the group labels?", options:[
-     {t:"To see how big the difference between groups tends to be when the labels don’t matter, as the null hypothesis claims", ok:true, why:"Shuffling builds the null distribution of the test statistic."},
+     {t:"To see what differences arise when labels don’t matter", ok:true, why:"The null hypothesis claims the labels don’t matter. Shuffling builds the null distribution of the test statistic."},
      {t:"To make the groups more equal in size", why:"The group sizes stay the same in each shuffle."},
      {t:"To remove outliers", why:"Shuffling keeps every value; it only reassigns labels."},
-     {t:"To estimate the effect size more precisely", why:"The observed difference is the estimate; shuffling shows what chance alone produces."}]},
+     {t:"To estimate the size of the effect more precisely than a t-test", why:"The observed difference is the estimate; shuffling shows what chance alone produces."}]},
    {id:"t3u6-q21", lesson:"t3u6-l3", level:3, q:"Dmitri times the same 15 runners over 5 km twice, once in each of two shoe models, in random order. Which test fits?", options:[
      {t:"A paired t-test on each runner’s difference in time", ok:true, why:"Each runner is measured twice, so the differences remove runner-to-runner variation."},
      {t:"A Welch two-sample t-test", why:"That treats the times as two independent groups, ignoring that the same runners appear in both."},
@@ -1040,18 +1102,18 @@ ICA.addUnit({
      {t:"0.5", why:"That divides the SE by the difference, the wrong way round."},
      {t:"1.5", why:"That subtracts the SE from the difference."}]},
    {id:"t3u6-q25", lesson:"t3u6-l3", level:3, q:"Lucía planned a two-sided test of whether loaves average 500 g. She got p = 0.07, so she switched to a one-sided test (“lighter than 500 g”) and reported p = 0.035. What is the problem?", options:[
-     {t:"Choosing the direction after seeing the data doubles the true false-alarm rate, so 0.035 overstates the evidence", ok:true, why:"One-sided tests must be chosen before the data; switching afterwards makes a 5% test effectively a 10% test."},
+     {t:"She chose the direction after seeing the data", ok:true, why:"That doubles the true false-alarm rate, so 0.035 overstates the evidence. One-sided tests must be chosen before the data; switching afterwards makes a 5% test effectively a 10% test."},
      {t:"One-sided p-values are always larger", why:"When the data go the predicted way, the one-sided p is half the two-sided p."},
      {t:"Nothing, as long as she reports both", why:"Reporting both is better than hiding one, but the one-sided test still wasn’t the planned analysis."},
      {t:"One-sided tests can only be used with large samples", why:"Sample size isn’t the issue; the timing of the choice is."}]},
    {id:"t3u6-q26", lesson:"t3u6-l3", level:1, q:"What is a test statistic?", options:[
-     {t:"A number calculated from the data that measures how far they are from what the null hypothesis predicts", ok:true, why:"Examples: a difference in means, t, or χ²."},
+     {t:"A number measuring how far the data are from H₀", ok:true, why:"It is calculated from the data and compared with what the null hypothesis predicts. Examples: a difference in means, t, or χ²."},
      {t:"The probability that the null hypothesis is true", why:"No test statistic gives that; and the p-value isn’t that either."},
      {t:"The significance level chosen before the study", why:"That is α, a threshold fixed in advance, not something calculated from the data."},
-     {t:"The number of people in the study", why:"Sample size affects the statistic but isn’t the statistic."}]},
+     {t:"The number of people or observations in the study", why:"Sample size affects the statistic but isn’t the statistic."}]},
    {id:"t3u6-q27", lesson:"t3u6-l3", level:3, q:"Oluwaseun compares household incomes in two small samples (10 households each). One household earns ten times the others. What is the most sensible caution?", options:[
-     {t:"With small samples and an extreme value, a t-test of means can be dominated by one household; consider a permutation test, a log scale or comparing medians, and report what you did", ok:true, why:"t-tests compare means and rely on a roughly normal sampling distribution, which one huge value can break in small samples."},
-     {t:"Delete the extreme household and run the t-test", why:"Deleting real data to get a cleaner result is not justified without a reason, and should always be reported."},
+     {t:"One household can dominate a t-test of means in small samples", ok:true, why:"Consider a permutation test, a log scale or comparing medians, and report what you did. t-tests compare means and rely on a roughly normal sampling distribution, which one huge value can break in small samples."},
+     {t:"Delete the extreme household and then run the t-test as planned", why:"Deleting real data to get a cleaner result is not justified without a reason, and should always be reported."},
      {t:"Use a paired t-test instead", why:"The households aren’t paired, so a paired test would be wrong."},
      {t:"Nothing: t-tests are unaffected by outliers", why:"Means and SDs are strongly affected by extreme values, especially in small samples."}]},
    /* Lesson 4 */
@@ -1066,7 +1128,7 @@ ICA.addUnit({
      {t:"11", why:"Cells minus one applies to a goodness-of-fit test with 12 categories, not to a two-way table."},
      {t:"7", why:"That adds the rows and columns (3 + 4). The df multiply: (r − 1)(c − 1)."}]},
    {id:"t3u6-q30", lesson:"t3u6-l4", level:3, q:"Hana runs CHISQ.TEST on a table of row percentages (each row adds up to 100) instead of counts. What is wrong?", options:[
-     {t:"Percentages hide the sample size; χ² must be calculated from counts, so the p-value is meaningless", ok:true, why:"The same percentages from 30 or 3,000 people give very different evidence; only counts carry that."},
+     {t:"χ² must be calculated from counts, not percentages", ok:true, why:"Percentages hide the sample size, so the p-value is meaningless. The same percentages from 30 or 3,000 people give very different evidence; only counts carry that."},
      {t:"Nothing: percentages and counts give the same p-value", why:"They don’t: χ² grows with the number of observations, which percentages remove."},
      {t:"She should use column percentages instead", why:"Any kind of percentage has the same problem."},
      {t:"CHISQ.TEST only works on 2 × 2 tables", why:"It works on tables of any size."}]},
@@ -1076,8 +1138,8 @@ ICA.addUnit({
      {t:"60", why:"That is 50% of 120; but only 25% of everyone (50 of 200) prefers the evening session."},
      {t:"50", why:"That is everyone who prefers the evening session, students or not."}]},
    {id:"t3u6-q32", lesson:"t3u6-l4", level:3, q:"A regression of monthly rent on flat size, for 80 flats in one city, gives a slope of 12 currency units per square metre. Which reading is correct?", options:[
-     {t:"In these data, each extra square metre goes with a predicted rent about 12 units a month higher, on average", ok:true, why:"The slope is the average change in predicted y per unit of x, in context and with units."},
-     {t:"Every flat’s rent rises by exactly 12 for each square metre", why:"The slope is an average trend; individual flats scatter around the line."},
+     {t:"Each extra square metre goes with about 12 units more rent, on average", ok:true, why:"In these data, predicted monthly rent is about 12 units higher per square metre. The slope is the average change in predicted y per unit of x, in context and with units."},
+     {t:"Every flat’s rent is exactly 12 units higher for each extra square metre", why:"The slope is an average trend; individual flats scatter around the line."},
      {t:"Adding a square metre to a flat will raise its rent by 12", why:"That is a causal claim; the data describe flats as they are, not the effect of extending one."},
      {t:"Rent is 12 times the flat’s size", why:"That ignores the intercept: predicted rent = a + 12 × size."}]},
    {id:"t3u6-q33", lesson:"t3u6-l4", level:1, q:"What is a residual in regression?", options:[
@@ -1096,19 +1158,19 @@ ICA.addUnit({
      {t:"R² must have been low", why:"R² could be very high over ages 2 to 10; a good fit inside the range doesn’t justify extrapolation."},
      {t:"She should have used the intercept", why:"The intercept is part of the same line and doesn’t solve the problem."}]},
    {id:"t3u6-q36", lesson:"t3u6-l4", level:3, q:"An observational study of 2,000 adults finds that more hours of sleep go with higher reported wellbeing: slope 0.4 points per hour, p = 0.001. A headline says “Sleeping more makes you happier”. What is the best response?", options:[
-     {t:"The slope is clearly not zero, but the design can’t show cause: health, stress or work might affect both sleep and wellbeing", ok:true, why:"A small p-value says the association is unlikely to be chance; it says nothing about which way, or whether a confounder explains it."},
+     {t:"The slope is clearly not zero, but the design can’t show cause", ok:true, why:"Health, stress or work might affect both sleep and wellbeing. A small p-value says the association is unlikely to be chance; it says nothing about which way, or whether a confounder explains it."},
      {t:"The headline is justified because p is so small", why:"p measures surprise under H₀, not cause."},
-     {t:"The result is meaningless because R² wasn’t given", why:"R² would help describe the fit, but the main problem is the causal leap."},
+     {t:"The result is meaningless because R² wasn’t given in the report", why:"R² would help describe the fit, but the main problem is the causal leap."},
      {t:"The slope must be wrong because 0.4 is small", why:"A small slope can be real; size and cause are separate questions."}]},
    /* Lesson 5 */
    {id:"t3u6-q37", lesson:"t3u6-l5", level:1, q:"What is a type I error?", options:[
-     {t:"Rejecting a null hypothesis that is actually true: a false alarm", ok:true, why:"Its probability, when H₀ is true, is α."},
+     {t:"Rejecting a true null hypothesis", ok:true, why:"It is a false alarm. Its probability, when H₀ is true, is α."},
      {t:"Failing to reject a false null hypothesis", why:"That is a type II error, a miss."},
      {t:"A mistake in typing the data", why:"Data-entry errors are a real problem, but not what the term means."},
      {t:"Using the wrong test", why:"That is a different kind of mistake."}]},
    {id:"t3u6-q38", lesson:"t3u6-l5", level:1, q:"What is statistical power?", options:[
-     {t:"The probability that a study detects an effect of a given size if that effect really exists", ok:true, why:"Power = 1 − β, the chance of avoiding a type II error."},
-     {t:"The probability that the null hypothesis is true", why:"No test gives that directly."},
+     {t:"The chance of detecting a real effect of a given size", ok:true, why:"Power = 1 − β, the chance of avoiding a type II error."},
+     {t:"The probability that the null hypothesis is true in the study", why:"No test gives that directly."},
      {t:"How large the effect is", why:"That is the effect size, which is one input to power."},
      {t:"The p-value of a significant result", why:"Power is a property of the study design, not of one result."}]},
    {id:"t3u6-q39", lesson:"t3u6-l5", level:2, q:"A study makes 8 pre-planned comparisons and wants an overall α of 0.05. What is the Bonferroni threshold for each test?", options:[
@@ -1117,9 +1179,9 @@ ICA.addUnit({
      {t:"0.05", why:"That is the uncorrected threshold."},
      {t:"0.0125", why:"That divides by 4, not by the 8 comparisons."}]},
    {id:"t3u6-q40", lesson:"t3u6-l5", level:3, q:"A pilot study of 12 people per group finds that a new physiotherapy routine is “not significantly better” (p = 0.30). The team concludes it doesn’t work. What is the best response?", options:[
-     {t:"With so few people, power to detect a moderate effect is low; the result is inconclusive, so look at the confidence interval", ok:true, why:"Not significant means not shown, not shown false; a small study can easily miss a real effect."},
-     {t:"Correct: p > 0.05 shows there is no effect", why:"That confuses absence of evidence with evidence of absence."},
-     {t:"They should switch to a one-sided test", why:"Switching after seeing the data would be a misuse, and wouldn’t make the study more informative."},
+     {t:"The result is inconclusive, since power is low", ok:true, why:"With so few people, power to detect a moderate effect is low, so look at the confidence interval. Not significant means not shown, not shown false; a small study can easily miss a real effect."},
+     {t:"Correct: p > 0.05 shows that there is no effect at all", why:"That confuses absence of evidence with evidence of absence."},
+     {t:"They should switch to a one-sided test to get a smaller p", why:"Switching after seeing the data would be a misuse, and wouldn’t make the study more informative."},
      {t:"They made a type I error", why:"A type I error is a false alarm. If the routine does help, the risk here is a type II error (a miss)."}]},
    {id:"t3u6-q41", lesson:"t3u6-l5", level:2, q:"Five independent tests are run at α = 0.05, and all five null hypotheses are true. What is the chance of at least one false alarm?", options:[
      {t:"About 22.6%", ok:true, why:"1 − 0.95⁵ = 1 − 0.774 = 0.226."},
@@ -1127,10 +1189,10 @@ ICA.addUnit({
      {t:"5%", why:"That is the rate for one test; with five, the chances accumulate."},
      {t:"77.4%", why:"That is the chance of no false alarms (0.95⁵)."}]},
    {id:"t3u6-q42", lesson:"t3u6-l5", level:3, q:"A marketing team tests a new email design separately in 12 customer groups (by age, region and device). One group shows p = 0.03; the other 11 don’t. They plan to target that group. What should they consider first?", options:[
-     {t:"With 12 tests, one p near 0.03 is quite likely by chance; correct for multiple testing or confirm in a new test", ok:true, why:"With 12 true nulls, the chance of at least one p < 0.05 is about 46%. After Bonferroni (0.05 ÷ 12 ≈ 0.004), 0.03 isn’t significant."},
+     {t:"One p near 0.03 is quite likely by chance across 12 tests", ok:true, why:"Correct for multiple testing or confirm it in a new test. With 12 true nulls, the chance of at least one p < 0.05 is about 46%. After Bonferroni (0.05 ÷ 12 ≈ 0.004), 0.03 isn’t significant."},
      {t:"The group with p = 0.03 is proven to respond", why:"One hit among 12 tests is weak evidence on its own."},
      {t:"The other 11 groups definitely don’t respond", why:"Non-significant results don’t show absence of an effect, especially in small subgroups."},
-     {t:"They should combine the p-values by averaging", why:"Averaging p-values isn’t a valid way to combine tests."}]},
+     {t:"They should combine the 12 p-values by averaging them together", why:"Averaging p-values isn’t a valid way to combine tests."}]},
    {id:"t3u6-q43", lesson:"t3u6-l5", level:2, q:"Five pre-planned tests give p = 0.003, 0.008, 0.02, 0.04 and 0.30. Using the Benjamini–Hochberg method with a false discovery rate of 0.05, how many results are declared significant?", options:[
      {t:"4", ok:true, why:"Limits are k × 0.01: 0.01, 0.02, 0.03, 0.04, 0.05. The largest rank with p ≤ its limit is 4 (0.04 ≤ 0.04), so ranks 1 to 4 count."},
      {t:"2", why:"2 is the Bonferroni (and Holm) count. BH compares each sorted p with a rising limit."},
@@ -1142,8 +1204,8 @@ ICA.addUnit({
      {t:"Mostly close to 0.5", why:"There is no peak at 0.5; the distribution is flat."},
      {t:"Mostly below 0.05", why:"That pattern suggests a real effect (or p-hacking), not a true null."}]},
    {id:"t3u6-q45", lesson:"t3u6-l5", level:2, q:"A team lowers its significance level from 0.05 to 0.01 but keeps the same sample size. What happens?", options:[
-     {t:"False alarms become rarer, but power falls, so real effects are missed more often", ok:true, why:"For the same data, a stricter threshold trades type I errors for type II errors."},
-     {t:"Both kinds of error become rarer", why:"Only more (or better) data can reduce both at once."},
+     {t:"False alarms become rarer, but power falls", ok:true, why:"Real effects are missed more often. For the same data, a stricter threshold trades type I errors for type II errors."},
+     {t:"Both kinds of error become rarer, because the test is stricter", why:"Only more (or better) data can reduce both at once."},
      {t:"Power goes up", why:"A stricter threshold is harder to cross, so power goes down."},
      {t:"Nothing changes except the p-values", why:"The p-values stay the same; the threshold for calling them significant changes."}]}
   ]

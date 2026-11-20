@@ -132,7 +132,7 @@ ICA.addUnit({
       {t:"“Tick all that apply” answers that add up to 180%", b:1, why:"A pie needs parts of one whole that add to 100%. These answers overlap, so they aren’t slices of anything."}
     ]},
     {id:"t3u4-l1-x5", type:"mcq", q:"Kenji’s histogram of 200 exam scores, made with his app’s default bins, shows one smooth hump. Before writing “the scores have a single peak”, what should he do?", options:[
-      {t:"Redraw it with several narrower and wider bin widths and see whether the shape holds", ok:true, why:"Wilke’s rule: always explore multiple bin widths. Wide default bins can merge two groups into one hump."},
+      {t:"Redraw it with several bin widths and see if the shape holds", ok:true, why:"Try both narrower and wider bins. Wilke’s rule: always explore multiple bin widths. Wide default bins can merge two groups into one hump."},
       {t:"Sort the bars from tallest to shortest", why:"A histogram’s bars follow the number line. Sorting them destroys the distribution."},
       {t:"Switch to a pie chart of the score bands", why:"A pie hides the order of the bands, which is the whole point of a distribution."},
       {t:"Nothing: the app’s default bin width is calculated, so it’s correct", why:"Defaults come from a general rule of thumb, not from knowing your data. They can hide features."}
@@ -262,7 +262,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t3u4-l2-x1", type:"mcq", q:"A newspaper’s bar chart of median income in five districts starts its value axis at 50,000. One district’s bar looks a fifth the height of another’s, although their incomes are 55,000 and 75,000. Why is the chart misleading?", options:[
-      {t:"The bars show the amount above 50,000 (5,000 vs 25,000), so their lengths aren’t proportional to the incomes", ok:true, why:"That breaks proportional ink. The real ratio is 55,000 ÷ 75,000 ≈ 0.73, not 0.2."},
+      {t:"The bars show only the amount above 50,000", ok:true, why:"That is 5,000 vs 25,000, so their lengths aren’t proportional to the incomes. That breaks proportional ink. The real ratio is 55,000 ÷ 75,000 ≈ 0.73, not 0.2."},
       {t:"Median income should never be shown in a bar chart", why:"Bars suit amounts like median income. The problem is where the bars start."},
       {t:"The bars should be sorted alphabetically", why:"Sorting by value is better, and sorting has nothing to do with the false impression here."},
       {t:"Nothing: the ends of the bars are in the right places", why:"The ends are right, but readers judge length. Length here says “one fifth”, which is false."}
@@ -286,10 +286,10 @@ ICA.addUnit({
       {v:33.3, tol:0.1, why:"That divides the wrong way round (1,000 ÷ 3,000). Divide the later value by the starting value."}
     ]},
     {id:"t3u4-l2-x5", type:"mcq", q:"Dmitri’s chart shows website visits on the left axis and sales in euros on the right. The two lines cross in March, and his slide says “Visits overtook sales in March”. What’s wrong?", options:[
-      {t:"The crossing point depends on the two axis ranges he chose; with other ranges the lines would cross elsewhere or not at all", ok:true, why:"Visits and euros have different units, so “overtook” has no meaning. Index both to 100 or use two aligned charts."},
-      {t:"Nothing, as long as both axes start at zero", why:"Even with both axes from zero, the right axis’s maximum is a free choice that moves the line up or down."},
+      {t:"The crossing point depends on the axis ranges he chose", ok:true, why:"With other ranges the lines would cross elsewhere or not at all. Visits and euros have different units, so “overtook” has no meaning. Index both to 100 or use two aligned charts."},
+      {t:"Nothing, as long as both of the axes start at zero", why:"Even with both axes from zero, the right axis’s maximum is a free choice that moves the line up or down."},
       {t:"He should have used a pie chart", why:"A pie shows parts of a whole, not two series over time."},
-      {t:"Lines can only cross on a log scale", why:"Lines can cross on any scale. The problem is that this crossing is an artefact of the axis settings."}
+      {t:"Lines can only cross like this when a log scale is used", why:"Lines can cross on any scale. The problem is that this crossing is an artefact of the axis settings."}
     ]},
     {id:"t3u4-l2-x6", type:"match", q:"Match each chart problem with its fix.", pairs:[
       ["Bars of on-time rates between 81% and 93% all look the same","A dot plot with a labelled axis from 80","Dots encode position only, so the axis can start near the data."],
@@ -299,7 +299,7 @@ ICA.addUnit({
       ["A share-price line with the area below shaded from 110","Remove the fill, or show the change from the high point","Shading claims the area is the value; without a zero baseline it isn’t."]
     ]},
     {id:"t3u4-l2-x7", type:"mcq", q:"Hana counts complaints per month at her community centre: some months have 0. She wants a log scale because a few months had over 200. What should she know first?", options:[
-      {t:"Zero can’t be placed on a log scale, so those months would disappear or cause an error", ok:true, why:"Zero lies infinitely far down a log axis. She could keep a linear axis, try a square-root scale (which allows 0), or show zero months separately and say so."},
+      {t:"Zero can’t be placed on a log scale", ok:true, why:"Those months would disappear or cause an error: zero lies infinitely far down a log axis. She could keep a linear axis, try a square-root scale (which allows 0), or show zero months separately and say so."},
       {t:"Log scales only work for money", why:"They work for any positive quantity, especially when values span orders of magnitude."},
       {t:"She must start the log axis at zero", why:"A log axis can’t include zero at all; it typically starts at a positive value like 1."},
       {t:"Nothing: apps convert zeros automatically", why:"Excel’s help says a log scale can’t be used for zero or negative values. Apps may drop such points or warn you."}
@@ -426,8 +426,8 @@ ICA.addUnit({
       {t:"Three bird species in a scatterplot", b:0, why:"Species are unordered categories."}
     ]},
     {id:"t3u4-l3-x2", type:"mcq", q:"Amara uses the Okabe–Ito palette for a line chart on a white background. One series is drawn as a thin yellow `#F0E442` line. A colleague says it’s hard to see. Why, if the palette is colour-blind safe?", options:[
-      {t:"Colour-blind safety is about telling colours apart; the yellow’s contrast with white is only about 1.3:1, far below the 3:1 WCAG asks for graphics", ok:true, why:"Two separate tests. Use a darker colour for thin lines on white, or thicken the line and add a darker outline or direct label."},
-      {t:"The Okabe–Ito palette isn’t really colour-blind safe", why:"It was designed for exactly that and stays distinguishable for common types. The problem is contrast with the background."},
+      {t:"Telling colours apart is a different test from contrast", ok:true, why:"Two separate tests: the yellow’s contrast with white is only about 1.3:1, far below the 3:1 WCAG asks for graphics. Use a darker colour for thin lines on white, or thicken the line and add a darker outline or direct label."},
+      {t:"The Okabe–Ito palette isn’t really colour-blind safe after all", why:"It was designed for exactly that and stays distinguishable for common types. The problem is contrast with the background."},
       {t:"Yellow lines are banned by WCAG", why:"No colour is banned. WCAG sets contrast ratios, and this yellow on white doesn’t meet 3:1."},
       {t:"Thin lines always pass contrast checks", why:"The opposite: thin lines look fainter than their colour suggests, so they need more contrast, not less."}
     ]},
@@ -437,8 +437,8 @@ ICA.addUnit({
       {v:160, tol:0, why:"That applies the men’s 8% to everyone. Women’s rate is much lower, 0.5%."}
     ]},
     {id:"t3u4-l3-x4", type:"mcq", q:"Tomás’s map of change in library visits uses red for falls, green for rises and white for no change. What’s the best improvement?", options:[
-      {t:"Switch to a colour-blind-friendly diverging pair, such as orange to blue, keep the light midpoint at 0%, and check it in a simulator", ok:true, why:"Red–green is indistinguishable for the most common colour-vision deficiencies. A safer pair with balanced darkening keeps the diverging meaning."},
-      {t:"Use a rainbow scale so every value gets its own colour", why:"Rainbow scales have uneven lightness and no clear midpoint, and they still contain red and green."},
+      {t:"Use a colour-blind-friendly diverging pair, such as orange to blue", ok:true, why:"Red–green is indistinguishable for the most common colour-vision deficiencies. Keep the light midpoint at 0% and check it in a simulator. A safer pair with balanced darkening keeps the diverging meaning."},
+      {t:"Use a rainbow scale so that every value gets its own distinct colour", why:"Rainbow scales have uneven lightness and no clear midpoint, and they still contain red and green."},
       {t:"Make the reds and greens brighter", why:"Brightness doesn’t solve red–green confusion; the hues still look alike to many readers."},
       {t:"Switch to a sequential scale from light to dark green", why:"That loses the two directions. Falls and rises would look like low and high on one scale."}
     ]},
@@ -533,7 +533,7 @@ ICA.addUnit({
     ]},
     {h:"Uncertainty: the missing ingredient", body:[
       "Wilke opens his uncertainty chapter with a warning: when we see a point drawn in one place, we read it as exact. Yet nearly every number from a sample, survey, model or measurement has uncertainty.",
-      "A survey of 1,000 people estimates something about millions. The [[standard-error|standard error]] says how much such an estimate typically varies from one sample to another, and a [[confidence-interval|confidence interval]] gives a range of values compatible with the data (Track 4, Unit 3). For polls, the [[margin-of-error|margin of error]] is usually half the width of a 95% interval (Track 4, Unit 8).",
+      "A survey of 1,000 people estimates something about millions. The [[standard-error|standard error]] says how much such an estimate typically varies from one sample to another, and a [[confidence-interval|confidence interval]] gives a range of values compatible with the data. This is a first look: Unit 7 of this track explains both properly, and Track 4, Unit 3 shows how to read them in papers. For polls, the [[margin-of-error|margin of error]] is usually half the width of a 95% interval (Track 4, Unit 8).",
       "Leaving uncertainty out can mislead as surely as a truncated axis. Two poll results of 48% and 51% look like a clear lead, until you learn each has a margin of error of about 3 [[percentage-point|percentage points]]. Unit 1 of this track showed how to read such numbers in the news ({{estimates-uncertainty-news}}); here the question is how to draw them."
     ]},
     {h:"Error bars: always say what they show", body:[
@@ -594,7 +594,7 @@ ICA.addUnit({
       {v:26, tol:0.2, why:"That’s mean − 2 SD, which describes individuals, not the precision of the mean."}
     ]},
     {id:"t3u4-l4-x5", type:"mcq", q:"Kenji compares two independent groups. Their 95% confidence intervals overlap slightly. He writes “no difference between the groups”. What’s the best response?", options:[
-      {t:"Overlap doesn’t settle it; calculate a confidence interval for the difference and see whether it includes 0", ok:true, why:"As the worked example shows, intervals can overlap while the interval for the difference excludes 0. Wilke advises against overlap rules."},
+      {t:"Overlap doesn’t settle it; check the difference’s interval", ok:true, why:"Calculate a confidence interval for the difference and see whether it includes 0. As the worked example shows, intervals can overlap while the interval for the difference excludes 0. Wilke advises against overlap rules."},
       {t:"He’s right: overlapping intervals always mean no difference", why:"Not always. Two intervals each of ± 1.96 SE can overlap even when the difference is statistically clear."},
       {t:"He should switch to SD bars, which overlap less", why:"SD bars are longer, not shorter, and they answer a different question."},
       {t:"He should remove the error bars so the difference is clearer", why:"Hiding uncertainty makes the chart less honest, not clearer."}
@@ -607,8 +607,8 @@ ICA.addUnit({
       ["A dashboard describing how much individual customers spend","Bars or a boxplot of the spread of individuals","The question is about individuals, not the precision of a mean."]
     ]},
     {id:"t3u4-l4-x7", type:"mcq", q:"Oluwaseun’s bar chart of average test scores by class has error bars, but the caption says nothing about them. What should the caption add?", options:[
-      {t:"What the bars show (SD, SE or a confidence interval, and which level) and how many students are in each class", ok:true, why:"Wilke’s rule: always say what error bars represent. The sample size helps readers judge SE-based bars."},
-      {t:"Nothing: all error bars mean the same thing", why:"The same data can give bars of very different lengths depending on whether they show SD, SE or an interval."},
+      {t:"What the bars show, and how many students are in each class", ok:true, why:"Say whether they show SD, SE or a confidence interval, and which level. Wilke’s rule: always say what error bars represent. The sample size helps readers judge SE-based bars."},
+      {t:"Nothing: all error bars mean the same thing, so no note is needed", why:"The same data can give bars of very different lengths depending on whether they show SD, SE or an interval."},
       {t:"The minimum and maximum scores", why:"Error bars rarely show minimum and maximum; if they did, the caption would still need to say so."},
       {t:"An apology for the uncertainty", why:"Uncertainty is normal. Explaining it is enough."}
     ]}
@@ -625,7 +625,7 @@ ICA.addUnit({
    ], proof:"An audited chart with fixes, a chart with custom error bars and a caption saying what they show, and one estimate expressed in words, as a frequency picture and as a caption."},
    read:[
      {book:"wilke", where:"Chapter 17, “The principle of proportional ink”, Section 17.3 “Direct area visualizations”, and Chapter 26, “Don’t go 3D”"},
-     {book:"wilke", where:"Chapter 16, “Visualizing uncertainty” (Sections 16.1 “Framing probabilities as frequencies”, 16.2 “Visualizing the uncertainty of point estimates” and 16.3 “Visualizing the uncertainty of curve fits”)", note:"The chapter’s comparison of frequentist and Bayesian intervals goes beyond this lesson; Unit 6 covers confidence intervals properly."},
+     {book:"wilke", where:"Chapter 16, “Visualizing uncertainty” (Sections 16.1 “Framing probabilities as frequencies”, 16.2 “Visualizing the uncertainty of point estimates” and 16.3 “Visualizing the uncertainty of curve fits”)", note:"The chapter’s comparison of frequentist and Bayesian intervals goes beyond this lesson; Unit 7 covers confidence intervals properly."},
      {book:"wilke", where:"Chapter 14, “Visualizing trends”, Section 14.1 “Smoothing”, and Chapter 21, Section 21.1 “Small multiples”"}
    ]
   },
@@ -702,7 +702,7 @@ ICA.addUnit({
         ["Datawrapper","Free plan: charts, maps and tables without limits; alt-text field, automatic colour-blind check, optional “Get the data” link","Free charts show “Created with Datawrapper”; PNG is the only export on the free plan"],
         ["Flourish","Free plan: unlimited projects and the full template library; strong on interactive and animated charts","Anything you publish on the free plan is public, with Flourish attribution"],
         ["RAWGraphs","Free and open source; runs in your browser and doesn’t send your data to a server; vector (SVG) output","Fewer reading aids built in; finishing touches may need a drawing app"],
-        ["R (ggplot2) or Python","Free, and reproducible: the chart is rebuilt from code","Takes learning; Units 7–8 teach R"]
+        ["R (ggplot2) or Python","Free, and reproducible: the chart is rebuilt from code","Takes learning; Units 8–9 teach R"]
       ]},
       "Wilke’s chapter on software makes points that outlast any product. Prefer tools that make figures **reproducible**, so you can rebuild them when the data change. Separate exploring (quick, rough charts for yourself) from presenting (polished charts for others). And his summary: the best visualization software is the one that lets you make the figures you need.",
       {warn:"Uploading data to an online tool shares it with that company. Don’t upload personal or confidential data unless you’re allowed to. A spreadsheet on your own device, or a tool like RAWGraphs that works only in the browser, is safer for sensitive data."}
@@ -762,14 +762,14 @@ ICA.addUnit({
       ["Forty charts that must be rebuilt every month when new data arrive","R with ggplot2, or Python","Code rebuilds every chart reproducibly."]
     ]},
     {id:"t3u4-l5-x6", type:"mcq", q:"Hana’s chart shows that towns with more cycle lanes also have fewer car journeys per person. Her draft title is “Cycle lanes cut car use”. What’s the problem?", options:[
-      {t:"The chart shows the two go together, not that one causes the other; a title like “Towns with more cycle lanes have fewer car journeys” is supported", ok:true, why:"A statement title must match what the data show. A causal claim needs evidence beyond a correlation, such as a before-and-after study."},
-      {t:"Titles should never contain a claim", why:"Statement titles are recommended. The claim just has to be one the chart supports."},
+      {t:"It claims cause, but the chart shows only an association", ok:true, why:"A title like “Towns with more cycle lanes have fewer car journeys” is supported. A statement title must match what the data show. A causal claim needs evidence beyond a correlation, such as a before-and-after study."},
+      {t:"Titles should never contain a claim about what the data show", why:"Statement titles are recommended. The claim just has to be one the chart supports."},
       {t:"The title is too short", why:"Short is good. The issue is that it claims cause."},
       {t:"It should start with “This chart shows”", why:"Wilke advises against that opening."}
     ]},
     {id:"t3u4-l5-x7", type:"mcq", q:"Dmitri is putting a small table of exact values under his chart. Which layout follows Wilke’s table rules?", options:[
-      {t:"No vertical lines, numbers right-aligned with the same decimal places, text left-aligned, caption above the table", ok:true, why:"These are Wilke’s rules: fewer lines, aligned numbers, and table captions above (figure captions go below)."},
-      {t:"A grid of lines around every cell, everything centred", why:"Lines between every cell add clutter, and centred numbers are hard to compare digit by digit."},
+      {t:"No vertical lines, numbers right-aligned, caption above", ok:true, why:"Numbers also share the same decimal places, and text is left-aligned. These are Wilke’s rules: fewer lines, aligned numbers, and table captions above (figure captions go below)."},
+      {t:"A grid of lines around every cell, with everything centred", why:"Lines between every cell add clutter, and centred numbers are hard to compare digit by digit."},
       {t:"Numbers left-aligned so they line up with the text", why:"Right-aligned numbers with equal decimals let place values line up."},
       {t:"Caption below the table, as for figures", why:"Tables are read top to bottom like text, so their captions go above."}
     ]}
@@ -796,6 +796,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u4-q02","t3u4-q05","t3u4-q08","t3u4-q10","t3u4-q13","t3u4-q16","t3u4-q19","t3u4-q22","t3u4-q27","t3u4-q30","t3u4-q35","t3u4-q38"],
+  cpBank:[
+   {id:"t3u4-cp01", lesson:"t3u4-l1", level:1, q:"Lena has 300 delivery times from a bike courier service. She wants to show whether most deliveries are quick with a long tail of slow ones. Which chart fits best?", options:[
+     {t:"A pie chart with one slice per delivery time", why:"A pie shows parts of one whole and fails with many slices. It can’t show how values spread along a scale."},
+     {t:"A histogram of the delivery times", ok:true, why:"A histogram answers “how are the values spread out?”: where most sit and how long the tail is. Try a few bin widths."},
+     {t:"A line chart joining the 300 times in the order recorded", why:"A line suggests change over an ordered axis. It wouldn’t show the shape of the spread."},
+     {t:"A bar chart with one bar per delivery", why:"300 bars show amounts per delivery, not the distribution. A histogram groups values into bins to show the shape."}]},
+   {id:"t3u4-cp02", lesson:"t3u4-l1", level:1, q:"A charity wants readers to compare, for each of four regions, the money raised in 2024 with the money raised in 2025. Which chart suits this best?", options:[
+     {t:"Stacked bars, one stack per region", why:"In a stack only the bottom segment sits on the baseline, so the year on top is hard to compare. Stacks suit totals."},
+     {t:"One pie per region, split into 2024 and 2025", why:"Two years aren’t parts of one whole, and angles are judged less accurately than bar ends."},
+     {t:"Grouped bars: two bars side by side for each region", ok:true, why:"Side-by-side bars share one baseline, so the two years can be compared within each region by length."},
+     {t:"A line joining the four regions, one line per year", why:"Regions have no natural order, so a line between them invents a trend that isn’t there."}]},
+   {id:"t3u4-cp03", lesson:"t3u4-l2", level:2, q:"Six schools’ pass rates range from 84% to 91%. Bars from zero look almost identical. A colleague suggests starting the bar axis at 80%. What is the most honest option?", options:[
+     {t:"Start the bars at 80%: it shows the differences clearly", why:"Bar length would then show “distance above 80”, so a school at 88% would look twice as good as one at 84%."},
+     {t:"Keep bars from zero; small differences don’t matter", why:"Sometimes the differences are the story. A different chart can show them honestly."},
+     {t:"Use a 3D bar chart so the differences stand out", why:"3D distorts lengths and doesn’t fix the baseline problem. Flat charts are read more accurately."},
+     {t:"Use a sorted dot plot on an axis labelled from 80%", ok:true, why:"Dots show values by position only, so the axis can start near the data, as long as the start is clearly labelled."}]},
+   {id:"t3u4-cp04", lesson:"t3u4-l2", level:2, q:"On a log axis, the gridlines 1, 10, 100 and 1,000 are equally spaced, 2 cm apart. How far above the point for 50 is the point for 5,000?", options:[
+     {t:"2 cm", why:"One step is ×10. From 50 to 5,000 is ×100, which is two steps."},
+     {t:"4 cm", ok:true, why:"5,000 ÷ 50 = 100 = 10 × 10, so two steps of ×10: 2 × 2 cm = 4 cm. The same ratio is the same distance anywhere."},
+     {t:"6 cm", why:"Three steps would be ×1,000, which would take 50 to 50,000, not 5,000."},
+     {t:"It can’t be found, because 50 and 5,000 aren’t on gridlines", why:"On a log scale, distance depends only on the ratio. Any ×100 covers two gridline steps, wherever it starts."}]},
+   {id:"t3u4-cp05", lesson:"t3u4-l2", level:3, q:"Over a year, a club’s members rose from 250 to 300 and its donations from 8,000 to 12,000. A dual-axis chart shows the lines crossing in May. Which replacement is fairest, and what does it show?", options:[
+     {t:"Both indexed to 100 at the start: members end at 120, donations 150", ok:true, why:"300 ÷ 250 × 100 = 120 and 12,000 ÷ 8,000 × 100 = 150. On one honest axis, donations grew faster (50% against 20%)."},
+     {t:"Keep the dual axis: the May crossing shows donations overtook members", why:"Members and money can’t overtake each other. The crossing point is set by the two axis ranges the designer chose."},
+     {t:"Both indexed to 100: members end at 300, donations at 12,000", why:"Those are the raw values. An index divides by the starting value and multiplies by 100."},
+     {t:"Both on one axis from 0 to 12,000, unindexed", why:"Members (250 to 300) would be a flat line at the bottom. Different units need indexing or separate panels."}]},
+   {id:"t3u4-cp06", lesson:"t3u4-l3", level:2, q:"Tariq is mapping reported bike thefts by neighbourhood. Neighbourhoods differ a lot in population. What should he map, and with which kind of palette?", options:[
+     {t:"Total thefts, with a rainbow palette to show detail", why:"Totals mostly show where people live, and a rainbow’s uneven lightness creates false boundaries."},
+     {t:"Thefts per 1,000 residents, with a diverging palette centred on zero", why:"The rate is right, but a diverging scale needs a meaningful midpoint. Theft rates run from fewer to more, and none is below zero."},
+     {t:"Thefts per 1,000 residents, with a sequential palette", ok:true, why:"A rate makes neighbourhoods comparable, and a light-to-dark scale shows fewer to more."},
+     {t:"Total thefts, with a qualitative palette of different hues", why:"Totals mislead on maps, and different hues suggest unordered groups, not amounts."}]},
+   {id:"t3u4-cp07", lesson:"t3u4-l3", level:3, q:"On a near-black background, Okabe–Ito blue has a contrast of about 3.6:1. Pablo uses it for chart lines and for the small axis labels. Which statement is correct under WCAG 2.2?", options:[
+     {t:"Both pass, because Okabe–Ito is a colour-blind-safe palette", why:"Colour-blind safety and contrast are different tests. Contrast depends on the background, and text has a higher bar."},
+     {t:"The lines pass (3:1 needed), but the small labels fail (4.5:1 needed)", ok:true, why:"Graphical objects need at least 3:1; normal-size text needs 4.5:1. 3.6:1 is enough for lines only."},
+     {t:"Both fail, because everything on a chart needs 4.5:1", why:"The 4.5:1 level is for text. Lines, bars and slices need at least 3:1."},
+     {t:"The labels pass but the lines fail, because lines are thinner", why:"It’s the other way round: text needs the higher ratio (4.5:1), lines need 3:1."}]},
+   {id:"t3u4-cp08", lesson:"t3u4-l5", level:2, q:"Raúl’s report includes a chart image whose title and key numbers appear only inside the picture. What change helps screen-reader users most?", options:[
+     {t:"Make the text inside the image bigger, bolder and higher in contrast", why:"Bigger text still can’t be read aloud, searched or resized. It needs to be real text outside the image."},
+     {t:"Put the title in page text, plus short alt text and a data table", ok:true, why:"Text in the page can be read aloud and searched. Alt text gives the message; a table gives the detail."},
+     {t:"Add more colours so the lines are easier to tell apart", why:"Colour doesn’t help someone who can’t see the image. They need a text alternative."},
+     {t:"Write alt text that lists every single value in the chart", why:"Alt text should give the type, what it shows and the main message. Full detail belongs in a table."}]},
+   {id:"t3u4-cp09", lesson:"t3u4-l4", level:2, q:"An infographic shows a club with 4,000 members as a circle of radius 10 mm. What radius shows a club with 9,000 members honestly, and is this the best encoding?", options:[
+     {t:"22.5 mm; circles are as easy to compare as bars", why:"Multiplying the radius by 2.25 multiplies the area by about 5. And areas are judged less accurately than lengths."},
+     {t:"15 mm; circles are as easy to compare as bars", why:"15 mm is right, but areas are read less accurately than lengths, so bars or dots would be better."},
+     {t:"22.5 mm; though bars would be compared more accurately", why:"Bars would be better, but 22.5 mm scales the radius, not the area. The area would be about 5 times bigger, not 2.25."},
+     {t:"15 mm; though bars would be compared more accurately", ok:true, why:"Radius × √(9,000 ÷ 4,000) = 10 × 1.5 = 15 mm. Even honest areas are harder to compare than bar lengths."}]},
+   {id:"t3u4-cp10", lesson:"t3u4-l4", level:3, q:"A study of 64 people reports a mean of 120 with a standard deviation of 16. Its chart shows an error bar from 104 to 136. What does that bar show?", options:[
+     {t:"The 95% confidence interval for the mean", why:"SE = 16 ÷ √64 = 2, so a 95% interval is about 120 ± 4: 116 to 124. The bar is far wider."},
+     {t:"Mean ± 1 standard error", why:"± 1 SE would be 118 to 122. The bar is 8 times as long as that (√64 = 8)."},
+     {t:"Mean ± 1 standard deviation, describing how individuals vary", ok:true, why:"120 ± 16 = 104 to 136. An SD bar describes the spread of people, not how precisely the mean is known."},
+     {t:"The lowest and highest values in the sample", why:"Error bars usually show an SD, SE or interval. Here 120 ± 16 matches the SD exactly; the caption should say so."}]},
+   {id:"t3u4-cp11", lesson:"t3u4-l4", level:1, q:"A fundraiser’s chart shows a running total of donations: 120, 210, 270 and 300 over four months. Which title describes what happened?", options:[
+     {t:"Donations keep growing, rising every month", why:"The running total rises, but a total of positive amounts can only rise. Each month’s amount is the gap between totals: 120, 90, 60, 30."},
+     {t:"Donations held steady at about 75 a month", why:"75 is the average (300 ÷ 4), but the monthly amounts were 120, 90, 60 and 30: far from steady."},
+     {t:"Each month raised less: 120, 90, 60, then 30", ok:true, why:"Subtract each total from the next: 210 − 120 = 90, 270 − 210 = 60, 300 − 270 = 30. A cumulative line hides the slowdown."},
+     {t:"Monthly donations rose 150%, from 120 to 300", why:"300 is the four-month total, not a month’s donations. The months themselves fell from 120 to 30."}]},
+   {id:"t3u4-cp12", lesson:"t3u4-l5", level:3, q:"A chart shows a poll: 48% back Plan A and 51% back Plan B. Each figure has a margin of error of about 3 points. Which main title is most honest?", options:[
+     {t:"Plan B has a clear lead over Plan A", why:"A 3-point gap with ±3 margins on each figure isn’t a clear lead. The title must be true of the chart, uncertainty included."},
+     {t:"Plan B wins majority support", why:"51% ± 3 could be below 50%. A statement title shouldn’t claim more than the data can bear."},
+     {t:"Figure 1: poll results for Plans A and B", why:"A label, not a point. Titles should say what to see; here the point is that the race is close."},
+     {t:"Plans A and B are too close to call", ok:true, why:"It states the point, and it fits the uncertainty: the 3-point gap is within the margins of error."}]},
+  ],
   codex:[
    {id:"chart-types", title:"Choosing a chart type", aka:["chart directory","bar chart","dot plot","histogram","pie chart","stacked bars","scatterplot","line chart","small multiples","heatmap"], tags:["charts","data","visualization"],
     summary:"Match the chart to the question (amounts, distribution, proportions, relationship, change over time), favouring positions and lengths, which people judge most accurately.",
@@ -976,7 +1038,7 @@ ICA.addUnit({
      pro:[
       "Spreadsheet caveat: in Excel and LibreOffice Calc, the built-in standard-deviation and standard-error error-bar options are computed from the plotted values (Excel’s help shows formulas over the data values of the chart’s series), not from each bar’s underlying data, so each bar gets the same amount; LibreOffice’s help notes its SD bars are centred on the series mean. Compute margins yourself and use Excel’s **Custom → Specify Value** or LibreOffice’s **Cell Range**. Google Sheets offers constant, percentage and standard-deviation types; Numbers offers fixed values, percentages and other calculations.",
       "Choosing what to show: SD bars for “how variable are individuals?”; SE or CI bars for “how precisely is the mean known?”; intervals for differences when the question is a comparison (Wilke shows contrasts against a reference group). Always report n.",
-      "Wilke also contrasts frequentist confidence intervals with Bayesian credible intervals; the interpretation differs, but in practice both are drawn with the same display types. Unit 6 of this track covers confidence intervals and their interpretation (see also Track 4, Unit 3).",
+      "Wilke also contrasts frequentist confidence intervals with Bayesian credible intervals; the interpretation differs, but in practice both are drawn with the same display types. Unit 7 of this track covers confidence intervals and their interpretation (see also Track 4, Unit 3).",
       "Overlap rules: for two independent groups with equal SEs, 95% intervals that don’t overlap do indicate a difference significant at the 5% level (in fact p is then below about 0.006), but intervals can overlap by a fair amount and the difference still be clear, so overlap is a poor test. Calculate the interval for the difference, as Wilke recommends.",
       "Hypothetical outcome plots must show outcomes representative of the true distribution; Wilke checked that his chocolate-rating example showed the Canadian bar winning close to its true 53% of the time. Smooth morphing between outcomes may make probabilities harder to judge than quick switches or fades."
      ]
@@ -1041,7 +1103,7 @@ ICA.addUnit({
       "Spreadsheet strengths: quick, linked to the data, available offline. Weaknesses: small multiples and direct labels are manual."
      ],
      pro:[
-      "Wilke’s Chapter 28 frames tool choice around reproducibility and repeatability (can you regenerate the figure when the data change?), the split between exploration and presentation, and separating content from design (themes or styles applied consistently). Code-based tools (R’s ggplot2, Python’s plotting libraries) score best on reproducibility; Units 7–8 teach R.",
+      "Wilke’s Chapter 28 frames tool choice around reproducibility and repeatability (can you regenerate the figure when the data change?), the split between exploration and presentation, and separating content from design (themes or styles applied consistently). Code-based tools (R’s ggplot2, Python’s plotting libraries) score best on reproducibility; Units 8–9 teach R.",
       "For organisations: check data-protection rules before uploading to a hosted service; prefer local or browser-only processing for personal data; record the tool, version and settings with published charts; and keep the data and code (or the tool’s project file) with the chart.",
       "Exports matter for reuse: vector formats (SVG, PDF) stay sharp at any size and can be edited in drawing apps; bitmaps (PNG) are fine for screens. Wilke’s Chapter 27 explains the difference. Check which formats each tool’s free plan allows; Datawrapper’s free plan, for instance, exports PNG only.",
       "Exploration versus presentation: for exploring, speed matters more than polish, so use whatever lets you try many views quickly. For presentation, consistency and accuracy matter: apply one style to every chart in a report, set axes deliberately, and keep a record of how each chart was made so it can be checked or updated.",
@@ -1095,9 +1157,9 @@ ICA.addUnit({
      {t:"Random, so no charity seems favoured", why:"Sorting by value isn’t favouritism; it’s what makes comparison easy."}
    ]},
    {id:"t3u4-q03", lesson:"t3u4-l1", level:2, q:"Months of rainfall are shown as bars. Should the bars be sorted from wettest to driest?", options:[
-     {t:"No: months have a natural order, so keep them January to December", ok:true, why:"Ordered categories keep their order; sorting by value would scramble the seasonal pattern."},
+     {t:"No: months have a natural order, so keep it", ok:true, why:"Keep them January to December. Ordered categories keep their order; sorting by value would scramble the seasonal pattern."},
      {t:"Yes: bars should always be sorted by value", why:"Only unordered categories should be sorted by value."},
-     {t:"Yes, and use a pie chart as well", why:"Months of rainfall aren’t parts of a meaningful whole, and sorting is still wrong."},
+     {t:"Yes, and show the same data as a pie chart as well", why:"Months of rainfall aren’t parts of a meaningful whole, and sorting is still wrong."},
      {t:"No: put them in alphabetical order", why:"Alphabetical order breaks the calendar order that matters."}
    ]},
    {id:"t3u4-q04", lesson:"t3u4-l1", level:1, q:"What is the main risk of using only your app’s default bin width for a histogram?", options:[
@@ -1107,35 +1169,35 @@ ICA.addUnit({
      {t:"There is no risk: defaults are calculated from the data", why:"Default rules are generic. They don’t know what features matter in your data."}
    ]},
    {id:"t3u4-q05", lesson:"t3u4-l1", level:3, q:"Ana’s team survey asked “Which of these tools do you use? (tick all that apply)”. The answers add up to 230%. A colleague suggests a pie chart. What should Ana say?", options:[
-     {t:"A pie needs parts of one whole adding to 100%; these answers overlap, so use bars of the percentage choosing each tool", ok:true, why:"Each person could pick several tools, so the percentages aren’t slices of anything."},
+     {t:"A pie needs parts of one whole; these overlap, so use bars", ok:true, why:"Use bars of the percentage choosing each tool. Each person could pick several tools, so the percentages aren’t slices of anything."},
      {t:"Fine, as long as there are five tools or fewer", why:"The number of slices isn’t the problem; the data aren’t parts of a whole."},
-     {t:"Rescale the percentages so they add to 100%", why:"That would change the meaning: each figure is the share of people using a tool, not a share of all ticks."},
+     {t:"Rescale the percentages so they add up to 100%, then use the pie", why:"That would change the meaning: each figure is the share of people using a tool, not a share of all ticks."},
      {t:"Use a 3D pie so the slices fit", why:"3D distorts, and the data still aren’t parts of one whole."}
    ]},
    {id:"t3u4-q06", lesson:"t3u4-l1", level:2, q:"In which situation does Wilke argue that a pie chart is the best choice?", options:[
-     {t:"Showing that two smaller parties together hold just over half of a parliament’s seats", ok:true, why:"Pies make simple fractions such as “more than half” visible at a glance."},
+     {t:"Showing that two smaller parties together hold over half the seats", ok:true, why:"Pies make simple fractions such as “more than half” visible at a glance."},
      {t:"Comparing the market shares of 15 companies", why:"Too many slices; side-by-side bars work better for many parts."},
-     {t:"Showing how shares changed every year for 20 years", why:"Many sets of proportions or a time series suit stacked bars."},
+     {t:"Showing how each party’s share of seats changed every year for 20 years", why:"Many sets of proportions or a time series suit stacked bars."},
      {t:"Comparing five nearly equal shares precisely", why:"Near-equal angles are hard to rank; bars are clearer."}
    ]},
    {id:"t3u4-q07", lesson:"t3u4-l1", level:3, q:"Kenji draws a line chart with towns along the bottom in alphabetical order and average rent up the side. Why is the line misleading?", options:[
-     {t:"Joining points suggests a continuous order; alphabetical towns have none, so the line invents a trend", ok:true, why:"Lines suit ordered x values such as time. For towns, use sorted bars or dots."},
+     {t:"Joining points suggests an order, but towns have none", ok:true, why:"The line invents a trend. Lines suit ordered x values such as time. For towns, use sorted bars or dots."},
      {t:"Rent should be shown with a pie chart", why:"Rents aren’t parts of a whole."},
-     {t:"The y-axis must start at zero for any line chart", why:"Line charts don’t need zero; the problem is joining unordered categories."},
+     {t:"The y-axis must start at zero for every line chart like this", why:"Line charts don’t need zero; the problem is joining unordered categories."},
      {t:"Lines can only show one town", why:"Lines can show many series; the problem is what the x axis represents."}
    ]},
    {id:"t3u4-q08", lesson:"t3u4-l1", level:3, q:"Mei has monthly visitor numbers for eight museums. Her single line chart with eight colours is a tangle. What is the best alternative?", options:[
-     {t:"Small multiples: one small line chart per museum with the same axes, in a meaningful order", ok:true, why:"Small multiples untangle many series; shared axes keep them comparable (Wilke, Chapter 21)."},
+     {t:"Small multiples: one small chart per museum, with the same axes", ok:true, why:"Put the panels in a meaningful order. Small multiples untangle many series; shared axes keep them comparable (Wilke, Chapter 21)."},
      {t:"Give each panel its own automatic y-axis so every line fills its box", why:"Different scales make every museum look equally busy and changeable."},
      {t:"A pie chart for each month", why:"Twelve pies of eight slices would be even harder to compare."},
      {t:"Make the chart 3D so the lines separate", why:"3D adds distortion without separating the information."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t3u4-q09", lesson:"t3u4-l2", level:1, q:"What does the principle of proportional ink say?", options:[
-     {t:"The sizes of shaded areas must be proportional to the values they represent", ok:true, why:"That’s Bergstrom and West’s principle as Wilke states it, and the reason bars start at zero."},
+     {t:"Shaded areas must be in proportion to the values they show", ok:true, why:"That’s Bergstrom and West’s principle as Wilke states it, and the reason bars start at zero."},
      {t:"Every chart should use as little ink as possible", why:"That’s a different idea (minimal decoration), not proportional ink."},
      {t:"Each colour should cover the same area", why:"The principle is about areas matching values, not equal colour areas."},
-     {t:"Axes should be drawn in proportion to the page", why:"It concerns shaded marks, not page layout."}
+     {t:"Axes should be drawn in proportion to the size of the page", why:"It concerns shaded marks, not page layout."}
    ]},
    {id:"t3u4-q10", lesson:"t3u4-l2", level:2, q:"Which chart may honestly use a value axis that starts well above zero?", options:[
      {t:"A line chart of a city’s average temperature in °C over a year", ok:true, why:"Lines show value by position, and 0 °C has no special meaning for this question; label the range."},
@@ -1156,8 +1218,8 @@ ICA.addUnit({
      {t:"A value of 1", why:"1 is the natural midpoint of a log scale."}
    ]},
    {id:"t3u4-q13", lesson:"t3u4-l2", level:3, q:"Tomás’s chart has café visits on the left axis and rainfall in mm on the right. The lines move almost together, and his caption says rain brings customers. What would make the chart more honest?", options:[
-     {t:"Show the two in separate, aligned panels (or a scatterplot), and don’t claim cause from the pattern", ok:true, why:"Dual-axis alignment is set by the chosen ranges, and moving together isn’t proof of cause."},
-     {t:"Start both axes at zero and keep the caption", why:"Even from zero, the right axis’s maximum is a free choice, and the causal claim is still unsupported."},
+     {t:"Use separate aligned panels, and don’t claim cause", ok:true, why:"A scatterplot also works. Dual-axis alignment is set by the chosen ranges, and moving together isn’t proof of cause."},
+     {t:"Start both axes at zero, and then keep the caption as it is", why:"Even from zero, the right axis’s maximum is a free choice, and the causal claim is still unsupported."},
      {t:"Use a log scale for both axes", why:"Log scales don’t remove the arbitrary alignment of two axes."},
      {t:"Make the rainfall line thicker", why:"Line thickness doesn’t change the underlying problem."}
    ]},
@@ -1168,14 +1230,14 @@ ICA.addUnit({
      {t:"1.1", why:"That’s the ratio; multiply by 100 for the index."}
    ]},
    {id:"t3u4-q15", lesson:"t3u4-l2", level:3, q:"Fatima shows nine small charts, one per region, each with its own automatic y-axis. A reader concludes every region grew by a similar amount. What went wrong?", options:[
-     {t:"Different axis ranges made small and large changes fill each panel equally; shared axes would show the real differences", ok:true, why:"Wilke’s advice: use the same axis ranges in small multiples, or warn readers in the caption."},
+     {t:"Different axis ranges made every change fill its panel", ok:true, why:"Shared axes would show the real differences. Wilke’s advice: use the same axis ranges in small multiples, or warn readers in the caption."},
      {t:"She should have used nine pie charts", why:"Pies don’t show change over time well, and the axis problem would remain in other forms."},
      {t:"Small multiples are always misleading", why:"They’re very useful, with shared axes."},
-     {t:"The panels should have been in alphabetical order", why:"Order matters, but the misleading impression comes from the unequal axes."}
+     {t:"The panels should have been in alphabetical order of region", why:"Order matters, but the misleading impression comes from the unequal axes."}
    ]},
    {id:"t3u4-q16", lesson:"t3u4-l2", level:3, q:"Priya’s dot plot of ten countries’ life expectancy uses an axis from 70 to 85 years. A colleague says “axes must start at zero”. Who is right?", options:[
-     {t:"Priya, if the axis is labelled: dots show values by position, not length, so zero isn’t required", ok:true, why:"Proportional ink applies to lengths and areas. Dot plots exist partly so the axis can start near the data."},
-     {t:"The colleague: every axis must include zero", why:"Only bars and filled areas need zero."},
+     {t:"Priya, if the axis is labelled: dots show values by position", ok:true, why:"Dots don’t use length, so zero isn’t required. Proportional ink applies to lengths and areas. Dot plots exist partly so the axis can start near the data."},
+     {t:"The colleague: every chart axis must include zero, whatever it shows", why:"Only bars and filled areas need zero."},
      {t:"Neither: she should use a pie chart", why:"Life expectancies aren’t parts of a whole."},
      {t:"The colleague, unless she switches to 3D", why:"3D would add distortion, and it isn’t needed."}
    ]},
@@ -1193,10 +1255,10 @@ ICA.addUnit({
      {t:"Only people over 70", why:"Most colour-vision deficiency is inherited and present from birth."}
    ]},
    {id:"t3u4-q19", lesson:"t3u4-l3", level:2, q:"Why does Wilke recommend against rainbow colour scales for continuous data?", options:[
-     {t:"Their lightness rises and falls unevenly, creating false boundaries and hiding real changes", ok:true, why:"A good sequential scale changes lightness steadily so differences in colour match differences in value."},
+     {t:"Their lightness changes unevenly, creating false boundaries", ok:true, why:"This also hides real changes. A good sequential scale changes lightness steadily so differences in colour match differences in value."},
      {t:"They use too few colours", why:"They use many; the problem is how lightness changes across them."},
      {t:"They can’t be printed", why:"They can be printed; in greyscale they just make no sense."},
-     {t:"Rainbow colours are not allowed by WCAG", why:"WCAG doesn’t ban colours; it sets contrast and use-of-colour rules."}
+     {t:"Rainbow colours are not allowed by the WCAG accessibility rules", why:"WCAG doesn’t ban colours; it sets contrast and use-of-colour rules."}
    ]},
    {id:"t3u4-q20", lesson:"t3u4-l3", level:2, q:"Under WCAG 2.2, what contrast should the lines in a line chart have against the background?", options:[
      {t:"At least 3:1", ok:true, why:"Criterion 1.4.11 asks for 3:1 for graphical objects needed to understand the content; W3C notes lines need it against the background but not against each other."},
@@ -1205,27 +1267,27 @@ ICA.addUnit({
      {t:"No requirement applies to charts", why:"Non-text contrast (1.4.11) covers graphics such as chart lines and bars."}
    ]},
    {id:"t3u4-q21", lesson:"t3u4-l3", level:3, q:"Oluwaseun’s scatterplot shows three species using colour only. In greyscale the species can’t be told apart. What’s the most effective fix?", options:[
-     {t:"Give each species its own marker shape and label the groups directly", ok:true, why:"Redundant coding (Wilke, Chapter 20) keeps the meaning without colour."},
-     {t:"Use brighter versions of the same colours", why:"Brightness alone may not survive greyscale or colour-vision deficiency."},
+     {t:"Give each species its own marker shape and a direct label", ok:true, why:"Redundant coding (Wilke, Chapter 20) keeps the meaning without colour."},
+     {t:"Use brighter and more saturated versions of the same colours", why:"Brightness alone may not survive greyscale or colour-vision deficiency."},
      {t:"Add more colours", why:"More colours make matching harder, not easier."},
      {t:"Remove the legend", why:"Without a replacement such as direct labels, readers lose the key entirely."}
    ]},
    {id:"t3u4-q22", lesson:"t3u4-l3", level:3, q:"Lucía uses Okabe–Ito colours for thin lines on a white background and is told the chart fails contrast checks. Which statement is correct?", options:[
-     {t:"Colour-blind-safe colours can still have low contrast: yellow, orange and sky blue are all below 3:1 on white", ok:true, why:"Telling colours apart and seeing marks against the background are separate tests (1.32:1, 2.25:1 and 2.31:1 on white)."},
+     {t:"Colour-blind-safe colours can still have low contrast on white", ok:true, why:"Telling colours apart and seeing marks against the background are separate tests. Yellow, orange and sky blue are all below 3:1 on white (1.32:1, 2.25:1 and 2.31:1)."},
      {t:"Okabe–Ito colours always pass contrast checks", why:"Several fall below 3:1 on white; blue and black pass."},
      {t:"Contrast doesn’t apply to lines", why:"WCAG 1.4.11 applies to lines needed to understand the chart."},
-     {t:"Thin lines need less contrast than thick ones", why:"Thin lines look fainter, so they need at least as much contrast."}
+     {t:"Thin lines need less contrast than thick ones, so they pass anyway", why:"Thin lines look fainter, so they need at least as much contrast."}
    ]},
    {id:"t3u4-q23", lesson:"t3u4-l3", level:2, q:"Software listed the legend for four lines alphabetically, but the lines run top to bottom in a different order. What does Wilke recommend?", options:[
-     {t:"Reorder the legend to match the order of the lines, or replace it with direct labels", ok:true, why:"Matching the visual order (or removing the legend) cuts the effort of matching colours to names."},
-     {t:"Keep alphabetical order because it’s standard", why:"Software uses it by default, but it fights the visual order readers see."},
+     {t:"Reorder the legend to match the lines, or use direct labels", ok:true, why:"Matching the visual order (or removing the legend) cuts the effort of matching colours to names."},
+     {t:"Keep alphabetical order, because it is the standard for legends", why:"Software uses it by default, but it fights the visual order readers see."},
      {t:"Add more colours to the legend", why:"More colours don’t solve the matching problem."},
      {t:"Move the legend inside the plot area", why:"Position isn’t the issue; order is."}
    ]},
    {id:"t3u4-q24", lesson:"t3u4-l3", level:3, q:"A pie chart has two neighbouring slices in light blue and light green that are hard to tell apart. Which fix follows W3C’s guidance on non-text contrast?", options:[
-     {t:"Add a contrasting border between slices, or label each slice with its name and value", ok:true, why:"W3C’s examples: borders give the needed contrast, and visible labels and values carry the same information."},
+     {t:"Add contrasting borders, or label each slice", ok:true, why:"Labels should give each slice’s name and value. W3C’s examples: borders give the needed contrast, and visible labels and values carry the same information."},
      {t:"Make the pie 3D so the slices separate", why:"3D distorts slice sizes and doesn’t fix the contrast."},
-     {t:"Use a rainbow of seven colours instead", why:"More colours create more neighbouring pairs to confuse."},
+     {t:"Use a rainbow of seven bright colours instead of two", why:"More colours create more neighbouring pairs to confuse."},
      {t:"Nothing: pie charts are exempt", why:"Only presentations where the colour itself is essential, such as some heat maps, count as exempt."}
    ]},
    /* ---- Lesson 4 ---- */
@@ -1236,16 +1298,16 @@ ICA.addUnit({
      {t:"Eight times bigger", why:"That would be volume (a sphere), not a flat circle."}
    ]},
    {id:"t3u4-q26", lesson:"t3u4-l4", level:1, q:"Why can a cumulative (running total) chart mislead?", options:[
-     {t:"With positive values it can only rise, so it looks like growth even when each period’s figure is falling", ok:true, why:"New members of 40, 30, 20, 10 give a running total of 40, 70, 90, 100, still rising."},
-     {t:"It always starts at zero", why:"Starting at zero is normal; the problem is what a running total hides."},
+     {t:"It keeps rising even when each period’s figure falls", ok:true, why:"With positive values a running total can only rise, so it looks like growth. New members of 40, 30, 20, 10 give a running total of 40, 70, 90, 100, still rising."},
+     {t:"It always starts at zero, which exaggerates the growth", why:"Starting at zero is normal; the problem is what a running total hides."},
      {t:"It uses too many colours", why:"Colour isn’t the issue."},
      {t:"It can’t show time", why:"It does show time; it just hides changes in the rate."}
    ]},
    {id:"t3u4-q27", lesson:"t3u4-l4", level:3, q:"A council map shades districts by the total number of library members. The largest district is darkest and the headline says it has “the most engaged readers”. What’s the flaw?", options:[
-     {t:"Totals mostly reflect population; members per 1,000 residents would show engagement", ok:true, why:"Mapping totals mainly shows where people live. Rates make districts comparable."},
+     {t:"Totals mostly reflect population; a rate would show engagement", ok:true, why:"Mapping totals mainly shows where people live. Rates, such as members per 1,000 residents, make districts comparable."},
      {t:"Library members can’t be mapped", why:"They can; the issue is totals versus rates."},
      {t:"The map needs a 3D effect", why:"3D would distort further."},
-     {t:"The darkest colour should be red", why:"The colour choice doesn’t fix the wrong measure."}
+     {t:"The darkest colour should be red, so the busiest district stands out", why:"The colour choice doesn’t fix the wrong measure."}
    ]},
    {id:"t3u4-q28", lesson:"t3u4-l4", level:2, q:"For 25 people, the standard deviation of sleep is 1.0 hour. What is the standard error of the mean?", options:[
      {t:"0.2 hours", ok:true, why:"SE = SD ÷ √n = 1.0 ÷ √25 = 1.0 ÷ 5 = 0.2."},
@@ -1254,7 +1316,7 @@ ICA.addUnit({
      {t:"5 hours", why:"That multiplies by √n instead of dividing."}
    ]},
    {id:"t3u4-q29", lesson:"t3u4-l4", level:1, q:"According to Wilke, what must you always do when a chart has error bars?", options:[
-     {t:"Say what they represent (for example 95% confidence intervals or ± 1 SD)", ok:true, why:"The same data give very different bars depending on what they show."},
+     {t:"Say what they represent", ok:true, why:"For example, 95% confidence intervals or ± 1 SD. The same data give very different bars depending on what they show."},
      {t:"Make them the same colour as the bars", why:"Colour is a design choice; the label is the requirement."},
      {t:"Add caps to the ends", why:"Caps are a matter of taste, Wilke says."},
      {t:"Draw them only above the bar", why:"Error bars usually extend both ways; what matters is the label."}
@@ -1266,14 +1328,14 @@ ICA.addUnit({
      {t:"It can’t be calculated from this information", why:"For independent groups, the SE of the difference is √(SE₁² + SE₂²)."}
    ]},
    {id:"t3u4-q31", lesson:"t3u4-l4", level:2, q:"A forecast says there’s a 10% chance of a flood this year. Which display is most likely to give the public an accurate feel for it?", options:[
-     {t:"A grid of 100 squares with 10 shaded, scattered at random", ok:true, why:"Frequency framing makes a probability concrete: unlikely, but clearly possible (Wilke, Section 16.1)."},
-     {t:"A single bar reaching 10%", why:"Wilke notes a probability drawn as a bar or dot doesn’t help most people grasp what it means."},
+     {t:"A grid of 100 squares with 10 shaded", ok:true, why:"The shaded squares are scattered at random. Frequency framing makes a probability concrete: unlikely, but clearly possible (Wilke, Section 16.1)."},
+     {t:"A single bar reaching 10% on a 0–100% axis", why:"Wilke notes a probability drawn as a bar or dot doesn’t help most people grasp what it means."},
      {t:"The number 0.1 in large type", why:"A bare decimal is the least intuitive form for most readers."},
      {t:"A 3D pie with a thin slice", why:"3D distorts slice sizes."}
    ]},
    {id:"t3u4-q32", lesson:"t3u4-l4", level:3, q:"Dmitri adds “standard error” error bars to his bar chart using his spreadsheet’s built-in button. Every bar gets the same size bar, though his groups have different sample sizes. Why?", options:[
-     {t:"The built-in option calculates from the plotted values in the series, not each group’s raw data; he should calculate each margin and enter custom values", ok:true, why:"In Excel and LibreOffice Calc the built-in SD and SE options use the series’ plotted values. Custom values or a cell range fix it."},
-     {t:"Standard errors are always equal for every group", why:"They depend on each group’s SD and sample size."},
+     {t:"The button uses the plotted values, not each group’s raw data", ok:true, why:"He should calculate each margin and enter custom values. In Excel and LibreOffice Calc the built-in SD and SE options use the series’ plotted values. Custom values or a cell range fix it."},
+     {t:"Standard errors are always equal for every group in a bar chart", why:"They depend on each group’s SD and sample size."},
      {t:"Error bars only work on line charts", why:"Error bars work on bar charts too."},
      {t:"His groups must all have the same mean", why:"The equal bars come from how the button calculates, not from the means."}
    ]},
@@ -1282,7 +1344,7 @@ ICA.addUnit({
      {t:"What the data are, the geography and the time period", ok:true, why:"The main title states the point; the subtitle says what, where and when."},
      {t:"The author’s name and job title", why:"Authorship belongs elsewhere."},
      {t:"A repeat of the main title in different words", why:"The subtitle adds information; it doesn’t repeat the title."},
-     {t:"The colours used for each series", why:"Colours are explained by labels or a legend, not the subtitle."}
+     {t:"The colours used for each series and what they stand for", why:"Colours are explained by labels or a legend, not the subtitle."}
    ]},
    {id:"t3u4-q34", lesson:"t3u4-l5", level:2, q:"Which is the best alt text for a bar chart of five branches’ loans?", options:[
      {t:"Bar chart of 2025 book loans at five branches. Central lent most (12,400), about twice Harbour (6,100); full figures are in the table below.", ok:true, why:"Chart type, subject, period, main message, key numbers and a pointer to the table."},
@@ -1291,16 +1353,16 @@ ICA.addUnit({
      {t:"See chart above", why:"The reader can’t see it; that’s why alt text exists."}
    ]},
    {id:"t3u4-q35", lesson:"t3u4-l5", level:3, q:"Amara’s chart shows that schools with breakfast clubs had higher average attendance. Her title is “Breakfast clubs raise attendance”. What’s the best revision?", options:[
-     {t:"“Schools with breakfast clubs had higher attendance”, unless a study design shows cause", ok:true, why:"A statement title must match the evidence; a comparison like this shows association, not cause."},
+     {t:"“Schools with breakfast clubs had higher attendance”", ok:true, why:"Unless a study design shows cause, a statement title must match the evidence; a comparison like this shows association, not cause."},
      {t:"“Breakfast clubs definitely raise attendance”", why:"Stronger wording makes the unsupported causal claim worse."},
      {t:"“Figure 2”", why:"A label tells readers nothing; a supported statement is better."},
      {t:"“This chart shows attendance”", why:"Wilke advises against “This figure shows…” titles."}
    ]},
    {id:"t3u4-q36", lesson:"t3u4-l5", level:2, q:"Why does UK guidance suggest putting chart titles in the page or document text rather than only inside the chart image?", options:[
-     {t:"Text in the page can be read by screen readers, resized and searched; text inside an image can’t", ok:true, why:"Keeping titles and key numbers as real text makes them accessible."},
+     {t:"Page text can be read aloud, resized and searched", ok:true, why:"Screen readers can read page text, but not text inside an image. Keeping titles and key numbers as real text makes them accessible."},
      {t:"Images can’t contain text", why:"They can; it just isn’t accessible."},
      {t:"Titles inside images break the chart’s colours", why:"Colour isn’t the reason."},
-     {t:"It makes the image file smaller", why:"File size isn’t the reason given."}
+     {t:"It makes the image file smaller and faster to load", why:"File size isn’t the reason given."}
    ]},
    {id:"t3u4-q37", lesson:"t3u4-l5", level:1, q:"According to Wilke’s table rules, how should a column of numbers be aligned?", options:[
      {t:"Right-aligned, with the same number of decimal places", ok:true, why:"Place values line up, making numbers easy to compare."},
@@ -1309,22 +1371,22 @@ ICA.addUnit({
      {t:"Alternating left and right for variety", why:"Consistency is the point."}
    ]},
    {id:"t3u4-q38", lesson:"t3u4-l5", level:3, q:"Fatima must chart a staff survey containing names and free-text comments. Which approach best protects the data?", options:[
-     {t:"Make the chart in a spreadsheet on her own device (or a browser-only tool such as RAWGraphs), using only the summary figures", ok:true, why:"The personal data never leave her computer, and only aggregates appear in the chart."},
+     {t:"Make the chart on her own device, using only summary figures", ok:true, why:"A spreadsheet or a browser-only tool such as RAWGraphs works. The personal data never leave her computer, and only aggregates appear in the chart."},
      {t:"Upload the full file to a free online tool and publish the chart", why:"That shares personal data with a company, and some free plans make published work public."},
      {t:"Paste the names into the chart’s source note", why:"That publishes personal data."},
      {t:"Email the file to a friend with a chart tool", why:"That shares personal data without need or permission."}
    ]},
    {id:"t3u4-q39", lesson:"t3u4-l5", level:2, q:"What did checking the free plans in November 2026 show about Flourish’s free plan?", options:[
-     {t:"Projects you publish are public, with Flourish attribution; unpublished projects stay private", ok:true, why:"That’s the free plan as described on Flourish’s pricing page when checked. Plans change, so check again before relying on it."},
-     {t:"Everything is private, even when published", why:"Published free-plan projects are public."},
+     {t:"Published projects are public; unpublished stay private", ok:true, why:"Published ones carry Flourish attribution. That’s the free plan as described on Flourish’s pricing page when checked. Plans change, so check again before relying on it."},
+     {t:"Everything stays private, even projects that you publish", why:"Published free-plan projects are public."},
      {t:"It only allows one project", why:"The pricing page listed unlimited projects."},
-     {t:"It requires installing software", why:"Flourish runs in the browser."}
+     {t:"It requires installing software on your own computer first", why:"Flourish runs in the browser."}
    ]},
    {id:"t3u4-q40", lesson:"t3u4-l5", level:2, q:"How many annotations does this unit suggest for a typical chart?", options:[
      {t:"One to three, each next to what it explains", ok:true, why:"A few well-placed notes guide the eye; many compete with each other."},
      {t:"One for every data point", why:"That crowds the chart and hides the point."},
      {t:"None: annotations are biased", why:"Accurate annotations help readers; they’re part of honest communication."},
-     {t:"At least ten, so nothing is missed", why:"Too many notes overwhelm the reader."}
+     {t:"At least ten, so that nothing on the chart is missed", why:"Too many notes overwhelm the reader."}
    ]}
   ]
 });

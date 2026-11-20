@@ -1,6 +1,6 @@
-/* International Studies · Unit 20 · Southeast Asia and ASEAN in depth */
+/* International Studies · Unit 21 · Southeast Asia and ASEAN in depth */
 ICA.addUnit({
-  id:"e4u20", track:"e4", n:20, title:"Southeast Asia and ASEAN in depth", icon:"🌏",
+  id:"e4u20", track:"e4", n:21, title:"Southeast Asia and ASEAN in depth", icon:"🌏",
   blurb:"Eleven states, hundreds of languages, every major world religion and almost every kind of political regime: how scholars study Southeast Asia, why its regimes change, how its economies plug into world value chains, how ASEAN really works (from its 2007 Charter to Myanmar and Timor-Leste’s accession), and how religion, ethnicity and popular culture shape the region. Dated as of November 2026.",
   goals:[
     "Explain how “Southeast Asia” was constructed as a region and use the field’s key works (Emmerson, Wolters, Reid, Thongchai, Furnivall, Scott) in a seminar",
@@ -91,7 +91,7 @@ ICA.addUnit({
       {t:"The Philippines", b:3, why:"Spain ruled for over three centuries; the United States took over from 1898 until independence in 1946."}
     ]},
     {id:"e4u20-l1-x3", type:"mcq", q:"An early Southeast Asian ruler sends gifts to two stronger kings at once and keeps running his own affairs. Which concept best describes this order?", options:[
-      {t:"A mandala of overlapping circles of power based on personal loyalty", ok:true, why:"Yes. Wolters’ mandala model expects overlapping, shifting loyalties rather than fixed borders."},
+      {t:"A mandala of overlapping circles of power", ok:true, why:"Yes: overlapping circles based on personal loyalty. Wolters’ mandala model expects shifting loyalties rather than fixed borders."},
       {t:"A Westphalian state with clear, exclusive borders", why:"Exclusive territorial sovereignty is exactly what the mandala model says was missing."},
       {t:"A plural society held together by a colonial power", why:"Furnivall’s concept describes colonial societies, not early polities."},
       {t:"Everyday resistance by peasants", why:"Scott’s concept is about quiet resistance from below, not relations between rulers."}
@@ -104,7 +104,7 @@ ICA.addUnit({
       ["*Netherlands India* (1939)","J. S. Furnivall","The origin of the idea of the plural society."]
     ]},
     {id:"e4u20-l1-x5", type:"mcq", q:"A historian writes about a nineteenth-century Javanese revolt using only Dutch colonial reports and describes villagers as “reacting” to Dutch policies. What would Smail’s “autonomous history” urge?", options:[
-      {t:"Start from the village’s own social changes and sources, and treat Dutch policy as one pressure among others", ok:true, why:"Right. Smail asked historians to centre local societies without ignoring outside forces."},
+      {t:"Start from the village’s own changes and sources", ok:true, why:"Right, and treat Dutch policy as one pressure among others. Smail asked historians to centre local societies without ignoring outside forces."},
       {t:"Ignore the Dutch completely, since they were foreign", why:"Autonomy does not mean pretending colonialism did not exist; it means changing the centre of the story."},
       {t:"Rely only on the colonial archive, because it is the most complete", why:"Colonial archives record what rulers wanted to see; Smail’s point is to look beyond them."},
       {t:"Compare Java with France instead", why:"Comparison can help, but it does not answer whose perspective organises the history."}
@@ -188,7 +188,7 @@ ICA.addUnit({
       "Indices such as V-Dem and Freedom House classify these countries in different ways (Unit 3 discussed their methods: {{ir-datasets}}). In a paper, say which index you use and for which year."
     ]},
     {h:"Waves, and why they break", body:[
-      "Samuel Huntington’s *The Third Wave* (1991) described the spread of democracy after 1974. Southeast Asia joined in bursts: the Philippines’ **People Power** protests of February 1986 removed Ferdinand Marcos ([[people-power-revolution|People Power Revolution]]); Thailand’s 1992 protests ended a military-backed government; Indonesia’s [[reformasi|Reformasi]] followed President Suharto’s resignation in May 1998 amid the Asian financial crisis (Unit 15 told the crisis story: {{financial-crises-ipe}}); Timor-Leste became independent as a democracy in 2002.",
+      "Samuel Huntington’s *The Third Wave* (1991) described the spread of democracy after 1974. Southeast Asia joined in bursts: the Philippines’ **People Power** protests of February 1986 removed Ferdinand Marcos ([[people-power-revolution|People Power Revolution]]); Thailand’s 1992 protests ended a military-backed government; Indonesia’s [[reformasi|Reformasi]] followed President Suharto’s resignation in May 1998 amid the Asian financial crisis (Unit 16 told the crisis story: {{financial-crises-ipe}}); Timor-Leste became independent as a democracy in 2002.",
       "Why did some transitions stick and others not? Dan Slater’s *Ordering Power* (2010) argued that where elites faced threatening mass unrest, they banded together behind strong parties and states, building durable authoritarian regimes, as in Malaysia and Singapore. Slater and Joseph Wong’s *From Development to Democracy* (2022) added a twist: some regimes democratise from **strength**, confident they can win under new rules ([[democracy-through-strength|democracy through strength]]), as in Japan, South Korea and Taiwan. Their publisher’s summary calls the democratic experiments in Indonesia, Thailand and Myanmar “less successful and more reversible”, and says resistance to reform proved intractable in Singapore, Malaysia, Vietnam and Cambodia, among others.",
       "Reversal now has its own vocabulary. Nancy Bermeo’s “On Democratic Backsliding” (*Journal of Democracy*, 2016) noted that open coups had become rarer than gradual erosion by elected leaders, which she called executive aggrandisement. [[democratic-backsliding|Democratic backsliding]] means the state-led weakening of institutions that sustain democracy. Southeast Asia has both kinds: coups in Thailand (2006, 2014) and Myanmar (2021), and debates about slower erosion elsewhere."
     ]},
@@ -199,8 +199,8 @@ ICA.addUnit({
       "Elections also run on [[money-politics|money politics]]. Edward Aspinall and Ward Berenschot’s *Democracy for Sale* (2019) traced how Indonesian candidates use networks of brokers and gifts to win votes, a pattern also studied in the Philippines and Thailand. A collection edited by Thomas Power and Eve Warburton asked whether Indonesian democracy had moved *From Stagnation to Regression?* (2020). Others answer that Indonesia still holds competitive, high-turnout elections with peaceful transfers of power, as in 2014 and 2024."
     ]},
     {h:"One-party states and a city-state", body:[
-      "Vietnam and Laos are ruled by Leninist parties: the Communist Party of Vietnam and the Lao People’s Revolutionary Party. The party is written into the constitution as the leading force of state and society; a party congress every five years chooses the leaders and sets policy, and elections to the National Assembly offer candidates vetted by party-led bodies. Scholars of these systems study how a single party stays in power through economic growth (“performance legitimacy”), collective leadership with term limits, anti-corruption campaigns and tolerated debate within limits. Unit 19 applies the same questions to China.",
-      "Singapore is different again: a multiparty parliamentary republic with regular, efficiently run elections in which one party has won every time since 1959. Supporters credit good governance and results; critics point to rules that make opposition hard, such as large multi-member constituencies (Group Representation Constituencies, since 1988), defamation suits and media controls. Many scholars treat Singapore as the region’s clearest puzzle: a rich, highly educated society without a change of ruling party, against the [[modernization-theory|modernisation theory]] expectation that wealth brings democracy (Unit 14)."
+      "Vietnam and Laos are ruled by Leninist parties: the Communist Party of Vietnam and the Lao People’s Revolutionary Party. The party is written into the constitution as the leading force of state and society; a party congress every five years chooses the leaders and sets policy, and elections to the National Assembly offer candidates vetted by party-led bodies. Scholars of these systems study how a single party stays in power through economic growth (“performance legitimacy”), collective leadership with term limits, anti-corruption campaigns and tolerated debate within limits. Unit 20 applies the same questions to China.",
+      "Singapore is different again: a multiparty parliamentary republic with regular, efficiently run elections in which one party has won every time since 1959. Supporters credit good governance and results; critics point to rules that make opposition hard, such as large multi-member constituencies (Group Representation Constituencies, since 1988), defamation suits and media controls. Many scholars treat Singapore as the region’s clearest puzzle: a rich, highly educated society without a change of ruling party, against the [[modernization-theory|modernisation theory]] expectation that wealth brings democracy (Unit 15)."
     ]},
     {h:"Thailand: soldiers, courts and the crown", body:[
       "Thailand has had about a dozen successful coups since the 1932 revolution ended absolute monarchy (counts differ). Duncan McCargo’s “Network Monarchy and Legitimacy Crises in Thailand” (*The Pacific Review*, 2005) described a [[network-monarchy|network monarchy]]: informal networks linking palace, military and bureaucracy that shaped politics behind elected governments ({{military-politics-southeast-asia}}). Section 112 of the Criminal Code, the [[lese-majeste|lèse-majesté]] law, punishes defaming, insulting or threatening the king, queen, heir-apparent or regent with three to fifteen years in prison; its use is a major point of debate.",
@@ -246,10 +246,10 @@ ICA.addUnit({
       {t:"A mandala polity", why:"That is Wolters’ model of early, pre-colonial polities."}
     ]},
     {id:"e4u20-l2-x4", type:"mcq", q:"Slater and Wong argue that some authoritarian regimes democratise from strength. Which situation fits their idea best?", options:[
-      {t:"A long-ruling party with a strong economic record allows freer elections because it expects to keep winning", ok:true, why:"Yes. Confidence of victory and stability makes conceding democracy less risky for the incumbents."},
+      {t:"A strong ruling party allows freer elections, expecting to keep winning", ok:true, why:"Yes: a long-ruling party with a strong economic record. Confidence of victory and stability makes conceding democracy less risky for the incumbents."},
       {t:"A regime collapses after losing a war and its leaders flee", why:"That is democratisation from weakness, the pattern their argument contrasts with."},
       {t:"A military seizes power to stop an election", why:"That is a reversal, not democratisation."},
-      {t:"A ruling party bans all opposition after an economic boom", why:"Strength used to close politics is the opposite of conceding."}
+      {t:"A ruling party bans all opposition parties after a long and strong economic boom", why:"Strength used to close politics is the opposite of conceding."}
     ]},
     {id:"e4u20-l2-x5", type:"order", q:"Put these events in Thai politics in order.", items:[
       {t:"The Move Forward Party wins the most seats, but its leader is blocked from becoming prime minister.", why:"2023: the Senate appointed under the 2017 constitution voted him down."},
@@ -316,7 +316,7 @@ ICA.addUnit({
    learn:[
     {h:"Many roads from poverty", body:[
       {lead:"Southeast Asia holds one of the world’s richest city-states and some of Asia’s poorer economies. Their governments took very different roads."},
-      "Unit 14 explained the [[developmental-state|developmental state]] debate and the World Bank’s *[[east-asian-miracle|East Asian Miracle]]* report (1993), which counted Indonesia, Malaysia and Thailand among eight high performers ({{developmental-state-debate}}). Southeast Asia shows several distinct paths ({{southeast-asian-political-economy}}):",
+      "Unit 15 explained the [[developmental-state|developmental state]] debate and the World Bank’s *[[east-asian-miracle|East Asian Miracle]]* report (1993), which counted Indonesia, Malaysia and Thailand among eight high performers ({{developmental-state-debate}}). Southeast Asia shows several distinct paths ({{southeast-asian-political-economy}}):",
       {table:[
         ["Path","Examples","Main tools"],
         ["Foreign-investment-led exports","Singapore; Malaysia’s Penang; Thailand’s car industry","Tax incentives, industrial estates, skilled labour"],
@@ -333,10 +333,10 @@ ICA.addUnit({
         "**Systemic vulnerability.** Richard Doner, Bryan Ritchie and Dan Slater (2005) argued that leaders build strong developmental states only when they face mass pressure, external threats and scarce resources at once ([[systemic-vulnerability]]). Resource-rich Indonesia and Malaysia faced fewer of these pressures than South Korea or Taiwan.",
         "**Policy choices.** Joe Studwell’s popular *How Asia Works* (2013) blamed weak land reform, industrial policy without export discipline, and loose control of finance. Economists reply that the region’s more open path still produced decades of fast growth and lower poverty."
       ]},
-      "The Asian financial crisis of 1997–98 hit Thailand, Indonesia and Malaysia hardest (Unit 15). It toppled Suharto, led Malaysia to impose capital controls against IMF advice, and left a lasting wariness of short-term foreign money. Today several economies worry about the [[middle-income-trap|middle-income trap]]: wages too high to compete on cheap labour, skills and innovation not yet high enough to compete on quality."
+      "The Asian financial crisis of 1997–98 hit Thailand, Indonesia and Malaysia hardest (Unit 16). It toppled Suharto, led Malaysia to impose capital controls against IMF advice, and left a lasting wariness of short-term foreign money. Today several economies worry about the [[middle-income-trap|middle-income trap]]: wages too high to compete on cheap labour, skills and innovation not yet high enough to compete on quality."
     ]},
     {h:"Production networks and the ASEAN Economic Community", body:[
-      "After the [[plaza-accord|Plaza Accord]] of 1985 raised the yen’s value, Japanese firms moved factories into Thailand, Malaysia and Indonesia, creating regional production networks; Korean, Taiwanese, Chinese and Western firms followed. Intel opened its Penang plant in 1972; Samsung built huge phone factories in northern Vietnam from the late 2000s. Since the US–China trade tensions of 2018, firms have added Southeast Asian sites to Chinese ones, a strategy called [[china-plus-one|“China plus one”]] (Unit 15 explained [[global-value-chain|global value chains]]: {{global-value-chains}}). The *ASEAN Investment Report 2025* (ASEAN Secretariat and UNCTAD) records FDI into ASEAN rising 8% to 226 billion US dollars in 2024, while global FDI fell by 11%.",
+      "After the [[plaza-accord|Plaza Accord]] of 1985 raised the yen’s value, Japanese firms moved factories into Thailand, Malaysia and Indonesia, creating regional production networks; Korean, Taiwanese, Chinese and Western firms followed. Intel opened its Penang plant in 1972; Samsung built huge phone factories in northern Vietnam from the late 2000s. Since the US–China trade tensions of 2018, firms have added Southeast Asian sites to Chinese ones, a strategy called [[china-plus-one|“China plus one”]] (Unit 16 explained [[global-value-chain|global value chains]]: {{global-value-chains}}). The *ASEAN Investment Report 2025* (ASEAN Secretariat and UNCTAD) records FDI into ASEAN rising 8% to 226 billion US dollars in 2024, while global FDI fell by 11%.",
       "Analysts disagree about what “China plus one” means for the region. Some see a chance to move up value chains; others note that many new factories assemble Chinese components, so the region’s dependence on China may deepen rather than shrink, and US tariff policy since 2025 has made such “transshipment” a political issue.",
       "Formal integration followed. The [[asean-free-trade-area|ASEAN Free Trade Area]] (AFTA) was agreed in 1992; the [[atiga|ASEAN Trade in Goods Agreement]] (ATIGA, 2009) consolidated its rules; and the [[asean-economic-community|ASEAN Economic Community]] (AEC) was formally established at the end of 2015 ({{asean-economic-community}}). An upgraded ATIGA was signed at the ASEAN summit in Kuala Lumpur in October 2025, alongside an upgrade of the ASEAN–China free trade area, and members belong to [[rcep|RCEP]] with five partners (in force 2022).",
       "Yet integration stays shallow by design. ASEAN is a free trade area, not a customs union: each member keeps its own tariffs towards outsiders. Non-tariff barriers and services restrictions remain. According to ASEAN’s Secretary-General in October 2025, intra-ASEAN trade was 21.5% of members’ total trade, low compared with the EU. Supporters reply that the AEC was meant to attract investment into one production base, not to copy Europe."
@@ -348,7 +348,7 @@ ICA.addUnit({
       {table:[
         ["Who","Main argument"],
         ["Indonesian government","Downstreaming creates jobs, export revenue and industrial skills instead of shipping raw ore"],
-        ["European Union","The ban breaks WTO rules; a WTO panel agreed in November 2022, and Indonesia appealed (Unit 15)"],
+        ["European Union","The ban breaks WTO rules; a WTO panel agreed in November 2022, and Indonesia appealed (Unit 16)"],
         ["Environmental and labour groups","Coal-powered smelters, deforestation, pollution and unsafe work carry heavy local costs"],
         ["Some economists","Gains depend on prices and on dependence on a few foreign investors"]
       ]}
@@ -372,7 +372,7 @@ ICA.addUnit({
       {t:"Laos opening to foreign investment while keeping one-party rule", b:2, why:"Another transition from central planning."}
     ]},
     {id:"e4u20-l3-x2", type:"mcq", q:"Doner, Ritchie and Slater’s “systemic vulnerability” argument predicts that a resource-rich country with no serious external threat will most likely…", options:[
-      {t:"Build a weaker developmental state, because its leaders face less pressure to upgrade the economy", ok:true, why:"Right. Without mass pressure, threats and scarce resources together, leaders have less reason to build strong developmental institutions."},
+      {t:"Build a weaker developmental state", ok:true, why:"Right: its leaders face less pressure to upgrade the economy. Without mass pressure, threats and scarce resources together, leaders have less reason to build strong developmental institutions."},
       {t:"Build the strongest developmental state in Asia", why:"Their argument predicts the opposite: comfort reduces the pressure to build one."},
       {t:"Avoid all foreign investment", why:"The argument is about the strength of state institutions, not about rejecting FDI."},
       {t:"Become a customs union", why:"Customs unions are about trade between states, not this argument."}
@@ -385,9 +385,9 @@ ICA.addUnit({
       ["ASEAN Economic Community (2015)","The goal of a single market and production base","Formally established at the end of 2015."]
     ]},
     {id:"e4u20-l3-x4", type:"mcq", q:"A student says: “ASEAN has failed economically because intra-ASEAN trade is only about a fifth of members’ trade.” What is the strongest reply?", options:[
-      {t:"The AEC aimed mainly to make the region one production base for global investors, so trade with outside markets is expected to stay large", ok:true, why:"Right. ASEAN’s strategy was open regionalism tied to global value chains, not an inward-looking bloc."},
+      {t:"The AEC aimed to make ASEAN a production base for global markets", ok:true, why:"Right: the AEC aimed mainly to make the region one production base for global investors, so trade with outside markets is expected to stay large. ASEAN’s strategy was open regionalism tied to global value chains, not an inward-looking bloc."},
       {t:"Intra-ASEAN trade is actually over 90%", why:"ASEAN’s Secretary-General gave about 21.5% in October 2025."},
-      {t:"ASEAN is a customs union, so trade shares do not matter", why:"ASEAN is a free trade area, not a customs union: members keep their own external tariffs."},
+      {t:"ASEAN is a customs union, so its internal trade shares do not matter", why:"ASEAN is a free trade area, not a customs union: members keep their own external tariffs."},
       {t:"Trade figures cannot be measured in Southeast Asia", why:"They are measured, by ASEAN’s statistics office among others."}
     ]},
     {id:"e4u20-l3-x5", type:"number", q:"The US Geological Survey estimates world nickel mine production in 2025 at 3.9 million tonnes, of which Indonesia produced 2.6 million. What percentage came from Indonesia? (Round to the nearest whole number.)", answer:67, tol:1, unit:"%", why:"2.6 ÷ 3.9 = 0.667, so about 67%: roughly two-thirds of world mine output.", wrongs:[
@@ -399,7 +399,7 @@ ICA.addUnit({
       {t:"A new mining law requires minerals to be processed at home.", why:"2009."},
       {t:"A ban on exporting raw ore is enforced, then relaxed.", why:"Enforced in 2014, relaxed in 2017."},
       {t:"Nickel ore exports are banned again.", why:"From 1 January 2020."},
-      {t:"A WTO panel rules against the ban after an EU complaint, and Indonesia appeals.", why:"November–December 2022; with the Appellate Body not working, the appeal is pending and the ruling has not become binding (Unit 15)."},
+      {t:"A WTO panel rules against the ban after an EU complaint, and Indonesia appeals.", why:"November–December 2022; with the Appellate Body not working, the appeal is pending and the ruling has not become binding (Unit 16)."},
       {t:"Indonesia produces about two-thirds of world nickel mine output.", why:"USGS estimate for 2025."}
     ]},
     {id:"e4u20-l3-x7", type:"spot", q:"A briefing note on migration in ASEAN. Tap the statements that are **inaccurate or misleading**.", ask:"inaccurate claims", parts:[
@@ -471,7 +471,7 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 330"><rect class="d-soft" x="6" y="6" width="328" height="318" rx="12" stroke-width="2"/><text x="170" y="28" text-anchor="middle">ASEAN Regional Forum (27)</text><text class="s" x="170" y="45" text-anchor="middle">adds e.g. the EU, Canada, Pakistan, North Korea</text><rect class="d-gold" x="22" y="56" width="296" height="258" rx="12" stroke-width="2"/><text x="170" y="78" text-anchor="middle">East Asia Summit</text><text class="s" x="170" y="95" text-anchor="middle">adds Australia, India, New Zealand,</text><text class="s" x="170" y="110" text-anchor="middle">Russia and the United States</text><rect class="d-sage" x="38" y="122" width="264" height="182" rx="12" stroke-width="2"/><text x="170" y="144" text-anchor="middle">ASEAN Plus Three</text><text class="s" x="170" y="161" text-anchor="middle">adds China, Japan, South Korea</text><rect class="d-rose" x="54" y="174" width="232" height="120" rx="12" stroke-width="2"/><text x="170" y="204" text-anchor="middle">ASEAN (11)</text><text class="s" x="170" y="226" text-anchor="middle">sets the agenda and chairs</text><text class="s" x="170" y="244" text-anchor="middle">the wider forums: its</text><text class="s" x="170" y="262" text-anchor="middle">“centrality”</text></svg>', alt:"Four nested rectangles. Innermost: ASEAN, 11 members, which sets the agenda and chairs the wider forums, its centrality. Next: ASEAN Plus Three, adding China, Japan and South Korea. Next: the East Asia Summit, adding Australia, India, New Zealand, Russia and the United States. Outermost: the ASEAN Regional Forum, 27 participants, adding others such as the EU, Canada, Pakistan and North Korea.", cap:"ASEAN-centred forums as nested circles of membership (ASEAN Regional Forum count as given in Unit 12). ADMM-Plus has the same eight partners as the East Asia Summit."},
       "Members manage the rivalry between China and the United States in different ways ({{asean-and-great-powers}}). Kuik Cheng-Chwee’s idea of [[strategic-hedging|hedging]] (Unit 2) describes keeping options open with both. Evelyn Goh (“Great Powers and Hierarchical Order in Southeast Asia”, *International Security*, 2007/08) described **omni-enmeshment**: drawing every great power into regional institutions so that each has a stake in the order, combined with “complex balancing” of one power against another. Some members are US treaty allies (the Philippines, Thailand); others are close to China (Cambodia, Laos); most hedge.",
       "Surveys help, if read carefully. The ISEAS – Yusof Ishak Institute’s *State of Southeast Asia 2026* asked 2,008 regional experts, officials and business people (January–February 2026) which side ASEAN should choose if forced to align: 52% said China and 48% the United States, after a US lead in 2025 and a 50.5 to 49.5 China lead in 2024. These are elite opinions in one survey, not public opinion.",
-      "The South China Sea tests unity most. In 2012, ASEAN foreign ministers failed for the first time to issue a joint communiqué, after disagreement over how to mention the disputes. Unit 10 covered the 2016 arbitration ({{south-china-sea-arbitration}}). As of 13 November 2026 negotiations with China on a [[code-of-conduct-scs|code of conduct]] had not been concluded; the Philippines, as chair, had said it hoped to finalise the code during its chairship, with leaders due in Manila for the 49th Summit in mid-November."
+      "The South China Sea tests unity most. In 2012, ASEAN foreign ministers failed for the first time to issue a joint communiqué, after disagreement over how to mention the disputes. Unit 10 covered the 2016 arbitration ({{south-china-sea-arbitration}}). Negotiations with China on a [[code-of-conduct-scs|code of conduct]] were not concluded during the Philippines’ 2026 chairship: at the Manila meetings in mid-November 2026 about 80% of a draft was tentatively agreed, but whether the code would be legally binding was still disputed and no new deadline was set (Al Jazeera, 16 November 2026)."
     ]},
     {h:"Myanmar: the hardest test", body:[
       "On 24 April 2021, at a special leaders’ meeting in Jakarta attended by Myanmar’s military chief, ASEAN agreed the [[five-point-consensus|Five-Point Consensus]] (5PC): an immediate end to violence; constructive dialogue among all parties; a special envoy of the ASEAN chair to facilitate it; humanitarian assistance; and a visit by the envoy to meet all parties.",
@@ -500,8 +500,8 @@ ICA.addUnit({
       {t:"Timor-Leste becomes the eleventh member.", why:"26 October 2025, in Kuala Lumpur."}
     ]},
     {id:"e4u20-l4-x2", type:"mcq", q:"Ana says: “Under the ASEAN Charter, a majority of members can vote to suspend a member that breaks the rules.” Is she right?", options:[
-      {t:"No: decisions are by consultation and consensus, a serious breach goes to the Summit, and there is no suspension rule", ok:true, why:"Right. Articles 20 and 21 set consensus as the basic rule; the Charter has no suspension or expulsion procedure."},
-      {t:"Yes: a two-thirds majority can suspend a member", why:"That rule does not exist in ASEAN; some other organisations, such as the AU after coups, can suspend members."},
+      {t:"No: decisions are by consensus, and there is no suspension rule", ok:true, why:"Right. Decisions are by consultation and consensus, and a serious breach goes to the Summit. Articles 20 and 21 set consensus as the basic rule; the Charter has no suspension or expulsion procedure."},
+      {t:"Yes: a two-thirds majority of the leaders can vote to suspend a member", why:"That rule does not exist in ASEAN; some other organisations, such as the AU after coups, can suspend members."},
       {t:"Yes: the Secretary-General can suspend a member", why:"The Secretary-General coordinates and monitors; it has no such power."},
       {t:"No: the ASEAN Court of Justice decides", why:"ASEAN has no court."}
     ]},
@@ -526,7 +526,7 @@ ICA.addUnit({
       {v:3862, tol:5, why:"You divided 2,008 by 0.52. To find a share of a total, multiply."}
     ]},
     {id:"e4u20-l4-x6", type:"mcq", q:"A Southeast Asian government invites both China and the United States to join regional defence dialogues, signs trade deals with both, and holds exercises with Japan and Australia. Which concept describes this best?", options:[
-      {t:"Omni-enmeshment and hedging: binding all powers into regional institutions while keeping options open", ok:true, why:"Right. Goh’s omni-enmeshment and Kuik’s hedging both describe engaging everyone and avoiding a single bet."},
+      {t:"Omni-enmeshment and hedging", ok:true, why:"Right: binding all powers into regional institutions while keeping options open. Goh’s omni-enmeshment and Kuik’s hedging both describe engaging everyone and avoiding a single bet."},
       {t:"Bandwagoning with China", why:"Bandwagoning means joining the stronger side; this government engages both."},
       {t:"Strict neutrality under ZOPFAN", why:"Exercises with outside partners go beyond ZOPFAN’s ideal of keeping powers at arm’s length."},
       {t:"Supranational integration", why:"Nothing here transfers sovereignty to a regional body."}
@@ -640,10 +640,10 @@ ICA.addUnit({
       ["Huaqiao","“Overseas Chinese”, implying sojourners","A term many scholars now avoid."]
     ]},
     {id:"e4u20-l5-x3", type:"mcq", q:"What was a main criticism of Geertz’s santri–abangan–priyayi scheme?", options:[
-      {t:"Priyayi describes a social class rather than a religious variant, and the scheme mirrored the politics of its time", ok:true, why:"Right. Critics argued that the three categories mixed religion and class and reflected 1950s party alignments."},
+      {t:"It mixed religion with class and mirrored 1950s politics", ok:true, why:"Right. Priyayi describes a social class rather than a religious variant, and the scheme reflected 1950s party alignments."},
       {t:"Geertz studied Thailand, not Java", why:"*The Religion of Java* (1960) is about Java."},
       {t:"It ignored Islam entirely", why:"Islam is central to the santri category."},
-      {t:"It was based only on colonial archives", why:"Geertz did ethnographic fieldwork in a Javanese town."}
+      {t:"It was based only on Dutch colonial archives, not on fieldwork", why:"Geertz did ethnographic fieldwork in a Javanese town."}
     ]},
     {id:"e4u20-l5-x4", type:"order", q:"Put these events in Indonesia’s ethnic Chinese history in order.", items:[
       {t:"The government restricts Chinese schools, press and public festivals.", why:"From 1967, under Suharto."},
@@ -653,10 +653,10 @@ ICA.addUnit({
       {t:"Jakarta’s ethnic Chinese Christian governor is convicted of blasphemy after mass rallies.", why:"2017; scholars debate what it shows about religion and ethnicity in politics."}
     ]},
     {id:"e4u20-l5-x5", type:"mcq", q:"Fatima uses Amy Chua’s idea of “market-dominant minorities” in an essay on ethnic Chinese Indonesians. What should she add to be fair?", options:[
-      {t:"The critics’ point that the idea lumps rich and poor together, overstates dominance and can feed stereotypes", ok:true, why:"Right. A fair essay states the argument and its main objections."},
+      {t:"The critics’ objections, such as lumping rich and poor together", ok:true, why:"Right: critics say the idea lumps rich and poor together, overstates dominance and can feed stereotypes. A fair essay states the argument and its main objections."},
       {t:"Proof that all ethnic Chinese are wealthy", why:"That claim is false and is exactly the stereotype critics warn about."},
       {t:"Nothing: Chua’s idea is settled scholarly consensus", why:"It is contested, not consensus."},
-      {t:"A note that the idea comes from Furnivall’s 1939 book", why:"Chua’s book dates from 2003; Furnivall wrote about plural societies, a different concept."}
+      {t:"A note that the idea comes from Furnivall’s 1939 book on plural societies", why:"Chua’s book dates from 2003; Furnivall wrote about plural societies, a different concept."}
     ]},
     {id:"e4u20-l5-x6", type:"spot", q:"A paragraph from a seminar paper. Tap the sentences that **essentialise religion or ethnicity**.", ask:"essentialising claims", parts:[
       {t:"Indonesia’s state recognises six religions.", flag:false, why:"Accurate and specific."},
@@ -749,7 +749,7 @@ ICA.addUnit({
      pro:[
       "**Critiques.** Historians warn against treating the mandala as timeless: mainland states such as Burma, Siam and Vietnam became more centralised from the sixteenth century onward (Lieberman, *Strange Parallels*). Others note that the model rests heavily on court sources and inscriptions.",
       "**Siam’s geo-body.** Thongchai Winichakul (1994) showed how, in the late nineteenth century, overlapping frontiers were replaced by mapped borders, creating the modern [[geo-body|geo-body]]. The mandala and the geo-body are often taught together as before and after.",
-      "**IR uses.** Scholars of Asian international relations compare mandala-style orders with ideas of hierarchy and tribute in East Asia (Unit 19) and with Westphalian sovereignty, asking whether non-Western historical orders offer concepts for Global IR ({{global-ir}}).",
+      "**IR uses.** Scholars of Asian international relations compare mandala-style orders with ideas of hierarchy and tribute in East Asia (Unit 20) and with Westphalian sovereignty, asking whether non-Western historical orders offer concepts for Global IR ({{global-ir}}).",
       {tip:"Do not use “mandala” as a cultural explanation for present-day politics without evidence; use it as a historical model with named authors."}
      ]
     },
@@ -798,7 +798,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Clientelism.** Aspinall and Berenschot’s *Democracy for Sale* (2019) shows how [[money-politics|money politics]] and brokers shape Indonesian elections; similar patterns are studied in the Philippines and Thailand. Critics ask whether clientelism undermines democracy or is one way citizens hold politicians to account.",
-      "**One-party states.** Vietnam and Laos raise questions of authoritarian resilience: institutionalised succession, performance legitimacy and controlled feedback. Comparisons with China (Unit 19) are common.",
+      "**One-party states.** Vietnam and Laos raise questions of authoritarian resilience: institutionalised succession, performance legitimacy and controlled feedback. Comparisons with China (Unit 20) are common.",
       "**Measurement traps.** Indices weight elections, civil liberties and rule of law differently; small changes can move a country across a category line. Cite the index, version and year, and check the indicator that drives a change.",
       {warn:"Never call one side’s view “the truth” in a contested case. Attribute positions and date them."}
      ]
@@ -872,7 +872,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Debates.** Does “China plus one” move the region up value chains, or deepen dependence on Chinese inputs? Can resource-based industrial policy, such as Indonesia’s nickel [[downstreaming|downstreaming]], avoid the problems of earlier state-led projects? Is the [[middle-income-trap|middle-income trap]] a real trap or a slowing that all economies face?",
-      "**Crises.** The 1997–98 Asian financial crisis (Unit 15) reshaped politics: it ended Suharto’s rule and led Malaysia to impose capital controls, a decision still debated.",
+      "**Crises.** The 1997–98 Asian financial crisis (Unit 16) reshaped politics: it ended Suharto’s rule and led Malaysia to impose capital controls, a decision still debated.",
       "**Data.** Use World Bank, ASEAN Secretariat and UNCTAD data with years; note that FDI figures are revised, and check whether a series covers ten members or includes Timor-Leste, which joined in 2025.",
       {tip:"Compare two economies with the same indicators and years before drawing lessons."}
      ]
@@ -920,7 +920,7 @@ ICA.addUnit({
       "**Timeline.** A 2009 mining law required domestic processing; a ban on raw ore exports was enforced in 2014, relaxed in 2017 for firms that committed to building smelters, and reinstated for nickel ore from 1 January 2020 (announced in August 2019).",
       "**Output.** USGS estimates: Indonesian mine output 2.31 million tonnes in 2024 and 2.6 million in 2025, of a world total of 3.9 million in 2025; the Philippines produced about 0.27 million.",
       "**Investment.** Much of the processing capacity was built by Chinese firms, often in industrial parks such as the Indonesia Morowali Industrial Park in Central Sulawesi.",
-      "**WTO.** The EU challenged the measures (DS592, requested November 2019). A panel report of 30 November 2022 found the ore export ban and a domestic processing requirement inconsistent with GATT Article XI:1; Indonesia appealed on 8 December 2022, and with the Appellate Body not functioning the appeal is pending ([[resource-nationalism|resource nationalism]]; Unit 15)."
+      "**WTO.** The EU challenged the measures (DS592, requested November 2019). A panel report of 30 November 2022 found the ore export ban and a domestic processing requirement inconsistent with GATT Article XI:1; Indonesia appealed on 8 December 2022, and with the Appellate Body not functioning the appeal is pending ([[resource-nationalism|resource nationalism]]; Unit 16)."
      ],
      pro:[
       "**For.** The government and many Indonesian economists argue that the ban created jobs, export revenue and industrial skills, and that today’s rich countries used similar policies (the “kicking away the ladder” argument).",
@@ -1002,7 +1002,7 @@ ICA.addUnit({
      pro:[
       "**Debates.** Is centrality real agency or a convenient arrangement that great powers tolerate while it suits them? Does hedging still work as rivalry sharpens, or will members be pushed to align? Do minilateral groups such as the Quad or AUKUS strengthen or sideline ASEAN (Unit 12)?",
       "**Reading surveys.** The ISEAS survey asks elites, not the public; forced-choice questions can exaggerate swings; wording changes between years. Use it as one indicator alongside official statements, trade and defence data.",
-      "**Other powers.** Japan’s long role as investor and aid donor (the Fukuda Doctrine, Unit 4), India’s Act East policy, Australia, South Korea and the EU all court ASEAN; ASEAN’s own Outlook on the Indo-Pacific (2019) is covered in Unit 21.",
+      "**Other powers.** Japan’s long role as investor and aid donor (the Fukuda Doctrine, Unit 4), India’s Act East policy, Australia, South Korea and the EU all court ASEAN; ASEAN’s own Outlook on the Indo-Pacific (2019) is covered in Unit 22.",
       {tip:"When you cite the survey, give the year, sample size, who was asked and the exact question."}
      ]
     },
@@ -1078,7 +1078,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Market-dominant minorities.** Amy Chua’s *World on Fire* (2003) argued that minorities dominant in markets face backlash when markets and democracy spread together. Critics say this lumps rich and poor together, overstates dominance and risks reinforcing stereotypes.",
-      "**China’s outreach.** Beijing’s engagement with ethnic Chinese abroad raises questions of influence; some welcome cultural and business ties, others worry about political pressure (Unit 19). Avoid assuming any person’s loyalties from ancestry.",
+      "**China’s outreach.** Beijing’s engagement with ethnic Chinese abroad raises questions of influence; some welcome cultural and business ties, others worry about political pressure (Unit 20). Avoid assuming any person’s loyalties from ancestry.",
       "**Methods.** Use census categories with care (they are political choices), and include voices from within the communities.",
       {tip:"Specify country, generation, class and language when you write about “the Chinese” in any Southeast Asian country."}
      ]
@@ -1161,6 +1161,68 @@ ICA.addUnit({
    {id:"milk-tea-alliance", term:"Milk Tea Alliance", def:"An online solidarity network of young activists in Thailand, Hong Kong and Taiwan from 2020, later joined by many in Myanmar.", codex:"southeast-asian-popular-culture"}
   ],
   checkpoint:["e4u20-q02","e4u20-q05","e4u20-q08","e4u20-q11","e4u20-q15","e4u20-q20","e4u20-q23","e4u20-q27","e4u20-q31","e4u20-q35","e4u20-q39","e4u20-q43"],
+  cpBank:[
+   {id:"e4u20-cp01", lesson:"e4u20-l1", level:1, q:"For generations, tenants accepted high rents because landlords lent them rice in bad years. When landlords stop the loans, the tenants riot, saying an old duty has been broken. Which concept fits?", options:[
+     {t:"Everyday resistance", why:"Everyday resistance is quiet: foot-dragging, gossip, pilfering. A riot over a broken duty fits a different idea of Scott’s."},
+     {t:"The geo-body", why:"Thongchai’s geo-body is about how Siam turned frontiers into fixed national territory."},
+     {t:"Moral economy", ok:true, why:"Yes. Scott (1976) argued that peasants rebel when elites break a shared sense of a right to subsistence."},
+     {t:"The mandala state", why:"That describes early polities as circles of power around a ruler, not peasant rebellion."}]},
+   {id:"e4u20-cp02", lesson:"e4u20-l1", level:2, q:"A paper explains Malaysia’s ethnic politics today purely through Furnivall’s plural society: fixed groups that meet only in the market. Drawing on Lessons 1 and 5, what is the best critique?", options:[
+     {t:"Furnivall wrote about colonial Africa, not Southeast Asia, so the idea does not fit", why:"Furnivall studied colonial Burma and the Netherlands Indies."},
+     {t:"It froze groups that were mixing and changing, as Peranakan blending shows", ok:true, why:"Right. Lesson 1 records this critique, and Lesson 5 shows blending (Peranakan) and very different paths for ethnic Chinese across the region."},
+     {t:"Malaysia has no ethnic politics, so the idea does not apply", why:"Ethnic politics, including debates on bumiputera preferences, is central in Malaysia."},
+     {t:"Plural society means a democracy with many parties, which Malaysia lacks", why:"Furnivall’s term describes communities living side by side under colonial rule, not a party system."}]},
+   {id:"e4u20-cp03", lesson:"e4u20-l1", level:3, q:"Kai wants to explain why Thailand’s military has intervened in politics so often. Drawing on Lessons 1 and 5, which research plan best follows the unit’s advice?", options:[
+     {t:"Compare Thailand only with France, the classic European case of repeated military intervention", why:"The unit warns that comparison within the region often teaches more than comparison with Europe."},
+     {t:"Explain it through “Asian values”, since Southeast Asians accept strong rulers", why:"The unit tells you to avoid “Southeast Asians believe…” and “Asian values” claims."},
+     {t:"Compare Thailand with a regional case on the same index and year, and trace the mechanism", ok:true, why:"Yes. Compare within the region, use comparable evidence, and use process tracing to check that the proposed mechanism operated."},
+     {t:"Study Thailand alone in depth, since its many coups reveal the cause without comparison", why:"Depth matters, but the unit’s method compares cases with the same kinds of evidence; one case alone cannot show what made the difference."}]},
+   {id:"e4u20-cp04", lesson:"e4u20-l2", level:2, q:"Over several years an elected president packs the courts, uses parliament to extend term limits and pressures the media. There is no coup. Which concept fits best?", options:[
+     {t:"Democratic backsliding by executive aggrandisement", ok:true, why:"Right. Bermeo noted that gradual erosion by elected leaders has become more common than open coups."},
+     {t:"Democracy through strength, as Slater and Wong describe it", why:"Slater and Wong’s idea describes regimes that democratise because they are confident, not leaders eroding democracy."},
+     {t:"Network monarchy, as McCargo described it", why:"McCargo’s term describes informal palace–military–bureaucracy networks in Thailand."},
+     {t:"A People Power revolution", why:"People Power was the 1986 protest movement that removed Marcos, the opposite direction."}]},
+   {id:"e4u20-cp05", lesson:"e4u20-l2", level:2, q:"After violent riots and an insurgency, an invented country’s business, bureaucratic and ethnic elites unite behind one strong ruling party. It then governs for decades. Whose argument explains this best?", options:[
+     {t:"Huntington’s third wave of democratisation after 1974", why:"Huntington described the spread of democracy after 1974, not durable authoritarian rule."},
+     {t:"Levitsky and Way’s competitive authoritarianism", why:"That concept describes how incumbents tilt elections, not why elites unite in the first place."},
+     {t:"Bermeo’s democratic backsliding through executive aggrandisement by leaders", why:"Backsliding is erosion of an existing democracy, not elite unity after unrest."},
+     {t:"Slater’s *Ordering Power*: unrest makes elites unite behind strong parties", ok:true, why:"Yes. Slater used this argument for Malaysia and Singapore."}]},
+   {id:"e4u20-cp06", lesson:"e4u20-l2", level:3, q:"A student writes: “Singapore proves modernisation theory: it is rich and educated, so it must be a full democracy.” What is the best critique?", options:[
+     {t:"Singapore is still a poor country, so modernisation theory simply does not apply to it", why:"Singapore is one of the region’s richest societies, which is why it is a puzzle."},
+     {t:"Singapore has had several changes of ruling party since independence", why:"One party has governed since 1959."},
+     {t:"It is a puzzle for the theory: rich and educated, yet no change of ruling party", ok:true, why:"Right. The lesson presents it against modernisation theory’s expectation, and reports both readings."},
+     {t:"Modernisation theory predicts that wealth leads to stable one-party rule", why:"The theory expects wealth to bring democracy, which is why Singapore is hard for it to explain."}]},
+   {id:"e4u20-cp07", lesson:"e4u20-l3", level:1, q:"Exports boom, but the machines and designs are foreign, and local tycoons grew rich on state licences rather than innovation. Which critique fits?", options:[
+     {t:"Ersatz capitalism", ok:true, why:"Yes. Yoshihara Kunio (1988) used this term for growth without domestic technological depth."},
+     {t:"Downstreaming", why:"Downstreaming is Indonesia’s policy of processing minerals at home."},
+     {t:"The middle-income trap", why:"That describes being stuck between cheap-labour and high-skill competition, not this specific critique."},
+     {t:"China plus one", why:"That is a firm strategy of adding sites outside China."}]},
+   {id:"e4u20-cp08", lesson:"e4u20-l3", level:2, q:"A government welcomes a Chinese-owned factory that assembles Chinese parts for export to the US, and courts US investment too, without choosing sides. Drawing on Lessons 3 and 4, which pair of ideas fits?", options:[
+     {t:"Ersatz capitalism, and the ASEAN Way of consultation", why:"Neither captures the firm strategy or the government’s balancing between powers."},
+     {t:"Resource nationalism, and the 1971 neutrality hopes expressed in ZOPFAN", why:"Resource nationalism concerns minerals; ZOPFAN was a 1971 hope of neutrality, not a description of this policy."},
+     {t:"“China plus one”, which can deepen reliance on China, and hedging", ok:true, why:"Right. Lesson 3 notes that new factories often assemble Chinese components, and Lesson 4 describes hedging."},
+     {t:"A customs union, and Goh’s omni-enmeshment", why:"ASEAN is not a customs union, and omni-enmeshment is about drawing powers into regional institutions."}]},
+   {id:"e4u20-cp09", lesson:"e4u20-l3", level:3, q:"A domestic worker and an engineer, both from one ASEAN country, want to work in another member state. Which statement about ASEAN’s rules is most accurate?", options:[
+     {t:"Both are covered equally by binding ASEAN treaties on the free movement of workers", why:"ASEAN has no binding free-movement treaty for workers in general; its rules differ by skill."},
+     {t:"Neither is covered by any ASEAN instrument, binding or non-binding", why:"The engineer is covered by a mutual recognition arrangement, and there are declarations on migrant workers."},
+     {t:"The domestic worker has stronger ASEAN rights than the engineer does", why:"The reverse: ASEAN’s rules favour skilled workers."},
+     {t:"The engineer has a mutual recognition arrangement; the domestic worker mainly non-binding declarations", ok:true, why:"Yes. MRAs cover professions such as engineering, while the 2017 Consensus on migrant workers is not a binding treaty."}]},
+   {id:"e4u20-cp10", lesson:"e4u20-l4", level:1, q:"An outside power wants to show that it accepts ASEAN’s norms of sovereignty, non-interference and peaceful settlement of disputes. Which text can it accede to?", options:[
+     {t:"The Treaty of Amity and Cooperation", ok:true, why:"Right. The TAC (1976) wrote down these norms, and outside powers from China and Japan to the US and the EU have acceded."},
+     {t:"The Five-Point Consensus agreed in 2021", why:"The 5PC is ASEAN’s 2021 plan on Myanmar, not a treaty outsiders join."},
+     {t:"The ASEAN Charter", why:"The Charter is ASEAN’s own constitution for members; outsiders do not accede to it."},
+     {t:"The Bangkok Declaration", why:"That 1967 statement founded ASEAN among five governments; it is not open to outside powers."}]},
+   {id:"e4u20-cp11", lesson:"e4u20-l4", level:3, q:"After Myanmar’s 2021 coup, ASEAN invites only a “non-political representative” of Myanmar to its summits. Applying Lee Jones’s argument about non-interference, how is this step best read?", options:[
+     {t:"As proof that ASEAN has abandoned non-interference for good, on all issues and members", why:"Jones does not argue that the norm has been abandoned; he argues it was always applied selectively."},
+     {t:"As the norm bending once again because ruling elites’ interests changed", ok:true, why:"Yes. Jones (2012) argues non-interference was always applied selectively to protect ruling elites, so it bends when their interests change. The lesson gives his general argument; here you apply it to the Myanmar case."},
+     {t:"As a decision taken by majority vote under the Charter’s suspension rule", why:"The Charter has no rule for suspension; decisions rest on consultation and consensus."},
+     {t:"As a constructivist sign that consensus builds trust among members", why:"That is the constructivist reading of ASEAN, which Jones criticises."}]},
+   {id:"e4u20-cp12", lesson:"e4u20-l5", level:2, q:"Mei analyses a popular Filipino TV drama only by summarising its plot. Using the lesson’s four questions, what should she add?", options:[
+     {t:"A ranking of which country in the region makes the best TV dramas", why:"Ranking is not analysis, and the lesson does not ask for it."},
+     {t:"Proof that the drama is typical of a single “Asian culture”", why:"The unit warns against essentialising claims about a single regional culture."},
+     {t:"Only the viewing figures, since audience size alone shows what a drama means", why:"Audience size is part of one question, but it leaves out who made it, what it says and how it is read."},
+     {t:"Who made it, who watches, what it says about society, and how it is read", ok:true, why:"Right. These four questions, linked to encoding and decoding, turn a summary into analysis."}]}
+  ],
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u20-q01", lesson:"e4u20-l1", level:1, q:"How many member states does ASEAN have as of November 2026?", options:[
@@ -1169,33 +1231,33 @@ ICA.addUnit({
      {t:"Five", why:"Five states founded ASEAN in 1967."},
      {t:"Twenty-seven", why:"That is the number of ASEAN Regional Forum participants, not ASEAN members."}]},
    {id:"e4u20-q02", lesson:"e4u20-l1", level:1, q:"Which event gave the name “Southeast Asia” wide official use in English?", options:[
-     {t:"The Allies’ creation of South East Asia Command in 1943", ok:true, why:"Right: a wartime command under Mountbatten spread the term."},
+     {t:"South East Asia Command in 1943", ok:true, why:"Right: the Allies’ wartime command under Mountbatten spread the term."},
      {t:"The Treaty of Westphalia", why:"Westphalia (1648) concerned Europe."},
      {t:"The Bandung Conference of 1955", why:"Bandung was an Asian–African conference; the name was already in use."},
      {t:"The signing of the ASEAN Charter in 2007", why:"The name was common decades before."}]},
    {id:"e4u20-q03", lesson:"e4u20-l1", level:2, q:"Hana writes that Thailand “escaped colonialism and so developed without Western influence”. Which work most directly challenges her?", options:[
-     {t:"Thongchai Winichakul’s *Siam Mapped* (1994)", ok:true, why:"Right: it shows Siam adopting Western mapping and becoming a territorial state like its colonial neighbours."},
+     {t:"Thongchai’s *Siam Mapped* (1994)", ok:true, why:"Right: Thongchai Winichakul shows Siam adopting Western mapping and becoming a territorial state like its colonial neighbours."},
      {t:"Reid’s *Age of Commerce*", why:"Reid writes about 1450–1680 trade, not Siam’s nineteenth-century transformation."},
-     {t:"Furnivall’s *Netherlands India*", why:"Furnivall studied the Dutch colony."},
+     {t:"Furnivall’s *Netherlands India* (1939)", why:"Furnivall studied the Dutch colony."},
      {t:"Scott’s *Weapons of the Weak*", why:"Scott studied a Malaysian village."}]},
    {id:"e4u20-q04", lesson:"e4u20-l1", level:1, q:"What is a “plural society” in Furnivall’s sense?", options:[
-     {t:"Communities living side by side, meeting mainly in the market, held together by colonial power", ok:true, why:"Right: his description of colonial Burma and the Netherlands Indies."},
+     {t:"Communities living side by side, meeting mainly in the market", ok:true, why:"Right: held together by colonial power. This was his description of colonial Burma and the Netherlands Indies."},
      {t:"A society that celebrates diversity through multicultural policy", why:"Furnivall described separation, not celebration."},
      {t:"A society with many political parties", why:"That is political pluralism, a different idea."},
      {t:"A society with many languages but one religion", why:"His concept is about communities and the market, not language and religion counts."}]},
    {id:"e4u20-q05", lesson:"e4u20-l1", level:2, q:"Which statement best represents Lieberman’s reply to Reid?", options:[
-     {t:"Mainland Southeast Asian states followed rhythms of consolidation similar to other parts of Eurasia, so the region was less unique", ok:true, why:"Right: that is the argument of *Strange Parallels* (2003, 2009)."},
+     {t:"Mainland states followed Eurasian rhythms, so the region was less unique", ok:true, why:"Right: mainland Southeast Asian states followed rhythms of consolidation similar to other parts of Eurasia. That is the argument of *Strange Parallels* (2003, 2009)."},
      {t:"Southeast Asia never traded by sea", why:"Lieberman does not deny maritime trade."},
      {t:"The region was invented by ASEAN", why:"That is not Lieberman’s argument."},
-     {t:"Reid should have studied only colonial archives", why:"Lieberman’s critique is comparative, not about archives."}]},
+     {t:"Reid should have relied only on colonial archives instead of trade records", why:"Lieberman’s critique is comparative, not about archives."}]},
    {id:"e4u20-q06", lesson:"e4u20-l1", level:2, q:"Tomás finds that villagers in his archive study quietly under-reported harvests to tax collectors for decades. Which concept fits?", options:[
      {t:"Everyday resistance", ok:true, why:"Right: quiet, low-risk non-compliance is Scott’s everyday resistance."},
      {t:"Network monarchy", why:"That concerns Thai elite networks."},
      {t:"Geo-body", why:"That concerns national territory created by mapping."},
      {t:"Age of commerce", why:"That is Reid’s trading era."}]},
    {id:"e4u20-q07", lesson:"e4u20-l1", level:3, q:"A seminar paper claims: “Zomia proves that all hill peoples rejected states.” What is the best critique?", options:[
-     {t:"Scott’s argument is contested: critics say the evidence is thin and some upland peoples built states, so “all” overgeneralises", ok:true, why:"Right: a careful paper presents Zomia as an argument with critics, not proof."},
-     {t:"Zomia is a real country with fixed borders", why:"Zomia is a scholarly name for a zone, not a state."},
+     {t:"Zomia is a contested argument, and “all” overgeneralises", ok:true, why:"Right: critics say the evidence is thin and some upland peoples built states. A careful paper presents Zomia as an argument with critics, not proof."},
+     {t:"Zomia is a real country with fixed borders in the highlands", why:"Zomia is a scholarly name for a zone, not a state."},
      {t:"Scott never wrote about hill peoples", why:"*The Art of Not Being Governed* (2009) is about them."},
      {t:"The claim is fine because Scott is famous", why:"Fame does not settle a debate."}]},
    {id:"e4u20-q08", lesson:"e4u20-l1", level:2, q:"What did John Smail (1961) call for?", options:[
@@ -1204,20 +1266,20 @@ ICA.addUnit({
      {t:"The founding of ASEAN", why:"He wrote a historiographical essay, six years before ASEAN existed."},
      {t:"Abolishing area studies", why:"He wanted to change the field’s perspective, not abolish it."}]},
    {id:"e4u20-q09", lesson:"e4u20-l1", level:3, q:"Mei plans a paper titled “Southeast Asian culture and authoritarianism”. What is the best advice?", options:[
-     {t:"Narrow it to named countries, periods and groups, use local sources and compare within the region", ok:true, why:"Right: avoid essentialising eleven diverse states."},
-     {t:"Keep it broad; the region shares one culture", why:"The region is very diverse; broad cultural claims overgeneralise."},
+     {t:"Narrow it to named cases and compare within the region", ok:true, why:"Right: name countries, periods and groups, use local sources and compare within the region, to avoid essentialising eleven diverse states."},
+     {t:"Keep it broad, since the whole region shares one culture", why:"The region is very diverse; broad cultural claims overgeneralise."},
      {t:"Use only Western sources to stay objective", why:"Local scholarship and sources are essential, and no source is automatically objective."},
      {t:"Compare the region only with France", why:"Comparison within the region is often more revealing."}]},
    /* ---- Lesson 2 ---- */
    {id:"e4u20-q10", lesson:"e4u20-l2", level:1, q:"What happened in Malaysia’s general election of May 2018?", options:[
-     {t:"The ruling coalition lost power for the first time since independence", ok:true, why:"Right: Pakatan Harapan won, and Mahathir Mohamad returned as prime minister."},
+     {t:"The ruling coalition lost power for the first time", ok:true, why:"Right: for the first time since independence. Pakatan Harapan won, and Mahathir Mohamad returned as prime minister."},
      {t:"The army annulled the result", why:"There was no coup; power passed peacefully."},
-     {t:"The election was postponed for two years", why:"It was held and produced a turnover."},
+     {t:"The election was postponed for two years by the king", why:"It was held and produced a turnover."},
      {t:"The People’s Action Party won", why:"The PAP is Singapore’s ruling party."}]},
    {id:"e4u20-q11", lesson:"e4u20-l2", level:2, q:"Which definition matches “competitive authoritarianism”?", options:[
-     {t:"Real elections in which incumbents abuse state power to tilt the playing field", ok:true, why:"Right: Levitsky and Way’s definition."},
+     {t:"Real elections on a field tilted by incumbents", ok:true, why:"Right: Levitsky and Way’s definition, with real elections in which incumbents abuse state power to tilt the playing field."},
      {t:"A regime with no elections at all", why:"That is closed authoritarianism."},
-     {t:"A democracy with very competitive parties", why:"The concept describes unfair, not just close, competition."},
+     {t:"A democracy with very competitive, closely fought parties", why:"The concept describes unfair, not just close, competition."},
      {t:"A monarchy with an elected parliament", why:"That describes constitutional monarchy, which may or may not be democratic."}]},
    {id:"e4u20-q12", lesson:"e4u20-l2", level:2, q:"According to Bermeo (2016), how does democratic backsliding now most often happen?", options:[
      {t:"Gradually, through executive aggrandisement by elected leaders", ok:true, why:"Right: open coups have become rarer than slow erosion."},
@@ -1235,33 +1297,33 @@ ICA.addUnit({
      {t:"Singapore, Vietnam and Cambodia", why:"These are among the cases where resistance to reform proved intractable."},
      {t:"Brunei, Laos and Timor-Leste", why:"These are not the book’s grouping."}]},
    {id:"e4u20-q15", lesson:"e4u20-l2", level:3, q:"Ana writes: “Singapore is a dictatorship because one party has always won.” What is the best revision?", options:[
-     {t:"Attribute classifications: name the index or scholar and year, note the government’s and supporters’ counter-arguments, and define the term", ok:true, why:"Right: dominant-party rule alone does not settle the label; use transparent, attributed classification."},
-     {t:"Replace “dictatorship” with “perfect democracy”", why:"That swaps one unsupported verdict for another."},
+     {t:"Name who classifies it, and when, and note counter-arguments", ok:true, why:"Right: name the index or scholar and year, note the government’s and supporters’ counter-arguments, and define the term. Dominant-party rule alone does not settle the label."},
+     {t:"Replace “dictatorship” with “perfect democracy” to balance it", why:"That swaps one unsupported verdict for another."},
      {t:"Remove Singapore from the paper", why:"Avoiding the case does not fix the method."},
      {t:"Add “everyone agrees”", why:"Scholars disagree; appealing to consensus that does not exist is misleading."}]},
    {id:"e4u20-q16", lesson:"e4u20-l2", level:1, q:"What is the National Unity Government (NUG)?", options:[
-     {t:"A body formed in April 2021 by Myanmar’s ousted legislators and allies, rejecting military rule", ok:true, why:"Right: it rejects the military’s rule and the 2025–26 elections."},
-     {t:"Myanmar’s military-led government after 2021", why:"That is the body the NUG opposes."},
+     {t:"A body formed by Myanmar’s ousted legislators in 2021", ok:true, why:"Right: formed in April 2021 by ousted legislators and allies, it rejects the military’s rule and the 2025–26 elections."},
+     {t:"Myanmar’s military-led government formed after the 2021 coup", why:"That is the body the NUG opposes."},
      {t:"An ASEAN committee on Myanmar", why:"The NUG is a Myanmar opposition body."},
      {t:"Thailand’s coalition government of 2026", why:"Thailand’s 2026 government is led by Anutin Charnvirakul; the NUG is a Myanmar body."}]},
    {id:"e4u20-q17", lesson:"e4u20-l2", level:2, q:"Which description of Myanmar in 2026 is neutral and accurate?", options:[
-     {t:"In April 2026 a parliament formed after the military-run 2025–26 elections elected Min Aung Hlaing president; the NUG rejects the elections", ok:true, why:"Right: dated, factual and attributed."},
-     {t:"Myanmar’s legitimate democratic government took office in 2026", why:"This takes a side on a contested question."},
+     {t:"Min Aung Hlaing became president after military-run elections; the NUG rejects them", ok:true, why:"Right: dated, factual and attributed. In April 2026 a parliament formed after the military-run 2025–26 elections elected Min Aung Hlaing president; the NUG rejects the elections."},
+     {t:"Myanmar’s legitimate democratic government took office in 2026 after free and fair elections", why:"This takes a side on a contested question."},
      {t:"Myanmar’s regime staged fake elections", why:"Loaded and unattributed; quote who says so."},
      {t:"Myanmar returned to NLD rule in 2026", why:"The NLD was dissolved in 2023 and did not take part."}]},
    {id:"e4u20-q18", lesson:"e4u20-l2", level:3, q:"Dmitri compares Vietnam and Singapore and says both are “the same kind of regime because one party always governs”. What does he miss?", options:[
-     {t:"Vietnam is a constitutionally one-party state; Singapore holds multiparty elections that opposition parties contest and sometimes win seats in", ok:true, why:"Right: the rules differ even if the outcome looks similar."},
+     {t:"Vietnam is a one-party state; Singapore holds multiparty elections", ok:true, why:"Right: Vietnam is a constitutionally one-party state; Singapore holds multiparty elections that opposition parties contest and sometimes win seats in. The rules differ even if the outcome looks similar."},
      {t:"Nothing: they are identical systems", why:"Their constitutions and electoral rules differ fundamentally."},
      {t:"Singapore is a monarchy", why:"Singapore is a parliamentary republic."},
-     {t:"Vietnam has no National Assembly", why:"It has one, with candidates vetted by party-led bodies."}]},
+     {t:"Vietnam has no National Assembly, while Singapore has a parliament", why:"It has one, with candidates vetted by party-led bodies."}]},
    /* ---- Lesson 3 ---- */
    {id:"e4u20-q19", lesson:"e4u20-l3", level:1, q:"What is “China plus one”?", options:[
-     {t:"Firms adding production sites outside China, often in Southeast Asia, while keeping Chinese ones", ok:true, why:"Right: a strategy that spread after the US–China trade tensions of 2018."},
+     {t:"Firms adding production sites outside China", ok:true, why:"Right: often in Southeast Asia, while keeping Chinese ones. The strategy spread after the US–China trade tensions of 2018."},
      {t:"China’s plan to join ASEAN as a twelfth member", why:"No such plan exists."},
      {t:"A Chinese tariff of one per cent", why:"It is a firms’ location strategy, not a tariff."},
      {t:"The ASEAN Plus Three process", why:"That is a diplomatic forum."}]},
    {id:"e4u20-q20", lesson:"e4u20-l3", level:2, q:"Why is the ASEAN Economic Community described as “shallow” compared with the EU?", options:[
-     {t:"It is a free trade area without a customs union, common currency, free movement of workers or a court", ok:true, why:"Right: members keep their own external tariffs and sovereignty."},
+     {t:"It is a free trade area with no customs union or court", ok:true, why:"Right: there is no customs union, common currency, free movement of workers or court; members keep their own external tariffs and sovereignty."},
      {t:"It has no members", why:"It has eleven."},
      {t:"Its tariffs among members are higher than the EU’s external tariff", why:"Intra-ASEAN tariffs have been cut sharply."},
      {t:"It bans foreign investment", why:"It was designed to attract foreign investment."}]},
@@ -1271,14 +1333,14 @@ ICA.addUnit({
      {t:"2009", why:"2009 was the mining law that required domestic processing."},
      {t:"2025", why:"The ban was already in force well before."}]},
    {id:"e4u20-q22", lesson:"e4u20-l3", level:2, q:"Which argument comes from environmental and labour groups in the nickel debate?", options:[
-     {t:"Coal-powered smelters, deforestation, pollution and unsafe work carry heavy local costs", ok:true, why:"Right: these groups stress local environmental and labour costs."},
+     {t:"Smelters, pollution and unsafe work carry heavy local costs", ok:true, why:"Right: coal-powered smelters, deforestation, pollution and unsafe work. These groups stress local environmental and labour costs."},
      {t:"The ban breaks WTO rules", why:"That is the EU’s argument."},
-     {t:"Downstreaming creates jobs and export revenue", why:"That is the Indonesian government’s main argument."},
+     {t:"Downstreaming creates jobs and export revenue for local communities", why:"That is the Indonesian government’s main argument."},
      {t:"Nickel is not used in batteries", why:"False: many battery chemistries use nickel."}]},
    {id:"e4u20-q23", lesson:"e4u20-l3", level:3, q:"Oluwaseun argues that Indonesia’s nickel policy “obviously succeeded because output rose”. What should a careful reply add?", options:[
-     {t:"Ask who captured the gains and at what environmental and social cost, and note dependence on prices, technology and a few investors", ok:true, why:"Right: output is one measure among several."},
+     {t:"Ask who gained, at what cost, and how exposed it is to prices", ok:true, why:"Right: ask who captured the gains and at what environmental and social cost, and note dependence on prices, technology and a few investors. Output is one measure among several."},
      {t:"Agree; output is the only relevant measure", why:"Distribution and costs matter for judging a policy."},
-     {t:"Say the policy failed because the WTO panel ruled against it", why:"A legal ruling is not the same as an economic outcome."},
+     {t:"Say the policy failed because the WTO panel ruled against Indonesia", why:"A legal ruling is not the same as an economic outcome."},
      {t:"Say Indonesia produces no nickel", why:"USGS estimates about two-thirds of world mine output in 2025."}]},
    {id:"e4u20-q24", lesson:"e4u20-l3", level:1, q:"What did Malaysia’s New Economic Policy (1971) aim to do?", options:[
      {t:"Reduce poverty and raise the economic share of bumiputera communities", ok:true, why:"Right: adopted after the 1969 riots."},
@@ -1296,7 +1358,7 @@ ICA.addUnit({
      {t:"As voluntary entrepreneurs", why:"Many are held and forced to work."},
      {t:"As a problem only in Europe", why:"The report focused on Southeast Asia."}]},
    {id:"e4u20-q27", lesson:"e4u20-l3", level:3, q:"Priya reads that FDI into ASEAN rose 8% in 2024 while global FDI fell. Which interpretation is most careful?", options:[
-     {t:"It fits “China plus one” and the region’s attraction, but she should check the source, year and whether new factories mainly assemble imported parts", ok:true, why:"Right: one figure needs context and caution."},
+     {t:"It fits “China plus one”, but she should check the source and context", ok:true, why:"Right: one figure needs context and caution. She should check the source, the year and whether new factories mainly assemble imported parts."},
      {t:"It proves ASEAN has overtaken China as a manufacturing power", why:"One year of FDI growth does not show that."},
      {t:"It shows that intra-ASEAN trade is now 90% of trade", why:"FDI and trade shares are different measures; intra-ASEAN trade was about 21.5%."},
      {t:"It means global value chains no longer matter", why:"It suggests the opposite."}]},
@@ -1312,40 +1374,40 @@ ICA.addUnit({
      {t:"A common external tariff", why:"ASEAN has no common external tariff."},
      {t:"Grants from China and the United States only", why:"Members fund the operational budget."}]},
    {id:"e4u20-q30", lesson:"e4u20-l4", level:2, q:"Which list gives the five points of the 2021 Five-Point Consensus?", options:[
-     {t:"End violence; constructive dialogue; a special envoy; humanitarian aid; an envoy visit to meet all parties", ok:true, why:"Right: agreed in Jakarta on 24 April 2021."},
+     {t:"End violence; dialogue; an envoy; aid; an envoy visit", ok:true, why:"Right: end violence; constructive dialogue; a special envoy; humanitarian aid; an envoy visit to meet all parties. Agreed in Jakarta on 24 April 2021."},
      {t:"Sanctions; expulsion; arms embargo; tribunal; new elections", why:"ASEAN agreed none of these."},
      {t:"Recognition of the military; trade deal; tourism; visas; aid", why:"Not the 5PC."},
      {t:"Ceasefire; referendum; federal constitution; amnesty; elections", why:"Not the 5PC."}]},
    {id:"e4u20-q31", lesson:"e4u20-l4", level:2, q:"What was unusual about ASEAN’s response to Myanmar from October 2021?", options:[
-     {t:"It invited only a non-political representative to summits, excluding the military leader", ok:true, why:"Right: a rare departure from strict non-interference."},
+     {t:"It excluded the military leader from summits", ok:true, why:"Right: it invited only a non-political representative, a rare departure from strict non-interference."},
      {t:"It expelled Myanmar", why:"ASEAN has no expulsion rule and did not expel Myanmar."},
      {t:"It sent peacekeepers", why:"ASEAN has no peacekeeping force."},
      {t:"It moved its Secretariat to Yangon", why:"The Secretariat is in Jakarta."}]},
    {id:"e4u20-q32", lesson:"e4u20-l4", level:1, q:"When and where was Timor-Leste admitted as ASEAN’s eleventh member?", options:[
-     {t:"26 October 2025, at the 47th ASEAN Summit in Kuala Lumpur", ok:true, why:"Right: by a declaration signed at the opening ceremony."},
+     {t:"In October 2025, in Kuala Lumpur", ok:true, why:"Right: on 26 October 2025, by a declaration signed at the opening of the 47th ASEAN Summit."},
      {t:"2002, on independence", why:"It applied in 2011 and joined in 2025."},
      {t:"2011, when it applied", why:"Applying is not joining."},
      {t:"2022, when it got observer status", why:"Observer status came first; membership in 2025."}]},
    {id:"e4u20-q33", lesson:"e4u20-l4", level:2, q:"What does Evelyn Goh mean by “omni-enmeshment”?", options:[
-     {t:"Drawing all great powers into regional institutions so each has a stake in the order", ok:true, why:"Right: combined, in her account, with complex balancing."},
+     {t:"Drawing all great powers into regional institutions", ok:true, why:"Right: so each has a stake in the order; combined, in her account, with complex balancing."},
      {t:"Joining one great power’s alliance against the others", why:"That is closer to balancing or bandwagoning."},
      {t:"Closing the region to all outside powers", why:"That is closer to ZOPFAN’s ideal."},
      {t:"Merging ASEAN into the EU", why:"Goh describes a regional strategy towards great powers, not institutional merger."}]},
    {id:"e4u20-q34", lesson:"e4u20-l4", level:3, q:"Sione cites the 2026 ISEAS survey to claim “Southeast Asians prefer China”. What is wrong?", options:[
-     {t:"The survey asked about 2,000 elites a forced-choice question, not the public, and the result (52% to 48%) was close and has changed from year to year", ok:true, why:"Right: state who was asked, what was asked and the margin."},
+     {t:"It surveyed elites, not the public, and the margin was narrow", ok:true, why:"Right: it asked about 2,000 elites a forced-choice question, and the result (52% to 48%) was close and has changed from year to year. State who was asked, what was asked and the margin."},
      {t:"Nothing: the survey covers all citizens", why:"It surveys experts, officials and business people."},
      {t:"The survey found 90% prefer China", why:"The figure was 52% if forced to align."},
-     {t:"ISEAS surveys only Europeans", why:"Respondents are from ASEAN countries."}]},
+     {t:"ISEAS surveys only Europeans living in Southeast Asian cities", why:"Respondents are from ASEAN countries."}]},
    {id:"e4u20-q35", lesson:"e4u20-l4", level:3, q:"Lucía argues that “the Myanmar crisis shows ASEAN never changes its norms.” Which evidence complicates her claim?", options:[
      {t:"ASEAN’s exclusion of Myanmar’s military leader from summits since 2021", ok:true, why:"Right: some scholars see this as a quiet shift in how non-interference is applied."},
      {t:"ASEAN’s founding in 1967", why:"That predates the crisis and shows nothing about change."},
      {t:"ASEAN’s use of English as a working language", why:"Unrelated to norms on intervention."},
      {t:"The location of the Secretariat in Jakarta", why:"Where the Secretariat sits says nothing about how non-interference is applied."}]},
    {id:"e4u20-q36", lesson:"e4u20-l4", level:2, q:"What happened at the ASEAN foreign ministers’ meeting in Phnom Penh in 2012?", options:[
-     {t:"For the first time, they failed to issue a joint communiqué, after disagreeing over the South China Sea", ok:true, why:"Right: a classic example of the limits of consensus."},
+     {t:"They failed to issue a joint communiqué for the first time", ok:true, why:"Right: they disagreed over the South China Sea; a classic example of the limits of consensus."},
      {t:"They signed the ASEAN Charter", why:"The Charter was signed in 2007."},
      {t:"They admitted Timor-Leste", why:"That happened in 2025."},
-     {t:"They agreed the Five-Point Consensus", why:"That was in Jakarta in 2021."}]},
+     {t:"They agreed the Five-Point Consensus on the crisis in Myanmar", why:"That was in Jakarta in 2021."}]},
    /* ---- Lesson 5 ---- */
    {id:"e4u20-q37", lesson:"e4u20-l5", level:1, q:"Which country’s founding philosophy is Pancasila?", options:[
      {t:"Indonesia", ok:true, why:"Right: first presented by Sukarno on 1 June 1945."},
@@ -1358,12 +1420,12 @@ ICA.addUnit({
      {t:"Indonesia should become an Islamic state", why:"He made no such prescription."},
      {t:"Javanese should be divided into santri and abangan", why:"That classification comes from Geertz (1960)."}]},
    {id:"e4u20-q39", lesson:"e4u20-l5", level:2, q:"Why do many scholars avoid the term “huaqiao” for ethnic Chinese in Southeast Asia?", options:[
-     {t:"It implies sojourners loyal to China, while most communities’ identities were shaped by the countries they live in", ok:true, why:"Right: Wang Gungwu and others stress diversity and local belonging."},
+     {t:"It implies sojourners whose loyalty lies with China", ok:true, why:"Right: most communities’ identities were shaped by the countries they live in. Wang Gungwu and others stress diversity and local belonging."},
      {t:"It is a Malay word for traders", why:"It is a Chinese term (华侨)."},
      {t:"It refers only to Singapore’s citizens", why:"It is a general term for overseas Chinese."},
-     {t:"It is an official ASEAN legal category", why:"ASEAN has no such category."}]},
+     {t:"It is an official ASEAN legal category for foreign workers", why:"ASEAN has no such category."}]},
    {id:"e4u20-q40", lesson:"e4u20-l5", level:1, q:"Which event in Indonesia came first?", options:[
-     {t:"Restrictions on Chinese schools, press and public festivals (from 1967)", ok:true, why:"Right: under Suharto; lifted in 2000."},
+     {t:"Restrictions on Chinese schools and festivals", ok:true, why:"Right: restrictions on Chinese schools, press and public festivals began in 1967 under Suharto and were lifted in 2000."},
      {t:"Lunar New Year becomes a national holiday", why:"That came from 2003."},
      {t:"President Abdurrahman Wahid lifts the restrictions", why:"That was in 2000."},
      {t:"The May 1998 riots", why:"That was in 1998, after the 1967 restrictions."}]},
@@ -1373,23 +1435,23 @@ ICA.addUnit({
      {t:"The National Unity Government", why:"The NUG was formed in 2021."},
      {t:"Thailand’s army", why:"The protests were in Myanmar and were led by Myanmar’s monks."}]},
    {id:"e4u20-q42", lesson:"e4u20-l5", level:3, q:"Amara writes that “Buddhist countries are peaceful by nature, so nationalist violence there must come from outside.” What is the best critique?", options:[
-     {t:"No religion is peaceful or violent by nature; analyse organisations, leaders and political conditions with evidence", ok:true, why:"Right: the lesson warns against essentialising religion."},
+     {t:"No religion is peaceful or violent by nature", ok:true, why:"Right: analyse organisations, leaders and political conditions with evidence. The lesson warns against essentialising religion."},
      {t:"She should say Buddhist countries are violent by nature", why:"That is the same error reversed."},
      {t:"Religion never matters in politics", why:"Religion can matter a great deal; the point is how and through whom."},
      {t:"She should cite only government statements", why:"One-sided sourcing does not fix the essentialism."}]},
    {id:"e4u20-q43", lesson:"e4u20-l5", level:2, q:"What is the main criticism of Amy Chua’s “market-dominant minorities”?", options:[
-     {t:"It lumps rich and poor members together, overstates dominance and can reinforce stereotypes", ok:true, why:"Right: critics stress class diversity within ethnic Chinese communities."},
-     {t:"It ignores markets entirely", why:"Markets are central to her argument."},
+     {t:"It overstates dominance and lumps rich and poor together", ok:true, why:"Right: it lumps rich and poor members together, overstates dominance and can reinforce stereotypes. Critics stress class diversity within ethnic Chinese communities."},
+     {t:"It ignores markets entirely and looks only at ethnic identity", why:"Markets are central to her argument."},
      {t:"It was written before 1900", why:"*World on Fire* was published in 2003."},
-     {t:"It applies only to Europe", why:"She discusses Southeast Asia among other regions."}]},
+     {t:"It applies only to Europe and not to Southeast Asia", why:"She discusses Southeast Asia among other regions."}]},
    {id:"e4u20-q44", lesson:"e4u20-l5", level:3, q:"Kenji compares Vietnam and the Philippines, which differ in regime, religion and colonial past, because both send many workers abroad. Which design is this?", options:[
      {t:"A most different design", ok:true, why:"Right: unlike cases with a shared outcome."},
      {t:"A most similar design", why:"That compares alike cases with different outcomes."},
      {t:"A single case study", why:"He compares two cases."},
      {t:"A randomised controlled trial", why:"He cannot randomly assign countries."}]},
    {id:"e4u20-q45", lesson:"e4u20-l5", level:2, q:"What was the Milk Tea Alliance?", options:[
-     {t:"An online solidarity network of young activists in Thailand, Hong Kong and Taiwan from 2020, later joined by many in Myanmar", ok:true, why:"Right: named after the milk tea drunk in all three places."},
-     {t:"An ASEAN trade agreement on dairy products", why:"It is not a trade agreement."},
+     {t:"An online network of young activists from 2020", ok:true, why:"Right: young activists in Thailand, Hong Kong and Taiwan, later joined by many in Myanmar; named after the milk tea drunk in all three places."},
+     {t:"An ASEAN trade agreement on dairy and tea products", why:"It is not a trade agreement."},
      {t:"A Thai government soft-power campaign", why:"It was a grassroots online movement."},
      {t:"A Korean pop group", why:"It was a political solidarity network, not a music act."}]}
   ]

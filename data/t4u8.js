@@ -92,8 +92,8 @@ ICA.addUnit({
       {t:"How satisfied are members of a community choir with rehearsal times, and does this differ by age group?", b:0, why:"Satisfaction ratings compared across groups suit a short questionnaire."}
     ]},
     {id:"t4u8-l1-x2", type:"mcq", q:"In Pew’s 2008 comparison, 58% chose “the economy” from a list, but only 35% named it when answering in their own words. What is the best conclusion?", options:[
-      {t:"The list of options shaped the answers, so how a question is asked is part of what it measures.", ok:true, why:"Yes. The closed version prompted people with “the economy”; the open version measured what came to mind unprompted. Report the format alongside the number."},
-      {t:"The open question was wrong and should never be used.", why:"Neither version is wrong. The open one shows what people raise unprompted, and it found answers the list missed (43% gave an answer that wasn’t on it)."},
+      {t:"The list shaped the answers, so the question format is part of what it measures.", ok:true, why:"Yes. The closed version prompted people with “the economy”; the open version measured what came to mind unprompted. Report the format alongside the number."},
+      {t:"The open question was wrong, so open questions should never be used in serious surveys.", why:"Neither version is wrong. The open one shows what people raise unprompted, and it found answers the list missed (43% gave an answer that wasn’t on it)."},
       {t:"People lied in the closed version.", why:"There’s no sign of lying. A list reminds people of options they agree with but might not have thought of; that’s a format effect, not dishonesty."},
       {t:"The difference must be due to a small sample.", why:"A 23-point gap isn’t chance. The difference comes from the question format, which is the lesson of the study."}
     ]},
@@ -117,9 +117,9 @@ ICA.addUnit({
       {t:"A thank-you, and how to contact the researcher", why:"Close by thanking people and telling them how to ask questions or withdraw."}
     ]},
     {id:"t4u8-l1-x6", type:"mcq", q:"Hana’s survey introduction says “This survey is anonymous.” Her form tool is set to record each respondent’s sign-in email address. What should she do?", options:[
-      {t:"Turn off email collection and sign-in requirements, or change the wording to explain that emails are recorded but kept confidential.", ok:true, why:"Her promise must match what the tool does. Either collect nothing identifying, or describe honestly what is collected and how it is protected."},
+      {t:"Turn off email collection, or explain that emails are recorded but kept confidential.", ok:true, why:"Turning it off includes any sign-in requirement. Her promise must match what the tool does. Either collect nothing identifying, or describe honestly what is collected and how it is protected."},
       {t:"Nothing: email addresses don’t count as identifying information.", why:"An email address usually identifies a person directly. Recording it means the survey isn’t anonymous."},
-      {t:"Keep the setting but delete the emails before anyone else sees them.", why:"The answers were still collected with identities attached, so the “anonymous” promise was untrue when people answered."},
+      {t:"Keep the setting as it is, but delete the emails herself before anyone else sees them.", why:"The answers were still collected with identities attached, so the “anonymous” promise was untrue when people answered."},
       {t:"Add “Please don’t write your name” to the introduction.", why:"That doesn’t stop the tool recording email addresses automatically."}
     ]}
    ],
@@ -233,10 +233,10 @@ ICA.addUnit({
       {t:"How long is your drive to work?", b:2, why:"It assumes the person works and drives. Ask how they travel first, or offer other options."}
     ]},
     {id:"t4u8-l2-x4", type:"mcq", q:"Sione is asking members of a tenants’ association how much they pay in rent each month. Some live in social housing where rent is deducted automatically, and some share costs with relatives. Which design is best?", options:[
-      {t:"Rent ranges, plus separate “Don’t know” and “Prefer not to say” options, and the question not set as required.", ok:true, why:"Ranges are easier and less sensitive than exact amounts; “Don’t know” is honest for people who don’t see the bill; “Prefer not to say” and an optional question respect people’s right to decline."},
+      {t:"Rent ranges, with separate “Don’t know” and “Prefer not to say” options, not required.", ok:true, why:"Ranges are easier and less sensitive than exact amounts; “Don’t know” is honest for people who don’t see the bill; “Prefer not to say” and an optional question respect people’s right to decline."},
       {t:"An exact amount, required, so nobody can skip it.", why:"Forcing an answer pushes people to guess or abandon the survey. Exact amounts are also more sensitive than ranges."},
       {t:"Ranges, with “Don’t know” placed as the middle option.", why:"Putting “Don’t know” in the middle makes it look like a mid-range rent, which mixes two different answers."},
-      {t:"Leave the question out, because money questions are always too sensitive.", why:"Rent can be asked respectfully. If the information matters to the research, design the question carefully rather than dropping it."}
+      {t:"Leave the question out completely, because money questions are always too sensitive to ask.", why:"Rent can be asked respectfully. If the information matters to the research, design the question carefully rather than dropping it."}
     ]},
     {id:"t4u8-l2-x5", type:"mcq", q:"During a cognitive interview, Ana answers “How many people live in your household?” with 5. Which probe would best reveal whether the question works?", options:[
       {t:"“Who did you include when you counted, and was anyone you weren’t sure about?”", ok:true, why:"This shows how she understood “household” (students away? lodgers? a partner who works abroad?), which is exactly what a cognitive probe should uncover."},
@@ -252,7 +252,7 @@ ICA.addUnit({
       {t:"Launch the survey to the full sample", why:"Only launch once the questions and the tool have both been tested."}
     ]},
     {id:"t4u8-l2-x7", type:"mcq", q:"Which question is most likely to get accurate answers about voting from people who didn’t vote?", options:[
-      {t:"“In the last election, some people didn’t vote because they were busy, unwell or had other things to do. Did you vote?”", ok:true, why:"Face-saving wording makes the less “desirable” answer easier to give, a technique Pew Research Center describes for reducing social desirability bias."},
+      {t:"“Some people didn’t vote last time because they were busy or unwell. Did you vote?”", ok:true, why:"Face-saving wording makes the less “desirable” answer easier to give, a technique Pew Research Center describes for reducing social desirability bias."},
       {t:"“As a responsible citizen, you voted in the last election, didn’t you?”", why:"This is leading and loaded; it makes “no” even harder to say."},
       {t:"“Did you vote in the last election?” asked face to face by an interviewer from the electoral office.", why:"An interviewer, especially an official one, increases the pressure to give the socially desirable answer."},
       {t:"“Did you fail to vote in the last election?”", why:"“Fail” is a loaded, negative word, and the question still makes not voting sound shameful."}
@@ -367,8 +367,8 @@ ICA.addUnit({
       ["Forgetting to reverse-score a negatively worded item","The scale score is wrong for everyone","Agreement with that item means the opposite, so it must be flipped first."]
     ]},
     {id:"t4u8-l3-x6", type:"mcq", q:"Amara wants to measure how much a training course helped participants. She is choosing between “Agree or disagree: The course helped me” and “How much did the course help you? (Not at all / A little / Somewhat / Quite a lot / A great deal)”. Which is better, and why?", options:[
-      {t:"The second: it asks about the quality directly, with labelled unipolar options, avoiding acquiescence bias.", ok:true, why:"Asking directly about “how much” matches what she wants to measure, and the labels describe amounts evenly from none to a great deal."},
-      {t:"The first, because agree–disagree items are the only real Likert format.", why:"Likert’s original items used approve–disapprove, but direct rating questions are generally more reliable and valid."},
+      {t:"The second: it asks directly, with labelled options, avoiding acquiescence bias.", ok:true, why:"Asking directly about “how much” matches what she wants to measure, and the labels describe amounts evenly from none to a great deal. The options are unipolar: they run in one direction only."},
+      {t:"The first, because agree–disagree statements are the only real Likert-style format.", why:"Likert’s original items used approve–disapprove, but direct rating questions are generally more reliable and valid."},
       {t:"The first, because people answer statements faster.", why:"Speed isn’t the goal if the format adds bias. Direct questions are not noticeably harder."},
       {t:"They are identical in quality; the choice doesn’t matter.", why:"Research comparing the formats finds real differences in reliability and validity."}
     ]}
@@ -468,8 +468,8 @@ ICA.addUnit({
       {v:9.8, tol:0.15, why:"9.8 points is the margin for a sample of 100, or double the correct answer. Check that n = 400 under the square root."}
     ], hint2:"Work inside the square root first: 0.5 × 0.5 ÷ 400."},
     {id:"t4u8-l4-x4", type:"mcq", q:"A poll of 1,000 randomly selected adults reports 46% support, with a margin of error of ±3 points at 95% confidence. Which statement is correct?", options:[
-      {t:"If the poll were repeated many times with fresh random samples, about 95% of ranges built this way would contain the true population value.", ok:true, why:"That is what the 95% confidence level describes: the long-run success rate of the method."},
-      {t:"There is exactly a 95% chance that true support is between 43% and 49%.", why:"This common reading treats the 95% as a probability about this one range. It describes the method over many samples, and the range also ignores non-sampling errors."},
+      {t:"Over many repeated polls, about 95% of ranges built this way would contain the true value.", ok:true, why:"Each repeat would use a fresh random sample. That is what the 95% confidence level describes: the long-run success rate of the method."},
+      {t:"There is exactly a 95% chance that the true level of public support is between 43% and 49%.", why:"This common reading treats the 95% as a probability about this one range. It describes the method over many samples, and the range also ignores non-sampling errors."},
       {t:"The result can’t be more than 3 points wrong.", why:"The margin only covers sampling error, and only 95% of the time. Coverage, nonresponse and wording problems can add more."},
       {t:"Results for young adults in this poll will also be accurate to ±3 points.", why:"Subgroups have fewer people, so their margins are larger."}
     ]},
@@ -482,9 +482,9 @@ ICA.addUnit({
       {t:"A sample made up of volunteers who clicked a link on social media", b:1, why:"For a self-selected sample, the margin-of-error formula doesn’t describe anything meaningful."}
     ]},
     {id:"t4u8-l4-x6", type:"mcq", q:"A health board’s patient survey had a 22% response rate. A manager says, “22% is low, so the results are definitely biased and useless.” What is the best response?", options:[
-      {t:"A low rate is a warning sign, not proof: check whether respondents differ from all patients on things that matter, such as age, condition and clinic.", ok:true, why:"Bias depends on how different non-responders are. Comparing respondents with known figures for all patients is the right next step."},
+      {t:"A low rate is a warning sign, not proof: compare respondents with all patients.", ok:true, why:"Check things that matter, such as age, condition and clinic. Bias depends on how different non-responders are. Comparing respondents with known figures for all patients is the right next step."},
       {t:"Agree: anything under 50% is always biased.", why:"Studies, including the Pew comparison published in 2006, have found surveys with low response rates can match higher-response ones closely. It depends on who is missing."},
-      {t:"Response rates don’t matter at all if the sample was random.", why:"Even a random sample can be biased if those who reply differ from those who don’t; the Literary Digest is a famous example."},
+      {t:"Response rates don’t matter at all, as long as the original sample was chosen at random.", why:"Even a random sample can be biased if those who reply differ from those who don’t; the Literary Digest is a famous example."},
       {t:"Fix it by adding more volunteers from the waiting room.", why:"Adding self-selected volunteers mixes in a convenience sample. It raises the count but doesn’t fix who is missing."}
     ]},
     {id:"t4u8-l4-x7", type:"number", q:"Using n = 1.96² × p(1 − p) ÷ E² with p = 0.5, how many completed responses from a simple random sample do you need for a margin of error of ±5 percentage points? (Ignore population size.)", answer:385, tol:0, unit:"people", why:"1.96² = 3.8416. 3.8416 × 0.25 = 0.9604. E = 0.05, so E² = 0.0025. 0.9604 ÷ 0.0025 = 384.16. Always round sample sizes up, so 385.", wrongs:[
@@ -622,7 +622,7 @@ ICA.addUnit({
       {v:5, tol:0.01, why:"5 is 20 ÷ 4, the population variance. For the sample SD, divide 20 by n − 1 = 3, then take the square root."}
     ], hint2:"Mean first, then squared differences, then ÷ (n − 1), then square root."},
     {id:"t4u8-l5-x5", type:"mcq", q:"In a survey of 500 commuters, 50 of 200 people under 35 cycle to work, and 45 of 300 people aged 35 and over cycle. Which sentence describes the age difference correctly?", options:[
-      {t:"25% of under-35s cycle compared with 15% of those 35 and over, a gap of 10 percentage points.", ok:true, why:"Row percentages compare like with like: each age group’s share who cycle. 25 − 15 = 10 percentage points."},
+      {t:"25% of under-35s cycle vs 15% of those 35 and over: 10 percentage points.", ok:true, why:"Row percentages compare like with like: each age group’s share who cycle. 25 − 15 = 10 percentage points."},
       {t:"52.6% of cyclists are under 35, so younger people are only slightly more likely to cycle.", why:"52.6% is a column percentage (50 of 95 cyclists). It depends on how many people are in each age group, so it can’t show which group is more likely to cycle."},
       {t:"Under-35s are 10% more likely to cycle.", why:"The gap is 10 percentage points. In relative terms, 25% is 66.7% higher than 15%. “10% more likely” is wrong on both counts."},
       {t:"Being under 35 causes people to cycle more.", why:"A cross-tab shows association. Where people live and work, or other factors, may explain the difference."}
@@ -660,6 +660,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t4u8-q02","t4u8-q06","t4u8-q11","t4u8-q14","t4u8-q17","t4u8-q21","t4u8-q24","t4u8-q29","t4u8-q32","t4u8-q36","t4u8-q40","t4u8-q44"],
+  cpBank:[
+   {id:"t4u8-cp01", lesson:"t4u8-l1", level:1, q:"A survey asks Ama, “How often do you cook dinner at home?” Her true answer is “about every other day”, but the only options are Every day / Once a week / Once a month / Never. Which step of answering fails?", options:[
+     {t:"Understand", why:"Ama understands the question perfectly. Her problem comes after she knows her answer."},
+     {t:"Recall", why:"She remembers how often she cooks. Memory isn’t the problem."},
+     {t:"Report", ok:true, why:"In the Report step, people fit their answer into the options offered. No option fits “every other day”, so she has to pick a wrong one."},
+     {t:"Judge", why:"She has already worked out her answer. The difficulty is that it can’t be reported."}]},
+   {id:"t4u8-cp02", lesson:"t4u8-l2", level:1, q:"What is the main problem with this survey question? **“Should the city stop throwing money at useless cycle lanes?”**", options:[
+     {t:"It is loaded: “throwing money” and “useless” push one answer", ok:true, why:"Loaded questions use emotionally charged words. A neutral version: “How should spending on cycle lanes change: increase, stay the same, decrease?”"},
+     {t:"It is double-barrelled: it asks about money and about cycle lanes", why:"It asks about one thing, spending on cycle lanes. The problem is the wording, not the number of topics."},
+     {t:"It contains a double negative that makes it hard to follow", why:"There is no “not … disagree”-type construction. The wording is charged, not tangled."},
+     {t:"Its answer options overlap", why:"No answer options are shown. The problem is in the question wording itself."}]},
+   {id:"t4u8-cp03", lesson:"t4u8-l3", level:1, q:"Which set of answer labels fits the question **“How useful was the cooking class?”** best?", options:[
+     {t:"Strongly disagree · Disagree · Neither · Agree · Strongly agree", why:"Agree–disagree labels don’t match a “how useful” question, and asking about the quality directly is usually more reliable."},
+     {t:"Never · Rarely · Sometimes · Often · Always", why:"These are frequency labels, for how often something happens, not how useful it was."},
+     {t:"Not useful · Useful · Very useful · Extremely useful", why:"This is unbalanced: three ways to say useful and one to say not. It makes results look more positive."},
+     {t:"Not at all useful · Slightly · Moderately · Very · Extremely useful", ok:true, why:"“How useful” is an amount from none to a lot, so a fully labelled unipolar scale fits."}]},
+   {id:"t4u8-cp04", lesson:"t4u8-l1", level:2, q:"Wei wants to ask former members why they left his gym, but he doesn’t yet know what reasons people give. What is the best plan?", options:[
+     {t:"Write his own list of five likely reasons and use it in the survey", why:"A closed list steers answers and hides the ones he didn’t think of. People rarely go beyond the options offered."},
+     {t:"Pilot an open question, then build a closed list plus “Other”", ok:true, why:"This follows Pew’s advice: the open pilot catches the unexpected, and the closed list makes the main survey quick to answer and count."},
+     {t:"Ask an open question of everyone, then report the answers without reading or grouping them", why:"Open answers have to be read and grouped (coded) before they can be counted. Raw answers aren’t a summary."},
+     {t:"Use agree–disagree statements about each reason he guesses", why:"These still rest on his guesses, and agree–disagree items invite acquiescence bias."}]},
+   {id:"t4u8-cp05", lesson:"t4u8-l2", level:2, q:"A survey asks, “How do you usually travel to work?” with the options **Car / Bus / Train**. What is the main problem?", options:[
+     {t:"The options overlap, so some people could fit two", why:"Car, bus and train don’t overlap. The problem is who isn’t covered."},
+     {t:"It is double-barrelled, asking two things at once", why:"It asks about one thing: the usual way of getting to work."},
+     {t:"It leaves out people who walk, cycle or work at home", ok:true, why:"Options must cover everyone. Add the missing options, “Other (please specify)” and “Not applicable” for people who don’t travel to work."},
+     {t:"Nothing: people can just choose the closest option", why:"Forcing people into a wrong option creates false data. Good options fit everyone."}]},
+   {id:"t4u8-cp06", lesson:"t4u8-l3", level:2, q:"Ibrahim plans a 15-point rating scale “to get more precise answers”. What does Krosnick and Presser’s review suggest?", options:[
+     {t:"More points always give more reliable and precise answers", why:"Reliability gains level off at around seven points. More points don’t keep helping."},
+     {t:"Reliability rises up to about seven points, then levels off", ok:true, why:"Seven points are probably best in many cases; 15 adds effort without adding reliability."},
+     {t:"Scales must have exactly five points, as Likert’s own scales did", why:"Likert’s 1932 example used five, but five and seven are both common, and other numbers are used."},
+     {t:"Two points (yes/no) are the most reliable", why:"The review found reliability rises from two points upwards, so a yes/no scale is less reliable."}]},
+   {id:"t4u8-cp07", lesson:"t4u8-l4", level:2, q:"A random poll of 1,000 adults (±3 points) finds 62% support among its 100 rural respondents and 55% among its 900 urban ones. A headline says rural people are clearly more supportive. Which reading is best?", options:[
+     {t:"Rural support is clearly higher: 7 points is more than the ±3 margin", why:"±3 belongs to the whole sample of 1,000. Each subgroup has its own, wider margin, and a gap between two figures is less certain than either figure."},
+     {t:"The rural figure has about ±10 points, so a 7-point gap isn’t clear", ok:true, why:"The quick check 1 ÷ √100 = 0.1 gives about ±10 points for the rural group, so a 7-point gap could be chance. Subgroups have larger margins."},
+     {t:"Urban support is less certain, because it is spread across more people", why:"More people behind a figure make it **more** precise. The urban figure (about ±3 points) is the firmer one; the rural figure is the uncertain one."},
+     {t:"Nothing can be said, because subgroups of a poll have no margin of error", why:"A subgroup of a probability sample has a margin of error too; it is just wider because fewer people are behind it."}]},
+   {id:"t4u8-cp08", lesson:"t4u8-l4", level:3, q:"Two councils want ±5 points from a simple random sample. A town has 20,000 adults; a city has 2,000,000. With the finite population correction, roughly how many completed responses does each need?", options:[
+     {t:"About 385 for the town and 38,500 for the city", why:"This grows the sample in step with the population. The number comes from the margin of error: a population 100 times bigger needs almost no more people."},
+     {t:"About 100 for the town and 385 for the city", why:"The correction only lowers the number a lot when the sample would be a large share of the population. 385 is under 2% of 20,000, so the town still needs about 377."},
+     {t:"About 2,000 for the town and 200,000 for the city", why:"Needing a fixed share (here 10%) of the population is a myth. Both need fewer than 400 completed responses."},
+     {t:"About 377 for the town and 385 for the city", ok:true, why:"384.16 ÷ (1 + 383.16 ÷ 20,000) ≈ 376.9, so 377. For 2,000,000 the correction barely changes 384.16, so 385. Population size hardly matters unless the sample is a large share of it."}]},
+   {id:"t4u8-cp09", lesson:"t4u8-l4", level:3, q:"A staff survey got a 35% response rate. The manager asks whether the results are biased. Which step gives the most useful evidence?", options:[
+     {t:"None needed: a 35% response rate proves the results are biased", why:"A low response rate is a warning, not proof. Bias depends on whether non-responders differ on what’s measured."},
+     {t:"None needed: the margin of error already covers non-response", why:"The margin of error covers sampling error only. Non-response is an extra source of error."},
+     {t:"Compare respondents with known staff figures, such as grade and age", ok:true, why:"Comparing respondents with known figures for all staff shows whether those who answered differ from those who didn’t, which is what bias depends on. Comparing early and late responders, and following up a few non-responders, add more evidence."},
+     {t:"Send more reminders; once more people reply, the results will be unbiased", why:"Raising response helps, but it doesn’t show whether bias remains. The checks still need doing."}]},
+   {id:"t4u8-cp10", lesson:"t4u8-l5", level:2, q:"In Thabo’s dataset, the income column codes “Don’t know”, “Prefer not to say” and skipped answers all as **0**. He then calculates the mean income. What is wrong?", options:[
+     {t:"Nothing is wrong, as long as he reports the mean to one decimal place", why:"Rounding can’t fix wrong values. The zeros aren’t incomes at all."},
+     {t:"He should use the median instead, and keep the zeros", why:"The median is a good idea for income, but the zeros are still fake values. They must be coded separately first."},
+     {t:"He should delete every respondent who didn’t give an income", why:"Removing whole respondents loses their other answers. Keep them, code the special answers separately, and report how many there are."},
+     {t:"Those aren’t incomes of 0: code them separately and leave them out", ok:true, why:"Blanks, “Don’t know” and “Prefer not to say” need distinct codes. Counting them as 0 drags the mean down, and how many there are is a finding in itself."}]},
+   {id:"t4u8-cp11", lesson:"t4u8-l3", level:3, q:"Ratings of a new clinic (n = 400): Very poor 10%, Poor 18%, Neither 22%, Good 35%, Very good 15%. A report says: “72% gave a positive or neutral rating, showing strong approval.” What is the problem?", options:[
+     {t:"Nothing is wrong, because all the percentages add up correctly", why:"Accurate numbers can still mislead. The grouping is the problem."},
+     {t:"Only the mean (3.27) should be reported, not percentages", why:"A mean on its own hides the distribution. Show the full set of answers."},
+     {t:"It should instead say “50% were poor or neutral”", why:"That groups the neutral middle with the negative side, which is just as misleading in the other direction."},
+     {t:"Neutral isn’t approval: only 50% rated it good or very good", ok:true, why:"Folding the midpoint into “positive” is a flattering grouping. The midpoint means a neutral view. Showing all five options lets readers judge."}]},
+   {id:"t4u8-cp12", lesson:"t4u8-l5", level:3, q:"A survey finds that 30% of people who cycle to work rate their health as “excellent”, against 18% of those who don’t cycle. A headline says: “Cycling makes you healthier.” What is the best response?", options:[
+     {t:"Surveys show association, not cause; age might explain it", ok:true, why:"Surveys can’t prove that one thing causes another, and cross-tabs show association, not cause."},
+     {t:"The headline is right, because the gap is 12 percentage points", why:"A large gap is still only an association. Its size doesn’t show what caused it."},
+     {t:"The headline would be right if the sample were much bigger", why:"A bigger sample makes the estimate more precise. It doesn’t turn an association into cause."},
+     {t:"The gap should be described as a 67% increase instead", why:"12 ÷ 18 ≈ 67% is a relative difference. It changes how big the gap sounds, not what caused it."}]},
+  ],
   codex:[
    {id:"survey-design", title:"Designing a survey", aka:["questionnaire design","survey research","survey mode","question order"], tags:["research","surveys","methods"],
     summary:"When a survey fits a research question, how people answer, and how mode, format and order shape the results.",
@@ -971,10 +1033,10 @@ ICA.addUnit({
   bank:[
    /* Lesson 1 */
    {id:"t4u8-q01", lesson:"t4u8-l1", level:1, q:"Which kind of research question does a survey answer best?", options:[
-     {t:"How common something is across a group, and how that differs between subgroups", ok:true, why:"Standard questions asked of many people produce counts and percentages that can be compared."},
+     {t:"How common something is in a group, and how subgroups differ", ok:true, why:"Standard questions asked of many people produce counts and percentages that can be compared."},
      {t:"Whether one thing causes another", why:"Cause and effect needs an experiment or a careful design; a survey mainly shows associations."},
      {t:"Exactly what people do when no one is watching", why:"Surveys record what people say, which can differ from what they do."},
-     {t:"Why one person made an unusual decision, in depth", why:"In-depth reasons are better explored through interviews with follow-up questions."}
+     {t:"Why one particular person made an unusual decision, explored in depth", why:"In-depth reasons are better explored through interviews with follow-up questions."}
    ]},
    {id:"t4u8-q02", lesson:"t4u8-l1", level:2, q:"Kenji wants to know how the number of people living alone in his country has changed since 2000. What should he do first?", options:[
      {t:"Look for census or official statistics that already measure it", ok:true, why:"National statistics offices often publish exactly this. Collecting new data would be slower and less accurate."},
@@ -983,9 +1045,9 @@ ICA.addUnit({
      {t:"Design an experiment", why:"Nothing is being tested by changing a condition; this is a question about an existing trend."}
    ]},
    {id:"t4u8-q03", lesson:"t4u8-l1", level:1, q:"What is the main drawback of closed questions?", options:[
-     {t:"The list of options can steer answers and miss answers the designer didn’t think of", ok:true, why:"Pew found people rarely go beyond the options offered, so the list shapes the results."},
+     {t:"The options can steer answers and miss ones the designer didn’t think of", ok:true, why:"Pew found people rarely go beyond the options offered, so the list shapes the results."},
      {t:"They are impossible to count", why:"Closed answers are the easiest to count; that’s their main advantage."},
-     {t:"They take much longer to answer than open questions", why:"Closed questions are usually quicker to answer."},
+     {t:"They take much longer to answer than open questions do, so people give up", why:"Closed questions are usually quicker to answer."},
      {t:"They can only have two options", why:"Closed questions can have many options, rating scales or rankings."}
    ]},
    {id:"t4u8-q04", lesson:"t4u8-l1", level:1, q:"Which is the correct order of the four steps people go through to answer a survey question?", options:[
@@ -1001,10 +1063,10 @@ ICA.addUnit({
      {t:"All modes give identical answers", why:"Research consistently finds mode effects on sensitive questions."}
    ]},
    {id:"t4u8-q06", lesson:"t4u8-l1", level:3, q:"Ana’s questionnaire for a youth club starts with “What is your exact date of birth and home address?” before any questions about the club. What is the best advice?", options:[
-     {t:"Start with easy questions about the club, move background questions to the end, and only ask for details she truly needs", ok:true, why:"Personal questions at the start feel intrusive and can make people quit; exact birth dates and addresses are rarely necessary and make the data identifying."},
+     {t:"Start with easy questions about the club, and move background questions to the end", ok:true, why:"She should only ask for details she truly needs. Personal questions at the start feel intrusive and can make people quit; exact birth dates and addresses are rarely necessary and make the data identifying."},
      {t:"Keep it: personal details always come first", why:"Pew advises putting background questions near the end unless they’re needed first to check eligibility."},
      {t:"Make the questions required so nobody can skip them", why:"Forcing intrusive questions raises drop-out and is ethically poor practice."},
-     {t:"Ask for the address but promise the survey is anonymous", why:"With an address, the survey isn’t anonymous; the promise would be false."}
+     {t:"Keep the address question, but promise that the survey is anonymous so people feel safe", why:"With an address, the survey isn’t anonymous; the promise would be false."}
    ]},
    {id:"t4u8-q07", lesson:"t4u8-l1", level:2, q:"A researcher in the EU needs survey data hosted in the European Union. Which option is described in the tools’ own documentation as offering this?", options:[
      {t:"KoboToolbox’s European Union server, or LimeSurvey Cloud with a server location such as Germany or Finland", ok:true, why:"KoboToolbox runs a separate EU server, and LimeSurvey Cloud lets you choose the hosting country when you set up."},
@@ -1013,16 +1075,16 @@ ICA.addUnit({
      {t:"Data location never matters for research", why:"Data-protection laws and ethics committees often care where personal data is stored and transferred."}
    ]},
    {id:"t4u8-q08", lesson:"t4u8-l1", level:1, q:"What is the difference between promising answers are “anonymous” and promising they are “confidential”?", options:[
-     {t:"Anonymous: no one, not even the researcher, can link answers to a person. Confidential: the researcher could, but won’t reveal it.", ok:true, why:"That’s the standard distinction; promise only what your tool and procedures actually deliver."},
+     {t:"Anonymous: nobody can link answers to people. Confidential: the researcher can but won’t tell.", ok:true, why:"With anonymous answers, not even the researcher can link them to a person. That’s the standard distinction; promise only what your tool and procedures actually deliver."},
      {t:"They mean exactly the same thing", why:"They are different promises with different requirements."},
      {t:"Anonymous means answers are published with names", why:"That is the opposite of anonymous."},
-     {t:"Confidential means nobody can ever see the answers, including the researcher", why:"The researcher sees confidential answers but protects people’s identities."}
+     {t:"Confidential means nobody at all can ever see the answers, including the researcher who collects them", why:"The researcher sees confidential answers but protects people’s identities."}
    ]},
    {id:"t4u8-q09", lesson:"t4u8-l1", level:3, q:"Oluwaseun plans to compare this year’s staff survey with last year’s. He wants to reword several questions and move the job-satisfaction questions to the start. What is the risk?", options:[
-     {t:"Changes in wording or order can create apparent changes that are really just different questions", ok:true, why:"Trend comparisons need the same wording and context; order alone can shift answers."},
+     {t:"Changed wording or order can create changes that aren’t real", ok:true, why:"Apparent changes may really come from asking different questions. Trend comparisons need the same wording and context; order alone can shift answers."},
      {t:"There is no risk if the topic is the same", why:"Pew advises keeping identical wording, and similar order and context, when comparing with earlier surveys; the same topic isn’t enough."},
      {t:"The response rate will automatically double", why:"Reordering questions has no such predictable effect on response."},
-     {t:"Moving questions only matters on paper, not online", why:"Order effects occur in every mode."}
+     {t:"Moving questions only matters on paper surveys, not online ones", why:"Order effects occur in every mode."}
    ]},
    /* Lesson 2 */
    {id:"t4u8-q10", lesson:"t4u8-l2", level:1, q:"Which question is double-barrelled?", options:[
@@ -1038,53 +1100,53 @@ ICA.addUnit({
      {t:"20–29 · 30–39 · 40–49", why:"Anyone under 20 or over 49 has no option, so the list isn’t exhaustive."}
    ]},
    {id:"t4u8-q12", lesson:"t4u8-l2", level:1, q:"What is acquiescence bias?", options:[
-     {t:"Some people’s tendency to agree with statements regardless of their content", ok:true, why:"It particularly affects agree–disagree questions, which is why asking directly is often better."},
-     {t:"Giving answers that make you look good", why:"That’s social desirability bias."},
+     {t:"A tendency to agree with statements whatever they say", ok:true, why:"Some people tend to agree regardless of the content. It particularly affects agree–disagree questions, which is why asking directly is often better."},
+     {t:"Giving answers that make you look good to the researcher", why:"That’s social desirability bias."},
      {t:"Choosing the first option in a list", why:"That’s a primacy effect."},
      {t:"Forgetting when events happened", why:"That’s a recall problem, such as telescoping."}
    ]},
    {id:"t4u8-q13", lesson:"t4u8-l2", level:2, q:"What is wrong with “Do you disagree that the library should not close on Mondays?”", options:[
-     {t:"It’s a double negative, so people must untangle the logic and many will answer the opposite of what they mean", ok:true, why:"“Disagree” plus “should not close” makes the question hard to parse. Ask directly: “Should the library open on Mondays?”"},
+     {t:"It’s a double negative, so many will answer the opposite of what they mean", ok:true, why:"“Disagree” plus “should not close” makes the question hard to parse. Ask directly: “Should the library open on Mondays?”"},
      {t:"It’s double-barrelled", why:"It asks about one thing (Monday closing); the problem is the double negative."},
      {t:"It uses loaded words", why:"There’s no emotionally charged language; the problem is the logic."},
-     {t:"Nothing; it’s a clear question", why:"Double negatives are a well-known source of errors."}
+     {t:"Nothing; it’s a clear, polite question that anyone can answer quickly and easily", why:"Double negatives are a well-known source of errors."}
    ]},
    {id:"t4u8-q14", lesson:"t4u8-l2", level:3, q:"Priya’s survey asks, “Over the past year, how many hours did you spend reading to your children?” Answers range wildly. What is the best fix?", options:[
-     {t:"Ask about a short recent period, such as the past 7 days, and let people answer in days or minutes per day", ok:true, why:"A short, recent reference period reduces guessing and telescoping, and simpler units avoid mental arithmetic."},
+     {t:"Ask about a short recent period, such as the past 7 days", ok:true, why:"Let people answer in days or minutes per day. A short, recent reference period reduces guessing and telescoping, and simpler units avoid mental arithmetic."},
      {t:"Make the question required", why:"Requiring an answer doesn’t make an impossible recall task easier; it just forces guesses."},
      {t:"Add “Don’t you think reading is important?” before it", why:"That makes the question leading and adds social desirability pressure."},
-     {t:"Ask about the past five years instead to get more data", why:"A longer period makes recall even harder."}
+     {t:"Ask about the past five years instead, to get more data from each person", why:"A longer period makes recall even harder."}
    ]},
    {id:"t4u8-q15", lesson:"t4u8-l2", level:2, q:"According to Krosnick and Presser’s review, what does offering “Don’t know” on opinion questions usually do?", options:[
-     {t:"It doesn’t reliably improve data quality, and some people use it as an easy exit even when they hold a view", ok:true, why:"Their review found no consistent gain in reliability or validity; many who choose “Don’t know” give meaningful answers when encouraged."},
-     {t:"It always makes the data more accurate", why:"The evidence doesn’t show a consistent improvement."},
+     {t:"It doesn’t reliably improve quality, and some use it as an easy exit", ok:true, why:"Some people choose it even when they hold a view. Their review found no consistent gain in reliability or validity; many who choose “Don’t know” give meaningful answers when encouraged."},
+     {t:"It always makes the data more accurate, because people no longer have to guess", why:"The evidence doesn’t show a consistent improvement."},
      {t:"It is legally required in all surveys", why:"There is no such general legal rule; it’s a design choice."},
      {t:"It removes all social desirability bias", why:"“Don’t know” options don’t address the pull to look good."}
    ]},
    {id:"t4u8-q16", lesson:"t4u8-l2", level:1, q:"In a cognitive interview, what is a “probe”?", options:[
-     {t:"A neutral follow-up question that explores how the person understood or answered a survey question", ok:true, why:"For example, “What does ‘household’ mean to you here?”"},
+     {t:"A neutral follow-up question about how the person understood a question", ok:true, why:"For example, “What does ‘household’ mean to you here?”"},
      {t:"A trick question to catch people lying", why:"Probes are about understanding, not catching people out."},
-     {t:"A reminder email to people who haven’t responded", why:"That’s a reminder, part of fieldwork, not testing."},
+     {t:"A reminder email sent to the people who haven’t yet responded to the survey", why:"That’s a reminder, part of fieldwork, not testing."},
      {t:"A device that records the interview", why:"A probe is a question, not equipment."}
    ]},
    {id:"t4u8-q17", lesson:"t4u8-l2", level:3, q:"After piloting, Tomás rewrote three questions. Should he include the pilot participants’ answers in his final results?", options:[
-     {t:"Not for the changed questions: those people answered different versions, so their answers aren’t comparable", ok:true, why:"Pilot data normally isn’t combined with final data when the questions changed."},
+     {t:"Not for the changed questions, because they answered different versions", ok:true, why:"Pilot data normally isn’t combined with final data when the questions changed."},
      {t:"Yes, always: more data is better", why:"Mixing answers to different questions muddies the results."},
-     {t:"Yes, but only if they agreed with the final wording", why:"Agreement with the wording doesn’t make their answers comparable."},
+     {t:"Yes, but only for the people who agreed with the final wording of the questions", why:"Agreement with the wording doesn’t make their answers comparable."},
      {t:"Yes, as long as he doubles their weight", why:"Weighting can’t fix answers to a different question."}
    ]},
    {id:"t4u8-q18", lesson:"t4u8-l2", level:2, q:"Which wording best reduces social desirability bias when asking about recycling?", options:[
-     {t:"“Many people find it hard to recycle everything. In the past week, did you recycle all, most, some or none of your recyclable waste?”", ok:true, why:"Face-saving wording and graded options make less “virtuous” answers easier to give."},
+     {t:"“Many find recycling hard. Last week, did you recycle all, most, some or none of your waste?”", ok:true, why:"Face-saving wording and graded options make less “virtuous” answers easier to give."},
      {t:"“As a responsible resident, you recycle, don’t you?”", why:"Leading and loaded; it makes “no” very hard to say."},
      {t:"“Do you fail to recycle?”", why:"“Fail” is judgemental and pushes people away from the honest answer."},
-     {t:"“Recycling saves the planet. Do you recycle?”", why:"Opening with a value statement increases pressure to say yes."}
+     {t:"“Recycling saves the planet and protects our children’s future. Do you recycle everything you can?”", why:"Opening with a value statement increases pressure to say yes."}
    ]},
    /* Lesson 3 */
    {id:"t4u8-q19", lesson:"t4u8-l3", level:1, q:"Strictly speaking, what is a Likert scale?", options:[
      {t:"A set of rating items about one idea, combined into a single score", ok:true, why:"Likert’s 1932 method added up responses to several statements."},
      {t:"Any single question with five options", why:"A single rating question is a Likert-type item, not a scale."},
      {t:"An open question about attitudes", why:"Likert items are closed, with fixed ordered options."},
-     {t:"A scale that must have exactly seven points", why:"Likert scales can have different numbers of points; Likert’s own example used five."}
+     {t:"A single rating scale that must always have exactly seven labelled points", why:"Likert scales can have different numbers of points; Likert’s own example used five."}
    ]},
    {id:"t4u8-q20", lesson:"t4u8-l3", level:2, q:"On a 1–7 scale, a respondent answers 3 to a reverse-worded item. What is the reversed score?", options:[
      {t:"5", ok:true, why:"Reversed score = (7 + 1) − 3 = 5."},
@@ -1093,16 +1155,16 @@ ICA.addUnit({
      {t:"6", why:"6 would come from 9 − 3, adding 2 to the number of points instead of 1. The rule is (k + 1) − answer = 8 − 3 = 5."}
    ]},
    {id:"t4u8-q21", lesson:"t4u8-l3", level:2, q:"Why are answers to a single five-point rating item usually called ordinal?", options:[
-     {t:"The options have a meaningful order, but the distances between them aren’t known to be equal", ok:true, why:"“Agree” is more than “Neither”, but we can’t say the steps are the same size."},
-     {t:"Because they are numbers, so they are measurements like height", why:"The numbers are labels for ordered categories, not measured quantities."},
+     {t:"The options are ordered, but the gaps between them aren’t known to be equal", ok:true, why:"“Agree” is more than “Neither”, but we can’t say the steps are the same size."},
+     {t:"Because they are numbers, so they are measurements just like height or weight", why:"The numbers are labels for ordered categories, not measured quantities."},
      {t:"Because they have no order at all", why:"That would be nominal (unordered) data."},
      {t:"Because the answers are always normally distributed", why:"Ordinal refers to the type of scale, not the distribution."}
    ]},
    {id:"t4u8-q22", lesson:"t4u8-l3", level:1, q:"What did Krosnick and Presser’s review find about labelling scale points?", options:[
-     {t:"Labelling every point with words tends to give more reliable answers than labelling only the ends", ok:true, why:"Full verbal labels reduce guessing about what middle numbers mean."},
+     {t:"Labelling every point with words tends to give more reliable answers", ok:true, why:"That works better than labelling only the ends. Full verbal labels reduce guessing about what middle numbers mean."},
      {t:"Only numbers should ever be used", why:"Numeric-only scales are harder to interpret."},
      {t:"Labels make no difference", why:"The evidence shows labels do matter for reliability."},
-     {t:"Only the midpoint should be labelled", why:"That leaves most points unclear."}
+     {t:"Only the midpoint should be labelled, so people aren’t led by the words", why:"That leaves most points unclear."}
    ]},
    {id:"t4u8-q23", lesson:"t4u8-l3", level:2, q:"Where should a “Don’t know” option go on a five-point agreement scale?", options:[
      {t:"Separate from the scale, after the last point", ok:true, why:"Keeping it apart stops it being read as a neutral rating."},
@@ -1111,16 +1173,16 @@ ICA.addUnit({
      {t:"Instead of “Strongly agree”", why:"That would remove a real answer and confuse the scale."}
    ]},
    {id:"t4u8-q24", lesson:"t4u8-l3", level:3, q:"Two departments both have a mean of 3.0 on a five-point item. In Department A, almost everyone chose 3. In Department B, half chose 1 and half chose 5. What should the report do?", options:[
-     {t:"Show each department’s full distribution, because identical means hide a united group and a split one", ok:true, why:"The distribution is the honest summary for ordinal ratings; the mean alone hides the difference."},
+     {t:"Show each department’s full distribution, not just the mean", ok:true, why:"Identical means hide a united group and a split one. The distribution is the honest summary for ordinal ratings; the mean alone hides the difference."},
      {t:"Report that the departments are identical", why:"They are very different: one is neutral, the other is polarised."},
-     {t:"Report only the medians, which will show the difference", why:"Both medians are 3 here too, so they also hide the split."},
+     {t:"Report only the medians, which will show the difference clearly", why:"Both medians are 3 here too, so they also hide the split."},
      {t:"Drop Department B as an outlier", why:"Polarised answers are a real finding, not an error."}
    ]},
    {id:"t4u8-q25", lesson:"t4u8-l3", level:2, q:"What does the evidence say about removing the neutral midpoint from a rating scale?", options:[
      {t:"It pushes genuinely neutral people to one side, which can reduce accuracy", ok:true, why:"Krosnick and Presser report this and cite studies finding midpoints improved reliability and validity."},
      {t:"It always improves data quality", why:"The evidence doesn’t support that; many studies favour a midpoint."},
      {t:"It has no effect at all", why:"It changes where neutral people put their answers."},
-     {t:"It is required by the original Likert method", why:"Likert’s original categories included an “undecided” middle option."}
+     {t:"It is required by Likert’s original 1932 method, so it always improves accuracy", why:"Likert’s original categories included an “undecided” middle option."}
    ]},
    {id:"t4u8-q26", lesson:"t4u8-l3", level:1, q:"Rensis Likert’s 1932 monograph was titled…", options:[
      {t:"A Technique for the Measurement of Attitudes", ok:true, why:"Published in Archives of Psychology, No. 140, in 1932."},
@@ -1129,10 +1191,10 @@ ICA.addUnit({
      {t:"Social Science Research", why:"That is Bhattacherjee’s textbook."}
    ]},
    {id:"t4u8-q27", lesson:"t4u8-l3", level:3, q:"Hana wants to measure how confident nurses feel using a new records system. She could adopt a published, tested scale or write her own items. Which consideration is most important?", options:[
-     {t:"A tested scale has evidence of reliability and validity and allows comparison, but she must check its licence and that it fits her setting", ok:true, why:"Established scales save work and are comparable, but some require permission or payment and may not suit every context."},
+     {t:"A tested scale has evidence behind it, but she must check its licence and fit", ok:true, why:"A tested scale has evidence of reliability and validity and allows comparison. Established scales save work and are comparable, but some require permission or payment and may not suit every context."},
      {t:"Writing her own is always better because it’s new", why:"New items lack evidence of reliability and validity and can’t be compared with other studies."},
      {t:"Published scales are free to use in every case", why:"Some scales are copyrighted and need permission or payment."},
-     {t:"The number of items doesn’t matter, so one item is enough", why:"One item is less reliable for a broad idea like confidence; that’s why scales use several."}
+     {t:"The number of items doesn’t matter, so a single item she writes herself is enough", why:"One item is less reliable for a broad idea like confidence; that’s why scales use several."}
    ]},
    /* Lesson 4 */
    {id:"t4u8-q28", lesson:"t4u8-l4", level:1, q:"What is a sampling frame?", options:[
@@ -1148,8 +1210,8 @@ ICA.addUnit({
      {t:"About ±0.6 percentage points", why:"Too small; check the square root step."}
    ]},
    {id:"t4u8-q30", lesson:"t4u8-l4", level:1, q:"What does the margin of error NOT include?", options:[
-     {t:"Errors from people missing from the frame, people not responding, and poorly worded questions", ok:true, why:"It only covers sampling error in a probability sample."},
-     {t:"Chance differences between a random sample and the population", why:"That is exactly what it does include."},
+     {t:"Errors from frame gaps, nonresponse and poorly worded questions", ok:true, why:"People missing from the frame, people not responding and poor wording all add error. It only covers sampling error in a probability sample."},
+     {t:"Chance differences between a random sample and the whole population", why:"That is exactly what it does include."},
      {t:"The effect of sample size", why:"Sample size is in the formula."},
      {t:"The 95% confidence level", why:"The confidence level is built into the 1.96."}
    ]},
@@ -1160,8 +1222,8 @@ ICA.addUnit({
      {t:"It was the first poll to use random sampling", why:"It used lists of telephone and car owners, not random sampling."}
    ]},
    {id:"t4u8-q32", lesson:"t4u8-l4", level:3, q:"A council posts a survey link on its social media page and gets 3,000 responses. A report adds “margin of error ±1.8 points”. What’s the problem?", options:[
-     {t:"The sample is self-selected, so the margin-of-error formula doesn’t describe its uncertainty; the real error could be much larger", ok:true, why:"The formula assumes a probability sample. Volunteers from a social media page may differ systematically from residents."},
-     {t:"The margin should be ±0.5 because 3,000 is a large sample", why:"Recalculating doesn’t help; the formula doesn’t apply to a self-selected sample."},
+     {t:"The sample is self-selected, so the margin-of-error formula doesn’t apply", ok:true, why:"The real error could be much larger. The formula assumes a probability sample. Volunteers from a social media page may differ systematically from residents."},
+     {t:"The margin should be ±0.5 points instead, because 3,000 is a very large sample", why:"Recalculating doesn’t help; the formula doesn’t apply to a self-selected sample."},
      {t:"Nothing: any sample over 1,000 is accurate", why:"Size can’t fix who chose to respond; the Literary Digest had 2.4 million replies."},
      {t:"Margins of error are only for phone surveys", why:"They apply to probability samples in any mode."}
    ]},
@@ -1178,13 +1240,13 @@ ICA.addUnit({
      {t:"Double the population size", why:"Population size barely affects the margin unless the sample is a large share of it."}
    ]},
    {id:"t4u8-q35", lesson:"t4u8-l4", level:2, q:"In a poll with ±3 points on each figure, Candidate A has 48% and Candidate B 45%. Which statement is best?", options:[
-     {t:"The 3-point lead isn’t clearly outside sampling error, because the margin for the gap is larger than ±3", ok:true, why:"The margin for the difference between two figures in the same poll is up to about double each figure’s margin."},
-     {t:"A is definitely ahead, because 48 is more than 45", why:"Sampling error alone could produce this gap."},
+     {t:"The lead isn’t clearly outside sampling error; the margin for the gap is larger", ok:true, why:"The margin for the difference between two figures in the same poll is up to about double each figure’s margin."},
+     {t:"A is definitely ahead, because 48 is more than 45 and the sample was chosen at random", why:"Sampling error alone could produce this gap."},
      {t:"The candidates are certainly tied", why:"The poll doesn’t show a tie either; it can’t clearly separate them."},
      {t:"The margin for the lead is ±1.5 points", why:"The margin for a difference is larger, not smaller, than for each figure."}
    ]},
    {id:"t4u8-q36", lesson:"t4u8-l4", level:3, q:"A school survey of parents has a 30% response rate. Respondents’ children have much higher attendance than the school average. What does this suggest?", options:[
-     {t:"Possible nonresponse bias: families more engaged with school may be over-represented, so results may look more positive than reality", ok:true, why:"Comparing respondents with a known figure (attendance) is exactly how you check for nonresponse bias."},
+     {t:"Possible nonresponse bias: engaged families may be over-represented", ok:true, why:"Results may look more positive than reality. Comparing respondents with a known figure (attendance) is exactly how you check for nonresponse bias."},
      {t:"The survey is definitely accurate because the response rate is above 25%", why:"There’s no threshold that guarantees accuracy; the attendance gap is a warning sign."},
      {t:"Attendance has nothing to do with the survey", why:"Engagement with school likely relates to parents’ views of it."},
      {t:"Low-attendance families must have answered dishonestly", why:"The issue is who responded, not dishonesty."}
@@ -1192,7 +1254,7 @@ ICA.addUnit({
    /* Lesson 5 */
    {id:"t4u8-q37", lesson:"t4u8-l5", level:1, q:"What is a valid percentage?", options:[
      {t:"A percentage calculated only from people who answered that question", ok:true, why:"It leaves out people who skipped. Always say which denominator you used."},
-     {t:"A percentage that has been checked by a statistician", why:"“Valid” here refers to the denominator, not to checking."},
+     {t:"A percentage that has been checked and approved by a trained statistician", why:"“Valid” here refers to the denominator, not to checking."},
      {t:"A percentage of everyone in the population", why:"Survey percentages are of respondents, not the whole population."},
      {t:"A percentage rounded to a whole number", why:"Rounding is unrelated to valid percentages."}
    ]},
@@ -1209,13 +1271,13 @@ ICA.addUnit({
      {t:"The number of people who answered", why:"That’s the sample size, n, not a measure of spread."}
    ]},
    {id:"t4u8-q40", lesson:"t4u8-l5", level:3, q:"In a cross-tab, 60 of 150 rural respondents and 90 of 450 urban respondents use a mobile clinic. Which comparison is correct?", options:[
-     {t:"40% of rural respondents vs 20% of urban respondents: a gap of 20 percentage points", ok:true, why:"Row percentages: 60 ÷ 150 = 40%; 90 ÷ 450 = 20%."},
+     {t:"40% rural vs 20% urban: a gap of 20 percentage points", ok:true, why:"Row percentages: 60 ÷ 150 = 40%; 90 ÷ 450 = 20%."},
      {t:"Urban respondents use it more, because 90 is more than 60", why:"Raw counts ignore group size; there are three times as many urban respondents."},
      {t:"60% of clinic users are urban, so urban people are more likely to use it", why:"90 of 150 users (60%) are urban, but that column percentage reflects group sizes, not likelihood."},
      {t:"Rural respondents are 20% more likely to use it", why:"The gap is 20 percentage points; in relative terms 40% is double 20%."}
    ]},
    {id:"t4u8-q41", lesson:"t4u8-l5", level:2, q:"Why might percentages for a “tick all that apply” question add up to 150%?", options:[
-     {t:"Each person could choose more than one option, so the options aren’t shares of one whole", ok:true, why:"That’s expected; say so in the report."},
+     {t:"Each person could choose more than one option", ok:true, why:"So the options aren’t shares of one whole. That’s expected; say so in the report."},
      {t:"There must be a calculation error", why:"Not necessarily: with multiple answers per person, totals above 100% are normal."},
      {t:"Some respondents were counted twice by the survey tool", why:"Each person is counted once per option they chose; that’s by design."},
      {t:"Percentages always add up to more than 100% in surveys", why:"Single-choice questions add to 100% (allowing for rounding)."}
@@ -1233,15 +1295,15 @@ ICA.addUnit({
      {t:"The standard deviation", why:"That measures spread in numbers and doesn’t apply."}
    ]},
    {id:"t4u8-q44", lesson:"t4u8-l5", level:3, q:"A press release says: “Support for the new bus route jumped from 48% to 51%!” Each figure comes from a random sample with a ±4-point margin of error. What is the most honest description?", options:[
-     {t:"There’s no clear evidence of a change: the 3-point difference is within the surveys’ margins of error", ok:true, why:"A change smaller than the margin of error isn’t clear evidence of any real change."},
-     {t:"Support jumped by 3 percentage points", why:"Calling it a jump overstates a change that sampling error alone could produce."},
+     {t:"No clear evidence of change: 3 points is within the margins of error", ok:true, why:"A change smaller than the margin of error isn’t clear evidence of any real change."},
+     {t:"Support jumped by 3 percentage points, so the route is now more popular", why:"Calling it a jump overstates a change that sampling error alone could produce."},
      {t:"A majority now supports the route", why:"51% ± 4 includes values below 50%, so a majority isn’t established."},
      {t:"Support rose by 6.25%", why:"That’s the relative change (3 ÷ 48), and it still ignores the margin of error."}
    ]},
    {id:"t4u8-q45", lesson:"t4u8-l5", level:2, q:"Which item should always appear next to a survey percentage in a report?", options:[
      {t:"The number of people it is based on (n)", ok:true, why:"Without n, readers can’t tell whether 75% means 3 of 4 people or 750 of 1,000."},
      {t:"The name of the survey tool", why:"Useful in a methods section, but not essential next to each figure."},
-     {t:"The researcher’s opinion of the result", why:"Interpretation belongs in the discussion, not attached to every figure."},
+     {t:"The researcher’s own opinion of the result", why:"Interpretation belongs in the discussion, not attached to every figure."},
      {t:"A chart with a cut-off axis", why:"Cut-off axes can exaggerate differences; they aren’t required."}
    ]}
   ]

@@ -346,7 +346,7 @@ ICA.addUnit({
     {h:"Nuclear weapons and the NPT bargain", body:[
       "[[nuclear-proliferation|Nuclear proliferation]] means the spread of nuclear weapons to more states (or to armed groups). The main barrier is the [[non-proliferation-treaty|Treaty on the Non-Proliferation of Nuclear Weapons]] (NPT), opened for signature in 1968, in force since 1970 and extended indefinitely in 1995. With 191 states parties, it is one of the most widely joined arms treaties. It rests on a three-part bargain:",
       {fig:'<svg viewBox="0 0 340 292"><path class="d-gold" d="M20 70 L170 14 L320 70 Z" stroke-width="2"/><text x="170" y="52" text-anchor="middle">The NPT bargain</text><text class="s" x="170" y="66" text-anchor="middle">signed 1968, in force 1970</text><rect class="d-lup" x="24" y="82" width="92" height="130" rx="6" stroke-width="2"/><text x="70" y="104" text-anchor="middle">Non-</text><text x="70" y="120" text-anchor="middle">proliferation</text><text class="s" x="70" y="146" text-anchor="middle">States without</text><text class="s" x="70" y="162" text-anchor="middle">weapons don’t</text><text class="s" x="70" y="178" text-anchor="middle">get them;</text><text class="s" x="70" y="194" text-anchor="middle">IAEA checks</text><rect class="d-rose" x="124" y="82" width="92" height="130" rx="6" stroke-width="2"/><text x="170" y="104" text-anchor="middle">Disarma-</text><text x="170" y="120" text-anchor="middle">ment</text><text class="s" x="170" y="146" text-anchor="middle">All parties</text><text class="s" x="170" y="162" text-anchor="middle">negotiate in</text><text class="s" x="170" y="178" text-anchor="middle">good faith</text><text class="s" x="170" y="194" text-anchor="middle">(Article VI)</text><rect class="d-sage" x="224" y="82" width="92" height="130" rx="6" stroke-width="2"/><text x="270" y="104" text-anchor="middle">Peaceful</text><text x="270" y="120" text-anchor="middle">use</text><text class="s" x="270" y="146" text-anchor="middle">Nuclear energy</text><text class="s" x="270" y="162" text-anchor="middle">and science</text><text class="s" x="270" y="178" text-anchor="middle">for all</text><text class="s" x="270" y="194" text-anchor="middle">parties</text><rect class="d-panel" x="14" y="222" width="312" height="62" rx="6" stroke-width="2"/><text class="s" x="170" y="244" text-anchor="middle">191 parties. Never joined: India, Israel,</text><text class="s" x="170" y="262" text-anchor="middle">Pakistan. North Korea announced its</text><text class="s" x="170" y="278" text-anchor="middle">withdrawal in 2003.</text></svg>', alt:"A temple-like diagram. The roof reads: the NPT bargain, signed 1968, in force 1970. Three pillars: non-proliferation (states without weapons don’t get them; the IAEA checks), disarmament (all parties negotiate in good faith, Article VI) and peaceful use (nuclear energy and science for all parties). The base notes 191 parties; India, Israel and Pakistan never joined, and North Korea announced its withdrawal in 2003.", cap:"The NPT’s three pillars. Many non-nuclear states argue the disarmament pillar has been neglected."},
-      "The treaty recognises five **nuclear-weapon states**, those that had tested a weapon before 1 January 1967: the United States, the Soviet Union (now Russia), the United Kingdom, France and China. SIPRI estimated that in January 2026 the nine nuclear-armed states held about **12,187** warheads, of which about 9,745 were in military stockpiles; Russia and the United States together held almost 86% of all warheads.",
+      "The treaty recognises five **nuclear-weapon states**, those that had tested a weapon before 1 January 1967: the United States, the Soviet Union (now Russia), the United Kingdom, France and China. SIPRI estimated that in January 2026 the nine nuclear-armed states held about **12,187** warheads, of which about 9,745 were in military stockpiles; Russia and the United States together held around 83% of the stockpiled (usable) warheads.",
       "Proliferation is not a one-way street. South Africa built nuclear weapons and then dismantled them around 1990–91, before joining the NPT. Belarus, Kazakhstan and Ukraine handed over Soviet weapons left on their territory in the 1990s. Whole regions have declared themselves **nuclear-weapon-free zones**: Latin America and the Caribbean (Treaty of Tlatelolco, 1967), the South Pacific (Rarotonga, 1985), Southeast Asia (Bangkok, 1995), Africa (Pelindaba, 1996) and Central Asia (2006). The Treaty on the Prohibition of Nuclear Weapons (adopted 2017, in force 2021) bans them outright, but none of the nine nuclear-armed states has joined.",
       "Scholars disagree about what nuclear weapons do. Kenneth Waltz argued that their spread could make war less likely, because nobody dares attack a nuclear state; Scott Sagan replied that real organisations make mistakes, so more nuclear states mean more chances of accidents and unauthorised use. Their debate was published as *The Spread of Nuclear Weapons* (1995)."
     ]},
@@ -700,6 +700,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u8-q02","e2u8-q05","e2u8-q11","e2u8-q14","e2u8-q20","e2u8-q23","e2u8-q26","e2u8-q30","e2u8-q33","e2u8-q38","e2u8-q41","e2u8-q45"],
+  cpBank:[
+   {id:"e2u8-cp01", lesson:"e2u8-l1", level:1, q:"Two rival armed militias fight each other for control of a gold-mining area. No government takes part. In UCDP’s categories, what kind of organised violence is this?", options:[
+     {t:"An intrastate conflict", why:"An intrastate conflict has a government fighting armed groups in its own country. Here no government is involved."},
+     {t:"A non-state conflict", ok:true, why:"Correct. Fighting between two organised armed groups, neither of them a government, is recorded as non-state conflict."},
+     {t:"An interstate conflict", why:"An interstate conflict is between two or more governments. These are militias."},
+     {t:"One-sided violence", why:"One-sided violence is deliberate killing of unarmed civilians. Here two armed groups fight each other."}]},
+   {id:"e2u8-cp02", lesson:"e2u8-l4", level:1, q:"After a civil war, a country sets up local hearings in villages so that tens of thousands of lower-level cases can be handled close to where they happened. Which transitional justice tool is this?", options:[
+     {t:"An international criminal trial", why:"International trials, like the UN tribunals, hold a small number of individuals responsible. They can’t handle tens of thousands of local cases."},
+     {t:"A truth commission", why:"A truth commission establishes and publishes what happened, like Argentina’s *Nunca Más*. It doesn’t hold local hearings on each case."},
+     {t:"Reparations", why:"Reparations compensate victims and remember the dead. They don’t hear cases."},
+     {t:"Community justice", ok:true, why:"Yes. Local hearings for large numbers of cases are community justice, as with Rwanda’s gacaca courts (2002–2012)."}]},
+   {id:"e2u8-cp03", lesson:"e2u8-l3", level:1, q:"Country A tells Country B: “Withdraw your troops from our island by Friday, or we will strike.” In Schelling’s terms, what is A attempting?", options:[
+     {t:"Deterrence", why:"Deterrence says “don’t do this” to prevent an action that hasn’t happened. A wants B to stop something B is already doing."},
+     {t:"Compellence", ok:true, why:"Right. Compellence says “stop doing this, or else”. Schelling noted it is usually harder than deterrence."},
+     {t:"Securitisation", why:"Securitisation is presenting an issue as an existential threat to an audience. A is threatening B directly."},
+     {t:"Second-strike capability", why:"Second-strike capability is the ability to strike back after being attacked. It is a capability, not a demand."}]},
+   {id:"e2u8-cp04", lesson:"e2u8-l1", level:2, q:"An army plans to strike a small supply depot, a military target, next to a crowded market. It warns residents hours ahead, but still expects civilian deaths far greater than the small military gain. Which rule is most clearly breached?", options:[
+     {t:"Distinction", why:"Distinction means attacking only military targets, never civilians as such. The depot is a military target, so this rule isn’t the main problem."},
+     {t:"Jus ad bellum", why:"Jus ad bellum is about whether a state may use force at all. This question is about how the fighting is conducted."},
+     {t:"Proportionality", ok:true, why:"Correct. Proportionality forbids attacks where expected civilian harm is excessive compared with the expected military advantage."},
+     {t:"Taking precautions", why:"The army took a precaution by warning residents. The breach is that the expected harm is still excessive for the gain."}]},
+   {id:"e2u8-cp05", lesson:"e2u8-l2", level:2, q:"A president facing mass protests over food prices orders a confrontation with a neighbour over a disputed island, hoping the public will rally behind the government. Which explanation of war does this fit?", options:[
+     {t:"Diversionary war", ok:true, why:"Yes. The diversionary war idea says leaders in trouble at home start foreign conflicts to rally the public. It is a state-level explanation, and the evidence across cases is mixed."},
+     {t:"The Thucydides trap", why:"The Thucydides trap is about a rising power nearing a leading one, a system-level idea. This case is about a leader’s problems at home."},
+     {t:"A commitment problem", why:"A commitment problem is fear that promises will be broken later. Nothing here involves an untrusted deal."},
+     {t:"The cult of the offensive", why:"The cult of the offensive was armies’ belief that attacking first is decisive. The president’s motive here is domestic support."}]},
+   {id:"e2u8-cp06", lesson:"e2u8-l3", level:2, q:"A minister declares that a foreign streaming service is “an existential threat to our national culture” and asks for emergency powers to ban it. Parliament and the public reject the claim. In Copenhagen School terms, what happened?", options:[
+     {t:"A successful act of securitisation", why:"Securitisation succeeds only when the audience accepts that extraordinary measures are justified. Here the audience rejected it."},
+     {t:"Desecuritisation", why:"Desecuritisation means bringing an issue that was treated as security back into ordinary politics. This issue was never accepted as security."},
+     {t:"A securitising move that failed", ok:true, why:"Right. The minister made the speech act, but without the audience’s acceptance it remains only a securitising move."},
+     {t:"Human security", why:"Human security is about people’s freedom from fear and want. The minister was trying to frame culture as a threat to the nation."}]},
+   {id:"e2u8-cp07", lesson:"e2u8-l4", level:2, q:"A host government withdraws its permission for a UN peacekeeping mission and asks it to leave. Which basic principle of peacekeeping is most directly affected?", options:[
+     {t:"Impartiality", why:"Impartiality is about treating the parties even-handedly. The problem here is that a main party no longer agrees to the mission’s presence."},
+     {t:"No use of force except in self-defence", why:"This principle limits what peacekeepers may do with force. Nothing here involves fighting."},
+     {t:"The responsibility to protect", why:"R2P is a separate commitment about mass atrocities, not one of peacekeeping’s three basic principles."},
+     {t:"Consent of the main parties", ok:true, why:"Correct. Peacekeeping rests on the consent of the main parties. When the host government withdraws consent, the mission’s basis is undermined."}]},
+   {id:"e2u8-cp08", lesson:"e2u8-l5", level:2, q:"Villages around a lake agree catch rules that suit local fish, choose their own members to check catches, and fine repeat cheats more each time. Overfishing stops. Whose work does this support?", options:[
+     {t:"Garrett Hardin’s: shared resources are always ruined", why:"Hardin thought commons would be ruined without state control or private property. These users managed the lake themselves."},
+     {t:"Mancur Olson’s: groups can never cooperate", why:"Olson showed that large groups find cooperation hard, not impossible. And this case shows a community succeeding."},
+     {t:"Elinor Ostrom’s: users can run a commons themselves", ok:true, why:"Yes. Local rules, monitoring by users and gradually rising penalties are among the features Ostrom found in commons that lasted for centuries."},
+     {t:"Thomas Schelling’s: threats prevent attacks", why:"Schelling wrote about deterrence and compellence between states, not about managing shared resources."}]},
+   {id:"e2u8-cp09", lesson:"e2u8-l1", level:3, q:"A headline says: “Deadliest year ever for war, warns analyst at leading think tank.” The article gives no dataset or year. What should an IR student check first?", options:[
+     {t:"Nothing: an expert at a leading think tank is enough", why:"Experts are useful but speak from a point of view. A claim about numbers needs a source and a year."},
+     {t:"Only whether this year’s total is bigger than last year’s", why:"That skips the key questions: which dataset, which definitions, and whether it counts deaths, rates or conflicts."},
+     {t:"Which dataset and definitions it uses, whether it counts deaths or rates, which year, and who funds the think tank", ok:true, why:"Right. Conflict figures depend on definitions and on deaths versus rates, every number needs a source and year, and a think tank’s funding shows its point of view."},
+     {t:"Whether other news sites repeated the same headline", why:"Repetition doesn’t check accuracy. Many sites can copy the same unsourced claim."}]},
+   {id:"e2u8-cp10", lesson:"e2u8-l2", level:3, q:"A rising power’s navy grows close to the size of the leading power’s. Each side’s new ships alarm the other, which builds more. Which pair of ideas describes this best?", options:[
+     {t:"Power transition, and an arms race driven by the security dilemma", ok:true, why:"Correct. A challenger nearing the leader is power transition theory (a system-level idea). Each side building in response to the other is an arms race, the security dilemma in motion."},
+     {t:"Diversionary war, and soft power", why:"Diversion is about leaders rallying the public at home, and soft power is attraction. Neither describes two navies racing."},
+     {t:"The greed explanation of civil war, and securitisation", why:"Greed (opportunity) explains rebellions inside countries. This is a rivalry between two states."},
+     {t:"Groupthink at the individual level, and mutually assured destruction", why:"Nothing here describes a small group silencing doubts, and MAD refers to nuclear second-strike forces, not a naval race."}]},
+   {id:"e2u8-cp11", lesson:"e2u8-l4", level:3, q:"In peace talks, rebel leaders say they will sign only if they are promised amnesty. Human rights groups warn that amnesty invites future abuse. Which dilemma is this, and why might the rebels insist?", options:[
+     {t:"Positive versus negative peace; the rebels are suffering from groupthink", why:"Galtung’s terms describe kinds of peace, not this trade-off. And nothing suggests a small group silencing doubts."},
+     {t:"Peace versus justice; without guarantees, rebels fear punishment once they disarm, which is a commitment problem", ok:true, why:"Right. Trading prosecution for peace is the peace versus justice dilemma. Rebels asked to give up their weapons fear the government will break its promises later."},
+     {t:"There is no dilemma: research proves amnesty always ends wars", why:"The unit says this dilemma has no single answer. Some argue amnesties help end wars; others argue impunity invites future abuse."},
+     {t:"Hard versus soft power; the issue is indivisible", why:"Amnesty can be offered or not, in many forms, so it isn’t indivisible. And the trade-off is about justice, not kinds of power."}]},
+   {id:"e2u8-cp12", lesson:"e2u8-l5", level:3, q:"A government calls climate change “an existential threat to our nation” and passes emergency laws that cut its emissions fast. Its neighbours keep emitting, saving money while still enjoying any benefit to the climate. Which two concepts fit?", options:[
+     {t:"Desecuritisation, and a solved tragedy of the commons", why:"The government moved climate into emergency politics, the opposite of desecuritisation. And with neighbours still emitting, the commons problem isn’t solved."},
+     {t:"Deterrence, and Ostrom’s local rules", why:"Deterrence prevents attacks by threatening costs. Ostrom’s rules are about users jointly managing a commons, which is missing here."},
+     {t:"Human security, and compellence", why:"Nothing threatens the neighbours to make them stop. And the government framed the issue as a threat to the nation, not to people’s daily lives."},
+     {t:"Securitisation of climate change, and neighbours free-riding on a global public good", ok:true, why:"Yes. Calling climate an existential threat to justify emergency measures is securitisation. The neighbours enjoy a shared benefit without paying for it: free riding."}]}
+  ],
   codex:[
    {id:"war-and-conflict", title:"War and armed conflict", aka:["armed conflict","civil war","interstate war","conflict data"], tags:["international relations","war","data"],
     summary:"How researchers define and count wars and armed conflicts, the main kinds, and what the data shows about trends.",
@@ -862,7 +924,7 @@ ICA.addUnit({
         "**Peaceful use:** all parties may develop nuclear energy for peaceful purposes."
       ]},
       "The treaty recognises five nuclear-weapon states, those that had exploded a nuclear device before 1 January 1967: the United States, the Soviet Union (now Russia), the United Kingdom, France and China. India, Israel and Pakistan never joined; North Korea announced its withdrawal in 2003. The treaty was extended indefinitely in 1995.",
-      "SIPRI’s January 2026 estimates: about 12,187 warheads in total, about 9,745 in military stockpiles and about 4,012 deployed with missiles and aircraft; Russia and the United States held almost 86% of all warheads. New START, the last treaty limiting their strategic forces, expired in February 2026 without a replacement.",
+      "SIPRI’s January 2026 estimates: about 12,187 warheads in total, about 9,745 in military stockpiles and about 4,012 deployed with missiles and aircraft; Russia and the United States held around 83% of the stockpiled (usable) warheads. New START, the last treaty limiting their strategic forces, expired in February 2026 without a replacement.",
       "**Rollback is possible:** South Africa dismantled its weapons around 1990–91; Belarus, Kazakhstan and Ukraine gave up Soviet weapons in the 1990s. Nuclear-weapon-free zones cover Latin America and the Caribbean (1967), the South Pacific (1985), Southeast Asia (1995), Africa (1996) and Central Asia (2006).",
       "**Inspections:** the International Atomic Energy Agency (IAEA) checks, through safeguards agreements, that nuclear material in non-nuclear-weapon states is not diverted to weapons."
      ],
@@ -1191,7 +1253,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e2u8-q01", lesson:"e2u8-l1", level:1, q:"In UCDP’s definitions, what is the minimum for a state-based armed conflict to be recorded in a given year?", options:[
-     {t:"At least 25 battle-related deaths in one calendar year, with a government on at least one side", ok:true, why:"That is UCDP’s threshold for a state-based armed conflict."},
+     {t:"At least 25 battle-related deaths in one calendar year", ok:true, why:"That is UCDP’s threshold for a state-based armed conflict, which must have a government on at least one side."},
      {t:"At least 1,000 battle-related deaths in one calendar year", why:"1,000 is the threshold for a war, not for an armed conflict."},
      {t:"A formal declaration of war by a government", why:"Formal declarations are rare today; UCDP counts deaths and parties, not declarations."},
      {t:"Fighting between two armed groups, neither of them a government", why:"That is non-state conflict, recorded separately; state-based conflict needs a government on one side."}
@@ -1209,16 +1271,16 @@ ICA.addUnit({
      {t:"Wars between great powers", why:"No great powers have fought each other directly since 1945."}
    ]},
    {id:"e2u8-q04", lesson:"e2u8-l1", level:2, q:"Which statement about UCDP’s figures for 2025 (released June 2026) is accurate?", options:[
-     {t:"It recorded 65 state-based conflicts, the most since 1946, of which 13 were wars", ok:true, why:"Those are UCDP’s reported figures for 2025."},
+     {t:"It recorded 65 conflicts, 13 of them wars", ok:true, why:"Those are UCDP’s reported figures for 2025: 65 state-based conflicts, the most since 1946."},
      {t:"It recorded 65 wars, each with at least 1,000 deaths", why:"Only 13 of the 65 conflicts reached the 1,000-death level of a war."},
      {t:"It found 2025 was the deadliest year in human history", why:"UCDP called it the second-deadliest year since 1994; the world wars were far deadlier."},
      {t:"It found there were no wars between states", why:"UCDP recorded 8 interstate conflicts in 2025, the highest since 1946."}
    ]},
    {id:"e2u8-q05", lesson:"e2u8-l1", level:3, q:"Amara reads: “Conflict deaths in 2025 were lower than in some years of the 1980s, so the world is safer now.” What is the most important question to ask first?", options:[
-     {t:"Are these absolute numbers or rates per person, and which dataset and definitions are used?", ok:true, why:"Population has grown a lot and datasets differ, so comparing years needs the same definitions and, ideally, rates."},
+     {t:"Are they totals or rates, and from which dataset?", ok:true, why:"Check whether figures are absolute numbers or rates per person, and which definitions are used. Population has grown a lot and datasets differ, so comparing years needs the same definitions and, ideally, rates."},
      {t:"Which side was right in the 1980s wars?", why:"Judging sides doesn’t help check a statistical comparison."},
-     {t:"Whether the writer likes the United Nations", why:"The writer’s opinions don’t tell you whether the numbers are comparable."},
-     {t:"Whether any wars have happened since 2000", why:"Obviously they have; that doesn’t test the claim about comparing death levels."}
+     {t:"Whether the writer likes the United Nations or not", why:"The writer’s opinions don’t tell you whether the numbers are comparable."},
+     {t:"Whether any wars at all have happened since 2000", why:"Obviously they have; that doesn’t test the claim about comparing death levels."}
    ]},
    {id:"e2u8-q06", lesson:"e2u8-l1", level:1, q:"What does UCDP’s count of battle-related deaths leave out?", options:[
      {t:"Deaths caused indirectly by war, such as from hunger or disease", ok:true, why:"UCDP counts deaths from violence itself; indirect deaths are much harder to measure and are not included."},
@@ -1227,28 +1289,28 @@ ICA.addUnit({
      {t:"Deaths in internationalized conflicts", why:"Internationalized conflicts are state-based and their battle deaths are counted."}
    ]},
    {id:"e2u8-q07", lesson:"e2u8-l1", level:2, q:"Which pair of works represents the two sides of the debate about whether war is declining?", options:[
-     {t:"Pinker’s *The Better Angels of Our Nature* (2011) and Braumoeller’s *Only the Dead* (2019)", ok:true, why:"Pinker argued for a long-run decline; Braumoeller found no clear decline in how often wars start."},
+     {t:"Pinker’s *The Better Angels of Our Nature* and Braumoeller’s *Only the Dead*", ok:true, why:"Pinker (2011) argued for a long-run decline; Braumoeller (2019) found no clear decline in how often wars start."},
      {t:"Waltz’s *Man, the State, and War* (1959) and Morgenthau’s *Politics Among Nations* (1948)", why:"Both are realist classics on the causes of war, not the two sides of the decline debate."},
      {t:"The UN Charter and the Geneva Conventions", why:"These are legal texts, not research on trends in war."},
      {t:"Kaldor’s *New and Old Wars* and Galtung’s 1969 article on peace", why:"These are about kinds of war and kinds of peace, not mainly the decline debate."}
    ]},
    {id:"e2u8-q08", lesson:"e2u8-l1", level:2, q:"In international humanitarian law, what does the principle of distinction require?", options:[
-     {t:"Attacking only combatants and military targets, never civilians as such", ok:true, why:"Distinction separates those who may be targeted from those who are protected."},
+     {t:"Attacking only combatants and military targets", ok:true, why:"Civilians as such must never be attacked. Distinction separates those who may be targeted from those who are protected."},
      {t:"Declaring war before fighting", why:"Declarations aren’t what distinction is about; it concerns who and what may be attacked."},
      {t:"Only the side that was attacked first must follow the rules", why:"The law of armed conflict binds every side, whoever started the war."},
      {t:"Using the same weapons as the enemy", why:"Distinction doesn’t require matching weapons; it requires telling combatants from civilians."}
    ]},
    {id:"e2u8-q09", lesson:"e2u8-l1", level:3, q:"Kenji’s report says: “There were more armed conflicts in 2025 than in any year since 1946, so 2025 was also the year with the most deaths.” What is wrong with this reasoning?", options:[
-     {t:"A record count of conflicts doesn’t mean record deaths: many conflicts can be small", ok:true, why:"Counts and deaths are different measures; UCDP called 2025 the second-deadliest year since 1994, not the deadliest."},
-     {t:"Nothing: more conflicts always means more deaths", why:"Many conflicts pass only the 25-death threshold, so the count can rise without deaths reaching a record."},
+     {t:"A record number of conflicts doesn’t mean record deaths", ok:true, why:"Many conflicts can be small. Counts and deaths are different measures; UCDP called 2025 the second-deadliest year since 1994, not the deadliest."},
+     {t:"Nothing: more conflicts always means more deaths overall", why:"Many conflicts pass only the 25-death threshold, so the count can rise without deaths reaching a record."},
      {t:"UCDP doesn’t publish any data on deaths", why:"UCDP publishes best estimates of deaths, with low and high figures."},
      {t:"Conflicts are only counted if they are wars", why:"UCDP counts armed conflicts from 25 deaths; wars are the subset with 1,000 or more."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e2u8-q10", lesson:"e2u8-l2", level:1, q:"What is the difference between the immediate and the underlying causes of a war?", options:[
-     {t:"The immediate cause is the spark that sets it off; underlying causes are the conditions that made the spark dangerous", ok:true, why:"Like a cigarette in a dry forest: the spark and the fuel."},
+     {t:"The immediate cause is the spark; underlying causes are the fuel", ok:true, why:"The immediate cause sets the war off; underlying causes are the conditions that made the spark dangerous, like a cigarette in a dry forest."},
      {t:"Immediate causes are economic; underlying causes are political", why:"Either kind of cause can be economic, political or something else; the difference is about timing and depth."},
-     {t:"Immediate causes matter; underlying causes are just background", why:"Without the underlying causes, the spark would usually not have started a war."},
+     {t:"Immediate causes really matter; underlying causes are just background", why:"Without the underlying causes, the spark would usually not have started a war."},
      {t:"They are two names for the same thing", why:"Historians distinguish them carefully, as in 1914."}
    ]},
    {id:"e2u8-q11", lesson:"e2u8-l2", level:2, q:"“The war happened because a rising power’s growth frightened the established power.” At which level of analysis is this explanation?", options:[
@@ -1270,7 +1332,7 @@ ICA.addUnit({
      {t:"Diversionary war", why:"There is no domestic crisis being distracted from."}
    ]},
    {id:"e2u8-q14", lesson:"e2u8-l2", level:2, q:"What did Fearon and Laitin (2003) find about civil war?", options:[
-     {t:"Conditions favouring insurgency, such as poor, weak states and rough terrain, predict civil war better than ethnic diversity alone", ok:true, why:"Their study stressed state weakness and opportunity for insurgency."},
+     {t:"Conditions for insurgency predict civil war better than diversity", ok:true, why:"Conditions such as poor, weak states and rough terrain predicted civil war better than ethnic diversity alone. Their study stressed state weakness and opportunity for insurgency."},
      {t:"Ethnic diversity on its own is the strongest predictor of civil war", why:"That is the view their findings challenged."},
      {t:"Civil wars only happen in democracies", why:"Their work doesn’t say this, and civil wars occur under many kinds of government."},
      {t:"Natural resources have no link to civil war", why:"Research, including Collier and Hoeffler’s, links some resources to conflict financing."}
@@ -1282,7 +1344,7 @@ ICA.addUnit({
      {t:"The Concert of Europe", why:"The Concert of Europe was the 19th-century system of great-power consultation after 1815."}
    ]},
    {id:"e2u8-q16", lesson:"e2u8-l2", level:3, q:"Lucía writes: “Ancient ethnic hatreds explain why this civil war started.” Based on research, what is the best response?", options:[
-     {t:"Research finds ethnic difference alone predicts civil war poorly; look for political causes such as exclusion, fear and leaders mobilising identity", ok:true, why:"Most researchers reject “ancient hatreds” in favour of political mechanisms."},
+     {t:"Ethnicity alone predicts civil war poorly; look for political causes", ok:true, why:"Political causes include exclusion, fear and leaders mobilising identity. Most researchers reject “ancient hatreds” in favour of political mechanisms."},
      {t:"She is right; ethnic diversity is the main cause of civil wars everywhere", why:"Studies such as Fearon and Laitin’s found ethnic diversity alone a weak predictor."},
      {t:"Ethnicity never has anything to do with civil wars", why:"That overcorrects: political exclusion of ethnic groups does raise the risk (Cederman, Gleditsch and Buhaug)."},
      {t:"Only economic greed matters, never identity", why:"Grievance, identity and opportunity can combine; no single factor explains everything."}
@@ -1307,10 +1369,10 @@ ICA.addUnit({
      {t:"Signature, ratification and entry into force", why:"Those are stages of a treaty’s life."}
    ]},
    {id:"e2u8-q20", lesson:"e2u8-l3", level:2, q:"Under the NPT, which states are recognised as nuclear-weapon states?", options:[
-     {t:"Those that had exploded a nuclear device before 1 January 1967: the US, Russia (as the Soviet Union), the UK, France and China", ok:true, why:"That cut-off date defines the five nuclear-weapon states in the treaty."},
+     {t:"The five that tested a nuclear device before 1967", ok:true, why:"They had exploded a nuclear device before 1 January 1967: the US, Russia (as the Soviet Union), the UK, France and China. That cut-off date defines the five nuclear-weapon states in the treaty."},
      {t:"All nine states that have nuclear weapons today", why:"India, Pakistan, Israel and North Korea are not recognised as nuclear-weapon states under the NPT."},
      {t:"The permanent members plus India", why:"India never joined the NPT and is not recognised as a nuclear-weapon state under it."},
-     {t:"Any state that announces it has nuclear weapons", why:"Recognition depends on the treaty’s 1967 cut-off, not on announcements."}
+     {t:"Any state that publicly announces it has nuclear weapons", why:"Recognition depends on the treaty’s 1967 cut-off, not on announcements."}
    ]},
    {id:"e2u8-q21", lesson:"e2u8-l3", level:1, q:"Which report launched the idea of human security in 1994?", options:[
      {t:"The UNDP’s *Human Development Report 1994*", ok:true, why:"Its subtitle was “New Dimensions of Human Security”."},
@@ -1319,25 +1381,25 @@ ICA.addUnit({
      {t:"The SIPRI Yearbook", why:"SIPRI’s yearbook covers armaments and disarmament data."}
    ]},
    {id:"e2u8-q22", lesson:"e2u8-l3", level:3, q:"A minister declares that a new strain of disease “threatens our nation’s survival” and asks parliament for emergency powers to close borders without debate. Parliament agrees. In Copenhagen School terms, what has happened?", options:[
-     {t:"A successful securitisation: an actor framed an existential threat and the audience accepted extraordinary measures", ok:true, why:"Actor, referent object, speech act, audience acceptance and extraordinary measures are all present."},
+     {t:"Successful securitisation: the audience accepted emergency powers", ok:true, why:"An actor framed an existential threat and the audience accepted extraordinary measures. Actor, referent object, speech act, audience acceptance and extraordinary measures are all present."},
      {t:"Desecuritisation, because health is not a military issue", why:"Desecuritisation means moving an issue back to normal politics; this moved it out of normal politics."},
      {t:"Only a securitising move, because health can never be a security issue", why:"Any issue can be securitised; the audience accepted, so the move succeeded."},
      {t:"Deterrence, because the minister threatened the disease", why:"Deterrence is about threatening an actor’s choices; a disease can’t be deterred."}
    ]},
    {id:"e2u8-q23", lesson:"e2u8-l3", level:2, q:"Why is there still no agreed international definition of terrorism?", options:[
-     {t:"States disagree on whether struggles against foreign occupation are excluded and whether state forces can commit terrorism", ok:true, why:"These two sticking points have blocked the comprehensive convention."},
+     {t:"States disagree over occupation struggles and state terrorism", ok:true, why:"States disagree on whether struggles against foreign occupation are excluded and whether state forces can commit terrorism. These two sticking points have blocked the comprehensive convention."},
      {t:"Because no country has ever experienced terrorism", why:"Many countries have; the problem is political disagreement about the definition."},
      {t:"Because the UN has never tried", why:"A UN committee has worked on a draft comprehensive convention since 2000."},
-     {t:"Because terrorism is already fully defined in the UN Charter", why:"The UN Charter does not define terrorism."}
+     {t:"Because terrorism is already fully defined in the UN Charter itself", why:"The UN Charter does not define terrorism."}
    ]},
    {id:"e2u8-q24", lesson:"e2u8-l3", level:2, q:"What ended the Cuban Missile Crisis of October 1962?", options:[
-     {t:"The Soviet Union removed its missiles; the US pledged not to invade Cuba and secretly agreed to remove its missiles from Turkey", ok:true, why:"That deal ended the thirteen days of crisis."},
+     {t:"The Soviets removed their missiles in return for US pledges", ok:true, why:"The US pledged not to invade Cuba and secretly agreed to remove its missiles from Turkey. That deal ended the thirteen days of crisis."},
      {t:"A US invasion of Cuba", why:"The United States did not invade; it imposed a naval quarantine."},
      {t:"A UN Security Council resolution ordering both sides to disarm", why:"The crisis ended through a deal between the two superpowers, not a Council order."},
      {t:"Cuba’s leaders negotiated the settlement directly with both powers", why:"Cuba’s leaders were not part of the final deal."}
    ]},
    {id:"e2u8-q25", lesson:"e2u8-l3", level:3, q:"After a cyber attack shuts down a city’s hospitals, it takes months to show which group was behind it. Why does this make cyber conflict hard to deter?", options:[
-     {t:"Deterrence needs a credible threat of punishment, which is weak if the attacker can’t be identified quickly", ok:true, why:"The attribution problem undercuts credibility: if you can’t say who did it, you can’t credibly threaten them."},
+     {t:"A threat of punishment is weak if the attacker can’t be identified", ok:true, why:"Deterrence needs a credible threat of punishment. The attribution problem undercuts credibility: if you can’t say who did it, you can’t credibly threaten them."},
      {t:"Because cyber attacks always count as armed attacks under the UN Charter", why:"Most cyber operations fall below the threshold of armed attack, which is part of the difficulty."},
      {t:"Because there are no international norms on cyber at all", why:"There are voluntary UN norms (2015) and expert studies such as the Tallinn Manual."},
      {t:"Because hospitals are not part of critical infrastructure", why:"Hospitals are widely treated as critical infrastructure."}
@@ -1346,7 +1408,7 @@ ICA.addUnit({
      {t:"Nine states had nuclear weapons, with about 12,187 warheads in total", ok:true, why:"Those are SIPRI’s January 2026 figures."},
      {t:"Only the five NPT nuclear-weapon states had nuclear weapons", why:"India, Pakistan, North Korea and Israel also have them, making nine."},
      {t:"All nuclear weapons had been eliminated under New START", why:"New START limited US and Russian strategic forces and expired in February 2026; it did not eliminate weapons."},
-     {t:"China held most of the world’s warheads", why:"Russia and the United States together held almost 86% of all warheads."}
+     {t:"China held most of the world’s warheads", why:"Russia and the United States together held around 83% of the stockpiled (usable) warheads."}
    ]},
    {id:"e2u8-q27", lesson:"e2u8-l3", level:1, q:"What is an arms race?", options:[
      {t:"A spiral in which rivals keep building up weapons in response to each other", ok:true, why:"It is the security dilemma in motion."},
@@ -1368,9 +1430,9 @@ ICA.addUnit({
      {t:"No use of force except in self-defence and defence of the mandate", why:"Limited use of force is one of the three principles."}
    ]},
    {id:"e2u8-q30", lesson:"e2u8-l4", level:2, q:"Which example shows a religious group acting as a mediator?", options:[
-     {t:"The Community of Sant’Egidio hosting the talks that ended Mozambique’s civil war in 1992", ok:true, why:"Sant’Egidio, a Catholic lay community in Rome, facilitated the Mozambique peace talks."},
+     {t:"The Community of Sant’Egidio hosting Mozambique’s peace talks", ok:true, why:"Sant’Egidio, a Catholic lay community in Rome, facilitated the talks that ended Mozambique’s civil war in 1992."},
      {t:"Jimmy Carter at Camp David in 1978", why:"That was a state, the United States, acting as mediator."},
-     {t:"Martti Ahtisaari’s Crisis Management Initiative in Aceh", why:"That was a private organisation, not a religious group."},
+     {t:"Martti Ahtisaari’s Crisis Management Initiative in Aceh, Indonesia", why:"That was a private organisation, not a religious group."},
      {t:"An African Union envoy", why:"That is a regional intergovernmental body."}
    ]},
    {id:"e2u8-q31", lesson:"e2u8-l4", level:3, q:"Peace talks have dragged on for years. Then both sides suffer heavy losses with no prospect of winning, and suddenly both show interest in a deal. Which idea explains this?", options:[
@@ -1380,7 +1442,7 @@ ICA.addUnit({
      {t:"Mutually assured destruction", why:"MAD is about nuclear deterrence, not ripeness for peace talks."}
    ]},
    {id:"e2u8-q32", lesson:"e2u8-l4", level:2, q:"What was the Brahimi Report (2000) about?", options:[
-     {t:"Reforming UN peacekeeping, with clear, achievable mandates and adequate resources", ok:true, why:"It responded to failures such as Rwanda and Srebrenica."},
+     {t:"Reforming UN peacekeeping", ok:true, why:"It called for clear, achievable mandates and adequate resources. It responded to failures such as Rwanda and Srebrenica."},
      {t:"Defining terrorism", why:"Terrorism definitions are handled in other UN processes."},
      {t:"Setting climate targets", why:"Climate targets come from the UNFCCC process."},
      {t:"Launching the idea of human security", why:"That was the UNDP’s 1994 report."}
@@ -1392,44 +1454,44 @@ ICA.addUnit({
      {t:"Deterrence", why:"Deterrence prevents future attacks by threatening costs; it doesn’t document past abuses."}
    ]},
    {id:"e2u8-q34", lesson:"e2u8-l4", level:2, q:"Which is an example of soft power in Joseph Nye’s sense?", options:[
-     {t:"People abroad admire a country’s universities and films and become more open to its views", ok:true, why:"Influence through attraction, here culture and institutions, is soft power."},
-     {t:"A state threatens sanctions", why:"Threats of economic punishment are hard power."},
-     {t:"A state offers aid in return for a vote", why:"Payment or inducement is hard power in Nye’s terms."},
-     {t:"A navy blockades a port", why:"Military pressure is hard power."}
+     {t:"People abroad admire a country’s films and universities", ok:true, why:"Admiration makes people more open to the country’s views. Influence through attraction, here culture and institutions, is soft power."},
+     {t:"A state threatens sanctions if its demands aren’t met", why:"Threats of economic punishment are hard power."},
+     {t:"A state offers aid in return for a vote at the UN", why:"Payment or inducement is hard power in Nye’s terms."},
+     {t:"A navy blockades a port to force a government to give in", why:"Military pressure is hard power."}
    ]},
    {id:"e2u8-q35", lesson:"e2u8-l4", level:2, q:"What did Roland Paris argue in *At War’s End* (2004)?", options:[
-     {t:"Rushed elections and market reforms can destabilise post-war societies; build institutions before liberalising", ok:true, why:"His phrase was “institutionalisation before liberalisation”."},
+     {t:"Build institutions before liberalising", ok:true, why:"Rushed elections and market reforms can destabilise post-war societies. His phrase was “institutionalisation before liberalisation”."},
      {t:"Peacekeeping never works", why:"Paris critiqued how peacebuilding was done, not peacekeeping as such."},
-     {t:"Wars are caused by ancient hatreds", why:"That isn’t his argument; he wrote about the design of peacebuilding."},
-     {t:"Climate change causes all civil wars", why:"His book is about post-conflict peacebuilding, not climate."}
+     {t:"Wars are caused by ancient hatreds between groups", why:"That isn’t his argument; he wrote about the design of peacebuilding."},
+     {t:"Climate change causes all civil wars in poor countries", why:"His book is about post-conflict peacebuilding, not climate."}
    ]},
    {id:"e2u8-q36", lesson:"e2u8-l4", level:3, q:"Oluwaseun reads that peace is more likely to last where UN peacekeepers deploy. A friend objects: “Peacekeepers are only sent to easy cases, so of course peace lasts.” What did Fortna’s research suggest?", options:[
-     {t:"Peacekeepers tended to go to harder cases, yet peace still lasted longer where they deployed", ok:true, why:"Fortna found missions were often sent to difficult situations, which strengthens the finding that peacekeeping helps."},
+     {t:"Peacekeepers went to harder cases, yet peace still lasted longer", ok:true, why:"Fortna found missions were often sent to difficult situations, which strengthens the finding that peacekeeping helps."},
      {t:"Peacekeepers make no difference anywhere", why:"Her findings, and later studies, suggest peacekeeping substantially helps."},
-     {t:"Peace only lasts where there are no peacekeepers", why:"That reverses the research finding."},
-     {t:"Peacekeepers only deploy to wars between states", why:"Most missions since the 1990s have been in conflicts inside countries."}
+     {t:"Peace only lasts where there are no peacekeepers at all", why:"That reverses the research finding."},
+     {t:"Peacekeepers only deploy to wars between states, never civil wars", why:"Most missions since the 1990s have been in conflicts inside countries."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e2u8-q37", lesson:"e2u8-l5", level:1, q:"What is a free rider?", options:[
-     {t:"Someone who enjoys a shared benefit without paying their share of the cost", ok:true, why:"Free riding is the core temptation in collective action problems."},
-     {t:"A mediator who works without pay", why:"Unpaid mediation isn’t free riding; free riding means taking benefits without contributing."},
-     {t:"A country that leaves a treaty", why:"Leaving may enable free riding, but the term means benefiting without contributing."},
+     {t:"Someone who benefits without paying their share", ok:true, why:"A free rider enjoys a shared benefit without paying their share of the cost. Free riding is the core temptation in collective action problems."},
+     {t:"A mediator who works without pay for both sides", why:"Unpaid mediation isn’t free riding; free riding means taking benefits without contributing."},
+     {t:"A country that leaves a treaty when it gets hard", why:"Leaving may enable free riding, but the term means benefiting without contributing."},
      {t:"A peacekeeper from a neutral country", why:"That has nothing to do with free riding."}
    ]},
    {id:"e2u8-q38", lesson:"e2u8-l5", level:2, q:"What did Elinor Ostrom show about the tragedy of the commons?", options:[
-     {t:"Many communities manage shared resources well for centuries with their own rules, monitoring and sanctions", ok:true, why:"Her 1990 book *Governing the Commons* challenged Hardin’s view that only the state or private property could help."},
-     {t:"Shared resources are always destroyed", why:"That is Hardin’s pessimistic story, which Ostrom’s evidence qualified."},
-     {t:"Only governments can protect commons", why:"Ostrom showed a third way: self-governing communities."},
+     {t:"Communities often manage commons well themselves", ok:true, why:"Many communities manage shared resources well for centuries with their own rules, monitoring and sanctions. Her 1990 book *Governing the Commons* challenged Hardin’s view that only the state or private property could help."},
+     {t:"Shared resources are always destroyed in the end", why:"That is Hardin’s pessimistic story, which Ostrom’s evidence qualified."},
+     {t:"Only governments can protect commons from overuse", why:"Ostrom showed a third way: self-governing communities."},
      {t:"Private property is the only solution", why:"Ostrom showed that community governance often works without privatisation."}
    ]},
    {id:"e2u8-q39", lesson:"e2u8-l5", level:2, q:"How does the Paris Agreement differ from the Kyoto Protocol?", options:[
-     {t:"Every party sets its own target (an NDC), whereas Kyoto set binding targets for developed countries only", ok:true, why:"Paris traded binding top-down targets for universal, bottom-up pledges."},
+     {t:"Every party sets its own target; Kyoto bound only developed countries", ok:true, why:"Under Paris each party sets a nationally determined contribution (NDC). Paris traded binding top-down targets for universal, bottom-up pledges."},
      {t:"Paris sets binding emission targets for every country, enforced by fines", why:"Paris’s targets aren’t legally binding and there are no fines; the duties to submit and report are binding."},
      {t:"Paris covers only developed countries", why:"Paris covers all parties; it was Kyoto that set targets only for developed countries."},
      {t:"Paris replaced the UNFCCC", why:"Paris operates under the UNFCCC, which still exists."}
    ]},
    {id:"e2u8-q40", lesson:"e2u8-l5", level:1, q:"What is the temperature goal of the Paris Agreement?", options:[
-     {t:"Hold warming well below 2°C above pre-industrial levels and pursue efforts to limit it to 1.5°C", ok:true, why:"That is the Agreement’s wording."},
+     {t:"Well below 2°C, aiming for 1.5°C", ok:true, why:"The Agreement’s wording is to hold warming well below 2°C above pre-industrial levels and pursue efforts to limit it to 1.5°C."},
      {t:"Stop all warming by 2020", why:"No such goal exists in the Agreement."},
      {t:"Keep warming below 4°C", why:"Paris aims much lower: well below 2°C."},
      {t:"Return to pre-industrial temperatures by 2030", why:"That isn’t a Paris goal."}
@@ -1453,13 +1515,13 @@ ICA.addUnit({
      {t:"Feminist", why:"A feminist article would ask how gender shapes the situation and whose experiences are missing."}
    ]},
    {id:"e2u8-q44", lesson:"e2u8-l5", level:2, q:"A news story quotes “a senior analyst at a leading think tank”. What is the most useful thing to check?", options:[
-     {t:"Which think tank, who funds it, and what point of view its work usually takes", ok:true, why:"Think tanks are useful but have funders and perspectives; knowing them helps you weigh the quote."},
-     {t:"Whether the think tank has a nice website", why:"Design says nothing about the reliability or perspective of the analysis."},
+     {t:"Which think tank, who funds it and its usual viewpoint", ok:true, why:"Think tanks are useful but have funders and perspectives; knowing them helps you weigh the quote."},
+     {t:"Whether the think tank has a modern, well-designed website", why:"Design says nothing about the reliability or perspective of the analysis."},
      {t:"Nothing: think tanks are always neutral", why:"Think tanks often have clear points of view and varied funding."},
      {t:"Whether the analyst agrees with you", why:"Agreement with your own view is not a test of reliability (that is confirmation bias)."}
    ]},
    {id:"e2u8-q45", lesson:"e2u8-l5", level:3, q:"Tomás wants to know exactly what the UN Security Council decided about a crisis. Which should he read first?", options:[
-     {t:"The resolution text itself (with its S/RES symbol) from the UN Digital Library or UN website", ok:true, why:"The resolution is the primary document: the words the Council actually adopted."},
+     {t:"The resolution text itself", ok:true, why:"Find it by its S/RES symbol in the UN Digital Library or on the UN website. The resolution is the primary document: the words the Council actually adopted."},
      {t:"A newspaper opinion column about the vote", why:"An opinion column interprets the vote from a point of view; read the text first."},
      {t:"A think tank blog post", why:"Commentary is useful after reading the source, not instead of it."},
      {t:"A summary of the debate marked “not an official record”", why:"Meetings summaries are useful but not official; the resolution text is."}

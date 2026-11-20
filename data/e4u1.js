@@ -114,10 +114,10 @@ ICA.addUnit({
       ["Alliance","Britain and Japan’s 1902 pledge of neutrality or aid in war","An alliance is a formal promise of military support between states."]
     ]},
     {id:"e4u1-l1-x5", type:"mcq", q:"Why do historians say Japan’s victory over Russia in 1905 mattered **far beyond** East Asia?", options:[
-      {t:"Many nationalists across Asia and the Middle East read it as proof that a non-European state could defeat a European great power.", ok:true, why:"Right. Reactions from Egypt to India and China celebrated it, even though it also made Japan an empire in Korea."},
+      {t:"It showed nationalists that Europeans could be beaten.", ok:true, why:"Right. Many nationalists across Asia and the Middle East read it as proof that a non-European state could defeat a European great power. Reactions from Egypt to India and China celebrated it, even though it also made Japan an empire in Korea."},
       {t:"It ended imperialism in Asia.", why:"It didn’t: Japan itself took control of Korea, and European empires in Asia lasted decades longer."},
       {t:"It led directly to the founding of the League of Nations.", why:"The League came in 1920, after the First World War."},
-      {t:"Russia lost all of Siberia to Japan.", why:"Japan gained the southern half of Sakhalin, a lease in Liaodong and a railway, not Siberia."}
+      {t:"Russia had to give all of Siberia to Japan in the peace treaty.", why:"Japan gained the southern half of Sakhalin, a lease in Liaodong and a railway, not Siberia."}
     ]},
     {id:"e4u1-l1-x6", type:"spot", q:"Kenji drafted a paragraph for a seminar. Tap each claim that is **wrong**.", ask:"wrong", parts:[
       {t:"Japan ended extraterritoriality in 1899 and regained tariff autonomy in 1911.", flag:false, why:"Correct: treaty revision came in two steps."},
@@ -271,8 +271,8 @@ ICA.addUnit({
       {t:"Japan attacks Pearl Harbor and Malaya", why:"7–8 December 1941."}
     ]},
     {id:"e4u1-l2-x6", type:"mcq", q:"A classmate writes: “Historians agree that the atomic bombs alone made Japan surrender.” What is the best correction?", options:[
-      {t:"Historians disagree: some, such as Tsuyoshi Hasegawa, argue that the Soviet declaration of war on 8 August was at least as decisive.", ok:true, why:"Right. The question of why Japan surrendered when it did is a live debate, and a careful sentence reports it as one."},
-      {t:"Historians agree that the bombs played no role at all.", why:"That replaces one false consensus with another. The bombs are part of every account; the debate is about their weight."},
+      {t:"Historians disagree; the Soviet entry may have mattered as much.", ok:true, why:"Right. Some, such as Tsuyoshi Hasegawa, argue that the Soviet declaration of war on 8 August was at least as decisive. The question of why Japan surrendered when it did is a live debate, and a careful sentence reports it as one."},
+      {t:"Historians agree that the bombs played no role at all in the decision.", why:"That replaces one false consensus with another. The bombs are part of every account; the debate is about their weight."},
       {t:"Japan surrendered before the bombs were dropped.", why:"The bombs fell on 6 and 9 August; surrender was announced on 15 August."},
       {t:"Japan never formally surrendered.", why:"Japan signed the instrument of surrender on 2 September 1945."}
     ]},
@@ -418,7 +418,7 @@ ICA.addUnit({
       {t:"Constructivist", why:"Constructivism is an IR theory about ideas and identity, not a school in the debate on Cold War origins."}
     ]},
     {id:"e4u1-l3-x6", type:"mcq", q:"Why do US alliances in East Asia after 1951 look like a “hub and spokes” rather than one NATO-style alliance?", options:[
-      {t:"The United States signed separate bilateral treaties with each ally, partly to keep control over them, and many Asian states were reluctant to ally jointly with Japan.", ok:true, why:"Right. Cha’s “powerplay” argument and regional memories of Japan’s empire both help explain the design."},
+      {t:"The US wanted control, and many neighbours distrusted Japan.", ok:true, why:"Right. The United States signed separate bilateral treaties with each ally, partly to keep control over them, and many Asian states were reluctant to ally jointly with Japan. Cha’s “powerplay” argument and regional memories of Japan’s empire both help explain the design."},
       {t:"Asian states were all non-aligned, so they signed no treaties.", why:"Japan, South Korea, the Philippines, Australia, New Zealand and Thailand all had treaties with the United States."},
       {t:"The UN Charter forbids multilateral alliances in Asia.", why:"The Charter forbids no such thing; Article 51 recognises collective self-defence everywhere."},
       {t:"NATO already covered East Asia.", why:"NATO’s treaty area is the North Atlantic, Europe and North America."}
@@ -561,8 +561,8 @@ ICA.addUnit({
       {t:"Like the Soviet economy, growth from inputs would slow once they ran out.", b:2, why:"Krugman drew exactly this comparison to argue that the growth would slow."}
     ]},
     {id:"e4u1-l4-x5", type:"mcq", q:"Which statement about the Bandung Conference (1955) is accurate?", options:[
-      {t:"It brought together 29 Asian and African governments, including both communist China and US allies such as Pakistan, the Philippines and Japan.", ok:true, why:"Right. Bandung was more varied than its legend: it wasn’t a bloc of the non-aligned."},
-      {t:"It founded the Non-Aligned Movement.", why:"The Non-Aligned Movement’s first summit was in Belgrade in 1961."},
+      {t:"It brought together communist China and US allies.", ok:true, why:"Right. Its 29 Asian and African governments included both communist China and US allies such as Pakistan, the Philippines and Japan. Bandung was more varied than its legend: it wasn’t a bloc of the non-aligned."},
+      {t:"It founded the Non-Aligned Movement and chose its first leaders.", why:"The Non-Aligned Movement’s first summit was in Belgrade in 1961."},
       {t:"Only communist states attended.", why:"Most participants weren’t communist, and several were allied with the United States."},
       {t:"Latin American states led it.", why:"Bandung was an Asian-African conference; Latin American states were not participants."}
     ]},
@@ -635,7 +635,7 @@ ICA.addUnit({
     {h:"End of history, or clash of civilisations?", body:[
       "Two big ideas framed the new era; both are still quoted, often wrongly.",
       "Francis Fukuyama’s essay “The End of History?” (*The National Interest*, 1989), expanded into *The End of History and the Last Man* (1992), argued that liberal democracy had no serious ideological rival left as a form of government. That is the [[end-of-history|“end of history”]]: the end of the great contest of ideologies, not the end of events, wars or conflict.",
-      "Samuel Huntington replied with “The Clash of Civilizations?” (*Foreign Affairs*, 1993) and a 1996 book: the main conflicts of the future would run along the boundaries between civilisations defined largely by religion and culture. The [[clash-of-civilizations|clash of civilizations]] thesis drew heavy criticism. Edward Said’s “The Clash of Ignorance” (2001) attacked its picture of civilisations as solid blocks, and quantitative studies, such as Bruce Russett, John Oneal and Michael Cox (2000), found little evidence that conflicts between civilisations had become more common.",
+      "Samuel Huntington replied with “The Clash of Civilizations?” (*Foreign Affairs*, 1993) and a 1996 book: the main conflicts of the future would run along the boundaries between civilisations defined largely by religion and culture. The [[clash-of-civilizations|clash of civilizations]] thesis drew heavy criticism. Edward Said’s “The Clash of Ignorance” (2001) attacked its picture of civilisations as solid blocks, and quantitative studies, such as Bruce Russett, John Oneal and Michaelene Cox (2000), found little evidence that conflicts between civilisations had become more common.",
       {tip:"If someone in a seminar says “Fukuyama said history ended, and he was wrong because wars continued”, you can point out that his claim was about ideas, and then discuss whether rivals to liberal democracy have since returned."}
     ]},
     {h:"Globalisation and its critics", body:[
@@ -721,10 +721,10 @@ ICA.addUnit({
       {t:"Scholars agree the crisis had no effect on politics.", flag:true, why:"Wrong. Many scholars link it to rising populism and to damage to the Western model’s prestige."}
     ]},
     {id:"e4u1-l5-x7", type:"mcq", q:"Mei must write a seminar paper on whether the liberal international order is ending. Which opening sentence best fits academic standards for a contested issue?", options:[
-      {t:"“As of November 2026, scholars disagree: Ikenberry sees a resilient order that can be reformed, Mearsheimer one that was bound to fail, and Acharya a ‘multiplex’ world; this paper assesses their evidence.”", ok:true, why:"Right. It dates the claim, attributes each position and promises to weigh evidence rather than assert a verdict."},
-      {t:"“The liberal order is obviously dead, as everyone can see.”", why:"It asserts a contested claim without evidence or attribution."},
+      {t:"“As of November 2026, scholars disagree; this paper weighs the evidence.”", ok:true, why:"Right. It dates the claim, reports the disagreement (Ikenberry sees a resilient order that can be reformed, Mearsheimer one that was bound to fail, Acharya a ‘multiplex’ world) and promises to weigh evidence rather than assert a verdict."},
+      {t:"“The liberal order is obviously dead, as anyone can see from the news.”", why:"It asserts a contested claim without evidence or attribution."},
       {t:"“The liberal order will certainly collapse by 2030.”", why:"It makes a prediction as if it were fact; academic writing on live debates avoids that."},
-      {t:"“Only Western scholars have opinions on this question.”", why:"Untrue: scholars and governments across the world, including in Asia and the Global South, take part in the debate."}
+      {t:"“Only Western scholars have serious, informed opinions on this question.”", why:"Untrue: scholars and governments across the world, including in Asia and the Global South, take part in the debate."}
     ]}
    ],
    apply:{
@@ -761,6 +761,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u1-q02","e4u1-q06","e4u1-q11","e4u1-q14","e4u1-q17","e4u1-q20","e4u1-q24","e4u1-q28","e4u1-q31","e4u1-q35","e4u1-q39","e4u1-q43"],
+  cpBank:[
+   {id:"e4u1-cp01", lesson:"e4u1-l1", level:1, q:"A treaty signed with Qing China says: “Any privilege China grants to another foreign power shall also be granted to us.” Which feature of the unequal treaties is this?", options:[
+     {t:"A clause granting extraterritoriality", why:"Extraterritoriality meant foreigners were tried by their own consuls’ courts. This clause is about sharing privileges, not about courts."},
+     {t:"A clause demanding a war indemnity", why:"An indemnity is a payment the loser makes after a war, like the one in the Treaty of Shimonoseki. This clause moves no money."},
+     {t:"A most-favoured-nation clause", ok:true, why:"Right. A most-favoured-nation clause meant a privilege won by one power went to all the others with the same clause, which spread the treaties’ burdens."},
+     {t:"A clause creating a leased territory", why:"Leased territories, like those seized in 1898, were pieces of coast held by one power. This clause covers all privileges, not one piece of land."}]},
+   {id:"e4u1-cp02", lesson:"e4u1-l1", level:2, q:"In 1890 a European diplomat explains why his government will not give up its consular courts in an Asian kingdom. Which reason applies the “standard of civilisation” as Gerrit Gong describes it?", options:[
+     {t:"The kingdom’s population and army are too small for it to count as a great power", why:"Gong’s test was about how a state was governed and treated foreigners, not its size. Small Siam could and did renegotiate its treaties."},
+     {t:"The kingdom has no published laws or trusted courts to protect foreigners", ok:true, why:"Right. Trusted courts and published laws that protected foreigners’ lives and property were core parts of the test, which is why Japan and Siam reformed their legal systems."},
+     {t:"The kingdom has not yet joined the League of Nations and signed its Covenant", why:"The League began work only in 1920, so it could not be a test in 1890."},
+     {t:"The kingdom is ruled by a hereditary monarch rather than by elected leaders", why:"Monarchy was not a bar: Meiji Japan and Siam were both monarchies, and both won back their full sovereignty."}]},
+   {id:"e4u1-cp03", lesson:"e4u1-l2", level:1, q:"Seven states sign a pact: if any member attacks another member, all the others will cut their trade with the attacker. Which idea is this?", options:[
+     {t:"Containment", why:"Containment was the US Cold War strategy of resisting Soviet expansion. This pact is a promise among members, with no named rival."},
+     {t:"A mandate", why:"A mandate was a territory that a League member ran under international scrutiny. This pact is about responding to aggression."},
+     {t:"An ordinary alliance against an outside rival", why:"An alliance faces a known outside threat. Here the possible aggressor is any member, even one of the signers."},
+     {t:"Collective security", ok:true, why:"Right. Every member treats aggression against one member as an attack on all, even if the aggressor is a member. Article 16 of the League Covenant promised exactly this kind of trade cut-off."}]},
+   {id:"e4u1-cp04", lesson:"e4u1-l2", level:3, q:"Aiko writes: “Japan’s Racial Equality Proposal of 1919 shows that Japan rejected the ranked world of 1900.” Which feedback best uses the unit’s scholarship?", options:[
+     {t:"Partly true, but Shimazu shows Japan sought great-power status and protection for its emigrants while it ruled Korea and Taiwan; Suzuki says Japan learned both equality and colonising.", ok:true, why:"Right. The proposal challenged racial ranking among great powers, but Japan did not offer equality to its own colonial subjects. Using both authors gives a fuller picture."},
+     {t:"Correct, because Japan offered equal rights to the people of Korea and Taiwan at the same time", why:"Shimazu shows the opposite: Japan did not seek equality for its own colonial subjects, and it put down Korea’s March First Movement in 1919."},
+     {t:"Correct, because the proposal was adopted and ended racial ranking in international law", why:"It was not adopted. It won 11 of 17 votes, but Wilson ruled that unanimity was needed."},
+     {t:"Wrong, because the proposal actually came from Australia and Japan opposed it", why:"It was the other way round: Japan proposed it, and Australia’s prime minister Billy Hughes pressed the British Empire delegation to oppose it."}]},
+   {id:"e4u1-cp05", lesson:"e4u1-l5", level:3, q:"Adam Tooze shows that in 2008 the US Federal Reserve lent dollars to foreign central banks. Which link to the 1930s is best supported by the unit?", options:[
+     {t:"It matches Keynes’s warning that reparations would ruin Europe", why:"Keynes wrote about the 1919 peace terms, not about who stabilises the world economy in a financial crisis."},
+     {t:"It matches Tooze’s claim in *The Deluge* that the United States fully underwrote the world economy and the peace after 1919", why:"*The Deluge* argues the reverse: the United States became central but declined to underwrite the peace."},
+     {t:"It fits Kindleberger: slumps deepen when no country acts as stabiliser, and in 2008 one country did", ok:true, why:"Right. Kindleberger said the 1930s slump was so deep because Britain could not and the United States would not stabilise it. In 2008 the Fed played that role, the idea behind hegemonic stability theory."},
+     {t:"It disproves hegemonic stability theory, which says a leading power makes crises worse", why:"The theory says the opposite: a leading power that acts as stabiliser makes crises less severe. The Fed’s lending fits it."}]},
+   {id:"e4u1-cp06", lesson:"e4u1-l3", level:1, q:"Two rival states still distrust each other deeply. They agree to cap their long-range missiles and let inspectors count them. Which concept describes this agreement?", options:[
+     {t:"Collective security", why:"Collective security is a promise among many states to resist any aggressor. This is a deal between two rivals about their own weapons."},
+     {t:"Arms control", ok:true, why:"Right. Arms control means rivals limit, ban tests of or verify weapons while the rivalry continues, as with SALT I or the INF Treaty. Schelling and Halperin argued enemies share an interest in it."},
+     {t:"Containment", why:"Containment is one side’s strategy of resisting the other’s expansion. It is not a joint agreement about weapons."},
+     {t:"Mutually assured destruction", why:"Mutually assured destruction describes a situation in which both sides could destroy each other. It is not an agreement to limit or count weapons."}]},
+   {id:"e4u1-cp07", lesson:"e4u1-l3", level:2, q:"Jae-won writes: “The Korean War was simply a war started in Moscow; Koreans had no part in its causes.” Which feedback fits the scholarship in the unit?", options:[
+     {t:"Right: Bruce Cumings showed the war had no Korean roots and was planned entirely in Moscow", why:"Cumings argued the opposite: he stressed the war’s roots in a Korean civil conflict after colonial rule."},
+     {t:"Wrong: Soviet documents released in the 1990s show that the United States actually planned the invasion", why:"The documents studied by Kathryn Weathersby and others show that Stalin approved Kim Il-sung’s invasion plan, with Mao’s agreement."},
+     {t:"Wrong: Soviet documents released in the 1990s show that Stalin refused to approve any invasion", why:"The documents show Stalin did approve Kim Il-sung’s plan in 1950."},
+     {t:"Too simple: Stalin approved Kim’s plan, but Cumings shows Korean civil-war roots; most scholars combine both", ok:true, why:"Right. Most scholars now see a civil war that outside powers turned into an international one, so both the archives and the Korean roots matter."}]},
+   {id:"e4u1-cp08", lesson:"e4u1-l3", level:3, q:"In the 1960s an independence movement fighting Portugal in Angola receives weapons from the Soviet bloc. A student calls it “a Soviet puppet”. Which question would a historian following Westad ask first?", options:[
+     {t:"What were the movement’s own goals, and how did it use its outside backers?", ok:true, why:"Right. Westad argues local actors had their own aims, such as independence, and used the superpowers as much as they were used. Here the war was also a decolonisation struggle."},
+     {t:"Which Soviet official gave the movement its orders?", why:"This assumes the puppet picture is true. Westad’s point is that local actors were not simply run by their patrons."},
+     {t:"Why did Portugal decide to grant independence freely?", why:"This repeats the misconception that independence was simply granted. Portugal’s colonies won independence in 1974–75 after long wars and a revolution in Lisbon."},
+     {t:"Which civilisation did the movement belong to?", why:"That is Huntington’s post-Cold War frame, and it does not help explain a 1960s anticolonial war with superpower support."}]},
+   {id:"e4u1-cp09", lesson:"e4u1-l4", level:2, q:"In 1961 a leader says: “We join neither bloc, and we will choose our own course.” In the 2020s India’s leaders describe working with many partners without joining blocs. What links the two?", options:[
+     {t:"Both describe the hub-and-spokes alliance system", why:"Hub and spokes describes separate US alliances in the Asia-Pacific. Both speakers reject joining a bloc."},
+     {t:"Both are examples of détente between the superpowers", why:"Détente was a relaxation of tension between the United States and the Soviet Union, not a choice by other states to stay outside blocs."},
+     {t:"India’s “strategic autonomy” has roots in non-alignment", ok:true, why:"Right. The lesson traces strategic autonomy back to non-alignment: freedom to choose one’s own course without joining a bloc, while staying active in world affairs."},
+     {t:"Both show that “Third World” simply means poor countries", why:"“Third World” began as a political project, and the quotes are about bloc membership, not income."}]},
+   {id:"e4u1-cp10", lesson:"e4u1-l4", level:2, q:"Two governments both give cheap loans to chosen industries. Country A lends only to firms that meet export targets. Country B protects firms that make goods to replace imports at home. Which reading is right?", options:[
+     {t:"A fits import substitution and B fits the developmental-state model", why:"This reverses them. Pushing firms to compete in export markets was the East Asian hallmark; making goods to replace imports is import substitution."},
+     {t:"A fits the East Asian developmental state; B fits import substitution", ok:true, why:"Right. Both models used state intervention, but East Asian states such as South Korea under Park tied support to export performance, while import substitution aimed at the home market."},
+     {t:"Both fit the World Bank’s “markets plus some intervention” view equally", why:"The World Bank view stressed sound fundamentals. The key difference here is export discipline versus home-market protection, which that label hides."},
+     {t:"Neither is state intervention, because loans are a normal market tool", why:"Directing cheap credit to chosen industries is a clear case of state intervention, as Amsden and Wade describe."}]},
+   {id:"e4u1-cp11", lesson:"e4u1-l5", level:2, q:"In 2005 a finance minister in Seoul says: “We hold huge foreign currency reserves so we never again need outside loans with strict conditions.” Which event is she most likely thinking of?", options:[
+     {t:"The 2008 global financial crisis", why:"She speaks in 2005, before 2008. The lesson links reserve-building to an earlier crisis, when the IMF lent to Asian states on strict terms."},
+     {t:"Mexico’s 1982 debt crisis", why:"That crisis hit Latin America and Africa. South Korea’s own experience of strict IMF conditions came later."},
+     {t:"The New International Economic Order of 1974", why:"The NIEO was a set of demands at the UN, not a crisis that forced countries to borrow on strict terms."},
+     {t:"The Asian financial crisis of 1997–98", ok:true, why:"Right. The crisis spread to South Korea, and the IMF lent with strict conditions. Many Asian governments then built large reserves so they wouldn’t need the IMF again."}]},
+   {id:"e4u1-cp12", lesson:"e4u1-l5", level:3, q:"Leila must write about whether NATO enlargement after 1991 provoked Russia. Which plan best meets academic standards for a contested issue?", options:[
+     {t:"Set out Mearsheimer’s argument and his critics’ replies, attribute each, note that Sarotte shows even the 1990 promises are contested, and keep her own view separate", ok:true, why:"Right. This is a live debate, so she should attribute each position to its authors, show the evidence is disputed, and mark her own judgement clearly."},
+     {t:"State that enlargement caused Russia’s later actions, because a famous realist says so", why:"One scholar’s view is not settled fact. Critics reply that Central European states chose to join and Russia is responsible for its own decisions."},
+     {t:"Leave out the realist argument, because Russia is responsible for its own decisions", why:"That presents only one side. A fair paper reports Mearsheimer’s argument as well as the replies to it."},
+     {t:"Avoid the question, because no archive evidence on it exists yet", why:"Archive evidence exists: Mary Sarotte’s *Not One Inch* is based on it. It shows the question is contested, not unanswerable."}]},
+  ],
   codex:[
    {id:"world-in-1900", title:"The world around 1900", aka:["age of empire","new imperialism","standard of civilisation"], tags:["international studies","history"],
     summary:"A world ranked by empires and industrial power, in which a few states counted as full members of international society and most peoples lived under colonial or unequal rule.",
@@ -1177,7 +1239,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u1-q01", lesson:"e4u1-l1", level:1, q:"What did extraterritoriality mean in the unequal treaties?", options:[
-     {t:"Foreigners from treaty powers were tried by their own consuls’ courts, not by local courts", ok:true, why:"Right. Exemption from local law was the clearest sign of unequal status."},
+     {t:"Foreigners were tried in their own consuls’ courts", ok:true, why:"Right. Foreigners from treaty powers were exempt from local courts, the clearest sign of unequal status."},
      {t:"Foreign states could annex any territory they occupied", why:"Annexation is formal colonial rule; extraterritoriality left the territory under local sovereignty but exempted foreigners from local courts."},
      {t:"Local people could sue foreign governments in international courts", why:"No such courts existed for this, and the arrangement protected foreigners, not local people."},
      {t:"Foreign goods entered with no tariffs at all", why:"The treaties fixed low tariffs, a separate privilege; extraterritoriality is about courts."}]},
@@ -1187,12 +1249,12 @@ ICA.addUnit({
      {t:"Decolonisation", why:"Decolonisation is the end of colonial rule; this is an extension of foreign control."},
      {t:"The mandate system", why:"Mandates were created by the League of Nations after 1919, not in 1898."}]},
    {id:"e4u1-q03", lesson:"e4u1-l1", level:1, q:"What did the Anglo-Japanese Alliance of 1902 commit each partner to do?", options:[
-     {t:"Stay neutral if its partner fought one other power over China or Korea, and come to its aid if a second power joined in", ok:true, why:"Right. Those were the treaty’s core terms."},
+     {t:"Stay neutral in a war with one power; help if a second power joined", ok:true, why:"Right. If either partner fought one other power over China or Korea, the other stayed neutral; if a second power joined in, it came to its partner’s aid. Those were the treaty’s core terms."},
      {t:"Merge their navies under British command", why:"The alliance kept two separate navies and governments."},
-     {t:"Divide China between them", why:"The treaty spoke of protecting each side’s interests in China, not of partitioning it."},
+     {t:"Divide China between them into British and Japanese zones of control", why:"The treaty spoke of protecting each side’s interests in China, not of partitioning it."},
      {t:"Join the League of Nations together", why:"The League didn’t exist until 1920."}]},
    {id:"e4u1-q04", lesson:"e4u1-l1", level:2, q:"Which explanation of the “new imperialism” is J. A. Hobson’s (1902)?", options:[
-     {t:"Capital that couldn’t find profitable uses at home pushed investors to seek returns abroad", ok:true, why:"Right. Hobson’s *Imperialism: A Study* is the classic economic explanation."},
+     {t:"Surplus capital pushed investors to seek profits abroad", ok:true, why:"Right. Hobson argued that capital which couldn’t find profitable uses at home was pushed abroad. His *Imperialism: A Study* is the classic economic explanation."},
      {t:"Officials took territory mainly to protect sea routes to India", why:"That strategic argument is Robinson and Gallagher’s (1961)."},
      {t:"Empire grew from a sense of religious duty alone", why:"That is an ideological explanation, and Hobson stressed economics."},
      {t:"Empires were forced on Europe by African rulers", why:"No major scholar argues this; the “local crises” view says frontier events pulled capitals in, not that Africans imposed empire."}]},
@@ -1202,9 +1264,9 @@ ICA.addUnit({
      {t:"Wrong: no one outside Japan noticed the war.", why:"The war was reported worldwide and celebrated by many nationalists."},
      {t:"Wrong: Russia won the war.", why:"Japan won the main battles, and the Treaty of Portsmouth gave it Russia’s rights in southern Manchuria."}]},
    {id:"e4u1-q06", lesson:"e4u1-l1", level:2, q:"Why did Meiji Japan adopt legal codes, courts and a constitution partly modelled on European examples?", options:[
-     {t:"Partly to meet the “standard of civilisation” so that the powers would end the unequal treaties", ok:true, why:"Right. Treaty revision followed: extraterritoriality ended in 1899 and tariff autonomy came in 1911."},
-     {t:"Because the League of Nations required it", why:"The League didn’t exist until 1920; Japan’s reforms began in the 1870s–80s."},
-     {t:"Because Britain had colonised Japan", why:"Japan was never a colony; it was bound by unequal treaties."},
+     {t:"To meet the “standard of civilisation” and end unequal treaties", ok:true, why:"Right. Japan partly aimed to satisfy the powers so they would revise the treaties. Treaty revision followed: extraterritoriality ended in 1899 and tariff autonomy came in 1911."},
+     {t:"Because the League of Nations required it of every member state", why:"The League didn’t exist until 1920; Japan’s reforms began in the 1870s–80s."},
+     {t:"Because Britain had colonised Japan and imposed its own laws", why:"Japan was never a colony; it was bound by unequal treaties."},
      {t:"To join the Warsaw Pact", why:"The Warsaw Pact was founded in 1955 by the Soviet Union and its allies."}]},
    {id:"e4u1-q07", lesson:"e4u1-l1", level:1, q:"By 1914, which two African states remained free of European colonial rule?", options:[
      {t:"Ethiopia and Liberia", ok:true, why:"Right. Ethiopia defeated Italy at Adwa in 1896; Liberia had been independent since 1847."},
@@ -1212,8 +1274,8 @@ ICA.addUnit({
      {t:"Ghana and Nigeria", why:"Both were British colonies until 1957 and 1960."},
      {t:"South Africa and Kenya", why:"Both were within the British Empire."}]},
    {id:"e4u1-q08", lesson:"e4u1-l1", level:3, q:"A student writes: “In 1900 international law treated every state as equal.” What is the best correction?", options:[
-     {t:"International law then openly ranked peoples as “civilised”, “barbarous” or “savage”; states like China were bound by unequal treaties and colonised peoples weren’t recognised as states.", ok:true, why:"Right. The hierarchy was written into the law of the time."},
-     {t:"International law didn’t exist in 1900.", why:"It did: there were treaties, conferences such as The Hague (1899) and legal writers. It just wasn’t equal."},
+     {t:"It openly ranked peoples as “civilised”, “barbarous” or “savage”.", ok:true, why:"Right. The hierarchy was written into the law of the time: states like China were bound by unequal treaties, and colonised peoples weren’t recognised as states."},
+     {t:"International law didn’t exist in 1900, so the claim makes no sense.", why:"It did: there were treaties, conferences such as The Hague (1899) and legal writers. It just wasn’t equal."},
      {t:"The claim is correct; inequality began only with the Cold War.", why:"Inequality was explicit in 1900, through the standard of civilisation and colonial rule."},
      {t:"Only the United States was treated as a full member.", why:"European powers, Latin American republics and later Japan were also full members."}]},
    {id:"e4u1-q09", lesson:"e4u1-l1", level:1, q:"Who mediated the Treaty of Portsmouth (1905) that ended the Russo-Japanese War?", options:[
@@ -1228,38 +1290,38 @@ ICA.addUnit({
      {t:"Germany’s unconditional surrender in 1945", why:"That ended the Second World War in Europe."},
      {t:"The founding of the League of Nations", why:"The League began work in January 1920."}]},
    {id:"e4u1-q11", lesson:"e4u1-l2", level:2, q:"What happened to Japan’s Racial Equality Proposal at the League of Nations Commission on 11 April 1919?", options:[
-     {t:"11 of the 17 delegates present voted for it, but the chair, Woodrow Wilson, ruled that unanimity was needed, so it was left out", ok:true, why:"Right. It was supported by a majority and excluded by a ruling."},
-     {t:"It was rejected by a large majority", why:"A majority voted for it."},
-     {t:"It was adopted and written into the Covenant", why:"It wasn’t included in the Covenant."},
+     {t:"Most delegates backed it, but Wilson required unanimity", ok:true, why:"Right. 11 of the 17 delegates present voted for it, but the chair, Woodrow Wilson, ruled that unanimity was needed, so it was left out. It was supported by a majority and excluded by a ruling."},
+     {t:"It was rejected by a large majority of the delegates present", why:"A majority voted for it."},
+     {t:"It was adopted by the delegates and written into the Covenant", why:"It wasn’t included in the Covenant."},
      {t:"Japan withdrew it before the vote", why:"Japan pressed it to a vote on 11 April."}]},
    {id:"e4u1-q12", lesson:"e4u1-l2", level:1, q:"How does collective security differ from an ordinary alliance?", options:[
-     {t:"Collective security commits all members against any aggressor, even another member; an alliance is aimed at a known outside threat", ok:true, why:"Right. That universal promise was the League’s central idea."},
+     {t:"It binds all members against any aggressor, even a member", ok:true, why:"Right. Collective security commits all members against any aggressor, even another member; an alliance is aimed at a known outside threat. That universal promise was the League’s central idea."},
      {t:"Collective security means each state defends only itself", why:"That is self-help, the opposite."},
      {t:"An alliance always includes every state in the world", why:"Alliances are limited groups facing a particular threat."},
-     {t:"There is no difference", why:"The difference in who the promise is aimed at is fundamental."}]},
+     {t:"There is no real difference; both are promises of mutual defence", why:"The difference in who the promise is aimed at is fundamental."}]},
    {id:"e4u1-q13", lesson:"e4u1-l2", level:2, q:"What was Japan’s “South Seas Mandate”?", options:[
-     {t:"Former German islands in Micronesia, north of the equator, administered by Japan under League of Nations supervision", ok:true, why:"Right. It was a C-class mandate, one of the territories Japan took from Germany in 1914."},
+     {t:"Former German Pacific islands that Japan ran for the League", ok:true, why:"Right. The islands, in Micronesia north of the equator, were administered by Japan under League of Nations supervision. It was a C-class mandate, one of the territories Japan took from Germany in 1914."},
      {t:"Japan’s colony in Taiwan, won in 1895", why:"Taiwan was ceded by China in 1895, long before the mandate system."},
-     {t:"A trade agreement with Australia", why:"Mandates were territories, not trade deals."},
+     {t:"A trade agreement with Australia covering the Pacific islands", why:"Mandates were territories, not trade deals."},
      {t:"A UN trust territory created in 1945", why:"After 1945 the islands became a US-administered UN trust territory; the mandate was a League arrangement."}]},
    {id:"e4u1-q14", lesson:"e4u1-l2", level:3, q:"Dmitri says: “The League of Nations failed completely, so it teaches us nothing.” Which reply is best supported by the lesson?", options:[
-     {t:"It failed against great-power aggression, but it settled smaller disputes, helped refugees and fought disease, and scholars such as Pedersen show the mandates exposed empire to scrutiny; the UN’s designers also learned from its flaws.", ok:true, why:"Right. A balanced verdict separates its failures from its lasting effects."},
+     {t:"It failed against great powers but had real successes elsewhere.", ok:true, why:"Right. It failed against great-power aggression, but it settled smaller disputes, helped refugees and fought disease; scholars such as Pedersen show the mandates exposed empire to scrutiny, and the UN’s designers learned from its flaws. A balanced verdict separates its failures from its lasting effects."},
      {t:"Agreed: it never did anything.", why:"It had real successes, such as the Åland Islands settlement and Nansen passports."},
-     {t:"It was a success: it prevented the Second World War.", why:"It didn’t prevent the war; it failed over Manchuria and Ethiopia."},
+     {t:"It was a complete success, because it prevented a second world war.", why:"It didn’t prevent the war; it failed over Manchuria and Ethiopia."},
      {t:"The United States led it successfully until 1946.", why:"The United States never joined the League."}]},
    {id:"e4u1-q15", lesson:"e4u1-l2", level:2, q:"What did Charles Kindleberger argue in *The World in Depression, 1929–1939* (1973)?", options:[
-     {t:"The slump was so deep because no country acted as a stabiliser: Britain could not and the United States would not", ok:true, why:"Right. His argument became a root of hegemonic stability theory."},
+     {t:"No country acted as the world economy’s stabiliser", ok:true, why:"Right. The slump was so deep because Britain could not and the United States would not play that role. His argument became a root of hegemonic stability theory."},
      {t:"The Depression was caused only by the Treaty of Versailles", why:"Kindleberger focused on the lack of international economic leadership, not on one treaty."},
      {t:"Tariffs had no effect on world trade", why:"Rising tariffs and blocs were part of the collapse in world trade."},
      {t:"The Soviet Union caused the crash of 1929", why:"The crash began on Wall Street; the Soviet economy was largely cut off from world markets."}]},
    {id:"e4u1-q16", lesson:"e4u1-l2", level:2, q:"What happened in the Mukden incident of 18 September 1931?", options:[
-     {t:"Officers of Japan’s Kwantung Army staged an explosion on a Japanese-owned railway, blamed Chinese troops and used it to occupy Manchuria", ok:true, why:"Right. This is the historical consensus; Japan then set up Manchukuo."},
+     {t:"Japanese officers faked an attack on a railway and blamed China", ok:true, why:"Right. Officers of Japan’s Kwantung Army staged an explosion on a Japanese-owned railway, blamed Chinese troops and used it to occupy Manchuria. This is the historical consensus; Japan then set up Manchukuo."},
      {t:"Chinese forces invaded Japan", why:"The incident took place in Manchuria, in China, and led to Japanese occupation."},
      {t:"The League of Nations sent troops to Manchuria", why:"The League sent a commission of inquiry (Lytton), not troops."},
-     {t:"Japan and China signed a peace treaty", why:"It began a period of Japanese expansion, not peace."}]},
+     {t:"Japan and China signed a peace treaty ending their border clashes", why:"It began a period of Japanese expansion, not peace."}]},
    {id:"e4u1-q17", lesson:"e4u1-l2", level:3, q:"Kenji is writing a seminar paper that mentions the Nanjing Massacre of 1937. Which approach meets academic standards?", options:[
-     {t:"State that historians agree a mass atrocity took place, and give the range of death-toll estimates with their sources, noting that the number is disputed", ok:true, why:"Right. Separate the established event from the disputed figure and attribute each number."},
-     {t:"Choose the highest number found online and present it as certain", why:"Picking one number without sources or acknowledging the range misrepresents the evidence."},
+     {t:"Treat the event as established and cite a range of death tolls", ok:true, why:"Right. Historians agree a mass atrocity took place; the death toll is disputed, so give the range of estimates with their sources. Separate the established event from the disputed figure and attribute each number."},
+     {t:"Choose the highest number found online and present it as certain fact", why:"Picking one number without sources or acknowledging the range misrepresents the evidence."},
      {t:"Leave the event out because it is contested", why:"The event itself is established; only the numbers are disputed."},
      {t:"Say that nothing can be known about it", why:"There is extensive evidence that the atrocity occurred; uncertainty concerns the scale."}]},
    {id:"e4u1-q18", lesson:"e4u1-l2", level:1, q:"What does Tsuyoshi Hasegawa argue in *Racing the Enemy* (2005)?", options:[
@@ -1274,8 +1336,8 @@ ICA.addUnit({
      {t:"Mao Zedong", why:"Mao led China; containment was a US strategy against Soviet expansion."},
      {t:"Charles Krauthammer", why:"Krauthammer coined “unipolar moment” in 1990/91."}]},
    {id:"e4u1-q20", lesson:"e4u1-l3", level:2, q:"What does “hub and spokes” describe in the Asia-Pacific after 1951?", options:[
-     {t:"Separate bilateral alliances linking each ally to the United States, rather than one alliance in which all members defend each other", ok:true, why:"Right. NATO in Europe was multilateral; the Asia-Pacific system was a set of spokes."},
-     {t:"A Soviet railway network in Siberia", why:"It is an image for alliance design, not transport."},
+     {t:"Separate bilateral alliances between the US and each ally", ok:true, why:"Right. Each ally was linked to the United States by its own treaty, rather than one alliance in which all members defend each other. NATO in Europe was multilateral; the Asia-Pacific system was a set of spokes."},
+     {t:"A Soviet railway network linking Siberia to the Pacific coast", why:"It is an image for alliance design, not transport."},
      {t:"An alliance of all Asian states against the United States", why:"The spokes were US allies."},
      {t:"The trade routes of the Belt and Road Initiative", why:"That initiative dates from 2013, not from the 1950s."}]},
    {id:"e4u1-q21", lesson:"e4u1-l3", level:1, q:"How did the Korean War end?", options:[
@@ -1284,17 +1346,17 @@ ICA.addUnit({
      {t:"With the reunification of Korea in 1991", why:"Korea remains divided."},
      {t:"With a UN Security Council resolution in 1950", why:"Resolutions in 1950 concerned helping South Korea; the fighting continued until 1953."}]},
    {id:"e4u1-q22", lesson:"e4u1-l3", level:2, q:"Which statement about the San Francisco Peace Treaty (1951) is accurate?", options:[
-     {t:"Neither Chinese government was invited, and the Soviet Union attended but refused to sign", ok:true, why:"Right. Japan and 48 Allied nations signed."},
-     {t:"Every country that had fought Japan signed it", why:"China, the Soviet Union and others did not sign."},
+     {t:"Neither Chinese government was invited to the conference", ok:true, why:"Right. The Soviet Union attended but refused to sign; Japan and 48 Allied nations signed."},
+     {t:"Every country that had fought against Japan in the war signed it", why:"China, the Soviet Union and others did not sign."},
      {t:"It created NATO", why:"NATO was founded in 1949 by the North Atlantic Treaty."},
      {t:"It ended the US occupation of Okinawa immediately", why:"Okinawa stayed under US administration until 1972."}]},
    {id:"e4u1-q23", lesson:"e4u1-l3", level:3, q:"Sione reads that the Vietnam War was “simply a proxy war between Moscow and Washington”. How would Odd Arne Westad’s work complicate this?", options:[
-     {t:"Vietnamese communists and their opponents had their own aims, such as independence and unification, and used superpower support as much as they were used by it", ok:true, why:"Right. Westad stresses local agency in the “global Cold War”."},
-     {t:"Westad argues the superpowers had no involvement in Vietnam", why:"He documents heavy superpower involvement; his point is that it wasn’t the whole story."},
+     {t:"Vietnamese actors had their own aims and used superpower support", ok:true, why:"Right. Vietnamese communists and their opponents had their own aims, such as independence and unification, and used superpower support as much as they were used by it. Westad stresses local agency in the “global Cold War”."},
+     {t:"Westad argues the superpowers had no real involvement in Vietnam’s war", why:"He documents heavy superpower involvement; his point is that it wasn’t the whole story."},
      {t:"Westad argues it was a war between Britain and France", why:"France fought the first Indochina War, but that isn’t Westad’s argument here."},
      {t:"Westad argues the war took place in Europe", why:"The war was fought in Vietnam and neighbouring countries."}]},
    {id:"e4u1-q24", lesson:"e4u1-l3", level:2, q:"How did the Sino-Soviet split change Cold War diplomacy?", options:[
-     {t:"It turned a two-sided contest into a triangle, allowing the United States to open relations with China (Nixon’s 1972 visit)", ok:true, why:"Right. The split created room for US–China rapprochement."},
+     {t:"It turned a two-sided contest into a triangle", ok:true, why:"Right. The split allowed the United States to open relations with China (Nixon’s 1972 visit), creating room for US–China rapprochement."},
      {t:"It ended the Cold War in 1960", why:"The Cold War continued for three more decades."},
      {t:"It united China and the Soviet Union more closely", why:"The split was a breakdown of their alliance."},
      {t:"It led China to join NATO", why:"China never joined NATO."}]},
@@ -1304,7 +1366,7 @@ ICA.addUnit({
      {t:"The Treaty of Versailles (1919) and the Kellogg–Briand Pact (1928)", why:"These belong to the interwar period."},
      {t:"The Cuban Missile Crisis (1962) and the Soviet invasion of Afghanistan (1979)", why:"The 1962 crisis came before détente, and the 1979 invasion ended it."}]},
    {id:"e4u1-q26", lesson:"e4u1-l3", level:3, q:"Hana claims that “the Cold War ended in the same way everywhere in 1989–91.” Which evidence best challenges her?", options:[
-     {t:"In East Asia, communist parties kept power in China, Vietnam and North Korea, Korea stayed divided, and China’s party crushed protests in June 1989", ok:true, why:"Right. The European pattern of communist collapse didn’t happen in East Asia."},
+     {t:"China’s Communist Party kept power", ok:true, why:"Right. In East Asia, communist parties kept power in China, Vietnam and North Korea, Korea stayed divided, and China’s party crushed protests in June 1989. The European pattern of communist collapse didn’t happen there."},
      {t:"The Berlin Wall opened on 9 November 1989", why:"That supports the European story; it doesn’t challenge it."},
      {t:"The Soviet Union dissolved in December 1991", why:"That is part of the European ending, not evidence of a different ending."},
      {t:"Germany reunified in 1990", why:"Also part of the European pattern."}]},
@@ -1315,8 +1377,8 @@ ICA.addUnit({
      {t:"Fascist", why:"Fascism is a political ideology, not a school of Cold War history."}]},
    /* ---- Lesson 4 ---- */
    {id:"e4u1-q28", lesson:"e4u1-l4", level:2, q:"How should you report the number of people killed in the partition of India in 1947?", options:[
-     {t:"As a range, about 200,000 to 2 million, with the historians who give it, because records are poor and sources disagree", ok:true, why:"Right. Reporting the range and its source is the honest way to handle uncertain figures."},
-     {t:"As exactly 1 million, since that is the middle", why:"A single precise figure suggests a certainty the evidence doesn’t support."},
+     {t:"As a range, about 200,000 to 2 million, with its sources", ok:true, why:"Right. Records are poor and sources disagree, so reporting the range and the historians who give it is the honest way to handle uncertain figures."},
+     {t:"As exactly 1 million, since that is the middle of the range", why:"A single precise figure suggests a certainty the evidence doesn’t support."},
      {t:"As “very few”, since partition was peaceful", why:"Partition involved mass violence and displaced 12 to 20 million people."},
      {t:"As unknowable, so it shouldn’t be mentioned", why:"Scale matters to the history; a sourced range is the right way to show it."}]},
    {id:"e4u1-q29", lesson:"e4u1-l4", level:1, q:"What was the Bandung Conference?", options:[
@@ -1330,17 +1392,17 @@ ICA.addUnit({
      {t:"San Francisco, 1945", why:"That was the conference that wrote the UN Charter, not a Non-Aligned summit."},
      {t:"Geneva, 1954", why:"The 1954 Geneva conference dealt with Korea and Indochina."}]},
    {id:"e4u1-q31", lesson:"e4u1-l4", level:3, q:"Oluwaseun argues: “Non-aligned states were passive bystanders in the Cold War.” Which response is best supported?", options:[
-     {t:"They campaigned actively against colonialism and racism, for disarmament and for a new economic order through the UN, the G77 and UNCTAD", ok:true, why:"Right. Non-alignment meant choosing one’s own course, not passivity."},
-     {t:"Agreed: they didn’t take part in the UN at all", why:"They used the UN General Assembly heavily, for example resolution 1514 and the NIEO."},
+     {t:"They campaigned actively against colonialism and racism", ok:true, why:"Right. They also campaigned for disarmament and for a new economic order through the UN, the G77 and UNCTAD. Non-alignment meant choosing one’s own course, not passivity."},
+     {t:"Agreed: they stayed out of the UN and world politics altogether", why:"They used the UN General Assembly heavily, for example resolution 1514 and the NIEO."},
      {t:"They were all secretly members of NATO", why:"Non-aligned states weren’t NATO members."},
      {t:"They only existed after 1991", why:"The movement began in 1961."}]},
    {id:"e4u1-q32", lesson:"e4u1-l4", level:2, q:"Which demand was central to the New International Economic Order (1974)?", options:[
-     {t:"Permanent sovereignty over natural resources, including the right to nationalise foreign-owned mines and plantations", ok:true, why:"Right, along with fairer commodity prices, rules for multinationals and more voice in the IMF and World Bank."},
-     {t:"Privatising all state companies", why:"That was a feature of later structural adjustment, the opposite direction."},
+     {t:"Permanent sovereignty over natural resources", ok:true, why:"Right, including the right to nationalise foreign-owned mines and plantations, along with fairer commodity prices, rules for multinationals and more voice in the IMF and World Bank."},
+     {t:"Privatising state companies and opening markets to foreign firms", why:"That was a feature of later structural adjustment, the opposite direction."},
      {t:"Joining the Warsaw Pact", why:"The NIEO was an economic programme, not a military alignment."},
      {t:"Ending the United Nations", why:"Developing countries pursued the NIEO through the UN General Assembly."}]},
    {id:"e4u1-q33", lesson:"e4u1-l4", level:2, q:"Why did the New International Economic Order largely fail as a programme?", options:[
-     {t:"General Assembly resolutions are recommendations, major industrial economies opposed most of it, and the 1982 debt crisis pushed indebted states towards structural adjustment", ok:true, why:"Right. Power, legal form and economic crisis all worked against it."},
+     {t:"It wasn’t binding, and major economies opposed it", ok:true, why:"Right. General Assembly resolutions are recommendations, major industrial economies opposed most of it, and the 1982 debt crisis pushed indebted states towards structural adjustment. Power, legal form and economic crisis all worked against it."},
      {t:"Developing countries voted against their own resolution", why:"Developing countries led and supported it."},
      {t:"It was fully implemented by 1975", why:"Most of its demands were never implemented."},
      {t:"The UN Security Council vetoed it", why:"It was a General Assembly declaration; the Security Council didn’t vote on it."}]},
@@ -1350,13 +1412,13 @@ ICA.addUnit({
      {t:"Paul Krugman, for the Soviet Union", why:"Krugman’s 1994 essay criticised the idea of an Asian “miracle”."},
      {t:"Alfred Sauvy, for France", why:"Sauvy coined “Third World”."}]},
    {id:"e4u1-q35", lesson:"e4u1-l4", level:3, q:"A government wants to copy what Alice Amsden and Robert Wade saw as the key to South Korea’s and Taiwan’s growth. Which policy fits their account best?", options:[
-     {t:"Directing cheap credit to chosen industries and demanding export performance in return", ok:true, why:"Right. State guidance plus discipline through export targets is central to their argument."},
+     {t:"Tying cheap credit to export targets", ok:true, why:"Right. The state directed cheap credit to chosen industries and demanded export performance in return. State guidance plus discipline through export targets is central to their argument."},
      {t:"Removing all state involvement in the economy at once", why:"That is closer to a pure free-market view, which they rejected."},
      {t:"Closing the economy to all exports", why:"East Asian states pushed firms into export markets."},
      {t:"Relying only on more workers and machines", why:"That is Krugman’s description of what happened, not a policy Amsden and Wade recommended."}]},
    {id:"e4u1-q36", lesson:"e4u1-l4", level:2, q:"Which describes Indonesia’s path to independence?", options:[
-     {t:"Independence was proclaimed on 17 August 1945; after four years of fighting and diplomacy, the Netherlands transferred sovereignty in December 1949", ok:true, why:"Right. UN and US pressure helped end the conflict."},
-     {t:"The Netherlands granted independence peacefully in 1945", why:"The Netherlands fought to return and launched two large military offensives."},
+     {t:"Proclaimed in 1945, won in 1949 after four years of struggle", ok:true, why:"Right. Independence was proclaimed on 17 August 1945; after four years of fighting and diplomacy, the Netherlands transferred sovereignty in December 1949. UN and US pressure helped end the conflict."},
+     {t:"The Netherlands granted independence peacefully, without fighting, in 1945", why:"The Netherlands fought to return and launched two large military offensives."},
      {t:"Indonesia became independent in 1960, the Year of Africa", why:"1960 was the Year of Africa; Indonesia’s independence came earlier."},
      {t:"Indonesia was partitioned along religious lines in 1947", why:"That describes British India."}]},
    /* ---- Lesson 5 ---- */
@@ -1366,12 +1428,12 @@ ICA.addUnit({
      {t:"The founding of the United Nations", why:"The UN was founded in 1945, in a very different distribution of power."},
      {t:"A brief nuclear crisis in 1962", why:"The Cuban Missile Crisis happened in a bipolar world."}]},
    {id:"e4u1-q38", lesson:"e4u1-l5", level:2, q:"Which statement about Huntington’s “clash of civilizations” is accurate?", options:[
-     {t:"It predicted conflict along civilisational lines; critics such as Edward Said attacked its picture of civilisations as solid blocks, and quantitative studies found little support", ok:true, why:"Right. It remains influential and heavily criticised."},
+     {t:"It predicted conflict along civilisational lines", ok:true, why:"Right. Critics such as Edward Said attacked its picture of civilisations as solid blocks, and quantitative studies found little support. It remains influential and heavily criticised."},
      {t:"It argued that liberal democracy had no rivals left", why:"That was Fukuyama’s argument."},
      {t:"It was a UN resolution", why:"It was an article (1993) and a book (1996) by a scholar."},
      {t:"Scholars almost all accept it", why:"It is one of the most criticised theses of the period."}]},
    {id:"e4u1-q39", lesson:"e4u1-l5", level:3, q:"Ana writes: “Fukuyama was wrong, because wars continued after 1989.” What is the best feedback?", options:[
-     {t:"Fukuyama’s claim was about ideas: that liberal democracy had no serious ideological rival. To test it, ask whether credible rival models of government have since emerged.", ok:true, why:"Right. Criticise the argument he actually made."},
+     {t:"His claim was about ideas, not about wars.", ok:true, why:"Right. Fukuyama claimed that liberal democracy had no serious ideological rival. To test it, ask whether credible rival models of government have since emerged. Criticise the argument he actually made."},
      {t:"Correct: Fukuyama predicted that wars would stop.", why:"He didn’t predict an end to wars; that misreads him."},
      {t:"Fukuyama wrote about the clash of civilizations.", why:"That was Huntington."},
      {t:"Fukuyama’s argument was about trade tariffs.", why:"His argument was about political ideology."}]},
@@ -1386,13 +1448,13 @@ ICA.addUnit({
      {t:"Mexico, August 1982", why:"That began the Latin American debt crisis."},
      {t:"Japan, October 1929", why:"The 1929 crash began on Wall Street in New York."}]},
    {id:"e4u1-q42", lesson:"e4u1-l5", level:2, q:"How did the 2008 financial crisis change global economic governance?", options:[
-     {t:"G20 leaders began meeting, and in 2009 named the G20 the premier forum for international economic cooperation, giving rising economies a seat at the top table", ok:true, why:"Right. That shift is often cited as institutions adapting."},
-     {t:"The IMF was abolished", why:"The IMF continued and lent heavily during the crisis."},
+     {t:"G20 leaders began meeting as the top economic forum", ok:true, why:"Right. G20 leaders began meeting in 2008, and in 2009 named the G20 the premier forum for international economic cooperation, giving rising economies a seat at the top table. That shift is often cited as institutions adapting."},
+     {t:"The IMF was abolished and its lending passed to the G20", why:"The IMF continued and lent heavily during the crisis."},
      {t:"The WTO was founded", why:"The WTO opened in 1995."},
      {t:"The Bretton Woods conference was held", why:"Bretton Woods met in 1944."}]},
    {id:"e4u1-q43", lesson:"e4u1-l5", level:3, q:"Priya is asked in a seminar whether the liberal international order is ending. Which answer best meets academic standards on a contested issue?", options:[
-     {t:"“As of November 2026, scholars disagree. Ikenberry sees a resilient, reformable order; Mearsheimer one that was bound to fail; Acharya a ‘multiplex’ world. Here is the evidence each uses, and my own view, labelled as mine.”", ok:true, why:"Right. It dates the claim, attributes positions and separates analysis from opinion."},
-     {t:"“It collapsed on a specific date, and anyone who disagrees is wrong.”", why:"That asserts a contested claim without evidence and dismisses other views."},
+     {t:"“As of November 2026, scholars disagree; here is each side’s evidence.”", ok:true, why:"Right. It dates the claim and attributes positions (Ikenberry sees a resilient, reformable order; Mearsheimer one that was bound to fail; Acharya a ‘multiplex’ world). Any personal view should then be labelled as such."},
+     {t:"“It collapsed on a specific date, and anyone who disagrees with me is wrong.”", why:"That asserts a contested claim without evidence and dismisses other views."},
      {t:"“It will certainly end by 2030.”", why:"A confident prediction isn’t evidence; academic writing on live debates avoids that."},
      {t:"“I can’t say anything because it is political.”", why:"Contested issues can be analysed fairly by reporting positions and evidence."}]},
    {id:"e4u1-q44", lesson:"e4u1-l5", level:2, q:"What happened to NATO’s Article 5 after the attacks of 11 September 2001?", options:[
@@ -1401,9 +1463,9 @@ ICA.addUnit({
      {t:"The UN Security Council vetoed it", why:"Article 5 is part of NATO’s treaty, not a UN decision."},
      {t:"It was used to admit China to NATO", why:"China isn’t a NATO member, and Article 5 concerns collective defence."}]},
    {id:"e4u1-q45", lesson:"e4u1-l5", level:3, q:"A headline says: “China is now the world’s biggest economy.” Another says the United States is. Before deciding, what should Tomás check first?", options:[
-     {t:"How GDP was measured (market exchange rates or purchasing power parity), which source and which year", ok:true, why:"Right. The two measures rank countries differently, so both headlines can be accurate for their own measure."},
+     {t:"How GDP was measured, which source and which year", ok:true, why:"Right. Market exchange rates and purchasing power parity rank countries differently, so both headlines can be accurate for their own measure."},
      {t:"Which headline is longer", why:"Length says nothing about accuracy."},
-     {t:"Which country the journalist comes from", why:"Nationality isn’t evidence; the measure and source are."},
+     {t:"Which country each journalist comes from and works for", why:"Nationality isn’t evidence; the measure and source are."},
      {t:"Which answer he would prefer", why:"Preference isn’t evidence."}]}
   ]
 });

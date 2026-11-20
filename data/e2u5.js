@@ -86,7 +86,7 @@ ICA.addUnit({
       {t:"A government puts a tax on steel imported from abroad.", b:0, why:"The decision is made at home, but it targets goods from other countries and can trigger a trade dispute. That makes it international."}
     ]},
     {id:"e2u5-l1-x2", type:"mcq", q:"Kenji writes: “I want to study International Relations so I can find out what happened at yesterday’s summit.” Which reply best describes the field?", options:[
-      {t:"IR is less about reporting events and more about explaining them: why the summit happened, why states agreed or didn’t, and who gains.", ok:true, why:"Right. As the E-IR textbook puts it, IR doesn’t describe events; it seeks to understand them. Journalism reports; IR explains patterns."},
+      {t:"IR is less about reporting events and more about explaining them.", ok:true, why:"Right. IR asks why the summit happened, why states agreed or didn’t, and who gains. As the E-IR textbook puts it, IR doesn’t describe events; it seeks to understand them. Journalism reports; IR explains patterns."},
       {t:"That’s exactly it: IR is the study of the latest international news.", why:"News is raw material for IR, but the field is about explaining patterns and causes, not keeping up with headlines."},
       {t:"IR only studies events before 1945, so yesterday’s summit isn’t part of it.", why:"IR studies the past and the present. Recent events are very much part of it."},
       {t:"IR is the training course for diplomats, so only diplomats need to know about summits.", why:"Diplomats may study IR, but IR is an academic field for anyone who wants to understand world politics."}
@@ -98,7 +98,7 @@ ICA.addUnit({
       ["Bread costing more after a harvest fails abroad","World markets for grain","A shortage in one exporting region can push up prices far away."]
     ]},
     {id:"e2u5-l1-x4", type:"mcq", q:"Which statement about the founding of IR at Aberystwyth is accurate?", options:[
-      {t:"In 1919 the University College of Wales founded a Department of International Politics and the Woodrow Wilson Chair, funded by the Davies family in memory of students killed in the First World War.", ok:true, why:"Correct. The Davies family’s gift (1918) created the chair; the department was founded in 1919, with Alfred Zimmern as its first professor."},
+      {t:"In 1919 a department and chair were founded, funded by the Davies family.", ok:true, why:"Correct. The University College of Wales founded a Department of International Politics and the Woodrow Wilson Chair, in memory of students killed in the First World War. The Davies family’s gift (1918) created the chair; the department was founded in 1919, with Alfred Zimmern as its first professor."},
       {t:"It was founded in 1945 to train staff for the new United Nations.", why:"The date and the reason are wrong. It came after the First World War, linked to hopes for the League of Nations, not the UN."},
       {t:"Woodrow Wilson founded it personally and taught its first classes.", why:"It was *named* after Wilson, who championed the League of Nations. The Davies family funded it and Alfred Zimmern was its first professor."},
       {t:"It was the first time anyone had written about relations between political communities.", why:"That thinking is thousands of years older, from the Amarna letters to Thucydides, the Arthashastra and Ibn Khaldun. 1919 marks the first university department of its kind."}
@@ -275,7 +275,7 @@ ICA.addUnit({
       {t:"many historians call the idea that 1648 created the modern state system a myth or a simplification.", flag:false, why:"Accurate. Scholars such as Andreas Osiander have argued this."}
     ]},
     {id:"e2u5-l2-x7", type:"mcq", q:"Stephen Krasner described sovereignty as “organized hypocrisy”. What did he mean?", options:[
-      {t:"States all claim sovereignty as a rule, yet powerful states often break it and states regularly give parts of it away.", ok:true, why:"Right. The rule is widely proclaimed and widely bent, by intervention, treaties and conditional loans."},
+      {t:"States all claim the rule, yet often break it or give parts away.", ok:true, why:"Right. Powerful states often break the sovereignty rule, and states regularly give parts of it away. The rule is widely proclaimed and widely bent, by intervention, treaties and conditional loans."},
       {t:"Sovereignty is an illusion and has no effect on how states behave.", why:"Krasner didn’t say it was meaningless. It shapes behaviour, even though it is often broken."},
       {t:"Only democracies can be truly sovereign.", why:"Sovereignty has nothing to do with the type of government."},
       {t:"International organisations have replaced sovereign states.", why:"Krasner’s point is about states bending the rule, not about states disappearing."}
@@ -367,13 +367,13 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u5-l3-x1", type:"mcq", q:"Lucía’s friend says: “The world is an anarchy, so nothing stops countries from attacking each other whenever they like, and international rules don’t exist.” What is the best correction?", options:[
-      {t:"Anarchy in IR means there is no government above states. Rules, treaties and diplomacy still exist, and most states follow most of them most of the time.", ok:true, why:"Right. Anarchy describes the lack of a central authority, not the lack of rules or order."},
+      {t:"Anarchy means no government above states; rules still exist.", ok:true, why:"Right. Rules, treaties and diplomacy still exist, and most states follow most of them most of the time. Anarchy describes the lack of a central authority, not the lack of rules or order."},
       {t:"Your friend is right: anarchy means constant disorder.", why:"That is the everyday meaning of anarchy, not the IR meaning. Air travel, post and trade show a great deal of order."},
       {t:"The world isn’t an anarchy, because the UN is a world government.", why:"The UN is an organisation of states; it isn’t a government above them."},
       {t:"Anarchy means anarchist movements govern most countries.", why:"In IR the word has nothing to do with anarchist political movements."}
     ]},
     {id:"e2u5-l3-x2", type:"mcq", q:"Why do most states keep most of their treaties, even though no world police can force them to? Choose the **best** explanation.", options:[
-      {t:"Keeping deals usually serves their interests: others keep their side in return, and a state that cheats loses trust and partners.", ok:true, why:"Right. Reciprocity, reputation and the gains from cooperation give states strong reasons to comply even without enforcement from above."},
+      {t:"Keeping deals usually serves their own interests.", ok:true, why:"Right. Others keep their side in return, and a state that cheats loses trust and partners. Reciprocity, reputation and the gains from cooperation give states strong reasons to comply even without enforcement from above."},
       {t:"The UN Secretary-General can arrest leaders who break treaties.", why:"No such power exists. The Secretary-General is the UN’s chief official, not a police chief."},
       {t:"States don’t actually keep their treaties; it only looks that way.", why:"The evidence points the other way. Henkin’s famous observation is that almost all nations keep almost all of their obligations almost all of the time."},
       {t:"Every treaty is enforced by the world’s strongest state.", why:"Powerful states sometimes push others to comply, but most treaties are kept without any outside enforcer."}
@@ -413,7 +413,7 @@ ICA.addUnit({
       {t:"Non-state actors such as NGOs and companies also influence international affairs.", flag:false, why:"Correct: IR increasingly studies them alongside states."}
     ]},
     {id:"e2u5-l3-x7", type:"mcq", q:"A country’s government expels a foreign diplomat for spying, but doesn’t put him on trial. Why not?", options:[
-      {t:"Under the Vienna Convention on Diplomatic Relations, diplomats have immunity from arrest and trial; the host can only declare them unwelcome and send them home.", ok:true, why:"Right. Immunity lets diplomats work even between hostile states; the host’s remedy is expulsion (declaring them “persona non grata”)."},
+      {t:"Diplomats have immunity from arrest and trial.", ok:true, why:"Right. Under the Vienna Convention on Diplomatic Relations, the host can only declare them unwelcome and send them home. Immunity lets diplomats work even between hostile states; the host’s remedy is expulsion (declaring them “persona non grata”)."},
       {t:"Spying is allowed under the host country’s own laws.", why:"Host countries’ laws forbid spying on them. The diplomat escapes trial because of immunity, not because spying is allowed."},
       {t:"The UN must approve any trial of a foreign national.", why:"There is no such rule; states try foreigners in their courts all the time. Diplomats are a special case."},
       {t:"Only the diplomat’s home country can expel him.", why:"It is the host country that expels a diplomat it no longer accepts."}
@@ -531,13 +531,13 @@ ICA.addUnit({
       {t:"Why war will end once every state has the same government.", why:"Waltz was sceptical of such second-image hopes: even good states live in anarchy."}
     ]},
     {id:"e2u5-l4-x4", type:"mcq", q:"What was J. David Singer’s “level-of-analysis problem” (1961)?", options:[
-      {t:"The system level and the state level give different pictures of world politics, so analysts must choose a level for their question and be careful when moving between them.", ok:true, why:"Right. Singer compared the two levels, showed what each reveals and hides, and warned against mixing them without noticing."},
+      {t:"Different levels give different pictures, so choose one with care.", ok:true, why:"Right. The system level and the state level give different pictures of world politics, so analysts must choose a level for their question and be careful when moving between them. Singer compared the two levels, showed what each reveals and hides, and warned against mixing them without noticing."},
       {t:"Only the individual level can explain anything in IR.", why:"Singer compared the system and the national state; he didn’t claim individuals explain everything."},
       {t:"There are exactly seven levels, and all must always be used together.", why:"Singer discussed two main levels and stressed choosing between them."},
       {t:"Levels of analysis are useless and should be abandoned.", why:"He wanted the levels used carefully, not dropped."}
     ]},
     {id:"e2u5-l4-x5", type:"mcq", q:"Which explanation of the Cuban Missile Crisis is pitched at the **system** level?", options:[
-      {t:"In a two-superpower rivalry, each side’s missiles near the other’s territory were moves in a wider balance, and fear of nuclear war pushed both towards a deal.", ok:true, why:"Right. Bipolar rivalry and nuclear deterrence describe the relationship between states, the system level."},
+      {t:"Bipolar rivalry and fear of nuclear war pushed both sides to a deal.", ok:true, why:"Right. Each side’s missiles near the other’s territory were moves in a wider balance. Bipolar rivalry and nuclear deterrence describe the relationship between states, the system level."},
       {t:"Kennedy chose a blockade because of his personal caution after the Bay of Pigs failure.", why:"A leader’s personal judgement points to the individual level."},
       {t:"US government agencies’ routines shaped which options reached the president.", why:"Agencies inside the government are a state-level (or group-level) explanation, as in Allison’s work."},
       {t:"Khrushchev gambled because he thought Kennedy was weak.", why:"One leader’s perception of another is an individual-level explanation."}
@@ -734,6 +734,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u5-q02","e2u5-q06","e2u5-q11","e2u5-q14","e2u5-q17","e2u5-q20","e2u5-q24","e2u5-q28","e2u5-q31","e2u5-q35","e2u5-q39","e2u5-q43"],
+  cpBank:[
+   {id:"e2u5-cp01", lesson:"e2u5-l1", level:1, q:"Which research question belongs more to **comparative politics** than to IR?", options:[
+     {t:"Why did two neighbouring countries sign a new fishing agreement last year?", why:"This is about dealings between two states, which is IR’s main territory."},
+     {t:"How do election rules differ between Brazil, India and Germany?", ok:true, why:"Right. Comparative politics compares what happens inside different countries, such as elections and constitutions. IR looks mostly at what happens between them."},
+     {t:"How did ASEAN members respond together to a regional crisis?", why:"States working together through an international organisation is a question about relations across borders: IR."},
+     {t:"Why do rising powers so often clash with leading powers?", why:"This asks about relations between states in the international system, a classic IR question."}]},
+   {id:"e2u5-cp02", lesson:"e2u5-l3", level:1, q:"A shipping firm, owned by shareholders, runs ports in eight countries and lobbies several governments on trade rules. What kind of actor is it?", options:[
+     {t:"An intergovernmental organisation (IGO)", why:"An IGO’s members are states, set up by agreement between them. This firm is owned by private shareholders."},
+     {t:"A non-governmental organisation (NGO)", why:"NGOs are private but not-for-profit, working on a cause. A shareholder-owned firm works for profit."},
+     {t:"A non-state armed group", why:"Armed groups use or threaten violence outside state forces. Nothing suggests this firm does."},
+     {t:"A multinational corporation (MNC)", ok:true, why:"Correct. A company that owns or controls operations in more than one country is an MNC. Lobbying governments is one way MNCs shape world politics."}]},
+   {id:"e2u5-cp03", lesson:"e2u5-l5", level:1, q:"In an invented history, Kingdom A sends settlers to an island, takes its land and mines, and rules the islanders, claiming they are “not ready” to govern themselves. Which term fits best?", options:[
+     {t:"Colonialism", ok:true, why:"Yes. Rule of one people’s territory by a foreign power, with settlement, exploitation and a claim that the colonised are inferior, is colonialism."},
+     {t:"Non-alignment", why:"Non-alignment was newly independent states refusing to join either Cold War bloc. It has nothing to do with conquering an island."},
+     {t:"Bipolarity", why:"Bipolarity describes a system with two dominant powers. It is about how power is spread, not one kingdom ruling another people."},
+     {t:"Decolonisation", why:"Decolonisation is the opposite process: colonies becoming independent states."}]},
+   {id:"e2u5-cp04", lesson:"e2u5-l2", level:2, q:"Territory X has a permanent population, clear land and a working government. But all its treaties are signed for it by neighbouring State Y, whose officials also control its ministries. Which Montevideo criterion is X weakest on?", options:[
+     {t:"A permanent population", why:"The question says X has a permanent population, and there is no minimum size."},
+     {t:"A defined territory", why:"X controls clear land. Even disputed borders wouldn’t stop it meeting this criterion."},
+     {t:"Capacity to enter into relations with other states", ok:true, why:"Right. In practice this criterion means independence. If another state makes X’s deals and controls its ministries, X lacks real capacity, as with Manchukuo."},
+     {t:"Being a democracy", why:"Democracy is not one of the Montevideo criteria. An authoritarian state can still be a state."}]},
+   {id:"e2u5-cp05", lesson:"e2u5-l2", level:2, q:"In State Q, almost everyone speaks one language and sees themselves as one nation. Very few members of that nation live outside Q’s borders. Which idea does Q come closest to?", options:[
+     {t:"A stateless nation", why:"A stateless nation has no state of its own, like the Kurds. Q’s nation has its own state."},
+     {t:"The nation-state", ok:true, why:"Yes. A nation-state is the ideal where one nation has its own state and borders match national identity. Few states fit it perfectly, but Q is close."},
+     {t:"A plurinational state", why:"A plurinational state, like Bolivia under its 2009 constitution, contains several nations or peoples. Q has one."},
+     {t:"An empire", why:"An empire is one centre ruling over many different peoples, usually unequally. Q has one people."}]},
+   {id:"e2u5-cp06", lesson:"e2u5-l3", level:2, q:"Country A buys new missiles only to defend itself. Its neighbour, Country B, sees a threat and buys missiles too. Now both feel less safe than before. Which idea describes this?", options:[
+     {t:"Reciprocity between rivals", why:"Reciprocity is states returning good or bad treatment, which helps keep deals. This case is about defence that accidentally creates fear."},
+     {t:"Self-determination", why:"Self-determination is a people’s right to choose its political status. It isn’t about arms build-ups."},
+     {t:"The security dilemma", ok:true, why:"Correct. When one state strengthens its defence, its neighbour may see a threat and respond, leaving both less safe."},
+     {t:"City diplomacy", why:"City diplomacy is cities acting abroad, for example on climate. This case involves national armies."}]},
+   {id:"e2u5-cp07", lesson:"e2u5-l4", level:2, q:"A study argues that a government’s decision during a crisis was shaped mainly by rivalry between its defence ministry and its foreign ministry. At which level of analysis is this explanation?", options:[
+     {t:"The individual level", why:"The individual level looks at leaders’ beliefs and personalities. This explanation looks at government agencies."},
+     {t:"The system level", why:"The system level looks at relations between states, such as polarity and alliances. Rivalry between ministries happens inside one state."},
+     {t:"The third image", why:"Waltz’s third image is the international system and anarchy. Rival ministries are part of a state’s inner workings."},
+     {t:"The state level", ok:true, why:"Right. The routines and rivalries of government agencies are inside the country, like Allison’s study of bureaucracy in the Cuban Missile Crisis."}]},
+   {id:"e2u5-cp08", lesson:"e2u5-l5", level:2, q:"In 1962 a newly independent state refuses to join either NATO or the Warsaw Pact. It works with similar states at the UN to oppose colonialism. Which grouping fits its approach best?", options:[
+     {t:"The Non-Aligned Movement", ok:true, why:"Yes. Many newly independent states wanted to avoid choosing a superpower bloc. The Non-Aligned Movement held its first summit in Belgrade in 1961."},
+     {t:"The Concert of Europe", why:"The Concert of Europe was 19th-century great powers managing crises after the Congress of Vienna. It ended long before 1962."},
+     {t:"The League of Nations", why:"The League began work in 1920 and was replaced by the UN in 1945."},
+     {t:"The Berlin Conference powers", why:"At the Berlin Conference (1884–1885), European powers agreed rules for claiming Africa, the opposite of this state’s aims."}]},
+   {id:"e2u5-cp09", lesson:"e2u5-l1", level:3, q:"Which of these is an **explaining** question pitched at the **system** level?", options:[
+     {t:"Should our country join an alliance against the rising power?", why:"“Should” makes this a normative (judging) question about what ought to happen."},
+     {t:"Why did the president, known for caution, refuse to join the alliance?", why:"This is an explaining question, but it focuses on one leader’s personality: the individual level."},
+     {t:"Why do states in similar positions so often join together against a rising power, whoever leads them?", ok:true, why:"Right. It asks what happens and why (explaining), and it looks for a pattern that holds whoever is in charge (system level)."},
+     {t:"Was it right for the leader to break the alliance?", why:"Asking whether something was right is a normative question, which depends on values as well as evidence."}]},
+   {id:"e2u5-cp10", lesson:"e2u5-l2", level:3, q:"A state agrees to follow WHO rules on reporting disease outbreaks and lets WHO experts visit. A politician says: “We have lost our sovereignty. The WHO is now a world government.” What is the best response?", options:[
+     {t:"He is right: once a state signs a treaty like this, its sovereignty is gone", why:"Making treaties is something sovereign states do. Krasner notes states regularly give up bits of control this way and remain sovereign."},
+     {t:"He is right: the WHO can now make laws for all its member states, like a government", why:"The WHO is an IGO whose members are states. No body above states can pass laws for all of them; that is what anarchy means in IR."},
+     {t:"He is wrong, because only great powers have sovereignty to lose in the first place", why:"Sovereign equality covers all states, whatever their size. A small state is as sovereign as a large one."},
+     {t:"It was a sovereign choice, and the WHO is a body of states, not a world government", ok:true, why:"Correct. Agreeing to rules gives up some control, but states often limit their own freedom this way and stay sovereign. The WHO is an IGO set up by states, with no general power to rule them."}]},
+   {id:"e2u5-cp11", lesson:"e2u5-l5", level:3, q:"At independence, most African states kept the borders drawn under colonial rule, even where those borders cut across communities. Why, and what tension did this leave?", options:[
+     {t:"Redrawing them risked endless wars, but keeping them clashed with self-determination", ok:true, why:"Right. In 1964 the OAU agreed to respect independence borders to avoid wars. But self-determination pulls the other way, and it is hard to apply when who counts as “a people” is disputed."},
+     {t:"The colonial borders matched nations exactly, so there was no reason to change them", why:"The borders were drawn in European capitals and often cut across communities and kingdoms. They rarely matched nations."},
+     {t:"African rulers had agreed the borders at the Berlin Conference, so they were seen as fair", why:"No African rulers were invited to the Berlin Conference. Outsiders drew the borders."},
+     {t:"Self-determination says borders can never change, so there was no tension", why:"Self-determination is the right of a people to choose its political status. It can push for border changes, which is exactly the tension."}]},
+   {id:"e2u5-cp12", lesson:"e2u5-l4", level:3, q:"A historian explains why the two superpowers never fought each other directly during the Cold War: with two dominant powers both holding nuclear weapons, direct war became too costly. Which level and features does this explanation use?", options:[
+     {t:"The individual level; the leaders’ personal kindness", why:"The explanation doesn’t mention any leader’s personality. It points to the structure of power and weapons between states."},
+     {t:"The state level; both superpowers were democracies", why:"The Soviet Union was not a democracy, and the explanation is about relations between states, not their inner workings."},
+     {t:"The system level; bipolarity and deterrence", ok:true, why:"Correct. Two dominant powers is bipolarity, and the threat of unacceptable retaliation is deterrence. Both describe the system, not any one state or leader."},
+     {t:"The system level; multipolarity and the balance of power", why:"The system level fits, but the Cold War had two dominant powers, which is bipolarity, not multipolarity."}]}
+  ],
   codex:[
    {id:"international-relations-field", title:"International Relations (the field)", aka:["IR","international politics","world politics","global politics"], tags:["international relations","foundations"],
     summary:"The study of relations across borders, between states and many other actors: conflict and cooperation, power, wealth, rules and rights.",
@@ -1035,13 +1097,13 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e2u5-q01", lesson:"e2u5-l1", level:1, q:"What is the difference between “international relations” and “International Relations” in textbooks?", options:[
-     {t:"The small-letter version means the relations themselves; the capitalised version means the academic field that studies them.", ok:true, why:"That is the convention the E-IR textbook explains: IR, the field, studies international relations, the activity."},
+     {t:"Lower case means the activity; capitals mean the academic field.", ok:true, why:"The small-letter version means the relations themselves; the capitalised version means the field that studies them. That is the convention the E-IR textbook explains: IR, the field, studies international relations, the activity."},
      {t:"There is no difference; it’s a matter of style.", why:"Textbooks use the capitals deliberately to separate the field from what it studies."},
      {t:"The capitalised version means only relations between great powers.", why:"Capitals mark the academic field, not a subset of states."},
      {t:"The small-letter version means relations inside one country.", why:"Both versions are about relations across borders."}]},
    {id:"e2u5-q02", lesson:"e2u5-l1", level:2, q:"Fatima notices that nearly all passports have the same size and two lines of machine-readable letters. What best explains this?", options:[
-     {t:"Governments agreed common passport standards through the International Civil Aviation Organization, a UN agency.", ok:true, why:"Right. States cooperated to set a shared format, an everyday example of international relations."},
-     {t:"One company prints every passport in the world.", why:"Each country issues its own passports; the shared format comes from an agreement between states."},
+     {t:"Governments agreed common standards through a UN agency.", ok:true, why:"Right. The agency is the International Civil Aviation Organization. States cooperated to set a shared format, an everyday example of international relations."},
+     {t:"One company prints every passport in the world under contract.", why:"Each country issues its own passports; the shared format comes from an agreement between states."},
      {t:"It is a coincidence of design.", why:"The match is deliberate: the format was agreed internationally so any border officer can read any passport."},
      {t:"A world government requires it.", why:"There is no world government. The standard comes from cooperation between states."}]},
    {id:"e2u5-q03", lesson:"e2u5-l1", level:1, q:"Where and when was the first university Department of International Politics founded, according to the standard story?", options:[
@@ -1050,18 +1112,18 @@ ICA.addUnit({
      {t:"Paris, in 1648", why:"1648 is the date of the Peace of Westphalia, signed in Münster and Osnabrück, not the founding of a university department."},
      {t:"New York, in 1961", why:"Far too late, and the wrong place."}]},
    {id:"e2u5-q04", lesson:"e2u5-l1", level:1, q:"Who funded the Woodrow Wilson Chair of International Politics, and why?", options:[
-     {t:"David Davies and his sisters Gwendoline and Margaret, in memory of the university’s students killed in the First World War", ok:true, why:"Correct. Their gift was made after the 1918 Armistice to study the problems raised by the League of Nations."},
-     {t:"President Woodrow Wilson, to train American diplomats", why:"The chair was named after Wilson, who championed the League, but the Davies family funded it."},
+     {t:"David Davies and his sisters, to remember students killed in the war", ok:true, why:"Correct. David Davies and his sisters Gwendoline and Margaret gave it in memory of the university’s students killed in the First World War. Their gift was made after the 1918 Armistice to study the problems raised by the League of Nations."},
+     {t:"President Woodrow Wilson, to train American diplomats for the League", why:"The chair was named after Wilson, who championed the League, but the Davies family funded it."},
      {t:"The United Nations, to train its staff", why:"The UN didn’t exist until 1945."},
      {t:"The British army, to study military tactics", why:"The aim was to study law, politics, ethics and economics to help prevent war, not tactics."}]},
    {id:"e2u5-q05", lesson:"e2u5-l1", level:2, q:"Which of these is the best evidence that thinking about relations between political communities is older than 1919?", options:[
-     {t:"The Amarna letters, diplomatic correspondence between Egypt and other kingdoms in the 14th century BCE", ok:true, why:"Right. They show organised diplomacy, with alliances, gifts and status, thousands of years before 1919."},
-     {t:"The founding of the United Nations in 1945", why:"That comes after 1919, so it can’t show earlier thinking."},
+     {t:"The Amarna letters between Egypt and other kingdoms", ok:true, why:"Right. These diplomatic letters date from the 14th century BCE. They show organised diplomacy, with alliances, gifts and status, thousands of years before 1919."},
+     {t:"The founding of the United Nations in San Francisco in 1945", why:"That comes after 1919, so it can’t show earlier thinking."},
      {t:"The Cold War", why:"The Cold War began after 1945."},
      {t:"The invention of the internet", why:"That is much later and isn’t about thinking on world politics."}]},
    {id:"e2u5-q06", lesson:"e2u5-l1", level:3, q:"A student says: “The 1919 founding story is false, so it doesn’t matter.” Which response best reflects the scholarly critique?", options:[
-     {t:"The story is accurate about the first university department, but it hides older and non-Western thought and the early field’s concern with empire and race.", ok:true, why:"Right. Critics such as Carvalho, Leira and Hobson, and Vitalis, call it a myth because of what it leaves out, not because nothing happened in 1919."},
-     {t:"The student is right: nothing important happened in 1919.", why:"The department and chair were real, and the field did take shape as a university subject after 1919."},
+     {t:"Its facts are right, but it leaves out older, non-Western thought.", ok:true, why:"Right. The story is accurate about the first university department, but it hides older and non-Western thought and the early field’s concern with empire and race. Critics such as Carvalho, Leira and Hobson, and Vitalis, call it a myth because of what it leaves out, not because nothing happened in 1919."},
+     {t:"The student is right: nothing important happened in Wales in 1919.", why:"The department and chair were real, and the field did take shape as a university subject after 1919."},
      {t:"The critique says IR was actually founded in 1945.", why:"No. The critique is that origins are older and wider, not that a different date is correct."},
      {t:"The critique says only European thinkers matter.", why:"The opposite: the critique asks the field to include thinkers and histories from outside Europe and North America."}]},
    {id:"e2u5-q07", lesson:"e2u5-l1", level:2, q:"Which question is a normative (judging) question?", options:[
@@ -1070,7 +1132,7 @@ ICA.addUnit({
      {t:"Why did refugee numbers rise after the war began?", why:"That asks for an explanation, which evidence can test."},
      {t:"Which states have signed the 1951 Refugee Convention?", why:"That is a factual question."}]},
    {id:"e2u5-q08", lesson:"e2u5-l1", level:3, q:"Oluwaseun reads that bread prices in his city rose after a drought in a major grain-exporting country. Which IR idea does this best illustrate?", options:[
-     {t:"Events in one country can affect daily life far away through world markets, which is one reason IR studies the global economy.", ok:true, why:"Right. Interdependence through trade links distant events to local prices."},
+     {t:"Events in one country can affect daily life far away through markets.", ok:true, why:"Right. This is one reason IR studies the global economy. Interdependence through trade links distant events to local prices."},
      {t:"Prices are set by a world government.", why:"There is no world government; prices move through markets."},
      {t:"It has nothing to do with international relations, because it’s about bread.", why:"Trade between countries is a core IR topic."},
      {t:"It proves that every country produces all its own food.", why:"It shows the opposite: many countries depend on imports."}]},
@@ -1081,8 +1143,8 @@ ICA.addUnit({
      {t:"The UN, in 1945", why:"The word predates the UN by over 150 years."}]},
    /* ---- Lesson 2 ---- */
    {id:"e2u5-q10", lesson:"e2u5-l2", level:1, q:"Which list gives the four Montevideo criteria for statehood?", options:[
-     {t:"Permanent population, defined territory, government, capacity to enter into relations with other states", ok:true, why:"Correct: Article 1 of the 1933 Montevideo Convention."},
-     {t:"Population, territory, democracy, UN membership", why:"Democracy and UN membership aren’t criteria."},
+     {t:"Population, territory, government, capacity for foreign relations", ok:true, why:"Correct: a permanent population, a defined territory, government, and capacity to enter into relations with other states (Article 1 of the 1933 Montevideo Convention)."},
+     {t:"Population, territory, democracy, membership of the United Nations", why:"Democracy and UN membership aren’t criteria."},
      {t:"Army, currency, flag, national anthem", why:"These are common features of states, but they aren’t the legal criteria."},
      {t:"Recognition by most states, territory, wealth, a capital city", why:"Montevideo says existence is independent of recognition, and wealth isn’t a criterion."}]},
    {id:"e2u5-q11", lesson:"e2u5-l2", level:2, q:"After an election, a country gets a new president and cabinet. A treaty the country signed 30 years ago still binds it. Why?", options:[
@@ -1101,22 +1163,22 @@ ICA.addUnit({
      {t:"A world government over all states", why:"The UN isn’t a world government; it is built on sovereign states."},
      {t:"Democratic elections in every member state", why:"The Charter doesn’t require members to be democracies."}]},
    {id:"e2u5-q14", lesson:"e2u5-l2", level:3, q:"A textbook says: “The Peace of Westphalia in 1648 created the system of sovereign states we have today.” How would historians who speak of the “Westphalian myth” respond?", options:[
-     {t:"The treaties didn’t set out modern sovereignty: the Holy Roman Empire continued until 1806, outside powers gained guarantor rights, and the state system developed gradually and spread through empire and decolonisation.", ok:true, why:"Right. This is the core of Osiander’s critique and of later historians’ work."},
+     {t:"The treaties didn’t create it; the system grew gradually.", ok:true, why:"Right. The treaties didn’t set out modern sovereignty: the Holy Roman Empire continued until 1806, outside powers gained guarantor rights, and the state system spread through empire and decolonisation. This is the core of Osiander’s critique and of later historians’ work."},
      {t:"The treaties were never signed.", why:"They were signed in Münster and Osnabrück in 1648; the debate is about what they did."},
      {t:"Sovereign states were actually created by the UN in 1945.", why:"The critique doesn’t replace 1648 with 1945; it says the system grew over centuries."},
      {t:"The treaties abolished all empires.", why:"They didn’t; empires dominated much of the world for centuries afterwards."}]},
    {id:"e2u5-q15", lesson:"e2u5-l2", level:1, q:"What did Benedict Anderson mean by calling nations “imagined communities”?", options:[
-     {t:"Members will never meet most of the others, yet feel bound together through shared stories, symbols and media.", ok:true, why:"Right. “Imagined” doesn’t mean fake: the bond is real in its effects."},
-     {t:"Nations don’t exist and have no effects.", why:"Anderson’s point is the opposite: imagined bonds are powerful."},
+     {t:"Members never meet most others, yet feel bound together.", ok:true, why:"Right. They feel bound together through shared stories, symbols and media. “Imagined” doesn’t mean fake: the bond is real in its effects."},
+     {t:"Nations don’t really exist and have no effects on anyone.", why:"Anderson’s point is the opposite: imagined bonds are powerful."},
      {t:"Nations are invented by novelists.", why:"He studied how print and media helped people imagine the nation, not fiction writers inventing them."},
      {t:"Only small villages count as communities.", why:"His point is precisely about large groups that can’t all meet."}]},
    {id:"e2u5-q16", lesson:"e2u5-l2", level:2, q:"Which example best shows one nation living across several states?", options:[
-     {t:"Somali communities living in Somalia, Ethiopia, Kenya and Djibouti", ok:true, why:"Right. One people with a shared identity spread across several states."},
-     {t:"A country with one dominant language and few minorities", why:"That is closer to the nation-state ideal."},
+     {t:"Somali communities in Somalia, Ethiopia, Kenya and Djibouti", ok:true, why:"Right. One people with a shared identity spread across several states."},
+     {t:"A country with one dominant language and very few minorities", why:"That is closer to the nation-state ideal."},
      {t:"A state whose constitution calls it plurinational", why:"That is several nations in one state, the reverse pattern."},
      {t:"A city with residents from many countries", why:"That is diversity inside one place, not a nation spread across states."}]},
    {id:"e2u5-q17", lesson:"e2u5-l2", level:3, q:"Stephen Krasner called sovereignty “organized hypocrisy”. Which situation best illustrates his point?", options:[
-     {t:"A powerful state insists on non-interference for itself while funding opposition groups in a weaker neighbour.", ok:true, why:"Right. The rule is proclaimed by all and broken by some when it suits them."},
+     {t:"A strong state demands non-interference but meddles abroad.", ok:true, why:"Right. For example, it insists on non-interference for itself while funding opposition groups in a weaker neighbour. The rule is proclaimed by all and broken by some when it suits them."},
      {t:"Two equal states respect each other’s borders for centuries.", why:"That shows sovereignty working as intended, not hypocrisy."},
      {t:"A state holds an election.", why:"Elections are domestic politics and say nothing about breaking the sovereignty rule."},
      {t:"A small state joins the UN.", why:"Joining the UN is a voluntary act consistent with sovereignty."}]},
@@ -1132,8 +1194,8 @@ ICA.addUnit({
      {t:"Rule by anarchist parties", why:"The IR term has nothing to do with anarchist movements."},
      {t:"The collapse of a country’s government", why:"That is state failure, a different idea."}]},
    {id:"e2u5-q20", lesson:"e2u5-l3", level:2, q:"Pilots from dozens of countries use the same procedures to land at foreign airports, though no world police enforces them. What does this best show?", options:[
-     {t:"Order can exist inside anarchy, because states agree rules and follow them for mutual benefit.", ok:true, why:"Right. Aviation rules, set through the 1944 Chicago Convention and ICAO, are kept because everyone gains."},
-     {t:"The world has a government for aviation.", why:"ICAO is an IGO of states, not a government above them."},
+     {t:"Order can exist inside anarchy when states agree rules.", ok:true, why:"Right. States agree rules and follow them for mutual benefit. Aviation rules, set through the 1944 Chicago Convention and ICAO, are kept because everyone gains."},
+     {t:"The world has a single government in charge of aviation.", why:"ICAO is an IGO of states, not a government above them."},
      {t:"Anarchy means chaos in the skies.", why:"The example shows the opposite."},
      {t:"Only great powers fly planes.", why:"Airlines from many countries use the shared rules."}]},
    {id:"e2u5-q21", lesson:"e2u5-l3", level:1, q:"Which is an intergovernmental organisation (IGO)?", options:[
@@ -1147,18 +1209,18 @@ ICA.addUnit({
      {t:"A multinational corporation", why:"MSF isn’t a for-profit company."},
      {t:"A government agency", why:"It is independent of governments."}]},
    {id:"e2u5-q23", lesson:"e2u5-l3", level:1, q:"What does the 1961 Vienna Convention on Diplomatic Relations do?", options:[
-     {t:"Protects embassies and gives diplomats immunity, so states can keep talking even when relations are bad", ok:true, why:"Correct. It is one of the most widely respected treaties."},
+     {t:"Protects embassies and gives diplomats immunity", ok:true, why:"Correct. This lets states keep talking even when relations are bad. It is one of the most widely respected treaties."},
      {t:"Creates a world government", why:"It sets rules for diplomacy between sovereign states; it creates no government."},
      {t:"Bans all spying", why:"It deals with diplomatic missions and immunity, not a spying ban."},
-     {t:"Founded the United Nations", why:"The UN was founded by its Charter in 1945."}]},
+     {t:"Founded the United Nations and its Security Council", why:"The UN was founded by its Charter in 1945."}]},
    {id:"e2u5-q24", lesson:"e2u5-l3", level:3, q:"A commentator argues: “Because there is no world government, cooperation between states is impossible.” Which is the strongest counter-example?", options:[
-     {t:"Almost every country belongs to the Universal Postal Union, and post has crossed borders under its shared rules since 1874.", ok:true, why:"Right. Long-lasting, near-universal cooperation inside anarchy refutes the claim."},
-     {t:"Some wars have happened.", why:"Wars don’t refute the claim; they are consistent with it. A counter-example must show cooperation."},
+     {t:"The Universal Postal Union, in place since 1874", ok:true, why:"Right. Almost every country belongs to it, and post has crossed borders under its shared rules ever since. Long-lasting, near-universal cooperation inside anarchy refutes the claim."},
+     {t:"Some wars have happened between neighbouring states.", why:"Wars don’t refute the claim; they are consistent with it. A counter-example must show cooperation."},
      {t:"Some states are larger than others.", why:"Size differences don’t address whether cooperation happens."},
      {t:"The UN is a world government.", why:"That is false, so it can’t be a counter-example."}]},
    {id:"e2u5-q25", lesson:"e2u5-l3", level:2, q:"Which case best shows NGOs helping to create international law?", options:[
-     {t:"The International Campaign to Ban Landmines, which worked with governments to produce the 1997 Mine Ban Treaty", ok:true, why:"Right. NGOs pushed for the treaty; states then negotiated, signed and ratified it."},
-     {t:"The Congress of Vienna in 1815", why:"That was a meeting of great-power governments."},
+     {t:"The International Campaign to Ban Landmines", ok:true, why:"Right. It worked with governments to produce the 1997 Mine Ban Treaty. NGOs pushed for the treaty; states then negotiated, signed and ratified it."},
+     {t:"The Congress of Vienna in 1815, after Napoleon’s defeat", why:"That was a meeting of great-power governments."},
      {t:"The founding of NATO in 1949", why:"NATO was created by states as a military alliance."},
      {t:"The Berlin Conference of 1884–1885", why:"That was a conference of governments, almost all European, setting rules for claiming Africa; no NGOs were involved."}]},
    {id:"e2u5-q26", lesson:"e2u5-l3", level:3, q:"Several big-city mayors from different continents agree to cut emissions from buses and buildings, through a network such as C40. How should an IR student classify this?", options:[
@@ -1167,9 +1229,9 @@ ICA.addUnit({
      {t:"The work of an IGO of states", why:"The members are cities, not states."},
      {t:"It isn’t international at all, because cities are local.", why:"Local governments cooperating across borders is international activity."}]},
    {id:"e2u5-q27", lesson:"e2u5-l3", level:2, q:"What is a great power?", options:[
-     {t:"A state strong enough militarily, economically and politically to shape events well beyond its own region", ok:true, why:"Correct. Great powers have reach as well as strength; the very strongest are sometimes called superpowers."},
+     {t:"A state that can shape events far beyond its region", ok:true, why:"Correct. It is strong militarily, economically and politically. Great powers have reach as well as strength; the very strongest are sometimes called superpowers."},
      {t:"Any state that is a member of the UN", why:"Almost every state is a UN member; few are great powers."},
-     {t:"A state with a large population", why:"Population alone doesn’t make a great power; reach and capability do."},
+     {t:"A state with a very large population and a big territory", why:"Population alone doesn’t make a great power; reach and capability do."},
      {t:"A state with the oldest government", why:"Age of government has nothing to do with it."}]},
    /* ---- Lesson 4 ---- */
    {id:"e2u5-q28", lesson:"e2u5-l4", level:1, q:"What are the three most common levels of analysis in IR?", options:[
@@ -1188,17 +1250,17 @@ ICA.addUnit({
      {t:"System", why:"The explanation is about one leader’s belief, not the structure of the system."},
      {t:"None: beliefs don’t count as causes", why:"Leaders’ beliefs are a classic individual-level cause."}]},
    {id:"e2u5-q31", lesson:"e2u5-l4", level:3, q:"Kenji explains a trade war by pointing to an upcoming election in which the governing party wanted to look tough. Mei explains it by pointing to a rising economy catching up with the leading one. What is happening?", options:[
-     {t:"They are working at different levels (state and system), and both explanations could be partly true.", ok:true, why:"Right. Seeing the levels shows the two aren’t necessarily rivals."},
+     {t:"They are working at different levels, and both could be partly true.", ok:true, why:"Right. Kenji works at the state level, Mei at the system level. Seeing the levels shows the two aren’t necessarily rivals."},
      {t:"One of them must be wrong, because only one level can explain an event.", why:"Most big events have causes at several levels."},
      {t:"Both are using the individual level.", why:"Elections are state-level politics; shifting power between economies is system-level."},
      {t:"Neither is using a level of analysis.", why:"Both are, without naming them."}]},
    {id:"e2u5-q32", lesson:"e2u5-l4", level:1, q:"What did J. David Singer’s 1961 article argue?", options:[
-     {t:"The system level and the state level give different pictures, so analysts must choose a level and be careful when switching.", ok:true, why:"Correct. That is the level-of-analysis problem."},
+     {t:"The system and state levels give different pictures.", ok:true, why:"Correct. So analysts must choose a level and be careful when switching. That is the level-of-analysis problem."},
      {t:"Only individuals matter in IR.", why:"Singer compared the system and the national state."},
-     {t:"Levels of analysis should be abandoned.", why:"He wanted them used carefully."},
+     {t:"Levels of analysis should be abandoned as too confusing.", why:"He wanted them used carefully."},
      {t:"Wars are caused only by economics.", why:"His article is about method, not a single cause of war."}]},
    {id:"e2u5-q33", lesson:"e2u5-l4", level:2, q:"Which explanation of the First World War is pitched at the system level?", options:[
-     {t:"Europe was divided into two alliance blocs, so a local crisis drew in all the great powers.", ok:true, why:"Right. The pattern of alliances among states is a system-level feature."},
+     {t:"Two alliance blocs turned a local crisis into a general war.", ok:true, why:"Right. Europe was divided into two blocs, so a local crisis drew in all the great powers. The pattern of alliances among states is a system-level feature."},
      {t:"Austria-Hungary feared Serb nationalism would break up its empire.", why:"That concerns one state’s internal situation: the state level."},
      {t:"Germany’s Kaiser promised unconditional support to Austria-Hungary.", why:"One leader’s decision points to the individual level."},
      {t:"Military plans pushed governments to mobilise early.", why:"Military organisations inside states are a state-level (or group-level) cause."}]},
@@ -1208,7 +1270,7 @@ ICA.addUnit({
      {t:"Leave NATO", why:"Nothing of the kind was agreed."},
      {t:"Give the Soviet Union a seat on the Security Council", why:"The Soviet Union already had a permanent seat from 1945."}]},
    {id:"e2u5-q35", lesson:"e2u5-l4", level:3, q:"Priya’s essay says: “The First World War happened because of human nature: people are aggressive.” What is the main weakness?", options:[
-     {t:"Human nature is roughly constant, so it can’t on its own explain why war broke out in 1914 rather than at other times; state and system factors are needed too.", ok:true, why:"Right. Waltz made exactly this point about first-image explanations: a constant can’t explain variation."},
+     {t:"Human nature is constant, so it can’t explain 1914 alone.", ok:true, why:"Right. Human nature is roughly constant, so it can’t explain why war broke out in 1914 rather than at other times; state and system factors are needed too. Waltz made exactly this point about first-image explanations: a constant can’t explain variation."},
      {t:"Human nature is a system-level explanation.", why:"It is a first-image, individual-level explanation."},
      {t:"Historians agree completely on the causes, so no essay is needed.", why:"Historians still debate the causes of 1914."},
      {t:"Human nature has nothing to do with IR.", why:"It is one level IR considers; the problem is relying on it alone."}]},
@@ -1224,7 +1286,7 @@ ICA.addUnit({
      {t:"25 then; 150 now", why:"Both figures are wrong."},
      {t:"51 then; 99 now", why:"The UN reached 99 members in 1960; it is 193 today."}]},
    {id:"e2u5-q38", lesson:"e2u5-l5", level:1, q:"What was the Concert of Europe?", options:[
-     {t:"A practice, after the Congress of Vienna (1814–1815), of Europe’s great powers meeting to manage crises and keep a balance", ok:true, why:"Correct. Austria, Prussia, Russia and Britain, later joined by France, met in conferences for several decades."},
+     {t:"Great powers meeting after 1815 to manage crises", ok:true, why:"Correct. After the Congress of Vienna (1814–1815), Europe’s great powers met to manage crises and keep a balance. Austria, Prussia, Russia and Britain, later joined by France, met in conferences for several decades."},
      {t:"A music festival celebrating the end of the Napoleonic Wars", why:"It was a diplomatic practice, not a musical event."},
      {t:"The European Union’s first name", why:"The EU and its predecessors came after 1950."},
      {t:"A treaty dividing Africa", why:"No. The closest match is the Berlin Conference of 1884–1885, which set rules for outside powers claiming African territory."}]},
@@ -1234,12 +1296,12 @@ ICA.addUnit({
      {t:"Many states merged into larger ones.", why:"Mergers would reduce the number of members."},
      {t:"The UN started admitting cities.", why:"Only states can be UN members."}]},
    {id:"e2u5-q40", lesson:"e2u5-l5", level:1, q:"What happened at the Bandung Conference in April 1955?", options:[
-     {t:"Leaders of 29 Asian and African governments called for cooperation, self-determination, an end to racial discrimination and peaceful coexistence.", ok:true, why:"Correct. It laid foundations for the Non-Aligned Movement."},
+     {t:"Asian and African leaders called for cooperation.", ok:true, why:"Correct. Leaders of 29 Asian and African governments called for cooperation, self-determination, an end to racial discrimination and peaceful coexistence. It laid foundations for the Non-Aligned Movement."},
      {t:"The superpowers divided Asia between them.", why:"Bandung was a meeting of Asian and African states, many aiming to avoid superpower blocs."},
      {t:"The UN Charter was signed.", why:"That was in San Francisco on 26 June 1945."},
      {t:"European powers agreed rules for colonising Africa.", why:"That was the Berlin Conference of 1884–1885."}]},
    {id:"e2u5-q41", lesson:"e2u5-l5", level:2, q:"Which description of the Cold War is most accurate?", options:[
-     {t:"A US–Soviet rivalry in which the superpowers never fought each other directly, but many wars elsewhere were linked to it", ok:true, why:"Right. It was “cold” between the superpowers, hot in many other places."},
+     {t:"A US–Soviet rivalry with no direct war between the two", ok:true, why:"Right. Many wars elsewhere were linked to it. It was “cold” between the superpowers, hot in many other places."},
      {t:"A period with no wars anywhere in the world", why:"Korea, Vietnam, Angola, Afghanistan and others were fought during it."},
      {t:"A direct war between the United States and the Soviet Union", why:"They never fought each other directly."},
      {t:"A dispute about weather and climate", why:"“Cold” refers to the absence of direct war between the superpowers."}]},
@@ -1249,13 +1311,13 @@ ICA.addUnit({
      {t:"Unipolarity", why:"Unipolarity has one power far ahead of all others."},
      {t:"Non-alignment", why:"Non-alignment was a policy of staying out of blocs, not a distribution of power."}]},
    {id:"e2u5-q43", lesson:"e2u5-l5", level:3, q:"Tomás says: “The modern state system spread because the rest of the world freely copied Europe.” What is missing from this account?", options:[
-     {t:"Conquest and colonial rule spread it first, and colonised peoples then used the idea of sovereignty to win independence.", ok:true, why:"Right. The spread was shaped by coercion and by resistance, not by free copying alone."},
+     {t:"Conquest and colonial rule spread it, not free copying.", ok:true, why:"Right. Colonised peoples then used the idea of sovereignty to win independence. The spread was shaped by coercion and by resistance, not by free copying alone."},
      {t:"Nothing: that is exactly what happened.", why:"It leaves out colonialism, which drew most of the world into the European system by force."},
      {t:"The state system was invented in Asia and copied by Europe.", why:"That reverses the story without evidence; Asia had its own systems, such as the tributary system, but the sovereign-state model spread from Europe."},
      {t:"Every country was already a sovereign state in 1648.", why:"Most of the world was ruled by empires long after 1648."}]},
    {id:"e2u5-q44", lesson:"e2u5-l5", level:2, q:"What does “Global South” refer to?", options:[
-     {t:"A political and economic grouping of countries, many with colonial histories and outside the richest economies, not a strict geographic line", ok:true, why:"Correct. Some southern-hemisphere countries aren’t usually included, and many northern-hemisphere ones are."},
-     {t:"Every country south of the equator", why:"India and most of West Africa lie north of the equator and are usually counted; Australia lies south and usually isn’t."},
+     {t:"A political grouping, not a strict geographic line", ok:true, why:"Correct. It is a political and economic grouping of countries, many with colonial histories and outside the richest economies. Some southern-hemisphere countries aren’t usually included, and many northern-hemisphere ones are."},
+     {t:"Every country lying south of the equator on the map", why:"India and most of West Africa lie north of the equator and are usually counted; Australia lies south and usually isn’t."},
      {t:"The former Soviet bloc", why:"That bloc was sometimes called the Second World; it is a different idea."},
      {t:"Only the countries of South America", why:"The term covers much of Africa, Asia, Latin America, the Caribbean and the Pacific."}]},
    {id:"e2u5-q45", lesson:"e2u5-l5", level:3, q:"Two articles disagree: one calls today’s world unipolar, the other multipolar. What is the most useful first question for an IR student?", options:[

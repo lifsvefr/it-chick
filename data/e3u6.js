@@ -1,14 +1,15 @@
 /* Japanese Foundations · Unit 6 (e3u6) · N4 grammar I */
 ICA.addUnit({
   id:"e3u6", track:"e3", n:6, title:"N4 grammar I", icon:"🧭",
-  blurb:"Saying what you can do (the potential form and ～ことができる), what you will do (the volitional form, ～ようと[思]{おも}う and つもり), what happens if (と, ば, たら and なら, with a guide for choosing), who gives what to whom (あげる, くれる, もらう and their ～て forms), and what you must or don’t have to do, plus ～てしまう and ～ておく.",
+  blurb:"Saying what you can do (the potential form and ～ことができる), what you will do (the volitional form, ～ようと[思]{おも}う and つもり), what happens if (と, ば, たら and なら, with a guide for choosing), who gives what to whom (あげる, くれる, もらう and their ～て forms), and what you must or don’t have to do, plus ～てしまう and ～ておく; then guessing with ～かもしれない and ～でしょう, trying things out with ～てみる, and giving advice with ～たほうがいい.",
   goals:[
     "Build the potential form of any verb, use ～ことができる, and recognise ら[抜]{ぬ}き forms such as [見]{み}れる in speech",
     "Build the volitional form, and talk about plans with ～ようと[思]{おも}う and つもり",
     "Build and use the conditionals と, ば, たら and なら, and choose between them with a step-by-step guide",
     "Describe giving, receiving and favours with あげる, くれる and もらう, from the right point of view",
     "Say what you must and don’t have to do, from formal ～なければなりません to casual ～なきゃ",
-    "Use ～てしまう for finishing and for regret, and ～ておく for doing things in advance"
+    "Use ～てしまう for finishing and for regret, and ～ておく for doing things in advance",
+    "Guess with ～かもしれない and ～でしょう, try things out with ～てみる, and give advice with ～たほうがいい and ～ないほうがいい"
   ],
   lessons:[
   /* ===================== LESSON 1 ===================== */
@@ -136,7 +137,21 @@ ICA.addUnit({
       {t:"[変]{へん}な[音]{おと}が聞けます。", why:"聞ける means you are able to listen because the situation allows it, as with an app or a concert ticket. For a sound that just reaches you, use 聞こえる."},
       {t:"[変]{へん}な[音]{おと}が聞かれます。", why:"聞かれる is the passive of 聞く (“is asked”, “is heard by someone”), not “can hear”."},
       {t:"[変]{へん}な[音]{おと}が聞きられます。", why:"There is no such form. 聞く is godan, so its potential is 聞ける, and for sounds that reach you, 聞こえる."}
-    ]}
+    ]},
+    {id:"e3u6-l1-x8", type:"type", q:"Rodrigo is honest with his Japanese teacher: “I still can’t write kanji very well.” Type the potential in hiragana, polite negative: 「[漢字]{かんじ}はまだあまり___。」 (書く, write)", answer:"かけません",
+      wrongs:[{v:"かかれません", why:"書かれる is the passive (“is written”). For a godan verb, the potential moves to the え row and adds る: 書ける, so 書けません."},
+              {v:"かきません", why:"That just means “I don’t write”. “Can’t” needs the potential: 書けません."},
+              {v:"かけれません", why:"There is no extra れ. 書く is godan: く → け + る = 書ける, polite negative 書けません."}],
+      why:"書く → え row け + る → 書ける, which works like an ichidan verb: 書けます, 書けません."},
+    {id:"e3u6-l1-x9", type:"type", q:"Fumiko asks Rodrigo whether he can come to dinner on Saturday. Type the potential in hiragana, as in careful speech: 「ロドリゴさん、[土曜日]{どようび}の[晩]{ばん}ご[飯]{はん}に___か。」 ([来]{く}る, come)", answer:["こられます","こられません"],
+      wrongs:[{v:"これます", why:"これる is the ら-dropped form you hear in casual speech. In careful speech and writing it is [来]{こ}られる."},
+              {v:"きられます", why:"In the potential, [来]{く}る is read こ: [来]{こ}られます."},
+              {v:"くられます", why:"[来]{く}る changes its vowel: こ + られる = こられる."}],
+      why:"[来]{く}る is irregular: potential [来]{こ}られる, polite [来]{こ}られます. Fumiko speaks carefully, so she keeps the ら."},
+    {id:"e3u6-l1-x10", type:"type", q:"A library notice says: “You can borrow up to five books.” Type the two missing words in hiragana: 「[本]{ほん}は[五冊]{ごさつ}まで[借]{か}りる___できます。」", answer:"ことが",
+      wrongs:[{v:"ことを", why:"できる takes が, not を: ～ことができる."},
+              {v:"のが", why:"In this pattern the noun is always こと: [借]{か}りることができます."}],
+      why:"Dictionary form + ことができる: [借]{か}りることができます, “can borrow”. It is a little more formal than the potential [借]{か}りられます, so it suits rules and notices."}
    ],
    apply:{
     intro:"Keep these notes for yourself. A few minutes a day works better than one long session.",
@@ -297,7 +312,20 @@ ICA.addUnit({
       {t:"電車は三時に[着]{つ}くつもりです。", why:"つもり is a person’s intention. A train can’t intend anything, so this sounds like a joke."},
       {t:"電車は三時に[着]{つ}こうと[思]{おも}っています。", why:"～ようと[思]{おも}う is also a person’s intention. For a timetable, use [予定]{よてい}."},
       {t:"電車は三時に[着]{つ}きたいです。", why:"～たい is a wish, and only people have wishes. Use [予定]{よてい}."}
-    ]}
+    ]},
+    {id:"e3u6-l2-x9", type:"type", q:"Kaito and his friends have been walking for an hour. He suggests: “Shall we take a short break?” Type the casual volitional in hiragana: 「ちょっと___か。」 (休む, rest)", answer:"やすもう",
+      wrongs:[{v:"やすみよう", why:"よう is for ichidan verbs. 休む is godan: move to the お row and add う: 休もう."},
+              {v:"やすもお", why:"The long お sound is written with う: 休もう."},
+              {v:"やすみましょう", why:"That is the polite “let’s”. Kaito is with friends, so the plain volitional 休もう fits."}],
+      why:"休む → お row も + う → 休もう. With か it becomes a casual suggestion: ちょっと休もうか。"},
+    {id:"e3u6-l2-x10", type:"type", q:"Type the missing verb in hiragana: “I’m thinking of going to bed early tonight.” 「[今夜]{こんや}は[早]{はや}く___と[思]{おも}っています。」 ([寝]{ね}る, go to bed)", answer:"ねよう",
+      wrongs:[{v:"ねろう", why:"[寝]{ね}る is ichidan: drop る and add よう: [寝]{ね}よう. ろう would treat it as godan."},
+              {v:"ねましょう", why:"The polite ましょう isn’t used before と[思]{おも}う. Use the plain volitional: [寝]{ね}よう."}],
+      why:"Ichidan: [寝]{ね}る → [寝]{ね} + よう → [寝]{ね}ようと[思]{おも}っています, “I’m thinking of going to bed”."},
+    {id:"e3u6-l2-x11", type:"type", q:"Rodrigo has decided to take a Japanese test next year. Type the verb in hiragana: 「来年、[日本語]{にほんご}の[試験]{しけん}を___つもりです。」 ([受]{う}ける, take an exam)", answer:"うける",
+      wrongs:[{v:"うけよう", why:"つもり is a noun, so the dictionary form comes before it: [受]{う}けるつもりです. The volitional goes with と[思]{おも}う."},
+              {v:"うけます", why:"The ます-form doesn’t go before a noun. Use the dictionary form: [受]{う}けるつもり."}],
+      why:"Dictionary form + つもりです states a firm personal plan: [受]{う}けるつもりです."}
    ],
    apply:{
     intro:"Plans are easy to practise, because you make them every day. Keep these notes for yourself.",
@@ -459,7 +487,20 @@ ICA.addUnit({
       {t:"[旅行]{りょこう}に行ったら、ガイドブックを[買]{か}います。", why:"With たら, the trip comes first: she would buy the guidebook once she is travelling."},
       {t:"[旅行]{りょこう}に行くと、ガイドブックを[買]{か}います。", why:"With と this can only be a habit (“whenever I travel, I buy a guidebook”), with the buying after setting off. と can’t state a one-time plan, and it doesn’t put the buying first."},
       {t:"[旅行]{りょこう}に行けば、ガイドブックを[買]{か}います。", why:"Going on a trip is an action, and Cheska does both things, so a plan after ば sounds unnatural here. ば doesn’t put the buying first either."}
-    ]}
+    ]},
+    {id:"e3u6-l3-x9", type:"type", q:"Rodrigo would like to go to the gym more, but it is far away. Type the ば-form of [近]{ちか}い (near) in hiragana: 「ジムがもっと___、毎日行くんですが。」 (“If the gym were closer, I’d go every day.”)", answer:"ちかければ",
+      wrongs:[{v:"ちかいば", why:"ば doesn’t attach to the dictionary form. For い-adjectives, い → ければ: [近]{ちか}ければ."},
+              {v:"ちかかったら", why:"That is the たら form. It is also natural here, but this item practises ば: い → ければ."}],
+      why:"い-adjective: drop い, add ければ: [近]{ちか}い → [近]{ちか}ければ. ば puts the spotlight on the condition that is missing."},
+    {id:"e3u6-l3-x10", type:"type", q:"A notice on a hot-water dispenser. Type the particle in hiragana: 「このボタンを[押]{お}す___、お[湯]{ゆ}が出ます。」 (“When you press this button, hot water comes out.”)", answer:"と",
+      wrongs:[{v:"なら", why:"なら takes something as given and adds advice or an opinion. For a result that follows automatically every time, use と."},
+              {v:"ば", why:"ば doesn’t follow the dictionary form; the verb changes: [押]{お}せば. After [押]{お}す, the particle is と."}],
+      why:"Dictionary form + と: whenever A happens, B follows automatically. Machines and instructions are typical uses."},
+    {id:"e3u6-l3-x11", type:"type", q:"Rodrigo wants to send his mother some Japanese tea and asks you where to buy it. Type the missing word in hiragana: 「お[茶]{ちゃ}___、つばめ[通]{どお}りのお[店]{みせ}がいいですよ。」 (“If it’s tea you’re after, the shop on Tsubame Street is good.”)", answer:["なら", "だったら"],
+      wrongs:[{v:"と", why:"お[茶]{ちゃ}と would mean “tea and…” or “with tea”. To take up the topic Rodrigo raised, use なら."},
+              {v:"たら", why:"A noun can’t take たら directly (that would be お[茶]{ちゃ}だったら). The usual way to take up a topic someone has raised is noun + なら."},
+              {v:"だなら", why:"Nouns take なら directly, with no だ: お[茶]{ちゃ}なら."}],
+      why:"Noun + なら takes up what the other person mentioned (“if it’s tea you’re after”) and gives a recommendation, like ラーメンなら in the lesson. お[茶]{ちゃ}だったら also works."}
    ],
    apply:{
     intro:"Conditionals become natural through lots of small, real examples. Keep these notes for yourself.",
@@ -615,7 +656,19 @@ ICA.addUnit({
       {t:"先生、[持]{も}ってあげましょうか。", why:"～てあげる stresses the favour you are doing, which can sound condescending to someone above you."},
       {t:"先生、[持]{も}ってくれませんか。", why:"This asks the teacher to carry something for you: the opposite of an offer."},
       {t:"先生、[持]{も}ってもらいましょうか。", why:"This means “Shall I have someone carry it?” It doesn’t offer your own help."}
-    ]}
+    ]},
+    {id:"e3u6-l4-x9", type:"type", q:"Rodrigo tells a colleague: “Fumiko made rice balls for me.” Type the missing verb in hiragana, polite past: 「ふみこさんがおにぎりを[作]{つく}って___。」", answer:"くれました",
+      wrongs:[{v:"あげました", why:"あげる is for giving away from you, or between other people. The favour comes to Rodrigo, so くれました."},
+              {v:"もらいました", why:"With もらう the receiver is the subject and the giver takes に: ふみこさんに[作]{つく}ってもらいました. With ふみこさんが, use くれました."}],
+      why:"～てくれる: someone does a favour for you or your side, and the giver takes が: ふみこさんが[作]{つく}ってくれました."},
+    {id:"e3u6-l4-x10", type:"type", q:"You tell a friend that Toby gave Sōta, the Satōs’ grandson, a manga. Type the missing verb in hiragana, polite past: 「トビーさんはそうたくんにマンガを___。」", answer:"あげました",
+      wrongs:[{v:"くれました", why:"くれる is only for giving toward the speaker or the speaker’s side. Here one person gives to another, so あげました."},
+              {v:"もらいました", why:"With もらう the receiver is the subject: そうたくんはトビーさんにマンガをもらいました."}],
+      why:"Giving between two other people uses あげる, with the receiver marked に: トビーさんはそうたくんにマンガをあげました."},
+    {id:"e3u6-l4-x11", type:"type", q:"Cheska asked Aoi to check her essay, and Aoi did. Cheska tells the teacher. Type the missing verb in hiragana, polite past: 「あおいさんに[作文]{さくぶん}を見て___。」 (“I had Aoi look over my essay.”)", answer:"もらいました",
+      wrongs:[{v:"くれました", why:"With くれる the giver is the subject and takes が: あおいさんが見てくれました. With あおいさんに, the receiver is the subject, so もらいました."},
+              {v:"あげました", why:"あげる would mean Cheska did the favour for Aoi. Here Aoi did it for Cheska."}],
+      why:"～てもらう: the receiver (Cheska, left unsaid) is the subject, and the person who does the favour takes に: あおいさんに見てもらいました."}
    ],
    apply:{
     intro:"Gifts and favours happen every day, so there is plenty to practise with. Keep these notes for yourself.",
@@ -776,7 +829,22 @@ ICA.addUnit({
       {t:"Drop the final い: [来]{こ}な.", why:"ない behaves like an い-adjective, so the い comes off before ければ."},
       {t:"Add ければ: [来]{こ}なければ.", why:"This is the ば-form of ない: “if (you) don’t come”."},
       {t:"Add なりません: [来]{こ}なければなりません.", why:"“If you don’t come, it won’t do”: you must come."}
-    ]}
+    ]},
+    {id:"e3u6-l5-x9", type:"type", q:"Type the polite “must” form in hiragana, using ～なければ: “I have to write the report by Friday.” 「[金曜日]{きんようび}までにレポートを___。」 (書く, write)", answer:["かかなければなりません", "かかなければいけません"],
+      wrongs:[{v:"かきなければなりません", why:"なければ attaches to the ない-form, not the ます stem: 書か(ない) → 書かなければ."},
+              {v:"かかなくてもいいです", why:"That means “I don’t have to write it”, the opposite."},
+              {v:"かかなければなりませんです", why:"ません is already polite, so です doesn’t follow it."}],
+      why:"ない-form 書かない → ない becomes なければ → + なりません (or いけません): 書かなければなりません, literally “if I don’t write it, it won’t do”."},
+    {id:"e3u6-l5-x10", type:"type", q:"Tomorrow is a holiday. Mariya tells Toby: “You don’t have to get up early.” Type the missing part in hiragana: 「[明日]{あした}は休みだから、[早]{はや}く___いいよ。」 ([起]{お}きる, get up)", answer:["おきなくても", "おきなくて"],
+      wrongs:[{v:"おきても", why:"[起]{お}きてもいい means “you may get up”: permission. “Don’t have to” starts from the ない-form: [起]{お}きなくてもいい."},
+              {v:"おきらなくても", why:"[起]{お}きる is ichidan: drop る and add ない: [起]{お}きない → [起]{お}きなくても."},
+              {v:"おきなければ", why:"なければ starts “must”. “Don’t have to” is ない → なくて + もいい."}],
+      why:"ない-form [起]{お}きない → なくて + もいい: [起]{お}きなくてもいいよ. In casual speech も is often dropped: [起]{お}きなくていいよ."},
+    {id:"e3u6-l5-x11", type:"type", q:"Cheska writes to her teacher: “I’m sorry, I’ve lost last week’s handout.” Type the verb in hiragana, polite past, with ～てしまう: 「すみません、[先週]{せんしゅう}のプリントを___。」 (なくす, lose)", answer:"なくしてしまいました",
+      wrongs:[{v:"なくしちゃいました", why:"ちゃう is the casual contraction. In an email to a teacher, write the full form: なくしてしまいました."},
+              {v:"なくしてしまいます", why:"The non-past would mean “I’ll end up losing it”. It has already happened, so the past: しまいました."},
+              {v:"なくしてしまった", why:"That is the plain past. To a teacher, end with ます: なくしてしまいました."}],
+      why:"て-form + しまいました: it has happened, and Cheska is sorry about it. なくす → なくして → なくしてしまいました."}
    ],
    apply:{
     intro:"Rules, chores and plans give you daily material for these patterns. Keep these notes for yourself.",
@@ -803,9 +871,246 @@ ICA.addUnit({
     {book:"taekim", where:"Special Expressions, “Unintended Actions” (sections “Using 「しまう」 with other verbs”, “Using the casual version of 「～てしまう」” and “Another meaning of 「しまう」”)", note:"～てしまう for unintended actions, the casual ～ちゃう/～じゃう, and しまう meaning “finish completely”."},
     {book:"taekim", where:"Essential Grammar, “Other uses of the te-form”, section “Using the 「～ておく」 form as preparation for the future”", note:"～ておく and casual ～とく; the same page also covers ～てある."}
    ]
+  },
+  /* ===================== LESSON 6 ===================== */
+  {id:"e3u6-l6", title:"Maybe, probably, try it, you’d better: ～かもしれない, ～でしょう, ～てみる and ～たほうがいい", minutes:60,
+   hook:{q:"Megumi is a nurse. Her son Sōta has a cold, and she tells him: 「[今日]{きょう}は[早]{はや}く[寝]{ね}たほうがいいよ。」 What is she saying?", options:["You’d better go to bed early today.","You went to bed early, which was good.","Did you go to bed early today?","You can’t go to bed early today."], answer:0, reveal:"**You’d better go to bed early today.** ～たほうがいい gives advice. You know ほう from comparisons in Unit 3 (～より～のほうが): here it means “the option of going to bed early is the good one”. Notice that it uses the た-form [寝]{ね}た, although the advice is about tonight. This lesson covers advice, trying things out with ～てみる, and two ways to guess: ～かもしれない (maybe) and ～でしょう (probably)."},
+   goals:[
+     "Say “maybe” with ～かもしれない (casual かも) after any plain form",
+     "Say “probably” with ～でしょう and ～だろう, and use でしょう？ to check and でしょうか to ask politely",
+     "Place a guess on a scale of certainty, from きっと～でしょう to もしかしたら～かもしれない",
+     "Use ～てみる to try something and see, and tell it apart from ～ようとする (try hard)",
+     "Give advice with ～たほうがいい and ～ないほうがいい, and soften it for people above you"
+   ],
+   learn:[
+    {h:"Maybe: ～かもしれない", body:[
+      {lead:"When something is possible but you are not sure, put ～かもしれない after it: “it may be…, maybe…”."},
+      "[[kamoshirenai|～かもしれない]] follows the plain form of verbs and い-adjectives. Nouns and な-adjectives take it directly, with no だ. It ends in ない, and its polite form is ～かもしれません. In casual speech it is often cut short to かも.",
+      {table:[["Word type","Plain form","With かもしれません"],["verb","[降]{ふ}る / [降]{ふ}った / [降]{ふ}らない","[降]{ふ}るかもしれません\n[降]{ふ}ったかもしれません\n[降]{ふ}らないかもしれません"],["い-adjective","[高]{たか}い","高いかもしれません"],["な-adjective","[暇]{ひま}だ","[暇]{ひま}かもしれません"],["noun","[雨]{あめ}だ","雨かもしれません"]]},
+      {ex:"[明日]{あした}は雨が[降]{ふ}るかもしれません。\nIt may rain tomorrow.\n\nイエンさんは、もう[帰]{かえ}ったかもしれません。\nYến may have gone home already.\n\nこの[問題]{もんだい}は、[少]{すこ}し[難]{むずか}しいかもしれません。\nThis question may be a little difficult.\n\nロドリゴは今日、[来]{こ}ないかも。\nRodrigo might not come today.", label:"～かもしれない"},
+      "The third example shows a second use. かもしれません softens a statement that might otherwise sound too strong. A teacher who says この[問題]{もんだい}は[少]{すこ}し[難]{むずか}しいかもしれません is being gentle, not unsure.",
+      "You will often hear もしかしたら or もしかすると (“possibly, by any chance”) at the start of such a sentence: もしかしたら、[遅]{おく}れるかもしれません (I might possibly be late)."
+    ]},
+    {h:"Probably: ～でしょう and ～だろう", body:[
+      {lead:"～でしょう says that you think something is probably true. It is more confident than かもしれない."},
+      "Build it like かもしれない: a plain form + でしょう, with nouns and な-adjectives joining directly (雨でしょう, ✗ 雨だでしょう). [[deshou-darou|～だろう]] is the plain version.",
+      {table:[["Word","～でしょう (polite)","～だろう (plain)"],["[降]{ふ}る","[降]{ふ}るでしょう","[降]{ふ}るだろう"],["[降]{ふ}らない","[降]{ふ}らないでしょう","[降]{ふ}らないだろう"],["[寒]{さむ}い","[寒]{さむ}いでしょう","[寒]{さむ}いだろう"],["[静]{しず}か / 雨","[静]{しず}かでしょう / 雨でしょう","[静]{しず}かだろう / 雨だろう"]]},
+      {ex:"[明日]{あした}は[晴]{は}れるでしょう。\nIt will probably be sunny tomorrow. (a weather forecast)\n\nトビーさんは[日本]{にほん}に[長]{なが}く[住]{す}んでいるので、[漢字]{かんじ}もたくさん[読]{よ}めるでしょう。\nToby has lived in Japan a long time, so he can probably read lots of kanji too.\n\nたぶん、[試験]{しけん}はそんなに[難]{むずか}しくないだろうと[思]{おも}います。\nI think the exam probably won’t be that difficult.", label:"～でしょう and ～だろう"},
+      {list:[
+        "**でしょう** is common in weather forecasts, the news and careful explanations. For their own guesses in everyday conversation, people often prefer ～と[思]{おも}います: [晴]{は}れると[思]{おも}います.",
+        "**だろう** is neutral in writing such as essays and articles. In speech, a bare だろう said to someone sounds rather blunt and is heard more from male speakers. ～だろうと[思]{おも}う is neutral for everyone, and so is だろう when you wonder aloud: どうしたんだろう (I wonder what happened).",
+        "**でしょう？** with a rising voice checks something you expect the listener to agree with, like “…, right?”: これ、おいしいでしょう？ In casual speech it shortens to でしょ？ This isn’t a guess but a check, and you will hear it constantly.",
+        "**でしょうか** is a softer, more polite ですか: すみません、[駅]{えき}はどこでしょうか (Excuse me, could you tell me where the station is?). It is common with strangers and in shops."
+      ]},
+      {warn:"でしょう is not the polite partner of ましょう. ～ましょう means “let’s”; ～でしょう is a guess. [行]{い}きましょう (Let’s go) and [行]{い}くでしょう (He’ll probably go) mean very different things."}
+    ]},
+    {h:"How sure are you?", body:[
+      "Japanese has a whole scale between “yes” and “no”. Words at the start of the sentence often go with each ending: きっと (surely) with でしょう, たぶん (probably) with でしょう or と[思]{おも}う, and もしかしたら (possibly) with かもしれない.",
+      {fig:'<svg viewBox="0 0 340 270"><text x="170" y="20" text-anchor="middle">How sure is the speaker?</text><text x="16" y="48">ふります。</text><text class="s" x="324" y="48" text-anchor="end">certain</text><rect class="d-sage" x="16" y="56" width="308" height="12" rx="4" stroke-width="1.5"/><text x="16" y="92">きっと ふるでしょう。</text><text class="s" x="324" y="92" text-anchor="end">very sure</text><rect class="d-sage" x="16" y="100" width="260" height="12" rx="4" stroke-width="1.5"/><text x="16" y="136">たぶん ふるでしょう。</text><text class="s" x="324" y="136" text-anchor="end">fairly sure</text><rect class="d-sage" x="16" y="144" width="200" height="12" rx="4" stroke-width="1.5"/><text x="16" y="180">ふるかもしれません。</text><text class="s" x="324" y="180" text-anchor="end">not sure</text><rect class="d-gold" x="16" y="188" width="130" height="12" rx="4" stroke-width="1.5"/><text x="16" y="224">たぶん ふらないでしょう。</text><text class="s" x="324" y="224" text-anchor="end">probably not</text><rect class="d-rose" x="16" y="232" width="50" height="12" rx="4" stroke-width="1.5"/><text class="s" x="170" y="262" text-anchor="middle">The bars show rough positions, not exact chances.</text></svg>', alt:"A scale of how sure a speaker is that it will rain, shown as bars of decreasing length. ふります: certain. きっと ふるでしょう: very sure. たぶん ふるでしょう: fairly sure. ふるかもしれません: not sure. たぶん ふらないでしょう: probably not. A note says the bars show rough positions, not exact chances.", cap:"From a plain statement down to “probably not”. ～と[思]{おも}います sits near たぶん～でしょう in everyday speech."},
+      {table:[["Sentence","How sure","English"],["[雨]{あめ}が[降]{ふ}ります。","certain (as far as you know)","It will rain."],["きっと[雨]{あめ}が[降]{ふ}るでしょう。","very sure","It will surely rain."],["たぶん[雨]{あめ}が[降]{ふ}るでしょう。\nたぶん[雨]{あめ}が[降]{ふ}ると[思]{おも}います。","fairly sure","It will probably rain."],["[雨]{あめ}が[降]{ふ}るかもしれません。","not sure","It may rain."],["たぶん[雨]{あめ}は[降]{ふ}らないでしょう。","fairly sure it won’t","It probably won’t rain."]]},
+      "These are rough positions, not percentages, and speakers differ. In Unit 7 you will add patterns that show **how** you know something: what you can see, what you heard, or what you worked out."
+    ]},
+    {h:"Try it and see: ～てみる", body:[
+      {lead:"～てみる means “do something to see what it’s like or what happens”: try it out."},
+      "Take the て-form and add [[te-miru|みる]], which conjugates as an ichidan verb: ～てみます, ～てみた, ～てみたい, ～てみてください. It comes from [見]{み}る (see), but as a helper verb it is usually written in hiragana. That is a spelling convention (official and newspaper style write helper verbs in kana), not a grammar rule.",
+      {ex:"[納豆]{なっとう}を[初]{はじ}めて[食]{た}べてみました。おいしかったです。\nI tried nattō for the first time. It was good.\n\nこの[服]{ふく}、[着]{き}てみてもいいですか。\nMay I try this on? (in a shop)\n\nいつか、[富士山]{ふじさん}に[登]{のぼ}ってみたいです。\nI’d like to try climbing Mount Fuji someday.\n\nかいと：[新]{あたら}しいアプリ、ちょっと[使]{つか}ってみてくれない？\nKaito: Could you try out my new app?", label:"～てみる"},
+      "Because the result is still unknown, ～てみる also makes a gentle suggestion: [先生]{せんせい}に[聞]{き}いてみたらどうですか (Why not try asking the teacher?), [一度]{いちど}やってみてください (Please give it a try).",
+      "English “try” has two meanings, and Japanese splits them. **Try out** (do it and see) is ～てみる. **Try hard, attempt** (make an effort, often without success) uses the volitional form from Lesson 2 + とする:",
+      {ex:"[六時]{ろくじ}に[起]{お}きようとしましたが、[起]{お}きられませんでした。\nI tried to get up at six, but I couldn’t.\n\n六時に[起]{お}きてみました。[気持]{きも}ちがよかったです。\nI tried getting up at six (to see what it was like). It felt good.", label:"Try hard, or try out?"},
+      "Two things to watch. In spelling, write the helper みる in hiragana: 見てみる is fine, because the first verb really is 見る, but 見て見る looks odd to most readers. In meaning, don’t use ～てみる for an action you never managed to do: ～てみる says you did it. The result can still disappoint: [電話]{でんわ}してみましたが、[誰]{だれ}も[出]{で}ませんでした (I tried calling, but nobody answered)."
+    ]},
+    {h:"You’d better: ～たほうがいい", body:[
+      {lead:"To give advice, Japanese compares two options and says which one is better."},
+      "[[hou-ga-ii|～たほうがいい]] uses the た-form, although the advice is about now or later. ほう is the “side” or “option” you know from ～より～のほうが in Unit 3, so [行]{い}ったほうがいい is literally “the option of having gone is good”. The negative uses the plain non-past ない-form: ～ないほうがいい.",
+      {table:[["Advice","Form","Example"],["do it","た-form + ほうがいい","[休]{やす}んだほうがいいです"],["don’t do it","ない-form + ほうがいい","[無理]{むり}しないほうがいいです"],["softer","+ と[思]{おも}います / かもしれません","[休]{やす}んだほうがいいと[思]{おも}います"]]},
+      {ex:"[熱]{ねつ}が[高]{たか}いときは、[水]{みず}をたくさん[飲]{の}んだほうがいいですよ。\nWhen you have a high fever, you should drink plenty of water. (Megumi, at the hospital)\n\n[夜]{よる}は[一人]{ひとり}で[歩]{ある}かないほうがいいです。\nYou’d better not walk alone at night.\n\n雨が[降]{ふ}るかもしれないから、[傘]{かさ}を[持]{も}っていったほうがいいよ。\nIt might rain, so you’d better take an umbrella.", label:"～たほうがいい"},
+      {list:[
+        "**The negative is never past.** ✗ [行]{い}かなかったほうがいい. Say [行]{い}かないほうがいい.",
+        "**The dictionary form exists too.** [行]{い}くほうがいい is also correct, especially in general comparisons (“going is better than phoning”). For advice to one person about one situation, the た-form is the most common choice.",
+        "**It is strong advice.** ～たほうがいいです suggests that something bad may happen if the listener doesn’t follow it. With friends that is fine. To a teacher or a boss, soften it (～たほうがいいと[思]{おも}います, ～たほうがいいかもしれません), or make a lighter suggestion with たら from Lesson 3: ～てみたらどうですか (Why not try…?)."
+      ]},
+      "Compare ～なければならない from Lesson 5: that is an obligation, a rule or a necessity, while ～たほうがいい is advice and the listener decides. And when someone asks for advice with どうすればいいですか or どうしたらいいですか, ～たほうがいいですよ is a natural answer."
+    ]},
+    {h:"In conversation: will it rain?", body:[
+      "Yến wants to do her laundry tomorrow and asks Fumiko about the weather. Yến speaks polite, careful Japanese out of habit; Fumiko, a retired teacher, is polite too.",
+      {ex:"イエン：ふみこさん、[明日]{あした}は[雨]{あめ}が[降]{ふ}るでしょうか。[洗濯]{せんたく}をしたいのですが。\nふみこ：[天気予報]{てんきよほう}では、[午後]{ごご}から[降]{ふ}るかもしれないと[言]{い}っていましたよ。[朝]{あさ}[早]{はや}く[干]{ほ}したほうがいいですね。\nイエン：そうですか。では、[六時]{ろくじ}に[起]{お}きてみます。\nふみこ：[玄関]{げんかん}の[気圧計]{きあつけい}の[針]{はり}も、[少]{すこ}し[下]{さ}がっていますからね。\nイエン：[気圧計]{きあつけい}ですか。[私]{わたし}も[見]{み}てみます。\nYến: Fumiko-san, do you think it will rain tomorrow? I’d like to do my laundry.\nFumiko: The forecast said it might rain from the afternoon. You’d better hang it out early in the morning.\nYến: I see. Then I’ll try getting up at six.\nFumiko: The needle on the barometer in the hall has dropped a little too, you know.\nYến: The barometer? I’ll have a look at it too.", label:"Laundry and the weather"},
+      {list:[
+        "**でしょうか** makes Yến’s question softer and more polite than ですか: she is asking for Fumiko’s opinion, not for a fact.",
+        "**[降]{ふ}るかもしれないと[言]{い}っていました**: a forecast passed on with と[言]{い}う, in the plain form inside the quote.",
+        "**[干]{ほ}したほうがいいですね**: advice from an older person to a younger one, softened with ね.",
+        "**[起]{お}きてみます / [見]{み}てみます**: trying something to see how it goes. 見てみる is fine, because the first verb really is 見る."
+      ]}
+    ]},
+    {h:"Common mistakes", body:[
+      {table:[["✗ Mistake","✓ Correct","Why"],["[雨]{あめ}だかもしれません","雨かもしれません","Nouns and な-adjectives take かもしれない directly."],["[暇]{ひま}だでしょう","[暇]{ひま}でしょう","No だ before でしょう."],["[行]{い}かなかったほうがいい","[行]{い}かないほうがいい","The negative uses the non-past ない-form."],["[見]{み}て[見]{み}る","[見]{み}てみる","Spelling, not grammar: by convention the helper みる is written in hiragana."],["[起]{お}きてみましたが、[起]{お}きられませんでした","[起]{お}きようとしましたが、[起]{お}きられませんでした","A failed attempt uses ～ようとする."],["[行]{い}きましょう (meaning “he’ll probably go”)","[行]{い}くでしょう","ましょう is “let’s”; でしょう is a guess."]]},
+      "Guessing, trying and advising are everyday conversation skills, and these four patterns let you sound less blunt as well as more precise. The full reference, with notes for later levels, is in {{guessing-trying-advice}}.",
+      {terms:["kamoshirenai","deshou-darou","te-miru","hou-ga-ii"]}
+    ]}
+   ],
+   try:[
+    {id:"e3u6-l6-x1", type:"mcq", q:"You see an umbrella by the door. It may be Yến’s. Which sentence is correct?", options:[
+      {t:"イエンさんの[傘]{かさ}かもしれません。", ok:true, why:"Right. A noun takes かもしれません directly."},
+      {t:"イエンさんの[傘]{かさ}だかもしれません。", why:"Nouns don’t take だ before かもしれない."},
+      {t:"イエンさんの[傘]{かさ}なかもしれません。", why:"な goes before nouns and ので or んです, not before かもしれない."},
+      {t:"イエンさんの[傘]{かさ}のかもしれません。", why:"No の is needed. The noun takes かもしれません directly."}
+    ]},
+    {id:"e3u6-l6-x2", type:"sort", q:"How sure is the speaker that it will be sunny? Sort the sentences.", buckets:["Fairly or very sure","Not sure (maybe)"], items:[
+      {t:"きっと[晴]{は}れるでしょう。", b:0, why:"きっと + でしょう: very sure."},
+      {t:"たぶん[晴]{は}れるでしょう。", b:0, why:"たぶん + でしょう: fairly sure."},
+      {t:"たぶん[晴]{は}れると[思]{おも}います。", b:0, why:"たぶん + と[思]{おも}います: fairly sure, the everyday way to guess."},
+      {t:"[晴]{は}れるかもしれません。", b:1, why:"かもしれません: possible, but not sure."},
+      {t:"もしかしたら[晴]{は}れるかもしれません。", b:1, why:"もしかしたら + かもしれません: just possibly."},
+      {t:"[晴]{は}れるかも。", b:1, why:"かも is casual かもしれない: maybe."}
+    ]},
+    {id:"e3u6-l6-x3", type:"type", q:"Your friend has a fever but wants to go to a party. Type the advice in hiragana: “You’d better not drink alcohol.” 「お[酒]{さけ}は＿＿＿ほうがいいよ。」 ([飲]{の}む, drink)", answer:"のまない",
+      hint:"Negative advice uses the plain ない-form.",
+      wrongs:[
+        {v:"のまなかった", why:"Negative advice uses the non-past ない-form: [飲]{の}まないほうがいい. The past ～なかった isn’t used here."},
+        {v:"のまないで", why:"～ないで is for requests ([飲]{の}まないでください). Before ほうがいい, use the plain ない-form: [飲]{の}まない."},
+        {v:"のんだ", why:"That gives the opposite advice: “you’d better drink”."}
+      ],
+      why:"[飲]{の}む → [飲]{の}まない (godan: む → ま + ない). ない-form + ほうがいい = “you’d better not”."},
+    {id:"e3u6-l6-x4", type:"type", q:"Type in hiragana, in the polite past: “I tried eating nattō (to see what it was like).” 「[納豆]{なっとう}を＿＿＿＿＿。」", answer:"たべてみました",
+      hint:"The て-form of 食べる, then みる in the polite past.",
+      wrongs:[
+        {v:"たべてみます", why:"That is non-past: “I’ll try eating it”. The question asks for the past: 食べてみました."},
+        {v:"たべようとしました", why:"That means you attempted to eat it, perhaps without success. To try something and see what it’s like, use ～てみる."},
+        {v:"たべてみた", why:"That is the casual past. The question asks for the polite form: 食べてみました."},
+        {v:"たべてみまいた", why:"Check the ending: the polite past of みる is みました."}
+      ],
+      why:"食べる → 食べて + みました. みる is an ichidan verb, so its polite past is みました."},
+    {id:"e3u6-l6-x5", type:"type", q:"Type the ending in hiragana. A weather forecast says: “It will probably snow tomorrow.” 「[明日]{あした}は[雪]{ゆき}＿＿＿。」", answer:["でしょう","がふるでしょう"],
+      hint:"A guess about tomorrow, in polite speech, after a noun.",
+      wrongs:[
+        {v:"だでしょう", why:"No だ before でしょう: [雪]{ゆき}でしょう."},
+        {v:"ましょう", why:"～ましょう means “let’s”. A forecast guesses with でしょう."},
+        {v:"かもしれません", why:"That means “it may snow”, which is less sure than “probably”. Forecasts say [雪]{ゆき}でしょう."},
+        {v:"です", why:"です would state it as a fact. “Probably” needs でしょう."}
+      ],
+      why:"Noun + でしょう: [雪]{ゆき}でしょう, the standard forecast phrase for “It will probably snow”."},
+    {id:"e3u6-l6-x6", type:"mcq", q:"Rodrigo says: 「[六時]{ろくじ}に[起]{お}きようとしましたが、[起]{お}きられませんでした。」 What happened?", options:[
+      {t:"He tried hard to get up at six, but couldn’t.", ok:true, why:"Right. The volitional + とする means “attempt”, and the second half says it failed."},
+      {t:"He got up at six to see what it was like.", why:"That would be 六時に[起]{お}きてみました."},
+      {t:"He decided to get up at six from now on.", why:"Deciding would be a different pattern. ～ようとする is about the effort itself."},
+      {t:"He was able to get up at six.", why:"[起]{お}きられませんでした is the potential negative: he couldn’t."}
+    ]},
+    {id:"e3u6-l6-x7", type:"mcq", q:"Your manager looks exhausted after a long week. Which is the most suitable thing to say?", options:[
+      {t:"[少]{すこ}し[休]{やす}んだほうがいいかもしれませんね。", ok:true, why:"Right. かもしれません softens the advice, which suits someone above you."},
+      {t:"[少]{すこ}し[休]{やす}んだほうがいいです。", why:"Grammatical, but bare ～たほうがいいです sounds like firm advice, which can be too strong for a manager."},
+      {t:"[少]{すこ}し[休]{やす}まなかったほうがいいです。", why:"The form is wrong: negative advice uses the ない-form, and you want to say “rest”, not “don’t rest”."},
+      {t:"[少]{すこ}し[休]{やす}みましょう。", why:"～ましょう invites the manager to rest together with you, which doesn’t fit."}
+    ]},
+    {id:"e3u6-l6-x8", type:"match", q:"Match each sentence to its meaning.", pairs:[
+      ["これ、おいしいでしょう？","This is tasty, isn’t it? (checking)","A rising でしょう？ checks that the listener agrees."],
+      ["すみません、[駅]{えき}はどこでしょうか。","Excuse me, where is the station? (politely)","でしょうか is a softer ですか."],
+      ["[明日]{あした}は[晴]{は}れるでしょう。","It will probably be sunny tomorrow.","でしょう as a guess, as in a forecast."],
+      ["[明日]{あした}は[晴]{は}れるかもしれません。","It may be sunny tomorrow.","かもしれません: possible, not sure."]
+    ]},
+    {id:"e3u6-l6-x9", type:"spot", q:"Cheska writes to Mariya about a trip to Nari-hama beach. Tap each part that is **wrong**, in grammar or in spelling.", ask:"is wrong", parts:[
+      "まりやさん、[明日]{あした}の[鳴]{な}り[浜]{はま}ですが、",
+      {t:"[雨]{あめ}だかもしれません", flag:true, why:"Nouns take かもしれない directly: 雨かもしれません."},
+      "。でも、[天気予報]{てんきよほう}では、",
+      {t:"[午後]{ごご}は[晴]{は}れるでしょう", flag:false, why:"Correct: でしょう for a probable future, as in a forecast."},
+      "と[言]{い}っていました。[風]{かぜ}が[強]{つよ}いので、",
+      {t:"[上着]{うわぎ}を[持]{も}っていったほうがいいです", flag:false, why:"Correct: た-form + ほうがいい for advice."},
+      "。[砂]{すな}の[音]{おと}を、もう[一度]{いちど}",
+      {t:"[聞]{き}いて[見]{み}たいです", flag:true, why:"A spelling slip rather than a grammar error: by convention the helper verb みる is written in hiragana, 聞いてみたいです."},
+      "。"
+    ]}
+   ],
+   apply:{
+    intro:"Guess, try and advise in Japanese about your own week. Keep the notes for yourself.",
+    tasks:[
+     {t:"Tomorrow’s forecast", how:[
+       "Look at a weather forecast for your area (in any language).",
+       "Write four sentences about tomorrow: one with きっと～でしょう, one with たぶん～でしょう, one with ～かもしれません and one with ～と[思]{おも}います.",
+       "Check the forms: no だ after nouns and な-adjectives before でしょう or かもしれません."
+     ], write:"[明日]{あした}は…でしょう。…かもしれません。"},
+     {t:"Things to try", how:[
+       "List five things you would like to try, with ～てみたいです: a food, a place, a sport, a book, a skill.",
+       "Write two things you have tried recently with ～てみました, and add how it was.",
+       "Write one sentence with ～ようとしましたが、～ませんでした about something that didn’t work out."
+     ], write:"…てみたいです。…てみました。…"},
+     {t:"An advice column", how:[
+       "Imagine three friends with problems: a cold, too much homework, trouble sleeping.",
+       "Give each one piece of advice with ～たほうがいい and one with ～ないほうがいい.",
+       "Rewrite one piece of advice for a teacher or a boss, softened with ～と[思]{おも}います or ～かもしれません."
+     ], write:"…たほうがいいよ。…ないほうがいいよ。"}
+    ],
+    proof:"Four forecast sentences on the certainty scale, seven sentences about trying things, and six pieces of advice, one of them softened for someone above you."
+   },
+   read:[
+    {book:"taekim", where:"“Various degrees of certainty”, sections “Using 「かもしれない」 to express uncertainty”, “Using 「でしょう」 to express a fair amount of certainty (polite)” and “Using 「でしょう」 and 「だろう」 to express strong amount of certainty (casual)”", note:"Tae Kim also explains でしょう？ for checking."},
+    {book:"taekim", where:"“Trying or attempting something”, sections “To try something out” and “To attempt to do something”", note:"～てみる and ～ようとする side by side."},
+    {book:"taekim", where:"“Using 「方」 and 「よる」”, section “Using 「方」 for comparisons”", note:"Includes ～た[方]{ほう}がいい and ～ない[方]{ほう}がいい for suggestions."},
+    {book:"irodori", where:"Elementary 1, Lessons 4 “It rained heavily yesterday.” (～でしょう) and 12 “Your bento looks delicious.” (V-てみます)", note:"With audio."},
+    {book:"irodori", where:"Elementary 2, Lessons 5 “You should make a reservation early.” (V-たほうがいいです / V-ないほうがいいです) and 11 “I forgot to bring my point card.” (S（plain-form）かもしれません, V-てみてもいいですか？)", note:"Advice, guesses and asking to try something, in everyday situations, with audio."}
+   ]
   }
   ],
   checkpoint:["e3u6-q02","e3u6-q05","e3u6-q09","e3u6-q12","e3u6-q16","e3u6-q22","e3u6-q23","e3u6-q27","e3u6-q31","e3u6-q35","e3u6-q40","e3u6-q44"],
+  cpBank:[
+    {id:"e3u6-cp01", lesson:"e3u6-l1", level:1, q:"[歌]{うた}う (sing) is a godan verb. What is its potential form?", options:[
+      {t:"[歌]{うた}われる", why:"This is the passive form (Unit 7). The potential of a godan verb moves to the え row: う → え + る."},
+      {t:"[歌]{うた}える", ok:true, why:"Godan verbs move the last sound to the え row and add る: [歌]{うた}う → [歌]{うた}える."},
+      {t:"[歌]{うた}られる", why:"られる is for ichidan verbs such as 食べる. [歌]{うた}う is godan."},
+      {t:"[歌]{うた}えれる", why:"There is only one る: う → え, then る. [歌]{うた}えれる has an extra れ."}]},
+    {id:"e3u6-cp02", lesson:"e3u6-l2", level:1, q:"[待]{ま}つ (wait) is a godan verb. What is its volitional form (“let’s wait”, “I’ll wait”)?", options:[
+      {t:"[待]{ま}ちよう", why:"よう is for ichidan verbs such as 食べる. Godan verbs move to the お row and add う."},
+      {t:"[待]{ま}てよう", why:"て is the え row. The volitional uses the お row: つ → と + う."},
+      {t:"[待]{ま}とう", ok:true, why:"Godan verbs move the last sound to the お row and add う: つ → と, so [待]{ま}とう."},
+      {t:"[待]{ま}つよう", why:"You don’t add よう to the dictionary form. つ changes to と, then う."}]},
+    {id:"e3u6-cp03", lesson:"e3u6-l4", level:1, q:"Every morning, Toby waters the vegetables in the garden. Which verb fits? 「[毎朝]{まいあさ}、[野菜]{やさい}に水を＿＿。」", options:[
+      {t:"くれます", why:"くれる is for giving to the speaker or the speaker’s side, not to plants."},
+      {t:"もらいます", why:"もらう is receiving. Toby is the one giving the water."},
+      {t:"いただきます", why:"いただく is the humble form of もらう, receiving from someone above you."},
+      {t:"やります", ok:true, why:"やる means “give” to animals and plants: [花]{はな}に水をやる, [野菜]{やさい}に水をやる."}]},
+    {id:"e3u6-cp04", lesson:"e3u6-l1", level:2, q:"Mariya tells Rodrigo about the beach. “On clear days, you can see Shiojima from here.” Which verb fits? 「天気がいい日は、ここから[潮島]{しおじま}が＿＿。」", options:[
+      {t:"[見]{み}られます", why:"見られる means you are able to watch because the situation allows it, like a film online. An island in view is 見える."},
+      {t:"[見]{み}えます", ok:true, why:"見える (be visible) is for what reaches your eyes on its own, without effort."},
+      {t:"[見]{み}せます", why:"見せる means “show” something to someone."},
+      {t:"[見]{み}ます", why:"見ます just means “look, watch”. It doesn’t say “can”."}]},
+    {id:"e3u6-cp05", lesson:"e3u6-l2", level:2, q:"Yến has thought it through and made a plan: she will apply for a summer internship. Which sentence shows a firm plan, not just a wish or a guess?", options:[
+      {t:"「インターンに[応募]{おうぼ}したいです。」", why:"～たい is a wish: she wants to apply. It doesn’t say she has decided."},
+      {t:"「インターンに[応募]{おうぼ}すると[思]{おも}います。」", why:"Dictionary form + と[思]{おも}います is a guess (“I think I’ll apply”), not a plan. An intention uses the volitional, or つもり for a firm one."},
+      {t:"「インターンに[応募]{おうぼ}するかもしれません。」", why:"～かもしれない is a guess: “I might apply.”"},
+      {t:"「インターンに[応募]{おうぼ}するつもりです。」", ok:true, why:"つもり describes a firm intention: she has decided and plans to do it."}]},
+    {id:"e3u6-cp06", lesson:"e3u6-l3", level:2, q:"Rodrigo misses the bus by one minute. Which ending says “I wish I’d left home earlier”? 「もっと[早]{はや}く[家]{いえ}を出れば＿＿。」", options:[
+      {t:"よかった", ok:true, why:"～ばよかった expresses regret: “If I had left earlier, it would have been good.”"},
+      {t:"いい", why:"～ばいい is about now or the future: “It would be good to leave earlier.” He is talking about what already happened."},
+      {t:"よくない", why:"This says leaving earlier would be bad, the opposite of his regret."},
+      {t:"よかったら", why:"よかったら means “if you like” and starts an offer. It can’t end this sentence."}]},
+    {id:"e3u6-cp07", lesson:"e3u6-l4", level:2, q:"Cheska missed a class, and Aoi lent her notes to her. Cheska tells Toby. 「あおいさんがノートを＿＿。」", options:[
+      {t:"[貸]{か}してあげました", why:"～てあげる goes away from the speaker. The favour came to Cheska, so use ～てくれる."},
+      {t:"[貸]{か}してもらいました", why:"～てもらう needs the giver with に: あおいさんにノートを[貸]{か}してもらいました. With あおいさんが, use ～てくれる."},
+      {t:"[借]{か}りてくれました", why:"[借]{か}りる is “borrow”. Aoi lent the notes; Cheska borrowed them."},
+      {t:"[貸]{か}してくれました", ok:true, why:"Aoi (が) did a favour for Cheska, the speaker: ～てくれる shows the favour came to her."}]},
+    {id:"e3u6-cp08", lesson:"e3u6-l5", level:2, q:"The TV is on. Leaving the room, Fumiko says 「すぐ[戻]{もど}るから、テレビはつけておいてね。」 What does she want?", options:[
+      {t:"Turn the TV off until she comes back", why:"That would be [消]{け}しておいて. つけておいて asks for the TV to stay on."},
+      {t:"Leave the TV on", ok:true, why:"～ておく can mean leaving something in a state on purpose: she’ll be right back, so keep it on."},
+      {t:"Turn the TV on before she comes back", why:"～ておく can mean doing something ahead, but the TV is already on. Here it means leaving it on."},
+      {t:"She turned the TV on by accident", why:"An accident would be ～てしまう: つけてしまった. ～ておいて is a request."}]},
+    {id:"e3u6-cp09", lesson:"e3u6-l6", level:3, q:"It might rain this afternoon. Toby advises Rodrigo to take an umbrella. Which sentence says this?", options:[
+      {t:"「[午後]{ごご}は雨が[降]{ふ}るかもしれないから、[傘]{かさ}を[持]{も}っていったほうがいいよ。」", ok:true, why:"～かもしれない gives the possibility, and ～たほうがいい gives the advice: “You’d better take an umbrella.”"},
+      {t:"「[午後]{ごご}は雨が[降]{ふ}るかもしれないから、[傘]{かさ}を[持]{も}っていかなくてもいいよ。」", why:"～なくてもいい means “you don’t have to”: no need to take one. That is the opposite advice."},
+      {t:"「[午後]{ごご}は雨が[降]{ふ}ったかもしれないから、[傘]{かさ}を[持]{も}っていったほうがいいよ。」", why:"[降]{ふ}ったかもしれない is a guess about the past (“it may have rained”). The rain is still to come."},
+      {t:"「[午後]{ごご}は雨が[降]{ふ}るでしょうかもしれないから、[傘]{かさ}を[持]{も}っていったほうがいいよ。」", why:"でしょう and かもしれない are two separate guesses. You can’t stack them."}]},
+    {id:"e3u6-cp10", lesson:"e3u6-l1", level:3, q:"Mariya wants to say “I can play the piano” with ～ことができる. Which is correct?", options:[
+      {t:"「ピアノがひくことができます。」", why:"Inside the こと part, the object keeps its normal を: ピアノをひく."},
+      {t:"「ピアノをひけることができます。」", why:"Use the dictionary form before こと. ひける is already the potential, so this says “can” twice."},
+      {t:"「ピアノをひくことができます。」", ok:true, why:"Dictionary form + こと + ができる, with を for the object inside the こと part."},
+      {t:"「ピアノがひくができます。」", why:"A verb needs こと before ができる. Only a noun can go straight before が: ピアノができます."}]},
+    {id:"e3u6-cp11", lesson:"e3u6-l5", level:3, q:"A city leaflet for foreign residents says 「[在留]{ざいりゅう}カードは、いつも[持]{も}っていなければなりません。」 What does it tell Rodrigo?", options:[
+      {t:"He doesn’t always have to carry the card", why:"“Don’t have to” is ～なくてもいい: [持]{も}っていなくてもいい. ～なければなりません is an obligation."},
+      {t:"He must not carry the card with him", why:"“Must not” is ～てはいけない: [持]{も}っていてはいけない. Here the card has to be with him."},
+      {t:"He must always carry his residence card", ok:true, why:"Literally “if he isn’t carrying it, it won’t do”: the double negative means he must have the card with him at all times."},
+      {t:"He may carry the card if he likes", why:"Permission is ～てもいい: [持]{も}っていてもいい. ～なければなりません is stronger: he has no choice."}]},
+    {id:"e3u6-cp12", lesson:"e3u6-l4", level:3, q:"Fumiko made dinner for Toby. Talking to his professor, Toby wants to show respect to Fumiko. Which ending fits? 「ふみこさんが[晩]{ばん}ご[飯]{はん}を[作]{つく}って＿＿。」", options:[
+      {t:"いただきました", why:"いただく is humble receiving, used with に: ふみこさんに[作]{つく}っていただきました. With が, use くださる."},
+      {t:"さしあげました", why:"さしあげる goes away from the speaker, to someone above you. The dinner came to Toby."},
+      {t:"くださいました", ok:true, why:"くださる is the respectful くれる: Fumiko (が) did it for Toby, and he raises her."},
+      {t:"くれました", why:"くれる has the right direction, but it is the plain verb. To show respect, use くださいました."}]}
+  ],
   codex:[
    {id:"potential-form", title:"The potential form (can do)", aka:["potential","kanou-kei","can","～れる","～られる","～える","できる","～ことができる","ra-nuki"], tags:["japanese","grammar","n4","verbs"],
     summary:"The verb form for “can”: [書]{か}ける, [食]{た}べられる, できる, [来]{こ}られる; with ～ことができる as a more formal alternative.",
@@ -977,7 +1282,51 @@ ICA.addUnit({
      ]},
     related:["requests-and-permission","conditionals-to-ba-tara-nara","nai-and-ta-forms","casual-conversation"],
     sources:[{t:"Tae Kim’s Guide to Learning Japanese: Expressing “must” or “have to” (linked from the conditionals page)", url:"https://guidetojapanese.org/learn/grammar/must"},{t:"Tae Kim’s Guide: How to say “if” in Japanese (the ば-form, including ～なければ)", url:"https://guidetojapanese.org/learn/grammar/conditionals"}],
-    checked:"2026-11"}
+    checked:"2026-11"},
+  {id:"guessing-trying-advice", title:"Maybe, probably, try, advice: ～かもしれない, ～でしょう, ～てみる and ～たほうがいい", aka:["kamoshirenai","かもしれない","かも","maybe","might","deshou","でしょう","darou","だろう","probably","te miru","てみる","try","hou ga ii","ほうがいい","方がいい","had better","should","advice"], tags:["japanese","grammar","n4"],
+   summary:"Two levels of guessing (～かもしれない “maybe”, ～でしょう/～だろう “probably”), trying something out with ～てみる, and giving advice with ～たほうがいい and ～ないほうがいい.",
+   levels:{
+    starter:[
+      "Four patterns for everyday conversation: two for guessing, one for trying, one for advice.",
+      {ex:"[明日]{あした}は[雨]{あめ}が[降]{ふ}るかもしれません。\nIt may rain tomorrow.\n\n[明日]{あした}は[晴]{は}れるでしょう。\nIt will probably be sunny tomorrow.\n\n[納豆]{なっとう}を[食]{た}べてみました。\nI tried eating nattō.\n\n[早]{はや}く[寝]{ね}たほうがいいですよ。\nYou’d better go to bed early.", label:"Examples"},
+      {list:[
+        "**かもしれない**: maybe. Polite かもしれません, casual かも.",
+        "**でしょう / だろう**: probably. More sure than かもしれない.",
+        "**～てみる**: try something and see. Usually written みる, in hiragana.",
+        "**～たほうがいい**: you’d better. Don’t: ～ないほうがいい."
+      ]},
+      {key:"Nouns and な-adjectives join かもしれない and でしょう with no だ: [雨]{あめ}かもしれません, [暇]{ひま}でしょう."},
+      "Advice with ～たほうがいい is quite strong. With a teacher or a boss, soften it: ～たほうがいいと[思]{おも}います."
+    ],
+    builder:[
+      {h:"Forms"},
+      {table:[["Pattern","Built from","Example"],["～かもしれない","plain form; noun / な-adj directly","[降]{ふ}るかもしれない, [雨]{あめ}かもしれない"],["～でしょう / ～だろう","plain form; noun / な-adj directly","[降]{ふ}るでしょう, [静]{しず}かだろう"],["～てみる","て-form + みる (ichidan)","[着]{き}てみる, [着]{き}てみた, [着]{き}てみたい"],["～たほうがいい","た-form / ない-form + ほうがいい","[休]{やす}んだほうがいい, [無理]{むり}しないほうがいい"]]},
+      {h:"How sure?"},
+      "A rough scale: a plain statement (certain) → きっと～でしょう → たぶん～でしょう or ～と[思]{おも}います → ～かもしれない → たぶん～ないでしょう. In conversation, ～と[思]{おも}います is the everyday way to give your own guess; でしょう is typical of forecasts, the news and explanations, and だろう of writing. A bare spoken だろう can sound blunt.",
+      {h:"Other jobs of でしょう"},
+      "A rising でしょう？ (casual でしょ？) checks that the listener agrees: いい[天気]{てんき}でしょう？ でしょうか softens a question: [駅]{えき}はどこでしょうか. Don’t confuse でしょう with ましょう (let’s).",
+      {h:"Try out or try hard?"},
+      "～てみる: do it and see ([食]{た}べてみたら、おいしかった). Volitional + とする: attempt, often unsuccessfully ([起]{お}きようとしたけど、[起]{お}きられなかった). ～てみたらどうですか is a gentle suggestion.",
+      {h:"Advice"},
+      "Use the た-form for the positive, the ない-form for the negative (never ～なかったほうがいい). The dictionary form ([行]{い}くほうがいい) also exists, mainly in general comparisons. Advice is weaker than obligation (～なければならない): the listener decides."
+    ],
+    pro:[
+      "**かもしれない in writing.** In essays, ～かもしれない is a common hedge, and ～[可能性]{かのうせい}がある (there is a possibility that) is a more formal one. Overusing either makes writing sound evasive. The Academic Japanese track covers hedging in more detail ({{hedging-japanese}}).",
+      "**だろう in essays.** Academic and journalistic writing uses ～だろう, ～であろう and ～と[考]{かんが}えられる (it is thought that) to present conclusions with care. ～であろう is more formal than ～だろう.",
+      "**でしょう with polite verbs.** In very formal speech you may hear ～ますでしょうか, as in [教]{おし}えていただけますでしょうか. It is very common in business emails and widely accepted, though some people feel it is more polite than it needs to be. ～ていただけますか, or a plain form + でしょうか ([教]{おし}えていただけるでしょうか), is always safe.",
+      "**The た-form in advice.** Why past? One explanation is that ～たほうがいい pictures the action as already done and judges that outcome. Whatever the history, the pattern is fixed: ～たほうがいい for doing, ～ないほうがいい for not doing.",
+      "**～てみる with other helpers.** ～てみる combines freely: ～てみたい (want to try), ～てみてください (please try), ～てみようと[思]{おも}う (I’m thinking of trying). With ～てみたら, a past story often reports a discovery: [開]{あ}けてみたら、[空]{から}だった (When I opened it, it turned out to be empty).",
+      "**Other ways to advise.** ～ばいい / ～たらいい (it would be good to…) sound lighter than ～たほうがいい and are common answers to どうすればいいですか: [先生]{せんせい}に[聞]{き}けばいいですよ. ～べきだ (should, must morally) is N3 and much stronger ({{hazu-wake-beki}}).",
+      "**Next steps.** Unit 7 adds ways to say **how** you know something: ～そう (it looks like), ～そうだ (I hear), ～ようだ / ～みたい (it seems) and ～らしい (apparently). They combine with this lesson’s scale of certainty."
+    ]
+   },
+   related:["conditionals-to-ba-tara-nara","volitional-form","must-and-dont-have-to","appearance-sou-you-rashii","hedging-japanese"],
+   sources:[
+     {t:"Tae Kim’s Guide to Learning Japanese: Various degrees of certainty (かもしれない, でしょう, だろう)", url:"https://guidetojapanese.org/learn/grammar/certainty"},
+     {t:"Tae Kim’s Guide to Learning Japanese: Trying or attempting something (～てみる, ～ようとする)", url:"https://guidetojapanese.org/learn/grammar/try"},
+     {t:"The Japan Foundation, いろどり IRODORI Elementary 2: table of contents with grammar points by lesson (PDF)", url:"https://www.irodori.jpf.go.jp/assets/data/elementary02/pdf/Z_contents_en.pdf"}
+   ],
+   checked:"2026-11"}
   ],
   terms:[
    {id:"potential-form", term:"Potential form", def:"The verb form for “can”: godan verbs move to the え row + る ([書]{か}く → 書ける), ichidan verbs take られる ([食]{た}べる → 食べられる), する → できる, [来]{く}る → [来]{こ}られる. Potential verbs conjugate as ichidan verbs.", codex:"potential-form"},
@@ -994,7 +1343,11 @@ ICA.addUnit({
    {id:"te-shimau", term:"～てしまう", def:"て-form + しまう: the action is completely finished, or it happened with regret or by accident ([傘]{かさ}を[忘]{わす}れてしまいました). Casual: ～ちゃう / ～じゃう.", codex:"te-shimau-te-oku"},
    {id:"te-oku", term:"～ておく", def:"て-form + おく: do something in advance so it is ready for later ([予約]{よやく}しておきます), or leave something as it is. Casual: ～とく / ～どく.", codex:"te-shimau-te-oku"},
    {id:"nakereba-naranai", term:"～なければならない (must)", def:"“Must”, literally “if you don’t, it won’t do”: [行]{い}かなければなりません. Variants: ～なければいけない, ～なくてはいけない, ～ないといけない; casual ～なきゃ, ～なくちゃ, ～ないと.", codex:"must-and-dont-have-to"},
-   {id:"nakute-mo-ii", term:"～なくてもいい (don’t have to)", def:"“Don’t have to”, literally “even not doing it is fine”: [書]{か}かなくてもいいです. Not the same as “must not” (～てはいけない).", codex:"must-and-dont-have-to"}
+   {id:"nakute-mo-ii", term:"～なくてもいい (don’t have to)", def:"“Don’t have to”, literally “even not doing it is fine”: [書]{か}かなくてもいいです. Not the same as “must not” (～てはいけない).", codex:"must-and-dont-have-to"},
+    {id:"kamoshirenai", term:"～かもしれない (maybe)", def:"A plain form + かもしれない (polite かもしれません, casual かも): “it may be…”. Nouns and な-adjectives join directly: [雨]{あめ}かもしれません. Also used to soften a statement.", codex:"guessing-trying-advice"},
+    {id:"deshou-darou", term:"～でしょう / ～だろう (probably)", def:"A plain form + でしょう (polite) or だろう (plain): “probably”. Nouns and な-adjectives join directly: [雨]{あめ}でしょう. A rising でしょう？ checks agreement; でしょうか is a softer ですか.", codex:"guessing-trying-advice"},
+    {id:"te-miru", term:"～てみる (try and see)", def:"The て-form + みる: do something to see what it’s like or what happens. [食]{た}べてみる (try eating). Usually written in hiragana (a spelling convention). For “try hard, attempt”, use the volitional + とする.", codex:"guessing-trying-advice"},
+    {id:"hou-ga-ii", term:"～たほうがいい (you’d better)", def:"The た-form + ほうがいい gives advice: [休]{やす}んだほうがいい. The negative uses the ない-form: [行]{い}かないほうがいい. Soften it for people above you with ～と[思]{おも}います.", codex:"guessing-trying-advice"}
   ],
   bank:[
    /* ---- Lesson 1 ---- */
@@ -1151,14 +1504,14 @@ ICA.addUnit({
      {t:"[箱]{はこ}を[開]{あ}けたと、[猫]{ねこ}がいました。", why:"と follows the non-past: [開]{あ}けると."}
    ]},
    {id:"e3u6-q26", lesson:"e3u6-l3", level:3, q:"Cheska asks 「どうすればいいですか。」 and her friend asks 「どうしたらいいですか。」 Which statement is true?", options:[
-     {t:"Both are natural and mean “What should I do?”", ok:true, why:"Advice questions are one of the real overlaps: ば and たら are both common here."},
+     {t:"Both are natural and common.", ok:true, why:"Both mean “What should I do?” Advice questions are one of the real overlaps: ば and たら are both common here."},
      {t:"Only the ば version is correct.", why:"Both are correct and very common."},
      {t:"The たら version asks about the past.", why:"The た in たら doesn’t make the question past. Both ask what to do now."},
      {t:"The ば version is rude.", why:"Neither is rude. Both are polite with です."}
    ]},
    {id:"e3u6-q27", lesson:"e3u6-l3", level:3, q:"Your friend will visit Japan next month and needs a visa first. You say: “If you’re going to Japan, get a visa.” Which sentence fits?", options:[
      {t:"[日本]{にほん}へ[行]{い}くなら、ビザを[取]{と}ってください。", ok:true, why:"With なら, the result (getting a visa) can happen before the condition (the trip)."},
-     {t:"日本へ行ったら、ビザを[取]{と}ってください。", why:"With たら, the trip comes first, so this says to get a visa after arriving."},
+     {t:"[日本]{にほん}へ[行]{い}ったら、ビザを[取]{と}ってください。", why:"With たら, the trip comes first, so this says to get a visa after arriving."},
      {t:"日本へ行くと、ビザを[取]{と}ってください。", why:"A request can’t follow と."},
      {t:"日本へ行けば、ビザを[取]{と}ってください。", why:"Going is an action, and your friend would do both things, so a request after ば sounds unnatural. It doesn’t put the visa first either."}
    ]},
@@ -1171,9 +1524,9 @@ ICA.addUnit({
    ]},
    {id:"e3u6-q29", lesson:"e3u6-l4", level:1, q:"How do you say “I gave my little brother a book”?", options:[
      {t:"[弟]{おとうと}に[本]{ほん}をあげました。", ok:true, why:"You are the giver, so あげる; the receiver takes に."},
-     {t:"[弟]{おとうと}に本をくれました。", why:"くれる is for things coming to you. When you give, use あげる."},
-     {t:"[弟]{おとうと}に本をもらいました。", why:"This means you received a book from your brother."},
-     {t:"[弟]{おとうと}に本をくださいました。", why:"くださる is the respectful form of くれる, so the direction is wrong, and it is too polite for your own brother."}
+     {t:"[弟]{おとうと}に[本]{ほん}をくれました。", why:"くれる is for things coming to you. When you give, use あげる."},
+     {t:"[弟]{おとうと}に[本]{ほん}をもらいました。", why:"This means you received a book from your brother."},
+     {t:"[弟]{おとうと}に[本]{ほん}をくださいました。", why:"くださる is the respectful form of くれる, so the direction is wrong, and it is too polite for your own brother."}
    ]},
    {id:"e3u6-q30", lesson:"e3u6-l4", level:1, q:"Choose the particle this lesson teaches for an organisation: [市]{し}___[手紙]{てがみ}をもらいました。 (I got a letter from the city office.)", options:[
      {t:"から", ok:true, why:"From an organisation, から is the usual choice and the one textbooks teach."},
@@ -1183,12 +1536,12 @@ ICA.addUnit({
    ]},
    {id:"e3u6-q31", lesson:"e3u6-l4", level:2, q:"How do you say, respectfully, “The teacher gave me a dictionary”?", options:[
      {t:"[先生]{せんせい}が[辞書]{じしょ}をくださいました。", ok:true, why:"くださる is the respectful form of くれる; its ます-form is くださいます."},
-     {t:"先生が[辞書]{じしょ}をさしあげました。", why:"さしあげる is the humble form of あげる: the direction is wrong."},
-     {t:"先生が[辞書]{じしょ}をいただきました。", why:"With いただく the subject is the receiver: this would say the teacher received a dictionary. You could say 先生に[辞書]{じしょ}をいただきました."},
-     {t:"先生が[辞書]{じしょ}をくださりました。", why:"くださる has an irregular ます-form: くださいます, くださいました."}
+     {t:"[先生]{せんせい}が[辞書]{じしょ}をさしあげました。", why:"さしあげる is the humble form of あげる: the direction is wrong."},
+     {t:"[先生]{せんせい}が[辞書]{じしょ}をいただきました。", why:"With いただく the subject is the receiver: this would say the teacher received a dictionary. You could say 先生に[辞書]{じしょ}をいただきました."},
+     {t:"[先生]{せんせい}が[辞書]{じしょ}をくださりました。", why:"くださる has an irregular ます-form: くださいます, くださいました."}
    ]},
    {id:"e3u6-q32", lesson:"e3u6-l4", level:2, q:"What does 「ふみこさんに[日本語]{にほんご}を[教]{おし}えてもらいました。」 mean?", options:[
-     {t:"Fumiko-san taught me Japanese (and I’m grateful).", ok:true, why:"～てもらう: I received the favour of Fumiko-san teaching me. The helper takes に."},
+     {t:"Fumiko-san taught me Japanese.", ok:true, why:"～てもらう: I received the favour of Fumiko-san teaching me. The helper takes に, and the speaker sounds grateful."},
      {t:"I taught Fumiko-san Japanese.", why:"That would be ふみこさんに日本語を[教]{おし}えてあげました."},
      {t:"Fumiko-san was taught Japanese by someone.", why:"The subject of もらう is the receiver of the favour, which is the speaker here, not Fumiko-san."},
      {t:"I asked Fumiko-san to teach me, but she refused.", why:"The sentence says the favour happened: もらいました is past and positive."}
@@ -1243,8 +1596,8 @@ ICA.addUnit({
      {t:"[写真]{しゃしん}をとってもいいです。", why:"This gives permission: you may take photos."}
    ]},
    {id:"e3u6-q41", lesson:"e3u6-l5", level:1, q:"What does 「[宿題]{しゅくだい}はもう[全部]{ぜんぶ}やってしまいました。」 mean?", options:[
-     {t:"I’ve already finished all my homework.", ok:true, why:"～てしまう here means completely finished, helped by もう and [全部]{ぜんぶ}."},
-     {t:"I’ll do my homework in advance.", why:"That would be ～ておきます."},
+     {t:"I’ve already done all my homework.", ok:true, why:"～てしまう here means completely finished, helped by もう and [全部]{ぜんぶ}."},
+     {t:"I’ll do all my homework in advance.", why:"That would be ～ておきます."},
      {t:"I have to do all my homework.", why:"That would be ～なければなりません."},
      {t:"I don’t have to do my homework.", why:"That would be ～なくてもいいです."}
    ]},
@@ -1261,7 +1614,7 @@ ICA.addUnit({
      {t:"[飲]{の}み[物]{もの}を[冷蔵庫]{れいぞうこ}に入れてしまいました。", why:"This is a past statement (“I’ve put them in”, perhaps with regret), not a request."}
    ]},
    {id:"e3u6-q44", lesson:"e3u6-l5", level:3, q:"Toby arrives late to a meeting and says 「[遅]{おそ}くなってしまって、すみません。」 What does ～てしまって add?", options:[
-     {t:"Regret: being late happened, and he is sorry about it.", ok:true, why:"～てしまう often shows regret for something unfortunate, which suits an apology."},
+     {t:"Regret: he is sorry he was late.", ok:true, why:"～てしまう often shows regret for something unfortunate, which suits an apology."},
      {t:"That he was late on purpose.", why:"～てしまう suggests the opposite: it happened against his wishes."},
      {t:"That he prepared in advance to be late.", why:"That idea belongs to ～ておく, and it doesn’t fit here."},
      {t:"That he must be late.", why:"Obligation would need ～なければならない."}
@@ -1271,6 +1624,60 @@ ICA.addUnit({
      {t:"[明日]{あした}までにレポートを出さなければなりません。", why:"The full form: suitable for a polite email."},
      {t:"[明日]{あした}までにレポートを[書]{か}いておきます。", why:"～ておきます is the full form and fine in polite writing."},
      {t:"[明日]{あした}までにレポートを出さなくてもいいですか。", why:"～なくてもいいですか (“Is it all right if I don’t…?”) is polite and fine in an email."}
-   ]}
+   ]},
+  {id:"e3u6-q46", lesson:"e3u6-l6", level:1, q:"What does 「[明日]{あした}は[雨]{あめ}かもしれません。」 mean?", options:[
+    {t:"It may rain tomorrow.", ok:true, why:"かもしれません marks a possibility the speaker isn’t sure about."},
+    {t:"It will rain tomorrow.", why:"That would be a plain statement: [明日]{あした}は雨です."},
+    {t:"It probably won’t rain tomorrow.", why:"That would be [明日]{あした}はたぶん雨は[降]{ふ}らないでしょう. かもしれません is positive: it may rain."},
+    {t:"It didn’t rain yesterday.", why:"[明日]{あした} is tomorrow, and nothing here is negative or past."}
+  ]},
+  {id:"e3u6-q47", lesson:"e3u6-l6", level:1, q:"How do you say “Yến is probably free”?", options:[
+    {t:"イエンさんは[暇]{ひま}でしょう。", ok:true, why:"な-adjectives take でしょう directly."},
+    {t:"イエンさんは[暇]{ひま}だでしょう。", why:"No だ before でしょう."},
+    {t:"イエンさんは[暇]{ひま}なでしょう。", why:"な goes before nouns, ので and んです, not before でしょう."},
+    {t:"イエンさんは[暇]{ひま}ましょう。", why:"ましょう means “let’s” and follows a verb stem. A guess uses でしょう."}
+  ]},
+  {id:"e3u6-q48", lesson:"e3u6-l6", level:1, q:"Which is the correct way to say “You’d better not go”?", options:[
+    {t:"[行]{い}かないほうがいいです。", ok:true, why:"Negative advice uses the plain non-past ない-form + ほうがいい."},
+    {t:"[行]{い}かなかったほうがいいです。", why:"The past negative isn’t used for advice. Use 行かないほうがいい."},
+    {t:"[行]{い}かないでほうがいいです。", why:"～ないで is for requests (行かないでください). Before ほうがいい, use 行かない."},
+    {t:"[行]{い}ったほうがよくないです。", why:"This is an unusual way to say it and sounds unnatural. Negative advice is 行かないほうがいいです."}
+  ]},
+  {id:"e3u6-q49", lesson:"e3u6-l6", level:2, q:"In a clothes shop, you want to try on a jacket. What do you ask?", options:[
+    {t:"この[上着]{うわぎ}、[着]{き}てみてもいいですか。", ok:true, why:"～てみる (try and see) + てもいいですか (may I): May I try this on?"},
+    {t:"この[上着]{うわぎ}、[着]{き}ようとしてもいいですか。", why:"～ようとする means “attempt, struggle to”, which sounds as if putting it on is a battle."},
+    {t:"この[上着]{うわぎ}、[着]{き}たほうがいいですか。", why:"This asks for advice: “Should I wear this jacket?”"},
+    {t:"この[上着]{うわぎ}、[着]{き}るでしょうか。", why:"This sounds like “Will (someone) probably wear this?”, not a request to try it on."}
+  ]},
+  {id:"e3u6-q50", lesson:"e3u6-l6", level:2, q:"Toby hands you a manga and says, with a rising voice: 「これ、おもしろいでしょう？」 What does he mean?", options:[
+    {t:"This is fun, isn’t it?", ok:true, why:"A rising でしょう？ checks that the listener agrees: he expects you to say yes."},
+    {t:"This will probably be fun, I guess.", why:"A guess would have a falling voice, and with something you are both looking at, でしょう？ is a check."},
+    {t:"Is this fun? (he has no idea)", why:"A neutral question would be おもしろいですか. でしょう？ shows he expects a yes."},
+    {t:"Let’s read this.", why:"“Let’s” is ～ましょう, with a verb. でしょう is a different word."}
+  ]},
+  {id:"e3u6-q51", lesson:"e3u6-l6", level:3, q:"Aoi has a presentation tomorrow and has hardly slept for two nights. Mariya wants to give her friendly advice. Which is best?", options:[
+    {t:"[今日]{きょう}は[早]{はや}く[寝]{ね}たほうがいいよ。", ok:true, why:"た-form + ほうがいい: friendly advice, in casual speech that suits two housemates."},
+    {t:"[今日]{きょう}は[早]{はや}く[寝]{ね}ないほうがいいよ。", why:"This advises the opposite: “you’d better not go to bed early”."},
+    {t:"[今日]{きょう}は[早]{はや}く[寝]{ね}てみたほうがいいよ。", why:"～てみる (try and see) adds an odd “experiment” feeling. Plain advice is [寝]{ね}たほうがいい."},
+    {t:"[今日]{きょう}は[早]{はや}く[寝]{ね}なければなりません。", why:"This states an obligation in a formal style, which sounds stiff and bossy between friends."}
+  ]},
+  {id:"e3u6-q52", lesson:"e3u6-l6", level:2, q:"Kaito says: 「[新]{あたら}しいレシピで[作]{つく}ってみた。」 What did he do?", options:[
+    {t:"He cooked from a new recipe to try it out.", ok:true, why:"～てみた: he tried it out to see how it would turn out."},
+    {t:"He tried hard to cook from a new recipe, but failed.", why:"An attempt that fails would be [作]{つく}ろうとしたけど、できなかった."},
+    {t:"He wants to cook from a new recipe.", why:"That would be [作]{つく}ってみたい. みた is past."},
+    {t:"He will probably cook from a new recipe.", why:"That would be [作]{つく}るでしょう. [作]{つく}ってみた reports something done."}
+  ]},
+  {id:"e3u6-q53", lesson:"e3u6-l6", level:3, q:"Which sentence uses ～てみる correctly?", options:[
+    {t:"[日本]{にほん}の[歌]{うた}を[歌]{うた}ってみました。[楽]{たの}しかったです。", ok:true, why:"He tried singing to see what it was like, and says how it was."},
+    {t:"[起]{お}きてみましたが、[起]{お}きられませんでした。", why:"A failed attempt uses ～ようとする: [起]{お}きようとしましたが…"},
+    {t:"[日本]{にほん}の[歌]{うた}を[歌]{うた}ってみりました。", why:"みる is an ichidan verb, so its polite past is みました: [歌]{うた}ってみました."},
+    {t:"[日本]{にほん}の[歌]{うた}を[歌]{うた}いてみました。", why:"The て-form of [歌]{うた}う is [歌]{うた}って (う → って)."}
+  ]},
+  {id:"e3u6-q54", lesson:"e3u6-l6", level:1, q:"Which word goes most naturally at the start of a sentence ending in ～かもしれません?", options:[
+    {t:"もしかしたら", ok:true, why:"もしかしたら (possibly) matches the uncertainty of かもしれません."},
+    {t:"きっと", why:"きっと (surely) goes with でしょう or a firm statement, not with “maybe”."},
+    {t:"ぜったい", why:"ぜったい (absolutely) clashes with the uncertainty of かもしれません."},
+    {t:"かならず", why:"かならず (without fail) clashes with “maybe”."}
+  ]}
   ]
 });

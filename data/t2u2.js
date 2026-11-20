@@ -122,7 +122,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u2-l1-x1", type:"mcq", q:"Look at `<p>Open daily</p>`. Which statement is accurate?", options:[
-      {t:"`<p>` and `</p>` are two tags; together with the text they form one element", ok:true, why:"Right. Tags are the markers. The element is everything from the opening tag to the closing tag, content included."},
+      {t:"The two tags and the text form one element", ok:true, why:"Right. `<p>` and `</p>` are two tags, the markers. The element is everything from the opening tag to the closing tag, content included."},
       {t:"It contains two elements: `<p>` and `</p>`", why:"Those are the opening and closing tags of a **single** paragraph element, not two elements."},
       {t:"“Open daily” is an attribute of the paragraph", why:"Attributes live inside the opening tag, like `lang=\"en\"`. The words between the tags are the element’s content."},
       {t:"The closing tag is optional, so it isn’t part of the element", why:"Whether or not a closing tag is optional, when it’s written it belongs to the element. Writing it is the clearest habit."}
@@ -134,7 +134,7 @@ ICA.addUnit({
       {t:"It shows an error message on the page", why:"HTML mistakes never show error messages on the page, which is why they’re easy to miss. A validator would report them."}
     ]},
     {id:"t2u2-l1-x3", type:"mcq", q:"Ana’s event page contains `<p>Doors open at <strong>7 pm.</p><p>Bring a cushion.</p>`. How will it look?", options:[
-      {t:"“7 pm.” is bold, and so is the whole next paragraph, “Bring a cushion.”", ok:true, why:"The `<strong>` was never closed. The browser closes it at the end of the first paragraph and then reopens it in the next one, so the bold spreads. Closing `</strong>` before `</p>` fixes it."},
+      {t:"“7 pm.” and the whole next paragraph are bold", ok:true, why:"The `<strong>` was never closed. The browser closes it at the end of the first paragraph and then reopens it in the next one, so the bold spreads. Closing `</strong>` before `</p>` fixes it."},
       {t:"Only “7 pm.” is bold; the browser knows where it should stop", why:"The browser can only follow its repair rules; it can’t read Ana’s mind. Those rules carry the open `<strong>` into the next paragraph."},
       {t:"Nothing is bold, because the element is broken", why:"Browsers don’t discard a broken element; they repair it. The repair here makes more text bold, not less."},
       {t:"The page shows the tags as text", why:"Tags are only shown as text when written with references like `&lt;`. These are real tags, just badly nested."}
@@ -302,13 +302,13 @@ ICA.addUnit({
       {t:"The title is too long", why:"The title only affects the tab, bookmarks and search results, not the size of the page content."}
     ]},
     {id:"t2u2-l2-x4", type:"mcq", q:"Priya’s page should say “Crème brûlée, 4.50”, but a visitor sees “CrÃ¨me brÃ»lÃ©e, 4.50”. What should she check first?", options:[
-      {t:"That the head starts with `<meta charset=\"utf-8\">` and the file is saved as UTF-8", ok:true, why:"Those odd pairs of letters are classic signs of UTF-8 bytes being read with another encoding. Declaring UTF-8 (and saving in it) makes the browser read them correctly."},
+      {t:"That the page is declared and saved as UTF-8", ok:true, why:"Those odd pairs of letters are classic signs of UTF-8 bytes being read with another encoding. Check that the head starts with `<meta charset=\"utf-8\">` and the file is saved as UTF-8; then the browser reads them correctly."},
       {t:"That every accented letter is written as a character reference", why:"That would work around it, but it’s unnecessary: with UTF-8 declared you can type accents directly."},
       {t:"That the `lang` attribute says `fr`", why:"`lang` tells software which language the words are in; it doesn’t control how bytes become letters."},
       {t:"That the viewport line is present", why:"The viewport affects layout width on phones, not how characters are decoded."}
     ]},
     {id:"t2u2-l2-x5", type:"mcq", q:"Lucía’s bakery site is written entirely in Spanish, but her editor generated `<html lang=\"en\">`. Who is most affected?", options:[
-      {t:"People using screen readers, who will hear the Spanish read with English pronunciation", ok:true, why:"Screen readers choose a voice from `lang`. The wrong code makes the text hard to understand. It can also confuse translation offers and search engines. The fix is `lang=\"es\"`."},
+      {t:"Screen reader users, who will hear English pronunciation", ok:true, why:"Screen readers choose a voice from `lang`. The wrong code makes the text hard to understand. It can also confuse translation offers and search engines. The fix is `lang=\"es\"`."},
       {t:"No one: `lang` is only for search engines", why:"Search engines use it, but its most direct effect is on speech: screen readers pick their pronunciation from it."},
       {t:"Visitors on phones, whose screens will show English letters", why:"`lang` doesn’t change which characters are shown; the encoding does that."},
       {t:"Visitors outside Spain, who will be blocked from the page", why:"`lang` never blocks anyone. It describes the content’s language."}
@@ -489,7 +489,7 @@ ICA.addUnit({
       ["“WCAG” the second time it appears","<abbr>","An abbreviation; spell it out in full in the text the first time."]
     ]},
     {id:"t2u2-l3-x8", type:"mcq", q:"Sione’s club page uses bold paragraphs instead of headings and lines starting with “•” instead of lists. A member who uses a screen reader says the page is “one long block”. What’s the root cause?", options:[
-      {t:"The structure is only visual, so the screen reader can’t offer headings or lists to jump through", ok:true, why:"Screen readers navigate by elements. Without `<h2>`s and `<ul>`s, there’s nothing to jump to, and the page is read as continuous paragraphs. WCAG 1.3.1 asks for visible structure to exist in the code."},
+      {t:"The structure is only visual, not in the code", ok:true, why:"The screen reader can’t offer headings or lists to jump through. Screen readers navigate by elements. Without `<h2>`s and `<ul>`s, there’s nothing to jump to, and the page is read as continuous paragraphs. WCAG 1.3.1 asks for visible structure to exist in the code."},
       {t:"The member’s screen reader is out of date", why:"No screen reader can find headings that aren’t marked up. The fix is in the HTML."},
       {t:"The text is too long, so it should be shortened", why:"Length isn’t the problem; long pages are easy to navigate when headings and lists are real elements."},
       {t:"The bold text should be made bigger", why:"Size and weight are invisible to a screen reader. Only the element type changes what it can do."}
@@ -670,7 +670,7 @@ ICA.addUnit({
       {t:"A photo of the printed logo", why:"A photo adds blur, shadows and background. Ask whoever designed it for the original vector file."}
     ]},
     {id:"t2u2-l4-x8", type:"mcq", q:"Mei finds a lovely photo of a mountain through an image search for her hiking club’s page. The page it came from shows no licence or © notice. What should she do?", options:[
-      {t:"Assume it’s protected and use her own photo or one with a clear licence, such as Creative Commons, credited properly", ok:true, why:"Copyright applies automatically, notice or not. A Creative Commons image credited with Title, Author, Source and Licence, or her own photo, avoids the problem."},
+      {t:"Assume it’s protected; use her own photo or a clearly licensed one", ok:true, why:"Copyright applies automatically, notice or not. A Creative Commons image credited with Title, Author, Source and Licence, or her own photo, avoids the problem."},
       {t:"Use it, because with no © notice it’s public domain", why:"No notice is needed for copyright to apply. Missing information means “ask or assume all rights reserved”, not “free”."},
       {t:"Use it, but link `src` to the original site so she isn’t copying it", why:"That’s hotlinking: it still uses the work without permission, uses their bandwidth, and the image can change or vanish."},
       {t:"Use it, as long as the club’s site isn’t making money", why:"Non-commercial use doesn’t remove copyright. Some licences allow non-commercial use, but only if the owner has given that licence."}
@@ -820,7 +820,7 @@ ICA.addUnit({
       "<table>\n  ", {t:"<caption>Repair prices</caption>", flag:false, why:"A caption first inside the table: exactly right."}, "\n  <tr>\n    ", {t:"<td>Repair</td>", flag:true, why:"This is a column header, so it should be `<th scope=\"col\">Repair</th>`. As a `<td>`, a screen reader treats it as ordinary data."}, "\n    ", {t:"<th scope=\"col\">Price</th>", flag:false, why:"A correct column header."}, "\n  </tr>\n  <tr>\n    ", {t:"<th scope=\"row\">Puncture</th>", flag:false, why:"A correct row header: it names what this row is about."}, "\n    ", {t:"<td>8.00</td>", flag:false, why:"An ordinary data cell."}, "\n  </tr>\n  <tr>\n    ", {t:"<td><b>Brakes</b></td>", flag:true, why:"Bold only makes it look like a header. It should be `<th scope=\"row\">Brakes</th>`, like Puncture above."}, "\n    <td>15.00</td>\n  </tr>\n</table>"
     ]},
     {id:"t2u2-l5-x5", type:"mcq", q:"Lucía’s sign-up form has `<label for=\"email\">Email</label>` and `<input type=\"email\" id=\"e-mail\" name=\"email\">`. What’s the effect?", options:[
-      {t:"The label isn’t connected: tapping it does nothing, and screen readers may announce an unlabelled field", ok:true, why:"`for` must match the input’s `id` exactly. “email” and “e-mail” are different, so the connection is lost even though the label looks right."},
+      {t:"The label isn’t connected to the input", ok:true, why:"`for` must match the input’s `id` exactly. “email” and “e-mail” are different, so the connection is lost even though the label looks right: tapping it does nothing, and screen readers may announce an unlabelled field."},
       {t:"It works, because the `name` matches the label’s `for`", why:"`for` connects to `id`, not `name`. `name` only labels the data when it’s sent."},
       {t:"It works, because the label is right next to the input", why:"Being next to each other on screen doesn’t connect them in the code."},
       {t:"The form can’t be submitted", why:"The form still submits; the problem is that the field has no programmatic label."}
@@ -833,7 +833,7 @@ ICA.addUnit({
       ["“I agree to the hall rules”","type=\"checkbox\"","A yes/no choice is a checkbox. Add `required` if it must be ticked."]
     ]},
     {id:"t2u2-l5-x7", type:"mcq", q:"Kenji’s page passes the W3C validator with no errors. His friend says, “Great, so it’s accessible.” What’s the most accurate reply?", options:[
-      {t:"Not necessarily: the validator checks that the HTML follows the rules, not whether alt text, link text or headings make sense", ok:true, why:"Valid code is a good foundation, but `alt=\"image\"` and “click here” are perfectly valid. Human checks are still needed."},
+      {t:"Not necessarily: valid isn’t the same as accessible", ok:true, why:"The validator checks that the HTML follows the rules, not whether alt text, link text or headings make sense. Valid code is a good foundation, but `alt=\"image\"` and “click here” are perfectly valid. Human checks are still needed."},
       {t:"Yes: valid HTML is accessible by definition", why:"Validity is about the code’s grammar. Meaningless alt text or a confusing heading order can be valid."},
       {t:"No: the validator only checks spelling", why:"It checks much more than spelling: nesting, required elements and attributes, duplicate ids and where elements may go."},
       {t:"It depends on the browser the friend uses", why:"Accessibility issues like vague link text affect people in every browser. It’s about the content, not the browser."}
@@ -865,6 +865,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u2-q02","t2u2-q05","t2u2-q08","t2u2-q12","t2u2-q15","t2u2-q20","t2u2-q23","t2u2-q28","t2u2-q31","t2u2-q37","t2u2-q40","t2u2-q44"],
+  cpBank:[
+    {id:"t2u2-cp01", lesson:"t2u2-l1", level:1, q:"Lena leaves a note in her page’s HTML: `<!-- Wi-Fi password: tulip22 -->`. Once the page is online, who can read it?", options:[{t:"Nobody, because the browser skips comments", why:"The browser skips comments when it draws the page, but they are still in the file it receives. Anyone can read them in the source."}, {t:"Anyone who views the page’s source", ok:true, why:"Comments are hidden from the page but not private. Every visitor downloads the file, and view source shows them."}, {t:"Only Lena, because she wrote it in her editor", why:"Once published, the whole file goes to every visitor’s browser, comments included."}, {t:"Only people who know the site’s password", why:"View source needs no password. Never put passwords, keys or private notes in a comment."}]},
+    {id:"t2u2-cp02", lesson:"t2u2-l1", level:2, q:"Kofi writes `<div class=\"note\" />` and then three paragraphs. What does the browser do with that slash?", options:[{t:"Treats it as an empty div, closed before the paragraphs start", why:"That would be true in XHTML, not HTML. In HTML the slash doesn’t close an element that isn’t void."}, {t:"Shows the slash as text on the page", why:"The slash is inside the tag, so it is never shown. The browser simply ignores it."}, {t:"Ignores it, so the paragraphs end up inside the div", ok:true, why:"The slash is only allowed (and ignored) on void elements. `<div />` is treated as an opening `<div>`, and what follows goes inside it."}, {t:"Refuses to show the page until it is fixed", why:"Browsers never refuse to show a page. They repair mistakes by rules, often not the way you meant."}]},
+    {id:"t2u2-cp03", lesson:"t2u2-l1", level:3, q:"Chris wants his top-10 list to count up as normal, so he writes `<ol reversed=\"no\">` with ten items. What do visitors see?", options:[{t:"The list counts up, because the value is `no`", why:"Boolean attributes ignore their value. Being present means on, just as `checked=\"false\"` still ticks a checkbox."}, {t:"The browser hides the list because the value is wrong", why:"An odd attribute value never hides an element. The list shows, counting down."}, {t:"The numbers change to bullet points", why:"Bullets come from `<ul>`. An `<ol>` keeps its numbers; `reversed` only changes their direction."}, {t:"The list counts down from 10 to 1", ok:true, why:"`reversed` is a boolean attribute: if it is present, it is on, whatever its value. To count up, remove it."}]},
+    {id:"t2u2-cp04", lesson:"t2u2-l2", level:2, q:"Ama’s page is in English, but one sentence quotes a proverb in Swahili. What should she add so screen readers pronounce the proverb correctly?", options:[{t:"`lang=\"sw\"` on the `<html>` element", why:"That tells software the whole page is in Swahili, so all the English text would be read with the wrong pronunciation."}, {t:"An HTML comment saying the proverb is in Swahili", why:"Browsers and screen readers skip comments. Only a `lang` attribute tells them the language."}, {t:"`lang=\"sw\"` on an element around just the proverb", ok:true, why:"Mark a phrase in another language with its own `lang`, for example `<span lang=\"sw\">`. The rest of the page stays English."}, {t:"Nothing, because screen readers detect each language", why:"Screen readers rely on the language the code declares. Without `lang`, the proverb is read with English pronunciation."}]},
+    {id:"t2u2-cp05", lesson:"t2u2-l2", level:3, q:"Tomás put `<h1>Spring fair</h1>` inside the `<head>` by mistake. The heading still shows on the page. Why does it still matter?", options:[{t:"The browser silently moved it, changing his structure", ok:true, why:"Visible content can’t stay in the head, so the browser ends the head early and moves the heading into the body. The page is no longer what he wrote, and a validator reports it."}, {t:"It doesn’t matter, because headings are allowed in the head", why:"Nothing in the head is shown. The heading only appears because the browser moved it into the body."}, {t:"The heading will disappear on phones", why:"The repair works the same on every device. The problem is hidden structure, not missing text."}, {t:"The whole page will switch to quirks mode", why:"Quirks mode comes from a missing doctype, not from a heading in the wrong place."}]},
+    {id:"t2u2-cp06", lesson:"t2u2-l2", level:2, q:"The page `events/quiz.html` has `<link rel=\"stylesheet\" href=\"style.css\">`, but `style.css` is at the top of the site. The quiz page shows only default styles. What’s the fix?", options:[{t:"`href=\"events/style.css\"`", why:"From inside `events/`, this asks for `events/events/style.css`. The path must go up, not down."}, {t:"`href=\"../style.css\"`", ok:true, why:"Stylesheet paths work like links: they start from the page’s own folder. `../` goes up from `events/` to where `style.css` is."}, {t:"`rel=\"style\"` instead of `rel=\"stylesheet\"`", why:"`rel=\"stylesheet\"` is already right. The browser found no file because the path is wrong."}, {t:"Moving the `<link>` line into the `<body>`", why:"Stylesheet links belong in the head. Moving the line wouldn’t change where the browser looks for the file."}]},
+    {id:"t2u2-cp07", lesson:"t2u2-l3", level:1, q:"Mira writes “I asked for green tea, not black.” She wants to mark the stress on “green”, the way she would say it aloud. Which element fits?", options:[{t:"`<em>`", ok:true, why:"`<em>` is stress emphasis: the words you would stress when speaking, which can change the meaning."}, {t:"`<strong>`", why:"`<strong>` means seriousness or urgency, such as a warning. This is spoken stress, not importance."}, {t:"`<b>`", why:"`<b>` draws attention without extra meaning, like a keyword. It doesn’t mark spoken stress."}, {t:"`<i>`", why:"`<i>` is for text in a different voice, such as a foreign phrase or a scientific name."}]},
+    {id:"t2u2-cp08", lesson:"t2u2-l3", level:2, q:"Kemi’s quiz night is on 4 May 2026. She wrote the date as “04/05”, which some readers take as 5 April. Which markup lets calendars and search engines read it correctly?", options:[{t:"`<abbr>04/05</abbr>`", why:"`<abbr>` marks an abbreviation. It gives software no date it can read."}, {t:"`<strong>04/05</strong>`", why:"Marking it as important doesn’t say which date it is. It stays ambiguous."}, {t:"`<cite>4 May</cite>`", why:"`<cite>` holds the title of a work, such as a book or a film, not a date."}, {t:"`<time datetime=\"2026-05-04\">4 May</time>`", ok:true, why:"`<time>` with a machine-readable `datetime` lets software read the date without guessing. “4 May” is also clearer for people."}]},
+    {id:"t2u2-cp09", lesson:"t2u2-l4", level:1, q:"A UK bakery’s number is 020 7946 0555. Which link lets phones call it from any country?", options:[{t:"`href=\"tel:020 7946 0555\"`", why:"Without `+` and the country code, it fails from other countries. Write the number with `+`, the country code and no spaces."}, {t:"`href=\"+442079460555\"`", why:"Without `tel:`, this is a relative path: the browser looks for a file with that name on the site."}, {t:"`href=\"tel:+442079460555\"`", ok:true, why:"`tel:` makes phones offer to call. International format, with `+`, the country code and no spaces, works from anywhere."}, {t:"`href=\"phone:+442079460555\"`", why:"The scheme is `tel:`, not `phone:`. Phones won’t treat this as a number to call."}]},
+    {id:"t2u2-cp10", lesson:"t2u2-l4", level:2, q:"Pedro’s 6000-pixel camera photo has `width=\"600\" height=\"400\"`. It looks small on the page, but the page loads slowly on phones. Why?", options:[{t:"The full-size file still downloads; he should resize the photo first", ok:true, why:"`width` and `height` reserve space; they don’t shrink the file. Resizing in a photo app can turn megabytes into a few hundred kilobytes."}, {t:"`width` and `height` make the browser download the photo twice", why:"The file downloads once, but at full size. The attributes only reserve a space of the right shape."}, {t:"He should delete `width` and `height` to make it faster", why:"Those attributes are useful: they prevent layout shift. The slow part is the huge file."}, {t:"He should save it as PNG, which is always smaller", why:"PNG is lossless and usually larger for photos. Resizing is the fix, and JPEG suits photos."}]},
+    {id:"t2u2-cp11", lesson:"t2u2-l4", level:3, q:"Amira finds a CC BY photo on another club’s site. She plans `<img src=\"https://other-club.example/lake.jpg\">` with a credit underneath. What should she do instead?", options:[{t:"Nothing, because the credit makes hotlinking fine", why:"The credit meets the licence, but hotlinking still uses their bandwidth, and the picture can change or vanish."}, {t:"Serve her own copy, with the credit, as the licence allows", ok:true, why:"Pointing `src` at someone else’s site is hotlinking: it uses their bandwidth, and they can change or remove the image at any time."}, {t:"Drop the credit, because linking to it isn’t copying the file", why:"CC BY requires credit however the image is shown. And hotlinking has problems of its own."}, {t:"Take a screenshot of the photo and upload that", why:"A screenshot is still their photo, at lower quality. Download the original, as the licence allows, and credit it."}]},
+    {id:"t2u2-cp12", lesson:"t2u2-l5", level:3, q:"Pablo’s page has a contact form and a newsletter form. Both email boxes use `id=\"email\"`, each with `<label for=\"email\">`. Tapping the second label puts the cursor in the first box. What’s the fix?", options:[{t:"Change the second box to `type=\"text\"`", why:"The type doesn’t decide which box a label reaches. The repeated `id` does."}, {t:"Put the second label after its input", why:"Position doesn’t matter for a `for` label. It still points to the first element with that `id`."}, {t:"Give the two inputs different `name` values, keeping the `id`s", why:"`name` is what the value is sent under. Labels connect through `id`, so the duplicate `id` is the problem."}, {t:"Give each input its own `id` and match each label’s `for`", ok:true, why:"An `id` must be unique on its page. With two the same, both labels reach the first box. A validator also reports the duplicate."}]}
+  ],
   codex:[
    {id:"html-elements", title:"HTML elements, tags and attributes", aka:["element","tag","attribute","void element","nesting","character reference","HTML entity","comment","whitespace"], tags:["html","basics"],
     summary:"An element is an opening tag, content and a closing tag; attributes add information; elements nest like boxes; a few special characters need references.",
@@ -1251,7 +1265,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u2-q01", lesson:"t2u2-l1", level:1, q:"In `<a href=\"menu.html\">Our menu</a>`, what is `href=\"menu.html\"`?", options:[
-     {t:"An attribute: a name and a value inside the opening tag", ok:true, why:"Attributes add information about an element; this one says where the link goes."},
+     {t:"An attribute", ok:true, why:"An attribute is a name and a value inside the opening tag. Attributes add information about an element; this one says where the link goes."},
      {t:"The element’s content", why:"The content is “Our menu”, the text between the tags."},
      {t:"The closing tag", why:"The closing tag is `</a>`, with a slash."},
      {t:"A separate element", why:"It has no tags of its own; it lives inside the `<a>` opening tag."}
@@ -1287,8 +1301,8 @@ ICA.addUnit({
      {t:"No checkbox at all", why:"The input still appears; the attribute only affects whether it starts ticked."}
    ]},
    {id:"t2u2-q07", lesson:"t2u2-l1", level:1, q:"What is an HTML comment for?", options:[
-     {t:"A note for people reading the code, which the browser doesn’t show", ok:true, why:"Comments, written `<!-- … -->`, are for explanations and reminders in the source."},
-     {t:"Hiding passwords from visitors", why:"Comments are visible to anyone who views the source. Never put secrets in them."},
+     {t:"A note for people reading the code", ok:true, why:"Comments, written `<!-- … -->`, are for explanations and reminders in the source. The browser doesn’t show them."},
+     {t:"Hiding passwords and other secrets from visitors", why:"Comments are visible to anyone who views the source. Never put secrets in them."},
      {t:"Adding a speech bubble on the page", why:"Comments produce nothing on the page at all."},
      {t:"Making the browser load faster", why:"Comments don’t change speed in any useful way; they’re for humans."}
    ]},
@@ -1299,9 +1313,9 @@ ICA.addUnit({
      {t:"The address must be relative", why:"Absolute addresses are fine in `href`; the problem is the missing quote."}
    ]},
    {id:"t2u2-q09", lesson:"t2u2-l1", level:1, q:"Which is true about `<br>` and `<br />`?", options:[
-     {t:"In HTML they mean exactly the same; the slash is optional and ignored", ok:true, why:"The slash on void elements is a leftover from XHTML. Both are valid; pick one style."},
+     {t:"They mean the same; the slash is optional", ok:true, why:"In HTML the slash on void elements is optional and ignored: a leftover from XHTML. Both are valid; pick one style."},
      {t:"Only `<br />` is valid in modern HTML", why:"`<br>` is perfectly valid; it’s what MDN and the HTML standard use in most examples."},
-     {t:"`<br />` makes two line breaks", why:"Both make a single line break."},
+     {t:"`<br />` makes two line breaks instead of one", why:"Both make a single line break."},
      {t:"`<br>` needs a closing `</br>`", why:"`<br>` is a void element: it never has a closing tag."}
    ]},
    /* ---- Lesson 2 ---- */
@@ -1318,8 +1332,8 @@ ICA.addUnit({
      {t:"`<p>Welcome!</p>`", why:"Paragraphs are visible content, so they belong in the body."}
    ]},
    {id:"t2u2-q12", lesson:"t2u2-l2", level:2, q:"What does `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">` do?", options:[
-     {t:"Tells mobile browsers to lay the page out at the device’s real width, at normal zoom", ok:true, why:"Without it, phones lay pages out for a desktop width (often 980 pixels) and shrink them."},
-     {t:"Makes the page load faster on phones", why:"It doesn’t change download speed; it changes the layout width."},
+     {t:"Makes phones lay the page out at their real width", ok:true, why:"It tells mobile browsers to use the device’s real width, at normal zoom. Without it, phones lay pages out for a desktop width (often 980 pixels) and shrink them."},
+     {t:"Makes the page download faster on phones and tablets", why:"It doesn’t change download speed; it changes the layout width."},
      {t:"Stops people zooming in", why:"That’s what `user-scalable=no` does, and you shouldn’t use it. This line doesn’t block zoom."},
      {t:"Sets the page’s language", why:"Language is set with the `lang` attribute on `<html>`."}
    ]},
@@ -1336,8 +1350,8 @@ ICA.addUnit({
      {t:"`<html language=\"ja\">`", why:"The attribute is called `lang`."}
    ]},
    {id:"t2u2-q15", lesson:"t2u2-l2", level:3, q:"Dmitri removed the first line of his page, `<!doctype html>`, to “tidy up”. Now some sizes and spacing look slightly different. What happened?", options:[
-     {t:"The browser switched to quirks mode, which uses old layout rules", ok:true, why:"Without a doctype, browsers imitate very old browsers. Putting the line back restores standards mode."},
-     {t:"The browser couldn’t find the body", why:"The browser creates html, head and body whether or not the tags are there; the doctype is about mode, not structure."},
+     {t:"The browser switched to quirks mode", ok:true, why:"Without a doctype, browsers use quirks mode, imitating the layout rules of very old browsers. Putting the line back restores standards mode."},
+     {t:"The browser couldn’t find where the body starts", why:"The browser creates html, head and body whether or not the tags are there; the doctype is about mode, not structure."},
      {t:"The character encoding changed", why:"The encoding comes from the charset declaration, not the doctype."},
      {t:"Nothing changed; it’s a coincidence", why:"The doctype has one job, choosing standards mode, and removing it does change some layout rules."}
    ]},
@@ -1354,7 +1368,7 @@ ICA.addUnit({
      {t:"`<css href=\"style.css\">`", why:"There’s no `<css>` element."}
    ]},
    {id:"t2u2-q18", lesson:"t2u2-l2", level:2, q:"Why is `defer` useful in `<script src=\"app.js\" defer><\/script>`?", options:[
-     {t:"The script runs after the whole page has been read, so it can find every element", ok:true, why:"Without it, a script in the head runs before the body exists and can fail to find elements."},
+     {t:"The script runs after the whole page is read", ok:true, why:"Then it can find every element. Without it, a script in the head runs before the body exists and can fail to find elements."},
      {t:"It stops the script from ever running", why:"Deferred scripts do run, just later."},
      {t:"It makes the script optional for old browsers", why:"`defer` is about timing, not optionality."},
      {t:"It lets you leave out the closing `<\/script>` tag", why:"`<script>` always needs its closing tag."}
@@ -1385,15 +1399,15 @@ ICA.addUnit({
      {t:"In the head", why:"Lists are visible content, so they belong in the body."}
    ]},
    {id:"t2u2-q23", lesson:"t2u2-l3", level:3, q:"Lucía writes “Contains nuts” on her bakery’s product page and wants it to stand out for safety. Which is best?", options:[
-     {t:"`<strong>Contains nuts.</strong>`, placed near the product name, not only in fine print", ok:true, why:"`<strong>` marks real importance, and placing the warning prominently means it works even when emphasis isn’t announced."},
+     {t:"`<strong>Contains nuts.</strong>`", ok:true, why:"`<strong>` marks real importance. Place it prominently, near the product name and not only in fine print, so it works even when emphasis isn’t announced."},
      {t:"`<em>Contains nuts.</em>`", why:"`<em>` is stress emphasis in speech, not importance or urgency."},
      {t:"`<b>Contains nuts.</b>`", why:"`<b>` draws attention **without** adding importance, which is the opposite of what a safety warning needs."},
-     {t:"Red text with no other change", why:"Colour alone doesn’t reach screen reader users or everyone with colour blindness, and adds no meaning."}
+     {t:"Red text, with no other change to the markup", why:"Colour alone doesn’t reach screen reader users or everyone with colour blindness, and adds no meaning."}
    ]},
    {id:"t2u2-q24", lesson:"t2u2-l3", level:2, q:"When is `<br>` the right choice?", options:[
-     {t:"For line breaks that are part of the content, such as lines of an address or a poem", ok:true, why:"That’s exactly its purpose."},
+     {t:"For line breaks that are part of the content", ok:true, why:"For example, the lines of an address or a poem. That’s exactly its purpose."},
      {t:"To separate paragraphs", why:"Separate paragraphs need separate `<p>` elements."},
-     {t:"To add space above a heading", why:"Spacing is a job for CSS."},
+     {t:"To add some space above a heading or an image", why:"Spacing is a job for CSS."},
      {t:"To start a new list item", why:"List items are `<li>` elements."}
    ]},
    {id:"t2u2-q25", lesson:"t2u2-l3", level:2, q:"Which element fits the title of a book mentioned in a review?", options:[
@@ -1403,14 +1417,14 @@ ICA.addUnit({
      {t:"`<h1>`", why:"A heading names a section of your page, not a work you mention."}
    ]},
    {id:"t2u2-q26", lesson:"t2u2-l3", level:3, q:"Oluwaseun’s club page looks well organised, but a member using a screen reader can’t jump between sections. The page uses `<p class=\"big\">` for every section title. What should he change?", options:[
-     {t:"Turn the section titles into real heading elements (`<h2>`, `<h3>`) and style them with CSS", ok:true, why:"Screen readers navigate by heading elements. Styling a paragraph never makes it a heading."},
+     {t:"Use real heading elements and style them with CSS", ok:true, why:"Turn the section titles into `<h2>` and `<h3>` elements. Screen readers navigate by heading elements. Styling a paragraph never makes it a heading."},
      {t:"Make the paragraph text even bigger", why:"Size is invisible to a screen reader; only the element type matters."},
-     {t:"Add “Section:” at the start of each title", why:"The words help a little when read, but the reader still can’t jump to them."},
+     {t:"Add “Section:” at the start of each title so it’s announced", why:"The words help a little when read, but the reader still can’t jump to them."},
      {t:"Ask the member to change screen readers", why:"No screen reader can jump to headings that don’t exist in the code."}
    ]},
    {id:"t2u2-q27", lesson:"t2u2-l3", level:1, q:"What does WCAG 2.2 success criterion 1.3.1, “Info and Relationships”, ask for?", options:[
-     {t:"Structure people can see, like headings, lists and tables, must also exist in the code", ok:true, why:"That way software, such as screen readers, can pass the structure on."},
-     {t:"Every page must have exactly six heading levels", why:"Most pages use two or three levels; there’s no such rule."},
+     {t:"Structure you can see must also exist in the code", ok:true, why:"Visible structure, like headings, lists and tables, must be marked up, so that software, such as screen readers, can pass it on."},
+     {t:"Every page must have exactly six levels of headings", why:"Most pages use two or three levels; there’s no such rule."},
      {t:"Text must be at least 16 pixels", why:"WCAG has no fixed text-size rule; 1.3.1 is about structure."},
      {t:"Pages must load within a set time", why:"1.3.1 isn’t about speed."}
    ]},
@@ -1434,21 +1448,21 @@ ICA.addUnit({
      {t:"Nothing: # links are broken", why:"Fragment links work whenever an element with the matching id exists."}
    ]},
    {id:"t2u2-q31", lesson:"t2u2-l4", level:2, q:"What’s the difference between `alt=\"\"` and no alt attribute at all?", options:[
-     {t:"Empty alt marks the image as decorative so screen readers skip it; missing alt may make some read the file name", ok:true, why:"They send different messages. Empty alt is a deliberate choice; missing alt is an omission, and validators flag it."},
+     {t:"Empty alt marks it as decorative; missing alt is an omission", ok:true, why:"Empty alt tells screen readers to skip the image; with no alt, some read the file name instead. Empty alt is a deliberate choice; missing alt is an omission, and validators flag it."},
      {t:"There’s no difference", why:"MDN notes that with no alt, some screen readers announce the file name; empty alt tells them to skip."},
      {t:"Empty alt hides the image from sighted visitors", why:"The image still shows; alt only affects the text alternative."},
-     {t:"Missing alt is better for search engines", why:"Search engines use alt text to understand images; leaving it out gives them nothing."}
+     {t:"Missing alt is better for search engines, so pages rank higher", why:"Search engines use alt text to understand images; leaving it out gives them nothing."}
    ]},
    {id:"t2u2-q32", lesson:"t2u2-l4", level:3, q:"Ana’s site logo is an image inside a link to the home page, with `alt=\"\"`. A screen reader user hears “link” with no name, or the web address read out. What’s the fix?", options:[
-     {t:"Give the image alt text naming the destination, such as `alt=\"Riverside Café home\"`", ok:true, why:"For an image link, the alt becomes the link’s name. Empty alt leaves the link nameless."},
+     {t:"Give the image alt text that names the destination", ok:true, why:"For an image link, the alt becomes the link’s name, such as `alt=\"Riverside Café home\"`. Empty alt leaves the link nameless."},
      {t:"Add `title=\"Home\"` to the image", why:"`title` is announced inconsistently and shown only on mouse hover; alt is the reliable fix."},
-     {t:"Remove the alt attribute completely", why:"Then some screen readers read the file name, which is no better."},
+     {t:"Remove the alt attribute completely, so it isn’t empty", why:"Then some screen readers read the file name, which is no better."},
      {t:"Make the logo bigger", why:"Size doesn’t give the link a name."}
    ]},
    {id:"t2u2-q33", lesson:"t2u2-l4", level:2, q:"Why give an image its real `width` and `height`?", options:[
-     {t:"So the browser reserves the right space before the image loads and the page doesn’t jump", ok:true, why:"The browser uses the two numbers to work out the shape and keep space for it, preventing layout shift."},
+     {t:"So the page doesn’t jump as the image loads", ok:true, why:"The browser uses the two numbers to work out the shape and reserve the right space before the image loads, preventing layout shift."},
      {t:"To make a large file download faster", why:"The full file still downloads. Resize the file itself to make it smaller."},
-     {t:"Because the image won’t show without them", why:"Images show without them, but the page may jump as they load."},
+     {t:"Because the image won’t show on the page without them", why:"Images show without them, but the page may jump as they load."},
      {t:"To stop people zooming in on the image", why:"They don’t affect zoom."}
    ]},
    {id:"t2u2-q34", lesson:"t2u2-l4", level:1, q:"Which format suits a photo of a market stall?", options:[
@@ -1458,13 +1472,13 @@ ICA.addUnit({
      {t:"PNG, always", why:"PNG works but is lossless, so photos become much larger files than necessary."}
    ]},
    {id:"t2u2-q35", lesson:"t2u2-l4", level:3, q:"Tomás adds `target=\"_blank\"` to every link on his volunteer site “so people don’t leave”. Several older volunteers say the Back button “stopped working”. What’s the best advice?", options:[
-     {t:"Let links open in the same tab by default; use new tabs only for good reasons, and say so in the link text", ok:true, why:"A new tab breaks the Back button and can disorient people. When it’s genuinely helpful, “(opens in new tab)” warns them."},
-     {t:"Keep it, and tell volunteers to use the tab bar instead", why:"The problem is caused by the design, not the people. Taking away the Back button makes the site harder for everyone."},
+     {t:"Open links in the same tab unless there’s a good reason", ok:true, why:"A new tab breaks the Back button and can disorient people. Use new tabs only for good reasons, and say so in the link text: “(opens in new tab)” warns them."},
+     {t:"Keep it, and tell the volunteers to use the tab bar instead", why:"The problem is caused by the design, not the people. Taking away the Back button makes the site harder for everyone."},
      {t:"Add `rel=\"noopener\"` and the Back button will work", why:"`noopener` is about security; it doesn’t change the new tab’s missing history."},
      {t:"Use `mailto:` links instead", why:"`mailto:` starts an email; it’s for a different purpose entirely."}
    ]},
    {id:"t2u2-q36", lesson:"t2u2-l4", level:3, q:"Mei wants to use a Creative Commons BY photo from Wikimedia Commons on her hiking club’s site. What does the licence require?", options:[
-     {t:"Credit: title, author, source and licence, for example in a caption", ok:true, why:"CC BY allows reuse with attribution. The TASL pattern covers what’s needed."},
+     {t:"Credit: title, author, source and licence", ok:true, why:"CC BY allows reuse with attribution, for example in a caption. The TASL pattern covers what’s needed."},
      {t:"Nothing at all", why:"That’s CC0 or public domain. CC BY requires credit."},
      {t:"Paying a fee to the photographer", why:"Creative Commons licences are free to use under their conditions."},
      {t:"Linking `src` directly to the Wikimedia file instead of copying it", why:"Hotlinking doesn’t replace attribution and makes her page depend on another server."}
@@ -1489,10 +1503,10 @@ ICA.addUnit({
      {t:"Price is the table’s caption", why:"The caption goes in `<caption>`, first inside `<table>`."}
    ]},
    {id:"t2u2-q40", lesson:"t2u2-l5", level:3, q:"Dmitri lays out his whole page with an invisible table: logo in one cell, menu in another, text in a third. What’s the main problem?", options:[
-     {t:"Screen readers may announce it as a data table, it’s hard to maintain, and it won’t adapt to phones", ok:true, why:"These are MDN’s three reasons against layout tables. CSS layout does the job properly."},
+     {t:"It confuses screen readers and won’t adapt to phones", ok:true, why:"These are MDN’s reasons against layout tables: screen readers may announce it as a data table, it’s hard to maintain, and it won’t adapt to phones. CSS layout does the job properly."},
      {t:"Tables can’t contain images", why:"Table cells can contain images; the problem is using tables for layout at all."},
      {t:"Browsers no longer support tables", why:"Tables are fully supported, for data."},
-     {t:"Nothing, as long as it has a caption", why:"A caption would make it worse: it would announce a layout as if it were data."}
+     {t:"Nothing, as long as the table has a caption describing it", why:"A caption would make it worse: it would announce a layout as if it were data."}
    ]},
    {id:"t2u2-q41", lesson:"t2u2-l5", level:2, q:"What connects a `<label>` to an `<input>`?", options:[
      {t:"The label’s `for` matches the input’s `id`", ok:true, why:"Then tapping the label focuses the input, and screen readers announce the label. Wrapping the input inside the label also works."},
@@ -1507,7 +1521,7 @@ ICA.addUnit({
      {t:"`type=\"date\"`", why:"Date fields give a date picker, not a keypad."}
    ]},
    {id:"t2u2-q43", lesson:"t2u2-l5", level:3, q:"Fatima added `required` and `type=\"email\"` to her sign-up form and says, “Now nobody can send bad data.” Is she right?", options:[
-     {t:"No: browser checks help honest visitors but can be bypassed, so whatever receives the data must check it too", ok:true, why:"Client-side checks are for convenience. MDN: you need both client-side and server-side validation."},
+     {t:"No: the checks can be bypassed", ok:true, why:"Browser checks help honest visitors but can be bypassed, so whatever receives the data must check it too. MDN: you need both client-side and server-side validation."},
      {t:"Yes: browsers always enforce `required`", why:"Anyone can send data without using the form, or edit the page in developer tools."},
      {t:"Yes, but only on phones", why:"There’s no difference by device; client checks are bypassable everywhere."},
      {t:"No: `required` only works in one browser", why:"`required` works in all current browsers; the issue is that it can be bypassed."}

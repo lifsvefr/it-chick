@@ -85,9 +85,9 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u10-l1-x1", type:"mcq", q:"A study of one province finds that most people who left its villages moved to the nearest market towns, and most of the few who travelled far went to the capital. Which of Ravenstein’s patterns does this fit best?", options:[
-      {t:"Most migrants move short distances, and long-distance migrants head for big centres.", ok:true, why:"Right. Short moves dominate, and the long-distance movers go to the biggest centre of trade and industry: two of Ravenstein’s best-known patterns."},
+      {t:"Most moves are short; long moves go to big centres.", ok:true, why:"Right. Most migrants move short distances, and the long-distance movers go to the biggest centre of trade and industry: two of Ravenstein’s best-known patterns."},
       {t:"Every stream produces a counter-stream.", why:"The study describes only flows out of the villages. Nothing here shows people moving back the other way."},
-      {t:"Women move more than men over short distances.", why:"The study says nothing about who moved by sex, so it can’t show a gender pattern."},
+      {t:"Women move more than men, especially over short distances.", why:"The study says nothing about who moved by sex, so it can’t show a gender pattern."},
       {t:"Town people move more than country people.", why:"That reverses Ravenstein’s pattern (he found rural people more likely to move), and the study only looks at people leaving villages anyway."}
     ]},
     {id:"e2u10-l1-x2", type:"sort", q:"Sort each part of Riverbend’s story into the right part of Lee’s model.", buckets:["Factor at the origin","Factor at the destination","Intervening obstacle","Personal factor"], items:[
@@ -133,8 +133,8 @@ ICA.addUnit({
       {t:"Ravenstein’s “laws” were generalisations from 19th-century census data.", flag:false, why:"Accurate. He compared birthplaces and residences in the 1881 census of the United Kingdom, and later data from other countries."}
     ]},
     {id:"e2u10-l1-x7", type:"mcq", q:"Omar is among the poorest people in Riverbend. Conditions at home are hard and he would like to leave, but he hasn’t. Which critique of push–pull thinking does his situation show?", options:[
-      {t:"Strong “push” conditions don’t mean someone can move: migration needs resources such as money, contacts and documents.", ok:true, why:"Right. Push–pull predicts the worst-off should move most, but moving has costs that the poorest often can’t meet."},
-      {t:"Ravenstein’s step migration only applies to cities.", why:"Step migration is about moving in stages; it isn’t the issue in Omar’s case."},
+      {t:"Strong push conditions don’t mean someone can afford to move.", ok:true, why:"Right. Migration needs resources such as money, contacts and documents. Push–pull predicts the worst-off should move most, but moving has costs that the poorest often can’t meet."},
+      {t:"Ravenstein’s step migration only applies to people moving to cities.", why:"Step migration is about moving in stages; it isn’t the issue in Omar’s case."},
       {t:"Lee’s model ignores destinations.", why:"Lee’s model includes destination factors explicitly. The gap Omar shows is about resources to move."},
       {t:"Personal factors never matter.", why:"Lee’s model says personal factors do matter. The critique here is about the cost of moving."}
     ]}
@@ -251,7 +251,7 @@ ICA.addUnit({
       {t:"Commercial farms buying up land uproot rural people and create a mobile pool of workers.", b:3, why:"Capitalism spreading into the periphery, displacing older livelihoods, is a world-systems argument."}
     ]},
     {id:"e2u10-l2-x4", type:"mcq", q:"In Riverbend, the government introduces cheap, reliable crop insurance and a rural bank that lends to small farmers. What would **NELM** predict?", options:[
-      {t:"Some households would feel less need to send a migrant, because the insurance and credit do part of the job migration did.", ok:true, why:"Right. NELM sees migration partly as a way around missing insurance and credit markets. Fill those gaps and one reason to migrate weakens."},
+      {t:"Some households would feel less need to send a migrant.", ok:true, why:"Right. The insurance and credit do part of the job migration did. NELM sees migration partly as a way around missing insurance and credit markets. Fill those gaps and one reason to migrate weakens."},
       {t:"Migration would rise sharply, because insured farmers can afford to leave their land.", why:"NELM’s logic runs the other way: if risk is already covered, the household needs a migrant less. (Other effects are possible, but this isn’t NELM’s main prediction.)"},
       {t:"Nothing would change, because NELM only looks at wage gaps.", why:"Wage gaps are the neoclassical focus. NELM looks at household risk and missing markets, which this policy changes directly."},
       {t:"Employers abroad would stop recruiting.", why:"Recruitment is about demand at the destination (the dual labour market view). The policy changes conditions in Riverbend, not abroad."}
@@ -277,7 +277,7 @@ ICA.addUnit({
       {t:"Neoclassical theory correctly predicts that the poorest countries send the most emigrants.", flag:true, why:"Inaccurate. That is a well-known failure of simple wage-gap thinking: the poorest countries usually don’t have the highest emigration (Lesson 4)."}
     ]},
     {id:"e2u10-l2-x7", type:"mcq", q:"Which is a fair criticism of **historical-structural** (world-systems) theories of migration?", options:[
-      {t:"They can make migrants look like pawns of global forces and struggle to explain why most people in poorer regions never move.", ok:true, why:"Right. Critics say these theories are strong on structures but weak on individual choice and on variation between people and places."},
+      {t:"They can make migrants look like pawns of global forces.", ok:true, why:"Right. They also struggle to explain why most people in poorer regions never move. Critics say these theories are strong on structures but weak on individual choice and on variation between people and places."},
       {t:"They ignore colonial history.", why:"The opposite: colonial history is central to them."},
       {t:"They assume every migrant is a rational individual maximising income.", why:"That assumption belongs to neoclassical theory, not historical-structural views."},
       {t:"They only study households in rural villages.", why:"That focus is closer to NELM. Historical-structural theories look at the whole world economy."}
@@ -417,13 +417,13 @@ ICA.addUnit({
       ["Relative deprivation","A family sends a son abroad after neighbours build houses with remittances","Feeling poorer compared with others, not poorer in absolute terms."]
     ]},
     {id:"e2u10-l3-x5", type:"mcq", q:"What did Fussell and Massey (2004) find about cumulative causation in Mexico?", options:[
-      {t:"It was much weaker in large cities than in rural towns, because city people had other networks and options.", ok:true, why:"Right. Their study showed limits to cumulative causation: in urban areas, migration networks mattered less."},
-      {t:"It worked equally strongly everywhere.", why:"Their finding was precisely that it didn’t: it was weaker in large urban areas."},
+      {t:"It was weaker in big cities than in rural towns.", ok:true, why:"Right. City people had other networks and options. Their study showed limits to cumulative causation: in urban areas, migration networks mattered less."},
+      {t:"It worked equally strongly in cities and rural towns.", why:"Their finding was precisely that it didn’t: it was weaker in large urban areas."},
       {t:"It only applied to refugees.", why:"Their study was about labour migration from Mexican communities, not refugees."},
       {t:"Networks had no effect anywhere.", why:"Networks mattered, especially in rural towns. The finding was about where their effect weakened."}
     ]},
     {id:"e2u10-l3-x6", type:"mcq", q:"In de Haas’s framework, why does he place refugees in the same cell as people who choose to stay (low aspirations, high capabilities)?", options:[
-      {t:"Because refugees did not aspire to move but had no real option to remain, so they moved involuntarily.", ok:true, why:"Right. De Haas calls this involuntary mobility: the person moved, but not because they wanted to."},
+      {t:"Because they didn’t want to move but had to.", ok:true, why:"Right. Refugees did not aspire to move but had no real option to remain, so they moved involuntarily. De Haas calls this involuntary mobility: the person moved, but not because they wanted to."},
       {t:"Because refugees don’t really need protection.", why:"Nothing in the framework says that. It only describes the mix of aspiration and capability, and stresses that refugees were forced."},
       {t:"Because refugees are usually rich.", why:"The framework isn’t about wealth. Refugees come from every income group; the point is that they had no option to stay."},
       {t:"Because all migrants are voluntary.", why:"The framework explicitly includes involuntary mobility and involuntary immobility."}
@@ -542,7 +542,7 @@ ICA.addUnit({
       {t:"Only immigration changes; emigration stays the same.", why:"The hump is about emigration rising and later falling as incomes grow."}
     ]},
     {id:"e2u10-l4-x3", type:"mcq", q:"A chart shows that middle-income countries today have higher emigration than poor or rich ones. Kenji concludes: “So when any poor country gets richer, its emigration will definitely rise for a while.” What is the best response?", options:[
-      {t:"Not necessarily: a pattern across countries doesn’t prove what happens within one country over time, and researchers disagree on this point.", ok:true, why:"Right. Clemens (2020) argued the hump holds over time too, but Schneiderheinze and Benček (2024) found emigration falling with income in panel data. Reading within-country change off a cross-country chart is a mistake of levels, like the ecological fallacy."},
+      {t:"Not necessarily: a cross-country pattern isn’t a forecast.", ok:true, why:"Right. A pattern across countries doesn’t prove what happens within one country over time, and researchers disagree on this point. Clemens (2020) argued the hump holds over time too, but Schneiderheinze and Benček (2024) found emigration falling with income in panel data. Reading within-country change off a cross-country chart is a mistake of levels, like the ecological fallacy."},
       {t:"Yes: a cross-country chart proves exactly what each country will do.", why:"Cross-country patterns can differ from what happens inside each country over time. That is why researchers also use panel data."},
       {t:"No: the chart proves emigration will fall immediately.", why:"The chart shows a pattern across countries; it can’t prove a single country’s future in either direction."},
       {t:"Charts can’t say anything about migration.", why:"The chart is real evidence about differences between countries. The issue is what it can and can’t tell you."}
@@ -575,7 +575,7 @@ ICA.addUnit({
       {t:"Zelinsky’s model proves every country must follow the same five phases.", flag:true, why:"Inaccurate. It is a hypothesis based mostly on European history; critics stress that countries follow different paths."}
     ]},
     {id:"e2u10-l4-x7", type:"mcq", q:"What is the **WHO Global Code of Practice on the International Recruitment of Health Personnel**?", options:[
-      {t:"A voluntary code adopted by the World Health Assembly in 2010 that promotes ethical recruitment and support for health systems with shortages", ok:true, why:"Right. It is voluntary, not a treaty, and WHO publishes a list of countries with severe shortages from which active international recruitment is discouraged."},
+      {t:"A voluntary code on ethical recruitment of health workers (2010)", ok:true, why:"Right. The World Health Assembly adopted it in 2010; it promotes ethical recruitment and support for health systems with shortages. It is voluntary, not a treaty, and WHO publishes a list of countries with severe shortages from which active international recruitment is discouraged."},
       {t:"A binding treaty that bans nurses and doctors from working abroad", why:"The Code doesn’t ban anyone from migrating; health workers keep the right to move. It guides recruiters and governments."},
       {t:"A rule that only applies to doctors in Europe", why:"The Code is global and covers health personnel of all kinds."},
       {t:"A 1951 agreement about refugee doctors", why:"It dates from 2010 and is about recruitment of health workers generally, not refugees."}
@@ -678,7 +678,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u10-l5-x1", type:"mcq", q:"Which statement about women in international migration is best supported by UN DESA’s figures for 2024?", options:[
-      {t:"Women and girls were just under half of international migrants, and the number of male migrants has recently grown faster.", ok:true, why:"Right. UN DESA reports 48% women and girls in 2024, with male migration growing faster, mainly to Northern Africa and Western Asia."},
+      {t:"Women and girls were just under half of all migrants.", ok:true, why:"Right. UN DESA reports 48% women and girls among international migrants in 2024, with male migration growing faster, mainly to Northern Africa and Western Asia."},
       {t:"Women are now a large majority of international migrants.", why:"Not according to UN DESA: women and girls were 48% in 2024. “Feminisation” mostly refers to how women migrate, not a majority."},
       {t:"Women migrate almost only as wives following husbands.", why:"Many women migrate independently as workers, students and family heads; that change is what “feminisation” usually describes."},
       {t:"Women’s share of international migrants has doubled since 1990.", why:"It has stayed close to half for decades; it hasn’t doubled."}
@@ -699,13 +699,13 @@ ICA.addUnit({
       {t:"Its protocol says migrants shall not be prosecuted under it for having been its object.", b:1, why:"That is Article 5 of the Smuggling Protocol. (Other rules protect trafficking victims, but this wording is the Smuggling Protocol’s.)"}
     ]},
     {id:"e2u10-l5-x4", type:"mcq", q:"A headline says: “Thousands of climate refugees granted refugee status under the 1951 Convention because of rising seas.” What is the main problem with it?", options:[
-      {t:"The 1951 Convention doesn’t list environmental reasons, so rising seas alone don’t make someone a refugee under it.", ok:true, why:"Right. “Climate refugee” isn’t a legal category. Some people displaced in such contexts may qualify for other reasons (such as persecution or conflict), or get other forms of protection, but not because of rising seas alone."},
+      {t:"The 1951 Convention doesn’t list environmental reasons.", ok:true, why:"Right. Rising seas alone don’t make someone a refugee under it, and “climate refugee” isn’t a legal category. Some people displaced in such contexts may qualify for other reasons (such as persecution or conflict), or get other forms of protection, but not because of rising seas alone."},
       {t:"Nothing: the Paris Agreement added climate refugees to the Convention.", why:"The Paris Agreement didn’t change the refugee definition."},
       {t:"The problem is only the number; the legal claim is correct.", why:"The legal claim is the problem: environmental change isn’t a Convention ground."},
       {t:"Only internally displaced people can be refugees.", why:"The opposite: a refugee under the Convention must be outside their country. People displaced within their country are IDPs."}
     ]},
     {id:"e2u10-l5-x5", type:"mcq", q:"Riverbend suffers a severe drought. Based on research on environmental mobility, which outcome is **most likely**?", options:[
-      {t:"Some people move, mostly to nearby towns and often temporarily, while some of the poorest can’t move at all.", ok:true, why:"Right. Most environment-related movement is internal and short-distance, environmental stress combines with other drivers, and some people are trapped."},
+      {t:"Some people move, mostly nearby and often temporarily.", ok:true, why:"Right. Some of the poorest can’t move at all. Most environment-related movement is internal and short-distance, environmental stress combines with other drivers, and some people are trapped."},
       {t:"The whole village emigrates to another continent within weeks.", why:"Long-distance international moves are the exception. Most people move nearby, if they move."},
       {t:"Nobody moves, because the environment never affects migration.", why:"Environmental change clearly affects mobility, usually alongside other factors."},
       {t:"Everyone who leaves becomes a refugee under the 1951 Convention.", why:"A drought isn’t a Convention ground, and people who stay in their own country can’t be Convention refugees."}
@@ -759,6 +759,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u10-q02","e2u10-q05","e2u10-q11","e2u10-q14","e2u10-q20","e2u10-q23","e2u10-q26","e2u10-q31","e2u10-q34","e2u10-q38","e2u10-q41","e2u10-q44"],
+  cpBank:[
+   {id:"e2u10-cp01", lesson:"e2u10-l1", level:1, q:"Ilse is thinking about a job in the city, but her mountain village has a close community where everyone helps each other, and she doesn’t want to lose that. In Lee’s model, the community is…", options:[
+     {t:"an intervening obstacle", why:"Intervening obstacles stand between origin and destination, such as distance, cost or visa rules. The community is part of where Ilse lives now."},
+     {t:"a plus at the origin", ok:true, why:"Right. Lee showed that origins also hold people. A close community is a factor at the origin that makes staying attractive."},
+     {t:"a minus at the destination", why:"The community is in her village, not in the city she might move to."},
+     {t:"a counter-stream", why:"A counter-stream is a smaller flow of people moving in the opposite direction. It isn’t a reason one person stays."}]},
+   {id:"e2u10-cp02", lesson:"e2u10-l3", level:1, q:"Kofi would love to work abroad, but he has no passport, no savings and no contacts in any other country. In de Haas’s framework, Kofi is an example of…", options:[
+     {t:"voluntary immobility", why:"Voluntary immobility is choosing to stay when you could move. Kofi wants to go but can’t."},
+     {t:"acquiescent immobility", why:"Acquiescent immobility is neither wanting to move nor being able to. Kofi does want to move."},
+     {t:"involuntary immobility", ok:true, why:"Correct. High aspirations but low capabilities is involuntary immobility, Carling’s term from research in Cape Verde."},
+     {t:"voluntary mobility", why:"Voluntary mobility means wanting to move and being able to. Kofi lacks the capabilities."}]},
+   {id:"e2u10-cp03", lesson:"e2u10-l5", level:1, q:"A 16-year-old girl is recruited in her country’s capital with a false promise of a shop job. She is taken to a factory in another city of the same country and forced to work without pay. How is this best described?", options:[
+     {t:"Migrant smuggling", why:"Smuggling is procuring someone’s illegal entry into another country for profit. No border was crossed here."},
+     {t:"Not a crime under the Palermo Protocols, because no border was crossed", why:"Trafficking doesn’t require crossing a border. It can happen entirely inside one country."},
+     {t:"Irregular migration", why:"Irregular migration is about moving outside the rules on entry or exit. This case is about exploiting a person."},
+     {t:"Trafficking in persons", ok:true, why:"Yes. She was recruited and moved (act), by deception (means), for forced labour (purpose). For a child, no means is even needed, and no border is required."}]},
+   {id:"e2u10-cp04", lesson:"e2u10-l2", level:2, q:"Invented figures. Arturo earns 150 a month on a farm. City jobs pay 500 a month, but only 25% of newcomers find one. Using the simple Harris–Todaro model, what is his expected city income, and what does the model predict?", options:[
+     {t:"125; he stays, because 125 is less than his farm income", ok:true, why:"Correct. Expected income = 500 × 0.25 = 125. Since 125 is below 150, the simple model predicts he stays."},
+     {t:"125; he moves, because city wages are higher than farm wages", why:"The calculation is right, but the model compares expected income (125) with his current income (150), not the city wage itself."},
+     {t:"500; he moves, because 500 is more than 150", why:"The model uses expected income: the wage multiplied by the chance of getting a job, not the wage alone."},
+     {t:"375; he moves, because 375 is more than 150", why:"375 is 500 − 125. Expected income is the wage times the chance of a job: 500 × 0.25 = 125."}]},
+   {id:"e2u10-cp05", lesson:"e2u10-l2", level:2, q:"In a rich city, local graduates compete for secure, well-paid hospital posts. Meanwhile, food-processing plants can’t find local workers for insecure, low-paid night shifts, so they recruit abroad. Which theory explains this best?", options:[
+     {t:"The new economics of labour migration", why:"NELM explains migration as household risk-spreading at the origin. This case is about employers’ demand at the destination."},
+     {t:"Cumulative causation", why:"Cumulative causation is migration feeding itself through networks and other changes. It doesn’t explain why employers need migrants for certain jobs."},
+     {t:"Dual labour market theory", ok:true, why:"Right. Piore argued that rich economies split into a secure primary sector and an insecure secondary sector that local workers avoid, so employers recruit migrants."},
+     {t:"Zelinsky’s mobility transition", why:"The mobility transition describes how types of movement change as societies modernise. It doesn’t explain demand for particular jobs."}]},
+   {id:"e2u10-cp06", lesson:"e2u10-l3", level:2, q:"A researcher studies a region where news and money from city migrants shape who leaves the villages next, and goods and ideas flow both ways between villages and cities. Which approach is she using?", options:[
+     {t:"A migration systems approach", ok:true, why:"Yes. Mabogunje described villages and cities linked by flows of people, money, goods and information, with feedback shaping later migration."},
+     {t:"Ravenstein’s idea of step migration", why:"Step migration is people moving in stages, village to town to city. It doesn’t focus on two-way flows and feedback."},
+     {t:"Neoclassical micro theory", why:"Neoclassical micro theory pictures individuals weighing costs and returns. It doesn’t look at feedback across a whole region."},
+     {t:"The trapped-population idea", why:"Trapped populations are people too poor or constrained to leave places becoming dangerous. That isn’t this study’s focus."}]},
+   {id:"e2u10-cp07", lesson:"e2u10-l4", level:2, q:"After a rich country opens visas for software graduates, enrolment in software degrees in Country C doubles. Only a small share of the new graduates leave. Which idea does this support?", options:[
+     {t:"Brain drain", why:"Brain drain stresses loss of skilled people. Here the chance to emigrate has increased the number of skilled people, and most stay."},
+     {t:"Brain gain (the incentive effect)", ok:true, why:"Correct. When a qualification can pay well abroad, more people study for it. If not all leave, the home country can end up with more skilled people."},
+     {t:"Brain waste", why:"Brain waste is skilled migrants working far below their training. Nothing here describes graduates in the wrong jobs."},
+     {t:"The migration hump at middle incomes", why:"The migration hump describes emigration rising and then falling as incomes grow. This case is about how emigration chances change education choices."}]},
+   {id:"e2u10-cp08", lesson:"e2u10-l5", level:2, q:"As droughts grow worse in a district, better-off families move to nearby towns. The poorest households cannot afford to leave, though staying is becoming dangerous. What do researchers call the poorest households?", options:[
+     {t:"Climate refugees under the 1951 Convention", why:"They haven’t left, and “climate refugee” isn’t a legal category under the 1951 Convention."},
+     {t:"A planned relocation", why:"Planned relocation is an organised move of a whole community. These households are unable to move at all."},
+     {t:"Circular migrants", why:"Circular migrants move back and forth repeatedly. These households can’t move."},
+     {t:"A trapped population", ok:true, why:"Right. The Foresight report (2011) warned of trapped populations: people too poor or constrained to leave places becoming more dangerous."}]},
+   {id:"e2u10-cp09", lesson:"e2u10-l1", level:3, q:"Two equally poor villages suffer the same drought. Many people leave Village X; almost nobody leaves Village Y. Village X has a new road to the city and many relatives already living there. What explains the difference best?", options:[
+     {t:"The push factors must have been stronger in Village X", why:"The drought and poverty were the same. Push–pull can’t explain why the same push leads to different outcomes."},
+     {t:"People in Village Y lack initiative", why:"Staying isn’t a sign of lacking initiative. Many people want to move but can’t, and others choose to stay."},
+     {t:"Ravenstein’s laws say drought always causes migration", why:"Ravenstein’s patterns are generalisations, not laws of nature, and he didn’t say drought always causes migration."},
+     {t:"The road and contacts give people in X the capability to move, which push–pull alone can’t explain", ok:true, why:"Correct. Networks lower costs and risks, and roads make moving possible. Migration needs capabilities as well as reasons, the gap in simple push–pull thinking."}]},
+   {id:"e2u10-cp10", lesson:"e2u10-l2", level:3, q:"In a village, families with migrants abroad build brick houses. Families without migrants begin to feel poor and send someone too. Within a decade, going abroad has become the normal step after school. Which pair of ideas describes this?", options:[
+     {t:"Neoclassical wage convergence, and the migration hump", why:"Nothing here is about wages evening out or national income levels. The change comes from comparisons and changing norms inside the village."},
+     {t:"Relative deprivation, feeding cumulative causation and a culture of migration", ok:true, why:"Right. Stark and Taylor’s relative deprivation explains why non-migrant families feel poorer. Massey’s cumulative causation explains how each move makes later moves more likely, until migration becomes a normal step."},
+     {t:"The dual labour market, and brain gain", why:"The dual labour market is about employers’ demand at the destination, and brain gain is about education incentives. Neither describes this village process."},
+     {t:"Push–pull, and step migration", why:"Push–pull lists factors but doesn’t explain how migration feeds itself. Step migration is about moving in stages."}]},
+   {id:"e2u10-cp11", lesson:"e2u10-l4", level:3, q:"A low-income country builds roads and schools. Over 15 years, average income rises from about US$2,000 to US$4,000 a year (PPP), and emigration rises too. Which interpretation is most careful?", options:[
+     {t:"Development has failed in this country, so people are leaving to escape it", why:"Rising emigration at low incomes doesn’t mean development failed. It often comes with rising incomes and education."},
+     {t:"It disproves the migration hump, which says emigration falls as incomes rise", why:"The hump says emigration first rises with income in poor countries and slows only after about US$5,000 (PPP). A rise between US$2,000 and US$4,000 is what it predicts."},
+     {t:"Emigration rose because the poorest people are the most likely to move abroad", why:"The poorest rarely move furthest, because moving costs money and needs contacts and documents."},
+     {t:"It fits the hump’s rising side, but a cross-country pattern can’t forecast one country", ok:true, why:"Yes. At low incomes, development raises both capabilities (what people can do) and aspirations (what they hope for). But the hump comes mostly from comparing countries, and a pattern across countries doesn’t automatically show what one country will do over time."}]},
+   {id:"e2u10-cp12", lesson:"e2u10-l5", level:3, q:"After floods destroy their crops, a family sends one son to work in the capital while the others stay and rebuild. The money he sends pays for repairs and seed. Which combination of ideas fits best?", options:[
+     {t:"The environment as one driver among several, with the household spreading risk (NELM)", ok:true, why:"Right. The floods combined with the family’s need for income. Sending one member to earn elsewhere, with remittances supporting those who stay, is NELM’s household strategy. And the move is internal, as most such moves are."},
+     {t:"He is a climate refugee under the 1951 Convention", why:"Floods are not persecution for a Convention reason, and he hasn’t left his country. “Climate refugee” isn’t a legal category."},
+     {t:"A neoclassical choice in which the floods played no part", why:"The floods clearly shaped the decision. Neoclassical theory also pictures a lone individual, while here the family planned the move together."},
+     {t:"A planned relocation of the whole community", why:"Planned relocation moves a whole community. Here one person moved while the family stayed."}]}
+  ],
   codex:[
    {id:"why-people-move", title:"Why people move: theories of migration", aka:["migration theory","theories of migration","migration drivers"], tags:["migration","theory","foundations"],
     summary:"A map of the main theories of why people migrate and why most stay, each working at a different scale, and why researchers combine them.",
@@ -1069,7 +1131,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e2u10-q01", lesson:"e2u10-l1", level:1, q:"What data did Ravenstein use for his 1885 “laws of migration”?", options:[
-     {t:"The 1881 census of the United Kingdom, comparing where people were born and where they lived", ok:true, why:"Correct. Birthplace and residence data let him see who had moved and how far."},
+     {t:"The 1881 UK census of birthplaces and residences", ok:true, why:"Correct. Comparing where people were born and where they lived let him see who had moved and how far."},
      {t:"Surveys asking people why they wanted to emigrate", why:"He worked from census records, not surveys of intentions."},
      {t:"Passenger lists from ships crossing the Atlantic", why:"His 1885 paper was about movement within the United Kingdom, using census data."},
      {t:"UN migration statistics", why:"The UN didn’t exist until 1945; Ravenstein wrote in the 1880s."}]},
@@ -1089,7 +1151,7 @@ ICA.addUnit({
      {t:"a personal factor", why:"Personal factors belong to the person (age, skills, family). The visa rules apply to everyone."},
      {t:"a counter-stream", why:"A counter-stream is a flow of people in the opposite direction."}]},
    {id:"e2u10-q05", lesson:"e2u10-l1", level:3, q:"In a poor rural district, the poorest families migrate least, and middle-income families migrate most. What does this suggest about simple push–pull thinking?", options:[
-     {t:"It misses that migration needs resources: the strongest “push” doesn’t mean people are able to move.", ok:true, why:"Right. This is one of the main critiques: moving costs money, contacts and documents."},
+     {t:"It misses that moving needs resources, not just a push.", ok:true, why:"Right. The strongest “push” doesn’t mean people are able to move. This is one of the main critiques: moving costs money, contacts and documents."},
      {t:"It proves push–pull is exactly right, because poverty pushes people out.", why:"If poverty alone pushed people out, the poorest would move most. Here they move least."},
      {t:"It shows that poverty has nothing to do with migration.", why:"Poverty matters, but through both motives and constraints. The pattern shows constraints, not irrelevance."},
      {t:"It shows Ravenstein’s step migration is wrong.", why:"The pattern is about who moves, not whether people move in steps."}]},
@@ -1099,9 +1161,9 @@ ICA.addUnit({
      {t:"brain drain", why:"Brain drain is about skilled people leaving a country, not retirees returning to villages."},
      {t:"an intervening obstacle", why:"Obstacles are things that make moving harder, not a flow of people."}]},
    {id:"e2u10-q07", lesson:"e2u10-l1", level:1, q:"What does Lee’s model add by marking **pluses at the origin**?", options:[
-     {t:"That places of origin also hold people, through land, family, community and familiarity", ok:true, why:"Correct. Origins don’t only push; they also keep people, which helps explain why most people stay."},
+     {t:"That places of origin also hold people", ok:true, why:"Correct. Land, family, community and familiarity hold people. Origins don’t only push; they also keep people, which helps explain why most people stay."},
      {t:"That everyone wants to leave home", why:"The pluses at origin show the opposite: things that make people want to stay."},
-     {t:"That destinations have no drawbacks", why:"Lee marks minuses at destinations too, such as high rents."},
+     {t:"That destinations have no drawbacks at all", why:"Lee marks minuses at destinations too, such as high rents."},
      {t:"That only rich people migrate", why:"The pluses describe places, not who is rich."}]},
    {id:"e2u10-q08", lesson:"e2u10-l1", level:3, q:"A rich country offers jobs to engineers with degrees. According to Lee’s idea of selection, who is most likely to go?", options:[
      {t:"People more educated or skilled than the average in their country", ok:true, why:"Right. Migrants answering strong attractions tend to be positively selected."},
@@ -1109,13 +1171,13 @@ ICA.addUnit({
      {t:"Mostly people with no education", why:"The jobs require degrees; selection runs towards the more educated."},
      {t:"Mostly retired people", why:"Working-age people at a career turning point are much more likely to answer job offers."}]},
    {id:"e2u10-q09", lesson:"e2u10-l1", level:1, q:"What is the main critique researchers such as Skeldon and de Haas make of push–pull models?", options:[
-     {t:"They list factors without explaining how those factors combine or why some people move and others stay.", ok:true, why:"Correct. Skeldon called push–pull “a platitude at best”; de Haas says it lacks a mechanism."},
+     {t:"They list factors without explaining how they combine.", ok:true, why:"Correct. Nor do they explain why some people move and others stay. Skeldon called push–pull “a platitude at best”; de Haas says it lacks a mechanism."},
      {t:"They ignore distance completely.", why:"Distance is central to both Ravenstein and Lee."},
      {t:"They only apply to refugees.", why:"Push–pull models are applied to all kinds of migration."},
-     {t:"They are too mathematical for most readers.", why:"Push–pull is usually criticised for being too simple, not too mathematical."}]},
+     {t:"They are far too mathematical for most readers to follow.", why:"Push–pull is usually criticised for being too simple, not too mathematical."}]},
    /* ---- Lesson 2 ---- */
    {id:"e2u10-q10", lesson:"e2u10-l2", level:1, q:"According to neoclassical migration theory, what mainly drives labour migration?", options:[
-     {t:"Differences in wages (and expected income) between places", ok:true, why:"Correct. Workers move from low-wage to high-wage places when the expected gain outweighs the cost."},
+     {t:"Differences in wages between places", ok:true, why:"Correct. Differences in wages and expected income matter. Workers move from low-wage to high-wage places when the expected gain outweighs the cost."},
      {t:"Household strategies to spread risk", why:"That is the core of NELM."},
      {t:"Employers’ demand for low-status jobs", why:"That is dual labour market theory."},
      {t:"Colonial history and the world economy", why:"That is the historical-structural view."}]},
@@ -1130,22 +1192,22 @@ ICA.addUnit({
      {t:"Everett Lee", why:"Lee wrote “A Theory of Migration” (1966), the push–pull model."},
      {t:"Wilbur Zelinsky", why:"Zelinsky proposed the mobility transition (1971)."}]},
    {id:"e2u10-q13", lesson:"e2u10-l2", level:2, q:"Amara’s family farms cocoa. Prices swing wildly and there is no crop insurance, so the family pays for her brother to work in a city. Which theory fits best?", options:[
-     {t:"NELM: the household spreads risk by placing a member in a different labour market", ok:true, why:"Right. Missing insurance and risk-spreading are NELM’s central ideas."},
+     {t:"NELM: the household spreads its risk", ok:true, why:"Right. The household places a member in a different labour market. Missing insurance and risk-spreading are NELM’s central ideas."},
      {t:"Dual labour market theory", why:"That theory focuses on employers’ demand at the destination, not the family’s risk at home."},
      {t:"Zelinsky’s mobility transition", why:"That describes long-run phases of mobility in a society, not one family’s risk strategy."},
-     {t:"Ravenstein’s counter-stream", why:"A counter-stream is a return flow; this is a family strategy for sending someone out."}]},
+     {t:"Ravenstein’s counter-stream of returning migrants", why:"A counter-stream is a return flow; this is a family strategy for sending someone out."}]},
    {id:"e2u10-q14", lesson:"e2u10-l2", level:3, q:"Researchers find that households in a village are more likely to send a migrant after neighbours build houses with remittances, even when their own income hasn’t changed. Which idea explains this?", options:[
      {t:"Relative deprivation", ok:true, why:"Right. Stark and Taylor argued that feeling poorer compared with others can motivate migration."},
      {t:"Absolute poverty", why:"Their income hasn’t changed, so it isn’t absolute poverty that has shifted, but the comparison."},
      {t:"Brain gain", why:"Brain gain is about skills increasing at home, not households comparing their wealth."},
      {t:"Step migration", why:"Step migration is about moving in stages, not about why households decide to send someone."}]},
    {id:"e2u10-q15", lesson:"e2u10-l2", level:1, q:"In Piore’s dual labour market theory, what is the **secondary sector**?", options:[
-     {t:"Insecure, low-paid, low-status jobs with few prospects", ok:true, why:"Correct. Piore argued rich economies have a permanent demand for workers in these jobs."},
+     {t:"Insecure, low-paid, low-status jobs", ok:true, why:"Correct. These jobs offer few prospects. Piore argued rich economies have a permanent demand for workers in these jobs."},
      {t:"The farming sector in poor countries", why:"Piore’s sectors are inside the labour markets of rich industrial economies."},
      {t:"Secure, well-paid professional jobs", why:"That describes the primary sector."},
      {t:"Jobs in government", why:"The split is by security, pay and status, not by public versus private employer."}]},
    {id:"e2u10-q16", lesson:"e2u10-l2", level:2, q:"Why, according to Piore, don’t employers simply raise wages in low-status jobs to attract local workers?", options:[
-     {t:"Wages signal status, so raising pay at the bottom would push up pay all the way up the job ladder.", ok:true, why:"Right. Piore called this structural inflation; recruiting migrants avoids it."},
+     {t:"Wages signal status, so pay would rise all up the ladder.", ok:true, why:"Right. Raising pay at the bottom would push up pay all the way up the job ladder. Piore called this structural inflation; recruiting migrants avoids it."},
      {t:"Because the law forbids raising wages", why:"Piore’s argument is about the structure of pay and status, not a legal ban."},
      {t:"Because local workers don’t need money", why:"Local workers need income; they avoid low-status jobs for reasons of status and identity."},
      {t:"Because migrants always demand higher wages than local workers", why:"Piore argued the opposite: target-earning migrants may accept low-status jobs."}]},
@@ -1155,15 +1217,15 @@ ICA.addUnit({
      {t:"NELM", why:"NELM focuses on household risk and income, not colonial history."},
      {t:"Ravenstein’s step migration", why:"Step migration is about stages of movement, not colonial links."}]},
    {id:"e2u10-q18", lesson:"e2u10-l2", level:3, q:"A critic says: “Neoclassical theory predicts that migration should stop once wages are equal, yet migration often continues after wage gaps shrink.” Which theories in this unit help explain continued migration?", options:[
-     {t:"Network and cumulative causation theories, because ties built up over time keep lowering the cost of moving", ok:true, why:"Right. Once networks exist, migration can continue even when the original wage gap has narrowed (Lesson 3)."},
+     {t:"Network and cumulative causation theories", ok:true, why:"Right. Ties built up over time keep lowering the cost of moving. Once networks exist, migration can continue even when the original wage gap has narrowed (Lesson 3)."},
      {t:"Only Ravenstein’s laws, because they are laws of nature", why:"Ravenstein’s patterns are generalisations, not laws, and don’t explain persistence."},
      {t:"No theory can explain it", why:"Network theory and cumulative causation were developed partly to explain persistence."},
      {t:"The Harris–Todaro model, because it says wages never matter", why:"Harris–Todaro is about expected wages; it says wages matter a great deal."}]},
    /* ---- Lesson 3 ---- */
    {id:"e2u10-q19", lesson:"e2u10-l3", level:1, q:"What is a migration network?", options:[
-     {t:"Ties of family, friendship and shared community linking migrants, former migrants and non-migrants", ok:true, why:"Correct. This follows Massey and colleagues’ 1993 description."},
+     {t:"Personal ties linking migrants and non-migrants", ok:true, why:"Correct. Ties of family, friendship and shared community link migrants, former migrants and non-migrants. This follows Massey and colleagues’ 1993 description."},
      {t:"A government database of migrants", why:"A network here means personal ties, not a database."},
-     {t:"A computer network used by border agencies", why:"The term is about social ties, not technology."},
+     {t:"A computer network used by border agencies to track people", why:"The term is about social ties, not technology."},
      {t:"An international treaty on migration", why:"Treaties are legal agreements between states, not personal ties."}]},
    {id:"e2u10-q20", lesson:"e2u10-l3", level:2, q:"Sione moves to Auckland and stays with his aunt, who found him a job at her workplace. Next year he helps his friend do the same. This is an example of…", options:[
      {t:"chain migration", ok:true, why:"Right. Housing and work arranged through personal ties with earlier migrants, then passed on."},
@@ -1181,9 +1243,9 @@ ICA.addUnit({
      {t:"A treaty defines trafficking.", why:"That is a legal definition, not a social process that makes migration self-reinforcing."},
      {t:"A census records birthplaces.", why:"That is a way of measuring migration, not a cause of more migration."}]},
    {id:"e2u10-q23", lesson:"e2u10-l3", level:3, q:"A researcher finds that in large cities, having relatives abroad barely changes people’s chances of migrating, while in small rural towns it raises them a lot. How does this fit the research?", options:[
-     {t:"It matches Fussell and Massey’s (2004) finding that cumulative causation is weaker in big cities, where people have other networks and options.", ok:true, why:"Right. Their study of Mexico found the limits of cumulative causation in urban areas."},
+     {t:"It matches Fussell and Massey’s (2004) findings", ok:true, why:"Right. They found cumulative causation is weaker in big cities, where people have other networks and options. Their study of Mexico found the limits of cumulative causation in urban areas."},
      {t:"It disproves network theory completely.", why:"Networks still matter strongly in rural towns; the finding shows where their effect weakens."},
-     {t:"It shows Ravenstein was wrong about distance.", why:"The finding is about networks, not distance."},
+     {t:"It shows Ravenstein was wrong about distance and cities.", why:"The finding is about networks, not distance."},
      {t:"It shows that cities produce more refugees.", why:"Nothing here is about forced displacement."}]},
    {id:"e2u10-q24", lesson:"e2u10-l3", level:1, q:"Which geographer analysed rural–urban migration in Africa as a system with feedback (1970)?", options:[
      {t:"Akin Mabogunje", ok:true, why:"Correct. His 1970 article is a founding text of migration systems theory."},
@@ -1201,14 +1263,14 @@ ICA.addUnit({
      {t:"acquiescent immobility", why:"That combines low aspirations with low capabilities; Kenji’s capabilities are high."},
      {t:"voluntary mobility", why:"That would mean he wants to move and does. He stays."}]},
    {id:"e2u10-q27", lesson:"e2u10-l3", level:3, q:"Surveys suggest far more people would like to emigrate than actually do. Which explanation best uses the aspirations–capabilities framework?", options:[
-     {t:"Many have aspirations to move but lack capabilities such as money, documents, visas or contacts.", ok:true, why:"Right. This gap is what Carling called involuntary immobility."},
+     {t:"Many want to move but lack the means.", ok:true, why:"Right. Many have aspirations to move but lack capabilities such as money, documents, visas or contacts. This gap is what Carling called involuntary immobility."},
      {t:"People who say they want to move are lying.", why:"Survey answers can be unstable, but the framework explains the gap through constraints, not dishonesty."},
      {t:"Push factors are too weak everywhere.", why:"Push–pull language misses the issue: the gap is between wanting and being able."},
      {t:"Migration networks prevent everyone from moving.", why:"Networks usually make moving easier; lacking them is one capability constraint."}]},
    /* ---- Lesson 4 ---- */
    {id:"e2u10-q28", lesson:"e2u10-l4", level:1, q:"What did Zelinsky’s 1971 “mobility transition” propose?", options:[
-     {t:"That the kinds and amounts of movement change in regular phases as societies modernise, alongside the demographic transition", ok:true, why:"Correct. Zelinsky linked mobility phases to the demographic transition."},
-     {t:"That migration always falls as countries develop", why:"His phases include a surge in rural–urban migration and emigration during early transition."},
+     {t:"That mobility changes in phases as societies modernise", ok:true, why:"Correct. The kinds and amounts of movement change in regular phases. Zelinsky linked mobility phases to the demographic transition."},
+     {t:"That migration always falls steadily as countries develop", why:"His phases include a surge in rural–urban migration and emigration during early transition."},
      {t:"That refugees should be resettled", why:"His hypothesis is about patterns of mobility, not refugee policy."},
      {t:"That households spread risk through migration", why:"That is NELM (Stark and Bloom, 1985)."}]},
    {id:"e2u10-q29", lesson:"e2u10-l4", level:1, q:"Across countries today, where is emigration usually highest?", options:[
@@ -1217,23 +1279,23 @@ ICA.addUnit({
      {t:"In the richest countries", why:"Emigration tends to be lower in rich countries, which usually receive more immigrants."},
      {t:"Equally everywhere", why:"Cross-country data show a clear hump shape, not an even spread."}]},
    {id:"e2u10-q30", lesson:"e2u10-l4", level:2, q:"Why might rising incomes in a poor country increase emigration at first?", options:[
-     {t:"More households can afford the costs of moving, and education and information raise aspirations.", ok:true, why:"Right. Development raises both capabilities and aspirations."},
-     {t:"Because richer people always dislike their home country", why:"The explanation is about resources and aspirations, not dislike of home."},
+     {t:"More households can afford to move, and aspirations rise.", ok:true, why:"Right. Education and information raise aspirations. Development raises both capabilities and aspirations."},
+     {t:"Because richer people always come to dislike their home country", why:"The explanation is about resources and aspirations, not dislike of home."},
      {t:"Because rich countries stop accepting migrants", why:"That would reduce emigration, not increase it."},
      {t:"Because development makes travel more expensive", why:"Development usually makes travel more affordable."}]},
    {id:"e2u10-q31", lesson:"e2u10-l4", level:3, q:"A politician cites a chart showing middle-income countries have the highest emigration, and says: “Growth in any poor country will therefore increase emigration for years.” What is the most accurate response?", options:[
-     {t:"The chart compares countries; studies that follow countries over time disagree on whether each country follows the hump.", ok:true, why:"Right. Clemens (2020) argued it holds over time; Schneiderheinze and Benček (2024) found emigration falling with income in panel data."},
+     {t:"Studies of countries over time disagree on whether each follows the hump.", ok:true, why:"Right. The chart compares countries at one time. Clemens (2020) argued it holds over time; Schneiderheinze and Benček (2024) found emigration falling with income in panel data."},
      {t:"The claim is proven: cross-country charts always show what each country will do.", why:"Inferring change within a country from differences between countries is a mistake of levels, like the ecological fallacy."},
      {t:"Growth always reduces emigration immediately.", why:"That is also not established; evidence on short-run effects is mixed and effects are gradual."},
      {t:"Charts can’t tell us anything about migration.", why:"Cross-country data are real evidence; the question is what they can and can’t show."}]},
    {id:"e2u10-q32", lesson:"e2u10-l4", level:1, q:"What is **brain waste**?", options:[
-     {t:"Skilled migrants working in jobs far below their training, for example because qualifications aren’t recognised", ok:true, why:"Correct. Their skills are lost to both the origin and the destination."},
+     {t:"Skilled migrants working in jobs below their training", ok:true, why:"Correct. This often happens because qualifications aren’t recognised. Their skills are lost to both the origin and the destination."},
      {t:"Skilled people leaving their country", why:"That is brain drain."},
-     {t:"More people training because they might emigrate", why:"That is the incentive effect behind brain gain."},
+     {t:"More people training at home because they might emigrate", why:"That is the incentive effect behind brain gain."},
      {t:"Skilled migrants returning home", why:"That is part of brain circulation."}]},
    {id:"e2u10-q33", lesson:"e2u10-l4", level:2, q:"Abarcar and Theoharides (2024) studied nurses in the Philippines. What did they find when US demand for nurses rose?", options:[
-     {t:"Nursing enrolment and licensing rose, with about nine extra licensed nurses per emigrant, though exam pass rates fell", ok:true, why:"Correct. Evidence of an incentive (brain gain) effect, with a cost in measured quality."},
-     {t:"Nursing schools closed because everyone emigrated", why:"Enrolment and the number of nursing programmes rose, not fell."},
+     {t:"Enrolment and licensing rose, but pass rates fell", ok:true, why:"Correct. There were about nine extra licensed nurses per emigrant, though exam pass rates fell. Evidence of an incentive (brain gain) effect, with a cost in measured quality."},
+     {t:"Nursing schools closed because so many students emigrated", why:"Enrolment and the number of nursing programmes rose, not fell."},
      {t:"Nothing changed in the Philippines", why:"They found large changes in nursing education."},
      {t:"Quality of training rose sharply", why:"Measured quality (licensing-exam pass rates) fell."}]},
    {id:"e2u10-q34", lesson:"e2u10-l4", level:3, q:"Fatima asks whether skilled emigration is good or bad for countries of origin. What is the best summary of the research?", options:[
@@ -1258,8 +1320,8 @@ ICA.addUnit({
      {t:"About 75%", why:"Women are not a large majority; they are just under half."},
      {t:"Exactly 50% in every region", why:"Shares vary by region; globally the figure was 48%."}]},
    {id:"e2u10-q38", lesson:"e2u10-l5", level:2, q:"What does “feminisation of migration” most accurately describe?", options:[
-     {t:"More women migrating independently as workers and main earners, and greater attention to women in research", ok:true, why:"Right. It is about how women migrate and how visible they are, not a female majority."},
-     {t:"Women becoming a large majority of all migrants", why:"UN DESA puts women and girls at 48%; male migration has recently grown faster."},
+     {t:"More women migrating independently as workers and earners", ok:true, why:"Right. It also means greater attention to women in research. It is about how women migrate and how visible they are, not a female majority."},
+     {t:"Women becoming a large majority of all the world’s migrants", why:"UN DESA puts women and girls at 48%; male migration has recently grown faster."},
      {t:"Migration laws written only for women", why:"The term describes patterns of migration, not laws."},
      {t:"Men no longer migrating", why:"Men are still just over half of international migrants."}]},
    {id:"e2u10-q39", lesson:"e2u10-l5", level:1, q:"Who coined the term “global care chain” (2000)?", options:[
@@ -1268,7 +1330,7 @@ ICA.addUnit({
      {t:"Douglas Massey", why:"Massey is known for cumulative causation and network theory."},
      {t:"Michael Piore", why:"Piore developed dual labour market theory."}]},
    {id:"e2u10-q40", lesson:"e2u10-l5", level:1, q:"Why is “climate refugee” not a legal category under the 1951 Refugee Convention?", options:[
-     {t:"The Convention’s definition covers persecution for reasons of race, religion, nationality, membership of a particular social group or political opinion, not environmental change.", ok:true, why:"Correct. Environmental reasons aren’t among the Convention grounds."},
+     {t:"Environmental change isn’t one of its five grounds.", ok:true, why:"Correct. The definition covers persecution for reasons of race, religion, nationality, membership of a particular social group or political opinion. Environmental reasons aren’t among these grounds."},
      {t:"Because the Convention only applies to Europe today", why:"The 1967 Protocol removed the original geographic and time limits."},
      {t:"Because climate change didn’t exist in 1951", why:"The issue is the definition’s grounds, not when the climate began to change."},
      {t:"Because people displaced by disasters never get any protection", why:"They may get protection in other ways, such as human rights law, regional instruments or national schemes."}]},
@@ -1278,9 +1340,9 @@ ICA.addUnit({
      {t:"Into refugee camps abroad under the 1951 Convention", why:"Floods aren’t Convention grounds, and most people stay in their own country."},
      {t:"Nowhere: floods never cause people to move", why:"Disasters cause millions of displacements each year (IDMC)."}]},
    {id:"e2u10-q42", lesson:"e2u10-l5", level:2, q:"What is **planned relocation**?", options:[
-     {t:"The organised move of a whole community to a new place, usually as a last resort against environmental risk", ok:true, why:"Correct. Vunidogoloa in Fiji (2014) is a well-known example."},
+     {t:"The organised move of a whole community to a safer place", ok:true, why:"Correct. It is usually a last resort against environmental risk. Vunidogoloa in Fiji (2014) is a well-known example."},
      {t:"A visa lottery for individual workers", why:"That is an individual migration pathway, not a community relocation."},
-     {t:"Deporting migrants to their country of origin", why:"Planned relocation is about moving communities away from hazards, not deportation."},
+     {t:"Deporting migrants back to their country of origin by force", why:"Planned relocation is about moving communities away from hazards, not deportation."},
      {t:"A person’s step-by-step move to a city", why:"That is step migration."}]},
    {id:"e2u10-q43", lesson:"e2u10-l5", level:1, q:"Which is true of human trafficking under the 2000 Trafficking Protocol?", options:[
      {t:"It can happen entirely within one country.", ok:true, why:"Correct. Trafficking doesn’t require crossing a border."},
@@ -1293,7 +1355,7 @@ ICA.addUnit({
      {t:"Neither, because he chose to travel", why:"Choosing to travel doesn’t remove the crimes committed against him."},
      {t:"Only planned relocation", why:"Planned relocation is an organised community move, unrelated to this case."}]},
    {id:"e2u10-q45", lesson:"e2u10-l5", level:2, q:"What does the Smuggling Protocol (2000) say about the criminal liability of smuggled migrants?", options:[
-     {t:"Migrants shall not become liable to criminal prosecution under the Protocol for having been smuggled.", ok:true, why:"Correct. Article 5 says this; the Protocol targets the smugglers."},
+     {t:"Migrants shall not be prosecuted for having been smuggled.", ok:true, why:"Correct. Article 5 says migrants shall not become liable to criminal prosecution under the Protocol for this; the Protocol targets the smugglers."},
      {t:"Migrants must always be prosecuted as smugglers.", why:"Article 5 says the opposite."},
      {t:"Migrants lose the right to seek asylum.", why:"Its saving clause keeps obligations under refugee law, including non-refoulement."},
      {t:"Only migrants who pay more than a set amount are protected.", why:"The Protocol sets no such threshold."}]}

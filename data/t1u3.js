@@ -103,7 +103,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t1u3-l1-x1", type:"mcq", q:"Ana says: “Nobody would bother hacking me. I’m not rich or famous.” What is the best reply?", options:[
-      {t:"Most attacks are automated and aimed at huge numbers of people at once, so being ordinary doesn’t make you safe.", ok:true, why:"Right. Attackers mostly use programs that try millions of people, leaked passwords and devices. They don’t need to know or care who you are."},
+      {t:"Most attacks are automated, so being ordinary doesn’t make you safe.", ok:true, why:"Right. Most attacks are aimed at huge numbers of people at once. Attackers mostly use programs that try millions of people, leaked passwords and devices. They don’t need to know or care who you are."},
       {t:"She’s right: attackers only spend their time on rich or famous people.", why:"Targeted attacks on important people exist, but most attacks are mass attacks. Treating yourself as not worth attacking is exactly the gap they use."},
       {t:"She’s safe as long as she has antivirus installed.", why:"Antivirus helps with malware, but it can’t stop phishing, scams or someone logging in with a leaked password."},
       {t:"She’s safe as long as she never shares her password on social media.", why:"Passwords mostly leak through data breaches and phishing pages, not because people post them publicly."}
@@ -138,7 +138,7 @@ ICA.addUnit({
       {t:"Avoid the internet on public Wi-Fi completely", why:"Not part of their basic advice. Most traffic is encrypted today; Lesson 5 explains what public Wi-Fi does and doesn’t risk."}
     ]},
     {id:"t1u3-l1-x6", type:"mcq", q:"Dmitri uses a Mac and says he doesn’t need to worry about security because “Macs don’t get viruses.” What’s the main flaw in that thinking?", options:[
-      {t:"Phishing and scams target the person, not the device, so they work on any computer or phone.", ok:true, why:"Exactly. Even a perfectly malware-free device can’t stop him typing his password into a fake page or paying a scammer. (Malware for macOS also exists.)"},
+      {t:"Phishing and scams target the person, not the device.", ok:true, why:"Exactly. They work on any computer or phone. Even a perfectly malware-free device can’t stop him typing his password into a fake page or paying a scammer. (Malware for macOS also exists.)"},
       {t:"Macs actually get more viruses than any other computer.", why:"There’s no basis for that claim. The point isn’t which system gets the most malware; it’s that many attacks don’t need malware at all."},
       {t:"Macs have no built-in malware protection.", why:"They do: macOS includes Gatekeeper and XProtect. The flaw is thinking malware is the only threat."},
       {t:"There’s no flaw; he’s completely safe.", why:"Phishing, scams, data breaches and reused passwords affect Mac users as much as anyone."}
@@ -287,7 +287,7 @@ ICA.addUnit({
       {v:4000000, tol:0, why:"4,000,000 is 2,000 × 2,000, the number of two-word passphrases. The question asks how many **times more** four words give than three."}
     ], hint2:"Write the total for 3 words as 2,000 × 2,000 × 2,000, then add one more word."},
     {id:"t1u3-l2-x4", type:"mcq", q:"Kenji uses one 20-character random password for every account. He says it’s so strong that reuse doesn’t matter. A small online shop he once used is breached. What’s the real risk?", options:[
-      {t:"Attackers can now try that exact password on his email and other accounts, and it will work everywhere he used it.", ok:true, why:"Right. Credential stuffing doesn’t need to guess anything: the breach handed over the password itself. Its length is irrelevant once it’s leaked."},
+      {t:"That exact password will work everywhere he used it.", ok:true, why:"Right. Attackers can now try it on his email and other accounts. Credential stuffing doesn’t need to guess anything: the breach handed over the password itself. Its length is irrelevant once it’s leaked."},
       {t:"There’s little risk because a 20-character password can’t be cracked.", why:"Cracking isn’t needed. If the shop stored it badly, or attackers phished it, they have the actual password and can reuse it anywhere."},
       {t:"Only his account at that shop is at risk.", why:"That would be true only if the password were unique to the shop. Because it’s reused, every account that shares it is exposed."},
       {t:"He should only worry if the shop had his credit card.", why:"Card details matter, but the bigger danger is the reused password opening his email and other accounts."}
@@ -412,7 +412,7 @@ ICA.addUnit({
       {t:"A passkey", why:"Strongest here: it’s tied to the real website and gives you nothing to type or read out, so it’s phishing-resistant."}
     ]},
     {id:"t1u3-l3-x2", type:"mcq", q:"Late at night, Sione’s phone shows three “Approve sign-in?” prompts for his email. He isn’t signing in anywhere. What’s the best response?", options:[
-      {t:"Deny them, then change his email password from a trusted device and check recent sign-in activity.", ok:true, why:"The prompts mean someone has his password and is trying to get past the second step. Denying blocks them; changing the password removes what they have."},
+      {t:"Deny them, then change his email password.", ok:true, why:"The prompts mean someone has his password and is trying to get past the second step. Denying blocks them; changing the password from a trusted device removes what they have. Then he should check recent sign-in activity."},
       {t:"Approve one so the prompts stop, then change his password in the morning.", why:"Approving lets the attacker in immediately. They could change his password and recovery details before morning."},
       {t:"Ignore them; it’s probably a glitch.", why:"Prompts you didn’t trigger are a warning sign. Ignoring them leaves the attacker with a working password."},
       {t:"Turn off two-step verification so the prompts stop.", why:"That removes the one thing currently stopping the attacker."}
@@ -430,7 +430,7 @@ ICA.addUnit({
       {v:720, tol:0, why:"720 is 6 × 5 × 4 × 3 × 2 × 1, which counts ways to arrange 6 different things. Here each digit is picked from 0–9 and can repeat."}
     ]},
     {id:"t1u3-l3-x5", type:"mcq", q:"Lucía taps a link in a convincing email and lands on `northwind-bank-secure.com`, a copy of her bank’s sign-in page. She normally signs in with a passkey. What happens?", options:[
-      {t:"Her device has no passkey for that address, so it can’t sign in there, and nothing useful is handed over.", ok:true, why:"Passkeys are tied to the exact website they were created for, and the device checks the address. A look-alike domain gets nothing."},
+      {t:"Her device has no passkey for that address to hand over.", ok:true, why:"Passkeys are tied to the exact website they were created for, and the device checks the address. A look-alike domain gets nothing."},
       {t:"The fake site receives her passkey and can use it on the real bank.", why:"The private key never leaves her device or password manager, and it only ever signs challenges for the real domain."},
       {t:"The fake site receives her fingerprint.", why:"Her fingerprint only unlocks her own device. It’s never sent to any website, real or fake."},
       {t:"She’s safe only if she notices the address is wrong.", why:"Noticing is good, but with a passkey she’s protected even if she doesn’t: her device checks the address for her. That’s what “phishing-resistant” means."}
@@ -772,7 +772,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t1u3-l5-x1", type:"mcq", q:"Hana uses a café’s public Wi-Fi to sign in to her bank’s website, which shows a padlock and `https://`. What can the café’s network owner generally see?", options:[
-      {t:"That she connected to her bank’s site and roughly when, but not her password or the pages she viewed.", ok:true, why:"HTTPS encrypts the content between her device and the bank. The network can generally see which site she connected to, but not what she typed or read."},
+      {t:"Which site she connected to, but not her password.", ok:true, why:"HTTPS encrypts the content between her device and the bank. The network can generally see that she connected to her bank’s site and roughly when, but not what she typed or read."},
       {t:"Everything, including her password, because public Wi-Fi isn’t encrypted.", why:"Even if the Wi-Fi itself has no password, HTTPS encrypts the connection from her device all the way to the bank."},
       {t:"Nothing at all, not even which site she visited.", why:"The site name is usually still visible to the network. Hiding that is what a VPN adds."},
       {t:"Only her password, but not the site name.", why:"It’s the other way round: the site name is visible, but the password is encrypted."}
@@ -793,10 +793,10 @@ ICA.addUnit({
       ["Device Encryption or BitLocker","Windows disk encryption","Device Encryption (available on many devices, including Windows Home) uses BitLocker technology; full BitLocker controls come with Pro, Enterprise and Education."]
     ]},
     {id:"t1u3-l5-x4", type:"mcq", q:"Sione installs a free flashlight app. It asks for access to his contacts and his precise location. What should he do?", options:[
-      {t:"Deny both, because a flashlight doesn’t need either; if it won’t work without them, uninstall it and pick another.", ok:true, why:"Permissions should match what the app does. Contacts and location have nothing to do with a flashlight, so the app may be collecting data to sell or misuse."},
+      {t:"Deny both, because a flashlight doesn’t need either.", ok:true, why:"Permissions should match what the app does. Contacts and location have nothing to do with a flashlight, so the app may be collecting data to sell or misuse. If it won’t work without them, uninstall it and pick another."},
       {t:"Allow both; apps only ask for what they need.", why:"Apps often ask for more than they need, sometimes to collect and sell data. You decide."},
       {t:"Allow location but deny contacts.", why:"A flashlight needs neither. Location reveals where he lives and goes."},
-      {t:"Allow both but only while using the app.", why:"“While using” is a good habit for permissions an app genuinely needs. These ones it doesn’t need at all."}
+      {t:"Allow both, but only while he is actually using the app.", why:"“While using” is a good habit for permissions an app genuinely needs. These ones it doesn’t need at all."}
     ]},
     {id:"t1u3-l5-x5", type:"order", q:"Lucía realises her email account has been hacked. Put the first-hour steps in the order the UK NCSC’s recovery guidance gives.", items:[
       {t:"Use the provider’s official recovery process to get back into the account", why:"Everything else depends on having control of the account."},
@@ -807,7 +807,7 @@ ICA.addUnit({
       {t:"Tell her contacts and check her bank and shopping accounts", why:"Finally, limit the knock-on harm: warn people who may get scam messages from her account, and look for unauthorised payments."}
     ]},
     {id:"t1u3-l5-x6", type:"mcq", q:"While reading a news site, Dmitri’s browser fills with a flashing page: “WARNING! Your computer is infected. Call support now on this number.” What’s the best action?", options:[
-      {t:"Close the tab or the whole browser, don’t call the number, and run a scan with his built-in security app if he’s worried.", ok:true, why:"This is scareware, a tech-support scam. Real protection warns through its own app or system notifications, not a web page with a phone number."},
+      {t:"Close the tab or browser and don’t call the number.", ok:true, why:"This is scareware, a tech-support scam. Real protection warns through its own app or system notifications, not a web page with a phone number. He can run a scan with his built-in security app if he’s worried."},
       {t:"Call the number, since it might be genuine Microsoft or Apple support.", why:"Genuine companies don’t put phone numbers in pop-up warnings. The caller would likely ask for payment or remote access to his device."},
       {t:"Download the cleaning tool the page offers.", why:"The “tool” is often the malware itself."},
       {t:"Turn the computer off and never use that browser again.", why:"Overkill. Closing the browser removes the page. The browser itself isn’t infected by a page like this."}
@@ -855,6 +855,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u3-q02","t1u3-q06","t1u3-q11","t1u3-q15","t1u3-q17","t1u3-q21","t1u3-q25","t1u3-q30","t1u3-q33","t1u3-q36","t1u3-q41","t1u3-q44"],
+  cpBank:[
+    {id:"t1u3-cp01", lesson:"t1u3-l1", level:1, q:"During exam week, a school’s online timetable system is knocked offline for a whole day. Nobody’s data was read or changed. Which corner of the CIA triad was damaged?", options:[
+      {t:"Confidentiality", why:"Confidentiality is broken when the wrong people can see information. Here nobody read anything."},
+      {t:"Integrity", why:"Integrity is broken when information is changed or made wrong. Nothing was changed."},
+      {t:"Availability", ok:true, why:"Availability means you can use the information when you need it. Students and staff couldn’t reach the timetable."},
+      {t:"None, because no data was stolen", why:"An attack doesn’t have to steal data to do harm. Stopping people using a system damages availability."}
+    ]},
+    {id:"t1u3-cp02", lesson:"t1u3-l3", level:1, q:"Lin signs in to her bank with a password, then types a code from an authenticator app on her phone. Which two kinds of factor is she using?", options:[
+      {t:"Something she knows and something she is", why:"Nothing here uses her face or fingerprint. The code comes from the phone she carries."},
+      {t:"Something she knows and something she has", ok:true, why:"The password is something she knows. The authenticator app on her phone is something she has."},
+      {t:"Two things she knows: a password and a code", why:"She doesn’t memorise the code. It is produced by the app on the phone she has with her."},
+      {t:"Two things she has", why:"The password is a secret in her head, so it counts as something she knows."}
+    ]},
+    {id:"t1u3-cp03", lesson:"t1u3-l5", level:1, q:"Ifeoma’s laptop is stolen from her car. Which setting means the thief can’t read her files, even by taking out the drive?", options:[
+      {t:"Device encryption, such as FileVault or BitLocker", ok:true, why:"Encryption scrambles everything on the device. Without her sign-in or recovery key, the data is unreadable."},
+      {t:"Built-in antivirus, such as Microsoft Defender", why:"Antivirus finds and blocks malware. It doesn’t stop someone reading a removed drive."},
+      {t:"A VPN app that hides her internet traffic", why:"A VPN protects traffic as it travels over a network. It does nothing for files stored on a stolen laptop."},
+      {t:"Automatic updates", why:"Updates fix security holes in software. They don’t scramble stored files."}
+    ]},
+    {id:"t1u3-cp04", lesson:"t1u3-l2", level:2, q:"A generator gives Gaurav the passphrase `violin tundra pepper socket`. He swaps “socket” for “cricket”, because he loves cricket. What is the problem?", options:[
+      {t:"No problem; any four words make an equally strong passphrase, whatever they are", why:"The strength maths only holds when the words are picked by chance. Chosen words are easier to predict."},
+      {t:"The passphrase is now too short", why:"It still has four words. The issue is that one word was chosen for meaning, not at random."},
+      {t:"Passphrases must include a symbol to count as strong", why:"Current guidance says length and randomness do the real work. Symbols are optional."},
+      {t:"A word chosen for its meaning is less random, so it is easier to guess", ok:true, why:"Words must be kept as the generator chose them. Swapping in a favourite word adds something an attacker might predict."}
+    ]},
+    {id:"t1u3-cp05", lesson:"t1u3-l2", level:2, q:"Nour taps a link in an email to sign in to her streaming account. Her password manager usually fills in the password, but this time it offers nothing. What is the most sensible conclusion?", options:[
+      {t:"The manager is broken, so she should type the password from memory", why:"Typing it in would hand the password to the site if it is fake. The silence is the warning to stop and check."},
+      {t:"It may be a look-alike site, so she should open the real app instead", ok:true, why:"A password manager fills only on the site the password was saved for. When it stays quiet, check the address and use a route you trust."},
+      {t:"She should copy the password from her vault and paste it in", why:"Copying it by hand gets around the very check that just warned her."},
+      {t:"She should turn off the password manager, because it blocks some sites", why:"The manager wasn’t blocking anything. It didn’t recognise the address, which is useful information."}
+    ]},
+    {id:"t1u3-cp06", lesson:"t1u3-l4", level:2, q:"Joaquín scans a QR sticker on a car-park pay machine. His phone shows the address `parkpay-citycentre.help` before opening it. He doesn’t recognise it. What should he do?", options:[
+      {t:"Open it, because QR codes on official pay machines are always safe", why:"Fake stickers can be placed over real codes. A QR code is just a link you can’t read."},
+      {t:"Open it but pay only a small amount to test it", why:"Any card details typed into a fake page are at risk, whatever the amount."},
+      {t:"Don’t open it; pay at the machine itself or in the official app", ok:true, why:"An address he doesn’t recognise is a warning sign. Use a route he already trusts instead of the sticker."},
+      {t:"Open it, and pay only if the page shows a padlock", why:"A padlock means the connection is encrypted, not that the site is honest. Scam sites use HTTPS too."}
+    ]},
+    {id:"t1u3-cp07", lesson:"t1u3-l5", level:2, q:"Elena’s old tablet still works well, but the maker has stopped sending it security updates. She uses it for recipes and for online banking. What is the best advice?", options:[
+      {t:"Keep using it for everything; if it works, it’s safe", why:"Working fine doesn’t mean safe. After end of support, new security flaws are never fixed."},
+      {t:"Install a VPN app, and then it is as safe as a device that gets updates", why:"A VPN protects the connection, not the device. It can’t fix the tablet’s unpatched flaws."},
+      {t:"Look for update files on websites instead", why:"Updates should come only from the device’s own settings or official store. Download pages are a common way to spread malware."},
+      {t:"Move banking to a supported device, because new flaws won’t be fixed", ok:true, why:"An unsupported device collects known, unfixed weaknesses. Keep important accounts on devices that still get updates."}
+    ]},
+    {id:"t1u3-cp08", lesson:"t1u3-l3", level:2, q:"Ji-woo’s only second step for her email is an authenticator app on her phone. She is about to travel for a month. What should she set up before she leaves?", options:[
+      {t:"Save her recovery codes away from the phone, and add a second method", ok:true, why:"If the phone is lost or stolen, recovery codes and a backup method let her back in. Keep them where she can reach them without that phone."},
+      {t:"Turn off two-step verification until she gets home", why:"That removes protection exactly when she is more likely to use new networks and devices."},
+      {t:"Take a screenshot of her recovery codes and keep it safe on that phone", why:"If she loses the phone, she loses the codes too. Keep them somewhere else."},
+      {t:"Nothing; the service can always text her old phone number", why:"An old number she no longer owns is a risk, not a plan. Check recovery details are up to date."}
+    ]},
+    {id:"t1u3-cp09", lesson:"t1u3-l2", level:3, q:"A website forces Yaw to change his password every 60 days and demands a symbol each time. He changes `Kettle1!` to `Kettle2!`. What does current official guidance say about this?", options:[
+      {t:"The site is right; frequent forced changes keep every password fresh and much safer", why:"Research showed scheduled changes backfire. Guidance now says change a password when there is evidence it was compromised."},
+      {t:"Yaw is the only problem; he should have added two symbols", why:"More symbols don’t fix a predictable pattern. Length and randomness matter more."},
+      {t:"Such rules push people to tiny, guessable tweaks, so services shouldn’t force them", ok:true, why:"NIST guidance tells services not to force scheduled changes or character mixtures. People respond with tiny, guessable edits like this one."},
+      {t:"It doesn’t matter, because attackers never guess patterns like this", why:"Cracking programs try common tweaks such as adding or changing a final number. `Kettle2!` is easy to predict."}
+    ]},
+    {id:"t1u3-cp10", lesson:"t1u3-l5", level:3, q:"In a hotel lobby, Femi joins a network called “Hotel_Guest_Free_Fast”. A page asks for his card number “to confirm you are a guest”. He has a VPN app. What is the best judgement?", options:[
+      {t:"It’s safe if he turns on the VPN before typing his card number", why:"A VPN encrypts traffic but can’t stop a fake page collecting what he types. A VPN doesn’t stop phishing."},
+      {t:"It may be a fake hotspot; he should ask reception for the real network name", ok:true, why:"Anyone can give a network a hotel’s name. A Wi-Fi sign-in page that wants card details is a warning sign, and a VPN doesn’t change that. Mobile data is another safe choice."},
+      {t:"Public Wi-Fi is never safe, so he should never use any hotel network again", why:"That advice is out of date. With HTTPS, public Wi-Fi is usually fine. The problem here is a suspicious sign-in page."},
+      {t:"It’s fine as long as the sign-in page shows a padlock", why:"Scam pages can have padlocks too. HTTPS protects the connection; it doesn’t prove who runs the page."}
+    ]},
+    {id:"t1u3-cp11", lesson:"t1u3-l3", level:3, q:"Rhys and Mona both tap a phishing link to a copy of their email sign-in page. Rhys uses a password plus an authenticator code. Mona uses a passkey. What is most likely?", options:[
+      {t:"Both are safe, because any second step stops phishing", why:"Codes can still be phished. A fake site can ask Rhys to type his code and pass it on quickly."},
+      {t:"Both are at equal risk, because the fake page looks identical", why:"Looks don’t matter to a passkey. Mona’s device checks the real address, not how the page looks."},
+      {t:"Mona is at more risk, because the fake site can copy her fingerprint as she signs in", why:"A passkey never sends a fingerprint anywhere. It only unlocks her own device."},
+      {t:"Rhys’s code can be phished; Mona’s device has no passkey for the fake address", ok:true, why:"Codes can be typed into a fake page and used at once. A passkey is tied to the exact real website, so there is nothing to hand over."}
+    ]},
+    {id:"t1u3-cp12", lesson:"t1u3-l5", level:3, q:"A friend asks Omar about a strange message “from him”. In his email settings, he finds a rule forwarding all his mail to an address he doesn’t know. What does this mean, and what should he do?", options:[
+      {t:"Someone got in: remove the rule, change the password, sign out other sessions", ok:true, why:"Attackers add forwarding rules to keep reading your mail. Remove it, change the password, sign out other sessions and turn on two-step verification."},
+      {t:"It’s probably a setting the email provider added during an update; he can ignore it", why:"Providers don’t forward your mail to strangers. An unknown forwarding rule is a classic sign of a hacked account."},
+      {t:"He only needs to change his password; the rule will stop by itself", why:"A rule keeps working after a password change. He must remove it as well as change the password."},
+      {t:"He should reply to the unknown address and ask them to stop", why:"Contacting the attacker achieves nothing. He should remove the rule and secure the account."}
+    ]},
+  ],
   codex:[
    {id:"threat-landscape", title:"Threats to ordinary people", aka:["cyber threats","why me?","attack types"], tags:["security","basics"],
     summary:"Why everyday people are targeted, what attackers want, and the main kinds of attack.",
@@ -1526,22 +1600,22 @@ ICA.addUnit({
      {t:"Storing too many passwords in one password manager", why:"Using a password manager is a defence against credential stuffing, not a form of it."}
    ]},
    {id:"t1u3-q02", lesson:"t1u3-l1", level:2, q:"Why is your main email account especially valuable to an attacker?", options:[
-     {t:"Password-reset links for most of your other accounts are sent to it", ok:true, why:"Control of your email lets an attacker use “Forgot password?” to take over many other accounts."},
+     {t:"Reset links for your other accounts are sent to it", ok:true, why:"Password-reset links for most of your other accounts go to your email, so control of it lets an attacker use “Forgot password?” to take over many of them."},
      {t:"Email accounts store your bank card number by default", why:"They don’t store card numbers by default. The danger is the power to reset other accounts."},
      {t:"Email providers pay attackers for access", why:"There’s no such arrangement. Attackers value email for the access it opens to your other accounts."},
      {t:"An email account can’t have two-step verification", why:"It can, and should. Email is a top priority for turning it on."}
    ]},
    {id:"t1u3-q03", lesson:"t1u3-l1", level:1, q:"In the CIA triad, what does “integrity” mean?", options:[
-     {t:"Information is correct and hasn’t been changed without permission", ok:true, why:"Integrity is about information staying accurate and untampered."},
+     {t:"Information is accurate and hasn’t been changed", ok:true, why:"Integrity is about information staying accurate and not being changed without permission."},
      {t:"Only the right people can see the information", why:"That’s confidentiality."},
      {t:"You can use the information when you need it", why:"That’s availability."},
-     {t:"The people handling the information are honest", why:"Honesty is a good quality, but in the CIA triad integrity refers to the information itself being correct."}
+     {t:"The people who handle the information are honest", why:"Honesty is a good quality, but in the CIA triad integrity refers to the information itself being correct."}
    ]},
    {id:"t1u3-q04", lesson:"t1u3-l1", level:3, q:"Fatima’s small business receives an email from a regular supplier saying their bank details have changed, with new details for the next payment. Which CIA corner is at risk, and what’s the right defence?", options:[
-     {t:"Integrity: confirm the change by phoning the supplier on a number she already has", ok:true, why:"The danger is acting on altered information. A call to a known number checks the change through a route the attacker doesn’t control."},
+     {t:"Integrity: phone the supplier on a number she already has", ok:true, why:"The danger is acting on altered information. A call to a number she already has checks the change through a route the attacker doesn’t control."},
      {t:"Availability: make a backup of the email", why:"A backup keeps a copy, but it doesn’t check whether the new details are genuine."},
      {t:"Confidentiality: encrypt the email", why:"Encryption hides content from others; it can’t tell her whether the request is genuine."},
-     {t:"Integrity: reply to the email asking if the change is real", why:"If the supplier’s account was hijacked or spoofed, the attacker will simply reply “yes”."}
+     {t:"Integrity: reply to the email and ask if the change is real", why:"If the supplier’s account was hijacked or spoofed, the attacker will simply reply “yes”."}
    ]},
    {id:"t1u3-q05", lesson:"t1u3-l1", level:1, q:"Which of these is the best description of malware?", options:[
      {t:"Any software designed to harm you or your device", ok:true, why:"Malware means malicious software, and includes viruses, spyware and ransomware."},
@@ -1550,9 +1624,9 @@ ICA.addUnit({
      {t:"Hardware that has stopped working", why:"Malware is software, not a hardware fault."}
    ]},
    {id:"t1u3-q06", lesson:"t1u3-l1", level:3, q:"Mei’s friend says: “I don’t need to bother with security because I don’t have anything worth stealing.” Which point best shows why that’s mistaken?", options:[
-     {t:"Her email, contacts and payment card are valuable to automated attacks, even if she isn’t personally targeted", ok:true, why:"Mass attacks aim at everyone. Ordinary accounts can be used to reset other accounts, scam contacts and spend money."},
+     {t:"Automated attacks go after everyone’s accounts, including hers", ok:true, why:"Mass attacks aim at everyone, not just people who are personally targeted. Her email, contacts and payment card can be used to reset other accounts, scam contacts and spend money."},
      {t:"Attackers only target famous people, so she’s right", why:"Most attacks are automated and aimed at huge numbers of ordinary people."},
-     {t:"She needs security only if she uses a Windows computer", why:"Phishing, scams and leaked passwords affect users of every device."},
+     {t:"She needs security only if she uses a Windows computer at home", why:"Phishing, scams and leaked passwords affect users of every device."},
      {t:"Her antivirus will stop every kind of attack anyway", why:"Antivirus doesn’t stop phishing, scams or logins with leaked passwords."}
    ]},
    {id:"t1u3-q07", lesson:"t1u3-l1", level:2, q:"Which habit would have stopped a credential-stuffing attack even if the reused password was leaked?", options:[
@@ -1562,15 +1636,15 @@ ICA.addUnit({
      {t:"Using a longer version of the same reused password", why:"If it’s reused and leaked, its length doesn’t matter: attackers have the actual password."}
    ]},
    {id:"t1u3-q08", lesson:"t1u3-l1", level:1, q:"What is social engineering?", options:[
-     {t:"Manipulating people into giving access, information or money", ok:true, why:"It targets human trust and emotions rather than technical flaws."},
+     {t:"Manipulating people into giving access or money", ok:true, why:"It targets human trust and emotions rather than technical flaws, to get access, information or money."},
      {t:"Designing social media apps", why:"That’s software engineering. Social engineering is a manipulation technique."},
-     {t:"Building community networks with volunteers", why:"A positive activity, but not what the security term means."},
+     {t:"Building community networks and groups with volunteers", why:"A positive activity, but not what the security term means."},
      {t:"Breaking encryption with powerful computers", why:"Social engineering avoids technical attacks; it persuades people instead."}
    ]},
    {id:"t1u3-q09", lesson:"t1u3-l1", level:3, q:"Oluwaseun’s friends receive messages from his account asking for urgent loans. He didn’t send them. Which earlier weakness most likely started this chain?", options:[
-     {t:"His password leaked in a breach elsewhere, and he had reused it without two-step verification", ok:true, why:"This is the classic chain: breach, credential stuffing on a reused password, account takeover, then scams to contacts."},
+     {t:"His password leaked elsewhere, and he had reused it", ok:true, why:"This is the classic chain: a breach elsewhere, credential stuffing on a reused password without two-step verification, account takeover, then scams to contacts."},
      {t:"His phone’s screen brightness was set too high", why:"Screen settings have nothing to do with account takeover."},
-     {t:"He had too many friends in his contact list", why:"Contacts are the scam’s targets, not the cause of the takeover."},
+     {t:"He had too many friends and strangers in his contact list", why:"Contacts are the scam’s targets, not the cause of the takeover."},
      {t:"He used HTTPS websites", why:"HTTPS protects connections; it doesn’t cause account takeovers."}
    ]},
    /* ---- Lesson 2 ---- */
@@ -1587,15 +1661,15 @@ ICA.addUnit({
      {t:"`Pa$$w0rd`", why:"Symbol swaps on the word “password” are among the first things attackers try."}
    ]},
    {id:"t1u3-q12", lesson:"t1u3-l2", level:1, q:"What does current NIST guidance say about forcing users to change passwords every 90 days?", options:[
-     {t:"Services should not force scheduled changes, only changes when there’s evidence of compromise", ok:true, why:"Scheduled changes produce predictable tweaks. A change is required only when a password may be compromised."},
+     {t:"They should not be forced; change only after a compromise", ok:true, why:"Scheduled changes produce predictable tweaks. Services should require a change only when there’s evidence a password may be compromised."},
      {t:"It’s required for all services", why:"The current guidance says the opposite: no forced periodic changes."},
      {t:"It’s required only for email accounts", why:"There’s no such rule. Changes are tied to evidence of compromise, not account type or schedule."},
-     {t:"Passwords should be changed every 30 days instead", why:"More frequent forced changes would make the problem worse."}
+     {t:"Passwords should be changed every 30 days instead of every 90", why:"More frequent forced changes would make the problem worse."}
    ]},
    {id:"t1u3-q13", lesson:"t1u3-l2", level:2, q:"How does a password manager help protect you from phishing?", options:[
-     {t:"It only fills in a password on the exact website it was saved for, so it stays silent on a look-alike site", ok:true, why:"When autofill doesn’t offer your password, that’s a strong hint you’re not on the real site."},
+     {t:"It fills in passwords only on the exact site they were saved for", ok:true, why:"So it stays silent on a look-alike site. When autofill doesn’t offer your password, that’s a strong hint you’re not on the real site."},
      {t:"It blocks all emails that contain links", why:"Password managers don’t filter email."},
-     {t:"It makes fake websites show a red warning screen", why:"That’s a browser or security feature, not the password manager’s main protection."},
+     {t:"It makes fake websites show a red warning screen before they load", why:"That’s a browser or security feature, not the password manager’s main protection."},
      {t:"It changes all your passwords every day", why:"Password managers don’t do this, and it wouldn’t stop phishing."}
    ]},
    {id:"t1u3-q14", lesson:"t1u3-l2", level:3, q:"Tomás finds his email address listed in three breaches on Have I Been Pwned. Which response is most important?", options:[
@@ -1605,10 +1679,10 @@ ICA.addUnit({
      {t:"Type his current passwords into a site that checks if they leaked", why:"Never type real passwords into unknown sites. Use a password manager’s built-in check."}
    ]},
    {id:"t1u3-q15", lesson:"t1u3-l2", level:3, q:"Kenji has one long, random password that he uses for every account. A small shop he used is breached. What is the problem?", options:[
-     {t:"The leaked password works on all his other accounts, however strong it is", ok:true, why:"Strength doesn’t help once the actual password is known. Reuse spreads one leak to every account."},
+     {t:"The leaked password works on all his other accounts", ok:true, why:"However strong it is, strength doesn’t help once the actual password is known. Reuse spreads one leak to every account."},
      {t:"No problem: long random passwords can’t be leaked", why:"Any password can leak in a breach or through phishing. Strength only protects against guessing."},
      {t:"Only his account at that shop is affected", why:"That would be true only if the password were unique."},
-     {t:"The problem is that his password isn’t long enough", why:"Length isn’t the issue here; reuse is."}
+     {t:"The problem is that his password isn’t long or complex enough", why:"Length isn’t the issue here; reuse is."}
    ]},
    {id:"t1u3-q16", lesson:"t1u3-l2", level:1, q:"What does the UK NCSC recommend for making a password you need to remember?", options:[
      {t:"Three random words", ok:true, why:"The NCSC says three random words are strong enough and easy enough to remember."},
@@ -1630,8 +1704,8 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u3-q19", lesson:"t1u3-l3", level:1, q:"Which pair is an example of two different kinds of factor?", options:[
-     {t:"A password (something you know) and a code from an app on your phone (something you have)", ok:true, why:"Two different kinds of proof: a thief needs both."},
-     {t:"A password and a second password", why:"Both are things you know, so one phishing page could capture both."},
+     {t:"A password and a code from an app on your phone", ok:true, why:"A password is something you know and the app code is something you have: two different kinds of proof, so a thief needs both."},
+     {t:"A password and a second password you also have to remember", why:"Both are things you know, so one phishing page could capture both."},
      {t:"A PIN and a security question", why:"Both are things you know."},
      {t:"Your username and your password", why:"A username isn’t secret, so it isn’t a factor."}
    ]},
@@ -1642,28 +1716,28 @@ ICA.addUnit({
      {t:"Security questions", why:"These aren’t a second factor at all; answers can often be found or guessed."}
    ]},
    {id:"t1u3-q21", lesson:"t1u3-l3", level:3, q:"At midnight, Ana gets repeated “Approve sign-in?” prompts on her phone for her work account. She isn’t signing in. What does this most likely mean?", options:[
-     {t:"Someone has her password and is trying to get past the second step", ok:true, why:"This is MFA fatigue (push bombing). She should deny the prompts, change her password and tell her IT team."},
+     {t:"Someone has her password and wants her approval", ok:true, why:"Someone is trying to get past the second step. This is MFA fatigue (push bombing). She should deny the prompts, change her password and tell her IT team."},
      {t:"Her phone needs a software update", why:"Updates don’t generate sign-in prompts."},
      {t:"Her account is being deleted", why:"Account deletion doesn’t work this way. The prompts are sign-in attempts."},
-     {t:"Her phone’s notification settings are faulty", why:"Notification settings can’t create sign-in requests. Each prompt is a real sign-in attempt using her password."}
+     {t:"Her phone’s notification settings are faulty and repeating", why:"Notification settings can’t create sign-in requests. Each prompt is a real sign-in attempt using her password."}
    ]},
    {id:"t1u3-q22", lesson:"t1u3-l3", level:2, q:"Why can’t a fake look-alike website use your passkey?", options:[
-     {t:"Each passkey is tied to the exact website it was created for, and your device checks the address", ok:true, why:"The fake domain has no passkey to request, so nothing is handed over."},
+     {t:"Each passkey works only on the exact site it was made for", ok:true, why:"Your device checks the address. The fake domain has no passkey to request, so nothing is handed over."},
      {t:"Fake websites can’t use HTTPS", why:"Fake websites often use HTTPS. Protection comes from the passkey being bound to the real domain."},
-     {t:"Your fingerprint is sent to the real site to compare", why:"Your fingerprint never leaves your device; it only unlocks the device."},
+     {t:"Your fingerprint is sent to the real site to compare first", why:"Your fingerprint never leaves your device; it only unlocks the device."},
      {t:"Passkeys expire every 30 seconds", why:"That describes authenticator app codes, not passkeys."}
    ]},
    {id:"t1u3-q23", lesson:"t1u3-l3", level:1, q:"What are recovery codes for?", options:[
-     {t:"Signing in if you lose your usual second step, such as your phone", ok:true, why:"Each one-time code replaces your second step once."},
+     {t:"Signing in if you lose your usual second step", ok:true, why:"For example, if you lose your phone. Each one-time code replaces your second step once."},
      {t:"Recovering deleted files", why:"That’s what backups and version history are for."},
      {t:"Unlocking your phone if you forget its PIN", why:"Recovery codes belong to online accounts, not your phone’s screen lock."},
      {t:"Proving your identity to your bank over the phone", why:"Never read out codes on the phone. Recovery codes are only for signing in to the service that issued them."}
    ]},
    {id:"t1u3-q24", lesson:"t1u3-l3", level:2, q:"Which is the main weakness of codes sent by text message?", options:[
-     {t:"An attacker can move your phone number to their SIM card (a SIM swap)", ok:true, why:"Text codes depend on your phone number, which can be hijacked through the mobile carrier. They can also be phished."},
+     {t:"Your number can be moved to an attacker’s SIM card", ok:true, why:"This is a SIM swap. Text codes depend on your phone number, which can be hijacked through the mobile carrier. They can also be phished."},
      {t:"They need an internet connection", why:"Text messages arrive over the mobile network; that’s not their weakness."},
      {t:"They’re too long to type", why:"Usually 6 digits. The issue is security, not length."},
-     {t:"They don’t work at all as a second step", why:"They do work and are much better than nothing. They’re just the weakest option."}
+     {t:"They don’t work at all as a second step for most accounts", why:"They do work and are much better than nothing. They’re just the weakest option."}
    ]},
    {id:"t1u3-q25", lesson:"t1u3-l3", level:3, q:"Sione receives a text: “Your bank: a code is on its way. Our agent will call to confirm it.” Then someone calls asking for the code. What should he do?", options:[
      {t:"Refuse, end the call, and contact his bank using the number on his card", ok:true, why:"Banks never ask you to read out codes. The caller is trying to sign in or approve something as him."},
@@ -1697,7 +1771,7 @@ ICA.addUnit({
      {t:"The site cannot contain malware", why:"HTTPS secures the connection; it doesn’t vouch for the content."}
    ]},
    {id:"t1u3-q30", lesson:"t1u3-l4", level:3, q:"Hana gets an email from “Northwind Bank” <service@northwind-bank-help.com> saying her account will be closed in 24 hours unless she verifies it. What is the clearest sign it’s phishing?", options:[
-     {t:"The sender’s domain isn’t the bank’s real domain, and it uses a deadline to rush her", ok:true, why:"The address after `@` reveals a look-alike domain, and urgency is a classic pressure trick."},
+     {t:"The sender’s domain isn’t the bank’s, and there’s a deadline", ok:true, why:"The address after `@` reveals a look-alike domain, and the 24-hour deadline is a classic pressure trick to rush her."},
      {t:"The display name says “Northwind Bank”", why:"Display names can say anything; that’s why you check the address instead. On its own it isn’t a sign either way."},
      {t:"It was sent to her correct email address", why:"Scammers often have real addresses from breaches; this proves nothing."},
      {t:"It arrived on a weekday", why:"Timing on its own isn’t a warning sign."}
@@ -1721,7 +1795,7 @@ ICA.addUnit({
      {t:"Call back the number that just rang him", why:"Caller ID can be faked; use a number he already had."}
    ]},
    {id:"t1u3-q34", lesson:"t1u3-l4", level:2, q:"Lucía typed her card details into a fake parcel-fee page. What should she do first?", options:[
-     {t:"Call her bank or card provider immediately, using the number on her card", ok:true, why:"Speed gives the best chance of blocking the card and stopping payments."},
+     {t:"Call her bank or card provider immediately", ok:true, why:"She should use the number on her card. Speed gives the best chance of blocking the card and stopping payments."},
      {t:"Wait to see if any strange payments appear", why:"Waiting gives the scammers time to spend. Act straight away."},
      {t:"Reply to the scam text asking for a refund", why:"Replying only confirms her number is active and invites more scams."},
      {t:"Call the phone number shown on the fake page", why:"That number belongs to the scammers."}
@@ -1733,21 +1807,21 @@ ICA.addUnit({
      {t:"Your bank’s customer service email", why:"Your bank may want to know about fraud, but scam texts are reported to 7726."}
    ]},
    {id:"t1u3-q36", lesson:"t1u3-l4", level:3, q:"Amara meets someone on a marketplace app who quickly asks to “continue on a private chat app” and then recommends a crypto investment with guaranteed returns. What does this pattern suggest?", options:[
-     {t:"A scam: moving you off the platform, then pushing a “guaranteed” crypto investment", ok:true, why:"Leaving the platform escapes its protections, and guaranteed returns plus crypto are classic investment-scam signs."},
+     {t:"An investment scam that moves her off the platform", ok:true, why:"Moving you off the platform escapes its protections, and “guaranteed” returns plus crypto are classic investment-scam signs."},
      {t:"A normal business contact being efficient", why:"Genuine contacts rarely push guaranteed-profit investments, especially in crypto."},
      {t:"Safe, as long as the chat app is encrypted", why:"Encryption protects messages in transit; it can’t make the person honest."},
-     {t:"Safe, if they share a screenshot of their profits", why:"Screenshots are easy to fake and are a common part of the scam."}
+     {t:"Safe, if they share a screenshot of their profits first", why:"Screenshots are easy to fake and are a common part of the scam."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t1u3-q37", lesson:"t1u3-l5", level:1, q:"What is a patch?", options:[
      {t:"A fix for a flaw in software, delivered in an update", ok:true, why:"Patches close security holes and fix bugs."},
-     {t:"A sticker that covers a laptop camera", why:"Camera covers exist, but that’s not what “patch” means here."},
+     {t:"A sticker that covers a laptop’s camera when not in use", why:"Camera covers exist, but that’s not what “patch” means here."},
      {t:"A type of malware", why:"A patch is the fix, not the threat."},
      {t:"A backup copy of your files", why:"That’s a backup."}
    ]},
    {id:"t1u3-q38", lesson:"t1u3-l5", level:2, q:"Why is it important to install updates soon after they’re released?", options:[
-     {t:"Attackers can study the fix to find the flaw and target devices that haven’t updated", ok:true, why:"Once a fix is public, unpatched devices become easier targets."},
-     {t:"Old updates expire after a week and can’t be installed", why:"Updates don’t expire like this; the risk is the time your device stays unpatched."},
+     {t:"Attackers study the fix and target devices that haven’t updated", ok:true, why:"Once a fix is public, attackers can study it to find the flaw, so unpatched devices become easier targets."},
+     {t:"Old updates expire after a week and then can’t be installed at all", why:"Updates don’t expire like this; the risk is the time your device stays unpatched."},
      {t:"Updates only work if installed on the day of release", why:"They work whenever installed; delay simply leaves you exposed longer."},
      {t:"Installing quickly makes the device run faster", why:"Some updates improve speed, but the security reason is the important one."}
    ]},
@@ -1758,19 +1832,19 @@ ICA.addUnit({
      {t:"BitLocker", why:"BitLocker is Windows disk encryption."}
    ]},
    {id:"t1u3-q40", lesson:"t1u3-l5", level:2, q:"Using a café’s public Wi-Fi, what can the network owner generally see when you use an HTTPS website?", options:[
-     {t:"Which site you connected to, but not your passwords or the pages you read", ok:true, why:"HTTPS encrypts the content; the site name is generally still visible to the network."},
-     {t:"Everything you type, including passwords", why:"HTTPS encrypts what you send to the site."},
+     {t:"Which site you visited, but not your passwords or pages", ok:true, why:"HTTPS encrypts the content, including passwords and pages; the site name is generally still visible to the network."},
+     {t:"Everything you type and read, including all your passwords", why:"HTTPS encrypts what you send to the site."},
      {t:"Nothing at all", why:"The destination is usually visible. Hiding it from the local network is what a VPN adds."},
      {t:"Only your passwords", why:"It’s the reverse: passwords are protected, the site name usually isn’t."}
    ]},
    {id:"t1u3-q41", lesson:"t1u3-l5", level:3, q:"Kenji thinks a VPN will protect him from everything online. Which is true?", options:[
-     {t:"It hides his traffic from the local network, but doesn’t stop phishing or malware", ok:true, why:"A VPN protects the route to the VPN company. Fake sites and harmful downloads work just as well through it."},
+     {t:"It hides his traffic from the local network but doesn’t stop phishing", ok:true, why:"A VPN hides his traffic from the local network by protecting the route to the VPN company. Fake sites and harmful downloads work just as well through it, so it doesn’t stop phishing or malware."},
      {t:"It makes him completely anonymous", why:"Sites he signs in to still know it’s him, and the VPN company can see where his traffic goes."},
      {t:"It blocks all scam websites", why:"Most VPNs don’t; and even those with filters can’t catch every scam."},
-     {t:"It removes the need for software updates", why:"Updates fix flaws on his device; a VPN doesn’t."}
+     {t:"It removes the need for software updates on his devices", why:"Updates fix flaws on his device; a VPN doesn’t."}
    ]},
    {id:"t1u3-q42", lesson:"t1u3-l5", level:2, q:"A free photo-filter app asks for your contacts, microphone and precise location. What’s the best response?", options:[
-     {t:"Deny what it doesn’t need for filtering photos; consider a different app if it insists", ok:true, why:"Permissions should match the app’s purpose. A photo filter has no need for contacts or location."},
+     {t:"Deny what it doesn’t need for filtering photos", ok:true, why:"Permissions should match the app’s purpose. A photo filter has no need for contacts or location; consider a different app if it insists."},
      {t:"Allow all, because apps only ask for what they need", why:"Apps often request more than they need, sometimes to collect data."},
      {t:"Allow all, but only on Wi-Fi", why:"The network doesn’t change what the app can collect."},
      {t:"Allow all, then uninstall the app next year", why:"Data collected in the meantime can’t be taken back."}
@@ -1782,13 +1856,13 @@ ICA.addUnit({
      {t:"An antivirus app for Android", why:"It’s part of macOS."}
    ]},
    {id:"t1u3-q44", lesson:"t1u3-l5", level:3, q:"Priya’s email account has been hacked, and she has just got back in. According to NCSC guidance, what should she check before changing the password?", options:[
-     {t:"Forwarding rules and recovery details, which attackers add to keep access", ok:true, why:"The NCSC puts checking for forwarding rules before changing passwords, so a new reset isn’t secretly copied to the attacker."},
+     {t:"Forwarding rules and recovery details", ok:true, why:"Attackers add these to keep access. The NCSC puts checking for forwarding rules before changing passwords, so a new reset isn’t secretly copied to the attacker."},
      {t:"Whether her antivirus is up to date", why:"Updating devices matters, but the NCSC lists it later. First remove the attacker’s hidden access so new resets can’t be intercepted."},
      {t:"Her social media privacy settings", why:"Worth reviewing another day, but they don’t stop an attacker who has set up forwarding on her email."},
      {t:"Whether her new password will meet the site’s complexity rules", why:"The new password matters, but if forwarding rules remain, the attacker can intercept the next reset anyway."}
    ]},
    {id:"t1u3-q45", lesson:"t1u3-l5", level:2, q:"Why should you store your encryption recovery key somewhere other than the encrypted device?", options:[
-     {t:"If you forget your password, the recovery key is the only way back in, and it’s useless if it’s locked inside the device", ok:true, why:"Apple advises storing the FileVault key away from the Mac; the same logic applies to BitLocker keys."},
+     {t:"It’s the way back in if you forget your password", ok:true, why:"If you forget your password, the recovery key is the only way back in, and it’s useless if it’s locked inside the device. Apple advises storing the FileVault key away from the Mac; the same logic applies to BitLocker keys."},
      {t:"The recovery key slows down the device if stored on it", why:"Storage location doesn’t affect speed. The issue is being able to reach the key when locked out."},
      {t:"Recovery keys expire if kept on the device", why:"They don’t expire. They’re just unreachable when you’re locked out."},
      {t:"So that anyone who finds the device can unlock it", why:"The opposite: it should be kept safely away from the device."}

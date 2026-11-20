@@ -678,6 +678,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e3u1-q02","e3u1-q05","e3u1-q09","e3u1-q12","e3u1-q15","e3u1-q21","e3u1-q23","e3u1-q30","e3u1-q34","e3u1-q38","e3u1-q42","e3u1-q45"],
+  cpBank:[
+    {id:"e3u1-cp01", lesson:"e3u1-l1", level:1, q:"Rodrigo wants to write *yama* (mountain) in a note, but he hasn’t learned its kanji yet. What should he do?", options:[
+      {t:"Write it in katakana, ヤマ, because it is a noun", why:"Katakana is mainly for loanwords, foreign names, sound words and emphasis. *Yama* is a native Japanese word."},
+      {t:"Write it in romaji, *yama*, until he learns the kanji", why:"Real Japanese text almost never uses romaji. Hiragana can already write any word by its sound."},
+      {t:"Write it in hiragana, やま: that is normal and correct", ok:true, why:"Writing a word in hiragana when you don’t know its kanji is normal. Japanese children and adults do it too, and you can switch to the kanji later."},
+      {t:"Leave the word out, because nouns must be in kanji", why:"Nouns don’t have to be in kanji. With hiragana you can write any word, even before you know its kanji."}]},
+    {id:"e3u1-cp02", lesson:"e3u1-l1", level:2, q:"Yến sees two signs for the same town, まつしま. A new one says *Matsushima*; an old one says *Matusima*. Why are they different?", options:[
+      {t:"*Matusima* is the name of a different town", why:"Both spellings stand for the same kana, まつしま. Romaji systems differ in how they write し and つ."},
+      {t:"*Matusima* leaves out a short pause in the name", why:"A pause (small っ) is shown by doubling a consonant, and neither spelling has one. They differ only in how they write し and つ."},
+      {t:"*Matsushima* is English, and *Matusima* is Japanese", why:"Both are romaji, Japanese in Latin letters, in two different systems. Hepburn, the system this course uses, writes *shi* and *tsu*."},
+      {t:"The old sign follows rules that wrote し and つ as *si* and *tu*", ok:true, why:"The 1954 rules preferred spellings such as *si* and *tu*. Hepburn, and Japan’s 2025 rules, write *shi* and *tsu*. Both signs name the same town."}]},
+    {id:"e3u1-cp03", lesson:"e3u1-l2", level:2, q:"How do you read the two は in はなは きれいです (“The flower is pretty”)?", options:[
+      {t:"*wa*, then *wa*", why:"Only the particle は is said *wa*. Inside an ordinary word such as はな (*hana*, flower), は keeps its normal sound, *ha*."},
+      {t:"*ha*, then *wa*", ok:true, why:"The first は is part of the word はな (*hana*), so it is *ha*. The second は is the particle after the word, so it is said *wa*."},
+      {t:"*ha*, then *ha*", why:"The particle は is written with は but said *wa*. Its spelling is older than its pronunciation."},
+      {t:"*wa*, then *ha*", why:"It is the other way round: the word はな keeps *ha*, and the particle after it is said *wa*."}]},
+    {id:"e3u1-cp04", lesson:"e3u1-l3", level:1, q:"Rodrigo is copying *gomi* (garbage) from the house’s garbage calendar. He knows こ is *ko*. How does he write *go*?", options:[
+      {t:"Add the small circle ゜ to こ", why:"The circle ゜ is used only on the は row, where it turns *h* into *p*. To make *k* into *g* you need ゛."},
+      {t:"Put a small っ in front of こ", why:"A small っ is a one-beat pause before a consonant. It doesn’t change *k* into *g*."},
+      {t:"Add う after こ to make こう", why:"An extra う makes a long vowel, *kō*. The consonant is still *k*."},
+      {t:"Add the two short strokes ゛ to こ", ok:true, why:"The dakuten ゛ makes the consonant voiced: *k* becomes *g*, so こ becomes ご, and the word is ごみ."}]},
+    {id:"e3u1-cp05", lesson:"e3u1-l3", level:2, q:"Cheska reads まっちゃ (green tea) on a café menu as *ma-tsu-cha*. What has she got wrong?", options:[
+      {t:"The small っ is a pause, not *tsu*: *matcha*, three beats", ok:true, why:"A small っ is a beat of silence before the next consonant. ま・っ・ちゃ is three beats, written *matcha*."},
+      {t:"The ちゃ should be two beats: *chi-ya*", why:"A small ゃ joins the kana before it, so ちゃ is one sound and one beat, *cha*."},
+      {t:"The small っ is *tsu*, but it should be said very quietly", why:"A small っ has no sound of its own. It holds the next consonant for one beat."},
+      {t:"The first vowel should be long: *mā-cha*", why:"There is no long vowel here. The extra beat comes from the pause of the small っ, not from a longer *a*."}]},
+    {id:"e3u1-cp06", lesson:"e3u1-l3", level:3, q:"Cheska wants to type *kōri* (ice) on a romaji keyboard and get the correct hiragana. What should she type?", options:[
+      {t:"*kouri*", why:"Most long *o* sounds are spelled おう, but こおり is on the short list spelled with おお. *Kouri* would give こうり."},
+      {t:"*kōri*", why:"The line over *ō* is Hepburn spelling for readers. A keyboard needs every kana, letter for letter."},
+      {t:"*koori*", ok:true, why:"こおり is one of the few words that spell a long *o* with お, and a keyboard needs every kana, so you type *koori*."},
+      {t:"*kori*", why:"*Kori* gives こり, with a short *o*. A long vowel is two beats, so it needs a second kana."}]},
+    {id:"e3u1-cp07", lesson:"e3u1-l4", level:2, q:"Cheska sees シャツ on a clothes label. Which reading is right?", options:[
+      {t:"*tsatsu*: both long strokes fall from the top", why:"In the first kana the short strokes are stacked on the left and the long stroke rises. That is シ (*shi*)."},
+      {t:"*shashi*: both long strokes rise from the bottom", why:"In the last kana the short strokes stand along the top and the long stroke falls. That is ツ (*tsu*)."},
+      {t:"*shatsu*: the first long stroke rises, the last one falls", ok:true, why:"シ has a long stroke that rises; ツ has one that falls from the top. So シャツ is *sha-tsu*, “shirt”."},
+      {t:"*tsashi*: the first long stroke falls, the last one rises", why:"It is the other way round: シ (rising) comes first and ツ (falling) comes last."}]},
+    {id:"e3u1-cp08", lesson:"e3u1-l4", level:3, q:"Using the usual patterns for loanwords, how does the English word “print” become katakana?", options:[
+      {t:"プリンツ", why:"*Tu* would become *tsu* (ツ), so after a final *t* Japanese usually adds *o*: ト."},
+      {t:"ピリント", why:"After most consonants the extra vowel is *u*, so *p* becomes プ, not ピ."},
+      {t:"プリンチ", why:"An extra *i* comes after “ch” and “j” sounds, as in ランチ (lunch). “Print” ends in *t*."},
+      {t:"プリント", ok:true, why:"*P* gets an extra *u* (プ), *ri* is リ, *n* is ン, and after the final *t* the extra vowel is *o*: プ・リ・ン・ト."}]},
+    {id:"e3u1-cp09", lesson:"e3u1-l4", level:3, q:"How many morae (beats) are there in チェックイン (*chekkuin*, check-in at a hotel)?", options:[
+      {t:"6: one for each kana", why:"The small ェ joins チ, so チェ is a single beat. That leaves five."},
+      {t:"5: チェ・ッ・ク・イ・ン", ok:true, why:"チェ is one beat, because the small ェ joins チ. The small ッ and ン each take a full beat."},
+      {t:"4: チェ・ク・イ・ン", why:"The small ッ is a one-beat pause, and a pause still counts as a beat."},
+      {t:"2, like the English syllables *check-in*", why:"English counts syllables; Japanese counts morae. ッ and ン each get a full beat, so it is five."}]},
+    {id:"e3u1-cp10", lesson:"e3u1-l5", level:1, q:"An accent dictionary shows a word with the number [0]. In standard Tokyo Japanese, what does that tell you?", options:[
+      {t:"The first mora is high, and then the pitch drops", why:"That is [1], the head-high pattern, as in [雨]{あめ} (*ame*, rain)."},
+      {t:"The pitch never drops, and a particle after it stays high", ok:true, why:"[0] means no drop: the flat ([平板]{へいばん}, *heiban*) pattern. The word starts low, rises and stays high, even on the particle."},
+      {t:"The word has no pitch and is said all on one note", why:"Every mora is high or low. [0] means the word has no drop, not no melody: it starts low and rises."},
+      {t:"The drop comes on the particle after the word", why:"That is the tail-high ([尾高]{おだか}, *odaka*) pattern, numbered by the word’s length, as in [橋]{はし} [2]."}]},
+    {id:"e3u1-cp11", lesson:"e3u1-l5", level:3, q:"A dictionary marks a three-mora word with the accent [3]. In standard Tokyo Japanese, how does it sound with が after it?", options:[
+      {t:"high–low–low, and が stays low", why:"That is [1]: high on the first mora, then a drop after it."},
+      {t:"low–high–low, and が stays low", why:"That is [2]: the drop comes after the second mora, inside the word ([中高]{なかだか}, *nakadaka*)."},
+      {t:"low–high–high, and が stays high", why:"That is [0], the flat pattern with no drop at all."},
+      {t:"low–high–high, and が drops low", ok:true, why:"[3] means the drop comes after the third mora, the last one. That is tail-high ([尾高]{おだか}): the drop only shows on the particle."}]},
+    {id:"e3u1-cp12", lesson:"e3u1-l5", level:2, q:"ラーメン has four morae: ラ・ー・メ・ン. Which of these words has the same number?", options:[
+      {t:"きょうと (*Kyōto*)", why:"The small ょ joins き, so きょ is one beat: きょ・う・と is three."},
+      {t:"しゃしん (*shashin*, photo)", why:"しゃ is one beat, so しゃ・し・ん is three."},
+      {t:"ニュース (*nyūsu*, news)", why:"ニュ is one beat and ー adds one: ニュ・ー・ス is three."},
+      {t:"せっけん (*sekken*, soap)", ok:true, why:"せ・っ・け・ん: the small っ and ん each take a full beat, so it is four, like ラーメン."}]}
+  ],
   codex:[
     {id:"japanese-writing-system", title:"The Japanese writing system", aka:["three scripts","kanji, hiragana and katakana","日本語の文字"], tags:["japanese","writing","foundations"],
      summary:"Japanese mixes three scripts in one text: kanji for meaning, hiragana for grammar and native words, katakana for loanwords and names, with romaji for typing and signs.",
@@ -908,7 +970,7 @@ ICA.addUnit({
       {t:"を", why:"を is the hiragana particle that marks the object."},
       {t:"みます", why:"みます is the hiragana ending of the verb [飲]{の}みます."}]},
     {id:"e3u1-q03", lesson:"e3u1-l1", level:2, q:"Yến sees モンドラゴン on one of the mailboxes at her new share house. Why is the name written in katakana?", options:[
-      {t:"It is a name from another language, and such names are usually written in katakana", ok:true, why:"Names of people and places from outside Japan are normally written in katakana."},
+      {t:"It is a name from another language", ok:true, why:"Names of people and places from outside Japan are normally written in katakana."},
       {t:"Katakana shows that the person is a teacher", why:"Scripts don’t show someone’s job or status."},
       {t:"Katakana is the polite script for names", why:"Scripts don’t carry politeness. Japanese names are usually written in kanji."},
       {t:"Names always use katakana in Japanese", why:"Most Japanese names are written in kanji; katakana is typical for names from other languages."}]},
@@ -933,12 +995,12 @@ ICA.addUnit({
       {t:"The は row", why:"は comes later: …ta, na, **ha**."},
       {t:"The か row", why:"か comes before さ: a, **ka**, sa."}]},
     {id:"e3u1-q08", lesson:"e3u1-l1", level:3, q:"Cheska reads a Japanese children’s book written almost entirely in hiragana, with spaces between words. What is the best explanation?", options:[
-      {t:"Any word can be written in hiragana, and books for young readers often avoid kanji and add spaces", ok:true, why:"Hiragana can spell any word by sound, so children’s books (and learner materials) often use it, with spaces to help."},
-      {t:"The book is full of spelling mistakes", why:"Writing words in hiragana is not a mistake; it is normal for young readers."},
+      {t:"Books for young readers often avoid kanji", ok:true, why:"Hiragana can spell any word by sound, so children’s books (and learner materials) often use it instead of kanji, with spaces to help."},
+      {t:"The writer has made a lot of spelling mistakes", why:"Writing words in hiragana is not a mistake; it is normal for young readers."},
       {t:"It must be an old book from before kanji were used", why:"Kanji have been used in Japan for more than a thousand years; children’s books use hiragana by choice."},
       {t:"It is written in a dialect that has no kanji", why:"Dialects use the same scripts. The choice of hiragana is about the readers, not the dialect."}]},
     {id:"e3u1-q09", lesson:"e3u1-l1", level:2, q:"Why is it worth moving from romaji to kana early on?", options:[
-      {t:"Romaji hides details that kana show, such as whether a long *ō* is spelled おう or おお, and real texts don’t use it", ok:true, why:"Kana show the spelling Japanese readers see; romaji loses some of it and is rare in real texts."},
+      {t:"Kana show details that romaji hides", ok:true, why:"Kana show the spelling Japanese readers see, such as whether a long *ō* is spelled おう or おお. Romaji loses some of it and is rare in real texts."},
       {t:"Romaji is not allowed in Japan", why:"Romaji is used on signs, passports and keyboards; it just isn’t used for ordinary text."},
       {t:"Keyboards can’t type Japanese with romaji", why:"Most people type Japanese with romaji input; it turns into kana as you type."},
       {t:"Romaji can only write katakana words", why:"Romaji can write any Japanese word. The issue is that it hides spelling details and is rare in real texts."}]},
@@ -964,12 +1026,12 @@ ICA.addUnit({
       {t:"ぬ has two cross strokes", why:"The number of strokes isn’t the key difference; the loop is."},
       {t:"They are two ways of writing the same kana", why:"They are different kana with different sounds."}]},
     {id:"e3u1-q14", lesson:"e3u1-l2", level:1, q:"How do you make the sound ふ (*fu*)?", options:[
-      {t:"Blow gently through lips that almost touch, without the top teeth touching the lower lip", ok:true, why:"That gives the soft Japanese *f* sound."},
+      {t:"Blow gently through lips that almost touch", ok:true, why:"That gives the soft Japanese *f* sound. The top teeth don’t touch the lower lip."},
       {t:"Press the top teeth onto the lower lip, as in English “food”", why:"That is the English *f*. Japanese ふ uses the lips only."},
       {t:"Say a strong English *h*, as in “who”", why:"ふ is close to a breathy sound through the lips, but it isn’t an English “who”."},
       {t:"Tap the tongue behind the teeth", why:"A tongue tap is how the ら row is made."}]},
     {id:"e3u1-q15", lesson:"e3u1-l2", level:3, q:"Rodrigo keeps reading れ (*re*) as わ (*wa*). Which feature should he check?", options:[
-      {t:"How the last stroke ends: れ kicks out to the right, わ curves round", ok:true, why:"The left strokes are the same; only the ending of the right-hand stroke differs."},
+      {t:"How the last stroke ends", ok:true, why:"The left strokes are the same; only the ending of the right-hand stroke differs: れ kicks out to the right, わ curves round."},
       {t:"Whether there is a dot on top", why:"Neither has a dot."},
       {t:"How many cross strokes there are", why:"Both have one vertical and one cross stroke on the left; the difference is at the end."},
       {t:"The size of the kana", why:"Size doesn’t tell them apart; the shape of the last stroke does."}]},
@@ -990,9 +1052,9 @@ ICA.addUnit({
       {t:"Like a short *nu*", why:"ん has no vowel: it is a nasal sound on its own."}]},
     /* Lesson 3 */
     {id:"e3u1-q19", lesson:"e3u1-l3", level:1, q:"What does the dakuten (゛) do to a kana?", options:[
-      {t:"It makes the consonant voiced, for example か (*ka*) → が (*ga*)", ok:true, why:"The two strokes switch on the voice: k→g, s→z, t→d, h→b."},
-      {t:"It makes the vowel long", why:"Long vowels are written with an extra vowel kana or ー."},
-      {t:"It turns *h* into *p*", why:"That is the handakuten, the small circle ゜."},
+      {t:"It makes the consonant voiced", ok:true, why:"The two strokes switch on the voice: k→g, s→z, t→d, h→b. For example, か (*ka*) → が (*ga*)."},
+      {t:"It makes the vowel one beat longer", why:"Long vowels are written with an extra vowel kana or ー."},
+      {t:"It turns an *h* sound into a *p* sound", why:"That is the handakuten, the small circle ゜."},
       {t:"It makes the kana silent", why:"Silence (a pause) is shown by a small っ."}]},
     {id:"e3u1-q20", lesson:"e3u1-l3", level:1, q:"Which kana is *pi*?", options:[
       {t:"ぴ", ok:true, why:"ひ with the small circle ゜ is *pi*."},
@@ -1036,15 +1098,15 @@ ICA.addUnit({
       {t:"*chooto*", why:"This gives ちょおと, with an extra お."}]},
     /* Lesson 4 */
     {id:"e3u1-q28", lesson:"e3u1-l4", level:1, q:"What is katakana’s main job in modern Japanese?", options:[
-      {t:"Writing loanwords and names from other languages", ok:true, why:"Katakana also writes sound words and emphasis, but loanwords and foreign names are its main use."},
-      {t:"Writing grammar endings", why:"Grammar endings are written in hiragana."},
-      {t:"Writing all nouns", why:"Most native nouns use kanji or hiragana."},
+      {t:"Writing loanwords and foreign names", ok:true, why:"Katakana also writes sound words and emphasis, but loanwords and foreign names are its main use."},
+      {t:"Writing particles and grammar endings", why:"Grammar endings are written in hiragana."},
+      {t:"Writing all the nouns in a sentence", why:"Most native nouns use kanji or hiragana."},
       {t:"Writing polite speech", why:"Scripts don’t mark politeness."}]},
     {id:"e3u1-q29", lesson:"e3u1-l4", level:1, q:"What does the bar ー do in ケーキ (*kēki*, cake)?", options:[
-      {t:"It makes the vowel before it one beat longer", ok:true, why:"ケー is *kē*, two beats."},
-      {t:"It is a hyphen between two words", why:"It is the long-vowel mark, not a hyphen."},
+      {t:"It makes the vowel before it longer", ok:true, why:"It adds one beat: ケー is *kē*, two beats."},
+      {t:"It is a hyphen that joins two separate words", why:"It is the long-vowel mark, not a hyphen."},
       {t:"It is the kanji for “one”", why:"It looks like [一]{いち}, but in katakana words it is the long-vowel mark."},
-      {t:"It makes a pause", why:"A pause is shown by small ッ."}]},
+      {t:"It marks a short pause in the word", why:"A pause is shown by small ッ."}]},
     {id:"e3u1-q30", lesson:"e3u1-l4", level:2, q:"Cheska sees ビル on a sign above a door. Is it a building or beer?", options:[
       {t:"A building: ビル (*biru*) has a short *i*", ok:true, why:"ビル is “building”; beer is ビール, with the long-vowel bar."},
       {t:"Beer: ビル is short for ビール", why:"ビル and ビール are different words."},
@@ -1076,16 +1138,16 @@ ICA.addUnit({
       {t:"French", why:"French *pain* sounds similar, but the Japanese word came from Portuguese."},
       {t:"German", why:"German gave Japanese words such as アルバイト, but not パン."}]},
     {id:"e3u1-q36", lesson:"e3u1-l4", level:3, q:"Rodrigo sees an advert for a マンション (*manshon*) at a price he can afford, and expects a huge house. What does マンション usually mean in Japanese?", options:[
-      {t:"A flat (apartment) in a block, often an ordinary one", ok:true, why:"Loanword meanings can shift: マンション is a flat in a block of flats."},
+      {t:"A flat (apartment) in a block", ok:true, why:"Loanword meanings can shift: マンション is a flat in a block of flats, often an ordinary one."},
       {t:"A large country house, as in English", why:"That is the English meaning, not the Japanese one."},
       {t:"A hotel", why:"Hotel is ホテル."},
       {t:"A shop", why:"A shop is usually みせ ([店]{みせ})."}]},
     /* Lesson 5 */
     {id:"e3u1-q37", lesson:"e3u1-l5", level:1, q:"What is a mora?", options:[
-      {t:"A beat of Japanese timing: each kana is one, except small ゃゅょ, which join the kana before them", ok:true, why:"Morae are the beats Japanese speakers count, as in haiku."},
-      {t:"A syllable, exactly as in English", why:"Syllables and morae differ: *shinkansen* has three syllables but six morae."},
+      {t:"A beat of timing: most kana count as one", ok:true, why:"Morae are the beats Japanese speakers count, as in haiku. Each kana is one beat, except small ゃゅょ, which join the kana before them."},
+      {t:"A syllable, counted exactly as in English", why:"Syllables and morae differ: *shinkansen* has three syllables but six morae."},
       {t:"A stressed, louder part of a word", why:"Japanese doesn’t mark words with loud stress; that is English."},
-      {t:"A kanji’s reading", why:"A reading can contain several morae."}]},
+      {t:"The reading of one kanji", why:"A reading can contain several morae."}]},
     {id:"e3u1-q38", lesson:"e3u1-l5", level:2, q:"How many morae are in にほん (*Nihon*, Japan)?", options:[
       {t:"3", ok:true, why:"に・ほ・ん: ん is a full beat."},
       {t:"2", why:"That counts syllables (*Ni-hon*). In morae, ん gets its own beat."},
@@ -1112,10 +1174,10 @@ ICA.addUnit({
       {t:"You can’t tell: they sound identical", why:"Alone they do; the particle tells them apart."},
       {t:"Neither: はな has no pitch accent", why:"Every Tokyo word has a pattern, including the flat one."}]},
     {id:"e3u1-q43", lesson:"e3u1-l5", level:3, q:"Toby’s friend from Osaka says some words with a different melody from the Tokyo patterns in his textbook. What is the best explanation?", options:[
-      {t:"Kansai Japanese has its own accent system; both are correct in their own dialect", ok:true, why:"Accent differs between dialects. Learner materials teach the standard, Tokyo-based accent."},
-      {t:"Her friend is making mistakes", why:"Dialect accents are not mistakes; they are different systems."},
+      {t:"Kansai Japanese has its own accent system", ok:true, why:"Accent differs between dialects, and both are correct in their own dialect. Learner materials teach the standard, Tokyo-based accent."},
+      {t:"His friend is making mistakes", why:"Dialect accents are not mistakes; they are different systems."},
       {t:"The textbook must be wrong", why:"The textbook teaches standard Tokyo-based accent, which is correct for standard Japanese."},
-      {t:"Pitch accent only exists in Tokyo", why:"Most dialects have pitch accent, with different patterns; some have none."}]},
+      {t:"Pitch accent only exists in Tokyo Japanese", why:"Most dialects have pitch accent, with different patterns; some have none."}]},
     {id:"e3u1-q44", lesson:"e3u1-l5", level:1, q:"A haiku has a 5–7–5 pattern. What does it count?", options:[
       {t:"Morae (beats)", ok:true, why:"Japanese counts on morae: ふ・る・い・け・や is five."},
       {t:"English-style syllables", why:"Japanese poetry counts morae, so ん, っ and long vowels each count."},

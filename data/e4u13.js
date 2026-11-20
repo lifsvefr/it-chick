@@ -134,8 +134,8 @@ ICA.addUnit({
       ["Weiss (2000)","The term is so broad it risks explaining little and hiding power","His *Third World Quarterly* article."]
     ]},
     {id:"e4u13-l1-x5", type:"mcq", q:"Banking supervisors from about 30 jurisdictions agree on capital standards, which more than 100 countries then apply. A critic calls this a democratic problem. What is the best version of the critic’s argument?", options:[
-      {t:"The rules are made by officials whom the affected publics cannot easily see or hold to account, and many countries that apply them had no seat when they were written", ok:true, why:"Right. This is the accountability critique of government networks, made by Alston and others."},
-      {t:"Banking supervisors are not real government officials", why:"They are officials; the problem is that their network sits outside normal democratic oversight."},
+      {t:"Affected publics cannot easily hold the officials to account, and many countries had no seat", ok:true, why:"Right. The rules are made by officials whom affected publics cannot easily see or hold to account, and many countries that apply them had no seat when they were written. This is the accountability critique of government networks, made by Alston and others."},
+      {t:"Banking supervisors are not real government officials, so they have no right to make rules", why:"They are officials; the problem is that their network sits outside normal democratic oversight."},
       {t:"Any international rule is illegitimate", why:"Too sweeping. The critique targets how these rules are made and who takes part, not international rules as such."},
       {t:"The standards cannot work because no court enforces them", why:"Compliance is a separate question, and in practice many countries apply the standards. The democratic critique is about voice and accountability."}
     ]},
@@ -292,9 +292,9 @@ ICA.addUnit({
       {t:"BRICS is clearly an anti-Western military bloc.", flag:true, why:"A contested interpretation stated as fact. Members reject it; others hold it. Attribute such views."}
     ]},
     {id:"e4u13-l2-x7", type:"mcq", q:"Ana argues that the G20 is “more legitimate than the G7 because it includes rising powers”. Which counter-argument is strongest?", options:[
-      {t:"It is more representative than the G7, but still self-selected: most UN members have no seat of their own, and no treaty sets its membership", ok:true, why:"Right. This grants Ana’s point and then shows its limit, which is how a good counter-argument works."},
+      {t:"It is more representative but still self-selected", ok:true, why:"Right: most UN members have no seat of their own, and no treaty sets its membership. This grants Ana’s point and then shows its limit, which is how a good counter-argument works."},
       {t:"The G20 has never achieved anything", why:"Too sweeping and inaccurate: the 2009 crisis package and the Financial Stability Board are often cited."},
-      {t:"Rising powers do not matter in global governance", why:"An unsupported claim that ignores the reason the G20 was upgraded in 2008."},
+      {t:"Rising powers do not matter much in global governance", why:"An unsupported claim that ignores the reason the G20 was upgraded in 2008."},
       {t:"The G7 includes more countries than the G20", why:"Factually wrong: the G7 has seven members."}
     ]}
    ],
@@ -403,9 +403,9 @@ ICA.addUnit({
       {t:"PAHO, the Pan American Health Organization", b:2, why:"A regional organisation founded in 1902 that also serves as the WHO’s regional office for the Americas."}
     ]},
     {id:"e4u13-l3-x2", type:"mcq", q:"Why does the share of earmarked voluntary funding matter for the WHO’s independence?", options:[
-      {t:"Donors who earmark money decide which programmes it funds, so the organisation’s priorities can follow donors rather than its governing bodies", ok:true, why:"Right. This is why members agreed in 2022 to raise assessed contributions to half of the base budget."},
+      {t:"Donors who earmark money choose which programmes it funds", ok:true, why:"Right: so the organisation’s priorities can follow donors rather than its governing bodies. This is why members agreed in 2022 to raise assessed contributions to half of the base budget."},
       {t:"Voluntary money is illegal under the WHO Constitution", why:"Voluntary contributions are lawful and long-standing; the issue is control, not legality."},
-      {t:"Assessed contributions come only from the United States", why:"All member states pay assessed contributions, scaled to their economies."},
+      {t:"Assessed contributions come only from the United States government", why:"All member states pay assessed contributions, scaled to their economies."},
       {t:"Earmarked money cannot be spent on emergencies", why:"Some can be; the concern is that the donor, not the WHO, chooses."}
     ]},
     {id:"e4u13-l3-x3", type:"order", q:"Put the Pandemic Agreement’s steps in order.", items:[
@@ -426,10 +426,10 @@ ICA.addUnit({
       {v:25, tol:0, why:"That is the rise in percentage points, not in dollars."}
     ], hint2:"Work out the dues before and after, then subtract."},
     {id:"e4u13-l3-x6", type:"mcq", q:"Kenji writes: “COVAX shows that global health partnerships don’t work.” Which revision is most accurate?", options:[
-      {t:"COVAX delivered nearly 2 billion doses to 146 economies, but late and below its aims, largely because richer countries bought ahead and supplies were restricted", ok:true, why:"Right. It states both the achievement and the limits, with the main explanations critics give."},
+      {t:"COVAX delivered nearly 2 billion doses, but late and below its aims", ok:true, why:"Right. It reached 146 economies, but late, largely because richer countries bought ahead and supplies were restricted. The revision states both the achievement and the limits, with the main explanations critics give."},
       {t:"COVAX met all its targets on time", why:"Inaccurate: deliveries fell well behind early plans."},
       {t:"COVAX delivered no vaccines", why:"Inaccurate: it delivered nearly 2 billion doses."},
-      {t:"COVAX was run by a single government", why:"Inaccurate: it was co-led by CEPI, Gavi and the WHO, with UNICEF delivering."}
+      {t:"COVAX was run by a single government, which kept most of the doses for itself", why:"Inaccurate: it was co-led by CEPI, Gavi and the WHO, with UNICEF delivering."}
     ]},
     {id:"e4u13-l3-x7", type:"spot", q:"A social media post about the Pandemic Agreement. Tap each claim that is **wrong or misleading**.", ask:"wrong or misleading", parts:[
       {t:"The World Health Assembly adopted the Agreement in May 2025.", flag:false, why:"Correct."},
@@ -586,10 +586,10 @@ ICA.addUnit({
       ["Scientific Panel and Global Dialogue (2025)","UN General Assembly","Created by a resolution in August 2025."]
     ]},
     {id:"e4u13-l4-x5", type:"mcq", q:"Under the EU AI Act’s risk-based approach, how is a system that scores job applicants mainly treated?", options:[
-      {t:"As high-risk: allowed, but with strict duties on data, documentation, oversight and accuracy", ok:true, why:"Right. Employment uses are listed as high-risk; under the 2026 Digital Omnibus most such duties apply from December 2027."},
+      {t:"As high-risk: allowed, but with strict duties", ok:true, why:"Right: duties on data, documentation, oversight and accuracy. Employment uses are listed as high-risk; under the 2026 Digital Omnibus most such duties apply from December 2027."},
       {t:"As banned outright", why:"Only a short list of uses is banned, such as social scoring. Hiring tools are regulated, not banned."},
       {t:"As minimal risk with no duties", why:"Uses that affect access to jobs are treated as high-risk because of their impact on people’s rights."},
-      {t:"As outside the Act because it is software", why:"The Act covers AI systems, which are software."}
+      {t:"As outside the Act because it is only software", why:"The Act covers AI systems, which are software."}
     ]},
     {id:"e4u13-l4-x6", type:"spot", q:"A blog post on AI governance. Tap each claim that is **wrong or unattributed opinion**.", ask:"wrong or unattributed", parts:[
       {t:"The UN General Assembly created a scientific panel on AI in 2025.", flag:false, why:"Correct: resolution 79/325 of August 2025."},
@@ -603,9 +603,9 @@ ICA.addUnit({
       {t:"China has binding rules on generative AI services from 2023.", flag:false, why:"Correct: interim measures took effect in August 2023."}
     ]},
     {id:"e4u13-l4-x7", type:"mcq", q:"Why do scholars call AI governance a “regime complex”?", options:[
-      {t:"Many partly overlapping institutions and rules, with no single hierarchy, govern the same issue", ok:true, why:"Right. Principles, summits, national laws and a treaty overlap without one body in charge (compare Unit 9)."},
+      {t:"Because many overlapping bodies govern it, with no hierarchy", ok:true, why:"Right. Principles, summits, national laws and a treaty overlap on the same issue without one body in charge (compare Unit 9)."},
       {t:"Because AI is technically complex", why:"The term describes the institutions, not the technology."},
-      {t:"Because one organisation has full authority over AI", why:"That would be the opposite of a regime complex."},
+      {t:"Because one organisation has full legal authority over all AI", why:"That would be the opposite of a regime complex."},
       {t:"Because there are no rules at all", why:"There are many rules; the point is that they overlap."}
     ]}
    ],
@@ -730,7 +730,7 @@ ICA.addUnit({
       {t:"The New Development Bank", b:1, why:"Created by the BRICS members, a club; it is also an example of South-led finance."}
     ]},
     {id:"e4u13-l5-x3", type:"mcq", q:"Which statement about the Pact for the Future is accurate?", options:[
-      {t:"It was adopted without a vote in September 2024, with the Global Digital Compact and a Declaration on Future Generations as annexes", ok:true, why:"Right. An amendment was voted down first; the Pact itself was then adopted without a vote."},
+      {t:"It was adopted without a vote in September 2024, with two annexes", ok:true, why:"Right. Its annexes are the Global Digital Compact and a Declaration on Future Generations. An amendment was voted down first; the Pact itself was then adopted without a vote."},
       {t:"It is a binding treaty that requires Security Council reform by 2030", why:"It is a General Assembly outcome document, not a treaty, and sets no binding deadline for Council reform."},
       {t:"It replaced the UN Charter", why:"Only the Charter’s own amendment procedure can change the Charter."},
       {t:"The United States vetoed it", why:"There is no veto in the General Assembly."}
@@ -761,10 +761,10 @@ ICA.addUnit({
       {t:"How many journalists attended", why:"Media attention is not evidence of policy change."}
     ]},
     {id:"e4u13-l5-x7", type:"mcq", q:"Which is the best use of the “fragmentation” scenario in a paper?", options:[
-      {t:"“On internet governance, evidence as of 2026 fits fragmentation better than renewal, because of rival national models, though the IGF was made permanent in 2025.”", ok:true, why:"Right. It is narrow, dated, uses evidence and notes a counter-point."},
-      {t:"“The world will split into two blocs by 2035.”", why:"A prediction, not an analytical use of a scenario."},
+      {t:"“On internet governance, evidence as of 2026 fits fragmentation better than renewal.”", ok:true, why:"Right. It is narrow, dated and tied to evidence (rival national models). A full version would also note a counter-point, such as the IGF being made permanent in 2025."},
+      {t:"“The world will split into two blocs by 2035, as the rise of rival national internet models shows.”", why:"A prediction, not an analytical use of a scenario."},
       {t:"“Fragmentation is bad, so we must stop it.”", why:"A normative claim with no evidence about any case."},
-      {t:"“Everything is fragmenting everywhere.”", why:"Too sweeping to test."}
+      {t:"“Everything is fragmenting everywhere, from internet governance to trade, health and climate.”", why:"Too sweeping to test."}
     ]}
    ],
    apply:{
@@ -797,6 +797,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u13-q02","e4u13-q06","e4u13-q11","e4u13-q14","e4u13-q17","e4u13-q21","e4u13-q24","e4u13-q29","e4u13-q31","e4u13-q35","e4u13-q39","e4u13-q43"],
+  cpBank:[
+   {id:"e4u13-cp01", lesson:"e4u13-l1", level:1, q:"A region becomes deeply tied into global supply chains. At the same time, parties campaigning on local identity and autonomy grow stronger there. Which of Rosenau’s terms names this double movement?", options:[
+     {t:"A sphere of authority", why:"That is any actor whose rules people accept in an area. It does not describe integration and fragmentation happening together."},
+     {t:"Fragmegration", ok:true, why:"Yes. Rosenau’s word for globalisation integrating and fragmenting the world at the same time."},
+     {t:"A disaggregated state", why:"That is Slaughter’s idea of regulators, judges and legislators dealing directly with counterparts abroad."},
+     {t:"Governance without government", why:"That describes rule-making without a central authority, not the pull between integration and fragmentation."}]},
+   {id:"e4u13-cp02", lesson:"e4u13-l1", level:2, q:"Kai writes: “A private board wrote this accounting standard, so states play no part.” Yet his country’s law requires listed firms to use it. Which caution applies?", options:[
+     {t:"Private standards are not real rules, so the board has no authority at all", why:"The lesson rejects this: many private standards are followed worldwide and written into law."},
+     {t:"Market authority rests on expertise alone, so the law here is beside the point", why:"Expertise is one source of market authority, but here the law is part of why firms follow the standard. States often allow or require private rules."},
+     {t:"Private authority often exists because states allow or require it", ok:true, why:"Right. When a regulator writes a standard into law, the state is part of why the private rule is followed."},
+     {t:"Private authority always replaces state authority, as Strange showed", why:"Strange argued that markets were taking over some state functions, but the lesson says states remain central and often work through private actors."}]},
+   {id:"e4u13-cp03", lesson:"e4u13-l2", level:1, q:"Most emissions of an invented industrial gas come from eight countries. A diplomat proposes talks among just those eight, instead of all UN members. Whose idea is she applying?", options:[
+     {t:"Ruggie’s multilateralism: cooperation on general principles applied to all members alike", why:"Ruggie described principled cooperation among all members, not a deliberately small group."},
+     {t:"Rosenau’s sphere of authority", why:"That concept describes whose rules people accept, not how many states to invite to talks."},
+     {t:"Haas’s epistemic community", why:"An epistemic community is a network of experts, not a choice about which states to include."},
+     {t:"Naím’s minilateralism: the smallest number of countries with the largest impact", ok:true, why:"Yes. Naím’s “magic number” brings together just the states needed to make a real difference to the problem."}]},
+   {id:"e4u13-cp04", lesson:"e4u13-l2", level:2, q:"An informal group of twelve states agrees a new rule for shipping finance in one weekend. It has no treaty and publishes no records, and most of the world’s states had no seat. Which two critiques of club governance fit best?", options:[
+     {t:"Exclusion and weak accountability", ok:true, why:"Right. Most states had no seat (exclusion), and with no treaty or records it is hard to hold the group to account."},
+     {t:"Speed and like-mindedness", why:"These are strengths that supporters claim for clubs, not critiques."},
+     {t:"Fragmentation of rules and forum shopping", why:"These need rival clubs or overlapping rules. The scenario describes only one group."},
+     {t:"Gridlock and veto power", why:"Gridlock is a diagnosis of universal bodies stalling; this club acted quickly."}]},
+   {id:"e4u13-cp05", lesson:"e4u13-l2", level:3, q:"During a crisis, a small club of large economies acts within days, and its measures clearly calm markets. Most affected states had no voice. Using the unit’s yardsticks, how is this best described?", options:[
+     {t:"Strong input legitimacy, weak output legitimacy", why:"This reverses the terms. Input legitimacy comes from fair procedure and voice, which were missing here."},
+     {t:"Neither effective nor legitimate, because small clubs cannot solve global problems", why:"The scenario says the measures worked, so the club was effective. Clubs are often credited with speed in crises."},
+     {t:"Effective with output legitimacy, but weak input legitimacy from lack of voice", ok:true, why:"Yes. Clubs often score well on speed and results and poorly on voice: they trade legitimacy for speed."},
+     {t:"Fully legitimate, because legitimacy depends only on results", why:"Legitimacy can also rest on procedure and voice (input), and many disagreements are about which yardstick should count most."}]},
+   {id:"e4u13-cp06", lesson:"e4u13-l3", level:2, q:"Amendments to the International Health Regulations are adopted. Country X takes no action at home and does not reject them before the deadline. What follows?", options:[
+     {t:"X is not bound, because international rules bind only the states that ratify them", why:"That is true of a normal treaty, but the IHR work differently: amendments bind parties unless they reject them in time."},
+     {t:"X is bound, because IHR amendments bind parties unless they reject them in time", ok:true, why:"Right. Parties that rejected the 2024 amendments in time stayed under the earlier version; the others became bound."},
+     {t:"X is bound only once the WHO sends inspectors to check", why:"The WHO cannot enter a country or enforce reports. Being bound is a legal question, not an inspection."},
+     {t:"X has left the WHO, because silence counts as withdrawal", why:"Nothing in the IHR treats silence as withdrawal. Silence means the amendments apply."}]},
+   {id:"e4u13-cp07", lesson:"e4u13-l3", level:3, q:"A large private foundation offers a poor country money only for one disease programme, and its staff sit on the board that sets priorities. Which two concerns from Lessons 1 and 3 apply most?", options:[
+     {t:"Vaccine nationalism by rich states, and the risk of a splinternet of national networks", why:"Vaccine nationalism is about rich governments securing doses first; the splinternet is about national internets. Neither fits."},
+     {t:"Securitisation of health, and the WHO’s emergency alert levels", why:"Nothing in the scenario frames health as a security threat or involves a WHO emergency declaration."},
+     {t:"Gridlock in universal bodies, and the commitment problem in bargaining", why:"Gridlock describes stalled universal bodies; the commitment problem belongs to civil-war bargaining. Neither fits a donor’s choices."},
+     {t:"Vertical funding can weaken health systems, and the foundation answers to no voters", ok:true, why:"Yes. Critics say vertical programmes draw money from clinics and nurses, and ask who holds private rule-makers, including foundations, to account."}]},
+   {id:"e4u13-cp08", lesson:"e4u13-l4", level:1, q:"A regulator says of a new brain-implant technology: “Today we could easily change its design, but we don’t know its effects. In fifteen years we will know, but it will be everywhere.” What is this?", options:[
+     {t:"The Collingridge dilemma", ok:true, why:"Right. Early on a technology is easy to change but its effects are unknown; once effects are clear, it is entrenched."},
+     {t:"The dual-use problem of technology", why:"Dual use means the same technology serves civilian and military ends. The regulator is talking about timing."},
+     {t:"The Brussels effect", why:"That is how EU rules spread through global markets, not a dilemma about when to regulate."},
+     {t:"The splinternet", why:"That is the fear of the internet breaking into national networks."}]},
+   {id:"e4u13-cp09", lesson:"e4u13-l4", level:2, q:"A diplomat from a small Pacific state wants to take part directly in UN talks on how states should behave in cyberspace. Which format in the lesson was open to all UN members?", options:[
+     {t:"The Group of Governmental Experts (GGE)", why:"The GGE was a small group of selected experts, so most states had no seat."},
+     {t:"The Budapest Convention", why:"That is a Council of Europe treaty on cybercrime, not a UN forum on state behaviour."},
+     {t:"The Open-ended Working Group (OEWG)", ok:true, why:"Yes. From 2019 the OEWG, proposed by Russia, was open to all UN members and ran alongside a GGE."},
+     {t:"The Internet Engineering Task Force (IETF)", why:"The IETF writes technical protocols. It does not negotiate norms for state behaviour."}]},
+   {id:"e4u13-cp10", lesson:"e4u13-l4", level:3, q:"A technical standards body says it is open to “anyone”. Its meetings are held in costly cities, in English, and most participants work for large firms in rich countries. Which critique fits best?", options:[
+     {t:"The Collingridge dilemma: the body acts too early to know the effects", why:"Nothing in the scenario is about timing. The problem is who can take part."},
+     {t:"Openness on paper can exclude: “stakeholders” are often Northern firms and experts", ok:true, why:"Right. This is the Global South critique of multistakeholderism, and it echoes Lesson 1’s question of voice for those affected by private rules."},
+     {t:"The sovereignty model’s claim that intergovernmental bodies are less equal than open ones", why:"This reverses the sovereignty model, which claims bodies such as the ITU are more equal."},
+     {t:"Illicit authority: the firms rule through coercion outside the law", why:"Illicit authority means organised crime or mercenaries. Firms setting standards hold market authority."}]},
+   {id:"e4u13-cp11", lesson:"e4u13-l5", level:2, q:"A paragraph: “**Claim:** In 2023–24 an invented club of ten states cut plastic waste exports. **Mechanism:** leaders agreed fast without a universal body. **Evidence:** two summit declarations and a new working group.” What is the main weakness?", options:[
+     {t:"The mechanism is impossible, because small clubs never act faster than universal bodies", why:"Speed is the main strength claimed for clubs, so the mechanism is plausible."},
+     {t:"The claim has no date or scope", why:"It names an actor, an issue and the years 2023–24, so the claim is dated and scoped."},
+     {t:"Clubs cannot be studied with evidence at all", why:"They can: compliance studies, such as the G7 Research Group’s reports, track whether commitments were kept."},
+     {t:"The evidence is only outputs; it needs outcomes such as data on actual waste exports", ok:true, why:"Yes. Declarations and new bodies are outputs. To show exports fell, the writer needs evidence of changed behaviour."}]},
+   {id:"e4u13-cp12", lesson:"e4u13-l5", level:3, q:"As an international court gains power to make rulings that directly affect citizens, protests and national pushback against it grow. Which diagnosis explains this pattern best?", options:[
+     {t:"Hale, Held and Young’s *Gridlock*: power is spread more widely and problems are harder", why:"Gridlock explains why new cooperation stalls. The scenario is about pushback against an institution that already has authority."},
+     {t:"Stuenkel’s *Post-Western World*: emerging powers build parallel institutions", why:"Stuenkel describes new, mostly complementary bodies. No new institution appears in this scenario."},
+     {t:"Zürn: real authority creates legitimacy problems and invites contestation", ok:true, why:"Right. Zürn argues that as institutions exercise authority, states and publics challenge their legitimacy."},
+     {t:"Contested multilateralism: states move to a rival institution", why:"Morse and Keohane describe shifting to or creating another forum. Here the reaction is protest against the court itself."}]}
+  ],
   codex:[
    {id:"global-governance-concept", title:"Global governance: the concept and its critics", aka:["governance without government","global governance"], tags:["global governance","theory","international organisations"],
     summary:"How rules are made and kept across borders without a world government, where the idea came from, and why critics are wary of it.",
@@ -1232,8 +1294,8 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u13-q01", lesson:"e4u13-l1", level:1, q:"What distinction did Rosenau draw between government and governance?", options:[
-     {t:"Government rests on formal authority and police powers; governance on shared goals that need not be backed by force", ok:true, why:"Right. This is the core distinction of *Governance without Government* (1992)."},
-     {t:"Government is national and governance is always global", why:"Rosenau saw governance at every level, from families to IOs."},
+     {t:"Government rests on authority; governance on shared goals", ok:true, why:"Right. Government rests on formal authority and police powers; governance on shared goals that need not be backed by force. This is the core distinction of *Governance without Government* (1992)."},
+     {t:"Government is national, and governance is always global in scope", why:"Rosenau saw governance at every level, from families to IOs."},
      {t:"Governance means the same as world government", why:"The point is the opposite: rule without a world government."},
      {t:"Government is private and governance is public", why:"Governments are public; governance can be public, private or mixed."}]},
    {id:"e4u13-q02", lesson:"e4u13-l1", level:2, q:"A paper says: “Fisheries rules now come from treaties, private eco-labels and retailers.” Then: “The world therefore needs more global governance.” What has the author done?", options:[
@@ -1252,8 +1314,8 @@ ICA.addUnit({
      {t:"Illicit authority", why:"Illicit authority rests on coercion outside the law."},
      {t:"Government authority", why:"The agency is private; its influence comes through markets."}]},
    {id:"e4u13-q05", lesson:"e4u13-l1", level:3, q:"Fatima studies a network of data protection regulators that writes common guidance later applied in many countries. Which question goes to the heart of the main critique of such networks?", options:[
-     {t:"Who can see their decisions, and can the people affected hold them to account?", ok:true, why:"Right. The accountability critique (Alston and others) is the main objection to government networks."},
-     {t:"Are the regulators experts?", why:"Expertise is usually their strength, not the core critique."},
+     {t:"Can the people affected hold them to account?", ok:true, why:"Right. Who can see their decisions, and who can hold them to account? The accountability critique (Alston and others) is the main objection to government networks."},
+     {t:"Are the regulators real experts in data protection?", why:"Expertise is usually their strength, not the core critique."},
      {t:"Do they meet in person or online?", why:"The format of meetings does not touch the main debate."},
      {t:"Are they part of the UN?", why:"Government networks are usually outside formal IOs; that is part of what makes accountability hard, but the question itself misses the point."}]},
    {id:"e4u13-q06", lesson:"e4u13-l1", level:2, q:"Which is the best example of an epistemic community?", options:[
@@ -1262,20 +1324,20 @@ ICA.addUnit({
      {t:"A trade union striking for higher wages", why:"A union pursues members’ interests; it is not defined by shared expertise."},
      {t:"A smuggling network", why:"That would be illicit authority, not expertise."}]},
    {id:"e4u13-q07", lesson:"e4u13-l1", level:1, q:"What did Weiss argue in his 2000 article on governance?", options:[
-     {t:"That “global governance” had become so elastic it risked explaining little and hiding power", ok:true, why:"Right. He also criticised “good governance” as a donor programme in neutral dress."},
+     {t:"That the term had become so elastic it explained little", ok:true, why:"Right: so elastic that it risked explaining little and hiding power. He also criticised “good governance” as a donor programme in neutral dress."},
      {t:"That world government already exists", why:"He asked why scholars stopped discussing world government; he did not claim it exists."},
      {t:"That states no longer matter", why:"Weiss, a UN scholar, never argued that."},
-     {t:"That private authority is always illegitimate", why:"That is not his argument; his critique is about the concept’s vagueness and politics."}]},
+     {t:"That private authority is always illegitimate in world politics", why:"That is not his argument; his critique is about the concept’s vagueness and politics."}]},
    {id:"e4u13-q08", lesson:"e4u13-l1", level:3, q:"Kenji writes: “Because private standards cover timber and seafood, states have lost control of trade.” Which reply would a realist such as Drezner give?", options:[
-     {t:"Private rules matter mostly where strong states agree or don’t care; great powers still set the important regulatory outcomes", ok:true, why:"Right. Drezner’s *All Politics Is Global* (2007) makes this argument."},
-     {t:"Private standards are a form of cultural imperialism", why:"That is closer to a critical argument, not Drezner’s realist one."},
+     {t:"Great powers still set the important regulatory outcomes", ok:true, why:"Right. Private rules matter mostly where strong states agree or don’t care. Drezner’s *All Politics Is Global* (2007) makes this argument."},
+     {t:"Private standards are a form of Western cultural imperialism", why:"That is closer to a critical argument, not Drezner’s realist one."},
      {t:"Private standards are illegal", why:"They are lawful; the question is how much they matter."},
      {t:"Only the UN can make trade rules", why:"Trade rules come mainly from the WTO and trade agreements, and the realist point is about state power, not the UN."}]},
    {id:"e4u13-q09", lesson:"e4u13-l1", level:2, q:"Eight Pacific Island states sell fishing days to foreign fleets through a joint scheme. What does this case show about global governance?", options:[
-     {t:"Small states can govern a resource together through a sub-regional arrangement, alongside a regional commission and private labels", ok:true, why:"Right. The Parties to the Nauru Agreement’s Vessel Day Scheme is one of several overlapping layers."},
-     {t:"Only great powers make fisheries rules", why:"The case shows small states shaping the rules."},
+     {t:"Small states can jointly govern a resource", ok:true, why:"Right: through a sub-regional arrangement, alongside a regional commission and private labels. The Parties to the Nauru Agreement’s Vessel Day Scheme is one of several overlapping layers."},
+     {t:"Only great powers can make binding fisheries rules", why:"The case shows small states shaping the rules."},
      {t:"The UN directly sets all fishing quotas", why:"Quotas in this region come from a regional commission and national and sub-regional schemes."},
-     {t:"Private eco-labels have replaced states", why:"Labels add a layer; states still license and limit fishing."}]},
+     {t:"Private eco-labels have replaced states as the main rule-makers", why:"Labels add a layer; states still license and limit fishing."}]},
 
    /* ---- Lesson 2 ---- */
    {id:"e4u13-q10", lesson:"e4u13-l2", level:1, q:"When did G20 leaders first hold a summit?", options:[
@@ -1284,8 +1346,8 @@ ICA.addUnit({
      {t:"1999, in Berlin", why:"1999 is when G20 finance ministers and central bankers began meeting."},
      {t:"2009, in Yekaterinburg", why:"That was the first BRIC summit."}]},
    {id:"e4u13-q11", lesson:"e4u13-l2", level:2, q:"Which feature do the G7, the G20 and BRICS share?", options:[
-     {t:"No founding treaty or permanent secretariat; a rotating presidency or chair runs each year", ok:true, why:"Right. That is what makes them clubs rather than formal organisations."},
-     {t:"Binding majority voting", why:"They work by consensus; their decisions are political, not legally binding."},
+     {t:"No founding treaty or permanent secretariat", ok:true, why:"Right; a rotating presidency or chair runs each year. That is what makes them clubs rather than formal organisations."},
+     {t:"Binding majority voting among their members", why:"They work by consensus; their decisions are political, not legally binding."},
      {t:"Identical membership", why:"Their memberships differ widely."},
      {t:"Headquarters in Geneva", why:"None has a headquarters."}]},
    {id:"e4u13-q12", lesson:"e4u13-l2", level:1, q:"Which countries joined BRICS as full members from January 2024?", options:[
@@ -1294,45 +1356,45 @@ ICA.addUnit({
      {t:"Japan, South Korea, Australia and India", why:"India is a founding member; the others are not members."},
      {t:"Türkiye, Pakistan, Thailand and Vietnam", why:"None joined as full members in 2024; Thailand and Vietnam later became partners."}]},
    {id:"e4u13-q13", lesson:"e4u13-l2", level:3, q:"Priya writes that BRICS is “a united anti-Western bloc”. How should a neutral seminar paper treat this?", options:[
-     {t:"As one contested interpretation, attributed to those who hold it, set beside members’ own description and scholars who stress internal divisions", ok:true, why:"Right. Contested characterisations need attribution and counter-views."},
-     {t:"As an established fact", why:"Members reject it and many scholars doubt it; it cannot be stated as fact."},
+     {t:"As one contested view, attributed and set beside counter-views", ok:true, why:"Right: attributed to those who hold it, beside members’ own description and scholars who stress internal divisions. Contested characterisations need attribution and counter-views."},
+     {t:"As an established fact, since BRICS members often criticise the West", why:"Members reject it and many scholars doubt it; it cannot be stated as fact."},
      {t:"As obviously false propaganda", why:"Dismissing a view without evidence is also one-sided."},
      {t:"By leaving BRICS out of the paper", why:"Avoidance is not neutrality; describe the debate."}]},
    {id:"e4u13-q14", lesson:"e4u13-l2", level:2, q:"Why did the G20 become more prominent than the G7 after 2008?", options:[
-     {t:"A crisis in the world economy needed large emerging economies such as China, India and Brazil at the table", ok:true, why:"Right. Leaders then named it the “premier forum” for economic cooperation in 2009."},
+     {t:"The crisis needed large emerging economies at the table", ok:true, why:"Right: a crisis in the world economy needed economies such as China, India and Brazil. Leaders then named the G20 the “premier forum” for economic cooperation in 2009."},
      {t:"The G7 was dissolved in 2008", why:"The G7 continues to meet every year."},
-     {t:"The UN Security Council created the G20", why:"The G20 was created by its members, not by the UN."},
+     {t:"The UN Security Council created the G20 to replace the G7", why:"The G20 was created by its members, not by the UN."},
      {t:"The G20 has a larger secretariat", why:"It has no secretariat at all."}]},
    {id:"e4u13-q15", lesson:"e4u13-l2", level:1, q:"What is a sherpa in summit diplomacy?", options:[
-     {t:"A leader’s personal representative who negotiates the summit agenda and declaration in advance", ok:true, why:"Right. Sherpas prepare the ground so leaders can agree quickly."},
+     {t:"A leader’s personal negotiator before a summit", ok:true, why:"Right: a personal representative who negotiates the summit agenda and declaration in advance, so leaders can agree quickly."},
      {t:"The head of the G20 secretariat", why:"There is no G20 secretariat."},
      {t:"A mountain guide hired for summits", why:"The term is borrowed from mountaineering, but here it means a diplomat."},
-     {t:"A journalist who covers summits", why:"Sherpas are officials, not journalists."}]},
+     {t:"A journalist given special access to cover the summit talks", why:"Sherpas are officials, not journalists."}]},
    {id:"e4u13-q16", lesson:"e4u13-l2", level:3, q:"Small states led by Singapore formed the Global Governance Group to engage the G20. What critique of club governance does this reflect?", options:[
-     {t:"Exclusion: decisions affecting all are prepared by a few, so outsiders seek channels for voice", ok:true, why:"Right. The 3G pressed the G20 to consult the wider UN membership."},
-     {t:"Clubs are too slow", why:"Speed is usually their strength."},
-     {t:"Clubs have too many members", why:"The critique is the opposite: too few."},
-     {t:"Clubs are legally binding", why:"Their outputs are political, not legally binding."}]},
+     {t:"Exclusion: a few decide for all", ok:true, why:"Right. Decisions affecting all are prepared by a few, so outsiders seek channels for voice. The 3G pressed the G20 to consult the wider UN membership."},
+     {t:"Slowness: clubs take too long to decide", why:"Speed is usually their strength."},
+     {t:"Size: clubs have too many members", why:"The critique is the opposite: too few."},
+     {t:"Legalism: club decisions bind all states", why:"Their outputs are political, not legally binding."}]},
    {id:"e4u13-q17", lesson:"e4u13-l2", level:2, q:"How do the Quad’s four governments describe the grouping, and how has China’s government described it?", options:[
-     {t:"The members call it an informal partnership, not an alliance; China’s government has criticised it as an exclusive grouping aimed at containing China", ok:true, why:"Right. A neutral account attributes both descriptions."},
-     {t:"Both describe it as a formal military alliance with a mutual defence treaty", why:"The Quad has no treaty or mutual defence clause."},
+     {t:"Members call it an informal partnership; China’s government calls it an exclusive grouping", ok:true, why:"Right. The members say it is not an alliance; China’s government has criticised it as an exclusive grouping aimed at containing China. A neutral account attributes both descriptions."},
+     {t:"Both describe it as a formal military alliance with a mutual defence treaty like NATO’s", why:"The Quad has no treaty or mutual defence clause."},
      {t:"Both describe it as an ASEAN body", why:"It is not part of ASEAN; some ASEAN governments stress ASEAN centrality in response."},
-     {t:"The members call it a trade bloc and China calls it a development bank", why:"Neither description fits."}]},
+     {t:"The members call it a trade bloc, and China’s government calls it a development bank for Asia", why:"Neither description fits."}]},
    {id:"e4u13-q18", lesson:"e4u13-l2", level:2, q:"After the WTO’s Appellate Body stopped working in December 2019, a group of members including China and the EU set up an interim appeal arrangement. What is this an example of?", options:[
-     {t:"A plurilateral or minilateral workaround inside a larger organisation", ok:true, why:"Right. Willing members created their own mechanism when the universal one was blocked."},
-     {t:"A universal reform adopted by all WTO members", why:"Only some members joined it."},
+     {t:"A plurilateral workaround inside the WTO", ok:true, why:"Right: a plurilateral or minilateral workaround inside a larger organisation. Willing members created their own mechanism when the universal one was blocked."},
+     {t:"A universal reform adopted by all members of the WTO", why:"Only some members joined it."},
      {t:"A bilateral trade deal", why:"It involves many members, not two."},
      {t:"A new UN agency", why:"It sits within the WTO framework, not the UN."}]},
 
    /* ---- Lesson 3 ---- */
    {id:"e4u13-q19", lesson:"e4u13-l3", level:1, q:"Why could no country sign the WHO Pandemic Agreement as of November 2026?", options:[
-     {t:"It opens for signature only after the annex on pathogen access and benefit sharing is adopted, and talks on the annex were continuing", ok:true, why:"Right. Adoption of the PABS annex is a prerequisite."},
+     {t:"It opens for signature only after its PABS annex is adopted", ok:true, why:"Right. Adoption of the annex on pathogen access and benefit sharing is a prerequisite, and talks on the annex were continuing."},
      {t:"The World Health Assembly rejected it", why:"The Assembly adopted it in May 2025."},
      {t:"It needs the Security Council’s approval first", why:"WHO treaties do not need Security Council approval."},
      {t:"It entered into force automatically, so no signatures are needed", why:"It requires signature and 60 ratifications before it can enter into force."}]},
    {id:"e4u13-q20", lesson:"e4u13-l3", level:2, q:"What would the PABS system exchange?", options:[
-     {t:"Rapid sharing of pathogen samples and genetic data for guaranteed access to part of manufacturers’ pandemic production", ok:true, why:"Right. Participating firms would give the WHO rapid access to 20% of real-time production."},
-     {t:"Vaccine patents for cash payments to the WHO", why:"PABS is about pathogens and benefits, not selling patents."},
+     {t:"Pathogen samples and data for a share of pandemic products", ok:true, why:"Right: rapid sharing of pathogen samples and genetic data, for guaranteed access to part of manufacturers’ pandemic production. Participating firms would give the WHO rapid access to 20% of real-time production."},
+     {t:"Vaccine patents for cash payments from companies to the WHO", why:"PABS is about pathogens and benefits, not selling patents."},
      {t:"Travel bans for trade concessions", why:"The Agreement does not trade travel bans."},
      {t:"WHO membership for voting rights", why:"PABS has nothing to do with membership."}]},
    {id:"e4u13-q21", lesson:"e4u13-l3", level:2, q:"A government says its funding to the WHO is mostly earmarked for one disease programme. What governance concern does this raise?", options:[
@@ -1341,44 +1403,44 @@ ICA.addUnit({
      {t:"It means the government has left the WHO", why:"Giving earmarked money is a form of participation."},
      {t:"It doubles the government’s vote in the Assembly", why:"Each member has one vote regardless of funding."}]},
    {id:"e4u13-q22", lesson:"e4u13-l3", level:1, q:"Which change entered into force on 19 September 2025?", options:[
-     {t:"Amendments to the International Health Regulations, including a new “pandemic emergency” alert level", ok:true, why:"Right. Eleven States Parties rejected them."},
+     {t:"Amendments to the IHR", ok:true, why:"Right: amendments to the International Health Regulations, including a new “pandemic emergency” alert level. Eleven States Parties rejected them."},
      {t:"The WHO Pandemic Agreement", why:"The Agreement was adopted in 2025 but is not yet open for signature."},
      {t:"The founding of Gavi", why:"Gavi was founded in 2000."},
      {t:"The end of COVAX", why:"COVAX closed at the end of 2023."}]},
    {id:"e4u13-q23", lesson:"e4u13-l3", level:3, q:"Lucía argues that COVAX was a total failure. Which response best balances the evidence?", options:[
-     {t:"It delivered nearly 2 billion doses to 146 economies and is estimated to have helped avert at least 2.7 million deaths, but doses arrived late because richer countries bought first and exports were restricted", ok:true, why:"Right. The response grants the critique and adds the achievements, with sources."},
-     {t:"It met every target on time", why:"Inaccurate: supplies fell well behind early plans."},
+     {t:"It delivered nearly 2 billion doses, but late, as richer countries bought first", ok:true, why:"Right. It delivered nearly 2 billion doses to 146 economies and is estimated to have helped avert at least 2.7 million deaths, but doses arrived late because richer countries bought first and exports were restricted. The response grants the critique and adds the achievements."},
+     {t:"It met every target on time and reached every country that asked", why:"Inaccurate: supplies fell well behind early plans."},
      {t:"It delivered no vaccines", why:"Inaccurate: it delivered nearly 2 billion doses."},
-     {t:"Its delays were caused only by the WHO", why:"Most accounts point to market and political factors, such as advance purchases and export limits."}]},
+     {t:"Its delays were caused only by the WHO, which ran the whole scheme badly from Geneva", why:"Most accounts point to market and political factors, such as advance purchases and export limits."}]},
    {id:"e4u13-q24", lesson:"e4u13-l3", level:2, q:"Which framing best describes an approach focused on stopping outbreaks at their source before they reach other countries?", options:[
      {t:"Global health security", ok:true, why:"Right. Critics say it can favour surveillance and borders over health systems."},
      {t:"Global health equity", why:"Equity stresses fair access to care and medicines for all."},
      {t:"One Health", why:"One Health links human, animal and environmental health; it is not the same as the security framing."},
      {t:"Vaccine nationalism", why:"That is governments securing vaccines for themselves first."}]},
    {id:"e4u13-q25", lesson:"e4u13-l3", level:3, q:"A post claims the Pandemic Agreement “lets the WHO force lockdowns”. What does the text say?", options:[
-     {t:"It states that the WHO cannot direct national laws or impose measures such as lockdowns, travel bans or vaccine mandates", ok:true, why:"Right. The sovereignty clause says so explicitly."},
+     {t:"It says the WHO cannot direct national laws or impose lockdowns", ok:true, why:"Right. The sovereignty clause says so explicitly, and also rules out imposed travel bans or vaccine mandates."},
      {t:"It gives the WHO power to order lockdowns after a pandemic emergency", why:"No such power exists in the Agreement or the IHR."},
      {t:"It lets the Security Council order lockdowns", why:"The Agreement does not involve the Security Council."},
      {t:"It is silent on the question", why:"It addresses the question directly."}]},
    {id:"e4u13-q26", lesson:"e4u13-l3", level:1, q:"What is Gavi?", options:[
-     {t:"A public–private partnership founded in 2000 that helps lower-income countries buy and deliver vaccines", ok:true, why:"Right. It co-led COVAX."},
-     {t:"A WHO department", why:"Gavi is a separate partnership with its own board."},
-     {t:"A pharmaceutical company", why:"Industry sits on its board, but it is not a company."},
-     {t:"An African Union agency", why:"That description fits Africa CDC."}]},
+     {t:"A vaccine partnership for poorer countries", ok:true, why:"Right: a public–private partnership founded in 2000 that helps lower-income countries buy and deliver vaccines. It co-led COVAX."},
+     {t:"A WHO department that buys vaccines", why:"Gavi is a separate partnership with its own board."},
+     {t:"A pharmaceutical company that makes vaccines", why:"Industry sits on its board, but it is not a company."},
+     {t:"An African Union agency for public health", why:"That description fits Africa CDC."}]},
    {id:"e4u13-q27", lesson:"e4u13-l3", level:2, q:"Critics say partnerships such as Gavi and the Global Fund are “vertical”. What do they mean?", options:[
-     {t:"They fund specific diseases or vaccines, which may pull resources from whole health systems", ok:true, why:"Right. The debate is vertical (disease-specific) versus horizontal (system-wide) investment."},
-     {t:"They are run from the top by the WHO", why:"They are independent partnerships, not run by the WHO."},
+     {t:"They fund specific diseases, not whole health systems", ok:true, why:"Right. Funding specific diseases or vaccines may pull resources from whole health systems. The debate is vertical (disease-specific) versus horizontal (system-wide) investment."},
+     {t:"They are run from the top down by the WHO’s headquarters", why:"They are independent partnerships, not run by the WHO."},
      {t:"They only work in mountainous regions", why:"“Vertical” here describes the funding model."},
-     {t:"They refuse to work with governments", why:"They work closely with governments."}]},
+     {t:"They refuse to work with national health ministries", why:"They work closely with governments."}]},
 
    /* ---- Lesson 4 ---- */
    {id:"e4u13-q28", lesson:"e4u13-l4", level:1, q:"What happened in the IANA stewardship transition of October 2016?", options:[
-     {t:"The US government’s contract over core internet functions ended, and oversight passed to ICANN’s global multistakeholder community", ok:true, why:"Right. The contract with the US Department of Commerce’s NTIA was allowed to expire."},
-     {t:"The ITU took control of domain names", why:"Oversight went to ICANN’s community, not the ITU."},
+     {t:"Oversight passed from the US government to ICANN’s community", ok:true, why:"Right. The US government’s contract over core internet functions, held by the Department of Commerce’s NTIA, was allowed to expire, and oversight passed to ICANN’s global multistakeholder community."},
+     {t:"The ITU took control of domain names from the US government", why:"Oversight went to ICANN’s community, not the ITU."},
      {t:"China took over the root zone", why:"Inaccurate: no government took over; oversight went to ICANN’s community."},
-     {t:"The internet was split into national networks", why:"No such split occurred."}]},
+     {t:"The internet was split into separate national networks run by states", why:"No such split occurred."}]},
    {id:"e4u13-q29", lesson:"e4u13-l4", level:2, q:"Which argument would a supporter of a state-led (sovereignty) model of internet governance most likely make?", options:[
-     {t:"Governments are responsible for security and order, so intergovernmental bodies with equal state votes should have a bigger role", ok:true, why:"Right. This is the core of the sovereignty position."},
+     {t:"Governments are responsible for order, so states should have a bigger role", ok:true, why:"Right. Governments are responsible for security and order, so intergovernmental bodies with equal state votes should have a bigger role. This is the core of the sovereignty position."},
      {t:"Engineers and companies should lead because they understand the technology best", why:"That is a multistakeholder argument."},
      {t:"No one should make any rules for the internet", why:"Neither main model argues this."},
      {t:"ICANN should remain under one government’s contract", why:"Sovereignty advocates criticised exactly that arrangement."}]},
@@ -1388,14 +1450,14 @@ ICA.addUnit({
      {t:"That international law does not apply online", why:"The 2013 group agreed that it does apply."},
      {t:"A ban on all state cyber operations", why:"No such ban exists."}]},
    {id:"e4u13-q31", lesson:"e4u13-l4", level:2, q:"Why do scholars describe AI governance as of 2026 as a regime complex?", options:[
-     {t:"Many overlapping forums and rules (OECD, UNESCO, G7, Council of Europe, summits, UN bodies, national laws) govern it with no single hierarchy", ok:true, why:"Right. Overlapping institutions without a hierarchy define a regime complex."},
-     {t:"One UN agency regulates all AI worldwide", why:"No single regulator exists."},
+     {t:"Many overlapping forums govern it, with no single hierarchy", ok:true, why:"Right. The OECD, UNESCO, G7, Council of Europe, summits, UN bodies and national laws overlap without a hierarchy, which defines a regime complex."},
+     {t:"One UN agency regulates all AI worldwide through binding rules", why:"No single regulator exists."},
      {t:"There are no rules on AI anywhere", why:"There are many, overlapping rules."},
      {t:"AI systems are complex", why:"The term describes institutions, not technology."}]},
    {id:"e4u13-q32", lesson:"e4u13-l4", level:2, q:"What did the UN General Assembly create in August 2025 (resolution 79/325)?", options:[
-     {t:"An Independent International Scientific Panel on AI and a Global Dialogue on AI Governance", ok:true, why:"Right. The 40-member panel was appointed in February 2026; the Dialogue was launched in September 2025 and held its first full session in Geneva in July 2026."},
+     {t:"A scientific panel and a global dialogue on AI", ok:true, why:"Right: an Independent International Scientific Panel on AI and a Global Dialogue on AI Governance. The 40-member panel was appointed in February 2026; the Dialogue was launched in September 2025 and held its first full session in Geneva in July 2026."},
      {t:"A binding global AI treaty", why:"The only binding international AI treaty is the Council of Europe’s."},
-     {t:"A UN agency with power to license AI models", why:"Neither body has regulatory powers."},
+     {t:"A new UN agency with power to license and ban AI models", why:"Neither body has regulatory powers."},
      {t:"The Global Digital Compact", why:"The Compact was adopted in September 2024 with the Pact for the Future."}]},
    {id:"e4u13-q33", lesson:"e4u13-l4", level:3, q:"Under the EU AI Act as amended in 2026, when do most duties for high-risk uses listed in the Act (such as hiring tools) apply?", options:[
      {t:"From 2 December 2027", ok:true, why:"Right. The Digital Omnibus, in force from July 2026, moved them from August 2026."},
@@ -1408,10 +1470,10 @@ ICA.addUnit({
      {t:"All three: identical models", why:"Her point is that they differ."},
      {t:"Japan: state-driven; Korea: rights-driven; India: market-driven", why:"Bradford’s three models are built around the US, China and the EU."}]},
    {id:"e4u13-q35", lesson:"e4u13-l4", level:2, q:"Which statement about the UN Convention against Cybercrime is accurate and neutral?", options:[
-     {t:"Adopted by the General Assembly in December 2024 and opened for signature in Hanoi in 2025; supporters stress inclusion and capacity, while human rights groups warned of surveillance risks", ok:true, why:"Right. It states the facts and attributes both views."},
-     {t:"It replaced the Budapest Convention", why:"The two treaties coexist."},
+     {t:"Adopted in 2024; supporters stress inclusion, while rights groups warn of surveillance", ok:true, why:"Right. It was adopted by the General Assembly in December 2024 and opened for signature in Hanoi in 2025. The answer states the facts and attributes both views."},
+     {t:"It replaced the Council of Europe’s Budapest Convention, which has now closed", why:"The two treaties coexist."},
      {t:"It is obviously a tool of repression", why:"An unattributed judgement; present critics’ views as theirs."},
-     {t:"It was adopted by the Security Council", why:"It was adopted by the General Assembly."}]},
+     {t:"It was adopted by the Security Council in December 2024 and so binds all UN members at once", why:"It was adopted by the General Assembly."}]},
    {id:"e4u13-q36", lesson:"e4u13-l4", level:1, q:"What did the General Assembly’s WSIS+20 review decide about the Internet Governance Forum in December 2025?", options:[
      {t:"It made the IGF a permanent UN forum", ok:true, why:"Right, while reaffirming the multistakeholder approach."},
      {t:"It abolished the IGF", why:"The opposite: it was made permanent."},
@@ -1420,17 +1482,17 @@ ICA.addUnit({
 
    /* ---- Lesson 5 ---- */
    {id:"e4u13-q37", lesson:"e4u13-l5", level:1, q:"How was the Pact for the Future adopted in September 2024?", options:[
-     {t:"Without a vote, after members set aside a Russian amendment by 143 votes to 7 with 15 abstentions", ok:true, why:"Right. The amendment was not taken up and the Pact passed without a vote."},
+     {t:"Without a vote", ok:true, why:"Right. Members first set aside a Russian amendment by 143 votes to 7 with 15 abstentions; the Pact then passed without a vote."},
      {t:"By a unanimous recorded vote", why:"There was no recorded vote on the Pact itself."},
      {t:"It was vetoed in the General Assembly", why:"There is no veto in the General Assembly."},
      {t:"By the Security Council", why:"It was adopted by the General Assembly."}]},
    {id:"e4u13-q38", lesson:"e4u13-l5", level:2, q:"Hale, Held and Young’s *Gridlock* (2013) explains stalled cooperation mainly through…", options:[
-     {t:"wider distribution of power, harder problems, institutional inertia and fragmentation", ok:true, why:"Right: their four pathways to gridlock."},
+     {t:"power shifts, harder problems, inertia and fragmentation", ok:true, why:"Right: their four pathways to gridlock are a wider distribution of power, harder problems, institutional inertia and fragmentation."},
      {t:"the end of the nation-state", why:"They do not argue that states have ended."},
-     {t:"too few international organisations", why:"Fragmentation among many institutions is part of their diagnosis."},
+     {t:"too few international organisations to manage shared problems", why:"Fragmentation among many institutions is part of their diagnosis."},
      {t:"the success of the WTO", why:"Not their argument."}]},
    {id:"e4u13-q39", lesson:"e4u13-l5", level:3, q:"Ana writes: “The 2025 G20 declaration promised debt relief, so the debt problem is being solved.” What is the main weakness?", options:[
-     {t:"It treats an output (a promise) as an outcome; she needs evidence of what changed afterwards", ok:true, why:"Right. Separate declarations from implementation."},
+     {t:"It treats a promise as an outcome", ok:true, why:"Right. A promise is an output, not an outcome; she needs evidence of what changed afterwards. Separate declarations from implementation."},
      {t:"G20 declarations never mention debt", why:"They often do; the issue is evidence of effect."},
      {t:"She should not cite the G20 at all", why:"Citing it is fine; the inference is the problem."},
      {t:"Debt is not a global governance issue", why:"It plainly is, through the G20, IMF and creditors."}]},
@@ -1440,19 +1502,19 @@ ICA.addUnit({
      {t:"The Budapest Convention", why:"That is a Council of Europe cybercrime treaty."},
      {t:"The IANA stewardship transition", why:"That concerned internet governance."}]},
    {id:"e4u13-q41", lesson:"e4u13-l5", level:2, q:"What is Stuenkel’s main claim in *Post-Western World* (2016)?", options:[
-     {t:"Emerging powers are building parallel institutions that mostly complement, rather than replace, existing ones", ok:true, why:"Right. He sees a parallel order that hedges rather than overthrows."},
+     {t:"Emerging powers’ new institutions mostly complement old ones", ok:true, why:"Right. Emerging powers are building parallel institutions that mostly complement, rather than replace, existing ones: a parallel order that hedges rather than overthrows."},
      {t:"The liberal order is bound to fail", why:"That is Mearsheimer’s 2019 argument."},
      {t:"Global governance means world government", why:"Not his claim."},
-     {t:"Emerging powers have no interest in institutions", why:"His book is about the institutions they build."}]},
+     {t:"Emerging powers have no real interest in building institutions", why:"His book is about the institutions they build."}]},
    {id:"e4u13-q42", lesson:"e4u13-l5", level:3, q:"Which sentence uses a scenario as an analytical tool rather than a prediction?", options:[
-     {t:"“As of 2026, evidence on AI governance fits a multiplex story better than a renewal story, though the UN created a scientific panel.”", ok:true, why:"Right: narrow, dated, evidence-based, with a counter-point."},
-     {t:"“By 2040 the world will be divided into two blocs.”", why:"A forecast, not an analytical use."},
+     {t:"“As of 2026, evidence on AI governance fits a multiplex story better than a renewal story.”", ok:true, why:"Right: narrow, dated and evidence-based. A full version would add a counter-point, such as the UN’s new scientific panel."},
+     {t:"“By 2040 the world will be divided into two blocs, as current evidence on AI governance shows.”", why:"A forecast, not an analytical use, even with evidence attached."},
      {t:"“Multilateralism is dead.”", why:"Sweeping and untestable as stated."},
      {t:"“Renewal is the best scenario, so it will happen.”", why:"Confuses a preference with a prediction."}]},
    {id:"e4u13-q43", lesson:"e4u13-l5", level:2, q:"What distinguishes effectiveness from legitimacy as yardsticks for global governance?", options:[
-     {t:"Effectiveness asks whether problems are solved; legitimacy asks whether those affected accept the rule-makers’ right to decide", ok:true, why:"Right. They can pull apart, as with fast but exclusive clubs."},
+     {t:"Effectiveness: problems solved. Legitimacy: rule-makers accepted", ok:true, why:"Right. Effectiveness asks whether problems are solved; legitimacy asks whether those affected accept the rule-makers’ right to decide. They can pull apart, as with fast but exclusive clubs."},
      {t:"They are the same thing", why:"Scholars treat them as distinct and sometimes in tension."},
-     {t:"Effectiveness concerns law and legitimacy concerns money", why:"Neither definition is right."},
+     {t:"Effectiveness concerns law, and legitimacy concerns money and funding", why:"Neither definition is right."},
      {t:"Legitimacy only matters for democracies", why:"Every institution needs acceptance by those it affects."}]},
    {id:"e4u13-q44", lesson:"e4u13-l5", level:1, q:"Which pair are the two annexes of the Pact for the Future?", options:[
      {t:"The Global Digital Compact and the Declaration on Future Generations", ok:true, why:"Right. Both were adopted with the Pact in September 2024."},
@@ -1460,9 +1522,9 @@ ICA.addUnit({
      {t:"The IHR and the Pandemic Agreement", why:"These are WHO instruments."},
      {t:"The Budapest Convention and the Tallinn Manual", why:"These concern cybercrime and cyber law."}]},
    {id:"e4u13-q45", lesson:"e4u13-l5", level:3, q:"Tomás argues that China’s Global Governance Initiative (2025) will replace the UN. Which revision is most defensible?", options:[
-     {t:"China presents it as strengthening the UN-centred system; some Western officials see an attempt to reshape rules; its effects are not yet clear as of 2026", ok:true, why:"Right. Attribute the positions and avoid prediction."},
-     {t:"It has already replaced the UN", why:"Inaccurate: the UN continues, and the initiative is framed as supporting it."},
-     {t:"It is certainly harmless", why:"An unattributed judgement; describe views instead."},
+     {t:"China says it strengthens the UN; some Western officials say it aims to reshape rules", ok:true, why:"Right. Attribute the positions and avoid prediction: its effects are not yet clear as of 2026."},
+     {t:"It has already replaced the UN as the main forum for global rules", why:"Inaccurate: the UN continues, and the initiative is framed as supporting it."},
+     {t:"It is certainly harmless, since China’s government says it supports the UN-centred system", why:"An unattributed judgement resting on one side’s claim; describe views instead."},
      {t:"It is a BRICS treaty", why:"It is a Chinese government initiative, not a BRICS treaty."}]}
   ]
 });

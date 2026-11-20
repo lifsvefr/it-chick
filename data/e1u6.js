@@ -540,7 +540,7 @@ ICA.addUnit({
     {id:"e1u6-l4-x2", type:"mcq", q:"In a method section you read: 「未回答の項目は分析から除外した。」 What were removed from the analysis?", options:[
       {t:"Questions the respondents left unanswered", ok:true, why:"未 (not yet) + 回答 (answer): items that were not answered. 除外した means they were left out of the analysis."},
       {t:"Questions with wrong answers", why:"未 means “not yet”, not “wrong”. Wrong answers would be something like 誤答."},
-      {t:"Respondents who refused to take part", why:"項目 means items or questions, not people. People who answered are 回答者."},
+      {t:"Respondents who refused to take part in the survey", why:"項目 means items or questions, not people. People who answered are 回答者."},
       {t:"Answers that have not been analysed yet", why:"The sentence says the items were *excluded from* the analysis (分析から除外), not that analysis is still to come."}
     ]},
     {id:"e1u6-l4-x3", type:"mcq", q:"How is 回答率 (response rate) read?", options:[
@@ -563,7 +563,7 @@ ICA.addUnit({
       {t:"A study on the use of keigo among learners of Japanese", ok:true, why:"The head noun is 研究 (study). に関する (on, concerning) links 敬語使用 (keigo use), and における (among, in) links 日本語学習者 (learners of Japanese)."},
       {t:"Learners of Japanese study keigo", why:"The title has no verb: 研究 is a noun at the end, the head of the phrase. It names a study, not an action of learners."},
       {t:"Research on learners of Japanese as users of keigo", why:"における means “among, in” and attaches to 敬語使用, not “as users of”. The study is about keigo use."},
-      {t:"Keigo research in Japanese language schools", why:"日本語学習者 means learners of Japanese, not schools, and the title doesn’t mention schools."}
+      {t:"Keigo research carried out in Japanese language schools", why:"日本語学習者 means learners of Japanese, not schools, and the title doesn’t mention schools."}
     ]},
     {id:"e1u6-l4-x6", type:"mcq", q:"What is the head noun of 「地方の大学に進学した留学生が卒業後に直面する問題」?", options:[
       {t:"問題", ok:true, why:"In Japanese, describing words come before the noun, so the head is at the end: 問題 (problems). Everything before it says which problems."},
@@ -572,8 +572,8 @@ ICA.addUnit({
       {t:"卒業後", why:"卒業後 (after graduating) says when the problems are faced; it describes, it isn’t the head."}
     ]},
     {id:"e1u6-l4-x7", type:"mcq", q:"Mei uses a pop-up dictionary while reading. It shows しゅっせいりつ for 出生率, but her lecturer said しゅっしょうりつ. What should she conclude?", options:[
-      {t:"Both readings are accepted; she can follow her lecturer and her field’s usage", ok:true, why:"Dictionaries list both readings for 出生率. When a word has two accepted readings, follow the usage of your teacher and field."},
-      {t:"The pop-up dictionary is broken and shouldn’t be used", why:"The tool isn’t wrong here: it has shown one of two accepted readings. Tools are still very useful; just check readings that matter."},
+      {t:"Both readings are accepted; she can follow her lecturer’s usage", ok:true, why:"Right. Dictionaries list both readings for 出生率. When a word has two accepted readings, follow the usage of your teacher and field."},
+      {t:"The pop-up dictionary is broken and shouldn’t be used for reading", why:"The tool isn’t wrong here: it has shown one of two accepted readings. Tools are still very useful; just check readings that matter."},
       {t:"Her lecturer made a mistake", why:"しゅっしょうりつ is an accepted reading, and it is widely used in population statistics."},
       {t:"出生率 must mean two different things", why:"The two readings have the same meaning, the birth rate."}
     ]}
@@ -750,6 +750,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e1u6-q02","e1u6-q05","e1u6-q11","e1u6-q14","e1u6-q20","e1u6-q23","e1u6-q29","e1u6-q32","e1u6-q35","e1u6-q38","e1u6-q42","e1u6-q44"],
+  cpBank:[
+   {id:"e1u6-cp01", lesson:"e1u6-l1", level:1, q:"Dmitri searches CiNii Research for コンピューター教育 and finds fewer papers than he expected. Which extra search is most likely to help?", options:[
+     {t:"コンピュータ教育, without the final long-vowel mark", ok:true, why:"Katakana words are often written with or without a final ー. Many papers write コンピュータ, so search both spellings."},
+     {t:"コンピューター教育 again, later in the day", why:"The same search gives the same results. Try spelling variants, synonyms or wider words instead."},
+     {t:"コンピューター教育の歴史と未来, as a longer phrase", why:"Adding words narrows a search. When results are too few, try variants or wider words."},
+     {t:"English words only, because Japanese titles can’t be searched", why:"English words can help, since many papers have English titles, but Japanese titles are searchable. Try the spelling variant first."}]},
+   {id:"e1u6-cp02", lesson:"e1u6-l1", level:2, q:"Priya finds a useful paper in a university faculty’s 紀要. Before using it as her main evidence, what should she do?", options:[
+     {t:"Nothing: every 紀要 paper is peer-reviewed, like a society journal", why:"Review varies: some bulletins review papers, but many only edit them."},
+     {t:"Reject it: 紀要 papers are always unreliable", why:"Some 紀要 papers are excellent. An unreviewed text is not automatically bad."},
+     {t:"Check the bulletin’s review policy, then read it critically", ok:true, why:"Checking varies between 紀要, so look at the policy and read critically. Peer review is a sign of weight, not a guarantee of truth."},
+     {t:"Look for a 新書 on the topic instead, because 新書 are peer-reviewed", why:"新書 are edited by the publisher, not peer-reviewed. They are good for background, not as main evidence."}]},
+   {id:"e1u6-cp03", lesson:"e1u6-l2", level:1, q:"In which section of a 論文 would you most expect this sentence? 「本研究の[限界]{げんかい}として、[対象者]{たいしょうしゃ}が一つの大学の学生に限られていた点が挙げられる。」 (“One limitation of this study is that the participants were all students at one university.”)", options:[
+     {t:"方法", why:"方法 says who was studied and how. Admitting that this is a weakness belongs where the results are interpreted."},
+     {t:"結果", why:"結果 reports what was found. This sentence judges the study; it doesn’t report a finding."},
+     {t:"キーワード", why:"キーワード lists three to five search terms, not full sentences."},
+     {t:"考察", ok:true, why:"考察 interprets the results, compares them with earlier studies and admits limits, such as a narrow group of participants."}]},
+   {id:"e1u6-cp04", lesson:"e1u6-l2", level:2, q:"These four sentences come from the はじめに of an invented paper. Which one states the paper’s purpose?", options:[
+     {t:"近年、高齢者のSNS利用が増えている。", why:"This is background (近年…), the first step of はじめに."},
+     {t:"しかし、地方に住む高齢者の利用の[実態]{じったい}は、十分に明らかにされていない。", why:"This shows the gap in research (しかし…されていない). The purpose comes next."},
+     {t:"佐藤（2020）は、高齢者の利用が都市部に[偏]{かたよ}っていると指摘している。", why:"This reports an earlier study, so it is 先行研究."},
+     {t:"そこで本稿では、B県の高齢者がSNSを何に利用しているかを明らかにすることを目的とする。", ok:true, why:"そこで本稿では…目的とする is the purpose sentence: the single most useful sentence in a paper."}]},
+   {id:"e1u6-cp05", lesson:"e1u6-l2", level:3, q:"A paper’s 結果 says 「A群の得点はB群より高かった。」 Its 考察 says 「この差は、A群の練習時間が長かったためである可能性がある。」 Lucía’s report says 「この研究は、練習時間が長いと得点が上がることを示した。」 What is the main problem?", options:[
+     {t:"There is no problem, because 結果 and 考察 say the same thing here", why:"結果 reports what was found; 考察 interprets it. Here the 考察 offers only a possible explanation."},
+     {t:"She reports a possible explanation (可能性がある) as a proven fact", ok:true, why:"The study found a difference; the cause was only suggested. Keep the author’s level of certainty when you report a paper."},
+     {t:"She should have written her sentence in です・ます style instead", why:"Reports are normally in である style. The problem is what she claims, not the style."},
+     {t:"She should have reported the 方法 section, not the 考察", why:"方法 describes how the study was done. The problem is turning a hedged interpretation into a fact."}]},
+   {id:"e1u6-cp06", lesson:"e1u6-l3", level:1, q:"Which connective fits best? 「調査は2023年5月に実施した。（　）、回答者の[氏名]{しめい}は記録していない。」 (“The survey was carried out in May 2023. ( ), respondents’ names were not recorded.”)", options:[
+     {t:"したがって", why:"したがって leads to a result or conclusion. Not recording names doesn’t follow from the date of the survey."},
+     {t:"たとえば", why:"たとえば introduces an example, and the second sentence is not an example of the first."},
+     {t:"なお", ok:true, why:"なお adds a side note or detail (“note that…”), which is exactly what the second sentence does."},
+     {t:"つまり", why:"つまり restates the same idea, but the second sentence gives new information."}]},
+   {id:"e1u6-cp07", lesson:"e1u6-l3", level:2, q:"Hana is summarising this paragraph: 「A市では、駅前の[駐輪場]{ちゅうりんじょう}が毎朝[満車]{まんしゃ}になる。たとえば、平日の8時には空きがほとんどない。市の調査によると、利用者の約6割が通学の高校生である。したがって、市は高校と協力して駐輪場を増やす必要がある。」 Which sentence would she usually cut?", options:[
+     {t:"「A市では、駅前の駐輪場が毎朝満車になる。」", why:"This is the problem the paragraph answers, which a summary usually keeps."},
+     {t:"「たとえば、平日の8時には空きがほとんどない。」", ok:true, why:"After たとえば comes an example that illustrates the point. A summary usually cuts examples and keeps the 根拠."},
+     {t:"「市の調査によると、利用者の約6割が通学の高校生である。」", why:"This is 根拠 from data (調査によると), the evidence for working with high schools. Keep it."},
+     {t:"「したがって、市は高校と協力して駐輪場を増やす必要がある。」", why:"This is the 主張 (したがって…必要がある), the most important thing to keep."}]},
+   {id:"e1u6-cp08", lesson:"e1u6-l3", level:3, q:"An invented paper surveyed one class of 30 students. It ends: 「したがって、すべての大学で授業を[録画]{ろくが}すべきではないだろうか。」 How should a careful reader take this sentence?", options:[
+     {t:"As a softened claim, and ask whether one class of 30 supports it", ok:true, why:"The writer is making a claim, softly. Careful reading also asks whether the evidence justifies the link that したがって announces."},
+     {t:"As a real question: the author doesn’t know the answer and is asking readers", why:"～のではないだろうか is not a real question. It is a softened claim."},
+     {t:"As a proven conclusion, because したがって shows that the conclusion follows", why:"A connective shows the link the writer intends. It doesn’t by itself make a conclusion follow."},
+     {t:"As background information that a summary can cut", why:"A claim after したがって is the main point, which a summary keeps."}]},
+   {id:"e1u6-cp09", lesson:"e1u6-l4", level:2, q:"Which sentence is correct?", options:[
+     {t:"経済的な理由で、進学をあきらめる学生もいる。", ok:true, why:"〜的 words work like な-adjectives: 経済的な + noun."},
+     {t:"経済的の理由で、進学をあきらめる学生もいる。", why:"Before a noun, 〜的 words take な, like な-adjectives, not の."},
+     {t:"経済的する理由で、進学をあきらめる学生もいる。", why:"Words ending in 〜的 can’t become verbs with する."},
+     {t:"経済性な理由で、進学をあきらめる学生もいる。", why:"〜性 makes a noun (a quality or nature), so it can’t take な. The adjective form is 経済的な."}]},
+   {id:"e1u6-cp10", lesson:"e1u6-l4", level:3, q:"Mei reads in a 方法 section: 「本研究では、無作為に選んだ300名を対象とした。」 She splits 無作為 into 無 (without) + 作為 and guesses that the 300 people “did nothing”. What is the best response?", options:[
+     {t:"Her guess is right: a word always means the sum of its parts", why:"A word is not always the sum of its parts (compare 非常口, an emergency exit). If a guess doesn’t fit, look it up."},
+     {t:"無作為 means “random”; she should check key method words like this", ok:true, why:"無作為 is the “random” of random sampling. Guess to keep reading, but confirm the words that matter, such as those describing the method."},
+     {t:"無作為 means “carefully selected”, the opposite of random", why:"It means random: chosen without the researcher picking particular people."},
+     {t:"She can skip it, because words in the 方法 section never affect the meaning", why:"How participants were chosen matters when you judge a study. Words that matter should be checked."}]},
+   {id:"e1u6-cp11", lesson:"e1u6-l5", level:2, q:"Tomás is writing a long report. In one section he summarises a paper by 田中 (2021); elsewhere he writes about his own research. How should he refer to Tanaka and Tanaka’s paper?", options:[
+     {t:"As 筆者 and 本稿, as in a 要約 exercise", why:"In a longer report, 筆者 can mean Tomás himself and 本稿 means his own report, so these would confuse readers."},
+     {t:"By name: 「田中（2021）は、～と述べている」, then 田中は…", ok:true, why:"Naming the author avoids confusion, because in his own writing 筆者 and 本稿 refer to him and his report."},
+     {t:"As 私 and 本研究", why:"Japanese papers rarely use 私, and 本研究 would mean Tomás’s own study, not Tanaka’s."},
+     {t:"He shouldn’t name Tanaka at all, to keep the summary short", why:"A summary of a named source names the author and year, at least once at the start."}]},
+   {id:"e1u6-cp12", lesson:"e1u6-l5", level:3, q:"Source text: 「近年、自転車で通学する大学生が増えている。たとえば、B大学では[駐輪場]{ちゅうりんじょう}を2倍に広げた。自転車通学は、[運動不足]{うんどうぶそく}の[解消]{かいしょう}につながる可能性がある。しかし、事故も増えているため、大学は安全教育を行う必要がある。」 Which 要約 is best?", options:[
+     {t:"近年、自転車で通学する大学生が増えている。たとえば、B大学では駐輪場を2倍に広げた。", why:"It copies the source’s sentences, keeps the example and loses the author’s claim."},
+     {t:"自転車通学は運動不足を解消する。しかし、事故が増えているため、大学は安全教育を行う必要があると筆者は主張しています。私も賛成です。", why:"It turns 可能性がある into a fact, mixes in です・ます, and adds the writer’s own opinion."},
+     {t:"筆者によれば、B大学は駐輪場を2倍に広げた。そのため筆者は、すべての大学が駐輪場を広げるべきだと主張している。", why:"It keeps only the example and invents a claim that the text doesn’t make."},
+     {t:"筆者によれば、自転車で通学する大学生が増えており、運動不足の解消につながる可能性がある一方、事故も増えている。そのため筆者は、大学が安全教育を行う必要があると主張している。", ok:true, why:"It keeps the trend, the hedged benefit, the problem and the claim, cuts the example, and uses new sentences in である style."}]}
+  ],
   codex:[
    {id:"reading-japanese-papers", title:"Japanese academic texts and how to read them", aka:["論文","新書","白書","紀要","学術雑誌","査読","reading academic Japanese"], tags:["academic Japanese","reading"],
     summary:"The main kinds of Japanese academic text (論文, レポート, 新書, 白書, 学術雑誌, 紀要), how each is checked, and a reading order that saves time.",
@@ -1097,9 +1159,9 @@ ICA.addUnit({
   bank:[
    /* ---------- Lesson 1 ---------- */
    {id:"e1u6-q01", lesson:"e1u6-l1", level:1, q:"What is a 紀要 (kiyō)?", options:[
-     {t:"A bulletin of papers published by a university, faculty or institute", ok:true, why:"紀要 collect papers by an institution’s researchers. Review practices vary between bulletins."},
+     {t:"A bulletin of papers published by a university or institute", ok:true, why:"紀要 collect papers by the researchers of a university, faculty or institute. Review practices vary between bulletins."},
      {t:"A government report on a policy area", why:"That is a 白書 (white paper)."},
-     {t:"A short paperback for general readers", why:"That is a 新書."},
+     {t:"A short paperback book that explains a topic for general readers", why:"That is a 新書."},
      {t:"A student’s graduation thesis", why:"That is a 卒業論文."}
    ]},
    {id:"e1u6-q02", lesson:"e1u6-l1", level:2, q:"Sione is starting a report on a topic he knows nothing about. He wants a readable overview, written by an expert, before tackling papers. What should he look for?", options:[
@@ -1112,7 +1174,7 @@ ICA.addUnit({
      {t:"Peer review: checking by other researchers before publication", ok:true, why:"A paper that has passed it is a 査読付き論文 (refereed paper)."},
      {t:"Reading a text quickly for its main points", why:"That is skimming. 査読 is a review process before publication."},
      {t:"Checking the reading of kanji", why:"Readings are 読み方. 査読 is peer review."},
-     {t:"A teacher marking a student’s report", why:"Marking is assessment, not peer review before publication."}
+     {t:"A teacher reading and marking a student’s report before giving it back", why:"Marking is assessment, not peer review before publication."}
    ]},
    {id:"e1u6-q04", lesson:"e1u6-l1", level:3, q:"Lucía finds two papers with different findings: one in a 紀要, one a 査読付き論文 in a society journal. What is the most sensible approach?", options:[
      {t:"Compare their methods and evidence, noting that only one was peer-reviewed", ok:true, why:"Peer review is a useful signal but not a verdict. Judging the methods and evidence, with the review status in mind, is how researchers weigh conflicting studies."},
@@ -1127,16 +1189,16 @@ ICA.addUnit({
      {t:"J-STAGE", why:"J-STAGE hosts journals published by academic societies. It doesn’t search books, or theses held in university repositories."}
    ]},
    {id:"e1u6-q06", lesson:"e1u6-l1", level:1, q:"What is J-STAGE?", options:[
-     {t:"A platform, run by the Japan Science and Technology Agency, where many Japanese academic societies publish journals", ok:true, why:"J-STAGE hosts society journals online. Most articles are free to read."},
+     {t:"A platform where many Japanese academic societies publish journals", ok:true, why:"J-STAGE is run by the Japan Science and Technology Agency and hosts society journals online. Most articles are free to read."},
      {t:"The National Diet Library’s catalogue", why:"That is NDL Search."},
-     {t:"A pop-up dictionary for reading Japanese web pages", why:"Pop-up dictionaries are tools such as 10ten Japanese Reader or Yomitan."},
+     {t:"A free pop-up dictionary for reading Japanese web pages in a browser", why:"Pop-up dictionaries are tools such as 10ten Japanese Reader or Yomitan."},
      {t:"A list of approved textbooks", why:"J-STAGE publishes journals, not textbook lists."}
    ]},
    {id:"e1u6-q07", lesson:"e1u6-l1", level:2, q:"Dmitri needs the full text of a paper from a university’s 紀要. Where is he most likely to find it free?", options:[
-     {t:"In that university’s institutional repository, findable through IRDB or CiNii Research", ok:true, why:"Many bulletin papers are deposited in university repositories, which IRDB searches and CiNii Research links to."},
+     {t:"In that university’s institutional repository", ok:true, why:"Many bulletin papers are deposited in university repositories, which you can find through IRDB or CiNii Research: IRDB searches them and CiNii Research links to them."},
      {t:"In a 白書", why:"白書 are government reports; they don’t reprint bulletin papers."},
      {t:"In a 新書 series", why:"新書 are books from commercial publishers, not bulletin archives."},
-     {t:"Nowhere: bulletin papers are never online", why:"Many are online, often free, through repositories."}
+     {t:"Nowhere: bulletin papers are never put online for free", why:"Many are online, often free, through repositories."}
    ]},
    {id:"e1u6-q08", lesson:"e1u6-l1", level:3, q:"Hana searches CiNii Research for 子育て支援 and gets fewer results than she expected. Which next step is most likely to help?", options:[
      {t:"Add searches with related words and variants, such as 育児支援, 子ども, 子供", ok:true, why:"Japanese writers use different words and spellings for the same idea. Searching for synonyms and variants is the standard fix."},
@@ -1145,8 +1207,8 @@ ICA.addUnit({
      {t:"Switch to a dictionary site", why:"A dictionary may suggest synonyms, but it won’t find research."}
    ]},
    {id:"e1u6-q09", lesson:"e1u6-l1", level:2, q:"Kenji cites a 白書 in his report. What should he keep in mind?", options:[
-     {t:"It is a good source of official data, but it presents the government’s own view of its policy", ok:true, why:"白書 are official and data-rich, so present their interpretations as the government’s view."},
-     {t:"It has been peer-reviewed by independent researchers", why:"白書 are prepared by government bodies; they are not peer-reviewed."},
+     {t:"It has official data, but it presents the government’s own view", ok:true, why:"白書 are official and data-rich, but they present the government’s view of its own policy, so report their interpretations as that view."},
+     {t:"It has been peer-reviewed by independent researchers before publication", why:"白書 are prepared by government bodies; they are not peer-reviewed."},
      {t:"It can’t be cited in academic writing", why:"白書 are widely cited, especially for statistics."},
      {t:"It is a student report and carries little weight", why:"白書 are government publications, not student work."}
    ]},
@@ -1176,8 +1238,8 @@ ICA.addUnit({
      {t:"The 注 (notes)", why:"Notes hold sources and side points, not the main point."}
    ]},
    {id:"e1u6-q14", lesson:"e1u6-l2", level:3, q:"Amara is reading a history paper with はじめに, four numbered sections with content titles, おわりに and many notes, but no 方法 or 結果. What is the best conclusion?", options:[
-     {t:"This is normal for argument-based humanities papers; she should find the purpose in はじめに and the conclusion in おわりに", ok:true, why:"Many humanities papers are organised around an argument, not an experiment, so they have no 方法 or 結果 headings."},
-     {t:"The paper is badly organised and shouldn’t be cited", why:"Its shape is standard for its field. Judge it by its argument and sources."},
+     {t:"This is normal for argument-based humanities papers", ok:true, why:"Many humanities papers are organised around an argument, not an experiment, so they have no 方法 or 結果 headings. She should find the purpose in はじめに and the conclusion in おわりに."},
+     {t:"The paper is badly organised and shouldn’t be cited at all", why:"Its shape is standard for its field. Judge it by its argument and sources."},
      {t:"The 方法 and 結果 must be hidden in the notes", why:"Notes hold sources and side discussions; the paper simply follows a different structure."},
      {t:"It must be a 新書, not a paper", why:"新書 are books. A paper with numbered sections and notes is still a 論文."}
    ]},
@@ -1226,7 +1288,7 @@ ICA.addUnit({
    ]},
    {id:"e1u6-q22", lesson:"e1u6-l3", level:2, q:"Ana reads 「なぜなら、～からである。」 What is this sentence doing?", options:[
      {t:"Giving a reason: a 根拠 for the previous claim", ok:true, why:"なぜなら～からである is a standard way to give a reason."},
-     {t:"Stating the main claim", why:"The claim usually comes before the reason here; this sentence supports it."},
+     {t:"Stating the main claim of the whole paragraph", why:"The claim usually comes before the reason here; this sentence supports it."},
      {t:"Giving an example", why:"Examples follow たとえば."},
      {t:"Asking a question", why:"なぜなら means “because”, not “why?”."}
    ]},
@@ -1237,8 +1299,8 @@ ICA.addUnit({
      {t:"There is no claim: the paragraph only describes", why:"～べきである is a clear claim."}
    ]},
    {id:"e1u6-q24", lesson:"e1u6-l3", level:2, q:"A paper says 「この方法には改善の余地があるのではないだろうか。」 How should you read it?", options:[
-     {t:"As a softened claim: the writer thinks the method can be improved", ok:true, why:"～のではないだろうか presents the writer’s view politely; it isn’t a real question."},
-     {t:"As a genuine question to the reader", why:"In papers, this ending is a soft way of claiming, not asking."},
+     {t:"As a softened claim that the method can be improved", ok:true, why:"～のではないだろうか presents the writer’s view politely; it isn’t a real question."},
+     {t:"As a genuine question that the writer wants readers to answer", why:"In papers, this ending is a soft way of claiming, not asking."},
      {t:"As a sign the writer has no opinion", why:"The writer does have a view; they are presenting it cautiously."},
      {t:"As a quotation from another study", why:"Nothing marks it as a quotation."}
    ]},
@@ -1250,7 +1312,7 @@ ICA.addUnit({
    ]},
    {id:"e1u6-q26", lesson:"e1u6-l3", level:1, q:"What is a 主張 (shuchō)?", options:[
      {t:"The writer’s claim: the main point they want readers to accept", ok:true, why:"The 主張 is supported by 根拠 (reasons and evidence)."},
-     {t:"A reason or piece of evidence", why:"That is a 根拠."},
+     {t:"A reason or a piece of evidence that the writer gives for a point", why:"That is a 根拠."},
      {t:"An example", why:"Examples illustrate; they are 例."},
      {t:"A section heading", why:"Headings name sections; 主張 is the content of the argument."}
    ]},
@@ -1310,22 +1372,22 @@ ICA.addUnit({
      {t:"継続 has been mistranslated", why:"継続 (continuation) is translated acceptably; the problem is the missing hedge."}
    ]},
    {id:"e1u6-q36", lesson:"e1u6-l4", level:1, q:"What do 10ten Japanese Reader and Yomitan do?", options:[
-     {t:"Show the reading and meaning of a Japanese word when you point at it in a web browser", ok:true, why:"Both are free, open-source pop-up dictionary extensions for browsers."},
+     {t:"Show a Japanese word’s reading and meaning when you point at it", ok:true, why:"Both are free, open-source pop-up dictionary extensions for web browsers."},
      {t:"Search for Japanese research papers", why:"That is CiNii Research or J-STAGE."},
-     {t:"Translate whole documents automatically", why:"They are dictionaries for single words and phrases, not document translators."},
+     {t:"Translate whole documents or web pages into English automatically", why:"They are dictionaries for single words and phrases, not document translators."},
      {t:"Add furigana to Word documents", why:"That is Word’s Phonetic Guide."}
    ]},
    /* ---------- Lesson 5 ---------- */
    {id:"e1u6-q37", lesson:"e1u6-l5", level:1, q:"What is a 要約 (yōyaku)?", options:[
-     {t:"The main points of a text restated more briefly in your own words", ok:true, why:"A summary reports what the text says, without your own opinion."},
+     {t:"The main points of a text, restated briefly in your own words", ok:true, why:"A summary reports what the text says, without your own opinion."},
      {t:"Your impressions of a text", why:"Impressions are 感想."},
      {t:"Your critique of a text", why:"Critique is 批評 or 意見, written separately if asked."},
-     {t:"A collection of the best quotations", why:"A summary is in your own words, not a set of quotations."}
+     {t:"A collection of the best quotations, copied exactly from the text", why:"A summary is in your own words, not a set of quotations."}
    ]},
    {id:"e1u6-q38", lesson:"e1u6-l5", level:2, q:"Which of these belongs in a 要約?", options:[
      {t:"The main reasons the author gives for the claim", ok:true, why:"The 根拠 show why the author holds the claim and belong in a summary."},
      {t:"An example introduced with たとえば", why:"Examples illustrate; summaries usually cut them."},
-     {t:"Your opinion of the author’s argument", why:"Opinion goes in a separate part, if the task asks for it."},
+     {t:"Your own opinion of whether the author’s argument works", why:"Opinion goes in a separate part, if the task asks for it."},
      {t:"A side note introduced with なお", why:"Side notes are usually cut."}
    ]},
    {id:"e1u6-q39", lesson:"e1u6-l5", level:2, q:"What is the である-style form of 「～ことが明らかになりました。」?", options:[
@@ -1362,10 +1424,10 @@ ICA.addUnit({
      {t:"Plan from notes, then write with the source closed", ok:true, why:"Writing without looking stops you copying sentences with small changes (patchwriting)."},
      {t:"Copy sentences and change a few words", why:"That is patchwriting, not your own words."},
      {t:"Replace every kanji word with a synonym", why:"Swapping words one by one keeps the original’s sentences, and key terms should usually stay."},
-     {t:"Translate the text into English and back", why:"Back-translation often produces odd Japanese and is not your own writing."}
+     {t:"Translate the text into English and then back into Japanese", why:"Back-translation often produces odd Japanese and is not your own writing."}
    ]},
    {id:"e1u6-q45", lesson:"e1u6-l5", level:3, q:"Ana is short of time and considers using an AI tool to summarise a Japanese article for her assignment. What is the best approach?", options:[
-     {t:"Follow her course’s rules, check any output against the original, and hand in only a summary she wrote herself", ok:true, why:"AI summaries can drop hedges and invent claims, and submitting one as her own breaks academic integrity rules."},
+     {t:"Follow her course’s rules and hand in only a summary she wrote", ok:true, why:"AI summaries can drop hedges and invent claims, so she must check any output against the original. Submitting an AI summary as her own breaks academic integrity rules."},
      {t:"Submit the AI summary, since the content is the article’s anyway", why:"The wording would be the tool’s, not hers. Presenting it as her own is dishonest."},
      {t:"Use the AI summary without checking, because AI is reliable for Japanese", why:"AI tools make errors with hedges and long arguments, in any language."},
      {t:"Translate the AI summary into English and back to change the wording", why:"Disguising machine output doesn’t make it her own writing."}

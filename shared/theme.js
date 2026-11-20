@@ -3,6 +3,9 @@
    "cheep" chirps, after the chick's call. Uses:
      ICATheme.sting()        welcome screen, about 3 s            (Music volume)
      ICATheme.loop("chip")   the first-launch game, 8-bit         (Music volume)
+     ICATheme.loop("chip", {hush:true}) then ICATheme.full()
+                             the intro's first screen: the same tune, quiet and muffled (melody on bells, soft bass,
+                             no drums or arpeggio); full() kicks the 8-bit version in from the top, with the chick's cheep
      ICATheme.loop("soft")   optional desk music, lo-fi, OFF by default (Settings → Music on the desk)
      ICATheme.flourish()     lesson complete, about 1 s           (Sound effects volume)
      ICATheme.stop()
@@ -31,7 +34,8 @@ function graph(){
   NOISE = AC.createBuffer(1, AC.sampleRate * 0.5, AC.sampleRate);
   var d = NOISE.getChannelData(0); for (var i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
 }
-function levels(){ if (MUS){ MUS.gain.value = vol("music") * 0.55; SG.gain.value = vol("music") * 0.55; FX.gain.value = vol("fx") * 0.6; } }
+var hush = false;
+function levels(){ if (MUS){ MUS.gain.value = vol("music") * 0.55 * (hush ? 0.5 : 1); SG.gain.value = vol("music") * 0.55; FX.gain.value = vol("fx") * 0.6; } }
 function soundOff(){ try { return ((ICA.load().settings || {}).sound) === "off"; } catch(e){ return false; } }
 function mf(n){ return 440 * Math.pow(2, (n - 69) / 12); }
 
@@ -113,26 +117,34 @@ function build(style){
 }
 
 var song = null, timer = null, step = 0, next = 0, style = null;
+function play(e, t, e16){
+  if (hush){   /* the quiet intro layer */
+    if (e.c || e.k || e.i === "arp") return;
+    if (e.i === "sq") return INST.bell(e.n - 12, t, e.d * e16 * 2, 0.5, MUS);
+    if (e.i === "bass") return INST.sub(e.n, t, e.d * e16 * 2, 0.55, MUS);
+  }
+  if (e.c) chirp(t, 1, MUS, style === "soft");
+  else if (e.k) drum(e.k, t, e.v || 1, MUS);
+  else INST[e.i](e.n, t, e.d * e16 * 2, e.v || 1, MUS);
+}
 function tick(){
   if (!AC || !song) return; levels();
   var e16 = 60 / song.bpm / 4;
   if (next < AC.currentTime) next = AC.currentTime + 0.03;
   while (next < AC.currentTime + 0.15){
     var s = step % song.steps, t = next + (s % 4 === 2 ? song.swing * e16 * 2 : 0);
-    song.ev[s].forEach(function(e){
-      if (e.c) chirp(t, 1, MUS, style === "soft");
-      else if (e.k) drum(e.k, t, e.v || 1, MUS);
-      else INST[e.i](e.n, t, e.d * e16 * 2, e.v || 1, MUS);
-    });
+    song.ev[s].forEach(function(e){ play(e, t, e16); });
     step++; next += e16;
   }
 }
-T.loop = function(st){
+T.loop = function(st, opt){
   if (!vol("music")) return false;
   if (timer && style === st) return true;
   T.stop(true); if (!ac()) return false;
+  hush = !!(opt && opt.hush) && st === "chip";
   style = st; song = build(st); step = 0; next = AC.currentTime + 0.08;
-  TONE.frequency.setValueAtTime(st === "soft" ? 2600 : 18000, AC.currentTime);
+  TONE.frequency.cancelScheduledValues(AC.currentTime);
+  TONE.frequency.setValueAtTime(st === "soft" ? 2600 : hush ? 1500 : 18000, AC.currentTime);
   MUS.gain.cancelScheduledValues(AC.currentTime); levels();
   timer = setInterval(tick, 25); return true;
 };
@@ -141,6 +153,14 @@ T.stop = function(now){
   if (MUS && !now){ var t = AC.currentTime; MUS.gain.setValueAtTime(MUS.gain.value, t); MUS.gain.linearRampToValueAtTime(0.0001, t + 0.6); setTimeout(levels, 900); }
 };
 T.playing = function(){ return timer ? style : null; };
+/* from the quiet layer to the full 8-bit tune, from the top */
+T.full = function(){
+  if (!hush) return; hush = false;
+  if (!timer || !AC) return;
+  var t = AC.currentTime; step = 0; next = t + 0.06; levels();
+  TONE.frequency.cancelScheduledValues(t); TONE.frequency.setValueAtTime(TONE.frequency.value, t); TONE.frequency.exponentialRampToValueAtTime(18000, t + 0.25);
+};
+T.hushed = function(){ return hush; };
 
 /* welcome screen: the opening of the tune, landing on the cheeps */
 T.sting = function(){
@@ -167,7 +187,7 @@ document.addEventListener("play", function(e){ if (e.target && e.target.tagName 
 var hiddenStyle = null;
 document.addEventListener("visibilitychange", function(){
   if (document.hidden){ if (timer){ hiddenStyle = style; T.stop(true); } }
-  else if (hiddenStyle){ var s = hiddenStyle; hiddenStyle = null; T.loop(s); }
+  else if (hiddenStyle){ var s = hiddenStyle; hiddenStyle = null; T.loop(s, {hush: hush}); }
 });
 document.addEventListener("ica:settings", function(e){ var d = e.detail || {}; if (d.k === "vol"){ levels(); if (!vol("music")) T.stop(true); } });
 /* preview: render into an OfflineAudioContext (used to make listening samples; not used by the app) */
@@ -175,10 +195,16 @@ T.renderTo = function(ctx, what, bars){
   AC = ctx; graph(); levels();
   if (what === "sting") return T.sting();
   if (what === "flourish") return T.flourish();
+  /* "hush": the intro's first screen for `bars` bars, then full() from the top for 8 bars */
+  var hb = what === "hush" ? (bars || 4) : 0; if (hb){ what = "chip"; bars = hb + 8; }
   style = what; song = build(what); var e16 = 60 / song.bpm / 4, n = (bars || song.steps / 16) * 16;
-  for (var s = 0; s < n; s++){ var t = 0.05 + s * e16 + (s % 4 === 2 ? song.swing * e16 * 2 : 0);
-    song.ev[s % song.steps].forEach(function(e){ if (e.c) chirp(t, 1, MUS, style === "soft"); else if (e.k) drum(e.k, t, e.v || 1, MUS); else INST[e.i](e.n, t, e.d * e16 * 2, e.v || 1, MUS); }); }
   TONE.frequency.value = what === "soft" ? 2600 : 18000;
+  if (hb){ TONE.frequency.setValueAtTime(1500, 0); TONE.frequency.setValueAtTime(1500, 0.05 + hb * 16 * e16); TONE.frequency.exponentialRampToValueAtTime(18000, 0.3 + hb * 16 * e16); }
+  for (var s = 0; s < n; s++){ var t = 0.05 + s * e16 + (s % 4 === 2 ? song.swing * e16 * 2 : 0);
+    hush = s < hb * 16; MUS.gain.setValueAtTime(vol("music") * 0.55 * (hush ? 0.5 : 1), t);
+    var src = hb && s >= hb * 16 ? s - hb * 16 : s;
+    song.ev[src % song.steps].forEach(function(e){ play(e, t, e16); }); }
+  hush = false;
 };
 root.ICATheme = T;
 })(window);

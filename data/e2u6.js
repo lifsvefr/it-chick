@@ -106,7 +106,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u6-l1-x1", type:"mcq", q:"Ana says: “Realism is useless, because it ignores elections, religion, culture and the economy inside countries.” Which reply best fits how theories work?", options:[
-      {t:"Leaving things out is what makes a theory useful, like a metro map; the real test is whether realism explains the patterns it claims to explain.", ok:true, why:"Right. Every theory simplifies. The fair question is whether the simplification works for its purpose, which is also how realism’s critics argue against it."},
+      {t:"Leaving things out is what makes a theory useful, like a metro map.", ok:true, why:"Right. The real test is whether realism explains the patterns it claims to explain. Every theory simplifies. The fair question is whether the simplification works for its purpose, which is also how realism’s critics argue against it."},
       {t:"Realism doesn’t ignore anything; it includes every factor in world politics.", why:"It deliberately focuses on power and security between states. That is a choice, and its critics are right that it leaves things out."},
       {t:"Ana is right: a good theory must include every factor that could possibly matter.", why:"A theory that included everything would be as complicated as the world itself and would explain nothing. Good theories explain a lot with a little."},
       {t:"Theories can’t be judged at all, so it makes no difference what realism leaves out.", why:"Theories can be judged: by how well their expectations fit the evidence, how much they explain and what they miss."}
@@ -147,8 +147,8 @@ ICA.addUnit({
       {t:"The two governments set up a direct “hotline” link.", why:"1963, a lesson learned: in the crisis, messages had taken hours to arrive."}
     ]},
     {id:"e2u6-l1-x6", type:"mcq", q:"Kenji reads that one democracy once went to war with another and says: “So the theory that democracies don’t fight each other is dead.” What is the best response?", options:[
-      {t:"One unusual case is a puzzle worth studying; IR theories describe strong tendencies, so the test is the overall pattern across many cases.", ok:true, why:"Right. Scholars examine the case (was it really a war? were both really democracies?) and weigh it against the whole record. Lesson 3 does exactly this."},
-      {t:"He is right: any single exception refutes a theory completely.", why:"That standard would sink almost every theory in the social sciences, which describe tendencies rather than iron laws."},
+      {t:"One case is a puzzle; the test is the pattern across many cases.", ok:true, why:"Right. IR theories describe strong tendencies, so one unusual case is worth studying but doesn’t settle things. Scholars examine the case (was it really a war? were both really democracies?) and weigh it against the whole record. Lesson 3 does exactly this."},
+      {t:"He is right: any single exception refutes a theory completely and forever.", why:"That standard would sink almost every theory in the social sciences, which describe tendencies rather than iron laws."},
       {t:"Exceptions don’t matter at all; a theory can never be wrong.", why:"A theory that no evidence could ever count against would not be a theory. Many exceptions would be a serious problem."},
       {t:"He should pick another theory he likes better instead.", why:"Liking a theory isn’t a test. The question is what the evidence shows."}
     ]}
@@ -259,7 +259,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u6-l2-x1", type:"mcq", q:"Two neighbouring countries have been at peace for decades. Each still keeps an army and watches the other’s military spending closely. What would a realist say this shows?", options:[
-      {t:"Under anarchy no one guarantees a state’s survival, so even peaceful states prepare for the worst: that is self-help.", ok:true, why:"Right. Realists say watchfulness follows from the structure of the system, not from hostility. Peace and preparation can go together."},
+      {t:"Under anarchy, even peaceful states must prepare for the worst.", ok:true, why:"Right. No one guarantees a state’s survival: that is self-help. Realists say watchfulness follows from the structure of the system, not from hostility. Peace and preparation can go together."},
       {t:"The two countries must secretly be planning to attack each other.", why:"Realism doesn’t claim that. Preparing for the worst is prudent even when no attack is planned, which is exactly what makes the security dilemma tragic."},
       {t:"There must be a world government that requires them to keep armies.", why:"There is no world government; that absence (anarchy) is the realist starting point."},
       {t:"Armies are kept only for national pride and play no role in security.", why:"Pride can matter, but realists explain armies mainly by security under anarchy."}
@@ -418,7 +418,7 @@ ICA.addUnit({
       {t:"Anarchy has ended between them because a world government now rules them.", why:"There is no world government; they are still sovereign states. Complex interdependence describes cooperation within anarchy."}
     ]},
     {id:"e2u6-l3-x2", type:"mcq", q:"In the prisoner’s dilemma diagram, why do both states end up building arms even though both would prefer the 3·3 outcome?", options:[
-      {t:"Whatever the other side does, each side scores more by building, so building is each one’s best move on its own.", ok:true, why:"Right. Building gives 5 instead of 3 if the other limits, and 1 instead of 0 if the other builds. Without trust or enforcement, both build and get only 1."},
+      {t:"Whatever the other does, each side scores more by building.", ok:true, why:"Right. So building is each one’s best move on its own. Building gives 5 instead of 3 if the other limits, and 1 instead of 0 if the other builds. Without trust or enforcement, both build and get only 1."},
       {t:"Because building arms always gives the highest score of all.", why:"Not always: if both build, each gets 1, which is less than the 3 they would get by both limiting."},
       {t:"Because one side is irrational and wants an arms race.", why:"The point of the dilemma is that both sides are acting rationally. The bad outcome comes from the situation, not from irrationality."},
       {t:"Because limiting arms is against international law.", why:"Nothing in the game involves law. The problem is the lack of a way to make promises to limit arms credible."}
@@ -451,7 +451,7 @@ ICA.addUnit({
       {t:"Since democracies and peace go together, democracy must be the only cause.", flag:true, why:"Correlation isn’t causation. Critics point to alliances, a shared enemy during the Cold War, wealth and trade as other possible causes."}
     ]},
     {id:"e2u6-l3-x6", type:"mcq", q:"An environmental agreement sets up a secretariat that collects each country’s emissions reports, publishes them and reviews them every year. According to neoliberal institutionalism, why does this help cooperation?", options:[
-      {t:"It provides information about who is keeping the rules, which makes cheating easier to detect and promises more credible.", ok:true, why:"Right. Monitoring and transparency are among the main ways institutions help states cooperate without a world government."},
+      {t:"It shows who is keeping the rules, so cheating is easier to spot.", ok:true, why:"Right. Information about who keeps the rules makes cheating easier to detect and promises more credible. Monitoring and transparency are among the main ways institutions help states cooperate without a world government."},
       {t:"It gives the secretariat an army to punish countries that break the rules.", why:"Secretariats like this have no armies. Institutions work mainly through information, reputation and repeated dealings."},
       {t:"It removes anarchy, because the secretariat is now a world government.", why:"A secretariat is not a government above states. Neoliberal institutionalists accept anarchy and explain cooperation within it."},
       {t:"It guarantees that every country gains equally from the agreement.", why:"Institutions don’t guarantee equal gains. Disputes about who gains more are exactly what realists highlight."}
@@ -558,7 +558,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u6-l4-x1", type:"mcq", q:"What did Wendt mean by “anarchy is what states make of it”?", options:[
-      {t:"The lack of a world government has no fixed effect; whether states treat each other as enemies, rivals or friends depends on shared understandings they create and can change.", ok:true, why:"Right. Wendt argued that self-help is not built into anarchy; it grows from how states interact and see each other."},
+      {t:"Anarchy’s effects depend on ideas that states share and can change.", ok:true, why:"Right. The lack of a world government has no fixed effect; whether states treat each other as enemies, rivals or friends depends on shared understandings they create. Wendt argued that self-help is not built into anarchy; it grows from how states interact and see each other."},
       {t:"States can simply vote to create a world government whenever they like.", why:"Wendt wasn’t talking about a world government. His three cultures are all forms of anarchy."},
       {t:"Anarchy means chaos, and states make it worse by fighting.", why:"In IR, anarchy means no government above states, not chaos. Wendt’s point was that anarchy can be friendly or hostile."},
       {t:"Power and weapons don’t exist; only ideas are real.", why:"Constructivists accept that weapons and wealth are real. They argue that what they mean depends on shared ideas."}
@@ -743,7 +743,7 @@ ICA.addUnit({
       {t:"Pluralism in the English School: states agree only on sovereignty.", why:"Pluralism concerns how many rules international society shares, not trade patterns."}
     ]},
     {id:"e2u6-l5-x4", type:"mcq", q:"Which statement best describes what a gendered lens does in IR?", options:[
-      {t:"It looks at how ideas about masculinity and femininity shape power, security and what counts as serious politics, as well as where women are.", ok:true, why:"Right. Feminist IR goes beyond counting women: it examines how gender shapes the concepts and choices of world politics."},
+      {t:"It asks how ideas about gender shape power and security.", ok:true, why:"Right. It looks at how ideas about masculinity and femininity shape power, security and what counts as serious politics, as well as where women are. Feminist IR goes beyond counting women: it examines how gender shapes the concepts and choices of world politics."},
       {t:"It argues that women are naturally more peaceful than men.", why:"Most feminist IR scholars reject that stereotype. Their focus is on how gender roles are built and used, not on fixed natures."},
       {t:"It studies only women’s organisations and ignores war and security.", why:"Feminist IR studies war and security directly, as Tickner and Cohn did."},
       {t:"It counts how many women are heads of government, and nothing else.", why:"Counting is one starting point. A gendered lens also looks at ideas, language and unpaid work."}
@@ -771,7 +771,7 @@ ICA.addUnit({
       {t:"Cuba had lived for decades under a US right to intervene, which shaped how its leaders saw the crisis.", b:3, why:"Placing the crisis in a longer history of domination is postcolonial."}
     ]},
     {id:"e2u6-l5-x7", type:"mcq", q:"Priya asks: “After all these lessons, which IR theory is the correct one?” What is the most accurate answer?", options:[
-      {t:"None has won: each lens explains some questions well and misses others, so analysts test several against the evidence and often combine them.", ok:true, why:"Right. There is no agreed winner. The skill is choosing and combining lenses and knowing their blind spots."},
+      {t:"None has won: each explains some questions and misses others.", ok:true, why:"Right. Analysts test several lenses against the evidence and often combine them. There is no agreed winner. The skill is choosing and combining lenses and knowing their blind spots."},
       {t:"Realism, because it is the oldest.", why:"Age doesn’t make a theory right; realism’s claimed ancestors are old, but so are many other traditions of thought."},
       {t:"Global IR, because it replaces all the others.", why:"Global IR aims to widen the field and add to existing theories, not replace them."},
       {t:"It doesn’t matter, because theories can’t be checked against evidence.", why:"Theories can be checked: by how well their expectations fit what happens, across many cases."}
@@ -791,6 +791,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u6-q02","e2u6-q06","e2u6-q11","e2u6-q14","e2u6-q17","e2u6-q21","e2u6-q24","e2u6-q28","e2u6-q31","e2u6-q36","e2u6-q40","e2u6-q44"],
+  cpBank:[
+   {id:"e2u6-cp01", lesson:"e2u6-l1", level:1, q:"A theory says: “States want to survive. So fear of a stronger neighbour leads them to arm. So we should see arms spending rise when a neighbour grows stronger.” What is the last sentence?", options:[
+     {t:"An assumption", why:"An assumption is a starting point taken as given, like “states want to survive”. The last sentence is what we should observe."},
+     {t:"The mechanism", why:"The mechanism is the chain of cause and effect: fear leads to arming. The last sentence states what evidence should show."},
+     {t:"An expectation", ok:true, why:"Right. Expectations say what we should see in the world if the theory is right, so evidence can count for or against it."},
+     {t:"A normative claim", why:"A normative claim says what ought to happen. The last sentence predicts what will be observed; it doesn’t judge."}]},
+   {id:"e2u6-cp02", lesson:"e2u6-l2", level:1, q:"An analyst says: “Country K is wise to keep building its navy until no state in its region can challenge it. It can never be sure what others intend.” Which branch of realism is this?", options:[
+     {t:"Defensive realism", why:"Defensive realists, like Waltz, say states want enough power to be secure, and that grabbing too much makes others unite against them."},
+     {t:"Offensive realism", ok:true, why:"Yes. Mearsheimer argues that, since intentions are uncertain, the safest position is to be the strongest power in your region."},
+     {t:"Neoliberal institutionalism", why:"This is a liberal theory about how institutions help states cooperate. It doesn’t advise seeking regional dominance."},
+     {t:"English School pluralism", why:"Pluralists argue about how many shared rules international society needs. They don’t advise maximising power."}]},
+   {id:"e2u6-cp03", lesson:"e2u6-l5", level:1, q:"A leading power’s ideas about how the world economy should work come to be seen everywhere as simple common sense, so few governments question them. Which idea from Cox and Gramsci describes this?", options:[
+     {t:"Bandwagoning", why:"Bandwagoning is joining a rising power instead of balancing against it. It is about alliances, not ideas that seem like common sense."},
+     {t:"The security dilemma", why:"The security dilemma is about defence steps that make others feel less safe. It has nothing to do with economic ideas."},
+     {t:"Complex interdependence", why:"Complex interdependence describes many channels linking societies. It doesn’t explain why one group’s ideas seem natural to all."},
+     {t:"Hegemony", ok:true, why:"Correct. In Cox’s use of Gramsci, hegemony is leadership resting not only on force but on making one group’s interests look like common sense."}]},
+   {id:"e2u6-cp04", lesson:"e2u6-l3", level:2, q:"Country M broke a fishing agreement last year. Now, when it proposes a trade deal, several partners are reluctant to sign. Which liberal idea about institutions does this show?", options:[
+     {t:"Linked issues and reputations: cheating in one area costs trust in others", ok:true, why:"Right. Institutions link issues and build reputations, which makes promises easier to keep without a world government. Cheating on one deal makes partners wary of the next."},
+     {t:"Relative gains: states care only about who gains more from each deal", why:"Relative gains are a realist objection to cooperation. The partners here are reacting to M’s broken promise, not comparing gains."},
+     {t:"Complex interdependence: military force plays little role between these states", why:"That is one feature of complex interdependence, but it doesn’t explain why breaking one deal hurts M’s chances on another."},
+     {t:"Balancing: the partners are uniting against the power of Country M", why:"Balancing means building strength or alliances against a threat. The partners are simply wary of M’s record."}]},
+   {id:"e2u6-cp05", lesson:"e2u6-l4", level:2, q:"For centuries two kingdoms each tried to conquer the other outright. Today they compete hard and sometimes clash at the border, but neither tries to wipe the other off the map. In Wendt’s terms, the culture between them has moved…", options:[
+     {t:"from Lockean to Kantian", why:"In a Kantian culture states are friends who settle disputes without war. These two still clash at the border, and their old aim was conquest, which is not Lockean rivalry."},
+     {t:"from Hobbesian to Kantian", why:"They have dropped the aim of conquest, but border clashes show they are not friends who settle disputes without force. Rivals who accept each other’s survival are Lockean."},
+     {t:"from Kantian to Hobbesian", why:"This reverses the story. Trying to destroy the other was the old pattern; the new one is rivalry with limits."},
+     {t:"from Hobbesian to Lockean", ok:true, why:"Yes. Trying to conquer the other treats it as an enemy (Hobbesian). Competing while accepting its right to exist makes them rivals (Lockean). The anarchy is the same; the shared understanding changed."}]},
+   {id:"e2u6-cp06", lesson:"e2u6-l4", level:2, q:"Southeast Asian governments take up a global idea about security cooperation, but reshape it to fit their own habits of consensus and non-interference. What did Acharya call this?", options:[
+     {t:"A regional norm cascade", why:"A cascade is the stage when a norm spreads rapidly among many states. This case is about reshaping a norm to fit local beliefs."},
+     {t:"Orientalism", why:"Orientalism, Said’s idea, is Western writing that pictured “the Orient” as backward. It isn’t about states adapting outside norms."},
+     {t:"Bandwagoning", why:"Bandwagoning is joining a rising power. Here governments are adapting an idea, not joining a power."},
+     {t:"Norm localisation", ok:true, why:"Correct. Acharya showed that norms don’t simply flow from powerful countries; local actors adapt outside ideas to fit their own beliefs."}]},
+   {id:"e2u6-cp07", lesson:"e2u6-l1", level:2, q:"Report A asks how to make the global supply chain for phones run more efficiently. Report B asks who profits along that chain, how it came about and how it could change. In Cox’s terms…", options:[
+     {t:"both are critical theory, because both study the world economy", why:"The topic doesn’t decide the type. Report A takes the order as given and asks how to improve it, which is problem-solving."},
+     {t:"A is problem-solving theory and B is critical theory", ok:true, why:"Right. Problem-solving theory takes the world as given and helps it run smoothly. Critical theory asks how the order arose, whom it serves and how it might change."},
+     {t:"A is critical theory and B is problem-solving theory", why:"This is the wrong way round. Asking who benefits and how the order could change is what makes a theory critical."},
+     {t:"both are normative theory, so evidence can’t help", why:"Neither report mainly argues what ought to be, and both can use evidence. Cox’s distinction is about whether a theory accepts or questions the existing order."}]},
+   {id:"e2u6-cp08", lesson:"e2u6-l5", level:2, q:"A researcher finds that in a parliament’s security debates, members who stress refugees’ suffering are mocked as “emotional”, while those who count missiles are called “serious”. Which lens is she using?", options:[
+     {t:"Feminist IR", ok:true, why:"Yes. Asking how ideas of toughness and emotion decide what counts as serious security talk is a gendered lens, like Carol Cohn’s study of nuclear strategists’ language."},
+     {t:"World-systems theory", why:"World-systems theory looks at core, semi-periphery and periphery in the global economy, not at whose voices count in security debates."},
+     {t:"The English School", why:"The English School studies the shared rules of a society of states. It doesn’t focus on gendered ideas of strength and emotion."},
+     {t:"Neorealism", why:"Neorealism explains state behaviour by the structure of the system. It sets language and gender aside."}]},
+   {id:"e2u6-cp09", lesson:"e2u6-l2", level:3, q:"Invented case. Country A is offered the same trade deal with its close ally B and with its rival C. Both partners would gain more than A. A signs with B but hesitates with C. Which explanation fits the “middle ground” the unit describes?", options:[
+     {t:"A cares only about absolute gains", why:"If A cared only about absolute gains, it would sign both deals, since it gains from each. Its hesitation with C shows it compares gains."},
+     {t:"Relative gains matter most between rivals and on security issues, and much less between close allies", ok:true, why:"Right. Grieco’s relative-gains concern is strongest with a rival, whose extra gain could become a military edge. Between allies it matters less."},
+     {t:"The democratic peace requires A to sign only with democracies", why:"The democratic peace is about wars between democracies, not which trade deals to sign. Nothing says B is a democracy and C is not."},
+     {t:"Under complex interdependence, military force matters most", why:"Complex interdependence says the opposite: force plays little role among closely linked states. It doesn’t explain the difference between B and C."}]},
+   {id:"e2u6-cp10", lesson:"e2u6-l3", level:3, q:"A study finds that pairs of democracies in its data never fought each other. But most of those pairs were also allies facing a shared enemy. What is the most careful conclusion?", options:[
+     {t:"This proves democracies are more peaceful in general", why:"The democratic peace is about pairs of democracies. Evidence that democracies are more peaceful in general is much weaker and disputed."},
+     {t:"The shared enemy disproves the democratic peace completely", why:"An alternative explanation is a reason for caution, not a disproof. The pattern is strong; the question is why it holds."},
+     {t:"The pattern holds, but a shared enemy may explain part of it, so correlation alone can’t show democracy causes the peace", ok:true, why:"Correct. This is Farber and Gowa’s point: another cause may be at work. Correlation is not causation, and IR theories describe tendencies that need careful testing."},
+     {t:"Because the democracies were allies, institutions and norms play no role", why:"An alliance doesn’t rule out norms or institutions. Several causes may work together."}]},
+   {id:"e2u6-cp11", lesson:"e2u6-l4", level:3, q:"Two rival states arm against each other. Yet they keep exchanging ambassadors, follow the rules of war in their border clashes and accept each other’s sovereignty. Which combination of lenses explains both halves best?", options:[
+     {t:"Realism alone: shared rules mean nothing in an anarchy", why:"Realism explains the arming well, but it can’t easily explain why rivals keep following shared rules. The rules here are clearly shaping behaviour."},
+     {t:"Liberalism alone: complex interdependence means states don’t arm", why:"These states are arming, and nothing describes dense trade or many channels. Liberalism alone doesn’t fit."},
+     {t:"Postcolonialism: the shared rules show Orientalism at work", why:"Orientalism is about Western images of “the Orient” that served empire. It doesn’t explain rivals following diplomatic rules."},
+     {t:"Realism for the arming, and the English School for the shared rules of a society of states", ok:true, why:"Yes. Realism explains rivalry and arming under anarchy. The English School explains why rivals still act as members of an international society with shared rules and institutions."}]},
+   {id:"e2u6-cp12", lesson:"e2u6-l5", level:3, q:"A scholar argues that sovereignty was presented as a universal principle, yet in the 19th century European powers forced unequal treaties on states they said did not meet their tests. Which lens is she using, and what evidence from Lesson 4 supports her?", options:[
+     {t:"Neorealism; Waltz’s idea of polarity", why:"Polarity describes how power is spread among great powers. It doesn’t show how sovereignty was denied to some states."},
+     {t:"Postcolonialism; Gong’s “standard of civilisation”", ok:true, why:"Right. Gong showed how European powers used a “standard of civilisation” to treat states such as China, Siam and the Ottoman Empire as unequal. Postcolonial scholars build on this."},
+     {t:"Liberalism; Kant’s “universal hospitality”", why:"Kant’s hospitality is a condition for peace in liberal thought. It doesn’t explain unequal treaties imposed by empires."},
+     {t:"Feminist IR; Enloe’s question “where are the women?”", why:"Enloe’s question is central to feminist IR, but this argument is about empire and unequal sovereignty, which the postcolonial lens examines."}]}
+  ],
   codex:[
    {id:"ir-theory", title:"IR theory", aka:["International Relations theory","theories of world politics"], tags:["international relations","theory"],
     summary:"A deliberate, testable way of explaining or understanding world politics: a simplified map that tells you which actors and causes to look at.",
@@ -1334,8 +1396,8 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e2u6-q01", lesson:"e2u6-l1", level:1, q:"Which is the best description of an IR theory?", options:[
-     {t:"A deliberate, simplified way of explaining or understanding world politics that can be checked against evidence", ok:true, why:"That is the core idea: a theory selects what matters, proposes how it works and sets out expectations that evidence can test."},
-     {t:"A personal opinion about which countries are good or bad", why:"Opinions don’t have to state assumptions or be testable. Theories do, and they are not about which countries are good."},
+     {t:"A simplified explanation of world politics that evidence can test", ok:true, why:"That is the core idea: a theory selects what matters, proposes how it works and sets out expectations that evidence can test."},
+     {t:"A personal opinion about which countries in the world are good or bad", why:"Opinions don’t have to state assumptions or be testable. Theories do, and they are not about which countries are good."},
      {t:"A complete list of every fact about world politics", why:"A theory deliberately leaves things out, like a map. A list of every fact would explain nothing."},
      {t:"A political party’s programme for foreign policy", why:"That is an ideology or programme. Theories aim to explain or understand, not to win votes."}
    ]},
@@ -1352,7 +1414,7 @@ ICA.addUnit({
      {t:"Thucydides", why:"Thucydides was an ancient historian. The line is from a 1981 article by Robert Cox."}
    ]},
    {id:"e2u6-q04", lesson:"e2u6-l1", level:2, q:"Lucía says the metro map of her city is “wrong” because it doesn’t show real distances. How does this connect to IR theories?", options:[
-     {t:"Like the map, a theory leaves things out on purpose; the question is whether it serves its job well", ok:true, why:"Right. Simplifying is a strength when it helps you find what you need, and a weakness only when it hides what matters for your question."},
+     {t:"Like the map, a theory leaves things out on purpose", ok:true, why:"Right. The question is whether it serves its job well. Simplifying is a strength when it helps you find what you need, and a weakness only when it hides what matters for your question."},
      {t:"It shows that all theories are useless because they are inaccurate", why:"Leaving details out isn’t the same as being useless. The metro map is very useful for its purpose."},
      {t:"It shows a good theory must include every detail", why:"A map with every detail would be unreadable. Good theories explain a lot with a little."},
      {t:"It has nothing to do with theories, which never simplify", why:"All theories simplify; that is what lets them explain patterns."}
@@ -1376,13 +1438,13 @@ ICA.addUnit({
      {t:"To hand Cuba to the United Nations", why:"Cuba remained an independent state. The UN played a mediating role only."}
    ]},
    {id:"e2u6-q08", lesson:"e2u6-l1", level:2, q:"Which statement about using IR theories is accurate?", options:[
-     {t:"Most scholars use more than one theory and judge each by what it explains and what it misses", ok:true, why:"Right. No theory has won; analysts combine them, an approach called analytic eclecticism."},
+     {t:"Most scholars use more than one theory", ok:true, why:"Right. They judge each theory by what it explains and what it misses. No theory has won; analysts combine them, an approach called analytic eclecticism."},
      {t:"Being a realist scholar means you personally favour war", why:"Realism explains why conflict happens. Many realists have opposed wars they saw as reckless."},
      {t:"A single case that doesn’t fit proves a theory completely wrong", why:"IR theories describe tendencies. One odd case is a puzzle; many would be a problem."},
      {t:"Theories are just political ideologies with academic names", why:"Theories aim to explain or understand; ideologies are programmes for action. A liberal theorist may vote any way."}
    ]},
    {id:"e2u6-q09", lesson:"e2u6-l1", level:3, q:"Tomás says: “Waltz’s theory failed because it couldn’t predict exactly what one government would decide last week.” What would Waltz reply?", options:[
-     {t:"His was a theory of international politics explaining broad, recurring patterns, not a theory of foreign policy predicting single decisions", ok:true, why:"Right. Waltz stressed this distinction: his theory explains patterns such as balancing across the system, not one government’s choice."},
+     {t:"It explains broad patterns, not single decisions", ok:true, why:"Right. His was a theory of international politics explaining broad, recurring patterns, not a theory of foreign policy. Waltz stressed this distinction: his theory explains patterns such as balancing across the system, not one government’s choice."},
      {t:"His theory predicts every decision of every government", why:"Waltz explicitly said it doesn’t; it explains system-wide patterns."},
      {t:"Theories should never be tested against evidence", why:"Waltz thought theories should be tested, but against the kind of outcomes they claim to explain."},
      {t:"Governments’ decisions are entirely random", why:"Waltz didn’t claim randomness; he said other theories, of foreign policy, are needed to explain specific decisions."}
@@ -1407,7 +1469,7 @@ ICA.addUnit({
      {t:"Cynthia Enloe, *Bananas, Beaches and Bases* (1989)", why:"That is a founding text of feminist IR."}
    ]},
    {id:"e2u6-q13", lesson:"e2u6-l2", level:2, q:"How does neorealism mainly differ from classical realism?", options:[
-     {t:"It explains power politics through the anarchic structure of the system rather than human nature", ok:true, why:"Right. Waltz argued that structure pushes states into similar behaviour whatever their leaders are like."},
+     {t:"It stresses system structure, not human nature", ok:true, why:"Right. It explains power politics through the anarchic structure of the system. Waltz argued that structure pushes states into similar behaviour whatever their leaders are like."},
      {t:"It rejects the idea that states care about security", why:"Neorealists put security at the centre."},
      {t:"It says international institutions are the main actors", why:"Neorealists keep states at the centre and doubt institutions’ independent effect."},
      {t:"It focuses on gender and identity", why:"Those are feminist and constructivist concerns, not neorealist ones."}
@@ -1419,7 +1481,7 @@ ICA.addUnit({
      {t:"Norm internalisation", why:"That is a constructivist idea about norms being taken for granted."}
    ]},
    {id:"e2u6-q15", lesson:"e2u6-l2", level:2, q:"What separates offensive from defensive realism?", options:[
-     {t:"Offensive realists say states seek as much power as possible; defensive realists say states seek enough power to be secure", ok:true, why:"Right. Mearsheimer (offensive) and Waltz (defensive) agree on anarchy but disagree about how much power states want."},
+     {t:"They disagree about how much power states seek", ok:true, why:"Right. Offensive realists say states seek as much power as possible; defensive realists say states seek enough power to be secure. Mearsheimer (offensive) and Waltz (defensive) agree on anarchy but disagree about how much power states want."},
      {t:"Offensive realists support war; defensive realists oppose it", why:"These are explanations of behaviour, not personal positions on war."},
      {t:"Defensive realists ignore the balance of power", why:"Defensive realists rely heavily on balancing: they say expansion backfires because others balance."},
      {t:"Offensive realism is about domestic politics", why:"Adding domestic politics is the move of neoclassical realism."}
@@ -1431,8 +1493,8 @@ ICA.addUnit({
      {t:"Hobbes", why:"Hobbes translated Thucydides into English, but the dialogue is Thucydides’ own."}
    ]},
    {id:"e2u6-q17", lesson:"e2u6-l2", level:3, q:"A commentator says: “Realism can’t explain why France and Germany, enemies in three wars, now find war between them unthinkable.” Which reply would a realist most likely give?", options:[
-     {t:"Their peace grew while a shared Soviet threat and a US-led alliance gave them strong reasons to cooperate, so threats and power help explain it too", ok:true, why:"Right. Realists such as John Mearsheimer have argued that a common threat and the US presence in Europe, not friendship alone, kept the peace. Liberals and constructivists dispute how much this explains, especially since the peace outlasted the Cold War."},
-     {t:"France and Germany are secretly preparing to fight again", why:"There is no evidence of this, and realists don’t make such claims."},
+     {t:"A shared threat and a US-led alliance pushed them to cooperate", ok:true, why:"Right. Their peace grew while a shared Soviet threat gave them strong reasons to cooperate, so threats and power help explain it too. Realists such as John Mearsheimer have argued that a common threat and the US presence in Europe, not friendship alone, kept the peace. Liberals and constructivists dispute how much this explains, especially since the peace outlasted the Cold War."},
+     {t:"France and Germany are secretly preparing to fight each other again", why:"There is no evidence of this, and realists don’t make such claims."},
      {t:"Realism has nothing to say about Europe at all", why:"Realists have written a great deal about Europe’s security, including its peace after 1945."},
      {t:"The two countries no longer have armies", why:"Both still have armed forces. The change is in their relationship, not in disarmament."}
    ]},
@@ -1450,10 +1512,10 @@ ICA.addUnit({
      {t:"A world government enforces agreements", why:"There is no world government; complex interdependence describes relations within anarchy."}
    ]},
    {id:"e2u6-q20", lesson:"e2u6-l3", level:2, q:"Why did Robert Axelrod think repeated dealings help cooperation?", options:[
-     {t:"When players expect to meet again, cheating today can be punished tomorrow (“the shadow of the future”)", ok:true, why:"Right. Repetition makes reputations and reciprocity matter, so cooperating can pay."},
+     {t:"Cheating today can be punished tomorrow", ok:true, why:"Right. When players expect to meet again, they live in “the shadow of the future”. Repetition makes reputations and reciprocity matter, so cooperating can pay."},
      {t:"Repeated dealings remove anarchy", why:"Anarchy remains; repetition changes incentives within it."},
      {t:"Players forget earlier betrayals", why:"The opposite: remembering betrayals is what makes punishment, and therefore cooperation, possible."},
-     {t:"Repeated games guarantee equal gains", why:"Repetition doesn’t equalise gains; it makes cooperation more attractive."}
+     {t:"Repeated games guarantee equal gains for all players", why:"Repetition doesn’t equalise gains; it makes cooperation more attractive."}
    ]},
    {id:"e2u6-q21", lesson:"e2u6-l3", level:3, q:"Invented figures. A deal raises country P’s income from 100 to 120 and country Q’s from 100 to 160. P’s leaders reject it, saying Q will gain too much. Which concept explains their reasoning?", options:[
      {t:"Relative gains: P gains, but its share of the pair’s combined income falls from 50% to about 43%", ok:true, why:"Right. 120 ÷ 280 ≈ 43%. Worrying about position compared with a rival is the realist relative-gains concern (Grieco, 1988)."},
@@ -1468,8 +1530,8 @@ ICA.addUnit({
      {t:"All countries will become democracies", why:"The democratic peace says nothing about whether every country will become democratic."}
    ]},
    {id:"e2u6-q23", lesson:"e2u6-l3", level:2, q:"Which is a critique of the democratic peace raised by Farber and Gowa (1995)?", options:[
-     {t:"During the Cold War, democracies shared a common enemy, which may explain much of their peace", ok:true, why:"Right. They argued shared interests, not democracy itself, may account for the pattern after 1945."},
-     {t:"Democracies are more war-prone than all other states", why:"That isn’t their argument; they questioned the cause of peace among democracies."},
+     {t:"A shared Cold War enemy may explain much of the peace", ok:true, why:"Right. They argued shared interests, not democracy itself, may account for the pattern after 1945."},
+     {t:"Democracies are more war-prone than all other kinds of state", why:"That isn’t their argument; they questioned the cause of peace among democracies."},
      {t:"There have never been any democracies", why:"Their critique assumes democracies exist; it questions why they don’t fight each other."},
      {t:"Trade always causes wars", why:"That isn’t their argument, and the claim is not supported."}
    ]},
@@ -1486,15 +1548,15 @@ ICA.addUnit({
      {t:"*The Tragedy of Great Power Politics*", why:"That is Mearsheimer’s 2001 book setting out offensive realism."}
    ]},
    {id:"e2u6-q26", lesson:"e2u6-l3", level:2, q:"A news article calls a free-market reform programme “neoliberal” and says it is based on Keohane’s neoliberal institutionalism. What is wrong?", options:[
-     {t:"It confuses two different ideas: neoliberal economic policy and the IR theory of neoliberal institutionalism", ok:true, why:"Right. They share a word but not a meaning. The IR theory is about cooperation through institutions."},
+     {t:"It confuses neoliberal economic policy with an IR theory", ok:true, why:"Right. Neoliberal economic policy and neoliberal institutionalism share a word but not a meaning. The IR theory is about cooperation through institutions."},
      {t:"Nothing: they are the same idea", why:"They are different. Textbooks warn about exactly this confusion."},
      {t:"Keohane was a realist, not a liberal", why:"Keohane is the leading figure of neoliberal institutionalism. The problem is the mix-up of terms."},
      {t:"Neoliberal institutionalism is a theory of nuclear weapons", why:"It is a theory of how institutions help cooperation, not of nuclear weapons."}
    ]},
    {id:"e2u6-q27", lesson:"e2u6-l3", level:3, q:"Dmitri argues: “The democratic peace proves that invading a country to install democracy will bring peace.” What is the strongest response?", options:[
-     {t:"The research concerns established democracies; it doesn’t show that imposing democracy by force works, and unstable transitions can raise war risks", ok:true, why:"Right. Mansfield and Snyder found democratising states can be war-prone, and the finding is about established democracies."},
+     {t:"The research doesn’t show that imposing democracy by force works", ok:true, why:"Right. Unstable transitions can raise war risks: Mansfield and Snyder found democratising states can be war-prone, and the finding is about established democracies."},
      {t:"He is right; the theory says this explicitly", why:"The theory makes no claim about imposing democracy by force."},
-     {t:"The democratic peace has been completely disproved", why:"It remains one of the strongest patterns in IR, though its causes are debated."},
+     {t:"The democratic peace has been completely disproved by recent wars", why:"It remains one of the strongest patterns in IR, though its causes are debated."},
      {t:"Democracy has no connection to war or peace at all", why:"The pattern between established democracies is well documented; the question is why and how far it holds."}
    ]},
    /* ---- Lesson 4 ---- */
@@ -1517,14 +1579,14 @@ ICA.addUnit({
      {t:"Emergence, internalisation, cascade", why:"Internalisation is the final stage, after the cascade."}
    ]},
    {id:"e2u6-q31", lesson:"e2u6-l4", level:3, q:"Two neighbouring countries both have large armies, yet neither government considers the other a military threat, and their citizens cross the border freely for work. Which explanation is most constructivist?", options:[
-     {t:"They share an identity as friendly neighbours, so each army means something unthreatening to the other", ok:true, why:"Right. Constructivists explain the lack of fear through shared identity and understanding, not the balance of forces."},
+     {t:"Shared identity makes each army seem unthreatening", ok:true, why:"Right. They share an identity as friendly neighbours. Constructivists explain the lack of fear through shared identity and understanding, not the balance of forces."},
      {t:"Their armies are exactly equal, so they balance each other", why:"That is a balance-of-power (realist) explanation."},
      {t:"Neither has noticed the other’s army", why:"Governments notice; the point is how they interpret what they see."},
      {t:"A world government has banned war between them", why:"There is no world government."}
    ]},
    {id:"e2u6-q32", lesson:"e2u6-l4", level:1, q:"In Hedley Bull’s terms, what turns an international system into an international society?", options:[
-     {t:"States see themselves as bound by common rules and share common institutions", ok:true, why:"Right. Shared rules and institutions such as diplomacy and international law mark a society."},
-     {t:"States trade with each other at all", why:"Trade can happen within a system; a society requires shared rules and institutions."},
+     {t:"Shared rules and common institutions", ok:true, why:"Right. States see themselves as bound by common rules. Shared rules and institutions such as diplomacy and international law mark a society."},
+     {t:"States trade with each other at all, even a little", why:"Trade can happen within a system; a society requires shared rules and institutions."},
      {t:"One state conquers all the others", why:"That would end the society of states and create an empire."},
      {t:"A world government is created", why:"Bull’s society is anarchical: there is no government above states."}
    ]},
@@ -1535,13 +1597,13 @@ ICA.addUnit({
      {t:"That states have stopped competing", why:"States still compete; the rules let them do so within a society."}
    ]},
    {id:"e2u6-q34", lesson:"e2u6-l4", level:2, q:"Which position is solidarist, within the English School?", options:[
-     {t:"States can agree on more than sovereignty, including protecting people from mass atrocities", ok:true, why:"Right. Solidarists such as Nicholas Wheeler argue for thicker shared values."},
+     {t:"States can agree on more than sovereignty, such as stopping atrocities", ok:true, why:"Right. Protecting people from mass atrocities is one example. Solidarists such as Nicholas Wheeler argue for thicker shared values."},
      {t:"International society should rest only on sovereignty and non-intervention", why:"That is the pluralist position."},
      {t:"States always maximise their power", why:"That is offensive realism."},
      {t:"There is no such thing as international society", why:"Both pluralists and solidarists believe in international society; they disagree about how much it shares."}
    ]},
    {id:"e2u6-q35", lesson:"e2u6-l4", level:3, q:"Kenji notes that US leaders in 1962 treated Soviet missiles in Cuba as intolerable but saw US missiles in Turkey, also near the other side’s border, as normal. Which lens best explains this difference?", options:[
-     {t:"Constructivism: the meanings US officials attached to their own role and to Cuba’s place in the hemisphere shaped the reaction", ok:true, why:"Right. Jutta Weldes (1999) made this argument: similar material facts, different meanings."},
+     {t:"Constructivism: the meanings attached to roles and places shaped it", ok:true, why:"Right. The meanings US officials attached to their own role and to Cuba’s place in the hemisphere shaped the reaction. Jutta Weldes (1999) made this argument: similar material facts, different meanings."},
      {t:"Complex interdependence: dense trade ties between the US and the Soviet Union", why:"The two had little trade, and the question is about meanings, not ties."},
      {t:"The democratic peace", why:"The Soviet Union was not a democracy, and the question is about perceptions of threat."},
      {t:"The prisoner’s dilemma", why:"The dilemma explains why rational actors fail to cooperate, not why identical facts are seen differently."}
@@ -1566,7 +1628,7 @@ ICA.addUnit({
      {t:"Which theory is the oldest?", why:"Enloe’s question is about whose lives are visible in world politics."}
    ]},
    {id:"e2u6-q39", lesson:"e2u6-l5", level:2, q:"What did Edward Said argue in *Orientalism* (1978)?", options:[
-     {t:"Western knowledge portrayed “the Orient” as exotic, backward and unchanging, and this was bound up with imperial power", ok:true, why:"Right. Said showed how ways of knowing a people helped justify ruling them."},
+     {t:"Western images of “the Orient” aided empire", ok:true, why:"Right. Western knowledge portrayed “the Orient” as exotic, backward and unchanging, and this was bound up with imperial power. Said showed how ways of knowing a people helped justify ruling them."},
      {t:"Eastern societies had no ideas about politics", why:"Said argued against such views; he criticised how the West represented the East."},
      {t:"Empires were mostly beneficial for colonised peoples", why:"Said’s work is a critique of imperial power and its knowledge."},
      {t:"Trade between East and West caused the World Wars", why:"That isn’t Said’s argument."}
@@ -1578,8 +1640,8 @@ ICA.addUnit({
      {t:"Neorealism: only great powers matter", why:"The second report does the opposite of focusing only on great powers."}
    ]},
    {id:"e2u6-q41", lesson:"e2u6-l5", level:2, q:"Which statement about feminist IR is accurate?", options:[
-     {t:"Most feminist IR scholars reject the stereotype that women are naturally more peaceful than men", ok:true, why:"Right. They study how gender roles are built and used, not fixed natures."},
-     {t:"Feminist IR ignores war and security", why:"Tickner and Cohn wrote directly about security and nuclear strategy."},
+     {t:"Most of its scholars deny women are naturally peaceful", ok:true, why:"Right. Most feminist IR scholars reject that stereotype. They study how gender roles are built and used, not fixed natures."},
+     {t:"Feminist IR ignores war, security and nuclear strategy", why:"Tickner and Cohn wrote directly about security and nuclear strategy."},
      {t:"Feminist IR only counts women leaders", why:"A gendered lens also looks at ideas, language and unpaid work."},
      {t:"Feminist IR began with Resolution 1325", why:"Enloe (1989) and Tickner (1992) wrote well before the 2000 resolution, which feminist researchers and activists helped bring about."}
    ]},
@@ -1596,13 +1658,13 @@ ICA.addUnit({
      {t:"Treating regions as unimportant", why:"Global IR puts regions and regionalism at the centre."}
    ]},
    {id:"e2u6-q44", lesson:"e2u6-l5", level:3, q:"A columnist writes: “Chinese thought teaches that world order should be harmonious, so China’s foreign policy is always peaceful.” What would a careful Global IR scholar say?", options:[
-     {t:"Traditions are diverse and debated, ideas don’t automatically decide policy, and critics warn that “harmony” readings can serve state agendas", ok:true, why:"Right. Global IR rejects essentialism and exceptionalism, and scholars such as Callahan have criticised uses of tianxia that present hierarchy as harmony."},
+     {t:"Traditions are diverse, and ideas don’t automatically decide policy", ok:true, why:"Right. Critics also warn that “harmony” readings can serve state agendas. Global IR rejects essentialism and exceptionalism, and scholars such as Callahan have criticised uses of tianxia that present hierarchy as harmony."},
      {t:"The columnist is right, because Global IR says each civilisation has one view", why:"Global IR says the opposite: traditions are internally diverse."},
      {t:"Chinese thought has nothing to say about world order", why:"Chinese scholars have developed several theories (tianxia, relational theory, moral realism). The problem is the sweeping claim."},
      {t:"Only Western theories can describe Chinese policy", why:"Global IR argues that theories from many traditions, including Chinese ones, can contribute."}
    ]},
    {id:"e2u6-q45", lesson:"e2u6-l5", level:2, q:"Which reading of the 1962 crisis is postcolonial?", options:[
-     {t:"Cuba, which had lived under a US right to intervene, was left out of the deal that decided its fate", ok:true, why:"Right. Centring the voice and history of the smaller, formerly dominated country is the postcolonial move."},
+     {t:"Cuba was left out of the deal that decided its fate", ok:true, why:"Right. Cuba had lived under a US right to intervene. Centring the voice and history of the smaller, formerly dominated country is the postcolonial move."},
      {t:"The Soviet missiles narrowed a gap in long-range forces", why:"That is the realist reading, focused on the balance of power."},
      {t:"The hotline and test ban treaty made future crises less dangerous", why:"That is the liberal reading, focused on institutions."},
      {t:"Shared rules of diplomacy kept the superpowers talking", why:"That is the English School reading."}

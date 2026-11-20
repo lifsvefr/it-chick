@@ -153,7 +153,7 @@ ICA.addUnit({
       {t:"Older people don’t use the internet, so they didn’t take part.", why:"This adds an over-generalised claim about all older people that the data don’t support, and uses an informal register."}
     ]},
     {id:"t4u10-l1-x7", type:"mcq", q:"Lucía, writing in her second language, copies the phrase “There is some evidence to suggest that…” from the Academic Phrasebank into her discussion section. Is that plagiarism?", options:[
-      {t:"No. It is a general phrase that carries no one’s ideas; the Phrasebank says reusing such phrases is not plagiarism.", ok:true, why:"Plagiarism is presenting someone else’s ideas or words as your own. Stock academic phrases are shared tools of the language, which is exactly why the Phrasebank collects them."},
+      {t:"No. It is a general phrase that carries no one’s ideas.", ok:true, why:"The Phrasebank says reusing such phrases is not plagiarism. Plagiarism is presenting someone else’s ideas or words as your own. Stock academic phrases are shared tools of the language, which is exactly why the Phrasebank collects them."},
       {t:"Yes. Any phrase taken from a website must be quoted and cited.", why:"That rule applies to content: someone’s idea, finding or distinctive wording. General phrases like this one belong to everyone who writes in the language."},
       {t:"Yes, unless she changes every word to avoid matching software.", why:"Similarity software would flag lots of common phrases in every paper. Tutors and editors look at whether ideas and content are copied, not whether stock phrases appear."},
       {t:"Only if her paper is in English; other languages have different rules.", why:"The principle (credit others’ ideas and words; shared stock phrases are fine) applies in any language."}
@@ -288,16 +288,16 @@ ICA.addUnit({
       {t:"¶6 Limits: one city, no comparison group.", flag:false, why:"An honest limitations paragraph strengthens an argument. Fine."}
     ], mono:false},
     {id:"t4u10-l2-x4", type:"mcq", q:"Fatima asks a colleague to read her draft grant proposal. Which request will get her the **most useful** feedback at the early-draft stage?", options:[
-      {t:"“Could you tell me in one sentence what you think I’m asking for, and where you got lost?”", ok:true, why:"Specific questions about the argument and clarity are what an early draft needs. If the reader can’t state her aim, nothing else matters yet."},
+      {t:"“In one sentence, what am I asking for, and where did you get lost?”", ok:true, why:"Specific questions about the argument and clarity are what an early draft needs. If the reader can’t state her aim, nothing else matters yet."},
       {t:"“Any thoughts?”", why:"Vague requests get vague answers. The reader doesn’t know what kind of help is useful now."},
       {t:"“Please fix all the typos.”", why:"Proofreading an early draft wastes the reader’s time: whole paragraphs may still change or disappear."},
-      {t:"“Just tell me it’s good so I can submit it.”", why:"This asks for reassurance, not feedback, and would hide problems a funder will spot."}
+      {t:"“Just tell me it’s good so I can submit it before the deadline tonight.”", why:"This asks for reassurance, not feedback, and would hide problems a funder will spot."}
     ]},
     {id:"t4u10-l2-x5", type:"mcq", q:"Dmitri’s supervisor comments: “The discussion overstates what the data show.” Dmitri disagrees at first. What is the best next step?", options:[
-      {t:"Reread the discussion against the results, note which claims go beyond them, and either revise or explain his reasoning in a reply.", ok:true, why:"Treat feedback as information about the text. Check it against the evidence; if he still disagrees, he can explain why, politely and with reasons."},
+      {t:"Check the discussion against the results, then revise or explain his view.", ok:true, why:"He should note which claims go beyond the results. Treat feedback as information about the text. Check it against the evidence; if he still disagrees, he can explain why, politely and with reasons."},
       {t:"Ignore it: he is the author.", why:"He is the author, but ignoring a specific concern from an expert reader risks the same objection from examiners or reviewers later."},
       {t:"Delete the whole discussion section.", why:"An overreaction. The comment is about the strength of some claims, which hedging and clearer links to the data can fix."},
-      {t:"Ask a different person until someone says it’s fine.", why:"Shopping for agreement doesn’t fix the problem. If several readers disagree, he should weigh their reasons, not count votes."}
+      {t:"Ask different people to read it until someone says the discussion is fine.", why:"Shopping for agreement doesn’t fix the problem. If several readers disagree, he should weigh their reasons, not count votes."}
     ]},
     {id:"t4u10-l2-x6", type:"match", q:"Match each revision pass to the job it does.", pairs:[
       ["Revising","Rethinking the argument and structure","Revision is large-scale: thesis, sections, evidence."],
@@ -435,8 +435,8 @@ ICA.addUnit({
       {t:"The complete reference list of 35 sources", b:1, why:"Cite the few key sources briefly on the poster; the full list fits better in the linked PDF."}
     ]},
     {id:"t4u10-l3-x4", type:"mcq", q:"After Priya’s talk, someone asks about a statistical method she didn’t use and doesn’t know well. What is the best response?", options:[
-      {t:"Say she isn’t familiar enough with that method to comment, explain why she chose her approach, and offer to follow up.", ok:true, why:"Honest and constructive. It keeps her credibility, explains her own choice and leaves room to learn something useful."},
-      {t:"Give a confident answer anyway so she doesn’t look unprepared.", why:"A confident wrong answer in front of specialists does far more damage than an honest “I don’t know”."},
+      {t:"Say she doesn’t know that method well, explain her own choice, and offer to follow up.", ok:true, why:"Honest and constructive. It keeps her credibility, explains her own choice and leaves room to learn something useful."},
+      {t:"Give a confident answer anyway, so that she doesn’t look unprepared in front of everyone.", why:"A confident wrong answer in front of specialists does far more damage than an honest “I don’t know”."},
       {t:"Say the question isn’t relevant to her talk.", why:"It may well be relevant: the questioner may be pointing to a better analysis. Dismissing it closes off useful feedback."},
       {t:"Ignore it and take the next question.", why:"Ignoring a question is discourteous and suggests she has something to hide."}
     ]},
@@ -607,10 +607,10 @@ ICA.addUnit({
       {t:"The paper is accepted and goes into production", why:"Last: after acceptance come copyediting, proofs and publication."}
     ]},
     {id:"t4u10-l4-x4", type:"mcq", q:"Reviewer 1 asks Oluwaseun to analyse a variable that his study didn’t collect. Which response is best?", options:[
-      {t:"“Thank you. We did not collect this variable, so we cannot add the analysis. We now discuss it as a limitation (p. 12, lines 240–246).”", ok:true, why:"Polite, honest and specific: it explains why the change isn’t possible, shows what was done instead and says exactly where."},
+      {t:"“Thank you. We did not collect this variable; we now discuss it as a limitation (p. 12).”", ok:true, why:"Polite, honest and specific: it explains why the change isn’t possible, shows what was done instead and says exactly where."},
       {t:"“This comment shows the reviewer did not read our paper carefully.”", why:"Defensive and personal. Even if the reviewer missed something, editors respond better to a calm explanation."},
       {t:"Leave the comment unanswered and hope the editor doesn’t notice.", why:"Every comment should be answered. Unanswered comments are a common reason for another round of revisions, or rejection."},
-      {t:"Invent plausible values for the variable so the analysis can be done.", why:"That would be [[fabrication]], which is research misconduct. Never create data that weren’t collected."}
+      {t:"Invent plausible values for the missing variable so that the requested analysis can be done.", why:"That would be [[fabrication]], which is research misconduct. Never create data that weren’t collected."}
     ]},
     {id:"t4u10-l4-x5", type:"sort", q:"Sort each statement about preprints: **accurate** or **a misconception**?", buckets:["Accurate","Misconception"], items:[
       {t:"A preprint has usually not been peer reviewed.", b:0, why:"That’s the definition: servers may do quick checks, but not peer review."},
@@ -627,10 +627,10 @@ ICA.addUnit({
       {t:"Paying a fee to a site that promises fast publication", why:"Not a route at all: that’s a warning sign of a predatory outlet."}
     ]},
     {id:"t4u10-l4-x7", type:"mcq", q:"Which statement about ORCID iDs is correct?", options:[
-      {t:"It is free, stays with you if you change institution or name, and is shown as an https://orcid.org/ address.", ok:true, why:"ORCID’s own support pages confirm all three: free for researchers, yours throughout your career, and displayed as a full https address."},
+      {t:"It is free, stays with you if you change job or name, and is shown as an https://orcid.org/ address.", ok:true, why:"ORCID’s own support pages confirm all three: free for researchers, yours throughout your career, and displayed as a full https address."},
       {t:"Only researchers at member universities can get one.", why:"Anyone can register free; no institutional affiliation is needed."},
       {t:"It replaces the DOI of each of your papers.", why:"A DOI identifies a work; an ORCID iD identifies a person. They work together."},
-      {t:"It costs a yearly fee that publishers pay on your behalf.", why:"ORCID is funded by member organisations, but individuals register and use it free."}
+      {t:"It costs a yearly fee, which your publisher or your university will usually pay on your behalf.", why:"ORCID is funded by member organisations, but individuals register and use it free."}
     ]}
    ],
    apply:{intro:"These tasks need only a browser and are free. None requires a university login (a login may give access to more full texts and to your institution’s publishing agreements).", tasks:[
@@ -759,8 +759,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"t4u10-l5-x1", type:"mcq", q:"Sione reads an online forum saying “every PhD starts with two years of courses and a qualifying exam”. What’s the most accurate response?", options:[
-      {t:"That describes a common pattern in the US and Canada; many other systems start with research from day one, so it depends on the programme.", ok:true, why:"Coursework-first doctorates are common in North America, but research-first models (for example in the UK, Australia and many other places) usually have little or no required coursework. Advice must be matched to the system."},
-      {t:"It’s true everywhere: all doctorates follow the same international rules.", why:"There are no single international rules. Structure, names, length and examination all vary by country and university."},
+      {t:"That’s common in the US and Canada; many other systems start with research from day one.", ok:true, why:"It depends on the programme. Coursework-first doctorates are common in North America, but research-first models (for example in the UK, Australia and many other places) usually have little or no required coursework. Advice must be matched to the system."},
+      {t:"It’s true everywhere, because all doctorates follow the same international rules and stages.", why:"There are no single international rules. Structure, names, length and examination all vary by country and university."},
       {t:"It’s false everywhere: no doctorate includes coursework.", why:"Many do, especially in North America, and research-first programmes often include training courses too."},
       {t:"Only professional doctorates have coursework.", why:"Professional doctorates often include taught elements, but so do many PhD programmes."}
     ]},
@@ -792,14 +792,14 @@ ICA.addUnit({
       {t:"She must take a year of extra coursework.", why:"Amendments are corrections to the thesis, not new coursework."}
     ]},
     {id:"t4u10-l5-x6", type:"mcq", q:"Ana receives an email from an “agency” offering a guaranteed fully funded doctoral place for a processing fee. What should she do?", options:[
-      {t:"Not pay, and check funding only through the university’s or funder’s own official website.", ok:true, why:"Genuine funders explain on their own sites how to apply, and none can be “guaranteed” through a paid agent. This pattern is a common scam."},
+      {t:"Not pay, and check funding only on the university’s or funder’s own website.", ok:true, why:"Genuine funders explain on their own sites how to apply, and none can be “guaranteed” through a paid agent. This pattern is a common scam."},
       {t:"Pay quickly before the place goes to someone else.", why:"Urgency plus an upfront fee is a classic scam pattern."},
-      {t:"Reply with her passport and bank details so they can check eligibility.", why:"Never send identity or bank documents to an unverified sender; they can be used for fraud."},
+      {t:"Reply with her passport and bank details so that they can check her eligibility first.", why:"Never send identity or bank documents to an unverified sender; they can be used for fraud."},
       {t:"Pay, as long as the fee is small.", why:"The size of the fee doesn’t make it genuine, and paying may lead to more demands."}
     ]},
     {id:"t4u10-l5-x7", type:"mcq", q:"Kenji, in the second year of a doctorate, feels stuck and isolated, and his meetings with his supervisor have become tense. Which step is the best place to start?", options:[
-      {t:"Talk to someone: his second supervisor, the graduate school or postgraduate tutor, or the university’s wellbeing service, and agree on expectations with his supervisor.", ok:true, why:"Universities have these routes because these problems are common. Getting support early, and clarifying expectations, helps most."},
-      {t:"Say nothing and work longer hours until it improves.", why:"Isolation and conflict rarely fix themselves, and overwork tends to make both worse."},
+      {t:"Talk to someone, such as his second supervisor or the wellbeing service.", ok:true, why:"The graduate school or postgraduate tutor can help too, and he should agree on expectations with his supervisor. Universities have these routes because these problems are common. Getting support early, and clarifying expectations, helps most."},
+      {t:"Say nothing to anyone, and work longer hours until things improve by themselves.", why:"Isolation and conflict rarely fix themselves, and overwork tends to make both worse."},
       {t:"Quit immediately without telling anyone.", why:"Leaving may sometimes be right, but it’s a big decision best made with information and support. Options such as a break, a change of supervisor or part-time study may exist."},
       {t:"Post about his supervisor by name on social media.", why:"This could harm both of them and his career, and it doesn’t use the routes designed to solve the problem."}
     ]}
@@ -817,6 +817,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t4u10-q02","t4u10-q05","t4u10-q08","t4u10-q12","t4u10-q15","t4u10-q20","t4u10-q23","t4u10-q26","t4u10-q30","t4u10-q33","t4u10-q38","t4u10-q42"],
+  cpBank:[
+   {id:"t4u10-cp01", lesson:"t4u10-l1", level:1, q:"Which transition fits the gap? “Most of the 20 clinics extended their opening hours. ___, two rural clinics reduced theirs.”", options:[
+     {t:"Therefore", why:"“Therefore” claims the second sentence follows from the first. Other clinics extending hours didn’t cause the rural clinics to cut theirs."},
+     {t:"For example", why:"“For example” introduces a case of the point just made. Two clinics reducing hours is the opposite of the point."},
+     {t:"In contrast", ok:true, why:"The second sentence goes against the first, so a contrast word such as “In contrast” or “However” is true to the logic."},
+     {t:"Furthermore", why:"“Furthermore” adds a point in the same direction. This sentence points the other way."}]},
+   {id:"t4u10-cp02", lesson:"t4u10-l2", level:1, q:"Ines replaces “due to the fact that” with “because”, splits two very long sentences and adds a clearer topic sentence to one paragraph. Which pass is she doing?", options:[
+     {t:"Revising", why:"Revising works on the argument and structure: sharpening the thesis, moving or cutting sections. Her changes are within paragraphs and sentences."},
+     {t:"Editing", ok:true, why:"Editing asks whether each paragraph and sentence is clear: topic sentences, transitions, hedging, concision and register."},
+     {t:"Proofreading", why:"Proofreading checks correctness: spelling, numbers, labels and citations. Her changes improve clarity, not correctness."},
+     {t:"Reverse outlining", why:"A reverse outline lists each paragraph’s main point to check the structure. She is rewriting sentences."}]},
+   {id:"t4u10-cp03", lesson:"t4u10-l4", level:1, q:"Rui is impatient with slow journals. She wants to send the same manuscript to two journals at once and accept whichever replies first. Is that acceptable?", options:[
+     {t:"Yes, as long as she doesn’t tell either journal", why:"Hiding it makes it worse. Most cover letters must state that the paper isn’t under consideration elsewhere."},
+     {t:"No: submit to one journal at a time, withdrawing before moving on", ok:true, why:"Simultaneous submission breaches publishing ethics (the ICMJE, for example, says authors shouldn’t do it). Withdraw formally before moving on."},
+     {t:"Yes, if the two journals are in different countries", why:"The rule applies everywhere. Where the journals are based makes no difference."},
+     {t:"Yes, because she has already posted a preprint, so the work is public anyway", why:"A preprint is a separate question, governed by each journal’s preprint policy. It doesn’t permit submitting to two journals at once."}]},
+   {id:"t4u10-cp04", lesson:"t4u10-l1", level:2, q:"Visits rose in all eight libraries in the year after their opening hours were extended. Akosua’s draft says: “It could perhaps be possible that longer hours might increase visits.” Which rewrite fits the evidence best?", options:[
+     {t:"“Longer opening hours prove that libraries attract more visitors.”", why:"“Prove” overclaims. A rise after a change, in eight libraries, doesn’t prove what caused it."},
+     {t:"“Visits rose in all eight libraries in the year after opening hours were extended.”", ok:true, why:"It says plainly what was found, without stacked hedges or a causal claim the evidence can’t carry."},
+     {t:"“It may possibly be that longer hours could perhaps increase visits.”", why:"This is still over-hedged. Stacking “may possibly… could perhaps” makes solid findings sound unsure."},
+     {t:"“Libraries everywhere should extend their hours.”", why:"This jumps from eight libraries to everywhere, and from a finding to a recommendation the data don’t support."}]},
+   {id:"t4u10-cp05", lesson:"t4u10-l2", level:2, q:"Kai has finished his data analysis, but he has been stuck on the first sentence of his paper’s introduction for a week. What is the most useful advice?", options:[
+     {t:"Keep working on the introduction until it’s perfect, since it comes first", why:"A first draft only needs to exist. Waiting for a perfect opening stalls everything else."},
+     {t:"Polish every sentence before moving on to the next", why:"Separate drafting from polishing. Fixing sentences he may later cut wastes time."},
+     {t:"Draft the methods and results first, then the introduction", ok:true, why:"Many writers start where it’s easiest: describing what was done and found. Markers like [CITE] keep the flow going, and the introduction is easier once the rest exists."},
+     {t:"Wait until he has a free week to write the whole paper", why:"Short, regular sessions usually beat waiting for a free week that never comes."}]},
+   {id:"t4u10-cp06", lesson:"t4u10-l3", level:2, q:"Lea prints her A0 poster design on an A4 sheet. At arm’s length the headings are clear, but she must bring the page close to read the body text. What does this tell her?", options:[
+     {t:"Nothing: A4 is so much smaller that it can’t predict A0", why:"Every A size has the same shape, so an A4 print is the poster scaled down exactly. That is why this quick test works."},
+     {t:"The body text will be too small on the poster too", ok:true, why:"Text that isn’t readable at arm’s length on paper won’t be comfortable at full size from a step or two away. Larger text usually means fewer words, with details in a linked PDF."},
+     {t:"The body text is fine, because people read posters up close", why:"Visitors usually stand a step or two away, often in a crowd. The arm’s-length test stands in for that distance."},
+     {t:"Only the headings matter, because visitors just skim posters", why:"Headings draw people in, but the body text carries the result, so it must be readable at a distance too."}]},
+   {id:"t4u10-cp07", lesson:"t4u10-l4", level:2, q:"In Noor’s qualitative paper, Reviewer 1 asks her to remove all participant quotes “to save space”. The quotes are the main evidence for her themes. What should her response letter do?", options:[
+     {t:"Skip that comment and answer the others", why:"A response letter answers every comment, point by point, even ones the author disagrees with."},
+     {t:"Remove the quotes quietly to keep the reviewer happy", why:"She is still the author. She doesn’t have to accept a change that would remove her evidence."},
+     {t:"Point out that the reviewer clearly doesn’t understand qualitative research", why:"Responses should be polite and specific, not defensive. Criticising the reviewer won’t persuade the editor."},
+     {t:"Thank the reviewer and explain, politely, why the quotes are needed", ok:true, why:"Authors may disagree, with reasons. A polite, well-argued reply, plus any compromise (such as shortening some quotes), is what editors accept."}]},
+   {id:"t4u10-cp08", lesson:"t4u10-l5", level:2, q:"Diego is doing a PhD in the UK. He finds a long blog post about preparing for a public defence “where the result is already decided”. How useful is it for him?", options:[
+     {t:"Very useful: doctoral exams work the same way everywhere", why:"Examination differs strikingly between systems. Advice must be checked against the system it was written for."},
+     {t:"Not very: a UK viva is a private oral exam, not a public defence", ok:true, why:"Public defences after approval are common in several continental European countries. In the UK, examiners question the candidate in private in a viva."},
+     {t:"Very useful: UK vivas are public ceremonies after the thesis is approved", why:"That describes a public defence. A UK viva is a closed oral exam."},
+     {t:"Not at all, because UK doctorates are examined only by written reports", why:"Examination mainly by written reports is typical of most Australian universities, not the UK."}]},
+   {id:"t4u10-cp09", lesson:"t4u10-l3", level:3, q:"Femi is presenting a small pilot of a tutoring scheme in one school. Which slide headline is best?", options:[
+     {t:"“Results”", why:"A topic label tells the audience nothing. The assertion–evidence approach uses a full-sentence claim as the headline."},
+     {t:"“Tutoring transforms children’s reading”", why:"This is a claim, but far stronger than one small pilot can support, and it generalises beyond one school."},
+     {t:"“In one pilot school, tutored pupils read slightly more fluently”", ok:true, why:"A full-sentence assertion that matches the evidence: specific about where, and hedged to its size."},
+     {t:"“Tutoring might possibly perhaps help some reading a little”", why:"This is over-hedged. One clear, honest claim works better than stacked doubts."}]},
+   {id:"t4u10-cp10", lesson:"t4u10-l4", level:3, q:"Oscar’s preprint reports a survey of 900 workers: those working remotely reported higher wellbeing. His draft social media post says: “Our new study proves remote work makes people happier!” Which version is best?", options:[
+     {t:"The same post, with a link to the preprint added", why:"A link doesn’t fix the claim. “Proves” overclaims, and readers may not realise a preprint hasn’t been reviewed."},
+     {t:"“Peer-reviewed research proves remote work makes people happier!”", why:"A preprint hasn’t been peer reviewed, so this is false as well as overclaimed."},
+     {t:"“Remote work might possibly perhaps make some people slightly happier, maybe.”", why:"Over-hedged, and it still doesn’t say the work is an unreviewed preprint."},
+     {t:"“Our preprint (not yet reviewed): remote workers reported higher wellbeing.”", ok:true, why:"It states the preprint status clearly and reports the finding at its real strength: a survey association, not proof."}]},
+   {id:"t4u10-cp11", lesson:"t4u10-l5", level:3, q:"Lina is comparing two master’s offers: a Dutch programme worth 120 ECTS credits and a UK taught MSc worth 180 UK credits. Which statement is accurate?", options:[
+     {t:"120 ECTS is about two years full time; the UK MSc usually takes one", ok:true, why:"In the Bologna system, 60 ECTS is about one year full time, so 120 is about two. QAA gives 180 UK credits as the typical minimum for a one-year taught master’s."},
+     {t:"The UK course is longer, because 180 is more than 120", why:"UK credits and ECTS credits are different units. The UK taught master’s usually takes one year; 120 ECTS is about two."},
+     {t:"120 ECTS means 120 weeks of study", why:"An ECTS credit isn’t a week. About 60 credits make one year of full-time study."},
+     {t:"Only the UK course is a real master’s; Bologna degrees are bachelor’s degrees", why:"The Bologna Process has three cycles: bachelor’s, master’s and doctorate. A 120-ECTS master’s is a master’s."}]},
+   {id:"t4u10-cp12", lesson:"t4u10-l3", level:3, q:"After Grace’s talk on bus-stop temperatures in one city, someone says bluntly: “It’s only one city, so your findings are meaningless.” What is the best response?", options:[
+     {t:"Argue that one city is enough to represent every city in the world", why:"That overclaims. A single city can’t stand for all climates and street layouts."},
+     {t:"Say “I don’t know” and move on", why:"“I don’t know” is fine when you don’t know. Here she does know her study’s limits and what it shows, so she should say so."},
+     {t:"Ask the chair to skip the question, because it was put rudely", why:"Critical questions are useful, even when put bluntly. A calm answer is stronger than avoiding it."},
+     {t:"Agree it’s a limit, and say what the findings show for this city", ok:true, why:"Treat critical questions as useful. Acknowledging the limit while stating the claim at its true strength is a strong answer."}]},
+  ],
   codex:[
    {id:"academic-writing", title:"Academic writing", aka:["scholarly writing","writing a paper","writing for research"], tags:["writing","research"],
     summary:"Writing that makes a supported argument for readers who can check and challenge it.",
@@ -1293,29 +1355,29 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t4u10-q01", lesson:"t4u10-l1", level:1, q:"What is a thesis statement?", options:[
-     {t:"A sentence or two stating the main claim the whole piece will support", ok:true, why:"The thesis is the central claim; every section should serve it."},
+     {t:"A sentence or two stating the main claim of the piece", ok:true, why:"The thesis is the central claim; every section should serve it."},
      {t:"The title of the paper", why:"A title names the piece; it may hint at the claim but isn’t the argument itself."},
      {t:"A list of the sources used", why:"That’s a reference list or bibliography."},
-     {t:"The final paragraph summarising the results", why:"A conclusion may restate the thesis, but the thesis is normally stated early."}]},
+     {t:"The final paragraph, which summarises all of the results", why:"A conclusion may restate the thesis, but the thesis is normally stated early."}]},
    {id:"t4u10-q02", lesson:"t4u10-l1", level:2, q:"Which sentence is the most arguable thesis?", options:[
      {t:"Weekly sharing sessions between night and day shifts reduced medication errors more than written handover notes alone.", ok:true, why:"Specific, debatable and testable: someone could ask for the evidence."},
      {t:"Medication errors are bad.", why:"Nobody disputes this; there’s nothing to argue."},
      {t:"This report is about handovers.", why:"An announcement of the topic, not a claim."},
      {t:"Hospitals have day and night shifts.", why:"A fact, not an argument."}]},
    {id:"t4u10-q03", lesson:"t4u10-l1", level:1, q:"In the four-move paragraph pattern, what does the **analysis** sentence do?", options:[
-     {t:"Explains what the evidence means and how it supports the point", ok:true, why:"Analysis connects evidence to the claim; without it, a paragraph is just a summary."},
-     {t:"States the paragraph’s point", why:"That’s the topic sentence."},
+     {t:"Explains what the evidence means for the point", ok:true, why:"Analysis connects evidence to the claim; without it, a paragraph is just a summary."},
+     {t:"States the paragraph’s main point in the writer’s own words", why:"That’s the topic sentence."},
      {t:"Gives the data or quotation", why:"That’s the evidence."},
      {t:"Lists the references", why:"References go in citations and the reference list, not an analysis sentence."}]},
    {id:"t4u10-q04", lesson:"t4u10-l1", level:2, q:"Which transition is used **incorrectly**? “Rainfall fell by 20%. **Therefore**, the village elected a new chief.”", options:[
-     {t:"“Therefore”, because nothing shows the election followed from the rainfall", ok:true, why:"“Therefore” claims a consequence. Unless the text shows a causal link, it misrepresents the logic."},
-     {t:"Nothing is wrong: any transition word makes writing flow", why:"Transitions carry logical claims; the wrong one makes the reasoning false."},
+     {t:"“Therefore”, because nothing shows the rainfall caused the election", ok:true, why:"“Therefore” claims a consequence. Unless the text shows a causal link, it misrepresents the logic."},
+     {t:"Nothing is wrong: any transition word helps to make academic writing flow", why:"Transitions carry logical claims; the wrong one makes the reasoning false."},
      {t:"The problem is the percentage sign", why:"Percentages are fine in academic writing."},
      {t:"The problem is the full stop between the sentences", why:"Punctuation isn’t the issue; the claimed relationship is."}]},
    {id:"t4u10-q05", lesson:"t4u10-l1", level:3, q:"Priya’s study of 30 small cafés in one city found that those with loyalty cards reported more repeat customers. Which sentence best fits the evidence?", options:[
-     {t:"In our sample, cafés with loyalty cards reported more repeat customers, which suggests the cards may help; a larger study would be needed to test this.", ok:true, why:"It reports the finding precisely, hedges the interpretation once and names a limitation."},
+     {t:"Cafés with cards reported more repeat customers, so cards may help; a larger study should test this.", ok:true, why:"It reports the finding precisely, hedges the interpretation once and names a limitation."},
      {t:"Loyalty cards cause customers to return to cafés everywhere.", why:"Overclaims twice: a correlational study can’t show cause, and one city can’t speak for “everywhere”."},
-     {t:"It could perhaps possibly be that loyalty cards might maybe help.", why:"Over-hedged: stacked hedges hide the actual finding."},
+     {t:"It could perhaps possibly be that loyalty cards might maybe help some cafés a little, in some way, sometimes.", why:"Over-hedged: stacked hedges hide the actual finding."},
      {t:"Loyalty cards are clearly the best marketing strategy.", why:"“Clearly” and “the best” go far beyond comparing cafés with and without cards."}]},
    {id:"t4u10-q06", lesson:"t4u10-l1", level:2, q:"Which rewrite is most concise while keeping the meaning of “The researchers made a decision to conduct an analysis of the data”?", options:[
      {t:"The researchers decided to analyse the data.", ok:true, why:"It turns the nouns “decision” and “analysis” back into verbs and keeps every piece of meaning."},
@@ -1323,14 +1385,14 @@ ICA.addUnit({
      {t:"An analysis of the data was decided upon by the researchers.", why:"Still wordy, and the passive makes it longer."},
      {t:"The researchers made the decision of analysing the data.", why:"Still uses a noun (“decision”) where a verb is clearer."}]},
    {id:"t4u10-q07", lesson:"t4u10-l1", level:1, q:"According to its homepage, who was the Academic Phrasebank designed primarily for?", options:[
-     {t:"Academic writers whose first language is not English (though native speakers use it too)", ok:true, why:"The homepage says this, and adds that many users are native speakers."},
-     {t:"Only students in Manchester", why:"It is freely available online to anyone."},
+     {t:"Academic writers whose first language is not English", ok:true, why:"The homepage says this, and adds that many users are native speakers."},
+     {t:"Only students and staff at the University of Manchester", why:"It is freely available online to anyone."},
      {t:"Only journal editors", why:"It is a general resource for academic writers."},
      {t:"People writing fiction", why:"Its phrases are organised around academic papers and functions such as being cautious."}]},
    {id:"t4u10-q08", lesson:"t4u10-l1", level:3, q:"Tomás uses an AI tool to polish the English of his discussion section. Which is the best practice?", options:[
-     {t:"Check every change keeps his meaning, add no unchecked claims or citations, avoid pasting confidential data, and follow the disclosure rules that apply.", ok:true, why:"AI tools can change meaning or invent references, and institutions and journals have rules about data and disclosure."},
+     {t:"Check every change and add nothing unchecked, keep confidential data out, and disclose as required.", ok:true, why:"Every change must keep his meaning, with no unchecked claims or citations. AI tools can change meaning or invent references, and institutions and journals have rules about data and disclosure."},
      {t:"Accept all changes, because the tool’s English is better.", why:"Smoother wording can still alter meaning, hedging or facts."},
-     {t:"Paste in the unpublished interview transcripts so the tool understands the context.", why:"That may breach confidentiality and ethics approval."},
+     {t:"Paste in the unpublished interview transcripts so the tool fully understands the context of his study.", why:"That may breach confidentiality and ethics approval."},
      {t:"Let the tool add references to support his points.", why:"AI tools can invent references; every citation must be one he has read and checked."}]},
    {id:"t4u10-q09", lesson:"t4u10-l1", level:2, q:"Which choice best fits a formal academic register in most fields?", options:[
      {t:"“Adults aged 65 and over were less likely to use the app.”", ok:true, why:"Precise, respectful and formal."},
@@ -1340,7 +1402,7 @@ ICA.addUnit({
    /* ---- Lesson 2 ---- */
    {id:"t4u10-q10", lesson:"t4u10-l2", level:1, q:"What is a reverse outline?", options:[
      {t:"An outline made after drafting, listing each paragraph’s main point", ok:true, why:"It shows the structure you actually wrote, so gaps and repeats stand out."},
-     {t:"An outline written backwards, conclusion first", why:"Order isn’t the point; it’s made from the finished draft."},
+     {t:"An outline written backwards, starting with the conclusion and ending with the introduction", why:"Order isn’t the point; it’s made from the finished draft."},
      {t:"The reference list sorted in reverse order", why:"It has nothing to do with references."},
      {t:"A plan made before any research", why:"That’s an ordinary outline or a proposal."}]},
    {id:"t4u10-q11", lesson:"t4u10-l2", level:1, q:"Which is the best order for later passes on a draft?", options:[
@@ -1357,15 +1419,15 @@ ICA.addUnit({
      {t:"“What do you think my main argument is, and where did you get lost?”", ok:true, why:"Early drafts need global feedback on argument and structure."},
      {t:"“Please check my commas.”", why:"Local feedback is better saved for late drafts."},
      {t:"“Does the font look professional?”", why:"Formatting is the last thing to settle."},
-     {t:"“Is the reference list in perfect APA style?”", why:"Reference formatting comes during proofreading."}]},
+     {t:"“Is the reference list in perfect APA style, with every DOI written correctly?”", why:"Reference formatting comes during proofreading."}]},
    {id:"t4u10-q14", lesson:"t4u10-l2", level:2, q:"Why do many writers type a marker like [CITE] while drafting instead of stopping to find the reference?", options:[
-     {t:"It keeps the flow of drafting; the markers are easy to find and fill in later", ok:true, why:"Searching mid-sentence breaks concentration, and a consistent marker is easy to search for."},
-     {t:"Because references are optional in drafts submitted to journals", why:"Submitted manuscripts need complete references; markers are only for private drafts."},
+     {t:"It keeps the drafting flowing; the markers are easy to find later", ok:true, why:"Searching mid-sentence breaks concentration, and a consistent marker is easy to search for."},
+     {t:"Because references are optional in drafts that are submitted to journals", why:"Submitted manuscripts need complete references; markers are only for private drafts."},
      {t:"Because reference managers require it", why:"Reference managers don’t need markers; this is a drafting habit."},
      {t:"To hide which ideas came from other people", why:"The opposite: markers remind you to credit sources."}]},
    {id:"t4u10-q15", lesson:"t4u10-l2", level:3, q:"Two readers say Amara’s methods section is confusing, but suggest different fixes. What does this most likely mean?", options:[
-     {t:"There is a real problem in that section, even though the best fix still needs her judgement", ok:true, why:"When several readers stumble at the same place, the problem is real; their suggested solutions are only options."},
-     {t:"The readers are wrong because they disagree", why:"They agree on the problem; they differ only on the fix."},
+     {t:"There is a real problem there, but the fix still needs her judgement", ok:true, why:"When several readers stumble at the same place, the problem is real; their suggested solutions are only options."},
+     {t:"The readers are wrong, because they disagree with each other about the fix", why:"They agree on the problem; they differ only on the fix."},
      {t:"She must apply both fixes", why:"Applying contradictory fixes could make it worse. She chooses the best one."},
      {t:"She should delete the methods section", why:"Methods are needed so readers can judge the results."}]},
    {id:"t4u10-q16", lesson:"t4u10-l2", level:1, q:"Which is an example of a **global** concern in feedback?", options:[
@@ -1374,40 +1436,40 @@ ICA.addUnit({
      {t:"Inconsistent capitalisation of headings", why:"A local formatting issue."},
      {t:"A typo in a reference", why:"A local issue fixed during proofreading."}]},
    {id:"t4u10-q17", lesson:"t4u10-l2", level:2, q:"Kenji wants to cut a long section but worries he may need it later. What’s a good habit?", options:[
-     {t:"Paste it into a separate ‘cuttings’ file, or rely on dated versions or version history", ok:true, why:"Saving cut text makes bold revision safe and painless."},
+     {t:"Paste it into a separate ‘cuttings’ file, or keep dated versions", ok:true, why:"Version history works too. Saving cut text makes bold revision safe and painless."},
      {t:"Keep it in the paper in a smaller font", why:"Readers still have to wade through it; it doesn’t solve the problem."},
      {t:"Never cut anything once written", why:"Cutting is a normal and important part of revision."},
-     {t:"Delete it and empty the recycle bin immediately", why:"That removes the safety net he wants."}]},
+     {t:"Delete it and empty the recycle bin immediately, so he isn’t tempted", why:"That removes the safety net he wants."}]},
    {id:"t4u10-q18", lesson:"t4u10-l2", level:3, q:"Fatima gives a classmate feedback. Which comment is most helpful?", options:[
-     {t:"“Your second paragraph convinced me. In the third, I couldn’t see how the survey supports your thesis; could you add a sentence explaining the link?”", ok:true, why:"Specific, kind, about the text, and it says both what works and what to change."},
+     {t:"“Paragraph 2 convinced me. In paragraph 3, could you explain how the survey supports your thesis?”", ok:true, why:"Specific, kind, about the text, and it says both what works and what to change."},
      {t:"“Good, but unclear.”", why:"Too vague to act on."},
      {t:"“You’re not a good writer.”", why:"About the person, not the text, and gives nothing to fix."},
-     {t:"“I would have chosen a different topic.”", why:"Not useful feedback on the draft they actually wrote."}]},
+     {t:"“I would have chosen a different topic, because I don’t think this one is very interesting to most readers.”", why:"Not useful feedback on the draft they actually wrote."}]},
    /* ---- Lesson 3 ---- */
    {id:"t4u10-q19", lesson:"t4u10-l3", level:1, q:"What usually happens in a poster session?", options:[
-     {t:"Presenters stand by their posters and talk with people who stop to read them", ok:true, why:"It’s an interactive, conversational format."},
+     {t:"Presenters stand by their posters and talk with visitors", ok:true, why:"It’s an interactive, conversational format."},
      {t:"Each presenter gives a 20-minute lecture to a seated audience", why:"That describes a talk session."},
      {t:"Posters are judged with nobody present", why:"Presenters are usually expected to be there for discussion."},
      {t:"Posters are only sent to reviewers by post", why:"Posters are displayed at the conference, in print or on screens."}]},
    {id:"t4u10-q20", lesson:"t4u10-l3", level:2, q:"A conference slot is 20 minutes, including 5 minutes for questions. How long should the talk be?", options:[
-     {t:"No more than 15 minutes, ideally rehearsed to a little less", ok:true, why:"20 − 5 = 15, and real talks tend to run longer than rehearsals."},
-     {t:"20 minutes", why:"That leaves no time for the questions included in the slot."},
+     {t:"No more than 15 minutes", ok:true, why:"Ideally, rehearse it to a little less. 20 − 5 = 15, and real talks tend to run longer than rehearsals."},
+     {t:"20 minutes, the full slot", why:"That leaves no time for the questions included in the slot."},
      {t:"25 minutes", why:"That overruns the slot and takes time from other speakers."},
      {t:"5 minutes", why:"That confuses the question time with the talk time."}]},
    {id:"t4u10-q21", lesson:"t4u10-l3", level:2, q:"In the assertion–evidence approach, what goes in a slide’s headline?", options:[
-     {t:"A full-sentence claim, such as “Trees cooled bus stops more than shelters did”", ok:true, why:"The headline states the point; the visual below shows the evidence."},
-     {t:"A one-word topic, such as “Results”", why:"Topic labels make the audience work out the point."},
+     {t:"A full-sentence claim stating the slide’s point", ok:true, why:"For example: “Trees cooled bus stops more than shelters did.” The headline states the point; the visual below shows the evidence."},
+     {t:"A one-word topic, such as “Results” or “Methods”", why:"Topic labels make the audience work out the point."},
      {t:"The full paragraph from the paper", why:"Walls of text compete with the speaker."},
      {t:"The slide number only", why:"Numbering is useful, but the headline should carry the message."}]},
    {id:"t4u10-q22", lesson:"t4u10-l3", level:1, q:"Why should a presenter repeat an audience member’s question before answering?", options:[
-     {t:"So everyone, including people online or on a recording, hears it, and to check it was understood", ok:true, why:"Questions from the floor often aren’t audible to all, and rephrasing confirms understanding."},
+     {t:"So everyone hears it, and to check it was understood", ok:true, why:"Everyone includes people online or on a recording. Questions from the floor often aren’t audible to all, and rephrasing confirms understanding."},
      {t:"To use up time", why:"Repeating briefly is about clarity, not filling time."},
-     {t:"Because it is a formal rule at every conference", why:"It’s good practice, not a universal rule."},
+     {t:"Because it is a formal rule at every academic conference", why:"It’s good practice, not a universal rule."},
      {t:"To avoid answering", why:"Repeating comes before answering, not instead of it."}]},
    {id:"t4u10-q23", lesson:"t4u10-l3", level:3, q:"Dmitri’s chart shows two groups only as a red line and a green line. Which change makes it most accessible?", options:[
-     {t:"Label each line directly and use different line styles or markers as well as colours", ok:true, why:"Meaning no longer depends on telling red from green, which many people with colour vision deficiency find hard."},
+     {t:"Label each line directly and use different line styles as well as colours", ok:true, why:"Markers work as well as line styles. Meaning no longer depends on telling red from green, which many people with colour vision deficiency find hard."},
      {t:"Make both lines brighter", why:"Brighter red and green can still be confused."},
-     {t:"Add a legend in red and green text", why:"The legend has the same colour problem."},
+     {t:"Add a legend in red and green text so readers can match each line to a group", why:"The legend has the same colour problem."},
      {t:"Remove the axis labels to reduce clutter", why:"That makes the chart harder for everyone to read."}]},
    {id:"t4u10-q24", lesson:"t4u10-l3", level:2, q:"Which item belongs in a linked PDF rather than on the poster itself?", options:[
      {t:"The full questionnaire and every statistical table", ok:true, why:"Too detailed to read standing up; link it for those who want it."},
@@ -1420,19 +1482,19 @@ ICA.addUnit({
      {t:"How many colours you can fit", why:"Colour choices come later and should be restrained."},
      {t:"Whether you can include your whole paper", why:"Posters summarise; the paper can be linked."}]},
    {id:"t4u10-q26", lesson:"t4u10-l3", level:3, q:"Halfway through Lucía’s talk, she realises she will run over by about three minutes. What is the best response?", options:[
-     {t:"Skip the slides she marked in advance as optional and go to her conclusion on time", ok:true, why:"Planned cuts protect the main message and the question time."},
+     {t:"Skip the slides she marked as optional and finish on time", ok:true, why:"Planned cuts protect the main message and the question time."},
      {t:"Speak much faster to fit everything in", why:"Rushing loses the audience, especially people using captions, interpreters or a second language."},
-     {t:"Carry on and ignore the chair’s signals", why:"Overrunning takes time from others and from her own questions."},
+     {t:"Carry on at the same pace and ignore the chair’s time signals", why:"Overrunning takes time from others and from her own questions."},
      {t:"Stop immediately without a conclusion", why:"The audience leaves without her main message."}]},
    {id:"t4u10-q27", lesson:"t4u10-l3", level:2, q:"Which practice helps people who can’t see the slides follow a talk?", options:[
      {t:"Describing the key point of each chart or image aloud", ok:true, why:"The evidence then reaches people listening, using screen readers on shared slides, or watching later."},
      {t:"Saying “as you can see here” and pointing", why:"That assumes everyone can see the screen."},
      {t:"Adding more animation", why:"Animation doesn’t help people who can’t see it and can distract others."},
-     {t:"Turning off the microphone in a small room", why:"That excludes people who rely on hearing systems or recordings."}]},
+     {t:"Turning off the microphone in a small room so the sound is clearer", why:"That excludes people who rely on hearing systems or recordings."}]},
    /* ---- Lesson 4 ---- */
    {id:"t4u10-q28", lesson:"t4u10-l4", level:1, q:"What is a desk rejection?", options:[
      {t:"A rejection by the editor before the manuscript is sent to peer reviewers", ok:true, why:"Editors screen for scope, completeness and basic quality first."},
-     {t:"A rejection after three rounds of peer review", why:"That’s a rejection after review, not at the desk-screening stage."},
+     {t:"A rejection by the editor after three full rounds of peer review by experts", why:"That’s a rejection after review, not at the desk-screening stage."},
      {t:"A rejection because the paper was submitted from a desk computer", why:"The name refers to the editor’s desk, not the device."},
      {t:"A request for minor revisions", why:"That’s a revise-and-resubmit decision."}]},
    {id:"t4u10-q29", lesson:"t4u10-l4", level:1, q:"In double-anonymous peer review, who knows whose identity?", options:[
@@ -1441,22 +1503,22 @@ ICA.addUnit({
      {t:"Everyone’s names are published with the article", why:"That describes some forms of open review."},
      {t:"Only the reader knows", why:"Not a peer review model."}]},
    {id:"t4u10-q30", lesson:"t4u10-l4", level:3, q:"Oluwaseun gets an email: “Dear Esteemed Scholar, publish in our journal with acceptance guaranteed in 5 days. Fee details on acceptance.” What should he do?", options:[
-     {t:"Treat it as a likely predatory journal and check it independently with the Think. Check. Submit. checklist", ok:true, why:"Guaranteed acceptance, very fast review and hidden fees are warning signs listed by the checklist."},
-     {t:"Submit quickly, since fast publication helps his career", why:"Publishing in a predatory outlet can harm his work’s credibility and may cost money."},
+     {t:"Treat it as likely predatory and check it with Think. Check. Submit.", ok:true, why:"Guaranteed acceptance, very fast review and hidden fees are warning signs listed by the checklist."},
+     {t:"Submit quickly, since fast publication in any journal will help his career", why:"Publishing in a predatory outlet can harm his work’s credibility and may cost money."},
      {t:"Reply asking for the fee first, then decide", why:"The other warning signs already show it doesn’t provide real peer review."},
      {t:"Forward it to colleagues as a good opportunity", why:"That spreads a likely predatory invitation."}]},
    {id:"t4u10-q31", lesson:"t4u10-l4", level:2, q:"Which belongs in a journal cover letter?", options:[
-     {t:"A statement that the paper isn’t published or under consideration elsewhere", ok:true, why:"Taylor & Francis’s guidance lists this; journals require exclusive submission."},
+     {t:"A statement that the paper isn’t under consideration elsewhere", ok:true, why:"That means it isn’t published or under review anywhere else. Taylor & Francis’s guidance lists this; journals require exclusive submission."},
      {t:"The full abstract pasted in", why:"The guidance says not to copy the abstract; explain significance and fit in your own words."},
-     {t:"Three pages of methods detail", why:"Cover letters should be one page at most."},
+     {t:"Three pages of extra methods detail that didn’t fit in the paper", why:"Cover letters should be one page at most."},
      {t:"A request for guaranteed acceptance", why:"No genuine journal can guarantee acceptance."}]},
    {id:"t4u10-q32", lesson:"t4u10-l4", level:2, q:"A reviewer asks Ana to add a control variable she didn’t collect. What should her response letter say?", options:[
-     {t:"That the variable wasn’t collected, so the analysis isn’t possible, and where she now discusses this as a limitation", ok:true, why:"Honest, specific and points to the change made."},
+     {t:"That it wasn’t collected, and where she now discusses this as a limitation", ok:true, why:"So the analysis isn’t possible. Honest, specific and points to the change made."},
      {t:"Nothing: skip that comment", why:"Every comment should be answered."},
-     {t:"That the reviewer clearly doesn’t understand the field", why:"Defensive and personal; it won’t persuade the editor."},
+     {t:"That the reviewer clearly doesn’t understand the field or the study’s design", why:"Defensive and personal; it won’t persuade the editor."},
      {t:"Invented values estimated from memory", why:"That would be fabrication."}]},
    {id:"t4u10-q33", lesson:"t4u10-l4", level:3, q:"Hana wants to post her paper on a preprint server and also submit it to a journal. What should she check first?", options:[
-     {t:"The journal’s preprint policy, because most journals in many fields allow preprints but policies vary", ok:true, why:"ASAPbio advises checking each journal’s current policy before posting."},
+     {t:"The journal’s preprint policy, because policies vary", ok:true, why:"Most journals in many fields allow preprints. ASAPbio advises checking each journal’s current policy before posting."},
      {t:"Nothing: no journal ever accepts preprinted work", why:"In many fields most journals do accept preprinted work."},
      {t:"Whether she can delete the preprint later if she changes her mind", why:"Most servers keep all versions; that isn’t the deciding check."},
      {t:"Whether the preprint will count as peer reviewed", why:"Preprints aren’t peer reviewed, whatever the server."}]},
@@ -1466,10 +1528,10 @@ ICA.addUnit({
      {t:"Gold open access with an APC", why:"Many gold journals fund publication through APCs."},
      {t:"Subscription-only publishing", why:"Readers or libraries pay; it isn’t open access."}]},
    {id:"t4u10-q35", lesson:"t4u10-l4", level:2, q:"What is the green route to open access?", options:[
-     {t:"Depositing a version of the article, often the accepted manuscript, in an open repository, sometimes after an embargo", ok:true, why:"That’s self-archiving; publishers’ policies say which version and when."},
+     {t:"Depositing a version of the article in an open repository", ok:true, why:"It is often the accepted manuscript, sometimes after an embargo. That’s self-archiving; publishers’ policies say which version and when."},
      {t:"Paying an APC to a fully open journal", why:"That’s typically gold."},
      {t:"Publishing only on environmental topics", why:"“Green” here has nothing to do with the topic."},
-     {t:"Posting the publisher’s PDF on any website you like", why:"Many publishers restrict which version can be shared and where; check the policy."}]},
+     {t:"Posting the publisher’s final PDF on any website you like, at any time", why:"Many publishers restrict which version can be shared and where; check the policy."}]},
    {id:"t4u10-q36", lesson:"t4u10-l4", level:2, q:"Which statement about an ORCID iD is true?", options:[
      {t:"It identifies a person and stays the same through changes of name or institution", ok:true, why:"That’s its purpose: a persistent identifier for researchers."},
      {t:"It identifies a single article", why:"Articles have DOIs; people have ORCID iDs."},
@@ -1482,18 +1544,18 @@ ICA.addUnit({
      {t:"A professional doctorate", why:"That is a doctoral-level degree, not a master’s."},
      {t:"A secondary-school diploma", why:"That’s pre-university."}]},
    {id:"t4u10-q38", lesson:"t4u10-l5", level:2, q:"Tomás starts a coursework-first doctorate in North America. What usually comes before admission to candidacy?", options:[
-     {t:"Coursework and a qualifying (comprehensive) exam, plus approval of a proposal", ok:true, why:"The Council of Graduate Schools and UBC both describe these steps before candidacy."},
+     {t:"Coursework, a qualifying exam and an approved proposal", ok:true, why:"A qualifying exam is also called a comprehensive exam. The Council of Graduate Schools and UBC both describe these steps before candidacy."},
      {t:"The final dissertation defence", why:"The defence comes at the end, after candidacy and research."},
-     {t:"Publication of three journal articles", why:"Not a general requirement for candidacy."},
+     {t:"Publication of three journal articles in high-ranking journals", why:"Not a general requirement for candidacy."},
      {t:"A UK-style viva", why:"That’s the usual final exam in the UK system, not a North American candidacy step."}]},
    {id:"t4u10-q39", lesson:"t4u10-l5", level:1, q:"How do the UK and the US typically use “thesis” and “dissertation”?", options:[
-     {t:"The other way round: UK thesis = doctorate, US dissertation = doctorate (with exceptions)", ok:true, why:"Oxford guidance notes the usage is inverted between the two countries; individual universities vary."},
+     {t:"The other way round: UK doctorate = thesis; US doctorate = dissertation", ok:true, why:"Oxford guidance notes the usage is inverted between the two countries; individual universities vary."},
      {t:"Exactly the same way in both", why:"The usage is typically inverted."},
      {t:"Neither country uses the word “thesis”", why:"Both use both words, for different levels."},
-     {t:"“Dissertation” always means an undergraduate essay everywhere", why:"Usage varies by country and university."}]},
+     {t:"“Dissertation” always means a short undergraduate essay, in every country", why:"Usage varies by country and university."}]},
    {id:"t4u10-q40", lesson:"t4u10-l5", level:2, q:"In a UK viva, who is usually present, according to QAA?", options:[
-     {t:"At least two examiners, typically one internal and one external, plus the candidate", ok:true, why:"That’s QAA’s description; an independent chair, or the supervisor as observer, may also attend."},
-     {t:"A public audience of family and friends", why:"That describes public defences in some other European systems; UK vivas are normally closed."},
+     {t:"At least two examiners, usually one internal and one external", ok:true, why:"The candidate attends too. That’s QAA’s description; an independent chair, or the supervisor as observer, may also attend."},
+     {t:"A public audience of family, friends and other doctoral students", why:"That describes public defences in some other European systems; UK vivas are normally closed."},
      {t:"Only the supervisor", why:"Supervisors don’t examine their own students."},
      {t:"A committee of ten professors", why:"Not the usual UK format."}]},
    {id:"t4u10-q41", lesson:"t4u10-l5", level:1, q:"Which outcome does QAA describe as happening for only a minority of UK doctoral candidates?", options:[
@@ -1502,9 +1564,9 @@ ICA.addUnit({
      {t:"Passing with major amendments", why:"Also a recognised and fairly common outcome."},
      {t:"Having examiners read the thesis", why:"Examiners always read the thesis."}]},
    {id:"t4u10-q42", lesson:"t4u10-l5", level:3, q:"Fatima is comparing two offers: a three-year research-first PhD and a coursework-first PhD that typically takes five to six years after a bachelor’s. What is the fairest conclusion?", options:[
-     {t:"The lengths aren’t directly comparable, because the longer programme includes coursework that elsewhere might be a separate master’s; she should compare structure, funding and fit", ok:true, why:"Headline durations hide different structures; neither model is better in itself."},
+     {t:"The lengths aren’t directly comparable; she should compare structure, funding and fit", ok:true, why:"The longer programme includes coursework that elsewhere might be a separate master’s. Headline durations hide different structures; neither model is better in itself."},
      {t:"The shorter one is obviously a lower-quality degree", why:"Length reflects structure, not quality."},
-     {t:"The longer one is obviously better because it takes longer", why:"More time doesn’t mean higher quality; it reflects a different design."},
+     {t:"The longer one is obviously better, because more years means more training and research skill", why:"More time doesn’t mean higher quality; it reflects a different design."},
      {t:"All doctorates are identical, so length doesn’t matter", why:"Structure, funding and examination differ a lot."}]},
    {id:"t4u10-q43", lesson:"t4u10-l5", level:2, q:"Which of these is a sensible thing to agree with a new supervisor?", options:[
      {t:"How often you’ll meet and how quickly drafts will be read", ok:true, why:"Clear expectations prevent many common problems."},
@@ -1512,13 +1574,13 @@ ICA.addUnit({
      {t:"That you will never ask questions", why:"Asking questions is part of good supervision."},
      {t:"That milestones don’t apply to you", why:"Milestones are set by regulations, not private agreement."}]},
    {id:"t4u10-q44", lesson:"t4u10-l5", level:3, q:"Sione is offered a funded place by a university. What should he check about the funding?", options:[
-     {t:"What it covers (fees, living costs, insurance, research costs), for how long, and what happens if he needs more time", ok:true, why:"Funding packages vary widely; these details decide whether the offer works."},
+     {t:"What it covers, for how long, and what happens if he needs more time", ok:true, why:"Coverage might include fees, living costs, insurance and research costs. Funding packages vary widely; these details decide whether the offer works."},
      {t:"Only the headline amount", why:"The amount means little without knowing what it covers and for how long."},
      {t:"Nothing: all funding is the same", why:"Funding differs a lot between countries and universities."},
-     {t:"Whether he can pay an agent to increase it", why:"Genuine funding isn’t increased through paid agents; this is a scam pattern."}]},
+     {t:"Whether he can pay an agent a fee to increase the amount he receives", why:"Genuine funding isn’t increased through paid agents; this is a scam pattern."}]},
    {id:"t4u10-q45", lesson:"t4u10-l5", level:2, q:"Which is a good first source of support for a graduate student who is struggling with wellbeing?", options:[
-     {t:"The university’s counselling or wellbeing service, or their doctor or local health service", ok:true, why:"These services exist for exactly this; talking early helps."},
-     {t:"Nobody: struggling means they don’t belong in graduate study", why:"Struggling at times is common, not a sign of not belonging."},
+     {t:"The university’s counselling or wellbeing service, or a doctor", ok:true, why:"A local health service is another option. These services exist for exactly this; talking early helps."},
+     {t:"Nobody: struggling means they don’t belong in graduate study at all", why:"Struggling at times is common, not a sign of not belonging."},
      {t:"Working longer hours until it passes", why:"Overwork usually makes things worse."},
      {t:"Only an anonymous online forum", why:"Peers online can help, but they can’t replace professional support."}]}
   ]

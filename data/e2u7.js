@@ -299,7 +299,7 @@ ICA.addUnit({
       ["Pacific Islands Forum","Declares climate change the single greatest threat to its region","Its 2018 Boe Declaration says so."]
     ]},
     {id:"e2u7-l2-x4", type:"mcq", q:"Countries P and Q remove all tariffs on each other’s goods. P charges 5% on imported bicycles from outside; Q charges 30%. Importers start shipping foreign bicycles into P and then trucking them to Q. What is going on, and what is a standard fix?", options:[
-      {t:"P and Q are a free trade area; rules of origin, or a common outside tariff, would stop it", ok:true, why:"Right. In a free trade area each member keeps its own outside tariffs, so goods enter through the cheapest door. Rules of origin limit tariff-free trade to goods really made inside; a customs union removes the gap with one common tariff."},
+      {t:"P and Q are a free trade area; rules of origin would stop it", ok:true, why:"Right. In a free trade area each member keeps its own outside tariffs, so goods enter through the cheapest door. Rules of origin limit tariff-free trade to goods really made inside; a common outside tariff (a customs union) would also remove the gap."},
       {t:"P and Q are a monetary union; they should drop their shared currency", why:"Nothing here involves a shared currency. The problem is different outside tariffs."},
       {t:"P and Q are a customs union; they should raise tariffs on each other", why:"A customs union would already have a common outside tariff, so the gap couldn’t exist."},
       {t:"This is normal free trade and can’t be prevented", why:"It can be managed: that is exactly what rules of origin are for."}
@@ -453,7 +453,7 @@ ICA.addUnit({
       {t:"Parties change their laws, report and meet to review it", why:"Implementation and review keep the treaty working after it is in force."}
     ]},
     {id:"e2u7-l3-x4", type:"mcq", q:"Country K signed a treaty two years ago but its parliament has not ratified it. Which statement is most accurate?", options:[
-      {t:"K is not yet bound by the treaty’s rules, but should not act to defeat its object and purpose while it remains a signatory", ok:true, why:"Correct. Signature usually expresses intent only. Article 18 of the Vienna Convention adds a limited duty not to undermine the treaty while K hasn’t made clear it won’t join."},
+      {t:"K isn’t bound yet, but shouldn’t undermine the treaty", ok:true, why:"Correct. K should not act to defeat the treaty’s object and purpose while it remains a signatory. Signature usually expresses intent only. Article 18 of the Vienna Convention adds a limited duty not to undermine the treaty while K hasn’t made clear it won’t join."},
       {t:"K is fully bound, because signing is the same as ratifying", why:"For most treaties, signature is subject to ratification. Only ratification, accession or a similar act binds."},
       {t:"K can be taken to the ICJ for not ratifying", why:"There is no duty to ratify a treaty one has signed."},
       {t:"The treaty is invalid for everyone until K ratifies", why:"A treaty’s entry into force depends on its own threshold, not on any single signatory."}
@@ -480,7 +480,7 @@ ICA.addUnit({
       "”"
     ]},
     {id:"e2u7-l3-x7", type:"mcq", q:"Rules for sending mail between countries are almost never broken, even by states that break other rules. What best explains this?", options:[
-      {t:"The rules solve a coordination problem: every state gains from following them and would lose by breaking them", ok:true, why:"Right. When a rule makes life easier for everyone and costs little, self-interest and reciprocity keep states in line without any police."},
+      {t:"The rules solve a coordination problem that benefits every state", ok:true, why:"Right. Every state gains from following the rules and would lose by breaking them. When a rule makes life easier for everyone and costs little, self-interest and reciprocity keep states in line without any police."},
       {t:"A world police force inspects every post office", why:"There is no such force. Compliance here comes from shared benefit."},
       {t:"The Security Council has imposed sanctions to enforce postal rules", why:"The Council deals with threats to peace and security, not mail."},
       {t:"Postal rules are jus cogens norms that no state may break", why:"Jus cogens covers a small set of fundamental norms such as the ban on genocide. Postal rules are ordinary treaty rules."}
@@ -639,10 +639,10 @@ ICA.addUnit({
       "”"
     ]},
     {id:"e2u7-l4-x7", type:"mcq", q:"An analyst says: “Since R2P, even governments accused of atrocities argue that they are protecting civilians, not that atrocities are their own business.” Which lens is she using?", options:[
-      {t:"Constructivism: a new norm has changed what states must say to be seen as legitimate", ok:true, why:"Right. Constructivists study how norms change the language and expectations of states, even when behaviour lags behind."},
+      {t:"Constructivism: a new norm has changed what states must say", ok:true, why:"Right. States must now speak in a certain way to be seen as legitimate. Constructivists study how norms change the language and expectations of states, even when behaviour lags behind."},
       {t:"Realism: power alone decides what states say", why:"A realist would stress interests and power, not the spread of a norm changing how states justify themselves."},
       {t:"Mercantilism: states maximise their trade surplus", why:"Mercantilism is a view of the economy, not of norms about atrocities."},
-      {t:"Neofunctionalism: cooperation spills over between sectors", why:"Neofunctionalism explains regional integration, not the spread of human rights norms."}
+      {t:"Neofunctionalism: cooperation spills over from one sector to others", why:"Neofunctionalism explains regional integration, not the spread of human rights norms."}
     ]}
    ],
    apply:{intro:"Read human rights texts and records directly. They are free and need no account.", tasks:[
@@ -800,9 +800,9 @@ ICA.addUnit({
       "”"
     ]},
     {id:"e2u7-l5-x7", type:"mcq", q:"The UN’s 2025 report found that 35% of the 139 assessable SDG targets were on track or making moderate progress, and 18% had regressed. Which conclusion does that support?", options:[
-      {t:"About a third of the assessable targets are progressing well enough; most are not", ok:true, why:"Correct. 35% on track or moderate leaves 65% with marginal progress, stagnation or regression."},
+      {t:"About a third are progressing well enough; most are not", ok:true, why:"Correct. 35% on track or moderate leaves 65% with marginal progress, stagnation or regression."},
       {t:"35% of the world’s people have reached the goals", why:"The figures are about targets, not people."},
-      {t:"All 169 targets were measured, and most have been met", why:"Only 139 of 169 could be assessed, and only 35% were on track or making moderate progress; 18% had gone backwards."},
+      {t:"All 169 targets were measured, and most of them have been met", why:"Only 139 of 169 could be assessed, and only 35% were on track or making moderate progress; 18% had gone backwards."},
       {t:"The SDGs have been abandoned", why:"Slow progress isn’t abandonment: the goals remain the agreed framework to 2030."}
     ]}
    ],
@@ -818,6 +818,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u7-q02","e2u7-q05","e2u7-q08","e2u7-q12","e2u7-q15","e2u7-q20","e2u7-q23","e2u7-q27","e2u7-q31","e2u7-q36","e2u7-q40","e2u7-q44"],
+  cpBank:[
+   {id:"e2u7-cp01", lesson:"e2u7-l3", level:1, q:"A former defence minister is accused of crimes against humanity. Her country’s courts are unwilling to investigate. Her country is a party to the Rome Statute. Which court could try her?", options:[
+     {t:"The International Court of Justice", why:"The ICJ hears cases between states only. It does not try individuals."},
+     {t:"The UN Security Council", why:"The Security Council is a political body, not a court. It can refer situations to the ICC but doesn’t hold trials."},
+     {t:"The International Criminal Court", ok:true, why:"Correct. The ICC tries individuals, including senior officials, for crimes against humanity. Because national courts are unwilling, complementarity allows it to act."},
+     {t:"The Human Rights Council", why:"The Human Rights Council is made up of states and reviews records. It cannot try or sentence anyone."}]},
+   {id:"e2u7-cp02", lesson:"e2u7-l5", level:1, q:"WTO member A cuts its tariff on rice from member B to 5%. A and B are not in a free trade area. Under the most-favoured-nation rule, what must A do?", options:[
+     {t:"Nothing more: the cut applies only to B", why:"That is exactly what the most-favoured-nation rule forbids. A lower tariff given to one member must be given to all."},
+     {t:"Offer the same 5% tariff on rice to all WTO members", ok:true, why:"Right. Non-discrimination means a lower tariff for one member goes to every member, with exceptions such as free trade areas."},
+     {t:"Raise its tariffs on all other goods from B to balance the cut", why:"The rule doesn’t require raising tariffs. It requires extending the lower tariff to everyone."},
+     {t:"Treat imported rice better than local rice", why:"National treatment means imports, once inside, are treated like local goods, not better. And the question is about the tariff itself."}]},
+   {id:"e2u7-cp03", lesson:"e2u7-l4", level:1, q:"A private group threatens to attack a journalist, and the police step in to stop them. Which of the state’s human rights duties is it carrying out?", options:[
+     {t:"Respect", why:"The duty to respect means the state itself must not violate rights. Here the threat comes from a private group."},
+     {t:"Fulfil", why:"The duty to fulfil means taking steps so people can enjoy rights, like building schools. Stopping an attack by others is a different duty."},
+     {t:"Complementarity", why:"Complementarity is the ICC’s rule of acting only when national courts won’t. It isn’t a human rights duty of states."},
+     {t:"Protect", ok:true, why:"Yes. The duty to protect means stopping others from violating people’s rights, as the police do here."}]},
+   {id:"e2u7-cp04", lesson:"e2u7-l1", level:2, q:"Four drafts go to the Security Council. Which vote result means the draft **fails**?", options:[
+     {t:"9 yes, 4 no from elected members, 2 abstentions", why:"This passes. It has the nine yes votes needed, and “no” votes from elected members are not vetoes."},
+     {t:"10 yes, no votes against, 5 abstentions including three permanent members", why:"This passes. Since the Council’s early years, a permanent member’s abstention has not been treated as a veto."},
+     {t:"14 yes and 1 no from an elected member", why:"This passes easily. Only a “no” from one of the five permanent members blocks a resolution; the Council doesn’t need unanimity."},
+     {t:"11 yes, 1 no from a permanent member, 3 abstentions", ok:true, why:"Correct. A substantive decision needs nine yes votes and no “no” from any permanent member. One permanent “no” is a veto, however many yes votes there are."}]},
+   {id:"e2u7-cp05", lesson:"e2u7-l2", level:2, q:"A historian argues that European governments stayed in charge throughout and pooled power only when it served their own national interests. Which explanation of European integration is this?", options:[
+     {t:"Neofunctionalism", why:"Neofunctionalists stress spillover: cooperation in one sector creates pressure in the next, sometimes beyond what governments planned."},
+     {t:"Intergovernmentalism", ok:true, why:"Right. Intergovernmentalists say governments remained in control and pooled sovereignty only when it suited their national interests."},
+     {t:"Structuralism", why:"Structuralism is an IPE view that the world economy favours rich core countries. It isn’t an explanation of why Europe integrated."},
+     {t:"The responsibility to protect", why:"R2P is about protecting people from mass atrocities. It has nothing to do with explaining European integration."}]},
+   {id:"e2u7-cp06", lesson:"e2u7-l3", level:2, q:"Many states sign a treaty banning a certain type of fishing net. Country Z never signs or joins it, and the rule has not become customary law. Is Z bound by the treaty?", options:[
+     {t:"Yes, because a treaty binds every state once enough states join", why:"A treaty binds only its parties. Entry into force makes it binding on those who joined, not on everyone."},
+     {t:"Yes, because any treaty adopted at the UN binds all members", why:"Being adopted at the UN doesn’t make a treaty bind non-parties. Consent is the starting point of international law."},
+     {t:"Only if the International Court of Justice orders it to be", why:"The ICJ applies the law; it can’t make a non-party a party. And it hears cases only with the states’ consent."},
+     {t:"No: a treaty binds only its parties, and Z has not consented", ok:true, why:"Correct. States are generally bound by rules they have accepted. A treaty binds its parties; only custom binds all states."}]},
+   {id:"e2u7-cp07", lesson:"e2u7-l4", level:2, q:"A rural community argues that a mining project violates its collective right to development. Which regional human rights treaty is distinctive in naming such **peoples’ rights**?", options:[
+     {t:"The African Charter on Human and Peoples’ Rights", ok:true, why:"Yes. Alongside individual rights, the African Charter includes peoples’ rights, such as self-determination and development, and individuals’ duties to family and community."},
+     {t:"The European Convention on Human Rights", why:"The European Convention focuses on individual civil and political rights, enforced by the Court in Strasbourg. Peoples’ rights are the African Charter’s distinctive feature."},
+     {t:"The ASEAN Human Rights Declaration", why:"ASEAN has a declaration and a commission, but no court, and peoples’ rights are not its distinctive feature."},
+     {t:"The American Convention on Human Rights", why:"The American Convention set up the Inter-American system, but the treaty known for naming peoples’ rights is the African Charter."}]},
+   {id:"e2u7-cp08", lesson:"e2u7-l5", level:2, q:"Invented figures. In Aldo, one worker-day makes 4 cheeses or 2 bikes. In Brin, one worker-day makes 1 cheese or 1 bike. Which statement about comparative advantage is correct?", options:[
+     {t:"Aldo has it in both goods, because it is more productive at both", why:"Being more productive at both is absolute advantage. Comparative advantage depends on opportunity cost, which differs between the goods."},
+     {t:"Aldo has it in bikes and Brin in cheese", why:"This is reversed. A bike costs Aldo 2 cheeses but costs Brin only 1, so Brin has the comparative advantage in bikes."},
+     {t:"Brin has it in bikes and Aldo in cheese", ok:true, why:"Correct. A bike costs Brin 1 cheese but Aldo 2, so Brin should make bikes. A cheese costs Aldo half a bike but Brin a whole one, so Aldo should make cheese."},
+     {t:"Neither: trade can’t help when one country is better at everything", why:"Ricardo’s point is the opposite: both can gain from trade even when one country is better at making everything."}]},
+   {id:"e2u7-cp09", lesson:"e2u7-l1", level:3, q:"Evidence of mass atrocities in a country grows. A draft Security Council resolution authorising force to protect civilians gets 12 yes votes, but one permanent member votes no. A minister says: “R2P lets us send troops anyway.” What is the best response?", options:[
+     {t:"The resolution passed with 12 votes, so force is authorised", why:"A “no” from a permanent member is a veto. The resolution failed, however many yes votes it had."},
+     {t:"R2P lets any state intervene by force once atrocities are proven", why:"R2P is a political commitment, not a new legal right to invade. Force still needs Security Council authorisation."},
+     {t:"After a veto, the General Assembly can order force that binds all members", why:"Under “Uniting for Peace” the Assembly can only recommend collective action. Its resolutions on such matters don’t bind states."},
+     {t:"The veto blocked the resolution; R2P doesn’t override the Charter, but diplomacy, sanctions and Assembly debate remain possible", ok:true, why:"Right. The vote failed because of the veto. R2P works within the Charter, and its third pillar also includes peaceful tools, not only force."}]},
+   {id:"e2u7-cp10", lesson:"e2u7-l2", level:3, q:"Which statement correctly links the African Union’s Constitutive Act and the responsibility to protect?", options:[
+     {t:"The AU copied R2P into its Act after world leaders endorsed it in 2005", why:"The order is reversed. The AU’s Constitutive Act was adopted in 2000, five years before the 2005 World Summit."},
+     {t:"The AU wrote a right to intervene over grave crimes into its treaty in 2000, before world leaders endorsed R2P in 2005", ok:true, why:"Correct. Article 4(h) allows the AU, by decision of its Assembly, to intervene over war crimes, genocide and crimes against humanity: a shift from non-interference to non-indifference."},
+     {t:"The AU Act keeps the OAU’s strict rule of non-interference, so it rejects R2P’s ideas", why:"The AU replaced the OAU partly to move away from strict non-interference after the tragedies of the 1990s."},
+     {t:"Article 4(h) lets any single member state invade a neighbour on its own decision", why:"Intervention under Article 4(h) needs a decision of the AU Assembly. It is not a right for one state acting alone."}]},
+   {id:"e2u7-cp11", lesson:"e2u7-l3", level:3, q:"Country P wins a WTO case showing that Country Q’s subsidies break the rules. Q does not change its policy, so P raises tariffs on some of Q’s goods, as the rules allow. What does this show about how international rules are enforced?", options:[
+     {t:"The WTO has its own police force that fines countries", why:"No international body has a police force. Enforcement depends on states themselves."},
+     {t:"Enforcement is decentralised: the wronged state itself takes permitted steps to push the other to comply", ok:true, why:"Right. In the WTO the winner may retaliate if the loser doesn’t comply, and in international law generally wronged states use countermeasures. There is no world police."},
+     {t:"The International Criminal Court will now prosecute Q’s trade minister", why:"The ICC tries individuals for genocide, crimes against humanity, war crimes and aggression, not trade disputes."},
+     {t:"P’s tariffs are illegal unless the Security Council authorises them", why:"The Security Council deals with threats to peace. WTO retaliation after a ruling is allowed under the trade rules themselves."}]},
+   {id:"e2u7-cp12", lesson:"e2u7-l5", level:3, q:"A small state notices that in the UN General Assembly its vote counts the same as the largest economy’s, but at the IMF its voice is tiny. What explains the difference?", options:[
+     {t:"The Assembly gives each sovereign state one vote; IMF votes follow financial contributions", ok:true, why:"Correct. The principle of sovereign equality gives every member one vote in the Assembly. At the IMF, voting power depends on each member’s financial contribution, so large contributors have far more say."},
+     {t:"Both bodies use one state, one vote; the small state is mistaken", why:"The IMF doesn’t use one state, one vote. Voting power there depends on each member’s financial contribution."},
+     {t:"In both bodies votes follow payments, so its UN budget share of 0.001% gives it a tiny Assembly vote", why:"UN budget shares follow ability to pay but don’t buy votes. In the Assembly every member has exactly one vote."},
+     {t:"The IMF gives the Security Council’s five permanent members a veto", why:"The P5 veto belongs to the Security Council only. At the IMF, voting power comes from financial contributions."}]}
+  ],
   codex:[
    {id:"united-nations", title:"The United Nations", aka:["UN","UN Charter","UN system"], tags:["international relations","international organisations"],
     summary:"The organisation of almost every state, founded in 1945 to keep the peace and foster cooperation, which works through six principal organs and a large family of agencies.",
@@ -1257,31 +1319,31 @@ ICA.addUnit({
      {t:"The Secretariat", why:"The Secretariat is the UN’s staff, not a body of member states."}
    ]},
    {id:"e2u7-q04", lesson:"e2u7-l1", level:2, q:"Kenji reads a headline: “UN demands ceasefire”. The article says the General Assembly passed the resolution by a large majority. What is the most accurate reading?", options:[
-     {t:"It is a recommendation that carries political weight but does not legally bind the states involved", ok:true, why:"Correct. On peace and security, Assembly resolutions are recommendations; only the Security Council can bind all members."},
+     {t:"A recommendation with political weight, not a legal order", ok:true, why:"Correct. It doesn’t legally bind the states involved. On peace and security, Assembly resolutions are recommendations; only the Security Council can bind all members."},
      {t:"The states involved are legally required to stop fighting immediately", why:"That would need a binding Security Council decision. The Assembly recommends."},
      {t:"UN troops will now enforce the ceasefire", why:"The Assembly cannot order enforcement, and the UN has no standing army of its own."},
      {t:"The resolution is meaningless because the Assembly has no power at all", why:"Assembly resolutions can matter a great deal politically and sometimes legally, as evidence of states’ views."}
    ]},
    {id:"e2u7-q05", lesson:"e2u7-l1", level:3, q:"Which explanation for giving the five permanent members a veto fits the history of the UN’s founding best?", options:[
-     {t:"The great powers of 1945 would only join an organisation that could not act against their vital interests, and the League had failed partly because major powers stayed out or left", ok:true, why:"Correct. The veto was a bargain to keep the strongest states inside, a point realists stress."},
-     {t:"The five were the only states that had paid their UN dues", why:"Budget payments have nothing to do with the veto; assessments don’t buy votes."},
+     {t:"The great powers would only join if it couldn’t act against them", ok:true, why:"Correct. The great powers of 1945 wanted protection for their vital interests, and the League had failed partly because major powers stayed out or left. The veto was a bargain to keep the strongest states inside, a point realists stress."},
+     {t:"The five were the only states that had paid their UN dues in full", why:"Budget payments have nothing to do with the veto; assessments don’t buy votes."},
      {t:"The five were chosen by a vote of all the world’s peoples", why:"There was no such vote; the five were the main Allied powers of the Second World War."},
      {t:"The veto was added in 1965 when the Council was enlarged", why:"The veto was in the Charter from 1945; the 1965 change only added elected seats."}
    ]},
    {id:"e2u7-q06", lesson:"e2u7-l1", level:1, q:"What happened to the Trusteeship Council?", options:[
-     {t:"It suspended its work in 1994 after Palau, the last trust territory, became independent", ok:true, why:"Correct. Its job of supervising territories on the way to self-rule was finished."},
+     {t:"It suspended work in 1994, its job done", ok:true, why:"Correct. Palau, the last trust territory, became independent in 1994. Its job of supervising territories on the way to self-rule was finished."},
      {t:"It became the Human Rights Council", why:"The Human Rights Council replaced the Commission on Human Rights in 2006."},
      {t:"It merged with the Security Council in 1965", why:"The 1965 change enlarged the Security Council; it didn’t merge any organs."},
      {t:"It still governs about a dozen territories", why:"No trust territories remain."}
    ]},
    {id:"e2u7-q07", lesson:"e2u7-l1", level:1, q:"Which statement about the UN’s specialized agencies, such as WHO and the ILO, is accurate?", options:[
-     {t:"They are separate organisations with their own members, budgets and governing bodies, linked to the UN by agreements", ok:true, why:"Correct. That is what makes them “specialized agencies” rather than parts of the Secretariat."},
+     {t:"They are separate bodies linked to the UN by agreements", ok:true, why:"Correct. They have their own members, budgets and governing bodies. That is what makes them “specialized agencies” rather than parts of the Secretariat."},
      {t:"They are departments of the Security Council", why:"They are independent organisations, not parts of the Council."},
      {t:"All of them were created after 1945", why:"Some are older: the ITU dates from 1865, the UPU from 1874 and the ILO from 1919."},
-     {t:"They can impose binding sanctions on states", why:"Binding sanctions on peace and security come from the Security Council."}
+     {t:"They can impose binding sanctions on states that break rules", why:"Binding sanctions on peace and security come from the Security Council."}
    ]},
    {id:"e2u7-q08", lesson:"e2u7-l1", level:3, q:"Fatima argues that adding new permanent seats to the Security Council will be very hard. Which fact supports her argument most directly?", options:[
-     {t:"A Charter amendment must be ratified by two-thirds of members, including all five permanent members", ok:true, why:"Correct. Under Article 108 each of the five can block any amendment, including one that changes the Council."},
+     {t:"Amendments need ratification by all five permanent members", ok:true, why:"Correct. A Charter amendment must be ratified by two-thirds of members, including all five. Under Article 108 each of the five can block any amendment, including one that changes the Council."},
      {t:"The General Assembly has 193 members", why:"Size alone doesn’t explain the difficulty; the ratification rule does."},
      {t:"The Secretary-General is appointed for five-year terms", why:"The Secretary-General’s term has nothing to do with Charter amendments."},
      {t:"The UN’s regular budget is shared by a scale of assessments", why:"Budget rules don’t govern Council reform."}
@@ -1294,14 +1356,14 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e2u7-q10", lesson:"e2u7-l2", level:1, q:"Which feature makes a regional organisation supranational?", options:[
-     {t:"Institutions above the member states that can make or enforce rules binding on them", ok:true, why:"Correct. Pooling sovereignty in shared institutions is what “supranational” means."},
-     {t:"Annual summits where leaders issue joint statements", why:"Summits keep decisions with governments: an intergovernmental feature."},
+     {t:"Institutions above the states that can make binding rules", ok:true, why:"Correct. These institutions make or enforce rules binding on members. Pooling sovereignty in shared institutions is what “supranational” means."},
+     {t:"Annual summits where leaders issue joint statements and plans", why:"Summits keep decisions with governments: an intergovernmental feature."},
      {t:"Decisions taken only by consensus", why:"Consensus gives each member a veto, the opposite of supranational design."},
      {t:"A secretariat that organises meetings", why:"Almost every organisation has one; a secretariat without rule-making power isn’t supranational."}
    ]},
    {id:"e2u7-q11", lesson:"e2u7-l2", level:1, q:"How was ASEAN founded?", options:[
-     {t:"By the Bangkok Declaration of 1967, signed by Indonesia, Malaysia, the Philippines, Singapore and Thailand", ok:true, why:"Correct: 8 August 1967."},
-     {t:"By a treaty of all ten Southeast Asian states in 1999", why:"1999 is when ASEAN reached ten members, with Cambodia joining."},
+     {t:"By the Bangkok Declaration of 1967, signed by five states", ok:true, why:"Correct: 8 August 1967, signed by Indonesia, Malaysia, the Philippines, Singapore and Thailand."},
+     {t:"By a treaty of all ten Southeast Asian states, signed in 1999", why:"1999 is when ASEAN reached ten members, with Cambodia joining."},
      {t:"By the UN Security Council in 1945", why:"ASEAN was created by its member states, not by the UN."},
      {t:"As part of the European Union’s expansion", why:"ASEAN is a separate Southeast Asian organisation with no link to the EU’s membership."}
    ]},
@@ -1312,9 +1374,9 @@ ICA.addUnit({
      {t:"A military alliance", why:"Trade rules don’t create mutual defence commitments."}
    ]},
    {id:"e2u7-q13", lesson:"e2u7-l2", level:1, q:"What is distinctive about Article 4(h) of the African Union’s Constitutive Act?", options:[
-     {t:"It gives the Union a right to intervene in a member state over war crimes, genocide and crimes against humanity", ok:true, why:"Correct. Adopted in 2000, it marked a move from non-interference towards non-indifference."},
+     {t:"It lets the Union intervene in a member over mass atrocities", ok:true, why:"Correct. The grounds are war crimes, genocide and crimes against humanity. Adopted in 2000, it marked a move from non-interference towards non-indifference."},
      {t:"It creates a single African currency", why:"There is no single AU currency."},
-     {t:"It bans members from ever suspending another member", why:"In fact the AU suspends governments that take power unconstitutionally."},
+     {t:"It bans members from ever suspending another member government", why:"In fact the AU suspends governments that take power unconstitutionally."},
      {t:"It makes the AU part of the United Nations", why:"The AU is a separate regional organisation."}
    ]},
    {id:"e2u7-q14", lesson:"e2u7-l2", level:3, q:"A scholar argues: “Once European countries shared rules on coal and steel, they found they also needed shared rules on transport, competition and money.” Which theory is this?", options:[
@@ -1324,7 +1386,7 @@ ICA.addUnit({
      {t:"Structuralism: the core exploits the periphery", why:"That is about global inequality, not European integration."}
    ]},
    {id:"e2u7-q15", lesson:"e2u7-l2", level:3, q:"Priya writes: “ASEAN is a failure because it still has no parliament or court like the EU.” What is the strongest criticism of her argument?", options:[
-     {t:"It judges ASEAN by an EU yardstick, when ASEAN’s members deliberately chose a consensus design for their own reasons", ok:true, why:"Correct. Regional organisations should be judged against their own aims; treating the EU as the model is a Eurocentric assumption."},
+     {t:"It judges ASEAN by an EU yardstick it never chose", ok:true, why:"Correct. ASEAN’s members deliberately chose a consensus design for their own reasons. Regional organisations should be judged against their own aims; treating the EU as the model is a Eurocentric assumption."},
      {t:"ASEAN does have a directly elected parliament", why:"It doesn’t. The problem with the argument is its yardstick, not its facts."},
      {t:"The EU has no court either", why:"The EU has the Court of Justice of the EU."},
      {t:"ASEAN is part of the EU, so it shares its institutions", why:"ASEAN and the EU are separate organisations."}
@@ -1355,9 +1417,9 @@ ICA.addUnit({
      {t:"Ratification by all five permanent members", why:"Ratification belongs to treaties, not custom."}
    ]},
    {id:"e2u7-q20", lesson:"e2u7-l3", level:2, q:"Country M signed a treaty but its parliament has never ratified it. A news report says M “broke the treaty”. What is the most accurate response?", options:[
-     {t:"M is not bound by the treaty’s rules yet, though as a signatory it should not defeat the treaty’s object and purpose", ok:true, why:"Correct. Signature usually signals intent; ratification creates the binding obligation. Article 18 of the Vienna Convention adds a limited duty."},
+     {t:"M isn’t bound yet, but shouldn’t undermine the treaty", ok:true, why:"Correct. As a signatory it should not defeat the treaty’s object and purpose. Signature usually signals intent; ratification creates the binding obligation. Article 18 of the Vienna Convention adds a limited duty."},
      {t:"M is fully bound because it signed", why:"For most treaties, signature is subject to ratification."},
-     {t:"Treaties bind every state whether or not it signs", why:"Treaties bind only their parties. (Custom can bind all states.)"},
+     {t:"Treaties bind every state, whether or not it signs them", why:"Treaties bind only their parties. (Custom can bind all states.)"},
      {t:"M must be tried at the ICC", why:"The ICC tries individuals for international crimes, not states for treaty disputes."}
    ]},
    {id:"e2u7-q21", lesson:"e2u7-l3", level:1, q:"Which of these is a jus cogens norm that no treaty can override?", options:[
@@ -1385,7 +1447,7 @@ ICA.addUnit({
      {t:"The ICJ had to declare it valid", why:"Courts don’t approve treaties before they enter into force."}
    ]},
    {id:"e2u7-q25", lesson:"e2u7-l3", level:2, q:"Which statement best expresses a realist view of international law?", options:[
-     {t:"States follow it when it suits them, and powerful states break it when vital interests are at stake", ok:true, why:"Correct. Realists see law as reflecting the distribution of power."},
+     {t:"States follow it when it suits them; the powerful break it", ok:true, why:"Correct. Powerful states break it when vital interests are at stake. Realists see law as reflecting the distribution of power."},
      {t:"Legal rules reduce uncertainty, so states have good reasons to keep them", why:"That is the liberal institutionalist view."},
      {t:"Legal norms shape what states see as legitimate and who they think they are", why:"That is a constructivist view."},
      {t:"International law grew out of colonial encounters and is applied selectively", why:"That is the TWAIL and postcolonial critique."}
@@ -1397,20 +1459,20 @@ ICA.addUnit({
      {t:"An advisory opinion", why:"Advisory opinions come from the ICJ, at the request of UN bodies."}
    ]},
    {id:"e2u7-q27", lesson:"e2u7-l3", level:3, q:"Which claim would a scholar in the Third World Approaches to International Law (TWAIL) movement most likely make?", options:[
-     {t:"International law took shape during colonialism and is often enforced selectively, though newer states have also used it to win rights", ok:true, why:"Correct. TWAIL scholars such as Antony Anghie study these colonial roots and the uses of law by formerly colonised states."},
+     {t:"International law took shape under colonialism", ok:true, why:"Correct. It is often enforced selectively, though newer states have also used it to win rights. TWAIL scholars such as Antony Anghie study these colonial roots and the uses of law by formerly colonised states."},
      {t:"International law is a neutral science untouched by history", why:"TWAIL argues precisely the opposite."},
      {t:"Only great powers should make international law", why:"TWAIL criticises great-power dominance of law-making."},
      {t:"Customary law has no role today", why:"TWAIL doesn’t claim custom is irrelevant; it examines whose practice formed it."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"e2u7-q28", lesson:"e2u7-l4", level:1, q:"Who adopted the Universal Declaration of Human Rights, and when?", options:[
-     {t:"The UN General Assembly, in Paris, on 10 December 1948", ok:true, why:"Correct: 48 votes in favour, none against, 8 abstentions."},
+     {t:"The General Assembly, in Paris, on 10 December 1948", ok:true, why:"Correct: the UN General Assembly adopted it with 48 votes in favour, none against, 8 abstentions."},
      {t:"The Security Council, in New York, in 1945", why:"1945 is the Charter; the Security Council didn’t adopt the UDHR."},
-     {t:"The Council of Europe, in Strasbourg, in 1950", why:"In 1950 the Council of Europe adopted the European Convention on Human Rights."},
+     {t:"The Council of Europe, in Strasbourg, in November 1950", why:"In 1950 the Council of Europe adopted the European Convention on Human Rights."},
      {t:"The International Court of Justice, in 1966", why:"1966 is when the two Covenants were adopted; courts don’t adopt declarations."}
    ]},
    {id:"e2u7-q29", lesson:"e2u7-l4", level:1, q:"What is the legal status of the Universal Declaration of Human Rights?", options:[
-     {t:"A declaration, not a treaty; binding obligations come from later treaties and, for some rights, customary law", ok:true, why:"Correct. Its ideas were made binding in the Covenants and other treaties."},
+     {t:"A declaration, not a treaty", ok:true, why:"Correct. Binding obligations come from later treaties and, for some rights, customary law. Its ideas were made binding in the Covenants and other treaties."},
      {t:"A treaty ratified by every state", why:"It was never a treaty open to ratification."},
      {t:"A Security Council resolution binding all members", why:"It was adopted by the General Assembly."},
      {t:"A judgment of the ICJ", why:"The ICJ didn’t create it."}
@@ -1422,9 +1484,9 @@ ICA.addUnit({
      {t:"The World Bank’s country reports", why:"The World Bank reports on development, not a review of human rights records."}
    ]},
    {id:"e2u7-q31", lesson:"e2u7-l4", level:3, q:"Which statement describes the 1993 debate about universal human rights fairly?", options:[
-     {t:"The Bangkok Declaration stressed regional differences and non-interference, while the Vienna Declaration called all rights universal, indivisible and interdependent; scholars from many regions argue both sides", ok:true, why:"Correct. It presents both positions and who held them without taking sides."},
+     {t:"Bangkok stressed context and Vienna universality; both have support", ok:true, why:"Correct. The Bangkok Declaration stressed regional differences and non-interference, while the Vienna Declaration called all rights universal, indivisible and interdependent; scholars from many regions argue both sides. This presents both positions and who held them without taking sides."},
      {t:"Asian states rejected human rights entirely in 1993", why:"The Bangkok Declaration accepted universal rights while stressing context; this overstates it."},
-     {t:"The Vienna conference proved that rights are a Western idea", why:"The conference affirmed universality, and the claim ignores the many non-Western contributors."},
+     {t:"The Vienna conference proved that human rights are only a Western idea", why:"The conference affirmed universality, and the claim ignores the many non-Western contributors."},
      {t:"The debate ended in 1993 and nobody discusses it now", why:"It remains an active discussion in scholarship and diplomacy."}
    ]},
    {id:"e2u7-q32", lesson:"e2u7-l4", level:1, q:"Which four crimes does the responsibility to protect cover?", options:[
@@ -1434,14 +1496,14 @@ ICA.addUnit({
      {t:"Aggression, drug trafficking, cybercrime and fraud", why:"None of these is part of R2P’s scope."}
    ]},
    {id:"e2u7-q33", lesson:"e2u7-l4", level:2, q:"A government worried about violence before an election asks neighbouring states for help training police in protecting minorities, and they agree. Under R2P, which pillar is this?", options:[
-     {t:"Pillar two: international assistance to help a state protect its people", ok:true, why:"Correct. Help given at a state’s request is pillar two."},
+     {t:"Pillar two: helping a state protect its people", ok:true, why:"Correct. Help given at a state’s request is pillar two."},
      {t:"Pillar three: collective military action", why:"No collective action against the state is involved; it asked for help."},
      {t:"Pillar one alone: the state acting with no outside role", why:"The state’s own efforts are pillar one, but the neighbours’ help is pillar two."},
      {t:"It isn’t R2P, because only force counts", why:"Most R2P work is prevention and assistance, not force."}
    ]},
    {id:"e2u7-q34", lesson:"e2u7-l4", level:3, q:"Why is Libya in 2011 a turning point in debates about R2P?", options:[
-     {t:"The Council authorised measures to protect civilians, but critics argued the operation went on to change the regime, which made several states wary of later R2P mandates", ok:true, why:"Correct. Resolution 1973 passed with five abstentions, and the debate about how it was carried out still shapes R2P discussions."},
-     {t:"It was the first time R2P was used without any Council vote", why:"Resolution 1973 was a Council decision."},
+     {t:"Critics said a civilian-protection mandate became regime change", ok:true, why:"Correct. The Council authorised measures to protect civilians, but critics argued the operation went on to change the regime, which made several states wary of later R2P mandates. Resolution 1973 passed with five abstentions, and the debate about how it was carried out still shapes R2P discussions."},
+     {t:"It was the first time R2P was used without any Security Council vote", why:"Resolution 1973 was a Council decision."},
      {t:"All five permanent members voted against it", why:"No permanent member voted against; China and Russia abstained."},
      {t:"It ended all debate about R2P", why:"It intensified the debate."}
    ]},
@@ -1452,14 +1514,14 @@ ICA.addUnit({
      {t:"Africa", why:"Africa has the African Court on Human and Peoples’ Rights in Arusha."}
    ]},
    {id:"e2u7-q36", lesson:"e2u7-l4", level:3, q:"Mei reads a blog claiming “NATO used the responsibility to protect to justify bombing Kosovo in 1999.” What is wrong with this?", options:[
-     {t:"R2P did not exist yet: the commission’s report came in 2001 and leaders endorsed R2P in 2005; the Kosovo debate helped inspire it", ok:true, why:"Correct. The controversy over action without Council authorisation was one reason the R2P idea was developed."},
+     {t:"R2P did not exist yet; it was endorsed in 2005", ok:true, why:"Correct. The commission’s report came in 2001 and leaders endorsed R2P in 2005; the Kosovo debate helped inspire it. The controversy over action without Council authorisation was one reason the R2P idea was developed."},
      {t:"Nothing: R2P was agreed in 1945", why:"R2P dates from 2001–2005, not the Charter."},
      {t:"Kosovo was authorised by the Security Council under R2P", why:"There was no Council authorisation, which is why the action was so debated."},
      {t:"NATO is part of the UN, so it didn’t need justification", why:"NATO is a separate alliance, and any use of force needs a legal basis."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e2u7-q37", lesson:"e2u7-l5", level:1, q:"What does comparative advantage depend on?", options:[
-     {t:"Which producer has the lower opportunity cost of making a good", ok:true, why:"Correct. Even a less productive country can have a comparative advantage."},
+     {t:"Which producer has the lower opportunity cost", ok:true, why:"Correct. Even a less productive country can have a comparative advantage."},
      {t:"Which producer makes more of the good per worker", why:"That is absolute advantage."},
      {t:"Which country has the larger army", why:"Military power doesn’t define comparative advantage."},
      {t:"Which country has more WTO votes", why:"WTO decisions are by consensus; votes don’t define comparative advantage."}
@@ -1471,7 +1533,7 @@ ICA.addUnit({
      {t:"US$10", why:"10 is the rate in per cent, not the amount."}
    ]},
    {id:"e2u7-q39", lesson:"e2u7-l5", level:1, q:"When did the World Trade Organization begin, and what did it grow out of?", options:[
-     {t:"1 January 1995, growing out of the GATT of 1947", ok:true, why:"Correct. The Uruguay Round of GATT talks created the WTO."},
+     {t:"1995, growing out of the GATT", ok:true, why:"Correct. It began on 1 January 1995, growing out of the GATT of 1947. The Uruguay Round of GATT talks created the WTO."},
      {t:"1944, at the Bretton Woods conference", why:"Bretton Woods created the IMF and the World Bank."},
      {t:"1957, with the Treaties of Rome", why:"The Treaties of Rome created the European Economic Community."},
      {t:"2015, with the SDGs", why:"The SDGs are development goals, not the WTO."}
@@ -1495,7 +1557,7 @@ ICA.addUnit({
      {t:"The Human Rights Council", why:"The Council deals with human rights, not loans."}
    ]},
    {id:"e2u7-q43", lesson:"e2u7-l5", level:1, q:"Which statement about the Sustainable Development Goals is accurate?", options:[
-     {t:"There are 17 goals and 169 targets for 2030, and they apply to every country", ok:true, why:"Correct. They were adopted by all UN members on 25 September 2015."},
+     {t:"There are 17 goals for every country", ok:true, why:"Correct. The 17 goals have 169 targets for 2030. They were adopted by all UN members on 25 September 2015."},
      {t:"There are 8 goals, for poor countries only", why:"That describes the Millennium Development Goals (2000–2015)."},
      {t:"They are a binding treaty enforced by the ICJ", why:"The SDGs are a political commitment adopted by the General Assembly, not a treaty."},
      {t:"They were achieved in 2015", why:"2015 is when they were adopted; their deadline is 2030."}
@@ -1507,7 +1569,7 @@ ICA.addUnit({
      {t:"2.5%, above the target", why:"The share is aid ÷ GNI: 2 ÷ 500 = 0.004, which is 0.4%, not 2.5%."}
    ]},
    {id:"e2u7-q45", lesson:"e2u7-l5", level:3, q:"The OECD reports that aid fell by 23.1% “in real terms” in 2025 (preliminary data). What does “in real terms” mean, and why does “preliminary” matter?", options:[
-     {t:"The figure is adjusted for price changes and exchange rates, and preliminary figures may be revised later", ok:true, why:"Correct. Real terms compare like with like over time; preliminary data are first estimates."},
+     {t:"It is adjusted for prices, and preliminary figures may change", ok:true, why:"Correct. The figure is adjusted for price changes and exchange rates. Real terms compare like with like over time; preliminary data are first estimates."},
      {t:"It counts only aid that really arrived, and preliminary means final", why:"“Real terms” is about adjusting for prices, and preliminary means not final."},
      {t:"It is the figure in US dollars of the day, with no adjustment", why:"That would be “nominal” or “current” terms."},
      {t:"It includes private charity, and preliminary means estimated by journalists", why:"ODA is government aid, and preliminary figures come from the OECD itself."}

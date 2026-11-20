@@ -113,9 +113,9 @@ ICA.addUnit({
       {t:"Paying a late fee by card", b:1, why:"Payments need a secure server-side payment service. Static files can’t process them, and GitHub says Pages sites shouldn’t be used for sensitive transactions."}
     ]},
     {id:"t2u5-l1-x2", type:"mcq", q:"Mei’s recipe site uses JavaScript to scale ingredient amounts when you change the number of servings. A friend says she’ll need a paid dynamic host for that. Is the friend right?", options:[
-      {t:"No: the JavaScript runs in the visitor’s browser, so a free static host can serve it", ok:true, why:"The host only sends the .js file; the calculation happens on the visitor’s device. Static hosting is enough."},
+      {t:"No: the JavaScript runs in the visitor’s browser", ok:true, why:"That means a free static host can serve it. The host only sends the .js file; the calculation happens on the visitor’s device. Static hosting is enough."},
       {t:"Yes: any JavaScript needs a dynamic host", why:"Server-side programs need a dynamic host. Browser JavaScript is just another file a static host sends."},
-      {t:"Yes: the numbers change, so the site is dynamic", why:"“Dynamic site” means the server builds pages. Here the page changes in the browser after it arrives."},
+      {t:"Yes: the numbers change, so the whole site is dynamic", why:"“Dynamic site” means the server builds pages. Here the page changes in the browser after it arrives."},
       {t:"No, but only if she removes the JavaScript", why:"There’s no need to remove it. Static hosts serve JavaScript files like any other file."}
     ]},
     {id:"t2u5-l1-x3", type:"match", q:"Match each word with its meaning.", pairs:[
@@ -285,8 +285,8 @@ ICA.addUnit({
       ["A red cross on the latest run in Actions","The deploy failed or timed out","Read the log; if it’s a GitHub-side error, re-run it or commit again."]
     ]},
     {id:"t2u5-l2-x5", type:"mcq", q:"Tomás dragged his whole `cafe-site` folder onto the upload page. His repository now has `cafe-site/index.html`, `cafe-site/style.css` and so on, and the site shows a 404. What’s the most direct fix through the website?", options:[
-      {t:"Upload the files that are inside `cafe-site` at the top level of the repository, then delete the `cafe-site` directory", ok:true, why:"That puts `index.html` at the top of the publishing source, which is where Pages looks. Deleting the extra folder keeps things tidy."},
-      {t:"Change the publishing folder to `/cafe-site`", why:"Pages only offers `/ (root)` or `/docs` as the folder."},
+      {t:"Re-upload the files at the top level of the repository", ok:true, why:"Upload the files that are inside `cafe-site` at the top level, then delete the `cafe-site` directory. That puts `index.html` at the top of the publishing source, which is where Pages looks. Deleting the extra folder keeps things tidy."},
+      {t:"Change the publishing folder in Settings to `/cafe-site`", why:"Pages only offers `/ (root)` or `/docs` as the folder."},
       {t:"Rename `index.html` to `Index.html`", why:"File names are case-sensitive and Pages looks for `index.html` exactly; this would make things worse."},
       {t:"Wait 24 hours for the 404 to clear", why:"Waiting won’t help: the file really is in the wrong place."}
     ]},
@@ -437,7 +437,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u5-l3-x1", type:"mcq", q:"Dmitri registered a domain two years ago for his photography portfolio. His card expired and he ignored the reminder emails. Last week the domain expired. What’s true now?", options:[
-      {t:"His site and email at that domain have stopped working or soon will, but for a generic domain he can very likely still renew or redeem it if he acts now", ok:true, why:"Registrars cut off an expired domain at some point before deleting it. For generic domains there’s usually time to renew after expiry, and ICANN describes a 30-day Redemption Grace Period before it’s released."},
+      {t:"His site and email stop, but he can likely still renew it", ok:true, why:"Registrars cut off an expired domain at some point before deleting it. For generic domains there’s usually time to renew after expiry, and ICANN describes a 30-day Redemption Grace Period before it’s released."},
       {t:"Nothing changes; once registered, a domain is his for ever", why:"Registration lasts for the period paid for. Without renewal, it lapses."},
       {t:"The domain is immediately registered by someone else", why:"Generic domains go through grace periods first, so he still has time to act now."},
       {t:"Only the email stops; the website keeps working for good", why:"Both depend on the domain’s DNS. When the registrar cuts off the lapsed domain, both stop."}
@@ -469,13 +469,13 @@ ICA.addUnit({
       {v:24, tol:0, why:"24 hours is GitHub’s general warning for DNS changes. This record’s own TTL gives a shorter limit."}
     ]},
     {id:"t2u5-l3-x6", type:"mcq", q:"Sione moved his club’s site from GitHub Pages to another host and deleted the old repository. He hasn’t touched the DNS: `www` still has a CNAME to his GitHub Pages address (`your-username.github.io`, standing for his username), and he never verified the domain. What’s the risk, and what should he do?", options:[
-      {t:"Someone else could claim the domain on GitHub and publish at his address; he should update the DNS records now (and verify domains in future)", ok:true, why:"A record pointing at GitHub with no site behind it is how takeovers happen. Updating the records for the new host closes the gap."},
+      {t:"A stranger could publish at his address; fix the DNS now", ok:true, why:"Someone else could claim the domain on GitHub. A record pointing at GitHub with no site behind it is how takeovers happen. Updating the records for the new host closes the gap, and verifying domains in future prevents it."},
       {t:"No risk: deleting the repository removed the domain everywhere", why:"Deleting the repository doesn’t change DNS. The record still sends visitors to GitHub."},
       {t:"The only risk is that the old site keeps showing", why:"The old site is gone; the danger is that a stranger’s site could appear at his address."},
       {t:"He should delete his GitHub account so the domain can’t be used", why:"That doesn’t touch the DNS record, which is the actual problem."}
     ]},
     {id:"t2u5-l3-x7", type:"mcq", q:"Fatima added `www.example.com` to her site ten minutes ago. The site loads, but **Enforce HTTPS** is greyed out. What’s the best next step?", options:[
-      {t:"Wait: the certificate may not be ready yet (GitHub says up to 24 hours for the option); if it stays stuck, remove and re-add the domain", ok:true, why:"The certificate is requested after the DNS check passes and takes time. Removing and re-adding restarts a stuck process."},
+      {t:"Wait: the certificate may not be ready yet", ok:true, why:"GitHub says it can take up to 24 hours for the option. The certificate is requested after the DNS check passes and takes time. If it stays stuck, removing and re-adding the domain restarts the process."},
       {t:"Buy a certificate and upload it to the repository", why:"GitHub Pages gets and renews a free Let’s Encrypt certificate itself; there’s nothing to upload."},
       {t:"Change every link on the site to `http://`", why:"That creates mixed content later. The fix is to wait for the certificate."},
       {t:"Delete the CNAME file in the repository", why:"That file tells Pages your domain. Deleting it breaks the domain setup."}
@@ -632,7 +632,7 @@ ICA.addUnit({
       {t:"A page title that doesn’t describe the page", b:1, why:"A tool can see a title exists; only a person can tell if it’s meaningful."}
     ]},
     {id:"t2u5-l4-x6", type:"mcq", q:"Ana runs PageSpeed Insights twice in a row on the same page and gets a Performance score of 84, then 88. What should she conclude?", options:[
-      {t:"Lab scores vary a little between runs; she should focus on the suggestions listed under the score", ok:true, why:"Simulated tests vary with conditions. The suggestions (such as oversized images) show what to fix."},
+      {t:"Lab scores vary a little between runs", ok:true, why:"She should focus on the suggestions listed under the score. Simulated tests vary with conditions. The suggestions (such as oversized images) show what to fix."},
       {t:"Her site got faster between the two runs", why:"She changed nothing; the difference comes from test conditions."},
       {t:"The tool is broken and can’t be trusted", why:"Small variation is expected and documented. The tool is still useful."},
       {t:"She must reach 100 before publishing", why:"90 or above counts as good. Perfect scores aren’t needed, and real visitors’ experience matters most."}
@@ -785,14 +785,14 @@ ICA.addUnit({
       {t:"The settings of his contact-form service", b:1, why:"The form service keeps its own settings and stored messages."}
     ]},
     {id:"t2u5-l5-x3", type:"mcq", q:"Dmitri committed a file containing an API key for a map service to his public repository. Ten minutes later he deleted the file in a new commit. Is he safe now?", options:[
-      {t:"No: the key is still in the history, so he should revoke it at the map service and create a new one", ok:true, why:"Anyone can open the earlier commit. A leaked key must be treated as stolen and replaced."},
+      {t:"No: the key is still in the history", ok:true, why:"Anyone can open the earlier commit. A leaked key must be treated as stolen: revoke it at the map service and create a new one."},
       {t:"Yes: deleting the file removes it from GitHub", why:"Deleting creates a new commit; the old version, with the key, is still in the history."},
       {t:"Yes, as long as the repository has few visitors", why:"Automated tools scan public repositories for keys constantly. Visitor numbers don’t matter."},
       {t:"He should make the repository private and keep the key", why:"On the free plan that would also stop Pages, and the key may already have been copied. Revoke it."}
     ]},
     {id:"t2u5-l5-x4", type:"mcq", q:"Ana wants to add a visitor-counting script to her choir’s site, which has visitors from several countries. Which statement is the most accurate?", options:[
-      {t:"Whether she needs consent depends on what the script stores or sends and on the laws that apply; in the EU, for example, analytics cookies generally need consent first", ok:true, why:"Rules differ by place and by what the tool does. The EU’s guidance names analytics cookies among those that need consent before being set."},
-      {t:"Every website everywhere must show a cookie banner", why:"Requirements depend on the law and on what the site does. A plain static site that sets no cookies may need no banner at all."},
+      {t:"It depends on what the script does and which laws apply", ok:true, why:"Rules differ by place and by what the tool stores or sends. In the EU, for example, the guidance names analytics cookies among those that need consent before being set."},
+      {t:"Every website everywhere must show a cookie banner by law", why:"Requirements depend on the law and on what the site does. A plain static site that sets no cookies may need no banner at all."},
       {t:"A cookie banner makes any tracking legal", why:"Where consent is required, cookies mustn’t be set until the visitor agrees, and withdrawing consent must be easy. A banner alone doesn’t do that."},
       {t:"Privacy laws only apply to big companies", why:"Many data-protection laws apply to any organisation or person running a site that handles personal data, with some exceptions that vary by country."}
     ]},
@@ -847,6 +847,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u5-q02","t2u5-q05","t2u5-q11","t2u5-q14","t2u5-q17","t2u5-q20","t2u5-q23","t2u5-q26","t2u5-q30","t2u5-q33","t2u5-q38","t2u5-q42"],
+  cpBank:[
+    {id:"t2u5-cp01", lesson:"t2u5-l1", level:1, q:"Ama has just deployed a new version of her club’s site. What’s the best habit right after every deploy?", options:[{t:"Nothing: if the upload worked, the live site must be right", why:"An upload can succeed while a path, link or capital letter is still wrong. Only the live site shows what visitors get."}, {t:"Check only the copy of the files on her own device", why:"Her own files may differ from what was uploaded. Visitors see the live address, so that’s the one to check."}, {t:"Open the live address on a phone and a computer", ok:true, why:"Deploying replaces the live site. Checking the real address straight away catches problems before visitors do."}, {t:"Delete the old files from her device", why:"Her own files are her working copy and a backup. Deleting them doesn’t check anything."}]},
+    {id:"t2u5-cp02", lesson:"t2u5-l1", level:2, q:"Rui has just registered `rui-bakes.example`, but nothing appears when he visits it. His site’s files are still only on his laptop. What’s missing?", options:[{t:"Nothing: he just needs to wait for the domain to start working", why:"Waiting won’t create a site. The name has nowhere to point until the files are on a host."}, {t:"A host for the files, and DNS pointing the name at it", ok:true, why:"A domain is only a name. The files need an always-on host, and DNS links the name to it."}, {t:"An HTTPS certificate for his laptop", why:"Certificates are for servers that answer visitors. His laptop isn’t one, and the files must be hosted first."}, {t:"A more expensive ending, such as `.com`", why:"Every ending works the same way. The missing pieces are hosting and DNS."}]},
+    {id:"t2u5-cp03", lesson:"t2u5-l2", level:1, q:"Sara wants to swap `images/team.jpg` on her GitHub Pages site for a newer photo, without changing any HTML. What should she do?", options:[{t:"Upload the new photo as `team.jpg` into `images`", ok:true, why:"Uploading a file with exactly the same name and path replaces it. The HTML still points to the same address, so the new photo shows."}, {t:"Upload it as `Team.jpg` at the top of the repository", why:"The capital T and the different folder make it a different file. The page would still show the old photo."}, {t:"Delete the repository and create a new one", why:"That’s far more work and throws away the history. Replacing one file is enough."}, {t:"Change the photo in her browser’s Inspector", why:"Inspector changes affect only her own copy until she reloads. Visitors would see nothing new."}]},
+    {id:"t2u5-cp04", lesson:"t2u5-l2", level:2, q:"Kai’s repository keeps a program’s code at the top level and its website in a folder called `docs`. What should he choose in **Settings → Pages**?", options:[{t:"Deploy from a branch: `main`, folder `/ (root)`", why:"Pages would then publish the top level, where there is only code and no `index.html`."}, {t:"Make the repository private first", why:"On GitHub’s free plan, a private repository can’t publish with Pages at all."}, {t:"Rename the `docs` folder to `index.html`", why:"`index.html` is a file name, not a folder. He needs the `/docs` publishing source."}, {t:"Deploy from a branch: `main`, folder `/docs`", ok:true, why:"`/docs` is the folder choice for a project that keeps its website beside other code."}]},
+    {id:"t2u5-cp05", lesson:"t2u5-l2", level:3, q:"Priya’s project site is at `your-username.github.io/portfolio/`, and every link and image uses a relative path. She moves the files to a repository named `your-username.github.io` and publishes it the same way. What happens?", options:[{t:"Every link breaks, because relative paths include the old repository name", why:"A relative path starts from the page’s own folder, so it never mentions the repository. The whole folder can move and the paths still match."}, {t:"She must add `/portfolio/` to the start of every path", why:"That folder is no longer part of the address, so those paths would break. Relative paths need no change at all."}, {t:"The site moves to `your-username.github.io/`, and every link still works", ok:true, why:"A repository named `your-username.github.io` is the user site, at the top of the domain. Relative paths work wherever the folder is published."}, {t:"The site stays at `/portfolio/`, because an address can’t change", why:"The repository’s name decides the address. A repository called `your-username.github.io` publishes the user site, at `/`."}]},
+    {id:"t2u5-cp06", lesson:"t2u5-l3", level:3, q:"Why does GitHub’s setup give the apex domain (`@`) four A records, but give `www` a single CNAME?", options:[{t:"DNS doesn’t allow a CNAME beside the apex’s other records", ok:true, why:"So the apex uses A (and optional AAAA) records with the host’s addresses, while `www` can be an alias for `your-username.github.io`."}, {t:"A records are faster, and the apex gets the most visitors", why:"Speed isn’t the reason. The apex simply can’t be a plain CNAME."}, {t:"`www` is less important, so it gets a cheaper record", why:"Records don’t have prices, and GitHub recommends setting up `www` as well."}, {t:"A CNAME only works for names that start with `www`", why:"A CNAME can be used for any subdomain. The restriction is only at the apex."}]},
+    {id:"t2u5-cp07", lesson:"t2u5-l3", level:3, q:"Ana changed her A records this morning. The lookup tool at `dns.google` already shows the new GitHub addresses, but her own phone still shows the old parked page. What does this tell her?", options:[{t:"Her records are wrong and must be typed in again at the registrar", why:"The lookup shows exactly the records she created. Retyping them would only start the wait again."}, {t:"DNS is done; her phone or network has a cached old answer", ok:true, why:"If a lookup tool shows the right records, the change is live. Old answers can be cached up to the TTL; a private window or mobile data helps her check."}, {t:"GitHub must be having an outage", why:"Nothing here points to GitHub. A cached answer explains why one device differs from the lookup tool."}, {t:"She must delete the TXT verification record", why:"The TXT record keeps the domain verified. It has nothing to do with which page her phone shows."}]},
+    {id:"t2u5-cp08", lesson:"t2u5-l4", level:2, q:"Omar’s page shows a photo at most 600 px wide. The original from his camera is 4000 px wide. Which width is the most sensible to save it at?", options:[{t:"4000 px, so it stays as sharp as possible", why:"Most of those pixels are never seen, but they are all downloaded. That slows the page, especially on phones."}, {t:"300 px, to make the file as small as possible", why:"That’s smaller than the size it’s shown at, so the photo would look blurry."}, {t:"8000 px, so it looks good on future screens", why:"Enlarging a photo adds no detail. It only makes a much bigger file."}, {t:"About 1200 px: at most twice the shown size", ok:true, why:"Resize to about the largest size the page shows. Very few people see any gain beyond twice that, even on sharp screens."}]},
+    {id:"t2u5-cp09", lesson:"t2u5-l4", level:2, q:"Ravi adds `<meta name=\"keywords\">` with 50 search words, hoping to appear higher in Google. What’s accurate?", options:[{t:"Google ignores that tag; clear titles and content help more", ok:true, why:"No trick guarantees a place in results. Specific titles, honest descriptions and the words people really search for help both people and search engines."}, {t:"It guarantees his site appears for those 50 words", why:"No tag guarantees a place in results, and Google ignores this one completely."}, {t:"It works, but only if he removes the meta description first", why:"The two don’t affect each other. Google ignores keywords, and it may use a good description for the snippet."}, {t:"He should copy the words into his `og:` tags too", why:"Open Graph tags build link previews in chat and social apps. They don’t change search results."}]},
+    {id:"t2u5-cp10", lesson:"t2u5-l4", level:1, q:"Tia’s site went live last week. PageSpeed Insights shows Lighthouse scores but says there is no field data. What does that mean?", options:[{t:"Her site is broken, so Google’s test can’t load the page", why:"Lighthouse scores show the page loaded in the test. Field data just needs real visits first."}, {t:"She has to pay for a Google account to see field data", why:"PageSpeed Insights is free. Field data appears once enough real visits are recorded."}, {t:"Normal: new sites have no data from real visits yet", ok:true, why:"Field data covers real visits over the previous 28 days. Lighthouse’s lab data is enough to start improving the page."}, {t:"Her site loads too fast for field data to measure it", why:"No site is too fast to measure. What’s missing is data from real visitors."}]},
+    {id:"t2u5-cp11", lesson:"t2u5-l5", level:2, q:"Yesterday Mei broke her `menu.html` with a bad edit on the GitHub website. How can she get yesterday’s version back without installing anything?", options:[{t:"Delete the repository and upload all her files again from her device", why:"That throws away the whole history and the Pages settings. One file can be restored from its History."}, {t:"Wait, because GitHub undoes bad edits after a day", why:"GitHub keeps every version but changes nothing by itself. She has to restore the file."}, {t:"Ask visitors to clear their browser cache", why:"The cache isn’t the problem: the live file itself is broken. It needs restoring and committing."}, {t:"Copy the old version from **History**, paste it in, and commit", ok:true, why:"Every commit is kept. Pasting the old contents and committing restores the page, and the history still records what happened."}]},
+    {id:"t2u5-cp12", lesson:"t2u5-l5", level:3, q:"Zoe’s static café site sets no cookies and has no analytics or forms. She adds a map from a map service to her contact page. Which sentence belongs in her privacy notice?", options:[{t:"Nothing is collected, because it’s a static site", why:"Adding things changes the picture. An embedded map sends visitors’ data to the map service, and the host also logs IP addresses."}, {t:"Loading the map sends visitors’ IP addresses to the map service", ok:true, why:"Embedded maps, videos and fonts from other servers make the visitor’s browser contact those companies, which receive data such as the IP address and the page."}, {t:"Only Zoe can see visitors’ data, since she owns the site", why:"Owning the site doesn’t keep the data with her. Each outside service the page loads from receives data too."}, {t:"The map can’t share anything, because her site sets no cookies", why:"Cookies are only one way. Embedded services can set their own cookies, and they receive data such as the IP address with every request."}]}
+  ],
   codex:[
    {id:"hosting-options", title:"Web hosting options", aka:["hosting","web host","free hosting","GitHub Pages","Netlify","Cloudflare Pages","shared hosting"], tags:["web","publishing"],
     summary:"Where a website’s files live: free static hosts, paid hosting for dynamic sites, and how to compare them by limits, rules and real costs.",
@@ -1351,9 +1365,9 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u5-q01", lesson:"t2u5-l1", level:1, q:"What is web hosting?", options:[
-     {t:"Renting space on an always-on server that stores your site and answers visitors", ok:true, why:"The host keeps your files on servers that are always connected and responds to every browser that asks."},
+     {t:"Renting space on an always-on server", ok:true, why:"The host stores your site on servers that are always connected and answers every browser that asks."},
      {t:"Buying a domain name", why:"A domain is only a name; it doesn’t store any files."},
-     {t:"Writing the HTML for a site", why:"That’s building the site. Hosting is where it lives once built."},
+     {t:"Writing the HTML and CSS for your site", why:"That’s building the site. Hosting is where it lives once built."},
      {t:"Installing a web browser", why:"Browsers are what visitors use; hosting is on the other side of the connection."}
    ]},
    {id:"t2u5-q02", lesson:"t2u5-l1", level:2, q:"Which of these features can a purely static site provide without any outside service?", options:[
@@ -1387,19 +1401,19 @@ ICA.addUnit({
      {t:"No host would ever do this", why:"Netlify’s pricing page describes exactly this behaviour."}
    ]},
    {id:"t2u5-q07", lesson:"t2u5-l1", level:2, q:"Why do many people choose static hosting for a personal site?", options:[
-     {t:"It’s often free, fast, and needs very little maintenance or security work", ok:true, why:"No server program of yours means less to update and less to attack."},
+     {t:"It’s often free, fast and low-maintenance", ok:true, why:"No server program of yours means little maintenance or security work: less to update and less to attack."},
      {t:"Static sites can’t use JavaScript, so they’re simpler", why:"Static sites can use JavaScript; it runs in the browser."},
      {t:"Search engines only list static sites", why:"Search engines list both kinds."},
      {t:"Static hosts include a free domain name of your own", why:"They give you a free address on their domain; your own domain is usually a separate yearly cost."}
    ]},
    {id:"t2u5-q08", lesson:"t2u5-l1", level:3, q:"Amara’s community garden site is static and on GitHub Pages. The group now wants volunteers to sign up for watering shifts on the site. What’s the simplest sensible approach?", options:[
-     {t:"Keep the static site and link to (or embed) a sign-up form from a form or scheduling service", ok:true, why:"A specialist service stores the sign-ups; the static site stays simple. Mention the service in a privacy note."},
+     {t:"Keep the static site and link to a form service", ok:true, why:"Link to (or embed) a sign-up form from a form or scheduling service. The specialist service stores the sign-ups; the static site stays simple. Mention the service in a privacy note."},
      {t:"Rebuild the whole site on a paid dynamic host", why:"Possible, but far more work and cost for one form."},
      {t:"Add JavaScript that saves sign-ups in the HTML file", why:"Browser JavaScript can’t change files on the host; every visitor would see only their own change, briefly."},
      {t:"Ask volunteers to edit the repository", why:"That would require GitHub accounts and write access for everyone: impractical and risky."}
    ]},
    {id:"t2u5-q09", lesson:"t2u5-l1", level:2, q:"Why is it easy to move a static site to a different host?", options:[
-     {t:"It’s just plain files, which any static host can serve", ok:true, why:"Upload the same files elsewhere and, with your own domain, update the DNS."},
+     {t:"It’s just files, which any static host can serve", ok:true, why:"Upload the same files elsewhere and, with your own domain, update the DNS."},
      {t:"Hosts copy each other’s sites automatically", why:"They don’t; you deploy to the new host yourself."},
      {t:"The domain name stores the files", why:"Domains store no files; they point to a host."},
      {t:"It isn’t easy: static sites are locked to their host", why:"Static files aren’t tied to any host, which is one of their strengths."}
@@ -1436,9 +1450,9 @@ ICA.addUnit({
      {t:"He must wait 24 hours for CSS to deploy", why:"CSS deploys with everything else; the path is the problem."}
    ]},
    {id:"t2u5-q15", lesson:"t2u5-l2", level:2, q:"On a phone, how can Hana put uploaded photos into an `images` folder through the GitHub website?", options:[
-     {t:"Create a file such as `images/notes.txt` to make the folder, open the folder, then use Add file → Upload files there", ok:true, why:"Typing a slash in a new file’s name creates a folder; uploads go into the folder you’re viewing."},
-     {t:"Drag the folder from the phone’s home screen", why:"Phones can’t drag folders into a browser page."},
-     {t:"Rename each photo to start with `images-`", why:"That changes the name, but doesn’t put the file in a folder; links to `images/…` would fail."},
+     {t:"Create `images/notes.txt` to make the folder, then upload there", ok:true, why:"Typing a slash in a new file’s name creates a folder. Then open the folder and use Add file → Upload files: uploads go into the folder you’re viewing."},
+     {t:"Drag the whole folder from the phone’s home screen onto the page", why:"Phones can’t drag folders into a browser page."},
+     {t:"Rename each photo to start with `images-` before uploading it", why:"That changes the name, but doesn’t put the file in a folder; links to `images/…` would fail."},
      {t:"It’s impossible without a computer", why:"It’s possible with the folder trick described in the lesson."}
    ]},
    {id:"t2u5-q16", lesson:"t2u5-l2", level:2, q:"Where can you watch a GitHub Pages deploy and read its log?", options:[
@@ -1448,7 +1462,7 @@ ICA.addUnit({
      {t:"Your email inbox only", why:"GitHub may email about failures, but the full log is in Actions."}
    ]},
    {id:"t2u5-q17", lesson:"t2u5-l2", level:3, q:"Lucía fixed a typo, the Actions run is green, but her phone still shows the old text. What should she try first?", options:[
-     {t:"Open the page in a private tab, or force a full reload, to skip the browser’s cached copy", ok:true, why:"A green run means the new version is live; the old text is almost certainly a cached copy."},
+     {t:"Open it in a private tab, or force a full reload", ok:true, why:"That skips the browser’s cached copy. A green run means the new version is live; the old text is almost certainly a cached copy."},
      {t:"Delete the repository and upload everything again", why:"Drastic and unnecessary: the deploy already worked."},
      {t:"Change the publishing source to `/docs`", why:"That would move the site’s source and probably cause a 404."},
      {t:"Wait a week", why:"Cached copies usually expire much sooner, and a private tab shows the new version at once."}
@@ -1479,20 +1493,20 @@ ICA.addUnit({
      {t:"The `www` subdomain", why:"`www` is written as `www`."}
    ]},
    {id:"t2u5-q22", lesson:"t2u5-l3", level:2, q:"Why does GitHub recommend verifying your custom domain?", options:[
-     {t:"So other GitHub users can’t publish their own Pages site at your domain", ok:true, why:"Verification restricts the domain and its immediate subdomains to your account’s repositories."},
+     {t:"So no one else can use your domain on GitHub", ok:true, why:"Without it, other GitHub users could publish their own Pages site at your domain. Verification restricts the domain and its immediate subdomains to your account’s repositories."},
      {t:"So your site loads faster", why:"Verification is about ownership, not speed."},
-     {t:"It’s required before you can buy the domain", why:"You buy the domain from a registrar; verification happens afterwards, on GitHub."},
+     {t:"It’s required before you’re allowed to buy the domain", why:"You buy the domain from a registrar; verification happens afterwards, on GitHub."},
      {t:"So the domain renews automatically", why:"Renewal is set at your registrar."}
    ]},
    {id:"t2u5-q23", lesson:"t2u5-l3", level:3, q:"Fatima deleted her old portfolio repository last year but left `www` pointing to her GitHub Pages address (`your-username.github.io`, standing for her username). Her domain was never verified. Today a stranger’s page appears at her address. What happened, and what should she do?", options:[
-     {t:"A domain takeover: someone added her domain to their repository. She should verify the domain on GitHub (which releases it to her) and fix or remove the DNS record", ok:true, why:"The leftover record sent visitors to GitHub, where no site claimed the name. Verifying a domain that another account is using (but hasn’t verified) releases it at once, and fixing DNS closes the gap."},
-     {t:"Her registrar sold the domain; she can’t do anything", why:"The domain is still hers; the problem is a dangling DNS record."},
+     {t:"A domain takeover: she should verify the domain and fix DNS", ok:true, why:"Someone added her domain to their repository. The leftover record sent visitors to GitHub, where no site claimed the name. Verifying a domain that another account is using (but hasn’t verified) releases it to her at once, and fixing or removing the DNS record closes the gap."},
+     {t:"Her registrar sold the domain on, and she can’t do anything about it", why:"The domain is still hers; the problem is a dangling DNS record."},
      {t:"Her browser cache is showing someone else’s site", why:"Caches store your own earlier visits; they don’t invent other people’s pages."},
      {t:"GitHub moved her site to a new owner after a year", why:"GitHub doesn’t transfer sites; the record pointed at GitHub with nothing of hers behind it."}
    ]},
    {id:"t2u5-q24", lesson:"t2u5-l3", level:2, q:"Ana set up her DNS an hour ago. Some friends see her new site; others still see the registrar’s parking page. What’s the likely reason?", options:[
-     {t:"Some resolvers still have the old answer cached for the record’s TTL", ok:true, why:"DNS changes reach people as cached answers expire; GitHub allows up to 24 hours."},
-     {t:"Her site is only visible in some countries", why:"GitHub Pages doesn’t restrict visitors by country."},
+     {t:"Some resolvers still have the old answer cached", ok:true, why:"Resolvers keep an answer for the record’s TTL. DNS changes reach people as cached answers expire; GitHub allows up to 24 hours."},
+     {t:"Her site is only visible in some countries for now", why:"GitHub Pages doesn’t restrict visitors by country."},
      {t:"Her friends need to install a certificate", why:"Visitors never install certificates for a site."},
      {t:"She needs a separate site for each friend", why:"Everyone reaches the same site once DNS has updated."}
    ]},
@@ -1503,13 +1517,13 @@ ICA.addUnit({
      {t:"Nobody: custom domains can’t use HTTPS on GitHub Pages", why:"All Pages sites, including correctly configured custom domains, support HTTPS."}
    ]},
    {id:"t2u5-q26", lesson:"t2u5-l3", level:3, q:"Sione’s site at his custom domain works over HTTPS, but the browser shows a warning on one page that loads a photo from `http://images.example.net/band.jpg`. What’s the fix?", options:[
-     {t:"Change the address to `https://` (or host the photo with the site)", ok:true, why:"An HTTP resource on an HTTPS page is mixed content; serving it over HTTPS removes the warning."},
-     {t:"Turn off Enforce HTTPS", why:"That weakens the whole site and doesn’t fix the mixed content."},
+     {t:"Change the address to `https://`", ok:true, why:"An HTTP resource on an HTTPS page is mixed content; serving it over HTTPS (or hosting the photo with the site) removes the warning."},
+     {t:"Turn off Enforce HTTPS for the whole site", why:"That weakens the whole site and doesn’t fix the mixed content."},
      {t:"Remove the custom domain", why:"The domain isn’t the problem; the one insecure image address is."},
      {t:"Add another A record", why:"DNS records don’t affect which addresses a page loads."}
    ]},
    {id:"t2u5-q27", lesson:"t2u5-l3", level:2, q:"Kenji’s domain will expire next month. What happens if he doesn’t renew it?", options:[
-     {t:"His website and email at that domain stop working, and after any grace periods the name can be released to others", ok:true, why:"Registration lasts only as long as it’s paid for. ICANN describes a 30-day Redemption Grace Period for generic domains before deletion."},
+     {t:"His site and email there stop working", ok:true, why:"Registration lasts only as long as it’s paid for, and after any grace periods the name can be released to others. ICANN describes a 30-day Redemption Grace Period for generic domains before deletion."},
      {t:"Nothing: domains are permanent once bought", why:"Domains are registered for a period and must be renewed."},
      {t:"GitHub renews it for him", why:"GitHub doesn’t sell or renew domains; the registrar does."},
      {t:"Only the HTTPS padlock disappears", why:"Without the domain, the site can’t be reached by that name at all."}
@@ -1528,20 +1542,20 @@ ICA.addUnit({
      {t:"A GIF animation", why:"Nothing needs animating; GIF files are also poorly compressed."}
    ]},
    {id:"t2u5-q30", lesson:"t2u5-l4", level:2, q:"Why give an `<img>` its `width` and `height` attributes?", options:[
-     {t:"So the browser reserves the right space before the image arrives, preventing the layout from jumping", ok:true, why:"That protects CLS (layout stability). CSS such as `max-width: 100%; height: auto;` still lets it shrink on phones."},
+     {t:"So the page doesn’t jump while the image loads", ok:true, why:"The browser reserves the right space before the image arrives. That protects CLS (layout stability). CSS such as `max-width: 100%; height: auto;` still lets it shrink on phones."},
      {t:"To make the file download faster", why:"The attributes don’t change the file; resizing and compressing it does."},
-     {t:"Because images without them never display", why:"They display, but the page may jump as they load."},
+     {t:"Because images without them never display on the page", why:"They display, but the page may jump as they load."},
      {t:"To stop search engines indexing the image", why:"These attributes have nothing to do with indexing."}
    ]},
    {id:"t2u5-q31", lesson:"t2u5-l4", level:2, q:"Where should `loading=\"lazy\"` be used?", options:[
-     {t:"On images further down the page, not on the main image at the top", ok:true, why:"Lazy loading delays images until the visitor scrolls near them; the first big image should load immediately."},
+     {t:"On images further down the page", ok:true, why:"Not on the main image at the top. Lazy loading delays images until the visitor scrolls near them; the first big image should load immediately."},
      {t:"On every image, including the main one", why:"Delaying the main image slows the main content appearing (LCP)."},
      {t:"Only on SVG files", why:"It works on any image; position on the page is what matters."},
      {t:"Nowhere: browsers ignore it", why:"Current browsers support native lazy loading."}
    ]},
    {id:"t2u5-q32", lesson:"t2u5-l4", level:1, q:"What does a meta description do?", options:[
-     {t:"Gives a short summary that search engines may show under your link", ok:true, why:"Google says it may use it when it describes the page better than text from the page."},
-     {t:"Guarantees a higher place in search results", why:"There’s no such guarantee."},
+     {t:"Gives a summary that search engines may show", ok:true, why:"A short summary may appear under your link. Google says it may use it when it describes the page better than text from the page."},
+     {t:"Guarantees your page a higher place in search results", why:"There’s no such guarantee."},
      {t:"Sets the text in the browser tab", why:"The `<title>` does that."},
      {t:"Lists keywords for Google to rank", why:"Google doesn’t use the keywords meta tag at all."}
    ]},
@@ -1558,8 +1572,8 @@ ICA.addUnit({
      {t:"`alt=\"Decorative image of a beautiful blue swirl\"`", why:"It adds words to listen to with no information."}
    ]},
    {id:"t2u5-q35", lesson:"t2u5-l4", level:3, q:"Hana’s site passes WAVE with no errors. Is it accessible?", options:[
-     {t:"Not necessarily: tools can’t judge things like whether alt text is accurate or focus order makes sense, so she should also test by hand", ok:true, why:"W3C warns a page could pass quick checks yet still have significant barriers."},
-     {t:"Yes: no errors means fully accessible", why:"Automated tools find only some problems."},
+     {t:"Not necessarily: she should also test by hand", ok:true, why:"Tools can’t judge things like whether alt text is accurate or focus order makes sense. W3C warns a page could pass quick checks yet still have significant barriers."},
+     {t:"Yes: no errors means it’s fully accessible to everyone", why:"Automated tools find only some problems."},
      {t:"No: WAVE results are always wrong", why:"WAVE is useful; it just can’t judge everything."},
      {t:"Only if the Lighthouse score is also 100", why:"Lighthouse has the same limits as other automated tools."}
    ]},
@@ -1577,7 +1591,7 @@ ICA.addUnit({
      {t:"HTML links only last until the next deploy", why:"Links last as long as the page they point to exists."}
    ]},
    {id:"t2u5-q38", lesson:"t2u5-l5", level:3, q:"Kenji accidentally committed his email password in a text file and deleted it in the next commit. What should he do now?", options:[
-     {t:"Change the email password straight away (and turn on two-step verification)", ok:true, why:"The old commit still contains it, and public repositories are scanned constantly. A changed password makes the leaked one useless."},
+     {t:"Change the email password straight away", ok:true, why:"Also turn on two-step verification. The old commit still contains it, and public repositories are scanned constantly. A changed password makes the leaked one useless."},
      {t:"Nothing: the file is deleted", why:"Deleting creates a new commit; the password remains in the history."},
      {t:"Rename the repository", why:"Renaming doesn’t remove anything from the history."},
      {t:"Make the repository private and keep the password", why:"It may already have been copied, and on the free plan Pages would stop. Change it."}
@@ -1589,19 +1603,19 @@ ICA.addUnit({
      {t:"The CNAME file created when you saved a custom domain", why:"When publishing from a branch, saving the domain commits that file."}
    ]},
    {id:"t2u5-q40", lesson:"t2u5-l5", level:2, q:"Why keep a downloaded ZIP of your repository somewhere else, when GitHub keeps all the history?", options:[
-     {t:"So you still have the site if you lose access to the account or the repository is deleted", ok:true, why:"One copy in one account is a single point of failure; a second copy elsewhere follows good backup practice."},
+     {t:"In case the account or repository is lost", ok:true, why:"If you lose access to the account or the repository is deleted, you still have the site. One copy in one account is a single point of failure; a second copy elsewhere follows good backup practice."},
      {t:"Because GitHub deletes history after a year", why:"GitHub keeps history; the risk is losing access to it."},
      {t:"Because the ZIP makes the site load faster", why:"A local copy doesn’t affect the live site."},
      {t:"It’s required before every deploy", why:"It’s a backup habit, not a deploy step."}
    ]},
    {id:"t2u5-q41", lesson:"t2u5-l5", level:2, q:"What is a honeypot field in a contact form?", options:[
-     {t:"A field hidden from people that bots tend to fill in, so those submissions can be rejected", ok:true, why:"Real visitors never see it, so a filled-in honeypot signals a bot."},
-     {t:"A field that asks for the visitor’s password", why:"Contact forms should never ask for passwords."},
+     {t:"A hidden field that only bots tend to fill in", ok:true, why:"Real visitors never see it, so a filled-in honeypot signals a bot, and those submissions can be rejected."},
+     {t:"A field that asks for the visitor’s password to stop spam", why:"Contact forms should never ask for passwords."},
      {t:"A field that stores cookies", why:"Form fields don’t store cookies."},
      {t:"A box that offers visitors a prize", why:"It’s a spam trap, not a reward."}
    ]},
    {id:"t2u5-q42", lesson:"t2u5-l5", level:3, q:"Lucía’s café site (visitors mostly in the EU) uses no cookies. She wants to add an analytics script that sets cookies to track visits. What does the EU’s official guidance indicate?", options:[
-     {t:"She needs visitors’ consent before those analytics cookies are set", ok:true, why:"The EU’s Your Europe guidance lists tracking cookies used for analytics among those needing consent first, and says withdrawing consent must be as easy as giving it."},
+     {t:"She needs consent before those cookies are set", ok:true, why:"The EU’s Your Europe guidance lists tracking cookies used for analytics among those needing consent first, and says withdrawing consent must be as easy as giving it."},
      {t:"Nothing changes, because analytics is always exempt", why:"Only strictly necessary cookies are exempt; tracking for analytics isn’t."},
      {t:"Adding a banner that only says “we use cookies” is enough", why:"Where consent is needed, the cookies must wait until the visitor agrees; a notice alone doesn’t do that."},
      {t:"Cookie rules only apply to sites that sell things", why:"They apply to storing information on visitors’ devices, whatever the site does."}
@@ -1619,7 +1633,7 @@ ICA.addUnit({
      {t:"Delete the Actions tab", why:"The Actions tab is where she’ll find the answer."}
    ]},
    {id:"t2u5-q45", lesson:"t2u5-l5", level:2, q:"Which habit best protects a club’s site when the volunteer who built it moves on?", options:[
-     {t:"A second trusted owner, plus a private note of the domain, DNS and service logins and renewal dates", ok:true, why:"The site depends on accounts and settings outside the repository; sharing ownership and documenting them keeps it running."},
+     {t:"A second trusted owner and private notes on the setup", ok:true, why:"The site depends on accounts and settings outside the repository. Sharing ownership, and keeping a private note of the domain, DNS and service logins and renewal dates, keeps it running."},
      {t:"Keeping all passwords in a file in the public repository", why:"Never put passwords in a repository, public or not."},
      {t:"Turning off two-step verification so others can log in", why:"That weakens security; add other owners instead of sharing one login."},
      {t:"Deleting the site so it can’t go out of date", why:"That throws away the club’s work rather than handing it over."}

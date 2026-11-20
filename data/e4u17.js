@@ -1,6 +1,6 @@
-/* International Studies · Unit 17 · The SDGs and the politics of global development */
+/* International Studies · Unit 18 · The SDGs and the politics of global development */
 ICA.addUnit({
-  id:"e4u17", track:"e4", n:17, title:"The SDGs and the politics of global development", icon:"🎯",
+  id:"e4u17", track:"e4", n:18, title:"The SDGs and the politics of global development", icon:"🎯",
   blurb:"The last unit of the sustainable development cluster: how the world moved from the Millennium Development Goals to the 2030 Agenda and who shaped it; how progress is measured, reviewed and localised, and what the latest UN and independent reports say; gender and development from WID to GAD, empowerment, unpaid care and the microfinance evidence; food, water and health as development; and how development work and research are actually done, from logframes and evaluation to participation, ethics and the policy brief.",
   goals:[
     "Explain how the MDGs were made, how the SDGs were negotiated, what changed between them, and the main critiques of global goal-setting",
@@ -42,7 +42,7 @@ ICA.addUnit({
       "Three debates surround that record:",
       {list:[
         "**Attribution.** Much of the fall in poverty came from growth in China and India, driven by policies that owed little to the MDGs. Did the goals cause progress, or count it? (This is the [[attribution-problem|attribution problem]] from Unit 8.)",
-        "**Fairness.** William Easterly (“How the Millennium Development Goals are Unfair to Africa”, *World Development*, 2009) argued that targets framed as proportional cuts from 1990 made African countries, starting from lower levels, look like failures even when they improved fast.",
+        "**Fairness.** William Easterly (“How the Millennium Development Goals are Unfair to Africa”, *World Development*, 2009) argued that targets framed as proportional cuts from 1990 made many African countries, starting from worse positions (higher child mortality, deeper poverty), look like failures even when they improved fast.",
         "**Narrowness.** Critics, including many feminist scholars, said the goals left out inequality, human rights, jobs and governance, and treated development as something rich countries fund for poor ones."
       ]}
     ]},
@@ -63,14 +63,14 @@ ICA.addUnit({
         ["Inequality","Averages; no inequality goal","Goal 10 on inequality and the pledge to [[leave-no-one-behind|leave no one behind]]"]
       ]},
       "The preamble groups the agenda under [[five-ps|five Ps]]: people, planet, prosperity, peace and partnership. It calls the goals “integrated and indivisible”: progress on one depends on others, a feature called [[sdg-integration|integration]]. Måns Nilsson, Dave Griggs and Martin Visbeck (*Nature*, 2016) proposed a seven-point scale to map such links, from **+3 “indivisible”** through **0 “consistent”** to **−3 “cancelling”**.",
-      "The 2015 agenda came in a package: the Sendai Framework for disaster risk reduction (March), the Addis Ababa Action Agenda on financing (July; see {{financing-for-development}} in Unit 15) and the Paris Agreement (December; see {{unfccc-regime}} in Unit 16). Fukuda-Parr (2016) argued that the shift was not just bigger but political: from an aid agenda that donors steered to a universal agenda that developing countries had shaped."
+      "The 2015 agenda came in a package: the Sendai Framework for disaster risk reduction (March), the Addis Ababa Action Agenda on financing (July; see {{financing-for-development}} in Unit 16) and the Paris Agreement (December; see {{unfccc-regime}} in Unit 17). Fukuda-Parr (2016) argued that the shift was not just bigger but political: from an aid agenda that donors steered to a universal agenda that developing countries had shaped."
     ]},
     {h:"Too many goals? The critiques", body:[
       "The SDGs drew criticism from several directions, and each critic wanted something different:",
       {list:[
         "**Too many to prioritise.** *The Economist* called them “The 169 commandments” (28 March 2015). The Copenhagen Consensus Center, led by Bjørn Lomborg, used cost–benefit studies to argue for a short list of the best-value targets.",
         "**Hard to measure.** Many targets lacked agreed indicators or data in 2015 (Lesson 2), and vague wording such as “substantially reduce” makes success hard to judge.",
-        "**Growth versus ecology.** Target 8.1 asks for at least 7% annual GDP growth in the least developed countries, while other goals ask for less resource use. Jason Hickel (“The contradiction of the sustainable development goals”, *Sustainable Development*, 2019) argued that the goals cannot all be met without abandoning growth as a target; supporters of [[green-growth|green growth]] reply that growth can be decoupled from environmental damage. Unit 16 covers the [[degrowth]] debate.",
+        "**Growth versus ecology.** Target 8.1 asks for at least 7% annual GDP growth in the least developed countries, while other goals ask for less resource use. Jason Hickel (“The contradiction of the sustainable development goals”, *Sustainable Development*, 2019) argued that the goals cannot all be met without abandoning growth as a target; supporters of [[green-growth|green growth]] reply that growth can be decoupled from environmental damage. Unit 17 covers the [[degrowth]] debate.",
         "**Voluntary and easy to claim.** Nothing obliges anyone to act, and firms and governments can attach SDG logos to business as usual, sometimes called [[sdg-washing|SDG-washing]]."
       ]},
       "Defenders answer that the length is the price of legitimacy: a list that 193 states wrote together is owned by them in a way the MDGs never were, and integration is the point, since poverty, climate and institutions really are linked. A good seminar answer separates the critiques: some attack the **content** (growth), some the **form** (too many, vague), some the **politics** (who decides, who pays).",
@@ -136,9 +136,9 @@ ICA.addUnit({
       {t:"Goal 16 on peaceful societies and institutions was one of the most contested.", flag:false, why:"Correct: some governments argued it did not belong in a development agenda."}
     ]},
     {id:"e4u17-l1-x7", type:"mcq", q:"Tomás argues in a seminar: “The SDGs failed because there are too many of them.” Which reply is the most precise?", options:[
-      {t:"He mixes a critique of form with a claim about outcomes: he would need to show that the number of targets, rather than money, conflict or growth, caused slow progress", ok:true, why:"Right. The length critique is about prioritisation; showing it caused poor results is a separate causal claim that needs evidence."},
+      {t:"He must show that the number of targets, not other factors, slowed progress", ok:true, why:"Right. He mixes a critique of form with a claim about outcomes: he would need to show that the number of targets, rather than money, conflict or growth, caused slow progress. That causal claim needs evidence."},
       {t:"He is wrong, because the SDGs are on track", why:"The UN’s own 2026 report says most targets are off track (Lesson 2); the issue is whether the number of goals explains it."},
-      {t:"He is right, because the MDGs had eight goals and all were met", why:"Not all MDG targets were met, and their record is itself debated."},
+      {t:"He is right, because the MDGs had only eight goals and all of them were met", why:"Not all MDG targets were met, and their record is itself debated."},
       {t:"The number of goals is irrelevant because the goals are integrated", why:"Integration is a reason to have many goals, but prioritisation is still a fair question."}
     ]}
    ],
@@ -196,7 +196,7 @@ ICA.addUnit({
         ["Unit","Each target, worldwide","Each country, through an index"],
         ["Headline","Of 139 assessable targets: 15% on track or met, 21% moderate, 32% marginal, 17% stagnant, 15% regressed","Only 16% of targets projected to be met by 2030; Finland, Sweden and Denmark top the index"]
       ]},
-      "The UN report adds figures that show the stakes: about **826 million people** (10% of the world) still in extreme poverty in 2026 at the [[international-poverty-line|$3.00-a-day line]] (see Unit 14); **645 million** chronically undernourished in 2025; and official aid that fell by a record **23.1% in 2025**, to $174.3 billion or 0.26% of donors’ combined national income, with a further fall projected for 2026.",
+      "The UN report adds figures that show the stakes: about **826 million people** (10% of the world) still in extreme poverty in 2026 at the [[international-poverty-line|$3.00-a-day line]] (see Unit 15); **645 million** chronically undernourished in 2025; and official aid that fell by a record **23.1% in 2025**, to $174.3 billion or 0.26% of donors’ combined national income, with a further fall projected for 2026.",
       "The SDSN report finds that East and South Asia have progressed fastest since 2015, ranks 169 countries, and adds an index of support for UN-based multilateralism, which in 2026 ranked Barbados first and the United States last. Any such index reflects its authors’ choice of what counts as support, so cite it as their judgement, not a neutral fact."
     ]},
     {h:"The data gap", body:[
@@ -224,8 +224,8 @@ ICA.addUnit({
       "Supporters say local ownership makes the goals concrete. Critics warn of rebranding existing plans, of cherry-picking easy goals, and of a gap between well-resourced cities and the many municipalities with no statisticians at all."
     ]},
     {h:"Worked example: reading one headline number", body:[
-      {ex:"“About 826 million people still live in extreme poverty.” (UN, *SDG Report 2026*)\n\n• **Which line?** Under $3.00 a day in 2021 purchasing-power-parity dollars, the World Bank line since June 2025 (Unit 14). An older line gives a different number.\n• **Which year?** 2026, so the UN calls it an estimate: few countries have survey data that recent, so the figure is projected forward from older surveys.\n• **Which unit?** The world. Regional and national figures can move in the opposite direction.\n• **Who measured it?** The World Bank, as custodian agency, from national household surveys of varying age and quality.\n• **What does it hide?** Who is poor within countries, by gender, age, disability or location.", label:"Worked example"},
-      "Asking these five questions before quoting any SDG figure is the quickest way to sound like a graduate student rather than a press release.",
+      {ex:"“About 826 million people still live in extreme poverty.” (UN, *SDG Report 2026*)\n\n• **Which line?** Under $3.00 a day in 2021 purchasing-power-parity dollars, the World Bank line since June 2025 (Unit 15). An older line gives a different number.\n• **Which year?** 2026, so the UN calls it an estimate: few countries have survey data that recent, so the figure is projected forward from older surveys.\n• **Which unit?** The world. Regional and national figures can move in the opposite direction.\n• **Who measured it?** The World Bank, as custodian agency, from national household surveys of varying age and quality.\n• **What does it hide?** Who is poor within countries, by gender, age, disability or location.", label:"Worked example"},
+      "Asking these five questions before quoting any SDG figure is the quickest way to sound like a graduate student rather than a press release. When the figure is a trend, add one more: is the change in percent or percentage points, and over how many years? {{growth-arithmetic}} (Unit 14) shows the calculations.",
       {terms:["sdg-target","sdg-indicator","iaeg-sdgs","custodian-agency","indicator-tier","sdg-data-gap","data-disaggregation","goodharts-law","sdg-index","international-spillovers","hlpf","voluntary-national-review","sdg-localisation","voluntary-local-review"]}
     ]}
    ],
@@ -243,7 +243,7 @@ ICA.addUnit({
       {v:61, tol:1, why:"That would be 36% of 169, all targets. The UN assessed only the 139 with enough trend data."}
     ], hint2:"Add the two percentages, then multiply by 139."},
     {id:"e4u17-l2-x3", type:"mcq", q:"A newspaper says: “The UN says 15% of SDG targets are on track; a think tank says 16%. The two reports confirm each other.” What is the best correction?", options:[
-      {t:"The numbers look similar but measure different things: the UN assesses global trends target by target; the SDSN projects country-level progress with its own index, so similar figures are partly coincidence", ok:true, why:"Right. Always check the unit (world or country), the method and the denominator before comparing figures."},
+      {t:"They measure different things in different ways", ok:true, why:"Right. The UN assesses global trends target by target; the SDSN projects country-level progress with its own index, so similar figures are partly coincidence. Always check the unit (world or country), the method and the denominator before comparing figures."},
       {t:"The SDSN report is unreliable because it is not from the UN", why:"Independence is not unreliability; the point is that the methods differ, not that one is wrong."},
       {t:"The UN figure is 36%, so the newspaper is wrong", why:"36% includes targets with moderate progress; 15% on track or met is also correct. The real issue is comparability."},
       {t:"Both reports measure the same 169 targets in the same way", why:"The UN assessed only 139 targets with trend data, and the SDSN uses a country index."}
@@ -264,9 +264,9 @@ ICA.addUnit({
       {t:"Presentations are short and the questions are rarely hard", b:1, why:"A common critique of the forum’s format."}
     ]},
     {id:"e4u17-l2-x6", type:"mcq", q:"Mei’s country ranks fifth in the SDG Index. Which question would most improve her seminar paper?", options:[
-      {t:"How does it score on the spillover index and on Goals 12–15, and how sensitive is the rank to the weights?", ok:true, why:"Right. A high average can hide poor performance on consumption and climate and harm abroad, and ranks depend on method."},
+      {t:"How does it score on spillovers and Goals 12–15?", ok:true, why:"Right. A high average can hide poor performance on consumption and climate and harm abroad; she could also test how sensitive the rank is to the weights."},
       {t:"Which country ranked first?", why:"The rank of others says nothing about the strengths and weaknesses behind her country’s score."},
-      {t:"Has the government publicised the ranking?", why:"Publicity is about politics, not about what the index measures."},
+      {t:"Has the government publicised the ranking abroad?", why:"Publicity is about politics, not about what the index measures."},
       {t:"Is the index produced every year?", why:"Frequency matters less than what the index includes and how it weights it."}
     ]},
     {id:"e4u17-l2-x7", type:"spot", q:"A ministry press release. Tap each claim that is **wrong or misleading**.", ask:"wrong or misleading", parts:[
@@ -349,7 +349,7 @@ ICA.addUnit({
     ]},
     {h:"Microfinance: promise and evidence", body:[
       "[[microcredit|Microcredit]], small loans without collateral, became the best-known gender-and-development tool. Muhammad Yunus began lending in Bangladesh in the 1970s; the Grameen Bank became a formal bank in 1983, and Yunus and the bank shared the Nobel Peace Prize in 2006. The model used [[joint-liability|group lending]]: borrowers, mostly women, formed small groups whose members were responsible for each other’s repayment, replacing collateral with peer pressure.",
-      "The claims were large: loans would lift families out of poverty and empower women. The evidence is more modest. In 2015 the *American Economic Journal: Applied Economics* published six [[randomised-controlled-trial|randomised evaluations]] of microcredit expansion in Bosnia and Herzegovina, Ethiopia, India, Mexico, Mongolia and Morocco (see {{development-rcts}} in Unit 14). Banerjee, Karlan and Zinman summarised the results as “modestly positive, but not transformative”: some people started or expanded businesses, but there was no consistent rise in household income and little evidence of transformed women’s empowerment.",
+      "The claims were large: loans would lift families out of poverty and empower women. The evidence is more modest. In 2015 the *American Economic Journal: Applied Economics* published six [[randomised-controlled-trial|randomised evaluations]] of microcredit expansion in Bosnia and Herzegovina, Ethiopia, India, Mexico, Mongolia and Morocco (see {{development-rcts}} in Unit 15). Banerjee, Karlan and Zinman summarised the results as “modestly positive, but not transformative”: some people started or expanded businesses, but there was no consistent rise in household income and little evidence of transformed women’s empowerment.",
       "Critics went further. In Andhra Pradesh, India, rapid commercial growth led to over-indebtedness and a crisis in 2010, when the state government restricted lenders. Defenders reply that credit is a useful service rather than a cure, and many now speak of broader [[microfinance]]: savings, insurance and mobile money. Kabeer’s own fieldwork (“Conflicts over Credit”, *World Development*, 2001) found both: some women lost control of their loans, while others gained standing in the household.",
       {key:"Read microfinance through Kabeer: a loan is a resource. Whether it becomes agency and achievement is an empirical question, and the answer differs by place and person."}
     ]},
@@ -393,9 +393,9 @@ ICA.addUnit({
       {v:21.5, tol:0.2, why:"That divides instead of multiplying (16.4 ÷ 0.762). Take 76.2% of the total."}
     ], hint2:"Women’s hours = 0.762 × 16.4."},
     {id:"e4u17-l3-x5", type:"mcq", q:"What did the six randomised evaluations of microcredit published together in 2015 find overall?", options:[
-      {t:"Modestly positive but not transformative effects: some business expansion, no consistent rise in household income, little evidence of transformed empowerment", ok:true, why:"Right. That is how Banerjee, Karlan and Zinman summarised the six studies."},
+      {t:"Modestly positive but not transformative effects", ok:true, why:"Right: some business expansion, no consistent rise in household income, little evidence of transformed empowerment. That is how Banerjee, Karlan and Zinman summarised the six studies."},
       {t:"Microcredit lifted most borrowing households out of poverty within two years", why:"The studies found no consistent income gains of that size."},
-      {t:"Microcredit made borrowers poorer everywhere", why:"Effects were small and mixed, not uniformly negative."},
+      {t:"Microcredit made borrowers poorer in every country studied", why:"Effects were small and mixed, not uniformly negative."},
       {t:"The studies could not be done because microcredit cannot be randomised", why:"They randomised access, for example by area or by applicant, which is what made them possible."}
     ]},
     {id:"e4u17-l3-x6", type:"match", q:"Match each thinker to the idea.", pairs:[
@@ -471,7 +471,7 @@ ICA.addUnit({
     {h:"Food security and food sovereignty", body:[
       "The 1996 World Food Summit defined [[food-security|food security]] as existing when all people, at all times, have physical and economic access to sufficient, safe and nutritious food for an active and healthy life. Analysts break it into four dimensions: **availability**, **access** (Sen’s question), **utilisation** (nutrition, clean water, health) and **stability** over time.",
       "The UN’s 2026 report estimates that **645 million people** (7.8% of the world) were chronically undernourished in 2025, and that **2.1 billion** faced moderate or severe food insecurity, 527 million more than in 2015.",
-      "Farmers’ movements answer with a rival frame. [[food-sovereignty|Food sovereignty]], put forward by the international peasant movement La Vía Campesina in 1996, is the right of peoples to define their own food and farming policies. It challenges trade liberalisation in agriculture (see Unit 15 on the WTO) and large agribusiness, and is often set against “food security”, which says nothing about who produces the food."
+      "Farmers’ movements answer with a rival frame. [[food-sovereignty|Food sovereignty]], put forward by the international peasant movement La Vía Campesina in 1996, is the right of peoples to define their own food and farming policies. It challenges trade liberalisation in agriculture (see Unit 16 on the WTO) and large agribusiness, and is often set against “food security”, which says nothing about who produces the food."
     ]},
     {h:"The Green Revolution and its critics", body:[
       "From the mid-1960s, new [[high-yielding-variety|high-yielding varieties]] of wheat (bred by Norman Borlaug’s team in Mexico) and rice (such as IR8, released by the International Rice Research Institute in the Philippines in 1966), grown with fertiliser and irrigation, spread across South and Southeast Asia and Latin America. A US aid official named it the [[green-revolution|Green Revolution]] in 1968; Borlaug won the Nobel Peace Prize in 1970.",
@@ -487,7 +487,7 @@ ICA.addUnit({
     {h:"Water governance", body:[
       "Goal 6 shows real progress. Between 2015 and 2024, the share of people using safely managed drinking water rose from 68% to 74%, safely managed sanitation from 48% to 58%, and basic hygiene from 66% to 80%. Even so, about **2.1 billion people** still lack safely managed drinking water. Practitioners call the field [[wash|WASH]] (water, sanitation and hygiene).",
       "The governance debate turns on what water is. The **Dublin Statement** (1992) said water has an economic value and should be recognised as an economic good, which supported pricing and private concessions. When a privatised concession in Cochabamba, Bolivia, raised bills in 2000, mass protests forced it out, and the case became a symbol for critics of privatisation. In 2010 the General Assembly recognised a [[human-right-to-water|human right to water and sanitation]] (resolution 64/292), adopted by vote with a large group of abstentions.",
-      "Most experts now favour [[iwrm|integrated water resources management]], which coordinates water, land and users across a whole basin, and many draw on Ostrom’s work on commons (see {{commons-governance}} in Unit 16). Shared rivers such as the Mekong (Unit 12) show the international side. On low-lying Pacific atolls, such as those of Kiribati and Tuvalu, households rely on rainwater and thin lenses of fresh groundwater that drought and seawater can spoil, so water security there is also climate adaptation (Unit 16)."
+      "Most experts now favour [[iwrm|integrated water resources management]], which coordinates water, land and users across a whole basin, and many draw on Ostrom’s work on commons (see {{commons-governance}} in Unit 17). Shared rivers such as the Mekong (Unit 12) show the international side. On low-lying Pacific atolls, such as those of Kiribati and Tuvalu, households rely on rainwater and thin lenses of fresh groundwater that drought and seawater can spoil, so water security there is also climate adaptation (Unit 17)."
     ]},
     {h:"Health as development, and the nexus", body:[
       "The Alma-Ata Declaration (1978) made [[primary-health-care|primary health care]] the route to “health for all”. In the MDG era, money flowed instead to **vertical** programmes for single diseases, through new funds such as the Global Fund and Gavi (Unit 13), which saved many lives but, critics argued, left general health systems weak. The SDGs returned to systems through target 3.8 on [[universal-health-coverage|universal health coverage]]. The UN’s 2026 report finds the coverage index up only from 68 to 71 between 2015 and 2023, with 4.6 billion people lacking essential services. Middle-income countries offer contrasting routes: Thailand’s universal coverage scheme, launched in 2001–02 and financed mainly from taxes, is often cited as an example of reaching near-universal coverage before becoming rich.",
@@ -505,10 +505,10 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u17-l4-x1", type:"mcq", q:"A drought hits a farming region. Food prices in the regional market stay stable because traders bring grain from elsewhere, but landless labourers lose their farm jobs and begin to starve. What does Sen’s approach say?", options:[
-      {t:"It is an entitlement failure: the labourers lost the wages they exchanged for food, even though food was available", ok:true, why:"Right. Their endowment (labour) could no longer be exchanged for food. Public works or cash transfers would restore entitlements."},
+      {t:"An entitlement failure: they lost the wages they used to buy food", ok:true, why:"Right, even though food was available. Their endowment (labour) could no longer be exchanged for food. Public works or cash transfers would restore entitlements."},
       {t:"It cannot be a famine, because food is still on sale", why:"That is the food availability view Sen criticised."},
       {t:"The cause is overpopulation", why:"Nothing in the case concerns population; the mechanism is lost wages."},
-      {t:"Only food aid can help, because markets have failed", why:"Markets supplied food; the problem is purchasing power, so income support can work."}
+      {t:"Only food aid can help, because the markets in the region have failed", why:"Markets supplied food; the problem is purchasing power, so income support can work."}
     ]},
     {id:"e4u17-l4-x2", type:"sort", q:"Which dimension of food security does each problem mainly concern?", buckets:["Availability","Access","Utilisation","Stability"], items:[
       {t:"A national harvest falls by a third", b:0, why:"Less food is produced: availability."},
@@ -518,9 +518,9 @@ ICA.addUnit({
       {t:"A remote village has no road, so its people cannot reach the nearest market", b:1, why:"Physical access: the food exists, but people cannot get to it."}
     ]},
     {id:"e4u17-l4-x3", type:"mcq", q:"Which statement about the IPC is accurate?", options:[
-      {t:"Phase 5 (Famine) requires thresholds for food gaps, child acute malnutrition and deaths, checked by an independent review committee", ok:true, why:"Right: at least 20% of households with extreme food gaps, 30% of children acutely malnourished, and two deaths per 10,000 people a day."},
+      {t:"Phase 5 needs thresholds for food gaps, malnutrition and deaths", ok:true, why:"Right: at least 20% of households with extreme food gaps, 30% of children acutely malnourished, and two deaths per 10,000 people a day, checked by an independent review committee."},
       {t:"Famine is declared by the UN Secretary-General", why:"No single agency declares famine; it is classified through the IPC process."},
-      {t:"Famine is defined as any national harvest below the average", why:"The IPC uses household, nutrition and mortality evidence, not harvest size."},
+      {t:"Famine is defined as any national harvest that falls below the average", why:"The IPC uses household, nutrition and mortality evidence, not harvest size."},
       {t:"The IPC has never classified famine since it began", why:"It has classified famine several times, for example in Somalia (2011), South Sudan (2017), parts of Sudan (2024 and 2025) and Gaza Governorate (2025)."}
     ]},
     {id:"e4u17-l4-x4", type:"sort", q:"Is each claim one that **defenders** or **critics** of the Green Revolution typically make?", buckets:["Defenders","Critics"], items:[
@@ -538,7 +538,7 @@ ICA.addUnit({
       ["La Vía Campesina (1996)","Put forward food sovereignty","A rival frame to food security."]
     ]},
     {id:"e4u17-l4-x6", type:"mcq", q:"Why do some humanitarian NGOs worry about the humanitarian–development–peace nexus?", options:[
-      {t:"Working with a government on development can compromise their neutrality and independence in a war where that government is a party", ok:true, why:"Right. Access in conflict depends on being seen as neutral; development work usually goes through the state."},
+      {t:"Working with a warring government can compromise their neutrality", ok:true, why:"Right, and their independence. Access in conflict depends on being seen as neutral; development work usually goes through the state."},
       {t:"They think crises are always short, so long-term planning is unnecessary", why:"Most agree crises are often protracted; the worry is about principles, not duration."},
       {t:"The nexus bans humanitarian aid in conflict zones", why:"It does no such thing; it seeks coordination."},
       {t:"It moves all humanitarian funding to development banks", why:"The Grand Bargain itself says the aim is not to shift funding but to work across boundaries."}
@@ -625,11 +625,11 @@ ICA.addUnit({
         ["Sustainability","Will the benefits last?"]
       ]},
       "The DAC adds two principles: apply the criteria **thoughtfully**, and **not mechanistically**. An evaluation need not cover all six.",
-      "Methods follow the question. [[formative-summative-evaluation|Formative evaluations]] help improve a project while it runs; summative ones judge it at the end. Impact questions need a [[counterfactual]], often from a randomised trial or a quasi-experiment (see {{development-rcts}} in Unit 14 and {{regression-causal-inference}} in Unit 3). Ray Pawson and Nick Tilley’s *Realistic Evaluation* (1997) argued that the better question is “what works, for whom, in what circumstances, and why?”, which usually needs qualitative evidence as well, a case for {{mixed-methods|mixed methods}}."
+      "Methods follow the question. [[formative-summative-evaluation|Formative evaluations]] help improve a project while it runs; summative ones judge it at the end. Impact questions need a [[counterfactual]], often from a randomised trial or a quasi-experiment (see {{development-rcts}} in Unit 15 and {{regression-causal-inference}} in Unit 3). Ray Pawson and Nick Tilley’s *Realistic Evaluation* (1997) argued that the better question is “what works, for whom, in what circumstances, and why?”, which usually needs qualitative evidence as well, a case for {{mixed-methods|mixed methods}}."
     ]},
     {h:"Participation and localisation", body:[
       "Robert Chambers’s *Rural Development: Putting the Last First* (1983) attacked “rural development tourism”: brief visits in which experts saw villages near roads, in the dry season, and met mostly men and the better-off, so the poorest stayed unseen. In that book and in *Whose Reality Counts?* (1997) he championed {{participation-localisation|participatory}} methods. In [[participatory-rural-appraisal|participatory rural appraisal]], villagers draw their own maps, seasonal calendars and wealth rankings, so outsiders learn from them.",
-      "Participation became official policy, and then the target of a famous critique. Bill Cooke and Uma Kothari’s edited book *Participation: The New Tyranny?* (2001) argued that participatory exercises can legitimise decisions already taken, let local elites speak for everyone, and hide power behind a language of consensus. James Ferguson’s idea of the [[anti-politics-machine|anti-politics machine]] (Unit 14) makes a similar point about development as a whole.",
+      "Participation became official policy, and then the target of a famous critique. Bill Cooke and Uma Kothari’s edited book *Participation: The New Tyranny?* (2001) argued that participatory exercises can legitimise decisions already taken, let local elites speak for everyone, and hide power behind a language of consensus. James Ferguson’s idea of the [[anti-politics-machine|anti-politics machine]] (Unit 15) makes a similar point about development as a whole.",
       "The newer debate is about [[aid-localisation|localisation]]: shifting money and decisions to local and national organisations. In the Grand Bargain (2016), donors and agencies committed to give at least 25% of humanitarian funding to local and national responders “as directly as possible” by 2020. Independent reviews have reported that direct funding stayed far below that level. Movements to “shift the power” and “decolonise aid” argue that the barriers are structural, from risk rules to the language of reports; sceptics stress accountability for public money. Unit 12’s [[local-turn|local turn]] in peacebuilding is the same argument in another field."
     ]},
     {h:"Ethics of working in other countries", body:[
@@ -649,12 +649,12 @@ ICA.addUnit({
     ]},
     {h:"Synthesis: the sustainable development cluster", body:[
       "This unit closes the four-unit cluster. Each unit took one angle on the same question: how can people everywhere live better lives within the planet’s limits, and who decides?",
-      {fig:'<svg viewBox="0 0 340 362"><rect class="d-lup" x="8" y="10" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="86" y="32" text-anchor="middle">Unit 14</text><text x="86" y="54" text-anchor="middle">Ideas, measures</text><text class="s" x="86" y="76" text-anchor="middle">growth, capabilities,</text><text class="s" x="86" y="92" text-anchor="middle">aid, institutions</text><rect class="d-gold" x="176" y="10" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="254" y="32" text-anchor="middle">Unit 15</text><text x="254" y="54" text-anchor="middle">Trade, money, debt</text><text class="s" x="254" y="76" text-anchor="middle">who pays, on</text><text class="s" x="254" y="92" text-anchor="middle">what terms</text><rect class="d-sage" x="8" y="120" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="86" y="142" text-anchor="middle">Unit 16</text><text x="86" y="164" text-anchor="middle">Planet, climate</text><text class="s" x="86" y="186" text-anchor="middle">limits, justice,</text><text class="s" x="86" y="202" text-anchor="middle">energy transition</text><rect class="d-rose" x="176" y="120" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="254" y="142" text-anchor="middle">Unit 17</text><text x="254" y="164" text-anchor="middle">Goals, practice</text><text class="s" x="254" y="186" text-anchor="middle">SDGs, gender, food,</text><text class="s" x="254" y="202" text-anchor="middle">projects</text><rect class="d-panel" x="8" y="234" width="324" height="120" rx="8" stroke-width="2"/><text x="170" y="258" text-anchor="middle">Debates across all four</text><text class="s" x="24" y="282">1 Growth, or limits to growth?</text><text class="s" x="24" y="302">2 States, markets or communities?</text><text class="s" x="24" y="322">3 Who decides, and who pays?</text><text class="s" x="24" y="342">4 What counts as evidence?</text></svg>', alt:"Four boxes in a grid. Unit 14: ideas and measures, growth, capabilities, aid and institutions. Unit 15: trade, money and debt, who pays and on what terms. Unit 16: planet and climate, limits, justice and the energy transition. Unit 17: goals and practice, the SDGs, gender, food and projects. Below, a panel lists four debates across all four units: growth or limits to growth; states, markets or communities; who decides and who pays; what counts as evidence.", cap:"One cluster, four angles, four debates that run through all of them."}
+      {fig:'<svg viewBox="0 0 340 362"><rect class="d-lup" x="8" y="10" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="86" y="32" text-anchor="middle">Unit 15</text><text x="86" y="54" text-anchor="middle">Ideas, measures</text><text class="s" x="86" y="76" text-anchor="middle">growth, capabilities,</text><text class="s" x="86" y="92" text-anchor="middle">aid, institutions</text><rect class="d-gold" x="176" y="10" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="254" y="32" text-anchor="middle">Unit 16</text><text x="254" y="54" text-anchor="middle">Trade, money, debt</text><text class="s" x="254" y="76" text-anchor="middle">who pays, on</text><text class="s" x="254" y="92" text-anchor="middle">what terms</text><rect class="d-sage" x="8" y="120" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="86" y="142" text-anchor="middle">Unit 17</text><text x="86" y="164" text-anchor="middle">Planet, climate</text><text class="s" x="86" y="186" text-anchor="middle">limits, justice,</text><text class="s" x="86" y="202" text-anchor="middle">energy transition</text><rect class="d-rose" x="176" y="120" width="156" height="100" rx="8" stroke-width="2"/><text class="s" x="254" y="142" text-anchor="middle">Unit 18</text><text x="254" y="164" text-anchor="middle">Goals, practice</text><text class="s" x="254" y="186" text-anchor="middle">SDGs, gender, food,</text><text class="s" x="254" y="202" text-anchor="middle">projects</text><rect class="d-panel" x="8" y="234" width="324" height="120" rx="8" stroke-width="2"/><text x="170" y="258" text-anchor="middle">Debates across all four</text><text class="s" x="24" y="282">1 Growth, or limits to growth?</text><text class="s" x="24" y="302">2 States, markets or communities?</text><text class="s" x="24" y="322">3 Who decides, and who pays?</text><text class="s" x="24" y="342">4 What counts as evidence?</text></svg>', alt:"Four boxes in a grid. Unit 15: ideas and measures, growth, capabilities, aid and institutions. Unit 16: trade, money and debt, who pays and on what terms. Unit 17: planet and climate, limits, justice and the energy transition. Unit 18: goals and practice, the SDGs, gender, food and projects. Below, a panel lists four debates across all four units: growth or limits to growth; states, markets or communities; who decides and who pays; what counts as evidence.", cap:"One cluster, four angles, four debates that run through all of them."}
       ,{list:[
-        "**Growth or limits?** Sen’s capabilities and the HDI (Unit 14), [[planetary-boundaries|planetary boundaries]] (Unit 16) and the tension inside the SDGs between target 8.1 and Goals 12–13 (Lesson 1).",
-        "**States, markets or communities?** The developmental state and the Washington Consensus (Unit 14), value chains and debt (Unit 15), Ostrom’s commons (Unit 16), water concessions and microfinance (Lessons 3–4).",
-        "**Who decides and who pays?** Country ownership and new donors (Unit 14), voice in the IMF and debt talks (Unit 15), common but differentiated responsibilities and climate finance (Unit 16), the Open Working Group and localisation (this unit).",
-        "**What counts as evidence?** Poverty lines and randomised trials (Unit 14), IPCC assessments (Unit 16), SDG indicators, the IPC and the DAC criteria (this unit)."
+        "**Growth or limits?** Sen’s capabilities and the HDI (Unit 15), [[planetary-boundaries|planetary boundaries]] (Unit 17) and the tension inside the SDGs between target 8.1 and Goals 12–13 (Lesson 1).",
+        "**States, markets or communities?** The developmental state and the Washington Consensus (Unit 15), value chains and debt (Unit 16), Ostrom’s commons (Unit 17), water concessions and microfinance (Lessons 3–4).",
+        "**Who decides and who pays?** Country ownership and new donors (Unit 15), voice in the IMF and debt talks (Unit 16), common but differentiated responsibilities and climate finance (Unit 17), the Open Working Group and localisation (this unit).",
+        "**What counts as evidence?** Poverty lines and randomised trials (Unit 15), IPCC assessments (Unit 17), SDG indicators, the IPC and the DAC criteria (this unit)."
       ]},
       {key:"A strong seminar argument on development names which of these debates it joins, uses evidence from more than one unit, and says honestly what its evidence cannot show."},
       {h:"Common misconceptions about development practice"},
@@ -691,14 +691,14 @@ ICA.addUnit({
       ["Did the project address what communities saw as their main need?","Relevance","Doing the right things."]
     ]},
     {id:"e4u17-l5-x4", type:"mcq", q:"At a participatory village meeting, the headman and two large landowners do most of the talking, and the plan agreed matches what the donor proposed beforehand. Which critique does this illustrate?", options:[
-      {t:"Cooke and Kothari’s: participation can legitimise decisions already made and let local elites speak for everyone", ok:true, why:"Right. Both features of “the new tyranny” appear here."},
+      {t:"Cooke and Kothari’s “new tyranny”", ok:true, why:"Right. Participation can legitimise decisions already made and let local elites speak for everyone; both features of “the new tyranny” appear here."},
       {t:"Chambers’s critique of rural development tourism", why:"Chambers criticised experts who never listened; here a meeting happened, but it was captured."},
       {t:"Anderson’s critique of aid feeding war", why:"There is no conflict dynamic in the case."},
       {t:"Gasper’s critique of the lock-frame", why:"That concerns rigid matrices, not who speaks in meetings."}
     ]},
     {id:"e4u17-l5-x5", type:"mcq", q:"In a district split between two communities, an agency hands out food only through the leaders of one of them, and hires all its drivers from that group. What would Anderson’s “do no harm” analysis say?", options:[
-      {t:"The aid is acting as a divider: it may deepen grievances and should be redesigned to work across both groups", ok:true, why:"Right. Anderson asks agencies to spot how distributions and hiring map onto conflict lines."},
-      {t:"It is fine as long as the food reaches people", why:"Delivery is necessary but not enough; the side effects on the conflict matter."},
+      {t:"The aid is acting as a divider and should be redesigned", ok:true, why:"Right: it may deepen grievances, so it should be redesigned to work across both groups. Anderson asks agencies to spot how distributions and hiring map onto conflict lines."},
+      {t:"It is fine as long as the food reaches hungry people in the district", why:"Delivery is necessary but not enough; the side effects on the conflict matter."},
       {t:"The agency should stop all aid immediately", why:"Anderson’s approach is to redesign, not automatically to withdraw."},
       {t:"It is a question of efficiency only", why:"Efficiency does not capture the conflict effects."}
     ]},
@@ -736,7 +736,7 @@ ICA.addUnit({
        "Write two sentences on what it can and cannot show."
      ], write:"Evaluation… Criteria used… Methods… Counterfactual?… What it can and cannot show…"},
      {t:"Seminar questions for the whole cluster", how:[
-       "Choose one and write 200–300 words, drawing on at least two of Units 14–17.",
+       "Choose one and write 200–300 words, drawing on at least two of Units 15–18.",
        "1. Is “sustainable development” a coherent goal, or a compromise between growth and limits?",
        "2. Who should decide development priorities: national governments, donors, communities or global bodies?",
        "3. What kind of evidence should count most in development policy, and what does each kind miss?"
@@ -752,6 +752,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u17-q02","e4u17-q06","e4u17-q11","e4u17-q14","e4u17-q17","e4u17-q21","e4u17-q24","e4u17-q28","e4u17-q31","e4u17-q35","e4u17-q39","e4u17-q43"],
+  cpBank:[
+   {id:"e4u17-cp01", lesson:"e4u17-l1", level:1, q:"No court enforces a global goal on clean cooking fuel. Yet a donor moves money towards it, and newspapers start ranking countries on it. What explains the goal’s influence?", options:[
+     {t:"It is a treaty, so states must comply", why:"Global goals are General Assembly resolutions with no legal force. Their influence comes from elsewhere."},
+     {t:"Goals set the agenda, create numbers to compare, and steer money", ok:true, why:"Yes. Scholars call this governing by goals: power without legal force."},
+     {t:"The IMF makes its loans conditional on meeting every single goal", why:"Nothing in the lesson says this. The goals’ power is to frame problems, set yardsticks and steer money."},
+     {t:"Countries that miss a goal lose their UN vote", why:"There are no such sanctions; follow-up and review are voluntary."}]},
+   {id:"e4u17-cp02", lesson:"e4u17-l1", level:2, q:"A target says: “Halve child mortality from its 1990 level.” Country A cuts it from 200 to 140 per 1,000; Country B from 40 to 20. Which point would Easterly draw from this?", options:[
+     {t:"B did better, because it met the target and A did not", why:"That is the judgement Easterly criticised: it ignores that A saved more lives per 1,000 children."},
+     {t:"The target is fair, because every country faces exactly the same percentage cut from 1990", why:"Easterly argued that the same proportional cut is harder for countries starting from high levels, mostly in Africa."},
+     {t:"Proportional targets can make high starters look like failures despite big gains", ok:true, why:"Right. A cut deaths by 60 per 1,000 but “failed”; B cut 20 and “succeeded”. This was Easterly’s case that the MDGs were unfair to Africa."},
+     {t:"Neither improved, because both still have child deaths", why:"Both improved. The question is how a proportional target judges very different starting points."}]},
+   {id:"e4u17-cp03", lesson:"e4u17-l1", level:2, q:"A think tank argues that the SDGs should be cut to a short list of the best-value targets, chosen by cost–benefit studies. Which kind of critique is this?", options:[
+     {t:"A critique of the form: too many targets to prioritise", ok:true, why:"Yes. This is the Copenhagen Consensus line. It attacks the number of targets, not their aims or who wrote them."},
+     {t:"A critique of the content: growth conflicts with ecology", why:"That is Hickel’s critique of target 8.1 against Goals 12–13, not an argument about the number of targets."},
+     {t:"A critique of the politics: who decides and who pays", why:"The think tank does not question who wrote the goals; it wants fewer of them."},
+     {t:"A charge of SDG-washing", why:"SDG-washing means attaching SDG logos to business as usual, not proposing a shorter list."}]},
+   {id:"e4u17-cp04", lesson:"e4u17-l2", level:1, q:"An SDG indicator has an agreed international method, but regular data exist for only about a third of countries. Which tier is it in?", options:[
+     {t:"Tier I", why:"Tier I needs regular data for at least half of countries and people in every region."},
+     {t:"Tier III", why:"The old Tier III meant no agreed method. Since 2020 no indicator remains there, and this one has a method."},
+     {t:"No tier, because it lacks data", why:"Indicators with an agreed method but irregular data still have a tier."},
+     {t:"Tier II", ok:true, why:"Right. Tier II means an agreed method but irregular data."}]},
+   {id:"e4u17-cp05", lesson:"e4u17-l2", level:3, q:"A country scores well on the indicator for Goal 10’s first target, which tracks income growth of the poorest 40%. Yet the gap between its richest and poorest has widened. Drawing on Lessons 1 and 2, what does this show?", options:[
+     {t:"Goal 10 has been met, because the official indicator moved in the right direction", why:"This treats the indicator as the goal. The lesson warns that the choice of indicator can narrow what a goal promises."},
+     {t:"The data must be wrong, because the two trends cannot happen together", why:"Both can be true: the poorest can gain while the richest gain even more."},
+     {t:"Goal 10 does not mention inequality", why:"Goal 10 is the inequality goal, one of the main additions compared with the MDGs."},
+     {t:"Indicators can narrow a goal: this one tracks the poorest’s growth, not the gap", ok:true, why:"Yes. Fukuda-Parr and others show how indicators can narrow goals, and Goodhart’s law warns what happens when a measure becomes a target."}]},
+   {id:"e4u17-cp06", lesson:"e4u17-l2", level:3, q:"A rich country tops the SDG Index. Critics point out that its imports of beef and timber drive deforestation abroad. Drawing on Lessons 1 and 2, which ideas explain why this matters?", options:[
+     {t:"Means of implementation, and the Tier system", why:"Means of implementation are money, technology and trade; tiers classify indicators by data. Neither captures harm caused abroad."},
+     {t:"Universality, and the spillovers national scores hide", ok:true, why:"Right. The SDGs apply to rich countries too, and borders hide spillovers, which the SDSN tracks in a separate spillover index."},
+     {t:"Food sovereignty, and the IPC famine scale", why:"These are Lesson 4 food concepts and do not explain the problem with a national index."},
+     {t:"Goodhart’s law, which means the index must have been invented", why:"Goodhart’s law is about measures that become targets. The point here is what national averages leave out."}]},
+   {id:"e4u17-cp07", lesson:"e4u17-l3", level:1, q:"A government pipes water close to villages, so women no longer spend hours each day carrying it. Which of the “three Rs” of unpaid care does this mainly serve?", options:[
+     {t:"Recognise", why:"Recognising care means counting and valuing it, for example in time-use surveys."},
+     {t:"Redistribute", why:"Redistributing care means shifting it from women to men, or from households to the state and employers."},
+     {t:"Reduce", ok:true, why:"Yes. Infrastructure such as water, electricity and transport reduces the drudgery of unpaid care."},
+     {t:"Regulate", why:"This is not one of the three Rs. They are recognise, reduce and redistribute."}]},
+   {id:"e4u17-cp08", lesson:"e4u17-l3", level:2, q:"A cash transfer pays mothers if their children attend health checks. Evaluations show better child health, and also that mothers spend many extra hours queuing at clinics. Which question would a GAD scholar such as Molyneux raise?", options:[
+     {t:"Whether the transfers were large enough to raise GDP", why:"GDP is not the GAD question. GAD asks about gender relations, voice and who carries extra work."},
+     {t:"Whether it adds to women’s unpaid work and treats them as tools for their children", ok:true, why:"Right. Molyneux asked exactly this about Progresa and Bolsa Família."},
+     {t:"Whether the mothers formed groups with joint liability", why:"Joint liability belongs to group microcredit, not to cash transfers."},
+     {t:"Whether the programme meets a WID efficiency goal by making better use of women’s labour", why:"That is WID’s logic. GAD asks the critical question about the burden on women."}]},
+   {id:"e4u17-cp09", lesson:"e4u17-l4", level:3, q:"A country has competitive elections and a free press. In one region, civil war blocks aid convoys and famine conditions appear. Which reading fits the lesson best?", options:[
+     {t:"This disproves Sen entirely, so democracy and a free press have nothing to do with famine", why:"Critics refine rather than reject Sen. His argument still explains why functioning democracies usually act on hunger."},
+     {t:"Famine cannot occur here, because a free press always prevents it", why:"Sen’s claim concerns functioning democracies. War can destroy entitlements by force in parts of a country."},
+     {t:"The cause must be a fall in total food supply", why:"The scenario points to blocked aid in a war, not a national shortage."},
+     {t:"It fits the refinement: war destroys entitlements by force, and famines are often political", ok:true, why:"Yes. Devereux notes the entitlement approach struggles with war, and de Waal argues most modern famines are caused or prolonged by conflict."}]},
+   {id:"e4u17-cp10", lesson:"e4u17-l4", level:2, q:"An IPC analysis classifies famine in an invented district. Six months later, after aid access improves, a new analysis no longer does. A blogger says the first classification “was wrong”. What is the best reply?", options:[
+     {t:"A classification describes a period; later analyses can change as conditions do", ok:true, why:"Right. The lesson stresses that IPC findings refer to a time, and later analyses can differ without the first being wrong."},
+     {t:"The blogger is right: famine classifications can never be revised once they are made", why:"They can and are revised. Conditions change, as the Gaza Governorate case in the lesson shows."},
+     {t:"Only the WFP can declare famine, so the IPC finding never counted", why:"Famine is classified through the IPC with an independent Famine Review Committee, not declared by one agency."},
+     {t:"A famine classification lasts at least five years by rule", why:"There is no such rule. A classification describes the period it covers."}]},
+   {id:"e4u17-cp11", lesson:"e4u17-l5", level:2, q:"A project hands out fortified flour (output) to cut child anaemia (purpose). Anaemia does not fall: many households lack clean water, so children keep getting infections. Drawing on Lessons 4 and 5, what went wrong?", options:[
+     {t:"The activities were never carried out", why:"The flour was delivered, so the activities and outputs happened. The chain broke later."},
+     {t:"An output-to-purpose assumption failed: food security also needs utilisation, such as clean water", ok:true, why:"Yes. The logframe’s assumptions column matters most, and utilisation is one of food security’s four dimensions."},
+     {t:"The project needed more flour, because availability is the only dimension of food security that matters", why:"Availability was not the problem. Utilisation (nutrition, clean water, health) is a separate dimension."},
+     {t:"The logframe proves the project worked, because outputs were delivered", why:"A completed logframe states a hypothesis; only monitoring and evaluation test whether outputs led to the purpose."}]},
+   {id:"e4u17-cp12", lesson:"e4u17-l5", level:3, q:"At a participatory village meeting, only men speak. The agreed plan funds a road that traders wanted, not the water point many women had asked for. Drawing on Lessons 3 and 5, which diagnosis fits best?", options:[
+     {t:"Participation worked, because a plan was agreed by consensus of everyone in the room", why:"Cooke and Kothari warn that consensus language can hide power; agreement does not mean everyone had a voice."},
+     {t:"The meeting met the DAC criterion of efficiency", why:"Efficiency is about how resources are used, not about whose voices shaped the plan."},
+     {t:"Elites can capture participation, and gender relations shape whose needs count", ok:true, why:"Right. This combines the “new tyranny” critique with GAD’s focus on power between women and men."},
+     {t:"This is a WID success, because women were invited to the meeting", why:"Being invited is not the same as having a say. GAD looks at the power relations behind the outcome."}]}
+  ],
   codex:[
    {id:"sdg-negotiations", title:"From the MDGs to the SDGs: how the goals were made", aka:["post-2015 agenda","Open Working Group","2030 Agenda negotiations","Millennium Development Goals"], tags:["development","global governance","SDGs"],
     summary:"How eight goals drafted by officials in 2000 became 17 goals and 169 targets negotiated by member states and adopted in 2015.",
@@ -793,7 +855,7 @@ ICA.addUnit({
      builder:[
       "**Too many.** *The Economist*’s “The 169 commandments” (28 March 2015) and the Copenhagen Consensus Center’s cost–benefit case for a short list of best-value targets.",
       "**Measurement.** In 2015 many indicators lacked agreed methods; vague verbs (“substantially”, “significantly”) make success hard to judge (see {{sdg-indicator-framework}}).",
-      "**Growth versus ecology.** Target 8.1 asks for at least 7% GDP growth a year in the least developed countries. Hickel (*Sustainable Development*, 2019) argued that growth targets and ecological goals cannot all be met; green-growth advocates answer that decoupling is possible. See Unit 16 on degrowth and green growth.",
+      "**Growth versus ecology.** Target 8.1 asks for at least 7% GDP growth a year in the least developed countries. Hickel (*Sustainable Development*, 2019) argued that growth targets and ecological goals cannot all be met; green-growth advocates answer that decoupling is possible. See Unit 17 on degrowth and green growth.",
       "**Voluntary.** No sanctions, self-reported reviews, and “SDG-washing” by firms and governments that attach the logos to business as usual.",
       "**Interactions.** Nilsson, Griggs and Visbeck (*Nature*, 2016) proposed a seven-point scale from +3 (indivisible) to −3 (cancelling) to map how targets help or hinder each other."
      ],
@@ -900,7 +962,7 @@ ICA.addUnit({
      ],
      pro:[
       "**The “power of numbers”.** Her research programme with colleagues examined how indicators reshape the targets they measure, for example by simplifying complex goals or leaving out hard-to-measure aims such as inequality and rights.",
-      "**Critics and debates.** Some economists reply that simple, measurable goals are what made the MDGs effective at mobilising money. Her work is often read alongside Easterly’s and Hulme’s critiques of the MDGs and alongside Sen’s capability approach (Unit 14), which shaped the human development reports she led.",
+      "**Critics and debates.** Some economists reply that simple, measurable goals are what made the MDGs effective at mobilising money. Her work is often read alongside Easterly’s and Hulme’s critiques of the MDGs and alongside Sen’s capability approach (Unit 15), which shaped the human development reports she led.",
       {tip:"Use her work when your paper asks not “did the goals work?” but “what did the goals make visible, and what did they hide?”"}
      ]
     },
@@ -946,7 +1008,7 @@ ICA.addUnit({
       "**The source.** “Resources, Agency, Achievements: Reflections on the Measurement of Women’s Empowerment”, *Development and Change* 30(3), 1999.",
       "**Resources** are material, human and social: land, income, education, networks. Kabeer stresses the **terms** on which they are obtained, not only access.",
       "**Agency** includes decision-making but also bargaining, negotiation, resistance and protest, individual or collective.",
-      "**Achievements** are well-being outcomes and valued ways of being and doing, an echo of Sen’s capabilities (see {{capability-approach}} in Unit 14).",
+      "**Achievements** are well-being outcomes and valued ways of being and doing, an echo of Sen’s capabilities (see {{capability-approach}} in Unit 15).",
       "**Using it.** Sort a programme’s indicators into the three dimensions. Most measure resources; few capture agency."
      ],
      pro:[
@@ -1000,7 +1062,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Gender.** Kabeer’s “Conflicts over Credit” (*World Development*, 2001) found that some women lost control of loans to male relatives while others gained voice: the effect depends on context and on how “empowerment” is defined.",
-      "**Methods debate.** The trials measure average effects of access over one to three years; critics ask about longer-term effects, effects on the most entrepreneurial borrowers, and external validity. See {{development-rcts}} in Unit 14 for the wider debate on randomised trials.",
+      "**Methods debate.** The trials measure average effects of access over one to three years; critics ask about longer-term effects, effects on the most entrepreneurial borrowers, and external validity. See {{development-rcts}} in Unit 15 for the wider debate on randomised trials.",
       "**Beyond credit.** Some studies of savings and mobile money find more encouraging effects than the credit trials did, but results vary by country and some findings are disputed, so check each study’s setting.",
       {tip:"Separate three claims: microfinance reduces poverty; it empowers women; it is a useful service. The evidence differs for each."}
      ]
@@ -1024,7 +1086,7 @@ ICA.addUnit({
      pro:[
       "**Against simple stories.** *The Power to Choose* challenged the view that factory work simply exploits women, showing how wages could expand some choices even under poor conditions, while also documenting those conditions.",
       "**Influence and critics.** Her framework underlies many empowerment indices and evaluations. Some critics say it remains hard to operationalise; Kabeer herself warns that indicators must be read in context and combined with qualitative evidence.",
-      {tip:"Pair Kabeer with Sen’s capability approach (Unit 14): her achievements dimension draws on Sen’s idea of valued ways of being and doing."}
+      {tip:"Pair Kabeer with Sen’s capability approach (Unit 15): her achievements dimension draws on Sen’s idea of valued ways of being and doing."}
      ]
     },
     related:["womens-empowerment","wid-wad-gad","microfinance","amartya-sen"],
@@ -1070,7 +1132,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Africa.** Why sub-Saharan Africa had no comparable revolution (diverse crops, rain-fed farming, weaker infrastructure and markets) is debated, as is whether foundation-led efforts such as the Alliance for a Green Revolution in Africa (founded 2006) repeat or adapt the Asian model.",
-      "**Political economy.** Historians link the Green Revolution to Cold War aims (preventing hunger-driven unrest) and to the developmental state in South and Southeast Asia (Units 1 and 14).",
+      "**Political economy.** Historians link the Green Revolution to Cold War aims (preventing hunger-driven unrest) and to the developmental state in South and Southeast Asia (Units 1 and 15).",
       "**Today.** Debates over agroecology, climate-resilient varieties and genetic technologies replay the same questions: who controls seeds, who bears risks, and how to count environmental costs.",
       {tip:"Use the Green Revolution to practise balanced argument: one paragraph for each side’s best evidence, then your judgement and its limits."}
      ]
@@ -1094,7 +1156,7 @@ ICA.addUnit({
       "**Goal 6 (2015–2024).** Safely managed drinking water 68% → 74%; safely managed sanitation 48% → 58%; basic hygiene 66% → 80%."
      ],
      pro:[
-      "**Integrated management.** Integrated water resources management (IWRM) coordinates water, land and users across a basin. Ostrom’s work on commons (Unit 16) shows that communities can govern water well under certain design conditions.",
+      "**Integrated management.** Integrated water resources management (IWRM) coordinates water, land and users across a basin. Ostrom’s work on commons (Unit 17) shows that communities can govern water well under certain design conditions.",
       "**Transboundary rivers.** Shared basins such as the Mekong, the Nile and the Indus raise questions of international law and security (Units 10 and 12).",
       "**Evidence.** Research on public versus private provision is mixed; outcomes depend more on regulation, contracts and capacity than on ownership alone. Present each side’s cases.",
       {tip:"For a case study, map the actors (ministry, utility, regulator, private operator, community groups) and follow the tariff: who pays what, and who is subsidised."}
@@ -1162,7 +1224,7 @@ ICA.addUnit({
       "**History.** First set out in 1991; revised in 2019, when coherence was added and definitions were updated.",
       "**Two principles.** Apply the criteria thoughtfully to support useful evaluation, and do not apply them mechanistically. An evaluation may focus on a few.",
       "**Types.** Formative (to improve while running) and summative (to judge at the end); process evaluations (was it implemented as planned?) and impact evaluations (did it cause the change?).",
-      "**Impact needs a counterfactual.** Randomised trials, difference-in-differences and other designs estimate what would have happened without the intervention (Units 3 and 14)."
+      "**Impact needs a counterfactual.** Randomised trials, difference-in-differences and other designs estimate what would have happened without the intervention (Units 3 and 15)."
      ],
      pro:[
       "**Realist evaluation.** Pawson and Tilley’s *Realistic Evaluation* (1997) asks what works, for whom, in what circumstances and why, focusing on mechanisms and context.",
@@ -1191,7 +1253,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Arguments against rapid localisation.** Donors cite fiduciary risk, accountability to taxpayers and the capacity of small organisations; some local actors are themselves partisan in conflicts. Supporters reply that risk rules are designed for large international bodies and that capacity grows with funding.",
-      "**Links.** The local turn in peacebuilding (Unit 12), norm localisation (Unit 2) and the anti-politics machine (Unit 14) offer theoretical tools.",
+      "**Links.** The local turn in peacebuilding (Unit 12), norm localisation (Unit 2) and the anti-politics machine (Unit 15) offer theoretical tools.",
       {tip:"Follow the money: what share of a programme’s budget reaches local organisations directly, and who sets their priorities?"}
      ]
     },
@@ -1287,29 +1349,29 @@ ICA.addUnit({
      {t:"June 2012", why:"Rio+20 launched the process that led to the SDGs; it did not adopt them."},
      {t:"19 July 2014", why:"That is when the Open Working Group adopted its proposal; the Agenda itself came in 2015."}]},
    {id:"e4u17-q02", lesson:"e4u17-l1", level:2, q:"Which feature most clearly distinguishes the SDGs from the MDGs?", options:[
-     {t:"They apply to every country, not only developing ones", ok:true, why:"Universality is the central change, alongside a wider scope and negotiation by member states."},
+     {t:"They apply to every country", ok:true, why:"Right: universality. They apply to every country, not only developing ones; this is the central change, alongside a wider scope and negotiation by member states."},
      {t:"They are legally binding", why:"Neither set is legally binding; both are political commitments."},
      {t:"They have numerical targets", why:"The MDGs also had numerical targets."},
      {t:"They focus only on the environment", why:"The SDGs cover social, economic, environmental and institutional issues."}]},
    {id:"e4u17-q03", lesson:"e4u17-l1", level:1, q:"How were the Open Working Group’s 30 seats filled?", options:[
-     {t:"Shared among 70 countries, mostly in pairs and trios within the regional groups", ok:true, why:"Right: 6 single seats, 9 pairs, 14 trios and one seat of four."},
+     {t:"Shared among 70 countries, mostly in pairs and trios", ok:true, why:"Right: shared within the regional groups, with 6 single seats, 9 pairs, 14 trios and one seat of four."},
      {t:"By the 30 largest economies", why:"Seats were allocated through the five regional groups, not by economic size."},
      {t:"By the permanent members of the Security Council and their allies", why:"The OWG was a General Assembly body with regional allocation."},
      {t:"By 30 experts chosen by the Secretary-General", why:"That describes an expert panel; the OWG was made up of member states."}]},
    {id:"e4u17-q04", lesson:"e4u17-l1", level:2, q:"William Easterly argued in 2009 that the MDGs were “unfair to Africa”. What was his main point?", options:[
-     {t:"Targets framed as proportional reductions from 1990 made countries starting from low levels look like failures even when they improved fast", ok:true, why:"Right: the critique is about how targets were framed, not about African performance."},
-     {t:"African governments were excluded from the Millennium Summit", why:"African leaders attended; his point was about target design."},
+     {t:"Proportional cuts from 1990 made countries starting low look like failures", ok:true, why:"Right: framing targets as proportional reductions from 1990 made countries starting from low levels look like failures even when they improved fast. The critique is about how targets were framed, not about African performance."},
+     {t:"African governments were excluded from the Millennium Summit and its drafting", why:"African leaders attended; his point was about target design."},
      {t:"Aid to Africa was cut because of the MDGs", why:"Not his argument; aid to Africa rose in the MDG era."},
      {t:"The MDGs ignored health", why:"Three MDGs were about health."}]},
    {id:"e4u17-q05", lesson:"e4u17-l1", level:1, q:"Which work argued that the SDGs’ growth target conflicts with their ecological goals?", options:[
-     {t:"Hickel, “The contradiction of the sustainable development goals” (2019)", ok:true, why:"Right: he argued the growth target and ecological goals cannot all be met."},
+     {t:"Hickel, “The contradiction of the SDGs” (2019)", ok:true, why:"Right: “The contradiction of the sustainable development goals”. He argued the growth target and ecological goals cannot all be met."},
      {t:"Kabeer, “Resources, Agency, Achievements” (1999)", why:"That is about women’s empowerment."},
      {t:"Sen, *Poverty and Famines* (1981)", why:"That is about famine and entitlements."},
      {t:"Fukuda-Parr and Hulme (2011)", why:"They studied the MDGs as global norms."}]},
    {id:"e4u17-q06", lesson:"e4u17-l1", level:3, q:"Priya writes: “The MDGs cut extreme poverty from 1.9 billion to 836 million people.” What is the strongest objection a seminar tutor would raise?", options:[
-     {t:"The figures record a fall during the MDG period, but much of it came from growth in China and India; the sentence assumes the goals caused it", ok:true, why:"Right: that is the attribution problem. The figures are the UN’s, but causation needs separate evidence."},
+     {t:"It assumes the goals caused a fall driven largely by China and India", ok:true, why:"Right: that is the attribution problem. The figures are the UN’s and record a fall during the MDG period, but much of it came from growth in China and India; causation needs separate evidence."},
      {t:"The figures are invented", why:"They come from the UN’s *MDG Report 2015*."},
-     {t:"Poverty rose in the MDG period", why:"The UN’s figures show a large fall."},
+     {t:"Poverty actually rose during the MDG period, so the figures are the wrong way round", why:"The UN’s figures show a large fall."},
      {t:"The MDGs had no poverty goal", why:"MDG 1 was to eradicate extreme poverty and hunger."}]},
    {id:"e4u17-q07", lesson:"e4u17-l1", level:2, q:"In Nilsson, Griggs and Visbeck’s scale, what does a score of −3 mean?", options:[
      {t:"Cancelling: progress on one target makes the other impossible", ok:true, why:"Right. The scale runs from +3 (indivisible) through 0 (consistent) to −3 (cancelling)."},
@@ -1317,15 +1379,15 @@ ICA.addUnit({
      {t:"Consistent: no significant link", why:"That is the midpoint of the scale, 0."},
      {t:"The target has been missed by three years", why:"The scale measures interactions between targets, not delays."}]},
    {id:"e4u17-q08", lesson:"e4u17-l1", level:3, q:"A government says its new coal power plant serves the SDGs because it supports target 7.1 (access to energy) and 8.1 (growth). What is the best analytical response?", options:[
-     {t:"Map the interactions: the plant may reinforce energy access and growth while constraining climate (Goal 13) and air quality (target 3.9); the claim picks only the positive links", ok:true, why:"Right: integration means checking trade-offs, not selecting targets that fit."},
-     {t:"The claim is true, because any target counts", why:"The Agenda calls the goals indivisible; cherry-picking ignores conflicts."},
+     {t:"Map the interactions: the plant may help energy and growth but harm climate and air", ok:true, why:"Right: integration means checking trade-offs, not selecting targets that fit. The plant may reinforce energy access and growth while constraining climate (Goal 13) and air quality (target 3.9)."},
+     {t:"The claim is true, because supporting any one target is enough to count as serving the SDGs", why:"The Agenda calls the goals indivisible; cherry-picking ignores conflicts."},
      {t:"Coal is banned by the SDGs", why:"The SDGs do not ban specific technologies; the issue is interactions."},
      {t:"Energy is not part of the SDGs", why:"Goal 7 is on energy."}]},
    {id:"e4u17-q09", lesson:"e4u17-l1", level:2, q:"Which issue was among the most contested in the Open Working Group’s final negotiations?", options:[
-     {t:"Whether a goal on peaceful societies and institutions (Goal 16) belonged in the agenda", ok:true, why:"Right, along with common but differentiated responsibilities, means of implementation and sexual and reproductive rights."},
+     {t:"Whether Goal 16 on peaceful societies belonged", ok:true, why:"Right: whether a goal on peaceful societies and institutions belonged in the agenda, along with common but differentiated responsibilities, means of implementation and sexual and reproductive rights."},
      {t:"Whether to include a goal on poverty", why:"Ending poverty was uncontested as Goal 1."},
      {t:"Whether the goals should run to 2030", why:"The 2030 horizon was not a major dispute."},
-     {t:"Whether to include any targets at all", why:"Everyone accepted targets."}]},
+     {t:"Whether to include any targets at all, or only goals", why:"Everyone accepted targets."}]},
    /* ---- Lesson 2 ---- */
    {id:"e4u17-q10", lesson:"e4u17-l2", level:1, q:"How many unique indicators does the SDG global indicator framework contain as of 2026?", options:[
      {t:"234", ok:true, why:"Right; 251 are listed in total because some repeat under more than one target."},
@@ -1343,33 +1405,33 @@ ICA.addUnit({
      {t:"2%", why:"Too low; the report gives 15%."},
      {t:"36%", why:"36% is the share on track or making moderate progress."}]},
    {id:"e4u17-q13", lesson:"e4u17-l2", level:2, q:"Why are the UN SDG Report and the SDSN’s Sustainable Development Report not directly comparable?", options:[
-     {t:"The UN assesses global trends target by target; the SDSN scores and ranks countries with a composite index", ok:true, why:"Right: different units and methods."},
+     {t:"The UN tracks global trends; the SDSN ranks countries", ok:true, why:"Right: different units and methods. The UN assesses global trends target by target; the SDSN scores and ranks countries with a composite index."},
      {t:"One covers 2015 and the other 2030", why:"Both assess progress since 2015 toward 2030."},
      {t:"The SDSN report is secret", why:"It is freely available online."},
      {t:"They use different goals", why:"Both use the same 17 goals."}]},
    {id:"e4u17-q14", lesson:"e4u17-l2", level:3, q:"Kenji’s country’s average child stunting rate fell by a third, and the minister says no group is being left behind. What should Kenji check first?", options:[
-     {t:"Disaggregated data: whether rates fell for the poorest households, rural areas, minorities and children with disabilities", ok:true, why:"Right: averages can fall while some groups stagnate."},
+     {t:"Disaggregated data for the poorest and other groups", ok:true, why:"Right: whether rates fell for the poorest households, rural areas, minorities and children with disabilities. Averages can fall while some groups stagnate."},
      {t:"Whether the minister was elected", why:"That says nothing about the claim."},
      {t:"Whether neighbouring countries did better", why:"Comparison is useful, but the claim is about groups within the country."},
-     {t:"Whether stunting is an SDG indicator", why:"It is (under target 2.2), but that does not test the claim."}]},
+     {t:"Whether stunting is an official SDG indicator at all", why:"It is (under target 2.2), but that does not test the claim."}]},
    {id:"e4u17-q15", lesson:"e4u17-l2", level:1, q:"What is the High-level Political Forum (HLPF)?", options:[
-     {t:"The UN forum that reviews SDG progress every July, and every four years at summit level", ok:true, why:"Right: created in 2013, meeting under ECOSOC and, every four years, the General Assembly."},
-     {t:"A court that rules on SDG disputes", why:"No court enforces the SDGs."},
+     {t:"The UN forum that reviews SDG progress each year", ok:true, why:"Right: it meets every July, and every four years at summit level. Created in 2013, it meets under ECOSOC and, every four years, the General Assembly."},
+     {t:"A UN court that rules on disputes over the SDGs", why:"No court enforces the SDGs."},
      {t:"The World Bank’s board", why:"Unrelated to the HLPF."},
-     {t:"An NGO coalition", why:"It is an intergovernmental UN forum, though civil society takes part."}]},
+     {t:"An NGO coalition that monitors governments’ SDG work", why:"It is an intergovernmental UN forum, though civil society takes part."}]},
    {id:"e4u17-q16", lesson:"e4u17-l2", level:1, q:"Which municipalities released the first voluntary local reviews in 2018?", options:[
      {t:"Kitakyushu, Toyama and Shimokawa in Japan, and New York City", ok:true, why:"Right, timed for the local and regional governments’ forum at the 2018 HLPF."},
      {t:"Paris, London and Berlin", why:"European cities followed later."},
      {t:"Only national capitals", why:"None of the first four was a national capital; Shimokawa is a small town in Hokkaido."},
      {t:"No city has produced one", why:"UN DESA lists over 400."}]},
    {id:"e4u17-q17", lesson:"e4u17-l2", level:3, q:"A ministry boasts that its country rose ten places in the SDG Index this year. Which is the most important caution?", options:[
-     {t:"Ranks depend on weights, data revisions and other countries’ changes, and a high score can hide poor results on climate or harmful spillovers", ok:true, why:"Right: composite indices simplify, and a rank change is not proof of a policy effect."},
-     {t:"The SDG Index is published by the UN, so it cannot be wrong", why:"It is published by the SDSN, and any index reflects methodological choices."},
+     {t:"Ranks depend on method and others’ changes, and can hide weak spots", ok:true, why:"Right: ranks depend on weights, data revisions and other countries’ changes, and a high score can hide poor results on climate or harmful spillovers. A rank change is not proof of a policy effect."},
+     {t:"The SDG Index is published by the UN, so its ranking cannot be wrong", why:"It is published by the SDSN, and any index reflects methodological choices."},
      {t:"Rankings never change", why:"They change every year, partly for methodological reasons."},
      {t:"Only spillovers matter", why:"Spillovers are one caution among several."}]},
    {id:"e4u17-q18", lesson:"e4u17-l2", level:2, q:"What does Goodhart’s law warn about SDG indicators?", options:[
-     {t:"When a measure becomes a target, people may change behaviour to hit the number, so it stops measuring what it was meant to", ok:true, why:"Right, a reason to read indicator gains critically."},
-     {t:"Indicators should never be used", why:"The point is caution, not abandonment."},
+     {t:"Once a measure becomes a target, it may stop measuring well", ok:true, why:"Right: people may change behaviour to hit the number, so it stops measuring what it was meant to. This is a reason to read indicator gains critically."},
+     {t:"Indicators are unreliable, so governments should never use them at all", why:"The point is caution, not abandonment."},
      {t:"Every indicator must be Tier I", why:"Tiers concern methods and data availability."},
      {t:"Targets must have dates", why:"True of many targets, but unrelated to Goodhart’s law."}]},
    /* ---- Lesson 3 ---- */
@@ -1379,14 +1441,14 @@ ICA.addUnit({
      {t:"Amartya Sen, *Poverty and Famines* (1981)", why:"About famine and entitlements."},
      {t:"Robert Chambers, *Rural Development* (1983)", why:"About participation and rural poverty."}]},
    {id:"e4u17-q20", lesson:"e4u17-l3", level:2, q:"What most distinguishes GAD from WID?", options:[
-     {t:"GAD analyses power relations between women and men and the institutions that reproduce them, rather than only adding women to projects", ok:true, why:"Right: the shift from “women” to “gender relations”."},
-     {t:"GAD ignores women", why:"GAD is about women and men in relation; women’s position remains central."},
-     {t:"WID was about men", why:"WID focused on women."},
-     {t:"GAD rejects all projects", why:"GAD changes how projects are designed, not whether they exist."}]},
+     {t:"GAD analyses gender relations of power", ok:true, why:"Right: power relations between women and men and the institutions that reproduce them, rather than only adding women to projects. The shift is from “women” to “gender relations”."},
+     {t:"GAD ignores women and studies only men", why:"GAD is about women and men in relation; women’s position remains central."},
+     {t:"WID was about men’s roles in development", why:"WID focused on women."},
+     {t:"GAD rejects all development projects as harmful", why:"GAD changes how projects are designed, not whether they exist."}]},
    {id:"e4u17-q21", lesson:"e4u17-l3", level:3, q:"A programme reports that 10,000 women opened bank accounts and calls this “10,000 women empowered”. Using Kabeer, what is the main problem?", options:[
-     {t:"An account is a resource; the report gives no evidence of agency (who decides about the money) or achievements", ok:true, why:"Right: resources are preconditions, not empowerment itself."},
+     {t:"An account is a resource, not evidence of agency", ok:true, why:"Right: the report gives no evidence of agency (who decides about the money) or achievements. Resources are preconditions, not empowerment itself."},
      {t:"Bank accounts cannot be resources", why:"They are resources; the problem is treating them as the whole of empowerment."},
-     {t:"Kabeer says only collective action counts", why:"She includes individual and collective agency."},
+     {t:"Kabeer says only collective action counts as empowerment", why:"She includes individual and collective agency."},
      {t:"The number is too small to matter", why:"Size is not the issue; the inference is."}]},
    {id:"e4u17-q22", lesson:"e4u17-l3", level:1, q:"According to the ILO’s 2018 estimate, what share of unpaid care work is done by women?", options:[
      {t:"76.2%", ok:true, why:"Right: more than three times as much as men."},
@@ -1394,23 +1456,23 @@ ICA.addUnit({
      {t:"25%", why:"That is roughly men’s share."},
      {t:"99%", why:"Too high; men do about 24%."}]},
    {id:"e4u17-q23", lesson:"e4u17-l3", level:2, q:"Which is a **strategic** gender need in Moser’s sense?", options:[
-     {t:"Joint land titles for wives and husbands", ok:true, why:"Right: it changes unequal relations over assets."},
+     {t:"Joint land titles for couples", ok:true, why:"Right: joint titles for wives and husbands change unequal relations over assets."},
      {t:"A well closer to the village", why:"A practical need within women’s current role of fetching water."},
      {t:"A clinic for mothers and babies", why:"A practical need."},
      {t:"Cheaper cooking fuel", why:"A practical need."}]},
    {id:"e4u17-q24", lesson:"e4u17-l3", level:3, q:"Lucía cites microcredit as a proven way to lift women out of poverty. Which revision best fits the evidence?", options:[
-     {t:"Six randomised evaluations published in 2015 found modestly positive but not transformative effects, with no consistent income gains; effects on empowerment were limited", ok:true, why:"Right: that is the summary by Banerjee, Karlan and Zinman."},
+     {t:"Six 2015 trials found modest, not transformative, effects", ok:true, why:"Right: six randomised evaluations found modestly positive but not transformative effects, with no consistent income gains and limited effects on empowerment. That is the summary by Banerjee, Karlan and Zinman."},
      {t:"Microcredit has been shown to harm all borrowers", why:"The effects were small and mixed, not uniformly harmful."},
      {t:"There is no evidence either way", why:"There is substantial randomised evidence."},
-     {t:"The Nobel Prize proves that microcredit ends poverty", why:"A prize is not evidence of impact."}]},
+     {t:"The Nobel Prize proves that microcredit ends poverty for women", why:"A prize is not evidence of impact."}]},
    {id:"e4u17-q25", lesson:"e4u17-l3", level:1, q:"Which SDG target asks countries to recognise and value unpaid care and domestic work?", options:[
      {t:"Target 5.4", ok:true, why:"Right: through public services, infrastructure, social protection and shared responsibility in the household."},
      {t:"Target 3.8", why:"Universal health coverage."},
      {t:"Target 8.1", why:"Economic growth."},
      {t:"Target 10.1", why:"Income growth of the bottom 40%."}]},
    {id:"e4u17-q26", lesson:"e4u17-l3", level:2, q:"Which description of group lending (joint liability) is correct?", options:[
-     {t:"Members of a small group are responsible for each other’s repayments, replacing collateral with peer screening and pressure", ok:true, why:"Right: the Grameen model’s key innovation."},
-     {t:"A group of banks lends together to a government", why:"That is a syndicated loan."},
+     {t:"Group members are responsible for each other’s repayments", ok:true, why:"Right: it replaces collateral with peer screening and pressure, the Grameen model’s key innovation."},
+     {t:"A group of banks lends together to one government borrower", why:"That is a syndicated loan."},
      {t:"Borrowers pledge their land as security", why:"Joint liability replaces collateral."},
      {t:"Loans are only given to men", why:"Most Grameen-style borrowers were women."}]},
    {id:"e4u17-q27", lesson:"e4u17-l3", level:2, q:"According to the UN’s 2026 report, what share of seats in national parliaments (lower or single houses) do women hold?", options:[
@@ -1420,8 +1482,8 @@ ICA.addUnit({
      {t:"About 40%", why:"Higher than the global figure."}]},
    /* ---- Lesson 4 ---- */
    {id:"e4u17-q28", lesson:"e4u17-l4", level:2, q:"What is the core claim of Sen’s entitlement approach?", options:[
-     {t:"Famines occur when groups lose the ability to command food, even if total food supply has not fallen much", ok:true, why:"Right: the focus moves from supply to access."},
-     {t:"Famines are always caused by drought", why:"Sen showed that some famines occurred without major supply falls."},
+     {t:"Famine is about lost access to food, not only supply", ok:true, why:"Right: famines occur when groups lose the ability to command food, even if total food supply has not fallen much. The focus moves from supply to access."},
+     {t:"Famines are always caused by drought and harvest failure", why:"Sen showed that some famines occurred without major supply falls."},
      {t:"Famines are caused by overpopulation", why:"Not Sen’s argument."},
      {t:"Famines only happen in democracies", why:"Sen argued the opposite: functioning democracies avoid substantial famines."}]},
    {id:"e4u17-q29", lesson:"e4u17-l4", level:1, q:"Which of these is one of the IPC’s three thresholds for Famine (Phase 5)?", options:[
@@ -1435,33 +1497,33 @@ ICA.addUnit({
      {t:"De Waal denies that famines still occur", why:"He documents recent famines."},
      {t:"De Waal agrees completely with Sen and adds nothing", why:"He shifts the focus to political causes."}]},
    {id:"e4u17-q31", lesson:"e4u17-l4", level:3, q:"A minister says: “There can be no famine here; our granaries are full.” Using this lesson, what is the best reply?", options:[
-     {t:"Full granaries do not guarantee access: if wages fall or prices rise, some groups can lose their entitlement to food, so check incomes and prices, not only stocks", ok:true, why:"Right: Bengal 1943 is the classic case."},
-     {t:"The minister is right: famine only follows a fall in supply", why:"That is the view Sen criticised."},
+     {t:"Full granaries do not guarantee access, so check incomes and prices too", ok:true, why:"Right: if wages fall or prices rise, some groups can lose their entitlement to food. Bengal 1943 is the classic case."},
+     {t:"The minister is right: famine can only follow a fall in total food supply", why:"That is the view Sen criticised."},
      {t:"Granaries are irrelevant to food security", why:"Availability matters; it is just not enough."},
      {t:"Only the IPC can comment, so nothing can be said", why:"The IPC classifies famine, but analysis of risk is open to anyone."}]},
    {id:"e4u17-q32", lesson:"e4u17-l4", level:1, q:"What does food sovereignty emphasise that food security does not?", options:[
-     {t:"Who controls food and farming policy, and the rights of small producers", ok:true, why:"Right: La Vía Campesina’s 1996 frame."},
-     {t:"How many calories people eat", why:"That is part of food security."},
+     {t:"Who controls food and farming policy", ok:true, why:"Right, and the rights of small producers: La Vía Campesina’s 1996 frame."},
+     {t:"How many calories people eat each day", why:"That is part of food security."},
      {t:"Food aid from donors", why:"Food sovereignty is wary of dependence on food aid and imports."},
      {t:"Only international trade", why:"It challenges trade liberalisation but is about control more broadly."}]},
    {id:"e4u17-q33", lesson:"e4u17-l4", level:2, q:"Which is a critique typically made of the Green Revolution?", options:[
-     {t:"It depleted groundwater and reduced crop diversity, and larger farmers gained first", ok:true, why:"Right: environmental and distributional critiques, for example by Shiva (1991)."},
-     {t:"It lowered crop yields", why:"Yields rose sharply; critics focus on costs."},
-     {t:"It started in sub-Saharan Africa", why:"It spread mainly in Asia and Latin America."},
-     {t:"It used no fertiliser", why:"The package depended on fertiliser and irrigation."}]},
+     {t:"It depleted groundwater and favoured larger farmers", ok:true, why:"Right: it also reduced crop diversity, and larger farmers gained first. These are environmental and distributional critiques, for example by Shiva (1991)."},
+     {t:"It lowered crop yields across Asia", why:"Yields rose sharply; critics focus on costs."},
+     {t:"It started in sub-Saharan Africa and stayed there", why:"It spread mainly in Asia and Latin America."},
+     {t:"It used no chemical fertiliser or irrigation, only seeds", why:"The package depended on fertiliser and irrigation."}]},
    {id:"e4u17-q34", lesson:"e4u17-l4", level:1, q:"When did the UN General Assembly recognise the human right to water and sanitation?", options:[
      {t:"28 July 2010 (resolution 64/292)", ok:true, why:"Right, by vote."},
      {t:"1948, in the Universal Declaration", why:"The UDHR does not name water explicitly."},
      {t:"1992, in the Dublin Statement", why:"The Dublin Statement called water an economic good."},
      {t:"2015, in the SDGs", why:"Goal 6 came later; the right was recognised in 2010."}]},
    {id:"e4u17-q35", lesson:"e4u17-l4", level:3, q:"An agency proposes to run its health and food programmes in a war zone jointly with the government’s development ministry, under the nexus. A humanitarian NGO objects. What is its most likely concern?", options:[
-     {t:"Working closely with one party to the conflict could compromise its neutrality and independence, and so its access to people on all sides", ok:true, why:"Right: the main principled worry about the nexus."},
-     {t:"Development programmes are always illegal in war", why:"They are not; the concern is principles and access."},
+     {t:"Working with one party could compromise its neutrality and access", ok:true, why:"Right: working closely with one party to the conflict could compromise its neutrality and independence, and so its access to people on all sides. This is the main principled worry about the nexus."},
+     {t:"Development programmes are always illegal in war under humanitarian law", why:"They are not; the concern is principles and access."},
      {t:"The nexus bans cooperation with governments", why:"It encourages coordination."},
      {t:"Humanitarians never think beyond the short term", why:"Many support longer-term planning; the issue is how."}]},
    {id:"e4u17-q36", lesson:"e4u17-l4", level:2, q:"What did the UN’s 2026 report find about universal health coverage?", options:[
-     {t:"The service coverage index rose only from 68 to 71 between 2015 and 2023, and 4.6 billion people lacked essential services", ok:true, why:"Right: slow progress after earlier gains."},
-     {t:"Universal health coverage was achieved in 2025", why:"Far from it."},
+     {t:"Coverage rose only slightly, and billions lacked essential services", ok:true, why:"Right: the service coverage index rose only from 68 to 71 between 2015 and 2023, and 4.6 billion people lacked essential services."},
+     {t:"Universal health coverage was achieved worldwide in 2025, ahead of schedule", why:"Far from it."},
      {t:"Coverage fell by half since 2015", why:"It rose slightly."},
      {t:"UHC is not an SDG target", why:"It is target 3.8."}]},
    /* ---- Lesson 5 ---- */
@@ -1486,17 +1548,17 @@ ICA.addUnit({
      {t:"Bill Cooke and Uma Kothari", why:"They edited *Participation: The New Tyranny?* (2001)."},
      {t:"Des Gasper", why:"He wrote on logframes."}]},
    {id:"e4u17-q41", lesson:"e4u17-l5", level:2, q:"What was the main argument of *Participation: The New Tyranny?* (2001)?", options:[
-     {t:"Participation can legitimise decisions already taken, empower local elites and hide power behind talk of consensus", ok:true, why:"Right: a critique of how participation is practised."},
+     {t:"Participation can legitimise decisions already made and empower elites", ok:true, why:"Right: it can legitimise decisions already taken, empower local elites and hide power behind talk of consensus. A critique of how participation is practised."},
      {t:"Participation should be made compulsory by law", why:"Not their argument."},
-     {t:"Participation is unnecessary because experts know best", why:"They criticised misuse of participation, not the idea of listening."},
+     {t:"Participation is unnecessary because outside experts already know best", why:"They criticised misuse of participation, not the idea of listening."},
      {t:"Only governments should participate", why:"Not their argument; they wrote about community participation."}]},
    {id:"e4u17-q42", lesson:"e4u17-l5", level:1, q:"What localisation target did the Grand Bargain (2016) set?", options:[
-     {t:"At least 25% of humanitarian funding to local and national responders as directly as possible by 2020", ok:true, why:"Right: commitment 2.4."},
-     {t:"100% of funding to local responders by 2016", why:"Far above the actual target."},
+     {t:"At least 25% to local and national responders by 2020", ok:true, why:"Right: commitment 2.4, at least 25% of humanitarian funding to local and national responders as directly as possible."},
+     {t:"100% of humanitarian funding to local responders by 2016", why:"Far above the actual target."},
      {t:"0.7% of national income as aid", why:"That is the UN aid target from 1970."},
-     {t:"25% of development aid to international NGOs", why:"The target was for local and national responders."}]},
+     {t:"25% of development aid to international NGOs by 2020", why:"The target was for local and national responders."}]},
    {id:"e4u17-q43", lesson:"e4u17-l5", level:3, q:"In a divided district, an agency hires guards and drivers only from the majority community and channels food through its leaders. Which framework best diagnoses the risk?", options:[
-     {t:"Anderson’s “do no harm”: aid may act as a divider that deepens the conflict", ok:true, why:"Right: map dividers and connectors and redesign distribution and hiring."},
+     {t:"Anderson’s “do no harm”", ok:true, why:"Right: aid may act as a divider that deepens the conflict. Map dividers and connectors and redesign distribution and hiring."},
      {t:"The DAC efficiency criterion", why:"Efficiency does not capture conflict effects."},
      {t:"Goodhart’s law", why:"That concerns measures becoming targets."},
      {t:"The logframe’s activities row", why:"A design tool, not a conflict diagnosis."}]},
@@ -1506,9 +1568,9 @@ ICA.addUnit({
      {t:"Removing the costs to keep it short", why:"Costs are essential for decision-makers."},
      {t:"Stating that the trial proves it works everywhere", why:"That overclaims."}]},
    {id:"e4u17-q45", lesson:"e4u17-l5", level:3, q:"Oluwaseun wants a seminar argument that links the four units of the sustainable development cluster. Which plan is strongest?", options:[
-     {t:"Choose one cross-cutting debate (for example, who decides and who pays), use evidence from at least two units, and state what the evidence cannot show", ok:true, why:"Right: a focused question, cross-unit evidence and honest limits."},
+     {t:"One cross-cutting debate, evidence from two units, and honest limits", ok:true, why:"Right: choose one cross-cutting debate (for example, who decides and who pays), use evidence from at least two units, and state what the evidence cannot show."},
      {t:"Summarise each unit in turn", why:"A summary is not an argument."},
-     {t:"Argue that the SDGs solve every problem in the other units", why:"An overclaim with no evidence."},
+     {t:"Argue that the SDGs solve every problem raised in the other three units", why:"An overclaim with no evidence."},
      {t:"Avoid counter-arguments to keep it clear", why:"Seminar arguments are judged partly on how they handle counter-arguments."}]}
   ]
 });

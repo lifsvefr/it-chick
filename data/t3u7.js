@@ -1,6 +1,6 @@
-/* Track 3 · Unit 7 · R basics */
+/* Track 3 · Unit 8 · R basics */
 ICA.addUnit({
-  id:"t3u7", track:"t3", n:7, title:"R basics", icon:"🧮",
+  id:"t3u7", track:"t3", n:8, title:"R basics", icon:"🧮",
   blurb:"R is a free language made for working with data. Learn the ways to run it (including right here in the Data Lab), store values in objects and vectors, call functions, build data frames, read a CSV file, pick rows and count, then summarise, compare groups, draw base-R charts and fit a first straight-line model.",
   goals:[
     "Say what R, RStudio, Posit Cloud and webR are, and run R code in the Data Lab, on a computer, or in a browser",
@@ -10,7 +10,7 @@ ICA.addUnit({
     "Summarise and compare groups with `tapply()` and `aggregate()`, draw histograms, boxplots, scatterplots and bar charts, and use `cor()` and `lm()` with care"
   ],
   read:[
-    {book:"r4ds", where:"Introduction (“Prerequisites” and “Running R code”); Chapter 2, “Workflow: basics”; Chapter 6, “Workflow: scripts and projects”; Chapter 27, “A field guide to base R”", note:"The main R text. Most of the book teaches the tidyverse packages (this track’s Unit 8); the chapters listed here are about R itself and base R."},
+    {book:"r4ds", where:"Introduction (“Prerequisites” and “Running R code”); Chapter 2, “Workflow: basics”; Chapter 6, “Workflow: scripts and projects”; Chapter 27, “A field guide to base R”", note:"The main R text. Most of the book teaches the tidyverse packages (this track’s Unit 9); the chapters listed here are about R itself and base R."},
     {book:"dcss", where:"R for Social Scientists: “Before we Start”, “Introduction to R” and “Starting with Data”", note:"Hands-on, gentle and built around a real (simplified) survey. Its “Starting with Data” episode reads the file with readr’s `read_csv()`; this unit uses base R’s `read.csv()`, which works the same way for a simple file."}
   ],
   lessons:[
@@ -28,7 +28,7 @@ ICA.addUnit({
       {lead:"R is a free programming language, and the program that runs it, built especially for statistics, data and charts."},
       "A **programming language** is a precise way of writing instructions for a computer. Most languages are general-purpose; [[r-language|R]] was designed by statisticians for working with data. Its everyday words are things like `mean()`, `table()`, `hist()` and `lm()`, so a short line of R often does what would take many clicks in a spreadsheet.",
       "The name means two things at once: the **language** you write, and the **software** that reads it and carries it out. R was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, building on an older statistics language called S. Version 1.0.0 came out in February 2000. Today a volunteer group, the **R Core Team**, looks after it, and it is free and open-source software (licensed under the GNU GPL): anyone can download it, use it for any purpose, and read its source code.",
-      "When people say **[[base-r|base R]]** they mean R as it arrives when you install it, with a set of standard packages already included (for statistics, charts and reading files). Everything in this unit is base R. Thousands of extra **[[r-package|packages]]**, made by people all over the world, add more functions. They live on **[[cran|CRAN]]**, the Comprehensive R Archive Network, the same place you download R itself. Unit 8 uses one famous family of packages, the **[[tidyverse-term|tidyverse]]**.",
+      "When people say **[[base-r|base R]]** they mean R as it arrives when you install it, with a set of standard packages already included (for statistics, charts and reading files). Everything in this unit is base R. Thousands of extra **[[r-package|packages]]**, made by people all over the world, add more functions. They live on **[[cran|CRAN]]**, the Comprehensive R Archive Network, the same place you download R itself. Unit 9 uses one famous family of packages, the **[[tidyverse-term|tidyverse]]**.",
       {table:[
         ["Word","What it means"],
         ["R","The language and the program that runs it"],
@@ -105,13 +105,13 @@ ICA.addUnit({
         ["**Start again**","Puts back the challenge’s starting code"]
       ]},
       "Above the editor, some challenges list **Files in R’s folder**, such as `survey.csv`: tap one to look inside before you read it with R. A row of symbol keys (`<-`, `$`, `\"`, brackets, `|>` and more) saves hunting on a phone keyboard. On a computer, [[kbd:Ctrl]] + [[kbd:Enter]] runs the code too.",
-      {warn:"The Data Lab has **base R only**. Packages such as [[dplyr|dplyr]] and [[ggplot2|ggplot2]] (Unit 8) can’t be installed there; use R on a computer or Posit Cloud for those. (webR itself can load many packages, but this lab includes only base R.)"},
+      {warn:"The Data Lab has **base R only**. Packages such as [[dplyr|dplyr]] and [[ggplot2|ggplot2]] (Unit 9) can’t be installed there; use R on a computer or Posit Cloud for those. (webR itself can load many packages, but this lab includes only base R.)"},
       "**Which version?** A new version of R (4.4, 4.5, 4.6…) comes out once a year, usually in spring, with two or three bug-fix releases in between, such as 4.6.1 and 4.6.2. Type `R.version.string` to see yours. Anything from R 4.1 onwards runs every example in this unit."
     ]}
    ],
    try:[
     {id:"t3u7-l1-x1", type:"mcq", q:"R answers `[1] 5` to `2 + 3`. What does the `[1]` mean?", options:[
-      {t:"The first value on this line is item number 1 of the result", ok:true, why:"R treats results as a sequence of values. `[1]` labels the position of the first value shown on that line; long results get `[13]`, `[25]` and so on at the start of later lines."},
+      {t:"The first value shown is item 1 of the result", ok:true, why:"R treats results as a sequence of values. `[1]` labels the position of the first value shown on that line; long results get `[13]`, `[25]` and so on at the start of later lines."},
       {t:"It’s the first answer R has given since it started", why:"R doesn’t number its answers. Every result starts with `[1]`, however many you’ve asked for."},
       {t:"The answer has one decimal place", why:"The brackets have nothing to do with rounding; they count positions."},
       {t:"R is warning that the answer might be wrong", why:"Warnings in R start with the word “Warning”. `[1]` is a normal part of the output."}
@@ -130,9 +130,9 @@ ICA.addUnit({
       ["Plots","Shows the charts your code draws","Charts appear in the bottom-right pane’s Plots tab, where you can also export them."]
     ]},
     {id:"t3u7-l1-x4", type:"mcq", q:"Kenji types `mean(c(4, 8, 6)` into the console and presses Enter. Instead of an answer, the console shows `+`. What’s going on?", options:[
-      {t:"R is waiting for the rest of the command, because a bracket isn’t closed", ok:true, why:"There are two `(` but only one `)`. The `+` prompt means “carry on”. Type `)` and press Enter, or press Esc to cancel and retype."},
+      {t:"R is waiting for the rest of the command", ok:true, why:"A bracket isn’t closed: there are two `(` but only one `)`. The `+` prompt means “carry on”. Type `)` and press Enter, or press Esc to cancel and retype."},
       {t:"R is adding the numbers together", why:"`+` here is a prompt, not the plus operator. R hasn’t run anything yet."},
-      {t:"R has crashed and needs restarting", why:"Nothing has gone wrong with R; it just needs a complete command."},
+      {t:"R has crashed and needs restarting before it can continue", why:"Nothing has gone wrong with R; it just needs a complete command."},
       {t:"The answer is positive", why:"R shows results after `[1]`. A `+` at the start of the line is a prompt."}
     ]},
     {id:"t3u7-l1-x5", type:"order", q:"Put the steps for setting up R and RStudio on a computer in order.", items:[
@@ -145,7 +145,7 @@ ICA.addUnit({
       {t:"Calculate a mean with `mean()`", ok:true, why:"`mean()` is part of base R, which the lab has."},
       {t:"Read the lab’s `survey.csv` with `read.csv()`", ok:true, why:"`read.csv()` is base R, and challenges list their files above the editor."},
       {t:"Draw a histogram with `hist()`", ok:true, why:"Base R charts work; they appear under the output."},
-      {t:"Load ggplot2 with `library(ggplot2)`", why:"ggplot2 is a package that isn’t in the lab, which has base R only. Use R on a computer or Posit Cloud for it (Unit 8)."},
+      {t:"Load ggplot2 with `library(ggplot2)`", why:"ggplot2 is a package that isn’t in the lab, which has base R only. Use R on a computer or Posit Cloud for it (Unit 9)."},
       {t:"Use dplyr’s `filter()`", why:"dplyr isn’t available in the lab either. Its base-R cousin `subset()` is, and Lesson 4 teaches it."}
     ]}
    ],
@@ -227,7 +227,7 @@ ICA.addUnit({
       {ex:"[1] \"numeric\"\n[1] \"character\"\n[1] \"logical\"\nError: non-numeric argument to binary operator", label:"R prints", mono:true},
       "A **binary operator** is just a symbol with a value on each side, like `*`. The message means “one side isn’t a number”. To turn text digits into a number, use `as.numeric(\"12.5\")`.",
       "Logical values come from questions. `5 > 3` gives `TRUE`; `\"Rain\" == \"rain\"` gives `FALSE` (text comparisons are case-sensitive). Note the **double** equals `==` for “is equal to”: a single `=` assigns. The others are `!=` (not equal), `<`, `<=`, `>` and `>=`.",
-      "There is one more special value: `NA`, which means **missing** (“not available”). An empty cell in a data file becomes `NA` in R, and Lesson 4 deals with it."
+      "There is one more special value: `NA`, which means **missing** (“not available”). An empty cell in a number column becomes `NA` when R reads a data file (in a text column it becomes an empty text `\"\"` unless you tell R otherwise), and Lesson 4 deals with both."
     ]},
     {h:"Vectors: many values in one object", body:[
       "A **[[r-vector|vector]]** is an ordered set of values of the same type, and it’s R’s basic building block. Make one with `c()`, for **c**ombine. Here are Mei’s step counts for one week:",
@@ -261,7 +261,7 @@ ICA.addUnit({
       {code:['temps <- c(18.5, 21.0, NA, 19.5)','mean(temps)','mean(temps, na.rm = TRUE)'].join("\n"), lang:"r"},
       {ex:"[1] NA\n[1] 19.66667", label:"R prints", mono:true},
       {h:"Functions inside functions, and the pipe"},
-      "You can put one call inside another; R works from the inside out. `round(mean(steps))` first takes the mean, then rounds it to 7426. Since R 4.1 there’s also the **[[pipe-operator|pipe]]** `|>`, which passes a value along from left to right. `steps |> mean() |> round()` reads “take steps, then mean, then round” and gives the same 7426. Unit 8 uses the pipe a lot ({{pipes-r}}).",
+      "You can put one call inside another; R works from the inside out. `round(mean(steps))` first takes the mean, then rounds it to 7426. Since R 4.1 there’s also the **[[pipe-operator|pipe]]** `|>`, which passes a value along from left to right. `steps |> mean() |> round()` reads “take steps, then mean, then round” and gives the same 7426. Unit 9 uses the pipe a lot ({{pipes-r}}).",
       {lab:"dl-r-vector", t:"Practise: the mean, median and length of a vector"}
     ]},
     {h:"Reading R’s error messages", body:[
@@ -432,12 +432,12 @@ ICA.addUnit({
       "Text columns such as `item` are plain character vectors. When a column holds a small set of categories (sizes, survey answers, regions), you can turn it into a **[[r-factor|factor]]**, which stores the allowed categories (its **levels**) in an order you choose. Tables and charts then follow that order instead of the alphabet:",
       {code:['size <- c("small", "large", "small", "medium")','table(size)','size <- factor(size, levels = c("small", "medium", "large"))','table(size)'].join("\n"), lang:"r"},
       {ex:"size\n large medium  small \n     1      1      2 \nsize\n small medium  large \n     2      1      1 ", label:"R prints", mono:true},
-      "Older R (before version 4.0) turned text into factors automatically when making data frames; R 4.0 and later keep text as text unless you ask, which avoids many surprises. Unit 8’s tidyverse prints data frames as **[[tibble|tibbles]]**, a modern take on the same idea."
+      "Older R (before version 4.0) turned text into factors automatically when making data frames; R 4.0 and later keep text as text unless you ask, which avoids many surprises. Unit 9’s tidyverse prints data frames as **[[tibble|tibbles]]**, a modern take on the same idea."
     ]}
    ],
    try:[
     {id:"t3u7-l3-x1", type:"mcq", q:"Why can’t one column of a data frame hold both `12` and `\"twelve\"` as different types?", options:[
-      {t:"Each column is a vector, and a vector holds values of one type", ok:true, why:"A data frame is equal-length vectors side by side. If you mix them, R converts the whole column to text, so `12` becomes `\"12\"`."},
+      {t:"Each column is a vector, which holds one type", ok:true, why:"A data frame is equal-length vectors side by side. If you mix them, R converts the whole column to text, so `12` becomes `\"12\"`."},
       {t:"Data frames can only hold numbers", why:"Data frames can hold text, numbers and TRUE/FALSE, just one type per column."},
       {t:"R doesn’t allow text in data frames made by hand", why:"The `bakery` example has a text column (`item`)."},
       {t:"It can; each cell has its own type", why:"That’s closer to a spreadsheet. In R the type belongs to the whole column."}
@@ -579,8 +579,8 @@ ICA.addUnit({
       {t:"`read.csv(\"raw/prices\")`", why:"The file is called `prices.csv`: the `.csv` ending is part of its name, so R won’t find `prices` without it."}
     ]},
     {id:"t3u7-l4-x2", type:"mcq", q:"Dmitri reads a file and `str()` shows `$ weight: chr \"61.5\" \"70.2\" \"n/a\" …`. What’s the most likely reason the weight column isn’t numeric?", options:[
-      {t:"At least one cell holds text, such as `n/a`, so R kept the whole column as text", ok:true, why:"A column has one type. One non-number makes R keep the column as character. `read.csv(…, na.strings = c(\"\", \"NA\", \"n/a\"))` reads `n/a` as missing, and the column becomes numeric."},
-      {t:"read.csv() always reads decimals as text", why:"It reads decimals with a full stop as numbers (`num`). Something in this column isn’t a number."},
+      {t:"At least one cell holds text, such as `n/a`", ok:true, why:"So R kept the whole column as text: a column has one type. One non-number makes R keep the column as character. `read.csv(…, na.strings = c(\"\", \"NA\", \"n/a\"))` reads `n/a` as missing, and the column becomes numeric."},
+      {t:"read.csv() always reads numbers with decimals as text", why:"It reads decimals with a full stop as numbers (`num`). Something in this column isn’t a number."},
       {t:"The column name is wrong", why:"The name doesn’t affect the type; the values do."},
       {t:"R can’t store weights over 60", why:"There’s no such limit; numbers can be any size."}
     ]},
@@ -607,14 +607,14 @@ ICA.addUnit({
       {v:0.14, tol:0.001, why:"That divides by 100 instead of by the 40 rows."}
     ]},
     {id:"t3u7-l4-x6", type:"mcq", q:"`walks[walks$minutes > 70, ]` shows walks 5 and 10, plus a row full of `NA`. Why the extra row?", options:[
-      {t:"Walk 13’s minutes is missing, so “is it over 70?” is NA, and [ ] turns an NA answer into a row of NAs", ok:true, why:"R can’t answer TRUE or FALSE for a missing value. `subset(walks, minutes > 70)` or `walks[which(walks$minutes > 70), ]` keep only the definite TRUEs."},
+      {t:"Walk 13’s minutes is missing, so the test gives NA", ok:true, why:"“Is it over 70?” is NA, and [ ] turns an NA answer into a row of NAs. R can’t answer TRUE or FALSE for a missing value. `subset(walks, minutes > 70)` or `walks[which(walks$minutes > 70), ]` keep only the definite TRUEs."},
       {t:"There’s a blank line at the end of the file", why:"A blank last line doesn’t create an NA row in read.csv(). The NA comes from the comparison."},
       {t:"R adds a totals row", why:"Picking rows never adds a summary row."},
-      {t:"The comma in `[ , ]` adds an empty row", why:"The comma means “all columns”; it doesn’t add rows."}
+      {t:"The comma in `[ , ]` adds an empty row to the result", why:"The comma means “all columns”; it doesn’t add rows."}
     ]},
     {id:"t3u7-l4-x7", type:"mcq", q:"Priya runs `table(d$colour)` and gets `blue 12  Blue 3  red 9`. What does that tell her?", options:[
-      {t:"The data has inconsistent capitals: “blue” and “Blue” are counted separately", ok:true, why:"table() counts exact values, and capitals count. It’s a quick way to spot spelling variants before analysing; tidy them (for example with `tolower()`) and count again."},
-      {t:"There are 3 shades of blue in the data", why:"R isn’t judging colours; it’s counting two different spellings."},
+      {t:"The capitals are inconsistent: “blue” and “Blue” differ", ok:true, why:"They are counted separately: table() counts exact values, and capitals count. It’s a quick way to spot spelling variants before analysing; tidy them (for example with `tolower()`) and count again."},
+      {t:"There are 3 different shades of blue recorded in the data", why:"R isn’t judging colours; it’s counting two different spellings."},
       {t:"table() has made a mistake", why:"table() is exact. The data really contains both spellings."},
       {t:"She should use sum() instead", why:"sum() would count one value at a time and hide the variants that table() just revealed."}
     ]}
@@ -674,7 +674,7 @@ ICA.addUnit({
       "Park walks look quickest, but they are also the shortest (`tapply(walks$km, walks$route, mean)` gives Hill 3.825, Park 2.325, River 4.72 km). A fairer measure is **pace**, minutes per km:",
       {code:['walks$pace <- walks$minutes / walks$km','round(tapply(walks$pace, walks$route, mean, na.rm = TRUE), 1)'].join("\n"), lang:"r"},
       {ex:" Hill  Park River \n 17.2  13.1  12.5 ", label:"R prints", mono:true},
-      "Now the story is clearer: hill walks take about 17 minutes per km, the flat routes about 12 to 13. Totals and averages answer different questions; before comparing groups, ask whether they differ in size or exposure (Unit 1’s {{percentages-rates|rates}}). And with only four or five walks per route, these are descriptions of this club’s walks, not firm facts about routes in general (Unit 6 covers {{standard-error-ci|uncertainty}}).",
+      "Now the story is clearer: hill walks take about 17 minutes per km, the flat routes about 12 to 13. Totals and averages answer different questions; before comparing groups, ask whether they differ in size or exposure (Unit 1’s {{percentages-rates|rates}}). And with only four or five walks per route, these are descriptions of this club’s walks, not firm facts about routes in general (Unit 7 covers {{standard-error-ci|uncertainty}}).",
       {lab:"dl-r-groups", t:"Practise: the mean score for each group"}
     ]},
     {h:"Base R charts", body:[
@@ -717,7 +717,7 @@ ICA.addUnit({
         "`coef(fit)` gives both numbers; `coef(fit)[2]` the slope alone. `predict(fit, data.frame(km = 5))` gives the line’s value at 5 km, about 70 minutes."
       ]},
       "Add the line to the scatterplot with `abline(fit)` after `plot()`. Then look at which points sit above it: all four Hill walks do. The line ignores the route, so it under-predicts hill walks. The gaps between points and line are the **[[residual|residuals]]**, and patterns in them point to something the model is missing.",
-      "`lm()` quietly left out walk 13, which has no time (`nobs(fit)` is 12). `summary(fit)` shows much more: standard errors, p-values and [[r-squared|R²]] (0.79 here). Unit 6 of this track explains those ({{linear-regression}}). For now, the slope and the causation warning are enough: a slope describes a pattern in these data; on its own it doesn’t prove that one thing causes the other.",
+      "`lm()` quietly left out walk 13, which has no time (`nobs(fit)` is 12). `summary(fit)` shows much more: standard errors, p-values and [[r-squared|R²]] (0.79 here). Unit 7 of this track explains those ({{linear-regression}}). For now, the slope and the causation warning are enough: a slope describes a pattern in these data; on its own it doesn’t prove that one thing causes the other.",
       {lab:"dl-r-lm", t:"Practise: fit lm() and store the slope"}
     ]},
     {h:"Putting it together in a script", body:[
@@ -725,7 +725,7 @@ ICA.addUnit({
       {code:['# Walking club: how long do walks take, and why?','walks <- read.csv("walks.csv")','str(walks)                 # 13 walks, 5 columns','colSums(is.na(walks))      # walk 13 has no time','','# Pace is fairer than total minutes: routes differ in length','walks$pace <- walks$minutes / walks$km','round(tapply(walks$pace, walks$route, mean, na.rm = TRUE), 1)','','boxplot(pace ~ route, data = walks,','  main = "Pace by route", ylab = "Minutes per km")','','fit <- lm(minutes ~ km, data = walks)','coef(fit)'].join("\n"), lang:"r", label:"walks.R"},
       "Run it from top to bottom. In RStudio, R for Data Science recommends restarting R (**Session → Restart R**) and rerunning the whole script now and then: if it still works from a clean start, your script, not your memory, holds the analysis.",
       {key:"Read, check, summarise, compare fairly, chart, and only then model. Write each step in a script so anyone can rerun it."},
-      "Unit 8 does the same jobs with the tidyverse: dplyr’s `group_by()` and `summarise()` instead of `tapply()` ({{grouped-summaries}}), and ggplot2 for charts. Knowing base R first means you’ll understand what those tools do for you, and you can still work in the Data Lab, which has base R only."
+      "Unit 9 does the same jobs with the tidyverse: dplyr’s `group_by()` and `summarise()` instead of `tapply()` ({{grouped-summaries}}), and ggplot2 for charts. Knowing base R first means you’ll understand what those tools do for you, and you can still work in the Data Lab, which has base R only."
     ]}
    ],
    try:[
@@ -768,7 +768,7 @@ ICA.addUnit({
       {v:73, tol:0, why:"That adds the three numbers (20 + 3 + 50). The slope multiplies the size."}
     ]},
     {id:"t3u7-l5-x7", type:"mcq", q:"Ana fits `lm(score ~ hours, data = d)` and gets a slope of 5.6. Which statement is justified?", options:[
-      {t:"In these data, each extra hour went with about 5.6 more points, on average", ok:true, why:"That describes the fitted line: the change in predicted score per extra hour, for these data."},
+      {t:"In these data, an extra hour went with 5.6 more points on average", ok:true, why:"That describes the fitted line: the average change in predicted score per extra hour, for these data."},
       {t:"Studying one more hour will raise any student’s score by 5.6 points", why:"A slope from observational data doesn’t prove cause, and it describes an average pattern, not what happens to each person."},
       {t:"5.6% of the variation in score is explained by hours", why:"That’s a misreading. The share of variation explained is R², shown by summary(fit), and it’s a different number."},
       {t:"The correlation between hours and score is 5.6", why:"A correlation is always between −1 and 1. The slope is in score points per hour."}
@@ -802,6 +802,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u7-q02","t3u7-q06","t3u7-q11","t3u7-q14","t3u7-q17","t3u7-q22","t3u7-q25","t3u7-q30","t3u7-q34","t3u7-q37","t3u7-q41","t3u7-q45"],
+  cpBank:[
+   {id:"t3u7-cp01", lesson:"t3u7-l1", level:1, q:"Ali wants to practise base R on his phone during a long bus ride. He can’t install anything, and he wants nothing he types to leave the device. Which option fits?", options:[
+     {t:"RStudio Desktop, installed on the phone", why:"RStudio Desktop must be installed on a computer, after R itself. It doesn’t run on a phone."},
+     {t:"Posit Cloud in the phone’s browser", why:"Posit Cloud needs no install, but the code and files live on Posit’s servers, so they do leave the device."},
+     {t:"The Data Lab, which runs R with webR", ok:true, why:"webR runs R on the device itself, inside the page. It needs no install, and nothing typed is sent to a server."},
+     {t:"None: R can only run on a desktop computer", why:"webR is R rebuilt to run inside a web page, so it works on phones and tablets too."}]},
+   {id:"t3u7-cp02", lesson:"t3u7-l1", level:2, q:"Posit Cloud counts compute hours as (GB of memory + number of processors) ÷ 2 × hours. Jana’s project has 3 GB of memory and 1 processor and is open for 2 hours. How many compute hours does it use?", options:[
+     {t:"2", why:"That counts clock hours only. The project’s size matters: (3 + 1) ÷ 2 = 2 compute hours per hour."},
+     {t:"8", why:"That leaves out the ÷ 2 in the formula: (3 + 1) × 2 = 8."},
+     {t:"4", ok:true, why:"(3 + 1) ÷ 2 × 2 = 4. A bigger project uses compute hours faster than the default 1 GB, 1-processor project."},
+     {t:"6", why:"That multiplies the memory by the hours (3 × 2) and ignores the processor and the ÷ 2."}]},
+   {id:"t3u7-cp03", lesson:"t3u7-l2", level:1, q:"In R, `x <- c(3, 8, 1, 6)`. What does `x[-2]` give?", options:[
+     {t:"`[1] 3 1 6`", ok:true, why:"A negative position means “everything except”: position 2 (the 8) is dropped."},
+     {t:"`[1] 1 6`", why:"That drops the first two values. `x[-2]` removes only position 2."},
+     {t:"`[1] 1`", why:"That would be the value two from the end. R has no counting from the end; `-2` means “all but position 2”."},
+     {t:"`[1] 8`", why:"`x[2]` would pick the 8. The minus sign means “leave position 2 out”."}]},
+   {id:"t3u7-cp04", lesson:"t3u7-l2", level:2, q:"Tomás types `x <- c(4, \"5\", 6)` and then `mean(x)`. What happens?", options:[
+     {t:"`[1] 5`, because R reads \"5\" as a number", why:"R doesn’t guess. One text value turns the whole vector into text: \"4\" \"5\" \"6\"."},
+     {t:"`[1] NA` with a warning: x is now text", ok:true, why:"A vector holds one type, so all three values became text. `mean()` can’t average text, so it warns and returns NA."},
+     {t:"`[1] 5`, after R drops the text value", why:"Nothing is dropped. All three values are now text, so there are no numbers to average."},
+     {t:"An error: `unexpected symbol`", why:"The line is valid R. The problem shows up later, as a warning and NA from `mean()`."}]},
+   {id:"t3u7-cp05", lesson:"t3u7-l2", level:3, q:"Mina runs `x <- as.numeric(c(\"12\", \"15\", \"about 20\", \"9\"))` and gets a warning. Then `mean(x, na.rm = TRUE)` gives 12. What should she conclude?", options:[
+     {t:"Everything is fine: the warning can be ignored because the mean worked", why:"The mean left out a value that was probably real. The warning points to messy data worth checking."},
+     {t:"The mean should be 14, because R counted the text as 20", why:"R can’t read “about 20” as 20. It became NA, and na.rm left it out."},
+     {t:"“about 20” became NA; 12 is the mean of the other three", ok:true, why:"The warning (NAs introduced by coercion) shows one value couldn’t be converted. 12 = (12 + 15 + 9) ÷ 3. She should check that entry, which was probably a real time."},
+     {t:"`na.rm = TRUE` changed “about 20” into 0", why:"na.rm removes missing values; it doesn’t replace them. With a 0, the mean would be 9."}]},
+   {id:"t3u7-cp06", lesson:"t3u7-l3", level:1, q:"`shop` is a data frame with columns `item`, `price` and `stock`. What does `shop[order(shop$price), ]` give?", options:[
+     {t:"Just the prices, sorted from lowest to highest", why:"The empty part after the comma means all columns. You get whole rows, not one column."},
+     {t:"All rows and columns, sorted from cheapest to most expensive", ok:true, why:"`order()` gives the row positions in price order; using them as the rows part reorders whole rows."},
+     {t:"All rows, sorted from most to least expensive", why:"`order()` sorts lowest first unless you add `decreasing = TRUE`."},
+     {t:"The row positions in price order, such as 4 2 5 3 1", why:"That is what `order(shop$price)` alone gives. Putting it inside `shop[ , ]` returns the sorted rows."}]},
+   {id:"t3u7-cp07", lesson:"t3u7-l3", level:2, q:"`mean(shop$price)` works, but `mean(shop[\"price\"])` gives NA with the warning “argument is not numeric or logical”. Why?", options:[
+     {t:"Single brackets give a one-column data frame", ok:true, why:"`shop$price` (or `shop[[\"price\"]]`) gives a plain numeric vector. `shop[\"price\"]` keeps the data-frame wrapper."},
+     {t:"The price column contains a missing value", why:"Then both versions would give NA without that warning. The difference here is in what the brackets return."},
+     {t:"Quotes turn the prices into text", why:"The quotes name the column; they don’t change its values. The issue is the data-frame result of single brackets."},
+     {t:"`mean()` only works on columns picked with a comma", why:"`shop[, \"price\"]` would work, as would `$`. Without the comma, single brackets return a one-column data frame."}]},
+   {id:"t3u7-cp08", lesson:"t3u7-l4", level:2, q:"Ages in `d` are whole years. Which rows does `subset(d, age >= 18 & age < 65)` keep?", options:[
+     {t:"Rows where age is 18 to 65, including 65", why:"`< 65` means strictly less than 65, so 65 itself is left out."},
+     {t:"Rows where age is under 18 or 65 and over", why:"That would need `|` and reversed conditions. `&` keeps rows where both conditions are TRUE."},
+     {t:"Rows where age is from 18 up to 64", ok:true, why:"`&` needs both: at least 18 and below 65. With whole-number ages, that is 18 to 64."},
+     {t:"None: you can’t use two conditions in `subset()`", why:"`subset()` takes any TRUE/FALSE condition, including ones joined with `&` or `|`."}]},
+   {id:"t3u7-cp09", lesson:"t3u7-l4", level:2, q:"`nrow(d)` is 30, but `table(d$transport)` shows `bike 7  bus 12  walk 5`, which adds up to 24. What is the most likely reason?", options:[
+     {t:"`table()` only looks at the first 24 rows", why:"`table()` looks at every value. It just leaves out NAs by default."},
+     {t:"6 values are written in capitals and were merged", why:"Text comparisons are exact, so `Bus` would appear as its own category, not vanish."},
+     {t:"`table()` hides categories with fewer than 5 values", why:"There is no such rule. Even a category with one value is shown."},
+     {t:"6 values are NA, which `table()` leaves out", ok:true, why:"Missing values aren’t counted by default. `useNA = \"ifany\"` adds an NA count so you can see them."}]},
+   {id:"t3u7-cp10", lesson:"t3u7-l4", level:3, q:"A clinic records `wait <- c(12, NA, 35, 8, 41, NA, 22, 30)` in minutes. What does `mean(wait > 25, na.rm = TRUE)` give?", options:[
+     {t:"`[1] 3`", why:"3 is the count of waits over 25 (35, 41, 30), which `sum()` would give. `mean()` of TRUE/FALSE gives the proportion."},
+     {t:"`[1] 0.375`", why:"That is 3 ÷ 8, counting the two missing waits as FALSE. With `na.rm = TRUE`, the NAs are dropped, so R divides by 6."},
+     {t:"`[1] NA`", why:"Without `na.rm = TRUE`, it would: two comparisons are unknown. Here the missing ones are removed first."},
+     {t:"`[1] 0.5`", ok:true, why:"Six waits are known; three of them (35, 41, 30) are over 25. TRUE counts as 1, so the mean is 3 ÷ 6 = 0.5."}]},
+   {id:"t3u7-cp11", lesson:"t3u7-l5", level:3, q:"`x <- c(2, 4, 4, 5, 7, 9, 10, 12)`. What does `IQR(x)` give with R’s default settings?", options:[
+     {t:"5.25", ok:true, why:"R’s default (type 7) matches QUARTILE.INC: Q1 at position 2.75 is 4, Q3 at position 6.25 is 9.25. 9.25 − 4 = 5.25."},
+     {t:"5.5", why:"That is the textbook method (medians of each half: 4 and 9.5). R’s default rule interpolates differently."},
+     {t:"5.75", why:"That matches QUARTILE.EXC (Q3 = 9.75). R’s default matches the inclusive method."},
+     {t:"10", why:"10 is the range (12 − 2). The IQR is the spread of the middle half."}]},
+   {id:"t3u7-cp12", lesson:"t3u7-l5", level:3, q:"After `d <- read.csv(\"trips.csv\")`, `str(d)` shows `$ minutes: chr \"34\" \"41\" \"n/a\" …`. `tapply(d$minutes, d$route, mean)` then gives NA for every route. What is the best fix?", options:[
+     {t:"Add `na.rm = TRUE` to `tapply()`; nothing else is needed", why:"The column is still text, so `mean()` can’t average it, even with na.rm. Fix the type when reading."},
+     {t:"Read with `na.strings = c(\"NA\", \"n/a\")`, then add `na.rm = TRUE`", ok:true, why:"Telling R that “n/a” means missing makes the column numeric. Then na.rm skips the missing trips."},
+     {t:"Use `table()` instead of `tapply()` to get the averages", why:"`table()` counts values; it doesn’t give a mean per route."},
+     {t:"Delete the minutes column and use the number of trips instead", why:"That throws away the data you need. The fix is to read “n/a” as missing."}]},
+  ],
   codex:[
    {id:"r-intro", title:"R and base R", aka:["R","R language","R programming","base R","CRAN","R packages","install.packages","library()","R versions"], tags:["data","coding","statistics"],
     summary:"What R is, where it comes from, what base R and packages are, how to install and load a package, and how R versions work.",
@@ -818,7 +880,7 @@ ICA.addUnit({
       "**Base R** is what you get when you install R: the `base` package plus standard ones such as `stats` (models and tests), `graphics` (charts) and `utils` (including `read.csv()`). They load automatically.",
       "**Packages** add functions, data and documentation. Install once, load each session:",
       {code:['install.packages("palmerpenguins")   # once, needs internet','library(palmerpenguins)             # each session'].join("\n"), lang:"r"},
-      "`install.packages()` downloads from CRAN (names go in quotes); `library()` makes the package’s functions available (quotes optional). An error such as `there is no package called ‘palmerpenguins’` means it isn’t installed yet. R for Data Science installs the tidyverse with `install.packages(\"tidyverse\")`; this track’s Unit 8 uses it.",
+      "`install.packages()` downloads from CRAN (names go in quotes); `library()` makes the package’s functions available (quotes optional). An error such as `there is no package called ‘palmerpenguins’` means it isn’t installed yet. R for Data Science installs the tidyverse with `install.packages(\"tidyverse\")`; this track’s Unit 9 uses it.",
       "**Versions.** R for Data Science notes that a new “major” version comes out once a year with two or three smaller releases in between. In practice the second number changes each spring (4.4, 4.5, 4.6) and the third marks bug-fix releases (4.6.1, 4.6.2). `R.version.string` shows yours. After a yearly upgrade you usually need to reinstall your packages.",
       "**Which version for this unit?** The native pipe `|>` arrived in R 4.1.0, so anything from 4.1 onwards runs every example. The Data Lab runs R 4.6."
      ],
@@ -826,7 +888,7 @@ ICA.addUnit({
       "**Help.** `?mean` or `help(mean)` opens a function’s help page; `??\"linear model\"` searches all installed help. Help pages end with runnable examples (`example(mean)`). `vignette(package = \"stats\")` lists longer guides where a package has them.",
       "**Calling without loading.** `pkg::fun()` calls a function from an installed package without `library()`, for example `utils::head(x)`. R for Data Science uses this notation to show where a function comes from. If two loaded packages have functions with the same name, the one loaded last wins (it **masks** the other); `pkg::` removes the doubt.",
       "**Reproducibility.** `sessionInfo()` prints your R version, operating system and loaded package versions; include it when you report a problem or archive an analysis. Packages such as renv record a project’s exact package versions so the code still runs years later (Data Carpentry mentions renv for this).",
-      "**Trusting packages.** CRAN runs automated checks on every package, but it doesn’t review whether a package’s statistics are right. Prefer well-documented, widely used packages, check their documentation, and be wary of package names suggested by AI tools: as Track 2, Unit 10 warns, a suggested package may not exist, or may be an impostor ({{ai-code-licensing-security}}).",
+      "**Trusting packages.** CRAN runs automated checks on every package, but it doesn’t review whether a package’s statistics are right. Prefer well-documented, widely used packages, check their documentation, and be wary of package names suggested by AI tools: as Track 2, Unit 11 warns, a suggested package may not exist, or may be an impostor ({{ai-code-licensing-security}}).",
       "**Version changes that matter.** R 4.0.0 changed `data.frame()` and `read.csv()` to keep text as text (`stringsAsFactors = FALSE`); older code and tutorials may assume factors. R 4.1.0 added `|>` and the short function syntax `\\(x) x + 1`. R 4.2.0 made UTF-8 the native text encoding on recent Windows systems. When old code behaves strangely, check which R it was written for.",
       "**Base R or tidyverse?** Both are R. R for Data Science teaches the tidyverse for consistency, and its base-R chapter says plainly that mixing approaches is fine. Base R matters because it is always there (including in the Data Lab and on locked-down machines), and because tidyverse functions are built on it."
      ]},
@@ -944,7 +1006,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "To read a file, R must find it. It looks in one folder, the **[[working-directory-r|working directory]]**. `getwd()` shows which folder that is. A name like `\"walks.csv\"` means “in that folder”; `\"data/walks.csv\"` means “in its data subfolder”.",
-      "`walks <- read.csv(\"walks.csv\")` reads a [[csv|CSV]] file into a data frame. The first line becomes the column names; each column gets a type; empty cells become `NA`.",
+      "`walks <- read.csv(\"walks.csv\")` reads a [[csv|CSV]] file into a data frame. The first line becomes the column names; each column gets a type; empty cells become `NA` in number columns and `\"\"` in text columns (add `na.strings = c(\"\", \"NA\")` to make them `NA` too).",
       "Then check: `str(walks)` (types), `summary(walks)` (odd values and NAs), `nrow(walks)` (did all the rows arrive?).",
       "In RStudio, an **RStudio project** sets the working directory for you. In the Data Lab, the challenge’s files are already in R’s folder. No file at all? `read.csv(text = \"…\")` reads data written straight into your code, handy on a phone.",
       "Reading a file never changes it: R works on a copy in memory, so your raw data stays safe.",
@@ -1005,7 +1067,7 @@ ICA.addUnit({
       "**Reading lm().** `lm(minutes ~ km, data = walks)` gives an intercept and a slope. The slope is the average change in the outcome per one-unit change in the predictor, within the range of the data. `predict(fit, data.frame(km = 5))` gives the line’s value. `abline(fit)` draws it on a scatterplot."
      ],
      pro:[
-      "**summary(fit)** adds standard errors, t values, p-values, the residual standard error and R². Unit 6 of this track explains them ({{linear-regression}}). Check residuals before trusting any of it: `plot(fit)` draws four diagnostic plots; patterns in residuals (curves, groups above or below the line) mean the straight line is missing something, like the hill route in this unit’s example.",
+      "**summary(fit)** adds standard errors, t values, p-values, the residual standard error and R². Unit 7 of this track explains them ({{linear-regression}}). Check residuals before trusting any of it: `plot(fit)` draws four diagnostic plots; patterns in residuals (curves, groups above or below the line) mean the straight line is missing something, like the hill route in this unit’s example.",
       "**More than one predictor.** `lm(minutes ~ km + route, data = walks)` fits separate intercepts for each route (R turns the text column into indicator variables, with the first level as the baseline). Interpreting such models needs care, and is beyond this unit.",
       "**Formula notation.** `y ~ x` appears across R: `lm()`, `aggregate()`, `boxplot()`, `t.test(y ~ g, data = d)`. The left side is the outcome, the right the predictors or groups; `.` means “all other columns”.",
       "**Several summaries per group.** `aggregate(cbind(minutes, km) ~ route, data = walks, FUN = mean)` summarises several columns at once. `split(d$y, d$g)` returns a list of pieces for anything more complex, and `sapply(split(d$y, d$g), median)` applies a function to each. In the tidyverse, `group_by()` and `summarise()` do this job ({{grouped-summaries}}).",
@@ -1055,7 +1117,7 @@ ICA.addUnit({
       "**Histogram bins.** `breaks = 10` is only a suggestion (R picks “pretty” cut points near it); give exact cut points with `breaks = seq(20, 90, by = 10)`. R’s bins include the right end by default (`right = TRUE`: 20 < x ≤ 30). `hist(x, plot = FALSE)` returns the breaks and counts without drawing, handy for checking.",
       "**Small groups in boxplots.** With fewer than about ten values, a boxplot hides how few points there are. Add them: `stripchart(pace ~ route, data = walks, vertical = TRUE, add = TRUE, pch = 19)`, or use `stripchart()` alone. Show the data where you can.",
       "**Colour and accessibility.** `palette.colors()` (R 4.0 and later) gives the Okabe–Ito palette, designed to be distinguishable with common colour-vision deficiencies; `hcl.colors(5, \"viridis\")` gives a sequential palette. Don’t rely on colour alone, and give every published chart alt text and a short data table or summary (Unit 4, {{colour-in-charts}}).",
-      "**Base graphics vs ggplot2.** R for Data Science notes many people use ggplot2 for its defaults, automatic legends and layered grammar, while base plots stay useful because they’re so concise for quick looks. Base graphics draw immediately and can’t be changed afterwards except by redrawing; ggplot2 builds a plot object you can modify and save ({{ggplot2-basics}}, Unit 8)."
+      "**Base graphics vs ggplot2.** R for Data Science notes many people use ggplot2 for its defaults, automatic legends and layered grammar, while base plots stay useful because they’re so concise for quick looks. Base graphics draw immediately and can’t be changed afterwards except by redrawing; ggplot2 builds a plot object you can modify and save ({{ggplot2-basics}}, Unit 9)."
      ]},
     related:["chart-types","distributions","boxplots","correlation-coefficient","summary-stats-r","ggplot2-basics"],
     read:[{book:"r4ds", where:"Chapter 27, “A field guide to base R”, section “Plots”"},{book:"wilke", where:"Chapter 5, “Directory of visualizations”", note:"For choosing a chart; it uses ggplot2, but the advice applies to any tool."}],
@@ -1094,7 +1156,7 @@ ICA.addUnit({
      pro:[
       "**Tracing.** After an error inside nested function calls, `traceback()` shows the chain of calls that led to it. `options(warn = 2)` turns warnings into errors so you can find where one starts. RStudio’s debugger and `browser()` let you pause inside a function and inspect objects.",
       "**Error messages from packages** follow the same pattern but often add hints (tidyverse functions explain which argument was wrong and why). Read the whole message, including lines starting with `ℹ` or `✖`.",
-      "**Asking for help well.** Make a **minimal reproducible example** (a “reprex”): the smallest code and data that still show the problem, with `library()` calls and a small data frame built in the code (`dput(head(d))` prints code that recreates your data). Include the exact message and `sessionInfo()`. Often, making the example reveals the bug. Track 2, Unit 9’s {{asking-for-help}} applies to R as well.",
+      "**Asking for help well.** Make a **minimal reproducible example** (a “reprex”): the smallest code and data that still show the problem, with `library()` calls and a small data frame built in the code (`dput(head(d))` prints code that recreates your data). Include the exact message and `sessionInfo()`. Often, making the example reveals the bug. Track 2, Unit 10’s {{asking-for-help}} applies to R as well.",
       "**AI assistants** can explain an error message well, but check what they suggest: they may invent functions or arguments that don’t exist, or packages that aren’t on CRAN. Run the suggestion, read the help page (`?function`), and test the result on data where you know the answer.",
       "**The Data Lab’s help.** The lab adds plain-language explanations to common errors (including “did you mean” suggestions for misspelt names) and, when you press Check, says which test failed and why. On a computer you get R’s own message only, so learning to read it pays off."
      ]},
@@ -1126,7 +1188,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t3u7-q01", lesson:"t3u7-l1", level:1, q:"What is “base R”?", options:[
-     {t:"R as it comes when installed, with its standard packages", ok:true, why:"Base R includes the core language plus packages such as stats, graphics and utils, which load automatically."},
+     {t:"R as installed, with its standard packages", ok:true, why:"Base R includes the core language plus packages such as stats, graphics and utils, which load automatically."},
      {t:"An older, simpler version of R for beginners", why:"Base R is current R; it isn’t a cut-down edition."},
      {t:"The tidyverse family of packages", why:"The tidyverse is a set of add-on packages you install separately."},
      {t:"The R code that runs on Posit’s servers", why:"Where R runs doesn’t change what base R is."}]},
@@ -1136,10 +1198,10 @@ ICA.addUnit({
      {t:"Install RStudio without R", why:"RStudio needs R, and she can’t install either."},
      {t:"Open the `.R` file in a word processor", why:"A word processor can show code but can’t run it."}]},
    {id:"t3u7-q03", lesson:"t3u7-l1", level:1, q:"Why must R be installed before RStudio?", options:[
-     {t:"RStudio is a window around R and runs R in the background", ok:true, why:"RStudio is an IDE; R itself does the calculating, so RStudio needs to find it."},
+     {t:"RStudio is a window around R and needs it to run", ok:true, why:"RStudio is an IDE that runs R in the background; R itself does the calculating, so RStudio needs to find it."},
      {t:"RStudio replaces R once it’s installed", why:"RStudio never replaces R; it depends on it."},
      {t:"R installs RStudio’s fonts", why:"There’s no such dependency; RStudio needs the R program."},
-     {t:"It doesn’t matter: RStudio includes R", why:"RStudio Desktop doesn’t include R; you install R from CRAN separately."}]},
+     {t:"It doesn’t matter: RStudio Desktop includes its own copy of R", why:"RStudio Desktop doesn’t include R; you install R from CRAN separately."}]},
    {id:"t3u7-q04", lesson:"t3u7-l1", level:2, q:"Kenji types `sum(c(2, 4)` and the console shows `+`. What should he do?", options:[
      {t:"Type the missing `)` and press Enter, or press Esc and retype", ok:true, why:"`+` means R is waiting for the rest of the command; the bracket of `sum(` isn’t closed."},
      {t:"Restart RStudio", why:"Nothing is broken; R only needs the end of the command."},
@@ -1151,9 +1213,9 @@ ICA.addUnit({
      {t:"Shows one correct answer", why:"That’s Show an answer."},
      {t:"Puts the starting code back", why:"That’s Start again."}]},
    {id:"t3u7-q06", lesson:"t3u7-l1", level:3, q:"Lucía works with patient records at a clinic and wants to practise R on them. Which choice keeps the data on her own computer?", options:[
-     {t:"R and RStudio Desktop installed on her work computer (if her organisation allows it)", ok:true, why:"With desktop R the data stays on the machine. Clinic data is sensitive, so she should also follow her organisation’s rules."},
+     {t:"R and RStudio Desktop on her work computer, if allowed", ok:true, why:"With desktop R the data stays on the machine. Clinic data is sensitive, so she should also follow her organisation’s rules."},
      {t:"Uploading the records to Posit Cloud", why:"Posit Cloud stores files on Posit’s servers, so the data leaves her computer; only do that if her organisation has agreed."},
-     {t:"Emailing the file to herself to use on her phone", why:"Email sends the data through other servers; it doesn’t keep it on her computer."},
+     {t:"Emailing the file to herself to use on her phone instead", why:"Email sends the data through other servers; it doesn’t keep it on her computer."},
      {t:"Any option: R data is always encrypted", why:"R doesn’t encrypt your data; where it’s stored depends on how you run R."}]},
    {id:"t3u7-q07", lesson:"t3u7-l1", level:1, q:"What is CRAN?", options:[
      {t:"The official archive where you download R and most packages", ok:true, why:"CRAN, the Comprehensive R Archive Network, hosts R and thousands of packages."},
@@ -1161,18 +1223,18 @@ ICA.addUnit({
      {t:"R’s chart-drawing package", why:"Base R’s charts are in the graphics package."},
      {t:"A file type for R scripts", why:"R scripts end in `.R`."}]},
    {id:"t3u7-q08", lesson:"t3u7-l1", level:2, q:"Which reason for using an R script instead of clicking in a spreadsheet is strongest?", options:[
-     {t:"The script records every step, so the analysis can be rerun and checked", ok:true, why:"Repeatability is the main reason: new data, a reviewer or your future self can rerun and inspect each step."},
+     {t:"The script records every step, so it can be rerun and checked", ok:true, why:"Repeatability is the main reason: new data, a reviewer or your future self can rerun and inspect each step."},
      {t:"R can’t make mistakes", why:"R does exactly what you write, including mistakes; the script makes them findable."},
      {t:"Scripts don’t need the data file", why:"A script still reads the data; it records what is done with it."},
-     {t:"Spreadsheets can’t calculate means", why:"They can; the difference is the record of steps."}]},
+     {t:"Spreadsheets can’t calculate means or other statistics reliably", why:"They can; the difference is the record of steps."}]},
    {id:"t3u7-q09", lesson:"t3u7-l1", level:3, q:"Tomás opens a Data Lab R challenge on a train with a weak signal, and it seems stuck on “Starting R…”. What is the likeliest explanation?", options:[
-     {t:"The first time, the lab downloads R (up to 46 MB), which takes a while on a slow connection", ok:true, why:"webR has to download once; after that it’s saved, and the lab starts quickly."},
+     {t:"The first time, the lab has to download R", ok:true, why:"The download is up to 46 MB, which takes a while on a slow connection. webR has to download once; after that it’s saved, and the lab starts quickly."},
      {t:"The Data Lab only works on computers", why:"It runs in the browser on phones and tablets too."},
      {t:"His code has an error", why:"He hasn’t run anything yet; R is still starting."},
-     {t:"He needs to sign in to Posit Cloud first", why:"The Data Lab doesn’t use Posit Cloud or any account."}]},
+     {t:"He needs to sign in to Posit Cloud before it can start", why:"The Data Lab doesn’t use Posit Cloud or any account."}]},
    /* ---- Lesson 2 ---- */
    {id:"t3u7-q10", lesson:"t3u7-l2", level:1, q:"What does `x <- 7` do?", options:[
-     {t:"Stores 7 in an object called x, without printing anything", ok:true, why:"`<-` assigns. To see the value, type `x` on its own."},
+     {t:"Stores 7 in an object called x", ok:true, why:"`<-` assigns, and nothing is printed. To see the value, type `x` on its own."},
      {t:"Checks whether x is less than minus 7", why:"With spaces as `x < -7` that would be a comparison; `<-` together is assignment. (Spaces around `<-` make code clearer.)"},
      {t:"Prints 7", why:"Assignment is silent."},
      {t:"Makes x always equal to 7, even if reassigned", why:"A later `x <- …` replaces it."}]},
@@ -1212,14 +1274,14 @@ ICA.addUnit({
      {t:"R stores 450", why:"R doesn’t treat commas as thousands separators either; it’s an error."},
      {t:"R stores two values, 4 and 50", why:"That would need `c(4, 50)`."}]},
    {id:"t3u7-q18", lesson:"t3u7-l2", level:2, q:"`as.numeric(c(\"12\", \"7\", \"n/a\"))` gives `12 7 NA` with a warning. What does the warning tell you?", options:[
-     {t:"One value couldn’t be turned into a number, so it became NA", ok:true, why:"`NAs introduced by coercion` means R met text (“n/a”) that isn’t a number. Check the data."},
+     {t:"One value couldn’t become a number, so it became NA", ok:true, why:"`NAs introduced by coercion` means R met text (“n/a”) that isn’t a number. Check the data."},
      {t:"The code stopped without a result", why:"A warning lets the code finish; an error stops it."},
      {t:"12 and 7 were changed", why:"They converted correctly."},
-     {t:"Nothing important; warnings can be ignored", why:"Warnings often point at messy data and are worth reading."}]},
+     {t:"Nothing important; warnings like this can safely be ignored", why:"Warnings often point at messy data and are worth reading."}]},
    /* ---- Lesson 3 ---- */
    {id:"t3u7-q19", lesson:"t3u7-l3", level:1, q:"Which describes a data frame?", options:[
-     {t:"Equal-length column vectors side by side, each column with one type", ok:true, why:"That’s the structure: columns are vectors; rows are observations."},
-     {t:"A grid where each cell can have its own type", why:"In R the type belongs to the whole column."},
+     {t:"Equal-length column vectors side by side, one type per column", ok:true, why:"That’s the structure: columns are vectors; rows are observations."},
+     {t:"A grid where each cell can have its own type, like a spreadsheet", why:"In R the type belongs to the whole column."},
      {t:"A single long vector", why:"A data frame has several columns."},
      {t:"A chart of a table", why:"It’s the table itself, not a picture of it."}]},
    {id:"t3u7-q20", lesson:"t3u7-l3", level:2, q:"`d` has 120 rows and 6 columns. What does `dim(d)` give?", options:[
@@ -1248,9 +1310,9 @@ ICA.addUnit({
      {t:"`d$total = SUM(price, qty)`", why:"R has no SUM function (it’s lower-case sum), and you want a product per row."},
      {t:"`d[total] <- d$price * d$qty`", why:"The column name needs quotes inside brackets: `d[\"total\"]`; `$` is simpler."}]},
    {id:"t3u7-q25", lesson:"t3u7-l3", level:3, q:"Hana’s survey has answers “Never”, “Sometimes”, “Often”. `table()` lists them alphabetically: Never, Often, Sometimes. How can she show them in their natural order?", options:[
-     {t:"Make the column a factor with `levels = c(\"Never\", \"Sometimes\", \"Often\")`", ok:true, why:"A factor’s levels set the order that tables and charts follow."},
+     {t:"Make it a factor with levels in the order she wants", ok:true, why:"Use `levels = c(\"Never\", \"Sometimes\", \"Often\")`. A factor’s levels set the order that tables and charts follow."},
      {t:"Sort the rows with order()", why:"Sorting rows doesn’t change the order table() lists categories in."},
-     {t:"Rename them “1 Never”, “2 Sometimes”, “3 Often”", why:"That works as a hack but changes the data; a factor keeps the real labels."},
+     {t:"Rename them “1 Never”, “2 Sometimes”, “3 Often” in the data", why:"That works as a hack but changes the data; a factor keeps the real labels."},
      {t:"Use `as.numeric()` on the column", why:"Text that isn’t digits becomes NA."}]},
    {id:"t3u7-q26", lesson:"t3u7-l3", level:2, q:"Why does `data.frame(a = c(1, 2, 3), b = c(\"x\", \"y\"))` fail?", options:[
      {t:"The columns have different lengths (3 and 2)", ok:true, why:"Every column must have one value per row; R says the arguments imply differing numbers of rows."},
@@ -1265,17 +1327,17 @@ ICA.addUnit({
    /* ---- Lesson 4 ---- */
    {id:"t3u7-q28", lesson:"t3u7-l4", level:1, q:"What is R’s working directory?", options:[
      {t:"The folder where R looks for files and saves them", ok:true, why:"A file name without a folder means “in the working directory”; getwd() shows it."},
-     {t:"The folder where R is installed", why:"That’s a different place; you rarely need it."},
+     {t:"The folder where the R program itself is installed", why:"That’s a different place; you rarely need it."},
      {t:"The list of objects you’ve created", why:"That’s the environment."},
      {t:"Your Downloads folder, always", why:"It’s wherever R was started or the project is; you can check with getwd()."}]},
    {id:"t3u7-q29", lesson:"t3u7-l4", level:2, q:"`read.csv(\"sales.csv\")` stops with “cannot open the connection” and a warning “No such file or directory”. What should you check first?", options:[
-     {t:"The file’s exact name and whether it’s in the working directory", ok:true, why:"R couldn’t find the file: check spelling (and capitals on Linux, Posit Cloud and the Data Lab) and run getwd() or list.files()."},
+     {t:"The file’s exact name and location", ok:true, why:"R couldn’t find the file in the working directory: check spelling (and capitals on Linux, Posit Cloud and the Data Lab) and run getwd() or list.files()."},
      {t:"Whether the CSV has a header row", why:"R didn’t get as far as reading the contents."},
-     {t:"Whether R needs updating", why:"read.csv() works in every R version; the file wasn’t found."},
+     {t:"Whether R needs updating to a newer version", why:"read.csv() works in every R version; the file wasn’t found."},
      {t:"Whether the numbers use full stops", why:"That matters once the file is read; here it wasn’t opened at all."}]},
    {id:"t3u7-q30", lesson:"t3u7-l4", level:3, q:"Ana reads a CSV from a colleague in Germany. `str()` shows one column called `name.age.score` with values like `\"Jo;31;4,5\"`. What happened, and what’s the fix?", options:[
-     {t:"The file uses semicolons and decimal commas; read it with `read.csv2()`", ok:true, why:"read.csv() split at commas that weren’t there; read.csv2() expects `;` between values and `,` for decimals."},
-     {t:"The file is damaged; ask for it again", why:"It’s a common, valid format; only the separator differs."},
+     {t:"Semicolons and decimal commas; use `read.csv2()`", ok:true, why:"The file uses semicolons and decimal commas. read.csv() split at commas that weren’t there; read.csv2() expects `;` between values and `,` for decimals."},
+     {t:"The file is damaged; ask the colleague to send it again", why:"It’s a common, valid format; only the separator differs."},
      {t:"Add `header = FALSE`", why:"The header isn’t the problem; the separator is."},
      {t:"Use `as.numeric()` on the column", why:"The values are still glued together; read the file with the right separator first."}]},
    {id:"t3u7-q31", lesson:"t3u7-l4", level:2, q:"Which line keeps the rows of `d` where `country` is \"Chile\" or \"Peru\"?", options:[
@@ -1294,17 +1356,17 @@ ICA.addUnit({
      {t:"0.12", why:"That’s the proportion, not the number of rows."},
      {t:"44", why:"That’s the number of FALSE rows."}]},
    {id:"t3u7-q34", lesson:"t3u7-l4", level:3, q:"Priya counts with `sum(d$income > 30000)` and gets NA. The data has a few missing incomes. What should she do?", options:[
-     {t:"Use `sum(d$income > 30000, na.rm = TRUE)` and report how many incomes were missing", ok:true, why:"Missing values make some comparisons NA; na.rm = TRUE counts the known ones, and reporting the missing count keeps it honest."},
+     {t:"Add `na.rm = TRUE` and report the missing count", ok:true, why:"Use `sum(d$income > 30000, na.rm = TRUE)`. Missing values make some comparisons NA; na.rm = TRUE counts the known ones, and reporting the missing count keeps it honest."},
      {t:"Delete the column", why:"That throws away all the information."},
-     {t:"Use `mean()` instead", why:"mean() would also give NA, and gives a proportion rather than a count."},
-     {t:"Assume missing incomes are 0", why:"That invents data and biases the count."}]},
+     {t:"Use `mean()` instead, which skips missing values", why:"mean() would also give NA, and gives a proportion rather than a count."},
+     {t:"Assume the missing incomes are 0 and count again", why:"That invents data and biases the count."}]},
    {id:"t3u7-q35", lesson:"t3u7-l4", level:2, q:"Why might `d[d$score > 80, ]` show an extra row full of NA?", options:[
      {t:"Some score is missing, so the condition is NA for that row", ok:true, why:"Square brackets turn an NA answer into a row of NAs; subset() or which() keep only definite TRUEs."},
      {t:"The CSV has a blank line at the end", why:"read.csv() skips blank lines."},
      {t:"80 itself is included", why:"`>` excludes 80, and including it wouldn’t create an NA row."},
      {t:"The comma adds a row", why:"The comma separates the rows and columns parts."}]},
    {id:"t3u7-q36", lesson:"t3u7-l4", level:3, q:"Sione shares a script that starts with `setwd(\"C:/Users/Sione/Desktop/project\")`. Fatima, on a Mac, can’t run it. What’s the better habit?", options:[
-     {t:"Use an RStudio project and relative paths such as `\"data/file.csv\"`", ok:true, why:"A project sets the working directory to its folder on any computer, so relative paths work everywhere."},
+     {t:"Use an RStudio project and relative paths", ok:true, why:"A relative path looks like `\"data/file.csv\"`. A project sets the working directory to its folder on any computer, so relative paths work everywhere."},
      {t:"Fatima should create the same Windows folders on her Mac", why:"That’s fragile and won’t work on every system."},
      {t:"Use backslashes in the path", why:"Backslashes don’t help other computers find Sione’s Desktop (and need doubling in R strings)."},
      {t:"Email the data inside the script", why:"Possible for tiny data, but it doesn’t fix the path habit."}]},
@@ -1330,7 +1392,7 @@ ICA.addUnit({
      {t:"x and y must be in the same data frame", why:"cor() takes any two numeric vectors of the same length."},
      {t:"cor() needs `na.rm = TRUE`", why:"cor() has no na.rm argument; it uses `use =` instead."}]},
    {id:"t3u7-q41", lesson:"t3u7-l5", level:3, q:"A study club finds `cor(hours_online, grade)` is −0.4. A member says “being online lowers grades”. What’s the best reply?", options:[
-     {t:"The correlation shows a moderate downward pattern, not that one causes the other; other factors could explain it", ok:true, why:"Correlation describes association. Cause would need a design such as an experiment, or careful study of other factors."},
+     {t:"It shows a moderate downward pattern, not cause", ok:true, why:"Other factors could explain it. Correlation describes association. Cause would need a design such as an experiment, or careful study of other factors."},
      {t:"Right: a negative r proves a harmful effect", why:"No correlation, however strong, proves cause on its own."},
      {t:"Wrong: −0.4 means there’s no relationship", why:"−0.4 is a moderate negative association."},
      {t:"It means grades fall by 0.4 points per hour online", why:"That’s a slope, from lm(); r isn’t in grade points per hour."}]},
@@ -1345,12 +1407,12 @@ ICA.addUnit({
      {t:"51", why:"That adds all three numbers; the slope multiplies the hours."},
      {t:"270", why:"That multiplies the intercept too ((40 + 5) × 6)."}]},
    {id:"t3u7-q44", lesson:"t3u7-l5", level:3, q:"Kenji compares two bus routes: route 1’s trips total 900 minutes over 30 trips, route 2’s 700 minutes over 20 trips. He says route 1 is slower. What should he compare instead?", options:[
-     {t:"Mean minutes per trip: route 1 is 30, route 2 is 35, so route 2 is slower per trip", ok:true, why:"Totals depend on how many trips there were. Per trip, route 2 takes longer: compare like with like."},
-     {t:"The totals are fine because both are in minutes", why:"Same units, but different numbers of trips."},
+     {t:"Mean minutes per trip, which shows route 2 is slower", ok:true, why:"Route 1 takes 900 ÷ 30 = 30 minutes per trip and route 2 takes 700 ÷ 20 = 35. Totals depend on how many trips there were. Per trip, route 2 takes longer: compare like with like."},
+     {t:"The totals are fine, because both are measured in minutes", why:"Same units, but different numbers of trips."},
      {t:"Only the longest trip on each route", why:"One extreme trip says little about the typical trip."},
      {t:"The correlation between routes", why:"Correlation is for two numeric variables, not a comparison of two group averages."}]},
    {id:"t3u7-q45", lesson:"t3u7-l5", level:3, q:"After `plot(d$km, d$minutes)` and `abline(fit)`, Mei sees that all the hill walks sit above the line. What does that suggest?", options:[
-     {t:"The straight line misses something about hills; route matters as well as distance", ok:true, why:"A group of residuals all on one side means the model leaves out a factor; hill walks take longer than distance alone predicts."},
+     {t:"The line misses something about hills", ok:true, why:"Route matters as well as distance. A group of residuals all on one side means the model leaves out a factor; hill walks take longer than distance alone predicts."},
      {t:"The hill data are wrong and should be deleted", why:"Nothing suggests errors; the pattern is real information about the walks."},
      {t:"The correlation must be negative", why:"The line rises; the hill points are above it, which doesn’t make r negative."},
      {t:"The model is perfect for hill walks", why:"Points consistently above the line mean the line under-predicts them."}]}

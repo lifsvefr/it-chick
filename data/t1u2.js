@@ -123,7 +123,7 @@ ICA.addUnit({
       [".png","An image that keeps every pixel exactly","PNG is lossless: good for screenshots and logos where sharp edges matter."]
     ]},
     {id:"t1u2-l1-x2", type:"mcq", q:"A job website accepts only JPG images. Tomás renames `profile.heic` to `profile.jpg` and uploads it. What has he actually done?", options:[
-      {t:"Changed only the label; the data is still HEIC, so the upload may fail or show a broken image", ok:true, why:"Right. The extension is a label. Converting needs an app to rewrite the data as JPEG, for example with Export or Save As."},
+      {t:"Changed only the label; the data inside is still HEIC", ok:true, why:"Right. The extension is a label, so the upload may fail or show a broken image. Converting needs an app to rewrite the data as JPEG, for example with Export or Save As."},
       {t:"Converted the photo to JPG, because the extension controls the format", why:"This is the core misconception. The extension describes the format; changing the description doesn’t change the contents."},
       {t:"Damaged the photo so it can never be opened again", why:"Renaming doesn’t touch the data. Renaming it back to .heic restores it fully."},
       {t:"Made the photo smaller, because JPG files are smaller", why:"Nothing about the data changed, so the size is identical. (In fact HEIC is usually the smaller format.)"}
@@ -150,7 +150,7 @@ ICA.addUnit({
       {t:"The colours of the pixels in the sunset", why:"That is the data — the content of the picture itself."}
     ]},
     {id:"t1u2-l1-x6", type:"mcq", q:"Kenji zips a folder of 200 holiday JPEG photos (900 MB) to email it. The zip is still about 890 MB. Why?", options:[
-      {t:"JPEG photos are already compressed, so zip finds little left to squeeze", ok:true, why:"Correct. JPEG has already removed redundancy. Zip works best on text and documents. For big photo sets, a cloud sharing link is better than email."},
+      {t:"JPEG photos are already compressed", ok:true, why:"Correct. JPEG has already removed redundancy, so zip finds little left to squeeze. Zip works best on text and documents. For big photo sets, a cloud sharing link is better than email."},
       {t:"He zipped it wrong; a correct zip always halves the size", why:"There is no fixed ratio. How much zip saves depends entirely on how repetitive the data is."},
       {t:"Zip only works on Windows", why:"Zip is built into Windows, macOS, ChromeOS and phones. The platform isn’t the issue."},
       {t:"Zipping removed photos, so it can’t be smaller", why:"Zip is lossless and keeps every file. The size barely changed because the photos were already compressed."}
@@ -316,10 +316,10 @@ ICA.addUnit({
       ["Home folder","The folder that holds all your personal folders","Named after your user account; Documents, Desktop and Downloads live inside it."]
     ]},
     {id:"t1u2-l2-x7", type:"mcq", q:"Lucía deletes a folder of photos from a USB stick on her Windows laptop, then realizes she needed them. She opens the Recycle Bin. What will she most likely find?", options:[
-      {t:"The photos aren’t there; deletions from many USB sticks skip the Recycle Bin", ok:true, why:"Windows usually deletes removable-drive files immediately. Her best hope is another copy elsewhere, which is why backups matter."},
+      {t:"Not the photos: on many USB sticks, deletions skip the bin", ok:true, why:"Windows usually deletes removable-drive files immediately. Her best hope is another copy elsewhere, which is why backups matter."},
       {t:"The photos, ready to restore", why:"That’s true for the laptop’s own drive, but files on most USB sticks bypass the bin on Windows."},
       {t:"A shortcut to the photos", why:"The Recycle Bin holds deleted files, not shortcuts to them."},
-      {t:"The photos, but only for 24 hours", why:"There’s no 24-hour rule here; they never went to the bin at all."}
+      {t:"The photos, but only for 24 hours after they were deleted", why:"There’s no 24-hour rule here; they never went to the bin at all."}
     ]}
    ],
    apply:{intro:"Find your way around your own folders.", tasks:[
@@ -462,7 +462,7 @@ ICA.addUnit({
       {t:".xlsx", why:"The extension always comes last; it’s added by the app when you save."}
     ]},
     {id:"t1u2-l3-x7", type:"mcq", q:"Lucía has a photo of her grandmother at the beach. She wants to find it when browsing “Grandma” and when browsing “Beach 2025”. What’s the best approach?", options:[
-      {t:"Keep it in one folder and give it two tags (or put it in two albums in her photo app)", ok:true, why:"One file, many groups. Edits show up everywhere, and there’s no duplicate to drift apart."},
+      {t:"Keep one copy and give it two tags or albums", ok:true, why:"Keep it in one folder and give it two tags (or put it in two albums in her photo app). One file, many groups: edits show up everywhere, and there’s no duplicate to drift apart."},
       {t:"Copy it into both folders", why:"Two separate files: crop or rotate one and the other stays unchanged, and backups store it twice."},
       {t:"Rename it to “Grandma Beach 2025” so search finds it", why:"A good name helps search, but it doesn’t put the photo in two browsing groups. Spaces in the name also break naming practice."},
       {t:"Put the Beach 2025 folder inside the Grandma folder", why:"Then every beach photo, even of other people, is filed under Grandma. Folders can’t express “belongs to both”."}
@@ -569,8 +569,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"t1u2-l4-x1", type:"mcq", q:"Which description of cloud storage is most accurate?", options:[
-      {t:"Your files stored on a company’s servers in data centres, reached over the internet", ok:true, why:"The cloud is physical: buildings of computers run by a provider."},
-      {t:"Files stored in the air between devices, using Wi-Fi", why:"Wi-Fi only carries data to the internet; the files have to live on some computer’s storage."},
+      {t:"Files kept on a company’s servers, reached over the internet", ok:true, why:"The cloud is physical: buildings of computers in data centres, run by a provider."},
+      {t:"Files stored in the air between your devices, carried by Wi-Fi", why:"Wi-Fi only carries data to the internet; the files have to live on some computer’s storage."},
       {t:"A part of your own hard drive set aside for sharing", why:"A sync app keeps a local copy on your drive, but the cloud copy itself is on the provider’s servers."},
       {t:"A backup that can never be lost", why:"Providers protect against hardware failure, but you can still lose files by deleting them, through sync mistakes, or by losing account access."}
     ]},
@@ -595,7 +595,7 @@ ICA.addUnit({
       ["A passport scan for one travel agent","Invite that one person only, never an “anyone” link","Sensitive documents go only to named people, with the lowest permission they need."]
     ]},
     {id:"t1u2-l4-x5", type:"mcq", q:"Ana shares her family’s medical-insurance folder with “Anyone with the link can view” and sends the link to her sister. What is the main risk?", options:[
-      {t:"Anyone who gets the link — through forwarding or a screenshot of the chat — can open the files without signing in", ok:true, why:"An anyone-link is like a house key. Inviting her sister by email would limit access to her sister’s account."},
+      {t:"Anyone who gets the link can open the files", ok:true, why:"Through forwarding or a screenshot of the chat, anyone can get the link and open the files without signing in. An anyone-link is like a house key. Inviting her sister by email would limit access to her sister’s account."},
       {t:"Her sister can delete the files", why:"With view permission, nobody using the link can delete or edit. The risk is who can read them."},
       {t:"The files will be converted to PDF", why:"Sharing doesn’t change files’ formats."},
       {t:"There’s no risk because the link is long and random", why:"Long links are hard to guess, but they’re easy to forward. Most leaks happen through forwarding and posting, not guessing."}
@@ -607,7 +607,7 @@ ICA.addUnit({
       {v:12.7, tol:0.05, why:"That’s how much is used (3.2 + 9.5). Subtract it from 15 to find what’s left."}
     ]},
     {id:"t1u2-l4-x7", type:"mcq", q:"Hana edits `shopping-list.docx` on her laptop on a train with no signal, while her flatmate edits the same file at home. When the laptop reconnects, Hana sees two files, one with her laptop’s name added. What happened and what should she do?", options:[
-      {t:"A sync conflict; the app kept both versions. She should compare them, merge the changes into one, then delete the extra", ok:true, why:"Sync apps keep both rather than silently throwing one away. Merging by hand is the fix; editing online together avoids it."},
+      {t:"A sync conflict; she should merge the two, then delete the extra", ok:true, why:"The app kept both versions rather than silently throwing one away. Comparing and merging by hand is the fix; editing online together avoids it."},
       {t:"A virus copied the file; she should delete both", why:"Duplicates with a device name added are the normal sign of a sync conflict, not malware. Deleting both would lose both people’s work."},
       {t:"The cloud is broken; she should stop using sync", why:"This is the expected, safe behaviour when two edits happen apart."},
       {t:"Her version automatically replaced her flatmate’s; she can ignore the extra file", why:"Nothing was merged. Each file holds only one person’s changes, so ignoring the extra one loses work."}
@@ -651,7 +651,7 @@ ICA.addUnit({
         ["Google Drive","Trash is emptied automatically after 30 days","Docs, Sheets and Slides have their own version history; for uploaded files, an old version may be deleted after 30 days or once there are 100 newer versions, unless you choose **Keep forever**"],
         ["iCloud Drive","Recently Deleted keeps files for 30 days; icloud.com also has a Data Recovery page to **Restore Files**","Apps such as Pages and Numbers keep versions; there is no general version history for every file"]
       ]},
-      "[[version-history]] is excellent for “I overwrote the good paragraph yesterday.” It is weak against things you notice late (“this photo was deleted four months ago”), against losing access to the account, and against anything that happens to the whole account at once.",
+      "[[version-history]] is excellent for “I overwrote the good paragraph yesterday.” It is weak against things you notice late (“this photo was deleted four months ago”), against losing access to the account, and against anything that happens to the whole account at once. The provider keeps its own machines running, but your data and who can reach it stay your job: Unit 12, Lesson 3 calls this the {{shared-responsibility|shared responsibility model}}.",
       {tip:"Deleted something from the cloud? Act quickly. Check the cloud bin on the website, not just the bin on your computer: they are separate."}
     ]},
     {h:"The 3-2-1 rule", body:[
@@ -747,8 +747,8 @@ ICA.addUnit({
       {v:56, tol:0, why:"That adds the numbers. The time left is the limit minus the time already passed."}
     ]},
     {id:"t1u2-l5-x5", type:"mcq", q:"Ransomware scrambles every file on Kenji’s shop computer, including the OneDrive folder, which syncs. Which copy is most likely to be safe?", options:[
-      {t:"A backup on an external drive that was unplugged and in a drawer", ok:true, why:"Malware can’t reach a disconnected drive. This is why the NCSC says to unplug backup drives when not in use."},
-      {t:"The OneDrive copy, because it’s in the cloud", why:"Sync uploads the scrambled files. Version history may help roll back, but the synced copy itself is scrambled."},
+      {t:"An external drive that was unplugged and in a drawer", ok:true, why:"Malware can’t reach a disconnected drive. This is why the NCSC says to unplug backup drives when not in use."},
+      {t:"The OneDrive copy, because it’s safely stored in the cloud", why:"Sync uploads the scrambled files. Version history may help roll back, but the synced copy itself is scrambled."},
       {t:"An external drive that’s always plugged in", why:"Ransomware can spread to attached drives automatically."},
       {t:"The Recycle Bin", why:"It holds deleted files, not clean copies of scrambled ones, and is on the infected computer."}
     ]},
@@ -785,6 +785,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u2-q02","t1u2-q06","t1u2-q11","t1u2-q14","t1u2-q20","t1u2-q23","t1u2-q28","t1u2-q31","t1u2-q34","t1u2-q38","t1u2-q41","t1u2-q44"],
+  cpBank:[
+    {id:"t1u2-cp01", lesson:"t1u2-l1", level:1, q:"Bao takes a screenshot of an error message with very small text to send to his IT team. Which format keeps every pixel exactly as it was?", options:[
+      {t:"`.jpg`", why:"JPEG makes photos small by throwing away some detail. Small text can come out blurry."},
+      {t:"`.png`", ok:true, why:"PNG keeps every pixel exactly, which is why it suits screenshots and logos."},
+      {t:"`.csv`", why:"A CSV is a table stored as plain text. It can’t hold a picture."},
+      {t:"`.zip`", why:"A zip is a container for other files. It is not an image format itself."}
+    ]},
+    {id:"t1u2-cp02", lesson:"t1u2-l2", level:1, q:"On a Mac, Ayşe’s file has this path: `/Users/ayse/Documents/Choir/2026/schedule.pdf`. Which folder directly contains `schedule.pdf`?", options:[
+      {t:"`Choir`", why:"`Choir` is one level higher. It contains the `2026` folder, which contains the file."},
+      {t:"`Documents`", why:"`Documents` is further up the path. Read from the right: the folder just before the file name holds it."},
+      {t:"`ayse`", why:"`ayse` is her home folder, near the top of the path, not the folder that holds the file."},
+      {t:"`2026`", ok:true, why:"A path lists folders from the top down. The last folder before the file name is the one that contains it."}
+    ]},
+    {id:"t1u2-cp03", lesson:"t1u2-l3", level:1, q:"In the name `2026-01-20_choir_rehearsal-notes_v03.txt`, what job do the underscores and hyphens do?", options:[
+      {t:"Underscores separate the parts; hyphens join words inside one part", ok:true, why:"This is the common convention: `_` between date, project, description and version, and `-` inside a part such as `rehearsal-notes`."},
+      {t:"They are only decoration, and spaces would do the same job just as well", why:"Spaces break some links and scripts. Underscores and hyphens keep the name readable by machines as well as people."},
+      {t:"Hyphens mark the version number and underscores mark the date", why:"The version is shown by `v03`, and the date by its ISO format. The separators have a different job."},
+      {t:"They tell the computer which app should open the file", why:"The app is chosen by the extension after the last dot, here `.txt`. Separators don’t affect that."}
+    ]},
+    {id:"t1u2-cp04", lesson:"t1u2-l1", level:2, q:"Grace sends a report as a `.docx` file. Her colleague replies, “I don’t have Microsoft Word, so I can’t open it.” What is the most useful reply?", options:[
+      {t:"“Then I’ll rename it to `.pdf` so you can read it.”", why:"Renaming changes only the label, not the data inside. To make a PDF she would need to export or save as PDF."},
+      {t:"“You need to buy Word, because `.docx` files only open in Word.”", why:"A format is not owned by one app. Several programs can open `.docx` files."},
+      {t:"“LibreOffice Writer, Google Docs and Pages can open `.docx` too.”", ok:true, why:"The `.docx` format is published as a standard, so many programs open it. Complex layouts may look slightly different."},
+      {t:"“I’ll zip it first, and then any app on your computer can open it.”", why:"Zipping puts the file in a container. The document inside is still a `.docx`."}
+    ]},
+    {id:"t1u2-cp05", lesson:"t1u2-l2", level:2, q:"On his Windows laptop, Owen holds **Ctrl** while he drags `budget.xlsx` from Documents to the Desktop. Both folders are on the same drive. What is the result?", options:[
+      {t:"The file moves to the Desktop, so only one copy remains", why:"A plain drag on the same drive moves the file. Holding Ctrl changes that and forces a copy."},
+      {t:"A shortcut to the file appears on the Desktop", why:"On Windows, holding Alt while dragging makes a shortcut. Ctrl makes a copy."},
+      {t:"There are now two separate copies, one in each of the folders", ok:true, why:"Holding Ctrl while dragging forces a copy. The two files are independent, so editing one won’t change the other."},
+      {t:"The file goes to the Recycle Bin", why:"Dragging to the Desktop doesn’t delete anything. Ctrl + drag makes a copy."}
+    ]},
+    {id:"t1u2-cp06", lesson:"t1u2-l4", level:2, q:"Luca shares a Google Drive folder of rental documents with his landlord as an **Editor**, only so the landlord can read the lease. What has he handed over that he might not expect?", options:[
+      {t:"Nothing extra; Editor and Viewer are the same in Google Drive", why:"They are different levels. A Viewer can only read; an Editor can change and delete content."},
+      {t:"The landlord can change or delete files and share them with others", ok:true, why:"Editors can change content and, in Google Drive, reshare by default. Give the lowest level that does the job, which here is Viewer."},
+      {t:"The landlord can now see every file in Luca’s Drive, not just this folder", why:"Sharing a folder gives access to that folder and what is added to it, not the whole Drive."},
+      {t:"The landlord now owns the folder and Luca loses access", why:"Giving Editor access doesn’t change the owner. The risk is the extra power to change and reshare."}
+    ]},
+    {id:"t1u2-cp07", lesson:"t1u2-l3", level:2, q:"Tavita saves recipes as PDFs. She almost always looks for them by dish name, and the date she saved them rarely matters. Which naming pattern suits her best?", options:[
+      {t:"`2025-06-14_banana-bread.pdf`", why:"Date first is best when time order matters most. Tavita browses by dish, so the topic should come first."},
+      {t:"`Banana Bread (final).pdf`", why:"Spaces, brackets and “final” are habits to avoid. They cause problems in links and tell her nothing useful."},
+      {t:"`bb1.pdf`", why:"Short codes are not readable by people. Next year she may not remember what “bb” means."},
+      {t:"`banana-bread_2025-06-14.pdf`", ok:true, why:"Putting the topic first makes files sort by dish name. The ISO date later still records when she saved it."}
+    ]},
+    {id:"t1u2-cp08", lesson:"t1u2-l4", level:2, q:"Tomorrow Marta will work on a long flight with no internet. Her three presentations in OneDrive show a **blue cloud** icon. What should she do tonight?", options:[
+      {t:"Right-click them and choose **Always keep on this device**", ok:true, why:"A blue cloud means online-only, so they can’t open without internet. Keeping them on the device downloads full copies."},
+      {t:"Choose **Free up space** so they’re ready for the flight", why:"Free up space does the opposite: it makes files online-only, which she can’t open offline."},
+      {t:"Nothing; they will download on the plane when she opens them", why:"Online-only files download when opened only if there is a connection. With no internet, they won’t open."},
+      {t:"Copy shortcuts to the files onto her Desktop", why:"A shortcut is only a pointer. It still points to online-only files, so it doesn’t help offline."}
+    ]},
+    {id:"t1u2-cp09", lesson:"t1u2-l1", level:3, q:"Jun must email a PDF of a contract but hide a bank account number. He draws a black box over the number in a PDF editor and sends it. What is the problem?", options:[
+      {t:"No problem; a PDF can’t be edited, so the hidden number is safe", why:"PDFs are hard to change, not secure. Text can be copied, and many apps can edit PDFs."},
+      {t:"The black box will make the PDF file too large to send by email", why:"A black box adds almost nothing to the size. The real risk is the hidden text."},
+      {t:"PDFs can’t contain black boxes, so the file will break when opened", why:"PDFs can show shapes like boxes. The issue is what may still sit underneath."},
+      {t:"The number may still sit under the box, where anyone can copy it", ok:true, why:"Covering text with a box can leave it in the file, where it can be copied. He should delete it from the source document, then create the PDF again."}
+    ]},
+    {id:"t1u2-cp10", lesson:"t1u2-l5", level:3, q:"Ifeoma keeps her music recordings on her desktop PC at home. Which setup meets the 3-2-1 rule?", options:[
+      {t:"The PC, plus two external drives that both stay on her desk", why:"That is three copies, but none is off-site. A fire, flood or burglary at home could take all three."},
+      {t:"The PC, plus a second folder on the PC, plus a USB stick kept in the same room", why:"The second folder is on the same drive as the original, and the stick sits in the same room. Nothing is off-site."},
+      {t:"The PC, a cloud backup service, and a backup drive she plugs in each Friday", ok:true, why:"Three copies, two kinds of storage (an external drive and the cloud) and one off-site (the cloud backup). That is 3-2-1."},
+      {t:"The PC and a cloud folder that syncs with it, and nothing else", why:"That is only two copies, and they are linked: a deletion or ransomware on one reaches the other."}
+    ]},
+    {id:"t1u2-cp11", lesson:"t1u2-l4", level:3, q:"Hugo’s laptop has been switched off for a week. Meanwhile, on his phone, he deleted a folder from his synced cloud storage. He now regrets it. What happens when the laptop goes online?", options:[
+      {t:"The laptop uploads its old copy of the folder, so it comes back on the phone", why:"Sync copies the latest change, and the latest change was the deletion. It will spread to the laptop, not undo it."},
+      {t:"Sync deletes it on the laptop too; the cloud bin online can bring it back", ok:true, why:"Deletions sync everywhere once a device connects. The cloud service keeps deleted files in its own bin on the website for a while, so that is where to restore from."},
+      {t:"Nothing; sync only works for files created on the same device", why:"Sync keeps every connected device identical, whichever device made the change."},
+      {t:"Sync deletes it on the laptop too, and the folder is now gone for good", why:"The deletion does sync, but it isn’t final yet. Cloud services keep deleted files in a separate bin on their website for a limited time, so he should look there soon."}
+    ]},
+    {id:"t1u2-cp12", lesson:"t1u2-l5", level:3, q:"An hour ago, Kavya replaced a good paragraph in her cloud document and saved it. The file still exists. What is the quickest way to get the paragraph back?", options:[
+      {t:"Look in the Recycle Bin or Trash", why:"The bin holds deleted files. Her file was changed, not deleted, so it isn’t there."},
+      {t:"Open the synced copy on her phone, which still has the old text", why:"Sync makes copies identical within minutes, so the phone copy has the same change."},
+      {t:"Rename the file with `_v02` so the old version returns", why:"Renaming changes only the name. The content inside stays the same."},
+      {t:"Open version history and restore the version from before the edit", ok:true, why:"Version history is made for undoing a bad edit, especially a recent one like this."}
+    ]},
+  ],
   codex:[
    {id:"files", title:"Files", aka:["document","data file"], tags:["files","basics"], summary:"A file is a named collection of data on storage, with metadata describing it.",
     levels:{
@@ -1338,7 +1412,7 @@ ICA.addUnit({
      {t:"inventory.exe", why:"That’s a program, not a data format at all."},
      {t:"inventory.zip with no information about what’s inside", why:"A zip is just a container. What matters for the long term is the format of the files inside it."}]},
    {id:"t1u2-q06", lesson:"t1u2-l1", level:3, q:"Priya’s iPhone photos are .heic, and a council website rejects them. What’s the most reliable fix?", options:[
-     {t:"Export or share them as JPEG, or set Camera → Formats → Most Compatible for future photos", ok:true, why:"Converting rewrites the data as JPEG. Most Compatible makes the iPhone capture JPEG from now on."},
+     {t:"Export or share them as JPEG", ok:true, why:"Converting rewrites the data as JPEG. For future photos, Camera → Formats → Most Compatible makes the iPhone capture JPEG from now on."},
      {t:"Rename each file from .heic to .jpg", why:"That changes only the label; the data stays HEIC, so the site may still fail."},
      {t:"Zip the photos and upload the zip", why:"The site wants JPEG images, not a zip. The photos inside would still be HEIC."},
      {t:"Take screenshots of the photos and upload those", why:"It can work, but it lowers quality and loses detail. Exporting as JPEG is the proper way."}]},
@@ -1348,19 +1422,19 @@ ICA.addUnit({
      {t:"Encryption: it hides the contents with a password", why:"Compression and encryption are different. Built-in zip tools don’t encrypt."},
      {t:"Conversion: it changes files into a smaller format", why:"Zip doesn’t change the files’ formats; it wraps them."}]},
    {id:"t1u2-q08", lesson:"t1u2-l1", level:2, q:"Mei double-clicks a zip on Windows, opens a document inside it, edits it and saves. Later her changes seem to be missing. What’s the most likely reason?", options:[
-     {t:"She edited a temporary copy; she should have extracted the zip first", ok:true, why:"Files opened from inside a zip are often opened from a temporary location. Extract, then edit the extracted copy."},
-     {t:"Zip files delete any changes on purpose", why:"Zip doesn’t delete changes; the edited copy simply wasn’t saved back into the zip."},
+     {t:"She edited a temporary copy, not the file in the zip", ok:true, why:"Files opened from inside a zip are often opened from a temporary location. Extract the zip first, then edit the extracted copy."},
+     {t:"Zip files undo any changes made to the files inside them", why:"Zip doesn’t undo changes; the edited copy simply wasn’t saved back into the zip."},
      {t:"Her document turned into a PDF", why:"Nothing converts the format. The issue is where the saved copy went."},
      {t:"Windows can’t open documents inside zips at all", why:"It can open them for reading; saving is where the trouble starts."}]},
    {id:"t1u2-q09", lesson:"t1u2-l1", level:3, q:"Tomás must send a volunteer rota that three coordinators will keep updating, and a finished poster for a printer. What should he send?", options:[
-     {t:"The rota as an editable spreadsheet or shared online file; the poster as a PDF", ok:true, why:"Editable for things others will change; PDF for finished things that must look exact."},
-     {t:"Both as PDFs, so nobody can change them", why:"The coordinators need to change the rota, which PDFs make awkward."},
+     {t:"The rota as an editable or shared file; the poster as a PDF", ok:true, why:"Editable for things others will change; PDF for finished things that must look exact."},
+     {t:"Both as PDFs, so that nobody can change either of them by mistake", why:"The coordinators need to change the rota, which PDFs make awkward."},
      {t:"Both as editable files", why:"A printer needs fixed layout and fonts; an editable file may shift or lack fonts."},
      {t:"Both as .txt files", why:"Plain text loses the poster’s design and the rota’s layout."}]},
    /* Lesson 2 */
    {id:"t1u2-q10", lesson:"t1u2-l2", level:1, q:"What is a path?", options:[
-     {t:"The full address of a file, from the top folder down to the file", ok:true, why:"For example `C:\\Users\\Amara\\Documents\\minutes.docx`."},
-     {t:"The app that opens a file", why:"That’s the default app, chosen from the extension."},
+     {t:"The full address of a file on the computer", ok:true, why:"For example `C:\\Users\\Amara\\Documents\\minutes.docx`."},
+     {t:"The app that opens a file when you double-click it", why:"That’s the default app, chosen from the extension."},
      {t:"A shortcut on the desktop", why:"A shortcut points to a path, but it’s a separate small file."},
      {t:"The size of a file in bytes", why:"Size is metadata, not location."}]},
    {id:"t1u2-q11", lesson:"t1u2-l2", level:2, q:"Which is a Windows path?", options:[
@@ -1374,10 +1448,10 @@ ICA.addUnit({
      {t:"A shortcut is made", why:"Shortcuts are only made if you ask (for example, holding Alt on Windows)."},
      {t:"It’s deleted", why:"Dragging never deletes a file unless you drop it on the bin."}]},
    {id:"t1u2-q13", lesson:"t1u2-l2", level:3, q:"Ana copies a shortcut to her `Tax 2025` folder onto a USB stick and takes it to her accountant. What will the accountant find?", options:[
-     {t:"A shortcut that doesn’t open anything, because the real folder is still on Ana’s computer", ok:true, why:"A shortcut is just a pointer. The files themselves weren’t copied."},
+     {t:"A shortcut that doesn’t open anything", ok:true, why:"A shortcut is just a pointer. The real folder is still on Ana’s computer; the files themselves weren’t copied."},
      {t:"All her tax files", why:"Only the pointer was copied, not the folder it points to."},
      {t:"A zip of the folder", why:"Copying a shortcut doesn’t create a zip."},
-     {t:"An empty folder with the same name", why:"It’s a shortcut file, not a folder, and it doesn’t contain anything."}]},
+     {t:"An empty folder with the same name as hers", why:"It’s a shortcut file, not a folder, and it doesn’t contain anything."}]},
    {id:"t1u2-q14", lesson:"t1u2-l2", level:3, q:"Oluwaseun opened an emailed form, filled it in and clicked Save. Now he can’t find it. Where should he look first?", options:[
      {t:"The Downloads folder, sorted by Date modified", ok:true, why:"Attachments are usually saved to Downloads (or a temporary folder). Sorting by date shows the newest first."},
      {t:"The Recycle Bin", why:"Saving doesn’t delete anything, so the bin is unlikely to have it."},
@@ -1392,12 +1466,12 @@ ICA.addUnit({
      {t:"Open Trash, select the file, choose File → Put Back", ok:true, why:"Put Back returns it to its original folder."},
      {t:"Empty the Trash", why:"Emptying deletes everything in it permanently."},
      {t:"Restart the Mac", why:"Restarting doesn’t restore deleted files."},
-     {t:"Open Time Machine settings and turn it off", why:"That would stop backups. The Trash is the place to restore from."}]},
+     {t:"Open Time Machine settings and turn off automatic backups", why:"That would stop backups. The Trash is the place to restore from."}]},
    {id:"t1u2-q17", lesson:"t1u2-l2", level:3, q:"Dmitri moved his photo folder to a USB stick to free space, then deleted it from the laptop. What’s the problem?", options:[
-     {t:"The stick now holds the only copy, and sticks are easily lost or damaged", ok:true, why:"Moving isn’t backing up. He has one copy in a fragile place. He needs at least one more copy elsewhere."},
+     {t:"The stick now holds the only copy, and it is easy to lose", ok:true, why:"Moving isn’t backing up. He has one copy in a fragile place, since sticks are easily lost or damaged. He needs at least one more copy elsewhere."},
      {t:"USB sticks can’t store photos", why:"They can store any files; the issue is having only one copy."},
      {t:"The photos were converted to a different format", why:"Copying or moving doesn’t change formats."},
-     {t:"No problem: the Recycle Bin keeps a copy forever", why:"The bin isn’t permanent and may be emptied; and it’s not a backup."}]},
+     {t:"No problem: the Recycle Bin keeps a copy of the folder forever", why:"The bin isn’t permanent and may be emptied; and it’s not a backup."}]},
    {id:"t1u2-q18", lesson:"t1u2-l2", level:2, q:"Which keyboard method moves (not copies) a file on Windows?", options:[
      {t:"Ctrl + X, then Ctrl + V", ok:true, why:"X cuts the file; pasting puts it in the new place and removes it from the old."},
      {t:"Ctrl + C, then Ctrl + V", why:"That copies; the original stays."},
@@ -1410,18 +1484,18 @@ ICA.addUnit({
      {t:"04-03-2026", why:"Month-day-year: also ambiguous and doesn’t sort correctly."},
      {t:"2026-4-3", why:"ISO 8601 uses two digits for month and day: 04 and 03."}]},
    {id:"t1u2-q20", lesson:"t1u2-l3", level:2, q:"Why do research data guides recommend `v01`, `v02` … instead of `v1`, `v2`?", options:[
-     {t:"So versions sort in the right order in programs that compare names character by character", ok:true, why:"Without padding, those programs list v1, v10, v11, v2. With padding, the order is right everywhere."},
+     {t:"So versions sort in the right order in every program", ok:true, why:"Some programs compare names character by character and list v1, v10, v11, v2. With padding, the order is right everywhere."},
      {t:"Because computers can’t read single digits", why:"Single digits are fine; the issue is sorting order."},
      {t:"To make files smaller", why:"File names don’t affect file size."},
-     {t:"Because Windows forbids single-digit numbers", why:"Windows allows any digits in names."}]},
+     {t:"Because Windows doesn’t allow single-digit numbers in names", why:"Windows allows any digits in names."}]},
    {id:"t1u2-q21", lesson:"t1u2-l3", level:1, q:"Which file name follows the naming guidance best?", options:[
      {t:"`2026-02-11_choir_concert-programme_v03.pdf`", ok:true, why:"ISO date, project, content, padded version, no spaces or special characters."},
      {t:"Choir programme FINAL!!.pdf", why:"Spaces, exclamation marks, no date, and “final”."},
      {t:"cp3.pdf", why:"Machine-friendly but meaningless to people."},
      {t:"11/02/2026 choir.pdf", why:"Slashes aren’t allowed in names and the date format is ambiguous."}]},
    {id:"t1u2-q22", lesson:"t1u2-l3", level:3, q:"Fatima’s folder has `notes final.docx`, `notes final2.docx` and `notes FINAL use this.docx`. What change would stop this happening again?", options:[
-     {t:"Number versions (v01, v02…) and record which one was sent, instead of using “final”", ok:true, why:"Version numbers always move forward; status like “sent” belongs in a note, a folder or the version history."},
-     {t:"Use capital letters for the newest version", why:"Capitals carry no reliable meaning and some systems ignore case."},
+     {t:"Number the versions and note which one was sent", ok:true, why:"Version numbers (v01, v02…) always move forward, unlike “final”. Status like “sent” belongs in a note, a folder or the version history."},
+     {t:"Use capital letters in the name of the newest version", why:"Capitals carry no reliable meaning and some systems ignore case."},
      {t:"Put all the versions in a zip", why:"Zipping hides the mess but doesn’t say which is current."},
      {t:"Save every version to the Desktop", why:"Location doesn’t fix ambiguous names; the Desktop just gets cluttered."}]},
    {id:"t1u2-q23", lesson:"t1u2-l3", level:3, q:"Hana names monthly reports `report_03-2026`, `report_11-2025` and `report_01-2026`. Sorted by name, which comes first?", options:[
@@ -1435,8 +1509,8 @@ ICA.addUnit({
      {t:"Windows and macOS forbid spaces", why:"Both allow spaces; the problems come from other tools."},
      {t:"Spaces delete the extension", why:"They don’t affect the extension."}]},
    {id:"t1u2-q25", lesson:"t1u2-l3", level:1, q:"In a project folder, what is a README file for?", options:[
-     {t:"Explaining the project, what goes where and what codes in names mean", ok:true, why:"It’s a short note for colleagues and your future self."},
-     {t:"Storing a backup of every file", why:"A README is a text note, not a backup."},
+     {t:"Explaining the project and what goes where", ok:true, why:"It’s a short note for colleagues and your future self, including what any codes in names mean."},
+     {t:"Storing a backup copy of every file in the folder", why:"A README is a text note, not a backup."},
      {t:"Making the folder load faster", why:"It has no effect on speed."},
      {t:"Locking the folder from edits", why:"It doesn’t change permissions."}]},
    {id:"t1u2-q26", lesson:"t1u2-l3", level:2, q:"When are tags more useful than folders?", options:[
@@ -1445,9 +1519,9 @@ ICA.addUnit({
      {t:"When you want a backup", why:"Tags organize; they don’t copy anything."},
      {t:"When you need to shrink files", why:"Tags don’t affect size."}]},
    {id:"t1u2-q27", lesson:"t1u2-l3", level:3, q:"Lucía runs a cleaning business and keeps invoices named `invoice1.pdf` to `invoice240.pdf` in one folder. What naming change helps most?", options:[
-     {t:"Add an ISO date and zero-padded number: `2026-03-04_invoice_0147.pdf`", ok:true, why:"Dates sort in time order; four-digit padding keeps numbers in order everywhere and leaves room to grow."},
+     {t:"Add an ISO date and padded number: `2026-03-04_invoice_0147.pdf`", ok:true, why:"Dates sort in time order; four-digit padding keeps numbers in order everywhere and leaves room to grow."},
      {t:"Rename them invoiceA, invoiceB…", why:"Letters run out at 26 and say nothing about the date."},
-     {t:"Add the customer’s full address to each name", why:"Very long names are hard to read and can hit path limits; put details inside the file."},
+     {t:"Add the customer’s full name and home address to the start of each name", why:"Very long names are hard to read and can hit path limits; put details inside the file."},
      {t:"Keep the names and add the word FINAL", why:"“Final” adds no information and invites confusion."}]},
    /* Lesson 4 */
    {id:"t1u2-q28", lesson:"t1u2-l4", level:1, q:"Physically, where are files in “the cloud” stored?", options:[
@@ -1461,8 +1535,8 @@ ICA.addUnit({
      {t:"The laptop asks whether to keep it", why:"Normal deletions sync without asking (some apps warn only for very large deletions)."},
      {t:"The photo moves to the laptop’s Desktop", why:"Sync doesn’t move files to other folders."}]},
    {id:"t1u2-q30", lesson:"t1u2-l4", level:2, q:"In OneDrive on Windows, what does a blue cloud icon next to a file mean?", options:[
-     {t:"It’s online-only: it takes no local space and needs internet to open", ok:true, why:"Microsoft uses the blue cloud for online-only files."},
-     {t:"It’s backed up to an external drive", why:"The icon describes OneDrive status, not external backups."},
+     {t:"It’s online-only: it needs internet to open", ok:true, why:"Microsoft uses the blue cloud for online-only files, which take no local space."},
+     {t:"It’s also backed up to an external hard drive", why:"The icon describes OneDrive status, not external backups."},
      {t:"It’s shared with everyone", why:"Sharing has its own indicator; the cloud means online-only."},
      {t:"It has a virus", why:"Status icons show sync state, not malware."}]},
    {id:"t1u2-q31", lesson:"t1u2-l4", level:3, q:"Amara needs space on her laptop. Which action frees space without losing her OneDrive files?", options:[
@@ -1476,25 +1550,25 @@ ICA.addUnit({
      {t:"Editor", why:"Editors can change everything and, in Google Drive, usually reshare."},
      {t:"Owner", why:"Owners have full control, more than needed for commenting."}]},
    {id:"t1u2-q33", lesson:"t1u2-l4", level:3, q:"A school club posts a Google Drive folder link set to “Anyone with the link can edit” in a public group chat. What’s the biggest risk?", options:[
-     {t:"Anyone who sees the link can change or delete files, without being invited", ok:true, why:"An anyone-edit link gives full editing to whoever gets it. Invite named members instead, or at least set it to view."},
+     {t:"Anyone who sees the link can change or delete files", ok:true, why:"An anyone-edit link gives full editing to whoever gets it, without an invitation. Invite named members instead, or at least set it to view."},
      {t:"The folder will use more storage", why:"Sharing doesn’t change storage use."},
      {t:"The files will become PDFs", why:"Sharing doesn’t change formats."},
-     {t:"Only the club leader can open it", why:"An anyone-link is the opposite of restricted."}]},
+     {t:"Only the club leader will be able to open the folder", why:"An anyone-link is the opposite of restricted."}]},
    {id:"t1u2-q34", lesson:"t1u2-l4", level:2, q:"Tomás has a free Google Account. His Google Photos backups have filled it. What else may stop working?", options:[
-     {t:"Gmail and Google Drive, because all three share the same 15 GB", ok:true, why:"Google’s free storage is shared across Gmail, Drive and Photos."},
-     {t:"Nothing else; each Google service has its own 15 GB", why:"It’s one shared allowance."},
+     {t:"Gmail and Google Drive, which share the same 15 GB", ok:true, why:"Google’s free storage is shared across Gmail, Drive and Photos."},
+     {t:"Nothing else, because each Google service has its own 15 GB", why:"It’s one shared allowance."},
      {t:"His phone’s camera", why:"The camera keeps working; only cloud uploads stop."},
      {t:"His Wi-Fi", why:"Cloud storage limits don’t affect your internet connection."}]},
    {id:"t1u2-q35", lesson:"t1u2-l4", level:3, q:"Mei edits a shared spreadsheet offline on a plane while a colleague edits it at the office. Afterwards there are two copies, one with her laptop’s name added. What should she do?", options:[
-     {t:"Compare the two, merge the changes into one, then delete the extra copy", ok:true, why:"That’s a sync conflict: both versions were kept so no work is lost. Merging by hand completes it."},
+     {t:"Compare the two and merge the changes into one", ok:true, why:"That’s a sync conflict: both versions were kept so no work is lost. Merging by hand, then deleting the extra copy, completes it."},
      {t:"Delete the one with her laptop’s name", why:"That throws away her own changes."},
      {t:"Delete both and start again", why:"That loses everyone’s work."},
-     {t:"Ignore it; sync will merge them later", why:"Sync apps can’t merge most file contents; the duplicate stays until someone resolves it."}]},
+     {t:"Ignore it, because sync will merge them later on its own", why:"Sync apps can’t merge most file contents; the duplicate stays until someone resolves it."}]},
    {id:"t1u2-q36", lesson:"t1u2-l4", level:1, q:"What is the difference between inviting someone and sending an “anyone with the link” link?", options:[
-     {t:"An invite works only for that person’s account; an anyone-link works for whoever has it", ok:true, why:"Invites are tied to identity; anyone-links work like a key that can be passed on."},
+     {t:"An invite works only for that person; a link works for anyone", ok:true, why:"Invites are tied to an account; anyone-links work like a key that can be passed on to whoever has it."},
      {t:"There’s no difference", why:"The difference in who can get in is the whole point."},
      {t:"Anyone-links always allow editing", why:"You choose view, comment or edit for links too."},
-     {t:"Invites make the file public on search engines", why:"Invites are the most restricted way to share."}]},
+     {t:"An invite makes the file public on search engines; a link doesn’t", why:"Invites are the most restricted way to share."}]},
    /* Lesson 5 */
    {id:"t1u2-q37", lesson:"t1u2-l5", level:1, q:"Why isn’t sync a backup?", options:[
      {t:"It copies deletions and damage to every copy", ok:true, why:"Sync makes copies identical, including mistakes. A backup keeps a copy that doesn’t change when the original does."},
@@ -1517,13 +1591,13 @@ ICA.addUnit({
      {t:"24 hours", why:"Much longer than that, but not unlimited."},
      {t:"One year", why:"Personal accounts keep deleted items for 30 days."}]},
    {id:"t1u2-q41", lesson:"t1u2-l5", level:3, q:"Ransomware scrambles a shop’s computer and its always-connected external backup drive. Which other copy is most likely to survive?", options:[
-     {t:"A second backup drive that was unplugged and kept at the owner’s home", ok:true, why:"Offline and off-site: ransomware can’t reach a disconnected drive, and it’s safe from local disasters too."},
+     {t:"A second drive that was unplugged and kept at home", ok:true, why:"Offline and off-site: ransomware can’t reach a disconnected drive at the owner’s home, and it’s safe from local disasters too."},
      {t:"The synced cloud folder", why:"Sync uploads the scrambled files. Version history may help for a while, but the synced copy itself is scrambled."},
      {t:"The Recycle Bin on the same computer", why:"It’s on the infected computer and doesn’t hold clean copies."},
-     {t:"A copy in another folder on the same computer", why:"Same machine, so it’s scrambled too."}]},
+     {t:"A copy in another folder on the same computer’s drive", why:"Same machine, so it’s scrambled too."}]},
    {id:"t1u2-q42", lesson:"t1u2-l5", level:3, q:"Sione’s only copies of his family photos are on his phone and in a cloud photo service that syncs with it. He accidentally deletes an album and doesn’t notice for three months. Why might the photos be gone?", options:[
-     {t:"The deletion synced and the cloud’s recently-deleted window (typically 30 to 60 days) has passed", ok:true, why:"Sync removed them everywhere, and bins only keep items for a limited time. An independent backup would still have them."},
-     {t:"Cloud services delete photos older than three months", why:"They don’t delete photos on their own; the deletion came from him and synced."},
+     {t:"The deletion synced and the cloud bin’s time limit passed", ok:true, why:"Sync removed them everywhere, and recently-deleted bins only keep items for a limited time (typically 30 to 60 days). An independent backup would still have them."},
+     {t:"Cloud services automatically delete photos older than three months", why:"They don’t delete photos on their own; the deletion came from him and synced."},
      {t:"The phone converted them to a different format", why:"Format changes don’t delete albums."},
      {t:"They aren’t gone; synced photos can never be deleted", why:"Synced deletions are real deletions everywhere."}]},
    {id:"t1u2-q43", lesson:"t1u2-l5", level:2, q:"When should you unplug an external backup drive?", options:[
@@ -1532,7 +1606,7 @@ ICA.addUnit({
      {t:"Only when it’s full", why:"Connection, not space, decides whether malware can reach it."},
      {t:"While a backup is running, to make it faster", why:"That interrupts the backup and can corrupt it."}]},
    {id:"t1u2-q44", lesson:"t1u2-l5", level:3, q:"Priya set up File History a year ago and never checked it. What’s the best way to know it works?", options:[
-     {t:"Restore a couple of files to a new folder and open them, and check the last backup date", ok:true, why:"Only a real restore proves the backup is complete, recent and readable."},
+     {t:"Restore a few files and open them", ok:true, why:"Restore a couple of files to a new folder, open them, and check the last backup date. Only a real restore proves the backup is complete, recent and readable."},
      {t:"Look at the drive’s light when it’s plugged in", why:"Power tells you nothing about whether backups run or are readable."},
      {t:"Assume it works because there were no error messages", why:"Backups often fail silently — after updates, when drives fill or when settings change."},
      {t:"Buy a bigger drive", why:"Size doesn’t prove anything about whether backups work."}]},

@@ -85,7 +85,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u6-l1-x1", type:"mcq", q:"Kenji says: “National identity is socially constructed, so it’s basically an illusion and has no real effects.” What is the best reply?", options:[
-      {t:"Constructed things can be very real in their effects, like money or borders; the question is how the identity was made and what it does", ok:true, why:"Right. Constructivists stress that social facts shape behaviour, laws and life chances even though people made them."},
+      {t:"Constructed things, like borders, can have very real effects", ok:true, why:"Right. The question is how the identity was made and what it does. Constructivists stress that social facts shape behaviour, laws and life chances even though people made them."},
       {t:"He is right: once you see it is constructed, it disappears", why:"Seeing how something was made does not make it vanish; borders stay in force when we know who drew them."},
       {t:"National identity is biological, so it is not constructed at all", why:"There is no biological basis for national identity; that is the essentialist view the lesson challenges."},
       {t:"Only individual identities are constructed; national ones are natural", why:"Constructivists argue national identities are among the most clearly constructed, through schools, media and states."}
@@ -111,7 +111,7 @@ ICA.addUnit({
       {t:"School textbooks and national holidays help teach children who “we” are.", b:1, why:"It shows identity being produced through institutions and practice."}
     ]},
     {id:"e4u6-l1-x5", type:"mcq", q:"Which example best shows a state creating or hardening a group category?", options:[
-      {t:"Colonial identity cards in Rwanda that recorded each person as Hutu, Tutsi or Twa", ok:true, why:"Right. The cards fixed categories on paper that had been more fluid, and they were later used to target Tutsi in 1994."},
+      {t:"Colonial identity cards in Rwanda recording ethnic group", ok:true, why:"Right. The cards recorded each person as Hutu, Tutsi or Twa. They fixed categories on paper that had been more fluid, and they were later used to target Tutsi in 1994."},
       {t:"A football fan choosing to support a club from another city", why:"That is personal choice, not a state classifying people."},
       {t:"Two friends discovering they like the same music", why:"Shared taste is not a state category."},
       {t:"A scientist measuring rainfall", why:"Measuring nature does not classify people into groups."}
@@ -217,7 +217,7 @@ ICA.addUnit({
       {t:"Any group of people who live under one government", why:"That describes a state’s population, not Anderson’s nation."}
     ]},
     {id:"e4u6-l2-x3", type:"mcq", q:"Priya reads Chatterjee’s “Whose Imagined Community?”. Which point is she most likely to bring to the seminar?", options:[
-      {t:"Anti-colonial nationalism first claimed an inner, spiritual domain of culture before fighting the colonial state", ok:true, why:"Right. Chatterjee argued colonised nationalists did more than copy European models."},
+      {t:"Nationalists first claimed an inner, spiritual domain", ok:true, why:"Right. Anti-colonial nationalism claimed an inner, spiritual domain of culture before fighting the colonial state. Chatterjee argued colonised nationalists did more than copy European models."},
       {t:"Asian nationalisms were exact copies of European nationalism", why:"That is the view Chatterjee criticised in Anderson."},
       {t:"Nations are natural units that existed before colonialism", why:"Chatterjee was not a primordialist."},
       {t:"Print-capitalism was unimportant everywhere", why:"Chatterjee did not deny print’s role; he questioned the idea that nationalism elsewhere was only imitation."}
@@ -243,8 +243,8 @@ ICA.addUnit({
       "."
     ]},
     {id:"e4u6-l2-x6", type:"mcq", q:"A critic says: “Gellner can’t explain why nationalism appeared among creole elites in Latin America in the early 1800s.” What is the critic pointing to?", options:[
-      {t:"Nationalism arose in places with little industrial development, which Gellner’s industrial explanation struggles with", ok:true, why:"Right. This is one of the standard critiques of Gellner."},
-      {t:"Latin America had no nationalism at all", why:"Latin American independence movements are classic cases; Anderson put them first."},
+      {t:"Nationalism arose where there was little industry", ok:true, why:"Right. Gellner’s industrial explanation struggles with such cases. This is one of the standard critiques of Gellner."},
+      {t:"Latin America had no nationalism at all in that period", why:"Latin American independence movements are classic cases; Anderson put them first."},
       {t:"Gellner wrote only about Latin America", why:"Gellner wrote mainly about Europe and general theory."},
       {t:"Creoles were all industrial workers", why:"Creole elites were landowners, merchants and officials, not industrial workers."}
     ]},
@@ -360,9 +360,9 @@ ICA.addUnit({
       {t:"Some states entered reservations to Article 4 citing free speech.", flag:false, why:"Correct, for example the United States."}
     ]},
     {id:"e4u6-l3-x6", type:"mcq", q:"Fatima is writing about whether caste falls under ICERD. Which statement describes the situation neutrally?", options:[
-      {t:"CERD has treated descent-based discrimination as covering caste, while some states, India among them, argue caste is outside the Convention", ok:true, why:"Right. This states both positions and who holds them, without taking a side."},
+      {t:"CERD includes caste; India and others disagree", ok:true, why:"Right. CERD has treated descent-based discrimination as covering caste, while some states, India among them, argue caste is outside the Convention. This states both positions and who holds them, without taking a side."},
       {t:"Everyone agrees caste is a form of race", why:"There is no such agreement; that is the point of the dispute."},
-      {t:"The Convention says nothing about descent", why:"Article 1 explicitly lists descent."},
+      {t:"The Convention says nothing at all about descent or caste", why:"Article 1 explicitly lists descent."},
       {t:"CERD has never commented on caste", why:"General Recommendation No. 29 (2002) addresses discrimination based on descent, including caste."}
     ]},
     {id:"e4u6-l3-x7", type:"sort", q:"Which position on race in IR does each claim best express?", buckets:["Race as constitutive","Race as one hierarchy among several","Race as a measurable variable"], items:[
@@ -463,8 +463,8 @@ ICA.addUnit({
       {t:"Rival groups compete for state contracts by organising along ethnic lines.", b:1, why:"Ethnicity as a tool for resources is instrumentalist."}
     ]},
     {id:"e4u6-l4-x2", type:"mcq", q:"A commentator writes: “This country has dozens of ethnic groups, so civil war is inevitable.” Which finding most directly challenges this?", options:[
-      {t:"Fearon and Laitin found diversity did not predict civil war once income was controlled for", ok:true, why:"Right. Their study of 1945–1999 is the standard reply to “diversity causes war”."},
-      {t:"Anderson found nations are imagined communities", why:"True, but it does not test whether diversity causes war."},
+      {t:"Fearon and Laitin’s finding on diversity and income", ok:true, why:"Right. They found diversity did not predict civil war once income was controlled for. Their study of 1945–1999 is the standard reply to “diversity causes war”."},
+      {t:"Anderson found that nations are imagined political communities", why:"True, but it does not test whether diversity causes war."},
       {t:"UNDRIP was adopted in 2007", why:"A declaration on indigenous rights is not evidence about the causes of civil war."},
       {t:"Billig found flags hang unwaved", why:"Banal nationalism is not about civil war risk."}
     ]},
@@ -493,7 +493,7 @@ ICA.addUnit({
       {t:"It includes free, prior and informed consent.", flag:false, why:"Correct: in several articles, for example on relocation."}
     ]},
     {id:"e4u6-l4-x6", type:"mcq", q:"Which statement about international minority rights is accurate?", options:[
-      {t:"Article 27 of the ICCPR protects members of minorities in enjoying their culture, religion and language with others of their group", ok:true, why:"Right. It is the main global treaty provision."},
+      {t:"ICCPR Article 27 protects minorities’ culture, religion and language", ok:true, why:"Right. It protects members of minorities in enjoying these with others of their group. It is the main global treaty provision."},
       {t:"International law gives every minority the right to its own independent state", why:"Minority rights protect identity and participation, not a right to secession."},
       {t:"There is an agreed legal definition of “minority” that all states accept", why:"No such agreed definition exists."},
       {t:"Minority rights began only in 2007 with UNDRIP", why:"UNDRIP concerns indigenous peoples; minority protection goes back to the League’s minority treaties and the ICCPR."}
@@ -619,7 +619,7 @@ ICA.addUnit({
       {t:"He described Turkey, Mexico and Russia as “torn countries”.", flag:false, why:"Accurate."}
     ]},
     {id:"e4u6-l5-x6", type:"mcq", q:"Which finding is the strongest evidence against the claim that states from different civilisations fight each other more?", options:[
-      {t:"Studies of pairs of states found no consistent increase in conflict across civilisational lines once other factors were controlled", ok:true, why:"Right. Russett, Oneal and Cox (2000), Henderson and Tucker (2001) and Chiozza (2002) all tested this directly."},
+      {t:"Studies of pairs of states found no consistent effect", ok:true, why:"Right. Studies of pairs of states found no consistent increase in conflict across civilisational lines once other factors were controlled. Russett, Oneal and Cox (2000), Henderson and Tucker (2001) and Chiozza (2002) all tested this directly."},
       {t:"Said said civilisations are internally diverse", why:"That is a conceptual critique, important but not an empirical test of conflict rates."},
       {t:"The UN declared 2001 the Year of Dialogue among Civilizations", why:"A UN initiative is a response, not evidence about conflict patterns."},
       {t:"Huntington’s article was published in *Foreign Affairs*", why:"Where it was published says nothing about whether it is correct."}
@@ -645,6 +645,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u6-q02","e4u6-q06","e4u6-q11","e4u6-q15","e4u6-q20","e4u6-q24","e4u6-q29","e4u6-q32","e4u6-q35","e4u6-q38","e4u6-q42","e4u6-q45"],
+  cpBank:[
+   {id:"e4u6-cp01", lesson:"e4u6-l1", level:1, q:"At a summer camp, children are split into “Blue” and “Green” teams by a coin toss. Within a day, each team shares more snacks with its own members than with the other team. Which theory explains this best?", options:[
+     {t:"Ontological security", why:"Ontological security is about needing a stable sense of self and routine. The camp shows favouritism toward a group formed on trivial grounds."},
+     {t:"Social identity theory", ok:true, why:"Right. Tajfel found that even groups formed on trivial grounds favour their own members. Tajfel and Turner explained this by the self-esteem people gain from group membership."},
+     {t:"Intersectionality", why:"Intersectionality is about how systems of power such as race, gender and class interact. A coin-toss team split doesn’t involve that."},
+     {t:"Strategic essentialism", why:"Strategic essentialism is a group knowingly presenting itself as united for a political goal. The children aren’t making a political choice."}]},
+   {id:"e4u6-cp02", lesson:"e4u6-l1", level:2, q:"A politician says: “A person’s religion decides everything about them, including how they will vote and whom they can trust.” Which critique fits best?", options:[
+     {t:"Taylor’s point that being misrecognised in a demeaning way does harm", why:"Taylor wrote about the harm of being seen in a demeaning way. The politician’s main error is reducing people to one identity."},
+     {t:"Crenshaw’s point about where race and sex discrimination cross in law", why:"Crenshaw showed harms at the intersection of race and sex in law. The quote is about reducing people to a single identity."},
+     {t:"Mitzen’s point that states cling to routines, even routines of rivalry", why:"Mitzen explained why states cling to routines, even of rivalry. That doesn’t address reducing a person to one identity."},
+     {t:"Sen’s critique of a “solitarist” view of human identity", ok:true, why:"Right. In *Identity and Violence* Sen argued that every person has many identities, and that telling people one identity decides everything is dangerous."}]},
+   {id:"e4u6-cp03", lesson:"e4u6-l1", level:3, q:"A coalition of indigenous groups speaking many languages presents itself at the UN as “one people with one voice”. In its own meetings, it argues openly about its differences. Which idea fits best?", options:[
+     {t:"Strategic essentialism: knowingly presenting unity for a political goal while recognising inner differences", ok:true, why:"Right. This combines Lesson 1 (Spivak’s strategic essentialism) with Lesson 4 (indigenous peoples as actors at the UN, where self-identification matters)."},
+     {t:"Essentialism: the groups really share one fixed inner nature", why:"The coalition openly debates its differences, so it doesn’t believe in a fixed shared nature. It presents unity on purpose."},
+     {t:"Groupism: treating ethnic groups as solid actors at all times", why:"Brubaker criticised analysts for groupism. Here the coalition itself chooses when to act as one, which is closer to “groupness” at a moment."},
+     {t:"Ethnic outbidding: competing to look more loyal than rivals", why:"Outbidding is parties competing for one group’s votes with tougher positions. The coalition is building unity, not competing within a group."}]},
+   {id:"e4u6-cp04", lesson:"e4u6-l2", level:2, q:"A researcher interviews families about why they buy national-brand rice, which holidays they celebrate, and when they ignore the nation entirely. Which approach is this?", options:[
+     {t:"Gellner’s modernism and its stress on mass schooling", why:"Gellner explained nationalism by the needs of industrial society, through mass schooling. He didn’t study families’ everyday choices."},
+     {t:"Kohn’s distinction between civic and ethnic nations", why:"Kohn sorted nationalisms by whether membership rests on citizenship or descent. The study is about everyday practice, not types."},
+     {t:"Fox and Miller-Idriss’s everyday nationalism", ok:true, why:"Right. Everyday nationalism studies what ordinary people do with the nation, such as choosing national products and rituals, and also when they ignore it."},
+     {t:"Chatterjee’s idea of an anti-colonial inner domain", why:"Chatterjee wrote about anti-colonial nationalism claiming a spiritual domain before fighting the colonial state. This study is about ordinary families in a settled state."}]},
+   {id:"e4u6-cp05", lesson:"e4u6-l2", level:1, q:"A speaker says: “A nation is not blood or soil. It is shared memories, some shared forgetting, and a will to live together that people renew every day.” Whose idea is this?", options:[
+     {t:"Ernest Gellner’s", why:"Gellner defined nationalism as the principle that the political and national unit should be congruent, and explained it by industry."},
+     {t:"Anthony D. Smith’s", why:"Smith stressed an older ethnie with myths of ancestry. The speaker explicitly rejects descent and stresses present will."},
+     {t:"Ernest Renan’s", ok:true, why:"Right. In 1882 Renan argued a nation rests on shared memories and forgetting and a present will to live together: “a daily plebiscite”."},
+     {t:"Hans Kohn’s idea of ethnic nationalism", why:"Ethnic nationalism bases membership on ancestry, language or religion. The speaker rejects “blood”."}]},
+   {id:"e4u6-cp06", lesson:"e4u6-l2", level:3, q:"In a colony with almost no factories, a newspaper read across many islands helps readers picture themselves as one people. Which reading fits best?", options:[
+     {t:"It fits Gellner best, because industry must have created the need for a shared high culture", why:"There is almost no industry here, so Gellner’s mechanism is missing. That is exactly the gap critics point to."},
+     {t:"It fits Anderson’s print-capitalism, and supports the critique that Gellner can’t explain nationalism without industry", ok:true, why:"Right. Readers of the same newspaper imagine themselves moving together through time, Anderson’s mechanism, while the lack of factories challenges Gellner."},
+     {t:"It proves the primordialist view that the islanders were always one nation", why:"The newspaper helps people imagine a community that didn’t exist before. That supports the modernist story, not primordialism."},
+     {t:"It is Smith’s ethno-symbolism, because any newspaper carries an ancient ethnie’s myths", why:"Ethno-symbolism looks for older myths and memories that resonate. Nothing here shows an older ethnic core; the newspaper itself creates the link."}]},
+   {id:"e4u6-cp07", lesson:"e4u6-l3", level:3, q:"Decades after being ranked “not fully civilised” in the old order, a state’s leaders keep demanding to be treated as an equal great power, even at a material cost. Which pair of ideas explains this best?", options:[
+     {t:"Posen’s ethnic security dilemma and Rabushka and Shepsle’s ethnic outbidding", why:"These explain fear and party competition inside collapsing or divided states, not a state’s long struggle for status abroad."},
+     {t:"Billig’s banal nationalism and Fox and Miller-Idriss’s everyday nationalism", why:"These describe how nations are reproduced in daily life. They don’t explain a demand for equal rank among states."},
+     {t:"Fearon and Laitin on ethnic diversity, and Stewart on horizontal inequality between groups", why:"These are findings about civil war risk inside states, not about status between states."},
+     {t:"Zarakol on the stigma of low rank, and Taylor on the harm of misrecognition", ok:true, why:"Right. This combines Lesson 3 (Zarakol on stigma in the hierarchy of “civilisation”) with Lesson 1 (the politics of recognition)."}]},
+   {id:"e4u6-cp08", lesson:"e4u6-l3", level:1, q:"An 1890s pamphlet cites skull measurements to claim that some “races” are born unfit to govern themselves, and so need empire. Which idea is this?", options:[
+     {t:"Scientific racism", ok:true, why:"Right. Scientific racism falsely claimed, in scientific language, that humanity divides into biological races ranked by ability. Such ideas justified empire and the standard of civilisation."},
+     {t:"Intersectionality", why:"Intersectionality analyses how systems of power interact. The pamphlet ranks races; it doesn’t analyse power."},
+     {t:"Strategic essentialism", why:"Strategic essentialism is a group knowingly presenting itself as united. The pamphlet imposes a false ranking on others."},
+     {t:"Methodological nationalism", why:"That is treating the nation-state as society’s natural container. The pamphlet is about ranking races, not the nation as a unit."}]},
+   {id:"e4u6-cp09", lesson:"e4u6-l4", level:2, q:"In Country Z, income inequality between individuals is moderate. But one ethnic group, in one region, has far fewer jobs, school places and senior posts than others. Which research warns of conflict risk here?", options:[
+     {t:"Fearon and Laitin’s finding that diversity predicts war", why:"Fearon and Laitin found that diversity alone did not predict civil war once income was controlled. The issue here is a gap between groups."},
+     {t:"Stewart’s work on horizontal inequalities between groups", ok:true, why:"Right. Stewart showed that gaps between groups in wealth, jobs, education or power raise conflict risk more than inequality between individuals."},
+     {t:"Varshney’s finding that civic ties always prevent violence", why:"Varshney found strong cross-community associations reduced riot violence in Indian cities. He didn’t say they always prevent it, and the scenario is about group inequality."},
+     {t:"Lijphart’s work on consociational power-sharing", why:"Consociationalism is a design for sharing power, not a finding about what raises conflict risk."}]},
+   {id:"e4u6-cp10", lesson:"e4u6-l4", level:2, q:"Designers of a new constitution want rules that reward politicians for winning votes across several groups, rather than guaranteeing each group’s leaders a share of power. Whose approach is this closest to?", options:[
+     {t:"Arend Lijphart’s consociationalism", why:"Consociationalism guarantees group leaders a grand coalition, vetoes and proportional shares, which is what the designers want to avoid."},
+     {t:"Rabushka and Shepsle’s ethnic outbidding", why:"Outbidding describes a danger, parties competing within one group. It isn’t a design proposal."},
+     {t:"Fredrik Barth’s boundary approach", why:"Barth explained how ethnic boundaries are maintained. He didn’t propose electoral rules."},
+     {t:"Donald Horowitz’s centripetal approach", ok:true, why:"Right. Horowitz argued power-sharing can freeze identities and favoured rules that reward cross-group appeal, such as Nigeria’s requirement for a quarter of votes in two-thirds of states."}]},
+   {id:"e4u6-cp11", lesson:"e4u6-l5", level:2, q:"A columnist writes: “Wars between religious communities come from ancient hatreds, because religion is uniquely violent.” Which reply draws best on the unit?", options:[
+     {t:"Cavanaugh disputes that religion is uniquely violent; research stresses exclusion and inequality", ok:true, why:"Right. This combines Lesson 5 (Cavanaugh, *The Myth of Religious Violence*) with Lesson 4 (Cederman, Stewart and others on what turns difference into violence)."},
+     {t:"Agreed: Huntington predicted that every future war would follow religious and civilisational lines", why:"Defenders and critics agree Huntington wrote about the growing salience of cultural identity, not that every war would follow civilisational lines."},
+     {t:"Agreed: Norris and Inglehart showed that religious people are more violent", why:"Norris and Inglehart linked religiosity to existential insecurity. They did not show that religious people are more violent."},
+     {t:"Agreed: Fearon and Laitin found that more diverse countries have many more civil wars", why:"They found the opposite: diversity alone did not predict civil war once income was controlled."}]},
+   {id:"e4u6-cp12", lesson:"e4u6-l5", level:3, q:"The UN’s Alliance of Civilizations rejects the idea of an inevitable clash, but it still treats civilisations as units. Which critique applies to this, too?", options:[
+     {t:"Hurd’s point that secularism is itself a political settlement, not a neutral one", why:"Hurd’s critique is about secularism, not about treating civilisations as units."},
+     {t:"Huntington’s own point that Western universalism is dangerous for the West", why:"That is Huntington’s own policy advice, not a critique of treating civilisations as units."},
+     {t:"Said: civilisations are not sealed blocks; Sen: sorting people by civilisation is “solitarist”", ok:true, why:"Right. This combines Lesson 5 and Lesson 1: even a dialogue frame can treat civilisations as solid units, which Said and Sen both reject."},
+     {t:"Casanova’s point that religions have re-entered public life in many countries", why:"Deprivatisation describes religion’s public role. It doesn’t criticise treating civilisations as units."}]},
+  ],
   codex:[
    {id:"identity-and-difference", title:"Identity and difference in world politics", aka:["Self and Other","Identity in IR"], tags:["international relations","identity","constructivism"], summary:"How identities of groups and states are made through difference, and why they shape what actors want and fear.",
     levels:{
@@ -1061,7 +1123,7 @@ ICA.addUnit({
      {t:"It never changes once formed", why:"Relational identities change as relations change."},
      {t:"It exists only in personal relationships, not politics", why:"States and nations have relational identities too."}]},
    {id:"e4u6-q02", lesson:"e4u6-l1", level:2, q:"Lucía argues that because national identities are constructed, they cannot explain real policy. Which reply is strongest?", options:[
-     {t:"Constructed social facts, like money and borders, still shape behaviour, so identity can explain policy", ok:true, why:"Correct. Constructed does not mean ineffective."},
+     {t:"Constructed things, like money, still shape behaviour", ok:true, why:"Correct. Constructed social facts, like money and borders, shape behaviour, so identity can explain policy. Constructed does not mean ineffective."},
      {t:"She is right; only material power explains policy", why:"Constructivists and many others show identity affects interests and policy."},
      {t:"National identities are biological, so her premise is wrong", why:"There is no biological basis for national identity."},
      {t:"Identities explain policy only in democracies", why:"Identity shapes policy in all kinds of regime."}]},
@@ -1086,38 +1148,38 @@ ICA.addUnit({
      {t:"Consociationalism", why:"That is a model of power-sharing between groups."},
      {t:"Perennialism", why:"That is a view about the age of nations."}]},
    {id:"e4u6-q07", lesson:"e4u6-l1", level:2, q:"Which example best shows a state making or hardening group categories?", options:[
-     {t:"Singapore’s CMIO categories used in housing and education policy", ok:true, why:"Correct. Official categories shape life chances and self-identification."},
+     {t:"Singapore’s official CMIO race categories", ok:true, why:"Correct. They are used in housing and education policy. Official categories shape life chances and self-identification."},
      {t:"Friends forming a book club", why:"Voluntary clubs are not state classification."},
-     {t:"A company choosing a logo colour", why:"That classifies no people."},
+     {t:"A company choosing a logo colour for its products", why:"That classifies no people."},
      {t:"A scientist naming a new beetle", why:"Classifying insects does not create human groups."}]},
    {id:"e4u6-q08", lesson:"e4u6-l1", level:2, q:"What did Brubaker and Cooper (2000) recommend?", options:[
-     {t:"Replacing loose talk of “identity” with more precise terms such as identification and groupness", ok:true, why:"Correct. They argued the word had become too vague."},
+     {t:"Replacing “identity” with more precise terms", ok:true, why:"Correct. They proposed terms such as identification and groupness, arguing the word had become too vague."},
      {t:"Treating ethnic groups as solid actors in all analysis", why:"Brubaker criticised exactly this “groupism”."},
      {t:"Abandoning the study of nationalism", why:"They wanted better concepts, not to abandon the field."},
      {t:"Measuring identity only through DNA tests", why:"They argued no such thing; identity is social."}]},
    {id:"e4u6-q09", lesson:"e4u6-l1", level:3, q:"A columnist says intersectionality “just means adding up how many disadvantaged groups someone belongs to”. What is the most accurate response?", options:[
-     {t:"That is the additive misuse critics warn against; the idea is about how systems of power interact to produce specific experiences", ok:true, why:"Correct. Interaction, not addition, is the core idea."},
+     {t:"The idea is interaction, not addition", ok:true, why:"Correct. The columnist describes the additive misuse critics warn against; the idea is about how systems of power interact to produce specific experiences."},
      {t:"The columnist is right; that is Crenshaw’s definition", why:"Crenshaw stressed interaction, not addition."},
      {t:"Intersectionality is about traffic law", why:"The crossroads is a metaphor."},
      {t:"Intersectionality only concerns class", why:"It concerns how several systems, including race and gender, interact."}]},
    /* Lesson 2 */
    {id:"e4u6-q10", lesson:"e4u6-l2", level:1, q:"How did Gellner define nationalism?", options:[
-     {t:"A political principle that the political and the national unit should be congruent", ok:true, why:"Correct; it opens *Nations and Nationalism* (1983)."},
-     {t:"Love of one’s family and village", why:"That is local loyalty, not Gellner’s definition."},
+     {t:"A principle that state and nation should coincide", ok:true, why:"Correct. In his words, the political and the national unit should be congruent; it opens *Nations and Nationalism* (1983)."},
+     {t:"Love of one’s family, village and local traditions", why:"That is local loyalty, not Gellner’s definition."},
      {t:"An imagined political community", why:"That is Anderson’s definition of the nation."},
      {t:"A daily plebiscite", why:"That is Renan’s 1882 phrase."}]},
    {id:"e4u6-q11", lesson:"e4u6-l2", level:2, q:"Why, for Gellner, did industrial society need nationalism?", options:[
-     {t:"A mobile workforce needs a shared, standardised literate culture taught by the state", ok:true, why:"Correct. Culture and state had to fit together."},
+     {t:"A mobile workforce needs a shared literate culture", ok:true, why:"Correct. The state teaches a standardised literate culture, so culture and state had to fit together."},
      {t:"Factories required workers of one race", why:"Gellner’s argument was about culture and literacy, not race."},
      {t:"Industry made religion stronger", why:"That was not his mechanism."},
-     {t:"Industrial states needed fewer schools", why:"The opposite: mass schooling was central."}]},
+     {t:"Industrial states needed fewer schools and less literacy", why:"The opposite: mass schooling was central."}]},
    {id:"e4u6-q12", lesson:"e4u6-l2", level:1, q:"What mechanism did Anderson call print-capitalism?", options:[
-     {t:"The market for printed books and newspapers in vernacular languages, creating reading publics", ok:true, why:"Correct. Vernacular print created publics who could imagine a nation."},
-     {t:"Governments printing money to fund wars", why:"That is not Anderson’s concept."},
+     {t:"The market for vernacular books and newspapers", ok:true, why:"Correct. Vernacular print created publics who could imagine a nation."},
+     {t:"Governments printing paper money to fund their wars", why:"That is not Anderson’s concept."},
      {t:"Banks lending to printing companies", why:"The point was reading publics, not finance."},
      {t:"Printing national flags in factories", why:"Flags matter for Billig, not for this concept."}]},
    {id:"e4u6-q13", lesson:"e4u6-l2", level:2, q:"Which example fits Hobsbawm and Ranger’s idea of invented tradition?", options:[
-     {t:"A “centuries-old” ceremony that historians show was largely created in the 19th century to build loyalty", ok:true, why:"Correct. That is the classic pattern."},
+     {t:"A “centuries-old” ceremony created in the 1800s", ok:true, why:"Correct. Historians show such ceremonies were largely created in the 19th century to build loyalty. That is the classic pattern."},
      {t:"A family recipe passed down unchanged for generations", why:"An unchanged inheritance is not an invented tradition."},
      {t:"A new sports league that claims no history", why:"Invented traditions claim continuity with the past."},
      {t:"A scientific discovery", why:"That is not a tradition."}]},
@@ -1127,9 +1189,9 @@ ICA.addUnit({
      {t:"Both: symbols never matter", why:"Both schools take symbols seriously, for different reasons."},
      {t:"Modernist: the kingdom proves nations are ancient", why:"Modernists would stress the modern revival."}]},
    {id:"e4u6-q15", lesson:"e4u6-l2", level:2, q:"Which is the best example of banal nationalism?", options:[
-     {t:"A weather forecast showing only the national map, with neighbouring countries left blank", ok:true, why:"Correct. It quietly presents the nation as the natural unit."},
+     {t:"A weather map showing only the national territory", ok:true, why:"Correct. With neighbouring countries left blank, it quietly presents the nation as the natural unit."},
      {t:"A mass rally for independence", why:"That is “hot”, not banal, nationalism."},
-     {t:"A treaty signed between two states", why:"A treaty is formal diplomacy, not everyday flagging."},
+     {t:"A border treaty signed between two neighbouring states", why:"A treaty is formal diplomacy, not everyday flagging."},
      {t:"A private diary about gardening", why:"Nothing national is flagged."}]},
    {id:"e4u6-q16", lesson:"e4u6-l2", level:1, q:"Which of these did Anderson treat as examples of official nationalism?", options:[
      {t:"Tsarist Russia, Siam and Meiji Japan", ok:true, why:"Correct. Dynasties adopted nationalism from above."},
@@ -1137,7 +1199,7 @@ ICA.addUnit({
      {t:"Indonesia’s 1928 Youth Pledge", why:"That was a popular anti-colonial initiative."},
      {t:"Billig’s weather maps", why:"That is banal nationalism."}]},
    {id:"e4u6-q17", lesson:"e4u6-l2", level:3, q:"Chen writes: “Civic nations are inclusive and ethnic nations are exclusive, so we can sort every country into one box.” Which critique applies?", options:[
-     {t:"Scholars such as Yack argue every civic nation has cultural content, so the two are ends of a spectrum and the labels can be self-serving", ok:true, why:"Correct. Yack and Brubaker questioned the neat divide."},
+     {t:"Civic and ethnic are ends of a spectrum", ok:true, why:"Correct. Yack argues every civic nation has cultural content, and the labels can be self-serving. Yack and Brubaker questioned the neat divide."},
      {t:"Kohn never proposed the distinction", why:"Kohn did propose it, in 1944."},
      {t:"All nations are purely civic", why:"Most mix civic and ethnic elements."},
      {t:"Ethnic nationalism does not exist", why:"It does; the critique is about the neat divide."}]},
@@ -1153,12 +1215,12 @@ ICA.addUnit({
      {t:"1919, Paris", why:"That was the peace conference."},
      {t:"1955, Bandung", why:"That was the Asian–African Conference."}]},
    {id:"e4u6-q20", lesson:"e4u6-l3", level:2, q:"What did Lake and Reynolds show in *Drawing the Global Colour Line* (2008)?", options:[
-     {t:"Self-described “white men’s countries” copied each other’s laws to keep out Asian and other migrants", ok:true, why:"Correct; Natal’s 1897 test influenced Australia’s 1901 Act, for example."},
+     {t:"Settler states copied each other’s exclusion laws", ok:true, why:"Correct. Self-described “white men’s countries” copied each other’s laws to keep out Asian and other migrants; Natal’s 1897 test influenced Australia’s 1901 Act, for example."},
      {t:"Race played no role in immigration law", why:"They showed the reverse."},
-     {t:"Only European states restricted migration", why:"Settler states in several continents did."},
+     {t:"Only European states restricted migration from Asia", why:"Settler states in several continents did."},
      {t:"Japan wrote the White Australia policy", why:"Australia did; Japan opposed such restrictions."}]},
    {id:"e4u6-q21", lesson:"e4u6-l3", level:2, q:"How does Article 22 of the League Covenant illustrate racial hierarchy in the order?", options:[
-     {t:"It placed peoples deemed “not yet able to stand by themselves” under advanced nations as a “sacred trust of civilisation”", ok:true, why:"Correct. The mandate system ranked peoples."},
+     {t:"It put some peoples under tutelage", ok:true, why:"Correct. It placed peoples deemed “not yet able to stand by themselves” under advanced nations as a “sacred trust of civilisation”. The mandate system ranked peoples."},
      {t:"It gave all colonies immediate independence", why:"It kept mandated peoples under outside tutelage."},
      {t:"It adopted Japan’s racial equality clause", why:"The clause was not adopted."},
      {t:"It abolished the standard of civilisation", why:"It built on that idea."}]},
@@ -1173,15 +1235,15 @@ ICA.addUnit({
      {t:"Religion and political opinion only", why:"Those are not in Article 1’s list."},
      {t:"Citizenship status only", why:"The Convention largely allows distinctions between citizens and non-citizens; it is not its definition."}]},
    {id:"e4u6-q24", lesson:"e4u6-l3", level:3, q:"Ana is writing a neutral paragraph on caste and ICERD. Which sentence fits?", options:[
-     {t:"CERD treats descent-based discrimination as including caste; India and some other states argue caste falls outside the Convention", ok:true, why:"Correct. It reports both positions and who holds them."},
+     {t:"CERD says caste is covered; India and others disagree", ok:true, why:"Correct. CERD treats descent-based discrimination as including caste; India and some other states argue caste falls outside the Convention. It reports both positions and who holds them."},
      {t:"Caste is obviously race, and anyone who disagrees is wrong", why:"That takes a side in a contested debate."},
      {t:"ICERD does not mention descent", why:"Article 1 does."},
      {t:"No UN body has addressed caste", why:"CERD’s General Recommendation No. 29 (2002) did."}]},
    {id:"e4u6-q25", lesson:"e4u6-l3", level:2, q:"What happened at the 2001 Durban World Conference against Racism?", options:[
-     {t:"It adopted a Declaration and Programme of Action, amid disputes in which the US and Israel withdrew their delegations", ok:true, why:"Correct. The outcome documents were adopted, but the conference was divided."},
+     {t:"It adopted a Declaration amid deep disputes", ok:true, why:"Correct. It adopted a Declaration and Programme of Action; the US and Israel withdrew their delegations. The outcome documents were adopted, but the conference was divided."},
      {t:"It drafted ICERD", why:"ICERD dates from 1965."},
      {t:"It was cancelled", why:"It took place and adopted outcome documents."},
-     {t:"All states agreed on reparations", why:"Reparations were disputed."}]},
+     {t:"All states agreed on reparations for slavery", why:"Reparations were disputed."}]},
    {id:"e4u6-q26", lesson:"e4u6-l3", level:3, q:"A researcher argues that Japan’s 1919 proposal and Turkey’s Westernising reforms show states struggling with low rank in a hierarchy of “civilisation”, where race was one element. Which position on race in IR is this?", options:[
      {t:"Race as one hierarchy among several", ok:true, why:"Correct. It places race alongside status and civilisation (compare Zarakol and Suzuki)."},
      {t:"Race as irrelevant", why:"The argument includes race."},
@@ -1199,33 +1261,33 @@ ICA.addUnit({
      {t:"Consociationalism", why:"That is a power-sharing model."},
      {t:"Existential security", why:"That concerns religiosity."}]},
    {id:"e4u6-q29", lesson:"e4u6-l4", level:2, q:"What did Fearon and Laitin (2003) find about ethnic diversity and civil war onset, 1945–1999?", options:[
-     {t:"Diversity was not a significant predictor once income was controlled; conditions favouring insurgency mattered more", ok:true, why:"Correct. Poverty, weak states and rough terrain mattered more."},
+     {t:"Diversity mattered little once income was controlled", ok:true, why:"Correct. Diversity was not a significant predictor; conditions favouring insurgency, such as poverty, weak states and rough terrain, mattered more."},
      {t:"Diversity was the strongest predictor", why:"They found the opposite."},
-     {t:"Only religious diversity mattered", why:"Neither ethnic nor religious diversity was significant in their main models."},
+     {t:"Only religious diversity mattered, not ethnic diversity", why:"Neither ethnic nor religious diversity was significant in their main models."},
      {t:"Rich countries had the most civil wars", why:"Poverty was associated with higher risk."}]},
    {id:"e4u6-q30", lesson:"e4u6-l4", level:2, q:"What did the Ethnic Power Relations research of Cederman, Wimmer and Min (2010) find?", options:[
-     {t:"Groups excluded from state power, especially recently, are more likely to fight the government", ok:true, why:"Correct. Exclusion from power, not diversity itself, raised the risk."},
+     {t:"Excluded groups are more likely to fight", ok:true, why:"Correct. Groups excluded from state power, especially recently, are more likely to fight the government. Exclusion from power, not diversity itself, raised the risk."},
      {t:"Excluded groups never rebel", why:"They found the opposite."},
      {t:"Power-sharing always causes war", why:"Their finding was about exclusion."},
-     {t:"Ethnicity is irrelevant to conflict", why:"How groups relate to the state mattered a great deal."}]},
+     {t:"Ethnicity is irrelevant to conflict with the government", why:"How groups relate to the state mattered a great deal."}]},
    {id:"e4u6-q31", lesson:"e4u6-l4", level:3, q:"In a country with two large communities, rival parties each compete for votes in one community by promising tougher stands against the other, and moderates lose. Which concept fits best?", options:[
      {t:"Ethnic outbidding", ok:true, why:"Correct (Rabushka and Shepsle, 1972); Sri Lanka after 1956 is often cited."},
      {t:"Banal nationalism", why:"That is quiet everyday flagging."},
      {t:"Multiple modernities", why:"That concerns forms of modernity."},
      {t:"Deprivatisation", why:"That concerns religion in public life."}]},
    {id:"e4u6-q32", lesson:"e4u6-l4", level:3, q:"Varshney compared Indian cities. Which finding should Mei cite?", options:[
-     {t:"Cities with strong associations linking Hindus and Muslims, such as business groups and unions, saw much less riot violence", ok:true, why:"Correct. Inter-community civic ties made the difference."},
-     {t:"More diverse cities always had more riots", why:"His point was that civic ties, not diversity, made the difference."},
+     {t:"Hindu–Muslim civic ties went with much less riot violence", ok:true, why:"Correct. Cities with strong associations linking Hindus and Muslims, such as business groups and unions, saw much less violence. Inter-community civic ties made the difference."},
+     {t:"More diverse cities always had more riots, whatever their civic life", why:"His point was that civic ties, not diversity, made the difference."},
      {t:"Riots were caused by weather", why:"Not his finding."},
      {t:"Only national policy mattered, never local life", why:"He stressed local civic life."}]},
    {id:"e4u6-q33", lesson:"e4u6-l4", level:1, q:"Which features belong to Lijphart’s consociational democracy?", options:[
-     {t:"Grand coalition, mutual veto, proportionality and segmental autonomy", ok:true, why:"Correct. These are Lijphart’s four features."},
+     {t:"Grand coalition, veto, proportionality and autonomy", ok:true, why:"Correct. These are Lijphart’s four features: grand coalition, mutual veto, proportionality and segmental autonomy."},
      {t:"One-party rule and a single official culture", why:"That is the opposite of power-sharing."},
      {t:"Winner-takes-all elections only", why:"Consociationalism avoids winner-takes-all."},
-     {t:"Rewarding only cross-group vote-seeking", why:"That is closer to Horowitz’s centripetal approach."}]},
+     {t:"Rewarding only politicians who seek votes across groups", why:"That is closer to Horowitz’s centripetal approach."}]},
    {id:"e4u6-q34", lesson:"e4u6-l4", level:2, q:"Which statement about UNDRIP is accurate?", options:[
-     {t:"It was adopted in 2007 by 144 votes to 4, and the four states against later endorsed it", ok:true, why:"Correct: Australia, Canada, New Zealand and the United States."},
-     {t:"It is a treaty ratified by every state", why:"It is a declaration, not a treaty."},
+     {t:"The four states against it later endorsed it", ok:true, why:"Correct. It was adopted in 2007 by 144 votes to 4; the four were Australia, Canada, New Zealand and the United States."},
+     {t:"It is a binding treaty ratified by every UN member state", why:"It is a declaration, not a treaty."},
      {t:"It was adopted in 1948", why:"1948 is the Universal Declaration of Human Rights."},
      {t:"It excludes self-determination", why:"Article 3 affirms self-determination."}]},
    {id:"e4u6-q35", lesson:"e4u6-l4", level:3, q:"A mining company plans a project on land used by an indigenous community. Which UNDRIP principle is most directly at stake?", options:[
@@ -1234,7 +1296,7 @@ ICA.addUnit({
      {t:"Non-refoulement", why:"That protects refugees from return to danger."},
      {t:"Collective self-defence", why:"That concerns the use of force between states."}]},
    {id:"e4u6-q36", lesson:"e4u6-l4", level:2, q:"What is the origin of International Mother Language Day on 21 February?", options:[
-     {t:"The 1952 Dhaka protests for Bengali as a state language, in which several protesters were killed", ok:true, why:"Correct. UNESCO proclaimed the day in 1999."},
+     {t:"The 1952 Dhaka protests for Bengali", ok:true, why:"Correct. Protesters demanded Bengali as a state language, and several were killed. UNESCO proclaimed the day in 1999."},
      {t:"Sri Lanka’s 1956 Official Language Act", why:"That is a different case."},
      {t:"The founding of the UN", why:"The UN was founded in October 1945."},
      {t:"New Zealand’s Māori Language Act", why:"That was 1987, a different case."}]},
@@ -1245,18 +1307,18 @@ ICA.addUnit({
      {t:"Almost everyone", why:"The unaffiliated were about 24%."},
      {t:"About half", why:"The share was considerably higher."}]},
    {id:"e4u6-q38", lesson:"e4u6-l5", level:2, q:"What does Norris and Inglehart’s “existential security” argument predict?", options:[
-     {t:"Religiosity declines where life is safer and more predictable", ok:true, why:"Correct. Safer lives, less religiosity, on their argument."},
+     {t:"Religiosity declines where life is safer", ok:true, why:"Correct. Where life is safer and more predictable, religiosity declines, on their argument."},
      {t:"Religion grows fastest in the richest, safest societies", why:"Their argument predicts the opposite."},
      {t:"Religion and security are unrelated", why:"They argue they are closely related."},
      {t:"All societies will be equally religious", why:"They expect differences by level of security."}]},
    {id:"e4u6-q39", lesson:"e4u6-l5", level:2, q:"What is Hurd’s main critique in *The Politics of Secularism in International Relations* (2008)?", options:[
-     {t:"Secularism is a political settlement with its own history, not a neutral absence of religion", ok:true, why:"Correct. Secularism has varied histories and forms."},
+     {t:"Secularism is itself a political settlement", ok:true, why:"Correct. It has its own history and is not a neutral absence of religion; secularism has varied histories and forms."},
      {t:"Religion should replace the state", why:"She makes no such argument."},
-     {t:"Secularism is the same everywhere", why:"She stresses variety."},
+     {t:"Secularism is the same in every state and era", why:"She stresses variety."},
      {t:"IR has always studied religion closely", why:"Her work responds to IR’s neglect."}]},
    {id:"e4u6-q40", lesson:"e4u6-l5", level:3, q:"A state funds training for imams from neighbouring countries and hosts an international religious forum to improve its reputation. Which analysis fits best?", options:[
-     {t:"Religious soft power, with a risk of governments defining acceptable religion for others", ok:true, why:"Correct. It uses attraction and carries the concerns scholars raise."},
-     {t:"Fault-line conflict", why:"No conflict between civilisations is described."},
+     {t:"Religious soft power, with risks", ok:true, why:"Correct. One risk is governments defining acceptable religion for others. It uses attraction and carries the concerns scholars raise."},
+     {t:"Fault-line conflict between civilisations", why:"No conflict between civilisations is described."},
      {t:"Ethnic outbidding", why:"That is about electoral competition."},
      {t:"Banal nationalism", why:"This is a foreign-policy strategy, not everyday flagging."}]},
    {id:"e4u6-q41", lesson:"e4u6-l5", level:1, q:"Which civilisation did Huntington’s 1996 book call “Sinic”?", options:[
@@ -1265,22 +1327,22 @@ ICA.addUnit({
      {t:"The Hindu civilisation", why:"Hindu kept its name."},
      {t:"The Slavic-Orthodox civilisation", why:"That is a different grouping."}]},
    {id:"e4u6-q42", lesson:"e4u6-l5", level:2, q:"What policy advice did Huntington give the West in the 1996 book?", options:[
-     {t:"Strengthen Western unity and avoid intervening in other civilisations, since Western universalism is false, immoral and dangerous", ok:true, why:"Correct. He advised restraint and Western cohesion."},
-     {t:"Spread Western values worldwide by force", why:"He warned against this."},
+     {t:"Strengthen Western unity and avoid intervention", ok:true, why:"Correct. He called Western universalism false, immoral and dangerous, and advised restraint in other civilisations and Western cohesion."},
+     {t:"Spread Western values worldwide, by force if necessary", why:"He warned against this."},
      {t:"Merge all civilisations into one", why:"He thought civilisations would persist."},
      {t:"Abandon all alliances", why:"He urged Western cohesion."}]},
    {id:"e4u6-q43", lesson:"e4u6-l5", level:2, q:"What did Russett, Oneal and Cox (2000) find when they tested the clash thesis?", options:[
-     {t:"Conflicts between states of different civilisations were not more likely once realist and liberal factors were included", ok:true, why:"Correct. Realist and liberal factors explained more."},
+     {t:"No extra conflict once other factors were included", ok:true, why:"Correct. Conflicts between states of different civilisations were not more likely once realist and liberal factors were included; those factors explained more."},
      {t:"Civilisational difference was the main cause of all wars", why:"They found the opposite."},
      {t:"They found no data to test it", why:"They used conflict data on pairs of states."},
      {t:"Only religious states went to war", why:"Not their finding."}]},
    {id:"e4u6-q44", lesson:"e4u6-l5", level:3, q:"A defender of Huntington says: “The tests only looked at wars between states; he wrote about rising cultural identity.” What is the fair response?", options:[
-     {t:"That is a real limit of the tests, but critics reply it makes the thesis harder to falsify", ok:true, why:"Correct. Both points belong in a balanced answer."},
+     {t:"Fair, but it makes the thesis hard to falsify", ok:true, why:"Correct. It is a real limit of the tests, but critics reply that it makes the thesis harder to falsify. Both points belong in a balanced answer."},
      {t:"The tests prove Huntington right", why:"They mostly did not support the interstate claim."},
      {t:"Huntington never mentioned conflict", why:"Conflict was central to his thesis."},
-     {t:"Cultural identity cannot be studied", why:"It can, with surveys, discourse analysis and other methods."}]},
+     {t:"Cultural identity cannot be studied with any method", why:"It can, with surveys, discourse analysis and other methods."}]},
    {id:"e4u6-q45", lesson:"e4u6-l5", level:3, q:"Kwame is writing a seminar paper on the clash debate. Which plan is strongest?", options:[
-     {t:"Define “civilisation”, separate the interstate claim from the claim about identity, and weigh tests and critiques for each", ok:true, why:"Correct. Precise claims make for a fair test."},
+     {t:"Define terms and test each claim separately", ok:true, why:"Correct. Define “civilisation”, separate the interstate claim from the claim about identity, and weigh tests and critiques for each. Precise claims make for a fair test."},
      {t:"Quote the title and declare it wrong", why:"That skips the argument and the evidence."},
      {t:"Use only sources that agree with him", why:"A seminar paper should engage the strongest counter-arguments."},
      {t:"Treat each civilisation as having one national character", why:"That repeats the essentialism critics warn about."}]}

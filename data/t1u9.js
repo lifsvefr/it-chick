@@ -52,7 +52,7 @@ ICA.addUnit({
         ["Blank","an empty cell","Usually ignored by functions, but counts as 0 in arithmetic"],
         ["Formula","`=B2*C2`","Shows a result; recalculates when the inputs change"]
       ]},
-      "There are also logical values, `TRUE` and `FALSE`, which formulas produce when they compare things. You’ll meet them with IF in Lesson 3.",
+      "There are also logical values, `TRUE` and `FALSE`, which formulas produce when they compare things. You’ll meet them with IF in Lesson 3. Programming languages sort values into kinds in the same way and call them [[data-type|data types]]; Unit 12, Lesson 1 compares them ({{data-types-basics}}).",
       "**The alignment clue.** Unless someone changed the alignment by hand, every app lines **text up on the left** (in left-to-right languages) and **numbers and dates up on the right**. So if a column of prices has one value sitting on the left, that value is probably text that only looks like a number, and calculations will treat it differently. Section 5 shows what goes wrong."
     ]},
     {h:"Dates are numbers in disguise", body:[
@@ -157,10 +157,10 @@ ICA.addUnit({
       "Gene: ", {t:"SEPT2", flag:true, why:"Letters followed by a number that look like a month and day: Excel turns this into a date, 2-Sep. That’s exactly the gene-name problem."}, "\nPostcode: ", {t:"02134", flag:true, why:"In the automatic format the leading zero is removed and 2134 is stored."}, "\nName: ", {t:"Ana Souza", flag:false, why:"Ordinary text stays as typed."}, "\nAmount: ", {t:"12.50", flag:false, why:"A real number. It may show as 12.5, but the value is what Tomás meant."}, "\nAge band: ", {t:"1-2", flag:true, why:"Two numbers with a hyphen look like a day and month, so Excel stores a date (such as 2 January or 1 February, depending on locale)."}, "\nBatch code: ", {t:"3E5", flag:true, why:"Digits around an E are read as scientific notation: 3 × 10⁵, shown as 3.00E+05. Microsoft’s Automatic Data Conversion page lists this conversion."}, "\nCity: ", {t:"Lagos", flag:false, why:"Plain text; nothing to convert."}
     ]},
     {id:"t1u9-l1-x7", type:"mcq", q:"Hana types `03/04/2026` for a meeting on 3 April. Her colleague in another country opens the shared sheet and sees March 4. What’s the most reliable way to avoid this?", options:[
-      {t:"Enter dates as year-month-day, such as 2026-04-03, and check the stored date in the formula bar", ok:true, why:"Year-month-day has only one reading, and the major apps recognise it as a date. Each person can then choose a display format they like; the stored date stays the same."},
+      {t:"Enter dates as year-month-day, such as 2026-04-03", ok:true, why:"Year-month-day has only one reading, and the major apps recognise it as a date. Check the stored date in the formula bar. Each person can then choose a display format they like; the stored date stays the same."},
       {t:"Make the text bold so people read it carefully", why:"Formatting the look doesn’t change which date was stored. The problem happened when 03/04 was read using one locale’s order."},
       {t:"Type the date as text so the app can’t change it", why:"The display would stay the same, but you could no longer sort by date or calculate days, and readers would still disagree about what 03/04 means."},
-      {t:"Nothing can be done; the colleague’s app is wrong", why:"Neither app is wrong: they read day/month order differently. An unambiguous format solves it."}
+      {t:"Nothing can be done, because the colleague’s app is wrong", why:"Neither app is wrong: they read day/month order differently. An unambiguous format solves it."}
     ]}
    ],
    apply:{intro:"Make a practice sheet and watch how the app treats different kinds of data. Any of the free options works: Excel for the web with a free Microsoft account, Google Sheets with a free Google account, LibreOffice Calc, or Numbers on an Apple device (or Numbers for iCloud in a browser).", tasks:[
@@ -499,7 +499,7 @@ ICA.addUnit({
       {t:"=XLOOKUP(F2, A2:A5, C2:C5)", flag:false, why:"Correct: exact match by default, returns the price."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 3)", flag:true, why:"The last argument is missing, so VLOOKUP does an approximate match. It may happen to work on this sorted list, but on an unsorted list it can return the wrong price without an error, and a code that isn’t in the list can return a neighbouring row’s price instead of #N/A. Add FALSE: =VLOOKUP(F2, A2:C5, 3, FALSE)."}, "\n", {t:"=IF(B2>=50, Pass, \"Retake\")", flag:true, why:"Pass needs quotes. Without them the app looks for something named Pass and shows #NAME?. Write \"Pass\"."}, "\n", {t:"=COUNTIF(C2:C6, \">100\")", flag:false, why:"Correct: the comparison sign goes inside the quotes."}, "\n", {t:"=AVERAGE(B2:B7)", flag:false, why:"Correct: averages the numbers in B2:B7."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 4, FALSE)", flag:true, why:"A2:C5 has only 3 columns, so asking for column 4 is an error: #REF! in Excel and Google Sheets, Err:502 in LibreOffice Calc. Price is column 3."}
     ]},
     {id:"t1u9-l3-x6", type:"mcq", q:"Ana splits a 100.00 bill between three people with `=B2/3` in three cells, formatted to two decimals. Each shows 33.33 and their SUM shows 100.00. Each person then pays exactly 33.33. What’s going on?", options:[
-      {t:"The cells hold 33.333…; the format only hides the extra digits. Real payments of 33.33 add to 99.99", ok:true, why:"Right. Formatting changes the display, not the value, so the SUM adds the unrounded shares. If the rounded amount is what people actually pay, use =ROUND(B2/3, 2), and the SUM will honestly show 99.99."},
+      {t:"The cells hold 33.333…; the format hides the extra digits", ok:true, why:"Right. The stored shares add to exactly 100, but real payments of 33.33 add to 99.99. Formatting changes the display, not the value, so the SUM adds the unrounded shares. If the rounded amount is what people actually pay, use =ROUND(B2/3, 2), and the SUM will honestly show 99.99."},
       {t:"Formatting to two decimals rounds the stored values, so the SUM is wrong", why:"Formatting doesn’t change stored values; that’s why the SUM still shows 100.00. ROUND is the function that changes values."},
       {t:"Spreadsheets can’t divide by 3 accurately", why:"The division is as accurate as it needs to be. The mismatch comes from rounding real payments while the sheet uses unrounded values."},
       {t:"The SUM function adds an extra cent to round totals", why:"SUM adds the stored values exactly. Three times 33.333… is 100."}
@@ -616,7 +616,8 @@ ICA.addUnit({
       "Validation guards new typing. It doesn’t fix data that was already there, and in some apps pasting over a cell can bring in values that break the rule, so it’s a seatbelt, not a guarantee."
     ]},
     {h:"A first look at pivot tables", body:[
-      "Once data is tidy, a [[pivot-table|pivot table]] can summarise it in seconds: total kilograms by crop, sales by month, volunteers by team, without writing a single SUMIF. You choose which column becomes the rows, which the columns, and which values to add up or count. Excel (**Insert → PivotTable**), Google Sheets (**Insert → Pivot table**), LibreOffice Calc (**Insert → Pivot Table**) and Numbers (arranged in the **Organize** sidebar’s **Pivot Options** tab) all have them. The {{pivot-tables}} entry in the Codex explains more. They only work well on tidy data, which is one more reason to keep it that way."
+      "Once data is tidy, a [[pivot-table|pivot table]] can summarise it in seconds: total kilograms by crop, sales by month, volunteers by team, without writing a single SUMIF. You choose which column becomes the rows, which the columns, and which values to add up or count. Excel (**Insert → PivotTable**), Google Sheets (**Insert → Pivot table**), LibreOffice Calc (**Insert → Pivot Table**) and Numbers (arranged in the **Organize** sidebar’s **Pivot Options** tab) all have them. The {{pivot-tables}} entry in the Codex explains more. They only work well on tidy data, which is one more reason to keep it that way.",
+      "A tidy sheet is a [[flat-file|flat file]]: one big table. When the same customer or plot starts appearing in hundreds of rows, or several people need to edit at once, a database usually works better. Unit 12, Lesson 2 compares the two ({{flat-files-vs-databases}})."
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -644,7 +645,7 @@ ICA.addUnit({
       {v:3, tol:0, why:"That’s the number of month columns. Each of the 5 plots has a row for each of the 3 months: 15."}
     ]},
     {id:"t1u9-l4-x3", type:"mcq", q:"Amara selects only column B (Hours) of her volunteer table and sorts it largest to smallest. Excel shows a warning, and she chooses “Continue with the current selection”. What has happened?", options:[
-      {t:"The hours were reordered but the names weren’t, so most names now have someone else’s hours", ok:true, why:"Right. Only the selected column moved, breaking every record. She should Undo straight away, then sort again with “Expand the selection” (or by clicking a single cell in the table first)."},
+      {t:"The hours moved but the names didn’t, so records are mixed up", ok:true, why:"Right. Only the selected column moved, so most names now have someone else’s hours. She should Undo straight away, then sort again with “Expand the selection” (or by clicking a single cell in the table first)."},
       {t:"The whole table was sorted, because Excel always keeps rows together", why:"Excel warned her because it would not keep rows together if she continued with only column B selected."},
       {t:"Nothing changed, because you can’t sort numbers", why:"Numbers sort largest to smallest perfectly well; that part worked. The problem is what it did to the records."},
       {t:"The hours were deleted and replaced with ranks", why:"Sorting never deletes or replaces values; it only moves them. Here it moved them without their names."}
@@ -863,6 +864,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u9-q02","t1u9-q05","t1u9-q08","t1u9-q11","t1u9-q14","t1u9-q19","t1u9-q22","t1u9-q25","t1u9-q30","t1u9-q34","t1u9-q39","t1u9-q43"],
+  cpBank:[
+    {id:"t1u9-cp01", lesson:"t1u9-l1", level:1, q:"How many cells are in the range `B2:D5`?", options:[
+      {t:"7", why:"This adds 3 columns and 4 rows. A range is a rectangle, so multiply them instead."},
+      {t:"16", why:"This counts 4 columns and 4 rows. B, C and D make only 3 columns."},
+      {t:"12", ok:true, why:"Columns B, C and D are 3 columns; rows 2 to 5 are 4 rows. 3 × 4 = 12 cells."},
+      {t:"9", why:"This counts 3 rows (5 − 2). Count both ends: rows 2, 3, 4 and 5 make 4 rows."}
+    ]},
+    {id:"t1u9-cp02", lesson:"t1u9-l2", level:1, q:"Which formula multiplies the value in B3 by the value in C3?", options:[
+      {t:"`=B3xC3`", why:"The letter x isn’t an operator. Spreadsheets use `*` for multiply."},
+      {t:"`B3*C3`", why:"Without the equals sign, the app treats this as text, not a formula."},
+      {t:"`=B3×C3`", why:"The × sign isn’t used in formulas. Multiplication is `*`."},
+      {t:"`=B3*C3`", ok:true, why:"A formula starts with `=`, and `*` is the multiplication operator."}
+    ]},
+    {id:"t1u9-cp03", lesson:"t1u9-l3", level:1, q:"Column B holds the daily temperatures for a month, in B2:B31. Which formula finds the highest temperature?", options:[
+      {t:"`=MAX(B2:B31)`", ok:true, why:"MAX returns the largest number in the range."},
+      {t:"`=COUNT(B2:B31)`", why:"COUNT tells you how many cells hold numbers, not which number is biggest."},
+      {t:"`=SUM(B2:B31)`", why:"SUM adds all the temperatures together. That isn’t the highest one."},
+      {t:"`=MIN(B2:B31)`", why:"MIN returns the smallest number, the opposite of what is needed."}
+    ]},
+    {id:"t1u9-cp04", lesson:"t1u9-l1", level:2, q:"B2 holds the order date `2026-05-28` and C2 holds the delivery date `2026-06-04`. D2 contains `=C2-B2` and is formatted as a Number. What does D2 show?", options:[
+      {t:"6", why:"Count again: May has 31 days, so 28 May to 31 May is 3 days, plus 4 days into June."},
+      {t:"7", ok:true, why:"Dates are stored as day numbers, so subtracting gives the days between: 3 days to the end of May plus 4 in June = 7."},
+      {t:"-7", why:"The later date minus the earlier date gives a positive number. It would be −7 only the other way round."},
+      {t:"An error, because dates can’t be subtracted", why:"Dates are numbers in disguise (date serial numbers), so subtraction works."}
+    ]},
+    {id:"t1u9-cp05", lesson:"t1u9-l2", level:2, q:"D2 contains `=B2+C2`. You copy D2 to F4, which is two columns to the right and two rows down. What formula is in F4?", options:[
+      {t:"`=B4+C4`", why:"This shifts only the rows. The columns move two to the right too."},
+      {t:"`=B2+C2`", why:"Only absolute references (with `$`) stay the same. These are relative, so they shift."},
+      {t:"`=D2+E2`", why:"This shifts only the columns. The rows move two down as well."},
+      {t:"`=D4+E4`", ok:true, why:"Relative references move the same way as the copy: two columns right (B→D, C→E) and two rows down (2→4)."}
+    ]},
+    {id:"t1u9-cp06", lesson:"t1u9-l3", level:2, q:"A shop gives a discount on orders of 50 or more. Ines writes `=IF(B2>50, \"Discount\", \"None\")`. What happens for an order of exactly 50, and what is the fix?", options:[
+      {t:"It shows “Discount”; the formula is correct", why:"50 is not greater than 50, so the condition is FALSE. The formula shows “None”."},
+      {t:"It shows an error, because 50 is on the boundary", why:"IF works fine on the boundary. It simply follows the comparison you wrote."},
+      {t:"It shows “None”; use `>=` so that an order of 50 counts", ok:true, why:"`>` excludes 50 itself. `B2>=50` includes it. Always test the exact boundary value."},
+      {t:"It shows “None”; put quotes around 50", why:"Quotes would turn 50 into text. The problem is the comparison sign."}
+    ]},
+    {id:"t1u9-cp07", lesson:"t1u9-l4", level:2, q:"Joon can see 45 cells saying “Paid” in column B, but `=COUNTIF(B2:B100, \"Paid\")` returns 41. What is the most likely cause, and what helps?", options:[
+      {t:"COUNTIF is case-sensitive; make every entry capital letters", why:"COUNTIF ignores capital letters. Case is not why some entries are missed."},
+      {t:"Some entries have stray spaces, such as “Paid ”", ok:true, why:"COUNTIF won’t match an entry with a trailing space. TRIM removes the spaces, and a dropdown list keeps new entries consistent."},
+      {t:"COUNTIF can only count up to 41 cells", why:"There is no such limit. The function is missing entries that don’t match exactly."},
+      {t:"Four of the cells are coloured, and COUNTIF skips coloured cells", why:"Colour doesn’t affect COUNTIF. It compares the text in each cell."}
+    ]},
+    {id:"t1u9-cp08", lesson:"t1u9-l5", level:2, q:"For 30 students, Ama has the hours each one studied and their quiz score. She wants to see whether the two go together. Which chart fits best?", options:[
+      {t:"A pie chart", why:"A pie chart shows how one whole splits into a few parts. It can’t show two measures together."},
+      {t:"A line chart", why:"A line chart shows change over time. These are separate students, not a time series."},
+      {t:"A bar chart of the 30 quiz scores, in order", why:"Bars compare categories on one measure. They don’t show whether two measures move together."},
+      {t:"A scatter chart, with one dot for each student", ok:true, why:"A scatter chart places each record by two measures. A pattern shows a relationship, though not that one causes the other."}
+    ]},
+    {id:"t1u9-cp09", lesson:"t1u9-l2", level:3, q:"Category names are in E2:E5. F2 contains `=SUMIF(B2:B20, E2, C2:C20)`. Malik fills it down to F5, but the totals in F3:F5 are too small. What is the fix?", options:[
+      {t:"Lock all three references: `=SUMIF($B$2:$B$20, $E$2, $C$2:$C$20)`", why:"Locking E2 makes every row use the first category, so all four totals would be the same."},
+      {t:"Use `=SUMIF($B$2:$B$20, E2, $C$2:$C$20)`", ok:true, why:"Filled down, the unlocked ranges slid to B3:B21, B4:B22 and so on, missing the top rows. Lock the ranges but keep E2 relative so each row reads its own category."},
+      {t:"Replace SUMIF with COUNTIF", why:"COUNTIF counts matching rows; it doesn’t add amounts. The problem is the moving ranges."},
+      {t:"Format F3:F5 to show more decimal places", why:"Formatting changes only the display. The values themselves are wrong because the ranges moved."}
+    ]},
+    {id:"t1u9-cp10", lesson:"t1u9-l3", level:3, q:"Five ratings in B2:B6 are 4, 0, 5, 0 and 3, and `=AVERAGE(B2:B6)` shows 2.4. The two 0s are people who didn’t answer. What is the real average, and what should change?", options:[
+      {t:"2.4; a 0 and a blank cell mean the same thing to AVERAGE", why:"AVERAGE skips blank cells but counts zeros as real values. That is why the 0s pull the result down to 12 ÷ 5 = 2.4."},
+      {t:"4; clear the two 0s so that AVERAGE skips them", ok:true, why:"The real ratings are 4, 5 and 3: 12 ÷ 3 = 4. A blank means “not recorded”, and AVERAGE leaves blanks out. Use 0 only for a real zero."},
+      {t:"2.4; AVERAGE already ignores zeros, so nothing should change", why:"AVERAGE ignores blanks, not zeros. The two 0s are counted, so the result is 12 ÷ 5 = 2.4 instead of 4."},
+      {t:"3.6; replace the 0s with 3, the middle rating, to fill the gaps", why:"Typing a guessed rating invents data: (4 + 3 + 5 + 3 + 3) ÷ 5 = 3.6 isn’t anyone’s real answer. Leave unknown values blank."}
+    ]},
+    {id:"t1u9-cp11", lesson:"t1u9-l4", level:3, q:"In Mateus’s attendance sheet, “March” is one merged cell covering A2:A9. Names are in column B. When he tries to sort by name, it fails. What is the best fix?", options:[
+      {t:"Select only column B and sort it", why:"Sorting one column scrambles the rows: names would no longer match their other values."},
+      {t:"Colour the March rows and delete column A", why:"Colour isn’t data that functions can use, and deleting the column loses the month."},
+      {t:"Add blank rows between the months so that each month stays separate", why:"Blank rows break up the table, which makes sorting and filtering worse."},
+      {t:"Unmerge it and put “March” in the Month column of each row", ok:true, why:"Merged cells block sorting. In tidy data, each row is one record with its own month."}
+    ]},
+    {id:"t1u9-cp12", lesson:"t1u9-l5", level:3, q:"A colleague double-clicked Kwesi’s CSV of product codes, such as `00451`, and saved it. The codes now read `451`. Can formatting the column as Text bring the zeros back?", options:[
+      {t:"Yes, formatting as Text restores the original digits", why:"A format only changes the display. The zeros were removed when the value was stored, so they are gone from that file."},
+      {t:"No; re-import the untouched original CSV with codes set to Text", ok:true, why:"Opening it let the app guess the codes were numbers, and saving made that permanent. Importing the original with Text columns keeps the zeros."},
+      {t:"Yes, if he re-saves the file as UTF-8", why:"UTF-8 is about how letters are encoded. It has nothing to do with lost zeros."},
+      {t:"No, and the codes never had zeros, because a CSV file can’t store them", why:"CSV is plain text and stores `00451` perfectly. The zeros were lost when a spreadsheet app guessed the type."}
+    ]},
+  ],
   codex:[
    {id:"spreadsheet-basics", title:"Spreadsheet basics", aka:["workbook","worksheet","cell","range","Excel","Google Sheets","LibreOffice Calc","Numbers"], tags:["spreadsheets","basics"],
     summary:"A spreadsheet is a grid of cells that hold values and formulas; files are workbooks, pages are sheets, and every cell has an address.",
@@ -1320,8 +1395,8 @@ ICA.addUnit({
      {t:"A range of four cells starting at C", why:"A range is written with a colon, such as C1:C4. C4 is a single cell."}
    ]},
    {id:"t1u9-q02", lesson:"t1u9-l1", level:1, q:"Which statement about number formats is true?", options:[
-     {t:"They change how a value is displayed, not the value used in calculations", ok:true, why:"A cell holding 1.26 shown with one decimal displays 1.3, but formulas use 1.26."},
-     {t:"They round the stored value to the decimals shown", why:"That’s what the ROUND function does. A format only changes the display."},
+     {t:"They change how a value looks, not the value itself", ok:true, why:"Formulas still use the stored value: a cell holding 1.26 shown with one decimal displays 1.3, but formulas use 1.26."},
+     {t:"They round the stored value to the number of decimals shown", why:"That’s what the ROUND function does. A format only changes the display."},
      {t:"They convert text into numbers", why:"Changing the format of text that looks like a number usually doesn’t convert it; you need to re-enter it or use VALUE."},
      {t:"They only work on dates", why:"Formats apply to numbers too: decimals, currency, percent, fractions, scientific notation."}
    ]},
@@ -1338,9 +1413,9 @@ ICA.addUnit({
      {t:"A temperature reading of 21.5", why:"A measurement you might average or chart: a number."}
    ]},
    {id:"t1u9-q05", lesson:"t1u9-l1", level:2, q:"A column of amounts has one value sitting on the left edge of its cell while the others sit on the right. What does this most likely mean?", options:[
-     {t:"That value is stored as text, so SUM and AVERAGE will skip it", ok:true, why:"By default text aligns left and numbers right. A number stored as text is a common cause of totals that are too small."},
+     {t:"That value is stored as text, so SUM will skip it", ok:true, why:"By default text aligns left and numbers right. SUM and AVERAGE skip a number stored as text, a common cause of totals that are too small."},
      {t:"That value is negative", why:"Negative numbers still align right; they show a minus sign or brackets."},
-     {t:"That value is the largest in the column", why:"Alignment doesn’t depend on size."},
+     {t:"That value is the largest or smallest number in the column", why:"Alignment doesn’t depend on size."},
      {t:"Nothing: alignment is random", why:"Default alignment follows the type of value, which is why it’s a useful clue."}
    ]},
    {id:"t1u9-q06", lesson:"t1u9-l1", level:3, q:"Amara pastes 200 customer phone numbers into a sheet. Later she notices they all lost their first 0. What would have prevented it?", options:[
@@ -1350,10 +1425,10 @@ ICA.addUnit({
      {t:"Sorting the column afterwards", why:"Sorting changes order, not values. The zeros were already gone."}
    ]},
    {id:"t1u9-q07", lesson:"t1u9-l1", level:3, q:"A researcher’s list of gene symbols includes SEPT2 and MARCH1. After pasting into Excel with default settings, some appear as 2-Sep and 1-Mar. What happened, and what’s a good habit?", options:[
-     {t:"Excel guessed they were dates; set the column to Text before pasting and check data after importing", ok:true, why:"This automatic conversion affected about a fifth of genomics papers with Excel gene lists in a 2016 study. Text format, or Excel’s Automatic Data Conversion settings, prevents it."},
+     {t:"Excel guessed they were dates; set the column to Text first", ok:true, why:"Set the column to Text before pasting, and check data after importing. This automatic conversion affected about a fifth of genomics papers with Excel gene lists in a 2016 study. Text format, or Excel’s Automatic Data Conversion settings, prevents it."},
      {t:"The file was corrupted during copying", why:"The pattern (gene names becoming specific dates) is the app’s type guessing, not corruption."},
      {t:"Gene symbols can’t be stored in spreadsheets", why:"They can, as text. The problem is letting the app guess the type."},
-     {t:"Bold formatting would have stopped the conversion", why:"Font formatting doesn’t affect how a value is interpreted."}
+     {t:"Bold formatting on the column would have stopped the conversion", why:"Font formatting doesn’t affect how a value is interpreted."}
    ]},
    {id:"t1u9-q08", lesson:"t1u9-l1", level:2, q:"A1 and A2 both hold 3.14 and are formatted to show no decimals, so each shows 3. A3 holds =A1+A2, also with no decimals. What does A3 show?", options:[
      {t:"6", ok:true, why:"The formula adds the stored values: 3.14 + 3.14 = 6.28, displayed with no decimals as 6."},
@@ -1362,8 +1437,8 @@ ICA.addUnit({
      {t:"5", why:"Nothing here rounds down to 5; the sum is 6.28."}
    ]},
    {id:"t1u9-q09", lesson:"t1u9-l1", level:3, q:"Lucía’s 16-digit membership numbers end in 0 after she types them into Excel, even though many should end in other digits. Why?", options:[
-     {t:"Excel keeps only 15 significant digits for numbers, so the 16th becomes 0; store them as text", ok:true, why:"Microsoft’s support article explains the 15-digit limit. Long codes must be text (format as Text first, or type an apostrophe)."},
-     {t:"The column is too narrow", why:"A narrow column shows #### or scientific notation, but the stored value is changed by the 15-digit limit."},
+     {t:"Excel keeps only 15 digits; store them as text", ok:true, why:"Excel keeps only 15 significant digits for numbers, so the 16th becomes 0. Microsoft’s support article explains the limit. Long codes must be text (format as Text first, or type an apostrophe)."},
+     {t:"The column is too narrow to show all sixteen digits", why:"A narrow column shows #### or scientific notation, but the stored value is changed by the 15-digit limit."},
      {t:"She typed them wrong", why:"The consistent 0 in the 16th place is the precision limit, not typing errors."},
      {t:"Excel rounds all numbers to the nearest 10", why:"Only digits beyond the 15th are affected."}
    ]},
@@ -1393,8 +1468,8 @@ ICA.addUnit({
      {t:"F$1", why:"Only the row is locked; the column changes when copied sideways."}
    ]},
    {id:"t1u9-q14", lesson:"t1u9-l2", level:3, q:"Kenji puts an exchange rate in E1 and writes =B2*E1 in C2, then fills it down. C2 is right, but C3 onwards show 0. What’s wrong?", options:[
-     {t:"The copies point at E2, E3 and so on, which are empty; he needs =B2*$E$1", ok:true, why:"Without $, E1 moves down with each copy. Empty cells count as 0, so the results are 0. Locking E1 fixes every copy."},
-     {t:"The exchange rate is formatted as a percentage", why:"Formatting wouldn’t make some rows 0 and others right. The pattern (only the first row works) points to the reference moving."},
+     {t:"The copies point at empty cells; he needs =B2*$E$1", ok:true, why:"Without $, E1 moves down with each copy to E2, E3 and so on, which are empty. Empty cells count as 0, so the results are 0. Locking E1 fixes every copy."},
+     {t:"The exchange rate in E1 is formatted as a percentage", why:"Formatting wouldn’t make some rows 0 and others right. The pattern (only the first row works) points to the reference moving."},
      {t:"Fill down only copies values, not formulas", why:"Filling copies formulas and adjusts their references, which is exactly what happened here."},
      {t:"The B column contains text", why:"Then C2 would be affected too. Only the copies are wrong, so the copied reference is the problem."}
    ]},
@@ -1411,7 +1486,7 @@ ICA.addUnit({
      {t:"=B2/A2", why:"That gives 1.25 (125%), the ratio, not the change."}
    ]},
    {id:"t1u9-q17", lesson:"t1u9-l2", level:3, q:"Tomás copies =SUM(A1,B1) from an English tutorial into his spreadsheet, which uses a decimal comma, and gets an error. What should he try first?", options:[
-     {t:"Replace the comma between the arguments with a semicolon: =SUM(A1;B1)", ok:true, why:"In decimal-comma locales, apps use semicolons to separate arguments. The function is fine."},
+     {t:"Use a semicolon between the arguments: =SUM(A1;B1)", ok:true, why:"In decimal-comma locales, apps use semicolons to separate arguments. The function is fine; only the comma needs replacing."},
      {t:"Change his computer’s language to English permanently", why:"That’s drastic and unnecessary; the formula just needs the local separator."},
      {t:"Use =ADD(A1,B1) instead", why:"There’s no ADD function in these apps, so it would give #NAME?. The separator is the issue."},
      {t:"Type the formula without the =", why:"Without = it becomes text and won’t calculate at all."}
@@ -1424,8 +1499,8 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u9-q19", lesson:"t1u9-l3", level:1, q:"What is the difference between COUNT and COUNTA?", options:[
-     {t:"COUNT counts cells with numbers; COUNTA counts all cells that aren’t empty", ok:true, why:"COUNTA includes text, so a column with words in it gives a bigger COUNTA than COUNT."},
-     {t:"COUNT counts all cells; COUNTA counts only numbers", why:"It’s the other way round: the A is for “all non-empty”."},
+     {t:"COUNT counts numbers; COUNTA counts all non-empty cells", ok:true, why:"COUNTA includes text, so a column with words in it gives a bigger COUNTA than COUNT."},
+     {t:"COUNT counts all the cells; COUNTA counts only the numbers", why:"It’s the other way round: the A is for “all non-empty”."},
      {t:"COUNTA adds the values; COUNT counts them", why:"Neither adds; SUM adds."},
      {t:"There’s no difference; COUNTA is the old name", why:"They give different results whenever cells hold text."}
    ]},
@@ -1448,16 +1523,16 @@ ICA.addUnit({
      {t:"5", why:"5 is the number of cells, not the number meeting the condition."}
    ]},
    {id:"t1u9-q23", lesson:"t1u9-l3", level:1, q:"In =SUMIF(B2:B6, \"Food\", C2:C6), what does C2:C6 do?", options:[
-     {t:"It’s the range of values to add up for the rows where B says Food", ok:true, why:"SUMIF checks the first range and adds the matching rows from the sum range."},
+     {t:"It holds the values to add up for the Food rows", ok:true, why:"SUMIF checks the first range (B2:B6) for Food and adds the matching rows from this sum range."},
      {t:"It’s where the condition is checked", why:"The condition is checked in the first range, B2:B6."},
-     {t:"It’s where the answer will be written", why:"The answer appears in the cell holding the formula."},
+     {t:"It’s the cell range where the answer will be written", why:"The answer appears in the cell holding the formula."},
      {t:"It lists the allowed categories", why:"The criterion is the second argument, \"Food\"."}
    ]},
    {id:"t1u9-q24", lesson:"t1u9-l3", level:3, q:"Mei’s VLOOKUP, =VLOOKUP(F2, A2:C50, 3), sometimes returns a price for the wrong product, with no error. Why?", options:[
-     {t:"Without FALSE at the end it does an approximate match, which needs a sorted first column", ok:true, why:"All four apps default to approximate matching. Add FALSE for an exact match, or use XLOOKUP, which is exact by default."},
+     {t:"Without FALSE, it does an approximate match", ok:true, why:"An approximate match needs a sorted first column. All four apps default to approximate matching. Add FALSE for an exact match, or use XLOOKUP, which is exact by default."},
      {t:"VLOOKUP can only search 10 rows", why:"It can search thousands of rows. The missing last argument is the problem."},
      {t:"Column 3 should be column 2", why:"If prices are in the third column of A2:C50, 3 is right. Wrong products come from approximate matching."},
-     {t:"The prices are formatted as currency", why:"Formatting doesn’t change which row is matched."}
+     {t:"The prices in column C are formatted as currency", why:"Formatting doesn’t change which row is matched."}
    ]},
    {id:"t1u9-q25", lesson:"t1u9-l3", level:2, q:"A cell shows #DIV/0!. What is the most likely cause?", options:[
      {t:"The formula divides by a cell that is empty or 0", ok:true, why:"Dividing by zero is undefined; empty cells count as 0."},
@@ -1466,10 +1541,10 @@ ICA.addUnit({
      {t:"The column is too narrow", why:"A narrow column shows ####, which isn’t an error."}
    ]},
    {id:"t1u9-q26", lesson:"t1u9-l3", level:3, q:"Sione’s =XLOOKUP(F2, A2:A40, C2:C40) shows #N/A for code 0731, but he can see 0731 in the list. What should he check?", options:[
-     {t:"Whether one 0731 is text and the other a number (731), or one has an extra space", ok:true, why:"Lookups need an exact match, including type and spaces. A code typed into a General-format cell becomes the number 731, which doesn’t equal the text “0731”."},
+     {t:"Whether one 0731 is text and the other a number", ok:true, why:"Lookups need an exact match, including type and spaces, so also check for an extra space. A code typed into a General-format cell becomes the number 731, which doesn’t equal the text “0731”."},
      {t:"Whether XLOOKUP exists in his app", why:"If it didn’t, he’d see #NAME?, not #N/A."},
      {t:"Whether the list is sorted", why:"XLOOKUP matches exactly by default and doesn’t need sorted data."},
-     {t:"Whether the result column is too narrow", why:"A narrow column shows ####, not #N/A."}
+     {t:"Whether the result column is too narrow to show it", why:"A narrow column shows ####, not #N/A."}
    ]},
    {id:"t1u9-q27", lesson:"t1u9-l3", level:3, q:"Oluwaseun’s club treasurer pays out 25.00 ÷ 3 to each of three helpers, using =B2/3 formatted to two decimals (8.33 each). The sheet’s total shows 25.00, but the bank says 24.99 was paid. Which change makes the sheet match reality?", options:[
      {t:"Use =ROUND(B2/3, 2) so each share really is 8.33", ok:true, why:"ROUND changes the stored value, so the total of the three shares becomes 24.99, matching what was paid."},
@@ -1497,19 +1572,19 @@ ICA.addUnit({
      {t:"So the app knows where the header is", why:"You tell the app about the header with a “has header row” option."}
    ]},
    {id:"t1u9-q31", lesson:"t1u9-l4", level:2, q:"Which feature keeps the header row visible while you scroll down a long list?", options:[
-     {t:"Freeze panes (Freeze Top Row, Freeze 1 row, Freeze First Row or Freeze Header Rows)", ok:true, why:"Freezing pins rows or columns in place on screen."},
+     {t:"Freeze panes, such as Freeze Top Row", ok:true, why:"Depending on the app it’s called Freeze Top Row, Freeze 1 row, Freeze First Row or Freeze Header Rows. Freezing pins rows or columns in place on screen."},
      {t:"Data validation", why:"Validation limits what can be typed; it doesn’t affect scrolling."},
      {t:"A filter", why:"A filter hides rows; it doesn’t pin the header."},
-     {t:"Merging the header cells", why:"Merging joins cells; it doesn’t keep them on screen, and it causes sorting problems."}
+     {t:"Merging all the header cells into one", why:"Merging joins cells; it doesn’t keep them on screen, and it causes sorting problems."}
    ]},
    {id:"t1u9-q32", lesson:"t1u9-l4", level:3, q:"Ana’s team logs expenses with categories typed freely, and COUNTIF misses many entries. What’s the best long-term fix?", options:[
-     {t:"Add a dropdown list (data validation) for the category column, then clean the existing entries", ok:true, why:"Validation stops new inconsistent entries; a one-off clean-up fixes the old ones (validation doesn’t fix existing data)."},
+     {t:"Add a dropdown list for categories, then clean old entries", ok:true, why:"Data validation stops new inconsistent entries; a one-off clean-up fixes the old ones (validation doesn’t fix existing data)."},
      {t:"Colour-code the categories", why:"Colours don’t make typed text consistent, and functions can’t reliably count colours."},
-     {t:"Ask everyone to type more carefully", why:"Good intentions don’t stop stray spaces and spelling variants; a dropdown does."},
+     {t:"Ask everyone on the team to type the category names more carefully", why:"Good intentions don’t stop stray spaces and spelling variants; a dropdown does."},
      {t:"Merge cells with the same category", why:"Merging breaks sorting and filtering and doesn’t fix spellings."}
    ]},
    {id:"t1u9-q33", lesson:"t1u9-l4", level:3, q:"Dmitri sorts a table and notices row 1, his header row, has moved into the middle of the data. What went wrong?", options:[
-     {t:"The sort treated the header as data; he should tick the “has header row” option", ok:true, why:"Tell the app the first row holds headers (My data has headers, Data has header row, Range contains column labels) and it stays on top."},
+     {t:"The sort treated the header as data", ok:true, why:"He should tick the “has header row” option (My data has headers, Data has header row, Range contains column labels) so the header stays on top."},
      {t:"The header row was too long", why:"Length doesn’t matter; the app needs to know it’s a header."},
      {t:"Sorting always moves headers", why:"Only when the app thinks they’re data."},
      {t:"He should have merged the header cells", why:"Merging causes sorting problems rather than solving them."}
@@ -1521,14 +1596,14 @@ ICA.addUnit({
      {t:"A table with a TOTAL row after each month’s records", why:"Totals mixed with records break sorting and double-count in sums."}
    ]},
    {id:"t1u9-q35", lesson:"t1u9-l4", level:2, q:"Hana filters her sales table to show one month. Next to it, =SUM(C2:C200) still shows the whole year. Why?", options:[
-     {t:"SUM includes rows hidden by a filter; SUBTOTAL can total visible rows only", ok:true, why:"Filtering hides rows without removing them, and SUM adds every cell in its range."},
+     {t:"SUM also adds the rows hidden by a filter", ok:true, why:"Filtering hides rows without removing them, and SUM adds every cell in its range. SUBTOTAL can total visible rows only."},
      {t:"The filter didn’t work", why:"It did: the rows are hidden. SUM just doesn’t care whether rows are hidden."},
      {t:"SUM only updates when you save", why:"Spreadsheets recalculate automatically."},
-     {t:"Her table has merged cells", why:"Merged cells cause other problems, but SUM including hidden rows is normal."}
+     {t:"Her table has merged cells in the date column", why:"Merged cells cause other problems, but SUM including hidden rows is normal."}
    ]},
    {id:"t1u9-q36", lesson:"t1u9-l4", level:1, q:"What is a pivot table for?", options:[
-     {t:"Summarising tidy data by categories, such as total sales per month, in a few clicks", ok:true, why:"You choose rows, columns and values, and the app builds the summary."},
-     {t:"Rotating a chart by 90 degrees", why:"“Pivot” here means rearranging a summary, not rotating a picture."},
+     {t:"Summarising tidy data by categories, like sales per month", ok:true, why:"You choose rows, columns and values, and the app builds the summary in a few clicks."},
+     {t:"Rotating a chart or table by 90 degrees so it fits on the page", why:"“Pivot” here means rearranging a summary, not rotating a picture."},
      {t:"Locking the header row", why:"That’s freezing panes."},
      {t:"Checking spelling in a column", why:"Pivot tables summarise; data validation and filters help with spelling problems."}
    ]},
@@ -1546,15 +1621,15 @@ ICA.addUnit({
      {t:"At the average value", why:"Bars would then grow from the average, which isn’t how readers interpret them."}
    ]},
    {id:"t1u9-q39", lesson:"t1u9-l5", level:3, q:"Priya’s bar chart compares 205 sales this month with 200 last month, and the axis starts at 195. This month’s bar looks twice as tall. What’s the honest fix?", options:[
-     {t:"Start the axis at zero, or report the change directly (up 2.5%)", ok:true, why:"Above 195 the bars are 10 and 5 units tall, so one looks double. Starting at zero shows the real, small difference."},
-     {t:"Keep it; the numbers on the axis are correct", why:"True numbers can still give a false impression when bar lengths don’t start at zero."},
+     {t:"Start the axis at zero, or say the change: up 2.5%", ok:true, why:"Above 195 the bars are 10 and 5 units tall, so one looks double. Starting at zero shows the real, small difference."},
+     {t:"Keep it, because the numbers on the axis are correct", why:"True numbers can still give a false impression when bar lengths don’t start at zero."},
      {t:"Switch to 3D bars", why:"3D makes values harder to read and doesn’t fix the axis."},
      {t:"Remove the axis so the start isn’t visible", why:"Hiding the axis makes the chart less honest, not more."}
    ]},
    {id:"t1u9-q40", lesson:"t1u9-l5", level:1, q:"What is a CSV file?", options:[
-     {t:"A plain-text table: one row per line, with commas between the values", ok:true, why:"CSV stands for comma-separated values."},
+     {t:"A plain-text table with commas between the values", ok:true, why:"One row per line, with commas between the values: CSV stands for comma-separated values."},
      {t:"Excel’s own file format", why:"Excel’s own format is .xlsx. CSV is plain text that any app can read."},
-     {t:"A compressed folder of spreadsheets", why:"That describes a .zip file, not CSV."},
+     {t:"A compressed folder that holds several spreadsheets", why:"That describes a .zip file, not CSV."},
      {t:"An image of a spreadsheet", why:"CSV is text, not an image."}
    ]},
    {id:"t1u9-q41", lesson:"t1u9-l5", level:2, q:"You save a workbook with three sheets, formulas and coloured headers as CSV. What does the CSV contain?", options:[
@@ -1564,13 +1639,13 @@ ICA.addUnit({
      {t:"Only the formulas, not their results", why:"It’s the other way round: results are saved, formulas are not."}
    ]},
    {id:"t1u9-q42", lesson:"t1u9-l5", level:2, q:"Why does “José” sometimes appear as “JosÃ©” after a CSV is opened?", options:[
-     {t:"The file is UTF-8 but was read with a different text encoding", ok:true, why:"é takes two bytes in UTF-8; read with an older encoding, they show as two separate characters. Re-import as UTF-8."},
-     {t:"CSV files can’t store accented letters", why:"They can, in UTF-8. The reader just has to use the same encoding."},
+     {t:"It was read with a different text encoding", ok:true, why:"The file is UTF-8. é takes two bytes in UTF-8; read with an older encoding, they show as two separate characters. Re-import as UTF-8."},
+     {t:"CSV files can’t store accented letters correctly", why:"They can, in UTF-8. The reader just has to use the same encoding."},
      {t:"The cell’s number format is wrong", why:"Number formats affect numbers and dates, not how letters are decoded."},
      {t:"Someone typed the name incorrectly", why:"The consistent pattern (Ã plus another character) is the signature of an encoding mismatch."}
    ]},
    {id:"t1u9-q43", lesson:"t1u9-l5", level:3, q:"Kenji receives a CSV of customer postcodes, several starting with 0. What’s the safest way to bring it into his spreadsheet?", options:[
-     {t:"Import it (for example Data → From Text/CSV or a Text Import dialog) and set the postcode column to Text", ok:true, why:"Importing lets him choose column types, so leading zeros are kept. Double-clicking lets the app guess and drop them."},
+     {t:"Import it and set the postcode column to Text", ok:true, why:"For example with Data → From Text/CSV or a Text Import dialog. Importing lets him choose column types, so leading zeros are kept. Double-clicking lets the app guess and drop them."},
      {t:"Double-click it, then format the column as Text", why:"By then the zeros are already gone; formatting afterwards can’t restore them."},
      {t:"Open and save it a few times so the app learns the format", why:"Each round trip can apply the same guessing again. Keep the original untouched."},
      {t:"Rename the file from .csv to .xlsx", why:"Renaming doesn’t convert the file and may stop it opening at all."}
@@ -1582,9 +1657,9 @@ ICA.addUnit({
      {t:"Change the column’s number format", why:"Number formats don’t split text into columns."}
    ]},
    {id:"t1u9-q45", lesson:"t1u9-l5", level:2, q:"Which title and labels make a chart understandable on its own?", options:[
-     {t:"“Cake sales by type, October 2026”, with axis titles such as “Number sold” and the data source noted", ok:true, why:"A specific title, axis titles with units and a source let readers understand the chart without you."},
+     {t:"A specific title, axis titles and the data source", ok:true, why:"For example “Cake sales by type, October 2026”, with axis titles such as “Number sold” and the source noted. These let readers understand the chart without you."},
      {t:"“Chart 1”, with the default legend", why:"A generic title tells readers nothing about what they’re looking at."},
-     {t:"No title, so the chart looks cleaner", why:"Without a title readers have to guess the question the chart answers."},
+     {t:"No title or labels at all, so the chart looks cleaner", why:"Without a title readers have to guess the question the chart answers."},
      {t:"A 3D effect to draw attention", why:"3D makes values harder to read and adds no information."}
    ]}
   ]

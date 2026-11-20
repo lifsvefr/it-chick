@@ -92,7 +92,8 @@ ICA.addUnit({
         "**Fast links.** Data centres sit on very high-capacity connections, often close to where many networks meet."
       ]},
       {ex:"Mei opens a shared document on her phone in Lisbon. Her request travels over mobile data to her ISP, through several networks, perhaps through an undersea cable, to a data centre in another country. A server there reads the file from its drives, splits it into packets and sends them back. The whole round trip usually takes a fraction of a second.", label:"Worked example: opening a cloud document"},
-      "Knowing this explains a few everyday things. Cloud files need a connection unless you’ve made them available offline (Lesson 5 and {{sync}}). A problem at a provider’s data centre can take a service down for millions of people at once. And because the computers are in real places, laws about data can depend on which country they’re in."
+      "Knowing this explains a few everyday things. Cloud files need a connection unless you’ve made them available offline (Lesson 5 and {{sync}}). A problem at a provider’s data centre can take a service down for millions of people at once. And because the computers are in real places, laws about data can depend on which country they’re in.",
+      "One more layer sits inside those buildings. A single physical server is usually split into several [[virtual-machine|virtual machines]], and companies rent them, ready-made platforms or whole finished apps; Unit 12, Lesson 3 explains these as {{cloud-service-models|IaaS, PaaS and SaaS}}."
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -149,7 +150,7 @@ ICA.addUnit({
       {t:"Delivery across the world takes days.", b:1, why:"Each hop takes a tiny fraction of a second; whole journeys are usually well under a second."}
     ]},
     {id:"t1u4-l1-x7", type:"mcq", q:"Mei’s photos are “stored in the cloud”. Where are they physically?", options:[
-      {t:"On storage drives in servers in one or more data centres run by her provider", ok:true, why:"The cloud is other people’s computers. Her photos are on drives in data-centre buildings, often copied to more than one place."},
+      {t:"On drives in servers in her provider’s data centres", ok:true, why:"The cloud is other people’s computers. Her photos are on drives in data-centre buildings, often copied to more than one place."},
       {t:"In satellites orbiting the Earth", why:"Satellites can carry some internet traffic, but cloud data is stored in data centres on the ground."},
       {t:"Spread in small pieces across other users’ phones", why:"Mainstream cloud storage doesn’t use other people’s devices. It uses the provider’s own servers."},
       {t:"Only on her own phone, with the word “cloud” as a label", why:"If they were only on her phone, she couldn’t open them from another device. Cloud copies live on the provider’s servers (her phone may also keep copies)."}
@@ -305,7 +306,7 @@ ICA.addUnit({
       ".", {t:"jp", flag:true, why:"`.jp` is the country-code TLD for Japan. The top level is always the right-most label."}
     ], why:"Read from the right: the last label is always the top-level domain."},
     {id:"t1u4-l2-x6", type:"mcq", q:"Ana’s laptop and phone both show “Server not found” for every website on her home Wi-Fi. A video call she started earlier is still working, and everything loads on her phone when she switches to mobile data. What’s the most likely cause?", options:[
-      {t:"The DNS resolver her home connection uses isn’t answering, so new names can’t be looked up.", ok:true, why:"The running call already knew its address, so it continues. New lookups fail on Wi-Fi but work on mobile data, which uses a different resolver. Restarting the router, or waiting for the ISP to fix its resolver, are the usual fixes."},
+      {t:"Her home connection’s DNS isn’t answering.", ok:true, why:"So new names can’t be looked up. The running call already knew its address, so it continues. New lookups fail on Wi-Fi but work on mobile data, which uses a different resolver. Restarting the router, or waiting for the ISP to fix its resolver, are the usual fixes."},
       {t:"Her Wi-Fi signal is too weak.", why:"A weak signal would also disrupt the running call. The pattern (old connections fine, new names failing) points to DNS."},
       {t:"Every website she tried is down at the same moment.", why:"Very unlikely, and the sites load fine over mobile data."},
       {t:"Her laptop has a virus.", why:"Her phone shows the same problem on the same Wi-Fi, so it isn’t one device. It’s something they share: the home connection’s DNS."}
@@ -460,10 +461,10 @@ ICA.addUnit({
       {t:"Leaving remote management switched on in case she needs it", b:1, why:"It lets the router be configured over the internet. CISA and the NSA advise turning it off."}
     ]},
     {id:"t1u4-l3-x4", type:"mcq", q:"Dmitri’s laptop shows full Wi-Fi bars, but no websites or apps load. His phone, on the same Wi-Fi, can’t load anything either. What does this tell him?", options:[
-      {t:"The Wi-Fi link to the router is fine; the problem is between the router and the internet (the router, modem, ISP or DNS).", ok:true, why:"Strong bars on two devices mean the radio link is fine. Both failing points to the shared connection beyond the router. Next steps: check the router’s lights, restart the modem and router, and check the ISP’s status page using mobile data."},
+      {t:"The problem is beyond the router, not the Wi-Fi link.", ok:true, why:"Strong bars on two devices mean the radio link to the router is fine. Both failing points to the shared connection beyond it: the router, modem, ISP or DNS. Next steps: check the router’s lights, restart the modem and router, and check the ISP’s status page using mobile data."},
       {t:"His laptop’s Wi-Fi card is broken.", why:"His phone has the same problem, so it isn’t one device."},
       {t:"He needs to move closer to the router.", why:"He already has full bars. Signal strength isn’t the issue."},
-      {t:"He should switch from the 5 GHz band to 2.4 GHz.", why:"Band choice affects the link to the router, which is working. It won’t fix a problem further along."}
+      {t:"He should switch from the 5 GHz band to the 2.4 GHz band.", why:"Band choice affects the link to the router, which is working. It won’t fix a problem further along."}
     ]},
     {id:"t1u4-l3-x5", type:"match", q:"Match each situation to the connection that fits it best.", pairs:[
       ["Listening on wireless headphones","Bluetooth","Bluetooth links two nearby devices directly."],
@@ -472,8 +473,8 @@ ICA.addUnit({
       ["Following map directions while walking around a city","Mobile data","Mobile data works almost anywhere with coverage. (Downloaded offline maps can also help: Lesson 5.)"]
     ]},
     {id:"t1u4-l3-x6", type:"mcq", q:"Amara connects her laptop to her phone’s hotspot for an afternoon. Her mobile plan has a small monthly data allowance. What’s the biggest risk, and the best fix?", options:[
-      {t:"The laptop may start large updates or cloud backups that use up her phone’s data; she should mark the hotspot connection as metered or low-data on the laptop.", ok:true, why:"Laptops assume Wi-Fi is unlimited. Marking the connection as metered (Windows) or Low Data Mode (Mac) holds back big background downloads."},
-      {t:"The hotspot will damage the phone’s battery permanently.", why:"Hotspots use a lot of battery while on, but they don’t cause permanent damage. Plugging in helps."},
+      {t:"Big updates may use up her data; mark the hotspot as metered.", ok:true, why:"The laptop may start large updates or cloud backups over the phone’s data, because laptops assume Wi-Fi is unlimited. Marking the hotspot connection as metered (Windows) or Low Data Mode (Mac) holds back big background downloads."},
+      {t:"The hotspot will damage the phone’s battery permanently over time.", why:"Hotspots use a lot of battery while on, but they don’t cause permanent damage. Plugging in helps."},
       {t:"There’s no data risk, because the laptop is on Wi-Fi.", why:"The laptop is on the phone’s Wi-Fi, but the phone sends everything over mobile data, which counts against her plan."},
       {t:"Anyone nearby can automatically use her data.", why:"Not if she sets a strong hotspot password, which she should."}
     ]},
@@ -522,7 +523,7 @@ ICA.addUnit({
       {lead:"Every time you open a web page, two computers have a short, very fast conversation."},
       "A [[web-browser|web browser]] is the app you use to open web pages: for example Chrome, Edge, Safari, Firefox or Samsung Internet. Its job is to ask for pages and turn what comes back into something you can read, click and scroll.",
       "A [[website]] is a collection of pages and files under one domain name, such as `example.org`. Those files live on a [[web-server|web server]]: a computer, usually in a data centre (Lesson 1), running software that waits for requests and answers them. A big website may use thousands of servers in many countries, but to your browser it behaves like one.",
-      "This arrangement is called **client and server**. Your browser is the client: it asks. The server serves: it answers. The same pattern sits behind most apps too. When a weather app shows today’s forecast, it has asked a server for it in much the same way.",
+      "This arrangement is called **client and server**. Your browser is the client: it asks. The server serves: it answers. The same pattern sits behind most apps too. When a weather app shows today’s forecast, it has asked a server for it in much the same way. Unit 12, Lesson 5 follows such a request all the way through an app, from the screen to the server’s database and back.",
       {table:[
         ["Word","Plain meaning","Example"],
         ["Browser","The app that asks for and shows pages","Firefox on Lucía’s laptop"],
@@ -631,14 +632,14 @@ ICA.addUnit({
       {t:"A copy of a script that makes a menu open", b:0, why:"Scripts are files, cached like images and styles."}
     ]},
     {id:"t1u4-l4-x4", type:"mcq", q:"After a shop updated its website, Fatima sees a broken layout and the checkout button doesn’t work. Her colleague’s computer shows the site normally. What should she try first?", options:[
-      {t:"A hard refresh, then clearing cached images and files if that doesn’t work", ok:true, why:"The pattern (broken for her, fine for others, right after an update) suggests her browser is mixing old cached files with the new page. A hard refresh or clearing the cache fetches fresh copies without signing her out."},
+      {t:"A hard refresh, then clearing cached files", ok:true, why:"The pattern (broken for her, fine for others, right after an update) suggests her browser is mixing old cached files with the new page. A hard refresh or clearing the cache fetches fresh copies without signing her out."},
       {t:"Reinstall the operating system", why:"Far too drastic. The problem is a few stale files in one browser."},
       {t:"Clear all cookies, history and passwords for all time", why:"Deleting everything would sign her out of every site and could lose saved data. Start with the least disruptive fix."},
       {t:"Assume the shop’s website is down and try tomorrow", why:"Her colleague can use it, so the site is up. Something on her side is different: her cache."}
     ]},
     {id:"t1u4-l4-x5", type:"mcq", q:"Dmitri clears **cookies and site data** in his browser. What will he notice?", options:[
-      {t:"He’s signed out of websites and some site settings, like language, are reset.", ok:true, why:"Cookies hold sign-ins and preferences. Without them, sites treat him as a new visitor."},
-      {t:"All his saved passwords are deleted.", why:"Saved passwords are separate. They’re only deleted if he also chooses “Passwords” when clearing."},
+      {t:"He’s signed out, and some site settings are reset.", ok:true, why:"Cookies hold sign-ins and preferences, such as language. Without them, sites treat him as a new visitor."},
+      {t:"All his saved passwords are deleted from the browser.", why:"Saved passwords are separate. They’re only deleted if he also chooses “Passwords” when clearing."},
       {t:"His bookmarks disappear.", why:"Bookmarks aren’t cookies and aren’t affected."},
       {t:"His internet connection becomes faster.", why:"Clearing cookies doesn’t change connection speed. If anything, pages may load slightly slower at first."}
     ]},
@@ -845,7 +846,7 @@ ICA.addUnit({
       ["Low Data Mode under Wi-Fi → Details","Mac","System Settings → Wi-Fi → Details next to the network."]
     ]},
     {id:"t1u4-l5-x7", type:"mcq", q:"Kenji is about to drive into a mountain area with no signal. He’ll need directions there. What should he do before he leaves?", options:[
-      {t:"Download an offline map of the area in his maps app while he still has a connection", ok:true, why:"Offline maps must be saved in advance. Both Google Maps and Apple Maps (iOS 17 or later) offer driving directions offline within the downloaded area."},
+      {t:"Download an offline map of the area first", ok:true, why:"He must save it in his maps app while he still has a connection. Both Google Maps and Apple Maps (iOS 17 or later) offer driving directions offline within the downloaded area."},
       {t:"Turn on airplane mode so the map keeps working", why:"Airplane mode just switches off the radios. It doesn’t download anything."},
       {t:"Nothing: maps apps work everywhere because GPS is free", why:"GPS can show where he is without data, but the map itself and directions need to be downloaded unless they’re saved offline."},
       {t:"Clear his maps app’s cache so it has room", why:"Clearing the cache removes saved data. He needs to save more, not less."}
@@ -878,6 +879,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u4-q02","t1u4-q06","t1u4-q11","t1u4-q14","t1u4-q17","t1u4-q21","t1u4-q24","t1u4-q27","t1u4-q32","t1u4-q35","t1u4-q39","t1u4-q43"],
+  cpBank:[
+    {id:"t1u4-cp01", lesson:"t1u4-l1", level:1, q:"Raúl’s messaging app sends and receives messages normally, but one news website won’t load. What is the most likely explanation?", options:[
+      {t:"His internet connection is down, so nothing can load", why:"If the internet were down, the messaging app would stop too. It still works, so the connection is fine."},
+      {t:"The web is broken everywhere", why:"Other services on the same internet are working. One site failing points to that site."},
+      {t:"That site has a problem; his internet is fine", ok:true, why:"The internet is the delivery system, and the web is one service on it. One site failing while other services work points to that site."},
+      {t:"His Wi-Fi signal is too weak to load websites", why:"The messaging app uses the same Wi-Fi and works fine. A weak signal would affect it too."}
+    ]},
+    {id:"t1u4-cp02", lesson:"t1u4-l4", level:1, q:"On enrolment day, a college website shows “503 Service Unavailable”. What does this most likely mean for Abebe?", options:[
+      {t:"He typed the address wrong, so the page doesn’t exist", why:"A wrong address usually gives a 404. Codes starting with 5 point to a problem at the server."},
+      {t:"The site is busy or down for now, so he should try later", ok:true, why:"503 means the service is temporarily unavailable. It is the website’s problem, not his, and it is usually temporary."},
+      {t:"He isn’t allowed to see the page, so the college has blocked him", why:"“Not allowed” is 403 Forbidden. 503 means the server can’t handle the request right now."},
+      {t:"His own internet connection has failed for a moment", why:"To show a 503, the server had to answer him. So his connection worked."}
+    ]},
+    {id:"t1u4-cp03", lesson:"t1u4-l3", level:1, q:"Mosese’s earbuds are connected to his phone by Bluetooth. The phone’s Wi-Fi and mobile data are both switched off. Can he stream a new song from an online music service?", options:[
+      {t:"Yes, because Bluetooth connects the earbuds to the internet", why:"Bluetooth links two nearby devices to each other. It doesn’t, by itself, get anything online."},
+      {t:"Yes, because the earbuds have their own internet connection", why:"Earbuds rely on the phone. The phone needs Wi-Fi or mobile data to reach the music service."},
+      {t:"No, because earbuds only work while the phone has Wi-Fi on", why:"The earbuds would still play songs already downloaded to the phone. What’s missing is an internet connection for new songs."},
+      {t:"No, because the phone has no internet connection at all", ok:true, why:"Bluetooth only links the phone and earbuds. To stream, the phone needs Wi-Fi or mobile data."}
+    ]},
+    {id:"t1u4-cp04", lesson:"t1u4-l1", level:2, q:"Zara signs in to a website that uses HTTPS. Her packets pass through about fifteen routers on the way. What can those routers read?", options:[
+      {t:"Everything, including her password", why:"With HTTPS, the content is encrypted. Routers along the way can’t read her password or messages."},
+      {t:"The addresses in each header, but not the encrypted content", ok:true, why:"Routers read the header, like the writing on an envelope, to decide where to send a packet. HTTPS keeps the payload unreadable to them."},
+      {t:"Nothing at all, not even where the packet is going", why:"Routers must read the destination address to forward the packet. Without it, nothing could be delivered."},
+      {t:"Only her password, because sign-in data travels outside the encryption", why:"Sign-in details travel inside the encrypted content like everything else. Routers can’t read them."}
+    ]},
+    {id:"t1u4-cp05", lesson:"t1u4-l2", level:2, q:"This morning a bakery moved its website to a new server with a new IP address. By lunch, Ravi sees the new site, but his sister, on a different ISP, still sees the old one. Why?", options:[
+      {t:"His sister’s browser can’t show new websites", why:"Her browser works. It is getting the old address from somewhere that hasn’t updated yet."},
+      {t:"The bakery made two versions of its website, one for each internet provider", why:"There is one website. The difference is in which address each person’s lookup returns."},
+      {t:"Old DNS answers are cached, and resolvers update at different times", ok:true, why:"Browsers, devices and resolvers remember recent DNS answers. Her resolver may still hold the old address for a while."},
+      {t:"Her IP address is blocked by the bakery", why:"Being blocked would show an error, not the old site. She is being sent to the old address."}
+    ]},
+    {id:"t1u4-cp06", lesson:"t1u4-l3", level:2, q:"Wanjiru’s router sits inside a metal cabinet in a corner of the hallway. Her laptop works well next to it, but Wi-Fi is weak in her bedroom. What is the best first step?", options:[
+      {t:"Hide the network name so fewer neighbours use the signal", why:"Hiding the network name doesn’t improve coverage, and it isn’t real protection either."},
+      {t:"Pay for a faster internet plan so the signal reaches every room", why:"Her laptop works well next to the router, so the plan is fine. The problem is how far the Wi-Fi reaches."},
+      {t:"Move the router out of the cabinet, to a central, higher spot", ok:true, why:"Metal blocks signals, and corners waste coverage. Better placement is free and often fixes weak rooms."},
+      {t:"Switch every device to the 6 GHz band", why:"Higher bands carry more data but reach less far through walls. That would likely make the bedroom worse."}
+    ]},
+    {id:"t1u4-cp07", lesson:"t1u4-l4", level:2, q:"Yuki adds shoes to a basket on a shop website without signing in. She closes the tab. The next day the shoes are still in her basket. What made this possible?", options:[
+      {t:"A cookie her browser stored and then sent back on her next visit", ok:true, why:"A cookie works like a cloakroom ticket. The browser shows it on each visit, so the site can find her basket."},
+      {t:"The browser cache saved a copy of the shop’s logo and pages", why:"The cache stores copies of files such as images and style sheets to load pages faster. It doesn’t tell the site who she is."},
+      {t:"The site recognised her IP address", why:"IP addresses change and are often shared, so they are a poor way to recognise one person. Cookies do this job."},
+      {t:"DNS remembered what she put in the basket for the next visit", why:"DNS only turns names into IP addresses. It knows nothing about baskets."}
+    ]},
+    {id:"t1u4-cp08", lesson:"t1u4-l5", level:2, q:"Kalani edits videos at home. Her plan is 500 Mbps down and 20 Mbps up. Films stream perfectly, but sending large files to clients is slow. Which change would help most?", options:[
+      {t:"A plan with an even faster download speed", why:"Download speed is already high and isn’t her problem. Sending files uses upload."},
+      {t:"A plan with a much faster upload speed", ok:true, why:"Sending files is uploading. Her connection is asymmetric, so a plan with more upload speed (perhaps one that is the same in both directions) fixes the slow part."},
+      {t:"Turning on Low Data Mode", why:"Low Data Mode reduces background data use. It doesn’t make her uploads faster."},
+      {t:"Clearing her browser cache", why:"The cache affects how web pages load. It has nothing to do with upload speed."}
+    ]},
+    {id:"t1u4-cp09", lesson:"t1u4-l2", level:3, q:"Arjun and his neighbour each see `192.168.1.20` as their laptop’s address. A “what is my IP” search shows a different address for each home. Arjun worries someone copied his address. What is true?", options:[
+      {t:"Someone has copied his address, so he should change his Wi-Fi password now", why:"Nothing was copied. Private addresses are reused in millions of homes by design."},
+      {t:"The two laptops will keep receiving each other’s packets", why:"Private addresses never appear on the internet itself. Each router uses its own public address, so packets reach the right home."},
+      {t:"They are private addresses; each home’s router has its own public one", ok:true, why:"`192.168.x.x` is a private range. Each router swaps it for its own public address (NAT), so the same private number in two homes causes no clash."},
+      {t:"It means both homes share one router", why:"Each home has its own router, which is why the “what is my IP” results differ."}
+    ]},
+    {id:"t1u4-cp10", lesson:"t1u4-l5", level:3, q:"Bruno’s video call needs about 4 Mbps of upload. His plan gives 10 Mbps up. During the call, his laptop starts a cloud backup that tries to use 8 Mbps of upload. What happens, and what is the best fix?", options:[
+      {t:"Nothing changes, because the call uses download, not upload", why:"His own camera and microphone are sent out, so a call uses upload as well as download."},
+      {t:"Together they need 12 Mbps, so the call may freeze; he should pause the backup", ok:true, why:"4 + 8 = 12 Mbps, which is more than 10. The upload is full. Pausing the backup (or scheduling it for the night) frees room for the call."},
+      {t:"The call may freeze, so he should clear his browser cookies and cache", why:"Cookies don’t affect upload. The backup is taking the upload the call needs."},
+      {t:"The call is fine, because 10 Mbps is more than the 4 Mbps it needs", why:"That ignores the backup. Both share the same 10 Mbps upload, and together they need more."}
+    ]},
+    {id:"t1u4-cp11", lesson:"t1u4-l4", level:3, q:"Niamh sees two different errors. On every site: “DNS address could not be found”. Later, on one old link: “404 Not Found”. Which statement is correct?", options:[
+      {t:"Both mean her internet connection is broken", why:"A 404 means the server answered, so the connection worked. Only the first error stopped her reaching any server."},
+      {t:"Both mean the websites are down", why:"A 404 means the server is up but that page doesn’t exist. The first error happens before any server is reached."},
+      {t:"The first is a problem at the website’s server; the second means DNS failed", why:"It is the other way round. “DNS address could not be found” is a failed name lookup; 404 is the server’s answer."},
+      {t:"The first is a failed name lookup; the second is a missing page", ok:true, why:"Without DNS the browser can’t find any server. A 404 comes from a server that was reached but has no page at that address."}
+    ]},
+    {id:"t1u4-cp12", lesson:"t1u4-l3", level:3, q:"Paulo buys cheap smart bulbs. Their maker rarely releases firmware updates. What is the best way to protect the laptops and phones on his home network?", options:[
+      {t:"Put the bulbs on the router’s guest network, away from other devices", ok:true, why:"A guest network keeps visitors and smart gadgets separate from laptops and phones. If a bulb is attacked, it can’t reach them."},
+      {t:"Hide the Wi-Fi network name so that attackers can’t find the bulbs at all", why:"Hiding the name doesn’t stop anyone finding a network. It isn’t real protection."},
+      {t:"Switch the router to WEP so the bulbs connect more easily", why:"WEP is an old, weak security setting. It would make the whole network less safe."},
+      {t:"Turn on UPnP so the bulbs can set up the router themselves", why:"UPnP lets devices open the router automatically. Guidance says to turn it off if you don’t need it."}
+    ]},
+  ],
   codex:[
    {id:"how-the-internet-works", title:"How the internet works", aka:["internet","network of networks","ISP","LAN","WAN","internet vs web"], tags:["networks","basics"],
     summary:"The internet is a network of separately owned networks that pass each other’s data, using shared rules.",
@@ -1459,7 +1534,7 @@ ICA.addUnit({
      {t:"Wi-Fi networks connect directly to each other over the air worldwide", why:"Wi-Fi covers only a short distance. Most of the internet is joined by cables."}
    ]},
    {id:"t1u4-q02", lesson:"t1u4-l1", level:1, q:"What is a packet?", options:[
-     {t:"A small chunk of data with addresses and a sequence number in its header", ok:true, why:"All data online is split into packets, which are reassembled at the destination."},
+     {t:"A small chunk of data with addresses in its header", ok:true, why:"Its header holds addresses and a sequence number. All data online is split into packets, which are reassembled at the destination."},
      {t:"A complete file sent in one piece", why:"Files are split into many packets; they don’t travel whole."},
      {t:"A bundle of internet data sold by a mobile provider", why:"That’s a data plan or allowance, not a packet."},
      {t:"A type of cable used under the sea", why:"Undersea cables carry packets, but they aren’t packets."}
@@ -1471,8 +1546,8 @@ ICA.addUnit({
      {t:"Works out the entire route to the destination", why:"No single router knows the whole route, only the next step."}
    ]},
    {id:"t1u4-q04", lesson:"t1u4-l1", level:2, q:"Which statement about the internet and the web is correct?", options:[
-     {t:"The web is one service that runs over the internet, alongside email, calls and apps", ok:true, why:"The internet is the delivery system; the web (pages in a browser) is one kind of traffic on it."},
-     {t:"They are two names for the same thing", why:"A common mix-up. The internet carries many services besides the web."},
+     {t:"The web is one of many services that run over the internet", ok:true, why:"The internet is the delivery system; the web (pages in a browser) is one kind of traffic on it, alongside email, calls and apps."},
+     {t:"They are just two different names for exactly the same network", why:"A common mix-up. The internet carries many services besides the web."},
      {t:"The internet runs over the web", why:"It’s the other way round: the web runs over the internet."},
      {t:"Email and video calls are part of the web", why:"They use their own protocols over the internet; the web is pages in a browser."}
    ]},
@@ -1483,8 +1558,8 @@ ICA.addUnit({
      {t:"Over the old telephone network’s copper wires", why:"Long-distance links are fibre today, mostly in undersea cables between continents."}
    ]},
    {id:"t1u4-q06", lesson:"t1u4-l1", level:3, q:"Amara’s streaming video glitches for a second, then carries on. Her file download, running at the same time, finishes perfectly. Why the difference?", options:[
-     {t:"For live video, late packets are often skipped; for downloads, missing packets are resent until the file is complete", ok:true, why:"Live media prefers timeliness, so a lost packet causes a glitch. File transfers use TCP, which resends missing packets."},
-     {t:"Downloads use a different internet from video", why:"Both use the same internet. They handle lost packets differently."},
+     {t:"Live video skips late packets; downloads resend missing ones", ok:true, why:"Live media prefers timeliness, so a lost packet causes a glitch. File transfers use TCP, which resends missing packets until the file is complete."},
+     {t:"Downloads travel over a different, more reliable internet than video", why:"Both use the same internet. They handle lost packets differently."},
      {t:"Her router gave the download priority and switched off the video", why:"The video carried on, so it wasn’t switched off. The glitch was lost or late packets being skipped."},
      {t:"Video is never split into packets", why:"Video travels in packets like everything else."}
    ]},
@@ -1492,7 +1567,7 @@ ICA.addUnit({
      {t:"Servers and storage in data centres, used over the internet", ok:true, why:"Cloud services run on real computers in secure buildings with cooling and backup power."},
      {t:"Satellites that store data in orbit", why:"Cloud data is stored on the ground, in data centres."},
      {t:"Space on other users’ phones", why:"Mainstream cloud services use the provider’s own servers."},
-     {t:"A special part of your own device’s storage", why:"Your device may keep copies, but the cloud copies are on the provider’s servers."}
+     {t:"A special, protected part of your own phone or laptop’s storage", why:"Your device may keep copies, but the cloud copies are on the provider’s servers."}
    ]},
    {id:"t1u4-q08", lesson:"t1u4-l1", level:3, q:"A ship’s anchor cuts an undersea cable. Lucía, in a city served by many cables, notices nothing. Why?", options:[
      {t:"Routers send traffic around the break using other cables and routes", ok:true, why:"The internet is designed so no single router or link is essential. Regions with few cables are more affected."},
@@ -1501,7 +1576,7 @@ ICA.addUnit({
      {t:"Her ISP stores a copy of the whole internet locally", why:"No ISP stores the whole internet. Some popular content is cached nearby, but rerouting is the main reason."}
    ]},
    {id:"t1u4-q09", lesson:"t1u4-l1", level:3, q:"Kenji’s phone shows full Wi-Fi bars at home, but nothing loads. His friend says, “Your Wi-Fi is perfect, so your internet must be fine.” What’s wrong with that reasoning?", options:[
-     {t:"Wi-Fi bars only show the link to the router; the router’s connection to the ISP may be down", ok:true, why:"Wi-Fi is just the first short hop. The problem may be the router, modem, line or ISP."},
+     {t:"Bars show only the link to the router, not the internet", ok:true, why:"Wi-Fi is just the first short hop. The router’s connection to the ISP may be down: the problem may be the router, modem, line or ISP."},
      {t:"Nothing: full bars guarantee a working internet connection", why:"Bars measure the radio link to the router, not the internet beyond it."},
      {t:"Full bars mean his phone is broken", why:"Strong signal doesn’t indicate a fault in the phone."},
      {t:"Wi-Fi bars show his monthly data allowance", why:"Bars show signal strength, not data allowance."}
@@ -1510,7 +1585,7 @@ ICA.addUnit({
    {id:"t1u4-q10", lesson:"t1u4-l2", level:1, q:"What does DNS do?", options:[
      {t:"Turns domain names such as example.org into IP addresses", ok:true, why:"DNS is the internet’s contacts list: names in, numbers out."},
      {t:"Encrypts your web traffic", why:"That’s HTTPS. DNS looks up addresses."},
-     {t:"Gives your device a private IP address at home", why:"Your router does that. DNS translates names."},
+     {t:"Gives each device in your home its own private IP address", why:"Your router does that. DNS translates names."},
      {t:"Measures your internet speed", why:"Speed tests do that."}
    ]},
    {id:"t1u4-q11", lesson:"t1u4-l2", level:2, q:"Which of these is a private IPv4 address?", options:[
@@ -1520,21 +1595,21 @@ ICA.addUnit({
      {t:"`2001:db8::1`", why:"That’s an IPv6 address (from the documentation range), not IPv4."}
    ]},
    {id:"t1u4-q12", lesson:"t1u4-l2", level:1, q:"Why was IPv6 created?", options:[
-     {t:"IPv4 has only about 4.3 billion addresses, which isn’t enough for today’s devices", ok:true, why:"IPv6’s 128-bit addresses provide vastly more."},
-     {t:"To make websites load ten times faster", why:"IPv6 is about addressing, not a speed boost."},
-     {t:"Because IPv4 doesn’t work with Wi-Fi", why:"IPv4 works over Wi-Fi. The problem is the limited number of addresses."},
+     {t:"IPv4 doesn’t have enough addresses for today’s devices", ok:true, why:"IPv4 has only about 4.3 billion addresses. IPv6’s 128-bit addresses provide vastly more."},
+     {t:"To make websites and apps load about ten times faster", why:"IPv6 is about addressing, not a speed boost."},
+     {t:"Because IPv4 doesn’t work with Wi-Fi or mobile networks", why:"IPv4 works over Wi-Fi and mobile networks. The problem is the limited number of addresses."},
      {t:"To replace DNS", why:"DNS still turns names into addresses, for IPv4 and IPv6 alike."}
    ]},
    {id:"t1u4-q13", lesson:"t1u4-l2", level:2, q:"Fatima’s laptop shows the address `192.168.1.14`, but a “what is my IP” search shows `203.0.113.88`. What explains this?", options:[
-     {t:"The first is her laptop’s private address at home; the second is her router’s public address", ok:true, why:"Her router uses NAT, so the internet sees only its public address."},
+     {t:"The laptop’s address is private; the router’s is public", ok:true, why:"192.168.1.14 is her laptop’s private address at home; 203.0.113.88 is her router’s public address. Her router uses NAT, so the internet sees only its public address."},
      {t:"One of them must be wrong", why:"Both are correct; they’re different kinds of address."},
      {t:"Her laptop has been hacked", why:"Having different private and public addresses is completely normal."},
-     {t:"The search site is showing its own address", why:"It shows the address your connection arrives from: your router’s public one."}
+     {t:"The search site is showing its own server’s address instead", why:"It shows the address your connection arrives from: your router’s public one."}
    ]},
    {id:"t1u4-q14", lesson:"t1u4-l2", level:3, q:"Sione’s family laptop and phone show “Server not found” for every website on home Wi-Fi. A music stream started earlier keeps playing, and everything works on mobile data. What should he try first?", options:[
-     {t:"Restart the router, since this looks like a DNS problem on the home connection", ok:true, why:"New lookups fail while existing connections work, and mobile data (a different resolver) is fine: classic DNS. A restart often fixes it; otherwise the ISP’s resolver may be down."},
+     {t:"Restart the router; this looks like a DNS problem", ok:true, why:"New lookups fail while existing connections work, and mobile data (a different resolver) is fine: classic DNS. A restart often fixes it; otherwise the ISP’s resolver may be down."},
      {t:"Buy a faster internet plan", why:"Speed isn’t the issue; names aren’t being looked up."},
-     {t:"Reset the laptop to factory settings", why:"Two devices are affected, so the cause is shared, not the laptop."},
+     {t:"Reset the laptop to factory settings and start again", why:"Two devices are affected, so the cause is shared, not the laptop."},
      {t:"Clear cookies on both devices", why:"Cookies don’t affect DNS lookups."}
    ]},
    {id:"t1u4-q15", lesson:"t1u4-l2", level:1, q:"In `news.example.org`, which part is the top-level domain?", options:[
@@ -1550,16 +1625,16 @@ ICA.addUnit({
      {t:"Domain names are converted using a fixed formula", why:"There’s no formula; names are looked up in the DNS."}
    ]},
    {id:"t1u4-q17", lesson:"t1u4-l2", level:3, q:"Tomás sees a site at `shop-example.tv`. He assumes the business must be in Tuvalu, because `.tv` is Tuvalu’s country code. Is he right?", options:[
-     {t:"Not necessarily: some country codes like .tv and .io are used by businesses worldwide", ok:true, why:"A TLD doesn’t prove where a business is based, or whether it’s trustworthy."},
+     {t:"Not necessarily: some country codes are used worldwide", ok:true, why:"Codes like .tv and .io are used by businesses worldwide. A TLD doesn’t prove where a business is based, or whether it’s trustworthy."},
      {t:"Yes: a country-code TLD always means the business is in that country", why:"Many country codes are open to registrants anywhere."},
      {t:"Yes, and that also proves the site is genuine", why:"A TLD says nothing about honesty."},
      {t:"No, because .tv is a generic TLD only for television companies", why:".tv is Tuvalu’s country code, used widely for its look, not restricted to TV companies."}
    ]},
    {id:"t1u4-q18", lesson:"t1u4-l2", level:2, q:"Ana restarts her home router and later notices her public IP address has changed. What’s the most likely reason?", options:[
-     {t:"Her ISP gives her connection a dynamic public address, which can change", ok:true, why:"Many home connections get dynamic addresses from the ISP. It’s normal."},
+     {t:"Her ISP gives her a dynamic address, which can change", ok:true, why:"Many home connections get dynamic addresses from the ISP. It’s normal."},
      {t:"Her router has been hacked", why:"A changing public address is routine and not a sign of compromise."},
      {t:"Her laptop changed its own public address", why:"The public address belongs to the router’s connection, assigned by the ISP."},
-     {t:"Restarting a router switches her to IPv6 permanently", why:"Restarting doesn’t switch protocol; it can lead to a new dynamic address."}
+     {t:"Restarting a router switches her connection to IPv6 permanently", why:"Restarting doesn’t switch protocol; it can lead to a new dynamic address."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u4-q19", lesson:"t1u4-l3", level:1, q:"What does a modem do?", options:[
@@ -1581,32 +1656,32 @@ ICA.addUnit({
      {t:"WPA (the original version)", why:"Original WPA is outdated and weak."}
    ]},
    {id:"t1u4-q22", lesson:"t1u4-l3", level:2, q:"What is a mesh Wi-Fi system?", options:[
-     {t:"Several units working together to spread one Wi-Fi network across a home", ok:true, why:"Mesh units share one network name, so devices move between them smoothly."},
-     {t:"A metal screen that blocks neighbours’ Wi-Fi", why:"Mesh refers to linked units, not physical screens."},
+     {t:"Several units that spread one Wi-Fi network across a home", ok:true, why:"Mesh units share one network name, so devices move between them smoothly."},
+     {t:"A metal screen fitted to block your neighbours’ Wi-Fi signals", why:"Mesh refers to linked units, not physical screens."},
      {t:"A way to combine two internet plans", why:"Mesh spreads one connection’s Wi-Fi; it doesn’t combine plans."},
      {t:"A type of mobile data", why:"Mesh is home Wi-Fi equipment."}
    ]},
    {id:"t1u4-q23", lesson:"t1u4-l3", level:3, q:"Mei’s new smart plug won’t join her Wi-Fi, though her phone and laptop work fine. What’s a likely cause?", options:[
-     {t:"The plug only supports 2.4 GHz, and it can’t find or use her router’s 2.4 GHz band", ok:true, why:"Many smart-home gadgets support only 2.4 GHz. Check the band and the plug’s setup instructions."},
+     {t:"The plug only works on 2.4 GHz and can’t find that band", ok:true, why:"Many smart-home gadgets support only 2.4 GHz. Check the band and the plug’s setup instructions."},
      {t:"Her internet plan is too slow for a plug", why:"A smart plug needs very little bandwidth."},
      {t:"Smart plugs need mobile data", why:"Most use Wi-Fi."},
-     {t:"Her router needs to be replaced with a modem", why:"A modem doesn’t make Wi-Fi. The likely issue is the band."}
+     {t:"Her router needs to be replaced with a modem to work with it", why:"A modem doesn’t make Wi-Fi. The likely issue is the band."}
    ]},
    {id:"t1u4-q24", lesson:"t1u4-l3", level:3, q:"Dmitri never changed his router’s admin password from `admin`. Why does this matter?", options:[
-     {t:"Default admin passwords are often published, so anyone who gets onto his network could change his router’s settings, including DNS", ok:true, why:"CISA puts changing the admin password first for this reason. A changed DNS setting could send him to fake sites."},
-     {t:"It doesn’t matter if his Wi-Fi password is strong", why:"Anyone on the network (a visitor, a compromised gadget) could still reach the settings."},
+     {t:"Anyone on his network could change the router’s settings", ok:true, why:"Default admin passwords are often published, so anyone who gets onto his network could change settings, including DNS. CISA puts changing the admin password first for this reason. A changed DNS setting could send him to fake sites."},
+     {t:"It doesn’t matter as long as his Wi-Fi password is strong", why:"Anyone on the network (a visitor, a compromised gadget) could still reach the settings."},
      {t:"It makes his internet slower", why:"The admin password doesn’t affect speed."},
      {t:"It only matters for 6 GHz Wi-Fi", why:"It matters for every router, whatever the band."}
    ]},
    {id:"t1u4-q25", lesson:"t1u4-l3", level:2, q:"How does Bluetooth differ from Wi-Fi?", options:[
-     {t:"Bluetooth links two nearby devices directly; Wi-Fi connects devices to a router for network and internet access", ok:true, why:"Headphones, keyboards and watches use Bluetooth; internet access comes through Wi-Fi or mobile data."},
+     {t:"Bluetooth links two nearby devices; Wi-Fi connects to a router", ok:true, why:"Bluetooth links devices directly, like headphones, keyboards and watches; Wi-Fi connects devices to a router for network and internet access."},
      {t:"Bluetooth is a faster type of Wi-Fi", why:"They’re different technologies for different jobs."},
      {t:"Bluetooth only works through cables", why:"Bluetooth is wireless."},
-     {t:"Bluetooth connects your phone to mobile masts", why:"That’s mobile data."}
+     {t:"Bluetooth connects your phone directly to the nearest mobile mast", why:"That’s mobile data."}
    ]},
    {id:"t1u4-q26", lesson:"t1u4-l3", level:3, q:"Priya connects her laptop to her phone’s hotspot. An hour later her phone warns that most of her monthly data is gone. What probably happened?", options:[
-     {t:"The laptop ran large background downloads, such as updates or cloud sync, over the phone’s mobile data", ok:true, why:"Laptops treat Wi-Fi as unlimited unless told otherwise. Marking the hotspot as metered or Low Data Mode prevents this."},
-     {t:"Hotspots use data even when nothing is connected", why:"An idle hotspot with no traffic uses almost nothing; the laptop’s activity used the data."},
+     {t:"The laptop ran big background downloads over her mobile data", ok:true, why:"Updates or cloud sync can run in the background. Laptops treat Wi-Fi as unlimited unless told otherwise. Marking the hotspot as metered or Low Data Mode prevents this."},
+     {t:"Hotspots use lots of data even when nothing is connected to them", why:"An idle hotspot with no traffic uses almost nothing; the laptop’s activity used the data."},
      {t:"Someone hacked her Wi-Fi password at home", why:"The data was used through the hotspot, and her laptop’s background activity is the far likelier cause."},
      {t:"Bluetooth was turned on", why:"Bluetooth doesn’t use mobile data."}
    ]},
@@ -1618,10 +1693,10 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t1u4-q28", lesson:"t1u4-l4", level:1, q:"What is a web server?", options:[
-     {t:"A computer, and its software, that stores a website’s files and answers browsers’ requests", ok:true, why:"Browsers ask; servers answer."},
+     {t:"A computer that stores a site’s files and answers browsers", ok:true, why:"It is a computer, and its software, that stores a website’s files. Browsers ask; servers answer."},
      {t:"The app you use to view web pages", why:"That’s a web browser."},
      {t:"Your home router", why:"Your router forwards traffic; it doesn’t host websites."},
-     {t:"The cable that connects you to the internet", why:"That’s part of the physical network."}
+     {t:"The cable that connects your home to the rest of the internet", why:"That’s part of the physical network."}
    ]},
    {id:"t1u4-q29", lesson:"t1u4-l4", level:1, q:"A page shows “404 Not Found”. What does that mean?", options:[
      {t:"The server answered, but that page doesn’t exist", ok:true, why:"The connection worked; the address is wrong or the page was removed."},
@@ -1630,26 +1705,26 @@ ICA.addUnit({
      {t:"You’re not allowed to see the page", why:"That’s 403 Forbidden."}
    ]},
    {id:"t1u4-q30", lesson:"t1u4-l4", level:1, q:"What is a cookie?", options:[
-     {t:"A small piece of text a site asks your browser to store and send back on later visits", ok:true, why:"Cookies keep you signed in, remember settings, and are sometimes used for tracking."},
+     {t:"A small piece of text a site asks your browser to store", ok:true, why:"The browser sends it back on later visits. Cookies keep you signed in, remember settings, and are sometimes used for tracking."},
      {t:"A type of virus", why:"Cookies are text, not programs."},
-     {t:"A saved copy of a website’s images", why:"That’s the cache."},
+     {t:"A saved copy of a website’s images, kept on your own device", why:"That’s the cache."},
      {t:"The list of pages you visited", why:"That’s browsing history."}
    ]},
    {id:"t1u4-q31", lesson:"t1u4-l4", level:2, q:"Why does a browser keep a cache?", options:[
-     {t:"So it can reuse saved copies of files and load pages faster with less data", ok:true, why:"Logos, styles and scripts rarely change, so reusing them saves time and data."},
+     {t:"To reuse saved files and load pages faster", ok:true, why:"Logos, styles and scripts rarely change, so reusing saved copies saves time and data."},
      {t:"To remember your passwords", why:"Passwords are stored by the password manager, not the cache."},
      {t:"To keep you signed in", why:"That’s what cookies do."},
-     {t:"To report your browsing to your ISP", why:"The cache is stored on your device for speed."}
+     {t:"To report your browsing to your internet provider", why:"The cache is stored on your device for speed."}
    ]},
    {id:"t1u4-q32", lesson:"t1u4-l4", level:3, q:"After a website redesign, Lucía’s browser shows a broken layout, but the site looks fine on her phone. What’s the best first fix?", options:[
      {t:"A hard refresh, or clearing cached images and files", ok:true, why:"Her browser is probably mixing old cached files with the new page. This fetches fresh copies without signing her out."},
      {t:"Clear all cookies, history and passwords", why:"Too drastic: she’d be signed out everywhere and could lose saved data."},
      {t:"Restart her router", why:"The phone works on the same connection, so the network isn’t the issue."},
-     {t:"Install a browser extension to fix layouts", why:"Unneeded and potentially risky. The cache is the likely cause."}
+     {t:"Install a browser extension that repairs broken layouts", why:"Unneeded and potentially risky. The cache is the likely cause."}
    ]},
    {id:"t1u4-q33", lesson:"t1u4-l4", level:2, q:"What will happen if Oluwaseun clears only **cached images and files**?", options:[
-     {t:"Pages may load a little slower at first, but he stays signed in", ok:true, why:"Cached files are just copies; clearing them doesn’t touch cookies."},
-     {t:"He’ll be signed out of every website", why:"That happens when you clear cookies, not cached files."},
+     {t:"Pages may load slower at first, but he stays signed in", ok:true, why:"Cached files are just copies; clearing them doesn’t touch cookies."},
+     {t:"He’ll be signed out of every website he was signed in to", why:"That happens when you clear cookies, not cached files."},
      {t:"His bookmarks will be deleted", why:"Bookmarks aren’t part of the cache."},
      {t:"His saved passwords will be deleted", why:"Passwords are separate and only deleted if chosen."}
    ]},
@@ -1660,21 +1735,21 @@ ICA.addUnit({
      {t:"The browser draws the page from the cache", why:"For a new site there’s nothing cached; the lookup and request come first."}
    ]},
    {id:"t1u4-q35", lesson:"t1u4-l4", level:3, q:"Hana uses a private window at a library computer to sign in to her email, then closes the window. Which is true?", options:[
-     {t:"The computer won’t keep her history or cookies, but the library network and the sites she used still saw her activity", ok:true, why:"Private mode only affects what’s stored on that device."},
+     {t:"The computer forgets her session, but the network and sites saw it", ok:true, why:"The computer won’t keep her history or cookies, but the library network and the sites she used still saw her activity. Private mode only affects what’s stored on that device."},
      {t:"Nobody can know she visited any site", why:"Sites, networks and ISPs still see connections."},
      {t:"Her email account is now deleted", why:"Closing a private window doesn’t affect her account."},
-     {t:"The next person to use the computer can open her email", why:"Closing the private window discards its cookies, so she isn’t left signed in."}
+     {t:"The next person to use the computer will be able to open her email", why:"Closing the private window discards its cookies, so she isn’t left signed in."}
    ]},
    {id:"t1u4-q36", lesson:"t1u4-l4", level:3, q:"An extension that “changes the colour of web pages” asks for permission to read and change all data on all websites. What should Kenji conclude?", options:[
-     {t:"It technically needs page access, but he should only install it from the official store and a publisher he trusts, or choose a tool with narrower access", ok:true, why:"Broad access means it could read anything he types. Trust in the publisher and the store matters a lot."},
+     {t:"Install it only from the official store and a trusted publisher", ok:true, why:"It technically needs page access, but broad access means it could read anything he types. Install it only from the official store and a publisher he trusts, or choose a tool with narrower access."},
      {t:"Permissions don’t matter for extensions", why:"They matter greatly: broad access lets an extension see passwords and messages typed into pages."},
-     {t:"He should install it from a pop-up link instead", why:"Pop-up installs are riskier than official stores."},
-     {t:"It’s safe if he uses it only in private windows", why:"Private windows don’t limit what an extension can see."}
+     {t:"He should install it from a pop-up link instead of the official store", why:"Pop-up installs are riskier than official stores."},
+     {t:"It’s safe as long as he uses it only in private windows", why:"Private windows don’t limit what an extension can see."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t1u4-q37", lesson:"t1u4-l5", level:1, q:"What is latency?", options:[
-     {t:"The delay for data to make a round trip, measured in milliseconds", ok:true, why:"Speed tests often show it as ping."},
-     {t:"How much data can move per second", why:"That’s bandwidth."},
+     {t:"The delay for data to make a round trip", ok:true, why:"It is measured in milliseconds. Speed tests often show it as ping."},
+     {t:"How much data can move through the connection per second", why:"That’s bandwidth."},
      {t:"The monthly data allowance", why:"That’s a data cap."},
      {t:"The size of a downloaded file", why:"File size is measured in bytes."}
    ]},
@@ -1703,10 +1778,10 @@ ICA.addUnit({
      {t:"About 48 hours", why:"That treats gigabytes as gigabits (multiplying by 8), which doesn’t apply here: both figures are in GB."}
    ]},
    {id:"t1u4-q42", lesson:"t1u4-l5", level:2, q:"What does turning on Data Saver (Android) or Low Data Mode (iPhone) mainly do?", options:[
-     {t:"Limits background data use, such as automatic downloads and refreshes", ok:true, why:"Apps you’re using still work, but background activity is held back."},
-     {t:"Blocks all internet use", why:"That would be airplane mode or turning mobile data off."},
+     {t:"Limits background data, like automatic downloads", ok:true, why:"Background activity such as automatic downloads and refreshes is held back, but apps you’re using still work."},
+     {t:"Blocks all internet use until you turn it off again", why:"That would be airplane mode or turning mobile data off."},
      {t:"Makes your connection faster", why:"It saves data; it doesn’t increase speed."},
-     {t:"Downloads maps for offline use", why:"Offline maps are downloaded in the maps app."}
+     {t:"Downloads maps and music for offline use in advance", why:"Offline maps and music are downloaded in their own apps; Data Saver doesn’t download anything."}
    ]},
    {id:"t1u4-q43", lesson:"t1u4-l5", level:3, q:"Ana’s video call keeps freezing while her family streams and her phone backs up photos. What should she try first?", options:[
      {t:"Turn off her camera and pause the photo backup", ok:true, why:"Video uses far more data than audio, and the backup competes for her upload. Both are quick and free."},
@@ -1721,9 +1796,9 @@ ICA.addUnit({
      {t:"Cloud files she has never opened or marked offline", why:"Online-only cloud files need a connection to download."}
    ]},
    {id:"t1u4-q45", lesson:"t1u4-l5", level:1, q:"What is uploading?", options:[
-     {t:"Sending data from your device to the internet, such as a backup or a video you post", ok:true, why:"Upload is outbound; download is inbound."},
+     {t:"Sending data from your device to the internet", ok:true, why:"For example, a backup or a video you post. Upload is outbound; download is inbound."},
      {t:"Receiving a film to watch", why:"That’s downloading or streaming."},
-     {t:"Installing an update from the app store", why:"That’s downloading."},
+     {t:"Installing an update from the app store onto your phone", why:"That’s downloading."},
      {t:"Opening a web page", why:"Opening pages is mostly downloading."}
    ]}
   ]

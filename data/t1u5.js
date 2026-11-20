@@ -127,16 +127,16 @@ ICA.addUnit({
       ["Signing in","You give your email address, so the company knows exactly who you are","Once you’re signed in, the company can link your activity on any device to your account."]
     ]},
     {id:"t1u5-l1-x3", type:"mcq", q:"As of late 2026, which statement about third-party cookies is accurate?", options:[
-      {t:"Safari blocks them by default, while Chrome still allows them by default in normal (non-Incognito) windows.", ok:true, why:"Right. Safari has blocked them by default since 2020. Google decided in 2024–2025 to keep them in Chrome, with a setting you can change and blocking in Incognito by default."},
+      {t:"Safari blocks them by default, but Chrome still allows them.", ok:true, why:"Right. Safari has blocked them by default since 2020. Google decided in 2024–2025 to keep them in Chrome’s normal windows, with a setting you can change and blocking in Incognito by default."},
       {t:"All major browsers removed third-party cookies in 2024.", why:"That was Google’s earlier plan for Chrome, but it was dropped. Chrome still allows them by default."},
-      {t:"Chrome blocks them by default, but Safari allows them.", why:"It’s the other way round: Safari blocks them; Chrome allows them unless you change the setting or use Incognito."},
+      {t:"Chrome blocks them by default, but Safari still allows them.", why:"It’s the other way round: Safari blocks them; Chrome allows them unless you change the setting or use Incognito."},
       {t:"Third-party cookies have never been used for tracking.", why:"Cross-site tracking for advertising is their best-known use, which is exactly why browsers restrict them."}
     ]},
     {id:"t1u5-l1-x4", type:"mcq", q:"Kenji clears all his cookies every evening. Next morning, an ad company still recognises his laptop on a site he has never visited before. Which technique most likely explains this?", options:[
-      {t:"Device fingerprinting, which combines details his browser reveals and stores nothing on his laptop", ok:true, why:"Fingerprinting doesn’t rely on stored data, so clearing cookies has no effect on it."},
+      {t:"Device fingerprinting, which stores nothing on his laptop", ok:true, why:"It combines details his browser reveals. Fingerprinting doesn’t rely on stored data, so clearing cookies has no effect on it."},
       {t:"A third-party cookie from yesterday", why:"He cleared his cookies, so yesterday’s cookies are gone."},
       {t:"His laptop’s battery level", why:"Battery level alone isn’t used to recognise devices across sites in everyday tracking; the combination of many browser details is."},
-      {t:"The new site guessed randomly", why:"Recognition here isn’t a guess; it comes from a technique that links his device across sites."}
+      {t:"The new site simply guessed at random that it was his laptop", why:"Recognition here isn’t a guess; it comes from a technique that links his device across sites."}
     ]},
     {id:"t1u5-l1-x5", type:"order", q:"Put the steps of behavioural ad targeting in order, from first visit to the ad.", items:[
       {t:"Ana reads an article about hiking on a news site", why:"Everything starts with a visit to a site that carries an ad company’s code."},
@@ -160,8 +160,8 @@ ICA.addUnit({
       {t:"Device model", flag:false, why:"Useful for making the light work properly on different phones (and for crash reports)."}
     ]},
     {id:"t1u5-l1-x7", type:"mcq", q:"Hana says: “I turned off personalised ads in my account, so I’m done with tracking.” What’s the most accurate reply?", options:[
-      {t:"That helps, but data can still be collected for other purposes, and she’ll still see ads, just not chosen from her profile.", ok:true, why:"Ad personalisation settings change how ads are chosen. They don’t stop all collection, and they don’t remove ads."},
-      {t:"She’s right: that setting stops all tracking everywhere.", why:"It applies to that company’s ad choices, not to every tracker on every site or app."},
+      {t:"That helps, but data is still collected, and ads still appear.", ok:true, why:"Ad personalisation settings change how ads are chosen, so ads are no longer chosen from her profile. They don’t stop all collection, and they don’t remove ads."},
+      {t:"She’s right: that setting stops all tracking on every site and app.", why:"It applies to that company’s ad choices, not to every tracker on every site or app."},
       {t:"It has no effect at all.", why:"It does have an effect: ads from that company are no longer chosen from her profile."},
       {t:"She’ll now see no ads at all.", why:"The number of ads stays the same; they’re just less personalised."}
     ]}
@@ -289,8 +289,8 @@ ICA.addUnit({
       {t:"Starts without his saved sign-ins", b:0, why:"Incognito doesn’t automatically sign him in to his accounts."}
     ]},
     {id:"t1u5-l2-x3", type:"mcq", q:"Lucía wants to send a photo of her new flat’s balcony to a group chat of acquaintances, but doesn’t want to reveal the address. Her iPhone camera saves location. What’s the most effective step?", options:[
-      {t:"In the Share sheet, tap Options and turn off Location before sending, and check nothing in the picture shows the address", ok:true, why:"This removes the GPS coordinates from the shared copy, and checking the background deals with visual clues such as a street sign."},
-      {t:"Send it as normal; group chats never include location", why:"Some apps remove metadata, but many ways of sharing send the original file with its GPS data. She can’t rely on it."},
+      {t:"Turn off Location in the Share sheet, and check the picture", ok:true, why:"In the Share sheet, tap Options and turn off Location. This removes the GPS coordinates from the shared copy, and checking that nothing in the picture shows the address deals with visual clues such as a street sign."},
+      {t:"Send it as normal, because group chats never include location", why:"Some apps remove metadata, but many ways of sharing send the original file with its GPS data. She can’t rely on it."},
       {t:"Turn on private browsing first", why:"Private browsing is a browser feature. It has nothing to do with the metadata inside a photo file."},
       {t:"Lower the photo’s brightness", why:"Editing the picture doesn’t change the hidden GPS coordinates stored in the file."}
     ]},
@@ -321,7 +321,7 @@ ICA.addUnit({
       {t:"Put a reminder in her calendar to repeat the check in a year", why:"Settings and apps change over time; a regular check keeps them in line with her choices."}
     ]},
     {id:"t1u5-l2-x7", type:"mcq", q:"Dmitri turns off “Let apps show me personalized ads by using my advertising ID” in Windows. What changes?", options:[
-      {t:"Apps can no longer use that advertising ID to personalise ads; he’ll still see a similar number of ads", ok:true, why:"Microsoft notes that turning it off won’t reduce the number of ads; they just won’t be personalised using the ID."},
+      {t:"Apps stop using that ID to personalise ads", ok:true, why:"Microsoft notes that turning it off won’t reduce the number of ads he sees; they just won’t be personalised using the ID."},
       {t:"All ads disappear from Windows and every website", why:"It only affects apps’ use of the Windows advertising ID. Ads themselves remain."},
       {t:"Websites can no longer use cookies", why:"Cookies are controlled in each browser, not by this Windows setting."},
       {t:"His Microsoft account history is deleted", why:"That’s done separately, in the Microsoft privacy dashboard."}
@@ -481,7 +481,7 @@ ICA.addUnit({
       {t:"“By opening the app you consent to all processing in this policy.”", flag:true, why:"Using an app isn’t clear, specific consent. This is a sign the company may not take consent seriously."}
     ]},
     {id:"t1u5-l3-x5", type:"mcq", q:"Fatima asks a social network to erase all her data. It deletes her profile and posts but keeps her payment records for several years. Under the GDPR, is that allowed?", options:[
-      {t:"It can be: erasure isn’t absolute, and data needed to meet a legal obligation, such as tax records, can be kept", ok:true, why:"The GDPR lists exceptions to erasure, including legal obligations and legal claims. The company should explain this to her."},
+      {t:"It can be: erasure has exceptions, such as legal obligations", ok:true, why:"Data needed to meet a legal obligation, such as tax records, can be kept. The GDPR lists exceptions to erasure, including legal obligations and legal claims. The company should explain this to her."},
       {t:"No: the right to erasure means every piece of data must go immediately", why:"The right to erasure has exceptions. Records kept for a legal obligation are one."},
       {t:"Yes, companies can keep anything they like after an erasure request", why:"They need a specific reason, such as a legal obligation. Otherwise data should be erased."},
       {t:"No, because payment records aren’t personal data", why:"Payment records linked to her are personal data. The question is whether an exception applies."}
@@ -494,7 +494,7 @@ ICA.addUnit({
       {t:"If there’s no reply after the deadline, complain to the data protection authority", why:"The regulator is the next step if the organisation ignores the request."}
     ]},
     {id:"t1u5-l3-x7", type:"mcq", q:"Lucía lives in a country without a strong data-protection law. A large international app she uses has a “Download your data” button. What’s the best way to think about it?", options:[
-      {t:"She can use it: many international services offer the same tools worldwide, whatever local law requires", ok:true, why:"Big services often build one set of tools for everyone. Using them costs nothing."},
+      {t:"She can use it: many services offer the same tools worldwide", ok:true, why:"Big services often build one set of tools for everyone, whatever local law requires. Using them costs nothing."},
       {t:"It must be fake, because only people in the EU have data rights", why:"Many countries have data-protection laws, and many services offer tools worldwide anyway."},
       {t:"She must pay a lawyer before using it", why:"Built-in download tools are self-service and free."},
       {t:"Downloading her data deletes it from the service", why:"Download and deletion are separate. Downloading gives her a copy."}
@@ -610,7 +610,7 @@ ICA.addUnit({
       ["CC0","No conditions at all, not even credit (though credit is still kind)","CC0 waives the creator’s rights as far as the law allows."]
     ]},
     {id:"t1u5-l4-x2", type:"mcq", q:"Tomás runs a small bicycle repair business. He finds a perfect photo for his paid advertising flyer, licensed CC BY-NC 4.0. Can he use it under that licence?", options:[
-      {t:"No. NC allows only non-commercial use, and an advert for his business is commercial; he’d need the photographer’s permission", ok:true, why:"An advert is directed towards commercial advantage. He can ask the photographer for a separate permission, or find a CC BY or CC0 image."},
+      {t:"No: an advert for his business is commercial use", ok:true, why:"NC allows only non-commercial use, and an advert is directed towards commercial advantage. He can ask the photographer for a separate permission, or find a CC BY or CC0 image."},
       {t:"Yes, as long as he credits the photographer", why:"Credit is required by every CC licence, but it doesn’t override the NC condition."},
       {t:"Yes, because small businesses don’t count as commercial", why:"The licence is about the purpose of the use, not the size of the business."},
       {t:"Yes, if he changes the colours first", why:"Changing the photo doesn’t remove the NC condition; it makes an adaptation, which is still limited to non-commercial use."}
@@ -635,7 +635,7 @@ ICA.addUnit({
       {t:"A report written by a US federal government agency, used in the United States", b:0, why:"Works by US federal government employees as part of their jobs aren’t protected by copyright in the US. (Other countries’ governments often keep copyright.)"}
     ]},
     {id:"t1u5-l4-x5", type:"mcq", q:"Kenji uses a 20-second clip from a film in his video and writes “all credit to the studio, no copyright infringement intended”. Is that enough to make the use lawful?", options:[
-      {t:"No. Credit and good intentions don’t give permission; whether it’s allowed depends on his country’s exceptions and the specific facts", ok:true, why:"Fair use, fair dealing and similar exceptions depend on purpose, amount, effect on the market and local law, not on a disclaimer."},
+      {t:"No. Credit and good intentions don’t give permission.", ok:true, why:"Whether it’s allowed depends on his country’s exceptions and the specific facts. Fair use, fair dealing and similar exceptions depend on purpose, amount, effect on the market and local law, not on a disclaimer."},
       {t:"Yes, crediting the owner always makes it fair use", why:"Credit is a separate matter. It doesn’t make a use fair or licensed."},
       {t:"Yes, anything under 30 seconds is automatically allowed", why:"There’s no fixed length that is automatically fair; the US Copyright Office says there is no formula."},
       {t:"No, using any part of a film is always illegal", why:"Exceptions such as fair use or fair dealing can allow limited use, for example for criticism or review, depending on the facts."}
@@ -776,9 +776,9 @@ ICA.addUnit({
       ["False urgency","A “sale ends in 10:00” timer that restarts every time you reload","Fake deadlines push you to decide before you’ve thought it through."]
     ]},
     {id:"t1u5-l5-x3", type:"mcq", q:"After an online argument, someone posts Fatima’s home address and writes that people should “pay her a visit”. What should she do first?", options:[
-      {t:"Treat it as a safety threat: contact local police (emergency number if she feels in immediate danger), and save screenshots with the date and link", ok:true, why:"An address combined with a threat is a safety issue first. Evidence helps police and the platform act."},
+      {t:"Treat it as a safety threat: contact police and save evidence", ok:true, why:"An address combined with a threat is a safety issue first. She should contact local police (the emergency number if she feels in immediate danger) and save screenshots with the date and link. Evidence helps police and the platform act."},
       {t:"Reply publicly to correct the record", why:"Replying can escalate things and draw more attention to the post. Safety and evidence come first."},
-      {t:"Block the account straight away, then delete her own profile", why:"Blocking first can hide the evidence she needs, and the threat to her physical safety still needs addressing."},
+      {t:"Block the account straight away, then delete her own profile too", why:"Blocking first can hide the evidence she needs, and the threat to her physical safety still needs addressing."},
       {t:"Ignore it; online threats are never serious", why:"Threats that include someone’s address must be taken seriously. Official guidance says to report threats of violence to police."}
     ]},
     {id:"t1u5-l5-x4", type:"order", q:"Kenji is receiving abusive messages from an account in a gaming community. He is not in physical danger. Put his steps in the order this lesson recommends.", items:[
@@ -806,7 +806,7 @@ ICA.addUnit({
       {t:"Deleting her advertising ID", why:"That affects ad personalisation, not her screen or notifications at night."}
     ]},
     {id:"t1u5-l5-x7", type:"mcq", q:"Sione’s friend says she’s being mocked in a group chat. What’s the most helpful first response?", options:[
-      {t:"Listen, believe her, and ask what would help, offering to help save evidence and use the report tools", ok:true, why:"Support starts with believing and letting her lead; practical help with evidence and reporting comes next."},
+      {t:"Listen, believe her, and ask what would help", ok:true, why:"Support starts with believing her and letting her lead. Offering practical help to save evidence and use the report tools comes next."},
       {t:"Post in the chat defending her loudly", why:"Well meant, but replying can escalate things and spread the content further. Ask her first."},
       {t:"Tell her to leave the internet for good", why:"That punishes the person being harmed. She can choose to step back, but it shouldn’t be the price of safety."},
       {t:"Forward the messages to everyone so people see what’s happening", why:"Sharing the content spreads the harm further. Evidence should be saved, not circulated."}
@@ -828,6 +828,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u5-q03","t1u5-q07","t1u5-q11","t1u5-q15","t1u5-q18","t1u5-q21","t1u5-q25","t1u5-q29","t1u5-q33","t1u5-q36","t1u5-q40","t1u5-q44"],
+  cpBank:[
+    {id:"t1u5-cp01", lesson:"t1u5-l1", level:1, q:"A grocery app notices that Wen buys nappies every week and labels her “likely a parent of a baby”. She never told the app this. What kind of data is that label?", options:[
+      {t:"Provided data", why:"Provided data is what you type or upload yourself. Wen never told the app she has a baby."},
+      {t:"Inferred data", ok:true, why:"Inferred data is calculated from what you provided and what was observed. The app guessed from her shopping pattern."},
+      {t:"Observed data", why:"Her weekly purchases are observed data. The label is a guess worked out from them, which makes it inferred."},
+      {t:"Public-domain data", why:"Public domain is a copyright idea about works anyone may reuse. It has nothing to do with this label."}
+    ]},
+    {id:"t1u5-cp02", lesson:"t1u5-l4", level:1, q:"A photo is licensed **CC BY-ND 4.0**. Kai wants to crop it, add text and share the result as a poster. Which part of the licence stops him?", options:[
+      {t:"BY", why:"BY means he must credit the creator. It doesn’t stop adaptations on its own."},
+      {t:"SA", why:"This licence has no SA. ShareAlike would allow adaptations under the same terms."},
+      {t:"NC", why:"This licence has no NC. NonCommercial limits commercial use, not changes."},
+      {t:"ND", ok:true, why:"NoDerivatives means adapted versions may not be shared. He may share only unchanged copies."}
+    ]},
+    {id:"t1u5-cp03", lesson:"t1u5-l5", level:1, q:"A ticket site says “Your seats are held for 10:00”. Liang lets the timer run out, reloads the page, and the same seats are held for 10:00 again. Which dark pattern is this?", options:[
+      {t:"Hidden costs", why:"Hidden costs are fees that appear only at the last step of checkout. Nothing here is about extra fees."},
+      {t:"Nagging", why:"Nagging asks you again and again, with “Not now” instead of a real “No”. This timer pressures you instead."},
+      {t:"False urgency", ok:true, why:"A countdown that simply starts again shows the time limit was never real. It is there to rush you into paying."},
+      {t:"Confirmshaming", why:"Confirmshaming words the “no” option to make you feel guilty. Here the pressure comes from a fake time limit."}
+    ]},
+    {id:"t1u5-cp04", lesson:"t1u5-l2", level:2, q:"Lerato plans a surprise trip on the family’s shared laptop, in a private window. She downloads the booking PDF, then closes the window. What will her husband be able to find?", options:[
+      {t:"Nothing at all; private windows remove every trace", why:"Private browsing forgets history, cookies and site data from the session. Files you download stay on the device."},
+      {t:"Her full browsing history, because private windows still save it", why:"A private window doesn’t keep the history of that session after you close it."},
+      {t:"The booking PDF, but not the history from that window", ok:true, why:"Private browsing protects against other people using the same device, but downloaded files are kept. She should move or delete the PDF."},
+      {t:"Only the cookies from the travel site", why:"Cookies from the private session are deleted when the window closes. The downloaded file is what remains."}
+    ]},
+    {id:"t1u5-cp05", lesson:"t1u5-l3", level:2, q:"Kerstin suspects a shopping site has guessed things about her that she never told it. Under the GDPR, which right lets her find out what it holds and how it uses it?", options:[
+      {t:"The right of access", ok:true, why:"Access gives her a copy of her personal data and information about how it is used. Self-service downloads may miss inferences, so a written request can help."},
+      {t:"The right to data portability", why:"Portability covers data she provided, in a reusable format. Guesses the site made about her are not data she provided."},
+      {t:"The right to object", why:"Objecting asks the site to stop some uses. First she wants to find out what it holds."},
+      {t:"The right to erasure", why:"Erasure asks for deletion in certain cases. Kerstin first wants to see what the site holds."}
+    ]},
+    {id:"t1u5-cp06", lesson:"t1u5-l1", level:2, q:"Esi opens a marketing email from a clothing shop but doesn’t click anything. An hour later the shop emails again: “Still thinking about it?” How did the shop most likely know she opened the first email?", options:[
+      {t:"Her email provider sold the shop a list of opened emails", why:"The shop doesn’t need anyone’s help. Its own email can report back when it is opened."},
+      {t:"A hidden tracking pixel in the email loaded when she opened it", ok:true, why:"A tracking pixel is a tiny, usually invisible image. When it loads, it tells its owner the email was opened, on which device and when."},
+      {t:"Device fingerprinting read her inbox", why:"Fingerprinting combines details a browser reveals to recognise a device. It can’t read your inbox."},
+      {t:"A third-party cookie on her phone told the shop", why:"Cookies are stored by websites in a browser. Opening an email is reported by a tracking pixel inside it."}
+    ]},
+    {id:"t1u5-cp07", lesson:"t1u5-l4", level:2, q:"Femi wants a piece by a composer who died over 200 years ago in his video. The only recording he likes was made last year by a modern orchestra. Which plan avoids a copyright problem?", options:[
+      {t:"Use last year’s recording, because the music is in the public domain", why:"The composition is old enough to be public domain, but a new recording of it can have its own copyright."},
+      {t:"Use last year’s recording, as long as he credits the orchestra", why:"Credit alone doesn’t give permission. He would need a licence from whoever owns the recording."},
+      {t:"Find a recording of the piece that is openly licensed or in the public domain", ok:true, why:"The music itself is free to use, but each recording can be protected. A recording that is openly licensed (or old enough to be public domain) solves the problem."},
+      {t:"Choose different music, because old music is always still protected", why:"Copyright on the composition has expired, so the music itself is free to use. Only this particular recording is the problem."}
+    ]},
+    {id:"t1u5-cp08", lesson:"t1u5-l5", level:2, q:"Tanvir keeps picking up his phone because of shopping alerts, red badges and “you might like” messages. He still needs to hear from his children’s school. Which change helps most?", options:[
+      {t:"Turn off notifications for shopping apps only", ok:true, why:"Per-app notification settings let him silence the shopping apps and keep alerts from people and the school. This removes most of the interruptions."},
+      {t:"Turn on airplane mode for the whole day", why:"Airplane mode cuts off everything, including the school. He needs a more selective change."},
+      {t:"Delete his phone’s advertising ID", why:"That changes how ads are personalised. It doesn’t stop apps sending notifications."},
+      {t:"Use private browsing for all of his online shopping", why:"Private browsing affects what the device keeps after a session. It doesn’t stop app notifications."}
+    ]},
+    {id:"t1u5-cp09", lesson:"t1u5-l2", level:3, q:"Adwoa blocks third-party cookies and opens a private window. Then she signs in to her account on a shopping site and browses for an hour. Can the shop link what she viewed to her?", options:[
+      {t:"No, because private browsing hides her from websites", why:"Private browsing only stops her device keeping the session. Websites still see what she does."},
+      {t:"No, because blocking third-party cookies stops all tracking", why:"Blocking third-party cookies closes one door. Signing in still tells the site exactly who she is."},
+      {t:"Only if she buys something", why:"Once she is signed in, the shop can record what she views on its own site, whether she buys or not."},
+      {t:"Yes, because signing in tells the shop who she is", ok:true, why:"Signing in identifies her on any device, so the shop can record what she views on its own site. Private windows and cookie blocking don’t hide that."}
+    ]},
+    {id:"t1u5-cp10", lesson:"t1u5-l3", level:3, q:"Imani signs up to a pharmacy app. A marketing box is already ticked and says: “You must accept marketing emails to get home delivery.” What is true under the GDPR?", options:[
+      {t:"This is valid consent, because she can untick the box", why:"Valid consent needs a clear action from her. A box ticked in advance doesn’t count."},
+      {t:"Not valid: it is pre-ticked, and delivery is tied to marketing", ok:true, why:"Consent must be unambiguous and freely given. These are also dark patterns: pre-ticked boxes and pressure."},
+      {t:"It’s fine, because the pharmacy needs her address to deliver anyway", why:"Delivery can rely on the contract with her. Marketing is a separate purpose and needs its own freely given consent."},
+      {t:"It’s fine if the rule is written in the privacy policy", why:"Hiding a condition in a policy doesn’t make consent informed or freely given. Simply using a service isn’t valid consent to marketing."}
+    ]},
+    {id:"t1u5-cp11", lesson:"t1u5-l4", level:3, q:"An infographic is licensed **CC BY-NC-ND 4.0**. Which use does the licence allow?", options:[
+      {t:"Printing unchanged copies, with credit, for a free workshop", ok:true, why:"BY is met by the credit, NC by the free workshop, and ND by leaving it unchanged. All conditions are followed."},
+      {t:"Translating it and sharing the translation free of charge online", why:"A translation is an adaptation. ND means adapted versions may not be shared."},
+      {t:"Using it unchanged in a paid advert for a business", why:"An advert is commercial use, which NC doesn’t allow without the creator’s permission."},
+      {t:"Sharing it unchanged on a free website without any credit", why:"Every CC licence includes BY, so credit is required. Use TASL: title, author, source and licence."}
+    ]},
+    {id:"t1u5-cp12", lesson:"t1u5-l5", level:3, q:"After an online argument, someone posts Hiro’s home address. He is safe now, has saved evidence and reported the post. Where did his address probably come from, and what should he do next?", options:[
+      {t:"From his browser cookies; he should clear them every day", why:"Cookies don’t publish home addresses. Addresses are often found on people-search sites built from public records."},
+      {t:"From his phone’s Wi-Fi; he should change his router password", why:"Nothing suggests his network was involved. Data brokers and public profiles are the likely sources."},
+      {t:"From a people-search site; he should ask it to remove his data", ok:true, why:"Data brokers sell addresses gathered from public records. Removal requests (and taking his address off his own profiles) reduce what’s exposed, and may need repeating."},
+      {t:"It doesn’t matter; he should reply to the poster to explain himself", why:"Replying can make things worse. Guidance says don’t respond, keep evidence, report, and reduce what’s exposed."}
+    ]},
+  ],
   codex:[
    {id:"digital-footprint", title:"Digital footprint", aka:["online footprint","data trail","active footprint","passive footprint"], tags:["privacy","basics"],
     summary:"The record of what you do online, both what you share on purpose and what is collected or guessed about you.",
@@ -1479,10 +1553,10 @@ ICA.addUnit({
      {t:"A comment you posted on a video", why:"A deliberate post is active footprint."}
    ]},
    {id:"t1u5-q02", lesson:"t1u5-l1", level:1, q:"What makes a cookie “third-party”?", options:[
-     {t:"It’s set by a different company whose code is embedded in the page, not by the site in the address bar", ok:true, why:"That’s the definition, and it’s why one company can recognise you across many sites."},
+     {t:"It’s set by a company other than the site you’re visiting", ok:true, why:"Its code is embedded in the page, but it isn’t the site in the address bar. That’s why one company can recognise you across many sites."},
      {t:"It’s the third cookie a site sets", why:"The name refers to who sets it, not how many there are."},
      {t:"It’s stored on a third device", why:"Cookies are stored in the browser on your device; “third-party” refers to the company setting it."},
-     {t:"It’s always malicious", why:"Third-party cookies are mostly used for advertising and analytics; they’re a privacy concern, not malware."}
+     {t:"It’s always a piece of malicious software hidden in a web page", why:"Third-party cookies are mostly used for advertising and analytics; they’re a privacy concern, not malware."}
    ]},
    {id:"t1u5-q03", lesson:"t1u5-l1", level:2, q:"As of late 2026, what does Chrome do with third-party cookies by default in a normal (non-Incognito) window?", options:[
      {t:"Allows them, unless you choose to block them in Settings", ok:true, why:"Google decided to keep them in Chrome, with a user setting; Incognito blocks them by default."},
@@ -1491,13 +1565,13 @@ ICA.addUnit({
      {t:"Replaced them with Privacy Sandbox, which was then made compulsory", why:"Google retired most Privacy Sandbox technologies in October 2025."}
    ]},
    {id:"t1u5-q04", lesson:"t1u5-l1", level:1, q:"What is a data broker?", options:[
-     {t:"A company that collects information about people from many sources and sells or shares it", ok:true, why:"The FTC describes brokers compiling data from other brokers, social media and public records."},
+     {t:"A company that collects data about people and sells it", ok:true, why:"It gathers information from many sources and sells or shares it. The FTC describes brokers compiling data from other brokers, social media and public records."},
      {t:"A bank that stores your data securely", why:"Banks hold data, but brokers specifically trade information about people."},
      {t:"A government office that protects your data", why:"That would be a data-protection authority, not a broker."},
-     {t:"A cable that connects your router to the internet", why:"That’s hardware; a data broker is a business."}
+     {t:"A cable or device that connects your router to the internet", why:"That’s hardware; a data broker is a business."}
    ]},
    {id:"t1u5-q05", lesson:"t1u5-l1", level:3, q:"Tomás clears his cookies daily and uses a browser that blocks third-party cookies, yet an ad company still seems to recognise his laptop. Which explanation fits best?", options:[
-     {t:"Device fingerprinting, which identifies the device from details it reveals without storing anything", ok:true, why:"Fingerprinting survives cookie clearing and cookie blocking."},
+     {t:"Device fingerprinting, which needs no stored cookies", ok:true, why:"It identifies the device from details it reveals without storing anything, so it survives cookie clearing and cookie blocking."},
      {t:"His cookies weren’t really cleared", why:"Possible in theory, but the scenario says he clears them and blocks third-party cookies; fingerprinting explains it without assuming a mistake."},
      {t:"His screen brightness gives him away", why:"Brightness isn’t a practical tracking signal; the combination of browser and device details is."},
      {t:"Tracking only works with cookies, so it must be coincidence", why:"Tracking has several techniques besides cookies."}
@@ -1509,8 +1583,8 @@ ICA.addUnit({
      {t:"An ad shown because you visited a shop yesterday", why:"Based on your past behaviour: behavioural."}
    ]},
    {id:"t1u5-q07", lesson:"t1u5-l1", level:3, q:"Amara never told a website she was pregnant, but she starts seeing baby-product ads after browsing vitamins and loose clothing. What does this show?", options:[
-     {t:"Companies can infer sensitive facts from patterns of behaviour, even ones you never shared", ok:true, why:"Inferred data is calculated from observed data; it can be sensitive and sometimes wrong."},
-     {t:"Someone must have read her private messages", why:"No need: browsing patterns are enough to make the inference."},
+     {t:"Companies can infer sensitive facts she never shared", ok:true, why:"They work them out from patterns of behaviour. Inferred data is calculated from observed data; it can be sensitive and sometimes wrong."},
+     {t:"Someone at the company must have read her private messages", why:"No need: browsing patterns are enough to make the inference."},
      {t:"It’s random; ads are never targeted", why:"Behavioural targeting uses exactly this kind of pattern."},
      {t:"Her phone’s camera recognised her", why:"The more ordinary explanation is inference from her browsing and shopping."}
    ]},
@@ -1521,34 +1595,34 @@ ICA.addUnit({
      {t:"Sites must charge a fee each time", why:"Most offer free opt-outs."}
    ]},
    {id:"t1u5-q09", lesson:"t1u5-l1", level:3, q:"Priya’s free running app publicly shares her route maps. Why is this a particular privacy risk?", options:[
-     {t:"Routes that start and end at the same place reveal roughly where she lives and when she’s out", ok:true, why:"Location patterns reveal home, routine and times away: useful to stalkers and burglars."},
+     {t:"Her routes reveal roughly where she lives and when she’s out", ok:true, why:"Routes that start and end at the same place point to her home. Location patterns reveal home, routine and times away: useful to stalkers and burglars."},
      {t:"Running routes take up too much storage", why:"Storage isn’t the privacy issue."},
      {t:"Maps make her phone battery drain", why:"Battery use isn’t a privacy risk."},
-     {t:"Route data can’t identify anyone", why:"Repeated start and end points are highly identifying."}
+     {t:"Route maps are too rough to identify anyone or where they live", why:"Repeated start and end points are highly identifying."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u5-q10", lesson:"t1u5-l2", level:1, q:"Where do you start Google’s Privacy Checkup?", options:[
      {t:"myaccount.google.com, in the Data & privacy section", ok:true, why:"Privacy Checkup is reached from your Google Account’s Data & privacy section."},
      {t:"In the Windows Control Panel", why:"Windows settings don’t control your Google Account."},
-     {t:"In your router’s settings page", why:"Routers have nothing to do with Google Account privacy."},
+     {t:"In your home router’s admin settings page, under Privacy", why:"Routers have nothing to do with Google Account privacy."},
      {t:"Only by phoning Google", why:"It’s a self-service tool in your account."}
    ]},
    {id:"t1u5-q11", lesson:"t1u5-l2", level:2, q:"What does private browsing (such as Chrome’s Incognito) actually protect against?", options:[
-     {t:"Other people using the same device seeing your history and cookies from that session", ok:true, why:"It forgets the session locally. It doesn’t hide you from sites or networks."},
+     {t:"Others on the same device seeing that session’s history", ok:true, why:"It forgets your history and cookies from that session on the device. It doesn’t hide you from sites or networks."},
      {t:"Websites recording your visit", why:"Websites still see your requests in private mode."},
-     {t:"Your employer’s network seeing your activity", why:"Google says organisations that manage the network can still see activity."},
+     {t:"Your employer’s or school’s network seeing your activity", why:"Google says organisations that manage the network can still see activity."},
      {t:"Malware on the computer", why:"Private browsing has no effect on malware or keyloggers."}
    ]},
    {id:"t1u5-q12", lesson:"t1u5-l2", level:2, q:"On an iPhone, how can you send a photo without its GPS location?", options:[
      {t:"In the Share sheet, tap Options and turn off Location", ok:true, why:"The shared copy then shows “Location Not Included”."},
-     {t:"Turn on Airplane Mode before sharing", why:"Airplane mode doesn’t change the location stored in the photo file."},
+     {t:"Turn on Airplane Mode before sharing so GPS is switched off", why:"Airplane mode doesn’t change the location stored in the photo file."},
      {t:"Crop the photo", why:"Cropping changes the picture, not the hidden GPS metadata."},
      {t:"Lower the screen brightness", why:"Brightness has nothing to do with photo metadata."}
    ]},
    {id:"t1u5-q13", lesson:"t1u5-l2", level:1, q:"What does turning off “Allow Apps to Request to Track” on an iPhone do?", options:[
-     {t:"Apps are automatically told no when they want to track you across other companies’ apps and websites", ok:true, why:"App Tracking Transparency requires permission; with this off, requests are refused."},
+     {t:"Apps that ask to track you across other apps are told no", ok:true, why:"App Tracking Transparency requires permission to track you across other companies’ apps and websites; with this off, requests are refused automatically."},
      {t:"It switches off GPS", why:"Location is controlled separately in Location Services."},
-     {t:"It deletes all your apps’ data", why:"It doesn’t delete data; it controls cross-app tracking permission."},
+     {t:"It deletes all the data your apps have collected about you", why:"It doesn’t delete data; it controls cross-app tracking permission."},
      {t:"It blocks all ads", why:"Ads still appear; they just can’t use cross-app tracking."}
    ]},
    {id:"t1u5-q14", lesson:"t1u5-l2", level:2, q:"Which location setting suits a weather app best?", options:[
@@ -1558,7 +1632,7 @@ ICA.addUnit({
      {t:"Share location with all contacts", why:"That’s a people-sharing feature, unrelated to the app’s needs."}
    ]},
    {id:"t1u5-q15", lesson:"t1u5-l2", level:3, q:"Ana posts a photo of her child’s first school day, with location turned off when sharing. The photo shows the school’s name on the gate. What’s the remaining risk?", options:[
-     {t:"The background reveals the location, so strangers could still find where her child goes to school", ok:true, why:"Visual clues can reveal as much as GPS. Check backgrounds before posting."},
+     {t:"The school’s name still shows where her child goes", ok:true, why:"The background reveals the location, so strangers could still find the school. Visual clues can reveal as much as GPS. Check backgrounds before posting."},
      {t:"None: removing GPS removes all location information", why:"GPS is only one clue; signs, uniforms and landmarks are others."},
      {t:"The photo’s file size reveals the school", why:"File size reveals nothing about place."},
      {t:"Turning off location also hides the picture", why:"The picture itself is unchanged; only GPS metadata is removed."}
@@ -1570,14 +1644,14 @@ ICA.addUnit({
      {t:"Low Power Mode", why:"Low Power Mode saves battery; it doesn’t change sharing."}
    ]},
    {id:"t1u5-q17", lesson:"t1u5-l2", level:2, q:"Mei turns off personalised ads in My Ad Center. What should she expect?", options:[
-     {t:"Roughly the same number of ads, chosen without her Google profile", ok:true, why:"Personalisation changes how ads are chosen, not how many there are."},
+     {t:"About as many ads, chosen without her profile", ok:true, why:"Personalisation changes how ads are chosen, not how many there are. Her Google profile is no longer used to choose them."},
      {t:"No more ads on any website", why:"Ads continue; they’re just less personalised."},
-     {t:"All her Google data is deleted", why:"Deleting data is done separately, in activity controls."},
+     {t:"All her Google search and activity history is deleted", why:"Deleting data is done separately, in activity controls."},
      {t:"Her account is closed", why:"Ad settings don’t close accounts."}
    ]},
    {id:"t1u5-q18", lesson:"t1u5-l2", level:3, q:"Hana suspects her ex-partner, who once knew her passwords, can still see her location. What’s the most careful approach?", options:[
-     {t:"Review sharing with a tool such as Safety Check, aware that changes may be noticed, and consider contacting a support service to plan safely", ok:true, why:"Checking sharing is the right step, but safety planning matters because the other person may notice changes."},
-     {t:"Do nothing; sharing always stops when a relationship ends", why:"Shared accounts and family-sharing features can continue indefinitely."},
+     {t:"Check who she shares with, and plan with a support service", ok:true, why:"Checking sharing, for example with Safety Check on an iPhone, is the right step, but the other person may notice changes, so safety planning with a support service matters."},
+     {t:"Do nothing; location sharing always stops when a relationship ends", why:"Shared accounts and family-sharing features can continue indefinitely."},
      {t:"Post publicly that she’s changing all her settings", why:"That could alert the person and increase risk."},
      {t:"Turn on private browsing", why:"Private browsing doesn’t affect location sharing."}
    ]},
@@ -1589,16 +1663,16 @@ ICA.addUnit({
      {t:"The right to object", why:"Objection asks them to stop some uses."}
    ]},
    {id:"t1u5-q20", lesson:"t1u5-l3", level:1, q:"How long does an organisation normally have to answer a GDPR access request?", options:[
-     {t:"One month, extendable by two further months for complex requests", ok:true, why:"Article 12(3) sets one month, with a possible two-month extension explained within the first month."},
+     {t:"One month, with a possible extension", ok:true, why:"Article 12(3) sets one month, extendable by two further months for complex requests, with the extension explained within the first month."},
      {t:"One year", why:"Far longer than the GDPR allows."},
      {t:"24 hours", why:"The law requires no undue delay and at most one month, not 24 hours."},
-     {t:"There’s no deadline", why:"There is: one month as a rule."}
+     {t:"There’s no deadline, as long as it replies eventually", why:"There is: one month as a rule."}
    ]},
    {id:"t1u5-q21", lesson:"t1u5-l3", level:2, q:"A sign-up form has a marketing box that is already ticked. Under the GDPR, is that valid consent?", options:[
-     {t:"No: consent needs a clear action by the person, and a pre-ticked box isn’t one", ok:true, why:"Valid consent must be unambiguous, given by a clear affirmative action."},
-     {t:"Yes, if the user doesn’t untick it", why:"Silence or inactivity isn’t valid consent."},
+     {t:"No: a pre-ticked box isn’t a clear action", ok:true, why:"Valid consent must be unambiguous, given by a clear affirmative action by the person."},
+     {t:"Yes, as long as the user doesn’t untick it", why:"Silence or inactivity isn’t valid consent."},
      {t:"Yes, as long as the box is green", why:"Colour has nothing to do with validity."},
-     {t:"Only if the company is based in the EU", why:"The GDPR can apply to non-EU companies too, and a pre-ticked box isn’t valid either way."}
+     {t:"Only if the company is based inside the EU", why:"The GDPR can apply to non-EU companies too, and a pre-ticked box isn’t valid either way."}
    ]},
    {id:"t1u5-q22", lesson:"t1u5-l3", level:2, q:"Which is NOT one of the GDPR’s six lawful bases for using personal data?", options:[
      {t:"The company’s wish to keep data forever “just in case”", ok:true, why:"That isn’t a lawful basis, and it conflicts with the storage-limitation principle."},
@@ -1619,20 +1693,20 @@ ICA.addUnit({
      {t:"login", why:"Login sections cover account access, not data sales."}
    ]},
    {id:"t1u5-q25", lesson:"t1u5-l3", level:3, q:"Fatima receives an email offering to “recover all your data from Facebook” for a fee, asking for her password and ID. What should she do?", options:[
-     {t:"Ignore it and use Meta’s own Download your information tool, which is free", ok:true, why:"You never need to pay a third party or give your password to use your own rights."},
-     {t:"Pay, since data requests always cost money", why:"Using your rights is normally free, and self-service downloads are free."},
+     {t:"Ignore it and use Meta’s own free download tool", ok:true, why:"Meta’s Download your information tool is free. You never need to pay a third party or give your password to use your own rights."},
+     {t:"Pay the fee, since data requests always cost money", why:"Using your rights is normally free, and self-service downloads are free."},
      {t:"Send her password but not her ID", why:"Sharing her password gives control of her account to a likely scammer."},
      {t:"Forward it to all her contacts", why:"That spreads a probable scam."}
    ]},
    {id:"t1u5-q26", lesson:"t1u5-l3", level:2, q:"Which example shows that the right to erasure is not absolute?", options:[
-     {t:"A bank keeps some transaction records after closing an account, because the law requires it", ok:true, why:"Legal obligations are an exception to erasure."},
-     {t:"A gym deletes an unused account on request", why:"That’s erasure working normally."},
+     {t:"After an account closes, a bank keeps records the law requires", ok:true, why:"The law requires it to keep some transaction records. Legal obligations are an exception to erasure."},
+     {t:"A gym deletes an unused account when the member asks", why:"That’s erasure working normally."},
      {t:"A shop sends a copy of a customer’s data", why:"That’s the right of access, not erasure."},
      {t:"A company corrects a wrong address", why:"That’s rectification."}
    ]},
    {id:"t1u5-q27", lesson:"t1u5-l3", level:3, q:"Oluwaseun’s access request is ignored for two months with no extension notice. What’s the appropriate next step under the GDPR?", options:[
      {t:"Complain to his national data protection authority", ok:true, why:"The one-month deadline passed without an extension; the regulator is the route for complaints."},
-     {t:"Send the same request every day", why:"That isn’t necessary and may be treated as excessive; escalation to the regulator is the proper route."},
+     {t:"Send the same request again every day until it answers", why:"That isn’t necessary and may be treated as excessive; escalation to the regulator is the proper route."},
      {t:"Assume he has no rights", why:"He does; the organisation failed to meet its deadline."},
      {t:"Pay a fee to speed it up", why:"Access requests are normally free; paying isn’t the remedy."}
    ]},
@@ -1641,11 +1715,11 @@ ICA.addUnit({
      {t:"Automatically, as soon as you take it", ok:true, why:"Under the Berne Convention, protection can’t depend on formalities like registration."},
      {t:"Only after you register it", why:"Registration isn’t required in Berne countries."},
      {t:"Only if you add a © symbol", why:"No notice is needed."},
-     {t:"Only after it is published online", why:"Publication isn’t required."}
+     {t:"Only after it is published online or shared", why:"Publication isn’t required."}
    ]},
    {id:"t1u5-q29", lesson:"t1u5-l4", level:2, q:"Which statement about fair use (US) is accurate?", options:[
-     {t:"It’s decided case by case using four factors, and there is no fixed safe amount", ok:true, why:"The US Copyright Office says there is no formula; courts weigh purpose, nature, amount and market effect."},
-     {t:"Anything under 10% of a work is automatically fair", why:"There’s no percentage rule."},
+     {t:"It’s judged case by case, with no fixed safe amount", ok:true, why:"The US Copyright Office says there is no formula; courts weigh four factors: purpose, nature, amount and market effect."},
+     {t:"Anything under 10% of a work is automatically fair use", why:"There’s no percentage rule."},
      {t:"Giving credit makes any use fair", why:"Credit doesn’t by itself make a use fair."},
      {t:"Fair use applies identically in every country", why:"It’s a US doctrine; other countries have fair dealing or listed exceptions."}
    ]},
@@ -1668,7 +1742,7 @@ ICA.addUnit({
      {t:"Photo by Mei Lin", why:"Author only; no source or licence."}
    ]},
    {id:"t1u5-q33", lesson:"t1u5-l4", level:3, q:"Sione wants to print and sell posters using a CC BY-NC-SA photo. What does the licence allow?", options:[
-     {t:"Not selling: NC rules out commercial use, so he’d need the photographer’s separate permission", ok:true, why:"Selling posters is commercial, which NC doesn’t allow."},
+     {t:"Not selling: NC rules out commercial use", ok:true, why:"Selling posters is commercial, which NC doesn’t allow, so he’d need the photographer’s separate permission."},
      {t:"Selling, as long as he credits the photographer", why:"Credit doesn’t override NC."},
      {t:"Selling, if he shares his poster design under the same licence", why:"SA is about adaptations; it doesn’t remove the NC condition."},
      {t:"Selling, if he prints fewer than 100", why:"The licence has no quantity exception."}
@@ -1680,27 +1754,27 @@ ICA.addUnit({
      {t:"A song by a living musician", why:"Protected during the musician’s life and long after."}
    ]},
    {id:"t1u5-q35", lesson:"t1u5-l4", level:2, q:"What does CC0 do?", options:[
-     {t:"Lets a creator waive their rights so the work is as close to the public domain as the law allows", ok:true, why:"CC0 is a waiver, with a fallback licence where a waiver isn’t effective."},
+     {t:"Lets a creator give up their rights as far as the law allows", ok:true, why:"The work becomes as close to the public domain as the law allows. CC0 is a waiver, with a fallback licence where a waiver isn’t effective."},
      {t:"Means the work costs zero but can’t be changed", why:"CC0 imposes no conditions, including on changes."},
-     {t:"Means “credit zero times”, but non-commercial only", why:"CC0 has no NC condition."},
+     {t:"Means “credit zero times”, but for non-commercial use only", why:"CC0 has no NC condition."},
      {t:"Is the strictest CC licence", why:"It’s the most permissive option."}
    ]},
    {id:"t1u5-q36", lesson:"t1u5-l4", level:3, q:"Lucía translates a CC BY-SA 4.0 article into Spanish for a community website. What must she do?", options:[
-     {t:"Credit the original (TASL), note that it’s a translation, and license her translation under CC BY-SA or a compatible licence", ok:true, why:"A translation is an adaptation; SA requires the same or a compatible licence."},
-     {t:"Nothing; translations are new works with no conditions", why:"Translations are adaptations of the original and inherit its conditions."},
+     {t:"Credit it, say it’s a translation, and share it under BY-SA", ok:true, why:"Credit the original (TASL) and note that it’s a translation. A translation is an adaptation, so SA requires CC BY-SA or a compatible licence."},
+     {t:"Nothing; translations are new works with no conditions attached", why:"Translations are adaptations of the original and inherit its conditions."},
      {t:"She can’t translate it, because SA forbids changes", why:"SA allows changes; ND is the condition that forbids sharing adaptations."},
      {t:"Make it non-commercial only", why:"BY-SA has no NC condition."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t1u5-q37", lesson:"t1u5-l5", level:1, q:"Why does infinite scroll make it hard to stop?", options:[
-     {t:"It removes the natural end of the page, so there’s no stopping point", ok:true, why:"New content keeps loading, so stopping always needs a deliberate decision."},
+     {t:"It removes the natural end of the page", ok:true, why:"There’s no stopping point: new content keeps loading, so stopping always needs a deliberate decision."},
      {t:"It makes the phone heavier", why:"It’s a design feature, not hardware."},
      {t:"It only works at night", why:"It works at any time."},
-     {t:"It turns off notifications", why:"Unrelated: notifications are a different design technique."}
+     {t:"It turns off notifications so nothing interrupts you", why:"Unrelated: notifications are a different design technique."}
    ]},
    {id:"t1u5-q38", lesson:"t1u5-l5", level:1, q:"Which is an example of a dark pattern?", options:[
-     {t:"A decline button that says “No thanks, I don’t care about my health”", ok:true, why:"That’s confirmshaming: using guilt to push a choice."},
-     {t:"Two equally sized buttons: “Accept” and “Reject”", why:"Equal, clear choices are the opposite of a dark pattern."},
+     {t:"A decline button saying “No, I don’t care about my health”", ok:true, why:"That’s confirmshaming: using guilt to push a choice."},
+     {t:"Two equally sized buttons, one saying “Accept” and one “Reject”", why:"Equal, clear choices are the opposite of a dark pattern."},
      {t:"A clear price shown at the start of checkout", why:"Showing full prices early is honest design."},
      {t:"A cancel button in account settings", why:"Easy cancellation is good practice."}
    ]},
@@ -1717,31 +1791,31 @@ ICA.addUnit({
      {t:"Advertising ID settings", why:"These affect ad personalisation."}
    ]},
    {id:"t1u5-q41", lesson:"t1u5-l5", level:3, q:"Dmitri’s weekly report shows 6 hours a day and he feels ashamed. Which response best fits a healthy, non-judgemental approach?", options:[
-     {t:"Look at which time he valued and which left him feeling worse, then change one thing about the second", ok:true, why:"Not all screen time is equal; small targeted changes work better than guilt."},
-     {t:"Delete every app immediately", why:"Drastic and likely to remove things he values, such as calls with family."},
+     {t:"See which time he valued, and change one thing about the rest", ok:true, why:"Look at which time he valued and which left him feeling worse, then change one thing about the second. Not all screen time is equal; small targeted changes work better than guilt."},
+     {t:"Delete every app on his phone straight away so he can’t use it", why:"Drastic and likely to remove things he values, such as calls with family."},
      {t:"Ignore the report forever", why:"The report is useful information when used without judgement."},
      {t:"Assume he has no self-control", why:"These designs work on everyone; blame doesn’t help."}
    ]},
    {id:"t1u5-q42", lesson:"t1u5-l5", level:1, q:"What is doxxing?", options:[
-     {t:"Gathering someone’s personal information and publishing it to harm them", ok:true, why:"That matches the US DHS definition."},
-     {t:"Sending someone a documents folder", why:"The word sounds like “docs”, but it means exposing personal information maliciously."},
+     {t:"Publishing someone’s personal information to harm them", ok:true, why:"Gathering someone’s personal information and publishing it to harm them matches the US DHS definition."},
+     {t:"Sending someone a large folder of documents by email at once", why:"The word sounds like “docs”, but it means exposing personal information maliciously."},
      {t:"Blocking an account", why:"Blocking is a protective tool."},
      {t:"Backing up your files", why:"Backing up is a protective habit, not a form of harassment."}
    ]},
    {id:"t1u5-q43", lesson:"t1u5-l5", level:2, q:"Why should you save evidence before blocking someone who is harassing you?", options:[
-     {t:"Blocking can hide the messages, and evidence is needed for reports to platforms or police", ok:true, why:"Official guidance stresses keeping screenshots, links and dates."},
+     {t:"Blocking can hide the messages you need for a report", ok:true, why:"Evidence is needed for reports to platforms or police. Official guidance stresses keeping screenshots, links and dates."},
      {t:"Blocking is illegal without evidence", why:"You can block anyone at any time; the point is preserving evidence."},
-     {t:"The platform deletes your account if you block first", why:"Blocking doesn’t delete your account."},
+     {t:"The platform deletes your own account if you block someone first", why:"Blocking doesn’t delete your account."},
      {t:"Evidence isn’t needed at all", why:"Evidence makes reports far more effective."}
    ]},
    {id:"t1u5-q44", lesson:"t1u5-l5", level:3, q:"A post shares Kenji’s home address with a message encouraging people to “visit”. According to official guidance, when should he involve the police?", options:[
-     {t:"Now: threats to physical safety should be reported to police, alongside reporting to the platform", ok:true, why:"StopBullying.gov and DHS guidance say threats of violence should go to law enforcement."},
+     {t:"Now: report it to the police as well as the platform", ok:true, why:"Threats to physical safety should go to the police, alongside reporting to the platform. StopBullying.gov and DHS guidance say threats of violence should go to law enforcement."},
      {t:"Only after the post gets 1,000 likes", why:"There’s no popularity threshold for a threat."},
-     {t:"Never; online posts aren’t police matters", why:"Threats and stalking online can be crimes."},
+     {t:"Never, because online posts aren’t matters for the police", why:"Threats and stalking online can be crimes."},
      {t:"Only if he replies first", why:"Replying isn’t a requirement, and it may escalate things."}
    ]},
    {id:"t1u5-q45", lesson:"t1u5-l5", level:2, q:"A friend is being mocked in a group chat. Which action helps without making things worse?", options:[
-     {t:"Ask what would help, and offer to help save screenshots and report", ok:true, why:"Letting them lead, plus practical help with evidence and reporting, is supportive."},
+     {t:"Ask what would help, and offer help with evidence", ok:true, why:"Letting them lead, plus practical help saving screenshots and reporting, is supportive."},
      {t:"Share the messages widely to show how bad they are", why:"That spreads the harmful content further."},
      {t:"Reply angrily in the chat", why:"Retaliation can escalate the situation."},
      {t:"Tell them it’s their fault for being online", why:"The person causing harm is responsible, not the target."}

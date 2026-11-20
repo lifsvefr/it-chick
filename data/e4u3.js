@@ -112,7 +112,7 @@ ICA.addUnit({
       {t:"Why has ASEAN survived since 1967 when SEATO, founded earlier for the same region, was dissolved in 1977?", b:2, why:"A contrast that needs explaining, with rival answers to test."}
     ]},
     {id:"e4u3-l1-x2", type:"mcq", q:"Which of these is a “how-possible” question in Doty’s sense?", options:[
-      {t:"How did official documents represent the people of a country so that intervening there seemed natural and necessary?", ok:true, why:"Right. It asks what made a policy thinkable, through the meanings in texts, rather than which cause produced it."},
+      {t:"How did documents make intervening in a country seem natural?", ok:true, why:"Right. It asks how official texts represented a people so that intervention seemed natural and necessary: what made a policy thinkable, through the meanings in texts, rather than which cause produced it."},
       {t:"Why did the government decide to intervene in 1950 rather than in 1955?", why:"This is a why-question about timing and causes."},
       {t:"How many troops did the government send?", why:"This is a descriptive what/how-many question, even though it starts with “how”."},
       {t:"Should the government have intervened?", why:"This is a normative question about what ought to have been done."}
@@ -131,7 +131,7 @@ ICA.addUnit({
       ["Methods","Which techniques will collect and analyse the evidence?","Methods are the concrete tools: archives, interviews, regression and so on."]
     ]},
     {id:"e4u3-l1-x5", type:"mcq", q:"Amara’s study of “democracy in Southeast Asia” counts every state that held any kind of election in a given year as a democracy, including states where opposition parties were banned. What is the main problem?", options:[
-      {t:"Concept stretching: the definition drops so many attributes that “democracy” no longer distinguishes democracies from other regimes.", ok:true, why:"Right. Moving up Sartori’s ladder this far makes the concept cover cases that most definitions would exclude, so her findings would be about “regimes with elections”, not democracy."},
+      {t:"Concept stretching: “democracy” no longer separates regime types.", ok:true, why:"Right. The definition drops so many attributes that it no longer separates democracies from other regimes. Moving up Sartori’s ladder this far makes the concept cover cases that most definitions would exclude, so her findings would be about “regimes with elections”, not democracy."},
       {t:"The ecological fallacy: she infers individual attitudes from national data.", why:"Nothing here concerns individuals. The problem is the definition of the concept."},
       {t:"Her unit of analysis should be the dyad-year.", why:"Her question is about each country’s regime, so country-years fit. The unit is not the issue."},
       {t:"There is no problem, because every definition of democracy is equally valid.", why:"Definitions are choices, but they can still be too thin for the claims made. Elections without competition fail most definitions."}
@@ -142,7 +142,7 @@ ICA.addUnit({
       {v:3, tol:0, why:"Check the threshold again: it is 25 battle-related deaths, so the fight with 30 counts."}
     ]},
     {id:"e4u3-l1-x7", type:"mcq", q:"Tomás wants to test the claim that pairs of democracies rarely go to war with each other. Which unit of analysis fits best?", options:[
-      {t:"Dyad-years: each pair of countries in each year, coded for both regimes and for whether they fought.", ok:true, why:"Right. The claim is about pairs, so each observation should be a pair at a point in time."},
+      {t:"Dyad-years: each pair of countries in each year.", ok:true, why:"Right. Each pair is coded for both regimes and for whether they fought. The claim is about pairs, so each observation should be a pair at a point in time."},
       {t:"Country-years: each country in each year, coded for regime and for any war.", why:"That tests whether democracies fight less in general (the “monadic” claim), which is a different and more contested question."},
       {t:"Individual voters in democracies, from opinion surveys.", why:"Survey attitudes might help explain a mechanism, but they can’t show whether pairs of states fought."},
       {t:"One detailed case study of a single war.", why:"A case can probe the mechanism, but a claim about how rarely something happens across all pairs needs many observations."}
@@ -244,10 +244,10 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u3-l2-x1", type:"mcq", q:"Kenji is studying the 1997–98 Asian financial crisis in one country. His supervisor asks: “What is it a case of?” Which answer shows he understands the question?", options:[
-      {t:"“It’s a case of how capital flight spreads between economies with fixed exchange rates; my universe is emerging economies hit by sudden capital outflows since the 1980s.”", ok:true, why:"Right. He names the wider class (and so the universe of cases) that his findings are meant to speak to."},
+      {t:"“It’s a case of capital flight in fixed-rate economies.”", ok:true, why:"Right. A fuller answer would add: “my universe is emerging economies hit by sudden capital outflows since the 1980s.” He names the wider class (and so the universe of cases) that his findings are meant to speak to."},
       {t:"“It’s a case of the 1997–98 crisis in this country.”", why:"That only repeats the case. The question asks which wider class of events it belongs to."},
       {t:"“It’s a case of economics.”", why:"Far too broad to define a universe of cases or a fair test."},
-      {t:"“It isn’t a case of anything; it’s unique.”", why:"Every event is unique in detail, but a case study aims to learn something about a wider class. If it truly belonged to no class, there would be nothing to generalise."}
+      {t:"“It isn’t a case of anything; this crisis is completely unique.”", why:"Every event is unique in detail, but a case study aims to learn something about a wider class. If it truly belonged to no class, there would be nothing to generalise."}
     ]},
     {id:"e4u3-l2-x2", type:"sort", q:"Is each comparison a most-similar or a most-different design?", buckets:["Most-similar","Most-different"], items:[
       {t:"Two neighbouring Pacific Island states with similar size, history and economy, which voted differently on a regional agreement.", b:0, why:"Similar on many factors, different in outcome: look for the factor that differs."},
@@ -262,7 +262,7 @@ ICA.addUnit({
       ["Conditions are so unfavourable that success here is strong support","Least-likely case","Success where you least expect it is strong evidence."]
     ]},
     {id:"e4u3-l2-x4", type:"mcq", q:"Priya wants to know what makes states acquire nuclear weapons. She studies only the nine states that have them and finds that all nine had a powerful rival. What is the main problem with concluding that rivalry causes proliferation?", options:[
-      {t:"She selected on the dependent variable: without states that had rivals and didn’t build weapons, she can’t tell whether rivalry makes a difference.", ok:true, why:"Right. Many states with powerful rivals never built nuclear weapons. Only a comparison that includes them can show whether rivalry raises the chances."},
+      {t:"She selected on the dependent variable.", ok:true, why:"Right. Without states that had rivals and didn’t build weapons, she can’t tell whether rivalry makes a difference. Many states with powerful rivals never built nuclear weapons. Only a comparison that includes them can show whether rivalry raises the chances."},
       {t:"Nine cases is too few for any kind of study.", why:"Nine cases can support useful small-N work. The problem is which cases she chose, not how many."},
       {t:"She should have chosen a most-different design instead.", why:"Her cases already differ a lot. The problem is that the outcome doesn’t vary at all."},
       {t:"There is no problem; a factor shared by every case must be the cause.", why:"A factor can be shared by every case simply because it is common everywhere. You need cases without the outcome to know."}
@@ -289,7 +289,7 @@ ICA.addUnit({
       {t:"If nuclear weapons had been invented in 1800, the nineteenth century would have been peaceful.", why:"A massive rewrite with countless knock-on changes, so nothing follows clearly."}
     ]},
     {id:"e4u3-l2-x8", type:"mcq", q:"Lucía compares two states: one joined a regional organisation, one did not. They differ in regime type, income, language, alliances and geography. She concludes that regime type explains the difference. What is the main weakness?", options:[
-      {t:"With two cases that differ in many ways, any of the other differences could explain the outcome just as well.", ok:true, why:"Right. This is Lijphart’s “many variables, small N” problem. She needs cases that hold more constant, more cases, or within-case process tracing."},
+      {t:"Any other difference could explain the outcome.", ok:true, why:"Right. Her two cases differ in many ways, and any of those differences could explain the outcome just as well. This is Lijphart’s “many variables, small N” problem. She needs cases that hold more constant, more cases, or within-case process tracing."},
       {t:"She should have chosen two cases with the same outcome.", why:"A same-outcome design uses the method of agreement, which has its own limits. The weakness here is the number of rival differences."},
       {t:"Regime type can never explain foreign policy.", why:"It may well matter. The problem is that her design can’t separate it from the other differences."},
       {t:"Two cases are never enough for any research.", why:"Paired comparisons can be powerful when the cases are well matched or combined with process tracing."}
@@ -420,13 +420,13 @@ ICA.addUnit({
       {t:"Nothing at all: the Rule forbids using anything said at the meeting.", why:"The Rule explicitly allows participants to use the information they receive; it protects identities."}
     ]},
     {id:"e4u3-l3-x6", type:"mcq", q:"Mei is studying how a 2015 regional trade deal was negotiated. Why is purposive and snowball sampling of interviewees appropriate here?", options:[
-      {t:"Because she needs the specific people who took part in the negotiations, and each can point her to others who were in the room.", ok:true, why:"Right. For process tracing she needs well-placed informants, not a representative sample of the population."},
+      {t:"Because she needs particular insiders, who can name others.", ok:true, why:"Right. She needs the specific people who took part, and each can point her to others who were in the room. For process tracing she needs well-placed informants, not a representative sample of the population."},
       {t:"Because random samples are never used in political science.", why:"Random samples are common in surveys. They just don’t fit a question about what a few dozen negotiators did."},
       {t:"Because snowball samples are always unbiased.", why:"Snowball samples can be biased towards one network. She should aim to include people from every delegation and side."},
       {t:"Because she only needs to interview one person.", why:"One account is rarely enough. She should cross-check several accounts against documents."}
     ]},
     {id:"e4u3-l3-x7", type:"mcq", q:"Oluwaseun, a national of one of the countries in his study, finds that officials of a neighbouring country give him only the official line. What is the most useful reflexive response?", options:[
-      {t:"Record in his notes how his nationality may shape what officials say to him, look for other sources, and discuss this openly in his methods section.", ok:true, why:"Right. Reflexivity means noticing how your position shapes the data, adjusting the design where possible, and being transparent about it."},
+      {t:"Note how his nationality may shape answers, and report it openly.", ok:true, why:"Right. He should record this in his notes, look for other sources and discuss it in his methods section. Reflexivity means noticing how your position shapes the data, adjusting the design where possible, and being transparent about it."},
       {t:"Hide his nationality from interviewees.", why:"Deceiving participants raises serious ethical problems and could put him at risk."},
       {t:"Drop the interviews because they are biased.", why:"All interviews are shaped by context. The official line is itself data about what officials want to present."},
       {t:"Ignore it, because a good researcher’s identity never affects the research.", why:"Positionality affects access and answers in every project. Ignoring it hides a limitation from readers."}
@@ -471,7 +471,7 @@ ICA.addUnit({
         ["**UN Comtrade** (UN Statistics Division)","Trade by product and partner, annual from 1962, reported by close to 200 countries and areas","Free preview; a free account for downloads and API, with limits; paid premium for bulk files"],
         ["**SIPRI** (Stockholm International Peace Research Institute)","Military expenditure 1949–2025; transfers of major conventional arms 1950–2025","Free to download for study; commercial use needs a licence"]
       ]},
-      "The IR primer explained how UCDP and Correlates of War count conflicts ({{war-and-conflict}}), and the data track showed how to judge any dataset ({{judging-datasets}}). The habits below are the IR-specific ones.",
+      "The IR primer explained how UCDP and Correlates of War count conflicts ({{war-and-conflict}}), and the data track showed how to judge any dataset ({{judging-datasets}}). For economic series such as the World Development Indicators, Unit 14 explains where the figures come from and how their versions differ ({{imf-world-bank-data}}), and the growth arithmetic analysts use with them ({{growth-arithmetic}}). The habits below are the IR-specific ones.",
       {warn:"Versions, coverage years and terms change. Check the maintainer’s own page and record the version you used (“UCDP/PRIO Armed Conflict Dataset version 26.1”)."}
      ]},
     {h:"Read the codebook before the numbers", body:[
@@ -539,7 +539,7 @@ ICA.addUnit({
       {t:"“Alliances cause higher military spending.” Critic: “A shared threat makes states both form alliances and spend more.”", b:0, why:"The threat is a third factor behind both."}
     ]},
     {id:"e4u3-l4-x4", type:"mcq", q:"A regression of dyad-years finds a negative, statistically significant coefficient on “both countries are members of the same regional organisation”, holding distance, trade and regime type constant. Which reading is most accurate?", options:[
-      {t:"In these data, pairs in the same organisation had a lower estimated chance of conflict on average, among pairs alike on the measured controls; this does not by itself show that membership caused the lower risk.", ok:true, why:"Right. It is an adjusted association. Unmeasured factors, or peaceful pairs being more likely to join together, could explain it."},
+      {t:"An adjusted association, not proof that membership causes peace.", ok:true, why:"Right. In these data, pairs in the same organisation had a lower estimated chance of conflict on average, among pairs alike on the measured controls. That alone doesn’t show that membership caused the lower risk. Unmeasured factors, or peaceful pairs being more likely to join together, could explain it."},
       {t:"Joining a regional organisation causes peace between any two members.", why:"A regression on observational data can’t establish cause on its own, and an average says nothing certain about any particular pair."},
       {t:"Because the result is significant, the effect must be large.", why:"Significance concerns uncertainty, not size. Check the coefficient and its practical meaning."},
       {t:"The controls guarantee that nothing else could explain the result.", why:"Controls only hold constant what was measured. Omitted factors can still bias the estimate."}
@@ -567,7 +567,7 @@ ICA.addUnit({
       {t:"No case: a good regression makes case studies unnecessary.", why:"A regression can’t show the mechanism inside a case, which is exactly what the case study adds."}
     ]},
     {id:"e4u3-l4-x8", type:"mcq", q:"A regional organisation admitted three new members in one year. Ana wants to know whether membership increased their trade with existing members. Which design gives the most convincing causal estimate?", options:[
-      {t:"Compare how trade changed for the new members before and after joining with how it changed, over the same years, for similar non-members (difference-in-differences).", ok:true, why:"Right. Comparing changes in both groups removes stable differences between them and shared trends, as long as the two groups would otherwise have moved in parallel."},
+      {t:"Difference-in-differences: compare members’ and similar non-members’ changes.", ok:true, why:"Right. Compare how trade changed for the new members before and after joining with how it changed, over the same years, for similar non-members. Comparing changes in both groups removes stable differences between them and shared trends, as long as the two groups would otherwise have moved in parallel."},
       {t:"Compare the new members’ trade after joining with all non-members’ trade in the same year.", why:"Members and non-members may have differed long before joining. A single after-only comparison can’t separate membership from those differences."},
       {t:"Look only at whether the new members’ trade rose after joining.", why:"Trade might have risen anyway, because of a global boom. Without a comparison group, you can’t tell."},
       {t:"Ask officials whether membership increased trade.", why:"Interviews can reveal mechanisms, but officials’ impressions are not an estimate of the effect."}
@@ -721,7 +721,7 @@ ICA.addUnit({
       ["Conclusion","Gives the answer, its implications, limits and future research","It closes the loop opened in the introduction."]
     ]},
     {id:"e4u3-l5-x7", type:"mcq", q:"A local research assistant arranged most of Ana’s interviews, translated them and helped interpret what people meant. What should Ana do when she writes up?", options:[
-      {t:"Acknowledge the assistant’s contribution as agreed with them, and discuss co-authorship if their intellectual contribution was substantial, while protecting their identity if naming them would be risky.", ok:true, why:"Right. Fair credit matters, and so does safety: some assistants want to be named, others must not be."},
+      {t:"Credit the assistant as agreed with them, protecting them if needed.", ok:true, why:"Right. She should also discuss co-authorship if their intellectual contribution was substantial, and protect their identity if naming them would be risky. Fair credit matters, and so does safety: some assistants want to be named, others must not be."},
       {t:"Leave the assistant out, because only the thesis author did research.", why:"Erasing the work of local collaborators is a long-criticised problem in international research."},
       {t:"Name the assistant in full in every chapter, without asking.", why:"In some settings being named could put the assistant at risk. Ask first."},
       {t:"Pay the assistant less, because they are local.", why:"Fair pay is part of ethical research practice."}
@@ -741,6 +741,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u3-q02","e4u3-q06","e4u3-q11","e4u3-q14","e4u3-q17","e4u3-q21","e4u3-q24","e4u3-q28","e4u3-q31","e4u3-q35","e4u3-q39","e4u3-q43"],
+  cpBank:[
+   {id:"e4u3-cp01", lesson:"e4u3-l1", level:1, q:"Across 30 countries, those with more university graduates show more public support for the UN. Jun wants to claim that graduates themselves support the UN more. What evidence does he need?", options:[
+     {t:"The same country averages, but for 60 countries instead of 30", why:"More countries still give only country averages. However many there are, they can’t show which individuals hold the view: that is the ecological fallacy."},
+     {t:"A survey recording each person’s education and view of the UN", ok:true, why:"Right. His claim is about individuals, so he needs individual-level data. Moving from country averages to individuals is the ecological fallacy."},
+     {t:"The same country averages, collected every year for 30 years", why:"A pattern that lasts over time is still a pattern across countries. It can’t show whether the graduates are the supporters."},
+     {t:"A close case study of the country with the most graduates", why:"That country’s national figures still mix graduates and non-graduates. The problem is the level of the data, not the number of cases."}]},
+   {id:"e4u3-cp02", lesson:"e4u3-l1", level:3, q:"Ana writes: “A state is a great power partly because other great powers treat it as one.” A classmate objects: “It grew strong before they did, so their treatment can’t be the cause.” What is the best reply?", options:[
+     {t:"The classmate is right: a claim is only valid if the cause it names comes before its effect", why:"That applies to causal claims. Ana’s claim is about what great-power status consists of, which is a different kind of claim."},
+     {t:"Ana should settle it by running a regression of great-power status on how others treat states", why:"A regression tests causal links across cases. A claim about what makes something what it is is not settled that way."},
+     {t:"Ana’s claim is normative, about what should be, so it needs no evidence at all", why:"It isn’t a “should” claim, and even normative claims are argued with reasons. Ana is describing what great-power status is made of."},
+     {t:"It is a constitutive claim about what the status is, so asking which came first misses the point", ok:true, why:"Right. Wendt distinguished causal claims (X brought about Y) from constitutive claims (what makes Y what it is). Judging one by the other’s standards is a common seminar mistake."}]},
+   {id:"e4u3-cp03", lesson:"e4u3-l1", level:3, q:"A study of country-years finds that democracies are involved in wars about as often as other states. Leila says this refutes the democratic peace. What is the best response?", options:[
+     {t:"The democratic peace is mainly a dyadic claim about pairs; this tests the monadic claim, which needs different units and is more contested", ok:true, why:"Right. This links Lesson 1 and Lesson 4: the unit must match the claim. Pairs of democracies rarely fight each other, a finding tested with dyad-years, not country-years."},
+     {t:"She is right: any war involving a democracy refutes the democratic peace", why:"Democracies have fought many wars against non-democracies. The core claim is only that pairs of democracies rarely fight each other."},
+     {t:"Country-years can never be used in IR, so the study shows nothing", why:"Country-years are the most common unit in cross-national data. They suit claims about countries in general, such as the monadic claim."},
+     {t:"Correlation is not causation, so no study can bear on the democratic peace", why:"That goes too far. Large-N patterns can test whether a claim holds; the issue here is that the study tests a different claim."}]},
+   {id:"e4u3-cp04", lesson:"e4u3-l2", level:1, q:"Three states joined the same regional security pact. One joined after a border war, one to win trade access, and one after a change of government. Which problem for Mill’s method of agreement does this show?", options:[
+     {t:"Concept stretching: “security pact” has been widened too far", why:"Concept stretching is widening a concept until it means little. Here the issue is that different causes led to the same outcome."},
+     {t:"The ecological fallacy: group patterns are read as individual ones", why:"The ecological fallacy is moving from group patterns to individuals. Nothing here does that."},
+     {t:"Equifinality: different causes can produce the same outcome", ok:true, why:"Right. The method of agreement looks for one shared cause, but here three different roads led to the same result."},
+     {t:"Low intercoder reliability: two coders would code the cases differently", why:"Intercoder reliability is about whether two coders agree when coding texts. It doesn’t apply to this comparison."}]},
+   {id:"e4u3-cp05", lesson:"e4u3-l2", level:2, q:"Hiro’s theory says human-rights norms shape state behaviour. He tests it on a military government during a security crisis, where norms should matter least. Norms still shaped its choices. What does this case offer?", options:[
+     {t:"A typical case, which mainly shows how the mechanism usually works across many states", why:"A typical case fits the general pattern well. Hiro chose a case where his theory should struggle, which is a different purpose."},
+     {t:"A most-likely case, which would badly damage the theory if it had failed here", why:"A most-likely case is one where the theory should certainly work. This is the opposite situation."},
+     {t:"Nothing much, because a single case can never support or damage a theory", why:"Crucial cases are valuable precisely because one hard test can strongly support or damage a theory."},
+     {t:"A least-likely case: strong support, as the theory worked where it should struggle", ok:true, why:"Right. A least-likely case is one of Eckstein’s crucial cases. If a theory works even here, that is strong support."}]},
+   {id:"e4u3-cp06", lesson:"e4u3-l2", level:3, q:"Explanation A requires that the foreign minister was briefed on a warning before she decided. Mei finds no record of a briefing in the ministry file. What is the best next step?", options:[
+     {t:"Drop explanation A at once, because it has failed the hoop test", why:"A hoop test fails only if the required evidence is shown to be absent. An empty file is an archival silence, not proof that no briefing happened."},
+     {t:"Look for other sources, such as diaries, memoirs or interviews, because a gap in the file is not proof the briefing never happened", ok:true, why:"Right. This combines Lesson 2 and Lesson 3: a hoop test needs reliable evidence, and archives have silences at every stage. Other sources can settle it."},
+     {t:"Treat the empty file as a smoking gun for explanation A", why:"A smoking gun is evidence that strongly supports an explanation. A missing record can’t support A; at most it raises a question."},
+     {t:"Assume the briefing happened, because ministers are always briefed", why:"That replaces evidence with an assumption. The point of the hoop test is to check, not to assume."}]},
+   {id:"e4u3-cp07", lesson:"e4u3-l3", level:1, q:"A prime minister’s speech quotes a 1950s treaty and answers, point by point, an essay by an opposition leader. Which idea says you should read those texts alongside the speech?", options:[
+     {t:"Predication", why:"Predication, one of Doty’s tools, asks which qualities a text attaches to each subject. It doesn’t tell you to read other texts."},
+     {t:"Manifest content", why:"Manifest content is what is on the surface of a text, such as whether a word appears. It is a coding idea, not a reason to read related texts."},
+     {t:"Intertextuality", ok:true, why:"Right. Hansen stressed intertextuality: texts borrow from and answer other texts, so a speech must be read with the texts it quotes, echoes or rebuts."},
+     {t:"The Chatham House Rule", why:"The Chatham House Rule governs how you may use what is said at a meeting. It is not a method for reading texts."}]},
+   {id:"e4u3-cp08", lesson:"e4u3-l3", level:2, q:"In an interview, a retired official changes the subject every time Kofi asks about one 2009 decision, but talks freely about everything else. What does Lee Ann Fujii’s work suggest?", options:[
+     {t:"The evasion is itself data about what is still sensitive to say; note it and check documents and other accounts", ok:true, why:"Right. Fujii argued that evasions, denials and silences show what people feel safe saying. Combining them with documents and other accounts (triangulation) makes the evidence stronger."},
+     {t:"Delete that part of the interview, because only direct answers count as evidence", why:"Fujii argued the opposite: evasions and silences are data too."},
+     {t:"Conclude that the 2009 decision must have been illegal", why:"An evasion can have many reasons, such as loyalty, fear or poor memory. It is a clue to follow up, not proof of wrongdoing."},
+     {t:"Keep pressing until he answers, because officials owe researchers answers", why:"Pressing a participant ignores consent and the right to refuse. Elites can decline to answer, and their refusal is informative."}]},
+   {id:"e4u3-cp09", lesson:"e4u3-l4", level:2, q:"To study whether income affects civil conflict, a researcher uses rainfall shocks. Rainfall changes farm income and is assumed to have no other route to conflict. Which design is this?", options:[
+     {t:"Difference-in-differences", why:"Difference-in-differences compares change over time in an affected group with change in a similar unaffected group. Here rainfall is used to shift income."},
+     {t:"Nested analysis", why:"Nested analysis uses a large-N model to choose cases for close study. It is not a way of making a cause as good as random."},
+     {t:"Process tracing", why:"Process tracing tests a mechanism with evidence inside one case. This design uses a factor across many cases."},
+     {t:"An instrumental variable", ok:true, why:"Right. An instrument shifts X (income), is as good as random, and has no other route to Y. The last assumption should be questioned: could rain affect fighting directly?"}]},
+   {id:"e4u3-cp10", lesson:"e4u3-l4", level:2, q:"A table on 40 countries over 50 years treats its 2,000 country-years as independent observations and reports very small standard errors. Why should a reader be cautious?", options:[
+     {t:"Because 2,000 observations are far too few for a regression on 40 countries to be reliable", why:"2,000 observations is plenty for a regression. The problem is that they are not independent of each other."},
+     {t:"Because years of one country are not independent, so the real uncertainty is larger", ok:true, why:"Right. Observations of the same country across years are linked, so serious studies adjust their standard errors. A table that doesn’t can look more certain than it is."},
+     {t:"Because very small standard errors prove that the effect of the variable is large", why:"Small standard errors are about precision, not size. A precise estimate can still be a small effect."},
+     {t:"Because country-years suit only questions about pairs of states, not single countries", why:"Pairs of states need dyad-years. Country-years are the normal unit for questions about countries."}]},
+   {id:"e4u3-cp11", lesson:"e4u3-l5", level:3, q:"Lucía promised an interviewee anonymity. Her thesis quotes “the deputy director of the water ministry in a small island state, who took up the post in 2019”. What is the problem?", options:[
+     {t:"None: no name is given, so anonymity is kept", why:"In a small ministry, a job title, place and start year can point to one person. Leaving out the name is not enough."},
+     {t:"Under the Chatham House Rule she may give the affiliation as long as she leaves out the name", why:"The Chatham House Rule says neither the identity nor the affiliation of a speaker may be revealed, and here she also promised anonymity."},
+     {t:"The details could identify the person, so she should remove or blur them", ok:true, why:"Right. This combines Lesson 3 and Lesson 5: anonymity terms must be kept in practice, and what you publish can still harm people after you leave. Think about identifying details in quotes."},
+     {t:"She should add the name, because elite interviews are always on the record", why:"Attribution terms are agreed in advance: on the record, not for attribution, or background only. Elite interviews are not automatically on the record."}]},
+   {id:"e4u3-cp12", lesson:"e4u3-l5", level:2, q:"Kofi’s draft says: “UCDP data show that armed conflicts rose last year.” Which revision best follows the unit’s advice?", options:[
+     {t:"Name the exact dataset and version used, and date the claim (“as of November 2026”)", ok:true, why:"Right. This combines Lesson 4 and Lesson 5: maintainers revise data, so record the version, and date anything that changes so readers know when it was true."},
+     {t:"Remove the name UCDP from the sentence, because naming data sources sounds informal", why:"Citing the dataset is required by the maintainers and by academic standards. Readers need to know where the figure came from."},
+     {t:"Switch to Correlates of War, because it is the only official war dataset", why:"Neither dataset is “official”. They measure different things: UCDP counts conflicts from 25 battle-related deaths, Correlates of War counts wars from 1,000."},
+     {t:"Add a word such as “clearly” or “sharply” so that the claim sounds stronger", why:"Boosting a claim doesn’t make it better sourced. The missing pieces are the version and the date."}]},
+  ],
   codex:[
    {id:"research-puzzles", title:"Puzzles and research questions in IR", aka:["research puzzle","puzzle-driven research","how-possible questions"], tags:["research methods","international relations","research design"],
     summary:"How IR researchers turn a topic into a puzzle: a question built around a surprise, with several plausible answers, and a clear question type.",
@@ -1483,7 +1545,7 @@ ICA.addUnit({
      {t:"A descriptive count of how many speeches mentioned the border", why:"Counting mentions might help, but the question asks how the portrayal made a policy seem sensible."}
    ]},
    {id:"e4u3-q03", lesson:"e4u3-l1", level:1, q:"In Hollis and Smith’s terms, what is the difference between explaining and understanding?", options:[
-     {t:"Explaining looks from the outside for causes and regularities; understanding reconstructs from the inside what actions meant to the actors", ok:true, why:"That is their “two stories”: an outsider’s causal story and an insider’s interpretive story."},
+     {t:"Explaining seeks causes; understanding seeks actors’ meanings", ok:true, why:"Explaining looks from the outside for causes and regularities; understanding reconstructs from the inside what actions meant to the actors. That is their “two stories”: an outsider’s causal story and an insider’s interpretive story."},
      {t:"Explaining is for history and understanding is for economics", why:"Both stories are told across the social sciences; the difference is the kind of account, not the discipline."},
      {t:"Explaining uses theory and understanding doesn’t", why:"Interpretive work also uses theory; it is a different kind of theory and evidence."},
      {t:"There is no real difference; they are two words for the same thing", why:"Hollis and Smith argued the two rest on different assumptions and don’t merge neatly."}
@@ -1495,13 +1557,13 @@ ICA.addUnit({
      {t:"Methodology: how many interviews can I afford?", why:"That is a practical planning question. Methodology is the logic linking evidence to claims."}
    ]},
    {id:"e4u3-q05", lesson:"e4u3-l1", level:2, q:"A study counts every country holding any election as a “democracy”, including one-party states. Which problem does Sartori’s work warn about?", options:[
-     {t:"Concept stretching: the concept has lost the attributes that distinguish democracies from other regimes", ok:true, why:"Widening the concept to cover nearly every regime empties it of meaning."},
+     {t:"Concept stretching", ok:true, why:"The concept has lost the attributes that distinguish democracies from other regimes. Widening it to cover nearly every regime empties it of meaning."},
      {t:"The ecological fallacy", why:"That concerns inferring individual traits from group data, which isn’t happening here."},
      {t:"Reverse causality", why:"No causal claim is being made here; the problem is the definition."},
      {t:"Low intercoder reliability", why:"Coders may agree perfectly on a bad definition. The issue is the concept itself."}
    ]},
    {id:"e4u3-q06", lesson:"e4u3-l1", level:2, q:"In one year a government fights a rebel group, causing about 300 battle-related deaths. How would UCDP and Correlates of War treat it?", options:[
-     {t:"UCDP records it as an armed conflict (25 or more deaths); it is below the 1,000-death threshold Correlates of War uses for a war", ok:true, why:"The two projects use different thresholds, which is why their counts differ."},
+     {t:"UCDP records it; Correlates of War doesn’t", ok:true, why:"UCDP records an armed conflict at 25 or more deaths; 300 is below the 1,000-death threshold Correlates of War uses for a war. The two projects use different thresholds, which is why their counts differ."},
      {t:"Both record it as a war", why:"Neither does: 300 deaths is below the 1,000-death level both use for “war”."},
      {t:"Neither records it at all", why:"UCDP’s threshold for an armed conflict is 25 battle-related deaths a year, so UCDP records it."},
      {t:"Correlates of War records it, but UCDP doesn’t", why:"It is the other way round: UCDP’s threshold is lower."}
@@ -1513,8 +1575,8 @@ ICA.addUnit({
      {t:"The speech", why:"Speeches could help with mechanisms, but they can’t show how often pairs of states clashed."}
    ]},
    {id:"e4u3-q08", lesson:"e4u3-l1", level:3, q:"A thesis says: “I adopt an interpretive approach.” Its methods chapter then sets out hypotheses about independent and dependent variables, tested by regression. What would an examiner most likely say?", options:[
-     {t:"The philosophy and the methods don’t fit: either the approach or the design needs to change so they are consistent", ok:true, why:"Examiners look for coherence between the stated philosophy, question and methods."},
-     {t:"Interpretive research never uses evidence", why:"Interpretive research uses rich evidence; it just interprets meanings rather than estimating causal effects."},
+     {t:"The philosophy and the methods don’t fit together", ok:true, why:"Either the approach or the design needs to change so they are consistent. Examiners look for coherence between the stated philosophy, question and methods."},
+     {t:"Interpretive research never uses evidence of any kind", why:"Interpretive research uses rich evidence; it just interprets meanings rather than estimating causal effects."},
      {t:"Regression is forbidden in IR theses", why:"Regression is widely used. The problem is the mismatch with the stated approach."},
      {t:"Nothing: you can claim any philosophy you like", why:"A stated philosophy should guide the design. A mismatch suggests the author hasn’t thought it through."}
    ]},
@@ -1526,9 +1588,9 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e4u3-q10", lesson:"e4u3-l2", level:1, q:"According to John Gerring (2004), a case study is…", options:[
-     {t:"an intensive study of a single unit for the purpose of understanding a larger class of similar units", ok:true, why:"That is Gerring’s definition: the case is studied to learn about a wider class."},
+     {t:"an intensive study of one unit to understand a wider class", ok:true, why:"That is Gerring’s definition: a single unit is studied to understand a larger class of similar units."},
      {t:"any study with fewer than ten interviews", why:"A case study is defined by its purpose and depth, not by a number of interviews."},
-     {t:"a description of an event with no wider purpose", why:"Gerring’s point is that case studies aim to understand a larger class."},
+     {t:"a description of a single event with no wider purpose at all", why:"Gerring’s point is that case studies aim to understand a larger class."},
      {t:"a random sample of countries", why:"Random samples are for large-N statistical studies; cases are usually chosen on purpose."}
    ]},
    {id:"e4u3-q11", lesson:"e4u3-l2", level:2, q:"Two neighbouring states have similar size, economy, history and alliances, but only one joined a regional agreement. Lucía compares them to find what differs. Which design is this?", options:[
@@ -1538,9 +1600,9 @@ ICA.addUnit({
      {t:"A deviant case study", why:"A deviant case breaks a general pattern; this is a paired comparison."}
    ]},
    {id:"e4u3-q12", lesson:"e4u3-l2", level:1, q:"Which is a well-known limit of Mill’s methods for social research?", options:[
-     {t:"They assume a single cause, but social outcomes often have several possible causes that also interact", ok:true, why:"Plural and interacting causes (equifinality, conjunctural causation) defeat the simple methods. Mill himself doubted they suited social questions."},
+     {t:"They assume one cause where there are often several", ok:true, why:"Social outcomes often have several possible causes that also interact. Plural and interacting causes (equifinality, conjunctural causation) defeat the simple methods. Mill himself doubted they suited social questions."},
      {t:"They require thousands of cases", why:"They are designed for a few cases, which is part of why they struggle."},
-     {t:"They can only be used with survey data", why:"They are logics of comparison, usable with any evidence."},
+     {t:"They can only be used with survey data from large samples", why:"They are logics of comparison, usable with any evidence."},
      {t:"They were invented after the Second World War", why:"Mill set them out in *A System of Logic* in 1843."}
    ]},
    {id:"e4u3-q13", lesson:"e4u3-l2", level:2, q:"A theory predicts that rich, stable democracies will always join regional human rights courts. Hana studies one rich, stable democracy that stayed out. Which kind of case is this?", options:[
@@ -1550,25 +1612,25 @@ ICA.addUnit({
      {t:"An irrelevant case", why:"Cases that break a theory’s predictions in favourable conditions are among the most informative."}
    ]},
    {id:"e4u3-q14", lesson:"e4u3-l2", level:3, q:"Sione wants to know what causes military coups. He studies only ten countries that had coups and finds all had economic crises. Why can’t he conclude that crises cause coups?", options:[
-     {t:"He selected on the dependent variable: without countries that had crises and no coup, he can’t tell whether crises make coups more likely", ok:true, why:"If crises are common everywhere, they will appear in every coup case whether or not they matter."},
+     {t:"He selected on the dependent variable", ok:true, why:"Without countries that had crises and no coup, he can’t tell whether crises make coups more likely. If crises are common everywhere, they will appear in every coup case whether or not they matter."},
      {t:"Ten cases are never enough for any study", why:"Ten cases can support useful work. The problem is that the outcome doesn’t vary."},
      {t:"He should have used a most-similar design with ten identical countries", why:"Identical countries don’t exist, and the core problem is still the lack of cases without coups."},
      {t:"Economic data are always unreliable", why:"Data quality matters, but it isn’t the main flaw here."}
    ]},
    {id:"e4u3-q15", lesson:"e4u3-l2", level:1, q:"In process tracing, what does a hoop test do?", options:[
-     {t:"If the explanation fails it, the explanation is eliminated; passing keeps it alive but doesn’t prove it", ok:true, why:"Hoop evidence is necessary for the explanation but not unique to it."},
+     {t:"Failing it eliminates the explanation", ok:true, why:"Passing keeps the explanation alive but doesn’t prove it. Hoop evidence is necessary for the explanation but not unique to it."},
      {t:"Passing it proves the explanation beyond doubt", why:"That would be a doubly decisive or, in a weaker form, a smoking-gun test."},
      {t:"It barely changes confidence either way", why:"That describes a straw-in-the-wind test."},
      {t:"It measures intercoder reliability", why:"That is a content-analysis check, not a process-tracing test."}
    ]},
    {id:"e4u3-q16", lesson:"e4u3-l2", level:2, q:"Explanation A says a minister resigned because of a corruption inquiry. A private letter written the day before, saying “I must go before the inquiry reports”, is found. Leaders rarely leave such letters. What kind of evidence is it for A?", options:[
-     {t:"A smoking gun: finding it strongly supports A, though not finding it would not have ruled A out", ok:true, why:"The letter is close to unique to A, but not certain to exist even if A is true."},
+     {t:"A smoking gun: strong support for A if found", ok:true, why:"Not finding it would not have ruled A out. The letter is close to unique to A, but not certain to exist even if A is true."},
      {t:"A hoop test: A must pass it to survive", why:"A could be true without such a letter, so it isn’t required."},
      {t:"A straw in the wind: weak either way", why:"A direct statement of the motive just before the event is much stronger than that."},
-     {t:"Not evidence at all, because it is private", why:"Private documents are often the most revealing evidence, after source criticism."}
+     {t:"Not evidence at all, because it is a private letter", why:"Private documents are often the most revealing evidence, after source criticism."}
    ]},
    {id:"e4u3-q17", lesson:"e4u3-l2", level:3, q:"Dmitri’s case study shows that every step of his favoured explanation can be found in the documents. A reviewer is unconvinced. What is the most likely reason?", options:[
-     {t:"He didn’t set out rival explanations and the evidence each predicts, so the same documents might fit another story equally well", ok:true, why:"Process tracing gains its strength from comparing rival explanations against evidence that distinguishes them."},
+     {t:"He didn’t test his story against rival explanations", ok:true, why:"Without rivals and the evidence each predicts, the same documents might fit another story equally well. Process tracing gains its strength from comparing rival explanations against evidence that distinguishes them."},
      {t:"Documents can never be used in process tracing", why:"Documents are central to process tracing."},
      {t:"He should have used a regression instead", why:"Within-case evidence is the right kind for process tracing; the problem is the missing rivals."},
      {t:"Finding evidence for every step is a sign of fabrication", why:"Not necessarily. The issue is whether the evidence discriminates between explanations."}
@@ -1581,7 +1643,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 3 ---- */
    {id:"e4u3-q19", lesson:"e4u3-l3", level:1, q:"What is the main difference between content analysis and discourse analysis?", options:[
-     {t:"Content analysis systematically counts features of texts with repeatable rules; discourse analysis interprets how texts produce meanings that make actions thinkable", ok:true, why:"One counts and compares; the other interprets meaning-making. Many projects use both."},
+     {t:"One counts features by rules; the other interprets meanings", ok:true, why:"Content analysis systematically counts features of texts with repeatable rules; discourse analysis interprets how texts produce meanings that make actions thinkable. Many projects use both."},
      {t:"Content analysis studies speeches and discourse analysis studies treaties", why:"Both can study any kind of text."},
      {t:"Discourse analysis needs computers and content analysis doesn’t", why:"Content analysis is more often computer-assisted; discourse analysis is usually close reading."},
      {t:"They are the same method with different names", why:"They rest on different aims and standards."}
@@ -1599,20 +1661,20 @@ ICA.addUnit({
      {t:"Because simple agreement counts each speech twice", why:"It doesn’t. 45 ÷ 60 is 75%."}
    ]},
    {id:"e4u3-q22", lesson:"e4u3-l3", level:1, q:"What is JACAR?", options:[
-     {t:"The Japan Center for Asian Historical Records, an online archive under the National Archives of Japan that opened in 2001", ok:true, why:"It provides digitised records from the National Archives, the Foreign Ministry’s Diplomatic Archives and the Defence Ministry’s military history collections."},
-     {t:"A conflict dataset maintained in Sweden", why:"That describes UCDP."},
+     {t:"An online archive of Japanese historical records", ok:true, why:"It is the Japan Center for Asian Historical Records, under the National Archives of Japan, opened in 2001. It provides digitised records from the National Archives, the Foreign Ministry’s Diplomatic Archives and the Defence Ministry’s military history collections."},
+     {t:"A conflict dataset maintained by a university in Sweden", why:"That describes UCDP."},
      {t:"The US State Department’s documentary series", why:"That is *Foreign Relations of the United States* (FRUS)."},
      {t:"A trade database run by the UN", why:"That is UN Comtrade."}
    ]},
    {id:"e4u3-q23", lesson:"e4u3-l3", level:3, q:"Tomás finds an ambassador’s cable saying the host government “warmly welcomed” a proposal, and writes that the host government supported it. What should a careful historian do first?", options:[
-     {t:"Ask who wrote the cable, for whom and why, and check it against other sources, such as the host government’s own records", ok:true, why:"The cable shows what the ambassador reported, possibly to please his own ministry. Source criticism and multi-archival checks come first."},
+     {t:"Ask who wrote it and why, and check other sources", ok:true, why:"Ask for whom it was written, and check it against sources such as the host government’s own records. The cable shows what the ambassador reported, possibly to please his own ministry. Source criticism and multi-archival checks come first."},
      {t:"Accept it, because diplomatic cables are always accurate", why:"Cables are written by people with interests and audiences; they need source criticism."},
      {t:"Discard it, because cables are always biased", why:"Biased sources can still be valuable evidence, read critically."},
      {t:"Count how many times the word “welcomed” appears in the file", why:"Counting words won’t tell him whether the report was accurate."}
    ]},
    {id:"e4u3-q24", lesson:"e4u3-l3", level:2, q:"Priya finds no record of any objection to a policy in a foreign ministry file. What can she conclude?", options:[
-     {t:"Only that no objection appears in this file; objections may have been oral, filed elsewhere, destroyed or still closed", ok:true, why:"An archival silence is not proof of absence. Trouillot showed how silences enter at every stage of making records and histories."},
-     {t:"That nobody objected", why:"Absence from one file can’t establish that nothing happened."},
+     {t:"Only that no objection appears in this file", ok:true, why:"Objections may have been oral, filed elsewhere, destroyed or still closed. An archival silence is not proof of absence. Trouillot showed how silences enter at every stage of making records and histories."},
+     {t:"That nobody in the ministry objected to the policy", why:"Absence from one file can’t establish that nothing happened."},
      {t:"That the file was falsified", why:"There is no evidence of that; silences are normal in archives."},
      {t:"That the archive is useless", why:"The file can still tell her much; she just can’t infer absence from silence."}
    ]},
@@ -1623,7 +1685,7 @@ ICA.addUnit({
      {t:"Nothing: the information can’t be used at all", why:"The Rule explicitly allows participants to use the information they receive."}
    ]},
    {id:"e4u3-q26", lesson:"e4u3-l3", level:3, q:"Ana interviews several retired negotiators, who all describe their own country’s side as flexible and the other side as rigid. What is the best way to treat these accounts?", options:[
-     {t:"As evidence of how each side remembers and presents the talks, to be checked against documents and the other side’s accounts", ok:true, why:"Elite accounts are valuable but can be self-serving; triangulation and attention to what they choose to say are key."},
+     {t:"As each side’s memory of the talks, to be cross-checked", ok:true, why:"They show how each side remembers and presents the talks, and should be checked against documents and the other side’s accounts. Elite accounts are valuable but can be self-serving; triangulation and attention to what they choose to say are key."},
      {t:"As a reliable record, because they were in the room", why:"Being present doesn’t prevent memory errors, hindsight or self-justification."},
      {t:"As worthless, because elites always lie", why:"Elite interviews are an important source; they just need cross-checking."},
      {t:"As proof that the other side was rigid, since several people said so", why:"Several people from the same side can share the same perspective; agreement helps only if the sources are independent."}
@@ -1648,50 +1710,50 @@ ICA.addUnit({
      {t:"A country’s total military budget", why:"That is in SIPRI’s Military Expenditure Database."}
    ]},
    {id:"e4u3-q30", lesson:"e4u3-l4", level:2, q:"Country A reports exporting goods worth 200 million dollars to Country B; B reports importing 215 million from A in the same year. What is the most likely explanation?", options:[
-     {t:"Normal mirror-statistics differences, for example imports valued with freight and insurance (CIF) and exports without (FOB), plus timing and classification differences", ok:true, why:"UN Comtrade notes that partner figures usually don’t match for these reasons."},
-     {t:"One of the governments must be lying", why:"Gaps of this size are common and have ordinary technical causes."},
+     {t:"Normal mirror-statistics differences", ok:true, why:"For example, imports are valued with freight and insurance (CIF) and exports without (FOB), and timing and classification differ. UN Comtrade notes that partner figures usually don’t match for these reasons."},
+     {t:"One of the two governments must be lying about its trade", why:"Gaps of this size are common and have ordinary technical causes."},
      {t:"The goods were destroyed in transit", why:"Possible in rare cases, but the usual reasons are valuation, timing and classification."},
      {t:"Comtrade made a calculation error", why:"Comtrade publishes what countries report; differences between reporters are expected."}
    ]},
    {id:"e4u3-q31", lesson:"e4u3-l4", level:3, q:"A study finds that countries receiving more foreign aid grow more slowly, and concludes that aid harms growth. Which objection is strongest?", options:[
-     {t:"Selection: aid tends to go to countries already in difficulty, so recipients may differ from non-recipients before any aid arrives", ok:true, why:"If donors target struggling economies, recipients were different before any aid arrived, so the comparison mixes aid’s effect with those prior differences. (The same point can be put as reverse causality: slow growth attracts aid.)"},
+     {t:"Selection: aid goes to countries already in difficulty", ok:true, why:"If donors target struggling economies, recipients were different before any aid arrived, so the comparison mixes aid’s effect with those prior differences. (The same point can be put as reverse causality: slow growth attracts aid.)"},
      {t:"Aid data are never published", why:"Aid data are widely published, for example in the World Development Indicators."},
      {t:"Growth can’t be measured", why:"Growth is measured routinely; the problem is the causal inference."},
      {t:"There is no objection: a correlation in many countries proves causation", why:"Correlation across many cases still faces selection, confounding and reverse causality."}
    ]},
    {id:"e4u3-q32", lesson:"e4u3-l4", level:2, q:"A multiple regression reports a coefficient of −0.04 on “shared membership of a regional organisation”, holding distance, trade and regime type constant. What does “holding constant” mean here?", options:[
-     {t:"The estimate compares pairs of countries that are alike on distance, trade and regime type, so those measured factors are not driving it", ok:true, why:"Controls make the comparison like with like on the measured factors, though not on unmeasured ones."},
+     {t:"The estimate compares pairs alike on those measured factors", ok:true, why:"Those measured factors are then not driving the estimate. Controls make the comparison like with like on the measured factors, though not on unmeasured ones."},
      {t:"Distance, trade and regime type did not change during the study", why:"They can vary across cases and years; the model adjusts for them statistically."},
      {t:"Those factors have no effect on conflict", why:"They may have large effects; holding them constant separates their influence from membership’s."},
      {t:"Every possible cause has now been accounted for", why:"Only measured factors are held constant; unmeasured confounders remain possible."}
    ]},
    {id:"e4u3-q33", lesson:"e4u3-l4", level:2, q:"Keshk, Reuveny and Pollins (2010) argued about trade and conflict. What was their main claim?", options:[
-     {t:"That the effect runs mainly from conflict to trade (conflict reduces trade), while evidence that trade brings peace is weak", ok:true, why:"They stressed reverse causality; Hegre, Oneal and Russett (2010) replied that trade does promote peace."},
+     {t:"That the effect runs mainly from conflict to trade", ok:true, why:"Conflict reduces trade, while evidence that trade brings peace is weak. They stressed reverse causality; Hegre, Oneal and Russett (2010) replied that trade does promote peace."},
      {t:"That trade always prevents war", why:"That is the strong liberal view they challenged."},
      {t:"That trade and conflict are unrelated in every dataset", why:"They found a strong link from conflict to trade."},
      {t:"That democracy has no effect on anything", why:"Their argument concerned the direction of the trade–conflict link."}
    ]},
    {id:"e4u3-q34", lesson:"e4u3-l4", level:1, q:"Which statement about statistical significance is correct?", options:[
-     {t:"A significant result may still be small; significance concerns uncertainty, not importance", ok:true, why:"With large datasets, tiny effects can be statistically significant."},
+     {t:"A significant result may still be small", ok:true, why:"Significance concerns uncertainty, not importance. With large datasets, tiny effects can be statistically significant."},
      {t:"A significant result proves causation", why:"Significance says nothing about whether a design rules out confounding or reverse causality."},
      {t:"A significant result is always large", why:"Size and significance are different things."},
      {t:"Significance means the data were collected correctly", why:"Significance tests assume the data are sound; they don’t check it."}
    ]},
    {id:"e4u3-q35", lesson:"e4u3-l4", level:3, q:"In nested analysis, Fatima’s large-N model fits poorly: many countries are far from the regression line. What does Lieberman recommend next?", options:[
-     {t:"Study off-the-line (deviant) cases to discover what the model is missing, then return to the large-N analysis", ok:true, why:"When the model is weak, model-building case studies of poorly predicted cases help improve it."},
+     {t:"Study the deviant cases far from the line", ok:true, why:"Off-the-line cases show what the model is missing; then return to the large-N analysis. When the model is weak, model-building case studies of poorly predicted cases help improve it."},
      {t:"Study only on-the-line cases to confirm the model", why:"That suits a robust model; with a poor fit, the priority is to find missing factors."},
      {t:"Abandon the research entirely", why:"A poor fit is information; nested analysis is designed to use it."},
      {t:"Delete the cases far from the line", why:"Removing awkward cases to improve the fit would bias the results."}
    ]},
    {id:"e4u3-q36", lesson:"e4u3-l4", level:2, q:"Which design is a difference-in-differences comparison?", options:[
-     {t:"Comparing how trade changed before and after a country joined an agreement with how it changed for similar non-joiners over the same years", ok:true, why:"It compares changes in an affected group with changes in an unaffected group."},
+     {t:"Comparing joiners’ change in trade with non-joiners’ change", ok:true, why:"It compares how trade changed before and after joining with how it changed for similar non-joiners over the same years: changes in an affected group against changes in an unaffected group."},
      {t:"Comparing joiners’ trade after joining with non-joiners’ trade in the same year", why:"That is a single after-only comparison; it can’t remove pre-existing differences."},
      {t:"Interviewing officials about whether trade rose", why:"Interviews can reveal mechanisms, but this is not a difference-in-differences design."},
      {t:"Counting how many agreements each country has signed", why:"A count is descriptive, not a causal design."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e4u3-q37", lesson:"e4u3-l5", level:1, q:"How are IR literature reviews typically organised?", options:[
-     {t:"By debates and schools of thought, ending with the gap the project fills", ok:true, why:"Grouping sources into camps that answer the puzzle differently is the usual IR shape."},
+     {t:"By debates and schools of thought", ok:true, why:"The review usually ends with the gap the project fills. Grouping sources into camps that answer the puzzle differently is the usual IR shape."},
      {t:"One paragraph per source, in the order you read them", why:"That is an annotated list, not a review; it summarises rather than synthesises."},
      {t:"Alphabetically by author", why:"That is how a reference list is ordered, not a review."},
      {t:"Only by publication date, oldest first", why:"Chronology can help within a section, but reviews are organised around arguments."}
@@ -1703,31 +1765,31 @@ ICA.addUnit({
      {t:"No gap at all", why:"Relying on one kind of evidence is a recognised gap."}
    ]},
    {id:"e4u3-q39", lesson:"e4u3-l5", level:3, q:"Oluwaseun’s question asks how often regional organisations in Africa and Asia have suspended members since 1990. His proposed method is three in-depth interviews with officials. What is the main problem?", options:[
-     {t:"A “how often” question needs systematic data on all relevant cases; three interviews can’t establish frequency", ok:true, why:"The golden thread is broken: the method can’t answer the question. He needs a dataset or systematic document search (interviews could add context)."},
+     {t:"Three interviews can’t establish how often something happens", ok:true, why:"A “how often” question needs systematic data on all relevant cases. The golden thread is broken: the method can’t answer the question. He needs a dataset or systematic document search (interviews could add context)."},
      {t:"Interviews are never allowed in IR", why:"Interviews are common in IR; they just don’t answer frequency questions."},
-     {t:"Regional organisations never suspend members", why:"Some do; the African Union, for example, has suspended members after coups. The issue is the design."},
+     {t:"Regional organisations in Africa and Asia never suspend members", why:"Some do; the African Union, for example, has suspended members after coups. The issue is the design."},
      {t:"He needs a least-likely case", why:"Case selection isn’t the issue; a frequency question needs coverage of all cases."}
    ]},
    {id:"e4u3-q40", lesson:"e4u3-l5", level:2, q:"Hana will interview activists in a country where criticising the government is dangerous. Which consent procedure is usually safest?", options:[
-     {t:"Oral consent after a clear explanation, without writing down names", ok:true, why:"A signed form creates a record linking named people to the research, which could endanger them."},
+     {t:"Oral consent, without writing down names", ok:true, why:"Give a clear explanation first. A signed form creates a record linking named people to the research, which could endanger them."},
      {t:"Signed consent forms stored with the transcripts", why:"This creates exactly the record that could identify participants if seized."},
      {t:"No consent, to protect participants", why:"Consent is still required; the question is how to record it safely."},
      {t:"Posting consent forms online for transparency", why:"That would expose participants publicly."}
    ]},
    {id:"e4u3-q41", lesson:"e4u3-l5", level:1, q:"Before planning fieldwork in another country, which check is essential?", options:[
-     {t:"Whether the country requires a research permit, a specific visa or local ethics approval", ok:true, why:"Some countries do, and approvals can take months; ignoring them can endanger you and your partners."},
+     {t:"Whether permits or local ethics approval are needed", ok:true, why:"Some countries require a research permit, a specific visa or local ethics approval, and approvals can take months; ignoring them can endanger you and your partners."},
      {t:"Whether the country’s capital has a good airport", why:"Practical, but not an ethical or legal requirement for research."},
      {t:"Whether your favourite theory applies there", why:"The research should test the theory, not presuppose it."},
      {t:"Whether you can avoid ethics review by travelling as a tourist", why:"Deliberately evading ethics review and local rules is unethical and may be illegal."}
    ]},
    {id:"e4u3-q42", lesson:"e4u3-l5", level:2, q:"Which sentence follows IR writing conventions best?", options:[
-     {t:"“As of November 2026, the foreign ministry’s position, stated by its spokesperson, was that talks should resume.”", ok:true, why:"It dates a changeable fact and says which part of the state spoke, and through whom."},
+     {t:"“As of November 2026, the foreign ministry said talks should resume.”", ok:true, why:"It dates a changeable fact and says which part of the state spoke. Naming the spokesperson would make it even more precise."},
      {t:"“Today the country thinks talks should resume.”", why:"“Today” will date badly, and “the country thinks” doesn’t say who held the view."},
-     {t:"“Everyone knows talks should resume.”", why:"Unsupported and vague; academic writing attributes positions."},
+     {t:"“Everyone knows that talks should resume, so there is no debate.”", why:"Unsupported and vague; academic writing attributes positions."},
      {t:"“The country obviously wants peace.”", why:"“Obviously” asserts rather than evidences, and the actor is vague."}
    ]},
    {id:"e4u3-q43", lesson:"e4u3-l5", level:3, q:"A local research assistant did much of the translation and interpretation for Lucía’s interviews. Naming the assistant could put them at risk. What should Lucía do?", options:[
-     {t:"Acknowledge the contribution in a way agreed with the assistant (for example without the full name) and discuss co-authorship if their intellectual input was substantial", ok:true, why:"Fair credit and safety both matter; agree with the assistant how they are credited."},
+     {t:"Credit them in a way agreed with the assistant", ok:true, why:"For example, she might credit them without the full name, and discuss co-authorship if their intellectual input was substantial. Fair credit and safety both matter; agree with the assistant how they are credited."},
      {t:"Leave the assistant out entirely", why:"Erasing collaborators’ work is a long-criticised problem in international research."},
      {t:"Name them fully anyway, because credit always comes first", why:"Credit must not endanger the person it is meant to honour."},
      {t:"List herself as translator", why:"Claiming someone else’s work is a breach of research integrity."}
@@ -1739,8 +1801,8 @@ ICA.addUnit({
      {t:"Resolutions don’t need citations", why:"Every source, including primary documents, needs a citation."}
    ]},
    {id:"e4u3-q45", lesson:"e4u3-l5", level:2, q:"Where countries use different names for a disputed place, what do many IR scholars do?", options:[
-     {t:"Give both names on first use, explain the choice of name used afterwards, and attribute each claim to those who make it", ok:true, why:"This keeps the writing neutral and transparent."},
-     {t:"Use only the name preferred by their own country", why:"That signals a position in the dispute without explaining it."},
+     {t:"Give both names at first and explain which one they use", ok:true, why:"They also attribute each claim to those who make it. This keeps the writing neutral and transparent."},
+     {t:"Use only the name preferred by their own country’s government", why:"That signals a position in the dispute without explaining it."},
      {t:"Avoid mentioning the place at all", why:"If it is relevant, it should be discussed; the issue is how to name it neutrally."},
      {t:"Invent a new neutral name", why:"Invented names confuse readers; established names with explanation are clearer."}
    ]}

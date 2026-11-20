@@ -209,8 +209,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"t3u1-l2-x1", type:"mcq", q:"A city’s population rises from 2,000,000 to 2,040,000. A village grows from 500 to 600. Which statement is correct?", options:[
-      {t:"The city grew more in absolute terms (40,000 people) but the village grew more in relative terms (20% against 2%)", ok:true, why:"Right. 2,040,000 − 2,000,000 = 40,000, and 40,000 ÷ 2,000,000 = 2%. The village added 100 people, and 100 ÷ 500 = 20%. Each lens gives a different winner."},
-      {t:"The village grew more in every sense, because 20% is bigger than 2%", why:"20% is the bigger relative change, but the village added only 100 people against the city’s 40,000. In absolute terms, the city grew far more."},
+      {t:"The city grew more in absolute terms, the village in relative terms", ok:true, why:"Right. 2,040,000 − 2,000,000 = 40,000, and 40,000 ÷ 2,000,000 = 2%. The village added 100 people, and 100 ÷ 500 = 20%. Each lens gives a different winner."},
+      {t:"The village grew more in every sense, because 20% is far bigger than 2%", why:"20% is the bigger relative change, but the village added only 100 people against the city’s 40,000. In absolute terms, the city grew far more."},
       {t:"The city grew more in every sense, because 40,000 is bigger than 100", why:"40,000 is the bigger absolute change, but compared with its size the city grew only 2%, while the village grew 20%."},
       {t:"They can’t be compared, because they are different sizes", why:"They can be compared: that’s exactly what relative change is for. You just need to say which kind of comparison you are making."}
     ]},
@@ -240,7 +240,7 @@ ICA.addUnit({
       {t:"Three in every ten people with the habit get the condition", why:"“Three times as likely” multiplies the existing risk (2 in 10,000). It doesn’t turn into 3 in 10."}
     ]},
     {id:"t3u1-l2-x6", type:"mcq", q:"An advert for a supplement says: “Reduces the risk of a cold by 50%! Side effects in only 2% of users.” What is the main problem with comparing these two figures?", options:[
-      {t:"The benefit is relative and the harm is absolute, so they can’t be compared until both are in the same form", ok:true, why:"Right. If 4 in 100 people would get a cold in the period and the supplement makes it 2 in 100, the benefit is 2 in 100, the same as the 2 in 100 who get side effects. Put both as natural frequencies before weighing them."},
+      {t:"The benefit is relative but the harm is absolute", ok:true, why:"Right. They can’t be compared until both are in the same form. If 4 in 100 people would get a cold in the period and the supplement makes it 2 in 100, the benefit is 2 in 100, the same as the 2 in 100 who get side effects. Put both as natural frequencies before weighing them."},
       {t:"There is no problem: 50% is much bigger than 2%", why:"That compares a relative change with an absolute risk. The 50% might mean only a small number of colds prevented."},
       {t:"The side-effect figure must be wrong, because side effects can’t be a percentage", why:"Side effects can be described as a percentage of users. The problem is the mismatch in framing, not the use of percentages."},
       {t:"The cold figure should be given in percentage points instead of percent", why:"Points would help only if we knew the starting risk. The core problem is that one figure is relative and the other absolute."}
@@ -323,10 +323,10 @@ ICA.addUnit({
    ],
    try:[
     {id:"t3u1-l3-x1", type:"mcq", q:"The asking prices of nine homes on a street (in thousands) are 150, 160, 170, 175, 180, 190, 200, 210 and 1,500. An estate agent’s leaflet says “average price on this street: 326 thousand”. What is the best response?", options:[
-      {t:"That’s the mean, pulled up by one mansion; the median, 180 thousand, describes a typical home here much better", ok:true, why:"Right. The mean is 2,935 ÷ 9 ≈ 326, but eight of the nine homes cost 210 thousand or less. The middle value of the sorted list is 180."},
+      {t:"It’s the mean, pulled up by one mansion; the median is 180 thousand", ok:true, why:"Right. The mean is 2,935 ÷ 9 ≈ 326, but eight of the nine homes cost 210 thousand or less. The middle value of the sorted list is 180, which describes a typical home here much better."},
       {t:"The leaflet must have made an arithmetic error", why:"The arithmetic is correct: the nine prices add up to 2,935, and 2,935 ÷ 9 ≈ 326. The issue is the choice of average, not the sum."},
       {t:"Use the mode instead, because it is always the fairest average", why:"Here every price is different, so there is no single mode. The median is the useful summary for typical prices."},
-      {t:"Remove the 1,500 price because it must be a mistake", why:"A very high value isn’t automatically an error; mansions exist. Keep it and choose a summary that isn’t dragged by it, or report both."}
+      {t:"Remove the 1,500 price, because a price that high must be a typing mistake", why:"A very high value isn’t automatically an error; mansions exist. Keep it and choose a summary that isn’t dragged by it, or report both."}
     ]},
     {id:"t3u1-l3-x2", type:"number", q:"A school has two classes. Class A has 25 pupils with a mean score of 72. Class B has 15 pupils with a mean score of 80. What is the mean score of **all 40 pupils**?", answer:75, tol:0.01, unit:"points", why:"Weight by size: (25 × 72 + 15 × 80) ÷ 40 = (1,800 + 1,200) ÷ 40 = 3,000 ÷ 40 = 75.", wrongs:[
       {v:76, tol:0.01, why:"76 is the simple average of 72 and 80. It treats both classes as equal in size, but Class A has 25 pupils and Class B only 15."},
@@ -339,7 +339,7 @@ ICA.addUnit({
       ["Do the pupils’ scores vary a lot?","The range or interquartile range","These describe spread, which no average shows."]
     ]},
     {id:"t3u1-l3-x4", type:"mcq", q:"In an invented study, Hospital X has a lower survival rate than Hospital Y overall, but a higher survival rate both for patients admitted in a mild condition and for patients admitted in a severe condition. What is the most likely explanation?", options:[
-      {t:"Hospital X treats a much larger share of severe patients, who are less likely to survive anywhere", ok:true, why:"That is Simpson’s paradox. Severity affects both which hospital patients go to and their chances, so the combined rate mostly reflects the mix of patients. Within each severity group, X does better."},
+      {t:"Hospital X treats a much larger share of severe patients", ok:true, why:"Severe patients are less likely to survive anywhere. That is Simpson’s paradox. Severity affects both which hospital patients go to and their chances, so the combined rate mostly reflects the mix of patients. Within each severity group, X does better."},
       {t:"The figures must contain an error, because this is mathematically impossible", why:"It is entirely possible, as the kidney stone study shows. It can happen whenever the two hospitals treat very different mixes of patients, and the mix also affects survival."},
       {t:"Hospital Y is better, because the overall figure is the one that counts", why:"The overall figure mixes in a difference in patients. For someone with a given condition, the within-group comparison shows X doing better."},
       {t:"The two hospitals must have exactly the same quality of care", why:"The within-group rates differ, with X higher in both. Nothing here suggests equal quality."}
@@ -392,7 +392,7 @@ ICA.addUnit({
     {h:"“Of whom?”: conditional probability", body:[
       {lead:"Many probability mistakes come from swapping two questions that sound alike."},
       "Most professional basketball players are tall. But most tall people are not professional basketball players. “The chance someone is tall, **given** they play professionally” is high. “The chance someone plays professionally, **given** they are tall” is tiny. The words are the same; the group you start from is different.",
-      "A probability that applies only within a group is a **[[conditional-probability|conditional probability]]**. Its denominator is that group, not everyone. Words that signal one: *given*, *among*, *of those who*, *if*.",
+      "A probability that applies only within a group is a **[[conditional-probability|conditional probability]]**. Its denominator is that group, not everyone. Words that signal one: *given*, *among*, *of those who*, *if*. Unit 6 puts this on a firmer footing with two-way tables and the {{probability-rules|rules of probability}}.",
       {key:"Before trusting a probability, ask “out of whom?” The chance of A among Bs and the chance of B among As can be wildly different."}
     ]},
     {h:"The four outcomes of a test", body:[
@@ -449,8 +449,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"t3u1-l4-x1", type:"mcq", q:"A news story says: “70% of people in hospital with the illness were unvaccinated.” Which conclusion follows from this figure alone?", options:[
-      {t:"None about the vaccine’s effect yet: you also need to know what share of the whole population was unvaccinated", ok:true, why:"Right. The 70% is “unvaccinated, given in hospital”. To judge the vaccine, compare the chance of hospital among vaccinated and unvaccinated people. If only 10% of people were unvaccinated, 70% of patients being unvaccinated points to a big effect; if 90% were, it would mean the vaccinated were more at risk. The base rate decides."},
-      {t:"An unvaccinated person has a 70% chance of going to hospital", why:"That swaps the conditional probability. 70% describes people already in hospital, not the chance that an unvaccinated person ends up there, which is far smaller."},
+      {t:"None yet: you also need the share of everyone who is unvaccinated", ok:true, why:"Right. The 70% is “unvaccinated, given in hospital”. To judge the vaccine, compare the chance of hospital among vaccinated and unvaccinated people. If only 10% of people were unvaccinated, 70% of patients being unvaccinated points to a big effect; if 90% were, it would mean the vaccinated were more at risk. The base rate decides."},
+      {t:"An unvaccinated person has a 70% chance of going to hospital with the illness", why:"That swaps the conditional probability. 70% describes people already in hospital, not the chance that an unvaccinated person ends up there, which is far smaller."},
       {t:"The vaccine prevents 70% of hospital stays", why:"A share of patients isn’t an effectiveness figure. You would need hospital rates in both vaccinated and unvaccinated groups."},
       {t:"Vaccinated people make up 30% of the population", why:"The 30% describes patients, not the population. The population share could be quite different."}
     ]},
@@ -480,7 +480,7 @@ ICA.addUnit({
       {t:"She should reply to the text with her card details so the bank can check", why:"Never send card details by text. Contact the bank through a route you already trust."}
     ]},
     {id:"t3u1-l4-x6", type:"mcq", q:"An expert tells a jury: “The chance that an innocent person would match this sample is 1 in 50,000.” A juror concludes: “So there’s only a 1 in 50,000 chance the defendant is innocent.” What is wrong with the juror’s reasoning?", options:[
-      {t:"It swaps “match given innocent” for “innocent given match”; in a large population, several innocent people would match too", ok:true, why:"Right: the prosecutor’s fallacy. In a city of 1,000,000 possible suspects, about 20 innocent people would match by chance. The match alone puts the defendant in a group of about 21, not near certainty."},
+      {t:"It swaps “match given innocent” for “innocent given match”", ok:true, why:"Right: the prosecutor’s fallacy. In a large population, several innocent people would match too. In a city of 1,000,000 possible suspects, about 20 innocent people would match by chance. The match alone puts the defendant in a group of about 21, not near certainty."},
       {t:"Nothing: the two statements mean the same thing", why:"They have different denominators. One is about innocent people; the other is about people who match."},
       {t:"The chance should be 1 in 25,000, because there are two possibilities", why:"Two possible outcomes don’t make them equally likely. The real issue is swapping the conditional probability."},
       {t:"Forensic matches are never meaningful evidence", why:"They can be strong evidence, especially combined with other evidence. The problem is how the number is read."}
@@ -630,6 +630,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u1-q02","t3u1-q06","t3u1-q11","t3u1-q15","t3u1-q20","t3u1-q24","t3u1-q29","t3u1-q32","t3u1-q34","t3u1-q38","t3u1-q41","t3u1-q44"],
+  cpBank:[
+   {id:"t3u1-cp01", lesson:"t3u1-l1", level:1, q:"The share of a choir’s members who are under 25 falls from 40% to 30%. A newsletter says it “fell 10%”. What is the clearest accurate description?", options:[
+     {t:"It fell 10%, so the share is now 36%", why:"That reads “10%” as a relative fall: 40% × 0.90 = 36%. But the share actually went to 30%, which is a 10-point gap."},
+     {t:"It fell by 10 percentage points, which is a 25% relative fall", ok:true, why:"The gap is 40 − 30 = 10 points. Relative to the start it is 10 ÷ 40 = 25%. Saying both removes the doubt."},
+     {t:"It fell by 25 percentage points", why:"25 is the relative change in percent, not a gap in points. The gap between 40% and 30% is 10 points."},
+     {t:"It fell by about 33%, because 10 ÷ 30 is one third", why:"Percent change divides by the starting value (40), not the new value (30): 10 ÷ 40 = 25%."}]},
+   {id:"t3u1-cp02", lesson:"t3u1-l1", level:2, q:"Over one season, a youth football league had 18 injuries among its 120 players, and an adult league had 45 injuries among its 500 players. Which league was riskier for a player?", options:[
+     {t:"The adult league, because it had more than twice as many injuries", why:"A raw count ignores group size. The adult league had more players, so more injuries are expected even at the same risk."},
+     {t:"They are equally risky, because both are football leagues", why:"The same sport can still have different injury rates. Divide each count by its number of players to compare."},
+     {t:"You can’t compare them, because the leagues are different sizes", why:"Different sizes are exactly what a rate fixes. Count ÷ group size puts both on the same scale."},
+     {t:"The youth league: 15 injuries per 100 players, against 9 per 100", ok:true, why:"18 ÷ 120 × 100 = 15 and 45 ÷ 500 × 100 = 9. Per player, the youth league had the higher injury rate."}]},
+   {id:"t3u1-cp03", lesson:"t3u1-l1", level:2, q:"A cycling club’s membership grows 20% in its first year and 25% in its second year. By how much has it grown over the two years?", options:[
+     {t:"45%", why:"Percentage changes multiply; they don’t add. Adding 20 and 25 ignores that the second rise applies to a bigger number."},
+     {t:"50%", ok:true, why:"1.20 × 1.25 = 1.50, so membership is 50% higher. For example, 100 members become 120, then 150."},
+     {t:"22.5%, the average of the two rises", why:"Averaging the yearly changes gives a typical yearly rise, not the total. The total comes from multiplying 1.20 × 1.25."},
+     {t:"5%, the gap between the two rises", why:"The gap between 20% and 25% says how the years compare, not how much the club grew overall."}]},
+   {id:"t3u1-cp04", lesson:"t3u1-l2", level:1, q:"Ravi’s doctor tells him his risk of a heart problem is “about 1 in 50”. Which extra detail does Ravi most need before he can compare it with other risks?", options:[
+     {t:"The same figure written as a percentage (2%)", why:"1 in 50 and 2% are the same number in two formats. Changing the format adds no information."},
+     {t:"How many people were in the study behind the figure", why:"Study size affects how sure the estimate is, but even a precise risk can’t be compared without knowing its time period."},
+     {t:"The time period, such as “over the next ten years”", ok:true, why:"A risk is a count out of a group over a time. 1 in 50 per year and 1 in 50 over ten years are very different."},
+     {t:"A relative figure, such as “30% higher than average”", why:"A relative figure needs a baseline to make sense. Ravi’s absolute risk is more useful once its time period is known."}]},
+   {id:"t3u1-cp05", lesson:"t3u1-l2", level:2, q:"In an invented three-year study, 50 in 1,000 people without a vaccine caught an illness, against 40 in 1,000 people with it. Which pair of figures describes this same result?", options:[
+     {t:"A 20% relative risk reduction, and 10 fewer cases per 1,000", ok:true, why:"10 ÷ 50 = 20% relative reduction; 50 − 40 = 10 fewer per 1,000 (1 percentage point). Both describe the same counts."},
+     {t:"A 10% relative risk reduction, and 10 fewer cases per 1,000", why:"10% treats the 10-case gap as if it were relative. Relative reduction divides by the untreated risk: 10 ÷ 50 = 20%."},
+     {t:"A 20% relative risk reduction, and 20 fewer cases per 1,000", why:"20% is relative; it can’t be turned straight into 20 people. The plain gap is 50 − 40 = 10 per 1,000."},
+     {t:"A 25% relative risk reduction, and a number needed to treat of 10", why:"25% divides by the treated risk (10 ÷ 40). The NNT is 1,000 ÷ 10 = 100, not 10."}]},
+   {id:"t3u1-cp06", lesson:"t3u1-l2", level:3, q:"In an invented study, a night-shift pattern is linked to a sleep disorder: the risk goes from 2 in 1,000 to 5 in 1,000 workers over five years. Which description is correct?", options:[
+     {t:"It makes the disorder 250% more likely", why:"5 ÷ 2 = 2.5 is the ratio. “More likely” compares with the start: (5 − 2) ÷ 2 = 150% more."},
+     {t:"It raises the risk by 3 percentage points", why:"3 in 1,000 is 0.3%, so the gap is 0.3 percentage points, not 3."},
+     {t:"It raises the risk by 3%", why:"The absolute gap is 3 in 1,000 (0.3 points); the relative rise is 150%. “3%” is neither."},
+     {t:"It makes the disorder 2.5 times as likely, or 150% more likely", ok:true, why:"Risk ratio 5 ÷ 2 = 2.5. Relative change (5 − 2) ÷ 2 = 1.5, so 150% more. In counts, 3 more cases per 1,000 workers."}]},
+   {id:"t3u1-cp07", lesson:"t3u1-l3", level:2, q:"A creator’s nine videos got these views, in thousands: 2, 3, 3, 3, 4, 5, 6, 7 and 120. A sponsor asks how many views a typical video gets. Which figure is the fairest answer?", options:[
+     {t:"17 thousand, the mean, because it uses every video", why:"The mean is right for totals, but the one 120-thousand video pulls it far above eight of the nine videos."},
+     {t:"4 thousand, the median", ok:true, why:"Sorted, the middle (5th) value is 4. One huge video barely moves the median, so it describes a typical video."},
+     {t:"61 thousand, halfway between the lowest and highest", why:"The midpoint of the range depends only on the two extremes. Here it is higher than eight of the nine videos."},
+     {t:"120 thousand, because it shows what a video can reach", why:"That is the best case, not the typical case. Only one video in nine got near it."}]},
+   {id:"t3u1-cp08", lesson:"t3u1-l3", level:3, q:"Courier P delivered on time on 45 of 50 city routes and 120 of 200 rural routes. Courier Q managed 170 of 200 city and 25 of 50 rural. Which conclusion is fairest?", options:[
+     {t:"Q is better: 78% on time overall, against P’s 66%", why:"The overall figures are right, but P beats Q on each type of route. Q’s lead comes from doing mostly easier city routes."},
+     {t:"They are equal, because each did 250 deliveries", why:"Equal totals don’t make equal performance. On-time rates differ in both route types and overall."},
+     {t:"P is better on both route types; it simply did more of the hard rural routes", ok:true, why:"P: 90% city, 60% rural. Q: 85% city, 50% rural. Route type is a confounder, so this is Simpson’s paradox."},
+     {t:"P is better, because its average of 90% and 60% is 75%, above Q’s 67.5%", why:"Averaging percentages from groups of different sizes is the wrong method. Compare within each route type instead."}]},
+   {id:"t3u1-cp09", lesson:"t3u1-l4", level:2, q:"A screening test is used on 20,000 people. 0.5% have the condition. The test catches 80% of cases and wrongly flags 2% of people without it. Roughly what share of positives really have the condition?", options:[
+     {t:"About 80%, the share of cases the test catches", why:"80% is the sensitivity: of people with the condition, how many test positive. The question asks the reverse."},
+     {t:"About 98%, because only 2% of results are false alarms", why:"2% of the 19,900 people without the condition is 398 false alarms, which is far more than the 80 true positives."},
+     {t:"About 17%: 80 of the 478 positives", ok:true, why:"100 have it; 80 test positive. 2% of 19,900 = 398 false positives. 80 ÷ (80 + 398) ≈ 16.7%."},
+     {t:"About 0.5%, the base rate", why:"A positive result does change the chance. Among positives it rises from 0.5% to about 17%."}]},
+   {id:"t3u1-cp10", lesson:"t3u1-l4", level:3, q:"A city report says: “80% of cyclists hurt in crashes wore no bright clothing.” Does bright clothing protect cyclists? What do you most need to know first?", options:[
+     {t:"What share of **all** cyclists in the city ride without bright clothing", ok:true, why:"That is the base rate. If about 80% of all cyclists ride without it, the figure shows no link at all."},
+     {t:"How many crashes there were in total", why:"The total sets the scale, but the 80% would mean the same thing for 100 or 1,000 crashes. The comparison group is missing."},
+     {t:"Whether the 80% is in percent or percentage points", why:"80% here is a simple share of injured cyclists. The real gap is that it has no comparison with cyclists in general."},
+     {t:"Nothing more: 80% is a large majority, so the link is clear", why:"This is base-rate neglect. A large share among the injured means little if the same share of all cyclists dress that way."}]},
+   {id:"t3u1-cp11", lesson:"t3u1-l5", level:1, q:"A spreadsheet cell showing a country’s yearly spending displays `2.4E+09`. How would you read this out in English?", options:[
+     {t:"2.4 million", why:"A million is 10⁶ (E+06). E+09 is three orders of magnitude bigger."},
+     {t:"24 billion", why:"2.4 × 10⁹ keeps the 2.4; it is 2.4 billion, not 24 billion."},
+     {t:"2.4 trillion", why:"A trillion is 10¹² (E+12). E+09 is a thousand times smaller."},
+     {t:"2.4 billion", ok:true, why:"E+09 means × 10⁹, and in English a billion is a thousand million (10⁹)."}]},
+   {id:"t3u1-cp12", lesson:"t3u1-l5", level:3, q:"From 2016 to 2026, a library’s budget rose 26% and an invented price index rose 40%. A councillor says the budget “fell 14% in real terms”. What is the real change?", options:[
+     {t:"It rose 26%, because real terms means the actual money received", why:"26% is the nominal rise. “Real” means adjusted for prices, and prices rose faster than the budget, so its real value fell."},
+     {t:"It fell about 10%, because 1.26 ÷ 1.40 = 0.90", ok:true, why:"Divide by the price change: 1.26 ÷ 1.40 = 0.90. For example, 50,000 becomes 63,000, which is worth 63,000 × 100 ÷ 140 = 45,000 in 2016 money."},
+     {t:"It fell 14%, as the councillor says, because 40 − 26 = 14", why:"Changes multiply; they don’t subtract. Turning the budget into 2016 money means dividing by the price rise: 1.26 ÷ 1.40 = 0.90, a 10% fall."},
+     {t:"It fell about 11%, because 1.40 ÷ 1.26 is about 1.11", why:"That division is upside down. What the budget buys now is budget growth ÷ price growth: 1.26 ÷ 1.40 = 0.90, a 10% fall."}]},
+  ],
   codex:[
    {id:"percentages-rates", title:"Percentages, percentage points and rates", aka:["percent change","percentage points","rate per 100,000","per capita","denominator"], tags:["numbers","data literacy","statistics"],
     summary:"What a percentage is a percentage of, points versus percent, chained changes, and fair rates per person.",
@@ -842,10 +904,10 @@ ICA.addUnit({
      {t:"A rise of 33%", why:"33% is the new level, not the change."}
    ]},
    {id:"t3u1-q02", lesson:"t3u1-l1", level:2, q:"Amara reads that a savings rate rose from 2% to 3%, “a 50% rise”. Is the headline right?", options:[
-     {t:"Yes: it rose by 1 percentage point, which is 50% of the starting rate of 2%", ok:true, why:"(3 − 2) ÷ 2 = 0.5, a 50% relative rise. It would be clearer to say “up 1 point, from 2% to 3%”."},
-     {t:"No: it rose by 1%", why:"It rose by 1 percentage point. As a percent change, it rose 50%."},
-     {t:"No: it rose by 33%", why:"33% comes from dividing by the new value (1 ÷ 3). Percent change divides by the starting value: 1 ÷ 2 = 50%."},
-     {t:"No: it rose by 150%", why:"3% is 150% *of* 2%, but the *rise* is 50%."}
+     {t:"Yes: 1 point is 50% of the starting 2%", ok:true, why:"(3 − 2) ÷ 2 = 0.5, a 50% relative rise. It would be clearer to say “up 1 point, from 2% to 3%”."},
+     {t:"No: it rose by 1%, which is 3% minus 2%", why:"It rose by 1 percentage point. As a percent change, it rose 50%."},
+     {t:"No: it rose by 33%, since 1 ÷ 3 ≈ 0.33", why:"33% comes from dividing by the new value (1 ÷ 3). Percent change divides by the starting value: 1 ÷ 2 = 50%."},
+     {t:"No: it rose by 150%, since 3% is 150% of 2%", why:"3% is 150% *of* 2%, but the *rise* is 50%."}
    ]},
    {id:"t3u1-q03", lesson:"t3u1-l1", level:1, q:"In “12 of the club’s 48 members voted yes (25%)”, what is the denominator?", options:[
      {t:"48, the number of members", ok:true, why:"The denominator is what you divide by: 12 ÷ 48 = 0.25."},
@@ -866,7 +928,7 @@ ICA.addUnit({
      {t:"It can’t be compared, because the populations are different", why:"Different populations are exactly what rates fix. Divide each count by its population."}
    ]},
    {id:"t3u1-q06", lesson:"t3u1-l1", level:3, q:"A community group’s survey report says 60% of members want more events and 55% want lower fees. A member writes in: “That adds up to 115%, so the survey is wrong.” What is the most likely explanation?", options:[
-     {t:"Members could choose more than one option, so the shares can add up to more than 100%", ok:true, why:"With choose-all-that-apply questions, each percentage is out of all members separately, and one person can be counted in both."},
+     {t:"Members could choose more than one option", ok:true, why:"With choose-all-that-apply questions, the shares can add up to more than 100%. Each percentage is out of all members separately, and one person can be counted in both."},
      {t:"The survey must have counted some members twice by mistake", why:"That’s possible but unnecessary as an explanation. Choose-all-that-apply questions add to more than 100% when everything is correct."},
      {t:"The figures were rounded badly", why:"Rounding can shift a total by a point or two, not by 15 points."},
      {t:"Percentages in a report must always add up to 100%", why:"Only shares of a single whole, where each person is in exactly one category, must add to 100%."}
@@ -891,10 +953,10 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t3u1-q10", lesson:"t3u1-l2", level:1, q:"What is an absolute risk difference?", options:[
-     {t:"The plain gap between two risks, such as 20 in 1,000 minus 15 in 1,000 = 5 in 1,000", ok:true, why:"It tells you how many people per 1,000 (or per 100) are affected by the difference."},
+     {t:"One risk minus the other, such as 20 minus 15 in 1,000", ok:true, why:"Here the gap is 5 in 1,000. It tells you how many people per 1,000 (or per 100) are affected by the difference."},
      {t:"The risk in one group divided by the risk in another", why:"That’s the risk ratio, a relative measure."},
-     {t:"The percentage by which the risk fell", why:"That’s the relative risk reduction, the gap divided by the starting risk."},
-     {t:"A risk that is certain to happen", why:"“Absolute” here means a plain difference, not certainty."}
+     {t:"The percentage by which the risk fell from its starting level", why:"That’s the relative risk reduction, the gap divided by the starting risk."},
+     {t:"A risk that is certain to happen, with no chance involved", why:"“Absolute” here means a plain difference, not certainty."}
    ]},
    {id:"t3u1-q11", lesson:"t3u1-l2", level:2, q:"Mei reads that a treatment “halves the risk” of a condition. In people like her, 4 in 1,000 would get it over ten years without treatment. How many fewer people per 1,000 would get it with treatment?", options:[
      {t:"2 fewer per 1,000", ok:true, why:"Half of 4 is 2, so the risk goes from 4 to 2 in 1,000: an absolute difference of 2 per 1,000 (an NNT of 500 over ten years)."},
@@ -921,9 +983,9 @@ ICA.addUnit({
      {t:"It can’t be worked out without the risk ratios", why:"You have everything you need: subtract the treated risk from the untreated risk for each drug."}
    ]},
    {id:"t3u1-q15", lesson:"t3u1-l2", level:3, q:"A leaflet for a medicine says: “Reduces hip fractures by 40%. Serious side effects in 1 in 200 users.” Before Dmitri can weigh the benefit against the harm, what does he most need?", options:[
-     {t:"His starting risk of a hip fracture over the same period, to turn 40% into a number per 200 (or per 1,000) people", ok:true, why:"The benefit is relative and the harm absolute. With a baseline of, say, 10 in 1,000, a 40% cut prevents 4 per 1,000, while side effects affect 5 per 1,000 (1 in 200). The baseline decides which is bigger."},
-     {t:"Nothing more: 40% is clearly bigger than 1 in 200", why:"That compares a relative change with an absolute risk. Put both in the same form first."},
-     {t:"The side-effect rate as a relative figure too", why:"Converting the harm to relative terms would keep them comparable but still hide how many people are affected. The missing piece is the baseline fracture risk."},
+     {t:"His starting risk of a hip fracture over the same period", ok:true, why:"He needs it to turn 40% into a number per 1,000 people. The benefit is relative and the harm absolute. With a baseline of, say, 10 in 1,000, a 40% cut prevents 4 per 1,000, while side effects affect 5 per 1,000 (1 in 200). The baseline decides which is bigger."},
+     {t:"Nothing more: a 40% cut is clearly bigger than a 1 in 200 risk", why:"That compares a relative change with an absolute risk. Put both in the same form first."},
+     {t:"The side-effect rate given as a relative figure, like the benefit", why:"Converting the harm to relative terms would keep them comparable but still hide how many people are affected. The missing piece is the baseline fracture risk."},
      {t:"The price of the medicine", why:"Cost matters for decisions, but it doesn’t fix the mismatched framing of the benefit and harm."}
    ]},
    {id:"t3u1-q16", lesson:"t3u1-l2", level:2, q:"A headline says cases of an infection “rose 300%” in a town, from 5 cases. How many cases are there now?", options:[
@@ -933,20 +995,20 @@ ICA.addUnit({
      {t:"8", why:"That adds 3, as if 300% meant 3 cases. 300% of 5 is 15."}
    ]},
    {id:"t3u1-q17", lesson:"t3u1-l2", level:1, q:"What is the main drawback of reporting **only** a relative change in risk?", options:[
-     {t:"It hides how many people are actually affected, which depends on the starting risk", ok:true, why:"A 50% cut could mean 500 fewer cases per 1,000 or 1 fewer per 10,000. Without the baseline, you can’t tell."},
+     {t:"It hides how many people are actually affected", ok:true, why:"A 50% cut could mean 500 fewer cases per 1,000 or 1 fewer per 10,000. That number depends on the starting risk, so without the baseline you can’t tell."},
      {t:"Relative changes are always calculated wrongly", why:"They can be calculated perfectly. The problem is what they leave out."},
      {t:"Relative changes can’t be compared between studies", why:"They are often easier to compare between studies. The drawback is for judging practical impact."},
      {t:"Relative changes are only used for money", why:"They are used for risks, prices, populations and more."}
    ]},
    {id:"t3u1-q18", lesson:"t3u1-l2", level:3, q:"A study of a common outcome reports an odds ratio of 3. A journalist writes that the exposure makes the outcome “three times as likely”. Why might this overstate it?", options:[
-     {t:"For common outcomes an odds ratio is further from 1 than the risk ratio; risks of 50% and 25%, for example, give an odds ratio of 3 but a risk ratio of 2", ok:true, why:"Odds are with ÷ without: 50% gives odds of 1, 25% gives odds of 1/3, and 1 ÷ (1/3) = 3. The risk is only twice as high. The two ratios are close only for rare outcomes."},
+     {t:"For common outcomes, odds ratios are further from 1 than risk ratios", ok:true, why:"For example, risks of 50% and 25% give an odds ratio of 3 but a risk ratio of 2. Odds are with ÷ without: 50% gives odds of 1, 25% gives odds of 1/3, and 1 ÷ (1/3) = 3. The risk is only twice as high. The two ratios are close only for rare outcomes."},
      {t:"Odds ratios are always smaller than risk ratios", why:"For a harmful exposure, the odds ratio is further from 1, so it is larger than the risk ratio, not smaller."},
      {t:"An odds ratio of 3 means 3 extra cases per 100 people", why:"An odds ratio is relative; it doesn’t give extra cases directly."},
-     {t:"There’s no difference; “odds” and “risk” are the same thing", why:"Odds compare people with the outcome to people without it; risk compares them to everyone. They differ, especially when the outcome is common."}
+     {t:"There’s no difference, because “odds” and “risk” are two words for the same thing", why:"Odds compare people with the outcome to people without it; risk compares them to everyone. They differ, especially when the outcome is common."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t3u1-q19", lesson:"t3u1-l3", level:1, q:"Why is the median often preferred to the mean for describing typical incomes?", options:[
-     {t:"A few very high incomes pull the mean up, while the median stays at the middle person", ok:true, why:"Incomes are right-skewed. The median is little affected by extreme values, so it describes the typical case better."},
+     {t:"A few very high incomes pull the mean up", ok:true, why:"Incomes are right-skewed. The median stays at the middle person and is little affected by extreme values, so it describes the typical case better."},
      {t:"The median is always larger than the mean", why:"For incomes the median is usually smaller than the mean, because the high values pull the mean up."},
      {t:"The mean can’t be calculated for money", why:"It can. It just gives a misleading picture of a typical person when the data are skewed."},
      {t:"The median includes everyone’s income and the mean doesn’t", why:"Both use everyone’s data. The mean adds every value; the median finds the middle one."}
@@ -970,14 +1032,14 @@ ICA.addUnit({
      {t:"20 minutes", why:"That’s Branch 1 alone. Branch 2’s longer visits pull the overall mean up to 25."}
    ]},
    {id:"t3u1-q23", lesson:"t3u1-l3", level:3, q:"In the 1986 kidney stone study, open surgery had a higher success rate than keyhole surgery for small stones and for large stones, but a lower rate overall. Why?", options:[
-     {t:"Open surgery was used for many more of the large, harder-to-treat stones, which pulled its overall rate down", ok:true, why:"263 of its 350 patients had large stones, against 80 of 350 keyhole patients. Stone size affected both which treatment was chosen and the chance of success: a confounder."},
-     {t:"The study made an arithmetic mistake", why:"The figures are consistent: 81 + 192 = 273 of 350 and 234 + 55 = 289 of 350. This is Simpson’s paradox, not an error."},
+     {t:"Open surgery was used for many more of the large, harder stones", ok:true, why:"This pulled its overall rate down: 263 of its 350 patients had large stones, against 80 of 350 keyhole patients. Stone size affected both which treatment was chosen and the chance of success: a confounder."},
+     {t:"The study made an arithmetic mistake when adding up the results", why:"The figures are consistent: 81 + 192 = 273 of 350 and 234 + 55 = 289 of 350. This is Simpson’s paradox, not an error."},
      {t:"Keyhole surgery was better for every type of stone", why:"Within each stone size, open surgery had the higher success rate."},
      {t:"The two groups had different numbers of patients", why:"Both groups had 350 patients. The issue is how each group’s patients were split between small and large stones."}
    ]},
    {id:"t3u1-q24", lesson:"t3u1-l3", level:3, q:"A school’s average exam score rose this year. Ana learns that the school encouraged pupils expected to do badly not to sit the exam. What is the best conclusion?", options:[
-     {t:"The rise may be a composition effect: the group sitting the exam changed, so the average can rise without anyone doing better", ok:true, why:"Removing lower scorers raises the mean on its own. To judge teaching, you’d compare pupils like-for-like, or include everyone who would normally have sat it."},
-     {t:"The teaching must have improved, because the average rose", why:"The average rose, but the group being averaged changed. That alone can explain the rise."},
+     {t:"The rise may be a composition effect: a different group sat the exam", ok:true, why:"The average can rise without anyone doing better: removing lower scorers raises the mean on its own. To judge teaching, you’d compare pupils like-for-like, or include everyone who would normally have sat it."},
+     {t:"The teaching must have improved, because the school’s average score rose", why:"The average rose, but the group being averaged changed. That alone can explain the rise."},
      {t:"The average must have been calculated wrongly", why:"The arithmetic may be fine. The problem is which pupils were included."},
      {t:"Averages are meaningless and should never be used for schools", why:"Averages are useful when the groups compared are similar. Here, they aren’t."}
    ]},
@@ -994,10 +1056,10 @@ ICA.addUnit({
      {t:"Their coldest months are the same", why:"The average doesn’t tell you the coldest or warmest month."}
    ]},
    {id:"t3u1-q27", lesson:"t3u1-l3", level:3, q:"Hana is house-hunting with a budget of 250,000. A website says the average home price in a neighbourhood is 400,000, so she rules it out. What should she check first?", options:[
-     {t:"The median and the range of prices for homes like the one she wants, since a few expensive homes can make the mean high", ok:true, why:"House prices are right-skewed. Many homes may cost far less than the mean. The median and the prices of similar homes answer her real question."},
+     {t:"The median and range of prices for homes like the one she wants", ok:true, why:"A few expensive homes can make the mean high, because house prices are right-skewed. Many homes may cost far less than the mean. The median and the prices of similar homes answer her real question."},
      {t:"Nothing: if the average is 400,000, nothing costs 250,000", why:"An average doesn’t tell you the lowest prices. Many homes could be well below it."},
      {t:"Whether the average includes homes for rent", why:"Possibly useful, but the bigger issue is that the mean may be pulled up by a few expensive homes."},
-     {t:"The mode, because it is always the most reliable average", why:"With prices that are all different there may be no useful mode. The median and similar homes matter more."}
+     {t:"The mode, because it is always the most reliable kind of average for prices", why:"No average is always the most reliable, and with prices that are all different there may be no useful mode. The median and similar homes matter more."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t3u1-q28", lesson:"t3u1-l4", level:1, q:"What is a false positive?", options:[
@@ -1025,10 +1087,10 @@ ICA.addUnit({
      {t:"It can’t be known without testing everyone twice", why:"A natural-frequency calculation with the base rate gives the answer."}
    ]},
    {id:"t3u1-q32", lesson:"t3u1-l4", level:3, q:"Oluwaseun, who has no symptoms, gets a positive result from a screening test described as “95% accurate” for a condition that is rare in people like him. What is the most sensible interpretation?", options:[
-     {t:"The result needs a follow-up test: with a rare condition, many positives are false alarms, whatever the accuracy figure", ok:true, why:"When the base rate is low, false positives from the large healthy group can outnumber true positives. That’s why positive screening results lead to diagnostic tests."},
-     {t:"There is a 95% chance he has the condition", why:"That confuses the test’s accuracy with the chance a positive is right. The base rate matters."},
+     {t:"It needs a follow-up test: it could well be a false alarm", ok:true, why:"With a rare condition, many positives are false alarms, whatever the accuracy figure. When the base rate is low, false positives from the large healthy group can outnumber true positives. That’s why positive screening results lead to diagnostic tests."},
+     {t:"There is a 95% chance he has the condition, since the test is 95% accurate", why:"That confuses the test’s accuracy with the chance a positive is right. The base rate matters."},
      {t:"The result is meaningless and can be ignored", why:"A positive does raise the chance he has it. It just doesn’t settle it."},
-     {t:"There is a 5% chance he has the condition", why:"5% is the error rate, not the chance he has it. You need the base rate to work that out."}
+     {t:"There is only a 5% chance he has the condition, the test’s error rate", why:"5% is the error rate, not the chance he has it. You need the base rate to work that out."}
    ]},
    {id:"t3u1-q33", lesson:"t3u1-l4", level:3, q:"A partial fingerprint would match a random innocent person 1 time in 10,000. About 500,000 people could have been at the scene. If the match were the only evidence, roughly how many innocent people would also be expected to match?", options:[
      {t:"About 50", ok:true, why:"500,000 ÷ 10,000 = 50. So the suspect would be one of about 51 matching people, which is why the match alone doesn’t prove guilt."},
@@ -1043,7 +1105,7 @@ ICA.addUnit({
      {t:"It can’t be estimated without knowing how many essays were written with AI", why:"For **honest** essays, the false positive rate alone gives the number of false flags. You’d need the AI share only to work out what share of all flags are false."}
    ]},
    {id:"t3u1-q35", lesson:"t3u1-l4", level:2, q:"A report says most car crashes happen within 10 km of home. Someone concludes that long trips are safer. What’s wrong with this?", options:[
-     {t:"Most driving happens near home, so most crashes would happen there even if every kilometre were equally risky", ok:true, why:"The base rate of driving near home is high. To compare safety, you need crashes per kilometre (or per hour) driven in each setting."},
+     {t:"Most driving happens near home, so most crashes would too", ok:true, why:"That would be true even if every kilometre were equally risky. The base rate of driving near home is high. To compare safety, you need crashes per kilometre (or per hour) driven in each setting."},
      {t:"Nothing: if most crashes are near home, home is more dangerous", why:"That ignores how much driving happens near home. Raw counts follow exposure."},
      {t:"The report must be wrong, because crashes are random", why:"The report may be accurate. The problem is the conclusion drawn from it."},
      {t:"Long trips involve faster roads, so the report is irrelevant", why:"Road type may matter, but the main flaw is ignoring exposure: how much driving happens where."}
@@ -1074,16 +1136,16 @@ ICA.addUnit({
      {t:"1,500", why:"That multiplies by 1.5 (150 ÷ 100), assuming the old index was 100. It was 120."}
    ]},
    {id:"t3u1-q40", lesson:"t3u1-l5", level:1, q:"What is the difference between a nominal and a real amount of money?", options:[
-     {t:"Nominal is the amount as it was at the time; real is adjusted for inflation so different years can be compared", ok:true, why:"Real amounts are expressed in the money of one chosen year, using a price index."},
-     {t:"Nominal is cash; real is money in a bank", why:"Both terms can apply to any money. The difference is inflation adjustment."},
-     {t:"Nominal is an estimate; real is an exact count", why:"Both can be exact or estimated. Real means inflation-adjusted."},
+     {t:"Nominal is the amount at the time; real is adjusted for inflation", ok:true, why:"Adjusting lets you compare different years. Real amounts are expressed in the money of one chosen year, using a price index."},
+     {t:"Nominal is cash in your hand; real is money held in a bank account", why:"Both terms can apply to any money. The difference is inflation adjustment."},
+     {t:"Nominal is an estimated amount; real is an exact count of money", why:"Both can be exact or estimated. Real means inflation-adjusted."},
      {t:"Real is the amount after tax", why:"After-tax amounts are “net”. Real means adjusted for price changes."}
    ]},
    {id:"t3u1-q41", lesson:"t3u1-l5", level:3, q:"Kenji sees a headline: “Support for the plan jumps from 38% to 40%.” Each poll had a margin of error of about ±3 points. What is the fairest summary?", options:[
-     {t:"Support is roughly unchanged: a 2-point move is well within the polls’ uncertainty", ok:true, why:"Each poll could be about 3 points off by chance alone, and the uncertainty of a change between two polls is even larger. A 2-point change can easily be noise."},
+     {t:"Support may be unchanged: 2 points is within the margin of error", ok:true, why:"Each poll could be about 3 points off by chance alone, and the uncertainty of a change between two polls is even larger. A 2-point change can easily be noise."},
      {t:"Support has definitely risen by 2 points", why:"The change is smaller than either poll’s margin of error, so chance can explain it."},
      {t:"Support has risen by 5%", why:"2 ÷ 38 ≈ 5% relative, but the bigger point is that the change may not be real at all."},
-     {t:"The polls are useless and should be ignored", why:"They give useful ranges. They just can’t detect a change this small."}
+     {t:"The polls are useless, because their margin of error is bigger than the change", why:"They give useful ranges. They just can’t detect a change this small."}
    ]},
    {id:"t3u1-q42", lesson:"t3u1-l5", level:2, q:"The US monthly jobs estimate has a 90% confidence interval of about ±122,000 for the monthly change. One month it reports a rise of 300,000. What can you say?", options:[
      {t:"Jobs very likely rose: the interval, about 178,000 to 422,000, is entirely above zero", ok:true, why:"300,000 − 122,000 = 178,000 and 300,000 + 122,000 = 422,000. The exact size is uncertain and may be revised, but a rise is clear."},
@@ -1092,7 +1154,7 @@ ICA.addUnit({
      {t:"Jobs could have fallen", why:"The whole interval is above zero, so a fall is very unlikely on this evidence."}
    ]},
    {id:"t3u1-q43", lesson:"t3u1-l5", level:3, q:"Tomás reads: “90% of the restaurants on this street have been open more than ten years, so restaurants here rarely fail.” What’s the flaw?", options:[
-     {t:"Survivorship bias: restaurants that failed have closed and aren’t on the street to be counted", ok:true, why:"Only survivors are visible. To know the failure rate, you’d count all restaurants that opened there, including those that closed."},
+     {t:"Survivorship bias: failed restaurants aren’t there to be counted", ok:true, why:"Only survivors are visible. To know the failure rate, you’d count all restaurants that opened there, including those that closed."},
      {t:"90% is too high to be believable", why:"The figure may be accurate. The problem is what it’s used to conclude."},
      {t:"Ten years is too short a period", why:"Any period has the same problem: failed restaurants are missing from the count."},
      {t:"There is no flaw; long-lasting restaurants show the street is a safe bet", why:"The street could see many openings fail within a year; those wouldn’t be in today’s count."}

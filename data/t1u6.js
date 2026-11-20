@@ -142,7 +142,7 @@ ICA.addUnit({
       {t:"The platform deliberately promoted false stories", why:"The study didn’t find or claim that. It measured how people reshared fact-checked stories."}
     ]},
     {id:"t1u6-l1-x5", type:"mcq", q:"Tomás says: “Algorithms have trapped almost everyone in a bubble where they only see their own side.” What does the 2022 Reuters Institute review of research suggest?", options:[
-      {t:"Partisan news echo chambers are smaller than often assumed, and people’s own choices matter more than algorithms", ok:true, why:"The review estimated about 6–8% of the UK public in partisan online news echo chambers, and found algorithmic selection generally led to slightly more diverse news use."},
+      {t:"Echo chambers are smaller than assumed; people’s own choices matter more", ok:true, why:"Partisan news echo chambers are smaller than often assumed, and people’s own choices matter more than algorithms. The review estimated about 6–8% of the UK public in partisan online news echo chambers, and found algorithmic selection generally led to slightly more diverse news use."},
       {t:"Tomás is right: research shows nearly everyone is in an algorithmic bubble", why:"That’s the popular idea, but the reviewed studies didn’t support it for news use in most countries studied."},
       {t:"Algorithms have no effect at all on what anyone sees", why:"Too strong. Algorithms clearly shape feeds; the finding is about their effect on the diversity of news people use, which was slightly positive on average."},
       {t:"Echo chambers only exist offline", why:"The review discusses online echo chambers. They exist; they’re just smaller than often claimed."}
@@ -155,7 +155,7 @@ ICA.addUnit({
       {t:"A fact-checker traces it back to the humour site and publishes the origin.", why:"Tracing to the original is how the story is finally corrected (SIFT’s “T”, Lesson 2)."}
     ]},
     {id:"t1u6-l1-x7", type:"mcq", q:"Hana notices she checks claims carefully when they disagree with her views, but rarely when they agree. What is this, and what’s a good counter-habit?", options:[
-      {t:"Confirmation bias; ask “would I check this if it said the opposite?” and check it if so", ok:true, why:"Confirmation bias lowers our guard for agreeable claims. Deliberately applying the same checks to both sides counters it."},
+      {t:"Confirmation bias; check it as if it said the opposite", ok:true, why:"Confirmation bias lowers our guard for agreeable claims. Asking “would I check this if it said the opposite?” and applying the same checks to both sides counters it."},
       {t:"A filter bubble; delete her social media accounts", why:"A filter bubble is about what an algorithm shows her. This is about how she treats what she sees, which is confirmation bias. Deleting accounts doesn’t fix that."},
       {t:"Malinformation; report the posts", why:"Malinformation is true information used to harm. Hana’s pattern is a bias in her own checking."},
       {t:"Nothing to worry about; only claims she disagrees with need checking", why:"Agreeable claims are exactly the ones that slip through unchecked."}
@@ -267,10 +267,10 @@ ICA.addUnit({
       {t:"Trace claims, quotes and media to the original context", why:"Finally, follow it upstream to check it was reported accurately."}
     ]},
     {id:"t1u6-l2-x2", type:"mcq", q:"Priya lands on a website for the “Global Council on Healthy Childhood”. It looks professional, has a `.org` address and cites research. What’s the best first move to judge it?", options:[
-      {t:"Open a new tab and search for the organisation’s name to see what independent sources say about it", ok:true, why:"That’s lateral reading: judging the source by what others say, which is much harder to fake than the site’s own presentation."},
+      {t:"Search for the organisation’s name in a new tab", ok:true, why:"That’s lateral reading: seeing what independent sources say about it, which is much harder to fake than the site’s own presentation."},
       {t:"Read its About page carefully", why:"The About page is the organisation describing itself. That’s vertical reading, the habit that misled experts in the Stanford study."},
       {t:"Check that the site has no spelling mistakes", why:"Many unreliable sites are well edited. Polish tells you little about who is behind it."},
-      {t:"Trust it, because `.org` sites are non-profits", why:"Anyone can register a `.org` address; it isn’t restricted to non-profits or reliable organisations."}
+      {t:"Trust it, because `.org` sites are always non-profits", why:"Anyone can register a `.org` address; it isn’t restricted to non-profits or reliable organisations."}
     ]},
     {id:"t1u6-l2-x3", type:"spot", q:"Lucía searches “Northwind Health Foundation” to find out who’s behind it. Tap the results that are good first clicks for that purpose.", ask:"is a good first click for checking who’s behind it", parts:[
       {t:"Sponsored · northwindhealth.org: Join the movement for natural health!", flag:false, why:"An advert paid for by the organisation itself. It will tell you only what they want you to hear."},
@@ -301,7 +301,7 @@ ICA.addUnit({
       {t:"Checking every claim made online", why:"Impossible. Fact-checkers choose claims to check and explain how they choose."}
     ]},
     {id:"t1u6-l2-x7", type:"mcq", q:"Dmitri wants to know what a little-known think tank is and who funds it. How should he use Wikipedia?", options:[
-      {t:"Read the article for an overview, check for warning banners, then follow its references to the original sources", ok:true, why:"That’s Wikipedia used well: a fast starting point whose value lies in its cited sources."},
+      {t:"Read it for an overview, then follow its references", ok:true, why:"Check for warning banners too. That’s Wikipedia used well: a fast starting point whose value lies in its cited sources."},
       {t:"Avoid it completely, because anyone can edit it", why:"Fact-checkers use Wikipedia routinely for orientation. The skill is using it as a start, not avoiding it."},
       {t:"Quote the Wikipedia article as the final word in his report", why:"For serious work, cite the sources Wikipedia points to, not Wikipedia itself."},
       {t:"Edit the article to add what he believes", why:"Wikipedia forbids original research; and editing doesn’t help him find out who funds the group."}
@@ -446,14 +446,14 @@ ICA.addUnit({
       ["Checking a voice message from a relative asking for money","Call them back on a number you already have","Voices can be cloned. A known number is a channel the scammer doesn’t control."]
     ]},
     {id:"t1u6-l3-x6", type:"mcq", q:"Priya gets a voice message that sounds exactly like her manager, asking her to buy gift cards urgently for a client and keep it quiet. What should she do?", options:[
-      {t:"Contact her manager through a channel she already uses (their known number, or in person) before doing anything", ok:true, why:"Voices can be cloned from short recordings. Urgency, secrecy and gift cards are classic scam signs. Checking through a known channel is the reliable test."},
+      {t:"Contact her manager through a channel she already uses", ok:true, why:"For example, their known number or in person, before doing anything. Voices can be cloned from short recordings. Urgency, secrecy and gift cards are classic scam signs. Checking through a known channel is the reliable test."},
       {t:"Buy the gift cards, because the voice is definitely her manager’s", why:"A convincing voice proves nothing today. The request itself is the warning sign."},
       {t:"Reply to the voice message asking if it’s really them", why:"If the account or number is controlled by a scammer, they’ll just say yes."},
       {t:"Run the audio through an online deepfake detector and act on the result", why:"Detectors are unreliable. Even a “real” verdict shouldn’t override a call to a known number."}
     ]},
     {id:"t1u6-l3-x7", type:"mcq", q:"Which statement about Content Credentials (C2PA) is accurate?", options:[
-      {t:"When present, they give a signed record of a file’s origin and edits, but a file without them isn’t necessarily fake", ok:true, why:"That’s the key point. They add evidence when present; their absence is normal and tells you little."},
-      {t:"Every photo taken on a modern phone carries them", why:"Only some devices and apps add them, and many platforms strip them on upload."},
+      {t:"When present, they record origin; their absence proves little", ok:true, why:"When present, they give a signed record of a file’s origin and edits. Their absence is normal and tells you little: a file without them isn’t necessarily fake."},
+      {t:"Every photo taken on a modern phone carries them automatically", why:"Only some devices and apps add them, and many platforms strip them on upload."},
       {t:"They prove whether an image is true or false", why:"Even Google’s help page says they don’t by themselves establish whether media is real or fake. They record origin and edits."},
       {t:"They can’t be removed from a file", why:"Metadata can be stripped altogether; a screenshot often loses it."}
     ]}
@@ -622,8 +622,8 @@ ICA.addUnit({
       {t:"“Rainfall in March was the highest since records began, weather service says”", b:0, why:"Reports a fact with its source."}
     ]},
     {id:"t1u6-l4-x5", type:"mcq", q:"A video features a famous heart surgeon confidently explaining how a country’s currency will collapse next year. How should Sione weigh it?", options:[
-      {t:"As the view of someone outside their field; look for what economists and reliable financial reporting say", ok:true, why:"Expertise is specific. The surgeon’s medical knowledge doesn’t transfer to economic forecasting."},
-      {t:"As highly reliable, because surgeons are highly educated", why:"Education in one field isn’t expertise in another."},
+      {t:"As a view from outside their field; check what economists say", ok:true, why:"Expertise is specific. The surgeon’s medical knowledge doesn’t transfer to economic forecasting, so look for what economists and reliable financial reporting say."},
+      {t:"As highly reliable, because heart surgeons are very highly educated", why:"Education in one field isn’t expertise in another."},
       {t:"As false, because surgeons are never right about money", why:"It may or may not be right; the point is that the surgeon’s authority doesn’t support it. Check relevant experts."},
       {t:"As reliable if the video has millions of views", why:"Popularity measures attention, not accuracy."}
     ]},
@@ -634,7 +634,7 @@ ICA.addUnit({
       {t:"It was posted online for anyone to comment on", why:"That describes a preprint or public comments, not formal peer review."}
     ]},
     {id:"t1u6-l4-x7", type:"mcq", q:"Oluwaseun sees a headline: “New study proves walking backwards doubles brain power.” The link goes to a preprint posted last week. What’s the most accurate way to describe it?", options:[
-      {t:"An early result not yet peer-reviewed; wait for review and for other studies before treating it as established", ok:true, why:"A preprint hasn’t been checked by reviewers yet, and “proves” overstates even a reviewed single study."},
+      {t:"An early result not yet peer-reviewed", ok:true, why:"Wait for review and for other studies before treating it as established. A preprint hasn’t been checked by reviewers yet, and “proves” overstates even a reviewed single study."},
       {t:"Established science, because it’s a study", why:"Being a study isn’t enough. This one hasn’t even been peer-reviewed."},
       {t:"Definitely false, because preprints are fake", why:"Preprints are a normal, legitimate way to share early research. They just haven’t been reviewed yet."},
       {t:"Reliable, because it’s new", why:"Newness doesn’t make a finding reliable; replication does."}
@@ -739,6 +739,7 @@ ICA.addUnit({
         "**Read laterally and find better coverage**, exactly as with any other claim (Lesson 2).",
         "**Don’t paste private information** (yours or other people’s) into AI tools without knowing how the service stores and uses it."
       ]},
+      "Unit 12, Lesson 4 goes further with AI assistants: how to ask well, how to check what comes back, and {{ai-privacy-disclosure|what you share when you paste something in}}.",
       {warn:"Asking the chatbot “are you sure?” or “is that source real?” is not a check. As the court case shows, it may confidently confirm its own mistake. Check outside the tool."}
     ]},
     {h:"Sharing responsibly and correcting kindly", body:[
@@ -790,9 +791,9 @@ ICA.addUnit({
       {t:"Correlations are meaningless, so ignore the study", why:"Correlations are useful clues. They just don’t, on their own, show cause."}
     ]},
     {id:"t1u6-l5-x6", type:"mcq", q:"Mei asks a chatbot for sources on a topic for her course. It lists three journal articles with authors, titles and years. What should she do before using them?", options:[
-      {t:"Search each exact title in quotation marks, or in a library or scholarly search, and read the real article", ok:true, why:"Chatbots can produce plausible but non-existent references. Only finding and reading the real article confirms it exists and says what’s claimed."},
+      {t:"Search each title in quotation marks and read the real article", ok:true, why:"She can use a search engine, a library catalogue or a scholarly search. Chatbots can produce plausible but non-existent references. Only finding and reading the real article confirms it exists and says what’s claimed."},
       {t:"Ask the chatbot whether the articles are real", why:"It may confidently say yes even when they’re invented, as happened in the 2023 court case."},
-      {t:"Use them; the details are too specific to be made up", why:"Invented references often have realistic authors, journals and years. Specificity isn’t proof."},
+      {t:"Use them; the details are far too specific to have been made up", why:"Invented references often have realistic authors, journals and years. Specificity isn’t proof."},
       {t:"Use them only if the chatbot added page numbers", why:"Page numbers can be invented too. Check outside the tool."}
     ]},
     {id:"t1u6-l5-x7", type:"order", q:"Put these steps for checking an important AI answer in a sensible order.", items:[
@@ -824,6 +825,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u6-q02","t1u6-q05","t1u6-q11","t1u6-q14","t1u6-q19","t1u6-q23","t1u6-q27","t1u6-q30","t1u6-q34","t1u6-q38","t1u6-q41","t1u6-q44"],
+  cpBank:[
+    {id:"t1u6-cp01", lesson:"t1u6-l1", level:1, q:"A headline says “Scientists warn: coffee is deadly”. The article itself says that drinking a moderate amount of coffee is fine for most adults. Which of Wardle’s types is this?", options:[
+      {t:"Fabricated content", why:"Fabricated content is made up entirely. Here the article is real; only the headline misrepresents it."},
+      {t:"Satire", why:"Satire is a joke not meant to fool anyone. This headline is presented as serious news."},
+      {t:"Imposter content", why:"Imposter content pretends to come from a real source. Nothing suggests a fake source here."},
+      {t:"False connection", ok:true, why:"In false connection, the headline, picture or caption doesn’t match the story. Much clickbait works this way."}
+    ]},
+    {id:"t1u6-cp02", lesson:"t1u6-l4", level:1, q:"On a news website, Ji-ho reads a piece called “Why our town needs a new stadium”. Its address contains `/opinion/`. What kind of content is it?", options:[
+      {t:"An opinion piece arguing for a view", ok:true, why:"The `/opinion/` section and the arguing title show it is opinion. It is useful for arguments, but it isn’t reporting."},
+      {t:"A news report of what happened in town", why:"A news report tells you what happened, as neutrally as possible. This piece argues for one side."},
+      {t:"Sponsored content from an advertiser", why:"Sponsored content is paid advertising, labelled “sponsored” or “partner content”. Nothing here says it was paid for."},
+      {t:"A primary source about the stadium", why:"A primary source is original evidence, such as the council’s own plan. An opinion piece comments on such sources."}
+    ]},
+    {id:"t1u6-cp03", lesson:"t1u6-l2", level:1, q:"Paloma sees a claim from a website she doesn’t know. She opens a new tab and searches for who runs that website. Which SIFT move is she doing?", options:[
+      {t:"Stop", why:"Stop is the pause before reacting. Searching about the website is the next move."},
+      {t:"Investigate the source", ok:true, why:"Investigating the source means reading laterally about the website, account or author to learn who is behind it."},
+      {t:"Find better coverage", why:"Finding better coverage looks at what reliable sources say about the claim, not about the website."},
+      {t:"Trace the claim to the original", why:"Tracing follows a claim, quote or photo back to where it first appeared. Paloma is checking the website’s owner."}
+    ]},
+    {id:"t1u6-cp04", lesson:"t1u6-l3", level:2, q:"A video labelled “Tornado hits our town this morning” is spreading. Oscar wants to check whether it is really new. What is the best first technical step?", options:[
+      {t:"Run it through an online AI detector and trust the score", why:"Detector scores can have high error rates, and the video may be real but old. Finding its earliest copy is more useful."},
+      {t:"Count how many times it has been shared", why:"Shares measure attention, not accuracy. Popular posts can be wrong."},
+      {t:"Reverse-search a clear still frame with two tools", ok:true, why:"Reverse-searching a screenshot of a distinctive frame can find earlier copies. Using two tools helps, because they index different parts of the web."},
+      {t:"Check whether the hands of people in the video look normal", why:"Looking for glitches tells little, and most misleading videos are real ones in the wrong context."}
+    ]},
+    {id:"t1u6-cp05", lesson:"t1u6-l5", level:2, q:"A survey finds that support for a new park rose from 20% to 30% of residents. Which headline describes the change correctly?", options:[
+      {t:"“Support up 10%”", why:"The difference is 10 percentage points. As a percent change, it is 10 ÷ 20 = 50%, not 10%."},
+      {t:"“Support up 10 percentage points”", ok:true, why:"30% − 20% = 10 percentage points. A percent change would be 50%, so saying “points” makes it clear."},
+      {t:"“Support up 50 percentage points”", why:"This mixes the two ideas. It rose 10 percentage points, which is a 50% increase."},
+      {t:"“Support has tripled”", why:"Tripling would mean going from 20% to 60%. Going from 20% to 30% is one and a half times."}
+    ]},
+    {id:"t1u6-cp06", lesson:"t1u6-l1", level:2, q:"Over a week, Amina sees the same rumour about a local factory in three different groups. It now feels true to her, though she has seen no evidence. What is happening, and what should she do?", options:[
+      {t:"Three groups agree, so the rumour is confirmed", why:"The same claim repeated isn’t three independent checks. Popularity measures attention, not accuracy."},
+      {t:"It’s malinformation, so she should report it", why:"Malinformation is true content used to harm. She doesn’t yet know whether the rumour is true at all."},
+      {t:"It’s a filter bubble, so she should delete all of her social media accounts", why:"Repetition making a claim feel true has its own name. Deleting her accounts doesn’t check the claim."},
+      {t:"Repetition makes it feel true; she should look for better coverage", ok:true, why:"This is the illusory truth effect. Searching for what reliable sources say about the claim is a quick check."}
+    ]},
+    {id:"t1u6-cp07", lesson:"t1u6-l4", level:2, q:"A post cites a study in the “International Journal of Advanced Global Medicine”. Kemal has never heard of it, and its website promises publication within two days for a fee. What is the best next step?", options:[
+      {t:"Trust it, because any journal article has been peer reviewed", why:"Some journals charge authors and do little or no real review. A journal name alone guarantees nothing."},
+      {t:"Read laterally about the journal to check its peer review", ok:true, why:"An impressive name and fast, paid publication are signs of a possible predatory journal. What others say about it is the check."},
+      {t:"Reject it, because all journals that charge authors are fake", why:"Charging is not proof of fraud on its own. Lateral reading tells him whether the journal does real review."},
+      {t:"Judge it by how professional the journal’s website looks", why:"Good design costs little. Experts in the Stanford study were fooled by exactly this."}
+    ]},
+    {id:"t1u6-cp08", lesson:"t1u6-l2", level:2, q:"A post claims that a major airline went out of business overnight and all flights are cancelled. What is the quickest useful check?", options:[
+      {t:"Read the comments under the post to see what other people think", why:"Comments show reactions, not evidence. Many people may simply be repeating the claim."},
+      {t:"Ask a chatbot whether it is true", why:"A chatbot can produce confident but wrong answers, and it may not know very recent news."},
+      {t:"Study the post’s account page and profile photo closely", why:"That is vertical reading. Checking the claim against reliable coverage is faster and stronger."},
+      {t:"Search for the claim and see if reliable news outlets are reporting it", ok:true, why:"This is Find better coverage. A dramatic event like this would be widely reported if true; if nobody reliable reports it, that is worth knowing."}
+    ]},
+    {id:"t1u6-cp09", lesson:"t1u6-l5", level:3, q:"A study finds that people who wear fitness trackers are fitter than people who don’t. An advert says: “Wearing our tracker makes you fit.” What is the main problem with that claim?", options:[
+      {t:"Already-fit people may simply be more likely to buy trackers", ok:true, why:"The study shows a correlation. Fit people choosing trackers would produce the same pattern, so it doesn’t show the tracker causes fitness."},
+      {t:"None; if two things go together, one must cause the other", why:"Going together is correlation. Causation needs stronger evidence, such as a well-designed experiment."},
+      {t:"The study must be fake, because correlations are always meaningless", why:"Correlations can be real and useful. They just don’t prove what causes what."},
+      {t:"The claim would be fine if the advert showed a bar chart", why:"A chart doesn’t turn a correlation into proof of cause. The reasoning is the problem."}
+    ]},
+    {id:"t1u6-cp10", lesson:"t1u6-l5", level:3, q:"A chatbot gives Thandiwe a statistic with a link. The link opens a real page from a reputable organisation, but the page never mentions that number. What should she do?", options:[
+      {t:"Use the number, because the linked source is real and reputable", why:"A real page that doesn’t contain the number doesn’t support it. The chatbot may have misread or invented it."},
+      {t:"Ask the chatbot whether it is sure about the number", why:"A chatbot may confidently confirm its own mistake. The check has to happen outside the tool."},
+      {t:"Not use it unless she finds it in a reliable source herself", ok:true, why:"The cited page doesn’t support the claim. She should read laterally and find better coverage, and use only what she can confirm."},
+      {t:"Use it, but round it to make it less exact", why:"Rounding an unsupported number doesn’t make it supported. It is still an unchecked claim."}
+    ]},
+    {id:"t1u6-cp11", lesson:"t1u6-l3", level:3, q:"A dramatic photo is spreading. A reverse search finds no matches, the file has no Content Credentials, and an online detector says “90% AI”. What is the most accurate conclusion?", options:[
+      {t:"It’s definitely AI-generated, because the detector says so", why:"Detectors can have high error rates. The score is one weak clue, not a verdict."},
+      {t:"It’s definitely real and new, because no earlier copies exist", why:"No matches doesn’t prove an image is new or genuine. It may be recent, private or cropped."},
+      {t:"It’s fake, because it has no Content Credentials", why:"Most images online have no credentials. Their absence tells you almost nothing."},
+      {t:"It’s unverified, so it shouldn’t be shared as true yet", ok:true, why:"None of these clues settles it. Unverified is an honest result: wait, ask where it came from, and look for other coverage."}
+    ]},
+    {id:"t1u6-cp12", lesson:"t1u6-l1", level:3, q:"A fake account invents a post saying the town’s dam will burst tonight, to cause panic. Rhea’s frightened neighbour believes it and forwards it to her street group. How should each be described?", options:[
+      {t:"Both are disinformation, because the content is false in both cases", why:"Being false isn’t enough for disinformation: that needs an intent to deceive or harm. The neighbour believes the post, so her forward is misinformation."},
+      {t:"The original post is disinformation; the neighbour’s forward is misinformation", ok:true, why:"Intent can change as content travels. The account made it up to cause panic (disinformation). The neighbour shares it sincerely, believing it (misinformation)."},
+      {t:"Both are misinformation, because nobody can ever know anyone’s intent", why:"Intent is often hard to see, but here we are told the account invented the post to cause panic. That makes the original disinformation."},
+      {t:"The neighbour’s forward is malinformation, because it causes real harm", why:"Malinformation is true information used to cause harm. This story is false, and the neighbour shares it in good faith."}
+    ]},
+  ],
   codex:[
    {id:"misinformation-types", title:"Misinformation, disinformation and malinformation", aka:["fake news","information disorder","seven types of misinformation"], tags:["misinformation","basics"],
     summary:"Three kinds of information disorder, sorted by two questions (is it false? is it meant to harm?), and seven common types of misleading content.",
@@ -1538,13 +1613,13 @@ ICA.addUnit({
      {t:"They spread only because bots shared them", why:"The researchers found bots spread true and false stories at similar rates; people drove the difference."}
    ]},
    {id:"t1u6-q05", lesson:"t1u6-l1", level:3, q:"Kenji sees a shocking post about his town and immediately wants to forward it to his family. What does this lesson suggest he do first?", options:[
-     {t:"Pause, because strong emotion is the moment we check least carefully, and check it before sharing", ok:true, why:"Emotional, surprising content spreads fast. Pausing is one of the most effective counter-moves."},
+     {t:"Pause, and check it before sharing", ok:true, why:"Strong emotion is the moment we check least carefully. Emotional, surprising content spreads fast, so pausing is one of the most effective counter-moves."},
      {t:"Forward it quickly in case it’s true and urgent", why:"Speed is how false content spreads. If it’s true and urgent, reliable sources will confirm it within minutes."},
      {t:"Share it only if it has thousands of shares", why:"Share counts measure attention, not accuracy."},
      {t:"Assume it’s false because it’s shocking", why:"Plenty of true news is shocking. The point is to check, not to assume either way."}
    ]},
    {id:"t1u6-q06", lesson:"t1u6-l1", level:1, q:"What is confirmation bias?", options:[
-     {t:"The tendency to accept and remember information that fits what we already believe", ok:true, why:"It lowers our guard for agreeable claims, which is when misinformation slips through."},
+     {t:"Accepting information that fits what we already believe", ok:true, why:"It’s the tendency to accept and remember agreeable information. It lowers our guard for those claims, which is when misinformation slips through."},
      {t:"A platform rule that confirms posts are true", why:"No such rule exists. Confirmation bias is a feature of human thinking."},
      {t:"Only believing information confirmed by two sources", why:"That’s a checking habit, not a bias."},
      {t:"A bias that affects only people with strong political views", why:"Everyone has it, regardless of politics or education."}
@@ -1556,27 +1631,27 @@ ICA.addUnit({
      {t:"Nothing: echo chambers don’t exist", why:"They exist; they’re just smaller than often claimed, and a minority are in them."}
    ]},
    {id:"t1u6-q08", lesson:"t1u6-l1", level:3, q:"Fatima’s aunt shared a false story about a local school closing. She genuinely believed it. What’s the most accurate and useful way for Fatima to think about it?", options:[
-     {t:"Her aunt shared misinformation in good faith; focus on the claim and offer a better source", ok:true, why:"Judge the claim, not the person. Most misinformation is shared by people trying to help."},
+     {t:"It’s misinformation shared in good faith; offer a better source", ok:true, why:"Judge the claim, not the person: focus on the claim and offer a better source. Most misinformation is shared by people trying to help."},
      {t:"Her aunt is spreading disinformation and should be called out publicly", why:"Disinformation requires intent to deceive. Public shaming also tends to backfire."},
      {t:"It doesn’t matter, because the story is local", why:"Local misinformation can cause real worry and harm. A kind correction helps."},
      {t:"It’s malinformation, because it’s about a school", why:"Malinformation is true information used to harm. This story is false."}
    ]},
    {id:"t1u6-q09", lesson:"t1u6-l1", level:2, q:"A satirical article from a humour website is screenshotted without the site’s name and shared widely by people who believe it. What has happened?", options:[
-     {t:"Satire lost its context and became misinformation as sincere people shared it", ok:true, why:"The same content changes category as it travels: the joke became a believed false claim."},
+     {t:"Satire lost its context and became misinformation", ok:true, why:"As sincere people shared it, the same content changed category: the joke became a believed false claim."},
      {t:"The humour site committed disinformation", why:"Its readers understood it as a joke. The problem arose when the context was removed."},
      {t:"It’s still harmless satire, whatever people believe", why:"Once people believe and act on it, it functions as misinformation."},
      {t:"It became malinformation", why:"Malinformation is true. This story is false."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u6-q10", lesson:"t1u6-l2", level:1, q:"What is lateral reading?", options:[
-     {t:"Leaving a page to see what other, independent sources say about it", ok:true, why:"Fact-checkers open new tabs to check a source’s reputation instead of studying it in isolation."},
+     {t:"Leaving a page to see what other sources say about it", ok:true, why:"Fact-checkers open new tabs to check a source’s reputation with other, independent sources instead of studying it in isolation."},
      {t:"Reading a page carefully from top to bottom", why:"That’s vertical reading, which the Stanford study found easy to fool."},
-     {t:"Reading only the headline and first paragraph", why:"That’s skimming. Lateral reading is about checking the source elsewhere."},
+     {t:"Reading only the headline and the first paragraph of a page", why:"That’s skimming. Lateral reading is about checking the source elsewhere."},
      {t:"Reading the comments under an article", why:"Comments aren’t independent, reliable sources about who’s behind a site."}
    ]},
    {id:"t1u6-q11", lesson:"t1u6-l2", level:2, q:"In the Stanford study comparing fact-checkers, historians and students, what did the fact-checkers do differently?", options:[
-     {t:"They quickly left unfamiliar sites to see what other sources said, and reached better conclusions faster", ok:true, why:"That’s lateral reading. They didn’t judge sites by their own appearance or claims."},
-     {t:"They read every page on the site before deciding", why:"That’s vertical reading, what the historians and students tended to do."},
+     {t:"They quickly left unfamiliar sites to see what others said", ok:true, why:"That’s lateral reading, and it got them to better conclusions faster. They didn’t judge sites by their own appearance or claims."},
+     {t:"They read every page on the site very carefully before deciding", why:"That’s vertical reading, what the historians and students tended to do."},
      {t:"They trusted sites with `.org` addresses", why:"`.org` addresses misled other participants. Anyone can register one."},
      {t:"They clicked the first search result each time", why:"They showed click restraint: scanning results before choosing."}
    ]},
@@ -1590,29 +1665,29 @@ ICA.addUnit({
      {t:"Trace claims, quotes and media to the original context", ok:true, why:"Tracing the quote to a book, speech or interview shows whether it’s real and accurately quoted."},
      {t:"Stop", why:"Stopping is the right start, but it doesn’t check the quote."},
      {t:"Investigate the source", why:"Investigating the meme account tells you about the account, not whether the scientist said it."},
-     {t:"Share it with a question mark", why:"That’s not a SIFT move, and it still spreads an unchecked quote."}
+     {t:"Share it with a question mark and let others check it for you", why:"That’s not a SIFT move, and it still spreads an unchecked quote."}
    ]},
    {id:"t1u6-q14", lesson:"t1u6-l2", level:2, q:"What does being a verified signatory of the IFCN Code of Principles signal about a fact-checking organisation?", options:[
-     {t:"It has committed to standards such as non-partisanship and transparency of sources, and been assessed against them", ok:true, why:"Signatories are assessed by independent assessors and must renew regularly. It’s a useful signal, not a guarantee."},
-     {t:"Every fact-check it publishes is correct", why:"No organisation is error-free. The code requires open corrections."},
+     {t:"It has committed to standards and been assessed against them", ok:true, why:"The standards include non-partisanship and transparency of sources. Signatories are assessed by independent assessors and must renew regularly. It’s a useful signal, not a guarantee."},
+     {t:"Every single fact-check that it publishes is proven to be correct", why:"No organisation is error-free. The code requires open corrections."},
      {t:"It is run by a government", why:"Many signatories are independent organisations or newsrooms. The code isn’t about government status."},
      {t:"It checks every viral claim", why:"Fact-checkers choose which claims to check and explain their selection."}
    ]},
    {id:"t1u6-q15", lesson:"t1u6-l2", level:3, q:"Hana searches for a claim and finds no fact-check about it. What should she conclude?", options:[
-     {t:"Nothing yet; fact-checkers cover only a fraction of claims, so she should find better coverage herself", ok:true, why:"No fact-check isn’t evidence either way. Look for reliable reporting or official sources."},
+     {t:"Nothing yet; fact-checkers cover only some claims", ok:true, why:"No fact-check isn’t evidence either way. She should find better coverage herself: reliable reporting or official sources."},
      {t:"The claim must be true", why:"Fact-checkers can’t cover everything. Absence of a check proves nothing."},
      {t:"The claim must be false", why:"Equally unjustified. She needs evidence, not an absence."},
      {t:"She should ask a fact-checker and share it while she waits", why:"Sharing an unchecked claim is what to avoid."}
    ]},
    {id:"t1u6-q16", lesson:"t1u6-l2", level:2, q:"Which is the best way to use Wikipedia when checking an unfamiliar organisation?", options:[
-     {t:"Read it for a quick overview, check for warning banners, and follow its references to original sources", ok:true, why:"Fact-checkers use it as a fast starting point and rely on its cited sources."},
-     {t:"Cite it as the final authority in a report", why:"For serious work, cite the sources it points to."},
+     {t:"Read it for an overview and follow its references", ok:true, why:"Fact-checkers use it as a fast starting point: check for warning banners, then rely on its cited sources."},
+     {t:"Cite it as the final authority in a report or essay", why:"For serious work, cite the sources it points to."},
      {t:"Never use it, because anyone can edit it", why:"Used well, it’s one of the fastest ways to find out who’s behind a source."},
      {t:"Only read the Talk page", why:"The Talk page helps on disputed topics, but the article and references come first."}
    ]},
    {id:"t1u6-q17", lesson:"t1u6-l2", level:3, q:"Tomás searches an organisation’s name. The first result is an ad from the organisation; the second is its About page; the third is a news investigation into its funding. What does click restraint suggest?", options:[
-     {t:"Scan all the results and open the independent news investigation first", ok:true, why:"Independent coverage about the source is what lateral reading needs. The ad and About page are the organisation describing itself."},
-     {t:"Click the first result, because it ranks highest", why:"It’s an ad. Ranking isn’t a measure of reliability."},
+     {t:"Scan all the results and open the news investigation first", ok:true, why:"Independent coverage about the source is what lateral reading needs. The ad and About page are the organisation describing itself."},
+     {t:"Click the first result, because it ranks highest on the page", why:"It’s an ad. Ranking isn’t a measure of reliability."},
      {t:"Read the About page, because it’s official", why:"It’s official self-description, which is exactly what can’t be relied on alone."},
      {t:"Give up, because the results disagree", why:"Different kinds of sources are expected; choose the independent one."}
    ]},
@@ -1624,7 +1699,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u6-q19", lesson:"t1u6-l3", level:1, q:"What does a reverse image search do?", options:[
-     {t:"Finds other places online where the same or similar image appears", ok:true, why:"You search with a picture instead of words, which can reveal where and when it first appeared."},
+     {t:"Finds other places online where an image appears", ok:true, why:"It finds places where the same or a similar image appears. You search with a picture instead of words, which can reveal where and when it first appeared."},
      {t:"Proves whether an image is AI-generated", why:"It can help find the origin, but it doesn’t detect AI on its own."},
      {t:"Shows the GPS location where every photo was taken", why:"Location data is usually stripped and isn’t what reverse search finds."},
      {t:"Flips the image so you can see hidden details", why:"“Reverse” refers to searching with an image, not mirroring it."}
@@ -1642,32 +1717,32 @@ ICA.addUnit({
      {t:"Use the default Best match", why:"Best match ranks by visual similarity, not age."}
    ]},
    {id:"t1u6-q22", lesson:"t1u6-l3", level:2, q:"Why is “look for weird hands and garbled text” a weak test for AI-generated images today?", options:[
-     {t:"Newer tools often get these details right, so finding no glitch proves nothing", ok:true, why:"Glitches can reveal AI, but their absence is common in modern AI images."},
+     {t:"Newer tools often get these details right", ok:true, why:"So finding no glitch proves nothing. Glitches can reveal AI, but their absence is common in modern AI images."},
      {t:"Real photos never have odd details", why:"Real photos often have odd details too, which makes glitch-hunting even less reliable."},
      {t:"AI images always have perfect hands", why:"Not always. The point is that glitches are no longer reliable either way."},
-     {t:"It’s actually the best test available", why:"Tracing the source and finding better coverage are much stronger."}
+     {t:"It’s actually the best test that is available today", why:"Tracing the source and finding better coverage are much stronger."}
    ]},
    {id:"t1u6-q23", lesson:"t1u6-l3", level:3, q:"Mei runs a viral image through an online AI detector, which says “95% human”. What should she conclude?", options:[
-     {t:"Very little; detectors can have substantial error rates, so she should trace the source and look for coverage", ok:true, why:"NIST’s review found detectors unreliable, especially on newer tools and compressed images."},
+     {t:"Very little; detectors can have high error rates", ok:true, why:"NIST’s review found detectors unreliable, especially on newer tools and compressed images. She should trace the source and look for coverage."},
      {t:"It’s definitely a real photo", why:"A detector score isn’t proof. It can be wrong in both directions."},
      {t:"It’s definitely AI, because detectors are biased toward “human”", why:"There’s no basis for reversing the result. It’s simply weak evidence."},
      {t:"She should try detectors until one agrees with her", why:"That’s confirmation bias in action."}
    ]},
    {id:"t1u6-q24", lesson:"t1u6-l3", level:1, q:"What are Content Credentials (C2PA)?", options:[
-     {t:"A signed record that can travel with a file, showing what made it, when, and what edits followed", ok:true, why:"They’re a provenance standard from the Coalition for Content Provenance and Authenticity."},
-     {t:"A government licence needed to post photos", why:"They’re a voluntary industry standard, not a licence."},
+     {t:"A signed record of what made a file and how it was edited", ok:true, why:"It can travel with the file, showing what made it, when, and what edits followed. It’s a provenance standard from the Coalition for Content Provenance and Authenticity."},
+     {t:"A government licence that you need before you can post photos", why:"They’re a voluntary industry standard, not a licence."},
      {t:"A list of a photographer’s qualifications", why:"They describe the file’s origin and edits, not a person’s training."},
      {t:"A watermark that proves an image is true", why:"Credentials record origin; they don’t prove what a scene shows is true."}
    ]},
    {id:"t1u6-q25", lesson:"t1u6-l3", level:3, q:"Sione checks a dramatic photo and finds it has no Content Credentials. What does that tell him?", options:[
-     {t:"Almost nothing; most images have none, and screenshots and uploads often strip them", ok:true, why:"Absence of credentials is normal. It means “unknown”, not “fake”."},
+     {t:"Almost nothing; most images have no credentials", ok:true, why:"Absence is normal, and screenshots and uploads often strip them. It means “unknown”, not “fake”."},
      {t:"It’s fake", why:"Most genuine photos have no credentials either."},
      {t:"It’s genuine", why:"Absence doesn’t confirm anything."},
-     {t:"It was made with AI", why:"Many AI images also lack credentials. Absence can’t tell you either way."}
+     {t:"It was made with AI, which never adds credentials", why:"Some AI tools do add credentials, and many AI images lack them. Absence can’t tell you either way."}
    ]},
    {id:"t1u6-q26", lesson:"t1u6-l3", level:3, q:"Lucía gets a video call from someone who looks and sounds like her brother, asking her to send money urgently and not tell anyone. What should she do?", options:[
-     {t:"End the call and contact her brother, or another relative, on a number she already has", ok:true, why:"Faces and voices can be faked. Verifying through a known channel is the reliable check."},
-     {t:"Send the money because she can see his face", why:"Real-time face and voice imitation is possible. Urgency and secrecy are warning signs."},
+     {t:"Hang up and contact her brother on a number she already has", ok:true, why:"She could also contact another relative. Faces and voices can be faked; verifying through a known channel is the reliable check."},
+     {t:"Send the money, because she can see his face and hear his voice", why:"Real-time face and voice imitation is possible. Urgency and secrecy are warning signs."},
      {t:"Ask him to turn his head to prove he’s real", why:"Such tricks aren’t reliable tests. Use a channel the caller doesn’t control."},
      {t:"Run the call through a deepfake detector", why:"Detectors are unreliable. A call to a known number is better."}
    ]},
@@ -1697,28 +1772,28 @@ ICA.addUnit({
      {t:"A social media post sharing the article", why:"That’s even further from the original."}
    ]},
    {id:"t1u6-q31", lesson:"t1u6-l4", level:1, q:"Which statement about peer review is accurate?", options:[
-     {t:"Experts check research before publication, but peer-reviewed work can still be wrong", ok:true, why:"It’s a quality filter; later research tests and sometimes overturns findings."},
+     {t:"Experts check research before publication, but it can be wrong", ok:true, why:"It’s a quality filter; later research tests and sometimes overturns findings."},
      {t:"It proves a study’s conclusions are true", why:"Peer-reviewed work isn’t necessarily correct or conclusive."},
-     {t:"It means the study was repeated by another team", why:"Replication is separate and usually happens after publication."},
+     {t:"It means the study has been repeated by another, independent team", why:"Replication is separate and usually happens after publication."},
      {t:"Anyone can peer-review by leaving a comment", why:"Reviewers are experts chosen by the journal’s editor."}
    ]},
    {id:"t1u6-q32", lesson:"t1u6-l4", level:3, q:"A well-known actor posts a long video explaining that a common medicine is dangerous. How should Dmitri weigh it?", options:[
-     {t:"Look for what medical regulators, health services and relevant researchers say; the actor’s fame isn’t medical expertise", ok:true, why:"Expertise is specific. Find relevant experts and better coverage."},
+     {t:"Check what medical experts say; fame isn’t expertise", ok:true, why:"Look for what medical regulators, health services and relevant researchers say. Expertise is specific, and the actor’s fame isn’t medical expertise."},
      {t:"Trust it, because the actor seems sincere", why:"Sincerity isn’t evidence. People can be sincere and wrong."},
      {t:"Dismiss it, because actors are always wrong about health", why:"It might be right or wrong; check the evidence rather than judging by profession."},
      {t:"Trust it if the video has many views", why:"Views measure attention, not accuracy."}
    ]},
    {id:"t1u6-q33", lesson:"t1u6-l4", level:2, q:"An article on a news site is labelled “Partner content” and praises a brand of mattress. What is it?", options:[
-     {t:"Sponsored content: advertising designed to look like an article", ok:true, why:"“Partner content” is a common label for paid content."},
-     {t:"An independent product review by the newsroom", why:"The label signals the advertiser paid for it."},
+     {t:"Sponsored content: advertising made to look like an article", ok:true, why:"“Partner content” is a common label for paid content."},
+     {t:"An independent product review written by the newsroom’s staff", why:"The label signals the advertiser paid for it."},
      {t:"An opinion column by a staff writer", why:"Opinion pieces are labelled as opinion or comment, not partner content."},
      {t:"A peer-reviewed study", why:"It isn’t research at all; it’s advertising."}
    ]},
    {id:"t1u6-q34", lesson:"t1u6-l4", level:3, q:"Kenji reads a headline: “Study proves chocolate improves memory.” The study was a preprint posted last week, in 30 people. What’s the most accurate summary?", options:[
-     {t:"An early, small, not-yet-reviewed result; “proves” overstates it", ok:true, why:"A small preprint is a starting point. Peer review and replication are still to come."},
+     {t:"An early, small, unreviewed result; “proves” overstates it", ok:true, why:"A small preprint is a starting point. Peer review and replication are still to come."},
      {t:"Proven, because it’s a study", why:"Being a study doesn’t make a finding proven, especially an unreviewed one."},
      {t:"False, because preprints are not real research", why:"Preprints are legitimate early research; they just haven’t been reviewed."},
-     {t:"Reliable, because 30 people is a large sample", why:"Thirty is small for drawing firm conclusions about memory."}
+     {t:"Reliable, because 30 people is a large enough sample for this", why:"Thirty is small for drawing firm conclusions about memory."}
    ]},
    {id:"t1u6-q35", lesson:"t1u6-l4", level:1, q:"Which operator excludes a word from Google search results?", options:[
      {t:"A minus sign directly before the word, like `-car`", ok:true, why:"Google documents the minus sign for excluding words."},
@@ -1727,8 +1802,8 @@ ICA.addUnit({
      {t:"`site:car`", why:"`site:` limits results to a website or domain."}
    ]},
    {id:"t1u6-q36", lesson:"t1u6-l4", level:2, q:"What’s the main difference between an opinion piece and a news report?", options:[
-     {t:"An opinion piece argues for a view; a news report tells you what happened, with sources", ok:true, why:"Both are useful, for different jobs. An argument isn’t proof that something happened."},
-     {t:"Opinion pieces are always false", why:"They can contain accurate facts and strong arguments; they just aren’t neutral reporting."},
+     {t:"An opinion piece argues for a view; a report says what happened", ok:true, why:"A news report tells you what happened, with sources. Both are useful, for different jobs. An argument isn’t proof that something happened."},
+     {t:"Opinion pieces are always false, while news reports are always true", why:"They can contain accurate facts and strong arguments; they just aren’t neutral reporting."},
      {t:"News reports never contain quotes", why:"News reports usually quote sources."},
      {t:"There’s no difference online", why:"Most news sites label opinion separately, though the labels can be small."}
    ]},
@@ -1740,16 +1815,16 @@ ICA.addUnit({
      {t:"It rose by 33%", why:"That divides by the new value (1 ÷ 3). Percent change divides by the starting value."}
    ]},
    {id:"t1u6-q38", lesson:"t1u6-l5", level:3, q:"A headline says a food “triples your risk” of a rare illness. The risk goes from 1 in 100,000 to 3 in 100,000. What’s the most useful way to describe it?", options:[
-     {t:"About 2 extra cases per 100,000 people: a large relative increase in a very small risk", ok:true, why:"Absolute risk shows how much it matters: 3 − 1 = 2 per 100,000."},
+     {t:"About 2 extra cases per 100,000: a big rise in a tiny risk", ok:true, why:"Absolute risk shows how much it matters: 3 − 1 = 2 per 100,000. It’s a large relative increase in a very small risk."},
      {t:"A 300% chance of getting ill", why:"That misreads relative risk as a probability. The actual chance is 3 in 100,000."},
      {t:"Nothing changed", why:"The risk did rise; it’s just still very small."},
-     {t:"Two-thirds of people who eat it get ill", why:"Only 3 in 100,000 do."}
+     {t:"Two-thirds of the people who eat this food will get the illness", why:"Only 3 in 100,000 do."}
    ]},
    {id:"t1u6-q39", lesson:"t1u6-l5", level:1, q:"Why is a bar chart with an axis starting at 95 misleading for values of 96 and 98?", options:[
-     {t:"We compare bar lengths, so a small difference looks huge when bars don’t start at zero", ok:true, why:"A truncated axis on a bar chart exaggerates differences. Bar charts should start at zero."},
+     {t:"Small differences look huge when bars don’t start at zero", ok:true, why:"We compare bar lengths, so a truncated axis on a bar chart exaggerates differences. Bar charts should start at zero."},
      {t:"Charts must always show values above 100", why:"No such rule exists."},
      {t:"Bar charts can’t show decimals", why:"They can. The problem is the axis start."},
-     {t:"It isn’t misleading, because the numbers are correct", why:"Correct numbers can still give a false visual impression."}
+     {t:"It isn’t misleading, because all the numbers shown are correct", why:"Correct numbers can still give a false visual impression."}
    ]},
    {id:"t1u6-q40", lesson:"t1u6-l5", level:2, q:"Ice cream sales and sunscreen sales rise and fall together. What best explains this?", options:[
      {t:"A third factor, hot sunny weather, drives both", ok:true, why:"The Australian Bureau of Statistics uses this example: correlation from a shared cause."},
@@ -1758,15 +1833,15 @@ ICA.addUnit({
      {t:"It’s pure coincidence", why:"There’s a clear shared cause, the weather."}
    ]},
    {id:"t1u6-q41", lesson:"t1u6-l5", level:1, q:"How does a large language model (the technology behind AI chatbots) produce its answers?", options:[
-     {t:"By predicting likely next words based on patterns learned from huge amounts of text", ok:true, why:"That’s why answers are fluent, and why fluent doesn’t mean checked."},
+     {t:"By predicting likely next words from patterns in text", ok:true, why:"It learns these patterns from huge amounts of text. That’s why answers are fluent, and why fluent doesn’t mean checked."},
      {t:"By looking up each answer in a database of verified facts", why:"It doesn’t check a verified database by default; it generates text from learned patterns."},
      {t:"By asking human experts in real time", why:"Answers are generated automatically."},
      {t:"By copying the first search result word for word", why:"Some tools search the web, but answers are generated, not simply copied."}
    ]},
    {id:"t1u6-q42", lesson:"t1u6-l5", level:3, q:"Ana’s chatbot gives her a quote from a historian, with a book title and page number. What’s the best check?", options:[
-     {t:"Search a distinctive part of the quote in quotation marks, and look up the book itself", ok:true, why:"Quotes and references can be invented with realistic details. Check outside the tool."},
+     {t:"Search part of the quote in quotation marks, and find the book", ok:true, why:"Quotes and references can be invented with realistic details. Check outside the tool."},
      {t:"Ask the chatbot if the quote is genuine", why:"It may confidently confirm its own error, as in the 2023 court case."},
-     {t:"Trust it because the page number is specific", why:"Specific details can be invented too."},
+     {t:"Trust it, because the book title and page number are so specific", why:"Specific details can be invented too."},
      {t:"Ask a second chatbot", why:"Another AI may repeat or invent errors. Check the actual source."}
    ]},
    {id:"t1u6-q43", lesson:"t1u6-l5", level:2, q:"In the 2025 study led by the BBC and coordinated by the European Broadcasting Union, what share of AI assistants’ news answers had at least one significant issue?", options:[
@@ -1776,14 +1851,14 @@ ICA.addUnit({
      {t:"None; all answers were accurate", why:"The study found widespread sourcing and accuracy problems."}
    ]},
    {id:"t1u6-q44", lesson:"t1u6-l5", level:3, q:"Oluwaseun realises a post he shared yesterday was false. What’s the best response?", options:[
-     {t:"Delete or edit it and post a short correction with a reliable source", ok:true, why:"Correcting openly limits the spread and models good practice."},
+     {t:"Delete or edit it and post a short correction", ok:true, why:"Correcting openly, with a reliable source, limits the spread and models good practice."},
      {t:"Quietly delete it and say nothing", why:"Deleting helps, but people who saw it won’t learn it was false."},
-     {t:"Leave it, because deleting looks bad", why:"The false post keeps spreading. Correcting builds trust."},
+     {t:"Leave it up, because deleting it would look bad", why:"The false post keeps spreading. Correcting builds trust."},
      {t:"Argue that it might still be true", why:"If he’s found it’s false, defending it spreads misinformation further."}
    ]},
    {id:"t1u6-q45", lesson:"t1u6-l5", level:2, q:"Which response to a relative’s false post is most likely to help?", options:[
-     {t:"A private, friendly message focused on the claim, with a link to a reliable source", ok:true, why:"Private, respectful and specific responses avoid defensiveness and offer something to check."},
-     {t:"A public reply calling the post stupid", why:"Public shaming tends to make people dig in."},
+     {t:"A private, friendly message with a reliable source", ok:true, why:"Private, respectful responses focused on the claim avoid defensiveness and offer something to check."},
+     {t:"A public reply in the comments calling the post stupid", why:"Public shaming tends to make people dig in."},
      {t:"Ten links with no explanation", why:"Overwhelming and impersonal; one clear source works better."},
      {t:"Ignoring it and complaining to others", why:"Doesn’t correct anything, and isn’t kind."}
    ]}

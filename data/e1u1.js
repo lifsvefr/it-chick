@@ -91,10 +91,10 @@ ICA.addUnit({
       ["“This study examines… Data from 1,200 households were analysed… Results show… These findings suggest…”","Abstract","It moves through purpose, method, results and meaning in a few sentences: the shape of an abstract."]
     ]},
     {id:"e1u1-l1-x3", type:"mcq", q:"Which statement about the BALEAP Can Do Framework is accurate?", options:[
-      {t:"It lists what students need to be able to do in English at postgraduate level in UK universities, and teachers use it to plan EAP courses.", ok:true, why:"Right. It describes abilities for postgraduate study, organised by reading, writing, listening and speaking."},
-      {t:"It is an English test that gives you a score for university entry.", why:"It has no scores and is not a test. It is a framework for planning teaching and assessment."},
+      {t:"It lists what postgraduate students in UK universities need to be able to do in English.", ok:true, why:"Right. It describes abilities for postgraduate study, organised by reading, writing, listening and speaking, and teachers use it to plan EAP courses."},
+      {t:"It is an English test that gives every student a score that universities use for entry.", why:"It has no scores and is not a test. It is a framework for planning teaching and assessment."},
       {t:"It is a list of the 570 most important academic words.", why:"That describes the Academic Word List (Lesson 3), a different thing. The Can Do Framework lists abilities, not words."},
-      {t:"It replaces the six CEFR levels from A1 to C2.", why:"It doesn’t replace the CEFR. It describes academic abilities at one level of study; the CEFR describes general language levels."}
+      {t:"It replaces the six CEFR levels from A1 to C2 with its own levels for academic study.", why:"It doesn’t replace the CEFR. It describes academic abilities at one level of study; the CEFR describes general language levels."}
     ]},
     {id:"e1u1-l1-x4", type:"sort", q:"Sort these spellings: which is the usual American spelling and which the usual British spelling?", buckets:["Usual American spelling","Usual British spelling"], items:[
       {t:"color", b:0, why:"American English drops the u in words like color and behavior."},
@@ -235,7 +235,7 @@ ICA.addUnit({
       {t:"Moving livestock between different grazing areas with the seasons", ok:true, why:"Right. The phrase after “that is” defines the word: herds move between summer and winter pastures."},
       {t:"Selling animals at a market", why:"Nothing in the sentence mentions selling. The definition clue is about moving herds."},
       {t:"Building permanent farms in one place", why:"The opposite: the herds move between two places each year."},
-      {t:"Moving from the countryside to a city to find work", why:"That would be rural–urban migration. Here the herds and families move between pastures."}
+      {t:"Moving away from the countryside to a city in order to find paid work", why:"That would be rural–urban migration. Here the herds and families move between pastures."}
     ]},
     {id:"e1u1-l2-x5", type:"order", q:"Put the parts of a typical IMRaD research article in the order they usually appear, from the top.", items:[
       {t:"Title and author information", why:"The title and authors come first."},
@@ -534,9 +534,9 @@ ICA.addUnit({
       {t:"alleges", b:1, why:"Strongly signals doubt; it suggests the claim is unproven."}
     ]},
     {id:"e1u1-l4-x7", type:"mcq", q:"A literature review says: “Rahman (2021) **claims** that remote work raises productivity.” In academic writing, what does choosing *claims* rather than *shows* usually signal?", options:[
-      {t:"The writer is reporting the idea without accepting it as established, and may go on to question it.", ok:true, why:"Right. *Claims* usually marks distance. Read on: a “However…” often follows."},
+      {t:"The writer is reporting the idea without accepting it as established.", ok:true, why:"Right. *Claims* usually marks distance, and the writer may go on to question it. Read on: a “However…” often follows."},
       {t:"The writer agrees strongly with Rahman.", why:"Strong agreement would be signalled by *shows* or *demonstrates*, which present the finding as true."},
-      {t:"Nothing: claims and shows mean exactly the same.", why:"They differ in stance. *Shows* accepts the finding; *claims* keeps a distance."},
+      {t:"Nothing: in academic writing, *claims* and *shows* mean exactly the same thing.", why:"They differ in stance. *Shows* accepts the finding; *claims* keeps a distance."},
       {t:"Rahman’s study used no data.", why:"The verb tells you about the writer’s attitude, not about Rahman’s methods. You would need to check the study."}
     ]}
    ],
@@ -626,8 +626,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"e1u1-l5-x1", type:"mcq", q:"Which description of note-making matches this lesson?", options:[
-      {t:"Selecting the important points, organising them and writing them mostly in your own words, linked to your own questions.", ok:true, why:"Right. Note-making adds thinking: choosing, organising and rephrasing."},
-      {t:"Copying as many sentences from the source as possible, so nothing is missed.", why:"That is copying, and it makes accidental plagiarism more likely later."},
+      {t:"Selecting the important points, organising them and writing them in your own words.", ok:true, why:"Right. Note-making adds thinking: choosing, organising and rephrasing, linked to your own questions."},
+      {t:"Copying as many sentences from the source as possible, so that nothing important is missed.", why:"That is copying, and it makes accidental plagiarism more likely later."},
       {t:"Highlighting most of each page in different colours.", why:"Highlighting marks a text but doesn’t organise or rephrase it. Heavy highlighting often shows little selection."},
       {t:"Recording a lecture so you never need notes.", why:"A recording keeps everything but selects nothing. You still need to make notes from it."}
     ]},
@@ -711,6 +711,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e1u1-q02","e1u1-q06","e1u1-q11","e1u1-q15","e1u1-q19","e1u1-q22","e1u1-q25","e1u1-q29","e1u1-q32","e1u1-q35","e1u1-q39","e1u1-q43"],
+  cpBank:[
+   {id:"e1u1-cp01", lesson:"e1u1-l1", level:1, q:"An article has sections called “Studies of diet”, “Studies of exercise” and “Gaps in the evidence”. It reports no new data and lists 240 references. Which genre is it most likely to be?", options:[
+     {t:"A research article", why:"A research article reports **new** research, often with Methods and Results sections. This text has no new data of its own."},
+     {t:"A textbook", why:"A textbook teaches a field to students with definitions, examples and review questions. Sections that assess studies, plus 240 references, point elsewhere."},
+     {t:"A review article", ok:true, why:"A review article summarises and assesses many earlier studies. Typical signs: sections by theme and a very long reference list."},
+     {t:"A report", why:"A report informs a decision, with an executive summary, findings and recommendations. Nothing here recommends an action."}]},
+   {id:"e1u1-cp02", lesson:"e1u1-l1", level:1, q:"Yuki’s university has no spelling rule. Which list of words from her essay is **consistent**?", options:[
+     {t:"analyze, behaviour, theater, traveled", why:"This is mixed: *behaviour* is British and the other three are American. Choose one variety and use it all the way through."},
+     {t:"analyse, color, centre, travelled", why:"This is mixed: *color* is American and the others are British. Both varieties are correct, but not mixed in one text."},
+     {t:"analyze, behavior, centre, traveled", why:"This is mixed: *centre* is British and the others are American."},
+     {t:"analyse, behaviour, centre, travelled", ok:true, why:"All four are British spellings. Either variety is correct; what matters is using one throughout the text."}]},
+   {id:"e1u1-cp03", lesson:"e1u1-l2", level:1, q:"Rafael needs one fact from a 20-page study: how many people took part. What is the fastest sensible way to find it?", options:[
+     {t:"Scan for numbers and for words such as “participants” or “n =”", ok:true, why:"Finding one number is a scanning task. Sample sizes stand out as numbers next to words like *participants* or “n =”."},
+     {t:"Skim the title, the headings and the first sentence of each paragraph", why:"Skimming gives the gist and the shape of a text. It is for deciding whether a text is relevant, not for finding one number."},
+     {t:"Read the whole study intensively, from the beginning", why:"Intensive reading is for understanding an argument or method in detail. For one fact it wastes a lot of time."},
+     {t:"Read only the conclusion, where the main points are", why:"A conclusion gives the main message, and the sample size is often not there. Searching for the number is faster and more reliable."}]},
+   {id:"e1u1-cp04", lesson:"e1u1-l2", level:2, q:"“Unlike *nomadic* groups, which move with the seasons, the villagers stayed in one place all year.” What does *nomadic* most likely mean, and which clue shows it?", options:[
+     {t:"Living in villages; a definition clue", why:"The word *unlike* tells you that nomadic groups are the **opposite** of the villagers, who stayed in one place."},
+     {t:"Moving from place to place; an example clue", why:"The meaning is right, but there are no example signals such as *such as* or *including*. The signal here is *unlike*."},
+     {t:"Moving from place to place; a contrast clue", ok:true, why:"*Unlike* sets nomadic groups against villagers who stayed in one place, and “which move with the seasons” confirms that they move."},
+     {t:"Growing crops; a word-part clue", why:"Nothing in the sentence mentions crops, and no prefix or suffix gives this meaning. Always check a guess against the context."}]},
+   {id:"e1u1-cp05", lesson:"e1u1-l2", level:2, q:"Grace wants to know what the authors themselves see as the weaknesses of their study. Where should she look, and for what kind of phrase?", options:[
+     {t:"In the Methods, for phrases such as “Participants were recruited…”", why:"The Methods describe what was done. Authors usually discuss the weaknesses later, in the Discussion."},
+     {t:"Near the end of the Discussion, for phrases such as “One limitation of this study is…”", ok:true, why:"Writers usually admit weaknesses near the end of the Discussion, with signposts like *One limitation…* or *Caution is needed…*."},
+     {t:"In the Introduction, for phrases such as “Little is known about…”", why:"That phrase signals a gap in **earlier** research, which the study tries to fill. It is not a weakness of this study."},
+     {t:"In the abstract, for phrases such as “The results show…”", why:"That phrase signals what was found, not what was weak. Look for limitation signposts in the Discussion."}]},
+   {id:"e1u1-cp06", lesson:"e1u1-l3", level:2, q:"Pedro meets the word *analysing* and looks it up in a learner dictionary. Under which headword will he most likely find it?", options:[
+     {t:"*analyse*, because dictionaries list a verb’s *-ing* form under the verb itself", ok:true, why:"A lemma is a headword plus its inflected forms with the same part of speech: *analyse, analyses, analysed, analysing*."},
+     {t:"*analysis*, because all members of a word family share one dictionary entry", why:"*Analysis* is in the same family but is a different lemma (a noun), so it usually has its own entry."},
+     {t:"*analytical*, because the adjective is the base form of the whole family", why:"The base of this family is the verb *analyse*. *Analytical* is a derived form with its own entry."},
+     {t:"*analysing*, because every form of a word has its own entry", why:"Inflected forms such as *-ing* and *-ed* forms are normally listed under their headword, not separately."}]},
+   {id:"e1u1-cp07", lesson:"e1u1-l3", level:2, q:"Which study habit uses the same memory principle that makes word cards work well?", options:[
+     {t:"Rereading highlighted notes several times the night before a test", why:"Rereading feels familiar but never makes you recall anything. It is also crammed into one session instead of spaced out."},
+     {t:"Copying lecture notes out neatly in full sentences", why:"Copying records information but doesn’t test your memory. It can also lead to notes full of the source’s wording."},
+     {t:"Covering the Cornell notes column and answering each cue aloud", ok:true, why:"The Cornell *recite* step is retrieval practice: you try to recall before you check, just as you do when you turn a word card."},
+     {t:"Drawing a colourful mind map with the topic in the centre", why:"Mind maps show connections well, but drawing one is not a self-test. The principle behind word cards is recalling before checking."}]},
+   {id:"e1u1-cp08", lesson:"e1u1-l3", level:3, q:"A classmate says: “The top AVL families covered about 14% of the academic texts in COCA, but the AWL only about 7%. So the AWL is useless.” What is the best response?", options:[
+     {t:"Agree: a list with lower coverage in any corpus should not be used by learners", why:"Lower coverage in one comparison doesn’t make a list useless. The AWL also covered 10% of its own academic corpus."},
+     {t:"Disagree: the AWL is the official university list, so the AVL figures must be wrong", why:"Neither list is official. The AWL is one well-researched list; the AVL and OPAL are alternatives."},
+     {t:"Agree: the AVL came from a bigger corpus, so learners can ignore the AWL", why:"A bigger corpus is an advantage, but coverage depends on which texts are measured. Neither list is the only guide."},
+     {t:"Disagree: coverage depends on the texts measured, and COCA is the AVL’s source", ok:true, why:"The comparison used COCA, the corpus the AVL was built from. Coverage always depends on the texts you measure, so treat both lists as guides, not rivals."}]},
+   {id:"e1u1-cp09", lesson:"e1u1-l4", level:3, q:"Kofi unpacks this sentence: “The expansion of the reading programme was followed by an improvement in attendance.” Which plain version is most faithful?", options:[
+     {t:"Because [someone] expanded the reading programme, attendance improved.", why:"*Was followed by* only gives the order in time. *Because* adds a cause that the sentence doesn’t state (compare *led to*)."},
+     {t:"After [someone] expanded the reading programme, attendance improved.", ok:true, why:"The nouns become verbs again (*expand*, *improve*), *after* keeps the time order, and the unnamed actor stays unnamed."},
+     {t:"The reading programme expanded because attendance improved.", why:"This reverses the order and adds a cause. In the original, the expansion came first."},
+     {t:"Attendance improved, so [someone] expanded the reading programme.", why:"This puts the two events in the wrong order and adds a cause that is not in the sentence."}]},
+   {id:"e1u1-cp10", lesson:"e1u1-l4", level:3, q:"An abstract says: “The results suggest that the scheme may reduce absence in some schools.” A news site reports: “Study proves scheme cuts school absence.” What has changed?", options:[
+     {t:"The hedges (*suggest*, *may*, *in some schools*) have become a booster, so the claim is now stronger than the evidence", ok:true, why:"The abstract makes the claim exactly as strong as one study allows. The headline removes the caution and overclaims."},
+     {t:"Nothing important: *suggest* and *prove* are both neutral reporting verbs", why:"*Suggest* is tentative and *prove* is a strong booster. They send very different messages about certainty."},
+     {t:"The news site has corrected the abstract, which was unsure because of weak English", why:"Hedging shows care about evidence, not weak English. Expert writers hedge a lot."},
+     {t:"The abstract used a booster, and the news site has made the claim more careful", why:"It is the other way round: *suggest* and *may* are hedges, and *proves* is a booster."}]},
+   {id:"e1u1-cp11", lesson:"e1u1-l5", level:2, q:"Nadia’s essay has a sentence almost identical to a source, with no quotation marks. She copied it from her own notes, thinking the words were hers. Which habit would most likely have prevented this?", options:[
+     {t:"Using a mind map instead of linear notes, so the source’s sentences get broken up", why:"The method is not the problem. Any kind of notes can hold copied wording if you write them while looking at the source."},
+     {t:"Reading the source twice before making notes, so she understands it fully", why:"Understanding first helps, but if she writes with the source in view, its phrases can still slip into her notes."},
+     {t:"Checking each sentence of the source with a translation tool before noting it", why:"Translation can help check meaning, but it does nothing to keep the source’s wording out of her notes."},
+     {t:"Writing notes with the source covered, and marking any exact words as quotations", ok:true, why:"Writing from memory keeps notes in her own words, and marked quotations show later exactly which words came from the source."}]},
+   {id:"e1u1-cp12", lesson:"e1u1-l5", level:3, q:"Arjun searches a corpus for *emphasis* and sees these lines: “…places great emphasis on practical skills…”, “…the emphasis on testing has grown…”, “…with a strong emphasis on safety…”, “…a new emphasis on local food…”. What should he take from them?", options:[
+     {t:"*Emphasis* goes with *on*; he can use that pattern in his own sentence", ok:true, why:"Reading down the lines shows one pattern: *emphasis on* something. Corpus evidence is for patterns; then you write your own sentence."},
+     {t:"*Emphasis* can take any preposition, as these lines show", why:"All four lines show the same preposition, *on*. Noun + preposition collocations are patterns, not free choices."},
+     {t:"He should copy one of these lines into his essay, because experts wrote it", why:"Use a corpus to learn how a word behaves, not to copy sentences. Note the pattern and write your own."},
+     {t:"Most academic nouns take *on* as well, so *increase* and *reason* will too", why:"Each noun has its own pattern: *an increase in* prices, *a reason for* the change. Check each word separately."}]}
+  ],
   codex:[
    {id:"academic-english", title:"Academic English and EAP", aka:["English for Academic Purposes","EAP","academic register"], tags:["academic english","foundations"],
     summary:"The English used for study and research, and the field (EAP) that teaches it: same grammar as everyday English, used in a more precise, compact and careful way.",
@@ -982,12 +1044,12 @@ ICA.addUnit({
      {t:"Rapid urbanisation has placed considerable pressure on housing supply in many low-income countries.", ok:true, why:"It is precise, compact (“rapid urbanisation” packs a whole clause) and careful (“in many low-income countries”, not everywhere)."},
      {t:"Loads of people are moving to cities and it’s a total disaster for housing.", why:"“Loads of”, “total disaster” and the contraction make this informal and overstated."},
      {t:"Cities are getting bigger everywhere and nobody can find a house.", why:"“Everywhere” and “nobody” overgeneralise; academic English limits claims to what evidence supports."},
-     {t:"The utilisation of metropolitan agglomerations is indubitably catastrophic.", why:"Long words alone don’t make good academic English; this is vague and overclaimed (“indubitably catastrophic”)."}]},
+     {t:"The utilisation of metropolitan agglomerations by populations is indubitably catastrophic for residential provision.", why:"Long words alone don’t make good academic English; this is vague and overclaimed (“indubitably catastrophic”)."}]},
    {id:"e1u1-q03", lesson:"e1u1-l1", level:1, q:"What is a lingua franca?", options:[
      {t:"A language used between people who don’t share a first language", ok:true, why:"That is the meaning. English plays this role in much international research."},
      {t:"The language of France", why:"Despite the name, a lingua franca can be any shared language; the term is not about French."},
      {t:"A simplified language with no grammar", why:"A lingua franca is a full language used for shared communication."},
-     {t:"The official language of a university", why:"An institution’s official language may or may not be a lingua franca. The term is about communication between speakers of different first languages."}]},
+     {t:"The official language that a university uses for all its teaching and exams", why:"An institution’s official language may or may not be a lingua franca. The term is about communication between speakers of different first languages."}]},
    {id:"e1u1-q04", lesson:"e1u1-l1", level:2, q:"Sione writes “colour” on page 1 of his essay and “color” on page 4. His university has no spelling rule. What is the problem?", options:[
      {t:"The spelling is inconsistent; he should choose one system and use it throughout.", ok:true, why:"Both spellings are correct, but mixing them looks careless. Consistency is the rule."},
      {t:"“Colour” is wrong in academic writing.", why:"British spelling is fully accepted in academic writing, as is American spelling."},
@@ -999,13 +1061,13 @@ ICA.addUnit({
      {t:"Proficient user", why:"Proficient user is C1–C2."},
      {t:"Native speaker", why:"The CEFR doesn’t use native speaker as a level; it describes what learners can do."}]},
    {id:"e1u1-q06", lesson:"e1u1-l1", level:2, q:"Mei is shown a document called the BALEAP Can Do Framework. What will she find in it?", options:[
-     {t:"Statements of what students need to be able to do in English at postgraduate level in UK universities, grouped by reading, writing, listening and speaking", ok:true, why:"Right. It describes academic abilities and is used to plan EAP courses; it is not a test."},
-     {t:"An English test with a score from 0 to 9", why:"It isn’t a test and has no scores."},
+     {t:"Statements of what students need to be able to do in English at postgraduate level", ok:true, why:"Right. It describes academic abilities at postgraduate level in UK universities, grouped by reading, writing, listening and speaking, and is used to plan EAP courses; it is not a test."},
+     {t:"An English test that gives each student a score from 0 to 9 for entry to UK universities", why:"It isn’t a test and has no scores."},
      {t:"A list of 570 academic word families", why:"That is the Academic Word List, a different resource."},
      {t:"Rules for American and British spelling", why:"The framework is about academic abilities, not spelling."}]},
    {id:"e1u1-q07", lesson:"e1u1-l1", level:3, q:"Oluwaseun reads: “Recommendation 2: The ministry should train 500 additional community health workers by 2028.” Which genre is this most likely from, and why?", options:[
      {t:"A report, because reports give recommendations to decision-makers", ok:true, why:"A numbered recommendation addressed to a decision-maker is typical of a report."},
-     {t:"A textbook, because it explains a concept to students", why:"It doesn’t explain a concept; it recommends an action."},
+     {t:"A textbook, because textbooks explain key concepts and examples to students", why:"It doesn’t explain a concept; it recommends an action."},
      {t:"An abstract, because it summarises a study", why:"An abstract summarises purpose, method and findings; it doesn’t usually issue numbered recommendations."},
      {t:"A student essay, because it argues a position", why:"Essays argue a thesis; a numbered recommendation to a ministry is a report convention."}]},
    {id:"e1u1-q08", lesson:"e1u1-l1", level:1, q:"Which genre is mainly written by experts to teach a field to students, with definitions, examples and review questions?", options:[
@@ -1014,15 +1076,15 @@ ICA.addUnit({
      {t:"Report", why:"Reports inform decisions, often with recommendations."},
      {t:"Abstract", why:"An abstract summarises a single paper in one paragraph."}]},
    {id:"e1u1-q09", lesson:"e1u1-l1", level:3, q:"Ana says: “I can’t start reading research articles until my grammar is perfect.” What is the most helpful response?", options:[
-     {t:"Reading is one of the main ways you learn academic grammar and vocabulary, so start now with texts a little above your level.", ok:true, why:"Grammar and vocabulary grow through reading; waiting for perfection delays the main source of learning."},
-     {t:"She’s right: research articles are only for people with perfect grammar.", why:"Most readers of academic English learned it as an additional language and are still learning."},
-     {t:"She should read only textbooks written for children first.", why:"Simpler texts can help as background, but academic reading itself is how academic language is learned."},
-     {t:"She should translate every article fully before reading it.", why:"Translation can check difficult sentences, but replacing reading with translation slows learning of the English."}]},
+     {t:"Start now with texts a little above her level: reading is how academic grammar grows.", ok:true, why:"Grammar and vocabulary grow through reading; waiting for perfection delays the main source of learning."},
+     {t:"She’s right: research articles are only for people whose grammar is already perfect.", why:"Most readers of academic English learned it as an additional language and are still learning."},
+     {t:"She should first read only textbooks written for children, then move to articles later.", why:"Simpler texts can help as background, but academic reading itself is how academic language is learned."},
+     {t:"She should translate every article fully into her first language before reading it.", why:"Translation can check difficult sentences, but replacing reading with translation slows learning of the English."}]},
    /* ---- Lesson 2 ---- */
    {id:"e1u1-q10", lesson:"e1u1-l2", level:1, q:"What is scanning?", options:[
      {t:"Searching a text quickly for one specific piece of information", ok:true, why:"Scanning targets one thing, such as a number, name or definition."},
      {t:"Reading every sentence slowly and carefully", why:"That is intensive reading."},
-     {t:"Reading headings and first sentences for the main idea", why:"That is skimming."},
+     {t:"Reading the headings and first sentences quickly to find the main idea", why:"That is skimming."},
      {t:"Copying a text into your notes", why:"That isn’t a reading strategy at all."}]},
    {id:"e1u1-q11", lesson:"e1u1-l2", level:2, q:"Kenji must decide by tomorrow which of 20 articles to read for his essay. Which strategy should he use first?", options:[
      {t:"Skim the titles and abstracts of all 20", ok:true, why:"Skimming shows the main idea of each quickly, so he can choose the few worth reading closely."},
@@ -1032,7 +1094,7 @@ ICA.addUnit({
    {id:"e1u1-q12", lesson:"e1u1-l2", level:1, q:"When skimming an academic paragraph, which sentence is often most useful to read?", options:[
      {t:"The first sentence, which is often the topic sentence", ok:true, why:"In much academic writing, the first sentence states the paragraph’s main point."},
      {t:"The longest sentence", why:"Length doesn’t show importance; long sentences are often detail."},
-     {t:"The sentence with the most numbers", why:"Numbers are details; useful when scanning, not for the main idea."},
+     {t:"The sentence with the most numbers, dates and statistics in it", why:"Numbers are details; useful when scanning, not for the main idea."},
      {t:"Any sentence in the middle", why:"Middle sentences usually support the main point rather than state it."}]},
    {id:"e1u1-q13", lesson:"e1u1-l2", level:2, q:"According to Schmitt, Jiang and Grabe (2011), about what share of the words in an academic text should a reader know for comfortable reading?", options:[
      {t:"About 98%", ok:true, why:"They concluded 98% (one unknown word in fifty) is a reasonable target for academic texts."},
@@ -1055,12 +1117,12 @@ ICA.addUnit({
      {t:"Table 2 shows…", why:"This points to results."},
      {t:"In conclusion,…", why:"This signals a conclusion, not a gap."}]},
    {id:"e1u1-q17", lesson:"e1u1-l2", level:3, q:"Priya searches a PDF for “migrant” and gets no results, though the report is about migration. What is the best next step?", options:[
-     {t:"Search for a shorter stem such as “migra” and for related words such as “refugee” or “mobility”", ok:true, why:"A stem finds migration, migrants and migratory, and synonyms catch other wordings."},
-     {t:"Decide the report has nothing about migrants", why:"Too early: the report may use other forms or other words."},
+     {t:"Search for a stem such as “migra” and for related words like “refugee”", ok:true, why:"A stem finds migration, migrants and migratory, and synonyms catch other wordings."},
+     {t:"Decide that the report has nothing about migrants and move on to another source", why:"Too early: the report may use other forms or other words."},
      {t:"Read the whole report intensively", why:"That takes far longer than trying better search terms first."},
      {t:"Search for “the”", why:"That would match almost every line and find nothing useful."}]},
    {id:"e1u1-q18", lesson:"e1u1-l2", level:3, q:"Hana skims an abstract that says a new teaching method “greatly improves” results, and she wants to cite this in her essay. What should she do next?", options:[
-     {t:"Read the methods and results closely to check the evidence before relying on the claim", ok:true, why:"An abstract is the authors’ own summary and may overstate; close reading checks whether the evidence supports it."},
+     {t:"Read the methods and results closely to check the evidence", ok:true, why:"An abstract is the authors’ own summary and may overstate; close reading checks whether the evidence supports it."},
      {t:"Cite the claim as proven, since abstracts are checked by experts", why:"Peer review doesn’t guarantee an abstract’s wording is fully supported. Check the evidence."},
      {t:"Ignore the article, because abstracts always exaggerate", why:"Not always. The answer is to check, not to dismiss."},
      {t:"Copy the abstract into her essay", why:"That would be copying text without checking it, and without her own words."}]},
@@ -1071,9 +1133,9 @@ ICA.addUnit({
      {t:"3,000", why:"About 3,000 lemmas is the core of the Academic Vocabulary List."},
      {t:"60", why:"60 is the size of each of sublists 1–9."}]},
    {id:"e1u1-q20", lesson:"e1u1-l3", level:1, q:"What is a collocation?", options:[
-     {t:"Words that often go together and sound natural to expert users, such as “conduct research”", ok:true, why:"Collocations are frequent, natural combinations."},
+     {t:"Words that often go together, such as “conduct research”", ok:true, why:"Collocations are frequent combinations that sound natural to expert users."},
      {t:"A word with the same meaning as another", why:"That is a synonym."},
-     {t:"A word made from another by adding a suffix", why:"That is a derived form, part of a word family."},
+     {t:"A word made from another word by adding a suffix, such as “research” → “researcher”", why:"That is a derived form, part of a word family."},
      {t:"A grammar rule about word order", why:"Collocations are about which words go together, not grammar rules."}]},
    {id:"e1u1-q21", lesson:"e1u1-l3", level:2, q:"Which sentence uses the correct word?", options:[
      {t:"The government’s economic policy changed after the election.", ok:true, why:"*Economic* means relating to the economy: economic policy."},
@@ -1096,9 +1158,9 @@ ICA.addUnit({
      {t:"It contains only technical words for science.", why:"Like the AWL, it lists words common across many disciplines."},
      {t:"It is a list of phrases only.", why:"The AVL is a word list. OPAL includes phrase lists."}]},
    {id:"e1u1-q25", lesson:"e1u1-l3", level:3, q:"Fatima plans to learn the AWL by reading it alphabetically, ten words a day, once each. What is the best advice?", options:[
-     {t:"Find the words she doesn’t know, learn them in context with their collocations, and review them at growing intervals.", ok:true, why:"Context, collocations and spaced retrieval make words usable and memorable."},
-     {t:"Her plan is ideal: one reading per word is enough.", why:"A single exposure is rarely enough; spaced review is needed."},
-     {t:"Learn the list in one weekend by repeating it many times.", why:"Cramming helps briefly; spaced review works better for long-term memory."},
+     {t:"Learn unknown words in context and review them at growing intervals", ok:true, why:"Learning words in context (with their collocations) and reviewing them with spaced retrieval make them usable and memorable."},
+     {t:"Her plan is ideal: one careful reading per word is enough to remember it.", why:"A single exposure is rarely enough; spaced review is needed."},
+     {t:"Learn the whole list in one weekend by repeating it many times.", why:"Cramming helps briefly; spaced review works better for long-term memory."},
      {t:"Skip the list; academic words aren’t worth learning.", why:"Academic words appear in every field; the list is a useful guide when used well."}]},
    {id:"e1u1-q26", lesson:"e1u1-l3", level:2, q:"In a Leitner box system, what happens to a card you forget?", options:[
      {t:"It goes back to box 1, so you review it soon.", ok:true, why:"Forgotten cards restart, so you see them often until you know them."},
@@ -1106,16 +1168,16 @@ ICA.addUnit({
      {t:"It is thrown away.", why:"Forgotten cards need more practice, not less."},
      {t:"It stays in the same box forever.", why:"Cards move: back to box 1 when forgotten, forward when remembered."}]},
    {id:"e1u1-q27", lesson:"e1u1-l3", level:3, q:"Dmitri, a law student, finds that many words in his textbook (*tort*, *plaintiff*, *jurisdiction*) are not on the Academic Word List. Why?", options:[
-     {t:"They are technical words of one field, and the AWL only includes words common across many fields.", ok:true, why:"The AWL selected families used across arts, commerce, law and science; field-specific terms come from your subject."},
-     {t:"The AWL leaves out all words longer than eight letters.", why:"There is no length rule; selection was by range and frequency."},
+     {t:"They are technical words of one field, not words common across fields.", ok:true, why:"The AWL selected families used across arts, commerce, law and science; field-specific terms come from your subject."},
+     {t:"The AWL leaves out all words longer than eight letters, so these are excluded.", why:"There is no length rule; selection was by range and frequency."},
      {t:"Law texts were not included in the AWL corpus.", why:"Law was one of the four fields in Coxhead’s corpus."},
      {t:"These words are too common to be on the list.", why:"They are specialist, not common; the AWL excluded very common general words."}]},
    /* ---- Lesson 4 ---- */
    {id:"e1u1-q28", lesson:"e1u1-l4", level:1, q:"What is nominalisation?", options:[
      {t:"Expressing an action or quality as a noun, such as analyse → analysis", ok:true, why:"Turning verbs or adjectives into nouns is nominalisation."},
      {t:"Naming the author of a source", why:"That is citation, not nominalisation."},
-     {t:"Turning a noun into a verb", why:"That is the opposite direction."},
-     {t:"Using names of people as examples", why:"Nominalisation is a grammar process, not about personal names."}]},
+     {t:"Turning a noun into a verb, such as analysis → analyse or growth → grow", why:"That is the opposite direction."},
+     {t:"Using the names of real people as examples in an academic text", why:"Nominalisation is a grammar process, not about personal names."}]},
    {id:"e1u1-q29", lesson:"e1u1-l4", level:2, q:"What is the head noun in “the limited availability of reliable data on informal employment”?", options:[
      {t:"availability", ok:true, why:"It comes just before the first “of”; the phrase is about availability."},
      {t:"data", why:"*Data* is inside the post-modifier “of reliable data…”: it says what is (not) available."},
@@ -1135,7 +1197,7 @@ ICA.addUnit({
      {t:"The writer accepts Lee’s finding but keeps a distance from Park’s claim.", ok:true, why:"*Demonstrates* presents the finding as established; *claims* reports without accepting."},
      {t:"The writer trusts both studies equally.", why:"Different verbs send different signals: *demonstrates* accepts, *claims* distances."},
      {t:"The writer doubts Lee and trusts Park.", why:"It’s the other way round."},
-     {t:"Reporting verbs carry no information about the writer’s view.", why:"They often do; the choice of verb is a key stance signal."}]},
+     {t:"Reporting verbs carry no information about the writer’s own view of a source.", why:"They often do; the choice of verb is a key stance signal."}]},
    {id:"e1u1-q33", lesson:"e1u1-l4", level:2, q:"Which reporting verb is usually **neutral**?", options:[
      {t:"describes", ok:true, why:"*Describes* reports what a source contains without judging it."},
      {t:"alleges", why:"*Alleges* signals doubt."},
@@ -1147,10 +1209,10 @@ ICA.addUnit({
      {t:"Prices rose quickly, and people bought more food.", why:"A *reduction* means less, not more."},
      {t:"Prices fell quickly, so people bought less food.", why:"A *rise* means prices went up."}]},
    {id:"e1u1-q35", lesson:"e1u1-l4", level:3, q:"Sione reads: “These results clearly prove that the drug works for everyone.” The study had 30 participants. What is the best critical reading?", options:[
-     {t:"The boosters (“clearly prove”, “everyone”) claim more than a 30-person study can support.", ok:true, why:"Strong boosters need strong evidence. A small study rarely proves anything for everyone."},
+     {t:"The boosters claim more than a 30-person study can support.", ok:true, why:"The boosters “clearly prove” and “everyone” need strong evidence. A small study rarely proves anything for everyone."},
      {t:"The claim must be right, because the writer is confident.", why:"Confidence is a signal to check, not evidence."},
      {t:"The sentence is well hedged.", why:"It has no hedges; “clearly prove” and “everyone” are boosters."},
-     {t:"Boosters are never allowed in academic writing.", why:"Boosters are fine when evidence is strong; here they overreach."}]},
+     {t:"Boosters such as “clearly” are never allowed in academic writing.", why:"Boosters are fine when evidence is strong; here they overreach."}]},
    {id:"e1u1-q36", lesson:"e1u1-l4", level:1, q:"According to Biber and Gray (2010), what mainly makes academic writing complex?", options:[
      {t:"Compressed noun phrases that pack in information", ok:true, why:"They found academic writing relies on phrasal compression rather than many dependent clauses."},
      {t:"Many more dependent clauses than conversation", why:"They found most kinds of finite dependent clause are more common in conversation."},
@@ -1160,7 +1222,7 @@ ICA.addUnit({
    {id:"e1u1-q37", lesson:"e1u1-l5", level:1, q:"In Cornell notes, when do you fill in the narrow cue column?", options:[
      {t:"Soon afterwards, with questions and key words", ok:true, why:"Pauk advised leaving it empty during note-taking and adding cues soon afterwards."},
      {t:"Before the lecture, with the date only", why:"The cue column is for questions and key words added after."},
-     {t:"During the lecture, with full sentences", why:"Notes go in the wide column during the lecture."},
+     {t:"During the lecture, with full sentences from the speaker", why:"Notes go in the wide column during the lecture."},
      {t:"Never: it stays empty", why:"The cues are what make the method a self-test."}]},
    {id:"e1u1-q38", lesson:"e1u1-l5", level:1, q:"What is a mind map especially good at showing?", options:[
      {t:"Connections between ideas", ok:true, why:"Branches from a central topic show how ideas link."},
@@ -1173,9 +1235,9 @@ ICA.addUnit({
      {t:"The note is too short.", why:"Length isn’t the issue; copying is."},
      {t:"He should have used more synonyms.", why:"More synonyms would still be patchwriting. Rewrite from understanding, not word by word."}]},
    {id:"e1u1-q40", lesson:"e1u1-l5", level:2, q:"Which step most directly helps you write notes in your own words?", options:[
-     {t:"Look away from the source and write the idea from memory, then check it", ok:true, why:"Writing from memory forces your own words and structure; checking catches errors and copied phrases."},
+     {t:"Look away and write the idea from memory, then check it", ok:true, why:"Writing from memory forces your own words and structure; checking catches errors and copied phrases."},
      {t:"Keep the source open and change every third word", why:"That produces patchwriting."},
-     {t:"Copy the sentence and add quotation marks later", why:"Quotation marks added later are easily forgotten; copy quotations with marks from the start."},
+     {t:"Copy the sentence and add quotation marks around it later", why:"Quotation marks added later are easily forgotten; copy quotations with marks from the start."},
      {t:"Use a synonym tool to rewrite the sentence", why:"Automatic synonym swapping produces patchwriting, and often changes the meaning."}]},
    {id:"e1u1-q41", lesson:"e1u1-l5", level:1, q:"In many learner dictionaries, what does [U] next to a noun mean?", options:[
      {t:"Uncountable: no plural and no “a/an”", ok:true, why:"For example, *information* [U]: some information, not an information."},
@@ -1188,13 +1250,13 @@ ICA.addUnit({
      {t:"This chapter discusses on the causes of inflation.", why:"*Discuss* takes no preposition at all."},
      {t:"This chapter discusses for the causes of inflation.", why:"*Discuss* takes its object directly."}]},
    {id:"e1u1-q43", lesson:"e1u1-l5", level:3, q:"Amara isn’t sure which preposition follows *impact* in academic writing. Which approach gives her the most reliable answer?", options:[
-     {t:"Search *impact* in a corpus tool and look at the most frequent patterns", ok:true, why:"A corpus shows many real examples, so the common pattern (*impact on*) stands out."},
+     {t:"Search a corpus for *impact* and check its most frequent patterns", ok:true, why:"A corpus shows many real examples, so the common pattern (*impact on*) stands out."},
      {t:"Choose the preposition that sounds best to her", why:"Intuition in an additional language can mislead; check real usage."},
-     {t:"Use the first preposition a translation app gives", why:"Translation tools may follow the patterns of her first language."},
+     {t:"Use whichever preposition a translation app gives for her first-language sentence", why:"Translation tools may follow the patterns of her first language."},
      {t:"Avoid the word *impact* completely", why:"It is a useful word; checking its pattern is easy."}]},
    {id:"e1u1-q44", lesson:"e1u1-l5", level:1, q:"What is a concordance?", options:[
-     {t:"A list of a word’s examples from a corpus, one per line, with the word in the middle and context either side", ok:true, why:"This key-word-in-context view shows patterns quickly."},
-     {t:"An agreement between two authors", why:"In everyday English concordance can mean agreement, but in corpus work it is a list of examples."},
+     {t:"A list of a word’s examples from a corpus, one per line", ok:true, why:"Each line shows the word in the middle with its context either side. This key-word-in-context view shows patterns quickly."},
+     {t:"An agreement between two authors who share the same view", why:"In everyday English concordance can mean agreement, but in corpus work it is a list of examples."},
      {t:"A dictionary of synonyms", why:"That is a thesaurus."},
      {t:"A list of a book’s chapters", why:"That is a table of contents."}]},
    {id:"e1u1-q45", lesson:"e1u1-l5", level:2, q:"Which description of SkELL is accurate as of November 2026?", options:[

@@ -498,6 +498,68 @@ ICA.addUnit({
        why: "This isn’t a sentence: ために needs a second half that says what you do for the goal."
       }
      ]
+    },
+    {
+     id: "e3u9-l1-x8",
+     type: "type",
+     q: "Yến wrote a notice for the house so that Sōta can read it too. Type the missing word: 「そうたくんにも読める（　）、ひらがなで書きました。」",
+     answer: "ように",
+     wrongs: [
+      {
+       v: "ために",
+       why: "読める is a potential form: a state, not an action anyone chooses. A result you hope for takes ように."
+      },
+      {
+       v: "ことに",
+       why: "ことに belongs to ことにする and ことになる (Lesson 2). “So that” is ように."
+      }
+     ],
+     why: "The first half is a result Yến hopes for (Sōta being able to read it), and the second half is what she does to help it happen, so ように. Potential forms like 読める take ように."
+    },
+    {
+     id: "e3u9-l1-x9",
+     type: "type",
+     q: "Type the missing words: 「[健康]{けんこう}（　）、毎朝三十分歩いています。」 (“I walk for thirty minutes every morning for my health.”)",
+     answer: "のために",
+     wrongs: [
+      {
+       v: "ために",
+       why: "After a noun, ために needs の: [健康]{けんこう}のために."
+      },
+      {
+       v: "のように",
+       why: "Noun + のように means “like”: “like health”. For a purpose after a noun, use のために."
+      },
+      {
+       v: "ように",
+       why: "ように doesn’t follow a noun to mean “for”. A noun takes のために."
+      }
+     ],
+     why: "Noun + のために gives a purpose: [健康]{けんこう}のために, “for my health”."
+    },
+    {
+     id: "e3u9-l1-x10",
+     type: "type",
+     q: "Three months ago Rodrigo couldn’t swim. He practised, and now he can. Type the ending that describes the change: 「三か月[練習]{れんしゅう}して、[泳]{およ}げる（　）。」",
+     answer: [
+      "ようになりました",
+      "ようになった"
+     ],
+     wrongs: [
+      {
+       v: "ようにしました",
+       why: "～ようにする is a deliberate effort (“I made a point of…”). Being able to swim is a change that came about: ～ようになる."
+      },
+      {
+       v: "になりました",
+       why: "A verb needs よう before になる: [泳]{およ}げるようになりました. Plain になる follows nouns and な-adjectives."
+      },
+      {
+       v: "ことになりました",
+       why: "～ことになる reports a decision or an arrangement (Lesson 2), not a new ability."
+      }
+     ],
+     why: "Potential form + ようになる describes a new ability: [泳]{およ}げるようになりました, “now I can swim”."
     }
    ],
    apply: {
@@ -1034,6 +1096,63 @@ ICA.addUnit({
        why: "That would be [捨]{す}てることにしました."
       }
      ]
+    },
+    {
+     id: "e3u9-l2-x8",
+     type: "type",
+     q: "Toby’s professor has arranged for him to give a talk at a conference in Tokyo. Toby didn’t ask for it. Type the ending: 「来月、東京の[学会]{がっかい}で[発表]{はっぴょう}する___。」",
+     answer: [
+      "ことになりました",
+      "ことになった"
+     ],
+     wrongs: [
+      {
+       v: "ことにしました",
+       why: "～ことにする means Toby decided it himself. The talk was arranged for him, so ～ことになりました."
+      },
+      {
+       v: "ようになりました",
+       why: "～ようになる describes a change in ability or habit (Lesson 1), not an arrangement."
+      }
+     ],
+     why: "～ことになる presents a decision as something that came about, here arranged by Toby’s professor. It also sounds modest, as if he isn’t boasting."
+    },
+    {
+     id: "e3u9-l2-x9",
+     type: "type",
+     q: "Kaito has made up his own mind: no more energy drinks on night shifts. He tells his friends: 「もうエナジードリンクは飲まない___。」 Type the ending.",
+     answer: [
+      "ことにした",
+      "ことにしました"
+     ],
+     wrongs: [
+      {
+       v: "ことになった",
+       why: "～ことになる presents a decision as made by others or by circumstances. Kaito decided this himself: ～ことにした."
+      },
+      {
+       v: "ことをした",
+       why: "The pattern is ことにする, with に."
+      }
+     ],
+     why: "～ことにした reports a decision the speaker made. With the ない-form before こと, it is a decision not to do something: “I’ve decided not to drink them any more.”"
+    },
+    {
+     id: "e3u9-l2-x10",
+     type: "type",
+     q: "Mariya is putting on her shoes by the door when a housemate asks her for help. Type the missing word: 「ごめん、今から出かける___なの。」 (“Sorry, I’m just about to go out.”)",
+     answer: "ところ",
+     wrongs: [
+      {
+       v: "ばかり",
+       why: "ばかり follows a た-form and means “only just did”. For “just about to”, use the dictionary form + ところ."
+      },
+      {
+       v: "はず",
+       why: "はず is an expectation (Lesson 3). The moment just before an action is ところ."
+      }
+     ],
+     why: "Dictionary form + ところ is the moment just before an action: 出かけるところ, “just about to go out”."
     }
    ],
    apply: {
@@ -1592,6 +1711,61 @@ ICA.addUnit({
        why: "ところ marks the moment of an action. It doesn’t say “no wonder”."
       }
      ]
+    },
+    {
+     id: "e3u9-l3-x8",
+     type: "type",
+     q: "Tomorrow is a public holiday. Type the missing words: 「[明日]{あした}は[祝日]{しゅくじつ}だから、[郵便局]{ゆうびんきょく}は休み___です。」 (“Tomorrow is a holiday, so the post office should be closed.”)",
+     answer: "のはず",
+     wrongs: [
+      {
+       v: "なはず",
+       why: "な before はず is only for な-adjectives. 休み is a noun, so it takes の."
+      },
+      {
+       v: "はず",
+       why: "A noun needs の before はず: 休みのはず."
+      },
+      {
+       v: "のべき",
+       why: "べき is about what ought to be done. You are saying what you expect, so はず."
+      }
+     ],
+     why: "はず is an expectation based on what you know. After a noun it takes の: 休みのはずです."
+    },
+    {
+     id: "e3u9-l3-x9",
+     type: "type",
+     q: "Type the missing words for “You shouldn’t say that kind of thing” (言う = say): 「そんなことは___ではありません。」",
+     answer: "いうべき",
+     wrongs: [
+      {
+       v: "いわないべき",
+       why: "The negative goes on べき, not on the verb: 言うべきではありません."
+      },
+      {
+       v: "いうはず",
+       why: "言うはずではありません doesn’t mean “shouldn’t”. はず is about expectations; what ought (not) to be done is べき."
+      }
+     ],
+     why: "べき takes the dictionary form, and its negative is べきではない: 言うべきではありません, “you shouldn’t say it”."
+    },
+    {
+     id: "e3u9-l3-x10",
+     type: "type",
+     q: "Sōta tells his mother he reads ten pages every day. Megumi works it out: 「一日十ページなら、一週間で七十ページ読む___だね。」 (“Ten pages a day, so that means seventy pages a week.”) Type the missing word.",
+     answer: "わけ",
+     wrongs: [
+      {
+       v: "はず",
+       why: "はず is what you expect but can’t check yet, like a bus that should come at ten. Megumi is working out what follows from what Sōta just told her: わけ."
+      },
+      {
+       v: "べき",
+       why: "べき is what ought to be done. Megumi isn’t saying he should read seventy pages, only working out what follows."
+      }
+     ],
+     why: "わけ states what follows from a fact: “that means…”. It is common when you sum something up or work it out: 七十ページ読むわけだね."
     }
    ],
    apply: {
@@ -2171,6 +2345,53 @@ ICA.addUnit({
        why: "The cause is tiredness, not the headaches, and か adds doubt: “perhaps because”."
       }
      ]
+    },
+    {
+     id: "e3u9-l4-x8",
+     type: "type",
+     q: "Megumi wants Sōta to eat more vegetables. Type the missing form of 食べる: 「そうた、もっと[野菜]{やさい}を___ほしいな。」",
+     answer: "たべて",
+     wrongs: [
+      {
+       v: "たべたい",
+       why: "～たい is for what you want to do yourself. To want someone else to do something, use the て-form + ほしい."
+      },
+      {
+       v: "たべる",
+       why: "ほしい joins the て-form here: 食べてほしい."
+      }
+     ],
+     why: "To want someone else to do something, use the て-form + ほしい: もっと[野菜]{やさい}を食べてほしい, “I want you to eat more vegetables”."
+    },
+    {
+     id: "e3u9-l4-x9",
+     type: "type",
+     q: "Type the missing word: 「よく[寝]{ね}た___、[風邪]{かぜ}が[治]{なお}りました。」 (“Thanks to a good sleep, my cold got better.”)",
+     answer: "おかげで",
+     wrongs: [
+      {
+       v: "せいで",
+       why: "せいで blames a cause for a bad result. Getting better is good news, so おかげで."
+      }
+     ],
+     why: "おかげで credits a cause for a good result. After a verb it takes the plain form: よく[寝]{ね}たおかげで."
+    },
+    {
+     id: "e3u9-l4-x10",
+     type: "type",
+     q: "Type the missing word for “The more I read this book, the more interesting it gets”: 「この本は、読めば___ほど[面白]{おもしろ}い。」",
+     answer: "よむ",
+     wrongs: [
+      {
+       v: "よめば",
+       why: "The ば-form comes only once. The second verb is the dictionary form: 読めば読むほど."
+      },
+      {
+       v: "よんだ",
+       why: "After the ば-form, repeat the verb in the dictionary form, not the past: 読めば読むほど."
+      }
+     ],
+     why: "～ば～ほど: the ば-form, then the same verb in the dictionary form, then ほど: 読めば読むほど, “the more I read”."
     }
    ],
    apply: {
@@ -2770,6 +2991,60 @@ ICA.addUnit({
        why: "による goes straight before the noun, with no の."
       }
      ]
+    },
+    {
+     id: "e3u9-l5-x8",
+     type: "type",
+     q: "Type the missing particle: 「チェスカさんは[研究生]{けんきゅうせい}___日本に[来]{き}ました。」 (“Cheska came to Japan as a research student.”)",
+     answer: "として",
+     wrongs: [
+      {
+       v: "について",
+       why: "について means “about”, a topic you talk or write about. A role or status is として."
+      },
+      {
+       v: "にとって",
+       why: "にとって means “for, from someone’s point of view”, before an evaluation. A role is として."
+      }
+     ],
+     why: "として gives a role or status: [研究生]{けんきゅうせい}として, “as a research student”."
+    },
+    {
+     id: "e3u9-l5-x9",
+     type: "type",
+     q: "Type the missing particle: 「[留学生]{りゅうがくせい}___、日本の銀行の[手続]{てつづ}きは[大変]{たいへん}です。」 (“For international students, bank procedures in Japan are hard work.”)",
+     answer: "にとって",
+     wrongs: [
+      {
+       v: "にたいして",
+       why: "に[対]{たい}して is for actions and attitudes aimed at someone (kind to, strict with). A judgement from someone’s point of view takes にとって."
+      },
+      {
+       v: "について",
+       why: "について means “about”. Here you judge how hard something is for a group of people: にとって."
+      }
+     ],
+     why: "にとって + an evaluation (hard, important, easy) means “for, from the point of view of”: [留学生]{りゅうがくせい}にとって[大変]{たいへん}."
+    },
+    {
+     id: "e3u9-l5-x10",
+     type: "type",
+     q: "Type the missing particle: 「人___、考え方が[違]{ちが}います。」 (“Ways of thinking differ from person to person.”)",
+     answer: [
+      "によって",
+      "により"
+     ],
+     wrongs: [
+      {
+       v: "にとって",
+       why: "にとって is “for, from someone’s point of view”, before an evaluation. “Depending on” is によって."
+      },
+      {
+       v: "について",
+       why: "について means “about”. For things that vary from one person (or country, or shop) to the next, use によって."
+      }
+     ],
+     why: "によって with a verb like [違]{ちが}う or [変]{か}わる means “depending on”: 人によって[違]{ちが}う, “it differs from person to person”. (により is the more formal, written form.)"
     }
    ],
    apply: {
@@ -2835,6 +3110,68 @@ ICA.addUnit({
   "e3u9-q42",
   "e3u9-q45"
  ],
+  cpBank:[
+    {id:"e3u9-cp01", lesson:"e3u9-l1", level:1, q:"Rodrigo has a cold. Which word fits? 「早く[風邪]{かぜ}が[治]{なお}る（　）、[薬]{くすり}を飲んで[寝]{ね}ました。」", options:[
+      {t:"ために", why:"[治]{なお}る (get better) isn’t something you can just do at will. The two-question test sends it to ように."},
+      {t:"ことに", why:"～ことにする reports a decision. ことに alone can’t join a hoped-for result to an action."},
+      {t:"ところ", why:"ところ marks a moment in an action (about to, in the middle, just after), not a purpose."},
+      {t:"ように", ok:true, why:"The first half is a result he hopes for, not an action he chooses, so ように: “so that my cold gets better quickly”."}]},
+    {id:"e3u9-cp02", lesson:"e3u9-l1", level:2, q:"At a shrine, Mariya writes on a wooden plaque ([絵馬]{えま}): 「[留]{りゅう}学できますように」. What has she written?", options:[
+      {t:"News: she has become able to study abroad", why:"That would be [留]{りゅう}学できるようになりました, a change that has happened. ～ますように on its own is a wish."},
+      {t:"A wish: “May I be able to study abroad”", ok:true, why:"～ますように at the end of a sentence is a wish or prayer, the kind people write on [絵馬]{えま} at shrines."},
+      {t:"An announcement: it has been decided that she will go", why:"That would be [留]{りゅう}学することになりました: a decision presented as the way things worked out."},
+      {t:"A promise to herself to make more effort", why:"A promise or effort is ～ようにします. ～ますように on a plaque is a wish."}]},
+    {id:"e3u9-cp03", lesson:"e3u9-l5", level:2, q:"Mariya writes: 「[汐浦]{しおうら}は店が多いのに[対]{たい}して、[潮島]{しおじま}は店が少ない。」 What does she mean?", options:[
+      {t:"Shioura has many shops, whereas Shiojima has few", ok:true, why:"After a plain form + の, ～のに[対]{たい}して sets two facts against each other: “whereas”."},
+      {t:"Shiojima has few shops because Shioura has so many", why:"のに[対]{たい}して puts two facts side by side. It doesn’t say that one causes the other."},
+      {t:"Shioura’s shops are aimed at people from Shiojima", why:"に[対]{たい}して can mark a target, but after a plain form + の it means “whereas”."},
+      {t:"Shiojima has about as many shops as Shioura", why:"多い and 少ない are opposites: the sentence contrasts the two places."}]},
+    {id:"e3u9-cp04", lesson:"e3u9-l2", level:1, q:"Toby says 「毎朝、新聞を読むことにしています。」 What does he mean?", options:[
+      {t:"It’s a rule he set himself, and he keeps it", ok:true, why:"～ことにしている is a rule or routine the speaker decided on and keeps up."},
+      {t:"It’s a rule his school set for students", why:"A rule made by others is ～ことになっている."},
+      {t:"He made the decision just this morning", why:"One decision is ～ことにした. ～ことにしている is a rule that holds."},
+      {t:"He is just about to read the paper", why:"That would be 読むところです, the moment just before an action."}]},
+    {id:"e3u9-cp05", lesson:"e3u9-l2", level:3, q:"Mariya has made up her mind to apply for an exchange programme, and she plans to write the essay next week. Which pair fits? 「[交換]{こうかん}[留]{りゅう}学に[申]{もう}し[込]{こ}む（ A ）。来週、作文を書く（ B ）です。」", options:[
+      {t:"A: ことになりました · B: はず", why:"ことになりました presents the choice as made by others or by circumstances, and はず is an expectation, not a plan."},
+      {t:"A: ようにしました · B: つもり", why:"～ようにする is an effort to make something happen. A one-time choice is ～ことにする."},
+      {t:"A: ことにしました · B: はず", why:"A is right, but はず about your own action means a schedule you rely on. For a plan you hold, use つもり."},
+      {t:"A: ことにしました · B: つもり", ok:true, why:"～ことにしました reports the moment she made the choice; つもりです describes the plan she now holds."}]},
+    {id:"e3u9-cp06", lesson:"e3u9-l5", level:1, q:"A sign by an old bridge says 「この[橋]{はし}は、町の人たちによって作られました。」 What does によって mean here?", options:[
+      {t:"“depending on”: it differs by person", why:"によって can mean “depending on”, but with a passive verb (作られました) it names who did it."},
+      {t:"“by”: the people of the town built it", ok:true, why:"In a passive sentence, によって marks who made or did something: built by the townspeople."},
+      {t:"“for”: it was built for the townspeople", why:"“For someone” would be のために. によって here names the builders."},
+      {t:"“according to”: the townspeople say so", why:"“According to” is によると, which gives a source of information."}]},
+    {id:"e3u9-cp07", lesson:"e3u9-l3", level:2, q:"Fumiko learns that Toby started Japanese at primary school. She says 「それで日本語が上手なわけね。」 What is she doing?", options:[
+      {t:"Predicting that his Japanese will turn out to be good", why:"A prediction you haven’t checked is はず. Fumiko already knows his Japanese is good."},
+      {t:"Saying that his Japanese ought to be good", why:"What ought to be is べき. わけ draws a conclusion from facts."},
+      {t:"Making sense of what she knew, now she has the reason", ok:true, why:"わけだ says “that explains it”: a new fact (starting young) makes sense of a known one (his good Japanese)."},
+      {t:"Saying his Japanese isn’t really that good", why:"That would be the partial negation 上手なわけではない. わけね agrees with the conclusion."}]},
+    {id:"e3u9-cp08", lesson:"e3u9-l3", level:3, q:"Ten minutes ago Rodrigo saw Toby get on the airport bus. Mariya asks if Toby is home. What does Rodrigo say?", options:[
+      {t:"「家にいないはずがないよ。」", why:"This is a double negative: “There’s no way he isn’t home”, so he must be home. That is the opposite."},
+      {t:"「家にいるべきじゃないよ。」", why:"べき is about what is right, not about what the facts show."},
+      {t:"「家にいるはずがないよ。」", ok:true, why:"～はずがない rules something out from the facts: Toby left for the airport, so “there’s no way he’s home”."},
+      {t:"「家にいるわけだよ。」", why:"～わけだ draws the conclusion that he **is** home: the opposite of what Rodrigo saw."}]},
+    {id:"e3u9-cp09", lesson:"e3u9-l5", level:3, q:"A city newsletter says: 「[市]{し}は外国人[住民]{じゅうみん}（ A ）、ごみの出し方（ B ）[説明会]{せつめいかい}を開いた。」 Which pair fits?", options:[
+      {t:"A: について · B: に[対]{たい}して", why:"This is the wrong way round. について gives the content (how to put out garbage); に[対]{たい}して the target (the residents)."},
+      {t:"A: にとって · B: について", why:"にとって gives a point of view for a judgement, such as 大切 or [難]{むずか}しい. It can’t mark who an action is aimed at."},
+      {t:"A: として · B: について", why:"として gives a role (“as foreign residents”). The residents are the people the meeting is for."},
+      {t:"A: に[対]{たい}して · B: について", ok:true, why:"に[対]{たい}して marks the target (the residents); について gives the content (the garbage rules), as written reports do."}]},
+    {id:"e3u9-cp10", lesson:"e3u9-l4", level:2, q:"A visitor asks Toby how to get to the city office. Which reply gives friendly, simple advice?", options:[
+      {t:"「三[番]{ばん}のバスに[乗]{の}るべきです。」", why:"べき states a duty. Said to a stranger as advice, it sounds like a lecture."},
+      {t:"「三[番]{ばん}のバスに[乗]{の}ればいいですよ。」", ok:true, why:"～ばいい says that one easy step is all you need: “You just need to take the No. 3 bus.”"},
+      {t:"「三[番]{ばん}のバスに[乗]{の}ってほしいです。」", why:"～てほしい tells your own wish about what someone does. It isn’t advice."},
+      {t:"「三[番]{ばん}のバスに[乗]{の}るはずです。」", why:"はず is an expectation from facts: “He’s supposed to take the No. 3 bus.”"}]},
+    {id:"e3u9-cp11", lesson:"e3u9-l4", level:2, q:"Cheska’s friend has a job interview tomorrow. How does Cheska wish her well?", options:[
+      {t:"「うまくいくはずがないですね。」", why:"～はずがない means “there’s no way”: “There’s no way it will go well.”"},
+      {t:"「うまくいけばいいのに。」", why:"～ばいいのに wishes for something that isn’t so. Said to the listener, it can sound like a complaint."},
+      {t:"「うまくいくといいですね。」", ok:true, why:"～といいですね is the usual way to hope something goes well for someone else."},
+      {t:"「うまくいってほしがっています。」", why:"～てほしがっている describes a third person’s wish. It isn’t what you say to wish someone well."}]},
+    {id:"e3u9-cp12", lesson:"e3u9-l4", level:3, q:"The festival is tomorrow, and it is raining. Rodrigo wants the rain to stop. Which particle fits? 「明日までに雨（　）やんでほしいなあ。」", options:[
+      {t:"に", why:"With ～てほしい, the person you want to act usually takes に. For weather and events, the thing takes が."},
+      {t:"が", ok:true, why:"For weather, seasons and events, the thing takes が: 雨がやんでほしい, “I want the rain to stop”."},
+      {t:"を", why:"やむ (to stop, of rain) has no object, so it can’t take を."},
+      {t:"で", why:"で marks a place or a means. The rain is the thing that should stop."}]}
+  ],
  codex: [
   {
    id: "purpose-you-ni-tame-ni",
@@ -3971,7 +4308,7 @@ ICA.addUnit({
    q: "A notice at a sports centre says: 「[貴重品]{きちょうひん}は[置]{お}いていかないようにしてください。」 What does it ask?",
    options: [
     {
-     t: "Please make sure you don’t leave valuables behind.",
+     t: "Please don’t leave valuables behind.",
      ok: true,
      why: "ない-form + ようにしてください: a polite “please make sure not to”."
     },
@@ -4196,9 +4533,9 @@ ICA.addUnit({
    q: "What does 「弟はゲームをしてばかりいます。」 mean?",
    options: [
     {
-     t: "My younger brother does nothing but play games.",
+     t: "My younger brother only plays games.",
      ok: true,
-     why: "て-form + ばかりいる: nothing but, too much of one thing."
+     why: "て-form + ばかりいる: he does nothing but play games, too much of one thing."
     },
     {
      t: "My younger brother has just played a game.",
@@ -4221,9 +4558,9 @@ ICA.addUnit({
    q: "On your first day at a new office, a colleague tells you: 「ここでは、入る前に名前を書くことになっています。」 What is he telling you?",
    options: [
     {
-     t: "It is the rule here to write your name before going in.",
+     t: "Writing your name first is the rule here.",
      ok: true,
-     why: "～ことになっている: an official rule or arrangement."
+     why: "～ことになっている: an official rule or arrangement. Here you write your name before going in."
     },
     {
      t: "He has decided to write his name before going in.",
@@ -4818,24 +5155,24 @@ ICA.addUnit({
    id: "e3u9-q42",
    lesson: "e3u9-l5",
    level: 3,
-   q: "A sign at a tourist information centre says: 「店によっては、[現金]{げんきん}しか使えません。」 What does it mean?",
+   q: "A notice at a bus stop says: 「日によっては、バスが三十分以上[遅]{おく}れることがあります。」 What does it mean?",
    options: [
     {
-     t: "Some shops accept only cash.",
+     t: "On some days, the bus is over 30 minutes late.",
      ok: true,
-     why: "によっては means “depending on”, “in some cases”: some shops, not all."
+     why: "によっては means “depending on”, “in some cases”: on some days, not every day."
     },
     {
-     t: "No shop accepts cash.",
-     why: "しか～ません means “only”: some shops accept nothing but cash."
+     t: "Every day, the bus is over 30 minutes late.",
+     why: "によっては picks out some members of a group (some days), not every one."
     },
     {
-     t: "Every shop accepts only cash.",
-     why: "によっては picks out some members of a group, not every one."
+     t: "The bus is never more than 30 minutes late.",
+     why: "～ことがあります says that it sometimes happens. The notice warns about delays."
     },
     {
-     t: "Because of the shops, cash can’t be used.",
-     why: "によっては isn’t a cause here; it means “depending on the shop”."
+     t: "The date makes the bus late.",
+     why: "によっては isn’t a cause here; it means “depending on the day”."
     }
    ]
   },
@@ -4843,12 +5180,12 @@ ICA.addUnit({
    id: "e3u9-q43",
    lesson: "e3u9-l5",
    level: 1,
-   q: "Choose the particle: 「人（　）考え[方]{かた}が[違]{ちが}います。」 (Ways of thinking differ from person to person.)",
+   q: "Choose the particle: 「[季節]{きせつ}（　）海の色が[変]{か}わります。」 (The colour of the sea changes with the seasons.)",
    options: [
     {
      t: "によって",
      ok: true,
-     why: "によって means “depending on”, and it goes naturally with [違]{ちが}う."
+     why: "によって means “depending on”, and it goes naturally with verbs of change and difference such as [変]{か}わる and [違]{ちが}う."
     },
     {
      t: "にとって",
@@ -4856,11 +5193,11 @@ ICA.addUnit({
     },
     {
      t: "について",
-     why: "について gives a topic, “about people”, which doesn’t fit [違]{ちが}う here."
+     why: "について gives a topic, “about the seasons”, which doesn’t fit [変]{か}わる here."
     },
     {
      t: "として",
-     why: "として gives a role: “as a person”."
+     why: "として gives a role: “as a season”."
     }
    ]
   },

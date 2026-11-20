@@ -5,7 +5,10 @@
    the chick really is: THE IT Chick, mascot and head of the Academy, which was testing you all along.
    Everything is pixel art drawn here on a 160 x 120 canvas (8 x 6 tiles of 20 px), scaled up by whole numbers, with a faint
    tile grid. A panel under the controls shows the player's arrows as real code and highlights each line as it runs.
-   Skip is always available. Sounds use shared/arcadefx.js at the effects volume. Reduced motion: no walking animation. */
+   Skip is always available. Sounds use shared/arcadefx.js at the effects volume. Reduced motion: no walking animation.
+   Sound (owner asked 20 Nov 2026): a volume slider sits by Skip (voices, music and effects together, 50% to start). A Start
+   card gives the browser its tap; the first screen has a quiet, muffled version of the theme, and the full 8-bit tune
+   kicks in from the top with the chick's first "Cheep?". */
 (function(){
 "use strict";
 var W = 160, H = 120, T = 20;
@@ -238,6 +241,7 @@ ICA.intro = function(done){
       '<button data-c="rep" class="pi-rep" aria-label="Repeat">↻ ×1</button><button data-c="del" aria-label="Delete the last step">⌫</button><button data-c="run" class="pi-run">▶ Run</button></div>' +
       '<div class="pi-learn"><div class="pi-lt">YOUR STEPS AS CODE</div><pre class="pi-src" aria-label="Your steps written as Python code"></pre><p class="pi-tip"></p></div></div>';
   document.body.appendChild(host); document.documentElement.style.overflow = "hidden";
+  try { ICA.startVolDefaults(); var vc = ICA.volControl("pi-vol"); host.querySelector(".pi-top").insertBefore(vc, host.querySelector(".pi-skip")); } catch(e){}
   var cv = host.querySelector("canvas"); g = cv.getContext("2d"); g.imageSmoothingEnabled = false;
   var box = host.querySelector(".pi-box"), who = host.querySelector(".pi-who"), face = host.querySelector(".pi-face"), text = host.querySelector(".pi-text"), nextB = host.querySelector(".pi-next");
   var code = host.querySelector(".pi-code"), prog = host.querySelector(".pi-prog"), repB = host.querySelector(".pi-rep"), bub = host.querySelector(".pi-bubble"), src = host.querySelector(".pi-src"), tip = host.querySelector(".pi-tip");
@@ -299,6 +303,7 @@ ICA.intro = function(done){
     if (typeof l === "string") l = {t:l};
     who.textContent = l.who === "mugi" ? "MUGI" : l.who === "chick" ? (revealed ? "THE IT CHICK" : "CHICK") : "";
     face.hidden = l.who !== "mugi"; if (l.who === "mugi") face.src = ICA.base + "shared/mascot/pixel/mugi-px-" + (l.mood || "hello") + ".webp";
+    if (l.full){ loud = true; if (window.ICATheme) ICATheme.full(); }
     if (l.who === "chick"){ cheep(l.t); hopT = performance.now() + 300; }
     if (l.reveal) revealed = true;
     if (l.choice){ text.textContent = l.t; var b = document.createElement("button"); b.className = "pi-choice"; b.type = "button"; b.textContent = l.choice; text.appendChild(document.createElement("br")); text.appendChild(b); b.onclick = function(e){ e.stopPropagation(); sfx("tap"); nextLine(); }; nextB.hidden = true; b.focus(); }
@@ -406,9 +411,14 @@ ICA.intro = function(done){
     })(a);
   }
   host.querySelector(".pi-skip").onclick = close;
-  // the theme tune, 8-bit, from the first tap (browsers need one before sound); Music volume in Settings
-  function music(){ host.removeEventListener("pointerdown", music, true); document.removeEventListener("keydown", music, true); if (!ended && window.ICATheme) ICATheme.loop("chip"); }
+  // the theme tune from the first tap (browsers need one before sound): quiet on the first screen, then 8-bit (see top)
+  var started = false, loud = false;
+  function music(){ host.removeEventListener("pointerdown", music, true); document.removeEventListener("keydown", music, true); started = true; if (!ended && window.ICATheme) ICATheme.loop("chip", {hush: !loud}); }
   host.addEventListener("pointerdown", music, true); document.addEventListener("keydown", music, true);
+  document.addEventListener("ica:settings", function vs(e){   // turned up from 0 on the slider: start again
+    if (ended){ document.removeEventListener("ica:settings", vs); return; }
+    if (started && window.ICATheme && !ICATheme.playing() && ICA.vol("music")) ICATheme.loop("chip", {hush: !loud});
+  });
   document.addEventListener("keydown", function key(e){
     if (ended){ document.removeEventListener("keydown", key); return; }
     if (mode === "code" && !running){ var m = {ArrowUp:"U", ArrowDown:"D", ArrowLeft:"L", ArrowRight:"R", Backspace:"del", Enter:"run"}[e.key]; if (m){ e.preventDefault(); var b = code.querySelector('[data-c="' + m + '"]'); if (b) b.click(); } }
@@ -416,8 +426,9 @@ ICA.intro = function(done){
   });
 
   load(0);
-  say([{t:"It’s your first day. You’re on your way to IT CHICK Academy..."},
-       {t:"Cheep?", who:"chick", bubble:"?"},
+  say([{t:"Sound on? You can change the volume at the top.", choice:"▶ Start"},
+       {t:"It’s your first day. You’re on your way to IT CHICK Academy..."},
+       {t:"Cheep?", who:"chick", bubble:"?", full:true},
        {t:"A small chick in round glasses is standing in the street, holding a tiny book. It keeps looking up the hill, toward the Academy."},
        {t:"Is it lost? It seems to want you to lead the way."}].concat(LEVELS[0].intro), play);
 };

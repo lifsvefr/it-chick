@@ -89,7 +89,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u7-l1-x1", type:"mcq", q:"A scholar says: “*Four Theories of the Press* describes how journalism should work in different ideologies, not how it actually works.” Which criticism is this?", options:[
-      {t:"That the 1956 book was normative and shaped by the Cold War, judging systems against an idealised Western model", ok:true, why:"Right. This was the central complaint: it described ideals (libertarian, social responsibility) and used them to judge others, which Hallin and Mancini set out to replace with empirical comparison."},
+      {t:"That it was normative and shaped by the Cold War", ok:true, why:"Right. The 1956 book judged systems against an idealised Western model. This was the central complaint: it described ideals (libertarian, social responsibility) and used them to judge others, which Hallin and Mancini set out to replace with empirical comparison."},
       {t:"That it only studied 18 Western democracies", why:"That is a limit of Hallin and Mancini (2004), not of *Four Theories*, which claimed to cover the whole world."},
       {t:"That it relied on expert surveys with too few respondents", why:"That is a critique of press freedom indices. *Four Theories* was an essay in normative theory, not a survey."},
       {t:"That it ignored social media", why:"True but trivial: it was written in 1956. The criticism quoted is about its normative approach."}
@@ -103,7 +103,7 @@ ICA.addUnit({
       {t:"Journalism developed early as a business, with newspapers funded by advertising and mass sales", b:2, why:"Early commercial development is a defining feature of the Liberal model."}
     ]},
     {id:"e4u7-l1-x3", type:"mcq", q:"Why did Duncan McCargo describe many Asian media as showing “partisan polyvalence”?", options:[
-      {t:"Because outlets play several shifting political roles at once, so a single measure of political parallelism misleads", ok:true, why:"Right. “Polyvalence” means having many valences or roles: the same outlet can be partisan, commercial and a voice of reform at different moments."},
+      {t:"Because outlets play shifting political roles", ok:true, why:"Right. A single measure of political parallelism misleads. “Polyvalence” means having many valences or roles: the same outlet can be partisan, commercial and a voice of reform at different moments."},
       {t:"Because Asian media are all controlled by the state", why:"McCargo’s point is the opposite of a single pattern: roles vary and shift, and Asian systems differ enormously."},
       {t:"Because Asian journalists are unusually professional", why:"His term is about political roles, not a claim about professionalism."},
       {t:"Because Asian countries fit the Liberal model exactly", why:"The chapter argued that the Western models stretch poorly in Asia."}
@@ -120,7 +120,7 @@ ICA.addUnit({
       ["Media Ownership Monitor","Maps who owns the main outlets in a country","It measures ownership and concentration, not freedom scores."]
     ]},
     {id:"e4u7-l1-x6", type:"mcq", q:"Two countries both fund their main broadcaster from public money. In Country A, an independent board appoints the director and the broadcaster often criticises the government. In Country B, the ministry appoints editors and the news never questions official policy. Which statement is most accurate?", options:[
-      {t:"A looks like public service media and B like state media: governance and editorial practice, not funding, tell them apart", ok:true, why:"Right. Both are publicly funded; independence depends on who appoints, who decides content, and the track record."},
+      {t:"A looks like public service media; B like state media", ok:true, why:"Right. Governance and editorial practice, not funding, tell them apart. Both are publicly funded; independence depends on who appoints, who decides content, and the track record."},
       {t:"Both are state media, because they take public money", why:"Funding alone doesn’t decide it. Many publicly funded broadcasters are editorially independent."},
       {t:"Both are public service media, because neither is commercial", why:"B’s editors are appointed by a ministry and never question policy: that is direct government control."},
       {t:"Neither can be classified without knowing their audience share", why:"Audience share says nothing about independence."}
@@ -216,7 +216,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u7-l2-x1", type:"mcq", q:"After weeks of coverage of a maritime dispute, a poll shows that voters now judge the prime minister mainly on how she handles it, though their views on her other policies haven’t changed. Which effect is this?", options:[
-      {t:"Priming: the issue the news stressed became the yardstick for judging the leader", ok:true, why:"Right. Iyengar and Kinder showed that heavily covered issues become the standards people use to evaluate leaders."},
+      {t:"Priming", ok:true, why:"Right. The issue the news stressed became the yardstick for judging the leader. Iyengar and Kinder showed that heavily covered issues become the standards people use to evaluate leaders."},
       {t:"First-level agenda setting only", why:"Agenda setting explains why the dispute seems important. Using it as the yardstick for judging a leader is priming."},
       {t:"The CNN effect", why:"The CNN effect is about coverage changing government policy, not how voters judge a leader."},
       {t:"Indexing", why:"Indexing is about news following the range of official debate, not about voters’ standards of judgement."}
@@ -236,8 +236,8 @@ ICA.addUnit({
       {t:"A report comparing how three governments’ policies affected migrant deaths at sea", b:1, why:"Policy comparison is thematic."}
     ]},
     {id:"e4u7-l2-x4", type:"mcq", q:"A small country is rarely in the foreign news, but appears for a week after an earthquake, then disappears. Which of Galtung and Ruge’s news values best explain the pattern?", options:[
-      {t:"Threshold, unexpectedness and negativity, combined with a lack of reference to elite nations", ok:true, why:"Right. A large, sudden, negative event passes the threshold; without elite-nation status, the country drops out again once the event ends."},
-      {t:"Continuity and consonance only", why:"Continuity would keep the story running; here it disappears. The key is a sudden, negative event in a non-elite nation."},
+      {t:"Threshold, unexpectedness and negativity", ok:true, why:"Right. Combined with a lack of reference to elite nations: a large, sudden, negative event passes the threshold; without elite-nation status, the country drops out again once the event ends."},
+      {t:"Continuity and consonance, and nothing else", why:"Continuity would keep the story running; here it disappears. The key is a sudden, negative event in a non-elite nation."},
       {t:"Reference to elite people", why:"No famous person is involved in this description."},
       {t:"Shareability", why:"Harcup and O’Neill’s later value could play a part, but the pattern Galtung and Ruge described rests on threshold, negativity and elite nations."}
     ]},
@@ -249,7 +249,7 @@ ICA.addUnit({
       {t:"The public", why:"Audiences receive frames, and polls feed back up the cascade."}
     ]},
     {id:"e4u7-l2-x6", type:"mcq", q:"According to Robinson’s policy–media interaction model, when is media coverage most likely to change a government’s decision on intervention?", options:[
-      {t:"When policy is uncertain and coverage is critical and framed with empathy for victims", ok:true, why:"Right. Both conditions are needed: an undecided government and coverage that criticises inaction."},
+      {t:"When policy is uncertain and coverage is critical", ok:true, why:"Right. The critical coverage is framed with empathy for victims. Both conditions are needed: an undecided government and coverage that criticises inaction."},
       {t:"Whenever coverage is heavy, whatever the government has decided", why:"The model’s point is that heavy coverage alone isn’t enough; a settled policy usually holds, as in Kosovo in 1999."},
       {t:"When coverage supports the government", why:"Supportive coverage reinforces policy; it doesn’t push it in a new direction."},
       {t:"Only when journalists are embedded with troops", why:"Embedding is a different issue. The model is about policy certainty and framing."}
@@ -352,8 +352,8 @@ ICA.addUnit({
       ["Yochai Benkler (2006)","The internet creates a many-to-many networked public sphere","*The Wealth of Networks* made the more optimistic case."]
     ]},
     {id:"e4u7-l3-x3", type:"mcq", q:"Which description of the Hong Kong protests of 2019 meets the neutrality standard expected in a seminar paper?", options:[
-      {t:"Protests against an extradition bill, coordinated largely through LIHKG and Telegram; supporters saw a defence of freedoms, while the Hong Kong and central governments described violent unrest encouraged by foreign forces", ok:true, why:"Right. It states verifiable facts and attributes each interpretation to those who hold it."},
-      {t:"A heroic uprising for freedom crushed by the authorities", why:"This adopts one side’s framing as the author’s own."},
+      {t:"Extradition-bill protests that each side described in its own terms", ok:true, why:"Right. A full version adds that they were coordinated largely through LIHKG and Telegram, and that supporters saw a defence of freedoms while the Hong Kong and central governments described violent unrest encouraged by foreign forces. It states verifiable facts and attributes each interpretation to those who hold it."},
+      {t:"A heroic and peaceful uprising for freedom, brutally crushed by the authorities", why:"This adopts one side’s framing as the author’s own."},
       {t:"Riots stirred up by foreign agents", why:"This adopts the governments’ framing as fact."},
       {t:"A Twitter revolution", why:"It is inaccurate (LIHKG and Telegram were central) and repeats the technology-centred claim scholars criticise."}
     ]},
@@ -480,7 +480,7 @@ ICA.addUnit({
       {t:"It can’t be rated until we know whether it changed votes", why:"The scale deliberately measures observable spread, because changes in votes are very hard to prove."}
     ]},
     {id:"e4u7-l4-x4", type:"mcq", q:"A journalist discovers a tiny fake-account network that nobody has noticed, and plans a front-page story. What does the “strategic silence” idea suggest she weigh?", options:[
-      {t:"Whether the story would give the network the mainstream breakout it couldn’t achieve alone", ok:true, why:"Right. Coverage can move an operation from category 1 or 2 to category 4. Reporting may still be justified, but the risk should be weighed and the story framed carefully."},
+      {t:"Whether coverage would give it the breakout it lacked", ok:true, why:"Right. Coverage can move an operation from category 1 or 2 to category 4. Reporting may still be justified, but the risk should be weighed and the story framed carefully."},
       {t:"Whether the network broke the platform’s terms of service", why:"Relevant to the platform, but strategic silence is about amplification by the media."},
       {t:"Whether the fake accounts use AI-generated profile photos", why:"An interesting detail, but not the point of strategic silence."},
       {t:"Whether her editor agrees politically with the network’s message", why:"Political agreement shouldn’t decide coverage; amplification risk should be weighed."}
@@ -600,7 +600,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u7-l5-x1", type:"mcq", q:"A student studies how a border clash was reported in two neighbouring countries, but searches only for the place name used by one country’s government. What is the main problem?", options:[
-      {t:"The sample is biased: articles using the other side’s name for the place will be missed", ok:true, why:"Right. Search terms must include each side’s vocabulary, in every language studied, or the corpus builds in one side’s framing."},
+      {t:"Articles using the other side’s name will be missed", ok:true, why:"Right. The sample is biased. Search terms must include each side’s vocabulary, in every language studied, or the corpus builds in one side’s framing."},
       {t:"The sample is too large to code", why:"Size isn’t the issue; who is left out is."},
       {t:"Place names don’t matter in framing analysis", why:"Names often carry claims and frames, which is exactly why they matter for sampling."},
       {t:"Only television should be studied for border clashes", why:"Any medium can be studied; the problem is the search strategy."}
@@ -639,7 +639,7 @@ ICA.addUnit({
       {t:"Count, compare and interpret, reporting limits", why:"Interpretation comes last, with transparency about methods."}
     ]},
     {id:"e4u7-l5-x7", type:"mcq", q:"A researcher wants to quote word for word from posts by activists in a country where criticising the government can lead to prison. The posts are public. What should she do?", options:[
-      {t:"Paraphrase or aggregate, remove identifying details, and get ethics approval, because exact quotes can be traced by search", ok:true, why:"Right. Public visibility doesn’t remove the risk of harm; contextual integrity and do-no-harm guide the choice."},
+      {t:"Paraphrase or aggregate, and remove identifying details", ok:true, why:"Right. She should also get ethics approval, because exact quotes can be traced by search. Public visibility doesn’t remove the risk of harm; contextual integrity and do-no-harm guide the choice."},
       {t:"Quote them exactly, since public posts carry no ethical duties", why:"This is the “it’s public” mistake. The AoIR guidelines ask researchers to weigh context and harm."},
       {t:"Quote them but replace the usernames with “Activist A”", why:"Exact text can still be searched and traced back to the person."},
       {t:"Ask the government’s permission first", why:"That could itself endanger the activists. Ethics review and anonymisation are the right steps."}
@@ -656,6 +656,68 @@ ICA.addUnit({
    ]}
   ],
   checkpoint:["e4u7-q02","e4u7-q06","e4u7-q11","e4u7-q15","e4u7-q17","e4u7-q20","e4u7-q24","e4u7-q26","e4u7-q29","e4u7-q32","e4u7-q40","e4u7-q44"],
+  cpBank:[
+   {id:"e4u7-cp01", lesson:"e4u7-l1", level:1, q:"In Country R, journalists run their own ethics council, editors refuse owners’ demands to drop stories, and reporters share norms about checking facts. On which Hallin and Mancini dimension does R score high?", options:[
+     {t:"Political parallelism", why:"Political parallelism is how far outlets line up with parties. Nothing here is about party ties."},
+     {t:"The role of the state", why:"The state’s role covers subsidies, public broadcasting and censorship. Here journalists themselves set and enforce the norms."},
+     {t:"Journalistic professionalism", ok:true, why:"Right. Professionalism is how far journalists share their own norms and control their work rather than serving owners or parties."},
+     {t:"The development of media markets", why:"Media markets are about whether a mass or an elite press developed. The scenario is about journalists’ norms and autonomy."}]},
+   {id:"e4u7-cp02", lesson:"e4u7-l1", level:2, q:"Mateus, a freelance reporter in Tokyo, is kept out of a ministry briefing held for its kisha club. His essay says this proves the government has captured the press. Which revision fits the unit best?", options:[
+     {t:"Keep the claim, because kisha clubs are censorship offices that each ministry runs", why:"The clubs are press clubs attached to ministries and parties, not government censorship offices, so the claim rests on a factual error."},
+     {t:"Describe the clubs as press clubs, then attribute what critics and defenders say", ok:true, why:"Right. One exclusion is an example of the critics’ point (closeness to officials, freelancers and foreign reporters kept out), not proof of capture. Defenders say the clubs secure access and accuracy. Attribute both views."},
+     {t:"Replace it with the view that the clubs have no drawbacks, since they give access", why:"That swaps one side’s view for the other’s. The critics’ points about closeness to officials and exclusion still need reporting."},
+     {t:"Add that Japan fits the Liberal model exactly, so its press cannot be captured", why:"Hallin and Mancini built their models from 18 Western cases, and Japan’s mix of NHK, huge dailies and kisha clubs doesn’t fit one box. No model rules out capture."}]},
+   {id:"e4u7-cp03", lesson:"e4u7-l2", level:1, q:"A reporter covering a border war explains its causes, quotes people on all sides, and reports local efforts to stop the fighting, not only battles. Which idea is she following?", options:[
+     {t:"Episodic framing", why:"Episodic stories focus on one person or event. She is adding causes and context, which is closer to thematic coverage and to peace journalism."},
+     {t:"The indexing hypothesis", why:"Indexing says news mirrors the range of debate among officials. She is going beyond officials to all sides and local peacemakers."},
+     {t:"The CNN effect", why:"The CNN effect is about coverage pushing governments into decisions. This is a style of reporting, not an effect on policy."},
+     {t:"Peace journalism", ok:true, why:"Right. Galtung argued for peace journalism: reporting causes, voices on all sides and paths to peace, not only violence."}]},
+   {id:"e4u7-cp04", lesson:"e4u7-l2", level:2, q:"After television shows the bodies of its soldiers killed abroad, a government finds it much harder to keep its troops in a peace mission. Which of Livingston’s effects is this?", options:[
+     {t:"An accelerant effect", why:"An accelerant speeds up a decision the government is already making. Here coverage makes continuing the mission harder."},
+     {t:"An impediment effect", ok:true, why:"Right. Livingston’s impediment effect is when images of casualties make intervention harder, as after the deaths of US soldiers in Mogadishu in 1993."},
+     {t:"An agenda-setting effect", why:"Agenda setting puts an issue on the list of what people think about. The mission was already on the agenda; the images make it harder to sustain."},
+     {t:"Priming", why:"Priming is about the yardsticks people use to judge leaders. Livingston’s three effects are accelerant, impediment and agenda-setting."}]},
+   {id:"e4u7-cp05", lesson:"e4u7-l4", level:3, q:"Researchers find a small fake-account network with almost no real engagement. It claims links to a powerful country and targets a celebrity. Several outlets rush to cover it. Which pair of ideas explains the rush and the risk?", options:[
+     {t:"Agenda setting explains the rush, and prebunking shows such coverage is always harmless", why:"Prebunking is about warning people about techniques in advance. It doesn’t show that covering a small operation is harmless."},
+     {t:"The propaganda model’s “flak” explains the rush, and the liar’s dividend shows coverage will reduce the network’s reach", why:"Flak is organised pressure on reporting, and the liar’s dividend is about dismissing genuine recordings as fake. Neither fits."},
+     {t:"News values such as elite nations, elite people and unexpectedness explain the rush; the Breakout Scale warns that coverage can give it the breakout it lacked", ok:true, why:"Right. This combines Lesson 2 (Galtung and Ruge’s news values) with Lesson 4 (Nimmo’s Breakout Scale and the risk of amplification)."},
+     {t:"Cascading activation explains the rush, and strategic silence means it must never be reported", why:"Donovan and boyd argue for strategic amplification, deciding deliberately what to cover and how, not a rule of never reporting."}]},
+   {id:"e4u7-cp06", lesson:"e4u7-l3", level:2, q:"A US-based app company decides to apply EU transparency rules to all its users worldwide, because running one standard is cheaper than running many. Which idea describes this?", options:[
+     {t:"The Brussels effect", ok:true, why:"Right. Anu Bradford argued that EU rules often spread globally because companies apply one standard everywhere."},
+     {t:"The splinternet", why:"The splinternet is the internet breaking into national or regional pieces. Here one standard spreads worldwide instead."},
+     {t:"Section 230", why:"Section 230 is a US law shielding platforms from liability for most user posts. It isn’t about EU rules spreading."},
+     {t:"Digital sovereignty", why:"Digital sovereignty is a state’s claim to control data and platforms within its borders. The spread here happens through a company’s choice."}]},
+   {id:"e4u7-cp07", lesson:"e4u7-l3", level:2, q:"A government blocks several foreign platforms, citing national sovereignty and the spread of false information. Rights groups call it censorship. Which sentence suits a seminar paper?", options:[
+     {t:"The government censored the foreign platforms in order to silence its many critics.", why:"This states the rights groups’ view as fact. A seminar paper should attribute it."},
+     {t:"The government wisely protected its citizens from the fake news on foreign platforms.", why:"This states the government’s view as fact. A seminar paper should attribute it."},
+     {t:"The block created a splinternet, which all scholars agree strengthens sovereignty.", why:"Scholars disagree: critics warn of a splinternet, supporters defend state regulation. “All scholars agree” is false."},
+     {t:"The government cited sovereignty and false news; rights groups called it censorship.", ok:true, why:"Right. This combines Lesson 3 (digital sovereignty and its critics) with Lesson 4 (laws against false information): attribute each side, then analyse."}]},
+   {id:"e4u7-cp08", lesson:"e4u7-l4", level:1, q:"Just before an election, someone leaks a candidate’s genuine medical records to damage her. In Wardle and Derakhshan’s terms, what is this?", options:[
+     {t:"Misinformation", why:"Misinformation is false content shared without intent to harm. These records are genuine and leaked to harm."},
+     {t:"Malinformation", ok:true, why:"Right. Malinformation is true information used to cause harm, such as leaking private records."},
+     {t:"Disinformation", why:"Disinformation is false and deliberate. The records here are genuine."},
+     {t:"Prebunking", why:"Prebunking is a response that warns people about manipulation techniques in advance, not a kind of harmful content."}]},
+   {id:"e4u7-cp09", lesson:"e4u7-l4", level:3, q:"After months of headlines about foreign fake-account networks, a survey finds that many people now trust no news at all, including accurate reporting. Which concern from the unit does this match?", options:[
+     {t:"The backfire effect, in which corrections make false beliefs even stronger", why:"The backfire effect is about corrections strengthening a false belief, and research finds it rare. The survey shows a general loss of trust."},
+     {t:"Proof that the networks broke out widely and changed many votes", why:"A survey on trust doesn’t show breakout or effects on votes. Size and impact must be measured separately."},
+     {t:"The worry that influence operations may harm trust itself most of all", ok:true, why:"Right. The lesson notes that this loss of trust may matter more than any single operation’s reach."},
+     {t:"Filter bubbles created by the ranking algorithms of news platforms", why:"Filter bubbles are about narrow exposure, and the evidence for them in news is weaker than often claimed. This is about distrust of all news."}]},
+   {id:"e4u7-cp10", lesson:"e4u7-l5", level:2, q:"Ana uses a language model to pre-code 50,000 Thai and English news articles for the conflict frame. What should she do next?", options:[
+     {t:"Test it like a new coder against a human-coded sample, checking each language", ok:true, why:"Right. The lesson says to test model output against human coding, report agreement and check by language, since accuracy is often lower outside English."},
+     {t:"Nothing more, because a computer model removes the coder bias that humans bring", why:"The lesson lists this as a misconception: automated tools inherit the biases of their training data and of the news they read."},
+     {t:"Report only the English results, because Thai articles are harder for models to code", why:"Dropping one language would distort a comparative study. She should test and report accuracy in both."},
+     {t:"Skip the codebook, because the model can define the frames itself from the articles", why:"A codebook makes the study replicable. Without it, no one can check what “conflict” meant."}]},
+   {id:"e4u7-cp11", lesson:"e4u7-l5", level:3, q:"A thesis finds that 70% of articles about a neighbouring country used the conflict frame, and concludes that readers became more hostile to that country. What is the best advice?", options:[
+     {t:"The claim stands, because 70% of articles is a clear and large majority", why:"A share of articles describes texts, not readers. However large, it can’t show what readers came to think."},
+     {t:"The claim stands, because agenda setting shows media tell people what to think", why:"Cohen’s point was the reverse: media are better at telling people what to think about than what to think."},
+     {t:"Recode the articles with inductive frames, which will then show the effect on readers", why:"Changing the coding method still only describes texts. Effects need evidence from the audience."},
+     {t:"Texts only show which frames are offered; claims about readers need audience data", ok:true, why:"Right. This combines Lesson 5 (framing analysis can’t speak to reception) with Lesson 2 (audiences can accept, negotiate or reject frames)."}]},
+   {id:"e4u7-cp12", lesson:"e4u7-l5", level:3, q:"Kofi will study how newspapers framed a trade deal in a country with high political parallelism. Which choice of outlets is strongest?", options:[
+     {t:"Two papers with the same party ties, to keep the sample consistent", why:"In a system with high parallelism, choosing one camp would build bias into the sample and hide the contrast."},
+     {t:"Papers from different political camps, perhaps plus the public broadcaster, chosen for reach and leaning and justified in the methods section", ok:true, why:"Right. This combines Lesson 1 (political parallelism) with Lesson 5 (choose outlets by reach, ownership or leaning, and say so)."},
+     {t:"Whichever papers appear first in a database search", why:"Outlets should be chosen and justified on purpose, not left to the order of search results."},
+     {t:"Only the largest commercial paper, because commercial media are neutral", why:"Commercial media are not automatically neutral, and the lesson warns that a free market doesn’t guarantee free media."}]},
+  ],
   codex:[
    {id:"media-systems", title:"Comparing media systems", aka:["Hallin and Mancini’s three models","Media system typologies"], tags:["media","comparative politics","international studies"],
     summary:"How scholars compare national media systems: from *Four Theories of the Press* (1956) to Hallin and Mancini’s three models (2004) and their extensions beyond the West.",
@@ -1085,12 +1147,12 @@ ICA.addUnit({
      {t:"Number of newspapers per person", why:"Circulation is a Hallin and Mancini dimension, not an RSF indicator."},
      {t:"Public trust in news", why:"Trust is measured by surveys such as the *Digital News Report*, not by RSF’s indicators."}]},
    {id:"e4u7-q04", lesson:"e4u7-l1", level:2, q:"A student writes: “Freedom House’s *Freedom of the Press 2025* report shows…”. What should the tutor point out?", options:[
-     {t:"Freedom House’s separate *Freedom of the Press* report ended after the 2017 edition; media freedom now appears in *Freedom in the World* and *Freedom on the Net*", ok:true, why:"Correct. Checking that a source still exists, and in what form, is part of using indices well."},
+     {t:"That report ended after its 2017 edition", ok:true, why:"Correct. Media freedom now appears in *Freedom in the World* and *Freedom on the Net*. Checking that a source still exists, and in what form, is part of using indices well."},
      {t:"Freedom House only measures economic freedom", why:"Freedom House measures political rights and civil liberties, including media freedom."},
      {t:"The report is published by RSF, not Freedom House", why:"RSF publishes the World Press Freedom Index, a different product."},
      {t:"Nothing: the citation is correct", why:"There is no 2025 *Freedom of the Press* report."}]},
    {id:"e4u7-q05", lesson:"e4u7-l1", level:1, q:"What does “media capture” mean?", options:[
-     {t:"Outlets serving governments or business allies instead of the public, through ownership, advertising, licences or other pressure", ok:true, why:"Correct. Capture can occur even where formal press freedom exists."},
+     {t:"Outlets serving the powerful instead of the public", ok:true, why:"Correct. Outlets serve governments or business allies through ownership, advertising, licences or other pressure. Capture can occur even where formal press freedom exists."},
      {t:"Journalists recording video of events", why:"That is a literal reading; the term is about control of media."},
      {t:"A platform’s algorithm choosing what appears in feeds", why:"That is recommendation or ranking, not capture."},
      {t:"The arrest of journalists", why:"Arrests are a safety issue measured by indices; capture works mostly through economic and political leverage."}]},
@@ -1100,12 +1162,12 @@ ICA.addUnit({
      {t:"The index must have made an error", why:"Nothing suggests an error; this is how relative rankings work."},
      {t:"Q’s government must have paid for a better rank", why:"There’s no evidence for this, and the pattern has an ordinary explanation."}]},
    {id:"e4u7-q07", lesson:"e4u7-l1", level:2, q:"Two publicly funded broadcasters are compared. Which evidence best shows whether each is public service or state media?", options:[
-     {t:"Who appoints the leadership, how editorial decisions are protected, and whether coverage scrutinises the government", ok:true, why:"Correct. Governance and editorial track record, not funding, distinguish the two."},
+     {t:"Who appoints the leaders and how editors are protected", ok:true, why:"Correct. Also check whether coverage scrutinises the government. Governance and editorial track record, not funding, distinguish the two."},
      {t:"Their annual budgets", why:"Budget size says nothing about independence."},
-     {t:"Whether they broadcast in several languages", why:"Many independent and state-controlled broadcasters are multilingual."},
+     {t:"Whether they broadcast in several languages and regions", why:"Many independent and state-controlled broadcasters are multilingual."},
      {t:"Their audience ratings", why:"Popularity doesn’t show who controls the content."}]},
    {id:"e4u7-q08", lesson:"e4u7-l1", level:3, q:"A paper places a Southeast Asian country in Hallin and Mancini’s Liberal model because its media are commercial. A reviewer objects. Which objection is strongest?", options:[
-     {t:"Commercial ownership is only one dimension; parallelism, professionalism and the state’s role may point elsewhere, and the models were built for Western cases", ok:true, why:"Correct. A placement needs evidence on all four dimensions, with awareness that the models stretch poorly outside their original cases."},
+     {t:"Ownership is only one of four dimensions", ok:true, why:"Correct. Parallelism, professionalism and the state’s role may point elsewhere, and the models were built for Western cases. A placement needs evidence on all four dimensions, with awareness that the models stretch poorly outside their original cases."},
      {t:"Asian countries can never be compared with Western ones", why:"Comparison is possible and common; the point is to do it carefully."},
      {t:"The Liberal model only applies to the United States", why:"It also covers Britain, Ireland and Canada."},
      {t:"Commercial media don’t exist in Southeast Asia", why:"They clearly do; the issue is whether commerce alone defines the system."}]},
@@ -1131,40 +1193,40 @@ ICA.addUnit({
      {t:"Edward Herman and Noam Chomsky", why:"They wrote *Manufacturing Consent* (1988)."},
      {t:"Daniel Hallin and Paolo Mancini", why:"They compared media systems (2004)."}]},
    {id:"e4u7-q13", lesson:"e4u7-l2", level:2, q:"In an experiment, viewers who saw stories about one homeless family blamed the family; viewers who saw a report on housing policy blamed the government. Which finding does this match?", options:[
-     {t:"Iyengar’s episodic and thematic framing", ok:true, why:"Correct. Episodic coverage encouraged individual blame, thematic coverage societal blame."},
-     {t:"Priming", why:"Priming concerns the standards used to judge leaders, not who is blamed for a problem."},
+     {t:"Episodic and thematic framing", ok:true, why:"Correct. This is Iyengar’s finding: episodic coverage encouraged individual blame, thematic coverage societal blame."},
+     {t:"Priming of leaders’ evaluations", why:"Priming concerns the standards used to judge leaders, not who is blamed for a problem."},
      {t:"Indexing", why:"Indexing is about news following elite debate."},
-     {t:"The CNN effect", why:"That is about policy change, not audience attributions of blame."}]},
+     {t:"The CNN effect on government policy", why:"That is about policy change, not audience attributions of blame."}]},
    {id:"e4u7-q14", lesson:"e4u7-l2", level:3, q:"A government is firmly committed to staying out of a distant civil war. Coverage becomes intensely critical, with images of civilian suffering. What does Robinson’s model predict?", options:[
-     {t:"Policy is likely to hold, because media influence depends on policy uncertainty", ok:true, why:"Correct. With a settled policy, even critical, empathy-framed coverage is unlikely to force a change, as in his Kosovo case."},
+     {t:"Policy is likely to hold, since it is settled", ok:true, why:"Correct. Media influence depends on policy uncertainty. With a settled policy, even critical, empathy-framed coverage is unlikely to force a change, as in his Kosovo case."},
      {t:"The government will intervene within days", why:"That is the strong CNN effect claim the model rejects for settled policies."},
      {t:"Coverage will stop because of indexing", why:"Indexing would predict coverage follows elite debate; the scenario says coverage is already critical."},
      {t:"Nothing can be predicted about media and policy", why:"The model makes a clear conditional prediction."}]},
    {id:"e4u7-q15", lesson:"e4u7-l2", level:2, q:"Which of these is one of Herman and Chomsky’s five filters?", options:[
-     {t:"Sourcing: reliance on official and corporate sources", ok:true, why:"Correct. The others are ownership, advertising, flak and an enemy ideology."},
-     {t:"Algorithmic ranking", why:"The model was written in 1988, before platforms; ranking isn’t one of the five."},
+     {t:"Reliance on official sources", ok:true, why:"Correct. This is sourcing: reliance on official and corporate sources. The others are ownership, advertising, flak and an enemy ideology."},
+     {t:"Algorithmic ranking of stories by platforms", why:"The model was written in 1988, before platforms; ranking isn’t one of the five."},
      {t:"Fact-checking", why:"Not a filter in the model."},
-     {t:"Peace journalism", why:"That is Galtung’s normative proposal."}]},
+     {t:"Peace journalism in conflict reporting", why:"That is Galtung’s normative proposal."}]},
    {id:"e4u7-q16", lesson:"e4u7-l2", level:3, q:"A study finds that coverage of a foreign war turned critical only after senior politicians began disagreeing about it. Which explanation fits best?", options:[
-     {t:"Indexing: news reflects the range of elite debate", ok:true, why:"Correct. This is Bennett’s hypothesis, and Hallin’s Vietnam finding."},
+     {t:"Indexing to the range of elite debate", ok:true, why:"Correct. This is Bennett’s hypothesis, and Hallin’s Vietnam finding."},
      {t:"Agenda setting by the public", why:"The change follows elite disagreement, not public priorities."},
      {t:"The CNN effect", why:"Here media follow elites rather than drive policy."},
-     {t:"News values of unexpectedness", why:"Unexpectedness explains whether events get covered, not when coverage turns critical."}]},
+     {t:"The news value of unexpectedness and surprise", why:"Unexpectedness explains whether events get covered, not when coverage turns critical."}]},
    {id:"e4u7-q17", lesson:"e4u7-l2", level:3, q:"Researchers count foreign news stories in a country’s press: most stories about one region concern disasters, coups or epidemics. Which concept, and which old debate, fit best?", options:[
-     {t:"Galtung and Ruge’s news values, and the NWICO debate at UNESCO in the 1970s and 1980s", ok:true, why:"Correct. Negativity and elite-nation bias produce crisis-only coverage, the complaint behind calls for a New World Information and Communication Order."},
+     {t:"News values, and the NWICO debate at UNESCO", ok:true, why:"Correct. Galtung and Ruge’s negativity and elite-nation bias produce crisis-only coverage, the complaint behind calls for a New World Information and Communication Order."},
      {t:"Priming and the Chapel Hill study", why:"Neither explains why coverage of a region is mostly negative."},
-     {t:"Connective action and the Arab uprisings", why:"Those concern protest organisation online."},
+     {t:"Connective action and online protest in the Arab uprisings", why:"Those concern protest organisation online."},
      {t:"The liar’s dividend and deepfakes", why:"Those concern synthetic media, not story selection."}]},
    {id:"e4u7-q18", lesson:"e4u7-l2", level:1, q:"Which is a major criticism of the propaganda model?", options:[
-     {t:"It is hard to falsify and leaves little room for journalists’ agency", ok:true, why:"Correct. These are two of the most common critiques."},
+     {t:"It is hard to falsify and neglects journalists’ agency", ok:true, why:"Correct. It leaves little room for journalists’ agency. These are two of the most common critiques."},
      {t:"It ignores ownership", why:"Ownership is its first filter."},
      {t:"It was only about social media", why:"It was written about pre-internet US mass media."},
-     {t:"It claims governments censor every story", why:"It explains consensus without direct censorship."}]},
+     {t:"It claims governments directly censor every news story", why:"It explains consensus without direct censorship."}]},
    /* Lesson 3 */
    {id:"e4u7-q19", lesson:"e4u7-l3", level:1, q:"In Habermas’s 1962 account, what is the public sphere?", options:[
-     {t:"The space between private life and the state where people discuss common affairs and form public opinion", ok:true, why:"Correct. Habermas located it between private life and the state, in coffee houses, salons and the press."},
+     {t:"The space where people discuss common affairs", ok:true, why:"Correct. There people form public opinion. Habermas located it between private life and the state, in coffee houses, salons and the press."},
      {t:"All government-owned media", why:"The public sphere is about citizens’ debate, not state ownership."},
-     {t:"The set of publicly listed media companies", why:"“Public” here means open debate, not stock market listing."},
+     {t:"The set of publicly listed media companies in a country", why:"“Public” here means open debate, not stock market listing."},
      {t:"Any place outdoors", why:"It is a social and communicative space, not a physical category."}]},
    {id:"e4u7-q20", lesson:"e4u7-l3", level:2, q:"A critic says Habermas’s coffee-house public excluded women and workers, who built their own spaces of debate. Whose argument is this?", options:[
      {t:"Nancy Fraser’s, on counterpublics (1990)", ok:true, why:"Correct. “Rethinking the Public Sphere” argued for plural publics, including counterpublics of excluded groups."},
@@ -1172,9 +1234,9 @@ ICA.addUnit({
      {t:"Evgeny Morozov’s, on the net delusion", why:"Morozov wrote about digital tools and authoritarian control."},
      {t:"Robert Entman’s, on framing", why:"Entman defined news framing."}]},
    {id:"e4u7-q21", lesson:"e4u7-l3", level:2, q:"A movement grows from nothing to huge marches in two weeks, coordinated online, but collapses when it must negotiate. Which scholar’s argument does this illustrate?", options:[
-     {t:"Zeynep Tufekci’s: digital tools let movements scale fast without building organisational capacity", ok:true, why:"Correct. *Twitter and Tear Gas* (2017) calls this the power and fragility of networked protest."},
+     {t:"Tufekci’s networked protest", ok:true, why:"Correct. Zeynep Tufekci argues that digital tools let movements scale fast without building organisational capacity. *Twitter and Tear Gas* (2017) calls this the power and fragility of networked protest."},
      {t:"Habermas’s refeudalisation", why:"That concerns the decline of the public sphere under mass media."},
-     {t:"Herman and Chomsky’s flak", why:"Flak is pressure on media, not movement fragility."},
+     {t:"Herman and Chomsky’s flak filter", why:"Flak is pressure on media, not movement fragility."},
      {t:"Galtung’s news values", why:"News values explain coverage, not movement organisation."}]},
    {id:"e4u7-q22", lesson:"e4u7-l3", level:1, q:"How many internet shutdowns did Access Now count for 2025?", options:[
      {t:"At least 313, in 52 countries", ok:true, why:"Correct, from its report published in March 2026."},
@@ -1187,13 +1249,13 @@ ICA.addUnit({
      {t:"The studies were never peer reviewed", why:"They were published in *Science* and *Nature*."},
      {t:"Experiments can never tell us anything about platforms", why:"They can; the issue is the scope of the conclusions."}]},
    {id:"e4u7-q24", lesson:"e4u7-l3", level:2, q:"Which description of the EU’s Digital Services Act is accurate?", options:[
-     {t:"It requires the largest platforms (45 million or more EU users) to assess and reduce systemic risks, and fines can reach 6% of global turnover", ok:true, why:"Correct. These are the core duties and penalties for very large online platforms."},
+     {t:"Very large platforms must reduce systemic risks", ok:true, why:"Correct. Platforms with 45 million or more EU users must assess and reduce systemic risks, and fines can reach 6% of global turnover. These are the core duties and penalties for very large online platforms."},
      {t:"It bans all political content on platforms", why:"It sets risk and transparency duties; it doesn’t ban political content."},
-     {t:"It only applies to companies based in the EU", why:"It applies to services offered in the EU wherever the company is based."},
-     {t:"It replaced Section 230 in the United States", why:"Section 230 is US law; the DSA is EU law."}]},
+     {t:"It only applies to companies based in EU member states", why:"It applies to services offered in the EU wherever the company is based."},
+     {t:"It replaced Section 230 of US law on platform liability", why:"Section 230 is US law; the DSA is EU law."}]},
    {id:"e4u7-q25", lesson:"e4u7-l3", level:3, q:"A student must describe the Hong Kong protests of 2019 in a seminar paper. Which sentence is most appropriate?", options:[
-     {t:"“Protests against an extradition bill drew very large numbers; supporters framed them as defending the city’s freedoms, while the authorities described violent unrest encouraged by foreign forces.”", ok:true, why:"Correct. It states facts and attributes each interpretation."},
-     {t:"“Brave Hongkongers rose up against tyranny.”", why:"This adopts one side’s framing as the author’s own."},
+     {t:"“Supporters saw a fight for freedoms; officials saw foreign-backed unrest.”", ok:true, why:"Correct. It attributes each interpretation; a full paragraph would add the facts, such as protests against an extradition bill drawing very large numbers."},
+     {t:"“Brave Hongkongers rose up against tyranny and fought for the freedom of their city.”", why:"This adopts one side’s framing as the author’s own."},
      {t:"“Foreign-backed rioters attacked the city.”", why:"This adopts the authorities’ framing as fact."},
      {t:"“Twitter caused the protests.”", why:"Inaccurate and technologically determinist; LIHKG and Telegram were more central, and causes were political."}]},
    {id:"e4u7-q26", lesson:"e4u7-l3", level:3, q:"After false rumours on a messaging app are linked to violence, the company limits how many chats a message can be forwarded to. Which concept best describes this kind of response?", options:[
@@ -1213,12 +1275,12 @@ ICA.addUnit({
      {t:"Ben Nimmo", why:"Nimmo created the Breakout Scale (2020)."},
      {t:"Robert Chesney and Danielle Citron", why:"They described the liar’s dividend (2019)."}]},
    {id:"e4u7-q29", lesson:"e4u7-l4", level:2, q:"A network of 5,000 fake accounts posts on 40 platforms, but its posts are only liked by its own accounts. A newspaper then runs a front-page story about it. What risk does this create?", options:[
-     {t:"The coverage may give the operation the mainstream breakout it couldn’t achieve alone", ok:true, why:"Correct. Coverage can move it up the Breakout Scale, which is why “strategic silence” is debated."},
+     {t:"It may give the operation a breakout", ok:true, why:"Correct. Coverage may achieve the mainstream breakout the operation couldn’t achieve alone, moving it up the Breakout Scale, which is why “strategic silence” is debated."},
      {t:"None: coverage always reduces an operation’s reach", why:"Coverage can raise awareness, but it can also amplify."},
      {t:"The operation automatically reaches category 6", why:"Category 6 needs a policy response or a call for violence."},
      {t:"It proves the operation changed public opinion", why:"Coverage of an operation is not evidence of its effect on opinion."}]},
    {id:"e4u7-q30", lesson:"e4u7-l4", level:1, q:"Which statement about documented influence operations is accurate?", options:[
-     {t:"They have been run by democracies, authoritarian states, parties and commercial firms", ok:true, why:"Correct. Cases in this lesson include Russia, China-linked networks, the US military, and PR firms in the Philippines."},
+     {t:"They have been run by democracies too", ok:true, why:"Correct. Authoritarian states, parties and commercial firms run them as well. Cases in this lesson include Russia, China-linked networks, the US military, and PR firms in the Philippines."},
      {t:"Only authoritarian states run them", why:"Documented cases include democracies, such as the US campaign in the Philippines."},
      {t:"They are always run by individuals acting alone", why:"By definition they are coordinated."},
      {t:"They only use text, never images or video", why:"They use all formats."}]},
@@ -1228,27 +1290,27 @@ ICA.addUnit({
      {t:"Corrections permanently remove false beliefs", why:"Effects are modest and can fade."},
      {t:"Corrections have no effect at all", why:"Studies find modest positive effects."}]},
    {id:"e4u7-q32", lesson:"e4u7-l4", level:3, q:"A government report says “state X ran this campaign” but gives no evidence, and state X denies it. How should a seminar paper describe it?", options:[
-     {t:"“The government of Y attributed the campaign to X, without publishing its evidence; X denied involvement.”", ok:true, why:"Correct. It attributes the claim, notes the evidence gap and records the denial."},
+     {t:"“Y attributed it to X without published evidence; X denied it.”", ok:true, why:"Correct. In full: “The government of Y attributed the campaign to X, without publishing its evidence; X denied involvement.” It attributes the claim, notes the evidence gap and records the denial."},
      {t:"“X ran the campaign.”", why:"This states a contested attribution as fact."},
-     {t:"“The campaign was obviously fake news invented by Y.”", why:"This takes the opposite side without evidence."},
+     {t:"“The campaign was obviously fake news invented by Y’s government.”", why:"This takes the opposite side without evidence."},
      {t:"Leave the campaign out entirely", why:"It can be discussed if attribution is reported accurately."}]},
    {id:"e4u7-q33", lesson:"e4u7-l4", level:1, q:"What is prebunking?", options:[
-     {t:"Warning people about manipulation techniques or false claims before they meet them", ok:true, why:"Correct. It works like a vaccine."},
+     {t:"Warning people about manipulation in advance", ok:true, why:"Correct. People are warned about techniques or false claims before they meet them. It works like a vaccine."},
      {t:"Deleting false posts before they are published", why:"That is pre-moderation, not prebunking."},
      {t:"Fact-checking a claim after it goes viral", why:"That is debunking."},
      {t:"Labelling AI-generated images", why:"That is labelling or provenance."}]},
    {id:"e4u7-q34", lesson:"e4u7-l4", level:2, q:"What did Meta announce in January 2025 about fact-checking in the United States?", options:[
-     {t:"It would end its third-party fact-checking programme there and move to Community Notes", ok:true, why:"Correct. The US programme ended in April 2025."},
+     {t:"It would switch to Community Notes", ok:true, why:"Correct. It ended its third-party fact-checking programme in the US, which closed in April 2025."},
      {t:"It would double the number of fact-checkers", why:"It ended the US programme."},
      {t:"It would let governments decide what is false", why:"Not what was announced."},
      {t:"It would ban all political posts", why:"Not what was announced."}]},
    {id:"e4u7-q35", lesson:"e4u7-l4", level:3, q:"A politician is caught on a genuine recording making a damaging remark and immediately says it is an AI fake. Many supporters believe him. What does this illustrate, and what helps?", options:[
-     {t:"The liar’s dividend; provenance evidence, independent forensic checks and corroborating witnesses help", ok:true, why:"Correct. When fakes are common, denial becomes easier; evidence of origin and corroboration counter it."},
+     {t:"The liar’s dividend; provenance and corroboration help", ok:true, why:"Correct. Independent forensic checks and corroborating witnesses also help. When fakes are common, denial becomes easier; evidence of origin and corroboration counter it."},
      {t:"Prebunking; nothing else helps", why:"This is denial of real evidence, not a pre-emptive warning."},
      {t:"The CNN effect; more TV coverage helps", why:"The CNN effect concerns policy decisions."},
-     {t:"Malinformation; deleting the recording helps", why:"Deleting genuine evidence would not help establish the truth."}]},
+     {t:"Malinformation; deleting the recording everywhere helps", why:"Deleting genuine evidence would not help establish the truth."}]},
    {id:"e4u7-q36", lesson:"e4u7-l4", level:2, q:"As of November 2026, which statement about AI labelling rules is accurate?", options:[
-     {t:"EU AI Act transparency duties, including deepfake disclosure, applied from 2 August 2026, and China’s labelling measures from 1 September 2025", ok:true, why:"Correct. Both dates are verified as of November 2026; check for later changes."},
+     {t:"The EU and China both have labelling rules in force", ok:true, why:"Correct. EU AI Act transparency duties, including deepfake disclosure, applied from 2 August 2026, and China’s labelling measures from 1 September 2025. Both dates are verified as of November 2026; check for later changes."},
      {t:"No country has any rules on labelling AI content", why:"Both China and the EU have such rules."},
      {t:"The EU postponed all AI Act transparency duties to 2030", why:"The transparency duties applied from August 2026; some high-risk rules were postponed to December 2027."},
      {t:"Labels are now impossible to remove", why:"Watermarks and labels can often be removed or lost."}]},
@@ -1264,12 +1326,12 @@ ICA.addUnit({
      {t:"133%, plus the number of coders", why:"That divides 60 by 45; agreement can’t exceed 100%."},
      {t:"45%, plus the word count", why:"45 is the number of agreements, not a percentage."}]},
    {id:"e4u7-q39", lesson:"e4u7-l5", level:1, q:"Which describes GDELT accurately?", options:[
-     {t:"A free, open database monitoring world news in over 100 languages, updated every 15 minutes, with archives from 1979", ok:true, why:"Correct, per the project’s own site."},
+     {t:"A free, open database monitoring world news", ok:true, why:"Correct. It covers over 100 languages, updates every 15 minutes and has archives from 1979, per the project’s own site."},
      {t:"A subscription newspaper archive run by a publisher", why:"GDELT is free and open; subscription archives include Factiva and Nexis Uni."},
      {t:"A survey of news habits in 48 markets", why:"That is the *Digital News Report*."},
      {t:"Meta’s replacement for CrowdTangle", why:"That is the Meta Content Library."}]},
    {id:"e4u7-q40", lesson:"e4u7-l5", level:3, q:"A thesis uses GDELT to claim that a border region was “peaceful” for ten years because few events were recorded. What is the strongest methodological objection?", options:[
-     {t:"Event data built from news inherit news values, so low coverage may mean neglect rather than peace; validate with other sources", ok:true, why:"Correct. Absence in the data is not evidence of absence of events."},
+     {t:"Low coverage may mean neglect, not peace", ok:true, why:"Correct. Event data built from news inherit news values, so validate with other sources. Absence in the data is not evidence of absence of events."},
      {t:"GDELT only covers Europe", why:"It monitors news from nearly every country."},
      {t:"GDELT has no data before 2020", why:"Its archives go back to 1979."},
      {t:"Event data are always more accurate than news", why:"Event data are derived from news and add coding errors."}]},
@@ -1279,18 +1341,18 @@ ICA.addUnit({
      {t:"The *Digital News Report*", why:"It is a survey, not an archive."},
      {t:"The Meta Content Library", why:"That covers Meta’s platforms."}]},
    {id:"e4u7-q42", lesson:"e4u7-l5", level:3, q:"A researcher studies a protest movement’s public posts in a country where protesters are prosecuted. She plans to publish exact quotes with usernames removed. What is the main problem?", options:[
-     {t:"Exact quotes can be searched and traced back to the authors, putting them at risk; paraphrase or aggregate instead", ok:true, why:"Correct. Removing usernames is not enough when text is searchable."},
+     {t:"Exact quotes can be searched and traced to authors", ok:true, why:"Correct. That puts them at risk, so paraphrase or aggregate instead. Removing usernames is not enough when text is searchable."},
      {t:"Public posts can never be studied", why:"They can, with care for context and harm."},
-     {t:"She should add the usernames back for accuracy", why:"That would increase the risk to the authors."},
+     {t:"She should add the usernames back for accuracy and credit", why:"That would increase the risk to the authors."},
      {t:"Quotes are only a problem in democracies", why:"The risk is greatest where protest is prosecuted."}]},
    {id:"e4u7-q43", lesson:"e4u7-l5", level:2, q:"What does Helen Nissenbaum’s “contextual integrity” imply for social media research?", options:[
-     {t:"Information carries the norms of the context it was shared in, so moving a post into a publication can be a harm even if it was public", ok:true, why:"Correct. Nissenbaum’s idea explains why “it’s public” doesn’t settle the ethics."},
+     {t:"Public posts carry their context’s norms", ok:true, why:"Correct. Moving a post into a publication can be a harm even if it was public. Nissenbaum’s idea explains why “it’s public” doesn’t settle the ethics."},
      {t:"Anything public may be used in any way", why:"That is the view contextual integrity challenges."},
      {t:"Researchers must never use online data", why:"It asks for care, not a ban."},
      {t:"Only images, not text, raise privacy concerns", why:"Text raises the same concerns."}]},
    {id:"e4u7-q44", lesson:"e4u7-l5", level:3, q:"A student wants to compare framing of the same summit in Indonesian, Australian and Indian newspapers. Which design is strongest?", options:[
-     {t:"Two outlets per country chosen for reach and contrasting lines, a fixed date window, search terms in each language, a piloted codebook and a reliability check", ok:true, why:"Correct. Each choice is justified and the coding is tested."},
-     {t:"Every article any search engine returns for the summit’s name", why:"An unbounded, search-engine-ranked sample is neither defined nor comparable."},
+     {t:"Matched outlets and dates, a tested codebook and reliability check", ok:true, why:"Correct. For example: two outlets per country chosen for reach and contrasting lines, a fixed date window, search terms in each language, a piloted codebook and a reliability check. Each choice is justified and the coding is tested."},
+     {t:"Every article any search engine returns for the summit’s name, in English", why:"An unbounded, search-engine-ranked sample is neither defined nor comparable."},
      {t:"One outlet chosen because the student likes it", why:"Choice by preference introduces bias and allows no comparison."},
      {t:"Only headlines from one country, coded by the student alone", why:"No comparison, and no reliability check."}]},
    {id:"e4u7-q45", lesson:"e4u7-l5", level:1, q:"Which tool did Meta close on 14 August 2024?", options:[

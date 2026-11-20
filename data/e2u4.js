@@ -99,7 +99,7 @@ ICA.addUnit({
       {t:"What counts as a “good mother” has changed a great deal over the last century.", b:2, why:"Treating family roles as meanings people create and revise is symbolic interactionism."}
     ]},
     {id:"e2u4-l1-x6", type:"mcq", q:"Tomás was put in the lowest maths set at age 11 after one test. Three years later his results are still low, and his school says this proves the placement was right. What is the strongest sociological objection?", options:[
-      {t:"The placement may have produced the results: easier work and lower expectations can create a self-fulfilling prophecy.", ok:true, why:"Exactly. If the track itself limits what Tomás is taught and expected to achieve, his low results can’t be used as proof that the label was accurate."},
+      {t:"The placement itself may have produced the low results.", ok:true, why:"Exactly. Easier work and lower expectations can create a self-fulfilling prophecy. If the track itself limits what Tomás is taught and expected to achieve, his low results can’t be used as proof that the label was accurate."},
       {t:"Tracking is illegal, so the school shouldn’t use it.", why:"Tracking is legal and common in many countries. The issue is what it does, not its legal status."},
       {t:"Tomás’s results prove he has low ability, so there’s no objection.", why:"That ignores how the track shapes his opportunities. Low results after years of easier work don’t isolate ability from treatment."},
       {t:"One test is enough as long as it was a standardized test.", why:"Even good tests measure performance on one day, which reflects preparation and background. The bigger problem is the loop the label starts."}
@@ -173,7 +173,7 @@ ICA.addUnit({
       {t:"An independence movement rallies around a leader whose speeches inspire devotion.", b:2, why:"The leader’s personal appeal, not office or custom, is the source: charismatic authority."}
     ]},
     {id:"e2u4-l2-x3", type:"mcq", q:"Which statement describes the secularization debate most accurately?", options:[
-      {t:"Religion has declined on some measures in some regions, especially Western Europe, while it has persisted or grown elsewhere, so sociologists still disagree about how far secularization applies.", ok:true, why:"This reflects the evidence: decline in some places, growth or change in others, and a real scholarly debate."},
+      {t:"Religion has declined in some regions but not others, so the debate continues.", ok:true, why:"Religion has declined on some measures in some regions, especially Western Europe, while it has persisted or grown elsewhere, so sociologists still disagree about how far secularization applies. This reflects the evidence: decline in some places, growth or change in others, and a real scholarly debate."},
       {t:"Sociologists have proven that religion disappears as countries get richer.", why:"That’s the strong classic thesis, but it isn’t proven. Even Peter Berger, a leading early advocate, later rejected it."},
       {t:"Religion is growing everywhere, so secularization theory has no evidence at all.", why:"Falling attendance and belief in many Western European countries are real evidence. The debate is about how general the trend is."},
       {t:"Secularization only means that fewer people believe in God.", why:"It also means religion separating from other institutions and becoming a private matter. Mixing these meanings up causes many arguments."}
@@ -198,7 +198,7 @@ ICA.addUnit({
       "."
     ]},
     {id:"e2u4-l2-x6", type:"mcq", q:"In Varanasi, people wash clothes in the River Ganges in the morning and, a few metres away, others perform ritual bathing at dawn. How would Durkheim analyse this?", options:[
-      {t:"The same river is treated as profane in one use and sacred in another; sacredness comes from the meaning and rules a community gives it.", ok:true, why:"Right. For Durkheim, sacred and profane are statuses communities assign, not physical properties of the water."},
+      {t:"The same river is profane in one use and sacred in another.", ok:true, why:"Right. Sacredness comes from the meaning and rules a community gives something. For Durkheim, sacred and profane are statuses communities assign, not physical properties of the water."},
       {t:"The river must be either sacred or profane; it can’t be both.", why:"Durkheim’s point is that one object can move between the two depending on how a group treats it."},
       {t:"Only the clothes-washing matters sociologically, because it’s economic.", why:"Durkheim saw ritual as central to social life: shared rituals create cohesion."},
       {t:"Sociologists should decide whether the ritual has real spiritual effects.", why:"Sociology doesn’t judge the truth of religious claims; it studies what rituals mean and do socially."}
@@ -308,7 +308,7 @@ ICA.addUnit({
       "."
     ]},
     {id:"e2u4-l3-x7", type:"mcq", q:"Which of these is the clearest example of **medicalization**?", options:[
-      {t:"Behaviour once condemned as laziness or bad character is redefined as a disorder treated by doctors.", ok:true, why:"Medicalization is exactly this: moving something from the moral or normal domain into the medical one."},
+      {t:"Behaviour once seen as laziness is redefined as a disorder.", ok:true, why:"Behaviour once condemned as laziness or bad character comes to be treated by doctors. Medicalization is exactly this: moving something from the moral or normal domain into the medical one."},
       {t:"A new vaccine reduces deaths from an infectious disease.", why:"That’s medical progress against an already-medical problem, not redefining something as medical."},
       {t:"A government builds more hospitals in rural areas.", why:"That changes access to health care, not what counts as illness."},
       {t:"A medical association decides a condition is no longer a disorder.", why:"That’s the opposite process: demedicalization."}
@@ -530,6 +530,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u4-q02","e2u4-q06","e2u4-q09","e2u4-q13","e2u4-q16","e2u4-q21","e2u4-q24","e2u4-q28","e2u4-q31","e2u4-q36","e2u4-q40","e2u4-q44"],
+  cpBank:[
+   {id:"e2u4-cp01", lesson:"e2u4-l1", level:1, q:"In one community, a woman may be married to two brothers at the same time. Which marriage pattern is this?", options:[
+     {t:"Polygyny", why:"Polygyny is one man with several wives. Here it is one woman with several husbands."},
+     {t:"Monogamy", why:"Monogamy is one spouse at a time. This woman has two husbands."},
+     {t:"Polyandry", ok:true, why:"Correct. Polyandry, the rarer form of polygamy, is one woman with several husbands."},
+     {t:"Matrilineal descent", why:"Matrilineal descent is about tracing kinship through the mother. It describes descent, not how many spouses someone has."}]},
+   {id:"e2u4-cp02", lesson:"e2u4-l2", level:1, q:"An armed group takes over a town and forces residents to pay it money. Almost nobody accepts that it has any right to rule. What does the group have?", options:[
+     {t:"Power without authority", ok:true, why:"Right. Power is the ability to impose your will. Authority is power that people accept as legitimate, and the residents don’t accept it."},
+     {t:"Traditional authority", why:"Traditional authority rests on long custom and inheritance that people accept. This group has neither."},
+     {t:"Rational-legal authority", why:"Rational-legal authority comes from laws and offices that people accept. The group took control by force."},
+     {t:"Charismatic authority", why:"Charismatic authority rests on followers’ devotion to an extraordinary leader. The residents are forced, not devoted."}]},
+   {id:"e2u4-cp03", lesson:"e2u4-l5", level:1, q:"A group asks its members to give up sugar for one month to improve their own health. It doesn’t try to change laws or society. In Aberle’s terms, what type of movement is this?", options:[
+     {t:"A reform movement", why:"A reform movement seeks one specific change in society, such as a new law. This group only asks members to change their own habits."},
+     {t:"A religious/redemptive movement", why:"Redemptive movements seek deep inner change in a person. Cutting out sugar for a month is limited self-improvement."},
+     {t:"A resistance movement", why:"A resistance movement tries to stop or undo a change in society. Nothing here opposes a change."},
+     {t:"An alternative movement", ok:true, why:"Yes. Alternative movements seek limited self-improvement in individuals, like changing one habit."}]},
+   {id:"e2u4-cp04", lesson:"e2u4-l1", level:2, q:"After marrying, Lin and Marco rent their own flat, away from both sets of parents. Their children treat relatives on both sides as equally close family. Which pair of terms fits?", options:[
+     {t:"Patrilocal residence; patrilineal descent", why:"Patrilocal means living with the husband’s family, and patrilineal means tracing kinship through the father. Neither fits."},
+     {t:"Neolocal residence; bilateral descent", ok:true, why:"Correct. Living in a new home of their own is neolocal. Tracing kinship through both parents equally is bilateral."},
+     {t:"Matrilocal residence; matrilineal descent", why:"Matrilocal means living with the wife’s family, and matrilineal means tracing kinship through the mother. Neither fits."},
+     {t:"Neolocal residence; matrilineal descent", why:"Neolocal is right, but matrilineal descent traces kinship only through the mother. These children count both sides."}]},
+   {id:"e2u4-cp05", lesson:"e2u4-l3", level:2, q:"Maya has bad flu. Her manager accepts that she stays home but expects her to see a doctor and follow the treatment. Which idea describes these expectations?", options:[
+     {t:"Medicalization", why:"Medicalization is redefining ordinary or once-deviant behaviour as illness. Flu has always been treated as illness."},
+     {t:"Social epidemiology", why:"Social epidemiology studies how disease is caused and spread across a population. It doesn’t describe one person’s duties when ill."},
+     {t:"Demedicalization", why:"Demedicalization removes something from the medical domain. Maya’s flu is being treated medically."},
+     {t:"The sick role", ok:true, why:"Yes. Parsons’s sick role excuses people from normal duties, as long as they try to get well and seek competent help."}]},
+   {id:"e2u4-cp06", lesson:"e2u4-l3", level:2, q:"In a large company, all staff have the same health insurance. Yet at each step down the job ladder, staff report more illness. Which idea does this match?", options:[
+     {t:"A social gradient in health", ok:true, why:"Right. Like the Whitehall studies, health worsens at each step down the job ladder, even when everyone has jobs and health care."},
+     {t:"The sick role", why:"The sick role is about what is expected of a sick person. It doesn’t explain why illness rises down the job ladder."},
+     {t:"Medicalization", why:"Medicalization is redefining behaviour as illness. Here the point is that illness is unequally spread by rank."},
+     {t:"The double burden of disease", why:"The double burden is infectious plus chronic disease in low- and middle-income countries. This is about rank within one workplace."}]},
+   {id:"e2u4-cp07", lesson:"e2u4-l4", level:2, q:"In a farming region, food has become scarce. Young people start marrying later and couples choose to have fewer children. In Malthus’s terms, this is…", options:[
+     {t:"a positive check", why:"Positive checks are famine, disease and war, which raise deaths. Here people are reducing births instead."},
+     {t:"a preventive check", ok:true, why:"Correct. Preventive checks hold population back by reducing births, for example through later marriage."},
+     {t:"cornucopian theory", why:"Cornucopian theory trusts human ingenuity to solve shortages. It isn’t a check on population at all."},
+     {t:"stage 1 of the demographic transition", why:"Stage 1 means high births and high deaths. Here births are falling in response to scarcity."}]},
+   {id:"e2u4-cp08", lesson:"e2u4-l5", level:2, q:"Dara shares a post about a flood appeal and feels she has done her part. She never donates or volunteers. Which idea from the functionalist view of media describes this?", options:[
+     {t:"Gatekeeping", why:"Gatekeeping is filtering many possible messages into the few that reach the public. Dara’s problem is what she does after seeing the message."},
+     {t:"Agenda-setting", why:"Agenda-setting is media influencing what people think about. Dara does think about the flood; she just doesn’t act."},
+     {t:"Narcotizing dysfunction", ok:true, why:"Yes. Knowing about a problem, or sharing it, can feel like acting on it. Functionalists call this the narcotizing dysfunction of media."},
+     {t:"The digital divide", why:"The digital divide is unequal access to technology. Dara has access; the issue is that information replaces action."}]},
+   {id:"e2u4-cp09", lesson:"e2u4-l1", level:3, q:"In a country where births have fallen for decades, many village schools merge or close. More families also pay for elder care, because fewer adult children live nearby. Which statement explains this best?", options:[
+     {t:"It is cultural lag: norms are trailing a new technology", why:"Cultural lag is about norms catching up with technology. The driving force here is population change, not a new technology."},
+     {t:"It shows Malthus was right that population outruns food", why:"Malthus worried about population growth outrunning food. This country’s population is shrinking, and food isn’t the issue."},
+     {t:"Population change ripples through linked institutions, so they adjust together", ok:true, why:"Right. Population is one of the four forces of social change, and institutions depend on each other: fewer children affects schools and family care at once."},
+     {t:"Institutions change separately, so the school closures and elder care are unrelated", why:"Institutions depend on each other. The same fall in births explains both changes."}]},
+   {id:"e2u4-cp10", lesson:"e2u4-l3", level:3, q:"Old phones from rich countries are shipped to a poorer country. There, low-paid workers burn them to recover metals and breathe toxic smoke. Which conclusion would an environmental sociologist most likely draw?", options:[
+     {t:"It is only a technology problem, so social factors don’t matter", why:"Environmental sociology studies how people and the environment shape each other. Who carries the hazard is a social question."},
+     {t:"The workers chose these jobs, so the health risk is only a personal trouble", why:"Many people face the same risk because of how global trade is organised. That makes it a public issue, not only a personal trouble."},
+     {t:"It shows Malthus’s positive checks at work", why:"Positive checks are famine, disease and war caused by population outrunning food. This case is about where waste and pollution end up."},
+     {t:"Global trade moves hazards to poorer places with less power to refuse", ok:true, why:"Yes. Globalization spreads production and waste along chains, and the heavier load of hazards falls on poorer, less powerful communities, as environmental racism does within countries."}]},
+   {id:"e2u4-cp11", lesson:"e2u4-l2", level:3, q:"A campaign grew around one gifted speaker whose followers were devoted to her. After she retires, members elect a board, hire staff and write formal rules. Which pair of ideas fits?", options:[
+     {t:"Traditional authority; the preliminary stage", why:"Nothing rests on custom or inheritance, and the preliminary stage is when a movement first emerges. This movement is becoming established."},
+     {t:"Routinization of charisma; the institutionalization stage", ok:true, why:"Correct. When a charismatic leader leaves, followers build offices and rules (Weber’s routinization). A board, staff and rules mark a movement’s institutionalization stage."},
+     {t:"Charismatic authority growing stronger; the coalescence stage", why:"Charisma rests on one person, so it weakens when she leaves. Writing rules and hiring staff goes beyond coalescence."},
+     {t:"Rational-legal authority giving way to charisma; the decline stage", why:"The change goes the other way: from charisma towards rules and offices. And the movement is getting organised, not declining."}]},
+   {id:"e2u4-cp12", lesson:"e2u4-l2", level:3, q:"In a democracy, a researcher finds that most top ministers, generals and company heads went to the same few expensive schools, and many move between each other’s jobs. Which reading fits best?", options:[
+     {t:"It supports the pluralist view that many groups bargain on equal terms", why:"Pluralists see power spread across many groups. A small, connected circle at the top of business, military and politics points the other way."},
+     {t:"It supports Mills’s power elite, and the conflict view that schools pass on advantage", ok:true, why:"Right. A small linked circle of business, military and political leaders is Mills’s power elite. Shared elite schooling fits the conflict view that education passes on advantage."},
+     {t:"It shows the country is totalitarian", why:"Totalitarian rule tries to control nearly all of life. A country can be a democracy and still have a narrow elite at the top."},
+     {t:"It shows charismatic authority: each leader rose through followers’ devotion to them", why:"Charisma rests on devotion to one extraordinary person. Here the pattern is a whole connected group with shared schooling who swap top posts, which is what Mills called a power elite."}]}
+  ],
   codex:[
    {id:"social-institutions", title:"Social institutions", aka:["institution","institutions"], tags:["sociology","institutions","basics"],
     summary:"The lasting patterns of roles, rules and organizations a society builds to meet its basic needs.",
@@ -1200,7 +1262,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e2u4-q01", lesson:"e2u4-l1", level:1, q:"What is a social institution?", options:[
-     {t:"A lasting pattern of roles, rules and organizations that meets a basic social need", ok:true, why:"That’s the sociological definition: family, education, religion, government, the economy, health care and media are examples."},
+     {t:"A lasting social pattern that meets a basic need", ok:true, why:"An institution is a lasting pattern of roles, rules and organizations that meets a basic social need. That’s the sociological definition: family, education, religion, government, the economy, health care and media are examples."},
      {t:"Any large public building, such as a hospital or university", why:"Buildings and organizations sit inside institutions, but an institution is the society-wide pattern, not a building."},
      {t:"A government department that runs public services", why:"Government is one institution, but institutions also include family, religion and the economy, which aren’t government departments."},
      {t:"A group of friends who meet regularly", why:"That’s a small group. Institutions are society-wide and outlast any particular members."}
@@ -1236,19 +1298,19 @@ ICA.addUnit({
      {t:"Cultural transmission, a manifest function of education", why:"Cultural transmission is passing on shared culture; it doesn’t explain rising job requirements."}
    ]},
    {id:"e2u4-q07", lesson:"e2u4-l1", level:2, q:"Which statement about the hidden curriculum is accurate?", options:[
-     {t:"It is what pupils learn from how school is organized, such as punctuality and obedience to authority.", ok:true, why:"The hidden curriculum is the unofficial, unwritten set of lessons carried by school routines."},
+     {t:"It is what pupils learn from how school is organized.", ok:true, why:"Examples are punctuality and obedience to authority. The hidden curriculum is the unofficial, unwritten set of lessons carried by school routines."},
      {t:"It is a secret syllabus that teachers keep from inspectors.", why:"It isn’t secret or deliberate; it’s built into everyday routines."},
      {t:"It only exists in private schools.", why:"All schools have one, though its content may differ between schools."},
      {t:"It is the optional extra-curricular activities a school offers.", why:"Clubs and sports are visible, chosen activities, not unofficial lessons carried by routines."}
    ]},
    {id:"e2u4-q08", lesson:"e2u4-l1", level:3, q:"Amara’s parents read to her every night and took her to museums. At school, teachers call her “naturally gifted”. A conflict theorist would most likely say:", options:[
-     {t:"Her cultural capital from home is rewarded by school and mistaken for natural talent, which passes advantage down.", ok:true, why:"This is Bourdieu’s argument: schools reward the knowledge and habits of advantaged homes while appearing neutral."},
+     {t:"School rewards her cultural capital as if it were talent.", ok:true, why:"Her cultural capital from home is mistaken for natural talent, which passes advantage down. This is Bourdieu’s argument: schools reward the knowledge and habits of advantaged homes while appearing neutral."},
      {t:"Schools are fair, so her success proves her talent.", why:"That ignores how home resources shape what schools recognize as talent, which is the conflict theorist’s point."},
      {t:"Her success is a latent function of education.", why:"Latent functions are unintended effects for society, such as courtship; this doesn’t explain inequality between pupils."},
      {t:"The hidden curriculum harms only pupils from wealthy homes.", why:"Conflict theorists argue the opposite: school routines and expectations tend to favour already-advantaged pupils."}
    ]},
    {id:"e2u4-q09", lesson:"e2u4-l1", level:2, q:"How would a symbolic interactionist most likely study the family?", options:[
-     {t:"By examining how people create and change the meanings of roles such as “good father” or “chosen family”", ok:true, why:"Interactionists treat family as a social construction whose meanings are negotiated in everyday life."},
+     {t:"By studying the meanings people give to family roles", ok:true, why:"They examine how people create and change the meanings of roles such as “good father” or “chosen family”. Interactionists treat family as a social construction whose meanings are negotiated in everyday life."},
      {t:"By listing the functions the family performs for society", why:"That’s the functionalist approach, for example Murdock’s four functions."},
      {t:"By measuring who holds economic power in the household", why:"Focusing on power and resources is the conflict approach."},
      {t:"By counting how many households are nuclear in a census", why:"Counting forms is useful demography, but it isn’t the interactionist focus on meaning."}
@@ -1256,19 +1318,19 @@ ICA.addUnit({
 
    /* ---- Lesson 2 ---- */
    {id:"e2u4-q10", lesson:"e2u4-l2", level:1, q:"According to Durkheim, what is the difference between the sacred and the profane?", options:[
-     {t:"The sacred is set apart and treated with awe and special rules; the profane is ordinary and everyday.", ok:true, why:"That’s Durkheim’s distinction, from *The Elementary Forms of Religious Life* (1912)."},
+     {t:"The sacred is set apart and treated with awe; the profane is ordinary.", ok:true, why:"Sacred things also have special rules; profane things are everyday. That’s Durkheim’s distinction, from *The Elementary Forms of Religious Life* (1912)."},
      {t:"The sacred is good and the profane is evil.", why:"Profane means ordinary, not evil. It’s about status and treatment, not moral value."},
      {t:"The sacred is anything old; the profane is anything new.", why:"Age has nothing to do with it; communities give sacred status by how they treat things."},
      {t:"The sacred belongs to religious leaders; the profane belongs to ordinary people.", why:"Ordinary believers treat things as sacred too. The distinction is about objects and practices, not who owns them."}
    ]},
    {id:"e2u4-q11", lesson:"e2u4-l2", level:1, q:"Which work argued that certain Protestant beliefs encouraged the disciplined work and saving that helped capitalism develop?", options:[
-     {t:"Max Weber, *The Protestant Ethic and the Spirit of Capitalism*", ok:true, why:"Weber published this argument in 1904–05; it shows how ideas can shape economic life."},
+     {t:"Max Weber, *The Protestant Ethic*", ok:true, why:"Weber published this argument in *The Protestant Ethic and the Spirit of Capitalism* (1904–05); it shows how ideas can shape economic life."},
      {t:"Émile Durkheim, *The Elementary Forms of Religious Life*", why:"Durkheim’s book is about the sacred, the profane and social cohesion."},
      {t:"Karl Marx’s 1844 critique of Hegel", why:"Marx argued religion comforts the oppressed while distracting them; he didn’t make Weber’s argument about Protestant work discipline."},
      {t:"C. Wright Mills, *The Power Elite*", why:"Mills’s book is about a ruling elite in the US, not religion and capitalism."}
    ]},
    {id:"e2u4-q12", lesson:"e2u4-l2", level:2, q:"Which of these is the best evidence **against** a simple, universal secularization thesis?", options:[
-     {t:"Religious participation has stayed strong or grown in many regions, such as Pentecostal growth in Africa and Latin America.", ok:true, why:"Persistence and growth in large parts of the world challenge the idea that modernization always brings religious decline."},
+     {t:"Religion has stayed strong or grown in many regions.", ok:true, why:"An example is Pentecostal growth in Africa and Latin America. Persistence and growth in large parts of the world challenge the idea that modernization always brings religious decline."},
      {t:"Church attendance has fallen in many Western European countries.", why:"That supports secularization in those places; it’s evidence for the thesis, not against it."},
      {t:"Most hospitals and courts in Europe run on non-religious rules.", why:"That’s differentiation, one meaning of secularization, so it supports the thesis."},
      {t:"Some people say religion is less important to them than it was to their grandparents.", why:"That anecdote points towards secularization, not against it."}
@@ -1286,8 +1348,8 @@ ICA.addUnit({
      {t:"Traditional authority", why:"Traditional authority is one possible destination, but the process of transforming charisma is called routinization."}
    ]},
    {id:"e2u4-q15", lesson:"e2u4-l2", level:1, q:"What distinguishes a totalitarian government from other authoritarian governments?", options:[
-     {t:"It tries to control nearly every part of life, including work, family, religion and belief.", ok:true, why:"Totalitarian rule aims at total control, extending into private life and thought."},
-     {t:"It holds regular, competitive elections.", why:"Competitive elections are a feature of democracy, not totalitarianism."},
+     {t:"It tries to control nearly every part of life.", ok:true, why:"That includes work, family, religion and belief. Totalitarian rule aims at total control, extending into private life and thought."},
+     {t:"It holds regular, competitive elections for leaders.", why:"Competitive elections are a feature of democracy, not totalitarianism."},
      {t:"It is always a monarchy.", why:"The classic totalitarian cases were one-party states, not monarchies."},
      {t:"It allows independent courts and media.", why:"Independent courts and media are exactly what totalitarian rule eliminates."}
    ]},
@@ -1298,21 +1360,21 @@ ICA.addUnit({
      {t:"An oligarchy, because there’s a king", why:"Oligarchy is rule by a small elite. A symbolic king doesn’t make the system an oligarchy."}
    ]},
    {id:"e2u4-q17", lesson:"e2u4-l2", level:2, q:"How do sociologists approach the truth of religious beliefs?", options:[
-     {t:"They set it aside and study what religions do and how they are organized.", ok:true, why:"Sociology is about social causes, effects and organization; judging truth belongs to theology and philosophy."},
+     {t:"They set it aside and study what religions do.", ok:true, why:"They study what religions do and how they are organized. Sociology is about social causes, effects and organization; judging truth belongs to theology and philosophy."},
      {t:"They test religious claims scientifically to see which are true.", why:"That isn’t sociology’s task, and many religious claims can’t be tested that way."},
      {t:"They assume all religions are false.", why:"That would be taking a side. Sociologists aim to be neutral on truth claims."},
      {t:"They rank religions by how useful they are to society.", why:"Ranking faiths would be a value judgement. Sociologists describe functions and effects without ranking traditions."}
    ]},
    {id:"e2u4-q18", lesson:"e2u4-l2", level:3, q:"Dmitri reads: “Turnout is lower among young and poorer citizens.” Which conclusion follows most directly?", options:[
-     {t:"Elected officials may hear older and better-off citizens’ concerns more, which can tilt policy.", ok:true, why:"Unequal participation means unequal voice, a central concern in the sociology of politics."},
-     {t:"Young and poorer citizens don’t care about politics.", why:"Lower turnout can reflect barriers, distrust or lack of time, not lack of interest. The statistic doesn’t show motives."},
+     {t:"Officials may hear older and better-off citizens more.", ok:true, why:"If officials hear these citizens’ concerns more, it can tilt policy. Unequal participation means unequal voice, a central concern in the sociology of politics."},
+     {t:"Young and poorer citizens simply don’t care about politics.", why:"Lower turnout can reflect barriers, distrust or lack of time, not lack of interest. The statistic doesn’t show motives."},
      {t:"Making voting compulsory always fixes inequality.", why:"Compulsory voting raises turnout in places like Australia and Belgium, but it doesn’t remove all inequalities in political influence."},
      {t:"The country can’t be a democracy.", why:"Unequal turnout exists in many democracies. It raises questions about representation, not the basic classification."}
    ]},
 
    /* ---- Lesson 3 ---- */
    {id:"e2u4-q19", lesson:"e2u4-l3", level:1, q:"What is the main difference between capitalism and socialism as pure models?", options:[
-     {t:"Who owns the means of production: private owners under capitalism, the state or community under socialism", ok:true, why:"Ownership, and with it the aim of production (profit versus shared needs), is the core distinction."},
+     {t:"Who owns the means of production", ok:true, why:"Private owners hold it under capitalism, the state or community under socialism. Ownership, and with it the aim of production (profit versus shared needs), is the core distinction."},
      {t:"Capitalism uses money and socialism doesn’t", why:"Both systems have used money. The difference is ownership and how production is decided."},
      {t:"Socialism has no government and capitalism has a strong one", why:"Socialism usually gives the state a larger economic role, not none."},
      {t:"Capitalism exists only in rich countries", why:"Capitalist arrangements exist at every income level."}
@@ -1324,13 +1386,13 @@ ICA.addUnit({
      {t:"About 95%", why:"Too high globally. Even in low-income countries the ILO estimate is about 88%."}
    ]},
    {id:"e2u4-q21", lesson:"e2u4-l3", level:3, q:"A coastal town loses its shipyard, its main employer. Over ten years, young people move away, the school merges with another, and rates of depression rise. Which concept best describes the economic change, and what does the sequence show?", options:[
-     {t:"Deindustrialization; one institution’s change spreads to family, education and health", ok:true, why:"Losing manufacturing is deindustrialization, and the knock-on effects show how institutions are interdependent."},
+     {t:"Deindustrialization; institutions are interdependent", ok:true, why:"Losing manufacturing is deindustrialization. One institution’s change spreads to family, education and health, which shows how institutions are interdependent."},
      {t:"Gentrification; wealthier people moved into the town", why:"Nothing suggests wealthier newcomers. The town is losing people and jobs."},
      {t:"Medicalization; depression was redefined as an illness", why:"The scenario is about rising rates after job loss, not about redefining depression."},
      {t:"The informal economy; the shipyard workers had no contracts", why:"Nothing suggests the shipyard jobs were informal. The core change is loss of manufacturing."}
    ]},
    {id:"e2u4-q22", lesson:"e2u4-l3", level:2, q:"Which is the best example of a global commodity chain?", options:[
-     {t:"A phone designed in one country, with parts made in several others, assembled in another and sold worldwide", ok:true, why:"Linked production and sales across many countries is exactly a global commodity chain."},
+     {t:"A phone made in many countries and sold worldwide", ok:true, why:"It is designed in one country, with parts made in several others and assembly in another. Linked production and sales across many countries is exactly a global commodity chain."},
      {t:"A farmer selling vegetables at the village market", why:"That’s a local chain within one community."},
      {t:"A government buying medicine for its hospitals", why:"Procurement alone doesn’t describe the international links of production."},
      {t:"Two neighbours swapping tools", why:"That’s bartering, not a global production chain."}
@@ -1342,14 +1404,14 @@ ICA.addUnit({
      {t:"Individual choices about diet and exercise", why:"Habits matter, but WHO’s point is that they are shaped by wider conditions."}
    ]},
    {id:"e2u4-q24", lesson:"e2u4-l3", level:3, q:"Two neighbourhoods in the same city have a 9-year gap in average life expectancy. A newspaper blames residents’ lifestyles. What would a medical sociologist most likely add?", options:[
-     {t:"Lifestyles are shaped by social determinants such as income, housing, work and food access, which also affect health directly.", ok:true, why:"This is the social determinants approach: personal habits sit inside conditions people don’t choose, and those conditions matter in their own right."},
-     {t:"The gap must be genetic, because lifestyles don’t matter.", why:"Large differences between nearby neighbourhoods are very unlikely to be mainly genetic, and lifestyles do matter."},
+     {t:"Social conditions shape lifestyles and affect health directly.", ok:true, why:"Social determinants include income, housing, work and food access. This is the social determinants approach: personal habits sit inside conditions people don’t choose, and those conditions matter in their own right."},
+     {t:"The gap must be genetic, because lifestyles don’t matter at all.", why:"Large differences between nearby neighbourhoods are very unlikely to be mainly genetic, and lifestyles do matter."},
      {t:"Nothing: lifestyles fully explain the gap.", why:"That ignores the social gradient documented in studies such as the Whitehall studies."},
      {t:"The gap must be caused by medicalization.", why:"Medicalization is about redefining conditions as illnesses; it doesn’t explain a life-expectancy gap."}
    ]},
    {id:"e2u4-q25", lesson:"e2u4-l3", level:2, q:"Which is an example of **demedicalization**?", options:[
-     {t:"The American Psychiatric Association removing homosexuality from its diagnostic manual in 1973", ok:true, why:"Removing something from the category of illness is demedicalization."},
-     {t:"Heavy drinking being redefined as alcohol-use disorder", why:"That’s medicalization: moving behaviour into the medical domain."},
+     {t:"The APA removing homosexuality from its diagnostic manual", ok:true, why:"The American Psychiatric Association did this in 1973. Removing something from the category of illness is demedicalization."},
+     {t:"Heavy drinking being redefined as alcohol-use disorder by doctors", why:"That’s medicalization: moving behaviour into the medical domain."},
      {t:"Childbirth moving from homes into hospitals", why:"That brought childbirth further under medical control: medicalization."},
      {t:"A new drug being approved for a known disease", why:"That’s treatment of an already-medical condition, not demedicalization."}
    ]},
@@ -1360,7 +1422,7 @@ ICA.addUnit({
      {t:"To avoid doctors and recover alone", why:"Seeking competent help is a core obligation of the sick role."}
    ]},
    {id:"e2u4-q27", lesson:"e2u4-l3", level:3, q:"Oluwaseun says: “Informal workers are criminals avoiding tax.” What is the most accurate response?", options:[
-     {t:"Most informal work is legal activity that simply lacks contracts, protection and registration; informal is not the same as criminal.", ok:true, why:"Street vendors, domestic workers and farm labourers are usually doing legal work without formal protection."},
+     {t:"Most informal work is legal; informal isn’t criminal.", ok:true, why:"Informal work simply lacks contracts, protection and registration. Street vendors, domestic workers and farm labourers are usually doing legal work without formal protection."},
      {t:"He’s right; informal work and crime are the same thing.", why:"Crime involves illegal goods or acts. Informality is about missing formal arrangements."},
      {t:"Informal work only exists in rich countries.", why:"It’s most common in low-income countries, where the ILO estimates about 88% of employment is informal."},
      {t:"Informal workers are always employers, not employees.", why:"Informal workers include employees without contracts, own-account workers and family helpers."}
@@ -1374,7 +1436,7 @@ ICA.addUnit({
      {t:"125 per 1,000", why:"That comes from dividing population by deaths. Put the events on top."}
    ]},
    {id:"e2u4-q29", lesson:"e2u4-l4", level:1, q:"In the demographic transition model, what happens in stage 2?", options:[
-     {t:"Death rates fall while birth rates stay high, so the population grows quickly.", ok:true, why:"Better water, food and medicine reduce deaths first; birth norms change more slowly."},
+     {t:"Death rates fall while birth rates stay high.", ok:true, why:"So the population grows quickly. Better water, food and medicine reduce deaths first; birth norms change more slowly."},
      {t:"Birth and death rates are both high and population grows slowly.", why:"That’s stage 1."},
      {t:"Birth rates fall and growth slows.", why:"That’s stage 3."},
      {t:"Birth and death rates are both low.", why:"That’s stage 4."}
@@ -1386,19 +1448,19 @@ ICA.addUnit({
      {t:"It was invented in 2024.", why:"It dates from the first half of the 20th century."}
    ]},
    {id:"e2u4-q31", lesson:"e2u4-l4", level:3, q:"During a famine, food was being exported from the affected country while poor rural workers starved because their wages collapsed. Which thinker’s approach best explains this?", options:[
-     {t:"Amartya Sen: famines arise when people lose the ability to obtain food, not only when food runs out", ok:true, why:"Sen’s entitlement approach focuses on access to food through wages, prices and rights."},
+     {t:"Amartya Sen: people lost the ability to obtain food", ok:true, why:"Famines arise when people lose the ability to obtain food, not only when food runs out. Sen’s entitlement approach focuses on access to food through wages, prices and rights."},
      {t:"Thomas Malthus: population had outgrown the food supply", why:"Food existed and was being exported; the problem was access, not total supply."},
      {t:"Julian Simon: human ingenuity would solve the shortage", why:"Cornucopian theory doesn’t explain why food existed but didn’t reach the hungry."},
      {t:"Ernest Burgess: the city grew in concentric zones", why:"The concentric zone model is about city layout, not famine."}
    ]},
    {id:"e2u4-q32", lesson:"e2u4-l4", level:2, q:"Tomás leaves his drought-hit village for the capital, where his sister has found him a job. Which pair describes the factors?", options:[
-     {t:"Push: drought; pull: a job and family network in the capital", ok:true, why:"Hardship at the origin pushes; opportunities and networks at the destination pull."},
+     {t:"Push: drought; pull: a job and family in the capital", ok:true, why:"Hardship at the origin pushes; opportunities and networks at the destination pull."},
      {t:"Push: the job in the capital; pull: the drought", why:"Reversed. Push factors are at the place people leave."},
      {t:"Both are intervening obstacles", why:"Intervening obstacles are things such as cost and borders that make moving harder."},
      {t:"It’s international migration because he changed regions", why:"Moving to the capital of his own country is internal migration."}
    ]},
    {id:"e2u4-q33", lesson:"e2u4-l4", level:2, q:"One source says about 55% of the world’s population is urban; another says about 45% live in cities. What is the most likely reason?", options:[
-     {t:"They use different definitions and years: countries’ own urban definitions (2018) versus the UN’s 2025 cities-towns-rural method", ok:true, why:"The UN’s 2025 Degree of Urbanisation method counts cities separately from towns, so its city share isn’t comparable with older ‘urban’ figures."},
+     {t:"They use different definitions and years", ok:true, why:"One uses countries’ own urban definitions (2018); the other uses the UN’s 2025 cities-towns-rural method. That method counts cities separately from towns, so its city share isn’t comparable with older ‘urban’ figures."},
      {t:"Half of all cities disappeared between 2018 and 2025", why:"Nothing like that happened; the change is in measurement."},
      {t:"One of the sources must be fake", why:"Both are UN figures; they measure different things."},
      {t:"Rural populations doubled after 2018", why:"No such change happened. Check definitions before assuming real change."}
@@ -1416,15 +1478,15 @@ ICA.addUnit({
      {t:"The demographic transition", why:"That model concerns birth and death rates, not facility siting."}
    ]},
    {id:"e2u4-q36", lesson:"e2u4-l4", level:2, q:"Why is the infant mortality rate not directly comparable with the crude death rate?", options:[
-     {t:"It is calculated per 1,000 live births, not per 1,000 people in the population.", ok:true, why:"Different denominators. Always check the base of a rate before comparing."},
+     {t:"It is per 1,000 live births, not per 1,000 people.", ok:true, why:"Different denominators. Always check the base of a rate before comparing."},
      {t:"It counts only deaths of people over 65.", why:"It counts deaths of babies under one year old."},
-     {t:"It is always given as a percentage.", why:"It is usually given per 1,000 live births."},
+     {t:"It is always given as a percentage of the total population.", why:"It is usually given per 1,000 live births."},
      {t:"It includes migration.", why:"Mortality rates don’t include migration."}
    ]},
 
    /* ---- Lesson 5 ---- */
    {id:"e2u4-q37", lesson:"e2u4-l5", level:1, q:"What is gatekeeping in the sociology of media?", options:[
-     {t:"The sorting process that reduces and shapes many possible messages into the few that reach the public", ok:true, why:"Editors, owners and algorithms act as gatekeepers deciding what gets through."},
+     {t:"Filtering which messages reach the public", ok:true, why:"It is the sorting process that reduces and shapes many possible messages into the few that reach the public. Editors, owners and algorithms act as gatekeepers deciding what gets through."},
      {t:"Blocking children from adult websites", why:"That’s parental control, not the sociological concept."},
      {t:"Charging people to read news online", why:"Paywalls limit access but aren’t what gatekeeping means here."},
      {t:"Fewer owners controlling more media outlets", why:"That’s media consolidation, a related but different concept."}
@@ -1436,13 +1498,13 @@ ICA.addUnit({
      {t:"Nearly 100%", why:"Far from it: in low-income countries only about 23% were online."}
    ]},
    {id:"e2u4-q39", lesson:"e2u4-l5", level:2, q:"Which statement best describes the agenda-setting effect?", options:[
-     {t:"Media coverage influences which issues people think are most important.", ok:true, why:"McCombs and Shaw found voters’ priorities matched the issues the media covered most: what to think about."},
+     {t:"Media coverage shapes which issues seem most important.", ok:true, why:"McCombs and Shaw found voters’ priorities matched the issues the media covered most: what to think about."},
      {t:"Media decide exactly what opinions people hold on every issue.", why:"Agenda-setting is about salience (what to think about) more than precise opinions."},
      {t:"Governments set the schedule for news broadcasts.", why:"That isn’t the concept; it concerns media influence on public priorities."},
      {t:"Algorithms only show users opposing views.", why:"That’s not agenda-setting, and personalization tends to do the opposite."}
    ]},
    {id:"e2u4-q40", lesson:"e2u4-l5", level:3, q:"A rural school receives tablets for every pupil, but there is no reliable connection, teachers have had no training and pupils’ grades don’t change. What does this show about the digital divide?", options:[
-     {t:"Closing device access alone doesn’t close the divide; connectivity, skills and outcomes matter too.", ok:true, why:"The divide has levels: access, skills and use, and outcomes. Devices without connection or skills don’t produce benefits."},
+     {t:"Device access alone doesn’t close the divide.", ok:true, why:"Connectivity, skills and outcomes matter too. The divide has levels: access, skills and use, and outcomes. Devices without connection or skills don’t produce benefits."},
      {t:"The digital divide has been closed at this school.", why:"Owning devices is only part of access; there’s still no reliable connection or skill support."},
      {t:"Technology never helps education.", why:"The case shows what’s missing, not that technology can’t help when the other levels are addressed."},
      {t:"This is an example of media consolidation.", why:"Consolidation concerns media ownership, not access to education technology."}
@@ -1472,7 +1534,7 @@ ICA.addUnit({
      {t:"Resource mobilization, then frame transformation", why:"Those aren’t what the poster’s three sentences do; it uses the three core frames."}
    ]},
    {id:"e2u4-q45", lesson:"e2u4-l5", level:3, q:"Hana reads: “Social media caused the Arab Spring.” Which response reflects sociological thinking best?", options:[
-     {t:"Social media lowered the cost of organizing, but grievances, existing networks, resources and political opportunities also mattered; single-cause claims oversimplify.", ok:true, why:"Sociologists treat change as multi-causal; tools like social media interact with organizations, resources and opportunities."},
+     {t:"Social media helped, but grievances and networks mattered too.", ok:true, why:"Social media lowered the cost of organizing, but grievances, existing networks, resources and political opportunities also mattered. Single-cause claims oversimplify: sociologists treat change as multi-causal; tools like social media interact with organizations, resources and opportunities."},
      {t:"Social media had nothing to do with it.", why:"Researchers found social media helped share information and coordinate, so dismissing it is also too simple."},
      {t:"It’s true, because the protests happened after social media was invented.", why:"Timing alone doesn’t prove causation."},
      {t:"Only charismatic leaders cause social change.", why:"That’s another single-cause claim; many of these uprisings were noted for loose, decentralized leadership."}

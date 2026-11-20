@@ -118,8 +118,8 @@ ICA.addUnit({
       {t:"The US President apologised formally in 1997.", flag:false, why:"Correct: President Bill Clinton issued the apology on 16 May 1997."}
     ]},
     {id:"t4u9-l1-x5", type:"mcq", q:"Kenji wants to analyse posts from a public online support forum for people with depression, quoting some posts word for word. The posts are visible to anyone. What is the best view?", options:[
-      {t:"It still raises ethical questions: people didn’t expect to be studied, and exact quotes can be searched to find them. He should seek ethics review and think about consent and paraphrasing.", ok:true, why:"Right. “Public” isn’t the same as “fair to use any way you like”. A quoted sentence can be pasted into a search engine and lead straight to the person, on a sensitive topic."},
-      {t:"No ethics issue: anything public is free to use.", why:"This is a common misconception. Visibility doesn’t remove the risk of harm, and many ethics codes treat online communities carefully, especially on health topics."},
+      {t:"It still raises ethical questions, so he should seek ethics review.", ok:true, why:"Right. People didn’t expect to be studied, and exact quotes can be searched to find them. He should also think about consent and paraphrasing. “Public” isn’t the same as “fair to use any way you like”. A quoted sentence can be pasted into a search engine and lead straight to the person, on a sensitive topic."},
+      {t:"No ethics issue: anything that is posted publicly is free to use in research.", why:"This is a common misconception. Visibility doesn’t remove the risk of harm, and many ethics codes treat online communities carefully, especially on health topics."},
       {t:"It’s fine as long as he removes the usernames.", why:"Removing usernames helps, but exact quotes can still be searched, so the person may be identifiable anyway."},
       {t:"He can’t study online posts at all.", why:"Online research is common and can be done ethically, with review, care over quotes and attention to the community’s expectations."}
     ]},
@@ -239,10 +239,10 @@ ICA.addUnit({
       ["India","Ethics committee (EC)","The ICMR’s 2017 National Ethical Guidelines call it an ethics committee."]
     ]},
     {id:"t4u9-l2-x3", type:"mcq", q:"Tomás is designing a psychology study in which participants are told it tests memory, when it really tests how a confederate’s behaviour affects their choices. Which plan fits most ethics codes?", options:[
-      {t:"Use mild deception only if risk is minimal, there is no non-deceptive way to answer the question, a committee approves it, and everyone is debriefed and offered the chance to withdraw their data.", ok:true, why:"Right. That’s the usual set of conditions for deception, for example in the American Psychological Association’s and American Sociological Association’s ethics codes, and in most committee rules."},
+      {t:"Use mild deception only with minimal risk, committee approval and full debriefing.", ok:true, why:"Right. There must also be no non-deceptive way to answer the question, and everyone must be offered the chance to withdraw their data. That’s the usual set of conditions for deception, for example in the American Psychological Association’s and American Sociological Association’s ethics codes, and in most committee rules."},
       {t:"Deception is never allowed, so he must drop the study.", why:"Many codes permit limited deception under strict conditions. A blanket ban isn’t the rule."},
       {t:"Deception is fine as long as the consent form is signed.", why:"Consent obtained through deception isn’t fully informed, which is why debriefing and committee approval are required."},
-      {t:"He should debrief only the participants who ask what the study was about.", why:"Debriefing is owed to everyone who was deceived, not only to those who ask."}
+      {t:"He should debrief only the participants who ask afterwards what the study was really about.", why:"Debriefing is owed to everyone who was deceived, not only to those who ask."}
     ]},
     {id:"t4u9-l2-x4", type:"order", q:"Put the steps of an interview study’s consent process in order.", items:[
       {t:"The ethics committee approves the plan and documents", why:"Nobody should be approached before approval."},
@@ -253,8 +253,8 @@ ICA.addUnit({
       {t:"After the interview, explain what happens next and how to withdraw", why:"People need to know the deadline and route for withdrawing their data."}
     ]},
     {id:"t4u9-l2-x5", type:"mcq", q:"Amara, a nurse, wants to interview patients on her own ward about their experience of care. What is the main ethical concern, and the best fix?", options:[
-      {t:"Patients may feel they can’t refuse someone who cares for them; recruitment should be done by someone not involved in their care, with a clear promise that saying no won’t affect treatment.", ok:true, why:"Right. A dependent relationship threatens voluntariness. Separating recruitment from care, and saying so, protects free choice."},
-      {t:"There’s no concern, because patients like Amara and will want to help.", why:"Wanting to please a carer is exactly what makes a “yes” less free."},
+      {t:"Patients may feel unable to refuse; someone not involved in their care should recruit.", ok:true, why:"Right. There should also be a clear promise that saying no won’t affect treatment. A dependent relationship threatens voluntariness. Separating recruitment from care, and saying so, protects free choice."},
+      {t:"There’s no concern, because patients like Amara and will want to help her with the study.", why:"Wanting to please a carer is exactly what makes a “yes” less free."},
       {t:"Patients can’t take part in research at all.", why:"Patients take part in research all the time. The answer is safeguards, not exclusion."},
       {t:"The concern is only that interviews take time from her shifts.", why:"That’s a practical issue. The ethical issue is pressure on patients."}
     ]},
@@ -339,7 +339,7 @@ ICA.addUnit({
       {ex:"Lucía’s draft survey on commuting asked for full date of birth, home address and employer.\nHer research question needs only: age band, district and job sector.\nCutting the rest means less risk for participants, a shorter survey and less data to secure.", label:"Worked example: data minimisation"},
       "**[[special-category-data|Special category data]]** need extra protection. Under the GDPR (Article 9) these are data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, plus genetic data, biometric data used to identify someone, health data, and data about a person’s sex life or sexual orientation. Processing them is banned unless a listed condition applies; one condition covers scientific research with safeguards set by law. Criminal records have separate rules.",
       "One subtle point: **consent to take part** (an ethical requirement) and the **lawful basis** for using the data (a legal one) are separate. In some countries, universities rely on a basis such as “public task” for the data while still asking for ethical consent to take part. Your institution’s data protection officer can tell you which applies.",
-      "Laws vary. Examples: the **GDPR** (EU) and **UK GDPR** with the Data Protection Act 2018; in the US, the **HIPAA Privacy Rule** for health information held by health plans, most health care providers and their contractors, alongside the Common Rule; **Brazil’s LGPD**; **South Africa’s POPIA**; **India’s Digital Personal Data Protection Act 2023**; **Japan’s APPI**; **Australia’s Privacy Act 1988**. See {{data-protection-laws}} for more, and check the rules where you and your participants are."
+      "Laws vary. Examples: the **GDPR** (EU) and **UK GDPR** with the Data Protection Act 2018 (both amended by the Data (Use and Access) Act 2025); in the US, the **HIPAA Privacy Rule** for health information held by health plans, most health care providers and their contractors, alongside the Common Rule; **Brazil’s LGPD**; **South Africa’s POPIA**; **India’s Digital Personal Data Protection Act 2023**; **Japan’s APPI**; **Australia’s Privacy Act 1988**. See {{data-protection-laws}} for more, and check the rules where you and your participants are."
     ]},
     {h:"Managing research data: plans and FAIR", body:[
       "**Research data management** means looking after data from collection to deletion or archiving: naming and organising files, documenting what each variable means, storing safely, backing up, and deciding what to share. A **[[data-management-plan-term|data management plan]]** (DMP) writes this down at the start. Many funders require one: the US NIH has required a data management and sharing plan for applications that generate scientific data since 25 January 2023, and EU Horizon Europe projects must submit a DMP within their first six months. Free tools such as DMPonline and DMPTool offer templates.",
@@ -400,14 +400,14 @@ ICA.addUnit({
       ["Reusable","Add a clear licence, a README and where the data came from","A licence, documentation and provenance tell others how they may reuse it."]
     ]},
     {id:"t4u9-l3-x5", type:"mcq", q:"Sione’s interview study promised participants that only the research team would see transcripts. A journal now asks him to share his data openly. What should he do?", options:[
-      {t:"Not share the transcripts openly; explain the consent terms, and offer controlled access, an anonymised extract (if consent allows) or a detailed description instead.", ok:true, why:"Right. Consent terms come first. Data can still be findable and accessible under conditions, matching “as open as possible, as closed as necessary”."},
+      {t:"Not share them openly; explain the consent terms and offer controlled access.", ok:true, why:"Right. An anonymised extract (if consent allows) or a detailed description are other options. Consent terms come first. Data can still be findable and accessible under conditions, matching “as open as possible, as closed as necessary”."},
       {t:"Share them; the journal’s policy overrides his consent forms.", why:"A journal policy can’t cancel promises made to participants. Most data-sharing policies allow exceptions for ethical and legal reasons."},
       {t:"Remove the names and share everything openly.", why:"Interview transcripts often identify people through details, and his consent forms ruled out sharing beyond the team."},
-      {t:"Withdraw the paper; qualitative research can’t meet data-sharing rules.", why:"Data availability statements routinely explain restrictions. Withdrawing isn’t necessary."}
+      {t:"Withdraw the paper, because qualitative research can never meet data-sharing rules.", why:"Data availability statements routinely explain restrictions. Withdrawing isn’t necessary."}
     ]},
     {id:"t4u9-l3-x6", type:"mcq", q:"Which statement about pseudonymised data under the GDPR is correct?", options:[
-      {t:"For whoever holds the key, they remain personal data, but pseudonymisation is a recommended safeguard, especially for research.", ok:true, why:"Correct. Recital 26 treats pseudonymised data that can be re-linked as personal data; the GDPR still encourages pseudonymisation as a safeguard (for example, in its rules for research)."},
-      {t:"They are anonymous, so the GDPR no longer applies.", why:"This is the most common mix-up. While a key exists, people can be re-identified, so the data stay personal data."},
+      {t:"They are still personal data, but pseudonymisation is a recommended safeguard.", ok:true, why:"Correct. For whoever holds the key, they remain personal data. Recital 26 treats pseudonymised data that can be re-linked as personal data; the GDPR still encourages pseudonymisation as a safeguard (for example, in its rules for research)."},
+      {t:"They count as anonymous data, so the GDPR no longer applies to them in any way.", why:"This is the most common mix-up. While a key exists, people can be re-identified, so the data stay personal data."},
       {t:"They are special category data.", why:"Special category depends on the content (health, religion and so on), not on whether the data are pseudonymised."},
       {t:"Pseudonymisation is banned in research.", why:"The opposite: it is one of the main safeguards for research data."}
     ]}
@@ -509,8 +509,8 @@ ICA.addUnit({
       {v:60, tol:1, why:"About 60% is the chance of **no** false positives (0.95¹⁰). The question asks for at least one, so subtract from 1."}
     ], hint2:"Work out the chance that all 10 tests avoid a false positive, then subtract it from 1."},
     {id:"t4u9-l4-x3", type:"mcq", q:"Lucía’s preregistered plan said she would compare two groups on reading scores. After collecting data she finds no difference, but a big difference in maths scores. What is the honest way to report this?", options:[
-      {t:"Report the reading result as the planned test, and the maths result as an exploratory finding that needs confirming in a new study.", ok:true, why:"Right. Both are reported, and readers can see which was planned. That’s exactly what preregistration makes possible."},
-      {t:"Report only the maths result, since it is the interesting one.", why:"That’s selective reporting. Readers would think maths was the planned outcome."},
+      {t:"Report reading as the planned test, and maths as exploratory, needing confirmation.", ok:true, why:"Right. The maths finding needs confirming in a new study. Both are reported, and readers can see which was planned. That’s exactly what preregistration makes possible."},
+      {t:"Report only the maths result, since it is the more interesting and significant one.", why:"That’s selective reporting. Readers would think maths was the planned outcome."},
       {t:"Update the preregistration to say maths was the main outcome.", why:"Changing the plan after seeing results, without saying so, defeats the purpose of preregistering. Deviations must be reported openly."},
       {t:"Don’t publish at all, because the planned result was null.", why:"Null results are valuable. Leaving them unpublished feeds publication bias."}
     ]},
@@ -659,10 +659,10 @@ ICA.addUnit({
       {t:"The AI tool is responsible for any errors in the sections it wrote.", flag:true, why:"Authors are fully responsible for everything in the manuscript, including AI-produced parts."}
     ]},
     {id:"t4u9-l5-x5", type:"mcq", q:"Hana is peer reviewing a manuscript for a journal. She is short of time and considers uploading it to an AI tool to summarise it. What should she do?", options:[
-      {t:"Not upload it unless the journal explicitly allows a specific tool; manuscripts under review are confidential. If she can’t review in time, she should tell the editor.", ok:true, why:"Right. Confidentiality is a reviewer’s core duty; ICMJE guidance says confidentiality may rule out uploading a manuscript to AI tools unless the journal explicitly allows it, and many journals forbid it outright."},
+      {t:"Not upload it unless the journal explicitly allows a specific tool.", ok:true, why:"Right. Manuscripts under review are confidential. If she can’t review in time, she should tell the editor. Confidentiality is a reviewer’s core duty; ICMJE guidance says confidentiality may rule out uploading a manuscript to AI tools unless the journal explicitly allows it, and many journals forbid it outright."},
       {t:"Upload it, as long as she deletes the chat afterwards.", why:"Deleting the chat may not remove the data from the provider’s systems, and the upload itself already breaches confidentiality."},
       {t:"Upload it, but remove the authors’ names first.", why:"The unpublished content itself is confidential, not just the names."},
-      {t:"Ask a friend outside the field to summarise it instead.", why:"Sharing the manuscript with anyone not authorised by the editor also breaches confidentiality."}
+      {t:"Ask a friend outside the field to read and summarise it for her instead.", why:"Sharing the manuscript with anyone not authorised by the editor also breaches confidentiality."}
     ]},
     {id:"t4u9-l5-x6", type:"match", q:"Match each situation to the best first step.", pairs:[
       ["You aren’t sure if your course allows AI for drafting","Read the course or assignment policy, or ask the instructor","Coursework rules are set locally and vary a lot."],
@@ -683,6 +683,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t4u9-q02","t4u9-q05","t4u9-q09","t4u9-q12","t4u9-q18","t4u9-q20","t4u9-q23","t4u9-q27","t4u9-q30","t4u9-q34","t4u9-q37","t4u9-q40"],
+  cpBank:[
+   {id:"t4u9-cp01", lesson:"t4u9-l1", level:1, q:"A researcher studying sleep habits removes questions about childhood trauma from her survey, because she doesn’t need them and they could cause distress. Which Belmont principle does this mainly put into practice?", options:[
+     {t:"Respect for persons", why:"Respect for persons is mainly applied through informed consent. Removing unneeded, distressing questions is about reducing harm."},
+     {t:"Justice", why:"Justice is about sharing the burdens and benefits of research fairly, for example in who is recruited."},
+     {t:"Beneficence", ok:true, why:"Beneficence means minimising possible harms and maximising benefits. Cutting questions that could cause distress, for no research gain, reduces harm."},
+     {t:"Accountability", why:"Accountability is one of Europe’s research integrity principles, not one of the Belmont Report’s three."}]},
+   {id:"t4u9-cp02", lesson:"t4u9-l2", level:1, q:"Farmers are given a 30-page consent form in formal legal English. Most of them read a different language, and they have ten minutes to sign. Which element of informed consent fails most clearly?", options:[
+     {t:"Information", why:"The information is there, all 30 pages of it. The problem is whether people can understand it."},
+     {t:"Comprehension", ok:true, why:"Comprehension means information explained so people can actually understand it: in their language, at their reading level, with time to ask questions."},
+     {t:"Debriefing", why:"Debriefing comes after a study that used approved deception. It isn’t one of the three elements of consent."},
+     {t:"Confidentiality", why:"Confidentiality is about protecting what participants share, and nothing here concerns it. The three elements of consent are information, comprehension and voluntariness."}]},
+   {id:"t4u9-cp03", lesson:"t4u9-l3", level:1, q:"An information sheet for face-to-face interviews says, “Your answers will be anonymous.” What is the accurate promise to make instead?", options:[
+     {t:"“Anonymous” is correct, because names won’t be published", why:"Anonymity means nobody, not even the researcher, can link answers to a person. The interviewer has met each participant."},
+     {t:"No promise is needed, because the data will be pseudonymised", why:"Participants should be told plainly how their information is protected. Pseudonymised data can still be re-linked with the key."},
+     {t:"“Confidential”: who said what is known but kept private", ok:true, why:"An interview study is almost never anonymous. Confidentiality is the honest promise, perhaps with an anonymised dataset later."},
+     {t:"“Anonymous” is correct if the recordings are encrypted", why:"Encryption protects data from outsiders. The people who hold the key can still see who is who."}]},
+   {id:"t4u9-cp04", lesson:"t4u9-l3", level:2, q:"Kalani’s information sheet promised that nobody could be identified. Her results table includes one cell: **District D, aged 80+: 1 respondent, treated for depression**. What should she do?", options:[
+     {t:"Nothing: the table contains no names", why:"Small cells are a classic weak point. Anyone who knows District D may know who the one person over 80 is."},
+     {t:"Nothing: the survey collected no names, so it stays anonymous", why:"Even with anonymous collection, a published table can single someone out. That would break her promise."},
+     {t:"Delete that respondent from the whole study", why:"There’s no need to lose the data. Changing how the table is shown solves the problem."},
+     {t:"Merge groups or suppress small counts so no one stands out", ok:true, why:"Statistical agencies suppress small counts for this reason. Combining categories keeps the promise she made in the consent information."}]},
+   {id:"t4u9-cp05", lesson:"t4u9-l4", level:2, q:"After seeing his results, a researcher quietly deletes three participants whose scores didn’t fit his hypothesis, and doesn’t report it. Under the US ORI definitions, what is this?", options:[
+     {t:"Fabrication", why:"Fabrication means making up data or results. These participants were real; their data were removed."},
+     {t:"Plagiarism", why:"Plagiarism is using others’ ideas, results or words without credit. Nothing here is taken from someone else."},
+     {t:"Falsification", ok:true, why:"Falsification includes changing or omitting data so the research isn’t accurately represented. Quietly deleting inconvenient participants is a textbook example."},
+     {t:"An honest mistake", why:"An honest error is a mistake you didn’t intend. Deleting data because it didn’t fit, and hiding it, is deliberate."}]},
+   {id:"t4u9-cp06", lesson:"t4u9-l4", level:2, q:"A PhD student ran all the data analysis and drafted half of a paper, but her name is left off the author list. What is this problem called?", options:[
+     {t:"Ghost authorship", ok:true, why:"Ghost authorship leaves out someone who did substantial work. Her contributions meet the authorship criteria, if she also approves the final version and accepts accountability."},
+     {t:"Guest authorship", why:"Gift (guest) authorship is the opposite: adding someone who didn’t contribute."},
+     {t:"HARKing", why:"HARKing is presenting a hypothesis made up after the results as if it were predicted. It isn’t about who is credited."},
+     {t:"Salami slicing", why:"Salami slicing is splitting one study into many small papers. It isn’t about who is listed."}]},
+   {id:"t4u9-cp07", lesson:"t4u9-l5", level:2, q:"Ji-ho writes in English as a second language. An AI-text detector flags his essay, which he wrote himself, as “likely AI-generated”. What is accurate?", options:[
+     {t:"The flag proves he used AI", why:"Detectors are unreliable. A flag is not proof."},
+     {t:"He should add some mistakes on purpose so detectors don’t flag him", why:"Trying to avoid detection is the wrong goal. Honest disclosure, and keeping drafts and notes, protect him far better."},
+     {t:"A flag isn’t proof; detectors misjudge second-language writing", ok:true, why:"Research has found detectors wrongly flag human writing, particularly by people writing in a second language. Honest disclosure protects writers far better."},
+     {t:"Detectors are reliable once a text is long enough", why:"The unit gives no length at which detectors become reliable. Their errors are a known problem."}]},
+   {id:"t4u9-cp08", lesson:"t4u9-l5", level:3, q:"An AI tool writes: “Okoro (2021) found that peer tutoring halves school dropout.” Mehmet resolves the DOI it gave, and it leads to a real 2021 paper by Okoro on peer tutoring. What should he do next?", options:[
+     {t:"Cite it now: the DOI works, so the reference is fully verified", why:"A real paper is only half the check. AI tools can attach real references to claims those papers don’t make."},
+     {t:"Ask the AI tool to confirm that the paper says this", why:"Asking the AI again isn’t independent checking. The paper itself is the evidence."},
+     {t:"Cite the AI tool as the source of the claim", why:"The AI is not a source for the finding. Either the paper supports the claim, or the claim shouldn’t be used."},
+     {t:"Open the paper and check it really reports that finding", ok:true, why:"The routine is: find it independently, resolve the DOI, open the source, and check the claim. Summaries can reverse findings or merge two papers."}]},
+   {id:"t4u9-cp09", lesson:"t4u9-l2", level:3, q:"A colleague recruits a lecturer’s students for an anonymous survey about cheating. The lecturer then adds 5% to the course grade of each student who took part. What problem remains?", options:[
+     {t:"None: once a colleague recruits, any reward is acceptable", why:"Separate recruitment helps, but the reward still comes from the person who grades them. A dependent relationship can pressure people whoever does the asking."},
+     {t:"A grade bonus from the person who grades them pressures students to join", ok:true, why:"A dependent relationship threatens voluntariness. A bonus on the course grade, given by their own lecturer, can work as undue influence and penalises students who say no."},
+     {t:"Cheating is too sensitive a topic for students ever to be asked about", why:"Sensitive topics can be studied with care: consent, confidentiality or anonymity, and support. The problem here is the reward, not the topic."},
+     {t:"The bonus should be raised to 10% so that more students take part", why:"A bigger reward makes undue influence worse, not better. More pressure means a less free choice."}]},
+   {id:"t4u9-cp10", lesson:"t4u9-l3", level:3, q:"Rafael replaced names in his survey data with codes. He keeps the code list, and the files are encrypted. He plans to post the data publicly, described as “anonymous”. What is accurate?", options:[
+     {t:"The data are anonymous, because the files are encrypted", why:"Encryption protects data from outsiders. It doesn’t make anyone unidentifiable to people who hold the key."},
+     {t:"The data are anonymous under the GDPR, because codes replace the names", why:"Replacing names with codes, with a key kept, is pseudonymisation. For Rafael, the data are still personal data."},
+     {t:"They are pseudonymised, not anonymous, while he keeps the code list", ok:true, why:"While a key exists, the data can be re-linked. Sharing depends on consent, the law and re-identification risk: “as open as possible, as closed as necessary”."},
+     {t:"Research data should never be shared", why:"Sharing is valuable when consent, law and risk allow it. Sensitive data can even be FAIR under restricted access."}]},
+   {id:"t4u9-cp11", lesson:"t4u9-l5", level:3, q:"Joon has no preregistered plan. He asks an AI tool to try different outcomes and exclusions until one analysis gives p < 0.05, and plans to report only that one. What is the right view?", options:[
+     {t:"It’s fine: the AI chose the analysis, so he isn’t responsible for it", why:"Responsibility can’t be delegated to a tool. Whatever ends up in the paper is his claim."},
+     {t:"It’s fine as long as he discloses that he used AI", why:"Disclosure is needed, but it doesn’t fix the problem. Trying analyses until one “works” and reporting only that one is p-hacking."},
+     {t:"It’s fine because p < 0.05 shows the effect is real", why:"When many analyses are tried, a “significant” result is much easier to get by chance."},
+     {t:"It’s p-hacking; he must report all the analyses he tried", ok:true, why:"Exploration isn’t wrong; presenting it as confirmation is. He remains responsible for the analysis, whoever or whatever ran it."}]},
+   {id:"t4u9-cp12", lesson:"t4u9-l1", level:2, q:"Kemal says: “The Nuremberg Code covers consent, so my interview study doesn’t need an ethics committee.” What is the best reply?", options:[
+     {t:"He is right: the Nuremberg Code covers all research with people", why:"The Code’s legal force was never firmly established, and it lacked independent review, which later standards added."},
+     {t:"Committee review is only needed for medical trials", why:"Ethics review covers research with people or their identifiable data in many fields, including interview studies."},
+     {t:"He can start now and apply for approval later", why:"Never recruit or collect data before approval. Data collected without it may be unusable."},
+     {t:"Helsinki’s later revisions added independent committee review", ok:true, why:"The Declaration of Helsinki’s revisions added review by an independent research ethics committee before research begins. Written principles needed independent review behind them."}]},
+  ],
   codex:[
    {id:"ethics-history", title:"How research ethics began", aka:["Nuremberg Code","Declaration of Helsinki","Tuskegee","Henrietta Lacks","HeLa"], tags:["research","ethics","history"],
     summary:"The abuses and responses, from the Doctors’ Trial to the 2024 Declaration of Helsinki, that shaped today’s rules for research with people.",
@@ -886,7 +948,7 @@ ICA.addUnit({
       {table:[
         ["Place","Example law"],
         ["EU","GDPR"],
-        ["UK","UK GDPR and Data Protection Act 2018"],
+        ["UK","UK GDPR and Data Protection Act 2018, as amended by the Data (Use and Access) Act 2025"],
         ["United States","No single general law; HIPAA Privacy Rule for health information held by covered entities; state laws"],
         ["Brazil · South Africa","LGPD · POPIA"],
         ["India · Japan · Australia","DPDP Act 2023 · APPI · Privacy Act 1988"]
@@ -1120,9 +1182,9 @@ ICA.addUnit({
      {t:"Findable, accessible, interoperable, reusable", why:"Those are the FAIR principles for data."}
    ]},
    {id:"t4u9-q03", lesson:"t4u9-l1", level:1, q:"Which statement about the US Public Health Service study at Tuskegee is accurate?", options:[
-     {t:"It ran from 1932 to 1972, and the men with syphilis were not offered penicillin even after it became the treatment of choice.", ok:true, why:"Correct, according to the CDC’s history of the study."},
+     {t:"It ran until 1972, and the men weren’t offered penicillin even once it was standard.", ok:true, why:"Correct, according to the CDC’s history of the study. It ran from 1932 to 1972. Penicillin became the treatment of choice, but the men with syphilis were not offered it."},
      {t:"It ended in 1947 when the Nuremberg Code was published.", why:"It continued for 25 more years and ended only after a 1972 news report."},
-     {t:"The men gave informed consent but were not told about penicillin.", why:"Informed consent was never collected; the men were told they were being treated for “bad blood”."},
+     {t:"The men gave full informed consent at the start, but were later not told about penicillin.", why:"Informed consent was never collected; the men were told they were being treated for “bad blood”."},
      {t:"It was a secret study that was never acknowledged by the US government.", why:"A federal panel judged it unjustified in 1972, there was a settlement in 1974, and a formal presidential apology in 1997."}
    ]},
    {id:"t4u9-q04", lesson:"t4u9-l1", level:1, q:"When was the Declaration of Helsinki most recently revised?", options:[
@@ -1138,14 +1200,14 @@ ICA.addUnit({
      {t:"Accountability", why:"Accountability is an ALLEA integrity principle, not one of Belmont’s three."}
    ]},
    {id:"t4u9-q06", lesson:"t4u9-l1", level:2, q:"Priya says: “My survey is low-risk, so ethics doesn’t apply.” What’s the best reply?", options:[
-     {t:"Low-risk studies may get lighter review, but consent, privacy and honesty still apply.", ok:true, why:"Right. Risk changes how much review is needed, not whether ethics applies."},
-     {t:"She’s right: only medical research needs ethics.", why:"Social research, surveys and online studies all raise ethical questions about consent and privacy."},
+     {t:"Low-risk studies may get lighter review, but ethics still applies.", ok:true, why:"Right. Consent, privacy and honesty still matter. Risk changes how much review is needed, not whether ethics applies."},
+     {t:"She’s right: only medical research needs to think about ethics at all.", why:"Social research, surveys and online studies all raise ethical questions about consent and privacy."},
      {t:"She needs the same full review as a drug trial.", why:"Most systems scale review to risk; a low-risk survey usually has a lighter route."},
      {t:"Ethics only matters if participants are paid.", why:"Payment is one issue among many; it doesn’t decide whether ethics applies."}
    ]},
    {id:"t4u9-q07", lesson:"t4u9-l1", level:2, q:"What happened to Henrietta Lacks’s cells in 1951?", options:[
-     {t:"They were taken during her cancer treatment without her knowledge or consent and became the first human cells grown continuously in a lab.", ok:true, why:"Correct, as described by the US NIH."},
-     {t:"She donated them after signing a research consent form.", why:"There was no consent; the samples were taken without her knowledge."},
+     {t:"They were taken without her knowledge or consent and grown continuously in a lab.", ok:true, why:"Correct, as described by the US NIH. They were taken during her cancer treatment and became the first human cells grown continuously in a lab."},
+     {t:"She donated them for research after signing a consent form that explained their use.", why:"There was no consent; the samples were taken without her knowledge."},
      {t:"They were used only once, in a single study.", why:"HeLa cells have been used in a vast number of studies worldwide."},
      {t:"They were taken as part of the study at Tuskegee.", why:"They were taken at Johns Hopkins Hospital in Baltimore, unrelated to the Tuskegee study."}
    ]},
@@ -1169,32 +1231,32 @@ ICA.addUnit({
      {t:"Data protection authority", why:"That’s a regulator for personal data, not a research ethics review body."}
    ]},
    {id:"t4u9-q11", lesson:"t4u9-l2", level:2, q:"Which of these is most likely to be **undue influence**?", options:[
-     {t:"Offering a month’s wages to take part in a risky study, to people who are struggling financially", ok:true, why:"A reward so large it could lead people to accept risks they otherwise wouldn’t is undue influence."},
-     {t:"A small voucher to thank people for a 30-minute interview", why:"Modest compensation for time is usually acceptable."},
+     {t:"A month’s wages for a risky study, offered to people struggling financially", ok:true, why:"A reward so large it could lead people to accept risks they otherwise wouldn’t is undue influence."},
+     {t:"A small shopping voucher to thank people for giving up 30 minutes for an interview", why:"Modest compensation for time is usually acceptable."},
      {t:"Reimbursing bus fares to the study site", why:"Covering costs removes a barrier; it doesn’t distort judgement."},
      {t:"Sending a summary of results to participants", why:"Sharing results is good practice, not pressure."}
    ]},
    {id:"t4u9-q12", lesson:"t4u9-l2", level:3, q:"Mei, a manager, wants to survey her own team about workplace stress. What change most improves voluntariness?", options:[
-     {t:"Have someone without authority over the team run the survey anonymously, and state that taking part or not won’t affect anyone’s job.", ok:true, why:"Removing the manager from recruitment and identification protects people’s freedom to say no and to answer honestly."},
+     {t:"Have someone without authority over the team run it anonymously.", ok:true, why:"They should also state that taking part or not won’t affect anyone’s job. Removing the manager from recruitment and identification protects people’s freedom to say no and to answer honestly."},
      {t:"Send the survey from her own email and ask people to reply by Friday.", why:"A deadline from one’s manager adds pressure; replies by email aren’t anonymous."},
      {t:"Make the survey compulsory so the results are complete.", why:"Compulsory participation isn’t voluntary consent."},
      {t:"Offer a day off only to those who take part.", why:"A sizeable reward from one’s manager pressures people and singles out those who decline."}
    ]},
    {id:"t4u9-q13", lesson:"t4u9-l2", level:2, q:"What must happen after a study that used approved deception?", options:[
-     {t:"Debriefing: participants are told the true purpose and offered the chance to withdraw their data.", ok:true, why:"Debriefing is the standard condition attached to approved deception."},
+     {t:"Debriefing: telling participants the true purpose.", ok:true, why:"Participants are also offered the chance to withdraw their data. Debriefing is the standard condition attached to approved deception."},
      {t:"Nothing, if the consent form was signed.", why:"Consent obtained under deception was incomplete, so debriefing is required."},
      {t:"Participants must sign a confidentiality agreement.", why:"That isn’t a standard requirement; the duty is on the researcher to explain."},
      {t:"The results must be kept secret.", why:"Results can be published; the requirement is to inform participants."}
    ]},
    {id:"t4u9-q14", lesson:"t4u9-l2", level:3, q:"Oluwaseun wants to interview 12-year-olds about online gaming. Which consent plan fits most ethics rules?", options:[
-     {t:"Permission from a parent or guardian, plus each child’s own assent in words they understand, with the right to stop.", ok:true, why:"Children usually need both: a parent’s permission and their own agreement."},
-     {t:"Only the children’s agreement, since it’s their experience.", why:"Most rules also require a parent’s or guardian’s permission for minors."},
+     {t:"A parent’s permission plus the child’s own assent, with the right to stop.", ok:true, why:"Children usually need both: a parent’s permission and their own agreement. Ask for the child’s assent in words they understand."},
+     {t:"Only the children’s agreement, since it is their own experience being studied.", why:"Most rules also require a parent’s or guardian’s permission for minors."},
      {t:"Only the parents’ permission; children can’t decide.", why:"Children’s own assent is required too, respecting their developing autonomy."},
      {t:"The school head’s permission covers everyone.", why:"A school’s permission to access pupils doesn’t replace parents’ permission and children’s assent."}
    ]},
    {id:"t4u9-q15", lesson:"t4u9-l2", level:2, q:"Which statement about vulnerability in research is most accurate?", options:[
-     {t:"It often depends on the situation, such as a dependent relationship or a crisis, not only on who the person is.", ok:true, why:"Guidelines such as India’s ICMR list situational vulnerability alongside legal status and health conditions."},
-     {t:"Vulnerable people should always be excluded from research.", why:"Exclusion means they miss out on evidence about their own needs; safeguards are preferred."},
+     {t:"It often depends on the situation, not only on who the person is.", ok:true, why:"For example, a dependent relationship or a crisis. Guidelines such as India’s ICMR list situational vulnerability alongside legal status and health conditions."},
+     {t:"Vulnerable people should always be excluded from research to protect them.", why:"Exclusion means they miss out on evidence about their own needs; safeguards are preferred."},
      {t:"Only children can be vulnerable.", why:"Adults in many situations can be vulnerable too."},
      {t:"Vulnerability is decided by the participant’s age alone.", why:"Age is one factor among many."}
    ]},
@@ -1206,10 +1268,10 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t4u9-q17", lesson:"t4u9-l3", level:1, q:"What is the difference between confidentiality and anonymity?", options:[
-     {t:"With confidentiality the researcher knows who said what but won’t reveal it; with anonymity no one can link answers to a person.", ok:true, why:"That is the key distinction."},
+     {t:"With confidentiality the researcher knows who said what; with anonymity no one does.", ok:true, why:"A researcher who promises confidentiality won’t reveal it; anonymous answers can’t be linked to a person at all. That is the key distinction."},
      {t:"They mean the same thing.", why:"They make different promises; mixing them up can mislead participants."},
      {t:"Anonymity means data are encrypted.", why:"Encryption protects stored data but doesn’t make it anonymous."},
-     {t:"Confidentiality applies only to medical research.", why:"It applies to any research that collects identifying information."}
+     {t:"Confidentiality applies only to medical research, and anonymity only to online surveys.", why:"Both can apply to any kind of research that collects information about people."}
    ]},
    {id:"t4u9-q18", lesson:"t4u9-l3", level:2, q:"A researcher replaces names with codes and keeps the code list on a separate encrypted drive. Under the GDPR, the coded data are…", options:[
      {t:"Pseudonymised, and still personal data", ok:true, why:"A key exists that can re-link the data, so Recital 26 treats it as personal data."},
@@ -1224,8 +1286,8 @@ ICA.addUnit({
      {t:"A participant’s job title", why:"Personal data, but not in the Article 9 list."}
    ]},
    {id:"t4u9-q20", lesson:"t4u9-l3", level:3, q:"Kenji’s anonymised spreadsheet lists: age 58, retired lighthouse keeper, island of 300 people, has a rare blood disorder. What is the main problem?", options:[
-     {t:"The combination of indirect identifiers points to one person, so it isn’t really anonymous.", ok:true, why:"Job, place and rare condition together can identify someone even without a name."},
-     {t:"Nothing: there is no name.", why:"Removing names isn’t enough when other details single someone out."},
+     {t:"Together, the indirect identifiers point to one person.", ok:true, why:"Job, place and rare condition together can identify someone even without a name. So it isn’t really anonymous."},
+     {t:"Nothing: without a name, the data are already fully anonymous.", why:"Removing names isn’t enough when other details single someone out."},
      {t:"Age should never be recorded.", why:"Age can be recorded; using bands (for example 50–59) reduces the risk."},
      {t:"The file isn’t a CSV.", why:"File format doesn’t affect identifiability."}
    ]},
@@ -1236,19 +1298,19 @@ ICA.addUnit({
      {t:"Filed, Archived, Indexed, Released", why:"Not what the acronym stands for."}
    ]},
    {id:"t4u9-q22", lesson:"t4u9-l3", level:2, q:"Which statement about FAIR data is correct?", options:[
-     {t:"Sensitive data can be FAIR, for example with public metadata and access only under an agreement.", ok:true, why:"FAIR isn’t the same as open: “as open as possible, as closed as necessary”."},
-     {t:"FAIR data must be freely downloadable by anyone.", why:"Accessible means a clear, standard route, which can include restrictions."},
+     {t:"Sensitive data can be FAIR, with public metadata and controlled access.", ok:true, why:"For example, access might be only under an agreement. FAIR isn’t the same as open: “as open as possible, as closed as necessary”."},
+     {t:"FAIR data must be freely downloadable by anyone, without any conditions.", why:"Accessible means a clear, standard route, which can include restrictions."},
      {t:"FAIR applies only to medical data.", why:"FAIR applies to research data in every field."},
      {t:"FAIR means data are anonymised.", why:"FAIR is about findability and reuse, not identifiability."}
    ]},
    {id:"t4u9-q23", lesson:"t4u9-l3", level:3, q:"Fatima plans to store interview recordings on her personal phone and a free file-sharing app until her project ends. What is the best advice?", options:[
-     {t:"Move them to secure, preferably institutional, storage with access control and encryption, and set a deletion date in her data management plan.", ok:true, why:"Integrity and confidentiality, and storage limitation, call for secure storage and planned deletion."},
+     {t:"Move them to secure institutional storage and set a deletion date.", ok:true, why:"Secure storage means access control and encryption; the deletion date goes in her data management plan. Integrity and confidentiality, and storage limitation, call for secure storage and planned deletion."},
      {t:"It’s fine if her phone has a passcode.", why:"A passcode helps, but a free sharing app and a personal phone may not meet her consent promises or institutional rules."},
      {t:"Email the files to herself for backup.", why:"Email copies spread sensitive data to more places, often unencrypted."},
-     {t:"Delete the recordings immediately after each interview.", why:"She may need them for transcription and checking; the point is secure storage and planned deletion."}
+     {t:"Delete the recordings immediately after each interview, before transcribing them.", why:"She may need them for transcription and checking; the point is secure storage and planned deletion."}
    ]},
    {id:"t4u9-q24", lesson:"t4u9-l3", level:2, q:"Which is an example of data minimisation in a survey?", options:[
-     {t:"Asking for an age band instead of date of birth, because the research question only needs age groups", ok:true, why:"Collecting only what the question needs is data minimisation."},
+     {t:"Asking for an age band instead of date of birth", ok:true, why:"The research question only needs age groups. Collecting only what the question needs is data minimisation."},
      {t:"Collecting full addresses in case they are useful later", why:"“Just in case” collection is what minimisation rules out."},
      {t:"Encrypting the survey database", why:"That’s security (integrity and confidentiality), a different principle."},
      {t:"Keeping data forever for future research", why:"That conflicts with storage limitation unless justified and safeguarded."}
@@ -1267,8 +1329,8 @@ ICA.addUnit({
      {t:"A researcher copies paragraphs from another paper without credit.", why:"That is plagiarism."}
    ]},
    {id:"t4u9-q27", lesson:"t4u9-l4", level:3, q:"Tomás runs his analysis with and without outliers, with three different outcome measures and with two sets of control variables, then reports only the version with p = 0.03. What is this?", options:[
-     {t:"P-hacking: the reported analysis was chosen because it was significant, and the others are hidden.", ok:true, why:"Choosing among many analyses by their results inflates false positives."},
-     {t:"Good practice: he was thorough.", why:"Trying alternatives is fine if all are reported; hiding them is the problem."},
+     {t:"P-hacking: choosing the analysis to report because it was significant.", ok:true, why:"The other analyses are hidden. Choosing among many analyses by their results inflates false positives."},
+     {t:"Good practice: he was thorough and checked his results in several ways.", why:"Trying alternatives is fine if all are reported; hiding them is the problem."},
      {t:"Fabrication.", why:"He didn’t invent data; this is a questionable practice, not fabrication."},
      {t:"HARKing.", why:"HARKing is about presenting a post hoc hypothesis as predicted; this is about choosing analyses."}
    ]},
@@ -1279,8 +1341,8 @@ ICA.addUnit({
      {t:"COPE, in 2023", why:"COPE’s 2023 statement was about AI and authorship."}
    ]},
    {id:"t4u9-q29", lesson:"t4u9-l4", level:2, q:"What is distinctive about a registered report?", options:[
-     {t:"The journal reviews the plan before data collection and can accept it in principle, whatever the results.", ok:true, why:"Stage 1 review and in-principle acceptance remove the reward for “positive” results."},
-     {t:"The data are registered with the government.", why:"No government registration is involved."},
+     {t:"The journal reviews the plan first and can accept it whatever the results.", ok:true, why:"Stage 1 review and in-principle acceptance remove the reward for “positive” results."},
+     {t:"The data are registered with the government before the study can be published.", why:"No government registration is involved."},
      {t:"Only significant results can be published.", why:"The opposite: results are published regardless of outcome if the plan was followed."},
      {t:"Peer review is skipped.", why:"Peer review happens twice: at Stage 1 and Stage 2."}
    ]},
@@ -1297,8 +1359,8 @@ ICA.addUnit({
      {t:"10", why:"Ten is the number of points in the Nuremberg Code."}
    ]},
    {id:"t4u9-q32", lesson:"t4u9-l4", level:2, q:"Kofi’s study of a fitness tracker was funded by its manufacturer. What should he do?", options:[
-     {t:"Declare the funding as a potential conflict of interest and describe the funder’s role in the study.", ok:true, why:"Disclosure lets readers judge; describing the funder’s role adds transparency."},
-     {t:"Leave it out, since he wasn’t influenced.", why:"Conflicts include interests that could appear to affect judgement; they must be declared."},
+     {t:"Declare the funding as a potential conflict of interest.", ok:true, why:"He should also describe the funder’s role in the study. Disclosure lets readers judge; describing the funder’s role adds transparency."},
+     {t:"Leave it out, since he knows he wasn’t influenced by the funder.", why:"Conflicts include interests that could appear to affect judgement; they must be declared."},
      {t:"Refuse to publish.", why:"Industry-funded research can be published with proper disclosure."},
      {t:"Mention it only if a reviewer asks.", why:"Journals require proactive disclosure."}
    ]},
@@ -1310,26 +1372,26 @@ ICA.addUnit({
      {t:"Only in computer science journals.", why:"The position applies across fields."}
    ]},
    {id:"t4u9-q34", lesson:"t4u9-l5", level:3, q:"Amara used an AI tool to improve the English of her methods section and to suggest code for a chart. What is the best course?", options:[
-     {t:"Check the edits and test the code, then disclose both uses as the journal’s policy requires.", ok:true, why:"She stays responsible, checks the output, and is transparent about it."},
+     {t:"Check the edits and test the code, then disclose both uses.", ok:true, why:"She stays responsible, checks the output, and is transparent about it. Follow the journal’s policy on disclosure."},
      {t:"Say nothing, since the ideas are hers.", why:"Many policies require disclosure of AI assistance, and hiding it is listed as unacceptable in Europe’s integrity code."},
      {t:"List the AI tool as a co-author.", why:"AI tools can’t be authors."},
-     {t:"Cite the AI tool as the source of her methods.", why:"The methods are hers; AI use is disclosed, not cited as the source of the research."}
+     {t:"Cite the AI tool as the source of her methods and her chart.", why:"The methods are hers; AI use is disclosed, not cited as the source of the research."}
    ]},
    {id:"t4u9-q35", lesson:"t4u9-l5", level:2, q:"An AI tool gives a reference with a DOI. What is the best first check?", options:[
-     {t:"Search for the work independently and resolve the DOI to confirm the title, authors and year match.", ok:true, why:"Independent confirmation catches invented or garbled references."},
-     {t:"Ask the same AI tool whether the reference is real.", why:"It may confidently confirm its own invention."},
+     {t:"Search for the work independently and resolve the DOI.", ok:true, why:"Confirm that the title, authors and year match. Independent confirmation catches invented or garbled references."},
+     {t:"Ask the same AI tool whether the reference it gave is real.", why:"It may confidently confirm its own invention."},
      {t:"Assume it’s real because it has a DOI.", why:"DOIs can be made up or attached to the wrong work."},
      {t:"Check that the journal name sounds academic.", why:"Invented references often use real journal names."}
    ]},
    {id:"t4u9-q36", lesson:"t4u9-l5", level:2, q:"Why should researchers avoid pasting interview transcripts into a free public AI chatbot?", options:[
-     {t:"The data may be stored or used by the provider, which participants didn’t agree to and data protection law may not allow.", ok:true, why:"Consent terms and data protection rules limit where participant data can go."},
+     {t:"The provider may store or use the data, which participants didn’t agree to.", ok:true, why:"Data protection law may not allow it either. Consent terms and data protection rules limit where participant data can go."},
      {t:"AI tools can’t read transcripts.", why:"They can; the problem is confidentiality, not capability."},
-     {t:"Transcripts are always anonymous, so there’s no point.", why:"Transcripts often contain identifying details."},
+     {t:"Transcripts are always anonymous already, so there’s no need to worry about it.", why:"Transcripts often contain identifying details."},
      {t:"It’s always illegal to use AI in research.", why:"AI can be used legitimately, with approved tools and appropriate safeguards."}
    ]},
    {id:"t4u9-q37", lesson:"t4u9-l5", level:3, q:"Dmitri is asked to review a grant application for the US NIH and wants an AI tool to draft his critique. What applies?", options:[
-     {t:"NIH has prohibited its peer reviewers from using generative AI to analyse or write critiques, because of confidentiality.", ok:true, why:"NIH announced this in June 2023."},
-     {t:"It’s fine if he edits the AI draft afterwards.", why:"The upload itself breaches confidentiality, whatever editing follows."},
+     {t:"NIH has prohibited reviewers from using generative AI for critiques.", ok:true, why:"The reason is confidentiality. NIH announced this in June 2023."},
+     {t:"It’s fine, as long as he checks and edits the AI draft carefully afterwards.", why:"The upload itself breaches confidentiality, whatever editing follows."},
      {t:"It’s fine if he uses a paid version.", why:"The prohibition isn’t about price."},
      {t:"He should list the AI as a co-reviewer.", why:"The issue is confidentiality; AI use is prohibited, not something to credit."}
    ]},
@@ -1340,15 +1402,15 @@ ICA.addUnit({
      {t:"A citation with a typo in the page numbers", why:"A typo is a minor error; hallucination covers invented or unsupported references."}
    ]},
    {id:"t4u9-q39", lesson:"t4u9-l5", level:2, q:"Which is the best AI-use statement?", options:[
-     {t:"“We used [tool name] in March 2026 to improve the grammar of Sections 1–2; the authors reviewed all changes and take full responsibility.”", ok:true, why:"It names the tool, the date and the purpose, says how output was checked and who is responsible."},
+     {t:"“We used [tool name] in March 2026 to edit grammar; we checked all edits and take responsibility.”", ok:true, why:"It names the tool, the date and the purpose, says how output was checked and who is responsible."},
      {t:"“AI was used.”", why:"Too vague to tell readers anything."},
      {t:"“The AI is responsible for any errors.”", why:"Authors remain responsible."},
-     {t:"“No disclosure is needed because we didn’t copy and paste.”", why:"Disclosure depends on how the tool was used, not on copying."}
+     {t:"“No disclosure is needed because we didn’t copy and paste any text from [tool name] into the paper.”", why:"Disclosure depends on how the tool was used, not on copying."}
    ]},
    {id:"t4u9-q40", lesson:"t4u9-l5", level:3, q:"Sione finds that his journal allows AI for language editing, but his university’s ethics approval says transcripts may be stored only on university systems. He wants AI help to code the transcripts. What should he do?", options:[
-     {t:"Follow the stricter rule: only use a university-approved tool covered by his ethics approval, or ask the committee for an amendment first.", ok:true, why:"When policies differ, the strictest applicable rule wins, and changes to data handling need approval."},
+     {t:"Follow the stricter rule, which is his university’s ethics approval.", ok:true, why:"He should use only a university-approved tool covered by the approval, or ask the committee for an amendment first. When policies differ, the strictest applicable rule wins, and changes to data handling need approval."},
      {t:"Use any AI tool, because the journal allows AI.", why:"The journal’s rule is about language editing; it doesn’t override his ethics approval."},
-     {t:"Paste the transcripts but delete the chat history afterwards.", why:"That still sends data outside approved systems."},
+     {t:"Paste the transcripts into any AI tool, but delete the chat history afterwards.", why:"That still sends data outside approved systems."},
      {t:"Stop using AI for anything, including language editing.", why:"That’s more than needed; he can still use AI where all applicable rules allow."}
    ]}
   ]

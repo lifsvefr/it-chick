@@ -236,8 +236,8 @@ ICA.addUnit({
       {t:"今後の課題として、利用者への聞き取り調査が挙げられる。", b:2, why:"Remaining issues come at the end, in the conclusion."}
     ]},
     {id:"e1u7-l2-x6", type:"mcq", q:"Hasan types his report the way he writes messages: he presses Enter after every sentence. What should he do instead?", options:[
-      {t:"Press Enter only at the end of a paragraph, and start each paragraph with a one-character indent", ok:true, why:"In Japanese reports, a new line means a new paragraph (a new topic), and paragraphs start with 一字下げ."},
-      {t:"Keep the line breaks, but add a blank line after each sentence", why:"That makes every sentence look like its own paragraph. The reader can no longer see where topics begin and end."},
+      {t:"Press Enter only to end a paragraph, and indent new paragraphs by one character", ok:true, why:"In Japanese reports, a new line means a new paragraph (a new topic), and paragraphs start with 一字下げ."},
+      {t:"Keep the line breaks after every sentence, but add a blank line after each one too", why:"That makes every sentence look like its own paragraph. The reader can no longer see where topics begin and end."},
       {t:"Remove all line breaks so the report is one block", why:"Then there are no paragraphs at all. Each topic needs its own paragraph."},
       {t:"Put one half-width space after each 「。」 instead", why:"Japanese text doesn’t use spaces after 「。」. The fix is about paragraphs, not spacing."}
     ]},
@@ -370,14 +370,14 @@ ICA.addUnit({
       {t:"この違いは、「読書」の定義の違いによると考えられる。", flag:false, why:"Aya’s own interpretation, clearly marked by ～と考えられる. 「読書」 is in 「」 to show she is discussing the word itself: fine."}
     ]},
     {id:"e1u7-l3-x6", type:"mcq", q:"Grace wants to quote six lines from a book. What do most Japanese writing guides recommend?", options:[
-      {t:"Set it apart as a block: blank lines before and after, indented, without 「」, with the source", ok:true, why:"A long quotation is easier to read as a block, and the layout itself shows it is quoted."},
-      {t:"Keep it in the paragraph inside 「」, like a short quotation", why:"Six lines in running text make the paragraph hard to read and blur where the quotation ends. Guides recommend a block for long quotations."},
+      {t:"Set it apart as an indented block, without 「」, with the source", ok:true, why:"A long quotation is easier to read as a block, with blank lines before and after, and the layout itself shows it is quoted."},
+      {t:"Keep it in the paragraph inside 「」, just like a short quotation", why:"Six lines in running text make the paragraph hard to read and blur where the quotation ends. Guides recommend a block for long quotations."},
       {t:"Put it in 『』 so it stands out", why:"『』 marks titles and quotations inside quotations, not long quotations."},
       {t:"Rewrite it in your own words but keep it in 「」", why:"「」 means “these are the exact words”. Your own wording must not be in 「」."}
     ]},
     {id:"e1u7-l3-x7", type:"mcq", q:"Which statement about 「山田（2020）は～と述べている」 and 「山田（2020）は～と述べた」 is correct?", options:[
-      {t:"Both are grammatical; the ている form is the most common default for citing published work", ok:true, why:"ている presents the view as standing in the text. The past form is also correct, often for a statement at a particular time."},
-      {t:"述べた is always wrong in reports", why:"Not so. The past form is used, for example for a past statement or an earlier view."},
+      {t:"Both are grammatical; the ている form is the usual default", ok:true, why:"ている presents the view as standing in the text, and it is the most common default for citing published work. The past form is also correct, often for a statement at a particular time."},
+      {t:"述べた is always wrong in reports and should never be used for a citation", why:"Not so. The past form is used, for example for a past statement or an earlier view."},
       {t:"述べている means 山田 is speaking right now", why:"Here ている describes a state: the statement exists in the text. It doesn’t mean a speech in progress."},
       {t:"Reports must use 述べています", why:"Reports are written in である style, so the plain form 述べている is used, not です・ます."}
     ]}
@@ -615,7 +615,7 @@ ICA.addUnit({
       {t:"Asking an AI tool to write the 考察 section and submitting it as written", b:1, why:"Submitting generated text as your own writing is dishonest, especially when the course hasn’t allowed it."}
     ]},
     {id:"e1u7-l5-x4", type:"mcq", q:"Sione’s course policy says: “AI tools may be used to check language, not to write content. Say how you used them.” Which plan fits the policy?", options:[
-      {t:"Write the report himself, ask an AI tool to flag 話し言葉, check each suggestion in a dictionary, and add a short note saying how he used it", ok:true, why:"Language checking only, with his own judgement on each suggestion and the disclosure the policy asks for."},
+      {t:"Write the report himself, ask AI to flag 話し言葉, check each one, and disclose it", ok:true, why:"Language checking only, with his own judgement on each suggestion (checked in a dictionary) and a short note giving the disclosure the policy asks for."},
       {t:"Ask the tool to write the report in English, then translate it into Japanese himself", why:"The content was written by the tool. Translating it doesn’t make it his work, and the policy forbids AI-written content."},
       {t:"Use the tool to check language, but leave out the note because the changes were small", why:"The policy asks for disclosure. Small or not, the use should be stated."},
       {t:"Ask the tool for a reference list on his topic and copy it into his report", why:"That is content, not language checking, and AI tools often invent references that don’t exist. Find and read real sources."}
@@ -630,14 +630,14 @@ ICA.addUnit({
       {t:"以上のことから、夜間開館には一定の意義があると考えられる。", flag:false, why:"A cautious conclusion that follows from the points: fine."}
     ]},
     {id:"e1u7-l5-x6", type:"mcq", q:"Dmitri writes his report in Russian, puts it through a translation tool, corrects a few words and submits the Japanese version. His course hasn’t said anything about translation tools. What is the best advice?", options:[
-      {t:"Ask the teacher first: in most courses, submitting machine-translated text as your own Japanese writing is not acceptable", ok:true, why:"When rules are unclear, ask. The usual expectation is that a Japanese report is written in Japanese by the student, so a translated text is not his own writing."},
+      {t:"Ask the teacher before submitting anything like this", ok:true, why:"When rules are unclear, ask. In most courses, submitting machine-translated text as your own Japanese writing is not acceptable: the usual expectation is that a Japanese report is written in Japanese by the student."},
       {t:"It’s fine, because the ideas are his own", why:"His ideas, yes, but the Japanese text is the tool’s. Courses that assess Japanese writing assess the student’s own Japanese."},
       {t:"It’s fine if he corrects enough words to change the style", why:"Editing a machine translation doesn’t make it his writing, and the problem isn’t the number of changes."},
       {t:"It’s fine as long as he uses である style", why:"Style doesn’t decide honesty. The question is who wrote the text, and what the course allows."}
     ]},
     {id:"e1u7-l5-x7", type:"mcq", q:"Which final-check habit catches **kanji conversion errors** (such as 以外 typed for 意外) best?", options:[
       {t:"Reading the report aloud slowly, ideally the next day", ok:true, why:"Wrong kanji with the right reading pass spell-checkers, but reading slowly for meaning makes them stand out, especially after a break."},
-      {t:"Running a spell-checker once", why:"以外 and 意外 are both real words, so a spell-checker usually won’t flag them."},
+      {t:"Running the spell-checker once over the whole final report", why:"以外 and 意外 are both real words, so a spell-checker usually won’t flag them."},
       {t:"Checking the character count", why:"The count is the same whichever kanji you chose."},
       {t:"Looking only at the headings", why:"Conversion errors can appear anywhere in the text, so headings alone miss most of them."}
     ]}
@@ -669,6 +669,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e1u7-q02","e1u7-q05","e1u7-q11","e1u7-q14","e1u7-q19","e1u7-q22","e1u7-q25","e1u7-q29","e1u7-q32","e1u7-q37","e1u7-q40","e1u7-q44"],
+  cpBank:[
+   {id:"e1u7-cp01", lesson:"e1u7-l1", level:2, q:"Aya’s task says 「次の文章を要約しなさい。」 She plans to summarise the text and then add a paragraph giving her own opinion. What is the best advice?", options:[
+     {t:"Keep to a summary: 要約する asks for the main points in fewer words, not her view", ok:true, why:"The task verb decides the job. If the teacher wanted an opinion as well, the task would ask for it (for example あなたの考えを述べなさい)."},
+     {t:"Add the opinion, because every レポート must contain the writer’s 主張", why:"Many reports do argue, but this task verb asks for a summary only. Follow the task."},
+     {t:"Write mainly her opinion, with a short summary at the end", why:"That answers a different task. 要約する asks for the main points of the text."},
+     {t:"Add her impressions (感想) instead, since impressions sound more polite than opinions", why:"A 要約 contains neither impressions nor opinions. It restates the text’s main points."}]},
+   {id:"e1u7-cp02", lesson:"e1u7-l1", level:3, q:"A task says: 「A4・横書き、2000字程度。参考文献を3点以上挙げること。」 Which draft meets all the conditions?", options:[
+     {t:"A4, 横書き, 1,980 characters, two references", why:"Length and format are fine, but 3点以上 means at least three references."},
+     {t:"A4, 縦書き, 2,010 characters, four references", why:"The task asks for 横書き (horizontal writing), not 縦書き."},
+     {t:"A4, 横書き, 1,950 characters, three references", ok:true, why:"Close to “about 2,000” (程度), in the right format, with at least three references."},
+     {t:"A4, 横書き, 3,100 characters, eleven references", why:"程度 means about 2,000. Going far past the number can lose marks, however good the content is."}]},
+   {id:"e1u7-cp03", lesson:"e1u7-l2", level:1, q:"Hasan’s はじめに contains 「では、なぜ地方の大学で留学生が増えているのだろうか。」 A friend says questions are not allowed in a report. Who is right?", options:[
+     {t:"The friend: a report must never contain a question", why:"A rhetorical question in the introduction is normal in Japanese academic writing."},
+     {t:"Hasan: a ～のだろうか question can set up what the report answers later", ok:true, why:"It presents the 問い. The answer must come later, in the 本論 and the conclusion."},
+     {t:"The friend: the question must be rewritten in です・ます", why:"Style isn’t the issue. ～のだろうか is plain style, which fits a である report."},
+     {t:"Hasan: questions are fine anywhere, even as the final sentence with no answer", why:"The question must be answered. A report that ends on an unanswered question has no claim."}]},
+   {id:"e1u7-cp04", lesson:"e1u7-l2", level:2, q:"Kim’s 問い is 「大学生のアルバイト時間は学業成績と関係があるか」. Her reverse outline (the first sentence of each paragraph) reads: ① 近年、大学生のアルバイト時間が長くなっている。② 先行研究では、長時間のアルバイトが学習時間の減少につながると指摘されている。③ 大学の学生食堂は、周辺の飲食店より価格が安い。④ 公開データでは、週20時間以上働く学生の成績が低い傾向が見られる。 What does it show?", options:[
+     {t:"Paragraph ① is unnecessary, because background never belongs in a report", why:"Background belongs in はじめに: it sets up the question."},
+     {t:"The paragraphs are fine, because any true fact about students can go in", why:"One paragraph, one topic, and every paragraph must help answer the 問い."},
+     {t:"Paragraph ④ should come first, because data always opens a report", why:"Reports usually open with background, question and aim. Data supports the claim in the 本論."},
+     {t:"Paragraph ③ doesn’t help answer the 問い, so it should be cut or rewritten", ok:true, why:"A reverse outline shows each paragraph’s point. Canteen prices have nothing to do with work hours and grades."}]},
+   {id:"e1u7-cp05", lesson:"e1u7-l3", level:2, q:"The original sentence in 小林（2019, p. 21） has a typing error (課 for 果): 「調査の結課、多くの学生が朝食をとっていなかった。」 Which direct quotation follows the usual conventions?", options:[
+     {t:"小林（2019）は、「調査の結果、多くの学生が朝食をとっていなかった」（p. 21）と述べている。", why:"A direct quotation copies exactly. Correcting it silently changes the source’s words: keep the error and add （ママ）."},
+     {t:"小林（2019）は、「調査の結課（ママ）、多くの学生が朝食をとっていなかった」（p. 21）と述べている。", ok:true, why:"It copies exactly, marks the error with （ママ）, drops the final 。 before と, and gives the page."},
+     {t:"小林（2019）は、「調査の結課（ママ）、多くの学生が朝食をとっていなかった。」（p. 21）と述べている。", why:"When the quotation sits inside your sentence before と, drop the original’s final 。."},
+     {t:"小林（2019）は、「調査の結課（ママ）、多くの学生が朝食をとっていなかった」と述べている。", why:"A direct quotation needs the page number."}]},
+   {id:"e1u7-cp06", lesson:"e1u7-l3", level:3, q:"Lucía wants to introduce the view of 山田（2020） and then argue against it. Which pair of sentences does this best?", options:[
+     {t:"山田（2020）は、留学生の孤立は語学力の問題であることを明らかにした。しかし、大学の支援体制を考えると、この主張には検討の余地がある。", why:"明らかにした tells the reader she accepts the finding, which contradicts her next sentence. Don’t use 明らかにする for a claim you will reject."},
+     {t:"山田（2020）は、留学生の孤立は語学力の問題だと言っている。しかし、大学の支援体制を考えると、この主張には検討の余地がある。", why:"言う sounds like speech. For a written source, use 述べる or a more precise verb."},
+     {t:"山田（2020）は、留学生の孤立は語学力の問題であると主張している。しかし、大学の支援体制を考えると、この主張には検討の余地がある。", ok:true, why:"主張する presents a position others might dispute, so the next sentence can disagree politely, with a reason."},
+     {t:"山田（2020）によると、留学生の孤立は語学力の問題らしい。しかし、大学の支援体制を考えると、この主張には検討の余地がある。", why:"らしい is a spoken hearsay form that sounds like gossip. Use という or a reporting verb."}]},
+   {id:"e1u7-cp07", lesson:"e1u7-l5", level:2, q:"Ravi read an English article and translated its main argument into Japanese for his report. He gave no citation, because he chose all the Japanese words himself. What is the problem?", options:[
+     {t:"None: translating into Japanese makes the text his own work", why:"The ideas, structure and evidence are still the author’s. Translation feels like your own work, but it isn’t."},
+     {t:"It is fine as long as the Japanese is in である style", why:"The style of the Japanese doesn’t change whose ideas they are. The argument and its structure are still the author’s, so it needs a citation."},
+     {t:"He only needs a citation if he quotes the words in 「」", why:"Indirect quotations, in your own words, need a source too. Anything taken from a source must be cited."},
+     {t:"It is plagiarism: a translated passage needs a citation too", ok:true, why:"Translating without citing is one of the forms of 剽窃. He should report the idea with its source, as an indirect quotation."}]},
+   {id:"e1u7-cp08", lesson:"e1u7-l4", level:1, q:"Hana cites a paper by three authors, 山田・佐藤・中村 (2018). In many Japanese author–year styles, how is it cited in the text?", options:[
+     {t:"山田ほか（2018）", ok:true, why:"In many styles, three or more authors become the first author’s family name + ほか, the Japanese equivalent of et al."},
+     {t:"山田 et al.（2018）", why:"In Japanese text, ほか replaces the English et al."},
+     {t:"中村ほか（2018）", why:"The citation starts with the first author’s name, in the order the paper lists them."},
+     {t:"山田・佐藤（2018）", why:"This drops the third author without showing it. Two authors are both named; three or more use ほか."}]},
+   {id:"e1u7-cp09", lesson:"e1u7-l4", level:2, q:"Ravi must place 角田（2017） in a reference list ordered by 五十音順. He knows that 角田 can be read かくた or つのだ. What should he do?", options:[
+     {t:"Choose the more common reading, since either one is accepted", why:"五十音順 follows how this author’s name is actually read, and families differ."},
+     {t:"Order it by the number of strokes in the kanji instead", why:"五十音順 goes by reading (あいうえお order), not by how the name is written."},
+     {t:"Check its reading in the 奥付 or a library catalogue", ok:true, why:"The order goes by reading, and names with the same kanji can be read differently, so check a reliable source."},
+     {t:"Put it at the end of the list, after all the English sources", why:"Japanese works go in 五十音順, then works in other languages. A Japanese author belongs in the Japanese part, by reading."}]},
+   {id:"e1u7-cp10", lesson:"e1u7-l4", level:3, q:"Sun-hee is handwriting an exam essay on 縦書き 原稿用紙. She plans to write 「2025年の調査では、45%の学生が回答した。」 What should she change?", options:[
+     {t:"Nothing: Arabic digits turn vertical by themselves in 縦書き", why:"Even word processors don’t convert digits, and on handwritten 原稿用紙 nobody does. In 縦書き, write kanji numerals."},
+     {t:"Write two Arabic digits in each square, as in 横書き", why:"Two digits per square is common advice for 横書き. In 縦書き, kanji numerals are used."},
+     {t:"Change 、 and 。 to ， and ． because the essay is academic", why:"In 縦書き, the punctuation pair is always 、。."},
+     {t:"Use kanji numerals: 二〇二五年 and 四五パーセント (or 四十五パーセント)", ok:true, why:"In 縦書き, numbers are usually written as kanji numerals, and 、。 stays as it is."}]},
+   {id:"e1u7-cp11", lesson:"e1u7-l5", level:1, q:"On 原稿用紙, Sione’s sentence ends in the 20th square of a line, so its 。 would fall in the first square of the next line. What should he do?", options:[
+     {t:"Write 。 in the first square of the next line", why:"A line must never start with 、 or 。."},
+     {t:"Write 。 in the last square with the final character", ok:true, why:"That is the standard rule (some guides write it just outside the grid instead), so that no line starts with 、 or 。."},
+     {t:"Leave out the 。 at the end of that sentence", why:"Every sentence still needs its 。; only its position changes."},
+     {t:"Rewrite the whole paragraph so that it ends earlier", why:"No rewriting is needed. The rule has a simple layout fix."}]},
+   {id:"e1u7-cp12", lesson:"e1u7-l5", level:3, q:"Kenji asks a chatbot for sources on his topic. It lists three Japanese papers with authors, years and journal names. He cites all three without opening them. What is the main problem?", options:[
+     {t:"AI tools can invent references; he should cite only what he has read", ok:true, why:"As with 孫引き, citing what you haven’t checked passes on errors. With AI, the paper may not exist at all."},
+     {t:"Nothing: chatbots only list papers that exist in real databases", why:"AI tools can invent references that look completely real."},
+     {t:"He only needs to add the chatbot itself to his reference list as well", why:"Listing the tool doesn’t fix citing papers he hasn’t read, and the papers may not even exist."},
+     {t:"Nothing, as long as the papers are in Japanese", why:"The language doesn’t matter. Check that each source exists and says what you report."}]}
+  ],
   codex:[
    {id:"japanese-report-structure", title:"Japanese reports: kinds, questions and structure", aka:["レポートの書き方","序論・本論・結論","はじめに・おわりに","期末レポート","卒業論文"], tags:["academic Japanese","writing","reports"], summary:"What a レポート is (and how it differs from a 感想文), the three common kinds, reading the task, building a 問い and 主張, and the three-part structure with its stock phrases.",
     levels:{
@@ -859,8 +921,8 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e1u7-q01", lesson:"e1u7-l1", level:1, q:"What is the main difference between a レポート and a 感想文?", options:[
-     {t:"A レポート answers a question with evidence and reasoning; a 感想文 describes personal impressions", ok:true, why:"That is the core difference Japanese writing guides stress: 「レポートは感想文ではない」."},
-     {t:"A レポート is longer; otherwise they are the same", why:"Length isn’t the difference. A short report still needs a question, evidence and reasoning."},
+     {t:"A レポート argues from evidence; a 感想文 describes personal impressions", ok:true, why:"It answers a question with evidence and reasoning. That is the core difference Japanese writing guides stress: 「レポートは感想文ではない」."},
+     {t:"A レポート is longer and more formal; otherwise the two are exactly the same", why:"A report is usually more formal, but length and style are not the main difference. A short report still needs a question, evidence and reasoning."},
      {t:"A 感想文 uses sources; a レポート doesn’t", why:"The reverse: reports rely on sources, while impressions essays rely on personal experience."},
      {t:"A レポート is always about a book", why:"Reports can be about any topic. Writing about a book you read is typical of the school 読書感想文."}
    ]},
@@ -871,10 +933,10 @@ ICA.addUnit({
      {t:"感想文: say how you feel about the topic", why:"論じなさい asks for reasoning and evidence, not feelings."}
    ]},
    {id:"e1u7-q03", lesson:"e1u7-l1", level:1, q:"What does 考察する ask you to do in a task or report?", options:[
-     {t:"Examine and interpret: think through what results or facts mean", ok:true, why:"考察 is interpretation: why results came out this way, what they suggest, and their limits."},
+     {t:"Examine and interpret what results or facts mean", ok:true, why:"考察 is interpretation: why results came out this way, what they suggest, and their limits."},
      {t:"Copy the results into a table", why:"Presenting results is 報告. 考察 comes after: interpreting them."},
      {t:"Summarise a text in fewer words", why:"That is 要約する."},
-     {t:"Describe your feelings about the topic", why:"考察 is analytical, not emotional."}
+     {t:"Describe your own feelings about the topic in detail", why:"考察 is analytical, not emotional."}
    ]},
    {id:"e1u7-q04", lesson:"e1u7-l1", level:1, q:"A task says 「1600字以上」. What does this mean?", options:[
      {t:"At least 1,600 characters", ok:true, why:"以上 means “or more”: 1,600 is the minimum."},
@@ -895,10 +957,10 @@ ICA.addUnit({
      {t:"私は～を検討したいと思います。", why:"Polite style plus ～たいと思います sounds like a speech or a plan, not a report."}
    ]},
    {id:"e1u7-q07", lesson:"e1u7-l1", level:3, q:"Mei’s report argues that her university should extend library hours. Her only evidence is that she herself finds the library closes too early. What is the main problem?", options:[
-     {t:"Personal experience is an example, not evidence about students in general; she needs data or sources", ok:true, why:"A report’s 根拠 must support a general claim: usage figures, a survey, studies from other universities."},
+     {t:"One person’s experience isn’t evidence about all students", ok:true, why:"Personal experience is an example. A report’s 根拠 must support a general claim, so she needs data or sources: usage figures, a survey, studies from other universities."},
      {t:"She should write in です・ます style", why:"Style isn’t the problem here; reports are usually in である style anyway."},
      {t:"Her claim is too clear", why:"A clear claim is a strength. The weakness is the evidence."},
-     {t:"She should not mention the library at all", why:"The topic is fine. It needs better evidence."}
+     {t:"She should not mention the library or its opening hours at all", why:"The topic is fine. It needs better evidence."}
    ]},
    {id:"e1u7-q08", lesson:"e1u7-l1", level:2, q:"Which sentence best states a claim (主張) in a report?", options:[
      {t:"本レポートでは、授業の録画公開は学生の復習を支える有効な手段であると主張する。", ok:true, why:"A clear, arguable position introduced with 本レポートでは and 主張する."},
@@ -907,9 +969,9 @@ ICA.addUnit({
      {t:"授業の録画について、いろいろ調べてみた。", why:"Describes an activity, not a claim; ～てみた is conversational."}
    ]},
    {id:"e1u7-q09", lesson:"e1u7-l1", level:3, q:"Oluwaseun has to write a short reaction sheet (リアクションペーパー) after a lecture, and the teacher asks “What did you find interesting?” Which is true?", options:[
-     {t:"Personal reactions are what the teacher asked for, so they are appropriate here", ok:true, why:"Reaction sheets and reflections are not reports. The teacher’s instructions decide what they contain."},
+     {t:"Personal reactions are appropriate, because the teacher asked for them", ok:true, why:"Reaction sheets and reflections are not reports. The teacher’s instructions decide what they contain."},
      {t:"He must write a full 論証型 report with references", why:"That isn’t what the task asks. Answer the question you were given."},
-     {t:"Personal reactions are never acceptable at a Japanese university", why:"They are fine where the task asks for them, as here."},
+     {t:"Personal reactions are never acceptable in writing at a Japanese university", why:"They are fine where the task asks for them, as here."},
      {t:"He must write in 原稿用紙 format", why:"Nothing in the task says so; the format follows the teacher’s instructions."}
    ]},
    /* ---- Lesson 2 ---- */
@@ -917,7 +979,7 @@ ICA.addUnit({
      {t:"Background, question, aim and a preview of the structure", ok:true, why:"These four moves let the reader know why the topic matters, what is asked and how the report proceeds."},
      {t:"All the evidence and data", why:"Evidence belongs in the 本論."},
      {t:"A summary and remaining issues", why:"That is the job of the 結論 (おわりに)."},
-     {t:"Only the title and the writer’s name", why:"Those belong on the cover or header, not in the introduction."}
+     {t:"Only the title, the writer’s name and their student number", why:"Those belong on the cover or header, not in the introduction."}
    ]},
    {id:"e1u7-q11", lesson:"e1u7-l2", level:2, q:"Which sentence would most likely open a report’s おわりに?", options:[
      {t:"以上、本レポートでは地方の公共交通の課題について検討した。", ok:true, why:"以上 and the past 検討した look back over the whole report: a standard opening for the conclusion."},
@@ -927,7 +989,7 @@ ICA.addUnit({
    ]},
    {id:"e1u7-q12", lesson:"e1u7-l2", level:1, q:"How do you mark the start of a new paragraph in a Japanese report?", options:[
      {t:"Start a new line and indent it by one character", ok:true, why:"一字下げ on a new line is the standard paragraph mark."},
-     {t:"Leave a blank line, with no indent", why:"Common online, but in reports the one-character indent is standard."},
+     {t:"Leave a blank line between paragraphs, with no indent", why:"Common online, but in reports the one-character indent is standard."},
      {t:"Underline the first word", why:"Underlining doesn’t mark paragraphs."},
      {t:"Continue on the same line after 「。」", why:"Then there is no paragraph break at all."}
    ]},
@@ -956,15 +1018,15 @@ ICA.addUnit({
      {t:"Version 2, draft 3", why:"章 and 節 are parts of the text, not versions."}
    ]},
    {id:"e1u7-q17", lesson:"e1u7-l2", level:3, q:"Kenji’s conclusion ends: 「また、留学生の就職問題も重要である。」 His report never discussed employment. What is the best advice?", options:[
-     {t:"Remove it, or move it to the body, or present it clearly as a remaining issue (今後の課題)", ok:true, why:"A conclusion shouldn’t open a new topic. If it matters, it belongs in the body or as a labelled limitation."},
+     {t:"Remove it, move it to the body, or label it as a remaining issue", ok:true, why:"A conclusion shouldn’t open a new topic. If it matters, it belongs in the body, or clearly presented as a remaining issue (今後の課題)."},
      {t:"Keep it: conclusions should end with a new idea", why:"New topics in the conclusion confuse the reader and suggest the report is unfinished."},
-     {t:"Expand it into three more paragraphs in the conclusion", why:"That turns the conclusion into a second body on a new topic."},
+     {t:"Expand it into three more paragraphs at the end of the conclusion", why:"That turns the conclusion into a second body on a new topic."},
      {t:"Move it to the title", why:"The title should reflect what the report discusses, which this isn’t."}
    ]},
    {id:"e1u7-q18", lesson:"e1u7-l2", level:2, q:"What is a reverse outline used for?", options:[
-     {t:"Listing the first sentence of each paragraph to check that the argument flows", ok:true, why:"If the list reads like a summary of your argument, the paragraphs work; gaps and repeats show up at once."},
+     {t:"Listing each paragraph’s first sentence to check the argument", ok:true, why:"If the list reads like a summary of your argument, the paragraphs work and the argument flows; gaps and repeats show up at once."},
      {t:"Writing the conclusion first", why:"That is a drafting choice, not a reverse outline."},
-     {t:"Reversing the order of all paragraphs", why:"A reverse outline checks the order; it doesn’t reverse it."},
+     {t:"Reversing the order of all paragraphs to see if it reads better", why:"A reverse outline checks the order; it doesn’t reverse it."},
      {t:"Translating the outline into English", why:"Not what the term means."}
    ]},
    /* ---- Lesson 3 ---- */
@@ -981,10 +1043,10 @@ ICA.addUnit({
      {t:"佐藤さんが言うには、図書館は情報の入り口っぽい。", why:"Spoken (言うには, っぽい), no year, and さん is not used for cited authors."}
    ]},
    {id:"e1u7-q21", lesson:"e1u7-l3", level:1, q:"What is 孫引き?", options:[
-     {t:"Citing a source you only saw quoted in another source, as if you had read the original", ok:true, why:"孫 (grandchild) refers to taking the quotation second-hand."},
-     {t:"Quoting your own earlier work", why:"Reusing your own work without saying so is self-plagiarism, a different issue."},
+     {t:"Citing a second-hand quotation as if you had read the original", ok:true, why:"孫 (grandchild) refers to taking the quotation second-hand: you only saw it quoted in another source."},
+     {t:"Quoting your own earlier work in a new report without saying so", why:"Reusing your own work without saying so is self-plagiarism, a different issue."},
      {t:"Quoting more than three lines", why:"That is a long quotation, set as a block."},
-     {t:"Citing a source by its page number", why:"Page numbers are a normal part of citing."}
+     {t:"Citing a source by its page number instead of the author’s name", why:"Page numbers are a normal part of citing."}
    ]},
    {id:"e1u7-q22", lesson:"e1u7-l3", level:3, q:"Ana found a quotation from 鈴木（1985） in 山田（2020）, page 34. Her library doesn’t have 鈴木’s book. What should she do?", options:[
      {t:"Show that she took it from 山田, for example （山田 2020: 34 より再引用）, and list 山田 2020 in her references", ok:true, why:"When the original can’t be read, showing both sources is honest and lets readers check."},
@@ -1000,7 +1062,7 @@ ICA.addUnit({
    ]},
    {id:"e1u7-q24", lesson:"e1u7-l3", level:1, q:"How do Japanese guides usually recommend presenting a long quotation?", options:[
      {t:"As a separate block, indented, without 「」, with the source", ok:true, why:"Layout shows it is quoted, and the paragraph stays readable."},
-     {t:"Inside 「」 in the middle of a paragraph, however long", why:"Long quotations in running text are hard to read; guides recommend a block."},
+     {t:"Inside 「」 in the middle of a paragraph, however long the quotation is", why:"Long quotations in running text are hard to read; guides recommend a block."},
      {t:"In 『』", why:"『』 is for titles and inner quotations."},
      {t:"In bold type", why:"Bold doesn’t mark quotations."}
    ]},
@@ -1012,7 +1074,7 @@ ICA.addUnit({
    ]},
    {id:"e1u7-q26", lesson:"e1u7-l3", level:2, q:"Which statement about 述べている and 述べた is correct?", options:[
      {t:"Both are correct; 述べている is the usual default for citing published work", ok:true, why:"ている presents the view as standing in the text; the past form is also used, for example for a past statement."},
-     {t:"Only 述べた is correct in academic Japanese", why:"述べている is very common for published work."},
+     {t:"Only 述べた is correct in academic Japanese, because citations are in the past", why:"述べている is very common for published work."},
      {t:"述べている is spoken style", why:"It is fully written style."},
      {t:"Reports must use 述べています", why:"です・ます is not used in である-style reports."}
    ]},
@@ -1051,7 +1113,7 @@ ICA.addUnit({
      {t:"Choose one pair and use it everywhere, including captions", ok:true, why:"Consistency across the whole document is the rule every guide agrees on."},
      {t:"Leave it: captions don’t count", why:"Captions are part of the document; mixed punctuation is visible there too."},
      {t:"Use 「，」 in odd-numbered pages only", why:"Arbitrary variation is exactly what to avoid."},
-     {t:"Remove all commas from the captions", why:"That can make captions hard to read; the fix is consistency, not removal."}
+     {t:"Remove all commas from the captions so that nothing is mixed", why:"That can make captions hard to read; the fix is consistency, not removal."}
    ]},
    {id:"e1u7-q33", lesson:"e1u7-l4", level:2, q:"Which is never appropriate in a Japanese report?", options:[
      {t:"Half-width katakana such as ﾚﾎﾟｰﾄ", ok:true, why:"Half-width katakana is a leftover from old systems; reports use full-width katakana."},
@@ -1097,7 +1159,7 @@ ICA.addUnit({
      {t:"Stating that Tokyo is Japan’s capital without a source", why:"General knowledge needs no citation."}
    ]},
    {id:"e1u7-q40", lesson:"e1u7-l5", level:3, q:"Priya’s course allows AI for checking language if students disclose it. She used an AI tool to flag spoken expressions in her own draft. What should she do?", options:[
-     {t:"Check each suggestion herself and add a short note saying how she used the tool", ok:true, why:"That follows the policy: language checking only, her own judgement, and disclosure."},
+     {t:"Check each suggestion herself and say how she used the tool", ok:true, why:"That follows the policy: language checking only, her own judgement on each suggestion, and a short note disclosing the use."},
      {t:"Nothing: small language checks never need disclosure", why:"This course asks for disclosure, so she should give it."},
      {t:"Let the tool rewrite every paragraph, since language checking is allowed", why:"Rewriting paragraphs goes beyond checking; the text would no longer be hers."},
      {t:"Delete her draft and start again without any tools", why:"Not necessary: her use was allowed. She just needs to check and disclose."}
@@ -1109,8 +1171,8 @@ ICA.addUnit({
      {t:"Start in the first square with a 「、」", why:"Punctuation never starts a line."}
    ]},
    {id:"e1u7-q42", lesson:"e1u7-l5", level:3, q:"Luis writes his report in Spanish, translates it with a tool, edits a few words and submits it. The course is a Japanese writing course and says nothing about tools. What is the main problem?", options:[
-     {t:"The Japanese text isn’t his own writing, which the course assesses; he should ask the teacher before using a tool like this", ok:true, why:"A Japanese writing course assesses the student’s Japanese. A machine translation is not that, so he should check the rules."},
-     {t:"There is no problem, because the ideas are his", why:"The ideas are, but the Japanese writing is the tool’s."},
+     {t:"The Japanese isn’t his own writing, and that is what is assessed", ok:true, why:"A Japanese writing course assesses the student’s Japanese. A machine translation is not that, so he should ask the teacher before using a tool like this."},
+     {t:"There is no problem, because the ideas and the arguments are his own", why:"The ideas are, but the Japanese writing is the tool’s."},
      {t:"The problem is only that he didn’t use である style", why:"Style is not the main issue; authorship is."},
      {t:"The problem is that he edited a few words", why:"Editing isn’t the problem; submitting machine-translated text as his own is."}
    ]},
@@ -1127,10 +1189,10 @@ ICA.addUnit({
      {t:"Reading the report aloud slowly to catch conversion errors", why:"A good habit for finding wrong kanji and spoken expressions."}
    ]},
    {id:"e1u7-q45", lesson:"e1u7-l5", level:1, q:"What does 自己剽窃 mean?", options:[
-     {t:"Reusing your own earlier work as new without permission or acknowledgement", ok:true, why:"Submitting a report written for one course in another, without permission, counts as self-plagiarism."},
+     {t:"Reusing your own earlier work as new, without acknowledgement", ok:true, why:"Submitting a report written for one course in another, without permission or acknowledgement, counts as self-plagiarism."},
      {t:"Quoting yourself in a presentation", why:"Referring openly to your earlier work, with a citation, is fine."},
      {t:"Writing about yourself in a report", why:"That is a style question, not plagiarism."},
-     {t:"Checking your own report for plagiarism", why:"That is responsible practice, not misconduct."}
+     {t:"Checking your own report for plagiarism with a detection tool before submitting", why:"That is responsible practice, not misconduct."}
    ]}
   ]
 });

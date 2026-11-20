@@ -544,7 +544,7 @@ ICA.addUnit({
      q: "Cheska writes: 「[昨日]{きのう}は[忙]{いそが}しくて、水を飲む時間さえなかった。」 What does she mean?",
      options: [
       {
-       t: "She was so busy she didn’t even have time to drink water.",
+       t: "She didn’t even have time to drink water.",
        ok: true,
        why: "Right. さえ points to the extreme example: if there was no time even for water, there was no time for anything."
       },
@@ -624,6 +624,70 @@ ICA.addUnit({
       },
       "、[散歩]{さんぽ}すると元気になります。"
      ]
+    },
+    {
+     id: "e3u10-l1-x8",
+     type: "type",
+     q: "Rodrigo cycles to his language school whatever the weather. Type the missing ending (雨 is a noun): 「雨（　）、[自転車]{じてんしゃ}で行きます。」 (“Even if it rains, I go by bike.”)",
+     answer: [
+      "でも",
+      "がふっても"
+     ],
+     wrongs: [
+      {
+       v: "だても",
+       why: "Nouns and な-adjectives take でも, not だても: 雨でも."
+      },
+      {
+       v: "だから",
+       why: "雨だから means “because it’s raining”, which doesn’t fit “whatever the weather”. For “even if”, use でも."
+      }
+     ],
+     why: "Nouns and な-adjectives make the “even if” form with でも: 雨でも, “even if it rains, even in the rain”. (雨が[降]{ふ}っても says the same with a verb.)"
+    },
+    {
+     id: "e3u10-l1-x9",
+     type: "type",
+     q: "Type the missing form of する: 「いくら[説明]{せつめい}（　）、わかってもらえません。」 (“However much I explain, they don’t understand.”)",
+     answer: "しても",
+     wrongs: [
+      {
+       v: "すれば",
+       why: "すれば means “if I explain”. With いくら, use ～ても: “however much…”."
+      },
+      {
+       v: "したら",
+       why: "したら is “if or when I explain”. “However much” is いくら～ても."
+      },
+      {
+       v: "すても",
+       why: "ても joins the て-form: して → しても."
+      }
+     ],
+     why: "Question word + ～ても means “no matter…”: いくら[説明]{せつめい}しても, “however much I explain”."
+    },
+    {
+     id: "e3u10-l1-x10",
+     type: "type",
+     q: "Type the missing words for “not only … but also”: 「かいとさんは料理（　）、プログラミングも[得意]{とくい}です。」",
+     answer: [
+      "だけでなく",
+      "だけではなく",
+      "だけじゃなく",
+      "だけじゃなくて",
+      "ばかりでなく"
+     ],
+     wrongs: [
+      {
+       v: "ではなく",
+       why: "ではなく means “not A but B”: it would say Kaito is good at programming *instead of* cooking. For “not only… but also”, use だけでなく."
+      },
+      {
+       v: "だけ",
+       why: "だけ alone means “only”. Add でなく: だけでなく～も."
+      }
+     ],
+     why: "A だけでなく B も: “not only A but also B”. Kaito is good at both."
     }
    ],
    apply: {
@@ -707,7 +771,7 @@ ICA.addUnit({
      h: "Four ways to place an event in time",
      body: [
       {
-       lead: "You already have ～とき (when), ～前に (before), ～てから (after) and ～ながら (while doing). N3 adds four patterns that say more exactly **how** an event sits in a stretch of time."
+       lead: "You already have ～とき (when, Unit 5, Lesson 6), ～前に (before, Unit 5, Lesson 7), ～てから (after, Unit 3, Lesson 1) and ～ながら (while doing, Unit 7, Lesson 5). N3 adds four patterns that say more exactly **how** an event sits in a stretch of time."
       },
       {
        fig: "<svg viewBox=\"0 0 340 352\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">Where the event sits in time</text><text x=\"12\" y=\"48\">～あいだ: all through</text><rect class=\"d-soft\" x=\"40\" y=\"58\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-gold\" x=\"40\" y=\"78\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"170\" y=\"108\" text-anchor=\"middle\">the main action fills the period</text><text x=\"12\" y=\"136\">～あいだに: at one point inside</text><rect class=\"d-soft\" x=\"40\" y=\"146\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><circle class=\"d-rose\" cx=\"150\" cy=\"174\" r=\"8\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"198\" text-anchor=\"middle\">one event, somewhere in the period</text><text x=\"12\" y=\"226\">～うちに: before it changes</text><rect class=\"d-sage\" x=\"40\" y=\"236\" width=\"170\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><path class=\"d-ink\" d=\"M218 236V252\" stroke-width=\"2.5\"/><text class=\"s\" x=\"258\" y=\"248\" text-anchor=\"middle\">change</text><circle class=\"d-rose\" cx=\"130\" cy=\"264\" r=\"8\" stroke-width=\"2\"/><text x=\"12\" y=\"296\">～たびに: every time</text><circle class=\"d-rose\" cx=\"70\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"140\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"210\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"280\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"340\" text-anchor=\"middle\">the same result each time it happens</text></svg>",
@@ -1181,7 +1245,7 @@ ICA.addUnit({
      q: "A notice by the lift in your building says: 「[点検]{てんけん}の[間]{あいだ}、エレベーターはご[利用]{りよう}いただけません。」 ([点検]{てんけん} = inspection) What does it tell you?",
      options: [
       {
-       t: "You can’t use the lift at any time while the inspection is going on.",
+       t: "You can’t use the lift during the inspection.",
        ok: true,
        why: "Right. ～[間]{あいだ} with no に: the “can’t use” lasts the whole period of the inspection."
       },
@@ -1198,6 +1262,60 @@ ICA.addUnit({
        why: "That would be [点検]{てんけん}が始まらないうちに or [点検]{てんけん}の前に."
       }
      ]
+    },
+    {
+     id: "e3u10-l2-x9",
+     type: "type",
+     q: "Type the missing form of なる: 「[暗]{くら}く（　）うちに、帰りましょう。」 (“Let’s go home before it gets dark.”)",
+     answer: "ならない",
+     wrongs: [
+      {
+       v: "なる",
+       why: "[暗]{くら}くなるうちに sounds like “while it is getting dark”. For “before” an unwanted change, use the ない-form: [暗]{くら}くならないうちに."
+      },
+      {
+       v: "なった",
+       why: "うちに doesn’t follow a past form. For “before it gets dark”, use the ない-form: ならないうちに."
+      }
+     ],
+     why: "～ないうちに means “before (something unwanted) happens”: [暗]{くら}くならないうちに, while it is still light."
+    },
+    {
+     id: "e3u10-l2-x10",
+     type: "type",
+     q: "Kaito was cooking, and all that time Toby was watching a film. Type the missing word in hiragana: 「かいとさんが料理している（　）、トビーさんはずっと映画を見ていました。」",
+     answer: ["あいだ", "あいだじゅう"],
+     wrongs: [
+      {
+       v: "あいだに",
+       why: "～[間]{あいだ}に is for something that happens once, at some point in the period. Toby watched the whole time (ずっと), so ～[間]{あいだ}."
+      },
+      {
+       v: "うちに",
+       why: "～うちに means “while you still can”, or a change that happened gradually. For one action lasting the whole period, use ～[間]{あいだ}."
+      }
+     ],
+     why: "～[間]{あいだ} (written 間, typed あいだ) means “the whole time”: Toby watched for the whole time Kaito was cooking."
+    },
+    {
+     id: "e3u10-l2-x11",
+     type: "type",
+     q: "Sōta comes to the house most weekends. Type the missing words for “every time”: 「そうたくんは[来]{く}る（　）、ねこを[探]{さが}します。」 (“Every time Sōta comes, he looks for the cat.”)",
+     answer: [
+      "たびに",
+      "たび"
+     ],
+     wrongs: [
+      {
+       v: "うちに",
+       why: "～うちに is “while” (while you can, or while something changes). “Every time” is ～たびに."
+      },
+      {
+       v: "あいだに",
+       why: "～[間]{あいだ}に places one event inside a period. For something that happens again and again, use ～たびに."
+      }
+     ],
+     why: "Dictionary form + たびに means “every time”: [来]{く}るたびに, every time he comes."
     }
    ],
    apply: {
@@ -1739,6 +1857,64 @@ ICA.addUnit({
       },
       "は読んでから使ったほうがいいですね。"
      ]
+    },
+    {
+     id: "e3u10-l3-x9",
+     type: "type",
+     q: "Kaito is the best cook in the house. Rodrigo says: 「ぼくはかいとさん（　）料理が[上手]{じょうず}じゃありません。」 (“I’m not as good a cook as Kaito.”) Type the missing word.",
+     answer: "ほど",
+     wrongs: [
+      {
+       v: "くらい",
+       why: "くらい is mainly for a positive “as … as”. The standard pattern for “not as … as” is ほど with a negative."
+      },
+      {
+       v: "ぐらい",
+       why: "ぐらい is mainly for a positive “as … as”. The standard pattern for “not as … as” is ほど with a negative."
+      },
+      {
+       v: "より",
+       why: "より compares in a positive sentence (A is more … than B). For “not as … as”, Japanese uses ほど with a negative."
+      }
+     ],
+     why: "A は B ほど～ない: “A is not as … as B”. ほど goes with a negative."
+    },
+    {
+     id: "e3u10-l3-x10",
+     type: "type",
+     q: "Kaito baked bread. Type the missing word: 「かいとさんのパンは、お店のパンと同じ（　）おいしいです。」 (“Kaito’s bread is just as good as bread from a shop.”)",
+     answer: [
+      "くらい",
+      "ぐらい"
+     ],
+     wrongs: [
+      {
+       v: "ほど",
+       why: "ほど means “as … as” only with a negative (not as … as). For a positive “just as good as”, use くらい."
+      },
+      {
+       v: "より",
+       why: "より would mean “better than”, and it doesn’t follow 同じ. 同じくらい is “just as”."
+      }
+     ],
+     why: "同じくらい (or ぐらい) + an adjective means “just as … as”. A positive “as … as” takes くらい."
+    },
+    {
+     id: "e3u10-l3-x11",
+     type: "type",
+     q: "Cheska hates cooking, so she has a deal with the house. Type the missing words: 「チェスカさんは料理をする（　）、[掃除]{そうじ}を二[回]{かい}しています。」 (“Instead of cooking, Cheska does the cleaning twice.”)",
+     answer: "かわりに",
+     wrongs: [
+      {
+       v: "のかわりに",
+       why: "Only nouns take の before かわりに ([砂糖]{さとう}の代わりに). A verb attaches directly: するかわりに."
+      },
+      {
+       v: "ために",
+       why: "ために gives a purpose (“in order to”), not a replacement. “Instead of” is かわりに."
+      }
+     ],
+     why: "Plain verb + かわりに means “instead of doing” or “in exchange for”: 料理をするかわりに, cleaning twice in place of cooking."
     }
    ],
    apply: {
@@ -2267,7 +2443,7 @@ ICA.addUnit({
      q: "「高いからおいしいというわけではない。」 What does this mean?",
      options: [
       {
-       t: "Being expensive doesn’t necessarily make food good.",
+       t: "Expensive food isn’t always good.",
        ok: true,
        why: "Right. というわけではない denies the conclusion “expensive, so tasty” without saying that expensive food is bad."
       },
@@ -2316,6 +2492,68 @@ ICA.addUnit({
        "[彼]{かれ}が[嘘]{うそ}をつくわけがない: there’s no way he’d lie."
       ]
      ]
+    },
+    {
+     id: "e3u10-l4-x9",
+     type: "type",
+     q: "A friend offers to come all the way over just to return a book. You tell her there’s no need. Type the missing words: 「わざわざ[来]{く}る（　）よ。今度会うときで[十分]{じゅうぶん}だから。」",
+     answer: [
+      "ことはない",
+      "ことない"
+     ],
+     wrongs: [
+      {
+       v: "ことがない",
+       why: "ことがない after a verb talks about how often something happens (or, after a た-form, “have never”). “There’s no need to” is ことはない."
+      },
+      {
+       v: "わけではない",
+       why: "～わけではない softly denies a conclusion (“it’s not that…”). To tell someone they needn’t do something, use ことはない."
+      }
+     ],
+     why: "Dictionary form + ことはない means “there’s no need to”. It reassures the listener: わざわざ[来]{く}ることはないよ. (In casual speech は often drops: [来]{く}ることないよ.)"
+    },
+    {
+     id: "e3u10-l4-x10",
+     type: "type",
+     q: "A friend invites you to a horror film. You’d rather not go today, but it isn’t that you dislike horror. Type the missing word: 「ホラー映画が[嫌]{きら}い（　）わけではないんですが、[今日]{きょう}はちょっと…。」",
+     answer: [
+      "な",
+      "という",
+      "だという"
+     ],
+     wrongs: [
+      {
+       v: "だ",
+       why: "な-adjectives take な before わけ: [嫌]{きら}いなわけではない."
+      },
+      {
+       v: "の",
+       why: "の doesn’t come before わけ. [嫌]{きら}い is a な-adjective, so it takes な."
+      }
+     ],
+     why: "な-adjective + な + わけではない: “it’s not that…”. [嫌]{きら}いなわけではない softly denies what the listener might conclude. ([嫌]{きら}いというわけではない is also correct.)"
+    },
+    {
+     id: "e3u10-l4-x11",
+     type: "type",
+     q: "Rodrigo can’t remember which day the burnable rubbish goes out. He asks Mariya casually. Type the ending that means “…again?”: 「[燃]{も}えるごみの日、何曜日（　）？」",
+     answer: [
+      "だっけ",
+      "だったっけ",
+      "でしたっけ"
+     ],
+     wrongs: [
+      {
+       v: "っけ",
+       why: "After a noun or a question word, っけ needs だ (or だった): 何曜日だっけ."
+      },
+      {
+       v: "ですか",
+       why: "何曜日ですか is an ordinary question. ～っけ adds “…again?”: you knew it once and have forgotten. Casually it is だっけ; politely, でしたっけ."
+      }
+     ],
+     why: "～っけ checks something you knew once but have forgotten. After a noun: だっけ (casual) or でしたっけ (polite)."
     }
    ],
    apply: {
@@ -2941,6 +3179,57 @@ ICA.addUnit({
        why: "This is polite too: くださる is the respectful verb for くれる."
       }
      ]
+    },
+    {
+     id: "e3u10-l5-x9",
+     type: "type",
+     q: "Type the missing word for “tends to (and it’s a problem)”: 「[一人]{ひとり}[暮]{ぐ}らしだと、食事が[不規則]{ふきそく}になり（　）です。」 (“When you live alone, your meals tend to become irregular.”)",
+     answer: ["がち", "やすい"],
+     wrongs: [
+      {
+       v: "ぎみ",
+       why: "[気味]{ぎみ} is “a touch of”, a slight state you notice now. For something that tends to happen again and again, use ～がち."
+      },
+      {
+       v: "っぽい",
+       why: "～っぽい is “-ish” or “easily”, and mostly casual. For a tendency with a negative feel, use ～がち."
+      }
+     ],
+     why: "ます stem + がち: something tends to happen, and it’s a problem. なりがち, “tend to become”. (なりやすい, from Unit 7, also works.)"
+    },
+    {
+     id: "e3u10-l5-x10",
+     type: "type",
+     q: "Type the missing word for “a touch of”: 「[風邪]{かぜ}（　）なので、[今日]{きょう}は早く[寝]{ね}ます。」 (“I have a bit of a cold, so I’m going to bed early today.”)",
+     answer: "ぎみ",
+     wrongs: [
+      {
+       v: "がち",
+       why: "[風邪]{かぜ}がち means “prone to colds”, a tendency. For a slight cold right now, use [風邪]{かぜ}[気味]{ぎみ}."
+      },
+      {
+       v: "っぽい",
+       why: "っぽい works like an い-adjective, so it can’t take なので. (Casually, [風邪]{かぜ}っぽいので is fine.) Before なので, use [気味]{ぎみ}."
+      }
+     ],
+     why: "Noun or ます stem + [気味]{ぎみ}: “a touch of, slightly”. [風邪]{かぜ}[気味]{ぎみ}, “a bit of a cold”, is one of the commonest uses."
+    },
+    {
+     id: "e3u10-l5-x11",
+     type: "type",
+     q: "A caller asks for Mr Matsumoto of the city office, who is away from his desk. The receptionist is talking about her own colleague to an outsider. Type the missing verb: 「[申]{もう}し[訳]{わけ}ございません。[松本]{まつもと}はただいま[席]{せき}を外して（　）。」",
+     answer: "おります",
+     wrongs: [
+      {
+       v: "います",
+       why: "います is polite but not humble. Talking to an outsider about her own colleague, the receptionist lowers her side with おります."
+      },
+      {
+       v: "いらっしゃいます",
+       why: "いらっしゃる is respectful. You never raise your own colleague when speaking to someone outside: [松本]{まつもと}は…おります."
+      }
+     ],
+     why: "Talking to an outsider, your own colleagues are on your side (ウチ), so you use humble おります and no さん: [松本]{まつもと}はただいま[席]{せき}を外しております."
     }
    ],
    apply: {
@@ -3024,6 +3313,68 @@ ICA.addUnit({
   "e3u10-q43",
   "e3u10-q48"
  ],
+  cpBank:[
+    {id:"e3u10-cp01", lesson:"e3u10-l1", level:1, q:"Complete: 「明日、天気が＿＿、ピクニックに行きます。」 (Even if the weather isn’t good tomorrow, we’ll go on the picnic.)", options:[
+      {t:"いくなくても", why:"いい changes on よ in its other forms: よくない, so the ても-form is よくなくても."},
+      {t:"よくないでも", why:"Negatives make their ても-form from ～なくても. ないでも is not the pattern."},
+      {t:"よくなくても", ok:true, why:"いい → よくない (not good) → よくなくても (even if it isn’t good). The plan stays the same."},
+      {t:"よくなくて", why:"The て-form alone joins or gives a reason: “The weather isn’t good, so…”. “Even if” needs も."}]},
+    {id:"e3u10-cp02", lesson:"e3u10-l1", level:2, q:"After work, Dewi says to Rodrigo 「お[茶]{ちゃ}でも飲みませんか。」 What is she doing?", options:[
+      {t:"Asking whether he drinks tea at all", why:"That would be お茶を飲みますか. ～ませんか is an invitation."},
+      {t:"Saying that even tea is not allowed", why:"でも here isn’t “even”. In an invitation ending in ませんか, noun + でも means “or something”."},
+      {t:"Inviting him for a tea or something", ok:true, why:"In a suggestion ending in ませんか, noun + でも means “or something”: “How about a tea or something?”"},
+      {t:"Telling him to drink tea even if he dislikes it", why:"For “even if it’s…” you would expect a result that stays the same. A ませんか ending makes it an invitation."}]},
+    {id:"e3u10-cp03", lesson:"e3u10-l1", level:3, q:"Nobody knows who wrote a strange rule on the board. How does Cheska say “Even if a teacher wrote it, it’s wrong”?", options:[
+      {t:"「たとえ先生が書いたても、おかしいと思う。」", why:"ても follows the て-form, never the past: 書いても. Only としても can follow 書いた."},
+      {t:"「たとえ先生が書いたとしても、おかしいと思う。」", ok:true, why:"Past + としても is “even supposing…”. Nobody knows who wrote it, so a teacher writing it is only a supposition."},
+      {t:"「先生としても、それはおかしいと思う。」", why:"Noun + として + も is “as a teacher, too”: Cheska would be speaking as a teacher. “Even supposing” needs a clause: 先生が書いたとしても."},
+      {t:"「先生が書いたのに、おかしいと思う。」", why:"のに reports a real fact: a teacher really did write it. Here nobody knows who did."}]},
+    {id:"e3u10-cp04", lesson:"e3u10-l2", level:1, q:"A sign on a door at the city office says 「[会議]{かいぎ}中」. What does it tell you?", options:[
+      {t:"The meeting room is free to use", why:"Noun + 中 says what is going on now. [会議]{かいぎ}中 means the room is in use."},
+      {t:"A meeting is going on in there now", ok:true, why:"Noun + 中 is a short label for what is happening now: in a meeting, like [準備]{じゅんび}中 and 通話中."},
+      {t:"The meeting has just finished", why:"“Just finished” would be [会議]{かいぎ}が終わったところ. 中 means it is still going on."},
+      {t:"The meeting will start soon", why:"“About to start” would be [会議]{かいぎ}が始まるところ. 中 means it has already started."}]},
+    {id:"e3u10-cp05", lesson:"e3u10-l2", level:2, q:"Which sentence is natural?", options:[
+      {t:"「[昨日]{きのう}[駅]{えき}で会ったたびに、少し話しました。」", why:"たびに is for repeated occasions, after the dictionary form. For one meeting yesterday, use とき: 会ったとき."},
+      {t:"「この歌を聞いたたびに、海を思い出します。」", why:"たびに follows the dictionary form (or noun + の): 聞くたびに."},
+      {t:"「この歌を聞くたびに、[島]{しま}の海を思い出します。」", ok:true, why:"Dictionary form + たびに: every time she hears the song, the same thing happens."},
+      {t:"「この歌を聞くたびに、一度だけ海を思い出しました。」", why:"たびに means the same thing happens every time, so “only once” contradicts it."}]},
+    {id:"e3u10-cp06", lesson:"e3u10-l3", level:2, q:"Kaito wants to say “Compared with cooking at home, eating out costs money.” Which is correct?", options:[
+      {t:"「家で料理するに[比]{くら}べて、外で食べるのはお金がかかります。」", why:"A verb needs の before に[比]{くら}べて: 料理するのに[比]{くら}べて."},
+      {t:"「家で料理するのを[比]{くら}べて、外で食べるのはお金がかかります。」", why:"The pattern is に[比]{くら}べて (or と[比]{くら}べて), not を[比]{くら}べて."},
+      {t:"「家で料理するより[比]{くら}べて、外で食べるのはお金がかかります。」", why:"より and に[比]{くら}べて are two ways to compare. Use one of them: 料理するより, or 料理するのに[比]{くら}べて."},
+      {t:"「家で料理するのに[比]{くら}べて、外で食べるのはお金がかかります。」", ok:true, why:"Verb + の + に[比]{くら}べて sets up the comparison: “compared with cooking at home”."}]},
+    {id:"e3u10-cp07", lesson:"e3u10-l5", level:1, q:"Kaito’s new T-shirt has cartoon bears on it. Toby teases him that it looks like a child’s. Which word fits? 「そのTシャツ、ちょっと＿＿ね。」", options:[
+      {t:"子どもっぽい", ok:true, why:"Noun + っぽい is “seems like (but isn’t)”: 子どもっぽい criticises something of an adult’s for looking childish."},
+      {t:"子どもらしい", why:"らしい here means “just as a child should be”. It praises a real child, and Kaito is 19."},
+      {t:"子どもがち", why:"がち follows a verb stem or a few nouns for unwelcome habits, as in 病気がち. It doesn’t say what something looks like."},
+      {t:"子ども気味", why:"気味 is “a touch of” a state you feel now, as in [風邪]{かぜ}気味. It doesn’t describe how something looks."}]},
+    {id:"e3u10-cp08", lesson:"e3u10-l4", level:2, q:"Sōta keeps interrupting. Fumiko tells him 「人の話は、[最]{さい}後まで聞くものよ。」 What is she doing?", options:[
+      {t:"Remembering what she used to do as a child", why:"That would be the past ～たものだ: 聞いたものだ, “I used to listen”."},
+      {t:"Telling him there is no need to listen", why:"“No need to” is ～ことはない. ～ものだ here says what people should do."},
+      {t:"Telling him what people should do", ok:true, why:"Dictionary form + ものだ can state what people are expected to do: “You should listen to the end.”"},
+      {t:"Asking him what the person said again", why:"Checking something you forgot is ～っけ. ～ものよ is advice."}]},
+    {id:"e3u10-cp09", lesson:"e3u10-l4", level:3, q:"Aoi says 「[松本]{まつもと}さんは、[約束]{やくそく}を[忘]{わす}れることはありません。」 What does she mean?", options:[
+      {t:"Mr Matsumoto never forgets an appointment", ok:true, why:"When no advice is being given, ～ことはない simply means “it never happens”."},
+      {t:"There’s no need to worry if Mr Matsumoto forgets", why:"Advice would be about the listener: [心配]{しんぱい}することはありません. This sentence describes Mr Matsumoto."},
+      {t:"It isn’t that Mr Matsumoto always remembers", why:"That would be partial negation: いつも[覚]{おぼ}えているわけではない."},
+      {t:"Mr Matsumoto sometimes forgets appointments", why:"“It sometimes happens” is ～ことがあります, with が. ～ことはありません rules it out."}]},
+    {id:"e3u10-cp10", lesson:"e3u10-l5", level:3, q:"At the city office, Ms Kimura greets a visitor who has come to see her colleague, Mr Matsumoto. How does she say he will come right away?", options:[
+      {t:"「[松本]{まつもと}さんはすぐにいらっしゃいます。」", why:"To an outsider, your colleague is on your side: no さん and no respectful verb."},
+      {t:"「[松本]{まつもと}さんはすぐに[参]{まい}ります。」", why:"[参]{まい}ります is right, but drop さん for your own side when you speak to outsiders."},
+      {t:"「[松本]{まつもと}はすぐにいらっしゃいます。」", why:"いらっしゃる raises the person. For someone on your side, use humble [参]{まい}る."},
+      {t:"「[松本]{まつもと}はすぐに[参]{まい}ります。」", ok:true, why:"ウチ・ソト: to a visitor, your colleague is on your side, so no さん and the humble [参]{まい}ります."}]},
+    {id:"e3u10-cp11", lesson:"e3u10-l5", level:2, q:"Mr Matsumoto asks Aoi 「[平]{ひら}川さんは、この地図のことをご[存]{ぞん}じですか。」 What is he asking?", options:[
+      {t:"Whether she has the map with her", why:"“Do you have” is お持ちですか. ご[存]{ぞん}じ is about knowing."},
+      {t:"Whether she knows about this map", ok:true, why:"ご[存]{ぞん}じだ is the respectful form of 知っている: “Do you know about this map?”"},
+      {t:"Whether she made this map herself", why:"Nothing in the sentence is about making. ご[存]{ぞん}じ means “know”."},
+      {t:"Whether she will look at this map", why:"Respectful “look” is ご[覧]{らん}になる. ご[存]{ぞん}じ means “know”."}]},
+    {id:"e3u10-cp12", lesson:"e3u10-l2", level:3, q:"While Sōta was asleep, Megumi quietly wrapped his birthday present. Which word fits? 「そうたが[寝]{ね}ている（　）、プレゼントを[包]{つつ}んだ。」", options:[
+      {t:"間", why:"Without に, the main action fills the whole period: she would have been wrapping all the time he slept."},
+      {t:"間に", ok:true, why:"～間に places one event somewhere inside a period, and the two actions can belong to different people."},
+      {t:"ながら", why:"～ながら is for one person doing two things at once. Here Sōta sleeps and Megumi wraps."},
+      {t:"たびに", why:"～たびに means “every time”, for repeated occasions. This happened once."}]}
+  ],
  codex: [
   {
    id: "concession-temo",
@@ -3954,7 +4305,7 @@ ICA.addUnit({
    q: "「どんなに[頼]{たの}んでも、父は[許]{ゆる}してくれませんでした。」 ([頼]{たの}む = ask, beg; [許]{ゆる}す = allow) What happened?",
    options: [
     {
-     t: "However much I begged, my father wouldn’t allow it.",
+     t: "My father said no, however much I begged.",
      ok: true,
      why: "どんなに～ても: the begging, however much, didn’t change the result."
     },
@@ -4329,7 +4680,7 @@ ICA.addUnit({
    q: "Mariya phones a friend, who answers: 「ごめん、今、[晩]{ばん}ごはんの[最中]{さいちゅう}なんだ。あとでかけ[直]{なお}すね。」 What is happening?",
    options: [
     {
-     t: "The friend is in the middle of dinner and will call back.",
+     t: "The friend is having dinner and will call back.",
      ok: true,
      why: "～の[最中]{さいちゅう}だ: right in the middle of an activity now; かけ[直]{なお}す = call back."
     },
@@ -4654,9 +5005,9 @@ ICA.addUnit({
    q: "「毎日料理するわけではありません。」 What does it mean?",
    options: [
     {
-     t: "I don’t cook every day (but I do sometimes).",
+     t: "I don’t cook every day.",
      ok: true,
-     why: "～わけではない denies only the “every day” part: partial negation."
+     why: "～わけではない denies only the “every day” part: partial negation. I do cook sometimes."
     },
     {
      t: "I never cook.",
@@ -4729,12 +5080,12 @@ ICA.addUnit({
    q: "Your friend offers to drive two hours to meet you at the airport. You say: 「わざわざ[迎]{むか}えに[来]{く}ることはないよ。」 What do you mean?",
    options: [
     {
-     t: "You don’t need to go to the trouble of coming to meet me.",
+     t: "There’s no need to come and meet me.",
      ok: true,
-     why: "Dictionary form + ことはない: there’s no need to."
+     why: "Dictionary form + ことはない: there’s no need to. わざわざ adds “go to the trouble of”."
     },
     {
-     t: "You have never come to meet me.",
+     t: "You have never come to meet me before.",
      why: "That would be [来]{き}たことはない, with the た-form."
     },
     {
@@ -4779,9 +5130,9 @@ ICA.addUnit({
    q: "Your manager asks if you can work on Saturday. You say: 「行けないことはないんですが…」 What are you telling her?",
    options: [
     {
-     t: "I could come if I had to, but I’d rather not.",
+     t: "I can come, but I’d rather not.",
      ok: true,
-     why: "～ないことはない is a double negative, a weak yes; the trailing が… shows reluctance."
+     why: "～ないことはない is a double negative, a weak yes (“I could if I had to”); the trailing が… shows reluctance."
     },
     {
      t: "I definitely can’t come.",
@@ -4829,9 +5180,9 @@ ICA.addUnit({
    q: "Looking at an old photo, a grandfather says: 「[若]{わか}い[頃]{ころ}は、よくこの山に[登]{のぼ}ったものだ。」 What does he mean?",
    options: [
     {
-     t: "When he was young, he often used to climb this mountain.",
+     t: "He often climbed this mountain when young.",
      ok: true,
-     why: "た-form + ものだ with よく: a fond memory of a past habit."
+     why: "た-form + ものだ with よく: a fond memory of a past habit, something he used to do."
     },
     {
      t: "Young people should climb this mountain.",

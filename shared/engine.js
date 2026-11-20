@@ -18,7 +18,12 @@ ICA.addUnit = function(u){
   if (u.codex) ICA.addCodex(u.codex, u.id);
   if (u.terms) ICA.addTerms(u.terms, u.id);
   if (u.bank) ICA.addBank(u.bank, u.id);
+  /* unit checkpoint questions that never appear in lessons or the Arcade (Nov 2026): looked up by id only */
+  (u.cpBank || []).forEach(function(q){ q.unit = u.id; q.cp = true; ICA.bankById[q.id] = q; });
 };
+/* the checkpoint's questions: the unit's own unseen set when it has one, else the older list of lesson-bank ids */
+ICA.checkpointQs = function(uid){ var u = ICA.unitById[uid]; if (!u) return []; return (u.cpBank && u.cpBank.length ? u.cpBank : (u.checkpoint || []).map(function(id){ return ICA.bankById[id]; })).filter(Boolean); };
+ICA.CP_PASS = 0.8;   /* the optional pass mark shown on the unit page */
 ICA.addCodex = function(list, unit){ list.forEach(function(e){ if(unit && !e.unit) e.unit = unit; ICA.codex[e.id] = e; }); };
 ICA.addTerms = function(list, unit){ list.forEach(function(t){ if(unit && !t.unit) t.unit = unit; ICA.terms[t.id] = t; }); };
 ICA.addBank = function(list, unit){ list.forEach(function(q){ if(unit && !q.unit) q.unit = unit; ICA.bank.push(q); ICA.bankById[q.id] = q; }); };
@@ -215,7 +220,7 @@ ICA.md = function(s){
   out = out.replace(/`([^`]+)`/g, function(m, c){ codes.push(c); return "\u0000"+(codes.length-1)+"\u0000"; });
   out = out.replace(/\[\[kbd:([^\]]+)\]\]/g, "<kbd>$1</kbd>");
   out = out.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
-  out = out.replace(/(^|[\s(\u201c"'\u2014\u2013\/-])\*([^*\s](?:[^*]*?[^*\s])?)\*(?=[\s.,;:!?)\u201d"'\u2019\u2014\u2013\/-]|$)/g, "$1<i>$2</i>");
+  out = out.replace(/(^|[\s(\u201c"'\u2014\u2013\/-])\*([^*\s](?:[^*]*?[^*\s])?)\*(?=[\s.,;:!?()\u201d"'\u2019\u2014\u2013\/-]|$)/g, "$1<i>$2</i>");   /* "(" too: APA "*Journal, 14*(2)" */
   out = out.replace(/\[([^\[\]<>]+)\]\{([^{}<>]+)\}/g, '<ruby lang="ja">$1<rt>$2</rt></ruby>');   // furigana: [漢字]{かんじ}
   out = out.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function(m, id, shown, at, all){
     var t = ICA.terms[id]; var label = shown || (t ? ICA.termInSentence(t.term, all.slice(0, at)) : id.replace(/-/g, " "));
@@ -453,7 +458,7 @@ ICA.settingsSheet = function(o){
     '<details'+(o.openRestore ? ' open' : '')+'><summary class="small"><b>Restore from a backup</b></summary><div class="stack" style="margin-top:8px"><label class="lb" for="restfile">Choose a backup file</label><input type="file" id="restfile" accept=".json,application/json"><label class="lb" for="resttext">…or paste backup text</label><textarea id="resttext" placeholder="{ &quot;v&quot;: 1, … }"></textarea><button class="btn small" id="restore">Restore</button><div id="restmsg"></div></div></details>'+
     '<h3>Start over</h3><p class="small muted">Erase everything on this device: lessons, quiz scores, flashcards, notes, every lab’s progress (including Kanji Lab reviews), tracks and settings. This can’t be undone, so download a backup first if you might want it back.</p><div class="row"><button class="btn small" id="erase">Erase all progress…</button></div><div id="eraseconfirm"></div>'+
     '<div class="row">'+(o.progress ? '<button class="btn small ghost" id="goprogress">See my progress</button>' : '')+(o.setup ? '<button class="btn small ghost" id="gosetup">Run setup again</button>' : '<a class="btn small ghost" href="'+ICA.base+'index.html#setup">Run setup again</a>')+'</div>'+
-    '<p class="small muted">Version: Pass 22 · four tracks, four electives, six labs · International Studies complete (22 units) · Japanese Foundations N5–N3 · Drive sync · Mugi · audio.</p>', function(sh){
+    '<p class="small muted">Version: Pass 24 · four tracks, four electives, six labs · 99 units · Japanese Foundations N5–N3 · Drive sync · Mugi · audio.</p>', function(sh){
     sh.setAttribute("aria-label", "Settings"); sh.id = "settingspanel";
     sh.addEventListener("input", function(e){
       var r = e.target.closest("[data-vol]"); if (!r) return; var k = r.getAttribute("data-vol"), v = +r.value;
@@ -958,6 +963,36 @@ function setVol(){
   } catch(e){}
 }
 ICA.setVolume = setVol;
+/* startup volume (intro and setup; owner asked 20 Nov 2026): one slider that sets voices, music and effects together.
+   Any of the three nobody has chosen yet starts at 50%. Settings → Sound still has the separate sliders. */
+ICA.startVolDefaults = function(){
+  var st = ICA.load(); st.settings = st.settings || {}; var v = st.settings.vol = st.settings.vol || {}, ch = false;
+  ["voice", "music", "fx"].forEach(function(k){ if (v[k] == null){ v[k] = 50; ch = true; } });
+  if (ch) ICA.save(true);
+};
+ICA.volControl = function(cls){
+  var cur = function(){ var n = parseFloat(((ICA.load().settings || {}).vol || {}).music); return isNaN(n) ? 100 : n; }, last = cur() || 50;
+  var w = document.createElement("div"); w.className = "volctl" + (cls ? " " + cls : "");
+  w.innerHTML = '<button type="button" class="vc-b"></button><input type="range" min="0" max="100" step="5" aria-label="Volume">';
+  var b = w.firstChild, r = w.lastChild;
+  function icon(v){
+    var waves = v ? '<path d="M15.5 9.2a4 4 0 0 1 0 5.6"/>' + (v > 40 ? '<path d="M18.4 6.4a8 8 0 0 1 0 11.2"/>' : '') : '<path d="M16 9.5l5 5M21 9.5l-5 5"/>';
+    return '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/>' + waves + '</svg>';
+  }
+  function show(v){ r.value = v; b.innerHTML = icon(v); b.setAttribute("aria-label", v ? "Mute" : "Sound on"); r.setAttribute("aria-valuetext", v ? v + "%" : "Off"); r.style.setProperty("--p", v + "%"); }
+  function set(v){
+    var s = ICA.load(); s.settings = s.settings || {}; s.settings.vol = s.settings.vol || {};
+    ["voice", "music", "fx"].forEach(function(k){ s.settings.vol[k] = v; });
+    ICA.save(true); setVol(); if (v) last = v; show(v);
+    try { document.dispatchEvent(new CustomEvent("ica:settings", {detail:{k:"vol", v:"music"}})); } catch(x){}
+  }
+  r.addEventListener("input", function(){ set(+r.value); });
+  r.addEventListener("change", function(){ ICA.save(); });
+  b.addEventListener("click", function(e){ e.stopPropagation(); set(+r.value ? 0 : (last || 50)); ICA.save(); });
+  w.addEventListener("click", function(e){ e.stopPropagation(); });
+  show(cur());
+  return w;
+};
 /* "Keep playing" in the story: when a line ends, the next line plays if it follows directly (it stops at narration, props, notes and breaks) */
 function storyNext(btn){
   if (!btn || !btn.isConnected || ((ICA.load().settings || {}).storyChain !== "on")) return false;

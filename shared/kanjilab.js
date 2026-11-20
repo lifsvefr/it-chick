@@ -7,7 +7,7 @@
 (function(root){
 "use strict";
 var KL = {};
-KL.BOX_DAYS = [0, 1, 3, 7, 14, 30];
+KL.BOX_DAYS = [0, 1, 3, 7, 14, 30, 60, 120];   /* 60 and 120 added Nov 2026: long-term review */
 KL.DAY = 86400000;
 KL.NEW_CHOICES = [5, 10, 20];
 
@@ -123,6 +123,9 @@ KL.init = function(data){
 KL.store = function(s){
   s.labs = s.labs || {}; var k = s.labs.kanji = s.labs.kanji || {};
   k.c = k.c || {}; k.nd = k.nd || {}; k.set = k.set || {}; if (KL.NEW_CHOICES.indexOf(k.set.nw) < 0) k.set.nw = 10;
+  /* cards renamed when a number word's main reading changed (20 Nov 2026): keep their progress */
+  [["v十四|じゅうし", "v十四|じゅうよん"], ["v七十|しちじゅう", "v七十|ななじゅう"], ["v四|し", "v四|よん"], ["v七|しち", "v七|なな"]].forEach(function(p){
+    if (k.c[p[0]] && !k.c[p[1]]){ k.c[p[1]] = k.c[p[0]]; delete k.c[p[0]]; } });
   return k;
 };
 KL.newToday = function(ks, deckId, today){ var x = ks.nd[deckId]; return x && x.d === today ? x.n : 0; };

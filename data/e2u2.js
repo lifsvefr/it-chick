@@ -96,7 +96,7 @@ ICA.addUnit({
       {t:"Researchers describe effects like this as support for a weak form of linguistic relativity.", flag:false, why:"Correct: this is how the finding is usually interpreted."}
     ], why:"The study supports the weak claim (language can nudge perception) and nothing stronger."},
     {id:"e2u2-l1-x5", type:"mcq", q:"Lucía says: “If we practise cultural relativism, we’re never allowed to criticise any custom.” What is the best response?", options:[
-      {t:"Cultural relativism is a method for understanding practices in context first; you can still evaluate them afterwards, for example against human rights standards.", ok:true, why:"Right. Relativism guards against snap ethnocentric judgements. It doesn’t forbid careful moral evaluation once you understand the practice."},
+      {t:"No: you understand a custom in context first, then evaluate it.", ok:true, why:"Right. Cultural relativism is a method for understanding practices in context first; you can still evaluate them afterwards, for example against human rights standards. It guards against snap ethnocentric judgements. It doesn’t forbid careful moral evaluation once you understand the practice."},
       {t:"She’s right: sociologists must treat every practice as equally good.", why:"That confuses a research method with a moral claim. Sociologists regularly study practices that cause harm and say so, based on evidence."},
       {t:"Cultural relativism only applies to foreign cultures, not to your own.", why:"Relativism applies to any culture, including subcultures within your own society. It is about understanding practices in their setting, wherever they are."},
       {t:"Cultural relativism means you should adopt other cultures’ customs yourself.", why:"Understanding a custom doesn’t mean adopting it. Believing other cultures’ ways are better is xenocentrism, a different idea."}
@@ -189,7 +189,7 @@ ICA.addUnit({
       {t:"Governments pass new rules, and new norms settle down.", why:"Finally nonmaterial culture catches up, closing the lag (until the next innovation)."}
     ]},
     {id:"e2u2-l2-x4", type:"mcq", q:"Kabuki began as popular entertainment in Edo-period Japan and is now treated as a classical art form. What does this best illustrate?", options:[
-      {t:"The line between high and popular culture is socially defined and shifts over time.", ok:true, why:"Right. The art form’s status changed because of how society came to regard it and who attended, not because the art itself became “better”."},
+      {t:"High and popular culture are social labels that shift.", ok:true, why:"Right. The line between high and popular culture is socially defined and shifts over time. The art form’s status changed because of how society came to regard it and who attended, not because the art itself became “better”."},
       {t:"Popular culture is always lower in quality than high culture.", why:"If quality decided the label, the same art couldn’t move from one category to the other. The shift shows the label is social."},
       {t:"Kabuki is a counterculture.", why:"A counterculture rejects major mainstream values. Kabuki is a theatre tradition, not a movement opposing society’s norms."},
       {t:"It is an example of cultural lag.", why:"Cultural lag is the gap between technological change and the norms that govern it. Nothing here involves technology outpacing rules."}
@@ -419,15 +419,15 @@ ICA.addUnit({
       {t:"Lucía, after a spinal injury, relearns how to travel, work and socialise using a wheelchair", b:1, why:"Adapting old routines and norms after a major change is resocialization."}
     ]},
     {id:"e2u2-l4-x6", type:"mcq", q:"Why can’t the case of “Genie”, found in 1970 after years of isolation, on its own prove how much language depends on early social interaction?", options:[
-      {t:"She also suffered abuse and malnutrition, and no one knows whether she had other conditions from birth, so isolation can’t be separated from other causes.", ok:true, why:"Right. With many possible causes and only one case, researchers can’t isolate the effect of missing early interaction. That’s why randomized studies such as the Bucharest project are stronger evidence."},
+      {t:"Abuse and malnutrition may also explain her difficulties.", ok:true, why:"Right. She also suffered abuse and malnutrition, and no one knows whether she had other conditions from birth, so isolation can’t be separated from other causes. With many possible causes and only one case, researchers can’t isolate the effect of missing early interaction. That’s why randomized studies such as the Bucharest project are stronger evidence."},
       {t:"Because language has nothing to do with social interaction.", why:"Language is learned through interaction. The issue is that one tragic case can’t separate that effect from abuse, malnutrition and other factors."},
       {t:"Because she eventually learned to speak perfectly, so isolation had no effect.", why:"She learned many words but never fully mastered grammar. The problem with the evidence is confounding, not a complete recovery."},
       {t:"Because case studies are never allowed in sociology.", why:"Case studies are a recognised method. They can suggest ideas but can’t, alone, establish general causes."}
     ]},
     {id:"e2u2-l4-x7", type:"mcq", q:"What was Carol Gilligan’s main criticism of Lawrence Kohlberg’s theory of moral development?", options:[
-      {t:"His research was based only on boys and men, and it treated a justice perspective as the highest form of morality while overlooking a care perspective.", ok:true, why:"That is Gilligan’s argument in *In a Different Voice* (1982). Later studies found only small average gender differences, but her critique changed how researchers think about moral reasoning."},
+      {t:"He studied only males and ranked justice above care.", ok:true, why:"His research was based only on boys and men, and it treated a justice perspective as the highest form of morality while overlooking a care perspective. That is Gilligan’s argument in *In a Different Voice* (1982). Later studies found only small average gender differences, but her critique changed how researchers think about moral reasoning."},
       {t:"He proved that girls are morally superior to boys.", why:"Kohlberg claimed nothing of the kind, and Gilligan argued for two different perspectives, not superiority."},
-      {t:"He ignored the role of the generalized other.", why:"The generalized other is Mead’s concept. Gilligan’s critique concerned gender bias in Kohlberg’s samples and his ranking of perspectives."},
+      {t:"He ignored the role of the generalized other in moral growth.", why:"The generalized other is Mead’s concept. Gilligan’s critique concerned gender bias in Kohlberg’s samples and his ranking of perspectives."},
       {t:"He studied monkeys rather than humans.", why:"That describes Harry Harlow’s research on rhesus monkeys, not Kohlberg’s interviews with boys and young men."}
     ]}
    ],
@@ -536,8 +536,8 @@ ICA.addUnit({
       {t:"No leader is needed in an emergency", why:"Emergencies are exactly when coordination matters most. Groups without leadership tend to stall or split."}
     ]},
     {id:"e2u2-l5-x8", type:"mcq", q:"Why are Milgram’s obedience studies a turning point in research ethics?", options:[
-      {t:"Participants were deceived and many suffered real distress, which fuelled debate that helped shape today’s rules on informed consent and ethics review.", ok:true, why:"Right. The studies remain famous both for their findings and for the ethical questions they raised, which is why later replications such as Burger’s added strict safeguards."},
-      {t:"The learners received real, dangerous electric shocks.", why:"No shocks were given. The learner was an actor. The ethical problem was deception and the stress on the real participants."},
+      {t:"Participants were deceived, and many suffered real distress.", ok:true, why:"Right. This fuelled debate that helped shape today’s rules on informed consent and ethics review. The studies remain famous both for their findings and for the ethical questions they raised, which is why later replications such as Burger’s added strict safeguards."},
+      {t:"The learners received real, dangerous electric shocks during the study.", why:"No shocks were given. The learner was an actor. The ethical problem was deception and the stress on the real participants."},
       {t:"Milgram published his results without analysing them.", why:"His results were analysed and published. The controversy concerned his treatment of participants, not missing analysis."},
       {t:"The studies showed that nobody obeys authority.", why:"The opposite: in his best-known version about two-thirds of participants obeyed to the end. And that finding isn’t the ethics issue."}
     ]}
@@ -553,6 +553,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e2u2-q02","e2u2-q06","e2u2-q09","e2u2-q12","e2u2-q16","e2u2-q20","e2u2-q23","e2u2-q27","e2u2-q31","e2u2-q35","e2u2-q39","e2u2-q43"],
+  cpBank:[
+   {id:"e2u2-cp01", lesson:"e2u2-l1", level:1, q:"In a city survey, most residents say recycling is “very important”. Yet most household rubbish in the city goes unsorted. Which idea describes this gap?", options:[
+     {t:"Cultural lag", why:"Cultural lag is the delay between new material culture (a new technology) and the norms that govern it. Here the gap is between stated values and actual behaviour."},
+     {t:"Xenocentrism", why:"Xenocentrism is the belief that another culture is better than your own. Nothing here compares cultures."},
+     {t:"Ideal culture versus real culture", ok:true, why:"Yes. Ideal culture is what a society says it values (recycling); real culture is what people actually do (not sorting rubbish)."},
+     {t:"A counterculture", why:"A counterculture rejects major values of the wider society. These residents claim to share the value; they just don’t act on it."}]},
+   {id:"e2u2-cp02", lesson:"e2u2-l3", level:1, q:"Families grow yams and taro in small garden plots cleared with hand tools. When the soil wears out, they clear a new plot nearby. In Lenski’s scheme, which type of society is this?", options:[
+     {t:"Agricultural", why:"Agricultural societies use ploughs and produce large surpluses that support cities and classes. Small hand-tool gardens are a different type."},
+     {t:"Horticultural", ok:true, why:"Right. Growing crops in garden plots with hand tools, without ploughs, defines a horticultural society."},
+     {t:"Pastoral", why:"Pastoral societies live mainly by herding animals. These families grow crops."},
+     {t:"Hunter-gatherer", why:"Hunter-gatherers rely on wild plants and animals. Planting and tending gardens is farming of a simple kind: horticulture."}]},
+   {id:"e2u2-cp03", lesson:"e2u2-l5", level:1, q:"Which term best describes “everyone in a country who was born on 29 February”?", options:[
+     {t:"An aggregate", why:"An aggregate is people in the same place at the same time who don’t interact, like a bus queue. These people are scattered across the country."},
+     {t:"A primary group", why:"A primary group is small, lasting and personal, like a family. These people don’t even know each other."},
+     {t:"A secondary group", why:"A secondary group still interacts regularly around a task, like a class. These people never meet as a group."},
+     {t:"A category", ok:true, why:"Correct. A category shares a trait (a birthday) but has no interaction or ties."}]},
+   {id:"e2u2-cp04", lesson:"e2u2-l1", level:2, q:"In a village, a man who refuses to attend his own father’s funeral is shunned by neighbours for months. No law requires anyone to attend. What kind of norm did he break?", options:[
+     {t:"A more", ok:true, why:"Yes. The strong moral outrage shows this norm carries moral weight, like respect for the dead. It is enforced informally, by shunning, not by the state."},
+     {t:"A folkway", why:"Breaking a folkway, like a greeting custom, is merely awkward. Months of shunning show this norm carries real moral weight."},
+     {t:"A law", why:"A law is a formal norm enforced by the state. The question says no law requires attending."},
+     {t:"A formal norm", why:"Formal norms are written down and officially enforced. This one is unwritten and enforced by neighbours."}]},
+   {id:"e2u2-cp05", lesson:"e2u2-l2", level:2, q:"When a phone payment app first launched, a few tech fans tried it. Years later most shops accepted it. Leon only started using it last month, after almost everyone around him had. In Rogers’s terms, Leon is…", options:[
+     {t:"an innovator", why:"Innovators are the first few to try something new. Leon was one of the very last."},
+     {t:"an early adopter", why:"Early adopters follow soon after the innovators, before the majority. Leon came after the majority."},
+     {t:"a laggard", ok:true, why:"Right. Rogers called the last people to take up an innovation, after the majority, the laggards."},
+     {t:"part of the majority", why:"The majority adopted the app years earlier, when most shops started to accept it. Leon came after them."}]},
+   {id:"e2u2-cp06", lesson:"e2u2-l3", level:2, q:"A false rumour says a small, successful bakery is about to close. Regular customers stop placing large orders for events, so its income falls, and within months it does close. Which idea fits best?", options:[
+     {t:"Role strain", why:"Role strain is tension within the demands of one status. This case is about a belief that changed many people’s actions."},
+     {t:"A self-fulfilling prophecy", ok:true, why:"Yes. A false belief (the bakery will close) led people to act in ways that made it come true. This is Merton’s self-fulfilling prophecy."},
+     {t:"Cultural lag", why:"Cultural lag is the delay between new technology and the norms that govern it. No new technology is involved here."},
+     {t:"Anomie", why:"Anomie is normlessness when shared rules weaken. The customers followed a rumour; the norms of buying and selling did not collapse."}]},
+   {id:"e2u2-cp07", lesson:"e2u2-l4", level:2, q:"In Oksana’s country, people may vote at 18, must stay in school until 16 and can drive at 17. Which agent of socialization sets these markers of growing up?", options:[
+     {t:"Peer groups", why:"Friends shape style, slang and attitudes, but they don’t set legal ages for rights and duties."},
+     {t:"Mass media", why:"Media spread images and ideas about growing up, but they don’t set legal ages."},
+     {t:"The hidden curriculum", why:"The hidden curriculum is what schools teach without saying so, like punctuality. Legal ages are written rules set by the state."},
+     {t:"Government", ok:true, why:"Correct. Government is an agent of socialization: it sets the ages at which people gain rights and duties, which mark stages of life."}]},
+   {id:"e2u2-cp08", lesson:"e2u2-l5", level:2, q:"A coffee chain installs machines that pour exactly measured milk and time each drink. Baristas no longer use their own judgement. Which McDonaldization principle is this, and which wider idea of Weber’s does it extend?", options:[
+     {t:"Predictability; organic solidarity", why:"Organic solidarity is Durkheim’s idea of interdependence, not Weber’s. And the key change here is machines replacing workers’ judgement."},
+     {t:"Control; rationalization", ok:true, why:"Right. Rules and machines replacing human judgement is Ritzer’s control. McDonaldization extends Weber’s rationalization: life organised by efficiency, rules and calculation."},
+     {t:"Calculability; anomie", why:"Calculability is quantity over quality, and anomie is Durkheim’s normlessness. Neither fits machines taking over decisions."},
+     {t:"Efficiency; mechanical solidarity", why:"Mechanical solidarity is Durkheim’s idea of unity through likeness. The point here is machines controlling the work."}]},
+   {id:"e2u2-cp09", lesson:"e2u2-l1", level:3, q:"A visitor in Mumbai says the local street food is “not real cooking” because it isn’t made the way it is at home. Nearby, a global burger chain sells a spiced paneer burger made for local tastes. Which pair of concepts fits?", options:[
+     {t:"Culture shock; homogenization", why:"Homogenization would mean the same menu everywhere. The chain adapted its menu, which is the opposite."},
+     {t:"Xenocentrism; diffusion", why:"Xenocentrism means thinking another culture is better than your own. The visitor thinks his own is better."},
+     {t:"Cultural relativism; cultural lag", why:"Cultural relativism means understanding a practice in its own setting. The visitor does the opposite, and no technology is outpacing norms here."},
+     {t:"Ethnocentrism; glocalization", ok:true, why:"Yes. Judging another culture’s food by your own standards is ethnocentrism. A global product adapted to local tastes is glocalization."}]},
+   {id:"e2u2-cp10", lesson:"e2u2-l4", level:3, q:"A teacher wrongly decides that Tariq is a weak student and gives him fewer chances to answer. Tariq imagines the teacher sees him as slow, starts to see himself that way, stops trying, and his grades fall. Which pair of concepts explains this best?", options:[
+     {t:"The looking-glass self and a self-fulfilling prophecy", ok:true, why:"Right. Tariq builds his self-image from the judgement he imagines (Cooley). And the teacher’s false belief brings about the very result it predicted (Merton)."},
+     {t:"The hidden curriculum and an ascribed status", why:"The hidden curriculum teaches norms like punctuality, and an ascribed status is unchosen, like age. Neither explains how Tariq’s self-image and grades changed."},
+     {t:"Mead’s play stage and role strain", why:"The play stage is a young child pretending to be one other person. Role strain is tension within one status. Neither fits."},
+     {t:"Resocialization and organic solidarity", why:"Resocialization replaces old norms, as in a total institution. Organic solidarity is about interdependence in modern society. Neither fits."}]},
+   {id:"e2u2-cp11", lesson:"e2u2-l5", level:3, q:"Matteo chooses to join a monastery. He gives up his possessions, wears the same robe as everyone else and follows a strict daily timetable. In Etzioni’s terms, what type of organization has he joined, and what process is he going through?", options:[
+     {t:"A coercive organization; resocialization", why:"Strict rules don’t make an organization coercive. Coercive means people are compelled to be there, as in a prison. Matteo chose to join."},
+     {t:"A normative organization; anticipatory socialization", why:"Anticipatory socialization prepares you for a role you don’t hold yet. Matteo is already living the new life and his old habits are being replaced."},
+     {t:"A normative organization; resocialization", ok:true, why:"Correct. He joined for shared values, with non-material rewards (normative). Giving up old ways for new norms in an all-encompassing setting is resocialization."},
+     {t:"A utilitarian organization; resocialization", why:"Utilitarian organizations are joined for material rewards, like wages. Matteo has given up his possessions."}]},
+   {id:"e2u2-cp12", lesson:"e2u2-l5", level:3, q:"On a five-person hiring panel, the chair always gives her opinion first, and the others nearly always agree. Which change would most likely reduce conformity, based on what the unit taught?", options:[
+     {t:"Add three more members so decisions have a stronger majority", why:"A larger majority doesn’t encourage independent views. Asch found conformity fell when people had an ally or answered privately."},
+     {t:"Have members write their scores privately before discussion, and the chair speak last", ok:true, why:"Yes. In Asch’s studies private written answers cut conformity sharply, and a leader giving her view last is a remedy for groupthink."},
+     {t:"Ask the chair to explain her opinion in more detail first", why:"This strengthens the authority’s influence. Groupthink remedies include leaders giving their view last, not first."},
+     {t:"Switch to an authoritarian leadership style to save time", why:"Authoritarian leaders give orders. That suits emergencies but would make members even less likely to speak up."}]}
+  ],
   codex:[
    {id:"culture", title:"Culture", aka:["material culture","nonmaterial culture","cultural universals"], tags:["sociology","culture"],
     summary:"The learned, shared way of life of a group: its objects, values, beliefs, norms, symbols and language.",
@@ -1404,13 +1466,13 @@ ICA.addUnit({
      {t:"A formal sanction", why:"A sanction is a reaction to behaviour, not a norm. And nothing official happened here."}
    ]},
    {id:"e2u2-q03", lesson:"e2u2-l1", level:1, q:"What is the difference between a value and a belief?", options:[
-     {t:"A value is what a culture considers good or important; a belief is what it holds to be true", ok:true, why:"Values answer “what matters?”; beliefs answer “how does the world work?”."},
+     {t:"A value is about what is good; a belief is about what is true", ok:true, why:"A value is what a culture considers good or important; a belief is what it holds to be true. Values answer “what matters?”; beliefs answer “how does the world work?”."},
      {t:"A value is written down; a belief is unwritten", why:"That describes formal versus informal norms, not values versus beliefs."},
      {t:"Values are religious; beliefs are scientific", why:"Both values and beliefs can be religious or secular. The difference is about goodness versus truth."},
      {t:"There is no difference; sociologists use them interchangeably", why:"Sociologists distinguish them, because they play different roles in supporting norms."}
    ]},
    {id:"e2u2-q04", lesson:"e2u2-l1", level:1, q:"Which statement about the Sapir–Whorf hypothesis best matches current evidence?", options:[
-     {t:"Language can influence some aspects of perception and memory, but it doesn’t determine what people are able to think.", ok:true, why:"This is the weak form (linguistic relativity), supported by studies such as the 2007 Russian blues experiment."},
+     {t:"Language has some effects on perception but doesn’t limit thought.", ok:true, why:"Language can influence some aspects of perception and memory, but it doesn’t determine what people are able to think. This is the weak form (linguistic relativity), supported by studies such as the 2007 Russian blues experiment."},
      {t:"People cannot think about anything their language has no word for.", why:"That is the strong (determinist) form, which most researchers reject: people learn new concepts and translate ideas all the time."},
      {t:"Language has no connection at all with thought.", why:"Too strong in the other direction. Experiments show some specific, modest effects."},
      {t:"Sapir and Whorf proved it together in a joint experiment.", why:"They never published a joint hypothesis or experiment; the label was applied to their ideas later."}
@@ -1434,20 +1496,20 @@ ICA.addUnit({
      {t:"Culture shock", why:"Culture shock is disorientation in an unfamiliar culture, not a preference for foreign institutions."}
    ]},
    {id:"e2u2-q08", lesson:"e2u2-l1", level:3, q:"A researcher studying a farming village asks why families there want many children, and finds that adult children are the main support for parents in old age. She later also reports that girls in the village leave school early, which limits their options. Is she contradicting cultural relativism?", options:[
-     {t:"No. Cultural relativism means understanding practices in context first; it doesn’t forbid evidence-based evaluation afterwards.", ok:true, why:"She explained the practice by its setting, then evaluated an outcome using evidence. That is good sociology, not a contradiction."},
+     {t:"No. Relativism asks for understanding first, not a ban on evaluation.", ok:true, why:"Cultural relativism means understanding practices in context first; it doesn’t forbid evidence-based evaluation afterwards. She explained the practice by its setting, then evaluated an outcome using evidence. That is good sociology, not a contradiction."},
      {t:"Yes. Relativism means she may only describe, never evaluate.", why:"That confuses methodological relativism with the claim that no practice can ever be judged. Sociologists routinely report harms."},
      {t:"Yes, because only people from the village may study it.", why:"Relativism is about how you interpret practices, not who is allowed to study them."},
      {t:"No, because she is being ethnocentric, which is required in research.", why:"Ethnocentrism is what relativism tries to avoid. It is never required."}
    ]},
    {id:"e2u2-q09", lesson:"e2u2-l1", level:2, q:"Driving on the left in Japan and on the right in Brazil are both enforced by law, yet neither choice is morally better. What does this show?", options:[
-     {t:"A norm can be a formal law while carrying little moral weight.", ok:true, why:"Formality (written and enforced) and moral weight are separate dimensions. Traffic-side rules are formal but morally neutral conventions."},
-     {t:"All laws are mores.", why:"Some laws express mores (against theft), but this example shows laws without moral content."},
+     {t:"A formal law can carry little moral weight.", ok:true, why:"Formality (written and enforced) and moral weight are separate dimensions. Traffic-side rules are formal but morally neutral conventions."},
+     {t:"All laws are mores, so they carry moral weight.", why:"Some laws express mores (against theft), but this example shows laws without moral content."},
      {t:"Laws are always folkways.", why:"Laws are formal norms; folkways are informal customs. They are different categories."},
      {t:"Norms are the same everywhere.", why:"The example shows the opposite: the same kind of rule differs between countries."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e2u2-q10", lesson:"e2u2-l2", level:1, q:"What distinguishes a counterculture from a subculture?", options:[
-     {t:"A counterculture rejects major values and norms of the wider culture; a subculture adds its own layer while still taking part in mainstream life.", ok:true, why:"That is the key difference: rejection versus participation with a distinctive identity."},
+     {t:"A counterculture rejects mainstream values; a subculture doesn’t.", ok:true, why:"A counterculture rejects major values and norms of the wider culture; a subculture adds its own layer while still taking part in mainstream life. The key difference is rejection versus participation with a distinctive identity."},
      {t:"A counterculture is always violent; a subculture is peaceful.", why:"Many countercultures are peaceful. The defining feature is rejecting mainstream values, not violence."},
      {t:"A subculture is larger than a counterculture.", why:"Size doesn’t define either. Both can be large or small."},
      {t:"A subculture is high culture; a counterculture is popular culture.", why:"High and popular culture are a separate distinction, about prestige and mainstream reach."}
@@ -1465,7 +1527,7 @@ ICA.addUnit({
      {t:"High culture", why:"High culture refers to elite cultural forms such as opera. It has nothing to do with this situation."}
    ]},
    {id:"e2u2-q13", lesson:"e2u2-l2", level:1, q:"Which is an example of **discovery** rather than invention?", options:[
-     {t:"Scientists find that a plant long used in folk remedies contains a compound that lowers fever", ok:true, why:"The compound already existed; revealing it is discovery."},
+     {t:"Scientists find a fever-lowering compound in a plant", ok:true, why:"The compound already existed in a plant long used in folk remedies; revealing it is discovery."},
      {t:"An engineer combines a bicycle and a battery to build an e-bike", why:"Combining existing things into something new is invention."},
      {t:"A designer creates a new app by combining maps and payments", why:"Combining existing tools into a new product is invention."},
      {t:"A recipe spreads from one country to another", why:"Spreading between cultures is diffusion, not discovery."}
@@ -1477,7 +1539,7 @@ ICA.addUnit({
      {t:"Xenocentrism", why:"Xenocentrism is believing another culture is superior. Adopting an ingredient doesn’t require that belief."}
    ]},
    {id:"e2u2-q15", lesson:"e2u2-l2", level:3, q:"A columnist writes: “K-pop proves globalization is making every culture American.” Which response is most sociologically accurate?", options:[
-     {t:"K-pop is better seen as hybridity: it blends Korean language and performance traditions with global styles, and it flows outward from Korea to the world.", ok:true, why:"K-pop is a standard example of hybridity and of non-Western culture reaching global audiences, which challenges simple homogenization claims."},
+     {t:"K-pop shows hybridity: Korean traditions blended with global styles.", ok:true, why:"It blends Korean language and performance traditions with global styles, and it flows outward from Korea to the world. K-pop is a standard example of hybridity and of non-Western culture reaching global audiences, which challenges simple homogenization claims."},
      {t:"The columnist is right: K-pop is identical to American pop music.", why:"K-pop draws on global pop, but it has distinctive Korean language, performance and industry features. Identical is an overstatement."},
      {t:"K-pop is a counterculture, so it has nothing to do with globalization.", why:"K-pop is mainstream popular culture, and it is very much a product of globalization."},
      {t:"Globalization only affects economies, not culture.", why:"Globalization clearly affects culture; the debate is about *how*, not whether."}
@@ -1489,15 +1551,15 @@ ICA.addUnit({
      {t:"Shakespeare is a counterculture.", why:"Counterculture means rejecting mainstream values. This is about prestige, not rejection."}
    ]},
    {id:"e2u2-q17", lesson:"e2u2-l2", level:1, q:"What does **glocalization** describe?", options:[
-     {t:"Global products and ideas being adapted to local cultures, and local cultures reaching global audiences", ok:true, why:"The term, popularized by Roland Robertson, stresses that global and local shape each other."},
-     {t:"The complete disappearance of local cultures", why:"That describes the strongest homogenization claim, which glocalization challenges."},
+     {t:"Global and local cultures adapting to and shaping each other", ok:true, why:"Global products and ideas are adapted to local cultures, and local cultures reach global audiences. The term, popularized by Roland Robertson, stresses that global and local shape each other."},
+     {t:"The complete disappearance of local cultures under global ones", why:"That describes the strongest homogenization claim, which glocalization challenges."},
      {t:"A country closing its borders to foreign products", why:"That is protectionism or isolation, not glocalization."},
      {t:"The spread of high culture to the elite", why:"Glocalization concerns global–local adaptation, not class-based culture."}
    ]},
    {id:"e2u2-q18", lesson:"e2u2-l2", level:3, q:"Fatima notices that a punk-style jacket that once signalled rebellion is now sold in a chain store at the shopping mall. Which idea best explains this?", options:[
-     {t:"The mainstream market has absorbed and commercialised a subcultural style, weakening its oppositional meaning.", ok:true, why:"Commodification of rebellious styles is a well-documented process in the study of subcultures."},
+     {t:"The mainstream market has absorbed a subcultural style.", ok:true, why:"Commercialising the style weakens its oppositional meaning. Commodification of rebellious styles is a well-documented process in the study of subcultures."},
      {t:"The chain store has become a counterculture.", why:"Selling a style doesn’t mean rejecting mainstream values; the store is part of the mainstream."},
-     {t:"Punk has become high culture.", why:"A mass-market store is popular culture, not elite high culture."},
+     {t:"Punk has become high culture, so elite stores now sell it.", why:"A mass-market store is popular culture, not elite high culture."},
      {t:"This is cultural lag.", why:"Cultural lag is norms trailing technology. This is about a style moving from subculture to mainstream market."}
    ]},
    /* ---- Lesson 3 ---- */
@@ -1526,7 +1588,7 @@ ICA.addUnit({
      {t:"Being a university graduate", why:"Earned through study: achieved."}
    ]},
    {id:"e2u2-q23", lesson:"e2u2-l3", level:3, q:"Lucía is a head teacher. She must support her staff’s wellbeing while also enforcing strict new performance targets on them. Separately, her mother is in hospital on the day of a school inspection. Which is which?", options:[
-     {t:"The staff dilemma is role strain; the hospital and inspection clash is role conflict.", ok:true, why:"Supporting and pressuring staff are both demands of one status (head teacher): role strain. Daughter and head teacher are two statuses with clashing demands: role conflict."},
+     {t:"The staff dilemma is role strain; the hospital clash is role conflict.", ok:true, why:"Supporting and pressuring staff are both demands of one status (head teacher): role strain. Daughter and head teacher are two statuses with clashing demands: role conflict."},
      {t:"Both are role conflict.", why:"Only the second involves two different statuses. The first is tension inside one status."},
      {t:"Both are role strain.", why:"The hospital clash involves two statuses (daughter and head teacher), which makes it role conflict."},
      {t:"The staff dilemma is role conflict; the hospital clash is role strain.", why:"This reverses them. Conflict is between statuses; strain is within one."}
@@ -1544,13 +1606,13 @@ ICA.addUnit({
      {t:"Ascribed status and folkways", why:"Neither explains the scripted, timed, controlled nature of the work."}
    ]},
    {id:"e2u2-q26", lesson:"e2u2-l3", level:1, q:"In Goffman’s dramaturgy, what is the **back stage**?", options:[
-     {t:"A place where people relax, prepare and drop the performance they give to audiences", ok:true, why:"Back stage is out of the audience’s sight, like a restaurant kitchen or a staff room."},
+     {t:"Where people relax and drop their performance for others", ok:true, why:"People relax, prepare and drop the performance they give to audiences. Back stage is out of the audience’s sight, like a restaurant kitchen or a staff room."},
      {t:"The place where the main performance for an audience happens", why:"That is the front stage."},
      {t:"A total institution such as a prison", why:"Total institutions are a different Goffman concept, from *Asylums* (1961)."},
      {t:"The audience watching a performance", why:"The audience watches the front stage. Back stage is where performers are away from the audience."}
    ]},
    {id:"e2u2-q27", lesson:"e2u2-l3", level:3, q:"Someone says: “Money is socially constructed, so it isn’t real.” What is the best reply?", options:[
-     {t:"Money exists because people collectively agree to treat it as valuable, and that agreement has very real consequences, so constructed does not mean unreal.", ok:true, why:"Berger and Luckmann’s point is that constructed institutions become objective realities that shape lives."},
+     {t:"Money rests on shared agreement, which has real effects.", ok:true, why:"People collectively agree to treat money as valuable, and that agreement has very real consequences, so constructed does not mean unreal. Berger and Luckmann’s point is that constructed institutions become objective realities that shape lives."},
      {t:"They’re right: anything socially constructed can be ignored.", why:"Try ignoring rent or prices. Constructed institutions constrain people as firmly as physical facts."},
      {t:"Money is not socially constructed; it is a natural object.", why:"Banknotes are paper and bank balances are data. Their value depends entirely on shared agreement."},
      {t:"Only physical objects can be real.", why:"Laws, languages and institutions are not physical objects but clearly have real effects."}
@@ -1563,10 +1625,10 @@ ICA.addUnit({
      {t:"Learning only in childhood", why:"Socialization continues throughout life, for example in new jobs or after migrating."}
    ]},
    {id:"e2u2-q29", lesson:"e2u2-l4", level:1, q:"In Mead’s theory, what is the **generalized other**?", options:[
-     {t:"The shared expectations of society as a whole, which a person learns to take into account", ok:true, why:"It is the final step in Mead’s account: seeing yourself from the viewpoint of the wider community."},
+     {t:"The shared expectations of society as a whole", ok:true, why:"A person learns to take these expectations into account. It is the final step in Mead’s account: seeing yourself from the viewpoint of the wider community."},
      {t:"A person’s closest family member", why:"Particular important people are significant others, not the generalized other."},
      {t:"The spontaneous, creative part of the self", why:"That is Mead’s “I”."},
-     {t:"A group you compare yourself with", why:"That is a reference group, a different concept."}
+     {t:"A group you compare yourself with to judge how you’re doing", why:"That is a reference group, a different concept."}
    ]},
    {id:"e2u2-q30", lesson:"e2u2-l4", level:2, q:"A four-year-old puts on a coat and announces, “I’m Mummy going to work,” copying her mother’s words and actions. Which of Mead’s stages is she in?", options:[
      {t:"The play stage", ok:true, why:"Taking the role of one particular other person in pretend play is Mead’s play stage."},
@@ -1575,14 +1637,14 @@ ICA.addUnit({
      {t:"The generalized other", why:"Taking the viewpoint of society as a whole comes later."}
    ]},
    {id:"e2u2-q31", lesson:"e2u2-l4", level:3, q:"A website says: “Twins separated at birth both became firefighters, which proves careers are genetic.” What is the main problem with this claim?", options:[
-     {t:"One coincidence in one pair can’t establish a general rule; you need large studies with comparison groups, and even those estimate contributions, not total causes.", ok:true, why:"Single cases are weak evidence, and twin studies describe variation in populations, not fixed destinies."},
-     {t:"Twins can never be studied scientifically.", why:"Twin studies are a legitimate method. The problem is drawing a sweeping conclusion from one case."},
+     {t:"One case can’t establish a general rule about careers.", ok:true, why:"You need large studies with comparison groups, and even those estimate contributions, not total causes. Single cases are weak evidence, and twin studies describe variation in populations, not fixed destinies."},
+     {t:"Twins can never be studied scientifically, so the story means nothing.", why:"Twin studies are a legitimate method. The problem is drawing a sweeping conclusion from one case."},
      {t:"Careers are entirely random.", why:"That is a different overclaim. Careers reflect many social and personal factors."},
      {t:"Firefighting is a folkway.", why:"Irrelevant: folkways are customs, and this question is about evidence."}
    ]},
    {id:"e2u2-q32", lesson:"e2u2-l4", level:2, q:"Why is the Bucharest Early Intervention Project stronger evidence about the effects of care than individual cases of isolated children?", options:[
-     {t:"Children were randomly assigned to foster care or institutional care, so differences can be attributed to the type of care.", ok:true, why:"Random assignment rules out many alternative explanations that single cases can’t."},
-     {t:"It studied only one child in great detail.", why:"It studied 136 children; studying one child would be a case study, which is weaker for causal claims."},
+     {t:"Children were randomly assigned to different types of care.", ok:true, why:"Children went either to foster care or institutional care, so differences can be attributed to the type of care. Random assignment rules out many alternative explanations that single cases can’t."},
+     {t:"It studied only one child, in great detail, over many years.", why:"It studied 136 children; studying one child would be a case study, which is weaker for causal claims."},
      {t:"It involved no children at all, only animals.", why:"It studied children in Romanian institutions. Harlow’s studies used monkeys."},
      {t:"It proved that genes don’t matter.", why:"It showed that care environments matter a lot; it didn’t claim genes are irrelevant."}
    ]},
@@ -1605,8 +1667,8 @@ ICA.addUnit({
      {t:"Role strain", why:"Role strain is tension within one status’s demands, not preparing for a role."}
    ]},
    {id:"e2u2-q36", lesson:"e2u2-l4", level:1, q:"What did Carol Gilligan argue in *In a Different Voice* (1982)?", options:[
-     {t:"Kohlberg’s theory, based on male subjects, overlooked a care perspective focused on relationships and responsibility.", ok:true, why:"Gilligan argued for a care perspective alongside justice, and criticised Kohlberg’s all-male samples."},
-     {t:"Moral reasoning is entirely genetic.", why:"Gilligan focused on socialization and perspectives, not genetics."},
+     {t:"Kohlberg’s male-based theory overlooked a care perspective.", ok:true, why:"Gilligan argued for a care perspective, focused on relationships and responsibility, alongside justice, and criticised Kohlberg’s all-male samples."},
+     {t:"Moral reasoning is entirely genetic and can’t be changed by upbringing.", why:"Gilligan focused on socialization and perspectives, not genetics."},
      {t:"Children develop through four cognitive stages.", why:"That is Piaget’s theory."},
      {t:"The self has an “I” and a “me”.", why:"That is Mead’s theory."}
    ]},
@@ -1624,19 +1686,19 @@ ICA.addUnit({
      {t:"Dyad", why:"A dyad is a two-person group."}
    ]},
    {id:"e2u2-q39", lesson:"e2u2-l5", level:2, q:"Two flatmates always disagree about cleaning. When a third person moves in, she starts settling their disputes. What did Simmel say about this kind of change?", options:[
-     {t:"A triad allows a third person to mediate, though it also makes two-against-one coalitions possible.", ok:true, why:"Simmel noted that adding a third member creates new roles such as mediator, and new risks such as coalitions."},
+     {t:"A third person can mediate, but coalitions also become possible.", ok:true, why:"A triad allows mediation, though it also makes two-against-one coalitions possible. Simmel noted that adding a third member creates new roles such as mediator, and new risks such as coalitions."},
      {t:"Adding a person makes the group a secondary group automatically.", why:"Primary or secondary depends on the type of bond, not on going from two to three people."},
      {t:"Triads are less stable than dyads.", why:"Simmel saw triads as more stable, since they survive one member withdrawing."},
      {t:"Group size has no effect on interaction.", why:"Simmel’s whole point was that size transforms interaction."}
    ]},
    {id:"e2u2-q40", lesson:"e2u2-l5", level:1, q:"In Asch’s conformity experiments, what most reduced conformity?", options:[
-     {t:"Having just one other person in the group disagree with the majority", ok:true, why:"A single ally sharply reduced conformity, as did writing answers privately."},
+     {t:"One other person disagreeing with the majority", ok:true, why:"A single ally sharply reduced conformity, as did writing answers privately."},
      {t:"Making the lines harder to compare", why:"Asch made the correct answer obvious on purpose; harder tasks tend to increase conformity."},
      {t:"Adding more people who gave the wrong answer", why:"A larger unanimous majority does not reduce conformity."},
      {t:"Telling participants the study was about learning", why:"That was Milgram’s cover story, in a different study."}
    ]},
    {id:"e2u2-q41", lesson:"e2u2-l5", level:3, q:"Why is Milgram’s obedience research still discussed in research-ethics training?", options:[
-     {t:"Participants were deceived and many experienced real distress, raising questions that helped shape informed consent and ethics review.", ok:true, why:"The studies are a landmark case for weighing knowledge gained against harm to participants."},
+     {t:"Participants were deceived, and many felt real distress.", ok:true, why:"These problems helped shape informed consent and ethics review. The studies are a landmark case for weighing knowledge gained against harm to participants."},
      {t:"Participants gave real electric shocks that injured learners.", why:"No shocks were delivered; the learner was an actor. The ethical issue was deception and participants’ distress."},
      {t:"Milgram used animals instead of humans.", why:"Milgram studied human participants. Harlow’s monkey studies are a different case."},
      {t:"The results were never published.", why:"They were widely published from 1963 onward."}
@@ -1660,10 +1722,10 @@ ICA.addUnit({
      {t:"A clear division of labour", why:"Specialised roles are a core feature."}
    ]},
    {id:"e2u2-q45", lesson:"e2u2-l5", level:3, q:"A university starts judging lecturers mainly by the number of papers they publish each year, rather than their quality. Which principle of McDonaldization is this, and what risk does Ritzer warn about?", options:[
-     {t:"Calculability; the irrationality of rationality, as counting replaces judgements of quality", ok:true, why:"Emphasising quantity over quality is calculability, and Ritzer warns such systems can produce irrational results, such as many weak papers."},
+     {t:"Calculability; the irrationality of rationality", ok:true, why:"Emphasising quantity over quality is calculability. As counting replaces judgements of quality, Ritzer warns such systems can produce irrational results, such as many weak papers."},
      {t:"Predictability; cultural lag", why:"Predictability means sameness everywhere, and cultural lag concerns technology outpacing norms. Neither fits counting papers."},
      {t:"Control; groupthink", why:"Control replaces human judgement with rules or machines; groupthink is a group decision problem. Counting outputs is calculability."},
-     {t:"Efficiency; the iron rule of oligarchy", why:"Efficiency is the fastest route to a result, and oligarchy concerns power concentration. The key feature here is quantity over quality."}
+     {t:"Efficiency; the iron rule of oligarchy in universities", why:"Efficiency is the fastest route to a result, and oligarchy concerns power concentration. The key feature here is quantity over quality."}
    ]}
   ]
 });

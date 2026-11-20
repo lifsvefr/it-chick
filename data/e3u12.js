@@ -519,7 +519,7 @@ ICA.addUnit({id:"e3u12",
      type:"mcq",
      q:"Transcript 2: 女の人はどうして[引]{ひ}っ[越]{こ}しますか。",
      options:[
-      {t:"Her company is moving, and the trip from her flat would take nearly two hours", ok:true, why:"Right. [実]{じつ}は introduces the real reason: the company moves to the next prefecture, and it would be nearly two hours each way."},
+      {t:"Her company is moving far away", ok:true, why:"Right. [実]{じつ}は introduces the real reason: the company moves to the next prefecture, and it would be nearly two hours each way."},
       {t:"The neighbours are noisy", why:"She mentions the noise, then says でも、それはがまんできた: she could put up with it."},
       {t:"Her flat is far from the station", why:"The man says it is close to the station and convenient. That is why he is surprised she is moving."},
       {t:"She wants a bigger flat", why:"Size is never mentioned. Answer only from what you hear."}
@@ -760,7 +760,7 @@ ICA.addUnit({id:"e3u12",
      type:"mcq",
      q:"Which statement about the research on shadowing is fair?",
      options:[
-      {t:"It seems to help listening and the rhythm and fluency of speech, but the evidence has limits, such as studies without a control group", ok:true, why:"Right. That matches the evidence: promising results, with limits. A 2024 review found the effect on individual sounds inconclusive, and the 2025 study had no control group."},
+      {t:"It seems to help, but the evidence has limits", ok:true, why:"Right. That matches the evidence: it seems to help listening and the rhythm and fluency of speech, with limits. A 2024 review found the effect on individual sounds inconclusive, and the 2025 study had no control group."},
       {t:"It has been proven to fix every part of pronunciation", why:"Too strong. The 2024 review called the effect on individual sounds inconclusive."},
       {t:"There is no research on shadowing at all", why:"There are many studies, including a 2024 systematic review of 44 of them."},
       {t:"It only works for professional interpreters", why:"It came into language teaching from interpreter training, and most studies are with ordinary language learners."}
@@ -903,7 +903,7 @@ ICA.addUnit({id:"e3u12",
      type:"mcq",
      q:"Rodrigo scores 30 in Language Knowledge, 33 in Reading and 32 in Listening. Does he pass the N3?",
      options:[
-      {t:"Yes: the total is exactly 95, and every section is at least 19", ok:true, why:"Right. 30 + 33 + 32 = 95, which reaches the pass mark, and all three sections are 19 or more."},
+      {t:"Yes: he reaches every pass mark", ok:true, why:"Right. 30 + 33 + 32 = 95, which reaches the pass mark, and all three sections are 19 or more."},
       {t:"No: the total must be more than 95", why:"The pass mark is 95: a total of 95 or more passes, if every section reaches 19."},
       {t:"No: each section needs at least 32", why:"The minimum for each section is 19, not 32."},
       {t:"It depends on the CEFR level", why:"The CEFR level is reference information on the report. Passing depends only on the total and the section minimums."}
@@ -934,7 +934,7 @@ ICA.addUnit({id:"e3u12",
      type:"mcq",
      q:"「[市]{し}によると、この電車は40年ぐらい町の中を走っていました。」 What does 〜によると show?",
      options:[
-      {t:"Where the information comes from: the city", ok:true, why:"Right. 〜によると means “according to”. News uses it to name the source."},
+      {t:"The source of the information", ok:true, why:"Right. 〜によると means “according to”. News uses it to name the source: here, the city."},
       {t:"That the city drove the train", why:"によると is about information, not who did something."},
       {t:"That the writer doubts the city", why:"It names a source neutrally. It doesn’t show doubt."},
       {t:"A reason, like 〜ため", why:"A reason would be 〜ため or 〜ので. 〜によると introduces a source."}
@@ -943,7 +943,7 @@ ICA.addUnit({id:"e3u12",
      type:"mcq",
      q:"Rodrigo reads a graded reader, but stops to look up every unknown word and manages two pages an hour. What would extensive-reading advice suggest?",
      options:[
-      {t:"Choose an easier book, and read on without stopping for every word", ok:true, why:"Right. Extensive reading means easy books, read quickly for meaning, guessing or skipping unknown words."},
+      {t:"Choose an easier book and read on", ok:true, why:"Right. Extensive reading means easy books, read quickly for meaning, guessing or skipping unknown words."},
       {t:"Keep going with the dictionary: slow reading is how you learn", why:"That is intensive reading, useful sometimes, but not the extensive-reading approach."},
       {t:"Move up to a harder book to learn more words", why:"Harder books would slow him down more. Extensive reading needs books where you know almost every word."},
       {t:"Stop reading and study word lists until books are easy", why:"Reading itself builds vocabulary and speed. The fix is an easier book, not stopping."}
@@ -989,6 +989,68 @@ ICA.addUnit({id:"e3u12",
    ]}
  ],
  checkpoint:["e3u12-q02","e3u12-q06","e3u12-q08","e3u12-q11","e3u12-q15","e3u12-q20","e3u12-q23","e3u12-q27","e3u12-q31","e3u12-q35","e3u12-q39","e3u12-q43"],
+  cpBank:[
+    {id:"e3u12-cp01", lesson:"e3u12-l1", level:1, q:"In an explanation, a new sentence starts with ただし. What does it usually bring?", options:[
+      {t:"The same idea again, in other words", why:"A restatement usually starts with つまり."},
+      {t:"An example of what was just said", why:"An example usually starts with たとえば."},
+      {t:"A condition or exception to what was said", ok:true, why:"ただし adds a condition or an exception: “however, only if…”. Notes and explanations put important limits here."},
+      {t:"The result of what was just said", why:"A result usually starts with そのため or だから."}]},
+    {id:"e3u12-cp02", lesson:"e3u12-l1", level:2, q:"「日曜日にトビーさんが[市民]{しみん}センターで開いた英語の会には、子どもからお年[寄]{よ}りまで、五十人ぐらいが来た。」 What is the main point of this sentence?", options:[
+      {t:"Toby held fifty English events at the centre", why:"五十人 counts people (人), not events. They are the ones who came (来た)."},
+      {t:"About fifty people came to Toby’s English event", ok:true, why:"Find the skeleton: the topic (英語の会には), the subject (五十人ぐらいが) and the main verb at the end (来た)."},
+      {t:"Fifty children held an English event for Toby", why:"Toby held the event (トビーさんが開いた). 子どもからお年[寄]{よ}りまで says who came: people of all ages."},
+      {t:"Toby came to the centre with about fifty people", why:"The main verb 来た belongs to 五十人ぐらいが. トビーさんが goes with 開いた, inside the description of the event."}]},
+    {id:"e3u12-cp03", lesson:"e3u12-l1", level:3, q:"「電車の中で本を読む人が[減]{へ}ったと言われている。たしかに、スマホを見ている人は多い。しかし、スマホで小[説]{せつ}を読んでいる人も少なくない。大切なのは、何で読むかではなく、読む時間があるかどうかではないだろうか。」 What does the writer most want to say?", options:[
+      {t:"Fewer people read books on trains than before", why:"〜と言われている reports what people say. The writer brings it up and then questions it."},
+      {t:"Many people on trains are looking at their phones", why:"This is the たしかに part: the writer accepts it and then turns with しかし."},
+      {t:"Reading on a phone is better than reading books", why:"The writer never compares which is better. The point is that the device doesn’t matter."},
+      {t:"What matters is time to read, not what you read on", ok:true, why:"The point comes at the end ([尾括型]{びかつがた}): 大切なのは… ではないだろうか is the writer’s own view."}]},
+    {id:"e3u12-cp04", lesson:"e3u12-l2", level:1, q:"An advert for a flat says 「ペット[不可]{ふか}」. What does it tell you?", options:[
+      {t:"Pets are welcome in the flat", why:"That would be ペット[可]{か}. 不 makes the opposite: [不可]{ふか} means “not allowed”."},
+      {t:"Pets need a booking first", why:"A booking would be [要予約]{ようよやく}. [不可]{ふか} says something is not allowed."},
+      {t:"Only people with pets may apply", why:"“Only” is 〜のみ, as in [会員]{かいいん}のみ. [不可]{ふか} means not allowed."},
+      {t:"Pets are not allowed", ok:true, why:"[可]{か} means allowed, and [不可]{ふか} means not allowed: no pets in this flat."}]},
+    {id:"e3u12-cp05", lesson:"e3u12-l2", level:2, q:"A ferry sign says 「[潮島]{しおじま}行き　[片道]{かたみち}800円　※[平日]{へいじつ}に[限]{かぎ}り、学生は[半額]{はんがく}」. Rodrigo, a student, goes on Saturday and comes back the same day. How much does he pay?", options:[
+      {t:"800円", why:"That is half price both ways, or the full fare one way. On a Saturday there is no discount, and he pays each way."},
+      {t:"1,600円", ok:true, why:"〜に[限]{かぎ}り limits the student price to weekdays ([平日]{へいじつ}). On a Saturday he pays the full 800 yen each way: 800 × 2."},
+      {t:"400円", why:"That is the half-price fare for one way. The discount is for weekdays only, and he also has to come back."},
+      {t:"1,200円", why:"That gives the discount on one of the two trips. On a Saturday neither trip is discounted: 800 × 2."}]},
+    {id:"e3u12-cp06", lesson:"e3u12-l2", level:2, q:"「イエンは、もう一度時計を見た。[約束]{やくそく}の時間から三十分たっていた。電話をかけたが、だれも出ない。テーブルの上のケーキの[箱]{はこ}を見て、イエンは小さくため[息]{いき}をついた。」 How does Yến most likely feel?", options:[
+      {t:"Disappointed and worried: her friend hasn’t come", ok:true, why:"The story doesn’t name the feeling. Her actions show it: she checks the time again, nobody answers, and she sighs."},
+      {t:"Pleased, because the cake looks so good", why:"The cake box is there, but the sigh (ため[息]{いき}) and the unanswered call don’t fit a happy moment."},
+      {t:"Angry with the shop because of the cake", why:"Nothing in the story is about the shop. The problem is the person who hasn’t come."},
+      {t:"Relieved, because her friend has just called", why:"She calls and nobody answers (だれも出ない). Nobody has called her."}]},
+    {id:"e3u12-cp07", lesson:"e3u12-l4", level:1, q:"At midnight, Kaito says 「もう[寝]{ね}なきゃ。」 What does he mean?", options:[
+      {t:"“I don’t want to go to bed yet.”", why:"なきゃ is not “don’t want”. It is the casual form of なければ (ならない): “must”."},
+      {t:"“I have to go to bed now.”", ok:true, why:"〜なきゃ is casual for 〜なければならない: [寝]{ね}なきゃ = [寝]{ね}なければならない, “I must go to bed”."},
+      {t:"“I can’t get to sleep.”", why:"“Can’t sleep” would be [眠]{ねむ}れない. [寝]{ね}なきゃ is about having to go to bed."},
+      {t:"“Let’s go to bed now.”", why:"“Let’s” is the volitional [寝]{ね}よう. なきゃ is about what you must do."}]},
+    {id:"e3u12-cp08", lesson:"e3u12-l3", level:2, q:"A friend arrives and says 「ごめん、[遅]{おく}れちゃった。電車が[遅]{おく}れて…って言いたいとこだけど、[実]{じつ}は[寝坊]{ねぼう}しちゃったんだ。」 Why is he late?", options:[
+      {t:"His train was late", why:"He only says he would like to say that (〜って言いたいとこだけど). [実]{じつ}は then gives the real reason."},
+      {t:"He overslept", ok:true, why:"[実]{じつ}は (actually) brings the real reason: [寝坊]{ねぼう}しちゃった, “I overslept”. ちゃった is casual for てしまった."},
+      {t:"He had to finish some work", why:"Work isn’t mentioned. Listen for what comes after [実]{じつ}は."},
+      {t:"He forgot what time they were meeting", why:"He never says he forgot the time. [寝坊]{ねぼう} means sleeping too long."}]},
+    {id:"e3u12-cp09", lesson:"e3u12-l3", level:3, q:"On the radio: 「子どものころは、料理が大きらいでした。母に手[伝]{つだ}いを[頼]{たの}まれても、いつも[逃]{に}げていました。でも、一人[暮]{ぐ}らしを始めて、毎日コンビニのお[弁当]{べんとう}を食べていたら、体の[調]{ちょう}子が悪くなったんです。それで、[簡単]{かんたん}なものから作るようにしました。今は、料理は自分を大切にすることだと思っています。」 この人が[一番]{いちばん}言いたいことは何ですか。", options:[
+      {t:"As a child, the speaker hated cooking", why:"This is the set-up, in the past. でも turns the story, and the speaker’s present view comes at the end."},
+      {t:"Cooking is a way of taking care of yourself", ok:true, why:"In a long talk the point usually comes at the end, as the present view: 今は… と思っています."},
+      {t:"Meals from convenience stores are bad for you", why:"This is the cause of the change in the story, not the idea the speaker wants to share."},
+      {t:"Beginners should start with simple dishes", why:"That is what the speaker did (〜ようにしました), a detail on the way to the point."}]},
+    {id:"e3u12-cp10", lesson:"e3u12-l4", level:3, q:"A client listens to Yến’s plan, saying 「ええ」「なるほど」 again and again. At the end she says 「なるほど。……ただ、[予算]{よさん}のほうが、ちょっと……。」 What is her answer so far?", options:[
+      {t:"Yes: she said なるほど, so she agrees with the plan", why:"Aizuchi such as ええ and なるほど mean “I’m following”, not “I agree”. Listen to what comes after them."},
+      {t:"Yes: ちょっと means she wants only a small change", why:"An unfinished ちょっと…… usually signals a problem or a soft no, not “a little”."},
+      {t:"Not yet: she followed it, but the budget worries her", ok:true, why:"She showed she was listening, then ただ and an unfinished ちょっと…… point to a problem with the budget."},
+      {t:"No answer: she wasn’t listening to Yến", why:"Her aizuchi show that she was following the plan closely."}]},
+    {id:"e3u12-cp11", lesson:"e3u12-l5", level:2, q:"Cheska’s friend will take the N3 in December. Her plan: a full practice test every day for six months, and nothing else. What is the best advice from this unit?", options:[
+      {t:"Learn the formats, then read real texts and keep speaking", ok:true, why:"Practise the formats once, then build the real skills, and keep speaking and writing alive, for example by shadowing."},
+      {t:"Good plan: more practice tests always mean a higher score", why:"Too many practice tests make you good at practice tests. Real reading and listening build the skills the test measures."},
+      {t:"Skip the listening practice, because the test is mainly reading", why:"Listening is one of the three scoring sections, and each needs at least 19."},
+      {t:"Stop all speaking practice until after the test", why:"The JLPT doesn’t test speaking, but the unit says to keep speaking and writing alive anyway."}]},
+    {id:"e3u12-cp12", lesson:"e3u12-l5", level:3, q:"On test day, Rodrigo has a fever and goes home before the Listening section. His other two sections went well. What happens?", options:[
+      {t:"He fails, but his report shows the two scores he got", why:"When you miss a section, the score report shows no scores at all, even for the sections you took."},
+      {t:"He passes if his two sections add up to 95 or more", why:"You need a total of 95 **and** at least 19 in every section, and missing one is a fail."},
+      {t:"He fails, and his score report shows no scores at all", ok:true, why:"Missing a section means a fail, and the report then shows no scores, even for the sections he took."},
+      {t:"He can take only the Listening section at the next test", why:"Nothing in the rules lets you take one section on its own. He would register for the whole test again."}]}
+  ],
  codex:[
   {id:"reading-strategies-japanese",
    title:"Reading strategies for Japanese (N3)",
@@ -1234,8 +1296,8 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"An essay says: 「たしかに、オンラインの[授業]{じゅぎょう}は[便利]{べんり}だ。しかし、友だちと話す時間が少なくなってしまう。」 What does the writer mainly want to stress?",
    options:[
-    {t:"That online classes reduce time to talk with friends", ok:true, why:"Right. たしかに concedes the convenience; after しかし comes what the writer wants to stress."},
-    {t:"That online classes are convenient", why:"That is the たしかに part: accepted, then put aside."},
+    {t:"That students talk less with friends", ok:true, why:"Right. たしかに concedes the convenience; after しかし comes what the writer wants to stress: online classes reduce time to talk with friends."},
+    {t:"That online classes are very convenient", why:"That is the たしかに part: accepted, then put aside."},
     {t:"That friends prefer online classes", why:"The text doesn’t say what friends prefer."},
     {t:"That classes should be shorter", why:"Length is never mentioned."}
    ]},
@@ -1274,7 +1336,7 @@ ICA.addUnit({id:"e3u12",
    level:3,
    q:"In the essay 「[一人]{ひとり}の時間」, Cheska chooses “Eating alone is better than eating with colleagues” as the writer’s point. What went wrong?",
    options:[
-    {t:"She stopped after paragraph 2; paragraph 3 says both have good points and you can choose", ok:true, why:"Right. The essay is [尾括型]{びかつがた}: もちろん concedes the good side of eating with colleagues, and 大切なのは… gives the real point."},
+    {t:"She stopped before the real point in paragraph 3", ok:true, why:"Right. Paragraph 3 says both have good points and you can choose. The essay is [尾括型]{びかつがた}: もちろん concedes the good side of eating with colleagues, and 大切なのは… gives the real point."},
     {t:"Nothing: paragraph 2 lists only good points of eating alone", why:"Paragraph 2 does, but the essay’s point comes at the end and includes both sides."},
     {t:"She misread 〜そうだ as the writer’s view", why:"〜そうだ is in the first sentence, about a trend. Her answer comes from paragraph 2."},
     {t:"She confused [一人]{ひとり} with [二人]{ふたり}", why:"Her answer is about eating alone, which the essay does discuss. The problem is the paragraph she relied on."}
@@ -1294,7 +1356,7 @@ ICA.addUnit({id:"e3u12",
    level:3,
    q:"A question asks for the writer’s point. One option copies a sentence from the text exactly, but it is the view the writer says they **used to** hold. Why is it wrong?",
    options:[
-    {t:"Same words, different meaning: it is a view the writer has given up", ok:true, why:"Right. Copied words can hide a changed time or person. The writer’s point is their view now."},
+    {t:"It is a view the writer has given up", ok:true, why:"Right. Same words, different meaning: copied words can hide a changed time or person. The writer’s point is their view now."},
     {t:"Options that copy the text are always wrong", why:"Not always: a correct option can repeat the text. Check whose view it is, and when."},
     {t:"It is too long", why:"Length doesn’t decide the answer; meaning does."},
     {t:"Old views are never mentioned in essays", why:"They often are, as the starting point the writer moves away from."}
@@ -1334,7 +1396,7 @@ ICA.addUnit({id:"e3u12",
    level:1,
    q:"In a work email, what does 「お[手数]{てすう}ですが」 usually signal?",
    options:[
-    {t:"A request is coming: “Sorry to trouble you, but…”", ok:true, why:"Right. お[手数]{てすう}ですが apologises for the trouble before asking for something."},
+    {t:"A request is coming", ok:true, why:"Right. お[手数]{てすう}ですが apologises for the trouble before asking for something: “Sorry to trouble you, but…”"},
     {t:"Thanks for something already done", why:"Thanks would be ありがとうございました or お世話になりました."},
     {t:"The end of the email", why:"The usual closing is よろしくお[願]{ねが}いいたします."},
     {t:"An apology for a mistake", why:"A mistake would be [申]{もう}し[訳]{わけ}ありません. お[手数]{てすう}ですが prepares a request."}
@@ -1364,7 +1426,7 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"In the story 「[傘]{かさ}」, why does the boy say 「走れば[大丈夫]{だいじょうぶ}です」?",
    options:[
-    {t:"His school is close, so he can run there without an umbrella", ok:true, why:"Right. ぼくの学校、すぐそこなので: his school is just there, so running is fine."},
+    {t:"His school is very close", ok:true, why:"Right. ぼくの学校、すぐそこなので: his school is just there, so he can run there without an umbrella."},
     {t:"He has another umbrella at school", why:"He doesn’t say so. The reason he gives is that the school is close."},
     {t:"The rain is about to stop", why:"It has rained since the morning, and nothing says it will stop."},
     {t:"He is late for a train", why:"He is going to school on foot, not catching a train."}
@@ -1384,9 +1446,9 @@ ICA.addUnit({id:"e3u12",
    level:3,
    q:"A notice says 「高い[薬]{くすり}がよく[効]{き}くとは[限]{かぎ}りません。」 Which reading is right?",
    options:[
-    {t:"Expensive medicine doesn’t necessarily work better", ok:true, why:"Right. 〜とは[限]{かぎ}らない is “not necessarily”. It limits the claim; it doesn’t reverse it."},
+    {t:"Expensive medicine doesn’t always work better", ok:true, why:"Right. 〜とは[限]{かぎ}らない is “not necessarily”. It limits the claim; it doesn’t reverse it."},
     {t:"Expensive medicine never works", why:"Too strong: 〜とは[限]{かぎ}らない means not always, not never."},
-    {t:"Expensive medicine always works better", why:"That is the idea the sentence denies."},
+    {t:"Expensive medicine always works better than cheap medicine", why:"That is the idea the sentence denies."},
     {t:"You must not buy expensive medicine", why:"No rule is given. The sentence is about whether price means quality."}
    ]},
   {id:"e3u12-q19",
@@ -1394,9 +1456,9 @@ ICA.addUnit({id:"e3u12",
    level:1,
    q:"What does listening for gist mean?",
    options:[
-    {t:"Listening for the big picture: who, about what, and what they think or decide", ok:true, why:"Right. Gist is the overall idea, not one detail."},
+    {t:"Listening for the big picture", ok:true, why:"Right. Gist is the overall idea (who, about what, and what they think or decide), not one detail."},
     {t:"Catching every word", why:"Nobody does that, even in their first language. Gist means the main idea."},
-    {t:"Listening only for numbers", why:"Numbers are details. Gist is the overall picture."},
+    {t:"Listening only for numbers and dates", why:"Numbers are details. Gist is the overall picture."},
     {t:"Repeating what you hear", why:"That is shadowing (Lesson 4)."}
    ]},
   {id:"e3u12-q20",
@@ -1434,7 +1496,7 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"Why do JLPT-style conversations often mention a plan that is later dropped?",
    options:[
-    {t:"Task-based items test whether you can catch what is needed and the next action, as in real planning", ok:true, why:"Right. The item type measures extracting the information needed for the next action, and real plans change."},
+    {t:"To test whether you catch the final plan", ok:true, why:"Right. Task-based items test whether you can catch what is needed and the next action, and real plans change."},
     {t:"To make the recordings longer", why:"The aim is to test understanding, not to fill time."},
     {t:"Because the speakers made mistakes", why:"The changes are part of the conversation, not errors."},
     {t:"So that the first option is always the answer", why:"The opposite: the first idea is often changed."}
@@ -1444,7 +1506,7 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"In Transcript 2, why is the man surprised that his friend is moving?",
    options:[
-    {t:"She had said her flat was close to the station and convenient", ok:true, why:"Right. 駅から近くて[便利]{べんり}だって言ってたのに: you said it was convenient, so why move?"},
+    {t:"She had said her flat was convenient", ok:true, why:"Right. 駅から近くて[便利]{べんり}だって言ってたのに: you said it was convenient, so why move?"},
     {t:"She had just bought her flat", why:"Buying is not mentioned."},
     {t:"She had said she would never leave the town", why:"She said nothing like that."},
     {t:"Her company had told her to stay", why:"The company is moving; it didn’t tell her to stay."}
@@ -1484,8 +1546,8 @@ ICA.addUnit({id:"e3u12",
    level:1,
    q:"What is a filler such as えーと or あのう?",
    options:[
-    {t:"A sound with no content that fills a pause while the speaker thinks or hesitates", ok:true, why:"Right. Fillers signal thinking or politeness; the content comes after them."},
-    {t:"A word that means “yes”", why:"That would be はい or ええ. えーと means nothing on its own."},
+    {t:"A sound that fills a pause", ok:true, why:"Right. A filler has no content: it fills a pause while the speaker thinks or hesitates, and signals thinking or politeness; the content comes after it."},
+    {t:"A polite word that means “yes”", why:"That would be はい or ええ. えーと means nothing on its own."},
     {t:"A casual contraction", why:"Contractions shorten real grammar, such as 〜ている → 〜てる. Fillers are pauses."},
     {t:"A rude word to avoid", why:"Fillers are normal in all kinds of speech, polite speech included."}
    ]},
@@ -1534,9 +1596,9 @@ ICA.addUnit({id:"e3u12",
    level:1,
    q:"What is shadowing?",
    options:[
-    {t:"Repeating a recording out loud almost at the same time, a little behind it", ok:true, why:"Right. You follow the voice like a shadow, copying its sounds and rhythm."},
+    {t:"Repeating a recording aloud, just behind it", ok:true, why:"Right. You follow the voice like a shadow, copying its sounds and rhythm."},
     {t:"Reading a text silently many times", why:"That is rereading. Shadowing is spoken, with audio."},
-    {t:"Writing down everything you hear", why:"That is dictation."},
+    {t:"Writing down everything you hear in a recording", why:"That is dictation."},
     {t:"Listening while asleep", why:"Shadowing needs active attention and speaking."}
    ]},
   {id:"e3u12-q34",
@@ -1544,7 +1606,7 @@ ICA.addUnit({id:"e3u12",
    level:3,
    q:"Rodrigo tries to shadow a fast news clip with no script and can’t keep up. What is the best advice?",
    options:[
-    {t:"Choose an easier recording with a script, and read along before shadowing", ok:true, why:"Right. Shadowing works best with material a little easy for you, after you understand it, and reading along first helps."},
+    {t:"Use an easier clip with a script", ok:true, why:"Right. Shadowing works best with material a little easy for you, after you understand it, and reading along first helps."},
     {t:"Keep trying the same clip for an hour", why:"Long sessions of mumbling don’t help. Make the task easier instead."},
     {t:"Give up: shadowing doesn’t work", why:"The method needs suitable material; the problem is the clip, not shadowing."},
     {t:"Shadow it at double speed", why:"Faster makes it harder. Slow it down or choose easier audio."}
@@ -1554,7 +1616,7 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"Which claim about the research on shadowing is fair?",
    options:[
-    {t:"Studies are promising for listening and fluency, but the evidence has limits and the effect on individual sounds is unclear", ok:true, why:"Right. That is how the 2024 review and the 2025 study describe it."},
+    {t:"It is promising, but the evidence has limits", ok:true, why:"Right. Studies are promising for listening and fluency, but the effect on individual sounds is unclear. That is how the 2024 review and the 2025 study describe it."},
     {t:"It is proven to give native-like pronunciation", why:"No study shows that. The evidence on individual sounds is inconclusive."},
     {t:"It works only for children", why:"Studies include adult learners, such as the university students in the 2025 study."},
     {t:"Research shows it harms listening", why:"The studies point to benefits for listening, with limits."}
@@ -1604,7 +1666,7 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"What does NHKやさしいことばニュース (NEWS WEB EASY) offer?",
    options:[
-    {t:"Free news in easy Japanese for foreign residents and children, with no login asked for", ok:true, why:"Right. Since NHK ONE began in 2025, the site also shows a confirmation screen."},
+    {t:"Free news in easy Japanese", ok:true, why:"Right. It is for foreign residents and children, with no login asked for. Since NHK ONE began in 2025, the site also shows a confirmation screen."},
     {t:"A paid course for the JLPT", why:"It is a free news site, not a test course."},
     {t:"Regular news with no furigana", why:"That would be regular news. The easy site rewrites news in easy Japanese."},
     {t:"Only video, with no text", why:"It is a text news site; reviews describe audio and furigana as well."}
@@ -1634,7 +1696,7 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"Which is true of the free graded readers from NPO多言語多読 (Tadoku)?",
    options:[
-    {t:"They can be read online or downloaded as PDFs, and some have audio", ok:true, why:"Right. Before you share or copy one, check the notice in that book."},
+    {t:"You can read them online or as PDFs", ok:true, why:"Right. They can be read online or downloaded, and some have audio. Before you share or copy one, check the notice in that book."},
     {t:"You must buy a membership to read them", why:"The free books are free to read; no purchase is needed."},
     {t:"They exist only at N1 level", why:"They start at the starter level, with many easy books."},
     {t:"They are only sold as printed books in shops", why:"The free books are on the website, to read online or download as PDFs."}
@@ -1644,7 +1706,7 @@ ICA.addUnit({id:"e3u12",
    level:3,
    q:"Dewi passed N3 and wants to study at a Japanese university and write reports there next year. What is a sensible next step?",
    options:[
-    {t:"Start Academic Japanese, Unit 5, while keeping daily review and reading", ok:true, why:"Right. The Academic Japanese units assume about N3–N2, and Unit 5 starts with the styles used in reports."},
+    {t:"Start Academic Japanese, Unit 5, and keep reviewing", ok:true, why:"Right. The Academic Japanese units assume about N3–N2, and Unit 5 starts with the styles used in reports. Daily review and reading keep what she has learned."},
     {t:"Wait until she passes N1 before any academic Japanese", why:"Not needed: the units assume roughly N3–N2, and academic Japanese is a register, not a JLPT level."},
     {t:"Stop reviewing kanji, since she passed N3", why:"Spaced review keeps what she has learned; stopping lets it fade."},
     {t:"Only take practice tests", why:"Practice tests show formats, but they don’t teach report writing."}

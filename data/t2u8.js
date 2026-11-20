@@ -116,7 +116,7 @@ ICA.addUnit({
    try:[
     {id:"t2u8-l1-x1", type:"sort", q:"Lucía is deciding whether Python fits each job. Sort them.", buckets:["A good job for Python","Not really Python’s job"], items:[
       {t:"Rename 300 photos so the date comes first", b:0, why:"Repetitive file chores are a classic first Python project (*Automate the Boring Stuff* has a whole chapter on it)."},
-      {t:"Total a column of fees in a spreadsheet file", b:0, why:"Python reads spreadsheet and CSV files and does the arithmetic; Unit 9 shows how."},
+      {t:"Total a column of fees in a spreadsheet file", b:0, why:"Python reads spreadsheet and CSV files and does the arithmetic; Unit 10 shows how."},
       {t:"Choose the colours and fonts of a web page", b:1, why:"That’s CSS’s job. Python can run a website’s server, but presentation in the browser is CSS."},
       {t:"Analyse survey answers and count the most common words", b:0, why:"Counting and analysing data is one of Python’s most common uses."},
       {t:"Show a menu when someone taps a button on a web page", b:1, why:"Behaviour inside the browser is JavaScript’s job. Python normally runs on a computer or server, not in the visitor’s browser."}
@@ -186,7 +186,7 @@ ICA.addUnit({
    learn:[
     {h:"Every value has a type", body:[
       {lead:"Everything a program works with is a value, and each value has a type that decides what you can do with it."},
-      "You can multiply two numbers, but what would it mean to multiply two names? So Python keeps track of what kind of thing each value is. The five types you’ll use first:",
+      "You can multiply two numbers, but what would it mean to multiply two names? So Python keeps track of what kind of thing each value is. (This builds on Digital Foundations Unit 12, which introduces {{data-types-basics|data types}} without any one language.) The five types you’ll use first:",
       {table:[
         ["Type","Examples","Used for"],
         ["`int` ([[integer]])","`42`, `0`, `-7`","Whole numbers: counts, ages, years"],
@@ -330,7 +330,7 @@ ICA.addUnit({
       {t:"2.5 3.5", why:"`round()` with one argument always rounds to a whole number."}
     ]},
     {id:"t2u8-l2-x6", type:"mcq", q:"Tomás’s program asks for two numbers with `input()` and prints `a + b`. He types 3 and 4 and gets `34`. What’s going on?", options:[
-      {t:"`input()` gave back two strings, and `+` joins strings; convert them with `int()` first", ok:true, why:"Right. `input()` always returns text. `\"3\" + \"4\"` is `\"34\"`. `int(a) + int(b)` gives 7."},
+      {t:"`input()` gave back strings, and `+` joins strings", ok:true, why:"Right. Convert them with `int()` first. `input()` always returns text. `\"3\" + \"4\"` is `\"34\"`. `int(a) + int(b)` gives 7."},
       {t:"`+` is the wrong operator; addition in Python is `add()`", why:"`+` does add numbers. The problem is that these aren’t numbers yet."},
       {t:"He needs `float()` instead of `int()`", why:"He hasn’t converted at all yet. Either `int()` or `float()` would fix it; `int()` suits whole numbers."},
       {t:"Python can’t add numbers that someone typed", why:"It can, once they’re converted from text to numbers."}
@@ -509,7 +509,7 @@ ICA.addUnit({
    read:[
      {book:"atbs", where:"Chapter 2, “if-else and Flow Control” (Boolean values, comparison and Boolean operators, blocks of code, `if`, `else` and `elif`)"},
      {book:"atbs", where:"Chapter 8, “Strings and Text Editing”: “Working with Strings” (indexes, slices, `in`) and “Useful String Methods”"},
-     {book:"thinkpy", where:"Chapter 5, “Conditionals and Recursion” (the conditional parts; recursion can wait) and Chapter 8, “Strings and Regular Expressions” (the first sections, before regular expressions)"}
+     {book:"thinkpy", where:"Chapter 5, “Conditionals and Recursion” (the conditional parts; recursion is covered in Unit 9) and Chapter 8, “Strings and Regular Expressions” (the first sections, before regular expressions)"}
    ]
   },
   /* ===================== LESSON 4 ===================== */
@@ -547,6 +547,7 @@ ICA.addUnit({
         "`prices.sort()` sorts the list **in place** and gives back `None`. So `prices = prices.sort()` throws your list away and leaves `prices` as `None`.",
         "Add `reverse=True` to either for largest first: `sorted(prices, reverse=True)`."
       ]},
+      "Unit 9 shows how sorting actually works step by step, and how a [[alg-key-function|key function]] lets you sort by whatever you choose ({{sorting-algorithms}}).",
       "`in` works on lists too: `\"tea\" in basket` is True if any item equals \"tea\".",
       {lab:"pl-list", t:"Practise: total and average a list of numbers"}
     ]},
@@ -601,7 +602,7 @@ ICA.addUnit({
       {code:['prices = {"eggs": 2.5, "rice": 1.8,','          "tea": 3.0, "milk": 1.2}','basket = ["eggs", "tea", "milk",','          "eggs", "jam"]','total = 0','for item in basket:','    if item in prices:','        total += prices[item]','    else:','        print(f"No price for {item}")','print(f"Total: {total:.2f}")'].join("\n"), lang:"py", label:"grocery.py", pylab:"pl-dict", cap:"Output: `No price for jam`, then `Total: 9.20` (2.5 + 3.0 + 1.2 + 2.5). The `if item in prices` check prevents a KeyError."},
       "And a word counter, a classic first data-analysis job. It starts with an empty dictionary and adds 1 to a word’s count each time it appears:",
       {code:['text = "the cat and the hat and the bat"','counts = {}','for word in text.split():','    if word in counts:','        counts[word] += 1','    else:','        counts[word] = 1','print(counts)'].join("\n"), lang:"py", label:"wordcount.py", pylab:"pl-dict", cap:"Output: `{'the': 3, 'cat': 1, 'and': 2, 'hat': 1, 'bat': 1}`"},
-      "Try it on a real paragraph: add `.lower()` before `.split()` so “The” and “the” count together. (Punctuation would still stick to words; Unit 9 deals with messier text.)",
+      "Try it on a real paragraph: add `.lower()` before `.split()` so “The” and “the” count together. (Punctuation would still stick to words; Unit 10 deals with messier text.)",
       {lab:"pl-dict", t:"Practise: count words with a dictionary"}
     ]},
     {h:"Common misconceptions", body:[
@@ -649,9 +650,9 @@ ICA.addUnit({
       {t:"`print(phone[0])`", b:1, why:"Dictionaries aren’t looked up by position. 0 isn’t a key, so this is a KeyError."}
     ]},
     {id:"t2u8-l4-x6", type:"mcq", q:"Hana’s program freezes:\n\n`count = 0`\n`while count < 5:`\n`    print(count)`\n\nWhat’s wrong?", options:[
-      {t:"Nothing changes `count`, so `count < 5` stays True forever; add `count += 1` inside the loop", ok:true, why:"Right. This is an infinite loop: it prints 0 forever. Stop it with Ctrl+C, then add the line that moves `count` towards 5."},
+      {t:"Nothing inside the loop changes `count`", ok:true, why:"Right. `count < 5` stays True forever: this is an infinite loop that prints 0 forever. Stop it with Ctrl+C, then add `count += 1` inside the loop to move `count` towards 5."},
       {t:"`while` should be `for`", why:"A `for` loop would work too (`for count in range(5):`), but the `while` is fine once something updates `count`."},
-      {t:"`print()` can’t be used inside loops", why:"It can; the loop simply never ends."},
+      {t:"`print()` can’t be used inside a `while` loop", why:"It can; the loop simply never ends."},
       {t:"The condition should be `count > 5`", why:"That would be False straight away, so the loop wouldn’t run at all."}
     ]},
     {id:"t2u8-l4-x7", type:"number", q:"How many rounds does this loop run?\n\n`n = 1`\n`while n < 50:`\n`    n = n * 3`", answer:4, tol:0, unit:"rounds", why:"n goes 1 → 3 → 9 → 27 → 81. After the fourth round n is 81, which isn’t under 50, so the loop stops: **4** rounds.", wrongs:[
@@ -758,17 +759,18 @@ ICA.addUnit({
       {lab:"pl-fix-type", t:"Practise: fix the TypeErrors in a program that mixes text and numbers"},
       "When a ValueError is something you **expect**, such as a person typing words where you asked for a number, you can catch it with `try` and `except` instead of letting the program stop:",
       {code:['try:','    guests = int(input("Guests? "))','    print(f"Chairs: {guests + 1}")','except ValueError:','    print("Please type a number.")'].join("\n"), lang:"py", label:"Catching a ValueError", cap:"Type `12` and it prints `Chairs: 13`. Type `twelve` and it prints the friendly message instead of a traceback."},
-      "Use `except` only for errors you understand and can handle well. Hiding every error makes bugs much harder to find; Unit 9 goes further with debugging.",
+      "Use `except` only for errors you understand and can handle well. Hiding every error makes bugs much harder to find; Unit 10 goes further with debugging.",
       {key:"Calm routine: read the last line, find your line just above it, look at that line and the one before, fix the first error first, and run again."}
     ]},
     {h:"import: borrowing from the standard library", body:[
       "Python comes with a large **[[standard-library|standard library]]**: hundreds of ready-made **[[py-module|modules]]**, each a collection of tools for one area. This is why Python is described as having “batteries included”. To use a module, **`import`** it at the top of your file, then use its tools with a dot:",
       {code:['import math','','print(math.sqrt(81))','print(math.pi)','print(math.ceil(4.1), math.floor(4.9))'].join("\n"), lang:"py", label:"math", cap:"Output: `9.0`, `3.141592653589793`, `5 4`. `ceil` rounds up and `floor` rounds down, always."},
       {code:['import random','','print(random.randint(1, 6))','print(random.choice(["tea", "juice"]))'].join("\n"), lang:"py", label:"random", cap:"A dice roll from 1 to 6 (both ends included, unlike `range()`) and a random drink: different each run."},
+      "Unit 9 uses `random` to run simulations: rolling the dice thousands of times to estimate a chance ({{simulation-random}}).",
       {code:['from datetime import date','','today = date.today()','exam = date(2027, 6, 14)','print(today)','print((exam - today).days, "days left")'].join("\n"), lang:"py", label:"datetime", cap:"Prints today’s date as year-month-day (such as `2026-11-06`) and the number of days until 14 June 2027. The result depends on the day you run it."},
       "`from datetime import date` brings in just the `date` tool, so you write `date.today()` instead of `datetime.date.today()`. Both styles are common.",
       {warn:"Don’t name your own file after a module you import, such as `random.py` or `datetime.py`. Python may import **your** file instead of the real module, giving baffling errors like `module 'random' has no attribute 'randint'`. Recent versions add a hint to rename your file."},
-      "Beyond the standard library are hundreds of thousands of extra packages that others have published, installed with a tool called pip. Unit 10 covers them, including how to check a package is real before installing it."
+      "Beyond the standard library are hundreds of thousands of extra packages that others have published, installed with a tool called pip. Unit 11 covers them, including how to check a package is real before installing it."
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -821,7 +823,7 @@ ICA.addUnit({
     ]},
     {id:"t2u8-l5-x7", type:"mcq", q:"Sione’s program has `import random` and then `random.randint(1, 6)`, but it fails with `module 'random' has no attribute 'randint'`. His file is called `random.py`. What’s going on?", options:[
       {t:"Python imported his own `random.py` instead of the real module; renaming his file fixes it", ok:true, why:"Right. Python looks in the script’s own folder first, so a file called `random.py` there hides the standard one. Rename it (for example `dice.py`)."},
-      {t:"`randint` was removed from Python", why:"It’s still there. The error comes from importing the wrong file."},
+      {t:"`randint` was removed from recent versions of Python", why:"It’s still there. The error comes from importing the wrong file."},
       {t:"He needs `from random import *`", why:"Any form of import would find his own file first. The fix is the file name."},
       {t:"`randint` only works with `range()`", why:"`randint` takes two numbers and needs no `range()`."}
     ]}
@@ -839,6 +841,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u8-q02","t2u8-q06","t2u8-q11","t2u8-q14","t2u8-q17","t2u8-q21","t2u8-q25","t2u8-q29","t2u8-q32","t2u8-q37","t2u8-q40","t2u8-q44"],
+  cpBank:[
+    {id:"t2u8-cp01", lesson:"t2u8-l1", level:1, q:"Ama is at the `>>>` prompt of the Python REPL and has finished experimenting. What should she type to leave it?", options:[{t:"`print(\"bye\")`", why:"That just prints a word. The REPL keeps running and shows `>>>` again."}, {t:"`exit()`", ok:true, why:"`exit()` leaves the REPL and takes her back to the terminal’s normal prompt."}, {t:"`python3`", why:"That’s the terminal command that starts Python. Inside the REPL it isn’t Python code."}, {t:"`# exit`", why:"A line starting with `#` is a comment, so Python ignores it."}]},
+    {id:"t2u8-cp02", lesson:"t2u8-l1", level:2, q:"Someone Bilal doesn’t know shares `speedup.py` in a group chat, saying it makes laptops faster. What’s the sensible choice?", options:[{t:"Don’t run it until he has read and understood it", ok:true, why:"A script can do anything Bilal can do on his computer, including deleting files. Run only code you trust and understand."}, {t:"Run it in the REPL, where code can’t change files", why:"Python code can change files wherever it runs. The REPL is no safety net."}, {t:"Run it, because Python is designed to be safe", why:"Python is designed to be readable, not harmless. A script runs with all of his permissions."}, {t:"Rename it to `.txt` first, then run it", why:"A new name doesn’t change what the code does. Reading it first is what protects him."}]},
+    {id:"t2u8-cp03", lesson:"t2u8-l2", level:2, q:"What does `print(10 - 2 ** 3)` show?", options:[{t:"`512`", why:"That works left to right, as `(10 - 2) ** 3`. But `**` comes before `-`."}, {t:"`4`", why:"That reads `**` as multiplication. `2 ** 3` means 2 × 2 × 2, which is 8."}, {t:"`2.0`", why:"Only `/` turns the answer into a float. Every number here is whole, so the result is an int."}, {t:"`2`", ok:true, why:"`**` is worked out first: `2 ** 3` is 8, and 10 - 8 is 2."}]},
+    {id:"t2u8-cp04", lesson:"t2u8-l2", level:3, q:"Leila’s program does `price = float(input(\"Price? \"))`. She types `2,5`, with a comma, the way prices are written in her country. What happens?", options:[{t:"`price` becomes 2.5", why:"Python always uses a dot for decimals. The comma makes the text unreadable as a number."}, {t:"`price` becomes 25, ignoring the comma", why:"Python doesn’t quietly drop the comma. It refuses the whole text."}, {t:"It stops with a ValueError", ok:true, why:"`float()` only understands a dot as the decimal point. Text it can’t read as a number gives `ValueError: could not convert string to float: '2,5'`."}, {t:"It stops with a TypeError", why:"A TypeError means the wrong type, such as text plus a number. Here a string is fine, but its value can’t be converted: a ValueError."}]},
+    {id:"t2u8-cp05", lesson:"t2u8-l4", level:1, q:"`menu = [\"green tea\", \"cake\"]`. What does `\"tea\" in menu` give?", options:[{t:"`True`", why:"That’s how `in` works on a string, where any piece of the text counts. On a list, it compares whole items."}, {t:"`False`", ok:true, why:"With a list, `in` checks whether any item **equals** `\"tea\"`. `\"green tea\"` contains it, but isn’t equal to it."}, {t:"`0`", why:"`in` answers yes or no, with `True` or `False`. It doesn’t give a position."}, {t:"An error, because `in` only works with strings", why:"`in` works on lists too: it’s True if any item equals the value."}]},
+    {id:"t2u8-cp06", lesson:"t2u8-l3", level:3, q:"`order = \"tea, cake\"`. What does `order.split(\",\")` give?", options:[{t:"`['tea', ' cake']`", ok:true, why:"`split(\",\")` cuts at each comma and keeps everything else, including the space before “cake”. `.strip()` on each piece would remove it."}, {t:"`['tea', 'cake']`", why:"`split(\",\")` cuts only at commas. The space after the comma stays at the start of the second piece."}, {t:"`['tea,', 'cake']`", why:"That’s what `split()` with no argument gives, cutting at spaces. With `\",\"`, the text is cut at the comma, and the comma is removed."}, {t:"`'tea cake'`", why:"`split()` gives back a list of pieces, not one string."}]},
+    {id:"t2u8-cp07", lesson:"t2u8-l3", level:3, q:"A quiz has `answer = input(\"7 + 3 = \")` and then `if answer == 10:`. Ken types `10`. Why is he told he’s wrong?", options:[{t:"`==` should be `=` in an `if`", why:"`=` assigns a value, so `if answer = 10:` is a syntax error. `==` is right; the types are different."}, {t:"Python turns his answer into 10.0 first", why:"Nothing is converted. `input()` returns text, which doesn’t equal the number 10."}, {t:"The `if` line needs a space before its colon to work", why:"No space is needed before the colon. The comparison itself gives `False`."}, {t:"`input()` gives the string `\"10\"`, not the number 10", ok:true, why:"`\"10\" == 10` is `False`, because a string never equals a number. Convert with `int(answer)`, or compare with `\"10\"`."}]},
+    {id:"t2u8-cp08", lesson:"t2u8-l4", level:2, q:"What does `print(list(range(10, 0, -3)))` show?", options:[{t:"`[10, 7, 4, 1, -2]`", why:"`range` stops before it reaches the stop value, so it never goes past 0."}, {t:"`[10, 7, 4]`", why:"1 is still above the stop value, 0, so it’s included."}, {t:"`[10, 7, 4, 1]`", ok:true, why:"Start at 10 and go down by 3 while the numbers stay above 0. The stop value, 0, is never included."}, {t:"`[]`", why:"A negative step counts down, so going from 10 towards 0 works."}]},
+    {id:"t2u8-cp09", lesson:"t2u8-l4", level:2, q:"What does this print?\n\n`count = 0`\n`for ch in \"banana\":`\n`    if ch in \"aeiou\":`\n`        count += 1`\n`print(count)`", options:[{t:"`6`", why:"That counts every letter. The `if` lets only vowels add to `count`."}, {t:"`3`", ok:true, why:"The loop visits each letter in turn. Only the three a’s are in `\"aeiou\"`, so `count` goes up three times."}, {t:"`1`", why:"The loop runs once for each letter, and `count` goes up every time the `if` is true, not once per different vowel."}, {t:"`0`", why:"`in` checks whether each single letter appears in `\"aeiou\"`, and the a’s do."}]},
+    {id:"t2u8-cp10", lesson:"t2u8-l5", level:3, q:"`def first_long(words):`\n`    for w in words:`\n`        if len(w) > 4:`\n`            return w`\n\nWhat does `print(first_long([\"tea\", \"jam\", \"fig\"]))` show?", options:[{t:"`None`", ok:true, why:"No word is longer than 4 letters, so the loop ends without reaching `return`. A function that finishes without returning gives back `None`."}, {t:"`fig`", why:"`return w` runs only for a word longer than 4 letters, and none of these is."}, {t:"Nothing at all", why:"`print` always shows something. The function gives back `None`, so `None` is printed."}, {t:"An error, because the function returned nothing", why:"That’s allowed. Without a `return`, a function gives back `None`."}]},
+    {id:"t2u8-cp11", lesson:"t2u8-l5", level:2, q:"`def box_volume(w, h, d):` returns `w * h * d`. What happens when the program calls `box_volume(2, 3)`?", options:[{t:"It returns 6, using 1 for the missing `d`", why:"Python never guesses a value. Only a default such as `d=1` would fill the gap."}, {t:"It returns `None`, because `d` is missing", why:"The function body never runs: Python stops at the call with a TypeError."}, {t:"A NameError, because `d` is not defined", why:"Python reports the missing argument at the call, as a TypeError, before the body runs."}, {t:"A TypeError about the missing argument", ok:true, why:"All three parameters are required, because none has a default. Python stops with `TypeError: box_volume() missing 1 required positional argument: 'd'`."}]},
+    {id:"t2u8-cp12", lesson:"t2u8-l2", level:1, q:"Lin’s script starts with `DISCOUNT = 0.1`, written in capitals. What does that tell people reading the code?", options:[{t:"Python will refuse any change to it", why:"The capitals are a message to people reading the code, not a rule that Python checks."}, {t:"It’s a special kind of number", why:"`0.1` is an ordinary float. The capitals only say how readers should treat the name."}, {t:"Treat it as a fixed setting; don’t change it", ok:true, why:"All capitals, like `TAX_RATE = 0.2`, is the usual way to say “this is a fixed setting”."}, {t:"It’s a mistake, because every name must be lowercase", why:"Lowercase snake_case is for ordinary variables. All capitals is the usual style for fixed settings."}]}
+  ],
   codex:[
    {id:"running-python", title:"Running Python: installing, the REPL and scripts", aka:["python3","py launcher","Python install manager","REPL","IDLE","Thonny","script"], tags:["python","basics","setup"],
     summary:"Python runs through an interpreter: try lines one at a time in the REPL, or save a .py script and run the whole file.",
@@ -867,7 +883,7 @@ ICA.addUnit({
      pro:[
       "The reference interpreter is **CPython**, written in C. It compiles your source to bytecode (cached in `__pycache__` folders for imported modules) and runs that on a virtual machine. Other implementations exist; the Python Lab uses **Pyodide**, CPython compiled to WebAssembly so it runs inside a browser. It has no access to your own files or a real terminal: programs read and write files in a temporary folder inside the browser, which goes back to its starting files on every Run or Check, typed answers come from a box filled in before the run, and a program still running after 4 seconds is stopped.",
       "On Windows, the **Python install manager** (from python.org or the Microsoft Store; python.org recommends the Store for most users) installs and updates runtimes and provides the `python`, `py` and `pymanager` commands. Its first launch runs a configuration check, and if no runtime is installed yet, the first `python` or `py` installs the latest one. python.org says the traditional executable installer will stop being released with Python 3.16. Windows also ships “app execution aliases” named `python` and `python3` that open the Microsoft Store if no Python is installed; they’re managed under **Manage app execution aliases** in Settings.",
-      "On macOS, `/usr/bin/python3` is an Apple-controlled Python that comes with Xcode or the Command Line Tools (running it first offers to install them); Python’s documentation calls it usually older and incomplete, and warns never to modify or delete it. The python.org installer adds its own `python3` alongside, plus IDLE in Applications. On Debian-based Linux (including ChromeOS’s container), `python` may not exist unless the `python-is-python3` package is installed, and the system Python is used by the operating system itself, so add libraries in a virtual environment (Unit 10) rather than system-wide.",
+      "On macOS, `/usr/bin/python3` is an Apple-controlled Python that comes with Xcode or the Command Line Tools (running it first offers to install them); Python’s documentation calls it usually older and incomplete, and warns never to modify or delete it. The python.org installer adds its own `python3` alongside, plus IDLE in Applications. On Debian-based Linux (including ChromeOS’s container), `python` may not exist unless the `python-is-python3` package is installed, and the system Python is used by the operating system itself, so add libraries in a virtual environment (Unit 11) rather than system-wide.",
       "The REPL was rewritten in 3.13 (colour, multi-line editing, `exit` without brackets) and 3.14 adds syntax highlighting. `python3 -i script.py` runs a script and then drops into the REPL with its variables available, handy for exploring."
      ]
     },
@@ -1121,7 +1137,7 @@ ICA.addUnit({
       "Return several values as a tuple: `return low, high`, then unpack with `lo, hi = bounds(nums)`.",
       "Docstrings (a string as the first line of the body) document a function and appear in `help()`. Type hints such as `def area(w: float, h: float) -> float:` are not enforced at run time but help editors and checkers.",
       "Scope lookup follows **LEGB**: local, enclosing function, global (module), built-in. Assigning to a name inside a function makes it local for the whole function, which explains `UnboundLocalError` when you read it before assigning. `global` exists but is rarely the right answer.",
-      "Small, single-purpose functions that return values are easy to test with `assert` (Unit 10).",
+      "Small, single-purpose functions that return values are easy to test with `assert` (Unit 11).",
       "Functions are values too: you can store them in variables, put them in lists and pass them to other functions, as in `sorted(names, key=len)`. `lambda` makes a small unnamed function for such cases: `key=lambda pair: pair[1]`."
      ]
     },
@@ -1160,7 +1176,7 @@ ICA.addUnit({
       "Error messages keep improving: 3.10 added “Did you mean” for names and attributes and better bracket diagnostics; 3.12 added “Did you forget to import”; 3.13 coloured tracebacks and warns when your file shadows a standard-library module; 3.14 suggests misspelt keywords (`whille` → `while`). Don’t rely on exact wording in code; match on exception types.",
       "The Python Lab (Pyodide) doesn’t print a full traceback. It reports the exception type, Python’s message, and the line in your program where it happened (the deepest frame in your code), plus a plain-language explanation. To see every frame, run the same code with Python on a computer.",
       "The `traceback` module formats tracebacks yourself (for logs), and `python3 -X dev` turns on extra runtime checks while developing.",
-      "`assert condition, \"message\"` raises AssertionError when the condition is False, a cheap way to check your assumptions while developing (Unit 10 uses it for tests)."
+      "`assert condition, \"message\"` raises AssertionError when the condition is False, a cheap way to check your assumptions while developing (Unit 11 uses it for tests)."
      ]
     },
     related:["py-functions","py-conditionals","reading-tracebacks","debugging-strategies","js-errors"],
@@ -1184,7 +1200,7 @@ ICA.addUnit({
         ["`random`","`randint(a, b)` (both ends included), `choice(list)`, `shuffle(list)`"],
         ["`datetime`","`date.today()`, `date(2027, 6, 14)`, subtracting dates gives days"],
         ["`statistics`","`mean`, `median`"],
-        ["`csv`, `pathlib`","Files and folders (Unit 9)"]
+        ["`csv`, `pathlib`","Files and folders (Unit 10)"]
       ]},
       "`from datetime import date` imports one name, so you write `date.today()`. `import datetime` then needs `datetime.date.today()`. Avoid `from module import *`, which makes it unclear where names come from.",
       "**Don’t name your files after modules.** A file called `random.py` in your project folder is imported instead of the real module, so `random.randint` “doesn’t exist”. Rename your file.",
@@ -1195,7 +1211,7 @@ ICA.addUnit({
       "`import` searches `sys.path` in order: the script’s directory first, then the standard library, then installed packages (`site-packages`). That order is why local files can shadow standard modules; Python 3.13 detects this and suggests renaming.",
       "A module runs its top-level code once, on first import, and is cached in `sys.modules`. The idiom `if __name__ == \"__main__\":` lets a file work both as an importable module and as a script.",
       "`random` is **not** for security: use the `secrets` module for passwords and tokens. `datetime` objects can be naive or time-zone-aware; `zoneinfo` (3.9+) supplies time zones. For exact decimal money arithmetic use `decimal`.",
-      "Third-party packages from PyPI are installed with pip into a virtual environment (Unit 10). Check names carefully: attackers publish look-alike packages, and AI tools sometimes suggest packages that don’t exist.",
+      "Third-party packages from PyPI are installed with pip into a virtual environment (Unit 11). Check names carefully: attackers publish look-alike packages, and AI tools sometimes suggest packages that don’t exist.",
       "Aliases such as `import statistics as st` are fine for long names; well-known conventions (`import numpy as np`) are worth following so others can read your code.",
       "Your own modules work the same way: put functions in `helpers.py` next to your script, write `import helpers`, then call `helpers.some_function()`. `importlib.reload(helpers)` re-runs an edited module during a long REPL session. Old modules are occasionally removed: Python 3.13 removed several outdated ones, such as `cgi`, so check the documentation for your version."
      ]
@@ -1238,7 +1254,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u8-q01", lesson:"t2u8-l1", level:1, q:"What is the Python interpreter?", options:[
-     {t:"The program that reads Python code and carries it out", ok:true, why:"Installing Python means installing the interpreter (plus its standard library). Editors and the Lab hand your code to it."},
+     {t:"The program that runs Python code", ok:true, why:"It reads Python code and carries it out. Installing Python means installing the interpreter (plus its standard library). Editors and the Lab hand your code to it."},
      {t:"A website that translates Python into English", why:"No translation into English happens; the interpreter runs the instructions."},
      {t:"The editor you type code into", why:"Editors such as IDLE or VS Code are where you write code; the interpreter is what runs it."},
      {t:"A paid add-on needed for scripts", why:"Python and its interpreter are free from python.org."}
@@ -1274,13 +1290,13 @@ ICA.addUnit({
      {t:"`print()` turns comments back on", why:"`print()` has nothing to do with comments; it just shows its string."}
    ]},
    {id:"t2u8-q07", lesson:"t2u8-l1", level:3, q:"Tomás, on Windows, types `python3 --version` and the Microsoft Store opens. What’s the most likely situation?", options:[
-     {t:"Python isn’t installed yet; Windows’ built-in shortcut is offering the Store", ok:true, why:"Windows has app shortcuts named `python` and `python3` that open the Store when no Python is installed. Install it (for example with the Python install manager), then use `py`."},
+     {t:"Python isn’t installed yet", ok:true, why:"Windows has app shortcuts named `python` and `python3` that open the Store when no Python is installed. Install it (for example with the Python install manager), then use `py`."},
      {t:"His computer has a virus", why:"Opening the Store is a normal Windows shortcut for a missing Python."},
      {t:"Python only works on Mac and Linux", why:"Python runs on Windows; the command there is usually `py` or `python`."},
      {t:"`--version` is a typo for `-version`", why:"`--version` is correct. The problem is that no Python is installed."}
    ]},
    {id:"t2u8-q08", lesson:"t2u8-l1", level:3, q:"Priya only has a phone and wants to practise this unit. What’s the best option?", options:[
-     {t:"Use the Python Lab in this app, which runs Python in the page", ok:true, why:"The Lab runs a real Python 3.14 interpreter in the browser, so nothing needs installing."},
+     {t:"Use the Python Lab in this app", ok:true, why:"The Lab runs a real Python 3.14 interpreter in the page, so nothing needs installing."},
      {t:"She can’t learn Python without a computer", why:"Every exercise here works in the Lab, and the lessons can be read anywhere."},
      {t:"Type Python into the phone’s web address bar", why:"Browsers don’t run Python typed into the address bar."},
      {t:"Download a `.py` file and tap it", why:"Phones don’t include a Python interpreter, and running files from unknown sources is risky."}
@@ -1347,8 +1363,8 @@ ICA.addUnit({
      {t:"`print(\"Total: \" + price * qty)`", why:"A string plus a float is a TypeError."}
    ]},
    {id:"t2u8-q19", lesson:"t2u8-l2", level:3, q:"Hana writes `list = [\"a\", \"b\"]` and later `items = list(\"xyz\")` fails with `TypeError: 'list' object is not callable`. Why?", options:[
-     {t:"She reused the built-in name `list` for her own variable, so `list` no longer means the function", ok:true, why:"Assigning to `list` hides Python’s built-in `list()`. Choose names like `letters` instead, and restart the REPL to recover."},
-     {t:"`list()` can’t take a string", why:"Normally `list(\"xyz\")` gives `['x', 'y', 'z']`. The name was overwritten."},
+     {t:"Her variable hid the built-in `list`", ok:true, why:"Assigning to `list` hides Python’s built-in `list()`. Choose names like `letters` instead, and restart the REPL to recover."},
+     {t:"`list()` can’t take a string as its argument", why:"Normally `list(\"xyz\")` gives `['x', 'y', 'z']`. The name was overwritten."},
      {t:"Lists can’t contain letters", why:"Lists can hold any values."},
      {t:"She needs `import list`", why:"`list` is built in; nothing needs importing. The variable name is the problem."}
    ]},
@@ -1360,9 +1376,9 @@ ICA.addUnit({
      {t:"`score := 10`", why:"That’s an assignment expression, not a comparison."}
    ]},
    {id:"t2u8-q21", lesson:"t2u8-l3", level:3, q:"A grading program reads:\n\n`if mark >= 50:`\n`    grade = \"C\"`\n`elif mark >= 65:`\n`    grade = \"B\"`\n`elif mark >= 80:`\n`    grade = \"A\"`\n\nWhy does a mark of 90 get a C?", options:[
-     {t:"The first True test wins, and `90 >= 50` is True, so the later tests never run", ok:true, why:"Put the highest band first: `>= 80`, then `>= 65`, then `>= 50`."},
-     {t:"`elif` only works with `==`", why:"`elif` works with any condition. The order is the problem."},
-     {t:"90 is too big for an `if`", why:"There’s no size limit; the first matching branch is chosen."},
+     {t:"The first test, `90 >= 50`, is True", ok:true, why:"The first True test wins, so the later tests never run. Put the highest band first: `>= 80`, then `>= 65`, then `>= 50`."},
+     {t:"`elif` only works with `==`, not with `>=`", why:"`elif` works with any condition. The order is the problem."},
+     {t:"90 is too big a number for an `if` test", why:"There’s no size limit; the first matching branch is chosen."},
      {t:"There’s no `else`", why:"An `else` would only matter if every test were False."}
    ]},
    {id:"t2u8-q22", lesson:"t2u8-l3", level:2, q:"Which message does Python give when the line after `if x > 3:` isn’t indented?", options:[
@@ -1387,7 +1403,7 @@ ICA.addUnit({
      {t:"Clean it first: `answer = answer.strip().lower()`", ok:true, why:"Comparison is exact and case-sensitive. Normalising removes stray spaces and capitals before comparing."},
      {t:"Use `=` instead of `==`", why:"`=` assigns; in an `if` it’s a SyntaxError."},
      {t:"Add `elif answer == \"Yes\":`", why:"That covers one variant but misses `YES`, `yes ` and others. Normalising handles them all."},
-     {t:"Use `answer.upper()` on its own line", why:"Strings don’t change; that line’s result is thrown away. And the comparison is with lowercase \"yes\"."}
+     {t:"Use `answer.upper()` on its own line before the `if`", why:"Strings don’t change; that line’s result is thrown away. And the comparison is with lowercase \"yes\"."}
    ]},
    {id:"t2u8-q26", lesson:"t2u8-l3", level:1, q:"Which of these counts as **false** in an `if`?", options:[
      {t:"`\"\"` (an empty string)", ok:true, why:"Empty strings, 0, None and empty collections are falsy."},
@@ -1457,7 +1473,7 @@ ICA.addUnit({
      {t:"`while True:` with only `print(\"hi\")` inside", why:"With no `break`, `while True` never ends."}
    ]},
    {id:"t2u8-q37", lesson:"t2u8-l4", level:3, q:"A word counter loops `for w in text.split():` and runs `counts[w] += 1`, with `counts = {}` at the start. It stops on the first word with an error. Which one, and why?", options:[
-     {t:"KeyError: the word isn’t a key yet, so there’s nothing to add 1 to", ok:true, why:"`+= 1` reads the old value first. Check `if w in counts:` (else set it to 1), or write `counts[w] = counts.get(w, 0) + 1`."},
+     {t:"KeyError: the word isn’t a key yet", ok:true, why:"There’s nothing to add 1 to yet: `+= 1` reads the old value first. Check `if w in counts:` (else set it to 1), or write `counts[w] = counts.get(w, 0) + 1`."},
      {t:"IndexError: dictionaries start at 0", why:"Dictionaries use keys, not positions."},
      {t:"TypeError: words can’t be keys", why:"Strings make perfect keys."},
      {t:"NameError: `counts` isn’t defined", why:"It is defined (`counts = {}`); it’s just empty."}
@@ -1476,7 +1492,7 @@ ICA.addUnit({
      {t:"An error, because `area(5)` is missing `h`", why:"`h` has a default, so it can be left out."}
    ]},
    {id:"t2u8-q40", lesson:"t2u8-l5", level:3, q:"A traceback has three “File …” lines and ends with `ValueError: invalid literal for int() with base 10: 'ten'`. Where should Mei look first?", options:[
-     {t:"The last line, then the “File” line just above it, which is where `int()` was given 'ten'", ok:true, why:"Read from the bottom: the error message, then the deepest frame, then upwards to see where 'ten' came from."},
+     {t:"The last line, then the “File” line just above it", ok:true, why:"That “File” line is where `int()` was given 'ten'. Read from the bottom: the error message, then the deepest frame, then upwards to see where 'ten' came from."},
      {t:"The very first “File” line, because it happened first", why:"The top frame is where the program started. The failure is at the bottom."},
      {t:"Every line in her program, from the top", why:"The traceback already points to the exact line; start there."},
      {t:"Nowhere: ValueErrors fix themselves when run again", why:"The same input gives the same error. The input or the code has to change."}
@@ -1506,7 +1522,7 @@ ICA.addUnit({
      {t:"A NameError, because `sum` isn’t imported", why:"`sum` is a built-in function; no import is needed."}
    ]},
    {id:"t2u8-q45", lesson:"t2u8-l5", level:3, q:"Oluwaseun’s program asks “How many guests?” and crashes when someone types `twelve`. What’s a kind way to handle it?", options:[
-     {t:"Wrap the `int(input(...))` in `try`/`except ValueError` and print a friendly message", ok:true, why:"The ValueError is expected when people type words; catching that specific error lets the program explain the format instead of crashing."},
+     {t:"Catch `ValueError` with `try`/`except` and explain", ok:true, why:"Wrap the `int(input(...))` in `try`/`except ValueError` and print a friendly message. The ValueError is expected when people type words; catching that specific error lets the program explain the format instead of crashing."},
      {t:"Use `except:` with no error type around the whole program", why:"A bare `except` hides every error, including real bugs. Catch only ValueError."},
      {t:"Use `float()` instead of `int()`", why:"`float(\"twelve\")` is a ValueError too."},
      {t:"Delete the `int()` so it never fails", why:"Then the answer stays a string and any arithmetic with it fails later."}

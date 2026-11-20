@@ -107,6 +107,8 @@ kbd{font-family:var(--mono);font-size:.82em;border:1px solid var(--line);border-
 .callout.tip{background:var(--sageTint);border-color:var(--sage)}
 .callout.warn{background:var(--goldTint);border-color:var(--gold)}
 .callout.key{background:var(--lupTint);border-color:var(--lupine)}
+.selfcheck{display:grid;gap:6px;margin-top:10px}
+.selfcheck .seg3{justify-self:start}
 .callout.ex{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--rose)}
 .callout.ex pre{white-space:pre-wrap;font-family:var(--mono);font-size:.86em;margin:4px 0 0}
 figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:6px;justify-items:center}
@@ -604,3 +606,13 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .offpick .chk{display:flex;gap:10px;align-items:center;cursor:pointer}.offpick .chk input{width:20px;height:20px;accent-color:var(--lupine);flex:none}
 #offbox progress{width:100%;height:10px;accent-color:var(--lupine)}
 .offpick .chk .muted{white-space:nowrap}
+/* startup volume (intro and setup): a speaker button that mutes, and one slider for voices, music and effects */
+.volctl{--vc:var(--lupine);--vt:var(--line);--vk:var(--panel);display:inline-flex;align-items:center;gap:4px;color:var(--vc)}
+.volctl .vc-b{display:grid;place-items:center;width:36px;height:36px;padding:0;background:none;border:0;border-radius:50%;color:inherit;cursor:pointer}
+.volctl .vc-b:focus-visible{outline:2px solid currentColor;outline-offset:1px}
+.volctl input[type=range]{--p:50%;-webkit-appearance:none;appearance:none;width:96px;height:28px;margin:0;background:transparent;cursor:pointer}
+.volctl input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--vc) 0 var(--p),var(--vt) var(--p) 100%)}
+.volctl input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--vc) 0 var(--p),var(--vt) var(--p) 100%)}
+.volctl input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-6px;border-radius:50%;background:var(--vc);border:3px solid var(--vk)}
+.volctl input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--vc);border:3px solid var(--vk)}
+.setup .volctl{position:absolute;top:calc(env(safe-area-inset-top,0px) + 4px);right:10px;z-index:2}

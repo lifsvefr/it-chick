@@ -1,6 +1,6 @@
-/* Track 3 · Unit 9 · Databases and SQL */
+/* Track 3 · Unit 10 · Databases and SQL */
 ICA.addUnit({
-  id:"t3u9", track:"t3", n:9, title:"Databases and SQL", icon:"🗄️",
+  id:"t3u9", track:"t3", n:10, title:"Databases and SQL", icon:"🗄️",
   blurb:"Store data as linked tables and ask it questions in SQL: choose, filter, sort, count, group and join, on a small invented community-garden database you can query in your browser. Then set up SQLite on a computer, import a CSV and design tables that stay correct.",
   goals:[
     "Explain tables, rows, columns, primary keys and foreign keys, and when a database beats a spreadsheet",
@@ -68,7 +68,7 @@ ICA.addUnit({
       ]}
     ]},
     {h:"Why not just a spreadsheet?", body:[
-      "Spreadsheets are wonderful, and “Spreadsheets from scratch” (Digital Foundations, Unit 9) showed how far they go. A database is a different tool with different strengths:",
+      "Spreadsheets are wonderful, and “Spreadsheets from scratch” (Digital Foundations, Unit 9) showed how far they go. This lesson builds on Digital Foundations Unit 12, Lesson 2, which compares {{flat-files-vs-databases|flat files and databases}} in plain terms. A database is a different tool with different strengths:",
       {table:[["Aspect","Spreadsheet","Database"],["Rules","Mostly in people’s heads, plus optional validation","In the schema: types, keys and required columns, checked on every row"],["Size","Excel stops at 1,048,576 rows per sheet","Millions of rows are routine; one SQLite file can grow to terabytes"],["Many users","Fine for a few people editing a shared sheet","Server databases serve many people and programs writing at once"],["Questions","Formulas mixed in with the data","Queries kept as text, separate from the data, and re-run any time"],["Seeing the data","Everything on screen, easy to edit by hand","You look through queries or a browsing tool"]]},
       "A spreadsheet is still the right tool for a small table that one person keeps, a quick calculation or a chart. Many projects use both: the records live in a database, and a query’s result goes into a spreadsheet for a chart or a report. [[csv|CSV]] files are the usual bridge.",
       {tip:"A common misconception is that a database is “just a big spreadsheet”. Its real differences are the structure (several linked tables), the rules it enforces, and the query language that asks questions without touching the data."}
@@ -111,10 +111,10 @@ ICA.addUnit({
       {t:"2026-06", flag:false, why:"An ISO-style year and month: clear, and it sorts correctly as text."}
     ]},
     {id:"t3u9-l1-x5", type:"mcq", q:"Why can SQLite live inside a phone app, while PostgreSQL usually runs on a separate server?", options:[
-      {t:"SQLite is a library inside the app that keeps the whole database in one file, with no server program", ok:true, why:"Right. Being “serverless” is exactly what lets it ship inside phones, browsers and desktop apps."},
+      {t:"SQLite is a library that keeps everything in one file", ok:true, why:"Right. It runs inside the app, with no server program. Being “serverless” is exactly what lets it ship inside phones, browsers and desktop apps."},
       {t:"SQLite doesn’t use SQL, so it’s simpler", why:"It does use SQL; the name says so. You’ll write SQL for SQLite throughout this unit."},
       {t:"SQLite can only store text", why:"It stores whole numbers, decimals, text, binary data and NULL."},
-      {t:"PostgreSQL is too expensive for phones", why:"PostgreSQL is free, open-source software. The difference is design: it runs as a server that many clients connect to."}
+      {t:"PostgreSQL is too expensive to put on millions of phones", why:"PostgreSQL is free, open-source software. The difference is design: it runs as a server that many clients connect to."}
     ]},
     {id:"t3u9-l1-x6", type:"mcq", q:"Which of these jobs suit a database better than a single spreadsheet? Choose all that apply.", options:[
       {t:"A clinic’s appointments, used by several staff and an online booking page at the same time", ok:true, why:"Many people and programs writing at once, with rules that must hold (no double bookings): a database’s strength."},
@@ -246,7 +246,7 @@ ICA.addUnit({
       {t:"LIMIT 2", why:"LIMIT is written last (and also runs last)."}
     ]},
     {id:"t3u9-l2-x5", type:"mcq", q:"Fatou wanted beans and kale harvests over 2 kg. Her query `WHERE crop = 'beans' OR crop = 'kale' AND kg > 2` returned 4 rows, including a 1 kg harvest of beans. Why?", options:[
-      {t:"AND is worked out before OR, so it means “beans of any weight, or kale over 2 kg”", ok:true, why:"Right. Brackets fix it: `(crop = 'beans' OR crop = 'kale') AND kg > 2`, or use `crop IN ('beans', 'kale') AND kg > 2`."},
+      {t:"AND is worked out before OR", ok:true, why:"Right. So it means “beans of any weight, or kale over 2 kg”. Brackets fix it: `(crop = 'beans' OR crop = 'kale') AND kg > 2`, or use `crop IN ('beans', 'kale') AND kg > 2`."},
       {t:"OR is worked out first, so the weight rule applies to beans only", why:"It’s the other way round: AND binds more tightly than OR, so the weight test sticks to the kale part."},
       {t:"SQLite ignores the second condition when there are three", why:"SQLite applies every condition; the issue is how they group."},
       {t:"The text needs double quotes", why:"Single quotes are right for text. Quotes have nothing to do with the extra row."}
@@ -362,7 +362,7 @@ ICA.addUnit({
       {t:"Crops harvested more than twice", b:1, why:"The number of harvests per crop is an aggregate: HAVING COUNT(*) > 2."}
     ]},
     {id:"t3u9-l3-x4", type:"mcq", q:"Priya runs `SELECT name FROM members WHERE plot_id != 3;` expecting five names (everyone except Chen). She gets four. Who is missing, and why?", options:[
-      {t:"Eitan, because comparing his NULL plot_id with 3 gives “unknown”, and WHERE drops unknowns", ok:true, why:"Right. Add `OR plot_id IS NULL` if members without a plot should be included."},
+      {t:"Eitan, because his plot_id is NULL", ok:true, why:"Right. Comparing NULL with 3 gives “unknown”, and WHERE drops unknowns. Add `OR plot_id IS NULL` if members without a plot should be included."},
       {t:"Chen, because he’s on plot 3", why:"Chen is meant to be left out; that’s why she expected five, not six. The surprise is the sixth member."},
       {t:"Fatou, because `!=` doesn’t work in SQLite", why:"`!=` works in SQLite (as does `<>`), and Fatou (plot 5) is in the result."},
       {t:"Nobody; the database has a bug", why:"It’s standard SQL behaviour: comparisons with NULL are neither true nor false."}
@@ -500,9 +500,9 @@ ICA.addUnit({
       ["FULL OUTER JOIN … ON","Matches, plus unmatched rows from both sides","It’s a left join and a right join together (in SQLite since 3.39.0)."]
     ]},
     {id:"t3u9-l4-x7", type:"mcq", q:"Joining plots → members → harvests and running `SUM(p.size_m2)` gives 56 m², but the plots cover 33 m². Why?", options:[
-      {t:"Each plot row is repeated once per harvest from it, so its size is added several times", ok:true, why:"Right: fan-out. Total plot area from the plots table on its own, or summarise harvests first and join afterwards."},
+      {t:"Each plot row is repeated once per harvest", ok:true, why:"Right: fan-out. Each plot’s size is added several times. Total plot area from the plots table on its own, or summarise harvests first and join afterwards."},
       {t:"The join dropped some plots", why:"Dropping plots would make the total smaller than 33, not bigger."},
-      {t:"SQLite rounds REAL numbers up", why:"No rounding happens; the extra area comes from repeated rows."},
+      {t:"SQLite rounds REAL numbers up when it adds them", why:"No rounding happens; the extra area comes from repeated rows."},
       {t:"size_m2 is stored as text", why:"Text would cause odd sorting, not a larger sum. The values are numbers."}
     ]}
    ],
@@ -552,7 +552,7 @@ ICA.addUnit({
       "Now the CSV can be joined to the garden’s own data by month:",
       {code:"SELECT h.month, SUM(h.kg) AS kg, r.rain_mm\nFROM harvests AS h\nJOIN rainfall AS r ON r.month = h.month\nGROUP BY h.month, r.rain_mm\nORDER BY h.month;", lang:"sql"},
       {table:[["month","kg","rain_mm"],["2026-05","3.5","62"],["2026-06","5","48"],["2026-07","12.5","21"],["2026-08","18.5","35"],["2026-09","6.5","70"]]},
-      "Going the other way, **File → Export → Table(s) as CSV file…** writes a table out, and the results of any query can be saved as CSV from the Execute SQL tab. DB Browser can also export JSON ([[json]]), the format Python read in “Automating and debugging” (Making with Code, Unit 9)."
+      "Going the other way, **File → Export → Table(s) as CSV file…** writes a table out, and the results of any query can be saved as CSV from the Execute SQL tab. DB Browser can also export JSON ([[json]]), the format Python read in “Automating and debugging” (Making with Code, Unit 10)."
     ]},
     {h:"Good table design, in plain words", body:[
       "Designing tables so that each fact is stored once, in the one place it belongs, is called [[normalisation]]. Software Carpentry’s “Data Hygiene” episode boils it down to four rules:",
@@ -602,9 +602,9 @@ ICA.addUnit({
       ["WHERE crop ILIKE 'beans'","PostgreSQL","ILIKE is PostgreSQL’s case-insensitive LIKE. SQLite’s LIKE already ignores case for English letters."]
     ]},
     {id:"t3u9-l5-x4", type:"mcq", q:"Why do programs use placeholders (such as `?`) for values typed by users?", options:[
-      {t:"The typed value is sent separately from the SQL, so it’s always treated as data and can’t change the query", ok:true, why:"Right. That’s why placeholders stop SQL injection, and also why names with apostrophes (O’Neill) just work."},
+      {t:"The value is sent separately, so it’s always treated as data", ok:true, why:"Right. It can’t change the query. That’s why placeholders stop SQL injection, and also why names with apostrophes (O’Neill) just work."},
       {t:"They make queries run faster for long names", why:"Speed isn’t the point; safety and correctness are."},
-      {t:"They delete apostrophes and other risky characters", why:"Nothing is deleted: O’Neill is stored and found with the apostrophe intact."},
+      {t:"They delete apostrophes and other risky characters from the input", why:"Nothing is deleted: O’Neill is stored and found with the apostrophe intact."},
       {t:"They encrypt the database file", why:"Placeholders don’t touch the file. Encryption is a separate thing."}
     ]},
     {id:"t3u9-l5-x5", type:"number", q:"A rain_mm column was imported as TEXT, holding 9, 21, 35, 48, 62 and 70. What value does `SELECT rain_mm FROM rainfall ORDER BY rain_mm DESC LIMIT 1;` return?", answer:9, tol:0, unit:"mm", why:"Text is sorted character by character, and “9” comes after “7”, “6”, “4”, “3” and “2”. So 9 is the “largest” text. Change the column to INTEGER and it correctly gives 70.", wrongs:[
@@ -639,6 +639,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t3u9-q02","t3u9-q05","t3u9-q11","t3u9-q13","t3u9-q19","t3u9-q22","t3u9-q24","t3u9-q30","t3u9-q32","t3u9-q35","t3u9-q39","t3u9-q41"],
+  cpBank:[
+   {id:"t3u9-cp01", lesson:"t3u9-l1", level:1, q:"A vet clinic’s database has `CREATE TABLE pets (id INTEGER PRIMARY KEY, name TEXT, owner_id INTEGER);` and an `owners` table with its own `id`. What is `owner_id` most likely for?", options:[
+     {t:"It is the pets table’s primary key", why:"The primary key here is `id`. A table has one primary key, and owner_id is a different column."},
+     {t:"It stores the owner’s name as a number", why:"Names belong in a TEXT column. An `_id` column holds a key, not a coded name."},
+     {t:"It is a foreign key pointing to the pet’s owner", ok:true, why:"A foreign key holds another table’s primary key. It links each pet to one owner (one owner, many pets)."},
+     {t:"It counts how many owners each pet has had", why:"A count would be a summary. An `_id` column is a pointer to one row in another table."}]},
+   {id:"t3u9-cp02", lesson:"t3u9-l1", level:2, q:"In the garden database, which question needs the `members` and `plots` tables, but not `harvests`?", options:[
+     {t:"How many kilograms of kale were picked?", why:"Weights and crops are in harvests. This needs harvests alone."},
+     {t:"Which members are on the South bed?", ok:true, why:"Names are in members and beds in plots, linked by members.plot_id. No harvest data is needed."},
+     {t:"Who picked the heaviest tomatoes?", why:"This needs harvests (crop and weight) and members (names), not plots."},
+     {t:"How big is the East bed?", why:"Bed and size are both in plots, so plots alone answers it."}]},
+   {id:"t3u9-cp03", lesson:"t3u9-l2", level:1, q:"The garden’s crops are beans, kale, squash and tomatoes. Which crops does `WHERE crop LIKE '%s'` match?", options:[
+     {t:"squash only", why:"`'%s'` means “ends with s”. squash ends with h; `'s%'` would mean “starts with s”."},
+     {t:"beans and tomatoes", ok:true, why:"`%` stands for any run of characters, so `'%s'` matches text ending in s: beans and tomatoes."},
+     {t:"beans, squash and tomatoes", why:"squash contains an s but ends with h. The pattern puts s at the very end."},
+     {t:"none, because LIKE needs an exact match", why:"Exact matching is `=`. LIKE uses `%` and `_` as wildcards."}]},
+   {id:"t3u9-cp04", lesson:"t3u9-l2", level:2, q:"Ama joined in 2021, Bilal 2024, Chen 2019, Dana 2023, Eitan 2020 and Fatou 2025. What does `SELECT name FROM members WHERE joined BETWEEN 2020 AND 2023 ORDER BY name DESC;` return?", options:[
+     {t:"Eitan, Dana, Ama", ok:true, why:"BETWEEN includes both ends, so it keeps Ama (2021), Dana (2023) and Eitan (2020). ORDER BY name DESC sorts them Z to A."},
+     {t:"Ama, Dana, Eitan", why:"Those are the right three, but A to Z. DESC reverses the order."},
+     {t:"Dana, Ama, Eitan", why:"That sorts by joining year, newest first. The query sorts by name."},
+     {t:"Ama only, because BETWEEN leaves out the end years", why:"BETWEEN 2020 AND 2023 includes 2020 and 2023, so Eitan and Dana are kept too."}]},
+   {id:"t3u9-cp05", lesson:"t3u9-l2", level:2, q:"The harvest weights, lightest first, are beans 1, kale 1.5, beans 2.5, beans 3, kale 3.5, tomatoes 4 and so on. What does `SELECT crop, kg FROM harvests ORDER BY kg LIMIT 2 OFFSET 2;` return?", options:[
+     {t:"beans 1 and kale 1.5", why:"Those are the first two rows. OFFSET 2 skips them first."},
+     {t:"kale 3.5 and tomatoes 4", why:"That skips four rows. OFFSET 2 skips two, then LIMIT keeps the next two."},
+     {t:"beans 2.5 and beans 3", ok:true, why:"Sorted lightest first, OFFSET 2 skips 1 and 1.5; LIMIT 2 keeps the next two: 2.5 and 3."},
+     {t:"tomatoes 8 and squash 10.5", why:"ORDER BY kg sorts smallest first (ASC is the default), so the heaviest come last."}]},
+   {id:"t3u9-cp06", lesson:"t3u9-l3", level:1, q:"In the garden database, kale was harvested twice (3.5 kg and 1.5 kg). What does `SELECT COUNT(*) FROM harvests WHERE crop = 'kale';` return?", options:[
+     {t:"5", why:"5 is the total weight, which SUM(kg) would give. COUNT(*) counts rows."},
+     {t:"10", why:"10 is the number of rows in the whole table. WHERE keeps only the kale rows before counting."},
+     {t:"1", why:"COUNT(*) counts every kept row, not distinct crops. There are two kale rows."},
+     {t:"2", ok:true, why:"WHERE keeps the two kale rows, then COUNT(*) counts them."}]},
+   {id:"t3u9-cp07", lesson:"t3u9-l3", level:2, q:"Members’ harvest totals are: member 1, 6.5 kg; 2, 2.5; 3, 11.5; 4, 9.5; 5, 10.5; 6, 5.5. How many rows does `SELECT member_id, SUM(kg) FROM harvests GROUP BY member_id HAVING SUM(kg) >= 10;` return?", options:[
+     {t:"6", why:"GROUP BY gives 6 groups, but HAVING then keeps only the groups whose total is at least 10."},
+     {t:"2", ok:true, why:"HAVING filters groups after grouping: members 3 (11.5) and 5 (10.5)."},
+     {t:"3", why:"Member 4’s 9.5 kg is below 10, so only two groups pass."},
+     {t:"None: SUM can’t be used in HAVING", why:"Aggregates can’t go in WHERE, but HAVING is exactly where they belong."}]},
+   {id:"t3u9-cp08", lesson:"t3u9-l3", level:3, q:"Kofi wants everyone who isn’t on plot 1 or 2 and expects four names. `SELECT name FROM members WHERE plot_id NOT IN (1, 2);` returns three: Chen, Dana and Fatou. Why, and what is the fix?", options:[
+     {t:"NOT IN only checks the first value in the list; list 1 and 2 separately", why:"NOT IN checks the whole list. The missing member is Eitan, whose plot_id is NULL."},
+     {t:"Eitan’s plot_id is NULL, so his row drops out; add `OR plot_id IS NULL`", ok:true, why:"Comparisons with NULL give unknown, and WHERE keeps only definite TRUE. Testing IS NULL brings Eitan back."},
+     {t:"Eitan has no harvests, so he is left out; use a JOIN", why:"Eitan has a harvest (10.5 kg of squash), and this query doesn’t use harvests at all."},
+     {t:"SQLite sorts NULL first, so his row is cut off; add ORDER BY", why:"Sorting doesn’t remove rows. The WHERE test on NULL is the cause."}]},
+   {id:"t3u9-cp09", lesson:"t3u9-l4", level:3, q:"Each of the 5 plots has exactly one member; Eitan has no plot (plot_id NULL). How many rows does `SELECT p.id, m.name FROM plots AS p LEFT JOIN members AS m ON m.plot_id = p.id;` return, and is Eitan there?", options:[
+     {t:"6 rows, with Eitan’s plot shown as NULL", why:"That happens when members is the left table. Here plots is on the left, so every plot is kept, not every member."},
+     {t:"5 rows, and Eitan is not there", ok:true, why:"A LEFT JOIN keeps every row of the left table, plots. Each plot matches one member; Eitan matches no plot."},
+     {t:"30 rows, one for every plot–member pair", why:"That is a join with no ON. The ON condition keeps only matching pairs."},
+     {t:"5 rows, with Eitan added at the end as NULL", why:"Unmatched rows from the right table (members) are not added in a LEFT JOIN."}]},
+   {id:"t3u9-cp10", lesson:"t3u9-l4", level:3, q:"Tomato harvests: Ama 4 kg, Chen 8 kg, Fatou 5.5 kg. What does this return? `SELECT m.name, SUM(h.kg) AS kg FROM harvests AS h JOIN members AS m ON h.member_id = m.id WHERE h.crop = 'tomatoes' GROUP BY m.name ORDER BY kg DESC LIMIT 1;`", options:[
+     {t:"Chen, 17.5", why:"17.5 is all tomatoes together. GROUP BY m.name gives each grower their own total."},
+     {t:"Ama, 4", why:"That would be the first row without sorting. ORDER BY kg DESC puts the largest total first."},
+     {t:"Fatou, 5.5", why:"Fatou is second. DESC sorts largest first, so Chen’s 8 kg comes first."},
+     {t:"Chen, 8", ok:true, why:"The join adds names, WHERE keeps tomatoes, GROUP BY totals per member, then sorting and LIMIT 1 keep the top grower."}]},
+   {id:"t3u9-cp11", lesson:"t3u9-l5", level:2, q:"The attendance table has `PRIMARY KEY (member_id, workday_id)`. A volunteer records member 3 at work day 7, then accidentally records the same pair again. What happens?", options:[
+     {t:"The second row is refused: “UNIQUE constraint failed”", ok:true, why:"A two-column primary key means each member–day pair can appear only once, so nobody is counted twice."},
+     {t:"Both rows are stored, because each column alone can repeat", why:"Each column can repeat on its own, but the pair together must be unique."},
+     {t:"The first row is replaced by the second", why:"SQLite refuses the duplicate; it doesn’t silently overwrite the existing row."},
+     {t:"Member 3 is deleted from the members table", why:"A failed insert into attendance doesn’t touch other tables."}]},
+   {id:"t3u9-cp12", lesson:"t3u9-l5", level:3, q:"Rosa stores the result of a members–harvests join as a new table. Ama saves the same query as a view. Then a new harvest is logged. Which shows it?", options:[
+     {t:"Only Rosa’s table, because a view stores a snapshot of the data", why:"It’s the other way round. A view stores the query; Rosa’s table is the snapshot, made once and now out of date."},
+     {t:"Only Ama’s view: it reruns the query on the current tables", ok:true, why:"A view saves the query, not the data, so each use reruns the join. Rosa’s table goes stale and keeps the same facts twice."},
+     {t:"Both, because the database copies new rows into each one", why:"Nothing copies rows into a stored result. Only the view, which reruns its query, sees the new harvest."},
+     {t:"Neither, until each of them reruns the query by hand", why:"Ama’s view reruns its query every time it is used. Only Rosa’s stored copy needs remaking by hand."}]},
+  ],
   codex:[
    {id:"relational-databases", title:"Relational databases", aka:["database","RDBMS","DBMS"], tags:["data","sql","databases"], summary:"Data kept as linked tables, each fact stored once, with keys connecting them and SQL to ask questions.",
     levels:{
@@ -858,7 +920,7 @@ ICA.addUnit({
   bank:[
    /* ---------- Lesson 1 ---------- */
    {id:"t3u9-q01", lesson:"t3u9-l1", level:1, q:"What is a foreign key?", options:[
-     {t:"A column that holds another table’s primary key, linking the two tables", ok:true, why:"Yes. harvests.member_id holds members.id values, so each harvest points at its member."},
+     {t:"A column holding another table’s primary key", ok:true, why:"Yes. It links the two tables: harvests.member_id holds members.id values, so each harvest points at its member."},
      {t:"A column that must be unique in its own table", why:"That describes a primary key. A foreign key usually repeats (many harvests point at the same member)."},
      {t:"A password that protects the database", why:"Keys in databases are columns, not passwords."},
      {t:"A column copied from a spreadsheet in another language", why:"“Foreign” means it refers to another table, not another language."}]},
@@ -868,9 +930,9 @@ ICA.addUnit({
      {t:"One crop, with its total weight", why:"Totals are calculated by queries (GROUP BY), not stored as rows."},
      {t:"One column of weights", why:"A column runs down the table; a row runs across it."}]},
    {id:"t3u9-q03", lesson:"t3u9-l1", level:2, q:"Kenji’s book club keeps one spreadsheet of loans, with the borrower’s name and phone number typed on every loan row. What’s the main problem a database design would fix?", options:[
-     {t:"Each borrower’s details are repeated, so a changed phone number must be fixed on many rows, and missed rows will disagree", ok:true, why:"Redundancy invites contradictions. A members table stores each phone number once; loans store a member_id."},
+     {t:"Borrower details repeat on every loan, so they can disagree", ok:true, why:"A changed phone number must be fixed on many rows, and missed rows will disagree. Redundancy invites contradictions. A members table stores each phone number once; loans store a member_id."},
      {t:"Spreadsheets can’t store phone numbers", why:"They can (as text, to keep leading zeros). The problem is the repetition."},
-     {t:"The sheet will soon pass a million rows", why:"A book club is nowhere near the limit; the problem is consistency, not size."},
+     {t:"The sheet will soon pass the spreadsheet limit of a million rows", why:"A book club is nowhere near the limit; the problem is consistency, not size."},
      {t:"Names can’t be sorted in a spreadsheet", why:"They can. Sorting isn’t the issue."}]},
    {id:"t3u9-q04", lesson:"t3u9-l1", level:3, q:"Lucía designs a database for her café: a customers table (id, name, email) and an orders table. How should each order record which customer placed it?", options:[
      {t:"An orders.customer_id column holding the customer’s id", ok:true, why:"A foreign key on the “many” side (orders) pointing at the primary key of customers."},
@@ -878,9 +940,9 @@ ICA.addUnit({
      {t:"A customers.order_id column", why:"A customer can place many orders, and one column can’t hold many ids. The link goes on the orders side."},
      {t:"Give the order the same id as the customer", why:"Then each customer could only ever have one order, and ids would collide."}]},
    {id:"t3u9-q05", lesson:"t3u9-l1", level:2, q:"What is the main design difference between SQLite and PostgreSQL?", options:[
-     {t:"SQLite runs inside the app and keeps the database in one file; PostgreSQL runs as a server that clients connect to", ok:true, why:"That’s why SQLite fits in phones and browsers, and why busy multi-user systems usually pick a server database."},
+     {t:"SQLite runs inside the app; PostgreSQL runs as a server", ok:true, why:"SQLite runs inside the app and keeps the database in one file; PostgreSQL runs as a server that clients connect to. That’s why SQLite fits in phones and browsers, and why busy multi-user systems usually pick a server database."},
      {t:"SQLite doesn’t understand SQL", why:"It does; you use SQL with it throughout this unit."},
-     {t:"PostgreSQL is a spreadsheet program", why:"PostgreSQL is a relational database system."},
+     {t:"PostgreSQL is a spreadsheet program, not a real database", why:"PostgreSQL is a relational database system."},
      {t:"SQLite can only hold one table", why:"An SQLite file can hold many tables, as the garden database does."}]},
    {id:"t3u9-q06", lesson:"t3u9-l1", level:3, q:"A library’s table lists its physical copies of books; it owns three copies of some titles. Which makes the best primary key?", options:[
      {t:"A copy id number given to each physical copy", ok:true, why:"It’s unique per row and never changes. Title, author and ISBN repeat across copies."},
@@ -888,20 +950,20 @@ ICA.addUnit({
      {t:"The title", why:"Titles repeat across copies and editions, and different books can share a title."},
      {t:"The author’s name", why:"Most authors have more than one book, and many copies."}]},
    {id:"t3u9-q07", lesson:"t3u9-l1", level:3, q:"Tomás keeps a 60-row list of his workshop’s tools in a spreadsheet that only he uses. A friend says he must move it into a database. What’s the most sensible advice?", options:[
-     {t:"A spreadsheet is fine for a small single table that one person keeps", ok:true, why:"Databases pay off with linked tables, many users, rules that must hold or large data. None applies here."},
-     {t:"Move it: spreadsheets can’t hold more than 50 rows", why:"Spreadsheets hold far more than that (Excel allows 1,048,576 rows per sheet)."},
+     {t:"A spreadsheet is fine for a small list one person keeps", ok:true, why:"Databases pay off with linked tables, many users, rules that must hold or large data. None applies here."},
+     {t:"Move it: spreadsheets can’t hold more than 50 rows of data", why:"Spreadsheets hold far more than that (Excel allows 1,048,576 rows per sheet)."},
      {t:"Move it: databases are always better", why:"They’re better for some jobs. For a small personal list a spreadsheet is quicker and simpler."},
      {t:"Move it, because spreadsheets can’t be backed up", why:"Spreadsheet files can be backed up like any other file."}]},
    {id:"t3u9-q08", lesson:"t3u9-l1", level:2, q:"In SQLite, inserting the text 'soon' into an INTEGER column worked without an error. Why?", options:[
-     {t:"SQLite uses flexible typing: declared types are preferences unless the table is STRICT", ok:true, why:"Right. Most other systems, such as PostgreSQL, reject it; STRICT tables make SQLite reject it too."},
-     {t:"SQLite turned 'soon' into the number 0", why:"In our test it stored the text 'soon' itself, unchanged."},
+     {t:"SQLite uses flexible typing on ordinary tables", ok:true, why:"Right. Declared types are preferences unless the table is STRICT. Most other systems, such as PostgreSQL, reject it; STRICT tables make SQLite reject it too."},
+     {t:"SQLite quietly turned 'soon' into the number 0 before storing it", why:"In our test it stored the text 'soon' itself, unchanged."},
      {t:"INTEGER means text in SQLite", why:"INTEGER means whole numbers. SQLite just doesn’t force it on ordinary tables."},
      {t:"The insert silently failed", why:"The row was stored; selecting it showed 'soon' with type text."}]},
    {id:"t3u9-q09", lesson:"t3u9-l1", level:1, q:"What is a database’s schema?", options:[
-     {t:"The description of its tables: names, columns, types, keys and rules", ok:true, why:"It’s written in SQL with CREATE TABLE, and the database checks rows against it."},
+     {t:"The description of its tables, columns, types and keys", ok:true, why:"It includes rules too. It’s written in SQL with CREATE TABLE, and the database checks rows against it."},
      {t:"A diagram of the computer it runs on", why:"The schema describes the data’s structure, not the hardware."},
      {t:"A backup copy of the data", why:"A backup copies data; a schema describes its structure."},
-     {t:"The list of people allowed to use it", why:"That’s about permissions, not the structure of the tables."}]},
+     {t:"The list of people and programs allowed to use the database", why:"That’s about permissions, not the structure of the tables."}]},
 
    /* ---------- Lesson 2 ---------- */
    {id:"t3u9-q10", lesson:"t3u9-l2", level:1, q:"In `SELECT crop, kg FROM harvests;`, what does FROM do?", options:[
@@ -910,30 +972,30 @@ ICA.addUnit({
      {t:"Sorts the result", why:"That’s ORDER BY."},
      {t:"Copies the data into a new table", why:"A SELECT only reads and returns a result; nothing is copied or stored."}]},
    {id:"t3u9-q11", lesson:"t3u9-l2", level:2, q:"`SELECT * FROM harvests WHERE crop = 'Beans';` returns no rows, although there are beans harvests. Why?", options:[
-     {t:"In SQLite, = compares text exactly, and the data says beans with a small b", ok:true, why:"Write 'beans'. (LIKE would ignore the case of English letters, but matching the stored spelling is the clean fix.)"},
+     {t:"The data says 'beans', and = compares text exactly", ok:true, why:"In SQLite the stored value has a small b, so write 'beans'. (LIKE would ignore the case of English letters, but matching the stored spelling is the clean fix.)"},
      {t:"Text must be in double quotes", why:"Single quotes are correct for text in SQL."},
      {t:"WHERE only works with numbers", why:"WHERE works with text too: crop = 'beans' finds three rows."},
-     {t:"The table name should be capitalised", why:"SQLite ignores the case of table names; the issue is the value."}]},
+     {t:"The table name harvests should be written in capitals", why:"SQLite ignores the case of table names; the issue is the value."}]},
    {id:"t3u9-q12", lesson:"t3u9-l2", level:2, q:"What does `SELECT name FROM members WHERE joined >= 2023 ORDER BY joined;` return on the garden database?", options:[
      {t:"Dana, Bilal, Fatou", ok:true, why:"Dana 2023, Bilal 2024 and Fatou 2025 joined in 2023 or later; ascending order puts the earliest first."},
      {t:"Fatou, Bilal, Dana", why:"That’s descending order (DESC). Without DESC, ORDER BY sorts smallest first."},
      {t:"Bilal, Fatou", why:">= includes 2023, so Dana belongs in the result."},
      {t:"Chen, Eitan, Ama", why:"Those members joined before 2023."}]},
    {id:"t3u9-q13", lesson:"t3u9-l2", level:3, q:"Oluwaseun wants the five most recent sign-ups and writes `SELECT * FROM signups LIMIT 5;`. What’s wrong?", options:[
-     {t:"Without ORDER BY signup_date DESC, the five rows are in no guaranteed order", ok:true, why:"LIMIT cuts whatever order the rows arrive in. Sort first: ORDER BY signup_date DESC LIMIT 5."},
+     {t:"Without ORDER BY, the five rows come in no set order", ok:true, why:"LIMIT cuts whatever order the rows arrive in. Sort first: ORDER BY signup_date DESC LIMIT 5."},
      {t:"LIMIT doesn’t exist in SQL", why:"LIMIT works in SQLite, PostgreSQL and MySQL. (SQL Server uses TOP.)"},
      {t:"LIMIT must come before FROM", why:"LIMIT is written last."},
-     {t:"Nothing: LIMIT always returns the newest rows", why:"Nothing makes the newest rows come first unless you sort."}]},
+     {t:"Nothing: LIMIT always returns the newest rows in the table", why:"Nothing makes the newest rows come first unless you sort."}]},
    {id:"t3u9-q14", lesson:"t3u9-l2", level:2, q:"SQLite says “no such column: beans” for `SELECT * FROM harvests WHERE crop = beans;`. What’s the fix?", options:[
      {t:"Put the text in single quotes: crop = 'beans'", ok:true, why:"Without quotes, SQL reads beans as a column name."},
      {t:"Add a column called beans", why:"That would hide the mistake. beans is a value, not a column."},
      {t:"Use == instead of =", why:"SQLite accepts == as well, but the missing quotes are the problem."},
      {t:"Write BEANS in capitals", why:"Unquoted, it’s still read as a column name, and the stored value is lower case."}]},
    {id:"t3u9-q15", lesson:"t3u9-l2", level:3, q:"Mei copies a query from a word-processor document and gets “no such column: ‘kale’”. The query looks right. What’s the most likely cause?", options:[
-     {t:"The quotes are curly (‘ ’), which SQL doesn’t accept; retype them as straight ' quotes", ok:true, why:"Word processors and some keyboards convert quotes. SQL only recognises the straight apostrophe."},
+     {t:"The quotes are curly, which SQL doesn’t accept", ok:true, why:"Retype the curly ‘ ’ as straight ' quotes. Word processors and some keyboards convert quotes. SQL only recognises the straight apostrophe."},
      {t:"There is no kale in the table", why:"Then the query would run and return no rows, not report a missing column."},
      {t:"kale must be in capitals", why:"Case would change which rows match, not cause a column error."},
-     {t:"The query needs a semicolon at the start", why:"Semicolons end statements; they don’t cause this error."}]},
+     {t:"The query needs a semicolon at the start as well as the end", why:"Semicolons end statements; they don’t cause this error."}]},
    {id:"t3u9-q16", lesson:"t3u9-l2", level:1, q:"Which weights does `WHERE kg BETWEEN 3 AND 5` keep?", options:[
      {t:"From 3 to 5, including 3 and 5", ok:true, why:"BETWEEN is inclusive at both ends: the same as kg >= 3 AND kg <= 5."},
      {t:"More than 3 and less than 5", why:"That would exclude the end values; BETWEEN includes them."},
@@ -945,16 +1007,16 @@ ICA.addUnit({
      {t:"1", why:"DISTINCT keeps one row per different value, not one row in total."},
      {t:"3", why:"There are four different crops; count them in the harvests table."}]},
    {id:"t3u9-q18", lesson:"t3u9-l2", level:3, q:"Dmitri’s query `SELECT * FROM members WHERE name = \"Ama\";` works in SQLite but fails on PostgreSQL with “column \"Ama\" does not exist”. Why?", options:[
-     {t:"Double quotes mean a name in standard SQL; SQLite only treats them as text when no column matches", ok:true, why:"Use single quotes for text ('Ama'); that works everywhere."},
+     {t:"In standard SQL, double quotes mean a name, not text", ok:true, why:"SQLite only treats them as text when no column matches. Use single quotes for text ('Ama'); that works everywhere."},
      {t:"PostgreSQL has no WHERE clause", why:"It does. The quotes are the problem."},
      {t:"Names must be in capitals in PostgreSQL", why:"Case isn’t the issue; the double quotes are."},
-     {t:"PostgreSQL doesn’t allow text comparisons", why:"It does, with single-quoted text."}]},
+     {t:"PostgreSQL doesn’t allow text comparisons in a WHERE clause", why:"It does, with single-quoted text."}]},
 
    /* ---------- Lesson 3 ---------- */
    {id:"t3u9-q19", lesson:"t3u9-l3", level:1, q:"What’s the difference between COUNT(*) and COUNT(plot_id)?", options:[
-     {t:"COUNT(*) counts rows; COUNT(plot_id) counts rows where plot_id isn’t NULL", ok:true, why:"On the garden members table they give 6 and 5."},
+     {t:"COUNT(plot_id) skips rows where plot_id is NULL", ok:true, why:"COUNT(*) counts every row. On the garden members table they give 6 and 5."},
      {t:"There is no difference", why:"They differ whenever the column has NULLs."},
-     {t:"COUNT(plot_id) adds up the plot numbers", why:"Adding is SUM. COUNT counts values."},
+     {t:"COUNT(plot_id) adds up all the plot numbers in the column", why:"Adding is SUM. COUNT counts values."},
      {t:"COUNT(*) counts only the first column", why:"COUNT(*) counts whole rows, whatever is in them."}]},
    {id:"t3u9-q20", lesson:"t3u9-l3", level:2, q:"In the result of `SELECT crop, SUM(kg) FROM harvests GROUP BY crop;`, what is squash’s total? (Squash harvests: 10.5 kg and 6.5 kg.)", options:[
      {t:"17", ok:true, why:"10.5 + 6.5 = 17, in one row for the squash group."},
@@ -987,8 +1049,8 @@ ICA.addUnit({
      {t:"An error", why:"An empty result is normal; the query runs."},
      {t:"No row at all", why:"An aggregate without GROUP BY always returns one row, here holding NULL."}]},
    {id:"t3u9-q26", lesson:"t3u9-l3", level:3, q:"A dataset imported from another system marks missing ages as -999. Fatima runs `SELECT AVG(age) FROM people;`. What’s the risk?", options:[
-     {t:"SQL treats -999 as a real age, so it drags the average down", ok:true, why:"Only NULL is skipped. Convert the code to NULL first, or exclude it with WHERE age <> -999."},
-     {t:"None: AVG skips -999 automatically", why:"AVG skips only NULL. -999 is an ordinary number to SQL."},
+     {t:"-999 counts as a real age and drags the average down", ok:true, why:"Only NULL is skipped. Convert the code to NULL first, or exclude it with WHERE age <> -999."},
+     {t:"None: AVG skips -999 automatically, as a missing-value code", why:"AVG skips only NULL. -999 is an ordinary number to SQL."},
      {t:"The query fails", why:"It runs and gives a wrong answer, which is worse."},
      {t:"AVG treats -999 as zero", why:"It uses the value -999 itself."}]},
    {id:"t3u9-q27", lesson:"t3u9-l3", level:2, q:"In SQLite, `SELECT crop, month, SUM(kg) FROM harvests GROUP BY crop;` runs. What does the month column show?", options:[
@@ -1019,9 +1081,9 @@ ICA.addUnit({
      {t:"Use LEFT JOIN instead", why:"The join type doesn’t change which id you mean."},
      {t:"Remove the ON condition", why:"Then every row would pair with every row."}]},
    {id:"t3u9-q32", lesson:"t3u9-l4", level:3, q:"Priya joins orders (one row per order, with a delivery fee) to order_items (one row per item) and sums the delivery fees. The total is far higher than the fees really charged. Why?", options:[
-     {t:"Each order’s fee is repeated once per item, so it’s added several times", ok:true, why:"Fan-out. Sum fees from the orders table on its own, or summarise items first and join afterwards."},
+     {t:"Each order’s fee is repeated once per item", ok:true, why:"So it’s added several times: fan-out. Sum fees from the orders table on its own, or summarise items first and join afterwards."},
      {t:"SUM doesn’t work after a join", why:"SUM works; it adds the repeated rows the join produced."},
-     {t:"The join dropped some orders", why:"Dropping rows would make the total smaller, not larger."},
+     {t:"The join dropped some orders that had no items", why:"Dropping rows would make the total smaller, not larger."},
      {t:"Fees must be stored as text", why:"Text would make sums wrong in other ways; numbers are right. The repetition is the problem."}]},
    {id:"t3u9-q33", lesson:"t3u9-l4", level:1, q:"In `FROM harvests AS h JOIN members AS m ON h.member_id = m.id`, what are h and m?", options:[
      {t:"Short names (aliases) for the two tables, used as prefixes", ok:true, why:"h.kg means the kg column of harvests; m.name the name column of members."},
@@ -1029,17 +1091,17 @@ ICA.addUnit({
      {t:"Column names", why:"They name tables; columns come after the dot."},
      {t:"Required SQL keywords", why:"They’re names you choose; any short name works."}]},
    {id:"t3u9-q34", lesson:"t3u9-l4", level:2, q:"A members table declares `plot_id INTEGER REFERENCES plots(id)`, but SQLite still accepts plot_id 99, which doesn’t exist. Why?", options:[
-     {t:"SQLite only checks foreign keys after PRAGMA foreign_keys = ON on that connection", ok:true, why:"Enforcement is off by default for compatibility with old databases. With it on, SQLite refuses: “FOREIGN KEY constraint failed”."},
+     {t:"SQLite only checks foreign keys once they are turned on", ok:true, why:"Turn them on with PRAGMA foreign_keys = ON on that connection. Enforcement is off by default for compatibility with old databases. With it on, SQLite refuses: “FOREIGN KEY constraint failed”."},
      {t:"REFERENCES isn’t valid SQL", why:"It’s standard SQL; SQLite parses it but doesn’t enforce it by default."},
-     {t:"Foreign keys only work on text columns", why:"They work on any type."},
+     {t:"Foreign keys only work on text columns, not on INTEGER ones", why:"They work on any type."},
      {t:"99 is too large for SQLite", why:"SQLite integers go far higher than 99."}]},
    {id:"t3u9-q35", lesson:"t3u9-l4", level:3, q:"Hana joins students to grades with an inner join to print a class list with each student’s grade. Two students with no grade yet are missing from the list. What should she use?", options:[
-     {t:"students LEFT JOIN grades, so every student appears, with NULL where there’s no grade", ok:true, why:"The left table (students) is kept whole."},
+     {t:"students LEFT JOIN grades", ok:true, why:"The left table (students) is kept whole, so every student appears, with NULL where there’s no grade."},
      {t:"grades LEFT JOIN students", why:"That keeps every grade, not every student; students with no grade still wouldn’t appear."},
      {t:"Remove the ON condition", why:"That pairs every student with every grade."},
      {t:"Add WHERE grade IS NOT NULL", why:"That removes students without grades, the opposite of what she wants."}]},
    {id:"t3u9-q36", lesson:"t3u9-l4", level:2, q:"A query joining 6 members and 10 harvests returns 60 rows. What’s the most likely mistake?", options:[
-     {t:"The ON condition is missing, so every member was paired with every harvest", ok:true, why:"6 × 10 = 60. The right join returns 10 rows."},
+     {t:"The ON condition is missing", ok:true, why:"Every member was paired with every harvest: 6 × 10 = 60. The right join returns 10 rows."},
      {t:"A LEFT JOIN was used instead of an inner join", why:"A left join from harvests would still return 10 rows here."},
      {t:"The tables have duplicate rows", why:"The numbers 6 × 10 point to every-pairing, not duplicates."},
      {t:"LIMIT was left out", why:"LIMIT would hide the problem, not fix it."}]},
@@ -1051,12 +1113,12 @@ ICA.addUnit({
      {t:"When you run a SELECT query", why:"SELECT only reads; it doesn’t save anything."},
      {t:"Only when you export a CSV", why:"Exporting writes a separate file; it doesn’t save the database."}]},
    {id:"t3u9-q38", lesson:"t3u9-l5", level:2, q:"After importing a CSV, `ORDER BY amount DESC` puts 9 above 70 and 120. What does this tell you?", options:[
-     {t:"The amount column was imported as TEXT, so it sorts character by character", ok:true, why:"Change its type to INTEGER or REAL (Modify Table) and check it again."},
+     {t:"The amount column was imported as TEXT", ok:true, why:"Text sorts character by character. Change its type to INTEGER or REAL (Modify Table) and check it again."},
      {t:"DESC sorts smallest first", why:"DESC sorts largest first; the problem is the type."},
      {t:"The CSV had a header row", why:"A header row would appear as data if the box were unticked, but it wouldn’t cause this order."},
-     {t:"SQLite can’t sort numbers", why:"It sorts numbers correctly when they’re stored as numbers."}]},
+     {t:"SQLite can’t sort numbers bigger than 9 correctly", why:"It sorts numbers correctly when they’re stored as numbers."}]},
    {id:"t3u9-q39", lesson:"t3u9-l5", level:3, q:"Priya’s community-centre booking app builds its query by gluing the typed name into the SQL text. Names with apostrophes break it. What’s the right fix?", options:[
-     {t:"Use a parameterised query with a placeholder, so the name is sent separately as data", ok:true, why:"It fixes the apostrophe bug and closes the SQL injection hole at the same time."},
+     {t:"Use a parameterised query with a placeholder", ok:true, why:"The name is sent separately as data. It fixes the apostrophe bug and closes the SQL injection hole at the same time."},
      {t:"Ask users not to type apostrophes", why:"Real names contain apostrophes, and attackers won’t follow instructions."},
      {t:"Delete apostrophes from names before searching", why:"That corrupts real names and doesn’t stop other crafted input."},
      {t:"Switch to double quotes in the SQL", why:"Then names with double quotes would break it instead, and the injection hole remains."}]},
@@ -1066,9 +1128,9 @@ ICA.addUnit({
      {t:"kg, holding 2.5", why:"One number, with the unit in the column name: good design."},
      {t:"member_id, holding 3", why:"A single foreign-key value."}]},
    {id:"t3u9-q41", lesson:"t3u9-l5", level:2, q:"A school database has students and courses. Each student takes many courses and each course has many students. How should enrolment be stored?", options:[
-     {t:"A linking table, enrolments(student_id, course_id), with both columns as its primary key", ok:true, why:"Many-to-many links need their own table; the two-part key prevents duplicate enrolments."},
+     {t:"A linking table of student_id and course_id pairs", ok:true, why:"For example enrolments(student_id, course_id), with both columns as its primary key. Many-to-many links need their own table; the two-part key prevents duplicate enrolments."},
      {t:"A course_id column in students", why:"One column can hold only one course per student."},
-     {t:"A list of student names in one cell of courses", why:"Not atomic, and names repeat across tables."},
+     {t:"A list of student names in one cell of the courses table", why:"Not atomic, and names repeat across tables."},
      {t:"A separate table for each course", why:"Tables per course multiply with every new course, and every query has to change."}]},
    {id:"t3u9-q42", lesson:"t3u9-l5", level:3, q:"Lucía copies `SELECT TOP 5 name FROM customers;` from a forum and SQLite says there’s a syntax error. What should she write?", options:[
      {t:"`SELECT name FROM customers ORDER BY … LIMIT 5;`", ok:true, why:"TOP is SQL Server’s dialect; SQLite uses LIMIT, and needs ORDER BY for “top” to mean anything."},
@@ -1081,13 +1143,13 @@ ICA.addUnit({
      {t:"Members can’t have more than four columns", why:"There’s no such limit."},
      {t:"It makes joins impossible", why:"Joins still work; the problem is inconsistent copies."}]},
    {id:"t3u9-q44", lesson:"t3u9-l5", level:1, q:"What is DB Browser for SQLite?", options:[
-     {t:"A free, open-source desktop app for viewing and editing SQLite databases and running SQL", ok:true, why:"It runs on Windows, macOS and Linux; there’s no phone version."},
+     {t:"A free desktop app for working with SQLite databases", ok:true, why:"It’s open source, lets you view and edit tables and run SQL, and runs on Windows, macOS and Linux; there’s no phone version."},
      {t:"A web browser made by the SQLite developers", why:"Despite the name, it isn’t a web browser."},
      {t:"A paid database server", why:"It’s free, and SQLite has no server."},
-     {t:"A phone app for browsing databases", why:"It’s a desktop program; on a phone, use the Data Lab."}]},
+     {t:"A phone app for browsing and editing databases on the go", why:"It’s a desktop program; on a phone, use the Data Lab."}]},
    {id:"t3u9-q45", lesson:"t3u9-l5", level:3, q:"Ana’s teammate wants one wide table (member, bed, crop, kg) for a chart, and suggests storing it instead of the three tables. What’s the better approach?", options:[
-     {t:"Keep the normalised tables and create the wide table with a query or a VIEW when needed", ok:true, why:"A view always reflects the current data; a stored copy goes stale and invites contradictions."},
-     {t:"Replace the three tables with the wide one", why:"That brings back the repetition and update problems normalisation solved."},
+     {t:"Keep the three tables and make the wide one with a query or VIEW", ok:true, why:"A view always reflects the current data; a stored copy goes stale and invites contradictions."},
+     {t:"Replace the three tables with the single wide one for simplicity", why:"That brings back the repetition and update problems normalisation solved."},
      {t:"Keep both and edit them separately", why:"Two editable copies will eventually disagree."},
      {t:"Charts can’t use SQL results", why:"Query results export to CSV or feed charts directly."}]}
   ]

@@ -127,13 +127,13 @@ ICA.addUnit({
       {t:"The USB-C cable only supports slow charging, so the laptop drains faster than it charges.", b:1, why:"A specific, testable cause: swapping the cable would confirm it."}
     ]},
     {id:"t1u7-l1-x3", type:"mcq", q:"Tomás’s desktop computer shows a black screen this morning. The power light is on and he can hear the fan. Applying “question the obvious”, what should he check first?", options:[
-      {t:"That the monitor is switched on, its cable is firmly connected and it’s set to the right input", ok:true, why:"The computer seems to be running, so the obvious, cheap checks are on the display side: power, cable and the monitor’s input setting. These take a minute and are common causes."},
+      {t:"That the monitor is on, plugged in and on the right input", ok:true, why:"The computer seems to be running, so the obvious, cheap checks are on the display side: the monitor’s power, its cable and its input setting. These take a minute and are common causes."},
       {t:"Reinstall the operating system", why:"That’s drastic, slow and risky for his data, and nothing yet suggests the system is the problem. Obvious checks come first."},
       {t:"Order a new graphics card", why:"Possible in theory, but expensive and far less likely than a loose cable or the wrong input. Test cheap theories before expensive ones."},
       {t:"Search online for “black screen” and follow the first fix he finds", why:"Without identifying the problem first, a random fix may not match his situation and could make it worse."}
     ]},
     {id:"t1u7-l1-x4", type:"mcq", q:"Hana’s laptop wouldn’t connect to Wi-Fi. She updated the Wi-Fi driver, turned off her VPN app, changed a DNS setting and restarted the router, all at once. Now it works. What’s the main problem with her approach?", options:[
-      {t:"She can’t tell which change fixed it, and she may have made changes she didn’t need", ok:true, why:"Right. Changing one thing at a time tells you the real cause. Now she doesn’t know whether the VPN, the driver, the DNS setting or the router was to blame, so she can’t prevent a repeat, and she may have left unnecessary changes behind."},
+      {t:"She can’t tell which change fixed it", ok:true, why:"Right. Changing one thing at a time tells you the real cause. Now she doesn’t know whether the VPN, the driver, the DNS setting or the router was to blame, so she can’t prevent a repeat, and she may have left unnecessary changes behind."},
       {t:"Nothing: the problem is fixed, so the method worked", why:"It’s fixed for now, but without knowing the cause she can’t prevent it, and the next time she’ll have to guess again."},
       {t:"She should have reinstalled Windows instead", why:"That’s far more drastic and would also hide the cause. The issue is changing several things at once."},
       {t:"Restarting a router can never fix Wi-Fi problems", why:"Restarting the router fixes many connection problems. It may well have been the fix, but she can’t know."}
@@ -290,10 +290,10 @@ ICA.addUnit({
       {t:"A laptop is in airplane mode after a flight.", b:0, why:"A setting on this one device. Turning airplane mode off fixes it."}
     ]},
     {id:"t1u7-l2-x3", type:"mcq", q:"Oluwaseun’s Windows laptop keeps showing error pop-ups a minute after every sign-in. In Safe Mode, the pop-ups don’t appear. What does that suggest?", options:[
-      {t:"Something that loads at startup, such as an app or driver, is the likely cause", ok:true, why:"Safe mode loads only the essentials. The problem disappearing there points to an extra app, service or driver that normally starts with Windows. Next step: check startup apps and recently installed software."},
+      {t:"Something that loads at startup is the likely cause", ok:true, why:"It could be an app or a driver. Safe mode loads only the essentials. The problem disappearing there points to an extra app, service or driver that normally starts with Windows. Next step: check startup apps and recently installed software."},
       {t:"The hardware is failing", why:"Hardware faults usually persist in safe mode, because the same hardware is used. The problem vanishing in safe mode points away from hardware."},
       {t:"He should stay in safe mode permanently", why:"Safe mode is a diagnostic tool. Many features and drivers are missing there. Use it to find the cause, then fix the cause and start normally."},
-      {t:"Windows itself is damaged and must be reinstalled", why:"If core Windows were damaged, problems would usually appear in safe mode too. The test points to an add-on, which is a much smaller fix."}
+      {t:"Windows itself is damaged and must be reinstalled from scratch", why:"If core Windows were damaged, problems would usually appear in safe mode too. The test points to an add-on, which is a much smaller fix."}
     ]},
     {id:"t1u7-l2-x4", type:"match", q:"Match each clue to the most likely cause of slowness.", pairs:[
       ["Slow for several minutes after signing in, then fine","Too many apps set to start automatically","A slow start that settles down points to startup apps. Check the Startup list."],
@@ -303,9 +303,9 @@ ICA.addUnit({
       ["Slow for an afternoon right after a major update","Normal background work, such as file indexing","Systems often re-index and optimise after a big update. Waiting is usually the fix."]
     ]},
     {id:"t1u7-l2-x5", type:"mcq", q:"Every device in Fatima’s flat shows “connected, no internet”. What does “connected” tell her?", options:[
-      {t:"The devices reached the router over Wi-Fi; the problem is further along: router, modem or provider", ok:true, why:"Right. “Connected” describes the Wi-Fi link to the router. “No internet” means the router isn’t getting through. She should power-cycle the router and modem, then check for an outage."},
+      {t:"The devices reached the router; the problem is further along", ok:true, why:"Right. “Connected” describes the Wi-Fi link to the router. “No internet” means the router isn’t getting through, so the problem is the router, modem or provider. She should power-cycle the router and modem, then check for an outage."},
       {t:"All the devices have broken Wi-Fi hardware", why:"Several devices failing in the same way at once points to something they share: the router, modem or provider."},
-      {t:"She should reset network settings on every device", why:"That’s a last resort for one misbehaving device, and it wipes saved Wi-Fi passwords. Here the devices are fine; the break is past the Wi-Fi link."},
+      {t:"She should reset the network settings on every one of her devices", why:"That’s a last resort for one misbehaving device, and it wipes saved Wi-Fi passwords. Here the devices are fine; the break is past the Wi-Fi link."},
       {t:"The Wi-Fi password has been changed", why:"With a wrong password the devices wouldn’t show “connected” at all."}
     ]},
     {id:"t1u7-l2-x6", type:"order", q:"Put Microsoft’s steps for restarting a modem and router in order.", items:[
@@ -316,9 +316,9 @@ ICA.addUnit({
       {t:"Test the connection on one device and note the result.", why:"Verify, and document. If it still fails, the next step is checking for a provider outage."}
     ]},
     {id:"t1u7-l2-x7", type:"mcq", q:"Kenji’s Mac won’t turn on at all: no sound, no light, nothing on screen. What should he try first?", options:[
-      {t:"Check the power cable, adapter and outlet (swapping in ones that work), then press and hold the power button for about 10 seconds", ok:true, why:"These are Apple’s first steps for a Mac that doesn’t turn on, and they test the cheapest, most likely causes. Unplugging accessories is the next step."},
+      {t:"Check the power cable, adapter and outlet", ok:true, why:"He should swap in ones that work, then press and hold the power button for about 10 seconds. These are Apple’s first steps for a Mac that doesn’t turn on, and they test the cheapest, most likely causes. Unplugging accessories is the next step."},
       {t:"Start the Mac in safe mode", why:"Safe mode needs the Mac to start. With no power or response at all, he must check power first."},
-      {t:"Erase the Mac and reinstall macOS", why:"Drastic and impossible without power anyway. Nothing yet suggests a software problem."},
+      {t:"Erase the Mac and reinstall macOS from the start", why:"Drastic and impossible without power anyway. Nothing yet suggests a software problem."},
       {t:"Buy a new Mac", why:"Most “won’t turn on” problems have cheap causes. Test those first, and get it checked by a repairer before replacing it."}
     ]}
    ],
@@ -457,7 +457,7 @@ ICA.addUnit({
       {t:"Uninstall and reinstall from the app store", why:"A fresh copy of the app. Climb to this only when the steps above haven’t worked."}
     ]},
     {id:"t1u7-l3-x2", type:"mcq", q:"Priya’s banking app on Android won’t load past the opening screen. She’s already restarted the phone and updated the app and Android. Which should she try next, and why?", options:[
-      {t:"Clear the app’s cache, because it removes temporary files without deleting her data or sign-in", ok:true, why:"Clearing the cache is the next gentle rung. Temporary files can become corrupted, and the app rebuilds them. Clearing storage would also remove her sign-in and settings, so it comes later."},
+      {t:"Clear the app’s cache, because it keeps her data and sign-in", ok:true, why:"Clearing the cache removes temporary files without deleting her data or sign-in, so it’s the next gentle rung. Temporary files can become corrupted, and the app rebuilds them. Clearing storage would also remove her sign-in and settings, so it comes later."},
       {t:"Clear the app’s storage first, because it’s the same as clearing the cache", why:"They’re different. Clearing storage resets the app and deletes its data on the phone, including sign-ins. Try the cache first."},
       {t:"Factory reset the phone", why:"Far too drastic for one misbehaving app. It erases everything on the phone."},
       {t:"Install a cache-cleaning app from an advert", why:"Android has this built in. Cleaner apps from adverts are unnecessary and some are harmful."}
@@ -492,9 +492,9 @@ ICA.addUnit({
       {t:"Replace the ink cartridges", why:"Other laptops print fine through the same printer, so the ink isn’t the problem."}
     ]},
     {id:"t1u7-l3-x7", type:"mcq", q:"Hana edited a document on her laptop and on her tablet while both were offline. Now her cloud folder has `plan.docx` and `plan (Hana’s tablet).docx`. What happened, and what should she do?", options:[
-      {t:"A sync conflict: she should open both, combine the changes into one file, then delete the extra copy", ok:true, why:"The service couldn’t know which edits to keep, so it saved both rather than lose either. Merging by hand keeps all her work."},
+      {t:"A sync conflict: she should merge the two copies into one", ok:true, why:"The service couldn’t know which edits to keep, so it saved both rather than lose either. Opening both, combining the changes into one file, then deleting the extra copy keeps all her work."},
       {t:"Malware has copied her files", why:"A second copy named after one of her devices is the classic sign of a sync conflict, not malware."},
-      {t:"Delete the tablet copy straight away", why:"That would throw away the edits she made on the tablet. Check both copies first."},
+      {t:"Delete the tablet copy straight away, since it’s a duplicate", why:"That would throw away the edits she made on the tablet. Check both copies first."},
       {t:"Her cloud storage is full", why:"A full quota stops uploads; it doesn’t create a named duplicate. This is a conflict between two edited versions."}
     ]}
    ],
@@ -627,8 +627,8 @@ ICA.addUnit({
       {t:"Swap in another headset, or try his on another device", why:"If settings all look right, a swap test checks the hardware."}
     ]},
     {id:"t1u7-l4-x2", type:"mcq", q:"Sione’s wireless earbuds won’t show up when he tries to add them to his laptop. They work with his phone, which is in his pocket with Bluetooth on. What’s the most likely problem?", options:[
-      {t:"The earbuds are connected to his phone, so they aren’t available for a new pairing", ok:true, why:"Many accessories connect automatically to the last device they knew. He should turn off Bluetooth on the phone (or disconnect the earbuds there), put the earbuds in pairing mode, then add them on the laptop."},
-      {t:"The laptop needs a new Bluetooth adapter", why:"Possible but unlikely. The earbuds being busy with the phone explains the symptom without any faulty part."},
+      {t:"The earbuds are still connected to his phone", ok:true, why:"That means they aren’t available for a new pairing. Many accessories connect automatically to the last device they knew. He should turn off Bluetooth on the phone (or disconnect the earbuds there), put the earbuds in pairing mode, then add them on the laptop."},
+      {t:"The laptop needs a new Bluetooth adapter fitted", why:"Possible but unlikely. The earbuds being busy with the phone explains the symptom without any faulty part."},
       {t:"Earbuds can only ever pair with one device", why:"Most can be paired with several devices; they usually connect to one at a time."},
       {t:"He needs to reset his laptop", why:"Much too drastic. Freeing the earbuds from the phone is the obvious first test."}
     ]},
@@ -647,8 +647,8 @@ ICA.addUnit({
       {t:"Mac: System Settings → Sound → Input", b:0, why:"It sets the system’s default input device for the whole Mac."}
     ]},
     {id:"t1u7-l4-x5", type:"mcq", q:"Fatima connects her laptop to a monitor through a USB-C hub. The monitor says “no signal”. Which test isolates the problem fastest?", options:[
-      {t:"Connect the monitor directly to the laptop with a cable known to carry video, then try the hub again", ok:true, why:"A swap test that removes the hub. If the direct cable works, the hub (or its cable) is the weak link. Both Microsoft and Apple suggest connecting directly to test."},
-      {t:"Update every driver on the laptop", why:"A broad change that doesn’t test a specific theory. The hub is the most likely suspect; test it first."},
+      {t:"Connect the monitor directly to the laptop, without the hub", ok:true, why:"Use a cable known to carry video, then try the hub again. This swap test removes the hub: if the direct cable works, the hub (or its cable) is the weak link. Both Microsoft and Apple suggest connecting directly to test."},
+      {t:"Update every driver on the laptop, then restart it and test again", why:"A broad change that doesn’t test a specific theory. The hub is the most likely suspect; test it first."},
       {t:"Buy a bigger monitor", why:"The monitor’s size has nothing to do with “no signal”."},
       {t:"Turn off Bluetooth", why:"Bluetooth has nothing to do with a wired monitor connection."}
     ]},
@@ -835,7 +835,7 @@ ICA.addUnit({
       {t:"“Paste this long command into an admin prompt” (with no explanation)", b:1, why:"Unexplained admin commands can change or delete system settings. Find an official explanation first."}
     ]},
     {id:"t1u7-l5-x6", type:"mcq", q:"Priya is about to factory reset her Android phone. She has backed it up. What else must she check first?", options:[
-      {t:"That she knows the password for the Google Account on the phone, because the phone will ask for it after the reset", ok:true, why:"Google says that after a reset you must sign in to your Google Account, and suggests confirming you know the username and password (and waiting 24 hours after a password change). Without it, she can be locked out of her own phone."},
+      {t:"That she knows her Google Account password", ok:true, why:"The phone will ask for it after the reset. Google says that after a reset you must sign in to your Google Account, and suggests confirming you know the username and password (and waiting 24 hours after a password change). Without it, she can be locked out of her own phone."},
       {t:"That she has turned off the screen lock", why:"Not needed. Google asks you to know your screen lock PIN, pattern or password, not to turn it off. The Google Account password is what the phone asks for after the reset."},
       {t:"That she has deleted all her photos by hand", why:"The reset erases them anyway. What matters is that they’re backed up first."},
       {t:"Nothing else: a backup is all she needs", why:"A backup is essential, but without the Google Account password she may not be able to set up the phone again. Charging it is also wise."}
@@ -871,6 +871,80 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t1u7-q02","t1u7-q06","t1u7-q11","t1u7-q14","t1u7-q17","t1u7-q20","t1u7-q24","t1u7-q29","t1u7-q33","t1u7-q38","t1u7-q41","t1u7-q44"],
+  cpBank:[
+    {id:"t1u7-cp01", lesson:"t1u7-l1", level:1, q:"Nikolai fixed a printing problem by reinstalling the printer. Now he prints a page from two different apps and checks his scanner still works. Which troubleshooting step is he doing?", options:[
+      {t:"Identify the problem", why:"Identifying comes first: what happens, since when and what changed. Nikolai has already fixed the problem."},
+      {t:"Test the theory to determine the cause", why:"Testing checks an idea about the cause before the fix. He is checking after the fix."},
+      {t:"Verify full system functionality", ok:true, why:"Verifying means checking that everything works now, not just the thing that was broken, such as printing from more than one app."},
+      {t:"Document findings, actions and outcomes", why:"Documenting is writing down what he found and did. Checking that things work is the step before."}
+    ]},
+    {id:"t1u7-cp02", lesson:"t1u7-l3", level:1, q:"Ama’s drawing app is still on screen, but a spinning wheel appears and clicks do nothing. What is this, and what should she do first?", options:[
+      {t:"A freeze; wait a minute before forcing it to quit", ok:true, why:"The app stays on screen but stops responding, so it’s a freeze. It may be busy saving, and waiting can keep her work."},
+      {t:"A crash; uninstall and reinstall the app straight away", why:"A crash is when the app closes by itself. Hers is still open, and reinstalling is a drastic step."},
+      {t:"A freeze; factory reset the device", why:"A factory reset erases everything and is the last resort. Waiting, then force quitting, comes first."},
+      {t:"A crash; force quit immediately", why:"This isn’t a crash, because the app is still on screen. Waiting a minute first may save her drawing."}
+    ]},
+    {id:"t1u7-cp03", lesson:"t1u7-l4", level:1, q:"Diego switches on his new Bluetooth keyboard, but it doesn’t appear in his laptop’s list of devices to add. What is the most likely reason?", options:[
+      {t:"The laptop needs a new USB-C cable", why:"Bluetooth is a wireless link, so a cable isn’t involved in pairing."},
+      {t:"The keyboard layout is set to the wrong language", why:"The layout affects which symbols appear when you type. It doesn’t stop the keyboard appearing in the list."},
+      {t:"The keyboard isn’t in pairing mode yet", ok:true, why:"A Bluetooth device must be discoverable before it appears. Its manual usually says to hold a button until a light flashes."},
+      {t:"The laptop’s print queue is blocked", why:"The print queue only affects printing. It has nothing to do with Bluetooth."}
+    ]},
+    {id:"t1u7-cp04", lesson:"t1u7-l1", level:2, q:"Jonas’s USB mouse stops working on his laptop. He plugs the same mouse into a different USB port on the same laptop, and it works. What does this swap test suggest?", options:[
+      {t:"The mouse is broken and needs replacing", why:"The mouse works in the other port, so the mouse itself is fine."},
+      {t:"The laptop’s operating system needs reinstalling", why:"The mouse works in another port on the same system, so the system is coping. Reinstalling would be drastic."},
+      {t:"The laptop needs more RAM", why:"RAM has nothing to do with whether one port works. The swap points to that port."},
+      {t:"The first port is the likely problem", ok:true, why:"Changing only the port fixed it, so the problem follows the port (dirt or damage, for example). That is what a one-change swap test tells you."}
+    ]},
+    {id:"t1u7-cp05", lesson:"t1u7-l2", level:2, q:"Right after a big system update, Leila’s laptop feels slow for a few hours. Nothing else has changed. What is the best first response?", options:[
+      {t:"Leave it on and plugged in for a while, then check", ok:true, why:"After a big update, the system often does normal background work, such as indexing files. This usually settles on its own."},
+      {t:"Install a “speed booster” app that an advert recommends", why:"Guidance says to avoid these apps. Some are scams, and the built-in tools do the useful parts."},
+      {t:"Buy more RAM immediately", why:"Slowness that follows an update for a few hours is usually background work, not a lack of memory. Diagnose before you spend."},
+      {t:"Reset the laptop to factory settings", why:"A factory reset erases everything and is the last resort. Waiting is the sensible first step here."}
+    ]},
+    {id:"t1u7-cp06", lesson:"t1u7-l3", level:2, q:"A note-taking app on Hamza’s Windows laptop won’t open. Restarting and updating didn’t help. In the app’s Advanced options he sees **Repair** and **Reset**. What does Microsoft advise?", options:[
+      {t:"Reset first, because it fixes more problems than Repair", why:"Reset returns the app to how it was when first installed and removes its data and settings on this device. It comes after Repair."},
+      {t:"Uninstall Windows and reinstall it", why:"That is far more drastic than needed. The app’s own Repair option comes first."},
+      {t:"Try Repair first, because it keeps the app’s data", ok:true, why:"Repair checks and fixes the app’s files without losing data. Use Reset only if Repair isn’t offered or doesn’t help."},
+      {t:"Neither; the only fix is to buy a different app", why:"Repair and Reset exist exactly for this. Climb the ladder of fixes before giving up."}
+    ]},
+    {id:"t1u7-cp07", lesson:"t1u7-l5", level:2, q:"Bea writes to her help desk: “Laptop problem. Spreadsheet app crashes when I open a big file. I restarted.” What would help the helper most if she added it?", options:[
+      {t:"Her account password, so they can sign in and look for themselves", why:"Never put passwords in a help request. Real support staff don’t need them in writing."},
+      {t:"The exact error, the app and system versions, and what changed recently", ok:true, why:"These are the Lesson 1 notes a helper needs. Exact messages, versions and recent changes point towards the cause."},
+      {t:"A sentence saying it is very urgent", why:"Urgency doesn’t help them find the cause. Specific details do."},
+      {t:"The names of everyone in her team", why:"That doesn’t help diagnose the problem, and it shares personal details for no reason."}
+    ]},
+    {id:"t1u7-cp08", lesson:"t1u7-l4", level:2, q:"In a video-call app, Selam’s camera shows only a black box. Her system’s own Camera app shows her picture clearly. Where should she look next?", options:[
+      {t:"Buy a new webcam, because the camera is broken", why:"The camera works in the Camera app, so the hardware is fine."},
+      {t:"Run a network reset on her laptop", why:"A camera picture doesn’t depend on network settings. This also removes saved Wi-Fi networks."},
+      {t:"Update the printer driver", why:"The printer driver has nothing to do with the camera."},
+      {t:"The call app’s camera setting and its permission", ok:true, why:"Working in another app means the hardware is fine. The likely cause is the call app’s settings, such as the camera it uses or its permission."}
+    ]},
+    {id:"t1u7-cp09", lesson:"t1u7-l5", level:3, q:"A caller says Bilal’s internet provider refunded him too much by mistake. He asks to connect to Bilal’s laptop “to fix it”, then wants the difference sent back in gift cards. What should Bilal do?", options:[
+      {t:"Let him connect but watch carefully, then pay only the difference", why:"This is a refund scam. Never give remote access to someone who contacted you first, and gift-card payment is a strong scam signal."},
+      {t:"Ask for the caller’s staff number, then do what he asks", why:"Scammers can invent staff numbers and fake caller ID. The contact came from them, so it can’t be trusted."},
+      {t:"Pay with a bank transfer instead of gift cards", why:"Any payment to the caller goes to the scammer. The safe step is to hang up."},
+      {t:"Hang up, and contact the provider on a number he already knows", ok:true, why:"Calls about an overpaid refund that ask for remote access and money back are a known scam. Don’t allow access; check through a channel he trusts."}
+    ]},
+    {id:"t1u7-cp10", lesson:"t1u7-l3", level:3, q:"A colleague sends Zainab `budget.numbers`, made in Apple’s Numbers app. It won’t open on her Windows laptop. She renames it to `budget.xlsx`, and Excel says the file is damaged. What is the best fix?", options:[
+      {t:"Keep the new name; the error means the file was corrupt all along", why:"The file is probably fine. Renaming changed only the label, so Excel was given data it doesn’t understand."},
+      {t:"Rename it back and ask for an `.xlsx` or PDF export", ok:true, why:"`.numbers` is an unfamiliar format on Windows. Converting means exporting from an app that can read it (here, the colleague’s Numbers), not renaming."},
+      {t:"Change her default app for `.xlsx` files to a web browser", why:"The default app isn’t the issue. The data inside is still in Numbers format."},
+      {t:"Clear Excel’s cache and try again", why:"Clearing a cache won’t help, because the problem is the file format, not Excel."}
+    ]},
+    {id:"t1u7-cp11", lesson:"t1u7-l2", level:3, q:"Since last night’s update, Sven’s Windows laptop crashes a few minutes after every sign-in. The crashes also happen in Safe Mode. Which next step fits best?", options:[
+      {t:"Turn off startup apps one by one", why:"Safe Mode already loads without them, and the crashes continue. So startup apps are unlikely to be the cause."},
+      {t:"Choose **Reset this PC → Remove everything** straight away", why:"A full reset is the last resort. A gentler option targets the likely cause first."},
+      {t:"Use the recovery environment’s **Uninstall updates**", ok:true, why:"The timing points to the update, and Safe Mode rules out startup extras. Uninstalling updates is the recovery option made for this."},
+      {t:"Buy a new laptop, because the hardware must have failed overnight", why:"The problem began exactly when the update installed, so the update is a much more likely cause."}
+    ]},
+    {id:"t1u7-cp12", lesson:"t1u7-l1", level:3, q:"Ebru’s laptop Wi-Fi drops “sometimes”. Her notes show it happens at different times of day, but always while the microwave next to the router is running. Which theory and test fit best?", options:[
+      {t:"Her laptop is failing, so she should replace it before it gets worse", why:"The drops follow the microwave, not the laptop. Replacing hardware before testing is guessing."},
+      {t:"Her provider has outages in the evenings, so she should call them", why:"The drops happen at different times of day, always with the microwave on. That pattern points inside the home."},
+      {t:"The drops are random, so there is nothing she can usefully test", why:"Her notes already show a clear pattern. That makes a testable theory possible."},
+      {t:"The microwave disturbs the Wi-Fi; move them apart and watch", ok:true, why:"The drops follow the microwave, and microwaves crowd the 2.4 GHz Wi-Fi band (Unit 4). Making one change, such as moving the router away or using 5 GHz, then watching the result, tests the theory."}
+    ]},
+  ],
   codex:[
    {id:"troubleshooting-method", title:"The troubleshooting method", aka:["CompTIA troubleshooting methodology","six steps","problem solving"], tags:["troubleshooting","basics"],
     summary:"Six steps for finding the real cause of a problem and fixing it for good: identify, theorise, test, plan and fix, verify, document.",
@@ -1296,40 +1370,40 @@ ICA.addUnit({
      {t:"A root cause is always the most recent update", why:"Recent changes are a strong clue, but the cause could be anything: a cable, a setting, heat."}
    ]},
    {id:"t1u7-q03", lesson:"t1u7-l1", level:1, q:"What does “question the obvious” mean in troubleshooting?", options:[
-     {t:"Check simple, common causes first, such as power, cables, mute and airplane mode", ok:true, why:"Simple causes are common and cheap to check, so professionals rule them out first."},
+     {t:"Check simple, common causes first, like power and cables", ok:true, why:"Simple causes such as power, cables, mute and airplane mode are common and cheap to check, so professionals rule them out first."},
      {t:"Assume the obvious cause is wrong and look for an unusual one", why:"The opposite: obvious causes are checked first because they’re so often right."},
      {t:"Ask the user to prove they’re telling the truth", why:"It’s about checking basic conditions, not doubting people."},
      {t:"Search online before touching anything", why:"Research is useful, but checking the obvious usually takes seconds and comes first."}
    ]},
    {id:"t1u7-q04", lesson:"t1u7-l1", level:2, q:"Why should you change only one thing at a time when testing a fix?", options:[
-     {t:"So you know which change fixed the problem, and can undo changes that didn’t help", ok:true, why:"With one change per test, the result tells you exactly what worked, so you can prevent a repeat and avoid leaving unnecessary changes behind."},
+     {t:"So you know which change fixed the problem", ok:true, why:"With one change per test, the result tells you exactly what worked, so you can prevent a repeat and undo changes that didn’t help."},
      {t:"Because devices can only accept one setting change per restart", why:"Devices accept many changes. The reason is about learning from each test."},
      {t:"Because it’s faster than changing several things at once", why:"It can feel slower, but it’s more reliable: you end up knowing the cause."},
      {t:"Because the CompTIA method forbids restarting", why:"Restarting is a common and valid test. The point is to test one idea at a time."}
    ]},
    {id:"t1u7-q05", lesson:"t1u7-l1", level:2, q:"In step 5, “verify full system functionality” means:", options:[
-     {t:"Checking that the original task and related features all work, not just that the error is gone", ok:true, why:"A fix can solve one symptom while breaking something else. Verifying means doing the real task again and checking related things."},
+     {t:"Checking that the original task and related features work", ok:true, why:"It means more than checking that the error is gone: a fix can solve one symptom while breaking something else. Verifying means doing the real task again and checking related things."},
      {t:"Restarting the device once", why:"A restart might be part of it, but verifying means testing that everything works."},
      {t:"Asking the device maker to approve the fix", why:"Verification is your own check that the system works."},
-     {t:"Deleting your notes, since the problem is solved", why:"Notes are kept for step 6 and for next time."}
+     {t:"Deleting your notes, since the problem is now solved for good", why:"Notes are kept for step 6 and for next time."}
    ]},
    {id:"t1u7-q06", lesson:"t1u7-l1", level:3, q:"Amara’s headphones crackle on her laptop. On her phone they sound perfect. What does this swap test suggest?", options:[
-     {t:"The headphones are probably fine; the laptop or its settings are the likely cause", ok:true, why:"The headphones work on another device, so the problem follows the laptop: its port, Bluetooth, driver or settings."},
-     {t:"The headphones are definitely broken", why:"If they were broken, they’d likely crackle on the phone too."},
+     {t:"The laptop or its settings are the likely cause", ok:true, why:"The headphones work on another device, so they’re probably fine. The problem follows the laptop: its port, Bluetooth, driver or settings."},
+     {t:"The headphones are definitely broken and need replacing", why:"If they were broken, they’d likely crackle on the phone too."},
      {t:"The phone is the cause", why:"The phone works correctly; it’s the laptop where the problem appears."},
      {t:"The test tells her nothing", why:"It rules out the headphones, which is very useful: half the chain is cleared."}
    ]},
    {id:"t1u7-q07", lesson:"t1u7-l1", level:3, q:"Dmitri’s video calls drop “sometimes”. He can’t make it happen on purpose. What’s the most useful next step?", options:[
-     {t:"Note the time, place and what else is running each time it happens, to find a pattern", ok:true, why:"Intermittent problems usually have a pattern (a room, a time of day, another app). Notes reveal it and turn it into something he can test."},
+     {t:"Note when and where it happens, to find a pattern", ok:true, why:"He should note the time, place and what else is running each time. Intermittent problems usually have a pattern (a room, a time of day, another app). Notes reveal it and turn it into something he can test."},
      {t:"Reinstall the call app immediately", why:"Without knowing the cause, a drastic fix may not help and loses settings."},
      {t:"Ignore it, because intermittent problems can’t be fixed", why:"They can, once a pattern is found."},
      {t:"Change several network settings at once and see if it stops", why:"With an intermittent problem, several changes at once make it even harder to know what helped."}
    ]},
    {id:"t1u7-q08", lesson:"t1u7-l1", level:2, q:"When should you escalate a problem?", options:[
-     {t:"When you’ve run out of good theories, or the fix needs skills, tools or permissions you don’t have", ok:true, why:"Escalating with your notes is part of the method, not a failure. It gets the problem to someone who can solve it."},
+     {t:"When you’re out of theories or lack the skills or access", ok:true, why:"Escalate when you’ve run out of good theories, or the fix needs skills, tools or permissions you don’t have. Escalating with your notes is part of the method, not a failure."},
      {t:"Before checking anything yourself", why:"Checking the obvious first usually solves it, and gives a helper useful information if not."},
      {t:"Only after a factory reset has failed", why:"A reset is drastic and may lose data. Escalate long before that if you’re stuck."},
-     {t:"Never: you should always fix it yourself", why:"Some problems need specialist tools, admin rights or physical repairs."}
+     {t:"Never: you should always fix it yourself, however long it takes", why:"Some problems need specialist tools, admin rights or physical repairs."}
    ]},
    {id:"t1u7-q09", lesson:"t1u7-l1", level:3, q:"Priya’s printing stopped working on Tuesday. Which piece of information is the most valuable clue to note first?", options:[
      {t:"That a new router was installed on Monday", ok:true, why:"Problems very often follow changes. A new router can put the printer on a different network, which explains “offline”."},
@@ -1339,20 +1413,20 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u7-q10", lesson:"t1u7-l2", level:1, q:"What is safe mode?", options:[
-     {t:"A way of starting a device with only its essential parts, to see whether an add-on is causing a problem", ok:true, why:"Safe mode loads a minimal set of software. If the problem disappears, something extra that starts with the device is the likely cause."},
+     {t:"A way to start a device with only essential parts", ok:true, why:"Safe mode loads a minimal set of software. If the problem disappears, something extra that starts with the device, such as an add-on, is the likely cause."},
      {t:"A setting that deletes all apps", why:"Safe mode doesn’t delete apps or files; it just doesn’t start the extras."},
      {t:"An antivirus program", why:"It’s a startup mode, not security software."},
      {t:"A mode that makes the device run faster permanently", why:"It’s a diagnostic tool; many features are missing while in it."}
    ]},
    {id:"t1u7-q11", lesson:"t1u7-l2", level:2, q:"On Windows 11, which route leads to Safe Mode?", options:[
-     {t:"Settings → System → Recovery → Advanced startup → Restart now, then Troubleshoot → Advanced options → Startup Settings → Restart, then press 4", ok:true, why:"This is Microsoft’s documented route through the Windows Recovery Environment. 4 (or F4) is Safe Mode; 5 (or F5) adds networking."},
+     {t:"Recovery → Advanced startup, then Startup Settings → 4", ok:true, why:"The full route is Settings → System → Recovery → Advanced startup → Restart now, then Troubleshoot → Advanced options → Startup Settings → Restart, then press 4. This is Microsoft’s documented route through the Windows Recovery Environment. 4 (or F4) is Safe Mode; 5 (or F5) adds networking."},
      {t:"Settings → Apps → Safe Mode → On", why:"There’s no such switch. Safe Mode is chosen from Startup Settings in the recovery environment."},
-     {t:"Hold Shift while signing in to the desktop", why:"Holding Shift while choosing Restart opens the recovery environment, but holding it at sign-in doesn’t start Safe Mode."},
+     {t:"Hold Shift while you sign in to the desktop with your password", why:"Holding Shift while choosing Restart opens the recovery environment, but holding it at sign-in doesn’t start Safe Mode."},
      {t:"Press Ctrl + Shift + Esc", why:"That opens Task Manager."}
    ]},
    {id:"t1u7-q12", lesson:"t1u7-l2", level:1, q:"How do you start a Mac with Apple silicon in safe mode?", options:[
-     {t:"Shut down, hold the power button until startup options appear, select the disk, then hold Shift and click Continue in Safe Mode", ok:true, why:"This is Apple’s documented method for Apple silicon Macs. “Safe Boot” then appears in the menu bar."},
-     {t:"Turn it on and immediately hold Shift", why:"That’s the method for Intel-based Macs."},
+     {t:"Hold the power button for startup options, then hold Shift", ok:true, why:"Shut down, hold the power button until startup options appear, select the disk, then hold Shift and click Continue in Safe Mode. This is Apple’s documented method for Apple silicon Macs. “Safe Boot” then appears in the menu bar."},
+     {t:"Turn it on and then immediately press and hold the Shift key", why:"That’s the method for Intel-based Macs."},
      {t:"Press Option + Cmd + Esc", why:"That opens the Force Quit window."},
      {t:"Choose Apple menu → Safe Mode", why:"There’s no such menu item."}
    ]},
@@ -1363,14 +1437,14 @@ ICA.addUnit({
      {t:"An old keyboard", why:"The keyboard doesn’t affect how quickly the system becomes usable."}
    ]},
    {id:"t1u7-q14", lesson:"t1u7-l2", level:3, q:"Lucía’s laptop can’t load websites at home. Her phone on the same Wi-Fi works fine. Where should she focus?", options:[
-     {t:"On the laptop: Wi-Fi settings, airplane mode, forgetting and rejoining the network, restarting", ok:true, why:"Another device works on the same network, which clears the router, modem and provider. The problem is the laptop."},
-     {t:"On the provider: call them to report an outage", why:"If there were an outage, her phone wouldn’t work on the same Wi-Fi either."},
+     {t:"On the laptop: Wi-Fi settings, airplane mode, restarting", ok:true, why:"Another device works on the same network, which clears the router, modem and provider. The problem is the laptop: try its Wi-Fi settings, airplane mode, forgetting and rejoining the network, and restarting."},
+     {t:"On the provider: call them and report an outage in her area", why:"If there were an outage, her phone wouldn’t work on the same Wi-Fi either."},
      {t:"On the router: replace it", why:"The router is working for her phone, so it isn’t the likely cause."},
      {t:"On the websites: they’re all down", why:"Her phone loads them, so they’re up."}
    ]},
    {id:"t1u7-q15", lesson:"t1u7-l2", level:2, q:"What does “connected, no internet” on every device in a home usually mean?", options:[
-     {t:"Devices reach the router over Wi-Fi, but the router isn’t getting through to the internet", ok:true, why:"“Connected” refers to the Wi-Fi link. The break is further along: router, modem or provider."},
-     {t:"Every device has a faulty Wi-Fi chip", why:"All failing in the same way points to something they share, not separate faults."},
+     {t:"The router isn’t getting through to the internet", ok:true, why:"“Connected” refers to the Wi-Fi link: the devices reach the router. The break is further along: router, modem or provider."},
+     {t:"Every one of the devices has developed a faulty Wi-Fi chip", why:"All failing in the same way points to something they share, not separate faults."},
      {t:"The Wi-Fi password is wrong", why:"With a wrong password, devices wouldn’t show “connected”."},
      {t:"The devices need factory resetting", why:"Far too drastic. The devices are fine."}
    ]},
@@ -1381,21 +1455,21 @@ ICA.addUnit({
      {t:"It doesn’t matter, and there’s no need to wait", why:"Microsoft says to wait at least 30 seconds unplugged and to plug the modem in first."}
    ]},
    {id:"t1u7-q17", lesson:"t1u7-l2", level:3, q:"Tomás’s Windows PC shows error pop-ups after every sign-in. They don’t appear in Safe Mode. Which next step fits the method best?", options:[
-     {t:"Review startup apps and recently installed software, turning items off one at a time to find the culprit", ok:true, why:"Safe mode pointed to something that loads at startup. Testing startup items one at a time finds which one."},
+     {t:"Turn startup apps off one at a time to find the culprit", ok:true, why:"Safe mode pointed to something that loads at startup. Reviewing startup apps and recently installed software, one item at a time, finds which one."},
      {t:"Replace the hard drive", why:"A hardware fault would usually still appear in safe mode."},
      {t:"Stay in Safe Mode from now on", why:"Safe mode is for diagnosis; many features don’t work there."},
-     {t:"Reset the PC with Remove everything", why:"Drastic and unnecessary when the cause can be narrowed to a startup item."}
+     {t:"Reset the PC with Remove everything, then set it up again", why:"Drastic and unnecessary when the cause can be narrowed to a startup item."}
    ]},
    {id:"t1u7-q18", lesson:"t1u7-l2", level:2, q:"Why is a network reset described as a last resort?", options:[
-     {t:"It removes saved Wi-Fi networks and passwords, and on Windows reinstalls network adapters, so VPN software may need reinstalling", ok:true, why:"It’s effective but disruptive. Microsoft calls it the last step to try."},
-     {t:"It erases all your files", why:"It affects network settings, not personal files."},
+     {t:"It removes saved Wi-Fi networks and passwords", ok:true, why:"On Windows it also reinstalls network adapters, so VPN software may need reinstalling. It’s effective but disruptive. Microsoft calls it the last step to try."},
+     {t:"It erases all your personal files and photos", why:"It affects network settings, not personal files."},
      {t:"It permanently disables Wi-Fi", why:"Wi-Fi works again after you rejoin networks."},
-     {t:"It changes your internet provider", why:"It only affects settings on your device."}
+     {t:"It changes your internet provider and your plan", why:"It only affects settings on your device."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u7-q19", lesson:"t1u7-l3", level:1, q:"What’s the difference between a crash and a freeze?", options:[
-     {t:"A crash closes the app by itself; a freeze leaves it on screen but not responding", ok:true, why:"With a freeze, waiting a minute is worth it in case it recovers. With a crash, the app has already closed."},
-     {t:"A crash affects hardware; a freeze affects software", why:"Both describe app or system behaviour, and both can have hardware or software causes."},
+     {t:"A crash closes the app; a freeze leaves it stuck on screen", ok:true, why:"With a freeze, the app stays on screen but doesn’t respond, so waiting a minute is worth it in case it recovers. With a crash, the app has already closed by itself."},
+     {t:"A crash affects the hardware; a freeze affects the software", why:"Both describe app or system behaviour, and both can have hardware or software causes."},
      {t:"They are the same thing", why:"They look different and suggest different first steps."},
      {t:"A freeze always deletes your files", why:"A freeze can lose unsaved work if you force quit, but it doesn’t delete saved files."}
    ]},
@@ -1406,15 +1480,15 @@ ICA.addUnit({
      {t:"Cmd + Space", why:"That opens Spotlight search."}
    ]},
    {id:"t1u7-q21", lesson:"t1u7-l3", level:2, q:"On Android, what does Clear storage do that Clear cache doesn’t?", options:[
-     {t:"It deletes the app’s data and settings on the phone, including sign-ins", ok:true, why:"Clear cache removes temporary files the app rebuilds. Clear storage resets the app completely on that phone."},
+     {t:"It deletes the app’s data on the phone, including sign-ins", ok:true, why:"Clear cache removes temporary files the app rebuilds. Clear storage resets the app completely on that phone, including its settings."},
      {t:"It uninstalls the app", why:"The app stays installed; its data is wiped."},
-     {t:"It frees space in your cloud account", why:"It affects only the phone’s local copy of the app’s data."},
+     {t:"It frees up space in your cloud account as well as the phone", why:"It affects only the phone’s local copy of the app’s data."},
      {t:"Nothing: they are the same", why:"They’re very different in what you lose."}
    ]},
    {id:"t1u7-q22", lesson:"t1u7-l3", level:2, q:"What does Offload App do on an iPhone?", options:[
-     {t:"Removes the app but keeps its documents and data, which return when you reinstall it", ok:true, why:"It frees space while keeping your data. Delete App removes the data too."},
+     {t:"Removes the app but keeps its documents and data", ok:true, why:"The data returns when you reinstall the app, so it frees space while keeping your data. Delete App removes the data too."},
      {t:"Deletes the app and all its data", why:"That’s Delete App."},
-     {t:"Moves the app to iCloud so it runs from there", why:"Apps don’t run from iCloud. Offloading removes the app itself but keeps its data on the phone."},
+     {t:"Moves the app to iCloud so that it runs from there", why:"Apps don’t run from iCloud. Offloading removes the app itself but keeps its data on the phone."},
      {t:"Resets the iPhone", why:"It affects one app only."}
    ]},
    {id:"t1u7-q23", lesson:"t1u7-l3", level:3, q:"Mei can’t open `photo.heic` on an older Windows laptop. Her friend can open it on an iPhone. What’s the most likely reason?", options:[
@@ -1424,7 +1498,7 @@ ICA.addUnit({
      {t:"Her laptop has malware", why:"An unsupported format is a much simpler explanation."}
    ]},
    {id:"t1u7-q24", lesson:"t1u7-l3", level:3, q:"Kenji’s phone shows “iCloud storage is full”. He deletes several apps from the phone. Why doesn’t the message go away?", options:[
-     {t:"The message is about his cloud account’s quota, not the phone’s own storage", ok:true, why:"Deleting apps frees space on the phone, but the iCloud account is separate. He needs to reduce what’s stored in iCloud or upgrade it."},
+     {t:"The message is about iCloud, not the phone’s own storage", ok:true, why:"Deleting apps frees space on the phone, but the iCloud account is separate. He needs to reduce what’s stored in iCloud or upgrade it."},
      {t:"He needs to restart the phone for apps to be deleted", why:"Deleting apps takes effect immediately. The issue is which storage is full."},
      {t:"Apps are stored in iCloud, so deleting them adds space there", why:"Apps themselves don’t count against iCloud storage in this way; backups, photos and files do."},
      {t:"The phone’s storage is broken", why:"Nothing suggests a fault; it’s a different kind of storage."}
@@ -1436,10 +1510,10 @@ ICA.addUnit({
      {t:"It’s a compressed folder", why:"Compressed folders usually end in `.zip`."}
    ]},
    {id:"t1u7-q26", lesson:"t1u7-l3", level:2, q:"Two copies of a file appear in your cloud folder, one with a device name added. What most likely happened?", options:[
-     {t:"A sync conflict: the file was changed in two places before syncing", ok:true, why:"The service kept both versions rather than lose one. Open both and merge the changes."},
+     {t:"A sync conflict: it was changed in two places", ok:true, why:"The file was changed in two places before syncing, so the service kept both versions rather than lose one. Open both and merge the changes."},
      {t:"The cloud storage is full", why:"A full quota stops uploads; it doesn’t create named duplicates."},
      {t:"A virus copied the file", why:"Named duplicates are the classic sign of a sync conflict."},
-     {t:"The file was shared with someone", why:"Sharing doesn’t create a second copy with a device name."}
+     {t:"The file was shared, which made a copy for each person", why:"Sharing gives others access to the same file; it doesn’t create a second copy with a device name."}
    ]},
    {id:"t1u7-q27", lesson:"t1u7-l3", level:3, q:"Fatima’s new router went in yesterday. Today her wireless printer shows “offline” on every laptop. What’s the most likely cause?", options:[
      {t:"The printer is still trying to join the old network", ok:true, why:"Printers remember the network name they joined. After a router change they often need reconnecting to the new Wi-Fi from their own screen or app."},
@@ -1449,15 +1523,15 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t1u7-q28", lesson:"t1u7-l4", level:1, q:"What does Bluetooth pairing do?", options:[
-     {t:"It introduces two devices so each stores a record of the other and can reconnect automatically", ok:true, why:"Pairing creates a stored, trusted link. If that record breaks, removing it and pairing again usually fixes connection problems."},
+     {t:"It lets two devices remember each other and reconnect", ok:true, why:"Each device stores a record of the other, creating a trusted link. If that record breaks, removing it and pairing again usually fixes connection problems."},
      {t:"It charges the accessory", why:"Pairing is about the wireless link, not power."},
      {t:"It installs a new operating system", why:"It just creates a link between two devices."},
-     {t:"It permanently locks the accessory to one device", why:"Most accessories can be paired with several devices and connect to one at a time."}
+     {t:"It permanently locks the accessory to just one other device", why:"Most accessories can be paired with several devices and connect to one at a time."}
    ]},
    {id:"t1u7-q29", lesson:"t1u7-l4", level:3, q:"Ana’s colleagues can see her in a browser call but can’t hear her. The system’s sound settings show the microphone level moving when she speaks. What should she check next?", options:[
-     {t:"The microphone permission for the website in her browser, and the microphone chosen in the call", ok:true, why:"The system hears her, so the microphone and connection work. The break is higher in the chain: the site’s permission, the app’s chosen mic, or the call’s mute button."},
+     {t:"The site’s mic permission and the mic chosen in the call", ok:true, why:"The system hears her, so the microphone and connection work. The break is higher in the chain: the site’s permission, the app’s chosen mic, or the call’s mute button."},
      {t:"Buy a new microphone", why:"The level moving proves the microphone works."},
-     {t:"Update the router’s firmware", why:"Others can see her video, so the network is working."},
+     {t:"Update the router’s firmware so the call’s audio gets through", why:"Others can see her video, so the network is working."},
      {t:"Restart the router", why:"The connection is fine; the problem is the audio permission or settings."}
    ]},
    {id:"t1u7-q30", lesson:"t1u7-l4", level:1, q:"In Windows 11, where do you allow apps to use the microphone?", options:[
@@ -1467,19 +1541,19 @@ ICA.addUnit({
      {t:"Task Manager → Startup apps", why:"That controls which apps open at sign-in."}
    ]},
    {id:"t1u7-q31", lesson:"t1u7-l4", level:2, q:"Why can two USB-C cables behave differently with the same laptop?", options:[
-     {t:"USB-C is a connector shape; cables differ in data speed, power rating and video support", ok:true, why:"The same plug can carry USB 2.0 data or much faster data, 60 W or 240 W, with or without video. That’s why swapping cables is a key test."},
+     {t:"USB-C is a shape; cables differ in speed, power and video", ok:true, why:"Cables differ in data speed, power rating and video support. The same plug can carry USB 2.0 data or much faster data, 60 W or 240 W, with or without video. That’s why swapping cables is a key test."},
      {t:"One of them must be fake", why:"Both can be genuine and still support different features."},
-     {t:"USB-C cables only work in one direction", why:"USB-C plugs are reversible."},
+     {t:"USB-C cables only work properly when plugged in one way round", why:"USB-C plugs are reversible."},
      {t:"Laptops only accept one cable each", why:"Any compatible cable works; the capabilities depend on the cable."}
    ]},
    {id:"t1u7-q32", lesson:"t1u7-l4", level:2, q:"A monitor connected by HDMI shows “No signal”, but the laptop is running. What should you check first?", options:[
-     {t:"That the monitor is set to the input the cable is plugged into, and the cable is firmly in at both ends", ok:true, why:"The wrong input and a loose cable are very common and quick to check."},
-     {t:"Reinstall the laptop’s operating system", why:"Far too drastic for an unconfirmed display connection problem."},
+     {t:"The monitor’s input setting and the cable at both ends", ok:true, why:"Check that the monitor is set to the input the cable is plugged into, and that the cable is firmly in at both ends. The wrong input and a loose cable are very common and quick to check."},
+     {t:"Reinstall the laptop’s operating system to reset the display", why:"Far too drastic for an unconfirmed display connection problem."},
      {t:"Replace the laptop’s battery", why:"The laptop is running, so power isn’t the issue."},
      {t:"Turn off Bluetooth", why:"Bluetooth doesn’t affect a wired HDMI connection."}
    ]},
    {id:"t1u7-q33", lesson:"t1u7-l4", level:3, q:"Sione forgot his Bluetooth headphones on his iPad so he could pair them with his laptop. Now they’re also missing from his iPhone. Why?", options:[
-     {t:"Apple unpairs an accessory on all devices signed in to the same Apple Account when you forget it on one", ok:true, why:"Apple documents this. He can pair them again on the iPhone when he needs them there."},
+     {t:"Forgetting them on one Apple device unpairs them on the others", ok:true, why:"Apple unpairs an accessory on all devices signed in to the same Apple Account when you forget it on one. Apple documents this. He can pair them again on the iPhone when he needs them there."},
      {t:"The headphones are broken", why:"Disappearing from the list is explained by the shared Apple Account, not a fault."},
      {t:"The iPhone needs a factory reset", why:"Pairing again is all that’s needed."},
      {t:"Bluetooth headphones can only be paired once in their lifetime", why:"They can be paired again and again."}
@@ -1491,21 +1565,21 @@ ICA.addUnit({
      {t:"The Recycle Bin", why:"The Recycle Bin holds deleted files."}
    ]},
    {id:"t1u7-q35", lesson:"t1u7-l4", level:3, q:"Since a driver update yesterday, Oluwaseun’s whole Windows screen flickers, including Task Manager. What does Microsoft’s test suggest?", options:[
-     {t:"The display driver is the likely cause; rolling it back in Device Manager is a sensible step", ok:true, why:"If Task Manager flickers too, Microsoft points to the display driver. The timing after an update supports rolling back the driver."},
+     {t:"The display driver; rolling it back is a sensible step", ok:true, why:"If Task Manager flickers too, Microsoft points to the display driver. The timing after an update supports rolling it back in Device Manager."},
      {t:"One app is the cause", why:"If an app were the cause, Task Manager itself wouldn’t flicker."},
-     {t:"The monitor must be replaced", why:"The change (a driver update) and the test both point to software first."},
+     {t:"The monitor is failing and must be replaced with a new one", why:"The change (a driver update) and the test both point to software first."},
      {t:"The Wi-Fi is too slow", why:"Network speed doesn’t make the screen flicker."}
    ]},
    {id:"t1u7-q36", lesson:"t1u7-l4", level:2, q:"Hana’s Android phone charges from her computer, but no files appear on the computer. What’s a likely fix?", options:[
-     {t:"Choose File transfer in the phone’s USB notification, or try a cable that carries data", ok:true, why:"Android usually starts in charging mode, and some cables are made for charging only."},
+     {t:"Choose File transfer on the phone, or try a data cable", ok:true, why:"Choose File transfer in the phone’s USB notification. Android usually starts in charging mode, and some cables are made for charging only."},
      {t:"Factory reset the phone", why:"Much too drastic for a USB mode setting."},
      {t:"Turn on airplane mode", why:"Airplane mode affects wireless connections, not USB file transfer."},
-     {t:"Install a driver updater on the phone", why:"Not needed: it’s a USB mode or cable issue."}
+     {t:"Install a driver updater app on the phone and the computer", why:"Not needed: it’s a USB mode or cable issue."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t1u7-q37", lesson:"t1u7-l5", level:1, q:"Which search is most effective for an error message?", options:[
-     {t:"The exact message in quotation marks plus the product and version", ok:true, why:"Exact wording matches official articles and other people’s reports of the same problem."},
-     {t:"A general description like “computer broken”", why:"Too vague to find specific answers."},
+     {t:"The exact message in quotes, plus product and version", ok:true, why:"Exact wording matches official articles and other people’s reports of the same problem."},
+     {t:"A general description of the problem, like “computer broken”", why:"Too vague to find specific answers."},
      {t:"Your name and email address with the error", why:"Personal details don’t help and shouldn’t be shared in searches or posts."},
      {t:"Only the word “error”", why:"Far too general to be useful."}
    ]},
@@ -1534,8 +1608,8 @@ ICA.addUnit({
      {t:"Change his passwords on the same laptop while it’s still connected", why:"If they still have access, they may see the new passwords. Disconnect first, and use another device for passwords."}
    ]},
    {id:"t1u7-q42", lesson:"t1u7-l5", level:2, q:"When is remote access by a support person reasonable?", options:[
-     {t:"When you contacted official support through a channel you found yourself, and you can watch and end the session", ok:true, why:"You started the contact and stay in control. That’s how legitimate remote support works."},
-     {t:"When a caller says your computer has a virus", why:"Unsolicited calls claiming a problem are the scam pattern."},
+     {t:"When you contacted official support yourself and stay in control", ok:true, why:"You reached them through a channel you found yourself, and you can watch and end the session. That’s how legitimate remote support works."},
+     {t:"When a caller tells you your computer has a virus and offers to help", why:"Unsolicited calls claiming a problem are the scam pattern."},
      {t:"When a pop-up gives you a number to call", why:"Real pop-ups never ask you to call, so whoever answers is part of the scam."},
      {t:"Whenever the person sounds professional", why:"Scammers often sound very professional. What matters is who started the contact and through which channel."}
    ]},
@@ -1546,14 +1620,14 @@ ICA.addUnit({
      {t:"10 years", why:"The minimum is 2 years."}
    ]},
    {id:"t1u7-q44", lesson:"t1u7-l5", level:3, q:"Mei wants to factory reset her Windows laptop to fix stubborn problems. Which preparation matters most?", options:[
-     {t:"Back up her files and check the backup opens, and have her BitLocker recovery key if the drive is encrypted", ok:true, why:"A reset can remove files, apps and settings. A tested backup and the recovery key prevent losing data or getting locked out."},
+     {t:"A tested backup, and her BitLocker recovery key if needed", ok:true, why:"She should back up her files and check the backup opens, and have her BitLocker recovery key if the drive is encrypted. A reset can remove files, apps and settings. A tested backup and the recovery key prevent losing data or getting locked out."},
      {t:"Delete her browser history", why:"Not necessary; the important step is protecting her data."},
      {t:"Unplug the laptop so it runs on battery", why:"The opposite: keep it plugged in so the reset isn’t interrupted."},
-     {t:"Turn it off and on during the reset to speed it up", why:"Microsoft warns that restarting during a reset could make it fail."}
+     {t:"Turn it off and on during the reset so that it goes faster", why:"Microsoft warns that restarting during a reset could make it fail."}
    ]},
    {id:"t1u7-q45", lesson:"t1u7-l5", level:2, q:"Hana finds a forum answer telling her to “turn off your antivirus permanently” to fix an error. What’s the best response?", options:[
-     {t:"Don’t follow it; look for an official help page for the error instead", ok:true, why:"Advice to weaken security permanently is a red flag. Official pages give safe steps."},
-     {t:"Follow it, since forum answers are always tested", why:"Forum answers can be wrong, outdated or unsafe."},
+     {t:"Don’t follow it; find an official help page instead", ok:true, why:"Advice to weaken security permanently is a red flag. Official help pages for the error give safe steps."},
+     {t:"Follow it, since forum answers are always tested by others", why:"Forum answers can be wrong, outdated or unsafe."},
      {t:"Follow it and also disable updates", why:"That would make her device even more vulnerable."},
      {t:"Reinstall the operating system instead", why:"Drastic; she should first find an official, safe fix."}
    ]}

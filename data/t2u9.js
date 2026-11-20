@@ -1,6 +1,6 @@
-/* Track 2 · Unit 9 · Automating and debugging */
+/* Track 2 · Unit 10 · Automating and debugging */
 ICA.addUnit({
-  id:"t2u9", track:"t2", n:9, title:"Automating and debugging", icon:"🔧",
+  id:"t2u9", track:"t2", n:10, title:"Automating and debugging", icon:"🔧",
   blurb:"Put Python to work on real files: read and write text, total up spreadsheet data, and rename or tidy hundreds of files with a script that shows you its plan before it touches anything. Then learn the calm, step-by-step way professionals find bugs, and what to do when you’re stuck.",
   goals:[
     "Build file paths with `pathlib`, read and write text files with `with open(…)` and `encoding=\"utf-8\"`, and choose the right mode without wiping a file by accident",
@@ -155,7 +155,7 @@ ICA.addUnit({
       {t:"folder = Path(\"C:\\Users\\Fatima\\menu\")", flag:true, why:"In an ordinary string, `\\U` starts a Unicode escape, so this is a SyntaxError. Use `Path(\"C:/Users/Fatima/menu\")` or a raw string `r\"…\"`."}, "\n", {t:"folder.mkdir(exist_ok=True)", flag:false, why:"Fine: it makes the folder, and `exist_ok=True` means a second run doesn’t fail."}, "\n", {t:"with open(folder / \"menu.txt\", \"w\") as f:", flag:true, why:"No `encoding=\"utf-8\"`. On a computer whose default isn’t UTF-8, the “è” and “û” in “Crème brûlée” may be saved in another encoding, and reading the file back as UTF-8 then stops with a `UnicodeDecodeError` or shows garbled text."}, "\n", {t:"    f.write(\"Crème brûlée\\n\")", flag:false, why:"Fine: the string ends with `\\n`, so the next item starts on a new line."}, "\n", {t:"with open(folder / \"menu.txt\", \"w\", encoding=\"utf-8\") as f:", flag:true, why:"Opening the same file again with `\"w\"` empties it, so the crème brûlée line is lost. To add more, use `\"a\"`, or write everything inside one `with` block."}, "\n", {t:"    f.write(\"Mint tea\\n\")", flag:false, why:"Writing a line is fine; the data loss comes from the `\"w\"` on the line above."}
     ]},
     {id:"t2u9-l1-x6", type:"mcq", q:"Priya’s script reads `data/members.txt`. It works when she clicks **Run** in her editor, but in the terminal `python3 scripts/report.py` gives `FileNotFoundError`. The file definitely exists. What should she check first?", options:[
-      {t:"The working directory: in the terminal, the relative path is looked up from the folder she ran the command in", ok:true, why:"Right. A relative path like `data/members.txt` is relative to the working directory, not to the script. Printing `Path.cwd()` and `Path(\"data/members.txt\").resolve()` shows where Python is looking."},
+      {t:"The working directory in the terminal", ok:true, why:"Right. A relative path like `data/members.txt` is relative to the working directory, not to the script. Printing `Path.cwd()` and `Path(\"data/members.txt\").resolve()` shows where Python is looking."},
       {t:"Whether the file is too big for Python to open", why:"Size gives other errors, if any. `FileNotFoundError` means Python looked in a place where there was no such file."},
       {t:"Whether she needs `\"a\"` mode instead of `\"r\"`", why:"The mode doesn’t change where Python looks. Append mode would even create a new, empty file in the wrong place."},
       {t:"Whether the terminal needs the file to be opened in an editor first", why:"Files don’t need to be open anywhere else. The difference is which folder each way of running starts from."}
@@ -271,7 +271,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u9-l2-x1", type:"mcq", q:"Why does `line.split(\",\")` give the wrong columns for the line `2026-11-01,\"cookies, oat\",12,1.25`?", options:[
-      {t:"The comma inside the quoted item is treated as a separator, so the item is split in two", ok:true, why:"Right. `split` knows nothing about CSV quoting, so it gives five pieces instead of four and shifts every later column. `csv.reader` reads it correctly."},
+      {t:"It splits at the comma inside the quotes", ok:true, why:"Right. `split` knows nothing about CSV quoting, so it gives five pieces instead of four and shifts every later column. `csv.reader` reads it correctly."},
       {t:"`split` only works on lines without numbers", why:"`split` works on any string. The problem is the comma inside the quotes."},
       {t:"The date has hyphens, which confuse `split`", why:"`split(\",\")` only looks for commas; hyphens are left alone."},
       {t:"`split` removes the last column", why:"It doesn’t drop anything; it makes one piece too many because of the quoted comma."}
@@ -532,7 +532,7 @@ ICA.addUnit({
     {h:"Narrow it down by halves", body:[
       "When you don’t know where a wrong value comes from, don’t check every line in turn. Check **halfway**. If a script takes eight steps to turn raw data into a result, print the data after step 4. If it’s still correct there, the bug is in steps 5 to 8; if it’s already wrong, it’s in 1 to 4. Then check halfway through the half that’s left.",
       {fig:'<svg viewBox="0 0 340 330"><text x="10" y="18">8 steps. Each check halves the suspects.</text><g><text class="s" x="55" y="40" text-anchor="middle">Check 1</text><rect class="d-sage" x="20" y="48" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="64" text-anchor="middle">step 1</text><rect class="d-sage" x="20" y="72" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="88" text-anchor="middle">step 2</text><rect class="d-sage" x="20" y="96" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="112" text-anchor="middle">step 3</text><rect class="d-sage" x="20" y="120" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="136" text-anchor="middle">step 4</text><rect class="d-gold" x="20" y="148" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="164" text-anchor="middle">step 5</text><rect class="d-gold" x="20" y="172" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="188" text-anchor="middle">step 6</text><rect class="d-gold" x="20" y="196" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="212" text-anchor="middle">step 7</text><rect class="d-gold" x="20" y="220" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="55" y="236" text-anchor="middle">step 8</text><path class="d-rose" d="M14,145 L96,145" stroke-width="3"/></g><g><text class="s" x="170" y="40" text-anchor="middle">Check 2</text><rect class="d-panel" x="135" y="48" width="70" height="94" rx="3" stroke-width="1"/><text class="s" x="170" y="100" text-anchor="middle">cleared</text><rect class="d-gold" x="135" y="148" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="170" y="164" text-anchor="middle">step 5</text><rect class="d-gold" x="135" y="172" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="170" y="188" text-anchor="middle">step 6</text><rect class="d-panel" x="135" y="196" width="70" height="46" rx="3" stroke-width="1"/><text class="s" x="170" y="224" text-anchor="middle">cleared</text><path class="d-rose" d="M129,193 L211,193" stroke-width="3"/></g><g><text class="s" x="285" y="40" text-anchor="middle">Check 3</text><rect class="d-panel" x="250" y="48" width="70" height="94" rx="3" stroke-width="1"/><text class="s" x="285" y="100" text-anchor="middle">cleared</text><rect class="d-sage" x="250" y="148" width="70" height="22" rx="3" stroke-width="1"/><text class="s" x="285" y="164" text-anchor="middle">step 5</text><rect class="d-rose" x="250" y="172" width="70" height="22" rx="3" stroke-width="2"/><text class="s" x="285" y="188" text-anchor="middle">step 6 ✗</text><rect class="d-panel" x="250" y="196" width="70" height="46" rx="3" stroke-width="1"/><text class="s" x="285" y="224" text-anchor="middle">cleared</text><path class="d-rose" d="M244,169 L326,169" stroke-width="3"/></g><text class="s" x="10" y="270">Red line: where you print and check.</text><text class="s" x="10" y="288">1: right after step 4, so the bug is in 5–8.</text><text class="s" x="10" y="306">2: wrong after step 6, so it’s in 5–6.</text><text class="s" x="10" y="324">3: right after step 5, so step 6 is the bug.</text></svg>', alt:"Three columns of eight steps. Check 1: a red check line after step 4; steps 1 to 4 are fine (green), steps 5 to 8 are suspects (gold). Check 2: steps 1 to 4 and 7 to 8 are cleared; a check after step 6 shows the data is wrong, so steps 5 and 6 remain. Check 3: a check after step 5 shows the data is right, so step 6, marked with a cross, is the bug.", cap:"Three checks find one faulty step among eight. Twenty checks would be enough for about a million."},
-      "This is a binary search, and it scales well: 8 steps need 3 checks, 64 need 6, and 1,000 need 10. It works on data too (does the script fail on the first half of the rows or the second?) and on changes over time: if it worked last week, [[git|Git]]’s `git bisect` command ({{git-basics|Unit 7}}) runs this search over your saved versions to find the [[commit-git|commit]] that broke it.",
+      "This is a {{searching-algorithms|binary search}} (Unit 9 builds it step by step), and it scales well: 8 steps need 3 checks, 64 need 6, and 1,000 need 10. It works on data too (does the script fail on the first half of the rows or the second?) and on changes over time: if it worked last week, [[git|Git]]’s `git bisect` command ({{git-basics|Unit 7}}) runs this search over your saved versions to find the [[commit-git|commit]] that broke it.",
       "A related move is **commenting out**: put `#` in front of half the suspicious code, or replace a calculation with a fixed value, and see whether the problem goes away."
     ]},
     {h:"Check your assumptions with assert", body:[
@@ -541,7 +541,7 @@ ICA.addUnit({
       "That error says what was wrong, in your own words, at the moment it went wrong, instead of a puzzling crash further on. Automate the Boring Stuff (Chapter 5) calls an [[assertion]] “a sanity check”.",
       "`assert` is also the simplest way to write **tests**: small checks that a function gives the answers you expect. Run them after every change:",
       {code:['def average(numbers):','    return sum(numbers) / len(numbers)','','assert average([2, 4]) == 3','assert average([5]) == 5','assert average([1, 2]) == 1.5','print("All tests passed")'].join("\n"), lang:"py", label:"Three tiny tests", pylab:"pl-test", cap:"Prints `All tests passed`. Break `average` on purpose and one of the asserts stops the script."},
-      {warn:"Use `assert` to catch your own mistakes, not to check what users type or what’s in a file: running `python3 -O` switches assertions off entirely. For bad input, use an `if` and a clear message. {{testing-basics|Unit 10}} goes further with testing."},
+      {warn:"Use `assert` to catch your own mistakes, not to check what users type or what’s in a file: running `python3 -O` switches assertions off entirely. For bad input, use an `if` and a clear message. {{testing-basics|Unit 11}} goes further with testing."},
       {lab:"pl-test", t:"Practise: write assert tests for a function"}
     ]},
     {h:"Using a debugger", body:[
@@ -593,7 +593,7 @@ ICA.addUnit({
       {t:"A string opened with `\"` but never closed", b:0, why:"An unterminated string is a grammar problem: Python reports it before running anything."}
     ]},
     {id:"t2u9-l4-x2", type:"mcq", q:"In the `scores.py` traceback, the last frame points at line 2, `return sum(numbers) / len(numbers)`. Where should Mei look to find the **cause**?", options:[
-      {t:"Up the traceback: line 8 called `report(\"Hana\", [])` with an empty list, which reached `average`", ok:true, why:"Right. Line 2 is correct for any non-empty list. The empty list came from line 8, through `report` on line 5. The crash site and the cause are often in different places."},
+      {t:"Up the traceback, at line 8’s call with an empty list", ok:true, why:"Right. Line 2 is correct for any non-empty list. The empty list came from line 8, through `report` on line 5. The crash site and the cause are often in different places."},
       {t:"Only line 2, because that’s where the error happened", why:"Line 2 is where it broke, but it did what it was told. The question is why it was given an empty list."},
       {t:"The first line of the traceback, “Traceback (most recent call last):”", why:"That line is just a heading. It tells you the newest call is at the bottom."},
       {t:"Python’s own files, because division is a built-in", why:"No frame here is in Python’s own files, and division works fine. The input was the problem."}
@@ -718,13 +718,13 @@ ICA.addUnit({
       {warn:"Before posting anything publicly, remove passwords, API keys, access tokens, personal data (real names, emails, addresses from your CSV) and anything your school or workplace treats as confidential. Replace them with made-up values. Anything posted publicly can be copied and kept, even if you delete it later."}
     ]},
     {h:"AI assistants: help without handing over your thinking", body:[
-      "AI chat assistants and coding tools ({{ai-coding-tools|Unit 10}}) can be very good at explaining an error message in plain words, suggesting where to look, or describing what an unfamiliar line does. MIT’s Missing Semester calls them “surprisingly useful debugging assistants”, and warns in the same breath that they “can hallucinate plausible-sounding but wrong explanations”. Use them in a way that keeps you learning:",
+      "AI chat assistants and coding tools ({{ai-coding-tools|Unit 11}}) can be very good at explaining an error message in plain words, suggesting where to look, or describing what an unfamiliar line does. MIT’s Missing Semester calls them “surprisingly useful debugging assistants”, and warns in the same breath that they “can hallucinate plausible-sounding but wrong explanations”. Use them in a way that keeps you learning:",
       {ol:[
         "**Guess first.** Read the error and decide what you think it means before you ask. Then compare.",
         "**Ask for an explanation or a hint, not just a fix**: “Explain this traceback and where I should look” teaches more than “fix my code”.",
         "**Give the same things you’d give a person**: a minimal example, the full error, and what you expected.",
         "**Verify everything.** Run the suggestion. Read it line by line until you can explain it. Check functions and options against the documentation; an assistant can invent a parameter that doesn’t exist, or confidently fix the wrong problem.",
-        "**Check any package it tells you to install** really exists and is the one you want, on pypi.org, before installing. Invented package names are a real attack route: people register the names AI tools tend to make up (“hallucinated packages”, Unit 10)."
+        "**Check any package it tells you to install** really exists and is the one you want, on pypi.org, before installing. Invented package names are a real attack route: people register the names AI tools tend to make up (“hallucinated packages”, Unit 11)."
       ]},
       {warn:"Never paste secrets into an AI tool: passwords, API keys, tokens, private keys, or other people’s personal data from your files. Depending on the service and your settings, what you type may be stored, reviewed or used for training. Follow your school’s or employer’s rules on which tools may see their code at all."},
       "Think Python ends its chapters with “Ask a virtual assistant” exercises, and its final chapter makes a useful point: the thinking you do to **write** a clear prompt and **judge** the answer is valuable in itself, like explaining to a rubber duck. If you find yourself pasting errors back and forth without reading them, stop and go back to step 1 of the ladder."
@@ -760,7 +760,7 @@ ICA.addUnit({
       {t:"`fees.py`", b:1, why:"Her own file name; nobody else’s question will mention it."}
     ]},
     {id:"t2u9-l5-x2", type:"mcq", q:"Kenji finds an answer that fixes his problem with `print \"Total:\", total`. Python 3 rejects it with a SyntaxError. What does this tell him?", options:[
-      {t:"The answer was written for Python 2; he should look for a newer answer or adapt it to Python 3", ok:true, why:"Right. `print` without brackets is Python 2 syntax. In Python 3 it’s a function: `print(\"Total:\", total)`. Check the date and version of answers you find."},
+      {t:"The answer was written for Python 2", ok:true, why:"Right. He should look for a newer answer or adapt it to Python 3. `print` without brackets is Python 2 syntax. In Python 3 it’s a function: `print(\"Total:\", total)`. Check the date and version of answers you find."},
       {t:"His Python is broken and needs reinstalling", why:"Python 3 is working correctly: it’s rejecting Python 2 syntax."},
       {t:"He needs to add a semicolon at the end", why:"Python doesn’t need semicolons. The missing brackets are the problem."},
       {t:"The search engine gave him the wrong language", why:"It’s Python, but Python 2, an older version that ended in 2020."}
@@ -775,7 +775,7 @@ ICA.addUnit({
       {t:"Title: “HELP!!! code broken”", flag:true, why:"The title should say what’s wrong, for example “KeyError when reading a CSV exported from Excel with csv.DictReader”."}, "\n", {t:"I’m trying to total the amount column of a CSV.", flag:false, why:"Good: a clear one-sentence goal."}, "\n", {t:"[a phone photo of the screen showing the code]", flag:true, why:"Code should be pasted as text, so helpers can copy and run it and screen readers can read it."}, "\n", {t:"API_KEY = \"sk-live-…\" (left in the code)", flag:true, why:"A secret key must never be posted. Replace it with a fake value. If a real key has ever been shared anywhere, treat it as exposed: revoke it and make a new one."}, "\n", {t:"Expected 52.50, got KeyError: 'amount' (full traceback pasted as text)", flag:false, why:"Exactly right: what she expected, what she got, and the full error as text."}, "\n", {t:"Python 3.13 on macOS", flag:false, why:"Versions help people reproduce the problem."}
     ]},
     {id:"t2u9-l5-x5", type:"mcq", q:"An AI assistant tells Sione to run `pip install csvfixer-pro` to solve his CSV problem. He has never heard of this package. What should he do first?", options:[
-      {t:"Check on pypi.org that the package exists, is the one he wants and is well maintained, or ask for a solution with the built-in csv module", ok:true, why:"Right. AI tools sometimes invent package names, and attackers register those names with harmful code inside. The built-in `csv` module may be all he needs."},
+      {t:"Check on pypi.org that the package is real and trusted", ok:true, why:"Right. Check that it exists, is the one he wants and is well maintained, or ask for a solution with the built-in csv module. AI tools sometimes invent package names, and attackers register those names with harmful code inside. The built-in `csv` module may be all he needs."},
       {t:"Install it straight away: the assistant wouldn’t suggest something harmful", why:"Assistants can invent or misremember package names, and they can’t check what a package does today. Verify before installing anything."},
       {t:"Install it with administrator rights so it definitely works", why:"That gives an unknown package more power over his computer. It makes any risk worse, not better."},
       {t:"Paste his whole CSV of member details to the assistant so it can check", why:"Member data is personal information. Share a few made-up rows instead."}
@@ -806,6 +806,20 @@ ICA.addUnit({
   }
   ],
   checkpoint:["t2u9-q02","t2u9-q05","t2u9-q10","t2u9-q13","t2u9-q18","t2u9-q21","t2u9-q26","t2u9-q29","t2u9-q31","t2u9-q35","t2u9-q37","t2u9-q40"],
+  cpBank:[
+    {id:"t2u9-cp01", lesson:"t2u9-l1", level:1, q:"Rosa’s script runs `open(\"scores.txt\", \"a\", encoding=\"utf-8\")` and writes one line. There is no `scores.txt` yet. What happens?", options:[{t:"It stops with `FileNotFoundError`", why:"That’s what mode `\"r\"` does with a missing file. Mode `\"a\"` creates it."}, {t:"Python creates `scores.txt` and writes the line", ok:true, why:"Mode `\"a\"` adds to the end of a file that exists, and creates the file if it doesn’t."}, {t:"It stops with `FileExistsError`", why:"That comes from mode `\"x\"`, and only when the file already exists."}, {t:"Nothing is written until she makes the file by hand", why:"There’s no need: `\"a\"`, like `\"w\"`, creates a missing file."}]},
+    {id:"t2u9-cp02", lesson:"t2u9-l1", level:2, q:"Kai runs:\n\n`with open(\"list.txt\", \"w\", encoding=\"utf-8\") as f:`\n`    f.write(\"rice\")`\n`    f.write(\"tea\")`\n\nWhat does `list.txt` contain?", options:[{t:"`ricetea`, on one line", ok:true, why:"`write()` writes exactly the string it’s given and adds no line break. For two lines, end each string with `\\n`."}, {t:"`rice` and `tea` on two lines", why:"Unlike `print()`, `write()` doesn’t start a new line. The words run together."}, {t:"Only `tea`, because the second write replaced the first", why:"Mode `\"w\"` empties the file once, when it’s opened. Both writes then add to it."}, {t:"Nothing, because the file was never closed", why:"The `with` block closes the file when it ends, so both writes are saved."}]},
+    {id:"t2u9-cp03", lesson:"t2u9-l2", level:1, q:"Lin saves `{\"paid\": False, \"note\": None}` with `json.dump`. How do those two values appear in the JSON file?", options:[{t:"`False` and `None`", why:"Those are Python’s spellings. JSON text writes them as `false` and `null`."}, {t:"`\"False\"` and `\"None\"`, as strings", why:"JSON keeps them as real values, not text: `false` and `null`."}, {t:"`0` and an empty string", why:"JSON has proper values for these: `false` and `null`."}, {t:"`false` and `null`", ok:true, why:"JSON has its own rules: `true`, `false` and `null` in lower case, where Python has `True`, `False` and `None`."}]},
+    {id:"t2u9-cp04", lesson:"t2u9-l2", level:2, q:"A CSV’s `price` column holds values like `4.50`. Omar’s script does `int(row[\"price\"])`. What happens?", options:[{t:"It gives 4, dropping the decimals", why:"`int()` drops the decimals of a float such as 4.5, but it can’t read the text `'4.50'` at all."}, {t:"A ValueError, because `int()` can’t read `'4.50'`", ok:true, why:"`int()` can’t read text with a decimal point in it: `ValueError: invalid literal for int() with base 10: '4.50'`. Use `float(row[\"price\"])` for prices."}, {t:"It gives 4.5", why:"`int()` never gives a decimal, and it can’t read this text anyway."}, {t:"A TypeError, because every CSV cell is a string", why:"A string is exactly what `int()` expects. The problem is the value: a decimal point it can’t read."}]},
+    {id:"t2u9-cp05", lesson:"t2u9-l2", level:3, q:"Ana’s export uses semicolons between cells and decimal commas, like `Ana;3,50` under the header `name;amount`. Read with a plain `csv.DictReader`, the rows come out wrong. What’s the fix?", options:[{t:"Use `delimiter=\";\"` and swap `,` for `.` before `float()`", ok:true, why:"The reader splits on commas unless told otherwise. With `;` as the delimiter the cells come out right, and `float()` needs a dot as the decimal mark."}, {t:"Split each line with `split(\",\")` instead", why:"Splitting on commas breaks `3,50` in two. Don’t take CSVs apart by hand; tell the `csv` module the delimiter."}, {t:"Open the file in a spreadsheet app and save it again as CSV", why:"Spreadsheet apps guess what cells mean and may change the data. Python reads it safely once it knows the delimiter."}, {t:"Open it with `encoding=\"utf-8-sig\"`", why:"`utf-8-sig` removes Excel’s hidden first character. It doesn’t change which character separates the cells."}]},
+    {id:"t2u9-cp06", lesson:"t2u9-l3", level:2, q:"`old = Path(\"photos/IMG_0001.JPG\")`. What does `new = old.with_name(\"beach-001.jpg\")` do?", options:[{t:"Renames the photo on the disk", why:"It doesn’t touch the disk. Renaming needs `old.rename(new)`."}, {t:"Makes a copy of the photo, called `beach-001.jpg`, beside it", why:"No file is created. It only gives back a path."}, {t:"Gives `beach-001.jpg` in the working directory", why:"`with_name` keeps the same folder, `photos`, and changes only the last part."}, {t:"Gives the path `photos/beach-001.jpg`, and nothing more", ok:true, why:"`with_name` builds a path in the same folder with a different name. Only `old.rename(new)` would change the file."}]},
+    {id:"t2u9-cp07", lesson:"t2u9-l3", level:3, q:"Mei’s tidy script looks up each file’s folder with `kinds.get(item.suffix.lower())` and skips any file whose lookup gives `None`. `kinds` has `\".pdf\": \"Documents\"` but no `\".mp3\"` entry. What happens to `Report.PDF` and `song.mp3`?", options:[{t:"Both are left alone, because `.PDF` is in capitals", why:"`.lower()` turns `.PDF` into `.pdf` before the lookup, so the capitals don’t matter."}, {t:"`Report.PDF` moves to Documents; `song.mp3` stays", ok:true, why:"`.suffix.lower()` turns `.PDF` into `.pdf`, which is in the dictionary. `.get()` gives `None` for `.mp3`, so that file is skipped."}, {t:"The script stops with a KeyError at `song.mp3`", why:"`.get()` gives `None` for a missing key instead of raising a KeyError."}, {t:"`song.mp3` goes to Documents, the first folder listed", why:"`.get()` finds only an exact key. With no `.mp3` key it gives `None`, and the file is skipped."}]},
+    {id:"t2u9-cp08", lesson:"t2u9-l4", level:2, q:"A CSV row reads `Kemi,Lagos ,2026`, with a space after Lagos. `row[\"city\"] == \"Lagos\"` is `False`, yet `print(row[\"city\"])` shows `Lagos`. How can Kemi see the problem and fix it?", options:[{t:"Convert the cell with `int(row[\"city\"])` before comparing", why:"A city name isn’t a number, so `int()` would stop with a ValueError."}, {t:"Use `=` instead of `==` in the comparison", why:"`=` assigns a value. Comparing needs `==`; the value itself has an extra space."}, {t:"Print `repr(row[\"city\"])`, then compare after `.strip()`", ok:true, why:"`repr()` shows hidden characters, here `'Lagos '` with its trailing space. Compare `row[\"city\"].strip()`, which removes spaces from both ends."}, {t:"Open the CSV with mode `\"a\"`", why:"Mode `\"a\"` adds to the end of a file. It doesn’t change what’s in the cells."}]},
+    {id:"t2u9-cp09", lesson:"t2u9-l4", level:3, q:"Sione’s traceback has six frames. The bottom two are in files whose paths contain `site-packages`; the four above are in his own `report.py`. Where should he look first?", options:[{t:"At the lowest frame in `report.py`", ok:true, why:"When a traceback passes through code you didn’t write, the lowest frame in your own file is usually where the problem starts."}, {t:"At the very top frame, because it ran first", why:"The top frame is the oldest call, usually far from the problem. Start near the bottom, in your own code."}, {t:"Inside the `site-packages` files, to correct them", why:"That’s other people’s installed code. The bug is most likely in what his code passed to it."}, {t:"Nowhere, because errors in `site-packages` aren’t his to fix", why:"The crash may happen there, but the cause is often a value from his own code. Check his lowest frame."}]},
+    {id:"t2u9-cp10", lesson:"t2u9-l4", level:3, q:"Ravi adds `assert qty > 0, \"quantity must be positive\"` to check what users type into his order script. Why is that a poor choice?", options:[{t:"`assert` only works inside test files, not in scripts", why:"`assert` works anywhere. It’s a poor fit here because it can be switched off."}, {t:"The message has to be an f-string", why:"Any string works as the message. The problem is using `assert` for user input."}, {t:"`python3 -O` turns asserts off; input needs an `if`", ok:true, why:"`assert` is for catching your own mistakes and for tests. Bad input needs a check that always runs."}, {t:"`assert` quietly fixes the value instead of stopping", why:"A false assertion stops the program with an `AssertionError`. It never changes values."}]},
+    {id:"t2u9-cp11", lesson:"t2u9-l5", level:2, q:"The documentation shows `str.split(sep=None, maxsplit=-1)`. What does that tell you about `maxsplit`?", options:[{t:"You must always pass it when you call `split()`", why:"A parameter with `=` in the signature has a default, so it can be left out. `\"a b\".split()` works fine."}, {t:"It can only ever be -1", why:"-1 is only the default. Like `mode='r'` in `open()`, you can pass a different value when you need one."}, {t:"It has a default, so you can leave it out", ok:true, why:"In a signature, `name=value` means the parameter has a default. Leave it out and `split()` uses -1."}, {t:"`split()` ignores it unless `sep` is also given", why:"The signature says nothing like that. Each parameter with `=` has its own default and can be passed on its own."}]},
+    {id:"t2u9-cp12", lesson:"t2u9-l5", level:1, q:"In the REPL, Ines can’t remember the exact name of the string method that removes spaces from both ends. What’s a quick way to find it?", options:[{t:"`print(\"text\")`", why:"That just shows the text. It doesn’t list any methods."}, {t:"`dir(\"text\")`, which lists a string’s methods", ok:true, why:"`dir()` lists a value’s methods, such as `upper`, `split` and `strip`. Then `help(…)` explains the one she picks."}, {t:"`import strip`, which loads the method by name", why:"`strip` is a string method, not a module, so there’s nothing to import."}, {t:"`type(\"text\")`, which shows what kind of value it is", why:"`type()` says what kind of value it is (`str`), not what it can do."}]}
+  ],
   codex:[
    {id:"py-files", title:"Reading and writing text files in Python", aka:["open()","with open","file modes","write mode","append mode","read a file","encoding utf-8","FileNotFoundError"], tags:["python","files"],
     summary:"Open text files with `with open(path, mode, encoding=\"utf-8\") as f:`; mode \"w\" empties the file first, \"a\" adds to the end, \"x\" refuses to overwrite.",
@@ -1043,7 +1057,7 @@ ICA.addUnit({
       "**`PYTHONBREAKPOINT`.** Setting the environment variable `PYTHONBREAKPOINT=0` disables every `breakpoint()` call, so a forgotten one can’t hang a script; it can also point to another debugger.",
       "**Heisenbugs.** Some bugs change or vanish when observed: timing issues, or prints that change buffering. Record inputs and logs instead of relying on interactive inspection.",
       "**Changing one thing at a time.** Several simultaneous edits make it impossible to know which one mattered, and often introduce new bugs. Version control lets you diff what changed since the code last worked.",
-      "**Regression tests.** Once fixed, add a test that reproduces the bug, so it can’t silently return. That’s the bridge to testing frameworks such as pytest (Unit 10)."
+      "**Regression tests.** Once fixed, add a test that reproduces the bug, so it can’t silently return. That’s the bridge to testing frameworks such as pytest (Unit 11)."
      ]},
     related:["reading-tracebacks","asking-for-help","testing-basics","git-basics"],
     read:[{book:"atbs", where:"Chapter 5, “Debugging”"},{book:"missing", where:"“Debugging and Profiling”"},{book:"thinkpy", where:"12.10 “Debugging”"}],
@@ -1111,7 +1125,7 @@ ICA.addUnit({
      {t:"Opens it read-only", why:"Reading is `\"r\"`, the default. `\"w\"` is for writing."}
    ]},
    {id:"t2u9-q02", lesson:"t2u9-l1", level:3, q:"Ana’s script reads `data/members.txt` and works when run from her editor, but `FileNotFoundError` appears when a colleague runs it from a different folder. What’s the most likely cause?", options:[
-     {t:"The relative path is looked up from the working directory, which differs between the two ways of running it", ok:true, why:"Relative paths start from where the program is running. Printing `Path(\"data/members.txt\").resolve()` shows where Python is looking; building the path from `Path(__file__).parent` makes it independent of the working directory."},
+     {t:"The relative path depends on the working directory", ok:true, why:"Relative paths start from where the program is running, and that differs between the two ways of running it. Printing `Path(\"data/members.txt\").resolve()` shows where Python is looking; building the path from `Path(__file__).parent` makes it independent of the working directory."},
      {t:"The colleague’s computer can’t read .txt files", why:"Every computer can read text files. The error says Python looked in a place with no such file."},
      {t:"The file needs `encoding=\"utf-8\"` to be found", why:"Encoding affects how the contents are decoded, not whether the file is found."},
      {t:"The file is open in Ana’s editor, which hides it", why:"Having a file open elsewhere doesn’t make it disappear. The path is the issue."}
@@ -1129,25 +1143,25 @@ ICA.addUnit({
      {t:"Python only understands Mac paths", why:"Python works on Windows; the issue is how backslashes behave inside string quotes."}
    ]},
    {id:"t2u9-q05", lesson:"t2u9-l1", level:3, q:"Kenji reads a file of recipe titles with `encoding=\"utf-8\"`, and `crème` comes out as `crÃ¨me`. What happened, most likely?", options:[
-     {t:"Earlier, someone opened the UTF-8 text with a different encoding and saved it again, so the garbled letters are now in the file itself", ok:true, why:"`Ã¨` is what the two UTF-8 bytes for `è` look like when decoded as an older encoding such as cp1252. Kenji read with UTF-8, so that mix-up must have happened before, and been saved. Reading and writing with the same encoding, UTF-8, avoids it."},
-     {t:"Python can’t store accented letters", why:"Python strings hold every character. The problem is a mismatch between how the bytes were written and read."},
+     {t:"The file was already garbled before he read it", ok:true, why:"Earlier, someone opened the UTF-8 text with a different encoding and saved it again, so the garbled letters are in the file itself. `Ã¨` is what the two UTF-8 bytes for `è` look like when decoded as an older encoding such as cp1252. Kenji read with UTF-8, so that mix-up must have happened before. Reading and writing with the same encoding, UTF-8, avoids it."},
+     {t:"Python can’t store accented letters like è in a string", why:"Python strings hold every character. The problem is a mismatch between how the bytes were written and read."},
      {t:"He should have used mode `\"a\"`", why:"The mode decides what happens to existing content, not how characters are decoded."},
      {t:"The file is too long", why:"Length has nothing to do with garbled characters."}
    ]},
    {id:"t2u9-q06", lesson:"t2u9-l1", level:1, q:"What does the `with` in `with open(…) as f:` guarantee?", options:[
-     {t:"The file is closed when the block ends, even if an error happens inside it", ok:true, why:"That’s the job of a with statement: reliable clean-up."},
-     {t:"The file will never be overwritten", why:"Overwriting depends on the mode; `\"w\"` still empties the file."},
+     {t:"The file gets closed, even if an error happens", ok:true, why:"When the block ends, the file is closed, even if an error happens inside it. That’s the job of a with statement: reliable clean-up."},
+     {t:"The file will never be overwritten, whatever the mode", why:"Overwriting depends on the mode; `\"w\"` still empties the file."},
      {t:"The file is saved in UTF-8", why:"Only `encoding=\"utf-8\"` does that."},
      {t:"The file exists before opening", why:"Opening a missing file for reading still raises FileNotFoundError inside a with."}
    ]},
    {id:"t2u9-q07", lesson:"t2u9-l1", level:2, q:"A file has the three lines `rice`, `lentils`, `tea`. In `for line in f:`, why is `line == \"rice\"` false on the first line?", options:[
-     {t:"The line is `\"rice\\n\"`: it still ends with its line break; use `line.strip()`", ok:true, why:"Lines read from a file keep their `\\n`. `repr(line)` shows it; `.strip()` removes it."},
+     {t:"The line still ends with its line break", ok:true, why:"The line is `\"rice\\n\"`: lines read from a file keep their `\\n`. `repr(line)` shows it; `line.strip()` removes it."},
      {t:"Python reads the lines in reverse order", why:"Lines come in order from the top."},
      {t:"Comparisons don’t work on text from files", why:"They work fine once the hidden newline is removed."},
      {t:"The first line is always the header", why:"Text files have no special header line; that’s a CSV idea, and even then the line is still read."}
    ]},
    {id:"t2u9-q08", lesson:"t2u9-l1", level:3, q:"Priya’s script makes a monthly report and must **never** replace an existing report by accident. Which mode fits best?", options:[
-     {t:"`\"x\"`, which raises FileExistsError if the file is already there", ok:true, why:"Create-only mode turns an accidental overwrite into a loud error instead of silent data loss."},
+     {t:"`\"x\"`", ok:true, why:"Create-only mode raises FileExistsError if the file is already there. That turns an accidental overwrite into a loud error instead of silent data loss."},
      {t:"`\"w\"`", why:"`\"w\"` replaces existing files silently: exactly what she wants to avoid."},
      {t:"`\"a\"`", why:"Append would add this month’s report onto the end of last month’s, mixing them."},
      {t:"`\"r\"`", why:"Read mode can’t write at all."}
@@ -1166,8 +1180,8 @@ ICA.addUnit({
      {t:"Open the file with `\"a\"` mode", why:"Mode doesn’t change cell types, and `\"a\"` is for writing."}
    ]},
    {id:"t2u9-q11", lesson:"t2u9-l2", level:2, q:"Why open a CSV with `newline=\"\"`?", options:[
-     {t:"So the csv module handles line endings itself; otherwise quoted line breaks can be misread and Windows output gets blank rows", ok:true, why:"Python’s csv documentation recommends it for every file used with the module."},
-     {t:"It adds a blank line between rows", why:"It prevents extra blank rows; it doesn’t add them."},
+     {t:"So the csv module can handle line endings itself", ok:true, why:"Otherwise quoted line breaks can be misread and Windows output gets blank rows. Python’s csv documentation recommends it for every file used with the module."},
+     {t:"It adds a blank line between rows in the output file", why:"It prevents extra blank rows; it doesn’t add them."},
      {t:"It removes the header row", why:"Headers are handled by `DictReader`, not by `newline`."},
      {t:"It sets the encoding to UTF-8", why:"Encoding is a separate argument."}
    ]},
@@ -1178,9 +1192,9 @@ ICA.addUnit({
      {t:"`counts[name] += row[\"qty\"]`", why:"It fails on the first row of each item (no key yet) and adds text instead of numbers."}
    ]},
    {id:"t2u9-q13", lesson:"t2u9-l2", level:3, q:"Tomás double-clicked a members CSV, Excel opened it, and he saved it. Now member codes like `00731` read as `731`. What would have avoided this?", options:[
-     {t:"Reading and changing the file with Python (or importing with the code column set to Text), and never re-saving the original from the spreadsheet", ok:true, why:"Spreadsheet apps guess types when they open a CSV and drop leading zeros. Python’s csv module keeps `\"00731\"` exactly."},
+     {t:"Never re-saving the original from the spreadsheet", ok:true, why:"Read and change the file with Python (or import it with the code column set to Text). Spreadsheet apps guess types when they open a CSV and drop leading zeros. Python’s csv module keeps `\"00731\"` exactly."},
      {t:"Saving it as CSV twice", why:"Each save keeps whatever the app already changed; the zeros don’t come back."},
-     {t:"Renaming the file to .txt after saving", why:"The zeros were already lost when the app treated the codes as numbers."},
+     {t:"Renaming the file to .txt after saving it in Excel", why:"The zeros were already lost when the app treated the codes as numbers."},
      {t:"Using `int()` on the codes in Python", why:"`int(\"00731\")` is 731, which drops the zeros too. Codes should stay as text."}
    ]},
    {id:"t2u9-q14", lesson:"t2u9-l2", level:2, q:"A CSV from Excel gives `KeyError: 'name'`, and printing a row shows `'\\ufeffname'`. What should the script change?", options:[
@@ -1190,21 +1204,21 @@ ICA.addUnit({
      {t:"Use `split(\",\")` instead of the csv module", why:"That loses proper quoting and still leaves the marker attached."}
    ]},
    {id:"t2u9-q15", lesson:"t2u9-l2", level:1, q:"Which data fits JSON better than CSV?", options:[
-     {t:"An event with a title, a seat count and a list of teams", ok:true, why:"A list inside a dictionary is nested data, which JSON represents directly."},
-     {t:"A list of 500 sales with the same four columns", why:"A flat table like that is exactly what CSV is for."},
+     {t:"An event with a title, seats and a list of teams", ok:true, why:"A title, a seat count and a list inside one record is nested data, which JSON represents directly."},
+     {t:"A list of 500 sales that all have the same four columns", why:"A flat table like that is exactly what CSV is for."},
      {t:"A bank statement to open in a spreadsheet", why:"Spreadsheets open CSV directly."},
      {t:"A register of students with one row each", why:"Fixed columns per record: a table, so CSV."}
    ]},
    {id:"t2u9-q16", lesson:"t2u9-l2", level:3, q:"Amara’s script reads `orders.csv`, filters it, and writes the result with `open(\"orders.csv\", \"w\", newline=\"\", encoding=\"utf-8\")`. Why is that risky?", options:[
-     {t:"It overwrites the input; if the filter has a bug, the original data is lost", ok:true, why:"Write to a new file name, check it, and keep the original."},
+     {t:"It overwrites the input file", ok:true, why:"If the filter has a bug, the original data is lost. Write to a new file name, check it, and keep the original."},
      {t:"CSV files can’t be written by Python", why:"`csv.writer` writes them fine."},
      {t:"`newline=\"\"` will delete the header", why:"It only controls line endings."},
      {t:"The file will be saved as JSON", why:"The format depends on what you write, here CSV."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t2u9-q17", lesson:"t2u9-l3", level:1, q:"What is a dry run?", options:[
-     {t:"Running a script so it only prints what it would do, without changing anything", ok:true, why:"You read the plan and fix the rule before letting the script act."},
-     {t:"Running a script on an empty folder", why:"That might test it, but a dry run means printing the planned actions on the real files without acting."},
+     {t:"Running a script so it only prints what it would do", ok:true, why:"Nothing is changed. You read the plan and fix the rule before letting the script act."},
+     {t:"Running a script on an empty folder to test it first", why:"That might test it, but a dry run means printing the planned actions on the real files without acting."},
      {t:"Running a script once and deleting it", why:"That’s unrelated to checking the plan."},
      {t:"A script that only works without internet", why:"Network access has nothing to do with it."}
    ]},
@@ -1215,8 +1229,8 @@ ICA.addUnit({
      {t:"Both files share the name", why:"A folder can’t contain two files with the same name."}
    ]},
    {id:"t2u9-q19", lesson:"t2u9-l3", level:1, q:"What does “idempotent” mean for a script?", options:[
-     {t:"Running it twice leaves things the same as running it once", ok:true, why:"A second run does no harm, which protects you from accidental reruns."},
-     {t:"It runs twice as fast the second time", why:"Speed isn’t the point; the result is."},
+     {t:"Running it twice gives the same result as once", ok:true, why:"A second run does no harm, which protects you from accidental reruns."},
+     {t:"It runs twice as fast the second time you run it", why:"Speed isn’t the point; the result is."},
      {t:"It can only be run once", why:"The opposite: it can be run many times safely."},
      {t:"It has no bugs", why:"Idempotence is one specific property, not freedom from all bugs."}
    ]},
@@ -1233,8 +1247,8 @@ ICA.addUnit({
      {t:"Sort the files first", why:"Order doesn’t matter here; every file still gets a second prefix."}
    ]},
    {id:"t2u9-q22", lesson:"t2u9-l3", level:2, q:"Why does the renamer use `sorted(folder.glob(\"IMG_*\"))` instead of just `folder.glob(\"IMG_*\")`?", options:[
-     {t:"Folder listings come in no guaranteed order; sorting makes the numbering follow the names every time", ok:true, why:"Without sorting, `IMG_0413` might become `beach-001` on one computer and `beach-002` on another."},
-     {t:"`glob` only works inside `sorted`", why:"`glob` works alone; sorting is about predictable order."},
+     {t:"Folder listings have no guaranteed order", ok:true, why:"Sorting makes the numbering follow the names every time. Without it, `IMG_0413` might become `beach-001` on one computer and `beach-002` on another."},
+     {t:"`glob` only works when it’s inside `sorted`", why:"`glob` works alone; sorting is about predictable order."},
      {t:"Sorting removes non-photo files", why:"Sorting changes order only; the `IMG_*` pattern does the selecting."},
      {t:"It makes the script run faster", why:"Sorting adds a little work; it’s there for correctness."}
    ]},
@@ -1245,20 +1259,20 @@ ICA.addUnit({
      {t:"Typing `tidy.py` at the `>>>` prompt", why:"`>>>` is Python’s interactive prompt; commands to run scripts go in the terminal."}
    ]},
    {id:"t2u9-q24", lesson:"t2u9-l3", level:3, q:"Hana’s first version of a cleanup script uses `Path.unlink()` to delete duplicate photos. What safer first version does this lesson recommend?", options:[
-     {t:"Move the suspected duplicates into a to-delete folder, check it, and delete them yourself", ok:true, why:"`unlink` skips the Recycle Bin or Trash, so mistakes can’t be undone. Moving first keeps everything recoverable."},
+     {t:"Move the duplicates to a to-delete folder first", ok:true, why:"Then check the folder and delete them yourself. `unlink` skips the Recycle Bin or Trash, so mistakes can’t be undone. Moving first keeps everything recoverable."},
      {t:"Run `unlink` twice to be sure", why:"Deleting twice doesn’t make it safer; the files are already gone after the first time."},
      {t:"Use `\"w\"` mode on each duplicate", why:"That would empty the files rather than remove them, and is no safer."},
-     {t:"Run it with administrator rights", why:"Extra rights only increase the damage a bug can do."}
+     {t:"Run it with administrator rights so nothing is missed", why:"Extra rights only increase the damage a bug can do."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t2u9-q25", lesson:"t2u9-l4", level:1, q:"In which order should you read a Python traceback?", options:[
-     {t:"From the bottom up: the error line, then the frame that failed, then the calls that led there", ok:true, why:"“Most recent call last” means the newest step is at the bottom."},
+     {t:"From the bottom up", ok:true, why:"The error line, then the frame that failed, then the calls that led there. “Most recent call last” means the newest step is at the bottom."},
      {t:"Top to bottom, stopping at the first file name", why:"The top frame is the oldest call, often far from where it failed."},
      {t:"Only the middle frame", why:"Every part has a job; the bottom line is the most important."},
      {t:"Skip it and read the code instead", why:"The traceback tells you exactly where to look; skipping it wastes time."}
    ]},
    {id:"t2u9-q26", lesson:"t2u9-l4", level:3, q:"A traceback ends with `ZeroDivisionError` in `average()`, called from `report()` with an empty list that came from reading a blank CSV. Where is the best fix?", options:[
-     {t:"Where the empty list is handled: check for no scores before calling `average`, or have `average` handle empty input clearly", ok:true, why:"The crash site is innocent: dividing by the length is fine for real data. The fix belongs where the empty case should be decided."},
+     {t:"Where the empty case should be handled", ok:true, why:"Check for no scores before calling `average`, or have `average` handle empty input clearly. The crash site is innocent: dividing by the length is fine for real data."},
      {t:"Delete the division", why:"Then `average` stops computing an average at all."},
      {t:"Wrap the whole script so errors are ignored", why:"Hiding errors leaves wrong or missing results nobody notices."},
      {t:"Reinstall Python", why:"Python is working correctly; the input was empty."}
@@ -1276,13 +1290,13 @@ ICA.addUnit({
      {t:"`for i in range(1, len(guests) + 1): print(guests[i])`", why:"Skips Amara and then goes one past the end."}
    ]},
    {id:"t2u9-q29", lesson:"t2u9-l4", level:3, q:"Sione’s script prints 0 as the total for a 500-row CSV. He prints the data after step 3 of 6: it’s correct there. What does he know now?", options:[
-     {t:"The bug is in steps 4 to 6; check halfway through those next", ok:true, why:"Each check halves the suspects. Correct after step 3 clears steps 1 to 3."},
+     {t:"The bug is in steps 4 to 6", ok:true, why:"Correct data after step 3 clears steps 1 to 3. Check halfway through steps 4 to 6 next: each check halves the suspects."},
      {t:"The bug is in steps 1 to 3", why:"Those produced correct data, so they’re cleared."},
      {t:"There is no bug", why:"The final total is wrong, so something after step 3 is wrong."},
      {t:"He must check every line from the top", why:"Halving is quicker: check after step 5 or so next."}
    ]},
    {id:"t2u9-q30", lesson:"t2u9-l4", level:1, q:"What happens when an `assert` condition is false?", options:[
-     {t:"The program stops with an AssertionError and the message you gave", ok:true, why:"An assert states an assumption and stops loudly when it’s broken."},
+     {t:"It stops with an AssertionError", ok:true, why:"It shows the message you gave. An assert states an assumption and stops loudly when it’s broken."},
      {t:"Python fixes the value", why:"`assert` only checks; it never changes anything."},
      {t:"Nothing; asserts only print warnings", why:"A failed assert raises an error that stops the program (unless caught)."},
      {t:"The line is skipped and the program continues", why:"That happens only when Python runs with `-O`, which switches asserts off entirely."}
@@ -1301,10 +1315,10 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t2u9-q33", lesson:"t2u9-l5", level:1, q:"What is a minimal reproducible example?", options:[
-     {t:"The smallest complete code that still shows the problem, which anyone can run", ok:true, why:"It lets helpers see the bug quickly, and building it often reveals the cause."},
+     {t:"The smallest runnable code that shows the bug", ok:true, why:"It must be complete, so anyone can run it. It lets helpers see the bug quickly, and building it often reveals the cause."},
      {t:"Your whole project, zipped", why:"Too big: helpers would have to search for the problem."},
      {t:"A screenshot of the error", why:"Nobody can run a picture, and it may leave out the code."},
-     {t:"A one-line description of the bug", why:"Without runnable code, helpers can only guess."}
+     {t:"A one-line description of the bug and when it happens", why:"Without runnable code, helpers can only guess."}
    ]},
    {id:"t2u9-q34", lesson:"t2u9-l5", level:2, q:"Which search is most likely to help with `UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 3` in `C:\\Users\\Mei\\shop\\load.py`?", options:[
      {t:"`python UnicodeDecodeError utf-8 can't decode byte 0xe9 open file`", ok:true, why:"It keeps the shared parts of the message and adds context, leaving out Mei’s own paths."},
@@ -1313,33 +1327,33 @@ ICA.addUnit({
      {t:"`my file is broken`", why:"No technical detail for a search engine to match."}
    ]},
    {id:"t2u9-q35", lesson:"t2u9-l5", level:3, q:"Lucía finds an online answer using `raw_input(\"Name: \")`. Her Python says `NameError: name 'raw_input' is not defined`. What’s going on?", options:[
-     {t:"The answer is for Python 2; in Python 3 the function is `input()`", ok:true, why:"`raw_input` and `print` without brackets are signs of Python 2 code. Check the date and version of answers."},
+     {t:"The answer is for Python 2", ok:true, why:"In Python 3 the function is `input()`. `raw_input` and `print` without brackets are signs of Python 2 code. Check the date and version of answers."},
      {t:"She needs to install a raw_input package", why:"There’s no need: Python 3’s built-in `input()` does the job. Installing unknown packages to match an old answer is risky."},
      {t:"Her Python installation is broken", why:"It’s working correctly; that name doesn’t exist in Python 3."},
      {t:"She must import raw_input from csv", why:"The csv module has nothing to do with reading typed input."}
    ]},
    {id:"t2u9-q36", lesson:"t2u9-l5", level:1, q:"Where is the official, version-specific description of `csv.DictReader`?", options:[
-     {t:"The Python Standard Library documentation at docs.python.org", ok:true, why:"Set the version menu to your Python and search for the csv module."},
+     {t:"The Python docs at docs.python.org", ok:true, why:"It’s the official Python Standard Library documentation. Set the version menu to your Python and search for the csv module."},
      {t:"The first search result, whatever it is", why:"Search results vary in quality and age; the official docs are the reference."},
      {t:"An AI assistant’s answer", why:"Useful for explanations, but it can be wrong; check against the docs."},
      {t:"The file’s properties in your file manager", why:"That shows file details, not documentation."}
    ]},
    {id:"t2u9-q37", lesson:"t2u9-l5", level:3, q:"Kenji wants an AI assistant’s help with a script that contains his email password and reads a CSV of customers. What should he do?", options:[
-     {t:"Replace the password with a placeholder and the customer data with a few made-up rows, then share a minimal example", ok:true, why:"Secrets and other people’s personal data shouldn’t go into AI tools or forums. A minimal example with fake data gets the same help."},
-     {t:"Paste everything: the assistant needs full context", why:"It doesn’t need the real secrets or people’s data to explain a bug, and what you paste may be stored."},
+     {t:"Share a minimal example with a fake password and data", ok:true, why:"Replace the password with a placeholder and the customer data with a few made-up rows. Secrets and other people’s personal data shouldn’t go into AI tools or forums. A minimal example with fake data gets the same help."},
+     {t:"Paste everything, because the assistant needs full context", why:"It doesn’t need the real secrets or people’s data to explain a bug, and what you paste may be stored."},
      {t:"Paste the password but not the CSV", why:"The password is the most dangerous part to share."},
      {t:"Post the whole script publicly instead", why:"Public posting is even riskier for secrets and personal data."}
    ]},
    {id:"t2u9-q38", lesson:"t2u9-l5", level:2, q:"An AI suggests `open(\"data.csv\", mode=\"r\", autoencoding=True)`. Python says `TypeError: open() got an unexpected keyword argument 'autoencoding'`. What’s the lesson?", options:[
-     {t:"Assistants can invent parameters; check suggestions against the documentation and test them", ok:true, why:"`open()` has no `autoencoding` parameter. The docs list the real ones, such as `encoding`."},
+     {t:"Check AI suggestions against the documentation", ok:true, why:"Assistants can invent parameters: `open()` has no `autoencoding` parameter. The docs list the real ones, such as `encoding`. Test suggestions too."},
      {t:"His Python is too old for this feature", why:"No Python version has this parameter; it was made up."},
-     {t:"He should install an autoencoding package", why:"That chases an invented feature, possibly into an unsafe package."},
+     {t:"He should install a package that adds autoencoding", why:"That chases an invented feature, possibly into an unsafe package."},
      {t:"`open()` can’t read CSV files", why:"It opens any file; the csv module then parses it."}
    ]},
    {id:"t2u9-q39", lesson:"t2u9-l5", level:2, q:"Which detail is most useful to include when asking for help with a bug?", options:[
-     {t:"What you expected to happen and what actually happened, with the full error text", ok:true, why:"Expected vs got shows helpers the gap, and the full traceback shows where."},
-     {t:"How long you’ve been stuck", why:"Understandable to mention, but it doesn’t help anyone find the bug."},
-     {t:"A photo of your screen", why:"Text can be copied and run; photos can’t."},
+     {t:"The full error, plus expected vs actual", ok:true, why:"Say what you expected to happen and what actually happened: that shows helpers the gap, and the full traceback shows where."},
+     {t:"How long you’ve been stuck on it, in hours", why:"Understandable to mention, but it doesn’t help anyone find the bug."},
+     {t:"A photo of your screen showing the problem", why:"Text can be copied and run; photos can’t."},
      {t:"Your full name and address", why:"Personal details are unnecessary and unsafe to share."}
    ]},
    {id:"t2u9-q40", lesson:"t2u9-l5", level:3, q:"Priya has changed her code at random for an hour and it now fails in new ways. What does Think Python’s “retreating” suggest?", options:[

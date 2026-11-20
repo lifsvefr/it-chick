@@ -89,13 +89,13 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u4-l1-x1", type:"mcq", q:"Ana is choosing between two thesis plans. Plan A compares election turnout in thirty democracies using a dataset. Plan B studies one Japanese prefecture’s elections using local newspapers and interviews in Japanese. Which statement best describes the difference?", options:[
-      {t:"Plan A follows a discipline’s comparative logic; Plan B follows area studies’ emphasis on depth, language and context. Both can be good research.", ok:true, why:"Right. Disciplines start from a general question and compare; area studies starts from a place and goes deep. Graduate programmes often want you to combine the two."},
+      {t:"A is disciplinary comparison; B is area-studies depth.", ok:true, why:"Right. Plan B stresses depth, language and context, and both can be good research. Disciplines start from a general question and compare; area studies starts from a place and goes deep. Graduate programmes often want you to combine the two."},
       {t:"Plan A is real social science; Plan B is only description.", why:"Area studies can test and build theory. Depth is a method, not the absence of one."},
       {t:"Plan B is better because only local knowledge counts.", why:"Comparison across many cases answers questions one case cannot. Neither approach is better in general."},
       {t:"Both plans are area studies, because both are about elections.", why:"The topic is the same, but Plan A starts from a general question across thirty countries, which is a disciplinary design."}
     ]},
     {id:"e4u4-l1-x2", type:"mcq", q:"Why did area studies, including Japan studies, expand so fast in the United States after 1945?", options:[
-      {t:"Governments and foundations wanted experts on regions that mattered in the war, the Occupation and the Cold War, and paid for programmes such as those funded under the 1958 National Defense Education Act.", ok:true, why:"Correct. Strategic need, backed by public and foundation money, drove the expansion. Critics later argued this shaped which questions were asked."},
+      {t:"Governments and foundations paid for experts on key regions.", ok:true, why:"Correct. They wanted experts on regions that mattered in the war, the Occupation and the Cold War, for example through the 1958 National Defense Education Act. Strategic need, backed by public and foundation money, drove the expansion. Critics later argued this shaped which questions were asked."},
       {t:"Because Edward Said’s *Orientalism* made universities want more Asian studies.", why:"*Orientalism* appeared in 1978, long after the expansion, and it criticised much of that scholarship."},
       {t:"Because Japan’s government paid for all the new programmes.", why:"Japanese funding (for example, from the Japan Foundation, founded in 1972) came later and was not the main driver of the early expansion."},
       {t:"Because universities stopped teaching disciplines such as economics.", why:"Disciplines kept growing too. Area programmes were added alongside them."}
@@ -135,7 +135,7 @@ ICA.addUnit({
       {t:"Mouer and Sugimoto showed that such claims often rest on evidence from men in large firms.", flag:false, why:"Accurate: this is their best-known criticism of uniqueness theories."}
     ]},
     {id:"e4u4-l1-x7", type:"mcq", q:"In a seminar, Lucía says: “As an outsider I can see Japan objectively, because I have no stake in it.” Which reply best reflects the insider–outsider debate?", options:[
-      {t:"Everyone sees from a position. Outsiders may notice what locals take for granted but also bring their own assumptions; evidence and method, not position, decide what we can claim.", ok:true, why:"Right. Position shapes what you notice; it does not guarantee truth for insiders or outsiders."},
+      {t:"Everyone sees from a position; evidence decides claims.", ok:true, why:"Right. Outsiders may notice what locals take for granted but also bring their own assumptions; evidence and method, not position, decide what we can claim. Position shapes what you notice; it does not guarantee truth for insiders or outsiders."},
       {t:"She is right: distance always makes a researcher more objective.", why:"The Orientalism critique shows outsiders carry their own frames. Distance is not neutrality."},
       {t:"Only Japanese scholars can understand Japan, so she should change her topic.", why:"That is itself a uniqueness claim, and it would make comparison and critique impossible."},
       {t:"Objectivity doesn’t matter in area studies, so the question is irrelevant.", why:"Area studies still needs evidence and careful method. The debate is about how position affects them."}
@@ -264,7 +264,7 @@ ICA.addUnit({
       {t:"Okinawa returns to Japanese administration", why:"15 May 1972."}
     ]},
     {id:"e4u4-l2-x6", type:"mcq", q:"What does the government’s long-standing interpretation of Article 9 say about the Self-Defense Forces?", options:[
-      {t:"Article 9 does not deny Japan’s inherent right of self-defence, so forces limited to the minimum necessary for self-defence are not banned “war potential”.", ok:true, why:"That is the official view. Many constitutional scholars disagree, which is why the issue is debated."},
+      {t:"Forces limited to self-defence aren’t banned “war potential”.", ok:true, why:"Article 9 does not deny Japan’s inherent right of self-defence, so forces limited to the minimum necessary are allowed. That is the official view. Many constitutional scholars disagree, which is why the issue is debated."},
       {t:"Article 9 was amended in 1954 to allow the SDF.", why:"The Constitution has never been amended. The SDF rest on interpretation, not a text change."},
       {t:"The SDF are a police force, so Article 9 does not apply to them.", why:"The SDF are military forces in practice. The government’s argument is about self-defence, not about calling them police."},
       {t:"The Supreme Court has ruled the SDF clearly constitutional.", why:"The courts have mostly avoided a direct ruling on the SDF’s constitutionality."}
@@ -368,7 +368,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u4-l3-x1", type:"mcq", q:"After an election, Sione’s friend says the Emperor could refuse to appoint the prime minister if he disliked the result. What is the correct reply?", options:[
-      {t:"No. He appoints the person the Diet designates, acting with the cabinet’s advice and approval, and has no powers related to government.", ok:true, why:"Correct (Articles 3, 4 and 6). His role in appointing the prime minister is formal."},
+      {t:"No. He must appoint whoever the Diet designates.", ok:true, why:"Correct (Articles 3, 4 and 6). He acts with the cabinet’s advice and approval and has no powers related to government. His role in appointing the prime minister is formal."},
       {t:"Yes, the Emperor keeps a reserve power to refuse, like some presidents.", why:"The Constitution gives him no such power. This is a key difference from the Meiji Constitution."},
       {t:"Yes, but only if the House of Councillors agrees.", why:"Neither house can give the Emperor discretion over the appointment."},
       {t:"The Emperor plays no part at all in the appointment.", why:"He does perform the formal act of appointment (Article 6). He simply has no choice in it."}
@@ -519,7 +519,7 @@ ICA.addUnit({
     {id:"e4u4-l4-x3", type:"number", q:"The 2025 census counted 3.84 million foreign residents in a total population of 122.97 million. What percentage of the population were foreign residents? Round to one decimal place.", answer:3.1, tol:0.1, unit:"%", why:"3.84 ÷ 122.97 = 0.0312…, so about 3.1%. That is a small share by the standards of many rich countries, but it is growing fast.", wrongs:[{v:31.2, tol:0.3, why:"You moved the decimal point one place too far. 3.84 ÷ 122.97 is about 0.031, which is 3.1%."},{v:0.03, tol:0.01, why:"That is the fraction. Multiply by 100 to turn it into a percentage."},{v:3.5, tol:0.1, why:"That uses the Immigration Services Agency’s 4.28 million (June 2026) instead of the census figure. Use the two figures from the same source and date."}]},
     {id:"e4u4-l4-x4", type:"number", q:"The census counted 3.84 million foreign residents in 2025, an increase of 1.094 million since 2020. By what percentage did the number grow? Round to one decimal place.", answer:39.8, tol:0.2, unit:"%", why:"The 2020 figure was 3.84 − 1.094 = 2.746 million. Growth = 1.094 ÷ 2.746 = 0.398…, so about 39.8%. Percentage change is always measured against the starting value.", wrongs:[{v:28.5, tol:0.3, why:"You divided the increase by the 2025 figure (1.094 ÷ 3.84). Percentage change divides by the starting (2020) value."},{v:139.8, tol:0.3, why:"That is the 2025 figure as a percentage of the 2020 one. The increase is 139.8 − 100 = 39.8%."}]},
     {id:"e4u4-l4-x5", type:"mcq", q:"A headline says: “Japan’s fertility rate of 1.14 means each woman has 1.14 children.” What is the most accurate correction?", options:[
-      {t:"The total fertility rate is the average number of children a woman would have over her life if she experienced this year’s age-specific birth rates. It is a summary of one year, not a count of actual families.", ok:true, why:"Right. It is a synthetic, period measure. Actual completed family sizes of older generations are higher."},
+      {t:"It is a one-year average, not a count of real families.", ok:true, why:"Right. The total fertility rate is the average number of children a woman would have over her life if she experienced this year’s age-specific birth rates: a synthetic, period measure. Actual completed family sizes of older generations are higher."},
       {t:"It means 1.14% of women gave birth that year.", why:"The TFR is not a percentage of women. It is an average number of children per woman over a lifetime, under one year’s rates."},
       {t:"It counts births to all residents, including foreign nationals.", why:"The figure reported (1.14 for 2025) is from vital statistics on Japanese nationals in Japan. In any case, this does not fix the misreading in the headline."},
       {t:"The headline is exactly right; nothing needs correcting.", why:"The headline treats a one-year summary measure as a count of real families, which is misleading."}
@@ -544,7 +544,7 @@ ICA.addUnit({
       {t:"Japan’s government has officially adopted an immigration policy.", flag:true, why:"Inaccurate. Governments have said they are not adopting a so-called immigration policy, while widening work-based entry."}
     ]},
     {id:"e4u4-l4-x8", type:"mcq", q:"Which statement about the “lost decades” is the most defensible in a seminar?", options:[
-      {t:"Growth was weak for years after 1990, but the label is debated: measures per working-age person look better, while wages and job security look worse.", ok:true, why:"Right. Good analysis says which measure it uses."},
+      {t:"Growth was weak after 1990, but the label is debated.", ok:true, why:"Right. Measures per working-age person look better, while wages and job security look worse. Good analysis says which measure it uses."},
       {t:"Japan became a poor country after 1990.", why:"Japan stayed a rich country with low unemployment and long life expectancy."},
       {t:"Nothing at all changed in the Japanese economy after 1990.", why:"There were major reforms, banking clean-ups, Abenomics and the end of negative interest rates in 2024."},
       {t:"The lost decades were caused by Japanese culture.", why:"A cultural explanation without evidence. Economists point to the bubble’s collapse, bad loans, deflation and demographics."}
@@ -716,6 +716,68 @@ ICA.addUnit({
   }
   ],
   checkpoint:["e4u4-q02","e4u4-q06","e4u4-q11","e4u4-q14","e4u4-q19","e4u4-q22","e4u4-q25","e4u4-q29","e4u4-q33","e4u4-q37","e4u4-q41","e4u4-q44"],
+  cpBank:[
+   {id:"e4u4-cp01", lesson:"e4u4-l1", level:1, q:"A foreign science-fiction film shows Tokyo as a neon city full of robots, where people work like machines and show no feelings. Which concept fits this image best?", options:[
+     {t:"Self-Orientalism", why:"Self-Orientalism is when a society presents itself in the exotic terms outsiders use. This image comes from a foreign film, not from Japan selling itself."},
+     {t:"Nihonjinron", why:"Nihonjinron is a body of writing, much of it from Japan, that claims to explain Japanese uniqueness. A film image of robots and emotionless workers is a different pattern."},
+     {t:"Techno-Orientalism", ok:true, why:"Right. Morley and Robins used this term for images of Japan as futuristic but somehow inhuman, a mirror for Western hopes and fears."},
+     {t:"Tanaka’s “Japan’s Orient”", why:"Tanaka’s “Japan’s Orient” is about Japanese scholarship on China, Korea and Taiwan. It is not about foreign images of Japan."}]},
+   {id:"e4u4-cp02", lesson:"e4u4-l1", level:2, q:"In the 1930s, a Japanese historian describes Korea and China as stuck in an unchanging past, from which modern Japan had risen. Which idea from Stefan Tanaka’s work describes this?", options:[
+     {t:"Japan’s own “Orient”: scholarship that cast its neighbours as the past, serving empire", ok:true, why:"Right. Tanaka’s *Japan’s Orient* shows how Japanese historians built a picture of an Asian past from which modern Japan had risen, while Japan ruled Korea and Taiwan."},
+     {t:"Self-Orientalism: Japan presenting itself to foreign audiences in the exotic terms the West uses", why:"Self-Orientalism is about how a society presents itself. Here a Japanese historian is describing other societies."},
+     {t:"Techno-Orientalism: Japan shown as futuristic and inhuman", why:"Techno-Orientalism describes Western images of Japan from the 1980s onwards, not 1930s Japanese writing about Asia."},
+     {t:"The insider–outsider debate: only insiders understand a society", why:"That debate is about who can understand a society. The historian’s picture is an example of imperial knowledge, Tanaka’s topic."}]},
+   {id:"e4u4-cp03", lesson:"e4u4-l2", level:2, q:"A Japanese government document is dated Shōwa 20, 9 August. Shōwa 1 was 1926. When in Japan’s modern history was it written?", options:[
+     {t:"In 1946, during the Occupation, while SCAP’s staff drafted a constitution", why:"This adds 20 to 1926. But Shōwa 1 is 1926, so Shōwa 20 is 1926 + 19 = 1945."},
+     {t:"In the Meiji period, during the first wars of empire", why:"Meiji ran from 1868 to 1912. A Shōwa date must be from 1926 or later."},
+     {t:"In the high-growth years, around the time of the Income-Doubling Plan", why:"High growth belongs to the later Shōwa era, from the mid-1950s. Shōwa 20 is much earlier."},
+     {t:"In 1945, days before the surrender was announced on 15 August", ok:true, why:"Right. Shōwa 1 is 1926, so Shōwa 20 is 1945. Early August 1945 brought the atomic bombings and the Soviet entry into the war."}]},
+   {id:"e4u4-cp04", lesson:"e4u4-l2", level:2, q:"Kai’s essay says: “Meiji Japan was a pure success story, built by one homogeneous people.” Which revision best uses the unit?", options:[
+     {t:"Keep it, because historians agree the Meiji reforms had no real costs", why:"Historians stress real costs, such as heavy rural taxes and the suppression of opposition. “Pure success” is too simple."},
+     {t:"Add the costs, such as heavy rural taxes, suppressed opposition, the taking of Ainu lands and the annexation of Ryukyu, which also shows the state included different peoples", ok:true, why:"Right. This combines Lesson 2’s costs of Meiji state-building with Lesson 1’s point that homogeneity is a claim with a history, not a fact."},
+     {t:"Replace “homogeneous” with “Westernised”, because Japan copied the West completely", why:"The Iwakura Mission led to selective borrowing: a German-influenced constitution, a British-style navy, French and German legal codes. That is not complete copying."},
+     {t:"Add that the Meiji leaders refused to learn from any foreign model", why:"The opposite is true: they studied the United States and Europe closely and borrowed selectively."}]},
+   {id:"e4u4-cp05", lesson:"e4u4-l3", level:1, q:"Ruling-party politicians who specialise in farm policy, officials of the agriculture ministry and national farm groups work together to protect rice subsidies. Each needs the others. Which term describes this?", options:[
+     {t:"An iron triangle", ok:true, why:"Right. An iron triangle links ruling-party policy specialists (*zoku* giin), a ministry and an industry group, each needing the others."},
+     {t:"Amakudari", why:"Amakudari is senior officials retiring into posts in bodies they used to regulate. It may support such ties, but it doesn’t name the three-way relationship."},
+     {t:"Administrative guidance", why:"Administrative guidance is informal direction by officials that firms usually follow. It is one tool, not the alliance of three groups."},
+     {t:"The 1955 system", why:"The 1955 system names the long pattern of LDP government and a permanent Socialist opposition, not a policy alliance in one sector."}]},
+   {id:"e4u4-cp06", lesson:"e4u4-l3", level:2, q:"The House of Representatives passes an ordinary bill. The House of Councillors rejects it. The ruling coalition holds 60% of lower-house seats. What happens?", options:[
+     {t:"The lower house’s vote prevails automatically, as it does for the budget and treaties", why:"The lower house prevails automatically only on the budget, treaties and the choice of prime minister. Ordinary laws follow a different rule."},
+     {t:"The Emperor, as the symbol of the State, decides between the two houses", why:"The Emperor has no powers related to government. He promulgates laws on the cabinet’s advice; he doesn’t decide disputes."},
+     {t:"It fails unless the lower house passes it again by two-thirds, which the coalition lacks", ok:true, why:"Right. Under Article 59, the lower house can override the upper house on ordinary bills only with two-thirds. 60% is not enough, which is why a “twisted Diet” makes passing laws hard."},
+     {t:"The prime minister can still make it law by a decision of the cabinet", why:"The Diet is “the sole law-making organ of the State”. The cabinet cannot turn a rejected bill into law."}]},
+   {id:"e4u4-cp07", lesson:"e4u4-l3", level:3, q:"In a lower-house election, Party A wins 40% of the list vote but about 60% of the single-member district seats. Carlos says the list seats will correct this, as in Germany. What is the best reply?", options:[
+     {t:"He is right: list seats are given out so that each party’s total matches its vote share", why:"That describes Germany’s linked system. In Japan’s parallel system the two parts are not linked."},
+     {t:"He is right, because dual candidacy lets district losers win seats back on the list", why:"Dual candidacy lets individual candidates win a list seat after losing a district. It does not make the overall result proportional."},
+     {t:"He is wrong, because Japan still uses SNTV, so there are no list seats at all", why:"SNTV was replaced for the lower house in 1994, and the new system was first used in 1996."},
+     {t:"He is wrong: Japan’s system is parallel, so list seats don’t offset district results", ok:true, why:"Right. In a parallel (mixed-member majoritarian) system, list seats do not correct for disproportional district results, so Party A keeps its district bonus."}]},
+   {id:"e4u4-cp08", lesson:"e4u4-l4", level:3, q:"An essay says Japan grew fast after 1950 “because Japanese people naturally love hard work”. Which critique best uses the unit?", options:[
+     {t:"It is a nihonjinron-style cultural claim; work habits were shaped by institutions such as lifetime employment and seniority pay, which covered mainly men in large firms", ok:true, why:"Right. This combines Lesson 1’s critique of national-character claims (Mouer and Sugimoto’s “narrow slice”) with Lesson 4’s warning to explain work habits by institutions that can be compared."},
+     {t:"It is fine, because Johnson’s developmental state rests on the Japanese work ethic", why:"Johnson’s argument rests on an elite bureaucracy guiding investment, not on a natural work ethic."},
+     {t:"It is wrong only because Japan never really grew fast", why:"Japan did grow fast: real growth averaged roughly 9% a year from the mid-1950s to 1973. The problem is the explanation, not the growth."},
+     {t:"It is fine if the writer is Japanese, because insiders understand their own society best", why:"Position shapes what you see but doesn’t replace evidence. A cultural claim needs the same testing whoever makes it."}]},
+   {id:"e4u4-cp09", lesson:"e4u4-l4", level:2, q:"A blog says an official projection “proves” how many people will live in Japan in 2070. What is the best correction?", options:[
+     {t:"Projections are guesses without any method, so serious writers should ignore them", why:"Projections use clear methods. The point is to read them with their assumptions, not to throw them away."},
+     {t:"The figure is certain, because the census has already counted the future population", why:"A census counts the people living now. It cannot count a future population."},
+     {t:"A projection shows the result of stated assumptions about births, deaths and migration, not a sure fate", ok:true, why:"Right. The lesson stresses that projections depend on assumptions, and the official one is quoted as a “medium variant”, so the blog should say so."},
+     {t:"The blog should quote only the most optimistic variant, to avoid causing alarm", why:"Choosing the variant that suits a message is poor practice. Say which variant you use and why."}]},
+   {id:"e4u4-cp10", lesson:"e4u4-l5", level:1, q:"For years Japan resists opening one of its markets, then agrees soon after strong US pressure. A scholar says this pattern is typical of Japan’s foreign economic policy. Whose idea is this?", options:[
+     {t:"Hanns Maull’s “civilian power”", why:"Maull described Japan and West Germany as pursuing influence through trade and institutions rather than force. He was not describing responses to outside pressure."},
+     {t:"Kent Calder’s “reactive state”", ok:true, why:"Right. Calder (1988) called Japan a reactive state whose foreign economic policy mostly responded to *gaiatsu*, outside pressure."},
+     {t:"Joseph Nye’s idea of “soft power”", why:"Soft power is getting what you want through attraction. The scenario is about giving way to pressure."},
+     {t:"The Fukuda Doctrine", why:"The Fukuda Doctrine (1977) set out principles for relations with Southeast Asia, not a pattern of responding to US pressure."}]},
+   {id:"e4u4-cp11", lesson:"e4u4-l5", level:3, q:"Scholar A calls the Yoshida Doctrine a clever grand strategy. Scholar B says it was a set of constraints made into a virtue. Which evidence would B stress most?", options:[
+     {t:"Japan let the United States pay for much of its defence while it grew rich on trade", why:"This is the pragmatic-strategy reading of Pyle and Samuels, which supports Scholar A."},
+     {t:"Japan became the largest aid donor by volume in 1989", why:"That is a later development in aid policy. It does not show what limited Japan’s choices in the early 1950s."},
+     {t:"The Cool Japan campaign promoted creative industries abroad", why:"Cool Japan began around 2010, decades after Yoshida. It says nothing about the doctrine’s origins."},
+     {t:"Article 9, a public deeply opposed to rearmament after defeat, and US pressure", ok:true, why:"Right. This combines Lesson 2 and Lesson 5: Article 9 and post-war public opinion limited Japan’s options, which supports the reading of the doctrine as constraint, not pure choice."}]},
+   {id:"e4u4-cp12", lesson:"e4u4-l5", level:3, q:"Okinawa’s governor, elected on a promise to oppose a new US base, clashes with a national government that supports it. Which statement best explains the clash?", options:[
+     {t:"The governor is appointed by the prime minister, so this is really a quarrel inside the ruling party", why:"Japanese governors are directly elected, not appointed. That is why a governor can openly oppose the national government."},
+     {t:"Both sides have their own electoral mandate, and Okinawa hosts most US base land under Article 6", ok:true, why:"Right. This combines Lesson 3 (two elected centres of power, local and national) with Lesson 5 (Article 6 bases and Okinawa’s burden)."},
+     {t:"Under local autonomy (Article 92), prefectures control their own foreign and defence policy", why:"Local autonomy (Article 92) covers local services and government. Treaties and defence belong to the national government."},
+     {t:"The Emperor settles disputes between prefectures and the national government", why:"The Emperor has no powers related to government, so he cannot settle political disputes."}]},
+  ],
   codex:[
    {id:"area-studies", title:"Area studies and Japan studies", aka:["Japan studies","Japanese studies","Japanology","regional studies"], tags:["japan","area studies","research"],
     summary:"The interdisciplinary study of one world region or country, with deep knowledge of its language, history and society; Japan studies is one branch.",
@@ -1175,17 +1237,17 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e4u4-q01", lesson:"e4u4-l1", level:1, q:"What best describes area studies?", options:[
-     {t:"The interdisciplinary study of one region or country, drawing on its language, history, culture, politics and economics.", ok:true, why:"That is the core idea: depth on one place, using several disciplines."},
+     {t:"The interdisciplinary study of one region or country.", ok:true, why:"That is the core idea: depth on one place, drawing on its language, history, culture, politics and economics."},
      {t:"A branch of geography that maps physical regions.", why:"Area studies is about societies, not only physical geography, and it draws on many disciplines."},
      {t:"The comparison of one variable across as many countries as possible.", why:"That describes a large-N disciplinary design, the opposite emphasis to area studies."},
      {t:"Training for diplomats in the etiquette of other countries.", why:"Area studies is an academic field, not protocol training."}]},
    {id:"e4u4-q02", lesson:"e4u4-l1", level:2, q:"Priya reads that US area studies grew fast after 1945 with government and foundation money. What is the most reasonable conclusion for her own research?", options:[
-     {t:"Ask of any study who funded it and which questions it asked or left out, while judging its findings on their evidence.", ok:true, why:"Right. Knowing the origins prompts critical questions; it does not by itself prove findings wrong."},
+     {t:"Ask who funded each study, but judge findings on evidence.", ok:true, why:"Right. Ask which questions a study asked or left out. Knowing the origins prompts critical questions; it does not by itself prove findings wrong."},
      {t:"Ignore all area studies written before 1990, because it was propaganda.", why:"Much early work remains valuable. Origins call for critical reading, not wholesale rejection."},
      {t:"Funding sources never matter if the author is a respected scholar.", why:"Funding can shape agendas and questions, even for respected scholars."},
      {t:"Only Japanese-funded research on Japan can be trusted.", why:"Every funder has interests. The point is to read critically, whoever paid."}]},
    {id:"e4u4-q03", lesson:"e4u4-l1", level:1, q:"Why did Ruth Benedict write *The Chrysanthemum and the Sword* without visiting Japan?", options:[
-     {t:"It grew out of wartime research for the US government, when Japan was an enemy country she could not visit.", ok:true, why:"Correct. She studied Japan “at a distance” through interviews, films and documents."},
+     {t:"It was wartime research on an enemy country.", ok:true, why:"Correct. It grew out of research for the US government when she could not visit Japan, so she studied it “at a distance” through interviews, films and documents."},
      {t:"She believed fieldwork was unnecessary in anthropology.", why:"Benedict valued fieldwork; wartime conditions prevented it here."},
      {t:"Japan banned all foreign anthropologists after 1946.", why:"There was no such ban; the book was researched during the war."},
      {t:"She wrote it as a novel, so no research trip was needed.", why:"It is a work of anthropology, not a novel."}]},
@@ -1200,7 +1262,7 @@ ICA.addUnit({
      {t:"It was invented by American Occupation officials.", why:"Oguma traces Japanese debates; he does not attribute the idea to the Occupation."},
      {t:"It is accurate because Japan has no minorities.", why:"Japan has the Ainu, Okinawans, Zainichi Koreans, buraku communities and many foreign residents."}]},
    {id:"e4u4-q06", lesson:"e4u4-l1", level:3, q:"Tomás wants to use a 1970s nihonjinron bestseller in his thesis. Which use is most defensible?", options:[
-     {t:"As a primary source on how Japanese identity was imagined and promoted at the time, analysed critically.", ok:true, why:"Right. Scholars treat such books as evidence of ideas and cultural nationalism, not as accurate descriptions of society."},
+     {t:"As a primary source on how identity was imagined then.", ok:true, why:"Right. Analysed critically, it shows how Japanese identity was imagined and promoted at the time. Scholars treat such books as evidence of ideas and cultural nationalism, not as accurate descriptions of society."},
      {t:"As a reliable description of how all Japanese people think today.", why:"That repeats the genre’s sweeping claims, which scholars have shown to rest on narrow evidence."},
      {t:"Not at all: a thesis may never cite popular books.", why:"Popular books can be valuable primary sources if used critically."},
      {t:"As proof that Japan is unique among nations.", why:"That takes the genre’s claim as its conclusion, which is circular."}]},
@@ -1210,7 +1272,7 @@ ICA.addUnit({
      {t:"It ignored the influence of Chinese philosophy.", why:"That was not their central argument."},
      {t:"It was invented by foreign journalists.", why:"Much nihonjinron was written in Japan by Japanese authors; their critique was about evidence."}]},
    {id:"e4u4-q08", lesson:"e4u4-l1", level:2, q:"Mei says: “Only Japanese people can truly understand Japan.” Why do most scholars reject this?", options:[
-     {t:"It is itself a uniqueness claim, and it would rule out comparison and criticism; position shapes what anyone sees, but evidence decides claims.", ok:true, why:"Right. The insider–outsider debate rejects both easy answers."},
+     {t:"It is a uniqueness claim that rules out comparison.", ok:true, why:"Right. It is itself a uniqueness claim, and it would rule out comparison and criticism; position shapes what anyone sees, but evidence decides claims. The insider–outsider debate rejects both easy answers."},
      {t:"Because outsiders are always more objective.", why:"That is the opposite mistake: outsiders bring their own assumptions."},
      {t:"Because Japanese scholars rarely write about Japan.", why:"A vast literature on Japan is written by Japanese scholars."},
      {t:"Because the claim is illegal under academic rules.", why:"It is an argument to be assessed, not a rule violation."}]},
@@ -1236,12 +1298,12 @@ ICA.addUnit({
      {t:"28 April 1952", why:"That is when the San Francisco Peace Treaty came into force."},
      {t:"11 February 1889", why:"That is when the Meiji Constitution was promulgated."}]},
    {id:"e4u4-q13", lesson:"e4u4-l2", level:1, q:"What does paragraph 2 of Article 9 say?", options:[
-     {t:"Land, sea and air forces, as well as other war potential, will never be maintained, and the right of belligerency of the state will not be recognised.", ok:true, why:"That is the official translation’s wording."},
+     {t:"Land, sea and air forces will never be maintained.", ok:true, why:"Correct, in short. The official translation says land, sea and air forces, “as well as other war potential”, will never be maintained, and the right of belligerency of the state will not be recognised."},
      {t:"Japan may keep forces only for UN missions.", why:"The text says nothing about UN missions."},
      {t:"Japan will maintain forces equal to its neighbours’.", why:"The text says the opposite."},
      {t:"The Emperor commands the Self-Defense Forces.", why:"The SDF did not exist in 1947, and the Emperor has no powers related to government."}]},
    {id:"e4u4-q14", lesson:"e4u4-l2", level:3, q:"A student writes: “The SDF exist, so Article 9 must have been amended.” What is the best correction?", options:[
-     {t:"The text was never amended. Governments argue that forces limited to self-defence are not banned “war potential”; many scholars dispute this.", ok:true, why:"Right. The SDF rest on interpretation, not on a text change."},
+     {t:"It was never amended; the SDF rest on interpretation.", ok:true, why:"Right. Governments argue that forces limited to self-defence are not banned “war potential”; many scholars dispute this."},
      {t:"Article 9 was amended in 1954 when the SDF were founded.", why:"There has never been an amendment to the Constitution."},
      {t:"The SDF are illegal and the courts have ordered them disbanded.", why:"Courts have mostly avoided ruling directly on the SDF."},
      {t:"Article 9 only applies to the navy.", why:"It mentions land, sea and air forces."}]},
@@ -1251,17 +1313,17 @@ ICA.addUnit({
      {t:"Japan’s withdrawal from the League of Nations in 1933.", why:"That came long before the Occupation."},
      {t:"The Meiji leaders’ restoration of imperial rule in 1868.", why:"That is the Meiji Restoration."}]},
    {id:"e4u4-q16", lesson:"e4u4-l2", level:2, q:"Fatima says the 1947 Constitution was “simply dictated by Americans”. Which reply is most accurate?", options:[
-     {t:"SCAP wrote the first draft, but the Japanese government revised it and the Diet debated and amended it, adding for example the right to minimum living standards.", ok:true, why:"Right. Scholars debate the “imposed constitution” story because Japanese actors shaped the result."},
+     {t:"SCAP drafted it, but Japanese actors revised and amended it.", ok:true, why:"Right. The Japanese government revised SCAP’s draft, and the Diet debated and amended it, adding for example the right to minimum living standards. Scholars debate the “imposed constitution” story because Japanese actors shaped the result."},
      {t:"She is right: no Japanese person saw it before it took effect.", why:"The Imperial Diet debated and passed it, with amendments."},
      {t:"It was written entirely by Japanese scholars without SCAP involvement.", why:"SCAP’s staff wrote the model draft in February 1946."},
      {t:"It was written by the United Nations.", why:"The UN had no role in drafting it."}]},
    {id:"e4u4-q17", lesson:"e4u4-l2", level:1, q:"How is the Constitution of Japan amended?", options:[
-     {t:"Two-thirds of all members of each house of the Diet initiate it, then a majority of votes cast in a national referendum approves it.", ok:true, why:"Correct (Article 96)."},
+     {t:"Two-thirds of each house, then a national referendum.", ok:true, why:"Correct (Article 96). Two-thirds of all members of each house initiate it; a majority of votes cast in the referendum approves it."},
      {t:"A simple majority in the House of Representatives is enough.", why:"Amendment needs two-thirds in both houses and a referendum."},
      {t:"The Emperor may amend it on the cabinet’s advice.", why:"The Emperor has no such power."},
      {t:"The Supreme Court amends it by its rulings.", why:"Courts interpret the Constitution; they cannot amend its text."}]},
    {id:"e4u4-q18", lesson:"e4u4-l2", level:2, q:"Hana writes about wartime atrocities in her essay. Which approach follows scholarly practice?", options:[
-     {t:"State the core facts on which historians agree, cite reputable historians for any numbers, and note where estimates differ.", ok:true, why:"Right. The consensus on core facts is firm; numbers vary and need sources."},
+     {t:"State the agreed core facts and cite sources for numbers.", ok:true, why:"Right. Cite reputable historians for any numbers and note where estimates differ. The consensus on core facts is firm; numbers vary and need sources."},
      {t:"Avoid the topic because all accounts are equally biased.", why:"Historians have established core facts; avoiding them would distort the history."},
      {t:"Use the highest number she can find to show seriousness.", why:"Choose numbers by the quality of the source, and note the range."},
      {t:"Present denial of the events as one equal side of a debate.", why:"Denial of core, well-documented facts is outside scholarly debate."}]},
@@ -1277,13 +1339,13 @@ ICA.addUnit({
      {t:"500", why:"That was the size after the 1994 reform (300 + 200), later reduced."},
      {t:"713", why:"That is roughly both houses combined (465 + 248)."}]},
    {id:"e4u4-q21", lesson:"e4u4-l3", level:2, q:"What is a “twisted Diet” (ねじれ国会)?", options:[
-     {t:"A situation in which different majorities control the two houses, making it hard to pass laws.", ok:true, why:"Right. The lower house can override only with a two-thirds majority, which governments rarely have."},
+     {t:"A Diet whose two houses have different majorities.", ok:true, why:"Right. It makes it hard to pass laws: the lower house can override only with a two-thirds majority, which governments rarely have."},
      {t:"A Diet session that runs past its scheduled end.", why:"That is an extended session, not a twisted Diet."},
      {t:"A scandal involving bribery of Diet members.", why:"Scandals are separate from the meaning of the term."},
-     {t:"A Diet in which the Emperor overrules the cabinet.", why:"The Emperor cannot overrule the cabinet."}]},
+     {t:"A Diet in which the Emperor overrules the elected cabinet.", why:"The Emperor cannot overrule the cabinet."}]},
    {id:"e4u4-q22", lesson:"e4u4-l3", level:3, q:"Lucía’s essay argues that in Japan “bureaucrats rule while politicians reign”. Which scholars could she cite against this view?", options:[
-     {t:"Ramseyer and Rosenbluth, who argued that LDP politicians were the principals and bureaucrats their agents.", ok:true, why:"Right. Their 1993 book is the classic counter to Johnson’s bureaucracy-dominance view."},
-     {t:"Chalmers Johnson", why:"Johnson made the “reign and rule” argument; he supports her view."},
+     {t:"Ramseyer and Rosenbluth", ok:true, why:"Right. They argued that LDP politicians were the principals and bureaucrats their agents. Their 1993 book is the classic counter to Johnson’s bureaucracy-dominance view."},
+     {t:"Chalmers Johnson, *MITI and the Japanese Miracle*", why:"Johnson made the “reign and rule” argument; he supports her view."},
      {t:"Ruth Benedict", why:"Benedict wrote about culture in 1946, not about the bureaucracy debate."},
      {t:"Peter Dale", why:"Dale criticised nihonjinron, not the bureaucracy-dominance thesis."}]},
    {id:"e4u4-q23", lesson:"e4u4-l3", level:1, q:"What is amakudari?", options:[
@@ -1292,17 +1354,17 @@ ICA.addUnit({
      {t:"The dissolution of the lower house.", why:"That is kaisan, a different term."},
      {t:"A politician’s personal support organisation.", why:"That is a kōenkai."}]},
    {id:"e4u4-q24", lesson:"e4u4-l3", level:2, q:"Why did the old SNTV electoral system encourage factions and money politics in the LDP?", options:[
-     {t:"Several LDP candidates competed in the same multi-member district, so they relied on personal networks, factions and spending rather than the party label.", ok:true, why:"Right. Intra-party competition was the key mechanism."},
+     {t:"Several LDP candidates competed in the same district.", ok:true, why:"Right. In multi-member districts they relied on personal networks, factions and spending rather than the party label. Intra-party competition was the key mechanism."},
      {t:"It banned parties from campaigning, so candidates had to buy votes.", why:"Parties could campaign; the problem was competition between candidates of the same party."},
      {t:"It used only national party lists, so local ties didn’t matter.", why:"SNTV was a district system; local ties mattered a great deal."},
      {t:"It gave each voter several votes, which favoured big parties.", why:"Each voter had a single vote."}]},
    {id:"e4u4-q25", lesson:"e4u4-l3", level:3, q:"Kenji says: “The LDP has ruled since 1955, so Japan is not a real democracy.” What is the strongest reply?", options:[
-     {t:"Elections are competitive and the LDP lost power in 1993 and 2009; long dominance is a puzzle scholars explain with institutions, growth and a divided opposition, and other democracies have had dominant parties.", ok:true, why:"Right. Dominance alone does not mean elections are not free."},
+     {t:"Elections are competitive; the LDP lost in 1993 and 2009.", ok:true, why:"Right. Long dominance is a puzzle scholars explain with institutions, growth and a divided opposition, and other democracies have had dominant parties. Dominance alone does not mean elections are not free."},
      {t:"He is right: Japan has had only one legal party since 1955.", why:"Many parties compete, and others have governed."},
      {t:"The LDP never wins elections; it is appointed by the Emperor.", why:"The LDP wins elections; the Emperor has no political role."},
      {t:"Democracy only exists where power changes every election.", why:"Alternation matters, but democracy is defined by free and fair competition, not a set rhythm of change."}]},
    {id:"e4u4-q26", lesson:"e4u4-l3", level:2, q:"What is a key feature of Japan’s parallel electoral system for the lower house since 1996?", options:[
-     {t:"District seats and party-list seats are counted separately, so the list seats do not correct for disproportional district results.", ok:true, why:"Correct. That is what makes it parallel rather than compensatory like Germany’s."},
+     {t:"District and list seats are counted separately.", ok:true, why:"Correct. The list seats do not correct for disproportional district results. That is what makes it parallel rather than compensatory like Germany’s."},
      {t:"All seats are allocated by proportional representation.", why:"289 seats are single-member districts."},
      {t:"Voters rank candidates in order of preference.", why:"Voters cast one district vote and one party vote; there is no ranking."},
      {t:"Candidates may not stand in both a district and a list.", why:"Dual candidacy is allowed, and district losers can win list seats."}]},
@@ -1318,12 +1380,12 @@ ICA.addUnit({
      {t:"Ruth Benedict, *The Chrysanthemum and the Sword* (1946)", why:"A study of culture written before the high-growth era."},
      {t:"John Dower, *Embracing Defeat* (1999)", why:"A history of the Occupation, not an economic theory."}]},
    {id:"e4u4-q29", lesson:"e4u4-l4", level:3, q:"Amara finds that some of Japan’s most successful firms grew against official advice. Which debate does this evidence feed, and on which side?", options:[
-     {t:"The debate over the developmental state: it supports critics who say the state-led story is overstated.", ok:true, why:"Right. Evidence of firms succeeding without, or against, MITI weakens the strong version of Johnson’s argument."},
+     {t:"The developmental-state debate, on the critics’ side.", ok:true, why:"Right. Critics say the state-led story is overstated. Evidence of firms succeeding without, or against, MITI weakens the strong version of Johnson’s argument."},
      {t:"The nihonjinron debate: it proves Japanese uniqueness.", why:"Firm strategy is about markets and the state, not national character."},
      {t:"The Article 9 debate: it supports revision.", why:"It has nothing to do with Article 9."},
      {t:"The developmental state debate: it proves MITI controlled every firm.", why:"It shows the opposite."}]},
    {id:"e4u4-q30", lesson:"e4u4-l4", level:1, q:"What did the Plaza Accord of 1985 do?", options:[
-     {t:"Major economies agreed to push the dollar down, which made the yen rise sharply.", ok:true, why:"Correct. It helped set off the conditions for Japan’s bubble."},
+     {t:"It pushed the dollar down and the yen up.", ok:true, why:"Correct. Major economies agreed to push the dollar down, and the yen rose sharply. It helped set off the conditions for Japan’s bubble."},
      {t:"It fixed the yen at 360 to the dollar.", why:"That rate applied from 1949 to 1971."},
      {t:"It created the World Trade Organization.", why:"The WTO was founded in 1995."},
      {t:"It ended negative interest rates in Japan.", why:"That happened in March 2024."}]},
@@ -1333,12 +1395,12 @@ ICA.addUnit({
      {t:"38.7%", why:"That is the projected share for 2070 (IPSS 2023, medium variant)."},
      {t:"59.7%", why:"That is roughly the share aged 15 to 64."}]},
    {id:"e4u4-q32", lesson:"e4u4-l4", level:2, q:"Ana reads one source saying Japan had 3.84 million foreign residents and another saying 4.28 million. What is the most likely explanation?", options:[
-     {t:"They are different counts: the 2025 census (1 October 2025) and the Immigration Services Agency’s count of residence-status holders (end of June 2026).", ok:true, why:"Right. Always say which count and date you use."},
+     {t:"They are different counts made on different dates.", ok:true, why:"Right. One is the 2025 census (1 October 2025), the other the Immigration Services Agency’s count of residence-status holders (end of June 2026). Always say which count and date you use."},
      {t:"One of them must be a typing error.", why:"Both are official figures; they measure slightly different things at different dates."},
-     {t:"The higher figure includes tourists.", why:"Neither figure counts short-term tourists."},
+     {t:"The higher figure also includes short-term tourists.", why:"Neither figure counts short-term tourists."},
      {t:"The lower figure counts only children.", why:"The census figure counts foreign residents of all ages."}]},
    {id:"e4u4-q33", lesson:"e4u4-l4", level:3, q:"A columnist writes: “Japan’s birth rate is low because Japanese women don’t want families.” Which response best reflects the research?", options:[
-     {t:"Research links low fertility to later marriage, costs of children, long working hours, insecure jobs and an unequal division of care work; the claim is unsupported.", ok:true, why:"Right. Scholars look at institutions and costs, not a single cultural cause."},
+     {t:"Research points to costs, work and care, not preference.", ok:true, why:"Right. Research links low fertility to later marriage, costs of children, long working hours, insecure jobs and an unequal division of care work; the claim is unsupported. Scholars look at institutions and costs, not a single cultural cause."},
      {t:"The columnist is right; no other factors matter.", why:"That ignores well-documented economic and institutional factors."},
      {t:"Japan’s birth rate is actually among the highest in the world.", why:"Births and the fertility rate reached record lows in 2025."},
      {t:"Birth rates cannot be studied scientifically.", why:"Demographers study them with large datasets and surveys."}]},
@@ -1348,12 +1410,12 @@ ICA.addUnit({
      {t:"Special permanent residence, from 1991", why:"That status is for people from former colonies and their descendants."},
      {t:"Nikkeijin long-term residence, from 1990", why:"That route is for people of Japanese descent."}]},
    {id:"e4u4-q35", lesson:"e4u4-l4", level:2, q:"Sione wants to describe gender inequality in Japan accurately in a seminar. Which statement is best?", options:[
-     {t:"In the WEF’s Global Gender Gap Report 2026 Japan ranked 117th of 145, close to parity on education and health but low on economic and political participation.", ok:true, why:"Right: a dated, sourced indicator with its parts."},
+     {t:"Japan ranked 117th of 145 in the WEF’s 2026 gender gap report.", ok:true, why:"Right: a dated, sourced indicator. Japan is close to parity on education and health but low on economic and political participation."},
      {t:"Japanese women are naturally less interested in careers.", why:"A stereotype without evidence. Scholars examine the employment system, care work and policy."},
      {t:"Japan has no laws on gender equality.", why:"Japan has the Constitution’s Articles 14 and 24, the 1985 Equal Employment Opportunity Act and later laws."},
      {t:"Japan ranks last in the world on every measure of gender equality.", why:"Inaccurate: it ranks low overall, but its scores on education and health are close to parity."}]},
    {id:"e4u4-q36", lesson:"e4u4-l4", level:3, q:"A writer says the “lost decades” prove Japan’s economy failed completely. Which reply is most defensible?", options:[
-     {t:"Growth was weak, but Japan stayed rich with low unemployment; measures per working-age person look better, while wages and job security look worse. The label depends on the measure.", ok:true, why:"Right. Good analysis specifies the measure."},
+     {t:"Growth was weak, but the label depends on the measure.", ok:true, why:"Right. Japan stayed rich with low unemployment; measures per working-age person look better, while wages and job security look worse. Good analysis specifies the measure."},
      {t:"Japan’s economy has grown faster than any other since 1990.", why:"That is false; growth was weak."},
      {t:"The lost decades never happened; it is a media invention.", why:"Weak growth, deflation and banking problems were real."},
      {t:"The lost decades were caused by the Japanese character.", why:"A cultural claim without evidence; economists point to bad loans, deflation and demographics."}]},
@@ -1364,8 +1426,8 @@ ICA.addUnit({
      {t:"Trade and institutions made economic growth the best route to security.", why:"That is closer to a liberal reading."},
      {t:"US pressure alone dictated every Japanese choice.", why:"That is a structural or “reactive state” claim, not constructivism."}]},
    {id:"e4u4-q38", lesson:"e4u4-l5", level:1, q:"Under Article 5 of the 1960 US–Japan treaty, what do the two countries commit to?", options:[
-     {t:"Each will act to meet an armed attack against territories under Japan’s administration.", ok:true, why:"Correct. That is why the alliance is often described as asymmetric."},
-     {t:"Japan will defend US territory anywhere in the world.", why:"The treaty does not commit Japan to defend US territory."},
+     {t:"Each will act to meet an attack on territory Japan administers.", ok:true, why:"Correct. The commitment covers an armed attack against territories under Japan’s administration. That is why the alliance is often described as asymmetric."},
+     {t:"Japan will defend US territory anywhere in the world it is attacked.", why:"The treaty does not commit Japan to defend US territory."},
      {t:"The US will withdraw all bases from Japan.", why:"Article 6 provides for US use of bases in Japan."},
      {t:"Japan will contribute troops to every US war.", why:"There is no such commitment."}]},
    {id:"e4u4-q39", lesson:"e4u4-l5", level:1, q:"In which year did Japan first become the world’s largest aid donor by volume?", options:[
@@ -1379,12 +1441,12 @@ ICA.addUnit({
      {t:"Japan will give aid only in exchange for bases.", why:"There is no such principle."},
      {t:"Japan will follow China’s lead in the region.", why:"Not part of the doctrine."}]},
    {id:"e4u4-q41", lesson:"e4u4-l5", level:3, q:"Priya’s draft says: “Dokdo is Korean territory, and Japan’s claim is absurd.” How should she revise it for a neutral seminar paper?", options:[
-     {t:"Use both names (Takeshima / Dokdo), say South Korea administers the islands, and attribute each government’s claim to it.", ok:true, why:"Right. Neutral writing names, locates and attributes, without endorsing either side."},
+     {t:"Use both names and attribute each government’s claim.", ok:true, why:"Right. Write Takeshima / Dokdo and say South Korea administers the islands. Neutral writing names, locates and attributes, without endorsing either side."},
      {t:"Replace it with “Takeshima is Japanese territory, and Korea’s claim is absurd.”", why:"That simply switches sides."},
      {t:"Leave it, because her view is widely shared.", why:"Popularity in one country doesn’t make a claim neutral."},
      {t:"Delete all mention of the islands.", why:"Avoiding the topic is not the same as treating it fairly; she may need it."}]},
    {id:"e4u4-q42", lesson:"e4u4-l5", level:2, q:"What does Iwabuchi Kōichi’s idea of “culturally odourless” exports suggest about Japan’s soft power?", options:[
-     {t:"Some Japanese cultural products travelled well partly because they did not seem obviously Japanese, which complicates claims that they spread a national image.", ok:true, why:"Right. Popularity does not automatically become national influence."},
+     {t:"Products often travelled without a clear national image.", ok:true, why:"Right. Some Japanese cultural products travelled well partly because they did not seem obviously Japanese, which complicates claims that they spread a national image. Popularity does not automatically become national influence."},
      {t:"Japanese products were unpopular abroad.", why:"Many were very popular; the question is what their popularity means."},
      {t:"Japan’s government designed all exports to hide their origin.", why:"Iwabuchi described how products travelled, not a government plan."},
      {t:"Soft power can be measured exactly by sales.", why:"Scholars stress that soft power is hard to measure."}]},
@@ -1394,12 +1456,12 @@ ICA.addUnit({
      {t:"Bandwagoning", why:"Bandwagoning means joining a stronger side, not a fear within an alliance."},
      {t:"Soft power", why:"Soft power is about attraction, not alliance fears."}]},
    {id:"e4u4-q44", lesson:"e4u4-l5", level:3, q:"Since the 1990s, which corner of the Yoshida Doctrine has changed most, and how?", options:[
-     {t:"“Light arms”: peacekeeping from 1992, limited collective self-defence from 2014–15 and the 2022 strategy with counterstrike capabilities.", ok:true, why:"Right. The alliance and economic priorities remain; the military role has grown."},
+     {t:"“Light arms”: Japan’s military role has grown.", ok:true, why:"Right. It grew through peacekeeping from 1992, limited collective self-defence from 2014–15 and the 2022 strategy with counterstrike capabilities. The alliance and economic priorities remain."},
      {t:"The US alliance: Japan left it in 2015.", why:"Japan did not leave the alliance; it deepened."},
      {t:"Economy first: Japan stopped trading with Asia.", why:"Trade with Asia grew; Japan led the CPTPP in 2018."},
      {t:"None of them: Japan’s security policy has not changed since 1951.", why:"Several major changes are listed in this lesson."}]},
    {id:"e4u4-q45", lesson:"e4u4-l5", level:2, q:"Which statement about Japan’s statements on the wartime past is accurate?", options:[
-     {t:"Japanese governments have issued statements of apology and remorse, including the Kōno Statement (1993) and the Murayama Statement (1995); whether they are sufficient is debated.", ok:true, why:"Accurate and neutral: it gives the facts and flags the debate."},
+     {t:"Japanese governments have apologised; whether that is enough is debated.", ok:true, why:"Accurate and neutral. Statements of apology and remorse include the Kōno Statement (1993) and the Murayama Statement (1995); whether they are sufficient is debated."},
      {t:"Japan has never made any statement about the war.", why:"Several statements exist."},
      {t:"All of Japan’s neighbours have declared the history issues closed.", why:"The issues remain contested in the region."},
      {t:"The 2015 Japan–South Korea agreement ended all debate on the comfort-women issue.", why:"South Korea’s next government, under Moon Jae-in, judged the agreement flawed; debate continues."}]}
