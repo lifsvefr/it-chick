@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=63">
+<link rel="stylesheet" href="../shared/style.css?v=64">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=63"></script>
+<script src="../shared/engine.js?v=64"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/arcadefx.js"></script>
@@ -425,13 +425,13 @@ function home(){
     '</div>'+shelf()+'</section>'+
     '<section aria-labelledby="h-jp"><div class="sh"><h2 id="h-jp">Japanese</h2><span class="small muted" lang="ja">日本語</span></div>'+
     '<div class="games">'+
+      card("rain","Kana Rain","rain","Catch the kana"+mine("rain"),"a2")+
       card("sprint","Word Sprint","sprint","Word → meaning"+mine("sprint"),"a1")+
       card("match","Kanji Match","match","Beat the clock"+mine("match"),"a2")+
       card("pairs","Pair Up","pairs","Kanji ↔ reading"+mine("pairs"),"a3")+
-      card("rain","Kana Rain","rain","Catch the kana"+mine("rain"),"a2")+
       card("pop","Particle Pop","pop","は・が・を…"+mine("pop"),"a1")+
       card("build","Sentence Builder","build","Tiles into order"+mine("build"),"a4")+
-      card("listen","Listening Booth","listen","What did Mugi say?"+mine("listen"),"a3")+
+      card("listen","Listening Booth","listen","What did you hear?"+mine("listen"),"a3")+
       '<a class="gc a4" href="../labs/kanji.html?from=arcade"><span class="mq">KANJI LAB</span><span class="art">'+art("lab")+'</span><span class="sub">Your missed cards, on a calm daily schedule →</span></a>'+
     '</div></section>'+
   '</div>';
@@ -952,14 +952,14 @@ ACC.rain = "a2"; ACC.pop = "a1"; ACC.build = "a4"; ACC.listen = "a3"; ACC.boss =
 HOW.rain = ["Kana fall from the sky. Tap the right reading before each one lands.", "They fall faster as you go. A kana that lands costs a heart; you have <b>three</b>.", "Right answers in a row build a combo."];
 HOW.pop = ["A sentence is missing one particle. Pop the bubble that fits.", "<b>60 seconds</b>. Quick answers and combos score more.", "The explanations for anything you missed wait at the end."];
 HOW.build = ["Read the English, then tap the Japanese tiles in order to build the sentence. Tap a placed tile to take it back.", "Right first time scores most. A second try is fine; after that Mugi shows you the answer.", "Japanese word order can bend a little: any natural order counts."];
-HOW.listen = ["Mugi plays a line from the Japanese lessons. Which one did you hear?", "Tap <b>▶ Play again</b> as often as you like, but answering on the first listen scores most.", "10 lines a round."];
+HOW.listen = ["You’ll hear a line from the Japanese lessons. Which one was it?", "Tap <b>▶ Play again</b> as often as you like, but answering on the first listen scores most.", "10 lines a round."];
 HOW.boss = ["Every unit has a boss. Right answers knock its health down; combos hit harder.", "A wrong answer lets the boss hit back: you have <b>three hearts</b>.", "Beat a unit’s boss to put its badge on your shelf."];
 HOW.mix = ["15 questions mixed from a whole track, so you switch between topics the way a real test does.", "No clock. Read why after each answer.", "Mixing topics is harder than one at a time, and it makes what you learn stick."];
 AFX.MUGI.rain = 4000; AFX.MUGI.pop = 2500; AFX.MUGI.build = 1600; AFX.MUGI.listen = 1000; AFX.MUGI.boss = 3000; AFX.MUGI.mix = 15;
 var fmt0 = AFX.fmt; AFX.fmt = function(key, n){ return key === "mix" ? n + "/15" : fmt0(key, n); };
 ART.rain = '<g class="idle"><text x="26" y="18" font-size="15" class="A" lang="ja">あ</text></g><text x="54" y="34" font-size="17" class="A" lang="ja">カ</text><g class="mv"><text x="80" y="22" font-size="14" class="A" lang="ja">さ</text></g><path d="M10 62 H110" class="S" style="stroke:var(--soft)"/><path d="M38 44 v6 M70 48 v6 M96 40 v6" class="S" style="stroke-width:2;stroke-dasharray:2 3"/>';
 ART.pop = '<circle cx="34" cy="38" r="17" class="O"/><text x="34" y="39" text-anchor="middle" dominant-baseline="central" font-size="17" class="A" lang="ja">は</text><g class="mv"><circle cx="70" cy="30" r="15" class="A"/><text x="70" y="31" text-anchor="middle" dominant-baseline="central" font-size="15" class="P" lang="ja">が</text></g><circle cx="98" cy="46" r="11" class="O"/><text x="98" y="47" text-anchor="middle" dominant-baseline="central" font-size="11" class="A" lang="ja">を</text><path d="M84 12 l3 -6 M90 16 l6 -3" class="S idle"/>';
-ART.build = '<rect x="6" y="40" width="36" height="18" rx="4" class="A"/><rect x="46" y="40" width="18" height="18" rx="4" class="A"/><g class="mv"><rect x="66" y="12" width="46" height="18" rx="4" class="O"/><text x="89" y="21" text-anchor="middle" dominant-baseline="central" font-size="9" class="A" lang="ja">がくせい</text></g><rect x="68" y="40" width="46" height="18" rx="4" class="O" style="stroke-dasharray:4 3"/><text x="24" y="49" text-anchor="middle" dominant-baseline="central" font-size="9" class="P" lang="ja">わたし</text><text x="55" y="49" text-anchor="middle" dominant-baseline="central" font-size="9" class="P" lang="ja">は</text>';
+ART.build = '<rect x="6" y="40" width="36" height="18" rx="4" class="A"/><rect x="46" y="40" width="18" height="18" rx="4" class="A"/><g class="mv"><rect x="66" y="12" width="46" height="18" rx="4" class="O"/><text x="89" y="21" text-anchor="middle" dominant-baseline="central" font-size="7" style="font-size:8.5px" class="A" lang="ja">がくせい</text></g><rect x="68" y="40" width="46" height="18" rx="4" class="O" style="stroke-dasharray:4 3"/><text x="24" y="49" text-anchor="middle" dominant-baseline="central" font-size="7" style="font-size:8.5px" class="P" lang="ja">わたし</text><text x="55" y="49" text-anchor="middle" dominant-baseline="central" font-size="7" style="font-size:8.5px" class="P" lang="ja">は</text>';
 ART.listen = '<g class="mv"><path d="M30 40 V30 a18 18 0 0 1 36 0 V40" class="S" style="stroke-width:5"/><rect x="24" y="36" width="12" height="20" rx="4" class="A"/><rect x="60" y="36" width="12" height="20" rx="4" class="A"/></g><path d="M84 26 q8 10 0 20 M92 20 q14 16 0 32" class="S idle"/>';
 ART.boss = '<g class="idle"><path d="M30 58 Q22 58 22 44 Q22 18 50 18 Q78 18 78 44 Q78 58 70 58 Q66 52 62 58 Q58 52 54 58 Q50 52 46 58 Q42 52 38 58 Q34 52 30 58 Z" class="A"/><path d="M34 22 L30 10 L42 18 M66 22 L70 10 L58 18" class="A"/><circle cx="40" cy="38" r="5" class="P"/><circle cx="60" cy="38" r="5" class="P"/><circle cx="41" cy="39" r="2" class="K"/><circle cx="61" cy="39" r="2" class="K"/><path d="M44 48 Q50 52 56 48" class="S" style="stroke:var(--panel);stroke-width:2.5"/></g><g class="mv"><path d="M88 52 L104 20 M84 30 l26 0" class="S" style="stroke:var(--ink);stroke-width:4"/><path d="M104 20 l-3 -8 6 4 z" class="G"/></g>';
 ART.mix = '<rect x="12" y="16" width="28" height="36" rx="5" class="A" transform="rotate(-10 26 34)"/><rect x="44" y="12" width="28" height="36" rx="5" class="O"/><rect x="76" y="16" width="28" height="36" rx="5" class="A" transform="rotate(10 90 34)" style="fill:var(--gold)"/><g class="mv"><path d="M30 62 C46 54 70 66 88 58" class="S"/><path d="M84 54 l5 4 -6 3" class="S"/></g>';
@@ -1011,7 +1011,7 @@ function rain(gm){
   cur.pause = function(){ held = performance.now(); };
   cur.resume = function(){ if (held){ t0 += performance.now() - held; held = 0; } };
   function frame(now){
-    if (!cur.alive || done) return; raf = requestAnimationFrame(frame); if (paused) return;
+    if (!cur.alive) return; raf = requestAnimationFrame(frame); if (paused || done) return;
     var p = Math.min(1, (now - t0) / fall), dp = document.getElementById("dp"); if (!dp) return;
     dp.style.transform = "translate(-50%," + (p * 230) + "px)";
     if (p >= 1 && to) to();
@@ -1100,14 +1100,13 @@ function build(gm){
 /* ---------- Listening Booth ---------- */
 function listen(gm){
   var lv = lv2("listen"), all = (window.JPL || []).filter(function(x){ return x[2] === lv; }), rounds = ICA.shuffle(all.slice()).slice(0, 10), i = 0, score = 0, right = 0, streak = 0, plays = 0, missed = [];
-  gm.innerHTML = '<div class="stack">'+hudJP('<span>No. <span id="pos">1</span>/'+rounds.length+'</span>')+'<div class="stage" id="stg"><div class="qtext">What did Mugi say?</div><button type="button" class="btn primary booth" id="pl">▶ Play</button></div><div id="ch"></div></div>';
+  gm.innerHTML = '<div class="stack">'+hudJP('<span>No. <span id="pos">1</span>/'+rounds.length+'</span>')+'<div class="stage" id="stg"><div class="qtext">What did you hear?</div><button type="button" class="btn primary booth" id="pl">▶ Play</button></div><div id="ch"></div></div>';
   timerId = 1;
   function play(){ var b = document.getElementById("pl"); if (!b) return; plays++; if (ICA.say("ja", rounds[i][0], b) === false) ICA.toast("That clip isn’t available offline."); b.textContent = "▶ Play again"; }
   document.getElementById("pl").onclick = play;
   function next(){
     if (i >= rounds.length){ timerId = null; end2("listen", score, right + " of " + rounds.length + " heard right", right, rounds.length, revList("Listen again", missed.map(function(m){ return '<div class="card mrow"><span lang="ja">'+esc(m[0])+'</span><button class="btn small" data-relisten="'+esc(m[0])+'">▶</button></div>'; }))); return; }
-    var x = rounds[i], len = x[0].length, near = ICA.shuffle(all.filter(function(y){ return y[0] !== x[0] && y[1] === x[1] && Math.abs(y[0].length - len) <= Math.max(4, len * .4); }));
-    if (near.length < 3) near = near.concat(ICA.shuffle(all.filter(function(y){ return y[0] !== x[0] && near.indexOf(y) < 0; })));
+    var x = rounds[i], near = lookalikes(x, all);
     var q = {opts: ICA.shuffle([x].concat(near.slice(0, 3))).map(function(y){ return {t:y[0], ok:y === x}; }), ja:true};
     document.getElementById("pos").textContent = i + 1; plays = 0; document.getElementById("pl").textContent = "▶ Play";
     var ch = document.getElementById("ch"); ch.innerHTML = choiceHTML(q).replace('class="choices"', 'class="choices one"');
@@ -1122,6 +1121,15 @@ function listen(gm){
   next();
 }
 
+function bigrams(t){ t = t.replace(/[、。！？\s]/g, ""); var b = {}; for (var k = 0; k < t.length - 1; k++) b[t.substr(k, 2)] = 1; for (var c = 0; c < t.length; c++) b[t[c]] = (b[t[c]] || 0) + .25; return b; }
+function lookalikes(x, all){   // the lines most like x: shared characters and pairs, close length, ideally the same unit
+  var bx = bigrams(x[0]), lx = x[0].length;
+  return all.filter(function(y){ return y[0] !== x[0]; }).map(function(y){ var by = bigrams(y[0]), sc = 0, n = 0;
+      for (var k in by){ n++; if (bx[k]) sc += Math.min(bx[k], by[k]); }
+      sc = sc / Math.max(1, Math.sqrt(n * Object.keys(bx).length)) - Math.abs(y[0].length - lx) * .03 + (y[1] === x[1] ? .08 : 0) + Math.random() * .04;
+      return [sc, y]; })
+    .sort(function(a, b){ return b[0] - a[0]; }).slice(0, 3).map(function(p){ return p[1]; });
+}
 /* ---------- Boss Battle: one unit's boss ---------- */
 var CREATURE = ["Slime", "Gremlin", "Blob", "Puff", "Mochi", "Yeti", "Golem", "Sprite", "Dumpling", "Gobbler", "Fuzzball", "Noodle"];
 var SKIP = /^(the|a|an|what|how|why|and|of|in|to|for|your|from|with|on|at|is|it|its|n\d)$/i;

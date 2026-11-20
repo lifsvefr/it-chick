@@ -1076,11 +1076,11 @@ ICA.addUnit({
       {t:"せんせえ is standard, because it matches the sound", why:"Only a few words, such as おねえさん and ええ, use え. *Sensei* uses い."},
       {t:"せんせ", why:"This drops a whole beat: *sense*."},
       {t:"せいせい", why:"The first syllable is *sen*, with ん."}]},
-    {id:"e3u1-q24", lesson:"e3u1-l3", level:2, q:"Which of these words spells its long *ō* with お rather than う?", options:[
-      {t:"こおり (ice)", ok:true, why:"こおり is on the short おお list, with おおきい, おおい, とおい, とおる and とお."},
-      {t:"こうこう (high school)", why:"こうこう uses the usual う."},
-      {t:"おとうさん (father)", why:"おとうさん uses the usual う."},
-      {t:"ありがとう (thank you)", why:"ありがとう uses the usual う."}]},
+    {id:"e3u1-q24", lesson:"e3u1-l3", level:2, q:"You hear the word for “ice”: *kōri*, with a long *ō*. How is it written in hiragana?", options:[
+      {t:"こおり", ok:true, why:"Right. Most long *ō* sounds are written with う, but こおり is on the short おお list, with おおきい, おおい, とおい, とおる and とお."},
+      {t:"こうり", why:"The natural guess, because a long *ō* is usually written おう. But “ice” is one of the few words written with おお: こおり."},
+      {t:"こーり", why:"The long-vowel mark ー is for katakana words. In hiragana, a long vowel is written with an extra vowel kana."},
+      {t:"こり", why:"That has a short *o*: two beats, not three. The long *ō* needs an extra kana."}]},
     {id:"e3u1-q25", lesson:"e3u1-l3", level:3, q:"Cheska is reading a word list aloud and says *oto* (おと) for “husband”. What did she leave out?", options:[
       {t:"The small っ pause: “husband” is おっと (*otto*)", ok:true, why:"おと is “sound”. The one-beat pause before と makes おっと, “husband”."},
       {t:"A long vowel: “husband” is おおと", why:"There is no long vowel in this word; the missing beat is a pause."},
