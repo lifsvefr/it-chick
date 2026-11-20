@@ -41,8 +41,7 @@ var CHICK = [
 "....KyyYYYYYYyyK....",
 ".....KKKKKKKKKK.....",
 "......KOK..KOK......"];
-/* Mugi, standing: long dark hair, round glasses, cream shirt, dark knit vest, wide brown trousers, mustard socks, loafers,
-   and the IT CHICK tote on her left shoulder. Single-letter palette keys; "Cr" is written as "C" here. Big 2 x 2 eyes with a glint inside thin round frames. */
+/* Mugi, standing: dark hair, round glasses, cream shirt, dark knit vest, wide brown trousers, mustard socks, loafers. Single-letter palette keys; "Cr" is written as "C" here. Shoulder-length hair; no bag (brown on brown did not read). */
 var MUGI = [
 ".......KKKKKK.......",
 ".....KKHHHHHHKK.....",
@@ -52,21 +51,21 @@ var MUGI = [
 "..KHHHHHHHHHHHHHHK..",
 "..KHHHSHHHHSSHHHHK..",
 "..KHHSSSSSSSSSSHHK..",
-"..KHSSFFSSSSFFSSHK..",
-"..KHSFWEFFFFWEFSHK..",
-"..KHSFEEFSSFEEFSHK..",
-"..KHPSFFSSSSFFSPHK..",
-"..KHHSSSSssSSSSHHK..",
+"..KHSFFFSSSSFFFSHK..",
+"..KHFSESFFFFSESFHK..",
+"..KHFSESFSSFSESFHK..",
+"..KHSFFFSSSSFFFSHK..",
+"..KHHPSSSssSSSPHHK..",
 "..KHHHSSSSSSSSHHHK..",
 ".KHHHHKSSSSSSKHHHHK.",
 ".KHHHKCCWCCWCCKHHHK.",
-".KHHKCCVVVVVVCCKHHK.",
-"KHHKCCVVvVVvVVCCKHHK",
-"KHKCCCVVVVVVVVCBCKHK",
-"..KSCCVVVVVVVVCKBBK.",
-"..KSKcVVVVVVVVKBbbBK",
-"...K.KTTTTTTTTKBBBBK",
-"....KTTTTTTTTTTKBBK.",
+"..KHKCCVVVVVVCCKHK..",
+"...KCCVVvVVvVVCCK...",
+"...KCCVVVVVVVVCCK...",
+"...KSCVVVVVVVVCSK...",
+"....KcVVVVVVVVcK....",
+"....KTTTTTTTTTTK....",
+"....KTTTTTTTTTTK....",
 "....KTTTTtTTTTTK....",
 "...KTTTTTtTTTTTTK...",
 "...KTTTTKtKTTTTTK...",
@@ -157,7 +156,11 @@ function pond(t){
   var key = lvlRef.map.join("");
   if (!(key in pondCache)){
     var balls = [];
-    lvlRef.map.forEach(function(r, y){ for (var x = 0; x < r.length; x++) if (r[x] === "p") balls.push([x * T + 10 + (hash(x, y) - .5) * 6, y * T + 10 + (hash(y, x) - .5) * 4, 9 + hash(x + 7, y) * 4]); });
+    lvlRef.map.forEach(function(r, y){ for (var x = 0; x < r.length; x++) if (r[x] === "p"){
+      balls.push([x * T + 10 + (hash(x, y) - .5) * 3, y * T + 10 + (hash(y, x) - .5) * 2, 7.5 + hash(x + 7, y) * 1.5]);
+      if (r[x + 1] === "p") balls.push([x * T + 20, y * T + 10 + (hash(x, y + 9) - .5) * 3, 6.5]);                         // smooth the join to the right
+      if (lvlRef.map[y + 1] && lvlRef.map[y + 1][x] === "p") balls.push([x * T + 10 + (hash(x + 9, y) - .5) * 3, y * T + 20, 6.5]);   // and below
+    } });
     if (!balls.length){ pondCache[key] = null; return; }
     var field = function(x, y){ var f = 0; balls.forEach(function(b){ var dx = (x - b[0]) / 1.15, dy = y - b[1]; f += b[2] * b[2] / (dx * dx + dy * dy + 1); }); return f; };
     var c = document.createElement("canvas"); c.width = W; c.height = H; var q = c.getContext("2d"), inside = function(x, y){ return field(x, y) > 1.15; };
@@ -202,11 +205,11 @@ var PATHS = ".SGmp";
 var LEVELS = [
   {map: ["tfgbtgfb",
          "gbfggtgf",
-         ".......G",
-         ".S.pp...",
-         "...ppp..",
+         "........",
+         ".S.pp..G",
+         "....p...",
          "tgfbgftg"], slots: 8, repeat: false,
-   hint: [[1,2],[2,2],[3,2],[4,2],[5,2],[6,2]],
+   hint: [[1,2],[2,2],[3,2],[4,2],[5,2],[6,2],[7,2]],
    intro: ["The chick moves one square at a time. Give it a list of steps with the arrows, then press ▶ Run.", "Careful: it can’t swim."],
    win: ["Cheep! Cheep!", "It followed your steps in order, one by one. That’s all a program is: instructions, run from top to bottom."],
    tip: "A program is a list of instructions. The computer runs them in order, top to bottom, exactly as written."},
