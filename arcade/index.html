@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=65">
+<link rel="stylesheet" href="../shared/style.css?v=66">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=65"></script>
+<script src="../shared/engine.js?v=66"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/arcadefx.js"></script>
@@ -293,6 +293,37 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .shelf{margin-top:10px;display:grid;gap:6px;background:var(--panel);border:1.5px dashed var(--gold);border-radius:12px;padding:8px 12px}
 .shelfrow{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .minib svg{width:30px;height:26px;display:block}
+.kstage{gap:4px}
+.kword{font-size:2.6em;font-weight:800;line-height:1.25;min-height:1.3em;letter-spacing:.04em}
+.khint{min-height:1.6em;font-size:1.25em;font-weight:700;color:var(--soft);opacity:0;transition:opacity .5s}
+.khint.on{opacity:.75}.khint.got{color:var(--ok);opacity:1}
+.kbar{width:min(320px,92%);height:8px;background:var(--scr);border:2px solid var(--line);overflow:hidden}
+.kbar i{display:block;height:100%;background:var(--gG);transition:width .1s linear}.kbar i.low{background:var(--gR)}
+.kin input{width:100%;box-sizing:border-box;font:inherit;font-size:1.6em;font-weight:700;text-align:center;padding:12px 14px;border:2px solid var(--line);border-bottom-width:4px;border-radius:12px;background:var(--panel);color:var(--ink)}
+.kin input:focus{outline:3px solid var(--lupine);outline-offset:2px}
+.kin input.ok{border-color:var(--ok);background:var(--okTint)}.kin input.bad{border-color:var(--gR);color:var(--gR)}
+.kin input::placeholder{font-size:.62em;font-weight:500}
+.beatg{position:relative}
+.bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;opacity:0;transition:opacity .35s}
+.bgrid.on{opacity:1}
+.bcell{background:var(--panel);border:2.5px solid var(--line);border-radius:14px;padding:10px 4px;min-height:104px;display:grid;justify-items:center;align-content:center;gap:3px;text-align:center;transition:background .15s,border-color .15s}
+.bcell .bi{font-size:2.1em;line-height:1}
+.bcell .bj{font-size:clamp(.95em,4.2vw,1.3em);font-weight:800;line-height:1.2;word-break:keep-all}
+.bcell .be{font-size:.72em;color:var(--soft)}
+.bcell.lit{background:var(--goldTint);border-color:var(--gold);box-shadow:0 0 0 2px color-mix(in srgb,var(--gold) 35%,transparent)}
+.bpop{animation:fx-bpop .28s ease}@keyframes fx-bpop{38%{transform:scale(1.12)}}
+.bswap{animation:fx-bswap .4s ease}@keyframes fx-bswap{from{opacity:0;transform:translateY(6px) scale(.97)}}
+.bmugi{text-align:center;margin-top:10px}.bmugi img{width:84px;height:84px;image-rendering:pixelated}
+.bbounce{animation:fx-bb .25s ease-out}@keyframes fx-bb{25%{transform:translateY(-8px) scale(1.08)}}
+.bvn{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:color-mix(in srgb,var(--bg) 88%,transparent);transition:opacity .4s;padding:10px;z-index:2}
+.bvn.hide{opacity:0;pointer-events:none}
+.bvn>img{width:110px;height:110px;image-rendering:pixelated}
+.bsay{background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:12px 16px;max-width:420px;text-align:center;display:grid;gap:4px}
+.bsay p{margin:0}.bsay .row{justify-content:center;margin-top:6px}
+.bcue{animation:fx-cue 1.3s ease-in-out infinite}@keyframes fx-cue{50%{opacity:.4}}
+@media (max-width:360px){.bgrid{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion:reduce){.bpop,.bswap,.bbounce,.bcue{animation:none}}
+.kbtns{justify-content:center}.ktip{text-align:center;margin:0}
 @media (prefers-reduced-motion:reduce){.bossbox,.choice.popped,.rainf .drop.splash{animation:none}}
 @media (prefers-reduced-motion:reduce){.jg-shake,.jg-pulse,.combo.hot,.float,.gc svg .idle{animation:none}.gc,.gc svg .mv{transition:none}}
 </style>
@@ -426,12 +457,14 @@ function home(){
     '<section aria-labelledby="h-jp"><div class="sh"><h2 id="h-jp">Japanese</h2><span class="small muted" lang="ja">日本語</span></div>'+
     '<div class="games">'+
       card("rain","Kana Rain","rain","Catch the kana"+mine("rain"),"a2")+
+      card("type","Kana Keys","type","Type the reading"+mine("type"),"a1")+
       card("sprint","Word Sprint","sprint","Word → meaning"+mine("sprint"),"a1")+
       card("match","Kanji Match","match","Beat the clock"+mine("match"),"a2")+
       card("pairs","Pair Up","pairs","Kanji ↔ reading"+mine("pairs"),"a3")+
       card("pop","Particle Pop","pop","は・が・を…"+mine("pop"),"a1")+
       card("build","Sentence Builder","build","Tiles into order"+mine("build"),"a4")+
       card("listen","Listening Booth","listen","What did you hear?"+mine("listen"),"a3")+
+      card("beat","Beat Challenge",null,"Say it on the beat","a3")+
       '<a class="gc a4" href="../labs/kanji.html?from=arcade"><span class="mq">KANJI LAB</span><span class="art">'+art("lab")+'</span><span class="sub">Your missed cards, on a calm daily schedule →</span></a>'+
     '</div></section>'+
   '</div>';
@@ -542,18 +575,18 @@ function launch(g, again){
   cur = {s:"play", g:g, answered:0, alive:true, hs:history.state || hs};
   snaps = {};
   setTitle(LNAME[g]);
-  var key = g === "cards" ? null : g, t = key ? AFX.top(ICA.load(), key) : null;
+  var key = (g === "cards" || g === "beat") ? null : g, t = key ? AFX.top(ICA.load(), key) : null;
   app.innerHTML = '<div class="stack">'+gbar(LNAME[g], true)+'<div class="crt" id="scr">'+
     (key ? '<div class="hiline"><span>HI SCORE <b>MUGI '+AFX.fmt(key, AFX.MUGI[key])+'</b></span>'+(t != null ? '<span>YOUR BEST '+AFX.fmt(key, t)+'</span>' : '')+'</div>' : '')+
     '<div id="gm"><p class="ready">Ready…</p></div></div></div>';
   var run = function(){ if (!cur.alive) return; var gm = document.getElementById("gm");
     if (GAMES[g]){ var j = jp(), p = JG.pool(GAMES[g].kind, j.level, j); ({sprint:sprint, match:match, pairs:pairs})[g](gm, p, j.level); }
-    else if (G2[g]) ({rain:rain, pop:pop, build:build, listen:listen})[g](gm);
+    else if (G2[g]) ({rain:rain, pop:pop, build:build, listen:listen, type:typeGame, beat:beat})[g](gm);
     else if (g === "boss") boss(gm, lastArg.boss);
     else if (g === "mix") mix(gm, lastArg.mix);
     else ({practice:practice, blitz:blitz, survival:survival, cards:flashcards, today:todayGame})[g](gm); };
   var go = function(){ if (!cur.alive) return;
-    if (g === "cards") return run();          // Flashcards stays calm: no countdown, no music
+    if (g === "cards" || g === "beat") return run();          // Flashcards stays calm; Beat Challenge brings its own song
     AFX.musicStart();
     cur.cancel = AFX.countdown(document.getElementById("scr"), function(){ cur.cancel = null; run(); }); };
   if (howSeen(g)) go(); else howDlg(g, true, go);
@@ -976,6 +1009,7 @@ var hudJP0 = hudJP; hudJP = function(left){ return hudJP0(left).replace('<span c
 var loaded2 = {};
 function withData2(kind, cb){
   if (kind === "kanji") return withData(cb);
+  if (kind === "none") return cb();
   var f = kind === "drills" ? "jp-drills.js" : "jp-listen.js", ok = kind === "drills" ? function(){ return !!window.JPD; } : function(){ return !!window.JPL; };
   if (ok()) return cb();
   app.innerHTML = '<p class="muted">Loading…</p>';
@@ -989,10 +1023,14 @@ function setup2(g){
   stopGame(); var G = G2[g], j = jp(); setTitle(G.name); cur = {s:"setup", g:g, hs:history.state};
   app.innerHTML = '<div class="stack">'+gbar(G.name, false)+
     '<div class="gc '+ACC[g]+'" style="pointer-events:none;box-shadow:none" aria-hidden="true"><span class="art" style="height:96px;border:0">'+art(g)+'</span></div>'+
-    '<div class="card stack setup"><div class="sg"><b id="lvl-l">'+(g === "rain" ? "Script" : "Level")+'</b><div class="segs" role="group" aria-labelledby="lvl-l">'+G.levels.map(function(l){
+    '<div class="card stack setup"><div class="sg"><b id="lvl-l">'+(G.lvLabel || (g === "rain" ? "Script" : "Level"))+'</b><div class="segs" role="group" aria-labelledby="lvl-l">'+G.levels.map(function(l){
       return '<button data-lv2="'+l[0]+'" aria-pressed="'+(lv2(g) === l[0])+'">'+esc(l[1])+'</button>'; }).join("")+'</div></div>'+
+    (G.speeds ? '<div class="sg"><b id="sp-l">Speed</b><div class="segs" role="group" aria-labelledby="sp-l">'+G.speeds.map(function(v){ return '<button data-sp2="'+v+'" aria-pressed="'+(sp2(g) === v)+'">'+v+'×</button>'; }).join("")+'</div></div>' : '')+
+    (G.modes ? '<div class="sg"><b id="md-l">Mode</b><div class="segs" role="group" aria-labelledby="md-l">'+G.modes.map(function(m){ return '<button data-md2="'+m[0]+'" aria-pressed="'+(md2(g) === m[0])+'">'+esc(m[1])+'</button>'; }).join("")+'</div></div>' : '')+
     '<div class="row"><button class="btn primary" id="start">Start</button></div></div></div>';
   ICA.$$("[data-lv2]").forEach(function(t){ t.onclick = function(){ j.lv2 = j.lv2 || {}; j.lv2[g] = t.getAttribute("data-lv2"); ICA.save(); ICA.$$("[data-lv2]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); }; });
+  ICA.$$("[data-sp2]").forEach(function(t){ t.onclick = function(){ j.sp2 = j.sp2 || {}; j.sp2[g] = parseFloat(t.getAttribute("data-sp2")); ICA.save(); ICA.$$("[data-sp2]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); }; });
+  ICA.$$("[data-md2]").forEach(function(t){ t.onclick = function(){ j.md2 = j.md2 || {}; j.md2[g] = t.getAttribute("data-md2"); ICA.save(); ICA.$$("[data-md2]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); }; });
   var st = document.getElementById("start"); st.focus(); st.onclick = function(){ launch(g); };
 }
 function end2(g, score, sub, right, seen, review){
@@ -1216,11 +1254,218 @@ function mix(gm, tid){
   next();
 }
 
+/* ===================== Pass 27 (Nov 2026): Kana Keys =====================
+   See a word (or hear it), type its reading. Romaji turns into kana as you type, the way a Japanese IME does;
+   a Japanese keyboard works too. Words: Kanji Lab vocab (every word has a clip). */
+G2.type = {name:"Kana Keys", levels:[["N5","N5"],["N4","N4"],["N3","N3"]], def:"N5", data:"kanji", modes:[["see","See it"],["hear","Hear it"]], mdef:"see"};
+LNAME.type = "Kana Keys"; ACC.type = "a1"; AFX.MUGI.type = 450;
+HOW.type = ["<b>See it:</b> a word appears in kanji. Type how it’s read. <b>Hear it:</b> listen, then type what you heard.", "Type in romaji (<b>ka</b> → か, <b>shi</b> → し, <b>nn</b> → ん, <b>-</b> → ー) or with a Japanese keyboard. The word clears the moment it’s right.", "After 6 seconds the reading fades in to help, for fewer points. A wrong check costs nothing the first time; the second costs a heart. You have <b>three</b>.", "20 words a round."];
+ART.type = '<rect x="8" y="34" width="22" height="20" rx="4" class="O"/><rect x="34" y="34" width="22" height="20" rx="4" class="O"/><g class="mv"><rect x="60" y="30" width="24" height="24" rx="4" class="A"/><text x="72" y="43" text-anchor="middle" dominant-baseline="central" style="font-size:13px" class="P" lang="ja">か</text></g><rect x="88" y="34" width="22" height="20" rx="4" class="O"/><text x="19" y="44" text-anchor="middle" dominant-baseline="central" style="font-size:9px" class="A">K</text><text x="45" y="44" text-anchor="middle" dominant-baseline="central" style="font-size:9px" class="A">A</text><path d="M18 22 h60" class="S idle" style="stroke-dasharray:3 4"/>';
+function md2(g){ var j = jp(); j.md2 = j.md2 || {}; return j.md2[g] || G2[g].mdef; }
+
+/* romaji → hiragana. live: a trailing n / nn / lone consonant stays as letters until the next key decides it */
+var RK = (function(){
+  var t = {a:"あ",i:"い",u:"う",e:"え",o:"お"}, V = "aiueo";
+  function row(c, ks){ for (var i = 0; i < 5; i++) if (ks[i]) t[c + V[i]] = ks[i]; }
+  row("k","かきくけこ"); row("g","がぎぐげご"); row("s","さしすせそ"); row("z","ざじずぜぞ"); row("t","たちつてと"); row("d","だぢづでど");
+  row("n","なにぬねの"); row("h","はひふへほ"); row("b","ばびぶべぼ"); row("p","ぱぴぷぺぽ"); row("m","まみむめも"); row("r","らりるれろ");
+  t.ya = "や"; t.yu = "ゆ"; t.yo = "よ"; t.ye = "いぇ"; t.wa = "わ"; t.wo = "を"; t.wi = "うぃ"; t.we = "うぇ";
+  t.shi = "し"; t.chi = "ち"; t.tsu = "つ"; t.fu = "ふ"; t.ji = "じ"; t.vu = "ゔ";
+  [["la","ぁ"],["li","ぃ"],["lu","ぅ"],["le","ぇ"],["lo","ぉ"],["lya","ゃ"],["lyu","ゅ"],["lyo","ょ"],["ltu","っ"],["ltsu","っ"],["lwa","ゎ"]].forEach(function(p){ t[p[0]] = p[1]; t["x" + p[0].slice(1)] = p[1]; });
+  var Y = {a:"ゃ",u:"ゅ",o:"ょ"};
+  [["ky","き"],["gy","ぎ"],["sy","し"],["sh","し"],["zy","じ"],["jy","じ"],["j","じ"],["ty","ち"],["cy","ち"],["ch","ち"],["dy","ぢ"],["ny","に"],["hy","ひ"],["by","び"],["py","ぴ"],["my","み"],["ry","り"]].forEach(function(p){
+    for (var v in Y) t[p[0] + v] = p[1] + Y[v]; });
+  t.she = "しぇ"; t.che = "ちぇ"; t.je = "じぇ"; t.jye = "じぇ";
+  [["f","ふ"],["v","ゔ"],["ts","つ"]].forEach(function(p){ t[p[0]+"a"] = p[1]+"ぁ"; t[p[0]+"i"] = p[1]+"ぃ"; t[p[0]+"e"] = p[1]+"ぇ"; t[p[0]+"o"] = p[1]+"ぉ"; });
+  t.thi = "てぃ"; t.dhi = "でぃ"; t.twu = "とぅ"; t.dwu = "どぅ"; t["-"] = "ー"; t.nn = "ん"; t["n'"] = "ん"; t.xn = "ん";
+  var CONS = "bcdfghjklmpqrstvwxz";
+  function conv(s, live){
+    s = s.toLowerCase(); var out = "", i = 0;
+    while (i < s.length){
+      var c = s[i];
+      if (!/[a-z'\-]/.test(c)){ out += c; i++; continue; }
+      if (c === "n"){
+        var n1 = s[i+1], n2 = s[i+2];
+        if (n1 === undefined){ out += live ? "n" : "ん"; i++; continue; }
+        if (n1 === "n"){ if (n2 === undefined && live){ out += "nn"; i += 2; continue; } if (n2 && /[aiueoy]/.test(n2)){ out += "ん"; i++; continue; } out += "ん"; i += 2; continue; }
+        if (n1 === "'"){ out += "ん"; i += 2; continue; }
+        if (!/[aiueoy]/.test(n1)){ out += "ん"; i++; continue; }
+      }
+      if (CONS.indexOf(c) > -1 && s[i+1] === c){ out += "っ"; i++; continue; }
+      if (c === "t" && s[i+1] === "c" && s[i+2] === "h"){ out += "っ"; i++; continue; }   // matcha
+      var hit = null;
+      for (var L = 4; L >= 1; L--){ var k = s.substr(i, L); if (k.length === L && t[k]){ hit = k; break; } }
+      if (hit){ out += t[hit]; i += hit.length; continue; }
+      if (live && i >= s.length - 3 && Object.keys(t).some(function(k){ return k.indexOf(s.slice(i)) === 0; })){ out += s.slice(i); break; }   // still being typed
+      out += c; i++;
+    }
+    return out;
+  }
+  var vow = {}; Object.keys(t).forEach(function(k){ var v = k.slice(-1); if (V.indexOf(v) > -1) vow[t[k].slice(-1)] = v; });
+  ["ゃ","ゅ","ょ"].forEach(function(k, n){ vow[k] = "auo"[n]; });
+  function hira(s){ return s.replace(/[ァ-ヶ]/g, function(ch){ return String.fromCharCode(ch.charCodeAt(0) - 0x60); }).replace(/ヴ/g, "ゔ"); }
+  /* compare readings: katakana = hiragana, ー = the vowel before it (コーヒー = こおひい), and づ/ぢ = ず/じ (same sound; the IME spelling du/di is easy to miss) */
+  function norm(s){ s = hira(s).replace(/\s+/g, "").replace(/づ/g, "ず").replace(/ぢ/g, "じ"); var o = ""; for (var i = 0; i < s.length; i++){ var ch = s[i]; if (ch === "ー" && o){ o += t[vow[o.slice(-1)]] || "ー"; } else o += ch; } return o; }
+  return {conv:conv, norm:norm};
+})();
+
+function typeGame(gm){
+  var lv = lv2("type"), mode = md2("type"), deck = ICA.shuffle(window.KLAB.vocab.filter(function(v){ return v.l === lv && v.r.length <= 8; })).slice(0, 20),
+      i = 0, score = 0, streak = 0, right = 0, seen = 0, lives = 3, missed = [], w = null, el = 0, hintAt = 6, limit = 20, tries = 0, done = false, lock = false;
+  gm.innerHTML = '<div class="stack">'+hudJP('<span class="hearts" id="hp" aria-label="3 hearts left">❤️❤️❤️</span><span>Word <span id="pos">1</span>/'+deck.length+'</span>')+
+    '<div class="stage kstage" id="stg" data-nosay><div class="qtext" id="kq"></div><div class="kword" id="kw" lang="ja"></div><div class="qsub small" id="km"></div>'+
+      '<div class="khint" id="kh" lang="ja" aria-live="polite"></div><div class="kbar" aria-hidden="true"><i id="kb"></i></div></div>'+
+    '<div class="kin"><input id="ki" type="text" lang="ja" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="go" aria-label="Type the reading" placeholder="type in romaji or kana"></div>'+
+    '<div class="row kbtns"><button class="btn" id="kgive">Show me</button><button class="btn primary" id="kchk">Check ⏎</button></div>'+
+    '<p class="small muted ktip">ka → か · shi → し · nn → ん · - → ー · double a consonant for っ (kitte → きって)</p></div>';
+  var inp = document.getElementById("ki"), kb = document.getElementById("kb");
+  function hearts(){ var hp = document.getElementById("hp"); hp.textContent = lives > 0 ? new Array(lives+1).join("❤️") : "💔"; hp.setAttribute("aria-label", lives+" hearts left"); }
+  function play(){ var b = document.getElementById("kpl"); if (ICA.say("ja", w.w, b) === false) ICA.toast("That clip isn’t available offline."); }
+  function next(){
+    if (!cur.alive) return;
+    if (i >= deck.length || lives <= 0) return over();
+    w = deck[i]; el = 0; tries = 0; done = false; lock = false;
+    document.getElementById("pos").textContent = i + 1;
+    document.getElementById("kq").textContent = mode === "hear" ? "Type what you hear" : "Type how it’s read";
+    var kw = document.getElementById("kw");
+    if (mode === "hear"){ kw.innerHTML = '<button class="btn booth" id="kpl">▶ Play again</button>'; document.getElementById("kpl").onclick = function(){ play(); inp.focus(); }; play(); }
+    else kw.textContent = w.w;
+    document.getElementById("km").textContent = w.m[0].split(";")[0];
+    var kh = document.getElementById("kh"); kh.textContent = ""; kh.className = "khint";
+    inp.value = ""; inp.className = ""; inp.disabled = false; inp.focus();
+    kb.style.width = "100%"; kb.className = "";
+  }
+  function clue(){ var kh = document.getElementById("kh"); if (kh && !kh.textContent){ kh.textContent = w.r; kh.className = "khint on"; } }
+  timerId = setInterval(function(){
+    if (paused || done || !cur.alive) return; el += 0.1;
+    kb.style.width = Math.max(0, 100 - el / limit * 100) + "%"; if (el > limit * 0.75) kb.className = "low";
+    if (el >= hintAt) clue();
+    if (el >= limit) miss(true);
+  }, 100);
+  function good(){
+    done = true; lock = true; seen++; right++; streak++; cur.answered++;
+    var quick = el < hintAt, p = (quick ? 10 + Math.round((1 - el / hintAt) * 10) : 4) + Math.min(streak - 1, 10) * 2;
+    score += p; inp.value = w.r; inp.className = "ok"; hit(true, inp, streak, "+" + p); AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
+    var kh = document.getElementById("kh"); kh.textContent = w.r; kh.className = "khint on got";
+    if (mode === "see") play();
+    i++; setTimeout(next, mode === "see" ? 1100 : 650);
+  }
+  function miss(timeout){
+    if (done) return;
+    if (!timeout && tries === 0){ tries++; juice(inp, "jg-shake"); clue(); ICA.toast("Not quite. The reading is up there now; try again."); inp.focus(); return; }
+    done = true; lock = true; seen++; streak = 0; lives--; hearts(); cur.answered++;
+    if (missed.indexOf(w) < 0) missed.push(w);
+    hit(false, inp, 0); showCombo(0); inp.className = "bad"; inp.value = w.r; inp.disabled = true;
+    var kh = document.getElementById("kh"); kh.textContent = w.r; kh.className = "khint on";
+    play();
+    i++; setTimeout(next, 1700);
+  }
+  function check(final){
+    if (lock || !w) return;
+    var v = inp.value.trim(); if (!v) return;
+    var mine = RK.norm(RK.conv(v, false));
+    if (mine === RK.norm(w.r) || v === w.w) return good();
+    if (final) miss(false);
+  }
+  inp.addEventListener("input", function(e){
+    if (lock) return;
+    if (!e.isComposing && /[a-zA-Z\-']/.test(inp.value)){ var c = RK.conv(inp.value, true); if (c !== inp.value) inp.value = c; }
+    if (!e.isComposing) check(false);
+  });
+  inp.addEventListener("compositionend", function(){ check(false); });
+  inp.addEventListener("keydown", function(e){ if (e.key === "Enter" && !e.isComposing && e.keyCode !== 229){ e.preventDefault(); check(true); } });
+  document.getElementById("kchk").onclick = function(){ check(true); inp.focus(); };
+  document.getElementById("kgive").onclick = function(){ if (lock) return; tries = 1; miss(false); };
+  function over(){
+    stopTimer();
+    end2("type", score, right + " of " + seen + " typed right" + (lives <= 0 ? " · out of hearts" : ""), right, seen,
+      revList("Worth another look", missed.map(function(m){ return '<div class="card mrow"><span><span lang="ja" style="font-size:1.4em">'+esc(m.w)+'</span> · <b lang="ja">'+esc(m.r)+'</b> <span class="small muted">'+esc(m.m[0].split(";")[0])+'</span></span><button class="iconbtn" data-relisten="'+esc(m.w)+'" aria-label="Listen">🔊</button></div>'; })));
+  }
+  cur.stop = function(){ done = true; };
+  next();
+}
+
+/* ---------- Beat Challenge: say each word on the beat ----------
+   Track and timings: the owner's own beat track (arcade/beat_challenge.mp3) and her Audacity labels.
+   Everything runs off the song's own clock (audio.currentTime), so it stays in sync at any speed. */
+var BEAT = {
+  introFadeOut: 2.496584,
+  setFadeIn: [2.808657, 8.045562, 13.277910, 18.537594, 23.781332, 29.020514],
+  beatTimes: [
+    5.41459, 5.745011, 6.067769, 6.399148, 6.723822, 7.049454, 7.379396, 7.702761,
+    10.658849, 10.98927, 11.312029, 11.643407, 11.968081, 12.293713, 12.623655, 12.94702,
+    15.906567, 16.236988, 16.559747, 16.891125, 17.215799, 17.541431, 17.871373, 18.194738,
+    21.153768, 21.484189, 21.806947, 22.138326, 22.463, 22.788632, 23.118574, 23.441939,
+    26.397594, 26.728014, 27.050773, 27.382152, 27.706826, 28.032458, 28.3624, 28.685764,
+    31.63795, 31.96837, 32.291129, 32.622508, 32.947182, 33.272814, 33.602756, 33.92612],
+  outroTime: 34.266065, per: 8
+};
+var BSETS = {
+  num:["🔢 Numbers", [["1️⃣","いち","one"],["2️⃣","に","two"],["3️⃣","さん","three"],["4️⃣","よん","four"],["5️⃣","ご","five"],["6️⃣","ろく","six"],["7️⃣","なな","seven"],["8️⃣","はち","eight"],["9️⃣","きゅう","nine"],["🔟","じゅう","ten"]]],
+  col:["🌈 Colors", [["🔴","あか","red"],["🔵","あお","blue"],["🟡","きいろ","yellow"],["🟢","みどり","green"],["⚪","しろ","white"],["⚫","くろ","black"],["🟤","ちゃいろ","brown"],["🟣","むらさき","purple"],["🟠","オレンジ","orange"],["🌸","ピンク","pink"]]],
+  ani:["🐾 Animals", [["🐱","ねこ","cat"],["🐶","いぬ","dog"],["🐦","とり","bird"],["🐟","さかな","fish"],["🐰","うさぎ","rabbit"],["🐻","くま","bear"],["🐴","うま","horse"],["🐷","ぶた","pig"],["🐵","さる","monkey"],["🐘","ぞう","elephant"]]],
+  food:["🍙 Food", [["🍣","すし","sushi"],["🍜","ラーメン","ramen"],["🍞","パン","bread"],["🍚","ごはん","rice"],["🍎","りんご","apple"],["🍊","みかん","mandarin"],["🥚","たまご","egg"],["🍰","ケーキ","cake"],["🍵","おちゃ","tea"],["💧","みず","water"]]],
+  wx:["⛅ Weather", [["☀️","はれ","sunny"],["🌧️","あめ","rain"],["☁️","くもり","cloudy"],["❄️","ゆき","snow"],["💨","かぜ","wind"],["🥵","あつい","hot"],["🥶","さむい","cold"],["⛈️","かみなり","thunder"]]],
+  body:["✋ Body", [["👁️","め","eye"],["👂","みみ","ear"],["👃","はな","nose"],["👄","くち","mouth"],["✋","て","hand"],["🦶","あし","foot"],["🦷","は","tooth"],["💪","うで","arm"]]],
+  town:["🏙️ Around town", [["🏠","いえ","house"],["🏫","がっこう","school"],["🚉","えき","station"],["🏥","びょういん","hospital"],["🏦","ぎんこう","bank"],["🏪","コンビニ","konbini"],["🏞️","こうえん","park"],["🚌","バス","bus"],["🚃","でんしゃ","train"],["📚","としょかん","library"]]]
+};
+G2.beat = {name:"Beat Challenge", lvLabel:"Word set", levels:Object.keys(BSETS).map(function(k){ return [k, BSETS[k][0]]; }), def:"num", data:"none",
+  modes:[["read","Read it"],["recall","Recall it"]], mdef:"read", speeds:[0.75, 0.9, 1, 1.1, 1.25]};
+LNAME.beat = "Beat Challenge"; ACC.beat = "a3";
+HOW.beat = ["Eight pictures, one beat each. Say each word out loud <b>right on the beat</b>, as it lights up.", "<b>Read it</b> shows the Japanese. <b>Recall it</b> shows only the picture and the English, so the Japanese comes from you.", "Six rounds of eight, then you can go again. Slow it down until it feels easy, then speed it up."];
+ART.beat = '<g class="mv"><ellipse cx="50" cy="44" rx="26" ry="9" class="A"/><path d="M24 44 V54 a26 9 0 0 0 52 0 V44" class="O"/><path d="M30 26 L44 40 M72 24 L58 40" class="S" style="stroke-width:3"/></g><g class="idle"><path d="M92 18 v18 a4 4 0 1 1 -3 -4 M92 18 l10 -3 v15 a4 4 0 1 1 -3 -4" class="S" style="stroke-width:2.2"/></g>';
+function sp2(g){ var j = jp(); j.sp2 = j.sp2 || {}; return j.sp2[g] || 1; }
+var beatAudio = null;
+function beat(gm){
+  var set = BSETS[lv2("beat")][1], recall = md2("beat") === "recall", speed = sp2("beat"), R = BEAT.setFadeIn.length, rounds = [], raf = null, shown = -2, lit = -1, ended = false;
+  for (var r = 0; r < R; r++){ var row = [], prev = -1; for (var b = 0; b < BEAT.per; b++){ var k, g = 0; do { k = Math.floor(Math.random() * set.length); } while (k === prev && ++g < 8); prev = k; row.push(set[k]); } rounds.push(row); }
+  gm.innerHTML = '<div class="stack beatg" data-nosay><div class="hud"><span>Round <b id="brn">1</b>/'+R+'</span><span>'+speed+'×</span></div>'+
+    '<div class="bgrid" id="bg"></div><div class="bmugi"><img id="bm" src="../shared/mascot/pixel/mugi-px-yay.webp" alt=""></div>'+
+    '<div class="bvn" id="bvn"><img src="../shared/mascot/pixel/mugi-px-hello.webp" alt=""><div class="bsay"><b>Mugi</b><p id="bvt">Say each word right on the beat! Don’t lose the rhythm!</p><p lang="ja" class="small" id="bvj">ビートにあわせて、ことばを言ってね！</p><p class="small muted bcue" id="bcue">♪ Listen for the beat… ♪</p><div class="row" id="bbt" hidden><button class="btn primary" data-again="beat">▶ Again, new words</button><button class="btn" data-back>Change set</button></div></div></div></div>';
+  var a = beatAudio || (beatAudio = new Audio("beat_challenge.mp3"));
+  a.preservesPitch = a.mozPreservesPitch = a.webkitPreservesPitch = true;
+  a.pause(); a.currentTime = 0; a.playbackRate = speed; a.volume = Math.max(0, Math.min(1, AFX.musicVol())); a.muted = !soundOn();
+  if (!soundOn()) ICA.toast("Sound is off. Turn it on (🔊) to hear the beat.");
+  a.onerror = function(){ ICA.toast("The beat track didn’t load. Check your connection."); };
+  var bg = document.getElementById("bg"), vn = document.getElementById("bvn"), bm = document.getElementById("bm");
+  function render(r){
+    bg.innerHTML = rounds[r].map(function(w){ return '<div class="bcell"><span class="bi" aria-hidden="true">'+w[0]+'</span>'+(recall ? '' : '<span class="bj" lang="ja">'+esc(w[1])+'</span>')+'<span class="be">'+esc(w[2])+'</span></div>'; }).join("");
+    document.getElementById("brn").textContent = r + 1; juice(bg, "bswap");
+  }
+  function frame(){
+    if (!cur.alive) return; raf = requestAnimationFrame(frame); if (paused || ended) return;
+    var t = a.currentTime;
+    if (t >= BEAT.outroTime || a.ended){ return outro(); }
+    if (t < BEAT.introFadeOut) return;
+    vn.classList.add("hide");
+    var r = -1; for (var i = 0; i < R; i++) if (t >= BEAT.setFadeIn[i]) r = i;
+    if (r < 0) return;
+    if (r !== shown){ shown = r; lit = -1; render(r); bg.classList.add("on"); }
+    var n = 0, base = r * BEAT.per; for (var b = 0; b < BEAT.per; b++) if (BEAT.beatTimes[base + b] <= t) n = b + 1;
+    var cells = bg.children; for (var c = 0; c < cells.length; c++) cells[c].classList.toggle("lit", c < n);
+    if (n - 1 !== lit && n > 0){ lit = n - 1; juice(cells[lit], "bpop"); juice(bm, "bbounce"); }
+  }
+  function outro(){
+    ended = true; vn.querySelector("img").src = "../shared/mascot/pixel/mugi-px-yay.webp";
+    document.getElementById("bvt").textContent = "Phew! How did you do? Nice rhythm!";
+    document.getElementById("bvj").textContent = "ふう〜！どうだった？ナイスリズム！";
+    document.getElementById("bcue").hidden = true; document.getElementById("bbt").hidden = false;
+    vn.classList.remove("hide"); bg.classList.remove("on");
+    var st = ICA.load().arcade; st.beatPlays = (st.beatPlays || 0) + 1; ICA.save();
+  }
+  cur.stop = function(){ if (raf) cancelAnimationFrame(raf); raf = null; a.pause(); };
+  cur.pause = function(){ a.pause(); };
+  cur.resume = function(){ if (!ended) a.play().catch(function(){}); };
+  timerId = 1;
+  a.play().catch(function(){ ICA.toast("Tap the screen to start the beat."); gm.addEventListener("click", function once(){ gm.removeEventListener("click", once); a.play().catch(function(){}); }); });
+  raf = requestAnimationFrame(frame);
+}
+
 var lastArg = {};
 /* ---------- one click handler for the page ---------- */
 app.addEventListener("click", function(e){
   var t;
-  if (e.target.closest("[data-snd]")){ setSound(!soundOn()); syncSnd(); beep("tap"); return; }
+  if (e.target.closest("[data-snd]")){ setSound(!soundOn()); syncSnd(); beep("tap"); if (beatAudio) beatAudio.muted = !soundOn(); return; }
   if (e.target.closest("[data-mus]")){ setMusic(!musicOn()); syncSnd(); beep("tap"); return; }
   if (e.target.closest("[data-furi]")){ ICA.load().arcade.furi = !furiOn(); ICA.save(); syncSnd(); beep("tap"); ICA.toast && ICA.toast(furiOn() ? "Furigana on" : "Readings off: read the kanji yourself. Tap the word to peek."); return; }
   if (!furiOn() && (t = e.target.closest("ruby")) && !t.closest("button,label,.choice,.opt,.pc")){ t.classList.toggle("peek"); return; }
@@ -1251,7 +1496,7 @@ ICA.onSheet = function(open){
   if (open){ if (cur.s === "play" && cur.alive && !paused && !openD){ sheetPaused = true; setPaused(true); } }
   else if (sheetPaused){ sheetPaused = false; if (cur.s === "play" && cur.alive) setPaused(false); }
 };
-ICA.onSettings = function(k, v){ if (k === "sound" || k === "vol"){ syncSnd(); if (!soundOn()) AFX.musicStop(); AFX.applyVolume(); if (v === "music" && !AFX.musicVol()) AFX.musicStop(); } };
+ICA.onSettings = function(k, v){ if (k === "sound" || k === "vol"){ syncSnd(); if (beatAudio){ beatAudio.muted = !soundOn(); beatAudio.volume = Math.max(0, Math.min(1, AFX.musicVol())); } if (!soundOn()) AFX.musicStop(); AFX.applyVolume(); if (v === "music" && !AFX.musicVol()) AFX.musicStop(); } };
 ICA.loadAll("../", function(){ picked = savedPick(); migrateBoards(); applyFuri(); home(); }, {pixel:true});
 })();
 </script>
