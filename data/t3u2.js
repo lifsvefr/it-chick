@@ -150,7 +150,8 @@ ICA.addUnit({
       {t:"All four rows are second copies of samples entered earlier, so she can safely delete them", why:"COUNTIF shows 2 on **both** copies of a duplicated ID, not just the second. And a duplicate ID may be two different samples given the same label by mistake, so deleting could lose real data."},
       {t:"The formula is wrong: COUNTIF can’t count text", why:"COUNTIF counts text matches perfectly well; that’s what it’s doing here."},
       {t:"Those IDs are stored as numbers instead of text", why:"Storage type affects leading zeros, not how many times an ID appears. A count of 2 means a repeat."}
-    ]}
+    ]},
+    {id:"t3u2-l1-x7", type:"explain", q:"A researcher keeps one sheet with a row per plot: each row repeats the household’s village and number of members, then gives the plot’s crop and area. Explain why splitting this into two tables linked by `hh_id` is better.", hint:"Ask “one row = one what?” for each piece of information.", model:"Village and household size describe the household; crop and area describe each plot. They are two kinds of observation. In one plot-level sheet, household facts are typed again on every plot row, which wastes effort and invites contradictions, such as the same household listed in two villages. A households table (one row per household) and a plots table (one row per plot), both carrying `hh_id`, store each fact once, and you can still join them for questions like maize area per village.", points:["Identifies two kinds of observation: households and plots", "Explains the problem of repeating household facts on every row", "Describes two tables linked by the `hh_id` identifier", "Says the tables can be joined again when a question needs both"]}
    ],
    apply:{intro:"Practise restructuring and checking a small dataset. Everything works in any of the free spreadsheet apps, including Google Sheets on a phone (typing on a phone is slower, so keep the tables small).", tasks:[
      {t:"Split one messy table into two rectangles", app:{
@@ -323,7 +324,8 @@ ICA.addUnit({
       {t:"Sort the column to group odd entries at the top or bottom", why:"Sorting brings blanks, numbers and near-duplicates together so you can see them."},
       {t:"Fix the variants to one spelling and note what you changed", why:"Fix, and record the change so others know what happened (and you remember)."},
       {t:"Add a dropdown list so new entries stay consistent", why:"Finally, prevent the problem from coming back (Lesson 5)."}
-    ]}
+    ]},
+    {id:"t3u2-l2-x7", type:"explain", q:"A colleague marks the rows to leave out of an analysis by shading them grey. Explain why an indicator column is a better way to record this decision.", model:"Colour is formatting, not data. Formulas and analysis programs can’t read it, it disappears when the file is saved as CSV, and some people can’t see it. So the “exclude” decision could be lost or ignored by the analysis. A column such as `exclude` (TRUE or FALSE), with an `exclude_reason`, can be filtered, counted and read by R or Python, and survives export. If people still want the grey, conditional formatting can shade rows from that column, so the colour displays the data rather than being it.", points:["Says formulas and analysis software can’t read colour", "Says colour is lost when saving as CSV (and not everyone can see it)", "Proposes an indicator column such as `exclude`, ideally with a reason", "Mentions that conditional formatting can still show the column as colour"]}
    ],
    apply:{intro:"Practise the habits on a small sheet of your own, such as a reading log, a club’s attendance or household expenses, or use the food-bank example. Google Sheets on a phone works for everything here.", tasks:[
      {t:"Find inconsistent entries with a filter", app:{
@@ -469,7 +471,8 @@ ICA.addUnit({
       {t:"Blank is always wrong because programs can’t read empty cells", why:"Most programs read empty cells as missing; Data Carpentry calls blanks the best option. The risk is only that a blank can’t show whether it was intended."},
       {t:"NA is always wrong because spreadsheets treat it as text", why:"It is text in a spreadsheet, but that makes arithmetic fail loudly rather than silently, and R reads it as missing. Broman and Woo recommend it."},
       {t:"They should use −999 so the column stays numeric", why:"Both guides say to avoid numeric codes: they get included in calculations, as the hook showed."}
-    ]}
+    ]},
+    {id:"t3u2-l3-x7", type:"explain", q:"Four households report 3, 0, 5 and 2 cows. Explain why it matters whether the household with no cows is typed as 0 or left blank, and when a blank is the right choice.", hint:"Work out AVERAGE both ways.", model:"A 0 is a measurement: this household has no cows. A blank means “we don’t know”, and AVERAGE skips it. Typed as 0, the average is 10 ÷ 4 = **2.5**; left blank, the household drops out and the average becomes 10 ÷ 3 ≈ **3.3**, overstating it. Neither gives an error. A blank (or the dataset’s one missing-value code) is right only when nobody recorded the count; typing 0 for an unmeasured value would wrongly pull the average down.", points:["Says 0 is a real value and a blank means unknown", "Shows the two averages differ (2.5 against about 3.3)", "Notes that neither mistake produces an error message", "Says to use the missing code only when the value really wasn’t recorded"]}
    ],
    apply:{intro:"Run the missing-value experiment yourself, then document a small dataset. Any free app works, including Google Sheets on a phone.", tasks:[
      {t:"See how functions treat blanks and codes", app:{
@@ -608,7 +611,8 @@ ICA.addUnit({
       {t:"17 November 1987, because the app can tell the records are old", why:"The app has no way to know; it uses the current year."},
       {t:"An error, because a date needs a year", why:"Apps accept day and month alone and quietly add the current year, which is why the mistake is easy to miss."},
       {t:"The text “17/11”, left exactly as typed", why:"Most apps recognise 17/11 as a date in a day-first locale and add a year. (In a month-first locale it might stay as text, which is a different problem.)"}
-    ]}
+    ]},
+    {id:"t3u2-l4-x8", type:"explain", q:"Dates typed day-first, such as `05/07/2026` (5 July) and `13/07/2026` (13 July), are entered into a sheet whose locale reads dates month-first. Explain what happens to the column and why it is dangerous.", model:"The sheet reads the first number as the month. `05/07/2026` becomes 7 May 2026: a real date, but the wrong one. `13/07/2026` can’t be a date, because there’s no month 13, so it stays as text. The column ends up half wrong dates and half text, with no error message, so sorting, charts and date arithmetic quietly mix them. Typing dates as YYYY-MM-DD, or stating the date order when importing, prevents it.", points:["Says the sheet reads the first number as the month", "Explains that days 1 to 12 become different, wrong dates", "Explains that days 13 to 31 stay as text", "Says there is no warning, so later sorting or arithmetic goes wrong", "Gives a fix: ISO dates or stating the order on import"]}
    ],
    apply:{intro:"Look at how your own app handles dates. Google Sheets on a phone works for the first two tasks; the date-system setting is only in desktop Excel and LibreOffice.", tasks:[
      {t:"Find your date settings", app:{
@@ -774,7 +778,8 @@ ICA.addUnit({
       {t:"Export the data sheet as CSV UTF-8", why:"Export once the displayed values are what you want in the file."},
       {t:"Open the CSV in a text editor and run through the checklist", why:"See exactly what was written: separator, decimals, dates, codes, accents."},
       {t:"Send it with the data dictionary and README", why:"The documentation tells the reader the codes, units, separator and encoding."}
-    ]}
+    ]},
+    {id:"t3u2-l5-x8", type:"explain", q:"Explain why you should keep the raw data file untouched and do all your cleaning on a copy, recording each step as you go.", model:"The raw file is the only record of what was first collected. If you clean that only copy and later find a mistake in your cleaning, you can’t tell what the original said or undo the damage. Keeping the raw file read-only and backed up, and working on a copy with a note of every step, means any error can be fixed by going back to the raw file and redoing the steps. The notes also let others check exactly how the clean file was made.", points:["Says the raw file is the only record of the original values", "Explains that editing it makes mistakes impossible to undo", "Describes working on a copy and recording every step", "Says the steps can be redone or checked by others"]}
    ],
    apply:{intro:"Protect, validate and export a small dataset: your households sheet from Lesson 1, or your own. Validation rules are easiest to create on a computer or tablet; the phone apps can use them once they exist.", tasks:[
      {t:"Protect your raw data", how:{
@@ -854,7 +859,7 @@ ICA.addUnit({
    {id:"t3u2-cp09", lesson:"t3u2-l4", level:3, q:"Ines works in a day-first locale. Her dates display as `04/03/2026` (4 March). She exports to CSV with values as shown, and a colleague opens it in a month-first app. What happens, and how could she prevent it?", options:[
      {t:"Nothing goes wrong: a CSV stores the real date, whatever the cell shows", why:"Spreadsheet exports usually write what is displayed, so the CSV holds the text `04/03/2026`, which the next app must guess about."},
      {t:"The colleague’s app shows an error for every date; she should send an .xlsx instead", why:"Days 1–12 don’t cause errors: they become real but wrong dates. Fixing the date format before export solves it for CSV too."},
-     {t:"All dates become text; she should split them into year, month and day after export", why:"Only days 13–31 stay as text; days 1–12 turn into wrong real dates. And the fix belongs before export."},
+     {t:"All dates become text; she should split them into year, month and day after export", why:"Only days 13–31 stay as text; days 1–12 turn into real dates, which are wrong unless the day and month happen to match. And the fix belongs before export."},
      {t:"Days 1–12 become wrong dates (3 April); she should export dates as yyyy-mm-dd", ok:true, why:"The CSV holds the displayed text, and the other app reads it month first. ISO dates in the file can’t be read the wrong way round."}]},
    {id:"t3u2-cp10", lesson:"t3u2-l5", level:3, q:"Yusuf’s `village` column has a dropdown rule allowing only `Kibo` or `Mto`. After a volunteer pastes 200 rows from another file, the filter list shows `kibo ` and `MTO` too. Why, and what should Yusuf do?", options:[
      {t:"The dropdown rule was deleted by the paste; he should add it again and trust it", why:"Re-adding the rule doesn’t check values already in the cells. He still needs to find and fix what slipped in."},

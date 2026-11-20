@@ -31,9 +31,12 @@ ICA.lessonBank = function(lessonId){ return ICA.bank.filter(function(q){ return 
 ICA.unitLessons = function(uid){ var u = ICA.unitById[uid]; return u ? u.lessons : []; };
 
 /* ---------- loading data files listed in the catalog ---------- */
+/* capstones (Pass 25): one project per track, data/capstones.js; progress lives in lessonState(c.id) like a lesson's Apply */
+ICA.capstones = {};
+ICA.addCapstone = function(c){ ICA.capstones[c.track] = c; };
 ICA.loadAll = function(base, done, opt){
   ICA.base = base; opt = opt || {};
-  var files = ["data/tracks.js","data/books.js","data/audio-index.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
+  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
   var total = files.length, n = 0, failed = [], finished = false, ui = null;
   /* a loading screen appears only if loading takes more than a moment */
   var showT = setTimeout(function(){ if (!finished) ui = ICA.loadingScreen(opt.pixel); upd(); }, 250);
@@ -545,6 +548,35 @@ ICA.exercise = function(el, ex, opt){
 
 var RENDER = {};
 
+/* --- explain it yourself (Pass 26): write a short answer, then compare it with a model answer and tick the key points
+   you covered. Self-assessed: it counts as done once compared. Text is kept on this device (store.explain[id]). --- */
+RENDER.explain = function(el, ex, api){
+  var st = ICA.load(); st.explain = st.explain || {}; var saved = st.explain[ex.id] || {};
+  el.innerHTML = head(ex)+'<label class="lb" for="xp_'+ex.id+'">Your answer'+(ex.size ? ' <span class="small muted">('+ICA.esc(ex.size)+')</span>' : ' <span class="small muted">(2–4 sentences)</span>')+'</label>'+
+    '<textarea id="xp_'+ex.id+'" class="xp" rows="4" placeholder="'+ICA.esc(ex.prompt || "Explain it in your own words…")+'">'+ICA.esc(saved.text || "")+'</textarea>'+
+    '<div class="row"><button type="button" class="btn primary" data-cmp>Compare with a model answer</button>'+(ex.hint ? '<button type="button" class="btn small" data-hint>Hint</button>' : '')+'</div><div class="fbw"></div>';
+  var ta = el.querySelector("textarea"), fbw = el.querySelector(".fbw");
+  ta.addEventListener("input", function(){ var s2 = ICA.load(); s2.explain = s2.explain || {}; (s2.explain[ex.id] = s2.explain[ex.id] || {}).text = ta.value; ICA.save(true); });
+  ta.addEventListener("change", function(){ ICA.save(); });
+  if (ex.hint) el.querySelector("[data-hint]").addEventListener("click", function(){ fbw.innerHTML = fbBox("part", "Hint", "<div>"+ICA.md(ex.hint)+"</div>"); });
+  function compare(){
+    var words = (ta.value.match(/\S+/g) || []).length;
+    if (words < 8 && !el.querySelector("[data-skip]")){ fbw.innerHTML = fbBox("part", "Have a go first.", '<div>Writing it yourself is what makes it stick, even if it’s rough. Try a sentence or two.</div><div class="row"><button type="button" class="btn small" data-skip>Show me anyway</button></div>');
+      el.querySelector("[data-skip]").addEventListener("click", function(){ show(); }); return; }
+    show();
+  }
+  function show(){
+    var s3 = ICA.load(), rec = (s3.explain[ex.id] = s3.explain[ex.id] || {}); rec.pts = rec.pts || {};
+    fbw.innerHTML = '<div class="fb part"><b class="h">A model answer</b><div class="small muted">It’s fuller than yours needs to be: look for the key points.</div><div>'+ICA.md(ex.model)+'</div><div style="margin-top:8px"><b>Did yours cover these?</b></div>'+
+      '<div class="xpts">'+ex.points.map(function(p, i){ return '<label class="chk"><input type="checkbox" data-pt="'+i+'"'+(rec.pts[i] ? " checked" : "")+'> '+ICA.md(p)+'</label>'; }).join("")+'</div>'+
+      (ex.why ? '<div class="small" style="margin-top:6px">'+ICA.md(ex.why)+'</div>' : '')+'<div class="small muted">Missed one? Add it to your answer above: it’s saved on this device.</div></div>';
+    ICA.$$("[data-pt]", fbw).forEach(function(c){ c.addEventListener("change", function(){ var s4 = ICA.load(), r = s4.explain[ex.id]; r.pts = r.pts || {}; r.pts[c.getAttribute("data-pt")] = c.checked ? 1 : 0; ICA.save(); }); });
+    rec.seen = Date.now(); ICA.save();
+    api.attempt(true);
+  }
+  el.querySelector("[data-cmp]").addEventListener("click", compare);
+};
+
 /* --- multiple choice (single or several right answers) --- */
 RENDER.mcq = function(el, ex, api){
   var multi = ex.options.filter(function(o){ return o.ok; }).length > 1;
@@ -858,6 +890,12 @@ RENDER.type = function(el, ex, api){
     var v = inp.value.trim();
     if (!v){ fbw.innerHTML = fbBox("part", "Type your answer first.", ""); return; }
     if (/[a-z]/i.test(v)){ fbw.innerHTML = fbBox("part", "Part of that is still in romaji.", "<div>Finish the syllable, or use nn for ん.</div>"); return; }
+    /* kanji typed with a Japanese keyboard (Nov 2026): accept a listed written form (ex.accept), else ask for kana, not counted as a try */
+    if (/[㐀-鿿々]/.test(v)){
+      var norm = function(x){ return String(x).normalize("NFKC").replace(/\s/g, ""); };
+      if ((ex.accept || []).some(function(a){ return norm(a) === norm(v); })){ fbw.innerHTML = fbBox("ok", "Correct.", "<div>In kana: <span lang=\"ja\">"+ICA.esc(answers[0])+"</span></div>"+(ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : "")); api.attempt(true); done(); return; }
+      fbw.innerHTML = fbBox("part", "Please type this one in kana.", "<div>This exercise checks the reading, so write it in hiragana (or katakana), not kanji.</div>"); return;
+    }
     if (answers.some(function(a){ return kanaSlip(v, a) === "same"; })){
       var exact = answers.some(function(a){ return String(a).normalize("NFKC").replace(/\s/g, "") === v.normalize("NFKC").replace(/\s/g, ""); });
       fbw.innerHTML = fbBox("ok", "Correct.", (exact ? "" : "<div>Written as: <span lang=\"ja\">"+ICA.esc(answers[0])+"</span></div>")+(ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : ""));

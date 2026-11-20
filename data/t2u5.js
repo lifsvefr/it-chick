@@ -141,7 +141,8 @@ ICA.addUnit({
       {t:"GitHub Pages, because it’s free and supports custom domains", why:"GitHub’s rules say Pages isn’t for e-commerce or online businesses, and it can’t process payments."},
       {t:"Any static host, adding JavaScript to take card numbers", why:"Never collect card numbers in your own page script. Payments need a secure payment service, and GitHub says Pages sites shouldn’t be used for sensitive transactions such as sending card numbers."},
       {t:"A domain name only; the registrar will host the shop", why:"A domain is a name. It needs hosting and shop software behind it."}
-    ]}
+    ]},
+      {id:"t2u5-l1-x7", type:"explain", q:"Femi thinks his quiz page can’t go on free static hosting because it is “interactive”. Explain what a static site is, why his quiz will work, and what a static site can’t do on its own.", hint:"Where does JavaScript run: on the host’s server or in the visitor’s browser?", model:"A static site is one where the host simply sends the same ready-made files (HTML, CSS, JavaScript, images) to every visitor; a dynamic site runs a program on the server that builds each page, often from a database. Femi’s quiz is fine, because JavaScript runs in the visitor’s browser, not on the server, so quizzes, toggles and slideshows all work on static hosting. What a static site can’t do by itself is keep what visitors send: saving scores for everyone, user accounts or form messages need a server program or an outside service.", points:["Says a static host sends the same stored files to everyone", "Contrasts it with a dynamic site that runs a program per request", "Says JavaScript runs in the visitor’s browser, so the quiz works", "Says a static site can’t store what visitors send on its own"]}
    ],
    apply:{intro:"Plan your first published site and get the account you’ll use in Lesson 2. Everything here works in a browser on a phone or a computer.", tasks:[
      {t:"Plan your site", how:[
@@ -303,7 +304,8 @@ ICA.addUnit({
       {t:"members.xlsx with names and phone numbers", b:1, why:"A public repository shows every file to anyone, even files the site never links to. Personal data stays off it."},
       {t:"A text file with the club’s email password", b:1, why:"Passwords never go in a repository. Once committed, it stays in the history even if you delete the file later."},
       {t:"Draft notes about a member’s complaint", b:1, why:"Private notes aren’t for a public repository; anyone can read them there."}
-    ]}
+    ]},
+      {id:"t2u5-l2-x8", type:"explain", q:"Lin drags her whole `my-site` folder onto a new GitHub repository and turns on Pages, but her site’s address shows a 404. Explain the likely cause and the fix.", size:"2–3 sentences", hint:"Where does GitHub Pages look for the home page?", model:"GitHub Pages serves the `index.html` at the top level of the publishing source when someone opens the site’s address. Dragging the whole folder put the files one level down, at `my-site/index.html`, so there is no `index.html` at the top and the address finds nothing. The fix is to upload the folder’s contents instead, so `index.html` (exactly that name, in lower case) sits at the top level, then wait for the deploy to finish and check again.", points:["Says Pages looks for `index.html` at the top level", "Says dragging the folder put the files one level down", "Fixes it by placing the folder’s contents at the top level", "Mentions the exact lower-case name `index.html` or waiting for the deploy"]}
    ],
    apply:{intro:"Publish a real site. If you don’t have files ready, create `index.html` directly on GitHub with the example from this lesson (change the words to your own).", tasks:[
      {t:"Create the repository and your home page", how:[
@@ -479,7 +481,8 @@ ICA.addUnit({
       {t:"Buy a certificate and upload it to the repository", why:"GitHub Pages gets and renews a free Let’s Encrypt certificate itself; there’s nothing to upload."},
       {t:"Change every link on the site to `http://`", why:"That creates mixed content later. The fix is to wait for the certificate."},
       {t:"Delete the CNAME file in the repository", why:"That file tells Pages your domain. Deleting it breaks the domain setup."}
-    ]}
+    ]},
+      {id:"t2u5-l3-x8", type:"explain", q:"Explain what a domain takeover is, and how verifying your domain and tidying up old DNS records protect you.", hint:"What if a DNS record still points at GitHub Pages after the site has been deleted?", model:"A takeover happens when a DNS record still points your name at a host after your site there is gone. For example, if `www.example.com` still points at GitHub Pages after the repository is deleted, no site claims the name, so another GitHub user could add it to their own repository and publish anything at your address. Verifying the domain for your account, with a TXT record you keep in place, means only your repositories can publish to it and its immediate subdomains. And when you stop using a host, you remove its DNS records at the same time.", points:["Says a leftover DNS record points at a host where your site no longer exists", "Says someone else could then publish content at your address", "Says verifying (with a TXT record) means only your repositories can use the domain", "Says to remove DNS records when you stop using the host"]}
    ],
    apply:{intro:"You don’t need to buy a domain for this lesson. The first two tasks work with any domain; the third is for when you own one.", tasks:[
      {t:"Look up real DNS records", how:[
@@ -642,7 +645,8 @@ ICA.addUnit({
       {t:"GitHub Pages never applies CSS to 404 pages", why:"It serves your 404.html like any page; the CSS fails only because of the path."},
       {t:"The style sheet must be inside the 404 page", why:"An inline style sheet would work, but the real cause is the relative path. Fixing the path is simpler."},
       {t:"The browser cached an old version", why:"The difference depends on the address’s depth, which points to path resolution, not caching."}
-    ]}
+    ]},
+      {id:"t2u5-l4-x8", type:"explain", q:"A page shows a 4000 × 3000 pixel, 5 MB phone photo at 800 pixels wide. Explain why that slows the page down, and what to do about it.", hint:"Does the browser download only the part it shows?", model:"The browser downloads the whole file, whatever size the page displays it at. Shown 800 pixels wide, the photo uses only about a twenty-fifth of its pixels, so most of those 5 MB is wasted, which hurts most on phones and slow or expensive mobile data. Resize it to about the largest size the page shows it (twice that at most, for sharp screens), compress it at a sensible quality, and choose a suitable format such as JPEG or WebP. Then add `width` and `height` so the layout doesn’t jump, and `loading=\"lazy\"` if it sits further down the page.", points:["Says the browser downloads the full file regardless of display size", "Says to resize to about the displayed size (2× at most)", "Says to compress or choose an efficient format such as WebP", "Mentions width and height, or lazy loading for lower images"]}
    ],
    apply:{intro:"Use your site from Lesson 2. Make each change through the GitHub website (pencil → edit → commit) and check the live site after each deploy.", tasks:[
      {t:"Measure your site", how:[
@@ -818,7 +822,8 @@ ICA.addUnit({
       ["New images may be missing alt text","WAVE","It flags images without alt text and other errors."],
       ["The menu page looked better last month","The file’s History on GitHub","Every committed version is kept; you can restore one."],
       ["The site vanished the day after the domain’s renewal date","The registrar account","An expired registration stops the domain working."]
-    ]}
+    ]},
+      {id:"t2u5-l5-x8", type:"explain", q:"Someone commits a file containing an API key to a public GitHub repository, notices, and deletes the file in the next commit. Explain why the key is still exposed and what they must do.", size:"2–3 sentences", hint:"What does a repository remember?", model:"A public repository shows every file and every past version, and deleting a file only adds a new commit: the old version, key included, stays in the history where anyone can find it. So the key must be treated as stolen. They should revoke or change it at the service straight away, so the leaked key stops working, and keep secrets out of the repository from then on.", points:["Says the repository keeps every past version in its history", "Says deleting the file doesn’t remove the old version", "Says to treat the key as stolen and revoke or change it at the service", "Says never to commit secrets"]}
    ],
    apply:{intro:"Set up the habits that keep your site healthy. All of this works through a browser; the backup step needs somewhere to keep a file.", tasks:[
      {t:"Check your links and make a maintenance calendar", how:[

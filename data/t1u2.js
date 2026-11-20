@@ -160,7 +160,8 @@ ICA.addUnit({
       {t:"They are kept, because CSV is a spreadsheet format", why:"CSV opens in spreadsheet apps but is plain text. Most apps warn you that some features will be lost."},
       {t:"They are converted into a PDF inside the CSV", why:"A CSV is just text with commas. It can’t contain a PDF or anything else."},
       {t:"They are kept only if the file is zipped", why:"Zipping wraps a file without changing what’s in it. Lost formulas stay lost."}
-    ]}
+    ]},
+      {id:"t1u2-l1-x8", type:"explain", q:"A website accepts only JPG images. Daniel renames `photo.heic` to `photo.jpg` and uploads it, but it won’t open. Explain why renaming didn’t work and what he should do instead.", hint:"What is the difference between a file’s extension and its format?", model:"The extension is only a label at the end of the file’s name. The format is how the data inside is actually arranged. Renaming changes the label but not the data, so the file is still HEIC data wearing a JPG label, and software expecting JPEG can’t read it. To convert, an app has to read the data and write it out again in the new format: for example, open the photo in Preview or Photos and use Export or Save As to save a JPEG copy.", points:["Says the extension is just a label in the name", "Says the data inside is still HEIC", "Explains that converting means an app rewrites the data in the new format", "Names a way to convert, such as Export or Save As"]}
    ],
    apply:{intro:"Make your device show you the truth about your files.", tasks:[
     {t:"Turn on file name extensions", how:{
@@ -320,7 +321,8 @@ ICA.addUnit({
       {t:"The photos, ready to restore", why:"That’s true for the laptop’s own drive, but files on most USB sticks bypass the bin on Windows."},
       {t:"A shortcut to the photos", why:"The Recycle Bin holds deleted files, not shortcuts to them."},
       {t:"The photos, but only for 24 hours after they were deleted", why:"There’s no 24-hour rule here; they never went to the bin at all."}
-    ]}
+    ]},
+      {id:"t1u2-l2-x8", type:"explain", q:"A colleague says “the file’s in Documents”, but you can’t find it. Explain why that isn’t enough, and how a path fixes the problem.", size:"2–3 sentences", hint:"How many folders called Documents might you have?", model:"“Documents” is vague, because there may be several folders with that name: one on the computer, one in OneDrive, one on a USB stick. A path is the file’s full address: every folder from the top (a drive letter such as `C:` on Windows, or `/` on a Mac or Chromebook) down to the file itself, in order, with a separator between each. Like a postal address from country to flat number, it points to exactly one place, so a person or a program can find it.", points:["Says several folders can share the same name", "Says a path lists every folder from the top down to the file", "Says a path points to exactly one place (or compares it to a postal address)"]}
    ],
    apply:{intro:"Find your way around your own folders.", tasks:[
     {t:"Find your home folder and copy one file’s path", how:{
@@ -466,7 +468,8 @@ ICA.addUnit({
       {t:"Copy it into both folders", why:"Two separate files: crop or rotate one and the other stays unchanged, and backups store it twice."},
       {t:"Rename it to “Grandma Beach 2025” so search finds it", why:"A good name helps search, but it doesn’t put the photo in two browsing groups. Spaces in the name also break naming practice."},
       {t:"Put the Beach 2025 folder inside the Grandma folder", why:"Then every beach photo, even of other people, is filed under Grandma. Folders can’t express “belongs to both”."}
-    ]}
+    ]},
+      {id:"t1u2-l3-x8", type:"explain", q:"Explain why naming files with dates written as YYYY-MM-DD (for example `2026-04-03_minutes.docx`) works better than dates like `03-04-2026`.", hint:"Think about two things: what the date means in different countries, and what happens when a folder sorts names alphabetically.", model:"A date like `03-04-2026` is ambiguous: it is the 3rd of April in some countries and the 4th of March in others. Writing year, then month, then day (the ISO 8601 standard) means the same thing everywhere. It also sorts properly: because the biggest unit comes first and leading zeros keep every date the same length, sorting the names as plain text puts them in time order. With the day first, sorting mixes up different months and years.", points:["Says day-and-month order means different things in different countries", "Names the year-month-day order (ISO 8601)", "Explains that biggest-unit-first makes alphabetical order match time order", "Mentions leading zeros (keeping the parts the same length)"]}
    ],
    apply:{intro:"Put the naming rules to work on something real.", tasks:[
     {t:"Rename five of your own files using the recipe", how:{
@@ -611,7 +614,8 @@ ICA.addUnit({
       {t:"A virus copied the file; she should delete both", why:"Duplicates with a device name added are the normal sign of a sync conflict, not malware. Deleting both would lose both people’s work."},
       {t:"The cloud is broken; she should stop using sync", why:"This is the expected, safe behaviour when two edits happen apart."},
       {t:"Her version automatically replaced her flatmate’s; she can ignore the extra file", why:"Nothing was merged. Each file holds only one person’s changes, so ignoring the extra one loses work."}
-    ]}
+    ]},
+      {id:"t1u2-l4-x8", type:"explain", q:"Wei deletes a large video from his synced cloud folder on his phone to free up space. The next day it has vanished from his laptop too. Explain why, and what he could have done instead.", hint:"What is sync’s whole job? Does it know the difference between an edit and a deletion?", model:"A sync app keeps a local folder on each device identical to the copy in the cloud. When Wei deleted the video on his phone, the app treated that as a change like any other: it removed the cloud copy, and his laptop then removed its copy too. Deletions travel everywhere, just as edits do. To save space on one device only, he could have made the file online-only (for example, “Free up space”) instead of deleting it.", points:["Says sync keeps every device’s copy identical to the cloud copy", "Says deletions sync just like edits", "Suggests making the file online-only instead of deleting it"]}
    ],
    apply:{intro:"Look at how your own cloud storage behaves.", tasks:[
     {t:"Find your sync status and offline settings", how:{
@@ -764,7 +768,8 @@ ICA.addUnit({
       {t:"Time Machine shows a backup from earlier today", ok:true, why:"A recent date shows backups are running. (Combine it with a restore to be sure.)"},
       {t:"She checked the restored version was the one she expected", ok:true, why:"Restoring the wrong version is a common surprise; checking catches it."},
       {t:"The external drive’s light comes on when plugged in", why:"Power doesn’t mean the backup is complete, recent, or readable."}
-    ]}
+    ]},
+      {id:"t1u2-l5-x8", type:"explain", q:"A friend says: “All my photos sync to the cloud, so I don’t need a backup.” Explain why that is risky, and what they should add.", hint:"Sync makes copies identical. What happens to the cloud copy if the original is deleted or scrambled?", model:"Sync is not a backup. Sync keeps the copies identical, so mistakes travel too: if a photo is deleted on the phone, it is deleted from the cloud, and if ransomware scrambles the files, sync uploads the scrambled versions. A backup is a separate copy that does not change when the original does, so you can go back. Following the 3-2-1 rule, my friend should add an independent copy, such as a backup to an external drive kept unplugged, so there are three copies on two kinds of storage with one off-site.", points:["Says sync makes copies identical, including mistakes", "Gives an example: a deletion or ransomware spreads to the cloud copy", "Says a backup is a separate copy that doesn’t change with the original", "Suggests an independent copy or the 3-2-1 rule"]}
    ],
    apply:{intro:"Build a backup you’ve proved. This is the most valuable hour in the unit.", tasks:[
     {t:"Turn on a backup for your computer", how:{

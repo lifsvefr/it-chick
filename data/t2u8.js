@@ -156,7 +156,8 @@ ICA.addUnit({
       {t:"Install the `Print` module", why:"There’s no such module. The message says Python doesn’t know the name, which here is a capitalisation slip."},
       {t:"Use single quotes: `Print('Hi')`", why:"Single and double quotes behave the same. The problem is the capital P."},
       {t:"Run it with `python` instead of `python3`", why:"The command that starts Python doesn’t change how names are spelled. The same error would appear."}
-    ]}
+    ]},
+      {id:"t2u8-l1-x8", type:"explain", q:"At the `>>>` prompt, typing `2 + 3` shows 5. But a script file containing only the line `2 + 3` shows nothing when you run it. Explain why.", size:"2–3 sentences", hint:"Which of the two shows each line’s result automatically?", model:"The REPL (the `>>>` prompt) is for trying one idea at a time, and it shows the result of every line automatically. A script runs the whole file at once and shows nothing unless you ask with `print()`. Python still works out `2 + 3` in the script, but the result is simply thrown away. Writing `print(2 + 3)` makes the script display 5.", points:["Says the REPL shows each line’s result automatically", "Says a script shows only what you `print()`", "Says the calculation still happens but its result isn’t shown", "Gives the fix: `print(2 + 3)`"]}
    ],
    apply:{intro:"Get Python running, write a first script, and break it on purpose so error messages become familiar. On a phone, do everything in the Python Lab.", tasks:[
      {t:"Get Python running and check the version", how:{
@@ -340,7 +341,8 @@ ICA.addUnit({
       {t:"`print(\"Total: {3 * 2.25:.2f}\")`", why:"Without the `f`, the braces are just characters, so it prints them literally."},
       {t:"`print(\"Total: \" + 3 * 2.25)`", why:"`+` can’t join a string and a float: this is a TypeError. An f-string converts the number for you."},
       {t:"`print(f\"Total: (3 * 2.25)\")`", why:"Values go in curly braces `{ }`, not round brackets. This prints the brackets and the sum as text."}
-    ]}
+    ]},
+      {id:"t2u8-l2-x8", type:"explain", q:"A program runs `price = 4`, then `old_price = price`, then `price = price + 1`. Explain why `old_price` is still 4, using the idea of a variable as a label.", hint:"Does `=` copy a box, or tie a name to a value? Which side does Python work out first?", model:"A variable is a label tied to a value, not a box that holds it, and `=` means “make this name refer to this value”. `price = 4` ties the label `price` to 4. `old_price = price` ties a second label to that same value, 4. In `price = price + 1`, Python first works out the right-hand side, 4 + 1 = 5, then moves the `price` label to 5. Only that label moves; `old_price` is still tied to 4.", points:["Describes a variable as a name (label) tied to a value", "Says `=` makes the name refer to a value", "Says the right-hand side is worked out first", "Says moving one label doesn’t move the other"]}
    ],
    apply:{intro:"Use the REPL (or the Python Lab) as a calculator, then write two small programs that use variables, f-strings and input. Every task works in the Python Lab on a phone.", tasks:[
      {t:"Calculator warm-up", how:["Open the REPL (`python3`, or `py` on Windows) or a Python Lab challenge.","Work these out, wrapping each in `print()` if you’re in the Lab: `17 / 5`, `17 // 5`, `17 % 5`, `2 ** 8`, `10 ** 3`, `0.1 + 0.2`.","Try `round(0.5)`, `round(1.5)`, `round(2.5)` and `round(3.5)`. Can you see the even-number pattern?","Try `type(17 / 5)` and `type(17 // 5)` (in the Lab: `print(type(17 / 5))`)."], write:"Write each result. Which one surprised you most, and why does it happen?"},
@@ -499,7 +501,8 @@ ICA.addUnit({
       ["`word[0:3]`","`'gar'`","From cut 0 up to (not including) cut 3: three characters."],
       ["`word[3:]`","`'den'`","From cut 3 to the end."],
       ["`len(word)`","`6`","Six characters. The last index is 5."]
-    ]}
+    ]},
+      {id:"t2u8-l3-x8", type:"explain", q:"Explain why indentation matters in Python in a way it doesn’t in many other languages. Use an `if` block as your example.", hint:"What marks which lines belong to an `if` in Python?", model:"In many languages, curly braces mark which lines belong together and indentation is just tidiness. In Python, the indentation itself is the grammar: the lines indented under a line ending in a colon form a block, and the block ends when the indentation goes back. In `if temp > 30:` followed by two indented `print` lines and one unindented one, the indented lines run only when the test is True, while the last line runs every time. Moving a line in or out changes what the program does, and inconsistent indentation causes an IndentationError. The standard is four spaces.", points:["Says that in Python indentation decides which lines belong to a block", "Mentions the colon at the end of the `if` line", "Uses an example to show indented lines run only when the test is True", "Mentions IndentationError or the four-space standard"]}
    ],
    apply:{intro:"Write decision-making programs that cope with messy typing. All of these work in the Python Lab on a phone.", tasks:[
      {t:"A yes-or-no question that forgives messy typing", how:["Ask a question with `input()`, such as “Do you want a receipt?”.","Clean the answer with `.strip().lower()` and keep the result.","Use `if`/`elif`/`else` to print one message for `yes`, another for `no`, and a polite “Please answer yes or no” for anything else.","Test it with `YES`, ` no ` (with spaces), and `maybe`."], write:"Paste your program and the three test runs."},
@@ -659,7 +662,8 @@ ICA.addUnit({
       {v:3, tol:0, why:"After three rounds n is 27, still under 50, so a fourth round runs."},
       {v:5, tol:0, why:"After the fourth round n is 81; the condition is False, so there’s no fifth round."},
       {v:50, tol:0, why:"50 is the limit for n, not the number of rounds."}
-    ]}
+    ]},
+      {id:"t2u8-l4-x8", type:"explain", q:"A shop keeps its prices in Python. Explain why a dictionary suits looking up “the price of tea” better than a list, and how to avoid a KeyError when an item is missing.", hint:"A list finds things by position. What does a dictionary find things by?", model:"A list finds things by position, counting from 0, so to get the price of tea you would need to know or search for tea’s place in the list. A dictionary stores pairs of keys and values, such as `prices = {\"tea\": 2.5, \"rice\": 3}`, so `prices[\"tea\"]` looks the price up directly by name, and each key appears only once. Asking for a key that isn’t there, such as `prices[\"milk\"]`, stops the program with a KeyError. Check first with `\"milk\" in prices`, which checks the keys, or use `prices.get(\"milk\", 0)`, which gives a default instead of an error.", points:["Says a list finds items by position (index)", "Says a dictionary looks values up by key (name)", "Says a missing key causes a KeyError", "Gives a way to avoid it: `in` or `get()` with a default"]}
    ],
    apply:{intro:"Build three small programs with lists, dictionaries and loops. They all work in the Python Lab.", tasks:[
      {t:"Your own grocery total", how:["Copy `grocery.py` from this lesson.","Change the prices dictionary to five things you actually buy, in your own currency.","Put six items in the basket, including one item twice and one item with no price.","Run it, then add a line that also prints how many items had a price."], write:"Paste your program and its output."},
@@ -826,7 +830,8 @@ ICA.addUnit({
       {t:"`randint` was removed from recent versions of Python", why:"It’s still there. The error comes from importing the wrong file."},
       {t:"He needs `from random import *`", why:"Any form of import would find his own file first. The fix is the file name."},
       {t:"`randint` only works with `range()`", why:"`randint` takes two numbers and needs no `range()`."}
-    ]}
+    ]},
+      {id:"t2u8-l5-x8", type:"explain", q:"A program stops with a traceback whose last line is `KeyError: 'milk'`. Explain how to read the traceback to find the problem, and why the cause may not be on the line Python points to.", hint:"“Most recent call last”: which end do you start from?", model:"A traceback lists the steps Python was taking, “most recent call last”, so I read it from the bottom up. The last line names the error and the message: a dictionary was asked for the key `'milk'`, which isn’t there. Just above is the line where it happened; further up are the lines that called it, back to the main program. The line Python names is only where it noticed the problem; the cause, such as “milk” arriving in a shopping list passed in from higher up, may be in one of those earlier steps. I fix the first error, then run again.", points:["Says to read the traceback from the bottom up", "Says the last line gives the error type and message", "Says the line above shows where it happened, and the lines higher up show who called it", "Says the cause can be higher up than where Python noticed it"]}
    ],
    apply:{intro:"Write and test your own functions, then practise reading tracebacks on purpose. Everything works in the Python Lab, and on a computer.", tasks:[
      {t:"Three small functions", how:["Write `def area(width, height):` that **returns** the area of a rectangle.","Write `def greeting(name, time=\"morning\"):` that returns a string such as `Good morning, Kenji!`.","Write `def average(numbers):` that returns the average, and returns 0 for an empty list.","Call each one at least twice and print the results. Try one call with a named argument."], write:"Paste your functions and their outputs."},

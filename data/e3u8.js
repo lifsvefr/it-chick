@@ -602,7 +602,7 @@ ICA.addUnit({
       "When the entry appears, read it like this:",
       {ol:["**Check the match.** Are the kanji and the reading the same as in your text? Some spellings have several readings (Lesson 4).","**Read all the meanings**, and choose the one that fits your sentence, not just the first one.","**Look at the tags.** Common word or rare? Noun, verb or adjective? Does it take する? Is it usually written in kana?","**Read an example sentence.** It shows the particles the word takes: [電]{でん}[車]{しゃ}に[乗]{の}る, not 電車を[乗]{の}る."]},
       {tip:"Some dictionaries, such as Jisho.org, show a JLPT level on many words. Like every N4 list, these levels are unofficial estimates, so treat them as a guide."},
-      {warn:"Camera translation and machine translation give you a quick idea of a sign, but they can get readings, names and polite meanings wrong. For learning, use them as a first look, then check the words that matter in a dictionary ({{japanese-reading-tools}})."}
+      {warn:"Camera translation and machine translation give you a quick idea of a sign, but they can get readings, names and polite meanings wrong. For learning, use them as a first look, then check the words that matter in a dictionary ({{japanese-reading-tools}}). Unit 12, Lesson 5 shows why they go wrong and how to check them ({{machine-translation-japanese}})."}
     ]},
     {h:"A strategy for N4 texts: two passes", body:[
       "Unit 4 gave you five steps for short texts ({{reading-n5-texts}}). N4 texts are longer, so add one idea: read in two passes. First [[reading-for-gist|read for the gist]], the main idea; then go back for the details the question asks about.",

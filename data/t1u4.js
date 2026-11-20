@@ -154,7 +154,8 @@ ICA.addUnit({
       {t:"In satellites orbiting the Earth", why:"Satellites can carry some internet traffic, but cloud data is stored in data centres on the ground."},
       {t:"Spread in small pieces across other users’ phones", why:"Mainstream cloud storage doesn’t use other people’s devices. It uses the provider’s own servers."},
       {t:"Only on her own phone, with the word “cloud” as a label", why:"If they were only on her phone, she couldn’t open them from another device. Cloud copies live on the provider’s servers (her phone may also keep copies)."}
-    ]}
+    ]},
+      {id:"t1u4-l1-x8", type:"explain", q:"Explain to a friend how a photo she sends gets across the internet. Use the words “packet” and “router”.", hint:"Think of the 600-page manuscript split into numbered envelopes, then make the picture accurate.", model:"The photo isn’t sent as one piece. It is split into many small packets. Each has a header, like the writing on an envelope, with the sender’s and receiver’s IP addresses and a number saying where that piece fits, plus a payload: the piece of the photo itself. Routers pass each packet along: a router reads the destination address and sends it one step closer, without knowing the whole route. Packets may take different routes and arrive out of order, so the receiver puts them back together by number, and any missing ones are resent.", points:["Says the photo is split into many small packets", "Says each packet carries addresses and a number in its header", "Says routers pass packets on step by step towards the destination", "Says the packets are put back in order at the other end (missing ones resent)"]}
    ],
    apply:{intro:"See the physical internet for yourself. None of this changes any settings.", tasks:[
      {t:"Trace the route to a website", how:{
@@ -316,7 +317,8 @@ ICA.addUnit({
       ["`.jp`","Country code for Japan","Two-letter TLDs belong to countries or territories."],
       ["`.gov`","Restricted to government bodies","Only eligible organisations can register under it (in practice, mainly US government)."],
       ["`.tv`","Country code (Tuvalu) used worldwide by many businesses","Some country codes are popular for their look, so they don’t prove where a site is based."]
-    ]}
+    ]},
+      {id:"t1u4-l2-x8", type:"explain", q:"Every website shows “Server not found”, yet the Wi-Fi has full bars and a video call that was already running carries on. Explain why DNS is a likely cause.", hint:"What has to happen before your browser can contact a site by name? Why doesn’t the running call need it?", model:"Almost everything online starts with a DNS lookup, which turns a name like `example.org` into an IP address. Your device asks a DNS resolver, usually run by your ISP, to do this. If the resolver stops answering, the browser can’t find the address of any new site, so it says “Server not found”, even though the connection itself is fine. That is why the Wi-Fi bars look normal and the video call keeps going: it already knows the address it needs. Trying mobile data, which uses a different resolver, is a quick test.", points:["Says DNS turns names into IP addresses", "Says a resolver does the lookup for your device", "Explains that the connection works but new names can’t be looked up", "Explains why the running call is unaffected (it already has the address)"]}
    ],
    apply:{intro:"Find your own addresses and watch DNS work. These steps only show information; they don’t change anything.", tasks:[
      {t:"Find your private address and your router’s address", how:{
@@ -487,7 +489,8 @@ ICA.addUnit({
       "\nFirmware: ", {t:"last updated 4 years ago, automatic updates off", flag:true, why:"Old firmware has known flaws. Turn on automatic updates, or replace the router if it no longer gets them."},
       "\nRemote management: ", {t:"On", flag:true, why:"This exposes the settings page to the internet. Turn it off unless there’s a specific need."},
       "\nGuest network: ", {t:"On, separate password", flag:false, why:"Good practice: visitors and smart gadgets stay off the main network."}
-    ], why:"Five quick changes fix this router: name, Wi-Fi passphrase, admin password, updates and remote management."}
+    ], why:"Five quick changes fix this router: name, Wi-Fi passphrase, admin password, updates and remote management."},
+      {id:"t1u4-l3-x8", type:"explain", q:"Explain why Tariq’s laptop gets faster Wi-Fi on the 5 GHz band next to the router, but a steadier connection on 2.4 GHz two rooms away.", size:"2–3 sentences", hint:"Lower frequency, higher frequency: which travels further, and which carries more data?", model:"Wi-Fi bands trade speed against range. The 5 GHz band carries more data and has less interference, so it is faster close to the router, but walls and floors weaken it more and its range is shorter. The 2.4 GHz band is slower and more crowded, but its lower frequency reaches further and passes through walls better, so two rooms away it gives a steadier link.", points:["Says 5 GHz is faster but has shorter range", "Says walls weaken 5 GHz more", "Says 2.4 GHz reaches further and passes through walls better", "Links lower frequency to range and higher frequency to speed"]}
    ],
    apply:{intro:"Look at your own connection and router. If you rent the router from your ISP or live with others, check with whoever manages it before changing settings.", tasks:[
      {t:"See which band, Wi-Fi generation and security you’re using", how:{
@@ -655,7 +658,8 @@ ICA.addUnit({
       {t:"Nobody: private windows make browsing invisible", why:"A common misconception. Private mode affects only what’s stored on that device."},
       {t:"Only the next person who uses the computer", why:"The opposite: the next user is the one person private mode protects her from (as long as she closed the window)."},
       {t:"Only her email provider, because she signed in", why:"Her email provider knows, but so do other sites she visited and the network she used."}
-    ]}
+    ]},
+      {id:"t1u4-l4-x8", type:"explain", q:"Explain why clearing your browser’s cookies signs you out of websites.", size:"2–3 sentences", hint:"Does HTTP remember you between requests? Think of a cloakroom ticket.", model:"HTTP has no memory: each request reaches the server on its own, as if from a stranger. To recognise you, a site asks your browser to store a cookie, a small piece of text like a cloakroom ticket, and your browser sends it back with every later request to that site, so the server knows it is you and that you are signed in. If you delete the cookies, the browser has no ticket to show, so the site treats you as a stranger: you are signed out and your preferences are reset.", points:["Says HTTP has no memory between requests", "Says a cookie is small text the site stores in your browser", "Says the browser sends it back with each request so the site recognises you", "Says deleting it means the site no longer knows you"]}
    ],
    apply:{intro:"Get to know your browser’s cookie, cache and extension settings. You won’t need to delete anything important.", tasks:[
      {t:"Look at one site’s cookies and data", how:{
@@ -856,7 +860,8 @@ ICA.addUnit({
       {t:"Streaming a film", why:"Streaming is almost entirely download."},
       {t:"Reading the news", why:"Pages are mostly downloaded; your requests are tiny."},
       {t:"Downloading a game update", why:"That’s download, by definition."}
-    ]}
+    ]},
+      {id:"t1u4-l5-x9", type:"explain", q:"Hana upgraded from a 100 Mbps plan to a 500 Mbps plan, but her online game still feels laggy. Explain why, and what is more likely to help.", hint:"A wider road versus a shorter trip.", model:"There are two kinds of “fast”. Bandwidth is how much data a connection carries per second, like the width of a road, and it is what plans advertise. Latency is the delay for a small piece of data to get there and back, like the length of the trip, measured in milliseconds. A game sends small amounts of data and needs quick replies, so it depends on latency and steady timing (jitter), not bandwidth. A bigger plan widened the road but didn’t shorten the trip. A cable instead of Wi-Fi, or pausing busy uploads, is more likely to help.", points:["Explains bandwidth as how much data per second", "Explains latency as the delay of a round trip", "Says games depend on latency (or jitter), not bandwidth", "Suggests a fix that targets latency, such as using a cable"]}
    ],
    apply:{intro:"Measure your connection fairly, turn on data saving where it helps, and prepare one thing for offline use.", tasks:[
      {t:"Run a fair speed test", how:["Pause big downloads, backups and streaming on other devices.","Open a speed test site or your ISP’s app. If you can, run it on a computer connected **by cable** to the router.","Run it again on Wi-Fi next to the router, and then in the room where things feel slow.","Write down download, upload and ping (latency) each time, and compare with the “up to” speeds in your plan.","If the cabled result is fine but the far room is slow, improve Wi-Fi (Lesson 3). If even the cabled result is poor, contact your ISP with your notes."]},

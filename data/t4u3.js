@@ -7,6 +7,7 @@ ICA.addUnit({
     "Read a paper in passes, read its figures and tables, and keep notes you can trust months later",
     "Explain samples, effect sizes and confidence intervals correctly, including what sample size does",
     "Say what a p-value is and is not, and why statistical significance is not the same as importance",
+    "Read descriptive tables, cross-tabs and regression tables, including reference categories, adjusted results and odds ratios",
     "Appraise a study critically and use AI reading tools as a starting point that you check against the paper"
   ],
   read:[
@@ -27,7 +28,7 @@ ICA.addUnit({
    learn:[
     {h:"What a research paper is", body:[
       {lead:"A research paper is a formal report of a piece of research, written for other people who know the field, so they can understand it, check it and build on it."},
-      "Think of a paper as a researcher’s case in a long public conversation. It says: here is the question, here is exactly what we did, here is what we found, and here is what we think it means. Most journals send papers to other experts before publishing them, a process called [[peer-review|peer review]] (see {{peer-review}}). That check helps, but it doesn’t guarantee a paper is right; Lesson 5 shows you how to judge it yourself.",
+      "Think of a paper as a researcher’s case in a long public conversation. It says: here is the question, here is exactly what we did, here is what we found, and here is what we think it means. Most journals send papers to other experts before publishing them, a process called [[peer-review|peer review]] (see {{peer-review}}). That check helps, but it doesn’t guarantee a paper is right; Lesson 6 shows you how to judge it yourself.",
       "Not every paper reports a new study. Knowing the type tells you what you can take from it.",
       {table:[["Type","What it gives you"],["Original research (empirical) article","A new study: data someone collected or analysed, with methods and results"],["Review article","A summary of many studies on one question; a good place to start a topic"],["Theoretical or conceptual paper","A new idea, model or argument, often with no new data"],["Methods paper","A new or improved way to measure or analyse something"],["Case report or case study","A detailed account of one person, organisation, event or place"],["Commentary, editorial or letter","An expert opinion or a reply to another paper; useful, but not evidence on its own"]]},
       "You’ll also meet **conference papers** (in computing and engineering these can be as important as journal articles) and **[[preprint|preprints]]**, which are shared publicly before peer review. Preprints can be excellent and fast, but nobody outside the team has checked them yet, so read them with extra care."
@@ -59,8 +60,8 @@ ICA.addUnit({
     ]},
     {h:"Inside each section", body:[
       "**The Introduction** reviews earlier research and argues that something is missing. Its last paragraph usually states the aim, research question or hypothesis. If you remember one sentence from an introduction, make it that one.",
-      "**The [[methods-section|Methods]]** section is the recipe. It should let another researcher repeat the study. Look for who was studied (the [[sample]]) and how they were chosen; the design (for example a survey, an [[experiment]], interviews or an analysis of existing records); what was measured and with which instruments; and how the data were analysed. Lessons 3 and 5 show what to look for here.",
-      "**The [[results-section|Results]]** section reports what was found, ideally without interpretation. Figures and tables carry much of the weight; the text points to them. Lesson 2 shows how to read them.",
+      "**The [[methods-section|Methods]]** section is the recipe. It should let another researcher repeat the study. Look for who was studied (the [[sample]]) and how they were chosen; the design (for example a survey, an [[experiment]], interviews or an analysis of existing records); what was measured and with which instruments; and how the data were analysed. Lessons 3 and 6 show what to look for here.",
+      "**The [[results-section|Results]]** section reports what was found, ideally without interpretation. Figures and tables carry much of the weight; the text points to them. Lessons 2 and 5 show how to read them.",
       "**The [[discussion-section|Discussion]]** interprets. It usually opens by restating the main finding, compares it with other studies, admits the [[study-limitations|limitations]] and ends with implications and ideas for future research. This is where authors are most tempted to stretch, so compare its claims with the Results."
     ]},
     {h:"Other shapes: humanities, theory and more", body:[
@@ -133,7 +134,8 @@ ICA.addUnit({
       {t:"A structured abstract has labelled parts such as Background, Methods, Results and Conclusions", ok:true, why:"That’s what ‘structured’ means. Many health journals require them."},
       {t:"If you’ve read the abstract, you can safely cite the paper’s findings", why:"An abstract leaves out the detail you need to judge the evidence (sample, measures, uncertainty). Read at least the Methods and Results before relying on a finding."},
       {t:"Every scholarly article has an abstract", why:"Many humanities articles, book chapters and older papers have none."}
-    ]}
+    ]},
+    {id:"t4u3-l1-x7", type:"explain", q:"Why is the abstract the best place to decide whether to read a paper, but the worst place to stop?", size:"2–4 sentences", hint:"Who writes the abstract, and what does it leave out?", model:"The abstract is a short summary of the question, method, findings and conclusion, so in a minute it tells you whether the paper is relevant. But it’s the authors’ own summary, written to persuade busy readers, so it can sound more certain or positive than the full results support. It also leaves out the detail you need to judge the evidence, such as who was studied and how. The Methods and Results tell you whether to believe the claim.", points:["Says the abstract is quick and good for judging relevance", "Notes that the authors wrote it and it can overstate the results", "Says it leaves out detail needed to judge the evidence", "Points to the Methods and Results for checking"]}
    ],
    apply:{intro:"Find a real paper and take it apart. Everything here is free: you don’t need a university login (with one, you can open many more papers through your library).", tasks:[
      {t:"Find an open access research article on a topic you care about and label its parts.", how:["Search a free source of open access papers, such as the Directory of Open Access Journals (doaj.org), PubMed Central (for health and life sciences) or a journal you know is open access.","Pick an article that reports a new study (look for Methods and Results headings).","For each IMRaD section, write one sentence saying what it tells you. Copy the aim (end of the Introduction) word for word, with its page or paragraph."], write:"Title and DOI, then one sentence each for Introduction (with the exact aim), Methods, Results and Discussion…"},
@@ -188,7 +190,7 @@ ICA.addUnit({
         "**Check the axes and units.** Is the vertical axis cut off so it doesn’t start at zero (a [[truncated-axis|truncated axis]]), which can make small differences look large? Is it a logarithmic scale, where equal steps mean multiplying, not adding?",
         "**Find the number of people or cases (n).** A striking pattern from 12 people is less certain than one from 12,000.",
         "**Find out what the error bars show.** They can show the spread of individual values ([[standard-deviation|standard deviation]]), the uncertainty of an average (standard error) or a confidence interval. These are different sizes and mean different things, and only the caption tells you which.",
-        "**In tables, read the footnotes.** They define abbreviations and what asterisks mean (often a p-value threshold, explained in Lesson 4)."
+        "**In tables, read the footnotes.** They define abbreviations and what asterisks mean (often a p-value threshold, explained in Lesson 4). Lesson 5 works through whole results tables ({{results-tables}})."
       ]},
       {warn:"Two bars with error bars that overlap do not automatically mean ‘no difference’, and bars that don’t overlap don’t automatically mean a real difference. It depends on what the bars show and how the comparison was tested. Look for the comparison itself in the text or table."}
     ]},
@@ -198,7 +200,7 @@ ICA.addUnit({
         "**Highlight sparingly:** the aim, the key numbers, the main claim, the limitations. If everything is yellow, nothing stands out.",
         "**Write in the margin in your own words:** “small sample, all volunteers”, “compare with Table 2”, “is this causal?”.",
         "**Use a few consistent symbols,** such as `?` for unclear, `!` for important, `✗` for doubtful, `→` for a link to another paper.",
-        "**Note questions as well as answers.** Your doubts are the start of critical reading (Lesson 5)."
+        "**Note questions as well as answers.** Your doubts are the start of critical reading (Lesson 6)."
       ]},
       "You can annotate on paper, in many PDF readers and in reference managers. In Zotero (a free reference manager; Unit 4 shows how to use it), annotations made in the built-in PDF reader are saved in your Zotero library rather than written into the PDF file, and **Add Note from Annotations** gathers your highlights and comments into one note."
     ]},
@@ -220,7 +222,7 @@ ICA.addUnit({
       {t:"Give each a quick first pass, then read the most relevant few in depth", ok:true, why:"A first pass covers the title, abstract, headings and conclusion. A first pass is designed for exactly this: deciding which papers deserve more time."},
       {t:"Read all 40 in full, in the order he found them", why:"That spends the same effort on irrelevant papers as on key ones, and he’ll run out of time before reaching the best."},
       {t:"Read only the abstracts, then cite the ones that agree with his own view", why:"Abstracts alone can’t show whether a finding is trustworthy, and choosing only agreeing papers is [[confirmation-bias|confirmation bias]]."},
-      {t:"Ask an AI tool to summarise all 40 and cite the summaries", why:"Summaries can help you sort papers, but they can be wrong, and you can only cite what you’ve checked in the paper itself (Lesson 5)."}
+      {t:"Ask an AI tool to summarise all 40 and cite the summaries", why:"Summaries can help you sort papers, but they can be wrong, and you can only cite what you’ve checked in the paper itself (Lesson 6)."}
     ]},
     {id:"t4u3-l2-x2", type:"match", q:"Keshav’s ‘five Cs’ are questions to answer after a first pass. Match each C to its question.", pairs:[
       ["Category","What kind of paper is this?","For example, a measurement study, a new system or a review."],
@@ -263,7 +265,8 @@ ICA.addUnit({
       {t:"“Late-night use was associated with shorter sleep” (p. 7)", flag:false, why:"An exact quote with a page number: future-proof."},
       " · ",
       {t:"ME: survey only, so association, not proof of cause.", flag:false, why:"Clearly labelled as the student’s own thinking, and a good critical point."}
-    ]}
+    ]},
+    {id:"t4u3-l2-x7", type:"explain", q:"Why should your literature notes keep quotations, paraphrase and your own thinking visibly apart? Give an example of what can go wrong if they’re mixed.", size:"3–4 sentences", hint:"Think about reading your notes again six months later, while writing an essay.", model:"Months later you won’t remember which words were the authors’ and which were yours. If a quotation isn’t in quotation marks, you might copy it into your essay as your own writing, which is plagiarism even if accidental. If your own doubt (“the drop could be seasonal”) isn’t labelled, you might cite the authors for an idea they never had. Keeping quotes marked, paraphrase with page numbers and your own ideas labelled “ME:” makes notes you can trust.", points:["Says you won’t remember the source of words later", "Gives the risk of copying unmarked quotes as your own", "Gives the risk of crediting authors with your own ideas", "Describes a way to keep them apart (quotation marks, pages, a label)"]}
    ],
    apply:{intro:"Practise the passes and the notes on a real paper. Use the article you found in Lesson 1, or a new open access one.", tasks:[
      {t:"Do a timed first pass and answer the five Cs.", how:["Set a timer for 10 minutes.","Read only the title, abstract, introduction, headings, conclusion, and glance at the references and figures.","When the timer ends, answer the five Cs in a line each, then decide whether the paper deserves a second pass."], write:"Paper, then Category, Context, Correctness, Contributions, Clarity, and your decision (read on or stop, and why)…"},
@@ -295,7 +298,7 @@ ICA.addUnit({
         "**Descriptive** studies say what is there: how many, how often, what people say. They can’t explain why.",
         "**Observational** studies compare groups that already differ (people who exercise and people who don’t). They can show a [[correlation]], but other differences between the groups may explain it. Such a hidden factor is called a [[confounder]].",
         "**Experiments**, especially randomised ones, assign people to conditions by chance, so the groups differ only by chance apart from the treatment. That is the strongest basis for a claim about [[causation|cause]] (see {{correlation-causation}}).",
-        "**Qualitative** studies (interviews, observation) explore experiences and meanings in depth. They aren’t trying to estimate numbers for a population, so judge them by different standards (Lesson 5)."
+        "**Qualitative** studies (interviews, observation) explore experiences and meanings in depth. They aren’t trying to estimate numbers for a population, so judge them by different standards (Lesson 6)."
       ]},
       {ex:"An invented observational study finds that people who drink more tea have fewer heart problems. Before concluding tea protects the heart, ask: do tea drinkers also differ in smoking, income or diet? Each of those could be a confounder. The authors may adjust for some of them statistically, but they can only adjust for what they measured.", label:"Worked example (invented)"}
     ]},
@@ -365,7 +368,8 @@ ICA.addUnit({
       ["6 points (95% CI −5 to 17), 20 people","Imprecise: could be benefit, nothing or harm","The interval spans zero and is very wide."],
       ["4 points (95% CI 1 to 7), 240 people","Moderate and reasonably precise","The whole interval is above zero and not too wide."],
       ["Risk ratio 1.00 (95% CI 0.97 to 1.03), 50,000 people","Precisely estimated as about no difference","A ratio of 1 means no difference, and the narrow interval rules out large effects either way."]
-    ]}
+    ]},
+    {id:"t4u3-l3-x7", type:"explain", q:"Two invented studies of a reading app report: B (40,000 pupils) 0.5 points, 95% CI 0.2 to 0.8; C (20 pupils) 6 points, 95% CI −5 to 17, on a 100-point test. Explain what each result tells you, and how sample size explains the difference.", size:"3–4 sentences", hint:"Read each one as a size with a range.", model:"Study B is very precise: the effect is almost certainly above zero, but half a point on a 100-point test is too small to matter. Study C’s best estimate is bigger, but its interval runs from slight harm to a large benefit, so it can’t tell us anything either way. The difference comes from sample size: bigger samples give narrower intervals. Huge studies can detect trivial effects, while tiny ones are too imprecise to answer the question.", points:["Says B is precise but the effect is too small to matter", "Says C’s wide interval crosses zero, so it is inconclusive", "Links larger samples to narrower intervals", "Separates the size of an effect from how sure we are about it"]}
    ],
    apply:{intro:"Read the numbers in a real paper. Choose a quantitative open access article (a trial, survey or observational study) in any field.", tasks:[
      {t:"Describe the sample and how far it can travel.", how:["In the Methods, find how participants were chosen, how many took part, and who was excluded.","Find how many dropped out (often in a flow diagram or the first results table).","Write one sentence on whom the findings most clearly apply to, and one on whom they may not."], write:"How chosen, n, exclusions, dropouts, who the findings apply to and who they may not…"},
@@ -478,7 +482,8 @@ ICA.addUnit({
       {t:"Read the p-value as a measure of fit with the null model", why:"Then the p-value, as one clue among several."},
       {t:"Check whether the outcome was pre-specified and how many tests were run", why:"Then context that changes how much the p-value can be trusted."},
       {t:"Compare with other studies before drawing a conclusion", why:"Finally, place it among other evidence."}
-    ]}
+    ]},
+    {id:"t4u3-l4-x7", type:"explain", q:"A news report says: “The new exercise programme had no effect on blood pressure (p = 0.3, not statistically significant).” Explain why that conclusion doesn’t follow.", size:"3–4 sentences", hint:"What could a non-significant result come from, and where should you look instead?", model:"A p-value above 0.05 means the data aren’t surprising if there were no effect; it doesn’t show that there is no effect. A small or noisy study can easily miss a real effect. To judge, look at the effect size and its confidence interval: if the interval includes zero but also includes worthwhile drops in blood pressure, the result is inconclusive. “Not significant” means “not shown”, not “shown not to exist”, unless the interval is narrow around zero.", points:["Says a non-significant p doesn’t prove there is no effect", "Mentions that a small or noisy study can miss a real effect", "Says to check the effect size and confidence interval", "Puts it as “not shown” rather than “shown not to exist”"]}
    ],
    apply:{intro:"Practise on real reporting. Use the paper from Lesson 3 or another quantitative open access article.", tasks:[
      {t:"Rewrite a results sentence the careful way.", how:["Find a sentence in the Results or Abstract that reports a p-value.","Rewrite it in plain words with three parts: the size of the effect (with units), its confidence interval, and the exact p-value.","If the paper gives only a p-value or stars, note what’s missing."], write:"The original sentence, your rewrite, and anything missing…"},
@@ -487,7 +492,174 @@ ICA.addUnit({
    ], proof:"A careful rewrite of one real results sentence, one example of a p-value misreading from public reporting (or a note that you found none), and a count of how many tests a real paper ran."},
    read:[{book:"bhatt", where:"Chapter 15, “Quantitative Analysis: Inferential Statistics”, section “Basic Concepts”", note:"Read it for the logic of hypothesis testing. A few sentences there use older shorthand, such as describing p < 0.05 as a 5% chance of being wrong to reject the null hypothesis; the ASA statement and this lesson explain why statisticians now word this more carefully."}]
   },
-  /* ===================== LESSON 5 ===================== */
+  /* ===================== LESSON 5 (t4u3-l6, placed before t4u3-l5) ===================== */
+  {id:"t4u3-l6", title:"Reading results tables", minutes:60,
+   hook:{q:"In an invented study of adults aged 65 and over, dog owners walked 18 minutes a day more than non-owners. After the researchers took age, sex and health into account, the gap shrank to 12 minutes. What is the most likely reason?", options:["The researchers made a calculation error","Dog owners were younger and healthier, and that explained part of the gap","Adding variables always makes every number smaller","The dogs became less energetic during the study"], answer:1, reveal:"**Dog owners were younger and healthier.** Younger, healthier people walk more anyway, so part of the raw 18-minute gap went with age and health, not dogs. Comparing like with like left 12 minutes. Results tables show this as an unadjusted and an adjusted column side by side. This lesson shows how to read them, along with descriptive tables, cross-tabs, reference categories, stars and ratios."},
+   goals:[
+     "Read a table’s title, notes, units and N before its numbers",
+     "Read a descriptive table and a cross-tab, and say which way the percentages run",
+     "Interpret a regression coefficient with its standard error, confidence interval and stars, and the table’s N and R²",
+     "Explain reference categories, controls, adjusted and unadjusted results, and odds ratios",
+     "Avoid the common over-readings, and work through a table in a real paper"
+   ],
+   learn:[
+    {h:"Read the frame before the numbers", body:[
+      {lead:"A results table is a dense summary of a study. Read it like a map: the legend first."},
+      "Lesson 2 gave the basics for figures and tables. Results tables reward a fixed routine, because the same few kinds turn up again and again: a descriptive table of who was studied, cross-tabs, and tables of statistical models such as regression. Before any number, find:",
+      {list:[
+        "**The title:** what is shown, and in whom.",
+        "**The outcome and its units:** minutes, points, a percentage, yes or no. In model tables the outcome is usually named in the title or at the top of each column.",
+        "**The columns:** groups (owners and non-owners) or models (Model 1, Model 2).",
+        "**N (or n):** how many people or cases each column rests on.",
+        "**The notes:** what brackets contain, what stars mean, what was adjusted for, and abbreviations."
+      ]},
+      {tip:"Notes are where authors put the things that change the meaning: “standard errors in parentheses”, “adjusted for age and sex”, “weighted”. Skipping them is the most common way to misread a table."}
+    ]},
+    {h:"Descriptive tables: who was studied", body:[
+      "Most quantitative papers open their results with a [[descriptive-table|descriptive table]], so often Table 1 that people call it that. It describes the sample, often split by the groups being compared. Here is an invented one, from a study of 850 adults aged 65 and over asking whether owning a dog goes with walking more:",
+      {table:[
+        ["Characteristic","Dog owners (n = 300)","Non-owners (n = 550)"],
+        ["Age, mean (SD)","71.0 (5.1)","75.4 (6.3)"],
+        ["Women, n (%)","168 (56.0)","319 (58.0)"],
+        ["Health good, n (%)","194 (64.7)","280 (50.9)"],
+        ["Health fair, n (%)","75 (25.0)","165 (30.0)"],
+        ["Health poor, n (%)","21 (7.0)","77 (14.0)"],
+        ["Health not reported, n (%)","10 (3.3)","28 (5.1)"],
+        ["Minutes walked a day, median (IQR)","45 (20–75)","25 (10–50)"]
+      ]},
+      {list:[
+        "**Check what each number is.** “Mean (SD)” gives the average and the [[standard-deviation|standard deviation]]; “median (IQR)” gives the middle value and the interquartile range (the middle half of the values), used for skewed data; “n (%)” gives a count and its percentage of the column.",
+        "**Compare the groups.** Here the dog owners are younger and healthier. Those are possible [[confounder|confounders]]: younger, healthier people walk more anyway. A good paper deals with them later.",
+        "**In randomised trials, don’t look for p-values here.** Groups formed by chance differ only by chance, so the CONSORT 2025 reporting guideline says significance tests of baseline differences are not recommended. What matters is whether a chance imbalance is big enough to matter."
+      ]},
+      "Data Literacy Unit 5 covers means, medians, standard deviations and quartiles in depth ({{centre-spread}})."
+    ]},
+    {h:"Cross-tabs: which way do the percentages run?", body:[
+      "A [[crosstab|cross-tab]] shows one categorical variable broken down by another. The same study, counting who walked at least 30 minutes a day:",
+      {table:[
+        ["","Walks 30+ min","Doesn’t","Total"],
+        ["Dog owners","180 (60.0%)","120 (40.0%)","300"],
+        ["Non-owners","242 (44.0%)","308 (56.0%)","550"],
+        ["Total","422 (49.6%)","428 (50.4%)","850"]
+      ]},
+      "These are **row percentages**: each row adds to 100%, so they compare owners with non-owners, 60% against 44%, a gap of 16 [[percentage-point|percentage points]]. **Column percentages** would answer a different question: of the 422 people who walk 30 minutes or more, 180 (42.7%) own a dog. That mostly reflects how many owners are in the sample.",
+      "So for any cross-tab, ask whether the percentages add to 100% across rows, down columns or over the whole table. Research Skills Unit 8 shows how to build cross-tabs from your own survey ({{crosstabs}}), and Data Literacy Unit 7, Lesson 4 shows how a chi-square test checks whether a pattern like this could be chance ({{chi-square-tests}})."
+    ]},
+    {h:"Regression tables: one row per variable", body:[
+      "A regression model estimates how an outcome changes with several variables at once. Data Literacy Unit 7, Lesson 4 fits a line with one variable ({{linear-regression}}); papers usually include several. Here is an invented table from the same study, with numbered parts:",
+      {fig:'<svg viewBox="0 0 340 440"><circle class="d-gold" cx="18" cy="14" r="9" stroke-width="1.5"/><text class="s" x="18" y="18" text-anchor="middle">1</text><text x="36" y="18">Table 2. Minutes walked a day</text><text class="s" x="36" y="36">Linear regression, adults 65+</text><text x="200" y="62" text-anchor="middle">Model 1</text><text x="280" y="62" text-anchor="middle">Model 2</text><line class="d-ink" x1="10" y1="72" x2="330" y2="72" stroke-width="1.5"/><text x="36" y="92">Owns a dog</text><text x="200" y="92" text-anchor="middle">18.0***</text><text class="s" x="200" y="107" text-anchor="middle">(3.0)</text><text x="280" y="92" text-anchor="middle">12.0***</text><text class="s" x="280" y="107" text-anchor="middle">(3.2)</text><circle class="d-gold" cx="322" cy="88" r="9" stroke-width="1.5"/><text class="s" x="322" y="92" text-anchor="middle">2</text><circle class="d-gold" cx="240" cy="103" r="9" stroke-width="1.5"/><text class="s" x="240" y="107" text-anchor="middle">3</text><text x="36" y="130">Age (years)</text><text x="200" y="130" text-anchor="middle">–</text><text x="280" y="130" text-anchor="middle">−0.9***</text><text class="s" x="280" y="145" text-anchor="middle">(0.2)</text><text x="36" y="168">Woman</text><text x="200" y="168" text-anchor="middle">–</text><text x="280" y="168" text-anchor="middle">2.0</text><text class="s" x="280" y="183" text-anchor="middle">(2.9)</text><circle class="d-gold" cx="18" cy="202" r="9" stroke-width="1.5"/><text class="s" x="18" y="206" text-anchor="middle">5</text><text x="36" y="206">Health (ref. = good)</text><text x="48" y="228">Fair</text><text x="200" y="228" text-anchor="middle">–</text><text x="280" y="228" text-anchor="middle">−8.0*</text><text class="s" x="280" y="243" text-anchor="middle">(3.4)</text><text x="48" y="266">Poor</text><text x="200" y="266" text-anchor="middle">–</text><text x="280" y="266" text-anchor="middle">−21.0***</text><text class="s" x="280" y="281" text-anchor="middle">(4.6)</text><circle class="d-gold" cx="322" cy="262" r="9" stroke-width="1.5"/><text class="s" x="322" y="266" text-anchor="middle">4</text><text x="36" y="304">Constant</text><text x="200" y="304" text-anchor="middle">41.0***</text><text class="s" x="200" y="319" text-anchor="middle">(1.8)</text><text x="280" y="304" text-anchor="middle">113.0***</text><text class="s" x="280" y="319" text-anchor="middle">(17.7)</text><line class="d-ink" x1="10" y1="330" x2="330" y2="330" stroke-width="1"/><circle class="d-gold" cx="18" cy="356" r="9" stroke-width="1.5"/><text class="s" x="18" y="360" text-anchor="middle">6</text><text x="36" y="350">N</text><text x="200" y="350" text-anchor="middle">850</text><text x="280" y="350" text-anchor="middle">812</text><text x="36" y="372">R²</text><text x="200" y="372" text-anchor="middle">0.04</text><text x="280" y="372" text-anchor="middle">0.09</text><line class="d-ink" x1="10" y1="382" x2="330" y2="382" stroke-width="1.5"/><text class="s" x="10" y="400">Standard errors in brackets. Invented data.</text><text class="s" x="10" y="418">* p &lt; 0.05</text><text class="s" x="112" y="418">** p &lt; 0.01</text><text class="s" x="214" y="418">*** p &lt; 0.001</text></svg>', alt:"An invented regression table titled Table 2, minutes walked a day, linear regression, adults 65 and over, with two columns, Model 1 and Model 2, and numbered markers. Owns a dog: Model 1, 18.0 with three stars, standard error 3.0; Model 2, 12.0 with three stars, standard error 3.2 (marker 2 on the coefficient, marker 3 on the standard error). Age in years: Model 2 only, minus 0.9 with three stars, standard error 0.2. Woman: Model 2 only, 2.0, standard error 2.9, no stars. Health, reference category good (marker 5): fair, minus 8.0 with one star, standard error 3.4; poor, minus 21.0 with three stars, standard error 4.6 (marker 4 on the stars). Constant: 41.0 in Model 1, 113.0 in Model 2. N: 850 and 812; R squared: 0.04 and 0.09 (marker 6). Notes: standard errors in brackets; one star p less than 0.05, two stars p less than 0.01, three stars p less than 0.001. Marker 1 is on the title.", cap:"An invented regression table. Model 1 is unadjusted; Model 2 adjusts for age, sex and health."},
+      {list:[
+        "**① Outcome:** minutes walked a day. Every coefficient is in those units.",
+        "**② [[regression-coefficient|Coefficient]]:** in Model 2, dog owners walked about **12 minutes a day more** than non-owners, on average, **holding the other variables constant**: compared with people of the same age, sex and health. For a numeric variable it is per one unit: each extra year of age went with 0.9 fewer minutes.",
+        "**③ [[standard-error|Standard error]] (in brackets):** how much the estimate would vary from sample to sample (Lesson 3). Some tables put t-statistics or intervals in brackets instead; the note says which.",
+        "**④ Stars:** here `*` means p < 0.05, `**` p < 0.01 and `***` p < 0.001. Conventions vary, so read the note. Some journals, such as the *American Economic Review*, tell authors not to use stars at all and to report standard errors instead.",
+        "**⑤ Reference category:** see the next section.",
+        "**⑥ N and R²:** Model 2 used 812 people, not 850, because 38 had no health data. Always check why cases drop out: when models shown side by side use different people, part of any change between them can come from who was left out. [[r-squared|R²]] = 0.09 means the model accounts for about 9% of the variation in minutes walked in these data."
+      ]},
+      {ex:"Approximate 95% CI = coefficient ± 1.96 × SE\n\nOwns a dog, Model 2:\n12.0 ± 1.96 × 3.2 = 12.0 ± 6.3\n= 5.7 to 18.3 minutes a day\n\n12.0 ÷ 3.2 = 3.75 standard errors from zero,\nwhich is why it has three stars.", label:"Worked example: from standard error to interval", mono:true},
+      "The **constant** (or intercept) is the predicted outcome when every variable is zero or at its reference category. In Model 2 that is a 0-year-old man in good health without a dog, so it is the line’s anchor, not a finding."
+    ]},
+    {h:"Categories, controls and adjusted results", body:[
+      "**Reference categories.** A categorical variable such as health (good, fair, poor) enters the model as yes/no indicators, one fewer than the number of categories. The category left out is the [[reference-category|reference category]], shown as “ref.”, a dash, 0 or 1.00, or named in the row label. Each coefficient compares its category with the reference. “Poor −21.0” means people in poor health walked about 21 minutes a day less than people in **good** health of the same age, sex and dog ownership, not 21 minutes less than average. Choose a different reference and the numbers change, but the model doesn’t.",
+      "**Controls and adjustment.** Variables added so that comparisons are like with like are called controls or covariates ([[control-variable|control variables]]). Model 1 is **unadjusted**; Model 2 is [[adjusted-estimate|adjusted]] for age, sex and health. The dog coefficient fell from 18.0 to 12.0: about a third of the raw gap went with owners being younger and healthier. The STROBE reporting guideline for observational studies asks authors to give unadjusted and, where relevant, adjusted estimates with their precision, and to say which confounders they adjusted for and why.",
+      {warn:"Adjustment only covers confounders that were measured, and measured well. Something unmeasured, such as a love of the outdoors, may still explain part of the 12 minutes."}
+    ]},
+    {h:"Ratios: odds ratios and their cousins", body:[
+      "When the outcome is yes or no, papers often use **logistic regression**, and tables show [[odds-ratio|odds ratios]] (OR), sometimes headed “exp(B)”. Others show risk ratios (RR) or, for time until an event, hazard ratios (HR). All are ratios, so **1 means no difference**, and an interval that includes 1 is compatible with no difference.",
+      {ex:"Odds of walking 30+ minutes:\n  owners      180 ÷ 120 = 1.50\n  non-owners  242 ÷ 308 = 0.786\nOdds ratio  1.50 ÷ 0.786 = 1.91\n\nRisk ratio  60.0% ÷ 44.0% = 1.36\n\nAdjusted OR from a logistic model\n(invented): 1.6 (95% CI 1.2 to 2.2)", label:"Worked example: the cross-tab as ratios", mono:true},
+      "An odds ratio of 1.91 doesn’t mean owners were 1.9 times as likely to walk 30 minutes: the risk ratio says 1.36 times. When an outcome is common, as here, the odds ratio sits further from 1 than the risk ratio. Data Literacy Unit 1, Lesson 2 explains why ({{absolute-relative-risk}}).",
+      {tip:"If a logistic table shows raw coefficients rather than odds ratios, they are on the log-odds scale, where 0 (not 1) means no difference. Check the column heading."}
+    ]},
+    {h:"What not to over-read", body:[
+      {list:[
+        "**Stars aren’t importance.** A tiny effect in a huge sample can get three stars (Lesson 4).",
+        "**No stars isn’t no effect.** “Woman 2.0 (2.9)” has an interval of about −3.7 to 7.7 minutes: compatible with no difference, and with a modest one either way.",
+        "**Control coefficients aren’t the findings.** The model was built to estimate the dog effect. The coefficients for age or health may themselves be confounded, or capture only part of their effect because other variables in the model lie on the path to walking. Westreich and Greenland (2013) called reading them as effects the **[[table-2-fallacy|Table 2 fallacy]]**.",
+        "**Coefficients on different scales don’t compare directly.** 12.0 for yes/no dog ownership and −0.9 per year of age only compare in real units: ten years of age goes with about 9 minutes.",
+        "**R² isn’t a grade.** A low R² is normal for human behaviour and doesn’t make a coefficient wrong; a high one doesn’t show cause.",
+        "**Association isn’t cause.** Unless the design supports it (Unit 6), a coefficient describes a pattern. Perhaps healthier people get dogs *and* walk more ({{correlation-causation}}).",
+        "**Many rows, many tests.** A table with 30 coefficients will show a star or two by chance."
+      ]}
+    ]},
+    {h:"Working through a table in a real paper", body:[
+      "Choose an open access paper with a regression table; journals such as *PLOS ONE* and *BMJ Open*, and many in the Directory of Open Access Journals, publish them in full. Then:",
+      {ol:[
+        "Read the table’s title and notes. Write down the outcome and its units.",
+        "Find N for each column and compare it with the Methods. Note any drop.",
+        "Find the row for the main variable in the research question: its coefficient or ratio, and its standard error or interval.",
+        "Say it in one sentence: “On average, X was associated with a [size] [unit] difference in Y, holding [controls] constant (95% CI … to …).”",
+        "Check the reference category of any categorical variable you mention.",
+        "If both are given, compare unadjusted and adjusted results: what changed, and why might it have?",
+        "Check that the abstract’s words match the table: size, uncertainty and any causal language (Lesson 6)."
+      ]},
+      {key:"Frame first, then the row that answers the question, then its size and uncertainty in words. Everything else in the table is supporting detail."},
+      "To go further, Data Literacy Unit 7 fits and tests regression lines yourself, and Data Literacy Unit 8, Lesson 5 fits a first model in R ({{summary-stats-r}})."
+    ]}
+   ],
+   try:[
+    {id:"t4u3-l6-x1", type:"match", q:"Match each part of a regression table to what it tells you.", pairs:[
+      ["`12.0***` in the “Owns a dog” row","The estimated difference in the outcome, in its units","A coefficient is the estimated difference in the outcome for that variable, holding the others in the model constant."],
+      ["(3.2) under the coefficient","How much the estimate would vary from sample to sample","Brackets usually hold the standard error; the table note confirms it."],
+      ["`***` after the coefficient","The p-value fell below the threshold in the note","Stars mark p-value thresholds, here p < 0.001. They say nothing about size."],
+      ["N = 812","How many cases the model used","N can be smaller than the sample when some cases have missing data."],
+      ["R² = 0.09","The share of variation in the outcome the model accounts for","R² describes fit in these data: about 9% here. It isn’t a measure of cause."]
+    ]},
+    {id:"t4u3-l6-x2", type:"sort", q:"The cross-tab shows walking 30+ minutes by dog ownership, in an invented study. Which percentages answer each question?", buckets:["Row percentages (within owners and within non-owners)","Column percentages (within walkers and within non-walkers)"], items:[
+      {t:"Are dog owners more likely than non-owners to walk 30 minutes a day?", b:0, why:"To compare owners with non-owners, take percentages within each of those groups: 60% against 44%."},
+      {t:"What share of non-owners walk 30 minutes a day?", b:0, why:"That is a percentage within the non-owner row: 242 of 550, 44%."},
+      {t:"Of the people who walk 30 minutes a day, what share own a dog?", b:1, why:"That is a percentage within the walkers’ column: 180 of 422, 42.7%."},
+      {t:"Of the people who don’t walk 30 minutes a day, what share are non-owners?", b:1, why:"Within the “doesn’t” column: 308 of 428, 72.0%."},
+      {t:"How much more common is regular walking among owners than non-owners, in percentage points?", b:0, why:"Compare the row percentages: 60% − 44% = 16 percentage points."}
+    ]},
+    {id:"t4u3-l6-x3", type:"number", q:"In the invented table, “Health: fair” has a coefficient of −8.0 with a standard error of 3.4. Using coefficient ± 1.96 × SE, what is the **lower** limit of its approximate 95% confidence interval, in minutes?", answer:-14.66, tol:0.15, unit:"minutes", why:"1.96 × 3.4 = 6.664. Lower limit = −8.0 − 6.664 = −14.66; upper limit = −8.0 + 6.664 = −1.34. The whole interval is below zero, which fits its one star (p < 0.05). Using 2 instead of 1.96 gives −14.8, close enough for reading a table.", wrongs:[
+      {v:-11.4, tol:0.1, why:"That is −8.0 − 3.4: you subtracted one standard error. A 95% interval needs about 1.96 standard errors on each side."},
+      {v:-1.34, tol:0.1, why:"That is the upper limit (−8.0 + 6.664). With a negative coefficient, the lower limit is the more negative number."},
+      {v:-4.6, tol:0.1, why:"That is −8.0 + 3.4: one standard error, in the wrong direction. Use 1.96 × 3.4 = 6.664 and subtract it."},
+      {v:6.66, tol:0.1, why:"6.66 is 1.96 × 3.4, the half-width of the interval. Subtract it from the coefficient: −8.0 − 6.664."}
+    ], hint2:"Multiply 3.4 by 1.96, then subtract the result from −8.0."},
+    {id:"t4u3-l6-x4", type:"mcq", q:"The table shows “Health (ref. = good): Poor `−21.0***` (4.6)”. Which reading is correct?", options:[
+      {t:"People in poor health walked about 21 minutes a day less than similar people in good health", ok:true, why:"Each category is compared with the reference category, good health, holding the other variables (age, sex, dog ownership) constant."},
+      {t:"People in poor health walked about 21 minutes a day less than the average participant", why:"The comparison is with the reference category, good health, not with the average."},
+      {t:"Poor health causes people to walk 21 minutes a day less than they otherwise would", why:"An observational coefficient shows an association. And as a control variable it is open to the Table 2 fallacy: it may be confounded."},
+      {t:"21% of people in poor health walked less than people in good health did", why:"The coefficient is in the outcome’s units, minutes a day, not a percentage of people."}
+    ]},
+    {id:"t4u3-l6-x5", type:"spot", q:"Fatima summarised the invented Table 2 for a class. Tap each sentence that **over-reads** the table.", ask:"over-reads the table", parts:[
+      {t:"After adjusting for age, sex and health, dog owners walked about 12 minutes a day more than non-owners (95% CI about 5.7 to 18.3).", flag:false, why:"A careful reading: size, units, adjustment and interval."},
+      " ",
+      {t:"So getting a dog makes older people walk 12 minutes more a day.", flag:true, why:"An observational coefficient shows an association. Healthier, more active people may be the ones who get dogs."},
+      " ",
+      {t:"Being a woman has no effect on walking, because that row has no stars.", flag:true, why:"No stars isn’t no effect: the interval runs from about −3.7 to 7.7 minutes, compatible with modest differences either way."},
+      " ",
+      {t:"Model 2 used 812 of the 850 participants, because 38 had no health data.", flag:false, why:"Correct, and worth noting: those 38 may differ from the rest."},
+      " ",
+      {t:"Poor health is the strongest cause of walking less, since its coefficient is the biggest.", flag:true, why:"Two over-readings: it’s a control coefficient (the Table 2 fallacy), and the model wasn’t designed to estimate causes of walking in general."}
+    ]},
+    {id:"t4u3-l6-x6", type:"mcq", q:"The dog coefficient is 18.0 in Model 1 (dog ownership only) and 12.0 in Model 2 (adding age, sex and health). What does the change suggest?", options:[
+      {t:"Part of the raw gap went with owners being younger and healthier", ok:true, why:"Adjusting compares owners and non-owners of the same age, sex and health. About a third of the 18 minutes went with those differences, as Table 1 hinted."},
+      {t:"Model 1 was calculated wrongly and should be ignored", why:"Both are legitimate. The unadjusted estimate shows the raw difference; the adjusted one compares like with like. STROBE asks authors to report both."},
+      {t:"Owning a dog has a bigger effect on older people than younger ones", why:"That would be a moderator (an interaction), which neither model tests."},
+      {t:"The 12 minutes is now certain to be the causal effect of a dog", why:"Adjustment only covers measured confounders. Something unmeasured could still explain part of the 12 minutes."}
+    ]},
+    {id:"t4u3-l6-x7", type:"order", q:"Put these steps for reading a results table in a real paper in a sensible order.", items:[
+      {t:"Read the title and notes; write down the outcome and its units", why:"The frame comes first: without it, no number can be read correctly."},
+      {t:"Check N for each column against the Methods", why:"Next, how many cases each result rests on, and whether any dropped out."},
+      {t:"Find the row for the variable in the research question", why:"Then go straight to the row that answers the question."},
+      {t:"Write its size and interval as one plain sentence, naming the controls", why:"Turn the row into words: size, units, uncertainty and what was held constant."},
+      {t:"Compare the abstract’s claims with what the table shows", why:"Last, check the authors’ words against the evidence."}
+    ]},
+    {id:"t4u3-l6-x8", type:"explain", q:"In the invented dog-walking study, the “owns a dog” coefficient fell from 18.0 minutes (unadjusted) to 12.0 minutes after adjusting for age, sex and health. Explain what this change tells you, and why the 12 minutes still may not all be caused by the dog.", size:"3–4 sentences", hint:"Who were the dog owners in Table 1, and what can adjustment not cover?", model:"Dog owners in the sample were younger and healthier, and younger, healthier people walk more anyway. Adjusting compares owners with non-owners of the same age, sex and health, and the gap shrank by about a third, so part of the raw difference came from those confounders. But adjustment only covers what was measured. Something unmeasured, such as a love of the outdoors, could still explain some of the 12 minutes, and the design is observational, so it shows an association, not cause.", points:["Says owners differed in age and health (confounders)", "Explains that adjustment compares like with like, so the gap shrank", "Notes adjustment only covers measured variables", "Says the coefficient shows association, not cause"]}
+   ],
+   apply:{intro:"Read the tables of a real paper. Use the quantitative open access paper from Lessons 3 and 4, or find one with a regression table.", tasks:[
+     {t:"Read Table 1", how:["Find the descriptive table (often Table 1).","Note N for each group and how each variable is summarised (mean and SD, median and IQR, n and %).","Note any differences between groups that could be confounders, and whether the paper adjusts for them later."], write:"Groups and their N… How variables are summarised… Possible confounders… Adjusted later?…"},
+     {t:"Decode the main model table", how:["Find the table with the main result. Write down the outcome, its units and the kind of model (linear, logistic or other).","Find the row for the main variable. Write its coefficient or ratio, its standard error or interval, and what the stars mean.","Name the reference category of any categorical variable and list the controls.","If only a standard error is given, work out the approximate 95% interval with coefficient ± 1.96 × SE (for an odds ratio, use the interval the authors give)."], write:"Outcome and units… Model… Main row… Interval… Reference categories… Controls…"},
+     {t:"Check the words against the table", how:["Write the main result as one plain sentence, using the template in this lesson.","Compare it with the abstract’s claim: are size, uncertainty and adjustment the same? Any causal words the design can’t support?","Note one over-reading you could imagine a news story making from this table."], write:"My sentence… The abstract’s claim… Match or mismatch… A tempting over-reading…"}
+   ], proof:"Notes on one real paper: what its descriptive table shows and which confounders it hints at; the main model row decoded (outcome, units, size, interval, reference categories, controls); and a plain-words result compared with the abstract."},
+   read:[
+    {book:"openintro", where:"Chapter 9, “Multiple and logistic regression”: Section 9.1 “Introduction to multiple regression” (on indicator and categorical variables as predictors, and adjusted R²) and Section 9.5 “Introduction to logistic regression”", note:"Worked examples of reading multiple and logistic regression output, with the reference level explained."},
+    {book:"bhatt", where:"Chapter 15, “Quantitative Analysis: Inferential Statistics”, section “General Linear Model”", note:"How dummy variables represent categories (its example uses two dummies for three industry sectors: always one fewer than the number of categories) and what coefficients mean. One sentence there swaps the names of the intercept (β0) and the slope (β1); the usual convention is the reverse."}
+   ]
+  },
+  /* ===================== LESSON 6 (t4u3-l5) ===================== */
   {id:"t4u3-l5", title:"Reading critically, with and without AI", minutes:60,
    hook:{q:"A paper’s competing-interests statement says it was funded by a company that sells the product being tested. What does that tell you?", options:["The results are false","Nothing: peer review removes any bias","It’s a reason to read the methods and results especially carefully, not proof of bias","You should never cite it"], answer:2, reveal:"**A reason to read carefully, not proof of bias.** Industry-funded studies can be excellent, and independent ones can be flawed. A declared interest tells you where to look harder: the design, the choice of outcomes, and whether the conclusions match the numbers. That habit of fair, structured questioning is critical appraisal, and it applies to AI summaries too."},
    goals:[
@@ -553,6 +725,7 @@ ICA.addUnit({
         "Check that limitations, uncertainty and design caveats survived the summary.",
         "Cite the paper, never the summary, and only for what you’ve verified yourself."
       ]},
+      "If an AI tool runs the statistics or draws the charts for you, Track 3, Unit 9, Lesson 6 shows how to check them ({{checking-ai-data-work}}).",
       {warn:"Think before you upload. A paper’s licence, your institution’s rules and a tool’s privacy terms may limit what you can upload. Never upload confidential material, such as a manuscript you’ve been asked to peer-review or unpublished data about people. Policies on AI use in research differ between universities, publishers and funders, and change often; Unit 9 covers them."},
       {key:"An AI summary is a lead, not evidence. The paper is the evidence, and you are the reader responsible for what you take from it."}
     ]}
@@ -602,7 +775,8 @@ ICA.addUnit({
       {t:"A manuscript a journal has sent you to peer-review", why:"Peer review is confidential. Uploading a manuscript under review shares someone else’s unpublished work."},
       {t:"Interview transcripts with participants’ names in them", why:"That’s personal data collected under promises of confidentiality. It needs protection, not uploading to a third-party tool."},
       {t:"Your own notes on a published paper, with no personal data", ok:true, why:"Your own notes about published work raise no confidentiality issue, though your course or employer may have its own rules."}
-    ]}
+    ]},
+    {id:"t4u3-l5-x7", type:"explain", q:"An abstract says: “Our survey of 900 students shows that eating breakfast improves exam results.” Explain why this is likely to be spin, and write a fairer version of the sentence.", size:"3–4 sentences", hint:"What can a one-off survey show, and what can’t it?", model:"A one-off survey can show that breakfast and exam results go together, but not that breakfast causes better results. Students who eat breakfast may differ in other ways, such as sleep, family income or study habits, which could explain the link. “Improves” is causal language the design can’t support. A fairer version: “Students who ate breakfast tended to have higher exam results; because this was a survey, we can’t say whether breakfast caused the difference.” I’d also check the size and interval in the results.", points:["Says a survey can show an association, not cause", "Names a possible confounder", "Identifies “improves” as causal language", "Gives a fairer rewrite that drops the causal claim"]}
    ],
    apply:{intro:"Appraise a real paper, then test an AI summary against it.", tasks:[
      {t:"Appraise one paper with the six core questions.", how:["Use a paper you’ve already read in this unit, or a new open access one.","For each of the six questions (question, design, sample, measures, results, conclusions), write one or two sentences.","End with a verdict: how much would you trust its main claim, for what purpose, and why?","Optional: download the free CASP checklist for that type of study from casp-uk.net and compare."], write:"Paper, then one or two sentences for each question, and your verdict…"},
@@ -891,7 +1065,69 @@ ICA.addUnit({
      ]
     },
     related:["critical-appraisal","research-notes","ai-chatbot-accuracy","ai-generated-content"],
-    sources:[{t:"eWeek (June 2026): NotebookLM cheat sheet", url:"https://www.eweek.com/news/google-notebooklm-cheat-sheet-2026/"},{t:"Infodocket (2020): Semantic Scholar launches TLDR feature", url:"https://www.infodocket.com/2020/11/17/research-tools-semantic-scholar-launches-tldr-beta-feature-uses-nlp-to-place-single-sentence-automatically-generated-paper-summaries-on-search-results-pages/"}], checked:"2026-11"}
+    sources:[{t:"eWeek (June 2026): NotebookLM cheat sheet", url:"https://www.eweek.com/news/google-notebooklm-cheat-sheet-2026/"},{t:"Infodocket (2020): Semantic Scholar launches TLDR feature", url:"https://www.infodocket.com/2020/11/17/research-tools-semantic-scholar-launches-tldr-beta-feature-uses-nlp-to-place-single-sentence-automatically-generated-paper-summaries-on-search-results-pages/"}], checked:"2026-11"},
+
+{id:"results-tables", title:"Reading results tables", aka:["Table 1","descriptive table","baseline table","cross-tab in a paper","table notes","reading tables in papers"], tags:["research","reading","statistics"],
+    summary:"A routine for reading the tables in a paper’s results: the frame first, then descriptive tables, cross-tabs and model tables, with what each can and can’t show.",
+    levels:{
+     starter:[
+      "Tables carry much of a paper’s evidence. Read them like a map: the legend first. Before any number, find the title, the outcome and its units, what the columns are (groups or models), how many people each column rests on (N), and the notes underneath.",
+      "Three kinds of table turn up again and again:",
+      {list:[
+        "A **[[descriptive-table|descriptive table]]** (often Table 1) describes who was studied, usually split by group.",
+        "A **[[crosstab|cross-tab]]** breaks one category down by another, such as walking by dog ownership.",
+        "A **model table**, often a regression, shows how an outcome relates to several variables at once ({{regression-tables}})."
+      ]},
+      "The notes matter most. They say what the brackets hold, what the stars mean and what was adjusted for.",
+      {key:"Frame first, numbers second, words last: read the table before you read what the authors say it means."}
+     ],
+     builder:[
+      {h:"Descriptive tables"},
+      "Look for how each variable is summarised: mean (SD) for roughly symmetric numbers, median (IQR) for skewed ones, n (%) for categories. Compare the groups: differences in age, health or income hint at [[confounder|confounders]] the paper should deal with later. In randomised trials, CONSORT 2025 says significance tests of baseline differences are not recommended, because chance alone formed the groups; judge whether any imbalance is large enough to matter.",
+      {h:"Cross-tabs"},
+      "Ask which way the percentages run: across rows, down columns or over the whole table. To compare groups, use percentages within each group. Column percentages answer a different question and partly reflect group sizes. Always look for the counts behind the percentages ({{crosstabs}}).",
+      {h:"Model tables"},
+      "Each row is a variable; each column is usually a model. Coefficients come with a standard error or interval, stars mark p-value thresholds, and the bottom rows give N and measures of fit. Compare unadjusted and adjusted columns when both are shown.",
+      {tip:"If N changes between columns or is smaller than the sample in the Methods, find out why. Missing data can change who the results describe."}
+     ],
+     pro:[
+      "Reporting guidelines describe what tables should contain. STROBE, for observational studies, asks for participants’ characteristics and information on exposures and potential confounders, and for unadjusted and, where relevant, confounder-adjusted estimates with their precision, saying which confounders were adjusted for and why. It also suggests translating relative risks into absolute risks where relevant. CONSORT 2025 asks trials for a table of baseline characteristics for each group.",
+      "Style conventions vary. APA style puts significance notes under the table (for example `*p < .05. **p < .01.`) and can show estimates with standard errors and 95% confidence limits in separate columns. The *American Economic Review* tells authors not to use asterisks and to report standard errors in parentheses. Medical journals usually give estimates with 95% intervals. Read each table’s notes rather than assuming.",
+      "Watch for weighted results (survey weights change percentages but not the unweighted counts shown), for percentages of valid answers rather than all respondents, and for small cells, where one or two people change a percentage a lot.",
+      "Supplementary tables often hold the full models, sensitivity analyses and results for every outcome. When a main table shows only selected rows, check the supplement before concluding anything about the variables left out."
+     ]
+    },
+    related:["regression-tables","crosstabs","reading-results","statistical-significance-basics","critical-appraisal","centre-spread"],
+    read:[{book:"bhatt", where:"Chapter 14, “Quantitative Analysis: Descriptive Statistics”"}],
+    sources:[{t:"EQUATOR Network: CONSORT 2025, item on baseline data", url:"https://resources.equator-network.org/reporting-guidelines/consort/items/baseline-data.html"},{t:"STROBE Statement: checklists", url:"https://www.strobe-statement.org/checklists/"},{t:"APA Style: sample tables", url:"https://apastyle.apa.org/style-grammar-guidelines/tables-figures/sample-tables"}], checked:"2026-11"},
+
+   {id:"regression-tables", title:"Reading regression tables", aka:["regression coefficient","reference category","dummy variable","indicator variable","adjusted and unadjusted estimates","odds ratio table","significance stars","Table 2 fallacy","constant","intercept"], tags:["research","reading","statistics"],
+    summary:"What the numbers in a regression table mean: coefficients, standard errors, intervals, stars, reference categories, controls, ratios, N and R², and what not to over-read.",
+    levels:{
+     starter:[
+      "A regression table shows how an outcome, such as minutes walked a day, relates to several variables at once. Each row is a variable; each column is usually a model.",
+      "The main number in each row is the [[regression-coefficient|coefficient]]: the estimated difference in the outcome that goes with that variable, holding the others in the model constant. “Owns a dog 12.0” means owners walked about 12 minutes more a day than non-owners of the same age, sex and health, on average.",
+      "Underneath or beside it, usually in brackets, is the [[standard-error|standard error]], a measure of uncertainty. Stars mark p-value thresholds, defined in the note.",
+      "For a category such as health (good, fair, poor), one group is the [[reference-category|reference category]], and each other group is compared with it.",
+      {key:"Read the row that answers the research question, in the outcome’s units, with its uncertainty. A coefficient describes a pattern; whether it is a cause depends on the design."}
+     ],
+     builder:[
+      {table:[["Part","How to read it"],["Coefficient","Difference in the outcome per one-unit difference in the variable (or for being in a category), others held constant"],["(SE)","Sample-to-sample variation; approximate 95% CI = coefficient ± 1.96 × SE in large samples"],["Stars","p-value thresholds from the note; not size or importance"],["Ref. category","The comparison group for a categorical variable"],["Constant","Prediction when every variable is zero or at its reference; often not meaningful"],["N","Cases used; may fall when data are missing"],["R²","Share of variation accounted for in these data; adjusted R² penalises extra variables"]]},
+      "**Unadjusted and [[adjusted-estimate|adjusted]] columns.** When a coefficient changes after controls are added, part of the raw difference went with those controls, as with confounders. Adjustment covers only what was measured.",
+      "**Ratios.** Logistic regression usually reports [[odds-ratio|odds ratios]]; survival models report hazard ratios. For ratios, 1 means no difference, and an interval including 1 is compatible with none. Raw logistic coefficients are log odds, where 0 means no difference. For common outcomes, an odds ratio sits further from 1 than the risk ratio, so don’t read it as “times as likely” ({{absolute-relative-risk}}).",
+      "**Interactions.** A row such as “dog × woman” tests whether a difference depends on another variable. When an interaction is present, the main rows describe the difference at the reference level of the other variable."
+     ],
+     pro:[
+      "**The [[table-2-fallacy|Table 2 fallacy]].** Westreich and Greenland (*American Journal of Epidemiology*, 2013) warned that presenting every coefficient from one model invites readers to treat the control variables’ coefficients like the main estimate. A model chosen to estimate the effect of one exposure may leave the others’ coefficients confounded, and where a control lies on the path between another variable and the outcome, the coefficient shows only a direct part of that variable’s effect. Some authors now show only the main estimate, or fit separate models for each question.",
+      "**Comparing coefficients.** Unstandardised coefficients on different scales don’t compare directly; standardised coefficients (often β) rescale to standard deviations but depend on the spread in the sample. Coefficients from different samples, or from logistic models with different controls, are not always comparable either.",
+      "**Robustness.** Look for sensitivity analyses and alternative specifications; a result that appears in only one of many possible models is fragile. Running many specifications and reporting the most striking one inflates false positives ({{multiple-testing}}).",
+      "**Clustered and repeated data.** When people are grouped (pupils in schools) or measured repeatedly, standard errors should account for it, for example with clustered standard errors or multilevel models; otherwise intervals are too narrow.",
+      "The mechanics of fitting a line are in Data Literacy ({{linear-regression}}); the International Studies track discusses causal inference with regression ({{regression-causal-inference}})."
+     ]
+    },
+    related:["results-tables","linear-regression","reading-results","absolute-relative-risk","correlation-causation","regression-causal-inference"],
+    read:[{book:"openintro", where:"Chapter 9, “Multiple and logistic regression”, Sections 9.1 and 9.5"}],
+    sources:[{t:"Westreich & Greenland (2013), The Table 2 fallacy, American Journal of Epidemiology (PMC)", url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC3626058/"},{t:"AER Style Guide (American Economic Association)", url:"https://www.aeaweb.org/journals/aer/style-guide"},{t:"OpenIntro Statistics 4e, Section 9.1 (LibreTexts)", url:"https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Introduction_to_Statistics_4e_(Diez_et_al.)/09%3A_Multiple_and_Logistic_Regression/9.01%3A_Introduction_to_Multiple_Regression"}], checked:"2026-11"}
   ],
   terms:[
    {id:"imrad", term:"IMRaD", def:"The four-part structure of most empirical papers: **I**ntroduction, **M**ethods, **R**esults **a**nd **D**iscussion.", codex:"paper-structure"},
@@ -912,7 +1148,13 @@ ICA.addUnit({
    {id:"absolute-risk", term:"Absolute and relative risk", def:"An absolute difference compares risks directly (4% vs 3% is 1 percentage point); a relative difference compares them as a proportion (25% lower). Both can describe the same result.", codex:"reading-results"},
    {id:"confounder", term:"Confounder", def:"A third factor linked to both the supposed cause and the outcome, which can create or hide an association between them.", codex:"reading-results"},
    {id:"reporting-guideline", term:"Reporting guideline", def:"A checklist of what a paper of a given type should report, such as CONSORT for randomised trials or PRISMA for systematic reviews.", codex:"critical-appraisal"},
-   {id:"spin-research", term:"Spin (in research)", def:"Reporting that makes results look more favourable, certain or general than the data support, such as causal language from an observational study.", codex:"critical-appraisal"}
+   {id:"spin-research", term:"Spin (in research)", def:"Reporting that makes results look more favourable, certain or general than the data support, such as causal language from an observational study.", codex:"critical-appraisal"},
+   {id:"descriptive-table", term:"Descriptive table (Table 1)", def:"A table, usually the first in a paper’s results, describing who was studied, often by group: means and SDs, medians and IQRs, counts and percentages.", codex:"results-tables"},
+   {id:"regression-coefficient", term:"Regression coefficient", def:"The estimated difference in the outcome that goes with a one-unit difference in a variable (or with being in a category), holding the model’s other variables constant.", codex:"regression-tables"},
+   {id:"reference-category", term:"Reference category", def:"The category a regression compares the others with, such as “good health”. It is often marked “ref.” and has no coefficient of its own.", codex:"regression-tables"},
+   {id:"adjusted-estimate", term:"Adjusted estimate", def:"An estimate from a model that holds other measured variables constant, so the comparison is between otherwise similar cases. An unadjusted estimate is the raw difference.", codex:"regression-tables"},
+   {id:"odds-ratio", term:"Odds ratio (OR)", def:"The odds of an outcome in one group divided by the odds in another. 1 means no difference. For common outcomes it is further from 1 than the risk ratio.", codex:"regression-tables"},
+   {id:"table-2-fallacy", term:"Table 2 fallacy", def:"Reading the coefficients of control variables in a model as if they were effects as trustworthy as the main estimate. They may be confounded or show only part of an effect.", codex:"regression-tables"}
   ],
   bank:[
    /* Lesson 1 */
@@ -1099,7 +1341,7 @@ ICA.addUnit({
      {t:"There is only a 2% chance that the coin is fair, so it is almost certainly biased", why:"p can’t give the probability of the hypothesis; that would need more information."},
      {t:"The coin lands heads 2% of the time", why:"It landed heads 90% of the time in this test."},
      {t:"There is a 98% chance the coin is biased", why:"1 − p isn’t the probability that the coin is biased."}]},
-   /* Lesson 5 */
+   /* Lesson 6 (t4u3-l5) */
    {id:"t4u3-q37", lesson:"t4u3-l5", level:1, q:"What is critical appraisal?", options:[
      {t:"Judging how far to trust a study, and for what, using a fair set of structured questions", ok:true, why:"It’s calibrated judgement, not fault-finding."},
      {t:"Finding reasons to reject every study", why:"Every study has limitations; appraisal decides which matter."},
@@ -1144,6 +1386,52 @@ ICA.addUnit({
      {t:"Check for corrections, look for reviews and later studies, and appraise it strictly", ok:true, why:"She should also check whether it has been retracted. One paper is one voice; checking context and her own bias guards against overconfidence. She should appraise it as strictly as a study she disagrees with."},
      {t:"Rely on it, because one well-designed study is enough to settle the question for good", why:"Single studies often aren’t replicated; context matters."},
      {t:"Look only for studies that agree", why:"That’s confirmation bias."},
-     {t:"Check its download count", why:"Popularity says nothing about whether it holds up."}]}
+     {t:"Check its download count", why:"Popularity says nothing about whether it holds up."}]},
+   /* Lesson t4u3-l6 (shown as Lesson 5) */
+   {id:"t4u3-q46", lesson:"t4u3-l6", level:1, q:"In most regression tables, what does a number in brackets under a coefficient show?", options:[
+     {t:"Usually its standard error; the table note says for sure", ok:true, why:"Brackets most often hold standard errors, but some tables put t-statistics or confidence intervals there. The note decides."},
+     {t:"The number of people in that category of the variable", why:"Counts per category belong in the descriptive table; N for the whole model is usually at the bottom."},
+     {t:"The p-value, written in brackets to keep the table compact", why:"p-values are usually shown by stars or in their own column, not in brackets under the coefficient."},
+     {t:"The value of the coefficient before any controls were added", why:"Unadjusted estimates usually get their own column (such as Model 1), not brackets."}]},
+   {id:"t4u3-q47", lesson:"t4u3-l6", level:2, q:"A table shows “Region (ref. = North): South 3.5 (1.2)”, with income in thousands as the outcome. What does 3.5 mean?", options:[
+     {t:"People in the South earned about 3.5 thousand more than similar people in the North", ok:true, why:"Each category is compared with the reference category (North), holding the model’s other variables constant."},
+     {t:"People in the South earned about 3.5 thousand more than the overall average", why:"The comparison is with the reference category, not with the average of everyone."},
+     {t:"The South has 3.5 times as many people in the sample as the North", why:"Coefficients are differences in the outcome, not ratios of group sizes."},
+     {t:"Living in the South causes people’s incomes to rise by 3.5 thousand", why:"An observational coefficient shows an association. Whether region causes the difference needs a design that supports it."}]},
+   {id:"t4u3-q48", lesson:"t4u3-l6", level:2, q:"A coefficient is 6.0 with a standard error of 2.0. What is its approximate 95% confidence interval?", options:[
+     {t:"About 2.1 to 9.9", ok:true, why:"6.0 ± 1.96 × 2.0 = 6.0 ± 3.92, so about 2.1 to 9.9."},
+     {t:"About 4.0 to 8.0", why:"That is ± one standard error. A 95% interval needs about 1.96 standard errors each side."},
+     {t:"About 5.9 to 6.1", why:"That treats the standard error as if it were tiny. Use 1.96 × 2.0 = 3.92."},
+     {t:"About 0.0 to 12.0", why:"That uses three standard errors each side, which gives a wider interval than 95%."}]},
+   {id:"t4u3-q49", lesson:"t4u3-l6", level:3, q:"Kenji’s summary of a paper says: “Age is the strongest cause of the outcome, since its coefficient has the most stars.” The paper’s question was about a training programme; age was a control variable. What is wrong?", options:[
+     {t:"Stars aren’t size, and control coefficients aren’t trustworthy effects", ok:true, why:"Two errors: stars mark p-value thresholds, not importance; and reading a control variable’s coefficient as an effect is the Table 2 fallacy, because the model wasn’t built to estimate it."},
+     {t:"Nothing: more stars always mean a stronger cause", why:"Stars depend on sample size and precision as well as size, and say nothing about cause."},
+     {t:"Only that he should have said “correlate” instead of “cause”", why:"That fixes one problem but not the other: control coefficients may be confounded or show only part of an effect."},
+     {t:"Age can never be included as a variable in regression models", why:"Age is a very common control. The issue is how its coefficient is read."}]},
+   {id:"t4u3-q50", lesson:"t4u3-l6", level:1, q:"For an **odds ratio**, which value means no difference between groups?", options:[
+     {t:"1", ok:true, why:"A ratio of 1 means the odds are the same in both groups. An interval that includes 1 is compatible with no difference."},
+     {t:"0", why:"0 means no difference for differences and for raw logistic coefficients (log odds), not for ratios."},
+     {t:"0.05", why:"0.05 is a common significance threshold for p-values, not a value of an odds ratio."},
+     {t:"100", why:"Odds ratios aren’t percentages; 100 would mean the odds are a hundred times higher."}]},
+   {id:"t4u3-q51", lesson:"t4u3-l6", level:3, q:"In an invented study, 50% of one group and 25% of another had a common outcome. A news story reports the odds ratio of 3.0 as “three times as likely”. What is the fairest correction?", options:[
+     {t:"They were twice as likely: the risk ratio is 2.0", ok:true, why:"Risk ratio = 50% ÷ 25% = 2.0. Odds: 1.0 against 0.33, so OR = 3.0. For common outcomes the odds ratio sits further from 1, so “times as likely” fits the risk ratio."},
+     {t:"Nothing: an odds ratio always means “times as likely”", why:"Only roughly, and only when the outcome is rare. Here the outcome is common and the two ratios differ."},
+     {t:"They were 25% more likely, the gap in percentage points", why:"The gap is 25 percentage points, not “25% more likely”, which would be a relative change."},
+     {t:"They were three times less likely, since odds ratios run backwards", why:"An odds ratio above 1 means higher odds in the first group, not lower."}]},
+   {id:"t4u3-q52", lesson:"t4u3-l6", level:2, q:"In a randomised trial’s Table 1, the groups differ slightly in average age. Following CONSORT 2025, what should a reader do?", options:[
+     {t:"Judge whether the imbalance is large enough to matter", ok:true, why:"With proper randomisation, baseline differences are due to chance, so significance tests of them are not recommended. The useful question is whether an imbalance in an important variable could affect the result."},
+     {t:"Look for a p-value showing whether the difference is real", why:"CONSORT 2025 says significance testing of baseline differences is not recommended and should not be reported."},
+     {t:"Conclude that the randomisation must have failed", why:"Chance alone produces small differences. That is expected, not a sign of failure."},
+     {t:"Ignore the table, since trials don’t need one", why:"CONSORT asks trials for a baseline table for each group; it shows who was studied."}]},
+   {id:"t4u3-q53", lesson:"t4u3-l6", level:2, q:"A cross-tab of 400 survey answers has age groups as rows and preferred class type (online or in person) as columns, and each **column** adds to 100%. Which question can those percentages answer directly?", options:[
+     {t:"Of those who prefer online classes, what share are in each age group?", ok:true, why:"Each column is a preference, so its percentages describe the age mix of the people with that preference."},
+     {t:"Which age group is most likely to prefer online classes, compared with the others?", why:"That needs percentages within each age group (rows here), not within each preference."},
+     {t:"Whether age causes people to prefer online classes", why:"No percentages in a cross-tab can show cause on their own."},
+     {t:"How many people in the whole country prefer online classes", why:"A cross-tab describes the sample; generalising needs a probability sample and a margin of error."}]},
+   {id:"t4u3-q54", lesson:"t4u3-l6", level:3, q:"Model 1 reports N = 2,400 and Model 2, which adds household income, reports N = 1,650. What should you check first?", options:[
+     {t:"Why 750 cases dropped out, and whether they differ", ok:true, why:"Many people may not have reported income. If they differ from the rest, Model 2 describes a different group, and the change between models may partly reflect who was left out."},
+     {t:"Nothing: N always falls when variables are added", why:"N falls only when cases have missing data on the new variable. The drop needs explaining."},
+     {t:"Whether R² rose, which would prove Model 2 is better", why:"R² is not a test of which model is right, and the two models used different people."},
+     {t:"Whether the authors made a typing error in the table", why:"Possible, but a drop like this usually comes from missing data. Check the notes and Methods."}]}
   ]
 });

@@ -157,7 +157,8 @@ ICA.addUnit({
       {t:"“My phone is broken again, please help ASAP.”", why:"It gives no device details, no symptom, no timing and nothing tried. Anyone helping must start from zero."},
       {t:"“Camera not working. Tried everything.”", why:"“Not working” and “tried everything” hide the useful details: what exactly fails and which steps were actually taken."},
       {t:"“I think it’s a virus. Can you reinstall Android?”", why:"It jumps to a theory and a drastic fix without the facts that would let anyone test it."}
-    ]}
+    ]},
+      {id:"t1u7-l1-x8", type:"explain", q:"Your laptop’s sound has stopped working. Explain why you should change one thing at a time and test after each change, rather than trying several fixes at once.", hint:"If the sound comes back after three changes, which one fixed it?", model:"Each change is a test of one theory about the root cause. If I turn up the volume, swap the headphones and reinstall a driver all at once and the sound comes back, I don’t know which change fixed it, so I can’t prevent it or fix it quickly next time, and I may have changed things that didn’t need changing. Changing one thing and testing tells me clearly whether that theory was right. If a change makes no difference, I undo it before the next one, so I don’t leave a trail of unexplained changes.", points:["Says each change tests one theory about the cause", "Says several changes at once hide which one worked", "Mentions undoing a change that made no difference", "Uses an example such as the sound problem"]}
    ],
    apply:{intro:"Set yourself up to troubleshoot calmly: a log to write in, the device details helpers always ask for, and quick ways to capture evidence.", tasks:[
      {t:"Find your device’s exact model and system version", how:{
@@ -320,7 +321,8 @@ ICA.addUnit({
       {t:"Start the Mac in safe mode", why:"Safe mode needs the Mac to start. With no power or response at all, he must check power first."},
       {t:"Erase the Mac and reinstall macOS from the start", why:"Drastic and impossible without power anyway. Nothing yet suggests a software problem."},
       {t:"Buy a new Mac", why:"Most “won’t turn on” problems have cheap causes. Test those first, and get it checked by a repairer before replacing it."}
-    ]}
+    ]},
+      {id:"t1u7-l2-x8", type:"explain", q:"Explain what safe mode does, and what it tells you if a problem disappears in safe mode compared with if it stays.", size:"2–3 sentences", hint:"Think of a restaurant opening with only the core kitchen staff.", model:"Safe mode starts the system with only its essential parts, leaving out extras such as startup apps, extra drivers and extensions, like a restaurant opening with only the core kitchen staff. If the problem disappears in safe mode, something extra that loads at startup is the likely cause, so that is where to look next. If the problem stays even in safe mode, the extras are probably innocent, and the cause is more likely the core system or the hardware.", points:["Says safe mode loads only the essential parts", "Says a problem that disappears points to something extra that loads at startup", "Says a problem that stays points to the core system or hardware"]}
    ],
    apply:{intro:"Get familiar with these tools while everything works, so you aren’t learning them in a panic. You don’t need to restart into safe mode unless you want to.", tasks:[
      {t:"Review your startup apps", how:{
@@ -496,7 +498,8 @@ ICA.addUnit({
       {t:"Malware has copied her files", why:"A second copy named after one of her devices is the classic sign of a sync conflict, not malware."},
       {t:"Delete the tablet copy straight away, since it’s a duplicate", why:"That would throw away the edits she made on the tablet. Check both copies first."},
       {t:"Her cloud storage is full", why:"A full quota stops uploads; it doesn’t create a named duplicate. This is a conflict between two edited versions."}
-    ]}
+    ]},
+      {id:"t1u7-l3-x8", type:"explain", q:"A notes app keeps crashing and Chen is about to reinstall it. Explain why he should first ask “Is this app’s data stored only on this device?”", hint:"Which rungs of the ladder of fixes delete the app’s data? What comes back when you sign in again?", model:"Fixes for a misbehaving app work like a ladder: the higher rungs (resetting, clearing storage, reinstalling) fix more problems but delete more of the app’s data and settings on the device. If Chen’s notes sync to an account, they come back when he signs in again after reinstalling. If they are stored only on this device, reinstalling could lose them for good. So he should check first, back up anything stored locally, and try gentler rungs, such as updating the app or Repair, before climbing to a reinstall.", points:["Says resetting or reinstalling can delete the app’s data on the device", "Says data synced to an account comes back after signing in", "Says data stored only locally may be lost", "Suggests backing up first or trying gentler fixes before reinstalling"]}
    ],
    apply:{intro:"Find the repair tools before you need them. Look, but don’t press reset or clear storage unless you’ve checked what you’d lose.", tasks:[
      {t:"Find the repair and reset options for one app", how:{
@@ -664,7 +667,8 @@ ICA.addUnit({
       {t:"Put the speaker into pairing mode, following its manual", why:"It must be discoverable before the laptop can find it again. Pairing mode usually switches off after a short time, so turn it on just before adding it, once the old record is gone."},
       {t:"Add it again on the laptop and connect", why:"A fresh pairing creates a new, working record on both devices."},
       {t:"Play sound to verify, then note what fixed it", why:"Verify and document, as in Lesson 1."}
-    ]}
+    ]},
+      {id:"t1u7-l4-x8", type:"explain", q:"Abebe’s headset microphone works in a voice-recorder app but nobody can hear him in a browser video call. Explain how thinking in a chain helps him find the problem.", hint:"List the links your voice passes through. Which links has the recorder app already proved are working?", model:"His voice passes through a chain: the microphone, the cable or Bluetooth link, the system’s choice of input device, the system’s privacy permission, the browser’s or website’s permission and microphone choice, and the call’s mute button. A break anywhere gives the same symptom: silence. Because the mic works in another app, the microphone, the connection and the system’s input choice are probably fine. So the break is in the links that belong to the browser and the call: he should check that the system lets the browser use the microphone, that the site is allowed to use it, that the call has the headset chosen, and that he isn’t muted.", points:["Describes the chain of links from microphone to call", "Says a break in any link gives the same symptom", "Uses the working recorder app to rule out the earlier links", "Points to the browser or call’s own permission, device choice or mute"]}
    ],
    apply:{intro:"Check your call setup and your accessories while nothing is urgent.", tasks:[
      {t:"Check microphone and camera permissions, then test", how:{
@@ -852,7 +856,8 @@ ICA.addUnit({
       {t:"A caller says your computer is sending out viruses and offers to fix it remotely for free", why:"An unsolicited call claiming a problem is the classic tech-support scam opening. Microsoft and the FTC both say real companies don’t do this."},
       {t:"A pop-up tells you to call a number, and the person who answers asks to connect", why:"Real security pop-ups never ask you to call a number, so whoever answered is part of the scam."},
       {t:"A “refund department” calls to return money you didn’t know you were owed and needs to connect to process it", why:"This is the refund scam pattern described by the FTC and nidirect: the goal is access to your bank account."}
-    ]}
+    ]},
+      {id:"t1u7-l5-x9", type:"explain", q:"Explain why a help request that says only “My laptop is broken, please help!” gets a slow answer, and what a request someone can act on straight away contains (and leaves out).", hint:"The helper can’t see your screen. What would they have to ask you first?", model:"The person reading can’t see your screen, so a vague request forces them to ask question after question before they can even start, which slows everything down. A good request gives them what they need in an order they can scan: a one-line summary naming the device and problem; the model, operating system and versions; what you did, expected and saw; the exact error message, with a screenshot; when it started and what changed; what you’ve already tried; and what you need. It never includes passwords or one-time codes.", points:["Says the helper can’t see your screen, so vague requests need many follow-up questions", "Includes the device and system version and the exact error message", "Includes what changed and what you’ve already tried", "Says never to include passwords or codes"]}
    ],
    apply:{intro:"Prepare your help kit now: a request you could send, your warranty details, and a plan for the worst case.", tasks:[
      {t:"Write a help request for a real or imagined problem", write:"Summary · Device and versions · What I did, expected, got · Exact message · When it started and what changed · What I tried · What I need", how:["Pick a problem from your troubleshooting log, or a recent annoyance.","Fill in the seven parts in the box. Remove personal details you wouldn’t want a stranger to see.","Read it as if you were the helper: could you start testing straight away?"]},

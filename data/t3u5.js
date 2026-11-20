@@ -135,7 +135,8 @@ ICA.addUnit({
       {t:"Delete it, because outliers always distort the analysis.", why:"Deleting it without checking could throw away a real and important case, and deleting silently hides what you did."},
       {t:"Keep it and report only the mean, so every value counts.", why:"If 410 is a typo, the mean would be badly wrong. And with a possible outlier, the median is the safer summary."},
       {t:"Replace it with the mean of the other values.", why:"Inventing a value hides the problem. Fix it only if you can confirm the right value from the source."}
-    ]}
+    ]},
+    {id:"t3u5-l1-x7", type:"explain", q:"A café plots the arrival time of every customer over a day, and the histogram has two clear peaks. Explain what that shape probably means, and why a single average arrival time would mislead.", model:"Two peaks, a bimodal shape, usually mean two groups are mixed together: here probably a breakfast rush and a lunch rush. The mean arrival time would fall in the quiet gap between the peaks, a time when hardly anyone arrives, so it describes no real customer. It’s better to describe each peak separately, or split the data by group, and to show the histogram so the two rushes are visible.", points:["Names the shape as bimodal (two peaks)", "Says it suggests two groups mixed together", "Explains that the average falls between the peaks, where few values are", "Suggests describing the groups separately or showing the picture"]}
    ],
    apply:{intro:"Use any spreadsheet app. On a phone, the Google Sheets app handles the formulas; charts are easier on a computer or tablet.", tasks:[
      {t:"Build a frequency table with COUNTIFS", app:{
@@ -261,7 +262,8 @@ ICA.addUnit({
       {t:"There must be a calculation error, because an SD can’t be bigger than the mean.", why:"An SD can be bigger than the mean. It just means the data are very spread out relative to their centre, often because of a long tail."},
       {t:"Some volunteers gave negative hours.", why:"Nobody can give negative hours. The negative number comes from applying a symmetric summary to skewed data."},
       {t:"The sample is too small for an SD.", why:"You can calculate an SD for any data set with 2 or more values. The issue is shape, not size."}
-    ]}
+    ]},
+    {id:"t3u5-l2-x7", type:"explain", q:"Clinic waiting times are skewed right, with one patient who waited 41 minutes. A report gives them as “mean 13.1 minutes, SD 9.0”. Explain why the median and interquartile range would be a better pair here.", hint:"Think about what happens to each summary if the 41-minute wait is removed.", model:"The mean and SD use the size of every value, so one long wait pulls the mean up and, because its deviation is squared, inflates the SD. Removing the 41-minute wait cuts the mean from 13.1 to 11.1 and nearly halves the SD, from 9.0 to 4.9. The median and IQR depend only on the order of the values and ignore the top and bottom quarters, so they barely move (11 to 10.5, and 7 to 6). For skewed data with outliers they describe the typical patient fairly.", points:["Says the mean and SD are pulled by extreme values", "Uses the numbers to show how much one value changes them", "Says the median and IQR are robust (based on order, ignore the extremes)", "Concludes median and IQR suit skewed data; mean and SD suit symmetric data"]}
    ],
    apply:{intro:"Calculate the summaries for the clinic data, then see what one value does. Use the sheet from Lesson 1 (waiting times in A2:A16).", tasks:[
      {t:"Calculate centre and spread", app:{
@@ -397,7 +399,8 @@ ICA.addUnit({
       {t:"Their medians could be different.", why:"The median is drawn as the line inside the box, so identical boxplots have identical medians."},
       {t:"Their interquartile ranges could be different.", why:"The IQR is the length of the box. Identical boxes mean identical IQRs."},
       {t:"Nothing: identical boxplots always mean identical data.", why:"Many different data sets share the same five-number summary."}
-    ]}
+    ]},
+    {id:"t3u5-l3-x8", type:"explain", q:"Two groups have identical boxplots. Explain why their data could still look very different, and what you would add to the chart.", model:"A boxplot draws only a few summary numbers: Q1, the median and Q3, whiskers out to the most extreme values inside the fences, and any points beyond them. It can’t show two peaks: a bimodal group and a flat one can have exactly the same box. It doesn’t show how many values there are either, so a boxplot of 6 values looks as solid as one of 6,000. To reveal what’s hidden, I’d plot the individual data points over the boxes, or show a histogram, and state n for each group.", points:["Says a boxplot shows only the five-number summary (and outliers)", "Explains that it hides shape, such as two peaks", "Explains that it hides how many values there are", "Suggests showing the data points or a histogram, and giving n"]}
    ],
    apply:{intro:"Compare quartile methods on the eight test scores, then draw a boxplot by hand.", tasks:[
      {t:"See the quartile methods disagree", app:{
@@ -511,7 +514,8 @@ ICA.addUnit({
       ["The box lengths","Spread of the middle half","Each box runs from Q1 to Q3, so its length is the IQR."],
       ["Points beyond the whiskers","Potential outliers","Values beyond the 1.5 × IQR fences are drawn individually."],
       ["Uneven whiskers and box halves","Skew","A longer upper part suggests right skew; a longer lower part, left skew."]
-    ]}
+    ]},
+    {id:"t3u5-l4-x7", type:"explain", q:"Tomás scored 62 on a maths test (class mean 50, SD 6) and 81 on an English test (class mean 75, SD 12). Explain which is his stronger result compared with his class, even though 81 is the higher mark.", model:"Marks from different tests can’t be compared directly, because the tests have different averages and spreads. A z-score measures distance from the mean in standard deviations: maths (62 − 50) ÷ 6 = **2.0**, English (81 − 75) ÷ 12 = **0.5**. His maths mark is two SDs above the class mean, far more unusual than his English mark, which is only half an SD above. Because z-scores have no units, they put both results on the same scale.", points:["Says raw marks on different tests aren’t directly comparable", "Defines a z-score as distance from the mean in SDs", "Calculates z = 2.0 for maths and 0.5 for English", "Concludes the maths result is stronger relative to the class"]}
    ],
    apply:{intro:"Calculate z-scores in a spreadsheet and compare two groups of your own. Use a new sheet (tab) so the Lesson 1 table isn’t overwritten.", tasks:[
      {t:"Add a z-score column", app:{
@@ -644,7 +648,8 @@ ICA.addUnit({
       ["Set II","A smooth curve","The points follow an arch, so a straight line is the wrong model."],
       ["Set III","A near-perfect line plus one outlier","Ten points almost exactly on a line; one stray point pulls r down."],
       ["Set IV","One far point creating the correlation","Ten points share the same x; the single far point produces the whole r."]
-    ]}
+    ]},
+    {id:"t3u5-l5-x7", type:"explain", q:"Across many towns, the number of cafés and the number of burglaries have a strong positive correlation (r = 0.8). Explain why this doesn’t show that cafés cause burglaries.", model:"Correlation only says the two counts move together. A third variable can drive both: bigger towns have more people, so more cafés and more burglaries. Reverse direction and chance are other explanations that a correlation alone can’t rule out. A strong r is a reason to investigate, for example by comparing rates per person, which removes the effect of town size, or by using a study design that rules out other explanations. It isn’t evidence of cause on its own.", points:["Says correlation shows the variables move together, not cause", "Names a likely third variable, such as population", "Mentions another explanation: reverse direction or chance", "Suggests a fairer check, such as rates per person or a better design"]}
    ],
    apply:{intro:"Make a scatterplot, calculate r, then watch one point change it. Use a computer or tablet for the chart if you can; the formulas work on a phone.", tasks:[
      {t:"Scatterplot and r for the practice data", app:{

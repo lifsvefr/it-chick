@@ -8,7 +8,8 @@ ICA.addUnit({
     "Chain steps into readable pipelines with |> and %>%, and know how the two pipes differ",
     "Summarise by group with group_by() + summarise() and count(), and reshape tables with pivot_longer() and pivot_wider()",
     "Build charts with ggplot2’s grammar (aesthetics, geoms, facets, labels, themes) and save them with ggsave()",
-    "Outline a reproducible report in Quarto, where text, code and results stay in step"
+    "Outline a reproducible report in Quarto, where text, code and results stay in step",
+    "Check AI-written code, statistics and charts on a known case, and record and disclose how you used AI"
   ],
   read:[
     {book:"r4ds", where:"Chapter 3, “Data transformation”, and Chapter 5, “Data tidying”", note:"The main reading for Lessons 1–3: dplyr’s verbs, the pipe, groups, and pivoting."},
@@ -138,7 +139,8 @@ ICA.addUnit({
       {t:"The file is corrupted and needs to be read again", why:"Nothing is wrong with the file; this is how bracket subsetting treats missing values."},
       {t:"He forgot the comma inside the brackets", why:"The comma is there: `d[d$age > 30, ]`. Without it he’d get an error about columns, not an NA row."},
       {t:"`>` can’t be used with ages; he needs `>=`", why:"`>` works fine with numbers. The extra row comes from the missing value."}
-    ]}
+    ]},
+    {id:"t3u8-l1-x7", type:"explain", q:"Compare `filter()` and `select()`: what does each one act on, and how would you get just the `id` and `score` of people aged 30 or over?", model:"`filter()` works on **rows**: it keeps the rows where a condition is TRUE, such as `age >= 30`, and leaves all the columns. `select()` works on **columns**: it keeps the columns you name, such as `id` and `score`, and leaves all the rows. To get both, filter first and then select: `select(filter(survey, age >= 30), id, score)`. In base R, `subset(d, age >= 30, select = c(id, score))` does both at once. Neither changes `survey`; store the result with `<-` to keep it.", points:["Says `filter()` keeps rows that meet a condition", "Says `select()` keeps named columns", "Combines them to answer the question", "Notes the result must be stored, or gives the base R version"]}
    ],
    apply:{intro:"Set up somewhere to run tidyverse code, then practise the base R versions in the Data Lab. If you only have a phone, do task 3 and read the others.", tasks:[
      {t:"Install R and the tidyverse (optional, on a computer)", how:{
@@ -260,7 +262,8 @@ ICA.addUnit({
       {t:"They get both labels", why:"Each row gets exactly one value: the one from the first matching condition."},
       {t:"They get “45 and over”, the default", why:"The default is only used when no condition is TRUE. Here `age < 45` is TRUE."}
     ]},
-    {id:"t3u8-l2-x6", type:"spot", q:"Fatima’s pipeline (R with the tidyverse) should add hours per day and show the five highest. Tap the parts that are errors.", ask:"is an error", mono:true, parts:["survey |> ",{t:"mutate(hours_day = hours_year / 365, hours_year = hours * 52)", flag:true, why:"hours_day uses hours_year before it has been created. Inside mutate(), columns are made left to right: put hours_year first."}," |> ",{t:"arrange(desc(hours_day))", flag:false, why:"Correct: sorts largest first."}," |> ",{t:"head", flag:true, why:"The native pipe needs a function call: `head()`, or `head(5)`. A bare `head` is an error with |>."}]}
+    {id:"t3u8-l2-x6", type:"spot", q:"Fatima’s pipeline (R with the tidyverse) should add hours per day and show the five highest. Tap the parts that are errors.", ask:"is an error", mono:true, parts:["survey |> ",{t:"mutate(hours_day = hours_year / 365, hours_year = hours * 52)", flag:true, why:"hours_day uses hours_year before it has been created. Inside mutate(), columns are made left to right: put hours_year first."}," |> ",{t:"arrange(desc(hours_day))", flag:false, why:"Correct: sorts largest first."}," |> ",{t:"head", flag:true, why:"The native pipe needs a function call: `head()`, or `head(5)`. A bare `head` is an error with |>."}]},
+    {id:"t3u8-l2-x7", type:"explain", q:"Explain what the native pipe `|>` does, using `survey |> filter(group == \"B\") |> select(id, score)` as the example, and why it is easier to read than nesting the calls.", model:"R rewrites `x |> f(y)` as `f(x, y)`: the value on the left becomes the first argument of the function on the right. So the example means `select(filter(survey, group == \"B\"), id, score)`. Nested, you read from the middle outwards and each function’s arguments end up far from its name. With the pipe, the steps are written in the order they happen, and you can read `|>` aloud as “then”: take survey, then keep group B, then keep id and score. It chains neatly because tidyverse verbs take the data first.", points:["Says the left side becomes the first argument of the next function", "Rewrites the example as nested calls", "Says the pipe lists steps in the order they happen (“then”)", "Mentions that it works because tidyverse functions take the data first"]}
    ],
    apply:{intro:"Build the same pipeline both ways. Use a computer or Posit Cloud for the tidyverse, and the Data Lab for base R.", tasks:[
      {t:"Write a tidyverse pipeline (computer or Posit Cloud)", how:["Start from `survey`, keep people who answered **Yes**, add `hours_year = hours * 52`, keep `id`, `hours_year` and `score`, and sort by `hours_year`, largest first","Read it aloud with “then” between steps; does it say what you meant?","Check: the first row should be id 10 (416 hours a year)"]},
@@ -369,7 +372,8 @@ ICA.addUnit({
       {t:"`count(survey, group, answer) |> pivot_wider(names_from = answer, values_from = n)`", b:1, why:"Each answer becomes a column: a cross-table."},
       {t:"`reshape(walks, direction = \"long\", …)`", b:0, why:"Base R’s reshape with direction = \"long\" stacks columns into rows."}
     ]},
-    {id:"t3u8-l3-x6", type:"number", q:"A wide table records 5 bus routes (rows), with a `route` column and 7 columns of passenger counts, one per day of the week. After `pivot_longer()` on the 7 day columns, how many rows does it have?", answer:35, tol:0, unit:"rows", why:"Each route contributes one row per stacked column: 5 routes × 7 days = 35 rows (with columns route, day and passengers).", wrongs:[{v:12, tol:0, why:"That adds 5 + 7. Each of the 5 rows is repeated 7 times, so multiply."},{v:40, tol:0, why:"That counts 8 columns per route (including route itself). Only the 7 day columns are stacked."},{v:7, tol:0, why:"That’s the number of day columns. Each one becomes a row for every route."}]}
+    {id:"t3u8-l3-x6", type:"number", q:"A wide table records 5 bus routes (rows), with a `route` column and 7 columns of passenger counts, one per day of the week. After `pivot_longer()` on the 7 day columns, how many rows does it have?", answer:35, tol:0, unit:"rows", why:"Each route contributes one row per stacked column: 5 routes × 7 days = 35 rows (with columns route, day and passengers).", wrongs:[{v:12, tol:0, why:"That adds 5 + 7. Each of the 5 rows is repeated 7 times, so multiply."},{v:40, tol:0, why:"That counts 8 columns per route (including route itself). Only the 7 day columns are stacked."},{v:7, tol:0, why:"That’s the number of day columns. Each one becomes a row for every route."}]},
+    {id:"t3u8-l3-x7", type:"explain", q:"Explain what `survey |> group_by(group) |> summarise(n = n(), mean_score = mean(score))` does, and why including `n = n()` is a good habit.", model:"`group_by()` marks which group each row belongs to, and `summarise()` then works group by group. The rows are split into groups A and B, each group’s rows are boiled down to a count and a mean, and the answers are combined into a new table with one row per group: here 6 people with mean 65.3 in A and 6 with mean 69.5 in B. This is split–apply–combine, like a pivot table. `n = n()` shows how many rows each mean rests on, and small groups give the most extreme averages.", points:["Says `group_by()` marks groups and later verbs work within them", "Describes split–apply–combine, giving one row per group", "Says `n()` counts the rows in each group", "Explains that small groups give less reliable, more extreme means"]}
    ],
    apply:{intro:"Summarise and reshape the survey. Use the Data Lab for base R; the tidyverse parts need a computer or Posit Cloud.", tasks:[
      {t:"Compare groups in base R (Data Lab, any device)", how:["Solve the Data Lab’s **Compare groups** and **Count answers** challenges","In the same editor, press **Run** on `aggregate(cbind(score, hours) ~ group, data = d, FUN = mean)` and `table(d$group, d$answer)`","Write one sentence comparing A and B, including how many people are in each group"]},
@@ -483,7 +487,8 @@ ICA.addUnit({
       {t:"`aes(colour = group)`", why:"That colours the groups within a single panel; it doesn’t split the chart."},
       {t:"`geom_boxplot()`", why:"A boxplot compares groups in one panel; it doesn’t make panels, and it summarises rather than showing points."},
       {t:"`group_by(group)`", why:"group_by() is dplyr; it affects later dplyr verbs, not the chart layout."}
-    ]}
+    ]},
+    {id:"t3u8-l4-x7", type:"explain", q:"Explain the difference between `aes(colour = group)` and `geom_point(colour = \"steelblue\")` in ggplot2, and what goes wrong with `aes(colour = \"blue\")`.", model:"Inside `aes()`, colour is a **mapping**: its value comes from a column, so each group gets its own colour and ggplot2 adds a legend to explain it. Outside `aes()`, in the geom, colour is a **setting**: one fixed value for every point, with no legend because nothing varies with the data. `aes(colour = \"blue\")` mixes them up: ggplot2 treats “blue” as a data value, a single constant category, colours every point with its first default colour (not blue) and adds a pointless legend.", points:["Says inside `aes()` is a mapping from a column of data", "Says outside `aes()` is a fixed setting", "Mentions that mappings get a legend and settings don’t", "Explains that `\"blue\"` inside `aes()` is treated as a data value"]}
    ],
    apply:{intro:"Draw the same charts twice: base R in the Data Lab, and ggplot2 on a computer or Posit Cloud.", tasks:[
      {t:"Base R charts (Data Lab, any device)", how:["Solve the **A histogram** challenge","In any survey.csv challenge, press **Run** on `boxplot(score ~ group, data = d)` and `barplot(table(d$answer))`","Note what each chart suggests in one sentence"]},
@@ -608,7 +613,8 @@ ICA.addUnit({
       {t:"Ask the colleague to restart their computer", why:"A restart doesn’t load packages. The report itself needs the library() line."},
       {t:"Switch the format from html to pdf", why:"The format only affects the final conversion; the R code fails before that."},
       {t:"Replace the code chunk with the numbers typed by hand", why:"That would “work” but loses reproducibility, which is the point of the report."}
-    ]}
+    ]},
+    {id:"t3u8-l5-x7", type:"explain", q:"Explain why writing a report in Quarto, with inline code such as `r nrow(survey)`, is more reproducible than copying numbers and charts from R into a word-processor document.", model:"When numbers and charts are copied by hand, one change to the data leaves nobody sure which figures are current. In Quarto, text, code and results live in one `.qmd` file. Rendering runs every chunk from top to bottom in a fresh session, so the file must load its own packages and read its own data, and inline code puts computed values straight into sentences. Change the data and render again, and every number and chart updates. Reproducible doesn’t mean correct, but every number can be traced to its code.", points:["Says copied numbers can go out of date without anyone noticing", "Says Quarto keeps text, code and results in one file", "Explains that rendering reruns everything from a fresh session", "Says inline code and charts update automatically when the data change"]}
    ],
    apply:{intro:"Polish one chart and outline a report. The ggplot2 and Quarto steps need a computer or Posit Cloud; the planning task works on any device.", tasks:[
      {t:"Polish and save a chart (computer or Posit Cloud)", how:["Take your scatterplot from Lesson 4 and add labs() with a title that states the point, axis labels with units, a caption and alt text","Add `scale_colour_viridis_d(end = 0.8)` and `theme_minimal(base_size = 14)`","Save it with `ggsave(\"scores.png\", plot = p, width = 16, height = 10, units = \"cm\", dpi = 300)` and open the file"]},
@@ -620,6 +626,170 @@ ICA.addUnit({
      {t:"Plan a reproducible report (any device)", how:["Pick a question about data you care about (club attendance, household spending, a class survey)","Write the YAML title, then one heading per section","Under each, write the steps as verbs (read, filter, mutate, group_by + summarise, ggplot) and the sentence each result will support, marking every number that should come from inline code"]}
    ], proof:"A saved PNG of your polished chart, a rendered report whose numbers changed after you edited the data, or (on a phone) your written report plan with each number marked as computed."},
    read:[{book:"r4ds", where:"Chapter 11, “Communication”: Sections 11.2 “Labels”, 11.4 “Scales” and 11.5 “Themes”; and Chapter 1, Section 1.6 “Saving your plots”"},{book:"r4ds", where:"Chapter 28, “Quarto”: Sections 28.2 “Quarto basics”, 28.5 “Code chunks” and 28.10 “YAML header”; and Chapter 29, “Quarto formats”"},{book:"dcss", where:"R for Social Scientists: “Getting started with R Markdown (Optional)”, the older format Quarto replaces, which works the same way"}]
+  },
+  /* ===================== LESSON 6 ===================== */
+  {id:"t3u8-l6", title:"Checking AI-made statistics, code and charts", minutes:60,
+   hook:{q:"Priya pastes her 12-person survey into an AI chatbot that has no tool for running code, and asks for the mean score. It replies: “The mean score is 68.2.” Where did that number come from?", options:["It added the 12 scores and divided by 12, as a calculator would","It wrote a likely-looking answer; without running code, no calculation is guaranteed","It found the survey online and copied a published mean","It rounded the true mean, so 68.2 is right to one decimal place"], answer:1, reveal:"**It wrote a likely-looking answer.** A chat model produces text one piece at a time. It may get small sums right, but unless it runs code, nothing guarantees the number, and here it’s wrong: 809 ÷ 12 ≈ 67.4. Some assistants can run code and show it, and then you can check that code. This lesson shows how to check AI-written R and Python, AI statistics and AI charts, and how to record what you did."},
+   goals:[
+     "Say what AI assistants do well and badly in data work, and why",
+     "Test AI-written R (and a little Python) on a small known case, and check rows, missing values and every line",
+     "Catch made-up numbers, wrong tests, misread p-values and invented citations",
+     "Find wrong summaries, cut axes and poor colour choices in AI-made charts",
+     "Keep an AI log, record versions, and write a short disclosure statement"
+   ],
+   learn:[
+    {h:"What AI assistants do well, and badly, with data", body:[
+      {lead:"AI assistants are fast, fluent helpers for data work. They’re also confident when they’re wrong, and they never see your data the way you do."},
+      "Chatbots and coding assistants run on [[large-language-model|large language models]] (Track 1, Unit 6 explains how in {{ai-chatbot-accuracy}}). Some only write text. Others can also **run code** in a sandbox and show you the code and its output. Either way, what comes back is a draft to check, not a result to quote.",
+      {table:[["Usually helpful","Check every time"],["Explaining an error message or a function","Any number stated without code behind it"],["Drafting code that you then read and test","Code that runs but answers a different question"],["Translating between R, Python and SQL","Missing values, odd codes and repeated rows"],["Suggesting chart types and labels","Which statistical test fits your design"],["Writing comments and documentation","References, quotes and “studies show” claims"]]},
+      "The pattern: an assistant knows what code *usually* looks like, not what *your* file contains. It doesn’t know that 99 means “no answer”, that one person has three rows, or that before and after scores come from the same people. It can also invent functions and arguments (Track 2, Unit 11 covers AI code in general: {{ai-code-review}}).",
+      {warn:"Think before you paste. Data about people (names, health, grades) may not be yours to upload to an outside service. Follow your organisation’s rules, give the assistant column names or invented sample rows, and run the code on the real data yourself ({{ai-privacy-disclosure}})."},
+      {key:"The assistant drafts; you verify. Responsibility for every number stays with you."}
+    ]},
+    {h:"Test the code on a small known case", body:[
+      {lead:"The fastest way to catch wrong code is to run it on data so small that you already know the answer."},
+      "Amara asks an assistant for base R that shows, for each group, the share of people giving each answer. It replies:",
+      {code:"d <- read.csv(\"survey.csv\")\ntab <- table(d$group, d$answer)\nprop.table(tab)", lang:"r", label:"R · AI-written, runs in the Data Lab"},
+      {code:"            No     Unsure        Yes\n  A 0.16666667 0.08333333 0.25000000\n  B 0.16666667 0.08333333 0.25000000", lang:"txt", label:"What R prints"},
+      "It runs, and “a quarter of group A said Yes” sounds believable. Before trusting it, Amara makes a [[known-case-test|known case]]: four rows where she knows the answer. Group A has one Yes and one No (50% Yes); group B has two Yes (100%).",
+      {code:"test <- data.frame(\n  group  = c(\"A\", \"A\", \"B\", \"B\"),\n  answer = c(\"Yes\", \"No\", \"Yes\", \"Yes\")\n)\nprop.table(table(test$group, test$answer))", lang:"r", label:"R · base R, runs in the Data Lab"},
+      {code:"      No  Yes\n  A 0.25 0.25\n  B 0.00 0.50", lang:"txt", label:"What R prints"},
+      "The code says group B is 50% Yes; she knows it’s 100%. `prop.table()` divided every count by the **whole table’s** total (4), not by each group’s total. Adding `margin = 1` divides each row by its own total:",
+      {code:"prop.table(tab, margin = 1)", lang:"r", label:"R · base R, runs in the Data Lab"},
+      {code:"           No    Unsure       Yes\n  A 0.3333333 0.1666667 0.5000000\n  B 0.3333333 0.1666667 0.5000000", lang:"txt", label:"What R prints"},
+      "Now half of each group said Yes, matching a count by hand (3 of 6). A [[sanity-check|sanity check]] would also have caught it: each group’s shares must add up to 1, and `rowSums()` shows the first version’s rows add up to 0.5.",
+      {tip:"Build the known case to catch likely mistakes: unequal group sizes, a missing value, a value exactly on a boundary. The Data Lab works the same way: every challenge is checked again on a second, hidden file."},
+      {lab:"dl-r-table", t:"Practise: count the answers and compute the share of Yes, then check it by hand"}
+    ]},
+    {h:"Check rows, missing values and every line", body:[
+      "Code can pass a tidy test and still fail on real data, often as a [[silent-failure|silent failure]]: no error, wrong answer. After each step, check rows (`nrow()`), missing values (`colSums(is.na(d))`) and ranges (`range()`). Suppose person 5 left their score blank. (Nobody did in the Data Lab’s file, so the second line below makes that blank.)",
+      {code:"d <- read.csv(\"survey.csv\")\nd$score[d$id == 5] <- NA   # person 5’s score is blank\nnrow(d)\ncolSums(is.na(d))\nmean(d$score)\nmean(d$score, na.omit = TRUE)\nmean(d$score, na.rm = TRUE)", lang:"r", label:"R · base R, runs in the Data Lab"},
+      {code:"[1] 12\n    id  group    age  hours  score answer \n     0      0      0      0      1      0 \n[1] NA\n[1] NA\n[1] 67.54545", lang:"txt", label:"What R prints"},
+      "In a real file, `read.csv()` turns a blank number into `NA`, and `mean()` honestly returns NA. But `na.omit = TRUE`, a plausible argument an assistant might write, is **silently ignored**: `mean()` accepts extra arguments without complaint. Only `na.rm = TRUE` drops missing values, and then the mean is of 11 people, not 12. Say so in your report.",
+      "Joins are the other big trap. Kenji asks for each person’s age next to their visits, then the mean age:",
+      {code:"people <- data.frame(id = 1:4, age = c(24, 31, 45, 29))\nvisits <- data.frame(id = c(1, 1, 2, 3, 3, 3),\n  minutes = c(20, 35, 50, 15, 25, 40))\nm <- merge(people, visits, by = \"id\")\nnrow(m)\nmean(m$age)\nmean(people$age)", lang:"r", label:"R · base R, runs in the Data Lab"},
+      {code:"[1] 6\n[1] 35.66667\n[1] 32.25", lang:"txt", label:"What R prints"},
+      "Four people became six rows, because person 1 has two visits and person 3 has three. Person 4, with no visits, vanished: by default `merge()` keeps only matching rows (an inner join, as in {{sql-joins|Unit 10}}; `all.x = TRUE` keeps everyone). The “mean age” of 35.7 counts person 1 twice and person 3 three times, and leaves out person 4. The true mean, 32.25, comes from `people`.",
+      "Then **read every line** and say what it does. Look up anything you can’t explain with `?function`. Be suspicious of lines you didn’t ask for: an extra filter, a number typed in (`n <- 12`), `suppressWarnings()`, or `na.rm = TRUE` added quietly.",
+      {h:"The same checks in Python"},
+      "Assistants often translate code between languages, and defaults differ. In pandas, a widely used Python package for tables, `mean()` **skips** missing values unless told otherwise. So R code and its Python translation can disagree with no error at all:",
+      {code:"import pandas as pd\ndf = pd.read_csv(\"survey.csv\")   # person 5’s score blank\nprint(len(df), df[\"score\"].isna().sum())\nprint(df[\"score\"].mean())\nprint(df[\"score\"].mean(skipna=False))\nprint(df.groupby(\"group\")[\"score\"]\n        .agg([\"mean\", \"count\", \"size\"]))", lang:"py", label:"Python with pandas · computer"},
+      {code:"12 1\n67.54545454545455\nnan\n       mean  count  size\ngroup                   \nA      65.2      5     6\nB      69.5      6     6", lang:"txt", label:"What Python prints"},
+      "`count` is the number of non-missing values and `size` the number of rows. When they differ, a group’s mean rests on fewer people than the table suggests."
+    ]},
+    {h:"AI-made statistics: four ways they go wrong", body:[
+      {lead:"When an assistant reports a statistic, ask where the number came from, whether the method fits, and what the words claim."},
+      "**1. Made-up or miscalculated numbers.** A number with no code behind it is a guess until you recompute it. Ask for the code, run it yourself, and check that numbers agree: shares that add to 100%, counts that match the rows, a mean inside the data’s range.",
+      "**2. The wrong test.** Assistants match tests to words in your prompt; they can’t see how the data were collected. Six people took a 25-point quiz before and after a workshop, and an assistant wrote `t.test(after, before)`, which treats the columns as unrelated groups. Each pair is the same person, so the test should be [[paired-t-test|paired]] ({{t-tests}}):",
+      {code:"before <- c(12, 15, 9, 20, 14, 11)\nafter  <- c(14, 16, 11, 23, 15, 13)\nt.test(after, before)$p.value\nt.test(after, before, paired = TRUE)$p.value", lang:"r", label:"R · base R, runs in the Data Lab"},
+      {code:"[1] 0.4441919\n[1] 0.001894247", lang:"txt", label:"What R prints"},
+      "Every person improved, by 1 to 3 points, yet the unpaired test gives p ≈ 0.44, because differences *between* people swamp the change. Another classic is `chisq.test()` on percentages: with 20 people per group, 6 versus 12 saying Yes gives p ≈ 0.11 from the counts, but 30% versus 60% typed in as if they were counts gives p ≈ 0.00004. Chi-square needs real counts ({{chi-square-tests}}).",
+      "**3. Misread p-values.** AI explanations can repeat the misreadings the American Statistical Association warned about in 2016 ({{statistical-significance-basics}}):",
+      {table:[["The AI says","What’s true"],["“p = 0.03, so there’s a 97% chance the effect is real”","A p-value isn’t the probability that a hypothesis is true"],["“p = 0.44 proves the workshop does nothing”","Data compatible with no effect don’t prove there is none"],["“Highly significant, so the effect is big”","p doesn’t measure size or importance; look at the effect and its interval"]]},
+      "**4. Invented citations.** In a 2023 study in *Scientific Reports*, 55% of the references GPT-3.5 gave in short literature reviews were fabricated, and 18% of GPT-4’s. Tools have changed since, but a real-looking reference, or even a real link, may not say what the answer claims ([[hallucinated-citation]]). Find each source outside the chatbot, open it and read the relevant part (Track 4, Unit 3 shows how: {{ai-reading-tools}})."
+    ]},
+    {h:"AI-made charts", body:[
+      {lead:"Chart code can run perfectly and still mislead. Check what each bar or point stands for before you look at the shape."},
+      "Asked for “a bar chart of the mean score in each group”, an assistant wrote:",
+      {code:"ggplot(survey, aes(x = group, y = score)) +\n  geom_col()", lang:"r", label:"R · computer or Posit Cloud"},
+      "`geom_col()` draws values as they are, and when several rows share an x position it **stacks** them. Each bar is six scores piled up: 392 for A and 417 for B, on a test out of 100. The axis shows the problem, if you read it. Summarise first, then draw:",
+      {code:"survey |>\n  summarise(mean_score = mean(score), .by = group) |>\n  ggplot(aes(x = group, y = mean_score)) +\n  geom_col()", lang:"r", label:"R · computer or Posit Cloud"},
+      {code:"d <- read.csv(\"survey.csv\")\ntapply(d$score, d$group, sum)    # stacked bars\ntapply(d$score, d$group, mean)   # what was asked\nbarplot(tapply(d$score, d$group, mean), ylim = c(0, 100))", lang:"r", label:"R · base R, runs in the Data Lab"},
+      {fig:'<svg viewBox="0 0 340 516"><text x="10" y="16">1. AI’s chart: geom_col() on raw rows</text><text class="s" x="10" y="33">Each bar is 6 scores stacked: totals</text><path class="d-ink" d="M64 44 L64 138 L300 138" fill="none" stroke-width="1.5"/><path class="d-soft" d="M60 138.0 L64 138.0" stroke-width="1.5"/><text class="s" x="56" y="142.0" text-anchor="end">0</text><path class="d-soft" d="M60 98.0 L64 98.0" stroke-width="1.5"/><text class="s" x="56" y="102.0" text-anchor="end">200</text><path class="d-soft" d="M60 58.0 L64 58.0" stroke-width="1.5"/><text class="s" x="56" y="62.0" text-anchor="end">400</text><rect class="d-rose" x="110" y="59.6" width="60" height="78.4" stroke-width="1.5"/><path class="d-ink" d="M110 125.8 L170 125.8" stroke-width="1"/><path class="d-ink" d="M110 111.8 L170 111.8" stroke-width="1"/><path class="d-ink" d="M110 98.6 L170 98.6" stroke-width="1"/><path class="d-ink" d="M110 82.0 L170 82.0" stroke-width="1"/><path class="d-ink" d="M110 70.0 L170 70.0" stroke-width="1"/><text x="140" y="53.6" text-anchor="middle">392</text><text x="140" y="155" text-anchor="middle">A</text><rect class="d-rose" x="210" y="54.6" width="60" height="83.4" stroke-width="1.5"/><path class="d-ink" d="M210 127.0 L270 127.0" stroke-width="1"/><path class="d-ink" d="M210 111.4 L270 111.4" stroke-width="1"/><path class="d-ink" d="M210 101.6 L270 101.6" stroke-width="1"/><path class="d-ink" d="M210 87.2 L270 87.2" stroke-width="1"/><path class="d-ink" d="M210 69.6 L270 69.6" stroke-width="1"/><text x="240" y="48.6" text-anchor="middle">417</text><text x="240" y="155" text-anchor="middle">B</text><text x="10" y="188">2. What was asked: mean score</text><text class="s" x="10" y="205">Axis from 0: means 65.3 and 69.5</text><path class="d-ink" d="M64 216 L64 310 L300 310" fill="none" stroke-width="1.5"/><path class="d-soft" d="M60 310.0 L64 310.0" stroke-width="1.5"/><text class="s" x="56" y="314.0" text-anchor="end">0</text><path class="d-soft" d="M60 265.0 L64 265.0" stroke-width="1.5"/><text class="s" x="56" y="269.0" text-anchor="end">50</text><path class="d-soft" d="M60 220.0 L64 220.0" stroke-width="1.5"/><text class="s" x="56" y="224.0" text-anchor="end">100</text><rect class="d-lup" x="110" y="251.2" width="60" height="58.8" stroke-width="1.5"/><text x="140" y="245.2" text-anchor="middle">65.3</text><text x="140" y="327" text-anchor="middle">A</text><rect class="d-lup" x="210" y="247.4" width="60" height="62.6" stroke-width="1.5"/><text x="240" y="241.4" text-anchor="middle">69.5</text><text x="240" y="327" text-anchor="middle">B</text><text x="10" y="360">3. Same means, axis cut at 60</text><text class="s" x="10" y="377">B looks 1.8× as tall; it’s only 1.06×</text><path class="d-ink" d="M64 388 L64 482 L300 482" fill="none" stroke-width="1.5"/><path class="d-soft" d="M60 482.0 L64 482.0" stroke-width="1.5"/><text class="s" x="56" y="486.0" text-anchor="end">60</text><path class="d-soft" d="M60 437.0 L64 437.0" stroke-width="1.5"/><text class="s" x="56" y="441.0" text-anchor="end">66</text><path class="d-soft" d="M60 392.0 L64 392.0" stroke-width="1.5"/><text class="s" x="56" y="396.0" text-anchor="end">72</text><rect class="d-rose" x="110" y="442.0" width="60" height="40.0" stroke-width="1.5"/><text x="140" y="436.0" text-anchor="middle">65.3</text><text x="140" y="499" text-anchor="middle">A</text><rect class="d-rose" x="210" y="410.8" width="60" height="71.2" stroke-width="1.5"/><text x="240" y="404.8" text-anchor="middle">69.5</text><text x="240" y="499" text-anchor="middle">B</text></svg>', alt:"Three small bar charts of groups A and B. 1: the AI’s chart stacks six scores per bar, giving totals of 392 and 417 on an axis marked 0, 200 and 400. 2: the means, 65.3 and 69.5, on an axis from 0 to 100; the bars look almost equal. 3: the same means on an axis from 60 to 72, where B’s bar looks 1.8 times as tall as A’s although the means differ by only 6%.", cap:"Check what each bar shows (total or mean) and where the axis starts."},
+      {list:[
+        "**Axes.** Bars need an axis that starts at zero ({{axes-baselines}}). Asked to “make the difference clearer”, an assistant may cut the axis at 60, so B looks 1.8 times as tall as A when the means differ by 6% ([[truncated-axis]]).",
+        "**Summaries.** Does each mark show a sum, mean, median or count? When groups differ in size, the mean of the group means can differ from the overall mean.",
+        "**Colour.** Defaults aren’t always colour-blind-safe, and red versus green alone fails many readers. Match the palette to the data ({{colour-in-charts}}): qualitative for groups, sequential for amounts, diverging around a meaningful middle."
+      ]},
+      {lab:"dl-r-groups", t:"Practise: compute each group’s mean score, the numbers a bar chart of means should show"}
+    ]},
+    {h:"A routine and a checklist", body:[
+      "Put the checks in an order you can repeat. It takes minutes, whoever wrote the code: an assistant, a colleague or you last month.",
+      {fig:'<svg viewBox="0 0 340 372"><defs><marker id="u8l6a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-lup" x="44" y="8" width="270" height="46" rx="8" stroke-width="2"/><text x="179" y="28" text-anchor="middle">1. Read every line</text><text class="s" x="179" y="45" text-anchor="middle">Can you say what each line does?</text><path class="d-ink" d="M179 56 L179 72" stroke-width="2" marker-end="url(#u8l6a)"/><rect class="d-lup" x="44" y="74" width="270" height="46" rx="8" stroke-width="2"/><text x="179" y="94" text-anchor="middle">2. Run a tiny known case</text><text class="s" x="179" y="111" text-anchor="middle">Answer worked out by hand first</text><path class="d-ink" d="M179 122 L179 138" stroke-width="2" marker-end="url(#u8l6a)"/><rect class="d-lup" x="44" y="140" width="270" height="46" rx="8" stroke-width="2"/><text x="179" y="160" text-anchor="middle">3. Run on the real data</text><text class="s" x="179" y="177" text-anchor="middle">Rows, NAs and ranges as expected?</text><path class="d-ink" d="M179 188 L179 204" stroke-width="2" marker-end="url(#u8l6a)"/><rect class="d-lup" x="44" y="206" width="270" height="46" rx="8" stroke-width="2"/><text x="179" y="226" text-anchor="middle">4. Cross-check another way</text><text class="s" x="179" y="243" text-anchor="middle">Second method, tool or person</text><path class="d-ink" d="M179 254 L179 270" stroke-width="2" marker-end="url(#u8l6a)"/><rect class="d-sage" x="44" y="272" width="270" height="46" rx="8" stroke-width="2"/><text x="179" y="292" text-anchor="middle">5. Record and disclose</text><text class="s" x="179" y="309" text-anchor="middle">Prompt, code, versions, date</text><path class="d-ink" d="M44 97 L20 97" fill="none" stroke-width="2"/><path class="d-ink" d="M44 163 L20 163" fill="none" stroke-width="2"/><path class="d-ink" d="M44 229 L20 229 L20 31 L42 31" fill="none" stroke-width="2" marker-end="url(#u8l6a)"/><text class="s" x="170" y="342" text-anchor="middle">A check fails? Fix the code or the prompt,</text><text class="s" x="170" y="359" text-anchor="middle">then go round again from step 1.</text></svg>', alt:"Five steps in a column: 1 read every line, 2 run a tiny known case, 3 run on the real data and check rows, NAs and ranges, 4 cross-check another way, 5 record and disclose. Lines from steps 2, 3 and 4 loop back to step 1: if a check fails, fix the code or the prompt and start again.", cap:"A routine for any AI-written analysis code."},
+      "Then, before you share any AI-assisted result, tick off this list:",
+      {list:[
+        "Every number comes from code I ran, and I can point to the line that made it.",
+        "Row counts and missing values are reported (“11 of 12 people answered”).",
+        "The test fits how the data were collected (paired? counts?).",
+        "The words match the numbers: no “proves”, no “causes” from a correlation, p-values read correctly.",
+        "Each chart shows the summary I meant, bars start at zero, colours are readable.",
+        "I opened every source, and it says what I claim.",
+        "No personal data went into a tool that wasn’t approved for it."
+      ]}
+    ]},
+    {h:"Disclosure and reproducibility", body:[
+      {lead:"If someone asks “how did you get this?”, you should be able to show them, including what the AI did."},
+      "AI output isn’t reproducible on its own. The same prompt can give a different answer each time you ask, and providers update their models, so a prompt from March may give different code in June. What *is* reproducible is the code you checked and ran. So keep an [[ai-log|AI log]]:",
+      {list:[
+        "**Prompts and replies**, saved as text in the project folder.",
+        "**The tool, the model or version it shows, and the date.**",
+        "**The final code**, in a script or Quarto report ({{reproducible-reports|Lesson 5}}), with a comment saying what you changed and how you tested it.",
+        "**Software versions**: `sessionInfo()` in R; `sys.version` and `pd.__version__` in Python."
+      ]},
+      {ex:"2026-11-20 · AI assistant (model name as shown in the app)\nAsked: base R for the share of each answer per group\nGot: prop.table(tab), which divides by the whole table\nTested: 4-row known case; fixed with margin = 1\nChecked: each row sums to 1; A matches a hand count (3/6)\nVersions: R 4.6.0 (Data Lab)", label:"An AI log entry", mono:true},
+      "Then **disclose**. Many journals, universities and courses now have rules on saying how you used AI tools, and some workplaces do too. The ICMJE, whose recommendations many medical journals follow, says journals should ask authors at submission whether and how they used AI, that a chatbot can’t be an author, and that the humans are responsible for checking its output. Rules vary, so check yours ({{ai-research-policies}}, [[ai-disclosure]]). One plain sentence is often enough: “An AI assistant (name and version) drafted the R code for Table 1; we tested it on a known case, corrected one error and checked every result.”",
+      {key:"Keep the trail: prompt → code → test → result. Then anyone, including you next year, can check the work."}
+    ]}
+   ],
+   try:[
+    {id:"t3u8-l6-x1", type:"mcq", q:"Oluwaseun pastes 300 delivery times into a chatbot that can’t run code and asks for the median. It answers “41.5 minutes”. What should he do before using it?", options:[
+      {t:"Recompute it himself with `median()` in R or a spreadsheet", ok:true, why:"Right. Without code, nothing guarantees the number was calculated. One line of R (or MEDIAN() in a spreadsheet) gives the real median, and then the chatbot’s answer doesn’t matter."},
+      {t:"Ask “Are you sure?” and use it if the chatbot says yes", why:"A chatbot can confidently confirm its own mistake. Checks have to happen outside the tool."},
+      {t:"Use it as given, because medians are too simple to get wrong", why:"Simple for a calculator, but a chat model writes likely-looking text; with 300 values, nothing guarantees it sorted them and found the middle."},
+      {t:"Round it to 42 minutes to allow for small errors", why:"Rounding doesn’t fix a number that may be wrong by any amount. Recompute it."}
+    ]},
+    {id:"t3u8-l6-x2", type:"number", q:"Amara’s known case: group A has one Yes and one No; group B has two Yes. What share of group B answered Yes? (Give a proportion between 0 and 1.)", answer:1, tol:0, unit:"", why:"Both people in group B said Yes: 2 ÷ 2 = 1 (100%). That’s the answer `prop.table(tab, margin = 1)` gives, and the one the AI’s code had to match.", wrongs:[{v:0.5, tol:0, why:"0.5 is what the AI’s `prop.table(tab)` printed: 2 Yes divided by all 4 people in the table. A group’s share divides by that group’s size, 2."},{v:0.75, tol:0, why:"That’s the share of all four people who said Yes (3 of 4). The question asks about group B only."},{v:2, tol:0, why:"2 is the count of Yes answers. A share divides the count by the group’s size: 2 ÷ 2."}]},
+    {id:"t3u8-l6-x3", type:"spot", q:"Ravi asked an assistant for the mean score of group A, from a file where one score is blank. Tap the lines that are problems.", ask:"is a problem", mono:true, parts:[
+      {t:"d <- read.csv(\"survey.csv\")", flag:false, why:"Reads the file; the blank score becomes NA. Fine."},
+      "\n",
+      {t:"d <- d[d$score > 50, ]", flag:true, why:"Nobody asked for this filter. It quietly drops everyone scoring 50 or less, and the blank score’s NA condition adds a row of NAs."},
+      "\n",
+      "a <- ",
+      {t:"d[d$group == \"A\", ]", flag:false, why:"Keeps group A’s rows with all columns: what was asked."},
+      "\n",
+      "m <- ",
+      {t:"mean(a$score, na.omit = TRUE)", flag:true, why:"`na.omit` isn’t an argument of mean(), so R silently ignores it and m stays NA. The argument is `na.rm = TRUE`; then report how many scores the mean uses."},
+      "\n",
+      {t:"n <- 6", flag:true, why:"A number typed in, not counted. With a blank score or new data it’s wrong. Count it: `sum(!is.na(a$score))`."},
+      "\n",
+      {t:"round(m, 1)", flag:false, why:"Rounding at the end, only for display: fine."}
+    ]},
+    {id:"t3u8-l6-x4", type:"match", q:"Match each problem in AI-made work to the check that catches it best.", pairs:[
+      ["`merge()` turns 4 people into 6 rows","Compare `nrow()` before and after","Repeated keys multiply rows, and unmatched ones vanish; the row count shows both."],
+      ["A mean comes out as NA","Count missing values with `colSums(is.na(d))`","One missing value makes mean() return NA; counting NAs shows where and how many."],
+      ["Shares that may use the wrong denominator","Run it on a 4-row case worked out by hand","On a case you know, a wrong denominator gives an obviously wrong share."],
+      ["A bar of 417 for a test scored out of 100","Ask whether the value is even possible","A mean can’t exceed the maximum score; an impossible value means the wrong summary."],
+      ["A reference to a 2021 journal article","Find it outside the chatbot and open it","Invented references look real; only the source itself can confirm it."]
+    ]},
+    {id:"t3u8-l6-x5", type:"mcq", q:"An AI summary says: “The groups differed significantly (p = 0.03), so there’s a 97% chance the new timetable works.” Which correction is right?", options:[
+      {t:"p = 0.03 is about the data, assuming no difference; it isn’t the chance the timetable works", ok:true, why:"Right. A p-value is about the data, assuming no real difference. It isn’t the probability of any hypothesis, as the ASA’s 2016 statement stresses."},
+      {t:"It should say there’s a 3% chance the timetable works", why:"That misreads p the other way. p isn’t the probability that the timetable works or doesn’t."},
+      {t:"It’s correct: 1 − p is the chance the effect is real", why:"This is the classic misreading. The chance that an effect is real depends on much more than one p-value."},
+      {t:"It should say the effect is large, since p is below 0.05", why:"p doesn’t measure size. A tiny effect can be significant in a big sample; look at the effect and its interval."}
+    ]},
+    {id:"t3u8-l6-x6", type:"sort", q:"An assistant made these chart choices. Which need fixing, and which are fine?", buckets:["Needs fixing","Fine as it is"], items:[
+      {t:"`geom_col()` on the raw rows, for a chart of each group’s mean", b:0, why:"geom_col() stacks the rows, so each bar shows a total. Summarise to means first."},
+      {t:"A bar chart of two means with the y-axis from 60 to 72", b:0, why:"Bars are judged by length, so the axis must start at 0. Here a 6% difference looks like nearly 80%."},
+      {t:"A line chart of daily temperatures with the y-axis from 10 to 25 °C", b:1, why:"Line charts show change by position, not length, so an axis that fits the data is fine (Unit 4)."},
+      {t:"`scale_colour_viridis_d()` to tell two groups apart", b:1, why:"viridis is designed to read for common colour vision deficiencies and in greyscale."},
+      {t:"Only red and green to tell two groups apart", b:0, why:"Many people can’t tell red from green. Use a colour-blind-safe palette, or add shapes or labels."},
+      {t:"Means calculated first, then `geom_col()`, with the axis from 0", b:1, why:"Each bar shows the intended summary on an honest baseline."}
+    ]},
+    {id:"t3u8-l6-x7", type:"order", q:"Put the routine for checking AI-written analysis code in order.", items:[
+      {t:"Read every line and say what it does", why:"Reading first catches invented functions, unwanted filters and typed-in numbers before anything runs."},
+      {t:"Run it on a tiny known case worked out by hand", why:"You can only judge the output if you already know the right answer."},
+      {t:"Run it on the real data and check rows, NAs and ranges", why:"Real data brings missing values, repeats and odd codes the tiny case may not have."},
+      {t:"Cross-check the key numbers another way", why:"A second method, tool or person catches what one route can hide."},
+      {t:"Record the prompt, code and versions, and disclose", why:"Last, keep the trail so others can check the work, and say how AI was used."}
+    ]},
+    {id:"t3u8-l6-x8", type:"explain", q:"An AI assistant gives you R code to calculate the share of each answer within each group, and its output looks believable. Explain how a tiny known case can reveal a bug the real output hides.", model:"On real data, a wrong formula can produce numbers that look plausible. A known case is a few rows where you already know the answer: say group A with one Yes and one No (50% Yes) and group B with two Yes (100%). Running the code on it, `prop.table(table(...))` reports group B as 50% Yes, exposing that it divided by the whole table’s total instead of each group’s; `margin = 1` fixes it. A sanity check helps too: each group’s shares must add up to 1.", points:["Says plausible-looking output can still be wrong", "Describes building a tiny dataset with a known answer", "Compares the code’s output with the known answer to find the bug", "Mentions a sanity check, such as shares adding to 1 per group"]}
+   ],
+   apply:{intro:"Check some AI-written code yourself. Task 1 works on any device in the Data Lab; task 2 needs R with the tidyverse (a computer or Posit Cloud); task 3 is a note you can write anywhere. If you don’t use AI tools, use the AI-written code from this lesson instead.", tasks:[
+     {t:"Test AI-written base R in the Data Lab (any device)", how:["Open the Data Lab’s **Compare groups** challenge (mean score for each group) and copy its task text","Paste the task into an AI assistant you’re allowed to use, adding: “base R only, the data frame is d with columns id, group, age, hours, score, answer”. Share no personal data","Before running it, write one line per line of code saying what it does. Mark anything you can’t explain and look it up","Make a known case in the editor, such as `test <- data.frame(group = c(\"A\", \"A\", \"B\"), score = c(50, 70, 90))` (A’s mean is 60, B’s is 90). Run the AI’s code on it, with `d <- test` in place of its read.csv() line","Then put the read.csv() line back, run it on survey.csv and press **Check**: the lab tests it again on a second, hidden file. Note anything you had to fix"]},
+     {t:"Check an AI-made chart and test (computer or Posit Cloud)", how:["Ask an assistant for “a ggplot2 bar chart of mean score by group” and “a test of whether groups A and B differ in score” for survey.csv","Run the chart code. Check what each bar shows (compare with `tapply(survey$score, survey$group, mean)`), where the axis starts, and whether the colours are colour-blind-safe","Read the test code: which test is it, and does it fit 12 different people in two groups? (A paired test would not.) Check how the assistant describes the p-value against this lesson’s table","On a phone instead: in the Data Lab, after `d <- read.csv(\"survey.csv\")`, run `barplot(tapply(d$score, d$group, sum))` and `barplot(tapply(d$score, d$group, mean))` and explain the difference"]},
+     {t:"Start an AI log and write a disclosure (any device)", how:["Make a note or text file called AI-log in your project folder or notes app","For task 1 or 2, record: the date, the tool and the model name it shows, your prompt, what came back, how you tested it, what you fixed, and the R version (`R.version.string` in the Data Lab)","Write one disclosure sentence you could put in a report: what the AI did, and how you checked it"]}
+   ], proof:"An AI log entry with your prompt, the code you got, the known case you tested it on and its result, any fix, the R version, and a one-sentence disclosure, plus the Data Lab’s “Compare groups” challenge marked as passed (or, without AI, the same checks on this lesson’s code)."},
+   read:[{book:"r4ds", where:"Chapter 8, “Workflow: getting help”: section “Making a reprex” (small, self-contained examples that reproduce a problem)"},{book:"ostat", where:"Chapter 10, Section 10.4 “Matched or Paired Samples”"},{book:"wilke", where:"Chapter 17, “The principle of proportional ink”, and Chapter 19, “Common pitfalls of color use”"},{book:"missing", where:"“Agentic Coding” → What to watch out for"}]
   }
   ],
   checkpoint:[
@@ -1343,6 +1513,62 @@ ICA.addUnit({
    }
   ],
   "checked": "2026-11"
+ },
+ {id:"checking-ai-data-work", title:"Checking AI-assisted data analysis", aka:["AI-written code","AI statistics","AI-made charts","verifying AI output","LLM data analysis","AI log"], tags:["ai","r","statistics","charts","reproducibility"],
+  summary:"Where AI assistants help and where they go wrong in data work, and a routine for checking their code, statistics, charts and sources before you use or share them.",
+  levels:{
+   starter:[
+    "AI chatbots and coding assistants can explain an error, draft R or Python, suggest a chart or translate code between languages in seconds. That makes them useful helpers for data work. But they write what *usually* comes next, not what is true of *your* data.",
+    "A chat model that doesn’t run code may give a number that was never calculated. Code it writes may run perfectly and answer a different question: dividing by the wrong total, dropping people with missing values, or counting some people twice after a join. Its explanation of a p-value may be the classic misreading, and its references may not exist.",
+    "So treat AI output as a draft. Run the code yourself, first on a tiny example where you know the answer, then on the real data, checking how many rows and missing values you have. Open every source. Keep a short log of what you asked, what you got and how you checked it, and say in your work how you used AI.",
+    {key:"The assistant drafts; you verify. You stay responsible for every number."}
+   ],
+   builder:[
+    {h:"A routine for AI-written code"},
+    {ol:["**Read every line** and say what it does. Look up anything you can’t explain; question lines you didn’t ask for (an extra filter, a typed-in number, `suppressWarnings()`).","**Run a known case**: a few rows whose answer you worked out by hand, including a missing value and unequal groups.","**Run the real data** and check `nrow()`, `colSums(is.na(d))` and `range()` after each step.","**Cross-check** key numbers another way (a second function, a pivot table, a hand count).","**Record and disclose**: prompt, reply, final code, tool and software versions, date."]},
+    {h:"Statistics"},
+    {list:["**Numbers with no code** are guesses until recomputed. Check that shares add up, counts match rows, and means sit inside the data’s range.","**Tests**: the assistant can’t see the design. Paired data need a paired test; chi-square needs counts, not percentages; groups of different sizes need care.","**p-values**: p is not the chance a hypothesis is true, a large p doesn’t prove “no effect”, and significance isn’t size.","**Citations**: find and open every source outside the chatbot."]},
+    {h:"Charts"},
+    "Check what each mark shows (`geom_col()` on raw rows stacks them into totals), where a bar chart’s axis starts (zero), and whether colours suit the data and readers with colour vision deficiency."
+   ],
+   pro:[
+    "**Why the errors are silent.** Many failures produce no error: R’s `mean()` passes unknown arguments to `...`, so `na.omit = TRUE` is ignored; `prop.table()` without `margin` divides by the grand total; `merge()` defaults to an inner join and multiplies rows when keys repeat; pandas’ `mean()` skips NaN by default while R’s returns NA, so a faithful-looking translation changes the result. Defaults are where translations and AI drafts most often go wrong.",
+    "**Evidence on references.** Walters and Wilder (2023, *Scientific Reports*) checked 636 references in 84 short literature reviews written by ChatGPT: 55% of GPT-3.5’s and 18% of GPT-4’s were fabricated, and many real ones contained substantive errors. Tools have changed since, so treat the figures as a snapshot, not a current rate; the check (open the source) is the same.",
+    "**Reproducibility.** Model output varies between runs and versions, so the prompt is not the method: the checked code is. Keep the code in a script or Quarto report, record `sessionInfo()` (or `sys.version` and package versions), and keep the AI log beside it.",
+    "**Disclosure and responsibility.** The ICMJE says journals should require authors to disclose at submission whether they used AI-assisted technologies, and to describe how (in the cover letter and, where relevant, the manuscript); it says chatbots should not be listed as authors because they can’t take responsibility, and holds humans accountable for checking AI output; COPE takes the same line. Institutions and courses set their own rules. Don’t upload personal or confidential data to tools that aren’t approved for it."
+   ]
+  },
+  related:["known-case-testing","ai-code-review","ai-chatbot-accuracy","statistical-significance-basics","misleading-charts","ai-research-policies","reproducible-reports"],
+  read:[{book:"r4ds", where:"Chapter 8, “Workflow: getting help”"},{book:"missing", where:"“Agentic Coding” → What to watch out for"}],
+  sources:[{t:"Walters & Wilder (2023), Fabrication and errors in the bibliographic citations generated by ChatGPT, Scientific Reports", url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC10484980/"},{t:"ICMJE: AI use by authors", url:"https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html"},{t:"Wasserstein & Lazar (2016), The ASA Statement on p-Values: Context, Process, and Purpose", url:"https://doi.org/10.1080/00031305.2016.1154108"}],
+  checked:"2026-11"
+ },
+ {id:"known-case-testing", title:"Testing analysis code on a known case", aka:["known-answer test","toy data","test data","sanity checks","row-count checks","silent failure"], tags:["r","python","testing","data"],
+  summary:"Check analysis code by running it on tiny data whose answer you worked out by hand, then checking rows, missing values and ranges on the real data.",
+  levels:{
+   starter:[
+    "How do you know a piece of analysis code is right? Running without an error isn’t enough: code can run perfectly and still give the wrong answer.",
+    "The simplest test borrows from the kitchen: before cooking for twenty, make one portion and taste it. Make a tiny table, three or four rows, where you can work out the answer in your head. Group A: scores 50 and 70, so the mean is 60. Run the code on it. If it doesn’t say 60, the code is wrong, and you found out before it mattered.",
+    "Then, on the real data, do quick **sanity checks**: is the number of rows what you expect? Are any values missing? Is every result possible (a share between 0 and 1, a mean inside the data’s range)? These checks catch most mistakes, whoever wrote the code: you, a colleague or an AI assistant."
+   ],
+   builder:[
+    {h:"Building a good known case"},
+    {list:["Make it small enough to check by hand (3–8 rows).","Include the traps: unequal group sizes, a missing value, a tie, a value exactly on a boundary (30 when the rule is “30 or over”), a repeated id.","Write the expected answer down **before** running the code."]},
+    {code:"test <- data.frame(group = c(\"A\", \"A\", \"B\"),\n  score = c(50, NA, 90))\ntapply(test$score, test$group, mean, na.rm = TRUE)\n# expected: A 50, B 90", lang:"r", label:"R · base R, runs in the Data Lab"},
+    {h:"Checks on the real data"},
+    {table:[["Check","Base R","pandas"],["Rows","`nrow(d)`","`len(df)`"],["Missing values","`colSums(is.na(d))`","`df.isna().sum()`"],["Ranges","`range(d$x)`, `summary(d)`","`df.describe()`"],["Repeated keys","`anyDuplicated(d$id)`","`df[\"id\"].duplicated().sum()`"]]},
+    "Run them after every step that can change rows: reading, filtering, joining, reshaping."
+   ],
+   pro:[
+    "**Silent failures to know.** In R, unknown arguments to `mean()` disappear into `...`; `d[d$x > 30, ]` adds NA rows when `x` has NAs; `prop.table()` without `margin` uses the grand total; `merge()` is an inner join by default (`all.x = TRUE` keeps unmatched rows) and gives one row per match, so rows multiply when keys repeat. In pandas, `mean()` and `groupby` skip NaN by default, and `value_counts()` drops NaN unless `dropna=False`; `groupby().agg([\"count\", \"size\"])` shows non-missing values beside rows.",
+    "**From checks to tests.** A known case you keep is a test. In R, `stopifnot(nrow(m) == nrow(people))` stops a script when an assumption breaks; the testthat package formalises tests for functions. In Python, `assert` and pytest do the same (Track 2, Unit 11).",
+    "**Minimal examples.** The same small data make a reproducible example (“reprex”) when you ask for help: `dput(head(d))` prints code that rebuilds your data, and the reprex package formats code and output for sharing (R for Data Science, “Workflow: getting help”)."
+   ]
+  },
+  related:["checking-ai-data-work","r-errors","missing-values","sql-joins","testing-basics","reproducible-reports"],
+  read:[{book:"r4ds", where:"Chapter 8, “Workflow: getting help”: section “Making a reprex”"}],
+  sources:[{t:"R documentation: mean (Arithmetic Mean)", url:"https://stat.ethz.ch/R-manual/R-devel/library/base/html/mean.html"},{t:"R documentation: merge (Merge Two Data Frames)", url:"https://stat.ethz.ch/R-manual/R-devel/library/base/html/merge.html"},{t:"pandas documentation: DataFrame.mean", url:"https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.mean.html"}],
+  checked:"2026-11"
  }
 ],
   terms:[
@@ -1477,7 +1703,11 @@ ICA.addUnit({
   "term": "code chunk",
   "def": "A block of code inside a Quarto document, fenced by three backticks and `{r}`, which runs when the document is rendered; `#|` lines set its options.",
   "codex": "reproducible-reports"
- }
+ },
+ {id:"known-case-test", term:"known-case test", def:"Running code on a tiny dataset whose correct answer you worked out by hand first, to see whether the code gets it right.", codex:"known-case-testing"},
+ {id:"sanity-check", term:"sanity check", def:"A quick test of whether a result is even possible: shares that add up to 1, a mean inside the data’s range, a row count you expected.", codex:"known-case-testing"},
+ {id:"silent-failure", term:"silent failure", def:"Code that runs with no error or warning but gives a wrong result, such as `mean(x, na.omit = TRUE)`, where R quietly ignores the wrong argument name.", codex:"known-case-testing"},
+ {id:"ai-log", term:"AI log", def:"A dated record of how you used an AI tool in a piece of work: the tool and version, your prompts, its replies, what you changed and how you checked it.", codex:"checking-ai-data-work"}
 ],
   bank:[
  {
@@ -2604,6 +2834,56 @@ ICA.addUnit({
     "why": "R, RStudio Desktop and Quarto are free and open source."
    }
   ]
- }
+ },
+ {id:"t3u8-q46", lesson:"t3u8-l6", level:2, q:"Kenji’s AI-written code gives each group’s share of Yes answers as 0.25 and 0.25, on data where he knows half of each group said Yes. What is the most likely bug?", options:[
+   {t:"`table()` silently dropped every No and Unsure answer", why:"table() counts every value it sees, so No and Unsure are still there. The shares are too small, which points to the wrong denominator."},
+   {t:"`read.csv()` mixed up the group and answer columns", why:"Mixed-up columns would give odd labels, not neat quarters. The numbers are exactly half of the right ones: the whole-table total was used."},
+   {t:"`prop.table()` divided by the whole table’s total", ok:true, why:"Without `margin = 1`, prop.table() divides every count by the grand total, so with two equal groups each share comes out at half its true value."},
+   {t:"`prop.table()` rounds each share down to a quarter", why:"prop.table() doesn’t round. The values are exact; they’re just divided by the wrong total."}]},
+ {id:"t3u8-q47", lesson:"t3u8-l6", level:1, q:"What does `mean(x, na.omit = TRUE)` return in R when x contains an NA?", options:[
+   {t:"The mean of the values that aren’t missing", why:"That needs `na.rm = TRUE`. `na.omit` isn’t an argument of mean(), so it changes nothing."},
+   {t:"An error saying na.omit is not an argument", why:"mean() passes unknown arguments to `...` without complaint, so there’s no error. That’s what makes it a silent failure."},
+   {t:"NA: the unknown argument is ignored", ok:true, why:"R quietly ignores `na.omit = TRUE`, and one missing value makes the mean NA. The right argument is `na.rm = TRUE`."},
+   {t:"Zero, because missing values count as 0", why:"R never treats NA as 0. A missing value makes the plain mean NA."}]},
+ {id:"t3u8-q48", lesson:"t3u8-l6", level:3, q:"After an AI-written `merge(people, visits, by = \"id\")`, Lucía’s 50 people have become 140 rows, and 6 people are missing. What explains both?", options:[
+   {t:"merge() sorts the rows and copies the last one", why:"merge() doesn’t copy rows at random. The extra rows come from people with several visits."},
+   {t:"Repeated visits repeat people; no visits drops them", ok:true, why:"merge() gives one row per match, so someone with three visits appears three times, and by default (an inner join) people with no visits are left out. `all.x = TRUE` keeps them."},
+   {t:"The id column was read as text, so ids were mixed up", why:"Text ids still match exactly when they’re written the same way. The row changes come from the join itself."},
+   {t:"merge() adds NA rows for every missing match", why:"By default merge() drops unmatched people; only `all.x = TRUE` keeps them, with NAs. Neither explains the extra rows, which come from repeated visits."}]},
+ {id:"t3u8-q49", lesson:"t3u8-l6", level:3, q:"An assistant translates `mean(d$score)` from R into pandas as `df[\"score\"].mean()`. The score column has one missing value. What changes?", options:[
+   {t:"Nothing: both return NA until missing values are removed", why:"pandas’ mean() has `skipna=True` by default, so it skips the missing value and returns a number."},
+   {t:"Nothing: both skip the missing value and average the rest", why:"R’s mean() doesn’t skip NAs unless you add `na.rm = TRUE`; it returns NA."},
+   {t:"R returns NA; pandas skips the NA and returns a number", ok:true, why:"The defaults differ: R’s mean() returns NA, pandas skips missing values (`skipna=True`). A translation can change the result without any error."},
+   {t:"pandas stops with an error that names the missing row", why:"pandas raises no error here; it quietly skips the missing value. That’s why you check with `df.isna().sum()`."}]},
+ {id:"t3u8-q50", lesson:"t3u8-l6", level:2, q:"Fatima has quiz scores for the same 20 students before and after a workshop. An assistant runs `t.test(after, before)`. What should she change?", options:[
+   {t:"Add `paired = TRUE`, because each pair is one student", ok:true, why:"Each before score and after score belong to the same student. A paired test looks at each student’s change, which the unpaired test ignores."},
+   {t:"Nothing: R’s default t-test suits every comparison", why:"R’s default is a Welch test for two independent groups. These scores aren’t independent: they come in pairs."},
+   {t:"Use `chisq.test()`, because these are quiz scores", why:"Chi-square tests compare counts in categories, not mean scores."},
+   {t:"Add `var.equal = TRUE`, so the two groups are pooled", why:"That switches to the pooled two-sample test, which still treats the two columns as unrelated groups."}]},
+ {id:"t3u8-q51", lesson:"t3u8-l6", level:2, q:"In 20 people per group, 6 versus 12 said Yes. An assistant runs `chisq.test()` on the percentages (30% and 60%) instead of the counts. Why is that wrong?", options:[
+   {t:"It needs counts; percentages act like 100 people", ok:true, why:"Chi-square treats the numbers as counts, so 30 and 60 out of 100 look like five times as much data. Here p falls from about 0.11 to about 0.00004."},
+   {t:"Chi-square tests compare means, not proportions", why:"Chi-square tests do compare counts in categories (and so proportions). The mistake is giving it percentages instead of counts."},
+   {t:"The percentages should be rounded to whole tens first", why:"30% and 60% are already whole tens. Rounding doesn’t turn percentages into counts."},
+   {t:"Nothing: the test gives the same p for both", why:"It doesn’t: p ≈ 0.11 from the counts and p ≈ 0.00004 from the percentages."}]},
+ {id:"t3u8-q52", lesson:"t3u8-l6", level:1, q:"An AI summary reports p = 0.03. Which reading is correct?", options:[
+   {t:"There is a 97% chance that the effect is real", why:"A p-value isn’t the probability that a hypothesis is true or false."},
+   {t:"There’s a 3% chance the results are due to chance alone", why:"The ASA’s 2016 statement warns against exactly this reading. p assumes no effect; it doesn’t give the chance that chance alone was at work."},
+   {t:"Data this extreme would be unusual if there were no effect", ok:true, why:"p is the probability of results at least this extreme if there were no real effect (and the model holds)."},
+   {t:"The effect is large enough to matter in practice", why:"p doesn’t measure size or importance. Look at the effect and its confidence interval."}]},
+ {id:"t3u8-q53", lesson:"t3u8-l6", level:3, q:"An assistant’s summary cites “Okafor & Lin (2021), *Journal of Data Habits* 14(2)” with a DOI. What’s the best check before Hana cites it?", options:[
+   {t:"Ask the assistant to confirm that the paper is real", why:"A chatbot can confidently confirm a reference it invented. The check has to happen outside the tool."},
+   {t:"Check that the reference follows APA style exactly", why:"Invented references are often perfectly formatted. Style says nothing about whether the paper exists."},
+   {t:"Open it via the DOI or a library search and read it", ok:true, why:"Only the source itself shows that it exists and says what the summary claims."},
+   {t:"Keep it if the journal and authors sound plausible", why:"Fabricated references are built to sound plausible. Look the source up and read it."}]},
+ {id:"t3u8-q54", lesson:"t3u8-l6", level:3, q:"An AI-made bar chart of the mean score per group shows bars of 392 and 417, for a test scored out of 100. What happened?", options:[
+   {t:"`geom_col()` stacked every row’s score into a total", ok:true, why:"geom_col() draws values as they are and stacks rows that share an x position, so each bar is six scores added up. Summarise to means first."},
+   {t:"The axis was truncated, which makes the gap look far bigger", why:"A truncated axis changes how big the gap looks, not the values on the bars. Values of 392 and 417 are impossible as mean scores out of 100."},
+   {t:"The colour palette isn’t colour-blind-safe", why:"Colour can make a chart hard to read, but it can’t change bar heights."},
+   {t:"R turned the scores into percentages", why:"Percentages of a score out of 100 would still be at most 100. These bars are totals."}]},
+ {id:"t3u8-q55", lesson:"t3u8-l6", level:2, q:"Mei used an AI assistant to draft the R code in her report. Which record lets someone check her work a year later?", options:[
+   {t:"Prompts, final tested code, versions and the date", ok:true, why:"The checked code is what reproduces the results; prompts, tool and software versions and the date show how it was made."},
+   {t:"A screenshot of each chart and the final numbers", why:"Screenshots show results but not how they were made, so nobody can rerun or check the analysis."},
+   {t:"The tool’s name, since asking again regenerates the code", why:"Asking again can give different code: outputs vary and models are updated. Keep the code itself."},
+   {t:"Nothing: the same prompt always gives the same code", why:"The same prompt can give different answers each time, and models change over time."}]}
 ]
 });

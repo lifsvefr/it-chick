@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=61">
+<link rel="stylesheet" href="../shared/style.css?v=62">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=61"></script>
+<script src="../shared/engine.js?v=62"></script>
 <style>
 .kinds{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
 .kind{display:grid;gap:4px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:12px;color:var(--ink)}
@@ -79,7 +79,8 @@ var KINDS = [
   ["quiz","Quiz","A lesson’s check questions or the unit checkpoint, with answers on a separate page."],
   ["notes","Notes pages","A lesson’s Apply tasks with space to write."],
   ["reading","Reading checklist","Every reading for a unit, with boxes to tick."],
-  ["portfolio","My portfolio","Everything you wrote in a unit’s Apply tasks, your self-checks and scores, ready to keep or show."]
+  ["portfolio","My portfolio","Everything you wrote in a unit’s Apply tasks, your self-checks and scores, ready to keep or show."],
+  ["capstone","My capstone record","The capstone project for the chosen unit’s track: the brief, your notes for each stage and your rubric self-check."]
 ];
 var L = "ABCDEFGHIJ";
 
@@ -113,6 +114,9 @@ function paperEx(n, ex){
     var segs = [], txt = ex.parts.map(function(p){ if (typeof p === "string") return md(p); segs.push(p); return '<span class="seg">'+md(p.t)+'<sup>'+segs.length+'</sup></span>'; }).join("");
     q += '<p><i>Circle the number of every part that '+esc(ex.ask || "is a warning sign")+'.</i></p><div class="box">'+txt+'</div>';
     a += segs.map(function(s, i){ return s.flag ? i+1 : null; }).filter(Boolean).join(", ")+'</p><ol>'+segs.map(function(s){ return "<li><b>"+(s.flag ? "Yes: " : "Fine: ")+dot(md(s.t))+"</b> "+md(s.why||"")+"</li>"; }).join("")+'</ol>';
+  } else if (ex.type === "explain"){
+    q += '<p><i>'+esc(ex.size || "Write 2–4 sentences.")+'</i></p><div class="box" style="min-height:120px"></div>';
+    a += '</p><p><b>A model answer:</b> '+md(ex.model)+'</p><ul>'+ex.points.map(function(x){ return "<li>☐ "+md(x)+"</li>"; }).join("")+'</ul>';
   } else if (ex.type === "number"){
     q += '<p>Answer: ____________ '+esc(ex.unit||"")+'</p>';
     a += esc(ex.answer)+" "+esc(ex.unit||"")+'</p><p>'+md(ex.why||"")+'</p>'+((ex.wrongs||[]).length ? "<ul>"+ex.wrongs.map(function(w){ return "<li><b>"+esc(w.v)+":</b> "+md(w.why)+"</li>"; }).join("")+"</ul>" : "");
@@ -192,6 +196,17 @@ function docPortfolio(u){
   if (!any) h += '<p class="meta">Nothing written yet. Your notes from the Apply tasks appear here as you save them.</p>';
   return h;
 }
+function docCapstone(c){
+  if (!c) return '<p class="meta">This track has no capstone project yet.</p>';
+  var s = ICA.load().lessons[c.id] || {}, notes = s.notes || {}, apply = s.apply || {}, rub = s.rubric || {}, SELF = ["Not yet", "Partly", "Yes"];
+  var h = '<div class="meta">IT CHICK Academy · capstone record</div><h1>'+esc(ICA.tracks[c.track].name)+': '+esc(c.title)+'</h1><p class="meta">Printed '+new Date().toISOString().slice(0, 10)+(s.done ? ' · finished '+new Date(s.done).toISOString().slice(0, 10) : ' · in progress')+'</p>';
+  h += (c.brief || []).map(function(p){ return '<p>'+md(p)+'</p>'; }).join("");
+  if (c.deliver) h += '<div class="box"><b>What I set out to make:</b> '+md(c.deliver)+'</div>';
+  h += '<h2>Stages</h2>';
+  c.stages.forEach(function(st, i){ h += '<p>'+(apply[i] ? "☑" : "☐")+' <b>'+(i + 1)+'.</b> '+md(st.t)+'</p>'+(notes[i] ? '<div class="box mine">'+esc(notes[i]).replace(/\n/g, "<br>")+'</div>' : ''); });
+  h += '<h2>Rubric: my self-check</h2><table class="rub"><tr><th>Criterion</th><th>What good looks like</th><th>Me</th></tr>'+c.rubric.map(function(r, i){ return '<tr><td><b>'+md(r.c)+'</b></td><td>'+md(r.d)+'</td><td>'+(rub[i] == null ? "–" : SELF[rub[i]])+'</td></tr>'; }).join("")+'</table>';
+  return h;
+}
 function docReading(u){
   var h = head("Reading for Unit "+u.n+": "+u.title, ICA.tracks[u.track].name+" · reading checklist");
   var books = {}; (u.read||[]).forEach(function(r){ books[r.book] = 1; });
@@ -219,6 +234,7 @@ function show(kind, uid, lid){
   if (kind === "cheat"){ html = docCheat(u); name = "Cheat sheet"; }
   else if (kind === "reading"){ html = docReading(u); name = "Reading checklist"; }
   else if (kind === "portfolio"){ html = docPortfolio(u); name = "My portfolio"; }
+  else if (kind === "capstone"){ html = docCapstone(ICA.capstones[u.track]); name = "My capstone record"; }
   else if (kind === "quiz"){ html = docQuiz(l, u); name = "Quiz"; }
   else { if (!l) l = u.lessons[0]; html = kind === "worksheet" ? docWorksheet(l) : docNotes(l); name = kind === "worksheet" ? "Worksheet" : "Notes pages"; }
   setTitle(name);

@@ -153,7 +153,8 @@ ICA.addUnit({
       {t:"Sketch and make two candidates", why:"Comparing two real options beats trusting the first idea or the app’s suggestion."},
       {t:"Ask what a busy reader would conclude in five seconds, and keep the better one", why:"The test of a chart is whether it answers the question quickly and honestly."},
       {t:"Fix the axes, colour and labels", why:"Polish comes last, once the chart type is right."}
-    ]}
+    ]},
+    {id:"t3u4-l1-x8", type:"explain", q:"A friend shows the sales of six products as a pie chart and asks whether product C or D sold more; the two are close. Explain why a sorted bar chart would answer the question better.", hint:"Which visual features do people judge most accurately?", model:"A chart turns numbers into visual features, and people judge positions along a shared scale most accurately, then lengths, while angles and areas are harder. In the pie, C and D are nearly equal angles and areas, so the difference is hard to see. In a bar chart every bar starts from the same baseline, so you compare where the ends fall on one scale, and sorting the bars shows the ranking at a glance. Pies suit a few parts of one whole, not close comparisons.", points:["Says positions and lengths are read more accurately than angles or areas", "Explains that the close slices are hard to compare in the pie", "Says bars share a baseline and scale", "Mentions that sorting shows the ranking"]}
    ],
    apply:{intro:"Make the charts yourself. Any free option works: Excel for the web with a free Microsoft account, Google Sheets with a free Google account (also fine on a phone, though the phone app has fewer chart settings), LibreOffice Calc, or Numbers on an Apple device.", tasks:[
      {t:"Chart the same data as a pie and as sorted bars", app:{
@@ -303,7 +304,8 @@ ICA.addUnit({
       {t:"Log scales only work for money", why:"They work for any positive quantity, especially when values span orders of magnitude."},
       {t:"She must start the log axis at zero", why:"A log axis can’t include zero at all; it typically starts at a positive value like 1."},
       {t:"Nothing: apps convert zeros automatically", why:"Excel’s help says a log scale can’t be used for zero or negative values. Apps may drop such points or warn you."}
-    ]}
+    ]},
+    {id:"t3u4-l2-x8", type:"explain", q:"Explain why a bar chart’s value axis must start at zero, but a line chart of a patient’s temperature over a day can start at 36 °C.", model:"Under the principle of proportional ink, shaded areas must be proportional to the values they show. A bar shows its value by its length, so if the axis starts above zero, the lengths show only the part above the cut-off and differences look exaggerated. A line shows values by position and change by slope; no length or area claims to be the value. Since 0 °C means nothing for a human body, an axis from about 36 to 39 °C makes a fever visible. The axis start should still be labelled.", points:["States the principle of proportional ink", "Explains that a bar’s length is read as its value", "Explains that a line shows values by position and slope, not length", "Says zero is meaningless for body temperature, so zooming in is honest if labelled"]}
    ],
    apply:{intro:"Use the bus-route numbers from this lesson (Route A–F: 93, 91, 88, 86, 84, 81) or data of your own.", tasks:[
      {t:"Set the axis start yourself, then put it back to zero", app:{
@@ -463,7 +465,8 @@ ICA.addUnit({
       {t:"Ignore it: deuteranopia is too rare to matter", why:"Red–green types are the most common colour-vision deficiencies, affecting several percent of readers."},
       {t:"Make all 20 bars the same colour", why:"That removes the clash but also removes the regions, which are what the colours were there to show."},
       {t:"Add a note asking colour-blind readers to use a simulator", why:"The designer should fix the chart; readers shouldn’t need special tools."}
-    ]}
+    ]},
+    {id:"t3u4-l3-x8", type:"explain", q:"A line chart uses a red line and a green line for two regions, with a legend in the corner. Explain why it may fail some readers, and how you would fix it.", model:"The most common colour-vision deficiencies make reds and greens hard to tell apart, so some readers can’t match each line to the legend. Colour is also the only clue, which accessibility guidance says it mustn’t be. I’d label each line directly at its end, add a second cue such as different marker shapes or line styles, and switch to a colour-blind-safe pair such as blue and orange with enough contrast against the background. Then I’d check the chart in greyscale or a colour-vision simulator.", points:["Says red–green is hard to tell apart for the most common colour-vision deficiencies", "Says colour shouldn’t be the only way information is shown", "Suggests direct labels or redundant coding (shapes, line styles)", "Suggests a safer palette and testing in greyscale or a simulator"]}
    ],
    apply:{intro:"Recolour a chart, then test it. Use any chart from Lessons 1–2, or the three-park data: Riverside 5.2, 5.6, 6.1, 6.8, 7.4, 7.9; Hilltop 4.1, 4.3, 4.2, 4.6, 4.8, 5.1; Old Mill 3.0, 2.8, 2.9, 2.6, 2.4, 2.2 (March to August).", tasks:[
      {t:"Recolour a chart with Okabe–Ito hex codes", app:{
@@ -611,7 +614,8 @@ ICA.addUnit({
       {t:"Nothing: all error bars mean the same thing, so no note is needed", why:"The same data can give bars of very different lengths depending on whether they show SD, SE or an interval."},
       {t:"The minimum and maximum scores", why:"Error bars rarely show minimum and maximum; if they did, the caption would still need to say so."},
       {t:"An apology for the uncertainty", why:"Uncertainty is normal. Explaining it is enough."}
-    ]}
+    ]},
+    {id:"t3u4-l4-x8", type:"explain", q:"A study of 100 commuters finds a mean journey of 40 minutes with a standard deviation of 10 minutes. One chart’s error bar runs from 30 to 50 minutes; another’s runs from 39 to 41. Explain how both can be honest, and what each caption must say.", model:"The first bar is the mean ± 1 standard deviation. It describes individuals: most commuters’ journeys take roughly 30 to 50 minutes. The second is the mean ± 1 standard error, SD ÷ √n = 10 ÷ √100 = 1 minute. It describes how precisely the mean is known, not how journeys vary. Same data, different questions. Because bars that look alike can mean very different things, each caption must say what the bars show, such as “±1 SD” or “±1 SE”, or which confidence interval.", points:["Identifies the wide bar as ±1 standard deviation", "Identifies the narrow bar as ±1 standard error and calculates it (10 ÷ √100 = 1)", "Says SD describes individuals and SE the precision of the mean", "Says the caption must state what the error bars represent"]}
    ],
    apply:{intro:"Put the field guide to work on real charts, then show uncertainty in one of your own.", tasks:[
      {t:"Audit a published chart with the field guide", how:["Find a chart in the news, a report or social media that makes a strong claim.","Go through the field-guide table: axis start, areas or icons, 3D, time window, running totals, totals or rates, shared scales, two y axes, uncertainty.","For each problem you find, write the fix in one line.","If you can find the original data, sketch or make the fixed version."], write:"The chart, the problems you found and your fixes."},
@@ -772,7 +776,8 @@ ICA.addUnit({
       {t:"A grid of lines around every cell, with everything centred", why:"Lines between every cell add clutter, and centred numbers are hard to compare digit by digit."},
       {t:"Numbers left-aligned so they line up with the text", why:"Right-aligned numbers with equal decimals let place values line up."},
       {t:"Caption below the table, as for figures", why:"Tables are read top to bottom like text, so their captions go above."}
-    ]}
+    ]},
+    {id:"t3u4-l5-x8", type:"explain", q:"A chart of the share of buses running on time each month in 2025 is titled “Bus punctuality”. Punctuality rose after a new timetable in April. Explain why the title is weak and what a better title and subtitle would do.", model:"“Bus punctuality” only names the topic, so readers, especially busy ones, must work out the point for themselves. A statement title says what to see, for example “More buses ran on time after the April timetable change”, and it must be true of the chart. A subtitle then gives the statistical details: what was measured, where, when and in what units, such as “Share of buses within 5 minutes of schedule, by month, 2025”. Both belong in the page text too, not only inside the image.", points:["Says the title names the topic but not the point", "Gives a statement title that says what readers should see", "Says the subtitle gives what, where, when and units", "Notes that the title must be supported by the chart (or should be in the text, not only the image)"]}
    ],
    apply:{intro:"Finish one chart properly: titles, notes and alt text. Use a chart from earlier lessons, or the library data: J–D 2025 visits (thousands) 4.2, 4.4, 4.6, 4.5, 4.8, 2.9, 1.6, 4.9, 5.4, 5.6, 5.8, 6.1.", tasks:[
      {t:"Give the chart a statement title, a subtitle and axis titles", app:{

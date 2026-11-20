@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>JLPT Practice Room · IT CHICK Academy</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" type="image/png" href="../shared/icons/favicon.png">
+<link rel="apple-touch-icon" href="../shared/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="IT CHICK">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css?v=62">
+<script src="../shared/engine.js?v=62"></script>
+<script src="../data/lab-jlpt.js?v=62"></script>
+<style>
+[lang="ja"],.ja{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic UI","Yu Gothic","Meiryo",var(--body);font-feature-settings:normal}
+.mocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.mock{display:grid;gap:6px;background:var(--panel);border:1.5px solid var(--line);border-radius:16px;padding:13px 14px;color:var(--ink);text-decoration:none}
+a.mock:hover{border-color:var(--lupine)}
+.mock b{font-family:var(--display);font-size:1.1em}
+.mock .st{font-size:.86em;color:var(--soft)}
+.hud{position:sticky;top:calc(env(safe-area-inset-top,0px) + 58px);z-index:5;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-family:var(--mono);font-weight:600;font-size:.9em}
+.hud .low{color:var(--rose)}
+.part{display:grid;gap:12px}
+.instr{font-weight:700;line-height:1.6}
+.instr .en{display:block;font-weight:400;font-size:.85em;color:var(--soft);font-family:var(--body)}
+.passage{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;line-height:2;white-space:pre-line}
+.item{display:grid;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.item .q{line-height:2}
+.item .q b.n{font-family:var(--mono);margin-right:6px}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.opts.long{grid-template-columns:1fr}
+.opts button{display:flex;gap:8px;align-items:flex-start;text-align:left;background:var(--paper,#fffaf2);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit;color:var(--ink);cursor:pointer;line-height:1.6}
+.opts button .k{font-family:var(--mono);font-size:.85em;color:var(--soft);min-width:1.2em}
+.opts button[aria-pressed="true"]{border-color:var(--lupine);background:var(--lupineTint,#e3eef0)}
+.opts button.right{border-color:var(--sage);background:var(--sageTint)}
+.opts button.wrong{border-color:var(--rose);background:var(--roseTint,#f6e1dc)}
+.why{font-size:.92em;color:var(--ink);background:var(--bg);border-radius:10px;padding:8px 10px}
+u{text-decoration-thickness:2px;text-underline-offset:4px}
+.bars{display:grid;gap:8px}
+.bars .row2{display:grid;grid-template-columns:8.5em 1fr 4.5em;gap:8px;align-items:center}
+.bars .bar{height:12px}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite" data-nosay><p class="muted">Loading…</p></main>
+<script>
+/* JLPT Practice Room (Pass 25): original mini mock tests in JLPT format, N5–N3, for reading-based sections.
+   Data: data/lab-jlpt.js (window.JLAB, see the comment there). Text is never voiced here: hearing a kanji word would give
+   away its reading. Progress: ICA.load().labs.jlpt = {best:{mockId:{pct, sec:{secId:pct}, at}}, last:{…}} */
+(function(){
+var bar = ICA.topbar("JLPT practice"), app = document.getElementById("app"), esc = ICA.esc;
+var MOCKS = (window.JLAB && JLAB.mocks) || [], K = ["1", "2", "3", "4"], S = null, timer = null;
+function setTitle(t){ document.title = t + " · JLPT practice"; bar.querySelector(".title").textContent = t; }
+function md(s){ return ICA.md(s || "").replace(/__([^_]+)__/g, "<u>$1</u>"); }
+function store(){ var st = ICA.load(); st.labs = st.labs || {}; var j = st.labs.jlpt = st.labs.jlpt || {}; j.best = j.best || {}; return j; }
+function byId(id){ for (var i = 0; i < MOCKS.length; i++) if (MOCKS[i].id === id) return MOCKS[i]; return null; }
+function items(sec){ var a = []; sec.parts.forEach(function(p){ p.items.forEach(function(it){ a.push(it); }); }); return a; }
+function mins(m){ return m.sections.reduce(function(t, s){ return t + s.minutes; }, 0); }
+function count(m){ return m.sections.reduce(function(t, s){ return t + items(s).length; }, 0); }
+
+function home(){
+  stop(); setTitle("JLPT practice"); var j = store();
+  var levels = ["N5", "N4", "N3"].filter(function(L){ return MOCKS.some(function(m){ return m.level === L; }); });
+  var h = '<div class="stack"><div><div class="eyebrow">Labs</div><h1>JLPT Practice Room</h1><p class="muted">Short practice tests in the format of the Japanese-Language Proficiency Test: vocabulary, grammar and reading, with a timer if you want one. Every question is new and written for this app, with an explanation for each answer.</p></div>'+
+    '<div class="callout tip"><b class="h">Good to know</b>These are about half the length of the real test, and they don’t include listening. They are not official and can’t predict your score, but they show you the question types and which section needs work. The official sample questions are free at <a href="https://www.jlpt.jp/e/samples/forlearners.html" target="_blank" rel="noopener">jlpt.jp</a>.</div>';
+  if (!levels.length) h += '<div class="card">The first practice tests are being written. Check back soon.</div>';
+  levels.forEach(function(L){
+    h += '<h2>'+L+'</h2><div class="mocks">'+MOCKS.filter(function(m){ return m.level === L; }).map(function(m){ var b = j.best[m.id];
+      return '<a class="mock" href="#'+m.id+'"><b>'+esc(m.title)+'</b><span class="st">'+count(m)+' questions · about '+mins(m)+' min · '+m.sections.length+' sections</span><span class="st">'+(b ? 'Best: '+b.pct+'%' : 'Not taken yet')+'</span></a>'; }).join("")+'</div>';
+  });
+  h += '<p class="small muted">Study for these in <a href="../quests/index.html#e3">Japanese Foundations</a> and the <a href="kanji.html">Kanji Lab</a>.</p></div>';
+  app.innerHTML = h; window.scrollTo(0, 0);
+}
+function intro(m){
+  stop(); setTitle(m.title); var b = store().best[m.id];
+  app.innerHTML = '<div class="stack"><a href="#" class="small">← All practice tests</a><div><span class="chip">'+m.level+'</span><h1 style="margin-top:6px">'+esc(m.title)+'</h1>'+(m.note ? '<p class="muted">'+md(m.note)+'</p>' : '')+'</div>'+
+    '<div class="card stack"><b>Sections</b><ol>'+m.sections.map(function(s){ return '<li><span class="ja">'+esc(s.title)+'</span> · '+esc(s.en)+' · '+items(s).length+' questions · '+s.minutes+' min</li>'; }).join("")+'</ol>'+
+    '<p class="small muted">Answer every question: there’s no penalty for guessing. You can change answers until you finish a section.'+(b ? ' Your best so far: '+b.pct+'%.' : '')+'</p></div>'+
+    '<div class="row" style="flex-wrap:wrap;gap:8px"><button class="btn primary" data-start="1">⏱ Start, timed</button><button class="btn" data-start="0">Start without a timer</button></div></div>';
+  window.scrollTo(0, 0);
+}
+function start(m, timed){ S = {m:m, timed:timed, si:0, ans:{}, left:0}; section(); }
+function section(){
+  var m = S.m, sec = m.sections[S.si], n = 0; setTitle(sec.title);
+  var h = '<div class="stack"><div class="hud"><span class="ja">'+esc(sec.title)+'</span><span>'+(S.si + 1)+' / '+m.sections.length+'</span><span id="clock">'+(S.timed ? "" : "untimed")+'</span></div>';
+  sec.parts.forEach(function(p, pi){
+    h += '<section class="part"><p class="instr ja">'+md(p.instr)+(p.en ? '<span class="en">'+md(p.en)+'</span>' : '')+'</p>'+(p.passage ? '<div class="passage ja">'+md(p.passage)+'</div>' : '');
+    p.items.forEach(function(it){ n++; var long = it.options.some(function(o){ return o.replace(/\[[^\]]*\]\{[^}]*\}/g, "x").length > 9; });
+      h += '<div class="item" data-item="'+it.id+'"><div class="q ja"><b class="n">'+n+'</b>'+md(it.q)+'</div><div class="opts'+(long ? ' long' : '')+'" role="group" aria-label="Question '+n+'">'+it.options.map(function(o, oi){ return '<button type="button" class="ja" data-a="'+oi+'" aria-pressed="'+(S.ans[it.id] === oi)+'"><span class="k">'+K[oi]+'</span><span>'+md(o)+'</span></button>'; }).join("")+'</div></div>'; });
+    h += '</section>';
+  });
+  h += '<div class="lessonnav"><button class="btn" data-quit>Stop the test</button><button class="btn primary" data-next>'+(S.si + 1 < m.sections.length ? "Finish this section →" : "Finish and see results →")+'</button></div></div>';
+  app.innerHTML = h; window.scrollTo(0, 0);
+  stop(); if (S.timed){ S.left = sec.minutes * 60; tick(); timer = setInterval(tick, 1000); }
+}
+function tick(){
+  var c = document.getElementById("clock"); if (!c || !S){ stop(); return; }
+  var t = S.left, mm = Math.floor(t / 60), ss = t % 60; c.textContent = "⏱ " + mm + ":" + (ss < 10 ? "0" : "") + ss; c.className = t <= 60 ? "low" : "";
+  if (t <= 0){ stop(); ICA.toast("Time’s up for this section."); next(true); return; }
+  S.left--;
+}
+function stop(){ if (timer){ clearInterval(timer); timer = null; } }
+function next(forced){
+  var sec = S.m.sections[S.si], open = items(sec).filter(function(it){ return S.ans[it.id] == null; }).length;
+  if (!forced && open && !confirmOpen(open)) return;
+  stop(); S.si++; if (S.si < S.m.sections.length) section(); else results();
+}
+function confirmOpen(n){ var b = app.querySelector("[data-next]"); if (b.getAttribute("data-sure")) return true; b.setAttribute("data-sure", "1"); b.textContent = n + " unanswered: finish anyway →"; ICA.toast(n + " question" + (n > 1 ? "s" : "") + " still unanswered."); return false; }
+function score(sec){ var its = items(sec), r = its.filter(function(it){ return S.ans[it.id] === it.ok; }).length; return {r:r, n:its.length, pct:Math.round(100 * r / its.length)}; }
+function results(){
+  setTitle(S.m.title); var m = S.m, secs = m.sections.map(score), r = secs.reduce(function(t, x){ return t + x.r; }, 0), n = secs.reduce(function(t, x){ return t + x.n; }, 0), pct = Math.round(100 * r / n);
+  var j = store(), old = j.best[m.id], rec = {pct:pct, at:Date.now(), sec:{}}; m.sections.forEach(function(s, i){ rec.sec[s.id] = secs[i].pct; });
+  if (!old || pct >= old.pct) j.best[m.id] = rec; j.last = j.last || {}; j.last[m.id] = rec; ICA.save();
+  if (window.ICATheme) ICATheme.flourish();
+  var low = secs.map(function(x, i){ return [x.pct, m.sections[i]]; }).sort(function(a, b){ return a[0] - b[0]; })[0];
+  var h = '<div class="stack"><a href="#" class="small">← All practice tests</a><div class="card stack" style="text-align:center;justify-items:center"><div class="eyebrow">'+esc(m.title)+'</div><div style="font-family:var(--display);font-size:3em;line-height:1">'+pct+'%</div><p>'+r+' of '+n+' right'+(old && pct > old.pct ? ' · a new best!' : '')+'</p></div>'+
+    '<div class="card bars">'+m.sections.map(function(s, i){ return '<div class="row2"><span class="ja small">'+esc(s.title)+'</span><span class="bar"><i style="width:'+secs[i].pct+'%"></i></span><span class="small">'+secs[i].r+'/'+secs[i].n+'</span></div>'; }).join("")+'</div>'+
+    '<p class="small muted">'+(pct >= 70 ? "That’s a solid result for this level. " : pct >= 50 ? "You’re getting there. " : "This level still needs work, and that’s fine: it shows you where to look. ")+'Your weakest section was <span class="ja">'+esc(low[1].title)+'</span> ('+esc(low[1].en)+'). The real JLPT also needs a minimum in every section, so don’t leave one behind.</p>'+
+    '<h2>Answers and explanations</h2>';
+  var k = 0;
+  m.sections.forEach(function(s){ h += '<h3 class="ja">'+esc(s.title)+'</h3>';
+    s.parts.forEach(function(p){ if (p.passage) h += '<details class="card"><summary class="small">Show the passage</summary><div class="passage ja" style="margin-top:8px">'+md(p.passage)+'</div></details>';
+      p.items.forEach(function(it){ k++; var a = S.ans[it.id];
+        h += '<div class="item"><div class="q ja"><b class="n">'+k+'</b>'+md(it.q)+'</div><div class="opts long">'+it.options.map(function(o, oi){ return '<button type="button" disabled class="ja'+(oi === it.ok ? ' right' : oi === a ? ' wrong' : '')+'"><span class="k">'+(oi === it.ok ? "✓" : oi === a ? "✗" : K[oi])+'</span><span>'+md(o)+'</span></button>'; }).join("")+'</div>'+(a == null ? '<span class="small muted">Not answered.</span>' : '')+'<div class="why">'+md(it.why)+'</div></div>'; }); }); });
+  h += '<div class="lessonnav"><a class="btn" href="#">All practice tests</a><button class="btn primary" data-again>Try it again</button></div></div>';
+  app.innerHTML = h; window.scrollTo(0, 0);
+}
+app.addEventListener("click", function(e){
+  var t;
+  if ((t = e.target.closest("[data-a]")) && S && !t.disabled){ var it = t.closest("[data-item]").getAttribute("data-item"); S.ans[it] = +t.getAttribute("data-a");
+    ICA.$$("[data-a]", t.parentNode).forEach(function(b){ b.setAttribute("aria-pressed", b === t ? "true" : "false"); }); var nb = app.querySelector("[data-next]"); if (nb && nb.getAttribute("data-sure")){ nb.removeAttribute("data-sure"); nb.textContent = S.si + 1 < S.m.sections.length ? "Finish this section →" : "Finish and see results →"; } return; }
+  if ((t = e.target.closest("[data-start]"))){ start(byId(location.hash.slice(1)), t.getAttribute("data-start") === "1"); return; }
+  if (e.target.closest("[data-next]")){ next(false); return; }
+  if (e.target.closest("[data-quit]")){ stop(); S = null; intro(byId(location.hash.slice(1))); return; }
+  if (e.target.closest("[data-again]")){ var m = S.m; S = null; intro(m); return; }
+});
+function route(){ var m = byId(location.hash.slice(1)); S = null; if (m) intro(m); else home(); }
+window.addEventListener("hashchange", route);
+route();
+})();
+</script>
+</body>
+</html>

@@ -136,7 +136,8 @@ ICA.addUnit({
       {t:"This essay will compare libraries in Riverton and Hillside.", why:"This announces a topic but makes no claim. A reader still doesn’t know what the comparison will show."},
       {t:"Libraries are important places in every city in the world.", why:"Too general and not arguable: almost nobody would disagree, and it doesn’t compare the two cities."},
       {t:"There are many similarities and many differences between libraries in Riverton and Hillside.", why:"This is true of almost any two things. A thesis needs to say which similarity or difference matters, and why."}
-    ]}
+    ]},
+    {id:"e1u3-l1-x8", type:"explain", q:"Explain the grammar difference between “whereas” and “in contrast” when you compare two things. Write one example sentence with each.", size:"2–4 sentences", hint:"One joins two clauses inside a sentence; the other links two sentences.", model:"“Whereas” is a conjunction, so it joins two clauses inside one sentence: “Rural clinics rely on nurses, whereas urban clinics employ more doctors.” “In contrast” is a linking adverb, so it starts a new sentence (or follows a semicolon) and takes a comma: “Rural clinics rely on nurses. In contrast, urban clinics employ more doctors.” So I shouldn’t start a separate sentence with “Whereas,” followed by a comma.", points:["Says “whereas” joins two clauses in one sentence", "Says “in contrast” starts a new sentence or follows a semicolon, with a comma", "Gives a correct example with “whereas”", "Gives a correct example with “in contrast”"]}
    ],
    apply:{
     intro:"Use real essay questions: from your own course, an old exam paper, or a university study-skills site. Keep your notes; you’ll reuse them in later lessons.",
@@ -272,7 +273,8 @@ ICA.addUnit({
       {t:"Although the new route helps thousands of commuters each day, it is expensive.", why:"This puts the cost in the main clause, so the reader is left thinking about the cost: the opposite of what Tomás wants."},
       {t:"The new route is expensive and it helps thousands of commuters each day.", why:"“And” presents the two facts as equal. It doesn’t show which one matters more."},
       {t:"Despite it is expensive, the new route helps thousands of commuters each day.", why:"The emphasis is right, but the grammar isn’t: “despite” can’t be followed by a clause. Write “Despite its cost,…” or “Although it is expensive,…”."}
-    ]}
+    ]},
+    {id:"e1u3-l2-x8", type:"explain", q:"In your essay, why would you write “Although the scheme is expensive, it saves money over time” rather than “Although the scheme saves money over time, it is expensive”? Also explain one grammar mistake to avoid with “although”.", size:"3–4 sentences", hint:"Which clause carries more weight, and how many linking words does one contrast need?", model:"The idea after the concession, in the main clause, carries more weight and is what the reader remembers. If my argument is that the scheme is worth it, I concede the cost in the “although” clause and put the saving in the main clause. The second version would leave the reader thinking about the cost. The grammar mistake to avoid is using two linking words for one contrast: “Although the scheme is expensive, but it saves money” is wrong; choose “although” or “but”.", points:["Says the main clause carries the point the reader remembers", "Links the choice to the writer’s argument", "Explains the effect of the reversed version", "Names the “although … but” error (one linking word per contrast)"]}
    ],
    apply:{
     intro:"Write about a topic from your own studies or work, or any question you care about. The goal is to practise the language of argument, so keep it short and check each part.",
@@ -418,7 +420,8 @@ ICA.addUnit({
       {t:"Brown (2017) compared tutored and untutored students and found higher pass rates in the tutored group.", why:"Then one specific study, integral, in the past simple."},
       {t:"However, Sato (2020) notes that the tutored students in Brown’s study were mostly those who already attended classes.", why:"“However” and “Brown’s study” point back to the previous sentence: a second, later source adds a limitation."},
       {t:"These findings suggest that peer tutoring helps, but only if it reaches students who are at risk of dropping out.", why:"The writer’s own synthesis comes last, hedged with “suggest”."}
-    ]}
+    ]},
+    {id:"e1u3-l3-x8", type:"explain", q:"When would you use an integral citation (“Mensah (2021) found that…”) and when a non-integral one (“…(Mensah, 2021)”)? Give an example of each from a topic you know.", size:"3–4 sentences", hint:"Where do you want the reader’s focus: on the researcher or on the idea?", model:"An integral citation puts the author in my sentence, so the focus is on the researcher and what they did. I’d use it when one study is central, when I contrast two researchers’ views, or when I want to show a claim is someone’s position: “Rao (2019) questions whether the savings last.” A non-integral citation keeps the focus on the finding, so I’d use it for well-supported points or to group several sources: “Rainwater tanks can reduce household water costs (Mensah, 2021; Rao, 2019).”", points:["Says integral citations focus on the researcher", "Says non-integral citations focus on the idea or finding", "Gives a reason for choosing each", "Gives a correctly formed example of each"]}
    ],
    apply:{
     intro:"Use a real article or chapter from your field. If you can’t access one, [[open-access-term|open-access]] articles are free to read (for example through a library search or a journal’s website).",
@@ -563,7 +566,8 @@ ICA.addUnit({
       {t:"I need an extension because I was ill.", why:"“I need” sounds like a demand, and it doesn’t say how long an extension or until when."},
       {t:"I was wondering if maybe it might be possible to perhaps have some more time, if that is not too much trouble.", why:"Very polite, but so vague and hedged that the lecturer can’t tell what is being asked."},
       {t:"Please give me until 17/3.", why:"Too direct for this request, and a date like “17/3” is clear only in day–month countries. Write the date in words."}
-    ]}
+    ]},
+    {id:"e1u3-l4-x8", type:"explain", q:"Write a three-sentence introduction on a topic of your choice that follows the three CARS moves, then explain what job each sentence does.", size:"4–5 sentences", prompt:"My introduction: … Sentence 1 …", hint:"Territory, niche, occupying the niche. The niche sentence often starts with “However,”.", model:"“Many cities now offer free public bicycles, and several studies have measured how often they are used. However, little is known about why some residents stop using them after the first month. This study interviews 25 former users in one city to explore their reasons.” Sentence 1 establishes the territory: the topic matters and research exists. Sentence 2 establishes the niche with “However” and “little is known”, showing a gap. Sentence 3 occupies the niche by stating the study’s aim.", points:["Writes a sentence establishing the topic and previous research (Move 1)", "Writes a sentence showing a gap, with language such as “However, little is known” (Move 2)", "Writes a sentence stating the aim (Move 3)", "Explains the job of each sentence"]}
    ],
    apply:{
     intro:"Use real texts from your field, and write about real or realistic situations. Keep your drafts private unless you choose to send them.",
@@ -716,7 +720,8 @@ ICA.addUnit({
       {t:"Say nothing, because grammar correction is too small to matter.", why:"The policy explicitly asks for disclosure. Leaving it out breaks the rule, even though the use itself is allowed."},
       {t:"Rewrite the essay without any tool, because AI is never allowed.", why:"Her course allows AI for grammar. Policies differ: read and follow the one that applies to you."},
       {t:"Also ask the tool to add some references, since it is already allowed.", why:"The policy allows grammar checking, not adding content. AI tools can also invent references, so every source must be one she has read."}
-    ]}
+    ]},
+    {id:"e1u3-l5-x8", type:"explain", q:"A grammar tool suggests changing your sentence “The data suggest that the policy may have reduced absences” to “The data prove that the policy reduced absences.” Explain why you would reject the suggestion, and how you should use such tools.", size:"3–4 sentences", hint:"Did the tool fix grammar, or change the claim?", model:"The original sentence was grammatically correct; the tool didn’t fix an error, it changed the meaning. It removed two hedges and turned “suggest” into “prove”, so the claim is now stronger than the evidence. Grammar checkers and AI tools are good at typos and some agreement errors but unreliable about meaning, hedges and technical terms. So I treat each suggestion as a question, accept changes one at a time, and follow my institution’s rules on using and declaring them.", points:["Says the original was already correct", "Explains that the suggestion removes hedges and overclaims", "Says what such tools are good and bad at", "Describes careful use: one change at a time, suggestions as questions, follow the rules"]}
    ],
    apply:{
     intro:"These tasks build habits you can use on every assignment. Keep your error list somewhere you’ll see it each time you write.",

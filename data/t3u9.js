@@ -122,7 +122,8 @@ ICA.addUnit({
       {t:"A club’s members, payments and events, which all refer to each other", ok:true, why:"Several linked kinds of thing is exactly what related tables and keys are for."},
       {t:"A one-off list of 20 party guests", why:"Small, simple and kept by one person: a spreadsheet (or a piece of paper) is the better tool."},
       {t:"A quick chart of this month’s spending", why:"A spreadsheet does this in a minute. A database would be more work for no gain."}
-    ]}
+    ]},
+    {id:"t3u9-l1-x7", type:"explain", q:"A garden club logs every harvest in one sheet that also repeats each member’s joining year and bed on every row. Explain the problems this causes, and how a database with separate tables and keys fixes them.", model:"Repeating a member’s details on every harvest invites contradictions: a typo like “Amma” quietly creates a second person, and if Ama moves bed, every row must change, so missing one makes the sheet disagree with itself. There’s also nowhere to record a member with no harvests yet. A database gives each kind of thing its own table (members, plots, harvests) and stores each fact once. Each harvest holds a `member_id`, a foreign key pointing to the member’s primary key, and a query joins them when needed.", points:["Names a problem with repeated facts: typos or updates that miss rows", "Mentions that members with no harvests can’t be recorded", "Says each kind of thing gets its own table, storing each fact once", "Explains that primary and foreign keys link the tables"]}
    ],
    apply:{intro:"No installs needed: the Data Lab works in any current browser, on a phone or a computer.", tasks:[
      {t:"Look inside the garden database", how:["Open **Labs → Data Lab** and choose the first SQL challenge, **SELECT two columns**.","Under the task, tap **members**, **plots** and **harvests** to see each table’s rows.","For each table, note its primary key, and any column that points at another table (a foreign key).","Find the row where `plot_id` shows NULL. What do you think it means for that member?"]},
@@ -262,7 +263,8 @@ ICA.addUnit({
       {t:"Last", why:"That’s PostgreSQL’s default. SQLite sorts NULL as the smallest value, so it comes first in ascending order."},
       {t:"He’s left out of the result", why:"ORDER BY only sorts; it never removes rows. All six members appear."},
       {t:"The query fails because of the NULL", why:"Sorting a column with NULLs is fine; the NULLs just have to go somewhere."}
-    ]}
+    ]},
+    {id:"t3u9-l2-x8", type:"explain", q:"Explain why `SELECT crop, kg FROM harvests ORDER BY kg DESC LIMIT 3;` returns the three heaviest harvests, and why `LIMIT` has to come after `ORDER BY`.", hint:"The order clauses are written in isn’t the order they run in.", model:"The database doesn’t run clauses in the order they’re written. It first finds the table (FROM), keeps rows that pass any WHERE, chooses the columns (SELECT), sorts them (ORDER BY) and only then cuts the result (LIMIT). So `LIMIT 3` keeps the top three of the sorted list: squash 10.5, tomatoes 8 and squash 6.5. Cutting before sorting would just keep three arbitrary rows, because without ORDER BY row order is undefined. That’s why SQL requires LIMIT after ORDER BY.", points:["Gives the running order: FROM, WHERE, SELECT, ORDER BY, LIMIT", "Says LIMIT cuts the already sorted result", "Explains that without sorting, row order is undefined", "Names the three heaviest harvests (or says the top three by weight)"]}
    ],
    apply:{intro:"All of this works in the Data Lab on a phone or a computer. Press ▶ **Run** to see any query’s result before you press **Check**. The result shows the first 50 rows with a row count underneath; a query that matches nothing shows its column headings and “0 rows.”; a wide result scrolls sideways inside its box. Every Run starts from a fresh copy of the garden database, so nothing you try can break it. The row of symbol buttons under the editor saves hunting for `*`, `'` and `%` on a phone keyboard.", tasks:[
      {t:"Solve the first four SQL challenges", how:["Open **Labs → Data Lab** and do **SELECT two columns**, **WHERE: only the beans**, **ORDER BY: newest members first** and **The three biggest harvests**, in that order.","Before pressing Check, predict the result in your head, then press ▶ Run and compare.","Read the explanation that appears when you pass. If you’re stuck, the Hint button gives a nudge before the full answer."]},
@@ -386,7 +388,8 @@ ICA.addUnit({
       ["SELECT AVG(kg) FROM harvests","4.6","46 kg ÷ 10 harvests."],
       ["SELECT MAX(kg) FROM harvests","10.5","Eitan’s squash is the heaviest harvest."],
       ["SELECT MIN(kg) FROM harvests","1","Bilal’s 1 kg of beans is the lightest."]
-    ]}
+    ]},
+    {id:"t3u9-l3-x8", type:"explain", q:"To find crops whose harvests totalled more than 10 kg, explain why `WHERE SUM(kg) > 10` fails but `HAVING SUM(kg) > 10` after `GROUP BY crop` works.", model:"WHERE runs before grouping: it checks single rows one at a time, when no group totals exist yet, so an aggregate like `SUM(kg)` has nothing to test, and SQLite reports “misuse of aggregate”. GROUP BY then splits the rows into crops, and the aggregates are computed per group. HAVING runs after grouping, so it can filter whole groups by their totals: here squash (17 kg) and tomatoes (17.5 kg). A query can use both: WHERE to filter rows, HAVING to filter groups.", points:["Says WHERE filters single rows before groups exist", "Says GROUP BY computes the aggregates per group", "Says HAVING filters groups after grouping", "Mentions that both can be used in one query, or names the result"]}
    ],
    apply:{intro:"Use the Data Lab on any device. Try each challenge before opening a hint.", tasks:[
      {t:"Solve the summary challenges", how:["In **Labs → Data Lab**, do **COUNT: how many big harvests?**, **GROUP BY: total per crop**, **HAVING: crops over 10 kg**, **NULL: members without a plot** and **Fix the query**.","For **Fix the query**, press ▶ Run first and read the error before you change anything.","After each pass, read the explanation: some mention a rule from this lesson that SQLite doesn’t enforce."]},
@@ -504,7 +507,8 @@ ICA.addUnit({
       {t:"The join dropped some plots", why:"Dropping plots would make the total smaller than 33, not bigger."},
       {t:"SQLite rounds REAL numbers up when it adds them", why:"No rounding happens; the extra area comes from repeated rows."},
       {t:"size_m2 is stored as text", why:"Text would cause odd sorting, not a larger sum. The values are numbers."}
-    ]}
+    ]},
+    {id:"t3u9-l4-x8", type:"explain", q:"Totalling the garden’s harvests by bed with two inner joins (harvests → members → plots) gives 35.5 kg, but the garden harvested 46 kg in all. Explain where the missing 10.5 kg went, and how to fix it.", model:"An inner join keeps only rows that find a match. Eitan’s 10.5 kg of squash joins to members fine, but his `plot_id` is NULL, so the second join to plots finds no matching plot and drops the row. Making that join a LEFT JOIN keeps every row from the left side and fills the plot columns with NULL, so a fourth row appears: bed NULL, 10.5 kg. The general habit: compare totals and row counts before and after each join, so lost or doubled rows are a decision, not an accident.", points:["Says an inner join drops rows with no match", "Identifies Eitan’s harvest and his NULL `plot_id` as the cause", "Says a LEFT JOIN keeps the row, with NULL for the bed", "Recommends checking totals or row counts after each join"]}
    ],
    apply:{intro:"Use the Data Lab on any device. After each join, check the number of rows against what you expect: the Data Lab prints the count under each result (it shows the first 50 rows, then “…and 10 more rows.” for a 60-row result).", tasks:[
      {t:"Solve the JOIN challenge, then explore", how:["In **Labs → Data Lab**, do **JOIN: who grew what**.","In the same editor, write the inner join of members and plots, press ▶ Run, and count the rows. Then change JOIN to LEFT JOIN and run it again. Who appears?","Add `WHERE p.id IS NULL` to the left join. What question does the result answer?"]},
@@ -624,7 +628,8 @@ ICA.addUnit({
       {t:"Put the condition in WHERE instead", why:"WHERE runs before grouping, so it can’t test a total in any system."},
       {t:"Write the keywords in lower case", why:"Keyword case doesn’t matter in any of these systems."},
       {t:"Change SUM to TOTAL", why:"TOTAL() exists only in SQLite; PostgreSQL would then fail for a second reason."}
-    ]}
+    ]},
+    {id:"t3u9-l5-x8", type:"explain", q:"Explain what SQL injection is, and why a parameterised query (one using a placeholder such as `?`) prevents it.", model:"If a program glues text that someone typed straight into an SQL string, that text becomes part of the query itself. A carefully crafted entry, or even a stray apostrophe, can then change what the query does and expose or alter the database. A parameterised query sends the SQL with a placeholder, such as `WHERE name = ?`, and sends the typed value separately. The database always treats that value as data, never as SQL, whatever characters it contains. OWASP lists this as the primary defence; hand-made escaping is strongly discouraged.", points:["Says typed text pasted into SQL can change the query", "Mentions the risk: exposing or changing the database", "Explains that a placeholder sends the value separately from the SQL", "Says the value is then treated as data, never as code"]}
    ],
    apply:{intro:"Installing DB Browser is optional and needs a computer. On a phone or a locked computer, read the steps and use the Data Lab for the queries.", tasks:[
      {t:"Install DB Browser for SQLite (optional, computer only)", how:{

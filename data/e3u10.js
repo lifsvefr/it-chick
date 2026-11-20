@@ -6,7 +6,7 @@ ICA.addUnit({
  n: 10,
  title: "N3 grammar II",
  icon: "🧩",
- blurb: "“Even if” with ～ても and ～としても, “even” with ～さえ, and “not only” with ～だけでなく; time clauses with ～うちに, ～[間]{あいだ}, ～たびに and ～[最中]{さいちゅう}に; ～かわりに, ～に[比]{くら}べて, ～ほど and ～くらい; ～わけではない, ～ことはない, ～ものだ and ～っけ; the suffixes ～っぽい, ～がち and ～[気味]{ぎみ}; and keigo in real situations.",
+ blurb: "“Even if” with ～ても and ～としても, “even” with ～さえ, and “not only” with ～だけでなく; time clauses with ～うちに, ～[間]{あいだ}, ～たびに and ～[最中]{さいちゅう}に; ～かわりに, ～に[比]{くら}べて, ～ほど and ～くらい; ～わけではない, ～ことはない, ～ものだ and ～っけ; the suffixes ～っぽい, ～がち and ～[気味]{ぎみ}; keigo in real situations; and fifteen more everyday N3 patterns, from ～まま, ～ずに and ～しかない to ～とたん, ～に[関]{かん}して and ～わりに.",
  goals: [
   "Say “even if”, “even though” and “no matter how” with ～ても and ～としても, and tell them from ～たら and ～のに",
   "Point to an extreme example with ～さえ, set a single condition with ～さえ～ば, and add a second point with ～だけでなく～も",
@@ -14,12 +14,20 @@ ICA.addUnit({
   "Say “instead of” with ～かわりに, compare with ～に[比]{くら}べて, and show degree with ～ほど and ～くらい",
   "Deny part of an idea with ～わけではない, say “no need” with ～ことはない, use ～ものだ for what is natural, advisable or remembered, and check facts with ～っけ",
   "Describe tendencies and signs with ～っぽい, ～がち and ～[気味]{ぎみ}",
-  "Use respectful and humble language in shops, on the phone, with visitors and in requests"
+  "Use respectful and humble language in shops, on the phone, with visitors and in requests",
+  "Describe states and manner with ～まま, ～っぱなし, ～ずに, ～とおりに and ～ふりをする, and say “no choice but” and “I’m sure” with ～しかない, ～に[違]{ちが}いない and ～に[決]{き}まっている",
+  "Link events and set a range or focus with ～たとたん, ～ついでに, ～て以来, ～から～にかけて, ～を中心に and ～に[関]{かん}して",
+  "Weigh a result against expectations with ～わりに and ～にしては, and go further than ～だけでなく with ～ばかりか"
  ],
  read: [
   {
    book: "taekim",
-   where: "Advanced Topics: “The minimum expectation” (さえ) and “Tendencies” (～がち); Special Expressions: “Expressing Amounts” (ほど) and “Honorific and Humble Forms”"
+   where: "Advanced Topics: “The minimum expectation” (さえ) and “Tendencies” (～がち); Special Expressions: “Expressing Amounts” (ほど, しか), “Honorific and Humble Forms”, “Expressing a lack of change” (まま, っぱなし), “More negative verbs” (～ずに) and “Time-specific actions” (とたん)"
+  },
+  {
+   book: "imabi",
+   where: "Lessons 149, 223, 260, 262, 272, 334, 343 and 361 (～とおりに, ～に関して, ～に違いない, ～て以来, ～にかけて, わりに・にしては, ～を中心に, ～ついでに)",
+   note: "For Lessons 6 and 7. Detailed and advanced: look up one pattern at a time."
   },
   {
    book: "irodori",
@@ -241,7 +249,7 @@ ICA.addUnit({
        ex: "[宝]{たから}くじが[当]{あ}たったとしても、仕事は[辞]{や}めません。\nEven if I won the lottery, I wouldn’t quit my job.\n\n今から急いだとしても、[間]{ま}に[合]{あ}わないでしょう。\nEven if we hurried now, we probably wouldn’t make it.\n\nたとえ[冗談]{じょうだん}だとしても、そんなことを言ってはいけません。\nEven if it was a joke, you shouldn’t say things like that.",
        label: "～としても"
       },
-      "Notice that としても can follow a **past** form: [当]{あ}たったとしても, 急いだとしても. ～ても can’t: there is no *急いだても. Often both patterns are possible, and ～としても simply makes the “suppose” stronger: 今から急いでも[間]{ま}に[合]{あ}わない is also natural.",
+      "Notice that としても can follow a **past** form: [当]{あ}たったとしても, 急いだとしても. ～ても can’t: there is no ✗ 急いだても. Often both patterns are possible, and ～としても simply makes the “suppose” stronger: 今から急いでも[間]{ま}に[合]{あ}わない is also natural.",
       {
        warn: "A **noun directly + としても**, with no だ, is a different pattern: として (“as”, Unit 9) + も (“too”). 親としても[心配]{しんぱい}です means “As a parent, I’m worried too”, not “even if I’m a parent”. Look for だ: 親だとしても = “even if I am a parent”. See [[to-shite]]."
       }
@@ -310,7 +318,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "Two more you will hear: [住所]{じゅうしょ}さえわかれば、送れます (as long as I know the address, I can send it) and あなたさえよければ (if it’s all right with you). The verb form is easy to get wrong: 飲みさえ**すれば**, not *飲みさえば."
+      "Two more you will hear: [住所]{じゅうしょ}さえわかれば、送れます (as long as I know the address, I can send it) and あなたさえよければ (if it’s all right with you). The verb form is easy to get wrong: 飲みさえ**すれば**, not ✗ 飲みさえば."
      ]
     },
     {
@@ -347,7 +355,7 @@ ICA.addUnit({
        ex: "イエンさんは英語だけでなく、日本語も話せます。\nYến speaks not only English but also Japanese.\n\nこの店は安いだけでなく、味もいいです。\nThis restaurant isn’t just cheap; the food is good too.\n\nこの町は[静]{しず}かなだけでなく、[交通]{こうつう}も[便利]{べんり}です。\nThis town is not only quiet, it also has good transport.\n\n見るだけでなく、[実際]{じっさい}に作ってみましょう。\nLet’s not just watch; let’s actually make one.",
        label: "～だけでなく～も"
       },
-      "In conversation you will hear **だけじゃなくて**; in writing, **だけではなく**. ～ばかりでなく means the same and is a little more formal.",
+      "In conversation you will hear **だけじゃなくて**; in writing, **だけではなく**. ～ばかりでなく means the same and is a little more formal. Its stronger, more written relative ～ばかりか (“not only… but even”) comes in Lesson 7 ({{time-range-focus-contrast}}).",
       {
        table: [
         [
@@ -908,7 +916,7 @@ ICA.addUnit({
        label: "～さいちゅうに and ～さいちゅうだ"
       },
       "At the end of a sentence, ～[最中]{さいちゅう}だ (～[最中]{さいちゅう}です) says that you are in the thick of something right now, as in the last example.",
-      "[最中]{さいちゅう} is for an **activity** with a busy peak: a meeting, a meal, a shower, a game. It doesn’t suit long states: for “while I was living in Tokyo”, say 東京に住んでいた[間]{あいだ}に or 住んでいたとき, not *住んでいる[最中]{さいちゅう}に.",
+      "[最中]{さいちゅう} is for an **activity** with a busy peak: a meeting, a meal, a shower, a game. It doesn’t suit long states: for “while I was living in Tokyo”, say 東京に住んでいた[間]{あいだ}に or 住んでいたとき, not ✗ 住んでいる[最中]{さいちゅう}に.",
       {
        h: "Near neighbours"
       },
@@ -1431,7 +1439,7 @@ ICA.addUnit({
        ex: "この[部屋]{へや}は[狭]{せま}いかわりに、[家賃]{やちん}が安いです。\nThis room is small, but the rent is cheap to make up for it.\n\nこの仕事は[給料]{きゅうりょう}がいいかわりに、[残業]{ざんぎょう}が多いです。\nThis job pays well, but there’s a lot of overtime.\n\nこの町は[不便]{ふべん}なかわりに、[自然]{しぜん}が[豊]{ゆた}かです。\nThis town is inconvenient, but it has plenty of nature.",
        label: "To make up for it"
       },
-      "が or けど would also join these sentences. かわりに adds the idea of a **trade-off**: one side pays for the other.",
+      "が or けど would also join these sentences. かわりに adds the idea of a **trade-off**: one side pays for the other. Don’t confuse it with ～わりに (“for…, considering…”, Lesson 7, {{time-range-focus-contrast}}), which measures a result against what you would expect.",
       {
        tip: "At the start of a sentence, use その代わり: 「[手伝]{てつだ}うよ。その代わり、今度ごはんをおごってね。」 (I’ll help. In return, buy me dinner next time.)"
       }
@@ -1477,7 +1485,7 @@ ICA.addUnit({
        label: "～ほど～ない"
       },
       {
-       warn: "In a positive sentence, ほど can’t mean “as … as”: *姉は母ほど[背]{せ}が高い is wrong. Use くらい for “as … as” (next section), or より for “more … than”."
+       warn: "In a positive sentence, ほど can’t mean “as … as”: ✗ 姉は母ほど[背]{せ}が高い is wrong. Use くらい for “as … as” (next section), or より for “more … than”."
       },
       {
        h: "Nothing is as … as"
@@ -1528,7 +1536,7 @@ ICA.addUnit({
        ex: "自分の[部屋]{へや}くらい、自分で[掃除]{そうじ}しなさい。\nAt least clean your own room yourself.\n\nお[礼]{れい}のメールくらい送ったほうがいいですよ。\nYou should at least send a thank-you email.\n\n少しくらい[遅]{おく}れても[大丈夫]{だいじょうぶ}ですよ。\nIt’s fine if you’re a little late.\n\nひらがなくらいなら読めます。\nI can read hiragana, at least.",
        label: "～くらい: the least"
       },
-      "ほど can’t do this: *自分の[部屋]{へや}ほど自分で[掃除]{そうじ}しなさい makes no sense. With a person, this くらい can sound dismissive (“it’s only…”), so it suits advice and complaints.",
+      "ほど can’t do this: ✗ 自分の[部屋]{へや}ほど自分で[掃除]{そうじ}しなさい makes no sense. With a person, this くらい can sound dismissive (“it’s only…”), so it suits advice and complaints.",
       {
        h: "All four in a review"
       },
@@ -2908,15 +2916,7 @@ ICA.addUnit({
        ]
       },
       "Keigo takes years for everyone, including Japanese speakers starting their first job. People forgive small slips when your respect is clear, so keep practising the set phrases until they come out on their own.",
-      "That completes the N3 grammar in this track. Unit 11 turns to the N3 kanji, which you have been reading with furigana in this unit. Short daily review pays off, and forgetting and relearning is a normal part of it.",
-      {
-       lab: "kl-n3",
-       t: "Practise: the N3 kanji, many of which appear in this unit’s examples"
-      },
-      {
-       lab: "kl-n3-vocab",
-       t: "Practise: N3 vocabulary, including the words in this unit"
-      },
+      "Lessons 6 and 7 finish the N3 grammar of this track with fifteen more patterns that you will meet in almost every N3 text, from ～まま and ～しかない to ～とたん and ～わりに.",
       "The keigo in this lesson is collected in {{keigo-in-practice}}, the suffixes in {{feelings-and-tendencies}}, and all the patterns of the unit in {{n3-grammar-patterns-2}}.",
       {
        terms: [
@@ -3297,6 +3297,1457 @@ ICA.addUnit({
      note: "The official guidelines (in Japanese). Challenging at N3; read it with a dictionary, or come back to it with the keigo units of the Academic Japanese track."
     }
    ]
+  },
+  {
+   id: "e3u10-l6",
+   title: "States, manner and limits: ～まま, ～っぱなし, ～ずに, ～とおりに, ～ふりをする, ～しかない and ～にちがいない",
+   minutes: 65,
+   hook: {
+    q: "At the door of a small clinic you see this sign: 「[靴]{くつ}のままお入りください。」 What should you do?",
+    options: [
+     "Go in with your shoes on",
+     "Take your shoes off, then go in",
+     "Put your shoes in a plastic bag first",
+     "Change into the slippers by the door"
+    ],
+    answer: 0,
+    reveal: "**Go in with your shoes on.** まま means “as it is, unchanged”: [靴]{くつ}のまま is “just as you are, in your shoes”. In homes you take your shoes off, so many clinics, offices and restaurants put up this sign to tell you that you don’t need to. This lesson starts with ～まま and its untidy cousin ～っぱなし, then adds five more patterns: doing something without something else, just as told, pretending, having no other choice, and being sure."
+   },
+   goals: [
+    "Describe a state that carries on with ～まま, and a state carelessly left as it is with ～っぱなし",
+    "Say “without doing” with ～ずに, and tell it from ～ないで and ～なくて",
+    "Do something “just as” told or planned with ～とおりに and ～どおり",
+    "Say that someone is pretending with ～ふりをする",
+    "Say “only” with しか～ない, and “there’s no choice but” with ～しかない",
+    "Say you are sure with ～に[違]{ちが}いない and ～に[決]{き}まっている, and place them next to ～かもしれない, ～でしょう and ～はず"
+   ],
+   learn: [
+    {
+     h: "～まま: just as it is",
+     body: [
+      {
+       lead: "[[mama|まま]] means “as it is, unchanged”. A state carries on, often when you would expect it to change."
+      },
+      {
+       table: [
+        [
+         "Before まま",
+         "Example"
+        ],
+        [
+         "verb た-form",
+         "[靴]{くつ}をはいたまま・電気をつけたまま"
+        ],
+        [
+         "verb ない-form",
+         "意味がわからないまま"
+        ],
+        [
+         "い-adjective",
+         "[若]{わか}いまま"
+        ],
+        [
+         "な-adjective + な",
+         "きれいなまま"
+        ],
+        [
+         "noun + の",
+         "[靴]{くつ}のまま・子どものまま"
+        ],
+        [
+         "この・その・あの",
+         "このまま・そのまま"
+        ]
+       ]
+      },
+      {
+       ex: "[昨日]{きのう}は、電気をつけたまま[寝]{ね}てしまいました。\nYesterday I fell asleep with the light on.\n\n[窓]{まど}を開けたまま、出かけないでください。\nPlease don’t go out and leave the window open.\n\nその夜、チェスカさんは[靴]{くつ}をはいたまま、[階段]{かいだん}に[座]{すわ}っていた。\nThat night, Cheska was sitting on the stairs with her shoes still on.\n\n意味がわからないまま、[書類]{しょるい}にサインしてはいけません。\nDon’t sign a document while you still don’t understand it.",
+       label: "～まま"
+      },
+      "For a state that carries on, the verb before まま is in the **た-form**: the action is finished, and its result is still there. 電気をつけたまま means you switched the light on and it is **still** on. ✗ 電気をつけるまま is wrong.",
+      "The second half is usually something that happens while that state lasts, and often something you wouldn’t normally do in it: sleeping with the light on, going out with the window open, sitting indoors in your shoes. That is why まま often sounds like “still”, “just as it was” or “without changing”.",
+      "To say “leave it as it is”, use ～ままにする, often with ～ておく (Unit 6): そのままにしておいてください (Please leave it as it is). このまま means “like this, as things are”: このままでいいですか (Is it all right like this?).",
+      {
+       h: "～たまま, ～ておく or ～てある?"
+      },
+      {
+       table: [
+        [
+         "Pattern",
+         "What it stresses",
+         "Example"
+        ],
+        [
+         "～たまま",
+         "a state carries on while something else happens",
+         "[窓]{まど}を開けたまま[寝]{ね}た。"
+        ],
+        [
+         "～ておく",
+         "done on purpose, ready for later (Unit 6)",
+         "[窓]{まど}を開けておく。"
+        ],
+        [
+         "～てある",
+         "someone did it, and you see the result now (Unit 7)",
+         "[窓]{まど}が開けてある。"
+        ]
+       ]
+      },
+      "So ～ておく ([[te-oku]]) and ～てある ([[te-aru]]) are about a plan or a result; ～たまま is about a state that hasn’t changed when you might expect it to."
+     ]
+    },
+    {
+     h: "～っぱなし: left that way (and it shouldn’t be)",
+     body: [
+      {
+       lead: "Verb ます stem + [[ppanashi|っぱなし]] means that something was done and then left that way, usually through carelessness. It works like a noun: っぱなしだ, っぱなしにする, っぱなしで."
+      },
+      {
+       ex: "ロドリゴさん、またおふろの電気がつけっぱなしだよ。\nRodrigo, you’ve left the bathroom light on again.\n\n水を出しっぱなしにしないでください。\nPlease don’t leave the water running.\n\n[窓]{まど}を開けっぱなしにしていたら、[蚊]{か}がたくさん入ってきた。\nI’d left the window open, and lots of mosquitoes came in.",
+       label: "～っぱなし: left that way"
+      },
+      "The second use is “all the time, without a break”. 立ちっぱなし is “standing the whole time”, and [負]{ま}けっぱなし is “losing again and again”: 工場の仕事は、[一日中]{いちにちじゅう}立ちっぱなしです (At the plant, I’m on my feet all day).",
+      {
+       fig: "<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">A state that carries on</text><rect class=\"d-sage\" x=\"6\" y=\"32\" width=\"328\" height=\"122\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"54\">～たまま: the state lasts</text><rect class=\"d-panel\" x=\"190\" y=\"62\" width=\"64\" height=\"24\" rx=\"6\" stroke-width=\"1.5\"/><text x=\"222\" y=\"79\" text-anchor=\"middle\">ねた</text><path class=\"d-ink\" d=\"M222 86V96\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"34\" cy=\"102\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"34\" y=\"80\" text-anchor=\"middle\">つけた</text><rect class=\"d-gold\" x=\"44\" y=\"96\" width=\"280\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"184\" y=\"126\" text-anchor=\"middle\">でんきが ついている (still on)</text><text class=\"s\" x=\"170\" y=\"144\" text-anchor=\"middle\">B happens while A’s result is still there</text><rect class=\"d-rose\" x=\"6\" y=\"166\" width=\"328\" height=\"122\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"188\">～っぱなし: left that way</text><circle class=\"d-rose\" cx=\"34\" cy=\"226\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"34\" y=\"208\" text-anchor=\"middle\">あけた</text><rect class=\"d-soft\" x=\"44\" y=\"220\" width=\"250\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"312\" y=\"232\" text-anchor=\"middle\">!</text><text class=\"s\" x=\"170\" y=\"256\" text-anchor=\"middle\">done, then nobody changed it back</text><text class=\"s\" x=\"170\" y=\"276\" text-anchor=\"middle\">(and it shouldn’t have been left)</text></svg>",
+       alt: "Two panels. ～たまま, the state lasts: a dot labelled つけた starts a long bar labelled でんきが ついている (still on), and a box labelled ねた sits above the middle of the bar; B happens while A’s result is still there. ～っぱなし, left that way: a dot labelled あけた starts a bar that runs on to an exclamation mark; done, then nobody changed it back (and it shouldn’t have been left).",
+       cap: "まま: a state carries on while something else happens. っぱなし: something was left that way, and someone should have dealt with it."
+      },
+      {
+       table: [
+        [
+         "",
+         "～たまま",
+         "～っぱなし"
+        ],
+        [
+         "Form",
+         "た-form + まま",
+         "ます stem + っぱなし"
+        ],
+        [
+         "Feeling",
+         "neutral, or surprised",
+         "a complaint: it shouldn’t be like that"
+        ],
+        [
+         "Style",
+         "any style",
+         "mostly spoken"
+        ],
+        [
+         "Example",
+         "電気をつけたまま[寝]{ね}た。",
+         "電気がつけっぱなしだ。"
+        ]
+       ]
+      },
+      {
+       warn: "っぱなし follows the ます stem: 開けっぱなし, 出しっぱなし, つけっぱなし. ✗ 開けたっぱなし is wrong. Some lists put ～っぱなし at N2; you will hear it every day, so it is here."
+      }
+     ]
+    },
+    {
+     h: "～ずに: without doing",
+     body: [
+      {
+       lead: "[[zu-ni|～ずに]] means “without doing”. It says the same as ～ないで, and is a little more formal: you see it in writing and hear it in careful speech."
+      },
+      {
+       table: [
+        [
+         "Verb",
+         "ない-form",
+         "～ずに"
+        ],
+        [
+         "食べる",
+         "食べない",
+         "食べずに"
+        ],
+        [
+         "言う",
+         "言わない",
+         "言わずに"
+        ],
+        [
+         "使う",
+         "使わない",
+         "使わずに"
+        ],
+        [
+         "する",
+         "しない",
+         "**せ**ずに"
+        ],
+        [
+         "[来]{く}る",
+         "[来]{こ}ない",
+         "[来]{こ}ずに"
+        ]
+       ]
+      },
+      {
+       key: "Take the ない-form and change ない to ずに. The two exceptions: する → せずに, [来]{く}る → [来]{こ}ずに."
+      },
+      {
+       ex: "[今朝]{けさ}は時間がなくて、朝ごはんを食べずに家を出ました。\nI had no time this morning, so I left home without eating breakfast.\n\n[辞書]{じしょ}を使わずに、この[記事]{きじ}を読んでみましょう。\nLet’s try reading this article without using a dictionary.\n\n[彼]{かれ}は何も言わずに帰ってしまった。\nHe went home without saying a word.\n\n[予約]{よやく}せずに行ったら、[満席]{まんせき}でした。\nI went without booking, and it was full.",
+       label: "～ずに"
+      },
+      "In conversation, ～ないで (from the ない-form, [[nai-form]]) is more common: 朝ごはんを食べないで出かけた. Both mean “without doing”, and both can also mean “instead of doing”: バスに[乗]{の}らずに歩いた (I walked instead of taking the bus).",
+      "Only ～ないで makes a request: [忘]{わす}れないでください, never ✗ [忘]{わす}れずにください. But ～ずに can come before a request verb: [忘]{わす}れずに持ってきてください (Please remember to bring it).",
+      "And ～なくて (Unit 3) is different again: it gives a **reason**. [傘]{かさ}を持たずに出かけた (I went out without an umbrella) against 道が分からなくて[困]{こま}った (I didn’t know the way, so I was stuck).",
+      {
+       warn: "✗ しずに is a common slip. The ず-form of する is せず: [連絡]{れんらく}せずに休んだ (was absent without letting anyone know)."
+      }
+     ]
+    },
+    {
+     h: "～とおりに: just as",
+     body: [
+      {
+       lead: "[[toori-ni|～とおり(に)]] means “just as”, “exactly the way”: you follow a model, a plan or what someone said."
+      },
+      {
+       table: [
+        [
+         "Before とおり",
+         "Example"
+        ],
+        [
+         "verb dictionary form",
+         "私が言うとおりに"
+        ],
+        [
+         "verb た-form",
+         "言われたとおりに・思ったとおり"
+        ],
+        [
+         "noun + の",
+         "[説明書]{せつめいしょ}のとおりに"
+        ],
+        [
+         "noun directly → どおり",
+         "[予定]{よてい}どおり・[説明書]{せつめいしょ}どおり"
+        ]
+       ]
+      },
+      {
+       ex: "[説明書]{せつめいしょ}のとおりに、やってみてください。\nTry doing it just as the instructions say.\n\nさとうさんに教えてもらったとおりに、みそしるを作りました。\nI made miso soup exactly the way Mrs. Satō taught me.\n\n思ったとおり、雨が[降]{ふ}ってきました。\nJust as I thought, it’s started to rain.\n\n電車は[予定]{よてい}どおりに着きました。\nThe train arrived on schedule.",
+       label: "～とおりに"
+      },
+      "とおり is often written 通り, the same word as 通り (street). Straight after a noun, without の, it becomes **どおり**: [予定]{よてい}どおり (as planned), 時間どおり (on time).",
+      "に is often left out, especially in 思ったとおり and after どおり. At the end of a sentence it becomes とおりだ: そのとおりです (That’s exactly right).",
+      "A near neighbour is ～ように: 前にも言ったように (as I said before) also means “as”. ように points back to something; とおり matches it exactly, step by step. For “so that” ([[you-ni]], Unit 9), only ように works."
+     ]
+    },
+    {
+     h: "～ふりをする: pretending",
+     body: [
+      {
+       lead: "[[furi-o-suru|～ふりをする]] means “pretend to”, “act as if”. Someone shows a state that isn’t real, on purpose."
+      },
+      {
+       table: [
+        [
+         "Before ふり",
+         "Example"
+        ],
+        [
+         "verb (plain: ～ている, ～た, ～ない)",
+         "[寝]{ね}ているふり・聞こえないふり"
+        ],
+        [
+         "noun + の",
+         "病気のふり"
+        ],
+        [
+         "な-adjective + な",
+         "[平気]{へいき}なふり"
+        ],
+        [
+         "い-adjective",
+         "[忙]{いそが}しいふり"
+        ]
+       ]
+      },
+      {
+       ex: "雨の夜、かいとさんはリビングで、勉強しているふりをしていた。\nOn the rainy night, Kaito sat in the living room, pretending to study.\n\nそうたは、おじいちゃんの[声]{こえ}が聞こえないふりをした。\nSōta pretended he couldn’t hear his grandfather.\n\nその話は前にも聞いたけど、[初]{はじ}めて聞くふりをした。\nI’d heard the story before, but I acted as if it was the first time.\n\n[本当]{ほんとう}は[心配]{しんぱい}なのに、母は[平気]{へいき}なふりをしている。\nMy mother is really worried, but she’s acting as if she’s fine.",
+       label: "～ふりをする"
+      },
+      "The person who pretends knows the truth. That is the difference from the appearance patterns of Unit 7 ({{appearance-sou-you-rashii}}): 勉強しているようだ and 勉強しているみたい (it seems he’s studying) are **your** impressions, and you might be wrong. 勉強しているふりをしている means he isn’t studying, and he knows it.",
+      "And ～っぽい (Lesson 5, [[ppoi]]) is “-ish, like”: 子どもっぽい describes how someone seems, not an act.",
+      {
+       tip: "ふり is a noun (written [振]{ふ}り), so it takes の after nouns and を before する. [寝]{ね}たふり and [寝]{ね}ているふり both mean “pretending to be asleep”."
+      }
+     ]
+    },
+    {
+     h: "しか～ない and ～しかない: only, and no other way",
+     body: [
+      {
+       lead: "First, a building block. [[shika-nai|しか]] means “only”, but it always comes with a **negative** verb: literally “nothing except”."
+      },
+      {
+       ex: "[財布]{さいふ}に、百円しかありません。\nI only have a hundred yen in my wallet.\n\nこの店では、[現金]{げんきん}しか使えません。\nThis shop only takes cash.\n\n[昨日]{きのう}は三時間しか[寝]{ね}ていません。\nI only slept three hours last night.",
+       label: "しか～ない: only"
+      },
+      "しか replaces が and を, like さえ (Lesson 1), and comes after other particles: 日本でしか買えない (you can only buy it in Japan). だけ also means “only”, but with a positive verb: 百円だけあります. しか～ない adds the feeling “and that’s not enough”; だけ is neutral.",
+      {
+       h: "Verb + しかない: there’s no choice but"
+      },
+      "Put a dictionary-form verb before しかない, and the meaning becomes “there is nothing to do but…”: every other way is closed.",
+      {
+       ex: "終電が出てしまった。歩いて帰るしかない。\nThe last train has gone. There’s nothing for it but to walk home.\n\n[直]{なお}らないなら、新しいのを買うしかないですね。\nIf it can’t be fixed, you’ll just have to buy a new one.\n\nバスもタクシーもない。待つしかありません。\nNo buses, no taxis. All we can do is wait.",
+       label: "～しかない: no choice but"
+      },
+      "The polite form is ～しかありません (in speech, also ～しかないです). In writing you will meet ～ほかない, with the same meaning.",
+      "Compare ～なければならない ([[nakereba-naranai]], Unit 6): a rule or a duty says you must. ～しかない says there is no other way left, often with a sigh."
+     ]
+    },
+    {
+     h: "～に[違]{ちが}いない and ～に[決]{き}まっている: I’m sure",
+     body: [
+      {
+       lead: "Both mean “must be”, “I’m sure that…”. [[ni-chigainai|～に[違]{ちが}いない]] is a firm conclusion from what you see or know. [[ni-kimatte-iru|～に[決]{き}まっている]] is stronger: “of course, obviously”. It is conversational and often emotional."
+      },
+      {
+       table: [
+        [
+         "Before に[違]{ちが}いない / に[決]{き}まっている",
+         "Example"
+        ],
+        [
+         "verb (plain)",
+         "[来]{く}るに[違]{ちが}いない・[来]{こ}ないに[決]{き}まっている"
+        ],
+        [
+         "い-adjective",
+         "高いに[違]{ちが}いない"
+        ],
+        [
+         "な-adjective (no だ)",
+         "[静]{しず}かに[違]{ちが}いない"
+        ],
+        [
+         "noun (no だ)",
+         "うそに[決]{き}まっている"
+        ]
+       ]
+      },
+      {
+       ex: "[部屋]{へや}の電気がついている。トビーさんは、まだ起きているに[違]{ちが}いない。\nThe light is on in his room. Toby must still be awake.\n\nあの店は、いつも[行列]{ぎょうれつ}ができている。おいしいに[違]{ちが}いない。\nThere’s always a queue at that shop. It must be good.\n\n一万円でブランドのバッグ？にせものに[決]{き}まってるよ。\nA designer bag for ten thousand yen? It’s obviously a fake.\n\n毎日[練習]{れんしゅう}しているんだから、[上手]{じょうず}になるに[決]{き}まっています。\nYou practise every day, so of course you’ll get better.",
+       label: "Being sure"
+      },
+      "Polite forms: ～に[違]{ちが}いありません, ～に[決]{き}まっています. ～に[違]{ちが}いない sounds a little written; in conversation people often say きっと～と思う, or ～に[決]{き}まってる.",
+      {
+       fig: "<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">How sure are you?</text><text x=\"12\" y=\"48\">もしかしたら～かもしれない</text><text class=\"s\" x=\"328\" y=\"48\" text-anchor=\"end\">maybe</text><rect class=\"d-soft\" x=\"12\" y=\"56\" width=\"70\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"12\" y=\"96\">たぶん～でしょう・だろう</text><text class=\"s\" x=\"328\" y=\"96\" text-anchor=\"end\">probably</text><rect class=\"d-sage\" x=\"12\" y=\"104\" width=\"130\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"12\" y=\"144\">～はずだ</text><text class=\"s\" x=\"328\" y=\"144\" text-anchor=\"end\">should (from facts)</text><rect class=\"d-gold\" x=\"12\" y=\"152\" width=\"190\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"12\" y=\"192\">～にちがいない</text><text class=\"s\" x=\"328\" y=\"192\" text-anchor=\"end\">must be (from signs)</text><rect class=\"d-rose\" x=\"12\" y=\"200\" width=\"250\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"12\" y=\"240\">～にきまっている</text><text class=\"s\" x=\"328\" y=\"240\" text-anchor=\"end\">of course! (casual)</text><rect class=\"d-inkf\" x=\"12\" y=\"248\" width=\"316\" height=\"12\" rx=\"4\"/><text class=\"s\" x=\"170\" y=\"288\" text-anchor=\"middle\">longer bar = more sure (a rough guide)</text></svg>",
+       alt: "Five bars, each longer than the one above. もしかしたら～かもしれない, maybe; たぶん～でしょう・だろう, probably; ～はずだ, should (from facts); ～にちがいない, must be (from signs); ～にきまっている, of course (casual). Longer bar means more sure; a rough guide.",
+       cap: "A rough guide only: tone and context change how sure each one sounds."
+      },
+      "How is this different from ～はず ([[hazu]], Unit 9)? はず is reasoning from facts or plans: バスは十時に着くはずです (the timetable says so). ～に[違]{ちが}いない is a conclusion drawn from signs, with conviction: 電気がついているから、起きているに[違]{ちが}いない. ～に[決]{き}まっている is “obviously, no question”, and it can sound pushy. ～かもしれない and ～でしょう ([[kamoshirenai]], [[deshou-darou]], Unit 6) are much less sure.",
+      "These are guesses about things you can’t check directly, so they don’t describe your own plans: for “I’ll definitely go”, say [必]{かなら}ず行きます, not ✗ 行くに[違]{ちが}いない.",
+      {
+       h: "Common mistakes"
+      },
+      {
+       table: [
+        [
+         "✗ Mistake",
+         "✓ Correct",
+         "Why"
+        ],
+        [
+         "電気をつけるまま[寝]{ね}た。",
+         "電気をつけたまま[寝]{ね}た。",
+         "A state that carries on: た-form + まま."
+        ],
+        [
+         "開けたっぱなし",
+         "開けっぱなし",
+         "っぱなし follows the ます stem."
+        ],
+        [
+         "[連絡]{れんらく}しずに",
+         "[連絡]{れんらく}せずに",
+         "The ず-form of する is せず."
+        ],
+        [
+         "[説明書]{せつめいしょ}とおりに",
+         "[説明書]{せつめいしょ}のとおりに・[説明書]{せつめいしょ}どおりに",
+         "Nouns take の, or どおり straight after."
+        ],
+        [
+         "百円しかあります。",
+         "百円しかありません。",
+         "しか always needs a negative."
+        ],
+        [
+         "学生だに[違]{ちが}いない。",
+         "学生に[違]{ちが}いない。",
+         "No だ before に[違]{ちが}いない."
+        ]
+       ]
+      },
+      "The full reference is in {{state-manner-certainty}}.",
+      {
+       terms: [
+        "mama",
+        "ppanashi",
+        "zu-ni",
+        "toori-ni",
+        "furi-o-suru",
+        "shika-nai",
+        "ni-chigainai",
+        "ni-kimatte-iru"
+       ]
+      }
+     ]
+    }
+   ],
+   try: [
+    {
+     id: "e3u10-l6-x1",
+     type: "match",
+     q: "Match each verb with its ～ずに form (“without doing”).",
+     pairs: [
+      [
+       "食べる",
+       "食べずに",
+       "Ichidan: 食べない → ない becomes ずに."
+      ],
+      [
+       "言う",
+       "言わずに",
+       "Godan う-verbs change う to わ in the ない-form: 言わない → 言わずに."
+      ],
+      [
+       "する",
+       "せずに",
+       "The exception: する becomes せず, not ✗ しず."
+      ],
+      [
+       "[来]{く}る",
+       "[来]{こ}ずに",
+       "[来]{く}る → [来]{こ}ない → [来]{こ}ずに, read こずに."
+      ],
+      [
+       "使う",
+       "使わずに",
+       "使わない → 使わずに."
+      ]
+     ]
+    },
+    {
+     id: "e3u10-l6-x2",
+     type: "mcq",
+     q: "Kaito writes in the house chat: 「エアコンをつけたまま、出かけてしまった。」 What happened?",
+     options: [
+      {
+       t: "He went out and left the air conditioner on.",
+       ok: true,
+       why: "Right. た-form + まま: he switched it on, and it was still on when he went out. てしまった adds “oops”."
+      },
+      {
+       t: "He turned the air conditioner on on purpose before leaving, so the room would be cool when he got back.",
+       why: "Doing it on purpose, ready for later, is ～ておく: エアコンをつけておいた. まま just says the state didn’t change."
+      },
+      {
+       t: "He went out before he could turn the air conditioner on.",
+       why: "That would be エアコンをつける前に出かけた. つけたまま means it was already on."
+      },
+      {
+       t: "He turned it off and went out.",
+       why: "Turning it off is [消]{け}す: エアコンを[消]{け}して出かけた. つけたまま means it stayed on."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l6-x3",
+     type: "sort",
+     q: "In which sentences does the speaker say the state is **not real** (someone is pretending)?",
+     buckets: [
+      "The speaker thinks it is true",
+      "Pretending: it isn’t true"
+     ],
+     items: [
+      {
+       t: "かいとさんは[寝]{ね}ているみたい。",
+       b: 0,
+       why: "みたい is the speaker’s impression: Kaito seems to be asleep."
+      },
+      {
+       t: "かいとさんは[寝]{ね}ているふりをしている。",
+       b: 1,
+       why: "ふりをする: Kaito is awake and acting asleep."
+      },
+      {
+       t: "そうたは、何も知らないようだ。",
+       b: 0,
+       why: "ようだ is a guess from signs that Sōta really doesn’t know."
+      },
+      {
+       t: "そうたは、何も知らないふりをした。",
+       b: 1,
+       why: "He knows, but acts as if he doesn’t."
+      },
+      {
+       t: "兄は、病気のふりをして学校を休んだ。",
+       b: 1,
+       why: "Noun + のふり: he wasn’t really ill."
+      },
+      {
+       t: "兄は、病気らしい。",
+       b: 0,
+       why: "らしい: the speaker has heard that he is ill and believes it."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l6-x4",
+     type: "mcq",
+     q: "Yến calls down the hallway: 「だれ？[台所]{だいどころ}の水、出しっぱなしだよ！」 What is she saying?",
+     options: [
+      {
+       t: "Someone has left the kitchen tap running.",
+       ok: true,
+       why: "Right. ます stem + っぱなし: the water was turned on and left on, and she isn’t happy about it."
+      },
+      {
+       t: "Someone has just turned the kitchen tap on for her.",
+       why: "っぱなし is about something left that way, usually carelessly, not a favour."
+      },
+      {
+       t: "The water in the kitchen has stopped coming out.",
+       why: "出しっぱなし means the opposite: the water keeps running."
+      },
+      {
+       t: "Someone is running the water on purpose to clean the sink.",
+       why: "On purpose would be ～ておく or a reason. っぱなし is a complaint about something left."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l6-x5",
+     type: "spot",
+     q: "Rodrigo writes an apology to Mrs. Satō. Tap each form that is **wrong**.",
+     ask: "is wrong",
+     parts: [
+      "さとうさん、[昨日]{きのう}はすみませんでした。[窓]{まど}を",
+      {
+       t: "開けたまま",
+       flag: false,
+       why: "Correct: た-form + まま, “with the window still open”."
+      },
+      "出かけてしまいました。[台所]{だいどころ}の電気も",
+      {
+       t: "つけたっぱなし",
+       flag: true,
+       why: "Wrong. っぱなし follows the ます stem: つけっぱなし."
+      },
+      "でした。それに、[連絡]{れんらく}",
+      {
+       t: "しずに",
+       flag: true,
+       why: "Wrong. The ず-form of する is せず: [連絡]{れんらく}せずに."
+      },
+      "[遅]{おそ}く帰ってしまいました。これからは、さとうさんが",
+      {
+       t: "言うとおりに",
+       flag: false,
+       why: "Correct: dictionary form + とおりに, “just as you say”."
+      },
+      "します。ごみも、",
+      {
+       t: "[忘]{わす}れずに",
+       flag: false,
+       why: "Correct: [忘]{わす}れない → [忘]{わす}れずに, “without forgetting”."
+      },
+      "出します。"
+     ]
+    },
+    {
+     id: "e3u10-l6-x6",
+     type: "mcq",
+     q: "Complete the sentence so it means “I only have a thousand yen in my wallet”: [財布]{さいふ}に千円（　）ない。",
+     options: [
+      {
+       t: "しか",
+       ok: true,
+       why: "Right. しか + a negative verb means “only”, with the feeling that it isn’t much."
+      },
+      {
+       t: "だけ",
+       why: "だけ also means “only”, but it takes a positive verb: 千円だけある. With ない it doesn’t work here."
+      },
+      {
+       t: "が",
+       why: "千円がない would mean “I don’t have the thousand yen”, not “only a thousand”."
+      },
+      {
+       t: "ほど",
+       why: "ほど～ない compares degree (“not as … as”, Lesson 3); it doesn’t mean “only”."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l6-x7",
+     type: "mcq",
+     q: "A typhoon has stopped the trains, and there are no taxis. Which sentence says “we have no choice but to stay at a hotel”?",
+     options: [
+      {
+       t: "ホテルに[泊]{と}まるしかない。",
+       ok: true,
+       why: "Right. Dictionary form + しかない: there is no other way left."
+      },
+      {
+       t: "ホテルに[泊]{と}まるはずだ。",
+       why: "はず is an expectation from facts (“we are expected to stay”). It doesn’t say every other option is closed."
+      },
+      {
+       t: "ホテルに[泊]{と}まらないしかない。",
+       why: "Wrong form. しかない follows the dictionary form: [泊]{と}まるしかない."
+      },
+      {
+       t: "ホテルに[泊]{と}まりそうだ。",
+       why: "～そう is “looks like”, a guess from appearance (Unit 7), not “no choice”."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l6-x8",
+     type: "match",
+     q: "Four housemates guess whether Toby is in his room. Match each sentence to how sure the speaker sounds.",
+     pairs: [
+      [
+       "トビーさんは[部屋]{へや}にいるかもしれない。",
+       "maybe",
+       "～かもしれない: only a possibility."
+      ],
+      [
+       "トビーさんは[部屋]{へや}にいるでしょう。",
+       "probably",
+       "～でしょう: a fair guess."
+      ],
+      [
+       "トビーさんは[部屋]{へや}にいるに[違]{ちが}いない。",
+       "must be, judging from the signs",
+       "～に[違]{ちが}いない: a firm conclusion from what you can see or hear."
+      ],
+      [
+       "トビーさんは[部屋]{へや}にいるに[決]{き}まってるよ。",
+       "obviously, no question (casual)",
+       "～に[決]{き}まってる: very strong and conversational."
+      ]
+     ]
+    },
+    {
+     id: "e3u10-l6-x9",
+     type: "type",
+     q: "Type the ～ずに form of する that fits: 「[連絡]{れんらく}（　）休むのは、よくないですよ。」 (“Being absent without letting anyone know isn’t good.”)",
+     answer: "せずに",
+     wrongs: [
+      {
+       v: "せず",
+       why: "Close: せず is the ず-form itself. For “without doing” before 休む, add に: せずに."
+      },
+      {
+       v: "しずに",
+       why: "する is the exception: its ず-form is せず, so せずに."
+      },
+      {
+       v: "しないで",
+       why: "しないで means the same and is fine in speech, but the question asks for the ず-form: せずに."
+      }
+     ],
+     why: "～ずに means “without doing”. For する, ない → ず gives せず: [連絡]{れんらく}せずに休む."
+    },
+    {
+     id: "e3u10-l6-x10",
+     type: "type",
+     q: "Type the missing words for “just as the instructions say”: 「[説明書]{せつめいしょ}（　）、[組]{く}み立ててください。」",
+     answer: [
+      "のとおりに",
+      "どおりに",
+      "のとおり",
+      "どおり"
+     ],
+     wrongs: [
+      {
+       v: "とおりに",
+       why: "After a noun, add の (のとおりに) or join it directly as どおり (どおりに)."
+      },
+      {
+       v: "のように",
+       why: "ように points back to something (“as”, “like”), but to follow instructions step by step, use のとおりに."
+      }
+     ],
+     why: "Noun + のとおりに, or noun + どおりに: “exactly as”. [説明書]{せつめいしょ}のとおりに[組]{く}み立てる, “put it together just as the instructions say”."
+    },
+    {
+     id: "e3u10-l6-x11",
+     type: "type",
+     q: "Type the missing word: 「そうたは、[宿題]{しゅくだい}をしている（　）をして、ゲームをしていた。」 (“Sōta was pretending to do his homework, but he was playing a game.”)",
+     answer: "ふり",
+     wrongs: [
+      {
+       v: "よう",
+       why: "ようだ is the speaker’s impression and can’t take をする. For pretending, use ふりをする."
+      },
+      {
+       v: "まま",
+       why: "まま is “as it is, unchanged” and doesn’t take をする. Pretending is ふりをする."
+      }
+     ],
+     why: "Plain verb + ふりをする: Sōta acted as if he was doing his homework. He knew he wasn’t."
+    }
+   ],
+   apply: {
+    intro: "Use the patterns about your own life. Keep the notes for yourself.",
+    tasks: [
+     {
+      t: "Left as it is",
+      how: [
+       "Write two ～たまま sentences about things you sometimes do: [寝]{ね}る, 出かける, 食べる with something still on, open or unfinished.",
+       "Write one ～っぱなし sentence, as a housemate or family member might complain to you (… がつけっぱなしだよ).",
+       "Write one ～ずに sentence about something you did without something else (… を使わずに, … を食べずに)."
+      ],
+      write: "まま 1… 2… っぱなし: … ずに: …"
+     },
+     {
+      t: "Just as told, and pretending",
+      how: [
+       "Find a recipe, a set of instructions or a timetable (in any language). Write two sentences with ～とおりに or ～どおり about following it, or about something that went as planned.",
+       "Write one sentence about a time you pretended something: 聞こえないふり, [寝]{ね}たふり, 知らないふり…."
+      ],
+      write: "とおり 1… 2… ふり: …"
+     },
+     {
+      t: "No choice, and how sure",
+      how: [
+       "Write one しか～ない sentence about what you have only a little of today, and one ～しかない sentence about a problem with only one way out.",
+       "Look out of the window or at today’s news. Write three guesses with ～かもしれない, ～でしょう and ～に[違]{ちが}いない, and one ～に[決]{き}まってる as you would say it to a friend.",
+       "Check: no だ before に[違]{ちが}いない after a noun or a な-adjective."
+      ],
+      write: "しか… しかない… かもしれない… でしょう… [違]{ちが}いない… [決]{き}まってる…"
+     }
+    ],
+    proof: "Two ～たまま, one ～っぱなし and one ～ずに sentence, two ～とおり and one ～ふり sentence, one しか～ない and one ～しかない sentence, and four guesses at different levels of certainty, all your own."
+   },
+   read: [
+    {
+     book: "taekim",
+     where: "Special Expressions, “Expressing a lack of change” (「まま」 and 「っぱなし」)"
+    },
+    {
+     book: "taekim",
+     where: "Special Expressions, “More negative verbs”, section “Doing something without doing something else” (～ずに)"
+    },
+    {
+     book: "taekim",
+     where: "Special Expressions, “Expressing Amounts”, section on 「しか」 (“Indication that there’s nothing else”)"
+    },
+    {
+     book: "imabi",
+     where: "第149課 “～とおりに” and 第260課 “No Doubt that: ～に違いない & ～に相違ない”",
+     note: "Detailed and advanced: read the sections on the pattern you want and skip the rest."
+    }
+   ]
+  },
+  {
+   id: "e3u10-l7",
+   title: "Time, range, focus and contrast: ～とたん, ～ついでに, ～ていらい, ～から～にかけて, ～をちゅうしんに, ～にかんして, ～わりに・～にしては, ～ばかりか",
+   minutes: 65,
+   hook: {
+    q: "A colleague reads your first email in Japanese and says: 「日本語を始めて一年にしては、とても[上手]{じょうず}ですね。」 What does she mean?",
+    options: [
+     "It’s very good for someone who has studied for only a year",
+     "It’s good, but after a whole year it should be better",
+     "It’s as good as anyone’s after a year of study",
+     "It will be very good once you have studied for a year"
+    ],
+    answer: 0,
+    reveal: "**It’s very good for someone who has studied for only a year.** ～にしては means “for…, considering…”: you take a known fact (one year of study) as the standard and say the result is better or worse than you would expect from it. Here it is better, so it’s praise. This lesson pairs ～にしては with ～わりに, and adds six patterns for time, range, focus and “not only… but even” that fill N3 notices, news and conversation."
+   },
+   goals: [
+    "Say “the moment that” for something sudden with ～たとたん(に), and use ～てすぐ for your own actions",
+    "Do something extra “while you’re at it” with ～ついでに",
+    "Say “ever since” with ～て以来, and spread an event over a period or an area with ～から～にかけて",
+    "Name the main focus with ～を中心に, and a topic formally with ～に[関]{かん}して and ～に[関]{かん}する",
+    "Say “for…” or “considering…” with ～わりに and ～にしては",
+    "Go one step further than ～だけでなく with ～ばかりか"
+   ],
+   learn: [
+    {
+     h: "Four ways to place an event",
+     body: [
+      {
+       lead: "Lesson 2 placed events inside a stretch of time with ～うちに, ～[間]{あいだ} and ～たびに. Four more patterns say how an event connects to another, or how widely it spreads."
+      },
+      {
+       fig: "<svg viewBox=\"0 0 340 392\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">Four ways to place an event</text><text x=\"12\" y=\"48\">～たとたん: the instant after</text><path class=\"d-ink\" d=\"M20 74H320\" stroke-width=\"1.5\"/><circle class=\"d-sage\" cx=\"110\" cy=\"74\" r=\"8\" stroke-width=\"2\"/><text class=\"s\" x=\"110\" y=\"98\" text-anchor=\"middle\">A</text><circle class=\"d-rose\" cx=\"134\" cy=\"74\" r=\"8\" stroke-width=\"2\"/><text class=\"s\" x=\"140\" y=\"98\" text-anchor=\"middle\">B!</text><text class=\"s\" x=\"170\" y=\"118\" text-anchor=\"middle\">B comes at once, often as a surprise</text><text x=\"12\" y=\"146\">～ついでに: on the same trip</text><path class=\"d-ink\" d=\"M20 178H140V158H200V178H320\" stroke-width=\"2\" fill=\"none\"/><rect class=\"d-gold\" x=\"148\" y=\"150\" width=\"44\" height=\"18\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"170\" y=\"164\" text-anchor=\"middle\">B</text><text class=\"s\" x=\"60\" y=\"196\" text-anchor=\"middle\">A (main)</text><text class=\"s\" x=\"280\" y=\"196\" text-anchor=\"middle\">A (main)</text><text class=\"s\" x=\"170\" y=\"214\" text-anchor=\"middle\">a small extra (B) on the way</text><text x=\"12\" y=\"242\">～ていらい: ever since</text><circle class=\"d-rose\" cx=\"40\" cy=\"268\" r=\"8\" stroke-width=\"2\"/><rect class=\"d-sage\" x=\"50\" y=\"262\" width=\"240\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"308\" y=\"272\" text-anchor=\"middle\">now</text><text class=\"s\" x=\"170\" y=\"294\" text-anchor=\"middle\">from a turning point up to now</text><text x=\"12\" y=\"322\">から～にかけて: spread over</text><rect class=\"d-soft\" x=\"40\" y=\"334\" width=\"260\" height=\"20\" rx=\"8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle class=\"d-inkf\" cx=\"80\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"130\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"150\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"215\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"262\" cy=\"344\" r=\"3\"/><text class=\"s\" x=\"170\" y=\"378\" text-anchor=\"middle\">somewhere over the span, roughly</text></svg>",
+       alt: "Four timelines. ～たとたん, the instant after: dot A, and right beside it dot B with an exclamation mark; B comes at once, often as a surprise. ～ついでに, on the same trip: a line labelled A (main) with a small step up to a box B in the middle; a small extra on the way. ～ていらい, ever since: a dot followed by a long bar to now; from a turning point up to now. から～にかけて, spread over: a dashed box with dots scattered inside; somewhere over the span, roughly.",
+       cap: "とたん: at once. ついでに: on the same trip. 以来: ever since. にかけて: spread over a span."
+      },
+      "Each section below takes one pattern. Then come three patterns for focus and topic, and three for contrast."
+     ]
+    },
+    {
+     h: "～たとたん(に): the moment that",
+     body: [
+      {
+       lead: "た-form + [[totan-ni|とたん(に)]] means “the moment that”, “just as”: B happens immediately after A, and usually B is sudden or unexpected."
+      },
+      {
+       ex: "ドアを開けたとたん、ねこが入ってきた。\nThe moment we opened the door, the cat came in.\n\n立ち上がったとたんに、めまいがした。\nAs soon as I stood up, I felt dizzy.\n\n駅を出たとたん、雨が[降]{ふ}り出した。\nJust as I came out of the station, it started to rain.\n\n有名になったとたん、友だちが[増]{ふ}えた。\nThe moment he became famous, he suddenly had lots of friends.",
+       label: "～たとたん(に)"
+      },
+      "The verb before とたん is always in the **た-form**: A has just happened. ✗ 開けるとたん is wrong.",
+      "B is something that **happens**, not something you decide to do. So you can’t use とたん for your own planned action, or for a request: ✗ 家に帰ったとたん、シャワーを[浴]{あ}びた sounds wrong, because showering is your choice. Say 家に帰って、すぐシャワーを[浴]{あ}びた. For a request, use ～たら、すぐ: 着いたら、すぐ電話してください.",
+      {
+       h: "Near neighbours"
+      },
+      {
+       list: [
+        "**～たら** ([[conditional-tara]], Unit 6) can report what you found: ドアを開けたら、ねこがいた (when I opened the door, the cat was there). とたん says that something **moved or changed** at that instant.",
+        "**～たところ** and **～たばかり** ({{tokoro-and-bakari}}, Unit 9) say how recently something finished, not what happened at that moment."
+       ]
+      }
+     ]
+    },
+    {
+     h: "～ついでに: while you’re at it",
+     body: [
+      {
+       lead: "[[tsuide-ni|ついでに]] means “while you’re at it”, “on the same trip”: you are doing A anyway, so you take the chance to do B too."
+      },
+      {
+       table: [
+        [
+         "Before ついでに",
+         "Example"
+        ],
+        [
+         "verb dictionary form",
+         "コンビニに行くついでに"
+        ],
+        [
+         "verb た-form",
+         "東京に行ったついでに"
+        ],
+        [
+         "noun + の",
+         "買い物のついでに"
+        ]
+       ]
+      },
+      {
+       ex: "コンビニに行くついでに、[牛乳]{ぎゅうにゅう}を買ってきてくれる？\nSince you’re going to the convenience store, could you get some milk?\n\n買い物のついでに、図書館に[寄]{よ}って本を[返]{かえ}した。\nWhile I was out shopping, I stopped at the library and returned a book.\n\n東京に[出張]{しゅっちょう}したついでに、大学の友だちに会った。\nWhile I was in Tokyo on business, I met a friend from university.",
+       label: "～ついでに"
+      },
+      "A, before ついでに, is the main plan; B is the extra. With the dictionary form (行くついでに), B happens on the way, as part of the trip. With the た-form (行ったついでに), B happens once you are there.",
+      "ついでに also stands alone at the start of a sentence: ついでに、ごみも出しておいて (While you’re at it, take the rubbish out too).",
+      "Compare ～ながら ([[nagara]], Unit 7): one person does two things **at the same moment** (歩きながら話す). With ついでに, the two actions are on the same trip, usually one after the other."
+     ]
+    },
+    {
+     h: "～て以来 and ～から～にかけて: since, and over a span",
+     body: [
+      {
+       lead: "て-form + [[te-irai|以来]], or noun + 以来, means “ever since”: from a turning point in the past, a situation has continued up to now."
+      },
+      {
+       ex: "日本に来て以来、毎日日本語で[日記]{にっき}を書いています。\nEver since I came to Japan, I’ve kept a diary in Japanese every day.\n\n[卒業]{そつぎょう}して以来、[彼]{かれ}には一度も会っていません。\nI haven’t seen him once since we graduated.\n\nあの大雨の夜以来、かもめ[荘]{そう}では[防災]{ぼうさい}の話がよく出る。\nEver since that night of heavy rain, disaster preparedness often comes up at Kamome House.",
+       label: "～て以来"
+      },
+      "After a noun, 以来 comes directly: あの日以来, 去年の春以来, and それ以来 (since then). The second half is a continuing state or a repeated habit, often with ずっと or a negative (一度も会っていない).",
+      "～てから ([[te-form]], Unit 3) can also mean “since”: 日本に来てから、ずっと[日記]{にっき}を書いています. But ～てから is also “after” for a single next event ([宿題]{しゅくだい}をしてから[寝]{ね}ます), and 以来 can’t do that: ✗ [宿題]{しゅくだい}をして以来、[寝]{ね}ました. 以来 is more formal, and it is used for a turning point some time ago, not for something that happened a few minutes ago.",
+      {
+       h: "～から～にかけて: from … through …"
+      },
+      "[[kara-ni-kakete|から～にかけて]] means that something is spread over a span of time or an area, roughly, and not always the whole time.",
+      {
+       ex: "今夜から[明日]{あした}の朝にかけて、強い雨が[降]{ふ}るでしょう。\nHeavy rain is expected from tonight into tomorrow morning.\n\n三月の終わりから四月にかけて、[桜]{さくら}が[咲]{さ}きます。\nThe cherry trees blossom from late March into April.\n\n[関東]{かんとう}から東北にかけて、[雪]{ゆき}が[降]{ふ}っています。\nIt is snowing over a wide area, from Kantō to Tōhoku.",
+       label: "から～にかけて"
+      },
+      "Compare から～まで ([[particle-kara-made]], Unit 2), which gives an exact start and end: 九時から五時まで[働]{はたら}く (I work from nine to five). A timetable needs まで; a weather forecast, with rain at times over a period, uses にかけて. にかけて can also stand alone: [年末]{ねんまつ}にかけて (towards the end of the year)."
+     ]
+    },
+    {
+     h: "～を中心に: centred on",
+     body: [
+      {
+       lead: "Noun + [[o-chuushin-ni|を中心に(して)]] means “centred on”, “mainly”: the noun is the main part of a wider set. Before another noun, use を中心とした."
+      },
+      {
+       ex: "この町は、[港]{みなと}を中心に[発展]{はってん}してきた。\nThis town grew up around its harbour.\n\nこのアプリは、[若]{わか}い人を中心に人気がある。\nThis app is popular, mainly among young people.\n\n[今日]{きょう}の[授業]{じゅぎょう}では、N3の[文法]{ぶんぽう}を中心に[復習]{ふくしゅう}します。\nIn today’s class, we’ll review, focusing mainly on N3 grammar.",
+       label: "～を中心に"
+      },
+      "Other things are included too: older people may use the app, and the class may review some kanji. を中心に just tells you where the weight is. You will also see N を中心とした N: 駅を中心とした[地域]{ちいき} (the area around the station).",
+      "Compare について ([[ni-tsuite]], Unit 9): について gives the topic you talk or write about; を中心に gives the main part of something wider."
+     ]
+    },
+    {
+     h: "～に[関]{かん}して and ～に[関]{かん}する: about, concerning",
+     body: [
+      {
+       lead: "Noun + [[ni-kanshite|に[関]{かん}して]] means “about”, “concerning”. It is a more formal relative of について. Before a noun, it becomes に[関]{かん}する."
+      },
+      {
+       ex: "この[件]{けん}に[関]{かん}して、ご質問があれば、メールでお[願]{ねが}いします。\nIf you have any questions about this matter, please email us.\n\n[市役所]{しやくしょ}で、[防災]{ぼうさい}に[関]{かん}する[資料]{しりょう}をもらった。\nI got some leaflets on disaster preparedness at the city office.\n\n料金に[関]{かん}しては、[受付]{うけつけ}にお問い[合]{あ}わせください。\nFor questions about fees, please ask at reception.",
+       label: "～に[関]{かん}して・～に[関]{かん}する"
+      },
+      {
+       table: [
+        [
+         "",
+         "について",
+         "に[関]{かん}して"
+        ],
+        [
+         "Style",
+         "everyday, spoken and written",
+         "more formal: notices, reports, business"
+        ],
+        [
+         "Before a noun",
+         "についての + noun",
+         "に[関]{かん}する + noun"
+        ],
+        [
+         "Example",
+         "日本の[歴史]{れきし}についての本",
+         "日本の[歴史]{れきし}に[関]{かん}する本"
+        ]
+       ]
+      },
+      "With は, に[関]{かん}しては sets a topic apart from others: “as for…”, as in the last example. In speech about everyday things, について is the natural choice; save に[関]{かん}して for notices, emails at work and reports. The other compound particles are in {{compound-particles}}."
+     ]
+    },
+    {
+     h: "～わりに and ～にしては: for…, considering…",
+     body: [
+      {
+       lead: "Both say that a result is different from what you would expect. [[wari-ni|わりに]] weighs it against a quality or amount (price, age, effort). [[ni-shite-wa|にしては]] weighs it against one known fact."
+      },
+      {
+       table: [
+        [
+         "Before",
+         "～わりに",
+         "～にしては"
+        ],
+        [
+         "noun",
+         "[値段]{ねだん}のわりに",
+         "[初]{はじ}めてにしては"
+        ],
+        [
+         "verb (plain)",
+         "よく食べるわりに",
+         "一年勉強したにしては"
+        ],
+        [
+         "い-adjective",
+         "高いわりに",
+         "—"
+        ],
+        [
+         "な-adjective",
+         "[静]{しず}かなわりに",
+         "—"
+        ]
+       ]
+      },
+      {
+       ex: "この店は、[値段]{ねだん}のわりにおいしい。\nThe food here is good for the price.\n\n父は、年のわりに[若]{わか}く見える。\nMy father looks young for his age.\n\nよく食べるわりに、[太]{ふと}らない。\nConsidering how much I eat, I don’t put on weight.\n\n[初]{はじ}めてにしては、[上手]{じょうず}ですね。\nThat’s good for a first try.\n\n十一月にしては、[暖]{あたた}かいですね。\nIt’s warm for November, isn’t it?",
+       label: "～わりに and ～にしては"
+      },
+      "わりに can take adjectives; にしては can’t: ✗ 高いにしては is wrong, but 高いわりに is fine. にしては needs a specific standard (the first time, November, one year of study), and it often adds a little surprise. With age and price both work: 六十[歳]{さい}にしては[若]{わか}い, 年のわりに[若]{わか}い.",
+      {
+       h: "Four ways to say “expensive, and…”"
+      },
+      {
+       table: [
+        [
+         "Sentence",
+         "Meaning"
+        ],
+        [
+         "高いわりに、おいしくない。",
+         "It isn’t as good as the price promises."
+        ],
+        [
+         "高いのに、おいしくない。",
+         "It’s expensive, and yet it isn’t good! (a complaint, Unit 7)"
+        ],
+        [
+         "高いかわりに、おいしい。",
+         "It’s expensive, but good to make up for it (a trade-off, Lesson 3)."
+        ],
+        [
+         "千円にしては、おいしい。",
+         "Good, for only a thousand yen."
+        ]
+       ]
+      },
+      "～のに ([[noni]]) reports a fact with feeling; ～かわりに ([[kawari-ni]]) is a trade; ～に[比]{くら}べて ([[ni-kurabete]]) simply compares two things. わりに and にしては measure a result against what you expected."
+     ]
+    },
+    {
+     h: "～ばかりか: not only… but even",
+     body: [
+      {
+       lead: "Noun or plain form + [[bakari-ka|ばかりか]] means “not only A, but even B”. B goes further than you would expect, so it often has も, まで or さえ."
+      },
+      {
+       ex: "大雨で、電車ばかりか、バスまで止まった。\nThe heavy rain stopped not only the trains but even the buses.\n\n[彼]{かれ}は[約束]{やくそく}の時間に[遅]{おく}れたばかりか、[謝]{あやま}りもしなかった。\nNot only was he late, he didn’t even apologise.\n\nこの本は、子どもばかりか[大人]{おとな}にも人気がある。\nThis book is popular not only with children but with adults too.",
+       label: "～ばかりか"
+      },
+      "な-adjectives take な: [静]{しず}かなばかりか. Compare ～だけでなく (Lesson 1, [[dake-de-naku]]): ばかりか is stronger and more written, and the second part is the surprising one. It can’t end in a request, an order or your own plan: ✗ [野菜]{やさい}ばかりか[果物]{くだもの}も食べてください is wrong; say [野菜]{やさい}だけでなく[果物]{くだもの}も食べてください. Don’t confuse it with ～ばかり (“nothing but”, [[bakari]], Unit 9). Some lists put ～ばかりか at N2.",
+      {
+       h: "Common mistakes"
+      },
+      {
+       table: [
+        [
+         "✗ Mistake",
+         "✓ Correct",
+         "Why"
+        ],
+        [
+         "家に帰ったとたん、シャワーを[浴]{あ}びた。",
+         "家に帰って、すぐシャワーを[浴]{あ}びた。",
+         "とたん is for what happens, not your own choice."
+        ],
+        [
+         "開けるとたん",
+         "開けたとたん",
+         "とたん follows the た-form."
+        ],
+        [
+         "九時から五時にかけて[働]{はたら}く。",
+         "九時から五時まで[働]{はたら}く。",
+         "Exact times need から～まで."
+        ],
+        [
+         "[防災]{ぼうさい}に[関]{かん}して[資料]{しりょう}",
+         "[防災]{ぼうさい}に[関]{かん}する[資料]{しりょう}",
+         "Before a noun: に[関]{かん}する."
+        ],
+        [
+         "高いにしては",
+         "高いわりに",
+         "にしては doesn’t follow adjectives."
+        ],
+        [
+         "[野菜]{やさい}ばかりか[果物]{くだもの}も食べてください。",
+         "[野菜]{やさい}だけでなく[果物]{くだもの}も食べてください。",
+         "ばかりか can’t end in a request."
+        ]
+       ]
+      },
+      "That completes the N3 grammar in this track. Unit 11 turns to the N3 kanji, which you have been reading with furigana in this unit. Short daily review pays off, and forgetting and relearning is a normal part of it.",
+      {
+       lab: "kl-n3",
+       t: "Practise: the N3 kanji, many of which appear in this unit’s examples"
+      },
+      {
+       lab: "kl-n3-vocab",
+       t: "Practise: N3 vocabulary, including the words in this unit"
+      },
+      "The patterns of this lesson are collected in {{time-range-focus-contrast}}, and all the patterns of the unit in {{n3-grammar-patterns-2}}.",
+      {
+       terms: [
+        "totan-ni",
+        "tsuide-ni",
+        "te-irai",
+        "kara-ni-kakete",
+        "o-chuushin-ni",
+        "ni-kanshite",
+        "wari-ni",
+        "ni-shite-wa",
+        "bakari-ka"
+       ]
+      }
+     ]
+    }
+   ],
+   try: [
+    {
+     id: "e3u10-l7-x1",
+     type: "match",
+     q: "Match each pattern to its meaning.",
+     pairs: [
+      [
+       "～たとたん",
+       "the moment that (and suddenly)",
+       "B happens at once after A, often unexpectedly."
+      ],
+      [
+       "～ついでに",
+       "while you’re at it",
+       "You do A anyway, so you add B on the same trip."
+      ],
+      [
+       "～て以来",
+       "ever since",
+       "From a turning point in the past up to now."
+      ],
+      [
+       "～から～にかけて",
+       "spread over, roughly",
+       "Over a span of time or an area, not always the whole time."
+      ],
+      [
+       "～を中心に",
+       "mainly, centred on",
+       "The main part of a wider set."
+      ]
+     ]
+    },
+    {
+     id: "e3u10-l7-x2",
+     type: "mcq",
+     q: "Which sentence uses ～とたん correctly?",
+     options: [
+      {
+       t: "ドアを開けたとたん、ねこが入ってきた。",
+       ok: true,
+       why: "Right. た-form + とたん, and the cat’s coming in is something that happened, not the speaker’s choice."
+      },
+      {
+       t: "家に帰ったとたん、シャワーを[浴]{あ}びた。",
+       why: "Showering is your own choice. Say 家に帰って、すぐシャワーを[浴]{あ}びた."
+      },
+      {
+       t: "ドアを開けるとたん、ねこが入ってきた。",
+       why: "とたん follows the た-form: 開けたとたん."
+      },
+      {
+       t: "着いたとたんに、電話してください。",
+       why: "とたん can’t lead to a request. Say 着いたら、すぐ電話してください."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l7-x3",
+     type: "sort",
+     q: "Which fits each situation better: から～まで (exact start and end) or から～にかけて (spread over a span, roughly)?",
+     buckets: [
+      "から～まで",
+      "から～にかけて"
+     ],
+     items: [
+      {
+       t: "The bank is open from 9:00 to 15:00.",
+       b: 0,
+       why: "Opening hours are exact: 九時から三時まで."
+      },
+      {
+       t: "Heavy rain is expected from tonight into tomorrow morning.",
+       b: 1,
+       why: "A forecast: rain at times over the period. 今夜から朝にかけて."
+      },
+      {
+       t: "The test runs from 9:00 to 10:30.",
+       b: 0,
+       why: "A test has an exact start and end."
+      },
+      {
+       t: "The cherry trees blossom from late March into April.",
+       b: 1,
+       why: "Blossom spreads over the weeks, roughly."
+      },
+      {
+       t: "It’s snowing over a wide area, from Kantō to Tōhoku.",
+       b: 1,
+       why: "An area spread over a region: [関東]{かんとう}から東北にかけて."
+      },
+      {
+       t: "My shift is from 6 a.m. to 2 p.m.",
+       b: 0,
+       why: "A shift has fixed times: 六時から二時まで."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l7-x4",
+     type: "mcq",
+     q: "Mariya says to Toby: 「コンビニに行くついでに、[牛乳]{ぎゅうにゅう}を買ってきてくれる？」 What is she asking?",
+     options: [
+      {
+       t: "Since he’s going anyway, to get milk too",
+       ok: true,
+       why: "Right. The trip to the store is the main plan; the milk is the extra, done on the same trip."
+      },
+      {
+       t: "To go to the convenience store just to buy milk for her",
+       why: "That would make the milk the main purpose: [牛乳]{ぎゅうにゅう}を買いにコンビニに行ってくれる？ ついでに means he is going anyway."
+      },
+      {
+       t: "To buy milk somewhere else instead of at the convenience store",
+       why: "“Instead of” is ～かわりに (Lesson 3)."
+      },
+      {
+       t: "To drink milk while he walks to the store",
+       why: "Doing two things at the same moment is ～ながら (Unit 7)."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l7-x5",
+     type: "mcq",
+     q: "Which sentence is **not** natural?",
+     options: [
+      {
+       t: "[宿題]{しゅくだい}をして以来、[寝]{ね}ました。",
+       ok: true,
+       why: "Right, this one is wrong. 以来 needs a situation that has continued since a turning point; for one next event, use ～てから: [宿題]{しゅくだい}をしてから[寝]{ね}ました."
+      },
+      {
+       t: "日本に来て以来、ずっと[日記]{にっき}を書いています。",
+       why: "Natural: a habit that has continued since coming to Japan."
+      },
+      {
+       t: "日本に来てから、ずっと[日記]{にっき}を書いています。",
+       why: "Natural: ～てから with ずっと can also mean “since”."
+      },
+      {
+       t: "[宿題]{しゅくだい}をしてから[寝]{ね}ました。",
+       why: "Natural: ～てから for “after”, one event and then the next."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l7-x6",
+     type: "spot",
+     q: "A notice from the city office’s disaster-prevention section. Tap each phrase that is **wrong**.",
+     ask: "is wrong",
+     parts: [
+      "[防災課]{ぼうさいか}からのお知らせ：今夜",
+      {
+       t: "から[明日]{あした}の朝にかけて",
+       flag: false,
+       why: "Correct: rain at times over a span, so にかけて."
+      },
+      "、強い雨が[降]{ふ}るでしょう。川の近くの方は、[暗]{くら}く",
+      {
+       t: "ならないうちに",
+       flag: false,
+       why: "Correct: ～ないうちに from Lesson 2, “before it gets dark”."
+      },
+      "[避難]{ひなん}してください。[避難所]{ひなんじょ}",
+      {
+       t: "に[関]{かん}して[資料]{しりょう}",
+       flag: true,
+       why: "Wrong. Before a noun, use に[関]{かん}する: [避難所]{ひなんじょ}に[関]{かん}する[資料]{しりょう}."
+      },
+      "は、[市]{し}のホームページにあります。また、お[年寄]{としよ}り",
+      {
+       t: "に中心に",
+       flag: true,
+       why: "Wrong. The pattern is を中心に: お[年寄]{としよ}りを中心に (mainly older people)."
+      },
+      "、電話でもお知らせします。この[件]{けん}",
+      {
+       t: "に[関]{かん}して",
+       flag: false,
+       why: "Correct: に[関]{かん}して before a clause (ご質問があれば…), the formal “about” of a notice."
+      },
+      "、ご質問があれば、[防災課]{ぼうさいか}までお[願]{ねが}いします。"
+     ]
+    },
+    {
+     id: "e3u10-l7-x7",
+     type: "mcq",
+     q: "Complete the sentence: 十一月（　）、[暖]{あたた}かいですね。 (It’s warm for November.)",
+     options: [
+      {
+       t: "にしては",
+       ok: true,
+       why: "Right. Noun + にしては: November is the standard, and the warmth is more than you’d expect from it."
+      },
+      {
+       t: "わりに",
+       why: "A noun needs の before わりに: 十一月のわりに also works. Without の, the form is wrong."
+      },
+      {
+       t: "かわりに",
+       why: "かわりに is “instead of” or a trade-off: “instead of November” makes no sense."
+      },
+      {
+       t: "ばかりか",
+       why: "ばかりか is “not only… but even”, which needs a second, stronger point."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l7-x8",
+     type: "sort",
+     q: "Is each comment praise or a complaint?",
+     buckets: [
+      "Praise",
+      "Complaint"
+     ],
+     items: [
+      {
+       t: "[初]{はじ}めてにしては、[上手]{じょうず}だね。",
+       b: 0,
+       why: "Better than you’d expect for a first try."
+      },
+      {
+       t: "[値段]{ねだん}のわりに、おいしくない。",
+       b: 1,
+       why: "Not as good as the price promises."
+      },
+      {
+       t: "年のわりに、[若]{わか}く見えますね。",
+       b: 0,
+       why: "Looks younger than you’d expect for that age."
+      },
+      {
+       t: "高いわりに、[量]{りょう}が少ない。",
+       b: 1,
+       why: "Expensive, but the portion is smaller than you’d expect."
+      },
+      {
+       t: "よく[練習]{れんしゅう}したわりに、うまくいかなかった。",
+       b: 1,
+       why: "A disappointing result for so much practice."
+      },
+      {
+       t: "一年にしては、日本語がうまいですね。",
+       b: 0,
+       why: "Good Japanese for only one year: praise."
+      }
+     ]
+    },
+    {
+     id: "e3u10-l7-x9",
+     type: "type",
+     q: "Type the missing word for “the moment that”: 「[席]{せき}を立った（　）、電話が[鳴]{な}った。」 (“The moment I stood up from my seat, the phone rang.”)",
+     answer: [
+      "とたん",
+      "とたんに"
+     ],
+     wrongs: [
+      {
+       v: "ら",
+       why: "立ったら (when I stood up) is natural too, but it doesn’t say “the very moment”. For that, use とたん(に)."
+      },
+      {
+       v: "ばかり",
+       why: "～たばかり says how recently something happened (Unit 9) and can’t join two events like this."
+      },
+      {
+       v: "あいだに",
+       why: "あいだに needs a stretch of time (～ている[間]{あいだ}に). Standing up is a single moment."
+      }
+     ],
+     why: "た-form + とたん(に): the phone rang at the very moment you stood up, and you didn’t plan it."
+    },
+    {
+     id: "e3u10-l7-x10",
+     type: "type",
+     q: "Type the missing words for a formal leaflet title: 「[防災]{ぼうさい}（　）[資料]{しりょう}」 (“Materials on disaster preparedness”)",
+     answer: [
+      "にかんする",
+      "についての",
+      "にかんしての"
+     ],
+     wrongs: [
+      {
+       v: "にかんして",
+       why: "に[関]{かん}して goes before a verb phrase. Before a noun, use に[関]{かん}する."
+      },
+      {
+       v: "について",
+       why: "Before a noun, について needs の: についての. In a formal title, に[関]{かん}する is the usual choice."
+      }
+     ],
+     why: "Noun + に[関]{かん}する + noun: [防災]{ぼうさい}に[関]{かん}する[資料]{しりょう}. It is the formal way to say “about” before a noun (についての is the everyday one)."
+    },
+    {
+     id: "e3u10-l7-x11",
+     type: "type",
+     q: "Type the missing word for “not only… but even”: 「大雨で、電車（　）、バスまで止まった。」",
+     answer: [
+      "ばかりか",
+      "だけでなく",
+      "だけではなく",
+      "だけじゃなく",
+      "だけじゃなくて"
+     ],
+     wrongs: [
+      {
+       v: "ばかり",
+       why: "ばかり alone means “nothing but”. Add か: ばかりか, “not only… but even”."
+      },
+      {
+       v: "ではなく",
+       why: "ではなく is “not A but B”: it would say the buses stopped instead of the trains."
+      }
+     ],
+     why: "A ばかりか B まで: not only the trains but even the buses. ～だけでなく (Lesson 1) also works; ばかりか is stronger and more written, and fits まで well."
+    }
+   ],
+   apply: {
+    intro: "Use the patterns about your own life. Keep the notes for yourself.",
+    tasks: [
+     {
+      t: "Your own timeline",
+      how: [
+       "Write two ～て以来 sentences about something that has changed in your life since a turning point (… を始めて以来, … に[引]{ひ}っ[越]{こ}して以来).",
+       "Write one ～たとたん sentence about something sudden that happened to you.",
+       "Look at a weather forecast for where you live and write one sentence with ～から～にかけて."
+      ],
+      write: "以来 1… 2… とたん: … にかけて: …"
+     },
+     {
+      t: "Errands, focus and topics",
+      how: [
+       "Write two ～ついでに sentences about errands this week (… に行くついでに, … のついでに).",
+       "Write one ～を中心に sentence about what you study, or what your town is known for.",
+       "Write the title of a notice or leaflet you might make, with ～に[関]{かん}する (… に[関]{かん}するお知らせ)."
+      ],
+      write: "ついでに 1… 2… 中心に: … に[関]{かん}する: …"
+     },
+     {
+      t: "For…, considering…, and even",
+      how: [
+       "Write two ～わりに sentences: one about a shop or a meal, one about a person.",
+       "Write one ～にしては sentence of praise for someone (… にしては、[上手]{じょうず}だ).",
+       "Write one ～ばかりか sentence about a day when everything went wrong (… ばかりか、… まで…)."
+      ],
+      write: "わりに 1… 2… にしては: … ばかりか: …"
+     },
+     {
+      t: "Review the whole unit",
+      how: [
+       "Open {{n3-grammar-patterns-2}} and cover the example column. Say or write your own example for each pattern from Lessons 6 and 7.",
+       "Mark any pattern you hesitate over, and review it again in three days. Forgetting and relearning is how it sticks."
+      ]
+     }
+    ],
+    proof: "Two ～て以来, one ～とたん and one ～にかけて sentence, two ～ついでに, one ～を中心に and one ～に[関]{かん}する phrase, two ～わりに, one ～にしては and one ～ばかりか sentence, and your own examples for the unit’s patterns, all your own."
+   },
+   read: [
+    {
+     book: "taekim",
+     where: "Special Expressions, “Time-specific actions”, section “Express what occurred immediately after with 「とたん」”"
+    },
+    {
+     book: "imabi",
+     where: "第223課 “About: ～について, ～に関して, & ～をめぐって” and 第334課 “Considering…: わりに（は） & にしては”",
+     note: "Detailed and advanced: read the sections on the pattern you want and skip the rest."
+    },
+    {
+     book: "imabi",
+     where: "第262課 “After II” (～て以来), 第272課 “Span” (～にかけて), 第343課 (～を中心に（して）) and 第361課 “Incidental” (～ついでに)",
+     note: "For reference when you want more examples of one pattern."
+    }
+   ]
   }
  ],
  checkpoint: [
@@ -3555,7 +5006,7 @@ ICA.addUnit({
     ],
     pro: [
      "**Readings.** [間]{あいだ} is read あいだ in these patterns; the same kanji is ま in [間]{ま}に[合]{あ}う and かん in [時間]{じかん} and [一週間]{いっしゅうかん}. [最中]{さいちゅう} is also read さなか in literary style (夏の[最中]{さなか}), and もなか is a wafer sweet.",
-     "**～うちに with a negative.** ～ないうちに can’t be replaced by a positive ～うちに with the opposite meaning: *[暗]{くら}くなるうちに is wrong for “before it gets dark”. The negative literally means “while it hasn’t yet…”. Note also ～うちに use (2) can take a dictionary form with repeated actions: 何度も会ううちに[仲良]{なかよ}くなった (we became friends as we kept meeting).",
+     "**～うちに with a negative.** ～ないうちに can’t be replaced by a positive ～うちに with the opposite meaning: ✗ [暗]{くら}くなるうちに is wrong for “before it gets dark”. The negative literally means “while it hasn’t yet…”. Note also ～うちに use (2) can take a dictionary form with repeated actions: 何度も会ううちに[仲良]{なかよ}くなった (we became friends as we kept meeting).",
      "**～[間]{あいだ}に and ～うちに.** With a sleeping child, both are natural: [寝]{ね}ている[間]{あいだ}に just places the action; [寝]{ね}ているうちに adds “before they wake”. With fixed periods such as [授業]{じゅぎょう} or 夏休み, ～[間]{あいだ}に is the normal choice. Notices and formal writing also use noun + 中に and ～[期間中]{きかんちゅう} (during the period): [休業期間中]{きゅうぎょうきかんちゅう}.",
      "**～[最中]{さいちゅう} and ～ているところ.** Both describe an action in progress. ～[最中]{さいちゅう} stresses being in the thick of it and is typical when something interrupts; ～ているところ (Unit 9) is neutral. Signs and messages use the shorter noun + 中: [会議中]{かいぎちゅう}, 工事中, [準備中]{じゅんびちゅう}.",
      "**～たびに and ～ごとに.** ～ごとに means “every”, as in 一時間ごとに (every hour), and is about regular intervals, while ～たびに is about each occurrence of an event."
@@ -3654,7 +5105,7 @@ ICA.addUnit({
      "**くらい or ぐらい?** Both are correct and mean the same in these uses."
     ],
     pro: [
-     "**Positive ほど.** ほど can appear in positive sentences, but only for degree (～ほど[疲]{つか}れた) or amount (三十人ほど), not for “as … as”. *姉は母ほど[背]{せ}が高い is not natural Japanese.",
+     "**Positive ほど.** ほど can appear in positive sentences, but only for degree (～ほど[疲]{つか}れた) or amount (三十人ほど), not for “as … as”. ✗ 姉は母ほど[背]{せ}が高い is not natural Japanese.",
      "**ほど in fixed phrases.** それほど～ない (not that…), 思ったほど～ない (not as … as I thought) and ～ほどではない (not to the point of) are very common. [驚]{おどろ}くほど (surprisingly) and 死ぬほど (casual: incredibly) are set intensifiers.",
      "**～ば～ほど** (the more…, the more…) is a separate pattern, taught in Unit 9 ([[ba-hodo]]). Don’t read 安ければ安いほど as a comparison with a standard.",
      "**～に[比]{くら}べて in writing.** Reports and news prefer ～に[比]{くら}べて, ～と[比]{くら}べると and the more formal ～に[比]{ひ}して (often listed at N1). In academic Japanese, a phrase like 前年に[比]{くら}べて[増加]{ぞうか}した is typical; see {{written-vs-spoken-japanese}}.",
@@ -4011,8 +5462,8 @@ ICA.addUnit({
    levels: {
     starter: [
      "N3 is the middle level of the five-level Japanese-Language Proficiency Test, the bridge between everyday basics (N5, N4) and the Japanese of newspapers and work (N2, N1). Its grammar is mostly about **nuance**: how you feel about a fact, how sure you are, how events relate in time.",
-     "Unit 9 covers purpose, decisions, ～ところ, ～はず・～わけ・～べき, wishes, causes with feeling and compound particles ({{n3-grammar-patterns-1}}). Unit 10 covers concession ({{concession-temo}}), time clauses ({{time-clauses-uchi-ni}}), comparison and degree ({{degree-hodo-kurai}}), partial negation ({{partial-negation}}), tendencies ({{feelings-and-tendencies}}) and keigo in practice ({{keigo-in-practice}}).",
-     "The JLPT publishes no official grammar list, so N3 lists differ slightly between textbooks. The patterns here appear in all the common lists.",
+     "Unit 9 covers purpose, decisions, ～ところ, ～はず・～わけ・～べき, wishes, causes with feeling and compound particles ({{n3-grammar-patterns-1}}). Unit 10 covers concession ({{concession-temo}}), time clauses ({{time-clauses-uchi-ni}}), comparison and degree ({{degree-hodo-kurai}}), partial negation ({{partial-negation}}), tendencies ({{feelings-and-tendencies}}), keigo in practice ({{keigo-in-practice}}), states, manner and certainty ({{state-manner-certainty}}), and time, range, focus and contrast ({{time-range-focus-contrast}}).",
+     "The JLPT publishes no official grammar list, so N3 lists differ slightly between textbooks. The patterns here appear in the common N3 lists, though a few (such as ～っぱなし and ～ばかりか) are placed at N2 in some.",
      "Use this page for review: read a pattern, make your own example, and go back to the lesson if you are unsure."
     ],
     builder: [
@@ -4097,6 +5548,76 @@ ICA.addUnit({
         "～っぽい・～がち・～[気味]{ぎみ}",
         "-ish; tends to; a touch of",
         "[疲]{つか}れ[気味]{ぎみ}だ。"
+       ],
+       [
+        "～まま・～っぱなし",
+        "as it is; left that way",
+        "電気をつけたまま[寝]{ね}た。"
+       ],
+       [
+        "～ずに",
+        "without doing",
+        "何も言わずに帰った。"
+       ],
+       [
+        "～とおりに・～どおり",
+        "just as",
+        "[予定]{よてい}どおりに着いた。"
+       ],
+       [
+        "～ふりをする",
+        "pretend",
+        "[寝]{ね}たふりをした。"
+       ],
+       [
+        "しか～ない・～しかない",
+        "only; no choice but",
+        "歩いて帰るしかない。"
+       ],
+       [
+        "～に[違]{ちが}いない・～に[決]{き}まっている",
+        "must be; obviously",
+        "うそに[決]{き}まっている。"
+       ],
+       [
+        "～たとたん(に)",
+        "the moment that",
+        "立ったとたん、電話が[鳴]{な}った。"
+       ],
+       [
+        "～ついでに",
+        "while you’re at it",
+        "駅に行くついでに買った。"
+       ],
+       [
+        "～て以来",
+        "ever since",
+        "[卒業]{そつぎょう}して以来、会っていない。"
+       ],
+       [
+        "～から～にかけて",
+        "from … through (roughly)",
+        "夜から朝にかけて[降]{ふ}る。"
+       ],
+       [
+        "～を中心に",
+        "centred on, mainly",
+        "[若]{わか}い人を中心に人気がある。"
+       ],
+       [
+        "～に[関]{かん}して・～に[関]{かん}する",
+        "about (formal)",
+        "[防災]{ぼうさい}に[関]{かん}する[資料]{しりょう}"
+       ],
+       [
+        "～わりに・～にしては",
+        "for…, considering…",
+        "[初]{はじ}めてにしては[上手]{じょうず}だ。"
+       ],
+       [
+        "～ばかりか",
+        "not only… but even",
+        "電車ばかりか、バスも止まった。"
        ]
       ]
      },
@@ -4105,7 +5626,7 @@ ICA.addUnit({
     pro: [
      "**～ものだ** has three main uses. (1) What is natural: 人は[間違]{まちが}えるものだ, often with feeling: 時間がたつのは早いものだ. (2) What one should do, by common sense: 話は[最後]{さいご}まで聞くものだ; negative ～ものではない. (3) With the た-form, fond memories of a past habit: よくこの川で[泳]{およ}いだものだ. Casual: もんだ. Compare ～べきだ (Unit 9), the speaker’s own judgment. Don’t confuse it with the casual excuse ～もん (だって知らなかったんだもん).",
      "**～っけ** checks something you half remember. Casual: ～だっけ, ～だったっけ, ～たっけ, ～んだっけ; polite: ～でしたっけ, ～ましたっけ, ～んでしたっけ. It suits conversation with friends, colleagues and teachers, but not customers or formal settings, where a direct polite question is better (お名前をもう一度[伺]{うかが}ってもよろしいでしょうか). In stories, ～たっけ can also look back with nostalgia.",
-     "**Choosing between near neighbours** is the hard part of N3: ～ても or ～のに, ～[間]{あいだ} or ～[間]{あいだ}に, ほど or くらい, っぽい or [気味]{ぎみ}. Each lesson has a comparison table; when real overlap exists, the lessons say so, and good test questions give a context that leaves only one answer.",
+     "**Choosing between near neighbours** is the hard part of N3: ～ても or ～のに, ～[間]{あいだ} or ～[間]{あいだ}に, ほど or くらい, っぽい or [気味]{ぎみ}, まま or っぱなし, わりに or にしては. Each lesson has a comparison table; when real overlap exists, the lessons say so, and good test questions give a context that leaves only one answer.",
      "**What comes next.** N2 grammar (in most published lists) adds more formal and written patterns, many built on the ones here: ～にしても, ～ようとも, ～ものの, ～ものなら, ～に[際]{さい}して. The Academic Japanese track (from {{academic-japanese}}) uses many of them."
     ]
    },
@@ -4118,6 +5639,8 @@ ICA.addUnit({
     "partial-negation",
     "feelings-and-tendencies",
     "keigo-in-practice",
+    "state-manner-certainty",
+    "time-range-focus-contrast",
     "jlpt-overview"
    ],
    sources: [
@@ -4132,6 +5655,273 @@ ICA.addUnit({
     {
      t: "IRODORI Elementary 2 (The Japan Foundation): table of contents with grammar points by lesson (PDF)",
      url: "https://www.irodori.jpf.go.jp/assets/data/elementary02/pdf/Z_contents_en.pdf"
+    }
+   ],
+   checked: "2026-11"
+  },
+  {
+   id: "state-manner-certainty",
+   title: "States, manner and certainty: ～まま, ～っぱなし, ～ずに, ～とおり, ～ふり, ～しかない and ～にちがいない",
+   aka: [
+    "～まま",
+    "～たまま",
+    "このまま",
+    "そのまま",
+    "～っぱなし",
+    "～ずに",
+    "～ず",
+    "without doing",
+    "～とおりに",
+    "～どおり",
+    "just as",
+    "～ふりをする",
+    "pretend",
+    "しか～ない",
+    "～しかない",
+    "no choice but",
+    "～ほかない",
+    "～に違いない",
+    "～に決まっている",
+    "must be",
+    "certainty"
+   ],
+   tags: [
+    "japanese",
+    "grammar",
+    "n3"
+   ],
+   summary: "How to describe a state that carries on (～まま) or was carelessly left (～っぱなし), say “without doing” (～ずに), “just as” (～とおりに), “pretend” (～ふりをする), “only” and “no choice but” (しか～ない, ～しかない), and “I’m sure” (～に[違]{ちが}いない, ～に[決]{き}まっている).",
+   levels: {
+    starter: [
+     "**～まま** means “as it is, unchanged”: 電気をつけたまま[寝]{ね}た (I fell asleep with the light on). **～っぱなし** says something was left that way and shouldn’t have been: 水が出しっぱなしだ (the water has been left running).",
+     "**～ずに** means “without doing”, a little more formal than ～ないで: 朝ごはんを食べずに出かけた. する becomes せずに.",
+     "**～とおりに** means “just as”: [説明書]{せつめいしょ}のとおりに (just as the instructions say), [予定]{よてい}どおり (as planned).",
+     "**～ふりをする** means “pretend”: [寝]{ね}たふりをする (pretend to be asleep).",
+     "**しか～ない** means “only”: 百円しかない. With a verb, **～しかない** means “there’s no choice but”: 歩いて帰るしかない.",
+     "**～に[違]{ちが}いない** means “must be”, a firm conclusion: 起きているに[違]{ちが}いない. **～に[決]{き}まっている** is “of course, obviously”, stronger and more casual."
+    ],
+    builder: [
+     {
+      table: [
+       [
+        "Pattern",
+        "Form",
+        "Example"
+       ],
+       [
+        "～まま",
+        "た-form / ない-form / い-adj / な-adj + な / N + の",
+        "[靴]{くつ}をはいたまま"
+       ],
+       [
+        "～っぱなし",
+        "ます stem + っぱなし",
+        "開けっぱなし"
+       ],
+       [
+        "～ずに",
+        "ない → ずに (する → せずに, [来]{く}る → [来]{こ}ずに)",
+        "言わずに"
+       ],
+       [
+        "～とおりに",
+        "dictionary / た-form; N + の; N + どおり",
+        "言われたとおりに"
+       ],
+       [
+        "～ふりをする",
+        "plain verb / N + の / な-adj + な / い-adj",
+        "知らないふり"
+       ],
+       [
+        "～しかない",
+        "dictionary form + しかない",
+        "待つしかない"
+       ],
+       [
+        "～に[違]{ちが}いない",
+        "plain form; N and な-adj without だ",
+        "学生に[違]{ちが}いない"
+       ]
+      ]
+     },
+     "**まま, ておく, てある.** [窓]{まど}を開けたまま[寝]{ね}た: the state carried on. [窓]{まど}を開けておく: on purpose, for later. [窓]{まど}が開けてある: someone did it, and you see the result.",
+     "**まま and っぱなし.** まま is neutral and needs the た-form; っぱなし follows the ます stem and almost always complains. っぱなし also means “without a break”: 立ちっぱなし.",
+     "**ずに, ないで, なくて.** ずに = ないで (“without”, “instead of”), but only ないで makes requests (～ないでください). なくて gives a reason: 道が分からなくて[困]{こま}った.",
+     "**しか and だけ.** しか needs a negative and suggests “not enough”; だけ is neutral and takes a positive verb.",
+     "**Certainty, roughly:** かもしれない < でしょう < はず < に[違]{ちが}いない < に[決]{き}まっている. はず reasons from facts or plans; に[違]{ちが}いない concludes from signs; に[決]{き}まっている insists."
+    ],
+    pro: [
+     "**まま with the dictionary form.** In set phrases まま follows a dictionary or passive form: 言われるまま(に) (just as one is told, without question), 思うまま (as one pleases). For a state that carries on, use the た-form.",
+     "**っぱなし and its level.** Several published N3 lists include ～っぱなし; others place it at N2. It is common in speech (つけっぱなし, 出しっぱなし, 開けっぱなし) and in phrases like [勝]{か}ちっぱなし or [負]{ま}けっぱなし (a winning or losing streak).",
+     "**～ず alone.** In writing, ～ず without に joins clauses like a て-form: [彼]{かれ}は何も言わず、帰った. It also survives in set phrases such as [相変]{あいか}わらず (as always) and 知らず知らず (without realising).",
+     "**とおり and ように.** 前に[述]{の}べたように (as stated before) points back to something; [説明書]{せつめいしょ}のとおりに matches a model step by step. The reading changes after a bare noun: [予定]{よてい}どおり, 時間どおり.",
+     "**ふりをする.** The subject acts on purpose, so it is a person or an animal (死んだふりをする動物, animals that play dead), not a thing. ～ような[顔]{かお}をする (look as if) and the more written ～そぶりを見せる (show signs of) are close relatives.",
+     "**しかない, ほかない, ざるを[得]{え}ない.** ～ほかない (and ～ほかはない) is a written equivalent of ～しかない. ～ざるを[得]{え}ない (N2) says you are forced to do something against your will.",
+     "**に[違]{ちが}いない, に[相違]{そうい}ない, に[決]{き}まっている.** ～に[相違]{そうい}ない is a stiffer written version of ～に[違]{ちが}いない. ～に[決]{き}まっている is spoken and can sound pushy or scolding ([無理]{むり}に[決]{き}まってるでしょ). None of them describes your own intentions."
+    ]
+   },
+   related: [
+    "n3-grammar-patterns-2",
+    "te-shimau-te-oku",
+    "transitive-intransitive",
+    "appearance-sou-you-rashii",
+    "hazu-wake-beki",
+    "guessing-trying-advice",
+    "must-and-dont-have-to"
+   ],
+   sources: [
+    {
+     t: "Tae Kim’s Guide to Learning Japanese: Expressing a lack of change (まま, っぱなし)",
+     url: "https://guidetojapanese.org/learn/grammar/nochange"
+    },
+    {
+     t: "Tae Kim’s Guide to Learning Japanese: More negative verbs (～ず, ～ずに)",
+     url: "https://guidetojapanese.org/learn/grammar/negativeverbs2"
+    },
+    {
+     t: "IMABI, 第260課: No Doubt that: ～に違いない & ～に相違ない",
+     url: "https://imabi.org/no-doubt-that/"
+    }
+   ],
+   checked: "2026-11"
+  },
+  {
+   id: "time-range-focus-contrast",
+   title: "Time, range, focus and contrast: ～とたん, ～ついでに, ～ていらい, ～から～にかけて, ～をちゅうしんに, ～にかんして, ～わりに・～にしては and ～ばかりか",
+   aka: [
+    "～とたん",
+    "～たとたんに",
+    "the moment that",
+    "as soon as",
+    "～ついでに",
+    "while you’re at it",
+    "～て以来",
+    "以来",
+    "ever since",
+    "～から～にかけて",
+    "～にかけて",
+    "～を中心に",
+    "～を中心として",
+    "～に関して",
+    "～に関する",
+    "concerning",
+    "～わりに",
+    "～わりには",
+    "～にしては",
+    "considering",
+    "for its price",
+    "～ばかりか",
+    "not only but even"
+   ],
+   tags: [
+    "japanese",
+    "grammar",
+    "n3"
+   ],
+   summary: "How to say “the moment that” (～たとたん), “while you’re at it” (～ついでに), “ever since” (～て以来), “from … through” (～から～にかけて), “centred on” (～を中心に), “concerning” (～に[関]{かん}して), “for…, considering…” (～わりに, ～にしては) and “not only… but even” (～ばかりか).",
+   levels: {
+    starter: [
+     "**～たとたん(に)**: the moment that. ドアを開けたとたん、ねこが入ってきた. The second part happens by itself, often by surprise.",
+     "**～ついでに**: while you’re at it. コンビニに行くついでに、[牛乳]{ぎゅうにゅう}を買ってきて.",
+     "**～て以来**: ever since. 日本に来て以来、[日記]{にっき}を書いている.",
+     "**～から～にかけて**: from … through …, roughly. 今夜から[明日]{あした}の朝にかけて雨.",
+     "**～を中心に**: mainly, centred on. [若]{わか}い人を中心に人気がある.",
+     "**～に[関]{かん}して / ～に[関]{かん}する**: about, in formal language. [防災]{ぼうさい}に[関]{かん}する[資料]{しりょう}.",
+     "**～わりに / ～にしては**: for…, considering…. [値段]{ねだん}のわりにおいしい; [初]{はじ}めてにしては[上手]{じょうず}だ.",
+     "**～ばかりか**: not only… but even. 電車ばかりか、バスまで止まった."
+    ],
+    builder: [
+     {
+      table: [
+       [
+        "Pattern",
+        "Form",
+        "Watch out"
+       ],
+       [
+        "～たとたん(に)",
+        "た-form",
+        "not for your own choices or requests"
+       ],
+       [
+        "～ついでに",
+        "dictionary / た-form; N + の",
+        "A is the main plan, B the extra"
+       ],
+       [
+        "～て以来",
+        "て-form; N + 以来",
+        "a continuing state, not one next event"
+       ],
+       [
+        "～から～にかけて",
+        "N から N にかけて",
+        "rough span; exact times use まで"
+       ],
+       [
+        "～を中心に",
+        "N を中心に(して); N を中心とした N",
+        "other things are included too"
+       ],
+       [
+        "～に[関]{かん}して",
+        "N に[関]{かん}して; N に[関]{かん}する N",
+        "formal; before a noun, に[関]{かん}する"
+       ],
+       [
+        "～わりに",
+        "plain form; N + の; な-adj + な",
+        "measures against an expected degree"
+       ],
+       [
+        "～にしては",
+        "N or plain verb + にしては",
+        "not after adjectives"
+       ],
+       [
+        "～ばかりか",
+        "N or plain form; な-adj + な",
+        "not with requests or plans"
+       ]
+      ]
+     },
+     "**とたん, たら, てすぐ.** ドアを開けたとたん、ねこが入ってきた (something moved at that instant); ドアを開けたら、ねこがいた (you found it there); 家に帰って、すぐシャワーを[浴]{あ}びた (your own quick action).",
+     "**以来 and てから.** Both can mean “since” with ずっと, but only てから means “after” for one next event: [宿題]{しゅくだい}をしてから[寝]{ね}た.",
+     "**わりに, のに, かわりに.** 高いわりにおいしくない (less than the price promises); 高いのにおいしくない (and yet, with feeling); 高いかわりにおいしい (a trade-off).",
+     "**ばかりか and だけでなく.** Same idea; ばかりか is stronger and more written, and its second part goes further (も, まで, さえ)."
+    ],
+    pro: [
+     "**とたん.** It is written [途端]{とたん} in kanji. Guides agree that the second clause is not the speaker’s own deliberate act; it is usually an event, a change or a reaction (めまいがした, [泣]{な}き出した). ～か～ないかのうちに and ～や[否]{いな}や (N2–N1) are close relatives.",
+     "**ついでに.** The noun ついで ([序]{つい}で) means “an opportunity”. In casual speech の is often dropped after an action noun (買い物ついでに); keep it in writing. With the dictionary form, B happens on the way; with the た-form, once A is done.",
+     "**以来 with time words.** あの日以来, 去年の春以来 and それ以来 are common; with a short, recent time (さっき) 以来 sounds odd, because it implies a turning point some time ago.",
+     "**にかけて and にわたって.** ～にわたって (N2) stresses that something covers the whole span: 三日にわたって雨が[降]{ふ}り[続]{つづ}いた. ～にかけて only marks a rough span.",
+     "**に[関]{かん}して and について.** Some guides describe に[関]{かん}して as taking in the surrounding context as well as the topic itself; in practice the main difference is formality. Before a noun, に[関]{かん}しての also occurs, but に[関]{かん}する is far more common. The polite forms ～につきまして and ～に[関]{かん}しまして appear in business speech. ～をめぐって (N2) is used for topics of debate or conflict.",
+     "**わりに and にしては.** にしては needs a specific, known standard and can take a person (プロにしては); わりに works with general qualities and adjectives. With age and price, both are common.",
+     "**ばかりか.** Several N3 lists include it; others place it at N2. The second clause can’t be a request, an order or the speaker’s own intention; use ～だけでなく there."
+    ]
+   },
+   related: [
+    "n3-grammar-patterns-2",
+    "time-clauses-uchi-ni",
+    "compound-particles",
+    "tokoro-and-bakari",
+    "concession-temo",
+    "degree-hodo-kurai",
+    "conditionals-to-ba-tara-nara"
+   ],
+   sources: [
+    {
+     t: "Tae Kim’s Guide to Learning Japanese: Time-specific actions (とたん)",
+     url: "https://guidetojapanese.org/learn/grammar/timeactions"
+    },
+    {
+     t: "IMABI, 第223課: About: ～について, ～に関して, & ～をめぐって",
+     url: "https://imabi.org/about-2/"
+    },
+    {
+     t: "IMABI, 第334課: Considering…: わりに（は） & にしては",
+     url: "https://imabi.org/considering-%e3%82%8f%e3%82%8a%e3%81%ab%ef%bc%88%e3%81%af%ef%bc%89-%e3%81%ab%e3%81%97%e3%81%a6%e3%81%af/"
     }
    ],
    checked: "2026-11"
@@ -4245,6 +6035,108 @@ ICA.addUnit({
    term: "～[気味]{ぎみ} (a touch of)",
    def: "Noun or verb stem + [気味]{ぎみ}: a slight sign of something now, usually unwelcome. [風邪]{かぜ}[気味]{ぎみ} (a bit of a cold), [疲]{つか}れ[気味]{ぎみ} (a bit tired). As a suffix it is read ぎみ; alone, [気味]{きみ} means “feeling”.",
    codex: "feelings-and-tendencies"
+  },
+  {
+   id: "mama",
+   term: "～まま (as it is, unchanged)",
+   def: "A state carries on while something else happens: 電気をつけたまま[寝]{ね}た (fell asleep with the light on). Verbs take the た-form, nouns の: [靴]{くつ}のまま.",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "ppanashi",
+   term: "～っぱなし (left that way)",
+   def: "ます stem + っぱなし: something was done and carelessly left, as in つけっぱなし (left on); also “without a break”, as in 立ちっぱなし (standing the whole time). Mostly spoken.",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "zu-ni",
+   term: "～ずに (without doing)",
+   def: "The ない-form with ない changed to ずに: 食べずに (without eating). Means the same as ～ないで, a little more formally. する → せずに, [来]{く}る → [来]{こ}ずに.",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "toori-ni",
+   term: "～とおりに (just as)",
+   def: "Exactly the way something says or shows: 言われたとおりに, [説明書]{せつめいしょ}のとおりに. Straight after a noun it becomes どおり: [予定]{よてい}どおり (as planned).",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "furi-o-suru",
+   term: "～ふりをする (pretend)",
+   def: "Act as if something were true when it isn’t: [寝]{ね}たふりをする (pretend to be asleep), 知らないふりをする. Nouns take の: 病気のふり.",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "shika-nai",
+   term: "しか～ない and ～しかない (only; no choice but)",
+   def: "しか + a negative verb means “only”: 百円しかない. A dictionary-form verb + しかない means “there’s no choice but”: 歩いて帰るしかない.",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "ni-chigainai",
+   term: "～に[違]{ちが}いない (must be)",
+   def: "A firm conclusion from what you see or know: おいしいに[違]{ちが}いない (it must be good). Nouns and な-adjectives take no だ. Polite: ～に[違]{ちが}いありません.",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "ni-kimatte-iru",
+   term: "～に[決]{き}まっている (of course, obviously)",
+   def: "Very strong, conversational certainty, often emotional: うそに[決]{き}まってる (it’s obviously a lie). Same forms as ～に[違]{ちが}いない.",
+   codex: "state-manner-certainty"
+  },
+  {
+   id: "totan-ni",
+   term: "～たとたん(に) (the moment that)",
+   def: "た-form + とたん(に): B happens at the very moment A happens, usually by surprise. ドアを開けたとたん、ねこが入ってきた. Not for your own planned actions or requests.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "tsuide-ni",
+   term: "～ついでに (while you’re at it)",
+   def: "You are doing A anyway, so you add B: コンビニに行くついでに[牛乳]{ぎゅうにゅう}を買う. Verb or noun + の + ついでに; alone, ついでに means “while you’re at it”.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "te-irai",
+   term: "～て以来 (ever since)",
+   def: "て-form or noun + 以来: from a turning point in the past up to now. 日本に来て以来 (ever since I came to Japan), あの日以来, それ以来.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "kara-ni-kakete",
+   term: "～から～にかけて (from … through …)",
+   def: "Spread over a span of time or an area, roughly: 今夜から[明日]{あした}の朝にかけて雨が[降]{ふ}る. For exact start and end times, use から～まで.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "o-chuushin-ni",
+   term: "～を中心に (centred on, mainly)",
+   def: "Noun + を中心に(して): the noun is the main part of a wider set. [若]{わか}い人を中心に人気がある. Before a noun: を中心とした.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "ni-kanshite",
+   term: "～に[関]{かん}して / ～に[関]{かん}する (concerning)",
+   def: "A formal “about”, used in notices, reports and business: この[件]{けん}に[関]{かん}して. Before a noun, に[関]{かん}する: [防災]{ぼうさい}に[関]{かん}する[資料]{しりょう}.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "wari-ni",
+   term: "～わりに (for…, considering…)",
+   def: "The result differs from what a quality or amount would lead you to expect: [値段]{ねだん}のわりにおいしい (good for the price). Takes nouns + の, verbs and both kinds of adjectives.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "ni-shite-wa",
+   term: "～にしては (for…)",
+   def: "Weighs a result against one specific fact: [初]{はじ}めてにしては[上手]{じょうず}だ (good for a first try). Follows nouns and verbs, not adjectives.",
+   codex: "time-range-focus-contrast"
+  },
+  {
+   id: "bakari-ka",
+   term: "～ばかりか (not only… but even)",
+   def: "A ばかりか B (も・まで・さえ): B goes further than you’d expect. 電車ばかりか、バスまで止まった. Stronger and more written than ～だけでなく; not for requests.",
+   codex: "time-range-focus-contrast"
   }
  ],
  bank: [
@@ -5495,6 +7387,506 @@ ICA.addUnit({
     {
      t: "待っていただけますか。",
      why: "Polite and soft, but less respectful than お待ちいただけないでしょうか."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q51",
+   lesson: "e3u10-l6",
+   level: 1,
+   q: "What is the ず-form (“without doing”) of する?",
+   options: [
+    {
+     t: "せずに",
+     ok: true,
+     why: "する is the exception: ない → ず gives せず, so せずに."
+    },
+    {
+     t: "しずに",
+     why: "A common slip. The ず-form of する is せず, not しず."
+    },
+    {
+     t: "さずに",
+     why: "さず would come from a godan verb in す (話さない → 話さずに), not from する."
+    },
+    {
+     t: "すずに",
+     why: "ずに replaces ない in the ない-form, and する is the exception: しない, but せずに."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q52",
+   lesson: "e3u10-l6",
+   level: 3,
+   q: "Before a party, Yến switched the air conditioner on so the room would be cool when the guests came. Kaito, on the other hand, forgot to switch his off when he went out. Which pair of sentences describes them correctly?",
+   options: [
+    {
+     t: "Yến: エアコンをつけておいた。 Kaito: エアコンをつけたまま出かけた。",
+     ok: true,
+     why: "～ておく is done on purpose, ready for later; ～たまま is a state that carried on unchanged: he never switched it off."
+    },
+    {
+     t: "Yến: エアコンをつけたまま出かけた。 Kaito: エアコンをつけておいた。",
+     why: "The other way round: Kaito didn’t plan it, so ～ておく doesn’t fit him."
+    },
+    {
+     t: "Yến: エアコンをつけっぱなしにした。 Kaito: エアコンをつけておいた。",
+     why: "っぱなし is a careless state, which doesn’t fit Yến’s plan, and ～ておく doesn’t fit Kaito’s mistake."
+    },
+    {
+     t: "Yến: エアコンをつけずに待った。 Kaito: エアコンをつけておいた。",
+     why: "つけずに means Yến didn’t switch it on at all."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q53",
+   lesson: "e3u10-l6",
+   level: 2,
+   q: "Megumi, a nurse, says: 「[夜勤]{やきん}の日は、ほとんど立ちっぱなしです。」 What does she mean?",
+   options: [
+    {
+     t: "She is on her feet almost the whole time.",
+     ok: true,
+     why: "ます stem + っぱなし can mean “all the time, without a break”: 立ちっぱなし, standing the whole time."
+    },
+    {
+     t: "She stands up and leaves the ward early.",
+     why: "Nothing here is about leaving. っぱなし says the standing goes on and on."
+    },
+    {
+     t: "She can hardly stand up after a night shift.",
+     why: "That would need a potential: 立てない. 立ちっぱなし is standing for a long time."
+    },
+    {
+     t: "She leaves things lying around on the ward.",
+     why: "っぱなし can mean “left that way”, but here it follows 立つ (stand): she is the one standing."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q54",
+   lesson: "e3u10-l6",
+   level: 2,
+   q: "「[本当]{ほんとう}は聞こえているのに、聞こえないふりをしている。」 What is the person doing?",
+   options: [
+    {
+     t: "Pretending not to hear",
+     ok: true,
+     why: "ふりをする: they can hear, but act as if they can’t."
+    },
+    {
+     t: "Really unable to hear",
+     why: "[本当]{ほんとう}は聞こえている says they can hear. ふり is an act."
+    },
+    {
+     t: "Seeming, as far as the speaker can tell, not to hear",
+     why: "That would be 聞こえないようだ or 聞こえないみたい, the speaker’s impression. The speaker here knows the truth."
+    },
+    {
+     t: "Refusing to listen because they’re upset",
+     why: "Refusing would be 聞こうとしない. ふり is pretending, whatever the reason."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q55",
+   lesson: "e3u10-l6",
+   level: 2,
+   q: "「地図のとおりに行ったら、[迷]{まよ}わずに着きました。」 What happened?",
+   options: [
+    {
+     t: "I followed the map exactly and got there without getting lost.",
+     ok: true,
+     why: "のとおりに: just as the map showed. [迷]{まよ}わずに: without getting lost."
+    },
+    {
+     t: "I didn’t follow the map, and I got lost.",
+     why: "とおりに means you followed it, and [迷]{まよ}わずに means you didn’t get lost."
+    },
+    {
+     t: "I went the opposite way to the map, but got there anyway.",
+     why: "とおり is “just as”, not “against”."
+    },
+    {
+     t: "I got lost, so I had to look at the map.",
+     why: "～ずに is “without”: [迷]{まよ}わずに means no getting lost."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q56",
+   lesson: "e3u10-l6",
+   level: 1,
+   q: "Which sentence means “I only have 500 yen”?",
+   options: [
+    {
+     t: "五百円しかありません。",
+     ok: true,
+     why: "しか + a negative verb: only 500 yen, and that’s not much."
+    },
+    {
+     t: "五百円しかあります。",
+     why: "しか always needs a negative verb: しかありません."
+    },
+    {
+     t: "五百円だけありません。",
+     why: "だけ goes with a positive verb: 五百円だけあります."
+    },
+    {
+     t: "五百円もありません。",
+     why: "も + negative after an amount means “not even 500 yen”: you have less than that."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q57",
+   lesson: "e3u10-l6",
+   level: 3,
+   q: "Rodrigo missed the last bus home from the plant, and his phone has died. He says: 「もう歩いて帰るしかない。」 What does he mean?",
+   options: [
+    {
+     t: "There’s no other way: he’ll have to walk home.",
+     ok: true,
+     why: "Dictionary form + しかない: every other option is closed."
+    },
+    {
+     t: "He only ever walks home; he never takes the bus.",
+     why: "That would be a habit: いつも歩いて帰る. しかない here is about tonight’s lack of choice."
+    },
+    {
+     t: "A rule at the plant says that staff must walk home.",
+     why: "A rule would be ～なければならない. しかない means there is simply no other way."
+    },
+    {
+     t: "He would like to walk home tonight.",
+     why: "Wanting is ～たい. しかない says he has no choice."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q58",
+   lesson: "e3u10-l6",
+   level: 2,
+   q: "「あの店はいつも人が[並]{なら}んでいる。おいしいに[違]{ちが}いない。」 How sure is the speaker, and why?",
+   options: [
+    {
+     t: "Very sure, from what they have seen",
+     ok: true,
+     why: "～に[違]{ちが}いない is a firm conclusion drawn from signs: the queues."
+    },
+    {
+     t: "Not sure at all: it’s only a possibility",
+     why: "That would be おいしいかもしれない. に[違]{ちが}いない is much surer."
+    },
+    {
+     t: "Sure, because a friend told them",
+     why: "Hearsay would be おいしいそうだ or おいしいらしい. Here the evidence is the queue."
+    },
+    {
+     t: "Certain, because they have eaten there",
+     why: "If they had eaten there, they would just say おいしい. に[違]{ちが}いない is a guess about something they haven’t checked."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q59",
+   lesson: "e3u10-l6",
+   level: 3,
+   q: "A friend shows you a designer bag she bought online for 10,000 yen and says it’s real. You’re sure it isn’t. Which reply sounds natural between friends?",
+   options: [
+    {
+     t: "「にせものに[決]{き}まってるよ。」",
+     ok: true,
+     why: "～に[決]{き}まってる: “obviously”, strong and conversational, right for a friend."
+    },
+    {
+     t: "「にせものだに[違]{ちが}いない。」",
+     why: "No だ before に[違]{ちが}いない: にせものに[違]{ちが}いない. It would also sound rather written."
+    },
+    {
+     t: "「にせものかもしれないです。」",
+     why: "かもしれない is only “maybe”, but you are sure."
+    },
+    {
+     t: "「にせもののふりをしているよ。」",
+     why: "ふりをする is pretending, which a bag can’t do."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q60",
+   lesson: "e3u10-l6",
+   level: 3,
+   q: "Which sentence is **not** correct?",
+   options: [
+    {
+     t: "[忘]{わす}れずにください。",
+     ok: true,
+     why: "Right, this one is wrong. Only ～ないで makes a request: [忘]{わす}れないでください."
+    },
+    {
+     t: "[忘]{わす}れないでください。",
+     why: "Correct: the usual “please don’t forget”."
+    },
+    {
+     t: "[忘]{わす}れずに持ってきてください。",
+     why: "Correct: ～ずに before a request verb, “please remember to bring it”."
+    },
+    {
+     t: "[忘]{わす}れないで持ってきてください。",
+     why: "Correct: the everyday version with ～ないで."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q61",
+   lesson: "e3u10-l7",
+   level: 1,
+   q: "Which form comes before とたん?",
+   options: [
+    {
+     t: "開けたとたん",
+     ok: true,
+     why: "とたん follows the た-form: A has just happened."
+    },
+    {
+     t: "開けるとたん",
+     why: "The dictionary form doesn’t work with とたん."
+    },
+    {
+     t: "開けてとたん",
+     why: "とたん doesn’t follow the て-form."
+    },
+    {
+     t: "開けとたん",
+     why: "とたん doesn’t follow the ます stem (that is っぱなし’s form)."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q62",
+   lesson: "e3u10-l7",
+   level: 2,
+   q: "「ドアを開けたとたん、ねこが入ってきた。」 What happened?",
+   options: [
+    {
+     t: "The cat came in the instant the door opened.",
+     ok: true,
+     why: "～たとたん: B happens immediately after A, often by surprise."
+    },
+    {
+     t: "The cat was already inside when I opened the door.",
+     why: "Finding something is ～たら: ドアを開けたら、ねこがいた."
+    },
+    {
+     t: "I opened the door so that the cat could come in.",
+     why: "Purpose would be ～ように (Unit 9): ねこが入れるように."
+    },
+    {
+     t: "The cat came in some time after I opened the door.",
+     why: "とたん means “at that very moment”, not later."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q63",
+   lesson: "e3u10-l7",
+   level: 3,
+   q: "Toby is going to the station anyway. Mariya wants him to buy stamps there too. What does she say?",
+   options: [
+    {
+     t: "「駅に行くついでに、切手を買ってきてくれる？」",
+     ok: true,
+     why: "ついでに: he is going anyway, so the stamps are an extra on the same trip."
+    },
+    {
+     t: "「駅に行くかわりに、切手を買ってきてくれる？」",
+     why: "かわりに means “instead of going”, but he still goes to the station."
+    },
+    {
+     t: "「駅に行きながら、切手を買ってきてくれる？」",
+     why: "ながら is two actions at the same moment; you can’t buy stamps while walking."
+    },
+    {
+     t: "「駅に行ったとたん、切手を買ってきてくれる？」",
+     why: "とたん is for sudden events, never a request."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q64",
+   lesson: "e3u10-l7",
+   level: 1,
+   q: "「日本に来て以来、ずっとこのアパートに住んでいます。」 What does it mean?",
+   options: [
+    {
+     t: "I have lived in this flat ever since I came to Japan.",
+     ok: true,
+     why: "～て以来: from coming to Japan up to now, with ずっと for the whole time."
+    },
+    {
+     t: "I lived in this flat before I came to Japan.",
+     why: "以来 starts at the turning point and runs forward to now."
+    },
+    {
+     t: "I will live in this flat after I come to Japan.",
+     why: "以来 looks back from now; it isn’t used for the future."
+    },
+    {
+     t: "I came to Japan and moved into this flat much later.",
+     why: "ずっと and 以来 say you have lived there the whole time since coming."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q65",
+   lesson: "e3u10-l7",
+   level: 2,
+   q: "The forecast says: 「今夜から[明日]{あした}の朝にかけて、強い雨が[降]{ふ}るでしょう。」 Which description is closest?",
+   options: [
+    {
+     t: "Heavy rain at times over tonight and tomorrow morning",
+     ok: true,
+     why: "から～にかけて: spread over the span, roughly, not necessarily all the time."
+    },
+    {
+     t: "Heavy rain from exactly midnight until exactly 6 a.m.",
+     why: "Exact times would use から～まで. にかけて is rough."
+    },
+    {
+     t: "Heavy rain tonight, and a dry morning tomorrow",
+     why: "にかけて says the span reaches into tomorrow morning."
+    },
+    {
+     t: "Heavy rain only tomorrow morning",
+     why: "The span starts tonight (今夜から)."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q66",
+   lesson: "e3u10-l7",
+   level: 2,
+   q: "「この町は、[港]{みなと}を中心に[発展]{はってん}してきた。」 What does it say about the town?",
+   options: [
+    {
+     t: "It grew up around its harbour.",
+     ok: true,
+     why: "～を中心に: the harbour is the centre, and the town grew around it."
+    },
+    {
+     t: "It was built in place of a harbour.",
+     why: "“In place of” is ～かわりに."
+    },
+    {
+     t: "It is about to build a harbour in the centre.",
+     why: "～てきた reports growth up to now; nothing is about to be built."
+    },
+    {
+     t: "It grew everywhere except near the harbour.",
+     why: "を中心に puts the harbour at the centre of the growth."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q67",
+   lesson: "e3u10-l7",
+   level: 3,
+   q: "Mr. Matsumoto is writing the title of a formal notice: 「[防災]{ぼうさい}（　）[説明会]{せつめいかい}のお知らせ」 (“Notice of a briefing on disaster preparedness”). Which fits?",
+   options: [
+    {
+     t: "に[関]{かん}する",
+     ok: true,
+     why: "Before a noun, in formal writing: [防災]{ぼうさい}に[関]{かん}する[説明会]{せつめいかい}."
+    },
+    {
+     t: "に[関]{かん}して",
+     why: "に[関]{かん}して goes before a verb phrase. Before the noun [説明会]{せつめいかい}, use に[関]{かん}する."
+    },
+    {
+     t: "について",
+     why: "Before a noun, について needs の: についての. And a formal notice usually uses に[関]{かん}する."
+    },
+    {
+     t: "ばかりか",
+     why: "ばかりか is “not only… but even” and needs a second point."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q68",
+   lesson: "e3u10-l7",
+   level: 2,
+   q: "「この店は、[値段]{ねだん}のわりにおいしいです。」 What is the speaker saying?",
+   options: [
+    {
+     t: "The food is better than you’d expect at that price.",
+     ok: true,
+     why: "～わりに: the result goes beyond what the price would lead you to expect."
+    },
+    {
+     t: "The food is good, and so it is expensive.",
+     why: "That would be a reason: おいしいから高い. わりに measures against expectation."
+    },
+    {
+     t: "The food is good, but it’s expensive to make up for it.",
+     why: "A trade-off is ～かわりに (Lesson 3): 高いかわりに、おいしい."
+    },
+    {
+     t: "The food is exactly as good as the price.",
+     why: "わりに says the result is different from what you’d expect, not the same."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q69",
+   lesson: "e3u10-l7",
+   level: 3,
+   q: "Which sentence is **not** correct?",
+   options: [
+    {
+     t: "この[部屋]{へや}は広いにしては安い。",
+     ok: true,
+     why: "Right, this one is wrong. にしては doesn’t follow adjectives; say 広いわりに安い."
+    },
+    {
+     t: "この[部屋]{へや}は広いわりに安い。",
+     why: "Correct: い-adjective + わりに."
+    },
+    {
+     t: "[初]{はじ}めてにしては[上手]{じょうず}だ。",
+     why: "Correct: noun + にしては, with a specific standard."
+    },
+    {
+     t: "父は年のわりに[若]{わか}く見える。",
+     why: "Correct: noun + のわりに."
+    }
+   ]
+  },
+  {
+   id: "e3u10-q70",
+   lesson: "e3u10-l7",
+   level: 3,
+   q: "After the storm, Cheska writes to her family: 「大雨で、電車ばかりか、バスまで止まった。」 What happened?",
+   options: [
+    {
+     t: "Not only the trains but even the buses stopped.",
+     ok: true,
+     why: "A ばかりか B まで: the second point goes further than you’d expect."
+    },
+    {
+     t: "Only the trains stopped; the buses kept running.",
+     why: "ばかりか adds the buses; it doesn’t leave them out."
+    },
+    {
+     t: "The trains kept stopping, again and again.",
+     why: "“Again and again” would be ～てばかり or ～たびに. ばかりか joins two things."
+    },
+    {
+     t: "The buses stopped, but the trains didn’t.",
+     why: "Both stopped: 電車ばかりか、バスまで."
     }
    ]
   }

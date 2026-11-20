@@ -174,7 +174,8 @@ ICA.addUnit({
       {t:"Git can only ever be used by typing commands", why:"GitHub Desktop, code editors such as VS Code, and GitHub’s website all offer point-and-click Git."},
       {t:"GitHub Desktop replaces Git with a different, simpler system", why:"It’s a front end for Git: the repository it makes is an ordinary Git repository."},
       {t:"He must install Linux first", why:"Git for Windows and GitHub Desktop both run on Windows directly."}
-    ]}
+    ]},
+      {id:"t2u7-l1-x8", type:"explain", q:"A classmate says: “I don’t want my project online, so I can’t use Git.” Explain why that is a misunderstanding.", hint:"Think of a camera and a photo-sharing website.", model:"Git and GitHub are different things. Git is a program you install on your own computer; it keeps your project’s history in a hidden `.git` folder inside the project, recording snapshots called commits, each with a message saying what changed. It works perfectly well offline and alone. GitHub is one website, run by a company, where you can choose to store a copy of a Git project to share it, back it up or work with others, and there are other such sites. It is like a camera and a photo-sharing site: nothing goes online unless you send it there.", points:["Says Git is a program on your own computer", "Says Git keeps the history (commits) locally and works offline", "Says GitHub is one website for storing a copy online", "Says nothing goes online unless you choose to send it"]}
    ],
    apply:{intro:"Install Git, introduce yourself to it, and make your commit email private. On a phone, set up the GitHub side and explore a real project’s history; you can follow every later lesson by reading and doing the exercises.", tasks:[
      {t:"Install Git and check it works", how:{
@@ -350,7 +351,8 @@ ICA.addUnit({
       {t:"`git restore --staged style.css`", why:"That only unstages. His edits aren’t staged, so nothing would change."},
       {t:"`git revert HEAD`", why:"That undoes the last **commit**, which isn’t the problem. His unwanted changes aren’t committed."},
       {t:"`git commit -m \"Undo\"`", why:"Nothing is staged, so there’s nothing to commit. And committing the edits would keep them, not remove them."}
-    ]}
+    ]},
+      {id:"t2u7-l2-x8", type:"explain", q:"Rosa fixed a broken link in `about.html` and has also half-rewritten `contact.html`. Explain how Git’s staging area lets her commit just the link fix, and why that is useful.", hint:"Think of packing a parcel: what goes in the box before you close and label it?", model:"Git keeps work in three places: the working tree (the files she edits), the staging area (the contents of the next commit, like an open parcel) and the repository (every commit made). Saving a file only changes the working tree. Rosa can run `git add about.html` to put just the link fix in the parcel, leave `contact.html` out, then `git commit -m \"Fix broken link on about page\"` to close and label it. Each commit then holds one sensible change with a clear message, which makes the history easy to read and to undo.", points:["Names the working tree, staging area and repository", "Says `git add` stages only the chosen file’s changes", "Says the unfinished file is left out of the commit", "Says this keeps one logical change per commit"]}
    ],
    apply:{intro:"Build a small repository with real history, read it, and practise every undo on purpose, so you know what each does before you ever need it.", tasks:[
      {t:"Make a repository with three commits", how:{
@@ -519,7 +521,8 @@ ICA.addUnit({
       {t:"The branch `fix-menu` doesn’t exist in her repository", why:"Then Git would say it can’t find that branch. This message is about uncommitted changes."},
       {t:"Her repository is damaged", why:"Nothing is damaged. Git refused the switch precisely so nothing is lost."},
       {t:"Git has already overwritten her changes", why:"No: “Aborting” means the switch didn’t happen, and her edits are untouched."}
-    ]}
+    ]},
+      {id:"t2u7-l3-x8", type:"explain", q:"The garden club’s site publishes from `main`. Explain why Amara should build a new events page on a separate branch, and what she does when it is ready.", hint:"What would go live if she committed a half-built page to `main`?", model:"Because the site publishes from `main`, anything committed there goes live. If Amara built the events page on `main`, a half-finished page could be published along with any urgent fix, such as a typo on the home page. On a separate branch, `events-page`, the unfinished work stays off the live site while `main` keeps the working version, so she can still fix and publish the typo on `main` today. A branch is just a movable label on a commit, so it is cheap to make. When the page is ready, she switches to `main` and merges `events-page` into it.", points:["Says `main` holds the working, published site", "Says unfinished work on a branch doesn’t go live", "Says urgent fixes can still be made on `main`", "Says she merges the branch into `main` when it is ready"]}
    ],
    apply:{intro:"Make a branch, merge it both ways, then cause a conflict on purpose and resolve it, so the first real one feels familiar.", tasks:[
      {t:"Branch and fast-forward merge", how:{
@@ -688,7 +691,8 @@ ICA.addUnit({
       {t:"Nothing until he presses Publish in Settings → Pages", why:"Once Pages is set up, every new commit on the publishing branch deploys automatically."},
       {t:"The site updates instantly, with no deploy", why:"There is a deploy run, which usually takes a few minutes."},
       {t:"Only files edited on the website are published; pushed files are ignored", why:"Pages doesn’t care how a commit was made. Pushed commits deploy the same way."}
-    ]}
+    ]},
+      {id:"t2u7-l4-x8", type:"explain", q:"Amara’s `git push` is rejected because Kenji pushed a commit first. Explain what is happening, the right way to fix it, and why `git push --force` is the wrong fix.", hint:"What does GitHub have that Amara’s computer doesn’t?", model:"Commits stay on each person’s computer until they push. Kenji pushed a commit that Amara doesn’t have yet, so GitHub refuses her push rather than let it overwrite his work. Nothing is broken. The fix is to run `git pull`, which fetches Kenji’s commit and combines it with hers (often with a merge commit), then `git push` again. `git push --force` would replace the remote’s history with hers, deleting Kenji’s commit from the shared branch, so it should never be used on a branch other people use.", points:["Says the remote has a commit Amara doesn’t have", "Says GitHub refuses so her push doesn’t overwrite it", "Gives the fix: `git pull`, then `git push`", "Says `--force` would delete Kenji’s work from the shared branch"]}
    ],
    apply:{intro:"Sign Git in to GitHub safely, publish your practice repository, then work on your real Unit 5 site from your own computer.", tasks:[
      {t:"Sign Git in to GitHub", how:{
@@ -865,7 +869,8 @@ ICA.addUnit({
       {t:"Public means anyone can reuse it for anything", why:"Public means visible. Without a licence, copyright still applies."},
       {t:"No one, including Lucía, can even view it without a licence", why:"Viewing and forking on GitHub are allowed for public repositories. The licence is about reuse."},
       {t:"Lucía may reuse it if she makes her copy private", why:"Making a copy private doesn’t create permission to reuse someone else’s code."}
-    ]}
+    ]},
+      {id:"t2u7-l5-x8", type:"explain", q:"Explain what a pull request is, and why many teams, and even careful people working alone, merge every change through one.", hint:"Despite the name, who pulls what? What does the PR page let people do?", model:"A pull request is a proposal: “please merge the commits on this branch into that branch”. Despite the name, you don’t pull anything; you ask for your work to be pulled in. It is a page on GitHub where the changes can be seen line by line on the Files changed tab, discussed, reviewed and improved, since new commits pushed to the branch appear automatically, and finally merged by someone with write access. Making every change on a branch and merging it through a pull request gives each change a second look and keeps a record of why it was made, while `main` stays working.", points:["Says a pull request proposes merging one branch into another", "Says the changes can be seen, discussed and reviewed before merging", "Says it gives a second look and a record of why, keeping `main` working"]}
    ],
    apply:{intro:"Work through a full pull request, protect your repositories from clutter and secrets, and give a project a licence and an issue.", tasks:[
      {t:"Your first pull request (in your own repository)", how:{

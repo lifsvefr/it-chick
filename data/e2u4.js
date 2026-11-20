@@ -1,21 +1,23 @@
 /* Social Science Primers · Sociology Unit 4 · Institutions and social change */
 ICA.addUnit({
   id:"e2u4", track:"e2", n:4, title:"Institutions and social change", icon:"🏛️",
-  blurb:"The big structures every society builds to meet its needs (family, education, religion, government, the economy, health care and the media) and the forces that change them: population, cities, the environment, technology and social movements.",
+  blurb:"The big structures every society builds to meet its needs (family, education, religion, government, the economy, health care and the media) and the forces that change them: population, ageing, cities, the environment, technology, algorithms and AI, and social movements.",
   goals:[
     "Explain what a social institution is and how family and education shape life chances",
     "Analyse religion, power and forms of government with Durkheim’s, Weber’s and Marx’s ideas, without taking sides",
     "Compare economic systems, describe how work is changing, and explain why health is shaped by society",
     "Calculate simple population rates, read the demographic transition model critically, and explain urbanization and environmental justice",
-    "Explain how media, technology and social movements change societies, using the main sociological theories"
+    "Use the life-course perspective and dependency ratios to compare how societies handle ageing, care and pensions",
+    "Explain how media, technology and social movements change societies, using the main sociological theories",
+    "Analyse algorithms, platform work, surveillance and border technologies as social systems, presenting the debates fairly"
   ],
   read:[
-    {book:"soc", where:"Chapter 14 “Marriage and Family”, Chapter 15 “Religion”, Chapter 16 “Education”, Chapter 17 “Government and Politics”, Chapter 18 “Work and the Economy”, Chapter 19 “Health and Medicine”, Chapter 20 “Population, Urbanization, and the Environment”, Chapter 21 “Social Movements and Social Change” and Chapter 8 “Media and Technology”", note:"Section numbers here follow the OpenStax website. The LibreTexts copy adds an “Introduction” page as x.1, so its section numbers are one higher (OpenStax 14.1 is LibreTexts 14.2). Many examples are from the United States; the lessons add examples from around the world."}
+    {book:"soc", where:"Chapter 14 “Marriage and Family”, Chapter 15 “Religion”, Chapter 16 “Education”, Chapter 17 “Government and Politics”, Chapter 18 “Work and the Economy”, Chapter 19 “Health and Medicine”, Chapter 20 “Population, Urbanization, and the Environment”, Chapter 13 “Aging and the Elderly”, Chapter 21 “Social Movements and Social Change” and Chapter 8 “Media and Technology”", note:"Section numbers here follow the OpenStax website. The LibreTexts copy adds an “Introduction” page as x.1, so its section numbers are one higher (OpenStax 14.1 is LibreTexts 14.2). Many examples are from the United States; the lessons add examples from around the world."}
   ],
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e2u4-l1", title:"Social institutions: family and education", minutes:55,
-   hook:{q:"In Arlie Hochschild’s research on US married couples where both husband and wife had paid jobs, who did most of the housework?", options:["The men","The women","Both partners, equally","Paid cleaners"], answer:1, reveal:"**The women**, mostly. Hochschild called it “the second shift”: a second job waiting after the paid one. Families organise work, money and care in patterns sociologists can study, and this lesson looks at how families are built in different societies, then at school, the other institution most people grow up inside."},
+   hook:{q:"In Arlie Hochschild’s research on US married couples where both husband and wife had paid jobs, who did most of the housework?", options:["The men","The women","Both partners, equally","Paid cleaners"], answer:1, reveal:"**The women**, mostly. Hochschild called it “the second shift”: a second job waiting after the paid one. Families organise work, money and care in patterns sociologists can study. This lesson looks at how families are built in different societies. Then it turns to school, the other institution most people grow up inside."},
    goals:[
      "Explain what a social institution is and how institutions depend on each other",
      "Compare family forms, kinship systems and marriage patterns across cultures",
@@ -25,7 +27,7 @@ ICA.addUnit({
    guide:true,
    learn:[
     {h:"Before you read", body:[
-      "Read Chapter 14 “Marriage and Family”, sections **14.1** “What Is Marriage? What Is a Family?” and **14.2** “Variations in Family Life”, then Chapter 16 “Education”, sections **16.1** “Education around the World”, **16.2** “Theoretical Perspectives on Education” and **16.3** “Issues in Education”. (On LibreTexts these are 14.2–14.3 and 16.2–16.4.) Family and school are the first institutions most people grow up inside, and they shape life chances long before work begins.",
+      "Read Chapter 14 “Marriage and Family”, sections **14.1** “What Is Marriage? What Is a Family?” and **14.2** “Variations in Family Life”, then Chapter 16 “Education”, sections **16.1** “Education around the World”, **16.2** “Theoretical Perspectives on Education” and **16.3** “Issues in Education”. (On LibreTexts these are 14.2–14.3 and 16.2–16.4.) Family and school are the first institutions most people grow up inside. They shape life chances long before work begins.",
       {look:[
         "What makes a group a family, and how do marriage patterns, residence rules and lines of descent differ between societies? (14.1)",
         "Which family forms are becoming more common, and how does the family life course differ from the family life cycle? (14.1, 14.2)",
@@ -35,13 +37,13 @@ ICA.addUnit({
     ]},
     {h:"The big ideas", body:[
       {list:[
-        "A [[social-institution|social institution]] is a lasting pattern of roles, rules and organizations that meets a basic need: family, education, religion, government, the economy, health care, media. A school is an organization; education is the institution. Institutions depend on each other: when factory work replaced farm work, families shrank and schooling grew longer. (14.1, 21.3)",
+        "A [[social-institution|social institution]] is a lasting pattern of roles, rules and organizations that meets a basic need. Examples are family, education, religion, government, the economy, health care and media. A school is an organization; education is the institution. Institutions depend on each other: when factory work replaced farm work, families shrank and schooling grew longer. (14.1, 21.3)",
         "A [[family]] is a socially recognized group joined by blood, marriage or adoption that shares emotional ties and works as an economic unit. You are born into a **family of orientation** and may form a **family of procreation**. A [[nuclear-family|nuclear family]] is parents and children; an [[extended-family|extended family]] adds other relatives. (14.1)",
         "[[kinship|Kinship]] is traced differently: through both parents (bilateral), the father ([[patrilineal]]) or the mother ([[matrilineal]]). A new couple may live with the husband’s family (patrilocal) or the wife’s (matrilocal). (14.1)",
         "[[monogamy|Monogamy]] is one spouse at a time, the only legal form in most countries. [[polygamy|Polygamy]] has two forms: [[polygyny]] (one man, several wives) and the rare [[polyandry]] (one woman, several husbands). (14.1)",
         "Families are diversifying: more cohabitation, single parents, same-sex couples and people staying single. The flexible **family life course** has largely replaced the fixed stages of the **family life cycle**. (14.1, 14.2)",
-        "Functionalists split education’s intended [[manifest-function|manifest functions]] (socialization, cultural transmission, social control, social placement, cultural innovation) from its unintended [[latent-function|latent functions]] (courtship, social networks, group work, a generation gap, political and social integration). (16.2)",
-        "Conflict theorists argue that [[tracking]], biased tests, the [[hidden-curriculum|hidden curriculum]] (unspoken lessons such as obeying bells) and [[cultural-capital|cultural capital]] (Pierre Bourdieu) let schools pass on advantage while looking neutral. Interactionists show how labels become a **self-fulfilling prophecy**, and discuss [[credentialism]]. (16.2)"
+        "Functionalists split education’s functions into two kinds. Its intended [[manifest-function|manifest functions]] are socialization, cultural transmission, social control, social placement and cultural innovation. Its unintended [[latent-function|latent functions]] are courtship, social networks, group work, a generation gap, and political and social integration. (16.2)",
+        "Conflict theorists point to [[tracking]], biased tests, the [[hidden-curriculum|hidden curriculum]] (unspoken lessons such as obeying bells) and [[cultural-capital|cultural capital]] (Pierre Bourdieu). They argue these let schools pass on advantage while looking neutral. Interactionists show how labels become a **self-fulfilling prophecy**, and discuss [[credentialism]]. (16.2)"
       ]}
     ]},
     {h:"Picture it", body:[
@@ -50,7 +52,7 @@ ICA.addUnit({
     ]},
     {h:"Key terms", body:[ {terms:["social-institution","family","nuclear-family","extended-family","kinship","matrilineal","polygamy","hidden-curriculum","credentialism","tracking","cultural-capital"]} ]},
     {h:"Beyond the book", body:[
-      {beyond:"**Family lenses.** The book’s family sections lean on functionalism and interactionism. Others: George Murdock’s survey of 250 societies gave the family four functions (sexual, reproductive, educational, economic); conflict theorists note the partner with more income often has more say; feminist research such as Arlie Hochschild’s “The Second Shift” (1989) shows employed women in the US still doing most housework; interactionists study changing meanings such as “good father” or “chosen family”.\n\n**Beyond the US.** Bilateral descent is common in Europe, the Americas and the Philippines; the Minangkabau (Indonesia) and Khasi (India) are matrilineal; most city couples live **neolocally**, in their own home. Extended households are common in South Asia, Africa, Latin America and the Pacific (the Samoan ‘aiga), and migration creates skipped-generation homes where grandparents raise children. Tracking is called streaming or setting in some countries.\n\n**Named critics.** Philip Jackson popularized “hidden curriculum” (1968); Bowles and Gintis (1976) said it prepares pupils for different places in the workforce. Randall Collins (“The Credential Society”, 1979) argued that rising degree demands reflect competition for status more than skill, a conflict-style reading of credentialism. UNESCO finds the largest access gaps in low-income countries."}
+      {beyond:"**Family lenses.** The book’s family sections lean on functionalism and interactionism. Others: George Murdock’s survey of 250 societies gave the family four functions (sexual, reproductive, educational, economic). Conflict theorists note the partner with more income often has more say. Feminist research such as Arlie Hochschild’s “The Second Shift” (1989) shows employed women in the US still doing most housework. Interactionists study changing meanings such as “good father” or “chosen family”.\n\n**Beyond the US.** Bilateral descent is common in Europe, the Americas and the Philippines. The Minangkabau (Indonesia) and Khasi (India) are matrilineal. Most city couples live **neolocally**, in their own home. Extended households are common in South Asia, Africa, Latin America and the Pacific (the Samoan ‘aiga). Migration creates skipped-generation homes, where grandparents raise children. Tracking is called streaming or setting in some countries.\n\n**Named critics.** Philip Jackson popularized “hidden curriculum” (1968); Bowles and Gintis (1976) said it prepares pupils for different places in the workforce. Randall Collins (“The Credential Society”, 1979) argued that rising degree demands reflect competition for status more than skill. This is a conflict-style reading of credentialism. UNESCO finds the largest access gaps in low-income countries."}
     ]}
    ],
    try:[
@@ -117,7 +119,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e2u4-l2", title:"Religion, power and politics", minutes:55,
-   hook:{q:"Many of the world’s major religions began as what?", options:["Official state religions","Small, new groups","Philosophies taught in universities","Laws written by rulers"], answer:1, reveal:"**Small, new groups.** As the textbook notes, almost all religions began that way, which is one reason many sociologists prefer “new religious movement” to the loaded word “cult”. This lesson shows how sociologists study what [[religion]] does without judging whether any faith is true, then asks a question religion and government share: why do people accept rules?"},
+   hook:{q:"Many of the world’s major religions began as what?", options:["Official state religions","Small, new groups","Philosophies taught in universities","Laws written by rulers"], answer:1, reveal:"**Small, new groups.** As the textbook notes, almost all religions began that way. That is one reason many sociologists prefer “new religious movement” to the loaded word “cult”. This lesson shows how sociologists study what [[religion]] does without judging whether any faith is true. Then it asks a question religion and government share: why do people accept rules?"},
    goals:[
      "Explain how Durkheim, Weber and Marx analysed religion, and how each sociological lens sees it",
      "Describe the secularization debate fairly, with the evidence on each side",
@@ -127,7 +129,7 @@ ICA.addUnit({
    guide:true,
    learn:[
     {h:"Before you read", body:[
-      "Read Chapter 15 “Religion”, sections **15.1** “The Sociological Approach to Religion” and **15.2** “World Religions”, then Chapter 17 “Government and Politics”, sections **17.1** “Power and Authority”, **17.2** “Forms of Government” and **17.4** “Theoretical Perspectives on Government and Power”. (On LibreTexts: 15.2–15.3, 17.2–17.3 and 17.5.) Section 17.3 is a US case study and optional. Religion and government both answer one question: why do people accept rules?",
+      "Read Chapter 15 “Religion”, sections **15.1** “The Sociological Approach to Religion” and **15.2** “World Religions”. Then read Chapter 17 “Government and Politics”, sections **17.1** “Power and Authority”, **17.2** “Forms of Government” and **17.4** “Theoretical Perspectives on Government and Power”. (On LibreTexts: 15.2–15.3, 17.2–17.3 and 17.5.) Section 17.3 is a US case study and optional. Religion and government both answer one question: why do people accept rules?",
       {look:[
         "How did Durkheim, Weber and Marx each explain what religion does for society? (15.1)",
         "How are religions classified by belief, and how do ecclesia, denomination, sect and cult differ? (15.2)",
@@ -138,11 +140,11 @@ ICA.addUnit({
     {h:"The big ideas", body:[
       {list:[
         "Sociologists study what [[religion]] does and how it is organized, not whether a faith is true. Religions combine beliefs, rituals and religious experience. (15.1)",
-        "{{emile-durkheim|Durkheim}} (“The Elementary Forms of Religious Life”, 1912) saw religion as the line a community draws between the [[sacred]] (set apart, treated with awe) and the [[profane]] (everyday). Sacredness is a status the group gives: one river can be washing water in the morning and a ritual bath at dawn. Shared ritual brings cohesion, social control and meaning. (15.1)",
-        "{{max-weber|Weber}} (“The Protestant Ethic and the Spirit of Capitalism”, 1904–05) argued that beliefs can drive economic change. {{karl-marx|Marx}} (1844) called religion “the opium of the people” and “the sigh of the oppressed creature”: real comfort that can also distract from changing conditions. (15.1)",
-        "Religions are classified by belief (monotheism, polytheism, animism, non-theistic traditions such as many forms of Buddhism) and by organization, from most to least established: ecclesia (state religion), denomination, sect and cult, also called a new religious movement. (15.2)",
+        "{{emile-durkheim|Durkheim}} (“The Elementary Forms of Religious Life”, 1912) saw religion as a line a community draws. On one side is the [[sacred]] (set apart, treated with awe); on the other is the [[profane]] (everyday). Sacredness is a status the group gives: one river can be washing water in the morning and a ritual bath at dawn. Shared ritual brings cohesion, social control and meaning. (15.1)",
+        "{{max-weber|Weber}} (“The Protestant Ethic and the Spirit of Capitalism”, 1904–05) argued that beliefs can drive economic change. {{karl-marx|Marx}} (1844) called religion “the opium of the people” and “the sigh of the oppressed creature”. He meant that religion gives real comfort that can also distract from changing conditions. (15.1)",
+        "Religions are classified by belief: monotheism, polytheism, animism, and non-theistic traditions such as many forms of Buddhism. They are also classified by organization, from most to least established: ecclesia (state religion), denomination, sect and cult, also called a new religious movement. (15.2)",
         "[[power|Power]] is the ability to impose your will on others; [[authority]] is power people accept as legitimate. Weber’s types: [[traditional-authority|traditional]] (custom and inheritance), [[rational-legal-authority|rational-legal]] (laws and offices) and [[charismatic-authority|charismatic]] (devotion to an extraordinary person). Real rulers often mix them. (17.1)",
-        "Governments differ in who rules and how much they control: [[democracy]] (direct or representative), [[monarchy]] (absolute or constitutional, as in Japan or Sweden), [[oligarchy]] (a small elite) and dictatorship ([[authoritarianism|authoritarian]] rule), whose extreme [[totalitarian]] form tries to control nearly all of life. Classify by observable features: how leaders are chosen, whether they can be voted out, whether courts and media are independent. (17.2)",
+        "Governments differ in who rules and how much they control. Types include [[democracy]] (direct or representative), [[monarchy]] (absolute or constitutional, as in Japan or Sweden), [[oligarchy]] (a small elite) and dictatorship ([[authoritarianism|authoritarian]] rule). The extreme [[totalitarian]] form of dictatorship tries to control nearly all of life. Classify by observable features: how leaders are chosen, whether they can be voted out, whether courts and media are independent. (17.2)",
         "Functionalists (pluralists) see many groups bargaining while government keeps order; conflict theorists follow {{c-wright-mills|C. Wright Mills}}’s “The Power Elite” (1956): business, military and political leaders decide; interactionists study flags, slogans and how issues are framed. (17.4)"
       ]}
     ]},
@@ -152,8 +154,8 @@ ICA.addUnit({
     ]},
     {h:"Key terms", body:[ {terms:["religion","sacred","profane","secularization","power","authority","traditional-authority","rational-legal-authority","charismatic-authority","democracy","totalitarian"]} ]},
     {h:"Beyond the book", body:[
-      {beyond:"**The secularization debate.** [[secularization|Secularization]] can mean decline (fewer believe or attend), differentiation (schools, courts and hospitals run on non-religious rules) or privatization (faith becomes personal). Peter Berger argued for it in “The Sacred Canopy” (1967), then in “The Desecularization of the World” (1999) said most of the world is as religious as ever. Attendance has fallen in much of Western Europe, Canada and Australia, while Pentecostal churches grow in Africa and Latin America. Grace Davie’s “believing without belonging” warns that low attendance doesn’t prove lost belief. Treat it as an open question.\n\n**Routinization of charisma.** Charisma rests on one person, so when the leader dies, followers choose successors, write down teachings and build offices: charisma becomes tradition or rules.\n\n**Power and participation.** Robert Michels’ [[iron-rule-of-oligarchy|iron rule of oligarchy]] says organizations drift towards rule by a few. Australia, Belgium and Brazil make voting compulsory; elsewhere turnout is usually lower among younger and poorer citizens, so their concerns may be heard less. Religion can also drive change, as with liberation theology in Latin America (15.3) and faith groups against apartheid."},
-      {beyond:"**“Cult” or new religious movement?** The book calls the newest, least established type of group a “cult”, notes that the word often carries a negative meaning, and says it is sometimes replaced by **new religious movement** (NRM). Many sociologists now prefer NRM. As the book points out, almost all religions began as small new groups."}
+      {beyond:"**The secularization debate.** [[secularization|Secularization]] can mean three things. It can mean decline (fewer believe or attend), differentiation (schools, courts and hospitals run on non-religious rules) or privatization (faith becomes personal). Peter Berger argued for it in “The Sacred Canopy” (1967). Then in “The Desecularization of the World” (1999) he said most of the world is as religious as ever. Attendance has fallen in much of Western Europe, Canada and Australia, while Pentecostal churches grow in Africa and Latin America. Grace Davie’s “believing without belonging” warns that low attendance doesn’t prove lost belief. Treat it as an open question.\n\n**Routinization of charisma.** Charisma rests on one person. So when the leader dies, followers choose successors, write down teachings and build offices: charisma becomes tradition or rules.\n\n**Power and participation.** Robert Michels’ [[iron-rule-of-oligarchy|iron rule of oligarchy]] says organizations drift towards rule by a few. Australia, Belgium and Brazil make voting compulsory. Elsewhere, turnout is usually lower among younger and poorer citizens, so their concerns may be heard less. Religion can also drive change, as with liberation theology in Latin America (15.3) and faith groups against apartheid."},
+      {beyond:"**“Cult” or new religious movement?** The book calls the newest, least established type of group a “cult”. It notes that the word often carries a negative meaning, and says it is sometimes replaced by **new religious movement** (NRM). Many sociologists now prefer NRM. As the book points out, almost all religions began as small new groups."}
     ]}
    ],
    try:[
@@ -222,7 +224,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e2u4-l3", title:"Work, the economy and health", minutes:55,
-   hook:{q:"The British civil servants in the Whitehall studies all had jobs and access to health care. Did their health differ by rank?", options:["No: equal access to care made health equal","Only the very top rank was healthier","Yes: health got worse at each step down the job ladder","Lower ranks were healthier, because their work was more active"], answer:2, reveal:"**Yes, at each step down.** Researchers call this a social gradient: health follows position in society, even when everyone can see a doctor. This lesson shows how the economy decides who gets what, and how that shapes who stays healthy through what WHO calls the [[social-determinants|social determinants of health]]."},
+   hook:{q:"The British civil servants in the Whitehall studies all had jobs and access to health care. Did their health differ by rank?", options:["No: equal access to care made health equal","Only the very top rank was healthier","Yes: health got worse at each step down the job ladder","Lower ranks were healthier, because their work was more active"], answer:2, reveal:"**Yes, at each step down.** Researchers call this a social gradient: health follows position in society, even when everyone can see a doctor. This lesson shows how the economy decides who gets what. It also shows how that shapes who stays healthy, through what WHO calls the [[social-determinants|social determinants of health]]."},
    goals:[
      "Compare capitalism, socialism and mixed economies without treating any as automatically good or bad",
      "Explain the informal economy, global commodity chains, deindustrialization and automation",
@@ -244,11 +246,11 @@ ICA.addUnit({
       {list:[
         "The **economy** is the institution that manages a society’s goods and services. Societies have moved from farming to industrial to post-industrial economies, where most people work in services. (18.1)",
         "[[capitalism|Capitalism]] rests on private ownership and profit; [[socialism]] on state or collective ownership aimed at meeting needs and sharing wealth. Almost every real economy is a [[mixed-economy|mixed economy]]. Market socialism allows some markets, and **convergence theory** predicts that economies grow more alike as they develop. (18.1)",
-        "[[globalization|Globalization]] spreads production along **global commodity chains**: one T-shirt may be grown, spun, sewn, branded and sold in different countries, and each link captures a different share of the price. (18.2)",
+        "[[globalization|Globalization]] spreads production along **global commodity chains**. One T-shirt may be grown, spun, sewn, branded and sold in different countries, and each link captures a different share of the price. (18.2)",
         "**Outsourcing** and [[automation]] can **polarize** work: more high-pay and low-pay jobs, fewer in the middle. [[deindustrialization|Deindustrialization]], the loss of factory jobs, ripples into families, schools and health. (18.3)",
-        "Health is social: culture shapes what counts as illness and who gets blamed. [[social-epidemiology|Social epidemiology]] studies how disease is caused and distributed. Rich countries face mostly chronic illness such as heart disease and cancer; poorer ones must also fight infectious disease and high infant mortality with too few staff. (19.1, 19.2)",
-        "**Universal health care** guarantees everyone coverage, through taxes or social insurance; other systems rely on private insurance or paying at the point of care. (19.4)",
-        "Talcott Parsons’s [[sick-role|sick role]] (functionalism) excuses sick people from duties if they try to get well and seek competent help. [[medicalization|Medicalization]] redefines once-deviant or ordinary behaviour as illness; **demedicalization** reverses it, as when the American Psychiatric Association removed homosexuality from its manual in 1973. Conflict theorists ask how class, racism and profit shape illness and care; interactionists study meaning and [[stigma]]. (19.5)"
+        "Health is social: culture shapes what counts as illness and who gets blamed. [[social-epidemiology|Social epidemiology]] studies how disease is caused and distributed. Rich countries face mostly chronic illness such as heart disease and cancer. Poorer ones must also fight infectious disease and high infant mortality with too few staff. (19.1, 19.2)",
+        "**Universal health care** guarantees everyone coverage, through taxes or social insurance. Other systems rely on private insurance or paying at the point of care. (19.4)",
+        "Talcott Parsons’s [[sick-role|sick role]] (functionalism) excuses sick people from duties if they try to get well and seek competent help. [[medicalization|Medicalization]] redefines once-deviant or ordinary behaviour as illness. **Demedicalization** reverses it, as when the American Psychiatric Association removed homosexuality from its manual in 1973. Conflict theorists ask how class, racism and profit shape illness and care; interactionists study meaning and [[stigma]]. (19.5)"
       ]}
     ]},
     {h:"Picture it", body:[
@@ -256,7 +258,7 @@ ICA.addUnit({
     ]},
     {h:"Key terms", body:[ {terms:["capitalism","socialism","mixed-economy","informal-economy","deindustrialization","automation","social-epidemiology","social-determinants","medicalization","sick-role"]} ]},
     {h:"Beyond the book", body:[
-      {beyond:"**The informal economy.** The [[informal-economy|informal economy]] is work without contracts, labour protection, social security or registration: a street food seller in Lagos, a domestic worker in São Paulo, a cash-paid childminder in Manchester. The ILO estimates about **58%** of the world’s workers were informal in 2024, about 13% in high-income countries and 88% in low-income ones. Informal is not the same as illegal.\n\n**Social determinants.** WHO defines the [[social-determinants|social determinants of health]] as “the conditions in which people are born, grow, work, live and age”. In the diagram, age, sex and inherited factors sit at the core, wrapped in conditions people don’t choose. The Whitehall studies of British civil servants found a **social gradient**: health got worse at each step down the job ladder, even with jobs and health care for all. WHO notes life expectancy differs by up to 33 years between countries, and it removed homosexuality from its disease classification in 1990.\n\n**Around the world.** Mixed economies range from Nordic welfare states to China’s “socialist market economy”. Deindustrialization hit northern England and Germany’s Ruhr as well as the US. Many low- and middle-income countries carry a **double burden** of infectious and chronic disease."}
+      {beyond:"**The informal economy.** The [[informal-economy|informal economy]] is work without contracts, labour protection, social security or registration. Examples are a street food seller in Lagos, a domestic worker in São Paulo and a cash-paid childminder in Manchester. The ILO estimates about **58%** of the world’s workers were informal in 2024, about 13% in high-income countries and 88% in low-income ones. Informal is not the same as illegal.\n\n**Social determinants.** WHO defines the [[social-determinants|social determinants of health]] as “the conditions in which people are born, grow, work, live and age”. In the diagram, age, sex and inherited factors sit at the core, wrapped in conditions people don’t choose. The Whitehall studies of British civil servants found a **social gradient**. Health got worse at each step down the job ladder, even with jobs and health care for all. WHO notes life expectancy differs by up to 33 years between countries, and it removed homosexuality from its disease classification in 1990.\n\n**Around the world.** Mixed economies range from Nordic welfare states to China’s “socialist market economy”. Deindustrialization hit northern England and Germany’s Ruhr as well as the US. Many low- and middle-income countries carry a **double burden** of infectious and chronic disease."}
     ]}
    ],
    try:[
@@ -326,7 +328,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e2u4-l4", title:"Population, cities and the environment", minutes:60,
-   hook:{q:"About 2.1 children per woman is “replacement level”, where each generation roughly replaces the last. What share of the world’s countries are now below it?", options:["About one in ten","About a quarter","More than half","Almost all"], answer:2, reveal:"**More than half**, according to the UN’s *World Population Prospects 2024*. Births, deaths and migration are the only ways a population changes, and this lesson shows how [[demography|demographers]] measure them, how birth and death rates shift as countries develop, and what that means for cities and the environment."},
+   hook:{q:"About 2.1 children per woman is “replacement level”, where each generation roughly replaces the last. What share of the world’s countries are now below it?", options:["About one in ten","About a quarter","More than half","Almost all"], answer:2, reveal:"**More than half**, according to the UN’s *World Population Prospects 2024*. Births, deaths and migration are the only ways a population changes. This lesson shows how [[demography|demographers]] measure them and how birth and death rates shift as countries develop. It also shows what that means for cities and the environment."},
    goals:[
      "Calculate crude birth, death and migration rates per 1,000 people and interpret them",
      "Explain the demographic transition model and its limits",
@@ -351,7 +353,7 @@ ICA.addUnit({
         "The [[demographic-transition|demographic transition]] has four stages: high births and deaths; deaths fall first, so growth is fast; births fall; both stay low. (20.1)",
         "[[malthusian-theory|Malthusian theory]] (1798): population outruns food until **positive checks** (famine, disease, war) or **preventive checks** (fewer births) hold it back. [[cornucopian-theory|Cornucopian theory]] trusts human ingenuity; zero population growth aims for balance. (20.1)",
         "[[urbanization|Urbanization]] brings jobs and services but also crowding and pollution. [[suburbanization|Suburbs]] grew around cities; [[gentrification]] brings wealthier residents into historically poorer areas, raising rents and often displacing long-term residents. Burgess’s concentric zone model pictures the city as rings. (20.2)",
-        "[[environmental-sociology|Environmental sociology]] studies how people and the environment shape each other. [[environmental-racism|Environmental racism]] is the heavier load of hazards on poor and minority communities; NIMBY (“not in my back yard”) campaigns by better-off areas often push facilities there. (20.2, 20.3)"
+        "[[environmental-sociology|Environmental sociology]] studies how people and the environment shape each other. [[environmental-racism|Environmental racism]] is the heavier load of hazards on poor and minority communities. NIMBY (“not in my back yard”) campaigns by better-off areas often push facilities there. (20.2, 20.3)"
       ]}
     ]},
     {h:"Picture it", body:[
@@ -359,8 +361,8 @@ ICA.addUnit({
     ]},
     {h:"Key terms", body:[ {terms:["demography","crude-rate","migration","push-pull","demographic-transition","malthusian-theory","cornucopian-theory","urbanization","gentrification","environmental-racism"]} ]},
     {h:"Beyond the book", body:[
-      {beyond:"**More measures.** Total fertility rate: children per woman at current rates; about 2.1 is replacement level. Infant mortality: deaths under age one per 1,000 **live births**, not per 1,000 people. Net migration rate: (in − out) per 1,000; a minus sign means a net loss. [[migration|Migration]] follows [[push-pull|push and pull factors]]; Everett Lee (1966) added intervening obstacles such as cost, borders and laws, and people usually follow networks of relatives.\n\n**Limits of the transition model.** It is based on European history, ignores migration and stops early: the UN’s World Population Prospects 2024 finds more than half of countries below 2.1. Some, like the Republic of Korea, moved through it in decades.\n\n**More thinkers.** Paul Ehrlich (“The Population Bomb”, 1968) predicted mass famines that didn’t come on that scale; Julian Simon (1981) is the classic cornucopian; Ester Boserup (1965) said population pressure drives farming innovation; Amartya Sen (“Poverty and Famines”, 1981) showed famines can strike when food exists but poor people lose the means to get it. Ruth Glass coined “gentrification” in 1964, writing about London. Protests at Warren County, North Carolina (1982) helped launch the US environmental justice movement, and e-waste and climate change raise the same questions worldwide."},
-      {fix:"OpenStax defines urbanization as the study of city life; most sociologists use it for the **process** of more people living in towns and cities, and call the study urban sociology. The book’s figures are dated: the UN estimated **8.2 billion** people in 2024, peaking at about 10.3 billion in the mid-2080s. Its “about 55% urban” (2018) used each country’s own definition; in 2025 the UN switched to one method that counts cities separately from towns, finding **about 45%** of people in cities. Different definitions, not a fall."}
+      {beyond:"**More measures.** Total fertility rate: children per woman at current rates; about 2.1 is replacement level. Infant mortality: deaths under age one per 1,000 **live births**, not per 1,000 people. Net migration rate: (in − out) per 1,000; a minus sign means a net loss. [[migration|Migration]] follows [[push-pull|push and pull factors]]. Everett Lee (1966) added intervening obstacles such as cost, borders and laws, and people usually follow networks of relatives.\n\n**Limits of the transition model.** It is based on European history, ignores migration and stops early. The UN’s World Population Prospects 2024 finds more than half of countries below 2.1. Some, like the Republic of Korea, moved through it in decades. Lesson 5 follows the resulting population ageing into the life course, care and pensions ({{population-ageing-dependency}}).\n\n**More thinkers.** Paul Ehrlich (“The Population Bomb”, 1968) predicted mass famines that didn’t come on that scale. Julian Simon (1981) is the classic cornucopian. Ester Boserup (1965) said population pressure drives farming innovation. Amartya Sen (“Poverty and Famines”, 1981) showed famines can strike when food exists but poor people lose the means to get it. Ruth Glass coined “gentrification” in 1964, writing about London. Protests at Warren County, North Carolina (1982) helped launch the US environmental justice movement. E-waste and climate change raise the same questions worldwide."},
+      {fix:"OpenStax defines urbanization as the study of city life. Most sociologists use it for the **process** of more people living in towns and cities, and call the study urban sociology. The book’s figures are dated: the UN estimated **8.2 billion** people in 2024, peaking at about 10.3 billion in the mid-2080s. Its “about 55% urban” (2018) used each country’s own definition. In 2025 the UN switched to one method that counts cities separately from towns, finding **about 45%** of people in cities. Different definitions, not a fall."}
     ]}
    ],
    try:[
@@ -424,9 +426,150 @@ ICA.addUnit({
      {book:"soc", where:"Chapter 20 “Population, Urbanization, and the Environment”: Sections 20.1 “Demography and Population”, 20.2 “Urbanization” and 20.3 “The Environment and Society”", note:"The textbook’s population figures are from the 2010s and its urban figure from 2018; this lesson gives the UN’s 2024 and 2025 figures."}
    ]
   },
-  /* ===================== LESSON 5 ===================== */
+  /* ===================== LESSON 5 (e2u4-l6) ===================== */
+  {id:"e2u4-l6", title:"Ageing and the life course", minutes:60,
+   hook:{q:"The UN projects the world’s age structure decades ahead. By the late 2070s, which group will be larger worldwide?", options:["Children under 18","People aged 65 and over","Both groups will be exactly the same size","Neither: both groups will shrink sharply"], answer:1, reveal:"**People aged 65 and over.** The UN’s *World Population Prospects 2024* projects about 2.2 billion people aged 65+ by the late 2070s, more than all children under 18. By the mid-2030s, people aged 80+ are projected to outnumber babies under one. Ageing is mostly a sign of success: fewer children dying, longer lives and smaller families. This lesson looks at age the way sociologists do. They see it as a life course shaped by history and as a population trend. They also see it as institutions (care and pensions) and attitudes (ageism) that every society has to build."},
+   goals:[
+     "Explain the life-course perspective and how advantage and disadvantage build up over a lifetime",
+     "Calculate dependency ratios from official figures and say what they hide",
+     "Compare how Japan, East Asia, Europe, Latin America and sub-Saharan Africa share care and pensions between families, markets and the state",
+     "Recognise ageism and compare the main sociological theories of ageing, with their critiques",
+     "Discuss relations between generations without stereotyping any of them"
+   ],
+   learn:[
+    {h:"Age is social, not only biological", body:[
+      {lead:"Picture two people turning 70 on the same day. One is a retired teacher in Osaka who swims every morning. The other is a farmer in rural Malawi who still works her fields and is raising two grandchildren. Same age, very different lives."},
+      "Sociologists separate **chronological age** (years since birth), **biological age** (how the body is changing) and **social age**. Social age is the roles, rights and expectations a society attaches to an age, such as when you may vote, retire or draw a pension. [[gerontology|Gerontology]] studies ageing; **social gerontology** studies its social side. OpenStax splits later life into the **young-old** (about 65–74), the **middle-old** (75–84) and the **old-old** (85 and over) (13.1).",
+      "A [[cohort]] is a group who share a demographic trait, usually birth years. Cohorts grow old in different worlds: Japanese born in the late 1940s grew up with post-war growth, those born around 1990 started work in the long slowdown ({{japan-economic-miracle}}). The textbook’s examples are mostly from the United States; this lesson uses Japan as its main case, with East Asia, Europe, Latin America and sub-Saharan Africa."
+    ]},
+    {h:"The life-course perspective", body:[
+      "The [[life-course-perspective|life-course perspective]] studies how lives unfold inside history and social structure. Glen Elder’s *Children of the Great Depression* (1974) followed Californians born in the early 1920s. It showed that the same crash shaped children differently depending on their age and family when it hit. Four principles apply to any life:",
+      {list:[
+        "**Time and place**: the events and places people live through, such as a war, a boom or a pandemic.",
+        "**Timing**: the same event has different effects at different ages. Losing a job at 25 is not losing it at 58.",
+        "**Linked lives**: a parent’s migration or a grandparent’s illness changes other family members’ lives.",
+        "**Agency**: people make choices within the limits their history and society set."
+      ]},
+      "[[cumulative-advantage|Cumulative advantage and disadvantage]] (Dale Dannefer, 2003, building on Robert Merton’s “Matthew effect”, 1968) explains why inequality often grows with age. A good school leads to a stable job, a pension, savings and better health care, while early setbacks pile up too. So older people are often **more unequal** than younger ones.",
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="e2u4-l6-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="34" y="22">health, money, networks</text><path class="d-ink" d="M30 300 L30 30" stroke-width="1.5"/><path class="d-ink" d="M30 300 L330 300" stroke-width="1.5"/><path class="d-ink" d="M40 232 L110 214 L190 150 L260 104 L310 82" fill="none" stroke-width="3"/><path class="d-ink" d="M40 238 L110 236 L190 232 L260 240 L310 238" fill="none" stroke-width="3" stroke-dasharray="7 5"/><circle class="d-sage" cx="110" cy="214" r="6" stroke-width="2"/><circle class="d-sage" cx="190" cy="150" r="6" stroke-width="2"/><circle class="d-sage" cx="260" cy="104" r="6" stroke-width="2"/><circle class="d-rose" cx="110" cy="236" r="6" stroke-width="2"/><circle class="d-rose" cx="190" cy="232" r="6" stroke-width="2"/><circle class="d-rose" cx="260" cy="240" r="6" stroke-width="2"/><text class="s" x="102" y="200" text-anchor="end">degree</text><text class="s" x="182" y="140" text-anchor="end">stable job</text><text class="s" x="252" y="94" text-anchor="end">pension, savings</text><text class="s" x="110" y="262" text-anchor="middle">left school</text><text class="s" x="190" y="280" text-anchor="middle">informal work</text><text class="s" x="262" y="262" text-anchor="middle">cares for parent</text><text x="306" y="70" text-anchor="end">Life A</text><text x="306" y="226" text-anchor="end">Life B</text><path class="d-ink" d="M322 92 L322 226" stroke-width="1.5" marker-start="url(#e2u4-l6-a)" marker-end="url(#e2u4-l6-a)"/><text class="s" x="314" y="165" text-anchor="end">gap widens</text><text class="s" x="40" y="318">birth</text><text class="s" x="185" y="318" text-anchor="middle">age</text><text class="s" x="330" y="318" text-anchor="end">old age</text></svg>', alt:"A chart with age along the bottom and health, money and networks up the side. Two invented lives start close together at birth. Life A rises through a degree, a stable job and a pension with savings. Life B stays low through leaving school early, informal work and caring for a parent. A double arrow at the right shows the gap between them widening in old age.", cap:"Two invented lives that start close together. Small early advantages and setbacks compound over decades: cumulative advantage and disadvantage."},
+      "Lives lengthen, but schools, jobs and pension rules still assume a three-stage life of study, work and retirement. Matilda White Riley and colleagues (1994) called this **structural lag**: a cousin of Ogburn’s cultural lag (Lesson 6)."
+    ]},
+    {h:"Population ageing: why, and where", body:[
+      "[[population-ageing|Population ageing]] means a rising share of older people. Lesson 4’s {{demographic-transition|demographic transition}} explains why: when births stay low and lives grow longer, each generation of children is smaller than the last. Migration matters too: regions that young people leave age faster.",
+      "The UN estimates that global life expectancy at birth reached **73.3 years in 2024**, and about **10%** of people were 65 or older, but the share varies enormously:",
+      {table:[["Place (2024)","Aged 65+","Note"],["Japan","29.8%","The 2025 census counted 29.4%, a record"],["European Union","22.0%","Italy 24.6%"],["Republic of Korea","19.3%","Its resident register passed 20% in December 2024"],["China","14.7%","Retirement ages rising from 2025"],["Latin America and the Caribbean","9.8%","Close to the world average of 10.2%"],["Sub-Saharan Africa","3.2%","The world’s youngest region"]]},
+      "Figures: World Bank, from the UN’s *World Population Prospects 2024*. Japan aged early and far: its 2025 census counted 122.97 million people, 29.4% aged 65+ (a record high) and 10.9% under 15 (a record low) ({{japan-population-change}}). Middle-income countries such as China, Thailand and Brazil are ageing at lower incomes than Japan or Europe did, often summed up as “getting old before getting rich”."
+    ]},
+    {h:"Dependency ratios: useful, but read the small print", body:[
+      "A [[dependency-ratio|dependency ratio]] compares people of “dependent” ages with people of “working” age, per 100:",
+      {list:[
+        "[[old-age-dependency-ratio|Old-age dependency ratio]] = people aged 65+ ÷ people aged 15–64 × 100",
+        "**Child (young-age) dependency ratio** = people aged 0–14 ÷ people aged 15–64 × 100",
+        "**Total dependency ratio** = the two added together"
+      ]},
+      {ex:"Japan’s 2025 census: 29.4% aged 65+ and 10.9% under 15, so 100 − 29.4 − 10.9 = 59.7% aged 15–64.\nOld-age ratio = 29.4 ÷ 59.7 × 100 ≈ **49**: about one person aged 65+ for every two of working age.\nTotal ratio = (29.4 + 10.9) ÷ 59.7 × 100 ≈ **68**.\nThe World Bank’s 2024 estimate from UN data is about 51 for the old-age ratio. Sources and dates differ slightly, so name yours.", label:"Worked example: Japan’s dependency ratios"},
+      {fig:'<svg viewBox="0 0 340 330"><text x="170" y="22" text-anchor="middle">Sub-Saharan Africa, 2024</text><rect class="d-lup" x="20" y="34" width="122" height="40" stroke-width="2"/><rect class="d-sage" x="142" y="34" width="168" height="40" stroke-width="2"/><rect class="d-gold" x="310" y="34" width="10" height="40" stroke-width="2"/><text x="81" y="52" text-anchor="middle">0–14</text><text class="s" x="81" y="67" text-anchor="middle">41%</text><text x="226" y="52" text-anchor="middle">15–64</text><text class="s" x="226" y="67" text-anchor="middle">56%</text><path class="d-ink" d="M315 76 L315 90" stroke-width="1.5"/><text class="s" x="320" y="104" text-anchor="end">65+: 3%</text><text class="s" x="170" y="126" text-anchor="middle">78 dependants per 100 of working age,</text><text class="s" x="170" y="142" text-anchor="middle">mostly children</text><text x="170" y="178" text-anchor="middle">Japan, 2024</text><rect class="d-lup" x="20" y="190" width="34" height="40" stroke-width="2"/><rect class="d-sage" x="54" y="190" width="176" height="40" stroke-width="2"/><rect class="d-gold" x="230" y="190" width="90" height="40" stroke-width="2"/><text x="142" y="208" text-anchor="middle">15–64</text><text class="s" x="142" y="223" text-anchor="middle">59%</text><text x="275" y="208" text-anchor="middle">65+</text><text class="s" x="275" y="223" text-anchor="middle">30%</text><path class="d-ink" d="M37 232 L37 246" stroke-width="1.5"/><text class="s" x="20" y="260">0–14: 11%</text><text class="s" x="170" y="282" text-anchor="middle">70 dependants per 100 of working age,</text><text class="s" x="170" y="298" text-anchor="middle">mostly older people</text><text class="s" x="170" y="322" text-anchor="middle">Source: World Bank / UN WPP 2024</text></svg>', alt:"Two bars, each divided into three age groups. Sub-Saharan Africa: 41% aged 0–14, 56% aged 15–64 and 3% aged 65+, or 78 dependants per 100 people of working age, mostly children. Japan: 11% aged 0–14, 59% aged 15–64 and 30% aged 65+, or 70 dependants per 100 of working age, mostly older people.", cap:"Similar total dependency, opposite causes. One region needs schools and jobs for the young; the other needs care and pensions."},
+      {warn:"Age is not dependency. Many people over 65 work, volunteer, mind grandchildren and pay taxes; many aged 15–64 are studying, unemployed or caring full time. **Economic** dependency ratios (people not in work ÷ people in work) capture this, and policy can lower them. More older people or women in paid work reduces the ratio, even if the age structure stays the same."},
+      {fix:"OpenStax (13.1) defines the dependency ratio by **labour force** (people not working compared with people working), which is an economic ratio. UN and World Bank figures use **age groups**. Check which one a source means."}
+    ]},
+    {h:"Who cares? Families, markets and the state", body:[
+      "Longer lives usually include years of needing help with daily life: [[long-term-care|long-term care]]. Every society divides it between **families**, the **state**, **markets** (paid services) and **communities**. Feminist sociologists stress that women do most unpaid family care ({{unpaid-care-work}}).",
+      {list:[
+        "**Japan** created public long-term care insurance in 2000: everyone aged 40+ pays in, and older people assessed as needing care can use home help, day centres or care homes. It moved part of the work from daughters and daughters-in-law to paid professionals. Germany (1995) and the Republic of Korea (2008) have similar schemes.",
+        "**China and much of East Asia** value [[filial-piety|filial piety]]. China’s revised law on older people’s rights, in force since July 2013, tells adult children who live apart to visit often. Singapore’s Maintenance of Parents Act (1995) lets parents claim support. With smaller families and young people in distant cities, governments are also building community care.",
+        "**Sub-Saharan Africa**: care is mostly family-based, and older people are carers too: many grandparents raise grandchildren whose parents have died of AIDS or work far away (Lesson 1).",
+        "**Global care chains**: migrant women do much paid care work in richer countries ([[global-care-chain]], {{gender-and-migration}}). Japan has admitted foreign care workers under partnership agreements with Indonesia (2008), the Philippines (2009) and Viet Nam (2014), and later the Specified Skilled Worker status ({{japan-immigration-policy}})."
+      ]},
+      "Japan also tests care robots and sensors. Supporters see help for a shrinking workforce; critics, including some care workers, worry they could replace human contact rather than support it."
+    ]},
+    {h:"Pensions: who pays for later life?", body:[
+      {table:[["Design","How it works","Examples"],["[[pay-as-you-go|Pay-as-you-go]] public pension","Today’s workers’ contributions and taxes pay today’s pensioners: a contract between generations","Japan’s national and employees’ pensions; most of Europe"],["Funded pension","Each worker or fund saves; the pension depends on what was paid in and on investment returns","Chile’s individual accounts (from 1981); workplace funds in many countries"],["[[social-pension|Social (non-contributory) pension]]","Paid from taxes to older people whatever their work history, sometimes only to the poor","Bolivia’s Renta Dignidad (2008); South Africa’s older persons’ grant; Kenya’s Inua Jamii for people aged 70+"]]},
+      "Pay-as-you-go systems feel the dependency ratio directly: fewer contributors per pensioner means higher contributions, lower pensions, later retirement or more tax money. Contributory systems reach mainly people with formal jobs, missing many [[informal-economy|informal]] workers (Lesson 3), which is one reason social pensions have spread in Africa, Asia and Latin America. The ILO estimates that 52.4% of the world’s people are covered by at least one social protection benefit (*World Social Protection Report 2024–26*). So in many places the family is still the main pension.",
+      "**China** began raising its statutory retirement ages on 1 January 2025, over 15 years: men from 60 to 63, women from 50 or 55 (depending on the job) to 55 or 58. **Japan** lets people start the basic pension at any age from 60 to 75 (smaller payments if early, larger if late). It requires employers to offer work up to 65 to employees who want it, and to try to up to 70.",
+      "Raising pension ages is debated. Supporters argue it keeps systems affordable as lives lengthen; critics note that manual workers and poorer groups often have shorter, less healthy lives, so one later age can be unfair. The trade-off is partly about values."
+    ]},
+    {h:"Theories of ageing", body:[
+      {table:[["Lens","Theory","Main critique"],["Functionalism","**Disengagement** (Cumming and Henry, 1961): withdrawing from roles is natural and lets society hand them on","Arlie Hochschild (1975) and others: many older people don’t want to withdraw, and the theory can excuse pushing them out"],["Functionalism","**Activity** (Havighurst, 1961) and **continuity** (Atchley): staying active, and keeping one’s habits and identity, bring well-being","Assumes people have the health and money to stay active"],["Conflict","**Age stratification** (Riley, Johnson and Foner, 1972): age groups get unequal resources. **Modernization** (Cowgill and Holmes, 1972): older people lose status as societies industrialize","Too simple: older people’s status also varies by class, gender and policy"],["Symbolic interactionism","**Subculture of ageing** (Rose, 1962), **selective optimization with compensation** (Baltes and Baltes, 1990), **gerotranscendence** (Tornstam, 2005)","A focus on individuals can overlook structures such as pensions and ageism"]]},
+      "Feminist scholars add that ageing is gendered. Susan Sontag wrote of “the double standard of aging” (1972): women are judged as old earlier than men. Women also live longer on average and earn less over a lifetime, so in many countries they are more likely to be poor in old age ({{feminist-theory}})."
+    ]},
+    {h:"Ageism and relations between generations", body:[
+      "[[ageism|Ageism]] is stereotyping, prejudice and discrimination based on age; the US psychiatrist Robert Butler coined the word in the late 1960s. WHO says half the world’s population is ageist against older people. It says ageism can be **institutional** (rules that ration care or jobs by age), **interpersonal** (patronising talk) or **self-directed** (believing stereotypes about yourself). It targets the young too. WHO recommends policy and law, education and **intergenerational contact**; the UN has declared 2021–2030 the Decade of Healthy Ageing.",
+      "Are generations in conflict? Some commentators in Japan and elsewhere speak of a “silver democracy”: older people are numerous and vote more, so policy may tilt towards pensions. Others answer that families pass money, housing and childcare in both directions and that older voters disagree among themselves. Researchers test both claims; it is a debate, not a settled fact. Generation labels such as “boomers” also mislead: class, gender, place and migration divide every cohort.",
+      {table:[["Misconception","Closer to the truth"],["Ageing happens only in rich countries.","Most of the world is ageing, including many middle-income countries."],["A high dependency ratio means collapse.","It measures age, not work. Employment, productivity, migration and policy change the real burden."],["Older people are a burden.","Older people also work, pay taxes, volunteer and support younger relatives."]]},
+      {key:"Ageing is a social process. The same years of life are lived very differently depending on history, inequality and the institutions a society builds for care and income."},
+      {terms:["gerontology","cohort","life-course-perspective","cumulative-advantage","dependency-ratio","old-age-dependency-ratio","long-term-care","filial-piety","pay-as-you-go","social-pension","ageism","disengagement-theory","activity-theory","age-stratification"]}
+    ]}
+   ],
+   try:[
+    {id:"e2u4-l6-x1", type:"number", q:"In the invented country of Rivanda, 6.3 million people are aged 65 or over, 7.2 million are under 15 and 18 million are aged 15–64. What is Rivanda’s **old-age dependency ratio** (per 100 people aged 15–64)?", answer:35, tol:0.05, unit:"per 100", why:"Old-age dependency ratio = people 65+ ÷ people 15–64 × 100 = 6.3 ÷ 18 × 100 = 0.35 × 100 = 35. There are 35 people aged 65+ for every 100 people of working age.", wrongs:[
+      {v:75, tol:0.05, why:"That’s the **total** dependency ratio: (6.3 + 7.2) ÷ 18 × 100 = 75. The question asks only about people aged 65+."},
+      {v:0.35, tol:0.005, why:"That’s the ratio as a decimal. Dependency ratios are given per 100, so multiply by 100."},
+      {v:20, tol:0.05, why:"That’s the share of older people in the **whole** population: 6.3 ÷ 31.5 × 100 = 20%. The ratio divides by the working-age group only (18 million)."},
+      {v:285.7, tol:0.5, why:"You divided the working-age group by the older group (18 ÷ 6.3). Put the people aged 65+ on top."}
+    ], hint2:"Divide the people aged 65+ by the people aged 15–64, then multiply by 100."},
+    {id:"e2u4-l6-x2", type:"sort", q:"Which life-course principle does each situation mainly show?", buckets:["Time and place","Timing","Linked lives","Agency"], items:[
+      {t:"Two cousins of the same age grow up in different countries, one during a civil war and one in peacetime, and their schooling differs sharply.", b:0, why:"The historical events and places people live through shape their lives: time and place."},
+      {t:"Hana’s factory closes. At 24 she retrains easily; her colleague, aged 59, never finds steady work again.", b:1, why:"The same event has different effects at different ages: timing."},
+      {t:"When Tomás’s mother has a stroke, he cuts his working hours to care for her, and his own pension savings fall.", b:2, why:"An event in one person’s life (the stroke) changes another’s (Tomás’s work and pension): linked lives."},
+      {t:"Fatima’s family expects her to marry at 18, but she negotiates to finish nursing school first.", b:3, why:"Making choices within the limits she faces is agency."},
+      {t:"A grandmother in Lusaka raises her grandchildren while their parents work in another country.", b:2, why:"The parents’ migration reshapes the grandmother’s later life: linked lives."},
+      {t:"Losing a parent at age 8 affects Kenji very differently from losing a parent at 45.", b:1, why:"The age at which an event happens changes its effect: timing."},
+      {t:"After years of informal work, Sione and his neighbours set up a savings group to build a fund for old age.", b:3, why:"Acting to shape his own future within the options available is agency."}
+    ]},
+    {id:"e2u4-l6-x3", type:"match", q:"Match each theory of ageing to its main claim.", pairs:[
+      ["Disengagement theory","Withdrawing from roles in later life is natural and lets younger people take them over","Cumming and Henry (1961), a functionalist theory. Critics say many older people don’t want to withdraw."],
+      ["Activity theory","The more active and involved older people are, the happier they tend to be","Havighurst (1961); later critics note that staying active needs health and money."],
+      ["Continuity theory","Older people keep their habits, beliefs and relationships consistent as they adapt","Atchley’s theory stresses continuity of identity rather than activity for its own sake."],
+      ["Age stratification theory","Different age groups have unequal access to society’s resources","Riley, Johnson and Foner (1972), a conflict-perspective theory that treats age like class."],
+      ["Modernization theory of ageing","Older people lose status as societies industrialize","Cowgill and Holmes (1972). Critics say status also depends on class, gender and policy."]
+    ]},
+    {id:"e2u4-l6-x4", type:"spot", q:"A newspaper column says this about ageing. Tap the parts that are problems with the argument.", ask:"is a problem with the argument", parts:[
+      {t:"Japan’s 2025 census counted 29.4% of people aged 65 or over,", flag:false, why:"An accurate, dated figure. Not a flaw."},
+      " ",
+      {t:"according to the Statistics Bureau’s published results.", flag:false, why:"Naming the official source is good practice."},
+      " ",
+      {t:"This “silver tsunami” means every older person is a burden on the young,", flag:true, why:"A loaded metaphor plus an overgeneralization. Many older people work, pay taxes, volunteer and care for others."},
+      " ",
+      {t:"so the dependency ratio proves the pension system will collapse by 2040,", flag:true, why:"An age ratio can’t prove collapse. Pension finances depend on employment, contributions, productivity and policy, and no projection is cited."},
+      " and ",
+      {t:"the only possible answer is to cut every pension in half.", flag:true, why:"A false single solution. Options include later retirement for those who can work, higher employment, migration, tax funding and productivity."},
+      " ",
+      {t:"Other ageing countries, such as Korea and Italy, face similar questions.", flag:false, why:"Accurate: both have high and rising shares of older people."}
+    ]},
+    {id:"e2u4-l6-x5", type:"mcq", q:"Ana sold vegetables at a city market for 40 years with no contract and no registration. Now 70, she has no pension from her work. Which pension design is most likely to reach someone like her?", options:[
+      {t:"A social pension paid from taxes", ok:true, why:"Right. Social (non-contributory) pensions don’t depend on a work record, so they can reach people who worked informally, like Bolivia’s Renta Dignidad or Kenya’s Inua Jamii."},
+      {t:"An employees’ pension based on payroll contributions", why:"This pays out only to people who paid contributions through formal jobs. Ana never had one."},
+      {t:"A funded individual account built from monthly savings", why:"Ana would have needed to save into a registered account during her working life, which informal workers rarely can."},
+      {t:"A higher retirement age for everyone in the country", why:"Raising the age changes when existing pensions start. It doesn’t create a pension for someone who has none."}
+    ]},
+    {id:"e2u4-l6-x6", type:"sort", q:"WHO describes three forms of ageism. Which form does each example show?", buckets:["Institutional","Interpersonal","Self-directed"], items:[
+      {t:"A hospital rule offers a treatment only to patients under 70, whatever their health.", b:0, why:"A rule built into an organization’s policy is institutional ageism."},
+      {t:"A shop assistant speaks slowly and loudly to Dmitri because he has grey hair.", b:1, why:"Patronising treatment in a face-to-face encounter is interpersonal ageism."},
+      {t:"Priya, 66, doesn’t apply for a course because she believes she is too old to learn.", b:2, why:"Applying an age stereotype to yourself is self-directed ageism."},
+      {t:"A job advertisement says applicants must be aged 25–35.", b:0, why:"An age limit written into hiring rules is institutional."},
+      {t:"Colleagues ignore a 23-year-old’s ideas because “young people have no experience”.", b:1, why:"Ageism can target the young too. This happens in everyday interaction: interpersonal."},
+      {t:"Kenji stops dancing in public at 60, thinking older people shouldn’t draw attention to themselves.", b:2, why:"He limits his own behaviour because of an internalised stereotype: self-directed."}
+    ]},
+    {id:"e2u4-l6-x7", type:"mcq", q:"A study finds that at age 30 the health and income gaps between people who left school at 16 and university graduates are small, but at age 70 they are large. Which idea explains this pattern best?", options:[
+      {t:"Cumulative advantage and disadvantage", ok:true, why:"Yes. Small early differences compound over decades: jobs, pensions, savings and health care build on each other."},
+      {t:"Disengagement theory", why:"Disengagement is about withdrawing from roles in later life. It doesn’t explain why gaps between groups grow."},
+      {t:"The demographic transition", why:"That model describes birth and death rates across a whole population, not inequality within a cohort."},
+      {t:"Gerotranscendence", why:"Gerotranscendence describes a shift in outlook in later life, not widening gaps in health and income."}
+    ]}
+   ],
+   apply:{intro:"Look at ageing in your own world. Be respectful: talk only with people who agree, let them skip any question, and don’t record anyone without permission.", tasks:[
+     {t:"Draw a life-course timeline", how:["With a consenting older relative or friend (or using a published memoir or biography), draw a timeline of their life from birth to now.","Mark three historical events they lived through (time and place) and how old they were at each (timing).","Mark two moments when another person’s life changed theirs (linked lives) and one choice they made against the odds (agency).","Note one advantage or setback that seems to have built up over time."], write:"Whose life, three events and ages, linked lives, one choice, what built up over time…"},
+     {t:"Calculate your country’s dependency ratios", how:["Open the World Bank data pages for “Population ages 65 and above (% of total population)” and “Age dependency ratio, old (% of working-age population)”, or your national statistics office.","Note the latest values and their year for your country, for Japan and for one country on another continent.","Check one old-age ratio yourself from the age shares: 65+ share ÷ 15–64 share × 100.","Write one thing each ratio hides (for example, older people in work, young people studying, informal work)."], write:"Country, year, 65+ share, old-age ratio (with my check), what it hides…"},
+     {t:"Run a small ageism audit", how:["Choose one source of images: television adverts, a shop’s birthday cards, a news website or a social media feed.","Look at 15–20 images or adverts that show people of different ages.","Count how often older people appear, and in what roles (active, ill, comic, wise, consumer, worker).","Note any examples of the three forms of ageism, and anything that breaks the stereotypes."], write:"Source, number of images, how older people are shown, examples of ageism, counter-examples…"}
+   ], proof:"Notes with a life-course timeline marked with the four principles, dated dependency ratios for three countries with your own check and one thing each hides, and a small coded audit of how older people are shown in one media source."},
+   read:[
+     {book:"soc", where:"Chapter 13 “Aging and the Elderly”: Sections 13.1 “Who Are the Elderly? Aging in Society”, 13.2 “The Process of Aging”, 13.3 “Challenges Facing the Elderly” and 13.4 “Theoretical Perspectives on Aging”", note:"On LibreTexts these are 13.2–13.5. The book’s figures and examples are mostly from the United States; this lesson gives global ones."},
+     {book:"sbj", where:"Chapter 2 “Population” and Chapter 15 “Social Security, Health Care, and Public Hygiene”", note:"Official figures for Japan’s age structure, pensions and long-term care."}
+   ]
+  },
+  /* ===================== LESSON 6 (e2u4-l5) ===================== */
   {id:"e2u4-l5", title:"Media, technology and social change", minutes:60,
-   hook:{q:"A social movement that once filled the streets has gone quiet. What can you safely conclude?", options:["It has failed","Its supporters lost interest","Not much yet: fading can also follow success","The government must have banned it"], answer:2, reveal:"**Not much yet.** Movements pass through typical stages, and the last one, decline, can mean the goal was won. This lesson explains how [[social-movement|social movements]] rise and what helps them succeed, alongside how media and technology shape what a society treats as important."},
+   hook:{q:"A social movement that once filled the streets has gone quiet. What can you safely conclude?", options:["It has failed","Its supporters lost interest","Not much yet: fading can also follow success","The government must have banned it"], answer:2, reveal:"**Not much yet.** Movements pass through typical stages, and the last one, decline, can mean the goal was won. This lesson explains how [[social-movement|social movements]] rise and what helps them succeed. It also shows how media and technology shape what a society treats as important."},
    goals:[
      "Analyse media and technology through the main sociological lenses",
      "Explain gatekeeping, media consolidation and the digital divide, with current figures",
@@ -447,7 +590,7 @@ ICA.addUnit({
     {h:"The big ideas", body:[
       {list:[
         "**Technology** is applying science to everyday problems; **media** are all print, digital and electronic communication; **new media** are interactive. Media are also an {{agents-of-socialization|agent of socialization}}. (8.1, 8.2)",
-        "The [[digital-divide|digital divide]] is unequal access to technology along lines of income, race, class, gender and place, and it builds a [[knowledge-gap|knowledge gap]]. **E-readiness**, the skill to find and use digital information, matters as much as owning a device. (8.1)",
+        "The [[digital-divide|digital divide]] is unequal access to technology along lines of income, race, class, gender and place. It builds a [[knowledge-gap|knowledge gap]]. **E-readiness**, the skill to find and use digital information, matters as much as owning a device. (8.1)",
         "[[gatekeeping|Gatekeeping]] filters countless possible messages into the few that reach the public. [[media-consolidation|Media consolidation]] puts most outlets in a few owners’ hands, an **oligopoly**. (8.2, 8.4)",
         "Functionalists see media informing, entertaining and socializing, but warn of a **narcotizing dysfunction**: knowing about a problem feels like acting. Conflict theorists see ownership, the divide and surveillance reinforcing power. Feminists study stereotyped images and who builds technology. Interactionists see devices as status symbols and media helping construct reality. (8.4)",
         "A [[social-movement|social movement]] is an organized group working towards a shared goal. Aberle’s types: **reform** (one specific change), **revolutionary** (change everything), **resistance** (stop or undo a change), **religious/redemptive** (inner change) and **alternative** (limited self-improvement). Typical stages: preliminary (emergence), coalescence, institutionalization, decline; decline can mean success. (21.2)",
@@ -461,7 +604,7 @@ ICA.addUnit({
     ]},
     {h:"Key terms", body:[ {terms:["digital-divide","knowledge-gap","gatekeeping","agenda-setting","media-consolidation","social-movement","resource-mobilization","framing","new-social-movements","social-change"]} ]},
     {h:"Beyond the book", body:[
-      {beyond:"**Agenda-setting.** McCombs and Shaw’s 1968 election study (published 1972) found that the issues voters ranked most important matched the issues media covered most: media tell people what to think **about**. Online, algorithms and moderation now do much gatekeeping; Eli Pariser’s “filter bubbles” (2011) remain debated. Public broadcasters such as the BBC, NHK, ABC and SABC are funded differently from commercial media.\n\n**The divide today.** The ITU estimated about **74%** of the world, around 6 billion people, used the internet in 2025: about 94% in high-income and 23% in low-income countries. From 71% in 2024 that is a rise of 3 percentage points, or about 4.2 **percent** (3 ÷ 71 × 100). Researchers see three levels: access, skills and use, and outcomes, so a device alone doesn’t close the divide. Kenya’s M-Pesa (2007) shows phones leapfrogging banks.\n\n**Why movements rise.** Relative deprivation (feeling worse off than others) and political opportunity (elites split, repression eases) also matter. Social media cut the cost of organizing, as in the Arab Spring (2010–11), but Malcolm Gladwell (2010) called online ties weak and Zeynep Tufekci (2017) found fast-built movements can lack staying power. Older theories of change are evolutionary, functionalist, conflict and cyclical."}
+      {beyond:"**Agenda-setting.** McCombs and Shaw’s 1968 election study (published 1972) found a match. The issues voters ranked most important were the issues media covered most: media tell people what to think **about**. Online, algorithms and moderation now do much gatekeeping; Eli Pariser’s “filter bubbles” (2011) remain debated. Lesson 7 follows algorithms beyond the news, into welfare, work and borders ({{algorithms-society}}). Public broadcasters such as the BBC, NHK, ABC and SABC are funded differently from commercial media.\n\n**The divide today.** The ITU estimated about **74%** of the world, around 6 billion people, used the internet in 2025. That was about 94% in high-income and 23% in low-income countries. From 71% in 2024 that is a rise of 3 percentage points, or about 4.2 **percent** (3 ÷ 71 × 100). Researchers see three levels: access, skills and use, and outcomes, so a device alone doesn’t close the divide. Kenya’s M-Pesa (2007) shows phones leapfrogging banks.\n\n**Why movements rise.** Relative deprivation (feeling worse off than others) and political opportunity (elites split, repression eases) also matter. Social media cut the cost of organizing, as in the Arab Spring (2010–11). But Malcolm Gladwell (2010) called online ties weak, and Zeynep Tufekci (2017) found fast-built movements can lack staying power. Older theories of change are evolutionary, functionalist, conflict and cyclical."}
     ]}
    ],
    try:[
@@ -526,6 +669,139 @@ ICA.addUnit({
    read:[
      {book:"soc", where:"Chapter 8 “Media and Technology”: Sections 8.1 “Technology Today” (for the digital divide), 8.2 “Media and Technology in Society”, 8.3 “Global Implications of Media and Technology” and 8.4 “Theoretical Perspectives on Media and Technology”"},
      {book:"soc", where:"Chapter 21 “Social Movements and Social Change”: Sections 21.2 “Social Movements” and 21.3 “Social Change”", note:"Section 21.1 “Collective Behavior” covers crowds and flash mobs, if you want more."}
+   ]
+  },
+  /* ===================== LESSON 7 (e2u4-l7) ===================== */
+  {id:"e2u4-l7", title:"Algorithms, platforms and borders: a sociology of AI", minutes:60,
+   hook:{q:"In 2020 the UK Home Office stopped using an algorithm that sorted visa applications into red, amber and green. What led to the pause?", options:["A legal challenge arguing it discriminated by nationality","A cyber-attack that leaked applicants’ personal data","A new law banning computers in visa decisions","Complaints that it approved applications too slowly"], answer:0, reveal:"**A legal challenge.** The Joint Council for the Welfare of Immigrants, with the campaign group Foxglove, argued that the “streaming tool” used nationality and fed on its own past decisions. In August 2020 the Home Office agreed to stop using it pending a redesign, while denying that it discriminated. Sociologists study cases like this to ask who designs automated systems, whose data they learn from, and who can challenge them. This lesson applies those questions to welfare, work, surveillance and borders."},
+   goals:[
+     "Explain why sociologists treat algorithms and AI as social systems: goals, data, institutions and feedback loops",
+     "Analyse cases of biased automated decisions from several regions, and explain why fairness definitions can conflict",
+     "Describe platform labour and algorithmic management, and the 2024 EU and 2026 ILO rules",
+     "Compare sociological views of surveillance, from the panopticon to surveillance capitalism",
+     "Describe border technologies (biometrics, travel authorisations, risk scoring) and give the main arguments for and against them, attributed"
+   ],
+   learn:[
+    {h:"Algorithms are social, not only technical", body:[
+      {lead:"A recipe is an algorithm: steps that turn ingredients into a meal. But someone chose the recipe, the ingredients and what counts as a good meal."},
+      "An [[alg-algorithm|algorithm]] is a precise set of steps that turns an input into an output. Many systems called “AI” use **machine learning**: instead of being given every rule, they find patterns in past data and use them to predict, rank or classify ({{ai-in-everyday-apps}}).",
+      "Sociologists study algorithms as **social systems**. Tarleton Gillespie (2014) asked how algorithms decide what counts as “relevant”; Nick Seaver (2017) argued they are part of culture, built and constantly adjusted by people inside organizations. Five questions open up any system:",
+      {list:[
+        "**Who designs it, and for what goal?** A goal must be turned into something measurable, often a [[proxy-variable|proxy]].",
+        "**Whose data?** Past records carry past decisions and gaps ({{data-power}}).",
+        "**Who is affected?** Often people with little say: applicants, workers, claimants, travellers.",
+        "**Who checks it?** Auditors, regulators, courts, journalists.",
+        "**Who can contest it?** Is there an explanation and a human review?"
+      ]},
+      "Lesson 6 showed algorithms acting as [[gatekeeping|gatekeepers]] of news. This lesson follows them into welfare, work and borders.",
+      {fig:'<svg viewBox="0 0 340 360"><defs><marker id="e2u4-l7-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="8" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="29" text-anchor="middle">Goals and proxies</text><text class="s" x="148" y="47" text-anchor="middle">chosen by designers and managers</text><path class="d-ink" d="M148 60 L148 84" stroke-width="2" marker-end="url(#e2u4-l7-a)"/><rect class="d-gold" x="8" y="86" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="107" text-anchor="middle">Past data</text><text class="s" x="148" y="125" text-anchor="middle">records of earlier decisions</text><path class="d-ink" d="M148 138 L148 162" stroke-width="2" marker-end="url(#e2u4-l7-a)"/><rect class="d-sage" x="8" y="164" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="185" text-anchor="middle">Model</text><text class="s" x="148" y="203" text-anchor="middle">learns patterns, gives scores</text><path class="d-ink" d="M148 216 L148 240" stroke-width="2" marker-end="url(#e2u4-l7-a)"/><rect class="d-rose" x="8" y="242" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="263" text-anchor="middle">Decisions about people</text><text class="s" x="148" y="281" text-anchor="middle">checks, refusals, patrols, pay</text><path class="d-ink" d="M290 267 L314 267 L314 111 L291 111" fill="none" stroke-width="2" marker-end="url(#e2u4-l7-a)"/><text class="s" x="170" y="318" text-anchor="middle">Feedback loop: decisions create the</text><text class="s" x="170" y="334" text-anchor="middle">records the model learns from next.</text><text class="s" x="170" y="352" text-anchor="middle">People act at every step.</text></svg>', alt:"Four boxes stacked top to bottom: goals and proxies chosen by designers and managers; past data, records of earlier decisions; a model that learns patterns and gives scores; decisions about people such as checks, refusals, patrols and pay. An arrow runs from the decisions box back up to the past data box, forming a loop.", cap:"An algorithm inside an organization. The loop is where small biases can grow."}
+    ]},
+    {h:"Feedback loops", body:[
+      "A [[feedback-loop|feedback loop]] forms when a system’s outputs become its future inputs. Kristian Lum and William Isaac (2016) showed it with predictive policing. If a model sends more patrols where more crime was recorded, more crime is recorded there. That seems to confirm the model, even if offending elsewhere is similar.",
+      {ex:"The UK streaming tool rated visa applications red, amber or green. Nationalities on a “suspect” list were automatically rated red.\nRed applications got extra scrutiny and were refused more often.\nRefusals counted as “adverse events”, which could keep a nationality on the list.\nThe claimants argued that the tool rated applications as risky partly because it had rated them risky before. The Home Office denied discrimination but paused the tool in August 2020 for a redesign.", label:"Worked example: a loop in a visa system"}
+    ]},
+    {h:"Automated decisions and bias", body:[
+      "[[automated-decision|Automated decision-making]] means decisions made by systems with little or no human involvement. Governments and firms use it because it is fast and consistent at scale. Supporters point to evidence that well-built models can beat human judgement: Jon Kleinberg and colleagues (2018) estimated that a model could have cut jailing in US bail decisions without raising crime. Critics document what goes wrong:",
+      {table:[["Case","What happened"],["Netherlands, childcare benefits","Officials and a risk model wrongly treated thousands of parents as fraudsters, and nationality was used in the model. The government resigned in January 2021; the data protection authority fined the Tax Administration €2.75 million (December 2021)."],["Australia, “Robodebt” (2016–2019)","Averaging yearly tax data into fortnightly income raised false welfare debts. A Royal Commission (2023) called it “a crude and cruel mechanism, neither fair nor legal”."],["England, exam grades (2020)","With exams cancelled, an algorithm adjusted teachers’ grades using schools’ past results; nearly 40% of teachers’ A-level grades were lowered. After protests, the government dropped the algorithm’s grades."],["United States, court risk scores (2016)","ProPublica reported that Black defendants who did not reoffend were labelled high risk about twice as often as white defendants. The company replied that scores predicted reoffending equally well for both groups."]]},
+      "How can both sides of the last case be right? Researchers (Kleinberg, Mullainathan and Raghavan, 2016; Chouldechova, 2017) showed that when groups have different underlying rates, a score usually cannot have equal accuracy and equal error rates for both at once. Choosing which kind of fairness comes first is a value choice, not only a technical one.",
+      "Virginia Eubanks (*Automating Inequality*, 2018), Safiya Umoja Noble (*Algorithms of Oppression*, 2018) and Ruha Benjamin (*Race After Technology*, 2019) make a shared argument. They argue that such systems fall hardest on poor and racialised groups, who are watched most and can contest least ([[algorithmic-bias]]). Proposed remedies include audits by group, published explanations, human review and appeal. The EU’s GDPR (Article 22) limits purely automated decisions with significant effects, and the EU AI Act treats uses in welfare, jobs, education, policing and migration as **high-risk** ({{ai-governance}})."
+    ]},
+    {h:"Platform labour: managed by an app", body:[
+      "[[platform-work|Platform work]] is paid work found and organised through a digital platform. It includes ride-hailing and delivery in cities from Jakarta to São Paulo, cleaning and care, and online tasks such as translation or labelling data to train AI. Mary Gray and Siddharth Suri called the hidden human labour behind “automated” services [[ghost-work|ghost work]] (2019).",
+      "Platforms use [[algorithmic-management|algorithmic management]]: apps assign tasks, set prices, rate workers and can suspend (“deactivate”) them, often with no human manager. Alex Rosenblat and Luke Stark (2016) showed that Uber drivers faced **information asymmetries**: the app knew far more than they did.",
+      "The core dispute is status. Platforms and many workers value **flexibility**: choosing hours, easy entry, and income for people shut out of other jobs, including many migrants. Unions, many researchers and some courts stress **precarity**: unpredictable pay, no sick pay or pension, and unexplained decisions. The UK Supreme Court ruled in 2021 that Uber drivers were “workers” with rights such as holiday pay ({{work-globalization}}).",
+      "Rules are arriving. The EU Platform Work Directive (2024; member states must apply it by 2 December 2026) presumes an employment relationship where facts show control, and requires human oversight of automated decisions. On 12 June 2026 the International Labour Conference adopted the **Decent Work in the Platform Economy Convention (No. 193)** by 406 votes to 8, with 36 abstentions. It extends key protections whatever a worker’s legal status, and requires transparency about automated systems and a route to human review of decisions such as deactivation. Employers’ representatives had argued for more flexible, less prescriptive rules. A convention binds only states that ratify it."
+    ]},
+    {h:"Surveillance: watching and sorting", body:[
+      "Surveillance is collecting and using personal data in order to manage or influence people. Michel Foucault (*Discipline and Punish*, 1975) used Jeremy Bentham’s design for a [[panopticon]] prison, where inmates can always be seen but never know when. He used it to argue that modern institutions teach people to discipline themselves. David Lyon (2003) stressed [[social-sorting|social sorting]]: data place people in categories that bring different treatment, such as trusted and risky travellers.",
+      "Shoshana Zuboff (*The Age of Surveillance Capitalism*, 2019) argued that tech firms turn data about behaviour into predictions sold for profit: [[surveillance-capitalism]]. Critics such as Evgeny Morozov replied that this is ordinary capitalism rather than a new system. Simone Browne (*Dark Matters*, 2015) traced how surveillance of Black people runs back to slavery.",
+      {list:[
+        "**Functionalism**: surveillance can protect people and make services efficient.",
+        "**Conflict theory**: watchers gain power over the watched, and sorting can lock in inequality.",
+        "**Symbolic interactionism**: people adapt, perform for cameras, resist or watch back.",
+        "**Feminist theory**: who is watched at home and online, for example through partner tracking."
+      ]},
+      "Human rights law does not ban surveillance; it asks whether it is lawful, necessary and proportionate ({{digital-rights-surveillance}})."
+    ]},
+    {h:"Border technologies", body:[
+      "Borders are where these threads meet ({{borders-and-sovereignty}}). States now check people long before they reach a frontier and record them as they cross. Ayelet Shachar (2020) calls this **the shifting border**; Dennis Broeders (2007) wrote of Europe’s “new digital borders”.",
+      {table:[["Technology","What it does","Examples (November 2026)"],["[[biometrics|Biometric]] databases","Store fingerprints and face images to identify people","EU Entry/Exit System (from October 2025, fully running from 10 April 2026); Eurodac (from June 2026 adds face images and children from age 6); UNHCR’s refugee registration"],["[[travel-authorisation|Travel authorisations]] and e-visas","Online permission before travel, checked against databases and rules","Australia’s ETA (1996), the US ESTA, the UK ETA (£20), India’s e-Visa; the EU’s ETIAS is planned (EU states expect 2027) but not yet running"],["[[risk-scoring|Risk scoring]]","Ranks people for extra checks","The UK streaming tool (paused 2020); ETIAS screening rules (planned)"]]},
+      {fig:'<svg viewBox="0 0 340 372"><defs><marker id="e2u4-l7-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="22" text-anchor="middle">One trip, many checkpoints</text><path class="d-ink" d="M30 48 L30 336" stroke-width="2" marker-end="url(#e2u4-l7-b)"/><circle class="d-lup" cx="30" cy="60" r="12" stroke-width="2"/><text x="30" y="65" text-anchor="middle">1</text><text x="54" y="58">Before travel</text><text class="s" x="54" y="76">e-visa or travel authorisation;</text><text class="s" x="54" y="92">data checked against databases</text><text class="s" x="54" y="108">and risk rules</text><circle class="d-gold" cx="30" cy="150" r="12" stroke-width="2"/><text x="30" y="155" text-anchor="middle">2</text><text x="54" y="148">At check-in</text><text class="s" x="54" y="166">the airline checks permission</text><text class="s" x="54" y="182">to travel</text><circle class="d-sage" cx="30" cy="225" r="12" stroke-width="2"/><text x="30" y="230" text-anchor="middle">3</text><text x="54" y="223">At the border</text><text class="s" x="54" y="241">fingerprints and face</text><text class="s" x="54" y="257">recorded or matched</text><circle class="d-rose" cx="30" cy="300" r="12" stroke-width="2"/><text x="30" y="305" text-anchor="middle">4</text><text x="54" y="298">During the stay and at exit</text><text class="s" x="54" y="316">entry and exit dates logged;</text><text class="s" x="54" y="332">overstays flagged</text><text class="s" x="170" y="364" text-anchor="middle">The border now starts far from the frontier.</text></svg>', alt:"A vertical timeline of one trip with four numbered checkpoints: before travel, an e-visa or travel authorisation checked against databases and risk rules; at check-in, the airline checks permission to travel; at the border, fingerprints and face are recorded or matched; during the stay and at exit, entry and exit dates are logged and overstays flagged.", cap:"The shifting border: checks now happen before, at and after the frontier."},
+      "**Governments and the European Commission** argue that these systems make crossings faster and more secure. They replace passport stamps, detect identity fraud and overstays, and free officers to focus on real risks. **UNHCR** uses biometric registration to give refugees a secure identity and to make sure aid reaches the right people.",
+      "**Critics** see risks. Tendayi Achiume, then UN Special Rapporteur on racism, warned in a 2020 report that digital border technologies can reproduce racial and xenophobic discrimination. She added that they can turn migrants into testing grounds for new tools. Petra Molnar (*The Walls Have Eyes*, 2024) documents surveillance along migration routes from the Mediterranean to the US–Mexico border. Human Rights Watch (2021) criticised the sharing of data from Rohingya refugees in Bangladesh with Myanmar; UNHCR said refugees had been asked for consent ({{refugees-and-displacement}}).",
+      "Base rates matter too: when real threats are very rare, even an accurate risk tool flags mostly innocent people (try the calculation below). The EU AI Act lists many migration, asylum and border uses as high-risk, though AI inside the EU’s large border databases has until 31 December 2030 to comply. Many on both sides support impact assessments, independent audits, collecting only necessary data and a real route to appeal; where to draw the line is a political question ({{externalisation-and-detention}}).",
+      {table:[["Misconception","Closer to the truth"],["Algorithms are neutral because they are maths.","They encode people’s choices of goals, data, proxies and thresholds."],["An accurate tool is a fair tool.","It can be accurate overall yet err more for one group, and fairness definitions can conflict."],["Biometrics never make mistakes.","Matching has error rates that can differ between groups, and stored data can be misused or leaked."]]},
+      {key:"Ask of any automated system: who designed it, whose data it uses, who is affected, who checks it and who can contest it."},
+      {terms:["feedback-loop","automated-decision","platform-work","ghost-work","algorithmic-management","panopticon","social-sorting","surveillance-capitalism","biometrics","travel-authorisation","risk-scoring"]}
+    ]}
+   ],
+   try:[
+    {id:"e2u4-l7-x1", type:"order", q:"Put the steps of the visa streaming tool’s alleged feedback loop in order.", items:[
+      {t:"Designers decide which factors, including nationality, raise a risk rating.", why:"It starts with human choices about goals and inputs."},
+      {t:"Applications from nationalities on a “suspect” list are rated red.", why:"The rule turns a category into a score."},
+      {t:"Red applications get extra scrutiny and are refused more often.", why:"The score changes how people are treated."},
+      {t:"Refusals are recorded as “adverse events” for that nationality.", why:"The decisions become new data."},
+      {t:"The nationality stays on the list, and the cycle repeats.", why:"The new data confirm the old rating: a feedback loop."}
+    ]},
+    {id:"e2u4-l7-x2", type:"sort", q:"Which source of algorithmic bias does each example mainly show?", buckets:["Historical data","Proxy","Unrepresentative data","Feedback loop"], items:[
+      {t:"A hiring model learns from ten years of mostly male hires and marks down CVs that mention a women’s club.", b:0, why:"The labels it learned from encode past decisions: historical bias."},
+      {t:"A health programme uses past spending on care to stand for how sick people are.", b:1, why:"Spending stands in for need, and groups who got less care look healthier than they are: a proxy problem."},
+      {t:"A face-matching system trained mostly on lighter-skinned faces makes more errors on darker-skinned women.", b:2, why:"Some groups were under-represented in the training data."},
+      {t:"Police patrol where the model predicts crime, record more crime there, and the model then predicts even more.", b:3, why:"Outputs shape the next round of inputs: a feedback loop."},
+      {t:"A loan model uses postcode, which closely tracks ethnicity in a segregated city.", b:1, why:"Postcode works as a stand-in for a protected characteristic: a proxy."},
+      {t:"A voice assistant tested mainly on one accent misunderstands speakers from other regions.", b:2, why:"The data didn’t represent the people who use it."}
+    ]},
+    {id:"e2u4-l7-x3", type:"match", q:"Match each thinker to the idea they are known for.", pairs:[
+      ["Michel Foucault","Being possibly watched at any time teaches people to discipline themselves","*Discipline and Punish* (1975) built on Bentham’s panopticon."],
+      ["David Lyon","Surveillance sorts people into categories that bring different treatment","Lyon’s *Surveillance as Social Sorting* (2003)."],
+      ["Shoshana Zuboff","Firms turn data about behaviour into predictions sold for profit","*The Age of Surveillance Capitalism* (2019)."],
+      ["Virginia Eubanks","Automated welfare systems fall hardest on poor people","*Automating Inequality* (2018)."],
+      ["Mary Gray and Siddharth Suri","Hidden human workers keep “automated” services running","*Ghost Work* (2019)."],
+      ["Ayelet Shachar","Border control now happens far before and beyond the frontier","*The Shifting Border* (2020)."]
+    ]},
+    {id:"e2u4-l7-x4", type:"number", q:"A risk tool screens 1,000,000 travellers, of whom 100 are real threats. It flags 2% of all travellers (20,000 people) and catches 90 of the 100 real threats. How many of the flagged travellers are **not** real threats?", answer:19910, tol:0.5, unit:"travellers", why:"Flagged people who are not threats = all flagged − threats caught = 20,000 − 90 = 19,910. That is 99.6% of everyone flagged. When real threats are rare, even a tool that catches most of them flags mostly innocent people: the base-rate problem.", wrongs:[
+      {v:20000, tol:0.5, why:"That is everyone flagged. Subtract the 90 real threats the tool caught."},
+      {v:19900, tol:0.5, why:"You subtracted all 100 threats, but the tool caught only 90 of them. The other 10 weren’t flagged."},
+      {v:10, tol:0.5, why:"That is the number of real threats the tool missed, not the innocent people it flagged."},
+      {v:999900, tol:0.5, why:"That is everyone who isn’t a threat. The question asks only about those the tool flagged."}
+    ], hint2:"Start with the number flagged, then take away the real threats among them."},
+    {id:"e2u4-l7-x5", type:"mcq", q:"Oluwaseun, a delivery rider, is suddenly deactivated by an app after his ratings drop. No person explains why. Under ILO Convention No. 193 (2026), in a country that has ratified it, what should he be able to ask for?", options:[
+      {t:"An explanation and a review of the decision with human involvement", ok:true, why:"Right. The Convention requires transparency about automated systems and a route to human review of significant decisions such as deactivation."},
+      {t:"Automatic reinstatement and full back pay in every single case", why:"A review can lead to reinstatement, but the Convention doesn’t guarantee it whatever the facts."},
+      {t:"A ban on the platform using any customer ratings at all", why:"The Convention regulates how automated systems are used and explained; it doesn’t ban ratings."},
+      {t:"Full employee status in every country, whatever the facts of his work", why:"It extends key protections regardless of status, but it doesn’t make every platform worker an employee."}
+    ]},
+    {id:"e2u4-l7-x6", type:"sort", q:"Which kind of border technology does each example show?", buckets:["Biometric database","Travel authorisation or e-visa","Risk scoring"], items:[
+      {t:"On a first visit to the Schengen area, a traveller’s fingerprints and face are recorded and checked on later trips.", b:0, why:"Storing and matching fingerprints and faces is a biometric database, here the EU Entry/Exit System."},
+      {t:"A tourist applies online for permission to travel to the UK and pays £20 before booking.", b:1, why:"Online permission before travel is a travel authorisation, the UK ETA."},
+      {t:"Software rates each visa application red, amber or green for extra checks.", b:2, why:"Ranking applications for scrutiny is risk scoring."},
+      {t:"A refugee’s iris scan confirms her identity when she collects food aid.", b:0, why:"Identification by a body feature stored in a database is biometric."},
+      {t:"Before visiting India, a traveller uploads a passport scan and photo and receives approval by email.", b:1, why:"An online visa granted before travel is an e-visa."},
+      {t:"Rules compare applicants’ answers with patterns linked to overstays to decide who needs a manual check.", b:2, why:"Screening rules that flag people for extra checks are risk scoring."}
+    ]},
+    {id:"e2u4-l7-x7", type:"spot", q:"A press release announces a new border system. Tap the claims that are problems.", ask:"is a problem with the claim", parts:[
+      {t:"The system compares travellers’ faces with their passport photos,", flag:false, why:"A factual description of what it does."},
+      " ",
+      {t:"so it cannot be biased: it is just mathematics.", flag:true, why:"Systems reflect choices of data, thresholds and goals, and face matching has shown different error rates for different groups."},
+      " ",
+      {t:"An independent audit of error rates by age, sex and skin tone will be published.", flag:false, why:"Good practice: reporting performance for each group shows what an overall figure hides."},
+      " ",
+      {t:"It is 99% accurate, so almost everyone it flags must be a real risk.", flag:true, why:"The base-rate error: when real risks are rare, most people flagged are innocent even with an accurate tool."},
+      " ",
+      {t:"Travellers who are refused can ask for a human review.", flag:false, why:"A route to contest decisions is a widely recommended safeguard."},
+      " ",
+      {t:"No one complained in the first week, which proves it treats everyone fairly.", flag:true, why:"No complaints isn’t evidence of fairness: people may not know a machine was involved, or may fear complaining."}
+    ]}
+   ],
+   apply:{intro:"Look at automated systems in your own life with a sociologist’s eye. Don’t enter personal data into any tool for these tasks, don’t apply for anything, and use only official government websites for border information.", tasks:[
+     {t:"Map one algorithm in your life", how:["Choose one system that makes or shapes decisions about you: a social media feed, a ride or delivery app, a job site, a credit score, a school admissions system.","Read its help pages, terms or “why am I seeing this?” notes.","Answer the five questions: who designed it and for what goal; whose data; who is affected; who checks it; who can contest it.","Note one decision it made about you and how (or whether) you could challenge it."], write:"System, goal and proxy, data, who checks it, how I could contest a decision…"},
+     {t:"Read a travel authorisation’s privacy notice", how:["Open the official page for one country’s e-visa or electronic travel authorisation (for example the UK ETA on gov.uk, the US ESTA, or your own country’s). Beware lookalike sites that charge extra.","Find what data it collects, how long it keeps them, who they are shared with, and how to challenge a refusal.","Compare with a second country’s system.","Note what a traveller can and cannot find out about how decisions are made."], write:"Country, data collected, how long kept, shared with, appeal route, what is unclear…"},
+     {t:"Check an AI chatbot’s answer about border technology", how:["Ask any AI chatbot: “How does the EU Entry/Exit System work, and when did it start?” (or ask about an e-visa system you know).","Pick three factual claims from the answer.","Check each against an official source (the European Commission’s pages, a government site), noting dates.","Note any errors, out-of-date facts or missing viewpoints ({{ai-chatbot-accuracy}})."], write:"The question, three claims, what the official source says, errors or gaps I found…"}
+   ], proof:"Notes with one algorithm in your life analysed with the five questions, a comparison of two official travel-authorisation privacy notices, and three chatbot claims checked against dated official sources."},
+   read:[
+     {book:"soc", where:"Chapter 8 “Media and Technology”: Section 8.4 “Theoretical Perspectives on Media and Technology”", note:"For the lenses applied to technology, including surveillance; Section 18.3 “Work in the United States” covers automation."},
+     {book:"datafem", where:"Chapter 1, “The Power Chapter”", note:"How power shapes data and algorithms, with many examples."},
+     {book:"imis", where:"Chapter 4 “Migration Infrastructures: How Do People Migrate?” (Düvell and Preiss)", note:"Technology as one part of the infrastructure that shapes migration."}
    ]
   }
   ],
@@ -1191,10 +1467,216 @@ ICA.addUnit({
     },
     related:["social-movements","social-institutions","cultural-change","media-technology","demographic-transition","theories-global-inequality"],
     read:[{book:"soc", where:"Section 21.3 “Social Change”"}],
-    sources:[{t:"OpenStax Introduction to Sociology 3e, 21.3 Social Change", url:"https://openstax.org/books/introduction-sociology-3e/pages/21-3-social-change"},{t:"LibreTexts (OpenStax 3e) Social Change", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/21%3A_Social_Movements_and_Social_Change/21.04%3A_Social_Change"}], checked:"2026-11"}
+    sources:[{t:"OpenStax Introduction to Sociology 3e, 21.3 Social Change", url:"https://openstax.org/books/introduction-sociology-3e/pages/21-3-social-change"},{t:"LibreTexts (OpenStax 3e) Social Change", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/21%3A_Social_Movements_and_Social_Change/21.04%3A_Social_Change"}], checked:"2026-11"},
+
+   {id:"life-course", title:"The life course and cumulative advantage", aka:["life-course perspective","linked lives","cumulative disadvantage","structural lag","cohort"], tags:["sociology","ageing","life course"],
+    summary:"How sociologists study lives as they unfold inside history, and why advantages and disadvantages tend to build up with age.",
+    levels:{
+     starter:[
+      "A life is not a fixed ladder of stages that everyone climbs in the same way. The [[life-course-perspective|life-course perspective]] studies how each life unfolds from birth to death inside a particular history, place and society.",
+      "Four principles help: **time and place** (the events people live through), **timing** (the age at which they happen), **linked lives** (other people’s lives shape ours) and **agency** (people make choices within limits).",
+      "A [[cohort]] is a group born in the same years. Members of a cohort meet history at the same age: a recession, a war or a new technology arrives when they are children, or job-seekers, or retired.",
+      {key:"To understand an older person’s situation, ask what happened to them, when, and alongside whom."}
+     ],
+     builder:[
+      "Glen Elder’s *Children of the Great Depression* (1974) is the classic study. He followed Californians born in the early 1920s and found that the crash affected them differently depending on their age and their family’s losses when it hit. Life-course researchers later set out the principles of time and place, timing, linked lives and agency, plus **life-span development**: ageing is a process that lasts from birth to death.",
+      "[[cumulative-advantage|Cumulative advantage and disadvantage]] explains why gaps often widen with age. Robert Merton (1968) described a “Matthew effect” in science: well-known scientists get more credit for similar work. Dale Dannefer (2003) applied the idea to ageing: early advantages in schooling, work and health compound into pensions, savings and longer healthy lives, while early setbacks also pile up.",
+      "Matilda White Riley and colleagues (1994) described **structural lag**: lives have changed faster than institutions, which still assume a three-stage life of education, work and retirement. Peter Laslett’s *A Fresh Map of Life* (1989) named a “third age” of active later life after paid work and before frailty.",
+      {table:[["Effect","Meaning","Example"],["Age effect","Changes linked to growing older","Hearing tends to decline with age"],["Period effect","Changes that hit everyone at one time","A pandemic changes everyone’s work"],["Cohort effect","Differences between people born at different times","People who grew up online use it differently"]]}
+     ],
+     pro:[
+      "Life-course research relies on **longitudinal** data: following the same people over time ([[cohort-study|cohort studies]] and panels). A family of comparable ageing surveys allows cross-country work: the Health and Retirement Study (United States), ELSA (England), SHARE (Europe and Israel), JSTAR (Japan), KLoSA (Republic of Korea), CHARLS (China) and LASI (India).",
+      "A known difficulty is the **age–period–cohort problem**: in any one dataset, age, period and birth cohort are linked (cohort = period − age), so their separate effects cannot be identified without extra assumptions. Good studies state their assumptions.",
+      "Critiques: early life-course models were built on mid-20th-century Western lives with standard sequences of school, stable work, marriage and retirement. Researchers now study **de-standardised** lives, informal work, migration across borders and care-giving, which are the norm for much of the world. Feminist scholars stress that women’s life courses are shaped by unpaid care that standard models treat as “gaps”.",
+      {tip:"When a study compares “the old” and “the young” at one moment, ask whether the difference comes from age, from the period, or from the different histories of two cohorts."}
+     ]
+    },
+    related:["population-ageing-dependency","care-and-pensions","ageism","agents-of-socialization","social-stratification"],
+    read:[{book:"soc", where:"Section 13.2 “The Process of Aging” (LibreTexts 13.3) and Section 5.4 “Socialization Across the Life Course”"}],
+    sources:[{t:"LibreTexts (OpenStax 3e) 13.3 The Process of Aging", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/13%3A_Aging_and_the_Elderly/13.03%3A_The_Process_of_Aging"},{t:"LibreTexts (OpenStax 3e) 13.2 Who Are the Elderly? Aging in Society", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/13%3A_Aging_and_the_Elderly/13.02%3A_Who_Are_the_Elderly_Aging_in_Society"}], checked:"2026-11"},
+
+   {id:"population-ageing-dependency", title:"Population ageing and dependency ratios", aka:["ageing population","old-age dependency ratio","total dependency ratio","super-aged society","demographic ageing"], tags:["sociology","demography","ageing"],
+    summary:"Why populations age, where ageing is fastest, and how to calculate and read dependency ratios with care (figures as of November 2026).",
+    levels:{
+     starter:[
+      "[[population-ageing|Population ageing]] is a rise in the share of older people. It has two main causes: fewer births and longer lives. Migration can speed it up (young people leave) or slow it down (young people arrive).",
+      "It is happening almost everywhere. The UN’s *World Population Prospects 2024* projects that by the late 2070s people aged 65+ (about 2.2 billion) will outnumber children under 18, and that by the mid-2030s people aged 80+ will outnumber babies under one. Global life expectancy at birth was 73.3 years in 2024.",
+      "Japan is the best-known case: its 2025 census counted **29.4%** of people aged 65 or over, a record.",
+      {key:"Ageing is mostly the result of success: fewer children die, and adults live longer."}
+     ],
+     builder:[
+      "A [[dependency-ratio|dependency ratio]] compares “dependent” age groups with the “working-age” group, per 100:",
+      {list:[
+        "[[old-age-dependency-ratio|Old-age]]: people aged 65+ ÷ people aged 15–64 × 100",
+        "Child (young-age): people aged 0–14 ÷ people aged 15–64 × 100",
+        "Total: the sum of the two"
+      ]},
+      {table:[["Place (2024)","Aged 65+","Old-age ratio"],["World","10.2%","15.7"],["Japan","29.8%","50.7"],["European Union","22.0%","34.6"],["Republic of Korea","19.3%","27.5"],["China","14.7%","21.2"],["Latin America and the Caribbean","9.8%","14.5"],["Sub-Saharan Africa","3.2%","5.7"]]},
+      "Figures: World Bank, based on UN *World Population Prospects 2024*. A common convention calls a society **aged** when 14% are 65+ and **super-aged** at 20%; the Republic of Korea’s resident register passed 20% in December 2024.",
+      "Sub-Saharan Africa’s child dependency ratio was about 73 in 2024 and Japan’s about 19, so their total ratios (about 78 and 70) were similar for opposite reasons."
+     ],
+     pro:[
+      "Age-based ratios assume everyone 15–64 supports everyone else. Better measures exist. **Economic dependency** or **support ratios** count workers and consumers; the National Transfer Accounts project (Ronald Lee, Andrew Mason and others) estimates how much each age group earns and consumes. Warren Sanderson and Sergei Scherbov (2010) proposed **prospective age**: counting people as old when their remaining life expectancy falls below a threshold (such as 15 years), so that ageing measures adjust as health improves.",
+      "Read projections carefully. The UN revises *World Population Prospects* every two years and publishes variants (low, medium, high fertility). Census figures, register figures and modelled estimates differ: Japan’s 2025 census gives 29.4% aged 65+, the World Bank’s 2024 estimate 29.8%.",
+      "Language matters too. Metaphors such as “silver tsunami” or “demographic time bomb” present older people as a disaster. Sociologists prefer to name the specific pressures (pension finance, care workforce, rural services) and the choices available (employment, productivity, migration, care systems).",
+      {tip:"With any ageing statistic, check the source, the year, the age cut-offs and whether it is a census count, a register count or a model estimate."}
+     ]
+    },
+    related:["demographic-transition","demography","japan-population-change","care-and-pensions","life-course"],
+    read:[{book:"soc", where:"Section 13.1 “Who Are the Elderly? Aging in Society” (LibreTexts 13.2) and Section 20.1 “Demography and Population”"},{book:"sbj", where:"Chapter 2 “Population”"}],
+    sources:[{t:"UN DESA: World Population Prospects 2024, Key Messages", url:"https://population.un.org/WPP/Publications/Files/WPP2024_Key-Messages.pdf"},{t:"World Bank: Age dependency ratio, old (% of working-age population)", url:"https://data.worldbank.org/indicator/SP.POP.DPND.OL"},{t:"Statistics Bureau of Japan: 2025 Population Census basic results (in Japanese, 29 September 2026)", url:"https://www.stat.go.jp/info/mail/pdf/20260929_no1905.pdf"}], checked:"2026-11"},
+
+   {id:"care-and-pensions", title:"Care and pensions in ageing societies", aka:["long-term care","long-term care insurance","pensions","social pension","filial piety","care diamond"], tags:["sociology","ageing","welfare","institutions"],
+    summary:"How families, markets, states and communities share care and income in later life, with examples from Japan, East Asia, Europe, Latin America and Africa (as of November 2026).",
+    levels:{
+     starter:[
+      "Later life raises two big questions: **who cares** for people who need help with daily life, and **who pays** for living when people stop working?",
+      "Every society shares these jobs between four providers: **families** (mostly women, often unpaid), the **state** (public services and pensions), **markets** (paid carers, private pensions) and **communities** (neighbours, religious and voluntary groups). Shahra Razavi (UNRISD, 2007) drew this as a **care diamond**.",
+      "The balance differs a lot. Japan pays for much care through public [[long-term-care|long-term care]] insurance; in many countries families do almost all of it; in others, migrant care workers fill the gap.",
+      {key:"Care and pensions are institutions. They decide whether long life is lived in security or in hardship."}
+     ],
+     builder:[
+      {table:[["Model","Example","Notes"],["Social insurance for care","Germany (1995), Japan (2000), Republic of Korea (2008)","Contributions fund assessed care at home or in homes"],["Family-based care with legal duties","China (revised law in force 2013), Singapore (Maintenance of Parents Act, 1995)","Builds on [[filial-piety|filial piety]]; states add community services"],["Mostly family care","Much of sub-Saharan Africa and South Asia","Older people are also carers, for example of grandchildren"]]},
+      "Pensions come in three main designs. [[pay-as-you-go|Pay-as-you-go]] schemes use today’s contributions to pay today’s pensioners. **Funded** schemes pay out what was saved and earned. [[social-pension|Social pensions]] are paid from taxes whatever a person’s work history, such as Bolivia’s Renta Dignidad (2008), South Africa’s older persons’ grant and Kenya’s Inua Jamii for people aged 70+.",
+      "Retirement ages are rising in many places. China began raising its statutory retirement ages on 1 January 2025, over 15 years: men from 60 to 63, women from 50 or 55 to 55 or 58. Japan lets people start the basic pension at any age from 60 to 75."
+     ],
+     pro:[
+      "Pension debates turn on **adequacy** (enough to live on), **coverage** (who is included) and **sustainability** (who pays). The World Bank’s *Averting the Old Age Crisis* (1994) promoted multi-pillar systems with funded individual accounts; Chile had introduced such accounts in 1981 and in 2008 added a tax-funded solidarity pension after coverage gaps became clear. The ILO’s Social Protection Floors Recommendation (No. 202, 2012) calls for basic income security in old age for all. The ILO estimates that 52.4% of the world’s people are covered by at least one social protection benefit (*World Social Protection Report 2024–26*).",
+      "Care debates turn on the **care workforce**: low pay, migrant labour and global care chains ({{gender-and-migration}}), and on technology: Japan’s trials of care robots and sensors are welcomed by some as relief for staff and criticised by others as a substitute for human contact.",
+      "Care can also go wrong. WHO estimates that around one in six people aged 60+ experienced some form of abuse in community settings during the past year (fact sheet, June 2024). OpenStax (13.3) discusses elder abuse alongside poverty and ageism.",
+      {tip:"When comparing countries, ask who provides care, who pays, who is left out (often informal workers and women), and what happens when families are small or far away."}
+     ]
+    },
+    related:["population-ageing-dependency","unpaid-care-work","japan-population-change","japan-immigration-policy","work-globalization","ageism"],
+    read:[{book:"sbj", where:"Chapter 15 “Social Security, Health Care, and Public Hygiene”"},{book:"soc", where:"Section 13.3 “Challenges Facing the Elderly” (LibreTexts 13.4)"}],
+    sources:[{t:"ILO: World Social Protection Report 2024–26 in figures", url:"https://www.ilo.org/resource/article/world-social-protection-report-2024-26-figures"},{t:"China Daily: China to gradually raise retirement age (13 September 2024)", url:"https://www.chinadaily.com.cn/a/202409/13/WS66e3deada3103711928a7df9.html"},{t:"WHO fact sheet: Abuse of older people", url:"https://www.who.int/news-room/fact-sheets/detail/abuse-of-older-people"}], checked:"2026-11"},
+
+   {id:"ageism", title:"Ageism and theories of ageing", aka:["age discrimination","disengagement theory","activity theory","continuity theory","age stratification","gerotranscendence"], tags:["sociology","ageing","inequality","theory"],
+    summary:"Stereotyping and discrimination based on age, and the main sociological theories of ageing with their critiques.",
+    levels:{
+     starter:[
+      "[[ageism|Ageism]] is stereotyping (how we think), prejudice (how we feel) and discrimination (how we act) based on age. The US psychiatrist Robert Butler coined the word in the late 1960s.",
+      "The World Health Organization says half the world’s population is ageist against older people. Ageism can be **institutional** (rules that limit jobs or care by age), **interpersonal** (patronising or dismissive talk) or **self-directed** (believing stereotypes about yourself, such as “I’m too old to learn”). It also targets young people.",
+      "WHO’s three strategies against it: policy and law, education, and intergenerational contact.",
+      {key:"Age is a real difference; ageism is treating people as a category instead of as individuals."}
+     ],
+     builder:[
+      {table:[["Lens","Theory","Critique"],["Functionalism","[[disengagement-theory|Disengagement]] (Cumming and Henry, 1961)","Many older people don’t want to withdraw (Hochschild, 1975)"],["Functionalism","[[activity-theory|Activity]] (Havighurst, 1961); continuity (Atchley)","Assumes health and money to stay active"],["Conflict","[[age-stratification|Age stratification]] (Riley, Johnson and Foner, 1972); modernization (Cowgill and Holmes, 1972); exchange (Dowd, 1975)","Modernization is too simple: status varies by class, gender and policy"],["Symbolic interactionism","Subculture of ageing (Rose, 1962); selective optimization with compensation (Baltes and Baltes, 1990); gerotranscendence (Tornstam, 2005)","Can overlook pensions, ageism and other structures"]]},
+      "Feminist scholars add gender: Susan Sontag’s “double standard of aging” (1972) noted that women are judged old earlier, and women’s longer lives and lower lifetime earnings make old-age poverty more common among women in many countries."
+     ],
+     pro:[
+      "Policy ideals have their own debates. John Rowe and Robert Kahn’s **successful ageing** model (1987, 1997) stressed avoiding disease, keeping function and staying engaged; critics argued it can blame people for illness and ignore inequality. WHO’s **active ageing** framework (2002) and the UN Decade of Healthy Ageing (2021–2030) stress the environments and services that let people keep doing what they value.",
+      "Law against age discrimination in work exists in many places, for example the US Age Discrimination in Employment Act (1967) and the EU’s Employment Equality Directive (2000), which covers age. Researchers still find age bias in hiring through field experiments that send matched applications differing only in age.",
+      "Ageism intersects with other inequalities: an older migrant woman with a disability can face barriers that none of these categories explains alone (see {{feminist-theory|intersectionality}}).",
+      {tip:"Check your wording: “older people” or “older adults” is preferred over “the elderly” in many style guides, and describing a person by age only when it matters avoids stereotyping."}
+     ]
+    },
+    related:["life-course","care-and-pensions","prejudice-discrimination","feminist-theory","population-ageing-dependency"],
+    read:[{book:"soc", where:"Section 13.3 “Challenges Facing the Elderly” and Section 13.4 “Theoretical Perspectives on Aging” (LibreTexts 13.4–13.5)"}],
+    sources:[{t:"WHO Q&A: Ageing: Ageism", url:"https://www.who.int/news-room/questions-and-answers/item/ageing-ageism"},{t:"LibreTexts (OpenStax 3e) 13.5 Theoretical Perspectives on Aging", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/13%3A_Aging_and_the_Elderly/13.05%3A_Theoretical_Perspectives_on_Aging"},{t:"LibreTexts (OpenStax 3e) 13.4 Challenges Facing the Elderly", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/13%3A_Aging_and_the_Elderly/13.04%3A_Challenges_Facing_the_Elderly"}], checked:"2026-11"},
+
+   {id:"algorithms-society", title:"Algorithms and AI as social systems", aka:["sociology of AI","sociology of algorithms","automated decision-making","feedback loops","algorithmic fairness"], tags:["sociology","technology","AI","inequality"],
+    summary:"Why sociologists study algorithms and AI as systems made and used by people, how feedback loops and proxies create bias, and why fairness involves value choices.",
+    levels:{
+     starter:[
+      "An algorithm is a set of steps that turns an input into an output. Many “AI” systems learn their steps from past data instead of being given every rule.",
+      "Sociologists treat these systems as **social**, not just technical. People choose the goal, pick the data, set the thresholds and decide what happens to the people scored. So ask five questions: who designed it and for what goal, whose data, who is affected, who checks it, and who can contest it?",
+      "A [[feedback-loop|feedback loop]] forms when a system’s decisions become the data it learns from next, so an early bias can grow.",
+      {key:"An automated decision is still a human decision, made earlier, by someone else, at scale."}
+     ],
+     builder:[
+      "Classic studies: Tarleton Gillespie (2014) on how algorithms define “relevance”; Nick Seaver (2017) on algorithms as culture; Cathy O’Neil’s *Weapons of Math Destruction* (2016); Virginia Eubanks’s *Automating Inequality* (2018); Safiya Umoja Noble’s *Algorithms of Oppression* (2018); Ruha Benjamin’s *Race After Technology* (2019).",
+      {table:[["Case","Region","What it shows"],["Childcare benefits scandal (government resigned January 2021)","Netherlands","Risk scoring, nationality data and harsh rules combined; €2.75 million fine (December 2021)"],["“Robodebt” (2016–2019; Royal Commission 2023)","Australia","Income averaging created false debts and shifted the burden of proof"],["Exam grades by algorithm (2020)","England","Schools’ past results overrode individual pupils; the algorithm’s grades were dropped"],["Court risk scores (ProPublica, 2016)","United States","Different fairness measures gave opposite verdicts"],["Visa streaming tool (paused August 2020)","United Kingdom","A feedback loop through “adverse events” by nationality"]]},
+      "Sources of bias include historical data, [[proxy-variable|proxies]], unrepresentative data and feedback loops ({{data-power}})."
+     ],
+     pro:[
+      "**Fairness trade-offs.** Kleinberg, Mullainathan and Raghavan (2016) and Chouldechova (2017) showed that when groups have different base rates, a risk score generally cannot satisfy calibration (equal meaning of a score across groups) and equal false-positive and false-negative rates at once. Choosing among them is a normative choice that affected people should have a say in.",
+      "**The case for algorithms.** Kleinberg and colleagues (2018, *Quarterly Journal of Economics*) estimated that a model could have reduced jailing in New York bail decisions without raising crime, because human judges are also inconsistent and biased. Many researchers therefore argue for **better-governed** algorithms, not none.",
+      "**Governance.** The EU GDPR (Article 22) limits decisions based solely on automated processing that have legal or similarly significant effects. The EU AI Act classes uses in essential public services and benefits, employment, education, law enforcement and migration as high-risk ({{ai-governance}}). Common tools include impact assessments, model documentation, per-group audits, human review and appeal.",
+      "**AI literacy across the Academy.** This entry connects with checking chatbot answers ({{ai-chatbot-accuracy}}), bias in data ({{data-power}}) and AI governance ({{ai-governance}}): together they cover UNESCO’s themes of a human-centred mindset, ethics, and how AI systems are designed.",
+      {tip:"Ask for the error rates **by group** and the **base rate** before believing any claim that a system is “95% accurate”."}
+     ]
+    },
+    related:["data-power","ai-governance","media-technology","surveillance-society","border-technologies","platform-labour"],
+    read:[{book:"datafem", where:"Chapter 1, “The Power Chapter”"},{book:"soc", where:"Section 8.4 “Theoretical Perspectives on Media and Technology”"}],
+    sources:[{t:"UK Human Rights Blog: Government scraps immigration “streaming tool” before judicial review (6 August 2020)", url:"https://ukhumanrightsblog.com/2020/08/06/government-scraps-immigration-streaming-tool-before-judicial-review"},{t:"IAPP: Dutch DPA fines tax authority €2.75M (December 2021)", url:"https://iapp.org/news/a/dutch-dpa-fines-tax-authority-2-75m-euros"},{t:"Prime Minister of Australia: Final report of the Royal Commission into the Robodebt Scheme (7 July 2023)", url:"https://www.pm.gov.au/media/final-report-royal-commission-robodebt-scheme"}], checked:"2026-11"},
+
+   {id:"platform-labour", title:"Platform labour and algorithmic management", aka:["gig economy","platform work","gig work","ghost work","algorithmic management","ILO Convention No. 193","Platform Work Directive"], tags:["sociology","work","technology","AI"],
+    summary:"How digital platforms organise and manage work, the debate over flexibility and precarity, and the new EU and ILO rules (as of November 2026).",
+    levels:{
+     starter:[
+      "[[platform-work|Platform work]] is paid work found and organised through an app or website: ride-hailing, food delivery, cleaning, care, and online tasks such as translation, design or labelling data for AI.",
+      "Instead of a human boss, an app often assigns tasks, sets the price, tracks speed and ratings, and can suspend a worker. This is [[algorithmic-management|algorithmic management]].",
+      "Platforms and many workers value the **flexibility** to choose hours and the easy entry. Many workers and researchers also report **precarity**: unpredictable pay, no sick pay or pension, and decisions no one explains.",
+      {key:"The big question is who carries the risks of the work: the platform, the worker or the state."}
+     ],
+     builder:[
+      "Mary Gray and Siddharth Suri’s *Ghost Work* (2019) showed how much “automated” technology depends on hidden human workers who label, check and moderate content: [[ghost-work|ghost work]]. Alex Rosenblat and Luke Stark (2016) described **information asymmetries** between Uber’s app and its drivers.",
+      "Workers’ legal status is disputed in many countries. The UK Supreme Court ruled in February 2021 that Uber drivers were “workers” entitled to minimum wage and holiday pay. Other courts and laws have reached different conclusions, and many platform workers worldwide work informally ({{work-globalization}}).",
+      {table:[["Rule","Date","Main points"],["EU Platform Work Directive","Adopted 2024; to apply by 2 December 2026","Presumption of employment where facts show control; human oversight of automated monitoring and decisions"],["ILO Convention No. 193, Decent Work in the Platform Economy","Adopted 12 June 2026 (406 for, 8 against, 36 abstentions)","Rights at work for platform workers whatever their status; transparency on automated systems; human review of decisions such as deactivation"]]}
+     ],
+     pro:[
+      "Positions in the ILO negotiations: workers’ representatives and most governments pushed for stronger protections; employers’ representatives and a few governments argued for more flexible, less prescriptive rules (Human Rights Watch’s account). A planned Recommendation with detailed guidance was not finished in time. A convention binds only states that ratify it, so its effect depends on ratification and national law.",
+      "Research themes: platform work as an entry route for migrants (often with fewer alternatives); gender differences in care and domestic platforms; geographic arbitrage in online work, where workers in lower-income countries compete for global tasks; and collective action, from WhatsApp groups of drivers to new unions and strikes.",
+      "Lenses: functionalists may stress matching supply and demand efficiently; conflict theorists stress control and the shifting of risk onto workers; interactionists study how ratings shape workers’ emotional labour and self-presentation.",
+      {tip:"When you read a statistic about “the gig economy”, check what it counts: main jobs or side income, location-based or online work, one country or many."}
+     ]
+    },
+    related:["work-globalization","algorithms-society","social-movements","gender-and-migration"],
+    read:[{book:"soc", where:"Section 18.2 “Globalization and the Economy” and Section 18.3 “Work in the United States” (automation)"}],
+    sources:[{t:"ILO: International Labour Conference ends with adoption of first Convention on decent work in the platform economy (June 2026)", url:"https://www.ilo.org/resource/news/ilc/ilc114/international-labour-conference-ends-adoption-first-convention-decent-work"},{t:"Human Rights Watch: ILO adopts landmark treaty on gig work (12 June 2026)", url:"https://www.hrw.org/news/2026/06/12/ilo-adopts-landmark-treaty-on-gig-work"},{t:"EUR-Lex: Directive (EU) 2024/2831 on improving working conditions in platform work", url:"https://eur-lex.europa.eu/eli/dir/2024/2831/oj"}], checked:"2026-11"},
+
+   {id:"surveillance-society", title:"Surveillance in sociology", aka:["panopticon","social sorting","surveillance capitalism","surveillance studies","data double"], tags:["sociology","technology","power","privacy"],
+    summary:"How sociologists explain surveillance, from Foucault’s panopticon to social sorting and surveillance capitalism, with the main critiques.",
+    levels:{
+     starter:[
+      "Surveillance means collecting and using personal data to manage or influence people. It ranges from a teacher taking a register to cameras, loyalty cards, phone tracking and border databases.",
+      "Sociologists ask who watches whom, for what purpose, with what effects, and who can refuse.",
+      "A [[panopticon]] is a prison design by Jeremy Bentham in which guards in a central tower can see every cell, but prisoners can’t tell when they are watched. Michel Foucault used it as a picture of modern discipline: people behave as if always watched.",
+      {key:"Surveillance doesn’t only watch people; it sorts them into categories that are treated differently."}
+     ],
+     builder:[
+      {table:[["Thinker","Work","Idea"],["Michel Foucault","*Discipline and Punish* (1975)","Institutions produce self-discipline through possible visibility"],["David Lyon","*Surveillance as Social Sorting* (2003)","Data sort people into groups with different chances and treatment"],["Shoshana Zuboff","*The Age of Surveillance Capitalism* (2019)","Firms turn behavioural data into predictions sold for profit"],["Simone Browne","*Dark Matters* (2015)","Surveillance of Black people runs from slavery to modern biometrics"]]},
+      "Lenses: functionalism stresses safety and efficiency; conflict theory stresses power and [[social-sorting|social sorting]]; symbolic interactionism studies how people adapt, perform for cameras, resist or “watch back”; feminist theory studies who is watched at home, at work and online."
+     ],
+     pro:[
+      "Critiques: Evgeny Morozov argued that [[surveillance-capitalism|surveillance capitalism]] is better seen as ordinary capitalism than as a new system; others argue that a focus on companies underplays state surveillance, and that the panopticon model misses today’s voluntary, participatory sharing on social media.",
+      "Kevin Haggerty and Richard Ericson (2000) described a “surveillant assemblage” that combines many data flows into **data doubles**: profiles that stand in for us in decisions about credit, travel or policing.",
+      "Law and rights: human rights bodies ask whether surveillance is lawful, necessary and proportionate, with oversight ({{digital-rights-surveillance}}). The EU AI Act prohibits some uses outright, such as most real-time remote biometric identification in public places for policing, with narrow exceptions ({{ai-governance}}).",
+      {tip:"Describe surveillance neutrally: name the purpose claimed, the data collected, the safeguards and the people affected, before judging it."}
+     ]
+    },
+    related:["digital-rights-surveillance","algorithms-society","border-technologies","media-technology","conflict-theory"],
+    read:[{book:"soc", where:"Section 8.4 “Theoretical Perspectives on Media and Technology”"}],
+    sources:[{t:"LibreTexts (OpenStax 3e) Theoretical Perspectives on Media and Technology", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/08%3A_Media_and_Technology/8.05%3A_Theoretical_Perspectives_on_Media_and_Technology"}], checked:"2026-11"},
+
+   {id:"border-technologies", title:"Border technologies: biometrics, travel authorisations and risk scoring", aka:["digital borders","smart borders","Entry/Exit System","EES","ETIAS","Eurodac","ETA","ESTA","e-visa","biometric border"], tags:["migration studies","borders","technology","AI"],
+    summary:"The databases, online permissions and risk tools that move border control before, at and after the frontier, with the main arguments for and against them (as of November 2026).",
+    levels:{
+     starter:[
+      "Border control no longer happens only at the frontier. Before travel, many people need an **e-visa** or an electronic [[travel-authorisation|travel authorisation]]; airlines check permission at check-in; at the border, fingerprints and faces may be recorded; exit dates are logged.",
+      "[[biometrics|Biometrics]] are body measurements such as fingerprints, face images and iris patterns used to identify people. [[risk-scoring|Risk scoring]] ranks people for extra checks.",
+      "Supporters say these tools make borders faster and safer. Critics worry about discrimination, privacy, errors and people’s ability to challenge decisions.",
+      {key:"The border has moved: it now starts on a screen far from the frontier (Ayelet Shachar’s “shifting border”)."}
+     ],
+     builder:[
+      {table:[["System","What","Status (November 2026)"],["EU Entry/Exit System (EES)","Records non-EU short-stay visitors’ passport data, fingerprints, face image and entry and exit dates; replaces passport stamping","Rolled out from October 2025; fully operational from 10 April 2026"],["Eurodac (EU)","Biometric database of asylum applicants and people apprehended crossing irregularly; set up under a 2000 regulation","Revised under the Pact on Migration and Asylum, applying from June 2026: adds face images and lowers the age from 14 to 6"],["ETIAS (EU)","Online travel authorisation for visa-exempt visitors, screened against databases and rules","Planned; not yet operating when checked. EU governments expect 2027; no exact date set"],["Travel authorisations elsewhere","Australia’s ETA (1996), the US ESTA, the UK ETA (£20)","In operation"],["UNHCR biometric registration","Identifies refugees for protection and aid","In use in many operations"]]},
+      "Within the EU AI Act, many AI uses in migration, asylum and border control are high-risk; AI systems that are components of the EU’s large-scale border and migration databases, if in use before 2 August 2027, have until 31 December 2030 to comply."
+     ],
+     pro:[
+      "**Arguments for**, made by governments, the European Commission and border agencies: faster crossings for most travellers; detection of identity fraud, document fraud and overstays; better data for planning; officers freed to focus on real risks. UNHCR argues that biometric registration protects refugees’ identities and makes aid delivery fairer.",
+      "**Arguments against or for caution**: Tendayi Achiume’s 2020 report as UN Special Rapporteur on racism warned that digital border technologies can reproduce racial and xenophobic discrimination and treat migrants as testing grounds. Petra Molnar (*The Walls Have Eyes*, 2024) documents surveillance on migration routes. Human Rights Watch (2021) criticised the sharing of Rohingya refugees’ data with Myanmar; UNHCR said consent had been sought. Scholars such as Dennis Broeders (2007) and Louise Amoore (2006) analysed “digital” and “biometric” borders as a form of [[securitization|securitisation]].",
+      "**Base rates**: when real threats are rare, even an accurate screening tool flags mostly innocent people, so the cost of false alarms falls on many travellers.",
+      "**Common ground**: impact assessments before deployment, independent audits with error rates by group, data minimisation, clear retention limits, and a real route to appeal.",
+      {tip:"Use official sites only: lookalike websites often charge extra for e-visas and travel authorisations."}
+     ]
+    },
+    related:["borders-and-sovereignty","externalisation-and-detention","refugees-and-displacement","surveillance-society","algorithms-society","ai-governance"],
+    read:[{book:"imis", where:"Chapter 4 “Migration Infrastructures: How Do People Migrate?” (Düvell and Preiss)"},{book:"imis", where:"Chapter 20 “Migration Governance”"}],
+    sources:[{t:"European Commission: The Entry/Exit System fully operational (10 April 2026)", url:"https://commission.europa.eu/news-and-media/news/more-secure-efficient-and-convenient-way-travelling-non-eu-nationals-2026-04-10_en"},{t:"European Parliament: Eurodac – better identification of asylum seekers and irregular migrants (April 2024)", url:"https://www.europarl.europa.eu/news/en/press-room/20240410IPR20334"},{t:"Government of Poland: Introduction of ETIAS in 2027 (24 September 2026)", url:"https://www.gov.pl/web/belgium/introduction-of-etias-in-2027-upcoming-changes-to-travel-requirements-for-the-schengen-area-and-cyprus"},{t:"UN Digital Library: Report of the Special Rapporteur on racism, digital technologies in border and immigration enforcement (A/75/590, 2020)", url:"https://digitallibrary.un.org/record/3893019"}], checked:"2026-11"}
   ],
   terms:[
-   {id:"social-institution", term:"Social institution", def:"A lasting pattern of roles, rules and organizations that a society builds to meet a basic need, such as the family, education, religion, government, the economy, health care or the media.", codex:"social-institutions"},
+   {id:"social-institution", term:"Social institution", def:"A lasting pattern of roles, rules and organizations that a society builds to meet a basic need. Examples are the family, education, religion, government, the economy, health care and the media.", codex:"social-institutions"},
    {id:"family", term:"Family", def:"A socially recognized group joined by blood, marriage or adoption that shares emotional ties and acts as an economic unit. Who counts as family is set by law and custom.", codex:"family"},
    {id:"nuclear-family", term:"Nuclear family", def:"Parents and their children living in one household, without other relatives.", codex:"family"},
    {id:"extended-family", term:"Extended family", def:"A household that includes at least one parent and child plus other relatives, such as grandparents, aunts, uncles or cousins.", codex:"family"},
@@ -1206,7 +1688,7 @@ ICA.addUnit({
    {id:"polygyny", term:"Polygyny", def:"A form of marriage in which one man has more than one wife at the same time. The more common form of polygamy.", codex:"family"},
    {id:"polyandry", term:"Polyandry", def:"A form of marriage in which one woman has more than one husband at the same time. Rare; best known from parts of the Himalayas.", codex:"family"},
    {id:"hidden-curriculum", term:"Hidden curriculum", def:"The unofficial lessons pupils learn from how school is organized, such as obeying bells, waiting their turn and accepting authority.", codex:"education"},
-   {id:"credentialism", term:"Credentialism", def:"Relying heavily on degrees and certificates as proof that someone can do a job, so required qualifications can rise faster than the real skills needed.", codex:"education"},
+   {id:"credentialism", term:"Credentialism", def:"Relying heavily on degrees and certificates as proof that someone can do a job. Required qualifications can then rise faster than the real skills needed.", codex:"education"},
    {id:"tracking", term:"Tracking", def:"Placing pupils in different groups, classes or schools by measured ability (also called streaming or setting). Critics say it can lock in early inequalities.", codex:"education"},
    {id:"cultural-capital", term:"Cultural capital", def:"Familiarity with the knowledge, speech, tastes and habits a society’s elite values and its schools reward. Pierre Bourdieu’s concept.", codex:"education"},
    {id:"religion", term:"Religion", def:"A system of beliefs, values and practices concerning what people hold to be sacred or spiritually significant.", codex:"religion"},
@@ -1232,13 +1714,13 @@ ICA.addUnit({
    {id:"social-epidemiology", term:"Social epidemiology", def:"The study of the causes and distribution of diseases across social groups.", codex:"health-sociology"},
    {id:"social-determinants", term:"Social determinants of health", def:"“The conditions in which people are born, grow, work, live and age” (WHO), such as income, education, housing, food and working conditions.", codex:"health-sociology"},
    {id:"medicalization", term:"Medicalization", def:"The process by which things once seen as bad behaviour or a normal part of life are redefined as illnesses needing medical treatment.", codex:"health-sociology"},
-   {id:"sick-role", term:"Sick role", def:"Talcott Parsons’s idea of the expectations placed on sick people: excused from duties and not blamed, but expected to try to get well and seek medical help.", codex:"health-sociology"},
+   {id:"sick-role", term:"Sick role", def:"Talcott Parsons’s idea of the expectations placed on sick people. They are excused from duties and not blamed, but expected to try to get well and seek medical help.", codex:"health-sociology"},
    {id:"demography", term:"Demography", def:"The study of population: its size, composition and change through births, deaths and migration.", codex:"demography"},
    {id:"crude-rate", term:"Crude rate", def:"The number of events (such as births or deaths) in a year per 1,000 people in the population: events ÷ population × 1,000. “Crude” because it ignores age structure.", codex:"demography"},
-   {id:"fertility-rate", term:"Fertility rate", def:"A measure of the number of children born in a population, often as births per 1,000 people per year (crude birth rate) or average children per woman (total fertility rate).", codex:"demography"},
+   {id:"fertility-rate", term:"Fertility rate", def:"A measure of the number of children born in a population. It is often given as births per 1,000 people per year (crude birth rate) or average children per woman (total fertility rate).", codex:"demography"},
    {id:"mortality-rate", term:"Mortality rate", def:"A measure of how many people in a population die, often as deaths per 1,000 people per year (crude death rate).", codex:"demography"},
    {id:"migration", term:"Migration", def:"The movement of people from one place to another to live, either within a country (internal) or across borders (international), voluntarily or by force.", codex:"demography"},
-   {id:"push-pull", term:"Push and pull factors", def:"Conditions that drive people away from a place (push, such as conflict or lack of jobs) and attract them to another (pull, such as work or safety).", codex:"demography"},
+   {id:"push-pull", term:"Push and pull factors", def:"Conditions that drive people away from a place and attract them to another. Push factors include conflict or lack of jobs; pull factors include work or safety.", codex:"demography"},
    {id:"demographic-transition", term:"Demographic transition", def:"A model of how populations move from high birth and death rates to low ones as societies develop, with rapid growth in between.", codex:"demographic-transition"},
    {id:"malthusian-theory", term:"Malthusian theory", def:"Thomas Malthus’s 1798 argument that population grows faster than food, so famine, disease and war (or later marriage and fewer births) will hold it in check.", codex:"population-debates"},
    {id:"cornucopian-theory", term:"Cornucopian theory", def:"The view that human ingenuity will create the resources a growing population needs.", codex:"population-debates"},
@@ -1249,7 +1731,7 @@ ICA.addUnit({
    {id:"environmental-racism", term:"Environmental racism", def:"The placing of a disproportionate share of environmental hazards, such as toxic waste and polluting industry, in communities of colour and low-income communities.", codex:"environmental-sociology"},
    {id:"digital-divide", term:"Digital divide", def:"Unequal access to, skills with and benefits from digital technology, along lines such as income, class, race, gender and geography.", codex:"digital-divide"},
    {id:"knowledge-gap", term:"Knowledge gap", def:"The gap in information that builds up when some groups grow up without access to technology.", codex:"digital-divide"},
-   {id:"gatekeeping", term:"Gatekeeping", def:"The sorting process by which a huge number of possible messages is filtered and shaped into the few that reach the public, by editors, owners or algorithms.", codex:"media-technology"},
+   {id:"gatekeeping", term:"Gatekeeping", def:"The sorting process by which a huge number of possible messages is filtered and shaped into the few that reach the public. Editors, owners or algorithms do the sorting.", codex:"media-technology"},
    {id:"agenda-setting", term:"Agenda-setting", def:"The media’s influence on which issues people think are important: less what to think than what to think about.", codex:"media-technology"},
    {id:"media-consolidation", term:"Media consolidation", def:"The process by which fewer and fewer owners control most media outlets.", codex:"media-technology"},
    {id:"social-movement", term:"Social movement", def:"A purposeful, organized group working towards a shared social goal, or resisting a change.", codex:"social-movements"},
@@ -1257,7 +1739,32 @@ ICA.addUnit({
    {id:"framing", term:"Framing", def:"How a movement interprets an issue to win support: diagnostic (the problem and who’s to blame), prognostic (the solution) and motivational (the call to action).", codex:"social-movements"},
    {id:"new-social-movements", term:"New social movements", def:"Movements since the 1960s, such as environmental, peace and identity-based movements, that focus on culture, identity and quality of life more than economic class.", codex:"social-movements"},
    {id:"social-change", term:"Social change", def:"Change in society brought about by social movements and by outside forces such as technology, population shifts or the environment.", codex:"social-change"},
-   {id:"modernization", term:"Modernization", def:"The process that increases specialization and differentiation in a society, often measured by technology and industry. Treating richer countries as the model carries bias.", codex:"social-change"}
+   {id:"modernization", term:"Modernization", def:"The process that increases specialization and differentiation in a society, often measured by technology and industry. Treating richer countries as the model carries bias.", codex:"social-change"},
+   {id:"gerontology", term:"Gerontology", def:"The study of ageing and of the challenges people meet as they grow older. Social gerontology studies its social side.", codex:"life-course"},
+   {id:"cohort", term:"Cohort", def:"A group of people who share a demographic trait, usually being born in the same years, so they meet historical events at the same ages.", codex:"life-course"},
+   {id:"life-course-perspective", term:"Life-course perspective", def:"An approach that studies how lives unfold from birth to death within history and social structure, using ideas such as timing, linked lives and agency.", codex:"life-course"},
+   {id:"cumulative-advantage", term:"Cumulative advantage and disadvantage", def:"The way early advantages or setbacks compound over a lifetime, so gaps between people often widen with age.", codex:"life-course"},
+   {id:"dependency-ratio", term:"Dependency ratio", def:"The number of people in “dependent” age groups (usually 0–14 and 65+) per 100 people aged 15–64. OpenStax uses a labour-force version.", codex:"population-ageing-dependency"},
+   {id:"old-age-dependency-ratio", term:"Old-age dependency ratio", def:"People aged 65 and over per 100 people aged 15–64.", codex:"population-ageing-dependency"},
+   {id:"long-term-care", term:"Long-term care", def:"Help over a long period with everyday activities such as washing, dressing, eating or moving, given at home or in a care home, by family or by paid carers.", codex:"care-and-pensions"},
+   {id:"filial-piety", term:"Filial piety", def:"Respect, obedience and care owed to one’s parents and ancestors, a value strongly associated with Confucian traditions in East Asia.", codex:"care-and-pensions"},
+   {id:"pay-as-you-go", term:"Pay-as-you-go pension", def:"A pension system in which today’s workers’ contributions and taxes pay today’s pensioners, rather than each person’s own savings.", codex:"care-and-pensions"},
+   {id:"social-pension", term:"Social pension", def:"A pension paid from taxes to older people whatever their work history (sometimes only to those with low incomes). Also called a non-contributory pension.", codex:"care-and-pensions"},
+   {id:"ageism", term:"Ageism", def:"Stereotyping, prejudice and discrimination based on age, against older or younger people, by institutions, by other people or by oneself.", codex:"ageism"},
+   {id:"disengagement-theory", term:"Disengagement theory", def:"A functionalist theory (Cumming and Henry, 1961) that older people naturally withdraw from social roles so that younger people can take them over. Widely criticised.", codex:"ageism"},
+   {id:"activity-theory", term:"Activity theory", def:"The view (Havighurst, 1961) that older people who stay active and socially involved tend to be happier.", codex:"ageism"},
+   {id:"age-stratification", term:"Age stratification theory", def:"A conflict-perspective theory (Riley, Johnson and Foner, 1972) that age groups, like classes, have unequal access to a society’s resources.", codex:"ageism"},
+   {id:"feedback-loop", term:"Feedback loop", def:"When a system’s outputs become its future inputs, for example when a model’s decisions create the records it later learns from, so early biases can grow.", codex:"algorithms-society"},
+   {id:"automated-decision", term:"Automated decision-making", def:"Decisions about people made by computer systems with little or no human involvement, such as scoring applications or flagging claims.", codex:"algorithms-society"},
+   {id:"platform-work", term:"Platform work", def:"Paid work found and organised through a digital platform, such as ride-hailing, delivery, cleaning or online tasks. Also called gig work.", codex:"platform-labour"},
+   {id:"ghost-work", term:"Ghost work", def:"Mary Gray and Siddharth Suri’s term (2019) for the hidden human labour, such as labelling and checking data, behind services that look automated.", codex:"platform-labour"},
+   {id:"algorithmic-management", term:"Algorithmic management", def:"Using software to assign, monitor, rate and discipline workers, for example an app that sets prices and can suspend drivers.", codex:"platform-labour"},
+   {id:"panopticon", term:"Panopticon", def:"Jeremy Bentham’s prison design in which inmates can always be seen but never know when; Foucault used it as a picture of modern self-discipline.", codex:"surveillance-society"},
+   {id:"social-sorting", term:"Social sorting", def:"David Lyon’s idea that surveillance places people into categories, such as low- and high-risk, that bring different treatment and chances.", codex:"surveillance-society"},
+   {id:"surveillance-capitalism", term:"Surveillance capitalism", def:"Shoshana Zuboff’s term (2019) for business models that turn data about people’s behaviour into predictions sold for profit. A debated idea.", codex:"surveillance-society"},
+   {id:"biometrics", term:"Biometrics", def:"Measurements of the body, such as fingerprints, face images or iris patterns, used to identify people automatically.", codex:"border-technologies"},
+   {id:"travel-authorisation", term:"Electronic travel authorisation", def:"Online permission to travel that visa-exempt visitors must get before boarding, such as the UK ETA or the US ESTA. It doesn’t guarantee entry.", codex:"border-technologies"},
+   {id:"risk-scoring", term:"Risk scoring", def:"Using rules or models to give people a score or category (for example red, amber, green) that decides who gets extra checks.", codex:"border-technologies"}
   ],
   bank:[
    /* ---- Lesson 1 ---- */
@@ -1484,7 +1991,7 @@ ICA.addUnit({
      {t:"It includes migration.", why:"Mortality rates don’t include migration."}
    ]},
 
-   /* ---- Lesson 5 ---- */
+   /* ---- Lesson 6 (e2u4-l5) ---- */
    {id:"e2u4-q37", lesson:"e2u4-l5", level:1, q:"What is gatekeeping in the sociology of media?", options:[
      {t:"Filtering which messages reach the public", ok:true, why:"It is the sorting process that reduces and shapes many possible messages into the few that reach the public. Editors, owners and algorithms act as gatekeepers deciding what gets through."},
      {t:"Blocking children from adult websites", why:"That’s parental control, not the sociological concept."},
@@ -1538,6 +2045,130 @@ ICA.addUnit({
      {t:"Social media had nothing to do with it.", why:"Researchers found social media helped share information and coordinate, so dismissing it is also too simple."},
      {t:"It’s true, because the protests happened after social media was invented.", why:"Timing alone doesn’t prove causation."},
      {t:"Only charismatic leaders cause social change.", why:"That’s another single-cause claim; many of these uprisings were noted for loose, decentralized leadership."}
+   ]},
+
+   /* ---- Lesson 5 (e2u4-l6) ---- */
+   {id:"e2u4-q46", lesson:"e2u4-l6", level:1, q:"A country’s old-age dependency ratio is 50. What does that mean?", options:[
+     {t:"There are 50 people aged 65+ for every 100 aged 15–64.", ok:true, why:"Right. The old-age ratio divides people aged 65+ by people aged 15–64 and multiplies by 100."},
+     {t:"Half of the whole population is aged 65 or over.", why:"That would be a 50% share of the total population. The ratio compares older people only with the working-age group."},
+     {t:"There are 50 people aged 65+ for every 100 children under 15.", why:"The ratio compares older people with people aged 15–64, not with children."},
+     {t:"Half of all older people depend on others for daily care.", why:"The ratio is about age groups only. It says nothing about who needs care or who works."}
+   ]},
+   {id:"e2u4-q47", lesson:"e2u4-l6", level:1, q:"In the life-course perspective, what does “linked lives” mean?", options:[
+     {t:"Events in one person’s life change the lives of others.", ok:true, why:"Lives are interdependent: a parent’s migration, a partner’s illness or a child’s schooling reshapes other family members’ lives."},
+     {t:"Every generation repeats the same life stages as the last.", why:"The life-course perspective stresses that cohorts live through different histories, so lives are not simply repeated."},
+     {t:"People born in the same year have identical experiences.", why:"A cohort shares historical timing, but class, gender, place and migration make experiences very different."},
+     {t:"Lives move through fixed stages from childhood to old age.", why:"That is the older idea of a fixed life cycle, which the life-course perspective moved away from."}
+   ]},
+   {id:"e2u4-q48", lesson:"e2u4-l6", level:2, q:"Japan’s 2025 census counted 29.4% of people aged 65+ and 10.9% under 15. Roughly what was the old-age dependency ratio?", options:[
+     {t:"About 49 per 100 people aged 15–64", ok:true, why:"100 − 29.4 − 10.9 = 59.7% aged 15–64, and 29.4 ÷ 59.7 × 100 ≈ 49."},
+     {t:"About 29 per 100 people aged 15–64", why:"29.4 is the share of the whole population, not the ratio to the working-age group."},
+     {t:"About 68 per 100 people aged 15–64", why:"That is the total dependency ratio, which also counts children under 15."},
+     {t:"About 270 per 100 children under 15", why:"Comparing older people with children (29.4 ÷ 10.9) isn’t a dependency ratio."}
+   ]},
+   {id:"e2u4-q49", lesson:"e2u4-l6", level:3, q:"In 2024, sub-Saharan Africa and Japan had fairly similar total dependency ratios (about 78 and 70 per 100). What does this similarity hide?", options:[
+     {t:"Most dependants are children in one and older people in the other.", ok:true, why:"Sub-Saharan Africa’s child ratio was about 73; Japan’s old-age ratio was about 51. They need very different institutions."},
+     {t:"Both regions have the same share of people aged 65 and over.", why:"Far from it: about 3% in sub-Saharan Africa against about 30% in Japan."},
+     {t:"Both regions have the same pension and long-term care systems.", why:"The ratios say nothing about institutions, which differ greatly between them."},
+     {t:"Neither region has any people of working age who are unemployed.", why:"Dependency ratios use age groups only, so they can’t tell you who is employed."}
+   ]},
+   {id:"e2u4-q50", lesson:"e2u4-l6", level:1, q:"Which statement matches the UN’s *World Population Prospects 2024*?", options:[
+     {t:"By the late 2070s, people aged 65+ are projected to outnumber children under 18.", ok:true, why:"The UN projects about 2.2 billion people aged 65+ by the late 2070s, more than all children under 18."},
+     {t:"Population ageing is projected to happen only in Europe and Japan.", why:"Ageing is happening in most regions, including many middle-income countries."},
+     {t:"Global life expectancy at birth fell below 60 years in 2024.", why:"The UN estimates it reached 73.3 years in 2024."},
+     {t:"Sub-Saharan Africa is projected to remain the oldest world region.", why:"Sub-Saharan Africa is the youngest region: only about 3% were 65+ in 2024."}
+   ]},
+   {id:"e2u4-q51", lesson:"e2u4-l6", level:2, q:"Bolivia’s Renta Dignidad pays older people a monthly amount from public funds, whatever their work history. What kind of pension is this?", options:[
+     {t:"A social (non-contributory) pension", ok:true, why:"It is paid from taxes and public revenue, not from each person’s contributions, so it can reach people who worked informally."},
+     {t:"A pay-as-you-go employees’ pension", why:"Pay-as-you-go employees’ pensions pay people who contributed through formal jobs."},
+     {t:"A funded individual savings account", why:"Funded accounts pay out what each person saved and earned; Renta Dignidad doesn’t depend on savings."},
+     {t:"A private long-term care insurance policy", why:"Long-term care insurance pays for care services, not a regular income in old age."}
+   ]},
+   {id:"e2u4-q52", lesson:"e2u4-l6", level:3, q:"A country’s pensions are pay-as-you-go. Over 20 years its old-age dependency ratio rises from 30 to 50. Which pressure follows most directly?", options:[
+     {t:"Each pensioner is supported by fewer contributors.", ok:true, why:"In pay-as-you-go systems today’s workers fund today’s pensioners, so contributions, benefits, retirement ages or tax funding must adjust."},
+     {t:"Returns on workers’ individual investment accounts fall.", why:"Pay-as-you-go schemes don’t rely on individual investment accounts; that describes funded schemes."},
+     {t:"Informal workers automatically start receiving pensions.", why:"An ageing population doesn’t extend coverage; informal workers are usually left out of contributory schemes."},
+     {t:"Life expectancy in the country starts to fall quickly.", why:"A rising ratio is usually caused partly by longer lives, not by falling life expectancy."}
+   ]},
+   {id:"e2u4-q53", lesson:"e2u4-l6", level:2, q:"A bank refuses all new loans to people aged over 65, whatever their income or health. Which form of ageism does WHO’s classification call this?", options:[
+     {t:"Institutional ageism", ok:true, why:"An age rule built into an organization’s policies is institutional ageism."},
+     {t:"Interpersonal ageism", why:"Interpersonal ageism happens in face-to-face interaction, such as patronising talk. This is a written rule."},
+     {t:"Self-directed ageism", why:"Self-directed ageism is applying age stereotypes to yourself."},
+     {t:"Age stratification theory", why:"That is a theory about unequal resources between age groups, not one of WHO’s forms of ageism."}
+   ]},
+   {id:"e2u4-q54", lesson:"e2u4-l6", level:3, q:"After retiring, an engineer in Lagos keeps the same morning routine, stays in her professional association and mentors young engineers in the way she always did. Which theory of ageing fits her best?", options:[
+     {t:"Continuity theory", ok:true, why:"She keeps her habits, relationships and identity consistent as she adapts to retirement, as Atchley’s theory describes."},
+     {t:"Disengagement theory", why:"Disengagement expects withdrawal from roles; she stays involved."},
+     {t:"Modernization theory of ageing", why:"Modernization theory is about older people’s status across whole societies, not one person’s choices."},
+     {t:"Age stratification theory", why:"Age stratification is about unequal resources between age groups, not personal continuity."}
+   ]},
+   {id:"e2u4-q55", lesson:"e2u4-l6", level:3, q:"A headline says: “Generation X are all selfish homeowners who pulled up the ladder.” Which response reflects sociological thinking best?", options:[
+     {t:"A cohort shares historical timing, but class, gender and place divide it.", ok:true, why:"Cohorts meet history at the same ages, but their members live very different lives, so one label can’t describe them all."},
+     {t:"The claim is true because every cohort shares the same experiences.", why:"Members of a cohort share timing, not identical lives or attitudes."},
+     {t:"The claim is false because generations never differ in any way.", why:"Cohorts can differ, for example in housing costs when they were young. The problem is overgeneralizing."},
+     {t:"The claim shows disengagement theory working as Cumming and Henry predicted.", why:"Disengagement is about withdrawal from roles in later life, not about generation labels."}
+   ]},
+
+   /* ---- Lesson 7 (e2u4-l7) ---- */
+   {id:"e2u4-q56", lesson:"e2u4-l7", level:1, q:"What is a feedback loop in an algorithmic system?", options:[
+     {t:"The system’s decisions shape the data it learns from next.", ok:true, why:"Outputs become future inputs, so an early bias can confirm and strengthen itself."},
+     {t:"Users rate the system so that designers can improve it.", why:"User feedback is useful, but in sociology a feedback loop means outputs turning into the system’s own future data."},
+     {t:"The system gives exactly the same answer however often you ask it.", why:"Giving consistent answers isn’t a loop between decisions and data."},
+     {t:"Designers retrain the model every year on brand-new data.", why:"Retraining can help or not; the loop is about where the new data come from."}
+   ]},
+   {id:"e2u4-q57", lesson:"e2u4-l7", level:2, q:"A city sends extra police patrols wherever a model predicts crime. Recorded crime rises in those areas, and the model then predicts even more crime there. What is the main problem?", options:[
+     {t:"A feedback loop: more patrols produce more records there.", ok:true, why:"Recorded crime partly measures where police look, so the model can confirm itself even if offending elsewhere is similar (Lum and Isaac, 2016)."},
+     {t:"The model must be correct, because its predictions came true.", why:"The predictions “came true” partly because of the patrols the model sent. That is the loop, not proof."},
+     {t:"Recorded crime always measures exactly how much crime happens.", why:"Recorded crime depends on reporting and policing, so it is an imperfect proxy for offending."},
+     {t:"The problem is only that the computers are too slow.", why:"Speed isn’t the issue; the data the model learns from are."}
+   ]},
+   {id:"e2u4-q58", lesson:"e2u4-l7", level:3, q:"ProPublica reported that Black defendants who did not reoffend were labelled high risk about twice as often as white defendants. The company replied that its scores predicted reoffending equally well for both groups. How can both be partly right?", options:[
+     {t:"Fairness measures can conflict when groups’ base rates differ.", ok:true, why:"Researchers showed that equal predictive accuracy and equal error rates usually can’t both hold when underlying rates differ. Choosing which comes first is a value choice."},
+     {t:"One side must simply have made an arithmetic mistake.", why:"Both analyses used defensible measures. The disagreement is about which kind of fairness matters."},
+     {t:"Risk scores are always fair if race isn’t an input.", why:"Other variables can act as proxies, and error rates can still differ between groups."},
+     {t:"Courts never use risk scores, so the debate is imaginary.", why:"Risk scores have been used in many US courts; the 2016 debate was about real use."}
+   ]},
+   {id:"e2u4-q59", lesson:"e2u4-l7", level:1, q:"What is algorithmic management?", options:[
+     {t:"Software assigning, rating and disciplining workers", ok:true, why:"Apps that allocate tasks, set prices, monitor performance and can suspend workers are managing them by algorithm."},
+     {t:"Managers who write computer code in their spare time", why:"The term is about software doing management tasks, not managers’ hobbies."},
+     {t:"A government office that regulates computer programs", why:"Regulators may oversee algorithms, but that isn’t algorithmic management."},
+     {t:"Workers choosing their own hours on a paper rota", why:"There is no software managing anyone here."}
+   ]},
+   {id:"e2u4-q60", lesson:"e2u4-l7", level:1, q:"What did the International Labour Conference adopt on 12 June 2026?", options:[
+     {t:"A Convention on decent work in the platform economy", ok:true, why:"Convention No. 193 was adopted by 406 votes to 8, with 36 abstentions. It applies to platform workers whatever their legal status, with rules on automated systems."},
+     {t:"A ban on all ride-hailing and delivery apps worldwide", why:"The Convention regulates platform work; it doesn’t ban it."},
+     {t:"A rule making every platform worker a full employee", why:"It extends key protections regardless of status but doesn’t reclassify everyone."},
+     {t:"A global tax on technology companies’ profits", why:"Taxation wasn’t its subject; it concerns working conditions."}
+   ]},
+   {id:"e2u4-q61", lesson:"e2u4-l7", level:2, q:"At an airport, frequent travellers who share data in advance use fast lanes, while others with certain travel histories are sent for extra questioning. Which concept fits best?", options:[
+     {t:"Social sorting (David Lyon)", ok:true, why:"Data place people into categories, such as trusted and risky, that bring different treatment."},
+     {t:"Ghost work (Mary Gray and Siddharth Suri)", why:"Ghost work is hidden human labour behind automated services, not the sorting of travellers."},
+     {t:"Disengagement theory", why:"That is a theory of ageing, about withdrawal from roles in later life."},
+     {t:"The digital divide", why:"The digital divide is unequal access to technology, not categorising travellers."}
+   ]},
+   {id:"e2u4-q62", lesson:"e2u4-l7", level:1, q:"What does Shoshana Zuboff mean by “surveillance capitalism”?", options:[
+     {t:"Turning data about behaviour into predictions sold for profit", ok:true, why:"Zuboff (2019) argued firms extract behavioural data and sell predictions; critics such as Morozov say it is ordinary capitalism."},
+     {t:"Governments buying surveillance cameras from the cheapest supplier", why:"Public procurement isn’t her concept; she focuses on business models built on behavioural data."},
+     {t:"Workers watching their managers to prevent abuse", why:"Watching back is sometimes called sousveillance; it isn’t Zuboff’s concept."},
+     {t:"A prison design in which inmates can always be seen", why:"That is Bentham’s panopticon, used by Foucault."}
+   ]},
+   {id:"e2u4-q63", lesson:"e2u4-l7", level:2, q:"Which description of EU border systems was accurate when this lesson was checked in November 2026?", options:[
+     {t:"The EES was fully running; ETIAS was planned but not yet operating.", ok:true, why:"The Entry/Exit System has been fully operational since 10 April 2026. ETIAS had been postponed (EU governments now expect 2027) and was not yet collecting applications."},
+     {t:"ETIAS was running; the EES had been cancelled before launch.", why:"The reverse: the EES is running, while ETIAS had not started."},
+     {t:"Both systems had been replaced by passport stamping.", why:"The EES replaced manual stamping at external borders."},
+     {t:"Both systems applied only to EU citizens travelling at home.", why:"Both concern non-EU nationals on short stays."}
+   ]},
+   {id:"e2u4-q64", lesson:"e2u4-l7", level:3, q:"A screening tool catches 9 of the 10 real threats among 100,000 travellers, but flags 1,000 people in total. What should a sociologist conclude?", options:[
+     {t:"Almost all flagged travellers (991 of 1,000) are innocent.", ok:true, why:"1,000 − 9 = 991, so 99.1% of those flagged are not threats. When threats are rare, the costs of false alarms fall on many people."},
+     {t:"The tool is 90% accurate, so 90% of flagged people are threats.", why:"Catching 90% of threats says nothing about how many flagged people are threats. That is the base-rate error."},
+     {t:"Only 10 travellers were inconvenienced, so there is no issue.", why:"1,000 people were flagged; 991 of them were innocent."},
+     {t:"The tool must be using nationality as an input.", why:"The numbers alone don’t show which inputs it uses; they show a base-rate problem."}
+   ]},
+   {id:"e2u4-q65", lesson:"e2u4-l7", level:3, q:"Which sentence presents the debate on border technologies in a neutral, attributed way?", options:[
+     {t:"Officials cite speed and security; a UN rapporteur and others warn of discrimination.", ok:true, why:"It names who argues what on each side (for example the European Commission, and Tendayi Achiume as UN Special Rapporteur) without taking a side."},
+     {t:"Border technologies are obviously good, because keeping the country secure matters more than anything else.", why:"This takes a side and gives no attribution or evidence."},
+     {t:"Border technologies are obviously racist, so every one of them should be banned immediately.", why:"This also takes a side, without naming who argues it or the evidence."},
+     {t:"Nobody disagrees about border technology, so there is no debate.", why:"Governments, UN experts, NGOs and researchers disagree openly."}
    ]}
   ]
 });

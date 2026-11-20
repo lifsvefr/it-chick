@@ -175,7 +175,8 @@ ICA.addUnit({
       ["Diamond","A yes/no question where the path splits","A diamond has one way in and two ways out, labelled Yes and No."],
       ["Parallelogram","Input or output","Slanted boxes show data coming in (what someone types) or going out (a displayed result)."],
       ["An arrow that points back to an earlier step","A loop","Returning to an earlier step repeats part of the process."]
-    ]}
+    ]},
+      {id:"t1u12-l1-x8", type:"explain", q:"Explain why source code that a person writes has to be translated before a processor can run it, and compare the two classic ways of doing that.", hint:"What does a processor actually understand? When does a compiler translate, and when does an interpreter?", model:"A processor only understands its own machine code: binary instructions that are fast but almost impossible for people to read or write. So people write source code in a high-level language that reads more like English and maths, and something must translate it. A compiler translates the whole program once, before it runs, into an executable file for one kind of processor and operating system; the user doesn’t need the source or the compiler. An interpreter translates and carries out the source step by step while it runs, so every device running it needs the interpreter.", points:["Says the processor only runs machine code (binary)", "Says people write source code in a high-level language", "Says a compiler translates everything before running, into an executable", "Says an interpreter translates while running, so it must be installed"]}
    ],
    apply:{intro:"Look at real code, then plan some of your own on paper. Nothing here changes your device.", tasks:[
      {t:"Look at the code behind a web page", how:{
@@ -367,7 +368,8 @@ ICA.addUnit({
       {t:"An online shop taking orders from thousands of customers at once", b:1, why:"Many simultaneous users and linked data (customers, products, orders) are exactly what databases are built for."},
       {t:"A clinic booking system used by five receptionists at the same time", b:1, why:"Concurrent users mustn’t overwrite each other’s bookings, and patients, staff and appointments all link together."},
       {t:"A school system linking students, classes, teachers and rooms", b:1, why:"Several kinds of thing with many links between them: a relational design avoids endless repetition."}
-    ]}
+    ]},
+      {id:"t1u12-l2-x8", type:"explain", q:"A library keeps all its loans in one flat table, with each member’s name and phone number repeated on every loan. Explain the trouble this causes and how a relational database fixes it.", hint:"What happens when a member changes their phone number? What links a loan to a member in the database version?", model:"Because the same facts are repeated, they cause trouble. When a member changes her number, every copy must change, and if one is missed the data contradicts itself. If someone deletes a member’s only loan, the library loses that member’s details, and a new member who hasn’t borrowed anything has nowhere to go. A relational database stores each fact once, in the table where it belongs: members, books and loans. Each member has a primary key, such as a member ID, and each loan holds that ID as a foreign key, so one change fixes every loan.", points:["Explains the update problem (copies get out of step)", "Mentions losing facts when rows are deleted, or nowhere to add new members", "Says a relational database stores each fact once in separate tables", "Explains linking with a primary key and a foreign key"]}
    ],
    apply:{intro:"You query data every day without writing SQL. Try it on purpose, then design a tiny database of your own.", tasks:[
      {t:"Ask your files a question with filters", how:{
@@ -533,7 +535,8 @@ ICA.addUnit({
       {t:"The provider must restore it, because with SaaS they handle everything", why:"SaaS moves the servers and the app to the provider, not responsibility for your data."},
       {t:"It’s safe, because cloud data is copied to several data centres", why:"Copies protect against hardware failure. When you delete something, the deletion is copied too."},
       {t:"He can get it back by restarting his laptop", why:"The deletion happened in the cloud copy and synced. Restarting changes nothing."}
-    ]}
+    ]},
+      {id:"t1u12-l3-x8", type:"explain", q:"A small charity moves its files to a cloud service (SaaS) and says: “Security is the provider’s job now.” Explain why that is only partly true.", hint:"In the shared responsibility model, what always stays with the customer?", model:"Cloud services follow a shared responsibility model. With SaaS the provider runs a lot: the buildings, power and hardware, the operating system and the application itself. But some things always stay with the customer. The charity is responsible for its data, including whether it is correct and whether it has its own backup; for accounts and access, such as strong sign-ins with two-step verification and removing people who leave; and for its own configuration, such as not sharing folders with “anyone with the link”. Many cloud data leaks come from a customer’s setting.", points:["Names the shared responsibility model", "Says the provider runs the physical layer and, in SaaS, the system and app", "Says data and backups stay with the customer", "Says accounts, access or sharing settings stay with the customer"]}
    ],
    apply:{intro:"See virtualisation on your own device, then do your share of the cloud’s shared responsibility. Nothing here needs new software.", tasks:[
      {t:"Check whether your device can run virtual machines", how:{
@@ -707,7 +710,8 @@ ICA.addUnit({
       {t:"Say nothing, because she wrote every single sentence herself", why:"The rule asks students to say how AI was used, and that includes brainstorming."},
       {t:"List the AI tool as a co-author", why:"Tools aren’t authors: they can’t take responsibility for the work. A short statement of use is what’s needed."},
       {t:"Delete the chat so that nobody can tell", why:"Hiding use that the rules ask you to disclose is the dishonest option, whatever the result."}
-    ]}
+    ]},
+      {id:"t1u12-l4-x8", type:"explain", q:"Sara wants to paste a customer’s complaint, including the customer’s name and address, into a free AI chatbot to draft a reply. Explain why that may be a problem and what she could do instead.", hint:"Where does pasted text go? Whose data is it?", model:"Pasting into a cloud AI tool sends the text to the provider’s servers, and what happens next depends on the product and the account: some consumer services say conversations may be read by human reviewers or used to improve their models, and a free personal account usually has no agreement protecting the data. The complaint also contains someone else’s personal data, which isn’t hers to share, and data-protection law or her organisation’s rules may forbid it. She could remove the name and identifying details first, use a tool her organisation has approved, or write the reply herself.", points:["Says pasted text goes to the provider’s servers", "Says what happens to it depends on the product and account (it may be reviewed or kept)", "Says it is someone else’s personal data, possibly protected by law or rules", "Suggests removing identifying details or using an approved tool"]}
    ],
    apply:{intro:"Find the AI on your own devices, then practise asking and checking. You don’t need to sign up for anything new; if you prefer not to use AI tools, write the prompts and do the checking task with a summary someone else made.", tasks:[
      {t:"Find the AI features on your device, and their privacy settings", how:{
@@ -862,7 +866,8 @@ ICA.addUnit({
       ". Meanwhile, ", {t:"her app greys out the Order button", flag:false, why:"Changing a button’s look is the front end, on her device."},
       " and ", {t:"shows a progress bar", flag:false, why:"Showing progress is the front end displaying updates it receives."},
       "."
-    ], why:"Rules, payments and the shared data live on the back end; what Hana sees and touches is the front end."}
+    ], why:"Rules, payments and the shared data live on the back end; what Hana sees and touches is the front end."},
+      {id:"t1u12-l5-x8", type:"explain", q:"A library app greys out the Reserve button for members with unpaid fines. Explain why the server must still check for fines when a reservation request arrives.", size:"2–3 sentences", hint:"Where does the front end run, and who controls that device?", model:"The greyed-out button is part of the front end, which runs on the member’s own device, and anyone can change what their own device sends, for example by calling the API directly. The back end runs on the library’s servers, holds the real rules and talks to the database, so it is the only place a rule can be enforced reliably. A well-built system therefore repeats every important check on the back end: if a member with fines sends a reservation request anyway, the server refuses it.", points:["Says the front end runs on the user’s device", "Says users can change what their device sends", "Says the back end holds the real rules and the database", "Concludes important checks must be repeated on the back end"]}
    ],
    apply:{intro:"Watch an app talk to its back end, map one you use every day, then take stock of the whole track.", tasks:[
      {t:"Watch the front end ask the back end for data", how:{

@@ -14,13 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Klee+One:wght@600&family=Zen+Kurenaido&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=61">
+<link rel="stylesheet" href="../shared/style.css?v=62">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=61"></script>
+<script src="../shared/engine.js?v=62"></script>
 <script src="../shared/theme.js?v=2"></script>
-<script src="props.js?v=61"></script>
-<script src="../data/story.js?v=61"></script>
-<script src="../data/story-audio.js?v=61"></script>
+<script src="props.js?v=62"></script>
+<script src="../data/story.js?v=62"></script>
+<script src="../data/story-audio.js?v=62"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -76,8 +76,35 @@ function track(id){
   var units = ICA.units.filter(function(u){ return u.track === id; });
   var h = '<div class="stack"><a href="#" class="small">← All tracks</a><div><span class="chip '+t.cls+'">'+tlabel(t)+'</span><h1 style="margin-top:6px">'+esc(t.name)+'</h1><p class="muted">'+esc(t.blurb)+'</p><p class="small muted" style="margin-top:6px"><b>Built from:</b> '+esc(t.basis)+'</p></div>';
   if (id === "e3" && storyList().length) h += '<a class="tile storytile" href="#story"><span class="ic" aria-hidden="true"><img src="../shared/cast/cat/smug.webp" alt="" width="34" style="width:34px;height:auto"></span><span class="tx"><span class="tt">Kamome House: the story so far</span><span class="st">One short, optional episode per unit, written by Mugi. '+storyList().filter(function(e){ return storyRead(e.unit); }).length+' of '+storyList().length+' read.</span></span></a>';
+  if (id === "e3" && window.JLAB_COUNT !== 0) h += '<a class="tile" href="../labs/jlpt.html"><span class="ic" aria-hidden="true">📝</span><span class="tx"><span class="tt">JLPT Practice Room</span><span class="st">Short practice tests in the JLPT format (N5–N3), with explanations. In the Labs.</span></span></a>';
   if (units.length) h += '<div class="stack">'+units.map(function(u){ var p = ICA.unitProgress(u.id), pct = p.total ? Math.round(p.done/p.total*100) : 0; return '<a class="tile" href="#'+u.id+'"><span class="ic" aria-hidden="true">'+u.icon+'</span><span class="tx"><span class="tt">Unit '+u.n+' · '+esc(u.title)+'</span><span class="st">'+esc(u.blurb)+'</span><span class="st">'+p.done+' of '+p.total+' lessons done</span></span><span class="ring" style="--p:'+pct+'"><span>'+pct+'%</span></span></a>'; }).join("")+'</div>';
+  var cap = ICA.capstones[id];
+  if (cap){ var cs = ICA.load().lessons[cap.id] || {}, cdone = Object.keys(cs.apply || {}).filter(function(k){ return cs.apply[k]; }).length;
+    h += '<h2>Capstone project</h2><a class="tile" href="#'+cap.id+'"><span class="ic" aria-hidden="true">'+(cs.done ? "🏆" : cap.icon || "🎓")+'</span><span class="tx"><span class="tt">'+esc(cap.title)+'</span><span class="st">'+esc(cap.blurb)+'</span><span class="st">About '+esc(cap.hours)+' hours · '+(cs.done ? "finished" : cdone ? cdone+" of "+cap.stages.length+" stages done" : "best after "+capAfter(cap))+'</span></span>'+(cs.done ? '<span class="chip done">✓ Done</span>' : '')+'</a>'; }
   h += '<div class="card small muted">'+esc(t.soon)+'</div></div>';
+  app.innerHTML = h;
+}
+function capById(id){ for (var k in ICA.capstones) if (ICA.capstones[k].id === id) return ICA.capstones[k]; return null; }
+function capAfter(c){ var us = (c.after || []).map(function(x){ return ICA.unitById[x]; }).filter(Boolean); if (!us.length) return "the track"; var ns = us.map(function(u){ return u.n; }).sort(function(a, b){ return a - b; }); return "Units " + ns.join(", ").replace(/, (\d+)$/, " and $1"); }
+
+/* ---------- a track's capstone project ---------- */
+function capstone(c){
+  var t = trackOf(c.track), s = ICA.lessonState(c.id), notes = s.notes || {}, rub = s.rubric || {}; setTitle(c.title);
+  var unitLink = function(x){ var u = ICA.unitById[x]; return u ? '<a href="#'+u.id+'">Unit '+u.n+'</a>' : ''; };
+  var h = '<div class="stack"><a href="#'+c.track+'" class="small">← '+esc(t.name)+'</a><div class="unithero"><span class="icon" aria-hidden="true">'+(c.icon || "🎓")+'</span><div><span class="chip '+t.cls+'">'+tlabel(t)+' · Capstone</span><h1 style="margin-top:6px">'+esc(c.title)+'</h1></div><p>'+md(c.blurb)+'</p><span class="small muted">About '+esc(c.hours)+' hours, over as many sittings as you like · best after '+(c.after || []).map(unitLink).join(", ")+'</span></div>';
+  h += '<div class="card stack">'+(c.brief || []).map(function(p){ return '<p>'+md(p)+'</p>'; }).join("")+'</div>';
+  if (c.deliver) h += '<div class="callout key"><b class="h">What you will end with</b>'+md(c.deliver)+'</div>';
+  h += '<h2>Stages</h2><div class="stack">'+c.stages.map(function(st, i){
+    return '<div class="task"><input type="checkbox" id="tk'+i+'" data-task="'+i+'"'+((s.apply || {})[i] ? " checked" : "")+'><div style="flex:1;min-width:0"><label for="tk'+i+'"><b>'+(i + 1)+'.</b> '+md(st.t)+'</label>'+
+      (st.units && st.units.length ? '<span class="small muted" style="display:block;margin-top:2px">Uses '+st.units.map(unitLink).join(", ")+'</span>' : '')+
+      '<div class="how"><ol>'+st.how.map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ol></div>'+
+      (st.write ? '<label class="lb" for="w'+i+'" style="display:block;margin-top:8px">Your notes</label><textarea id="w'+i+'" data-write="'+i+'" placeholder="'+esc(st.write)+'">'+esc(notes[i] || "")+'</textarea><span class="small muted">Saved on this device as you type.</span>' : '')+'</div></div>';
+  }).join("")+'</div>';
+  h += '<h2>Rubric: check your own work</h2><p class="small muted">For each point, would someone reading your work see this? Be honest: it’s just for you, and it goes into your capstone record in the Printer.</p><div class="stack">'+c.rubric.map(function(r, i){ var v = rub[i] == null ? -1 : rub[i];
+    return '<div class="card"><b>'+md(r.c)+'</b><p class="small">'+md(r.d)+'</p><div class="seg3" role="group" aria-label="'+esc(r.c.replace(/[*_`]/g, ""))+'">'+[["0","Not yet"],["1","Partly"],["2","Yes"]].map(function(o){ return '<button type="button" data-rub="'+i+'" data-v="'+o[0]+'" aria-pressed="'+(+o[0] === v)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }).join("")+'</div>';
+  if (c.share) h += '<div class="callout tip"><b class="h">Show it to someone</b>'+md(c.share)+'</div>';
+  h += '<div class="lessonnav"><a class="btn" href="../forge/index.html">🖨️ Print my capstone record</a><button class="btn primary" data-capdone>'+(s.done ? "Finished ✓" : "Mark my capstone finished")+'</button></div>';
+  h += '<button class="report" data-report="Capstone: '+esc(c.title)+'">Report a mistake in this capstone</button></div>';
   app.innerHTML = h;
 }
 
@@ -355,16 +382,20 @@ app.addEventListener("click", function(e){
 });
 app.addEventListener("input", function(e){
   var t = e.target.closest("[data-write]"); if (!t) return;
-  var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); if (!s.notes) s.notes = {}; s.notes[t.getAttribute("data-write")] = t.value; ICA.save();
+  var s = ICA.lessonState(location.hash.slice(1)); if (!s.notes) s.notes = {}; s.notes[t.getAttribute("data-write")] = t.value; ICA.save();
 });
 app.addEventListener("click", function(e){
+  var r = e.target.closest("[data-rub]"), d = e.target.closest("[data-capdone]");
+  if (r){ var cs = ICA.lessonState(location.hash.slice(1)); cs.rubric = cs.rubric || {}; cs.rubric[r.getAttribute("data-rub")] = +r.getAttribute("data-v"); ICA.save();
+    ICA.$$("[data-rub]", r.parentNode).forEach(function(x){ x.setAttribute("aria-pressed", x === r ? "true" : "false"); }); return; }
+  if (d){ var c = capById(location.hash.slice(1)), ds = ICA.lessonState(c.id); if (!ds.done){ ds.done = Date.now(); ICA.save(); if (window.ICATheme) ICATheme.flourish(); ICA.toast("Capstone finished. Well done!"); } capstone(c); return; }
   var b = e.target.closest("[data-proof]"); if (!b) return;
   var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); s.proof = +b.getAttribute("data-proof"); ICA.save();
   ICA.$$("[data-proof]", b.parentNode).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
 });
 app.addEventListener("change", function(e){
   var t = e.target.closest("[data-task]"); if (!t) return;
-  var l = ICA.lessons[location.hash.slice(1)], s = ICA.lessonState(l.id); s.apply[t.getAttribute("data-task")] = t.checked ? 1 : 0; ICA.save();
+  var s = ICA.lessonState(location.hash.slice(1)); s.apply[t.getAttribute("data-task")] = t.checked ? 1 : 0; ICA.save();
 });
 
 /* ---------- Kamome House: optional story episodes (data/story.js) ---------- */
@@ -511,6 +542,7 @@ function route(){
   else if (ICA.unitById[h]) unit(h);
   else if (/-cp$/.test(h) && ICA.unitById[h.replace(/-cp$/,"")]) checkpoint(h.replace(/-cp$/,""));
   else if (h === "story") storyShelf();
+  else if (capById(h)) capstone(capById(h));
   else if (/^story-/.test(h) && storyEp(h.replace(/^story-|\?draft$/g, ""), /\?draft$/.test(h))) story(h.replace(/^story-|\?draft$/g, ""), /\?draft$/.test(h));
   else if (ICA.lessons[h]){ curPart = "learn"; lesson(h); var L0 = ICA.lessons[h], S0 = ICA.lessonState(h); if (L0.read && L0.read.length && !S0.readSeen && !S0.readDone && ICA.load().settings.readPop !== "off") readingSheet(L0, true); }
   else home();

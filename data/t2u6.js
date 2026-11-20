@@ -157,7 +157,8 @@ ICA.addUnit({
       {t:"Close the laptop lid and restart the computer", why:"Far more than needed. Ctrl + C stops the waiting command in a second."},
       {t:"Type `$` to get the prompt back", why:"The `$` is something the shell shows, not something you type. Typing it just sends more text to `cat`."},
       {t:"Wait: it’s downloading something", why:"`cat` doesn’t download anything. It’s waiting for input from the keyboard because no file was named."}
-    ]}
+    ]},
+      {id:"t2u6-l1-x7", type:"explain", q:"Explain how the shell reads `ls -l Documents`, naming each part, and why typing `ls-l Documents` fails.", size:"2–3 sentences", hint:"Where does the shell split a line? What does the first word name?", model:"The shell splits the line at spaces into words. The first word, `ls`, names the program to run (it lists a folder’s contents); `-l` is a flag that changes how it behaves (a long, detailed listing); and `Documents` is the argument that says what to work on. In `ls-l Documents` there is no space after `ls`, so the first word is `ls-l`, and there is no program with that name, so the shell reports that the command isn’t found.", points:["Says the shell splits the line at spaces", "Says the first word is the program (command)", "Identifies `-l` as a flag and `Documents` as the argument", "Explains that `ls-l` is one word with no matching program"]}
    ],
    apply:{intro:"Open a real shell and say hello. If you’re on a phone, you can read along and still do the thinking parts.", tasks:[
      {t:"Open a terminal and find your prompt", how:{
@@ -297,7 +298,8 @@ ICA.addUnit({
       {t:"`cd Family-photos`", why:"That names a different folder (with a hyphen), which doesn’t exist. Renaming the folder would work, but this command alone won’t."},
       {t:"`cd -a Family photos`", why:"A flag doesn’t fix the problem: the shell still splits the name into two words."},
       {t:"`cd Family` then `cd photos`", why:"There’s no folder called just `Family`. The space is part of a single name."}
-    ]}
+    ]},
+      {id:"t2u6-l2-x7", type:"explain", q:"`cd Documents/garden` works in one terminal window, but in another it says “No such file or directory”. Explain why, and how to check and fix it.", size:"2–3 sentences", hint:"Where does a relative path start from? Is that the same in both windows?", model:"`Documents/garden` is a relative path: it starts from the shell’s current working directory, and each window can be standing in a different folder. In the first window the shell was in the home folder, where `Documents` exists; in the second it was somewhere else. Typing `pwd` shows where you are. To make it work from anywhere, use an absolute path, or start from home with `~/Documents/garden`, or `cd ~` first.", points:["Says it is a relative path that starts from the working directory", "Says the two windows were in different folders", "Suggests checking with `pwd`", "Suggests an absolute path or `~/…` that works from anywhere"]}
    ],
    apply:{intro:"Explore your own folders from the shell. Nothing here changes any files.", tasks:[
      {t:"Map your home folder", how:{
@@ -440,7 +442,8 @@ ICA.addUnit({
       {t:"A folder removed with `rm -r`", b:1, why:"The folder and everything inside it is removed at once."},
       {t:"A file you overwrote with `cp` or `mv`", b:1, why:"The old contents were replaced. There’s no copy of them unless you had a backup."},
       {t:"A file moved into a folder with `mv`", b:0, why:"Moving isn’t deleting: it’s in the new folder, and `mv` can move it back."}
-    ]}
+    ]},
+      {id:"t2u6-l3-x7", type:"explain", q:"Explain why it’s wise to run `ls *.txt` before `rm *.txt`, and why deleting in the shell needs more care than deleting in a file manager.", hint:"When does the shell turn `*.txt` into a list of names? Where do files deleted with `rm` go?", model:"`rm` deletes straight away: there is no bin, no undo, and by default it doesn’t ask “are you sure?”. With a wildcard, the shell expands the pattern into a list of names before the command runs, so `rm` just receives those names. Running `ls` with the same pattern first shows exactly which files `rm` will get. That catches mistakes such as being in the wrong folder, or an extra space in `rm * .txt`, where `*` matches every file. A safe routine is `pwd`, `ls` with the pattern, `rm -i` with the pattern, then `ls` again.", points:["Says `rm` has no bin or undo and doesn’t ask by default", "Says the shell expands the wildcard before the command runs", "Says `ls` with the same pattern previews what will be deleted", "Mentions checking the folder with `pwd` or using `rm -i`"]}
    ],
    apply:{intro:"Practise every command in a throwaway folder, so mistakes cost nothing.", tasks:[
      {t:"Build and rearrange a practice folder", how:{
@@ -581,7 +584,8 @@ ICA.addUnit({
       {t:"`grep refund orders.txt > wc -l`", why:"`>` sends output to a **file**: this creates a file named `wc` and passes `-l` to grep. Use `|` to feed another command."},
       {t:"`wc -l orders.txt | grep -i refund`", why:"The order is backwards: this counts all lines first, then searches the count (just a number and a file name) for “refund”."},
       {t:"`grep refund orders.txt | wc -l`", why:"Close, but without `-i` it misses “Refund” and “REFUND”."}
-    ]}
+    ]},
+      {id:"t2u6-l4-x7", type:"explain", q:"Explain, step by step, what `grep -i tomatoes harvest.txt | wc -l` does, and why pipes like this are useful.", hint:"Read it left to right like a sentence. Where does grep’s output go?", model:"`grep` prints every line of `harvest.txt` that contains “tomatoes”, and `-i` makes it ignore case, so a line with “Tomatoes” matches too. The pipe `|` sends grep’s output straight into the next command as its input, instead of to the screen. `wc -l` then counts those lines, so the answer is how many harvest lines mention tomatoes. Pipes let small single-purpose programs (filters such as grep, sort and wc) be combined into new tools, and you can build a pipeline one step at a time, checking each part.", points:["Says grep finds lines containing the pattern", "Says `-i` ignores case", "Says the pipe passes one command’s output to the next as input", "Says `wc -l` counts the lines, giving the answer", "Says pipes let small single-purpose tools be combined"]}
    ],
    apply:{intro:"Build the harvest log in your practice folder and answer questions about it with the shell.", tasks:[
      {t:"Make the file and look inside", how:{
@@ -747,7 +751,8 @@ ICA.addUnit({
       ["`head -n 5 list.txt`","`Get-Content list.txt -Head 5`","`-Head` (also called `-TotalCount`) limits the lines."],
       ["`rm -i old.txt`","`Remove-Item old.txt -Confirm`","Both ask before deleting."],
       ["`man ls`","`Get-Help Get-ChildItem`","PowerShell’s help is per command; `ls` is an alias for Get-ChildItem."]
-    ]}
+    ]},
+      {id:"t2u6-l5-x7", type:"explain", q:"A command fails with “Permission denied”, and a forum reply says “just put sudo in front”. Explain why you should stop and think first.", hint:"What is “Permission denied” protecting? What power does sudo give a command?", model:"“Permission denied” appears when you try to change something that belongs to the system or another account. It is the safety net working, so it is information, not an obstacle: first ask why you were stopped. `sudo` runs the command as root, which can change anything, so a typo could damage the system rather than just your own files, and anything malicious in the command or a script it downloads runs with full power. Files created with sudo also belong to root and cause problems later. Use it only when you know exactly what the command does and why it needs that power.", points:["Says “Permission denied” protects system or other users’ files", "Says sudo runs the command with full (root) power", "Gives a risk: typos, malicious code, or root-owned files", "Says to use it only when you understand the command and why it needs it"]}
    ],
    apply:{intro:"Practise finding help and reading errors, then judge some commands you might meet online.", tasks:[
      {t:"Get help three ways", how:{

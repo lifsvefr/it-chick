@@ -164,7 +164,8 @@ ICA.addUnit({
       {t:"Normal presentation slides with one word per slide, so it looks modern", why:"Without a speaker, single-word slides leave readers guessing what they mean."},
       {t:"Slides with the full text in tiny type", why:"That is a document squeezed onto slides, and tiny type is hard to read, especially on phones."},
       {t:"A video of the slides with music and no narration", why:"Music adds nothing to understanding a policy, and there is still no explanation."}
-    ]}
+    ]},
+      {id:"t1u10-l1-x8", type:"explain", q:"Explain why you should decide a talk’s main message, on paper, before you open the slides app.", hint:"What do slides do in a talk? What tends to happen if you start by choosing a theme?", model:"Slides are a visual aid that supports the speaker; they don’t do the presenting. If you start in the app, you pick a theme and start typing, and you end up with slides about a topic instead of a talk that makes a point. So first write the main message: one sentence, a claim rather than a topic, that the audience should remember if they forget everything else, such as “Six more volunteers would keep the garden open on Saturdays”. Then build an opening, three to five points and a close around it. On paper you can rearrange quickly without fiddling with fonts.", points:["Says slides support the speaker rather than replace them", "Says the main message is one sentence that makes a claim, not a topic", "Says the structure is built around the message", "Says paper is quick to rearrange and avoids fiddling with design"]}
    ],
    apply:{intro:"Plan a real or practice talk of 5 to 10 minutes: something you might present at work, in class, to a club or to your family. You need paper, a pen and, for the last task, any presentation app.", tasks:[
      {t:"Write your audience and purpose card", write:"Audience · What they know · What they care about · Purpose (what they should do or think) · Main message in one sentence · Time slot and talking time", how:["Choose a talk you could actually give (a club update, a family trip plan, a work procedure, a school project).","Answer the questions in the box: who, what they know, what they care about, and what should change afterwards.","Write your main message as one sentence that makes a claim. Read it aloud: could a listener repeat it?","Subtract questions and introductions from your time slot to get your talking time."]},
@@ -331,7 +332,8 @@ ICA.addUnit({
       {t:"He has to switch on Slide Master in his account settings", why:"There is no such setting. The feature simply isn’t in the web version."},
       {t:"Slide masters only exist in Google Slides", why:"PowerPoint has slide masters; they are in the desktop apps (View → Slide Master)."},
       {t:"He must first delete all his slides", why:"That would lose his work and wouldn’t add the feature."}
-    ]}
+    ]},
+      {id:"t1u10-l2-x8", type:"explain", q:"Explain why a slide packed with full sentences works against the speaker, including what research on multimedia learning found, and what to put on the slide instead.", hint:"Who finishes first: the reader or the speaker?", model:"A slide full of sentences sets up a competition. People read faster than you speak, so the audience reads ahead, stops listening and finishes before you, while you turn into a narrator reading aloud with your back to the room. Research by Richard Mayer and colleagues found people generally learned better from spoken words with relevant pictures than when the same words were also printed on screen. Instead, write one headline sentence that makes the slide’s point, show a visual as evidence, and move the details to your notes or a handout.", points:["Says the audience reads ahead and stops listening", "Says the speaker ends up reading the slide aloud", "Mentions the research finding (spoken words plus relevant pictures)", "Suggests a headline sentence plus a visual, with details in notes or a handout"]}
    ],
    apply:{intro:"Use your outline from Lesson 1 (or any short deck). Each task works in the free version of each app unless a note says otherwise.", tasks:[
      {t:"Set the slide size and choose a theme", app:{
@@ -515,7 +517,8 @@ ICA.addUnit({
       {t:"Making every title spin in from a different direction", why:"Varied, spinning effects draw attention to the effect, not the content, and slow the talk."},
       {t:"A flashing “Important!” banner that blinks five times a second", why:"Flashing more than three times a second is a seizure risk under WCAG, and it distracts everyone else."},
       {t:"Bouncing clip art on the closing slide", why:"Decoration in motion pulls focus at the moment the call to action should be clearest."}
-    ]}
+    ]},
+      {id:"t1u10-l3-x8", type:"explain", q:"A colleague pastes a busy spreadsheet chart onto a slide: seven bars all the same colour, heavy gridlines, a legend saying “Series 1” and the title “Sales data”. Explain how to turn it into a chart that works on a slide.", hint:"A slide chart has a few seconds to make one point. The rule is subtraction.", model:"A spreadsheet chart is for exploring data; a slide chart has a few seconds to make one point. So first decide the point, such as “Sundays sell the most”, and write it as the headline instead of “Sales data”. Then subtract: remove the heavy gridlines and the pointless single-series legend. Highlight the bar that matters in a strong colour, mute the rest, and label it directly. Keep it honest: the bars still start at zero and the scale is labelled.", points:["Says a slide chart should make one point", "Puts the point in the headline", "Removes clutter such as gridlines or a single-series legend", "Highlights the key bar and labels it directly", "Keeps it honest (bars start at zero)"]}
    ],
    apply:{intro:"Add real visuals to your deck: a picture you are allowed to use, alt text, and one chart slide that makes a single point.", tasks:[
      {t:"Insert a picture you have permission to use, and credit it", app:{
@@ -673,7 +676,8 @@ ICA.addUnit({
       {t:"Give his best guess as if it were the real figure", why:"A guess presented as fact can mislead decisions, and it damages trust if it turns out wrong."},
       {t:"Say the question is off-topic and move on", why:"It may well be relevant. Dismissing it makes the audience less willing to ask."},
       {t:"Skip ahead to finish early so there’s no time for questions", why:"Avoiding questions throws away the chance to clear up doubts about his message."}
-    ]}
+    ]},
+      {id:"t1u10-l4-x8", type:"explain", q:"Explain why rehearsing a talk aloud with a timer works better than reading your notes silently, and what to do if the talk runs long.", size:"2–3 sentences", hint:"Is speaking faster or slower than reading in your head? Should you speed up?", model:"Speaking takes longer than reading silently, so a silent read-through usually underestimates the time; the first full run aloud, clicking through the slides with a timer, is usually longer than you expect, and the stumbles show which transitions need work. If the talk is too long, cut content rather than speaking faster: remove a whole point or merge slides. Rushed talks are harder to follow, and nerves on the day will slow you down anyway.", points:["Says silent reading underestimates how long the talk takes", "Says rehearsing aloud reveals stumbles or weak transitions", "Says to cut content, such as a whole point, if it runs long", "Says not to speak faster"]}
    ],
    apply:{intro:"Get ready to present your deck: notes, presenter view, a timed rehearsal, captions and a practice share. Practise somewhere you can talk aloud.", tasks:[
      {t:"Add speaker notes and open presenter view", app:{
@@ -849,7 +853,8 @@ ICA.addUnit({
       {t:"Use brighter red and green", why:"Brightness doesn’t help people who can’t tell red from green; the meaning still depends on colour alone."},
       {t:"Add a colour legend in the corner of the chart", why:"A legend still relies on matching colours, which is the problem."},
       {t:"Swap red and green", why:"The two colours are just as hard to tell apart either way round."}
-    ]}
+    ]},
+      {id:"t1u10-l5-x8", type:"explain", q:"A project slide shows tasks in green when they are on target and in red when they are behind, with no other labels. Explain why that is a problem and how to fix it.", size:"2–3 sentences", hint:"Who can’t tell red from green? What about a black-and-white printout?", model:"Colour vision deficiency is common, and it most often makes reds and greens hard to tell apart, so some people can’t see which tasks are behind; a black-and-white printout or a washed-out projector loses the meaning too. Colour should never be the only signal. Add a second one, such as the word “behind”, a symbol like ✓ or ✗, or a pattern, label items directly, and check the slide in greyscale.", points:["Says some people can’t tell red from green", "Mentions another case where colour is lost, such as printing or projection", "Says colour must not be the only signal", "Adds a second signal such as a label or symbol"]}
    ],
    apply:{intro:"Finish your deck for sharing: an accessibility check, a PDF and a handout, a link with the right permission, and a check of shape and size.", tasks:[
      {t:"Run an accessibility check and fix what it finds", app:{

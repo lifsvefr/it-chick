@@ -124,7 +124,8 @@ ICA.addUnit({
       {t:"Research published in languages other than English can be valuable scholarship.", flag:false, why:"True. Important research is published in many languages."},
       " ",
       {t:"I can’t start reading research until my grammar is perfect.", flag:true, why:"A misconception. Reading is one of the main ways you learn the grammar and vocabulary of academic texts."}
-    ]}
+    ]},
+    {id:"e1u1-l1-x7", type:"explain", q:"Rewrite this everyday sentence in academic English: “Loads of kids don’t get enough sleep these days, and it’s bad for school.” Then explain what you changed and why.", size:"3–4 sentences", prompt:"My rewrite: … I changed …", hint:"Academic register is more precise, more compact and more careful. It isn’t just longer words.", model:"Rewrite: “Insufficient sleep appears to be common among secondary school pupils in many countries and may reduce their academic performance.” I replaced informal words (“loads of kids”, “these days”) with precise ones (“secondary school pupils”, “insufficient sleep”). I made it more compact by packing “don’t get enough sleep” into a noun phrase, and more careful by adding “appears to” and “may”, because I can’t claim it is true everywhere. The grammar is ordinary English; the register has changed.", points:["Gives a rewrite in a formal, academic register", "Explains a change that makes it more precise", "Explains a change that makes it more compact, such as a noun phrase", "Explains a change that makes it more careful, such as a hedge"]}
    ],
    apply:{
     intro:"Start with the texts and goals in your own field or interest. Everything here is free; keep your notes private unless you choose to share them.",
@@ -258,7 +259,8 @@ ICA.addUnit({
       {t:"He now knows the article’s evidence is strong, because the abstract says so.", why:"An abstract is written by the authors and may overstate results. Check the methods and results yourself."},
       {t:"He has read enough to quote its methods in detail.", why:"Skimming rarely covers the methods in detail. Read that section closely before describing it."},
       {t:"Skimming was a waste of time; he should have read it all closely from the start.", why:"Skimming is how he found out the article matters. Now close reading is worth the time."}
-    ]}
+    ]},
+    {id:"e1u1-l2-x8", type:"explain", q:"You have 40 minutes before a seminar and a reading list of six articles on your topic. Explain how you would use skimming, scanning and intensive reading, and why you wouldn’t read every article from start to finish.", size:"3–4 sentences", hint:"Your purpose decides how you read.", model:"I’d start by skimming all six: the title, abstract, headings, the end of the introduction and the conclusion, so I can say in a sentence what each one is about and decide which matter most. Then I’d read the key sections of the one or two most relevant articles intensively, especially the aim and the main findings. If I need a particular fact, such as a sample size or a definition, I’d scan for it with Find. Reading everything closely would take hours and wouldn’t match my purpose.", points:["Uses skimming to get the gist and decide what is relevant", "Uses intensive reading for the most important parts", "Uses scanning to find specific information", "Explains that the purpose decides the strategy"]}
    ],
    apply:{
     intro:"Practise the three strategies on a real academic text in your field or interest. Any free, open-access article, report or textbook chapter works.",
@@ -393,7 +395,8 @@ ICA.addUnit({
       {t:"Look at the front and try to recall the meaning, family and a collocation.", why:"Recall before checking: the effort of remembering strengthens memory."},
       {t:"Turn the card over and check your answer.", why:"Only after trying to recall do you check."},
       {t:"Move the card to the next box if you remembered it, or back to box 1 if you didn’t.", why:"The move sets when you will see the card next: later if known, soon if forgotten."}
-    ]}
+    ]},
+    {id:"e1u1-l3-x8", type:"explain", q:"A classmate writes “We made research on water use.” Explain what is wrong, using the idea of a collocation, and say how you would learn academic words to avoid this kind of mistake.", size:"3–4 sentences", hint:"Grammar alone can’t tell you which word sounds natural.", model:"“Make research” breaks no grammar rule, but it isn’t a collocation that expert users say: in English you “conduct” or “carry out” research (“do research” is fine in speech). A collocation is a combination of words that occur together more often than chance, so grammar alone can’t tell you which verb to choose; you have to learn it as a chunk. When I meet a useful word in my reading, I note the whole phrase, such as “conduct research on” or “have a significant impact on”, not just the single word.", points:["Explains what a collocation is", "Gives the natural verb (conduct or carry out research)", "Notes that grammar alone can’t decide the word", "Suggests learning whole phrases (chunks) from reading, not single words"]}
    ],
    apply:{
     intro:"Build a small, personal vocabulary system from your own reading. A notebook, index cards or a notes app all work.",
@@ -538,7 +541,8 @@ ICA.addUnit({
       {t:"The writer agrees strongly with Rahman.", why:"Strong agreement would be signalled by *shows* or *demonstrates*, which present the finding as true."},
       {t:"Nothing: in academic writing, *claims* and *shows* mean exactly the same thing.", why:"They differ in stance. *Shows* accepts the finding; *claims* keeps a distance."},
       {t:"Rahman’s study used no data.", why:"The verb tells you about the writer’s attitude, not about Rahman’s methods. You would need to check the study."}
-    ]}
+    ]},
+    {id:"e1u1-l4-x8", type:"explain", q:"In your own literature review, when would you write “Okafor (2021) demonstrates that…” and when “Okafor (2021) claims that…”? Explain what each choice tells your reader.", size:"3–4 sentences", hint:"Reporting verbs often show what the writer thinks of the source.", model:"“Demonstrates” is an accepting verb: it tells my reader that I treat Okafor’s finding as well supported, so I’d use it when the study is strong, for example a large, careful one. “Claims” is a distancing verb: it reports the idea without accepting it, so I’d use it when I doubt the evidence and am about to point out a weakness, usually followed by “However…”. If I just want to pass on what Okafor says without judging it, a neutral verb such as “reports” is safer.", points:["Explains that “demonstrates” accepts the claim as true", "Explains that “claims” keeps a distance or signals doubt", "Links each choice to the strength of the evidence", "Mentions a neutral alternative such as “reports” or “states”"]}
    ],
    apply:{
     intro:"Work with a real academic text: an article, a literature review or a textbook chapter in your field or interest.",
@@ -681,7 +685,8 @@ ICA.addUnit({
       {t:"A bilingual pocket dictionary", why:"It gives a translation of *evidence*, but rarely shows which adjectives typically go with it."},
       {t:"A spelling checker", why:"A spelling checker finds misspelled words; it says nothing about which words go together."},
       {t:"The Academic Word List", why:"The AWL lists word families. It doesn’t show which words a given word combines with."}
-    ]}
+    ]},
+    {id:"e1u1-l5-x8", type:"explain", q:"Explain why changing a few words in a copied sentence doesn’t make a note your own, and describe how you would write the note instead.", size:"3–4 sentences", hint:"Think about patchwriting, and the “look away” step.", model:"If I only swap synonyms, such as “give” for “provide”, but keep the original’s sentence shape and most of its phrases, I’m patchwriting. Later, when I write from my notes, I won’t remember which words were the author’s, and they could end up in my essay without quotation marks. Instead I’d note the source and page, read until I understand, look away, and write the main idea from memory in short phrases or symbols. Then I’d check the meaning, and put any exact words I want in quotation marks.", points:["Identifies swapping a few words as patchwriting", "Explains the risk when writing from the notes later", "Describes looking away and writing from memory", "Mentions recording the source or putting exact words in quotation marks"]}
    ],
    apply:{
     intro:"Put the methods and tools to work on one real text from your field or interest.",

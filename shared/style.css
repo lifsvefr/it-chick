@@ -616,3 +616,12 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 .volctl input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-6px;border-radius:50%;background:var(--vc);border:3px solid var(--vk)}
 .volctl input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--vc);border:3px solid var(--vk)}
 .setup .volctl{position:absolute;top:calc(env(safe-area-inset-top,0px) + 4px);right:10px;z-index:2}
+
+/* explain it yourself (Pass 26) */
+.ex textarea.xp{width:100%;min-height:110px;font:inherit;line-height:1.5;padding:10px 12px;border:1.5px solid var(--line);border-radius:12px;background:var(--panel);color:var(--ink);resize:vertical}
+.ex .xpts{display:grid;gap:2px}
+.ex .xpts .chk{align-items:flex-start;min-height:40px}
+.ex .xpts .chk input{margin-top:3px;flex:none}
+
+/* long unit names in wrapping filter rows (Codex): wrap inside the button instead of widening the page */
+.tabs.wrap button{white-space:normal;max-width:100%;text-align:left}

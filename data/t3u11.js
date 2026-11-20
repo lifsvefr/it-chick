@@ -132,7 +132,8 @@ ICA.addUnit({
       {t:"At the summer fair, a coin landed heads six times in a row, so it must have been rigged.", flag:true, why:"Six in a row has a probability of 1/64 for any given six flips, and in a long afternoon of flipping, runs that long are expected. One streak is weak evidence."},
       " ",
       {t:"If a coin ever gave 90 heads in 100 flips, that would be strong evidence it isn’t fair.", flag:false, why:"Correct. For a fair coin, 90 or more heads in 100 has a probability of about 1.5 × 10⁻¹⁷."}
-    ]}
+    ]},
+    {id:"t3u11-l1-x8", type:"explain", q:"A roulette wheel has landed on black five times in a row, and a friend says red is now “due” because things even out in the long run. Explain what’s wrong, using the law of large numbers.", model:"Each spin is independent: the wheel has no memory, so on a European wheel the chance of red is 18/37 on every spin, whatever came before. The law of large numbers says the **share** of reds settles near its probability over many spins, but it works by swamping, not correcting. An early run of blacks is never cancelled out; it is diluted by thousands of later spins. The count can even drift further from half while the share settles. That’s the gambler’s fallacy.", points:["Says spins are independent, so the chance of red doesn’t change", "States what the law of large numbers says about the long-run share", "Explains that it works by swamping, not correcting", "Names the gambler’s fallacy"]}
    ],
    apply:{intro:"Watch the law of large numbers happen. Task 1 works in any spreadsheet app, including Google Sheets on a phone; task 2 needs only a coin; task 3 uses the Data Lab in your browser.", tasks:[
      {t:"Simulate 200 coin flips and a running share", app:{
@@ -263,7 +264,8 @@ ICA.addUnit({
       ["P(A or B)","A happens, B happens, or both do","Use P(A) + P(B) − P(A and B)."],
       ["P(A | B)","A happens, among the cases where B happens","A conditional probability: B’s row or column is the new denominator."],
       ["P(not A)","A doesn’t happen","The complement: 1 − P(A)."]
-    ]}
+    ]},
+    {id:"t3u11-l2-x8", type:"explain", q:"Three backup copies of some files each fail 1 time in 10. Someone says the chance of losing all three is 1 in 1,000. Explain when that is right, and when it badly misleads.", model:"Multiplying 1/10 × 1/10 × 1/10 = 1/1,000 is only valid if the failures are independent, meaning one failing doesn’t change the chance of another. If all three copies are kept in one building, a single fire or flood can destroy them together. That shared cause breaks independence, so the real chance of losing everything can be far higher than 1 in 1,000. Keeping copies in separate places, on different systems, makes independence more believable. Multiply chances only when you have a real reason to think the events are independent.", points:["Says multiplying is valid only for independent events", "Gives a shared cause that breaks independence, such as one building", "Concludes the real risk can be much higher than 1 in 1,000", "Suggests making the copies more independent, such as separate places"]}
    ],
    apply:{intro:"Turn counts into probabilities in a spreadsheet, then draw a tree for something in your own life.", tasks:[
      {t:"From a two-way table to probabilities", how:["In any spreadsheet app, type the clinic table: B1 `Attended`, C1 `Missed`, D1 `Total`; A2 `Reminder`, B2 552, C2 48; A3 `None`, B3 340, C3 60.","Totals: in D2 type `=B2+C2` and in D3 `=B3+C3`; in A4 type `Total`, in B4 `=B2+B3`, in C4 `=C2+C3` and in D4 `=D2+D3`. You should see 600, 400, 892, 108 and 1,000.","In F1 type `=C4/D4` for P(missed) (0.108), in F2 `=C2/D2` for P(missed | reminder) (0.08), in F3 `=C3/D3` for P(missed | none) (0.15) and in F4 `=C2/C4` for P(reminder | missed) (0.444). Label each in column E.","In F5 type `=D2*C4/D4`: the number of reminded-and-missed appointments you would expect if the two were independent (64.8). Compare it with the 48 in C2.","Now change C2 to 90 and B2 to 510 (still 600 reminders). F2 and F3 should both show 0.15, and F5 should equal C2 (90): in this version, missing is independent of the reminder."], write:"F1… F2… F3… F4… Expected if independent… What changed when I edited the table…"},
@@ -381,7 +383,8 @@ ICA.addUnit({
       {t:"The wheel corrects itself, so wins and losses even out over the month.", why:"Nothing corrects itself; that’s the gambler’s fallacy. Random wobble is swamped, not cancelled."},
       {t:"Players lose more often as the month goes on.", why:"The chance of red is 18/37 on every spin, early or late."},
       {t:"With a million bets the house edge becomes larger.", why:"The edge per bet stays 1/37. What changes is how small the wobble is compared with the total."}
-    ]}
+    ]},
+    {id:"t3u11-l3-x8", type:"explain", q:"Phone insurance costs 60 a year. Without it, there’s a 5% chance in a year of needing a 600 repair. Explain why buying the insurance can be sensible even though it costs more on average.", model:"Without insurance the expected cost is 0.05 × 600 = **30**, half the 60 premium, so on average insurance loses money; the insurer keeps the difference. But expected value describes the average over many repeats. You get one year, and the outcome is either 0 or 600: a large spread (an SD of about 131) with a painful worst case. Insurance swaps that spread for a certain 60. If a sudden 600 bill would really hurt, paying for less spread is reasonable; if you could easily cover it, going without may suit you better.", points:["Calculates the expected cost without insurance (30)", "Says insurance costs more on average", "Explains that the spread or worst case matters when you get one try", "Says the choice depends on whether you could afford the bad outcome"]}
    ],
    apply:{intro:"Build an expected value and SD calculator in a spreadsheet, then simulate a casino’s month.", tasks:[
      {t:"Expected value and SD in a spreadsheet", app:{
@@ -512,7 +515,8 @@ ICA.addUnit({
       {t:"The claim is proved false, because 5 is less than 15.", why:"Any count can occur by chance. A small probability is evidence against the claim, not proof."},
       {t:"The claim is probably true, because 0.0007 is very small.", why:"The small probability is the chance of data this low **if the claim were true**. Small means the claim fits the data badly."},
       {t:"Nothing can be said from a sample of 50.", why:"50 visitors is plenty to see that 5 buyers is far below what a 30% rate would usually give."}
-    ]}
+    ]},
+    {id:"t3u11-l4-x8", type:"explain", q:"A courier claims that 95% of its parcels arrive on time. Of 40 parcels you sent, 34 arrived on time. Explain how a binomial probability helps you judge the claim, and why the result isn’t proof.", hint:"Assume the claim is true. How often would 34 or fewer happen?", model:"Assume the claim is true and ask how often a result this bad would happen. If each parcel is on time independently with p = 0.95, the number on time out of 40 is binomial, B(40, 0.95), with mean 38. The chance of **34 or fewer** is `pbinom(34, 40, 0.95)` ≈ 0.014, about 1 time in 70. That’s surprising enough to doubt the claim. But it’s evidence, not proof: a rare result can still happen, and the conditions may fail, for example if parcels on one delayed van aren’t independent.", points:["Assumes the claim is true and models the count as binomial (n = 40, p = 0.95)", "Calculates the chance of 34 or fewer (not exactly 34), about 0.014", "Says a small probability is evidence against the claim", "Says it isn’t proof, and the independence (BINS) conditions should be checked"]}
    ],
    apply:{intro:"Build a binomial table and chart, check it against a simulation, then try a claim of your own.", tasks:[
      {t:"A binomial table and chart", app:{
@@ -642,7 +646,8 @@ ICA.addUnit({
       {t:"6 g, the same as one bag", why:"Averaging lets high and low bags partly cancel, so the average varies less than one bag."},
       {t:"0.67 g", why:"That is 6 ÷ 9. The SD shrinks with the **square root** of n, not with n."},
       {t:"18 g", why:"That is 6 × √9, which describes the SD of the **total** weight of 9 bags, not their average."}
-    ]}
+    ]},
+    {id:"t3u11-l5-x8", type:"explain", q:"Cereal boxes are filled with weights that are normally distributed, mean 505 g and SD 4 g. Explain why the chance that a box weighs exactly 500 g is 0, and how you would find the chance that a box weighs under 500 g.", model:"Weight is continuous, so probabilities are areas under the density curve, and a single exact value has no width and therefore no area. What has a probability is a range, such as “under 500 g”. Convert it to a z-score: (500 − 505) ÷ 4 = −1.25. The area to the left of z = −1.25 under the standard normal curve is about **0.106**, so roughly 11% of boxes weigh under 500 g. `=NORM.DIST(500,505,4,TRUE)` or `pnorm(500, 505, 4)` does it in one step.", points:["Says probability equals area for a continuous variable", "Explains that one exact value has zero area", "Calculates the z-score (−1.25)", "Finds the area to the left, about 0.106, with a table, NORM.DIST(…, TRUE) or pnorm"]}
    ],
    apply:{intro:"Use normal areas to answer a quality-control question in a spreadsheet, test the 68–95 rule on real data, and simulate averages.", tasks:[
      {t:"Rice bags in a spreadsheet", app:{

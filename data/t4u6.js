@@ -5,6 +5,7 @@ ICA.addUnit({
   goals:[
     "Narrow a topic into a focused research question, name its type, and check it with FINER and, where it fits, PICO, PECO, SPIDER or PCC",
     "Explain how theory, concepts, variables and measures connect, and write clear, testable hypotheses with the right unit of analysis",
+    "Explain the main research philosophies, from post-positivism to pragmatism, and how a stance shapes a study’s question, design and quality criteria",
     "Choose between experiments, quasi-experiments, cross-sectional, longitudinal, case study, ethnographic and mixed methods designs to fit a question",
     "Pick a sampling method, explain sample size in plain terms, and tell random sampling apart from random assignment",
     "Judge a study’s internal, external and construct validity and the reliability of its measures, and write a one-page research proposal"
@@ -63,7 +64,7 @@ ICA.addUnit({
         ["Causal","Does one thing change another?","Does a text-message reminder raise vaccination rates?"],
         ["Exploratory","What is going on here, and how do people make sense of it?","How do new teachers in remote schools cope with isolation?"]
       ]},
-      "**Descriptive** questions need careful measurement and a sample that represents the population. **Comparative** and **relational** questions need enough cases in each group and good measures of both variables. **Causal** questions are the hardest: a [[correlation]] isn’t enough, so they need designs that rule out other explanations (Lesson 3, and {{correlation-causation}}). **Exploratory** questions usually start with “how” or “what” and suit qualitative designs, where you don’t know enough yet to measure.",
+      "**Descriptive** questions need careful measurement and a sample that represents the population. **Comparative** and **relational** questions need enough cases in each group and good measures of both variables. **Causal** questions are the hardest: a [[correlation]] isn’t enough, so they need designs that rule out other explanations (Lesson 4, and {{correlation-causation}}). **Exploratory** questions usually start with “how” or “what” and suit qualitative designs, where you don’t know enough yet to measure.",
       {warn:"Watch the verbs. “Does X **improve** Y?” is a causal question. If your design can only show that X and Y go together, ask a relational question instead (“Is X associated with Y?”), or change the design."}
     ]},
     {h:"Is it a good question? FINER", body:[
@@ -110,7 +111,7 @@ ICA.addUnit({
         ["Built-in assumption","Why do young people no longer read newspapers?","How do 18–25-year-olds in one city get their news?"]
       ]},
       "A **value question** (“should…?”) can’t be settled by evidence alone, because it depends on what people think is good. Research can inform it by answering factual parts: what happens, to whom, at what cost.",
-      "Your question may change as you read and plan. That’s normal. What matters is that the final question, the design and the analysis match each other. Lesson 5 calls this alignment."
+      "Your question may change as you read and plan. That’s normal. What matters is that the final question, the design and the analysis match each other. Lesson 6 calls this alignment."
     ]}
    ],
    try:[
@@ -163,7 +164,8 @@ ICA.addUnit({
       {t:"Keep the question; a large enough survey proves cause.", why:"Size doesn’t fix the problem. A huge survey still shows only an association."},
       {t:"Drop the walking part of the question, because walking can’t be measured well.", why:"Walking can be measured (questions, step counters). The issue is the causal wording."},
       {t:"Add “in the world” so the question is more relevant.", why:"That makes it less feasible and doesn’t fix the mismatch between a causal question and a one-time survey."}
-    ]}
+    ]},
+    {id:"t4u6-l1-x8", type:"explain", q:"Luis’s draft research question is “Does technology help farmers?” Explain what’s weak about it, and show how you would narrow it into a question evidence could answer.", size:"3–4 sentences", hint:"Add who, what exactly, where and when, and watch the verb.", model:"It’s really a topic: “technology” and “help” could mean almost anything, and there’s no population, place or time, so no study could ever finish answering it. “Help” also implies cause, which needs a strong design. I’d narrow it by adding who, what exactly, where and when, for example: “Among smallholder maize farmers in two districts, is using a mobile weather-alert service associated with planting dates in the 2026 season?” That names the people, the technology and the outcome, and is honest that it’s relational.", points:["Says the draft is too broad (vague terms, no population, place or time)", "Notes that “help” is a causal verb", "Narrows by adding who, what, where or when", "Gives a revised question that evidence could answer"]}
    ],
    apply:{intro:"Use a topic you genuinely care about, from work, study, your community or your curiosity. You will build on it through the rest of this unit.", tasks:[
      {t:"Narrow your topic in four steps", how:["Write your topic in two to five words.","Add who, what aspect, where and when, one at a time, rewriting the topic after each.","Do a five-minute search (any free search tool) to see whether people have studied your version. Note one thing that seems unknown.","Write your research question in one sentence, then an aim and two or three objectives."], write:"Topic… After who… after what… after where/when… What seems unknown… My question… Aim… Objectives…"},
@@ -207,7 +209,7 @@ ICA.addUnit({
     {h:"From concept to measurement", body:[
       "Next comes **operationalisation**: deciding exactly how each concept will be observed or measured. The result is an [[operational-definition|operational definition]], which you met in the sociology unit. Each measurable piece is a [[variable]], and the specific question, test, count or observation you use is an **indicator**.",
       {fig:"<svg viewBox=\"0 0 340 372\"><defs><marker id=\"t4u6-l2-ar\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0 L10 5 L0 10 Z\"/></marker></defs><text class=\"s\" x=\"30\" y=\"16\" text-anchor=\"middle\">abstract</text><path class=\"d-ink\" d=\"M30 170 L30 30\" stroke-width=\"2\" fill=\"none\" marker-end=\"url(#t4u6-l2-ar)\"/><path class=\"d-ink\" d=\"M30 190 L30 330\" stroke-width=\"2\" fill=\"none\" marker-end=\"url(#t4u6-l2-ar)\"/><text class=\"s\" x=\"30\" y=\"350\" text-anchor=\"middle\">concrete</text><rect class=\"d-lup\" x=\"62\" y=\"6\" width=\"270\" height=\"66\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"197\" y=\"28\" text-anchor=\"middle\">Theory</text><text class=\"s\" x=\"197\" y=\"46\" text-anchor=\"middle\">Social ties help people</text><text class=\"s\" x=\"197\" y=\"62\" text-anchor=\"middle\">find work</text><rect class=\"d-gold\" x=\"62\" y=\"100\" width=\"270\" height=\"66\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"197\" y=\"122\" text-anchor=\"middle\">Concept</text><text class=\"s\" x=\"197\" y=\"140\" text-anchor=\"middle\">Social ties</text><text class=\"s\" x=\"197\" y=\"156\" text-anchor=\"middle\">(“social capital”)</text><rect class=\"d-sage\" x=\"62\" y=\"194\" width=\"270\" height=\"66\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"197\" y=\"216\" text-anchor=\"middle\">Variable</text><text class=\"s\" x=\"197\" y=\"234\" text-anchor=\"middle\">Size of a person’s</text><text class=\"s\" x=\"197\" y=\"250\" text-anchor=\"middle\">job-help network</text><rect class=\"d-rose\" x=\"62\" y=\"288\" width=\"270\" height=\"66\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"197\" y=\"310\" text-anchor=\"middle\">Indicator (measure)</text><text class=\"s\" x=\"197\" y=\"328\" text-anchor=\"middle\">“How many people could help</text><text class=\"s\" x=\"197\" y=\"344\" text-anchor=\"middle\">you find a job?” 0 / 1–2 / 3+</text><path class=\"d-ink\" d=\"M110 74 L110 96\" stroke-width=\"2\" fill=\"none\" marker-end=\"url(#t4u6-l2-ar)\"/><text class=\"s\" x=\"124\" y=\"90\" text-anchor=\"start\">pick a concept</text><path class=\"d-ink\" d=\"M110 168 L110 190\" stroke-width=\"2\" fill=\"none\" marker-end=\"url(#t4u6-l2-ar)\"/><text class=\"s\" x=\"124\" y=\"184\" text-anchor=\"start\">conceptualise</text><path class=\"d-ink\" d=\"M110 262 L110 284\" stroke-width=\"2\" fill=\"none\" marker-end=\"url(#t4u6-l2-ar)\"/><text class=\"s\" x=\"124\" y=\"278\" text-anchor=\"start\">operationalise</text></svg>", alt:"A ladder of four boxes from abstract at the top to concrete at the bottom, with a double arrow on the left labelled abstract and concrete. Theory: social ties help people find work. Arrow labelled pick a concept. Concept: social ties (social capital). Arrow labelled conceptualise. Variable: size of a person’s job-help network. Arrow labelled operationalise. Indicator: the survey item how many people could help you find a job, with answers 0, 1 to 2, 3 or more.", cap:"From theory to measure. Each step down is a choice that readers need to see."},
-      "Good practice is to use **several indicators** for important concepts, because any single question is a rough measure. It also helps to reuse measures that other researchers have tested, so results can be compared, but check that they were tested with people like yours and in your language (Lesson 5).",
+      "Good practice is to use **several indicators** for important concepts, because any single question is a rough measure. It also helps to reuse measures that other researchers have tested, so results can be compared, but check that they were tested with people like yours and in your language (Lesson 6).",
       "Variables differ in their **[[levels-of-measurement|level of measurement]]**, a scheme set out by the psychologist S. S. Stevens in 1946. The level decides which summaries and analyses make sense:",
       {table:[
         ["Level","What the numbers mean","Example"],
@@ -233,7 +235,7 @@ ICA.addUnit({
         ["Mediator","The route by which a cause has its effect","Mentoring raises attendance **because** it raises students’ sense of belonging"],
         ["Moderator","Changes how strong an effect is, or for whom it occurs","A tutoring scheme helps younger pupils more than older ones"]
       ]},
-      "A [[confounder|confounding variable]] is the third variable behind a [[spurious-correlation|spurious correlation]], like the one between ice cream and sunscreen in the sociology unit. Good designs either neutralise confounders (random assignment, Lesson 3) or measure and control for the ones they can think of. Controls never cover confounders nobody measured."
+      "A [[confounder|confounding variable]] is the third variable behind a [[spurious-correlation|spurious correlation]], like the one between ice cream and sunscreen in the sociology unit. Good designs either neutralise confounders (random assignment, Lesson 4) or measure and control for the ones they can think of. Controls never cover confounders nobody measured."
     ]},
     {h:"Writing hypotheses", body:[
       "A [[hypothesis]] states the relationship you expect between variables, in a form that evidence could show to be wrong. Good hypotheses come from theory or earlier findings, name the variables and the population, and say which direction you expect:",
@@ -303,7 +305,8 @@ ICA.addUnit({
       {t:"I’ll then report the average answer to “Which region do you live in?”", flag:true, why:"Region is nominal. You can report how many people are in each region, but an average region means nothing."},
       " ",
       {t:"I’ll also ask how many meals each person ate yesterday.", flag:false, why:"A concrete, countable indicator of one dimension of food security."}
-    ]}
+    ]},
+    {id:"t4u6-l2-x8", type:"explain", q:"A study claims to measure “job stress” among teachers using one survey question: “How many hours a week do you work?” Explain the problem, using the ideas of conceptualisation and operationalisation.", size:"3–4 sentences", hint:"Does the indicator cover the whole concept, or just one dimension of it?", model:"The researcher has jumped straight from a concept to a survey question without conceptualising it. Job stress could be defined as strain when work demands exceed resources, with several dimensions: workload, lack of control, conflict with colleagues and emotional demands. Hours worked captures only part of workload, so the study measures one dimension and then claims to have measured the whole concept. Better operationalisation would use several tested indicators covering each dimension.", points:["Says the concept wasn’t defined (conceptualised) first", "Notes job stress has several dimensions", "Says one indicator captures only part of the concept", "Suggests several indicators or a tested measure"]}
    ],
    apply:{intro:"Keep working with the research question you wrote in Lesson 1, or pick a new topic you know well.", tasks:[
      {t:"Map one concept down to measures", how:["Choose the most important concept in your question.","Write a one-sentence conceptual definition, and list two to four dimensions.","For each dimension, write one concrete indicator (a question, a count or an observation).","Note the level of measurement of each indicator."], write:"Concept… Definition… Dimensions… Indicators and their levels…"},
@@ -316,7 +319,173 @@ ICA.addUnit({
     {book:"soc", where:"Chapter 2, Section 2.1 “Approaches to Sociological Research” (on LibreTexts: 2.2)", note:"Hypotheses, variables and operational definitions in plain words."}
    ]
   },
-  /* ===================== LESSON 3 ===================== */
+  /* ===================== LESSON 3 (t4u6-l6, placed before t4u6-l3) ===================== */
+  {id:"t4u6-l6", title:"Research philosophy: what counts as knowledge", minutes:55,
+   hook:{q:"Two researchers study why students leave a nursing course in their first year. One surveys 2,000 students and finds which factors predict leaving. The other interviews 15 people who left about what the decision meant to them. Which study is more scientific?", options:["The survey, because it uses numbers","The interviews, because they go deeper","Neither by default: each should be judged by standards that fit what it is trying to know","Neither: only experiments count as science"], answer:2, reveal:"**Neither by default.** The two studies rest on different assumptions about what the social world is like and what would count as knowing about it. Each can be done well or badly, and each should be judged by yardsticks that fit its aims. This lesson names those assumptions, from positivism to pragmatism, and shows how they shape a study from its question to its quality checks."},
+   goals:[
+     "Explain ontology, epistemology, methodology, methods and axiology in plain words",
+     "Describe positivism and post-positivism, interpretivism and constructivism, critical approaches and pragmatism, and what each counts as knowledge",
+     "Tell deduction, induction and abduction apart",
+     "Show how a stance shapes a study’s question, design, data and quality criteria",
+     "Write a short, consistent statement of your own position for a proposal"
+   ],
+   learn:[
+    {h:"Why philosophy turns up in a methods course", body:[
+      {lead:"Every study answers a question its author may never have asked out loud: what would count as knowing the answer?"},
+      "Take one topic: why some students leave a nursing course in their first year. Amara surveys every first-year student, then checks the college’s records to see who left, and finds which factors predict leaving. Kenji interviews 15 people who left and asks each to tell the story of the decision.",
+      "Amara wants factors that hold across many students, measured the same way for everyone. Kenji wants to understand what leaving meant to each person. Neither has made a mistake. They hold different assumptions about what the social world is like and how we can know it. A set of such assumptions is called a research [[paradigm]], a **research philosophy** or, in some textbooks, a **worldview**.",
+      "You need words for this for three practical reasons:",
+      {list:[
+        "**Choosing:** your assumptions shape which questions and designs seem sensible.",
+        "**Judging fairly:** a study should be judged by standards that fit what it set out to do.",
+        "**Writing proposals:** many programmes and funders expect a short statement of your position. The UK’s Economic and Social Research Council, for example, expects doctoral training to build an understanding of “alternative epistemological positions”."
+      ]},
+      {key:"A research philosophy isn’t a badge. It’s a set of assumptions you make visible, so that your question, design and quality checks fit together."}
+    ]},
+    {h:"Ontology and epistemology in plain words", body:[
+      "Two long words do most of the work. They ask ordinary questions:",
+      {table:[
+        ["Word","The plain question","Two contrasting answers"],
+        ["[[ontology|Ontology]]","What is there to study? What is the social world made of?","Social facts exist “out there”, like rivers / Social reality is made by what people believe and do"],
+        ["[[epistemology|Epistemology]]","How can we know about it? What counts as good evidence?","Careful, neutral measurement / Interpreting meanings, with the researcher’s role made visible"],
+        ["[[methodology|Methodology]]","What logic links evidence to claims?","Testing predictions / Building understanding from cases"],
+        ["Methods","Which tools collect and analyse the data?","Surveys, experiments, records / Interviews, observation, documents"]
+      ]},
+      "A fifth word, **[[axiology|axiology]]**, asks what role **values** play: should researchers try to keep their values out, declare them, or openly pursue change?",
+      "An analogy: a river and a national border. The river is there whether or not anyone names it, and you can measure its flow. The border is real too (try crossing one without the right papers), but it exists because people agree that it does and act on that agreement. Much of social life, from money to what counts as a “good school”, is more like the border: a [[social-construction|social construction]], which doesn’t mean unreal. Researchers disagree about how far this goes, and that shapes their methods.",
+      "The International Studies track applies the same layers to international relations ({{positivism-interpretivism}})."
+    ]},
+    {h:"Positivism and post-positivism", body:[
+      "[[positivism|Positivism]], named by Auguste Comte in the nineteenth century, holds that knowledge should come from what can be observed and measured, and that the social world, like the natural one, has regular patterns that research can discover and test. Bhattacherjee notes that it dominated science until the mid-twentieth century.",
+      "Few researchers today hold that strict view. Most quantitative researchers are better described as **[[post-positivism|post-positivists]]**. They keep the aim of explaining patterns and causes, but accept that:",
+      {list:[
+        "**Knowledge is fallible.** Karl Popper argued, in *The Logic of Scientific Discovery* (first published in German in 1934), that theories can never be proved true, only tested and, if they fail, rejected. A good hypothesis is **[[falsifiability|falsifiable]]**: some possible evidence would show it to be wrong.",
+        "**Observation is shaped by theory.** What we measure, and how, depends on the concepts we bring.",
+        "**Objectivity is a goal, not a guarantee.** It is pursued through shared procedures: clear measures, random sampling and assignment, peer review and replication."
+      ]},
+      "A related position, **[[critical-realism|critical realism]]**, associated with the philosopher Roy Bhaskar, holds that real structures and mechanisms (a labour market, a class system) exist even when we can’t observe them directly, and that research should explain them, not only record regular patterns.",
+      "In practice this means hypotheses derived from theory, standardised measures, experiments, surveys and statistics. It is judged by the yardsticks of Lesson 6: internal, external and construct validity, reliability and replication."
+    ]},
+    {h:"Interpretivism and constructivism", body:[
+      "[[interpretivism|Interpretivism]] starts from a different observation: people act on the meanings things have for them. The anthropologist Clifford Geertz, borrowing an example from the philosopher Gilbert Ryle, pointed out that the same movement of an eyelid can be a twitch, a wink or a parody of a wink. Counting movements can’t tell them apart; understanding the situation can. Max Weber called this kind of understanding [[verstehen]], and the sociology unit met the wider tradition as [[antipositivism]].",
+      "**[[constructivism-research|Constructivism]]** (or constructionism) adds a claim about what exists: much of social reality is built through shared meanings and interaction, so there can be several valid accounts of the same situation. Egon Guba and Yvonna Lincoln, who made it influential in qualitative research (it isn’t the international relations theory of the same name), also set out the trustworthiness criteria you meet in Unit 7 ({{trustworthiness}}).",
+      "In practice this means open “how” and “what is it like” questions, interviews, observation and documents, small purposive samples, and analysis that interprets meaning in context. The researcher is part of the process, so [[reflexivity]] is a core skill. Quality is judged by [[trustworthiness-term|trustworthiness]] (credibility, transferability, dependability and confirmability), not by statistical generalisation."
+    ]},
+    {h:"Critical approaches", body:[
+      "A third family asks a different question: not only “what is happening?” or “what does it mean?”, but “whose interests does this serve, and how could it change?”. These **[[critical-paradigm|critical approaches]]** treat research as part of the work of exposing and reducing injustice. They include:",
+      {list:[
+        "**Critical theory** from the Frankfurt School. Max Horkheimer’s 1937 essay “Traditional and Critical Theory” argued that social research should aim at emancipation, not at knowledge for its own sake.",
+        "**Feminist research**, which puts gender and power at the centre and often starts from the lives of people whose experience has been overlooked ([[feminist-theory]]).",
+        "**Critical race theory, postcolonial and decolonial research**, which examine how race and colonial histories shape institutions and knowledge itself.",
+        "**Participatory action research**, associated with the Colombian sociologist Orlando Fals-Borda among others, in which communities help set the questions, analyse the data and use the results.",
+        "**Indigenous research paradigms**, set out for example by Linda Tuhiwai Smith (*Decolonizing Methodologies*, 1999) and Shawn Wilson (*Research Is Ceremony*, 2008), which centre relationships and community control."
+      ]},
+      "John W. Creswell and J. David Creswell’s *Research Design* (6th edition, 2023) groups many of these as a **transformative** worldview. Critical researchers use any method, surveys included; what marks them is the aim: making power visible, working with participants rather than on them, and stating values openly. Patti Lather (1986) proposed **catalytic validity** as one test: how far the research helps participants understand and change their situation."
+    ]},
+    {h:"Pragmatism, and three ways of reasoning", body:[
+      "**[[pragmatism-research|Pragmatism]]** comes from the American philosophers Charles Sanders Peirce, William James and John Dewey, starting in the 1870s. It judges ideas by their practical consequences. Pragmatist researchers start from the problem and use whatever combination of methods best answers it.",
+      "It is the most common philosophical justification for [[mixed-methods-term|mixed methods]] (Lesson 4). David Morgan’s 2007 article “Paradigms lost and pragmatism regained” argued that it lets researchers move between numbers and words without pretending the philosophical questions have vanished. Critics reply that “whatever works” can become an excuse to skip those questions; good pragmatist studies still explain why each part fits.",
+      "Stances also lean towards different ways of reasoning from evidence:",
+      {table:[
+        ["Logic","Moves from…","Example (invented)"],
+        ["Deduction","A theory to a prediction, which is then tested","If social ties help people find work, people with bigger networks should find jobs faster"],
+        ["Induction","Many observations to a general pattern","After 20 interviews, a pattern: leavers all describe feeling invisible on placements"],
+        ["[[abductive-reasoning|Abduction]]","A surprising fact to the best available explanation, which is then checked","Absence is highest at the cleanest school; perhaps its illness policy is stricter, so check its records"]
+      ]},
+      "Lesson 2 described deduction (theory-testing) and induction (theory-building). Peirce named the third, **abduction**: reasoning from a surprise to the most plausible explanation, then testing it. Real projects often cycle through all three ({{logics-of-inquiry}})."
+    ]},
+    {h:"From stance to study", body:[
+      "The invented nursing example, two ways and then four:",
+      {fig:'<svg viewBox="0 0 340 472"><defs><marker id="t4u6-l6-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text class="s" x="170" y="16" text-anchor="middle">One topic: leaving a course early</text><text x="86" y="40" text-anchor="middle">Post-positivist</text><text x="254" y="40" text-anchor="middle">Interpretivist</text><rect class="d-lup" x="8" y="52" width="156" height="58" rx="8" stroke-width="1.5"/><text x="86" y="72" text-anchor="middle">Stance</text><text class="s" x="86" y="89" text-anchor="middle">Patterns and causes</text><text class="s" x="86" y="104" text-anchor="middle">can be measured</text><rect class="d-gold" x="176" y="52" width="156" height="58" rx="8" stroke-width="1.5"/><text x="254" y="72" text-anchor="middle">Stance</text><text class="s" x="254" y="89" text-anchor="middle">Meanings are made;</text><text class="s" x="254" y="104" text-anchor="middle">understand them</text><path class="d-ink" d="M86 112 L86 123" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><path class="d-ink" d="M254 112 L254 123" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><rect class="d-lup" x="8" y="126" width="156" height="58" rx="8" stroke-width="1.5"/><text x="86" y="146" text-anchor="middle">Question</text><text class="s" x="86" y="163" text-anchor="middle">Which factors</text><text class="s" x="86" y="178" text-anchor="middle">predict leaving?</text><rect class="d-gold" x="176" y="126" width="156" height="58" rx="8" stroke-width="1.5"/><text x="254" y="146" text-anchor="middle">Question</text><text class="s" x="254" y="163" text-anchor="middle">How do leavers</text><text class="s" x="254" y="178" text-anchor="middle">make sense of it?</text><path class="d-ink" d="M86 186 L86 197" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><path class="d-ink" d="M254 186 L254 197" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><rect class="d-lup" x="8" y="200" width="156" height="58" rx="8" stroke-width="1.5"/><text x="86" y="220" text-anchor="middle">Design</text><text class="s" x="86" y="237" text-anchor="middle">Survey all first-years,</text><text class="s" x="86" y="252" text-anchor="middle">link to records</text><rect class="d-gold" x="176" y="200" width="156" height="58" rx="8" stroke-width="1.5"/><text x="254" y="220" text-anchor="middle">Design</text><text class="s" x="254" y="237" text-anchor="middle">In-depth interviews</text><text class="s" x="254" y="252" text-anchor="middle">with 15 leavers</text><path class="d-ink" d="M86 260 L86 271" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><path class="d-ink" d="M254 260 L254 271" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><rect class="d-lup" x="8" y="274" width="156" height="58" rx="8" stroke-width="1.5"/><text x="86" y="294" text-anchor="middle">Data</text><text class="s" x="86" y="311" text-anchor="middle">Scores, counts,</text><text class="s" x="86" y="326" text-anchor="middle">left: yes or no</text><rect class="d-gold" x="176" y="274" width="156" height="58" rx="8" stroke-width="1.5"/><text x="254" y="294" text-anchor="middle">Data</text><text class="s" x="254" y="311" text-anchor="middle">Words, stories,</text><text class="s" x="254" y="326" text-anchor="middle">context</text><path class="d-ink" d="M86 334 L86 345" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><path class="d-ink" d="M254 334 L254 345" stroke-width="2" fill="none" marker-end="url(#t4u6-l6-ar)"/><rect class="d-lup" x="8" y="348" width="156" height="58" rx="8" stroke-width="1.5"/><text x="86" y="368" text-anchor="middle">Judged by</text><text class="s" x="86" y="385" text-anchor="middle">Validity, reliability,</text><text class="s" x="86" y="400" text-anchor="middle">generalisability</text><rect class="d-gold" x="176" y="348" width="156" height="58" rx="8" stroke-width="1.5"/><text x="254" y="368" text-anchor="middle">Judged by</text><text class="s" x="254" y="385" text-anchor="middle">Credibility,</text><text class="s" x="254" y="400" text-anchor="middle">transferability</text><text class="s" x="170" y="440" text-anchor="middle">Invented example. Each choice should</text><text class="s" x="170" y="458" text-anchor="middle">follow from the one above it.</text></svg>', alt:"Two columns of five boxes joined by downward arrows, for one invented topic, students leaving a course early. Post-positivist column: stance, patterns and causes can be measured; question, which factors predict leaving?; design, survey all first-years and link to records; data, scores, counts and whether each student left; judged by validity, reliability and generalisability. Interpretivist column: stance, meanings are made, so understand them; question, how do leavers make sense of it?; design, in-depth interviews with 15 leavers; data, words, stories and context; judged by credibility and transferability.", cap:"The same topic, two stances. Each choice should follow from the one above it."},
+      {table:[
+        ["Stance","Question","Design and data","Judged mainly by"],
+        ["Post-positivist","Which first-year factors predict leaving, and how strongly?","Survey of all first-years linked to records; regression","Validity, reliability, generalisability"],
+        ["Interpretivist","How do students who left make sense of the decision?","Interviews with 15 leavers; thematic analysis","Credibility, transferability, reflexivity"],
+        ["Critical","How do placement rules and costs push some groups out, and what would change that?","Participatory study with student groups; documents and interviews","Whether it exposes power, gives participants a voice and supports change"],
+        ["Pragmatist","What would most reduce first-year leaving at this college?","Survey, then interviews to explain the results","Whether the answer is usable and each strand fits its part of the question"]
+      ]},
+      {key:"Stance, question, design, data and quality criteria should fit together. Lesson 6 calls this alignment, the golden thread of a proposal."}
+    ]},
+    {h:"No single right paradigm", body:[
+      "In the 1980s, education and social research had long arguments sometimes called the **paradigm wars** (N. L. Gage’s 1989 article popularised the name). Some argued that paradigms are incompatible, so numbers and words can’t be combined. Most methods textbooks now take a more relaxed view:",
+      {list:[
+        "**No paradigm is best in general.** A causal question about a vaccine and a question about what an illness means to a family need different tools.",
+        "**Data type isn’t philosophy.** As Lesson 4 notes, numbers don’t make a study positivist and words don’t make it interpretive. A constructivist can count; a post-positivist can interview.",
+        "**Many researchers sit between positions,** and fields differ: much health research is post-positivist by habit, much anthropology interpretive.",
+        "**Consistency matters more than the label.** Examiners rarely mark you down for your choice of position; they do for claiming one and then contradicting it."
+      ]},
+      "Every stance also has critics. Post-positivist research is charged with missing what things mean to people; interpretive research with findings that are hard to check or generalise; critical research with letting values steer conclusions; pragmatism with skipping the philosophical questions. Knowing the criticisms of your own stance helps you answer them in a proposal.",
+      {ex:"This study takes an interpretivist position: it treats students’ decisions to leave as shaped by the meanings they give to placements, money and belonging. It therefore asks an open “how” question and uses in-depth interviews with 15 recent leavers. Quality will be judged by credibility and transferability: participants will comment on a summary of the findings, and the setting will be described in enough detail for readers to judge fit. Because the researcher once studied nursing, she will keep a reflexive journal.", label:"Worked example: a position statement for a proposal (invented)"},
+      {warn:"Common slips: naming a paradigm and never using it again; promising to be “completely objective” in an interview study of your own workplace; and treating your own position as the only scientific one."}
+    ]}
+   ],
+   try:[
+    {id:"t4u6-l6-x1", type:"match", q:"Match each plain question to the word philosophers of research use for it.", pairs:[
+      ["What is the social world made of, and what exists to be studied?","Ontology","Ontology is about what exists: regularities “out there”, shared meanings, hidden structures."],
+      ["How can we know about it, and what counts as good evidence?","Epistemology","Epistemology is about knowledge: how we can know and what justifies a claim."],
+      ["What logic links our evidence to our conclusions?","Methodology","Methodology is the reasoning behind the design, such as testing predictions or building understanding from cases."],
+      ["Which tools will collect and analyse the data?","Methods","Methods are the specific techniques: a questionnaire, an interview guide, a regression."],
+      ["What role should the researcher’s values play?","Axiology","Axiology is about values: keep them out, declare them, or openly pursue change."]
+    ]},
+    {id:"t4u6-l6-x2", type:"sort", q:"Each sentence comes from an invented methods section. Which stance does it express most clearly?", buckets:["Post-positivist","Interpretivist or constructivist","Critical","Pragmatist"], items:[
+      {t:"We derived a hypothesis from theory and tested it on a random sample; the result could have shown it to be wrong.", b:0, why:"Testing a falsifiable prediction from theory on a probability sample is the post-positivist pattern."},
+      {t:"An independent team repeating the study is the best check on our finding.", b:0, why:"Replication as the route to reliable knowledge is a post-positivist value."},
+      {t:"We wanted to understand what the diagnosis means to each family, in their own words.", b:1, why:"Seeking meanings in participants’ own terms is the interpretive aim."},
+      {t:"Each person at the meeting gave a different account of what happened, and each is part of the story we tell.", b:1, why:"Treating several accounts as valid constructions is constructivist, not a search for one correct version."},
+      {t:"Our aim is to show how the housing rules disadvantage tenants, and to help tenants change them.", b:2, why:"Exposing power and supporting change is the defining aim of critical approaches."},
+      {t:"Tenants’ groups set the questions with us and will decide how the findings are used.", b:2, why:"Sharing control with participants is the mark of participatory, critical research."},
+      {t:"We combined a survey and interviews because together they answer the question best.", b:3, why:"Choosing methods by what best answers the problem is the pragmatist rationale, common in mixed methods."},
+      {t:"We judged each idea by what practical difference it would make for the clinic.", b:3, why:"Judging ideas by their practical consequences is the core pragmatist test, going back to Peirce."}
+    ]},
+    {id:"t4u6-l6-x3", type:"mcq", q:"Mei counts how many of her 30 interviewees mention each theme and reports the counts in a table. A classmate says: “Now your study is positivist.” What is the best reply?", options:[
+      {t:"Not necessarily: numbers are a kind of data, not a philosophy", ok:true, why:"Yes. What matters is what she assumes and claims. An interpretive study can report counts to show how widespread a theme was among participants, as long as it doesn’t present them as population estimates. Bhattacherjee makes the same point: data types and paradigms usually travel together, but not always."},
+      {t:"Yes: as soon as a study reports numbers, it becomes positivist.", why:"Data type doesn’t decide philosophy. Constructivists can count and post-positivists can interview."},
+      {t:"Yes, so she should delete the counts to stay interpretive.", why:"Counts can usefully show how often a theme came up. Deleting them doesn’t make the study better; describing them honestly does."},
+      {t:"No, because interview data can never be turned into numbers.", why:"Interview data can be coded and counted; content analysis often does exactly that. The point is what the numbers are used to claim."}
+    ]},
+    {id:"t4u6-l6-x4", type:"match", q:"Match each way of reasoning to an invented example.", pairs:[
+      ["Deduction","If money worries cause leaving, students with a bursary should leave less often; compare the two groups.","It starts from a theory, derives a prediction and tests it."],
+      ["Induction","Across 20 interviews, leavers kept describing their first placement; a pattern about placements emerges.","It moves from many observations to a general pattern."],
+      ["Abduction","Leaving is highest on the course with the best-rated teaching. The likeliest explanation is its long commute to placements, so check that next.","It reasons from a surprising fact to the most plausible explanation, which is then checked."]
+    ]},
+    {id:"t4u6-l6-x5", type:"spot", q:"Kenji drafted the philosophy paragraph of his proposal. Tap each part that **doesn’t fit** the rest.", ask:"doesn’t fit", parts:[
+      {t:"This study takes an interpretivist position, focusing on what caring for a parent means to adult children.", flag:false, why:"A clear statement of the stance and the focus. Everything else should follow from it."},
+      " ",
+      {t:"I will interview 12 carers in depth, chosen purposively for a range of situations.", flag:false, why:"In-depth interviews with a purposive sample fit an interpretive question about meanings."},
+      " ",
+      {t:"The aim is to find the single objective truth about carers’ experience, free of any influence from me.", flag:true, why:"An interpretive study expects several valid accounts and treats the researcher as part of the process. A single objective truth is a different stance."},
+      " ",
+      {t:"I will keep a reflexive journal, because my own experience as a carer will shape what I notice.", flag:false, why:"Reflexivity is exactly what an interpretive study should plan for."},
+      " ",
+      {t:"Quality will be judged mainly by whether the 12 carers statistically represent all carers in the country.", flag:true, why:"Statistical representativeness is a post-positivist yardstick. An interpretive study is judged by credibility and transferability."}
+    ]},
+    {id:"t4u6-l6-x6", type:"mcq", q:"Tomás wants to find out whether a free breakfast scheme raised attendance in 40 schools, and also why some head teachers embraced it while others didn’t. Which stance most naturally justifies a design that uses both attendance records and interviews?", options:[
+      {t:"Pragmatism: choose the mix of methods that best answers each part of the problem.", ok:true, why:"Yes. His two questions need different evidence, and pragmatism is the usual justification for combining them in one mixed methods design."},
+      {t:"Strict positivism: only the attendance figures count as knowledge.", why:"That would rule out the interviews, yet his second question is about head teachers’ reasons, which records can’t show."},
+      {t:"Constructivism: attendance is a construction, so it can’t be measured.", why:"A constructivist needn’t deny that attendance can be counted. And this answer would rule out his first question."},
+      {t:"Critical theory, which every study of schools must use.", why:"Critical approaches fit questions about power and change. No stance is required for a whole field."}
+    ]},
+    {id:"t4u6-l6-x7", type:"sort", q:"Which family of stances does each quality yardstick mainly come from?", buckets:["Post-positivist","Interpretivist","Critical"], items:[
+      {t:"Internal validity: could something other than the cause explain the result?", b:0, why:"Ruling out rival causal explanations is the core post-positivist check (Lesson 6)."},
+      {t:"Statistical generalisation from a random sample to a population", b:0, why:"Generalising by probability sampling is a post-positivist goal."},
+      {t:"Test–retest reliability of a measure", b:0, why:"Consistent measurement is a post-positivist concern."},
+      {t:"Credibility: participants recognise the account as true to their experience", b:1, why:"Credibility is one of Lincoln and Guba’s trustworthiness criteria for interpretive research."},
+      {t:"Transferability: enough detail for readers to judge whether findings fit their setting", b:1, why:"Transferability replaces statistical generalisation in interpretive research."},
+      {t:"Catalytic validity: the research helps participants understand and change their situation", b:2, why:"Patti Lather proposed catalytic validity for research that openly aims at change."}
+    ]},
+    {id:"t4u6-l6-x8", type:"explain", q:"Two researchers study why people stop using a city’s bike-share scheme. One is post-positivist, the other interpretivist. Explain how their questions and methods would probably differ, and why neither is simply wrong.", size:"3–4 sentences", hint:"What does each count as knowledge, and how would each judge quality?", model:"The post-positivist assumes there are patterns that can be measured, so might survey many users and link the answers to usage records to find which factors predict stopping, judged by validity, reliability and generalisability. The interpretivist focuses on meanings, so might interview a few people who stopped about what the decision meant to them, judged by credibility and transferability. They answer different questions, so neither is wrong; what matters is that each study’s stance, question, design and quality criteria fit together.", points:["Describes a post-positivist approach (measuring patterns or predictors, many cases)", "Describes an interpretivist approach (meanings, interviews, few cases)", "Mentions that they are judged by different quality criteria", "Says what matters is consistency or fit, not one right paradigm"]}
+   ],
+   apply:{intro:"Keep working with the research question from Lessons 1 and 2. This is thinking on paper; no data collection.", tasks:[
+     {t:"Find the stance in a real study", how:["Use the open-access study you found in Lesson 2, or find another with any free search tool.","Read the methods section. Look for words that signal a stance: “hypothesis”, “objective”, “generalise”, “lived experience”, “interpretive”, “constructivist”, “participatory”, “pragmatic”.","Decide whether the authors name a stance, imply one, or leave it unclear.","Check whether the question, design and quality checks fit that stance."], write:"Study… Stance named or implied… Signal words… Does the design fit?…"},
+     {t:"Ask your question four ways", how:["Rewrite your research question as a post-positivist, an interpretivist, a critical researcher and a pragmatist might ask it.","For each version, note one design that would suit it.","Choose the version you would actually study, and say in two sentences why it fits your topic, your skills and what you want to know."], write:"Post-positivist version… Interpretivist… Critical… Pragmatist… My choice and why…"},
+     {t:"Write your position statement", how:["In three to five sentences, state your stance, what it means for your question, the design it leads to, and how quality will be judged. Use the worked example as a model, not a template.","Replace any jargon you can’t explain in plain words.","Read it to a friend or family member and ask them to say back what kind of answer your study will give."], write:"My statement… What my listener said my study would find out… What I changed…"}
+   ], proof:"In your notes: the stance of one real study and whether its design fits, your question written four ways with your choice, and a three-to-five-sentence position statement you can paste into the proposal in Lesson 6."},
+   read:[
+    {book:"bhatt", where:"Chapter 3, “The Research Process”, section “Paradigms of social research”", note:"Defines ontology and epistemology, then sorts research into Burrell and Morgan’s (1979) four paradigms (functionalism, interpretivism, radical structuralism and radical humanism) by whether the social world is seen as orderly or changing, and whether it is studied objectively or through participants’ views. Written in 2012: it doesn’t cover pragmatism, now the usual basis for mixed methods."},
+    {book:"hurst", where:"Chapter 3, “A Short Chapter on Epistemology (How Do We Know What We Know?)”", note:"Four epistemological perspectives (objectivism, subjectivism, constructivism and critical realism), standpoint theory, and a short recap of ontology, epistemology and axiology, written from the qualitative side."}
+   ]
+  },
+  /* ===================== LESSON 4 (t4u6-l3) ===================== */
   {id:"t4u6-l3", title:"Choosing a research design", minutes:60,
    hook:{q:"In 1854, during a cholera outbreak in London, John Snow compared deaths in households whose water came from two different companies. One took its water from a part of the Thames polluted by sewage; the other had moved its intake upstream. Nobody was assigned to a company by a researcher. What kind of study was this?", options:["A randomised controlled trial","A natural experiment","A case study of one household","A survey of opinions about water"], answer:1, reveal:"It was a **[[natural-experiment|natural experiment]]**. Households in the same streets got different water for reasons unrelated to their health, so the companies’ customers were comparable in most other ways, almost as if someone had assigned them. Deaths were far higher among households supplied with the polluted water, strong evidence that cholera spread through water. This lesson is about choosing designs like that: the plan that lets your data answer your question."},
    goals:[
@@ -336,7 +505,7 @@ ICA.addUnit({
         "**[[qualitative-research|Qualitative research]]** collects words, observations and images to understand meanings, experiences and processes in depth, usually with fewer cases.",
         "**[[mixed-methods-term|Mixed methods research]]** collects and deliberately combines both."
       ]},
-      "Bhattacherjee adds a useful warning: “quantitative” and “qualitative” describe **data**, while “positivist” (theory-testing) and “interpretive” (theory-building) describe **approaches**. They usually travel together, but not always. A case study can count things; a survey can include open questions. (The sociology unit calls these kinds of data [[quantitative-data|quantitative]] and [[qualitative-data|qualitative data]].)",
+      "Bhattacherjee adds a useful warning: “quantitative” and “qualitative” describe **data**, while “positivist” (theory-testing) and “interpretive” (theory-building) describe **approaches**. They usually travel together, but not always. A case study can count things; a survey can include open questions. (The sociology unit calls these kinds of data [[quantitative-data|quantitative]] and [[qualitative-data|qualitative data]].) Lesson 3 explains these philosophical positions ({{research-paradigms}}).",
       {key:"There is no best design, only a design that fits the question, the setting, the ethics and your resources."}
     ]},
     {h:"Experiments and random assignment", body:[
@@ -403,7 +572,7 @@ ICA.addUnit({
    try:[
     {id:"t4u6-l3-x1", type:"mcq", q:"Why does **random assignment** make an experiment such a strong test of cause?", options:[
       {t:"Chance makes the groups alike on average, even in things nobody measured.", ok:true, why:"Exactly. So a difference afterwards is most likely due to the intervention. That is what lets experiments rule out confounding variables, even unknown ones."},
-      {t:"It makes the sample represent the whole population.", why:"That’s random **sampling**, which is about generalising. Random assignment is about fair comparison between groups (Lesson 4 compares the two)."},
+      {t:"It makes the sample represent the whole population.", why:"That’s random **sampling**, which is about generalising. Random assignment is about fair comparison between groups (Lesson 5 compares the two)."},
       {t:"It makes the experiment cheaper.", why:"Random assignment costs almost nothing extra, but saving money isn’t why it’s powerful."},
       {t:"It guarantees that participants don’t know they’re taking part in a study.", why:"Participants usually do know, and must consent. Random assignment is about who gets the intervention, not secrecy."}
     ]},
@@ -447,7 +616,8 @@ ICA.addUnit({
       {t:"A larger survey sample.", why:"Sample size might matter for the survey, but it doesn’t make the study mixed methods."},
       {t:"Doing the interviews first.", why:"Convergent designs collect both strands at the same time; the order isn’t the problem."},
       {t:"A hypothesis for the interviews.", why:"Qualitative strands usually work from questions, not hypotheses. That isn’t what’s missing."}
-    ]}
+    ]},
+    {id:"t4u6-l3-x8", type:"explain", q:"Why can a randomised experiment support a claim that a programme caused an outcome, when comparing people who chose to join the programme with people who didn’t is much weaker?", size:"3–4 sentences", hint:"What does chance do to all the other differences between groups?", model:"When chance decides who gets the programme, everything else, such as motivation, health or age, is spread evenly between the groups on average, even things nobody measured. So if the groups differ at the end, the programme is the most likely cause. When people choose to join, the joiners may already differ, for example by being keener, and that selection could explain the result instead. Researchers can measure and control for some differences, but never ones they didn’t measure.", points:["Says random assignment spreads other differences evenly between groups", "Notes this includes things nobody measured", "Explains selection: people who choose to join may already differ", "Concludes the difference at the end can be put down to the programme"]}
    ],
    apply:{intro:"Use your own research question from Lessons 1 and 2. This is planning on paper; no data collection yet.", tasks:[
      {t:"Design it three ways", how:["Sketch three different designs that could address your question, for example a cross-sectional survey, a longitudinal or experimental design, and a qualitative case study.","For each, write one sentence on what it could show and one on what it couldn’t.","Choose the design that fits your question and resources best, and say why."], write:"Design 1… can show… can’t show… Design 2… Design 3… My choice and why…"},
@@ -460,7 +630,7 @@ ICA.addUnit({
     {book:"soc", where:"Chapter 2, Section 2.2 “Research Methods” (on LibreTexts: 2.3)", note:"Surveys, field research, experiments and secondary data, with sociology examples."}
    ]
   },
-  /* ===================== LESSON 4 ===================== */
+  /* ===================== LESSON 5 (t4u6-l4) ===================== */
   {id:"t4u6-l4", title:"Sampling: who and how many", minutes:55,
    hook:{q:"Before the 1936 US presidential election, the magazine *Literary Digest* polled its readers and others on lists it compiled, and received over two million replies. Pollsters such as George Gallup used far smaller samples. Who predicted the winner correctly?", options:["*Literary Digest*, because two million replies is enormous","Both got it right","Gallup and the other small-sample pollsters","Neither: elections can’t be predicted"], answer:2, reveal:"**Gallup and the other small-sample pollsters.** The *Digest* predicted that Alf Landon would beat Franklin Roosevelt; Roosevelt won by a landslide. Its huge sample came from lists and returns that didn’t represent all voters, and size can’t fix a biased way of choosing people. This lesson is about choosing samples well, and then about how many you need."},
    goals:[
@@ -513,7 +683,7 @@ ICA.addUnit({
         ["What it protects","External validity: results can be generalised to the population","Internal validity: differences between groups can be put down to the intervention"],
         ["Typical use","Surveys","Experiments"]
       ]},
-      "A study can have one, both or neither. Many medical trials use random assignment with volunteers who weren’t randomly sampled: the comparison is fair, but the volunteers may not represent all patients. A national survey uses random sampling without assigning anything: it represents the population, but can’t prove cause. Lesson 5 builds on this.",
+      "A study can have one, both or neither. Many medical trials use random assignment with volunteers who weren’t randomly sampled: the comparison is fair, but the volunteers may not represent all patients. A national survey uses random sampling without assigning anything: it represents the population, but can’t prove cause. Lesson 6 builds on this.",
       {key:"Random sampling lets you generalise. Random assignment lets you claim cause."}
     ]},
     {h:"How many? Sample size in plain terms", body:[
@@ -589,7 +759,8 @@ ICA.addUnit({
       {t:"Because there are 300,000 teachers, I need to survey 30,000 (10%).", flag:true, why:"The 10% rule is a myth. Precision depends on the sample size; a well-drawn random sample of a few thousand would be ample."},
       " ",
       {t:"I’ll invite extra teachers because I expect some not to reply.", flag:false, why:"Good planning for non-response, though she should also check whether those who don’t reply differ from those who do."}
-    ]}
+    ]},
+    {id:"t4u6-l4-x8", type:"explain", q:"Explain the difference between random sampling and random assignment, with an example of a study that uses one but not the other.", size:"3–4 sentences", hint:"What does chance decide in each, and what does each protect?", model:"Random sampling uses chance to decide who gets into the study, so the sample can represent the population and results can be generalised: that’s external validity. Random assignment uses chance to decide which group each participant joins, so differences between groups can be put down to the intervention: that’s internal validity. For example, a national survey uses random sampling but assigns nothing, so it represents the country but can’t prove cause. Many drug trials randomly assign volunteers who weren’t randomly sampled.", points:["Says random sampling decides who is in the study", "Says random assignment decides which group people join", "Links sampling to generalising and assignment to cause", "Gives an example of a study with one but not the other"]}
    ],
    apply:{intro:"Plan the sample for your own question, and practise drawing a random sample.", tasks:[
      {t:"Write a sampling plan", how:["Name your target population precisely.","Name a realistic sampling frame and who it misses.","Choose a sampling method, probability or non-probability, and justify it from your question.","Say roughly how many people or cases you need and why, without inventing precision. Include how many you would invite."], write:"Population… Frame and who it misses… Method and why… How many, and how I decided…"},
@@ -601,7 +772,7 @@ ICA.addUnit({
     {book:"soc", where:"Chapter 2, Section 2.2 “Research Methods” (on LibreTexts: 2.3), the part on surveys", note:"Populations, samples and random samples, with examples."}
    ]
   },
-  /* ===================== LESSON 5 ===================== */
+  /* ===================== LESSON 6 (t4u6-l5) ===================== */
   {id:"t4u6-l5", title:"Validity, reliability and the proposal", minutes:60,
    hook:{q:"A well-run trial shows that a new teaching method raised reading scores among 9-year-olds in 40 city schools. A rural district wants to use it for 14-year-olds. What does the trial tell them?", options:["It will definitely work for them, because the trial was well run","Nothing at all, because the trial was in cities","It’s good evidence that the method worked for those pupils, but whether it carries over to older, rural pupils is a separate question","The trial must have been badly designed, or it would apply everywhere"], answer:2, reveal:"A study can be convincing about **what happened inside it** ([[internal-validity|internal validity]]) and still leave open **whether it carries over** to other people, places and times ([[external-validity|external validity]]). They are different questions with different evidence. This lesson sets out the main kinds of validity, how measures are checked for reliability, and how to put your whole plan on one page."},
    goals:[
@@ -666,16 +837,16 @@ ICA.addUnit({
     {h:"Planning a proposal", body:[
       "A [[research-proposal-term|research proposal]] sets out what you will study, why, and how, before you start. You write one to get a place on a programme, approval from a supervisor, money from a funder or permission from an ethics committee. Each has its own template and length (a few pages to many), so always follow the one you are given. The core is the same everywhere, and it fits on one page:",
       {ex:"Title: says the topic, population and setting\nBackground and problem (3–4 sentences): what is known, what isn’t, why it matters\nResearch question(s) and aim; hypotheses if the study tests any\nTheory or conceptual framework (1–2 sentences)\nDesign: approach and design, and why it fits the question\nParticipants and sampling: population, frame, method, size and how you chose it\nData collection: measures, interview guide or sources; how and when\nAnalysis: how you will turn the data into an answer\nEthics: consent, privacy, risks, approvals needed\nLimitations: the main threats to validity, and what you will do about them\nTimeline and resources: key stages, costs, skills or access needed\nKey references: the 3–5 most important sources", label:"A one-page proposal outline"},
-      "The most important quality is **alignment**: each part follows from the one before. A causal question needs a design that can support cause; a “how common?” question needs a probability sample; the analysis must use the data you plan to collect. Reviewers often call this the golden thread.",
+      "The most important quality is **alignment**: each part follows from the one before. A causal question needs a design that can support cause; a “how common?” question needs a probability sample; the analysis must use the data you plan to collect. Reviewers often call this the golden thread. Many programmes also ask for a short statement of your research philosophy (Lesson 3, {{research-paradigms}}).",
       {key:"A strong proposal isn’t the most ambitious one. It’s the one where the question, the design, the sample and the analysis clearly fit together, and the limits are stated honestly."}
     ]},
     {h:"Checking your plan", body:[
       "Before you share a proposal, test it with these questions:",
       {ol:[
         "Could someone who has never met you say, after one reading, exactly what you will find out?",
-        "Does the design match the question type (Lesson 3)?",
+        "Does the design match the question type (Lesson 4)?",
         "Is every concept defined and operationalised (Lesson 2)?",
-        "Does the sample fit what you want to claim (Lesson 4)?",
+        "Does the sample fit what you want to claim (Lesson 5)?",
         "Which threats to validity remain, and have you said so?",
         "Is it feasible in your time, with your money and access?",
         "Have you planned consent, privacy and ethics review (Unit 9)?"
@@ -735,11 +906,12 @@ ICA.addUnit({
       {t:"Claim the findings apply to all nurses, because 18 is a large number of interviews.", why:"18 interviews in one hospital can’t represent all nurses statistically, however rich they are."},
       {t:"Add a margin of error to the interview themes.", why:"Margins of error need a probability sample and numerical estimates; they don’t apply to interview themes."},
       {t:"Say that qualitative research never needs to consider other settings.", why:"Readers rightly want to know where findings might apply. Qualitative research answers that with transferability, not by ignoring it."}
-    ]}
+    ]},
+    {id:"t4u6-l5-x8", type:"explain", q:"A school gives extra tutoring to its 30 lowest-scoring pupils, and their scores rise the next term. Explain why this doesn’t show the tutoring worked, and what design would make the evidence stronger.", size:"3–4 sentences", hint:"Think about threats to internal validity, such as regression to the mean and maturation.", model:"Unusually low scores tend to drift back towards the average anyway (regression to the mean), and children improve over a term with or without help (maturation). Something else might also have changed that term (history). With no comparison, we can’t separate any of these from the tutoring. A stronger design would compare with a control group of similar low scorers who didn’t get tutoring, ideally chosen by random assignment, so both groups experience the same drift and change.", points:["Names regression to the mean", "Names another threat such as maturation or history", "Says there is no comparison group", "Proposes a control group, ideally randomly assigned"]}
    ],
    apply:{intro:"Bring together everything from this unit into a plan you could show a teacher, supervisor or colleague.", tasks:[
-     {t:"Audit a study’s validity", how:["Pick a study reported in the news or one open-access paper you found in Lesson 3.","Write one sentence each on its internal, external and construct validity.","Name the biggest remaining threat, and one change to the design that would reduce it."], write:"Study… Internal… External… Construct… Biggest threat… Design fix…"},
-     {t:"Write your one-page proposal", how:["Use the outline in this lesson and your notes from Lessons 1–4.","Keep each section to one to three sentences; the whole thing should fit on one page.","Check alignment: underline the question, then check that the design, sample, measures and analysis all serve it.","List the two biggest threats to validity and what you would do about them."], write:"Title… Background… Question and aim… Theory… Design… Sample… Data collection… Analysis… Ethics… Limitations… Timeline…"},
+     {t:"Audit a study’s validity", how:["Pick a study reported in the news or one open-access paper you found in Lesson 4.","Write one sentence each on its internal, external and construct validity.","Name the biggest remaining threat, and one change to the design that would reduce it."], write:"Study… Internal… External… Construct… Biggest threat… Design fix…"},
+     {t:"Write your one-page proposal", how:["Use the outline in this lesson and your notes from Lessons 1–5.","Keep each section to one to three sentences; the whole thing should fit on one page.","Check alignment: underline the question, then check that the design, sample, measures and analysis all serve it.","List the two biggest threats to validity and what you would do about them."], write:"Title… Background… Question and aim… Theory… Design… Sample… Data collection… Analysis… Ethics… Limitations… Timeline…"},
      {t:"Get feedback", how:["Ask a friend, colleague or family member to read your proposal (they don’t need research experience).","Ask them to tell you, in their own words, what you will find out and how.","Note anything they found unclear, and revise."], write:"What they said I’d find out… What was unclear… What I changed…"}
    ], proof:"In your notes: a validity audit of one study, a one-page proposal with all the sections in the outline, and a revised version after feedback."},
    read:[
@@ -1107,7 +1279,76 @@ ICA.addUnit({
     },
     related:["research-questions","research-designs","sampling-methods","validity-types","research-ethics"],
     read:[{book:"bhatt", where:"Chapter 3, “The Research Process”"}],
-    sources:[{t:"Bhattacherjee, Social Science Research (revised edition, University of Southern Queensland): Research design", url:"https://usq.pressbooks.pub/socialscienceresearch/?p=65"},{t:"OpenStax Introduction to Sociology 3e (LibreTexts mirror): Approaches to Sociological Research", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/02%3A_Sociological_Research/2.02%3A_Approaches_to_Sociological_Research"}], checked:"2026-11"}
+    sources:[{t:"Bhattacherjee, Social Science Research (revised edition, University of Southern Queensland): Research design", url:"https://usq.pressbooks.pub/socialscienceresearch/?p=65"},{t:"OpenStax Introduction to Sociology 3e (LibreTexts mirror): Approaches to Sociological Research", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/02%3A_Sociological_Research/2.02%3A_Approaches_to_Sociological_Research"}], checked:"2026-11"},
+
+{id:"research-paradigms", title:"Research paradigms: positivism to pragmatism", aka:["research philosophy","worldview","ontology and epistemology","post-positivism","interpretivism","constructivism","critical paradigm","transformative paradigm","pragmatism","axiology","paradigm wars"], tags:["research","design","philosophy of social science"],
+    summary:"The main philosophical stances behind research, what each counts as knowledge, and how a stance shapes a study’s question, design, data and quality criteria.",
+    levels:{
+     starter:[
+      "Every study rests on assumptions about what the social world is like and how we can know it. A set of those assumptions is called a research [[paradigm]], philosophy or worldview.",
+      "Two words carry most of it. **[[ontology|Ontology]]** asks what there is to study: patterns “out there”, or a reality made through people’s shared meanings? **[[epistemology|Epistemology]]** asks how we can know it and what counts as good evidence.",
+      {list:[
+        "**Post-positivists** look for patterns and causes, measured as fairly as possible, and test predictions that could prove them wrong.",
+        "**Interpretivists and constructivists** try to understand what things mean to the people involved, in context.",
+        "**Critical researchers** ask whose interests a situation serves, and aim to help change it.",
+        "**Pragmatists** start from the problem and use whatever methods answer it best."
+      ]},
+      "None is best in general. A question about whether a vaccine works and a question about what an illness means to a family need different tools.",
+      {key:"The point isn’t to pick a team. It’s to make your assumptions visible so your question, design and quality checks fit together."}
+     ],
+     builder:[
+      {table:[
+        ["Stance","What counts as knowledge","Typical design","Judged by"],
+        ["Post-positivist","Tested, fallible claims about patterns and causes","Experiments, surveys, statistics","Validity, reliability, generalisability, replication"],
+        ["Interpretivist / constructivist","Understanding of meanings in context; several valid accounts","Interviews, observation, documents","Trustworthiness: credibility, transferability, dependability, confirmability"],
+        ["Critical / transformative","Knowledge that exposes power and supports change","Participatory and action research; any method","Voice of participants; catalytic validity"],
+        ["Pragmatist","Whatever answers the problem in ways that work","Mixed methods","Usefulness; fit of each strand to its part of the question"]
+      ]},
+      "**Positivism** (Comte) restricted knowledge to what can be observed and measured. **Post-positivism** keeps the aim of explanation but accepts that knowledge is fallible: Karl Popper argued that theories can be tested and rejected but never finally proved, so good hypotheses must be [[falsifiability|falsifiable]]. **[[critical-realism|Critical realism]]** (Roy Bhaskar) adds that real but unobservable structures and mechanisms do causal work.",
+      "**Interpretivism** draws on Max Weber’s [[verstehen]]; **constructivism**, made influential in qualitative research by Egon Guba and Yvonna Lincoln, treats much of social reality as built through shared meanings. **Critical approaches** include Frankfurt School critical theory, feminist research, critical race and decolonial research, participatory action research and Indigenous research paradigms. **Pragmatism** comes from Peirce, James and Dewey.",
+      "A third word, **[[methodology]]**, is the logic linking evidence to claims, as distinct from methods (the tools). **[[axiology|Axiology]]** asks what role values play.",
+      {tip:"Data type isn’t philosophy. Numbers don’t make a study positivist and words don’t make it interpretive. What matters is what the study assumes and claims."}
+     ],
+     pro:[
+      "Labels differ between authors. Guba and Lincoln’s 1994 chapter “Competing paradigms in qualitative research” compared positivism, post-positivism, critical theory and constructivism by their answers to ontological, epistemological and methodological questions. John W. Creswell and J. David Creswell’s *Research Design* (6th edition, 2023) names four worldviews: postpositivist, constructivist, transformative and pragmatic. Bhattacherjee follows Burrell and Morgan’s (1979) four sociological paradigms. Say which scheme you use.",
+      "The **paradigm wars** of the 1980s (named in N. L. Gage’s 1989 article) set quantitative against qualitative research. One side argued that paradigms are incommensurable, so methods can’t be mixed; others argued that methods can be separated from the philosophies they grew up with. David Morgan (2007) proposed pragmatism as a way to move between the two while keeping philosophical questions in view. Critics answer that pragmatism can become “whatever works” without justification.",
+      "Critical and transformative research brings its own validity ideas, such as Patti Lather’s (1986) catalytic validity. Indigenous scholars, including Linda Tuhiwai Smith (*Decolonizing Methodologies*, 1999) and Shawn Wilson (*Research Is Ceremony*, 2008), argue that research paradigms grounded in relationships and community accountability are paradigms in their own right, not variants of Western ones.",
+      "In proposals, a short position statement usually does more than a long essay: state the stance, show what it implies for the question, design and quality criteria, and note the researcher’s own position where it matters. Many doctoral training frameworks, including the UK Economic and Social Research Council’s 2022 guidelines, expect researchers to understand the significance of alternative epistemological positions and how such choices affect findings."
+     ]
+    },
+    related:["logics-of-inquiry","positivism-interpretivism","research-designs","mixed-methods","trustworthiness","validity-types","research-proposal"],
+    read:[{book:"bhatt", where:"Chapter 3, “The Research Process”, section “Paradigms of social research”"},{book:"hurst", where:"Chapter 3, “A Short Chapter on Epistemology (How Do We Know What We Know?)”"}],
+    sources:[{t:"ESRC Postgraduate Training and Development Guidelines (2022)", url:"https://www.ukri.org/wp-content/uploads/2015/09/ESRC-281123-PostgraduateTrainingDevelopmentGuidelines2022.pdf"},{t:"Stanford Encyclopedia of Philosophy: Critical Theory", url:"https://plato.stanford.edu/entries/critical-theory/"},{t:"Stanford Encyclopedia of Philosophy: Pragmatism", url:"https://plato.stanford.edu/entries/pragmatism/"},{t:"Gage (1989), The paradigm wars and their aftermath, Educational Researcher 18(7)", url:"https://doi.org/10.3102/0013189X018007004"},{t:"Sage: Creswell & Creswell, Research Design, 6th edition", url:"https://www.sagepub.com/en-us/nam/research-design/book270550"}], checked:"2026-11"},
+
+   {id:"logics-of-inquiry", title:"Deduction, induction and abduction", aka:["logics of inquiry","deductive reasoning","inductive reasoning","abductive reasoning","inference to the best explanation","theory-testing and theory-building"], tags:["research","design","philosophy of social science"],
+    summary:"Three ways research reasons between theory and evidence: testing predictions, generalising from observations, and explaining surprises.",
+    levels:{
+     starter:[
+      "Research moves between ideas and evidence in three main ways.",
+      {list:[
+        "**Deduction** starts from a theory, works out what should happen if it is right, and checks. “If tutoring helps, tutored pupils should score higher.”",
+        "**Induction** starts from many observations and finds a general pattern. “Every family we interviewed mentioned the bus timetable.”",
+        "**[[abductive-reasoning|Abduction]]** starts from a surprise and asks what would best explain it. “Why is attendance worst at the newest school? Perhaps it’s furthest from the bus route. Let’s check.”"
+      ]},
+      "Detectives use abduction all the time: they reason from clues to the most likely explanation, then look for evidence that would confirm or rule it out.",
+      {key:"Deduction tests ideas, induction finds patterns, abduction proposes explanations. Real projects usually use all three."}
+     ],
+     builder:[
+      "Theory-testing research is mainly deductive: hypotheses come from theory and are tested against data (see {{theory-hypotheses}}). Theory-building research, including much qualitative work, is mainly inductive: codes and themes are built up from the data.",
+      "The philosopher Charles Sanders Peirce, who also founded pragmatism, named **abduction** as a third form: reasoning from a surprising observation to a hypothesis that would explain it. Today the term is often used for **inference to the best explanation**: choosing, among possible explanations, the one that explains the evidence best.",
+      {table:[["Logic","Strength","Limit"],["Deduction","If the premises are true, the conclusion must be","Only as good as the theory you start from"],["Induction","Builds general knowledge from cases","The next case may break the pattern"],["Abduction","Generates new explanations","The best available explanation may still be wrong; it needs testing"]]},
+      "Research often cycles: a surprise prompts an explanation (abduction), the explanation yields predictions (deduction), and new data refine the pattern (induction)."
+     ],
+     pro:[
+      "Karl Popper argued that induction can never prove a general claim, however many confirming cases there are, but a single well-established counter-example can refute one. Hence his emphasis on [[falsifiability|falsifiable]] hypotheses and severe tests.",
+      "In qualitative research, grounded theory was first presented as inductive, building theory from data. Later writers, including Iddo Tavory and Stefan Timmermans in *Abductive Analysis* (2014), argued that analysis works best abductively: the researcher brings broad theoretical knowledge and looks for surprising findings that existing theories don’t explain.",
+      "Abduction is also central to how hypotheses are generated in the sciences more widely; a long-standing debate concerns whether “best explanation” reasoning can justify belief that a hypothesis is true, or only that it is worth testing.",
+      "In a proposal, say which logic drives each part of the design: for example, a deductive survey testing a theory, followed by inductive interviews to explain anomalies."
+     ]
+    },
+    related:["research-paradigms","theory-hypotheses","qualitative-coding","mixed-methods"],
+    read:[{book:"bhatt", where:"Chapter 2, “Thinking Like a Researcher” (induction and deduction)"},{book:"hurst", where:"Chapter 4, “Finding a Research Question and Approaches to Qualitative Research”, section “Advanced: Inductive versus Deductive Reasoning”"}],
+    sources:[{t:"Stanford Encyclopedia of Philosophy: Abduction", url:"https://plato.stanford.edu/entries/abduction/"},{t:"Stanford Encyclopedia of Philosophy: Pragmatism", url:"https://plato.stanford.edu/entries/pragmatism/"}], checked:"2026-11"}
   ],
   terms:[
    {id:"research-question", term:"Research question", def:"The specific question a study sets out to answer, written so that evidence could answer it: who, what, where and when.", codex:"research-questions"},
@@ -1146,7 +1387,14 @@ ICA.addUnit({
    {id:"internal-validity", term:"Internal validity", def:"How confidently a study can say that the presumed cause, and not something else, produced the effect it observed.", codex:"validity-types"},
    {id:"external-validity", term:"External validity", def:"How far a study’s results hold for other people, places, settings and times.", codex:"validity-types"},
    {id:"construct-validity", term:"Construct validity", def:"How well a study’s measures and interventions capture the concepts they are meant to represent.", codex:"validity-types"},
-   {id:"research-proposal-term", term:"Research proposal", def:"A document set out before a study begins that explains its question, why it matters, and how it will be done.", codex:"research-proposal"}
+   {id:"research-proposal-term", term:"Research proposal", def:"A document set out before a study begins that explains its question, why it matters, and how it will be done.", codex:"research-proposal"},
+   {id:"post-positivism", term:"Post-positivism", def:"The view behind most quantitative research today: there are patterns and causes to explain, but all knowledge is fallible, so claims are tested and objectivity is pursued through shared procedures.", codex:"research-paradigms"},
+   {id:"falsifiability", term:"Falsifiability", def:"Karl Popper’s test of a scientific claim: some possible evidence could show it to be wrong. (Not to be confused with falsification of data, a form of misconduct.)", codex:"logics-of-inquiry"},
+   {id:"constructivism-research", term:"Constructivism (in research)", def:"The view that much of social reality is built through shared meanings and interaction, so research seeks to understand people’s constructions, and several valid accounts can exist.", codex:"research-paradigms"},
+   {id:"critical-paradigm", term:"Critical approaches (research)", def:"A family of stances, including critical theory, feminist, critical race, participatory and Indigenous research, that study power and aim to help change unjust situations.", codex:"research-paradigms"},
+   {id:"pragmatism-research", term:"Pragmatism (in research)", def:"A stance, from Peirce, James and Dewey, that judges ideas by their practical consequences and chooses whatever methods best answer the problem. The usual basis for mixed methods.", codex:"research-paradigms"},
+   {id:"abductive-reasoning", term:"Abduction (abductive reasoning)", def:"Reasoning from a surprising observation to the explanation that would best account for it, which is then tested. Named by Charles Sanders Peirce.", codex:"logics-of-inquiry"},
+   {id:"axiology", term:"Axiology", def:"The part of research philosophy about values: what role the researcher’s values play, and whether research should try to be value-free or openly pursue change.", codex:"research-paradigms"}
   ],
   bank:[
    /* Lesson 1 */
@@ -1241,7 +1489,7 @@ ICA.addUnit({
      {t:"Older adults can’t be studied", why:"They can, with appropriate consent and methods."},
      {t:"Searching for information isn’t a digital skill, so her whole measure is invalid", why:"It is one; the issue is that it’s only one."},
      {t:"She should have used no definition at all", why:"Without a definition there’s nothing to measure."}]},
-   /* Lesson 3 */
+   /* Lesson 4 (t4u6-l3) */
    {id:"t4u6-q19", lesson:"t4u6-l3", level:1, q:"What makes a true experiment different from a quasi-experiment?", options:[
      {t:"Participants are assigned to groups by chance", ok:true, why:"Random assignment is the defining feature; without it the design is quasi-experimental."},
      {t:"It takes place in a laboratory", why:"True experiments can happen in the field; the setting isn’t what defines them."},
@@ -1287,7 +1535,7 @@ ICA.addUnit({
      {t:"How common something is", why:"Cross-sectional studies are good at describing prevalence."},
      {t:"Whether two variables are associated", why:"They can show associations."},
      {t:"Differences between groups at one time", why:"They can compare groups measured at the same time."}]},
-   /* Lesson 4 */
+   /* Lesson 5 (t4u6-l4) */
    {id:"t4u6-q28", lesson:"t4u6-l4", level:1, q:"What is a sampling frame?", options:[
      {t:"The actual list or source from which a sample is drawn", ok:true, why:"For example a register of businesses or a list of schools."},
      {t:"The final group of people who took part", why:"That is the sample."},
@@ -1333,7 +1581,7 @@ ICA.addUnit({
      {t:"40 people can’t give informed consent", why:"Consent doesn’t depend on sample size."},
      {t:"Small samples always produce biased results, whatever the size of the effect", why:"Small samples are imprecise, not necessarily biased."},
      {t:"Trials must have at least 1,000 participants", why:"There is no fixed minimum; it depends on the effect size and variability."}]},
-   /* Lesson 5 */
+   /* Lesson 6 (t4u6-l5) */
    {id:"t4u6-q37", lesson:"t4u6-l5", level:1, q:"Internal validity is about…", options:[
      {t:"Whether the presumed cause, not something else, produced the observed effect", ok:true, why:"It concerns ruling out alternative explanations within the study."},
      {t:"Whether results apply to other places", why:"That is external validity."},
@@ -1378,6 +1626,52 @@ ICA.addUnit({
      {t:"Credibility, transferability, dependability and confirmability (Lincoln and Guba)", ok:true, why:"These parallel internal validity, external validity, reliability and objectivity."},
      {t:"Feasible, interesting, novel, ethical and relevant", why:"That is FINER, for judging research questions."},
      {t:"Population, intervention, comparison and outcome", why:"That is PICO, for structuring questions."},
-     {t:"Nominal, ordinal, interval and ratio", why:"Those are levels of measurement."}]}
+     {t:"Nominal, ordinal, interval and ratio", why:"Those are levels of measurement."}]},
+   /* Lesson t4u6-l6 (shown as Lesson 3) */
+   {id:"t4u6-q46", lesson:"t4u6-l6", level:1, q:"In research philosophy, what does **epistemology** ask?", options:[
+     {t:"How we can know, and what counts as good evidence", ok:true, why:"Epistemology is about knowledge: how we can know and what justifies a claim."},
+     {t:"What the social world is made of, and what exists to be studied", why:"That is ontology, the question of what exists."},
+     {t:"Which tools a study will use to collect and analyse its data", why:"That is methods, the specific techniques."},
+     {t:"What role the researcher’s own values should play in a study", why:"That is axiology, the question of values."}]},
+   {id:"t4u6-q47", lesson:"t4u6-l6", level:3, q:"Lucía’s proposal says: “Taking a constructivist position, I will survey 1,000 randomly sampled residents to measure the one true level of trust in the council.” What is the main problem?", options:[
+     {t:"Measuring “one true level” fits post-positivism, not constructivism", ok:true, why:"Constructivists expect several valid constructions of something like trust. Either change the stated stance or reframe the aim, for example around how residents understand trust."},
+     {t:"Constructivists may not use surveys, numbers or random samples at all", why:"Data type isn’t philosophy. A constructivist study can use a survey; the problem is the claim about one true level."},
+     {t:"A random sample of 1,000 residents is too small for a town survey", why:"1,000 is a reasonable survey size. The mismatch is between the stance and the aim."},
+     {t:"A proposal shouldn’t state any philosophical position in its methods", why:"Many proposals are expected to. The issue is that this statement contradicts the aim."}]},
+   {id:"t4u6-q48", lesson:"t4u6-l6", level:1, q:"Which statement best describes **post-positivism**?", options:[
+     {t:"Knowledge is fallible, so claims are tested against evidence", ok:true, why:"Post-positivists keep the aim of explaining patterns and causes but accept, with Popper, that claims can be tested and rejected, never finally proved."},
+     {t:"Only what can be directly observed counts, and certainty is possible", why:"That is closer to strict positivism, which post-positivism moved away from."},
+     {t:"Reality is made of meanings, so many valid accounts can exist", why:"That is constructivism."},
+     {t:"Research must aim above all to change unjust power relations", why:"That is the aim of critical approaches."}]},
+   {id:"t4u6-q49", lesson:"t4u6-l6", level:2, q:"Which hypothesis is **falsifiable** as written?", options:[
+     {t:"Pupils given daily reading time will outscore similar pupils on the year-end test", ok:true, why:"A clear result (no difference, or lower scores) would count against it. That is what Popper meant by falsifiable."},
+     {t:"Some pupils may benefit from extra reading time in some ways at some point", why:"So hedged that no result could count against it."},
+     {t:"Reading time is good for pupils’ souls and inner lives", why:"Neither “soul” nor “inner life” is defined or measurable, so no evidence could test it."},
+     {t:"Whatever the results show, the reading programme will have worked somehow", why:"It rules out every possible counter-evidence in advance, the opposite of falsifiable."}]},
+   {id:"t4u6-q50", lesson:"t4u6-l6", level:3, q:"A youth group asks Oluwaseun to study why young people on their estate are stopped by police so often. They want to help set the questions, collect stories and use the results to campaign. Which approach fits best?", options:[
+     {t:"A critical, participatory approach with the group as partners", ok:true, why:"Shared control, attention to power and an aim of change are what critical and participatory research are for. Ethics review and care for participants’ safety still apply."},
+     {t:"An experiment that randomly assigns police stops to young people", why:"Assigning police stops would be unethical and impossible, and it ignores the group’s aims."},
+     {t:"A survey designed without the group, to keep the study neutral", why:"Excluding the group throws away their knowledge and their purpose. Critical research declares its values instead of claiming neutrality."},
+     {t:"No study: campaigning groups can’t take part in real research", why:"Participatory action research is an established tradition in which communities take part in every stage."}]},
+   {id:"t4u6-q51", lesson:"t4u6-l6", level:2, q:"Hana notices that the school with the best facilities has the highest absence rate. She asks what would best explain this surprise, and plans to check the most plausible answer. What kind of reasoning is this?", options:[
+     {t:"Abduction", ok:true, why:"Reasoning from a surprising fact to the best available explanation, which is then checked, is abduction, named by Peirce."},
+     {t:"Deduction", why:"Deduction starts from a theory and derives a prediction. Hana started from a surprise in the data."},
+     {t:"Induction", why:"Induction generalises a pattern from many cases. Hana is explaining one surprising case."},
+     {t:"Operationalisation", why:"Operationalisation turns a concept into a measure. It isn’t a way of reasoning to an explanation."}]},
+   {id:"t4u6-q52", lesson:"t4u6-l6", level:1, q:"Why is **pragmatism** often used to justify mixed methods research?", options:[
+     {t:"It starts from the problem and picks methods that answer it", ok:true, why:"Pragmatism judges ideas and methods by their practical consequences, so combining numbers and words is justified when that answers the question best."},
+     {t:"It says that all philosophical questions are meaningless", why:"Pragmatists take philosophical questions seriously; they test ideas by their consequences."},
+     {t:"It requires numbers and words to be given exactly equal weight", why:"Mixed methods designs often give one strand priority. Pragmatism doesn’t demand equal weight."},
+     {t:"It was invented by mixed methods researchers in the 2000s", why:"Pragmatism dates from Peirce, James and Dewey, starting in the 1870s. Mixed methods researchers adopted it later."}]},
+   {id:"t4u6-q53", lesson:"t4u6-l6", level:3, q:"A reviewer writes of Priya’s interpretive study of 12 home care workers: “With only 12 participants the results can’t be generalised, so the study is worthless.” What is the fairest reply?", options:[
+     {t:"Judge it by credibility and transferability, not statistical generalisation", ok:true, why:"Interpretive research has its own yardsticks. It aims at understanding, with enough detail for readers to judge fit. Priya should also say plainly that the study doesn’t estimate how common the experiences are."},
+     {t:"Agree, and add a margin of error to each theme in the findings", why:"Margins of error need a probability sample and numerical estimates; they don’t apply to interview themes."},
+     {t:"Argue that 12 interviews do represent all home care workers in the country", why:"They don’t, statistically, and claiming so would contradict the study’s own stance."},
+     {t:"Reply that interpretive research needs no quality criteria at all", why:"It does: trustworthiness criteria such as credibility, transferability, dependability and confirmability."}]},
+   {id:"t4u6-q54", lesson:"t4u6-l6", level:2, q:"Which of these is an **ontological** question?", options:[
+     {t:"Is a “good school” real apart from what people believe about schools?", ok:true, why:"It asks what kind of thing a “good school” is, which is a question about what exists: ontology."},
+     {t:"How many interviews will I need before new ones stop adding ideas?", why:"That is a sampling question."},
+     {t:"Which statistical test suits a comparison of two groups’ exam scores?", why:"That is a question about methods."},
+     {t:"Does my survey question give the same answer when asked two weeks later?", why:"That is a question about reliability of measurement."}]}
   ]
 });

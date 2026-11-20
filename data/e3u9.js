@@ -2560,7 +2560,8 @@ ICA.addUnit({
        label: "について"
       },
       "について goes with verbs of speaking, thinking and knowing: 話す, 考える, [調]{しら}べる, 知る, 聞く, 書く. It doesn’t go with feelings like [好]{す}き or [嫌]{きら}い, which take が: 日本の音楽が[好]{す}きです, not ✗ 日本の音楽について[好]{す}きです.",
-      "In very polite speech and business emails, について becomes につきまして: [会議]{かいぎ}の[日程]{にってい}につきまして、ご[連絡]{れんらく}いたします (I’m writing regarding the meeting schedule). See {{keigo-system}} for more."
+      "In very polite speech and business emails, について becomes につきまして: [会議]{かいぎ}の[日程]{にってい}につきまして、ご[連絡]{れんらく}いたします (I’m writing regarding the meeting schedule). See {{keigo-system}} for more.",
+      "Notices and reports often use a more formal relative, ～に[関]{かん}して (に[関]{かん}する before a noun), taught with ～を中心に in Unit 10, Lesson 7 ({{time-range-focus-contrast}})."
      ]
     },
     {

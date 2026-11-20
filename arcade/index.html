@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=61">
+<link rel="stylesheet" href="../shared/style.css?v=62">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=61"></script>
+<script src="../shared/engine.js?v=62"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/arcadefx.js"></script>
@@ -255,6 +255,45 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 @keyframes pulse{50%{transform:scale(1.12)}}
 @keyframes up{to{transform:translateY(-28px);opacity:0}}
 @keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+/* Pass 26 games */
+.mgr{width:34px;height:34px;object-fit:contain;image-rendering:pixelated;flex:none}
+.rainf{position:relative;height:290px;background:linear-gradient(var(--scr2),var(--scr));border:2px solid var(--line);overflow:hidden}
+.rainf .drop{position:absolute;left:50%;top:4px;font-size:46px;font-weight:700;line-height:1;transform:translate(-50%,0);color:var(--gT);text-shadow:var(--glowT);will-change:transform}
+.rainf .drop.splash{animation:fx-jelly .35s}
+.rainf .ground{position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(90deg,var(--gG) 0 10px,color-mix(in srgb,var(--gG) 70%,var(--scr)) 10px 14px)}
+.psent{font-size:1.45em;line-height:2.1}
+.blank{display:inline-block;min-width:2.2em;padding:0 .3em;margin:0 .15em;border-radius:99px;border:2px dashed var(--gR);color:var(--gR);font-weight:800;text-align:center}
+.blank.filled{border-style:solid;background:var(--okTint);color:var(--ok);border-color:var(--ok)}
+.choice.bub{border-radius:99px;justify-content:center}
+.choice.bub [lang=ja]{font-size:1.6em}
+.choice.popped{animation:fx-burstb .45s forwards}
+@keyframes fx-burstb{50%{transform:scale(1.25)}100%{transform:scale(.2);opacity:0}}
+.ben{font-size:1.15em;font-weight:700}
+.bline{min-height:64px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center;padding:10px;border:2px dashed var(--line);background:var(--panel)}
+.bline.good{border-color:var(--ok);background:var(--okTint)}
+.btiles{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.btile{border:1.5px solid var(--line);border-bottom-width:4px;background:var(--panel);color:var(--ink);border-radius:10px;padding:10px 12px;font:inherit;font-size:1.2em;font-weight:700;cursor:pointer;min-height:48px;line-height:1.6;touch-action:manipulation}
+.btile.on{background:var(--lupTint);border-color:var(--lupine)}
+.btile.show{background:var(--okTint);border-color:var(--ok)}
+.booth{font-size:1.1em;min-height:52px;padding:10px 22px}
+.choices.one{grid-template-columns:1fr}
+.arena{display:grid;justify-items:center;gap:6px;background:var(--scr2);border:2px solid var(--line);padding:10px}
+.bname{font-family:var(--pixel);font-weight:700;font-size:13px;letter-spacing:.06em;color:var(--gR);text-align:center}
+.bossbox{width:150px;height:130px;animation:bob 2.4s ease-in-out infinite}
+.bsvg{width:100%;height:100%;display:block}
+.hpbar{width:min(260px,90%);height:14px;background:var(--scr);border:2px solid var(--ink);overflow:hidden}
+.hpbar i{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--gR) 0 8px,color-mix(in srgb,var(--gR) 75%,#fff) 8px 10px);transition:width .35s}
+.bosses{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.bosspick{display:grid;gap:6px;justify-items:center;text-align:center;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:10px;font:inherit;color:var(--ink);cursor:pointer}
+.bosspick svg{width:84px;height:72px}
+.bosspick>span{display:grid;gap:2px}
+.bosspick.won{border-color:var(--gold);background:var(--goldTint)}
+.badgewin{display:flex;gap:10px;align-items:center;max-width:380px;text-align:left}
+.badgewin svg{width:70px;height:62px;flex:none}
+.shelf{margin-top:10px;display:grid;gap:6px;background:var(--panel);border:1.5px dashed var(--gold);border-radius:12px;padding:8px 12px}
+.shelfrow{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.minib svg{width:30px;height:26px;display:block}
+@media (prefers-reduced-motion:reduce){.bossbox,.choice.popped,.rainf .drop.splash{animation:none}}
 @media (prefers-reduced-motion:reduce){.jg-shake,.jg-pulse,.combo.hot,.float,.gc svg .idle{animation:none}.gc,.gc svg .mv{transition:none}}
 </style>
 </head>
@@ -290,6 +329,8 @@ function render(s){
   stopGame(); window.scrollTo(0, 0);
   if (!s || s.s === "home") return home();
   if (GAMES[s.g]){ if (s.s !== "setup") replace({s:"setup", g:s.g}); return withData(function(){ setup(s.g); }); }
+  if (G2[s.g]){ if (s.s !== "setup") replace({s:"setup", g:s.g}); return withData2(G2[s.g].data, function(){ setup2(s.g); }); }
+  if (s.g === "boss" || s.g === "mix"){ if (s.s !== "setup") replace({s:"setup", g:s.g}); return s.g === "boss" ? bossPick() : mixPick(); }
   replace({s:"home"}); home();
 }
 var pendingPop = null;
@@ -361,6 +402,10 @@ function migrateBoards(){
     if (x[1] != null && x[1] > 0 && !AFX.board(st, x[0]).length){ AFX.board(st, x[0]).push({n:AFX.name(st), s:x[1], t:Date.now()}); ch = true; } });
   a.boardsV = 1; ICA.save();
 }
+/* the badge shelf: one little boss per unit beaten in Boss Battle */
+function shelf(){ var bg = ICA.load().arcade.badges || {}, ids = Object.keys(bg).filter(function(id){ return ICA.unitById[id]; }); if (!ids.length) return '';
+  ids.sort(function(a, b){ return bg[b].t - bg[a].t; });
+  return '<div class="shelf" aria-label="Boss badges"><span class="small">🏅 Bosses beaten: <b>'+ids.length+'</b></span><div class="shelfrow">'+ids.slice(0, 12).map(function(id){ var u = ICA.unitById[id]; return '<span class="minib" title="'+esc(bossOf(u).name)+'">'+bossSVG(u, "hit")+'</span>'; }).join("")+(ids.length > 12 ? '<span class="small">+'+(ids.length - 12)+'</span>' : '')+'</div></div>'; }
 function home(){
   stopGame(); cur = {s:"home", hs:{s:"home", d:depth()}}; setTitle("Arcade");
   if (!picked) picked = savedPick();
@@ -375,12 +420,18 @@ function home(){
       card("cards","Flashcards",null,(due ? '<b>'+due+' due today</b> · ' : '')+"spaced review, no score","a4")+
       card("blitz","Blitz","blitz","60 seconds, go!"+mine("blitz"),"a1")+
       card("survival","Survival","survival","Three hearts"+mine("survival"),"a3")+
-    '</div></section>'+
+      card("boss","Boss Battle","boss","Beat each unit’s boss"+mine("boss"),"a1")+
+      card("mix","Track Mix","mix","A whole track, mixed"+mine("mix"),"a4")+
+    '</div>'+shelf()+'</section>'+
     '<section aria-labelledby="h-jp"><div class="sh"><h2 id="h-jp">Japanese</h2><span class="small muted" lang="ja">日本語</span></div>'+
     '<div class="games">'+
       card("sprint","Word Sprint","sprint","Word → meaning"+mine("sprint"),"a1")+
       card("match","Kanji Match","match","Beat the clock"+mine("match"),"a2")+
       card("pairs","Pair Up","pairs","Kanji ↔ reading"+mine("pairs"),"a3")+
+      card("rain","Kana Rain","rain","Catch the kana"+mine("rain"),"a2")+
+      card("pop","Particle Pop","pop","は・が・を…"+mine("pop"),"a1")+
+      card("build","Sentence Builder","build","Tiles into order"+mine("build"),"a4")+
+      card("listen","Listening Booth","listen","What did Mugi say?"+mine("listen"),"a3")+
       '<a class="gc a4" href="../labs/kanji.html?from=arcade"><span class="mq">KANJI LAB</span><span class="art">'+art("lab")+'</span><span class="sub">Your missed cards, on a calm daily schedule →</span></a>'+
     '</div></section>'+
   '</div>';
@@ -497,6 +548,9 @@ function launch(g, again){
     '<div id="gm"><p class="ready">Ready…</p></div></div></div>';
   var run = function(){ if (!cur.alive) return; var gm = document.getElementById("gm");
     if (GAMES[g]){ var j = jp(), p = JG.pool(GAMES[g].kind, j.level, j); ({sprint:sprint, match:match, pairs:pairs})[g](gm, p, j.level); }
+    else if (G2[g]) ({rain:rain, pop:pop, build:build, listen:listen})[g](gm);
+    else if (g === "boss") boss(gm, lastArg.boss);
+    else if (g === "mix") mix(gm, lastArg.mix);
     else ({practice:practice, blitz:blitz, survival:survival, cards:flashcards, today:todayGame})[g](gm); };
   var go = function(){ if (!cur.alive) return;
     if (g === "cards") return run();          // Flashcards stays calm: no countdown, no music
@@ -884,6 +938,277 @@ function pairs(gm, pool, level){
   });
 }
 
+/* ===================== Pass 26 (Nov 2026): more games =====================
+   Japanese: Kana Rain, Particle Pop, Sentence Builder, Listening Booth. Every track: Boss Battle, Track Mix.
+   Data: lab-kanji.js (kana), data/jp-drills.js (JPD), data/jp-listen.js (JPL), loaded on first use. */
+var G2 = {
+  rain:   {name:"Kana Rain", levels:[["h","Hiragana"],["k","Katakana"],["hk","Both"]], def:"h", data:"kanji"},
+  pop:    {name:"Particle Pop", levels:[["N5","N5"],["N4","N4"],["N3","N3"]], def:"N5", data:"drills"},
+  build:  {name:"Sentence Builder", levels:[["N5","N5"],["N4","N4"],["N3","N3"]], def:"N5", data:"drills"},
+  listen: {name:"Listening Booth", levels:[["N5","N5"],["N4","N4"],["N3","N3"]], def:"N5", data:"listen"}
+};
+LNAME.rain = "Kana Rain"; LNAME.pop = "Particle Pop"; LNAME.build = "Sentence Builder"; LNAME.listen = "Listening Booth"; LNAME.boss = "Boss Battle"; LNAME.mix = "Track Mix";
+ACC.rain = "a2"; ACC.pop = "a1"; ACC.build = "a4"; ACC.listen = "a3"; ACC.boss = "a1"; ACC.mix = "a4";
+HOW.rain = ["Kana fall from the sky. Tap the right reading before each one lands.", "They fall faster as you go. A kana that lands costs a heart; you have <b>three</b>.", "Right answers in a row build a combo."];
+HOW.pop = ["A sentence is missing one particle. Pop the bubble that fits.", "<b>60 seconds</b>. Quick answers and combos score more.", "The explanations for anything you missed wait at the end."];
+HOW.build = ["Read the English, then tap the Japanese tiles in order to build the sentence. Tap a placed tile to take it back.", "Right first time scores most. A second try is fine; after that Mugi shows you the answer.", "Japanese word order can bend a little: any natural order counts."];
+HOW.listen = ["Mugi plays a line from the Japanese lessons. Which one did you hear?", "Tap <b>▶ Play again</b> as often as you like, but answering on the first listen scores most.", "10 lines a round."];
+HOW.boss = ["Every unit has a boss. Right answers knock its health down; combos hit harder.", "A wrong answer lets the boss hit back: you have <b>three hearts</b>.", "Beat a unit’s boss to put its badge on your shelf."];
+HOW.mix = ["15 questions mixed from a whole track, so you switch between topics the way a real test does.", "No clock. Read why after each answer.", "Mixing topics is harder than one at a time, and it makes what you learn stick."];
+AFX.MUGI.rain = 4000; AFX.MUGI.pop = 2500; AFX.MUGI.build = 1600; AFX.MUGI.listen = 1000; AFX.MUGI.boss = 3000; AFX.MUGI.mix = 15;
+var fmt0 = AFX.fmt; AFX.fmt = function(key, n){ return key === "mix" ? n + "/15" : fmt0(key, n); };
+ART.rain = '<g class="idle"><text x="26" y="18" font-size="15" class="A" lang="ja">あ</text></g><text x="54" y="34" font-size="17" class="A" lang="ja">カ</text><g class="mv"><text x="80" y="22" font-size="14" class="A" lang="ja">さ</text></g><path d="M10 62 H110" class="S" style="stroke:var(--soft)"/><path d="M38 44 v6 M70 48 v6 M96 40 v6" class="S" style="stroke-width:2;stroke-dasharray:2 3"/>';
+ART.pop = '<circle cx="34" cy="38" r="17" class="O"/><text x="34" y="39" text-anchor="middle" dominant-baseline="central" font-size="17" class="A" lang="ja">は</text><g class="mv"><circle cx="70" cy="30" r="15" class="A"/><text x="70" y="31" text-anchor="middle" dominant-baseline="central" font-size="15" class="P" lang="ja">が</text></g><circle cx="98" cy="46" r="11" class="O"/><text x="98" y="47" text-anchor="middle" dominant-baseline="central" font-size="11" class="A" lang="ja">を</text><path d="M84 12 l3 -6 M90 16 l6 -3" class="S idle"/>';
+ART.build = '<rect x="6" y="40" width="36" height="18" rx="4" class="A"/><rect x="46" y="40" width="18" height="18" rx="4" class="A"/><g class="mv"><rect x="66" y="12" width="46" height="18" rx="4" class="O"/><text x="89" y="21" text-anchor="middle" dominant-baseline="central" font-size="9" class="A" lang="ja">がくせい</text></g><rect x="68" y="40" width="46" height="18" rx="4" class="O" style="stroke-dasharray:4 3"/><text x="24" y="49" text-anchor="middle" dominant-baseline="central" font-size="9" class="P" lang="ja">わたし</text><text x="55" y="49" text-anchor="middle" dominant-baseline="central" font-size="9" class="P" lang="ja">は</text>';
+ART.listen = '<g class="mv"><path d="M30 40 V30 a18 18 0 0 1 36 0 V40" class="S" style="stroke-width:5"/><rect x="24" y="36" width="12" height="20" rx="4" class="A"/><rect x="60" y="36" width="12" height="20" rx="4" class="A"/></g><path d="M84 26 q8 10 0 20 M92 20 q14 16 0 32" class="S idle"/>';
+ART.boss = '<g class="idle"><path d="M30 58 Q22 58 22 44 Q22 18 50 18 Q78 18 78 44 Q78 58 70 58 Q66 52 62 58 Q58 52 54 58 Q50 52 46 58 Q42 52 38 58 Q34 52 30 58 Z" class="A"/><path d="M34 22 L30 10 L42 18 M66 22 L70 10 L58 18" class="A"/><circle cx="40" cy="38" r="5" class="P"/><circle cx="60" cy="38" r="5" class="P"/><circle cx="41" cy="39" r="2" class="K"/><circle cx="61" cy="39" r="2" class="K"/><path d="M44 48 Q50 52 56 48" class="S" style="stroke:var(--panel);stroke-width:2.5"/></g><g class="mv"><path d="M88 52 L104 20 M84 30 l26 0" class="S" style="stroke:var(--ink);stroke-width:4"/><path d="M104 20 l-3 -8 6 4 z" class="G"/></g>';
+ART.mix = '<rect x="12" y="16" width="28" height="36" rx="5" class="A" transform="rotate(-10 26 34)"/><rect x="44" y="12" width="28" height="36" rx="5" class="O"/><rect x="76" y="16" width="28" height="36" rx="5" class="A" transform="rotate(10 90 34)" style="fill:var(--gold)"/><g class="mv"><path d="M30 62 C46 54 70 66 88 58" class="S"/><path d="M84 54 l5 4 -6 3" class="S"/></g>';
+
+/* Mugi reacts in the HUD of every game: cheers a streak, winces at a miss */
+var hit0 = hit;
+hit = function(ok, el, streak, pts){ hit0(ok, el, streak, pts); react(ok ? (streak >= 3 ? "yay" : "hello") : "oops"); };
+function react(mood){ var m = document.getElementById("mg"); if (!m) return; m.src = "../shared/mascot/pixel/mugi-px-" + mood + ".webp"; juice(m, "jg-pulse"); clearTimeout(react.t); react.t = setTimeout(function(){ var n = document.getElementById("mg"); if (n) n.src = "../shared/mascot/pixel/mugi-px-hello.webp"; }, 1400); }
+var MGI = '<img id="mg" class="mgr" src="../shared/mascot/pixel/mugi-px-hello.webp" alt="">';
+var hudL0 = hudL; hudL = function(left){ return hudL0(left).replace('<span class="combo"', MGI + '<span class="combo"'); };
+var hudJP0 = hudJP; hudJP = function(left){ return hudJP0(left).replace('<span class="combo"', MGI + '<span class="combo"'); };
+
+/* ---------- data on first use ---------- */
+var loaded2 = {};
+function withData2(kind, cb){
+  if (kind === "kanji") return withData(cb);
+  var f = kind === "drills" ? "jp-drills.js" : "jp-listen.js", ok = kind === "drills" ? function(){ return !!window.JPD; } : function(){ return !!window.JPL; };
+  if (ok()) return cb();
+  app.innerHTML = '<p class="muted">Loading…</p>';
+  var sc = document.createElement("script"); sc.src = "../data/" + f + "?v=" + ICA.version;
+  sc.onload = function(){ cb(); };
+  sc.onerror = function(){ app.innerHTML = '<div class="stack">'+gbar("Japanese", null)+'<div class="card stack"><p>The game didn’t load. Check your connection and try again.</p><div class="row"><button class="btn" data-back>Back to the Arcade</button></div></div></div>'; };
+  document.head.appendChild(sc);
+}
+function lv2(g){ var j = jp(); j.lv2 = j.lv2 || {}; return j.lv2[g] || G2[g].def; }
+function setup2(g){
+  stopGame(); var G = G2[g], j = jp(); setTitle(G.name); cur = {s:"setup", g:g, hs:history.state};
+  app.innerHTML = '<div class="stack">'+gbar(G.name, false)+
+    '<div class="gc '+ACC[g]+'" style="pointer-events:none;box-shadow:none" aria-hidden="true"><span class="art" style="height:96px;border:0">'+art(g)+'</span></div>'+
+    '<div class="card stack setup"><div class="sg"><b id="lvl-l">'+(g === "rain" ? "Script" : "Level")+'</b><div class="segs" role="group" aria-labelledby="lvl-l">'+G.levels.map(function(l){
+      return '<button data-lv2="'+l[0]+'" aria-pressed="'+(lv2(g) === l[0])+'">'+esc(l[1])+'</button>'; }).join("")+'</div></div>'+
+    '<div class="row"><button class="btn primary" id="start">Start</button></div></div></div>';
+  ICA.$$("[data-lv2]").forEach(function(t){ t.onclick = function(){ j.lv2 = j.lv2 || {}; j.lv2[g] = t.getAttribute("data-lv2"); ICA.save(); ICA.$$("[data-lv2]").forEach(function(x){ x.setAttribute("aria-pressed", x === t ? "true" : "false"); }); }; });
+  var st = document.getElementById("start"); st.focus(); st.onclick = function(){ launch(g); };
+}
+function end2(g, score, sub, right, seen, review){
+  stopTimer(); finish(g);
+  results({key:g, title:LNAME[g] + (G2[g] ? " · " + G2[g].levels.filter(function(l){ return l[0] === lv2(g); })[0][1] : ""), score:score, sub:sub, grade:AFX.grade(right, seen, 5), review:review || "", perfect: seen > 0 && right === seen});
+}
+function revList(title, rows){ return rows.length ? '<h2>'+title+'</h2><div class="missed">'+rows.join("")+'</div>' : '<p>No misses. 🎉</p>'; }
+
+/* ---------- Kana Rain ---------- */
+function kanaPool(set){ var out = []; KL.decks.forEach(function(dk){ if (dk.kind === "kana" && set.indexOf(dk.set) > -1) dk.items.forEach(function(it){ out.push(it); }); }); return out; }
+function rain(gm){
+  var pool = kanaPool(lv2("rain")), score = 0, streak = 0, right = 0, seen = 0, lives = 3, missed = [], fall = 6500, raf = null, t0 = 0, held = 0, it = null, q = null, done = false;
+  gm.innerHTML = '<div class="stack">'+hudJP('<span class="hearts" id="hp" aria-label="3 hearts left">❤️❤️❤️</span>')+'<div class="rainf" id="rf" data-nosay><span class="drop" id="dp" lang="ja"></span><div class="ground"></div></div><div id="ch"></div></div>';
+  timerId = 1;
+  cur.stop = function(){ if (raf) cancelAnimationFrame(raf); raf = null; };
+  cur.pause = function(){ held = performance.now(); };
+  cur.resume = function(){ if (held){ t0 += performance.now() - held; held = 0; } };
+  function frame(now){
+    if (!cur.alive || done) return; raf = requestAnimationFrame(frame); if (paused) return;
+    var p = Math.min(1, (now - t0) / fall), dp = document.getElementById("dp"); if (!dp) return;
+    dp.style.transform = "translate(-50%," + (p * 230) + "px)";
+    if (p >= 1 && to) to();
+  }
+  var to = null;
+  function next(){
+    if (!timerId) return; done = false;
+    it = pool[Math.floor(Math.random() * pool.length)];
+    var opts = [it], tries = 0;
+    while (opts.length < 4 && tries++ < 200){ var c = pool[Math.floor(Math.random() * pool.length)]; if (opts.every(function(o){ return o.ro !== c.ro && o.q !== c.q; }) && (c.grp === it.grp || tries > 60)) opts.push(c); }
+    opts = ICA.shuffle(opts); q = {opts: opts.map(function(o){ return {t:o.ro, ok:o === it}; })};
+    var dp = document.getElementById("dp"); dp.textContent = it.q; dp.classList.remove("splash"); dp.style.transform = "translate(-50%,0)";
+    document.getElementById("ch").innerHTML = choiceHTML(q);
+    to = bindChoices(document.getElementById("ch"), q, function(ok, k){
+      done = true; seen++; var el = k >= 0 ? ICA.$$(".choice", document.getElementById("ch"))[k] : document.getElementById("dp");
+      if (ok){ right++; streak++; var p = 10 + Math.min(streak - 1, 10) * 3 + Math.round((1 - (performance.now() - t0) / fall) * 10); score += p; hit(true, el, streak, "+" + p); fall = Math.max(2200, fall * 0.96); juice(document.getElementById("dp"), "splash"); }
+      else { hit(false, el, streak); streak = 0; lives--; if (missed.indexOf(it) < 0) missed.push(it); var hp = document.getElementById("hp"); hp.textContent = lives > 0 ? new Array(lives+1).join("❤️") : "💔"; hp.setAttribute("aria-label", lives+" hearts left"); }
+      AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
+      setTimeout(function(){ if (!cur.alive) return; if (lives <= 0){ cur.stop(); timerId = null; end2("rain", score, right + " caught · " + (seen - right) + " missed", right, seen, revList("Worth another look", missed.map(function(m){ return '<div class="card mrow"><span><span lang="ja" style="font-size:1.6em">'+esc(m.q)+'</span> = <b>'+esc(m.ro)+'</b></span></div>'; }))); } else { t0 = performance.now(); next(); } }, ok ? 380 : 1100);
+    });
+    t0 = performance.now();
+  }
+  next(); raf = requestAnimationFrame(frame);
+}
+
+/* ---------- Particle Pop ---------- */
+function blankHTML(ja, fill){ return md(ja).replace("（　）", '<span class="blank'+(fill ? " filled" : "")+'">'+(fill ? esc(fill) : "?")+'</span>'); }
+function pop(gm){
+  var lv = lv2("pop"), deck = ICA.shuffle((window.JPD.particles || []).filter(function(p){ return p.lv === lv; })), i = 0, score = 0, streak = 0, right = 0, seen = 0, missed = [], left = 60, t1;
+  gm.innerHTML = '<div class="stack">'+hudJP('<span class="timer" id="tm" aria-label="Seconds left">60</span>')+'<div class="stage" id="stg" data-nosay></div><div id="ch"></div></div>';
+  timerId = setInterval(function(){ if (paused) return; left--; var t = document.getElementById("tm"); if (!t){ stopTimer(); return; } t.textContent = left; t.classList.toggle("low", left <= 10); if (left <= 5 && left > 0) beep("tick");
+    if (left <= 0) end2("pop", score, right + " right of " + seen + " in 60 seconds", right, seen, revList("Worth another look", missed.map(function(p){ return '<div class="card"><span lang="ja">'+blankHTML(p.ja, p.ok)+'</span><span class="small muted">'+esc(p.en)+'</span><span class="small">'+md(p.why)+'</span></div>'; }))); }, 1000);
+  function next(){
+    var stg = document.getElementById("stg"), ch = document.getElementById("ch"); if (!stg || !ch || !timerId) return;
+    if (i >= deck.length){ deck = deck.concat(ICA.shuffle(deck.slice())); }
+    var p = deck[i++], q = {opts: ICA.shuffle(p.opts.slice()).map(function(o){ return {t:o, ok:o === p.ok}; }), ja:true};
+    stg.innerHTML = '<div class="qtext">Pop the particle that fits</div><div class="psent" lang="ja">'+blankHTML(p.ja)+'</div><div class="qsub small">'+esc(p.en)+'</div>';
+    ch.innerHTML = choiceHTML(q).replace(/class="choice"/g, 'class="choice bub"'); t1 = Date.now();
+    bindChoices(ch, q, function(ok, k){
+      if (!timerId) return; seen++; var el = ICA.$$(".choice", ch)[k];
+      stg.querySelector(".psent").innerHTML = blankHTML(p.ja, p.ok);
+      if (ok){ right++; streak++; var quick = Date.now() - t1 < 2500, pts = 10 + Math.min(streak - 1, 8) * 2 + (quick ? 5 : 0); score += pts; hit(true, el, streak, "POP! +" + pts); if (el) el.classList.add("popped"); }
+      else { hit(false, el, streak); streak = 0; if (missed.indexOf(p) < 0) missed.push(p); }
+      AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
+      setTimeout(next, ok ? 520 : 1500);
+    });
+  }
+  next();
+}
+
+/* ---------- Sentence Builder ---------- */
+function build(gm){
+  var lv = lv2("build"), deck = ICA.shuffle((window.JPD.builder || []).filter(function(b){ return b.lv === lv; })).slice(0, 8), i = 0, score = 0, first = 0, missed = [], start = Date.now(), pausedAt = 0;
+  gm.innerHTML = '<div class="stack">'+hudJP('<span>No. <span id="pos">1</span>/'+deck.length+'</span>')+'<div class="stage" id="stg"></div><div class="bline" id="bl" aria-label="Your sentence"></div><div class="btiles" id="bt"></div><div id="nav"></div></div>';
+  timerId = 1; cur.pause = function(){ pausedAt = Date.now(); }; cur.resume = function(){ if (pausedAt){ start += Date.now() - pausedAt; pausedAt = 0; } };
+  var b, placed, tries;
+  function valid(order){ return b.orders.some(function(o){ return o.join() === order.join(); }); }
+  function next(){
+    if (i >= deck.length){ timerId = null; var secs = Math.round((Date.now() - start) / 1000); score += Math.max(0, 240 - secs) ; end2("build", score, first + " of " + deck.length + " right first time · " + secs + " s", first, deck.length, revList("Worth another look", missed.map(function(m){ return '<div class="card"><span lang="ja" style="font-size:1.15em">'+m.orders[0].map(function(k){ return md(m.tiles[k]); }).join(" ")+'</span><span class="small muted">'+esc(m.en)+'</span>'+(m.why ? '<span class="small">'+md(m.why)+'</span>' : '')+'</div>'; }))); return; }
+    b = deck[i]; placed = []; tries = 0; document.getElementById("pos").textContent = i + 1; document.getElementById("nav").innerHTML = "";
+    var order = b.tiles.map(function(_, k){ return k; }), guard = 0; do { order = ICA.shuffle(order); } while (valid(order) && guard++ < 20);
+    document.getElementById("stg").innerHTML = '<div class="qtext">Build this in Japanese</div><div class="ben">'+esc(b.en)+'</div>';
+    document.getElementById("bt").innerHTML = order.map(function(k){ return '<button type="button" class="btile" data-t="'+k+'" lang="ja">'+md(b.tiles[k])+'</button>'; }).join("");
+    document.getElementById("bl").innerHTML = '<span class="small muted">Tap the tiles in order</span>';
+  }
+  function draw(){
+    var bl = document.getElementById("bl"); bl.innerHTML = placed.length ? placed.map(function(k){ return '<button type="button" class="btile on" data-back-t="'+k+'" lang="ja">'+md(b.tiles[k])+'</button>'; }).join("") : '<span class="small muted">Tap the tiles in order</span>';
+    ICA.$$("#bt .btile").forEach(function(t){ t.hidden = placed.indexOf(+t.getAttribute("data-t")) > -1; });
+    if (placed.length === b.tiles.length) check();
+  }
+  function check(){
+    cur.answered++; var ok = valid(placed), bl = document.getElementById("bl");
+    if (ok){ var pts = tries ? 50 : 100; score += pts; if (!tries) first++; hit(true, bl, tries ? 1 : first, "+" + pts); bl.classList.add("good"); AFX.roll(document.getElementById("sc"), score, String);
+      setTimeout(function(){ bl.classList.remove("good"); i++; next(); }, 900); return; }
+    tries++; hit(false, bl, 0); juice(bl, "jg-shake");
+    if (tries >= 2){ if (missed.indexOf(b) < 0) missed.push(b); placed = b.orders[0].slice(); var h = placed.map(function(k){ return '<span class="btile on show" lang="ja">'+md(b.tiles[k])+'</span>'; }).join("");
+      setTimeout(function(){ bl.innerHTML = h; ICA.$$("#bt .btile").forEach(function(t){ t.hidden = true; }); document.getElementById("nav").innerHTML = '<div class="lessonnav"><span class="small">'+(b.why ? md(b.why) : "")+'</span><button class="btn primary" id="nx">Next →</button></div>'; var nb = document.getElementById("nx"); nb.focus(); nb.onclick = function(){ i++; next(); }; }, 500); }
+    else setTimeout(function(){ placed = []; draw(); ICA.toast("Not quite: try once more."); }, 600);
+  }
+  gm.addEventListener("click", function(e){ if (!cur.alive || cur.g !== "build") return; var t = e.target.closest("[data-t]"), u = e.target.closest("[data-back-t]");
+    if (t && placed.length < b.tiles.length){ beep("tap"); placed.push(+t.getAttribute("data-t")); draw(); }
+    else if (u && placed.length < b.tiles.length){ var k = +u.getAttribute("data-back-t"); placed = placed.filter(function(x){ return x !== k; }); beep("flip"); draw(); } });
+  next();
+}
+
+/* ---------- Listening Booth ---------- */
+function listen(gm){
+  var lv = lv2("listen"), all = (window.JPL || []).filter(function(x){ return x[2] === lv; }), rounds = ICA.shuffle(all.slice()).slice(0, 10), i = 0, score = 0, right = 0, streak = 0, plays = 0, missed = [];
+  gm.innerHTML = '<div class="stack">'+hudJP('<span>No. <span id="pos">1</span>/'+rounds.length+'</span>')+'<div class="stage" id="stg"><div class="qtext">What did Mugi say?</div><button type="button" class="btn primary booth" id="pl">▶ Play</button></div><div id="ch"></div></div>';
+  timerId = 1;
+  function play(){ var b = document.getElementById("pl"); if (!b) return; plays++; if (ICA.say("ja", rounds[i][0], b) === false) ICA.toast("That clip isn’t available offline."); b.textContent = "▶ Play again"; }
+  document.getElementById("pl").onclick = play;
+  function next(){
+    if (i >= rounds.length){ timerId = null; end2("listen", score, right + " of " + rounds.length + " heard right", right, rounds.length, revList("Listen again", missed.map(function(m){ return '<div class="card mrow"><span lang="ja">'+esc(m[0])+'</span><button class="btn small" data-relisten="'+esc(m[0])+'">▶</button></div>'; }))); return; }
+    var x = rounds[i], len = x[0].length, near = ICA.shuffle(all.filter(function(y){ return y[0] !== x[0] && y[1] === x[1] && Math.abs(y[0].length - len) <= Math.max(4, len * .4); }));
+    if (near.length < 3) near = near.concat(ICA.shuffle(all.filter(function(y){ return y[0] !== x[0] && near.indexOf(y) < 0; })));
+    var q = {opts: ICA.shuffle([x].concat(near.slice(0, 3))).map(function(y){ return {t:y[0], ok:y === x}; }), ja:true};
+    document.getElementById("pos").textContent = i + 1; plays = 0; document.getElementById("pl").textContent = "▶ Play";
+    var ch = document.getElementById("ch"); ch.innerHTML = choiceHTML(q).replace('class="choices"', 'class="choices one"');
+    setTimeout(play, 350);
+    bindChoices(ch, q, function(ok, k){
+      var el = ICA.$$(".choice", ch)[k];
+      if (ok){ right++; streak++; var pts = plays <= 1 ? 100 : 70; score += pts; hit(true, el, streak, "+" + pts); } else { hit(false, el, streak); streak = 0; missed.push(x); }
+      AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
+      setTimeout(function(){ if (!cur.alive) return; i++; next(); }, ok ? 700 : 1600);
+    });
+  }
+  next();
+}
+
+/* ---------- Boss Battle: one unit's boss ---------- */
+var CREATURE = ["Slime", "Gremlin", "Blob", "Puff", "Mochi", "Yeti", "Golem", "Sprite", "Dumpling", "Gobbler", "Fuzzball", "Noodle"];
+var SKIP = /^(the|a|an|what|how|why|and|of|in|to|for|your|from|with|on|at|is|it|its|n\d)$/i;
+function bossOf(u){
+  var h = 0; for (var c = 0; c < u.id.length; c++) h = (h * 31 + u.id.charCodeAt(c)) >>> 0;
+  var w = (u.title.replace(/[^A-Za-z0-9 \-]/g, " ").split(/\s+/).filter(function(x){ return x && !SKIP.test(x); })[0] || "Quiz");
+  if (/[^s]s$/.test(w) && !/(is|us|ics|ss)$/.test(w) && w.length > 4) w = w.slice(0, -1);   // "Computers" → "The Computer Gremlin"
+  return {h:h, name:"The " + w.charAt(0).toUpperCase() + w.slice(1) + " " + CREATURE[h % CREATURE.length]};
+}
+var TRACK_COL = {t1:"#1f5a5c", t2:"#3d5c3e", t3:"#7d6012", t4:"#7a2d3a", e1:"#a24a28", e2:"#4b3f7a", e3:"#b0476b", e4:"#2d5a8a"};
+function bossSVG(u, mood){
+  var b = bossOf(u), h = b.h, col = TRACK_COL[u.track] || "#a24a28", eyes = 1 + (h >> 3) % 3, top = (h >> 5) % 4, body = (h >> 7) % 3;
+  var shape = body === 0 ? '<path d="M18 92 Q10 92 10 70 Q10 26 60 26 Q110 26 110 70 Q110 92 102 92 Q96 84 90 92 Q84 84 78 92 Q72 84 66 92 Q60 84 54 92 Q48 84 42 92 Q36 84 30 92 Q24 84 18 92 Z"/>'
+    : body === 1 ? '<rect x="14" y="28" width="92" height="66" rx="30"/>' : '<path d="M60 22 C100 22 112 56 106 80 C100 100 20 100 14 80 C8 56 20 22 60 22 Z"/>';
+  var hat = ['<path d="M34 34 L26 12 L46 28 M86 34 L94 12 L74 28"/>', '<circle cx="60" cy="14" r="6"/><path d="M60 20 V28" stroke="'+col+'" stroke-width="3"/>', '<path d="M30 36 Q20 20 36 22 M90 36 Q100 20 84 22" fill="none" stroke="'+col+'" stroke-width="6" stroke-linecap="round"/>', ''][top];
+  var ex = eyes === 1 ? [60] : eyes === 2 ? [46, 74] : [40, 60, 80], sad = mood === "hit";
+  var eyeS = ex.map(function(x){ return sad ? '<path d="M'+(x-6)+' 56 l12 6 M'+(x-6)+' 62 l12 -6" stroke="#2e1d15" stroke-width="3.5" stroke-linecap="round"/>' : '<circle cx="'+x+'" cy="58" r="8" fill="#fffaf2"/><circle cx="'+(x+1)+'" cy="59" r="4" fill="#2e1d15"/><circle cx="'+(x+3)+'" cy="56" r="1.5" fill="#fffaf2"/>'; }).join("");
+  var mouth = mood === "win" ? '<path d="M44 74 Q60 88 76 74" fill="#2e1d15"/>' : sad ? '<path d="M48 80 Q60 72 72 80" fill="none" stroke="#2e1d15" stroke-width="3.5" stroke-linecap="round"/>' : '<path d="M46 76 Q60 84 74 76" fill="none" stroke="#2e1d15" stroke-width="3.5" stroke-linecap="round"/><path d="M52 78 l3 5 3 -4 M62 79 l3 4 3 -5" fill="#fffaf2"/>';
+  return '<svg viewBox="0 0 120 104" class="bsvg" aria-hidden="true"><g fill="'+col+'">'+hat+shape+'</g><ellipse cx="34" cy="70" rx="7" ry="4" fill="#f2a881" opacity=".7"/><ellipse cx="86" cy="70" rx="7" ry="4" fill="#f2a881" opacity=".7"/>'+eyeS+mouth+'</svg>';
+}
+function badges(){ var a = ICA.load().arcade; a.badges = a.badges || {}; return a.badges; }
+function bossPick(){
+  stopGame(); setTitle("Boss Battle"); cur = {s:"setup", g:"boss", hs:history.state};
+  var st = ICA.load(), mine = st.tracks || [], bg = badges(), lessonsSt = st.lessons || {};
+  var us = unitsWithQs().filter(function(u){ return ICA.bank.filter(function(q){ return q.unit === u.id; }).length >= 12; });
+  var studied = function(u){ return (u.lessons || []).some(function(l){ var s = lessonsSt[l.id]; return s && (s.learn || s.done); }); };
+  us.sort(function(a, b){ return (studied(b) - studied(a)) || ((mine.indexOf(b.track) > -1) - (mine.indexOf(a.track) > -1)); });
+  app.innerHTML = '<div class="stack">'+gbar("Boss Battle", false)+'<p class="small muted">Pick a unit to fight its boss. Units you’ve studied come first. '+Object.keys(bg).length+' of '+us.length+' bosses beaten.</p><div class="bosses">'+us.map(function(u){ var t = ICA.tracks[u.track] || {}, won = bg[u.id];
+    return '<button type="button" class="bosspick'+(won ? " won" : "")+'" data-boss="'+u.id+'">'+bossSVG(u, won ? "hit" : "")+'<span><b>'+esc(bossOf(u).name)+'</b><span class="small">'+esc((t.name || "")+" · Unit "+u.n)+'</span>'+(won ? '<span class="small">🏅 Beaten</span>' : '')+'</span></button>'; }).join("")+'</div></div>';
+}
+function boss(gm, uid){
+  var u = ICA.unitById[uid], qs = ICA.shuffle(ICA.bank.filter(function(q){ return q.unit === uid; })), i = 0, hp = 100, lives = 3, streak = 0, dealt = 0, right = 0, seen = 0, missed = [], name = bossOf(u).name;
+  gm.innerHTML = '<div class="stack">'+hudL('<span class="hearts" id="hp" aria-label="3 hearts left">❤️❤️❤️</span>')+
+    '<div class="arena"><div class="bname">'+esc(name.toUpperCase())+'</div><div class="bossbox" id="bb">'+bossSVG(u)+'</div><div class="hpbar"><i id="hb" style="width:100%"></i></div></div><div id="qb"></div></div>';
+  function next(){
+    if (i >= qs.length) qs = qs.concat(ICA.shuffle(qs.slice()));
+    ask(document.getElementById("qb"), qs[i], true, function(ok, el){
+      seen++; var bb = document.getElementById("bb");
+      if (ok){ right++; streak++; var dmg = 10 + Math.min(streak - 1, 5) * 3; hp = Math.max(0, hp - dmg); dealt += dmg; hit(true, el, streak, "-" + dmg + " HP"); bb.innerHTML = bossSVG(u, "hit"); juice(bb, "fx-jelly"); setTimeout(function(){ if (hp > 0 && document.getElementById("bb")) document.getElementById("bb").innerHTML = bossSVG(u); }, 450);
+        document.getElementById("hb").style.width = hp + "%"; }
+      else { hit(false, el, streak); streak = 0; lives--; if (missed.indexOf(qs[i]) < 0) missed.push(qs[i]); bb.innerHTML = bossSVG(u, "win"); var h = document.getElementById("hp"); h.textContent = lives > 0 ? new Array(lives+1).join("❤️") : "💔"; h.setAttribute("aria-label", lives+" hearts left"); }
+      AFX.roll(document.getElementById("sc"), dealt * 10, AFX.num); showCombo(streak);
+      setTimeout(function(){ if (!cur.alive) return;
+        if (hp <= 0 || lives <= 0){ var won = hp <= 0, score = dealt * 10 + (won ? lives * 300 + 500 : 0);
+          if (won){ var bg = badges(), first = !bg[uid]; bg[uid] = {t:Date.now(), hearts:Math.max(bg[uid] ? bg[uid].hearts : 0, lives)}; ICA.save(); }
+          stopTimer(); finish("boss");
+          results({key:"boss", title:name, score:score, sub:(won ? "Boss beaten with " + lives + " heart" + (lives === 1 ? "" : "s") + " left" : "The boss got away · " + (100 - hp) + "% damage"), grade:won ? (lives === 3 ? "S" : lives === 2 ? "A" : "B") : (hp < 40 ? "C" : "D"), perfect: won && !missed.length,
+            note: won ? '<div class="badgewin">'+bossSVG(u, "hit")+'<p><b>🏅 Badge earned:</b> '+esc(name)+'. It’s on your shelf in the Arcade.</p></div>' : '<p class="small">Bosses come back at full health, so try again whenever you like. The questions you missed are below.</p>', review:review(missed)});
+          return; }
+        i++; next(); }, ok ? 650 : 1200);
+    });
+  }
+  next();
+}
+
+/* ---------- Track Mix: 15 questions across a whole track ---------- */
+function mixPick(){
+  stopGame(); setTitle("Track Mix"); cur = {s:"setup", g:"mix", hs:history.state};
+  var st = ICA.load(), lessonsSt = st.lessons || {}, ids = Object.keys(ICA.tracks).sort(function(a, b){ return ((st.tracks || []).indexOf(b) > -1) - ((st.tracks || []).indexOf(a) > -1) || ICA.tracks[a].n - ICA.tracks[b].n; });
+  var a = st.arcade; if (a.mixStudied == null) a.mixStudied = true;
+  app.innerHTML = '<div class="stack">'+gbar("Track Mix", false)+'<div class="card stack setup"><div class="sg"><b>Track</b><div class="stack">'+ids.filter(function(id){ return unitsWithQs().some(function(u){ return u.track === id; }); }).map(function(id){ var t = ICA.tracks[id];
+      return '<button type="button" class="btn" data-mixt="'+id+'" style="justify-content:flex-start">'+(t.icon || "")+' '+esc(t.name)+'</button>'; }).join("")+'</div></div>'+
+    '<div class="sg"><label class="chk"><input type="checkbox" id="mixst"'+(a.mixStudied ? " checked" : "")+'> Only units I’ve studied (when there are at least two)</label></div></div></div>';
+  document.getElementById("mixst").onchange = function(e){ a.mixStudied = e.target.checked; ICA.save(); };
+}
+function mixPool(tid){
+  var st = ICA.load(), ls = st.lessons || {}, us = unitsWithQs().filter(function(u){ return u.track === tid; });
+  if (st.arcade.mixStudied){ var s = us.filter(function(u){ return (u.lessons || []).some(function(l){ var x = ls[l.id]; return x && (x.learn || x.done); }); }); if (s.length >= 2) us = s; }
+  var by = us.map(function(u){ return ICA.shuffle(ICA.bank.filter(function(q){ return q.unit === u.id; })); }), out = [], k = 0;
+  while (out.length < 15 && by.some(function(l){ return l.length; })){ var l = by[k % by.length]; if (l.length) out.push(l.pop()); k++; }   // round-robin: interleaved units
+  return ICA.shuffle(out);
+}
+function mix(gm, tid){
+  var qs = mixPool(tid), i = 0, score = 0, streak = 0, missed = [];
+  gm.innerHTML = '<div class="stack">'+hudL('<span>Q <span id="pos">1</span>/'+qs.length+'</span>')+'<div id="qb"></div><div id="nav"></div></div>';
+  function next(){
+    document.getElementById("pos").textContent = i + 1; document.getElementById("nav").innerHTML = "";
+    var u = ICA.unitById[qs[i].unit]; ask(document.getElementById("qb"), qs[i], false, function(ok, el){
+      if (ok){ score++; streak++; hit(true, el, streak, "+1"); } else { hit(false, el, streak); streak = 0; missed.push(qs[i]); }
+      AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
+      document.getElementById("nav").innerHTML = '<div class="lessonnav"><span class="small muted">From Unit '+u.n+': '+esc(u.title)+'</span><button class="btn primary" id="nx">'+(i < qs.length - 1 ? "Next →" : "Finish")+'</button></div>'; var b = document.getElementById("nx"); b.focus();
+      b.onclick = function(){ i++; if (i < qs.length) next(); else { finish("mix"); results({key:"mix", title:"Track Mix · " + ICA.tracks[tid].name, score:score, sub:score + " of " + qs.length + " right", grade:AFX.grade(score, qs.length, 15), review:review(missed), perfect:!missed.length}); } }; });
+  }
+  next();
+}
+
+var lastArg = {};
 /* ---------- one click handler for the page ---------- */
 app.addEventListener("click", function(e){
   var t;
@@ -901,8 +1226,14 @@ app.addEventListener("click", function(e){
   if ((t = e.target.closest("[data-again]"))){ launch(t.getAttribute("data-again"), true); return; }
   if ((t = e.target.closest("[data-mode]"))){ var m = t.getAttribute("data-mode");
     if (GAMES[m]){ push({s:"setup", g:m}); withData(function(){ setup(m); }); return; }
+    if (G2[m]){ push({s:"setup", g:m}); withData2(G2[m].data, function(){ setup2(m); }); return; }
+    if (m === "boss"){ push({s:"setup", g:m}); bossPick(); return; }
+    if (m === "mix"){ push({s:"setup", g:m}); mixPick(); return; }
     launch(m); return; }
-  if (e.target.closest("[data-home]")){ goHome(); }
+  if (e.target.closest("[data-home]")){ goHome(); return; }
+  if ((t = e.target.closest("[data-boss]"))){ lastArg.boss = t.getAttribute("data-boss"); launch("boss"); return; }
+  if ((t = e.target.closest("[data-mixt]"))){ lastArg.mix = t.getAttribute("data-mixt"); launch("mix"); return; }
+  if ((t = e.target.closest("[data-relisten]"))){ ICA.say("ja", t.getAttribute("data-relisten"), t); return; }
 });
 bar = ICA.topbar("Arcade");
 try { history.replaceState({s:"home", d:0}, ""); } catch(e){}

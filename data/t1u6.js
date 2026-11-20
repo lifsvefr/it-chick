@@ -159,7 +159,8 @@ ICA.addUnit({
       {t:"A filter bubble; delete her social media accounts", why:"A filter bubble is about what an algorithm shows her. This is about how she treats what she sees, which is confirmation bias. Deleting accounts doesn’t fix that."},
       {t:"Malinformation; report the posts", why:"Malinformation is true information used to harm. Hana’s pattern is a bias in her own checking."},
       {t:"Nothing to worry about; only claims she disagrees with need checking", why:"Agreeable claims are exactly the ones that slip through unchecked."}
-    ]}
+    ]},
+      {id:"t1u6-l1-x8", type:"explain", q:"Explain why false stories often spread faster online than true ones. Use what the 2018 MIT study found.", hint:"What did false stories have more of? And who did the spreading: bots or people?", model:"In their 2018 study in *Science*, Vosoughi, Roy and Aral found that false stories were about 70% more likely to be reshared than true ones and reached people much faster. False stories tended to be more novel, and replies to them showed more surprise, fear and disgust: people like to share what feels new and stirs strong emotion. Bots spread true and false stories at similar rates, so the difference came from people. Sharing takes one tap while checking takes a minute, and feeds often reward strong reactions, so slowing down is one of the best counter-moves.", points:["Says false stories were reshared more or spread faster (MIT, 2018)", "Says they were more novel or surprising", "Mentions emotions such as surprise, fear or disgust", "Says people, not bots, drove the difference"]}
    ],
    apply:{intro:"Look at your own information diet with fresh eyes. You don’t need to change anything yet; just notice.", tasks:[
      {t:"Map where your news comes from", how:["For two days, jot down every place you came across news or claims about the world: apps, websites, group chats, TV, radio, podcasts, conversations.","For each, note whether you chose it (you follow it, you subscribe) or it was chosen for you (a recommended feed, a forwarded message).","Note which ones you trust most, and why."], write:"Places I met news… Chosen by me or by a feed… The ones I trust most, and why…"},
@@ -305,7 +306,8 @@ ICA.addUnit({
       {t:"Avoid it completely, because anyone can edit it", why:"Fact-checkers use Wikipedia routinely for orientation. The skill is using it as a start, not avoiding it."},
       {t:"Quote the Wikipedia article as the final word in his report", why:"For serious work, cite the sources Wikipedia points to, not Wikipedia itself."},
       {t:"Edit the article to add what he believes", why:"Wikipedia forbids original research; and editing doesn’t help him find out who funds the group."}
-    ]}
+    ]},
+      {id:"t1u6-l2-x8", type:"explain", q:"Explain why professional fact-checkers leave an unfamiliar website almost at once to judge it, instead of studying the site closely.", hint:"What can anyone make look good? What is harder to fake?", model:"Anyone can build a polished website and write a glowing About page, so a site’s design and what it says about itself tell you little. In the Stanford study, historians and students who read vertically, staying on the site, were often fooled. The fact-checkers read laterally: they opened new tabs and searched for what other, independent sources said about the organisation behind it. What others say is much harder to fake than a site’s own self-description, and the fact-checkers reached better-supported conclusions in a fraction of the time.", points:["Says a site’s look and About page are easy to fake", "Describes lateral reading: leaving to see what others say about the source", "Says outside views are harder to fake", "Mentions that people who read vertically were often fooled (the Stanford study)"]}
    ],
    apply:{intro:"Practise the moves on real things in your own feeds. Don’t share or comment on anything while you practise.", tasks:[
      {t:"Read one source laterally", how:["Find a website, account or organisation you don’t know that appeared in your feed, search results or a forwarded message.","Open a new tab and search for its name (not its address). Add `funding`, `who runs` or `Wikipedia` if useful.","Scan the first page of results before clicking anything. Pick two independent sources.","Write one sentence: who is behind it, and would you trust it for this topic?"], write:"The source… What independent sources say… My verdict…"},
@@ -456,7 +458,8 @@ ICA.addUnit({
       {t:"Every photo taken on a modern phone carries them automatically", why:"Only some devices and apps add them, and many platforms strip them on upload."},
       {t:"They prove whether an image is true or false", why:"Even Google’s help page says they don’t by themselves establish whether media is real or fake. They record origin and edits."},
       {t:"They can’t be removed from a file", why:"Metadata can be stripped altogether; a screenshot often loses it."}
-    ]}
+    ]},
+      {id:"t1u6-l3-x8", type:"explain", q:"A friend says she can always spot AI images by looking for extra fingers or garbled text. Explain why that isn’t reliable, and what works better.", hint:"What happens as the tools improve? What does finding no glitch prove?", model:"Early AI images often had tell-tale flaws, but the tools keep improving and those glitches are now much rarer. A glitch can suggest an image was generated or edited, but finding no glitch proves nothing, and real photos have odd details too. Online AI detectors aren’t a fix either: a 2024 NIST review found they can have substantial error rates. It works better to treat the image like any other claim: use reverse image search to find the earliest source and its original caption, look for independent coverage, and trace it to the original.", points:["Says AI tools improve, so glitches are becoming rarer", "Says finding no glitch proves nothing", "Says AI detectors are unreliable", "Suggests finding the source, other coverage or the original instead"]}
    ],
    apply:{intro:"Practise on an image you already have, such as a photo you took yourself or a picture from a news site. Don’t upload private or intimate images to any search tool.", tasks:[
      {t:"Run a reverse image search", how:{
@@ -638,7 +641,8 @@ ICA.addUnit({
       {t:"Established science, because it’s a study", why:"Being a study isn’t enough. This one hasn’t even been peer-reviewed."},
       {t:"Definitely false, because preprints are fake", why:"Preprints are a normal, legitimate way to share early research. They just haven’t been reviewed yet."},
       {t:"Reliable, because it’s new", why:"Newness doesn’t make a finding reliable; replication does."}
-    ]}
+    ]},
+      {id:"t1u6-l4-x8", type:"explain", q:"A post says “A new study proves chocolate improves memory!” and links to a news article. Explain why you should go to the study itself, and what you might find there.", hint:"Which is the primary source here? What could a news report or post leave out?", model:"The news article is a secondary source: it describes the study. The study itself is the primary source, and only it lets you check that the claim matches the original. You might find the study was done in mice rather than people, or was small, or found that chocolate was only “linked to” better memory rather than causing it, or that it hadn’t been peer reviewed yet. Secondary and tertiary sources are good for understanding a topic, but for checking the key claim you trace it to the original.", points:["Identifies the study as the primary source and the article as secondary", "Says the primary source lets you check the claim matches the original", "Gives an example of something the post might leave out (mice, small study, correlation, not peer reviewed)", "Says secondary or tertiary sources are for understanding, not for checking the key claim"]}
    ],
    apply:{intro:"Use your own search engine and something you’re genuinely curious about.", tasks:[
      {t:"Rewrite a search three ways", how:["Pick a question you care about (a health worry, a household task, a news topic).","Search it as you normally would and note the top three results.","Rewrite it: use the words an answer would contain, phrase it neutrally, and add one operator (`site:`, `filetype:pdf` or quotation marks).","Compare the top three results. Which search found better sources?"], write:"My question… Original search and results… Improved search and results…"},
@@ -739,7 +743,7 @@ ICA.addUnit({
         "**Read laterally and find better coverage**, exactly as with any other claim (Lesson 2).",
         "**Don’t paste private information** (yours or other people’s) into AI tools without knowing how the service stores and uses it."
       ]},
-      "Unit 12, Lesson 4 goes further with AI assistants: how to ask well, how to check what comes back, and {{ai-privacy-disclosure|what you share when you paste something in}}.",
+      "Unit 12, Lesson 4 goes further with AI assistants: how to ask well, how to check what comes back, and {{ai-privacy-disclosure|what you share when you paste something in}}. For AI-made statistics, code and charts, Track 3, Unit 9, Lesson 6 shows the checks ({{checking-ai-data-work}}).",
       {warn:"Asking the chatbot “are you sure?” or “is that source real?” is not a check. As the court case shows, it may confidently confirm its own mistake. Check outside the tool."}
     ]},
     {h:"Sharing responsibly and correcting kindly", body:[
@@ -810,7 +814,8 @@ ICA.addUnit({
       {t:"Asking “Where did this come from? I couldn’t find it anywhere else.”", b:0, why:"A genuine question invites him to check, using SIFT-like thinking."},
       {t:"Sending ten articles at once with no message", b:1, why:"Overwhelming and impersonal; it’s unlikely to be read."},
       {t:"Mocking him later in a different chat", b:1, why:"Unkind, and it doesn’t correct anything."}
-    ]}
+    ]},
+      {id:"t1u6-l5-x9", type:"explain", q:"Explain why an AI chatbot can give a confident answer with a reference that doesn’t exist, and how you should check one.", hint:"What is a large language model trained to do? Does sounding right mean it has been checked?", model:"A chatbot is built on a large language model, trained on huge amounts of text to predict which word is likely to come next. Like a very well-read autocomplete, it produces writing that sounds like a correct answer, but that isn’t the same as an answer that has been checked. So it can produce fluent, confident, false content, including references with plausible authors and titles. Asking it “are you sure?” isn’t a check. Instead, search the exact title outside the tool, open the source, and see whether it says what the AI claimed.", points:["Says the model predicts likely next words", "Says sounding right is not the same as being checked", "Names this as hallucination or confabulation, or says references can be invented", "Says to check outside the tool by finding and opening the source"]}
    ],
    apply:{intro:"Practise on real numbers, charts and AI answers you meet this week.", tasks:[
      {t:"Interrogate one statistic", how:["Find a headline or post with a percentage, “times the risk” or a big number.","Ask: compared with what? out of how many? over what period? percent or percentage points? relative or absolute?","Find the original source of the number if you can, and write an honest one-line version."], write:"The claim… What I found… My honest version…"},

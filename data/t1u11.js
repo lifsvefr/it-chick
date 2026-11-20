@@ -188,7 +188,8 @@ ICA.addUnit({
       {t:"Look up what people from that country are “like” and write in that style", why:"National stereotypes are unreliable; individuals and workplaces vary hugely. Mirroring the actual person is safer and more respectful."},
       {t:"Be very casual with jokes and emoji to seem friendly", why:"Humour and emoji often don’t survive translation or a first contact; they can read as unprofessional."},
       {t:"Write “Dear Sir” because most suppliers are men", why:"Guessing gender is risky and can offend. Use their full name or role instead."}
-    ]}
+    ]},
+      {id:"t1u11-l1-x8", type:"explain", q:"Kofi sends an email with the subject “Hi” that ends “Any thoughts?” after mentioning three unrelated topics. Nobody replies. Explain why, and how he could rewrite it so it gets answered.", hint:"What does a busy reader see first? How many asks should one email carry?", model:"Busy readers skim: they see the sender, the subject and the first line or two, and if those don’t say what is needed, they move on. “Hi” and “Any thoughts?” give them nothing to act on, and with three topics people tend to answer the easiest one or none. Kofi should send one email per topic, with a subject that names the topic and what he needs, and put a specific ask near the top: what, from whom and by when, for example “Could you confirm the hall booking by Wednesday?”", points:["Says readers skim the subject and first lines", "Says one ask per email (separate topics get separate emails)", "Says the subject should name the topic and what is needed", "Says the ask should be specific, with a deadline"]}
    ],
    apply:{intro:"Set up your email app so that good habits are automatic. Outlook steps are for Outlook on the web (outlook.com, free with a Microsoft account) and the new Outlook for Windows; classic Outlook looks different. Thunderbird is a free, open-source email app from Mozilla (not part of LibreOffice).", tasks:[
      {t:"Turn on or lengthen Undo Send", app:{
@@ -370,7 +371,8 @@ ICA.addUnit({
       {t:"Leave it: email apps sometimes create rules automatically", why:"Apps don’t silently create forwarding rules to unknown addresses. This is a warning sign of account takeover."},
       {t:"Just delete the rule", why:"If someone made it, they may still have his password and can add it back. He needs to change the password and secure the account too."},
       {t:"Email the unknown address and ask who they are", why:"That alerts a likely attacker and doesn’t secure anything. Secure the account first."}
-    ]}
+    ]},
+      {id:"t1u11-l2-x8", type:"explain", q:"Explain the difference between archiving and deleting an email, and why archiving is the safe default for messages you’ve finished with.", size:"2–3 sentences", hint:"Where does each one put the email, and can you find it again later?", model:"Deleting moves an email to the Trash, which is emptied after a while or when you empty it; then the email is gone for good. Archiving takes the email out of the inbox but keeps it, and it stays searchable until you choose to delete it. So for receipts, confirmations and finished conversations, archiving clears the inbox for things that still need you, while keeping everything you might need to find again later with search.", points:["Says deleted email goes to the Trash and is eventually gone", "Says archived email leaves the inbox but is kept", "Says archived email can still be found by search", "Says this keeps the inbox for things that still need you"]}
    ],
    apply:{intro:"Pick the two or three tasks that would help you most. Nothing here deletes mail. Outlook steps are for Outlook on the web and the new Outlook for Windows.", tasks:[
      {t:"Find an old email using search", app:{
@@ -548,7 +550,8 @@ ICA.addUnit({
       {t:"Just start recording; the app shows a notice", why:"The notice tells people after the fact. Asking first is what makes it consent."},
       {t:"Record secretly so people behave naturally", why:"Secret recording breaks trust and can be illegal in many places."},
       {t:"Record it, then delete the parts where people object afterwards", why:"People should be able to say no before they are recorded, not after."}
-    ]}
+    ]},
+      {id:"t1u11-l3-x8", type:"explain", q:"A weekly call is fixed at 10:00 New York time. Colleagues in London usually join at 15:00, but for a few weeks each year it is at 14:00. Explain why, and how to avoid confusion.", hint:"Do the US and the UK change their clocks on the same day?", model:"Each place’s clock is an offset from UTC, and daylight saving moves that offset by an hour twice a year. New York is UTC−5 in winter and UTC−4 in summer; London is UTC+0 and UTC+1. Most of the year the gap is five hours, so 10:00 in New York is 15:00 in London. But the US and the UK change their clocks on different Sundays, so for about four weeks a year, in March and at the end of October, the gap is only four hours and the call is at 14:00. Sending a proper calendar invitation lets the calendar convert it for everyone.", points:["Explains times as offsets from UTC", "Says daylight saving changes the offset", "Says the US and UK change on different dates, so the gap is briefly four hours", "Suggests letting the calendar invitation do the conversion"]}
    ],
    apply:{intro:"These tasks work with free accounts: Outlook on the web (outlook.com), Google Calendar, Thunderbird’s built-in calendar, or Calendar on a Mac.", tasks:[
      {t:"Show a second time zone in your calendar", app:{
@@ -704,7 +707,8 @@ ICA.addUnit({
       {t:"Share it as Viewer", why:"Viewers can read but can’t comment or suggest, so the colleague couldn’t propose anything."},
       {t:"Share it as Editor and ask them to be careful", why:"Editors can change text directly (and reshare the file by default). Commenter gives exactly the access needed."},
       {t:"Email a copy and ask for a marked-up version back", why:"That works, but recreates the separate-copies problem. Commenter access keeps everything in one place."}
-    ]}
+    ]},
+      {id:"t1u11-l4-x8", type:"explain", q:"Explain why, for a plan that is still being worked on, sharing one cloud copy is better than emailing it as an attachment.", size:"2–3 sentences", hint:"Think of Mei, who emailed a draft to three people and ended up with four versions.", model:"An attachment gives every person their own copy. Their changes happen in separate copies that drift apart, and someone has to merge them by hand, hoping nothing is lost; names like `plan_v3_Kenji-edits_FINAL2.docx` are the symptom. With a share link, everyone opens the same single copy in the cloud, sees each other’s changes within seconds, and the app keeps a history of every version. Attachments still suit finished things, such as a final PDF.", points:["Says attachments create separate copies that drift apart", "Says someone must merge the copies by hand", "Says a shared link means everyone works on one copy", "Mentions seeing changes quickly or version history"]}
    ],
    apply:{intro:"Use a test document with nothing private in it. Word for the web is free with a Microsoft account; Google Docs is free with a Google account; Pages is free on Apple devices.", tasks:[
      {t:"Share a document with one person for comments only", app:{
@@ -867,7 +871,8 @@ ICA.addUnit({
       {t:"Reply to everything immediately so the questions stop sooner", why:"Instant replies teach people to expect them and make the evenings worse."},
       {t:"Leave the team channel", why:"She would miss important information. Notification settings solve the problem without cutting her off."},
       {t:"Ask everyone to stop using chat", why:"Chat is useful for quick questions; the issue is notifications and expectations, not the tool."}
-    ]}
+    ]},
+      {id:"t1u11-l5-x8", type:"explain", q:"A volunteer team agrees a new Saturday rota in a busy chat channel. Two weeks later, nobody can find what was decided. Explain what went wrong and what should have happened.", hint:"What is chat good at, and what is it weak at?", model:"Chat is good for quick questions and updates inside a team, but weak for big decisions or anything that must be found weeks later: messages get buried in the scroll, and free plans may hide older history. The channel was fine for reaching the decision, but someone should then have recorded it where it lasts, such as the shared rota document, and posted a link in the channel. If people outside the group needed to know, an email would tell them. Moving information to the right place is part of the job.", points:["Says chat is good for quick discussion but weak for lasting decisions", "Says decisions get lost in the scroll (or hidden on free plans)", "Says the decision should be recorded in a shared document", "Mentions using email or a link to tell people where it lives"]}
    ],
    apply:{intro:"Use the chat tool your team, class or group actually uses. If you don’t use one yet, try these in a free Slack workspace, Microsoft Teams (free), Google Chat (in Gmail), or the group settings of a messaging app.", tasks:[
      {t:"Set your status, and a time for it to clear", how:["**Microsoft Teams:** select your profile picture (top right), then your current status. Choose a status, or select **Duration** to set one that resets at a time you choose.","**Slack:** click your profile picture, then **Update your status**; choose an emoji, a message and when to clear it.","**Google Chat (in Gmail):** at the top right, open the menu next to your status and choose **Automatic**, **Do not disturb** or **Set as away**.","Add your time zone and working hours to your profile if the tool allows it."]},

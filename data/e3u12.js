@@ -4,8 +4,8 @@ ICA.addUnit({id:"e3u12",
  n:12,
  title:"Reading and listening strategies",
  icon:"🎧",
- blurb:"The last unit of Japanese Foundations: reading longer texts and finding the writer’s point; brochures, work emails and stories; listening for gist and detail; fillers, casual speech and shadowing; then the JLPT N3, easy news, graded readers, a plan after N3, the bridge to Academic Japanese and a send-off.",
- goals:["Find the writer’s point in N3 essays and explanations, using text shapes, view endings and connectors","Find information in brochures and work emails, and infer what stories leave unsaid","Listen for gist and for detail, and catch the words that change a plan or reveal a reason","Follow real spoken Japanese with fillers, aizuchi, casual contractions and unfinished sentences","Practise with real audio by shadowing, and describe fairly what research says about it","Describe the JLPT N3 sections, item types, scoring and pass marks","Use free easy news and graded readers for extensive reading","Plan your study after N3, and know how to continue into Academic Japanese"],
+ blurb:"The last unit of Japanese Foundations: reading longer texts and finding the writer’s point; brochures, work emails and stories; listening for gist and detail; fillers, casual speech and shadowing; using machine translation and AI tutors well; and last, the JLPT N3, easy news, graded readers, a plan after N3, the bridge to Academic Japanese and a send-off.",
+ goals:["Find the writer’s point in N3 essays and explanations, using text shapes, view endings and connectors","Find information in brochures and work emails, and infer what stories leave unsaid","Listen for gist and for detail, and catch the words that change a plan or reveal a reason","Follow real spoken Japanese with fillers, aizuchi, casual contractions and unfinished sentences","Practise with real audio by shadowing, and describe fairly what research says about it","Use machine translation and AI chatbots as learning tools: check what they get wrong, protect privacy and keep doing the thinking yourself","Describe the JLPT N3 sections, item types, scoring and pass marks","Use free easy news and graded readers for extensive reading","Plan your study after N3, and know how to continue into Academic Japanese"],
  read:[
   {book:"irodori", where:"Pre-Intermediate (A2/B1), Lessons 1–18", note:"The Japan Foundation’s free A2/B1 course, released in 2026, with reading and listening activities and 3 hours 40 minutes of audio. A good companion to this unit and the next step after it."},
   {book:"taekim", where:"Essential Grammar, “Casual Patterns and Slang”", note:"Casual speech as you will hear it: dropped particles, changed word order and common casual endings."}
@@ -397,7 +397,7 @@ ICA.addUnit({id:"e3u12",
       how:["Write a short reply saying whether you can attend the training on 9 April.","Start with お[疲]{つか}れさまです and your name, answer the question, and end with よろしくお[願]{ねが}いいたします.","Check that you answered exactly what was asked, before the deadline."],
       write:"[件名]{けんめい}：Re: [研修]{けんしゅう}の[日程]{にってい}[変更]{へんこう}について … [佐藤]{さとう}さん …"},
      {t:"Read a story and note what it leaves out",
-      how:["Read one free graded reader at your level (for example from NPO多言語多読, Lesson 5), or a short story in a textbook.","Write the gist in two English sentences.","Write one thing the story makes you infer, and the clue: an action, a way of speaking, a grammar ending or the last line."],
+      how:["Read one free graded reader at your level (for example from NPO多言語多読, Lesson 6), or a short story in a textbook.","Write the gist in two English sentences.","Write one thing the story makes you infer, and the clue: an action, a way of speaking, a grammar ending or the last line."],
       write:"Gist… something I inferred… the clue…"}
     ],
     proof:"One real practical text solved with your conditions and the deciding word, a polite reply email, and notes on one story with an inference and its clue."},
@@ -675,7 +675,7 @@ ICA.addUnit({id:"e3u12",
     {h:"Real audio to practise with",
      body:[
       "This app has no audio, so use these free sources. Recordings that come with a script are best, because you can check what you heard.",
-      {list:["**IRODORI** (the Japan Foundation): free PDF textbooks and MP3 audio at every level. The new Pre-Intermediate (A2/B1) book has 18 lessons and 3 hours 40 minutes of audio, and the scripts of most dialogues are in the book. It suits listening practice and shadowing at this stage. The audio can be downloaded from the site, irodori.jpf.go.jp.","**NHKやさしいことばニュース** (NEWS WEB EASY): short news in easy Japanese, with audio. Lesson 5 explains how to use it and the confirmation screen it shows first.","**The JLPT’s official sample questions** on jlpt.jp: one sample for each test item type, the listening types included, so you can hear what each one sounds like.","**Podcasts and videos for learners**: choose ones with a transcript or Japanese subtitles, at a level where you understand most of it."]},
+      {list:["**IRODORI** (the Japan Foundation): free PDF textbooks and MP3 audio at every level. The new Pre-Intermediate (A2/B1) book has 18 lessons and 3 hours 40 minutes of audio, and the scripts of most dialogues are in the book. It suits listening practice and shadowing at this stage. The audio can be downloaded from the site, irodori.jpf.go.jp.","**NHKやさしいことばニュース** (NEWS WEB EASY): short news in easy Japanese, with audio. Lesson 6 explains how to use it and the confirmation screen it shows first.","**The JLPT’s official sample questions** on jlpt.jp: one sample for each test item type, the listening types included, so you can hear what each one sounds like.","**Podcasts and videos for learners**: choose ones with a transcript or Japanese subtitles, at a level where you understand most of it."]},
       {key:"Hear fillers as signals, contractions as their full forms, and unfinished sentences as meaning. Then practise with real audio, a little every day."}
      ]}
    ],
@@ -783,6 +783,188 @@ ICA.addUnit({id:"e3u12",
     {book:"taekim", where:"Essential Grammar, “Casual Patterns and Slang” (sections “Basic Principles of Slang” and “Sentence ordering and particles (or the lack thereof)”)", note:"How casual speech drops and moves particles, with many examples."},
     {book:"irodori", where:"Pre-Intermediate (A2/B1): the conversations in any lesson", note:"Natural conversations with audio. Listen for fillers, aizuchi and casual forms such as って and っけ."}
    ]},
+  {id:"e3u12-l6",
+   title:"Machine translation and AI tutors: using them well",
+   minutes:55,
+   hook:{q:"Mariya writes in the house group chat: 「イエンさん、[熱]{ねつ}があるんだって。[今日]{きょう}の夕ごはん、いらないって。」 Cheska puts it into a translation app, which says: “Yến apparently has a fever. I don’t need dinner today.” Who doesn’t need dinner?",
+    options:["Yến","Mariya, who wrote the message","Cheska, who is reading it","Everyone in the house"],
+    answer:0,
+    reveal:"**Yến.** The second sentence has no subject, which is normal in Japanese: the person is still Yến from the sentence before, and 〜って at the end reports what she said (“she says she doesn’t need dinner”), as in Lesson 4. English needs a subject in every sentence, so the app had to guess, and it guessed “I”. Translation tools and AI chatbots are useful, but they guess, and they don’t tell you which parts were guesses. This lesson shows what they get wrong in Japanese, how to check them, and how to use a chatbot as a tutor without letting it do your learning for you."},
+   goals:["Explain why machine translation goes wrong with Japanese: missing subjects, politeness level, keigo, ambiguous set phrases and names","Check a translation with back-translation and a dictionary, and know what each check can and can’t catch","Use an AI chatbot as a tutor for explanations, graded examples, conversation practice and corrections","Recognise confident errors and unnatural Japanese, and avoid leaning on the tool","Protect your own and other people’s privacy, and follow a routine that keeps you doing the thinking"],
+   learn:[
+    {h:"Two useful tools that guess",
+     body:[
+      {lead:"A translation app turns a long notice into English in seconds. An AI chatbot explains grammar at midnight and chats in Japanese for as long as you like. Used well, they speed up learning. Used badly, they do the learning for you."},
+      "[[machine-translation|Machine translation]] ([機械]{きかい}[翻訳]{ほんやく}) means tools such as Google Translate, DeepL or the translator in your phone or browser. AI chatbots such as ChatGPT, Gemini, Claude or Copilot run on [[large-language-model|large language models]], and can translate, explain and hold a conversation too. Both are built from huge amounts of text, and both produce the most likely wording. Neither knows who will read the result unless you tell it, and neither checks its own work.",
+      "That works well for the gist, and badly where Japanese and English differ. Unit 8 warned that translation tools get readings, names and polite meanings wrong ({{dictionary-skills}}). Now you know enough Japanese to see why, and to check.",
+      {table:[
+        ["Usually helpful","Check it, or ask a person"],
+        ["The gist of a long notice or email","A message to a teacher, a landlord or a company"],
+        ["A second opinion on a sentence you have already read","Names, numbers, dates and deadlines"],
+        ["An explanation you can then check in a textbook","Anything you will sign, hand in or be marked on"],
+        ["Example sentences and conversation practice","Health, legal and money matters"]
+       ]}
+     ]},
+    {h:"What machine translation gets wrong in Japanese",
+     body:[
+      "Japanese leaves out things English must say, and says things English leaves out. Those gaps are where tools guess.",
+      {table:[
+        ["Problem","Example","What goes wrong"],
+        ["Missing subjects","夕ごはん、いらないって。","English needs “I”, “she” or “they”, so the tool picks one"],
+        ["Politeness level","送るよ / 送ります / お送りします","All three become “I’ll send it”"],
+        ["Keigo direction","[拝見]{はいけん}する / ご[覧]{らん}になる","Both become “see”, so who is raised is lost"],
+        ["Set phrases","[結構]{けっこう}です","“That’s fine” or “no, thank you”"],
+        ["Names","[平川]{ひらかわ}さんから電話がありました。","“Mr. Hirakawa”? さん shows no gender, and Aoi is a woman"]
+       ]},
+      "**Missing subjects and “you”.** Japanese leaves out a subject that is clear from the context ([[subject-omission]]), as in the warm-up. From English into Japanese, tools often keep every “I”, “my” and “you”: 私は… 私の… あなたは… Natural Japanese leaves most of them out, and uses a person’s name instead of あなた.",
+      "**Politeness level.** A translation box sees only your sentence. It doesn’t know whether you are writing to a friend, to Fumiko-san or to a company ([[uchi-soto]], {{plain-and-polite-speech}}), so it has to pick one level, and it may pick the wrong one. Coming back into English, the level disappears: 送るよ and お送りします are both “I’ll send it”.",
+      "**Keigo direction.** [拝見]{はいけん}する is humble ([[kenjougo]]): it is for your own looking. ご[覧]{らん}になる is respectful ([[sonkeigo]]): it is for the other person’s looking. English has one word, “see”, so a translation into English loses who is being raised, and a tool or a learner writing Japanese can put the humble verb on the other person, which lowers them. Unit 10 practised these forms ({{keigo-in-practice}}).",
+      "**Set phrases.** [結構]{けっこう}です can mean “that’s fine” or “no, thank you”, and いいです can also be a yes or a no. At a shop counter, when the clerk asks 「[袋]{ふくろ}はご[利用]{りよう}ですか」, 「[結構]{けっこう}です」 is a polite no. The situation decides, and a tool working sentence by sentence can choose the wrong meaning.",
+      "**Names.** さん and 先生 don’t show gender, and a name in kanji can often be read in several ways, like many kanji words (Unit 8). A tool may guess “Mr.” for a woman, give the wrong reading, or even translate a name that is also an ordinary word. Ask the person, or check how they write their own name in romaji."
+     ]},
+    {h:"Checking a translation: back-translation and the dictionary",
+     body:[
+      "Two quick checks help, and each one catches different problems.",
+      {list:["**[[back-translation|Back-translation]]** (round-trip translation): translate the tool’s Japanese back into English, if possible with a different tool, and compare it with what you meant. If the meaning changed, something went wrong.","**A dictionary**: look up the words that carry the weight (verbs, keigo, set phrases, names) in a dictionary such as Jisho.org ([[jisho-tool]]), and read the tags as well as the meaning. Jisho marks [拝見]{はいけん}, for example, as “Humble (kenjougo) language”."]},
+      {warn:"Back-translation can pass a bad translation. When free online translators were tested this way (Somers, 2005), how good the round trip looked said little about how good the first translation was. Politeness, keigo and missing subjects disappear in both directions, so they come back looking fine."},
+      {ex:"Ms. Fujiwara’s email asks: 「作品を、[拝見]{はいけん}できますか」. Rodrigo writes his reply with a translation app, and reuses her word [拝見]{はいけん}:\n\n✗ メールありがとうございます。ぜひ私の[絵]{え}を[拝見]{はいけん}してください。金曜日までにお送りします。\n\nBack-translation: “Thank you for your email. Please take a look at my pictures. I’ll send them by Friday.” It looks perfect.\nDictionary: [拝見]{はいけん} is humble. It describes the writer’s own looking, so asking Ms. Fujiwara to [拝見]{はいけん}する lowers her. The respectful request is ご[覧]{らん}ください.\nA person: before he sends it, Yến reads it, and suggests ご[連絡]{れんらく}ありがとうございます, a more formal opening that is common in business emails.\n\n✓ ご[連絡]{れんらく}ありがとうございます。ぜひ私の[絵]{え}をご[覧]{らん}ください。金曜日までにお送りします。", label:"Worked example: checking Rodrigo’s reply"},
+      {fig:'<svg viewBox="0 0 340 424"><defs><marker id="u12l6a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">Checking a translation</text><rect class="d-panel" x="8" y="30" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="52">1. Say it simply</text><text class="s" x="20" y="70">Short sentences, one idea each</text><path class="d-ink" d="M170 82 V94" stroke-width="2" marker-end="url(#u12l6a)"/><rect class="d-panel" x="8" y="98" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="120">2. Translate, then read it</text><text class="s" x="20" y="138">Can you read every word yourself?</text><path class="d-ink" d="M170 150 V162" stroke-width="2" marker-end="url(#u12l6a)"/><rect class="d-lup" x="8" y="166" width="324" height="66" rx="8" stroke-width="1.5"/><text x="20" y="188">3. Back-translate</text><text class="s" x="20" y="206">Catches: a changed meaning</text><text class="s" x="20" y="223">Misses: politeness, keigo, subjects</text><path class="d-ink" d="M170 234 V246" stroke-width="2" marker-end="url(#u12l6a)"/><rect class="d-lup" x="8" y="250" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="272">4. Look it up</text><text class="s" x="20" y="290">Keigo tags, set phrases, names</text><path class="d-ink" d="M170 302 V314" stroke-width="2" marker-end="url(#u12l6a)"/><rect class="d-gold" x="8" y="318" width="324" height="66" rx="8" stroke-width="2"/><text x="20" y="340">5. Does it matter?</text><text class="s" x="20" y="358">A teacher, a landlord, a company:</text><text class="s" x="20" y="375">ask a person to read it</text><text x="170" y="410" text-anchor="middle" class="s">Each check catches different problems</text></svg>', alt:"Five steps going down. 1, say it simply: short sentences, one idea each. 2, translate, then read it: can you read every word yourself? 3, back-translate: catches a changed meaning, misses politeness, keigo and subjects. 4, look it up: keigo tags, set phrases, names. 5, does it matter? For a teacher, a landlord or a company, ask a person to read it. Below: each check catches different problems.", cap:"Back-translation checks the meaning; the dictionary checks the words; a person checks whether it fits the relationship."}
+     ]},
+    {h:"An AI chatbot as a tutor",
+     body:[
+      "A chatbot can do things a translation box can’t: explain, give more examples, play a role and react to your mistakes. Like any [[ai-prompt|prompt]], your request works better when it says your level, what you want and what to avoid ({{prompting-well}}).",
+      {table:[
+        ["Use","What to ask for","Then"],
+        ["Explanations","The difference between two patterns, in simple English","Check it in the lesson or a textbook"],
+        ["Graded examples","Five sentences with one pattern, at your level","Look up new words; ask which are casual"],
+        ["Conversation","A role-play, one short line at a time","Note the corrections and check them"],
+        ["Corrections","Which sentences have a mistake, and what kind","Fix them yourself first"]
+       ]},
+      {ex:"“Explain the difference between 〜ために and 〜ように in simple English, with two short examples of each.”\n\n“Let’s practise at a city office. You are the clerk and I am a resident. Use です・ます, one short line at a time, and wait for my answer. Don’t correct me until I write 終わり. Then list my three most important mistakes.”\n\n“Here is my diary. Don’t rewrite it. Tell me which sentences have a mistake and what kind (particle, verb form, word choice), and let me try again.”", label:"Requests that keep you working"},
+      "Asking for “N3 level” helps, but the tool’s idea of N3 is a guess: the JLPT has published no official word or kanji lists since its 2010 revision, so every “N3 list” is an estimate (Unit 8). Check new words in a dictionary.",
+      {ex:"Cheska: [週末]{しゅうまつ}、海に行きました。✗ 水がつめたいでした。 Which sentence has a mistake? Give me a hint, not the answer.\nTutor: The second one. Look at the past form of the い-adjective.\nCheska: 水がつめたかったです。\nTutor: Correct. い-adjectives make the past with 〜かった; です only adds politeness.\n\nCheska found the form herself, so she is more likely to remember it. She adds ✗ つめたいでした → ✓ つめたかったです to her error list.", label:"A hint, not an answer"}
+     ]},
+    {h:"The risks: confident errors, unnatural Japanese, leaning on it",
+     body:[
+      "**Confident errors.** Chatbots sometimes state wrong things fluently and with total confidence (a [[hallucination]]; {{ai-chatbot-accuracy}}). In Japanese this includes wrong readings, rules that are too simple (“〜てしまう always means regret”), invented explanations of pitch accent, and keigo that is slightly off. Asking “Are you sure?” is not a check. Look it up: a dictionary for words and readings, a lesson or textbook for grammar, and a pitch-accent dictionary for pitch ({{pitch-accent}}).",
+      "**Correct is not the same as natural.** A sentence can be grammatical and still sound like a translation, because it keeps English habits:",
+      {ex:"Sounds translated: 私は[昨日]{きのう}、私の友だちと私の[部屋]{へや}で映画を見ました。\nNatural: [昨日]{きのう}、友だちと[部屋]{へや}で映画を見ました。\n\nTo a teacher, sounds rude: あなたは[週末]{しゅうまつ}、何をしましたか。\nNatural: 先生は[週末]{しゅうまつ}、何をなさいましたか。", label:"Grammatical, but not natural"},
+      "あなた sounds distant, and to a teacher or an older person it can sound rude; Japanese uses the person’s name and title, or no word at all. [彼]{かれ} and [彼女]{かのじょ} are also used much less than “he” and “she”, and in conversation they often mean “boyfriend” and “girlfriend”. Say まりやさん, not [彼女]{かのじょ}.",
+      "**Leaning on it.** In a field experiment with nearly 1,000 high school students in Turkey (Bastani and colleagues, *PNAS*, 2025), students who practised maths with a plain GPT-4 chatbot did better in practice, but about 17% worse in the exam without it than students who never had it. A version that gave hints instead of answers largely removed that harm. The study was about maths, but the idea carries over: if the tool does the thinking, you practise watching, not doing.",
+      {warn:"In a voice conversation, a chatbot may understand you even when your pronunciation is off. Being understood is not proof that you said it right. Compare yourself with real recordings, as in shadowing (Lesson 4)."}
+     ]},
+    {h:"Privacy: what not to paste",
+     body:[
+      "What you type, paste or photograph goes to the company’s servers. In June 2023, Japan’s Personal Information Protection Commission ([個人情報]{こじんじょうほう}[保護]{ほご}[委員会]{いいんかい}) warned users of generative AI services that personal information they enter may be used for machine learning, and advised them to read the service’s terms and privacy policy first. Whether your chats are kept, read by staff or used for training depends on the service and your settings ({{ai-privacy-disclosure}}).",
+      {list:["**Other people’s details:** names with addresses or phone numbers, photos, and private messages or letters they sent you. A message from a friend was written for you, not for a company.","**Your own ID details:** your residence card, passport or My Number, bank details and address. Before asking about a letter from the city office, cover or crop them, or type only the sentence you need.","**Material that isn’t yours to share:** your workplace’s documents, other students’ work, or interview notes.","**Settings:** check whether your chats are used for training and how long they are kept, and change what you don’t want."]},
+      {tip:"Courses have rules too. Some forbid translation tools and AI, and some allow them if you say how you used them. Academic Japanese explains this for reports ({{japanese-plagiarism-ai}})."}
+     ]},
+    {h:"A routine that keeps you doing the thinking",
+     body:[
+      "The rule is simple: you first, the tool second, you last.",
+      {fig:'<svg viewBox="0 0 340 400"><defs><marker id="u12l6b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">You first, the tool second, you last</text><rect class="d-sage" x="8" y="30" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="52">1. You: try first</text><text class="s" x="20" y="70">Write it, or guess the meaning</text><path class="d-ink" d="M170 82 V94" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-lup" x="8" y="98" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="120">2. Tool: a hint, not the answer</text><text class="s" x="20" y="138">Which line? What kind of mistake?</text><path class="d-ink" d="M170 150 V162" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-sage" x="8" y="166" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="188">3. You: fix it, then compare</text><text class="s" x="20" y="206">Ask why for each difference</text><path class="d-ink" d="M170 218 V230" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-sage" x="8" y="234" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="256">4. You: check it</text><text class="s" x="20" y="274">Dictionary, textbook, real texts</text><path class="d-ink" d="M170 286 V298" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-gold" x="8" y="302" width="324" height="50" rx="8" stroke-width="2"/><text x="20" y="324">5. You: keep it and use it</text><text class="s" x="20" y="342">Error list; again from memory tomorrow</text><text x="170" y="380" text-anchor="middle" class="s">The tool appears once, in the middle</text></svg>', alt:"Five steps going down. 1, you: try first, write it or guess the meaning. 2, tool: a hint, not the answer; which line, what kind of mistake. 3, you: fix it, then compare, and ask why for each difference. 4, you: check it in a dictionary, a textbook or real texts. 5, you: keep it and use it, with an error list and writing it again from memory tomorrow. Below: the tool appears once, in the middle.", cap:"Your attempt is what you learn from, so it comes first."},
+      {ol:["**Try first.** Write the sentence, or guess what a text means, before you open any tool.","**Ask for a hint, not the answer.** “Which sentence has a particle mistake?” teaches more than “Correct this.”","**Fix it yourself, then compare** your version with the tool’s. For each difference, ask why.","**Check** anything you are still unsure of in a dictionary, in a lesson or in real Japanese texts.","**Keep it and use it.** Add the mistake to an error list, write the sentence again from memory the next day, and use it in a real message."]},
+      "In the JLPT, or a chat with neighbours, there is no tool in your hand. Use tools in ways that leave the Japanese in your head, with the Kanji Lab and real reading at the core (Lesson 6).",
+      {key:"Use translation for the gist and chatbots for explanations and practice. Check what matters with a dictionary and a person, never paste what isn’t yours to share, and always try first."}
+     ]}
+   ],
+   try:[
+    {id:"e3u12-l6-x1",
+     type:"match",
+     q:"Match each sentence to the problem a translation tool is most likely to have with it.",
+     pairs:[
+      ["夕ごはん、いらないって。","A missing subject","There is no subject: the person comes from the context, so the tool has to guess “I”, “she” or “they”."],
+      ["[平川]{ひらかわ}さんから電話がありました。","A name","さん shows no gender, so a tool may guess “Mr. Hirakawa” for Aoi."],
+      ["[袋]{ふくろ}は[結構]{けっこう}です。","A set phrase with two meanings","[結構]{けっこう}です can mean “that’s fine” or “no, thank you”. At a shop counter it is a polite no."],
+      ["ぜひご[覧]{らん}ください。","Keigo direction","ご[覧]{らん}ください is respectful: the other person does the looking. In English it is just “please look”, so the respect disappears."],
+      ["金曜日までに送るね。","Politeness level","送るね is casual, for a friend. In English it is just “I’ll send it by Friday”, the same as お送りします, so the level is lost."]
+     ]},
+    {id:"e3u12-l6-x2",
+     type:"mcq",
+     q:"Rodrigo’s draft to Ms. Fujiwara says ✗ 「ぜひ私の[絵]{え}を[拝見]{はいけん}してください。」 A back-translation gives “Please take a look at my pictures.” Which check would show him the problem?",
+     options:[
+      {t:"Looking up [拝見]{はいけん} and reading its tags", ok:true, why:"Right. Jisho marks [拝見]{はいけん} as humble (kenjougo): it is for your own looking, so it can’t describe Ms. Fujiwara’s. The respectful request is ご[覧]{らん}ください."},
+      {t:"Back-translating it again with a second translation tool", why:"Any tool brings [拝見]{はいけん} back as “see” or “look”. Back-translation checks the meaning, and the meaning is fine; the keigo isn’t."},
+      {t:"Asking the same app to translate his English again", why:"The app will make the same kind of choice. It doesn’t know who Ms. Fujiwara is, and it doesn’t explain keigo."},
+      {t:"Counting the characters in the email", why:"Length has nothing to do with it. The problem is the direction of the keigo verb."}
+     ]},
+    {id:"e3u12-l6-x3",
+     type:"spot",
+     q:"A chatbot answers Cheska’s questions. Tap the three claims that are wrong.",
+     ask:"wrong claims",
+     parts:[
+      {t:"「一日」 is always read いちにち.", flag:true, why:"Wrong. The first day of the month is ついたち (Unit 3); いちにち means “one day”. A confident “always” is a warning sign."},
+      " ",
+      {t:"〜てしまう can show that an action is finished, or that the speaker regrets it.", flag:false, why:"Correct. Both uses are standard (Unit 6)."},
+      " ",
+      {t:"あなた is the polite way to say “you” to a teacher.", flag:true, why:"Wrong. To a teacher, use their name and title (〜先生) or no word at all. あなた can sound distant or rude."},
+      " ",
+      {t:"In 「[熱]{ねつ}があるんだって」, って reports what someone said.", flag:false, why:"Correct. って is a casual way of quoting (Lesson 4)."},
+      " ",
+      {t:"です・ます is a safe choice with someone you have just met.", flag:false, why:"Correct. Polite speech is the safe default with people you don’t know well (Unit 5)."},
+      " ",
+      {t:"ご[覧]{らん}になる is the humble verb for “see”.", flag:true, why:"Wrong. ご[覧]{らん}になる is respectful, for the other person’s looking. The humble verb is [拝見]{はいけん}する."}
+     ]},
+    {id:"e3u12-l6-x4",
+     type:"sort",
+     q:"Does each way of using a chatbot keep you doing the thinking, or let the tool think for you?",
+     buckets:["Keeps you thinking","Lets the tool think for you"],
+     items:[
+      {t:"Write your diary first, then ask which sentences have mistakes", b:0, why:"You produce the Japanese, and the tool only points to where to look."},
+      {t:"Ask what kind of mistake it is, then fix it yourself", b:0, why:"A hint leaves the fixing to you, which is the part you learn from."},
+      {t:"Ask for an explanation of ために and ように, then check it in Unit 9", b:0, why:"You use the explanation, and you check it against a reliable source."},
+      {t:"Paste an English diary and hand in the Japanese version", b:1, why:"The tool writes the Japanese, so you practise nothing, and many courses forbid it."},
+      {t:"Copy every correction without reading the explanations", b:1, why:"You see the right answer once and never work it out, like the students who used the plain chatbot in the 2025 study."},
+      {t:"Let it write your lines in a role-play to save time", b:1, why:"In conversation practice, your lines are the practice."}
+     ]},
+    {id:"e3u12-l6-x5",
+     type:"sort",
+     q:"Before you paste or upload something into a chatbot: is it fine as it is, or should you remove or hide details first?",
+     buckets:["Fine as it is","Remove or hide details first"],
+     items:[
+      {t:"A sentence from an easy news article you are reading", b:0, why:"A public sentence with no one’s personal details is fine to ask about."},
+      {t:"Your own diary sentences about a walk on the beach", b:0, why:"Your own words, with nothing private in them."},
+      {t:"A grammar question about 〜ように", b:0, why:"A question about the language shares nothing personal."},
+      {t:"A photo of a letter from the city office showing your address and residence card number", b:1, why:"Cover or crop your ID details, or type only the sentence you need."},
+      {t:"A message from Mariya that includes her phone number", b:1, why:"It was written for you. Ask her, or remove her details and paste only the sentence you need."},
+      {t:"Another student’s essay that you are helping to check", b:1, why:"It isn’t yours to share. Ask the writer, and follow the course’s rules."}
+     ]},
+    {id:"e3u12-l6-x6",
+     type:"order",
+     q:"Put the steps of the routine in order.",
+     items:[
+      {t:"Try it yourself first", why:"Your own attempt is what you learn from, so it comes before any tool."},
+      {t:"Ask the tool for a hint, not the answer", why:"The tool points to the problem but leaves the fixing to you."},
+      {t:"Fix it yourself, then compare with the tool’s version", why:"Comparing shows the differences you need to understand."},
+      {t:"Check what you are still unsure of in a dictionary or textbook", why:"Tools can be confidently wrong, so check the differences in a reliable source."},
+      {t:"Add it to your error list and use it again the next day", why:"Writing it again from memory, and using it, is what makes it stick."}
+     ]},
+    {id:"e3u12-l6-x7",
+     type:"type",
+     q:"Type, in hiragana, the respectful word Rodrigo needs. Ms. Fujiwara is the one who will look: 「ぜひ私の[絵]{え}をご（　）ください。」",
+     answer:"らん",
+     wrongs:[
+      {v:"はいけん", why:"[拝見]{はいけん} is humble, for your own looking, and it doesn’t take ご in front. Asking her to [拝見]{はいけん}する would lower her."},
+      {v:"みて", why:"見てください is grammatical, but ご is not used with 見て, and in a first business email the respectful ご[覧]{らん}ください fits better."}
+     ],
+     why:"ご[覧]{らん}になる is the respectful verb for “see”. As a request it becomes ご[覧]{らん}ください (Unit 10)."}
+   ],
+   apply:{intro:"Test the tools on what you now know, and set up habits that keep the learning yours.",
+    tasks:[
+     {t:"Test a translation tool on five tricky sentences",
+      how:["Choose a free translation tool, or the translator in your phone or browser.","Translate five sentences from this lesson into English: the group-chat message, 「[平川]{ひらかわ}さんから電話がありました」, 「[袋]{ふくろ}は[結構]{けっこう}です」, Rodrigo’s ✗ reply and 「金曜日までに送るね」.","For each, note what the tool got right and what it guessed or lost: a subject, a gender, a meaning, a politeness level, keigo.","Then write one Japanese sentence of your own, translate it into English with one tool and back into Japanese with another, and look up its key word in Jisho.org, reading the tags."],
+      write:"Sentence 1… what the tool did… Sentence 5… My sentence… round trip… the dictionary showed…"},
+     {t:"Run one tutoring session the you-first way",
+      how:["If you use a chatbot, read its privacy settings first, and decide whether your chats may be used for training. Many need an account; if you’d rather not have one, do the same steps with a dictionary and this unit’s tables.","Write five sentences about your week in Japanese without any tool.","Ask: “Don’t rewrite these. Tell me which sentences have a mistake and what kind, and let me try again.” Fix them yourself, then compare.","Check one explanation it gave you in a dictionary or in the lesson it belongs to, and note whether it was right."],
+      write:"My five sentences… the hints… my fixes… one explanation I checked…"},
+     {t:"Write your own tool rules",
+      how:["Write three rules for yourself: what you use translation for, what you use a chatbot for, and what you never paste.","Add one rule for messages that matter, such as “A person reads anything I send to a teacher, a landlord or a company.”","Start an error list, if you don’t have one, with the mistakes from today’s session."],
+      write:"I use translation for… I use a chatbot for… I never paste… A person reads… My error list…"}
+    ],
+    proof:"Notes on five tricky sentences and one round trip, one tutoring session with your sentences, hints and fixes, and your own tool rules with the start of an error list."},
+   read:[
+    {book:"taekim", where:"Essential Grammar, “Addressing People” (sections “Referring to others by name” and “Referring to others with ‘you’”)", note:"Why Japanese uses names and leaves “you” out, and why translated sentences full of あなた sound wrong."}
+   ]},
   {id:"e3u12-l5",
    title:"The JLPT N3, news, graded readers and what comes next",
    minutes:60,
@@ -859,6 +1041,7 @@ ICA.addUnit({id:"e3u12",
         ["Twice a week","Write 200 characters: a diary, an opinion, a summary","15 min"],
         ["Once a week","One longer text read in two passes, with notes on its point","20 min"]
        ]},
+      "If translation apps or AI chatbots are part of your plan, Lesson 5 showed how to use them without letting them do the learning for you ({{ai-tutor-japanese}}).",
       "The Kanji Lab’s decks go up to N3. If you aim for N2, the next JLPT level, expect a few hundred more kanji and many more words from lists that, like all JLPT lists, are estimates. The N2 test has two sections: Language Knowledge (Vocabulary/Grammar)・Reading in 105 minutes and Listening in 50 minutes.",
       {key:"Forgetting is part of learning. Keep reviewing what you have, and the new will build on it."},
       {lab:"kl-n3", t:"Practise: today’s N3 kanji review"},
@@ -1259,6 +1442,81 @@ ICA.addUnit({id:"e3u12",
     {t:"Hashizaki et al. (2025), Exploring the optimal number of repetitions for shadowing, JALT Journal 47(1) (PDF)", url:"https://jalt-publications.org/sites/default/files/pdf-article/jj47.1-art1.pdf"},
     {t:"Japan Foundation: “Irodori” adds a new Pre-Intermediate (A2/B1) level", url:"https://www.jpf.go.jp/e/project/japanese/teach/tsushin/news/202606.html"}
    ],
+   checked:"2026-11"},
+  {id:"machine-translation-japanese",
+   title:"Machine translation and Japanese: what to check",
+   aka:["機械翻訳","MT","translation apps","back-translation","round-trip translation","逆翻訳"],
+   tags:["japanese","tools","AI","translation"],
+   summary:"What translation tools get wrong in Japanese (subjects, politeness, keigo, set phrases, names), and how to check them with back-translation, a dictionary and a person.",
+   levels:{starter:[
+     "[[machine-translation|Machine translation]] ([機械]{きかい}[翻訳]{ほんやく}) tools, such as Google Translate, DeepL and the translators built into phones and browsers, turn Japanese into English, or the other way round, in seconds. They are good for the gist of a long notice or email.",
+     "They are weakest exactly where Japanese and English differ. Japanese leaves out subjects, so a tool has to guess “I”, “she” or “they”. Japanese marks politeness and keigo, which English mostly doesn’t, so the level is lost or chosen wrongly. Set phrases such as [結構]{けっこう}です depend on the situation, and さん doesn’t show whether someone is a man or a woman.",
+     "A translation box sees only your sentence. It doesn’t know who will read it.",
+     {key:"Use translation for the gist. For anything that matters, check the key words in a dictionary, and ask a person to read it."}
+    ],
+    builder:[
+     {table:[
+       ["Problem","Example","Check"],
+       ["Missing subject","夕ごはん、いらないって。","Who is it about? Read the sentence before"],
+       ["Politeness level","送るよ / お送りします","Who is the reader? Choose the level yourself"],
+       ["Keigo direction","[拝見]{はいけん}する / ご[覧]{らん}になる","Dictionary tags: humble or respectful?"],
+       ["Set phrase","[結構]{けっこう}です","What is the situation?"],
+       ["Name","[平川]{ひらかわ}さん","Gender and reading: ask, or check their romaji"]
+      ]},
+     "**Back-translation** ([[back-translation]]) means translating the result back into the first language, ideally with a different tool, and comparing. It catches a changed meaning. It misses politeness, keigo and subjects, because those disappear on the way back: お送りします and 送るよ both return as “I’ll send it”.",
+     "**A dictionary** catches what back-translation misses. Look up the verbs, set phrases and names, and read the tags: Jisho.org ([[jisho-tool]]) marks [拝見]{はいけん} as humble (kenjougo) language, so it can’t describe the other person’s looking. Asking someone to [拝見]{はいけん}してください lowers them; the respectful request is ご[覧]{らん}ください.",
+     "**A person** is the last check for messages that matter: to a teacher, a landlord, an employer or an office. They know the relationship, which no tool can see.",
+     "Write simply before you translate: short sentences, one idea each, with the subject clear. Simple input gives fewer wrong guesses."
+    ],
+    pro:[
+     "**Why round trips mislead.** In a comparison of free online translators, Somers (2005) found that the quality of a round-trip translation was a poor guide to the quality of the forward translation. A bad translation can come back looking good, and when the round trip does go wrong, you can’t tell which direction caused it. Use it as a rough check of meaning, never as proof.",
+     "**English habits in Japanese.** Going from English into Japanese, tools tend to keep every pronoun: 私は, 私の, あなた, [彼女]{かのじょ}. The result is grammatical but sounds translated. Japanese normally leaves out a clear subject ([[subject-omission]]), refers to people by name, and avoids あなた with people it knows, where it can sound distant or rude. In conversation, [彼]{かれ} and [彼女]{かのじょ} often mean “boyfriend” and “girlfriend”.",
+     "**Chatbots translate too.** A chatbot can be told the context (“to my landlady, polite but warm”), which helps with politeness, and it can explain its choices. It can still make confident errors, so the same checks apply ({{ai-tutor-japanese}}).",
+     "**Privacy and rules.** Online translation sends your text to a server, so leave out other people’s personal details and anything confidential. For coursework, follow the course’s rules on translation tools, and never hand in a translation as your own Japanese writing ({{japanese-plagiarism-ai}})."
+    ]},
+   related:["ai-tutor-japanese","japanese-reading-tools","dictionary-skills","keigo-in-practice"],
+   read:[{book:"taekim", where:"Essential Grammar, “Addressing People”"}],
+   sources:[
+    {t:"Wikipedia: Round-trip translation (with Somers 2005 and later studies)", url:"https://en.wikipedia.org/wiki/Round-trip_translation"},
+    {t:"Jisho.org: 拝見 (tagged “Humble (kenjougo) language”)", url:"https://jisho.org/word/%E6%8B%9D%E8%A6%8B"},
+    {t:"Tae Kim’s Guide: Addressing People", url:"https://guidetojapanese.org/learn/grammar/people"}
+   ],
+   checked:"2026-11"},
+  {id:"ai-tutor-japanese",
+   title:"Using an AI chatbot as a Japanese tutor",
+   aka:["AI tutor","chatbot","生成AI","learning Japanese with AI","ChatGPT for Japanese"],
+   tags:["japanese","AI","study skills","privacy"],
+   summary:"How to use an AI chatbot for explanations, graded examples, conversation practice and corrections, and how to avoid confident errors, unnatural Japanese, over-reliance and privacy problems.",
+   levels:{starter:[
+     "An AI chatbot can be a patient practice partner: it explains grammar, gives example sentences, plays a role in a conversation and points out mistakes, at any hour. Used this way, it is an [[ai-tutor]].",
+     "It also has three weak points. It can be wrong while sounding sure (a [[hallucination]]). It can write Japanese that is grammatical but unnatural. And if it does the thinking, you learn less, even though practice feels easier.",
+     "So try first, ask for hints rather than answers, and check what it tells you in a dictionary or a textbook. Don’t paste other people’s personal details, or your own ID details, into it.",
+     {key:"You first, the tool second, you last."}
+    ],
+    builder:[
+     {table:[
+       ["Use","Ask for","Then"],
+       ["Explanations","The difference between two patterns, simply","Check it in a lesson or textbook"],
+       ["Graded examples","Five sentences with one pattern, at your level","Look up new words; ask which are casual"],
+       ["Conversation","A role-play, one short line at a time","Check the corrections it gives at the end"],
+       ["Corrections","Which sentences have a mistake, and what kind","Fix them yourself, then compare"]
+      ]},
+     {ex:"“Here is my diary. Don’t rewrite it. Tell me which sentences have a mistake and what kind (particle, verb form, word choice), and let me try again.”", label:"A request that keeps you working"},
+     "Tell it your level and what to avoid, as with any [[ai-prompt|prompt]] ({{prompting-well}}). “N3 level” is only the tool’s guess, because the JLPT has published no official word or kanji lists since its 2010 revision.",
+     "**Signs of a confident error:** “always” and “never” rules; a reading you can’t find in a dictionary; an explanation that contradicts your textbook; keigo on the wrong person. Asking “Are you sure?” is not a check.",
+     "**Signs of translated-sounding Japanese:** 私は or 私の in every sentence, あなた for someone you know, [彼]{かれ} and [彼女]{かのじょ} for people you would call by name."
+    ],
+    pro:[
+     "**Over-reliance.** In a field experiment with nearly 1,000 high school maths students in Turkey, Bastani and colleagues (*PNAS*, 2025) found that a GPT-4 chatbot raised scores during practice, but students who had used the plain version scored about 17% lower than a control group once it was taken away. A version designed to give hints rather than answers largely removed that harm. The study was about maths, not language learning, but it shows why the order “try, hint, fix” matters.",
+     "**Privacy.** Japan’s Personal Information Protection Commission warned in June 2023 that personal information entered into generative AI services may be used for machine learning, that answers can contain inaccurate information, and that users should check the provider’s terms and privacy policy. What is kept, reviewed or used for training depends on the service and your settings ({{ai-privacy-disclosure}}).",
+     "**Speaking practice.** In voice mode, speech recognition may understand you even when your pronunciation is off. Being understood is useful, but it isn’t feedback: compare yourself with real recordings and shadow them.",
+     "**Rules and honesty.** Tests, many courses and job applications assess your own Japanese. Follow each one’s rules on AI, and say how you used it when asked ({{japanese-plagiarism-ai}}, {{ai-chatbot-accuracy}})."
+    ]},
+   related:["machine-translation-japanese","prompting-well","ai-chatbot-accuracy","ai-privacy-disclosure"],
+   sources:[
+    {t:"Bastani et al. (2025), Generative AI without guardrails can harm learning: Evidence from high school mathematics, PNAS 122(26), e2422633122", url:"https://doi.org/10.1073/pnas.2422633122"},
+    {t:"Personal Information Protection Commission (Japan), 生成AIサービスの利用に関する注意喚起等 (2 June 2023, PDF)", url:"https://www.ppc.go.jp/files/pdf/230602_alert_generative_AI_service.pdf"}
+   ],
    checked:"2026-11"}
  ],
  terms:[
@@ -1268,7 +1526,11 @@ ICA.addUnit({id:"e3u12",
   {id:"news-easy", term:"NHKやさしいことばニュース (NEWS WEB EASY)", def:"NHK’s free news site in easy Japanese for foreign residents and children, at news.web.nhk/news/easy/. It asks for no login, but since NHK ONE began in 2025 it shows a confirmation screen about NHK’s reception contract.", codex:"reading-news-japanese"},
   {id:"comprehension-question", term:"Comprehension question ([内容]{ないよう}[理解]{りかい})", def:"A question about what a text or talk says: the writer’s point ([筆者]{ひっしゃ}の言いたいこと), what a word like それ refers to, a reason (なぜ), or a matching detail. Each kind has its own place to look.", codex:"reading-strategies-japanese"},
   {id:"bridge-to-academic", term:"From N3 to Academic Japanese", def:"The step from everyday Japanese at about N3 into the Academic Japanese units (Units 5–8 of the Academic Language elective): である style, academic words, papers, reports and keigo with professors.", codex:"from-n3-onward"},
-  {id:"filler-japanese", term:"Filler (フィラー)", def:"A small sound with no content that fills a pause while a speaker thinks or hesitates, such as えーと, あのう, まあ or なんか. It signals thinking, politeness or vagueness.", codex:"listening-strategies-japanese"}
+  {id:"filler-japanese", term:"Filler (フィラー)", def:"A small sound with no content that fills a pause while a speaker thinks or hesitates, such as えーと, あのう, まあ or なんか. It signals thinking, politeness or vagueness.", codex:"listening-strategies-japanese"},
+  {id:"machine-translation", term:"Machine translation ([機械]{きかい}[翻訳]{ほんやく})", def:"Software that translates text automatically, such as Google Translate, DeepL or a phone’s built-in translator. Good for the gist; check names, politeness, keigo and anything that matters.", codex:"machine-translation-japanese"},
+  {id:"back-translation", term:"Back-translation (round-trip translation)", def:"Translating a translation back into the first language to see whether the meaning survived. It catches a changed meaning, but it misses politeness and keigo, and a bad translation can come back looking fine.", codex:"machine-translation-japanese"},
+  {id:"subject-omission", term:"Leaving out the subject ([主語]{しゅご}の[省略]{しょうりゃく})", def:"In Japanese, a subject that is clear from the context, such as 私 or the person just mentioned, is normally left out. English needs one, so translation tools have to guess it.", codex:"machine-translation-japanese"},
+  {id:"ai-tutor", term:"AI tutor", def:"An AI chatbot used for explanations, example sentences, conversation practice and corrections. It helps most when you try first, ask for hints and check what it says.", codex:"ai-tutor-japanese"}
  ],
  bank:[
   {id:"e3u12-q01",
@@ -1720,5 +1982,105 @@ ICA.addUnit({id:"e3u12",
     {t:"30 minutes", why:"30 minutes is the Vocabulary section."},
     {t:"55 minutes", why:"55 minutes is the N4 Grammar・Reading section."},
     {t:"105 minutes", why:"105 minutes is the combined N2 Language Knowledge・Reading section."}
+   ]},
+  {id:"e3u12-q46",
+   lesson:"e3u12-l6",
+   level:2,
+   q:"Ms. Fujiwara will look at Rodrigo’s drawings. Which request should his email use?",
+   options:[
+    {t:"ぜひご[覧]{らん}ください。", ok:true, why:"Right. ご[覧]{らん}になる is respectful, for the other person’s looking, and ご[覧]{らん}ください is its request form."},
+    {t:"ぜひ[拝見]{はいけん}してください。", why:"✗ Wrong keigo. [拝見]{はいけん}する is humble, for your own looking. Asking her to [拝見]{はいけん}する lowers her, though a back-translation would look fine."},
+    {t:"ぜひ[拝見]{はいけん}になってください。", why:"✗ Not a real form. 〜になる is a respectful pattern, but it can’t be added to the humble [拝見]{はいけん}. The respectful verb is ご[覧]{らん}になる."},
+    {t:"ぜひ見てくれ。", why:"見てくれ is a blunt casual command, used only with close friends or juniors, never in a business email."}
+   ]},
+  {id:"e3u12-q47",
+   lesson:"e3u12-l6",
+   level:2,
+   q:"A translation app turns 「[平川]{ひらかわ}さんから電話がありました。」 into “Mr. Hirakawa called.” The caller was Aoi. What went wrong?",
+   options:[
+    {t:"さん shows no gender, so the app guessed “Mr.”", ok:true, why:"Right. さん is used for men and women, and English needs “Mr.” or “Ms.”, so the app had to guess."},
+    {t:"The app read the name [平川]{ひらかわ} with the wrong sounds", why:"“Hirakawa” is the right reading here. The problem is the gender the app added."},
+    {t:"から means “to”, so Aoi was the one called", why:"から marks where the call came from: Hirakawa-san called."},
+    {t:"電話がありました means “there is a phone”", why:"電話がありました means a call came: someone phoned."}
+   ]},
+  {id:"e3u12-q48",
+   lesson:"e3u12-l6",
+   level:2,
+   q:"At a convenience store, the clerk asks 「[袋]{ふくろ}はご[利用]{りよう}ですか。」 Cheska answers 「[結構]{けっこう}です。」 What has she said?",
+   options:[
+    {t:"No, thank you", ok:true, why:"Right. As an answer to an offer, [結構]{けっこう}です is a polite no: she doesn’t want a bag."},
+    {t:"Yes, that would be fine", why:"[結構]{けっこう}です can mean “that’s fine”, but as an answer to an offer it is a polite no. The situation decides, which is why tools get it wrong."},
+    {t:"A large one, please", why:"Nothing about size is said. [結構]{けっこう}です declines the bag."},
+    {t:"She will decide after paying", why:"[結構]{けっこう}です is a clear answer, not a delay: no bag."}
+   ]},
+  {id:"e3u12-q49",
+   lesson:"e3u12-l6",
+   level:1,
+   q:"What can back-translation catch, and what can it miss?",
+   options:[
+    {t:"It catches a changed meaning, but misses politeness and keigo", ok:true, why:"Right. Politeness and keigo disappear on the way back into English, so a wrong level can come back looking fine."},
+    {t:"It catches every error, as long as you use two different tools", why:"Even with two tools, a bad translation can come back looking good (Somers, 2005). It is a rough check of meaning."},
+    {t:"It catches keigo errors, but it can’t catch changes in meaning", why:"The opposite: it can show a changed meaning, but keigo is lost in English, so it can’t catch keigo errors."},
+    {t:"It catches spelling mistakes only, not grammar or meaning", why:"Comparing meanings is exactly what it does. Spelling is a different check."}
+   ]},
+  {id:"e3u12-q50",
+   lesson:"e3u12-l6",
+   level:3,
+   q:"Rodrigo asks a chatbot to correct his diary every day. He copies each correction and never reads the explanations. Which risk does this lesson warn about?",
+   options:[
+    {t:"He may do well with the tool and worse without it", ok:true, why:"Right. In the 2025 study, students who used a plain chatbot did better in practice but about 17% worse in the exam without it. Hints, then fixing it himself, would help."},
+    {t:"The chatbot may stop helping once it notices the copying", why:"Chatbots don’t refuse for that. The risk is to his learning, not to the tool."},
+    {t:"His diary entries will become too short to be useful", why:"Length isn’t the problem. Copying means he never works out the corrections himself."},
+    {t:"None, since corrected sentences are learned by reading them", why:"Seeing a right answer once is not the same as producing it. That is why the routine starts with trying first."}
+   ]},
+  {id:"e3u12-q51",
+   lesson:"e3u12-l6",
+   level:2,
+   q:"Which request to a chatbot keeps the thinking with the learner?",
+   options:[
+    {t:"“Tell me which sentences have mistakes, but don’t fix them.”", ok:true, why:"Right. The tool points to the problems, and the learner does the fixing, which is where the learning happens."},
+    {t:"“Rewrite my paragraph in natural, polite Japanese for me.”", why:"The tool does all the writing. The learner sees a good version but practises nothing."},
+    {t:"“Translate my English email into polite business Japanese.”", why:"The tool writes the Japanese. Useful for the gist, but the learner hasn’t produced anything."},
+    {t:"“Write five sentences about my weekend for me to learn by heart.”", why:"Learning someone else’s sentences about your weekend skips the step of making your own."}
+   ]},
+  {id:"e3u12-q52",
+   lesson:"e3u12-l6",
+   level:3,
+   q:"Cheska wants a chatbot to explain a letter from the city office. Her photo of it shows her name, address and residence card number. What should she do?",
+   options:[
+    {t:"Cover or crop her details, or type only the sentences she needs", ok:true, why:"Right. She gets her explanation without sending her ID details to the company."},
+    {t:"Send the photo as it is, because chatbots delete images at once", why:"Whether uploads are kept, reviewed or used for training depends on the service and settings. Don’t assume they vanish."},
+    {t:"Send it as it is, because the letter is about her and nobody else", why:"Her own ID details still need protecting. Japan’s privacy commission advised users to weigh the risk before entering personal information."},
+    {t:"Translate it into English first, then paste the whole letter", why:"A translation still contains her name, address and card number."}
+   ]},
+  {id:"e3u12-q53",
+   lesson:"e3u12-l6",
+   level:2,
+   q:"Cheska wants to ask Prof. Ōnishi what she did at the weekend. A chatbot suggests 「あなたは[週末]{しゅうまつ}、何をしましたか。」 What is the problem?",
+   options:[
+    {t:"あなた can sound rude to a teacher; use 先生 or no word", ok:true, why:"Right. Japanese uses the person’s name and title, or leaves “you” out. For example: 先生は[週末]{しゅうまつ}、何をなさいましたか。"},
+    {t:"[週末]{しゅうまつ} is too formal a word to use with a teacher", why:"[週末]{しゅうまつ} is an ordinary word, fine with anyone. The problem is あなた."},
+    {t:"The verb must be in plain form when you ask a teacher", why:"The opposite: with a teacher, polite or respectful forms are right."},
+    {t:"Nothing: あなた is the most polite word for “you”", why:"あなた sounds distant, and to a teacher it can sound rude. This is a common translated-sounding error."}
+   ]},
+  {id:"e3u12-q54",
+   lesson:"e3u12-l6",
+   level:1,
+   q:"Why can’t a translation box reliably choose the right politeness level?",
+   options:[
+    {t:"It sees only the sentence, not who will read it", ok:true, why:"Right. The level depends on the relationship (a friend, a landlord, a company), which the tool can’t see."},
+    {t:"Japanese has only one polite level for all readers", why:"Japanese has several levels: casual, です・ます and keigo. Choosing between them is the problem."},
+    {t:"Polite Japanese can’t be translated into English", why:"It can be translated, but the politeness mostly disappears in English, which is a different problem."},
+    {t:"Translation tools only ever produce casual Japanese", why:"Tools produce different levels. The trouble is that they can’t know which one fits."}
+   ]},
+  {id:"e3u12-q55",
+   lesson:"e3u12-l6",
+   level:3,
+   q:"Rodrigo practises ordering in a restaurant with a chatbot in voice mode. It understands everything he says. What can he conclude?",
+   options:[
+    {t:"Only that it understood him, not that his pronunciation was right", ok:true, why:"Right. Speech recognition can understand speech with errors in it. Comparing himself with real recordings gives him real feedback."},
+    {t:"His pronunciation is now good enough for any Japanese listener", why:"Being understood by a machine is not the same as sounding natural to people."},
+    {t:"He no longer needs to compare himself with real recordings", why:"Comparing with real recordings, as in shadowing, is still the best feedback he has."},
+    {t:"Voice mode corrects pronunciation, so any mistakes were fixed", why:"Understanding him is not correcting him. Unless he asks, it may not mention his pronunciation at all."}
    ]}
  ]});

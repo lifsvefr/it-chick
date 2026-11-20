@@ -139,7 +139,8 @@ ICA.addUnit({
         ["“Storage full: can’t save photo”","Storage","The camera and processor work; there is no room left to keep the file."],
         ["Screen stays black but you hear the start-up sound","Output","The computer is running (you hear it). The picture isn’t reaching you."],
         ["Everything freezes when many apps are open","Processing","The processor and working memory are overloaded by too much running at once."]
-      ]}
+      ]},
+      {id:"t1u1-l1-x7", type:"explain", q:"Explain to a friend why asking “which of the four jobs is failing?” is a good first step when a device misbehaves. Use one example.", prompt:"Every device does four jobs…", hint:"Name the four jobs, then think about what a black screen with a working start-up sound tells you.", model:"Every device does four jobs: input brings information in, processing follows instructions to work on it, storage keeps it for later, and output gives you the result. If you work out which job is failing, you know where to look first instead of guessing. For example, if a laptop’s screen stays black but you hear the start-up sound, processing is clearly working, so the problem is output: check the screen, its brightness or the display cable.", points:["Names the four jobs: input, processing, storage, output", "Says it tells you where to look first instead of guessing", "Gives an example and matches it to the right job"]}
     ],
     apply:{
       intro:"Look at your own device with the four-jobs model, and find out exactly what it is.",
@@ -306,7 +307,8 @@ ICA.addUnit({
         {t:"Makes a laptop start up and open apps much faster", b:0, why:"SSDs are many times faster than hard disks."},
         {t:"More easily damaged if dropped while running", b:1, why:"The moving arm and spinning platters are sensitive to knocks."},
         {t:"Same family of technology as a USB stick", b:0, why:"Both use flash memory."}
-      ]}
+      ]},
+      {id:"t1u1-l2-x8", type:"explain", q:"A shop assistant says: “This laptop has 512 GB of memory, so it will never slow down, however many tabs you open.” Explain what is wrong with that.", hint:"Is 512 GB more likely to be RAM or storage? Which one holds what you have open?", model:"512 GB is almost certainly the storage (the SSD), not the memory. Storage is the cupboard: it keeps files, apps and the operating system even when the power is off. RAM is the workspace: it holds whatever is open right now and empties when you switch off. How many tabs and apps you can keep open smoothly depends mainly on RAM, which is usually a few to a few dozen GB, so you would need to check the RAM figure instead.", points:["Says 512 GB is storage, not RAM", "Explains that RAM holds what is open right now", "Explains that storage keeps things when the power is off", "Says lots of open tabs depend mainly on RAM"]}
     ],
     apply:{
       intro:"Find the real specs of the device you’re using, and practise reading a spec sheet.",
@@ -460,7 +462,8 @@ ICA.addUnit({
         {t:"A drive size shown in Windows File Explorer", b:1, why:"Windows calculates in binary units, even though it labels them “GB”."},
         {t:"“16 GB” of RAM", b:1, why:"RAM is built in powers of two, so 16 GB of RAM is really 16 GiB."},
         {t:"“MiB” in a Linux disk tool", b:1, why:"MiB is the binary mebibyte, 1,048,576 bytes."}
-      ]}
+      ]},
+      {id:"t1u1-l3-x8", type:"explain", q:"Sofia pays for a 200 Mbps internet plan, but a game download shows about 20 MB/s. She thinks she is being cheated. Explain why this is normal.", size:"2–3 sentences", hint:"Look closely at the letter case: b and B.", model:"Internet plans are sold in megabits per second (Mbps), but download screens show megabytes per second (MB/s), and one byte is eight bits. So 200 Mbps ÷ 8 is at most about 25 MB/s. Real downloads usually come in a little below that best case, because the Wi-Fi signal, other people on the connection, the server and network overhead all take a share, so about 20 MB/s is close to what the plan can deliver.", points:["Says Mbps is bits and MB/s is bytes", "Divides by 8 to get a best case of about 25 MB/s", "Gives a reason real downloads are slower than the best case"]}
     ],
     apply:{
       intro:"Put the numbers on your own device and your own connection.",
@@ -616,7 +619,8 @@ ICA.addUnit({
         {t:"Nothing different: account type makes no difference to security", why:"Account type decides what programs running as you are allowed to change. That is exactly what limits malware."},
         {t:"The attachment couldn’t have opened at all", why:"Standard accounts can open files normally. The protection applies to system-wide changes."},
         {t:"He would be completely protected from all harm", why:"A standard account limits damage but isn’t a full shield. Malware could still reach his own files, which is why backups matter."}
-      ]}
+      ]},
+      {id:"t1u1-l4-x7", type:"explain", q:"Explain to a friend what the operating system is doing while a music app and a web browser are both open.", hint:"Think of the hotel manager: rooms, the lift, keeping guests apart.", model:"The operating system is the main program that runs the device and lets every other program share it safely. With music and a browser open, it decides which one gets the processor next and shares out the memory. The apps don’t control the speakers or Wi-Fi chip themselves: they ask the OS, which uses drivers to talk to the hardware. It keeps track of any files they save, and it keeps the apps apart so one can’t read or break the other’s data.", points:["Says it runs the device and lets programs share it", "Mentions sharing the processor or memory between the apps", "Says apps reach the hardware through the OS (and drivers)", "Mentions keeping apps apart or protecting the system"]}
     ],
     apply:{
       intro:"Look at the operating system you use, check your account type, and review app permissions.",
@@ -805,7 +809,8 @@ ICA.addUnit({
         {t:"Restart it to see if the problem goes away", why:"Restarting is for software problems. A swollen battery is physical damage and restarting won’t help."},
         {t:"Press the screen back into place", why:"Pressing on a swollen battery can damage it further and is dangerous."},
         {t:"Install the latest software update", why:"Updates fix software, not a physically damaged battery. And an update needs charging, which you should avoid."}
-      ]}
+      ]},
+      {id:"t1u1-l5-x8", type:"explain", q:"Why does restarting fix so many device problems? And why, on a Windows PC, is Restart better than Shut down for this?", hint:"What is in RAM after a device has been running for days? What does Fast Startup save?", model:"While a device runs, small problems pile up: an app gets stuck, memory isn’t handed back, a driver gets confused or an update is half-finished. A restart empties RAM, ends every program, reloads the operating system and drivers from storage and finishes updates, so you start again from a clean, known state. On Windows with Fast Startup on, Shut down saves the core of Windows to storage, like hibernating, so some stuck states survive it. Restart always does a full fresh start.", points:["Says small problems build up while a device runs", "Says a restart empties RAM and reloads the system from a clean state", "Explains that Fast Startup keeps the Windows core between shutdowns", "Concludes that Restart gives the full fresh start"]}
     ],
     apply:{
       intro:"Practise the first-aid routine on a device that’s working, so it feels familiar when something does go wrong.",

@@ -161,7 +161,8 @@ ICA.addUnit({
       {t:"Make the text bold so people read it carefully", why:"Formatting the look doesn’t change which date was stored. The problem happened when 03/04 was read using one locale’s order."},
       {t:"Type the date as text so the app can’t change it", why:"The display would stay the same, but you could no longer sort by date or calculate days, and readers would still disagree about what 03/04 means."},
       {t:"Nothing can be done, because the colleague’s app is wrong", why:"Neither app is wrong: they read day/month order differently. An unambiguous format solves it."}
-    ]}
+    ]},
+      {id:"t1u9-l1-x8", type:"explain", q:"Cells A1 and A2 both show 1.3. A3 holds `=A1+A2` and shows 2.5, not 2.6. Explain what is going on, and how you could check.", size:"2–3 sentences", hint:"What does a number format change: the value or the look?", model:"A number format changes only how a value looks, not the value the cell holds. Here A1 and A2 probably each hold 1.26, formatted to show one decimal place, so they display 1.3. The formula adds the real values, 1.26 + 1.26 = 2.52, which displays as 2.5. Nothing is broken: the display is rounded, the values are not. Clicking a cell and looking at the formula bar shows the real value.", points:["Says a format changes the look, not the stored value", "Says the cells hold more decimals than they show (such as 1.26)", "Says calculations use the real values", "Says the formula bar shows the real value"]}
    ],
    apply:{intro:"Make a practice sheet and watch how the app treats different kinds of data. Any of the free options works: Excel for the web with a free Microsoft account, Google Sheets with a free Google account, LibreOffice Calc, or Numbers on an Apple device (or Numbers for iCloud in a browser).", tasks:[
      {t:"Make a sheet and see the alignment clue", app:{
@@ -339,7 +340,8 @@ ICA.addUnit({
       {t:"Reinstall the spreadsheet app", why:"Nothing is broken. The app is following its locale’s rules for writing formulas."},
       {t:"Remove the parentheses: `=ROUND B2,2`", why:"Functions always need parentheses around their arguments. The separator is the problem."},
       {t:"Write the number of decimals as a word: `=ROUND(B2,two)`", why:"Arguments must be numbers or references; a word would cause a #NAME? error. The comma separator is what doesn’t fit this locale."}
-    ]}
+    ]},
+      {id:"t1u9-l2-x8", type:"explain", q:"Mei writes `=B2*(1+D2)` in C2 to raise a price by the percentage in D2. When she fills it down, the prices in the rows below don’t rise at all, and there is no error. Explain why, and how to fix it.", hint:"What does `D2` become one row down? What is in that cell?", model:"Ordinary references are relative: the app remembers “the cell one to my right in this row”, not “D2”. So when the formula is filled down, `B2` becomes `B3` (which is right) but `D2` becomes `D3`, `D4` and so on. Those cells are empty, and an empty cell counts as 0, so the price is multiplied by 1 and doesn’t rise, with no error to warn her. The fix is to lock the rate cell with dollar signs: `=B2*(1+$D$2)`. Now every copy still points at D2 while the price reference moves.", points:["Says ordinary references are relative and shift when copied", "Says D2 turns into D3, D4… which are empty", "Says an empty cell counts as 0, so there’s no rise and no error", "Gives the fix: an absolute reference such as $D$2"]}
    ],
    apply:{intro:"Build a small budget that uses relative and absolute references, then break it on purpose to see what a missing $ does. Use any app; the steps are almost the same everywhere.", tasks:[
      {t:"Build a budget and fill a formula down", app:{
@@ -509,7 +511,8 @@ ICA.addUnit({
       {t:"Mei misspelled XLOOKUP", why:"It works in Google Sheets, so the spelling is fine. The problem is the colleague’s older version."},
       {t:"The codes being looked up aren’t in the list", why:"A missing code gives #N/A, not #NAME?. #NAME? means the app doesn’t recognise a name in the formula."},
       {t:"Google Sheets files can never be opened in Excel", why:"They can be downloaded as .xlsx and opened in Excel. Most functions carry over; newer ones need a version that has them."}
-    ]}
+    ]},
+      {id:"t1u9-l3-x8", type:"explain", q:"A teacher’s quiz scores include one blank cell for a student who was absent. Explain how `AVERAGE` treats that blank, what changes if someone types 0 there, and which is right.", hint:"AVERAGE is SUM ÷ COUNT. What does COUNT count?", model:"`AVERAGE` adds up the numbers and divides by how many numbers there are, and blanks and text are left out of both. So with the blank, the result is the average of the students who sat the quiz. If someone types 0, the cell now holds a number: it is counted, and it pulls the average down, as if the student had scored nothing. A blank means “no result” and 0 means “scored zero”, so for an absent student the blank is honest. Type 0 only for a real zero.", points:["Says AVERAGE leaves blanks out (it divides by the count of numbers)", "Says typing 0 makes it count and lowers the average", "Says a blank and a zero mean different things", "Chooses blank for the absent student (0 only for a real zero)"]}
    ],
    apply:{intro:"Practise the everyday functions on two small tables, then make each error value appear on purpose so you’ll recognise them later.", tasks:[
      {t:"Summarise the volunteer table", app:{
@@ -672,7 +675,8 @@ ICA.addUnit({
     ]},
     {id:"t1u9-l4-x7", type:"spot", q:"Here is the top of a shared club sheet. Tap every feature that will cause trouble when sorting, filtering or counting.", ask:"will cause trouble", mono:true, parts:[
       "Row 1: ", {t:"CLUB MEMBERS 2026 (merged A1:E1)", flag:true, why:"A merged title directly on top of the data gets in the way of sorting and filtering. Put the title elsewhere or unmerge it and leave a blank row before the headers."}, "\nRow 2: ", {t:"Name | Joined | Fee | Paid | Team", flag:false, why:"A single header row with short, unique names: fine."}, "\nRow 3: ", {t:"Ana Souza | 2026-01-14 | 45 | Yes | Blue", flag:false, why:"One record, one value per cell, a real date: fine."}, "\nRow 4: ", {t:"Ben Ito | 14 Jan | 45 | yes  | blue", flag:true, why:"“yes ” has a trailing space and different capitals, and the date may be text in a different style. A dropdown and real dates would keep entries consistent."}, "\nRow 5: ", {t:"Chen Wu | 2026-02-03 | 45 EUR | Yes | Red", flag:true, why:"“45 EUR” is text, so SUM and AVERAGE will skip it. Put the currency in the header or its own column and just 45 in the cell."}, "\nRow 6: ", {t:"Dina Haddad | 2026-02-10 | 45 | No | Red", flag:false, why:"A clean record: fine."}
-    ]}
+    ]},
+      {id:"t1u9-l4-x8", type:"explain", q:"A community garden logs harvests with months spread across columns and entries like “2kg tomato” in single cells. Explain why that makes the sheet hard to work with, and how a tidy layout fixes it.", hint:"Remember the three rules: rows, columns, cells.", model:"The sheet is easy for a person to read but not for the spreadsheet. Because a crop name, a number and a unit are squashed into one cell, functions can’t add the kilograms or count the crops, and with months spread across columns you can’t filter or sort by month. A tidy layout follows three rules: each row is one record (one harvest weighing), each column is one variable (Plot, Month, Crop, Kg), and each cell holds one value, with the unit in the header. Then SUMIF, filters and sorting just work.", points:["Says mixed cells like “2kg tomato” stop functions from adding or counting", "States the tidy rules: one record per row, one variable per column, one value per cell", "Says the unit belongs in the header", "Says tidy data makes SUMIF, filtering or sorting work"]}
    ],
    apply:{intro:"Tidy a small messy table, then sort, filter, freeze and validate it. Use the club example in this lesson or a small list of your own (a reading log, household expenses, a team roster).", tasks:[
      {t:"Tidy, then sort safely", app:{
@@ -836,7 +840,8 @@ ICA.addUnit({
       {t:"The file is corrupted and must be recreated", why:"The pattern (Ã plus another character in place of each accented letter) is the signature of an encoding mismatch, not corruption."},
       {t:"CSV files can’t store accented letters", why:"They can: a CSV saved as UTF-8 can hold any script. The two programs just need to agree on the encoding."},
       {t:"The colleague’s spreadsheet has the wrong number format", why:"Number formats affect how numbers display, not how letters are decoded."}
-    ]}
+    ]},
+      {id:"t1u9-l5-x8", type:"explain", q:"Explain why you should keep your working copy of a budget as a spreadsheet file (such as .xlsx) and export a CSV only as a copy for sharing.", size:"2–3 sentences", hint:"What does a CSV keep, and what does it lose?", model:"A CSV is plain text that keeps only the values: each line is a row and commas separate the cells. It loses formulas (only their results are saved), number formats, colours, charts, comments and every sheet except the one you’re on. If the CSV became the working copy, the budget would no longer recalculate, and opening it again lets the app re-guess the column types. So you keep the app’s own format for working, and export a CSV as a copy when someone else needs the data.", points:["Says a CSV keeps only the values as plain text", "Says formulas are lost (only results are kept)", "Mentions losing formats, charts or other sheets", "Concludes the working copy stays in the app’s own format"]}
    ],
    apply:{intro:"Make an honest chart from a small table, then send the data round trip through CSV and see exactly what survives.", tasks:[
      {t:"Make a chart and check its axis", app:{

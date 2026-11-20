@@ -119,7 +119,8 @@ ICA.addUnit({
     {id:"t3u1-l1-x6", type:"number", q:"Two branches of a library ran a reading challenge. Branch A: 30 of 40 children finished (75%). Branch B: 12 of 60 children finished (20%). What percentage of **all** the children finished?", answer:42, tol:0.1, unit:"%", why:"Rebuild the counts: (30 + 12) ÷ (40 + 60) = 42 ÷ 100 = 42%. Branch B is bigger, so it pulls the overall figure towards its 20%.", wrongs:[
       {v:47.5, tol:0.1, why:"That’s the average of 75% and 20%. Averaging percentages treats the two branches as equal in size, but Branch B has 60 children and Branch A only 40."},
       {v:95, tol:0.1, why:"You added the two percentages. Percentages from different groups can’t be added; combine the counts instead."}
-    ]}
+    ]},
+    {id:"t3u1-l1-x7", type:"explain", q:"A news site says a party’s vote share “rose 5%” when it went from 20% to 25%. Explain why that wording is unclear, and give the two honest ways to describe the change.", hint:"One way subtracts; the other divides by where it started.", model:"From 20% to 25% the gap is 25 − 20 = **5 percentage points**: points measure the difference between two percentages. The relative change is that gap divided by the starting value, 5 ÷ 20 = 0.25, a **25% rise**. “Rose 5%” could mean either reading, and as a percent change it’s wrong. A careful writer says “up 5 percentage points” or “up 25%”, so readers know which denominator is meant.", points:["Gives the 5 percentage-point gap (25 − 20)", "Gives the 25% relative change (5 ÷ 20)", "Explains that points subtract, while percent divides by the starting value", "Suggests clear wording that says which one is meant"]}
    ],
    apply:{intro:"Use a spreadsheet app (any of the four works, including Google Sheets on a phone) and the news you normally read.", tasks:[
      {t:"Turn counts into rates", app:{all:[
@@ -244,7 +245,8 @@ ICA.addUnit({
       {t:"There is no problem: 50% is much bigger than 2%", why:"That compares a relative change with an absolute risk. The 50% might mean only a small number of colds prevented."},
       {t:"The side-effect figure must be wrong, because side effects can’t be a percentage", why:"Side effects can be described as a percentage of users. The problem is the mismatch in framing, not the use of percentages."},
       {t:"The cold figure should be given in percentage points instead of percent", why:"Points would help only if we knew the starting risk. The core problem is that one figure is relative and the other absolute."}
-    ]}
+    ]},
+    {id:"t3u1-l2-x7", type:"explain", q:"A medicine cuts the risk of a heart attack over five years by 25% (a relative reduction). Without it, 8 in 1,000 people in one group would have a heart attack, and 80 in 1,000 in another. Explain why the medicine matters far more to the second group.", hint:"Turn the 25% into people per 1,000 for each group.", model:"A 25% cut is a relative figure, so how many heart attacks it prevents depends on the starting risk. In the first group it prevents 25% of 8 = **2 per 1,000**, so about 500 people must take it for one to benefit. In the second it prevents 25% of 80 = **20 per 1,000**, a number needed to treat of 50. The relative effect is the same, but the absolute benefit is ten times larger for the higher-risk group.", points:["Says 25% is a relative change that depends on the starting risk", "Works out the absolute benefit for each group (2 and 20 per 1,000)", "Uses the number needed to treat (500 and 50) or a similar absolute comparison", "Concludes the absolute benefit is ten times larger for the higher-risk group"]}
    ],
    apply:{intro:"Practise turning relative claims into counts of people.", tasks:[
      {t:"Build a risk calculator", app:{all:[
@@ -356,7 +358,8 @@ ICA.addUnit({
       {t:"Number of followers of social media accounts", b:0, why:"Most accounts have few followers; a handful have millions. Extreme right skew."},
       {t:"Times to wait for a doctor’s appointment", b:0, why:"Waiting times can’t go below zero but can be very long, so a long right tail pulls the mean up."},
       {t:"Scores on a well-designed test where most people score in the middle", b:1, why:"If scores spread fairly evenly either side of the middle, mean and median nearly coincide."}
-    ]}
+    ]},
+    {id:"t3u1-l3-x7", type:"explain", q:"A council reports that the average (mean) household income in its town is 52,000, but most households a resident knows earn well below that. Explain how both can be true, and which figure you would ask for.", prompt:"Incomes are…", model:"Incomes are skewed: most households earn modest amounts and a few earn very large ones. Those few big values drag the mean upwards, while the median, the income of the middle household, barely moves. So the mean can sit above what most households earn, and most can earn “less than the average” without any contradiction. For a question about a typical household, I’d ask for the median, and ideally for both figures and the spread.", points:["Says income data are skewed (a long tail of high values)", "Explains that a few large values pull the mean up", "Says the median is the middle value and barely moves", "Recommends the median for a “typical household” question"]}
    ],
    apply:{intro:"Use a spreadsheet to see the difference between averages with your own eyes.", tasks:[
      {t:"Mean against median", app:{all:[
@@ -484,7 +487,8 @@ ICA.addUnit({
       {t:"Nothing: the two statements mean the same thing", why:"They have different denominators. One is about innocent people; the other is about people who match."},
       {t:"The chance should be 1 in 25,000, because there are two possibilities", why:"Two possible outcomes don’t make them equally likely. The real issue is swapping the conditional probability."},
       {t:"Forensic matches are never meaningful evidence", why:"They can be strong evidence, especially combined with other evidence. The problem is how the number is read."}
-    ]}
+    ]},
+    {id:"t3u1-l4-x7", type:"explain", q:"A screening test catches 90% of people with a condition and gives a false alarm to 5% of people without it. The condition affects 1 in 200 people with no symptoms. Explain to a friend why a positive result for such a person is still probably a false alarm.", hint:"Imagine 20,000 people and count both kinds of positive result.", model:"Picture 20,000 people. Only 1 in 200, so **100**, have the condition, and the test catches 90 of them. But 19,900 don’t have it, and 5% of them, **995** people, get a false alarm. That makes 1,085 positives, of whom only 90 really have it: about **8%**. The test is good, but healthy people far outnumber sick ones, so false alarms swamp the true cases. That’s why a positive screen is followed by a more accurate test.", points:["Starts from a round number of people and applies the base rate", "Counts the true positives (90) and the false positives (995)", "Works out that only about 8% of positives have the condition", "Explains that the low base rate is why false alarms dominate"]}
    ],
    apply:{intro:"Build a calculator that counts people through a test, then use it to explore.", tasks:[
      {t:"A natural-frequency calculator", app:{all:[
@@ -611,7 +615,8 @@ ICA.addUnit({
       ["“Jobs up 40,000 last month”","Is that bigger than the uncertainty, and will it be revised?","Monthly survey estimates have wide intervals and are revised as more data arrive."],
       ["“Every graduate we surveyed says the course changed their life”","Who dropped out or wasn’t asked?","Only satisfied survivors may have been surveyed."],
       ["“The scheme will cost 300 million”","How much is that per person, and out of what total?","A big number needs a denominator: per person, per year, or as a share of the budget."]
-    ]}
+    ]},
+    {id:"t3u1-l5-x7", type:"explain", q:"A gym advertises: “Members who have been with us for three years have lost an average of 8 kg.” Explain what is wrong with judging the gym from this figure.", model:"This is survivorship bias. Only people who stayed for three years are counted, and they’re likely to be the ones it worked for. Members who joined, didn’t lose weight and quit are missing, so the data were filtered by the very outcome being measured. The survivors look better than a typical new member would do. A fair figure would follow everyone who joined over the same period, including those who left.", points:["Names survivorship bias (or selection bias)", "Says who is missing: members who quit", "Explains why the missing people would probably change the result", "Suggests a fairer comparison, such as following everyone who joined"]}
    ],
    apply:{intro:"Put real numbers in context, using sources from your own country or region.", tasks:[
      {t:"Adjust a price for inflation", app:{all:[

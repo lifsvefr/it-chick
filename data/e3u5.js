@@ -13,7 +13,7 @@ ICA.addUnit({
     "Describe nouns with whole clauses, such as [昨日]{きのう}[買]{か}った[本]{ほん}, using な and の correctly",
     "Explain and ask for explanations with ～んです, and avoid overusing it",
     "Report what people said with と[言]{い}う and って, and give opinions with ～と[思]{おも}います",
-    "Talk about experiences and examples with ～たことがある and ～たり, say when, before and after with ～とき, ～[前]{まえ}に and ～[後]{あと}で, and give reasons politely with ～ので"
+    "Talk about experiences and examples with ～たことがある and ～たり, say when, before and after with ～とき, ～前に and ～後で, and give reasons politely with ～ので"
   ],
   lessons:[
     {
@@ -29,9 +29,9 @@ ICA.addUnit({
       ],
       hook:{
         q:"[高]{たか}いです (it’s expensive) is polite. What is its plain form, the one you would say to a close friend?",
-        options:["高い","高いだ","高かだ","高くだ"],
+        options:["[高]{たか}い","[高]{たか}いだ","[高]{たか}かだ","[高]{たか}くだ"],
         answer:0,
-        reveal:"**高い.** For nouns and な-adjectives, the plain partner of です is だ ([学生]{がくせい}です → [学生]{がくせい}だ), so 高いだ is a very natural guess. But an い-adjective can already end a sentence by itself; the です after it only adds politeness. Take it away and you have the plain form. This lesson puts the plain forms of verbs, adjectives and nouns into one system, so that you can switch any sentence between polite and plain."
+        reveal:"**[高]{たか}い.** For nouns and な-adjectives, the plain partner of です is だ ([学生]{がくせい}です → [学生]{がくせい}だ), so [高]{たか}いだ is a very natural guess. But an い-adjective can already end a sentence by itself; the です after it only adds politeness. Take it away and you have the plain form. This lesson puts the plain forms of verbs, adjectives and nouns into one system, so that you can switch any sentence between polite and plain."
       },
       learn:[
         {
@@ -64,14 +64,14 @@ ICA.addUnit({
                 ["[行]{い}く (go)","行かない","行った","行かなかった"],
                 ["食べる (eat)","食べない","食べた","食べなかった"],
                 ["する (do)","しない","した","しなかった"],
-                ["[来]{く}る (come)","[来]{こ}ない","[来]{き}た","来なかった"],
+                ["[来]{く}る (come)","[来]{こ}ない","[来]{き}た","[来]{こ}なかった"],
                 ["ある (there is)","ない","あった","なかった"]
               ]
             },
             "Three reminders from Unit 3. The ない-form of a godan verb uses the a-sound (with う → わ). The た-form is built exactly like the [[te-form|て-form]], so 行く gives 行った. And the ない-form ends in い, so it changes like an い-adjective: ない → なかった. The glossary entries are [[nai-form]] and [[ta-form]].",
             "Watch [来]{く}る: the kanji keeps its shape but changes its reading, こ in [来]{こ}ない and [来]{こ}なかった, き in [来]{き}た. And ある has no あらない: its negative is simply ない.",
             {
-              ex:"[毎朝]{まいあさ}、コーヒーを[飲]{の}む。\nI drink coffee every morning.\n\n[昨日]{きのう}は[何]{なに}も[買]{か}わなかった。\nI didn’t buy anything yesterday.\n\n[週末]{しゅうまつ}は[友]{とも}だちが来る。\nA friend is coming at the weekend.",
+              ex:"[毎朝]{まいあさ}、コーヒーを[飲]{の}む。\nI drink coffee every morning.\n\n[昨日]{きのう}は[何]{なに}も[買]{か}わなかった。\nI didn’t buy anything yesterday.\n\n[週末]{しゅうまつ}は[友]{とも}だちが[来]{く}る。\nA friend is coming at the weekend.",
               label:"Plain verbs at the end of a sentence"
             }
           ]
@@ -149,7 +149,7 @@ ICA.addUnit({
           body:[
             "Plain forms are not only for chatting. When Japanese people write for themselves, or write stories and articles, they usually use the plain style, called [[futsuu-tai]] ([普通体]{ふつうたい}). Diaries, notes, novels, newspaper articles and most essays use it. (Texts that speak to the reader directly, such as notices, guides and many blogs, often use です・ます instead.) Here is a short diary entry by Cheska:",
             {
-              ex:"[十月]{じゅうがつ}[三日]{みっか}\n今日は[朝]{あさ}から雨だった。[午前]{ごぜん}は[家]{いえ}で[本]{ほん}を[読]{よ}んだ。[午後]{ごご}、友だちのまりやさんと[駅]{えき}の[近]{ちか}くの[喫茶店]{きっさてん}に行った。コーヒーはおいしかった。でも、ケーキはあまり[甘]{あま}くなかった。[明日]{あした}は[日本語]{にほんご}の[宿題]{しゅくだい}をする。",
+              ex:"[十月]{じゅうがつ}[三日]{みっか}\n[今日]{きょう}は[朝]{あさ}から雨だった。[午前]{ごぜん}は[家]{いえ}で[本]{ほん}を[読]{よ}んだ。[午後]{ごご}、友だちのまりやさんと[駅]{えき}の[近]{ちか}くの[喫茶店]{きっさてん}に行った。コーヒーはおいしかった。でも、ケーキはあまり[甘]{あま}くなかった。[明日]{あした}は[日本語]{にほんご}の[宿題]{しゅくだい}をする。",
               label:"Cheska’s diary (plain style)"
             },
             "In English: “3 October. It rained from the morning today. In the morning I read a book at home. In the afternoon I went to a café near the station with my friend Mariya. The coffee was good. But the cake wasn’t very sweet. Tomorrow I’ll do my Japanese homework.”",
@@ -204,7 +204,7 @@ ICA.addUnit({
             {t:"きれいくなかった", b:1, why:"This treats きれい as an い-adjective. It is a な-adjective: きれいじゃなかった."},
             {t:"学生じゃなかった", b:0, why:"Noun: 学生じゃない → 学生じゃなかった."},
             {t:"食べないだった", b:1, why:"ない changes like an い-adjective, so its past is なかった: 食べなかった."},
-            {t:"来なかった", b:0, why:"来る → 来ない → 来なかった, read こなかった."}
+            {t:"[来]{こ}なかった", b:0, why:"[来]{く}る → [来]{こ}ない → [来]{こ}なかった, read こなかった."}
           ]
         },
         {
@@ -213,7 +213,7 @@ ICA.addUnit({
           q:"Match each polite form to its plain form.",
           pairs:[
             ["行きません","行かない","ません → the ない-form. く → か."],
-            ["来ました","来た","ました → the た-form. 来た is read きた."],
+            ["[来]{き}ました","[来]{き}た","ました → the た-form. [来]{き}た is read きた."],
             ["ありませんでした","なかった","ある → ない → なかった."],
             ["[元]{げん}気です","[元]{げん}気だ","[元]{げん}気 is a な-adjective, so です → だ."],
             ["[寒]{さむ}くないです","[寒]{さむ}くない","い-adjective: just drop です."]
@@ -260,7 +260,7 @@ ICA.addUnit({
           q:"Cheska writes her diary in the plain style. Tap each part that uses a **wrong form** or **breaks the plain style**.",
           ask:"is wrong or breaks the style",
           parts:[
-            {t:"今日は天気がよかった。", flag:false, why:"Correct: いい → よかった, plain."},
+            {t:"[今日]{きょう}は天気がよかった。", flag:false, why:"Correct: いい → よかった, plain."},
             {
               t:"[朝]{あさ}、[公園]{こうえん}を[走]{はし}りました。",
               flag:true,
@@ -268,9 +268,9 @@ ICA.addUnit({
             },
             {t:"[昼]{ひる}ごはんはおいしいだった。", flag:true, why:"A wrong form. おいしい is an い-adjective: おいしかった."},
             "\n",
-            {t:"午後は[図書館]{としょかん}で[勉強]{べんきょう}した。", flag:false, why:"Correct: the plain past of [勉強]{べんきょう}する."},
+            {t:"[午後]{ごご}は[図書館]{としょかん}で[勉強]{べんきょう}した。", flag:false, why:"Correct: the plain past of [勉強]{べんきょう}する."},
             {t:"[図]{と}書[館]{かん}はあまり[静]{しず}かじゃなかった。", flag:false, why:"Correct: な-adjective, plain past negative."},
-            {t:"[夜]{よる}は友だちが来なかった。", flag:false, why:"Correct: 来なかった, read こなかった."}
+            {t:"[夜]{よる}は友だちが[来]{こ}なかった。", flag:false, why:"Correct: [来]{こ}なかった, read こなかった."}
           ]
         },
         {
@@ -327,7 +327,7 @@ ICA.addUnit({
           {
             t:"Make a four-box table for twelve words",
             how:[
-              "Choose twelve words: four verbs (one godan verb ending in う, one ichidan verb, する and 来る), three い-adjectives (include いい), three な-adjectives (include きれい) and two nouns.",
+              "Choose twelve words: four verbs (one godan verb ending in う, one ichidan verb, する and [来]{く}る), three い-adjectives (include いい), three な-adjectives (include きれい) and two nouns.",
               "For each, write the four plain forms: non-past, negative, past, past negative.",
               "Check the verbs in a dictionary that shows verb forms, such as Jisho.org (“Show inflections”) or OJAD, and the adjectives against the tables in this lesson."
             ],
@@ -484,7 +484,7 @@ ICA.addUnit({
             {
               list:[
                 "**Plain speech to someone senior** because they spoke plainly to you. Their plain speech reflects their position; your reply should still be polite.",
-                "**Plain endings in an email or message to a teacher or company**, such as 休む。 or [出]{だ}した。 End with ます and です.",
+                "**Plain endings in an email or message to a teacher or company**, such as 休む。 or 出した。 End with ます and です.",
                 "**Mixing styles in one piece of writing**: a diary or essay that switches between 行った and 行きました looks careless. Pick one.",
                 "**Staying very polite with close friends** long after they have switched. It isn’t rude, but it can feel cold or distant, as if you were keeping them at arm’s length.",
                 "**Copying casual speech from anime and manga.** Characters often speak in exaggerated ways that real people don’t, so learn casual speech from real conversations (Lesson 3)."
@@ -536,7 +536,7 @@ ICA.addUnit({
             },
             {
               t:"はい、[来]{き}ます。",
-              why:"Polite, but 来る is for movement towards the speaker. Mariya is talking about going to the practice, so she says 行きます."
+              why:"Polite, but [来]{く}る is for movement towards the speaker. Mariya is talking about going to the practice, so she says 行きます."
             },
             {t:"はい、行くです。", why:"です doesn’t follow a verb. The polite form is 行きます."}
           ]
@@ -674,7 +674,7 @@ ICA.addUnit({
         {
           id:"e3u5-l2-x9",
           type:"type",
-          q:"Cheska tells a friend: 「[明日]{あした}、[授業]{じゅぎょう}[休]{やす}む。」 Now she writes to her teacher. Type the verb in hiragana, in the style that suits a teacher: 「すみません、[明日]{あした}の[授業]{じゅぎょう}を＿＿。」 (休む, miss, take a day off)",
+          q:"Cheska tells a friend: 「[明日]{あした}、[授業]{じゅぎょう}休む。」 Now she writes to her teacher. Type the verb in hiragana, in the style that suits a teacher: 「すみません、[明日]{あした}の[授業]{じゅぎょう}を＿＿。」 (休む, miss, take a day off)",
           answer:["やすみます","やすんでもいいですか"],
           wrongs:[
             {v:"やすむ", why:"The plain form is for friends and family. A teacher is above you, so the sentence ends in ます."},
@@ -741,7 +741,7 @@ ICA.addUnit({
         "Ask casual questions without か, and answer with うん and ううん"
       ],
       hook:{
-        q:"A friend opens the fridge and says: 「あ、ケーキ、もう[食]{た}べちゃった。」 What does 食べちゃった mean?",
+        q:"A friend opens the fridge and says: 「あ、ケーキ、もう[食]{た}べちゃった。」 What does [食]{た}べちゃった mean?",
         options:[
           "I’ve already eaten it (oops, it’s gone)",
           "I’m going to eat it now",
@@ -749,7 +749,7 @@ ICA.addUnit({
           "Let’s eat it together"
         ],
         answer:0,
-        reveal:"**I’ve already eaten it.** 食べちゃった is a casual contraction of 食べてしまった: the action is finished, often with a feeling of “oops” or “it’s all gone”. Notice too that the particle を after ケーキ has disappeared. Casual Japanese is more than plain forms: it drops particles, squeezes words together and adds small words such as よ and ね. This lesson shows you the main features, so that you can follow friends’ conversations and start to sound natural."
+        reveal:"**I’ve already eaten it.** [食]{た}べちゃった is a casual contraction of [食]{た}べてしまった: the action is finished, often with a feeling of “oops” or “it’s all gone”. Notice too that the particle を after ケーキ has disappeared. Casual Japanese is more than plain forms: it drops particles, squeezes words together and adds small words such as よ and ね. This lesson shows you the main features, so that you can follow friends’ conversations and start to sound natural."
       },
       learn:[
         {
@@ -830,13 +830,13 @@ ICA.addUnit({
           body:[
             "In polite speech, か marks a question. In casual speech, a bare か after a plain form can sound rough or blunt, so people simply raise their voice at the end:",
             {
-              ex:"[明日]{あした}、来る？ ↗\nAre you coming tomorrow?\n\n[昼]{ひる}ごはん、もう食べた？ ↗\nHave you had lunch yet?\n\n[今]{いま}、[暇]{ひま}？ ↗\nAre you free now?",
+              ex:"[明日]{あした}、[来]{く}る？ ↗\nAre you coming tomorrow?\n\n[昼]{ひる}ごはん、もう食べた？ ↗\nHave you had lunch yet?\n\n[今]{いま}、[暇]{ひま}？ ↗\nAre you free now?",
               label:"Rising intonation does the work"
             },
             "Notice the last one. In a question, a noun or な-adjective drops だ: [暇]{ひま}？, [学生]{がくせい}？, [本当]{ほんとう}？ (Really?). ✗ [暇]{ひま}だ？ sounds odd, because だ makes a firm statement. Only this non-past だ drops; the past stays: [昨日]{きのう}、[暇]{ひま}だった？ (Were you free yesterday?)",
             "Question words work the same way: どこ行く？ (Where are you going?) 何食べる？ (What shall we eat? / What are you having?)",
             "You will also hear casual questions ending in の: どこ行くの？ This sounds softer and shows interest in the background or the reason. It is the casual form of ～んですか, which Lesson 5 explains. After a noun or な-adjective it becomes なの: 学生なの？",
-            "か does appear in casual speech in a few fixed uses: そうか (I see; said to yourself as you realise something), and ～かな, which means “I wonder”: [明日]{あした}、雨かな。 (I wonder if it’ll rain tomorrow.) 来るかな。 (I wonder if they’ll come.)",
+            "か does appear in casual speech in a few fixed uses: そうか (I see; said to yourself as you realise something), and ～かな, which means “I wonder”: [明日]{あした}、雨かな。 (I wonder if it’ll rain tomorrow.) [来]{く}るかな。 (I wonder if they’ll come.)",
             {key:"Casual question: plain form + rising voice. No か, and no だ after nouns."}
           ]
         },
@@ -845,7 +845,7 @@ ICA.addUnit({
           body:[
             "Rodrigo and Cheska are friends. Read their messages and notice each casual feature:",
             {
-              ex:"ロドリゴ：チェスカ、[今夜]{こんや}、[暇]{ひま}？\nチェスカ：うん、[暇]{ひま}だよ。どうして？\nロドリゴ：[駅]{えき}の[前]{まえ}の[新]{あたら}しいラーメン[屋]{や}、もう行った？\nチェスカ：ううん、まだ。\nロドリゴ：じゃあ、[一緒]{いっしょ}に行かない？\nチェスカ：いいね！[何時]{なんじ}にする？\nロドリゴ：[七時]{しちじ}はどう？\nチェスカ：オッケー。じゃあ、[七時]{しちじ}に[駅]{えき}で[待]{ま}ってるね。",
+              ex:"ロドリゴ：チェスカ、[今夜]{こんや}、[暇]{ひま}？\nチェスカ：うん、[暇]{ひま}だよ。どうして？\nロドリゴ：[駅]{えき}の[前]{まえ}の[新]{あたら}しいラーメン[屋]{や}、もう行った？\nチェスカ：ううん、まだ。\nロドリゴ：じゃあ、[一緒]{いっしょ}に行かない？\nチェスカ：いいね！[何時]{なんじ}にする？\nロドリゴ：[七時]{しちじ}はどう？\nチェスカ：オッケー。じゃあ、七時に[駅]{えき}で[待]{ま}ってるね。",
               label:"Rodrigo and Cheska make plans"
             },
             "In English: “Cheska, are you free tonight?” “Yes, I am. Why?” “Have you been to the new ramen place in front of the station yet?” “No, not yet.” “Then do you want to go together?” “Sounds good! What time shall we make it?” “How about seven?” “OK. I’ll wait for you at the station at seven, then.”",
@@ -914,7 +914,7 @@ ICA.addUnit({
             },
             {t:"と in [誰]{だれ}と行くの？", b:1, why:"と means “with”, which the listener couldn’t guess."},
             {
-              t:"から in [九]{く}時から[働]{はたら}く。",
+              t:"から in [九]{く}[時]{じ}から[働]{はたら}く。",
               b:1,
               why:"から means “from”. Without it, the sentence wouldn’t say that work starts at nine."
             },
@@ -929,7 +929,7 @@ ICA.addUnit({
             ["見ている","見てる","～ている → ～てる: the い drops out."],
             ["[飲]{の}んでしまった","[飲]{の}んじゃった","～でしまう → ～じゃう, because the て-form ends in で."],
             ["[帰]{かえ}らなければ","[帰]{かえ}らなきゃ","～なければ → ～なきゃ: “(I) have to…”."],
-            ["書いておく","書いとく","～ておく → ～とく."],
+            ["[書]{か}いておく","[書]{か}いとく","～ておく → ～とく."],
             ["読んでおく","読んどく","～でおく → ～どく, because the て-form ends in で."]
           ]
         },
@@ -970,7 +970,7 @@ ICA.addUnit({
           ask:"has a grammar mistake",
           parts:[
             {t:"今、何してる？", flag:false, why:"Correct: ～てる for ～ている, and a question without か."},
-            {t:"今日、すごく[暑]{あつ}いだね。", flag:true, why:"A mistake. い-adjectives take ね directly: [暑]{あつ}いね."},
+            {t:"[今日]{きょう}、すごく[暑]{あつ}いだね。", flag:true, why:"A mistake. い-adjectives take ね directly: [暑]{あつ}いね."},
             {
               t:"[私]{わたし}は[図書館]{としょかん}[勉強]{べんきょう}してる。",
               flag:true,
@@ -997,7 +997,7 @@ ICA.addUnit({
         {
           id:"e3u5-l3-x8",
           type:"type",
-          q:"The train doors close just as Rodrigo and Cheska reach the platform. Cheska says: “Oh no, it’s gone!” Type the casual contraction of 行ってしまった in hiragana: 「あ、電車、＿＿！」",
+          q:"The train doors close just as Rodrigo and Cheska reach the platform. Cheska says: “Oh no, it’s gone!” Type the casual contraction of 行ってしまった in hiragana: 「あ、[電車]{でんしゃ}、＿＿！」",
           answer:"いっちゃった",
           wrongs:[
             {v:"いちゃった", why:"Keep the small っ of the て-form: 行って → 行っちゃった."},
@@ -1009,7 +1009,7 @@ ICA.addUnit({
         {
           id:"e3u5-l3-x9",
           type:"type",
-          q:"Mariya is at a friend’s place and looks at the clock: “It’s eight already. I have to go.” Type the casual “must” form of 行く in hiragana: 「もう八時だ。＿＿。」",
+          q:"Mariya is at a friend’s place and looks at the clock: “It’s eight already. I have to go.” Type the casual “must” form of 行く in hiragana: 「もう[八時]{はちじ}だ。＿＿。」",
           answer:["いかなきゃ", "いかなくちゃ", "いかないと"],
           wrongs:[
             {v:"いきなきゃ", why:"なきゃ comes from なければ, which attaches to the ない-form: 行か(ない) → 行かなきゃ, not the ます stem."},
@@ -1023,7 +1023,7 @@ ICA.addUnit({
           q:"You ask a friend casually: “Were you free yesterday?” Type the missing part in hiragana: 「[昨日]{きのう}、＿＿？」 ([暇]{ひま}, free, a な-adjective)",
           answer:"ひまだった",
           wrongs:[
-            {v:"ひま", why:"Only the non-past だ drops in a casual question (今、[暇]{ひま}？). Yesterday is past, and the past ending stays: [暇]{ひま}だった？"},
+            {v:"ひま", why:"Only the non-past だ drops in a casual question ([今]{いま}、[暇]{ひま}？). Yesterday is past, and the past ending stays: [暇]{ひま}だった？"},
             {v:"ひまでしたか", why:"That is the polite question. With a friend, use the plain past with a rising voice."}
           ],
           why:"In casual questions, nouns and な-adjectives drop the non-past だ, but the past stays: [昨日]{きのう}、[暇]{ひま}だった？ with a rising voice."
@@ -1044,7 +1044,7 @@ ICA.addUnit({
           {
             t:"Make it casual",
             how:[
-              "Write five polite questions you might ask a friend, such as [昨日]{きのう}、何をしましたか。",
+              "Write five polite questions you might ask a friend, such as [昨日]{きのう}、[何]{なに}をしましたか。",
               "Rewrite each as casual speech: plain ending, rising intonation, and a dropped を or は where it is natural.",
               "Read both versions aloud. Make your voice rise clearly at the end of the casual ones."
             ],
@@ -1095,12 +1095,12 @@ ICA.addUnit({
         q:"How do you say “the book I bought yesterday” in Japanese?",
         options:[
           "[昨日]{きのう}[買]{か}った[本]{ほん}",
-          "本[昨日]{きのう}[買]{か}った",
-          "[昨日]{きのう}[買]{か}いました本",
-          "本は[昨日]{きのう}[買]{か}った"
+          "[本]{ほん}[昨日]{きのう}[買]{か}った",
+          "[昨日]{きのう}[買]{か}いました[本]{ほん}",
+          "[本]{ほん}は[昨日]{きのう}[買]{か}った"
         ],
         answer:0,
-        reveal:"**[昨日]{きのう}[買]{か}った本.** English puts the description after the noun (“the book that I bought”). Japanese puts it before, like an adjective: [昨日]{きのう}[買]{か}った describes 本, just as [新]{あたら}しい does in [新]{あたら}しい本. The verb inside is in the plain form, so [買]{か}いました doesn’t fit, and 本は[昨日]{きのう}[買]{か}った is a whole sentence (“I bought the book yesterday”), not a noun phrase. This lesson shows how to build these descriptions with verbs, adjectives and nouns."
+        reveal:"**[昨日]{きのう}[買]{か}った[本]{ほん}.** English puts the description after the noun (“the book that I bought”). Japanese puts it before, like an adjective: [昨日]{きのう}[買]{か}った describes [本]{ほん}, just as [新]{あたら}しい does in [新]{あたら}しい[本]{ほん}. The verb inside is in the plain form, so [買]{か}いました doesn’t fit, and [本]{ほん}は[昨日]{きのう}[買]{か}った is a whole sentence (“I bought the book yesterday”), not a noun phrase. This lesson shows how to build these descriptions with verbs, adjectives and nouns."
       },
       learn:[
         {
@@ -1135,7 +1135,7 @@ ICA.addUnit({
               ]
             },
             "Use the plain form here even in the politest sentence. Politeness goes at the end of the whole sentence (Lesson 2), never inside the description: ✗ [昨日]{きのう}[買]{か}いました本.",
-            "The clause has its own tense, which tells you when its action happens: [明日]{あした}[来]{く}る人 (the people coming tomorrow) and [昨日]{きのう}来た人 (the people who came yesterday).",
+            "The clause has its own tense, which tells you when its action happens: [明日]{あした}[来]{く}る人 (the people coming tomorrow) and [昨日]{きのう}[来]{き}た人 (the people who came yesterday).",
             "～ている clauses are the usual way to describe what people are wearing or a state that continues: [眼鏡]{めがね}をかけている人 (the person wearing glasses), [結婚]{けっこん}している友だち (a friend who is married). In this kind of description the た-form can mean the same thing: [眼鏡]{めがね}をかけた人 is also “the person wearing glasses”, not someone who wore them once.",
             {
               ex:"あそこで本を[読]{よ}んでいる人は、[私]{わたし}の[姉]{あね}です。\nThe person reading a book over there is my older sister.\n\n[去年]{きょねん}行った[町]{まち}は、とてもきれいでした。\nThe town I went to last year was very beautiful.\n\nかいとさんが[作]{つく}った[料理]{りょうり}を食べました。\nI ate the food Kaito made.",
@@ -1175,7 +1175,7 @@ ICA.addUnit({
               label:"が inside the clause"
             },
             "This is why Unit 2 said the doer of a describing clause takes が. は marks the topic of the **whole sentence**, so it belongs outside the clause. Compare: [私]{わたし}が[作]{つく}ったケーキはおいしい (The cake I made is delicious) has が inside the clause and は on the whole phrase.",
-            "In short clauses you will also often hear の in place of が: [母]{はは}の[作]{つく}ったケーキ (the cake my mother made), [私]{わたし}の[好]{す}きな食べ[物]{もの}. Both are correct. が is the safer choice in longer clauses.",
+            "In short clauses you will also often hear の in place of が: 母の[作]{つく}ったケーキ (the cake my mother made), [私]{わたし}の[好]{す}きな食べ[物]{もの}. Both are correct. が is the safer choice in longer clauses.",
             "The other particles inside a clause stay as they were in the sentence, except the one that belonged to the noun you moved: [駅]{えき}の[前]{まえ}でパンを[売]{う}っている[店]{みせ} (a shop selling bread in front of the station) keeps で and を; the shop’s own が has gone with it."
           ]
         },
@@ -1187,8 +1187,8 @@ ICA.addUnit({
               ex:"[駅]{えき}の前にある[店]{みせ}で[靴]{くつ}を[買]{か}いました。\nI bought shoes at the shop in front of the station.\n\n日本[語]{ご}を[教]{おし}えている先生に[会]{あ}いました。\nI met a teacher who teaches Japanese.\n\nあの[赤]{あか}いセーターを[着]{き}ている人はだれですか。\nWho is that person wearing a red sweater?",
               label:"Clause + noun as subject, object and place"
             },
-            "This is a real-life survival skill. When you don’t know a name or a word, describe it: [髪]{かみ}を[乾]{かわ}かす[機械]{きかい} (a machine that dries hair), [昨日]{きのう}[会議]{かいぎ}に来た人 (the person who came to the meeting yesterday). Japanese speakers do this all the time, and it lets a small vocabulary go a long way.",
-            "A handful of nouns appear with clauses constantly: 人 (person), もの (thing), [所]{ところ} (place), [時]{とき} (time, when) and こと (matter, thing you do). 子どもの[時]{とき} means “when I was a child”, and [学]{がく}生だった[時]{とき} means “when I was a student”. You will meet more patterns with [時]{とき} and こと later in N4."
+            "This is a real-life survival skill. When you don’t know a name or a word, describe it: [髪]{かみ}を[乾]{かわ}かす[機械]{きかい} (a machine that dries hair), [昨日]{きのう}[会議]{かいぎ}に[来]{き}た人 (the person who came to the meeting yesterday). Japanese speakers do this all the time, and it lets a small vocabulary go a long way.",
+            "A handful of nouns appear with clauses constantly: 人 (person), もの (thing), [所]{ところ} (place), [時]{とき} (time, when) and こと (matter, thing you do). 子どもの時 means “when I was a child”, and [学]{がく}生だった時 means “when I was a student”. You will meet more patterns with 時 and こと later in N4."
           ]
         },
         {
@@ -1231,7 +1231,7 @@ ICA.addUnit({
         {
           id:"e3u5-l4-x1",
           type:"mcq",
-          q:"Turn this sentence into a noun phrase about the cake: 母がケーキを[作]{つく}った。",
+          q:"Turn this sentence into a noun phrase about the cake: [母]{はは}がケーキを[作]{つく}った。",
           options:[
             {
               t:"母が[作]{つく}ったケーキ",
@@ -1258,7 +1258,7 @@ ICA.addUnit({
             {t:"[有名]{ゆうめい}の[店]{みせ}", b:1, why:"[有]{ゆう}名 is a な-adjective: [有]{ゆう}名な[店]{みせ}."},
             {t:"高くない[時計]{とけい}", b:0, why:"Any plain form of an い-adjective can describe a noun."},
             {t:"[昨日]{きのう}[見]{み}ました[映画]{えいが}", b:1, why:"Inside a clause, use the plain form: [昨日]{きのう}見た[映画]{えいが}."},
-            {t:"[肉]{にく}を食べない人", b:0, why:"A plain negative verb clause: “people who don’t eat meat”."},
+            {t:"[肉]{にく}を食べない[人]{ひと}", b:0, why:"A plain negative verb clause: “people who don’t eat meat”."},
             {t:"おいしいなパン", b:1, why:"い-adjectives never take な: おいしいパン."}
           ]
         },
@@ -1271,7 +1271,7 @@ ICA.addUnit({
             ["[明日]{あした}[会]{あ}う人","the person I’m meeting tomorrow","[会]{あ}う: plain non-past, for the future."],
             ["[会]{あ}いたい人","someone I want to meet","[会]{あ}いたい: the ～たい form."],
             ["[会]{あ}わなかった人","the people I didn’t meet","[会]{あ}わなかった: plain past negative."],
-            ["[私]{わたし}に[会]{あ}いに来た人","the person who came to see me","[会]{あ}いに来た: came (in order) to meet."]
+            ["[私]{わたし}に[会]{あ}いに[来]{き}た人","the person who came to see me","[会]{あ}いに[来]{き}た: came (in order) to meet."]
           ]
         },
         {
@@ -1409,7 +1409,7 @@ ICA.addUnit({
           {
             t:"Your favourites",
             how:[
-              "Write five sentences about favourite things with [好]{す}きな and a clause, such as 子どものころよく読んだ本は…",
+              "Write five sentences about favourite things with [好]{す}きな and a clause, such as [子]{こ}どものころよく読んだ本は…",
               "Read them aloud, pausing before the noun at the end of each clause."
             ],
             write:"1… 2… 3… 4… 5…"
@@ -1445,7 +1445,7 @@ ICA.addUnit({
         q:"You want to say “I think he’s a student.” Which is correct?",
         options:["[学生]{がくせい}と[思]{おも}います。","[学生]{がくせい}だと[思]{おも}います。","[学生]{がくせい}ですと[思]{おも}います。","[学生]{がくせい}なと[思]{おも}います。"],
         answer:1,
-        reveal:"**学生だと[思]{おも}います.** What you think is a small sentence of its own, in the plain form, and the plain form of 学生です is 学生だ. Leaving out だ is one of the most common learner mistakes, because だ disappears in so many other places. This lesson shows how plain forms work before と[思]{おも}う (think), と[言]{い}う (say) and ～んです (explaining), and exactly what happens to だ in each."
+        reveal:"**[学生]{がくせい}だと[思]{おも}います.** What you think is a small sentence of its own, in the plain form, and the plain form of [学生]{がくせい}です is [学生]{がくせい}だ. Leaving out だ is one of the most common learner mistakes, because だ disappears in so many other places. This lesson shows how plain forms work before と[思]{おも}う (think), と[言]{い}う (say) and ～んです (explaining), and exactly what happens to だ in each."
       },
       learn:[
         {
@@ -1474,7 +1474,7 @@ ICA.addUnit({
           body:[
             "The most common use is to explain a situation the listener can see or has asked about:",
             {
-              ex:"A: どうしたんですか。\nB: [頭]{あたま}が[痛]{いた}いんです。\nA: What’s the matter? B: I’ve got a headache.\n\n[遅]{おく}れてすみません。[電車]{でんしゃ}が[止]{と}まったんです。\nSorry I’m late. The train stopped.\n\n[今日]{きょう}は[飲]{の}みません。車で来たんです。\nI won’t drink today. I came by car.",
+              ex:"A: どうしたんですか。\nB: [頭]{あたま}が[痛]{いた}いんです。\nA: What’s the matter? B: I’ve got a headache.\n\n[遅]{おく}れてすみません。[電車]{でんしゃ}が[止]{と}まったんです。\nSorry I’m late. The train stopped.\n\n[今日]{きょう}は[飲]{の}みません。車で[来]{き}たんです。\nI won’t drink today. I came by car.",
               label:"Explaining with ～んです"
             },
             "In each case the ～んです sentence explains something else: why A looks unwell, why you are late, why you aren’t drinking. Without んです the sentences would still be grammatical, but they would sound like separate pieces of news rather than explanations.",
@@ -1491,10 +1491,10 @@ ICA.addUnit({
           body:[
             "In a question, ～んですか asks for the story behind something you have noticed:",
             {
-              ex:"（A colleague has a large suitcase）\n[旅行]{りょこう}に行くんですか。\nAre you going on a trip?\n\n[新]{あたら}しいかばんですね。どこで[買]{か}ったんですか。\nThat’s a new bag. Where did you buy it?\n\nどうして[日本語]{にほんご}を[勉強]{べんきょう}しているんですか。\nWhy are you studying Japanese?",
+              ex:"（A colleague has a large suitcase）\n[旅行]{りょこう}に[行]{い}くんですか。\nAre you going on a trip?\n\n[新]{あたら}しいかばんですね。どこで[買]{か}ったんですか。\nThat’s a new bag. Where did you buy it?\n\nどうして[日本語]{にほんご}を[勉強]{べんきょう}しているんですか。\nWhy are you studying Japanese?",
               label:"～んですか"
             },
-            "Compare [旅]{りょ}行に行きますか, a neutral question you might ask anyone, with [旅]{りょ}行に行くんですか, which shows you have seen the suitcase and are interested. Questions with どうして (why) very often take ～んですか in conversation, because a why-question asks for an explanation.",
+            "Compare [旅]{りょ}[行]{こう}に[行]{い}きますか, a neutral question you might ask anyone, with [旅]{りょ}[行]{こう}に[行]{い}くんですか, which shows you have seen the suitcase and are interested. Questions with どうして (why) very often take ～んですか in conversation, because a why-question asks for an explanation.",
             "In casual speech the question form is just の with a rising voice, as you saw in Lesson 3: どうしたの？ (What’s wrong?) どこ行くの？ (Where are you off to?) After a noun or な-adjective it is なの: 休みなの？ (Is it your day off?)"
           ]
         },
@@ -1530,7 +1530,7 @@ ICA.addUnit({
               label:"Indirect quote"
             },
             "～と[言]{い}っていました (was saying) is the usual way to pass on a message: you are reporting what someone told you earlier.",
-            "Two more uses of と[言]{い}う you will need every day. To ask what something is called: これは日本語で[何]{なん}と[言]{い}いますか。 (What do you call this in Japanese?) And to name something: 「みどり」という[店]{みせ} (a shop called Midori). The glossary entry is [[to-iu]].",
+            "Two more uses of と[言]{い}う you will need every day. To ask what something is called: これは[日本語]{にほんご}で[何]{なん}と[言]{い}いますか。 (What do you call this in Japanese?) And to name something: 「みどり」という[店]{みせ} (a shop called Midori). The glossary entry is [[to-iu]].",
             "In casual speech, って replaces と, and often the verb too:",
             {
               ex:"[明日]{あした}、休みだって。\nApparently tomorrow’s a day off. / They say tomorrow’s a day off.\n\nあおい、[来]{こ}ないって。\nAoi says she isn’t coming.\n\n[今]{いま}、何て[言]{い}った？\nWhat did you just say?",
@@ -1604,13 +1604,13 @@ ICA.addUnit({
             {
               t:"[来]{こ}なかったんです",
               ok:true,
-              why:"Right. The plain past negative 来なかった + んです explains why you are late: “the bus didn’t come”."
+              why:"Right. The plain past negative [来]{こ}なかった + んです explains why you are late: “the bus didn’t come”."
             },
             {
               t:"[来]{こ}ないんです",
               why:"This is non-past: “the bus doesn’t come (generally)” or “isn’t coming”. Your lateness has already happened, so past fits."
             },
-            {t:"来ませんでしたんです", why:"ます forms don’t go before んです. Use the plain form: 来なかったんです."},
+            {t:"[来]{き}ませんでしたんです", why:"ます forms don’t go before んです. Use the plain form: [来]{こ}なかったんです."},
             {t:"[来]{こ}なかったなんです", why:"な is only added after nouns and な-adjectives. A verb takes んです directly."}
           ]
         },
@@ -1627,7 +1627,7 @@ ICA.addUnit({
             {t:"おいしい", b:1, why:"An い-adjective goes straight in: おいしいと[思]{おも}います."},
             {t:"高くない", b:1, why:"A plain い-adjective form: 高くないと[思]{おも}います."},
             {t:"行く", b:1, why:"A verb goes straight in: 行くと[思]{おも}います."},
-            {t:"来なかった", b:1, why:"A plain verb form: 来なかったと[思]{おも}います."}
+            {t:"[来]{こ}なかった", b:1, why:"A plain verb form: [来]{こ}なかったと[思]{おも}います."}
           ]
         },
         {
@@ -1639,22 +1639,22 @@ ICA.addUnit({
             ["「[疲]{つか}れました」","[疲]{つか}れたと","ました → the plain past た."],
             ["「パーティーに行きません」","パーティーに行かないと","ません → the ない-form."],
             ["「[寒]{さむ}いです」","[寒]{さむ}いと","い-adjective: drop です, with no だ."],
-            ["「[元気]{げんき}でした」","[元]{げん}気だったと","な-adjective: でした → だった."]
+            ["「[元気]{げんき}でした」","[元]{げん}[気]{き}だったと","な-adjective: でした → だった."]
           ]
         },
         {
           id:"e3u5-l5-x5",
           type:"mcq",
-          q:"Mariya says to you: 「あおいさん、今日は来ないって。」 What does she mean?",
+          q:"Mariya says to you: 「あおいさん、[今日]{きょう}は[来]{こ}ないって。」 What does she mean?",
           options:[
             {
               t:"Aoi says she isn’t coming today.",
               ok:true,
               why:"Right. って is the casual quotation marker: Mariya is passing on what Aoi said."
             },
-            {t:"Aoi, don’t come today.", why:"A casual “don’t come” would be 来ないで. って reports someone’s words."},
-            {t:"Aoi didn’t come today.", why:"来ない is non-past. “Didn’t come” would be 来なかった."},
-            {t:"I think Aoi will come today.", why:"来ない is negative, and って reports speech, not the speaker’s opinion."}
+            {t:"Aoi, don’t come today.", why:"A casual “don’t come” would be [来]{こ}ないで. って reports someone’s words."},
+            {t:"Aoi didn’t come today.", why:"[来]{こ}ない is non-past. “Didn’t come” would be [来]{こ}なかった."},
+            {t:"I think Aoi will come today.", why:"[来]{こ}ない is negative, and って reports speech, not the speaker’s opinion."}
           ]
         },
         {
@@ -1694,7 +1694,7 @@ ICA.addUnit({
               why:"Right. A self-introduction explains nothing, so ～んです sounds as if you are answering a question nobody asked. Say イエンです."
             },
             {
-              t:"Explaining why you’re late: バスが来なかったんです。",
+              t:"Explaining why you’re late: バスが[来]{こ}なかったんです。",
               why:"A natural use: the sentence explains the situation (your lateness)."
             },
             {
@@ -1710,7 +1710,7 @@ ICA.addUnit({
         {
           id:"e3u5-l5-x8",
           type:"type",
-          q:"Toby notices that Mariya looks down. Type the ending that asks for the story, in hiragana: 「まりやさん、[元気]{げんき}がないですね。何かあった＿＿。」 (“You don’t seem yourself. Did something happen?”)",
+          q:"Toby notices that Mariya looks down. Type the ending that asks for the story, in hiragana: 「まりやさん、[元気]{げんき}がないですね。[何]{なに}かあった＿＿。」 (“You don’t seem yourself. Did something happen?”)",
           answer:["んですか", "のですか"],
           wrongs:[
             {v:"んです", why:"Without か it is a statement: “Something happened.” To ask, end with ～んですか."},
@@ -1732,7 +1732,7 @@ ICA.addUnit({
         {
           id:"e3u5-l5-x10",
           type:"type",
-          q:"Toby told the house: 「[今夜]{こんや}は[晩]{ばん}ご[飯]{はん}を食べません。」 Later Mariya passes this on to Fumiko. Type the verb in hiragana: 「トビーさんは、[今夜]{こんや}は[晩]{ばん}ご[飯]{はん}を＿＿と[言]{い}っていました。」",
+          q:"Toby told the house: 「[今夜]{こんや}は[晩]{ばん}ご[飯]{はん}を[食]{た}べません。」 Later Mariya passes this on to Fumiko. Type the verb in hiragana: 「トビーさんは、[今夜]{こんや}は[晩]{ばん}ご[飯]{はん}を＿＿と[言]{い}っていました。」",
           answer:"たべない",
           wrongs:[
             {v:"たべません", why:"In an indirect quote the verb goes into the plain form. The politeness stays at the end of the whole sentence: [言]{い}っていました."},
@@ -1822,7 +1822,7 @@ ICA.addUnit({
         {list:[
           "**At least once, up to now.** The pattern is about your life experience, not about one particular time. So it doesn’t go with words that pin down one event, such as [昨日]{きのう} or [今朝]{けさ}: ✗ [昨日]{きのう}、すしを食べたことがあります. Just say [昨日]{きのう}、すしを食べました.",
           "**Something a little special.** [沖縄]{おきなわ}に行ったことがあります is a normal thing to say. ✗ パンを食べたことがあります sounds strange, because nearly everyone has eaten bread, unless the context makes it unusual.",
-          "**How many times.** Add [一度]{いちど} or [一回]{いっかい} (once), [二回]{にかい} (twice) or [何度]{なんど}も (many times): [何度]{なんど}も来たことがあります (I’ve been here many times)."
+          "**How many times.** Add [一度]{いちど} or [一回]{いっかい} (once), [二回]{にかい} (twice) or [何度]{なんど}も (many times): [何度]{なんど}も[来]{き}たことがあります (I’ve been here many times)."
         ]},
         {key:"た-form + ことがある = “have (ever) done”, for life experience. For one event at a known time, use the simple past."},
         "English “have” also covers “Have you eaten yet?”. Japanese uses もう～ましたか for that, the partner of まだ～ていません from Unit 3: もう[昼]{ひる}ご[飯]{はん}を食べましたか. If you asked [昼]{ひる}ご[飯]{はん}を食べたことがありますか, you would be asking whether the person has ever, in their whole life, eaten lunch!",
@@ -1832,12 +1832,12 @@ ICA.addUnit({
         {lead:"When you want to give a couple of examples of what you do, without listing everything, use ～たり～たりする."},
         "Take the た-form of each verb and add り. After the last one, put する, and let する carry the tense and the politeness: ～たり～たりします (do), ～たり～たりしました (did), ～たり～たりする (casual). This is [[tari-tari]].",
         {table:[["Word","た-form","たり form"],["[読]{よ}む (read)","読んだ","読んだり"],["[掃除]{そうじ}する (clean)","[掃除]{そうじ}した","[掃除]{そうじ}したり"],["[出]{で}かける (go out)","出かけた","出かけたり"],["[忙]{いそが}しい (busy)","[忙]{いそが}しかった","[忙]{いそが}しかったり"],["[暇]{ひま}だ (free)","[暇]{ひま}だった","[暇]{ひま}だったり"]]},
-        {ex:"[週末]{しゅうまつ}は、[本]{ほん}を読んだり、[映画]{えいが}を見たりします。\nAt weekends I read books, watch films and so on.\n\n[昨日]{きのう}は、[部屋]{へや}を[掃除]{そうじ}したり、[洗濯]{せんたく}をしたりしました。\nYesterday I cleaned my room, did the laundry and that sort of thing.\n\nA：[休]{やす}みの日は何してるの？\nB：ゲームしたり、[寝]{ね}たりしてる。\nA: What do you do on your days off?\nB: Play games, sleep, that kind of thing.", label:"～たり～たりする"},
+        {ex:"[週末]{しゅうまつ}は、[本]{ほん}を読んだり、[映画]{えいが}を見たりします。\nAt weekends I read books, watch films and so on.\n\n[昨日]{きのう}は、[部屋]{へや}を[掃除]{そうじ}したり、[洗濯]{せんたく}をしたりしました。\nYesterday I cleaned my room, did the laundry and that sort of thing.\n\nA：[休]{やす}みの[日]{ひ}は[何]{なに}してるの？\nB：ゲームしたり、[寝]{ね}たりしてる。\nA: What do you do on your days off?\nB: Play games, sleep, that kind of thing.", label:"～たり～たりする"},
         "～たり～たり means “for example”: these are some of the things, and there are others. It says nothing about order. Compare the て-form from Unit 3, which lists actions in the order they happen, and usually all of them:",
         {ex:"[日曜日]{にちようび}は、[掃除]{そうじ}をして、[買]{か}い[物]{もの}に行って、[映画]{えいが}を見ました。\nOn Sunday I cleaned, went shopping and then watched a film. (these three, in this order)\n\n[日曜日]{にちようび}は、[掃除]{そうじ}をしたり、[買]{か}い[物]{もの}に行ったりしました。\nOn Sunday I did things like cleaning and shopping. (examples)", label:"て or たり?"},
         {list:[
-          "**Just one たり.** With a single verb, ～たりする softens the sentence to “things like…”: 休みの日は、[音楽]{おんがく}を[聞]{き}いたりします (On days off I listen to music and so on).",
-          "**Back and forth.** Two opposite verbs describe something that keeps switching: [行]{い}ったり[来]{き}たりする (go back and forth), [雨]{あめ}が[降]{ふ}ったりやんだりしています (it keeps raining on and off).",
+          "**Just one たり.** With a single verb, ～たりする softens the sentence to “things like…”: 休みの[日]{ひ}は、[音楽]{おんがく}を[聞]{き}いたりします (On days off I listen to music and so on).",
+          "**Back and forth.** Two opposite verbs describe something that keeps switching: 行ったり[来]{き}たりする (go back and forth), [雨]{あめ}が[降]{ふ}ったりやんだりしています (it keeps raining on and off).",
           "**Sometimes this, sometimes that.** With adjectives and nouns: [仕事]{しごと}は[忙]{いそが}しかったり[暇]{ひま}だったりします (Work is sometimes busy, sometimes quiet)."
         ]},
         {warn:"In careful Japanese every item takes たり, and the list ends with する: ✗ 本を読んだり、[映画]{えいが}を見ます → 本を読んだり、[映画]{えいが}を見たりします. You will hear the second たり dropped in relaxed conversation, but textbooks and writing guides treat that as a mistake, so use both in tests and in writing."}
@@ -1845,10 +1845,10 @@ ICA.addUnit({
       {h:"When: ～とき", body:[
         {lead:"とき is a noun that means “time”. Put a description in front of it, and you get “(at) the time when…”."},
         "Because とき is a noun, the words before it follow the rules for describing nouns from Lesson 4 ([[noun-modifier-clause]]): verbs and い-adjectives in the plain form, な-adjectives with な, and nouns with の. It is usually written in hiragana; you will also see it in kanji as [時]{とき}. The glossary entry is [[toki-clause]].",
-        {table:[["Before とき","Example","Meaning"],["verb (plain)","[出]{で}かけるとき\n[疲]{つか}れたとき\n[分]{わ}からないとき","when I go out\nwhen I’m tired\nwhen I don’t understand"],["い-adjective","[寒]{さむ}いとき","when it’s cold"],["な-adjective + な","[暇]{ひま}なとき","when I’m free"],["noun + の","[子]{こ}どものとき\n[学生]{がくせい}のとき","when I was a child\nwhen I was a student"]]},
+        {table:[["Before とき","Example","Meaning"],["verb (plain)","出かけるとき\n[疲]{つか}れたとき\n[分]{わ}からないとき","when I go out\nwhen I’m tired\nwhen I don’t understand"],["い-adjective","[寒]{さむ}いとき","when it’s cold"],["な-adjective + な","[暇]{ひま}なとき","when I’m free"],["noun + の","[子]{こ}どものとき\n[学生]{がくせい}のとき","when I was a child\nwhen I was a student"]]},
         "The main sentence follows とき, often after a comma. You can add に (at that time) or は (as for those times) with little change in meaning: [寒]{さむ}いときは、[温]{あたた}かいお[茶]{ちゃ}を[飲]{の}みます (When it’s cold, I drink hot tea).",
-        {ex:"[暇]{ひま}なとき、何をしますか。\nWhat do you do when you’re free?\n\n子どものとき、[海]{うみ}の[近]{ちか}くに[住]{す}んでいました。\nWhen I was a child, I lived near the sea.\n\n分からないときは、[先生]{せんせい}に[聞]{き}いてください。\nWhen you don’t understand, please ask the teacher.\n\n[疲]{つか}れたとき、[甘]{あま}いものが食べたくなります。\nWhen I’m tired, I start wanting something sweet.", label:"～とき"},
-        "The tense of the whole sentence is shown at the end, by the main verb: [住]{す}んでいました is past, [聞]{き}いてください is a request. The form **before** とき shows something different, as the next section explains."
+        {ex:"[暇]{ひま}なとき、何をしますか。\nWhat do you do when you’re free?\n\n子どものとき、[海]{うみ}の[近]{ちか}くに[住]{す}んでいました。\nWhen I was a child, I lived near the sea.\n\n分からないときは、[先生]{せんせい}に聞いてください。\nWhen you don’t understand, please ask the teacher.\n\n[疲]{つか}れたとき、[甘]{あま}いものが食べたくなります。\nWhen I’m tired, I start wanting something sweet.", label:"～とき"},
+        "The tense of the whole sentence is shown at the end, by the main verb: [住]{す}んでいました is past, 聞いてください is a request. The form **before** とき shows something different, as the next section explains."
       ]},
       {h:"Dictionary form or た-form before とき?", body:[
         {lead:"This is the part of とき that surprises learners. With action verbs, the form before とき tells you which event comes first, not whether the story is past or future."},
@@ -1856,9 +1856,9 @@ ICA.addUnit({
           "**Dictionary form + とき:** the とき action has **not happened yet** (or is still going on) when the main action happens.",
           "**た-form + とき:** the とき action is **already complete** when the main action happens."
         ]},
-        {ex:"[出]{で}かけるとき、「いってきます」と[言]{い}います。\nWhen I leave the house, I say “Ittekimasu”. (said before leaving)\n\nうちへ[帰]{かえ}ったとき、「ただいま」と[言]{い}います。\nWhen I get home, I say “Tadaima”. (said after arriving)", label:"Two greetings, two forms"},
+        {ex:"出かけるとき、「いってきます」と[言]{い}います。\nWhen I leave the house, I say “Ittekimasu”. (said before leaving)\n\nうちへ[帰]{かえ}ったとき、「ただいま」と[言]{い}います。\nWhen I get home, I say “Tadaima”. (said after arriving)", label:"Two greetings, two forms"},
         "Both sentences describe habits, in the non-past. Yet one uses 出かける and the other [帰]{かえ}った, because you say いってきます before you have left and ただいま after you have arrived. The same logic works in the past:",
-        {ex:"[日本]{にほん}へ行くとき、[空港]{くうこう}で[本]{ほん}を[買]{か}いました。\nWhen I went to Japan, I bought a book at the airport. (before going: at the airport at home)\n\n日本へ行ったとき、[着物]{きもの}を[買]{か}いました。\nWhen I went to Japan, I bought a kimono. (after arriving: in Japan)", label:"The same idea in the past"},
+        {ex:"[日本]{にほん}へ行くとき、[空港]{くうこう}で本を[買]{か}いました。\nWhen I went to Japan, I bought a book at the airport. (before going: at the airport at home)\n\n日本へ行ったとき、[着物]{きもの}を[買]{か}いました。\nWhen I went to Japan, I bought a kimono. (after arriving: in Japan)", label:"The same idea in the past"},
         {fig:'<svg viewBox="0 0 340 236"><defs><marker id="e3u5t1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Which happens first?</text><text class="s" x="16" y="48">にほんへ いくとき、ほんを かいました。</text><path class="d-ink" d="M16 98H324" stroke-width="2" marker-end="url(#e3u5t1)"/><text class="s" x="318" y="116" text-anchor="end">time</text><rect class="d-gold" x="20" y="62" width="136" height="26" rx="6" stroke-width="2"/><text class="s" x="88" y="80" text-anchor="middle">1 buy a book</text><rect class="d-lup" x="180" y="62" width="136" height="26" rx="6" stroke-width="2"/><text class="s" x="248" y="80" text-anchor="middle">2 arrive in Japan</text><text class="s" x="16" y="152">にほんへ いったとき、きものを かいました。</text><path class="d-ink" d="M16 202H324" stroke-width="2" marker-end="url(#e3u5t1)"/><text class="s" x="318" y="220" text-anchor="end">time</text><rect class="d-lup" x="20" y="166" width="136" height="26" rx="6" stroke-width="2"/><text class="s" x="88" y="184" text-anchor="middle">1 arrive in Japan</text><rect class="d-gold" x="180" y="166" width="136" height="26" rx="6" stroke-width="2"/><text class="s" x="248" y="184" text-anchor="middle">2 buy a kimono</text></svg>', alt:"Two timelines. Top: にほんへ いくとき、ほんを かいました. First, buy a book; second, arrive in Japan. Bottom: にほんへ いったとき、きものを かいました. First, arrive in Japan; second, buy a kimono.", cap:"日本へ行くとき: the book was bought before arriving. 日本へ行ったとき: the kimono was bought after arriving. Both sentences are in the past; only the order differs."},
         "With **states** there is no order to worry about: adjectives, nouns, ある, いる, ない and ～ている describe the situation at that moment. ～ているとき means “while I was in the middle of doing”:",
         {ex:"[料理]{りょうり}をしているとき、[電話]{でんわ}が[鳴]{な}りました。\nThe phone rang while I was cooking.\n\n[時間]{じかん}がないときは、コンビニでご[飯]{はん}を[買]{か}います。\nWhen I have no time, I buy food at a convenience store.", label:"States before とき"},
@@ -1866,7 +1866,7 @@ ICA.addUnit({
         {tip:"A quick test: ask “Had it happened yet?” If not, use the dictionary form. If it had, use the た-form."}
       ]},
       {h:"Common mistakes", body:[
-        {table:[["✗ Mistake","✓ Correct","Why"],["[子]{こ}どもとき","子どものとき","Nouns take の before とき."],["[暇]{ひま}とき / [暇]{ひま}だとき","[暇]{ひま}なとき","な-adjectives take な before a noun."],["[行]{い}きましたことがあります","行ったことがあります","Use the plain た-form before こと."],["[今朝]{けさ}、パンを[食]{た}べたことがあります","[今朝]{けさ}、パンを食べました","One event at a known time: simple past."],["[本]{ほん}を[読]{よ}んだり、[映画]{えいが}を[見]{み}ます","本を読んだり、[映画]{えいが}を見たりします","Every item takes たり; the list ends with する."],["(at the airport, before leaving) [日本]{にほん}へ行ったとき、本を[買]{か}いました","日本へ行くとき、本を[買]{か}いました","You hadn’t gone yet: dictionary form."]]},
+        {table:[["✗ Mistake","✓ Correct","Why"],["子どもとき","子どものとき","Nouns take の before とき."],["[暇]{ひま}とき / [暇]{ひま}だとき","[暇]{ひま}なとき","な-adjectives take な before a noun."],["行きましたことがあります","行ったことがあります","Use the plain た-form before こと."],["[今朝]{けさ}、パンを食べたことがあります","[今朝]{けさ}、パンを食べました","One event at a known time: simple past."],["本を読んだり、[映画]{えいが}を見ます","本を読んだり、[映画]{えいが}を見たりします","Every item takes たり; the list ends with する."],["(at the airport, before leaving) [日本]{にほん}へ行ったとき、本を[買]{か}いました","日本へ行くとき、本を[買]{か}いました","You hadn’t gone yet: dictionary form."]]},
         "All three patterns are built on the plain forms from Lesson 1, and とき is really Lesson 4’s noun-describing clauses at work again. If the た-form still feels slow, spend a few minutes with {{plain-form-grammar}}; these patterns become easy once it is automatic.",
         "The full reference, with notes for later levels, is in {{experience-listing-toki}}.",
         {terms:["ta-koto-ga-aru","tari-tari","toki-clause"]}
@@ -1874,10 +1874,10 @@ ICA.addUnit({
      ],
      try:[
       {id:"e3u5-l6-x1", type:"mcq", q:"Which sentence means “I have been to Osaka”?", options:[
-        {t:"[大阪]{おおさか}に[行]{い}ったことがあります。", ok:true, why:"Right. The た-form 行った + ことがあります describes a life experience."},
-        {t:"[大阪]{おおさか}に[行]{い}くことがあります。", why:"The dictionary form + ことがある means “there are times when”: “I sometimes go to Osaka”."},
-        {t:"[大阪]{おおさか}に[行]{い}きましたことがあります。", why:"ます forms can’t go before こと. Use the plain た-form: 行ったことがあります."},
-        {t:"[大阪]{おおさか}に[行]{い}ったことです。", why:"Without ある there is no “experience”. The pattern is ～たことがあります."}
+        {t:"[大阪]{おおさか}に行ったことがあります。", ok:true, why:"Right. The た-form 行った + ことがあります describes a life experience."},
+        {t:"[大阪]{おおさか}に行くことがあります。", why:"The dictionary form + ことがある means “there are times when”: “I sometimes go to Osaka”."},
+        {t:"[大阪]{おおさか}に行きましたことがあります。", why:"ます forms can’t go before こと. Use the plain た-form: 行ったことがあります."},
+        {t:"[大阪]{おおさか}に行ったことです。", why:"Without ある there is no “experience”. The pattern is ～たことがあります."}
       ]},
       {id:"e3u5-l6-x2", type:"type", q:"Type the missing part in hiragana, in the polite form: “I have been to Kyoto.” 「[京都]{きょうと}に＿＿＿＿。」 (行く, go)", answer:["いったことがあります","いったことあります"],
         hint:"The た-form of 行く, then ことがあります.",
@@ -1888,7 +1888,7 @@ ICA.addUnit({
           {v:"いったことがありました", why:"Life experience up to now uses the present ある: ～たことがあります."}
         ],
         why:"行った (the た-form; 行く is the verb with the special っ) + ことがあります. In conversation が is often dropped: 行ったことあります."},
-      {id:"e3u5-l6-x3", type:"type", q:"Type the たり form in hiragana: 「[週末]{しゅうまつ}は、[本]{ほん}を＿＿＿、[映画]{えいが}を[見]{み}たりします。」 (読む, read)", answer:"よんだり",
+      {id:"e3u5-l6-x3", type:"type", q:"Type the たり form in hiragana: 「[週末]{しゅうまつ}は、本を＿＿＿、[映画]{えいが}を見たりします。」 (読む, read)", answer:"よんだり",
         hint:"Make the た-form of 読む first.",
         wrongs:[
           {v:"よみたり", why:"たり is made from the た-form, not the ます stem: 読んだ → 読んだり."},
@@ -1898,37 +1898,37 @@ ICA.addUnit({
         ],
         why:"読む → 読んだ (む verbs take んだ) → 読んだり. Both items take たり, and します at the end carries the tense."},
       {id:"e3u5-l6-x4", type:"match", q:"Match each word with the form it takes before とき.", pairs:[
-        ["[子]{こ}ども (child)","こどものとき","A noun takes の."],
+        ["子ども (child)","こどものとき","A noun takes の."],
         ["[暇]{ひま} (free; a な-adjective)","ひまなとき","A な-adjective takes な."],
         ["[寒]{さむ}い (cold)","さむいとき","An い-adjective goes straight in."],
-        ["[出]{で}かける (go out)","でかけるとき","A verb in the plain form goes straight in."],
-        ["[分]{わ}からない (don’t understand)","わからないとき","A plain negative goes straight in too."]
+        ["出かける (go out)","でかけるとき","A verb in the plain form goes straight in."],
+        ["分からない (don’t understand)","わからないとき","A plain negative goes straight in too."]
       ]},
       {id:"e3u5-l6-x5", type:"mcq", q:"Toby is explaining Japanese greetings to Rodrigo: 「うちを＿＿とき、「いってきます」と[言]{い}います。」 Which form fills the gap?", options:[
-        {t:"[出]{で}る", ok:true, why:"Right. You say いってきます before you have left, so leaving isn’t complete yet: dictionary form."},
-        {t:"[出]{で}た", why:"出たとき would mean once you are already outside. いってきます is said as you leave."},
-        {t:"[出]{で}て", why:"The て-form can’t go before a noun. とき needs a plain form: 出る."},
-        {t:"[出]{で}ます", why:"Polite ます forms don’t go before とき. The politeness comes at the end: [言]{い}います."}
+        {t:"出る", ok:true, why:"Right. You say いってきます before you have left, so leaving isn’t complete yet: dictionary form."},
+        {t:"出た", why:"出たとき would mean once you are already outside. いってきます is said as you leave."},
+        {t:"出て", why:"The て-form can’t go before a noun. とき needs a plain form: 出る."},
+        {t:"出ます", why:"Polite ます forms don’t go before とき. The politeness comes at the end: [言]{い}います."}
       ]},
       {id:"e3u5-l6-x6", type:"sort", q:"Sort the sentences: natural, or not natural?", buckets:["Natural","Not natural"], items:[
         {t:"[一度]{いちど}、[着物]{きもの}を[着]{き}たことがあります。", b:0, why:"Life experience with the た-form: natural."},
         {t:"[今朝]{けさ}、コーヒーを[飲]{の}んだことがあります。", b:1, why:"[今朝]{けさ} pins down one event. Say [今朝]{けさ}、コーヒーを[飲]{の}みました."},
-        {t:"[休]{やす}みの[日]{ひ}は、[料理]{りょうり}を[作]{つく}ったり、[散歩]{さんぽ}したりします。", b:0, why:"Two examples with たり, ending in します."},
-        {t:"[休]{やす}みの[日]{ひ}は、[料理]{りょうり}を[作]{つく}ったり、[散歩]{さんぽ}します。", b:1, why:"The second item needs たり too: [散歩]{さんぽ}したりします."},
+        {t:"休みの[日]{ひ}は、[料理]{りょうり}を[作]{つく}ったり、[散歩]{さんぽ}したりします。", b:0, why:"Two examples with たり, ending in します."},
+        {t:"休みの[日]{ひ}は、[料理]{りょうり}を[作]{つく}ったり、[散歩]{さんぽ}します。", b:1, why:"The second item needs たり too: [散歩]{さんぽ}したりします."},
         {t:"[暇]{ひま}なとき、[絵]{え}をかきます。", b:0, why:"な-adjective + な + とき."},
-        {t:"[学生]{がくせい}とき、[東京]{とうきょう}に[住]{す}んでいました。", b:1, why:"A noun needs の: 学生のとき."},
+        {t:"学生とき、[東京]{とうきょう}に[住]{す}んでいました。", b:1, why:"A noun needs の: 学生のとき."},
         {t:"[疲]{つか}れたとき、[早]{はや}く[寝]{ね}ます。", b:0, why:"A change of state: you are already tired, so the た-form."},
-        {t:"[雨]{あめ}が[降]{ふ}ったりやんだりしています。", b:0, why:"Two opposite verbs with たり: it keeps raining on and off."}
+        {t:"雨が[降]{ふ}ったりやんだりしています。", b:0, why:"Two opposite verbs with たり: it keeps raining on and off."}
       ]},
       {id:"e3u5-l6-x7", type:"spot", q:"Cheska wrote about her weekend for her Japanese class. Tap each sentence that has a **mistake**.", ask:"has a mistake", parts:[
-        {t:"[週末]{しゅうまつ}は、[友]{とも}だちの[家]{いえ}へ[行]{い}ったり、[買]{か}い[物]{もの}をしたりしました。", flag:false, why:"Correct: two examples with たり, and しました carries the past."},
+        {t:"[週末]{しゅうまつ}は、[友]{とも}だちの[家]{いえ}へ行ったり、[買]{か}い[物]{もの}をしたりしました。", flag:false, why:"Correct: two examples with たり, and しました carries the past."},
         {t:"[日曜日]{にちようび}は、[初]{はじ}めて[温泉]{おんせん}に[行]{い}きました。", flag:false, why:"Correct: one event on a known day, so the simple past."},
         "\n",
-        {t:"[子]{こ}どもとき、[温泉]{おんせん}はテレビで[見]{み}ただけでした。", flag:true, why:"A noun needs の before とき: 子どものとき."},
-        {t:"[友]{とも}だちは、[温泉]{おんせん}に[何度]{なんど}も[行]{い}きましたことがあります。", flag:true, why:"The plain た-form goes before こと: 行ったことがあります."},
+        {t:"子どもとき、[温泉]{おんせん}はテレビで見ただけでした。", flag:true, why:"A noun needs の before とき: 子どものとき."},
+        {t:"友だちは、[温泉]{おんせん}に[何度]{なんど}も行きましたことがあります。", flag:true, why:"The plain た-form goes before こと: 行ったことがあります."},
         "\n",
         {t:"うちへ[帰]{かえ}ったとき、とても[眠]{ねむ}かったです。", flag:false, why:"Correct: she felt sleepy once she was home, so [帰]{かえ}った."},
-        {t:"[暇]{ひま}なとき、また[行]{い}きたいです。", flag:false, why:"Correct: な-adjective + な + とき."}
+        {t:"[暇]{ひま}なとき、また行きたいです。", flag:false, why:"Correct: な-adjective + な + とき."}
       ]},
       {id:"e3u5-l6-x8", type:"mcq", q:"Aoi asks what you did on Sunday. You cleaned, did the laundry and a few other small jobs, in no particular order. Which answer fits best?", options:[
         {t:"[掃除]{そうじ}をしたり、[洗濯]{せんたく}をしたりしました。", ok:true, why:"Right. たり gives examples from a longer list, with no order."},
@@ -1975,10 +1975,10 @@ ICA.addUnit({
     },
     /* ===================== LESSON 7 ===================== */
     {id:"e3u5-l7", title:"Before, after and because: ～まえに, ～あとで and ～ので", minutes:55,
-     hook:{q:"How do you say “before going to bed” in Japanese?", options:["[寝]{ね}る[前]{まえ}に","[寝]{ね}た[前]{まえ}に","[寝]{ね}ての[前]{まえ}に","[寝]{ね}るの[前]{まえ}に"], answer:0, reveal:"**[寝]{ね}る前に.** Before 前 (before), a verb always takes the dictionary form, even in a story about yesterday: [昨日]{きのう}、[寝]{ね}る前に[本]{ほん}を[読]{よ}みました. Its partner [後]{あと} (after) does the opposite and always takes the た-form: [寝]{ね}た後で. This lesson covers both, compares 後で with ～てから from Unit 3, and adds ～ので, a softer way to give reasons than から."},
+     hook:{q:"How do you say “before going to bed” in Japanese?", options:["[寝]{ね}る[前]{まえ}に","[寝]{ね}た[前]{まえ}に","[寝]{ね}ての[前]{まえ}に","[寝]{ね}るの[前]{まえ}に"], answer:0, reveal:"**[寝]{ね}る[前]{まえ}に.** Before [前]{まえ} (before), a verb always takes the dictionary form, even in a story about yesterday: [昨日]{きのう}、[寝]{ね}る[前]{まえ}に[本]{ほん}を[読]{よ}みました. Its partner [後]{あと} (after) does the opposite and always takes the た-form: [寝]{ね}た[後]{あと}で. This lesson covers both, compares [後]{あと}で with ～てから from Unit 3, and adds ～ので, a softer way to give reasons than から."},
      goals:[
-       "Say “before” with the dictionary form + 前に and with noun + の前に",
-       "Say “after” with the た-form + 後で and with noun + の後で",
+       "Say “before” with the dictionary form + [前]{まえ}に and with noun + の前に",
+       "Say “after” with the た-form + [後]{あと}で and with noun + の後で",
        "Keep 前に with the dictionary form and 後で with the た-form, whatever the tense of the sentence",
        "Choose between ～た後で and ～てから, including ～てから for “since”",
        "Give reasons with ～ので (なので after nouns and な-adjectives), and choose between ので and から"
@@ -1988,70 +1988,70 @@ ICA.addUnit({
         {lead:"前 means “front” or “before”. To say what you do before something else, put the verb in front of 前に."},
         "Verbs take the dictionary form. Nouns take の. A length of time goes straight in front of 前, and then the meaning is “ago”. The glossary entry is [[mae-ni]].",
         {table:[["Before 前に","Example","Meaning"],["verb (dictionary form)","[寝]{ね}る前に\n[日本]{にほん}へ[来]{く}る前に","before going to bed\nbefore coming to Japan"],["noun + の","[授業]{じゅぎょう}の前に\n[食事]{しょくじ}の前に","before class\nbefore the meal"],["length of time + 前","[三年]{さんねん}前に\n[一時間]{いちじかん}前に","three years ago\nan hour ago"]]},
-        {ex:"[寝]{ね}る前に、[歯]{は}を[磨]{みが}きます。\nI brush my teeth before I go to bed.\n\n[食]{た}べる前に、[手]{て}を[洗]{あら}ってください。\nPlease wash your hands before you eat.\n\n日本へ来る前に、[少]{すこ}し[日本語]{にほんご}を[勉強]{べんきょう}しました。\nBefore I came to Japan, I studied a little Japanese.\n\n[授業]{じゅぎょう}の前に、[宿題]{しゅくだい}を[出]{だ}してください。\nPlease hand in your homework before class.", label:"～前に"},
-        {key:"Before 前, the verb is always in the dictionary form, even in the past: 日本へ来る前に、…しました. At that moment, coming to Japan hadn’t happened yet. ✗ [来]{き}た前に."},
+        {ex:"[寝]{ね}る前に、[歯]{は}を[磨]{みが}きます。\nI brush my teeth before I go to bed.\n\n[食]{た}べる前に、[手]{て}を[洗]{あら}ってください。\nPlease wash your hands before you eat.\n\n日本へ[来]{く}る前に、[少]{すこ}し[日本語]{にほんご}を[勉強]{べんきょう}しました。\nBefore I came to Japan, I studied a little Japanese.\n\n[授業]{じゅぎょう}の前に、[宿題]{しゅくだい}を[出]{だ}してください。\nPlease hand in your homework before class.", label:"～前に"},
+        {key:"Before 前, the verb is always in the dictionary form, even in the past: 日本へ[来]{く}る前に、…しました. At that moment, coming to Japan hadn’t happened yet. ✗ [来]{き}た前に."},
         "The ない-form doesn’t go before 前に either. And with a length of time there is no の: 三年前に (three years ago), not ✗ 三年の前に.",
         "前 also works on its own as “before, in the past”: 前は[東京]{とうきょう}に[住]{す}んでいました (I used to live in Tokyo)."
       ]},
       {h:"After: ～後で", body:[
         {lead:"後 (after) is the mirror image of 前, with one big difference: the verb before it takes the た-form."},
         "Here 後 is read あと. You may know it as ご from [午後]{ごご} (afternoon), and with a length of time it is read ご too. The glossary entry is [[ato-de]].",
-        {table:[["After 後で","Example","Meaning"],["verb (た-form)","[食]{た}べた後で\n[授業]{じゅぎょう}が[終]{お}わった後で","after eating\nafter class finishes"],["noun + の","[仕事]{しごと}の後で\n[授業]{じゅぎょう}の後で","after work\nafter class"],["length of time + 後 (ご)","[一時間後]{いちじかんご}に\n[三日後]{みっかご}に","an hour later\nthree days later"]]},
-        {ex:"[晩]{ばん}ご[飯]{はん}を食べた後で、テレビを[見]{み}ました。\nAfter dinner, I watched TV.\n\n[明日]{あした}、[仕事]{しごと}が[終]{お}わった後で、[電話]{でんわ}します。\nI’ll call you tomorrow after work finishes.\n\n[仕事]{しごと}の後で、[飲]{の}みに[行]{い}きませんか。\nWould you like to go for a drink after work?\n\nじゃあ、また後で。\nSee you later, then.", label:"～後で"},
+        {table:[["After [後]{あと}で","Example","Meaning"],["verb (た-form)","食べた後で\n[授業]{じゅぎょう}が[終]{お}わった後で","after eating\nafter class finishes"],["noun + の","[仕事]{しごと}の後で\n[授業]{じゅぎょう}の後で","after work\nafter class"],["length of time + 後 (ご)","[一時間後]{いちじかんご}に\n[三日後]{みっかご}に","an hour later\nthree days later"]]},
+        {ex:"[晩]{ばん}ご[飯]{はん}を食べた[後]{あと}で、テレビを[見]{み}ました。\nAfter dinner, I watched TV.\n\n[明日]{あした}、[仕事]{しごと}が[終]{お}わった後で、[電話]{でんわ}します。\nI’ll call you tomorrow after work finishes.\n\n[仕事]{しごと}の後で、[飲]{の}みに[行]{い}きませんか。\nWould you like to go for a drink after work?\n\nじゃあ、また後で。\nSee you later, then.", label:"～後で"},
         "Look at the second example: it is about tomorrow, but the verb is still [終]{お}わった. As with とき in the last lesson, the た-form shows that work will already be finished when you call. ✗ [終]{お}わる後で.",
-        "後で also stands alone as “later”: 後で[電話]{でんわ}します (I’ll call later). You will also meet ～た後 with no で, and ～た後に, which sounds a little more formal. At this level you can treat them as the same.",
-        "Don’t confuse 後 (あと, after) with [後]{うし}ろ (behind). 後 is about time; 後ろ is about place: [私]{わたし}の後ろ (behind me), but [授業]{じゅぎょう}の後で (after class). The kanji is the same, so the okurigana ろ and the context tell you which one you are reading."
+        "後で also stands alone as “later”: 後で電話します (I’ll call later). You will also meet ～た後 with no で, and ～た後に, which sounds a little more formal. At this level you can treat them as the same.",
+        "Don’t confuse 後 (あと, after) with [後]{うし}ろ (behind). [後]{あと} is about time; [後]{うし}ろ is about place: [私]{わたし}の後ろ (behind me), but [授業]{じゅぎょう}の[後]{あと}で (after class). The kanji is the same, so the okurigana ろ and the context tell you which one you are reading."
       ]},
       {h:"～た後で or ～てから?", body:[
         "In Unit 3 you learned ～てから (after doing, then…). It often means the same as ～た後で, and many sentences accept both: [映画]{えいが}を見た後で / 見てから、[食事]{しょくじ}をしました (After the film, we had a meal). There are differences worth knowing, though.",
         {list:[
-          "**Steps in order: ～てから.** てから stresses that one thing must come first: “not until X, then Y”. That makes it the usual choice for instructions: [手]{て}を[洗]{あら}ってから、食べてください (Wash your hands first, then eat).",
-          "**“Since”: only ～てから.** With a length of time, てから means “since”: 日本へ来てから、[二年]{にねん}になります (It’s been two years since I came to Japan). 後で can’t do this: ✗ [来]{き}た後で、二年になります.",
+          "**Steps in order: ～てから.** てから stresses that one thing must come first: “not until X, then Y”. That makes it the usual choice for instructions: [手]{て}を[洗]{あら}ってから、[食]{た}べてください (Wash your hands first, then eat).",
+          "**“Since”: only ～てから.** With a length of time, てから means “since”: [日本]{にほん}へ[来]{き}てから、[二年]{にねん}になります (It’s been two years since I came to Japan). 後で can’t do this: ✗ [来]{き}た後で、二年になります.",
           "**A point in time: ～た後で.** 後で puts the focus on the time after something, often with a gap in between, and it can stand alone as “later”."
         ]},
-        {table:[["Use","～た後で","～てから"],["After X, Y","○ 見た後で、[食事]{しょくじ}しました","○ 見てから、[食事]{しょくじ}しました"],["First X, then Y (steps)","possible, less usual","○ [洗]{あら}ってから、食べてください"],["Since X","✗","○ 来てから、二年になります"],["On its own: “later”","○ 後で","✗"]]},
+        {table:[["Use","～た後で","～てから"],["After X, Y","○ 見た後で、[食事]{しょくじ}しました","○ 見てから、[食事]{しょくじ}しました"],["First X, then Y (steps)","possible, less usual","○ [洗]{あら}ってから、[食]{た}べてください"],["Since X","✗","○ [来]{き}てから、二年になります"],["On its own: “later”","○ 後で","✗"]]},
         {fig:'<svg viewBox="0 0 340 214"><defs><marker id="e3u5t2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Before and after: which form?</text><path class="d-ink" d="M10 134H330" stroke-width="2" marker-end="url(#e3u5t2)"/><rect class="d-lup" x="8" y="64" width="104" height="40" rx="8" stroke-width="2"/><text x="60" y="89" text-anchor="middle">くる まえに</text><rect class="d-gold" x="120" y="58" width="100" height="52" rx="8" stroke-width="2"/><text x="170" y="80" text-anchor="middle">にほんへ</text><text x="170" y="100" text-anchor="middle">くる</text><rect class="d-sage" x="228" y="64" width="104" height="40" rx="8" stroke-width="2"/><text x="280" y="89" text-anchor="middle">きた あとで</text><text class="s" x="60" y="158" text-anchor="middle">dictionary form</text><text class="s" x="60" y="176" text-anchor="middle">(not done yet)</text><text class="s" x="280" y="158" text-anchor="middle">た-form</text><text class="s" x="280" y="176" text-anchor="middle">(already done)</text><text class="s" x="170" y="204" text-anchor="middle">The same in the past and the future.</text></svg>', alt:"A timeline with the event にほんへ くる in the middle. On the left, before it: くる まえに, labelled dictionary form, not done yet. On the right, after it: きた あとで, labelled た-form, already done. A note says this is the same in the past and the future.", cap:"日本へ来る前に (before coming) and 日本へ来た後で (after coming): the form depends on whether coming to Japan has happened at that point, not on the tense of the sentence."}
       ]},
       {h:"Because: ～ので", body:[
         {lead:"You already give reasons with から (Unit 3). ～ので means the same, “because, so”, but it sounds softer and more polite."},
         "Put a plain form before [[node-reason|ので]]. Nouns and な-adjectives change だ to な, exactly as before ～んです in Lesson 5: [雨]{あめ}なので, [静]{しず}かなので. Past forms go in unchanged: 雨だったので.",
-        {table:[["Word type","Plain form","With ので"],["verb","[降]{ふ}っている / 行った","[降]{ふ}っているので / 行ったので"],["い-adjective","[痛]{いた}い","[痛]{いた}いので"],["な-adjective","[暇]{ひま}だ","[暇]{ひま}なので"],["noun","[休]{やす}みだ / 雨だった","[休]{やす}みなので / 雨だったので"]]},
-        {ex:"雨が[降]{ふ}っているので、[今日]{きょう}は出かけません。\nIt’s raining, so I’m not going out today.\n\n[頭]{あたま}が[痛]{いた}いので、[早]{はや}く[帰]{かえ}ってもいいですか。\nI have a headache, so may I go home early?\n\n[明日]{あした}は休みなので、ゆっくり[寝]{ね}ます。\nTomorrow is a day off, so I’ll have a lie-in.\n\n[道]{みち}が[分]{わ}からなかったので、[遅]{おく}れました。すみません。\nI didn’t know the way, so I was late. I’m sorry.", label:"～ので"},
+        {table:[["Word type","Plain form","With ので"],["verb","[降]{ふ}っている / 行った","[降]{ふ}っているので / 行ったので"],["い-adjective","[痛]{いた}い","[痛]{いた}いので"],["な-adjective","[暇]{ひま}だ","[暇]{ひま}なので"],["noun","[休]{やす}みだ / 雨だった","休みなので / 雨だったので"]]},
+        {ex:"雨が[降]{ふ}っているので、[今日]{きょう}は[出]{で}かけません。\nIt’s raining, so I’m not going out today.\n\n[頭]{あたま}が[痛]{いた}いので、[早]{はや}く[帰]{かえ}ってもいいですか。\nI have a headache, so may I go home early?\n\n[明日]{あした}は休みなので、ゆっくり[寝]{ね}ます。\nTomorrow is a day off, so I’ll have a lie-in.\n\n[道]{みち}が[分]{わ}からなかったので、[遅]{おく}れました。すみません。\nI didn’t know the way, so I was late. I’m sorry.", label:"～ので"},
         "In very polite speech, such as at a shop counter or in a business email, ので can even follow ます and です: すぐ[戻]{もど}りますので、[少々]{しょうしょう}お[待]{ま}ちください (I’ll be right back, so please wait a moment).",
         "You will also hear なので at the start of a sentence, meaning “so”: [明日]{あした}はテストです。なので、[今日]{きょう}は[勉強]{べんきょう}します. It is very common in speech, but many teachers and writing guides find it too casual for formal writing, where writers prefer words such as そのため (for that reason)."
       ]},
       {h:"ので or から?", body:[
         "Most of the time you can use either. The difference is in tone. から gives the reason as your own point, quite directly; ので presents it as a natural cause, so it sounds softer and more objective. These guidelines follow from that:",
-        {table:[["Situation","Better choice","Example"],["Polite requests, asking permission, apologies","ので","[熱]{ねつ}があるので、[休]{やす}んでもいいですか。"],["Casual talk with friends","から (ので is fine too)","[寒]{さむ}いから、[窓]{まど}[閉]{し}めて。"],["Strong feelings, insisting","から","[危]{あぶ}ないから、だめ！"],["Answering “why?” with ～です","から only","[電車]{でんしゃ}が[止]{と}まったからです。"]]},
-        "The last row is a firm rule: から can end a sentence before です, and ので can’t. どうして[遅]{おく}れたんですか。―[電車]{でんしゃ}が[止]{と}まったからです。 (✗ [止]{と}まったのでです)",
+        {table:[["Situation","Better choice","Example"],["Polite requests, asking permission, apologies","ので","[熱]{ねつ}があるので、休んでもいいですか。"],["Casual talk with friends","から (ので is fine too)","[寒]{さむ}いから、[窓]{まど}[閉]{し}めて。"],["Strong feelings, insisting","から","[危]{あぶ}ないから、だめ！"],["Answering “why?” with ～です","から only","[電車]{でんしゃ}が[止]{と}まったからです。"]]},
+        "The last row is a firm rule: から can end a sentence before です, and ので can’t. どうして[遅]{おく}れたんですか。―電車が[止]{と}まったからです。 (✗ [止]{と}まったのでです)",
         "Remember the small difference in form too: after nouns and な-adjectives, から takes だ but ので takes な. 雨だから, 雨なので.",
-        {tip:"In a message to a teacher or a boss, ので is the safer choice. [熱]{ねつ}があるので、[今日]{きょう}は[休]{やす}みます sounds like an explanation; with から the same sentence can sound blunt."}
+        {tip:"In a message to a teacher or a boss, ので is the safer choice. [熱]{ねつ}があるので、[今日]{きょう}は休みます sounds like an explanation; with から the same sentence can sound blunt."}
       ]},
       {h:"In conversation: plans for the evening", body:[
         "Kaito and Rodrigo are sorting out dinner in the kitchen, in casual speech. Then Cheska writes a polite message to Fumiko. Notice which reason word each one uses.",
-        {ex:"かいと：ロドリゴ、[晩]{ばん}ご[飯]{はん}、[何時]{なんじ}ごろにする？\nロドリゴ：[七時]{しちじ}はどう？バイトから[帰]{かえ}った[後]{あと}で、シャワーを[浴]{あ}びたいんだ。\nかいと：いいよ。じゃあ、[作]{つく}る[前]{まえ}に、[卵]{たまご}を[買]{か}わなきゃ。\nロドリゴ：[卵]{たまご}は[冷蔵庫]{れいぞうこ}にあるよ。[昨日]{きのう}[買]{か}ったから。\nかいと：そうなんだ。ありがとう。\nKaito: Rodrigo, what time shall we have dinner?\nRodrigo: How about seven? After I get back from work, I want to take a shower.\nKaito: OK. Then before I cook, I need to buy eggs.\nRodrigo: There are eggs in the fridge. I bought some yesterday.\nKaito: Oh, really? Thanks.", label:"In the kitchen"},
+        {ex:"かいと：ロドリゴ、[晩]{ばん}ご[飯]{はん}、[何時]{なんじ}ごろにする？\nロドリゴ：[七時]{しちじ}はどう？バイトから[帰]{かえ}った後で、シャワーを[浴]{あ}びたいんだ。\nかいと：いいよ。じゃあ、[作]{つく}る前に、[卵]{たまご}を[買]{か}わなきゃ。\nロドリゴ：[卵]{たまご}は[冷蔵庫]{れいぞうこ}にあるよ。[昨日]{きのう}[買]{か}ったから。\nかいと：そうなんだ。ありがとう。\nKaito: Rodrigo, what time shall we have dinner?\nRodrigo: How about seven? After I get back from work, I want to take a shower.\nKaito: OK. Then before I cook, I need to buy eggs.\nRodrigo: There are eggs in the fridge. I bought some yesterday.\nKaito: Oh, really? Thanks.", label:"In the kitchen"},
         {ex:"ふみこさん、すみません。[日曜日]{にちようび}は[大学]{だいがく}で[勉強会]{べんきょうかい}があるので、[晩]{ばん}ご[飯]{はん}に[少]{すこ}し[遅]{おく}れます。[七時前]{しちじまえ}には[帰]{かえ}ります。\nFumiko-san, I’m sorry. I have a study group at the university on Sunday, so I’ll be a little late for dinner. I’ll be back before seven.", label:"Cheska’s message"},
         {list:[
           "Rodrigo gives a reason with から ([昨日]{きのう}[買]{か}ったから), which is natural between housemates. Cheska writes to an older person, so she uses ので.",
           "[帰]{かえ}った後で and [作]{つく}る前に follow the rule: た-form before 後, dictionary form before 前, even though both are about the future.",
-          "With a clock time, 前 means “before”, not “ago”: [七時前]{しちじまえ}に (before seven). With a length of time it means “ago”: [三年前]{さんねんまえ}に. The には in 七時前には adds “at the latest”."
+          "With a clock time, 前 means “before”, not “ago”: 七時前に (before seven). With a length of time it means “ago”: [三年前]{さんねんまえ}に. The には in 七時前には adds “at the latest”."
         ]}
       ]},
       {h:"Common mistakes", body:[
-        {table:[["✗ Mistake","✓ Correct","Why"],["[来]{き}た前に","[来]{く}る前に","Dictionary form before 前."],["[終]{お}わる後で","[終]{お}わった後で","た-form before 後."],["[三年]{さんねん}の前に (three years ago)","三年前に","No の with a length of time."],["雨ので / 雨だので","雨なので","Nouns take な before ので."],["[静]{しず}かだので","[静]{しず}かなので","だ becomes な before ので."],["[止]{と}まったのでです","[止]{と}まったからです","Only から can come before です."],["[来]{き}た後で、[二年]{にねん}になります","[来]{き}てから、二年になります","For “since”, use ～てから."]]},
+        {table:[["✗ Mistake","✓ Correct","Why"],["[来]{き}た前に","[来]{く}る前に","Dictionary form before 前."],["[終]{お}わる後で","[終]{お}わった後で","た-form before 後."],["三年の前に (three years ago)","三年前に","No の with a length of time."],["雨ので / 雨だので","雨なので","Nouns take な before ので."],["[静]{しず}かだので","[静]{しず}かなので","だ becomes な before ので."],["[止]{と}まったのでです","[止]{と}まったからです","Only から can come before です."],["[来]{き}た後で、二年になります","[来]{き}てから、二年になります","For “since”, use ～てから."]]},
         "Time clauses with 前に, 後で and とき, and reasons with ので and から, appear in almost every N4 and N3 text you will read, so it is worth making them automatic. Unit 6 builds on them with conditionals, which say what happens **if** something happens.",
         "The full reference, with notes for later levels, is in {{before-after-because}}.",
         {terms:["mae-ni","ato-de","node-reason"]}
       ]}
      ],
      try:[
-      {id:"e3u5-l7-x1", type:"mcq", q:"Complete the sentence: 「[昨日]{きのう}、＿＿[前]{まえ}に、シャワーを[浴]{あ}びました。」 ([寝]{ね}る, go to bed)", options:[
+      {id:"e3u5-l7-x1", type:"mcq", q:"Complete the sentence: 「[昨日]{きのう}、＿＿前に、シャワーを[浴]{あ}びました。」 ([寝]{ね}る, go to bed)", options:[
         {t:"[寝]{ね}る", ok:true, why:"Right. Before 前, the verb takes the dictionary form, even when the sentence is in the past."},
         {t:"[寝]{ね}た", why:"Even in the past, 前 takes the dictionary form: at the time of the shower, going to bed hadn’t happened yet."},
         {t:"[寝]{ね}ます", why:"ます forms don’t go before 前. Use the plain dictionary form: [寝]{ね}る前に."},
         {t:"[寝]{ね}て", why:"The て-form can’t go before 前. Use the dictionary form: [寝]{ね}る前に."}
       ]},
-      {id:"e3u5-l7-x2", type:"type", q:"Type the missing verb in hiragana: 「[授業]{じゅぎょう}が＿＿＿[後]{あと}で、[図書館]{としょかん}へ[行]{い}きます。」 ([終]{お}わる, finish)", answer:"おわった",
+      {id:"e3u5-l7-x2", type:"type", q:"Type the missing verb in hiragana: 「[授業]{じゅぎょう}が＿＿＿後で、[図書館]{としょかん}へ行きます。」 ([終]{お}わる, finish)", answer:"おわった",
         hint:"後で takes the た-form.",
         wrongs:[
           {v:"おわる", why:"後 takes the た-form, even about the future: the class will already be over. [終]{お}わった後で."},
@@ -2060,7 +2060,7 @@ ICA.addUnit({
           {v:"おわりました", why:"ます forms don’t go before 後. Use the plain た-form: [終]{お}わった."}
         ],
         why:"[終]{お}わる → [終]{お}わった (godan: る → った). 後 always takes the た-form, because the first action is complete by then."},
-      {id:"e3u5-l7-x3", type:"type", q:"Type the reason part in hiragana, using ので. Tomorrow is a holiday, so you’ll have a lie-in: 「[明日]{あした}は[休]{やす}み＿＿＿、ゆっくり[寝]{ね}ます。」", answer:"なので",
+      {id:"e3u5-l7-x3", type:"type", q:"Type the reason part in hiragana, using ので. Tomorrow is a holiday, so you’ll have a lie-in: 「[明日]{あした}は休み＿＿＿、ゆっくり[寝]{ね}ます。」", answer:"なので",
         hint:"休み is a noun. What happens to だ before ので?",
         wrongs:[
           {v:"だので", why:"だ becomes な before ので: 休みなので."},
@@ -2068,17 +2068,17 @@ ICA.addUnit({
           {v:"だから", why:"That is correct Japanese with から (休みだから), but this question asks for ので: 休みなので."}
         ],
         why:"Noun + な + ので: 休みなので. The same な appears before ～んです: 休みなんです."},
-      {id:"e3u5-l7-x4", type:"order", q:"Rodrigo describes his evening: 「[晩]{ばん}ご[飯]{はん}を[食]{た}べる[前]{まえ}に、シャワーを[浴]{あ}びます。[晩]{ばん}ご[飯]{はん}を[食]{た}べた[後]{あと}で、[絵]{え}をかきます。[絵]{え}をかいた[後]{あと}で、[本]{ほん}を[読]{よ}みます。それから[寝]{ね}ます。」 Put what he does in order.", items:[
+      {id:"e3u5-l7-x4", type:"order", q:"Rodrigo describes his evening: 「[晩]{ばん}ご[飯]{はん}を食べる前に、シャワーを[浴]{あ}びます。[晩]{ばん}ご[飯]{はん}を食べた後で、[絵]{え}をかきます。[絵]{え}をかいた後で、本を読みます。それから[寝]{ね}ます。」 Put what he does in order.", items:[
         {t:"He takes a shower.", why:"[晩]{ばん}ご[飯]{はん}を食べる前に: before dinner, so it comes first."},
         {t:"He eats dinner.", why:"Dinner comes after the shower and before everything else."},
         {t:"He draws.", why:"[晩]{ばん}ご[飯]{はん}を食べた後で: after dinner."},
         {t:"He reads a book.", why:"[絵]{え}をかいた後で: after drawing."},
         {t:"He goes to bed.", why:"それから[寝]{ね}ます: last of all."}
       ]},
-      {id:"e3u5-l7-x5", type:"mcq", q:"Rodrigo arrived in Japan in April. It is now June. Which sentence is correct? 「[日本]{にほん}へ＿＿、[二]{に}か[月]{げつ}になります。」", options:[
+      {id:"e3u5-l7-x5", type:"mcq", q:"Rodrigo arrived in Japan in April. It is now June. Which sentence is correct? 「日本へ＿＿、二か[月]{げつ}になります。」", options:[
         {t:"[来]{き}てから", ok:true, why:"Right. With a length of time, ～てから means “since”: it’s been two months since I came."},
-        {t:"[来]{き}た[後]{あと}で", why:"後で can’t mean “since”. For “it’s been… since”, use ～てから."},
-        {t:"[来]{く}る[前]{まえ}に", why:"This means “before coming”, which doesn’t fit “it’s been two months”."},
+        {t:"[来]{き}た後で", why:"後で can’t mean “since”. For “it’s been… since”, use ～てから."},
+        {t:"[来]{く}る前に", why:"This means “before coming”, which doesn’t fit “it’s been two months”."},
         {t:"[来]{き}たとき", why:"とき marks one point in time (“when I came”), not the time that has passed since."}
       ]},
       {id:"e3u5-l7-x6", type:"mcq", q:"You have a fever and want to leave work early. Which message to your manager is best?", options:[
@@ -2088,21 +2088,21 @@ ICA.addUnit({
         {t:"[熱]{ねつ}だので、[早]{はや}く[帰]{かえ}ってもいいですか。", why:"だ becomes な before ので. Besides, the usual way to say you have a fever is [熱]{ねつ}がある: [熱]{ねつ}があるので."}
       ]},
       {id:"e3u5-l7-x7", type:"match", q:"Match each word with its form before ので.", pairs:[
-        ["[雨]{あめ} (rain; a noun)","あめなので","A noun takes な before ので."],
+        ["雨 (rain; a noun)","あめなので","A noun takes な before ので."],
         ["[静]{しず}か (quiet; a な-adjective)","しずかなので","A な-adjective takes な before ので."],
         ["[寒]{さむ}い (cold)","さむいので","An い-adjective takes ので directly."],
-        ["[休]{やす}みだった (was a day off)","やすみだったので","Only non-past だ changes; だった stays as it is."],
-        ["[分]{わ}からない (don’t understand)","わからないので","A plain negative takes ので directly."]
+        ["休みだった (was a day off)","やすみだったので","Only non-past だ changes; だった stays as it is."],
+        ["分からない (don’t understand)","わからないので","A plain negative takes ので directly."]
       ]},
       {id:"e3u5-l7-x8", type:"spot", q:"Cheska writes to her Japanese teacher. Tap each part that is **wrong**.", ask:"is wrong", parts:[
         "[先生]{せんせい}、すみません。",
         {t:"[頭]{あたま}が[痛]{いた}いなので", flag:true, why:"い-adjectives take ので directly: [頭]{あたま}が[痛]{いた}いので."},
         "、[今日]{きょう}の[授業]{じゅぎょう}を",
-        {t:"[休]{やす}んでもいいですか", flag:false, why:"Correct: a polite request for permission."},
-        "。[昨日]{きのう}、[病院]{びょういん}へ[行]{い}きました。[病院]{びょういん}から",
-        {t:"[帰]{かえ}る[後]{あと}で", flag:true, why:"後 takes the た-form: [帰]{かえ}った後で."},
+        {t:"休んでもいいですか", flag:false, why:"Correct: a polite request for permission."},
+        "。[昨日]{きのう}、[病院]{びょういん}へ行きました。[病院]{びょういん}から",
+        {t:"[帰]{かえ}る後で", flag:true, why:"後 takes the た-form: [帰]{かえ}った後で."},
         "、[薬]{くすり}を[飲]{の}んで[寝]{ね}ました。[宿題]{しゅくだい}は",
-        {t:"[明日]{あした}の[授業]{じゅぎょう}の[前]{まえ}に", flag:false, why:"Correct: noun + の前に."},
+        {t:"[明日]{あした}の[授業]{じゅぎょう}の前に", flag:false, why:"Correct: noun + の前に."},
         "[出]{だ}します。"
       ]}
      ],
@@ -2120,7 +2120,7 @@ ICA.addUnit({
          "Rewrite one of them for a close friend, in casual speech with から."
        ], write:"…ので、… …から、…"},
        {t:"How long since…?", how:[
-         "Write two sentences with ～てから about how long it has been since you started something: 日本語の[勉強]{べんきょう}を[始]{はじ}めてから、～になります.",
+         "Write two sentences with ～てから about how long it has been since you started something: [日本語]{にほんご}の[勉強]{べんきょう}を[始]{はじ}めてから、～になります.",
          "Add one sentence that uses 後で on its own, meaning “later”."
        ], write:"…てから、…になります。"}
       ],
@@ -2148,16 +2148,16 @@ ICA.addUnit({
     "e3u5-q44"
   ],
   cpBank:[
-    {id:"e3u5-cp01", lesson:"e3u5-l1", level:1, q:"What is the plain form of 来ませんでした (didn’t come)? (Written in kana here.)", options:[
-      {t:"きなかった", why:"き is the reading in 来ます and 来て. The ない-form of くる uses こ: こない."},
+    {id:"e3u5-cp01", lesson:"e3u5-l1", level:1, q:"What is the plain form of [来]{き}ませんでした (didn’t come)? (Written in kana here.)", options:[
+      {t:"きなかった", why:"き is the reading in [来]{き}ます and [来]{き}て. The ない-form of くる uses こ: こない."},
       {t:"こなかった", ok:true, why:"くる is irregular: こない (doesn’t come) → こなかった (didn’t come)."},
       {t:"くなかった", why:"くる doesn’t change like an い-adjective. Its ない-form is こない."},
       {t:"こないだった", why:"ない-forms change like い-adjectives: ない → なかった. They never take だった."}]},
-    {id:"e3u5-cp02", lesson:"e3u5-l3", level:1, q:"Rodrigo tells Cheska 「[昨日]{きのう}、学校[休]{やす}んじゃった。」 What is the full form of [休]{やす}んじゃった?", options:[
-      {t:"[休]{やす}んでいた", why:"～ていた contracts to ～てた (here 休んでた), not to じゃった."},
-      {t:"[休]{やす}んでおいた", why:"～ておいた contracts to ～といた (here 休んどいた)."},
-      {t:"[休]{やす}まなかった", why:"That is the plain past negative: “didn’t take the day off”, the opposite."},
-      {t:"[休]{やす}んでしまった", ok:true, why:"～てしまった becomes ～ちゃった, and after a で-type て-form it becomes ～じゃった: “I ended up skipping school.”"}]},
+    {id:"e3u5-cp02", lesson:"e3u5-l3", level:1, q:"Rodrigo tells Cheska 「[昨日]{きのう}、[学校]{がっこう}[休]{やす}んじゃった。」 What is the full form of 休んじゃった?", options:[
+      {t:"休んでいた", why:"～ていた contracts to ～てた (here 休んでた), not to じゃった."},
+      {t:"休んでおいた", why:"～ておいた contracts to ～といた (here 休んどいた)."},
+      {t:"休まなかった", why:"That is the plain past negative: “didn’t take the day off”, the opposite."},
+      {t:"休んでしまった", ok:true, why:"～てしまった becomes ～ちゃった, and after a で-type て-form it becomes ～じゃった: “I ended up skipping school.”"}]},
     {id:"e3u5-cp03", lesson:"e3u5-l4", level:1, q:"How do you say “a cake that isn’t sweet”?", options:[
       {t:"[甘]{あま}くないのケーキ", why:"A describing clause goes straight before the noun, with no の in between."},
       {t:"[甘]{あま}くないケーキ", ok:true, why:"Any plain form can describe a noun. い-adjective negative [甘]{あま}くない + ケーキ."},
@@ -2168,7 +2168,7 @@ ICA.addUnit({
       {t:"「ジュース、[飲]{の}むか？」", why:"Plain form + か sounds blunt and rough, not how Mariya would talk to a child. A casual question usually just rises: [飲]{の}む？"},
       {t:"「ジュース、[飲]{の}む？」", ok:true, why:"Adults usually speak plainly to children. A casual question drops を and か and rises at the end."},
       {t:"「ジュースを[飲]{の}んでください。」", why:"～てください is a request (“please drink the juice”), not an offer."}]},
-    {id:"e3u5-cp05", lesson:"e3u5-l3", level:2, q:"Rodrigo is about to leave for a shop. Kaito knows it is closed today, but Rodrigo doesn’t. Which ending fits? 「今日、あの[店]{みせ}休みだ＿＿。」", options:[
+    {id:"e3u5-cp05", lesson:"e3u5-l3", level:2, q:"Rodrigo is about to leave for a shop. Kaito knows it is closed today, but Rodrigo doesn’t. Which ending fits? 「[今日]{きょう}、あの[店]{みせ}[休]{やす}みだ＿＿。」", options:[
       {t:"ね", why:"ね checks or shares something both people already know. Rodrigo doesn’t know this yet."},
       {t:"よね", why:"よね checks something you think the listener also knows. Here Kaito is telling him news."},
       {t:"か", why:"か would make it a question, and plain だ + か sounds rough."},
@@ -2184,10 +2184,10 @@ ICA.addUnit({
       {t:"「[旅行]{りょこう}に[行]{い}くと[思]{おも}います。」", why:"～と[思]{おも}います gives his own opinion. It doesn’t ask Yến anything."},
       {t:"「[旅行]{りょこう}に[行]{い}ったことがありますか。」", why:"This asks about past experience (“Have you ever travelled?”), not about the suitcase now."}]},
     {id:"e3u5-cp08", lesson:"e3u5-l7", level:2, q:"Megumi tells Sōta to do his homework before he plays. Which fills the gap? 「＿＿、[宿題]{しゅくだい}をしてね。」", options:[
-      {t:"[遊]{あそ}んだ前に", why:"前に always follows the dictionary form, even when the events are in the past."},
-      {t:"[遊]{あそ}ぶの前に", why:"A verb goes straight before 前に. の is only for nouns: 食[事]{じ}の前に."},
-      {t:"[遊]{あそ}ぶ前に", ok:true, why:"Dictionary form + 前に: “before you play”."},
-      {t:"[遊]{あそ}びます前に", why:"Inside the sentence, use the plain form. The polite ending goes at the end, if anywhere."}]},
+      {t:"[遊]{あそ}んだ[前]{まえ}に", why:"前に always follows the dictionary form, even when the events are in the past."},
+      {t:"[遊]{あそ}ぶの[前]{まえ}に", why:"A verb goes straight before 前に. の is only for nouns: [食]{しょく}[事]{じ}の前に."},
+      {t:"[遊]{あそ}ぶ[前]{まえ}に", ok:true, why:"Dictionary form + 前に: “before you play”."},
+      {t:"[遊]{あそ}びます[前]{まえ}に", why:"Inside the sentence, use the plain form. The polite ending goes at the end, if anywhere."}]},
     {id:"e3u5-cp09", lesson:"e3u5-l4", level:3, q:"Cheska bought her dictionary at this bookshop. How does she say “This is the bookshop where I bought my dictionary”? 「ここは＿＿です。」", options:[
       {t:"[辞書]{じしょ}を[買]{か}ったで[本屋]{ほんや}", why:"で belonged to [本屋]{ほんや} in [本屋]{ほんや}で[辞書]{じしょ}を[買]{か}った. When that noun moves to the end, its particle goes with it."},
       {t:"[辞書]{じしょ}を[買]{か}った[本屋]{ほんや}", ok:true, why:"The clause goes straight before the noun. を stays, but で, which belonged to [本屋]{ほんや}, disappears."},
@@ -2199,11 +2199,11 @@ ICA.addUnit({
       {t:"Fumiko put the garbage out on Tuesday", why:"出して is a request (“please put it out”), not a report that she did it."},
       {t:"He thinks Tuesday may be the garbage day", why:"An opinion would be ～と[思]{おも}う. って reports what Fumiko said."}]},
     {id:"e3u5-cp11", lesson:"e3u5-l7", level:3, q:"Before she moved to Japan, Yến studied Japanese for two years in Vietnam. Which sentence says this?", options:[
-      {t:"「日本に[来]{き}たとき、二年間日本語を[勉強]{べんきょう}しました。」", why:"た-form + とき means the coming had already happened: she would have studied after arriving in Japan."},
-      {t:"「日本に[来]{く}る[前]{まえ}に、二年間日本語を[勉強]{べんきょう}しました。」", ok:true, why:"Dictionary form + 前に puts the two years of study before her move to Japan."},
-      {t:"「日本に[来]{き}た[後]{あと}で、二年間日本語を[勉強]{べんきょう}しました。」", why:"～た後で puts the studying after she came to Japan: the wrong order."},
-      {t:"「日本に[来]{き}てから、二年間日本語を[勉強]{べんきょう}しました。」", why:"～てから also means “after (since) coming to Japan”. She studied in Vietnam, before the move."}]},
-    {id:"e3u5-cp12", lesson:"e3u5-l6", level:3, q:"Toby asks Kaito 「[北海道]{ほっかいどう}、行ったことある？」 Kaito has never been there. Which reply is natural?", options:[
+      {t:"「[日本]{にほん}に[来]{き}たとき、[二年間]{にねんかん}[日本語]{にほんご}を[勉強]{べんきょう}しました。」", why:"た-form + とき means the coming had already happened: she would have studied after arriving in Japan."},
+      {t:"「[日本]{にほん}に[来]{く}る[前]{まえ}に、[二年間]{にねんかん}[日本語]{にほんご}を[勉強]{べんきょう}しました。」", ok:true, why:"Dictionary form + 前に puts the two years of study before her move to Japan."},
+      {t:"「[日本]{にほん}に[来]{き}た[後]{あと}で、[二年間]{にねんかん}[日本語]{にほんご}を[勉強]{べんきょう}しました。」", why:"～た後で puts the studying after she came to Japan: the wrong order."},
+      {t:"「[日本]{にほん}に[来]{き}てから、[二年間]{にねんかん}[日本語]{にほんご}を[勉強]{べんきょう}しました。」", why:"～てから also means “after (since) coming to Japan”. She studied in Vietnam, before the move."}]},
+    {id:"e3u5-cp12", lesson:"e3u5-l6", level:3, q:"Toby asks Kaito 「[北海道]{ほっかいどう}、[行]{い}ったことある？」 Kaito has never been there. Which reply is natural?", options:[
       {t:"「ううん、[一度]{いちど}もない。」", ok:true, why:"ううん is a casual no, and ～たことがない (here just ない) with [一度]{いちど}も says “not even once”."},
       {t:"「ううん、行かない。」", why:"行かない says he isn’t going (now or later). It doesn’t answer the question about experience."},
       {t:"「うん、ない。」", why:"うん means yes. To say no casually, use ううん."},
@@ -2234,9 +2234,9 @@ ICA.addUnit({
         ],
         builder:[
           {h:"Verbs"},
-          "Dictionary form, ない-form, た-form and past negative: [書]{か}く・書かない・書いた・書かなかった; [買]{か}う・[買]{か}わない・[買]{か}った・[買]{か}わなかった; 食べる・食べない・食べた・食べなかった; する・しない・した・しなかった; [来]{く}る・[来]{こ}ない・[来]{き}た・[来]{こ}なかった. Irregular points: ある → ない (not あらない), [行]{い}く → 行った, and the three readings of [来]{く}る. The ない-form ends in い and changes like an い-adjective.",
+          "Dictionary form, ない-form, た-form and past negative: [書]{か}く・書かない・書いた・書かなかった; [買]{か}う・[買]{か}わない・[買]{か}った・[買]{か}わなかった; [食]{た}べる・食べない・食べた・食べなかった; する・しない・した・しなかった; [来]{く}る・[来]{こ}ない・[来]{き}た・[来]{こ}なかった. Irregular points: ある → ない (not あらない), [行]{い}く → 行った, and the three readings of [来]{く}る. The ない-form ends in い and changes like an い-adjective.",
           {h:"Adjectives and nouns"},
-          "い-adjectives: 高い・高くない・高かった・高くなかった; いい uses よ: よくない・よかった・よくなかった. ～たい and ～ない follow the same pattern.",
+          "い-adjectives: [高]{たか}い・高くない・高かった・高くなかった; いい uses よ: よくない・よかった・よくなかった. ～たい and ～ない follow the same pattern.",
           "な-adjectives and nouns: [静]{しず}かだ・[静]{しず}かじゃない・[静]{しず}かだった・[静]{しず}かじゃなかった. ではない is the more formal version of じゃない. Look-alikes such as きれい and きらい are な-adjectives: きれいじゃない.",
           {h:"Patterns in plain form"},
           "～ています → ～ている; ～たいです → ～たい; ～てください → ～て (casual request); ～ないでください → ～ないで; ～ませんか → ～ない？ (casual invitation, rising voice); わかりました → わかった. The plain form of ～ましょう is the volitional (行こう).",
@@ -2248,8 +2248,8 @@ ICA.addUnit({
         ],
         pro:[
           "**Names.** Japanese teaching materials call the plain form of a word [普通形]{ふつうけい} and the polite form [丁寧形]{ていねいけい}. The style of a whole text or conversation is [普通体]{ふつうたい} or [丁寧体]{ていねいたい} (also called [常体]{じょうたい} and [敬体]{けいたい}). This track uses “plain form” for the word and “plain style” for the text.",
-          "**Two polite negatives.** 高くないです and 高くありません are both polite. The ありません forms are traditionally more formal; ～ないです is very common in speech (studies of conversation find it more often than ～ません, especially after adjectives) and widely accepted. The same pair exists for verbs (食べないです / 食べません) and nouns ([学生]{がくせい}じゃないです / [学生]{がくせい}じゃありません). In formal writing and careful speech, ～ません and ～ありません are the safe choice. All of them share the same plain form.",
-          "**だ, である and nothing.** Written plain style uses だ or, in reports and academic writing, である (学生である). Casual speech often uses neither: 学生？, きれい！, 雨。 In noun-modifying clauses だ changes to な or の, and before ～んです to な, while before と[思]{おも}う it stays. (In formal writing you may also see a noun or な-adjective before と[考]{かんが}える or と[思]{おも}われる without だ, as in [必要]{ひつよう}と[考]{かんが}える; in everyday Japanese, keep だ: [学生]{がくせい}だと[思]{おも}う.) Knowing where だ appears, changes or vanishes is most of the battle at N4.",
+          "**Two polite negatives.** [高]{たか}くないです and 高くありません are both polite. The ありません forms are traditionally more formal; ～ないです is very common in speech (studies of conversation find it more often than ～ません, especially after adjectives) and widely accepted. The same pair exists for verbs ([食]{た}べないです / 食べません) and nouns ([学生]{がくせい}じゃないです / 学生じゃありません). In formal writing and careful speech, ～ません and ～ありません are the safe choice. All of them share the same plain form.",
+          "**だ, である and nothing.** Written plain style uses だ or, in reports and academic writing, である (学生である). Casual speech often uses neither: 学生？, きれい！, [雨]{あめ}。 In noun-modifying clauses だ changes to な or の, and before ～んです to な, while before と[思]{おも}う it stays. (In formal writing you may also see a noun or な-adjective before と[考]{かんが}える or と[思]{おも}われる without だ, as in [必要]{ひつよう}と[考]{かんが}える; in everyday Japanese, keep だ: 学生だと[思]{おも}う.) Knowing where だ appears, changes or vanishes is most of the battle at N4.",
           "**じゃない？ as a tag.** With a rising voice, じゃない？ can be a real negative question (“Isn’t it rain?”) or a tag that offers a guess (“It’s rain, isn’t it?”). 雨じゃない？ often means “Looks like rain, doesn’t it?”. Intonation and context decide. To offer a guess about a verb or い-adjective, use ～んじゃない？: 高いんじゃない？ (I think it might be expensive, don’t you?), [来]{こ}ないんじゃない？ (Maybe they won’t come.)",
           "**Why plain forms matter so much.** Nearly every N4 and N3 pattern is built on plain forms: noun-modifying clauses, ～んです, ～と[思]{おも}う, ～でしょう, ～かもしれない, ～そうだ (hearsay), ～らしい and many more. Learners who make the four boxes automatic find the rest of N4 much easier."
         ]
@@ -2349,7 +2349,7 @@ ICA.addUnit({
         ],
         builder:[
           {h:"Particles"},
-          "Often dropped: は (when not contrastive), が (except after question words), を, and に or へ for destinations with verbs of movement (コンビニ行く？). Kept: で, と, から, まで, も, and に for times. Keeping a particle is never wrong.",
+          "Often dropped: は (when not contrastive), が (except after question words), を, and に or へ for destinations with verbs of movement (コンビニ[行]{い}く？). Kept: で, と, から, まで, も, and に for times. Keeping a particle is never wrong.",
           {h:"Contractions"},
           {
             table:[
@@ -2359,11 +2359,11 @@ ICA.addUnit({
               ["～てしまう","～ちゃう","[忘]{わす}れちゃった"],
               ["～でしまう","～じゃう","[飲]{の}んじゃった"],
               ["～なければ","～なきゃ","行かなきゃ"],
-              ["～ては / ～では","～ちゃ / ～じゃ","見ちゃだめ"]
+              ["～ては / ～では","～ちゃ / ～じゃ","[見]{み}ちゃだめ"]
             ]
           },
           {h:"よ, ね, よね"},
-          "よ tells the listener something new; ね seeks agreement or shares a feeling; よね checks something you think you both know. Verbs and い-adjectives take them directly (行くよ, [暑]{あつ}いね); nouns and な-adjectives add だ (雨だよ, [暇]{ひま}だね). The order is よね, never ねよ. Overused, よ sounds pushy.",
+          "よ tells the listener something new; ね seeks agreement or shares a feeling; よね checks something you think you both know. Verbs and い-adjectives take them directly (行くよ, [暑]{あつ}いね); nouns and な-adjectives add だ ([雨]{あめ}だよ, [暇]{ひま}だね). The order is よね, never ねよ. Overused, よ sounds pushy.",
           {h:"Questions"},
           "Rising intonation replaces か: 行く？ Nouns and な-adjectives drop だ: [暇]{ひま}？, [学生]{がくせい}？ ～の？ (～なの？ after nouns) asks more softly, with interest in the reason. A bare か after a plain form can sound rough; fixed uses such as そうか (I see) and ～かな (I wonder) are fine.",
           {h:"Answers, invitations and requests"},
@@ -2371,11 +2371,11 @@ ICA.addUnit({
           "All of these belong with the people you speak plainly to. With anyone else, keep the polite forms, even when the conversation is relaxed."
         ],
         pro:[
-          "**More contractions.** ～ていく → ～てく ([持]{も}ってく, take along); ～のだ → ～んだ; と[言]{い}う → って; ～なくては → ～なくちゃ (a common alternative to ～なきゃ). In fast casual speech, ら, る and れ before な or の often become ん: わからない → わかんない, つまらない → つまんない, くれない → くんない, [何]{なに}してるの → [何]{なに}してんの. These are very casual; recognise them before you use them.",
+          "**More contractions.** ～ていく → ～てく ([持]{も}ってく, take along); ～のだ → ～んだ; と[言]{い}う → って; ～なくては → ～なくちゃ (a common alternative to ～なきゃ). In fast casual speech, ら, る and れ before な or の often become ん: わからない → わかんない, つまらない → つまんない, くれない → くんない, [何]{なに}してるの → 何してんの. These are very casual; recognise them before you use them.",
           "**Formal contractions.** Some contractions also appear in polite speech: [待]{ま}ってます (for [待]{ま}っています) and じゃありません are both very common. They are correct conversational Japanese but less careful than the full forms, so keep the full forms in writing and formal situations.",
           "**Gendered and stylised endings.** Older descriptions of Japanese list “women’s” endings (わ, かしら, noun + ね/よ without だ) and “men’s” endings (ぞ, ぜ, だぜ). Studies of real conversation find that many speakers, especially younger ones, rarely use the most strongly marked of these, and that people of every gender choose endings to fit the situation and the relationship. Fiction, by contrast, exaggerates them to build characters; the linguist Kinsui Satoshi calls such stylised voices [役割語]{やくわりご} (yakuwarigo, “role language”). So anime and manga are unreliable models. Neutral choices such as だよ, だね and よね work for everyone.",
           "**じゃん.** In casual speech, especially among younger speakers, じゃん is a short form related to じゃない(か), used as a tag for confirmation or mild insistence: いいじゃん (That’s good, isn’t it?). It is widely understood, very casual, and best used only after you have heard your friends use it.",
-          "**Dialects.** Casual speech is where regional dialects show most. Kansai speakers say や for だ and へん for ない (行かへん), for example. The patterns in this entry are standard (Tokyo-based) Japanese, which everyone understands."
+          "**Dialects.** Casual speech is where regional dialects show most. Kansai speakers say や for だ and へん for ない ([行]{い}かへん), for example. The patterns in this entry are standard (Tokyo-based) Japanese, which everyone understands."
         ]
       },
       related:[
@@ -2410,7 +2410,7 @@ ICA.addUnit({
       summary:"Describing a noun with a whole clause placed in front of it: plain forms, だ → な/の, が or の for the doer, and how to read long noun phrases.",
       levels:{
         starter:[
-          "In English, a long description follows the noun: “the book **that I bought yesterday**”. In Japanese it comes **before** the noun, like an adjective: [昨日]{きのう}[買]{か}った本.",
+          "In English, a long description follows the noun: “the book **that I bought yesterday**”. In Japanese it comes **before** the noun, like an adjective: [昨日]{きのう}[買]{か}った[本]{ほん}.",
           "To build one, take a sentence ([昨日]{きのう}本を[買]{か}った), remove the noun you want to describe together with its particle, and put that noun at the end. The verb stays in the plain form.",
           {
             ex:"[毎朝]{まいあさ}[飲]{の}むコーヒー: the coffee I drink every morning\n[駅]{えき}で[待]{ま}っている[人]{ひと}: the person waiting at the station\n[母]{はは}が[作]{つく}ったケーキ: the cake my mother made",
@@ -2443,7 +2443,7 @@ ICA.addUnit({
           {h:"Common slips"},
           {
             list:[
-              "Putting the noun first: ✗ 本[昨日]{きのう}[買]{か}った → [昨日]{きのう}[買]{か}った本.",
+              "Putting the noun first: ✗ [本]{ほん}[昨日]{きのう}[買]{か}った → [昨日]{きのう}[買]{か}った本.",
               "Polite forms inside: ✗ [昨日]{きのう}[買]{か}いました本.",
               "だ before a noun: ✗ [静]{しず}かだ[部屋]{へや} → [静]{しず}かな[部屋]{へや}; ✗ [医者]{いしゃ}な[兄]{あに} → [医者]{いしゃ}の[兄]{あに}.",
               "は for the doer inside: ✗ [私]{わたし}は[作]{つく}ったケーキはおいしい → [私]{わたし}が[作]{つく}ったケーキはおいしい."
@@ -2451,9 +2451,9 @@ ICA.addUnit({
           }
         ],
         pro:[
-          "**Gap and no gap.** In most clauses the head noun has a role inside the clause: in 母が[作]{つく}ったケーキ, the cake is what was made. Japanese also allows clauses where the noun has no such role and the clause gives its content: [魚]{さかな}を[焼]{や}くにおい (the smell of fish grilling), [電車]{でんしゃ}が[止]{と}まった[理由]{りゆう} (the reason the train stopped). English often needs “of” or “why” here; Japanese simply puts the clause in front.",
+          "**Gap and no gap.** In most clauses the head noun has a role inside the clause: in [母]{はは}が[作]{つく}ったケーキ, the cake is what was made. Japanese also allows clauses where the noun has no such role and the clause gives its content: [魚]{さかな}を[焼]{や}くにおい (the smell of fish grilling), [電車]{でんしゃ}が[止]{と}まった[理由]{りゆう} (the reason the train stopped). English often needs “of” or “why” here; Japanese simply puts the clause in front.",
           "**～という + noun.** Nouns of speech and thought, such as [話]{はなし} (story), ニュース and [意見]{いけん} (opinion), usually take という between the clause and the noun: [明日]{あした}[雨]{あめ}が[降]{ふ}るというニュース (the news that it will rain tomorrow).",
-          "**Relative tense.** Tense inside a clause is often relative to the main event rather than to now. Before 前 (before) the verb is always non-past, and before [後]{あと} (after) it is always past: [寝]{ね}る前に (before going to bed), [食]{た}べた[後]{あと}で (after eating), even when talking about the past. Before [時]{とき} (when), the choice depends on whether the clause’s action is complete at the time of the main event: [日本]{にほん}へ行く[時]{とき} means on the way or before going, while [日本]{にほん}へ行った[時]{とき} means once there or after going.",
+          "**Relative tense.** Tense inside a clause is often relative to the main event rather than to now. Before [前]{まえ} (before) the verb is always non-past, and before [後]{あと} (after) it is always past: [寝]{ね}る前に (before going to bed), [食]{た}べた後で (after eating), even when talking about the past. Before [時]{とき} (when), the choice depends on whether the clause’s action is complete at the time of the main event: [日本]{にほん}へ[行]{い}く時 means on the way or before going, while 日本へ行った時 means once there or after going.",
           "**が and の.** の for the doer (linguists call this the が/の alternation, ガ/ノ[交替]{こうたい}, “ga/no conversion”) is most natural in short clauses where the doer comes right before the verb or adjective. When an object with を comes between the doer and the verb, の sounds wrong to most speakers (✗ あおいさんの本を[買]{か}った[店]{みせ}), so use が: あおいさんが本を[買]{か}った[店]{みせ}. In other long clauses, too, が is clearer.",
           "**No limit on length, but…** Clauses can nest and grow long, especially in writing. Good writers keep them manageable, and readers handle them by finding each head noun and working outwards."
         ]
@@ -2500,12 +2500,12 @@ ICA.addUnit({
               ["casual","～んだ","～の？"]
             ]
           },
-          "Plain form + ん: [行]{い}くんです, [痛]{いた}いんです, 行かなかったんです. Non-past だ becomes な: [学生]{がくせい}なんです, [暇]{ひま}なんです; other forms stay: [学生]{がくせい}だったんです. No ます before ん.",
+          "Plain form + ん: [行]{い}くんです, [痛]{いた}いんです, 行かなかったんです. Non-past だ becomes な: [学生]{がくせい}なんです, [暇]{ひま}なんです; other forms stay: 学生だったんです. No ます before ん.",
           {h:"Uses"},
           {
             list:[
               "**Explaining** a situation or giving a reason: [頭]{あたま}が[痛]{いた}いんです.",
-              "**Asking for an explanation** of something you noticed: [旅行]{りょこう}に行くんですか (seeing a suitcase). Why-questions usually take it: どうして～んですか.",
+              "**Asking for an explanation** of something you noticed: [旅行]{りょこう}に[行]{い}くんですか (seeing a suitcase). Why-questions usually take it: どうして～んですか.",
               "**Background before a request**, trailing off: [駅]{えき}に行きたいんですが…, この[漢字]{かんじ}の[読]{よ}み[方]{かた}がわからないんですが….",
               "**Reacting to new information:** そうなんですか (Oh, is that so?), casual そうなんだ."
             ]
@@ -2514,14 +2514,14 @@ ICA.addUnit({
           {h:"Overuse"},
           "Without a situation to connect to, ～んです sounds odd, and on every sentence it sounds like constant excuses. Why-questions with ～んですか can feel pressing in delicate moments; [何]{なに}かあったんですか is softer.",
           {h:"Comparing questions"},
-          "[旅]{りょ}行に行きますか is a neutral question you could ask anyone. [旅]{りょ}行に行くんですか shows you have noticed something (a suitcase, a guidebook) and want the story. Why-questions with ～んですか are usually answered with ～んです, because the answer is the explanation that was asked for: どうして[遅]{おく}れたんですか。 ―バスが[来]{こ}なかったんです。 Other ～んですか questions are often answered with a plain polite sentence: どこで[買]{か}ったんですか。 ―[駅]{えき}の[前]{まえ}の[店]{みせ}で[買]{か}いました。",
+          "[旅]{りょ}[行]{こう}に[行]{い}きますか is a neutral question you could ask anyone. [旅]{りょ}[行]{こう}に[行]{い}くんですか shows you have noticed something (a suitcase, a guidebook) and want the story. Why-questions with ～んですか are usually answered with ～んです, because the answer is the explanation that was asked for: どうして[遅]{おく}れたんですか。 ―バスが[来]{こ}なかったんです。 Other ～んですか questions are often answered with a plain polite sentence: どこで[買]{か}ったんですか。 ―[駅]{えき}の[前]{まえ}の[店]{みせ}で[買]{か}いました。",
           "In casual speech the same contrast is between 行く？ (neutral) and 行くの？ (curious about the background)."
         ],
         pro:[
-          "**What の does.** Grammatically, の turns the clause into a noun (“the fact that…”), and です/だ says “it is”. So 電車が[止]{と}まったんです is roughly “It is (a case of) the train stopping”. This is why it presents information as an explanation of something already in view, and why nouns and な-adjectives take な, exactly as they do before the noun の elsewhere ([静]{しず}かなの, [学生]{がくせい}なの).",
+          "**What の does.** Grammatically, の turns the clause into a noun (“the fact that…”), and です/だ says “it is”. So [電車]{でんしゃ}が[止]{と}まったんです is roughly “It is (a case of) the train stopping”. This is why it presents information as an explanation of something already in view, and why nouns and な-adjectives take な, exactly as they do before the noun の elsewhere ([静]{しず}かなの, [学生]{がくせい}なの).",
           "**のだ in writing.** In essays and reports, ～のである and ～のだ mark a conclusion or the writer’s main point, often after つまり (in other words): つまり、[問題]{もんだい}は[時間]{じかん}なのである. Overusing it makes writing sound insistent, just as in speech.",
           "**Casual の statements.** A statement ending in の with a falling voice ([頭]{あたま}が[痛]{いた}いの) explains softly. It is used by many speakers, especially to close friends and children, and in some contexts it is associated with softer or feminine speech. ～んだ is the neutral casual statement.",
-          "**Related patterns.** ～んじゃない？ offers a guess (“isn’t it that…?”): 休みなんじゃない？ ～んだって reports what you heard: [明日]{あした}休みなんだって (I hear tomorrow is a day off). ～んですけど is a slightly more casual ～んですが. ～わけです, an N3 pattern, gives a logical explanation (“that’s why”).",
+          "**Related patterns.** ～んじゃない？ offers a guess (“isn’t it that…?”): [休]{やす}みなんじゃない？ ～んだって reports what you heard: [明日]{あした}休みなんだって (I hear tomorrow is a day off). ～んですけど is a slightly more casual ～んですが. ～わけです, an N3 pattern, gives a logical explanation (“that’s why”).",
           "**Realisation.** ～んだ (or ～のか) can express a sudden understanding, often to yourself: そうか、[今日]{きょう}は[日曜日]{にちようび}なんだ。 (Oh, of course, today is Sunday.)",
           "**Learning tip.** Because ～んです depends on context, textbooks can only show typical situations. Listen for it in real conversations and notice what it connects to; that is the fastest way to develop a feel for when it fits."
         ]
@@ -2563,18 +2563,18 @@ ICA.addUnit({
           "Inside an indirect quote, the speaker’s politeness disappears: whether Cheska said [行]{い}きません or 行かない, you report チェスカさんは行かないと[言]{い}いました. The politeness of your own sentence is decided by its end, [言]{い}いました or [言]{い}った, according to who you are talking to.",
           "～という + noun is very useful for things the listener may not know: 「どら[焼]{や}き」というお[菓子]{かし} (a sweet called dorayaki), さとうさんという[人]{ひと} (a person called Satō). It politely signals “this may be new to you”.",
           {h:"Thinking"},
-          "～と[思]{おも}います gives your opinion and makes statements modest. To say you don’t think something, make the inner sentence negative: 雨は[降]{ふ}らないと[思]{おも}います. ～とは[思]{おも}いません sounds like firm disagreement: そうは[思]{おも}いません. Ask with どう[思]{おも}いますか; agree with [私]{わたし}もそう[思]{おも}います.",
+          "～と[思]{おも}います gives your opinion and makes statements modest. To say you don’t think something, make the inner sentence negative: [雨]{あめ}は[降]{ふ}らないと[思]{おも}います. ～とは[思]{おも}いません sounds like firm disagreement: そうは[思]{おも}いません. Ask with どう[思]{おも}いますか; agree with [私]{わたし}もそう[思]{おも}います.",
           "～と[思]{おも}います always reports the speaker’s view. For someone else, use ～と[言]{い}っていました or ～と[思]{おも}っています: イエンさんは日本で[働]{はたら}きたいと[思]{おも}っています (Yến is thinking of working in Japan; this assumes she has told you).",
           {h:"Casual って"},
           "って replaces と, and the verb can drop: あおい、[来]{こ}ないって (Aoi says she isn’t coming). 何て[言]{い}った？ (What did you say?) って[思]{おも}う is casual と[思]{おも}う.",
           {h:"Common slips"},
-          "✗ [学生]{がくせい}と[思]{おも}います → [学生]{がくせい}だと. ✗ [便利]{べんり}なと → [便利]{べんり}だと. ✗ [高]{たか}いだと → 高いと. ✗ 行きますと[思]{おも}います → 行くと."
+          "✗ [学生]{がくせい}と[思]{おも}います → 学生だと. ✗ [便利]{べんり}なと → [便利]{べんり}だと. ✗ [高]{たか}いだと → 高いと. ✗ 行きますと[思]{おも}います → 行くと."
         ],
         pro:[
-          "**Perspective in indirect quotes.** Indirect quotes are told from the reporter’s point of view, so words for “come” and “go”, “I” and “you”, and time words may change, as in English. If Toby phones you while you wait at the station and says 「すぐ行きます」 (I’ll be right there), you might tell the friend waiting with you: トビーさんはすぐ[来]{く}ると[言]{い}っていました.",
-          "**Questions and requests.** Reported questions use か before と or without と: [何時]{なんじ}に来るかと[聞]{き}きました (asked what time I would come), 来るかどうかわかりません (I don’t know whether they’ll come). Reported requests and instructions often use ～ように[言]{い}う: [先生]{せんせい}は[宿題]{しゅくだい}を[出]{だ}すように[言]{い}いました (The teacher told us to hand in the homework).",
+          "**Perspective in indirect quotes.** Indirect quotes are told from the reporter’s point of view, so words for “come” and “go”, “I” and “you”, and time words may change, as in English. If Toby phones you while you wait at the station and says 「すぐ[行]{い}きます」 (I’ll be right there), you might tell the friend waiting with you: トビーさんはすぐ[来]{く}ると[言]{い}っていました.",
+          "**Questions and requests.** Reported questions use か before と or without と: [何時]{なんじ}に[来]{く}るかと[聞]{き}きました (asked what time I would come), [来]{く}るかどうかわかりません (I don’t know whether they’ll come). Reported requests and instructions often use ～ように[言]{い}う: [先生]{せんせい}は[宿題]{しゅくだい}を[出]{だ}すように[言]{い}いました (The teacher told us to hand in the homework).",
           "**って as a topic.** Casual って also replaces とは or は when you ask what something is: タメ[口]{ぐち}って何ですか。 (What is “tameguchi”?) Here it means “the thing called…”.",
-          "**Hearsay.** Besides ～って and ～と[言]{い}っていました, Japanese reports what it heard with ～そうです (plain form + そうです: 雨が[降]{ふ}るそうです, I hear it will rain), which Unit 7 teaches next to the look-alike ～そうです of appearance ([[sou-hearsay]]).",
+          "**Hearsay.** Besides ～って and ～と[言]{い}っていました, Japanese reports what it heard with ～そうです (plain form + そうです: [雨]{あめ}が[降]{ふ}るそうです, I hear it will rain), which Unit 7 teaches next to the look-alike ～そうです of appearance ([[sou-hearsay]]).",
           "**Thinking about plans.** ～ようと[思]{おも}います (I’m thinking of doing…) combines と[思]{おも}う with the volitional form and is a key N4 pattern for plans: [来年]{らいねん}、[日本]{にほん}へ行こうと[思]{おも}います. Unit 6 teaches it ({{volitional-form}}).",
           "**Quote marks.** Japanese uses 「 」 for quotations and 『 』 for a quote inside a quote or for titles of books and films. Indirect quotes need no quotation marks at all, which is one way to tell them apart in writing."
         ]
@@ -2614,11 +2614,11 @@ ICA.addUnit({
           {h:"Forms"},
           {table:[["Pattern","Built from","Example"],["～たことがある","た-form + ことがある","[食]{た}べたことがあります"],["～たり～たりする","た-form + り, twice, + する","[掃除]{そうじ}したり[洗濯]{せんたく}したりしました"],["～とき","plain form; な-adj + な; noun + の","[行]{い}くとき, [寒]{さむ}いとき, [暇]{ひま}なとき, [学生]{がくせい}のとき"]]},
           {h:"Experience"},
-          "Use ～たことがある for something that has happened at least once in your life up to now, usually something a little out of the ordinary. Don’t use it with a word that fixes one time, such as [昨日]{きのう} or [去年]{きょねん}: use the simple past there. “Have you … yet?” is a different question: もう～ましたか. And the non-past plain form (dictionary form or ない-form) + ことがある means “there are times when”: [朝]{あさ}ご[飯]{はん}を[食]{た}べないことがあります (Sometimes I skip breakfast).",
+          "Use ～たことがある for something that has happened at least once in your life up to now, usually something a little out of the ordinary. Don’t use it with a word that fixes one time, such as [昨日]{きのう} or [去年]{きょねん}: use the simple past there. “Have you … yet?” is a different question: もう～ましたか. And the non-past plain form (dictionary form or ない-form) + ことがある means “there are times when”: [朝]{あさ}ご[飯]{はん}を食べないことがあります (Sometimes I skip breakfast).",
           {h:"Examples, not a sequence"},
-          "～たり～たり gives a sample of activities; the て-form lists actions in order. With one verb, ～たりする softens to “things like…”. Opposite pairs describe switching: [行]{い}ったり[来]{き}たり (back and forth). In careful Japanese every item takes たり.",
+          "～たり～たり gives a sample of activities; the て-form lists actions in order. With one verb, ～たりする softens to “things like…”. Opposite pairs describe switching: 行ったり[来]{き}たり (back and forth). In careful Japanese every item takes たり.",
           {h:"Which form before とき?"},
-          "With action verbs, choose by order, not by the tense of the sentence. [日本]{にほん}へ行くとき、[空港]{くうこう}で[本]{ほん}を[買]{か}いました: the book was bought before arriving. 日本へ行ったとき、[着物]{きもの}を[買]{か}いました: the kimono was bought in Japan. States (adjectives, nouns, ある, いる, ～ている) simply describe the moment: [料理]{りょうり}をしているとき (while I was cooking). Change-of-state verbs such as [疲]{つか}れる usually take た: [疲]{つか}れたとき.",
+          "With action verbs, choose by order, not by the tense of the sentence. [日本]{にほん}へ行くとき、[空港]{くうこう}で本を[買]{か}いました: the book was bought before arriving. 日本へ行ったとき、[着物]{きもの}を[買]{か}いました: the kimono was bought in Japan. States (adjectives, nouns, ある, いる, ～ている) simply describe the moment: [料理]{りょうり}をしているとき (while I was cooking). Change-of-state verbs such as [疲]{つか}れる usually take た: [疲]{つか}れたとき.",
           "The main verb at the end gives the tense of the whole sentence. It can be past, non-past, a request or an invitation: [分]{わ}からないときは、[聞]{き}いてください."
         ],
         pro:[
@@ -2650,7 +2650,7 @@ ICA.addUnit({
           "Three small patterns for ordering events and giving reasons.",
           {ex:"[寝]{ね}る[前]{まえ}に、[歯]{は}を[磨]{みが}きます。\nI brush my teeth before I go to bed.\n\n[晩]{ばん}ご[飯]{はん}を[食]{た}べた[後]{あと}で、テレビを[見]{み}ました。\nAfter dinner, I watched TV.\n\n[雨]{あめ}なので、[今日]{きょう}は[出]{で}かけません。\nIt’s raining, so I’m not going out today.", label:"Examples"},
           {list:[
-            "**前に** (before): dictionary form, or noun + の. [食]{た}べる前に, [授業]{じゅぎょう}の前に.",
+            "**前に** (before): dictionary form, or noun + の. 食べる前に, [授業]{じゅぎょう}の前に.",
             "**後で** (after): た-form, or noun + の. 食べた後で, [仕事]{しごと}の後で. Alone, 後で means “later”.",
             "**ので** (because): like から, but softer. Nouns and な-adjectives take な: 雨なので, [暇]{ひま}なので."
           ]},
@@ -2662,7 +2662,7 @@ ICA.addUnit({
           {table:[["Pattern","Verb","Noun / time"],["～[前]{まえ}に","dictionary form: [来]{く}る前に","noun + の前に; [三年前]{さんねんまえ} (ago)"],["～[後]{あと}で","た-form: [来]{き}た後で","noun + の後で; [一時間後]{いちじかんご} (later)"],["～ので","plain form: [行]{い}くので, [高]{たか}いので","な + ので: [雨]{あめ}なので, [静]{しず}かなので"]]},
           "Note the readings of 後: あと in 後で and の後で, ご after a length of time ([三日後]{みっかご}) and in [午後]{ごご}.",
           {h:"～た後で or ～てから?"},
-          "They often overlap: [映画]{えいが}を[見]{み}た後で / 見てから、[食事]{しょくじ}をしました. ～てから stresses the order of steps (“not until X”), so it suits instructions: [手]{て}を[洗]{あら}ってから、[食]{た}べてください. Only ～てから can mean “since”: [日本]{にほん}へ来てから、[二年]{にねん}になります. Only 後で stands alone as “later”.",
+          "They often overlap: [映画]{えいが}を[見]{み}た後で / 見てから、[食事]{しょくじ}をしました. ～てから stresses the order of steps (“not until X”), so it suits instructions: [手]{て}を[洗]{あら}ってから、[食]{た}べてください. Only ～てから can mean “since”: [日本]{にほん}へ[来]{き}てから、[二年]{にねん}になります. Only 後で stands alone as “later”.",
           {h:"ので or から?"},
           "Both give reasons. ので sounds softer and more objective, so it is preferred in polite requests, asking permission and apologies. から sounds more direct and personal, and it is more common in casual speech and with strong feelings. Two firm differences: after nouns and な-adjectives, から takes だ (雨だから) while ので takes な (雨なので); and only から can come before です to answer “why?”: [電車]{でんしゃ}が[止]{と}まったからです (✗ ～のでです)."
         ],
@@ -2755,7 +2755,7 @@ ICA.addUnit({
     {
       id:"senpai-kouhai",
       term:"[先輩]{せんぱい} and [後輩]{こうはい} (senpai, kōhai)",
-      def:"Seniors and juniors in a school, club or workplace, by who joined first. A 後[輩]{はい} normally speaks politely to a 先[輩]{ぱい}, who often answers in plain speech.",
+      def:"Seniors and juniors in a school, club or workplace, by who joined first. A [後]{こう}[輩]{はい} normally speaks politely to a [先]{せん}[輩]{ぱい}, who often answers in plain speech.",
       codex:"plain-and-polite-speech"
     },
     {
@@ -2841,7 +2841,7 @@ ICA.addUnit({
         {t:"きれいくない", ok:true, why:"Right, this one is wrong. きれい is a な-adjective, so its negative is きれいじゃない."},
         {t:"[高]{たか}くない", why:"Correct: the plain negative of the い-adjective 高い."},
         {t:"[静]{しず}かじゃない", why:"Correct: the plain negative of the な-adjective [静]{しず}か."},
-        {t:"[来]{こ}ない", why:"Correct: the plain negative of 来る, read こない."}
+        {t:"[来]{こ}ない", why:"Correct: the plain negative of [来]{く}る, read こない."}
       ]
     },
     {
@@ -2851,9 +2851,9 @@ ICA.addUnit({
       q:"Rodrigo writes his diary in the plain style. How does he write “I didn’t go to the gym today”?",
       options:[
         {t:"[今日]{きょう}はジムに[行]{い}かなかった。", ok:true, why:"The plain past negative of 行く, which suits a plain-style diary."},
-        {t:"今日はジムに行かなかったです。", why:"Grammatical, but polite. A plain-style diary leaves out です."},
-        {t:"今日はジムに行きなかった。", why:"The ない-form of 行く is 行かない, so the past is 行かなかった."},
-        {t:"今日はジムに行かないだった。", why:"ない changes like an い-adjective: なかった, never ないだった."}
+        {t:"[今日]{きょう}はジムに[行]{い}かなかったです。", why:"Grammatical, but polite. A plain-style diary leaves out です."},
+        {t:"[今日]{きょう}はジムに[行]{い}きなかった。", why:"The ない-form of 行く is 行かない, so the past is 行かなかった."},
+        {t:"[今日]{きょう}はジムに[行]{い}かないだった。", why:"ない changes like an い-adjective: なかった, never ないだった."}
       ]
     },
     {
@@ -3213,10 +3213,10 @@ ICA.addUnit({
       level:1,
       q:"How do you say “the person who came yesterday”?",
       options:[
-        {t:"[昨日]{きのう}[来]{き}た[人]{ひと}", ok:true, why:"Plain past 来た, with the description before the noun."},
-        {t:"人[昨日]{きのう}[来]{き}た", why:"In Japanese the description comes before the noun."},
-        {t:"[昨日]{きのう}来ました人", why:"Use the plain form inside a describing clause."},
-        {t:"[昨日]{きのう}来る人", why:"来る is non-past (“the person who comes”). Yesterday needs the past 来た."}
+        {t:"[昨日]{きのう}[来]{き}た[人]{ひと}", ok:true, why:"Plain past [来]{き}た, with the description before the noun."},
+        {t:"[人]{ひと}[昨日]{きのう}[来]{き}た", why:"In Japanese the description comes before the noun."},
+        {t:"[昨日]{きのう}[来]{き}ました[人]{ひと}", why:"Use the plain form inside a describing clause."},
+        {t:"[昨日]{きのう}[来]{く}る[人]{ひと}", why:"[来]{く}る is non-past (“the person who comes”). Yesterday needs the past [来]{き}た."}
       ]
     },
     {
@@ -3290,9 +3290,9 @@ ICA.addUnit({
       q:"How do you say “a shop that used to be famous”?",
       options:[
         {t:"[昔]{むかし}[有名]{ゆうめい}だった[店]{みせ}", ok:true, why:"The plain past だった stays unchanged before a noun."},
-        {t:"[昔]{むかし}[有]{ゆう}名でした[店]{みせ}", why:"でした is polite. Use the plain form inside a clause."},
-        {t:"[昔]{むかし}[有]{ゆう}名の[店]{みせ}", why:"[有]{ゆう}名 is a な-adjective, and the past needs だった."},
-        {t:"[昔]{むかし}[有]{ゆう}名だ[店]{みせ}", why:"だ can’t stand before a noun, and the meaning needs the past."}
+        {t:"[昔]{むかし}[有]{ゆう}[名]{めい}でした[店]{みせ}", why:"でした is polite. Use the plain form inside a clause."},
+        {t:"[昔]{むかし}[有]{ゆう}[名]{めい}の[店]{みせ}", why:"[有]{ゆう}名 is a な-adjective, and the past needs だった."},
+        {t:"[昔]{むかし}[有]{ゆう}[名]{めい}だ[店]{みせ}", why:"だ can’t stand before a noun, and the meaning needs the past."}
       ]
     },
     {
@@ -3306,10 +3306,10 @@ ICA.addUnit({
           ok:true,
           why:"“A thing you use on rainy days”: a non-past clause for a general description, then もの."
         },
-        {t:"もの雨の日に[使]{つか}う", why:"The description must come before the noun."},
-        {t:"雨の日に[使]{つか}いますもの", why:"Inside the clause, use the plain form [使]{つか}う."},
+        {t:"もの[雨]{あめ}の[日]{ひ}に[使]{つか}う", why:"The description must come before the noun."},
+        {t:"[雨]{あめ}の[日]{ひ}に[使]{つか}いますもの", why:"Inside the clause, use the plain form [使]{つか}う."},
         {
-          t:"雨の日に[使]{つか}ったもの",
+          t:"[雨]{あめ}の[日]{ひ}に[使]{つか}ったもの",
           why:"Grammatical, but past: “a thing I used on a rainy day”, one particular occasion. A general description needs the non-past."
         }
       ]
@@ -3405,7 +3405,7 @@ ICA.addUnit({
       options:[
         {t:"どう[思]{おも}いますか。", ok:true, why:"“What do you think?”: と[思]{おも}う in a question."},
         {t:"[何]{なん}と[言]{い}いましたか。", why:"“What did they say?”: about words, not opinions."},
-        {t:"[日本語]{にほんご}で何と[言]{い}いますか。", why:"“What is it called in Japanese?”: asking for a word."},
+        {t:"[日本語]{にほんご}で[何]{なん}と[言]{い}いますか。", why:"“What is it called in Japanese?”: asking for a word."},
         {t:"[私]{わたし}もそう[思]{おも}います。", why:"“I think so too”: agreeing, not asking."}
       ]
     },
@@ -3449,7 +3449,7 @@ ICA.addUnit({
         {
           t:"The ～んです endings: there is nothing to explain, so plain です・ます would fit better",
           ok:true,
-          why:"In a self-introduction, ～んです sounds as if Rodrigo is answering a question nobody asked. ロドリゴです。メキシコから来ました。 is natural."
+          why:"In a self-introduction, ～んです sounds as if Rodrigo is answering a question nobody asked. ロドリゴです。メキシコから[来]{き}ました。 is natural."
         },
         {t:"よろしくお[願]{ねが}いします is too casual", why:"It is the standard polite closing of a self-introduction."},
         {t:"はじめまして is rude", why:"はじめまして is the normal greeting when you meet someone for the first time."},
@@ -3506,9 +3506,9 @@ ICA.addUnit({
       {t:"[昼]{ひる}ご[飯]{はん}を[食]{た}べたりしますか。", why:"This asks whether she does things like eating lunch, which doesn’t ask about today either."}
     ]},
     {id:"e3u5-q51", lesson:"e3u5-l6", level:3, q:"Rodrigo says: 「[日本]{にほん}へ[来]{く}るとき、[飛行機]{ひこうき}の[中]{なか}で[映画]{えいが}を[見]{み}ました。」 When did he watch the film?", options:[
-      {t:"On the plane, before he arrived in Japan", ok:true, why:"来る is in the dictionary form: coming to Japan wasn’t complete yet when he watched the film."},
-      {t:"After he arrived in Japan", why:"That would be 日本へ来たとき. The dictionary form 来る means he hadn’t arrived yet."},
-      {t:"He hasn’t been to Japan yet", why:"見ました is past, so the trip happened. 来る only shows that he hadn’t arrived when he watched it."},
+      {t:"On the plane, before he arrived in Japan", ok:true, why:"[来]{く}る is in the dictionary form: coming to Japan wasn’t complete yet when he watched the film."},
+      {t:"After he arrived in Japan", why:"That would be 日本へ[来]{き}たとき. The dictionary form [来]{く}る means he hadn’t arrived yet."},
+      {t:"He hasn’t been to Japan yet", why:"見ました is past, so the trip happened. [来]{く}る only shows that he hadn’t arrived when he watched it."},
       {t:"Every time he flies to Japan", why:"見ました is past and describes one trip. A habit would end in 見ます."}
     ]},
     {id:"e3u5-q52", lesson:"e3u5-l6", level:3, q:"Toby says: 「[駅]{えき}に＿＿とき、かいとくんから[電話]{でんわ}がありました。」 Kaito called just after Toby had arrived at the station. What fills the gap?", options:[
@@ -3518,9 +3518,9 @@ ICA.addUnit({
       {t:"[着]{つ}きました", why:"ます forms don’t go before とき. Use the plain た-form: [着]{つ}いた."}
     ]},
     {id:"e3u5-q53", lesson:"e3u5-l6", level:3, q:"Cheska wrote: 「[先週]{せんしゅう}、[温泉]{おんせん}に[行]{い}ったことがあります。」 What would her teacher suggest?", options:[
-      {t:"[先週]{せんしゅう}、[温泉]{おんせん}に[行]{い}きました。", ok:true, why:"[先週]{せんしゅう} pins the trip to one known time, so the simple past fits. ～たことがある is for experience without a specific time."},
-      {t:"[先週]{せんしゅう}、[温泉]{おんせん}に[行]{い}くことがあります。", why:"The dictionary form + ことがある means “sometimes”, which doesn’t fit last week."},
-      {t:"[先週]{せんしゅう}、[温泉]{おんせん}に[行]{い}ったりします。", why:"します is non-past and たり lists examples; neither fits one trip last week."},
+      {t:"[先週]{せんしゅう}、[温泉]{おんせん}に行きました。", ok:true, why:"[先週]{せんしゅう} pins the trip to one known time, so the simple past fits. ～たことがある is for experience without a specific time."},
+      {t:"[先週]{せんしゅう}、[温泉]{おんせん}に行くことがあります。", why:"The dictionary form + ことがある means “sometimes”, which doesn’t fit last week."},
+      {t:"[先週]{せんしゅう}、[温泉]{おんせん}に行ったりします。", why:"します is non-past and たり lists examples; neither fits one trip last week."},
       {t:"Nothing: the sentence is correct.", why:"With a time word like [先週]{せんしゅう}, ～たことがある sounds unnatural. Use the simple past."}
     ]},
     {id:"e3u5-q54", lesson:"e3u5-l6", level:2, q:"What does 「[雨]{あめ}が[降]{ふ}ったりやんだりしています。」 mean?", options:[
@@ -3537,7 +3537,7 @@ ICA.addUnit({
     ]},
     {id:"e3u5-q56", lesson:"e3u5-l7", level:1, q:"What does 「[三年前]{さんねんまえ}に[日本]{にほん}へ[来]{き}ました。」 mean?", options:[
       {t:"I came to Japan three years ago.", ok:true, why:"A length of time + 前 means “ago”."},
-      {t:"I will come to Japan in three years.", why:"来ました is past, and 前 points back in time."},
+      {t:"I will come to Japan in three years.", why:"[来]{き}ました is past, and 前 points back in time."},
       {t:"I came to Japan three years before (something else).", why:"With no other event mentioned, 三年前に means “three years ago”, counting back from now."},
       {t:"I have been coming to Japan for three years.", why:"That would need a different pattern. 三年前に marks one point: three years ago."}
     ]},

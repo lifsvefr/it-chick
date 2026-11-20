@@ -147,7 +147,8 @@ ICA.addUnit({
       {t:"Draw a histogram with `hist()`", ok:true, why:"Base R charts work; they appear under the output."},
       {t:"Load ggplot2 with `library(ggplot2)`", why:"ggplot2 is a package that isn’t in the lab, which has base R only. Use R on a computer or Posit Cloud for it (Unit 9)."},
       {t:"Use dplyr’s `filter()`", why:"dplyr isn’t available in the lab either. Its base-R cousin `subset()` is, and Lesson 4 teaches it."}
-    ]}
+    ]},
+    {id:"t3u7-l1-x7", type:"explain", q:"A colleague cleans and charts the same kind of survey data every month by clicking through a spreadsheet. Explain how writing the steps as an R script would help.", model:"In a spreadsheet the steps you take, such as which column you sorted or which rows you deleted, mostly leave no record. In an R script the steps are the record: every line is written down, so you, a colleague or a reviewer can read them, spot mistakes and run the whole analysis again. When next month’s data arrive, you just rerun the script instead of repeating the clicks from memory. The script also reads the raw data in without changing the original file.", points:["Says clicked steps in a spreadsheet mostly leave no record", "Says a script records every step in writing", "Explains that the script can be rerun on new data", "Mentions that others can check it, or that the raw data stay untouched"]}
    ],
    apply:{intro:"Run your first R code, then (optionally) set R up on a computer or in Posit Cloud. Everything in this unit can be done in the Data Lab on a phone.", tasks:[
     {t:"Run R in the Data Lab", how:[
@@ -330,7 +331,8 @@ ICA.addUnit({
       {t:"Avg", flag:true, why:"The object was named `avg`. Capitals count, so `Avg` gives `object 'Avg' not found`."},
       "\n",
       {t:"round(avg, digits = 1)", flag:false, why:"A correct call with a named argument. (It only fails here because the `Mean` line didn’t create `avg`; fix that line and this one works.)"}
-    ]}
+    ]},
+    {id:"t3u7-l2-x8", type:"explain", q:"In R, a learner runs `price <- 12.5`, `qty <- 4` and `total <- price * qty`, then `qty <- 6`, and is surprised that `total` still prints 50. Explain why, and how this differs from a spreadsheet.", model:"The arrow stores a value, not a formula. When `total <- price * qty` ran, R worked out 12.5 × 4 = 50 and stored the number 50 under the name `total`. Changing `qty` later doesn’t touch `total`, because `total` doesn’t remember how it was made. In a spreadsheet, a formula cell recalculates whenever its inputs change. In R you have to run `total <- price * qty` again, which gives 75.", points:["Says `<-` stores the result (a value), not the calculation", "Explains that changing `qty` doesn’t update `total`", "Contrasts this with spreadsheet formulas that recalculate", "Says to rerun the assignment to update it (giving 75)"]}
    ],
    apply:{intro:"Work in the Data Lab (open any R challenge, type below or instead of its code, and press ▶ Run; Check will say “not quite”, which is fine for free practice), or in RStudio or Posit Cloud.", tasks:[
     {t:"A week in numbers", how:[
@@ -473,7 +475,8 @@ ICA.addUnit({
       {t:"Run `head(d)` to see a few complete rows", why:"Real rows show what values actually look like."},
       {t:"Run `summary(d)` to spot odd minimums, maximums and NAs", why:"Summaries reveal impossible values (a negative age) and missing data before you analyse."},
       {t:"Calculate what you need, such as `mean(d$minutes)`", why:"Only once you trust the data do you start calculating."}
-    ]}
+    ]},
+    {id:"t3u7-l3-x7", type:"explain", q:"Explain why each column of an R data frame has a single type, and what happens if one cell in a column of numbers contains a word such as `n/a`.", model:"A data frame is a set of equal-length vectors, one per column, and a vector can hold only one type. So a price column is numeric and an item column is text. If one cell in a number column contains a word, R makes the whole column the most flexible type, text, because one vector can’t mix them. Then `mean()` or arithmetic on it fails or gives NA. `str()` shows this at once: the column you expected as `num` appears as `chr`.", points:["Says a data frame is a set of equal-length column vectors", "Says a vector holds only one type", "Explains that one word turns the whole column into text", "Mentions spotting it with `str()` (or that maths on it then fails)"]}
    ],
    apply:{intro:"Use the Data Lab (any R challenge’s editor and ▶ Run), RStudio or Posit Cloud.", tasks:[
     {t:"Build a data frame about something you know", how:[
@@ -617,7 +620,8 @@ ICA.addUnit({
       {t:"There are 3 different shades of blue recorded in the data", why:"R isn’t judging colours; it’s counting two different spellings."},
       {t:"table() has made a mistake", why:"table() is exact. The data really contains both spellings."},
       {t:"She should use sum() instead", why:"sum() would count one value at a time and hide the variants that table() just revealed."}
-    ]}
+    ]},
+    {id:"t3u7-l4-x8", type:"explain", q:"In the walking-club data, walk 13 has no recorded time. Explain why `walks[walks$minutes > 70, ]` shows an extra row full of NAs, and how to avoid it.", model:"`walks$minutes > 70` asks the question of every row and gives TRUE or FALSE, and `[ ]` keeps the TRUE rows. But walk 13’s time is missing, so R can’t say whether it was over 70: the answer for that row is NA, not FALSE. When a row position is NA, the brackets return a row filled with NAs. `subset(walks, minutes > 70)` or `walks[which(walks$minutes > 70), ]` keep only the rows that are definitely TRUE. It’s worth reporting the missing time too.", points:["Says the condition gives one TRUE/FALSE per row", "Explains that the missing time makes the condition NA, not FALSE", "Says an NA row position returns a row of NAs", "Gives a fix: `subset()` or `which()`"]}
    ],
    apply:{intro:"Work on walks.csv (copy the text above), or on a small CSV of your own. In the Data Lab, use `read.csv(text = \"…\")`; on a computer, save the file into your project folder.", tasks:[
     {t:"Read and check a CSV", how:{
@@ -772,7 +776,8 @@ ICA.addUnit({
       {t:"Studying one more hour will raise any student’s score by 5.6 points", why:"A slope from observational data doesn’t prove cause, and it describes an average pattern, not what happens to each person."},
       {t:"5.6% of the variation in score is explained by hours", why:"That’s a misreading. The share of variation explained is R², shown by summary(fit), and it’s a different number."},
       {t:"The correlation between hours and score is 5.6", why:"A correlation is always between −1 and 1. The slope is in score points per hour."}
-    ]}
+    ]},
+    {id:"t3u7-l5-x8", type:"explain", q:"In the walking-club data, Park walks have the lowest mean time (about 30 minutes). Explain why that doesn’t show Park is the quickest route to walk, and what fairer comparison R can make.", model:"Park walks are also the shortest, averaging about 2.3 km against about 3.8 km for Hill and 4.7 km for River, so they take less time partly because there’s less distance. Total minutes mix up length and speed. Dividing minutes by kilometres gives pace, minutes per km, which compares like with like: `walks$pace <- walks$minutes / walks$km`, then `tapply()` by route. By pace, River (12.5) and Park (13.1) are similar and Hill is slowest (17.2). With four or five walks per route, these describe this club only.", points:["Says Park walks are shorter, so total time isn’t a fair comparison", "Proposes pace (minutes per km)", "Shows how to compute it in R, by route", "Notes the small numbers of walks, so results describe this club only"]}
    ],
    apply:{intro:"Use walks.csv (from Lesson 4) in the Data Lab, RStudio or Posit Cloud, or the Data Lab’s `survey.csv`.", tasks:[
     {t:"Summarise and compare", how:[

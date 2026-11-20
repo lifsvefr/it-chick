@@ -163,7 +163,8 @@ ICA.addUnit({
       {t:"Keep Heading 3; levels don’t matter as long as it looks right", why:"Levels matter to the outline, the TOC and screen readers. A skipped level suggests a missing section."},
       {t:"Use Normal text made bold instead", why:"Then it isn’t a heading at all: it disappears from the outline and TOC."},
       {t:"Use Heading 1 for every heading", why:"That flattens the structure: subsections look like main sections in the outline, TOC and to screen-reader users."}
-    ]}
+    ]},
+      {id:"t1u8-l1-x8", type:"explain", q:"A colleague makes every heading in a report big and bold by hand. Explain why giving those lines the Heading 1 or Heading 2 style is better.", hint:"Think of labelling moving boxes “KITCHEN” in the same way every time. What can the app do once it knows what a line is?", model:"Making a line big and bold only changes how it looks; to the app it is still an ordinary paragraph. A heading style says what the line is. Once the app knows that, it can do the work: change the Heading 1 style once and every Heading 1 updates to match, the headings appear in the navigation pane or outline so you can jump around, an automatic table of contents can be built from them, and screen-reader users can move from heading to heading. None of that works for hand-formatted headings.", points:["Says hand formatting changes only the look, not what the line is", "Says changing a style updates every heading at once", "Mentions the navigation pane or automatic table of contents", "Mentions screen readers using headings"]}
    ],
    apply:{intro:"Take a document you already have (or a page of notes) and give it real structure. Any free app works.", tasks:[
      {t:"Give a document a title and heading levels, then open its map", app:{
@@ -328,7 +329,8 @@ ICA.addUnit({
       {t:"Her colleague’s screen is broken", why:"The screen is fine. The document only appeared aligned under one exact font and size."},
       {t:"Phone numbers can’t be lined up neatly in a word processor at all", why:"They can: with a table or a single tab and a tab stop."},
       {t:"She didn’t type enough spaces", why:"More spaces can’t fix it; the widths still differ between fonts."}
-    ]}
+    ]},
+      {id:"t1u8-l2-x8", type:"explain", q:"Explain why pressing Enter several times to push a heading onto the next page causes problems, and what to do instead.", size:"2–3 sentences", hint:"What happens to the text when someone adds a sentence higher up?", model:"Text in a word processor flows: add or remove a line above and everything below moves. Empty paragraphs only push the heading to the top of the next page for the text as it is now; as soon as someone edits above, the heading lands in the middle of a page or a blank page appears, and screen readers announce the empty lines too. Instead, insert a page break (for example Ctrl + Enter), or set the heading style to always start on a new page.", points:["Says text flows when content above changes", "Says the heading ends up in the wrong place after an edit", "Suggests a page break or a heading style that starts a new page", "Mentions that empty paragraphs also confuse screen readers"]}
    ],
    apply:{intro:"Set up a document’s pages properly. Use a real document (a report, a newsletter, a form) or a few pages of practice text.", tasks:[
      {t:"Set the paper size, orientation and margins", app:{
@@ -503,7 +505,8 @@ ICA.addUnit({
       {t:"The photo file is damaged", why:"A damaged file wouldn’t display at all. Movement comes from wrapping and anchoring."},
       {t:"Word can’t show photos on the same page as a lot of text", why:"It can; wrapping and anchoring decide where."},
       {t:"She needs a faster computer", why:"Speed doesn’t affect layout rules. The picture is following its anchor."}
-    ]}
+    ]},
+      {id:"t1u8-l3-x8", type:"explain", q:"In a report, the alt text for a bar chart says only “Image of a chart”. Explain why that isn’t enough, and what good alt text would do instead.", hint:"Who reads alt text, and what do they need to get from the chart?", model:"Alt text is what a screen reader reads out for people who can’t see the image, so it has to do the image’s job. “Image of a chart” tells them nothing, and “image of” is wasted words because the screen reader already announces that it is an image. Good alt text says what the chart means in this document, in a sentence or two: for example, “Water use peaked in July at about twice the January level.” For a detailed chart, the full figures can go in a table or the text nearby.", points:["Says screen readers read alt text aloud for people who can’t see the image", "Says it should give the image’s meaning or message, not just name it", "Says not to start with “Image of”", "Suggests putting the full data in a table or the text"]}
    ],
    apply:{intro:"Add a list, a data table and a picture to a document, and make all three work for everyone.", tasks:[
      {t:"Make a real list and a data table with a header row", app:{
@@ -665,7 +668,8 @@ ICA.addUnit({
       {t:"Turn on Track Changes now, and it will show what changed earlier", why:"Tracking only records edits made after it’s turned on."},
       {t:"Switch to No Markup view", why:"Markup views show existing tracked changes; there are none to show."},
       {t:"She can’t compare documents without paying", why:"Free options exist: Google Docs and LibreOffice both compare documents."}
-    ]}
+    ]},
+      {id:"t1u8-l4-x8", type:"explain", q:"Explain when a reviewer should leave a comment and when they should make a tracked change (a suggestion), and why both leave the author in control.", hint:"One talks about the document; the other changes it.", model:"A comment is a note in the margin that doesn’t change the text. It suits questions, concerns and bigger ideas the author should decide on, such as “Is this the 2025 figure?” A tracked change, or a suggestion in Google Docs, is an actual edit, recorded with who made it and when and shown in colour. It suits specific wording fixes, such as a typo or a clearer sentence. Either way, nothing is final until the author reads it: they reply to comments and accept or reject each change.", points:["Says a comment is a note that doesn’t change the text", "Says a tracked change is an actual edit recorded with who made it", "Matches each to a suitable use (question versus wording fix)", "Says the author accepts or rejects changes and replies to comments"]}
    ],
    apply:{intro:"Practise a full review round. Ideally ask a friend or family member to review a short document; if not, review your own using a second account or a second device.", tasks:[
      {t:"Comment, and make tracked edits or suggestions", app:{
@@ -844,7 +848,8 @@ ICA.addUnit({
       {t:"It’s fully accessible, because the checker passed it", why:"Checkers can’t judge meaning. A human read-through is still needed."},
       {t:"Alt text doesn’t matter if there are captions", why:"Captions and alt text do different jobs; and he doesn’t have captions either."},
       {t:"He should delete the alt text so the checker reports an error", why:"That makes things worse. Write meaningful descriptions instead."}
-    ]}
+    ]},
+      {id:"t1u8-l5-x8", type:"explain", q:"Explain what it means to say that accessibility “isn’t an extra layer added at the end”. Use examples from this unit.", hint:"What do screen readers and other tools rely on? Where did that come from?", model:"Readers who use screen readers and other tools rely on the structure inside the document, not on how it looks. If the structure is real, most of the accessibility is already there: heading styles let a listener jump between sections, real lists are announced with how many items they have, table header rows let a screen reader name each column, and images carry alt text. If headings are just big bold text and lists are typed hyphens, the document looks fine but doesn’t work for these readers, and that is hard to fix at the end.", points:["Says assistive tools rely on the document’s real structure", "Gives heading styles as an example", "Gives another example, such as lists, table header rows or alt text", "Says faked formatting looks right but doesn’t work for these readers"]}
    ],
    apply:{intro:"Make one real document ready to share: accessible, in the right format, and easy to reuse.", tasks:[
      {t:"Check accessibility and fix at least three issues", write:"The issues I found and how I fixed them", app:{
