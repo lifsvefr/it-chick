@@ -243,7 +243,15 @@ ICA.intro = function(done){
   var code = host.querySelector(".pi-code"), prog = host.querySelector(".pi-prog"), repB = host.querySelector(".pi-rep"), bub = host.querySelector(".pi-bubble"), src = host.querySelector(".pi-src"), tip = host.querySelector(".pi-tip");
   var FX = window.ArcadeFX; if (FX){ FX.fxVol = function(){ return ICA.vol("fx"); }; FX.musicVol = function(){ return ICA.vol("music"); }; }
   function sfx(k, a){ try { if (FX) FX.sfx(k, a); } catch(e){} }
-  function cheep(){ sfx("ok", 5); }
+  // The chick's real cheeps (owner's ElevenLabs take, cut 20 Nov): one cheep, another cheep, and the double for "Cheep! Cheep!".
+  var CHEEP = {};
+  ["cheep-a", "cheep-b", "cheep-cheep"].forEach(function(n){ try { var a = new Audio(ICA.base + "shared/fx/" + n + ".mp3"); a.preload = "auto"; CHEEP[n] = a; } catch(e){} });
+  function cheep(t){
+    var n = /Cheep.*Cheep/.test(t) ? "cheep-cheep" : /\?/.test(t) ? "cheep-a" : "cheep-b", a = CHEEP[n], v = 1;
+    try { v = ICA.vol("fx"); } catch(e){}
+    if (!a || !v){ return; }
+    try { a.pause(); a.currentTime = 0; a.volume = Math.max(0, Math.min(1, v)); var p = a.play(); if (p && p.catch) p.catch(function(){ sfx("ok", 5); }); } catch(e){ sfx("ok", 5); }
+  }
   var scale = 2;
   function fit(){ scale = Math.max(1, Math.floor(Math.min(host.clientWidth - 24, 560) / W)); if (host.clientHeight < 600) scale = Math.min(scale, Math.max(1, Math.floor((host.clientHeight - 300) / H))); cv.style.width = W * scale + "px"; cv.style.height = H * scale + "px"; }
   fit(); window.addEventListener("resize", fit);
@@ -291,7 +299,7 @@ ICA.intro = function(done){
     if (typeof l === "string") l = {t:l};
     who.textContent = l.who === "mugi" ? "MUGI" : l.who === "chick" ? (revealed ? "THE IT CHICK" : "CHICK") : "";
     face.hidden = l.who !== "mugi"; if (l.who === "mugi") face.src = ICA.base + "shared/mascot/pixel/mugi-px-" + (l.mood || "hello") + ".webp";
-    if (l.who === "chick"){ cheep(); hopT = performance.now() + 300; }
+    if (l.who === "chick"){ cheep(l.t); hopT = performance.now() + 300; }
     if (l.reveal) revealed = true;
     if (l.choice){ text.textContent = l.t; var b = document.createElement("button"); b.className = "pi-choice"; b.type = "button"; b.textContent = l.choice; text.appendChild(document.createElement("br")); text.appendChild(b); b.onclick = function(e){ e.stopPropagation(); sfx("tap"); nextLine(); }; nextB.hidden = true; b.focus(); }
     else { text.textContent = l.t; nextB.hidden = false; }

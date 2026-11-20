@@ -328,7 +328,7 @@ function setupWithIntro(){
   var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "shared/intro.css?v=4"; document.head.appendChild(css);
   var font = document.createElement("link"); font.rel = "stylesheet"; font.href = "https://fonts.googleapis.com/css2?family=VT323&family=Silkscreen&family=DotGothic16&display=swap"; document.head.appendChild(font);
   var n = 0, fail = false, ready = function(){ if (++n === 2 && !fail) go(); };
-  ["shared/arcadefx.js?v=1", "shared/intro.js?v=4"].forEach(function(src){ var s = document.createElement("script"); s.src = src; s.onload = ready; s.onerror = function(){ if (!fail){ fail = true; setup(); } }; document.head.appendChild(s); });
+  ["shared/arcadefx.js?v=1", "shared/intro.js?v=5"].forEach(function(src){ var s = document.createElement("script"); s.src = src; s.onload = ready; s.onerror = function(){ if (!fail){ fail = true; setup(); } }; document.head.appendChild(s); });
 }
 function trackPicker(){
   var st = ICA.load();
