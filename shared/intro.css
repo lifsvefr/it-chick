@@ -1,5 +1,5 @@
 /* "Piyo's way to school" first-launch intro (shared/intro.js). A warm cocoa handheld-console look; text in DotGothic16. */
-.pintro{position:fixed;inset:0;z-index:200;background:#2b1a12;color:#fff6e6;font-family:"DotGothic16",ui-monospace,monospace;display:flex;flex-direction:column;align-items:center;gap:10px;padding:max(12px,env(safe-area-inset-top)) 14px max(14px,env(safe-area-inset-bottom));overflow:auto;transition:opacity .45s}
+.pintro{position:fixed;inset:0;z-index:200;background:#2b1a12;color:#fff6e6;font-family:"Pixelify Sans","DotGothic16",ui-monospace,monospace;display:flex;flex-direction:column;align-items:center;gap:10px;padding:max(12px,env(safe-area-inset-top)) 14px max(14px,env(safe-area-inset-bottom));overflow:auto;transition:opacity .45s}
 .pintro.out{opacity:0}
 .pintro button{font-family:inherit;cursor:pointer}
 .pintro>.pi-top{margin-top:clamp(0px,5vh,48px)}
@@ -44,3 +44,7 @@
 .pi-src span.cm{color:#8c7a6a}
 .pi-src span.now{background:#ffd65c;color:#3b2419}
 .pi-tip{margin:0;font-size:13px;line-height:1.5;color:#cbb8a2}
+/* hand-off to the welcome: pixel squares, a white flash, then fade */
+.pi-wipe{position:fixed;inset:0;width:100vw;height:100vh;z-index:260;pointer-events:none;transition:opacity .55s ease-out,filter .2s}
+.pi-wipe.flash{filter:brightness(1.6)}
+.pi-wipe.gone{opacity:0}

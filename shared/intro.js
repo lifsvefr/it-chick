@@ -42,39 +42,40 @@ var CHICK = [
 ".....KKKKKKKKKK.....",
 "......KOK..KOK......"];
 /* Mugi, standing: long dark hair, round glasses, cream shirt, dark knit vest, wide brown trousers, mustard socks, loafers,
-   and the IT CHICK tote on her left shoulder. Single-letter palette keys; "Cr" is written as "C" here. */
+   and the IT CHICK tote on her left shoulder. Single-letter palette keys; "Cr" is written as "C" here. Big 2 x 2 eyes with a glint inside thin round frames. */
 var MUGI = [
 ".......KKKKKK.......",
 ".....KKHHHHHHKK.....",
-"....KHHHHhhHHHHK....",
-"...KHHHhhHHHHHHHK...",
+"....KHHhhHHHHHHK....",
+"...KHHhHHHHHHHHHK...",
 "...KHHHHHHHHHHHHK...",
-"..KHHHHHSHHSHHHHHK..",
-"..KHSSSSSSSSSSSSHK..",
+"..KHHHHHHHHHHHHHHK..",
+"..KHHHSHHHHSSHHHHK..",
+"..KHHSSSSSSSSSSHHK..",
 "..KHSSFFSSSSFFSSHK..",
-"..KHSFSEFFFFESFSHK..",
-"..KHSFSEFSSFESFSHK..",
-"..KHHPFFSSSSFFPHHK..",
-"..KHHHSSSFFSSSHHHK..",
-"..KHHHHSSSSSSHHHHK..",
-"..KHHHHHCCCCHHHHHK..",
-"..KHHHCCVVVVCCHHHK..",
-".KHHHCCVVVVVVCCHHHK.",
-".KHHCCVVVVVVVVCCHHK.",
-"..KHCCVVVVVVVVCCHK..",
-"...KCCVvVVVVvVCCK...",
-"...KSCVVVVVVVVCBBK..",
-"....KcVVVVVVVVKBbBK.",
-"....KTTTTTTTTTKBBBK.",
-"....KTTTTTTTTTKBBBK.",
-"....KTTTTtTTTTKKKKK.",
+"..KHSFWEFFFFWEFSHK..",
+"..KHSFEEFSSFEEFSHK..",
+"..KHPSFFSSSSFFSPHK..",
+"..KHHSSSSssSSSSHHK..",
+"..KHHHSSSSSSSSHHHK..",
+".KHHHHKSSSSSSKHHHHK.",
+".KHHHKCCWCCWCCKHHHK.",
+".KHHKCCVVVVVVCCKHHK.",
+"KHHKCCVVvVVvVVCCKHHK",
+"KHKCCCVVVVVVVVCBCKHK",
+"..KSCCVVVVVVVVCKBBK.",
+"..KSKcVVVVVVVVKBbbBK",
+"...K.KTTTTTTTTKBBBBK",
+"....KTTTTTTTTTTKBBK.",
 "....KTTTTtTTTTTK....",
+"...KTTTTTtTTTTTTK...",
 "...KTTTTKtKTTTTTK...",
-"...KTTTTK.KTTTTTK...",
-"...KTTTTK.KTTTTTK...",
-"...KMMMMK.KMMMMMK...",
-"..KLLLLLK.KLLLLLLK..",
-"..KKKKKKK.KKKKKKKK.."];
+"..KTTTTTK.KTTTTTTK..",
+"..KTTTTTK.KTTTTTTK..",
+"..KKKKKKK.KKKKKKKK..",
+"....KMMK...KMMK.....",
+"...KLLLLK.KLLLLK....",
+"...KKKKKK.KKKKKK...."];
 function variant(base, edits){ var g = base.slice(); edits.forEach(function(e){ var r = g[e[0]].split(""); for (var i = 0; i < e[2].length; i++) if (e[2][i] !== "_") r[e[1] + i] = e[2][i]; g[e[0]] = r.join(""); }); return g; }
 var CHICK_STEP = variant(CHICK, [[19, 6, "..KOK.KOK..."]]);
 var CHICK_HAPPY = variant(CHICK, [[8, 5, "WKY"], [9, 5, "KYK"], [8, 12, "WKY"], [9, 12, "KYK"]]);
@@ -94,7 +95,7 @@ function sprites(){
 }
 
 /* ---------- tiles, drawn with a tiny pixel pen ---------- */
-var g;
+var g, lvlRef;
 function px(x, y, w, h, c){ g.fillStyle = c; g.fillRect(x, y, w || 1, h || 1); }
 function inE(x, y, rx, ry){ return (x*x)/(rx*rx) + (y*y)/(ry*ry) <= 1.02; }
 function blob(cx, cy, rx, ry, fill, line){
@@ -149,6 +150,29 @@ function puddle(X, Y, s, open, t){
   px(X + 5, Y + 9, 4, 1, C.wl); px(X + 7, Y + 10, 2, 1, C.wl); px(X + 12, Y + 14, 3, 1, C.wl);
   if (!RM && Math.floor(t / 700) % 3 === 0) px(X + 14, Y + 9, 1, 1, C.W);
 }
+/* one irregular puddle over every "p" tile, drawn once per map as metaballs: each tile adds a soft blob, and wherever the
+   blobs add up past 1 is water. That gives one organic shape with a single outline, deeper water in the middle, and glints. */
+var pondCache = {};
+function pond(t){
+  var key = lvlRef.map.join("");
+  if (!(key in pondCache)){
+    var balls = [];
+    lvlRef.map.forEach(function(r, y){ for (var x = 0; x < r.length; x++) if (r[x] === "p") balls.push([x * T + 10 + (hash(x, y) - .5) * 6, y * T + 10 + (hash(y, x) - .5) * 4, 9 + hash(x + 7, y) * 4]); });
+    if (!balls.length){ pondCache[key] = null; return; }
+    var field = function(x, y){ var f = 0; balls.forEach(function(b){ var dx = (x - b[0]) / 1.15, dy = y - b[1]; f += b[2] * b[2] / (dx * dx + dy * dy + 1); }); return f; };
+    var c = document.createElement("canvas"); c.width = W; c.height = H; var q = c.getContext("2d"), inside = function(x, y){ return field(x, y) > 1.15; };
+    for (var y = 0; y < H; y++) for (var x = 0; x < W; x++){
+      if (!inside(x, y)) continue;
+      var edge = !inside(x + 1, y) || !inside(x - 1, y) || !inside(x, y + 1) || !inside(x, y - 1), f = field(x, y);
+      q.fillStyle = edge ? C.K : f > 2.6 ? C.wd : f > 1.6 && !inside(x, y - 2) ? C.wl : C.wm; q.fillRect(x, y, 1, 1);
+    }
+    balls.forEach(function(b){ q.fillStyle = C.wl; q.fillRect(Math.round(b[0]) - 5, Math.round(b[1]) - 3, 4, 1); });
+    pondCache[key] = {c:c, balls:balls};
+  }
+  var P = pondCache[key]; if (!P) return;
+  g.drawImage(P.c, 0, 0);
+  if (!RM) P.balls.forEach(function(b, i){ if (Math.floor(t / 650 + i * 1.7) % 4 === 0) px(Math.round(b[0]) + 4, Math.round(b[1]) - 1, 1, 1, C.W); });
+}
 function building(X, Y, w, h){   // the Academy: cream walls, tiled roof, a < > sign with the chick, windows, door, two potted plants
   var wy = Y + 9;
   px(X, wy, w, h - 9, C.wall);
@@ -176,24 +200,24 @@ function goal(X, Y, t){
 /* map letters: . path, S start, G goal, m path where Mugi appears, g grass, f flowers, b bush, t tree, p puddle, A academy */
 var PATHS = ".SGmp";
 var LEVELS = [
-  {map: ["tfgbgftb",
-         "gg..g.gg",
-         "f.....Gg",
-         "g.Sp...f",
-         "gg....bg",
-         "tgfgbgft"], slots: 8, repeat: false,
-   hint: [[2,2],[3,2],[4,2],[5,2]],
+  {map: ["tfgbtgfb",
+         "gbfggtgf",
+         ".......G",
+         ".S.pp...",
+         "...ppp..",
+         "tgfbgftg"], slots: 8, repeat: false,
+   hint: [[1,2],[2,2],[3,2],[4,2],[5,2],[6,2]],
    intro: ["The chick moves one square at a time. Give it a list of steps with the arrows, then press ▶ Run.", "Careful: it can’t swim."],
    win: ["Cheep! Cheep!", "It followed your steps in order, one by one. That’s all a program is: instructions, run from top to bottom."],
    tip: "A program is a list of instructions. The computer runs them in order, top to bottom, exactly as written."},
-  {map: ["tbgfAAAA",
-         "ggbbGAAA",
-         "gbb..mfg",
-         "fb..bbgt",
-         "gS.bbfgg",
-         "tgfgbgfb"], slots: 2, repeat: true,
-   hint: [[2,4],[2,3],[3,3],[3,2],[4,2],[4,1]],
-   intro: ["The Academy is just up the hill! But the chick will only remember two steps at a time…", "Tap ↻ Repeat to run your steps more than once."],
+  {map: ["tbgAAAft",
+         "gfgAAAbg",
+         "gbfbGmfg",
+         "gbb..bgt",
+         "fb..bbfg",
+         ".S.bgfgb"], slots: 2, repeat: true,
+   hint: [[2,5],[2,4],[3,4],[3,3],[4,3],[4,2]],
+   intro: ["The Academy is just up the hill! But the chick will only remember two steps at a time...", "Tap ↻ Repeat to run your steps more than once."],
    tip: "A loop runs the lines inside it again and again. range(3) means three times. Loops save you writing the same steps over and over."}
 ];
 var WORD = {U:"up", D:"down", L:"left", R:"right"}, ARROW = {U:"↑", D:"↓", L:"←", R:"→"};
@@ -223,10 +247,10 @@ ICA.intro = function(done){
 
   var L = 0, lvl, start, pos, steps = [], rep = 1, running = false, bonks = 0, mode = "talk", pose = "chick", hopT = 0, t0 = performance.now(), ended = false, showHint = false, outro = null, revealed = false;
   function cell(x, y){ var r = lvl.map[y]; return r ? r[x] : undefined; }
-  function isPath(x, y){ var k = cell(x, y); return k !== undefined && PATHS.indexOf(k) > -1; }
+  function isPath(x, y){ if (y < 0 || y >= lvl.map.length) return false; x = Math.max(0, Math.min(lvl.map[0].length - 1, x)); return PATHS.indexOf(cell(x, y)) > -1; }   // a road at the edge carries on off the map
   function free(x, y){ var k = cell(x, y); return k === "." || k === "S" || k === "G"; }
   function load(i){
-    L = i; lvl = LEVELS[i]; steps = []; rep = 1; bonks = 0; showHint = false;
+    L = i; lvl = lvlRef = LEVELS[i]; steps = []; rep = 1; bonks = 0; showHint = false;
     lvl.map.forEach(function(r, y){ for (var x = 0; x < r.length; x++){ if (r[x] === "S") start = {x:x, y:y}; if (r[x] === "G") lvl.goal = {x:x, y:y}; } });
     pos = {x:start.x, y:start.y, dx:0, dy:0}; pose = "chick"; repB.hidden = !lvl.repeat; tip.textContent = lvl.tip; drawProg();
   }
@@ -234,13 +258,14 @@ ICA.intro = function(done){
     var t = now - t0;
     lvl.map.forEach(function(r, y){ for (var x = 0; x < r.length; x++){
       var k = r[x], X = x * T, Y = y * T, s = L * 13;
-      if (PATHS.indexOf(k) > -1){ var open = [isPath(x, y - 1), isPath(x + 1, y), isPath(x, y + 1), isPath(x - 1, y)]; if (k === "p") puddle(X, Y, s, open, t); else pathTile(X, Y, s, open); }
+      if (PATHS.indexOf(k) > -1){ var open = [isPath(x, y - 1), isPath(x + 1, y), isPath(x, y + 1), isPath(x - 1, y)]; pathTile(X, Y, s, open); }
       else if (k === "f") flowers(X, Y, s); else grass(X, Y, s);
     } });
+    pond(t);
     // a faint tile grid, so each step is easy to count
     g.globalAlpha = .1; g.fillStyle = C.K; for (var gx = T; gx < W; gx += T) g.fillRect(gx, 0, 1, H); for (var gy = T; gy < H; gy += T) g.fillRect(0, gy, W, 1); g.globalAlpha = 1;
     lvl.map.forEach(function(r, y){ for (var x = 0; x < r.length; x++){ if (r[x] === "b") bush(x * T, y * T); else if (r[x] === "t") tree(x * T, y * T); } });
-    if (L === 1) building(5 * T + 3, 1, 3 * T - 6, 2 * T - 3);
+    if (L === 1) building(3 * T + 2, 1, 3 * T - 4, 2 * T - 3);
     if (lvl.goal && !outro) goal(lvl.goal.x * T, lvl.goal.y * T, t);
     if (showHint && lvl.hint) lvl.hint.forEach(function(p, i){ if (RM || Math.floor(t / 220) % (lvl.hint.length + 3) >= i) { px(p[0] * T + 8, p[1] * T + 8, 4, 4, C.F); px(p[0] * T + 9, p[1] * T + 9, 2, 2, C.Y); } });
     if (outro && outro.mugi){ var mb = RM ? 0 : (Math.floor(t / 420) % 2); shadow(5 * T + 10, 2 * T + 18, 7, 2); g.drawImage(SP.mugi, 5 * T, 2 * T - 12 - mb); }
@@ -344,17 +369,30 @@ ICA.intro = function(done){
     outro = {mugi:false}; pose = "wings"; hopT = performance.now() + 300;
     wait(700).then(function(){ outro.mugi = true; sfx("flip"); return wait(600); }).then(function(){
       say([{t:"Oh! There you are!", who:"mugi", mood:"oops"},
-           {t:"Thank you for walking it all the way here. Though… I should probably tell you something.", who:"mugi", mood:"think"},
+           {t:"Thank you for walking it all the way here. Though... I should probably tell you something.", who:"mugi", mood:"think"},
            {t:"That isn’t just any chick. That’s THE IT Chick: our mascot, and the head of this whole Academy.", who:"mugi", mood:"tip", reveal:true},
            {t:"Cheep.", who:"chick", pose:"happy"},
-           {t:"It knows every path in this town. It doesn’t get lost. …It was testing you, wasn’t it?", who:"mugi", mood:"oops"},
+           {t:"It knows every path in this town. It doesn’t get lost. ...It was testing you, wasn’t it?", who:"mugi", mood:"oops"},
            {t:"Wait. Are you the new student starting today?", who:"mugi", mood:"think", choice:"Yes, that’s me!"},
            {t:"Then you’ve already passed your first test! Welcome to IT CHICK Academy. Come in, come in!", who:"mugi", mood:"yay", pose:"wings"}], close);
     });
   }
   function close(){
     if (ended) return; ended = true; window.removeEventListener("resize", fit);
-    host.classList.add("out"); setTimeout(function(){ if (host.parentNode) host.parentNode.removeChild(host); document.documentElement.style.overflow = ""; if (done) done(); }, RM ? 0 : 450);
+    function finish(){ if (host.parentNode) host.parentNode.removeChild(host); document.documentElement.style.overflow = ""; if (done) done(); }
+    if (RM) return finish();
+    // squares grow across the screen from the top left (a classic 8-bit transition), a white flash, then the welcome fades in
+    var wc = document.createElement("canvas"), dpr = Math.min(2, window.devicePixelRatio || 1), Wd = innerWidth, Hd = innerHeight, CELL = 28;
+    wc.className = "pi-wipe"; wc.width = Wd * dpr; wc.height = Hd * dpr; document.body.appendChild(wc);
+    var x = wc.getContext("2d"); x.scale(dpr, dpr); x.fillStyle = "#fff6e6";
+    var cols = Math.ceil(Wd / CELL), rows = Math.ceil(Hd / CELL), a = performance.now(), D = 520;
+    (function f(n){
+      var k = Math.min(1, (n - a) / D); x.clearRect(0, 0, Wd, Hd);
+      for (var j = 0; j < rows; j++) for (var i = 0; i < cols; i++){ var d = (i / cols + j / rows) / 2, s = Math.max(0, Math.min(1, (k * 1.7 - d) * 2.2)) * CELL; if (s > 0) x.fillRect(i * CELL + (CELL - s) / 2, j * CELL + (CELL - s) / 2, s + .5, s + .5); }
+      if (k < 1) return requestAnimationFrame(f);
+      sfx("flip"); finish();
+      wc.classList.add("flash"); setTimeout(function(){ wc.classList.add("gone"); }, 90); setTimeout(function(){ if (wc.parentNode) wc.parentNode.removeChild(wc); }, 700);
+    })(a);
   }
   host.querySelector(".pi-skip").onclick = close;
   document.addEventListener("keydown", function key(e){
@@ -364,7 +402,7 @@ ICA.intro = function(done){
   });
 
   load(0);
-  say([{t:"It’s your first day. You’re on your way to IT CHICK Academy…"},
+  say([{t:"It’s your first day. You’re on your way to IT CHICK Academy..."},
        {t:"Cheep?", who:"chick", bubble:"?"},
        {t:"A small chick in round glasses is standing in the street, holding a tiny book. It keeps looking up the hill, toward the Academy."},
        {t:"Is it lost? It seems to want you to lead the way."}].concat(LEVELS[0].intro), play);
