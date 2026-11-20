@@ -445,7 +445,7 @@ ICA.settingsSheet = function(o){
   function seg(name, label, opts, cur){ return '<div class="spread"><span id="lb-'+name+'">'+label+'</span><div class="seg3" role="group" aria-labelledby="lb-'+name+'">'+opts.map(function(o){ return '<button data-set="'+name+'" data-val="'+o[0]+'" aria-pressed="'+(o[0]===cur)+'">'+o[1]+'</button>'; }).join("")+'</div></div>'; }
   ICA.sheet('<div class="eyebrow">Settings</div><h2>Settings</h2>'+
     '<div class="stack setlist">'+seg("theme","Display mode",[["system","Auto"],["light","Light"],["dark","Dark"]],s.theme)+seg("size","Text size",[["small","Smaller"],["normal","Normal"],["large","Larger"]],s.size)+'</div>'+
-    '<h3>Sound</h3><div class="stack setlist">'+vol("voice","All voices")+vol("mugi","Mugi","sub")+vol("cast","Everyone else","sub","Story and lessons")+vol("music","Arcade music")+vol("fx","Sound effects",null,"Arcade sounds")+
+    '<h3>Sound</h3><div class="stack setlist">'+vol("voice","All voices")+vol("mugi","Mugi","sub")+vol("cast","Everyone else","sub","Story and lessons")+vol("music","Music",null,"Theme tune and Arcade")+vol("fx","Sound effects",null,"Arcade and chimes")+seg("deskMusic","Music on the desk",[["off","Off"],["soft","Soft"],["chip","8-bit"]],s.deskMusic || "off")+
     seg("audioSpeed","Listening speed",[["1","Normal"],["0.75","Slower"]],s.audioSpeed || "1")+seg("audioAuto","Play examples by themselves",[["off","Off"],["on","On"]],s.audioAuto || "off")+seg("mugiAuto","Mugi speaks by herself",[["off","Off"],["on","On"]],s.mugiAuto || "off")+'</div>'+
     '<h3>Kamome House</h3><div class="stack setlist">'+seg("storyChain","Keep playing the conversation",[["off","Off"],["on","On"]],s.storyChain || "off")+seg("furi","Furigana in the story",[["on","On"],["off","Off"]],s.furi || "on")+'</div>'+
     '<h3>Use offline</h3><div id="offbox"></div>'+'<h3>Sync with Google Drive</h3><div id="syncbox"></div>'+
@@ -459,13 +459,13 @@ ICA.settingsSheet = function(o){
       var r = e.target.closest("[data-vol]"); if (!r) return; var k = r.getAttribute("data-vol"), v = +r.value;
       st.settings.vol = st.settings.vol || {}; st.settings.vol[k] = v; r.nextElementSibling.querySelector(".ov").textContent = v ? v + "%" : "Off";
       if (k === "fx"){ st.settings.sound = v ? "on" : "off"; if (st.arcade && st.arcade.jp) st.arcade.jp.snd = !!v; }
-      ICA.save(true); setVol(); effVol(sh); if (ICA.onSettings) ICA.onSettings("vol", k);
+      ICA.save(true); setVol(); effVol(sh); if (ICA.onSettings) ICA.onSettings("vol", k); try { document.dispatchEvent(new CustomEvent("ica:settings", {detail:{k:"vol", v:k}})); } catch(x){}
     });
     effVol(sh);
     sh.addEventListener("change", function(e){ if (e.target.closest("[data-vol]")) ICA.save(); });
     sh.addEventListener("click", function(e){
       var b = e.target.closest("[data-set]");
-      if (b){ var k = b.getAttribute("data-set"), v = b.getAttribute("data-val"); st.settings[k] = v; if (k === "sound" && st.arcade && st.arcade.jp) st.arcade.jp.snd = v === "on"; ICA.save(); ICA.applySettings(); if (ICA.onSettings) ICA.onSettings(k, v); ICA.$$('[data-set="'+k+'"]', sh).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
+      if (b){ var k = b.getAttribute("data-set"), v = b.getAttribute("data-val"); st.settings[k] = v; if (k === "sound" && st.arcade && st.arcade.jp) st.arcade.jp.snd = v === "on"; ICA.save(); ICA.applySettings(); if (ICA.onSettings) ICA.onSettings(k, v); try { document.dispatchEvent(new CustomEvent("ica:settings", {detail:{k:k, v:v}})); } catch(x){} ICA.$$('[data-set="'+k+'"]', sh).forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
     });
     if (o.progress) sh.querySelector("#goprogress").onclick = o.progress;
     if (o.setup) sh.querySelector("#gosetup").onclick = o.setup;

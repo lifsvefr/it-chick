@@ -389,7 +389,7 @@ ICA.intro = function(done){
     });
   }
   function close(){
-    if (ended) return; ended = true; window.removeEventListener("resize", fit);
+    if (ended) return; ended = true; window.removeEventListener("resize", fit); if (window.ICATheme) ICATheme.stop();
     function finish(){ if (host.parentNode) host.parentNode.removeChild(host); document.documentElement.style.overflow = ""; if (done) done(); }
     if (RM) return finish();
     // squares grow across the screen from the top left (a classic 8-bit transition), a white flash, then the welcome fades in
@@ -406,6 +406,9 @@ ICA.intro = function(done){
     })(a);
   }
   host.querySelector(".pi-skip").onclick = close;
+  // the theme tune, 8-bit, from the first tap (browsers need one before sound); Music volume in Settings
+  function music(){ host.removeEventListener("pointerdown", music, true); document.removeEventListener("keydown", music, true); if (!ended && window.ICATheme) ICATheme.loop("chip"); }
+  host.addEventListener("pointerdown", music, true); document.addEventListener("keydown", music, true);
   document.addEventListener("keydown", function key(e){
     if (ended){ document.removeEventListener("keydown", key); return; }
     if (mode === "code" && !running){ var m = {ArrowUp:"U", ArrowDown:"D", ArrowLeft:"L", ArrowRight:"R", Backspace:"del", Enter:"run"}[e.key]; if (m){ e.preventDefault(); var b = code.querySelector('[data-c="' + m + '"]'); if (b) b.click(); } }

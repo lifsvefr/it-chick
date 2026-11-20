@@ -15,9 +15,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/style.css?v=59">
+<link rel="stylesheet" href="shared/style.css?v=60">
 <script src="shared/catalog.js"></script>
-<script src="shared/engine.js?v=59"></script>
+<script src="shared/engine.js?v=60"></script>
+<script src="shared/theme.js?v=1"></script>
 <style>
 /* The hub: a top-down study desk. Every object is a link to an app. */
 .hubhead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding-top:10px}
@@ -255,10 +256,10 @@ function trackStats(tid){
 }
 function firstLesson(uid){ var ls = ICA.unitLessons(uid); return ls.length ? ls[0] : null; }
 function setup(){
-  var st = ICA.load(), picks = st.tracks.slice(), first = null, lv = {}, step = 1;
+  var st = ICA.load(), picks = st.tracks.slice(), first = null, lv = {}, step = 1, stung = false;
   var ov = document.createElement("div"); ov.className = "setup"; ov.setAttribute("role", "dialog"); ov.setAttribute("aria-modal", "true"); ov.setAttribute("aria-label", "Setup");
   document.body.appendChild(ov); document.documentElement.style.overflow = "hidden";
-  function close(){ if (ov.parentNode) ov.parentNode.removeChild(ov); document.documentElement.style.overflow = ""; }
+  function close(){ if (ov.parentNode) ov.parentNode.removeChild(ov); document.documentElement.style.overflow = ""; setTimeout(deskMusic, 400); }
   function startOf(tid){ var l = lv[tid] || (LEVELS[tid] ? LEVELS[tid][0][0] : null); var u = l || (ICA.units.filter(function(x){ return x.track === tid; })[0] || {}).id; return u; }
   function render(){
     var body = "", back = '<button class="ghost" data-s="back">‹ Back</button>', next = '<button class="btn primary" data-s="next">Continue →</button>';
@@ -296,6 +297,7 @@ function setup(){
       '<div class="sbody"><div class="sin">'+body+'</div></div><div class="sfoot"><div class="in">'+back+next+'</div></div>';
     ov.querySelector(".sbody").scrollTop = 0;
     var f = ov.querySelector('[data-s="next"],[data-s="done"]'); if (f && step === 1) f.focus();
+    if (step === 1 && !stung && window.ICATheme){ stung = true; setTimeout(function(){ ICATheme.sting(); }, 250); }   /* the theme's opening as the logo pops in */
   }
   ov.addEventListener("click", function(e){
     var la = e.target.closest(".logoanim"); if (la){ la.classList.remove("hop"); void la.offsetWidth; la.classList.add("hop"); return; }   // tap the chick: it hops
@@ -322,13 +324,22 @@ function setup(){
 }
 function welcome(){ setup(); }
 /* First launch and "Run setup again": Piyo's way to school (shared/intro.js) plays first, then the welcome. */
+/* optional desk music (Settings → Music on the desk; off by default). Browsers need a tap before sound, so it starts
+   on the first tap after it is switched on, never during the intro or setup, and fades under voice clips (theme.js). */
+function deskMusic(){
+  if (!window.ICATheme || document.querySelector(".setup,.pintro")) return;
+  var m = (ICA.load().settings || {}).deskMusic || "off";
+  if (m === "off"){ if (ICATheme.playing()) ICATheme.stop(); } else ICATheme.loop(m);
+}
+document.addEventListener("ica:settings", function(e){ var k = (e.detail || {}).k; if (k === "deskMusic" || k === "vol") deskMusic(); });
+document.addEventListener("pointerdown", function(){ var m = (ICA.load().settings || {}).deskMusic; if (m && m !== "off" && window.ICATheme && ICATheme.playing() !== m) deskMusic(); }, true);
 function setupWithIntro(){
   var go = function(){ try { ICA.intro(setup); } catch(e){ setup(); } };
   if (ICA.intro) return go();
   var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "shared/intro.css?v=4"; document.head.appendChild(css);
   var font = document.createElement("link"); font.rel = "stylesheet"; font.href = "https://fonts.googleapis.com/css2?family=VT323&family=Silkscreen&family=DotGothic16&display=swap"; document.head.appendChild(font);
   var n = 0, fail = false, ready = function(){ if (++n === 2 && !fail) go(); };
-  ["shared/arcadefx.js?v=1", "shared/intro.js?v=5"].forEach(function(src){ var s = document.createElement("script"); s.src = src; s.onload = ready; s.onerror = function(){ if (!fail){ fail = true; setup(); } }; document.head.appendChild(s); });
+  ["shared/arcadefx.js?v=1", "shared/intro.js?v=6"].forEach(function(src){ var s = document.createElement("script"); s.src = src; s.onload = ready; s.onerror = function(){ if (!fail){ fail = true; setup(); } }; document.head.appendChild(s); });
 }
 function trackPicker(){
   var st = ICA.load();
