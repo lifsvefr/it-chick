@@ -14,13 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Klee+One:wght@600&family=Zen+Kurenaido&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=71">
+<link rel="stylesheet" href="../shared/style.css?v=72">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=71"></script>
+<script src="../shared/engine.js?v=72"></script>
 <script src="../shared/theme.js?v=2"></script>
-<script src="props.js?v=71"></script>
-<script src="../data/story.js?v=71"></script>
-<script src="../data/story-audio.js?v=71"></script>
+<script src="props.js?v=72"></script>
+<script src="../data/story.js?v=72"></script>
+<script src="../data/story-audio.js?v=72"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -34,6 +34,7 @@
 .lessonrow .num{font-family:var(--mono);font-weight:700}
 .unithero{display:grid;gap:10px}
 .unithero .icon{font-size:34px}
+.ptable{width:100%;border-collapse:collapse}.ptable td{padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}.ptable .pmark{white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
@@ -77,13 +78,113 @@ function track(id){
   var h = '<div class="stack"><a href="#" class="small">← All tracks</a><div><span class="chip '+t.cls+'">'+tlabel(t)+'</span><h1 style="margin-top:6px">'+esc(t.name)+'</h1><p class="muted">'+esc(t.blurb)+'</p><p class="small muted" style="margin-top:6px"><b>Built from:</b> '+esc(t.basis)+'</p></div>';
   if (id === "e3" && storyList().length) h += '<a class="tile storytile" href="#story"><span class="ic" aria-hidden="true"><img src="../shared/cast/cat/smug.webp" alt="" width="34" style="width:34px;height:auto"></span><span class="tx"><span class="tt">Kamome House: the story so far</span><span class="st">One short, optional episode per unit, written by Mugi. '+storyList().filter(function(e){ return storyRead(e.unit); }).length+' of '+storyList().length+' read.</span></span></a>';
   if (id === "e3" && window.JLAB_COUNT !== 0) h += '<a class="tile" href="../labs/jlpt.html"><span class="ic" aria-hidden="true">📝</span><span class="tx"><span class="tt">JLPT Practice Room</span><span class="st">Short practice tests in the JLPT format (N5–N3), with explanations. In the Labs.</span></span></a>';
-  if (units.length) h += '<div class="stack">'+units.map(function(u){ var p = ICA.unitProgress(u.id), pct = p.total ? Math.round(p.done/p.total*100) : 0; return '<a class="tile" href="#'+u.id+'"><span class="ic" aria-hidden="true">'+u.icon+'</span><span class="tx"><span class="tt">Unit '+u.n+' · '+esc(u.title)+'</span><span class="st">'+esc(u.blurb)+'</span><span class="st">'+p.done+' of '+p.total+' lessons done</span></span><span class="ring" style="--p:'+pct+'"><span>'+pct+'%</span></span></a>'; }).join("")+'</div>';
+  if (units.length && ICA.checkpointQs(units[0].id).length) h += placeTile(id);
+  var pl = placed(id), outN = pl && pl.tested ? pl.n : 0;
+  if (units.length) h += '<div class="stack">'+units.map(function(u){ var p = ICA.unitProgress(u.id), pct = p.total ? Math.round(p.done/p.total*100) : 0; return '<a class="tile" href="#'+u.id+'"><span class="ic" aria-hidden="true">'+u.icon+'</span><span class="tx"><span class="tt">Unit '+u.n+' · '+esc(u.title)+'</span><span class="st">'+esc(u.blurb)+'</span><span class="st">'+p.done+' of '+p.total+' lessons done'+(u.n < outN ? ' · <b>tested out</b>' : pl && u.n === pl.n ? ' · <b>your starting point</b>' : '')+'</span></span><span class="ring" style="--p:'+pct+'"><span>'+pct+'%</span></span></a>'; }).join("")+'</div>';
   var cap = ICA.capstones[id];
   if (cap){ var cs = ICA.load().lessons[cap.id] || {}, cdone = Object.keys(cs.apply || {}).filter(function(k){ return cs.apply[k]; }).length;
     h += '<h2>Capstone project</h2><a class="tile" href="#'+cap.id+'"><span class="ic" aria-hidden="true">'+(cs.done ? "🏆" : cap.icon || "🎓")+'</span><span class="tx"><span class="tt">'+esc(cap.title)+'</span><span class="st">'+esc(cap.blurb)+'</span><span class="st">About '+esc(cap.hours)+' hours · '+(cs.done ? "finished" : cdone ? cdone+" of "+cap.stages.length+" stages done" : "best after "+capAfter(cap))+'</span></span>'+(cs.done ? '<span class="chip done">✓ Done</span>' : '')+'</a>'; }
   h += '<div class="card small muted">'+esc(t.soon)+'</div></div>';
   app.innerHTML = h;
 }
+/* ---------- placement tests (Pass 28): start where you are ----------
+   Built from each unit's checkpoint questions, easy units first. Language tracks get a longer exam (24 questions:
+   2 or 3 per unit, one easier and one harder); the others about one per unit, one per pair of units in long tracks.
+   It stops early when several units in a row go wrong. You start at the first unit where you slip twice in a row.
+   "Tested out" only marks earlier units on the track page; nothing is locked or marked done. */
+var PLACE_LANG = {e3:2, e1:3};
+function placeUnits(tid){ return ICA.units.filter(function(u){ return u.track === tid; }).sort(function(a, b){ return a.n - b.n; }); }
+function placeSteps(tid){
+  var us = placeUnits(tid), per = PLACE_LANG[tid], steps = [];
+  if (per) us.forEach(function(u){ steps.push({units:[u], n:per}); });
+  else if (us.length > 15) for (var k = 0; k < us.length; k += 2) steps.push({units:us.slice(k, k + 2), n:1});
+  else us.forEach(function(u){ steps.push({units:[u], n:1}); });
+  steps.forEach(function(st, si){   /* pick the questions now: easier first, then harder */
+    var qs = [];
+    for (var j = 0; j < st.n; j++){
+      var u = st.units[j % st.units.length], bank = ICA.checkpointQs(u.id).filter(function(q){ return qs.indexOf(q) < 0; }),
+          want = st.n === 1 ? 2 : j === 0 ? 1 : 3, pick = bank.filter(function(q){ return (q.level || 2) === want; });
+      if (!pick.length) pick = bank; if (pick.length) qs.push(pick[Math.floor(Math.random() * pick.length)]);
+    }
+    st.qs = qs; st.right = 0; st.asked = 0;
+  });
+  return steps;
+}
+var PL = null;   /* the placement test on screen */
+app.addEventListener("click", function(e){
+  if (!PL || location.hash !== "#place-"+PL.tid) return;
+  if (e.target.closest("[data-pnext]")){ PL.advance(); return; }
+  if (e.target.closest("[data-pagain]")){ placement(PL.tid); window.scrollTo(0, 0); return; }
+  var b = e.target.closest("[data-ptest]");
+  if (b){ var all = ICA.load(), p = all.placed && all.placed[PL.tid]; if (p){ p.tested = true; ICA.save(); } b.disabled = true; b.textContent = "Marked as tested out ✓"; ICA.toast("Done. They’re marked on the track page."); }
+});
+function placeLabel(tid){ return PLACE_LANG[tid] ? "Placement exam" : "Placement quiz"; }
+function placed(tid){ var p = (ICA.load().placed || {})[tid]; return p || null; }
+function placeTile(tid){
+  var p = placed(tid), n = placeSteps(tid).reduce(function(a, s){ return a + s.qs.length; }, 0), u = p && ICA.unitById[p.start];
+  return '<a class="tile" href="#place-'+tid+'"><span class="ic" aria-hidden="true">🧭</span><span class="tx"><span class="tt">'+placeLabel(tid)+': where should I start?</span><span class="st">'+
+    (p && u ? 'Your result: start at Unit '+u.n+'. Take it again any time.' : 'About '+n+' questions, easy to hard. It suggests a starting unit, so you can skip what you already know.')+'</span></span></a>';
+}
+function placement(tid){
+  var t = trackOf(tid), steps = placeSteps(tid), si = 0, qi = 0, total = steps.reduce(function(a, s){ return a + s.qs.length; }, 0), asked = 0, right = 0, misses = 0;
+  setTitle(placeLabel(tid)+" · "+t.name);
+  app.innerHTML = '<div class="stack"><a href="#'+tid+'" class="small">← '+esc(t.name)+'</a><div><div class="eyebrow">'+placeLabel(tid)+'</div><h1>Where should I start?</h1>'+
+    '<p class="muted">Up to '+total+' questions, from the first unit to the last. Answer what you can; a guess is fine, but “I don’t know” is fine too, and makes the result more honest. It stops early if it gets clearly too hard.</p></div>'+
+    '<div class="small"><b id="ppos">1</b> of up to '+total+' · <span id="punit"></span></div><div id="pbox"></div><div id="pnav"></div></div>';
+  function cur1(){ return steps[si]; }
+  function show(){
+    var st = cur1(), q = st.qs[qi];
+    document.getElementById("ppos").textContent = asked + 1;
+    document.getElementById("punit").textContent = st.units.map(function(u){ return "Unit "+u.n; }).join(" & ");
+    var box = document.getElementById("pbox"); box.innerHTML = ""; var d = document.createElement("div"); box.appendChild(d);
+    var opts = (q.fixed ? q.options.slice() : ICA.shuffle(q.options.slice())).concat([{t:"I don’t know", why:"No problem: that’s what the placement is for."}]);
+    document.getElementById("pnav").innerHTML = "";
+    ICA.exercise(d, {id:"place-"+q.id, type:"mcq", q:q.q, options:opts.map(function(o){ return {t:o.t, ok:!!o.ok, why:o.why}; }), why:q.why, fixed:true}, {quiz:true, onAnswer:function(ok){
+      asked++; st.asked++; if (ok){ right++; st.right++; }
+      document.getElementById("pnav").innerHTML = '<div class="lessonnav"><span class="small muted">'+right+' right so far</span><button class="btn primary" data-pnext>Next →</button></div>';
+      var b = app.querySelector("[data-pnext]"); if (b) b.focus();
+    }});
+  }
+  function advance(){
+    var st = cur1(); qi++;
+    if (qi < st.qs.length) return show();
+    /* a step is done: count units in a row with nothing right */
+    misses = st.right === 0 ? misses + 1 : 0;
+    si++; qi = 0;
+    var stop = misses >= (PLACE_LANG[tid] ? 2 : 3);
+    if (si >= steps.length || stop) return finish();
+    show();
+  }
+  function finish(){
+    var asked1 = steps.filter(function(s){ return s.asked; }), start = null;
+    /* start at the first step that isn't solid, unless it's a lone slip followed by a solid step */
+    for (var k = 0; k < steps.length; k++){
+      var s = steps[k], solid = s.asked && s.right === s.asked, nxt = steps[k + 1], nextSolid = nxt && nxt.asked && nxt.right === nxt.asked;
+      if (!s.asked || (!solid && !nextSolid)){ start = s.units[0]; break; }
+    }
+    var allSolid = !start, last = placeUnits(tid).slice(-1)[0];
+    if (!start) start = last;
+    var all = ICA.load(); all.placed = all.placed || {};
+    var prev = all.placed[tid];
+    var res = {start:start.id, n:start.n, date:Date.now(), right:right, of:asked, tested:false};
+    all.placed[tid] = res; if (prev && prev.tested && start.n >= prev.n) res.tested = true; ICA.save();
+    var jlpt = tid === "e3" ? (start.n <= 1 ? "just starting (kana)" : start.n <= 4 ? "working towards N5" : start.n <= 8 ? "around N5, working towards N4" : allSolid ? "around N3" : "around N4, working towards N3") : "";
+    var rng = start.n === 2 ? "Unit 1" : "Units 1–"+(start.n - 1);
+    var rows = steps.map(function(s){ var mark = !s.asked ? '<span class="muted">not asked</span>' : s.right === s.asked ? '✅ '+s.right+'/'+s.asked : s.right ? '🟡 '+s.right+'/'+s.asked : '❌ 0/'+s.asked;
+      return '<tr><td>'+s.units.map(function(u){ return 'Unit '+u.n+' · '+esc(u.title); }).join('<br>')+'</td><td class="pmark">'+mark+'</td></tr>'; }).join("");
+    app.innerHTML = '<div class="stack"><a href="#'+tid+'" class="small">← '+esc(t.name)+'</a><div class="card stack"><div class="eyebrow">Your result</div>'+
+      '<h2>'+(allSolid ? 'You know this track well' : start.n === 1 ? 'Start at the beginning: Unit 1' : 'Start at Unit '+start.n+': '+esc(start.title))+'</h2>'+
+      '<p>'+right+' of '+asked+' right.'+(jlpt ? ' For Japanese, that puts you <b>'+jlpt+'</b>.' : '')+'</p>'+
+      '<p class="small muted">'+(allSolid ? 'Every unit came out solid. Jump to any unit that interests you, or try the capstone project.' : start.n === 1 ? 'Unit 1 builds what the rest of the track needs, so it’s the best place to begin.' : rng+' '+(start.n === 2 ? 'looks' : 'look')+' solid. You can mark '+(start.n === 2 ? 'it' : 'them')+' “tested out”: they stay open for review, and nothing is locked or marked done.')+'</p>'+
+      '<div class="lessonnav">'+(start.n > 1 && !allSolid ? '<button class="btn" data-ptest="'+tid+'">Mark '+rng+' tested out</button>' : '')+'<a class="btn primary" href="#'+start.id+'">Go to Unit '+start.n+' →</a></div></div>'+
+      '<h2>Unit by unit</h2><div class="tablewrap"><table class="ptable"><tbody>'+rows+'</tbody></table></div><button class="btn" data-pagain>Take it again</button></div>';
+    if (window.ICATheme && right) ICATheme.flourish();
+  }
+  PL = {tid:tid, advance:advance};
+  if (!total){ app.innerHTML = '<p class="muted">No questions for this track yet.</p>'; return; }
+  show();
+}
+
 function capById(id){ for (var k in ICA.capstones) if (ICA.capstones[k].id === id) return ICA.capstones[k]; return null; }
 function capAfter(c){ var us = (c.after || []).map(function(x){ return ICA.unitById[x]; }).filter(Boolean); if (!us.length) return "the track"; var ns = us.map(function(u){ return u.n; }).sort(function(a, b){ return a - b; }); return "Units " + ns.join(", ").replace(/, (\d+)$/, " and $1"); }
 
@@ -542,6 +643,7 @@ function route(){
   else if (ICA.unitById[h]) unit(h);
   else if (/-cp$/.test(h) && ICA.unitById[h.replace(/-cp$/,"")]) checkpoint(h.replace(/-cp$/,""));
   else if (h === "story") storyShelf();
+  else if (/^place-/.test(h) && ICA.tracks[h.slice(6)]) placement(h.slice(6));
   else if (capById(h)) capstone(capById(h));
   else if (/^story-/.test(h) && storyEp(h.replace(/^story-|\?draft$/g, ""), /\?draft$/.test(h))) story(h.replace(/^story-|\?draft$/g, ""), /\?draft$/.test(h));
   else if (ICA.lessons[h]){ curPart = "learn"; lesson(h); var L0 = ICA.lessons[h], S0 = ICA.lessonState(h); if (L0.read && L0.read.length && !S0.readSeen && !S0.readDone && ICA.load().settings.readPop !== "off") readingSheet(L0, true); }

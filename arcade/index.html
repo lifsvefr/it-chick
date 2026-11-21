@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=71">
+<link rel="stylesheet" href="../shared/style.css?v=72">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=71"></script>
+<script src="../shared/engine.js?v=72"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/theme.js?v=2"></script>
@@ -325,7 +325,10 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .bcue{animation:fx-cue 1.3s ease-in-out infinite}@keyframes fx-cue{50%{opacity:.4}}
 @media (max-width:340px){.bgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){.bpop,.bswap,.bbounce,.bcue{animation:none}}
-.kbtns{justify-content:center}.ktip{text-align:center;margin:0}
+.kbtns{justify-content:center}
+.estage{gap:8px}.eline{font-size:1.5em;line-height:2;font-weight:700;min-height:1.6em}.ehid{font-size:.7em;color:var(--soft);font-weight:600}
+.ebtns{justify-content:center;flex-wrap:wrap}.btn.rec{background:var(--badTint);border-color:var(--bad);animation:fx-cue 1.1s ease-in-out infinite}
+.eout{min-height:2.4em}.eout p{margin:4px 0}.eheard{font-weight:700}.enav{justify-content:flex-end;gap:8px}.ktip{text-align:center;margin:0}
 @media (prefers-reduced-motion:reduce){.bossbox,.choice.popped,.rainf .dk.splash{animation:none}}
 @media (prefers-reduced-motion:reduce){.jg-shake,.jg-pulse,.combo.hot,.float,.gc svg .idle{animation:none}.gc,.gc svg .mv{transition:none}}
 </style>
@@ -466,6 +469,7 @@ function home(){
       card("pop","Particle Pop","pop","は・が・を…"+mine("pop"),"a1")+
       card("build","Sentence Builder","build","Tiles into order"+mine("build"),"a4")+
       card("listen","Listening Booth","listen","What did you hear?"+mine("listen"),"a3")+
+      card("echo","Echo Booth","echo","Say it back"+mine("echo"),"a2")+
       card("beat","Beat Challenge",null,"Say it on the beat","a3")+
       '<a class="gc a4" href="../labs/kanji.html?from=arcade"><span class="mq">KANJI LAB</span><span class="art">'+art("lab")+'</span><span class="sub">Your missed cards, on a calm daily schedule →</span></a>'+
     '</div></section>'+
@@ -583,12 +587,12 @@ function launch(g, again){
     '<div id="gm"><p class="ready">Ready…</p></div></div></div>';
   var run = function(){ if (!cur.alive) return; var gm = document.getElementById("gm");
     if (GAMES[g]){ var j = jp(), p = JG.pool(GAMES[g].kind, j.level, j); ({sprint:sprint, match:match, pairs:pairs})[g](gm, p, j.level); }
-    else if (G2[g]) ({rain:rain, pop:pop, build:build, listen:listen, type:typeGame, beat:beat})[g](gm);
+    else if (G2[g]) ({rain:rain, pop:pop, build:build, listen:listen, type:typeGame, beat:beat, echo:echoGame})[g](gm);
     else if (g === "boss") boss(gm, lastArg.boss);
     else if (g === "mix") mix(gm, lastArg.mix);
     else ({practice:practice, blitz:blitz, survival:survival, cards:flashcards, today:todayGame})[g](gm); };
   var go = function(){ if (!cur.alive) return;
-    if (g === "cards" || g === "beat") return run();          // Flashcards stays calm; Beat Challenge brings its own song
+    if (g === "cards" || g === "beat" || g === "echo") return run();          // Flashcards stays calm; Beat Challenge brings its own song
     AFX.musicStart(SONG[g] || "drive");
     cur.cancel = AFX.countdown(document.getElementById("scr"), function(){ cur.cancel = null; run(); }); };
   if (howSeen(g)) go(); else howDlg(g, true, go);
@@ -1463,6 +1467,140 @@ function beat(gm){
   timerId = 1;
   a.play().catch(function(){ ICA.toast("Tap the screen to start the beat."); gm.addEventListener("click", function once(){ gm.removeEventListener("click", once); a.play().catch(function(){}); }); });
   raf = requestAnimationFrame(frame);
+}
+
+/* ---------- Echo Booth: hear a line, say it back (Pass 28, from the owner's Hero's Proof Speaking Quest) ----------
+   Speech check: the browser's speech recognition (ja-JP) where it exists. The mic is never held open while it listens
+   (Android Chrome and iPads need it free); a recording takes the mic, then lets it go at once. Without speech
+   recognition: record yourself, compare with the recording (Kinako, the Japanese lesson voice), and tick it yourself. Recordings never leave the device. */
+G2.echo = {name:"Echo Booth", levels:[["N5","N5"],["N4","N4"],["N3","N3"]], def:"N5", data:"listen", modes:[["show","Words shown"],["hide","Ears only"]], mdef:"show"};
+LNAME.echo = "Echo Booth"; ACC.echo = "a2"; AFX.MUGI.echo = 810;   /* 8 lines × 100 is the most a round can score */
+HOW.echo = ["Listen to a line, then say it back. Copying a voice straight after hearing it (shadowing) trains your ear and your mouth together.",
+  "Tap <b>🎤 Say it</b> and speak: Mugi says what she heard and how close it was. Or tap <b>⏺ Record</b> to hear yourself next to the recording.",
+  "<b>Ears only</b> hides the words until you've tried. Your recordings stay on your device; the speech check uses your browser's own speech service.",
+  "8 lines a round. First-try matches score most."];
+ART.echo = '<g class="mv"><rect x="40" y="10" width="20" height="32" rx="10" class="A"/><path d="M32 32 a18 18 0 0 0 36 0 M50 50 v10 M40 60 h20" class="S" style="stroke-width:3"/></g><path d="M76 24 q6 8 0 16 M84 18 q12 14 0 28" class="S idle"/><path d="M24 24 q-6 8 0 16 M16 18 q-12 14 0 28" class="S idle"/>';
+var ECHO_SR = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+function echoNorm(s){ return String(s || "").replace(/\[([^\]]*)\]\{[^}]*\}/g, "$1").replace(/[\s、。！？!?,.「」『』・…ー〜～]/g, "").replace(/[ァ-ヶ]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) - 0x60); }); }
+function echoReading(furi, t){ return furi ? furi.replace(/\[[^\]]*\]\{([^}]*)\}/g, "$1") : t; }
+function echoSim(a, b){   /* 2·LCS / (|a|+|b|): 1 = identical */
+  a = echoNorm(a); b = echoNorm(b); if (!a || !b) return 0;
+  var p = new Array(b.length + 1).fill(0), i, j;
+  for (i = 1; i <= a.length; i++){ var prev = 0; for (j = 1; j <= b.length; j++){ var tmp = p[j]; p[j] = a[i-1] === b[j-1] ? prev + 1 : Math.max(p[j], p[j-1]); prev = tmp; } }
+  return 2 * p[b.length] / (a.length + b.length);
+}
+function echoGame(gm){
+  var lv = lv2("echo"), hide = md2("echo") === "hide",
+      pool = (window.JPL || []).filter(function(x){ return x[2] === lv && (x[3] || !/[一-龯]/.test(x[0])) && !/(読み|書き|聞き|聞い|入力し|答え|選び|言い|練習し|確認し)ましょう/.test(x[0]) && echoNorm(x[0]).length <= 26; }),
+      lines = ICA.shuffle(pool.slice()).slice(0, 8), i = 0, score = 0, right = 0, streak = 0, missed = [], tries = 0, done = false,
+      rec = null, stream = null, mine = null, sr = null, srFails = 0, canRec = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
+  gm.innerHTML = '<div class="stack">'+hudJP('<span>Line <span id="pos">1</span>/'+lines.length+'</span>')+
+    '<div class="stage estage" id="stg" data-nosay><div class="qtext" id="eq"></div><div class="eline" id="el" lang="ja"></div>'+
+      '<div class="row ebtns"><button class="btn" id="elisten">▶ Listen</button>'+(ECHO_SR ? '<button class="btn primary" id="esay">🎤 Say it</button>' : '')+(canRec ? '<button class="btn" id="erec">⏺ Record</button>' : '')+'</div>'+
+      '<div class="eout" id="eo" aria-live="polite"></div></div><div class="row enav" id="en"></div></div>';
+  timerId = 1;
+  function line(){ return lines[i]; }
+  function show(reveal){ var x = line(), el = document.getElementById("el"); if (hide && !reveal){ el.innerHTML = '<span class="ehid">🙈 Ears only: listen, then say it</span>'; return; } el.innerHTML = md(x[3] || x[0]); }
+  function out(h){ document.getElementById("eo").innerHTML = h; }
+  function play(){ var b = document.getElementById("elisten"); if (ICA.say("ja", line()[0], b) === false) ICA.toast("That clip isn’t available offline."); }
+  function nav(){
+    var n = document.getElementById("en");
+    n.innerHTML = (done ? '' : '<button class="btn" id="eskip">Skip</button>') + '<button class="btn primary" id="enext"'+(done || tries >= 2 ? '' : ' hidden')+'>'+(i < lines.length - 1 ? 'Next line →' : 'Finish')+'</button>';
+    var s = document.getElementById("eskip"); if (s) s.onclick = function(){ if (!done){ miss(); } next(); };
+    document.getElementById("enext").onclick = function(){ if (!done) miss(); next(); };
+  }
+  function miss(){ streak = 0; showCombo(0); if (missed.indexOf(line()) < 0) missed.push(line()); done = true; }
+  function win(pts, msg){
+    if (done) return; done = true; right++; streak++; score += pts; cur.answered++;
+    hit(true, document.getElementById("el"), streak, "+" + pts); AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
+    show(true); out(msg); nav(); var nx = document.getElementById("enext"); if (nx) nx.focus();
+  }
+  function begin(){
+    if (!cur.alive) return;
+    if (i >= lines.length) return over();
+    tries = 0; done = false; mine = null;
+    document.getElementById("pos").textContent = i + 1;
+    document.getElementById("eq").textContent = ECHO_SR ? "Listen, then say it back" : "Listen, say it back, then compare";
+    show(false); out(ECHO_SR ? '' : (canRec ? '<p class="small muted">Tap ⏺ Record, say the line, then compare your voice with the recording.</p>' : '<p class="small muted">Say the line out loud after the recording, then tick how it went.</p>' + selfBtns()));
+    if (!ECHO_SR && !canRec) bindSelf();
+    nav(); setTimeout(play, 250);
+  }
+  function next(){ stopAll(); i++; begin(); }
+  function selfBtns(){ return '<div class="row ebtns"><button class="btn primary" id="eok">⭕ I said it</button><button class="btn" id="eagain">🔁 Once more</button></div>'; }
+  function bindSelf(){
+    var ok = document.getElementById("eok"), ag = document.getElementById("eagain");
+    if (ok) ok.onclick = function(){ win(50, '<p><b>Nice!</b> Say it with Mugi once more if you like.</p>'); };
+    if (ag) ag.onclick = function(){ tries++; play(); nav(); };
+  }
+  /* speech check: the mic must be free while it listens */
+  function say(){
+    var b = document.getElementById("esay"); if (!b || b.classList.contains("rec") || done) return;
+    stopRec(); try { if (ICA.stopAudio) ICA.stopAudio(); } catch(e){}
+    sr = new ECHO_SR(); sr.lang = "ja-JP"; sr.interimResults = false; sr.maxAlternatives = 4;
+    var got = false, err = null;
+    b.classList.add("rec"); b.textContent = "🎤 Listening…";
+    sr.onresult = function(e){ got = true; var alts = [].map.call(e.results[0], function(x){ return x.transcript; }); judge(alts); };
+    sr.onerror = function(e){ err = (e && e.error) || "error"; };
+    sr.onend = function(){ b.classList.remove("rec"); b.textContent = "🎤 Say it"; sr = null; if (!got) fail(err || "no-speech"); };
+    try { sr.start(); } catch(e){ b.classList.remove("rec"); b.textContent = "🎤 Say it"; fail("start-failed"); }
+  }
+  function judge(alts){
+    if (!cur.alive || done) return; srFails = 0;
+    var x = line(), best = 0, heard = alts[0] || "";
+    alts.forEach(function(a){ var s = Math.max(echoSim(a, x[0]), echoSim(a, echoReading(x[3], x[0]))); if (s > best){ best = s; heard = a; } });
+    var pct = Math.round(best * 100), h = '<p class="small">Mugi heard: <span lang="ja" class="eheard">'+esc(heard)+'</span> · '+pct+'% match</p>';
+    tries++;
+    if (best >= .8) return win(tries === 1 ? 100 : 70, '<p><b>Mugi heard it!</b> 🎉</p>' + h);
+    react(best >= .55 ? "think" : "oops");
+    out((best >= .55 ? '<p><b>Close!</b> Listen once more and try again.</p>' : '<p><b>Not quite.</b> Listen again, then try.</p>') + h); show(true); nav();
+  }
+  function fail(err){
+    srFails++; tries++;
+    var msg = err === "not-allowed" || err === "service-not-allowed" ? "The microphone is blocked. Allow it for this site in your browser’s settings (the 🔒 by the address), then try again."
+      : err === "network" ? "The speech check needs the internet. Check your connection, or use ⏺ Record to compare by ear."
+      : err === "audio-capture" || err === "aborted" ? "The microphone was busy. Wait a moment and try again."
+      : err === "language-not-supported" ? "This browser can’t check Japanese speech. Use ⏺ Record to compare by ear instead."
+      : "Mugi didn’t catch anything. Get closer to the mic and try again.";
+    out('<p>'+msg+'</p>' + (srFails >= 2 && canRec ? '<p class="small muted">You can also record yourself and tick it yourself.</p>' : '')); nav();
+  }
+  /* recording: take the mic, record, let it go */
+  function record(){
+    var b = document.getElementById("erec"); if (!b) return;
+    if (rec && rec.state === "recording"){ rec.stop(); return; }
+    if (sr) try { sr.abort(); } catch(e){}
+    navigator.mediaDevices.getUserMedia({audio:true}).then(function(st){
+      if (!cur.alive){ st.getTracks().forEach(function(t){ t.stop(); }); return; }
+      stream = st; var chunks = [];
+      try { rec = new MediaRecorder(st); } catch(e){ release(); out('<p>Recording isn’t supported in this browser.</p>'); return; }
+      rec.ondataavailable = function(e){ if (e.data.size) chunks.push(e.data); };
+      rec.onstop = function(){
+        release(); b.classList.remove("rec"); b.textContent = "⏺ Record again";
+        if (mine) URL.revokeObjectURL(mine); mine = chunks.length ? URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || "audio/webm"})) : null;
+        if (!mine){ out('<p>Nothing was recorded. Try again.</p>'); return; }
+        out('<div class="row ebtns"><button class="btn" id="emugi">▶ Original</button><button class="btn" id="eyou">▶ You</button></div>' + (ECHO_SR && !done ? '' : (done ? '' : selfBtns())));
+        document.getElementById("emugi").onclick = play;
+        document.getElementById("eyou").onclick = function(){ var a = new Audio(mine); a.play().catch(function(){}); };
+        bindSelf(); show(true);
+      };
+      rec.start(); b.classList.add("rec"); b.textContent = "⏹ Stop";
+      var secs = Math.min(10, Math.max(4, 2 + echoNorm(line()[0]).length * 0.32));
+      setTimeout(function(){ if (rec && rec.state === "recording") rec.stop(); }, secs * 1000);
+    }).catch(function(){ out('<p>The microphone is blocked. Allow it for this site in your browser’s settings (the 🔒 by the address), then try again.</p>'); });
+  }
+  function release(){ try { if (stream) stream.getTracks().forEach(function(t){ t.stop(); }); } catch(e){} stream = null; }
+  function stopRec(){ try { if (rec && rec.state === "recording") rec.stop(); } catch(e){} }
+  function stopAll(){ if (sr) try { sr.abort(); } catch(e){} sr = null; stopRec(); release(); }
+  document.getElementById("elisten").onclick = play;
+  var sb = document.getElementById("esay"); if (sb) sb.onclick = say;
+  var rb = document.getElementById("erec"); if (rb) rb.onclick = record;
+  cur.stop = function(){ stopAll(); if (mine) URL.revokeObjectURL(mine); };
+  function over(){
+    stopAll(); stopTimer();
+    end2("echo", score, right + " of " + lines.length + " said back", right, lines.length,
+      revList("Worth another try", missed.map(function(m){ return '<div class="card mrow" data-nosay><span lang="ja">'+md(m[3] || m[0])+'</span><button class="iconbtn" data-relisten="'+esc(m[0])+'" aria-label="Listen">🔊</button></div>'; })));
+  }
+  if (!lines.length){ gm.innerHTML = '<p>No lines at this level yet.</p>'; return; }
+  begin();
 }
 
 /* each game has its own tune (shared/arcadefx.js), all built up like the first arcade tune */
