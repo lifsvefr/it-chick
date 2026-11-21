@@ -8,7 +8,7 @@ var RM = root.matchMedia && root.matchMedia("(prefers-reduced-motion: reduce)").
 AFX.reduced = RM;
 
 /* ---------- audio ---------- */
-var AC = null, MASTER = null, NOISE = null, FXG = null, MUSG = null;
+var AC = null, MASTER = null, NOISE = null, FXG = null, MUSG = null, talking = 0;
 AFX.soundOn = function(){ return true; };       // the page replaces these with its settings
 AFX.musicOn = function(){ return true; };
 AFX.fxVol = function(){ return 1; };            // 0..1, from the volume sliders in Settings
@@ -27,7 +27,7 @@ function ac(){
   if (AC && AC.state === "suspended" && AC.resume) AC.resume();
   return AC;
 }
-function vols(){ if (FXG){ FXG.gain.value = AFX.fxVol(); MUSG.gain.value = AFX.musicVol(); } }
+function vols(){ if (FXG){ FXG.gain.value = AFX.fxVol(); MUSG.gain.value = AFX.musicVol() * (talking ? .2 : 1); } }
 AFX.applyVolume = vols;
 var OUT = null;   // which bus the next tones go to: effects by default, music while the tune is scheduled
 function tone(f, t0, d, type, vol, slide){
@@ -60,34 +60,131 @@ var SFX = {
 };
 AFX.sfx = function(kind, arg){ if (!AFX.soundOn() || !AFX.fxVol()) return; try { ac(); vols(); OUT = FXG; (SFX[kind] || SFX.tap)(arg); } catch(e){} OUT = null; };
 
-/* background tune: an original driving loop in A minor, 168 bpm, 16th-note steps.
-   It builds up: bass and kick first, the melody from bar 3, snare and arpeggio from bar 5 (no hi-hat). */
-var bgm = null, step = 0, next = 0;
-var CH = [[57,60,64],[53,57,60],[55,59,62],[52,56,59]], ROOT = [45,41,43,40];
-var LEAD = [69,72,76,72,81,79,76,72, 77,76,72,69,72,74,76,72, 74,79,83,79,86,83,79,74, 80,76,71,76,80,83,80,76];
+/* ---------- music: one loop per game (owner asked 21 Nov 2026), all original, all made here ----------
+   "drive" is the first arcade tune (A minor, 168 bpm, builds up from bass and kick).
+   "theme" is the academy's own theme tune (shared/theme.js, the 8-bit version) when that file is on the page.
+   The rest are written as data for one small sequencer: chords per bar, a melody in eighth notes, a bass
+   pattern, drum steps. Each plays two bars of groove before the melody comes in.
+   Music fades down while a voice clip plays, so it never talks over Mugi or a listening line. */
+var bgm = null, step = 0, next = 0, cur = null;
+AFX.song = "drive";
 function mf(n){ return 440*Math.pow(2, (n - 69)/12); }
+
+/* drive: the first tune, unchanged */
+var D_CH = [[57,60,64],[53,57,60],[55,59,62],[52,56,59]], D_ROOT = [45,41,43,40];
+var D_LEAD = [69,72,76,72,81,79,76,72, 77,76,72,69,72,74,76,72, 74,79,83,79,86,83,79,74, 80,76,71,76,80,83,80,76];
+function driveStep(t, sp){
+  var bar = Math.floor(step/16), b4 = bar % 4, s16 = step % 16;
+  if (step % 2 === 0){
+    if (bar >= 2) tone(mf(D_LEAD[(step/2) % 32]), t, sp*1.6, "square", .06);
+    tone(mf(D_ROOT[b4] + (s16 % 4 ? 12 : 0)), t, sp*1.5, "square", .075);
+  }
+  if (bar >= 4) tone(mf(D_CH[b4][s16 % 3] + 12), t, sp*.7, "square", .02);
+  if (s16 === 0 || s16 === 8 || s16 === 10) tone(150, t, .12, "triangle", .45, 40);
+  if (bar >= 4 && (s16 === 4 || s16 === 12)) noise(t, .12, .32, 2600);
+}
+
+/* chords: [root (bass octave), chord tones] */
+var C = {
+  C:[36,[60,64,67]], Cmaj7:[36,[60,64,67,71]], Dm:[38,[62,65,69]], Dm7:[38,[62,65,69,72]], D:[38,[62,66,69]], D7:[38,[62,66,69,72]],
+  Em:[40,[64,67,71]], Em7:[40,[64,67,71,74]], E:[40,[64,68,71]], F:[41,[65,69,72]], Fmaj7:[41,[65,69,72,76]], G:[43,[67,71,74]], Gmaj7:[43,[67,71,74,78]],
+  Gm:[43,[67,70,74]], A:[45,[69,73,76]], A7:[45,[69,73,76,79]], Am:[45,[69,72,76]], Am7:[45,[69,72,76,79]], Bb:[46,[70,74,77]]
+};
+var SONGS = {
+  /* Kana Rain: soft and bright, bells over raindrop plinks */
+  rain:{bpm:112, swing:0, prog:["Fmaj7","G","Em7","Am","Fmaj7","G","C","C"],
+    lead:[[76,2],[79,2],[81,3],[79,1], [79,2],[74,2],[76,2],[74,2], [71,2],[74,2],[76,4], [72,3],[71,1],[69,4],
+          [76,2],[79,2],[84,3],[81,1], [79,2],[83,2],[81,2],[79,2], [76,2],[74,1],[72,1],[74,4], [72,6],[0,2]],
+    leadT:"triangle", leadV:.16, leadLen:1.3, bass:[[0,0,6],[8,7,4],[12,12,3]], bassT:"triangle", bassV:.16,
+    drops:[0,3,6,10,13], dropV:.035, k:[0], s:[], h:[4,12], hV:.09},
+  /* Particle Pop: bouncy, a little swing, every melody note pops */
+  pop:{bpm:132, swing:.12, prog:["F","Dm","Bb","C","F","Dm","Bb","C"],
+    lead:[[72,1],[0,1],[77,1],[0,1],[76,1],[77,1],[81,2], [79,1],[77,1],[74,2],[77,1],[0,1],[74,2], [70,1],[74,1],[77,1],[82,1],[81,2],[77,2], [79,2],[76,1],[72,1],[74,2],[76,2],
+          [77,1],[0,1],[81,1],[0,1],[84,1],[81,1],[77,2], [81,1],[79,1],[77,1],[74,1],[77,2],[81,2], [82,2],[81,1],[79,1],[77,2],[74,2], [72,2],[76,2],[77,4]],
+    leadT:"square", leadV:.055, leadLen:.8, blip:true, bass:[[0,0,2],[3,12,1],[6,7,2],[8,0,2],[11,12,1],[14,7,2]], bassT:"square", bassV:.07,
+    arp:[2,6,10,14], arpV:.025, k:[0,8], s:[4,12], h:[2,6,10,14], hV:.12},
+  /* Sentence Builder, Kanji Match, Pair Up: thinking music, slow and swung */
+  puzzle:{bpm:96, swing:.2, prog:["Gmaj7","Em7","Cmaj7","D7","Gmaj7","Em7","Cmaj7","D7"],
+    lead:[[71,3],[74,1],[78,2],[76,2], [74,4],[71,2],[67,2], [69,2],[71,2],[72,2],[76,2], [74,6],[0,2],
+          [71,2],[74,2],[79,3],[78,1], [76,2],[74,2],[71,4], [72,2],[76,2],[74,2],[72,2], [69,4],[66,2],[69,2]],
+    leadT:"triangle", leadV:.14, leadLen:1.1, bass:[[0,0,3],[6,7,2],[10,12,2],[14,10,2]], bassT:"triangle", bassV:.17,
+    pad:true, padV:.016, k:[0,10], s:[8], h:[4,12], hV:.07},
+  /* Boss Battle and Survival: D minor, driving, a bit menacing */
+  boss:{bpm:150, swing:0, prog:["Dm","Dm","Bb","C","Dm","Dm","Gm","A"],
+    lead:[[74,1],[74,1],[77,1],[74,1],[81,2],[79,2], [77,1],[76,1],[74,2],[69,4], [70,1],[74,1],[77,1],[82,1],[81,2],[77,2], [79,2],[76,2],[72,4],
+          [74,1],[77,1],[81,1],[86,1],[84,2],[81,2], [82,2],[81,2],[77,2],[74,2], [79,2],[82,2],[81,2],[79,2], [76,2],[73,2],[69,4]],
+    leadT:"sawtooth", leadV:.04, leadLen:1.2, dbl:"square", bass:[[0,0,1],[2,0,1],[4,12,1],[6,0,1],[8,0,1],[10,12,1],[12,0,1],[14,7,1]], bassT:"square", bassV:.08,
+    arp:[1,3,5,7,9,11,13,15], arpV:.012, k:[0,6,8], s:[4,12], h:[2,6,10,14], hV:.1},
+  /* Word Sprint: fast and bright, A mixolydian */
+  sprint:{bpm:176, swing:0, prog:["A","G","D","A","A","G","D","E"],
+    lead:[[76,1],[81,1],[85,1],[81,1],[88,2],[85,2], [86,1],[83,1],[79,1],[83,1],[86,2],[83,2], [81,1],[78,1],[74,1],[78,1],[81,2],[86,2], [85,4],[0,2],[81,2],
+          [76,1],[81,1],[85,1],[88,1],[90,2],[88,2], [86,2],[83,2],[79,2],[83,2], [81,2],[86,2],[90,2],[86,2], [88,4],[83,2],[80,2]],
+    leadT:"square", leadV:.05, leadLen:1.1, bass:[[0,0,1],[2,12,1],[4,0,1],[6,12,1],[8,0,1],[10,12,1],[12,7,1],[14,12,1]], bassT:"square", bassV:.07,
+    arp:[0,2,4,6,8,10,12,14], arpV:.015, k:[0,8], s:[4,12], h:[2,6,10,14], hV:.12},
+  /* Kana Keys: a laid-back groove with room to think, E dorian */
+  keys:{bpm:108, swing:.1, prog:["Em7","A7","Em7","A7","Em7","A7","Em7","A7"],
+    lead:[[79,1],[0,1],[76,1],[79,1],[0,1],[81,1],[79,2], [0,2],[78,1],[76,1],[73,2],[76,2], [71,1],[74,1],[76,1],[79,1],[0,1],[83,1],[81,2], [79,2],[78,1],[76,1],[78,4],
+          [79,1],[0,1],[76,1],[79,1],[0,1],[81,1],[79,2], [0,2],[78,1],[76,1],[73,2],[76,2], [83,1],[0,1],[81,1],[79,1],[76,2],[74,2], [76,4],[0,4]],
+    leadT:"square", leadV:.045, leadLen:.7, bass:[[0,0,2],[3,0,1],[6,12,1],[10,7,2],[11,10,1],[14,12,1]], bassT:"triangle", bassV:.19,
+    stab:[4,12], stabV:.02, k:[0,7,10], s:[4,12], h:[2,6,10,14], hV:.09},
+  /* Listening Booth: just a quiet bed, so the voice is what you hear */
+  calm:{bpm:76, swing:0, prog:["Cmaj7","Am7","Fmaj7","G","Cmaj7","Am7","Fmaj7","G"],
+    lead:[[0,4],[76,4], [0,4],[72,4], [0,4],[69,4], [0,4],[71,4], [0,4],[79,4], [0,4],[76,4], [0,4],[77,4], [74,8]],
+    leadT:"sine", leadV:.08, leadLen:1.6, bass:[[0,0,14]], bassT:"sine", bassV:.12, pad:true, padV:.02, k:[], s:[], h:[], hV:0}
+};
+function build(sg){
+  var bars = sg.prog.length, ev = [], i; for (i = 0; i < bars*16; i++) ev.push([]);
+  var pos = 0; sg.lead.forEach(function(m){ if (m[0]) ev[(pos*2) % (bars*16)].push({l:m[0], d:m[1]*2}); pos += m[1]; });
+  sg.prog.forEach(function(name, b){
+    var ch = C[name], r = ch[0], s0 = b*16;
+    sg.bass.forEach(function(p){ ev[s0 + p[0]].push({b:r + p[1], d:p[2]}); });
+    (sg.arp || []).forEach(function(st, k){ ev[s0 + st].push({a:ch[1][k % ch[1].length] + 12}); });
+    (sg.drops || []).forEach(function(st, k){ ev[s0 + st].push({a:ch[1][(k*2 + b) % ch[1].length] + 24, drop:1}); });
+    (sg.stab || []).forEach(function(st){ ch[1].forEach(function(n){ ev[s0 + st].push({st:n}); }); });
+    if (sg.pad) ch[1].forEach(function(n){ ev[s0].push({p:n, d:16}); });
+    sg.k.forEach(function(st){ ev[s0 + st].push({k:1}); }); sg.s.forEach(function(st){ ev[s0 + st].push({s:1}); }); sg.h.forEach(function(st){ ev[s0 + st].push({h:1}); });
+  });
+  return ev;
+}
+function songStep(t, sp){
+  var sg = cur.sg, ev = cur.ev, s = step % ev.length, intro = step < 32;
+  ev[s].forEach(function(e){
+    if (e.l){ if (intro) return; tone(mf(e.l), t, sp*e.d*sg.leadLen, sg.leadT, sg.leadV, sg.blip ? mf(e.l)*1.06 : 0); if (sg.dbl) tone(mf(e.l - 12), t, sp*e.d*sg.leadLen, sg.dbl, sg.leadV*.6); }
+    else if (e.b) tone(mf(e.b), t, sp*e.d*.9, sg.bassT, sg.bassV);
+    else if (e.a){ if (intro && !e.drop) return; tone(mf(e.a), t, e.drop ? .35 : sp*.7, e.drop ? "sine" : "square", e.drop ? sg.dropV : sg.arpV); }
+    else if (e.st){ if (!intro) tone(mf(e.st), t, sp*.6, "square", sg.stabV); }
+    else if (e.p) tone(mf(e.p), t, sp*e.d, "triangle", sg.padV);
+    else if (e.k) tone(150, t, .12, "triangle", .4, 40);
+    else if (e.s) noise(t, .11, .26, 2600);
+    else if (e.h) noise(t, .03, sg.hV, 9000);
+  });
+}
 function sched(){
-  var c = AC; if (!c) return; var sp = 60/168/4; vols(); OUT = MUSG;
+  var c = AC; if (!c) return; vols(); OUT = MUSG;
+  var bpm = cur.sg ? cur.sg.bpm : 168, sp = 60/bpm/4;
   if (next < c.currentTime) next = c.currentTime + .03;
   while (next < c.currentTime + .12){
-    var t = next - c.currentTime, bar = Math.floor(step/16), b4 = bar % 4, s16 = step % 16;
-    if (step % 2 === 0){
-      if (bar >= 2) tone(mf(LEAD[(step/2) % 32]), t, sp*1.6, "square", .06);
-      tone(mf(ROOT[b4] + (s16 % 4 ? 12 : 0)), t, sp*1.5, "square", .075);
-    }
-    if (bar >= 4) tone(mf(CH[b4][s16 % 3] + 12), t, sp*.7, "square", .02);
-    if (s16 === 0 || s16 === 8 || s16 === 10) tone(150, t, .12, "triangle", .45, 40);
-    if (bar >= 4 && (s16 === 4 || s16 === 12)) noise(t, .12, .32, 2600);
+    var t = next - c.currentTime, sw = cur.sg && cur.sg.swing && step % 2 ? cur.sg.swing*sp : 0;
+    if (cur.sg) songStep(t + sw, sp); else driveStep(t, sp);
     step++; next += sp;
   }
   OUT = null;
 }
-AFX.musicStart = function(){
+AFX.songs = function(){ return ["drive", "theme"].concat(Object.keys(SONGS)); };
+AFX.musicStart = function(id){
+  if (id) AFX.song = id; id = AFX.song;
   if (bgm || !AFX.soundOn() || !AFX.musicOn() || !AFX.musicVol()) return;
-  var c = ac(); if (!c) return; step = 0; next = c.currentTime + .05; bgm = setInterval(sched, 25);
+  if (id === "theme" && root.ICATheme){ if (root.ICATheme.loop("chip")) bgm = "theme"; return; }
+  var c = ac(); if (!c) return; cur = {sg: SONGS[id] || null}; if (cur.sg) cur.ev = build(cur.sg);
+  step = 0; next = c.currentTime + .05; bgm = setInterval(sched, 25);
 };
-AFX.musicStop = function(){ if (bgm){ clearInterval(bgm); bgm = null; } };
-AFX.musicPlaying = function(){ return !!bgm; };
+function themeOn(){ return !!(root.ICATheme && root.ICATheme.playing()); }   /* the theme resumes itself when the page comes back */
+AFX.musicStop = function(){ if (themeOn()) root.ICATheme.stop(); if (bgm && bgm !== "theme") clearInterval(bgm); bgm = null; };
+AFX.musicPlaying = function(){ return !!bgm || themeOn(); };
+/* fade the arcade music down while a voice clip plays (the theme does this itself) */
+function duck(){ vols(); }
+document.addEventListener("play", function(e){ if (e.target && e.target.tagName === "AUDIO" && !e.target.hasAttribute("data-bgm")){ talking++; duck(true); } }, true);
+["pause", "ended"].forEach(function(k){ document.addEventListener(k, function(e){ if (e.target && e.target.tagName === "AUDIO" && !e.target.hasAttribute("data-bgm")){ talking = Math.max(0, talking - 1); if (!talking) duck(false); } }, true); });
 document.addEventListener("visibilitychange", function(){ if (document.hidden) AFX.musicStop(); });
 
 /* ---------- effects ---------- */

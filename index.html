@@ -15,9 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/style.css?v=66">
+<link rel="stylesheet" href="shared/style.css?v=67">
 <script src="shared/catalog.js"></script>
-<script src="shared/engine.js?v=66"></script>
+<script src="shared/engine.js?v=67"></script>
 <script src="shared/theme.js?v=2"></script>
 <style>
 /* The hub: a top-down study desk. Every object is a link to an app. */
@@ -347,7 +347,7 @@ function setupWithIntro(){
   var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "shared/intro.css?v=5"; document.head.appendChild(css);
   var font = document.createElement("link"); font.rel = "stylesheet"; font.href = "https://fonts.googleapis.com/css2?family=VT323&family=Silkscreen&family=DotGothic16&display=swap"; document.head.appendChild(font);
   var n = 0, fail = false, ready = function(){ if (++n === 2 && !fail) go(); };
-  ["shared/arcadefx.js?v=1", "shared/intro.js?v=7"].forEach(function(src){ var s = document.createElement("script"); s.src = src; s.onload = ready; s.onerror = function(){ if (!fail){ fail = true; setup(); } }; document.head.appendChild(s); });
+  ["shared/arcadefx.js?v=2", "shared/intro.js?v=7"].forEach(function(src){ var s = document.createElement("script"); s.src = src; s.onload = ready; s.onerror = function(){ if (!fail){ fail = true; setup(); } }; document.head.appendChild(s); });
 }
 function trackPicker(){
   var st = ICA.load();

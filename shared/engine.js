@@ -1046,7 +1046,7 @@ ICA.say = function(kind, key, btn){
   if (!AUD.queueKeep) AUD.queue = null; AUD.queueKeep = false;
   var f = (ICA.audioIndex()[kind] || {})[key]; if (!f) return false;
   var url = ICA.base + "audio/" + f, st = ICA.load().settings || {}, rate = parseFloat(st.audioSpeed) || 1;
-  if (!AUD.el){ AUD.el = new Audio(); AUD.el.addEventListener("ended", function(){ if (AUD.queue){ var q = AUD.queue; setTimeout(function(){ if (AUD.queue !== q) return; AUD.queueKeep = true; q(); }, AUD.gap || 0); return; } var done = AUD.btn, k = AUD.kind; if (AUD.btn) AUD.btn.classList.remove("playing"); AUD.btn = null; if (k === "story") storyNext(done); }); }
+  if (!AUD.el){ AUD.el = new Audio(); try { AUD.el.setAttribute("data-voice", ""); document.body.appendChild(AUD.el); } catch(x){}   /* in the page, so music can hear it start and fade under it */ AUD.el.addEventListener("ended", function(){ if (AUD.queue){ var q = AUD.queue; setTimeout(function(){ if (AUD.queue !== q) return; AUD.queueKeep = true; q(); }, AUD.gap || 0); return; } var done = AUD.btn, k = AUD.kind; if (AUD.btn) AUD.btn.classList.remove("playing"); AUD.btn = null; if (k === "story") storyNext(done); }); }
   var a = AUD.el; a.pause(); if (AUD.btn) AUD.btn.classList.remove("playing");
   a.src = AUD.cache[url] || url; a.playbackRate = rate; try { a.preservesPitch = true; } catch(e){}
   AUD.kind = kind; setVol();

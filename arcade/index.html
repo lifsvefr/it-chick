@@ -14,12 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=66">
+<link rel="stylesheet" href="../shared/style.css?v=67">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=66"></script>
+<script src="../shared/engine.js?v=67"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
-<script src="../shared/arcadefx.js"></script>
+<script src="../shared/theme.js?v=2"></script>
+<script src="../shared/arcadefx.js?v=2"></script>
 <style>
 /* ---------- landing: two 2×2 grids of game cards ---------- */
 .ahead{display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
@@ -303,7 +304,7 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .kin input:focus{outline:3px solid var(--lupine);outline-offset:2px}
 .kin input.ok{border-color:var(--ok);background:var(--okTint)}.kin input.bad{border-color:var(--gR);color:var(--gR)}
 .kin input::placeholder{font-size:.62em;font-weight:500}
-.beatg{position:relative}
+.beatg{position:relative;min-height:440px}
 .bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;opacity:0;transition:opacity .35s}
 .bgrid.on{opacity:1}
 .bcell{background:var(--panel);border:2.5px solid var(--line);border-radius:14px;padding:10px 4px;min-height:104px;display:grid;justify-items:center;align-content:center;gap:3px;text-align:center;transition:background .15s,border-color .15s}
@@ -315,7 +316,7 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .bswap{animation:fx-bswap .4s ease}@keyframes fx-bswap{from{opacity:0;transform:translateY(6px) scale(.97)}}
 .bmugi{text-align:center;margin-top:10px}.bmugi img{width:84px;height:84px;image-rendering:pixelated}
 .bbounce{animation:fx-bb .25s ease-out}@keyframes fx-bb{25%{transform:translateY(-8px) scale(1.08)}}
-.bvn{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:color-mix(in srgb,var(--bg) 88%,transparent);transition:opacity .4s;padding:10px;z-index:2}
+.bvn{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:28px!important;gap:8px;background:color-mix(in srgb,var(--bg) 88%,transparent);transition:opacity .4s;padding:10px;z-index:2}
 .bvn.hide{opacity:0;pointer-events:none}
 .bvn>img{width:110px;height:110px;image-rendering:pixelated}
 .bsay{background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:12px 16px;max-width:420px;text-align:center;display:grid;gap:4px}
@@ -587,7 +588,7 @@ function launch(g, again){
     else ({practice:practice, blitz:blitz, survival:survival, cards:flashcards, today:todayGame})[g](gm); };
   var go = function(){ if (!cur.alive) return;
     if (g === "cards" || g === "beat") return run();          // Flashcards stays calm; Beat Challenge brings its own song
-    AFX.musicStart();
+    AFX.musicStart(SONG[g] || "drive");
     cur.cancel = AFX.countdown(document.getElementById("scr"), function(){ cur.cancel = null; run(); }); };
   if (howSeen(g)) go(); else howDlg(g, true, go);
 }
@@ -1421,7 +1422,7 @@ function beat(gm){
   for (var r = 0; r < R; r++){ var row = [], prev = -1; for (var b = 0; b < BEAT.per; b++){ var k, g = 0; do { k = Math.floor(Math.random() * set.length); } while (k === prev && ++g < 8); prev = k; row.push(set[k]); } rounds.push(row); }
   gm.innerHTML = '<div class="stack beatg" data-nosay><div class="hud"><span>Round <b id="brn">1</b>/'+R+'</span><span>'+speed+'×</span></div>'+
     '<div class="bgrid" id="bg"></div><div class="bmugi"><img id="bm" src="../shared/mascot/pixel/mugi-px-yay.webp" alt=""></div>'+
-    '<div class="bvn" id="bvn"><img src="../shared/mascot/pixel/mugi-px-hello.webp" alt=""><div class="bsay"><b>Mugi</b><p id="bvt">Say each word right on the beat! Don’t lose the rhythm!</p><p lang="ja" class="small" id="bvj">ビートにあわせて、ことばを言ってね！</p><p class="small muted bcue" id="bcue">♪ Listen for the beat… ♪</p><div class="row" id="bbt" hidden><button class="btn primary" data-again="beat">▶ Again, new words</button><button class="btn" data-back>Change set</button></div></div></div></div>';
+    '<div class="bvn" id="bvn"><img src="../shared/mascot/pixel/mugi-px-hello.webp" alt=""><div class="bsay"><b>Mugi</b><p id="bvt">Eight pictures a round. When a card lights up, that’s your cue: say it out loud!</p><p lang="ja" class="small" id="bvj">カードが光ったら、声に出して言ってみよう！</p><p class="small muted bcue" id="bcue">♪ Counting you in… ♪</p><div class="row" id="bbt" hidden><button class="btn primary" data-again="beat">▶ Again, new words</button><button class="btn" data-back>Change set</button></div></div></div></div>';
   var a = beatAudio || (beatAudio = new Audio("beat_challenge.mp3"));
   a.preservesPitch = a.mozPreservesPitch = a.webkitPreservesPitch = true;
   a.pause(); a.currentTime = 0; a.playbackRate = speed; a.volume = Math.max(0, Math.min(1, AFX.musicVol())); a.muted = !soundOn();
@@ -1447,8 +1448,8 @@ function beat(gm){
   }
   function outro(){
     ended = true; vn.querySelector("img").src = "../shared/mascot/pixel/mugi-px-yay.webp";
-    document.getElementById("bvt").textContent = "Phew! How did you do? Nice rhythm!";
-    document.getElementById("bvj").textContent = "ふう〜！どうだった？ナイスリズム！";
+    document.getElementById("bvt").textContent = "That’s a wrap! Did your mouth keep up with the beat?";
+    document.getElementById("bvj").textContent = "おつかれさま！ビートについていけた？";
     document.getElementById("bcue").hidden = true; document.getElementById("bbt").hidden = false;
     vn.classList.remove("hide"); bg.classList.remove("on");
     var st = ICA.load().arcade; st.beatPlays = (st.beatPlays || 0) + 1; ICA.save();
@@ -1461,6 +1462,9 @@ function beat(gm){
   raf = requestAnimationFrame(frame);
 }
 
+/* each game has its own tune (shared/arcadefx.js); "theme" is the academy's theme song */
+var SONG = {today:"theme", practice:"theme", mix:"theme", blitz:"drive", survival:"boss", boss:"boss", sprint:"sprint", match:"puzzle", pairs:"puzzle",
+  build:"puzzle", rain:"rain", pop:"pop", listen:"calm", type:"keys"};
 var lastArg = {};
 /* ---------- one click handler for the page ---------- */
 app.addEventListener("click", function(e){
