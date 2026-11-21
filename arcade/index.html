@@ -14,13 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=67">
+<link rel="stylesheet" href="../shared/style.css?v=68">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=67"></script>
+<script src="../shared/engine.js?v=68"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/theme.js?v=2"></script>
-<script src="../shared/arcadefx.js?v=2"></script>
+<script src="../shared/arcadefx.js?v=3"></script>
 <style>
 /* ---------- landing: two 2×2 grids of game cards ---------- */
 .ahead{display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
@@ -260,7 +260,7 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .mgr{width:34px;height:34px;object-fit:contain;image-rendering:pixelated;flex:none}
 .rainf{position:relative;height:290px;background:linear-gradient(var(--scr2),var(--scr));border:2px solid var(--line);overflow:hidden}
 .rainf .drop{position:absolute;left:50%;top:4px;font-size:46px;font-weight:700;line-height:1;transform:translate(-50%,0);color:var(--gT);text-shadow:var(--glowT);will-change:transform}
-.rainf .drop.splash{animation:fx-jelly .35s}
+.rainf .dk{display:inline-block}.rainf .dk.splash{animation:fx-jelly .35s}
 .rainf .ground{position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(90deg,var(--gG) 0 10px,color-mix(in srgb,var(--gG) 70%,var(--scr)) 10px 14px)}
 .psent{font-size:1.45em;line-height:2.1}
 .blank{display:inline-block;min-width:2.2em;padding:0 .3em;margin:0 .15em;border-radius:99px;border:2px dashed var(--gR);color:var(--gR);font-weight:800;text-align:center}
@@ -305,11 +305,11 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .kin input.ok{border-color:var(--ok);background:var(--okTint)}.kin input.bad{border-color:var(--gR);color:var(--gR)}
 .kin input::placeholder{font-size:.62em;font-weight:500}
 .beatg{position:relative;min-height:440px}
-.bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;opacity:0;transition:opacity .35s}
+.bgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;opacity:0;transition:opacity .35s}
 .bgrid.on{opacity:1}
-.bcell{background:var(--panel);border:2.5px solid var(--line);border-radius:14px;padding:10px 4px;min-height:104px;display:grid;justify-items:center;align-content:center;gap:3px;text-align:center;transition:background .15s,border-color .15s}
+.bcell{min-width:0;overflow:hidden;background:var(--panel);border:2.5px solid var(--line);border-radius:12px;padding:10px 2px;min-height:104px;display:grid;justify-items:center;align-content:center;gap:3px;text-align:center;transition:background .15s,border-color .15s}
 .bcell .bi{font-size:2.1em;line-height:1}
-.bcell .bj{font-size:clamp(.95em,4.2vw,1.3em);font-weight:800;line-height:1.2;word-break:keep-all}
+.bcell .bj{font-size:clamp(.8em,3.6vw,1.25em);font-weight:800;line-height:1.2;white-space:nowrap;letter-spacing:-.02em}
 .bcell .be{font-size:.72em;color:var(--soft)}
 .bcell.lit{background:var(--goldTint);border-color:var(--gold);box-shadow:0 0 0 2px color-mix(in srgb,var(--gold) 35%,transparent)}
 .bpop{animation:fx-bpop .28s ease}@keyframes fx-bpop{38%{transform:scale(1.12)}}
@@ -322,10 +322,10 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .bsay{background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:12px 16px;max-width:420px;text-align:center;display:grid;gap:4px}
 .bsay p{margin:0}.bsay .row{justify-content:center;margin-top:6px}
 .bcue{animation:fx-cue 1.3s ease-in-out infinite}@keyframes fx-cue{50%{opacity:.4}}
-@media (max-width:360px){.bgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:340px){.bgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){.bpop,.bswap,.bbounce,.bcue{animation:none}}
 .kbtns{justify-content:center}.ktip{text-align:center;margin:0}
-@media (prefers-reduced-motion:reduce){.bossbox,.choice.popped,.rainf .drop.splash{animation:none}}
+@media (prefers-reduced-motion:reduce){.bossbox,.choice.popped,.rainf .dk.splash{animation:none}}
 @media (prefers-reduced-motion:reduce){.jg-shake,.jg-pulse,.combo.hot,.float,.gc svg .idle{animation:none}.gc,.gc svg .mv{transition:none}}
 </style>
 </head>
@@ -989,7 +989,7 @@ HOW.build = ["Read the English, then tap the Japanese tiles in order to build th
 HOW.listen = ["You’ll hear a line from the Japanese lessons. Which one was it?", "Tap <b>▶ Play again</b> as often as you like, but answering on the first listen scores most.", "10 lines a round."];
 HOW.boss = ["Every unit has a boss. Right answers knock its health down; combos hit harder.", "A wrong answer lets the boss hit back: you have <b>three hearts</b>.", "Beat a unit’s boss to put its badge on your shelf."];
 HOW.mix = ["15 questions mixed from a whole track, so you switch between topics the way a real test does.", "No clock. Read why after each answer.", "Mixing topics is harder than one at a time, and it makes what you learn stick."];
-AFX.MUGI.rain = 4000; AFX.MUGI.pop = 2500; AFX.MUGI.build = 1600; AFX.MUGI.listen = 1000; AFX.MUGI.boss = 3000; AFX.MUGI.mix = 15;
+AFX.MUGI.rain = 9999; AFX.MUGI.pop = 2500; AFX.MUGI.build = 1045; AFX.MUGI.listen = 1010;   /* Mugi sits just out of reach: build max 8×100 + 240-second bonus, listen max 10×100 */ AFX.MUGI.boss = 3000; AFX.MUGI.mix = 15;
 var fmt0 = AFX.fmt; AFX.fmt = function(key, n){ return key === "mix" ? n + "/15" : fmt0(key, n); };
 ART.rain = '<g class="idle"><text x="26" y="18" font-size="15" class="A" lang="ja">あ</text></g><text x="54" y="34" font-size="17" class="A" lang="ja">カ</text><g class="mv"><text x="80" y="22" font-size="14" class="A" lang="ja">さ</text></g><path d="M10 62 H110" class="S" style="stroke:var(--soft)"/><path d="M38 44 v6 M70 48 v6 M96 40 v6" class="S" style="stroke-width:2;stroke-dasharray:2 3"/>';
 ART.pop = '<circle cx="34" cy="38" r="17" class="O"/><text x="34" y="39" text-anchor="middle" dominant-baseline="central" font-size="17" class="A" lang="ja">は</text><g class="mv"><circle cx="70" cy="30" r="15" class="A"/><text x="70" y="31" text-anchor="middle" dominant-baseline="central" font-size="15" class="P" lang="ja">が</text></g><circle cx="98" cy="46" r="11" class="O"/><text x="98" y="47" text-anchor="middle" dominant-baseline="central" font-size="11" class="A" lang="ja">を</text><path d="M84 12 l3 -6 M90 16 l6 -3" class="S idle"/>';
@@ -1044,7 +1044,7 @@ function revList(title, rows){ return rows.length ? '<h2>'+title+'</h2><div clas
 function kanaPool(set){ var out = []; KL.decks.forEach(function(dk){ if (dk.kind === "kana" && set.indexOf(dk.set) > -1) dk.items.forEach(function(it){ out.push(it); }); }); return out; }
 function rain(gm){
   var pool = kanaPool(lv2("rain")), score = 0, streak = 0, right = 0, seen = 0, lives = 3, missed = [], fall = 6500, raf = null, t0 = 0, held = 0, it = null, q = null, done = false;
-  gm.innerHTML = '<div class="stack">'+hudJP('<span class="hearts" id="hp" aria-label="3 hearts left">❤️❤️❤️</span>')+'<div class="rainf" id="rf" data-nosay><span class="drop" id="dp" lang="ja"></span><div class="ground"></div></div><div id="ch"></div></div>';
+  gm.innerHTML = '<div class="stack">'+hudJP('<span class="hearts" id="hp" aria-label="3 hearts left">❤️❤️❤️</span>')+'<div class="rainf" id="rf" data-nosay><span class="drop" id="dp" lang="ja"><span class="dk" id="dk"></span></span><div class="ground"></div></div><div id="ch"></div></div>';
   timerId = 1;
   cur.stop = function(){ if (raf) cancelAnimationFrame(raf); raf = null; };
   cur.pause = function(){ held = performance.now(); };
@@ -1062,13 +1062,14 @@ function rain(gm){
     var opts = [it], tries = 0;
     while (opts.length < 4 && tries++ < 200){ var c = pool[Math.floor(Math.random() * pool.length)]; if (opts.every(function(o){ return o.ro !== c.ro && o.q !== c.q; }) && (c.grp === it.grp || tries > 60)) opts.push(c); }
     opts = ICA.shuffle(opts); q = {opts: opts.map(function(o){ return {t:o.ro, ok:o === it}; })};
-    var dp = document.getElementById("dp"); dp.textContent = it.q; dp.classList.remove("splash"); dp.style.transform = "translate(-50%,0)";
+    var dp = document.getElementById("dp"), dk = document.getElementById("dk"); dp.style.transition = "none"; dp.style.opacity = "0"; dp.style.transform = "translate(-50%,0)"; dk.textContent = it.q; dk.classList.remove("splash"); void dp.offsetWidth; dp.style.transition = "opacity .25s"; dp.style.opacity = "1";
     document.getElementById("ch").innerHTML = choiceHTML(q);
     to = bindChoices(document.getElementById("ch"), q, function(ok, k){
       done = true; seen++; var el = k >= 0 ? ICA.$$(".choice", document.getElementById("ch"))[k] : document.getElementById("dp");
-      if (ok){ right++; streak++; var p = 10 + Math.min(streak - 1, 10) * 3 + Math.round((1 - (performance.now() - t0) / fall) * 10); score += p; hit(true, el, streak, "+" + p); fall = Math.max(2200, fall * 0.96); juice(document.getElementById("dp"), "splash"); }
+      if (ok){ right++; streak++; var p = 10 + Math.min(streak - 1, 10) * 3 + Math.round((1 - (performance.now() - t0) / fall) * 10); score += p; hit(true, el, streak, "+" + p); fall = Math.max(2200, fall * 0.96); juice(document.getElementById("dk"), "splash"); }
       else { hit(false, el, streak); streak = 0; lives--; if (missed.indexOf(it) < 0) missed.push(it); var hp = document.getElementById("hp"); hp.textContent = lives > 0 ? new Array(lives+1).join("❤️") : "💔"; hp.setAttribute("aria-label", lives+" hearts left"); }
       AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
+      var dq = document.getElementById("dp"); if (dq){ dq.style.transition = "opacity " + (ok ? ".3s" : ".5s") + " " + (ok ? ".08s" : ".5s"); dq.style.opacity = "0"; }
       setTimeout(function(){ if (!cur.alive) return; if (lives <= 0){ cur.stop(); timerId = null; end2("rain", score, right + " caught · " + (seen - right) + " missed", right, seen, revList("Worth another look", missed.map(function(m){ return '<div class="card mrow"><span><span lang="ja" style="font-size:1.6em">'+esc(m.q)+'</span> = <b>'+esc(m.ro)+'</b></span></div>'; }))); } else { t0 = performance.now(); next(); } }, ok ? 380 : 1100);
     });
     t0 = performance.now();
@@ -1259,7 +1260,7 @@ function mix(gm, tid){
    See a word (or hear it), type its reading. Romaji turns into kana as you type, the way a Japanese IME does;
    a Japanese keyboard works too. Words: Kanji Lab vocab (every word has a clip). */
 G2.type = {name:"Kana Keys", levels:[["N5","N5"],["N4","N4"],["N3","N3"]], def:"N5", data:"kanji", modes:[["see","See it"],["hear","Hear it"]], mdef:"see"};
-LNAME.type = "Kana Keys"; ACC.type = "a1"; AFX.MUGI.type = 450;
+LNAME.type = "Kana Keys"; ACC.type = "a1"; AFX.MUGI.type = 690;   /* the most a 20-word round can score, answering every word instantly */
 HOW.type = ["<b>See it:</b> a word appears in kanji. Type how it’s read. <b>Hear it:</b> listen, then type what you heard.", "Type in romaji (<b>ka</b> → か, <b>shi</b> → し, <b>nn</b> → ん, <b>-</b> → ー) or with a Japanese keyboard. The word clears the moment it’s right.", "After 6 seconds the reading fades in to help, for fewer points. A wrong check costs nothing the first time; the second costs a heart. You have <b>three</b>.", "20 words a round."];
 ART.type = '<rect x="8" y="34" width="22" height="20" rx="4" class="O"/><rect x="34" y="34" width="22" height="20" rx="4" class="O"/><g class="mv"><rect x="60" y="30" width="24" height="24" rx="4" class="A"/><text x="72" y="43" text-anchor="middle" dominant-baseline="central" style="font-size:13px" class="P" lang="ja">か</text></g><rect x="88" y="34" width="22" height="20" rx="4" class="O"/><text x="19" y="44" text-anchor="middle" dominant-baseline="central" style="font-size:9px" class="A">K</text><text x="45" y="44" text-anchor="middle" dominant-baseline="central" style="font-size:9px" class="A">A</text><path d="M18 22 h60" class="S idle" style="stroke-dasharray:3 4"/>';
 function md2(g){ var j = jp(); j.md2 = j.md2 || {}; return j.md2[g] || G2[g].mdef; }
@@ -1387,7 +1388,8 @@ function typeGame(gm){
 }
 
 /* ---------- Beat Challenge: say each word on the beat ----------
-   Track and timings: the owner's own beat track (arcade/beat_challenge.mp3) and her Audacity labels.
+   Timings: the owner's Audacity labels from her original version. Song: an original made for this timing by
+   tools/make_beat_song.py (arcade/beat_challenge.mp3); each "say" hit lands on her labelled beats.
    Everything runs off the song's own clock (audio.currentTime), so it stays in sync at any speed. */
 var BEAT = {
   introFadeOut: 2.496584,
@@ -1421,14 +1423,14 @@ function beat(gm){
   var set = BSETS[lv2("beat")][1], recall = md2("beat") === "recall", speed = sp2("beat"), R = BEAT.setFadeIn.length, rounds = [], raf = null, shown = -2, lit = -1, ended = false;
   for (var r = 0; r < R; r++){ var row = [], prev = -1; for (var b = 0; b < BEAT.per; b++){ var k, g = 0; do { k = Math.floor(Math.random() * set.length); } while (k === prev && ++g < 8); prev = k; row.push(set[k]); } rounds.push(row); }
   gm.innerHTML = '<div class="stack beatg" data-nosay><div class="hud"><span>Round <b id="brn">1</b>/'+R+'</span><span>'+speed+'×</span></div>'+
-    '<div class="bgrid" id="bg"></div><div class="bmugi"><img id="bm" src="../shared/mascot/pixel/mugi-px-yay.webp" alt=""></div>'+
+    '<div class="bgrid" id="bg"></div>'+
     '<div class="bvn" id="bvn"><img src="../shared/mascot/pixel/mugi-px-hello.webp" alt=""><div class="bsay"><b>Mugi</b><p id="bvt">Eight pictures a round. When a card lights up, that’s your cue: say it out loud!</p><p lang="ja" class="small" id="bvj">カードが光ったら、声に出して言ってみよう！</p><p class="small muted bcue" id="bcue">♪ Counting you in… ♪</p><div class="row" id="bbt" hidden><button class="btn primary" data-again="beat">▶ Again, new words</button><button class="btn" data-back>Change set</button></div></div></div></div>';
   var a = beatAudio || (beatAudio = new Audio("beat_challenge.mp3"));
   a.preservesPitch = a.mozPreservesPitch = a.webkitPreservesPitch = true;
   a.pause(); a.currentTime = 0; a.playbackRate = speed; a.volume = Math.max(0, Math.min(1, AFX.musicVol())); a.muted = !soundOn();
   if (!soundOn()) ICA.toast("Sound is off. Turn it on (🔊) to hear the beat.");
   a.onerror = function(){ ICA.toast("The beat track didn’t load. Check your connection."); };
-  var bg = document.getElementById("bg"), vn = document.getElementById("bvn"), bm = document.getElementById("bm");
+  var bg = document.getElementById("bg"), vn = document.getElementById("bvn");
   function render(r){
     bg.innerHTML = rounds[r].map(function(w){ return '<div class="bcell"><span class="bi" aria-hidden="true">'+w[0]+'</span>'+(recall ? '' : '<span class="bj" lang="ja">'+esc(w[1])+'</span>')+'<span class="be">'+esc(w[2])+'</span></div>'; }).join("");
     document.getElementById("brn").textContent = r + 1; juice(bg, "bswap");
@@ -1444,7 +1446,7 @@ function beat(gm){
     if (r !== shown){ shown = r; lit = -1; render(r); bg.classList.add("on"); }
     var n = 0, base = r * BEAT.per; for (var b = 0; b < BEAT.per; b++) if (BEAT.beatTimes[base + b] <= t) n = b + 1;
     var cells = bg.children; for (var c = 0; c < cells.length; c++) cells[c].classList.toggle("lit", c < n);
-    if (n - 1 !== lit && n > 0){ lit = n - 1; juice(cells[lit], "bpop"); juice(bm, "bbounce"); }
+    if (n - 1 !== lit && n > 0){ lit = n - 1; juice(cells[lit], "bpop"); }
   }
   function outro(){
     ended = true; vn.querySelector("img").src = "../shared/mascot/pixel/mugi-px-yay.webp";
@@ -1462,9 +1464,9 @@ function beat(gm){
   raf = requestAnimationFrame(frame);
 }
 
-/* each game has its own tune (shared/arcadefx.js); "theme" is the academy's theme song */
-var SONG = {today:"theme", practice:"theme", mix:"theme", blitz:"drive", survival:"boss", boss:"boss", sprint:"sprint", match:"puzzle", pairs:"puzzle",
-  build:"puzzle", rain:"rain", pop:"pop", listen:"calm", type:"keys"};
+/* each game has its own tune (shared/arcadefx.js), all built up like the first arcade tune */
+var SONG = {today:"quiz", practice:"quiz", mix:"quiz", blitz:"drive", survival:"boss", boss:"boss", sprint:"sprint", match:"think", pairs:"think",
+  build:"think", rain:"rain", pop:"pop", listen:"pulse", type:"keys"};
 var lastArg = {};
 /* ---------- one click handler for the page ---------- */
 app.addEventListener("click", function(e){
