@@ -136,7 +136,8 @@ ICA.addUnit({
       {t:"Because prices are signals, economists of all schools agree that governments should never set prices.", flag:true, why:"Wrong. Economists accept the signalling idea but disagree, by school and by case, about when interventions help."},
       " ",
       {t:"Externalities such as pollution are an example of market failure.", flag:false, why:"Correct: the price leaves out a cost that falls on others."}
-    ]}
+    ]},
+    {id:"e4u23-l1-x8", type:"explain", q:"A government caps the price of bread below its market equilibrium price. Use supply and demand to explain what happens, and why the lesson says that “the scarcity does not disappear”. Then say why the simple model is not the last word.", size:"3–5 sentences", hint:"At the capped price, compare how much buyers want with how much sellers offer.", model:"At the equilibrium price, buyers want exactly what sellers offer. A ceiling below it raises the quantity buyers want, a movement along the demand curve, and lowers the quantity sellers offer, a movement along the supply curve. The gap is a shortage. Because the price can no longer signal scarcity, the bread is rationed in other ways: queues, connections, black markets or falling quality. So the scarcity has not gone; it shows up somewhere else. The model is a starting point, though, and evidence decides each case: rent control in San Francisco helped sitting tenants stay, but landlords cut the supply of rental housing.", points:["Says buyers want more and sellers offer less at the capped price", "Names the result as a shortage", "Explains that the shortage is rationed by queues, black markets or lower quality", "Links this to the idea that a price signals scarcity", "Says evidence, not the diagram alone, decides real cases, with an example"]}
    ],
    apply:{
     intro:"Use the four-step method and the vocabulary on real prices. You need only a browser and a notebook.",
@@ -278,7 +279,8 @@ ICA.addUnit({
       {t:"PPP, because it is always more accurate", why:"PPP is better for comparing living standards, not for payments made abroad. Neither is “always” better."},
       {t:"Nominal GDP in each country’s own currency, with no conversion", why:"Figures in different currencies can’t be ranked against each other."},
       {t:"The consumer price index", why:"The CPI measures inflation, not the size of an economy."}
-    ]}
+    ]},
+    {id:"e4u23-l2-x8", type:"explain", q:"A report says nominal GDP rose 10% this year, while prices rose 6%. Explain why this does not mean the economy grew 10%, work out the real growth rate, and name two other questions you should ask about any growth figure.", size:"3–5 sentences", prompt:"Nominal GDP is measured at…", hint:"Divide by 1.06, not just subtract. Then think about population and currency.", model:"Nominal GDP values output at the prices of the day, so it can rise just because prices rose. Real GDP values output at fixed base-year prices, so it moves only when the quantity of goods and services changes. If nominal GDP rose from 1,000 to 1,100 while prices rose 6%, real GDP is 1,100 ÷ 1.06 ≈ 1,037.7, so real growth is about 3.8%, not 10%. The quick subtraction, 10 − 6 = 4%, works only for small numbers. I would also ask whether the figure is a total or per person, and whether it is in local currency or dollars, since a falling currency can change the dollar story.", points:["Defines nominal GDP as measured at current prices", "Defines real GDP as measured at fixed base-year prices", "Calculates real growth correctly, at about 3.8%", "Asks whether the figure is total or per person", "Asks whether it is in local currency or dollars"]}
    ],
    apply:{
     intro:"Meet the numbers at their source. Everything here is free.",
@@ -420,7 +422,8 @@ ICA.addUnit({
       {t:"Deep integration can conflict with democratic choices and national social bargains", b:2, why:"Rodrik’s globalisation paradox."},
       {t:"New industries may need temporary protection before they can compete", b:1, why:"The infant-industry argument of Hamilton and List."},
       {t:"Comparative advantage means both countries can gain even if one is better at everything", b:0, why:"Ricardo’s result, the core of the mainstream case."}
-    ]}
+    ]},
+    {id:"e4u23-l3-x8", type:"explain", q:"In the standard model, a tariff on imported bicycles helps home producers and raises revenue, yet makes the country as a whole worse off. Explain why, and then explain why tariffs often survive politically anyway.", size:"3–5 sentences", hint:"Compare the buyers’ loss with the producers’ gain plus the revenue. What is left over?", model:"A tariff raises the domestic price by the amount of the tariff. Buyers lose consumer surplus, because they pay more and buy fewer bicycles. Home producers gain some producer surplus, and the government collects revenue on the imports that remain. But the buyers’ loss is larger than the producers’ gain plus the revenue; the difference is the deadweight loss. It comes from making bicycles at home that cost more than imports, and from purchases that no longer happen. Tariffs survive politically because the protection and revenue go to a few groups, while the cost is spread thinly across all buyers.", points:["Says the tariff raises the domestic price", "Explains that buyers lose consumer surplus", "Explains that producers gain and the government collects revenue", "Explains the deadweight loss: buyers’ loss is larger than the gains", "Explains the politics: concentrated gains, spread-out costs"]}
    ],
    apply:{
     intro:"Look up real trade measures and trace their effects. All the tools here are free.",
@@ -553,7 +556,8 @@ ICA.addUnit({
       {t:"The IMF later accepted that its programmes’ initial fiscal targets had been too tight.", flag:false, why:"Correct: the IMF said so in its own review."},
       " ",
       {t:"Current account deficits in the crisis countries grew larger in 1998.", flag:true, why:"Wrong. Imports collapsed and current accounts swung into surplus."}
-    ]}
+    ]},
+    {id:"e4u23-l4-x8", type:"explain", q:"Is a current account deficit bad? Use the saving–investment identity to explain where a deficit comes from, and what makes one more or less risky. You may use Thailand before 1997 as an example.", size:"3–5 sentences", hint:"Current account balance = national saving − domestic investment. Then ask what the borrowing pays for.", model:"The saving–investment identity says a country’s current account balance equals its national saving minus its domestic investment. If a country invests 26% of GDP but saves only 22%, it must borrow the other 4% from abroad, so it runs a current account deficit of about 4% of GDP. A deficit is not bad in itself; the question is what the borrowing pays for. Borrowing to build ports and factories that will raise future exports can be sensible. Borrowing for consumption, a property bubble or a government that cannot raise taxes is riskier, especially when the debt is short-term and in foreign currency, as much of Thailand’s was before 1997.", points:["States the saving–investment identity", "Shows how investment above saving creates a deficit, with numbers or an example", "Says a deficit is not bad in itself; it depends on what the borrowing pays for", "Contrasts productive borrowing with riskier uses", "Names short-term or foreign-currency debt as an added risk"]}
    ],
    apply:{
     intro:"Read real external accounts and exchange-rate decisions. Everything here is free.",
@@ -708,7 +712,8 @@ ICA.addUnit({
       {v:35, tol:0.5, why:"35 years is the doubling time at 2%. Divide 70 by 3.5."},
       {v:28.6, tol:0.5, why:"You divided 100 by 3.5. The rule uses 70, because growth compounds."},
       {v:245, tol:1, why:"You multiplied 70 by 3.5 instead of dividing."}
-    ]}
+    ]},
+    {id:"e4u23-l5-x8", type:"explain", q:"A headline says: “Bangladesh overtakes India.” Using the four things an analyst checks before comparing two numbers, explain how this can be true and misleading at the same time.", size:"3–5 sentences", hint:"Source, vintage, unit, year. Is the figure data or a projection? Market rates or PPP?", model:"Before comparing numbers, an analyst checks the source, vintage, unit and year. The claim is true for one measure: the IMF’s October 2026 projections put Bangladesh ahead in GDP per person at market exchange rates in 2026. But that is a projection, not data, from one edition that will be revised. It is also mostly about exchange rates: in 2023 Bangladesh’s dollar figure fell because the taka lost value, even though real output per person grew. At purchasing power parity, India stays about a fifth ahead, and real GDP per person grew faster in India from 2019 to 2025. A careful sentence names the measure, the source and the date.", points:["Names the four checks: source, vintage, unit and year", "Says the claim holds only at market exchange rates", "Notes that the 2026 figure is a projection from one edition", "Explains how exchange-rate moves change dollar figures", "Gives the PPP or real-growth comparison, where India is ahead"]}
    ],
    apply:{
     intro:"Build your own dated comparison from the original sources. Everything here is free and needs no account.",

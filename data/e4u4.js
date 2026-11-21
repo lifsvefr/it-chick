@@ -139,7 +139,8 @@ ICA.addUnit({
       {t:"She is right: distance always makes a researcher more objective.", why:"The Orientalism critique shows outsiders carry their own frames. Distance is not neutrality."},
       {t:"Only Japanese scholars can understand Japan, so she should change her topic.", why:"That is itself a uniqueness claim, and it would make comparison and critique impossible."},
       {t:"Objectivity doesn’t matter in area studies, so the question is irrelevant.", why:"Area studies still needs evidence and careful method. The debate is about how position affects them."}
-    ]}
+    ]},
+    {id:"e4u4-l1-x8", type:"explain", q:"A travel blog says: “The Japanese all put the group first, because Japan is a homogeneous nation.” Explain why scholars would call this a nihonjinron claim, and what they would say is wrong with it.", size:"3–5 sentences", hint:"Whose lives does the claim describe, and when did the “homogeneous” story take hold?", model:"Nihonjinron is writing that claims to explain what makes the Japanese unique, often by a group-centred, homogeneous culture. Scholars criticise such claims in several ways. Mouer and Sugimoto showed they often generalise from one narrow slice of society, men employed by large firms. Dale, Yoshino and Befu argued that they work like ideology, a form of cultural nationalism. Oguma showed that the “single-ethnic-nation” story became dominant after 1945, when the empire was gone. And the claim hides real diversity: the Ainu, Okinawans, Zainichi Koreans, buraku people and foreign residents. So the blog is better read as evidence of how Japan is imagined, not as a description of 120 million people.", points:["Identifies the claim as a whole-nation uniqueness claim", "Says such claims generalise from a narrow slice of society (Mouer and Sugimoto)", "Says they can work as nationalist ideology, naming a critic", "Notes that homogeneity is a historical story (Oguma) or that it hides real diversity", "Suggests reading nihonjinron as a source about images of Japan"]}
    ],
    apply:{
     intro:"Practise reading Japan studies critically. Everything here uses free sources; keep your notes for your own use.",
@@ -283,7 +284,8 @@ ICA.addUnit({
       {t:"Supporters of revision say the text should match reality; opponents say Article 9 has helped keep Japan out of war.", flag:false, why:"A fair, balanced summary of two main positions."},
       " ",
       {t:"Everyone in Japan now agrees the Constitution must be rewritten.", flag:true, why:"One-sided and false. Views are divided and depend on the question asked and the year of the poll."}
-    ]}
+    ]},
+    {id:"e4u4-l2-x8", type:"explain", q:"Article 9 says that land, sea and air forces “will never be maintained”, yet Japan has had the Self-Defense Forces since 1954. Explain how successive governments square this, and set out the revision debate without taking sides.", size:"3–5 sentences", hint:"Separate the government’s interpretation from what critics and the courts say.", model:"Successive governments have held that Article 9 doesn’t deny a state’s inherent right of self-defence, so forces limited to the minimum needed for self-defence are not “war potential”. Many constitutional scholars disagree, and the courts have mostly avoided ruling on the SDF directly. In 2014 the cabinet reinterpreted the article to allow limited collective self-defence. Supporters of revision say the text no longer matches reality and was written under occupation. Opponents say Article 9 has kept Japan out of war and reinterpretation already goes too far. Others, like the LDP in 2018, would add a clause recognising the SDF. As of November 2026 it has never been amended.", points:["Explains the government’s self-defence interpretation", "Notes that many scholars disagree and the courts have mostly avoided ruling", "Mentions the 2014 reinterpretation on collective self-defence", "Gives the main argument for and against revision, without taking sides", "Dates the claim that the Constitution has never been amended"]}
    ],
    apply:{
     intro:"Work with primary sources: the Constitution itself and a timeline you build.",
@@ -416,7 +418,8 @@ ICA.addUnit({
       {t:"The LDP has governed without interruption since 1955.", flag:true, why:"Inaccurate. It lost power in 1993–94 and 2009–12."},
       " ",
       {t:"Governors and mayors are elected directly by local voters.", flag:false, why:"Accurate: Japan’s local governments have directly elected executives and assemblies."}
-    ]}
+    ]},
+    {id:"e4u4-l3-x8", type:"explain", q:"Compare Chalmers Johnson’s answer to the question “who really governs Japan?” with Ramseyer and Rosenbluth’s, and explain why scholars now ask the question differently.", size:"3–4 sentences", hint:"Who is the principal and who is the agent?", model:"Chalmers Johnson argued that “the politicians reign and the bureaucrats rule”: elite officials, above all at MITI, set economic strategy while politicians mostly protected them. Ramseyer and Rosenbluth used principal–agent theory to argue the reverse. In their view, LDP politicians were the principals who delegated to bureaucrats and could reward or punish them. Many scholars take a middle view, an iron triangle of ruling-party policy specialists, ministries and industry groups that need each other. Since the reforms of the 1990s, power has shifted from ministries towards the prime minister’s office, so the question has become “which politicians, and how centralised?”", points:["States Johnson’s bureaucracy-dominance view", "States Ramseyer and Rosenbluth’s politician-dominance view, using principal–agent theory", "Describes the middle view of an iron triangle", "Explains the shift towards the prime minister’s office and the new question"]}
    ],
    apply:{
     intro:"Use official sources to see the system at work. All are free and in English as well as Japanese.",
@@ -554,7 +557,8 @@ ICA.addUnit({
       {t:"Japan became a poor country after 1990.", why:"Japan stayed a rich country with low unemployment and long life expectancy."},
       {t:"Nothing at all changed in the Japanese economy after 1990.", why:"There were major reforms, banking clean-ups, Abenomics and the end of negative interest rates in 2024."},
       {t:"The lost decades were caused by Japanese culture.", why:"A cultural explanation without evidence. Economists point to the bubble’s collapse, bad loans, deflation and demographics."}
-    ]}
+    ]},
+    {id:"e4u4-l4-x9", type:"explain", q:"Each of the four explanations of Japan’s postwar “miracle” in the lesson’s table has a known weakness. Use the weaknesses of at least three of them to explain why most scholars today combine explanations, and why cultural explanations are left out.", size:"3–5 sentences", hint:"Read the table’s last column: what does each explanation fail to explain?", model:"Each explanation in the table fits part of the evidence but leaves something out. Johnson’s developmental state, with MITI steering investment, overstates the state, since many successful firms ignored MITI. Catch-up accounts (high saving, an educated workforce, imported technology) don’t explain why Japan caught up faster than others. A favourable world economy doesn’t explain why others with similar conditions grew less. Institutions such as lifetime employment were partly results of growth and covered only part of the workforce. Because each fills another’s gaps, most scholars combine them. They leave out claims that the Japanese work harder by nature: work habits were shaped by institutions, which can be studied and compared.", points:["Gives the weakness of the developmental-state account: it overstates the state", "Gives the weakness of at least two other explanations, such as catch-up or a favourable world", "Explains that combining lets each explanation fill another’s gaps", "Explains why “work harder by nature” claims are avoided: work habits came from institutions"]}
    ],
    apply:{
     intro:"Work with official numbers. Always note the source and the date next to every figure you copy.",
@@ -692,7 +696,8 @@ ICA.addUnit({
       ["Antimilitarist norms shaping security policy","Peter Katzenstein (1996)","A constructivist study of police and military in postwar Japan."],
       ["Japan’s “gross national cool”","Douglas McGray (2002)","A journalist’s phrase that fed the Cool Japan idea."],
       ["“Culturally odourless” exports","Iwabuchi Kōichi (2002)","A study of how Japanese popular culture travels in Asia."]
-    ]}
+    ]},
+    {id:"e4u4-l5-x8", type:"explain", q:"Was the Yoshida Doctrine a clever grand strategy, or constraints made into a virtue? Explain both readings, saying who argues each, and what a constructivist adds.", size:"3–5 sentences", hint:"Think about what Japan chose, and what limited its choices.", model:"The Yoshida Doctrine, a later label, means relying on the United States for security, keeping Japan’s own forces light and putting the nation’s energy into economic recovery. Pyle and Samuels read it as a pragmatic strategy: Japan let the United States pay for much of its defence while it grew rich. Others stress the limits: Article 9, a public deeply opposed to rearmament, and US pressure. Calder went further, calling Japan a “reactive state” whose foreign economic policy mostly responded to outside pressure. Constructivists such as Katzenstein and Berger add that antimilitarist norms, built after defeat, shaped security policy as much as material power did.", points:["Describes the doctrine: US security, light forces, focus on the economy", "Gives the grand-strategy reading, attributed to Pyle or Samuels", "Gives the constraints reading, with at least one constraint or Calder’s “reactive state”", "Explains the constructivist point about antimilitarist norms"]}
    ],
    apply:{
     intro:"Read Japan’s foreign policy in primary sources and from more than one side.",

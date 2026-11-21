@@ -128,7 +128,8 @@ ICA.addUnit({
       {t:"The Rome Statute of the ICC (1998)", b:0, why:"A treaty, binding on its states parties."},
       {t:"The 2002 ASEAN–China Declaration on the Conduct of Parties in the South China Sea", b:1, why:"A declaration; the parties have long negotiated a separate code of conduct."},
       {t:"The UN Convention on the Law of the Sea (1982)", b:0, why:"A treaty with compulsory dispute settlement."}
-    ]}
+    ]},
+    {id:"e4u10-l1-x8", type:"explain", q:"Explain the two elements a rule of customary international law needs, and why practice without the second gives only courtesy. Then use them to explain two puzzles: why a state that breaks a rule while claiming one of its exceptions confirms the rule, and why a persistent objector is not bound by a new one.", size:"3–5 sentences", hint:"What states do, and what they believe they are legally bound to do.", model:"Custom needs a general practice and its acceptance as law (opinio juris); the ILC confirmed both elements in 2018. Practice without that belief is only courtesy or habit, and belief without practice is a claim. *North Sea* asked for practice that is extensive and virtually uniform, but *Nicaragua* added that it need not be perfect. So a state that breaks a rule but justifies itself by the rule’s own exceptions confirms the rule, because it still treats it as law. A persistent objector, a state that has clearly objected from the start, is not bound by a new rule, though some scholars doubt the doctrine has much practice behind it.", points:["Names general practice and opinio juris", "Explains that practice without a sense of legal obligation is only courtesy or habit", "Explains the *Nicaragua* point about justifying a breach by the rule’s exceptions", "Explains the persistent objector: clear objection from the start", "Notes the doubt about how much practice supports the doctrine"]}
    ],
    apply:{
     intro:"Read the law the way lawyers do. Everything here is free on official UN websites and needs no account.",
@@ -269,7 +270,8 @@ ICA.addUnit({
       {t:"Therefore powerful states never comply with international courts.", flag:true, why:"Overgeneralisation from one case. Powerful states comply in many routine cases."},
       " ",
       {t:"Domestic courts can shape compliance, as *Medellín v. Texas* (2008) showed.", flag:false, why:"A fair use of the case: the US Supreme Court held the *Avena* judgment was not directly enforceable domestically."}
-    ]}
+    ]},
+    {id:"e4u10-l2-x8", type:"explain", q:"Compare the managerial model of Chayes and Chayes with the enforcement critique of Downs, Rocke and Barsoom. What does each say causes violations, and what does each say keeps states complying?", size:"3–5 sentences", hint:"The key word in the critique is “depth”.", model:"Chayes and Chayes argue that states generally tend to comply, and that most violations come from ambiguous treaty language, lack of capacity, or the time big changes take. So the cure is management: reporting, review, technical help and persuasion, as in the Montreal Protocol’s non-compliance procedure and its fund for developing countries’ costs of switching chemicals. Downs, Rocke and Barsoom reply that high compliance may mean little if states sign treaties that ask them to do what they would do anyway. The real test is depth. The more a treaty demands, the stronger the temptation to defect, so deep cooperation needs credible enforcement.", points:["States the managerial view that states tend to comply", "Names the managerial causes of violation: ambiguity, capacity or time lag", "Gives the managerial cure and an example such as the Montreal Protocol", "Explains the selection point: high compliance may reflect shallow treaties", "Explains that deep treaties need credible enforcement"]}
    ],
    apply:{
     intro:"Test the theories on a real case. Court summaries and treaty pages are free online.",
@@ -414,7 +416,8 @@ ICA.addUnit({
       {t:"The Security Council condemns the Osirak strike", why:"Resolution 487, June 1981."},
       {t:"The ICJ decides *Nicaragua v. United States* on the merits", why:"27 June 1986."},
       {t:"The ICC gains jurisdiction over the crime of aggression", why:"17 July 2018."}
-    ]}
+    ]},
+    {id:"e4u10-l3-x8", type:"explain", q:"Explain the difference between anticipatory and preventive self-defence, and why international lawyers treat them so differently. Use the 1981 Osirak strike or the 2002 US security strategy as an example.", size:"3–5 sentences", hint:"Must a state wait to be hit? How close must the threat be?", model:"Article 51 allows self-defence “if an armed attack occurs”, so the hard question is whether a state must wait to be hit. Anticipatory self-defence acts against an imminent attack. Many states and scholars accept it, using the *Caroline* standard of a necessity that is “instant, overwhelming”. Preventive force acts against a threat that isn’t imminent, and it is widely rejected: the Security Council unanimously condemned Israel’s 1981 strike on Iraq’s Osirak reactor. US officials called their 2002 doctrine “pre-emption”, but many lawyers call it preventive. The UN High-level Panel (2004) suggested acting alone only against imminent threats and taking others to the Council.", points:["Defines anticipatory self-defence as acting against an imminent attack", "Mentions the *Caroline* standard", "Defines preventive force as acting against a threat that isn’t imminent, and says it is widely rejected", "Uses Osirak or the 2002 strategy as an example", "Notes the vocabulary problem with “pre-emption” or the High-level Panel’s middle line"]}
    ],
    apply:{
     intro:"Work with primary documents. UN letters, resolutions and votes are free on the UN’s websites and digital library.",
@@ -546,7 +549,8 @@ ICA.addUnit({
       {t:"The ICJ is not allowed to hear cases about islands.", why:"It has decided many island cases, including *Pedra Branca* and *Ligitan and Sipadan*."},
       {t:"Asian states are not members of the ICJ.", why:"All UN members are parties to the ICJ Statute; the issue is consent to a specific case."},
       {t:"The Security Council has banned such cases.", why:"There is no such ban."}
-    ]}
+    ]},
+    {id:"e4u10-l4-x8", type:"explain", q:"Explain why a tiny feature at sea can matter so much under UNCLOS. Use the difference between an island, a rock and a low-tide elevation, and the disagreement over Okinotorishima.", size:"3–5 sentences", hint:"Maritime zones are measured from land.", model:"Maritime zones are measured from land, so a tiny feature can generate a huge area of sea. Under Article 121, land naturally above water at high tide is an island and gets full zones, including a 200 nm EEZ and shelf. But a rock that can’t sustain human habitation or economic life of its own gets only a 12 nm territorial sea. A low-tide elevation has no territorial sea of its own unless it lies within the territorial sea of other land. So classification decides control of fish, oil and seabed minerals. Japan treats Okinotorishima as an island with an EEZ; China and South Korea argue it is a rock.", points:["Explains that zones are measured from land", "Says an island gets full zones, including an EEZ", "Says a rock gets only a 12 nm territorial sea, using the habitation and economic life test", "Says a low-tide elevation generates no territorial sea of its own", "States both positions on Okinotorishima without taking sides"]}
    ],
    apply:{
     intro:"Use primary sources. Court and tribunal press releases and the UN’s ocean affairs pages are free.",
@@ -683,7 +687,8 @@ ICA.addUnit({
       {t:"It was a complete failure that achieved nothing.", why:"One-sided: it convicted senior leaders, including of genocide, and engaged the public widely."},
       {t:"It was a purely international court with no Cambodian judges.", why:"Inaccurate: it was a hybrid court with Cambodian and international judges."},
       {t:"It tried hundreds of Khmer Rouge officials.", why:"Inaccurate: only three people were convicted."}
-    ]}
+    ]},
+    {id:"e4u10-l5-x8", type:"explain", q:"Myanmar has not joined the Rome Statute, yet in 2018 ICC judges held that the Court could act on deportations of Rohingya into Bangladesh. Explain why, and why this kind of jurisdiction is controversial.", size:"3–4 sentences", hint:"Look at Article 12: territory or nationality.", model:"Unless the Security Council refers a situation, Article 12 lets the ICC act if a crime happens on a state party’s territory or is committed by a party’s national. The 2018 decision is an example of the territorial rule: the deportations were from Myanmar, which is not a party, into Bangladesh, which is. That rule lets the Court reach nationals of states that haven’t joined. The United States, Russia, Israel and others argue that this threatens the sovereignty of states that never accepted the Court. Defenders reply that territorial jurisdiction is ordinary in criminal law. Even so, under complementarity, a genuine national investigation would take priority.", points:["Explains the Article 12 preconditions: territory or nationality", "Links the decision to the territorial rule, with Bangladesh as a state party", "Gives the sovereignty objection, attributed to the states that make it", "Gives the defenders’ reply", "Mentions complementarity"]}
    ],
    apply:{
     intro:"Read the courts’ own words and their critics’. Court summaries and many scholarly pieces are free online.",

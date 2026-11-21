@@ -135,7 +135,8 @@ ICA.addUnit({
       {t:"Because international law gives secretariats a veto over divisive issues", why:"No secretariat has such a veto. The freedom comes from the politics of control, not from a legal power."},
       {t:"Because divided states stop paying, so the agency has more money", why:"Funding cuts usually reduce an agency’s capacity; they do not explain greater freedom."},
       {t:"Because agents only obey principals who agree with each other in advance", why:"Agents are formally bound either way; the point is that disagreement makes it hard for principals to enforce their will."}
-    ]}
+    ]},
+    {id:"e4u9-l1-x8", type:"explain", q:"Why would governments that prize their sovereignty give an international organisation’s staff the power to act? Explain using principal–agent theory, including what can go wrong and how states try to keep control.", size:"3–5 sentences", hint:"Who hires whom, what does the agent offer, and what does it cost?", model:"In principal–agent theory, member states are principals who hire an IO as their agent through a treaty, a mandate and a budget. They delegate because agents bring expertise, save time, make promises credible and let states avoid blame for unpopular decisions. The cost is agency slack: the agent may shirk or pursue its own preferences. States reduce slack with controls such as appointing leaders, tight mandates, budgets, reporting rules and evaluation offices. But an IO answers to many states at once. When this collective principal disagrees, it can’t agree to rein the agent in, so secretariats often have most room where members are most divided.", points:["Identifies states as principals and the IO as agent", "Gives at least two reasons to delegate, such as expertise or credibility", "Explains agency slack (shirking or slipping)", "Names at least one control", "Explains how a divided collective principal gives the agent room"]}
    ],
    apply:{
     intro:"Apply the theories to a real organisation. Everything here is free and public.",
@@ -280,7 +281,8 @@ ICA.addUnit({
       {t:"That the member states must have secretly ordered the failed reforms", why:"That is an extreme principal–agent reading and needs evidence; it is not what a constructivist adds."},
       {t:"That bureaucracies never have their own ideas", why:"The opposite: constructivists argue that they do."},
       {t:"That the reforms failed because the IO had no budget", why:"Budget is a control lever; it does not explain why the same advice persisted."}
-    ]}
+    ]},
+    {id:"e4u9-l2-x8", type:"explain", q:"Barnett and Finnemore argue that IO failures often come from normal bureaucratic features, not only from bad people or bad states. Explain this idea, using one of their cases: UNHCR’s “repatriation culture” or the UN Secretariat and Rwanda in 1994.", size:"3–5 sentences", hint:"Could ordinary rules, applied faithfully, produce the harm?", model:"Barnett and Finnemore see IOs as bureaucracies with authority of their own, drawn from rules, delegation, moral claims and expertise. The same features that make them powerful can make them fail, and they call these failures pathologies. In 1994 the UN Secretariat, guided by an institutional ideology of impartiality, presented Rwanda to the Security Council as a civil war between two sides. They argue that this framing helped prevent a quick or strong response to the genocide against the Tutsi. Nobody needs to intend harm: in their argument, ordinary rules, applied faithfully, can produce it. So the remedy lies in changing how the bureaucracy works, not only in blaming individuals.", points:["Explains that IOs are bureaucracies with their own authority", "Explains that their strengths can become pathologies", "Describes one of the cases accurately, attributed to Barnett and Finnemore", "Says harm can come from ordinary rules, not bad intentions", "Draws a conclusion about remedies"]}
    ],
    apply:{
     intro:"Look at IOs as actors with ideas, labels and cultures. Use free official pages.",
@@ -415,7 +417,8 @@ ICA.addUnit({
       {t:"No state has ever proposed a reform model", why:"Many models exist (G4, Uniting for Consensus, the African position, L.69 and others)."},
       {t:"The Charter forbids any change to the Security Council", why:"The Charter can be amended; it was in 1965, when the Council grew from 11 to 15 members."},
       {t:"The Secretary-General has vetoed every proposal", why:"The Secretary-General has no vote or veto on Charter amendments."}
-    ]}
+    ]},
+    {id:"e4u9-l3-x8", type:"explain", q:"Ian Hurd argues that the Security Council’s power rests partly on its legitimacy. Use this to explain why elected members argue over informal practices such as penholding, and why the permanent five hold an advantage beyond the veto.", size:"3–5 sentences", hint:"Procedures that look fair add authority. Who drafts, and who stays long enough to learn the system?", model:"Hurd argues that the Council’s power rests partly on legitimacy: states seek its approval because others see it as the rightful voice on peace and security. So procedures matter. Those that look fair add to its authority, and those that look rigged drain it. That is why elected members criticise the practice by which France, the United Kingdom and the United States hold most pens, drafting resolutions and leading negotiations, and why more files now have an elected co-penholder. Elected members serve only two years and leave just as they learn the system, while the P5 build up decades of expertise: an informal advantage on top of the veto.", points:["States Hurd’s argument that the Council’s power rests partly on legitimacy", "Explains that fair-looking procedures add authority and rigged-looking ones drain it", "Explains penholding and why elected members criticise it", "Explains the P5’s informal advantage of accumulated expertise"]}
    ],
    apply:{
     intro:"Watch the UN at work. All the sources here are free and public.",
@@ -551,7 +554,8 @@ ICA.addUnit({
       {t:"Because supranational bodies are illegal under the UN Charter", why:"The Charter does not forbid them; the EU exists alongside it, and Chapter VIII welcomes regional arrangements."},
       {t:"Because consensus bodies can never achieve anything", why:"Consensus slows decisions but does not make them impossible; this is not why states choose it."},
       {t:"Because the EU forbids other regions from copying it", why:"No such rule exists."}
-    ]}
+    ]},
+    {id:"e4u9-l4-x8", type:"explain", q:"A classmate says: “East Asia has few strong regional institutions, so it is hardly integrated at all.” Using the difference between regionalism and regionalisation, explain what is wrong with this, and where RCEP fits in the story.", size:"3–5 sentences", hint:"Who builds each one: states, or firms and people?", model:"Regionalism is a political project led by states: treaties, organisations and rules. Regionalisation is the growth of trade, investment and travel within a region, driven by firms and people. The classmate treats the first as the only measure of integration. East Asia was long described as highly regionalised but lightly institutionalised: production networks linking Japan, South Korea, China and Southeast Asia grew faster than formal bodies. Formal rules followed later, for example in the Regional Comprehensive Economic Partnership (RCEP), signed by fifteen Asia-Pacific states in 2020 and in force from 2022. So a region can be closely knit in practice before its states build institutions.", points:["Defines regionalism as a political project led by states", "Defines regionalisation as trade, investment and travel driven by firms and people", "Applies this to East Asia: production networks grew faster than formal bodies", "Uses RCEP as an example of formal rules following later"]}
    ],
    apply:{
     intro:"Compare regional bodies from their own documents. All are free online.",
@@ -689,7 +693,8 @@ ICA.addUnit({
       {t:"Funding cuts are the same as formal withdrawal", why:"Withdrawal ends membership; a cut does not, which is why it can be voice."},
       {t:"Voluntary funding is a legal obligation", why:"Voluntary contributions are not legal obligations; assessed contributions are."},
       {t:"Voice means leaving quietly", why:"That describes exit; voice means staying and protesting."}
-    ]}
+    ]},
+    {id:"e4u9-l5-x8", type:"explain", q:"An international organisation can’t arrest or tax anyone. Explain why legitimacy matters so much to it, and use input, throughput and output legitimacy to show how the Security Council and the IMF are criticised in different ways.", size:"3–5 sentences", hint:"Who has a voice, how decisions are made, and what is delivered.", model:"Without armies or taxes, an IO depends on people believing it has the right to rule. Ian Hurd argued that states comply with rules they see as legitimate, not only out of fear or self-interest. Scholars split legitimacy into three sources: input (who has a voice), throughput (how decisions are made) and output (what is delivered). The Security Council is criticised mainly on input, because of who sits on it. The IMF is criticised on input, because votes follow money, and on output, because of its record in crises. Many agencies are also criticised on throughput, for closed decisions.", points:["Explains why legitimacy matters to a body without force (Hurd)", "Defines input, throughput and output legitimacy", "Applies input legitimacy to the Security Council", "Applies input or output legitimacy to the IMF"]}
    ],
    apply:{
     intro:"Bring the unit together by evaluating a real organisation. All sources are free.",

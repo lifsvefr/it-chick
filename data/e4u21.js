@@ -124,7 +124,8 @@ ICA.addUnit({
       {t:"She is right; the three countries are essentially the same and followed one script", why:"That ignores very different triggers and institutions."},
       {t:"Protests never matter in South Asia", why:"Untrue: these protests helped bring down three governments."},
       {t:"Only economic crises cause protests", why:"Bangladesh began over job quotas and Nepal amid a social-media ban and wider grievances."}
-    ]}
+    ]},
+    {id:"e4u21-l1-x8", type:"explain", q:"One classmate says: “India is no longer a democracy: V-Dem calls it an electoral autocracy.” Another replies: “The ruling party lost its majority in 2024, so India’s democracy is fine.” Explain why they are arguing past each other, and how a neutral seminar answer would handle the debate.", size:"3–5 sentences", hint:"Separate what the indicators measure, how good their methods are, and what the trends mean.", model:"They are answering different questions. V-Dem and Freedom House rely partly on expert judgements of freedoms such as speech, association and independent institutions, not only on whether elections are competitive. The 2024 result, when the BJP won 240 of 543 seats and lost its majority, is evidence about electoral competition. So both facts can be true at once. A neutral answer reports each index with its year, such as Freedom House’s 62 out of 100 in 2026, and notes that India’s government rejects the rankings as opaque and perception-based. It treats Jaffrelot’s “ethnic democracy” as an argument and attributes it.", points:["Explains that the indices measure freedoms, not only elections", "Explains that the 2024 result is evidence about electoral competition", "Concludes that both facts can be true at once", "Reports the Indian government’s rejection of the rankings, attributed", "Dates the figures and attributes interpretations such as Jaffrelot’s"]}
    ],
    apply:{
     intro:"Work with official results and reports, and practise attributing positions.",
@@ -262,7 +263,8 @@ ICA.addUnit({
       {t:"India convened a Voice of the Global South summit with 125 countries in 2023", why:"Supporters cite this as evidence for the claim."},
       {t:"The African Union joined the G20 during India’s presidency", why:"Supporters also cite this."},
       {t:"India co-founded the Non-Aligned Movement", why:"This history supports, rather than weakens, India’s claim."}
-    ]}
+    ]},
+    {id:"e4u21-l2-x8", type:"explain", q:"Explain how non-alignment, strategic autonomy and multi-alignment are related. Use India’s membership of both the Quad and BRICS as your example, and say how scholars disagree about whether today’s approach is new.", size:"3–5 sentences", hint:"All three share one aim. What is it, and how do they differ in how actively India works with the great powers?", model:"All three share one aim: freedom of action. Nehru’s non-alignment kept India out of the Cold War blocs, though it still took strong positions, for example against colonialism. Strategic autonomy is today’s official goal of keeping freedom of action by joining no alliance. Multi-alignment, in Jaishankar’s words, means working with many partners on different issues, with “convergence with many but congruence with none”. India sits in the Quad with Australia, Japan and the United States, and in BRICS with China and Russia. Some scholars see continuity with Nehru’s search for autonomy; others see a sharper, more transactional realism.", points:["Names the shared aim: freedom of action", "Explains Nehru’s non-alignment", "Explains strategic autonomy or multi-alignment, with Jaishankar’s phrase", "Uses India’s membership of both the Quad and BRICS (or the SCO) as an example", "Gives the scholarly disagreement over continuity or change"]}
    ],
    apply:{
     intro:"Read primary sources from more than one government.",
@@ -386,7 +388,8 @@ ICA.addUnit({
       {t:"They won it, but France ignored the result and kept New Caledonia", why:"96.5% voted against independence among those who voted."},
       {t:"No referendum was held in 2021", why:"It was held on 12 December 2021."},
       {t:"The UN cancelled it", why:"The UN did not cancel it; New Caledonia remains on its list of non-self-governing territories."}
-    ]}
+    ]},
+    {id:"e4u21-l3-x8", type:"explain", q:"Explain Epeli Hau‘ofa’s idea of a “sea of islands” and how it connects to what Fry and Tarte call the “new Pacific diplomacy”. Give one example of island states acting on their own terms.", size:"3–5 sentences", hint:"What changes when you count the ocean, not only the land?", model:"Many economists and officials held that island states are too small, poor and isolated to stand alone. Hau‘ofa (1993) replied that there is a world of difference between seeing “islands in a far sea” and “a sea of islands”: voyaging, kinship and migration had long connected Oceanians across vast distances. Counting the ocean, through exclusive economic zones, several small states control huge areas. Fry and Tarte argue that since 2009 island states have moved from objects of others’ regional plans to authors of their own. For example, the eight Parties to the Nauru Agreement made foreign fleets pay for fishing days, which raised their revenues sharply.", points:["Describes the view Hau‘ofa attacked: too small, poor and isolated", "Explains “a sea of islands”: connection through voyaging, kinship and migration", "Links the idea to counting the ocean, such as exclusive economic zones", "Explains Fry and Tarte’s “new Pacific diplomacy”", "Gives an example, such as the Vessel Day Scheme"]}
    ],
    apply:{
     intro:"Read the region in its own documents.",
@@ -529,7 +532,8 @@ ICA.addUnit({
       {t:"The Indo-Pacific will dissipate like sea foam", why:"That was Wang Yi’s prediction in 2018."},
       {t:"Southeast Asia is consigned to hedge", why:"That is See Seng Tan’s argument."},
       {t:"Pacific islands should use the Blue Pacific frame instead of the Indo-Pacific", why:"That is a Pacific perspective, not Medcalf’s thesis."}
-    ]}
+    ]},
+    {id:"e4u21-l4-x8", type:"explain", q:"Explain why scholars say “Indo-Pacific” is not a neutral name for a region. Compare what it does with what “Asia-Pacific” did, and give two governments’ different uses of the word.", size:"3–5 sentences", hint:"Ask who is in, who is out, and what each label is for.", model:"Regions are mental maps, and governments use regional names as strategic narratives meant to shape how others see the order and act in it. “Asia-Pacific”, built through APEC from 1989, stretched to the Americas but stopped at Southeast Asia, so India was at its edge. “Indo-Pacific” joins the two oceans and puts India at the centre. Governments also use it differently: the United States stresses a “free and open” rules-based order and competition with China, while ASEAN’s 2019 Outlook stresses “dialogue and cooperation instead of rivalry” and ASEAN centrality. China’s government prefers “Asia-Pacific” and describes US Indo-Pacific policy as aimed at containing it.", points:["Explains regions as mental maps or strategic narratives", "Says what “Asia-Pacific” included and left out (India at the edge)", "Explains that “Indo-Pacific” puts India at the centre", "Contrasts two governments’ uses, such as the US and ASEAN", "Attributes China’s government’s view"]}
    ],
    apply:{
     intro:"Analyse regional labels in official texts.",
@@ -662,7 +666,8 @@ ICA.addUnit({
       {t:"Choose indicators", why:"How you will measure the outcome."},
       {t:"Test rival explanations against the evidence", why:"The core of the analysis."},
       {t:"Answer the strongest counter-argument", why:"Shows the argument can survive criticism."}
-    ]}
+    ]},
+    {id:"e4u21-l5-x8", type:"explain", q:"Is Southeast Asia a security community? Explain Deutsch’s concept, Acharya’s argument and the critics’ reply. Then explain why South Asia is usually described as the opposite case.", size:"3–5 sentences", hint:"A security community is about expectations: do members still prepare for war with each other?", model:"Deutsch defined a security community as a group whose members have dependable expectations of peaceful change, so they no longer prepare for war with each other. Acharya (2001) argued that ASEAN built at least a nascent security community through norms of non-interference and consultation, the ASEAN way. Critics point to border clashes between members, such as Thailand and Cambodia, and question how deep it goes. South Asia is usually described as the opposite case: a regional security complex defined by rivalry, with two nuclear-armed neighbours, India and Pakistan, who fought in 2025. So “nascent” is a careful word: expectations of peace can exist and still be tested.", points:["Defines a security community: dependable expectations of peaceful change", "Explains Acharya’s argument about ASEAN norms", "Gives the critics’ reply, such as the Thai–Cambodian clashes", "Explains why South Asia is the opposite case", "Notes why “nascent” or a careful conclusion is needed"]}
    ],
    apply:{
     intro:"Compare regions with evidence.",

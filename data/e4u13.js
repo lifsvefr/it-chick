@@ -158,7 +158,8 @@ ICA.addUnit({
       {t:"This proves that global governance is good for everyone.", flag:true, why:"A jump from description to a sweeping normative verdict. Who benefits is exactly what critics question."},
       " ",
       {t:"Weiss warns that the term can hide questions of power.", flag:false, why:"An accurate, attributed summary of a critique."}
-    ]}
+    ]},
+    {id:"e4u13-l1-x8", type:"explain", q:"Explain to a friend what Rosenau meant by “governance without government”, using tuna fishing in the Pacific as your example. Then give one question a critic would ask about it.", size:"3–5 sentences", prompt:"Government means… Governance means…", hint:"Start with where each kind of rule gets its force. Then ask who governs tuna.", model:"Government means rules backed by formal authority and, in the end, by force, such as police powers. Governance means rules that actors keep because they share goals, even with no one at the top to force them. Tuna fishing shows this: a regional fisheries commission sets catch limits, eight island states sell fishing days to foreign fleets, a private eco-label certifies fisheries, and retailers write such labels into their buying rules. No world government is in charge, yet rules are made and followed. A critic would ask by what authority bodies like the eco-label make rules, and whether the people affected can change them.", points:["Defines government as rule backed by formal authority and force", "Defines governance as rules kept through shared goals, without force from the top", "Names several different governors of tuna fishing", "Asks a critic’s question about authority, accountability or whom the rules serve"]}
    ],
    apply:{
     intro:"Test the concept on everyday objects and one real issue. You need only a browser; no accounts or purchases.",
@@ -300,7 +301,8 @@ ICA.addUnit({
       {t:"The G20 has never achieved anything", why:"Too sweeping and inaccurate: the 2009 crisis package and the Financial Stability Board are often cited."},
       {t:"Rising powers do not matter much in global governance", why:"An unsupported claim that ignores the reason the G20 was upgraded in 2008."},
       {t:"The G7 includes more countries than the G20", why:"Factually wrong: the G7 has seven members."}
-    ]}
+    ]},
+    {id:"e4u13-l2-x8", type:"explain", q:"Why might governments choose a small club such as the G20, rather than the 193-member UN General Assembly, to deal with a crisis? What do critics say is lost? Use one example from the lesson.", size:"3–5 sentences", hint:"The key line of the lesson: clubs trade legitimacy for speed.", model:"A small club has fewer members who can block or water down a deal, so it can act quickly. Naím’s advice was to gather the smallest number of countries needed for the largest impact. During the financial crisis, for example, G20 leaders agreed in April 2009 a package of about 1.1 trillion US dollars for the IMF and other bodies. Critics answer that most states have no seat, clubs have no treaty and few records, and rival clubs can fragment the rules; in 2010 Norway’s foreign minister called the G20 self-appointed. In short, clubs trade legitimacy for speed.", points:["Explains the speed advantage: fewer members who can block a deal", "Gives an example, such as the G20’s 2009 package", "Names the exclusion or legitimacy critique", "Names a further critique, such as weak accountability or fragmentation", "Sums up the trade-off between speed and legitimacy"]}
    ],
    apply:{
     intro:"Read what clubs actually say and do. All the documents are free on official sites.",
@@ -447,7 +449,8 @@ ICA.addUnit({
       {t:"Its annex on pathogen sharing is still being negotiated.", flag:false, why:"Correct as of November 2026."},
       " ",
       {t:"It aims to share some pandemic products with the WHO for fair distribution.", flag:false, why:"A fair summary of the PABS proposal’s 20% target."}
-    ]}
+    ]},
+    {id:"e4u13-l3-x8", type:"explain", q:"The WHO is sometimes said to have “authority without power”. Explain what this means, using what the WHO can and cannot do in an outbreak and how it is funded.", size:"3–5 sentences", hint:"List what it can do, then what it cannot. Then think about where its money comes from.", model:"The WHO has real authority: it sets technical guidance, names diseases, hosts the tobacco convention and the International Health Regulations, and can declare a public health emergency of international concern. But it cannot enter a country, force governments to report or impose measures such as lockdowns or travel bans; the Pandemic Agreement says so explicitly. Its money also depends on members’ choices. Most has long come from voluntary contributions, often earmarked by donors, and the United States, long its largest donor, completed its withdrawal in January 2026. So the WHO advises and persuades, but governments decide.", points:["Gives examples of the WHO’s authority, such as guidance or declaring an emergency", "Says it cannot enforce reports or impose measures on countries", "Explains its dependence on voluntary, often earmarked, funding", "Concludes that it advises while governments decide"]}
    ],
    apply:{
     intro:"Work with primary sources on health governance. The WHO publishes everything below for free.",
@@ -615,7 +618,8 @@ ICA.addUnit({
       {t:"Because AI is technically complex", why:"The term describes the institutions, not the technology."},
       {t:"Because one organisation has full legal authority over all AI", why:"That would be the opposite of a regime complex."},
       {t:"Because there are no rules at all", why:"There are many rules; the point is that they overlap."}
-    ]}
+    ]},
+    {id:"e4u13-l4-x8", type:"explain", q:"Compare the multistakeholder and sovereignty models of internet governance. Who decides in each, who argues for each, and what is one criticism of the multistakeholder model?", size:"3–5 sentences", hint:"The dividing line is who should decide. Attribute each model to the governments and groups that argue it.", model:"In the multistakeholder model, governments, firms, engineers and civil society all help make the rules through open, bottom-up processes. The US, the EU, Japan, the technical community and many civil society groups argue that this keeps the internet global, innovative and free. In the sovereignty, or state-led, model, governments decide, in intergovernmental bodies such as the ITU. China, Russia and others argue that states are responsible for security and order online, and that such bodies are more equal. Some Global South scholars criticise the multistakeholder model because its “stakeholders” are mostly Northern firms and experts with the money to attend.", points:["Says who decides in the multistakeholder model: many kinds of actors together", "Says who decides in the sovereignty model: governments, in intergovernmental bodies", "Attributes each model to the actors who argue for it", "Gives the criticism that in practice Northern firms and experts dominate"]}
    ],
    apply:{
     intro:"See technology governance at work. Everything below is free; no accounts needed.",
@@ -774,7 +778,8 @@ ICA.addUnit({
       {t:"“The world will split into two blocs by 2035, as the rise of rival national internet models shows.”", why:"A prediction, not an analytical use of a scenario."},
       {t:"“Fragmentation is bad, so we must stop it.”", why:"A normative claim with no evidence about any case."},
       {t:"“Everything is fragmenting everywhere, from internet governance to trade, health and climate.”", why:"Too sweeping to test."}
-    ]}
+    ]},
+    {id:"e4u13-l5-x8", type:"explain", q:"Explain the difference between effectiveness and legitimacy in global governance. Why do a small club such as the G20 and a universal body such as the UN General Assembly often score differently on them?", size:"3–5 sentences", hint:"Effectiveness is about results; legitimacy is about whether those affected accept the right to decide.", model:"Effectiveness asks whether governance solves the problem, for example fewer infections or more stable finance. Legitimacy asks whether those affected accept the rule-makers’ right to decide, either because the process is fair and gives them a voice (input) or because the results are good (output). The two can pull apart. A club such as the G20 can move fast, so it often scores well on speed and results but poorly on voice, because most states have no seat. A universal body gives every member a voice but is slow. Many reforms try to raise one without losing the other.", points:["Defines effectiveness as solving the problem", "Defines legitimacy as acceptance of the right to decide", "Separates input legitimacy (fair process, voice) from output legitimacy (results)", "Explains why a club is fast but excludes most states", "Explains why a universal body gives voice but is slow"]}
    ],
    apply:{
     intro:"Practise building and testing arguments with real documents.",

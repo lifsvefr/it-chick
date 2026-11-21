@@ -133,7 +133,8 @@ ICA.addUnit({
       {t:"The first Human Development Report introduces the HDI", why:"1990, led by Mahbub ul Haq."},
       {t:"The Stiglitz–Sen–Fitoussi Commission recommends well-being dashboards", why:"2009."},
       {t:"A UN expert group proposes a 31-indicator Beyond GDP dashboard", why:"Presented on 7 May 2026."}
-    ]}
+    ]},
+    {id:"e4u14-l1-x8", type:"explain", q:"Two people earn exactly the same income. Use Sen’s capability approach to explain why they may not be equally “developed”, with an example of your own. Then say why GDP per person would miss the difference.", size:"3–5 sentences", hint:"Separate the means (income) from the ends (real freedoms). What turns one into the other?", model:"Sen separates resources, such as income, from capabilities: the real freedoms a person has to be and do things they value. Conversion factors, which can be personal, social or environmental, decide how far resources turn into freedoms. Suppose Amara and Kofi earn the same, but Amara lives where the nearest clinic is out of reach and local norms stop women travelling alone. Her income buys her fewer real freedoms, such as seeing a doctor. GDP per person counts only money, as an average, so it would show them as equally well off. For Sen, development means expanding capabilities, not only income.", points:["Separates resources (income) from capabilities (real freedoms)", "Names conversion factors as what turns resources into freedoms", "Gives an example where equal incomes give unequal freedoms", "Explains that GDP per person counts only money, as an average", "States that, for Sen, development means expanding capabilities"]}
    ],
    apply:{
     intro:"Turn the measures into analysis. You need only a browser and a notebook; all the data are free.",
@@ -271,7 +272,8 @@ ICA.addUnit({
       {t:"Many Latin American countries exported raw materials in the 1950s", why:"That is consistent with the theory’s starting point."},
       {t:"Commodity prices have fluctuated with booms and busts", why:"Booms complicate the trend but don’t refute the structural argument."},
       {t:"UNCTAD was created in 1964", why:"That was an institutional success for structuralist ideas, not a test of them."}
-    ]}
+    ]},
+    {id:"e4u14-l2-x8", type:"explain", q:"Compare how modernisation theory and dependency theory explain why a country stays poor. Then explain how East Asia’s growth has been used against the strong version of dependency theory.", size:"3–5 sentences", hint:"One theory looks for causes inside poor countries; the other looks at their place in the world economy.", model:"Modernisation theory, as in Rostow, looks for obstacles inside poor countries, such as low investment or “traditional” values, and assumes every society can follow the first industrialisers to take-off. Dependency theory looks at the world economy instead. Building on Prebisch and Singer’s claim that commodity prices tend to fall relative to manufactures, Frank argued that world capitalism produces underdevelopment in the periphery. Critics reply that East Asia’s export-led growth, and later China’s, sits badly with the strong claim that ties to the core block development. Cardoso and Faletto’s “dependent development” allows growth, but on terms shaped by outsiders.", points:["Says modernisation theory finds the causes inside poor countries", "Says dependency theory finds them in the world economy (centre and periphery)", "Mentions the Prebisch–Singer terms-of-trade argument or Frank", "Explains why East Asia’s export-led growth challenges the strong version", "Mentions Cardoso and Faletto’s dependent development as a subtler version"]}
    ],
    apply:{
     intro:"Read founding texts and test the theories on a real economy. All sources are free online.",
@@ -415,7 +417,8 @@ ICA.addUnit({
       {t:"Scholars disagree about whether the developmental state can be copied today.", flag:false, why:"Correct: one of the live questions."},
       " ",
       {t:"Because Korea grew under authoritarian rule, dictatorship causes growth.", flag:true, why:"Unsupported. Many authoritarian states stagnated; one case can’t establish a general causal claim."}
-    ]}
+    ]},
+    {id:"e4u14-l3-x8", type:"explain", q:"Critics found that protection often bred complacent, uncompetitive firms in some import-substituting economies. Explain why, according to Amsden and other developmental-state scholars, South Korea’s cheap credit and protection did not have that effect.", size:"3–5 sentences", hint:"Support came with conditions. What did firms have to give in return?", model:"Amsden argued that Korea’s state deliberately “got prices wrong”: it gave chosen industries cheap credit and protection so that new industries were profitable while firms learned borrowed technology. But the support came with conditions. The big business groups had to meet performance standards, above all export targets, and firms that missed them could lose credit. Amsden called this two-way exchange reciprocity, and exporting also forced firms to compete in world markets. That discipline, she, Wade and Evans argue, is why protection did not breed complacency. The World Bank’s 1993 report accepted that some interventions worked, but said the conditions were hard to copy.", points:["Explains “getting prices wrong”: cheap credit and protection for chosen industries", "Says support came with performance standards, especially export targets", "Says firms that missed targets could lose credit (discipline or reciprocity)", "Attributes the argument to Amsden or other developmental-state scholars", "Notes a different reading, such as the World Bank’s view that the conditions were hard to copy"]}
    ],
    apply:{
     intro:"Read the original texts and test the ideas on a case. Everything is free online.",
@@ -562,7 +565,8 @@ ICA.addUnit({
       {t:"It created the 0.7% target", why:"The 0.7% target dates from a UN General Assembly resolution of 1970."},
       {t:"It abolished tied aid worldwide", why:"No agreement abolished tied aid; the DAC has recommendations to untie parts of it."},
       {t:"It set up the OECD’s Development Assistance Committee (DAC)", why:"The DAC dates from the early 1960s."}
-    ]}
+    ]},
+    {id:"e4u14-l4-x8", type:"explain", q:"A politician says: “Research proves that aid doesn’t work.” Explain why scholars call “Does aid work?” too big a question, using the Burnside and Dollar debate and the randomised trials as examples.", size:"3–5 sentences", hint:"Which aid, for what goal, delivered how, compared with what?", model:"Scholars say the question should be split: which aid, for what goal, delivered how, and compared with what? Cross-country studies show why. Burnside and Dollar (2000) found that aid raised growth where policies were good, but when Easterly, Levine and Roodman (2004) added data, the result disappeared, and later studies still disagree about the average effect. Most agree that growth is the wrong yardstick for aid aimed at health or schooling. Randomised trials ask smaller questions, and some specific programmes, such as bed nets or remedial teaching, worked in the settings tested. So the evidence is mixed, not proof either way.", points:["Splits the question: which aid, for what goal, delivered how, compared with what", "Describes the Burnside and Dollar finding and how it disappeared with more data", "Says growth is the wrong yardstick for health or schooling aid", "Gives an example of a specific programme that trials found worked", "Concludes that the evidence is mixed rather than proving either side"]}
    ],
    apply:{
     intro:"Work with real aid data and real evaluations. All the tools are free and need no account.",
@@ -695,7 +699,8 @@ ICA.addUnit({
       {v:28.6, tol:0.6, why:"That is 100 ÷ 3.5, which ignores compounding (growth on growth). The rule of 70 accounts for it."},
       {v:35, tol:1, why:"That is 70 ÷ 2, the doubling time at 2% a year. Divide by the growth rate given, 3.5."},
       {v:245, tol:2, why:"That multiplies 70 by 3.5. Divide instead."}
-    ], hint2:"Divide 70 by the growth rate in per cent."}
+    ], hint2:"Divide 70 by the growth rate in per cent."},
+    {id:"e4u14-l5-x8", type:"explain", q:"Explain why Acemoglu, Johnson and Robinson used the death rates of early European settlers to study whether institutions cause prosperity. Then give one criticism of their argument, with its author.", size:"3–5 sentences", hint:"Start with the problem: institutions and income go together, but which causes which?", model:"Institutions and income go together, but that alone cannot show that institutions cause prosperity: rich countries might simply afford better institutions, which is reverse causation. So the authors needed something that shaped institutions but did not directly affect income today. They chose settler death rates. Where settlers died in large numbers, Europeans set up colonies to extract resources; where they survived, they built property rights and checks on power, and those institutions persisted. Critics disagree: Albouy argued that many mortality figures came from other places, Glaeser and co-authors that settlers also brought skills, and Sachs that geography affects income directly.", points:["Names the reverse-causation problem", "Explains why they needed something that shaped institutions but not income directly", "Describes the chain: settler deaths, type of colony, early institutions that persisted", "Gives one criticism and attributes it (Albouy, Glaeser or Sachs)"]}
    ],
    apply:{
     intro:"Test the big explanations on real cases and data. Everything is free online.",

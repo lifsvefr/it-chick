@@ -136,7 +136,8 @@ ICA.addUnit({
       {t:"Regions don’t matter much; only global polarity and the great powers do", why:"That is the error the theory was built to correct."},
       {t:"All security is a speech act", why:"That is securitisation theory, a related but separate idea."},
       {t:"Every state in Asia belongs to one complex", why:"Buzan and Wæver distinguish South Asia from East Asia."}
-    ]}
+    ]},
+    {id:"e4u12-l1-x8", type:"explain", q:"A government says a long drought is now a “national security issue”. Explain how a traditionalist such as Walt and a supporter of human security would each react, and use one of Baldwin’s questions to show where they differ.", size:"3–4 sentences", hint:"Start with Baldwin’s first question: security for whom?", model:"Walt, a traditionalist, would worry that calling drought a security issue blurs the field, which he defines as the study of military force, and could invite military solutions to a non-military problem. A supporter of human security would welcome the claim, because drought threatens people’s livelihoods, their “freedom from want”. Baldwin’s question “security for whom?” shows the gap: the traditionalist puts the state first, while human security puts people first. Neither answer is settled in advance, which is why scholars call security an essentially contested concept.", points:["Gives Walt’s worry: it blurs the field or invites military solutions", "Gives the human security view: people and their livelihoods are the referent", "Uses a Baldwin question, such as “security for whom?”, to locate the difference", "Explains why security is called an essentially contested concept"]}
    ],
    apply:{
     intro:"Turn the concepts into analysis. You need only a browser and a notebook.",
@@ -291,7 +292,8 @@ ICA.addUnit({
       {t:"Every scholar agrees that Nepal’s transitional justice was a complete success.", flag:true, why:"Not supported. Analysts debate the lessons; slow transitional justice is one of the criticisms."},
       " ",
       {t:"The Maoists entered politics through elections to a Constituent Assembly.", flag:false, why:"Correct: they became the largest party in 2008."}
-    ]}
+    ]},
+    {id:"e4u12-l2-x8", type:"explain", q:"Explain why a civil war is usually harder to end with a deal than a war between states, using Walter’s idea of the commitment problem. Then say how a peace process can try to solve it, with Nepal as your example.", size:"3–5 sentences", prompt:"In a war between states each army can go home, but in a civil war…", hint:"Think about what happens to the rebels’ power once they hand in their weapons.", model:"In a war between states each army can go home, but in a civil war both sides must live in one country afterwards, and the rebels usually have to disarm. Once disarmed, they cannot punish a government that breaks the deal, so they doubt its promises today and refuse to sign, or keep weapons hidden. Walter found that deals were far more likely to be carried out when an outside power guaranteed them, and power-sharing gives rebels a stake. In Nepal, Maoist fighters went into cantonments with their weapons stored under UN monitoring, and the Maoists entered an elected Constituent Assembly.", points:["Says both sides must live together and the rebels must usually disarm", "Explains why disarmed rebels cannot trust the government’s promise", "Names an outside guarantee as one fix", "Names power-sharing or a political stake as another fix", "Uses Nepal’s cantonments, UN monitoring or the Constituent Assembly as the example"]}
    ],
    apply:{
     intro:"Practise thinking like a civil war researcher. Use free sources only.",
@@ -433,7 +435,8 @@ ICA.addUnit({
       {t:"Local actors never matter to peace", why:"No one in this debate argues that; the dispute is about how they matter."},
       {t:"Only quantitative studies can show whether local peace works", why:"The local turn relies heavily on ethnography and fieldwork."},
       {t:"Local peace makes international law and outside donors irrelevant", why:"That is not part of the critique."}
-    ]}
+    ]},
+    {id:"e4u12-l3-x8", type:"explain", q:"A friend says: “War came back just as often where the UN sent peacekeepers as where it didn’t, so peacekeeping is useless.” Explain what is wrong with this reasoning, and what careful studies have found.", size:"3–5 sentences", hint:"Ask how the UN chooses where to send missions.", model:"The comparison ignores selection: peacekeepers are not sent at random. Fortna showed that the UN tends to go to harder cases, such as long, deadly wars with no clear winner, which relapse more often anyway. So equal relapse rates can hide a real effect. When you compare like with like, for example hard cases with hard cases, peace lasts longer where peacekeepers are present. A 2021 review by Walter, Howard and Fortna found that, on average, peacekeeping reduces violence. But averages hide failures, and the evidence is stronger for keeping a peace than for building a state.", points:["Names the selection problem: missions are not sent at random", "Says the UN tends to go to harder cases", "Explains comparing like with like, for example grouping wars by difficulty", "States that careful studies find peacekeeping, on average, reduces violence", "Adds a limit, such as failures hidden by averages or weaker evidence on state-building"]}
    ],
    apply:{
     intro:"Look at real peace operations and peace agreements. All sources are free.",
@@ -598,7 +601,8 @@ ICA.addUnit({
       {t:"Mostly by military defeat by armed forces", why:"That was the least common path among the main ones identified."},
       {t:"Mostly by winning their goals", why:"Few groups achieved victory."},
       {t:"They never end", why:"The study shows that groups end in several ways."}
-    ]}
+    ]},
+    {id:"e4u12-l4-x8", type:"explain", q:"Explain the bargain behind the NPT, and how the TPNW differs from it. Then explain why Japan’s government, which says it shares the goal of a world without nuclear weapons, has not joined the TPNW.", size:"3–5 sentences", hint:"The NPT has three pillars. Which one did the ban treaty’s supporters feel was moving too slowly?", model:"The NPT is a bargain: non-nuclear-weapon states promise not to acquire nuclear weapons and accept IAEA inspections; in return, the parties, above all the five nuclear-weapon states, commit to negotiate in good faith on disarmament (Article VI), and all parties keep the right to peaceful nuclear energy. So it limits the spread of the weapons but does not ban them. The TPNW, in force since 2021, bans developing, possessing, using or threatening to use them, for its parties. Japan’s government says that joining is not realistic while it relies on US extended deterrence, the “nuclear umbrella”.", points:["Explains the NPT bargain: no new weapons and inspections, in return for disarmament talks and peaceful uses", "Says the NPT limits spread but does not ban nuclear weapons", "Says the TPNW bans them outright for its parties", "Attributes Japan’s reason to its government: reliance on US extended deterrence"]}
    ],
    apply:{
     intro:"Work with primary documents on arms control. Everything is free online.",
@@ -757,7 +761,8 @@ ICA.addUnit({
       {t:"Norms of consultation and consensus have shaped how ASEAN members see each other.", b:2, why:"Norms and identity: constructivism and the ASEAN way."},
       {t:"Separate alliances gave the stronger power control over weaker partners.", b:0, why:"Cha’s powerplay is about power and control, a realist-leaning account."},
       {t:"No “Asian NATO” formed because US leaders did not see Asian partners as part of their community.", b:2, why:"Hemmer and Katzenstein’s explanation rests on identity."}
-    ]}
+    ]},
+    {id:"e4u12-l5-x8", type:"explain", q:"Apply two IR lenses to the Quad (Australia, India, Japan and the United States). How would a realist and a liberal each explain it, and what evidence would help you decide between them?", size:"3–5 sentences", hint:"The lesson did this for the Japan–Philippines agreement. Use the same steps, and attribute contested claims.", model:"A realist would read the Quad as balancing: four states drawing closer as China’s power grows. China’s government gives a similar reading when it calls such groups exclusive blocs with a “Cold War mentality”, while members say the Quad supports a stable, rules-based region. A liberal would point to its broad agenda (health, technology, infrastructure and maritime awareness) and see a forum that makes cooperation routine and reduces uncertainty. To decide, I would ask whether cooperation grows only when tensions with China rise, which favours realism, or keeps widening whatever the tension, which favours the liberal reading.", points:["Gives a realist reading: balancing against China’s growing power", "Gives a liberal reading: a forum that makes cooperation routine and reduces uncertainty", "Uses facts from the lesson, such as the Quad’s agenda or that it is not an alliance", "Attributes contested views (“China’s government says…”, “members say…”)", "Says what evidence would separate the two readings"]}
    ],
    apply:{
     intro:"Read primary sources from several sides. Everything is free online.",

@@ -137,7 +137,8 @@ ICA.addUnit({
       {t:"Ravenstein’s step migration only applies to people moving to cities.", why:"Step migration is about moving in stages; it isn’t the issue in Omar’s case."},
       {t:"Lee’s model ignores destinations.", why:"Lee’s model includes destination factors explicitly. The gap Omar shows is about resources to move."},
       {t:"Personal factors never matter.", why:"Lee’s model says personal factors do matter. The critique here is about the cost of moving."}
-    ]}
+    ]},
+    {id:"e2u10-l1-x8", type:"explain", q:"If hardship simply pushed people out, the poorest people would migrate the most. Explain why this usually isn’t the case, and what it suggests about push–pull models.", size:"3–5 sentences", model:"Moving costs money, contacts and documents: the journey, fees, a passport and perhaps a visa. The poorest households often can’t afford these, so they are rarely the ones who move furthest. Lee’s model does include intervening obstacles and personal factors, but critics say push–pull thinking is a list, not an explanation: it names factors without saying which matter most or how they combine. It also leaves out the states and employers that recruit or block migrants, and it can make migrants sound like billiard balls rather than people who plan and bargain with their families.", points:["Explains that moving costs money, contacts and documents", "Concludes that the poorest often can’t move far", "Gives the critique that push–pull is a list, not an explanation", "Mentions another critique, such as missing structures or migrants’ agency"]}
    ],
    apply:{
     intro:"Try Lee’s checklist and its limits on real lives. Keep your notes private unless you choose to share them, and only include other people’s stories if they are happy for you to.",
@@ -281,7 +282,8 @@ ICA.addUnit({
       {t:"They ignore colonial history.", why:"The opposite: colonial history is central to them."},
       {t:"They assume every migrant is a rational individual maximising income.", why:"That assumption belongs to neoclassical theory, not historical-structural views."},
       {t:"They only study households in rural villages.", why:"That focus is closer to NELM. Historical-structural theories look at the whole world economy."}
-    ]}
+    ]},
+    {id:"e2u10-l2-x8", type:"explain", q:"After two bad harvests, the Tran family pays for their eldest daughter to take a job abroad, though they are not the poorest family in their village. Explain this using the new economics of labour migration (NELM), and say how NELM differs from the neoclassical view.", size:"4–5 sentences", model:"Neoclassical theory sees migration as an individual’s investment: a person moves when expected income elsewhere, minus the costs, beats income at home. NELM, from Stark and Bloom (1985), says the household decides, and it aims to spread risk as well as raise income. With no crop insurance or bank loans, the family places one member in work whose pay doesn’t depend on the harvest, and her remittances act like insurance. NELM also points to relative deprivation: a family may send a migrant because it feels poorer than neighbours who receive money from abroad. Critics add that households aren’t always united teams.", points:["Describes the neoclassical view as an individual weighing expected income", "Explains that in NELM the household decides to spread risk", "Explains how remittances act like insurance or credit", "Uses relative deprivation to explain why a family that isn’t the poorest sends a migrant"]}
    ],
    apply:{
     intro:"Use the four economic lenses on real lives and real jobs. Keep notes private unless you choose to share them.",
@@ -440,7 +442,8 @@ ICA.addUnit({
       {t:"Mabogunje studied rural–urban migration in Africa as a system with feedback.", flag:false, why:"Accurate. His 1970 article is a founding text of migration systems theory."},
       " ",
       {t:"Carling’s term “involuntary immobility” describes people who want to move but can’t.", flag:false, why:"Accurate. Carling (2002) developed it from research in Cape Verde."}
-    ]}
+    ]},
+    {id:"e2u10-l3-x8", type:"explain", q:"In one village, Omar wants to leave but has no money, passport or contacts, while his neighbour Hana could easily move but chooses to stay. Explain both cases using de Haas’s aspirations–capabilities framework, and why the framework says staying needs explaining too.", size:"4–5 sentences", model:"De Haas argues that migration happens when people both want to move (aspirations) and are able to (capabilities). Capabilities depend on freedom from obstacles, such as visa rules, and on the ability to act: money, skills, contacts and documents. Omar has the aspiration but not the capabilities, so he is in involuntary immobility, a term from Jørgen Carling. Hana has the capabilities but not the aspiration, so she shows voluntary immobility. Earlier theories often treated staying as the default. But most people never migrate across a border, so explaining who stays, and why, is part of explaining migration.", points:["Defines aspirations and capabilities", "Places Omar in involuntary immobility and explains why", "Places Hana in voluntary immobility and explains why", "Explains why staying needs explaining too"]}
    ],
    apply:{
     intro:"Look for networks and for staying, not only moving. Keep notes private unless you choose to share them, and never ask anyone about their legal status.",
@@ -579,7 +582,8 @@ ICA.addUnit({
       {t:"A binding treaty that bans nurses and doctors from working abroad", why:"The Code doesn’t ban anyone from migrating; health workers keep the right to move. It guides recruiters and governments."},
       {t:"A rule that only applies to doctors in Europe", why:"The Code is global and covers health personnel of all kinds."},
       {t:"A 1951 agreement about refugee doctors", why:"It dates from 2010 and is about recruitment of health workers generally, not refugees."}
-    ]}
+    ]},
+    {id:"e2u10-l4-x8", type:"explain", q:"A government says, ‘If we fund development in poorer countries, fewer people will migrate.’ Explain why the migration hump suggests this may not be true in the short run, and why researchers still debate the evidence.", size:"4–5 sentences", model:"The migration hump, Philip Martin’s term, is the idea that development can increase emigration in the short run before reducing it in the long run. As poorer countries develop, capabilities rise, because more households can afford the journey and fees. Aspirations rise too, through education, media and links abroad, and falling child deaths create a large generation of young adults. Only later, as incomes at home approach those abroad, do fewer people find it worth leaving. But the evidence comes mostly from comparing countries. When Schneiderheinze and Benček (2024) followed countries over time, emigration to rich OECD countries fell as incomes rose, so the debate is open.", points:["Defines the migration hump", "Gives at least two reasons emigration can rise with development", "Explains that much of the evidence compares countries at one moment", "Notes that studies following countries over time disagree"]}
    ],
    apply:{
     intro:"Look at the evidence behind claims about development and skills. Keep notes private unless you choose to share them.",
@@ -729,7 +733,8 @@ ICA.addUnit({
       {t:"Fiji adopted national guidelines on planned relocation in 2018.", flag:false, why:"Accurate. Fiji’s Planned Relocation Guidelines date from 2018."},
       " ",
       {t:"Women have recently become a large majority of the world’s international migrants.", flag:true, why:"Inaccurate. UN DESA puts women and girls at 48% in 2024."}
-    ]}
+    ]},
+    {id:"e2u10-l5-x8", type:"explain", q:"Explain the difference between migrant smuggling and human trafficking under the 2000 Palermo Protocols, and how a journey that starts as smuggling could become trafficking.", size:"4–5 sentences", model:"Migrant smuggling is procuring someone’s illegal entry into a country where they are not a national or permanent resident, for a financial or other material benefit. It always involves crossing a border, and the migrant usually agrees. Trafficking is about exploiting a person and has three elements: an act, such as recruiting or transporting; a means, such as force, deception or abuse of vulnerability; and a purpose of exploitation. It needs no border crossing, and where those means are used, consent is irrelevant. A smuggling journey becomes trafficking if, on arrival, people are held, deceived or forced to work off an inflated debt.", points:["Defines smuggling as procuring illegal entry for profit, always across a border", "Gives the three elements of trafficking (act, means, purpose)", "Notes that trafficking needs no border and consent is irrelevant when the means are used", "Explains how smuggling can turn into trafficking"]}
    ],
    apply:{
     intro:"Bring the whole unit together. Keep notes private unless you choose to share them, never ask anyone about their legal status, and only interview someone who agrees, who can skip any question, and without recording unless they consent.",

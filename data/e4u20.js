@@ -128,7 +128,8 @@ ICA.addUnit({
       {t:"Since Thailand was never colonised, colonialism did not affect it.", flag:true, why:"Thongchai showed that Siam’s rulers adopted colonial-style mapping and administration; “not colonised” is not “untouched”."},
       " ",
       {t:"Reid argues for a shared maritime trading world; Lieberman disputes how unique it was.", flag:false, why:"A fair statement of a scholarly debate with both sides named."}
-    ]}
+    ]},
+    {id:"e4u20-l1-x8", type:"explain", q:"Is “Southeast Asia” a real region or a name invented by outsiders? Explain Emmerson’s argument, and how Wolters or Reid suggest the area had a shape of its own before it was named.", size:"3–5 sentences", hint:"Start with where the name came from. Then ask what connected the area before 1943.", model:"The name came late: the Allies’ South East Asia Command of 1943 gave the phrase official life. Emmerson (1984) argued that the name both describes and invents its subject: it points to real similarities but imposes a unity and clear borders the area did not have. Others argue the region had a shape of its own long before. Wolters described early polities as mandalas, overlapping circles of power held together by loyalty and tribute rather than fixed borders. Reid argued that the lands “below the winds” formed one trading world, linked by the monsoon and ports such as Malacca, though Lieberman replied that it was less unique than Reid suggested.", points:["Notes that the name came from the 1943 South East Asia Command", "Explains Emmerson’s point that the name both describes and invents", "Explains Wolters’s mandala or Reid’s trading world", "Gives a criticism, such as Lieberman’s reply to Reid"]}
    ],
    apply:{
     intro:"Practise thinking about the region as a scholar. Everything here is free.",
@@ -278,7 +279,8 @@ ICA.addUnit({
       {t:"“Everyone knows country X is a dictatorship.”", why:"No source, no year, no definition, and an appeal to what everyone knows."},
       {t:"“Country X is a democracy because it holds elections.”", why:"Elections alone do not make a democracy; competitive authoritarian regimes hold them too."},
       {t:"“Regime labels are pure opinion, so I avoid all classification.”", why:"Labels can be defined and measured; the point is to use them transparently, not to abandon them."}
-    ]}
+    ]},
+    {id:"e4u20-l2-x8", type:"explain", q:"Using Slater’s *Ordering Power* (2010) and Slater and Wong’s *From Development to Democracy* (2022), explain why some authoritarian regimes in the region last, and why a strong regime might choose to democratise. Why is Singapore a puzzle?", size:"3–5 sentences", hint:"Both arguments are about strength. What makes elites band together, and what makes them confident?", model:"Slater argues that where elites faced threatening mass unrest, they banded together behind strong parties and states, and so built durable authoritarian regimes, as in Malaysia and Singapore. Slater and Wong add a twist: some regimes democratise from strength, confident they can still win under new rules, as in Japan, South Korea and Taiwan. So strength can explain both durability and a safe exit to democracy. Singapore is a puzzle because it is rich and highly educated, yet one party has governed since 1959. That runs against the modernisation theory expectation that wealth brings democracy.", points:["Explains Slater’s argument: threatened elites band together behind strong parties", "Gives an example of a durable regime, such as Malaysia or Singapore", "Explains democracy through strength: confident incumbents expect to win", "Explains why Singapore puzzles modernisation theory", "Attributes each argument to its authors"]}
    ],
    apply:{
     intro:"Practise describing regimes accurately and neutrally. Use free sources only.",
@@ -417,7 +419,8 @@ ICA.addUnit({
       {t:"A 2023 UN report estimated that at least 120,000 people in Myanmar might be forced to work in online scams.", flag:false, why:"Accurate, from the UN human rights office (August 2023)."},
       " ",
       {t:"People forced into scam compounds should be treated as criminals, not victims.", flag:true, why:"The UN High Commissioner stressed the opposite: they are victims of trafficking and forced criminality."}
-    ]}
+    ]},
+    {id:"e4u20-l3-x8", type:"explain", q:"Indonesia’s government says its nickel ore export ban has worked. Explain how you would judge the policy fairly, using three separate questions, and give the main arguments on each side.", size:"3–5 sentences", hint:"Value added at home; who captured the gains; at what cost.", model:"First, has it raised value added at home? Exports of processed nickel products rose sharply after the 2020 ban, so on this measure it has, as the government argues. Second, who captured the gains? Much of the new smelting capacity was built with Chinese investment, so I would ask what share stays in Indonesia through taxes, royalties and wages; some economists add that gains depend on prices and a few foreign investors. Third, at what cost? Environmental and labour groups point to coal-powered smelters, forest loss, pollution and unsafe work. The EU adds that the ban breaks WTO rules; a WTO panel agreed in 2022, and Indonesia appealed.", points:["Asks whether value added at home has risen, with evidence", "Asks who captured the gains, noting foreign ownership", "Asks about environmental and labour costs", "Attributes each argument to the government, critics, the EU or economists", "Mentions an outside constraint, such as the WTO ruling or battery technology"]}
    ],
    apply:{
     intro:"Trace the region’s economy in things you can check yourself.",
@@ -548,7 +551,8 @@ ICA.addUnit({
       {t:"ASEAN is clearly useless and should be dissolved.", flag:true, why:"An unattributed verdict. Name who argues this and on what evidence, and give the counter-argument."},
       " ",
       {t:"In May 2026 ASEAN had not reached consensus on recognising Myanmar’s elections.", flag:false, why:"Accurate and dated."}
-    ]}
+    ]},
+    {id:"e4u20-l4-x8", type:"explain", q:"Explain how ASEAN’s decision rules shaped its response to Myanmar after the 2021 coup, and why some observers say ASEAN quietly bent one of its own norms.", size:"3–5 sentences", hint:"What does Article 20 of the Charter require, and is there any rule for suspending a member?", model:"Under Article 20 of the ASEAN Charter, decisions are made by consultation and consensus, and there is no rule for suspending or expelling a member. The small Secretariat coordinates but does not command. So ASEAN could not expel Myanmar; it agreed the Five-Point Consensus in April 2021, with Myanmar’s military chief present. When implementation stalled, ASEAN took the unusual step, from October 2021, of inviting only a “non-political representative” of Myanmar to its summits, leaving out the military’s leader. Some call this a quiet norm change, because it broke with strict non-interference. Parliamentarians’ groups such as APHR still speak of ASEAN’s “paralysis”.", points:["Explains decision by consultation and consensus (Article 20)", "Notes there is no rule to suspend or expel a member", "Describes the Five-Point Consensus as ASEAN’s response", "Explains the exclusion of the military’s leader from summits", "Explains why this is seen as bending non-interference, and attributes a critical view"]}
    ],
    apply:{
     intro:"Read ASEAN’s own documents, and the views of people who study it.",
@@ -683,7 +687,8 @@ ICA.addUnit({
       {t:"A most different design comparing Brunei and Vietnam", why:"These share neither religion nor the outcome in question."},
       {t:"A single case study of Singapore", why:"One case cannot compare two paths."},
       {t:"A survey of all 193 UN members", why:"A large-N study answers a different, broader question."}
-    ]}
+    ]},
+    {id:"e4u20-l5-x8", type:"explain", q:"Why do scholars such as Wang Gungwu reject treating the ethnic Chinese of Southeast Asia as one diaspora? Use the histories of two countries as evidence, then explain the main criticism of Amy Chua’s idea of “market-dominant minorities”.", size:"3–5 sentences", hint:"Compare Thailand and Indonesia. Then ask whom Chua’s label groups together.", model:"Wang Gungwu argued that ethnic Chinese identities were shaped mainly by the countries they lived in, so they should not be treated as one diaspora; most scholars now prefer terms such as “Chinese Indonesians” to *huaqiao*, which suggests sojourners loyal to China. Histories differ sharply. In Thailand, Skinner described extensive assimilation. In Indonesia, Suharto’s government restricted Chinese schools, press and festivals from 1967, and ethnic Chinese were targeted in the May 1998 riots. Chua argued that “market-dominant minorities” face backlash when markets and democracy spread together. Critics answer that the idea lumps rich and poor Chinese together, overstates economic dominance and risks feeding stereotypes.", points:["Explains Wang Gungwu’s argument that identities were shaped by each country", "Explains why terms such as huaqiao are avoided", "Contrasts the histories of two countries, such as Thailand and Indonesia", "States Chua’s argument and attributes it", "Gives the critics’ reply to Chua"]}
    ],
    apply:{
     intro:"Look at religion, ethnicity and culture through primary sources, and build your own comparison.",

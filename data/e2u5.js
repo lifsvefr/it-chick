@@ -129,7 +129,8 @@ ICA.addUnit({
       {t:"Why did trade between these two countries double after their agreement?", why:"This asks for an explanation of what happened, which evidence can test."},
       {t:"How many countries attended the conference?", why:"This is a factual question with a checkable answer."},
       {t:"Which countries voted for the resolution, and what did they have in common?", why:"This asks for a description and an explanation of a pattern, not a judgement."}
-    ]}
+    ]},
+    {id:"e2u5-l1-x8", type:"explain", q:"Choose an ordinary cup of coffee. Explain how it connects to international relations, and what questions the field of IR would ask about it.", size:"3–5 sentences", model:"The beans may be grown in one country, roasted in another and sold in a third. Every border they cross has rules, such as import taxes, safety standards and trade agreements, that governments negotiated. The price can rise after a drought, a war or a trade dispute far away. IR, the field, asks questions about this: who made these rules, why governments agreed or failed to agree, and who gains and who pays along the way. The actors include not only states but companies, organisations and campaign groups.", points:["Traces the coffee across more than one border", "Names rules made between governments, such as taxes or trade agreements", "Shows how distant events can change the price", "Asks an IR question, such as who made the rules or who gains and who pays"]}
    ],
    apply:{
     intro:"Start noticing international relations in your own life. Nothing here needs an account or costs money; keep your notes private unless you choose to share them.",
@@ -279,7 +280,8 @@ ICA.addUnit({
       {t:"Sovereignty is an illusion and has no effect on how states behave.", why:"Krasner didn’t say it was meaningless. It shapes behaviour, even though it is often broken."},
       {t:"Only democracies can be truly sovereign.", why:"Sovereignty has nothing to do with the type of government."},
       {t:"International organisations have replaced sovereign states.", why:"Krasner’s point is about states bending the rule, not about states disappearing."}
-    ]}
+    ]},
+    {id:"e2u5-l2-x8", type:"explain", q:"Imagine a new entity, ‘Teralia’, with a permanent population, a defined territory and a working government, but most states refuse to recognise it. Is Teralia a state? Explain using the declaratory and constitutive views of recognition.", size:"4–5 sentences", model:"It depends on the view. The declaratory view says a state exists as soon as it meets the Montevideo criteria: a permanent population, a defined territory, a government and the capacity to enter into relations with other states. Recognition only declares a fact, so if Teralia can deal with other states independently, it is a state. The constitutive view says an entity becomes a state only when other states recognise it, so Teralia is not one yet. Most international lawyers lean towards the declaratory view, but in practice, without wide recognition Teralia couldn’t join the UN or have its passports widely accepted.", points:["Explains the declaratory view and applies it to Teralia", "Mentions the Montevideo criteria, including the capacity to deal with other states", "Explains the constitutive view and applies it", "Notes that recognition matters in practice, for example for UN membership or passports"]}
    ],
    apply:{
     intro:"Use real documents and maps to see states, nations and sovereignty at work. Everything here is free and needs no account.",
@@ -417,7 +419,8 @@ ICA.addUnit({
       {t:"Spying is allowed under the host country’s own laws.", why:"Host countries’ laws forbid spying on them. The diplomat escapes trial because of immunity, not because spying is allowed."},
       {t:"The UN must approve any trial of a foreign national.", why:"There is no such rule; states try foreigners in their courts all the time. Diplomats are a special case."},
       {t:"Only the diplomat’s home country can expel him.", why:"It is the host country that expels a diplomat it no longer accepts."}
-    ]}
+    ]},
+    {id:"e2u5-l3-x8", type:"explain", q:"A friend says, ‘There’s no world government, so international politics must be chaos.’ Explain what IR scholars mean by anarchy, and why it isn’t the same as chaos.", size:"3–5 sentences", model:"In IR, anarchy simply means there is no central authority above states: no world government that can make and enforce laws over them. It doesn’t mean disorder. Because no one is above them, states must look after their own safety, which can lead to worry and arms build-ups. But a lot of order still exists: diplomacy, treaties that states mostly keep, organisations such as the UN or WHO, reciprocity and reputation, and habits such as treating ambassadors as untouchable. The same anarchy holds rivals and close friends, such as Norway and Sweden, at peace for over two centuries.", points:["Defines anarchy as no authority above states", "Says that anarchy does not mean disorder or the absence of rules", "Names at least two sources of order, such as diplomacy, law or organisations", "Gives an example or notes the self-help pressure anarchy can create"]}
    ],
    apply:{
     intro:"Find order and many actors in the world around you. Everything here can be done with a phone and a free news site.",
@@ -558,7 +561,8 @@ ICA.addUnit({
       {t:"The individual level, because each war had particular leaders.", why:"Leaders differ from war to war, so they can’t explain a pattern that repeats across all of them."},
       {t:"The state level, because each country had a different government.", why:"If many kinds of government all ended up at war, the type of government can’t be the main explanation of the pattern."},
       {t:"No level can help, because wars have no causes.", why:"IR assumes wars have causes that can be studied, even if they are complex."}
-    ]}
+    ]},
+    {id:"e2u5-l4-x8", type:"explain", q:"A government suddenly pulls out of a regional trade agreement. Suggest one possible cause at each level of analysis, and explain why a good explanation says which level each claim belongs to.", size:"4–5 sentences", model:"At the individual level, a new leader might distrust the agreement or want to look tough. At the state level, pressure at home could matter: an election, struggling industries or interest groups that blame the deal for lost jobs. At the system level, a shift in how power is spread, such as a rival power offering a better deal, might push any government in that position the same way. These can all be true at once. Singer warned against sliding between levels without noticing, so naming the level makes clear what each claim adds and what evidence would test it.", points:["Gives an individual-level cause, about a leader", "Gives a state-level cause, about pressures inside the country", "Gives a system-level cause, about the setting between states", "Explains why naming the level matters (Singer’s warning)"]}
    ],
    apply:{
     intro:"Practise switching levels on events you choose. Work from news reports or history pages you can read for free.",
@@ -705,7 +709,8 @@ ICA.addUnit({
       {t:"There is no problem: every country south of the equator is in the Global South.", why:"Geography isn’t the test. Many Global South countries lie north of the equator, such as India and most of West Africa."},
       {t:"The term only covers Africa.", why:"It is usually used for much of Africa, Asia, Latin America, the Caribbean and the Pacific."},
       {t:"The term means the Cold War’s Soviet bloc.", why:"The Soviet bloc was sometimes called the “Second World”; Global South is a different idea."}
-    ]}
+    ]},
+    {id:"e2u5-l5-x8", type:"explain", q:"Explain why it is misleading to say that the modern system of sovereign states spread around the world because other regions copied Europe.", size:"3–4 sentences", model:"For most of history, much of the world was organised by empires and other hierarchies, such as the tributary system in East Asia, in which rulers were openly ranked rather than equal (though historians debate how much was ritual). Europe’s state system spread largely through conquest and colonial rule: at the Berlin Conference of 1884–1885, for example, European powers agreed rules for claiming Africa without inviting any African ruler. Colonised peoples then used the ideas of sovereignty and self-determination to win their freedom, in waves of decolonisation. Most new states kept their colonial borders and joined the UN.", points:["Notes that empires and hierarchies were the norm before", "Explains that the system spread through conquest and colonial rule", "Gives an example, such as the Berlin Conference", "Explains that independence movements used the idea of sovereignty to win freedom"]}
    ],
    apply:{
     intro:"Connect the big story to places you know. Use free, official sources such as the UN’s website or a national archive.",

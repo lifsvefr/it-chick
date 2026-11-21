@@ -137,7 +137,8 @@ ICA.addUnit({
       {t:"Informal empire", why:"Informal empire describes the powers’ control over Siam, not Siam’s strategy for escaping it."},
       {t:"The scramble for Africa", why:"That is about the partition of Africa, not about Siam’s treaty revision."},
       {t:"Collective security", why:"Collective security means states jointly resisting aggression; it isn’t about legal reforms to end unequal treaties."}
-    ]}
+    ]},
+    {id:"e4u1-l1-x8", type:"explain", q:"A classmate writes: “Japan escaped the unequal treaties because it became civilised.” Using the idea of the “standard of civilisation”, explain what is wrong with this sentence and how you would put the point better.", size:"3–4 sentences", hint:"Who set the test, and what did it actually measure?", model:"The “standard of civilisation” was a test that European powers used to decide which states counted as full, equal members of international society. Gerrit Gong lists its conditions: protecting foreigners, an organised government, trusted courts and published laws, regular diplomacy, and European social norms such as banning slavery. Meiji Japan wrote European-style legal codes and a constitution partly to pass this test, and it worked: extraterritoriality ended in 1899 and Japan regained control of its tariffs in 1911. So Japan didn’t “become civilised”; it met a European yardstick. The test shows how the powerful ranked states, not facts about any society.", points:["Explains the standard as a test European powers used to rank states", "Names at least one condition, such as trusted courts or published laws", "Links Japan’s reforms to treaty revision (1899, 1911)", "Says the test reflects a European hierarchy, not a fact about Japanese society"]}
    ],
    apply:{
     intro:"Work with primary sources and with the way history is told. Use free, reputable sources such as national archives, university collections and encyclopaedias, and note where each comes from.",
@@ -290,7 +291,8 @@ ICA.addUnit({
       {t:"Japan signed the instrument of surrender on 2 September 1945.", flag:false, why:"Correct."},
       " ",
       {t:"The Tokyo tribunal tried individual Japanese leaders between 1946 and 1948.", flag:false, why:"Correct."}
-    ]}
+    ]},
+    {id:"e4u1-l2-x8", type:"explain", q:"Explain how collective security was meant to work under the League of Nations, how it differs from an alliance, and why Italy’s invasion of Ethiopia or Japan’s occupation of Manchuria showed its weakness.", size:"3–5 sentences", hint:"Think about the neighbourhood promise, and who had to keep it.", model:"Under collective security, every member treats aggression against any member as an attack on all, even if the aggressor is itself a member. An alliance is different: it faces a known outside threat. In the Covenant, members promised to respect each other’s territory (Article 10) and to cut trade with any member that went to war illegally (Article 16). But the League relied on its members to act, and great powers often wouldn’t. When Italy invaded Ethiopia in 1935, the sanctions left out oil and failed. When the League criticised Japan over Manchuria, Japan simply left in 1933.", points:["Says aggression against one member counts as an attack on all, even by a member", "Contrasts this with an alliance against a known outside threat", "Explains that the League depended on its members, especially great powers, to act", "Uses Ethiopia or Manchuria as evidence"]}
    ],
    apply:{
     intro:"Work with founding documents and with how the war is remembered. Use official or university sources, and note the date of each page you use.",
@@ -438,7 +440,8 @@ ICA.addUnit({
       {t:"The Soviet Union dissolved in December 1991.", flag:false, why:"Correct."},
       " ",
       {t:"Historians agree that one single cause ended the Cold War.", flag:true, why:"Wrong. Power, institutions, ideas and individual choices are all argued, and most accounts combine them."}
-    ]}
+    ]},
+    {id:"e4u1-l3-x8", type:"explain", q:"The worked example tested the “proxy war” label on Angola. Apply the same test to the Korean War: how far was it a proxy war, and what do Bruce Cumings and the Soviet documents each add?", size:"3–5 sentences", hint:"Whose aims started the war, who approved it, and who ended up fighting?", model:"In a proxy war, outside powers back local sides instead of fighting each other directly, so the real test is who took the key decisions. Korea fits only partly. Bruce Cumings stressed the war’s roots in a Korean civil conflict after colonial rule: Koreans on both sides had their own aim of unifying the country. Soviet documents studied by Kathryn Weathersby and others show that Stalin approved Kim Il-sung’s invasion plan in 1950 and that Mao agreed. And it didn’t stay a proxy war: US-led UN forces and Chinese troops fought each other directly. Most scholars now call it a civil war that outside powers turned into an international one.", points:["Uses the test of who took the key decisions", "Gives Cumings’ point about a Korean civil conflict after colonial rule", "Uses the Soviet documents: Stalin approved Kim Il-sung’s plan and Mao agreed", "Notes that US-led and Chinese forces fought directly, which goes beyond a proxy war", "Concludes that it was a civil war that outside powers internationalised"]}
    ],
    apply:{
     intro:"Read Cold War documents the way historians do: who wrote this, for whom, when, and what does it show? The Wilson Center’s Digital Archive (digitalarchive.wilsoncenter.org) offers free translated documents from many countries’ archives.",
@@ -587,7 +590,8 @@ ICA.addUnit({
       {t:"Structural adjustment", why:"Structural adjustment (1980s–90s) pushed privatisation and open markets, close to the opposite."},
       {t:"The Marshall Plan", why:"The Marshall Plan was US aid for European recovery after 1948."},
       {t:"Containment", why:"Containment was US strategy against Soviet expansion, not a development programme."}
-    ]}
+    ]},
+    {id:"e4u1-l4-x8", type:"explain", q:"Explain what developing countries hoped the New International Economic Order (1974) would change, and why most historians say it failed as a programme.", size:"3–5 sentences", hint:"Think about what a General Assembly resolution can and can’t do, and what happened in the early 1980s.", model:"In 1974, confident after oil producers had quadrupled prices, developing countries used the UN General Assembly to demand a fairer world economy: better commodity prices, the right to control and nationalise their natural resources, rules for multinational companies, and a bigger say in the IMF and World Bank. It largely failed because Assembly resolutions are only recommendations, and the main industrial economies opposed most of it. Then interest rates rose, commodity prices fell, and the 1982 debt crisis pushed indebted governments into structural adjustment, which went the other way. Some scholars, such as Getachew, argue that its vision of justice still matters.", points:["Names at least two demands, such as fairer commodity prices or control of natural resources", "Explains that Assembly resolutions aren’t binding and industrial economies opposed it", "Mentions the debt crisis and structural adjustment", "Attributes the “still matters” view to some scholars, such as Getachew"]}
    ],
    apply:{
     intro:"Read the founding texts of the postcolonial world in their own words. They are short and free online.",
@@ -732,7 +736,8 @@ ICA.addUnit({
       {t:"“The liberal order is obviously dead, as anyone can see from the news.”", why:"It asserts a contested claim without evidence or attribution."},
       {t:"“The liberal order will certainly collapse by 2030.”", why:"It makes a prediction as if it were fact; academic writing on live debates avoids that."},
       {t:"“Only Western scholars have serious, informed opinions on this question.”", why:"Untrue: scholars and governments across the world, including in Asia and the Global South, take part in the debate."}
-    ]}
+    ]},
+    {id:"e4u1-l5-x8", type:"explain", q:"Compare Fukuyama’s “end of history” with Huntington’s “clash of civilizations”. Then explain how you would answer a classmate who says “Fukuyama was wrong, because wars continued after 1989”.", size:"3–5 sentences", hint:"Was Fukuyama’s claim about events or about ideas?", model:"Fukuyama argued that liberal democracy had no serious ideological rival left as a form of government: the end of the great contest of ideas, not the end of events or wars. Huntington replied that future conflicts would run along the boundaries between civilisations, defined largely by religion and culture. Critics such as Edward Said attacked his picture of civilisations as solid blocks, and quantitative studies found little sign that such conflicts had grown. So the classmate misreads Fukuyama: wars don’t disprove a claim about ideas. A better question is whether rivals to liberal democracy have since returned.", points:["States that Fukuyama’s claim was about ideologies, not events", "States Huntington’s claim about conflicts between civilisations", "Mentions a criticism of Huntington, such as Said’s or the quantitative studies", "Corrects the classmate and suggests a better question about rival ideologies"]}
    ],
    apply:{
     intro:"Practise the habits this lesson asks for: data with dates and sources, positions with authors, and your own view kept separate.",

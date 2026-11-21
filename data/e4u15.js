@@ -145,7 +145,8 @@ ICA.addUnit({
       {t:"Strange’s structural power", why:"That lens would ask who gains power over the framework of battery production, not which lobbies won."},
       {t:"Hegemonic stability theory", why:"That theory is about a dominant state and the openness of the whole system."},
       {t:"Polanyi’s double movement", why:"That would ask how society pushed back against market expansion."}
-    ]}
+    ]},
+    {id:"e4u15-l1-x8", type:"explain", q:"A large economy threatens tariffs unless a neighbour changes a policy. Another country issues the currency that most governments hold as savings. Use Susan Strange’s ideas to explain which is relational power and which is structural power, and why the difference matters.", size:"3–5 sentences", hint:"One kind of power wins a single contest; the other shapes the board on which all contests are played.", model:"The tariff threat is relational power: A gets B to do something B would not otherwise do. The currency is structural power: the power to shape the frameworks within which other states, firms and people have to operate, so it decides which choices are even available. In Strange’s terms it sits in the finance structure, one of her four structures with security, production and knowledge. The difference matters because a country can lose some contests yet still set the rules. Strange used this point in 1987 to reject predictions of US decline: Japan was rich, she argued, but the United States still shaped the structures.", points:["Identifies the tariff threat as relational power and defines it", "Identifies the currency as structural power and defines it", "Places the currency in Strange’s finance structure, or names her four structures", "Explains why structural power matters: it sets which choices are available", "Uses Strange’s argument about US decline, or a similar example"]}
    ],
    apply:{
     intro:"Use the lesson’s tools on things around you. You need only a browser and a notebook.",
@@ -309,7 +310,8 @@ ICA.addUnit({
       {t:"Domestic production of strategic goods is a matter of national security", b:0, why:"A security argument for protection."},
       {t:"Overall trade deficits reflect saving and investment, not unfair rules", b:1, why:"A standard macroeconomic reply to deficit-based arguments."},
       {t:"Breaking most-favoured-nation commitments weakens the rules that protect smaller exporters", b:1, why:"A systemic critique, common among smaller trading nations."}
-    ]}
+    ]},
+    {id:"e4u15-l2-x9", type:"explain", q:"Explain to a friend why two countries can both gain from trade even when one of them is better at making everything. Then explain why trade can still be politically hard inside each country.", size:"3–5 sentences", hint:"Compare what each country gives up to make one more unit. Then look inside one country.", model:"What matters is comparative advantage, not absolute advantage: each country specialises in the good it gives up least to make, its lowest opportunity cost. In the lesson’s example, a lamp costs Altavia half a sack of coffee but costs Bremo two, so Altavia makes lamps, Bremo makes coffee, and world output rises. At any price between those two costs both can gain, though bargaining power decides how much each gets. But national gains hide local losses: Bremo’s lamp workshops close, and the “China shock” research found lasting job losses in exposed US regions. Concentrated losers can make trade politically hard.", points:["Distinguishes comparative from absolute advantage", "Explains opportunity cost, with numbers or an example", "Says both can gain, but how much each gains depends on price or bargaining power", "Explains that some groups inside a country lose (Stolper–Samuelson or the China shock)", "Links concentrated losses to political difficulty"]}
    ],
    apply:{
     intro:"Work with real trade data and texts. Everything here is free and needs no account.",
@@ -451,7 +453,8 @@ ICA.addUnit({
       {t:"Relational power in the security structure", why:"Swap lines concern credit, not protection, and they work by setting the framework, not by a specific demand."},
       {t:"Moral hazard", why:"Moral hazard is about incentives created by rescues, not about who holds power."},
       {t:"Original sin", why:"Original sin is the inability to borrow abroad in one’s own currency."}
-    ]}
+    ]},
+    {id:"e4u15-l3-x8", type:"explain", q:"Use the impossible trinity to explain why Hong Kong cannot set its own interest rates, while Japan can but must let its currency rise and fall.", size:"3–4 sentences", hint:"Name the three things, then say which two each economy chose.", model:"The impossible trinity says a country can have only two of three things at once: a fixed exchange rate, free movement of capital and an independent monetary policy. Hong Kong has pegged its dollar to the US dollar since 1983 and lets money move freely, so it gives up the third: its interest rates must follow US rates, or money would flow out and break the peg. Japan chose free capital and its own monetary policy, so it cannot also fix its exchange rate, and its currency floats. Neither choice is always best; it depends on a country’s debts, reserves and trade.", points:["Names the three goals of the impossible trinity", "Says a country can have only two at once", "Explains Hong Kong’s choice: a peg and free capital, so no independent interest rates", "Explains Japan’s choice: free capital and its own policy, so a floating currency"]}
    ],
    apply:{
     intro:"Look at the real numbers and documents behind the debates.",
@@ -591,7 +594,8 @@ ICA.addUnit({
       {t:"The US fully decoupled from China", why:"The evidence shows indirect links persisted."},
       {t:"Tariffs had no effect on trade patterns", why:"Direct US imports from China did shift."},
       {t:"Viet Nam and Mexico stopped trading with China", why:"Their imports from China rose."}
-    ]}
+    ]},
+    {id:"e4u15-l4-x8", type:"explain", q:"Explain Farrell and Newman’s idea of “weaponised interdependence” and how it builds on Hirschman. Then apply it to the refining of critical minerals, and say what targets of a chokepoint often do over time.", size:"3–5 sentences", hint:"Hirschman: who depends on whom? Farrell and Newman: who controls the hubs of a network?", model:"Hirschman showed in 1945 that asymmetric dependence is power: 1930s Germany’s small trade partners needed it far more than it needed them. Farrell and Newman (2019) updated this for networks. States that control hubs, such as dollar clearing, SWIFT or chip-design software, can watch what flows through them (a panopticon effect) and cut others off (a chokepoint effect). Refining critical minerals is a possible chokepoint: the IEA found China the leading refiner of 19 of 20 key energy minerals, and China restricted rare-earth exports in 2025. But using a chokepoint can reduce its value, because targets look for other suppliers.", points:["Explains Hirschman’s point that asymmetric dependence is power", "Explains that control of network hubs gives power (Farrell and Newman)", "Names the panopticon and chokepoint effects", "Applies the idea to critical minerals refining with a fact from the lesson", "Notes that targets diversify, so a chokepoint can lose value"]}
    ],
    apply:{
     intro:"Trace the chains and the security debates around you.",
@@ -732,7 +736,8 @@ ICA.addUnit({
       {t:"China refused to let it join", why:"Eligibility is set by the Framework’s rules, not by one creditor."},
       {t:"Sri Lanka owed no money to official creditors, only to bondholders", why:"It owed large sums to China, Japan, India and others."},
       {t:"The Framework closed in 2021", why:"The suspension initiative ended in 2021; the Framework continued."}
-    ]}
+    ]},
+    {id:"e4u15-l5-x8", type:"explain", q:"A news article says: “China lends to poor countries in order to seize their ports.” Explain how a careful seminar answer would handle this claim, using the Hambantota case and attributing each view.", size:"3–5 sentences", hint:"Split the claim into two questions: what was the lending like, and what was it designed to do?", model:"A careful answer separates two questions. Was China’s lending sometimes opaque and costly? Much evidence says yes: researchers found confidentiality clauses and collateral accounts in its contracts. Was it designed to seize strategic assets? Here the evidence is weak. Brahma Chellaney coined “debt-trap diplomacy” in 2017, and Hambantota port, leased to a Chinese firm for 99 years that year, is the usual example. But Brautigam and Rithmire found that Sri Lanka’s government had proposed the port, and that the lease raised money to pay other debts. China’s government rejects the label.", points:["Separates “opaque or costly lending” from “designed to seize assets”", "Gives evidence on opacity, such as confidentiality clauses or collateral", "Attributes the “debt-trap diplomacy” claim to Chellaney and gives Hambantota as its example", "Gives the critics’ reading of Hambantota (Brautigam and Rithmire)", "Concludes that evidence for deliberate asset seizure is weak, or notes China’s rejection of the label"]}
    ],
    apply:{
     intro:"Work with the real data and documents of debt and development finance.",

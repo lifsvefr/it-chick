@@ -129,7 +129,8 @@ ICA.addUnit({
       {t:"The presidential term limit is removed and one leader’s thought is written into the constitution.", b:1, why:"Concentration of authority in one leader: Shirk’s argument."},
       {t:"Journalists and NGOs push a hydropower project onto the agenda as policy entrepreneurs.", b:0, why:"Mertha’s “fragmented authoritarianism 2.0”."},
       {t:"The leader’s long-time associates fill the Standing Committee.", b:1, why:"Often cited as evidence of personal power over collective leadership."}
-    ]}
+    ]},
+    {id:"e4u19-l1-x8", type:"explain", q:"Compare Andrew Nathan’s idea of “authoritarian resilience” with Susan Shirk’s reading of the Xi era. What did each explain well, and why does Joseph Fewsmith disagree with Shirk?", size:"3–5 sentences", hint:"Nathan wrote in 2003. What did his argument expect to happen next, and what happened instead?", model:"Nathan (2003) argued that the Party survived by institutionalising: rules for succession, merit-based promotion, specialised bodies and channels for complaints. That explained the 2000s well, but it expected institutionalisation to continue. Under Xi, power was centralised instead: the presidential term limit was removed in 2018, and Party commissions took over policy work. Shirk argues that Xi dismantled the collective leadership of the reform era, and that personal rule makes policy errors more likely. Fewsmith replies that elite politics was never as institutionalised as observers believed: in his view, Xi exploited Leninist rules rather than breaking them.", points:["Explains Nathan’s claim that the Party survived by institutionalising", "Notes that the argument expected institutionalisation to continue", "Gives evidence of centralisation under Xi, with a date", "States Shirk’s argument about personal rule and attributes it", "States Fewsmith’s reply and attributes it"]}
    ],
    apply:{
     intro:"Work with free primary sources and scholarship. No account or VPN is needed for any of these tasks.",
@@ -267,7 +268,8 @@ ICA.addUnit({
       {t:"China has refused to join any international institution.", flag:true, why:"Inaccurate: China belongs to the UN, WTO, IMF, World Bank and many more, and founded the AIIB."},
       " ",
       {t:"Kang argues that historical East Asia was a hierarchy centred on China.", flag:false, why:"Accurate summary of his argument."}
-    ]}
+    ]},
+    {id:"e4u19-l2-x8", type:"explain", q:"Compare power transition theory, as popularised by Allison’s “Thucydides’s Trap”, with Johnston’s argument that China is in many areas a status quo power. What does each expect, and what are the main criticisms of Allison?", size:"3–5 sentences", hint:"Power transition theory needs a dissatisfied rising power. Is China dissatisfied?", model:"Power transition theory, from Organski and Gilpin, holds that danger peaks when a dissatisfied rising power nears the leading one. Allison’s “Thucydides’s Trap” (2017) made this popular, and Mearsheimer expects intense security competition whatever China intends. Critics say several of Allison’s cases were not real power transitions, and that his list leaves out transitions that stayed peaceful. Johnston (2003) asked whether China is dissatisfied at all: he found it had joined most international institutions and largely kept their rules, though not on Taiwan or territory. Chinese officials reject the “Thucydides” framing and say China seeks no hegemony.", points:["Explains power transition theory: danger when a dissatisfied riser nears the leader", "Attributes the popular version to Allison", "Gives a criticism of Allison’s cases", "Explains Johnston’s finding that China joined and mostly kept institutional rules", "Notes Johnston’s exceptions (Taiwan, territory) or the Chinese government’s rejection of the framing"]}
    ],
    apply:{
     intro:"Compare how governments and scholars describe the same initiative. All sources are free online.",
@@ -404,7 +406,8 @@ ICA.addUnit({
       {t:"The Panmunjom Declaration", b:0, why:"April 2018 summit agreement."},
       {t:"The shelling of Yeonpyeong Island", b:1, why:"November 2010."},
       {t:"The “two hostile states” doctrine", b:1, why:"Announced by Kim Jong Un in December 2023."}
-    ]}
+    ]},
+    {id:"e4u19-l3-x8", type:"explain", q:"Use Scott Sagan’s three models to explain why North Korea has built nuclear weapons. Then explain why a public document, such as its 2022 nuclear law, cannot tell you which model is most important.", size:"3–5 sentences", hint:"Security, domestic politics, norms and status. What would each predict about a response to a security guarantee?", model:"The security model sees a small state facing a superpower that wants a deterrent; leaders cite Iraq and Libya as warnings. The domestic-politics model sees a bomb that legitimises the Kim family and rewards the elite. The norms-and-status model sees prestige: in 2026 Kim made better ties with Washington conditional on respect for the North’s “current status”. The 2022 law fits all three: its automatic-strike clause reflects a fear of attack on the leadership, sole authority for Kim fits the domestic model, and calling the status “irreversible” fits the status model. Telling them apart needs other evidence, such as how Pyongyang responds to guarantees or offers of status.", points:["Explains the security model with a North Korean example", "Explains the domestic-politics model", "Explains the norms-and-status model", "Shows that the 2022 law fits more than one model", "Says what other evidence could separate the models"]}
    ],
    apply:{
     intro:"Read primary sources from both Koreas and compare them. Everything here is free online.",
@@ -540,7 +543,8 @@ ICA.addUnit({
       {t:"An alliance with the United States against China and Russia", why:"Mongolia has no such alliance; balance with both neighbours is the first pillar."},
       {t:"A plan to join the Shanghai Cooperation Organisation as a full member", why:"Not what the term means."},
       {t:"Mongolia’s claim to territory in a third neighbouring state", why:"The policy concerns partnerships, not territory."}
-    ]}
+    ]},
+    {id:"e4u19-l4-x8", type:"explain", q:"Explain the difference between the PRC’s one-China principle and the United States’ one China policy. Why does the verb “acknowledges” matter so much?", size:"3–5 sentences", hint:"In the 1979 communiqué, what does the United States “recognize”, and what does it only “acknowledge”?", model:"The one-China principle is the PRC’s position: there is one China, Taiwan is part of China, and the PRC government is its sole legal government. A one China policy is another government’s own response to that claim, set out in the verb it chose. In the 1979 communiqué the United States “recognizes” the PRC government as the sole legal government of China, but only “acknowledges” the Chinese position that Taiwan is part of China. To acknowledge records a position without endorsing it. Other governments chose other verbs: Japan “fully understands and respects” the PRC’s position, and Canada “takes note” of it.", points:["States the PRC’s one-China principle and attributes it", "Explains that a one China policy is each other government’s own position", "Separates what the US recognises (a government) from what it acknowledges (a position)", "Explains that “acknowledge” records a position without endorsing it", "Gives another government’s verb, such as Japan’s or Canada’s"]}
    ],
    apply:{
     intro:"Work with primary texts. The documents below are free on official sites, such as the American Institute in Taiwan’s pages of key documents and the UN Digital Library.",
@@ -664,7 +668,8 @@ ICA.addUnit({
       {t:"Production networks built by firms before formal rules", b:1, why:"Market-led regionalisation."},
       {t:"Pooled sovereignty in trade policy", b:0, why:"The EU negotiates trade as one."},
       {t:"Decisions by consensus in informal forums", b:1, why:"The ASEAN way shapes the wider region."}
-    ]}
+    ]},
+    {id:"e4u19-l5-x8", type:"explain", q:"Since 1979 there has been no full-scale war between East Asian states, a pattern scholars call the “East Asian peace”. Explain how a realist, a liberal and a constructivist would each account for it, and why the “Asia paradox” makes the question harder.", size:"3–5 sentences", hint:"Each picture of the regional order credits something different: alliances, trade or norms.", model:"Realists credit US alliances and deterrence for keeping the peace. Liberals credit trade and economic interdependence. Constructivists credit regional norms, such as the ASEAN way’s habits of consultation, and Tønnesson stresses governments’ shared priority on economic development. But the region also shows the “Asia paradox”: deepening economic ties alongside persistent political and security tension. As of November 2026, for example, the China–Japan–Korea leaders’ summit had not met since May 2024, while trade links continued. That makes a simple liberal story harder to hold, and suggests that each picture may explain a different part of the evidence.", points:["Gives a realist explanation (alliances and deterrence)", "Gives a liberal explanation (trade and interdependence)", "Gives a constructivist explanation (norms such as the ASEAN way)", "Explains the Asia paradox: economic ties alongside political tension", "Concludes that each picture may explain only part of the evidence"]}
    ],
    apply:{
     intro:"Compare institutions and memories with free primary sources and scholarship.",

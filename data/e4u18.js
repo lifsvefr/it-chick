@@ -134,7 +134,8 @@ ICA.addUnit({
       {t:"Counting how many newspaper articles use the word “remilitarisation”", why:"Word counts measure media framing, not policy change."},
       {t:"Deciding which scholar is more famous", why:"Reputation is not evidence."},
       {t:"Looking only at the text of Article 9, which has not changed", why:"The text is unchanged, but interpretation, laws and budgets have changed; one indicator is not enough."}
-    ]}
+    ]},
+    {id:"e4u18-l1-x8", type:"explain", q:"For decades a rich Japan stayed militarily light. Compare one realist and one constructivist explanation of this, and say what evidence would help you tell them apart.", size:"3–5 sentences", hint:"Turn each explanation into something you could observe in a specific decision, such as the 1992 peacekeeping law.", model:"Heginbotham and Samuels’ mercantile realism says Japan treated technology and markets as core security interests, seeking techno-economic security rather than only weapons; Calder’s reactive-state reading adds that policy moved mainly under outside pressure. Constructivists such as Katzenstein and Berger trace a culture of antimilitarism built after defeat, which Oros says leaders keep renegotiating. To tell them apart, I would test a specific decision. If pressure drives policy, change should follow foreign criticism closely; if norms shape it, laws should carry limits that answer fears at home. The 1992 peacekeeping law fits both: pressure explains its timing, antimilitarism its strict limits.", points:["Gives a realist explanation and attributes it (mercantile realism or the reactive state)", "Gives a constructivist explanation and attributes it (a culture of antimilitarism)", "Turns each explanation into something observable", "Tests them on a specific decision, such as the 1992 law", "Avoids a national-character explanation"]}
    ],
    apply:{
     intro:"Work with the arguments and with primary sources. Everything here is free online.",
@@ -281,7 +282,8 @@ ICA.addUnit({
       {t:"Each export still needs approval by the National Security Council.", flag:false, why:"Accurate: screening case by case remains."},
       " ",
       {t:"Japan will now export lethal weapons to countries at war as a matter of course.", flag:true, why:"Inaccurate. In principle Japan does not export lethal weapons to countries at war."}
-    ]}
+    ]},
+    {id:"e4u18-l2-x8", type:"explain", q:"A classmate writes: “Since 2014 Japan has full collective self-defence, like any other US ally.” Explain what is wrong with this sentence. Then give one argument for and one against the change, attributing each.", size:"3–5 sentences", hint:"Look at the three new conditions in the 2014 cabinet decision.", model:"Earlier governments held that Japan has the right of collective self-defence under the UN Charter, but that Article 9 does not allow it to use that right. The 2014 cabinet decision allowed force only under three conditions: an attack on Japan, or on a country in a close relationship with Japan that threatens Japan’s survival and clearly endangers people’s basic rights; no other appropriate means; and only the minimum force necessary. So the right is limited, not full. Prime Minister Abe argued that the change was needed to protect lives and deter war. Critics, including three constitutional scholars at a Diet committee in 2015, called the bills unconstitutional.", points:["Explains the earlier view: Japan had the right but could not exercise it", "Gives the three conditions, or their core: a threat to Japan’s survival, no other means, minimum force", "Concludes that the right is limited, not full", "Gives the government’s argument and attributes it", "Gives a critics’ argument and attributes it"]}
    ],
    apply:{
     intro:"Read the official texts and the critics side by side.",
@@ -413,7 +415,8 @@ ICA.addUnit({
       {t:"In 2019, 72.15% of referendum voters opposed the Henoko landfill.", flag:false, why:"Accurate; the vote was not binding."},
       " ",
       {t:"The September 2026 election was won by Tamaki Denny for a third term.", flag:true, why:"Inaccurate. Koja Genta, backed by the LDP, defeated Tamaki on 13 September 2026 and accepts the relocation plan."}
-    ]}
+    ]},
+    {id:"e4u18-l3-x8", type:"explain", q:"Explain why moving Futenma air station to Henoko is contested. Give the national government’s and the prefectural governments’ positions, and explain why Okinawa’s residents should not be described as one bloc.", size:"3–5 sentences", hint:"Start with Okinawa’s share of land and of US-only facilities. Then attribute each position.", model:"Okinawa makes up about 0.6% of Japan’s land but hosts about 70% of the area of facilities used only by US forces. In 1996 the two governments agreed to return Futenma once a replacement was built, and the plan became a new facility at Henoko, also in Okinawa. The national government calls Henoko “the only solution”: it removes Futenma’s danger to a crowded city while keeping Marines in a strategic place. Governors Onaga and Tamaki opposed it, citing the prefecture’s burden, the environment and local democracy. But residents are divided, and in 2026 voters elected Koja Genta, who campaigned mainly on incomes and accepts the plan.", points:["Gives Okinawa’s share of land and of US-only facilities", "States the national government’s position and attributes it", "States the opposing prefectural position and attributes it", "Explains that residents hold different views, for example over jobs or the 2026 election", "Uses neutral wording, without loaded words in the writer’s own voice"]}
    ],
    apply:{
     intro:"Look at the alliance from Tokyo, Washington and Okinawa.",
@@ -541,7 +544,8 @@ ICA.addUnit({
       {t:"Japan and China both signed RCEP in 2020, deepening their trade ties", why:"That supports, rather than challenges, the interdependence story."},
       {t:"The 1978 treaty is still in force", why:"Its survival says little about whether interdependence calms tension."},
       {t:"Japanese firms still invest in China", why:"That is evidence of continued interdependence, not of its limits."}
-    ]}
+    ]},
+    {id:"e4u18-l4-x8", type:"explain", q:"Explain why a seminar paper on the islands that Japan calls the Senkakus should use all three names and attribute every claim. Then state Japan’s and the PRC’s positions in one neutral sentence each.", size:"3–5 sentences", hint:"A single name already takes a side. Separate facts both sides cite from the disputed legal claim.", model:"A single name already takes a side, because each government uses its own: Senkaku (Japan), Diaoyu (the PRC) and Diaoyutai (Taiwan). So I give all three on first mention and say that Japan administers the islands. I also separate facts both sides cite, such as Japan’s cabinet decision of 14 January 1895, from the disputed legal claim, such as whether the islands were unclaimed. Japan’s government says it incorporated the islands in 1895 after surveys showed they were unclaimed. The PRC’s government says Japan took them during the 1894–95 war and that they should have been returned after 1945.", points:["Explains that one name alone takes a side", "Gives all three names and says who administers the islands", "Separates facts both sides cite from disputed claims", "States Japan’s position, attributed to its government", "States the PRC’s position, attributed to its government"]}
    ],
    apply:{
     intro:"Practise neutral writing on the hardest topics in Japan’s diplomacy.",
@@ -686,7 +690,8 @@ ICA.addUnit({
       {t:"The Diplomatic Bluebook proves that Japan’s aid has no commercial motives.", flag:true, why:"An official source states the government’s view; it cannot by itself prove motives. Pair it with independent evidence."},
       " ",
       {t:"Critics in development NGOs argue that offer-type cooperation could favour Japanese firms, while the government stresses transparency and partners’ needs.", flag:false, why:"Both positions are attributed."}
-    ]}
+    ]},
+    {id:"e4u18-l5-x8", type:"explain", q:"Explain how Japan’s 2023 Development Cooperation Charter changed the purpose and methods of its aid, and how aid is kept apart from support for partners’ armed forces. Why are some NGOs and scholars worried?", size:"3–5 sentences", hint:"Compare “request-based” with “offer-type” cooperation.", model:"The 2023 Charter says openly that development cooperation serves “Japan’s national interests”, alongside peace, human security and co-creation with developing countries. Japanese aid long followed a request-based principle, starting from the partner government’s request; the Charter adds offer-type cooperation, in which Japan proactively proposes packages built on its own strengths. Aid stays non-military: support for partners’ armed forces goes through the separate Official Security Assistance created in 2023. Supporters say the Charter is honest about interests and offers an alternative with higher standards. Some NGOs and scholars worry that offer-type packages could tie aid back to Japanese firms and blur development and security.", points:["Says the Charter openly links aid to Japan’s national interests", "Contrasts request-based with offer-type cooperation", "Explains that support for armed forces goes through separate Official Security Assistance", "Gives the critics’ worries and attributes them", "Gives the supporters’ view as well"]}
    ],
    apply:{
     intro:"Use primary sources from Japan and from partners, all free online.",

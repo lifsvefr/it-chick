@@ -127,7 +127,8 @@ ICA.addUnit({
       {t:"The hearing on the new mine was held in a language most villagers do not speak", b:2, why:"Who can take part in decisions: participation."},
       {t:"Mercury victims waited decades to be officially acknowledged as patients", b:1, why:"Being recognised as harmed is a recognition issue (it also had distributional consequences)."},
       {t:"Most of a dam’s electricity goes to a distant city while upstream farmers lose land", b:0, why:"Benefits and burdens fall on different people: distribution."}
-    ]}
+    ]},
+    {id:"e4u16-l1-x8", type:"explain", q:"Hardin argued that shared resources end in tragedy. Explain why Ostrom and others disagreed, using the difference between open access and common property. Then say why her design principles are harder to apply to the atmosphere.", size:"3–5 sentences", hint:"Ask who could enter Hardin’s pasture, and who made the rules.", model:"Hardin’s pasture was open access: anyone could enter and no one made rules, so each herder’s extra animal imposed a cost on the others. Ciriacy-Wantrup and Bishop pointed out that historic commons were usually common property, owned and policed by a defined group. Ostrom studied long-lasting commons, from a Swiss village to Philippine irrigation societies, and found shared design principles, such as clear boundaries, users making the rules, monitoring and graduated sanctions. But those principles came from small groups with face-to-face monitoring, which the atmosphere lacks. So for climate she argued for polycentric governance rather than waiting for one global treaty.", points:["Defines open access: anyone may enter and no one makes rules", "Defines common property: a defined group owns and polices the resource", "Names some of Ostrom’s design principles", "Explains the scale problem: the atmosphere has no small group or clear boundary", "Mentions polycentric governance as her answer for climate"]}
    ],
    apply:{
     intro:"Use the lesson’s concepts on real cases. A browser and a notebook are enough.",
@@ -279,7 +280,8 @@ ICA.addUnit({
       {t:"The IPCC itself carries out the temperature measurements each year.", flag:true, why:"Wrong. The IPCC assesses published research; annual temperature figures come from datasets such as those combined by WMO, including Copernicus ERA5."},
       " ",
       {t:"WMO expects 2026 to be one of the four warmest years on record.", flag:false, why:"Correct, per its November 2026 update."}
-    ]}
+    ]},
+    {id:"e4u16-l2-x8", type:"explain", q:"Compare the Kyoto Protocol’s top-down design with the Paris Agreement’s bottom-up design. Why did the change make it possible for every country to take part, and what do sceptics say about the result?", size:"3–5 sentences", hint:"Who had to commit under each treaty, and who chose the targets?", model:"Kyoto gave negotiated, legally binding targets only to the industrialised countries in its Annex B, following the Convention’s firewall between developed and developing countries. The US Senate opposed any treaty without commitments from developing countries, and the United States never ratified. Paris asks every party to set its own target, a nationally determined contribution. The targets are not binding, but the duties to submit, explain and report are, and a five-year cycle with a global stocktake should ratchet ambition up. Self-chosen pledges let everyone join. Sceptics answer that the pledges still fall far short: UNEP projects about 2.6–2.7 °C of warming even if current NDCs are delivered.", points:["Says Kyoto set binding, negotiated targets for industrialised countries only", "Says Paris has every party set its own target (NDC)", "Notes that NDC targets are not binding, but submitting and reporting are", "Explains the five-year cycle or ratchet meant to raise ambition", "Gives the sceptics’ point that the sum of pledges falls short"]}
    ],
    apply:{
     intro:"Read primary documents of the climate regime. All are free online.",
@@ -412,7 +414,8 @@ ICA.addUnit({
       {t:"Loss and damage does not exist", why:"Losses beyond adaptation are well documented; this is not a serious counter-argument."},
       {t:"Small island states emit a great deal themselves, so they should pay for their own losses", why:"Small island states’ emissions are tiny; this is inaccurate."},
       {t:"The ICJ banned compensation in 2025", why:"The Court said breaches can entail reparation; it did not ban compensation."}
-    ]}
+    ]},
+    {id:"e4u16-l3-x8", type:"explain", q:"Explain why the question “Who caused climate change?” gets different answers depending on what you count. Link each way of counting to a principle of who should pay.", size:"3–5 sentences", hint:"There are four counts: cumulative, current annual, per person and consumption-based.", model:"Cumulative emissions since the industrial revolution point to the United States and Europe, because CO₂ stays in the air for centuries; this supports historical responsibility, or “polluter pays”. Current annual emissions point to China, the largest emitter today, which fits a view based on the ability to act now. Per person, emissions in many African and South Asian countries are a small fraction of those in North America or the Gulf. That count, like consumption-based accounts, which move emissions to the country that buys the goods, supports arguments from equality. Each government tends to prefer the count that favours it, so choosing a count is already a moral argument.", points:["Explains cumulative emissions and links them to historical responsibility or polluter pays", "Explains current annual emissions and who leads on them", "Explains per-person emissions and links them to equality", "Explains consumption-based accounting and links it to equality", "Says that choosing the count is itself a moral or political choice"]}
    ],
    apply:{
     intro:"Work with primary legal and financial sources.",
@@ -554,7 +557,8 @@ ICA.addUnit({
       {t:"Kunming-Montreal Global Biodiversity Framework", b:1, why:"A COP decision under the CBD: politically agreed, not a separate binding treaty."},
       {t:"Global plastics instrument", b:2, why:"No text agreed as of November 2026."},
       {t:"International Seabed Authority rules for commercial mining", b:2, why:"Still unfinished as of November 2026."}
-    ]}
+    ]},
+    {id:"e4u16-l4-x8", type:"explain", q:"Explain why the ozone regime succeeded, using at least two of the lesson’s three explanations (knowledge, interests, design). Then explain why the same recipe is harder to apply to plastics.", size:"3–5 sentences", hint:"Think about how many producers there were, and what happened to their costs when substitutes appeared.", model:"On knowledge, Haas showed how an epistemic community of atmospheric scientists framed the problem. On interests, Sprinz and Vaahtoranta argued that positions follow vulnerability and the cost of cutting; once cheap substitutes for CFCs appeared, the main producers’ costs fell and they stopped dragging. On design, there were few producers, a Multilateral Fund paid developing countries’ extra costs, and trade restrictions made staying out unattractive. Plastics is harder on each count: thousands of products tied to the petrochemical industry, cheap and short-lived, with very different waste systems. Many oil and petrochemical producers want waste rules, not production limits, and no treaty text had been agreed by November 2026.", points:["Uses the knowledge explanation (scientists as an epistemic community)", "Uses the interest explanation: substitutes lowered producers’ costs", "Uses the design explanation: few producers, a fund or trade measures", "Explains at least one reason plastics is a harder problem", "Describes the producers’ position on plastics accurately, without judging it"]}
    ],
    apply:{
     intro:"Check treaty status and national follow-up yourself.",
@@ -692,7 +696,8 @@ ICA.addUnit({
       {t:"Because UNFCCC decisions are taken by majority vote, producer states cannot block outcomes.", flag:true, why:"Wrong. The UNFCCC never adopted its voting rule, so decisions are taken by consensus, which gives any determined group leverage."},
       " ",
       {t:"A two-level-game analysis would look at what each government can sell at home.", flag:false, why:"Correct: that is the Level II question."}
-    ]}
+    ]},
+    {id:"e4u16-l5-x8", type:"explain", q:"Use Putnam’s two-level game to explain how an election in a donor country can make a climate finance deal impossible, however skilled the negotiators are. What could negotiators do about it?", size:"3–5 sentences", hint:"Define the win-set first. A deal can only land where the win-sets overlap.", model:"In a two-level game, negotiators bargain with each other at the conference (Level I), but any deal must also be approved at home by parliaments, industries and voters (Level II). The set of deals each side could get approved is its win-set, and agreement is possible only where the win-sets overlap. If a new parliament in the donor country will accept a much smaller goal than before, its win-set shrinks and the overlap with the recipients may disappear. Then no deal is possible as the issue is framed. Negotiators can try to re-open the overlap by counting more sources of finance, extending the deadline or linking issues.", points:["Explains the two levels: bargaining abroad and approval at home", "Defines a win-set", "Says a deal is possible only where win-sets overlap", "Explains how the election shrinks the donor’s win-set and can remove the overlap", "Suggests a way to re-open the overlap, such as counting more sources or linking issues"]}
    ],
    apply:{
     intro:"Apply the method to live negotiations.",

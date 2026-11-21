@@ -131,7 +131,8 @@ ICA.addUnit({
       {t:"you only count as an international migrant if you hold a foreign passport.", flag:true, why:"Inaccurate. UN DESA mostly uses country of birth, so people who have become citizens of their new country still count."},
       " And ",
       {t:"the same person can be an emigrant and an immigrant at once, depending on the country’s viewpoint.", flag:false, why:"Accurate: emigrant from the country left, immigrant in the country joined."}
-    ]}
+    ]},
+    {id:"e2u9-l1-x8", type:"explain", q:"Mei moves from her village to her country’s capital for work. Tomás moves abroad for a two-year master’s degree and plans to go home afterwards. Explain whether each counts as a migrant under UN DESA’s statistical definition and under IOM’s working definition, and why the difference matters.", size:"4–5 sentences", model:"UN DESA’s statistical definition counts international migrants: people who change their country of usual residence. Tomás, abroad for two years, is a long-term international migrant even though he plans to return, because he stays at least a year. Mei is not, because she hasn’t crossed a border. IOM’s working definition is a broad umbrella: anyone who moves away from their usual residence, within a country or across a border, for any reason, so both count. That is why two sources that say ‘migrants’ may be counting quite different groups, and why you should check the definition before comparing figures.", points:["Explains UN DESA’s definition (change of country of usual residence)", "Classifies Tomás as a long-term migrant despite his plan to return", "Explains that Mei counts for IOM but not for UN DESA", "Says to check which definition a figure uses before comparing"]}
    ],
    apply:{
     intro:"These tasks help you see migration in your own world. They are optional and private: keep your notes to yourself unless you choose to share them.",
@@ -281,7 +282,8 @@ ICA.addUnit({
       {t:"Because expats never stay longer than a year.", why:"Many people called expats stay for decades. Length of stay isn’t what decides who gets the word."},
       {t:"Because “expat” is a legal status that only some countries give.", why:"It isn’t a legal status anywhere. It’s an everyday word."},
       {t:"Because expats are not counted as international migrants in UN statistics.", why:"They are counted. Anyone who changes country of usual residence counts, whatever they call themselves."}
-    ]}
+    ]},
+    {id:"e2u9-l2-x8", type:"explain", q:"Explain why most migration researchers and the UN say ‘a person with irregular status’ rather than ‘an illegal immigrant’. Use two different ways a person can come to have irregular status.", size:"3–5 sentences", model:"An action, such as crossing a border without permission, can break a law, but a person cannot be illegal. Irregular status describes a situation, not an identity, and it can change. People reach it in different ways. Some enter without authorisation, but many arrive legally and later overstay a visa, or lose status when a work permit tied to one employer ends. A child born to parents with irregular status may never have migrated at all. Status can also change the other way, through regularisation programmes.", points:["Explains that acts can be unlawful but people can’t be illegal", "Describes irregular status as a situation that can change", "Gives one route into irregular status", "Gives a second, different route"]}
    ],
    apply:{
     intro:"Two short tasks on kinds of movement and the language used to describe them.",
@@ -420,7 +422,8 @@ ICA.addUnit({
       {t:"She is a refugee, because she has no country.", why:"Refugee status needs a well-founded fear of persecution and being outside one’s country. Statelessness is a different situation, though some people are both."},
       {t:"She is an internally displaced person.", why:"She hasn’t been forced from her home. IDP status is about displacement, not nationality."},
       {t:"She is automatically a citizen of Country Y because she lives there.", why:"Living somewhere doesn’t make you a national. Country Y’s law gives nationality only by descent."}
-    ]}
+    ]},
+    {id:"e2u9-l3-x8", type:"explain", q:"Fatima fled fighting and now lives with relatives in another region of her own country. Her brother Yusuf fled the same fighting across the border and has asked for protection there. Explain why international law treats them differently, even though their experiences are similar.", size:"4–5 sentences", model:"The key difference is the border. Yusuf is outside his country, so he may be a refugee if he meets the 1951 Convention definition: a well-founded fear of being persecuted for reasons of race, religion, nationality, membership of a particular social group or political opinion, without protection at home. Until his claim is decided, he is an asylum seeker. Fatima is still inside her own country, so she is an internally displaced person, not a refugee in law. Her own government has the main responsibility to protect her. These are legal situations, not judgements about who suffered more.", points:["Identifies crossing a border as the key difference", "Gives the main parts of the refugee definition", "Explains that Yusuf is an asylum seeker until his claim is decided", "Explains that Fatima is an IDP and her own government is mainly responsible"]}
    ],
    apply:{
     intro:"Practise using the precise words, and the numbers, the way a careful researcher would.",
@@ -556,7 +559,8 @@ ICA.addUnit({
       {t:"Most of the world’s international migrants live in Europe.", flag:true, why:"Inaccurate. Europe hosts more than any other region (94 million), but that’s under a third of 304 million."},
       " ",
       {t:"These are exact head counts taken in 2024.", flag:true, why:"Inaccurate. They are estimates: 60 countries were fully reassessed and the rest extrapolated from the 2020 edition."}
-    ]}
+    ]},
+    {id:"e2u9-l4-x8", type:"explain", q:"A country reports net migration of zero last year. A politician says, ‘So migration had no effect on us.’ Explain what net migration measures and why this conclusion doesn’t follow.", size:"3–5 sentences", model:"Net migration is the difference between two flows over a period: immigrants minus emigrants. A net figure of zero could mean nobody moved, or that 500,000 people arrived and 500,000 left. The people arriving may be very different from those leaving: for example, young graduates leaving and retirees arriving, which changes the population’s age and skills. Net migration also says nothing about the stock, the number of migrants living in the country. To judge the effect, you need the gross flows, in and out separately.", points:["Defines net migration as immigrants minus emigrants", "Explains that zero can hide large flows in both directions", "Explains that the people arriving and leaving can differ", "Says you need the gross flows (or mentions stock versus flow)"]}
    ],
    apply:{
     intro:"Look at real migration data yourself, and practise reading it carefully. No accounts are needed.",
@@ -697,7 +701,8 @@ ICA.addUnit({
       {t:"Most people in sub-Saharan Africa are international migrants.", why:"The 64% is a share of migrants, not of the whole population. Most people in the region have never migrated internationally."},
       {t:"No one from sub-Saharan Africa migrates to Europe.", why:"About a third of the region’s international migrants live outside it, including many in Europe."},
       {t:"Migration within Africa is mostly forced.", why:"The figure says nothing about reasons. Much intra-African migration is for work, trade, family and study."}
-    ]}
+    ]},
+    {id:"e2u9-l5-x7", type:"explain", q:"Explain why historians such as Adam McKeown argue that telling the age of mass migration (mid-1800s to the Second World War) only as a story of Europeans going to the Americas leaves out most of it.", size:"3–5 sentences", model:"McKeown estimated three great flows of long-distance migration of roughly similar size. About 55–58 million people left Europe, mostly for the Americas. About 48–52 million left India and southern China, mostly for South-East Asia and around the Indian Ocean, many as contract workers who later returned. Another 46–51 million moved into Manchuria, Siberia and Central Asia. So the European story, which most textbooks tell, covers only about a third of the movement. Steamships and railways made all three possible.", points:["Says there were three great systems, not one", "Describes the flow from India and southern China", "Describes the flow into Manchuria, Siberia and Central Asia", "Concludes that the European story is only about a third of the whole"]}
    ],
    apply:{
     intro:"Connect the big history to a place you know. All of these can be done with a library or a web browser.",

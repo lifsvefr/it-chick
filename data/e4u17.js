@@ -141,7 +141,8 @@ ICA.addUnit({
       {t:"He is wrong, because the SDGs are on track", why:"The UN’s own 2026 report says most targets are off track (Lesson 2); the issue is whether the number of goals explains it."},
       {t:"He is right, because the MDGs had only eight goals and all of them were met", why:"Not all MDG targets were met, and their record is itself debated."},
       {t:"The number of goals is irrelevant because the goals are integrated", why:"Integration is a reason to have many goals, but prioritisation is still a fair question."}
-    ]}
+    ]},
+    {id:"e4u17-l1-x8", type:"explain", q:"Global goals have no legal force. Explain how goals such as the SDGs can still shape what governments do, and why their wording is fought over. Then give one difference between how the MDGs and the SDGs were made.", size:"3–5 sentences", hint:"Think of three things goals do without a court: agenda, numbers, money.", model:"Global goals work without courts in three ways: they set the agenda, deciding what counts as a development problem; they create numbers that let people compare countries; and they mobilise money and attention. Fukuda-Parr and Hulme argue that the MDGs helped ending poverty spread as a global norm. Because goals frame problems and steer money, governments fight over their wording, as they did over Goal 16 on institutions. The MDGs were drawn up by a small group of officials from the UN, the World Bank, the IMF and the OECD. The SDGs were negotiated by member states in an open working group, with wide consultation.", points:["Explains agenda-setting: goals decide what counts as a problem", "Explains that goals create numbers for comparison", "Explains that goals mobilise money and attention", "Links these effects to why wording is contested", "Contrasts who made the MDGs with who made the SDGs"]}
    ],
    apply:{
     intro:"Go to the primary sources. Everything here is free on the UN’s websites.",
@@ -281,7 +282,8 @@ ICA.addUnit({
       {t:"We report on the indicators for which we have data and list the gaps.", flag:false, why:"Good practice: transparency about data gaps."},
       " ",
       {t:"Our rise in an SDG index proves our new policy worked.", flag:true, why:"An index rise can come from data revisions, other policies or other countries’ changes: the attribution problem."}
-    ]}
+    ]},
+    {id:"e4u17-l2-x8", type:"explain", q:"A newspaper says Country A is “more sustainable” than Country B because it ranks two places higher on the SDG Index. Explain why you should be careful with this claim, and what you would check.", size:"3–5 sentences", hint:"Think about how the index is built: rescaling, weights and averages.", model:"The SDG Index rescales about a hundred indicators to 0–100 and averages them, with equal weight for each goal. But weights are choices: equal weighting assumes a point of clean water matters as much as a point of press freedom, and another reasonable weighting can flip the order of two close countries. Averages also hide trade-offs: a country can score high overall while failing on climate and consumption, as the SDSN reports for its own top-ranked countries. And borders hide spillovers, such as harm caused abroad by rich countries’ consumption. So I would check how close the scores are and look at the separate goals.", points:["Explains that the index averages rescaled indicators", "Says the weights are a choice that can change the ranking", "Says an average can hide poor scores on some goals", "Mentions spillovers that a country’s own score leaves out", "Says what to check, such as the score gap or the separate goals"]}
    ],
    apply:{
     intro:"Work with the real reports and databases. All are free; none needs an account.",
@@ -419,7 +421,8 @@ ICA.addUnit({
       {t:"Goal 5 includes a target on recognising and valuing unpaid care work.", flag:false, why:"Correct: target 5.4."},
       " ",
       {t:"We ask borrowers how decisions about the money are made at home.", flag:false, why:"Good practice: it looks for agency, not only resources."}
-    ]}
+    ]},
+    {id:"e4u17-l3-x8", type:"explain", q:"A programme gives Lucía a small loan in her own name and reports that she has been “empowered”. Use Kabeer’s framework to explain why the loan alone does not show this, and what evidence you would look for.", size:"3–5 sentences", hint:"Kabeer has three dimensions. Which one is the loan?", model:"Kabeer defines empowerment as the expansion of people’s ability to make strategic life choices where this was previously denied. Her framework has three dimensions: resources, agency and achievements. The loan is only a resource. If someone else, such as her husband, decides how it is spent, Lucía’s agency over money has not grown, and repaying the loan is not the same as an achievement such as better well-being or more voice. So I would ask who decided how the money was used, who controls the income from it, whether she gained a say in decisions at home or in her community, and what Lucía herself says.", points:["Defines empowerment as the ability to make strategic life choices", "Names Kabeer’s three dimensions: resources, agency, achievements", "Identifies the loan as a resource only", "Explains that control by someone else means agency has not grown", "Names evidence to look for, such as who decides or Lucía’s own view"]}
    ],
    apply:{
     intro:"Observation and reading tasks. Be respectful: anyone you talk to can skip any question.",
@@ -559,7 +562,8 @@ ICA.addUnit({
       {t:"Food sovereignty and food security mean the same thing.", flag:true, why:"Wrong: food sovereignty is about who controls food and farming policy, a rival frame to food security."},
       " ",
       {t:"Universal health coverage is SDG target 3.8.", flag:false, why:"Correct."}
-    ]}
+    ]},
+    {id:"e4u17-l4-x8", type:"explain", q:"Explain to a friend how people can starve while the markets are full of food, using Sen’s entitlement approach. What does this mean for famine relief, and what do critics such as de Waal add?", size:"3–5 sentences", hint:"Ask not how much food there is, but what each person can command with what they have.", model:"Before Sen, famine was usually explained by a fall in the food supply. Sen asked instead what each person can command through legal means: what they own, such as land or their labour, and what they can get for it through wages, prices, trade or transfers. If food prices rise much faster than wages, landless labourers lose their command over food even while it is on sale, as in Bengal in 1943. So relief can work through incomes, such as cash or public works that pay enough to buy food. Critics such as de Waal add that most modern famines are political, caused or prolonged by conflict.", points:["Contrasts the food-supply view with Sen’s entitlement approach", "Explains entitlement: what a person owns and can exchange for food", "Gives an example of prices rising faster than wages, such as Bengal 1943", "Draws the relief lesson: protect incomes, not only deliver food", "Adds de Waal’s point that modern famines are mostly political"]}
    ],
    apply:{
     intro:"Analysis tasks with free official sources.",
@@ -727,7 +731,8 @@ ICA.addUnit({
       {t:"Everyone will benefit equally, so distribution need not be discussed.", flag:true, why:"Weak: development briefs should show who gains and who may lose."},
       " ",
       {t:"The main risk is that trained workers leave for cities; we propose a retention allowance.", flag:false, why:"Good: names a risk and a response."}
-    ]}
+    ]},
+    {id:"e4u17-l5-x8", type:"explain", q:"Explain why Robert Chambers championed participatory methods in development, and what Cooke and Kothari warned could go wrong with them.", size:"3–4 sentences", hint:"Who did visiting experts usually meet, and who did they miss?", model:"Chambers attacked “rural development tourism”: brief expert visits to villages near roads, in the dry season, meeting mostly men and the better-off, so the poorest stayed unseen. He championed participatory methods, such as villagers drawing their own maps, seasonal calendars and wealth rankings, so that outsiders learn from them. Cooke and Kothari’s book *Participation: The New Tyranny?* (2001) warned that participatory exercises can legitimise decisions already taken, let local elites speak for everyone, and hide power behind a language of consensus. So participation is not automatically empowering: it depends on who speaks and who decides.", points:["Explains Chambers’s critique of brief expert visits that miss the poorest", "Gives an example of a participatory method", "Gives Cooke and Kothari’s warning about decisions already taken or elite capture", "Concludes that participation depends on who speaks and who decides"]}
    ],
    apply:{
     intro:"Practical design and evaluation tasks, then the closing synthesis.",

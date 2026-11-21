@@ -138,7 +138,8 @@ ICA.addUnit({
       {t:"How long it takes, by law, to become eligible for citizenship", b:0, why:"A legal requirement, so it is a policy measure."},
       {t:"School results of children of migrants", b:1, why:"An educational outcome."},
       {t:"How many friends from other backgrounds people report having", b:2, why:"Social connections (Ager and Strang’s “bridges”) reported by people themselves."}
-    ]}
+    ]},
+    {id:"e2u12-l1-x8", type:"explain", q:"A doctor trained abroad moves to a new country. Explain how classic assimilation and integration as a two-way process answer the question ‘who adapts to whom?’ in her case.", size:"3–4 sentences", model:"Classic assimilation expects one-way change: the newcomer learns the language, adopts local customs and blends into the majority, while the society itself stays much the same. Integration as a two-way process, as in the EU’s 2004 Common Basic Principles, expects both sides to change. The doctor might learn the language and local medical rules, while institutions translate key information and recognise her qualifications, so she can work as a doctor rather than in a lower-skilled job. Integration can also be uneven across domains: she might do well at work but be isolated socially.", points:["Describes assimilation as one-way change by the newcomer", "Describes integration as two-way change", "Gives something the doctor does and something institutions do", "Notes that integration can be uneven, or names a critique"]}
    ],
    apply:{
     intro:"Look at integration in your own surroundings, with care and respect. Nothing here needs an account or costs money, and none of it involves asking anyone about their legal status.",
@@ -279,7 +280,8 @@ ICA.addUnit({
       {t:"Laws on citizenship at birth affect whether these children are citizens of the country they grow up in.", flag:false, why:"Accurate: under jus soli they are usually citizens at birth; under jus sanguinis they may not be."},
       " Finally, ",
       {t:"many second-generation people have never migrated themselves.", flag:false, why:"Accurate: they were born in the country their parents moved to."}
-    ]}
+    ]},
+    {id:"e2u12-l2-x7", type:"explain", q:"Two children of immigrants grow up in the same country but follow very different paths. Explain Portes and Zhou’s segmented assimilation theory, and what it says decides the path.", size:"4–5 sentences", model:"Portes and Zhou (1993) argued that the old picture of steady, upward assimilation didn’t fit everyone. They described three paths: upward assimilation into the middle-class mainstream; downward assimilation into persistent poverty for some young people facing discrimination, poor schools and few good jobs; and upward mobility while keeping the parents’ community’s values and solidarity. What decides the path is mainly the mode of incorporation: how government policy treats the group, how the wider society receives it, including racism, and how strong the co-ethnic community is. Critics such as Alba and Nee argued that most children of immigrants in the United States were moving up.", points:["Describes the three paths", "Names the mode of incorporation", "Gives factors in it, such as policy, reception and community", "Mentions a critique or that conditions matter more than ‘culture’"]}
    ],
    apply:{
     intro:"These tasks use stories and willing conversation partners. Keep everything respectful and private, and never ask anyone about their legal status.",
@@ -435,7 +437,8 @@ ICA.addUnit({
       {t:"Strong ties to home always prevent integration.", flag:true, why:"Misleading. Research suggests transnational ties and integration can add up, reinforce each other or sometimes conflict, depending on context."},
       " ",
       {t:"Social remittances can travel in both directions.", flag:false, why:"Accurate: Levitt and Lamba-Nieves (2011) stressed circulation in both directions."}
-    ]}
+    ]},
+    {id:"e2u12-l3-x8", type:"explain", q:"Explain what a transnational social field is, and why someone who has never migrated can still be part of one.", size:"3–5 sentences", model:"In 1992 Glick Schiller, Basch and Szanton Blanc argued that many migrants don’t make a clean break: they build lives that span several societies at once. A transnational social field is a web of relationships, money, information, obligations and institutions that spans borders. People in the field need not move at all. A teenager whose school fees are paid by an aunt abroad, who talks with her every week and whose family decisions involve her, is part of the field too. Transnationalism shifts the question from whether migrants have left one society and joined another to how people build lives across borders.", points:["Defines a transnational social field", "Contrasts it with migration as a clean break", "Gives an example of a non-migrant inside the field", "Names a kind of tie, such as money, calls or obligations"]}
    ],
    apply:{
     intro:"Map transnational ties with care. Family histories can be private or painful: use a family from a novel, film or memoir whenever you prefer.",
@@ -580,7 +583,8 @@ ICA.addUnit({
       {t:"Every theory of migration sees return as a sign of failure.", flag:true, why:"Inaccurate. Neoclassical theory tends to; the new economics of labour migration sees return as planned success, and transnational approaches as part of ongoing ties."},
       " ",
       {t:"Reintegration after return can be difficult.", flag:false, why:"Accurate: savings, skills recognition, family changes and stigma can all make it hard."}
-    ]}
+    ]},
+    {id:"e2u12-l4-x8", type:"explain", q:"A migrant returns home after five years abroad. Explain how neoclassical economics and the new economics of labour migration (NELM) would interpret this return differently, and why conditions at home also matter.", size:"3–5 sentences", model:"Neoclassical economics sees migration as a move towards higher expected income, so it tends to read return as a failure: the migrant didn’t earn what they expected abroad. NELM sees migration as a household strategy, so it reads return as a success: the migrant reached a savings or family target and came home as planned. Jean-Pierre Cassarino compared these views. Structural approaches add that what happens next is shaped by conditions at home, such as whether returnees can use the money and skills they bring. So the same return can mean very different things.", points:["Gives the neoclassical reading of return as failure", "Gives the NELM reading of return as success", "Explains that conditions at home shape what returnees can do", "Concludes that one return can have different meanings"]}
    ],
    apply:{
     intro:"Explore diaspora and return through public sources and stories. Keep it respectful; nothing here needs an account.",
@@ -718,7 +722,8 @@ ICA.addUnit({
       {t:"It found immigration doubles crime.", why:"That is the opposite of what Ousey and Kubrin reported."},
       {t:"It found no studies on the topic.", why:"It combined many studies published between 1994 and 2014."},
       {t:"It proves that crime statistics are always fully accurate.", why:"It doesn’t; crime statistics reflect reporting and policing as well as offending."}
-    ]}
+    ]},
+    {id:"e2u12-l5-x8", type:"explain", q:"Use Entman’s idea of framing to analyse the headline ‘Flood of migrants overwhelms border town’, and rewrite it more neutrally.", size:"3–5 sentences", model:"Entman (1993) wrote that to frame is to select some aspects of reality and make them more salient, promoting a problem definition, a causal interpretation, a moral evaluation and a remedy. The headline defines the problem as a town being ‘overwhelmed’. The water metaphor ‘flood’ suggests a natural disaster rather than individual people, and it hints at a remedy: keeping people out. It gives no numbers, no source and no migrants’ voices. A more neutral version: ‘Arrivals in border town rise to 1,200 this month, officials say; shelters report a shortage of beds.’", points:["Explains framing as selecting and making some aspects salient", "Identifies the problem definition or implied remedy in the headline", "Points out the water metaphor and what it suggests", "Gives a rewrite with numbers or a source in place of the metaphor"]}
    ],
    apply:{
     intro:"Your last Apply tasks for the Social Science Primers. They use public sources and your own reflection, and none of them involves asking anyone about their legal status.",

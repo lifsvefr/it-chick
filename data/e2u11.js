@@ -134,7 +134,8 @@ ICA.addUnit({
       {t:"The writer is giving a neutral statistical description of arrivals.", why:"Words like “invasion” and calls for emergency action frame the issue; they are not neutral statistics."},
       {t:"The writer is applying the 1951 Refugee Convention.", why:"The Convention defines refugees and their rights; it says nothing about invasions."},
       {t:"The writer is describing a visa waiver.", why:"Visa waivers are about travel without visas, unrelated to this framing."}
-    ]}
+    ]},
+    {id:"e2u11-l1-x8", type:"explain", q:"Kofi wants to leave his country to work abroad. Explain the ‘right to leave, but no right to enter’ puzzle in international law using his case, and the main exception to it.", size:"4–5 sentences", model:"Article 13 of the Universal Declaration says everyone has the right to leave any country, including their own, and to return to their own country. So Kofi’s state may not stop him leaving without good legal reason, and it must let him come back. But no treaty gives a general right to enter someone else’s country. Deciding who may enter and stay is part of a state’s sovereignty, so whether another country admits Kofi is mostly up to it. The key exception concerns people fleeing persecution: there is a right to seek asylum, and states may not send refugees back to persecution.", points:["States the right to leave and to return", "Applies it to Kofi’s own state", "Explains there is no general right to enter, linked to sovereignty", "Names the asylum or non-refoulement exception"]}
    ],
    apply:{
     intro:"Notice borders and their rules in your own life. Everything here is free and needs no account. You don’t need to share anything about your own or anyone else’s status.",
@@ -268,7 +269,8 @@ ICA.addUnit({
       {t:"Jus sanguinis", why:"That is how citizenship passes from parents, not the status of long-term residents."},
       {t:"Non-refoulement", why:"That is the ban on returning people to persecution (Lesson 3)."},
       {t:"Securitisation", why:"That is about framing issues as security threats."}
-    ]}
+    ]},
+    {id:"e2u11-l2-x8", type:"explain", q:"Explain how jus soli and jus sanguinis can combine to give one child two citizenships and leave another child with none.", size:"4–5 sentences", model:"Jus soli, the ‘right of the soil’, gives citizenship to children born on a state’s territory. Jus sanguinis, the ‘right of blood’, passes citizenship from parent to child wherever the child is born. Most countries mix the two. Where the rules overlap, a child may hold two citizenships: for example, a child born in a jus soli country to parents whose country passes citizenship by descent. Where both are missing, a child can be left with none, for example if they are born in a country that gives nationality only by descent to parents whose own country gives it only by birth there. That child may be stateless.", points:["Defines jus soli", "Defines jus sanguinis", "Gives a case where the rules overlap to create dual citizenship", "Gives a case where a gap between the rules leaves a child stateless"]}
    ],
    apply:{
     intro:"Explore citizenship rules from official sources. Never ask anyone about their own legal status; use public information, or your own family only if you choose.",
@@ -411,7 +413,8 @@ ICA.addUnit({
       {t:"Yes, because the 1951 Refugee Convention doesn’t apply to that country.", why:"Refugee law is not the only source. Human rights treaties and customary law also forbid such returns."},
       {t:"Yes, if the person entered without a visa.", why:"The ban on returning people to torture has no exceptions for irregular entry."},
       {t:"Only if the UN Security Council approves.", why:"No Security Council approval is involved; the rule binds states directly."}
-    ]}
+    ]},
+    {id:"e2u11-l3-x8", type:"explain", q:"Explain why non-refoulement is called the cornerstone of refugee protection, and why it protects people even before their claim is decided.", size:"3–5 sentences", model:"Non-refoulement, in Article 33(1) of the 1951 Convention, says a state must not expel or return a refugee ‘in any manner whatsoever’ to territories where their life or freedom would be threatened. Without it, the other rights would mean little, because a person could simply be sent back to danger. It protects people while their claim is being decided because refugee status is declaratory: a person is a refugee as soon as they meet the definition, and recognition only confirms it. It also covers rejection at the border and applies wherever a state exercises control, including at sea.", points:["States what non-refoulement forbids", "Explains why other protections depend on it", "Explains that status is declaratory, so it applies before recognition", "Mentions its reach, such as rejection at the border or control at sea"]}
    ],
    apply:{
     intro:"Read the primary texts. All are free online from UN, UNHCR or African Union sources.",
@@ -544,7 +547,8 @@ ICA.addUnit({
       {t:"A resettlement programme", why:"Resettlement is one possible solution, not a description of the situation."},
       {t:"Temporary protection", why:"That is a legal status for mass arrivals, not the name for long exile."},
       {t:"Cessation", why:"Cessation is when refugee status ends because protection is no longer needed."}
-    ]}
+    ]},
+    {id:"e2u11-l4-x8", type:"explain", q:"Explain the three durable solutions for refugees, and why many refugees still end up in protracted situations.", size:"4–5 sentences", model:"Durable solutions let refugees rebuild a normal life with full rights. Voluntary repatriation is going home by free choice once it is safe. Local integration means gaining secure legal status, work and a place in the host society, sometimes ending in citizenship. Resettlement is a planned move to a third country that agrees to admit refugees permanently. When none of these happens, for example because danger continues at home, local integration is limited and resettlement places are scarce, refugees can spend decades in exile. UNHCR calls it protracted when 25,000 or more refugees from one country have spent at least five consecutive years in one low- or middle-income host country.", points:["Explains voluntary repatriation", "Explains local integration", "Explains resettlement", "Explains why refugees can end up in protracted exile when none is available"]}
    ],
    apply:{
     intro:"Look at how protection works using public sources. Don’t ask anyone about their own claim or status.",
@@ -679,7 +683,8 @@ ICA.addUnit({
       {t:"Remittances mostly go from poor countries to rich ones.", why:"The large recorded flows go to low- and middle-income countries."},
       {t:"The global average cost of sending money has already reached the 3 per cent SDG target.", why:"The 2025 global average was about 6.4 per cent, more than double the target."},
       {t:"Remittances are counted exactly, so the figures never change.", why:"Recent-year figures are estimates that are later revised, and informal transfers are missed."}
-    ]}
+    ]},
+    {id:"e2u11-l5-x8", type:"explain", q:"Explain why tying a worker’s legal residence to one employer, as under kafala, can put migrant workers at risk, and how recent reforms have tried to reduce that risk.", size:"4–5 sentences", model:"Under kafala, a sponsorship system in Gulf states, Jordan and Lebanon, a worker’s residence depends on a sponsor, usually the employer. If the worker can’t easily change jobs, and losing the job can mean losing the right to stay, the employer holds great power and the worker has little bargaining power. Human rights groups and the ILO have linked the system to risks such as unpaid wages, passport confiscation and forced labour, while governments and employers point to its role in organising a large temporary workforce. Reforms target the tie itself: Qatar’s 2020 laws let workers change jobs without their employer’s permission, though rights groups still report problems with enforcement.", points:["Explains that residence depends on the employer", "Explains why that creates a power imbalance", "Attributes the risks to human rights groups and the ILO, and notes the other view", "Gives a dated reform with a caveat about enforcement"]}
    ],
    apply:{
     intro:"Use free official tools to look at migrant workers’ rights, free movement and remittance costs. You don’t need to send any money or create any account.",
