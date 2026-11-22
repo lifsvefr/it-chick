@@ -3,7 +3,7 @@ ICA.addUnit({
   id:"e1u3", track:"e1", n:3, title:"Writing academic texts", icon:"📝",
   blurb:"The language of whole academic texts: the shapes of common essay types, building an argument with concession and rebuttal, bringing sources into your own sentences, writing introductions, abstracts and emails in clear moves, and editing your work, including using grammar checkers and AI tools honestly.",
   goals:[
-    "Recognise argumentative, compare–contrast, cause–effect and problem–solution essays from the task, and plan each one’s shape with the right signal language",
+    "Recognize argumentative, compare–contrast, cause–effect and problem–solution essays from the task, and plan each one’s shape with the right signal language",
     "Build a paragraph from claim, evidence and reasoning, and answer a counterargument using correct concession grammar",
     "Bring sources into your sentences with integral and non-integral citations, reporting verbs in the right grammatical pattern, and suitable tenses",
     "Write an introduction and an abstract in recognizable moves, and write a clear, polite email to a lecturer or supervisor",
@@ -382,11 +382,11 @@ ICA.addUnit({
       {t:"Ruiz (2020) describes the reform as a turning point for rural schools.", ok:true, why:"Correct. “Describe” takes an object and can add “as” + description: “describe X as Y”."},
       {t:"Ruiz (2020) describes that the reform was a turning point for rural schools.", why:"“Describe” doesn’t take a “that” clause. Use “describes the reform as…”, or a verb like “argues that”."},
       {t:"Ruiz (2020) discusses about the reform and its effects on rural schools.", why:"“Discuss” takes a direct object, with no “about”: “discusses the reform”."},
-      {t:"Ruiz (2020) emphasizes on the reform’s effects on rural schools.", why:"“Emphasise” takes a direct object, with no “on”: “emphasizes the reform’s effects”."}
+      {t:"Ruiz (2020) emphasizes on the reform’s effects on rural schools.", why:"“Emphasize” takes a direct object, with no “on”: “emphasizes the reform’s effects”."}
     ]},
     {id:"e1u3-l3-x3", type:"match", q:"Match each reporting verb to the pattern it is used with here.", pairs:[
       ["Lee (2018) argues…","…that prices will fall.","“Argue” is followed by a that-clause."],
-      ["Wu (2019) criticizes the study…","…for its small sample.","“Criticise X for Y” gives the reason for the criticism."],
+      ["Wu (2019) criticizes the study…","…for its small sample.","“Criticize X for Y” gives the reason for the criticism."],
       ["Ali (2017) defines resilience…","…as the ability to recover after a shock.","“Define X as Y” gives the definition."],
       ["Diaz (2022) focuses…","…on urban schools.","“Focus” takes the preposition “on”."]
     ]},
@@ -1148,7 +1148,7 @@ ICA.addUnit({
      {t:"Shows a gap, problem or open question in existing research", ok:true, why:"Move 2 creates the space the paper will fill."},
      {t:"Describes the method in detail", why:"Methods belong in the method section; Move 3 may only outline the research."},
      {t:"Thanks the funders", why:"Acknowledgments are separate from the introduction’s moves."},
-     {t:"Summarises the conclusions that the paper will reach at the end", why:"Conclusions come at the end; Move 3 may announce main findings briefly."}]},
+     {t:"Summarizes the conclusions that the paper will reach at the end", why:"Conclusions come at the end; Move 3 may announce main findings briefly."}]},
    {id:"e1u3-q29", lesson:"e1u3-l4", level:2, q:"Which sentence is most typical of **Move 3** (occupying the niche)?", options:[
      {t:"This paper examines how rent controls affect housing supply in two cities.", ok:true, why:"It announces what the present research does."},
      {t:"Housing costs are a major concern in many cities.", why:"This establishes the territory (Move 1)."},

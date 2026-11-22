@@ -320,7 +320,7 @@ ICA.addUnit({
       ["Using GNI per capita alone","It hides inequality inside the country and ignores health and education.","An average income says nothing about how income is shared or how long and well people live; the HDI was designed partly to answer this."]
     ]},
     {id:"e2u3-l3-x6", type:"sort", q:"Which theory would most likely offer each explanation of a country’s poverty?", buckets:["Modernization","Dependency","World-systems"], items:[
-      {t:"It needs more investment, technology and modern institutions to reach take-off.", b:0, why:"Industrialising by adopting new institutions and technology is the modernization recipe."},
+      {t:"It needs more investment, technology and modern institutions to reach take-off.", b:0, why:"Industrializing by adopting new institutions and technology is the modernization recipe."},
       {t:"Colonial rule set it up to export cheap raw materials, and the pattern never ended.", b:1, why:"Poverty created by exploitative ties to rich countries is the dependency argument."},
       {t:"It is in the periphery of a single global economy but could move to the semi-periphery.", b:2, why:"Core, semi-periphery and periphery, with movement possible, is Wallerstein’s world-systems model."},
       {t:"Traditional attitudes to saving and innovation slow its growth.", b:0, why:"Emphasis on cultural attitudes as a barrier is typical of modernization theory."},
@@ -1050,7 +1050,7 @@ ICA.addUnit({
       "Social construction operates through **racialization**: the process by which groups come to be seen in racial terms. Groups have been racialized and de-racialized over time; for example, some European immigrant groups in the United States were once treated as racially distinct and later absorbed into the category “white”.",
       "Population genetics does find ancestry-related patterns, which matter in medicine for some conditions. The scientific consensus is that these patterns are continuous and don’t correspond to the social categories used in censuses, so race is a poor proxy for genetic ancestry.",
       "Ethnicity can be **symbolic** (Herbert Gans’s term for occasional, voluntary displays of heritage) or central to daily life, and identities can be **situational**, shifting with context.",
-      {tip:"Use the specific names people use for themselves, and check current style guidance such as the APA’s bias-free language guidelines. Capitalisation and preferred terms are still evolving."},
+      {tip:"Use the specific names people use for themselves, and check current style guidance such as the APA’s bias-free language guidelines. Capitalization and preferred terms are still evolving."},
       "Measurement choices matter. Censuses may use **self-identification** (Brazil’s census uses self-declared color or race) or, in some surveys, observer classification, and the two can differ. Since 2000 the US census has let people choose more than one race, and the 2001 census in England and Wales introduced “Mixed” categories, reflecting growing recognition of multiple identities. Changes in categories mean that apparent population changes over time can partly reflect changes in how people are counted."
      ]
     },
@@ -1540,7 +1540,7 @@ ICA.addUnit({
    ]},
    {id:"e2u3-q24", lesson:"e2u3-l3", level:3, q:"An analyst says: “South Korea grew rich through deep involvement in world trade with rich countries.” Which theory does this fact challenge most?", options:[
      {t:"Dependency theory, which links rich-country ties to poverty", ok:true, why:"Dependency theory predicts that close ties to rich countries keep poorer countries poor. Successful growth through trade with the core is hard to square with classic dependency predictions."},
-     {t:"Modernization theory, which predicts countries can industrialize", why:"Industrialisation and growth are broadly what modernization theory predicts."},
+     {t:"Modernization theory, which predicts countries can industrialize", why:"Industrialization and growth are broadly what modernization theory predicts."},
      {t:"World-systems theory, which says no country can change position", why:"World-systems theory expects that countries can move between positions."},
      {t:"Conflict theory of deviance", why:"That’s about crime and power, not national development."}
    ]},

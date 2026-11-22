@@ -543,7 +543,7 @@ ICA.addUnit({
     {id:"e4u23-l4-x6", type:"match", q:"Match each regime with an example from the lesson.", pairs:[
       ["Free float","Japan’s yen","The market sets the rate."],
       ["Currency board","The Hong Kong dollar since 1983","Fixed by law and backed by reserves."],
-      ["Dollarisation","Ecuador’s use of the US dollar","The country uses another country’s currency instead of its own."],
+      ["Dollarization","Ecuador’s use of the US dollar","The country uses another country’s currency instead of its own."],
       ["Monetary union","The euro area","Members share one currency and one central bank."]
     ]},
     {id:"e4u23-l4-x7", type:"spot", q:"A student’s account of the Asian crisis. Tap each sentence that **gets it wrong**.", ask:"gets it wrong", parts:[
@@ -1383,7 +1383,7 @@ ICA.addUnit({
      {t:"its government subsidizes the good", why:"Subsidies can make a good cheap, but comparative advantage is about real costs of production."}]},
    {id:"e4u23-q20", lesson:"e4u23-l3", level:2, q:"Mei says: “Country X is better than Country Y at making both cloth and computers. So X can’t gain from trading with Y.” What is the correction?", options:[
      {t:"She is right; trade only helps when each country is better at one good", why:"Ricardo showed the opposite: what matters is relative cost, not absolute ability."},
-     {t:"X should stop making both goods", why:"Specialising means making more of one good, not stopping production altogether."},
+     {t:"X should stop making both goods", why:"Specializing means making more of one good, not stopping production altogether."},
      {t:"Y will refuse to trade, because it is worse at both", why:"Y also gains by specializing where its opportunity cost is lower."},
      {t:"X can still gain by specializing where its advantage is greatest", ok:true, why:"Right. X should make the good where its advantage is greatest and import the other. Opportunity costs differ, so both can gain at a price between them."}]},
    {id:"e4u23-q21", lesson:"e4u23-l3", level:1, q:"The Heckscher–Ohlin model predicts that a labor-abundant country will export…", options:[

@@ -22,7 +22,7 @@ ICA.addUnit({
      reveal:"**2,136**, in the current list from 2010. That sounds like a lot, but nobody learns them all at once. JLPT N5 lists contain only about 80, and most kanji are built from a much smaller set of repeating parts. This lesson shows you those parts, and how to write kanji in the standard order."},
    goals:[
      "Explain what kanji are and how they share a sentence with hiragana and katakana",
-     "Recognise four ways kanji were built: pictures, signs, combined meanings, and meaning plus sound",
+     "Recognize four ways kanji were built: pictures, signs, combined meanings, and meaning plus sound",
      "Find the radical and other parts of a kanji, and name the common radical positions",
      "Write kanji in the standard stroke order, count strokes, and look kanji up"
    ],
@@ -1186,7 +1186,7 @@ ICA.addUnit({
    ]},
    {id:"e3u4-q36", lesson:"e3u4-l4", level:3, q:"Rodrigo wants N5 vocabulary to stick. Which method best fits this lesson?", options:[
      {t:"Learn words in phrases and pairs, and review daily", ok:true, why:"Right. Phrases like [電車]{でんしゃ}に[乗]{の}る, pairs like [高]{たか}い/[安]{やす}い and a short daily review make words stick."},
-     {t:"Memorise a long English–Japanese list once, in alphabetical order", why:"Random lists learned once are quickly forgotten. Groups and spaced review work better."},
+     {t:"Memorize a long English–Japanese list once, in alphabetical order", why:"Random lists learned once are quickly forgotten. Groups and spaced review work better."},
      {t:"Learn only the kanji, and the words will follow", why:"Kanji help, but words, their readings and particles need learning as words."},
      {t:"Wait until N4 to learn katakana words", why:"Katakana loanwords are core N5 vocabulary and often the easiest to learn."}
    ]},

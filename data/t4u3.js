@@ -22,7 +22,7 @@ ICA.addUnit({
      "Name the main kinds of academic paper and what each one gives you",
      "Use the front matter (title, abstract, DOI, dates) to decide quickly whether a paper is relevant",
      "Explain what each IMRaD section is for and where to find the aim, the method, the findings and the limitations",
-     "Recognise how humanities and theoretical articles are organized differently",
+     "Recognize how humanities and theoretical articles are organized differently",
      "Use the back matter: funding, competing interests, data availability and corrections"
    ],
    learn:[
@@ -307,7 +307,7 @@ ICA.addUnit({
       "Effect sizes come in two main forms.",
       {list:[
         "**Raw (unstandardized):** in the study’s own units, such as “4 points higher on a 100-point test”, “2.5 kg lighter” or “11 minutes more sleep”. These are the easiest to judge if you know the scale.",
-        "**Standardised:** converted to a common scale so different studies can be compared. A common one, **Cohen’s d**, is the difference between two averages divided by the **[[standard-deviation|standard deviation]]** (the typical spread of individual scores around their average). Others include the **correlation coefficient r** (from −1 to +1, with 0 meaning no linear relationship) and **ratios** such as risk ratios or odds ratios (where 1 means no difference)."
+        "**Standardized:** converted to a common scale so different studies can be compared. A common one, **Cohen’s d**, is the difference between two averages divided by the **[[standard-deviation|standard deviation]]** (the typical spread of individual scores around their average). Others include the **correlation coefficient r** (from −1 to +1, with 0 meaning no linear relationship) and **ratios** such as risk ratios or odds ratios (where 1 means no difference)."
       ]},
       {ex:"Invented study A: 240 students were randomly assigned to use a reading app or not for a term. App users averaged 64 on a 100-point reading test; the others averaged 60. The raw effect is 4 points. Scores in each group spread with a standard deviation of about 12 points, so d ≈ 4 ÷ 12 ≈ 0.33.", label:"Worked example (invented)"},
       "Jacob Cohen suggested d = 0.2, 0.5 and 0.8 as rough markers of ‘small’, ‘medium’ and ‘large’. They are ballpark labels, not rules: as Sullivan and Feinn (2012) put it, they should be informed by context. A ‘small’ effect on deaths can matter enormously; a ‘large’ effect on a trivial outcome may not."
@@ -352,7 +352,7 @@ ICA.addUnit({
       {t:"Randomly assigned students who used a reading app scored higher than those who didn’t.", b:0, why:"Random assignment makes the groups alike apart from the app, so it’s the best basis for a causal claim."},
       {t:"Children who own more books score higher on reading tests.", b:1, why:"Book-owning families may differ in many other ways (income, time, parents’ education): possible confounders."},
       {t:"Towns with more cycle lanes have lower obesity rates.", b:1, why:"Towns differ in many ways at once; this is an observational comparison."},
-      {t:"Wards randomly assigned to use a new handover checklist had fewer medication errors than wards randomly assigned to carry on as before.", b:0, why:"Randomising the wards to the checklist is an experiment, which supports a causal claim (within that setting)."},
+      {t:"Wards randomly assigned to use a new handover checklist had fewer medication errors than wards randomly assigned to carry on as before.", b:0, why:"Randomizing the wards to the checklist is an experiment, which supports a causal claim (within that setting)."},
       {t:"People who meditate report less stress in a survey.", b:1, why:"People who choose to meditate may already differ; a survey at one point in time shows association."}
     ]},
     {id:"t4u3-l3-x3", type:"number", q:"An invented trial reports that 5 in every 100 people in the comparison group got an infection, against 4 in every 100 in the treatment group. By what percentage was the risk reduced in relative terms?", answer:20, tol:0.5, unit:"%", why:"The absolute difference is 5% − 4% = 1 percentage point. Relative to the starting risk: 1 ÷ 5 = 0.20, a 20% relative reduction.", wrongs:[{v:1, tol:0.2, why:"1 is the absolute difference, in percentage points. The question asks for the relative reduction: divide that 1 by the starting risk of 5."},{v:25, tol:0.5, why:"25% is 1 ÷ 4, using the treatment group as the base. Relative reduction compares with the comparison (starting) group: 1 ÷ 5."},{v:80, tol:0.5, why:"80% is the risk ratio (4 ÷ 5 = 0.8): the treated group had 80% of the comparison group’s risk. The reduction is 100% − 80% = 20%."}], hint2:"Work out the absolute difference first, then divide it by the comparison group’s risk."},
@@ -384,8 +384,8 @@ ICA.addUnit({
    goals:[
      "Define a p-value correctly, in plain words, and say what a null hypothesis is",
      "Explain what ‘statistically significant’ means and where the 0.05 threshold comes from",
-     "Summarise the six principles of the ASA’s 2016 statement on p-values",
-     "Recognise and correct the classic misreadings of p-values",
+     "Summarize the six principles of the ASA’s 2016 statement on p-values",
+     "Recognize and correct the classic misreadings of p-values",
      "Judge a result by its size and uncertainty, not by whether it crossed a threshold"
    ],
    learn:[
@@ -748,7 +748,7 @@ ICA.addUnit({
       {t:"From interviews with 15 teachers: “Participants described three sources of distrust.”", b:0, why:"Reports what these participants said, which is what an interview study can show."}
     ]},
     {id:"t4u3-l5-x3", type:"match", q:"Match each kind of study to a fitting appraisal tool or reporting guideline.", pairs:[
-      ["Randomised controlled trial","CONSORT reporting guideline","CONSORT sets out what a trial report should include; its 2025 update is the current version."],
+      ["Randomized controlled trial","CONSORT reporting guideline","CONSORT sets out what a trial report should include; its 2025 update is the current version."],
       ["Observational study (cohort, case-control, cross-sectional)","STROBE reporting guideline","STROBE covers observational studies in epidemiology."],
       ["Systematic review","PRISMA reporting guideline","PRISMA covers how reviews report their search, selection and results."],
       ["Interview study","A qualitative appraisal checklist (for example, CASP’s)","Qualitative research needs questions about fit, transparency and reflexivity, not sample-size calculations."]
@@ -831,7 +831,7 @@ ICA.addUnit({
    {id:"t4u3-cp09", lesson:"t4u3-l5", level:2, q:"Rhea is appraising a history article arguing that guild records show women ran many businesses in an 18th-century port. Which question fits this kind of article best?", options:[
      {t:"Was the sample chosen at random, and how many people dropped out?", why:"Sampling and dropout questions fit quantitative studies. A humanities article argues from sources such as archives."},
      {t:"Is the main p-value below 0.05, so the result is significant?", why:"An argued essay from archives usually has no statistical test. It is judged by its evidence and argument."},
-     {t:"Was there a comparison group assigned by chance, as in a trial?", why:"Randomised comparison groups belong to experiments, not to historical arguments from records."},
+     {t:"Was there a comparison group assigned by chance, as in a trial?", why:"Randomized comparison groups belong to experiments, not to historical arguments from records."},
      {t:"Are sources used well, and are rival readings handled fairly?", ok:true, why:"Humanities articles are argued essays. Appraise the thesis, the use of sources, the handling of counter-evidence, and whether footnotes let you check."}]},
    {id:"t4u3-cp10", lesson:"t4u3-l5", level:3, q:"A well-run trial in large city hospitals in Norway found a discharge program reduced readmissions. Amina runs a small rural clinic in Malawi. How should she appraise the trial for her purpose?", options:[
      {t:"Accept it fully: a sound trial gives results that apply everywhere", why:"Internal soundness isn’t the same as relevance. A result may not transfer to a very different setting."},
@@ -956,7 +956,7 @@ ICA.addUnit({
      ],
      builder:[
       {h:"Effect sizes"},
-      "Raw effects use the study’s units (points, kilograms, minutes). Standardised effects allow comparison: Cohen’s d (difference in means divided by the standard deviation), the correlation r, and ratios such as risk ratios or odds ratios, where 1 means no difference. Cohen’s rough labels (d of 0.2 small, 0.5 medium, 0.8 large) are ballpark guides to be informed by context.",
+      "Raw effects use the study’s units (points, kilograms, minutes). Standardized effects allow comparison: Cohen’s d (difference in means divided by the standard deviation), the correlation r, and ratios such as risk ratios or odds ratios, where 1 means no difference. Cohen’s rough labels (d of 0.2 small, 0.5 medium, 0.8 large) are ballpark guides to be informed by context.",
       {h:"Absolute and relative"},
       "A fall in risk from 4% to 3% is 1 percentage point in absolute terms and 25% in relative terms. Both are true; the relative figure sounds bigger. Ask for the absolute numbers.",
       {h:"Intervals and sample size"},
@@ -1119,7 +1119,7 @@ ICA.addUnit({
      ],
      pro:[
       "**The [[table-2-fallacy|Table 2 fallacy]].** Westreich and Greenland (*American Journal of Epidemiology*, 2013) warned that presenting every coefficient from one model invites readers to treat the control variables’ coefficients like the main estimate. A model chosen to estimate the effect of one exposure may leave the others’ coefficients confounded, and where a control lies on the path between another variable and the outcome, the coefficient shows only a direct part of that variable’s effect. Some authors now show only the main estimate, or fit separate models for each question.",
-      "**Comparing coefficients.** Unstandardised coefficients on different scales don’t compare directly; standardized coefficients (often β) rescale to standard deviations but depend on the spread in the sample. Coefficients from different samples, or from logistic models with different controls, are not always comparable either.",
+      "**Comparing coefficients.** Unstandardized coefficients on different scales don’t compare directly; standardized coefficients (often β) rescale to standard deviations but depend on the spread in the sample. Coefficients from different samples, or from logistic models with different controls, are not always comparable either.",
       "**Robustness.** Look for sensitivity analyses and alternative specifications; a result that appears in only one of many possible models is fragile. Running many specifications and reporting the most striking one inflates false positives ({{multiple-testing}}).",
       "**Clustered and repeated data.** When people are grouped (students in schools) or measured repeatedly, standard errors should account for it, for example with clustered standard errors or multilevel models; otherwise intervals are too narrow.",
       "The mechanics of fitting a line are in Data Literacy ({{linear-regression}}); the International Studies track discusses causal inference with regression ({{regression-causal-inference}})."
@@ -1354,7 +1354,7 @@ ICA.addUnit({
      {t:"Teenagers shouldn’t be studied", why:"With proper ethics they can be; the issue is the causal claim."}]},
    {id:"t4u3-q39", lesson:"t4u3-l5", level:3, q:"An AI tool summarizes a paper as “a large trial proving the diet causes weight loss in all adults”. The paper is a 12-week trial in 90 women aged 30–50, with an uncertain result. What has the summary done?", options:[
      {t:"Exaggerated the size and certainty and over-generalized beyond the sample", ok:true, why:"‘Large’, ‘proving’ and ‘all adults’ all go beyond what the paper reports. Check every claim against the paper."},
-     {t:"Summarised it accurately, since AI tools read the whole paper before answering", why:"Tools can misread or overstate; this summary contradicts the paper."},
+     {t:"Summarized it accurately, since AI tools read the whole paper before answering", why:"Tools can misread or overstate; this summary contradicts the paper."},
      {t:"Made only a harmless simplification", why:"Changing ‘uncertain’ to ‘proving’ and ‘90 women’ to ‘all adults’ changes the meaning."},
      {t:"Shown that the paper is wrong", why:"The summary is wrong, not necessarily the paper."}]},
    {id:"t4u3-q40", lesson:"t4u3-l5", level:2, q:"What is a reporting guideline such as CONSORT?", options:[

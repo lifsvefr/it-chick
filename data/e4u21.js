@@ -24,7 +24,7 @@ ICA.addUnit({
      "Name South Asia’s states and their political systems, with the leaders in office as of November 2026",
      "Explain the debate over the direction of India’s democracy, attributing each position and its evidence",
      "Use the concepts of civil–military relations, hybrid regime and Milbus to analyze Pakistan",
-     "Summarise Bangladesh’s transition from the July 2024 uprising to the February 2026 election, neutrally",
+     "Summarize Bangladesh’s transition from the July 2024 uprising to the February 2026 election, neutrally",
      "Compare the protest-and-election cycles in Sri Lanka, Bangladesh and Nepal without over-generalizing"
    ],
    learn:[
@@ -271,7 +271,7 @@ ICA.addUnit({
     tasks:[
      {t:"Two statements, one event", how:[
        "Find India’s Ministry of External Affairs statement and Pakistan’s Ministry of Foreign Affairs statement on the same event (for example the May 2025 ceasefire, or the December 2023 Article 370 ruling).",
-       "Summarise each in one sentence beginning “X’s government said that…”, with the date.",
+       "Summarize each in one sentence beginning “X’s government said that…”, with the date.",
        "List the words each uses that the other avoids (for example “integral part”, “disputed territory”, “terrorism”, “self-determination”)."
      ], write:"India said… (date) Pakistan said… (date) Words each uses…"},
      {t:"Read Nehru and Jaishankar side by side", how:[
@@ -298,8 +298,8 @@ ICA.addUnit({
    goals:[
      "Explain Hau‘ofa’s “sea of islands” and why scale and size are contested in the Pacific",
      "Describe the Pacific Islands Forum, the Blue Pacific narrative and the 2050 Strategy, and the “new Pacific diplomacy”",
-     "Analyse great-power competition in the Pacific and island states’ responses, attributing each position",
-     "Summarise the status of Bougainville and New Caledonia as of late 2026, neutrally"
+     "Analyze great-power competition in the Pacific and island states’ responses, attributing each position",
+     "Summarize the status of Bougainville and New Caledonia as of late 2026, neutrally"
    ],
    learn:[
     {h:"Islands in a far sea, or a sea of islands?", body:[
@@ -328,7 +328,7 @@ ICA.addUnit({
       "Island governments respond in different ways. Some describe a foreign policy of being “friends to all”; others prefer their traditional partners. In 2025 the Forum adopted a Blue Pacific [[ocean-of-peace|Ocean of Peace]] declaration. In July 2026 a Chinese ballistic missile test crossed several members’ exclusive economic zones. Leaders registered concern and asked all states for at least 24 hours’ notice of future tests. The communiqué named no state, and Naoero formally dissociated itself from the paragraph. Scholars warn against a “new great game” story that treats islanders as pawns. In their view, the new Pacific diplomacy suggests that small states often bargain skillfully between suitors."
     ]},
     {h:"Unfinished self-determination: Bougainville and New Caledonia", body:[
-      "Decolonisation is not over in the Pacific. The UN still lists several Pacific territories, including New Caledonia, as [[non-self-governing-territory|non-self-governing territories]].",
+      "Decolonization is not over in the Pacific. The UN still lists several Pacific territories, including New Caledonia, as [[non-self-governing-territory|non-self-governing territories]].",
       {ex:"**Bougainville (Papua New Guinea).** After a war from 1988 to 1998 (Unit 12), the [[bougainville-peace-agreement|Bougainville Peace Agreement]] (2001) promised autonomy and a deferred referendum. In 2019, 97.7% voted for independence. The result must be ratified by PNG’s national parliament. As of late October 2026 parliament had opened debate but had not voted. PNG’s government says the constitution requires a three-quarters majority, 89 of 118 MPs; Bougainville’s leaders reject that threshold and say a simple majority was discussed. Prime Minister James Marape says any outcome must be acceptable to both Bougainville and the rest of the country.", label:"Case 1"},
       {ex:"**New Caledonia (France).** The [[noumea-accord|Nouméa Accord]] (1998) led to three referendums: 56.7% voted against independence in 2018 and 53% in 2020; in 2021 96.5% voted against on a turnout of 43.9%, after pro-independence parties boycotted the vote, which they had asked to delay during a COVID-19 outbreak. In May 2024 riots over a plan to widen the frozen electoral roll left 14 dead. The 2025 Bougival agreement and a January 2026 follow-up proposed a “State of New Caledonia” within France. The main pro-independence front, the FLNKS, rejected it as autonomy rather than decolonization; anti-independence parties backed it. France’s Senate passed the constitutional bill in February 2026, but the National Assembly rejected it in April. In the June 2026 provincial elections the anti-independence bloc won 24 of 54 seats and pro-independence parties 26 across three lists; a small party holding 4 seats helped elect an anti-independence president of the Congress. As of July 2026 talks on the long-term future had no set date.", label:"Case 2"},
       {ex:"**Task.** Two students cite New Caledonia’s 2021 referendum. One says “96.5% rejected independence”; the other says “the vote settled nothing”. Work out what the numbers can support.\n\n1. **First I separate the two figures**, because a result has a share and a turnout: 96.5% of votes cast were against independence, on a turnout of 43.9%.\n2. **Then I convert to registered voters**, to see how many of the whole electorate said what: 0.965 × 0.439 ≈ 0.42, so about 42% of registered voters voted against independence; about 1.5% voted for it; about 56% did not vote.\n3. **Next I ask why turnout fell.** Pro-independence parties boycotted the vote, which they had asked to delay during a COVID-19 outbreak. Many abstentions were therefore a political choice, not indifference.\n4. **Then I compare with the earlier votes**, which had high participation and closer results: 56.7% against in 2018 and 53% against in 2020.\n5. **Finally I state what each side can fairly claim.** The vote was legally valid under the Nouméa Accord process; its political legitimacy is disputed because one side stayed away.\n\n**Finished sentence:** “In 2021, 96.5% of those voting rejected independence, but turnout was 43.9% after a pro-independence boycott; the result was legally valid, yet its legitimacy is contested, and the two earlier referendums had shown a far closer division.”\n\n**Common mistake:** quoting a share of votes cast without the turnout, or treating a boycott as if those voters had no view.", label:"Worked example: reading a referendum result"},
@@ -345,7 +345,7 @@ ICA.addUnit({
     ]},
     {id:"e4u21-l3-x2", type:"match", q:"Match each Pacific term to its meaning.", pairs:[
       ["Blue Pacific","Leaders’ narrative of one ocean continent with a shared identity","Used by the Forum since 2017 and in the 2050 Strategy."],
-      ["Pacific Way","Consensus-based, consultative style of regional politics","Popularised by Ratu Mara around 1970."],
+      ["Pacific Way","Consensus-based, consultative style of regional politics","Popularized by Ratu Mara around 1970."],
       ["Vessel Day Scheme","Selling fishing days to foreign fleets","Run by the Parties to the Nauru Agreement."],
       ["CROP agencies","Specialist regional bodies around the Forum","Science, fisheries, environment and more."],
       ["Compact of Free Association","US agreements with three Micronesian states pairing economic support with defense rights","Renewed in 2023–24."]
@@ -401,7 +401,7 @@ ICA.addUnit({
      {t:"Two views of one agreement", how:[
        "Choose one agreement from this lesson (the Falepili Union, the Pukpuk treaty, the China–Solomon Islands security agreement or the Bougival agreement).",
        "Find one statement supporting it and one criticizing it, from governments, parties or regional media.",
-       "Summarise each in one sentence beginning “X argues that…”, with the date."
+       "Summarize each in one sentence beginning “X argues that…”, with the date."
      ], write:"Agreement… Supporter says… Critic says…"},
      {t:"Seminar questions", how:[
        "Choose one and write 150–250 words with a position and a counter-argument.",
@@ -425,7 +425,7 @@ ICA.addUnit({
      "Trace the Indo-Pacific from naval thinkers and Abe’s 2007 speech to official strategies",
      "Compare the Australian, Indian, US, ASEAN and EU visions by scope and purpose",
      "Present the main critiques, including China’s and Southeast Asian and Pacific perspectives, and the defense of the concept",
-     "Analyse any regional label by asking what it includes, excludes and does"
+     "Analyze any regional label by asking what it includes, excludes and does"
    ],
    learn:[
     {h:"Regions are drawn, not found", body:[
@@ -536,7 +536,7 @@ ICA.addUnit({
     {id:"e4u21-l4-x8", type:"explain", q:"Explain why scholars say “Indo-Pacific” is not a neutral name for a region. Compare what it does with what “Asia-Pacific” did, and give two governments’ different uses of the word.", size:"3–5 sentences", hint:"Ask who is in, who is out, and what each label is for.", model:"Regions are mental maps, and governments use regional names as strategic narratives meant to shape how others see the order and act in it. “Asia-Pacific”, built through APEC from 1989, stretched to the Americas but stopped at Southeast Asia, so India was at its edge. “Indo-Pacific” joins the two oceans and puts India at the center. Governments also use it differently: the United States stresses a “free and open” rules-based order and competition with China, while ASEAN’s 2019 Outlook stresses “dialogue and cooperation instead of rivalry” and ASEAN centrality. China’s government prefers “Asia-Pacific” and describes US Indo-Pacific policy as aimed at containing it.", points:["Explains regions as mental maps or strategic narratives", "Says what “Asia-Pacific” included and left out (India at the edge)", "Explains that “Indo-Pacific” puts India at the center", "Contrasts two governments’ uses, such as the US and ASEAN", "Attributes China’s government’s view"]}
    ],
    apply:{
-    intro:"Analyse regional labels in official texts.",
+    intro:"Analyze regional labels in official texts.",
     tasks:[
      {t:"Map two strategies", how:[
        "Open two official Indo-Pacific documents (for example the ASEAN Outlook and the EU strategy, or India’s IPOI page and Australia’s latest foreign policy or defense paper).",
@@ -574,7 +574,7 @@ ICA.addUnit({
    learn:[
     {h:"Regionalism and regionalization", body:[
       {lead:"Unit 9 compared regional organizations from the EU to the SCO ({{comparative-regionalism}}). Here we compare regions themselves."},
-      "Start with a distinction drawn by T. J. Pempel and colleagues in *Remapping East Asia* (2005). **Regionalism** is top-down: governments build institutions and rules. [[regionalisation|Regionalisation]] is bottom-up: firms, production networks, migrants, students and investors tie places together whether or not governments plan it. East Asia is often described as high in regionalization, through dense supply chains, and comparatively light in binding institutions.",
+      "Start with a distinction drawn by T. J. Pempel and colleagues in *Remapping East Asia* (2005). **Regionalism** is top-down: governments build institutions and rules. [[regionalisation|Regionalization]] is bottom-up: firms, production networks, migrants, students and investors tie places together whether or not governments plan it. East Asia is often described as high in regionalization, through dense supply chains, and comparatively light in binding institutions.",
       "Two further ideas help. [[open-regionalism|Open regionalism]], the founding idea of APEC, means cooperating to lower barriers without discriminating against outsiders, unlike a customs union. And Peter {{peter-katzenstein|Katzenstein}}, in *A World of Regions* (2005), argued that globalization and internationalization make Asian and European regions [[porous-regions|porous]]. In his account, they are open to the world and tied to the United States. Japan and Germany are their links to what he called the American “imperium”.",
       "Why did Asia not build a NATO? Christopher Hemmer and Katzenstein (2002) argued that US policymakers in the 1950s saw Western Europeans as part of a shared community. In their account, these policymakers did not see Asian partners the same way. So they chose bilateral alliances in Asia, the hub-and-spoke system (Unit 12). Realists point instead to power. In their view, the United States was so much stronger than its Asian allies that it preferred to deal with each one separately.",
       "Institutions also cross the lines we draw on maps. The East Asia Summit (2005) includes India, Australia, New Zealand, Russia and the United States as well as ASEAN, China, Japan and South Korea. So “East Asia” as an institution reaches into South Asia and the Pacific. The Regional Comprehensive Economic Partnership ([[rcep|RCEP]]), in force since 2022, joined ASEAN with five partners. India had withdrawn from the talks in 2019, so South Asia’s largest economy stayed outside East Asia’s largest trade agreement. The Pacific Islands Forum includes Australia and New Zealand, which raises its own question: who counts as “Pacific”?",
@@ -617,7 +617,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"e4u21-l5-x1", type:"sort", q:"Regionalism (top-down, institutions) or regionalization (bottom-up, flows)?", buckets:["Regionalism","Regionalisation"], items:[
+    {id:"e4u21-l5-x1", type:"sort", q:"Regionalism (top-down, institutions) or regionalization (bottom-up, flows)?", buckets:["Regionalism","Regionalization"], items:[
       {t:"Governments sign the BIMSTEC Charter", b:0, why:"States building an institution."},
       {t:"Electronics firms spread production across five Asian countries", b:1, why:"Market-driven ties."},
       {t:"Students from Nepal and Bangladesh move to study in other Asian countries", b:1, why:"Social flows, not an intergovernmental plan."},
@@ -744,10 +744,10 @@ ICA.addUnit({
      {t:"“Blue Pacific” is a US military term for the Indo-Pacific Command’s area", why:"Pacific leaders adopted the Blue Pacific narrative themselves from 2017."},
      {t:"The leader is signaling that climate change is no longer a priority for the region’s states", why:"Climate change is at the center of the Blue Pacific agenda and the 2050 Strategy."}]},
    {id:"e4u21-cp10", lesson:"e4u21-l4", level:2, q:"ASEAN adopts an outside idea, the Indo-Pacific, but reframes it around its own centrality, inclusion and “dialogue … instead of rivalry”. Which concept describes what ASEAN did?", options:[
-     {t:"Securitisation", why:"Securitisation means presenting an issue as an existential threat; ASEAN did the opposite, stressing dialogue."},
+     {t:"Securitization", why:"Securitization means presenting an issue as an existential threat; ASEAN did the opposite, stressing dialogue."},
      {t:"Bandwagoning", why:"ASEAN did not join one side; its Outlook avoids blocs."},
      {t:"Norm localization", ok:true, why:"Right. ASEAN fitted an outside idea to its own norms of centrality and inclusion."},
-     {t:"Regionalisation from below", why:"Regionalisation is bottom-up integration through firms and flows, not reframing a concept."}]},
+     {t:"Regionalization from below", why:"Regionalization is bottom-up integration through firms and flows, not reframing a concept."}]},
    {id:"e4u21-cp11", lesson:"e4u21-l5", level:2, q:"Region X: members have not prepared for war with each other for decades and share norms of consultation. Region Y: two nuclear-armed rivals fought recently. Drawing on Lessons 1 and 5, which pair of concepts fits?", options:[
      {t:"X is an insulator; Y is a security community", why:"Y’s rivalry is the opposite of a security community, and an insulator lies between complexes."},
      {t:"X is a regional security complex defined by rivalry; Y is a mature security community", why:"This reverses the cases."},
@@ -1010,7 +1010,7 @@ ICA.addUnit({
     summary:"The status, as of late 2026, of Bougainville’s path from its 2019 independence vote and of New Caledonia after three referendums and the Bougival agreement, with each side’s position.",
     levels:{
      starter:[
-      "Decolonisation is not finished in the Pacific. The UN lists several Pacific territories, including New Caledonia, as [[non-self-governing-territory|non-self-governing territories]].",
+      "Decolonization is not finished in the Pacific. The UN lists several Pacific territories, including New Caledonia, as [[non-self-governing-territory|non-self-governing territories]].",
       "In Bougainville, an autonomous region of Papua New Guinea, 97.7% voted for independence in 2019. PNG’s parliament must decide whether to ratify the result.",
       "In New Caledonia, a French territory, three referendums (2018, 2020, 2021) rejected independence, but the last was boycotted by pro-independence parties, and the territory’s future is still being negotiated.",
       {key:"In both cases, the dispute is not only about the answer but about the process: who votes, what majority is needed, and who must agree."}
@@ -1063,7 +1063,7 @@ ICA.addUnit({
       {key:"Two words to keep apart: regionalism (governments build institutions) and regionalization (markets and people tie places together)."}
      ],
      builder:[
-      "**Concepts.** [[regionalisation|Regionalisation]] versus regionalism (Pempel, *Remapping East Asia*, 2005); [[open-regionalism|open regionalism]] (APEC); [[porous-regions|porous regions]] (Katzenstein, *A World of Regions*, 2005); [[security-community|security communities]] (Deutsch 1957; Adler and Barnett 1998; Acharya 2001 on ASEAN); regional security complexes (Unit 12).",
+      "**Concepts.** [[regionalisation|Regionalization]] versus regionalism (Pempel, *Remapping East Asia*, 2005); [[open-regionalism|open regionalism]] (APEC); [[porous-regions|porous regions]] (Katzenstein, *A World of Regions*, 2005); [[security-community|security communities]] (Deutsch 1957; Adler and Barnett 1998; Acharya 2001 on ASEAN); regional security complexes (Unit 12).",
       "**Puzzles.** Why no NATO in Asia (Hemmer and Katzenstein, 2002)? Why does ASEAN endure while SAARC stalls? Why are Pacific institutions strong relative to economic integration?",
       "**Field debates.** Takeuchi Yoshimi’s 1960 lecture and Chen Kuan-Hsing’s *Asia as Method* (2010) urge [[asia-as-method|inter-Asian comparison]] rather than measuring Asia against Europe; Pacific scholars following Hau‘ofa argue for Oceania-centered research."
      ],
@@ -1156,7 +1156,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Key works.** *Small States in World Markets* (1985); *Cultural Norms and National Security: Police and Military in Postwar Japan* (1996); *The Culture of National Security* (ed., 1996), a founding text of constructivist security studies; *Network Power: Japan and Asia* (ed. with Takashi Shiraishi, 1997); *A World of Regions* (2005); *Beyond Japan: East Asian Regionalism* (ed. with Shiraishi, 2006); *Beyond Paradigms: Analytic Eclecticism in World Politics* (with Rudra Sil, 2010).",
-      "**A World of Regions.** Globalisation and internationalization make regions [[porous-regions|porous]]; Europe and Asia are linked to an American “imperium” through Germany and Japan.",
+      "**A World of Regions.** Globalization and internationalization make regions [[porous-regions|porous]]; Europe and Asia are linked to an American “imperium” through Germany and Japan.",
       "**No NATO in Asia.** With Christopher Hemmer (2002) he argued that US policymakers’ sense of collective identity with Europeans, but not with Asians, explains multilateral alliances in Europe and bilateral ones in Asia."
      ],
      pro:[
@@ -1218,7 +1218,7 @@ ICA.addUnit({
    {id:"apec", term:"APEC", def:"Asia-Pacific Economic Cooperation: a forum founded in 1989 by twelve economies, now 21 “member economies”, that promotes open trade and investment.", codex:"indo-pacific-concept"},
    {id:"aoip", term:"ASEAN Outlook on the Indo-Pacific (AOIP)", def:"ASEAN’s 2019 statement on the Indo-Pacific, stressing ASEAN centrality, inclusiveness and “dialogue and cooperation instead of rivalry”.", codex:"indo-pacific-concept"},
    {id:"ipoi", term:"Indo-Pacific Oceans Initiative (IPOI)", def:"India’s 2019 initiative for practical cooperation in the Indo-Pacific, organized in seven pillars from maritime security to trade and transport.", codex:"indian-foreign-policy"},
-   {id:"regionalisation", term:"Regionalisation", def:"The bottom-up growth of ties within a region through trade, investment, production networks and migration, as distinct from state-led regionalism.", codex:"asia-pacific-studies"},
+   {id:"regionalisation", term:"Regionalization", def:"The bottom-up growth of ties within a region through trade, investment, production networks and migration, as distinct from state-led regionalism.", codex:"asia-pacific-studies"},
    {id:"open-regionalism", term:"Open regionalism", def:"Regional cooperation that lowers barriers among members without discriminating against outsiders; the founding idea of APEC.", codex:"asia-pacific-studies"},
    {id:"porous-regions", term:"Porous regions", def:"Katzenstein’s term (2005) for regions that are open to the world and shaped by globalization and by links to the United States.", codex:"peter-katzenstein"},
    {id:"security-community", term:"Security community", def:"A group of states with dependable expectations of peaceful change: they no longer expect or prepare for war with each other (Deutsch, 1957).", codex:"asia-pacific-studies"},
@@ -1416,7 +1416,7 @@ ICA.addUnit({
      {t:"Regionalism is state-led; regionalization is market- and people-led", ok:true, why:"Right: regionalism is state-led institution-building; regionalization is bottom-up integration through markets and people (Pempel and colleagues)."},
      {t:"They are synonyms", why:"Scholars use them for different processes."},
      {t:"Regionalism is economic, while regionalization is military and strategic", why:"Not the distinction."},
-     {t:"Regionalisation means joining the EU", why:"It applies to any region."}]},
+     {t:"Regionalization means joining the EU", why:"It applies to any region."}]},
    {id:"e4u21-q38", lesson:"e4u21-l5", level:2, q:"Which feature of SAARC’s Charter helps explain its paralysis?", options:[
      {t:"Unanimity, and a bar on bilateral and contentious issues", ok:true, why:"Right: one member can block, and the main conflict cannot be discussed, because of unanimity plus the exclusion of bilateral and contentious issues from its deliberations."},
      {t:"A rule that summits must be held in India", why:"No such rule; the 2016 summit was due in Islamabad."},

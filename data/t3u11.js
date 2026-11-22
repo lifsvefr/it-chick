@@ -7,7 +7,7 @@ ICA.addUnit({
     "Explain probability as a long-run frequency, simulate chance in a spreadsheet or R, and spot the gambler’s fallacy",
     "Use the complement, addition and multiplication rules with two-way tables and trees, and check whether two events are independent",
     "Describe a random variable by its distribution, and calculate and interpret its expected value and standard deviation",
-    "Recognise a binomial situation, simulate it, and calculate its probabilities with BINOM.DIST, dbinom and pbinom",
+    "Recognize a binomial situation, simulate it, and calculate its probabilities with BINOM.DIST, dbinom and pbinom",
     "Find normal areas and percentiles with NORM.DIST, NORM.INV, pnorm and qnorm, and explain why sample means and counts tend to look normal"
   ],
   read:[
@@ -23,7 +23,7 @@ ICA.addUnit({
      "Find probabilities for equally likely outcomes by listing the sample space carefully",
      "Explain probability as a long-run relative frequency, and name three places real probabilities come from",
      "Simulate chance in a spreadsheet or R, and say what the law of large numbers promises",
-     "Recognise the gambler’s fallacy and other common misreadings of chance"
+     "Recognize the gambler’s fallacy and other common misreadings of chance"
    ],
    learn:[
     {h:"Putting a number on chance", body:[
@@ -921,7 +921,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Pseudo-random numbers.** Computers generate numbers that look random from a starting value, the [[random-seed|seed]]. In R, `set.seed(2)` before a simulation makes it repeatable: anyone running the same code gets the same numbers. Spreadsheet RAND has no simple seed, so record results you want to keep (copy and paste as values).",
-      "**A simulation recipe.** (1) Model one trial (a flip, a roll, a guess with p = 0.25). (2) Model one repetition of the whole experiment (10 guesses, then count). (3) Repeat it many times. (4) Summarise: shares, averages, a histogram.",
+      "**A simulation recipe.** (1) Model one trial (a flip, a roll, a guess with p = 0.25). (2) Model one repetition of the whole experiment (10 guesses, then count). (3) Repeat it many times. (4) Summarize: shares, averages, a histogram.",
       "**Useful R pieces.** `sample(x, n, replace = TRUE, prob = …)` draws with given probabilities; `mean(v == \"H\")` is the share of TRUE values; `table(v) / length(v)` gives the share of each value; `rle(v)$lengths` gives the lengths of runs; `rbinom()` and `rnorm()` draw binomial and normal values directly.",
       "**How precise?** A simulated share from N repeats has an SD of about √(p(1 − p) ÷ N): with 10,000 repeats and p near 0.3, about ±0.005. That is why simulated binomial shares in this unit land within about one percentage point of the exact values.",
       "**Spreadsheets recalculate.** Every edit redraws RAND and RANDBETWEEN values, so totals change under your eyes. To keep one set of results, copy the cells and paste them as values only (Paste special; the exact menu name differs slightly between apps)."

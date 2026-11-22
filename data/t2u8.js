@@ -32,7 +32,7 @@ ICA.addUnit({
         ["Kind of job","An everyday example"],
         ["Automating chores","Renaming 300 vacation photos, or merging a folder of spreadsheets"],
         ["Working with data","Totaling a community group’s membership fees, or charting survey results"],
-        ["Science and research","Analysing lab measurements, or cleaning a dataset for a thesis"],
+        ["Science and research","Analyzing lab measurements, or cleaning a dataset for a thesis"],
         ["Websites and apps","The server code behind sign-up forms and online shops"],
         ["Teaching and learning","Many schools and universities start with Python"]
       ]},
@@ -118,7 +118,7 @@ ICA.addUnit({
       {t:"Rename 300 photos so the date comes first", b:0, why:"Repetitive file chores are a classic first Python project (*Automate the Boring Stuff* has a whole chapter on it)."},
       {t:"Total a column of fees in a spreadsheet file", b:0, why:"Python reads spreadsheet and CSV files and does the arithmetic; Unit 10 shows how."},
       {t:"Choose the colors and fonts of a web page", b:1, why:"That’s CSS’s job. Python can run a website’s server, but presentation in the browser is CSS."},
-      {t:"Analyse survey answers and count the most common words", b:0, why:"Counting and analyzing data is one of Python’s most common uses."},
+      {t:"Analyze survey answers and count the most common words", b:0, why:"Counting and analyzing data is one of Python’s most common uses."},
       {t:"Show a menu when someone taps a button on a web page", b:1, why:"Behavior inside the browser is JavaScript’s job. Python normally runs on a computer or server, not in the visitor’s browser."}
     ]},
     {id:"t2u8-l1-x2", type:"match", q:"Match each situation with the best way to start Python.", pairs:[
@@ -179,7 +179,7 @@ ICA.addUnit({
   {id:"t2u8-l2", title:"Values and variables", minutes:55,
    hook:{q:"In Python, what does `round(2.5)` give?", options:["3","2","2.5 (it can’t decide, so it leaves it)","An error: you must say how many decimal places"], answer:1, reveal:"It gives 2, which surprises almost everyone. When a number is exactly halfway, Python rounds to the nearest **even** number, so `round(2.5)` is 2 but `round(3.5)` is 4. This “banker’s rounding” keeps totals from drifting upwards. This lesson covers Python’s kinds of values, how to name them, how to calculate, and a few surprises like this one."},
    goals:[
-     "Recognise `int`, `float`, `str`, `bool` and `None`, and check a value’s type with `type()`",
+     "Recognize `int`, `float`, `str`, `bool` and `None`, and check a value’s type with `type()`",
      "Create and reassign variables, picturing a variable as a label on a value, and name them in snake_case",
      "Calculate with Python’s arithmetic operators, including `/`, `//` and `%`, and predict `round()`, including halves",
      "Build text with f-strings, read typed answers with `input()`, and convert them with `int()` and `float()`"
@@ -426,7 +426,7 @@ ICA.addUnit({
       {table:[
         ["Method","Does","Example → result"],
         ["`upper()` `lower()`","Change case","`\"Tea\".lower()` → `'tea'`"],
-        ["`title()`","Capitalise each word","`\"mei tanaka\".title()` → `'Mei Tanaka'`"],
+        ["`title()`","Capitalize each word","`\"mei tanaka\".title()` → `'Mei Tanaka'`"],
         ["`strip()`","Remove spaces (and line breaks) at both ends","`\"  hi  \".strip()` → `'hi'`"],
         ["`replace(old, new)`","Swap every match","`\"a-b-c\".replace(\"-\", \"/\")` → `'a/b/c'`"],
         ["`split()`","Cut into a list of pieces","`\"red green\".split()` → `['red', 'green']`"],
@@ -953,7 +953,7 @@ ICA.addUnit({
       ]},
       "Slices take `[start:stop]`, including `start` and excluding `stop`; leave either out to go to that end; negative numbers count from the end. Slicing never raises an error; plain indexing past the end is an IndexError.",
       "Because strings are **immutable**, `name.upper()` on its own line does nothing useful. Write `name = name.upper()`.",
-      "Comparison is case-sensitive and goes by character code, so every capital comes before every lowercase letter. Normalise with `.lower()` (or `.casefold()`, which also handles cases such as German ß) before comparing what people type.",
+      "Comparison is case-sensitive and goes by character code, so every capital comes before every lowercase letter. Normalize with `.lower()` (or `.casefold()`, which also handles cases such as German ß) before comparing what people type.",
       "**Quotes and special characters.** To put a quote inside a string, use the other kind outside (`\"It's here\"`) or a backslash escape (`'It\\'s here'`). Inside a string, `\\n` is a line break and `\\t` a tab. Triple quotes let a string run over several lines. `\"-\" * 20` repeats a string, handy for a divider line.","Other useful methods: `startswith()`, `endswith()`, `count()`, `find()` (gives -1 when the text isn’t there), `title()`, and `isdigit()`, which checks that typed text is all digits before you call `int()` (it’s False for `\"-1\"` and `\"3.5\"`, so it suits only whole numbers with no minus sign)."
      ],
      pro:[
@@ -1405,9 +1405,9 @@ ICA.addUnit({
      {t:"`'6'`", why:"That’s `code[-1]`, a single character."}
    ]},
    {id:"t2u8-q25", lesson:"t2u8-l3", level:3, q:"A quiz accepts the answer with `if answer == \"yes\":`. Users who type `Yes` or `yes ` are told they’re wrong. What’s the best fix?", options:[
-     {t:"Clean it first: `answer = answer.strip().lower()`", ok:true, why:"Comparison is exact and case-sensitive. Normalising removes stray spaces and capitals before comparing."},
+     {t:"Clean it first: `answer = answer.strip().lower()`", ok:true, why:"Comparison is exact and case-sensitive. Normalizing removes stray spaces and capitals before comparing."},
      {t:"Use `=` instead of `==`", why:"`=` assigns; in an `if` it’s a SyntaxError."},
-     {t:"Add `elif answer == \"Yes\":`", why:"That covers one variant but misses `YES`, `yes ` and others. Normalising handles them all."},
+     {t:"Add `elif answer == \"Yes\":`", why:"That covers one variant but misses `YES`, `yes ` and others. Normalizing handles them all."},
      {t:"Use `answer.upper()` on its own line before the `if`", why:"Strings don’t change; that line’s result is thrown away. And the comparison is with lowercase \"yes\"."}
    ]},
    {id:"t2u8-q26", lesson:"t2u8-l3", level:1, q:"Which of these counts as **false** in an `if`?", options:[

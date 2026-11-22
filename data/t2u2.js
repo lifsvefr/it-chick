@@ -20,7 +20,7 @@ ICA.addUnit({
    goals:[
      "Name the parts of an element: opening tag, content, closing tag, attributes",
      "Nest elements correctly and predict what a browser does with overlapping tags",
-     "Recognise void elements, quote attribute values, and use boolean attributes",
+     "Recognize void elements, quote attribute values, and use boolean attributes",
      "Use whitespace, comments and character references such as `&lt;` and `&amp;` correctly"
    ],
    learn:[

@@ -5,7 +5,7 @@ ICA.addUnit({
   goals:[
     "Explain how “Southeast Asia” was constructed as a region and use the field’s key works (Emmerson, Wolters, Reid, Thongchai, Furnivall, Scott) in a seminar",
     "Compare the region’s political regimes and the main explanations for democratization, backsliding, coups and authoritarian durability, neutrally and with dates",
-    "Analyse Southeast Asia’s political economy: development paths, the ASEAN Economic Community, FDI and value chains, Indonesia’s nickel policy and migration within the region",
+    "Analyze Southeast Asia’s political economy: development paths, the ASEAN Economic Community, FDI and value chains, Indonesia’s nickel policy and migration within the region",
     "Assess ASEAN as an institution: its Charter and decision rules, centrality and the great powers, the Myanmar Five-Point Consensus and its record, and Timor-Leste’s accession",
     "Discuss Islam, Buddhism, ethnic Chinese communities and regional popular culture without essentializing any group",
     "Design a comparative case study of two Southeast Asian countries for a seminar paper"
@@ -141,7 +141,7 @@ ICA.addUnit({
      ], write:"My first list… What I missed… Where my images came from… Which country I want to learn about…"},
      {t:"Read one local voice", how:[
        "Find an English-language opinion piece by a writer from a Southeast Asian country, in a newspaper from that country (for example a national daily from the Philippines, Indonesia, Malaysia, Thailand or Singapore).",
-       "Summarise its argument in three sentences.",
+       "Summarize its argument in three sentences.",
        "Ask: what does this writer take for granted that a foreign correspondent might explain, and the other way round?"
      ], write:"Writer and outlet… Argument… What they assume… What an outsider would add…"},
      {t:"Seminar questions", how:[
@@ -166,7 +166,7 @@ ICA.addUnit({
      "Describe the formal political systems of the eleven Southeast Asian states as of November 2026",
      "Explain democratization, backsliding and authoritarian durability using key works (Slater, Slater and Wong, Levitsky and Way, Bermeo)",
      "Explain how one-party states and dominant-party systems such as Vietnam’s and Singapore’s work",
-     "Analyse the political role of militaries, monarchies and courts, with Thailand as a case, and describe Myanmar since 2021 neutrally",
+     "Analyze the political role of militaries, monarchies and courts, with Thailand as a case, and describe Myanmar since 2021 neutrally",
      "Use regime labels carefully and attribute contested classifications"
    ],
    learn:[
@@ -315,7 +315,7 @@ ICA.addUnit({
      "Compare the main development paths in Southeast Asia and the debates that explain their differences",
      "Explain how FDI, production networks and “China plus one” shape the region’s place in global value chains",
      "Describe the ASEAN Economic Community: what it has achieved and where integration is shallow",
-     "Analyse Indonesia’s nickel downstreaming policy with each side’s arguments",
+     "Analyze Indonesia’s nickel downstreaming policy with each side’s arguments",
      "Describe migration flows within ASEAN, the regional rules on migrant workers and their limits"
    ],
    learn:[
@@ -496,7 +496,7 @@ ICA.addUnit({
     {h:"Widening and quarrels: Timor-Leste and the Thai–Cambodian border", body:[
       "Timor-Leste applied to join in 2011. ASEAN agreed in principle in 2022 and gave it observer status. It adopted a roadmap for full membership in 2023. It admitted Timor-Leste as the eleventh member on 26 October 2025, at the opening of the 47th Summit in Kuala Lumpur. The Charter’s Article 6 requires a new member to be located in Southeast Asia and recognized by all members. It must also be willing and able to carry out membership obligations, including joining ASEAN’s agreements. Supporters stressed the country’s democratic record and solidarity. Skeptics had questioned its capacity to staff hundreds of meetings and meet economic commitments.",
       "Conflict among members tests the ASEAN Way from the other side. Thailand and Cambodia fought for five days in July 2025 (at least 48 dead and about 300,000 displaced, according to news reports). They fought again for twenty days in December 2025 (at least 101 dead and more than half a million displaced). Truces followed. The first was agreed at talks hosted by Malaysia as ASEAN chair, with the United States and China also involved. The second came with an ASEAN observer team to monitor it. Defenders see quiet conflict management; critics see a region that still relies on outside powers.",
-      {key:"ASEAN is a consensus club with a weak center and strong habits. It convenes the great powers and bends its rules slowly. Judgements of it differ greatly, depending on whether you measure it against its own aims or against the EU."},
+      {key:"ASEAN is a consensus club with a weak center and strong habits. It convenes the great powers and bends its rules slowly. Judgments of it differ greatly, depending on whether you measure it against its own aims or against the EU."},
       {terms:["zopfan","treaty-of-amity-and-cooperation","asean-charter","asean-community-pillars","asean-minus-x","five-point-consensus","non-political-representation"]}
     ]}
    ],
@@ -589,7 +589,7 @@ ICA.addUnit({
      "Explain debates about Islam and politics in Indonesia, Malaysia and the Muslim minorities of the Philippines and Thailand",
      "Explain the relationship between Theravada Buddhism, monarchy and the state, with care on contested cases",
      "Describe the varied histories of ethnic Chinese communities and the debate on “market-dominant minorities”",
-     "Analyse regional popular culture and design a two-country comparison for a seminar paper"
+     "Analyze regional popular culture and design a two-country comparison for a seminar paper"
    ],
    learn:[
     {h:"A region of many faiths", body:[
@@ -1205,7 +1205,7 @@ ICA.addUnit({
      {t:"Singapore is still a poor country, so modernization theory simply does not apply to it", why:"Singapore is one of the region’s richest societies, which is why it is a puzzle."},
      {t:"Singapore has had several changes of ruling party since independence", why:"One party has governed since 1959."},
      {t:"It is a puzzle for the theory: rich and educated, yet no change of ruling party", ok:true, why:"Right. The lesson presents it against modernization theory’s expectation, and reports both readings."},
-     {t:"Modernisation theory predicts that wealth leads to stable one-party rule", why:"The theory expects wealth to bring democracy, which is why Singapore is hard for it to explain."}]},
+     {t:"Modernization theory predicts that wealth leads to stable one-party rule", why:"The theory expects wealth to bring democracy, which is why Singapore is hard for it to explain."}]},
    {id:"e4u20-cp07", lesson:"e4u20-l3", level:1, q:"Exports boom, but the machines and designs are foreign, and local tycoons grew rich on state licenses rather than innovation. Which critique fits?", options:[
      {t:"Ersatz capitalism", ok:true, why:"Yes. Yoshihara Kunio (1988) used this term for growth without domestic technological depth."},
      {t:"Downstreaming", why:"Downstreaming is Indonesia’s policy of processing minerals at home."},

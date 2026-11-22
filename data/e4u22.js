@@ -6,7 +6,7 @@ ICA.addUnit({
     "Define a world region for a research question, read its own scholars, and choose between intra-, inter- and cross-regional comparison",
     "Explain the main debates on the post-colonial African state, the African Peace and Security Architecture, Africa’s development outlook and Africa–Asia relations",
     "Use the concepts of bureaucratic authoritarianism, pacted transition, delegative democracy, populism and the pink tide to analyze Latin American politics neutrally",
-    "Analyse the Middle East and North Africa with rentier state theory, the record of the Arab uprisings and the Gulf states’ rise, and describe the Israeli–Palestinian conflict and normalization with attributed, dated positions",
+    "Analyze the Middle East and North Africa with rentier state theory, the record of the Arab uprisings and the Gulf states’ rise, and describe the Israeli–Palestinian conflict and normalization with attributed, dated positions",
     "Explain Asia’s economic and energy stakes in all three regions",
     "Connect the track’s foundations and four clusters through six cross-cutting debates, and plan continued learning with free, reliable resources"
   ],
@@ -227,7 +227,7 @@ ICA.addUnit({
         ["[[india-africa-forum-summit|India–Africa Forum Summit]]","2008","The third summit, in New Delhi in 2015, was the largest"]
       ]},
       "South Korea held its first Korea–Africa summit in 2024, and Türkiye and the Gulf states have also expanded their presence. Japan stresses African “ownership” and partnership; China stresses South–South solidarity and infrastructure; India stresses shared colonial history and capacity-building. Critics and defenders argue about debt (Unit 16’s [[debt-trap-diplomacy|“debt-trap” debate]]), labor and environmental standards, and whether summits produce what they promise.",
-      "A growing literature insists on **African agency**: African governments set terms, play partners against each other and use the AU to negotiate collectively. Analyse each relationship from both ends.",
+      "A growing literature insists on **African agency**: African governments set terms, play partners against each other and use the AU to negotiate collectively. Analyze each relationship from both ends.",
       {key:"Africa is not a stage on which outsiders act. It is 54 states, a continental union and eight regional communities with their own strategies, debates and scholars."},
       {terms:["juridical-statehood","empirical-statehood","decentralised-despotism","neopatrimonialism","politics-of-the-belly","unconstitutional-change-of-government","alliance-of-sahel-states","apsa","peace-and-security-council","regional-economic-communities","african-solutions","african-standby-force","africa-rising","demographic-dividend","agenda-2063","ticad","focac","india-africa-forum-summit"]}
     ]}
@@ -235,7 +235,7 @@ ICA.addUnit({
    try:[
     {id:"e4u22-l2-x1", type:"match", q:"Match each concept to the scholar or scholars most associated with it.", pairs:[
       ["Juridical versus empirical statehood","Robert Jackson and Carl Rosberg","*World Politics* (1982), developed in Jackson’s *Quasi-States* (1990)."],
-      ["Decentralised despotism","Mahmood Mamdani","*Citizen and Subject* (1996)."],
+      ["Decentralized despotism","Mahmood Mamdani","*Citizen and Subject* (1996)."],
       ["The politics of the belly","Jean-François Bayart","*L’État en Afrique* (1989), English translation 1993."],
       ["Power over distance and low population density","Jeffrey Herbst","*States and Power in Africa* (2000)."],
       ["Neopatrimonialism as a catch-all label","Thandika Mkandawire’s critique","*World Politics* (2015)."]
@@ -381,7 +381,7 @@ ICA.addUnit({
       {t:"Consociational democracy", why:"That describes power-sharing among groups, the opposite of one person’s mandate."}
     ]},
     {id:"e4u22-l3-x4", type:"sort", q:"Sort each leader into the wave of populism scholars usually place them in.", buckets:["Classical (1930s–50s)","Neoliberal (1990s)","Radical left (from 1998)"], items:[
-      {t:"Juan Perón (Argentina)", b:0, why:"Mobilised urban workers from the 1940s."},
+      {t:"Juan Perón (Argentina)", b:0, why:"Mobilized urban workers from the 1940s."},
       {t:"Getúlio Vargas (Brazil)", b:0, why:"A classical populist of the 1930s–50s."},
       {t:"Alberto Fujimori (Peru)", b:1, why:"Combined personalist appeals with market reforms in the 1990s."},
       {t:"Carlos Menem (Argentina)", b:1, why:"A Peronist who carried out market reforms in the 1990s."},
@@ -471,7 +471,7 @@ ICA.addUnit({
       ]},
       "**As of November 2026** the ceasefire had not been formally ended, but it was fragile. The Associated Press reported in October 2026 that all hostages had been released. It reported that Israeli strikes had killed more than 1,400 Palestinians since the ceasefire began, according to Gaza’s Health Ministry. It reported that Hamas had agreed in July to disarm gradually, while Israel’s government said it would not withdraw until Hamas was completely disarmed. AP also reported that Israel controlled more than half of Gaza, and that the stabilization force announced in February had not deployed. AP added that a return to fighting could not be ruled out.",
       "On the final outcome, positions differ. The [[two-state-solution|two-state solution]] is the stated aim of the UN and most governments. By September 2025, 156 of 193 UN member states recognized the State of Palestine (Council on Foreign Relations). The United States, Germany, Italy and Japan were among those that did not. Israel’s government under Benjamin Netanyahu opposes a Palestinian state, citing security. After the October 2026 election it was in a caretaker role while coalition talks continued. The Palestinian Authority seeks a state on the 1967 lines with East Jerusalem as its capital.",
-      "[[diplomatic-normalisation|Normalisation]] between Israel and Arab states began with Egypt (1979) and Jordan (1994). The [[abraham-accords|Abraham Accords]] of September 2020 added the UAE and Bahrain, followed by Morocco and Sudan (which signed but has not established full diplomatic relations). Kazakhstan announced in November 2025 that it would join. But its signing ceremony had not taken place by late September 2026 ({{arab-israeli-normalisation}}). Supporters present normalization as a path to regional stability and prosperity. Critics, including Palestinian leaders, argue that it sidelines Palestinian statehood.",
+      "[[diplomatic-normalisation|Normalization]] between Israel and Arab states began with Egypt (1979) and Jordan (1994). The [[abraham-accords|Abraham Accords]] of September 2020 added the UAE and Bahrain, followed by Morocco and Sudan (which signed but has not established full diplomatic relations). Kazakhstan announced in November 2025 that it would join. But its signing ceremony had not taken place by late September 2026 ({{arab-israeli-normalisation}}). Supporters present normalization as a path to regional stability and prosperity. Critics, including Palestinian leaders, argue that it sidelines Palestinian statehood.",
       {warn:"Use each side’s terms with attribution (“what Palestinians call the Nakba”; “what Israel calls its War of Independence”). Give sources for figures, and avoid predicting outcomes."},
       {ex:"**Task.** Report the two most-cited death tolls of the war that began in October 2023, following the box above.\n\n1. **First I find and date the source of each number**, because here the source is part of the fact, and tolls rise. About 1,200 killed in Israel on 7 October 2023: Israeli authorities. More than 74,000 Palestinians killed by October 2026: Gaza’s Health Ministry, part of the Hamas-run government.\n2. **Then I add what each source says about its own figure.** Israeli authorities say most of the 1,200 were civilians. The ministry does not distinguish civilians from combatants, but says women and children are around half the dead.\n3. **Next I report how others judge the Gaza figure, without choosing for the reader.** The AP reports that UN agencies and independent experts see the ministry’s records as generally reliable. Israel’s government disputed them during the war; in January 2026 a senior military official reportedly called the total largely accurate, but the army said such reports were not official data. Israel’s military says it killed at least 22,000 fighters before the October 2025 ceasefire, without publishing a full count.\n4. **Finally I keep the wording neutral**: “killed”, not words that already judge legality, and no ranking of suffering.\n\n**Finished sentences:** “About 1,200 people, mostly civilians, were killed in Israel in the Hamas-led attack of 7 October 2023, according to Israeli authorities. By October 2026 Gaza’s Health Ministry reported more than 74,000 Palestinians killed. Its count does not separate civilians from combatants; UN agencies regard it as generally reliable (AP, October 2026), while Israel’s government has disputed it.”\n\n**Common mistake:** giving a casualty figure without its source and date, or presenting one side’s view of the figures as settled.", label:"Worked example: reporting contested figures"}
     ]},
@@ -548,7 +548,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e4u22-l5", title:"Putting it together: the map of international studies, and how to keep learning", minutes:55,
-   hook:{q:"The UN had 51 founding members in 1945 and has 193 today. From which region did the largest number of the new members come?", options:["Africa","Asia and the Pacific","Europe","Latin America and the Caribbean"], answer:0, reveal:"**Africa.** Only four African states (Egypt, Ethiopia, Liberia and South Africa) were among the founders; today all 54 African states are members. Decolonisation (Unit 1) remade the international system and changed who sits in global institutions (Units 9–13). It also shaped the development debates (Units 15–18) and the regional studies (Units 19–23) of this track. This final lesson draws those threads together and points to free ways to keep learning."},
+   hook:{q:"The UN had 51 founding members in 1945 and has 193 today. From which region did the largest number of the new members come?", options:["Africa","Asia and the Pacific","Europe","Latin America and the Caribbean"], answer:0, reveal:"**Africa.** Only four African states (Egypt, Ethiopia, Liberia and South Africa) were among the founders; today all 54 African states are members. Decolonization (Unit 1) remade the international system and changed who sits in global institutions (Units 9–13). It also shaped the development debates (Units 15–18) and the regional studies (Units 19–23) of this track. This final lesson draws those threads together and points to free ways to keep learning."},
    goals:[
      "Describe how the track’s foundations and its four clusters fit together as a field",
      "Use six cross-cutting debates to connect topics from different units",
@@ -898,7 +898,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Debates.** On Chinese finance, see Unit 16’s “debt-trap” debate ({{china-overseas-lending}}): Deborah Brautigam and others found little evidence of deliberate asset seizure, while critics point to opaque contracts and debt distress. On Japan, debates concern whether “quality infrastructure” and private investment match rhetoric. On India, whether lines of credit are delivered on time.",
-      "**African agency.** A growing literature argues that African governments set terms, bargain among partners and use the AU and regional bodies to negotiate collectively; others note large asymmetries of power. Analyse each relationship from both ends.",
+      "**African agency.** A growing literature argues that African governments set terms, bargain among partners and use the AU and regional bodies to negotiate collectively; others note large asymmetries of power. Analyze each relationship from both ends.",
       "**Comparison.** The three forums differ in institutional form (TICAD’s multilateral co-organizers; FOCAC’s bilateral-plus-continental format), in instruments and in rhetoric, which makes them a good inter-regional comparison.",
       {tip:"Use the declarations and action plans of each summit as primary sources, and check later implementation reports rather than headline pledges."}
      ]
@@ -1093,7 +1093,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Exceptionalism revisited.** Before 2011 some scholars spoke of “Arab exceptionalism” in democratization; the uprisings challenged that, and their aftermath was then read by some as confirming it. Comparative scholars warn against both readings and look at specific institutions: armies, parties, unions and external patrons.",
-      "**Internationalisation.** Gulf states, Iran, Türkiye, Russia, the US and European states backed different sides in Libya, Syria and Yemen, turning uprisings into regional proxy conflicts (Marc Lynch, *The New Arab Wars*, 2016).",
+      "**Internationalization.** Gulf states, Iran, Türkiye, Russia, the US and European states backed different sides in Libya, Syria and Yemen, turning uprisings into regional proxy conflicts (Marc Lynch, *The New Arab Wars*, 2016).",
       "**Second wave.** Sudan (2019) and Algeria (2019) showed movements learning from 2011 (for example, refusing to leave the streets after a leader fell); Iraq and Lebanon saw large protests against sectarian power-sharing.",
       {tip:"Avoid treating “the Arab Spring” as one event. Compare two or three cases with a clear design."}
      ]
@@ -1213,7 +1213,7 @@ ICA.addUnit({
    {id:"juridical-statehood", term:"Juridical statehood", def:"Statehood that rests on international legal recognition of sovereignty and borders, whatever the state’s actual control on the ground (Jackson & Rosberg, 1982).", codex:"african-statehood-debates"},
    {id:"empirical-statehood", term:"Empirical statehood", def:"Statehood as actual capacity: effective control of territory, a monopoly of force and the ability to govern and tax (Jackson & Rosberg, 1982).", codex:"african-statehood-debates"},
    {id:"neopatrimonialism", term:"Neopatrimonialism", def:"A system in which formal, legal-bureaucratic institutions coexist with personal rule and patronage networks, so that public office is used to reward followers. A widely used and widely criticized concept in African politics.", codex:"african-statehood-debates"},
-   {id:"decentralised-despotism", term:"Decentralised despotism", def:"Mahmood Mamdani’s term (1996) for colonial rule through “customary” chiefs in rural areas, alongside civil law for citizens in towns; he argued the resulting bifurcated state outlived independence.", codex:"mahmood-mamdani"},
+   {id:"decentralised-despotism", term:"Decentralized despotism", def:"Mahmood Mamdani’s term (1996) for colonial rule through “customary” chiefs in rural areas, alongside civil law for citizens in towns; he argued the resulting bifurcated state outlived independence.", codex:"mahmood-mamdani"},
    {id:"politics-of-the-belly", term:"Politics of the belly", def:"Jean-François Bayart’s phrase (from a Cameroonian expression) for politics organized around access to state resources, in *L’État en Afrique* (1989).", codex:"african-statehood-debates"},
    {id:"unconstitutional-change-of-government", term:"Unconstitutional change of government", def:"In African Union rules, a coup, mercenary intervention, armed seizure of power or refusal to hand over power after free and fair elections, or the manipulation of constitutions to stay in office. It leads to suspension.", codex:"african-peace-security-architecture"},
    {id:"alliance-of-sahel-states", term:"Alliance of Sahel States (AES)", def:"An alliance formed in 2023 by the military governments of Mali, Burkina Faso and Niger, which became a confederation in July 2024; the three left ECOWAS in January 2025.", codex:"african-peace-security-architecture"},
@@ -1250,7 +1250,7 @@ ICA.addUnit({
    {id:"nakba", term:"Nakba", def:"Arabic for “catastrophe”: the Palestinian name for the mass displacement and dispossession of Palestinians in the 1947–49 war. The UN says more than half of the Palestinian population was permanently displaced.", codex:"israeli-palestinian-conflict"},
    {id:"oslo-accords", term:"Oslo Accords", def:"Agreements between Israel and the PLO (1993 and 1995) that brought mutual recognition and created the Palestinian Authority, leaving final-status issues for later negotiation.", codex:"israeli-palestinian-conflict"},
    {id:"two-state-solution", term:"Two-state solution", def:"The proposal for an independent State of Palestine alongside Israel, the stated aim of the UN and most governments; Israel’s government (as of November 2026) opposes a Palestinian state.", codex:"israeli-palestinian-conflict"},
-   {id:"diplomatic-normalisation", term:"Normalisation (diplomatic)", def:"Establishing full, regular diplomatic and economic relations between states that previously had none, as between Israel and several Arab states.", codex:"arab-israeli-normalisation"},
+   {id:"diplomatic-normalisation", term:"Normalization (diplomatic)", def:"Establishing full, regular diplomatic and economic relations between states that previously had none, as between Israel and several Arab states.", codex:"arab-israeli-normalisation"},
    {id:"abraham-accords", term:"Abraham Accords", def:"US-brokered agreements from September 2020 under which the UAE and Bahrain, then Morocco and Sudan, agreed to normalize relations with Israel; Kazakhstan announced in November 2025 that it would join.", codex:"arab-israeli-normalisation"},
    {id:"chokepoint", term:"Chokepoint", def:"A narrow passage on a major trade route, such as the Strait of Hormuz, Bab el-Mandeb or the Strait of Malacca. Disruption there can affect a large share of world trade.", codex:"gulf-states-rising"}
   ],
@@ -1299,7 +1299,7 @@ ICA.addUnit({
    {id:"e4u22-q09", lesson:"e4u22-l1", level:3, q:"Priya’s draft on Senegal mentions only donors, foreign peacekeepers and international NGOs as actors. What is the best advice?", options:[
      {t:"Add what Senegalese actors decided and why, from local sources", ok:true, why:"Right: add what Senegalese governments, movements and businesses decided and why. It fixes the “outsiders as the only actors” trap."},
      {t:"Remove all mention of donors", why:"Donors matter; the problem is that local actors are missing."},
-     {t:"Generalise the findings to all of West Africa", why:"That adds a single-story problem."},
+     {t:"Generalize the findings to all of West Africa", why:"That adds a single-story problem."},
      {t:"Switch to a purely statistical study so the actors do not matter", why:"Methods do not remove the need to identify actors."}]},
 
    /* ---- Lesson 2 ---- */
@@ -1473,7 +1473,7 @@ ICA.addUnit({
      {t:"Dependency theory", ok:true, why:"Right: dependency theory and structuralist economics (Prebisch, ECLA/CEPAL, Cardoso and Faletto)."},
      {t:"Rentier state theory", why:"That came mainly from research on Iran and the Arab Gulf."},
      {t:"Juridical statehood", why:"That came from research on African states."},
-     {t:"Securitisation theory", why:"That came from the Copenhagen School in Europe."}]},
+     {t:"Securitization theory", why:"That came from the Copenhagen School in Europe."}]},
    {id:"e4u22-q43", lesson:"e4u22-l5", level:3, q:"A classmate says: “Neutral writing means I shouldn’t have any view.” What is the best reply?", options:[
      {t:"Neutrality means attributing positions fairly; you can still argue", ok:true, why:"Right: represent each position fairly and attribute it; you can still argue your own view with evidence. Seminar writing combines fair description with a supported argument."},
      {t:"Neutral writing means always splitting the difference between the sides", why:"Evidence may support one side more; neutrality is about fairness, not false balance."},
@@ -1485,7 +1485,7 @@ ICA.addUnit({
      {t:"The CPTPP", why:"A trade agreement."},
      {t:"The Global Studies Quarterly", why:"A journal of research articles."}]},
    {id:"e4u22-q45", lesson:"e4u22-l5", level:2, q:"Why did the UN’s membership grow from 51 in 1945 to 193 today, with Africa supplying the most new members?", options:[
-     {t:"Decolonisation created many new states, and only four African states were founding members", ok:true, why:"Right: Egypt, Ethiopia, Liberia and South Africa were founders; today all 54 African states are members."},
+     {t:"Decolonization created many new states, and only four African states were founding members", ok:true, why:"Right: Egypt, Ethiopia, Liberia and South Africa were founders; today all 54 African states are members."},
      {t:"African states were expelled in 1945 and readmitted later", why:"No such expulsion happened."},
      {t:"The UN merged with the African Union", why:"They are separate organizations."},
      {t:"Membership rules required every country to have a population over 50 million", why:"There is no such rule."}]}

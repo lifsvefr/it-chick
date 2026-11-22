@@ -2628,7 +2628,7 @@ ICA.addUnit({
     "Use ～っぽい for “-ish”, “like” and “easily”, and know that it is mostly casual",
     "Use ～がち for things that tend to happen (usually unwelcome), and ～[気味]{ぎみ} for “a touch of”",
     "Choose between words like [忘]{わす}れっぽい, [忘]{わす}れがち and [疲]{つか}れ[気味]{ぎみ}",
-    "Recognise and use keigo in shops, on the phone, with visitors and in announcements",
+    "Recognize and use keigo in shops, on the phone, with visitors and in announcements",
     "Make requests at several levels of politeness, from ～てください to お～いただけないでしょうか"
    ],
    learn: [
@@ -2672,7 +2672,7 @@ ICA.addUnit({
        label: "～っぽい"
       },
       "Note the reading [怒]{おこ}りっぽい, from [怒]{おこ}る (get angry).",
-      "**～っぽい is mostly casual.** It belongs to everyday speech. A few っぽい words are ordinary vocabulary in any style (白っぽい服, “whitish clothes”, even appears in news reports), but in formal speech and writing choose another word for most of them: [風邪]{かぜ}[気味]{ぎみ} rather than [風邪]{かぜ}っぽい. In very casual speech, especially among younger speakers, it can even follow a whole sentence: [彼]{かれ}、[来]{こ}ないっぽい (looks like he isn’t coming). Recognise this, but don’t use it in polite speech.",
+      "**～っぽい is mostly casual.** It belongs to everyday speech. A few っぽい words are ordinary vocabulary in any style (白っぽい服, “whitish clothes”, even appears in news reports), but in formal speech and writing choose another word for most of them: [風邪]{かぜ}[気味]{ぎみ} rather than [風邪]{かぜ}っぽい. In very casual speech, especially among younger speakers, it can even follow a whole sentence: [彼]{かれ}、[来]{こ}ないっぽい (looks like he isn’t coming). Recognize this, but don’t use it in polite speech.",
       {
        tip: "子どもっぽい (childish) criticizes an adult; 子どもらしい (just as a child should be) praises a child. That らしい is the “typical of” use from Unit 7 ([[rashii]])."
       }

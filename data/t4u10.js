@@ -856,7 +856,7 @@ ICA.addUnit({
    {id:"t4u10-cp07", lesson:"t4u10-l4", level:2, q:"In Noor’s qualitative paper, Reviewer 1 asks her to remove all participant quotes “to save space”. The quotes are the main evidence for her themes. What should her response letter do?", options:[
      {t:"Skip that comment and answer the others", why:"A response letter answers every comment, point by point, even ones the author disagrees with."},
      {t:"Remove the quotes quietly to keep the reviewer happy", why:"She is still the author. She doesn’t have to accept a change that would remove her evidence."},
-     {t:"Point out that the reviewer clearly doesn’t understand qualitative research", why:"Responses should be polite and specific, not defensive. Criticising the reviewer won’t persuade the editor."},
+     {t:"Point out that the reviewer clearly doesn’t understand qualitative research", why:"Responses should be polite and specific, not defensive. Criticizing the reviewer won’t persuade the editor."},
      {t:"Thank the reviewer and explain, politely, why the quotes are needed", ok:true, why:"Authors may disagree, with reasons. A polite, well-argued reply, plus any compromise (such as shortening some quotes), is what editors accept."}]},
    {id:"t4u10-cp08", lesson:"t4u10-l5", level:2, q:"Diego is doing a PhD in the UK. He finds a long blog post about preparing for a public defense “where the result is already decided”. How useful is it for him?", options:[
      {t:"Very useful: doctoral exams work the same way everywhere", why:"Examination differs strikingly between systems. Advice must be checked against the system it was written for."},
@@ -988,7 +988,7 @@ ICA.addUnit({
       "Where to hedge:",
       {list:[
         "**Interpretations and explanations** (why something happened), rather than descriptions of what you observed.",
-        "**Generalisations** beyond your sample, setting or time.",
+        "**Generalizations** beyond your sample, setting or time.",
         "**Causal claims** from non-experimental designs (“was associated with” rather than “caused”).",
         "**Implications and recommendations**, especially for policy."
       ]},
@@ -1202,7 +1202,7 @@ ICA.addUnit({
       "Your ORCID record can list your education, jobs, publications and funding, and you decide what is public."
      ],
      builder:[
-      "**What it does**: your ORCID record can list your education, employment, publications, peer review and funding. Organisations you authorize (publishers, funders, universities) can add trusted information to it, so you “enter once, reuse often”, as ORCID puts it.",
+      "**What it does**: your ORCID record can list your education, employment, publications, peer review and funding. Organizations you authorize (publishers, funders, universities) can add trusted information to it, so you “enter once, reuse often”, as ORCID puts it.",
       "**Privacy**: you set visibility for each item: everyone, trusted parties, or only you. ORCID’s support pages note that most information is public by default, while email addresses are private by default, so check your settings.",
       "**Keeping access**: add more than one email address (personal as well as work), so you can still sign in after you change jobs.",
       "**Who uses it**: many publishers, funders and universities ask for ORCID iDs during submission, grant applications and staff profiles. ORCID members can read from or write to your record with your permission.",
@@ -1325,7 +1325,7 @@ ICA.addUnit({
         "**Practice** with a mock viva or practice defense.",
         "**Check the rules** on who may attend, how long it lasts, and the timeline for corrections."
       ]},
-      "Terminology traps: “defence” (UK spelling) and “defense” (US), “viva voce” shortened to viva, “corrections” or “amendments”, “committee” or “jury”. Programmes taught in English in non-English-speaking countries may use either set of terms. Your regulations are the authority.",
+      "Terminology traps: “defence” (UK spelling) and “defense” (US), “viva voce” shortened to viva, “corrections” or “amendments”, “committee” or “jury”. Programs taught in English in non-English-speaking countries may use either set of terms. Your regulations are the authority.",
       "After examination, corrections are usually checked by one or more examiners before the degree is awarded, and the final thesis is often deposited in the university’s repository, sometimes openly online. Check any embargo options if you plan to publish chapters as papers or have sensitive data.",
       "Nerves are normal. Examiners generally want to see that you understand your work and its limits, not to trip you up; it is fine to pause, ask for a question to be repeated, or say what you would need to find out."
      ]},

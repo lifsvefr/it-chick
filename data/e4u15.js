@@ -6,7 +6,7 @@ ICA.addUnit({
     "Explain how IPE studies power in the world economy, using Strange’s structural power, the three traditions and the hegemonic stability debate",
     "Explain comparative advantage and its winners and losers with a worked example, and describe the trade regime from GATT to the WTO’s present crisis, regional agreements and the tariff shifts of 2025–2026",
     "Describe how the international monetary system has worked since Bretton Woods, the dollar’s role and the de-dollarization debate, the IMF’s lending and the lessons of major financial crises",
-    "Analyse global value chains and the turn to economic security, export controls, sanctions and critical minerals, giving each side’s argument and evidence",
+    "Analyze global value chains and the turn to economic security, export controls, sanctions and critical minerals, giving each side’s argument and evidence",
     "Explain how sovereign debt crises are handled today, how development banks are being reformed, what the evidence says about China’s lending, and what the 2025 Seville conference agreed",
     "Use the unit’s vocabulary and key works to argue an IPE question in a seminar, with evidence and a counter-argument"
   ],
@@ -193,7 +193,7 @@ ICA.addUnit({
       {table:[
         ["","Altavia (lamps, coffee)","Bremo (lamps, coffee)"],
         ["No trade: half their days on each","300, 150","50, 100"],
-        ["Specialise: Altavia 80 days on lamps; Bremo all coffee","480, 60","0, 200"],
+        ["Specialize: Altavia 80 days on lamps; Bremo all coffee","480, 60","0, 200"],
         ["Trade 95 sacks for 95 lamps","385, 155","95, 105"]
       ]},
       "World output rises from 350 lamps and 250 sacks to 480 and 260, and after trade **both** countries have more of **both** goods. Any price between half a sack and 2 sacks per lamp leaves both better off; where it settles is a matter of bargaining power. Unit 14 sets out the same reasoning with supply and demand ({{gains-from-trade}}) and shows what a tariff or quota does to prices, winners and losers ({{tariffs-and-quotas}}).",
@@ -1349,7 +1349,7 @@ ICA.addUnit({
    {id:"friend-shoring", term:"Friend-shoring", def:"Moving supply chains to countries seen as trusted partners; a term used by US Treasury Secretary Janet Yellen in April 2022.", codex:"geoeconomics"},
    {id:"de-risking", term:"De-risking", def:"Reducing specific economic dependencies on a rival without cutting economic ties as a whole, as opposed to “decoupling”; adopted by the G7 in 2023.", codex:"geoeconomics"},
    {id:"economic-security", term:"Economic security", def:"Treating supply chains, technology, finance and critical inputs as matters of national security, protected by law and policy.", codex:"geoeconomics"},
-   {id:"weaponised-interdependence", term:"Weaponised interdependence", def:"Farrell and Newman’s (2019) argument that states controlling hubs of global networks can monitor others (panopticon effect) and cut them off (chokepoint effect).", codex:"geoeconomics"},
+   {id:"weaponised-interdependence", term:"Weaponized interdependence", def:"Farrell and Newman’s (2019) argument that states controlling hubs of global networks can monitor others (panopticon effect) and cut them off (chokepoint effect).", codex:"geoeconomics"},
    {id:"export-controls", term:"Export controls", def:"Government rules restricting the export of specific goods, technologies or materials, often for security reasons.", codex:"geoeconomics"},
    {id:"secondary-sanctions", term:"Secondary sanctions", def:"Penalties on third-country firms or banks that deal with a sanctioned target, extending sanctions beyond the sanctioning state’s own jurisdiction.", codex:"geoeconomics"},
    {id:"critical-minerals", term:"Critical minerals", def:"Minerals essential to key technologies, such as batteries and electronics, whose supply is at risk of disruption; for example lithium, cobalt, nickel, graphite and rare earths.", codex:"geoeconomics"},

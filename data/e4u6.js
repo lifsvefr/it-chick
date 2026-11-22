@@ -157,7 +157,7 @@ ICA.addUnit({
      "Compare modernist, ethno-symbolist and perennialist answers to the question “when is a nation?”",
      "Explain Gellner, Anderson, Hobsbawm and Ranger, and Smith accurately, with the main critique of each",
      "Spot banal and everyday nationalism in ordinary life, and assess the civic/ethnic distinction",
-     "Analyse anti-colonial, developmental and online nationalism with cases from Asia and elsewhere"
+     "Analyze anti-colonial, developmental and online nationalism with cases from Asia and elsewhere"
    ],
    learn:[
     {h:"The nation puzzle", body:[
@@ -280,7 +280,7 @@ ICA.addUnit({
      "Explain race and racialization as social processes with international effects",
      "Describe how scholars argue race shaped the international order and the discipline of IR",
      "Trace the international anti-racism regime from the UN Charter to ICERD, CERD and the Durban process",
-     "Summarise the debates inside the field about how central race is, without taking sides"
+     "Summarize the debates inside the field about how central race is, without taking sides"
    ],
    learn:[
     {h:"The color line goes global", body:[
@@ -300,7 +300,7 @@ ICA.addUnit({
       {tip:"In a seminar, keep two questions apart: how racial hierarchy shaped the order, and how each state also built hierarchies of its own."}
     ]},
     {h:"Building an anti-racism regime", body:[
-      "After 1945 the language changed. The UN Charter (Article 1) made respect for human rights “without distinction as to race, sex, language, or religion” one of the UN’s purposes. The Universal Declaration of 1948 repeated it. UNESCO’s 1950 statement *The Race Question* drew on scientists to reject the idea of biologically ranked races. The 1955 Bandung Conference condemned racial segregation and discrimination. Decolonisation brought many new African and Asian members into the General Assembly ({{decolonization}}).",
+      "After 1945 the language changed. The UN Charter (Article 1) made respect for human rights “without distinction as to race, sex, language, or religion” one of the UN’s purposes. The Universal Declaration of 1948 repeated it. UNESCO’s 1950 statement *The Race Question* drew on scientists to reject the idea of biologically ranked races. The 1955 Bandung Conference condemned racial segregation and discrimination. Decolonization brought many new African and Asian members into the General Assembly ({{decolonization}}).",
       {fig:'<svg viewBox="0 0 340 420"><path class="d-ink" d="M60 20 L60 404" stroke-width="2" fill="none"/><circle class="d-inkf" cx="60" cy="30" r="5"/><text x="74" y="35">1900 Pan-African Conference</text><circle class="d-inkf" cx="60" cy="72" r="5"/><text x="74" y="77">1919 equality clause rejected</text><circle class="d-inkf" cx="60" cy="114" r="5"/><text x="74" y="119">1945 UN Charter, Article 1</text><circle class="d-inkf" cx="60" cy="156" r="5"/><text x="74" y="161">1955 Bandung Conference</text><circle class="d-inkf" cx="60" cy="198" r="5"/><text x="74" y="203">1960 Sharpeville killings</text><rect class="d-lup" x="70" y="222" width="262" height="44" rx="8" stroke-width="2"/><text x="80" y="241">1965 ICERD adopted</text><text class="s" x="80" y="258">in force 1969; CERD monitors it</text><circle class="d-inkf" cx="60" cy="244" r="5"/><circle class="d-inkf" cx="60" cy="290" r="5"/><text x="74" y="295">1973 Apartheid Convention</text><circle class="d-inkf" cx="60" cy="332" r="5"/><text x="74" y="337">2001 Durban World Conference</text><circle class="d-inkf" cx="60" cy="374" r="5"/><text x="74" y="379">2015–24, 2025–34 Decades</text><text class="s" x="74" y="396">for People of African Descent</text><text class="s" x="22" y="30" text-anchor="middle">old</text><text class="s" x="22" y="404" text-anchor="middle">new</text></svg>', alt:"A vertical timeline: 1900 Pan-African Conference; 1919 racial equality clause rejected; 1945 UN Charter Article 1; 1955 Bandung Conference; 1960 Sharpeville killings; 1965 ICERD adopted, highlighted, in force 1969 and monitored by CERD; 1973 Apartheid Convention; 2001 Durban World Conference; 2015–2024 and 2025–2034 International Decades for People of African Descent.", cap:"From the color line to an international anti-racism regime."},
       "On 21 March 1960 South African police killed 69 people protesting against pass laws at Sharpeville. The UN later made 21 March the International Day for the Elimination of Racial Discrimination. On 21 December 1965 the General Assembly adopted the [[icerd|International Convention on the Elimination of All Forms of Racial Discrimination]] (ICERD), the first of the core UN human rights treaties. It entered into force on 4 January 1969 and has more than 180 states parties.",
       {list:[
@@ -331,8 +331,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u6-l3-x1", type:"mcq", q:"A newspaper describes people of one religion as if they shared fixed physical and moral traits. Which concept describes this?", options:[
-      {t:"Racialisation", ok:true, why:"Right. Treating a religious group as if it were a biological race is a classic case of attaching racial meaning."},
-      {t:"Secularisation", why:"Secularisation is about the changing place of religion in society, not about racial meanings."},
+      {t:"Racialization", ok:true, why:"Right. Treating a religious group as if it were a biological race is a classic case of attaching racial meaning."},
+      {t:"Secularization", why:"Secularization is about the changing place of religion in society, not about racial meanings."},
       {t:"Banal nationalism", why:"Banal nationalism is the quiet flagging of the nation."},
       {t:"Consociationalism", why:"That is a model of power-sharing between groups."}
     ]},
@@ -421,7 +421,7 @@ ICA.addUnit({
         "**Inequality between groups matters.** Frances Stewart’s research (*Horizontal Inequalities and Conflict*, 2008) looked at [[horizontal-inequality|horizontal inequalities]]: gaps between culturally defined groups in wealth, jobs, education or political power. She showed that these raise the risk of conflict more than inequality between individuals.",
         "**Civic ties can protect.** Ashutosh Varshney (*Ethnic Conflict and Civic Life: Hindus and Muslims in India*, 2002) compared Indian cities. He found that cities with strong associations linking members of both communities, such as business groups and trade unions, saw far less riot violence."
       ]},
-      {fig:'<svg viewBox="0 0 340 400"><rect class="d-panel" x="20" y="8" width="300" height="50" rx="8" stroke-width="1.5"/><text x="170" y="30" text-anchor="middle">Ethnic diversity</text><text class="s" x="170" y="47" text-anchor="middle">common, and usually peaceful</text><path class="d-ink" d="M170 58 L170 80" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-gold" x="20" y="84" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="106" text-anchor="middle">Grievance</text><text class="s" x="170" y="126" text-anchor="middle">exclusion, horizontal inequality</text><path class="d-ink" d="M170 140 L170 162" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-gold" x="20" y="166" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="188" text-anchor="middle">Mobilisation</text><text class="s" x="170" y="208" text-anchor="middle">elites, outbidding, fear</text><path class="d-ink" d="M170 222 L170 244" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-gold" x="20" y="248" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="270" text-anchor="middle">Opportunity</text><text class="s" x="170" y="290" text-anchor="middle">weak state, collapse, terrain</text><path class="d-ink" d="M170 304 L170 326" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-rose" x="20" y="330" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="352" text-anchor="middle">Violence</text><text class="s" x="170" y="372" text-anchor="middle">civic ties can break the chain</text><defs><marker id="ar6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs></svg>', alt:"A vertical chain of boxes linked by arrows. Ethnic diversity, common and usually peaceful, leads to grievance (exclusion, horizontal inequality), then mobilization (elites, outbidding, fear), then opportunity (weak state, collapse, terrain), then violence. A note says civic ties can break the chain.", cap:"Diversity is not a cause on its own. Researchers look for the links that turn difference into violence."},
+      {fig:'<svg viewBox="0 0 340 400"><rect class="d-panel" x="20" y="8" width="300" height="50" rx="8" stroke-width="1.5"/><text x="170" y="30" text-anchor="middle">Ethnic diversity</text><text class="s" x="170" y="47" text-anchor="middle">common, and usually peaceful</text><path class="d-ink" d="M170 58 L170 80" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-gold" x="20" y="84" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="106" text-anchor="middle">Grievance</text><text class="s" x="170" y="126" text-anchor="middle">exclusion, horizontal inequality</text><path class="d-ink" d="M170 140 L170 162" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-gold" x="20" y="166" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="188" text-anchor="middle">Mobilization</text><text class="s" x="170" y="208" text-anchor="middle">elites, outbidding, fear</text><path class="d-ink" d="M170 222 L170 244" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-gold" x="20" y="248" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="270" text-anchor="middle">Opportunity</text><text class="s" x="170" y="290" text-anchor="middle">weak state, collapse, terrain</text><path class="d-ink" d="M170 304 L170 326" stroke-width="2" marker-end="url(#ar6)"/><rect class="d-rose" x="20" y="330" width="300" height="56" rx="8" stroke-width="2"/><text x="170" y="352" text-anchor="middle">Violence</text><text class="s" x="170" y="372" text-anchor="middle">civic ties can break the chain</text><defs><marker id="ar6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs></svg>', alt:"A vertical chain of boxes linked by arrows. Ethnic diversity, common and usually peaceful, leads to grievance (exclusion, horizontal inequality), then mobilization (elites, outbidding, fear), then opportunity (weak state, collapse, terrain), then violence. A note says civic ties can break the chain.", cap:"Diversity is not a cause on its own. Researchers look for the links that turn difference into violence."},
       {key:"Difference is everywhere; violence is not. The useful question is what turns one into the other."}
     ]},
     {h:"Mechanisms: fear, outbidding and elites", body:[
@@ -449,7 +449,7 @@ ICA.addUnit({
       {list:[
         "**Shared languages:** Tanzania promoted Swahili after independence as a national language belonging to no single ethnic group, like Indonesian (Lesson 2).",
         "**Revival:** New Zealand’s Māori Language Act 1987 made te reo Māori an official language.",
-        "**Colonial languages:** the Kenyan writer Ngũgĩ wa Thiong’o (*Decolonising the Mind*, 1986) argued that writing in English kept African minds colonized, and turned to writing in Gĩkũyũ. Others defend English or French as neutral bridges between many groups.",
+        "**Colonial languages:** the Kenyan writer Ngũgĩ wa Thiong’o (*Decolonizing the Mind*, 1986) argued that writing in English kept African minds colonized, and turned to writing in Gĩkũyũ. Others defend English or French as neutral bridges between many groups.",
         "**Global action:** the UN declared 2022–2032 the International Decade of Indigenous Languages."
       ]},
       "[[language-policy|Language policy]], the choice of official, school and administrative languages, distributes jobs, status and belonging. That is why it is so often contested."
@@ -468,7 +468,7 @@ ICA.addUnit({
    try:[
     {id:"e4u6-l4-x1", type:"sort", q:"Which approach to ethnicity does each claim reflect?", buckets:["Primordialist","Instrumentalist","Constructivist"], items:[
       {t:"People feel ethnic ties as deep and given, like family bonds.", b:0, why:"The emphasis on felt, given attachment is primordialist (in Geertz’s sense)."},
-      {t:"A politician stresses ethnic identity to win votes and control jobs.", b:1, why:"Mobilising identity for power or resources is instrumentalist."},
+      {t:"A politician stresses ethnic identity to win votes and control jobs.", b:1, why:"Mobilizing identity for power or resources is instrumentalist."},
       {t:"The boundary between two groups is kept up even as people and customs cross it.", b:2, why:"That is Barth’s boundary argument."},
       {t:"A colonial census created a category that later became a political identity.", b:2, why:"Categories being made and changed is constructivist."},
       {t:"Rival groups compete for state contracts by organizing along ethnic lines.", b:1, why:"Ethnicity as a tool for resources is instrumentalist."}
@@ -512,7 +512,7 @@ ICA.addUnit({
     {id:"e4u6-l4-x7", type:"order", q:"Put these language-politics events in order, earliest first.", items:[
       {t:"Police fire on language protesters in Dhaka", why:"21 February 1952."},
       {t:"Sri Lanka passes the Official Language Act", why:"1956."},
-      {t:"Ngũgĩ wa Thiong’o publishes *Decolonising the Mind*", why:"1986."},
+      {t:"Ngũgĩ wa Thiong’o publishes *Decolonizing the Mind*", why:"1986."},
       {t:"The Māori Language Act makes te reo Māori official", why:"1987."},
       {t:"UNESCO proclaims International Mother Language Day", why:"1999, observed from 2000."}
     ]},
@@ -547,7 +547,7 @@ ICA.addUnit({
       "Three influential responses to these patterns:",
       {list:[
         "**[[existential-security|Existential security]]:** Pippa Norris and Ronald Inglehart (*Sacred and Secular*, 2004) argued that religiosity declines where life is safer and more predictable. In their view, the world as a whole is not becoming less religious, because poorer, less secure societies are growing faster.",
-        "**[[deprivatization|Deprivatisation]]:** José Casanova (*Public Religions in the Modern World*, 1994) showed religions re-entering public life. His cases ran from Catholic support for democratization in Poland and Latin America to evangelical activism in the US. He also separated the parts of the thesis: differentiation may hold even where decline does not.",
+        "**[[deprivatization|Deprivatization]]:** José Casanova (*Public Religions in the Modern World*, 1994) showed religions re-entering public life. His cases ran from Catholic support for democratization in Poland and Latin America to evangelical activism in the US. He also separated the parts of the thesis: differentiation may hold even where decline does not.",
         "**[[multiple-modernities|Multiple modernities]]:** S. N. Eisenstadt (*Daedalus*, 2000) argued that modernity takes many cultural forms, not one Western path. So, in his view, modernizing societies need not secularize in the same way."
       ]},
       "Jürgen Habermas later spoke of a [[post-secular]] society (for example in “Notes on Post-Secular Society”, 2008). In such a society, he argued, secular citizens must accept that religion will persist and engage with religious voices in public debate."
@@ -578,7 +578,7 @@ ICA.addUnit({
     {h:"Huntington’s clash: the argument in full", body:[
       "A one-line reminder from Unit 1: Samuel Huntington ({{samuel-huntington}}) set out his thesis in “The Clash of Civilizations?” (*Foreign Affairs*, 1993) and a 1996 book. He argued that the main conflicts after the Cold War would run between civilizations ([[clash-of-civilizations]]). In a seminar you will need the argument in full.",
       {list:[
-        "**Civilisations** are the broadest cultural groupings, defined above all by religion. The 1993 article listed Western, Confucian, Japanese, Islamic, Hindu, Slavic-Orthodox, Latin American and “possibly” African. The 1996 book renamed Confucian as **Sinic**.",
+        "**Civilizations** are the broadest cultural groupings, defined above all by religion. The 1993 article listed Western, Confucian, Japanese, Islamic, Hindu, Slavic-Orthodox, Latin American and “possibly” African. The 1996 book renamed Confucian as **Sinic**.",
         "**[[fault-line-conflict|Fault-line conflicts]]** occur between neighboring groups from different civilizations. **Kin-country rallying** draws in states from the same civilization.",
         "**Torn countries**, such as Turkey, Mexico and Russia in his account, have leaders who want to join another civilization while much of the public does not.",
         "His central policy advice was that the West should strengthen its own unity and avoid intervening in other civilizations, not wage a crusade. He called Western universalism “false”, “immoral” and “dangerous”."
@@ -617,7 +617,7 @@ ICA.addUnit({
     ]},
     {id:"e4u6-l5-x4", type:"mcq", q:"A government funds the training of clergy from other countries and hosts international religious forums to improve its image. Which concept fits best?", options:[
       {t:"Religious soft power", ok:true, why:"Right. Using religion to attract and influence abroad is a form of soft power."},
-      {t:"Deprivatisation", why:"That is about religion entering public life, not a state strategy abroad."},
+      {t:"Deprivatization", why:"That is about religion entering public life, not a state strategy abroad."},
       {t:"Fault-line conflict", why:"That is Huntington’s term for wars between neighboring civilizations."},
       {t:"Ethnic outbidding", why:"That is about parties competing for one group’s votes."}
     ]},
@@ -720,7 +720,7 @@ ICA.addUnit({
      {t:"Hurd’s point that secularism is itself a political settlement, not a neutral one", why:"Hurd’s critique is about secularism, not about treating civilizations as units."},
      {t:"Huntington’s own point that Western universalism is dangerous for the West", why:"That is Huntington’s own policy advice, not a critique of treating civilizations as units."},
      {t:"Said: civilizations are not sealed blocks; Sen: sorting people by civilization is “solitarist”", ok:true, why:"Right. This combines Lesson 5 and Lesson 1: even a dialogue frame can treat civilizations as solid units, which Said and Sen both reject."},
-     {t:"Casanova’s point that religions have re-entered public life in many countries", why:"Deprivatisation describes religion’s public role. It doesn’t criticize treating civilizations as units."}]},
+     {t:"Casanova’s point that religions have re-entered public life in many countries", why:"Deprivatization describes religion’s public role. It doesn’t criticize treating civilizations as units."}]},
   ],
   codex:[
    {id:"identity-and-difference", title:"Identity and difference in world politics", aka:["Self and Other","Identity in IR"], tags:["international relations","identity","constructivism"], summary:"How identities of groups and states are made through difference, and why they shape what actors want and fear.",
@@ -782,7 +782,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Key works.** “Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics” (*University of Chicago Legal Forum*, 1989); “Mapping the Margins: Intersectionality, Identity Politics, and Violence against Women of Color” (*Stanford Law Review*, 1991); co-editor of *Critical Race Theory: The Key Writings That Formed the Movement* (1995).",
-      "**Organisations and campaigns.** She co-founded the African American Policy Forum (1996), a think tank, and led campaigns such as #SayHerName on police violence against Black women.",
+      "**Organizations and campaigns.** She co-founded the African American Policy Forum (1996), a think tank, and led campaigns such as #SayHerName on police violence against Black women.",
       "**International work.** She worked with NGOs to bring gender into the 2001 UN World Conference against Racism in Durban, and served as rapporteur for an expert group on gender and race discrimination for that conference.",
       "**Her talk.** “The urgency of intersectionality” (TEDWomen, 2016) is a free, clear introduction in her own words."
      ],
@@ -995,7 +995,7 @@ ICA.addUnit({
       "**Japan.** A unanimous Diet resolution (6 June 2008) urged recognition of the Ainu as an indigenous people; the 2019 Ainu Policy Promotion Act, in force on 24 May 2019, was the first law to do so."
      ],
      pro:[
-      "**Language politics.** The Dhaka language movement (21 February 1952), now marked as International Mother Language Day (proclaimed by UNESCO in 1999); Sri Lanka’s Official Language Act (1956), with Tamil made official in 1987; India’s linguistic states (1956); Swahili in Tanzania; the Māori Language Act 1987; Ngũgĩ wa Thiong’o’s *Decolonising the Mind* (1986); the UN International Decade of Indigenous Languages (2022–2032).",
+      "**Language politics.** The Dhaka language movement (21 February 1952), now marked as International Mother Language Day (proclaimed by UNESCO in 1999); Sri Lanka’s Official Language Act (1956), with Tamil made official in 1987; India’s linguistic states (1956); Swahili in Tanzania; the Māori Language Act 1987; Ngũgĩ wa Thiong’o’s *Decolonizing the Mind* (1986); the UN International Decade of Indigenous Languages (2022–2032).",
       "**Debates.** Group rights versus individual rights (liberal theorists such as Will Kymlicka defend some group-differentiated rights; critics worry about pressure on individuals inside groups). Self-determination for indigenous peoples is usually understood as internal (autonomy, consent) rather than secession, but states and indigenous organizations interpret it differently. FPIC is contested in practice: is it a right to be consulted or a right to say no?",
       "**Research.** Indigenous scholars stress research ethics and data sovereignty (see [[indigenous-data-sovereignty]]); work with communities, not only about them."
      ]},
@@ -1004,7 +1004,7 @@ ICA.addUnit({
     sources:[{t:"UN General Assembly resolution 47/135 (1992): Minorities Declaration", url:"https://un-documents.net/a47r135.htm"},{t:"UN DESA: Adoption of the UN Declaration on the Rights of Indigenous Peoples, 13 years later", url:"https://www.un.org/development/desa/indigenouspeoples/news/2020/09/undrip13/"},{t:"Foreign Press Center Japan: Overview of the Ainu Policy Promotion Act of 2019", url:"https://fpcj.jp/wp/wp-content/uploads/2019/11/b8102b519c7b7c4a4e129763f23ed690.pdf"}],
     checked:"2026-11"},
 
-   {id:"religion-in-world-politics", title:"Religion in world politics", aka:["Return of religion","Secularism in IR"], tags:["international relations","religion","secularism"], summary:"Secularisation and its critics, the “return of religion” in IR, models of secularism, and religion as actor and soft power.",
+   {id:"religion-in-world-politics", title:"Religion in world politics", aka:["Return of religion","Secularism in IR"], tags:["international relations","religion","secularism"], summary:"Secularization and its critics, the “return of religion” in IR, models of secularism, and religion as actor and soft power.",
     levels:{
      starter:[
       "Many 20th-century thinkers expected religion to fade as countries grew richer and more modern. It has faded in some places and grown in others. About three-quarters of the world’s people still had a religious affiliation in 2020, according to a large 2025 study by the Pew Research Center.",
@@ -1063,7 +1063,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Key works.** *The Soldier and the State* (1957), on civil–military relations; *Political Order in Changing Societies* (1968), arguing that rapid social mobilization without strong institutions brings instability; *The Third Wave* (1991), on democratization since 1974; “The Clash of Civilizations?” (*Foreign Affairs*, 1993) and *The Clash of Civilizations and the Remaking of World Order* (1996); *Who Are We?* (2004), on US national identity.",
-      "**The clash thesis in brief.** Civilisations defined largely by religion; fault-line and kin-country conflicts; torn countries; advice for Western restraint rather than universalism.",
+      "**The clash thesis in brief.** Civilizations defined largely by religion; fault-line and kin-country conflicts; torn countries; advice for Western restraint rather than universalism.",
       "**He also worked in government**, including on the US National Security Council staff in the late 1970s."
      ],
      pro:[
@@ -1098,7 +1098,7 @@ ICA.addUnit({
    {id:"online-nationalism", term:"Online nationalism", def:"Nationalist content and campaigns produced and spread on the internet and social media, by citizens, groups or states.", codex:"nationalism-in-asia"},
    {id:"everyday-nationalism", term:"Everyday nationalism", def:"How ordinary people talk about, choose, perform and consume the nation, or ignore it (Fox and Miller-Idriss, 2008).", codex:"theories-of-nationalism"},
    {id:"scientific-racism", term:"Scientific racism", def:"The false claim, presented as science, that humanity divides into biological races ranked by ability; widely used to justify empire and exclusion.", codex:"race-and-ir"},
-   {id:"racialisation", term:"Racialisation", def:"The process of attaching racial meaning to people, practices or places, for example treating a nationality or religion as if it were a race.", codex:"race-and-ir"},
+   {id:"racialisation", term:"Racialization", def:"The process of attaching racial meaning to people, practices or places, for example treating a nationality or religion as if it were a race.", codex:"race-and-ir"},
    {id:"pan-africanism", term:"Pan-Africanism", def:"Movements and ideas seeking the unity, freedom and solidarity of Africans and people of African descent worldwide, from the 1900 conference onwards.", codex:"race-and-ir"},
    {id:"norm-against-noticing", term:"Norm against noticing", def:"A phrase used in the title of a 2022 review by Freeman, Kim and Lake for the IR field’s long habit of not discussing race.", codex:"race-and-ir"},
    {id:"icerd", term:"ICERD", def:"The International Convention on the Elimination of All Forms of Racial Discrimination, adopted 21 December 1965, in force 4 January 1969.", codex:"icerd-and-anti-racism"},
@@ -1119,7 +1119,7 @@ ICA.addUnit({
    {id:"free-prior-informed-consent", term:"Free, prior and informed consent (FPIC)", def:"The principle in UNDRIP that indigenous peoples must be consulted, and their consent sought, before relocation or projects affecting their lands.", codex:"minority-and-indigenous-rights"},
    {id:"language-policy", term:"Language policy", def:"A state’s choices about official, school and administrative languages, which distribute jobs, status and belonging.", codex:"minority-and-indigenous-rights"},
    {id:"return-of-religion", term:"Return of religion", def:"The label for IR’s renewed attention to religion since the 1990s and 2000s; critics say religion never left, only the field’s attention did.", codex:"religion-in-world-politics"},
-   {id:"deprivatization", term:"Deprivatisation (of religion)", def:"José Casanova’s term (1994) for religions re-entering public and political life rather than staying private.", codex:"religion-in-world-politics"},
+   {id:"deprivatization", term:"Deprivatization (of religion)", def:"José Casanova’s term (1994) for religions re-entering public and political life rather than staying private.", codex:"religion-in-world-politics"},
    {id:"multiple-modernities", term:"Multiple modernities", def:"S. N. Eisenstadt’s argument (2000) that modernity takes many cultural forms, so modernizing societies need not secularize in one way.", codex:"religion-in-world-politics"},
    {id:"post-secular", term:"Post-secular", def:"A term Jürgen Habermas used from the early 2000s (for example in 2008). It names societies in which secular citizens accept that religion will persist and engage with religious voices.", codex:"religion-in-world-politics"},
    {id:"secularism", term:"Secularism", def:"A principle for how the state relates to religion, from strict separation to state management of religion; it takes different forms in different countries.", codex:"religion-in-world-politics"},
@@ -1259,7 +1259,7 @@ ICA.addUnit({
      {t:"It drafted ICERD", why:"ICERD dates from 1965."},
      {t:"It was canceled", why:"It took place and adopted outcome documents."},
      {t:"All states agreed on reparations for slavery", why:"Reparations were disputed."}]},
-   {id:"e4u6-q26", lesson:"e4u6-l3", level:3, q:"A researcher argues that Japan’s 1919 proposal and Turkey’s Westernising reforms show states struggling with low rank in a hierarchy of “civilization”, where race was one element. Which position on race in IR is this?", options:[
+   {id:"e4u6-q26", lesson:"e4u6-l3", level:3, q:"A researcher argues that Japan’s 1919 proposal and Turkey’s Westernizing reforms show states struggling with low rank in a hierarchy of “civilization”, where race was one element. Which position on race in IR is this?", options:[
      {t:"Race as one hierarchy among several", ok:true, why:"Correct. It places race alongside status and civilization (compare Zarakol and Suzuki)."},
      {t:"Race as irrelevant", why:"The argument includes race."},
      {t:"Race as a biological fact", why:"No IR position treats race as biological ranking."},
@@ -1289,7 +1289,7 @@ ICA.addUnit({
      {t:"Ethnic outbidding", ok:true, why:"Correct (Rabushka and Shepsle, 1972); Sri Lanka after 1956 is often cited."},
      {t:"Banal nationalism", why:"That is quiet everyday flagging."},
      {t:"Multiple modernities", why:"That concerns forms of modernity."},
-     {t:"Deprivatisation", why:"That concerns religion in public life."}]},
+     {t:"Deprivatization", why:"That concerns religion in public life."}]},
    {id:"e4u6-q32", lesson:"e4u6-l4", level:3, q:"Varshney compared Indian cities. Which finding should Mei cite?", options:[
      {t:"Hindu–Muslim civic ties went with much less riot violence", ok:true, why:"Correct. Cities with strong associations linking Hindus and Muslims, such as business groups and unions, saw much less violence. Inter-community civic ties made the difference."},
      {t:"More diverse cities always had more riots, whatever their civic life", why:"His point was that civic ties, not diversity, made the difference."},
@@ -1348,7 +1348,7 @@ ICA.addUnit({
      {t:"Abandon all alliances", why:"He urged Western cohesion."}]},
    {id:"e4u6-q43", lesson:"e4u6-l5", level:2, q:"What did Russett, Oneal and Cox (2000) find when they tested the clash thesis?", options:[
      {t:"No extra conflict once other factors were included", ok:true, why:"Correct. Conflicts between states of different civilizations were not more likely once realist and liberal factors were included; those factors explained more."},
-     {t:"Civilisational difference was the main cause of all wars", why:"They found the opposite."},
+     {t:"Civilizational difference was the main cause of all wars", why:"They found the opposite."},
      {t:"They found no data to test it", why:"They used conflict data on pairs of states."},
      {t:"Only religious states went to war", why:"Not their finding."}]},
    {id:"e4u6-q44", lesson:"e4u6-l5", level:3, q:"A defender of Huntington says: “The tests only looked at wars between states; he wrote about rising cultural identity.” What is the fair response?", options:[

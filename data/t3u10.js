@@ -46,7 +46,7 @@ ICA.addUnit({
         ["[[national-statistics-office|National statistics offices]]","Censuses, labor force surveys, prices, births and deaths","Careful methods, long series, documented definitions"],
         ["International organizations","UN agencies, World Bank, OECD, WHO","Comparable figures across many countries; some are estimates"],
         ["Governments and cities","Budgets, transport, inspections, air quality","Local detail, often updated often"],
-        ["Researchers","Experiments, surveys, field measurements","Specialised data behind published studies"],
+        ["Researchers","Experiments, surveys, field measurements","Specialized data behind published studies"],
         ["Communities and companies","OpenStreetMap maps, citizen science, company releases","Coverage officials don’t collect"]
       ]},
       "National statistics offices are usually the deepest source for one country. Many follow the UN’s Fundamental Principles of Official Statistics, which include impartiality, professional standards and making their sources and methods public.",
@@ -304,7 +304,7 @@ ICA.addUnit({
    goals:[
      "Explain why data need licenses, including the difference between copyright in facts and database rights",
      "State what CC0, PDDL, CC BY, ODC-By, CC BY-SA, ODbL and government licenses such as the UK OGL require",
-     "Recognise terms that make data not open, and what to do when there is no license",
+     "Recognize terms that make data not open, and what to do when there is no license",
      "Cite a dataset with creator, year, title, version, publisher, type and identifier, and handle versions and changing data"
    ],
    learn:[
@@ -1272,7 +1272,7 @@ ICA.addUnit({
    /* Lesson 5 */
    {id:"t3u10-q37", lesson:"t3u10-l5", level:1, q:"Which of these is one of Data Feminism’s seven principles?", options:[
      {t:"Consider context", ok:true, why:"The book argues data aren’t neutral and their context is essential."},
-     {t:"Maximise sample size", why:"Not one of the principles."},
+     {t:"Maximize sample size", why:"Not one of the principles."},
      {t:"Remove all emotion from data", why:"The book’s principle is the opposite: elevate emotion and embodiment."},
      {t:"Trust official statistics", why:"Not one of the principles; the book encourages examining power, including official sources."}]},
    {id:"t3u10-q38", lesson:"t3u10-l5", level:2, q:"In Obermeyer et al. (2019), what was the main source of racial bias?", options:[

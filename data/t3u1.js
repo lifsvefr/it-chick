@@ -268,7 +268,7 @@ ICA.addUnit({
      "Say which average a claim uses and whether it fits the question",
      "Explain why skewed data pull the mean away from the median, and what that means for “the average person”",
      "Combine group averages correctly with a weighted mean",
-     "Recognise Simpson’s paradox and composition effects, and explain them with a confounding factor",
+     "Recognize Simpson’s paradox and composition effects, and explain them with a confounding factor",
      "Ask for the spread as well as the average"
    ],
    learn:[
@@ -512,7 +512,7 @@ ICA.addUnit({
      "Make big numbers meaningful: per person, per day, and as a share of a total",
      "Convert money between years with a price index, and tell nominal from real changes",
      "Read uncertainty in official estimates and polls, including revisions",
-     "Recognise survivorship bias, and use a checklist of questions for any number"
+     "Recognize survivorship bias, and use a checklist of questions for any number"
    ],
    learn:[
     {h:"Orders of magnitude", body:[
@@ -841,7 +841,7 @@ ICA.addUnit({
       "**Real interest and growth rates.** The exact real rate is (1 + nominal) ÷ (1 + inflation) − 1. At 5% nominal and 3% inflation: 1.05 ÷ 1.03 − 1 ≈ 1.94%; the common shortcut (5 − 3 = 2%) is close when rates are small.",
       "**Comparing countries.** Converting at market exchange rates ignores that prices differ between countries. Purchasing power parity (PPP) conversions adjust for this and are used by international organizations to compare living standards.",
       "**Orders of magnitude for checking.** A Fermi estimate (rough reasoning with round numbers) catches impossible claims quickly: if a figure implies each resident drinks 2,000 liters a day, something is wrong by about three orders of magnitude.",
-      "**Survivorship bias is a selection bias.** In research it shows up as attrition (people dropping out of a study for reasons linked to the outcome). Randomised trials guard against it with intention-to-treat analysis, which analyzes everyone as randomized, including those who stopped. In finance, fund databases that drop closed funds overstate average returns.",
+      "**Survivorship bias is a selection bias.** In research it shows up as attrition (people dropping out of a study for reasons linked to the outcome). Randomized trials guard against it with intention-to-treat analysis, which analyzes everyone as randomized, including those who stopped. In finance, fund databases that drop closed funds overstate average returns.",
       "**False precision.** An estimate written as 1,203,457 suggests accuracy to the last person. If it is really an estimate, round it and give its uncertainty."
      ]},
     related:["percentages-rates","estimates-uncertainty-news","averages-misleading"],

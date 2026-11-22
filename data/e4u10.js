@@ -193,8 +193,8 @@ ICA.addUnit({
     {h:"Legitimacy and transnational legal process", body:[
       "A third family asks why rules feel binding. Thomas Franck, in *The Power of Legitimacy Among Nations* (1990), argued that rules exert a [[compliance-pull|compliance pull]] in proportion to their **legitimacy**. For Franck, legitimacy has four parts: determinacy (clarity), symbolic validation (rituals and signals of authority), coherence (consistency with other rules) and adherence (being made by accepted procedures).",
       "Harold Koh, in “Why Do Nations Obey International Law?” (*Yale Law Journal*, 1997), proposed [[transnational-legal-process|transnational legal process]] (see {{harold-koh}}). Obedience grows through a repeated cycle:",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="60" y="12" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="38" text-anchor="middle">1 Interaction</text><text class="s" x="170" y="58" text-anchor="middle">states, NGOs, courts meet</text><rect class="d-gold" x="60" y="106" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="132" text-anchor="middle">2 Interpretation</text><text class="s" x="170" y="152" text-anchor="middle">a norm’s meaning is stated</text><rect class="d-sage" x="60" y="200" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="226" text-anchor="middle">3 Internalisation</text><text class="s" x="170" y="246" text-anchor="middle">into law, politics, habit</text><path class="d-ink" d="M170,74 V102" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M170,168 V196" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M280,231 H318 V43 H284" fill="none" stroke-width="2" marker-end="url(#ah2)"/><text class="s" x="326" y="140" text-anchor="middle">repeat</text><text class="s" x="170" y="290" text-anchor="middle">Each round makes the norm more</text><text class="s" x="170" y="308" text-anchor="middle">part of how the state works (Koh 1997)</text></svg>', alt:"Three boxes stacked vertically with arrows downward: 1 interaction (states, NGOs and courts meet), 2 interpretation (a norm’s meaning is stated), 3 internalization (into law, politics and habit). An arrow loops from the bottom back to the top, labeled repeat.", cap:"Koh’s cycle: compliance is learned through repeated contact, not only calculated."},
-      "Internalisation can be **social** (the public accepts the norm), **political** (leaders adopt it) or **legal** (courts and statutes build it in). This fits {{constructivism|constructivist}} accounts of norms (see {{norm-dynamics}}). Jutta Brunnée and Stephen Toope’s *Legitimacy and Legality in International Law* (2010) developed a related “interactional” account. In their view, law binds when it meets criteria of legality and is sustained by a shared practice."
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="60" y="12" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="38" text-anchor="middle">1 Interaction</text><text class="s" x="170" y="58" text-anchor="middle">states, NGOs, courts meet</text><rect class="d-gold" x="60" y="106" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="132" text-anchor="middle">2 Interpretation</text><text class="s" x="170" y="152" text-anchor="middle">a norm’s meaning is stated</text><rect class="d-sage" x="60" y="200" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="226" text-anchor="middle">3 Internalization</text><text class="s" x="170" y="246" text-anchor="middle">into law, politics, habit</text><path class="d-ink" d="M170,74 V102" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M170,168 V196" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M280,231 H318 V43 H284" fill="none" stroke-width="2" marker-end="url(#ah2)"/><text class="s" x="326" y="140" text-anchor="middle">repeat</text><text class="s" x="170" y="290" text-anchor="middle">Each round makes the norm more</text><text class="s" x="170" y="308" text-anchor="middle">part of how the state works (Koh 1997)</text></svg>', alt:"Three boxes stacked vertically with arrows downward: 1 interaction (states, NGOs and courts meet), 2 interpretation (a norm’s meaning is stated), 3 internalization (into law, politics and habit). An arrow loops from the bottom back to the top, labeled repeat.", cap:"Koh’s cycle: compliance is learned through repeated contact, not only calculated."},
+      "Internalization can be **social** (the public accepts the norm), **political** (leaders adopt it) or **legal** (courts and statutes build it in). This fits {{constructivism|constructivist}} accounts of norms (see {{norm-dynamics}}). Jutta Brunnée and Stephen Toope’s *Legitimacy and Legality in International Law* (2010) developed a related “interactional” account. In their view, law binds when it meets criteria of legality and is sustained by a shared practice."
     ]},
     {h:"The skeptics: rational choice", body:[
       "Jack Goldsmith and Eric Posner’s *The Limits of International Law* (2005) argued that behavior consistent with international law is usually explained by state interests, not by the law. They named four patterns:",
@@ -251,7 +251,7 @@ ICA.addUnit({
     {id:"e4u10-l2-x5", type:"order", q:"Put the stages of Koh’s transnational legal process in order.", items:[
       {t:"Interaction: a state, NGOs and other actors meet in a forum or a court case", why:"The process begins with contact that forces a legal issue into the open."},
       {t:"Interpretation: a court or body states what the norm means for the case", why:"Interaction produces an authoritative interpretation."},
-      {t:"Internalisation: the state’s courts, laws and officials adopt that interpretation", why:"The norm is built into domestic structures."},
+      {t:"Internalization: the state’s courts, laws and officials adopt that interpretation", why:"The norm is built into domestic structures."},
       {t:"Obedience becomes habit, and the next interaction starts from a higher baseline", why:"Repetition deepens compliance: Koh’s distinction between mere compliance and obedience."}
     ]},
     {id:"e4u10-l2-x6", type:"sort", q:"Which theory best fits each observation?", buckets:["Managerial","Enforcement","Legitimacy / process","Rational-choice skeptic"], items:[
@@ -267,7 +267,7 @@ ICA.addUnit({
       " ",
       {t:"The United States did not comply with the 1986 *Nicaragua* judgment.", flag:false, why:"Accurate."},
       " ",
-      {t:"Therefore powerful states never comply with international courts.", flag:true, why:"Overgeneralisation from one case. Powerful states comply in many routine cases."},
+      {t:"Therefore powerful states never comply with international courts.", flag:true, why:"Overgeneralization from one case. Powerful states comply in many routine cases."},
       " ",
       {t:"Domestic courts can shape compliance, as *Medellín v. Texas* (2008) showed.", flag:false, why:"A fair use of the case: the US Supreme Court held the *Avena* judgment was not directly enforceable domestically."}
     ]},
@@ -452,7 +452,7 @@ ICA.addUnit({
    goals:[
      "Describe the UNCLOS maritime zones and the rights each gives",
      "Explain why the status of islands, rocks and low-tide elevations matters so much",
-     "Summarise the 2016 South China Sea arbitration and present the positions of the Philippines and China neutrally",
+     "Summarize the 2016 South China Sea arbitration and present the positions of the Philippines and China neutrally",
      "Explain how title to territory is acquired, using leading cases from Asia and elsewhere",
      "Explain uti possidetis, the legal issues in the Arctic, and what the ICJ’s docket looks like as of 2026"
    ],
@@ -723,7 +723,7 @@ ICA.addUnit({
   cpBank:[
    {id:"e4u10-cp01", lesson:"e4u10-l1", level:1, q:"A new agreement is legally binding and sets exact numerical limits, but it creates no court or panel to interpret it. In the legalization framework of Abbott and colleagues, how would you describe it?", options:[
      {t:"Soft law, because it has no court", why:"Soft law means non-binding. This agreement is binding; lacking a court affects only one dimension."},
-     {t:"High obligation, high precision, low delegation", ok:true, why:"Right. Legalisation has three dimensions: obligation (binding), precision (exact) and delegation (third parties interpret and apply). This agreement scores high, high and low."},
+     {t:"High obligation, high precision, low delegation", ok:true, why:"Right. Legalization has three dimensions: obligation (binding), precision (exact) and delegation (third parties interpret and apply). This agreement scores high, high and low."},
      {t:"High delegation, because the states apply it themselves", why:"Delegation means handing interpretation to third parties such as courts. States applying it themselves is low delegation."},
      {t:"Jus cogens, because it is binding and precise", why:"Jus cogens are a few peremptory norms, such as the ban on genocide, that no treaty can override. Being binding and precise doesn’t make a rule peremptory."}]},
    {id:"e4u10-cp02", lesson:"e4u10-l1", level:2, q:"After months of a crushing trade embargo, a small state signs a treaty giving fishing rights to the state that imposed the embargo. Later it claims the treaty is void under Article 52 of the VCLT. What is the best assessment?", options:[
@@ -847,7 +847,7 @@ ICA.addUnit({
       {key:"Soft law can harden: the Universal Declaration of Human Rights was non-binding in 1948, and parts of it are now widely treated as custom."}
      ],
      builder:[
-      "**Legalisation.** In a 2000 special issue of *International Organization*, Abbott, Keohane, Moravcsik, Slaughter and Snidal described legalization on three dimensions: **obligation**, **precision** and **delegation** to third parties. An instrument can be high on one and low on others.",
+      "**Legalization.** In a 2000 special issue of *International Organization*, Abbott, Keohane, Moravcsik, Slaughter and Snidal described legalization on three dimensions: **obligation**, **precision** and **delegation** to third parties. An instrument can be high on one and low on others.",
       "**Why choose soft law?** Abbott and Snidal argued that soft law lowers contracting and sovereignty costs, handles uncertainty, and allows compromise between states with different preferences. Hard law makes commitments more credible.",
       "**How soft law works.** It can be evidence of opinio juris, a first step toward a treaty, a guide to interpreting treaties, or a standard enforced by markets and peers (financial standards are an example).",
       {tip:"In essays, say “non-binding instrument” rather than “not law”: soft law has legal effects, just not binding ones."}
@@ -855,7 +855,7 @@ ICA.addUnit({
      pro:[
       "**Critiques.** Prosper Weil’s “Towards Relative Normativity in International Law?” (1983) warned that soft law and jus cogens together erode the clarity of the legal/non-legal line. Some TWAIL scholars add that soft law lets powerful actors set standards without the accountability of treaty-making; others see it as a tool weaker states use to put issues on the agenda.",
       "**Asian practice.** Regional cooperation in Southeast Asia has relied heavily on declarations and consensus (the [[asean-way|ASEAN way]]), which scholars read either as weakness or as a deliberate, flexible form of legalization.",
-      "**Research use.** Legalisation is a useful variable: compare how obligation, precision and delegation differ across regimes, and whether compliance differs too (see {{compliance-theories}})."
+      "**Research use.** Legalization is a useful variable: compare how obligation, precision and delegation differ across regimes, and whether compliance differs too (see {{compliance-theories}})."
      ]
     },
     related:["sources-of-international-law","compliance-theories","neoliberal-institutionalism"],
@@ -1247,7 +1247,7 @@ ICA.addUnit({
    {id:"persistent-objector", term:"Persistent objector", def:"A state that has clearly and consistently objected to a customary rule while it was forming, and is therefore not bound by it. The doctrine is accepted by many lawyers but debated.", codex:"sources-of-international-law"},
    {id:"erga-omnes", term:"Erga omnes obligations", def:"Obligations owed to the international community as a whole (or, erga omnes partes, to all parties of a treaty), so that any such state may complain of a breach.", codex:"sources-of-international-law"},
    {id:"soft-law", term:"Soft law", def:"Non-binding instruments, such as declarations, guidelines and codes, that still shape how states and others behave and can contribute to binding law.", codex:"soft-law"},
-   {id:"legalization", term:"Legalisation", def:"The degree to which an international arrangement is law-like, measured by obligation (how binding), precision (how exact) and delegation (whether third parties interpret and apply it).", codex:"soft-law"},
+   {id:"legalization", term:"Legalization", def:"The degree to which an international arrangement is law-like, measured by obligation (how binding), precision (how exact) and delegation (whether third parties interpret and apply it).", codex:"soft-law"},
    {id:"fragmentation-of-international-law", term:"Fragmentation of international law", def:"The growth of specialized regimes (trade, human rights, environment, investment), each with its own rules and courts, and the worry that they may conflict.", codex:"sources-of-international-law"},
    {id:"managerial-model", term:"Managerial model (of compliance)", def:"Chayes and Chayes’ view that states generally intend to comply and that breaches come mostly from ambiguity, lack of capacity or time lags. On this view, the cure is management rather than punishment.", codex:"compliance-theories"},
    {id:"enforcement-model", term:"Enforcement model (of compliance)", def:"The view, associated with Downs, Rocke and Barsoom, that deep international cooperation needs credible punishment of cheating, and that high compliance with shallow treaties proves little.", codex:"compliance-theories"},

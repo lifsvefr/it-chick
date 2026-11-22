@@ -19,7 +19,7 @@ ICA.addUnit({
   {id:"e1u8-l1", title:"Giving a 発表 in a ゼミ or at a conference", minutes:55,
    hook:{q:"A Japanese classmate says: 「[来週]{らいしゅう}のゼミの[発表]{はっぴょう}、レジュメは[何]{なん}ページ？」 What is a レジュメ here?", options:["A résumé (a [履歴書]{りれきしょ}) for a job application","A handout that summarizes your presentation","The full text of your graduation thesis","The list of students in the seminar"], answer:1, reveal:"**A handout.** In English a “résumé” is a document for job applications, but at Japanese universities a レジュメ (from the French *résumé*, “summary”) is the handout you give out with a presentation: headings, key points, quotations, figures and references on one or two pages. A job résumé is a [履歴書]{りれきしょ}. This lesson covers the kinds of [発表]{はっぴょう} you’ll give, how to build the レジュメ and the talk, and the stock phrases for each stage."},
    goals:[
-     "Recognise the main kinds of 発表 at a Japanese university and conference",
+     "Recognize the main kinds of 発表 at a Japanese university and conference",
      "Make a レジュメ in the usual written style, separate from the spoken talk",
      "Structure a talk and use the stock phrase for each stage",
      "Describe figures, trends and numbers accurately and with suitable caution",
@@ -347,7 +347,7 @@ ICA.addUnit({
      "Explain what keigo does and name the five categories in 敬語の指針 (2007)",
      "Use 尊敬語 for the actions and things of the person you respect",
      "Tell 謙譲語Ⅰ (raising the person your action is directed to) from 謙譲語Ⅱ (being polite to your listener)",
-     "Recognise 丁寧語 and 美化語, and the three different jobs of お/ご",
+     "Recognize 丁寧語 and 美化語, and the three different jobs of お/ご",
      "Use the special keigo verbs for academic life"
    ],
    learn:[
@@ -517,7 +517,7 @@ ICA.addUnit({
    hook:{q:"Which of these is a [二重敬語]{にじゅうけいご} (double keigo) that most guides advise against?", options:["おっしゃる","おっしゃられる","いらっしゃる","ご[覧]{らん}になる"], answer:1, reveal:"**おっしゃられる.** おっしゃる is already [尊敬語]{そんけいご}; adding the [尊敬語]{そんけいご} ending 〜れる on top makes the same kind of keigo twice in one word. You hear it often, which is exactly why guides warn about it. This lesson covers the most common keigo mistakes, the few double forms that are accepted by custom, when 〜させていただく fits, set phrases that teachers notice, and ウチ・ソト."},
    goals:[
      "Spot and fix keigo used in the wrong direction",
-     "Recognise 二重敬語, and the few double forms accepted by custom",
+     "Recognize 二重敬語, and the few double forms accepted by custom",
      "Use 〜させていただく where it fits and avoid over-using it",
      "Choose set phrases that most guides advise with teachers",
      "Apply ウチ・ソト when you talk about your own side to an outsider"
@@ -833,7 +833,7 @@ ICA.addUnit({
       ["Entering the room","「失礼します。」","The set phrase for coming into a teacher’s room."],
       ["The door is open but the professor looks busy","「今、少しよろしいでしょうか。」","Checks whether this is a good moment before you start."],
       ["Checking you understood advice","「〜ということでよろしいでしょうか。」","Repeats the point and asks for confirmation."],
-      ["Thanking for their time at the end","「お忙しいところ、ありがとうございました。」","Recognises that their time is valuable."]
+      ["Thanking for their time at the end","「お忙しいところ、ありがとうございました。」","Recognizes that their time is valuable."]
     ]}
    ],
    apply:{intro:"These tasks bring the whole unit together. Write in Japanese; you don’t need to send anything unless you want to.", tasks:[

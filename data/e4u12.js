@@ -35,7 +35,7 @@ ICA.addUnit({
       {ol:["Security **for whom**?","Security **for which values**?","**How much** security?","From **what threats**?","By **what means**?","At **what cost**?","In **what time period**?"]},
       "Two people can both be “for security” and disagree on every one of these. That is why scholars call security an **essentially contested concept**: its meaning is part of the political argument, not settled before it.",
       {tip:"In a seminar, when someone says “X is a security issue”, ask Baldwin’s first two questions out loud. It usually reveals which school they belong to."},
-      {ex:"**Task:** in the Boe Declaration (2018), Pacific Islands Forum leaders reaffirmed that climate change is “the single greatest threat to the livelihoods, security and wellbeing of the peoples of the Pacific”. Analyse the claim with Baldwin’s seven questions.\n1. First I ask **security for whom**, because the referent tells me the school. The text names “peoples”, not only states: a deepened referent.\n2. Next, **which values**: livelihoods, wellbeing and, for low-lying atolls, the survival of land and communities. That is wider than territorial integrity.\n3. Then **from what threats**: sea-level rise, storms, drought. These are not military, so the claim widens security.\n4. Then **by what means**: emissions cuts by others, adaptation finance, regional cooperation. Few of these are military tools, which answers Walt’s worry that widening invites military solutions.\n5. Then **how much, at what cost and over what time**: the declaration sets priorities but no targets; its time horizon is decades, much longer than most defense planning.\n6. Finally I name the lens. The claim fits human security and a broad, Copenhagen-style sectoral view. A securitization analyst would add a further question: did naming climate an existential threat change what governments were allowed to do?\n**Result:** “The Boe Declaration widens security to a non-military threat and deepens it to peoples and their livelihoods. By Baldwin’s questions, it is clear on referent, values and threat, but leaves cost and level of security open, which is typical of human security claims.”\n**Common mistake:** treating “is it really a security issue?” as a yes-or-no question. Baldwin’s point is that every security claim answers these questions somehow; the analyst’s job is to make the answers visible.", label:"Worked example: Baldwin’s questions on a real claim"}
+      {ex:"**Task:** in the Boe Declaration (2018), Pacific Islands Forum leaders reaffirmed that climate change is “the single greatest threat to the livelihoods, security and wellbeing of the peoples of the Pacific”. Analyze the claim with Baldwin’s seven questions.\n1. First I ask **security for whom**, because the referent tells me the school. The text names “peoples”, not only states: a deepened referent.\n2. Next, **which values**: livelihoods, wellbeing and, for low-lying atolls, the survival of land and communities. That is wider than territorial integrity.\n3. Then **from what threats**: sea-level rise, storms, drought. These are not military, so the claim widens security.\n4. Then **by what means**: emissions cuts by others, adaptation finance, regional cooperation. Few of these are military tools, which answers Walt’s worry that widening invites military solutions.\n5. Then **how much, at what cost and over what time**: the declaration sets priorities but no targets; its time horizon is decades, much longer than most defense planning.\n6. Finally I name the lens. The claim fits human security and a broad, Copenhagen-style sectoral view. A securitization analyst would add a further question: did naming climate an existential threat change what governments were allowed to do?\n**Result:** “The Boe Declaration widens security to a non-military threat and deepens it to peoples and their livelihoods. By Baldwin’s questions, it is clear on referent, values and threat, but leaves cost and level of security open, which is typical of human security claims.”\n**Common mistake:** treating “is it really a security issue?” as a yes-or-no question. Baldwin’s point is that every security claim answers these questions somehow; the analyst’s job is to make the answers visible.", label:"Worked example: Baldwin’s questions on a real claim"}
     ]},
     {h:"Traditional security studies and its defenders", body:[
       "[[traditional-security-studies|Traditional security studies]] grew out of Cold War **strategic studies**. This was the study of deterrence, arms races and the use of force: the world of Brodie and Schelling that Unit 1 introduced. Its referent is the state; its threats are mainly military; its theory is mostly [[realism]].",
@@ -80,7 +80,7 @@ ICA.addUnit({
       "The theory is useful because it stops two errors. One is treating every regional crisis as a sideshow of great-power rivalry. The other is treating a region as if outsiders did not matter. Critics say its regional borders can be arbitrary and that it underplays transnational threats such as pandemics and climate change."
     ]},
     {h:"Worked example: one river, four lenses", body:[
-      {ex:"The Mekong rises in China (where it is called the Lancang) and flows through Myanmar, Laos, Thailand, Cambodia and Vietnam. Dams upstream and downstream have changed its flow.\n\n• **Traditional:** is water a source of interstate conflict? So far it has led to diplomacy, not war.\n• **Human security:** fisheries, rice farming and the river’s sediment support the livelihoods of millions of people downstream.\n• **Securitisation:** who calls the river’s changes a “threat”, to which audience, and with what measures?\n• **Regional security complex:** two bodies coexist, the Mekong River Commission (1995: Cambodia, Laos, Thailand, Vietnam) and the China-led Lancang–Mekong Cooperation (2016).", label:"Worked example"},
+      {ex:"The Mekong rises in China (where it is called the Lancang) and flows through Myanmar, Laos, Thailand, Cambodia and Vietnam. Dams upstream and downstream have changed its flow.\n\n• **Traditional:** is water a source of interstate conflict? So far it has led to diplomacy, not war.\n• **Human security:** fisheries, rice farming and the river’s sediment support the livelihoods of millions of people downstream.\n• **Securitization:** who calls the river’s changes a “threat”, to which audience, and with what measures?\n• **Regional security complex:** two bodies coexist, the Mekong River Commission (1995: Cambodia, Laos, Thailand, Vietnam) and the China-led Lancang–Mekong Cooperation (2016).", label:"Worked example"},
       "Positions differ and should be attributed. China’s government says its dams generate clean power and can release water in dry seasons. Some downstream researchers and communities argue that upstream dams alter flows and fisheries. A seminar paper says who argues what, and what evidence each side uses.",
       {terms:["traditional-security-studies","critical-security-studies","copenhagen-school","welsh-school","paris-school","feminist-security-studies","freedom-from-fear","freedom-from-want","non-traditional-security","regional-security-complex"]}
     ]}
@@ -172,9 +172,9 @@ ICA.addUnit({
    goals:[
      "Separate the four research questions about civil war: onset, duration, termination and recurrence",
      "Explain the greed, grievance and feasibility arguments, with the measurement problems behind them",
-     "Summarise the “new wars” thesis and the main critiques, including Kalyvas on violence",
+     "Summarize the “new wars” thesis and the main critiques, including Kalyvas on violence",
      "Explain commitment problems, spoilers and the debate over victories versus settlements",
-     "Analyse a real peace process (Nepal) using these ideas",
+     "Analyze a real peace process (Nepal) using these ideas",
      "Choose the right dataset for a civil war question"
    ],
    learn:[
@@ -327,7 +327,7 @@ ICA.addUnit({
    hook:{q:"UN Security Council resolution 1325 on Women, Peace and Security (2000) was adopted during the Council presidency of which country, which had pushed for it?", options:["Namibia","The United States","France","Japan"], answer:0, reveal:"**Namibia**, which held the presidency in October 2000 and had hosted a meeting in Windhoek that May on women in peace operations. Bangladesh, as a Council member, had also championed the issue, alongside women’s organizations worldwide. The Women, Peace and Security agenda began with strong Global South leadership. This lesson covers how peace operations have changed, what the evidence says about whether they work, the critics of the “liberal peace”, and Women, Peace and Security."},
    goals:[
      "Describe the generations of peace operations and give an example of each",
-     "Summarise the quantitative evidence on whether peacekeeping works, and its limits",
+     "Summarize the quantitative evidence on whether peacekeeping works, and its limits",
      "Explain the liberal peace, Paris’s critique and the defense, and the idea of hybrid peace",
      "Explain the local turn, with Autesserre’s and Mac Ginty’s work",
      "Describe the Women, Peace and Security agenda, its evidence and its critics",
@@ -640,7 +640,7 @@ ICA.addUnit({
      "Describe the ASEAN-centered forums (ARF, EAS, ADMM-Plus) and the debate about their effectiveness",
      "Describe the Quad and AUKUS and the main positions on them",
      "Describe the Korean Peninsula, cross-Strait relations and the South China Sea neutrally, attributing each position, as of November 2026",
-     "Analyse the architecture through several theoretical lenses"
+     "Analyze the architecture through several theoretical lenses"
    ],
    learn:[
     {h:"An architecture with many layers", body:[
@@ -770,7 +770,7 @@ ICA.addUnit({
      {t:"One issue, three governments", how:[
        "Choose the Korean Peninsula, cross-Strait relations or the South China Sea.",
        "Find one official statement from each of three governments involved, issued in the last year (foreign ministry websites publish them in English).",
-       "Summarise each position in one neutral sentence beginning “X’s government states that…”, with the date."
+       "Summarize each position in one neutral sentence beginning “X’s government states that…”, with the date."
      ], write:"Issue… Government 1, date, position… Government 2… Government 3… Words each side uses that the others avoid…"},
      {t:"Map your own architecture", how:[
        "Pick one Asia-Pacific state (for example Indonesia, Vietnam, India, New Zealand or Fiji).",
@@ -841,7 +841,7 @@ ICA.addUnit({
      {t:"A ban treaty, like the TPNW", why:"A ban prohibits possession outright for its parties. A cap with inspections does not."},
      {t:"Extended deterrence, because each side can still retaliate", why:"Extended deterrence is a threat made on behalf of allies, not an agreement between rivals."}]},
    {id:"e4u12-cp10", lesson:"e4u12-l4", level:3, q:"A government calls a small, peaceful protest movement “terrorists” and passes a broad law allowing detention without trial. Which pair of ideas from the unit fits best?", options:[
-     {t:"Securitisation, and UN experts’ warnings about broad counter-terrorism laws", ok:true, why:"Right. Labeling the group an existential threat justifies extraordinary measures (Lesson 1), and Lesson 4 records exactly this human rights concern."},
+     {t:"Securitization, and UN experts’ warnings about broad counter-terrorism laws", ok:true, why:"Right. Labeling the group an existential threat justifies extraordinary measures (Lesson 1), and Lesson 4 records exactly this human rights concern."},
      {t:"The nuclear taboo, and the stability–instability paradox that Snyder described", why:"Both are about nuclear weapons and escalation, not about how a government labels domestic opponents."},
      {t:"The commitment problem, and power-sharing guaranteed by a third party", why:"These explain how civil wars end through settlements; the scenario is about labeling and emergency law."},
      {t:"Freedom from want, and the UN Trust Fund for Human Security", why:"Those concern the broad, development-centered version of human security, not counter-terrorism law."}]},
@@ -1271,7 +1271,7 @@ ICA.addUnit({
       {key:"Attribute every claim to the government that makes it."}
      ],
      builder:[
-      "**Resolution 2758 (1971).** Recognised the PRC’s representatives as China’s only legitimate representatives at the UN. The PRC says it settled Taiwan’s status; Taiwan’s government and some others say it did not address it.",
+      "**Resolution 2758 (1971).** Recognized the PRC’s representatives as China’s only legitimate representatives at the UN. The PRC says it settled Taiwan’s status; Taiwan’s government and some others say it did not address it.",
       "**PRC.** The one-China principle; peaceful reunification is the stated aim, without renouncing force (Anti-Secession Law, 2005).",
       "**Taiwan.** President Lai Ching-te (since May 2024) says the ROC and PRC are not subordinate to each other. Parties differ: the KMT accepts the “1992 Consensus”, the DPP does not.",
       "**United States.** A one China policy based on the three communiqués and the Taiwan Relations Act (1979); opposes unilateral changes to the status quo.",
@@ -1471,7 +1471,7 @@ ICA.addUnit({
      {t:"Barry Buzan (1983)", why:"Buzan’s *People, States and Fear* widened security into several sectors."},
      {t:"Ole Wæver (1995)", why:"Wæver developed securitization theory, a widening approach."}]},
    {id:"e4u12-q02", lesson:"e4u12-l1", level:2, q:"A government calls water scarcity “an existential threat to the nation” and suspends environmental review of a dam. Which approach is best suited to analyzing this move?", options:[
-     {t:"Securitisation theory", ok:true, why:"Yes. In the Copenhagen School’s securitization theory, an actor presents an issue as an existential threat to justify extraordinary measures: a securitizing move."},
+     {t:"Securitization theory", ok:true, why:"Yes. In the Copenhagen School’s securitization theory, an actor presents an issue as an existential threat to justify extraordinary measures: a securitizing move."},
      {t:"Traditional security studies", why:"It would mainly ask about military threats, not how a non-military issue is framed as security."},
      {t:"The democratic peace", why:"That theory is about wars between democracies, not framing."},
      {t:"Regime theory", why:"It studies cooperation through institutions, not how threats are constructed."}]},

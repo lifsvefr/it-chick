@@ -8,7 +8,7 @@ ICA.addUnit({
     "Describe the main arguments about climate justice, the state of climate finance and loss and damage, and what the ICJ’s 2025 advisory opinion actually says",
     "Compare the ozone, biodiversity, ocean and plastics regimes, and explain why some environmental treaties work better than others",
     "Lay out the competing positions on the energy transition, critical minerals and green industrial policy neutrally, attributing each one",
-    "Analyse a climate negotiation step by step and argue a position in a seminar, with a counter-argument"
+    "Analyze a climate negotiation step by step and argue a position in a seminar, with a counter-argument"
   ],
   read:[
     {book:"eir", where:"Chapter 15 “The Environment” (Raul Pacheco-Vega)", note:"A short, free overview of global environmental politics. The lessons go further; read it as a second voice."},
@@ -141,7 +141,7 @@ ICA.addUnit({
      {t:"Read one environmental justice conflict", how:[
        "Open the Environmental Justice Atlas (ejatlas.org, free) and choose a conflict outside your own region.",
        "Note the place, the resource, the actors and the outcome.",
-       "Analyse it with Schlosberg’s three dimensions: distribution, recognition, participation."
+       "Analyze it with Schlosberg’s three dimensions: distribution, recognition, participation."
      ], write:"Conflict and place… Resource… Actors… Distribution… Recognition… Participation… What surprised me…"},
      {t:"Seminar questions", how:[
        "Choose one and write 150–250 words with a position and a counter-argument.",
@@ -319,7 +319,7 @@ ICA.addUnit({
      "Trace climate finance from the 100 billion dollar goal to the New Collective Quantified Goal and the COP30 outcome",
      "Explain how loss and damage moved from taboo to a fund, and the debate over compensation",
      "Describe the diplomacy of small island states, especially in the Pacific",
-     "Summarise what the ICJ’s 2025 advisory opinion says, and what it does not say"
+     "Summarize what the ICJ’s 2025 advisory opinion says, and what it does not say"
    ],
    learn:[
     {h:"Whose emissions?", body:[
@@ -427,7 +427,7 @@ ICA.addUnit({
      ], write:"Finding 1… Finding 2… Finding 3… A question left open…"},
      {t:"Two positions on climate finance", how:[
        "Find a statement on the NCQG or on loss and damage from a small island or least developed country, and one from a developed country or the EU (closing plenary speeches and press releases are good sources).",
-       "Summarise each in one neutral sentence beginning “X’s government argues that…”, with the date.",
+       "Summarize each in one neutral sentence beginning “X’s government argues that…”, with the date.",
        "List the words each uses that the other avoids (for example “compensation”, “solidarity”, “contributor base”)."
      ], write:"Statement 1, date, position… Statement 2, date, position… Words each uses…"},
      {t:"Seminar questions", how:[
@@ -451,7 +451,7 @@ ICA.addUnit({
    goals:[
      "Explain why the ozone regime succeeded, using epistemic communities and an interest-based model",
      "Describe the Convention on Biological Diversity and the Kunming-Montreal framework, including “30 by 30” and the 2026 global review",
-     "Summarise the BBNJ Agreement’s status, fisheries rules and the deep-seabed debate as of 2026",
+     "Summarize the BBNJ Agreement’s status, fisheries rules and the deep-seabed debate as of 2026",
      "Describe the plastics treaty negotiations and the divisions within them, neutrally",
      "Compare regimes by legal form, finance and results"
    ],
@@ -531,7 +531,7 @@ ICA.addUnit({
       ["Target 2","At least 30% of degraded ecosystems under effective restoration by 2030","Restoration."],
       ["Target 3","At least 30% of land and sea effectively conserved by 2030","“30 by 30”."],
       ["Target 18","Cut harmful incentives, including subsidies, by at least 500 billion dollars a year by 2030","Harmful subsidies."],
-      ["Target 19","Mobilise at least 200 billion dollars a year from all sources by 2030","Finance."]
+      ["Target 19","Mobilize at least 200 billion dollars a year from all sources by 2030","Finance."]
     ]},
     {id:"e4u16-l4-x5", type:"mcq", q:"Fatima writes in November 2026: “The High Seas Treaty is still waiting for ratifications.” What should she write instead?", options:[
       {t:"It entered into force on 17 January 2026", ok:true, why:"Right: the dated, accurate status. It passed 100 parties in September 2026, and its first COP is scheduled for January 2027."},
@@ -596,7 +596,7 @@ ICA.addUnit({
      "Describe just transition and the Just Energy Transition Partnerships, with their status as of 2026",
      "Explain the politics of critical minerals and clean-technology supply chains, attributing each position",
      "Compare green industrial policies, including the EU’s carbon border adjustment, neutrally",
-     "Analyse a climate negotiation with a step-by-step method, using COP31 as a live example"
+     "Analyze a climate negotiation with a step-by-step method, using COP31 as a live example"
    ],
    learn:[
     {h:"Producers, rents and the supply side", body:[
@@ -702,14 +702,14 @@ ICA.addUnit({
    apply:{
     intro:"Apply the method to live negotiations.",
     tasks:[
-     {t:"Analyse one negotiation day", how:[
+     {t:"Analyze one negotiation day", how:[
        "Open an *Earth Negotiations Bulletin* daily report from COP31 (or from COP30 if you prefer a finished case).",
        "Choose one agenda item and fill in the seven steps: text, coalitions, interests, domestic politics, institutions, ideas, outcome so far.",
        "Mark which steps the report could not answer and where you would look next."
      ], write:"Agenda item… Text and brackets… Coalitions… Interests… Domestic politics… Institutions… Ideas… Outcome so far… Gaps…"},
      {t:"Producer and importer: two positions", how:[
        "Find one official statement on the energy transition from a major fossil-fuel producer and one from a large energy importer (for example a G20 or COP statement).",
-       "Summarise each neutrally in two sentences beginning “X’s government argues that…”, with the date.",
+       "Summarize each neutrally in two sentences beginning “X’s government argues that…”, with the date.",
        "Note where their win-sets might overlap."
      ], write:"Producer, date, position… Importer, date, position… Possible overlap…"},
      {t:"Seminar questions", how:[

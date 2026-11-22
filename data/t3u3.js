@@ -4,7 +4,7 @@ ICA.addUnit({
   apps:{ms:"Excel", google:"Google Sheets", libre:"LibreOffice Calc", apple:"Numbers"},
   blurb:"Real data arrives with stray spaces, five spellings of one town, numbers that are secretly text and people listed twice. Learn to spot the dirt, clean it with spreadsheet functions and with OpenRefine (facets, clustering, GREL, a replayable history), match near-duplicates without merging the wrong people, and keep a cleaning log so anyone can check what you did.",
   goals:[
-    "Recognise the common kinds of dirty data and decide, for each problem, whether to fix it with a rule or flag it for checking",
+    "Recognize the common kinds of dirty data and decide, for each problem, whether to fix it with a rule or flag it for checking",
     "Clean text in a spreadsheet with TRIM, CLEAN, SUBSTITUTE, UPPER, LOWER, PROPER, find and replace and split-to-columns, using helper columns so the raw data stays raw",
     "Install OpenRefine (or follow along without it), create a project, and explore a column with facets and filters",
     "Use clustering and short GREL expressions to standardize values, and explain why every merge needs a human decision",
@@ -87,7 +87,7 @@ ICA.addUnit({
         "**Make a copy** and keep the raw file untouched.",
         "**Fix the structure**: one value per cell, one row per record, one header row.",
         "**Fix whitespace and case**, the easy, rule-based problems.",
-        "**Standardise spellings**, reviewing each change.",
+        "**Standardize spellings**, reviewing each change.",
         "**Fix types**: make numbers numbers and dates dates; decide what a [[missing-value]] looks like ({{missing-values}}).",
         "**Find duplicates** and decide which to merge or remove.",
         "**Check again**: row counts, distinct values, totals, compared with what you expected.",
@@ -126,7 +126,7 @@ ICA.addUnit({
       {t:"Look at the distinct values and counts in each column", why:"Looking first shows what needs fixing and gives “before” numbers to compare with."},
       {t:"Make a working copy and keep the raw file untouched", why:"Before any change, protect the original."},
       {t:"Trim spaces and standardize case", why:"Easy rule-based fixes first; they make many “different” values identical."},
-      {t:"Standardise spellings, reviewing each change", why:"Now the remaining variants are real spelling differences, which need judgement."},
+      {t:"Standardize spellings, reviewing each change", why:"Now the remaining variants are real spelling differences, which need judgement."},
       {t:"Find and resolve duplicate records", why:"Duplicates are easiest to see once values are written the same way."},
       {t:"Check counts against the “before” numbers and finish the log", why:"Checking last confirms nothing was lost by accident."}]},
     {id:"t3u3-l1-x7", type:"mcq", q:"A list of names shows `NgÃ´ Thá»‹` and `MÃ¼ller`. What’s the best fix?", options:[
@@ -154,7 +154,7 @@ ICA.addUnit({
    goals:[
      "Clean in helper columns with formulas, check, then paste values, so the raw column stays as it was",
      "Remove extra spaces and invisible characters with TRIM, CLEAN and SUBSTITUTE, including non-breaking spaces",
-     "Standardise case with UPPER, LOWER and PROPER, and know when PROPER gets names wrong",
+     "Standardize case with UPPER, LOWER and PROPER, and know when PROPER gets names wrong",
      "Use find and replace without damaging other values, and split one column into several",
      "Turn numbers stored as text into real numbers, and flag duplicates with COUNTIF"
    ],
@@ -366,7 +366,7 @@ ICA.addUnit({
      "Work out a fingerprint key by hand, and predict which values it will and won’t group",
      "Describe n-gram, phonetic and nearest-neighbor (Levenshtein) methods, and calculate a simple edit distance",
      "Write and read short GREL expressions using value, dot notation, trim, case, replace, split and if",
-     "Recognise when clustering is the wrong tool"
+     "Recognize when clustering is the wrong tool"
    ],
    learn:[
     {h:"Clustering: finding values that might mean the same thing", body:[
@@ -768,7 +768,7 @@ ICA.addUnit({
       "Similarity measures: Levenshtein distance (edits), normalized versions dividing by length, and ratio scores such as Python’s `difflib.SequenceMatcher` (0–1). With a 0.8 cutoff, `ashby vail` scores 0.9 against `ashby vale` and 0.8 against `ashby dale`: both pass, so a rule picking the top score would usually but not always be right.",
       "For people, combine evidence: exact match on a strong identifier (email, ID), or fuzzy names plus agreement on other fields (birth year, postal code). This is record linkage; errors are false matches (merging different people, often the worse error) and missed matches (counting someone twice). Where records are about people, merging mistakes can have real consequences, so document the rule and keep removed rows.",
       "Keep a stable unique ID per record so duplicates can be detected and decisions traced.",
-      "Normalise before comparing: trim, fold case, and standardize punctuation and accents (OpenRefine’s fingerprint does this), but compare on the normalized copy and keep the original spelling in the data."
+      "Normalize before comparing: trim, fold case, and standardize punctuation and accents (OpenRefine’s fingerprint does this), but compare on the normalized copy and keep the original spelling in the data."
      ]},
     related:["data-cleaning","facets-clustering","cleaning-log","countif-sumif","lookup-functions"],
     sources:[{t:"Microsoft Support: Filter for unique values or remove duplicate values", url:"https://support.microsoft.com/en-us/office/filter-for-unique-values-or-remove-duplicate-values-ccf664b0-81d6-449b-bbe1-8daaec1e83c2"},{t:"Google Docs Editors Help: Split text, remove duplicates, or trim whitespace", url:"https://support.google.com/docs/answer/6325535"},{t:"Python documentation: difflib", url:"https://docs.python.org/3/library/difflib.html"}], checked:"2026-11"},

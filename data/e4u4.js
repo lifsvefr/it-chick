@@ -7,7 +7,7 @@ ICA.addUnit({
     "Tell modern Japan’s arc from the Meiji Restoration to the Occupation, and explain the 1947 Constitution and the debates about Article 9",
     "Describe how Japan is governed: the Emperor’s constitutional role, the Diet, the cabinet and prime minister, the bureaucracy, the LDP and the 1955 system, the 1994 electoral reform and local government",
     "Explain the rival explanations of the postwar economic “miracle”, the bubble and the “lost decades”, and read the latest official figures on population, gender and foreign residents with care",
-    "Analyse Japan’s foreign policy (the Yoshida Doctrine, the US–Japan alliance, aid and the Fukuda Doctrine, soft power, relations with neighbors) through several IR lenses, neutrally"
+    "Analyze Japan’s foreign policy (the Yoshida Doctrine, the US–Japan alliance, aid and the Fukuda Doctrine, soft power, relations with neighbors) through several IR lenses, neutrally"
   ],
   read:[
     {book:"sbj", where:"Chapter 2 “Population”, Chapter 3 “Economy”, Chapter 12 “Labour” and Chapter 17 “Government System”", note:"The government’s own compact English overview in numbers. Use it to check figures, not for interpretation."},
@@ -83,7 +83,7 @@ ICA.addUnit({
       "When you begin a literature review on Japan, these are some of the main places scholars publish and meet. All are long-running and peer-reviewed or scholarly. Check each one’s current scope on its own site.",
       {table:[["Name","What it is"],["*Journal of Japanese Studies* (from 1974)","Multidisciplinary journal on Japan: history, politics, society, culture"],["*Monumenta Nipponica* (from 1938)","Japan’s history, literature, religion and culture"],["*Japan Forum* (from 1989)","Journal of the British Association for Japanese Studies"],["*Social Science Japan Journal*","Politics, economics, sociology and law of Japan"],["*The Asia-Pacific Journal: Japan Focus*","Open-access articles on Japan and the region, often on contested history"],["Association for Asian Studies (from 1941)","A large international association for all of Asia; publishes the *Journal of Asian Studies*"],["European Association for Japanese Studies (from 1973)","Holds a large conference every three years, in Europe or Japan"],["British Association for Japanese Studies (from 1974)","National association; publishes *Japan Forum*"]]},
       {h:"Common misconceptions"},
-      {table:[["Misconception","Closer to the truth"],["Area studies is just description.","Good area studies tests and builds theory using deep local evidence."],["Japan is uniquely homogeneous.","The homogeneity claim has a history; Japan has always had minorities and migrants."],["Criticising nihonjinron means saying Japan has no distinctive institutions.","Japan has distinctive institutions, like every country. The critique targets sweeping claims about a national character."],["Only Japanese scholars can study Japan well, or only outsiders can be objective.","Position shapes what you see; evidence and method decide what you can claim."]]},
+      {table:[["Misconception","Closer to the truth"],["Area studies is just description.","Good area studies tests and builds theory using deep local evidence."],["Japan is uniquely homogeneous.","The homogeneity claim has a history; Japan has always had minorities and migrants."],["Criticizing nihonjinron means saying Japan has no distinctive institutions.","Japan has distinctive institutions, like every country. The critique targets sweeping claims about a national character."],["Only Japanese scholars can study Japan well, or only outsiders can be objective.","Position shapes what you see; evidence and method decide what you can claim."]]},
       {terms:["area-studies","japan-studies","nihonjinron","self-orientalism","insider-outsider-debate","zainichi-koreans"]}
     ]}
    ],
@@ -174,7 +174,7 @@ ICA.addUnit({
    hook:{q:"Japan’s Constitution came into force in 1947. How many times has it been amended since then?", options:["Never","Twice","Nine times","Twenty-seven times"], answer:0, reveal:"**Never.** As of November 2026, not one word of the 1947 Constitution has been changed. That makes it one of the oldest unamended national constitutions in the world. Amendment needs two-thirds of all members of both houses of the Diet and then a majority in a national referendum. No amendment has yet passed that test. Its most debated clause, Article 9, renounces war. This lesson tells, briefly, how Japan got from the Meiji state of 1868 to that constitution."},
    goals:[
      "Use Japan’s era names and the main periods of modern Japanese history",
-     "Summarise how the Meiji state was built and what the 1889 Constitution gave the Emperor",
+     "Summarize how the Meiji state was built and what the 1889 Constitution gave the Emperor",
      "Outline Japan’s empire and war from 1895 to 1945 in a few sentences, with the scholarly consensus on wartime atrocities",
      "Explain how the Occupation (1945–52) worked and which reforms it made",
      "Explain what the 1947 Constitution and Article 9 say, how Article 9 has been interpreted, and the main positions in the revision debate"
@@ -191,7 +191,7 @@ ICA.addUnit({
       "In the 1850s Western powers forced Japan, like China before it, to sign [[unequal-treaty|unequal treaties]]. These gave foreigners legal privileges and limited Japan’s control of its own tariffs. In 1868 a coalition of samurai from south-western domains overthrew the Tokugawa shogunate. They ruled in the name of the young Emperor Meiji: the [[meiji-restoration|Meiji Restoration]].",
       "The new leaders rebuilt the state within a generation:",
       {list:[
-        "**Centralisation.** In 1871 the old feudal domains were abolished and replaced with prefectures run from Tokyo.",
+        "**Centralization.** In 1871 the old feudal domains were abolished and replaced with prefectures run from Tokyo.",
         "**Army, taxes and schools.** A conscription law (1873), a land-tax reform (1873) and a national school system gave the state soldiers, revenue and literate citizens.",
         "**Learning from abroad.** The Iwakura Mission (1871–73) toured the United States and Europe to study institutions. Japan then borrowed selectively: a German-influenced constitution, a British-style navy, French and German legal codes.",
         "**A constitution.** The [[meiji-constitution|Meiji Constitution]], promulgated in 1889, created an elected lower house in the Imperial Diet, which first met in 1890. Sovereignty lay with the Emperor, and ministers answered to him, not to the Diet. The army and navy had direct access to the throne."
@@ -596,7 +596,7 @@ ICA.addUnit({
      "Trace Japan’s aid from war reparations to the Development Cooperation Charter, and explain the Fukuda Doctrine",
      "Explain how scholars discuss Japan’s soft power and public diplomacy, and their limits",
      "Describe Japan’s relations with its neighbors, including history issues and territorial disputes, neutrally",
-     "Analyse a Japanese foreign-policy choice through realist, liberal and constructivist lenses"
+     "Analyze a Japanese foreign-policy choice through realist, liberal and constructivist lenses"
    ],
    learn:[
     {h:"The Yoshida Doctrine", body:[
@@ -748,7 +748,7 @@ ICA.addUnit({
    {id:"e4u4-cp04", lesson:"e4u4-l2", level:2, q:"Kai’s essay says: “Meiji Japan was a pure success story, built by one homogeneous people.” Which revision best uses the unit?", options:[
      {t:"Keep it, because historians agree the Meiji reforms had no real costs", why:"Historians stress real costs, such as heavy rural taxes and the suppression of opposition. “Pure success” is too simple."},
      {t:"Add the costs, such as heavy rural taxes, suppressed opposition, the taking of Ainu lands and the annexation of Ryukyu, which also shows the state included different peoples", ok:true, why:"Right. This combines Lesson 2’s costs of Meiji state-building with Lesson 1’s point that homogeneity is a claim with a history, not a fact."},
-     {t:"Replace “homogeneous” with “Westernised”, because Japan copied the West completely", why:"The Iwakura Mission led to selective borrowing: a German-influenced constitution, a British-style navy, French and German legal codes. That is not complete copying."},
+     {t:"Replace “homogeneous” with “Westernized”, because Japan copied the West completely", why:"The Iwakura Mission led to selective borrowing: a German-influenced constitution, a British-style navy, French and German legal codes. That is not complete copying."},
      {t:"Add that the Meiji leaders refused to learn from any foreign model", why:"The opposite is true: they studied the United States and Europe closely and borrowed selectively."}]},
    {id:"e4u4-cp05", lesson:"e4u4-l3", level:1, q:"Ruling-party politicians who specialize in farm policy, officials of the agriculture ministry and national farm groups work together to protect rice subsidies. Each needs the others. Which term describes this?", options:[
      {t:"An iron triangle", ok:true, why:"Right. An iron triangle links ruling-party policy specialists (*zoku* giin), a ministry and an industry group, each needing the others."},
@@ -861,7 +861,7 @@ ICA.addUnit({
       "Much of today’s Japan dates from these years: the Constitution, the alliance with the United States, and many laws and institutions."
      ],
      builder:[
-      {table:[["Reform","What changed"],["Demilitarisation","Armed forces disbanded; war-crimes trials in Tokyo, 1946–48"],["Political","Women vote (law of December 1945; first vote April 1946); new Constitution in force 3 May 1947"],["Economic","Land reform for tenant farmers; zaibatsu dissolved; unions legalized"],["Social","Education reorganized; civil code reformed"]]},
+      {table:[["Reform","What changed"],["Demilitarization","Armed forces disbanded; war-crimes trials in Tokyo, 1946–48"],["Political","Women vote (law of December 1945; first vote April 1946); new Constitution in force 3 May 1947"],["Economic","Land reform for tenant farmers; zaibatsu dissolved; unions legalized"],["Social","Education reorganized; civil code reformed"]]},
       "From about 1947–48, as the Cold War deepened, US priorities moved from reform to economic recovery and anti-communism: the **reverse course**. Some purged wartime figures returned, and the left was purged in turn. The Korean War (1950–53) brought US orders that boosted Japan’s economy.",
       "The San Francisco Peace Treaty (signed 8 September 1951, in force 28 April 1952) ended the Occupation; a US–Japan security treaty was signed the same day. Okinawa stayed under US administration until 15 May 1972.",
       "Key actors: SCAP and GHQ’s sections (its Government Section drafted the model constitution); the Far Eastern Commission in Washington and the Allied Council for Japan in Tokyo, which gave the other Allies a formal but limited voice; and Japanese governments under prime ministers such as Shidehara Kijūrō and Yoshida Shigeru, who negotiated, delayed or reshaped reforms."
@@ -922,7 +922,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Who governs?** Chalmers Johnson (1982) argued that bureaucrats ruled while politicians reigned; Ramseyer and Rosenbluth (1993) replied that LDP politicians were the principals; many describe an iron triangle of ruling-party specialists, ministries and industry.",
-      "**Centralisation.** The 2001 reorganization strengthened the Cabinet Office; the 2014 Cabinet Bureau of Personnel Affairs gave the prime minister’s office sway over senior appointments. Combined with the 1994 electoral reform, this enabled **Kantei-led** government under Koizumi and Abe; critics worried about politicized civil service appointments, defenders saw clearer accountability.",
+      "**Centralization.** The 2001 reorganization strengthened the Cabinet Office; the 2014 Cabinet Bureau of Personnel Affairs gave the prime minister’s office sway over senior appointments. Combined with the 1994 electoral reform, this enabled **Kantei-led** government under Koizumi and Abe; critics worried about politicized civil service appointments, defenders saw clearer accountability.",
       "**Local autonomy** (Articles 92–95) gives directly elected governors and mayors their own mandates, but local governments rely heavily on national transfers. Mergers cut municipalities from more than 3,200 in 1999 to about 1,700. Prefecture–national disputes, such as Okinawa’s over US bases, show the limits of local power on national security questions.",
       "Avoid calling the Emperor “head of state” without comment: the Constitution does not use the term and scholars disagree whether it fits.",
       "Comparative note: Japan’s system resembles the British Westminster model in fusing the executive and legislature, but its strong second chamber, frequent coalition government and powerful ministries make it a distinct case. Courts have rarely struck down laws, so constitutional questions are often settled by the Cabinet Legislation Bureau’s interpretations and by politics."
@@ -1030,7 +1030,7 @@ ICA.addUnit({
      ],
      pro:[
       "Positions in the debate: supporters of more openness cite labor shortages in care, farming, construction and services; skeptics cite wages, cohesion and public services and prefer automation and higher participation by women and older people. Governments have said they are not adopting a so-called immigration policy while widening work routes; many scholars argue Japan is becoming a country of immigration in practice.",
-      "Integration is largely local: municipalities with many foreign residents developed “multicultural coexistence” ([多文化共生]{たぶんかきょうせい}) policies, supported by national plans since 2006. Naturalisation usually requires five years’ residence, and Japan expects people with two nationalities from birth to choose one ({{citizenship}}).",
+      "Integration is largely local: municipalities with many foreign residents developed “multicultural coexistence” ([多文化共生]{たぶんかきょうせい}) policies, supported by national plans since 2006. Naturalization usually requires five years’ residence, and Japan expects people with two nationalities from birth to choose one ({{citizenship}}).",
       "Refugee recognition numbers are low by international standards; a 2023 revision of the immigration law changed deportation and repeated-application rules. Use dated official statistics for any figures. Theory links: guest-worker programs, segmented labor markets and integration models from the Migration Studies primer ({{integration-models}})."
      ]
     },
@@ -1275,7 +1275,7 @@ ICA.addUnit({
      {t:"It was invented by American Occupation officials.", why:"Oguma traces Japanese debates; he does not attribute the idea to the Occupation."},
      {t:"It is accurate because Japan has no minorities.", why:"Japan has the Ainu, Okinawans, Zainichi Koreans, buraku communities and many foreign residents."}]},
    {id:"e4u4-q06", lesson:"e4u4-l1", level:3, q:"Tomás wants to use a 1970s nihonjinron bestseller in his thesis. Which use is most defensible?", options:[
-     {t:"As a primary source on how identity was imagined then.", ok:true, why:"Right. Analysed critically, it shows how Japanese identity was imagined and promoted at the time. Scholars treat such books as evidence of ideas and cultural nationalism, not as accurate descriptions of society."},
+     {t:"As a primary source on how identity was imagined then.", ok:true, why:"Right. Analyzed critically, it shows how Japanese identity was imagined and promoted at the time. Scholars treat such books as evidence of ideas and cultural nationalism, not as accurate descriptions of society."},
      {t:"As a reliable description of how all Japanese people think today.", why:"That repeats the genre’s sweeping claims, which scholars have shown to rest on narrow evidence."},
      {t:"Not at all: a thesis may never cite popular books.", why:"Popular books can be valuable primary sources if used critically."},
      {t:"As proof that Japan is unique among nations.", why:"That takes the genre’s claim as its conclusion, which is circular."}]},

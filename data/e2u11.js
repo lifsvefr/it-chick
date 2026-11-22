@@ -72,7 +72,7 @@ ICA.addUnit({
     ]},
     {h:"Borders as security: securitization", body:[
       "Since the 1990s, many governments have described migration control in the language of security: threats, defense, emergencies. The IR units introduced [[securitization|securitization]]. In this process, an issue is presented as an existential threat so that extraordinary measures seem justified. Applied to borders, it is called [[border-securitisation|border securitization]].",
-      "The political scientist Jef Huysmans wrote a 2000 article on the European Union. He described how migration came to be linked with crime, terrorism and threats to welfare and identity. Securitised border policies around the world include fences and walls and military patrols at sea or on land. They also include large biometric databases and detention.",
+      "The political scientist Jef Huysmans wrote a 2000 article on the European Union. He described how migration came to be linked with crime, terrorism and threats to welfare and identity. Securitized border policies around the world include fences and walls and military patrols at sea or on land. They also include large biometric databases and detention.",
       "**Some argue** that states need strong border security to screen for real dangers, such as people smuggling or terrorism. They say it also keeps public trust in the migration system and lets states decide who enters. **Others argue** that framing migrants as threats breeds fear and [[discrimination]], treats refugees as suspects, and pushes people toward more dangerous routes. IOM’s Missing Migrants Project has recorded tens of thousands of deaths and disappearances on migration routes since it began counting in 2014.",
       "As a student, your task isn’t to pick a side but to notice the [[framing]]. Which words are used? Who is speaking? What does the evidence show?"
     ]},
@@ -191,7 +191,7 @@ ICA.addUnit({
       "The grid shows why the two rules matter together. Where they overlap, a child may hold two citizenships. Where both are missing, a child can be left with none: a [[stateless-person|stateless person]] ({{statelessness}}). Gaps also open when a mother cannot pass on her nationality on equal terms with a father. UNHCR has counted about two dozen countries whose laws still treat mothers and fathers unequally in this way."
     ]},
     {h:"Becoming a citizen later: naturalization", body:[
-      "[[naturalisation|Naturalisation]] is the process by which an adult (or a child, with their family) who was not a citizen at birth becomes one. Each country sets its own conditions. Typical ones are:",
+      "[[naturalisation|Naturalization]] is the process by which an adult (or a child, with their family) who was not a citizen at birth becomes one. Each country sets its own conditions. Typical ones are:",
       {list:[
         "**Lawful residence** for a set time. For example, it is three of the last five years in Canada, five years in Germany and Japan (as a usual rule), and ten years in Switzerland.",
         "**Language** ability, often tested.",
@@ -222,7 +222,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"e2u11-l2-x1", type:"sort", q:"Which rule gives each child (or adult) citizenship in these invented cases?", buckets:["Jus soli","Jus sanguinis","Naturalisation"], items:[
+    {id:"e2u11-l2-x1", type:"sort", q:"Which rule gives each child (or adult) citizenship in these invented cases?", buckets:["Jus soli","Jus sanguinis","Naturalization"], items:[
       {t:"Lucía is born in a country that gives citizenship to every child born there, to parents who are visiting.", b:0, why:"Birth on the territory alone is the test: right of the soil."},
       {t:"Kenji is born abroad to a mother who is a citizen of a country that passes citizenship to children born anywhere.", b:1, why:"Citizenship comes from a parent, whatever the birthplace: right of blood."},
       {t:"Aigerim becomes a citizen after eight years of lawful residence, a language test and a ceremony.", b:2, why:"Gaining citizenship as an adult through an application is naturalization."},
@@ -245,7 +245,7 @@ ICA.addUnit({
       ["Dual citizenship","Javier holds the passports of two countries and may live in both without conditions","Citizenship of two states at once."],
       ["Denizenship","Mei has lived in her country for 20 years with permanent residence but cannot vote in national elections","A long-term resident with many rights but not full citizenship (Hammar’s term)."],
       ["Statelessness","Ravi is not considered a national by any state under its law","The 1954 Convention’s definition of a stateless person."],
-      ["Naturalisation","Thandiwe passes a language test and becomes a citizen of her new country","Gaining citizenship after birth through an application."]
+      ["Naturalization","Thandiwe passes a language test and becomes a citizen of her new country","Gaining citizenship after birth through an application."]
     ]},
     {id:"e2u11-l2-x5", type:"mcq", q:"Which statement about dual citizenship is accurate?", options:[
       {t:"Most countries accept it in some cases, but some, like China, don’t.", ok:true, why:"Right. The long-term trend has been toward acceptance, with important exceptions."},
@@ -268,7 +268,7 @@ ICA.addUnit({
       {t:"Denizenship: the in-between status of long-term residents and what rights it should carry", ok:true, why:"Right. Hammar’s idea names exactly this gap. Both positions are argued by political theorists; the concept helps you describe the debate without settling it."},
       {t:"Jus sanguinis", why:"That is how citizenship passes from parents, not the status of long-term residents."},
       {t:"Non-refoulement", why:"That is the ban on returning people to persecution (Lesson 3)."},
-      {t:"Securitisation", why:"That is about framing issues as security threats."}
+      {t:"Securitization", why:"That is about framing issues as security threats."}
     ]},
     {id:"e2u11-l2-x8", type:"explain", q:"Explain how jus soli and jus sanguinis can combine to give one child two citizenships and leave another child with none.", size:"4–5 sentences", model:"Jus soli, the ‘right of the soil’, gives citizenship to children born on a state’s territory. Jus sanguinis, the ‘right of blood’, passes citizenship from parent to child wherever the child is born. Most countries mix the two. Where the rules overlap, a child may hold two citizenships: for example, a child born in a jus soli country to parents whose country passes citizenship by descent. Where both are missing, a child can be left with none, for example if they are born in a country that gives nationality only by descent to parents whose own country gives it only by birth there. That child may be stateless.", points:["Defines jus soli", "Defines jus sanguinis", "Gives a case where the rules overlap to create dual citizenship", "Gives a case where a gap between the rules leaves a child stateless"]}
    ],
@@ -336,7 +336,7 @@ ICA.addUnit({
       "A related rule, Article 31, says refugees shouldn’t be punished for entering without permission. This applies if they come directly from danger and present themselves to the authorities without delay. Many refugees have no way to get a visa before fleeing."
     ]},
     {h:"Rights, cessation and exclusion", body:[
-      "The Convention also lists rights. Recognised refugees should be treated without discrimination and have access to courts, primary education and public relief. They should be allowed to work under set conditions and move freely in the country. They should receive identity papers and a travel document (Articles 3–34). States are asked to make naturalization easier for them (Article 34).",
+      "The Convention also lists rights. Recognized refugees should be treated without discrimination and have access to courts, primary education and public relief. They should be allowed to work under set conditions and move freely in the country. They should receive identity papers and a travel document (Articles 3–34). States are asked to make naturalization easier for them (Article 34).",
       "Refugee status can end. **Cessation** clauses (Article 1C) apply when protection is no longer needed. Examples are when a person voluntarily goes back to live in their country or takes a new nationality. Another is when the circumstances that caused the fear have fundamentally and lastingly changed.",
       "Some people are **excluded** even if they meet the definition (Article 1F). These are people for whom there are serious reasons to believe they committed certain acts. These acts include a crime against peace, a [[war-crimes|war crime]] or a [[crimes-against-humanity|crime against humanity]]. They also include a serious non-political crime outside the country of refuge before being admitted, or acts contrary to the purposes of the United Nations. The aim is to stop the regime protecting perpetrators. Other clauses deal with people already receiving help from another UN agency (Article 1D). Article 1E deals with the rights of nationals in another country.",
       {warn:"Exclusion and cessation are applied case by case, with legal safeguards. They are not a list of nationalities. And a person who is excluded from refugee status may still be protected from return to torture under human rights law."}
@@ -369,7 +369,7 @@ ICA.addUnit({
     ]},
     {id:"e2u11-l3-x2", type:"sort", q:"Based only on what each invented case says, does the person meet the 1951 definition, or would they need a wider definition or another kind of protection?", buckets:["Meets the 1951 definition","Wider regional definition","Neither (as described)"], items:[
       {t:"A journalist crosses into a neighboring state after police threaten to jail her for her reporting on the government.", b:0, why:"Outside her country, with a well-founded fear of persecution for political opinion, and her own state is the persecutor. All five tests are met."},
-      {t:"A family flees across a border because fighting has engulfed their town, with no sign they are targeted for any of the five reasons.", b:1, why:"Generalised violence without a Convention reason fits the OAU or Cartagena wording (“events seriously disturbing public order”, “generalized violence”), not the 1951 test as described."},
+      {t:"A family flees across a border because fighting has engulfed their town, with no sign they are targeted for any of the five reasons.", b:1, why:"Generalized violence without a Convention reason fits the OAU or Cartagena wording (“events seriously disturbing public order”, “generalized violence”), not the 1951 test as described."},
       {t:"A man flees his village to the capital of his own country because of armed attacks.", b:2, why:"He hasn’t crossed a border, so he is an internally displaced person. He needs protection, but refugee definitions require being outside the country."},
       {t:"A woman crosses a border after members of her religious minority are attacked and the police refuse to help.", b:0, why:"Persecution for religion by non-state actors, where the state won’t protect: the 1951 definition covers this."},
       {t:"A worker moves abroad for a better-paid job; nobody threatens him at home.", b:2, why:"No fear of persecution or of serious danger: he is a labor migrant, not a refugee."},
@@ -485,10 +485,10 @@ ICA.addUnit({
       "It is not legally binding. It sets out four objectives: to **ease pressures on host countries** and **enhance refugee self-reliance**. The others are to **expand access to third-country solutions** and **support conditions in countries of origin** for return in safety and dignity. Its main idea is more predictable **responsibility-sharing**. States, businesses, cities and others make pledges at a **Global Refugee Forum**, held every four years (the first two met in 2019 and 2023).",
       "Its partner, the Global Compact for Migration, is covered in Lesson 5. Together they are described in the Codex entry {{global-compacts}}."
     ]},
-    {h:"Externalisation and detention: what they are, and the debate", body:[
-      "[[externalisation|Externalisation]] means a state or group of states acting beyond its own borders to prevent or manage arrivals. It can mean funding or training other countries’ border forces, or agreements for those countries to stop departures or take people back. It can also mean processing asylum claims in another country. Examples, with their dates, include the **EU–Turkey Statement** (March 2016) and Italy’s agreements with Libya (from 2017). Another is **Australia’s offshore processing** of people arriving by boat, in Nauru and Papua New Guinea, at various times since 2001. The **UK–Rwanda** arrangement was agreed in 2022. A new UK government abandoned it in 2024, before any enforced removals had taken place. There is also Italy’s 2023 protocol with Albania.",
+    {h:"Externalization and detention: what they are, and the debate", body:[
+      "[[externalisation|Externalization]] means a state or group of states acting beyond its own borders to prevent or manage arrivals. It can mean funding or training other countries’ border forces, or agreements for those countries to stop departures or take people back. It can also mean processing asylum claims in another country. Examples, with their dates, include the **EU–Turkey Statement** (March 2016) and Italy’s agreements with Libya (from 2017). Another is **Australia’s offshore processing** of people arriving by boat, in Nauru and Papua New Guinea, at various times since 2001. The **UK–Rwanda** arrangement was agreed in 2022. A new UK government abandoned it in 2024, before any enforced removals had taken place. There is also Italy’s 2023 protocol with Albania.",
       "[[immigration-detention|Immigration detention]] means holding people for migration reasons, such as checking identity, deciding claims or carrying out removals. It is not punishment for a crime. UNHCR’s 2012 Detention Guidelines say seeking asylum is not unlawful. They add that detention of asylum seekers should be a last resort, necessary and proportionate in each case. The Global Compact for Migration (objective 13) also commits states to use it only as a last resort. And it commits them to work toward **alternatives** such as reporting duties and case management.",
-      {table:[["","Arguments made in favor","Arguments made against"],["Externalisation","Deters dangerous journeys and smuggling; shares work with transit countries; keeps orderly control","Shifts responsibility to poorer states; risks refoulement and abuse; hard to monitor"],["Detention","Confirms identity; prevents absconding before removal; protects public safety in some cases","Harms mental health, especially children’s; costly; alternatives often work"]]},
+      {table:[["","Arguments made in favor","Arguments made against"],["Externalization","Deters dangerous journeys and smuggling; shares work with transit countries; keeps orderly control","Shifts responsibility to poorer states; risks refoulement and abuse; hard to monitor"],["Detention","Confirms identity; prevents absconding before removal; protects public safety in some cases","Harms mental health, especially children’s; costly; alternatives often work"]]},
       "Courts have set limits in some cases (Hirsi Jamaa, Lesson 3; the UK Supreme Court found the Rwanda plan unlawful in 2023 on the evidence then available). Researchers disagree about how far such policies deter arrivals and what they cost. Your job here is to describe positions and evidence accurately, not to decide."
     ]},
     {h:"Common misconceptions", body:[
@@ -530,7 +530,7 @@ ICA.addUnit({
       {t:"It only covers migrant workers.", why:"That is closer to the Global Compact for Migration. This one is about refugees."}
     ]},
     {id:"e2u11-l4-x6", type:"spot", q:"Fatima wrote this paragraph for a debate club. Tap each sentence that **takes a side or states a contested claim as fact**, rather than describing.", ask:"takes a side or overstates", parts:[
-      {t:"Externalisation means acting beyond a state’s borders to prevent or manage arrivals.", flag:false, why:"A neutral definition."},
+      {t:"Externalization means acting beyond a state’s borders to prevent or manage arrivals.", flag:false, why:"A neutral definition."},
       " ",
       {t:"Examples include the EU–Turkey Statement of 2016 and Australia’s offshore processing.", flag:false, why:"Accurate, dated examples."},
       " ",
@@ -730,7 +730,7 @@ ICA.addUnit({
      {t:"Community sponsorship", ok:true, why:"Yes. In community sponsorship, groups of residents support a refugee family’s arrival. It is a complementary pathway, adding routes beyond the limited resettlement places."},
      {t:"Voluntary repatriation", why:"Voluntary repatriation is refugees returning home by free choice once it is safe. This family is arriving in a new country."},
      {t:"Temporary protection", why:"Temporary protection is quick, group-based protection for a limited time during mass arrivals. It isn’t organized by local residents."},
-     {t:"Externalisation", why:"Externalisation is a state acting beyond its borders to prevent or manage arrivals. This is local support for a family that has arrived."}]},
+     {t:"Externalization", why:"Externalization is a state acting beyond its borders to prevent or manage arrivals. This is local support for a family that has arrived."}]},
    {id:"e2u11-cp04", lesson:"e2u11-l1", level:2, q:"Lior’s passport lets him visit Country K without a visa for short trips. But before he flies, K requires him to fill in an online form and receive approval. What is this?", options:[
      {t:"A residence permit", why:"A residence permit sets out how long someone may stay and what they may do on a longer stay. Lior is making a short visit."},
      {t:"A visa on arrival at the airport", why:"A visa on arrival is given at the border. Lior’s approval comes online before he travels."},
@@ -818,7 +818,7 @@ ICA.addUnit({
      builder:[
       "The principle that each state determines its own nationals appears in Article 1 of the 1930 Hague Convention on nationality. Article 15 of the Universal Declaration adds that everyone has a right to a nationality and no one may be arbitrarily deprived of it.",
       {table:[["Rule","Examples (check current law)"],["Unconditional jus soli","Argentina, Brazil, Canada, Mexico and most of the Americas"],["Conditional jus soli","Australia (since 1986), Germany (since 2000), Ireland (since 2005), the UK (since 1983), New Zealand (since 2006)"],["Mainly jus sanguinis","China, Japan, and many states in Asia, Africa and Europe; India since its 1987 and 2004 changes depends mainly on parents"]]},
-      "**Naturalisation** conditions vary: for example three of the last five years in Canada, five years in Germany (after a 2024 reform; a three-year fast route was abolished in October 2025), usually five years in Japan, ten years in Switzerland. Refugees are meant to get easier access (1951 Convention, Article 34).",
+      "**Naturalization** conditions vary: for example three of the last five years in Canada, five years in Germany (after a 2024 reform; a three-year fast route was abolished in October 2025), usually five years in Japan, ten years in Switzerland. Refugees are meant to get easier access (1951 Convention, Article 34).",
       "**Dual citizenship** is now accepted by most states in at least some cases (examples: Mexico since 1998, the Philippines since 2003, Kenya since 2010, Ghana, Germany since 2024), while China does not recognize it, Japan expects a choice, and India offers Overseas Citizenship of India instead.",
       "**Denizenship** (Tomas Hammar, 1990) names the status of long-term residents who have many rights but not full citizenship."
      ],
@@ -850,7 +850,7 @@ ICA.addUnit({
       "**The five tests**: outside the country; well-founded fear; persecution (serious harm, by state or non-state actors where the state fails to protect); one of five Convention grounds; no available protection at home.",
       "**Rights** (Articles 3–34) include non-discrimination, access to courts, education, public relief, work, identity papers and travel documents, and protection from penalties for irregular entry (Article 31).",
       "**Cessation** (Article 1C) ends status when protection is no longer needed (for example voluntary re-establishment or fundamental, lasting change in the country). **Exclusion** (Article 1F) denies status where there are serious reasons to believe a person committed crimes against peace, war crimes, crimes against humanity, serious non-political crimes before admission, or acts contrary to UN purposes.",
-      {table:[["Regional instrument","What it adds"],["OAU Convention (1969, in force 1974)","External aggression, occupation, foreign domination, events seriously disturbing public order; ban on rejection at the frontier; voluntary repatriation"],["Cartagena Declaration (1984)","Generalised violence, foreign aggression, internal conflicts, massive human rights violations; non-binding but widely written into national law"],["EU asylum law","Common standards, subsidiary protection and responsibility rules; the 2024 Pact applies from 12 June 2026"]]}
+      {table:[["Regional instrument","What it adds"],["OAU Convention (1969, in force 1974)","External aggression, occupation, foreign domination, events seriously disturbing public order; ban on rejection at the frontier; voluntary repatriation"],["Cartagena Declaration (1984)","Generalized violence, foreign aggression, internal conflicts, massive human rights violations; non-binding but widely written into national law"],["EU asylum law","Common standards, subsidiary protection and responsibility rules; the 2024 Pact applies from 12 June 2026"]]}
      ],
      pro:[
       "Several major host states are not parties, including Bangladesh, India, Jordan, Lebanon, Malaysia, Pakistan and Thailand; protection there relies on national practice, memoranda with UNHCR and customary law. Türkiye maintains the Convention’s geographic limitation, protecting most non-European refugees under national law (including temporary protection).",
@@ -1015,11 +1015,11 @@ ICA.addUnit({
     sources:[{t:"World Bank blog (People Move): In 2024, remittance flows to low- and middle-income countries are expected to reach $685 billion, larger than FDI and ODA combined (December 2024)", url:"https://blogs.worldbank.org/en/peoplemove/in-2024--remittance-flows-to-low--and-middle-income-countries-ar"},{t:"World Bank: Remittance Prices Worldwide", url:"https://remittanceprices.worldbank.org/"}],
     checked:"2026-11"},
 
-   {id:"externalisation-and-detention", title:"Externalisation and immigration detention", aka:["externalization","offshore processing","safe third country","pushbacks","alternatives to detention","EU–Turkey Statement"], tags:["migration studies","borders","governance","human rights"],
+   {id:"externalisation-and-detention", title:"Externalization and immigration detention", aka:["externalization","offshore processing","safe third country","pushbacks","alternatives to detention","EU–Turkey Statement"], tags:["migration studies","borders","governance","human rights"],
     summary:"Policies that manage migration beyond a state’s borders or by holding people for migration reasons, described with the arguments made for and against them.",
     levels:{
      starter:[
-      "**Externalisation** means a state acting beyond its own borders to prevent or manage arrivals: paying or training other countries’ border forces, agreements to stop departures or take people back, or handling asylum claims in another country.",
+      "**Externalization** means a state acting beyond its own borders to prevent or manage arrivals: paying or training other countries’ border forces, agreements to stop departures or take people back, or handling asylum claims in another country.",
       "**Immigration detention** means holding people for migration reasons, such as checking identity or carrying out a removal, not as a punishment for a crime.",
       "Both are debated. Supporters say they keep control, deter dangerous journeys and support removals. Critics say they shift responsibility to poorer countries, risk sending people back to danger and harm people’s health.",
       {key:"Describe the policy, its date and the evidence, then the arguments on each side, before reaching any view."},
@@ -1029,12 +1029,12 @@ ICA.addUnit({
       "**Examples (with dates)**: the EU–Turkey Statement (18 March 2016); Italy’s cooperation with Libya (from 2017); Australia’s offshore processing in Nauru (renamed Naoero in 2026) and Papua New Guinea at various times since 2001; the UK–Rwanda arrangement (agreed 2022, held unlawful by the UK Supreme Court in November 2023 on the evidence then available, and abandoned in July 2024 before any enforced removals had taken place); Italy’s 2023 protocol with Albania.",
       "**Legal limits.** Non-refoulement applies wherever a state exercises control ({{non-refoulement}}); *Hirsi Jamaa v. Italy* (2012) applied it to interceptions at sea.",
       "**Detention standards.** UNHCR’s 2012 Detention Guidelines say seeking asylum is not unlawful, and detention should be lawful, necessary, reasonable and proportionate in each case, and a last resort. GCM objective 13 commits states to use detention only as a last resort and to work toward alternatives such as reporting, case management and community placement.",
-      {table:[["Policy","For (as argued)","Against (as argued)"],["Externalisation","Deters dangerous journeys; disrupts smuggling; shares tasks with transit states","Shifts responsibility; risk of refoulement and abuse; weak oversight"],["Detention","Ensures identity checks and removals; prevents absconding","Mental-health harm; costly; alternatives often effective"]]},
+      {table:[["Policy","For (as argued)","Against (as argued)"],["Externalization","Deters dangerous journeys; disrupts smuggling; shares tasks with transit states","Shifts responsibility; risk of refoulement and abuse; weak oversight"],["Detention","Ensures identity checks and removals; prevents absconding","Mental-health harm; costly; alternatives often effective"]]},
       "**Alternatives to detention** range from registration and regular reporting to case management, in which a caseworker helps people understand and follow the procedure. Governments and UN agencies have piloted such programs in several regions."
      ],
      pro:[
       "Scholars debate the **deterrence** effect of externalization: some studies find short-term falls in arrivals on a route, others find displacement to other routes and greater risk. Evidence depends on the counterfactual chosen, which is hard to establish.",
-      "Externalisation also raises questions of **responsibility**: when a state funds or directs another’s border actions, who is accountable for violations? Courts and scholars apply concepts of jurisdiction, effective control and complicity in international law.",
+      "Externalization also raises questions of **responsibility**: when a state funds or directs another’s border actions, who is accountable for violations? Courts and scholars apply concepts of jurisdiction, effective control and complicity in international law.",
       "On detention, research and UN bodies have documented harm to children’s health and development; UNHCR’s position is that children should not be detained for immigration purposes. Governments point to the need to enforce removal decisions, which otherwise often fail.",
       "Terminology matters: “pushbacks” (forcing people back across a border without assessing their claims) is a descriptive term used by NGOs, UN bodies and courts for practices they find unlawful; governments sometimes describe the same events as preventing unauthorized entry. A neutral account names the practice, the source of the description and any court findings.",
       "For your own analysis, a useful checklist is: what exactly is the policy and since when; which legal rules apply (non-refoulement, the right to seek asylum, the rights of the child); what monitoring exists; what evidence there is on effects, from whom and with what method; and which arguments each side makes. Keep description and judgment separate, and say which one you are doing."
@@ -1054,7 +1054,7 @@ ICA.addUnit({
    {id:"citizenship", term:"Citizenship (nationality)", def:"The legal bond between a person and a state, with the rights and duties it brings, such as living there without conditions and voting. In international law it is usually called nationality.", codex:"citizenship"},
    {id:"jus-soli", term:"Jus soli", def:"Latin for “right of the soil”: citizenship given to a child because they were born on the state’s territory, with or without conditions.", codex:"citizenship"},
    {id:"jus-sanguinis", term:"Jus sanguinis", def:"Latin for “right of blood”: citizenship passed from a parent to a child, wherever the child is born.", codex:"citizenship"},
-   {id:"naturalisation", term:"Naturalisation", def:"The process by which a person who was not a citizen at birth becomes one. It usually needs years of lawful residence, and often language and civics requirements.", codex:"citizenship"},
+   {id:"naturalisation", term:"Naturalization", def:"The process by which a person who was not a citizen at birth becomes one. It usually needs years of lawful residence, and often language and civics requirements.", codex:"citizenship"},
    {id:"dual-citizenship", term:"Dual citizenship", def:"Being a citizen of two states at the same time. Most states now accept it in at least some cases; some still restrict it.", codex:"citizenship"},
    {id:"denizenship", term:"Denizenship", def:"The status of long-term residents who have secure residence and many rights but not full citizenship, especially not the national vote (Tomas Hammar’s term, 1990).", codex:"citizenship"},
    {id:"refugee-convention", term:"1951 Refugee Convention", def:"The Convention relating to the Status of Refugees (1951), with its 1967 Protocol: it defines who is a refugee, bans returning refugees to persecution and lists their rights.", codex:"refugee-law"},
@@ -1072,7 +1072,7 @@ ICA.addUnit({
    {id:"kafala", term:"Kafala", def:"A sponsorship system, used in Gulf states, Jordan and Lebanon, in which a migrant worker’s legal residence depends on a sponsor, usually the employer. Several states have reformed it.", codex:"migrant-workers-rights"},
    {id:"free-movement", term:"Free movement (regional)", def:"An arrangement letting citizens of member states enter, live and often work in each other’s countries with few conditions. Examples are the EU, ECOWAS and the Mercosur Residence Agreement.", codex:"free-movement-regimes"},
    {id:"remittances", term:"Remittances", def:"Money, and sometimes goods, that migrants send to family or communities, usually in another country.", codex:"remittances"},
-   {id:"externalisation", term:"Externalisation", def:"A state or group of states acting beyond its own borders to prevent or manage arrivals. Examples are funding other countries’ border control or processing asylum claims elsewhere.", codex:"externalisation-and-detention"},
+   {id:"externalisation", term:"Externalization", def:"A state or group of states acting beyond its own borders to prevent or manage arrivals. Examples are funding other countries’ border control or processing asylum claims elsewhere.", codex:"externalisation-and-detention"},
    {id:"immigration-detention", term:"Immigration detention", def:"Holding people for migration reasons, such as checking identity or carrying out a removal, rather than as punishment for a crime. International guidance says it should be a last resort.", codex:"externalisation-and-detention"}
   ],
   bank:[
@@ -1142,7 +1142,7 @@ ICA.addUnit({
      {t:"Years of lawful residence, language ability, civics knowledge and good character", ok:true, why:"Correct. Details vary by country, but these are the common elements."},
      {t:"Being born in the country", why:"Birth gives citizenship through jus soli, not naturalization."},
      {t:"Owning a house and a car", why:"Property ownership isn’t a standard requirement, though some states ask for means of support."},
-     {t:"Approval by the UN", why:"Naturalisation is decided by each state."}]},
+     {t:"Approval by the UN", why:"Naturalization is decided by each state."}]},
    {id:"e2u11-q14", lesson:"e2u11-l2", level:3, q:"A child is born in a country without jus soli, to parents whose own country passes citizenship only to children born on its territory. Which concern does this raise?", options:[
      {t:"The child may be left stateless.", ok:true, why:"Right. Neither law covers the child. Gaps between nationality laws are a known cause of statelessness, which is why safeguards exist."},
      {t:"The child will have two citizenships.", why:"That needs both rules to apply; here neither does."},
@@ -1221,15 +1221,15 @@ ICA.addUnit({
      {t:"Airlines", why:"Airlines check documents; they don’t decide asylum claims."},
      {t:"The International Court of Justice", why:"The ICJ decides disputes between states, not individual asylum claims."}]},
    {id:"e2u11-q29", lesson:"e2u11-l4", level:2, q:"What does prima facie recognition mean?", options:[
-     {t:"Recognising a whole group as refugees at once", ok:true, why:"Correct. It happens on first appearance, without full individual interviews, when the reasons for flight are clear. It is common in large movements, especially in Africa."},
+     {t:"Recognizing a whole group as refugees at once", ok:true, why:"Correct. It happens on first appearance, without full individual interviews, when the reasons for flight are clear. It is common in large movements, especially in Africa."},
      {t:"Refusing all claims from a country", why:"It is a way of recognizing, not refusing."},
-     {t:"Recognising someone only after ten years of waiting", why:"It is fast, group-based recognition."},
+     {t:"Recognizing someone only after ten years of waiting", why:"It is fast, group-based recognition."},
      {t:"Granting citizenship at birth", why:"That is a citizenship rule, unrelated to RSD."}]},
    {id:"e2u11-q30", lesson:"e2u11-l4", level:3, q:"Hana faces a real risk of serious harm from indiscriminate violence in an armed conflict at home, but no one targets her for any Convention reason. Under EU law, which status fits best?", options:[
      {t:"Subsidiary protection, a form of complementary protection", ok:true, why:"Right. EU subsidiary protection covers serious individual threats from indiscriminate violence in armed conflict."},
      {t:"Refugee status under the 1951 Convention", why:"Without one of the five reasons, the 1951 definition isn’t met as described."},
      {t:"No protection at all", why:"Complementary protection exists precisely for cases like this."},
-     {t:"Naturalisation", why:"Naturalisation is a route to citizenship, not protection from return."}]},
+     {t:"Naturalization", why:"Naturalization is a route to citizenship, not protection from return."}]},
    {id:"e2u11-q31", lesson:"e2u11-l4", level:1, q:"What are the three durable solutions?", options:[
      {t:"Voluntary repatriation, local integration and resettlement", ok:true, why:"Correct. Each ends with a secure status: at home, in the host country or in a third country."},
      {t:"Detention, deportation and deterrence", why:"These are control measures, not solutions for refugees."},
@@ -1285,7 +1285,7 @@ ICA.addUnit({
      {t:"EU free movement for the job, Schengen for the drive", ok:true, why:"Right. Ireland is outside Schengen, but Belgium and the Netherlands are both in it, and EU free movement gives her the right to work in Belgium."},
      {t:"Schengen for both, because Ireland is in the Schengen area", why:"Ireland is in the EU but not in Schengen. Her right to work comes from EU free movement."},
      {t:"The ECOWAS protocol", why:"ECOWAS is a West African regime."},
-     {t:"Naturalisation in Belgium", why:"She doesn’t need to naturalize to work in another EU country."}]},
+     {t:"Naturalization in Belgium", why:"She doesn’t need to naturalize to work in another EU country."}]},
    {id:"e2u11-q42", lesson:"e2u11-l5", level:2, q:"What is the status of the African Union Free Movement Protocol (adopted January 2018)?", options:[
      {t:"It is not in force: it lacks enough ratifications.", ok:true, why:"Correct. It needs 15 ratifications and had 4 by mid-2026. Many states have signed it, but few have ratified."},
      {t:"It has been in force across all of Africa since 2018.", why:"It needs 15 ratifications to enter into force, and had 4 by mid-2026."},

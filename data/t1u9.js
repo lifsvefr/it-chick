@@ -2,12 +2,12 @@
 ICA.addUnit({
   id:"t1u9", track:"t1", n:9, title:"Spreadsheets from scratch", icon:"📊",
   apps:{ms:"Excel", google:"Google Sheets", libre:"LibreOffice Calc", apple:"Numbers"},
-  blurb:"How a spreadsheet really thinks: what a cell holds, how formulas and references work when you copy them, the functions people use every day, how to keep data tidy enough to sort and filter safely, and how to chart it and share it as CSV without losing anything.",
+  blurb:"How a spreadsheet really thinks. You will learn what a cell holds and how formulas and references work when you copy them. You will meet the functions people use every day. You will keep data tidy enough to sort and filter safely. Then you will chart it and share it as CSV without losing anything.",
   goals:[
     "Tell numbers, text, dates and blanks apart, and keep codes such as phone numbers and postal codes from being changed",
-    "Write formulas that respect the order of operations, and use relative, absolute and mixed references so copies stay correct",
+    "Write formulas that follow the order of operations. Use relative, absolute and mixed references so copies stay correct",
     "Use SUM, AVERAGE, COUNT, COUNTA, MIN, MAX, ROUND, IF, COUNTIF, SUMIF, XLOOKUP and VLOOKUP, and read the error values they produce",
-    "Organise data as a tidy table, then sort, filter, freeze headers and add data validation without scrambling rows",
+    "Organize data as a tidy table, then sort, filter, freeze headers and add data validation without scrambling rows",
     "Choose a chart that answers the question honestly, and export or import CSV files without losing zeros, accents or sheets"
   ],
   read:[
@@ -53,7 +53,7 @@ ICA.addUnit({
         ["Formula","`=B2*C2`","Shows a result; recalculates when the inputs change"]
       ]},
       "There are also logical values, `TRUE` and `FALSE`, which formulas produce when they compare things. You’ll meet them with IF in Lesson 3. Programming languages sort values into kinds in the same way and call them [[data-type|data types]]; Unit 12, Lesson 1 compares them ({{data-types-basics}}).",
-      "**The alignment clue.** Unless someone changed the alignment by hand, every app lines **text up on the left** (in left-to-right languages) and **numbers and dates up on the right**. So if a column of prices has one value sitting on the left, that value is probably text that only looks like a number, and calculations will treat it differently. Section 5 shows what goes wrong."
+      "**The alignment clue.** Unless someone changed the alignment by hand, every app lines **text up on the left** (in left-to-right languages) and **numbers and dates up on the right**. Suppose a column of prices has one value on the left. That value is probably text that only looks like a number, and calculations will treat it differently. Section 5 shows what goes wrong."
     ]},
     {h:"Dates are numbers in disguise", body:[
       "Here is the surprise that explains a lot of spreadsheet behavior: **a date is stored as a number**, a count of days from a fixed starting day. That number is called a [[date-serial|date serial number]]. Times are fractions of a day, so 12:00 noon is 0.5.",
@@ -80,7 +80,7 @@ ICA.addUnit({
       {lab:"fl-add", t:"Practice: a first formula that adds cells by their addresses (Lesson 2 explains formulas fully)"}
     ]},
     {h:"Numbers stored as text", body:[
-      "Sometimes a cell **looks** like a number but holds text. Common causes: data copied from a web page or PDF, a hidden space before or after the digits, a leading apostrophe, a column that was formatted as Text before the numbers were typed, or an imported file.",
+      "Sometimes a cell **looks** like a number but holds text. Common causes are data copied from a web page or PDF, a hidden space before or after the digits, a leading apostrophe, or an imported file. Another cause is a column that was formatted as Text before the numbers were typed.",
       "It matters because most functions skip text. Priya records her bakery’s cake sales: `12`, `15` and `9`. But the `15` was pasted from an email and is text. `=SUM(B2:B4)` returns **21**, not 36, with no error message.",
       {list:[
         "**The clue:** the 15 sits on the left of its cell while 12 and 9 sit on the right.",
@@ -105,10 +105,10 @@ ICA.addUnit({
     ]},
     {h:"A cautionary tale: genes that turned into dates", body:[
       "Human genes have short symbols, and some of them look like dates to a spreadsheet: `SEPT2` (a gene named Septin 2) or `MARCH1`. Excel, with its default settings, turns them into dates such as 2-Sep and 1-Mar. Long gene identifiers containing an E, such as `2310009E13`, can become numbers in scientific notation.",
-      "In 2016, researchers Mark Ziemann, Yotam Eren and Assam El-Osta scanned the supplementary spreadsheet files of published genomics papers and found that **about one-fifth** of papers with gene lists in Excel files contained these errors. A follow-up study in 2021 found the problem had grown: errors in about **31%** of the articles it checked (3,436 of 11,117 published from 2014 to 2020).",
+      "In 2016, researchers Mark Ziemann, Yotam Eren and Assam El-Osta checked the supplementary spreadsheet files of published genomics papers. They found these errors in **about one-fifth** of the papers with gene lists in Excel files. A follow-up study in 2021 found the problem had grown. It found errors in about **31%** of the articles it checked (3,436 of 11,117 published from 2014 to 2020).",
       "Two things changed afterwards:",
       {list:[
-        "The HUGO Gene Nomenclature Committee, which names human genes, renamed the affected symbols (the change was widely reported in 2020): `SEPT1` became `SEPTIN1` and `MARCH1` became `MARCHF1`.",
+        "The HUGO Gene Nomenclature Committee names human genes. It renamed the affected symbols (the change was widely reported in 2020): `SEPT1` became `SEPTIN1` and `MARCH1` became `MARCHF1`.",
         "Microsoft added **Automatic Data Conversion** settings to Excel for Microsoft 365 and Excel 2024. You can stop Excel removing leading zeros, shortening long numbers to 15 digits, turning digits around an E into scientific notation, and turning letters-plus-numbers such as `JAN1` into dates. On Windows they’re in **File → Options → Data**; on a Mac, **Excel → Preferences → Edit**. They also apply when you open a .csv file."
       ]},
       "The lesson isn’t “Excel is bad”. Every spreadsheet app guesses what you meant, and guesses can be wrong. Scientists with years of training lost data this way, so it’s nothing to be embarrassed about. The protective habits are the same everywhere: set codes to Text **before** entering them, and look at your data after any paste or import."
@@ -164,12 +164,12 @@ ICA.addUnit({
     ]},
       {id:"t1u9-l1-x8", type:"explain", q:"Cells A1 and A2 both show 1.3. A3 holds `=A1+A2` and shows 2.5, not 2.6. Explain what is going on, and how you could check.", size:"2–3 sentences", hint:"What does a number format change: the value or the look?", model:"A number format changes only how a value looks, not the value the cell holds. Here A1 and A2 probably each hold 1.26, formatted to show one decimal place, so they display 1.3. The formula adds the real values, 1.26 + 1.26 = 2.52, which displays as 2.5. Nothing is broken: the display is rounded, the values are not. Clicking a cell and looking at the formula bar shows the real value.", points:["Says a format changes the look, not the stored value", "Says the cells hold more decimals than they show (such as 1.26)", "Says calculations use the real values", "Says the formula bar shows the real value"]}
    ],
-   apply:{intro:"Make a practice sheet and watch how the app treats different kinds of data. Any of the free options works: Excel for the web with a free Microsoft account, Google Sheets with a free Google account, LibreOffice Calc, or Numbers on an Apple device (or Numbers for iCloud in a browser).", tasks:[
+   apply:{intro:"Make a practice sheet and watch how the app treats different kinds of data. Any of the free options works. You can use Excel for the web with a free Microsoft account, or Google Sheets with a free Google account. You can also use LibreOffice Calc, or Numbers on an Apple device (or Numbers for iCloud in a browser).", tasks:[
      {t:"Make a sheet and see the alignment clue", app:{
-       ms:["Go to office.com, sign in and open **Excel**, then choose **Blank workbook**. (Desktop Excel: **File → New → Blank workbook**.)","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it; some apps keep this as text, others tidy it into a number), and press [[kbd:Enter]] after each.","Notice which entries sit on the left and which on the right. Click each cell and compare the cell with the formula bar.","Select A3, open the **Number Format** box on the **Home** tab and choose **Number**. The date becomes a serial number (46083, possibly with .00). Press [[kbd:Ctrl]] + [[kbd:Z]] to undo."],
-       google:["Go to sheets.google.com and choose **Blank spreadsheet** (or type sheets.new in the address bar).","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it; some apps keep this as text, others tidy it into a number).","Notice which entries sit on the left and which on the right. Click each cell and compare it with the formula bar.","Select A3 and choose **Format → Number → Number**. The date becomes 46083.00. Undo with [[kbd:Ctrl]] + [[kbd:Z]] ([[kbd:Cmd]] + [[kbd:Z]] on a Mac)."],
-       libre:["Open LibreOffice and choose **Calc Spreadsheet** (or **File → New → Spreadsheet**).","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it; some apps keep this as text, others tidy it into a number).","Choose **View → Value Highlighting**: text turns black, numbers blue. Which cells are text? Turn it off again from the same menu.","Select A3, choose **Format → Cells → Numbers**, pick the **Number** category and click **OK**. The date shows 46083. Undo."],
-       apple:["Open **Numbers**, click **New Document** and choose **Blank**.","Click the first empty cell below the table’s header row, then type `Ana`, `42`, `2026-03-02` and `15 ` (with a space after it; some apps keep this as text, others tidy it into a number) in four cells down that column.","Notice which entries sit on the left and which on the right.","Select the date cell and open the **Format** sidebar (paintbrush button) → **Cell**. The **Data Format** menu shows Date & Time. Numbers keeps dates as their own type rather than showing a serial number, so there’s no serial number to look at here."]
+       ms:["Go to office.com, sign in and open **Excel**, then choose **Blank workbook**. (Desktop Excel: **File → New → Blank workbook**.)","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it), and press [[kbd:Enter]] after each. Some apps keep the last one as text. Others change it into a number.","Notice which entries sit on the left and which on the right. Click each cell and compare the cell with the formula bar.","Select A3, open the **Number Format** box on the **Home** tab and choose **Number**. The date becomes a serial number (46083, possibly with .00). Press [[kbd:Ctrl]] + [[kbd:Z]] to undo."],
+       google:["Go to sheets.google.com and choose **Blank spreadsheet** (or type sheets.new in the address bar).","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it). Some apps keep the last one as text. Others change it into a number.","Notice which entries sit on the left and which on the right. Click each cell and compare it with the formula bar.","Select A3 and choose **Format → Number → Number**. The date becomes 46083.00. Undo with [[kbd:Ctrl]] + [[kbd:Z]] ([[kbd:Cmd]] + [[kbd:Z]] on a Mac)."],
+       libre:["Open LibreOffice and choose **Calc Spreadsheet** (or **File → New → Spreadsheet**).","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it). Some apps keep the last one as text. Others change it into a number.","Choose **View → Value Highlighting**: text turns black, numbers blue. Which cells are text? Turn it off again from the same menu.","Select A3, choose **Format → Cells → Numbers**, pick the **Number** category and click **OK**. The date shows 46083. Undo."],
+       apple:["Open **Numbers**, click **New Document** and choose **Blank**.","Click the first empty cell below the table’s header row. Then type `Ana`, `42`, `2026-03-02` and `15 ` (with a space after it) in four cells down that column. Some apps keep the last one as text. Others change it into a number.","Notice which entries sit on the left and which on the right.","Select the date cell and open the **Format** sidebar (paintbrush button) → **Cell**. The **Data Format** menu shows Date & Time. Numbers keeps dates as their own type rather than showing a serial number, so there’s no serial number to look at here."]
      }},
      {t:"Keep a leading zero", app:{
        ms:["In B1 type `02134` and press [[kbd:Enter]]. The zero disappears.","In B2 type `'02134` (apostrophe first). The zero stays, and desktop Excel may show a small green triangle saying the number is stored as text. That’s what you want here.","Select C1:C5, set the **Number Format** box to **Text**, then type `0412555019` in C1. The zero stays.","Desktop Excel only: look at **File → Options → Data → Automatic Data Conversion** (on a Mac, **Excel → Preferences → Edit**). Read the options; you don’t need to change them."],
@@ -178,9 +178,9 @@ ICA.addUnit({
        apple:["In an empty cell type `02134`. The zero disappears.","Select a few empty cells, open **Format → Cell → Data Format** and choose **Text**.","Type `02134` and `0412555019` into those cells. The zeros stay."]
      }},
      {t:"Watch display rounding", app:{
-       all:["In two cells type `1.26`. In a third cell type `=` followed by the two cell references joined with `+`, for example `=D1+D2`.","Format all three cells to show one decimal place (Excel: **Decrease Decimal** on the Home tab; Google Sheets: the **.0←** button on the toolbar; LibreOffice: **Format → Cells → Numbers**, decimal places 1; Numbers: **Format → Cell → Data Format → Number**, decimals 1).","The cells show 1.3, 1.3 and 2.5. Click each one and read the real value in the formula bar."]
+       all:["In two cells type `1.26`. In a third cell type `=` followed by the two cell references joined with `+`, for example `=D1+D2`.","Format all three cells to show one decimal place. In Excel, use **Decrease Decimal** on the Home tab. In Google Sheets, use the **.0←** button on the toolbar. In LibreOffice, use **Format → Cells → Numbers**, decimal places 1. In Numbers, use **Format → Cell → Data Format → Number**, decimals 1.","The cells show 1.3, 1.3 and 2.5. Click each one and read the real value in the formula bar."]
      }, write:"What surprised you? Which entries became text, numbers or dates?"}
-   ], proof:"A practice sheet with a name, a number, a date and the “15 ” test (text or number, depending on your app); a code with its leading zero kept; and a note of the stored and displayed values in the rounding test."},
+   ], proof:"A practice sheet with these things: a name, a number, a date and the “15 ” test (text or number, depending on your app). Also a code with its leading zero kept, and a note of the stored and displayed values in the rounding test."},
    read:[
      {book:"wss", where:"Chapter 9, Section 9.1 “Microsoft Excel Basics” and Section 9.2 “Text and Numbers in Microsoft Excel” (Table 9.1 lists the number formats)", note:"One slip in 9.2: its scientific-notation example says 644362623 “would be 6.44E+9”; it’s 6.44E+08 (about 644 million)."},
      {book:"wss", where:"Chapter 9, Section 9.6 “Text and Numbers in Google Sheets”"}
@@ -190,10 +190,10 @@ ICA.addUnit({
   {id:"t1u9-l2", title:"Formulas and references", minutes:55,
    hook:{q:"You type 2+2 into an empty spreadsheet cell and press Enter. What does the cell show?", options:["4","2+2","An error message","22"], answer:1, reveal:"**2+2.** Without an equals sign at the start, the app treats what you typed as plain text, not a calculation. Type `=2+2` and you get 4. This lesson starts there, then shows the order calculations follow and how formulas that point at cells keep working when you copy them."},
    goals:[
-     "Write formulas with =, arithmetic operators and parentheses, and predict their results using the order of operations",
+     "Write formulas with =, arithmetic operators and parentheses. Predict the results using the order of operations",
      "Explain why formulas should point at cells instead of retyping numbers",
-     "Predict what happens to relative, absolute and mixed references when a formula is copied or filled",
-     "Recognise when a formula fails only because of the locale’s separators or function names"
+     "Predict what happens to relative, absolute and mixed references when you copy or fill a formula",
+     "Recognize when a formula fails only because of the locale’s separators or function names"
    ],
    learn:[
     {h:"Every formula starts with =", body:[
@@ -262,7 +262,7 @@ ICA.addUnit({
         ["`$D2`","`$D3`","column only (mixed)"],
         ["`D$2`","`E$2`","row only (mixed)"]
       ]},
-      "The last two are [[mixed-reference|mixed references]]. They’re useful in grids. For a price table with quantities 1, 2, 3 down column A (from A2) and item prices across row 1 (from B1), one formula in B2, `=$A2*B$1`, can be filled across and down to complete the whole table: every copy takes its quantity from column A and its price from row 1.",
+      "The last two are [[mixed-reference|mixed references]]. They’re useful in grids. Here is an example. A price table has quantities 1, 2, 3 down column A (from A2). It has item prices across row 1 (from B1). One formula in B2, `=$A2*B$1`, can be filled across and down to complete the whole table. Every copy takes its quantity from column A and its price from row 1.",
       "You can type the `$` yourself in any app. Shortcuts also exist: put the cursor on a reference in the formula and press a key to cycle through the four types.",
       {list:[
         "**Excel:** [[kbd:F4]] on Windows; on a Mac, [[kbd:Cmd]] + [[kbd:T]] (or [[kbd:Fn]] + [[kbd:F4]]).",
@@ -276,19 +276,19 @@ ICA.addUnit({
     {h:"Other things that change references", body:[
       {list:[
         "**Moving (cut and paste) is different from copying.** A moved formula keeps pointing at the same cells; only copies adjust.",
-        "**Inserting rows or columns** shifts references automatically, so `=SUM(B2:B6)` becomes `=SUM(B2:B7)` if you insert a row inside the range.",
+        "**Inserting rows or columns** moves references automatically. For example, `=SUM(B2:B6)` becomes `=SUM(B2:B7)` if you insert a row inside the range.",
         "**Deleting a cell that a formula uses** breaks the formula. It shows `#REF!`, meaning the reference no longer exists (Lesson 3 covers error values).",
         "**Other sheets** are referenced with the sheet name: `Sheet2!B4` in Excel and Google Sheets, `$Sheet2.B4` in LibreOffice Calc’s usual style."
       ]},
       {tip:"To see every formula at once instead of results: Excel’s **Formulas → Show Formulas**; Google Sheets’ **View → Show → Formulas**; LibreOffice’s **View → Show Formula**. Turn it off the same way."}
     ]},
     {h:"Commas, semicolons and translated names", body:[
-      "A formula copied from a website can fail on your computer for a reason that has nothing to do with you: the **[[locale]]**, the regional settings that decide how numbers and dates are written.",
+      "A formula copied from a website can fail on your computer, and the reason has nothing to do with you. The reason is the **[[locale]]**. These are the regional settings that decide how numbers and dates are written.",
       {list:[
         "In many countries the decimal mark is a comma: two and a half is `2,5`. A comma can’t then also separate a function’s inputs, so these locales use a **semicolon**: `=SUM(A1;B1)` instead of `=SUM(A1,B1)`.",
         "**Excel** follows your computer’s regional list separator. Desktop Excel in some languages also translates function names, so German Excel writes SUMME for SUM. Files still work across languages; only what you type and see differs.",
-        "**Google Sheets** follows the spreadsheet’s locale, set in **File → Settings → Locale**, which also changes default date, number and currency formats. Function names stay in English unless your Google Account language is one of the languages Sheets supports and you uncheck **Always use English function names** in **File → Settings**.",
-        "**LibreOffice Calc** lets you choose separators, and English function names, under **Tools → Options → LibreOffice Calc → Formula** (**LibreOffice → Preferences** on a Mac).",
+        "**Google Sheets** follows the spreadsheet’s locale. You set it in **File → Settings → Locale**. It also changes the default date, number and currency formats. Function names stay in English. They change only if your Google Account language is one that Sheets supports and you uncheck **Always use English function names** in **File → Settings**.",
+        "**LibreOffice Calc** lets you choose separators and English function names. Go to **Tools → Options → LibreOffice Calc → Formula** (**LibreOffice → Preferences** on a Mac).",
         "**Numbers**: Apple’s help says that if your settings use a comma as the decimal separator, you separate arguments with semicolons."
       ]},
       {key:"If a correct-looking formula from a tutorial gives an error, try swapping commas for semicolons. This course writes formulas with commas."}
@@ -345,14 +345,14 @@ ICA.addUnit({
    ],
    apply:{intro:"Build a small budget that uses relative and absolute references, then break it on purpose to see what a missing $ does. Use any app; the steps are almost the same everywhere.", tasks:[
      {t:"Build a budget and fill a formula down", app:{
-       ms:["In a blank workbook, type the headings `Item`, `Qty`, `Price`, `Cost` in A1:D1, and three items with quantities and prices in rows 2 to 4 (for example Seeds 3 2.50, Compost 2 6.00, Gloves 4 3.25).","In D2 type `=`, click B2, type `*`, click C2 and press [[kbd:Enter]].","Select D2 and drag the small square at its bottom-right corner down to D4 (or double-click the square in desktop Excel).","Click D3 and D4 and read their formulas in the formula bar. In B6 type `=SUM(D2:D4)`: 32.50 with the example values."],
+       ms:["In a blank workbook, type the headings `Item`, `Qty`, `Price`, `Cost` in A1:D1. Then add three items with quantities and prices in rows 2 to 4 (for example Seeds 3 2.50, Compost 2 6.00, Gloves 4 3.25).","In D2 type `=`, click B2, type `*`, click C2 and press [[kbd:Enter]].","Select D2 and drag the small square at its bottom-right corner down to D4 (or double-click the square in desktop Excel).","Click D3 and D4 and read their formulas in the formula bar. In B6 type `=SUM(D2:D4)`: 32.50 with the example values."],
        google:["In a blank spreadsheet, type the headings `Item`, `Qty`, `Price`, `Cost` in A1:D1, and three items with quantities and prices in rows 2 to 4.","In D2 type `=`, click B2, type `*`, click C2 and press [[kbd:Enter]].","Select D2 and drag the small blue square at its bottom-right corner down to D4. (Google Sheets may also offer to fill the column for you: an “Autofill” suggestion you can accept.)","Click D3 and D4 and read their formulas. In B6 type `=SUM(D2:D4)`."],
        libre:["In a new spreadsheet, type the headings `Item`, `Qty`, `Price`, `Cost` in A1:D1, and three items in rows 2 to 4.","In D2 type `=`, click B2, type `*`, click C2 and press [[kbd:Enter]].","Select D2 and drag the small square at its bottom-right corner down to D4, or select D2:D4 and choose **Sheet → Fill Cells → Fill Down**.","Click D3 and D4 and read their formulas in the formula bar. In B6 type `=SUM(D2:D4)`."],
        apple:["In a blank spreadsheet, type `Item`, `Qty`, `Price`, `Cost` in the header row, and three items in the rows below.","Click the first Cost cell, type `=`, click the Qty cell, type `*`, click the Price cell, and press [[kbd:Return]].","Select that cell, hover over its border until a yellow dot appears, and drag the dot down over the other Cost cells.","Click each Cost cell to see its formula. Numbers may show references by header name, such as Qty and Price, instead of letters."]
      }},
      {t:"Lock a rate with $, then break it on purpose", app:{
-       ms:["In F1 type `Rise` and in F2 type `10%`.","In E1 type `New price`. In E2 type `=C2*(1+$F$2)` and fill it down to E4. Check: 2.50 becomes 2.75.","Now in G2 type `=C2*(1+F2)` (no $) and fill it down. G3 and G4 show the old prices, because their copies point at F3 and F4, which are empty.","Click inside the F2 reference in E2’s formula and press [[kbd:F4]] a few times to watch it cycle: $F$2, F$2, $F2, F2 (on a Mac: [[kbd:Cmd]] + [[kbd:T]], or [[kbd:Fn]] + [[kbd:F4]]). If the key does nothing in your browser, type the $ signs yourself."],
-       google:["In F1 type `Rise` and in F2 type `10%`.","In E1 type `New price`. In E2 type `=C2*(1+$F$2)` and fill it down to E4. Check: 2.50 becomes 2.75.","In G2 type `=C2*(1+F2)` (no $) and fill it down. G3 and G4 show the old prices, because their copies point at empty cells.","Click inside the F2 reference in E2’s formula and press [[kbd:F4]] a few times to watch the $ signs cycle ([[kbd:Fn]] + [[kbd:F4]] on a Mac, [[kbd:Search]] + [[kbd:4]] on a Chromebook)."],
+       ms:["In F1 type `Rise` and in F2 type `10%`.","In E1 type `New price`. In E2 type `=C2*(1+$F$2)` and fill it down to E4. Check: 2.50 becomes 2.75.","Now in G2 type `=C2*(1+F2)` (no $) and fill it down. G3 and G4 show the old prices, because their copies point at F3 and F4, which are empty.","Click inside the F2 reference in E2’s formula. Press [[kbd:F4]] a few times to watch it cycle: $F$2, F$2, $F2, F2 (on a Mac: [[kbd:Cmd]] + [[kbd:T]], or [[kbd:Fn]] + [[kbd:F4]]). If the key does nothing in your browser, type the $ signs yourself."],
+       google:["In F1 type `Rise` and in F2 type `10%`.","In E1 type `New price`. In E2 type `=C2*(1+$F$2)` and fill it down to E4. Check: 2.50 becomes 2.75.","In G2 type `=C2*(1+F2)` (no $) and fill it down. G3 and G4 show the old prices, because their copies point at empty cells.","Click inside the F2 reference in E2’s formula. Press [[kbd:F4]] a few times to watch the $ signs cycle ([[kbd:Fn]] + [[kbd:F4]] on a Mac, [[kbd:Search]] + [[kbd:4]] on a Chromebook)."],
        libre:["In F1 type `Rise` and in F2 type `10%`.","In E1 type `New price`. In E2 type `=C2*(1+$F$2)` and fill it down to E4. Check: 2.50 becomes 2.75.","In G2 type `=C2*(1+F2)` (no $) and fill it down. G3 and G4 show the old prices.","Put the cursor inside a reference in the formula bar and press [[kbd:F4]] (or choose **Sheet → Cycle Cell Reference Types**) to watch the $ signs change."],
        apple:["Add a new column (or a small second table) with a cell holding `10%` as the rise.","In a New price cell type `=`, click the price cell, type `*(1+`, click the rise cell, type `)`.","Before pressing Return, click the small arrow on the rise reference token and choose **Preserve Row** and **Preserve Column**, then press [[kbd:Return]].","Autofill the formula down with the yellow dot and check each result. Then repeat without preserving and compare."]
      }, write:"Which cells showed the wrong price without the $? Why didn’t the app show an error?"}
@@ -439,13 +439,13 @@ ICA.addUnit({
       {lab:"fl-sumif", t:"Practice: add up one person’s hours with SUMIF"}
     ]},
     {h:"Looking things up: XLOOKUP and VLOOKUP", body:[
-      "A [[lookup]] finds a value in one column and returns the matching value from another column in the same row, like finding a name in a phone book and reading across to the number.",
+      "A [[lookup]] finds a value in one column. Then it returns the matching value from another column in the same row. It is like finding a name in a phone book and reading across to the number.",
       {fig:'<svg viewBox="0 0 340 292"><rect class="d-panel" x="10" y="10" width="320" height="32" rx="6" stroke-width="1.5"/><text x="170" y="31" text-anchor="middle">=XLOOKUP(F2, A2:A5, C2:C5)</text><text class="s" x="170" y="60" text-anchor="middle">F2 (the order form) holds the code to find: B03</text><rect class="d-panel" x="10" y="72" width="24" height="22" stroke-width="1"/><rect class="d-panel" x="34" y="72" width="70" height="22" stroke-width="1"/><rect class="d-panel" x="104" y="72" width="126" height="22" stroke-width="1"/><rect class="d-panel" x="230" y="72" width="100" height="22" stroke-width="1"/><text x="69" y="88" text-anchor="middle">A</text><text x="167" y="88" text-anchor="middle">B</text><text x="280" y="88" text-anchor="middle">C</text><rect class="d-panel" x="10" y="94" width="24" height="130" stroke-width="1"/><text x="22" y="111" text-anchor="middle">1</text><text x="22" y="137" text-anchor="middle">2</text><text x="22" y="163" text-anchor="middle">3</text><text x="22" y="189" text-anchor="middle">4</text><text x="22" y="215" text-anchor="middle">5</text><rect class="d-soft" x="34" y="94" width="296" height="130" stroke-width="1"/><path class="d-soft" d="M34,120 L330,120 M34,146 L330,146 M34,172 L330,172 M34,198 L330,198 M104,94 L104,224 M230,94 L230,224" stroke-width="1"/><rect class="d-lup" x="34" y="120" width="70" height="104" stroke-width="1.5"/><rect class="d-lup" x="34" y="172" width="70" height="26" stroke-width="3"/><rect class="d-sage" x="230" y="172" width="100" height="26" stroke-width="3"/><text x="40" y="111">Code</text><text x="110" y="111">Item</text><text x="236" y="111">Price</text><text x="40" y="137">B01</text><text x="110" y="137">Bread</text><text x="324" y="137" text-anchor="end">3.20</text><text x="40" y="163">B02</text><text x="110" y="163">Croissant</text><text x="324" y="163" text-anchor="end">1.80</text><text x="40" y="189">B03</text><text x="110" y="189">Muffin</text><text x="324" y="189" text-anchor="end">2.50</text><text x="40" y="215">B04</text><text x="110" y="215">Bagel</text><text x="324" y="215" text-anchor="end">1.50</text><rect class="d-lup" x="10" y="238" width="16" height="14" stroke-width="2"/><text x="34" y="250">1. Search A2:A5 for B03: found in row 4</text><rect class="d-sage" x="10" y="262" width="16" height="14" stroke-width="2"/><text x="34" y="274">2. Return C2:C5 from that row: 2.50</text></svg>', alt:"At the top, the formula =XLOOKUP(F2, A2:A5, C2:C5), with a note that F2 holds the code to find, B03. Below, a price list with columns Code, Item and Price: B01 Bread 3.20, B02 Croissant 1.80, B03 Muffin 2.50, B04 Bagel 1.50. The code column A2 to A5 is shaded lupine with B03 outlined; the price 2.50 in the same row is outlined in sage. Step 1: search A2:A5 for B03, found in row 4. Step 2: return the value from C2:C5 in that row, 2.50.", cap:"A lookup searches one column and returns the value from the same row of another column."},
       "With the code `B03` in F2, both of these return **2.50**:",
       {ex:"=XLOOKUP(F2, A2:A5, C2:C5)\n=VLOOKUP(F2, A2:C5, 3, FALSE)", label:"Two ways to look up a price", mono:true},
       {list:[
         "**XLOOKUP(what to find, where to look, what to return)** searches the lookup column and returns from the result column. It looks for an **exact match by default**, can look left or right, and lets you add a fourth argument for a friendlier message: `=XLOOKUP(F2, A2:A5, C2:C5, \"Not found\")`.",
-        "**VLOOKUP(what to find, table, column number, FALSE)** searches the **leftmost** column of the table and returns the value from the column number you give, counting the leftmost as 1. Here, Price is column 3 of A2:C5.",
+        "**VLOOKUP(what to find, table, column number, FALSE)** searches the **leftmost** column of the table. It returns the value from the column number you give, and the leftmost column is number 1. Here, Price is column 3 of A2:C5.",
         "**Always end VLOOKUP with FALSE** (or 0). If you leave it out, all four apps do an **approximate** match, which expects the first column to be sorted and can silently return the wrong row.",
         "Filling a lookup down a column? Lock the table: `=XLOOKUP(F2, $A$2:$A$5, $C$2:$C$5)`."
       ]},
@@ -497,8 +497,8 @@ ICA.addUnit({
       ["`#REF!`","A column the formula used was deleted","The reference points at something that no longer exists."],
       ["`#N/A`","XLOOKUP can’t find the code in the list","N/A means not available: no matching value was found."]
     ]},
-    {id:"t1u9-l3-x5", type:"spot", q:"Priya is checking formulas from three small sheets: a price list in A2:C5 (Code, Item, Price) with an order code in F2, quiz scores in B2:B7, and amounts in C2:C6. Tap every formula with a mistake.", ask:"has a mistake", mono:true, parts:[
-      {t:"=XLOOKUP(F2, A2:A5, C2:C5)", flag:false, why:"Correct: exact match by default, returns the price."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 3)", flag:true, why:"The last argument is missing, so VLOOKUP does an approximate match. It may happen to work on this sorted list, but on an unsorted list it can return the wrong price without an error, and a code that isn’t in the list can return a neighboring row’s price instead of #N/A. Add FALSE: =VLOOKUP(F2, A2:C5, 3, FALSE)."}, "\n", {t:"=IF(B2>=50, Pass, \"Retake\")", flag:true, why:"Pass needs quotes. Without them the app looks for something named Pass and shows #NAME?. Write \"Pass\"."}, "\n", {t:"=COUNTIF(C2:C6, \">100\")", flag:false, why:"Correct: the comparison sign goes inside the quotes."}, "\n", {t:"=AVERAGE(B2:B7)", flag:false, why:"Correct: averages the numbers in B2:B7."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 4, FALSE)", flag:true, why:"A2:C5 has only 3 columns, so asking for column 4 is an error: #REF! in Excel and Google Sheets, Err:502 in LibreOffice Calc. Price is column 3."}
+    {id:"t1u9-l3-x5", type:"spot", q:"Priya is checking formulas from three small sheets. One has a price list in A2:C5 (Code, Item, Price) with an order code in F2. One has quiz scores in B2:B7. One has amounts in C2:C6. Tap every formula with a mistake.", ask:"has a mistake", mono:true, parts:[
+      {t:"=XLOOKUP(F2, A2:A5, C2:C5)", flag:false, why:"Correct: exact match by default, returns the price."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 3)", flag:true, why:"The last argument is missing, so VLOOKUP does an approximate match. It may happen to work on this sorted list. On an unsorted list it can return the wrong price without an error. A code that isn’t in the list can return a neighboring row’s price instead of #N/A. Add FALSE: =VLOOKUP(F2, A2:C5, 3, FALSE)."}, "\n", {t:"=IF(B2>=50, Pass, \"Retake\")", flag:true, why:"Pass needs quotes. Without them the app looks for something named Pass and shows #NAME?. Write \"Pass\"."}, "\n", {t:"=COUNTIF(C2:C6, \">100\")", flag:false, why:"Correct: the comparison sign goes inside the quotes."}, "\n", {t:"=AVERAGE(B2:B7)", flag:false, why:"Correct: averages the numbers in B2:B7."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 4, FALSE)", flag:true, why:"A2:C5 has only 3 columns, so asking for column 4 is an error: #REF! in Excel and Google Sheets, Err:502 in LibreOffice Calc. Price is column 3."}
     ]},
     {id:"t1u9-l3-x6", type:"mcq", q:"Ana splits a 100.00 bill between three people with `=B2/3` in three cells, formatted to two decimals. Each shows 33.33 and their SUM shows 100.00. Each person then pays exactly 33.33. What’s going on?", options:[
       {t:"The cells hold 33.333…; the format hides the extra digits", ok:true, why:"Right. The stored shares add to exactly 100, but real payments of 33.33 add to 99.99. Formatting changes the display, not the value, so the SUM adds the unrounded shares. If the rounded amount is what people actually pay, use =ROUND(B2/3, 2), and the SUM will honestly show 99.99."},
@@ -515,14 +515,14 @@ ICA.addUnit({
       {id:"t1u9-l3-x8", type:"explain", q:"A teacher’s quiz scores include one blank cell for a student who was absent. Explain how `AVERAGE` treats that blank, what changes if someone types 0 there, and which is right.", hint:"AVERAGE is SUM ÷ COUNT. What does COUNT count?", model:"`AVERAGE` adds up the numbers and divides by how many numbers there are, and blanks and text are left out of both. So with the blank, the result is the average of the students who sat the quiz. If someone types 0, the cell now holds a number: it is counted, and it pulls the average down, as if the student had scored nothing. A blank means “no result” and 0 means “scored zero”, so for an absent student the blank is honest. Type 0 only for a real zero.", points:["Says AVERAGE leaves blanks out (it divides by the count of numbers)", "Says typing 0 makes it count and lowers the average", "Says a blank and a zero mean different things", "Chooses blank for the absent student (0 only for a real zero)"]}
    ],
    apply:{intro:"Practice the everyday functions on two small tables, then make each error value appear on purpose so you’ll recognize them later.", tasks:[
-     {t:"Summarise the volunteer table", app:{
+     {t:"Summarize the volunteer table", app:{
        all:["Type the volunteer table from this lesson: `Name` and `Hours` in A1:B1, then Ana 4, Ben 6, Chen (leave blank), Dina 3, Eli `away`, Fern 5 in rows 2 to 7.","In D2:D7 type the labels Sum, Count, CountA, Average, Min, Max. In E2:E7 type `=SUM(B2:B7)`, `=COUNT(B2:B7)`, `=COUNTA(B2:B7)`, `=AVERAGE(B2:B7)`, `=MIN(B2:B7)`, `=MAX(B2:B7)`.","Check your results: 18, 4, 5, 4.5, 3, 6.","Type `0` in B4 and watch which results change (Count becomes 5, CountA 6, Average 3.6 and Min 0). Then delete it again.","In Numbers, cells in a table may be referenced by header names in the formula editor; the results are the same."]
      }},
      {t:"Count, add and look up", app:{
        all:["Type the reunion table: Date, Category, Amount with the five rows from the lesson. Try `=COUNTIF(B2:B6, \"Food\")` (3), `=SUMIF(B2:B6, \"Food\", C2:C6)` (260) and `=COUNTIF(C2:C6, \">100\")` (2).","On the same or a new sheet, type the price list: Code, Item, Price in A1:C1 and B01 Bread 3.20, B02 Croissant 1.80, B03 Muffin 2.50, B04 Bagel 1.50 below.","In F2 type `B03`. In G2 type `=VLOOKUP(F2, A2:C5, 3, FALSE)`. You should see 2.50.","If your app has XLOOKUP (see the table in this lesson), type `=XLOOKUP(F2, A2:A5, C2:C5, \"Not found\")` in G3. Change F2 to `B09` and see both results."]
      }},
      {t:"Meet the error values", app:{
-       all:["Make each error on purpose in empty cells: `=5/0` (#DIV/0!), `=SUMM(1,2)` (#NAME?), `=\"abc\"+1` (#VALUE!), and a VLOOKUP asking for column 4 of a 3-column table (#REF! in Excel and Google Sheets; LibreOffice Calc shows Err:502, an invalid argument).","Click each error cell and read the hint the app gives (Excel shows a warning icon to click; LibreOffice shows the message in the status bar at the bottom; Google Sheets shows it when you hover; Numbers shows a warning triangle to click).","Fix each one and note the fix."]
+       all:["Make each error on purpose in empty cells: `=5/0` (#DIV/0!), `=SUMM(1,2)` (#NAME?), `=\"abc\"+1` (#VALUE!). Also make a VLOOKUP that asks for column 4 of a 3-column table. It shows #REF! in Excel and Google Sheets. LibreOffice Calc shows Err:502, an invalid argument.","Click each error cell and read the hint the app gives. Excel shows a warning icon to click. LibreOffice shows the message in the status bar at the bottom. Google Sheets shows it when you hover. Numbers shows a warning triangle to click.","Fix each one and note the fix."]
      }, write:"Which error did you find hardest to understand? Write its cause in your own words."}
    ], proof:"A sheet with the six summary results, a working COUNTIF, SUMIF and lookup, and a note of each error value with its cause and fix."},
    read:[
@@ -531,8 +531,8 @@ ICA.addUnit({
    ]
   },
   /* ===================== LESSON 4 ===================== */
-  {id:"t1u9-l4", title:"Organising data", minutes:55,
-   hook:{q:"A spending sheet’s Category column holds “Food”, “Food ” (with a space at the end) and “Foods”. How many different categories will a filter show?", options:["One: they all mean food","Two: only “Foods” is different","Three: each one is different"], answer:2, reveal:"**Three.** To a spreadsheet, an invisible space at the end or one extra letter makes an entry different, so a filter lists them separately and COUNTIF misses the odd ones out. This lesson shows how to lay data out tidily, keep entries consistent, and sort and filter without scrambling anything."},
+  {id:"t1u9-l4", title:"Organizing data", minutes:55,
+   hook:{q:"A spending sheet’s Category column holds “Food”, “Food ” (with a space at the end) and “Foods”. How many different categories will a filter show?", options:["One: they all mean food","Two: only “Foods” is different","Three: each one is different"], answer:2, reveal:"**Three.** To a spreadsheet, an invisible space at the end or one extra letter makes an entry different. So a filter lists them separately, and COUNTIF misses the odd ones out. This lesson shows how to lay data out tidily and keep entries consistent. It also shows how to sort and filter without scrambling anything."},
    goals:[
      "Lay data out as a tidy table: one row per record, one column per variable, one value per cell",
      "Spot layouts that break sorting, filtering and formulas, such as merged cells and totals in the middle",
@@ -544,11 +544,11 @@ ICA.addUnit({
       {lead:"Many spreadsheets are made to look nice when printed. The same choices that make them pretty often make them impossible to sort, filter or count."},
       "Look at this harvest record from a community garden. It’s easy for a person to read, but hard for a spreadsheet to work with:",
       {ex:"HARVEST 2026 (merged A1:C1)\n        June        July\nPlot 1  2kg tomato  3kg beans\nPlot 2  1.5kg       (yellow=sold)\nTOTAL   3.5kg       3kg\nPlot 3  4kg beans   n/a", label:"A sheet made for reading", mono:true},
-      "The problems: a merged title row, months spread across columns, numbers and units and crop names squashed into one cell (“2kg tomato”), a color that carries meaning, a total row in the middle of the data, and “n/a” where it isn’t clear whether nothing grew or nobody weighed it.",
+      "The problems are a merged title row and months spread across columns. Numbers, units and crop names are squashed into one cell (“2kg tomato”). A color carries meaning, and a total row sits in the middle of the data. Also, “n/a” does not show whether nothing grew or nobody weighed it.",
       "None of this is “wrong” for a printout. But you can’t ask this sheet “how many kilograms of beans this year?” without retyping it. The fix is to keep **one sheet for the data**, laid out for the computer, and build any pretty summary separately from it."
     ]},
     {h:"Tidy data: three rules", body:[
-      "Statisticians and data scientists use a simple standard, called [[tidy-data|tidy data]] (described by the statistician Hadley Wickham in a 2014 paper of that name):",
+      "Statisticians and data scientists use a simple standard called [[tidy-data|tidy data]]. The statistician Hadley Wickham described it in a 2014 paper of that name:",
       {ol:[
         "**Each row is one record**: one observation, such as one harvest weighing, one sale or one volunteer shift.",
         "**Each column is one variable**: one kind of information, such as Plot, Month, Crop or Kg.",
@@ -567,7 +567,7 @@ ICA.addUnit({
       {lab:"fl-countif", t:"Practice: count matching entries in a tidy Status column"}
     ]},
     {h:"Headers, consistent entries, no merged cells", body:[
-      "A tidy table has **one [[header-row|header row]]** with a short, unique name for each column, and nothing else above the data except perhaps a title separated by a blank row.",
+      "A tidy table has **one [[header-row|header row]]** with a short, unique name for each column. Above the data there is nothing else, except perhaps a title that is separated by a blank row.",
       "**Consistent entries** matter more than people expect. To a spreadsheet, “Food”, “food ” (with a trailing space) and “Foods” are three different things in a filter, and COUNTIF won’t match the stray-space one. Lesson 1’s rule applies too: dates should be real dates, numbers real numbers, codes stored as text.",
       "Stray spaces at the start or end of an entry are invisible, so they’re easy to miss. The `TRIM` function removes them (and squeezes runs of spaces in the middle down to one): `=TRIM(A2)` gives a cleaned copy of A2. It also works inside another formula, such as a lookup: `=XLOOKUP(TRIM(E2), A2:A5, B2:B5)`.",
       {lab:"fx-trim", t:"Practice: fix a lookup that fails because of hidden spaces"},
@@ -580,7 +580,7 @@ ICA.addUnit({
       "The danger is selecting **only one column** and sorting it. The hours get reordered but the names don’t, and every row is now false. If many columns are involved, it may not be obvious until much later.",
       {ol:[
         "**Click a single cell inside the table** (or select the whole table, headers included). Don’t select just one column.",
-        "Open the sort command: Excel **Data → Sort**; Google Sheets **Data → Sort range → Advanced range sorting options**; LibreOffice Calc **Data → Sort**; Numbers **Organize** sidebar → **Sort**.",
+        "Open the sort command. In Excel, use **Data → Sort**. In Google Sheets, use **Data → Sort range → Advanced range sorting options**. In LibreOffice Calc, use **Data → Sort**. In Numbers, use the **Organize** sidebar → **Sort**.",
         "Tell the app the first row is headers (“My data has headers”, “Data has header row”, “Range contains column labels”), so the header stays on top.",
         "Choose the column and the order. Add a second level if needed (by Month, then by Kg).",
         "Check two or three rows against what you know is true."
@@ -596,7 +596,7 @@ ICA.addUnit({
         "LibreOffice Calc: **Data → AutoFilter**.",
         "Numbers: hover over a column letter, click the arrow and choose **Quick Filter**, or use the **Organize** sidebar → **Filter** → **Add a Filter**."
       ]},
-      {warn:"A hidden row is still part of the data. `SUM` and most other functions still include rows a filter hides, so a total next to a filtered table usually covers everything, not just what you see. (Excel, Google Sheets and LibreOffice have SUBTOTAL for totals of visible rows only.) And in a shared sheet, an ordinary filter changes the view for everyone, which is why Google Sheets offers filter views."}
+      {warn:"A hidden row is still part of the data. `SUM` and most other functions still include rows that a filter hides. So a total next to a filtered table usually covers everything, not just what you see. (Excel, Google Sheets and LibreOffice have SUBTOTAL for totals of visible rows only.) Also, in a shared sheet, an ordinary filter changes the view for everyone. This is why Google Sheets offers filter views."}
     ]},
     {h:"Freeze the header, and make it a table", body:[
       "In a long list, the header row scrolls out of sight. To [[freeze-panes|freeze]] it so it stays visible:",
@@ -606,17 +606,17 @@ ICA.addUnit({
         "LibreOffice Calc: **View → Freeze Cells → Freeze First Row**.",
         "Numbers: click the table, then **Format** sidebar → **Table** → the **Headers & Footer** menus → **Freeze Header Rows**."
       ]},
-      "Several apps can also turn a range into a formal **table** with a header, banded rows, filter buttons and formulas that extend themselves as rows are added. In Excel, click in the data and choose **Insert → Table** ([[kbd:Ctrl]] + [[kbd:T]]). In Google Sheets, select the data and choose **Format → Convert to table**, then pick a type for each column (Number, Text, Date, Dropdown and so on); Sheets then warns about entries that don’t match. In Numbers, everything already lives in tables with header rows."
+      "Several apps can also turn a range into a formal **table**. A table has a header, banded rows, filter buttons and formulas that extend themselves as rows are added. In Excel, click in the data and choose **Insert → Table** ([[kbd:Ctrl]] + [[kbd:T]]). In Google Sheets, select the data and choose **Format → Convert to table**. Then pick a type for each column (Number, Text, Date, Dropdown and so on). Sheets then warns about entries that don’t match. In Numbers, everything already lives in tables with header rows."
     ]},
     {h:"Data validation: stopping mistakes at the door", body:[
       "The best way to keep data consistent is to make inconsistent entries hard to type. [[data-validation|Data validation]] sets rules for what a cell may hold: a dropdown list of allowed values, whole numbers between 0 and 100, dates after a certain day.",
       {list:[
-        "Excel: select the cells, then **Data → Data Validation**, and choose what to **Allow** (for a dropdown, choose List and type the options separated by commas).",
+        "Excel: select the cells, then go to **Data → Data Validation**. Choose what to **Allow**. For a dropdown, choose List and type the options separated by commas.",
         "Google Sheets: **Insert → Dropdown**, or **Data → Data validation → Add rule**. By default, entries not on the list are rejected; **Advanced options** can change that to a warning.",
         "LibreOffice Calc: **Data → Validity**, then the **Criteria** tab (Allow: List, Whole Numbers, Date and more).",
-        "Numbers has no general validation rules, but you can turn cells into a **Pop-Up Menu** (**Format** sidebar → **Cell** → **Data Format**), which limits entries to the choices you list."
+        "Numbers has no general validation rules. But you can turn cells into a **Pop-Up Menu** (**Format** sidebar → **Cell** → **Data Format**). It limits entries to the choices you list."
       ]},
-      "Validation guards new typing. It doesn’t fix data that was already there, and in some apps pasting over a cell can bring in values that break the rule, so it’s a seatbelt, not a guarantee."
+      "Validation guards new typing. It doesn’t fix data that was already there. In some apps, pasting over a cell can bring in values that break the rule. So it’s a seatbelt, not a guarantee."
     ]},
     {h:"A first look at pivot tables", body:[
       "Once data is tidy, a [[pivot-table|pivot table]] can summarize it in seconds: total kilograms by crop, sales by month, volunteers by team, without writing a single SUMIF. You choose which column becomes the rows, which the columns, and which values to add up or count. Excel (**Insert → PivotTable**), Google Sheets (**Insert → Pivot table**), LibreOffice Calc (**Insert → Pivot Table**) and Numbers (arranged in the **Organize** sidebar’s **Pivot Options** tab) all have them. The {{pivot-tables}} entry in the Codex explains more. They only work well on tidy data, which is one more reason to keep it that way.",
@@ -676,14 +676,14 @@ ICA.addUnit({
     {id:"t1u9-l4-x7", type:"spot", q:"Here is the top of a shared club sheet. Tap every feature that will cause trouble when sorting, filtering or counting.", ask:"will cause trouble", mono:true, parts:[
       "Row 1: ", {t:"CLUB MEMBERS 2026 (merged A1:E1)", flag:true, why:"A merged title directly on top of the data gets in the way of sorting and filtering. Put the title elsewhere or unmerge it and leave a blank row before the headers."}, "\nRow 2: ", {t:"Name | Joined | Fee | Paid | Team", flag:false, why:"A single header row with short, unique names: fine."}, "\nRow 3: ", {t:"Ana Souza | 2026-01-14 | 45 | Yes | Blue", flag:false, why:"One record, one value per cell, a real date: fine."}, "\nRow 4: ", {t:"Ben Ito | 14 Jan | 45 | yes  | blue", flag:true, why:"“yes ” has a trailing space and different capitals, and the date may be text in a different style. A dropdown and real dates would keep entries consistent."}, "\nRow 5: ", {t:"Chen Wu | 2026-02-03 | 45 EUR | Yes | Red", flag:true, why:"“45 EUR” is text, so SUM and AVERAGE will skip it. Put the currency in the header or its own column and just 45 in the cell."}, "\nRow 6: ", {t:"Dina Haddad | 2026-02-10 | 45 | No | Red", flag:false, why:"A clean record: fine."}
     ]},
-      {id:"t1u9-l4-x8", type:"explain", q:"A community garden logs harvests with months spread across columns and entries like “2kg tomato” in single cells. Explain why that makes the sheet hard to work with, and how a tidy layout fixes it.", hint:"Remember the three rules: rows, columns, cells.", model:"The sheet is easy for a person to read but not for the spreadsheet. Because a crop name, a number and a unit are squashed into one cell, functions can’t add the kilograms or count the crops, and with months spread across columns you can’t filter or sort by month. A tidy layout follows three rules: each row is one record (one harvest weighing), each column is one variable (Plot, Month, Crop, Kg), and each cell holds one value, with the unit in the header. Then SUMIF, filters and sorting just work.", points:["Says mixed cells like “2kg tomato” stop functions from adding or counting", "States the tidy rules: one record per row, one variable per column, one value per cell", "Says the unit belongs in the header", "Says tidy data makes SUMIF, filtering or sorting work"]}
+      {id:"t1u9-l4-x8", type:"explain", q:"A community garden logs harvests with months spread across columns and entries like “2kg tomato” in single cells. Explain why that makes the sheet hard to work with, and how a tidy layout fixes it.", hint:"Remember the three rules: rows, columns, cells.", model:"The sheet is easy for a person to read but not for the spreadsheet. A crop name, a number and a unit are squashed into one cell, so functions can’t add the kilograms or count the crops. Months are spread across columns, so you can’t filter or sort by month. A tidy layout follows three rules. Each row is one record (one harvest weighing). Each column is one variable (Plot, Month, Crop, Kg). Each cell holds one value, with the unit in the header. Then SUMIF, filters and sorting just work.", points:["Says mixed cells like “2kg tomato” stop functions from adding or counting", "States the tidy rules: one record per row, one variable per column, one value per cell", "Says the unit belongs in the header", "Says tidy data makes SUMIF, filtering or sorting work"]}
    ],
    apply:{intro:"Tidy a small messy table, then sort, filter, freeze and validate it. Use the club example in this lesson or a small list of your own (a reading log, household expenses, a team roster).", tasks:[
      {t:"Tidy, then sort safely", app:{
        ms:["Type a small table with a header row and 6–10 records, using one value per cell (for example Name, Date, Category, Amount).","Add an **ID** column: type 1 and 2 in the first two rows, select both and fill down.","Click a single cell in the table and choose **Data → Sort**. Check **My data has headers**, choose Amount, **Largest to Smallest**, and click **OK**.","Check two rows. Then sort by ID, **Smallest to Largest**, to restore the original order."],
        google:["Type a small table with a header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2 in the first two rows, select both and drag the fill handle down.","Select the whole table, then **Data → Sort range → Advanced range sorting options**. Check **Data has header row**, choose Amount and **Z → A**, and click **Sort**.","Check two rows, then sort by ID A → Z to restore the order."],
        libre:["Type a small table with a header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2, select both and fill down.","Click a cell in the table and choose **Data → Sort**. On the **Options** tab check that **Range contains column labels** is checked. Sort by Amount, **Descending**, and click **OK**.","Check two rows, then sort by ID ascending to restore the order."],
-       apple:["Type a small table with one header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2, select both and drag the yellow autofill dot down.","Click the table, open the **Organize** sidebar → **Sort**, choose **Sort Entire Table**, click **Add a Column**, choose Amount and **Descending**, then **Sort Now** if it appears.","Check two rows, then sort by ID ascending to restore the order."]
+       apple:["Type a small table with one header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2, select both and drag the yellow autofill dot down.","Click the table and open the **Organize** sidebar → **Sort**. Choose **Sort Entire Table**, click **Add a Column**, and choose Amount and **Descending**. Then choose **Sort Now** if it appears.","Check two rows, then sort by ID ascending to restore the order."]
      }},
      {t:"Filter and freeze", app:{
        ms:["Click in the table and choose **Data → Filter**. Use the arrow on the Category header to show one category, then **Clear Filter**.","Choose **View → Freeze Panes → Freeze Top Row** and scroll down: the headers stay.","Optional: click in the data and press [[kbd:Ctrl]] + [[kbd:T]] to make it a table. Notice the filter buttons and banded rows."],
@@ -697,7 +697,7 @@ ICA.addUnit({
        libre:["Select the Category cells below the header.","Choose **Data → Validity**. On the **Criteria** tab, set **Allow** to **List** and type one entry per line: Food, Transport, Venue, Other. Click **OK**.","Try typing a value that isn’t on the list and read the message."],
        apple:["Select the Category cells below the header.","Open **Format** → **Cell**, set **Data Format** to **Pop-Up Menu**, and edit the list to Food, Transport, Venue, Other.","Click a cell and choose from the menu."]
      }, write:"Which messy habits did your original data have? What did you change?"}
-   ], proof:"A tidy table with an ID column that you sorted and restored, a filter you applied and cleared, a frozen header, and a dropdown list on one column."},
+   ], proof:"A tidy table with four things: an ID column that you sorted and restored, a filter you applied and cleared, a frozen header, and a dropdown list on one column."},
    read:[
      {book:"wss", where:"Chapter 9, Section 9.4 “Formatting and Templates in Microsoft Excel”: “Merging Cells” and “Freezing Columns and Rows”"},
      {book:"wss", where:"Chapter 11, Section 11.1 “Understanding Data, Data Validation, and Data Tables” (data validation and the filter buttons on a table)", note:"In this book, “Data Table” in Section 10.1 means Excel’s What-If Analysis tool, which is different from the tidy tables in this lesson."},
@@ -706,7 +706,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t1u9-l5", title:"Charts and sharing data", minutes:55,
-   hook:{q:"A scatter chart shows that on days when more ice cream is sold, more people get sunburnt. Does that prove ice cream causes sunburn?", options:["Yes: the dots clearly rise together","No: the pattern shows the two move together, not that one causes the other","Yes, if the chart has more than 100 dots","Only if the axes start at zero"], answer:1, reveal:"**No.** A scatter chart shows whether two measures move together, and a pattern shows a relationship, not that one causes the other. (Here, as Unit 6 showed with a similar example, hot sunny days could drive both.) Choosing the right chart for your question, and reading it honestly, is what this lesson is about, from bar and line charts to axes that tell the truth."},
+   hook:{q:"A scatter chart shows that on days when more ice cream is sold, more people get sunburnt. Does that prove ice cream causes sunburn?", options:["Yes: the dots clearly rise together","No: the pattern shows the two move together, not that one causes the other","Yes, if the chart has more than 100 dots","Only if the axes start at zero"], answer:1, reveal:"**No.** A scatter chart shows whether two measures move together. A pattern shows a relationship, not that one causes the other. (Here, as Unit 6 showed with a similar example, hot sunny days could drive both.) This lesson is about choosing the right chart for your question and reading it honestly. It covers bar and line charts, and axes that tell the truth."},
    goals:[
      "Choose a chart type that answers the question being asked",
      "Set axes and labels so a chart doesn’t exaggerate or hide differences",
@@ -725,7 +725,7 @@ ICA.addUnit({
         ["Do two measures move together?","Scatter chart","Each dot is one record. A pattern shows a relationship, not that one causes the other."],
         ["How are values spread out?","Histogram","Each bar counts how many values fall in a range (a “bin”)."]
       ]},
-      "OpenStax’s section on data analysis charts matches each chart type to a kind of data, and notes several times that flat 2D versions are easier to read than 3D ones.",
+      "OpenStax’s section on data analysis charts matches each chart type to a kind of data. It notes several times that flat 2D charts are easier to read than 3D ones.",
       "Two examples: Priya wants to know which of her five cakes sells best. That’s a comparison of categories, so a bar chart sorted from best to worst seller. Kenji wants to know whether his electricity use is rising through the year. That’s change over time, so a line chart with months along the bottom.",
       {lab:"fl-share", t:"Practice: work out each part’s share of a whole (the numbers behind a pie chart; uses $ from Lesson 2)"}
     ]},
@@ -733,8 +733,8 @@ ICA.addUnit({
       "Unit 6 showed how true numbers can give false impressions ({{misleading-numbers}}). Your own charts can do the same by accident. The biggest trap is the starting point of the value axis, called a **truncated axis** when it doesn’t start at zero.",
       {fig:'<svg viewBox="0 0 340 274"><text x="100" y="22" text-anchor="middle">Axis starts at 0</text><text x="265" y="22" text-anchor="middle">Axis starts at 45</text><path class="d-soft" d="M40,40 L160,40 M40,120 L160,120 M210,40 L330,40 M210,120 L330,120" stroke-width="1"/><path class="d-ink" d="M40,36 L40,200 L160,200 M210,36 L210,200 L330,200" stroke-width="1.5" fill="none"/><text class="s" x="34" y="204" text-anchor="end">0</text><text class="s" x="34" y="124" text-anchor="end">30</text><text class="s" x="34" y="44" text-anchor="end">60</text><text class="s" x="204" y="204" text-anchor="end">45</text><text class="s" x="204" y="124" text-anchor="end">50</text><text class="s" x="204" y="44" text-anchor="end">55</text><rect class="d-lup" x="55" y="61" width="40" height="139" stroke-width="1.5"/><rect class="d-gold" x="110" y="72" width="40" height="128" stroke-width="1.5"/><rect class="d-lup" x="225" y="88" width="40" height="112" stroke-width="1.5"/><rect class="d-gold" x="280" y="152" width="40" height="48" stroke-width="1.5"/><text x="75" y="55" text-anchor="middle">52</text><text x="130" y="66" text-anchor="middle">48</text><text x="245" y="82" text-anchor="middle">52</text><text x="300" y="146" text-anchor="middle">48</text><text x="75" y="218" text-anchor="middle">A</text><text x="130" y="218" text-anchor="middle">B</text><text x="245" y="218" text-anchor="middle">A</text><text x="300" y="218" text-anchor="middle">B</text><text x="10" y="246">Same numbers. On the right, A looks more</text><text x="10" y="264">than twice B; really it’s about 8% bigger.</text></svg>', alt:"Two bar charts of the same data: A is 52 and B is 48. In the left chart the axis starts at 0 and the bars are nearly the same height. In the right chart the axis starts at 45, so bar A is more than twice as tall as bar B. A caption says A is really only about 8 percent bigger.", cap:"The same two values with two different axis starting points."},
       {list:[
-        "**Bar and column charts: start the value axis at zero.** We read bars by their length. The UK Office for National Statistics’ chart guidance says a bar chart’s axis should always start at zero, and suggests a different chart (such as a dot plot) if that won’t work.",
-        "**Line charts can start above zero**, because we read the line’s position and slope, not a length. The same guidance allows cropping the axis for line and scatter charts when needed, and asks for a visible gap between the start of the axis and the first data point. If you crop, make the axis labels obvious.",
+        "**Bar and column charts: start the value axis at zero.** We read bars by their length. The UK Office for National Statistics’ chart guidance says a bar chart’s axis should always start at zero. If that won’t work, it suggests a different chart (such as a dot plot).",
+        "**Line charts can start above zero**, because we read the line’s position and slope, not a length. The same guidance allows cropping the axis for line and scatter charts when needed. It also asks for a visible gap between the start of the axis and the first data point. If you crop, make the axis labels obvious.",
         "**When comparing charts side by side, use the same scale** on each. Apps choose each chart’s axis automatically, and two automatic axes can make a small change look as big as a large one.",
         "**Watch what the app chose for you.** Spreadsheet apps sometimes start the axis above zero automatically when all the values are large. Check the lowest number on the axis every time."
       ]},
@@ -747,10 +747,10 @@ ICA.addUnit({
         "**Axis titles with units**: kg, minutes, euros, number of members, % of members.",
         "**Readable categories**: long names fit better on a horizontal bar chart than under columns.",
         "**A legend only when needed**: with one series, delete it; with a few lines, labeling each line directly is easier to read.",
-        "**Color that isn’t the only clue**: many people see some colors differently, and charts are often printed in black and white, so labels, positions or patterns should carry the meaning too.",
+        "**Color that isn’t the only clue**: many people see some colors differently. Charts are also often printed in black and white. So labels, positions or patterns should carry the meaning too.",
         "**The source and date of the data**, in a note under the chart."
       ]},
-      "In every app the steps are similar: select the data **including the header row**, insert a chart, check the app put the right things on each axis, then edit the title and axes. Excel uses **Insert** (desktop Excel also has **Recommended Charts**); Google Sheets uses **Insert → Chart** and the **Chart editor** panel; LibreOffice Calc uses **Insert → Chart**; Numbers has a **Chart** button in the toolbar."
+      "In every app the steps are similar. Select the data **including the header row**, insert a chart, and check that the app put the right things on each axis. Then edit the title and axes. Excel uses **Insert** (desktop Excel also has **Recommended Charts**). Google Sheets uses **Insert → Chart** and the **Chart editor** panel. LibreOffice Calc uses **Insert → Chart**. Numbers has a **Chart** button in the toolbar."
     ]},
     {h:"CSV: the plain-text table", body:[
       "When data moves between apps, websites and people, it very often travels as a [[csv|CSV]] file: comma-separated values. A CSV is a plain text file in which each line is one row and commas separate the cells:",
@@ -769,14 +769,14 @@ ICA.addUnit({
     ]},
     {h:"Encoding: why names turn into gibberish", body:[
       "A text file is stored as bytes, and a **text encoding** is the code that says which bytes mean which letters. Plain English letters are the same in almost every encoding, but accented letters and other scripts are not. The modern standard, used across the web, is [[utf-8|UTF-8]], which can store every script: é, ñ, ø, ü, Arabic, Chinese, Devanagari, emoji.",
-      "If a file saved in UTF-8 is opened as if it were in an older encoding, names are garbled: “José” becomes “JosÃ©”, because the two bytes that make é in UTF-8 are read as two separate letters. The data isn’t lost; it’s being read with the wrong code.",
+      "Sometimes a file saved in UTF-8 is opened as if it were in an older encoding. Then names are garbled: “José” becomes “JosÃ©”. This happens because the two bytes that make é in UTF-8 are read as two separate letters. The data isn’t lost. It is being read with the wrong code.",
       {list:[
-        "When saving, choose a UTF-8 option where you see one: desktop Excel lists **CSV UTF-8 (Comma delimited)** among its file types; LibreOffice Calc’s CSV export lets you pick **Unicode (UTF-8)** as the character set; Numbers has the text encoding under **Advanced Options** when you export.",
-        "When importing, look for a character-set or encoding setting and choose UTF-8 (often called 65001: Unicode (UTF-8) in Excel’s import window)."
+        "When saving, choose a UTF-8 option where you see one. Desktop Excel lists **CSV UTF-8 (Comma delimited)** among its file types. LibreOffice Calc’s CSV export lets you pick **Unicode (UTF-8)** as the character set. Numbers has the text encoding under **Advanced Options** when you export.",
+        "When importing, look for a character-set or encoding setting and choose UTF-8. Excel’s import window often calls it 65001: Unicode (UTF-8)."
       ]}
     ]},
     {h:"Importing a CSV without losing zeros", body:[
-      "Lesson 1’s problems come back on import. Double-clicking a CSV opens it in your spreadsheet app, which **guesses** each column’s type: postal codes and phone numbers lose their leading zeros, codes such as SEPT2 or 1-2 become dates, and long IDs are cut to 15 digits. Saving the file again then makes the damage permanent.",
+      "Lesson 1’s problems come back on import. Double-clicking a CSV opens it in your spreadsheet app, which **guesses** each column’s type. Postal codes and phone numbers lose their leading zeros. Codes such as SEPT2 or 1-2 become dates. Long IDs are cut to 15 digits. Saving the file again then makes the damage permanent.",
       "The safer route is to **import** the file and tell the app which columns are text:",
       {list:[
         "**Excel:** **Data → From Text/CSV**, choose the file, then **Transform Data**. Select each code column and set **Data Type → Text** (choose **Replace current**), then **Close & Load**. Desktop Excel’s **Automatic Data Conversion** options (Lesson 1) also apply when you open CSV files.",
@@ -837,7 +837,7 @@ ICA.addUnit({
     ]},
     {id:"t1u9-l5-x7", type:"mcq", q:"Fatima emails a CSV of her choir’s members. A colleague replies that names like “Zoë” and “Søren” look like “ZoÃ«” and “SÃ¸ren”. What’s the most likely explanation?", options:[
       {t:"The file is in UTF-8 but was opened with a different encoding; re-importing as UTF-8 should fix it", ok:true, why:"Right. Accented letters take two bytes in UTF-8. Read with an older encoding, each byte shows as a separate odd character. The data is intact; it was read with the wrong code."},
-      {t:"The file is corrupted and must be recreated", why:"The pattern (Ã plus another character in place of each accented letter) is the signature of an encoding mismatch, not corruption."},
+      {t:"The file is corrupted and must be recreated", why:"Each accented letter becomes Ã plus another character. This pattern is the signature of an encoding mismatch, not corruption."},
       {t:"CSV files can’t store accented letters", why:"They can: a CSV saved as UTF-8 can hold any script. The two programs just need to agree on the encoding."},
       {t:"The colleague’s spreadsheet has the wrong number format", why:"Number formats affect how numbers display, not how letters are decoded."}
     ]},
@@ -858,10 +858,10 @@ ICA.addUnit({
      }},
      {t:"Import a CSV and keep its zeros", app:{
        ms:["In a text editor, make a file with two lines: `Name,PostalCode` and `Ana,02134`. Save it as test.csv (in Notepad, choose **Save as type: All files** so it isn’t saved as .txt).","Double-click test.csv to open it in Excel: the postal code probably shows 2134. Close without saving.","In a blank workbook choose **Data → From Text/CSV**, pick the file, choose **Transform Data**, set the PostalCode column’s **Data Type** to **Text** (**Replace current**), then **Close & Load**. The zero stays."],
-       google:["In a text editor, make a file with two lines: `Name,PostalCode` and `Ana,02134`, and save it as test.csv.","In Google Sheets choose **File → Import → Upload**, pick the file, choose **Create new spreadsheet** and **Import data**.","Check the postal code. If the zero is gone, import again and uncheck any option to convert text to numbers and dates, or set the column to **Plain text** first and import into the existing sheet."],
+       google:["In a text editor, make a file with two lines: `Name,PostalCode` and `Ana,02134`, and save it as test.csv.","In Google Sheets choose **File → Import → Upload**, pick the file, choose **Create new spreadsheet** and **Import data**.","Check the postal code. If the zero is gone, import again. Uncheck any option to convert text to numbers and dates. Or set the column to **Plain text** first and import into the existing sheet."],
        libre:["In a text editor, make a file with two lines: `Name,PostalCode` and `Ana,02134`, and save it as test.csv.","In LibreOffice choose **File → Open** and pick the file. The **Text Import** dialog appears.","Set the character set to UTF-8 and the separator to Comma. Click the PostalCode column in the preview, set **Column type** to **Text**, and click **OK**. The zero stays."]
      }, appNote:"Numbers opens CSV files directly but doesn’t offer per-column import types like the other apps. Open test.csv in Numbers and see whether the zero survived, then try the same import in Google Sheets or LibreOffice Calc for comparison.", write:"What changed between your workbook and the CSV? Did the zero survive each way of opening?"}
-   ], proof:"A chart with a clear title, labeled axes and a value axis starting at zero; a CSV you exported and read in a text editor; and a CSV imported with its leading zero intact."},
+   ], proof:"A chart with a clear title, labeled axes and a value axis starting at zero. Also a CSV you exported and read in a text editor, and a CSV imported with its leading zero intact."},
    read:[
      {book:"wss", where:"Chapter 11, Section 11.5 “Data Analysis Charts” (including “Misleading Graphs” and the advice on 2D charts)"},
      {book:"wss", where:"Chapter 9, Section 9.6 “Text and Numbers in Google Sheets” (copying and pasting, number and text formats, and basic graphs)"}
@@ -1407,7 +1407,7 @@ ICA.addUnit({
    ]},
    {id:"t1u9-q03", lesson:"t1u9-l1", level:1, q:"Why can you subtract one date from another in a spreadsheet?", options:[
      {t:"Dates are stored as numbers counting days from a starting day", ok:true, why:"Each date is a serial number, so subtracting gives the number of days between them."},
-     {t:"Spreadsheets have a special subtract-dates button", why:"No special tool is needed: ordinary subtraction works because dates are numbers underneath."},
+     {t:"Spreadsheets have a special subtract-dates button", why:"You don’t need a special tool. Ordinary subtraction works because dates are numbers underneath."},
      {t:"Dates are stored as text and the app reads the words", why:"Text can’t be subtracted. Real dates are numbers; dates stored as text would give #VALUE!."},
      {t:"Only Excel can do this", why:"Google Sheets, LibreOffice Calc and Numbers all calculate with dates."}
    ]},
@@ -1461,7 +1461,7 @@ ICA.addUnit({
      {t:"11", why:"6 ÷ 2 is 3, so the result is 13."}
    ]},
    {id:"t1u9-q12", lesson:"t1u9-l2", level:1, q:"D2 contains =B2*C2. You copy D2 to D5. What formula does D5 contain?", options:[
-     {t:"=B5*C5", ok:true, why:"Relative references keep their position relative to the formula, so moving three rows down shifts each reference three rows down."},
+     {t:"=B5*C5", ok:true, why:"A relative reference keeps its position relative to the formula. So if the formula moves three rows down, each reference moves three rows down."},
      {t:"=B2*C2", why:"That would need absolute references ($B$2*$C$2). Ordinary references adjust when copied."},
      {t:"=E5*F5", why:"The columns don’t change, because D5 is in the same column as D2."},
      {t:"=B3*C3", why:"D5 is three rows below D2, so the references move three rows, to row 5."}
@@ -1475,7 +1475,7 @@ ICA.addUnit({
    {id:"t1u9-q14", lesson:"t1u9-l2", level:3, q:"Kenji puts an exchange rate in E1 and writes =B2*E1 in C2, then fills it down. C2 is right, but C3 onwards show 0. What’s wrong?", options:[
      {t:"The copies point at empty cells; he needs =B2*$E$1", ok:true, why:"Without $, E1 moves down with each copy to E2, E3 and so on, which are empty. Empty cells count as 0, so the results are 0. Locking E1 fixes every copy."},
      {t:"The exchange rate in E1 is formatted as a percentage", why:"Formatting wouldn’t make some rows 0 and others right. The pattern (only the first row works) points to the reference moving."},
-     {t:"Fill down only copies values, not formulas", why:"Filling copies formulas and adjusts their references, which is exactly what happened here."},
+     {t:"Fill down only copies values, not formulas", why:"Filling copies formulas and adjusts their references. That is exactly what happened here."},
      {t:"The B column contains text", why:"Then C2 would be affected too. Only the copies are wrong, so the copied reference is the problem."}
    ]},
    {id:"t1u9-q15", lesson:"t1u9-l2", level:2, q:"B2 contains =$A2*B$1. It is copied to C3. What does C3 contain?", options:[
@@ -1583,7 +1583,7 @@ ICA.addUnit({
      {t:"Merging all the header cells into one", why:"Merging joins cells; it doesn’t keep them on screen, and it causes sorting problems."}
    ]},
    {id:"t1u9-q32", lesson:"t1u9-l4", level:3, q:"Ana’s team logs expenses with categories typed freely, and COUNTIF misses many entries. What’s the best long-term fix?", options:[
-     {t:"Add a dropdown list for categories, then clean old entries", ok:true, why:"Data validation stops new inconsistent entries; a one-off clean-up fixes the old ones (validation doesn’t fix existing data)."},
+     {t:"Add a dropdown list for categories, then clean old entries", ok:true, why:"Data validation stops new entries that don’t match. A one-time clean-up fixes the old ones (validation doesn’t fix existing data)."},
      {t:"Color-code the categories", why:"Colors don’t make typed text consistent, and functions can’t reliably count colors."},
      {t:"Ask everyone on the team to type the category names more carefully", why:"Good intentions don’t stop stray spaces and spelling variants; a dropdown does."},
      {t:"Merge cells with the same category", why:"Merging breaks sorting and filtering and doesn’t fix spellings."}
@@ -1607,7 +1607,7 @@ ICA.addUnit({
      {t:"Her table has merged cells in the date column", why:"Merged cells cause other problems, but SUM including hidden rows is normal."}
    ]},
    {id:"t1u9-q36", lesson:"t1u9-l4", level:1, q:"What is a pivot table for?", options:[
-     {t:"Summarising tidy data by categories, like sales per month", ok:true, why:"You choose rows, columns and values, and the app builds the summary in a few clicks."},
+     {t:"Summarizing tidy data by categories, like sales per month", ok:true, why:"You choose rows, columns and values, and the app builds the summary in a few clicks."},
      {t:"Rotating a chart or table by 90 degrees so it fits on the page", why:"“Pivot” here means rearranging a summary, not rotating a picture."},
      {t:"Locking the header row", why:"That’s freezing panes."},
      {t:"Checking spelling in a column", why:"Pivot tables summarise; data validation and filters help with spelling problems."}
@@ -1647,7 +1647,7 @@ ICA.addUnit({
      {t:"It was read with a different text encoding", ok:true, why:"The file is UTF-8. é takes two bytes in UTF-8; read with an older encoding, they show as two separate characters. Re-import as UTF-8."},
      {t:"CSV files can’t store accented letters correctly", why:"They can, in UTF-8. The reader just has to use the same encoding."},
      {t:"The cell’s number format is wrong", why:"Number formats affect numbers and dates, not how letters are decoded."},
-     {t:"Someone typed the name incorrectly", why:"The consistent pattern (Ã plus another character) is the signature of an encoding mismatch."}
+     {t:"Someone typed the name incorrectly", why:"The same pattern (Ã plus another character) is the signature of an encoding mismatch."}
    ]},
    {id:"t1u9-q43", lesson:"t1u9-l5", level:3, q:"Kenji receives a CSV of customer postal codes, several starting with 0. What’s the safest way to bring it into his spreadsheet?", options:[
      {t:"Import it and set the postal code column to Text", ok:true, why:"For example with Data → From Text/CSV or a Text Import dialog. Importing lets him choose column types, so leading zeros are kept. Double-clicking lets the app guess and drop them."},
@@ -1656,7 +1656,7 @@ ICA.addUnit({
      {t:"Rename the file from .csv to .xlsx", why:"Renaming doesn’t convert the file and may stop it opening at all."}
    ]},
    {id:"t1u9-q44", lesson:"t1u9-l5", level:3, q:"Lucía downloads a CSV from a European website and every row appears in a single column, with semicolons between the values. What should she do?", options:[
-     {t:"Import it again and choose semicolon as the separator", ok:true, why:"In decimal-comma countries, CSVs often use semicolons. Import dialogs let you choose the separator (Google Sheets can detect it automatically)."},
+     {t:"Import it again and choose semicolon as the separator", ok:true, why:"In countries that use a decimal comma, CSVs often use semicolons. Import dialogs let you choose the separator (Google Sheets can detect it automatically)."},
      {t:"Delete the semicolons by hand", why:"That would merge all the values together. The semicolons are the separators."},
      {t:"Assume the file is damaged and ask for a new one", why:"The file is fine; it just uses a different separator."},
      {t:"Change the column’s number format", why:"Number formats don’t split text into columns."}

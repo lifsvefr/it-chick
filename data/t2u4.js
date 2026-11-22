@@ -192,7 +192,7 @@ ICA.addUnit({
   {id:"t2u4-l2", title:"Values and variables", minutes:55,
    hook:{q:"Type `0.1 + 0.2` into a JavaScript Console. What does it show?", options:["0.3","0.30000000000000004","0.3, but only after rounding","An error: JavaScript can’t add decimals"], answer:1, reveal:"It shows 0.30000000000000004. Computers store numbers in binary, and most decimals, including 0.1 and 0.2, can’t be stored exactly in binary, just as 1/3 can’t be written exactly in decimal. Most programming languages do the same. This lesson covers the kinds of values JavaScript has, how to name them with variables, and the handful of surprises worth knowing."},
    goals:[
-     "Recognise strings, numbers, booleans, `undefined` and `null`, and check a value’s type with `typeof`",
+     "Recognize strings, numbers, booleans, `undefined` and `null`, and check a value’s type with `typeof`",
      "Create variables with `const` and `let`, choose between them, and explain why modern code avoids `var`",
      "Build text with template literals",
      "Predict the classic number surprises: `0.1 + 0.2`, `NaN`, and `\"5\" + 1` versus `\"5\" * 1`",
@@ -368,7 +368,7 @@ ICA.addUnit({
    goals:[
      "Compare values with `===`, `!==`, `<`, `>`, `<=` and `>=`, and explain why `===` is safer than `==`",
      "Write `if`, `else if` and `else` blocks, and combine conditions with `&&`, `||` and `!`",
-     "Recognise truthy and falsy values, including the trap of `0` and `\"\"`",
+     "Recognize truthy and falsy values, including the trap of `0` and `\"\"`",
      "Create arrays, read items by index from 0, use `length` and `push`",
      "Repeat work with `for...of`, a classic `for` loop and `while`, and avoid infinite loops"
    ],

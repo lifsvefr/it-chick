@@ -5,7 +5,7 @@ ICA.addUnit({
   goals:[
     "Explain the main traditions of postwar Japanese foreign policy and the schools of thought that interpret them (mercantile and reluctant realism, normal nation, middle power, antimilitarism)",
     "Describe the 2014–15 security reforms, the 2022 security documents and the arms-export changes up to 2026, with the arguments for and against each",
-    "Analyse how the US–Japan alliance, host-nation support, Okinawa, the Free and Open Indo-Pacific and Japan’s other partnerships fit together",
+    "Analyze how the US–Japan alliance, host-nation support, Okinawa, the Free and Open Indo-Pacific and Japan’s other partnerships fit together",
     "Present Japan’s relations with China, South Korea, North Korea and Russia neutrally, attributing every position and using all names of disputed places",
     "Assess Japan as a development, UN, trade and climate actor, and write a well-sourced seminar paper on Japanese foreign policy"
   ],
@@ -170,7 +170,7 @@ ICA.addUnit({
    goals:[
      "Describe the institutions created in 2013 and the idea of “Proactive Contribution to Peace”",
      "Explain what the 2014 cabinet decision and the 2015 laws changed, including the three new conditions and the situation types",
-     "Summarise the 2022 security documents: threat assessments, counterstrike capabilities and the spending target, with their status as of November 2026",
+     "Summarize the 2022 security documents: threat assessments, counterstrike capabilities and the spending target, with their status as of November 2026",
      "Trace arms-export rules from the near-ban to the April 2026 revision",
      "Lay out the arguments for and against these changes, attributing each, and follow the 2026 review of the security documents"
    ],
@@ -296,7 +296,7 @@ ICA.addUnit({
      {t:"Two voices on one law", how:[
        "Choose the 2015 security legislation or the April 2026 export change.",
        "Find one statement by the government (a press conference or speech) and one by a critic (an opposition party, a bar association or a scholars’ group), each dated.",
-       "Summarise each neutrally in two sentences that start “X argues that…”."
+       "Summarize each neutrally in two sentences that start “X argues that…”."
      ], write:"Issue… Government statement, date, summary… Critic’s statement, date, summary… Where they actually disagree…"},
      {t:"Seminar questions", how:[
        "Choose one and write 150–250 words with a position and a counter-argument.",
@@ -1487,7 +1487,7 @@ ICA.addUnit({
    {id:"e4u18-q26", lesson:"e4u18-l3", level:2, q:"Which is one of the four pillars of the 2022 Economic Security Promotion Act?", options:[
      {t:"Stable supply of critical materials", ok:true, why:"Right; the others are critical infrastructure, critical technologies and secret patents."},
      {t:"A ban on all trade with China", why:"The law does not ban trade."},
-     {t:"Nationalising all chip firms", why:"It supports, not nationalizes."},
+     {t:"Nationalizing all chip firms", why:"It supports, not nationalizes."},
      {t:"Leaving the WTO", why:"Japan remains a WTO member."}]},
    {id:"e4u18-q27", lesson:"e4u18-l3", level:3, q:"Sione argues that Japan’s latticework of partners makes it less dependent on the United States. What is the best counter-argument?", options:[
      {t:"Most partners are US allies too, so the network may tie Japan closer to the US", ok:true, why:"Right: most partners are themselves US allies or partners, and none has a mutual defense treaty with Japan. A fair counter, though supporters reply that it adds options."},

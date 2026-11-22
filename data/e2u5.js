@@ -338,7 +338,7 @@ ICA.addUnit({
       {list:[
         "**Diplomacy.** [[diplomacy|Diplomacy]] is the practice of managing relations between states by negotiation, through official representatives. Its rules are among the oldest in world politics. The Vienna Convention on Diplomatic Relations (1961) protects embassies. It gives diplomats immunity from arrest in the country where they work, so even enemies can keep talking.",
         "**Treaties and law.** States sign agreements and mostly keep them. The legal scholar Louis Henkin wrote in *How Nations Behave* that “almost all nations observe almost all principles of international law and almost all of their obligations almost all of the time.” ({{international-law}}, Unit 7.)",
-        "**Organisations.** Bodies such as the UN, the World Health Organization or regional organizations give states places to meet. They also give rules to follow and help in enforcing them.",
+        "**Organizations.** Bodies such as the UN, the World Health Organization or regional organizations give states places to meet. They also give rules to follow and help in enforcing them.",
         "**Reciprocity and reputation.** A state that breaks deals finds others reluctant to deal with it, and the state it cheated may cheat back. Like households on the street, states expect to live together for a long time.",
         "**Habits and norms.** Some rules become so normal that breaking them is rare and shocking, such as treating ambassadors as untouchable."
       ]},
@@ -439,7 +439,7 @@ ICA.addUnit({
        "Pick one organization, such as the Red Cross or Red Crescent, the WHO or a regional organization near you.",
        "On its official website, find who its members or funders are and what it says it does.",
        "Decide whether it is an IGO or an NGO, and note one thing it can do that a single state can’t, and one thing it can’t do."
-     ], write:"Organisation… IGO or NGO, and why… Something it can do… Something it can’t…"}
+     ], write:"Organization… IGO or NGO, and why… Something it can do… Something it can’t…"}
     ],
     proof:"Notes on one example of order without a government, a labeled list of the actors in a news story, and a short profile of one IGO or NGO."
    },
@@ -455,7 +455,7 @@ ICA.addUnit({
    goals:[
      "Explain what levels of analysis are and why IR uses them",
      "Describe the individual, state and system levels, and what evidence each looks at",
-     "Summarise Waltz’s three images and Singer’s level-of-analysis problem",
+     "Summarize Waltz’s three images and Singer’s level-of-analysis problem",
      "Explain the outbreak of the First World War and the Cuban Missile Crisis at three levels",
      "Choose a level that fits a question, and spot explanations that mix levels carelessly"
    ],
@@ -620,8 +620,8 @@ ICA.addUnit({
       "The **League of Nations** began work in 1920, the first organization that aimed to keep peace worldwide. The United States never joined. The League settled some disputes but failed to stop aggression in the 1930s. Examples are Japan’s invasion of Manchuria (1931) and Italy’s invasion of Ethiopia (1935). The Second World War followed, in Europe from 1939 and in Asia from earlier, with fighting between Japan and China from 1937. It ended in 1945, after tens of millions of deaths, including the Holocaust and the atomic bombings of Hiroshima and Nagasaki.",
       "The **United Nations** was designed to do better. Its Charter was signed in San Francisco on 26 June 1945 and entered into force on 24 October 1945, with 51 original members. Unlike the League, it gave the most powerful states permanent seats and a veto in the Security Council ({{united-nations}}, Unit 7)."
     ]},
-    {h:"Decolonisation", body:[
-      "[[decolonization|Decolonisation]] is the process by which colonies became independent states, roughly from the 1940s to the 1970s, with later cases into the 1990s and beyond. The United Nations says that some 80 former colonies have gained independence since it was created.",
+    {h:"Decolonization", body:[
+      "[[decolonization|Decolonization]] is the process by which colonies became independent states, roughly from the 1940s to the 1970s, with later cases into the 1990s and beyond. The United Nations says that some 80 former colonies have gained independence since it was created.",
       {list:[
         "**Asia, late 1940s:** the Philippines (1946), India and Pakistan (1947), Burma and Sri Lanka (1948), and Indonesia. The partition of British India uprooted millions of people and killed hundreds of thousands or more; estimates vary widely. Indonesia declared independence in 1945 and won Dutch recognition in 1949 after years of fighting.",
         "**Africa, 1950s–1970s:** Ghana (1957) was one of the first in sub-Saharan Africa. So many states became independent in 1960 that it is called “the Year of Africa”. Algeria won independence in 1962 after a long war against France; Angola and Mozambique in 1975 after wars against Portugal; Zimbabwe in 1980 and Namibia in 1990.",
@@ -652,7 +652,7 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 352"><rect class="d-panel" x="6" y="6" width="328" height="104" rx="12" stroke-width="1.5"/><text x="18" y="28">Multipolar</text><text class="s" x="322" y="28" text-anchor="end">several great powers</text><circle class="d-lup" cx="62" cy="72" r="22" stroke-width="2"/><circle class="d-sage" cx="126" cy="72" r="20" stroke-width="2"/><circle class="d-gold" cx="188" cy="72" r="23" stroke-width="2"/><circle class="d-rose" cx="250" cy="72" r="19" stroke-width="2"/><circle class="d-soft" cx="304" cy="76" r="10" stroke-width="1.5"/><rect class="d-panel" x="6" y="122" width="328" height="104" rx="12" stroke-width="1.5"/><text x="18" y="144">Bipolar</text><text class="s" x="322" y="144" text-anchor="end">two superpowers</text><circle class="d-lup" cx="90" cy="186" r="32" stroke-width="2"/><circle class="d-rose" cx="250" cy="186" r="32" stroke-width="2"/><circle class="d-soft" cx="170" cy="200" r="9" stroke-width="1.5"/><circle class="d-soft" cx="148" cy="176" r="7" stroke-width="1.5"/><circle class="d-soft" cx="194" cy="174" r="8" stroke-width="1.5"/><rect class="d-panel" x="6" y="238" width="328" height="106" rx="12" stroke-width="1.5"/><text x="18" y="260">Unipolar</text><text class="s" x="322" y="260" text-anchor="end">one power far ahead</text><circle class="d-gold" cx="110" cy="302" r="38" stroke-width="2"/><circle class="d-soft" cx="196" cy="310" r="12" stroke-width="1.5"/><circle class="d-soft" cx="236" cy="300" r="10" stroke-width="1.5"/><circle class="d-soft" cx="272" cy="314" r="11" stroke-width="1.5"/><circle class="d-soft" cx="306" cy="300" r="9" stroke-width="1.5"/></svg>', alt:"Three panels of circles, where circle size stands for power. Multipolar: four large circles of similar size and one small one. Bipolar: two large circles with a few small ones between them. Unipolar: one very large circle and several small ones.", cap:"Polarity: the number of “poles”, or leading powers. Circle size stands for power."},
       "Which word fits today is a live debate, and this course takes no side. Some scholars argue the United States is still the single leading power. Some see a new bipolar rivalry between the United States and China. Others describe a multipolar world with India, Russia, the European Union and others as poles. Amitav Acharya suggests a “multiplex” world, like a cinema showing many films at once, in which many kinds of actors and regions shape order.",
       "Other changes since 1991 cut across polarity. They include [[globalization|globalization]] and the attacks of 11 September 2001 by al-Qaeda, a non-state group. Another is the 2008 financial crisis, after which leaders of the Group of Twenty (G20) economies began meeting regularly. There are also shared problems such as climate change and pandemics. Units 6 to 8 give you the tools to analyze them.",
-      {table:[["Misconception","Closer to the truth"],["The world has always been made of equal sovereign states.","Empires and other hierarchies were the norm for most of history; equal sovereignty spread mainly in the 20th century."],["Decolonisation happened all at once in 1945.","It came in waves, from the Americas around 1800 to Asia in the 1940s, Africa from the 1950s and the Pacific into the 1980s."],["The Cold War involved no fighting.","The superpowers didn’t fight each other directly, but many wars around the world were linked to their rivalry."],["Global South is a geographic term.","It is a political and economic grouping, not a line on the map."]]},
+      {table:[["Misconception","Closer to the truth"],["The world has always been made of equal sovereign states.","Empires and other hierarchies were the norm for most of history; equal sovereignty spread mainly in the 20th century."],["Decolonization happened all at once in 1945.","It came in waves, from the Americas around 1800 to Asia in the 1940s, Africa from the 1950s and the Pacific into the 1980s."],["The Cold War involved no fighting.","The superpowers didn’t fight each other directly, but many wars around the world were linked to their rivalry."],["Global South is a geographic term.","It is a political and economic grouping, not a line on the map."]]},
       {terms:["empire","colonialism","decolonization","self-determination","global-south","non-aligned-movement","cold-war","polarity","bipolarity","unipolarity","multipolarity"]}
     ]}
    ],
@@ -682,7 +682,7 @@ ICA.addUnit({
       ["Unipolarity","The United States as the only superpower in the 1990s","One power far ahead of all others."],
       ["Multipolarity","Several European great powers of similar strength before 1914","Several roughly equal great powers."],
       ["Non-alignment","Newly independent states refusing to join either Cold War bloc","The aim of the Non-Aligned Movement, founded in 1961."],
-      ["Decolonisation","Seventeen new states joining the UN in 1960","Colonies becoming independent states."]
+      ["Decolonization","Seventeen new states joining the UN in 1960","Colonies becoming independent states."]
     ]},
     {id:"e2u5-l5-x5", type:"order", q:"Put these events in time order, earliest first.", items:[
       {t:"The Congress of Vienna reorganizes Europe after Napoleon", why:"1814–1815."},
@@ -696,7 +696,7 @@ ICA.addUnit({
     {id:"e2u5-l5-x6", type:"spot", q:"Ana is checking a classmate’s paragraph. Tap each claim that is **wrong**.", ask:"wrong", parts:[
       {t:"In 1960, seventeen new states joined the UN, sixteen of them African.", flag:false, why:"Correct, according to the UN’s membership records."},
       " ",
-      {t:"Decolonisation happened all at once, in 1945.", flag:true, why:"Wrong. It came in waves: the Americas around 1800, Asia in the late 1940s, Africa from the 1950s, the Pacific into the 1980s."},
+      {t:"Decolonization happened all at once, in 1945.", flag:true, why:"Wrong. It came in waves: the Americas around 1800, Asia in the late 1940s, Africa from the 1950s, the Pacific into the 1980s."},
       " ",
       {t:"Most new states redrew their borders to match their nations.", flag:true, why:"Wrong. Most kept colonial-era borders; in 1964 the Organisation of African Unity agreed to respect the borders inherited at independence."},
       " ",
@@ -710,7 +710,7 @@ ICA.addUnit({
       {t:"The term only covers Africa.", why:"It is usually used for much of Africa, Asia, Latin America, the Caribbean and the Pacific."},
       {t:"The term means the Cold War’s Soviet bloc.", why:"The Soviet bloc was sometimes called the “Second World”; Global South is a different idea."}
     ]},
-    {id:"e2u5-l5-x8", type:"explain", q:"Explain why it is misleading to say that the modern system of sovereign states spread around the world because other regions copied Europe.", size:"3–4 sentences", model:"For most of history, much of the world was organized by empires and other hierarchies, such as the tributary system in East Asia, in which rulers were openly ranked rather than equal (though historians debate how much was ritual). Europe’s state system spread largely through conquest and colonial rule: at the Berlin Conference of 1884–1885, for example, European powers agreed rules for claiming Africa without inviting any African ruler. Colonised peoples then used the ideas of sovereignty and self-determination to win their freedom, in waves of decolonization. Most new states kept their colonial borders and joined the UN.", points:["Notes that empires and hierarchies were the norm before", "Explains that the system spread through conquest and colonial rule", "Gives an example, such as the Berlin Conference", "Explains that independence movements used the idea of sovereignty to win freedom"]}
+    {id:"e2u5-l5-x8", type:"explain", q:"Explain why it is misleading to say that the modern system of sovereign states spread around the world because other regions copied Europe.", size:"3–4 sentences", model:"For most of history, much of the world was organized by empires and other hierarchies, such as the tributary system in East Asia, in which rulers were openly ranked rather than equal (though historians debate how much was ritual). Europe’s state system spread largely through conquest and colonial rule: at the Berlin Conference of 1884–1885, for example, European powers agreed rules for claiming Africa without inviting any African ruler. Colonized peoples then used the ideas of sovereignty and self-determination to win their freedom, in waves of decolonization. Most new states kept their colonial borders and joined the UN.", points:["Notes that empires and hierarchies were the norm before", "Explains that the system spread through conquest and colonial rule", "Gives an example, such as the Berlin Conference", "Explains that independence movements used the idea of sovereignty to win freedom"]}
    ],
    apply:{
     intro:"Connect the big story to places you know. Use free, official sources such as the UN’s website or a national archive.",
@@ -754,7 +754,7 @@ ICA.addUnit({
      {t:"Colonialism", ok:true, why:"Yes. Rule of one people’s territory by a foreign power, with settlement, exploitation and a claim that the colonized are inferior, is colonialism."},
      {t:"Non-alignment", why:"Non-alignment was newly independent states refusing to join either Cold War bloc. It has nothing to do with conquering an island."},
      {t:"Bipolarity", why:"Bipolarity describes a system with two dominant powers. It is about how power is spread, not one kingdom ruling another people."},
-     {t:"Decolonisation", why:"Decolonisation is the opposite process: colonies becoming independent states."}]},
+     {t:"Decolonization", why:"Decolonization is the opposite process: colonies becoming independent states."}]},
    {id:"e2u5-cp04", lesson:"e2u5-l2", level:2, q:"Territory X has a permanent population, clear land and a working government. But all its treaties are signed for it by neighboring State Y, whose officials also control its ministries. Which Montevideo criterion is X weakest on?", options:[
      {t:"A permanent population", why:"The question says X has a permanent population, and there is no minimum size."},
      {t:"A defined territory", why:"X controls clear land. Even disputed borders wouldn’t stop it meeting this criterion."},
@@ -992,7 +992,7 @@ ICA.addUnit({
       {key:"From empires to nearly 200 states in a few centuries, with most of the growth after 1945."}
      ],
      builder:[
-      {table:[["Period","Key features"],["Before 1800s","Empires and regional orders, such as the East Asian tributary system and Indian Ocean trade"],["1815–1914","Concert of Europe; European empires expand (Berlin Conference 1884–1885); independence in the Americas (Haiti 1804, Spanish America 1810s–20s)"],["1914–1945","Two world wars; four empires collapse; League of Nations (1920); UN Charter (1945)"],["1945–1991","Decolonisation; Bandung (1955); Cold War bipolarity"],["1991–","Unipolar moment; globalization; debates about multipolarity"]]},
+      {table:[["Period","Key features"],["Before 1800s","Empires and regional orders, such as the East Asian tributary system and Indian Ocean trade"],["1815–1914","Concert of Europe; European empires expand (Berlin Conference 1884–1885); independence in the Americas (Haiti 1804, Spanish America 1810s–20s)"],["1914–1945","Two world wars; four empires collapse; League of Nations (1920); UN Charter (1945)"],["1945–1991","Decolonization; Bandung (1955); Cold War bipolarity"],["1991–","Unipolar moment; globalization; debates about multipolarity"]]},
       "UN membership tells the story in numbers (UN figures): 51 in 1945, 76 in 1955, 99 in 1960, 127 in 1970, 154 in 1980, 159 in 1990, 179 in 1992, 189 in 2000 and 193 in 2011.",
       "The **Concert of Europe** (after the Congress of Vienna, 1814–1815) was an early experiment in great powers managing crises together. The League of Nations and then the UN tried to make such management global and lasting.",
       "Empires fell in clusters. The First World War ended the German, Austro-Hungarian, Russian and Ottoman empires (the Ottoman sultanate was abolished in 1922), and China’s Qing dynasty had fallen in 1912. After the Second World War, the British, French, Dutch, Belgian and Portuguese empires largely ended over the following three decades, mostly through decolonization (a few small territories stayed under their rule longer)."
@@ -1009,14 +1009,14 @@ ICA.addUnit({
     sources:[{t:"United Nations: Growth in United Nations membership", url:"https://www.un.org/en/about-us/growth-in-un-membership"},{t:"Britannica: Peace of Westphalia", url:"https://www.britannica.com/event/Peace-of-Westphalia"}],
     checked:"2026-11"},
 
-   {id:"decolonization", title:"Decolonisation", aka:["decolonization","independence movements","Bandung Conference","Non-Aligned Movement"], tags:["international relations","history"],
+   {id:"decolonization", title:"Decolonization", aka:["decolonization","independence movements","Bandung Conference","Non-Aligned Movement"], tags:["international relations","history"],
     summary:"The process by which colonies became independent states, mostly from the 1940s to the 1970s, reshaping the UN and world politics.",
     levels:{
      starter:[
-      "**Decolonisation** is how colonies became independent states. Colonialism meant rule by a foreign power, usually with economic exploitation and claims that the colonized were inferior.",
+      "**Decolonization** is how colonies became independent states. Colonialism meant rule by a foreign power, usually with economic exploitation and claims that the colonized were inferior.",
       "It came in waves. In the Americas, independence came from 1776 (the United States), 1804 (Haiti) and the 1810s–1820s (most of Spanish America and Brazil). In Asia, a wave came in the late 1940s; in Africa, mainly from the late 1950s, with 1960 called “the Year of Africa”; in the Caribbean and the Pacific, mostly from the 1960s to the 1980s.",
       "The UN says some 80 former colonies have gained independence since 1945. It still lists 17 Non-Self-Governing Territories.",
-      {key:"Decolonisation turned a world of empires into a world of many sovereign states, mostly within one lifetime."}
+      {key:"Decolonization turned a world of empires into a world of many sovereign states, mostly within one lifetime."}
      ],
      builder:[
       {table:[["Region","Examples"],["South and Southeast Asia","Philippines 1946; India and Pakistan 1947; Burma, Sri Lanka 1948; Indonesia 1945/1949"],["Africa","Ghana 1957; 16 African states joined the UN in 1960; Algeria 1962; Angola, Mozambique 1975; Zimbabwe 1980; Namibia 1990"],["Caribbean","Jamaica, Trinidad and Tobago 1962"],["Pacific","Samoa 1962; Fiji 1970; Papua New Guinea 1975; Vanuatu 1980"]]},
@@ -1029,7 +1029,7 @@ ICA.addUnit({
       "Most new states kept colonial borders. The Organisation of African Unity’s 1964 Cairo resolution committed members to respect the borders existing at independence, a version of the legal principle *uti possidetis*. Supporters saw it as preventing endless wars; critics argue it locked in borders that divided peoples and grouped rivals.",
       "Historians debate why empires ended when they did: the strength of nationalist movements, the costs of war, the weakening of European powers after 1945, Cold War pressures and the changing norms expressed at the UN all played parts, in proportions that varied by case.",
       "Formal independence did not end all inequality. Dependency and world-systems scholars argue that economic patterns set under colonialism persisted ({{theories-global-inequality}}); postcolonial scholars study how colonial ideas lived on in knowledge and culture ({{postcolonialism-ir}}). Others stress the agency of new states, which used their numbers in the General Assembly to put racism, apartheid, development and trade on the agenda, for example through the Group of 77 (1964).",
-      "Decolonisation is unfinished in the UN’s formal sense, with 17 territories on its list. Whether particular territories should become independent, integrate with another state or keep an association is decided case by case and is often politically contested.",
+      "Decolonization is unfinished in the UN’s formal sense, with 17 territories on its list. Whether particular territories should become independent, integrate with another state or keep an association is decided case by case and is often politically contested.",
       "Language note: British and most Commonwealth spelling is “decolonisation”; US spelling is “decolonization”. Both mean the same thing, and UN documents use the “z” form."
      ]
     },
@@ -1088,7 +1088,7 @@ ICA.addUnit({
    {id:"diplomacy", term:"Diplomacy", def:"Managing relations between states by negotiation, through official representatives such as ambassadors.", codex:"anarchy-ir"},
    {id:"empire", term:"Empire", def:"A large political unit in which one center rules over many different peoples and territories, usually unequally.", codex:"modern-international-system"},
    {id:"colonialism", term:"Colonialism", def:"Rule over a people’s territory by a foreign power, usually with economic exploitation and claims that the colonized are inferior; often with settlement.", codex:"decolonization"},
-   {id:"decolonization", term:"Decolonisation", def:"The process by which colonies became independent states, especially from the 1940s to the 1970s.", codex:"decolonization"},
+   {id:"decolonization", term:"Decolonization", def:"The process by which colonies became independent states, especially from the 1940s to the 1970s.", codex:"decolonization"},
    {id:"self-determination", term:"Self-determination", def:"The principle that a people has the right to choose its own political status, named in the UN Charter and central to decolonization.", codex:"decolonization"},
    {id:"nationalism", term:"Nationalism", def:"The belief that a nation should have its own state, or more broadly strong loyalty to one’s nation. It has powered both independence movements and wars.", codex:"the-state"},
    {id:"cold-war", term:"Cold War", def:"The rivalry between the United States and the Soviet Union and their allies, roughly 1947–1991, fought mainly without direct war between the two superpowers.", codex:"cold-war"},
@@ -1296,7 +1296,7 @@ ICA.addUnit({
      {t:"The European Union’s first name", why:"The EU and its predecessors came after 1950."},
      {t:"A treaty dividing Africa", why:"No. The closest match is the Berlin Conference of 1884–1885, which set rules for outside powers claiming African territory."}]},
    {id:"e2u5-q39", lesson:"e2u5-l5", level:2, q:"Why did UN membership jump between 1955 and 1970?", options:[
-     {t:"Decolonisation: dozens of former colonies in Africa, Asia and the Caribbean became independent and joined.", ok:true, why:"Right. Membership rose from 76 to 127; 17 states joined in 1960 alone."},
+     {t:"Decolonization: dozens of former colonies in Africa, Asia and the Caribbean became independent and joined.", ok:true, why:"Right. Membership rose from 76 to 127; 17 states joined in 1960 alone."},
      {t:"The Soviet Union broke up.", why:"That happened in 1991, raising membership in the early 1990s."},
      {t:"Many states merged into larger ones.", why:"Mergers would reduce the number of members."},
      {t:"The UN started admitting cities.", why:"Only states can be UN members."}]},
@@ -1316,7 +1316,7 @@ ICA.addUnit({
      {t:"Unipolarity", why:"Unipolarity has one power far ahead of all others."},
      {t:"Non-alignment", why:"Non-alignment was a policy of staying out of blocs, not a distribution of power."}]},
    {id:"e2u5-q43", lesson:"e2u5-l5", level:3, q:"Tomás says: “The modern state system spread because the rest of the world freely copied Europe.” What is missing from this account?", options:[
-     {t:"Conquest and colonial rule spread it, not free copying.", ok:true, why:"Right. Colonised peoples then used the idea of sovereignty to win independence. The spread was shaped by coercion and by resistance, not by free copying alone."},
+     {t:"Conquest and colonial rule spread it, not free copying.", ok:true, why:"Right. Colonized peoples then used the idea of sovereignty to win independence. The spread was shaped by coercion and by resistance, not by free copying alone."},
      {t:"Nothing: that is exactly what happened.", why:"It leaves out colonialism, which drew most of the world into the European system by force."},
      {t:"The state system was invented in Asia and copied by Europe.", why:"That reverses the story without evidence; Asia had its own systems, such as the tributary system, but the sovereign-state model spread from Europe."},
      {t:"Every country was already a sovereign state in 1648.", why:"Most of the world was ruled by empires long after 1648."}]},

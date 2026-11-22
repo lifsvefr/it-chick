@@ -7,7 +7,7 @@ ICA.addUnit({
     "Use Berry’s acculturation strategies and Portes and Zhou’s segmented assimilation to explain different experiences of migrants and their children, with the critiques of each",
     "Explain transnationalism, social remittances and superdiversity, and describe a transnational social field with real examples from several regions",
     "Define diaspora with Safran, Cohen and Brubaker, describe how states engage diasporas, and explain the main theories of return migration",
-    "Analyse how migration is framed in media and politics, summarize carefully what research says about wages, public finances and crime, and plan migration research that respects vulnerability, consent, safety and positionality"
+    "Analyze how migration is framed in media and politics, summarize carefully what research says about wages, public finances and crime, and plan migration research that respects vulnerability, consent, safety and positionality"
   ],
   read:[
     {book:"imis", where:"Chapter 14 “The Contested Concept of ‘Integration’” (Sarah Spencer), Chapter 15 “Transnationalism” (Ludger Pries), Chapter 16 “Cities of Migration” (Asya Pisarevskaya and Peter Scholten), Chapter 21 “The Governance of Migration-Related Diversity” (Thomas Huddleston and Peter Scholten), Chapter 23 “Public Opinion and the Politics of Migration” (James Dennison and Alina Vrânceanu) and Chapter 25 “Qualitative Methods in Migration Research” (Ricard Zapata-Barrero and Evren Yalaz)", note:"Open-access chapters written by migration researchers. They are academic in tone; read each one after the matching lesson, which builds the background they take for granted."},
@@ -176,7 +176,7 @@ ICA.addUnit({
      "Use Berry’s two questions to place a situation in one of four acculturation strategies, and explain the role of the wider society",
      "Define the second generation and the 1.5 generation, and explain why these labels need care",
      "Explain Portes and Zhou’s segmented assimilation theory, its three paths and the factors behind them",
-     "Summarise the main critiques of segmented assimilation and what European comparisons add"
+     "Summarize the main critiques of segmented assimilation and what European comparisons add"
    ],
    learn:[
     {h:"Acculturation: change on both sides", body:[
@@ -193,7 +193,7 @@ ICA.addUnit({
         "**Is it valued to have relationships with, and take part in, the wider society?**"
       ]},
       "Crossing the two answers gives four [[acculturation-strategies|acculturation strategies]]:",
-      {fig:'<svg viewBox="0 0 340 330"><text x="220" y="18" text-anchor="middle">Keep heritage culture?</text><text x="160" y="40" text-anchor="middle">Yes</text><text x="280" y="40" text-anchor="middle">No</text><text x="50" y="18" text-anchor="middle">Join wider</text><text x="50" y="34" text-anchor="middle">society?</text><text x="50" y="104" text-anchor="middle">Yes</text><text x="50" y="208" text-anchor="middle">No</text><rect class="d-sage" x="100" y="50" width="118" height="100" rx="8" stroke-width="2"/><text x="159" y="96" text-anchor="middle">Integration</text><text class="s" x="159" y="116" text-anchor="middle">keep both</text><rect class="d-lup" x="222" y="50" width="114" height="100" rx="8" stroke-width="2"/><text x="279" y="96" text-anchor="middle">Assimilation</text><text class="s" x="279" y="116" text-anchor="middle">take on the new</text><rect class="d-gold" x="100" y="154" width="118" height="100" rx="8" stroke-width="2"/><text x="159" y="200" text-anchor="middle">Separation</text><text class="s" x="159" y="220" text-anchor="middle">heritage only</text><rect class="d-rose" x="222" y="154" width="114" height="100" rx="8" stroke-width="2"/><text x="279" y="200" text-anchor="middle">Marginalisation</text><text class="s" x="279" y="220" text-anchor="middle">neither; rarely</text><text class="s" x="279" y="236" text-anchor="middle">a free choice</text><text class="s" x="170" y="280" text-anchor="middle">Berry (1997). The wider society’s attitudes</text><text class="s" x="170" y="298" text-anchor="middle">and policies shape which options are</text><text class="s" x="170" y="316" text-anchor="middle">really open to people.</text></svg>', alt:"A two-by-two grid. Columns ask: keep heritage culture, yes or no. Rows ask: join the wider society, yes or no. Yes and yes is integration (keep both). No heritage but yes to the wider society is assimilation. Yes heritage but no to the wider society is separation. No and no is marginalization, rarely a free choice.", cap:"Berry’s acculturation strategies. The labels describe how individuals and groups combine two cultures, not who they are."},
+      {fig:'<svg viewBox="0 0 340 330"><text x="220" y="18" text-anchor="middle">Keep heritage culture?</text><text x="160" y="40" text-anchor="middle">Yes</text><text x="280" y="40" text-anchor="middle">No</text><text x="50" y="18" text-anchor="middle">Join wider</text><text x="50" y="34" text-anchor="middle">society?</text><text x="50" y="104" text-anchor="middle">Yes</text><text x="50" y="208" text-anchor="middle">No</text><rect class="d-sage" x="100" y="50" width="118" height="100" rx="8" stroke-width="2"/><text x="159" y="96" text-anchor="middle">Integration</text><text class="s" x="159" y="116" text-anchor="middle">keep both</text><rect class="d-lup" x="222" y="50" width="114" height="100" rx="8" stroke-width="2"/><text x="279" y="96" text-anchor="middle">Assimilation</text><text class="s" x="279" y="116" text-anchor="middle">take on the new</text><rect class="d-gold" x="100" y="154" width="118" height="100" rx="8" stroke-width="2"/><text x="159" y="200" text-anchor="middle">Separation</text><text class="s" x="159" y="220" text-anchor="middle">heritage only</text><rect class="d-rose" x="222" y="154" width="114" height="100" rx="8" stroke-width="2"/><text x="279" y="200" text-anchor="middle">Marginalization</text><text class="s" x="279" y="220" text-anchor="middle">neither; rarely</text><text class="s" x="279" y="236" text-anchor="middle">a free choice</text><text class="s" x="170" y="280" text-anchor="middle">Berry (1997). The wider society’s attitudes</text><text class="s" x="170" y="298" text-anchor="middle">and policies shape which options are</text><text class="s" x="170" y="316" text-anchor="middle">really open to people.</text></svg>', alt:"A two-by-two grid. Columns ask: keep heritage culture, yes or no. Rows ask: join the wider society, yes or no. Yes and yes is integration (keep both). No heritage but yes to the wider society is assimilation. Yes heritage but no to the wider society is separation. No and no is marginalization, rarely a free choice.", cap:"Berry’s acculturation strategies. The labels describe how individuals and groups combine two cultures, not who they are."},
       "Berry stressed that the **wider society** has strategies too. When it expects people to assimilate, he called the result a *melting pot*. When it forces separation, he called it *segregation*. When it pushes people to the margins, *exclusion*. And when it supports keeping heritage while taking part, *multiculturalism*. A newcomer can only “choose” integration if the society lets them.",
       {warn:"Berry’s “integration” is a psychological strategy of an individual or group. It isn’t the same as a government’s integration policy from Lesson 1, though the two are related. Always check which meaning a text intends."}
     ]},
@@ -235,11 +235,11 @@ ICA.addUnit({
       {terms:["acculturation","acculturation-strategies","second-generation","one-point-five-generation","segmented-assimilation","selective-acculturation"]}
     ]},
     {h:"Common misconceptions", body:[
-      {table:[["Misconception","Closer to the truth"],["Acculturation changes only migrants.","From the 1936 definition on, acculturation can change either or both groups in contact."],["Marginalisation is a choice people make.","It is rarely chosen; exclusion and discrimination by the wider society often drive it."],["Second-generation people are migrants.","Most have never migrated. The label describes their parents’ history, and many prefer not to be called migrants."],["Segmented assimilation says some cultures fail.","The theory explains paths by conditions such as reception, policy, discrimination and resources, not by any group’s character."],["Integration outcomes for one origin group are the same everywhere.","European comparisons show the same origin group doing very differently in different countries’ institutions."]]}
+      {table:[["Misconception","Closer to the truth"],["Acculturation changes only migrants.","From the 1936 definition on, acculturation can change either or both groups in contact."],["Marginalization is a choice people make.","It is rarely chosen; exclusion and discrimination by the wider society often drive it."],["Second-generation people are migrants.","Most have never migrated. The label describes their parents’ history, and many prefer not to be called migrants."],["Segmented assimilation says some cultures fail.","The theory explains paths by conditions such as reception, policy, discrimination and resources, not by any group’s character."],["Integration outcomes for one origin group are the same everywhere.","European comparisons show the same origin group doing very differently in different countries’ institutions."]]}
     ]}
    ],
    try:[
-    {id:"e2u12-l2-x1", type:"sort", q:"Place each person’s situation in Berry’s grid.", buckets:["Integration","Assimilation","Separation","Marginalisation"], items:[
+    {id:"e2u12-l2-x1", type:"sort", q:"Place each person’s situation in Berry’s grid.", buckets:["Integration","Assimilation","Separation","Marginalization"], items:[
       {t:"Tomás speaks Portuguese at home, plays in a community band from his parents’ region and also captains his workplace’s mixed football team.", b:0, why:"He keeps his heritage culture and takes an active part in the wider society: both answers are “yes”."},
       {t:"Mei has stopped speaking her first language, even with her parents, and says she wants to be “just like everyone else here”.", b:1, why:"She gives up the heritage culture and orients fully to the wider society."},
       {t:"An older man lives and works entirely within his own language community and avoids contact with the wider society.", b:2, why:"Keeping the heritage culture while having little contact with the wider society is separation."},
@@ -316,7 +316,7 @@ ICA.addUnit({
      "Explain transnationalism and the idea of a transnational social field, with examples from several regions",
      "Distinguish economic, political and social-cultural transnational ties",
      "Define social remittances and give examples of ideas and practices that travel with migrants",
-     "Summarise the main critiques of transnationalism, including methodological nationalism, and how transnational ties relate to integration",
+     "Summarize the main critiques of transnationalism, including methodological nationalism, and how transnational ties relate to integration",
      "Explain superdiversity and its critiques"
    ],
    learn:[
@@ -498,7 +498,7 @@ ICA.addUnit({
     {h:"Cohen’s types", body:[
       "The sociologist Robin Cohen, in *Global Diasporas* (first edition 1997), widened the definition. He argued that dispersal need not be traumatic: people may also scatter in search of work, trade or as part of an empire. A diaspora shows a strong group identity sustained over a long time, and a sense of connection with members in other countries. It often offers its members the possibility of a creative, enriching life in the places where they live.",
       "He sorted diasporas into ideal types; the second edition (2008) has chapters on five:",
-      {table:[["Type","Examples Cohen used"],["Victim","Jewish, African and Armenian diasporas"],["Labor","Indian [[indentured-labour|indentured]] workers in the 19th and early 20th centuries"],["Imperial","British settlers across the empire"],["Trade","Chinese and Lebanese trading networks"],["Deterritorialised","Caribbean peoples, whose ancestral homelands are many and distant"]]},
+      {table:[["Type","Examples Cohen used"],["Victim","Jewish, African and Armenian diasporas"],["Labor","Indian [[indentured-labour|indentured]] workers in the 19th and early 20th centuries"],["Imperial","British settlers across the empire"],["Trade","Chinese and Lebanese trading networks"],["Deterritorialized","Caribbean peoples, whose ancestral homelands are many and distant"]]},
       {warn:"These are ideal types: tools for comparison, not labels that fix a group forever. Most diasporas fit more than one type, and change over time. Cohen’s own examples are meant as illustrations, not rankings of suffering or success."}
     ]},
     {h:"Brubaker: diaspora as a claim", body:[
@@ -616,10 +616,10 @@ ICA.addUnit({
   {id:"e2u12-l5", title:"Stories, evidence and ethics", minutes:60,
    hook:{q:"Economists surveyed thousands of people in six rich countries and asked: “What share of the people living in your country are immigrants?” What did they find?", options:["People greatly overestimated the share","People guessed almost exactly right","People greatly underestimated the share","Most people refused to answer"], answer:0, reveal:"**People greatly overestimated it** in all six countries: France, Germany, Italy, Sweden, the United Kingdom and the United States. The study, by Alberto Alesina, Armando Miano and Stefanie Stantcheva, was published in 2023. Many respondents also misjudged who immigrants are, for example their education and religion. Our pictures of migration come largely from stories and media, not from statistics. This lesson looks at how those stories work, what the evidence says, and how to research migration ethically. It ends with a send-off for the Social Science Primers."},
    goals:[
-     "Summarise what research says shapes public attitudes to migration, including misperceptions and contact",
-     "Analyse how a news story frames migration, using Entman’s functions of framing",
+     "Summarize what research says shapes public attitudes to migration, including misperceptions and contact",
+     "Analyze how a news story frames migration, using Entman’s functions of framing",
      "Define xenophobia and othering, and describe responses to them",
-     "Summarise carefully what research finds on wages, public finances and crime, and why results differ by place, group, period and method",
+     "Summarize carefully what research finds on wages, public finances and crime, and why results differ by place, group, period and method",
      "Plan migration research that respects vulnerability, consent, safety and positionality"
    ],
    learn:[
@@ -768,7 +768,7 @@ ICA.addUnit({
    {id:"e2u12-cp02", lesson:"e2u12-l2", level:1, q:"Lan keeps her heritage language, food and friendships, but avoids contact with the wider society where she lives. Which of Berry’s strategies fits best?", options:[
      {t:"Integration", why:"Integration means keeping heritage culture and also taking part in the wider society. Lan avoids the wider society."},
      {t:"Assimilation", why:"Assimilation means giving up heritage culture to join the wider society. Lan does the opposite."},
-     {t:"Marginalisation", why:"Marginalisation means little connection to either culture. Lan keeps her heritage culture strongly."},
+     {t:"Marginalization", why:"Marginalization means little connection to either culture. Lan keeps her heritage culture strongly."},
      {t:"Separation", ok:true, why:"Correct. Keeping heritage culture while avoiding the wider society is separation. Berry notes that discrimination can push people toward it."}]},
    {id:"e2u12-cp03", lesson:"e2u12-l4", level:1, q:"After ten years abroad, Kwesi returns to his home village and tries to introduce farming methods he learned there. Many neighbors resist the changes. Which of Cerase’s types of return fits best?", options:[
      {t:"Return of innovation", ok:true, why:"Yes. Cerase described returnees who try to bring new ideas and skills, and often meet resistance, as the return of innovation."},
@@ -802,7 +802,7 @@ ICA.addUnit({
      {t:"An event where residents watch newcomers perform, without talking", why:"Watching from a distance isn’t contact as equals, and there is no shared goal."}]},
    {id:"e2u12-cp09", lesson:"e2u12-l1", level:3, q:"A government says integration is “a two-way process”. But its schools punish students for speaking heritage languages, and employers routinely ignore foreign qualifications. What does Berry’s work suggest about this situation?", options:[
      {t:"Because the policy says “two-way”, all newcomers will integrate", why:"Words in a policy don’t decide outcomes. What institutions actually do shapes which options are open."},
-     {t:"Newcomers who end up marginalized have freely chosen to reject both cultures", why:"Marginalisation is rarely chosen. Exclusion and discrimination by the wider society often drive it."},
+     {t:"Newcomers who end up marginalized have freely chosen to reject both cultures", why:"Marginalization is rarely chosen. Exclusion and discrimination by the wider society often drive it."},
      {t:"Berry’s “integration” is the same thing as government policy, so the policy’s wording settles it", why:"Berry’s integration is a psychological strategy of individuals or groups. It is related to, but not the same as, a government’s integration policy."},
      {t:"In practice the society demands assimilation, so newcomers can’t freely choose integration and some may be pushed to the margins", ok:true, why:"Right. Berry argued that people can only choose integration if the wider society lets them keep their heritage while taking part. Two-way rhetoric doesn’t help if practice is one-way."}]},
    {id:"e2u12-cp10", lesson:"e2u12-l3", level:3, q:"Adaeze works as a surgeon in London for twelve years, then opens a hospital in Lagos. She still teaches in London twice a year and runs projects with colleagues in both cities. Which ideas fit best?", options:[
@@ -861,7 +861,7 @@ ICA.addUnit({
      starter:[
       "**Acculturation** is the change that happens when people from different cultures live in continuous contact. It can change newcomers, the society around them, or both: new words, foods, habits, values and identities.",
       "The psychologist John Berry suggested that people face two questions: do I keep my heritage culture? and do I take part in the wider society? The answers give four strategies:",
-      {table:[["Keep heritage culture?","Take part in wider society: yes","Take part in wider society: no"],["Yes","Integration","Separation"],["No","Assimilation","Marginalisation"]]},
+      {table:[["Keep heritage culture?","Take part in wider society: yes","Take part in wider society: no"],["Yes","Integration","Separation"],["No","Assimilation","Marginalization"]]},
       "People don’t choose freely. If the wider society discriminates or demands assimilation, some options close. And people may combine cultures differently at home, at work and with friends.",
       "For example, a family may keep its language and religion at home while children pick up new slang, sports and music at school, and the neighborhood’s shops start selling the family’s favorite foods.",
       {key:"Acculturation is two-sided, and the options open to newcomers depend on how the wider society treats them."}
@@ -875,7 +875,7 @@ ICA.addUnit({
      ],
      pro:[
       "Critiques cluster around measurement and assumptions. Floyd Rudmin (2003) argued that the fourfold scheme is hard to measure cleanly, that items asking about two cultures at once confuse respondents, and that evidence for the benefits of integration was weaker than often claimed. Others note that acculturation orientations are **domain-specific** (private vs public life), change over time and differ between generations in one family.",
-      "The model treats “heritage” and “wider” cultures as two stable poles, while many people, especially young people in diverse cities, build hybrid or multiple identities and belong to several minorities at once. Power is also central: the larger society’s attitudes and policies, and [[discrimination]], shape which strategies are feasible. Marginalisation in particular is rarely chosen.",
+      "The model treats “heritage” and “wider” cultures as two stable poles, while many people, especially young people in diverse cities, build hybrid or multiple identities and belong to several minorities at once. Power is also central: the larger society’s attitudes and policies, and [[discrimination]], shape which strategies are feasible. Marginalization in particular is rarely chosen.",
       "Acculturation research is mainly psychological; sociologists studying the same processes tend to speak of assimilation, integration and incorporation, and to emphasize structures (labor markets, schools, law). Reading across both literatures helps: Berry’s grid captures orientations, while segmented assimilation and integration frameworks capture opportunities and constraints.",
       "Acculturation also reaches the receiving society: the spread of foods, words, music and festivals, and changes in institutions, are acculturation in the wider society, a reminder of the 1936 phrase “either or both groups”. Studies of the majority’s own acculturation expectations, what locals want newcomers to do, show that mismatches between what migrants prefer and what the majority expects are linked with more conflict."
      ]
@@ -1152,7 +1152,7 @@ ICA.addUnit({
      {t:"Integration as a two-way process", ok:true, why:"Both institutions and newcomers adapt: the hallmark of two-way integration."},
      {t:"Assimilation", why:"Assimilation expects only newcomers to change; here institutions adapt too."},
      {t:"Separation", why:"Separation is Berry’s term for keeping heritage while avoiding the wider society, not a government program like this."},
-     {t:"Marginalisation", why:"Marginalisation is exclusion from both cultures, the opposite of this policy’s aim."}]},
+     {t:"Marginalization", why:"Marginalization is exclusion from both cultures, the opposite of this policy’s aim."}]},
    {id:"e2u12-q03", lesson:"e2u12-l1", level:1, q:"Which country was the first to adopt multiculturalism as official policy, and when?", options:[
      {t:"Canada, in 1971", ok:true, why:"Correct. The Canadian Multiculturalism Act followed in 1988."},
      {t:"Australia, in 1951", why:"Australia adopted multicultural policies later, from the 1970s."},
@@ -1198,7 +1198,7 @@ ICA.addUnit({
      {t:"Integration", ok:true, why:"He keeps his heritage culture and takes part in the wider society."},
      {t:"Assimilation", why:"He hasn’t given up his heritage culture."},
      {t:"Separation", why:"He takes an active part in the wider society."},
-     {t:"Marginalisation", why:"He is connected to both cultures, not neither."}]},
+     {t:"Marginalization", why:"He is connected to both cultures, not neither."}]},
    {id:"e2u12-q12", lesson:"e2u12-l2", level:2, q:"In Berry’s model, what does the wider society’s strategy called “exclusion” correspond to?", options:[
      {t:"Pushing people to the margins, corresponding to marginalization", ok:true, why:"Berry pairs marginalization on the individual side with exclusion on the society’s side."},
      {t:"Supporting both heritage and participation", why:"That is multiculturalism."},

@@ -188,7 +188,7 @@ ICA.addUnit({
     ]},
     {h:"In-text citations", body:[
       "Every APA in-text citation has the author’s surname and the year. There are two ways to write it:",
-      {table:[["Authors","Parenthetical","Narrative"],["One","(Haddad, 2021)","Haddad (2021)"],["Two","(Okafor & Ramírez, 2023)","Okafor and Ramírez (2023)"],["Three or more","(Okafor et al., 2023)","Okafor et al. (2023)"],["Organisation","(Coastal Water Trust, 2024)","Coastal Water Trust (2024)"]]},
+      {table:[["Authors","Parenthetical","Narrative"],["One","(Haddad, 2021)","Haddad (2021)"],["Two","(Okafor & Ramírez, 2023)","Okafor and Ramírez (2023)"],["Three or more","(Okafor et al., 2023)","Okafor et al. (2023)"],["Organization","(Coastal Water Trust, 2024)","Coastal Water Trust (2024)"]]},
       "Use `&` inside brackets and `and` in your sentence. [[et-al|“Et al.”]] means “and others” (a period after “al.”, none after “et”). In APA 7th it’s used for three or more authors **from the first citation**. Two-author works always show both names.",
       {h:"Page numbers"},
       "A **direct quotation** always needs a location: `(Haddad, 2021, p. 50)` for one page and `(Haddad, 2021, pp. 50–51)` for a range, with an en dash. If there are no page numbers, use a paragraph number, a section name or a timestamp: `(Coastal Water Trust, 2024, para. 3)`. For a paraphrase, page numbers are encouraged (they help readers), but not required.",
@@ -313,7 +313,7 @@ ICA.addUnit({
         "**Editions**: a later edition goes after the title, shortened, then a comma: `*Title*. 2nd ed., Publisher, Year.`",
         "**Numbers and dates**: `vol. 14, no. 2`, then the date. Day month year, with long month names shortened: `5 Mar. 2024`.",
         "**Location**: pages with `pp.`, or a DOI (preferred) or a URL. DOIs start `https://doi.org/`; for other URLs MLA recommends leaving out `https://`. End the entry with a period, even after a DOI or URL.",
-        "**Organisation that is both author and publisher**: skip the author and start with the title."
+        "**Organization that is both author and publisher**: skip the author and start with the title."
       ]},
       {ex:"Okafor, Adaeze N., et al. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology*, vol. 14, no. 2, 2023, pp. 45–62, https://doi.org/10.5555/jse.142.", label:"MLA: journal article", mono:true},
       {lab:"cl-mla-article", t:"Practice: an MLA journal article"},
@@ -436,7 +436,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t4u4-l4", title:"Quoting, paraphrasing, summarizing and plagiarism", minutes:50,
-   goals:["Choose between quoting, paraphrasing and summarizing","Quote accurately, with page numbers and signal phrases","Paraphrase without patchwriting","Recognise plagiarism, self-plagiarism and common knowledge","Handle AI-generated text according to the policy you’re under"],
+   goals:["Choose between quoting, paraphrasing and summarizing","Quote accurately, with page numbers and signal phrases","Paraphrase without patchwriting","Recognize plagiarism, self-plagiarism and common knowledge","Handle AI-generated text according to the policy you’re under"],
    hook:{q:"You rewrite a paragraph from a book completely in your own words. Do you still need a citation?", options:["No: new words make it yours","Yes: the ideas and information still came from the book","Only if you kept some of the original words","Only if you’re writing for a journal"], answer:1, reveal:"**Yes.** A citation credits ideas and information, not just words. Changing every word is a good paraphrase, but the thinking is still the author’s. This lesson shows how to use sources in three ways, and where honest mistakes most often creep in."},
    learn:[
     {h:"Three ways to use a source", body:[
@@ -469,7 +469,7 @@ ICA.addUnit({
       "Same sentence order, same structure, and whole phrases copied: “cheap replacements became widely available”, “practical knowledge of how everyday objects are made”. The citation credits the idea, but the wording is presented as the writer’s own.",
       {tip:"Two fixes: put the phrase you want in quotation marks, or close the source and rebuild the idea from what you understood. If you can’t explain it without the source in front of you, you may need to read more before writing."}
     ]},
-    {h:"Summarising", body:[
+    {h:"Summarizing", body:[
       "A summary condenses a longer passage, chapter or whole work into its main ideas, in your own words. It’s much shorter than the original and leaves out examples and detail.",
       {ex:"Haddad (2021) argues that repair declined as a household skill when mass-produced goods became cheap, and that community repair projects are reviving it as a social activity.", label:"A one-sentence summary of a whole (invented) book", mono:true},
       "When summarizing a whole work, no page number is needed. Summaries are the raw material of literature reviews; Unit 5 shows how to move from summarizing sources one by one to [[synthesis|synthesizing]] them ({{synthesis-writing}})."
@@ -501,7 +501,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t4u4-l4-x1", type:"sort", q:"Should each writer quote, paraphrase or summarize?", buckets:["Quote","Paraphrase","Summarise"], items:[
+    {id:"t4u4-l4-x1", type:"sort", q:"Should each writer quote, paraphrase or summarize?", buckets:["Quote","Paraphrase","Summarize"], items:[
       {t:"Fatima is analyzing the exact wording of a law’s definition", b:0, why:"When the exact words are what you’re analyzing, quote them."},
       {t:"Kenji needs the main finding of a 30-page report in one sentence", b:2, why:"Condensing a long work to its main point is a summary."},
       {t:"Ana needs the details of one paragraph explaining a method, but the wording isn’t special", b:1, why:"One passage, full detail, ordinary wording: paraphrase it."},
@@ -545,20 +545,20 @@ ICA.addUnit({
     {id:"t4u4-l4-x6", type:"mcq", q:"Which of these is **patchwriting**?", options:[
       {t:"Keeping the original’s sentence structure and swapping some words for synonyms", ok:true, why:"That’s the definition: the source’s structure and much of its phrasing, lightly disguised."},
       {t:"Quoting a sentence exactly, in quotation marks, with a page number", why:"That’s a correct quotation."},
-      {t:"Summarising a whole book in two sentences of your own", why:"That’s a summary; it doesn’t follow any passage’s wording."},
+      {t:"Summarizing a whole book in two sentences of your own", why:"That’s a summary; it doesn’t follow any passage’s wording."},
       {t:"Explaining an idea from memory, then checking the original and citing it", why:"That’s the recommended way to paraphrase."}
     ]},
     {id:"t4u4-l4-x7", type:"explain", q:"Rania cites her source but keeps its sentence order and most of its phrases, swapping a few words for synonyms. Explain why this can still count as plagiarism, and how she could fix it.", size:"3–4 sentences", hint:"What does the citation credit, and what does it not mark?", model:"This is patchwriting. Her citation credits the source’s idea, but the borrowed wording and structure are presented as if they were her own sentences, and most policies treat unmarked borrowed phrasing as plagiarism even when the writer didn’t mean to cheat. She could put any exact phrases she wants to keep in quotation marks, or close the source, write the idea from memory in her own words and structure, then compare and cite it.", points:["Names it as patchwriting", "Explains that the citation credits the idea but not the borrowed wording", "Gives the quotation-mark fix", "Gives the cover-the-source rewrite fix"]}
    ],
    apply:{intro:"Practice with real text. Any open-access source works, including the free OpenStax books in this app’s reading list.", tasks:[
-     {t:"Quote, paraphrase and summarize the same source", how:["Choose a paragraph from an open-access article or textbook section.","Write a sentence that quotes a short phrase from it, with a signal phrase and page or paragraph number.","Paraphrase the whole paragraph using the cover-and-rewrite method, then compare with the original and fix any copied phrases.","Summarise the whole article or section in one or two sentences."], write:"Original (copied with source details):\nQuotation:\nParaphrase:\nSummary:\nPhrases I caught and fixed:"},
+     {t:"Quote, paraphrase and summarize the same source", how:["Choose a paragraph from an open-access article or textbook section.","Write a sentence that quotes a short phrase from it, with a signal phrase and page or paragraph number.","Paraphrase the whole paragraph using the cover-and-rewrite method, then compare with the original and fix any copied phrases.","Summarize the whole article or section in one or two sentences."], write:"Original (copied with source details):\nQuotation:\nParaphrase:\nSummary:\nPhrases I caught and fixed:"},
      {t:"Find the policies that apply to you", how:["Look up the academic integrity or plagiarism policy of your course, institution or a journal you might write for (journals usually have it in their “guide for authors” or “editorial policies”).","Look for what it says about generative AI: is it allowed, for what, and how must you disclose it?","If you’re not studying or publishing, choose any university’s public policy and read it as an example."], write:"Whose policy, what it says about self-plagiarism and AI, and how to disclose"}
    ], proof:"Your notes contain one source used three ways (quote, paraphrase, summary) with citations, the phrases you fixed, and a short summary of the policy that applies to you."},
    read:[{book:"owg", where:"Chapter 12, Section 12.6 “Editing Focus: Integrating Sources and Quotations”"},{book:"owg", where:"Chapter 13, Section 13.6 “Spotlight on … Ethical Research” (“Plagiarism”, “What Plagiarism Is Not”, “Avoiding Plagiarism”)"}]
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t4u4-l5", title:"Managing references with Zotero", minutes:60,
-   goals:["Explain what a reference manager does and name several neutrally","Install Zotero and the Zotero Connector on your devices","Add items from web pages and by DOI or ISBN, and fix their details","Organise with collections and tags","Cite and build a bibliography in Word, LibreOffice or Google Docs, then check the output"],
+   goals:["Explain what a reference manager does and name several neutrally","Install Zotero and the Zotero Connector on your devices","Add items from web pages and by DOI or ISBN, and fix their details","Organize with collections and tags","Cite and build a bibliography in Word, LibreOffice or Google Docs, then check the output"],
    hook:{q:"A free reference manager will format your citations in APA, MLA or Chicago. What do you still need to do?", options:["Nothing: the software follows the style rules","Check each citation against the source and the style rules","Retype every citation by hand","Only check that the bibliography is in alphabetical order"], answer:1, reveal:"**Check them.** The software formats whatever details it has. If a title was saved in the wrong case, an organization’s name was split into a fake first and last name, or a web page was saved as the wrong kind of item, the citation comes out wrong, neatly formatted. This lesson shows how to collect, cite and check."},
    learn:[
     {h:"What a reference manager does", body:[
@@ -624,7 +624,7 @@ ICA.addUnit({
       "A [[citation-generator|citation generator]] (a reference manager, a database’s “Cite” button or a website) formats the details it was given, in whatever version of the style it was programmed with. The MLA’s own advice is to treat generated citations as starting points, not final products. The common problems:",
       {list:[
         "Titles in the wrong case, or in ALL CAPS.",
-        "Organisations split into fake personal names.",
+        "Organizations split into fake personal names.",
         "Wrong item type (an article saved as a web page, a report as a book).",
         "Missing DOI, issue or page range; a database URL instead of a DOI.",
         "An outdated edition (for example “doi:” from MLA 8th or a publisher city in APA 7th).",
@@ -864,7 +864,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Location**: MLA prefers a DOI, then a permalink, then a URL. DOIs are written with `https://doi.org/`; for other URLs MLA recommends leaving out `http://` or `https://`. Entries end with a period, even after a DOI or URL. A page range may be given as well as the DOI for paginated works.",
-      "**Organisations**: when an organization is both author and publisher, skip the author and begin with the title; the in-text citation then uses the (shortened) title: `(“Well Water Testing”)`. Don’t use “Anonymous”; works with no named author also begin with the title.",
+      "**Organizations**: when an organization is both author and publisher, skip the author and begin with the title; the in-text citation then uses the (shortened) title: `(“Well Water Testing”)`. Don’t use “Anonymous”; works with no named author also begin with the title.",
       "**In prose**, MLA prefers spelling out (“Okafor and others”) and keeps et al. for parentheses and the list. **Indirect sources**: `(qtd. in Mensah 40)`, with only Mensah in Works Cited. Sources without page numbers are cited by author alone; use section or paragraph numbers only if the source numbers them.",
       "The MLA’s own advice on citation generators: their quality varies and they don’t always say which edition they follow, so treat their output as a starting point. Many older guides still show MLA 8th’s `doi:` prefix.",
       "When you cite two works by the same author, add a short title to each in-text citation: (Haddad, *Repairing Things* 50). In the list, MLA replaces the repeated name with three hyphens (---) in later entries.",
@@ -933,7 +933,7 @@ ICA.addUnit({
      starter:[
       "A **quotation** uses the author’s exact words in quotation marks, with a page number. A **[[paraphrase]]** restates one passage in your own words and sentence structure. A **[[summary-writing|summary]]** condenses a longer piece into its main ideas.",
       "All three need a citation, because the ideas still belong to the author.",
-      "Quote when the exact wording matters (a definition, a striking phrase, words you’re analyzing). Paraphrase when you need a passage’s detail. Summarise when you need the gist. Most academic writing uses more paraphrase and summary than quotation.",
+      "Quote when the exact wording matters (a definition, a striking phrase, words you’re analyzing). Paraphrase when you need a passage’s detail. Summarize when you need the gist. Most academic writing uses more paraphrase and summary than quotation.",
       "A signal phrase such as “Haddad argues…” or “According to Mensah…” introduces the source, shows readers where borrowed material begins, and lets you show your stance (argues, claims, shows, admits).",
       "Patchwriting, a “paraphrase” that keeps much of the original’s wording, is the most common honest mistake. Rebuilding the idea from memory avoids it."
      ],
@@ -941,7 +941,7 @@ ICA.addUnit({
       "**Quoting**: introduce it with a [[signal-phrase|signal phrase]] (“Haddad argues…”), copy it exactly, mark omissions with an ellipsis and changes with square brackets, then explain it. Long quotations become [[block-quotation|block quotations]]: 40 words or more in APA, more than four lines of prose in MLA.",
       "**Paraphrasing**: read until you understand, cover the source, write from memory, compare, fix any copied phrases, cite. Technical terms with no real alternative can stay.",
       "**[[patchwriting|Patchwriting]]** is the trap in between: keeping the original’s structure and many phrases while swapping synonyms. It’s common while learning, especially in an additional language, but unmarked borrowed phrasing is usually treated as plagiarism. Quote the phrase or rebuild the idea from understanding.",
-      "**Summarising**: say what the whole piece is about and its main claim or finding, then the key reasons or evidence, leaving out examples and detail. A summary of a whole work needs a citation but usually no page number.",
+      "**Summarizing**: say what the whole piece is about and its main claim or finding, then the key reasons or evidence, leaving out examples and detail. A summary of a whole work needs a citation but usually no page number.",
       "**Choosing well.** Ask what your reader needs: the exact words (quote), the detail of one passage (paraphrase), or the overall point (summary). Use quotations sparingly so your own voice carries the argument, and always follow a quotation with your explanation of what it shows.",
       "**Accuracy.** Whatever you choose, keep the source’s meaning, including its uncertainty. Turning “may reduce” into “reduces” changes the claim."
      ],
@@ -1028,7 +1028,7 @@ ICA.addUnit({
      ],
      builder:[
       "After saving, check each item: the right item type; each person as last name + first name and organizations in a single field; titles in sentence case (right-click the title field for **Sentence case**, then restore proper nouns); date, volume, issue, pages and DOI.",
-      "Organise with **collections** (File → New Collection…), which work like playlists: an item can be in several, and removing it from one doesn’t delete it. Add **tags** and **notes**; use **Duplicate Items** to merge duplicates.",
+      "Organize with **collections** (File → New Collection…), which work like playlists: an item can be in several, and removing it from one doesn’t delete it. Add **tags** and **notes**; use **Duplicate Items** to merge duplicates.",
       "A free zotero.org account syncs your library. Item data and notes sync freely; attached files use file storage, with 300 MB free. If that fills, other data keeps syncing; you can buy more or use WebDAV.",
       "**Groups.** A free group library lets a team share sources; group files count against the group owner’s storage.",
       "**PDFs and notes.** Zotero has a built-in PDF reader. Highlights and comments you make become annotations, which you can turn into notes with citations attached. Keep notes attached to the item they’re about so the source stays with the thought.",
@@ -1094,8 +1094,8 @@ ICA.addUnit({
    {id:"signal-phrase", term:"Signal phrase", def:"Words that introduce a source in your sentence, such as “Haddad argues…” or “According to Mensah…”.", codex:"quote-paraphrase-summary"},
    {id:"summary-writing", term:"Summary", def:"A much shorter version of a passage or whole work giving only its main ideas, in your own words, with a citation.", codex:"quote-paraphrase-summary"},
    {id:"block-quotation", term:"Block quotation", def:"A long quotation set off as an indented paragraph without quotation marks (APA: 40 words or more; MLA: more than four lines of prose).", codex:"quote-paraphrase-summary"},
-   {id:"sentence-case", term:"Sentence case", def:"Capitalising only the first word, the first word after a colon, and proper nouns. APA uses it for titles of works.", codex:"apa-style"},
-   {id:"title-case", term:"Title case", def:"Capitalising the major words of a title. MLA and Chicago use it for all titles; APA for journal names.", codex:"citation-styles"},
+   {id:"sentence-case", term:"Sentence case", def:"Capitalizing only the first word, the first word after a colon, and proper nouns. APA uses it for titles of works.", codex:"apa-style"},
+   {id:"title-case", term:"Title case", def:"Capitalizing the major words of a title. MLA and Chicago use it for all titles; APA for journal names.", codex:"citation-styles"},
    {id:"hanging-indent", term:"Hanging indent", def:"A layout where the first line of a paragraph starts at the margin and the following lines are indented, used for reference lists.", codex:"apa-style"},
    {id:"secondary-citation", term:"Secondary source (citing)", def:"Citing a work you only read about in another work: APA “as cited in”, MLA “qtd. in”. Only the work you read goes in the list.", codex:"apa-style"},
    {id:"mla-container", term:"Container (MLA)", def:"In MLA, the larger work that holds your source: a journal for an article, an edited book for a chapter, a website for a page.", codex:"mla-style"},
@@ -1146,7 +1146,7 @@ ICA.addUnit({
    {id:"t4u4-q36", lesson:"t4u4-l4", level:2, q:"Which is the best reason to quote rather than paraphrase?", options:[{t:"The exact wording is what you’re analyzing", ok:true, why:"When the words themselves matter, quote them."},{t:"Quoting is always safer", why:"Overquoting weakens writing, and some instructors limit it."},{t:"You didn’t understand the passage", why:"Then you need to read more before using it."},{t:"It saves you from citing", why:"Quotations need citations too."}]},
 
    {id:"t4u4-q37", lesson:"t4u4-l5", level:1, q:"What does the Zotero Connector do?", options:[{t:"Saves the source you’re viewing to your Zotero library", ok:true, why:"It’s Zotero’s browser extension."},{t:"Connects Zotero to your printer", why:"Not its job."},{t:"Writes your essay", why:"It saves sources."},{t:"Checks your essay for plagiarism against your Zotero library", why:"Zotero isn’t a similarity checker."}]},
-   {id:"t4u4-q38", lesson:"t4u4-l5", level:3, q:"Zotero’s APA bibliography shows “Organization, W. H. (2025)”. What went wrong?", options:[{t:"It was stored as a person’s name; switch to a single field", ok:true, why:"Organisations must be single-field names in the library."},{t:"APA abbreviates organization names this way when they are long", why:"APA writes the full organization name."},{t:"Zotero can’t cite reports", why:"It can; the data is wrong."},{t:"The style needs updating to APA 8th", why:"There’s no such edition; the data is the problem."}]},
+   {id:"t4u4-q38", lesson:"t4u4-l5", level:3, q:"Zotero’s APA bibliography shows “Organization, W. H. (2025)”. What went wrong?", options:[{t:"It was stored as a person’s name; switch to a single field", ok:true, why:"Organizations must be single-field names in the library."},{t:"APA abbreviates organization names this way when they are long", why:"APA writes the full organization name."},{t:"Zotero can’t cite reports", why:"It can; the data is wrong."},{t:"The style needs updating to APA 8th", why:"There’s no such edition; the data is the problem."}]},
    {id:"t4u4-q39", lesson:"t4u4-l5", level:2, q:"Why should titles be stored in sentence case in Zotero?", options:[{t:"APA prints titles as stored; MLA and Chicago can convert them to title case", ok:true, why:"Sentence case works for both directions; title case can’t be reliably turned into sentence case."},{t:"Zotero refuses to save titles in title case and changes them automatically", why:"It saves whatever you type."},{t:"All styles require sentence case", why:"MLA and Chicago use title case."},{t:"It makes searching faster", why:"Case doesn’t affect searching."}]},
    {id:"t4u4-q40", lesson:"t4u4-l5", level:2, q:"How do you add a book to Zotero using its ISBN?", options:[{t:"Click the magic wand (Add Item(s) by Identifier) and paste the ISBN", ok:true, why:"Zotero looks up the details from the identifier."},{t:"Type the ISBN into the title field", why:"That creates a wrongly titled item."},{t:"Email the ISBN to zotero.org", why:"Not a feature."},{t:"Only possible on the iPhone app", why:"Desktop and mobile both support identifiers."}]},
    {id:"t4u4-q41", lesson:"t4u4-l5", level:2, q:"What does the free zotero.org file storage limit (300 MB) apply to?", options:[{t:"Attached files such as PDFs", ok:true, why:"Item details and notes keep syncing when file storage is full."},{t:"Everything, including item details", why:"Other data continues to sync."},{t:"The number of citations in Word", why:"Citing isn’t limited by storage."},{t:"Only the iPhone app", why:"It applies to your online file storage."}]},

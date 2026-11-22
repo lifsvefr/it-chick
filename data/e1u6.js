@@ -5,7 +5,7 @@ ICA.addUnit({
   goals:[
     "Tell apart the main kinds of Japanese academic text (論文, レポート, 新書, 白書, 学術雑誌, 紀要) and know which have been peer-reviewed (査読)",
     "Find Japanese research with CiNii Research, J-STAGE, IRDB and NDL Search, and know what each one is for",
-    "Recognise the parts of a Japanese research paper (要旨, はじめに, 先行研究, 方法, 結果, 考察, おわりに, 参考文献) and read them in a useful order",
+    "Recognize the parts of a Japanese research paper (要旨, はじめに, 先行研究, 方法, 結果, 考察, おわりに, 参考文献) and read them in a useful order",
     "Use 接続詞 as signposts to predict what comes next, and pick out a writer’s 主張 and 根拠",
     "Work out the meaning of unfamiliar kanji compounds from their parts, read long noun phrases from the head noun, and use dictionaries and pop-up readers well",
     "Write a short, accurate 要約 in である style that keeps the author’s claim and reasons and leaves out your own opinion"
@@ -151,7 +151,7 @@ ICA.addUnit({
    goals:[
      "Name the usual parts of a Japanese research paper and say what each contains",
      "Relate the Japanese structure to IMRaD, and recognize the chapter-based shape common in the humanities",
-     "Recognise the stock phrases that mark each section, including 本稿, 本研究 and 筆者",
+     "Recognize the stock phrases that mark each section, including 本稿, 本研究 and 筆者",
      "Read a paper in an efficient order, starting from the 要旨"
    ],
    learn:[
@@ -445,7 +445,7 @@ ICA.addUnit({
    hook:{q:"You meet the word [再資源化]{さいしげんか} for the first time. You know [再]{さい} means “again”, [資源]{しげん} means “resources” and [化]{か} means “becoming” or “making into”. What is the best guess?", options:["Turning used materials back into resources (recycling)","A shortage of resources","Resources owned by a city","Searching for new resources"], answer:0, reveal:"**Recycling: turning used materials back into resources.** 再資源化 appears in environmental writing, for example in figures for how much waste is recycled. You didn’t need a dictionary: the meaning was in the parts. Many academic words are built from a small set of kanji pieces like 再〜 and 〜化. This lesson teaches the most useful ones, shows how to read long noun phrases, and introduces free tools for the words the parts can’t explain."},
    goals:[
      "Guess the meaning of unfamiliar compounds from common prefixes and suffixes such as 〜化, 〜性, 〜的, 〜率, 〜者, 非〜, 未〜 and 再〜, and know the limits of guessing",
-     "Recognise 漢語 + する verbs in both their noun and verb forms",
+     "Recognize 漢語 + する verbs in both their noun and verb forms",
      "Read long noun phrases and titles by finding the head noun and the compound particles (に関する, における…)",
      "Use online dictionaries, pop-up readers and Word’s furigana tool, and check what they get wrong"
    ],
@@ -588,7 +588,7 @@ ICA.addUnit({
    ]
   },
   /* ===================== LESSON 5 ===================== */
-  {id:"e1u6-l5", title:"Summarising in である style", minutes:55,
+  {id:"e1u6-l5", title:"Summarizing in である style", minutes:55,
    hook:{q:"Your teacher asks for a 400-[字]{じ} [要約]{ようやく} (summary) of a 4,000-[字]{じ} article. Which of these belongs in it?", options:["Your own opinion of the article","The author’s main claim and key reasons","Every example the author gives","Long quotations from the article"], answer:1, reveal:"**The author’s main claim and key reasons.** A 要約 (yōyaku) restates the core of a text, shorter and in your own words. Your opinion belongs in a separate part, if the task asks for one; examples are usually cut; and long quotations use up the limit without showing you understood. This lesson shows what to keep and what to cut, how to write a summary in である style, and how to check it."},
    goals:[
      "Explain what a 要約 is and how it differs from 感想 (impressions) and 意見 (opinion)",
@@ -598,7 +598,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"What a 要約 is, and what it isn’t", body:[
-      {lead:"Summarising is one of the most common tasks in Japanese university classes, and one of the best ways to check that you have really understood a text."},
+      {lead:"Summarizing is one of the most common tasks in Japanese university classes, and one of the best ways to check that you have really understood a text."},
       "A [要約]{ようやく} (*yōyaku*) restates the main points of a text in fewer words and in your own words. It answers one question: **what does this text say?** It is the Japanese form of [[summary-writing]] ([[youyaku]]) (see {{quote-paraphrase-summary}} in Research Skills).",
       "A 要約 is not:",
       {list:[
@@ -606,8 +606,8 @@ ICA.addUnit({
         "**意見** (opinion) or **批評** ([批評]{ひひょう}, critique): whether you agree and why.",
         "**A list of quotations:** copied sentences joined together show the reader nothing about your understanding."
       ]},
-      "Many tasks ask for both: 「本文を要約したうえで、あなたの意見を述べよ。」 (“Summarise the text, and then give your opinion.”) Then keep them in separate paragraphs, summary first, so your reader can always tell the author’s view from yours.",
-      {tip:"Summarising in Japanese is hard because you must understand the argument and rephrase it in a second language at the same time. Japanese students find 要約 hard too. Short, regular practice helps more than one long attempt."}
+      "Many tasks ask for both: 「本文を要約したうえで、あなたの意見を述べよ。」 (“Summarize the text, and then give your opinion.”) Then keep them in separate paragraphs, summary first, so your reader can always tell the author’s view from yours.",
+      {tip:"Summarizing in Japanese is hard because you must understand the argument and rephrase it in a second language at the same time. Japanese students find 要約 hard too. Short, regular practice helps more than one long attempt."}
     ]},
     {h:"What to keep and what to cut", body:[
       "Lesson 3 gave you the tools: find the 主張 and its 根拠, and use connectives to see what each sentence does.",
@@ -742,7 +742,7 @@ ICA.addUnit({
    apply:{intro:"Use any Japanese text of 1,500–4,000 characters: a section of a paper, a chapter of a 新書, or an article from your course.", tasks:[
     {t:"Write a 400-字 summary", how:["Read the text and write its 主張 in one sentence.","List the main 根拠 and mark what you will cut.","Close the text and write a summary of 360–400 characters in である style.","Count the characters with a word processor."], write:"主張 in one sentence… 根拠… What I cut… My summary (360–400字)…"},
     {t:"Check it against the list", how:["Go through the checklist in this lesson, one point at a time.","Compare every hedge in the original with your summary.","Underline any phrase longer than a technical term that you copied, and reword it."], write:"Problems I found and how I fixed them…"},
-    {t:"Summarise, then respond", how:["Take the same text. Write a second short paragraph with your own opinion, starting 「この主張に対して、私は…」 or 「筆者の主張には…」.","Make sure a reader can tell exactly where the summary ends and your opinion begins."], write:"My opinion paragraph…"}
+    {t:"Summarize, then respond", how:["Take the same text. Write a second short paragraph with your own opinion, starting 「この主張に対して、私は…」 or 「筆者の主張には…」.","Make sure a reader can tell exactly where the summary ends and your opinion begins."], write:"My opinion paragraph…"}
    ], proof:"A 360–400-character summary in である style, checked against the checklist, and a separate paragraph giving your own view."},
    read:[
      {book:"omu", where:"Section 2 “アカデミック･ライティングとは” (2.1 “論理的にわかりやすい客観的な文章をめざす”, 2.2 “作文・感想文とは異なる”)", note:"In Japanese: why academic writing is not a 感想文 (a piece of impressions), which is the same line a 要約 must keep."}
@@ -1072,7 +1072,7 @@ ICA.addUnit({
         ["NDL Search","NDL","Renewed January 2024, combined with NDL Online. Searches NDL and many other libraries."]
       ]},
       {h:"NDL Digital Collections"},
-      "Digitised items are labeled by access: readable online without login; readable through the NDL’s transmission service, online after logging in as a fully registered user living in Japan, or at a participating library; or readable only inside the NDL’s own buildings.",
+      "Digitized items are labeled by access: readable online without login; readable through the NDL’s transmission service, online after logging in as a fully registered user living in Japan, or at a participating library; or readable only inside the NDL’s own buildings.",
       {h:"Search tips"},
       "A space between words usually means AND. Try English too: many papers have English titles and abstracts. Use the 要旨 and キーワード of a good paper to find better search words, and follow its 参考文献 ({{citation-chasing}}). See {{search-strategy}} for planning searches in any language."
      ],
@@ -1089,7 +1089,7 @@ ICA.addUnit({
     sources:[{t:"NII Support: Integration of CiNii Articles into CiNii Research (2022)", url:"https://support.nii.ac.jp/en/news/cinii/20220418"},{t:"カレントアウェアネス・ポータル (NDL): 新しい国立国会図書館サーチの公開 (2024)", url:"https://current.ndl.go.jp/car/208422"},{t:"NII Support: Integration of CiNii Books into CiNii Research", url:"https://support.nii.ac.jp/en/cir/cib_integration"}],
     checked:"2026-11"
    },
-   {id:"summarising-in-japanese", title:"Summarising in Japanese (要約)", aka:["要約","summary in Japanese","である style summary","字数"], tags:["academic Japanese","reading","writing"],
+   {id:"summarising-in-japanese", title:"Summarizing in Japanese (要約)", aka:["要約","summary in Japanese","である style summary","字数"], tags:["academic Japanese","reading","writing"],
     summary:"What a 要約 keeps and cuts, five steps to write one, である-style frames and reporting verbs, and how to check accuracy, hedges and 字数.",
     levels:{
      starter:[
@@ -1253,7 +1253,7 @@ ICA.addUnit({
      {t:"Leaving the point as a task for future research", ok:true, why:"今後の課題 means future tasks: a typical closing in おわりに."},
      {t:"Admitting the study failed", why:"Naming a future task is normal and doesn’t mean the study failed."},
      {t:"Setting homework for readers", why:"課題 can mean homework in class, but here it means a research task."},
-     {t:"Summarising the results", why:"The results are summarized earlier; this sentence looks ahead."}
+     {t:"Summarizing the results", why:"The results are summarized earlier; this sentence looks ahead."}
    ]},
    {id:"e1u6-q17", lesson:"e1u6-l2", level:3, q:"Fatima’s notes say “結果 = 結論”. Which correction is accurate?", options:[
      {t:"結果 reports what one study found; 結論 states what the author concludes from the whole paper", ok:true, why:"The results are data; the conclusion is the author’s overall answer, built on results and discussion."},

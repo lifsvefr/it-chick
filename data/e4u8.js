@@ -7,7 +7,7 @@ ICA.addUnit({
     "Read soft power indices critically: what they measure, how, and what they cannot show",
     "Use Cull’s taxonomy of public diplomacy and the “new public diplomacy” to analyze what governments, broadcasters and exchange programs do",
     "Compare nation branding and cultural-industry policies in Japan, South Korea, China and India, and describe the debates around them neutrally",
-    "Analyse mega-events, World Heritage nominations and sports diplomacy as tools and risks for a country’s image",
+    "Analyze mega-events, World Heritage nominations and sports diplomacy as tools and risks for a country’s image",
     "Evaluate claims that soft power “works”, compare cases across regions, and write a clear, balanced policy brief"
   ],
   read:[
@@ -327,11 +327,11 @@ ICA.addUnit({
    hook:{q:"In 2002 *The Economist* reported a target set by Thailand’s government for its “Global Thai” program. What was it?", options:["One Thai film in every major festival","8,000 Thai restaurants around the world by 2003","A Thai cultural center in every capital","Thai to become an official UN language"], answer:1, reveal:"**8,000 Thai restaurants worldwide**, up from about 5,500 at the time, according to *The Economist* (February 2002). The scheme offered loans, training and approved recipes to help Thai restaurants open abroad. Scholars now call this kind of policy **gastrodiplomacy**. Governments treat food, films and pop music as part of the national image. This lesson asks how nation branding and cultural-industry policy work, and why many scholars are wary of them."},
    goals:[
      "Explain nation branding, Anholt’s six dimensions and his later shift to “competitive identity”",
-     "Analyse Cool Japan as a policy, with its results and critiques",
+     "Analyze Cool Japan as a policy, with its results and critiques",
      "Explain the Korean Wave as both a market phenomenon and a policy, and its limits",
      "Describe China’s cultural diplomacy and the Confucius Institute debate neutrally",
      "Describe India’s cultural assets and policies, from cinema to yoga",
-     "Summarise the main critiques of branding nations"
+     "Summarize the main critiques of branding nations"
    ],
    learn:[
     {h:"From public diplomacy to nation branding", body:[
@@ -376,7 +376,7 @@ ICA.addUnit({
       "Nadia Kaneva (2011) reviewed the field and called for critical research. Melissa Aronczyk’s *Branding the Nation* (2013) studied the consultants behind national campaigns. Their main concerns:",
       {list:[
         "**Commodification:** national identity becomes a product designed for foreign buyers.",
-        "**Depoliticisation:** debates about who the nation is get settled by consultants and focus groups, not citizens.",
+        "**Depoliticization:** debates about who the nation is get settled by consultants and focus groups, not citizens.",
         "**Exclusion:** minorities, regions and uncomfortable histories drop out of the brand.",
         "**Weak evidence:** campaigns rarely show measurable effects, as Anholt himself argues."
       ]},
@@ -477,7 +477,7 @@ ICA.addUnit({
      "Compare Beijing 2008 and 2022, Tokyo 2020 (held in 2021) and Qatar 2022, giving each side’s view",
      "Use the concepts of soft disempowerment and sportswashing with care",
      "Explain how the World Heritage system works and why nominations become political",
-     "Analyse sports diplomacy, from ping-pong in 1971 to the unified Korean team in 2018"
+     "Analyze sports diplomacy, from ping-pong in 1971 to the unified Korean team in 2018"
    ],
    learn:[
     {h:"Why host the world?", body:[
@@ -613,7 +613,7 @@ ICA.addUnit({
    hook:{q:"A 2021 study used Gallup World Poll interviews held just before and just after 86 visits by leaders of nine countries to 38 host countries. On average, how did host publics’ approval of the visiting leader change?", options:["No measurable change","It rose by about 2 percentage points","It rose by about 20 percentage points","It fell, because visits draw protests"], answer:1, reveal:"**It rose by about 2.3 percentage points**, according to Goldsmith, Horiuchi and Matush (*American Political Science Review*, 2021). In their study, the effect lasted up to about three weeks and was larger when the media covered the visit. A small effect, but a real one, measured carefully. This lesson asks what counts as evidence that soft power works, compares country cases, and shows how to turn analysis into a policy brief."},
    goals:[
      "Explain why soft power is hard to evaluate: outputs, outcomes and impact, and the attribution problem",
-     "Summarise the main empirical studies and what they can and cannot show",
+     "Summarize the main empirical studies and what they can and cannot show",
      "Compare six country cases from different regions on assets, tools and limits",
      "Plan and write a short, balanced policy brief"
    ],
@@ -885,7 +885,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Conceptual position.** Sharp power is less a new kind of power than a reclassification of old practices for the age of global media and platforms. It overlaps with research on [[influence-operation|influence operations]], [[information-disorder|information disorder]] and “united front” work, studied in the media unit of this track.",
-      "**Measurement.** Evidence is usually case-based: investigative journalism, leaked documents, court cases and platform takedown reports. Generalising from these to “a country’s sharp power” is risky; be clear about which incidents you rely on.",
+      "**Measurement.** Evidence is usually case-based: investigative journalism, leaked documents, court cases and platform takedown reports. Generalizing from these to “a country’s sharp power” is risky; be clear about which incidents you rely on.",
       "**Normative stakes.** The term was coined by a democracy-promotion organization funded largely by the US Congress. That does not make it wrong, but it is part of the context a careful writer notes, as one would for terms coined by any government-linked body.",
       "**Seminar test.** Can the same activity be soft power to one audience and sharp power to another? For example, sponsored content that is labeled in one country and unlabelled in another. Method and transparency, not the funder alone, decide the classification."
      ]
@@ -1016,7 +1016,7 @@ ICA.addUnit({
      pro:[
       "**Critiques.** Nadia Kaneva (2011) called for critical research on nation branding; Melissa Aronczyk’s *Branding the Nation* (2013) studied the consultants who sell it. Main concerns: commodifying identity, depoliticizing debates about who the nation is, excluding minorities and uncomfortable histories, and weak evidence of effect. Iwabuchi (2015) called Japan’s version **brand nationalism**.",
       "**Defense.** Supporters reply that reputations exist anyway and that coordinated communication, done honestly, helps small states and correct outdated stereotypes.",
-      "**Research.** Analyse campaigns as texts (who is shown, who is missing), study the policy process (who commissions and approves), and test effects with surveys over time rather than rankings alone (see {{measuring-soft-power}})."
+      "**Research.** Analyze campaigns as texts (who is shown, who is missing), study the policy process (who commissions and approves), and test effects with surveys over time rather than rankings alone (see {{measuring-soft-power}})."
      ]
     },
     related:["simon-anholt","measuring-soft-power","korean-wave","cultural-diplomacy"],
@@ -1085,7 +1085,7 @@ ICA.addUnit({
       "**Cases.** Beijing 2008 (torch relay protests) and 2022 (a diplomatic boycott by several governments); Tokyo 2020, postponed and held in 2021 largely without spectators; Qatar 2022, with debates over migrant workers and reforms."
      ],
      pro:[
-      "**Audiences.** The same event can win admiration at home and in some regions while drawing criticism elsewhere. Analyse audiences separately.",
+      "**Audiences.** The same event can win admiration at home and in some regions while drawing criticism elsewhere. Analyze audiences separately.",
       "**Evidence.** Measuring image effects needs surveys before and after, in several countries, and controls for other events. Legacy claims (tourism, sport participation) are often made by organizers; independent evaluations are rarer.",
       "**Economics.** Many economists find that costs exceed measurable economic benefits for most hosts; supporters point to intangible gains. Keep economic and soft power arguments distinct.",
       "**Future hosts.** Saudi Arabia’s 2034 World Cup will revive the same debates; compare it with Qatar using the same questions."
@@ -1104,7 +1104,7 @@ ICA.addUnit({
       {key:"Because states decide, heritage can become diplomacy, and sometimes dispute."}
      ],
      builder:[
-      "**Politicisation.** Lynn Meskell’s *A Future in Ruins* (2018) argued that committee members increasingly vote on political lines, sometimes overriding expert advice.",
+      "**Politicization.** Lynn Meskell’s *A Future in Ruins* (2018) argued that committee members increasingly vote on political lines, sometimes overriding expert advice.",
       "**Meiji Industrial Revolution sites (2015).** Japan presented industrialization from the 1850s to 1910; South Korea raised wartime forced labor at some sites. Japan’s delegation acknowledged that many Koreans and others were “brought against their will and forced to work under harsh conditions” and promised to explain the full history; the two governments have since disagreed on what this means and whether it has been done, and the committee has repeatedly asked Japan to improve its interpretation.",
       "**Preah Vihear (2008).** Cambodia’s listing of a border temple led to protests in Thailand and armed clashes; in 2013 the International Court of Justice found that Cambodia had sovereignty over the whole promontory of the temple.",
       "**Sado Island Gold Mines (2024).** Inscribed with South Korea’s agreement after Japan agreed to exhibit the history of Korean workers and hold a memorial, followed by disputes over the exhibit’s wording and the first memorial ceremony; Japan says it has kept its commitments."
@@ -1133,7 +1133,7 @@ ICA.addUnit({
       "**Limits.** The 1969 war between El Salvador and Honduras, nicknamed the “Football War”, broke out after World Cup qualifiers but had deeper causes in land, migration and borders."
      ],
      pro:[
-      "**Analysing a case.** Ask who initiated the contact, what each government wanted, what risk the sporting form reduced (deniability, symbolism), and what followed. Process tracing (see {{process-tracing}}) suits these questions.",
+      "**Analyzing a case.** Ask who initiated the contact, what each government wanted, what risk the sporting form reduced (deniability, symbolism), and what followed. Process tracing (see {{process-tracing}}) suits these questions.",
       "**Sport as sanction.** Boycotts and bans (the 1980 and 1984 Olympic boycotts, the sporting isolation of apartheid South Africa, bans on Russian teams after 2022) are the coercive side of sports diplomacy.",
       "**Non-state actors.** Federations, clubs and athletes act independently; their choices can help or embarrass governments."
      ]

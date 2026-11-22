@@ -24,7 +24,7 @@ ICA.addUnit({
         "Give the four plain forms (non-past, negative, past, past negative) of any verb, い-adjective, な-adjective or noun",
         "Turn a polite sentence into a plain one, and back again",
         "Avoid the classic slips: [高]{たか}いだ, きれいくない, [静]{しず}かかった and あらない",
-        "Recognise the plain forms of patterns you already know, such as ～ている, ～たい and ～てください",
+        "Recognize the plain forms of patterns you already know, such as ～ている, ～たい and ～てください",
         "Read and write a short diary entry in the plain style"
       ],
       hook:{
@@ -374,7 +374,7 @@ ICA.addUnit({
       goals:[
         "Explain what decides the choice between polite and plain speech: closeness (ウチ・ソト) and rank (up and down)",
         "Choose the right style for common situations: friends, family, teachers, colleagues, shops and strangers",
-        "Recognise the moment when someone invites you to switch to plain speech, and respond naturally",
+        "Recognize the moment when someone invites you to switch to plain speech, and respond naturally",
         "Know which kinds of writing use the plain style and which use です・ます",
         "Keep a sentence polite by ending it politely, even with plain forms inside"
       ],
@@ -736,7 +736,7 @@ ICA.addUnit({
       goals:[
         "Name the features that make speech casual, beyond plain forms",
         "Drop は, が and を naturally, and know which particles must stay",
-        "Recognise and use the contractions ～てる, ～とく, ～ちゃう/～じゃう, ～なきゃ and ～ちゃ/～じゃ",
+        "Recognize and use the contractions ～てる, ～とく, ～ちゃう/～じゃう, ～なきゃ and ～ちゃ/～じゃ",
         "Use よ, ね and よね after plain forms correctly, including after nouns and adjectives",
         "Ask casual questions without か, and answer with うん and ううん"
       ],
@@ -2345,7 +2345,7 @@ ICA.addUnit({
           },
           "Use casual speech only with people you would speak plainly to. You will hear it constantly in dramas, videos and real life, so learn to recognize it even before you use it.",
           {key:"Casual speech = plain forms + fewer particles + contractions + よ/ね + rising questions."},
-          "Why learn it early? Because it is what you will hear most from friends, on TV and online, and it is often hard to follow if you only know textbook です・ます. Recognising casual speech comes first; using it comes naturally once you have heard it many times."
+          "Why learn it early? Because it is what you will hear most from friends, on TV and online, and it is often hard to follow if you only know textbook です・ます. Recognizing casual speech comes first; using it comes naturally once you have heard it many times."
         ],
         builder:[
           {h:"Particles"},
@@ -2522,7 +2522,7 @@ ICA.addUnit({
           "**のだ in writing.** In essays and reports, ～のである and ～のだ mark a conclusion or the writer’s main point, often after つまり (in other words): つまり、[問題]{もんだい}は[時間]{じかん}なのである. Overusing it makes writing sound insistent, just as in speech.",
           "**Casual の statements.** A statement ending in の with a falling voice ([頭]{あたま}が[痛]{いた}いの) explains softly. It is used by many speakers, especially to close friends and children, and in some contexts it is associated with softer or feminine speech. ～んだ is the neutral casual statement.",
           "**Related patterns.** ～んじゃない？ offers a guess (“isn’t it that…?”): [休]{やす}みなんじゃない？ ～んだって reports what you heard: [明日]{あした}休みなんだって (I hear tomorrow is a day off). ～んですけど is a slightly more casual ～んですが. ～わけです, an N3 pattern, gives a logical explanation (“that’s why”).",
-          "**Realisation.** ～んだ (or ～のか) can express a sudden understanding, often to yourself: そうか、[今日]{きょう}は[日曜日]{にちようび}なんだ。 (Oh, of course, today is Sunday.)",
+          "**Realization.** ～んだ (or ～のか) can express a sudden understanding, often to yourself: そうか、[今日]{きょう}は[日曜日]{にちようび}なんだ。 (Oh, of course, today is Sunday.)",
           "**Learning tip.** Because ～んです depends on context, textbooks can only show typical situations. Listen for it in real conversations and notice what it connects to; that is the fastest way to develop a feel for when it fits."
         ]
       },

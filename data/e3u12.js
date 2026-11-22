@@ -589,7 +589,7 @@ ICA.addUnit({id:"e3u12",
    title:"Real spoken Japanese: fillers, casual speech and shadowing",
    minutes:55,
    hook:{q:"You invite a friend to a party. She answers: 「行けないことはないんだけど……。」 What is she telling you?", options:["She can come, but she is hesitating","She definitely can’t come","She is very keen to come","She has already decided to come"], answer:0, reveal:"**She can come, but she is hesitating.** 〜ないことはない is a double negative: “it’s not that I can’t go”, so she could. The けど…… trailing off shows a “but” she leaves unsaid, and often means she would rather not. Real speech is full of fillers, contractions and unfinished sentences like this. This lesson teaches you to hear them, and ends with shadowing, a way to practice with real audio."},
-   goals:["Recognise fillers (えーと, あのう, まあ, なんか…) and aizuchi, and not mistake them for content","Understand casual contractions in fast speech (〜てる, 〜ちゃう, 〜とく, 〜って, わかんない)","Read unfinished sentences and soft refusals (それはちょっと……) in context","Follow a casual conversation between friends for gist and detail","Practice shadowing step by step, and describe fairly what research says about it"],
+   goals:["Recognize fillers (えーと, あのう, まあ, なんか…) and aizuchi, and not mistake them for content","Understand casual contractions in fast speech (〜てる, 〜ちゃう, 〜とく, 〜って, わかんない)","Read unfinished sentences and soft refusals (それはちょっと……) in context","Follow a casual conversation between friends for gist and detail","Practice shadowing step by step, and describe fairly what research says about it"],
    learn:[
     {h:"Fillers: the sounds of thinking",
      body:[
@@ -790,7 +790,7 @@ ICA.addUnit({id:"e3u12",
     options:["Yến","Mariya, who wrote the message","Cheska, who is reading it","Everyone in the house"],
     answer:0,
     reveal:"**Yến.** The second sentence has no subject, which is normal in Japanese: the person is still Yến from the sentence before, and 〜って at the end reports what she said (“she says she doesn’t need dinner”), as in Lesson 4. English needs a subject in every sentence, so the app had to guess, and it guessed “I”. Translation tools and AI chatbots are useful, but they guess, and they don’t tell you which parts were guesses. This lesson shows what they get wrong in Japanese, how to check them, and how to use a chatbot as a tutor without letting it do your learning for you."},
-   goals:["Explain why machine translation goes wrong with Japanese: missing subjects, politeness level, keigo, ambiguous set phrases and names","Check a translation with back-translation and a dictionary, and know what each check can and can’t catch","Use an AI chatbot as a tutor for explanations, graded examples, conversation practice and corrections","Recognise confident errors and unnatural Japanese, and avoid leaning on the tool","Protect your own and other people’s privacy, and follow a routine that keeps you doing the thinking"],
+   goals:["Explain why machine translation goes wrong with Japanese: missing subjects, politeness level, keigo, ambiguous set phrases and names","Check a translation with back-translation and a dictionary, and know what each check can and can’t catch","Use an AI chatbot as a tutor for explanations, graded examples, conversation practice and corrections","Recognize confident errors and unnatural Japanese, and avoid leaning on the tool","Protect your own and other people’s privacy, and follow a routine that keeps you doing the thinking"],
    learn:[
     {h:"Two useful tools that guess",
      body:[

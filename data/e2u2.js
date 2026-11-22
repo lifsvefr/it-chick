@@ -8,7 +8,7 @@ ICA.addUnit({
     "Explain how cultures change through innovation, diffusion and globalization, and what cultural lag is",
     "Classify types of societies and use Durkheim, Marx and Weber to describe modern life",
     "Explain how a self develops (Cooley, Mead) and how agents of socialization shape us across the life course",
-    "Analyse groups, conformity, leadership and formal organizations, including bureaucracy and McDonaldization"
+    "Analyze groups, conformity, leadership and formal organizations, including bureaucracy and McDonaldization"
   ],
   read:[
     {book:"soc", where:"Chapter 3 “Culture” (Sections 3.1–3.4)", note:"On the LibreTexts mirror every section in these chapters is numbered one higher (3.2–3.5), because the chapter introduction counts as x.1."},
@@ -238,7 +238,7 @@ ICA.addUnit({
      "Classify societies by how they make a living, from hunter-gatherer to postindustrial, without treating the sequence as a ladder of worth",
      "Use Durkheim (solidarity), Marx (alienation) and Weber (rationalization) to describe modern life",
      "Explain the social construction of reality and the Thomas theorem with examples",
-     "Analyse a person’s statuses and roles, including role conflict and role strain, and use Goffman’s dramaturgy"
+     "Analyze a person’s statuses and roles, including role conflict and role strain, and use Goffman’s dramaturgy"
    ],
    guide:true,
    learn:[
@@ -279,7 +279,7 @@ ICA.addUnit({
       ["Families move seasonally with their herds of cattle, sheep or reindeer.","Pastoral","Living mainly from domesticated animals is the mark of a pastoral society."],
       ["Villagers clear small garden plots with hand tools and move them as the soil tires.","Horticultural","Small-scale cultivation with hand tools, without ploughs, is horticulture."],
       ["Ploughs, draft animals and irrigation canals produce surpluses that feed cities and a ruling class.","Agricultural","Large-scale farming with ploughs and irrigation, producing surpluses and sharp inequality, defines an agricultural society."],
-      ["Most people work in factories powered by fuel-driven machines and live in fast-growing cities.","Industrial","Mechanised production and urbanization mark an industrial society."],
+      ["Most people work in factories powered by fuel-driven machines and live in fast-growing cities.","Industrial","Mechanized production and urbanization mark an industrial society."],
       ["Most jobs involve producing information or services such as software, finance, education and health care.","Postindustrial","An economy based on information and services rather than goods is postindustrial."]
     ]},
     {id:"e2u2-l3-x2", type:"order", q:"Put these types of society in the order in which they first appeared in human history.", items:[
@@ -393,7 +393,7 @@ ICA.addUnit({
       ["Mei’s grandmother teaches her the family’s dialect and how to address elders.","Family","Language and respect for elders taught at home: the family, the first agent of socialization."],
       ["At 14, Tomás starts using the slang and clothes of his friends at the skate park.","Peers","Peers of similar age and status teach group norms and style."],
       ["Students learn to wait their turn, follow a schedule and accept being ranked by grades.","School","These are lessons of the hidden curriculum, taught by school alongside the official subjects."],
-      ["On his first week as a bank teller, Oluwaseun learns how colleagues really expect him to dress and talk.","Workplace","Organisational norms learned on the job: the workplace as an agent."],
+      ["On his first week as a bank teller, Oluwaseun learns how colleagues really expect him to dress and talk.","Workplace","Organizational norms learned on the job: the workplace as an agent."],
       ["A video platform’s recommendations shape which body types and lifestyles Hana sees as normal.","Media","Mass and social media present images and norms that shape what people see as normal."]
     ]},
     {id:"e2u2-l4-x3", type:"spot", q:"A magazine article reports on twins. Tap each claim that the evidence can’t support.", ask:"goes beyond the evidence", parts:[
@@ -937,7 +937,7 @@ ICA.addUnit({
       {list:[
         "**Mixed economies.** Most contemporary societies combine farming, industry and services, and many households straddle them through migration and remittances.",
         "**Contemporary foragers are not living fossils.** Groups such as the Hadza or BaMbuti live in the present, trade with neighbors, deal with states and markets, and have histories of their own.",
-        "**Unequal timing.** Industrialisation came to different regions at different times, often shaped by colonialism and global trade (see {{global-stratification}})."
+        "**Unequal timing.** Industrialization came to different regions at different times, often shaped by colonialism and global trade (see {{global-stratification}})."
       ]},
       "The classical thinkers tied these shifts to big theories: Durkheim’s move from mechanical to organic solidarity, Marx’s analysis of capitalism and alienation, and Weber’s rationalization. See {{emile-durkheim}}, {{karl-marx}} and {{max-weber}}.",
       "Some scholars also question the “postindustrial” label itself: manufacturing hasn’t disappeared, it has largely moved to other countries, so a service economy in one place often depends on factories in another.",
@@ -1232,7 +1232,7 @@ ICA.addUnit({
       {table:[
         ["Feature","What it means"],
         ["Hierarchy of authority","A clear chain of command"],
-        ["Division of labor","Specialised roles"],
+        ["Division of labor","Specialized roles"],
         ["Explicit rules","Written procedures applied to every case"],
         ["Impersonality","Decisions by rules, not personal ties"]
       ]},
@@ -1562,7 +1562,7 @@ ICA.addUnit({
      {t:"The spread of high culture to the elite", why:"Glocalization concerns global–local adaptation, not class-based culture."}
    ]},
    {id:"e2u2-q18", lesson:"e2u2-l2", level:3, q:"Fatima notices that a punk-style jacket that once signaled rebellion is now sold in a chain store at the shopping mall. Which idea best explains this?", options:[
-     {t:"The mainstream market has absorbed a subcultural style.", ok:true, why:"Commercialising the style weakens its oppositional meaning. Commodification of rebellious styles is a well-documented process in the study of subcultures."},
+     {t:"The mainstream market has absorbed a subcultural style.", ok:true, why:"Commercializing the style weakens its oppositional meaning. Commodification of rebellious styles is a well-documented process in the study of subcultures."},
      {t:"The chain store has become a counterculture.", why:"Selling a style doesn’t mean rejecting mainstream values; the store is part of the mainstream."},
      {t:"Punk has become high culture, so elite stores now sell it.", why:"A mass-market store is popular culture, not elite high culture."},
      {t:"This is cultural lag.", why:"Cultural lag is norms trailing technology. This is about a style moving from subculture to mainstream market."}
@@ -1681,7 +1681,7 @@ ICA.addUnit({
    {id:"e2u2-q37", lesson:"e2u2-l5", level:1, q:"Which is a **primary** group?", options:[
      {t:"A group of close friends who have supported each other for years", ok:true, why:"Small, long-lasting and emotionally close: a primary group."},
      {t:"Passengers waiting at the same bus stop", why:"They don’t interact or share identity: an aggregate, not a group."},
-     {t:"A company’s accounts department", why:"Organised around tasks: a secondary group."},
+     {t:"A company’s accounts department", why:"Organized around tasks: a secondary group."},
      {t:"Everyone born in the same year", why:"Sharing a trait without connection makes a category, not a group."}
    ]},
    {id:"e2u2-q38", lesson:"e2u2-l5", level:2, q:"A young doctor judges her own success by comparing herself with senior consultants she admires. For her, the consultants are a…", options:[
@@ -1723,11 +1723,11 @@ ICA.addUnit({
    {id:"e2u2-q44", lesson:"e2u2-l5", level:1, q:"Which is **not** one of the features of Weber’s ideal-type bureaucracy?", options:[
      {t:"Decisions based on personal friendships and family ties", ok:true, why:"Weber’s bureaucracy is impersonal: decisions follow rules, not personal ties. This option describes the opposite."},
      {t:"A hierarchy of authority", why:"A clear chain of command is one of Weber’s core features."},
-     {t:"Explicit written rules", why:"Standardised written rules are a core feature."},
-     {t:"A clear division of labor", why:"Specialised roles are a core feature."}
+     {t:"Explicit written rules", why:"Standardized written rules are a core feature."},
+     {t:"A clear division of labor", why:"Specialized roles are a core feature."}
    ]},
    {id:"e2u2-q45", lesson:"e2u2-l5", level:3, q:"A university starts judging lecturers mainly by the number of papers they publish each year, rather than their quality. Which principle of McDonaldization is this, and what risk does Ritzer warn about?", options:[
-     {t:"Calculability; the irrationality of rationality", ok:true, why:"Emphasising quantity over quality is calculability. As counting replaces judgments of quality, Ritzer warns such systems can produce irrational results, such as many weak papers."},
+     {t:"Calculability; the irrationality of rationality", ok:true, why:"Emphasizing quantity over quality is calculability. As counting replaces judgments of quality, Ritzer warns such systems can produce irrational results, such as many weak papers."},
      {t:"Predictability; cultural lag", why:"Predictability means sameness everywhere, and cultural lag concerns technology outpacing norms. Neither fits counting papers."},
      {t:"Control; groupthink", why:"Control replaces human judgment with rules or machines; groupthink is a group decision problem. Counting outputs is calculability."},
      {t:"Efficiency; the iron rule of oligarchy in universities", why:"Efficiency is the fastest route to a result, and oligarchy concerns power concentration. The key feature here is quantity over quality."}

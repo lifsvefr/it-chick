@@ -20,7 +20,7 @@ ICA.addUnit({
    goals:[
      "Explain what “formal” means in academic English, and why it is about precision more than long words",
      "Replace contractions, conversational phrasal verbs, the general “you” and vague words in a formal essay",
-     "Recognise phrasal verbs that are standard in academic writing, and keep the grammar right when you swap in a single verb",
+     "Recognize phrasal verbs that are standard in academic writing, and keep the grammar right when you swap in a single verb",
      "Choose US or UK spelling and use it consistently"
    ],
    learn:[
@@ -768,8 +768,8 @@ ICA.addUnit({
         ["There are many farmers who use drip irrigation.","Many farmers use drip irrigation."]
       ]},
       "**Redundancy** means saying the same thing twice: “past history”, “final outcome”, “each and every”, “completely eliminate”, “a total of 25 people” (when nothing else is being added up). Keep one word.",
-      {h:"Nominalisation overload"},
-      "[[nominalisation|Nominalisation]] ({{noun-phrases-nominalisation|Unit 1}}) turns verbs and adjectives into nouns: reduce → reduction, analyze → analysis. It is useful: “This reduction…” sums up a whole earlier sentence in two words, which helps cohesion. But too many nominalizations in one sentence bury the action and the actor.",
+      {h:"Nominalization overload"},
+      "[[nominalisation|Nominalization]] ({{noun-phrases-nominalisation|Unit 1}}) turns verbs and adjectives into nouns: reduce → reduction, analyze → analysis. It is useful: “This reduction…” sums up a whole earlier sentence in two words, which helps cohesion. But too many nominalizations in one sentence bury the action and the actor.",
       {table:[
         ["Overloaded","Clearer"],
         ["The implementation of a reduction in the use of plastic bags by supermarkets was achieved.","Supermarkets reduced their use of plastic bags."],
@@ -941,7 +941,7 @@ ICA.addUnit({
      pro:[
       "Formality is a matter of **genre and audience**, not a single scale. A reflective journal, a blog for the public and a grant application each have their own norms. Even within research articles, fields differ: some humanities writing is personal and lively; many science methods sections are impersonal. Read recent examples of the exact genre you are writing.",
       "Phrasal verbs are a good example of why simple rules mislead. Corpus-based grammars of English, such as the *Longman Grammar of Spoken and Written English* (Biber and colleagues, 1999), report phrasal verbs (verb + adverb particle) as much more frequent in conversation and fiction than in academic prose, but some of them are very common in academic writing because they have no exact single-word equivalent (carry out, set up). Prepositional verbs such as “depend on”, “consist of” and “focus on” are a separate group in that grammar, and many of them are everyday academic vocabulary. The useful skill is not avoiding a word class; it is noticing which items in your field’s writing are conversational.",
-      "Single Latinate verbs are not automatically better. “Utilise” for “use”, “commence” for “start” and “ascertain” for “find out” often make writing stiffer without adding precision. Choose the word that is both precise and natural in your field.",
+      "Single Latinate verbs are not automatically better. “Utilize” for “use”, “commence” for “start” and “ascertain” for “find out” often make writing stiffer without adding precision. Choose the word that is both precise and natural in your field.",
       "Starting a sentence with “And” or “But”, splitting an infinitive (“to carefully measure”) and ending a sentence with a preposition are not grammar errors in English. Some tutors and older style guides discourage them; follow your audience’s expectations, but don’t treat them as rules of the language.",
       "Spelling varieties extend beyond US and UK: Canadian, Australian, Indian, Nigerian, Singaporean and other Englishes have their own established conventions. Academic publishers usually specify US or UK spelling, and some accept either if it is consistent. Quotations keep their original spelling."
      ]},
@@ -1144,7 +1144,7 @@ ICA.addUnit({
      builder:[
       "**“There is/are … who/that”** openers can usually go: “There are many farmers who use drip irrigation” → “Many farmers use drip irrigation.”",
       "**“It is … that”** openers often add nothing: “It is clear that the results are mixed” → “The results are mixed” (unless you want “clearly” as a booster).",
-      "**Nominalisation overload.** Nominalisations (reduce → reduction) are useful for summarizing and for cohesion (“This reduction…”). The problem is several in one sentence with a weak verb: “The implementation of a reduction in the use of plastic bags by supermarkets was achieved” → “Supermarkets reduced their use of plastic bags.” Find the main action, make it the verb, and put the actor first.",
+      "**Nominalization overload.** Nominalizations (reduce → reduction) are useful for summarizing and for cohesion (“This reduction…”). The problem is several in one sentence with a weak verb: “The implementation of a reduction in the use of plastic bags by supermarkets was achieved” → “Supermarkets reduced their use of plastic bags.” Find the main action, make it the verb, and put the actor first.",
       "**A method**: count the words in a paragraph; aim to cut 10–20%; then reread to check that nothing became less clear or less accurate.",
       "Watch meaning when you cut: “reduced” is not “stopped”; “some” is not “many”.",
       {table:[["Weak verb + noun","Action verb"],["make a decision","decide"],["conduct an analysis of","analyse"],["give consideration to","consider"],["reach a conclusion","conclude"],["have a discussion","discuss"]]},

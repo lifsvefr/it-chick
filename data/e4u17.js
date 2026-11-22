@@ -6,7 +6,7 @@ ICA.addUnit({
     "Explain how the MDGs were made, how the SDGs were negotiated, what changed between them, and the main critiques of global goal-setting",
     "Read SDG progress figures critically: targets, indicators, data gaps, composite indices, and the review system of the HLPF and voluntary national and local reviews",
     "Trace gender and development thinking from WID to GAD, use Kabeer’s framework of empowerment, and weigh the evidence on unpaid care and microfinance",
-    "Analyse famine, food security, water and health as development problems, using Sen’s entitlement approach and the debates over the Green Revolution and the humanitarian–development nexus",
+    "Analyze famine, food security, water and health as development problems, using Sen’s entitlement approach and the debates over the Green Revolution and the humanitarian–development nexus",
     "Describe the project cycle, logframes and the OECD-DAC evaluation criteria, and discuss participation, localization and the ethics of working in other countries",
     "Connect the four units of the sustainable development cluster in a seminar argument or a development policy brief"
   ],
@@ -177,7 +177,7 @@ ICA.addUnit({
    hook:{q:"The UN’s *Sustainable Development Goals Report 2026* assessed the 139 targets that have enough trend data. What share were on track or already met?", options:["About 15%","About 36%","About 50%","About 70%"], answer:0, reveal:"**About 15%.** Another 21% showed moderate progress, so the UN’s headline is that 36% are on track or moving moderately. Of the rest, 32% show marginal progress, 17% have stagnated and 15% have gone backwards. An independent report by the UN Sustainable Development Solutions Network, using a different method, projected that only about 16% of targets will be achieved by 2030. This lesson shows where such numbers come from, why they differ, and how governments are held to account for them."},
    goals:[
      "Explain how goals, targets and indicators fit together, and who produces SDG data",
-     "Summarise the headline findings of the UN SDG Report 2026 and the Sustainable Development Report 2026, and explain why they differ",
+     "Summarize the headline findings of the UN SDG Report 2026 and the Sustainable Development Report 2026, and explain why they differ",
      "Identify the main data gaps and why disaggregated data matter for “leave no one behind”",
      "Evaluate composite indices such as the SDG Index",
      "Describe the HLPF, voluntary national reviews and SDG localization, with their strengths and critiques"
@@ -221,7 +221,7 @@ ICA.addUnit({
       "At each forum, governments present [[voluntary-national-review|voluntary national reviews (VNRs)]] of their progress. In 2026 (7–15 July), **36 countries** presented, and the forum reviewed Goals 6, 7, 9, 11 and 17 in depth. UN DESA counts **437 reviews since 2016** by 190 countries and the European Union.",
       "Supporters see peer learning and a reason for ministries to talk to each other and to statisticians. Critics call it “soft” accountability: governments choose what to report, presentations are short, and no one is sanctioned. Civil society groups therefore publish their own “spotlight” or shadow reports, the same move that human rights NGOs make before treaty bodies (Unit 11)."
     ]},
-    {h:"Localisation: cities and regions", body:[
+    {h:"Localization: cities and regions", body:[
       "Much of the agenda (water, transport, housing, waste) is delivered by local governments. [[sdg-localisation|SDG localization]] means adapting the goals to local plans and data. Its signature tool is the [[voluntary-local-review|voluntary local review (VLR)]], which has no official status but copies the VNR format.",
       "The first VLRs were released in 2018 by three Japanese municipalities, **Kitakyushu, Toyama and Shimokawa**, and by **New York City**. UN DESA’s online collection now lists over 400. Japan’s Cabinet Office has selected “SDGs FutureCities” every year since fiscal 2018 to model local SDG strategies. India’s government think tank NITI Aayog has ranked all states and union territories in an SDG India Index since 2018. Cities in every region, from Bristol in the United Kingdom to Buenos Aires, have followed with their own reviews.",
       "Supporters say local ownership makes the goals concrete. Critics warn of rebranding existing plans and of cherry-picking easy goals. They also warn of a gap between well-resourced cities and the many municipalities with no statisticians at all."
@@ -351,7 +351,7 @@ ICA.addUnit({
     {h:"Unpaid care: the work that GDP ignores", body:[
       "GDP counts a meal bought in a restaurant but not the same meal cooked at home. Marilyn Waring’s *If Women Counted* (1988) made this a classic feminist critique of national accounts. [[unpaid-care-work|Unpaid care work]] is measured instead through [[time-use-survey|time-use surveys]], in which people record what they do through the day.",
       "The ILO’s *Care Work and Care Jobs for the Future of Decent Work* (2018) found that unpaid care took 16.4 billion hours a day, 76.2% of it done by women. It also found that **606 million** working-age women, against 41 million men, were outside the labor force because of unpaid care. Care also crosses borders, as the migration primer showed with the [[global-care-chain|global care chain]].",
-      "The [[triple-r-framework|“three Rs”]], associated with the feminist economist Diane Elson, became the policy shorthand. **Recognise** unpaid care (count it). **Reduce** its drudgery (water, electricity, transport). **Redistribute** it (from women to men, and from households to the state and employers through services and leave). SDG target 5.4 adopts this language. It asks countries to recognize and value unpaid care through public services, infrastructure and social protection. It also asks them to promote shared responsibility within the household, “as nationally appropriate”."
+      "The [[triple-r-framework|“three Rs”]], associated with the feminist economist Diane Elson, became the policy shorthand. **Recognize** unpaid care (count it). **Reduce** its drudgery (water, electricity, transport). **Redistribute** it (from women to men, and from households to the state and employers through services and leave). SDG target 5.4 adopts this language. It asks countries to recognize and value unpaid care through public services, infrastructure and social protection. It also asks them to promote shared responsibility within the household, “as nationally appropriate”."
     ]},
     {h:"Microfinance: promise and evidence", body:[
       "[[microcredit|Microcredit]], small loans without collateral, became the best-known gender-and-development tool. Muhammad Yunus began lending in Bangladesh in the 1970s. The Grameen Bank became a formal bank in 1983, and Yunus and the bank shared the Nobel Peace Prize in 2006. The model used [[joint-liability|group lending]]. Borrowers, mostly women, formed small groups whose members were responsible for each other’s repayment. Peer pressure replaced collateral.",
@@ -405,7 +405,7 @@ ICA.addUnit({
       {t:"The studies could not be done because microcredit cannot be randomized", why:"They randomized access, for example by area or by applicant, which is what made them possible."}
     ]},
     {id:"e4u17-l3-x6", type:"match", q:"Match each thinker to the idea.", pairs:[
-      ["Ester Boserup (1970)","Modernisation bypassed women farmers and could lower their status","*Woman’s Role in Economic Development*, a founding text of WID."],
+      ["Ester Boserup (1970)","Modernization bypassed women farmers and could lower their status","*Woman’s Role in Economic Development*, a founding text of WID."],
       ["Caroline Moser (1989)","A planning distinction between practical and strategic gender needs","Building on Molyneux (1985)."],
       ["Naila Kabeer (1999)","Empowerment as the ability to make strategic life choices, through resources, agency and achievements","*Development and Change*."],
       ["Marilyn Waring (1988)","National accounts leave out women’s unpaid work","*If Women Counted*."],
@@ -519,7 +519,7 @@ ICA.addUnit({
       {t:"The cause is overpopulation", why:"Nothing in the case concerns population; the mechanism is lost wages."},
       {t:"Only food aid can help, because the markets in the region have failed", why:"Markets supplied food; the problem is purchasing power, so income support can work."}
     ]},
-    {id:"e4u17-l4-x2", type:"sort", q:"Which dimension of food security does each problem mainly concern?", buckets:["Availability","Access","Utilisation","Stability"], items:[
+    {id:"e4u17-l4-x2", type:"sort", q:"Which dimension of food security does each problem mainly concern?", buckets:["Availability","Access","Utilization","Stability"], items:[
       {t:"A national harvest falls by a third", b:0, why:"Less food is produced: availability."},
       {t:"Food is in the shops, but a family’s income has collapsed", b:1, why:"Economic access: Sen’s central question."},
       {t:"Children eat enough calories but suffer from diarrhoea from unsafe water", b:2, why:"The body cannot use the food well: utilization."},
@@ -541,7 +541,7 @@ ICA.addUnit({
     ]},
     {id:"e4u17-l4-x5", type:"match", q:"Match each document or event to what it did.", pairs:[
       ["Dublin Statement (1992)","Said water should be recognized as an economic good","Used to justify pricing and private concessions."],
-      ["Resolution 64/292 (2010)","Recognised a human right to water and sanitation","Adopted by vote in the General Assembly."],
+      ["Resolution 64/292 (2010)","Recognized a human right to water and sanitation","Adopted by vote in the General Assembly."],
       ["Alma-Ata Declaration (1978)","Made primary health care the route to “health for all”","The foundation of the systems approach."],
       ["Grand Bargain (2016)","Committed donors and agencies to reforms, including more funding for local responders","Signed at the World Humanitarian Summit in Istanbul."],
       ["La Vía Campesina (1996)","Put forward food sovereignty","A rival frame to food security."]
@@ -673,7 +673,7 @@ ICA.addUnit({
         "“A completed logframe proves the project works.” It states a hypothesis; only monitoring and evaluation test it.",
         "“Participation is always empowering.” It can be captured by local elites (Cooke and Kothari).",
         "“Local organizations are neutral.” They have their own politics, which is a reason to understand them, not to bypass them.",
-        "“Randomised trials answer every question.” They answer some impact questions well and say less about why, for whom and at what scale."
+        "“Randomized trials answer every question.” They answer some impact questions well and say less about why, for whom and at what scale."
       ]},
       {terms:["project-cycle","logical-framework","results-based-management","dac-criteria","formative-summative-evaluation","participatory-rural-appraisal","aid-localisation","safeguarding-aid"]}
     ]}
@@ -796,7 +796,7 @@ ICA.addUnit({
      {t:"Food sovereignty, and the IPC famine scale", why:"These are Lesson 4 food concepts and do not explain the problem with a national index."},
      {t:"Goodhart’s law, which means the index must have been invented", why:"Goodhart’s law is about measures that become targets. The point here is what national averages leave out."}]},
    {id:"e4u17-cp07", lesson:"e4u17-l3", level:1, q:"A government pipes water close to villages, so women no longer spend hours each day carrying it. Which of the “three Rs” of unpaid care does this mainly serve?", options:[
-     {t:"Recognise", why:"Recognising care means counting and valuing it, for example in time-use surveys."},
+     {t:"Recognize", why:"Recognizing care means counting and valuing it, for example in time-use surveys."},
      {t:"Redistribute", why:"Redistributing care means shifting it from women to men, or from households to the state and employers."},
      {t:"Reduce", ok:true, why:"Yes. Infrastructure such as water, electricity and transport reduces the drudgery of unpaid care."},
      {t:"Regulate", why:"This is not one of the three Rs. They are recognize, reduce and redistribute."}]},
@@ -818,7 +818,7 @@ ICA.addUnit({
    {id:"e4u17-cp11", lesson:"e4u17-l5", level:2, q:"A project hands out fortified flour (output) to cut child anemia (purpose). Anemia does not fall: many households lack clean water, so children keep getting infections. Drawing on Lessons 4 and 5, what went wrong?", options:[
      {t:"The activities were never carried out", why:"The flour was delivered, so the activities and outputs happened. The chain broke later."},
      {t:"An output-to-purpose assumption failed: food security also needs utilization, such as clean water", ok:true, why:"Yes. The logframe’s assumptions column matters most, and utilization is one of food security’s four dimensions."},
-     {t:"The project needed more flour, because availability is the only dimension of food security that matters", why:"Availability was not the problem. Utilisation (nutrition, clean water, health) is a separate dimension."},
+     {t:"The project needed more flour, because availability is the only dimension of food security that matters", why:"Availability was not the problem. Utilization (nutrition, clean water, health) is a separate dimension."},
      {t:"The logframe proves the project worked, because outputs were delivered", why:"A completed logframe states a hypothesis; only monitoring and evaluation test whether outputs led to the purpose."}]},
    {id:"e4u17-cp12", lesson:"e4u17-l5", level:3, q:"At a participatory village meeting, only men speak. The agreed plan funds a road that traders wanted, not the water point many women had asked for. Drawing on Lessons 3 and 5, which diagnosis fits best?", options:[
      {t:"Participation worked, because a plan was agreed by consensus of everyone in the room", why:"Cooke and Kothari warn that consensus language can hide power; agreement does not mean everyone had a voice."},
@@ -939,9 +939,9 @@ ICA.addUnit({
     summary:"How cities and regions adapt the SDGs to local plans and report on them through voluntary local reviews.",
     levels:{
      starter:[
-      "Many SDG targets are delivered locally: clean water, buses, housing, garbage collection, local clinics. **Localisation** means turning the global goals into local plans with local data.",
+      "Many SDG targets are delivered locally: clean water, buses, housing, garbage collection, local clinics. **Localization** means turning the global goals into local plans with local data.",
       "Some cities and regions write a **voluntary local review (VLR)**, a report on their progress that copies the national format. It has no official status, but it gives local leaders a way to set priorities and show results.",
-      {key:"Localisation brings the goals closer to the people who deliver them, but also risks becoming a new label for old plans."}
+      {key:"Localization brings the goals closer to the people who deliver them, but also risks becoming a new label for old plans."}
      ],
      builder:[
       "**Origins.** The first VLRs were released in 2018 by Kitakyushu, Toyama and Shimokawa in Japan and by New York City, for the local and regional governments’ forum at that year’s HLPF. UN DESA’s online collection lists over 400 VLR reports.",
@@ -951,7 +951,7 @@ ICA.addUnit({
      pro:[
       "**Arguments for.** Local governments control much relevant spending and regulation; local data can reveal inequalities that national averages hide; competition between cities can spread good practice.",
       "**Arguments against.** Rebranding existing plans; cherry-picking easy goals; uneven capacity, since small municipalities often lack statisticians; and the risk that rankings of regions (as in national SDG indices) reward data availability as much as progress.",
-      "**Research angle.** Localisation is a good case for norm localization (Unit 2) and multilevel governance: how a global norm is translated, adapted or resisted by local actors.",
+      "**Research angle.** Localization is a good case for norm localization (Unit 2) and multilevel governance: how a global norm is translated, adapted or resisted by local actors.",
       {tip:"Compare a VLR with the city’s own budget: do the priorities in the report match where the money goes?"}
      ]
     },
@@ -1192,7 +1192,7 @@ ICA.addUnit({
      ],
      pro:[
       "**The principles worry.** Humanitarian action rests on humanity, neutrality, impartiality and independence. Development and peace work usually go through governments. Where a government is party to a conflict, joining up can compromise access and trust.",
-      "**Localisation link.** The nexus and localization share a premise: national and local actors are present before, during and after crises.",
+      "**Localization link.** The nexus and localization share a premise: national and local actors are present before, during and after crises.",
       "**Evidence.** Interim reviews report progress in analysis and planning, and slower change in financing. Treat these as self-assessments by the system and look for independent evaluations.",
       {tip:"In a case study, ask which actor leads, whose analysis is used, and whether money is actually pooled or only plans are."}
      ]
@@ -1236,7 +1236,7 @@ ICA.addUnit({
       "**History.** First set out in 1991; revised in 2019, when coherence was added and definitions were updated.",
       "**Two principles.** Apply the criteria thoughtfully to support useful evaluation, and do not apply them mechanistically. An evaluation may focus on a few.",
       "**Types.** Formative (to improve while running) and summative (to judge at the end); process evaluations (was it implemented as planned?) and impact evaluations (did it cause the change?).",
-      "**Impact needs a counterfactual.** Randomised trials, difference-in-differences and other designs estimate what would have happened without the intervention (Units 3 and 15)."
+      "**Impact needs a counterfactual.** Randomized trials, difference-in-differences and other designs estimate what would have happened without the intervention (Units 3 and 15)."
      ],
      pro:[
       "**Realist evaluation.** Pawson and Tilley’s *Realistic Evaluation* (1997) asks what works, for whom, in what circumstances and why, focusing on mechanisms and context.",
@@ -1253,14 +1253,14 @@ ICA.addUnit({
     summary:"The movements to let communities shape development and to shift money and power to local organizations, with their critics.",
     levels:{
      starter:[
-      "Development projects used to be designed far away and delivered to people. **Participation** means involving the people affected in deciding what to do. **Localisation** means giving local and national organizations more of the money and the decisions.",
+      "Development projects used to be designed far away and delivered to people. **Participation** means involving the people affected in deciding what to do. **Localization** means giving local and national organizations more of the money and the decisions.",
       "Both sound obviously good, which is why scholars examine them carefully: who actually speaks, who decides, and who controls the budget?",
       {key:"Participation and localization are about power: they matter only if decisions really move."}
      ],
      builder:[
       "**Chambers.** *Rural Development: Putting the Last First* (1983) and *Whose Reality Counts? Putting the First Last* (1997) argued that outsiders’ “development tourism” missed the poorest, and promoted participatory rural appraisal: community maps, seasonal calendars and wealth rankings made by local people.",
       "**The critique.** Cooke and Kothari (eds.), *Participation: The New Tyranny?* (2001): participation can legitimize decisions already taken, reinforce local elites and silence dissent in the name of consensus.",
-      "**Localisation.** The Grand Bargain (2016) set a target of 25% of humanitarian funding to local and national responders “as directly as possible” by 2020; independent reviews have found direct funding far below that. “Shift the power” and “decolonizing aid” campaigns argue the barriers are structural.",
+      "**Localization.** The Grand Bargain (2016) set a target of 25% of humanitarian funding to local and national responders “as directly as possible” by 2020; independent reviews have found direct funding far below that. “Shift the power” and “decolonizing aid” campaigns argue the barriers are structural.",
       "**Do no harm.** Mary B. Anderson’s *Do No Harm* (1999) asked agencies to map how aid acts as a divider or a connector in conflict."
      ],
      pro:[
@@ -1326,7 +1326,7 @@ ICA.addUnit({
    {id:"gender-mainstreaming", term:"Gender mainstreaming", def:"Assessing the effects on women and men of every policy and program; made official strategy by the Beijing Platform for Action (1995).", codex:"wid-wad-gad"},
    {id:"womens-empowerment", term:"Empowerment (Kabeer)", def:"The expansion of people’s ability to make strategic life choices where this ability was previously denied, studied through resources, agency and achievements.", codex:"womens-empowerment"},
    {id:"unpaid-care-work", term:"Unpaid care work", def:"Caring for people and households without pay (cooking, cleaning, child and elder care); not counted in GDP and done mostly by women.", codex:"unpaid-care-work"},
-   {id:"triple-r-framework", term:"Recognise, reduce, redistribute (the three Rs)", def:"A policy framework, associated with Diane Elson, for unpaid care: count it, cut its drudgery, and share it more fairly.", codex:"unpaid-care-work"},
+   {id:"triple-r-framework", term:"Recognize, reduce, redistribute (the three Rs)", def:"A policy framework, associated with Diane Elson, for unpaid care: count it, cut its drudgery, and share it more fairly.", codex:"unpaid-care-work"},
    {id:"time-use-survey", term:"Time-use survey", def:"A survey in which people record how they spend their time over a day, used to measure unpaid work.", codex:"unpaid-care-work"},
    {id:"microfinance", term:"Microfinance", def:"Financial services (loans, savings, insurance, payments) for people without access to ordinary banks.", codex:"microfinance"},
    {id:"microcredit", term:"Microcredit", def:"Small loans without collateral, often to women in groups, popularized by the Grameen Bank in Bangladesh.", codex:"microfinance"},
@@ -1338,13 +1338,13 @@ ICA.addUnit({
    {id:"green-revolution", term:"Green Revolution", def:"The spread, from the mid-1960s, of high-yielding wheat and rice with fertilizer and irrigation across Asia and Latin America.", codex:"green-revolution"},
    {id:"high-yielding-variety", term:"High-yielding variety (HYV)", def:"A crop variety bred to produce much more grain when given fertilizer and water, such as IR8 rice (1966).", codex:"green-revolution"},
    {id:"iwrm", term:"Integrated water resources management (IWRM)", def:"Coordinated management of water, land and related resources across a basin, balancing users and ecosystems.", codex:"water-governance"},
-   {id:"human-right-to-water", term:"Human right to water and sanitation", def:"Recognised by the UN General Assembly on 28 July 2010 (resolution 64/292): everyone’s right to safe, sufficient, affordable water and sanitation.", codex:"water-governance"},
+   {id:"human-right-to-water", term:"Human right to water and sanitation", def:"Recognized by the UN General Assembly on 28 July 2010 (resolution 64/292): everyone’s right to safe, sufficient, affordable water and sanitation.", codex:"water-governance"},
    {id:"wash", term:"WASH", def:"Water, sanitation and hygiene: the field of development work on drinking water, toilets and handwashing.", codex:"water-governance"},
    {id:"universal-health-coverage", term:"Universal health coverage (UHC)", def:"Everyone getting the health services they need without financial hardship; SDG target 3.8.", codex:"global-health-architecture"},
    {id:"primary-health-care", term:"Primary health care", def:"Essential, community-based health care as the first point of contact, made the route to “health for all” by the Alma-Ata Declaration (1978).", codex:"global-health-architecture"},
    {id:"hdp-nexus", term:"Humanitarian–development–peace nexus", def:"Joint analysis, planning and financing across humanitarian, development and peace actors; the subject of an OECD DAC Recommendation (2019).", codex:"humanitarian-development-nexus"},
    {id:"grand-bargain", term:"Grand Bargain", def:"An agreement among donors and aid agencies launched at the World Humanitarian Summit (May 2016) to make humanitarian aid more efficient and more local.", codex:"humanitarian-development-nexus"},
-   {id:"aid-localisation", term:"Localisation (of aid)", def:"Shifting funding, decisions and leadership to local and national organizations; the Grand Bargain set a 25% target for 2020.", codex:"participation-localisation"},
+   {id:"aid-localisation", term:"Localization (of aid)", def:"Shifting funding, decisions and leadership to local and national organizations; the Grand Bargain set a 25% target for 2020.", codex:"participation-localisation"},
    {id:"project-cycle", term:"Project cycle", def:"The stages of a development project: identification, design, approval, implementation, monitoring and evaluation, with lessons fed back.", codex:"project-cycle-logframe"},
    {id:"logical-framework", term:"Logical framework (logframe)", def:"A four-by-four matrix of goal, purpose, outputs and activities, with indicators, sources of evidence and assumptions; first prepared for USAID in 1969–70.", codex:"project-cycle-logframe"},
    {id:"results-based-management", term:"Results-based management", def:"Planning, budgeting and reporting organized around intended results rather than activities or spending.", codex:"project-cycle-logframe"},
@@ -1581,7 +1581,7 @@ ICA.addUnit({
      {t:"Stating that the trial proves it works everywhere", why:"That overclaims."}]},
    {id:"e4u17-q45", lesson:"e4u17-l5", level:3, q:"Oluwaseun wants a seminar argument that links the four units of the sustainable development cluster. Which plan is strongest?", options:[
      {t:"One cross-cutting debate, evidence from two units, and honest limits", ok:true, why:"Right: choose one cross-cutting debate (for example, who decides and who pays), use evidence from at least two units, and state what the evidence cannot show."},
-     {t:"Summarise each unit in turn", why:"A summary is not an argument."},
+     {t:"Summarize each unit in turn", why:"A summary is not an argument."},
      {t:"Argue that the SDGs solve every problem raised in the other three units", why:"An overclaim with no evidence."},
      {t:"Avoid counter-arguments to keep it clear", why:"Seminar arguments are judged partly on how they handle counter-arguments."}]}
   ]

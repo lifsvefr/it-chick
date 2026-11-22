@@ -172,7 +172,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Center: one honest typical value", body:[
-      {lead:"Summarising a distribution is like describing a city to a visitor: where the middle of town is, and how far it sprawls."},
+      {lead:"Summarizing a distribution is like describing a city to a visitor: where the middle of town is, and how far it sprawls."},
       "The surveys unit (Research Skills, Unit 8) introduced the [[mean-stat|mean]], [[median-stat|median]] and [[mode-stat|mode]] (see {{descriptive-statistics}}). Here we use them with the shape from Lesson 1 in mind. For the clinic waiting times (4, 6, 7, 8, 8, 9, 10, 11, 12, 12, 14, 15, 18, 22, 41):",
       {list:[
         "**Mean** = 197 ÷ 15 = **13.1** minutes. It uses every value, so the 41 pulls it up.",
@@ -871,7 +871,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Masking.** An extreme value inflates the mean and SD used to judge it. With the sample SD, the largest possible |z| in a data set of n values is (n − 1) ÷ √n (Shiffler, 1988): about 1.79 for n = 5, 2.85 for n = 10, and just over 3 only from n = 11. So |z| > 3 can never flag anything in 10 or fewer values. Robust alternatives standardize with the median and MAD, or use IQR fences.",
-      "**Standardising a variable** (converting every value to z) gives it mean 0 and SD 1 but does **not** change its shape: skewed data stay skewed. It is common before combining variables measured in different units, or in some statistical models.",
+      "**Standardizing a variable** (converting every value to z) gives it mean 0 and SD 1 but does **not** change its shape: skewed data stay skewed. It is common before combining variables measured in different units, or in some statistical models.",
       "**Population versus sample.** Theory writes z = (x − μ) ÷ σ with population values; with data you use the sample mean and SD, as OpenStax Section 2.7 shows. For large n the difference is negligible.",
       "**Related scales.** IQ-style scores (mean 100, SD 15), T-scores (mean 50, SD 10) and many test scales are z-scores rescaled to avoid negatives and decimals.",
       "**From z to percentile.** Only for approximately normal data does a z-score convert to a percentile with a normal table (z = 1 is about the 84th percentile). For other shapes, use the actual percentile instead."
@@ -900,7 +900,7 @@ ICA.addUnit({
       "**Overlap matters.** Even when medians differ clearly, many individuals in the “slower” group may do better than many in the “faster” one. Saying how much the boxes overlap keeps a comparison honest."
      ],
      pro:[
-      "**Standardised mean difference.** Cohen’s d divides the difference in means by a pooled SD. For the streetlight data, d ≈ (9.08 − 6.42) ÷ 4.45 ≈ 0.60, but the outlier distorts both the means and the pooled SD, so a median-based description is more trustworthy here. Rules of thumb for “small” or “large” d are context-dependent.",
+      "**Standardized mean difference.** Cohen’s d divides the difference in means by a pooled SD. For the streetlight data, d ≈ (9.08 − 6.42) ÷ 4.45 ≈ 0.60, but the outlier distorts both the means and the pooled SD, so a median-based description is more trustworthy here. Rules of thumb for “small” or “large” d are context-dependent.",
       "**Overlap.** Many readers misjudge how much two groups overlap. Showing the individual points, or stating something like “B’s median exceeds 75% of A’s repairs”, makes overlap concrete.",
       "**[[simpsons-paradox|Simpson’s paradox]].** An overall comparison can reverse within every subgroup when the groups have different make-ups (for example, if one district has a much larger share of complex faults). Stratify by plausible third variables before interpreting a difference.",
       "**Many groups.** With many groups, order them by median, use one axis, and beware of drawing conclusions from the most extreme of many small groups, which are extreme partly by chance.",

@@ -4,7 +4,7 @@ ICA.addUnit({
   blurb:"Who governs problems that no state can handle alone, and by what authority? The concept of global governance and its critics, private authority and transnational networks, clubs such as the G7, G20 and BRICS, global health after COVID-19 and the Pandemic Agreement, the governance of the internet, AI and cyberspace, and the debate on the future of multilateralism, ending with how to build a seminar argument about it.",
   goals:[
     "Define global governance precisely, explain where the idea came from, and weigh Weiss’s and other critiques",
-    "Analyse private authority and transnational networks (government networks, epistemic communities, private standards) and ask who holds them to account",
+    "Analyze private authority and transnational networks (government networks, epistemic communities, private standards) and ask who holds them to account",
     "Compare clubs and minilateral groupings (G7, G20, BRICS, the Quad) and set out their strengths and critiques neutrally",
     "Explain how global health is governed, what COVAX showed, what the 2024 IHR amendments changed, and where the Pandemic Agreement stands as of November 2026",
     "Map the governance of the internet, cyberspace and AI, and describe the multistakeholder and sovereignty models and the main national approaches without taking sides",
@@ -22,7 +22,7 @@ ICA.addUnit({
    goals:[
      "Explain the difference between government and governance, and why the idea arose in the 1990s",
      "Compare three definitions of global governance and the descriptive, analytical and normative uses of the term",
-     "Summarise Weiss’s critique and other critiques from realist and critical scholars",
+     "Summarize Weiss’s critique and other critiques from realist and critical scholars",
      "Classify private authority as market, moral or illicit (Hall and Biersteker)",
      "Explain government networks (Slaughter) and epistemic communities (Haas), and ask who holds them accountable"
    ],
@@ -71,7 +71,7 @@ ICA.addUnit({
         ["Kind","Source of authority","Examples"],
         ["[[market-authority|Market authority]]","Expertise and market position","Credit rating agencies; ISO standards; business codes"],
         ["Moral authority","Principles and reputation","Human rights NGOs; religious bodies; certification schemes"],
-        ["[[illicit-authority|Illicit authority]]","Coercion outside the law","Organised crime groups; mercenaries"]
+        ["[[illicit-authority|Illicit authority]]","Coercion outside the law","Organized crime groups; mercenaries"]
       ]},
       "Earlier, Susan Strange’s *The Retreat of the State* (1996) had argued that markets and firms were taking over functions once performed by states. Claire Cutler, Virginia Haufler and Tony Porter’s *Private Authority and International Affairs* (1999) traced business rule-making. Timothy Sinclair’s *The New Masters of Capital* (2005) showed how a few credit rating agencies shape what governments can borrow. Tim Büthe and Walter Mattli’s *The New Global Rulers* (2011) studied private standard-setting bodies.",
       "Much of this is [[transnational-private-regulation|transnational private regulation]]: rules written and enforced by non-state bodies across borders, such as the Forest Stewardship Council (1993) for timber.",
@@ -390,7 +390,7 @@ ICA.addUnit({
       "An Intergovernmental Working Group has negotiated the annex since July 2025. The talks missed their first target, the Assembly of May 2026. That Assembly asked for a result either at a special session in 2026 or at the Assembly of May 2027. A ninth round met on 2–13 November 2026. Positions, in brief: many African and other developing countries insist that benefits be binding and predictable. Manufacturers and several high-income governments stress fast, simple access to pathogens and voluntary terms. Some critics in several countries object on grounds of sovereignty. The WHO answers them by pointing to the Agreement’s sovereignty clause. Check the WHO’s pages for the latest status before you write."
     ]},
     {h:"Lenses, vocabulary and misconceptions", body:[
-      "Health has been [[securitization|securitized]]. The Security Council first treated HIV/AIDS as a security issue in 2000, and it called the 2014 Ebola outbreak a threat to peace and security. Securitisation can raise money and attention but can also favor borders and surveillance over health systems. Realists expect governments to put their own populations first in a crisis, as with vaccine contracts. Liberals stress rules and pooled purchases. Critical scholars ask why research money follows rich-country markets.",
+      "Health has been [[securitization|securitized]]. The Security Council first treated HIV/AIDS as a security issue in 2000, and it called the 2014 Ebola outbreak a threat to peace and security. Securitization can raise money and attention but can also favor borders and surveillance over health systems. Realists expect governments to put their own populations first in a crisis, as with vaccine contracts. Liberals stress rules and pooled purchases. Critical scholars ask why research money follows rich-country markets.",
       {table:[
         ["Misconception","Closer to the truth"],
         ["The WHO can order countries to lock down.","It advises; governments decide. The Pandemic Agreement says so explicitly."],
@@ -653,7 +653,7 @@ ICA.addUnit({
   {id:"e4u13-l5", title:"The future of multilateralism, and how to argue about it", minutes:65,
    hook:{q:"In September 2024 world leaders at the UN adopted the Pact for the Future. How was it adopted?", options:["By a unanimous recorded vote of all 193 members","Without a vote, after members set aside a proposed amendment by 143 votes to 7","It failed when a permanent member of the Security Council used its veto","By a simple majority, with most of the Global South voting against"], answer:1, reveal:"**Without a vote, after an amendment was set aside.** Russia proposed an amendment that would have weakened the text. By 143 votes to 7, with 15 abstentions, members decided not to take it up. They then adopted the Pact without a vote. (The veto exists only in the Security Council, not in the General Assembly.) Supporters hailed proof that multilateralism still works; critics called the text vague. Both readings are part of this lesson’s debate."},
    goals:[
-     "Summarise the main positions on whether global governance is in crisis, transition or renewal, linking Unit 1’s order debate",
+     "Summarize the main positions on whether global governance is in crisis, transition or renewal, linking Unit 1’s order debate",
      "Describe the Pact for the Future and other reform efforts inside the UN as of November 2026",
      "Explain regional and South-led initiatives and the debate on whether they complement or challenge existing institutions",
      "Use scenarios as analytical tools without making predictions",
@@ -844,7 +844,7 @@ ICA.addUnit({
      {t:"X has left the WHO, because silence counts as withdrawal", why:"Nothing in the IHR treats silence as withdrawal. Silence means the amendments apply."}]},
    {id:"e4u13-cp07", lesson:"e4u13-l3", level:3, q:"A large private foundation offers a poor country money only for one disease program, and its staff sit on the board that sets priorities. Which two concerns from Lessons 1 and 3 apply most?", options:[
      {t:"Vaccine nationalism by rich states, and the risk of a splinternet of national networks", why:"Vaccine nationalism is about rich governments securing doses first; the splinternet is about national internets. Neither fits."},
-     {t:"Securitisation of health, and the WHO’s emergency alert levels", why:"Nothing in the scenario frames health as a security threat or involves a WHO emergency declaration."},
+     {t:"Securitization of health, and the WHO’s emergency alert levels", why:"Nothing in the scenario frames health as a security threat or involves a WHO emergency declaration."},
      {t:"Gridlock in universal bodies, and the commitment problem in bargaining", why:"Gridlock describes stalled universal bodies; the commitment problem belongs to civil-war bargaining. Neither fits a donor’s choices."},
      {t:"Vertical funding can weaken health systems, and the foundation answers to no voters", ok:true, why:"Yes. Critics say vertical programs draw money from clinics and nurses, and ask who holds private rule-makers, including foundations, to account."}]},
    {id:"e4u13-cp08", lesson:"e4u13-l4", level:1, q:"A regulator says of a new brain-implant technology: “Today we could easily change its design, but we don’t know its effects. In fifteen years we will know, but it will be everywhere.” What is this?", options:[
@@ -943,7 +943,7 @@ ICA.addUnit({
       "**Government networks.** In *A New World Order* (2004) Slaughter described a **disaggregated state** whose parts (regulators, judges, legislators) work directly with foreign counterparts. Horizontal networks link equals, such as the Basel Committee on Banking Supervision (1974) or EMEAP for central banks in East Asia and the Pacific (1991); vertical networks link national officials with a supranational body, such as national courts and a regional court.",
       "**Epistemic communities.** Haas (1992) defined them as networks of professionals with recognized expertise and an authoritative claim to policy-relevant knowledge. Scientists shaped the ozone treaties; the IPCC (1988) institutionalized climate expertise.",
       "**Activist and city networks.** Keck and Sikkink’s boomerang pattern (Unit 2) shows how activists use foreign allies to pressure their own government. Cities coordinate through ICLEI (1990) and C40 (2005).",
-      "**Analysing a network.** Who are the members, what do they share (data, standards, peer review), how do their outputs become binding (national law, market pressure), and who is left out?"
+      "**Analyzing a network.** Who are the members, what do they share (data, standards, peer review), how do their outputs become binding (national law, market pressure), and who is left out?"
      ],
      pro:[
       "**Accountability.** Philip Alston (1997) warned that networks of officials could escape democratic control. Others note that regulators from smaller and poorer countries often adopt standards they did not help write, as with banking rules applied far beyond the Basel Committee’s members.",

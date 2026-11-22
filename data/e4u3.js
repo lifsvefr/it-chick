@@ -472,7 +472,7 @@ ICA.addUnit({
       "These six come up again and again in IR seminars. Each is free to use for study, with conditions. Always cite the dataset and its version as the maintainers ask.",
       {table:[
         ["Dataset","What it covers","Access (checked November 2026)"],
-        ["**UCDP** (Uppsala Conflict Data Program at Uppsala University, Sweden, with PRIO in Oslo for the conflict list)","Organised violence: state-based armed conflict 1946–2025; non-state conflict and one-sided violence from 1989; a georeferenced event dataset","Free, CC BY 4.0, with the listed publications cited. Current version 26.1"],
+        ["**UCDP** (Uppsala Conflict Data Program at Uppsala University, Sweden, with PRIO in Oslo for the conflict list)","Organized violence: state-based armed conflict 1946–2025; non-state conflict and one-sided violence from 1989; a georeferenced event dataset","Free, CC BY 4.0, with the listed publications cited. Current version 26.1"],
         ["**Correlates of War**","Wars 1816–2007 (intra-state wars to 2014); National Material Capabilities 1816–2022 (version 7.0) with the CINC power score; alliances and more","Free to download; cite each dataset; no commercial use, and no passing the data on without permission"],
         ["**V-Dem** (Varieties of Democracy Institute at the University of Gothenburg, Sweden)","531 indicators and 251 indices of democracy, 1789–2025 (version 16, March 2026)","Free, CC BY-SA 4.0"],
         ["**World Development Indicators** (World Bank)","About 1,600 indicators for 217 economies, some series over 50 years long","Free, CC BY 4.0"],
@@ -598,7 +598,7 @@ ICA.addUnit({
   {id:"e4u3-l5", title:"From question to master’s thesis", minutes:60,
    hook:{q:"A researcher interviews people in a country where criticizing the government can lead to arrest. Which of these could put participants at the greatest risk?", options:["Recording oral consent without writing down names","A signed consent form with each person’s name, kept with the interview notes","Using code numbers instead of names in the notes","Storing transcripts in encrypted files"], answer:1, reveal:"**The signed form.** The standard protection in many ethics procedures, a signature, creates a written list linking named people to what they said. That is why many researchers in such settings record oral consent instead. Elisabeth Jean Wood wrote a much-cited article on her fieldwork during El Salvador’s civil war (2006). It shows how consent, anonymity and the safe keeping of notes all have to be rethought where research records could endanger people. Ethics in international research means thinking about who could be harmed, and how, before you collect anything. This lesson turns that and the rest of the unit into a thesis plan."},
    goals:[
-     "Organise an IR literature review around debates, schools and gaps, and know where to search",
+     "Organize an IR literature review around debates, schools and gaps, and know where to search",
      "Write an IR research proposal whose question, framework, method, sources, ethics and timeline fit together",
      "Plan the ethics of fieldwork abroad and on sensitive topics: do no harm, consent, data security, permits and safety",
      "Follow IR writing conventions on actors, dates, names, romanization, contested places and primary documents",
@@ -1191,7 +1191,7 @@ ICA.addUnit({
       "Declassification is uneven. Documents may be released with redactions, withdrawn, or released in one country and not another, which can skew which side of an interaction is visible.",
       "Practical habits: plan visits around opening hours and reading-room rules; photograph with permission; record full references (archive, collection, file, folio) at once; and keep a research log. Language skills often decide which archives a project can use.",
       "The Research Skills track covers documents as qualitative data ({{fieldnotes}}), and Hurst’s textbook has a full chapter on archival research.",
-      "Digitisation changes the craft. Keyword search across digitized collections is fast, but it can hide context (the rest of the file a document came from) and favors whatever happened to be digitized. Note which collections were digitized, by whom and why, and read surrounding documents, not only search hits."
+      "Digitization changes the craft. Keyword search across digitized collections is fast, but it can hide context (the rest of the file a document came from) and favors whatever happened to be digitized. Note which collections were digitized, by whom and why, and read surrounding documents, not only search hits."
      ]
     },
     related:["process-tracing","elite-interviews","discourse-analysis","source-types"],

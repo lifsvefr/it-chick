@@ -15,8 +15,8 @@ var GARDEN = {kind:"Journal article", rows:[["Authors (in this order)","Ngozi Ok
 var SHADE = {kind:"Journal article", rows:[["Authors (in this order)","Tomás Herrera; Ngozi Okafor"],["Year","2022"],["Article title","Shade Trees and Walking: A Survey of Older Residents"],["Journal","Urban Green Space Review"],["Volume","11"],["Issue","1"],["Pages","5–19"],["DOI","10.5555/ugsr.2022.0102"]]};
 var SALT = {kind:"Book", rows:[["Author","Priya Raman"],["Title (as the cover shows it)","Salt and Stone: A Short History of Coastal Trade"],["Edition","Second edition"],["Publisher","Harbour Light Press"],["Year","2021"]]};
 var PLACES = {kind:"Chapter in an edited book", rows:[["Chapter author","Kenji Watanabe"],["Chapter title","Mapping Memory in Rebuilt Towns"],["Book title","Places of Memory and Repair"],["Book editors","Amara Diallo; Lucía Fernández"],["Chapter pages","88–112"],["Publisher","Northgate University Press"],["Year","2020"]]};
-var WATER = {kind:"Web page", rows:[["Organisation (author and website)","Clean Rivers Network"],["Page title","How to Test Your Tap Water at Home"],["Date on the page","14 May 2024"],["URL","https://www.cleanriversnetwork.example/advice/test-tap-water"],["Individual author shown?","No"]]};
-var HEAT = {kind:"Report", rows:[["Organisation (author and publisher)","Regional Health Observatory"],["Title","Heat and Health in Cities: A 2022 Update"],["Report number","7"],["Year","2022"],["URL","https://www.rho.example/reports/heat-2022"]]};
+var WATER = {kind:"Web page", rows:[["Organization (author and website)","Clean Rivers Network"],["Page title","How to Test Your Tap Water at Home"],["Date on the page","14 May 2024"],["URL","https://www.cleanriversnetwork.example/advice/test-tap-water"],["Individual author shown?","No"]]};
+var HEAT = {kind:"Report", rows:[["Organization (author and publisher)","Regional Health Observatory"],["Title","Heat and Health in Cities: A 2022 Update"],["Report number","7"],["Year","2022"],["URL","https://www.rho.example/reports/heat-2022"]]};
 var COAST = {kind:"Journal article", rows:[["Authors (in this order)","Sione Taufa; Mei Lin; Oluwaseun Adeyemi"],["Year","2024"],["Title","Measuring Sea-Level Worry in Island Schools"],["Journal","Coastal Learning"],["Volume","8"],["Issue","2"],["Pages","101–118"],["DOI","10.5555/cl.2024.0811"]]};
 var QUILL = {kind:"A chat with a generative AI tool", rows:[["Company that makes the tool","Lumen Labs"],["Tool","Quill"],["Model name shown in the chat","Quill 4.2"],["Date of the chat","3 March 2026"],["Chat title (as the tool shows it)","Planning a School Garden Survey"],["Share link for the chat","https://quill.example/share/k7d2p9"],["The tool’s home page","https://quill.example"]]};
 
@@ -129,7 +129,7 @@ window.CLAB = [
         {a:["Clean Rivers Network. (14 May 2024). *How to test your tap water at home*. https://www.cleanriversnetwork.example/advice/test-tap-water"], expect:"(2024, May 14)"},
         {a:["Clean Rivers Network. (2024, May 14). How to test your tap water at home. https://www.cleanriversnetwork.example/advice/test-tap-water"], expect:"italics"},
         {a:["*How to test your tap water at home*. (2024, May 14). https://www.cleanriversnetwork.example/advice/test-tap-water"], expect:"Author"}],
- hints:["Pattern: Organisation. (Year, Month Day). *Title of page*. URL", "The organization is also the site, so don’t repeat its name before the URL."],
+ hints:["Pattern: Organization. (Year, Month Day). *Title of page*. URL", "The organization is also the site, so don’t repeat its name before the URL."],
  explain:"Group authors are spelled out in full. APA leaves out the site name when it would just repeat the author, and only adds a retrieval date for pages meant to change (like a live dashboard)."},
 
 {id:"cl-apa-report", group:"apa", title:"Report with a number", lesson:"t4u4-l2", style:"APA 7",
@@ -145,7 +145,7 @@ window.CLAB = [
  traps:[{a:["Regional Health Observatory. (2022). *Heat and health in cities: A 2022 update (Report No. 7)*. https://www.rho.example/reports/heat-2022"], expect:"isn’t in italics"},
         {a:["Regional Health Observatory. (2022). *Heat and health in cities: A 2022 update* (Report No. 7). Regional Health Observatory. https://www.rho.example/reports/heat-2022"], expect:"same as the author"},
         {a:["Regional Health Observatory. (2022). *Heat and Health in Cities: A 2022 Update* (Report No. 7). https://www.rho.example/reports/heat-2022"], expect:"Sentence case"}],
- hints:["Pattern: Organisation. (Year). *Title* (Report No. x). URL"],
+ hints:["Pattern: Organization. (Year). *Title* (Report No. x). URL"],
  explain:"Reports from governments, charities and agencies are **gray literature**: not peer-reviewed journal articles, but often essential. The report number helps readers find the exact document among many similar ones."},
 
 {id:"cl-apa-intext", group:"apa", title:"In-text citations", lesson:"t4u4-l2", style:"APA 7",
@@ -271,7 +271,7 @@ window.CLAB = [
  traps:[{a:["Clean Rivers Network. \"How to Test Your Tap Water at Home.\" *Clean Rivers Network*, 14 May 2024, www.cleanriversnetwork.example/advice/test-tap-water."], expect:"starts with the title"},
         {a:["\"How to Test Your Tap Water at Home.\" *Clean Rivers Network*, May 14, 2024, www.cleanriversnetwork.example/advice/test-tap-water."], expect:"day first"},
         {a:["*How to Test Your Tap Water at Home*. *Clean Rivers Network*, 14 May 2024, www.cleanriversnetwork.example/advice/test-tap-water."], expect:"quotation marks"}],
- hints:["Pattern: “Title of Page.” *Website*, Day Month Year, URL.", "Organisation is author and publisher? Start with the title."],
+ hints:["Pattern: “Title of Page.” *Website*, Day Month Year, URL.", "Organization is author and publisher? Start with the title."],
  explain:"MLA avoids saying the same name twice. Its dates run day–month–year, and the access date is optional: add it when a page has no date or is likely to change."},
 
 {id:"cl-mla-intext", group:"mla", title:"In-text citations", lesson:"t4u4-l3", style:"MLA 9",

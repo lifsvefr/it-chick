@@ -879,7 +879,7 @@ ICA.addUnit({
      pro:[
       "**Yates’ continuity correction.** For 2 × 2 tables, R’s `chisq.test` (`correct = TRUE`) and SciPy’s `chi2_contingency` (`correction=True`) subtract 0.5 from each |O − E| before squaring, by default. Spreadsheets don’t. The corrected test is conservative; many statisticians prefer the uncorrected test or an exact test, but either way, state what you used.",
       "**Small expected counts.** If expected counts are small, combine sensible categories, use **Fisher’s exact test** (R: `fisher.test`), or get a simulated p-value (`chisq.test(tab, simulate.p.value = TRUE)`).",
-      "**Which cells drive it?** Standardised residuals, (O − E) ÷ √E (or the adjusted versions R reports as `stdres`), show which cells differ most from independence; values beyond about ±2 stand out.",
+      "**Which cells drive it?** Standardized residuals, (O − E) ÷ √E (or the adjusted versions R reports as `stdres`), show which cells differ most from independence; values beyond about ±2 stand out.",
       "**Strength.** Cramér’s V = √(χ² ÷ (n × (k − 1))), where k is the smaller of the number of rows and columns: √(8.41 ÷ 300) ≈ 0.17 for the library table. With large n, a tiny V can still give a tiny p.",
       "**Degrees of freedom in goodness of fit.** Against fully specified proportions, df = categories − 1. If you first estimate parameters from the same data (for example, fitting a mean before testing a distribution’s shape), subtract one further degree of freedom for each estimated parameter.",
       "**Paired categorical data.** If the same people answer twice (before and after), the observations aren’t independent; McNemar’s test (R: `mcnemar.test`) is the paired counterpart for 2 × 2 tables."

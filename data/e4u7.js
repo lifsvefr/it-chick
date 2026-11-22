@@ -6,7 +6,7 @@ ICA.addUnit({
     "Compare media systems with Hallin and Mancini’s models and their extensions beyond the West, and read press freedom indices critically",
     "Use agenda setting, framing, news values, the CNN effect and the propaganda model to analyze real coverage, and say who disagrees with each",
     "Explain the public sphere and the networked public sphere, weigh the evidence on social media, protest and filter bubbles, and describe how platforms are governed",
-    "Analyse information disorder and state influence operations, and judge what fact-checking, prebunking, media literacy and AI labeling can and can’t do (as of November 2026)",
+    "Analyze information disorder and state influence operations, and judge what fact-checking, prebunking, media literacy and AI labeling can and can’t do (as of November 2026)",
     "Design a small framing analysis, choose news archives and datasets such as GDELT and Media Cloud, and handle the ethics of studying social media"
   ],
   read:[
@@ -42,11 +42,11 @@ ICA.addUnit({
       ]},
       {table:[
         ["Model","Typical cases","Pattern"],
-        ["[[polarized-pluralist-model|Polarised Pluralist]] (Mediterranean)","France, Greece, Italy, Portugal, Spain","Elite press, strong links to parties, weaker professional autonomy, an active state"],
+        ["[[polarized-pluralist-model|Polarized Pluralist]] (Mediterranean)","France, Greece, Italy, Portugal, Spain","Elite press, strong links to parties, weaker professional autonomy, an active state"],
         ["[[democratic-corporatist-model|Democratic Corporatist]] (North/Central European)","Nordic countries, Germany, Austria, the Low Countries, Switzerland","Mass press, a history of party papers, strong professionalism, a strong state that also protects press freedom"],
         ["[[liberal-media-model|Liberal]] (North Atlantic)","Britain, Ireland, the United States, Canada","Commercial press, neutral “objective” ideals, market more than state"]
       ]},
-      {fig:'<svg viewBox="0 0 340 446"><rect class="d-panel" x="4" y="8" width="332" height="128" rx="8"/><text x="170" y="30" text-anchor="middle">Polarised Pluralist</text><text class="s" x="170" y="47" text-anchor="middle">France, Greece, Italy, Portugal, Spain</text><text class="s" x="14" y="72">Mass press</text><rect class="d-rose" x="150" y="62" width="58" height="11" rx="3"/><text class="s" x="14" y="90">Parallelism</text><rect class="d-rose" x="150" y="80" width="174" height="11" rx="3"/><text class="s" x="14" y="108">Professionalism</text><rect class="d-rose" x="150" y="98" width="58" height="11" rx="3"/><text class="s" x="14" y="126">State role</text><rect class="d-rose" x="150" y="116" width="174" height="11" rx="3"/><rect class="d-panel" x="4" y="144" width="332" height="138" rx="8"/><text x="170" y="166" text-anchor="middle">Democratic Corporatist</text><text class="s" x="170" y="183" text-anchor="middle">Nordic countries, Germany, Austria,</text><text class="s" x="170" y="198" text-anchor="middle">the Low Countries, Switzerland</text><text class="s" x="14" y="220">Mass press</text><rect class="d-sage" x="150" y="210" width="174" height="11" rx="3"/><text class="s" x="14" y="238">Parallelism</text><rect class="d-sage" x="150" y="228" width="116" height="11" rx="3"/><text class="s" x="14" y="256">Professionalism</text><rect class="d-sage" x="150" y="246" width="174" height="11" rx="3"/><text class="s" x="14" y="274">State role</text><rect class="d-sage" x="150" y="264" width="174" height="11" rx="3"/><rect class="d-panel" x="4" y="290" width="332" height="128" rx="8"/><text x="170" y="312" text-anchor="middle">Liberal</text><text class="s" x="170" y="329" text-anchor="middle">Britain, Ireland, United States, Canada</text><text class="s" x="14" y="354">Mass press</text><rect class="d-gold" x="150" y="344" width="116" height="11" rx="3"/><text class="s" x="14" y="372">Parallelism</text><rect class="d-gold" x="150" y="362" width="58" height="11" rx="3"/><text class="s" x="14" y="390">Professionalism</text><rect class="d-gold" x="150" y="380" width="174" height="11" rx="3"/><text class="s" x="14" y="408">State role</text><rect class="d-gold" x="150" y="398" width="58" height="11" rx="3"/><text class="s" x="170" y="438" text-anchor="middle">Bars: low, medium or high (simplified)</text></svg>', alt:"Three stacked panels, one per model, each with four bars for mass press, political parallelism, professionalism and state role. Polarised Pluralist (France, Greece, Italy, Portugal, Spain): mass press low, parallelism high, professionalism low, state role high. Democratic Corporatist (Nordic countries, Germany, Austria, the Low Countries, Switzerland): mass press high, parallelism medium, professionalism high, state role high. Liberal (Britain, Ireland, United States, Canada): mass press medium, parallelism low, professionalism high, state role low.", cap:"Hallin and Mancini’s four dimensions, simplified. They are ideal types: real countries sit between them, and Britain’s partisan national press is a well-known exception inside the Liberal model."},
+      {fig:'<svg viewBox="0 0 340 446"><rect class="d-panel" x="4" y="8" width="332" height="128" rx="8"/><text x="170" y="30" text-anchor="middle">Polarized Pluralist</text><text class="s" x="170" y="47" text-anchor="middle">France, Greece, Italy, Portugal, Spain</text><text class="s" x="14" y="72">Mass press</text><rect class="d-rose" x="150" y="62" width="58" height="11" rx="3"/><text class="s" x="14" y="90">Parallelism</text><rect class="d-rose" x="150" y="80" width="174" height="11" rx="3"/><text class="s" x="14" y="108">Professionalism</text><rect class="d-rose" x="150" y="98" width="58" height="11" rx="3"/><text class="s" x="14" y="126">State role</text><rect class="d-rose" x="150" y="116" width="174" height="11" rx="3"/><rect class="d-panel" x="4" y="144" width="332" height="138" rx="8"/><text x="170" y="166" text-anchor="middle">Democratic Corporatist</text><text class="s" x="170" y="183" text-anchor="middle">Nordic countries, Germany, Austria,</text><text class="s" x="170" y="198" text-anchor="middle">the Low Countries, Switzerland</text><text class="s" x="14" y="220">Mass press</text><rect class="d-sage" x="150" y="210" width="174" height="11" rx="3"/><text class="s" x="14" y="238">Parallelism</text><rect class="d-sage" x="150" y="228" width="116" height="11" rx="3"/><text class="s" x="14" y="256">Professionalism</text><rect class="d-sage" x="150" y="246" width="174" height="11" rx="3"/><text class="s" x="14" y="274">State role</text><rect class="d-sage" x="150" y="264" width="174" height="11" rx="3"/><rect class="d-panel" x="4" y="290" width="332" height="128" rx="8"/><text x="170" y="312" text-anchor="middle">Liberal</text><text class="s" x="170" y="329" text-anchor="middle">Britain, Ireland, United States, Canada</text><text class="s" x="14" y="354">Mass press</text><rect class="d-gold" x="150" y="344" width="116" height="11" rx="3"/><text class="s" x="14" y="372">Parallelism</text><rect class="d-gold" x="150" y="362" width="58" height="11" rx="3"/><text class="s" x="14" y="390">Professionalism</text><rect class="d-gold" x="150" y="380" width="174" height="11" rx="3"/><text class="s" x="14" y="408">State role</text><rect class="d-gold" x="150" y="398" width="58" height="11" rx="3"/><text class="s" x="170" y="438" text-anchor="middle">Bars: low, medium or high (simplified)</text></svg>', alt:"Three stacked panels, one per model, each with four bars for mass press, political parallelism, professionalism and state role. Polarized Pluralist (France, Greece, Italy, Portugal, Spain): mass press low, parallelism high, professionalism low, state role high. Democratic Corporatist (Nordic countries, Germany, Austria, the Low Countries, Switzerland): mass press high, parallelism medium, professionalism high, state role high. Liberal (Britain, Ireland, United States, Canada): mass press medium, parallelism low, professionalism high, state role low.", cap:"Hallin and Mancini’s four dimensions, simplified. They are ideal types: real countries sit between them, and Britain’s partisan national press is a well-known exception inside the Liberal model."},
       "The Codex entry {{media-systems}} has more on the models and their critics. Two points matter in seminars. First, these are **ideal types**, not a league table: no model is “best”. Second, Hallin and Mancini predicted a slow drift toward the Liberal model as commercial media spread. They later added that the drift was neither complete nor one-way. Michael Brüggemann and colleagues tested this in 2014 by turning the dimensions into measures. They found four empirical clusters of Western systems rather than three."
     ]},
     {h:"Beyond the West", body:[
@@ -95,11 +95,11 @@ ICA.addUnit({
       {t:"That it relied on expert surveys with too few respondents", why:"That is a critique of press freedom indices. *Four Theories* was an essay in normative theory, not a survey."},
       {t:"That it ignored social media", why:"True but trivial: it was written in 1956. The criticism quoted is about its normative approach."}
     ]},
-    {id:"e4u7-l1-x2", type:"sort", q:"Which of Hallin and Mancini’s models does each description fit best?", buckets:["Polarised Pluralist","Democratic Corporatist","Liberal"], items:[
+    {id:"e4u7-l1-x2", type:"sort", q:"Which of Hallin and Mancini’s models does each description fit best?", buckets:["Polarized Pluralist","Democratic Corporatist","Liberal"], items:[
       {t:"Newspapers read mainly by political and educated elites; close links between outlets and parties", b:0, why:"An elite press and high political parallelism are the core of the Mediterranean model."},
       {t:"High newspaper readership, strong journalists’ unions and press councils, and generous press subsidies", b:1, why:"Mass press, strong professionalism and an active state that protects press freedom mark the North/Central European model."},
       {t:"Commercial media dominate and the state’s role is limited; “objective” reporting is the professional ideal", b:2, why:"Market dominance and neutral-professional norms define the Liberal model."},
-      {t:"Governments have often used state broadcasters and advertising to reward friendly outlets", b:0, why:"“Instrumentalisation” of media by governments and parties is typical of the Polarised Pluralist model."},
+      {t:"Governments have often used state broadcasters and advertising to reward friendly outlets", b:0, why:"“Instrumentalization” of media by governments and parties is typical of the Polarized Pluralist model."},
       {t:"A history of party newspapers that slowly gave way to neutral commercial papers, alongside strong public broadcasting", b:1, why:"External pluralism through party papers, then a shift, fits the Democratic Corporatist pattern."},
       {t:"Journalism developed early as a business, with newspapers funded by advertising and mass sales", b:2, why:"Early commercial development is a defining feature of the Liberal model."}
     ]},
@@ -187,7 +187,7 @@ ICA.addUnit({
         "**Threshold** and **unexpectedness**: big and surprising events pass the filter.",
         "**Meaningfulness** and **consonance**: events that seem culturally close, or that fit what people already expect, are easier to report.",
         "**Reference to elite nations** and **elite people**: powerful countries and famous people get covered more.",
-        "**Personalisation** and **negativity**: stories about named people and about bad news travel further."
+        "**Personalization** and **negativity**: stories about named people and about bad news travel further."
       ]},
       "They warned about a consequence. In their view, distant, less powerful places appear mainly through sudden negative events, which feeds a picture of them as permanently in crisis. Tony Harcup and Deirdre O’Neill revisited the list in 2001 and again in 2017. They added values such as entertainment, celebrity and shareability for the social media age.",
       "These patterns became a diplomatic issue. In the 1970s many newly independent states argued that a few Western news agencies dominated world news and pictured the Global South through crisis. They called at UNESCO for a **New World Information and Communication Order**. UNESCO’s MacBride Commission report, *Many Voices, One World* (1980), backed more balanced flows. Critics, led by the United States and the United Kingdom, saw a threat to press freedom. Both countries left UNESCO in the mid-1980s, partly over the dispute (the US from the end of 1984, the UK from the end of 1985). The UK rejoined in 1997 and the US in 2003. The US later left again from 2018 to 2023. In July 2025 it announced a further withdrawal, due to take effect at the end of 2026.",
@@ -285,7 +285,7 @@ ICA.addUnit({
    goals:[
      "Explain Habermas’s public sphere, its critics, and the idea of a networked public sphere",
      "Weigh the evidence on social media’s role in protest, from the Arab uprisings to Hong Kong 2019 and Nepal 2025, without taking sides",
-     "Summarise what research shows, and doesn’t show, about algorithms, filter bubbles and polarization",
+     "Summarize what research shows, and doesn’t show, about algorithms, filter bubbles and polarization",
      "Compare how the EU, the United States, China and others govern platforms, and the arguments for and against each approach"
    ],
    learn:[
@@ -338,7 +338,7 @@ ICA.addUnit({
       {list:[
         "**“Social media cause revolutions.”** They change how protest spreads and organizes; causes lie in politics, economics and grievances.",
         "**“Algorithms trap everyone in bubbles.”** The evidence is weaker and more mixed, and most of it comes from the US.",
-        "**“Regulation is simply censorship”** or **“regulation simply protects users”**: each law is a trade-off. Analyse its rules, enforcement and effects."
+        "**“Regulation is simply censorship”** or **“regulation simply protects users”**: each law is a trade-off. Analyze its rules, enforcement and effects."
       ]},
       {key:"The networked public sphere is wider than the old one, but it still has gatekeepers, now often companies and governments. Its effects on protest and polarization are real but conditional."}
     ]}
@@ -354,7 +354,7 @@ ICA.addUnit({
       ["Malcolm Gladwell (2010)","Online ties are weak; high-risk activism needs strong ties","His New Yorker essay “Small Change” made the argument."],
       ["Evgeny Morozov (2011)","The same tools help governments watch and repress activists","*The Net Delusion* criticized “cyber-utopianism”."],
       ["Zeynep Tufekci (2017)","Movements can grow fast online but stay fragile without organization","*Twitter and Tear Gas* calls this the power and fragility of networked protest."],
-      ["Bennett and Segerberg","Personalised, networked participation replaces formal membership","They called it the logic of connective action."],
+      ["Bennett and Segerberg","Personalized, networked participation replaces formal membership","They called it the logic of connective action."],
       ["Yochai Benkler (2006)","The internet creates a many-to-many networked public sphere","*The Wealth of Networks* made the more optimistic case."]
     ]},
     {id:"e4u7-l3-x3", type:"mcq", q:"Which description of the Hong Kong protests of 2019 meets the neutrality standard expected in a seminar paper?", options:[
@@ -735,13 +735,13 @@ ICA.addUnit({
     levels:{
      starter:[
       "A media system is the whole set of a country’s news organizations together with the markets, laws and political ties around them. Comparing systems explains why the same world event is told so differently in different places.",
-      "The best-known comparison is Daniel Hallin and Paolo Mancini’s *Comparing Media Systems* (2004). Looking at 18 democracies in Western Europe and North America, they described three models: **Polarised Pluralist** (Mediterranean), **Democratic Corporatist** (North and Central Europe) and **Liberal** (North Atlantic).",
+      "The best-known comparison is Daniel Hallin and Paolo Mancini’s *Comparing Media Systems* (2004). Looking at 18 democracies in Western Europe and North America, they described three models: **Polarized Pluralist** (Mediterranean), **Democratic Corporatist** (North and Central Europe) and **Liberal** (North Atlantic).",
       {key:"Compare systems on several dimensions at once; the models are types, not a ranking."},
       "Think of the models as recipes with the same four ingredients in different amounts: a mass or elite press, ties to political parties, journalists’ professional autonomy, and the role of the state."
      ],
      builder:[
       "**The four dimensions:** the development of media markets (especially a mass-circulation press), [[political-parallelism|political parallelism]], [[journalistic-professionalism|journalistic professionalism]], and the role of the state.",
-      {table:[["Model","Typical pattern"],["Polarised Pluralist","Elite press, high parallelism, weaker professional autonomy, interventionist state"],["Democratic Corporatist","Mass press, history of party papers, strong professionalism, strong state with press-freedom protections"],["Liberal","Commercial press, neutral-professional ideal, limited state role"]]},
+      {table:[["Model","Typical pattern"],["Polarized Pluralist","Elite press, high parallelism, weaker professional autonomy, interventionist state"],["Democratic Corporatist","Mass press, history of party papers, strong professionalism, strong state with press-freedom protections"],["Liberal","Commercial press, neutral-professional ideal, limited state role"]]},
       "**How to use it.** In a seminar paper, place each country on each dimension with evidence (circulation figures, ownership data, journalists’ surveys, laws), then say which model it resembles and where it doesn’t fit. The dimensions travel better than the three labels.",
       "**Predecessor.** Siebert, Peterson and Schramm’s *Four Theories of the Press* (1956) is now read mainly as a Cold War normative text, useful as history of the field."
      ],
@@ -1079,7 +1079,7 @@ ICA.addUnit({
      ],
      builder:[
       "**[[contextual-integrity|Contextual integrity]]** (Helen Nissenbaum): information flows carry the norms of the context they were shared in. Moving a post from a small group to a published paper can break those norms.",
-      {list:["**Harm**: activists and minorities in repressive settings face real risk ([[do-no-harm]]).","**Consent**: expected for private groups and ordinary users; less so for public figures acting publicly.","**Anonymisation**: paraphrase, aggregate or create composite examples.","**Rules**: platform terms, data protection laws, and ethics committee review."]},
+      {list:["**Harm**: activists and minorities in repressive settings face real risk ([[do-no-harm]]).","**Consent**: expected for private groups and ordinary users; less so for public figures acting publicly.","**Anonymization**: paraphrase, aggregate or create composite examples.","**Rules**: platform terms, data protection laws, and ethics committee review."]},
       "**Cautionary cases.** The 2014 Facebook emotional contagion experiment (689,003 users) and the 2018 Cambridge Analytica revelations (data on up to 87 million users)."
      ],
      pro:[
@@ -1096,7 +1096,7 @@ ICA.addUnit({
    {id:"media-system", term:"Media system", def:"A country’s whole set of news organizations together with the markets, laws and political ties around them.", codex:"media-systems"},
    {id:"political-parallelism", term:"Political parallelism", def:"How far media outlets line up with political parties or camps, in ownership, staff, audiences and the views they take. One of Hallin and Mancini’s four dimensions.", codex:"media-systems"},
    {id:"journalistic-professionalism", term:"Journalistic professionalism", def:"How far journalists share their own norms and control their own work, rather than serving owners, parties or the state.", codex:"media-systems"},
-   {id:"polarized-pluralist-model", term:"Polarised Pluralist model", def:"Hallin and Mancini’s Mediterranean model: an elite press, close ties between media and parties, weaker professional autonomy and an active state.", codex:"media-systems"},
+   {id:"polarized-pluralist-model", term:"Polarized Pluralist model", def:"Hallin and Mancini’s Mediterranean model: an elite press, close ties between media and parties, weaker professional autonomy and an active state.", codex:"media-systems"},
    {id:"democratic-corporatist-model", term:"Democratic Corporatist model", def:"Hallin and Mancini’s North and Central European model. It has a mass press, a history of party papers, strong professionalism and a strong state that also protects press freedom.", codex:"media-systems"},
    {id:"liberal-media-model", term:"Liberal model (media systems)", def:"Hallin and Mancini’s North Atlantic model: commercial media dominate, neutral-professional reporting is the ideal and the state’s role is limited.", codex:"media-systems"},
    {id:"public-service-media", term:"Public service media", def:"Broadcasters and online services funded publicly (often by a license fee or tax) but meant to be editorially independent of government.", codex:"media-systems"},
@@ -1148,7 +1148,7 @@ ICA.addUnit({
      {t:"48 markets on every continent", why:"That is the coverage of the *Digital News Report 2026*."},
      {t:"The Soviet Union, the United States, Britain and China", why:"That is closer to the Cold War scope of *Four Theories of the Press* (1956)."}]},
    {id:"e4u7-q02", lesson:"e4u7-l1", level:2, q:"In Country P, the main newspapers are read mostly by political elites, each is close to a party, and governments have long used state advertising to reward friendly outlets. Which model does it most resemble?", options:[
-     {t:"Polarised Pluralist", ok:true, why:"Correct. An elite press, high political parallelism and instrumentalization by governments are its core features."},
+     {t:"Polarized Pluralist", ok:true, why:"Correct. An elite press, high political parallelism and instrumentalization by governments are its core features."},
      {t:"Democratic Corporatist", why:"That model has a mass press and strong professionalism; the state supports media but protects press freedom."},
      {t:"Liberal", why:"The Liberal model has commercial, neutral-professional media and a limited state role."},
      {t:"Soviet communist", why:"That is a category from *Four Theories of the Press*, and the country described has competing party-linked papers, not one party’s monopoly."}]},

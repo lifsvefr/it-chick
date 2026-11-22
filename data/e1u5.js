@@ -5,7 +5,7 @@ ICA.addUnit({
   goals:[
     "Explain what academic Japanese (アカデミック・ジャパニーズ) covers and how Units 5–8 of this elective are organized",
     "Choose between です・ます体 and である体 for a task, convert sentences between them correctly, and keep one style throughout a text",
-    "Recognise common 話し言葉 in your writing and replace it with suitable 書き言葉, including shortened forms, ら抜き言葉, 「とか」 and sentence-initial 「なので」",
+    "Recognize common 話し言葉 in your writing and replace it with suitable 書き言葉, including shortened forms, ら抜き言葉, 「とか」 and sentence-initial 「なので」",
     "Use 漢語 where they make writing precise and compact, while keeping the formal 和語 that academic Japanese relies on",
     "Match sentence endings (文末表現) to the strength of your evidence, and avoid personal endings such as 「～と思う」 in reports",
     "Use pointing words (指示語) such as この, その and こうした, and basic connectors (接続詞), clearly in written Japanese"
@@ -21,7 +21,7 @@ ICA.addUnit({
    goals:[
      "Explain what academic Japanese is and how it differs from the Japanese of everyday conversation",
      "Name the three layers that change in academic Japanese: sentence style, choice of words and sentence endings",
-     "Recognise 和語, 漢語 and 外来語 in a sentence",
+     "Recognize 和語, 漢語 and 外来語 in a sentence",
      "Explain how Units 5–8 are organized and how furigana is used in them"
    ],
    learn:[
@@ -302,7 +302,7 @@ ICA.addUnit({
      "Explain the difference between 書き言葉 and 話し言葉, and why it is separate from politeness",
      "Replace common spoken words (でも, だから, すごく, ちょっと, いっぱい and others) with written equivalents",
      "Undo spoken contractions such as ～てる, ～じゃない and ～なきゃ",
-     "Recognise ら抜き言葉 and avoid 「とか」 and sentence-initial 「なので」 in reports",
+     "Recognize ら抜き言葉 and avoid 「とか」 and sentence-initial 「なので」 in reports",
      "Use typical written patterns such as the 連用中止 form (～し、) and ～ず"
    ],
    learn:[
@@ -357,7 +357,7 @@ ICA.addUnit({
     {h:"Why this matters", body:[
       "Spoken words are among the most common comments teachers write on student reports in Japan, for Japanese and international students alike. One でも or すごく won’t ruin a report, but a page full of them makes careful thinking sound casual, and teachers may read it as a sign that you haven’t revised.",
       "The swaps also make your writing more precise. しかし tells the reader exactly what kind of link you mean; そのため makes a cause-and-effect claim that you then have to support. Replacing すごく with a figure forces you to check your evidence. Written style is not decoration: it is part of thinking clearly on paper.",
-      "Finally, knowing the spoken forms helps you **listen**. Lectures, seminars and office hours use plenty of 話し言葉, even from professors. Recognising ～てる, ～じゃない and ら抜き forms in speech, and knowing their written partners, lets you take notes in written style as you listen."
+      "Finally, knowing the spoken forms helps you **listen**. Lectures, seminars and office hours use plenty of 話し言葉, even from professors. Recognizing ～てる, ～じゃない and ら抜き forms in speech, and knowing their written partners, lets you take notes in written style as you listen."
     ]},
     {h:"Common misconceptions", body:[
       {table:[["Misconception","Closer to the truth"],["If I use です・ます, my words are formal enough.","Politeness and register are separate. 「でも、すごく大事なんです」 is polite but spoken."],["書ける and 行ける are ら抜き言葉.","They are the standard potential forms of う-verbs. Only る-verbs and 来る need ～られる."],["Spoken words are wrong Japanese.","They are correct in conversation. They just don’t fit a formal report."],["Every とても must become 非常に.","Often a precise fact (2倍, 30%) is better than any intensifier."],["The て-form is wrong in writing.","It is correct. The 連用中止 form is simply more typical of formal writing."]]},
@@ -462,7 +462,7 @@ ICA.addUnit({
   {id:"e1u5-l4", title:"漢語 and 和語: choosing academic words", minutes:50,
    hook:{q:"Which statement about these two sentences is true? A: 「[人口]{じんこう}が[増加]{ぞうか}している。」 B: 「[人口]{じんこう}が[増]{ふ}えている。」 (Both mean “the population is increasing.”)", options:["Only A is correct Japanese","Only B is correct Japanese","Both are correct; A sounds more typical of a report","Both are wrong in a report"], answer:2, reveal:"**Both are correct.** 増える is a native Japanese word (和語) and 増加する is a word of Chinese origin (漢語). Reports often prefer the 漢語, because it sounds more formal and turns easily into a noun (人口の増加, “the increase in population”). But B is not a mistake, and many formal 和語 are essential in academic writing. This lesson shows when a 漢語 helps and when a 和語 is the better choice."},
    goals:[
-     "Recognise 和語, 漢語, 外来語 and 混種語, and explain why academic Japanese uses many 漢語",
+     "Recognize 和語, 漢語, 外来語 and 混種語, and explain why academic Japanese uses many 漢語",
      "Replace everyday 和語 verbs with suitable 漢語 verbs (調べる → 調査する, 増える → 増加する, 考える → 考察する) where they fit",
      "Explain why 和語 and 漢語 are not one-to-one swaps, and keep the formal 和語 that academic writing needs",
      "Use 外来語 carefully and avoid piling up 漢語 into hard-to-read text"
@@ -479,7 +479,7 @@ ICA.addUnit({
       "**1. They are compact.** A 漢語 verb is a noun + する. Drop the する and you have a noun, ready to be packed into a longer phrase. This is how Japanese does [[nominalisation]]:",
       {fig:'<svg viewBox="0 0 340 424"><text x="170" y="18" text-anchor="middle">Inside a 漢語 verb</text><rect class="d-soft" x="8" y="30" width="324" height="56" rx="8" stroke-width="2"/><text x="20" y="54">和語: 増える (ふえる)</text><text class="s" x="20" y="74">one kanji, kun reading, kana ending</text><rect class="d-lup" x="40" y="100" width="100" height="70" rx="8" stroke-width="2"/><text x="90" y="132" text-anchor="middle">増</text><text class="s" x="90" y="156" text-anchor="middle">ぞう: increase</text><text x="170" y="140" text-anchor="middle">+</text><rect class="d-lup" x="200" y="100" width="100" height="70" rx="8" stroke-width="2"/><text x="250" y="132" text-anchor="middle">加</text><text class="s" x="250" y="156" text-anchor="middle">か: add</text><text x="170" y="198" text-anchor="middle">= 増加 (ぞうか), on + on</text><rect class="d-sage" x="8" y="214" width="324" height="200" rx="8" stroke-width="2"/><text class="s" x="20" y="236">from verb to compact noun</text><text x="20" y="264">人口が増える</text><text x="20" y="300">→ 人口が増加する</text><text class="s" x="40" y="318">(漢語 + する: a verb)</text><text x="20" y="350">→ 人口の増加</text><text class="s" x="40" y="368">(drop する: a noun)</text><text x="20" y="398">→ 人口増加 (a compound)</text></svg>', alt:"The 和語 verb 増える, read ふえる, compared with the 漢語 増加, made of 増 (ぞう, increase) and 加 (か, add), read with on readings. Below, a chain: 人口が増える, then 人口が増加する (漢語 plus する), then 人口の増加 (a noun), then the compound 人口増加.", cap:"Two kanji with on readings make a 漢語. Add する for a verb; drop it for a noun that packs neatly into longer phrases."},
       "**2. They are precise.** One everyday 和語 often covers several more precise 漢語. 調べる can mean any of these:",
-      {table:[["Meaning","漢語","Example"],["Investigate systematically, survey","調査する","学生の[意識]{いしき}を調査する"],["Search (a database, the web)","[検索]{けんさく}する","[論文]{ろんぶん}を検索する"],["Check, confirm","[確認]{かくにん}する","[数値]{すうち}を確認する"],["Examine, consider (options)","[検討]{けんとう}する","[対策]{たいさく}を検討する"],["Analyse","分析する","データを分析する"]]},
+      {table:[["Meaning","漢語","Example"],["Investigate systematically, survey","調査する","学生の[意識]{いしき}を調査する"],["Search (a database, the web)","[検索]{けんさく}する","[論文]{ろんぶん}を検索する"],["Check, confirm","[確認]{かくにん}する","[数値]{すうち}を確認する"],["Examine, consider (options)","[検討]{けんとう}する","[対策]{たいさく}を検討する"],["Analyze","分析する","データを分析する"]]},
       "**3. They sound formal and neutral.** 漢語 have long been the vocabulary of scholarship, law and government in Japan, so they carry a formal, impersonal tone that suits a report."
     ]},
     {h:"Common pairs to know", body:[

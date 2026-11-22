@@ -126,7 +126,7 @@ ICA.addUnit({
      "Explain why industrialization, urbanization and revolution made people want a science of society",
      "Describe the key ideas of Comte, Martineau, Marx, Spencer, Durkheim, Weber and Du Bois, and Ibn Khaldun as an early forerunner",
      "Tell positivist from interpretive (antipositivist) sociology and explain verstehen",
-     "Recognise why some founders were long left out of sociology’s story"
+     "Recognize why some founders were long left out of sociology’s story"
    ],
    guide:true,
    learn:[
@@ -142,7 +142,7 @@ ICA.addUnit({
     {h:"The big ideas", body:[
       {list:[
         "People thought about social life long before sociology had a name. Examples run from Confucius, Plato and Aristotle to the 13th-century Chinese historian Ma Duanlin (Ma Tuan-Lin) and the North African scholar Ibn Khaldun. (1.2)",
-        "Sociology became a discipline in 19th-century Europe because life was changing fast. **Industrialisation** brought factories and wage work. Meanwhile **urbanization** pulled people from villages into crowded cities. And **political revolutions** (American from 1775, French from 1789) challenged kings and church. With the Enlightenment’s trust in reason, that raised two questions: what holds society together, and why does it change? (1.2)",
+        "Sociology became a discipline in 19th-century Europe because life was changing fast. **Industrialization** brought factories and wage work. Meanwhile **urbanization** pulled people from villages into crowded cities. And **political revolutions** (American from 1775, French from 1789) challenged kings and church. With the Enlightenment’s trust in reason, that raised two questions: what holds society together, and why does it change? (1.2)",
         "Emmanuel-Joseph Sieyès first wrote the word *sociology* around 1780, in an unpublished manuscript. Auguste Comte reintroduced it in 1838 and made it famous. His [[positivism]] held that society follows laws, as nature does, and that observation can discover them. (1.2)",
         "Marx saw history as conflict between classes over the means of production. Under capitalism, the [[bourgeoisie]] (owners) profit from the labor of the [[proletariat]] (workers). Spencer instead pictured society as a body whose parts work together and evolve. Others turned his ideas into social Darwinism, which sociology rejects. (1.2)",
         "Durkheim argued that sociology studies [[social-fact|social facts]]. In *Suicide* he used official statistics to show that rates differ between groups. The rates depend on how strongly people are integrated into, and regulated by, society; weak ties or [[anomie]] (normlessness) push rates up. He explained *rates*, not individual acts. (1.2)",
@@ -202,7 +202,7 @@ ICA.addUnit({
       {t:"Use census data to measure how average household size has changed over 50 years.", b:0, why:"Counting and comparing measurable patterns over time: positivist."}
     ]},
     {id:"e2u1-l2-x4", type:"mcq", q:"Why did sociology emerge as a discipline in 19th-century Europe in particular?", options:[
-      {t:"Industrialisation, cities and revolutions disrupted traditional life.", ok:true, why:"Right. Rapid industrialization, the growth of cities and political revolutions raised new questions about order and change. Familiar communities, work and authority were transformed, and the success of natural science suggested society might be studied systematically too."},
+      {t:"Industrialization, cities and revolutions disrupted traditional life.", ok:true, why:"Right. Rapid industrialization, the growth of cities and political revolutions raised new questions about order and change. Familiar communities, work and authority were transformed, and the success of natural science suggested society might be studied systematically too."},
       {t:"Nobody had ever thought about society before that time.", why:"Thinkers such as Confucius, Plato, Aristotle, Ma Duanlin and Ibn Khaldun reflected on social life much earlier. What was new was a named, organized discipline."},
       {t:"Governments ordered universities to create a new subject.", why:"Sociology grew from thinkers responding to social change, not from a government order."},
       {t:"Societies had become stable, so people finally had time to study them.", why:"The reverse: it was rapid, unsettling change that made understanding society feel urgent."}
@@ -309,7 +309,7 @@ ICA.addUnit({
       {t:"Observing how strangers negotiate space at a busy bus stop", b:1, why:"Face-to-face interaction between a few people: micro."},
       {t:"Tracing how the share of people living in cities changed over a century", b:0, why:"A long-term, society-wide trend: macro."},
       {t:"Recording how a family decides who washes the dishes", b:1, why:"Interaction within a small group: micro."},
-      {t:"Analysing how global trade rules affect farmers in different regions", b:0, why:"Large structures operating across countries: macro."},
+      {t:"Analyzing how global trade rules affect farmers in different regions", b:0, why:"Large structures operating across countries: macro."},
       {t:"Studying how friends use humor to settle an argument in a group chat", b:1, why:"Small-group interaction and meaning: micro."}
     ]},
     {id:"e2u1-l3-x4", type:"mcq", q:"Which critique is most often made of structural functionalism?", options:[
@@ -406,7 +406,7 @@ ICA.addUnit({
       {t:"Review the literature", why:"Next, find out what is already known so you can build on it."},
       {t:"Formulate a hypothesis", why:"With the literature in mind, state a testable prediction."},
       {t:"Design and conduct a study", why:"Then choose a method and collect the data."},
-      {t:"Draw conclusions", why:"Analyse the data to see whether it supports the hypothesis."},
+      {t:"Draw conclusions", why:"Analyze the data to see whether it supports the hypothesis."},
       {t:"Report results", why:"Finally, share findings and methods so others can check and build on them."}
     ]},
     {id:"e2u1-l4-x2", type:"match", q:"Match each hypothesis to its **independent** variable (the presumed cause).", pairs:[
@@ -459,7 +459,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Practice thinking like a researcher with material from everyday life.", tasks:[
      {t:"Catch a correlation dressed as a cause", how:["Look for a headline or social media post that claims one thing causes another (“coffee drinkers live longer”, “children who play sport earn more”).","Write down the correlation the study actually found.","List at least two possible third variables, and consider whether the cause could run the other way.","Rewrite the headline so it is accurate."], write:"Original headline… What was actually found… Possible third variables… Reverse causation?… My accurate headline…"},
-     {t:"Operationalise a concept", how:["Choose an abstract idea: community spirit, digital skills, work–life balance, trust in neighbors.","Write three different operational definitions for it.","For each, note one reliability concern and one validity concern."], write:"Concept… Definition 1… Definition 2… Definition 3… Reliability and validity concerns…"},
+     {t:"Operationalize a concept", how:["Choose an abstract idea: community spirit, digital skills, work–life balance, trust in neighbors.","Write three different operational definitions for it.","For each, note one reliability concern and one validity concern."], write:"Concept… Definition 1… Definition 2… Definition 3… Reliability and validity concerns…"},
      {t:"Write a testable hypothesis about your area", how:["Pick something you’ve noticed in your community, such as which streets have more people out walking in the evening.","Write a hypothesis, then name the independent and dependent variables.","Say how you would measure each variable, and what result would show your hypothesis is wrong."], write:"Hypothesis… Independent variable… Dependent variable… How I’d measure them… What would prove me wrong…"}
    ], proof:"An accurately rewritten headline with possible third variables, three operational definitions of one concept with their weaknesses, and a testable hypothesis with its variables and a way it could be proved wrong."},
    read:[
@@ -547,7 +547,7 @@ ICA.addUnit({
       {t:"Interview quotes are published with names replaced and identifying details such as exact job titles removed.", b:0, why:"This protects confidentiality, as ethics codes require."},
       {t:"A study of teenagers collects data from 15-year-olds without asking parents or guardians, against local rules.", b:1, why:"Research with minors usually needs guardian permission as well as the young person’s agreement, following local law and ethics rules."},
       {t:"An online study tells participants it is about “memory” when it is really about racial attitudes, with no ethics review or debriefing.", b:1, why:"Deception is only allowed in rare cases with ethics approval and debriefing. Here there is neither."},
-      {t:"A researcher analyzes a published government dataset that contains no names or identifying information.", b:0, why:"Analysing properly anonymized public data is generally low risk and acceptable, as long as no one tries to re-identify people."}
+      {t:"A researcher analyzes a published government dataset that contains no names or identifying information.", b:0, why:"Analyzing properly anonymized public data is generally low risk and acceptable, as long as no one tries to re-identify people."}
     ]},
     {id:"e2u1-l5-x5", type:"match", q:"Match each ethics term to what it means in practice.", pairs:[
       ["Informed consent","Participants agree after being told what the study involves and its risks","Consent only counts if it is informed and voluntary."],
@@ -888,7 +888,7 @@ ICA.addUnit({
       "Main critiques:",
       {list:[
         "**Neglect of structure and power:** focusing on interaction can miss the economic and political forces that shape who interacts with whom, and on what terms.",
-        "**Generalisation:** detailed small-scale studies are hard to generalize.",
+        "**Generalization:** detailed small-scale studies are hard to generalize.",
         "**Objectivity:** interpreting meanings depends heavily on the researcher."
       ]},
       "Supporters reply that the narrow focus is a strength: large structures exist only through countless everyday interactions, and studying those interactions shows how structures are kept alive or changed.",
@@ -994,7 +994,7 @@ ICA.addUnit({
       "Reverse causation is the other common trap: the cause may run the opposite way from what a headline assumes."
      ],
      pro:[
-      "Randomised experiments are the strongest design for causal claims, because random assignment balances measured and unmeasured third variables on average (see {{experiments-sociology}}). Where experiments are impossible or unethical, sociologists use other strategies: longitudinal data that follow the same people over time to establish time order; statistical controls for measured confounders; natural experiments, where a policy or event affects some groups and not others for reasons unrelated to the outcome; and comparisons of siblings or the same people before and after a change.",
+      "Randomized experiments are the strongest design for causal claims, because random assignment balances measured and unmeasured third variables on average (see {{experiments-sociology}}). Where experiments are impossible or unethical, sociologists use other strategies: longitudinal data that follow the same people over time to establish time order; statistical controls for measured confounders; natural experiments, where a policy or event affects some groups and not others for reasons unrelated to the outcome; and comparisons of siblings or the same people before and after a change.",
       "Each strategy has limits. Statistical controls can’t account for variables that weren’t measured. Group-level correlations can mislead about individuals (the ecological fallacy). Very large datasets make tiny, unimportant correlations “statistically significant”, and searching many variables at once will find some correlations by chance.",
       "Qualitative research contributes too: by showing *how* a process works step by step, it can make a causal story more or less plausible. Strong conclusions usually rest on several kinds of evidence pointing the same way.",
       "When you read research, look at the design before the conclusion. An observational study with careful controls can suggest cause; a randomized trial can test it more directly; a single survey taken at one point in time can rarely do more than describe an association."
@@ -1110,7 +1110,7 @@ ICA.addUnit({
     sources:[{t:"OpenStax Introduction to Sociology 3e (LibreTexts mirror): Research Methods", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/02%3A_Sociological_Research/2.03%3A_Research_Methods"},{t:"OpenStax Introduction to Sociology 3e (LibreTexts mirror): Ethical Concerns", url:"https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Introductory_Sociology_3e_(OpenStax)/02%3A_Sociological_Research/2.04%3A_Ethical_Concerns"}], checked:"2026-11"},
 
    {id:"secondary-data", title:"Secondary data and content analysis", aka:["secondary analysis","official statistics","content analysis","unobtrusive research"], tags:["sociology","research","methods"],
-    summary:"Analysing data someone else collected, and systematically coding texts, images and media.",
+    summary:"Analyzing data someone else collected, and systematically coding texts, images and media.",
     levels:{
      starter:[
       "[[secondary-data|Secondary data]] is information someone else already collected: censuses, government statistics, international databases, old surveys, archives, organizations’ records.",
@@ -1311,7 +1311,7 @@ ICA.addUnit({
       {list:[
         "**Verstehen and interpretive sociology:** explaining social action by understanding its meaning.",
         "**Ideal types:** simplified models (such as “bureaucracy”) used to compare real cases.",
-        "**Rationalisation:** modern life increasingly organized around efficiency, calculation and rules; see {{bureaucracy}}.",
+        "**Rationalization:** modern life increasingly organized around efficiency, calculation and rules; see {{bureaucracy}}.",
         "**Class, status and party:** inequality has several dimensions that don’t always line up.",
         "**Three types of authority:** traditional, charismatic and rational-legal (see {{power-authority}})."
       ]},
@@ -1449,7 +1449,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"e2u1-q10", lesson:"e2u1-l2", level:1, q:"Which changes formed the main backdrop to the rise of sociology in 19th-century Europe?", options:[
-     {t:"Industrialisation, city growth and revolutions", ok:true, why:"Industrialisation, urbanization and political revolutions: factories, fast-growing cities and revolutions transformed everyday life and raised new questions about order and change."},
+     {t:"Industrialization, city growth and revolutions", ok:true, why:"Industrialization, urbanization and political revolutions: factories, fast-growing cities and revolutions transformed everyday life and raised new questions about order and change."},
      {t:"The invention of the internet and social media", why:"Those came more than a century later."},
      {t:"The end of all religious belief in Europe", why:"Religion changed and its authority was challenged, but it didn’t end, and that wasn’t the main backdrop."},
      {t:"A long period of social stability with little change", why:"The opposite: rapid change made understanding society feel urgent."}

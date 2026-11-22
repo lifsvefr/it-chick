@@ -1,7 +1,7 @@
 /* Track 1 · Unit 6 · Spotting misinformation */
 ICA.addUnit({
   id:"t1u6", track:"t1", n:6, title:"Spotting misinformation", icon:"🧭",
-  blurb:"Why false and misleading information spreads, and the quick, practical moves professional fact-checkers use: reading laterally, SIFT, reverse image search, judging sources, reading numbers and charts, and checking what AI tools tell you.",
+  blurb:"Why false and misleading information spreads. The quick, practical moves that professional fact-checkers use: reading laterally, SIFT, reverse image search, judging sources, reading numbers and charts, and checking what AI tools tell you.",
   goals:[
     "Tell misinformation, disinformation and malinformation apart, and explain why false content spreads",
     "Check a claim or an unfamiliar source in a minute or two using lateral reading and SIFT",
@@ -16,10 +16,10 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t1u6-l1", title:"What misinformation is and why it spreads", minutes:50,
-   hook:{q:"On 1 April 1957, a trusted BBC current-affairs program showed Swiss farmers “harvesting” spaghetti from trees. How did viewers react?", options:["Nearly everyone saw the joke straight away","Many phoned the BBC asking how to grow their own spaghetti tree","Most complained it was obviously fake","Almost nobody noticed it"], answer:1, reveal:"**Many phoned in asking how to grow their own spaghetti tree.** It was an April Fool’s joke, but it ran on a program people trusted, so it was taken as fact, much as satire gets mistaken for news online today. This lesson sorts misleading content into types and explains why false stories spread so fast."},
+   hook:{q:"On 1 April 1957, a trusted BBC current-affairs program showed Swiss farmers “harvesting” spaghetti from trees. How did viewers react?", options:["Nearly everyone saw the joke straight away","Many phoned the BBC asking how to grow their own spaghetti tree","Most complained it was obviously fake","Almost nobody noticed it"], answer:1, reveal:"**Many phoned in asking how to grow their own spaghetti tree.** It was an April Fool’s joke, but it ran on a program people trusted, so it was taken as fact, much as satire gets mistaken for news online today. This lesson sorts misleading content into types. It also explains why false stories spread so fast."},
    goals:[
      "Tell misinformation, disinformation and malinformation apart using two questions: is it false, and is it meant to harm?",
-     "Recognise seven common types, from satire to fabricated content",
+     "Recognize seven common types, from satire to fabricated content",
      "Explain why false content often spreads faster than true content",
      "Describe confirmation bias, filter bubbles and echo chambers, and what research does and doesn’t show about them"
    ],
@@ -27,14 +27,14 @@ ICA.addUnit({
     {h:"More than “fake news”", body:[
       {lead:"“Fake news” sounds like one thing. In practice, misleading information comes in many shapes, from honest mistakes to careful deceptions to true facts used as weapons."},
       "Think about how a rumor travels through a school or a workplace. One person invents it, or misunderstands something. Others repeat it because they believe it, or because it’s funny, or because it fits what they already suspected. By the time it reaches you, nobody remembers where it started. Online, the same thing happens to millions of people in hours.",
-      "In 2017 two researchers, Claire Wardle and Hossein Derakhshan, wrote a report for the Council of Europe called *Information Disorder*. They avoided the phrase “fake news”, partly because it’s too vague to describe the problem and partly because politicians around the world had started using it to dismiss news coverage they disliked. Instead they asked two questions about any piece of content: **Is it false?** and **Is it meant to harm?** The answers give three kinds of “information disorder”:",
+      "In 2017 two researchers, Claire Wardle and Hossein Derakhshan, wrote a report for the Council of Europe called *Information Disorder*. They avoided the phrase “fake news”. It’s too vague to describe the problem, and politicians around the world had started using it to dismiss news coverage they disliked. Instead they asked two questions about any piece of content: **Is it false?** and **Is it meant to harm?** The answers give three kinds of “information disorder”:",
       {table:[
         ["Kind","False?","Meant to harm?","Example"],
         ["[[misinformation|Misinformation]]","Yes","No","Amara shares a post saying a local road is closed, believing it. The closure was last year."],
         ["[[disinformation|Disinformation]]","Yes","Yes","Someone invents a story that a rival bakery’s bread made people ill, to drive away its customers."],
         ["[[malinformation|Malinformation]]","No: it’s true","Yes","A real private address, or a genuine private message, is posted publicly to embarrass or harass someone."]
       ]},
-      {fig:'<svg viewBox="0 0 340 335"><circle class="d-gold" cx="170" cy="115" r="95" stroke-width="2"/><circle class="d-rose" cx="170" cy="225" r="95" stroke-width="2" fill-opacity="0.6"/><text x="170" y="62" text-anchor="middle">Misinformation</text><text class="s" x="170" y="80" text-anchor="middle">false, but no</text><text class="s" x="170" y="95" text-anchor="middle">intent to harm</text><text x="170" y="165" text-anchor="middle">Disinformation</text><text class="s" x="170" y="183" text-anchor="middle">false and</text><text class="s" x="170" y="198" text-anchor="middle">meant to harm</text><text x="170" y="252" text-anchor="middle">Malinformation</text><text class="s" x="170" y="270" text-anchor="middle">true, but used</text><text class="s" x="170" y="285" text-anchor="middle">to cause harm</text><text x="8" y="40">FALSE</text><text class="s" x="8" y="56">content</text><text x="270" y="300">MEANT</text><text class="s" x="270" y="316">to harm</text></svg>', alt:"Two overlapping circles. The top circle is false content; the bottom circle is content meant to harm. The top-only part is misinformation (false, no intent to harm), the overlap is disinformation (false and meant to harm), and the bottom-only part is malinformation (true, but used to cause harm).", cap:"Two questions sort most cases: is it false, and is it meant to harm? (After Wardle & Derakhshan, 2017.)"},
+      {fig:'<svg viewBox="0 0 340 335"><circle class="d-gold" cx="170" cy="115" r="95" stroke-width="2"/><circle class="d-rose" cx="170" cy="225" r="95" stroke-width="2" fill-opacity="0.6"/><text x="170" y="62" text-anchor="middle">Misinformation</text><text class="s" x="170" y="80" text-anchor="middle">false, but no</text><text class="s" x="170" y="95" text-anchor="middle">intent to harm</text><text x="170" y="165" text-anchor="middle">Disinformation</text><text class="s" x="170" y="183" text-anchor="middle">false and</text><text class="s" x="170" y="198" text-anchor="middle">meant to harm</text><text x="170" y="252" text-anchor="middle">Malinformation</text><text class="s" x="170" y="270" text-anchor="middle">true, but used</text><text class="s" x="170" y="285" text-anchor="middle">to cause harm</text><text x="8" y="40">FALSE</text><text class="s" x="8" y="56">content</text><text x="270" y="300">MEANT</text><text class="s" x="270" y="316">to harm</text></svg>', alt:"Two overlapping circles. The top circle is false content. The bottom circle is content meant to harm. The top-only part is misinformation (false, no intent to harm). The overlap is disinformation (false and meant to harm). The bottom-only part is malinformation (true, but used to cause harm).", cap:"Two questions sort most cases: is it false, and is it meant to harm? (After Wardle & Derakhshan, 2017.)"},
       {key:"Misinformation is false but shared in good faith. Disinformation is false on purpose. Malinformation is true but used to hurt. Much of what reaches you is misinformation: shared by real people who believe it."}
     ]},
     {h:"Seven types, from a joke to a fabrication", body:[
@@ -57,12 +57,12 @@ ICA.addUnit({
       {tip:"In practice the most common type you’ll meet isn’t a clever fake. It’s a real photo, video or quote with the **wrong context**: an old flood photo shared as today’s, or a real quote attached to the wrong person. Lesson 3 shows how to check this."}
     ]},
     {h:"Intent is often invisible, and it changes as content travels", body:[
-      "You usually can’t see why someone posted something. The same piece of content can also change category as it moves. Wardle and Derakhshan describe three parts to watch: the **agent** (who made or shared it, and why), the **message** itself, and the **interpreter** (the person who receives it and decides what it means).",
+      "You usually can’t see why someone posted something. The same piece of content can also change category as it moves. Wardle and Derakhshan describe three parts to watch. The **agent** is who made or shared it, and why. The **message** is the content itself. The **interpreter** is the person who receives it and decides what it means.",
       {ex:"1. A humor website posts: “Council to replace all street lights with candles to save money.” Its regular readers know it’s a joke. (Satire.)\n2. Someone takes a screenshot that crops off the site’s name and posts it to a local group. (Now it has lost its context.)\n3. Hundreds of residents share it, worried and angry. They believe it. (Misinformation.)\n4. A page that wants to stir up anger against the council keeps posting it, knowing it’s false. (Disinformation.)\n5. Mei sees it in her feed, from a friend she trusts.", label:"Worked example: one post, three categories"},
       "This is why the most useful habit is to **judge the claim, not the person sharing it**. Your friend who shared the candle story isn’t a liar. They were fooled, as anyone can be. Asking “is this true?” is more productive than asking “who is lying?”"
     ]},
     {h:"Why false content spreads", body:[
-      "In 2018 three researchers at the Massachusetts Institute of Technology (MIT), Soroush Vosoughi, Deb Roy and Sinan Aral, published one of the largest studies of the question in the journal *Science*. They studied about 126,000 stories shared on Twitter between 2006 and 2017, each one checked as true or false by independent fact-checking organizations. They found:",
+      "In 2018 three researchers at the Massachusetts Institute of Technology (MIT), Soroush Vosoughi, Deb Roy and Sinan Aral, published one of the largest studies of the question in the journal *Science*. They studied about 126,000 stories shared on Twitter between 2006 and 2017. Independent fact-checking organizations had checked each story as true or false. They found:",
       {list:[
         "False stories were about **70% more likely to be reshared** than true ones.",
         "False stories reached 1,500 people about **six times faster** than true ones.",
@@ -87,13 +87,13 @@ ICA.addUnit({
     {h:"Filter bubbles and echo chambers: what the research says", body:[
       "Two ideas are often used to explain misinformation:",
       {list:[
-        "A [[filter-bubble|filter bubble]] is the idea, popularized by the writer Eli Pariser in 2011, that algorithms personalize what you see so much that you stop meeting different views without noticing.",
+        "A [[filter-bubble|filter bubble]] is an idea popularized by the writer Eli Pariser in 2011. The idea is that algorithms personalize what you see so much that you stop meeting different views, without noticing.",
         "An [[echo-chamber|echo chamber]] is a space, online or offline, where people mostly hear views like their own, repeated back to them, often because they chose those sources."
       ]},
       "Both sound convincing, but the evidence is more mixed than their popularity suggests. In 2022 the Reuters Institute for the Study of Journalism at the University of Oxford reviewed the research (Ross Arguedas, Robertson, Fletcher and Nielsen). Its main conclusions:",
       {list:[
         "**Echo chambers are smaller than often assumed.** In the UK, the review estimated that about 6–8% of the public are in politically partisan online news echo chambers. The United States was an outlier, with a larger share. Most people have fairly varied news diets.",
-        "**Little support for the filter-bubble idea in news.** Studies generally found that algorithmic selection by search engines and social media led to *slightly more diverse* news use, not less, partly because people stumble on news they weren’t looking for.",
+        "**Little support for the filter-bubble idea in news.** Studies generally found that algorithmic selection by search engines and social media led to *slightly more diverse* news use, not less. This is partly because people stumble on news they weren’t looking for.",
         "**Self-selection matters more than algorithms.** People’s own choices, especially those of a small, highly engaged and strongly partisan minority, drive most of the narrowing that does exist.",
         "**Open questions remain**, especially outside the US, for newer platforms, and for topics other than political news. Small, very active groups can still shape wider debate."
       ]},
@@ -142,7 +142,7 @@ ICA.addUnit({
       {t:"The platform deliberately promoted false stories", why:"The study didn’t find or claim that. It measured how people reshared fact-checked stories."}
     ]},
     {id:"t1u6-l1-x5", type:"mcq", q:"Tomás says: “Algorithms have trapped almost everyone in a bubble where they only see their own side.” What does the 2022 Reuters Institute review of research suggest?", options:[
-      {t:"Echo chambers are smaller than assumed; people’s own choices matter more", ok:true, why:"Partisan news echo chambers are smaller than often assumed, and people’s own choices matter more than algorithms. The review estimated about 6–8% of the UK public in partisan online news echo chambers, and found algorithmic selection generally led to slightly more diverse news use."},
+      {t:"Echo chambers are smaller than assumed; people’s own choices matter more", ok:true, why:"Partisan news echo chambers are smaller than often assumed, and people’s own choices matter more than algorithms. The review estimated that about 6–8% of the UK public are in partisan online news echo chambers. It found that algorithmic selection generally led to slightly more diverse news use."},
       {t:"Tomás is right: research shows nearly everyone is in an algorithmic bubble", why:"That’s the popular idea, but the reviewed studies didn’t support it for news use in most countries studied."},
       {t:"Algorithms have no effect at all on what anyone sees", why:"Too strong. Algorithms clearly shape feeds; the finding is about their effect on the diversity of news people use, which was slightly positive on average."},
       {t:"Echo chambers only exist offline", why:"The review discusses online echo chambers. They exist; they’re just smaller than often claimed."}
@@ -174,7 +174,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u6-l2", title:"Checking claims fast: lateral reading and SIFT", minutes:55,
-   hook:{q:"In a Stanford study, professional fact-checkers, historians with PhDs and university students each judged unfamiliar websites. Who was most often taken in by polished design and official-sounding names?", options:["The fact-checkers","The historians and the students","Nobody: experts spot fake sites easily","Only the students"], answer:1, reveal:"**The historians and the students.** They read each site carefully from top to bottom, and professional design, logos and `.org` addresses won them over. The fact-checkers left the page almost at once to see what other sources said about it. This lesson teaches that move, [[lateral-reading|lateral reading]], and the four quick SIFT steps."},
+   hook:{q:"In a Stanford study, professional fact-checkers, historians with PhDs and university students each judged unfamiliar websites. Who was most often fooled by polished design and official-sounding names?", options:["The fact-checkers","The historians and the students","Nobody: experts spot fake sites easily","Only the students"], answer:1, reveal:"**The historians and the students.** They read each site carefully from top to bottom, and professional design, logos and `.org` addresses won them over. The fact-checkers left the page almost at once to see what other sources said about it. This lesson teaches that move, [[lateral-reading|lateral reading]], and the four quick SIFT steps."},
    goals:[
      "Explain why professional fact-checkers judge a source by leaving it, not by studying it",
      "Read laterally and practice click restraint in search results",
@@ -184,9 +184,9 @@ ICA.addUnit({
    learn:[
     {h:"Why reading carefully isn’t enough", body:[
       {lead:"Most of us were taught to judge a website by studying it closely: the design, the About page, the spelling, the references. Research shows that’s exactly how experts get fooled."},
-      "In 2017 Sam Wineburg and Sarah McGrew of the Stanford History Education Group (now an independent non-profit called the Digital Inquiry Group) watched three groups evaluate unfamiliar websites and search for information online: **10 professional fact-checkers** from well-known news organisations, **10 historians** with PhDs who teach at universities, and **25 Stanford undergraduates**.",
-      "The historians and students mostly read **vertically**: they stayed on the site, scrolled, read its About page and judged it by how it looked and what it said about itself. They were often taken in by professional design, official-sounding names, logos, references to research and `.org` addresses.",
-      "The fact-checkers did something different. Almost as soon as they landed on an unfamiliar site, they **left it**: they opened new browser tabs and searched for what *other* sources said about the organisation behind it. The researchers reported that the fact-checkers reached better-supported conclusions in a fraction of the time.",
+      "In 2017 Sam Wineburg and Sarah McGrew of the Stanford History Education Group (now an independent non-profit called the Digital Inquiry Group) watched three groups evaluate unfamiliar websites. The groups searched for information online. They were **10 professional fact-checkers** from well-known news organizations, **10 historians** with PhDs who teach at universities, and **25 Stanford undergraduates**.",
+      "The historians and students mostly read **vertically**. They stayed on the site, scrolled, read its About page and judged it by how it looked and what it said about itself. They were often fooled by professional design, official-sounding names, logos, references to research and `.org` addresses.",
+      "The fact-checkers did something different. Almost as soon as they landed on an unfamiliar site, they **left it**. They opened new browser tabs and searched for what *other* sources said about the organization behind it. The researchers reported that the fact-checkers reached better-supported conclusions in a fraction of the time.",
       {key:"You can’t tell whether a source is trustworthy by looking only at the source. Anyone can build a polished website and write a glowing About page. What others say about it is far harder to fake."}
     ]},
     {h:"Lateral reading", body:[
@@ -195,14 +195,14 @@ ICA.addUnit({
       {ol:[
         "Spend a few seconds on the page: note the name of the site, the organization and any author.",
         "Open a new tab. Search for the organization’s or author’s name, without the site’s own address. Add words like `funding`, `who runs` or `review` if it helps.",
-        "Look for independent descriptions: an encyclopedia entry, news coverage, a professional body, a fact-check.",
+        "Look for independent descriptions, such as an encyclopedia entry, news coverage, a professional body or a fact-check.",
         "Return to the page only if it passes. Now you know who you’re reading."
       ]},
       "The Digital Inquiry Group’s Civic Online Reasoning lessons boil this down to three questions you can ask of anything: **Who is behind the information? What is the evidence? What do other sources say?**"
     ]},
     {h:"Click restraint: don’t take the first result", body:[
       "The fact-checkers in the Stanford study also showed [[click-restraint|click restraint]]. When they searched, they didn’t click the first result. They scanned the whole first page: the site names, the addresses, the short descriptions. Then they chose deliberately.",
-      "Search engines rank results by many signals, such as how well a page matches your words and how many other sites link to it. Ranking is not a truth score. Organisations can also pay for advertisements at the top of results, and some work hard to rank well for particular searches.",
+      "Search engines rank results by many signals, such as how well a page matches your words and how many other sites link to it. Ranking is not a truth score. Organizations can also pay for advertisements at the top of results, and some work hard to rank well for particular searches.",
       {list:[
         "**Skip results marked as ads or “sponsored”** when you’re checking a claim.",
         "**Read the address** under each result. Is it the organization itself, a news site, an encyclopedia, a forum, an unknown blog? (Unit 3’s {{url-anatomy}} entry shows how to find the real domain.)",
@@ -224,8 +224,8 @@ ICA.addUnit({
       {key:"SIFT in one line: pause, find out who’s behind it, see what better sources say, and trace it to the original."}
     ]},
     {h:"Using fact-checking organizations", body:[
-      "A [[fact-check]] is an article that tests a specific public claim against evidence and explains the verdict. Professional fact-checking organizations exist in many countries; examples include Full Fact (UK), Africa Check, Chequeado (Argentina) and the fact-checking teams of some international news agencies.",
-      "How do you know a fact-checker is serious? One useful signal: since 2016, the **International Fact-Checking Network (IFCN)**, based at the Poynter Institute, has run a Code of Principles. Organisations apply to become verified signatories and are assessed by independent assessors. They commit to:",
+      "A [[fact-check]] is an article that tests a specific public claim against evidence and explains the verdict. Professional fact-checking organizations exist in many countries. Examples include Full Fact (UK), Africa Check, Chequeado (Argentina) and the fact-checking teams of some international news agencies.",
+      "How do you know a fact-checker is serious? One useful signal: since 2016, the **International Fact-Checking Network (IFCN)**, based at the Poynter Institute, has run a Code of Principles. Organizations apply to become verified signatories and are assessed by independent assessors. They commit to:",
       {list:[
         "**Non-partisanship and fairness**: the same standards for every check, whoever made the claim.",
         "**Transparency of sources**: enough detail for readers to repeat the check themselves.",
@@ -271,15 +271,15 @@ ICA.addUnit({
       {t:"Search for the organization’s name in a new tab", ok:true, why:"That’s lateral reading: seeing what independent sources say about it, which is much harder to fake than the site’s own presentation."},
       {t:"Read its About page carefully", why:"The About page is the organization describing itself. That’s vertical reading, the habit that misled experts in the Stanford study."},
       {t:"Check that the site has no spelling mistakes", why:"Many unreliable sites are well edited. Polish tells you little about who is behind it."},
-      {t:"Trust it, because `.org` sites are always non-profits", why:"Anyone can register a `.org` address; it isn’t restricted to non-profits or reliable organizations."}
+      {t:"Trust it, because `.org` sites are always non-profits", why:"Anyone can register a `.org` address. It isn’t restricted to non-profits or reliable organizations."}
     ]},
     {id:"t1u6-l2-x3", type:"spot", q:"Lucía searches “Northwind Health Foundation” to find out who’s behind it. Tap the results that are good first clicks for that purpose.", ask:"is a good first click for checking who’s behind it", parts:[
-      {t:"Sponsored · northwindhealth.org: Join the movement for natural health!", flag:false, why:"An advert paid for by the organization itself. It will tell you only what they want you to hear."},
-      "\n", {t:"Northwind Health Foundation – Wikipedia", flag:true, why:"An encyclopedia entry is a quick, independent overview, often covering funding and controversies, with references to follow."},
+      {t:"Sponsored · northwindhealth.org: Join the movement for natural health!", flag:false, why:"An ad paid for by the organization itself. It will tell you only what they want you to hear."},
+      "\n", {t:"Northwind Health Foundation – Wikipedia", flag:true, why:"An encyclopedia entry is a quick, independent overview. It often covers funding and controversies, and it has references to follow."},
       "\n", {t:"About us | northwindhealth.org", flag:false, why:"The organization describing itself. Useful later, but it’s vertical reading, not an independent view."},
       "\n", {t:"Investigation: Who funds the Northwind Health Foundation? – a national newspaper", flag:true, why:"Independent reporting about the organization is exactly what lateral reading looks for."},
       "\n", {t:"10 SHOCKING facts Northwind doesn’t want you to know – viralbuzz.example", flag:false, why:"A clickbait list on an unknown site. It may be as unreliable as the thing you’re checking."}
-    ], why:"Click restraint means scanning all the results first and choosing independent, reputable sources about the organization."},
+    ], why:"Click restraint means scanning all the results first. Then you choose independent, reputable sources about the organization."},
     {id:"t1u6-l2-x4", type:"sort", q:"Sort these habits: vertical reading (staying on the site) or lateral reading (checking elsewhere)?", buckets:["Vertical reading","Lateral reading"], items:[
       {t:"Reading the site’s mission statement", b:0, why:"The site describing itself."},
       {t:"Searching the author’s name in a new tab", b:1, why:"Checking what other sources say about the author."},
@@ -307,7 +307,7 @@ ICA.addUnit({
       {t:"Quote the Wikipedia article as the final word in his report", why:"For serious work, cite the sources Wikipedia points to, not Wikipedia itself."},
       {t:"Edit the article to add what he believes", why:"Wikipedia forbids original research; and editing doesn’t help him find out who funds the group."}
     ]},
-      {id:"t1u6-l2-x8", type:"explain", q:"Explain why professional fact-checkers leave an unfamiliar website almost at once to judge it, instead of studying the site closely.", hint:"What can anyone make look good? What is harder to fake?", model:"Anyone can build a polished website and write a glowing About page, so a site’s design and what it says about itself tell you little. In the Stanford study, historians and students who read vertically, staying on the site, were often fooled. The fact-checkers read laterally: they opened new tabs and searched for what other, independent sources said about the organization behind it. What others say is much harder to fake than a site’s own self-description, and the fact-checkers reached better-supported conclusions in a fraction of the time.", points:["Says a site’s look and About page are easy to fake", "Describes lateral reading: leaving to see what others say about the source", "Says outside views are harder to fake", "Mentions that people who read vertically were often fooled (the Stanford study)"]}
+      {id:"t1u6-l2-x8", type:"explain", q:"Explain why professional fact-checkers leave an unfamiliar website almost at once to judge it. Why don’t they study the site closely?", hint:"What can anyone make look good? What is harder to fake?", model:"Anyone can build a polished website and write a glowing About page, so a site’s design and what it says about itself tell you little. In the Stanford study, historians and students who read vertically, staying on the site, were often fooled. The fact-checkers read laterally. They opened new tabs and searched for what other, independent sources said about the organization behind the site. What others say is much harder to fake than a site’s own description. The fact-checkers reached better-supported conclusions in a fraction of the time.", points:["Says a site’s look and About page are easy to fake", "Describes lateral reading: leaving to see what others say about the source", "Says outside views are harder to fake", "Mentions that people who read vertically were often fooled (the Stanford study)"]}
    ],
    apply:{intro:"Practice the moves on real things in your own feeds. Don’t share or comment on anything while you practice.", tasks:[
      {t:"Read one source laterally", how:["Find a website, account or organization you don’t know that appeared in your feed, search results or a forwarded message.","Open a new tab and search for its name (not its address). Add `funding`, `who runs` or `Wikipedia` if useful.","Scan the first page of results before clicking anything. Pick two independent sources.","Write one sentence: who is behind it, and would you trust it for this topic?"], write:"The source… What independent sources say… My verdict…"},
@@ -325,7 +325,7 @@ ICA.addUnit({
    goals:[
      "Explain why most misleading images are real pictures with false context",
      "Use reverse image search to find where and when a picture first appeared",
-     "Explain why spotting “glitches” and AI detectors are unreliable ways to identify AI images",
+     "Explain why spotting “glitches” and using AI detectors are unreliable ways to identify AI images",
      "Describe deepfakes and voice clones, and how to check a suspicious call or clip",
      "Explain in plain terms what content credentials (C2PA) and watermarks can and can’t tell you"
    ],
@@ -333,7 +333,7 @@ ICA.addUnit({
     {h:"Most misleading images are real", body:[
       {lead:"When people worry about fake images, they picture clever edits and AI. Much more often, the picture is genuine. It’s the caption that lies."},
       "A photo of a flooded street from another country, years ago, shared as “our town, right now”. A real crowd from a concert, shared as a protest. A genuine video of an accident, shared with the wrong cause. This is [[false-context|false context]], and it’s common because it’s easy: no editing skills needed, and the image really is authentic.",
-      "People sometimes call cheap, simple deceptions like these [[cheapfake|cheapfakes]], in contrast to AI deepfakes. They include mislabelled photos, slowed-down or sped-up videos, and selective cropping. They work because pictures feel like proof. As the saying goes, “seeing is believing”.",
+      "People sometimes call cheap, simple deceptions like these [[cheapfake|cheapfakes]], in contrast to AI deepfakes. They include mislabeled photos, slowed-down or sped-up videos, and selective cropping. They work because pictures feel like proof. As the saying goes, “seeing is believing”.",
       "So the first questions about any image are not technical. They’re the questions a reporter would ask: **What exactly does this show? Who took it? Where? When?** A picture can prove that a scene existed. On its own, it can’t prove *where*, *when* or *why*. Those claims live in the caption.",
       {key:"Separate what the image shows from what the caption claims. Then check the claims."}
     ]},
@@ -366,7 +366,7 @@ ICA.addUnit({
     {h:"Spotting edits and AI images: why your eyes aren’t enough", body:[
       "[[generative-ai|Generative AI]] tools create new images, video, audio and text from a short description. Early AI images had tell-tale flaws: extra fingers, garbled text, mismatched earrings, melting backgrounds. Many guides still teach people to hunt for these.",
       "The trouble is that the tools keep improving, and the flaws that were common two years ago are much rarer now. A glitch can show that an image is generated or edited. **Finding no glitch proves nothing.** Real photos also have odd details: motion blur, strange reflections, compression artifacts.",
-      "What about automatic AI detectors? The US National Institute of Standards and Technology (NIST) reviewed the research in 2024 (*NIST AI 100-4, Reducing Risks Posed by Synthetic Content*). It found that detectors can have **substantial error rates**, especially on images from AI tools they weren’t trained on or after an image has been compressed or resized, and that text detectors have wrongly flagged writing by non-native English speakers as AI-generated. A detector score is one weak clue, not a verdict.",
+      "What about automatic AI detectors? The US National Institute of Standards and Technology (NIST) reviewed the research in 2024 (*NIST AI 100-4, Reducing Risks Posed by Synthetic Content*). It found that detectors can have **substantial error rates**. This is especially true on images from AI tools they weren’t trained on, or after an image has been compressed or resized. It also found that text detectors have wrongly flagged writing by non-native English speakers as AI-generated. A detector score is one weak clue, not a verdict.",
       {table:[
         ["Clue","How much it tells you"],
         ["Visible glitches (hands, text, shadows)","Can suggest AI or editing. Their absence tells you nothing."],
@@ -385,20 +385,20 @@ ICA.addUnit({
         "**Deception about public events**: fake clips of officials, public figures or news presenters.",
         "**Doubt about real recordings**: once fakes are common, people can wave away genuine evidence as “probably AI”. Researchers call this the **liar’s dividend**."
       ]},
-      "The defense is the same as for phishing: **verify through a channel you already trust**. The US Federal Trade Commission’s advice on family-emergency calls is to question the emergency and check with the person, or another family member, on a number you know is theirs. For a clip of a public figure, check their official channels and reliable news coverage before believing or sharing it.",
+      "The defense is the same as for phishing: **verify through a channel you already trust**. The US Federal Trade Commission’s advice on family-emergency calls is to question the emergency. Check with the person, or another family member, on a number you know is theirs. For a clip of a public figure, check their official channels and reliable news coverage before believing or sharing it.",
       {tip:"An urgent request for money, codes or secrecy is the warning sign, however real the voice or face seems."}
     ]},
     {h:"Content credentials: a label that travels with the file", body:[
       "Instead of trying to detect fakes after the fact, another approach records where content came from at the moment it’s made. This record is called [[provenance]].",
-      "The **Coalition for Content Provenance and Authenticity (C2PA)** is a group of technology and media companies that publishes an open technical standard for this. Files made under it carry [[content-credentials|Content Credentials]]: a digitally signed record of who or what made the file (a particular camera, editing app or AI tool), when, and what edits were made. Because the record is signed, tampering with it can be detected.",
+      "The **Coalition for Content Provenance and Authenticity (C2PA)** is a group of technology and media companies. It publishes an open technical standard for this. Files made under it carry [[content-credentials|Content Credentials]]. This is a digitally signed record of who or what made the file (a particular camera, editing app or AI tool), when, and what edits were made. Because the record is signed, tampering with it can be detected.",
       {fig:'<svg viewBox="0 0 340 336"><defs><marker id="t1u6l3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-sage" x="45" y="8" width="250" height="52" rx="10" stroke-width="2"/><text x="170" y="30" text-anchor="middle">1. Camera, app or AI tool</text><text class="s" x="170" y="48" text-anchor="middle">signs a record: what made it, when</text><path class="d-ink" d="M170 60 L170 80" stroke-width="2" marker-end="url(#t1u6l3a)"/><rect class="d-sage" x="45" y="84" width="250" height="52" rx="10" stroke-width="2"/><text x="170" y="106" text-anchor="middle">2. Edited in a supporting app</text><text class="s" x="170" y="124" text-anchor="middle">edits are added to the record</text><path class="d-ink" d="M130 136 L90 166" stroke-width="2" marker-end="url(#t1u6l3a)"/><path class="d-ink" d="M210 136 L250 166" stroke-width="2" marker-end="url(#t1u6l3a)"/><rect class="d-sage" x="8" y="170" width="156" height="68" rx="10" stroke-width="2"/><text x="86" y="191" text-anchor="middle">3a. Shared as</text><text x="86" y="209" text-anchor="middle">the original file</text><text class="s" x="86" y="227" text-anchor="middle">record travels with it</text><rect class="d-rose" x="176" y="170" width="156" height="68" rx="10" stroke-width="2"/><text x="254" y="191" text-anchor="middle">3b. Screenshot</text><text x="254" y="209" text-anchor="middle">or re-uploaded</text><text class="s" x="254" y="227" text-anchor="middle">record often lost</text><path class="d-ink" d="M86 238 L86 262" stroke-width="2" marker-end="url(#t1u6l3a)"/><path class="d-ink" d="M254 238 L254 262" stroke-width="2" marker-end="url(#t1u6l3a)"/><rect class="d-panel" x="8" y="266" width="156" height="64" rx="10" stroke-width="2"/><text x="86" y="288" text-anchor="middle">Viewer can read</text><text class="s" x="86" y="306" text-anchor="middle">origin and edit history</text><text class="s" x="86" y="321" text-anchor="middle">(if their app supports it)</text><rect class="d-panel" x="176" y="266" width="156" height="64" rx="10" stroke-width="2"/><text x="254" y="288" text-anchor="middle">No credentials</text><text class="s" x="254" y="306" text-anchor="middle">means “unknown”,</text><text class="s" x="254" y="321" text-anchor="middle">not “fake”</text></svg>', alt:"A camera, app or AI tool signs a record of what made the file and when. A supporting editing app adds its edits to the record. If the original file is shared, the record travels with it and a viewer’s app can show the origin and edit history. If it is screenshotted or re-uploaded, the record is often lost, and no credentials means unknown, not fake.", cap:"How content credentials work, and where they get lost."},
       "Support is growing but still patchy. Some examples, as of 2026:",
       {list:[
-        "Some cameras and phones sign photos as they’re taken. For example, Google’s Pixel 10 phones (2025) add Content Credentials in the camera app, and Sony offers a camera verification service aimed at news photographers.",
+        "Some cameras and phones sign photos as they’re taken. For example, Google’s Pixel 10 phones (2025) add Content Credentials in the camera app. Sony offers a camera verification service aimed at news photographers.",
         "Some AI image tools add credentials to what they generate, and some editing software records edits.",
-        "Some apps can display them. Google Photos shows a **How this was made** section for supported files (open a photo, then **More → About**), and Google’s **About this image** tool in Search can show credential information too."
+        "Some apps can display them. Google Photos shows a **How this was made** section for supported files (open a photo, then **More → About**). Google’s **About this image** tool in Search can show credential information too."
       ]},
-      "Know the limits. Google’s own help page says Content Credentials **don’t establish whether media is real or fake** by themselves. Most images online have none. NIST notes that metadata can be **stripped** altogether, and that platforms often remove it. Separately, some AI companies hide an invisible [[ai-watermark|watermark]] in generated content (Google’s is called SynthID), but NIST found that most current watermarking schemes can be removed, and some can be faked.",
+      "Know the limits. Google’s own help page says Content Credentials **don’t establish whether media is real or fake** by themselves. Most images online have none. NIST notes that metadata can be **stripped** altogether, and that platforms often remove it. Separately, some AI companies hide an invisible [[ai-watermark|watermark]] in generated content (Google’s is called SynthID). But NIST found that most current watermarking schemes can be removed, and some can be faked.",
       {key:"Content credentials, when present, are useful evidence about where a file came from. Their absence tells you almost nothing. They add to SIFT; they don’t replace it."}
     ]},
     {h:"What to do when you can’t tell", body:[
@@ -459,7 +459,7 @@ ICA.addUnit({
       {t:"They prove whether an image is true or false", why:"Even Google’s help page says they don’t by themselves establish whether media is real or fake. They record origin and edits."},
       {t:"They can’t be removed from a file", why:"Metadata can be stripped altogether; a screenshot often loses it."}
     ]},
-      {id:"t1u6-l3-x8", type:"explain", q:"A friend says she can always spot AI images by looking for extra fingers or garbled text. Explain why that isn’t reliable, and what works better.", hint:"What happens as the tools improve? What does finding no glitch prove?", model:"Early AI images often had tell-tale flaws, but the tools keep improving and those glitches are now much rarer. A glitch can suggest an image was generated or edited, but finding no glitch proves nothing, and real photos have odd details too. Online AI detectors aren’t a fix either: a 2024 NIST review found they can have substantial error rates. It works better to treat the image like any other claim: use reverse image search to find the earliest source and its original caption, look for independent coverage, and trace it to the original.", points:["Says AI tools improve, so glitches are becoming rarer", "Says finding no glitch proves nothing", "Says AI detectors are unreliable", "Suggests finding the source, other coverage or the original instead"]}
+      {id:"t1u6-l3-x8", type:"explain", q:"A friend says she can always spot AI images by looking for extra fingers or garbled text. Explain why that isn’t reliable, and what works better.", hint:"What happens as the tools improve? What does finding no glitch prove?", model:"Early AI images often had tell-tale flaws, but the tools keep improving, and those glitches are now much rarer. A glitch can suggest an image was generated or edited. But finding no glitch proves nothing, and real photos have odd details too. Online AI detectors aren’t a fix either: a 2024 NIST review found they can have substantial error rates. It works better to treat the image like any other claim. Use reverse image search to find the earliest source and its original caption, look for independent coverage, and trace it to the original.", points:["Says AI tools improve, so glitches are becoming rarer", "Says finding no glitch proves nothing", "Says AI detectors are unreliable", "Suggests finding the source, other coverage or the original instead"]}
    ],
    apply:{intro:"Practice on an image you already have, such as a photo you took yourself or a picture from a news site. Don’t upload private or intimate images to any search tool.", tasks:[
      {t:"Run a reverse image search", how:{
@@ -469,8 +469,8 @@ ICA.addUnit({
        phone:["**Android:** open the Google app and tap the **Lens** icon in the search bar, then choose a photo from your gallery. In Chrome, touch and hold an image on a web page and look for an option to search it with Google Lens (wording varies by version).","**iPhone:** install or open the Google app and tap the **Lens** icon to search with a saved photo. In Chrome for iPhone, touch and hold an image and choose **Search image with Google Lens** (wording can vary by version).","On either phone, you can open **bing.com/images** or **tineye.com** in a browser and upload a photo from your gallery."]
      }},
      {t:"Trace one viral image", how:["Find an image currently being shared widely (news, memes, a dramatic photo).","Write down what it shows and what its caption claims.","Reverse-search it. Find the earliest copy you can and its original caption.","Decide: confirmed, false context, manipulated or unverified."], write:"What it shows… What the caption claims… Earliest copy found… My verdict…"},
-     {t:"Look for content credentials", how:["If you use Google Photos on Android or iPhone, open a recent photo, tap **More** (⋮) then **About**, and scroll to see whether a **How this was made** section appears. (It only appears for files from supporting devices and apps; it isn’t available on the Google Photos website.)","Otherwise, search the web for “Content Credentials” to find the coalition’s free online checking tool and try it with a photo you took.","Note what you find. On most images, you’ll find nothing, which is normal."]}
-   ], proof:"You can run a reverse image search on your devices, you’ve traced one viral image to its earliest copy, and you know whether your photo apps show content credentials."},
+     {t:"Look for content credentials", how:["If you use Google Photos on Android or iPhone, open a recent photo, tap **More** (⋮) then **About**, and scroll to see whether a **How this was made** section appears. It only appears for files from supporting devices and apps. It isn’t available on the Google Photos website.","Otherwise, search the web for “Content Credentials” to find the coalition’s free online checking tool and try it with a photo you took.","Note what you find. On most images, you’ll find nothing, which is normal."]}
+   ], proof:"You can run a reverse image search on your devices. You’ve traced one viral image to its earliest copy. You know whether your photo apps show content credentials."},
    read:[
      {book:"wlsf", where:"Part III “Go Upstream”: Chapters 12–15 (“Tracking the Source of Viral Photos”, “Using Google Reverse Image Search”, “Filtering by Time and Place to Find the Original”, “Activity: Trace Viral Photos Upstream”)", note:"The screenshots show older versions of Google’s tools; the method is unchanged."}
    ]
@@ -488,7 +488,7 @@ ICA.addUnit({
    learn:[
     {h:"Search is a skill", body:[
       {lead:"A search engine doesn’t answer your question. It matches your words to pages. Better words, better pages."},
-      "Search engines rank results using many signals: how well a page matches your words, how many other sites link to it, how recent it is, your language and location, and more. None of these is “how true is it?”. Paid adverts can appear at the top. Many engines now also show an AI-written summary above the results; Lesson 5 covers how to treat those.",
+      "Search engines rank results using many signals: how well a page matches your words, how many other sites link to it, how recent it is, your language and location, and more. None of these is “how true is it?”. Paid ads can appear at the top. Many engines now also show an AI-written summary above the results. Lesson 5 covers how to treat those.",
       "Three habits make the biggest difference:",
       {list:[
         "**Use the words your answer would contain.** Searching `my phone battery dies fast` finds forum chats. Searching `battery health settings` plus your phone model finds the maker’s help pages.",
@@ -499,7 +499,7 @@ ICA.addUnit({
     ]},
     {h:"Search operators", body:[
       "A [[search-operator|search operator]] is a symbol or word that gives the search engine a precise instruction. A few work in all the major engines and are worth knowing by heart.",
-      {fig:'<svg viewBox="0 0 340 300"><text x="170" y="20" text-anchor="middle">One search, five parts</text><rect class="d-gold" x="8" y="34" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="59" text-anchor="middle" font-family="monospace">"food storage"</text><text class="s" x="174" y="51">exact phrase, in</text><text class="s" x="174" y="66">this order</text><rect class="d-panel" x="8" y="86" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="111" text-anchor="middle" font-family="monospace">guidance</text><text class="s" x="174" y="103">an ordinary keyword</text><text class="s" x="174" y="118">(the kind of page)</text><rect class="d-lup" x="8" y="138" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="163" text-anchor="middle" font-family="monospace">site:who.int</text><text class="s" x="174" y="155">only pages on this</text><text class="s" x="174" y="170">website or domain</text><rect class="d-sage" x="8" y="190" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="215" text-anchor="middle" font-family="monospace">filetype:pdf</text><text class="s" x="174" y="207">only files of this</text><text class="s" x="174" y="222">type (here, PDFs)</text><rect class="d-rose" x="8" y="242" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="267" text-anchor="middle" font-family="monospace">-recipe</text><text class="s" x="174" y="259">leave out pages</text><text class="s" x="174" y="274">with this word</text></svg>', alt:"The search \"food storage\" guidance site:who.int filetype:pdf -recipe split into five parts: an exact phrase in quotes, an ordinary keyword, site: to limit to one website, filetype: to limit to PDFs, and a minus sign to leave out pages containing a word.", cap:"Each part narrows the results. Type them together on one line, with spaces between parts and no space after a colon."},
+      {fig:'<svg viewBox="0 0 340 300"><text x="170" y="20" text-anchor="middle">One search, five parts</text><rect class="d-gold" x="8" y="34" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="59" text-anchor="middle" font-family="monospace">"food storage"</text><text class="s" x="174" y="51">exact phrase, in</text><text class="s" x="174" y="66">this order</text><rect class="d-panel" x="8" y="86" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="111" text-anchor="middle" font-family="monospace">guidance</text><text class="s" x="174" y="103">an ordinary keyword</text><text class="s" x="174" y="118">(the kind of page)</text><rect class="d-lup" x="8" y="138" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="163" text-anchor="middle" font-family="monospace">site:who.int</text><text class="s" x="174" y="155">only pages on this</text><text class="s" x="174" y="170">website or domain</text><rect class="d-sage" x="8" y="190" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="215" text-anchor="middle" font-family="monospace">filetype:pdf</text><text class="s" x="174" y="207">only files of this</text><text class="s" x="174" y="222">type (here, PDFs)</text><rect class="d-rose" x="8" y="242" width="156" height="40" rx="6" stroke-width="2"/><text x="86" y="267" text-anchor="middle" font-family="monospace">-recipe</text><text class="s" x="174" y="259">leave out pages</text><text class="s" x="174" y="274">with this word</text></svg>', alt:"The search \"food storage\" guidance site:who.int filetype:pdf -recipe is split into five parts. The first is an exact phrase in quotes. The second is an ordinary keyword. Third, site: limits the search to one website. Fourth, filetype: limits it to PDFs. Fifth, a minus sign leaves out pages containing a word.", cap:"Each part narrows the results. Type them together on one line, with spaces between parts and no space after a colon."},
       {table:[
         ["Operator","Example","What it does"],
         ["Quotation marks","`\"spaghetti harvest\"`","Only pages with that exact phrase. Great for checking quotes."],
@@ -512,7 +512,7 @@ ICA.addUnit({
       {list:[
         "**Google** documents quotation marks, the minus sign, `site:`, `filetype:`, `before:` and `after:`. Don’t put a space after the colon: `site:who.int`, not `site: who.int`.",
         "**Bing** documents quotation marks, `NOT` or the minus sign, `site:` and `filetype:`, plus `OR` and `+` (operators like `NOT` and `OR` must be in capitals).",
-        "**DuckDuckGo** documents quotation marks, the minus sign, `site:` and `filetype:`, but warns that some operators are not applied strictly; if nothing matches, it shows related results instead."
+        "**DuckDuckGo** documents quotation marks, the minus sign, `site:` and `filetype:`. It warns that some operators are not applied strictly. If nothing matches, it shows related results instead."
       ]},
       {warn:"Older guides, including some textbooks, list `+` and `~` as Google operators. Google’s current help page no longer lists them, so don’t rely on them there. Operators change; when one seems to be ignored, check the engine’s help page."}
     ]},
@@ -520,9 +520,9 @@ ICA.addUnit({
       "Sources sit at different distances from the original event, data or idea.",
       {table:[
         ["Kind","What it is","Examples"],
-        ["[[primary-source|Primary]]","Created at the time, or the original evidence itself","A study’s paper and data, a law’s text, an official statistics release, a speech recording, a photo by a witness, a company’s annual report"],
+        ["[[primary-source|Primary]]","Created at the time, or the original evidence itself","A study’s paper and data. A law’s text. An official statistics release. A speech recording. A photo by a witness. A company’s annual report."],
         ["[[secondary-source|Secondary]]","Describes, analyses or interprets primary sources","A news report about a study, a review article, a history book, a documentary"],
-        ["Tertiary","Summarises and indexes many secondary sources","Encyclopedias (including Wikipedia), textbooks, fact sheets, guides"]
+        ["Tertiary","Summarizes and indexes many secondary sources","Encyclopedias (including Wikipedia), textbooks, fact sheets, guides"]
       ]},
       "None of these is automatically “best”. Each has a job:",
       {list:[
@@ -556,7 +556,7 @@ ICA.addUnit({
       {ol:[
         "Researchers write up their study and send it to a journal.",
         "The editor sends it to other experts in the same field (the “peers”), often anonymously.",
-        "The reviewers check the methods, reasoning and evidence, and recommend publishing, revising or rejecting.",
+        "The reviewers check the methods, reasoning and evidence. They recommend publishing, revising or rejecting.",
         "The authors often revise and resubmit. The process frequently takes many months, sometimes more than a year."
       ]},
       "Peer review is a quality filter, not a truth stamp. As *Understanding Science* puts it, peer-reviewed work “isn’t necessarily correct or conclusive”; it meets the standards of science and is then tested further by other researchers. Some things to know:",
@@ -611,7 +611,7 @@ ICA.addUnit({
     {id:"t1u6-l4-x3", type:"sort", q:"Sort these sources for a question about a new study on sleep and memory.", buckets:["Primary source","Secondary source","Tertiary source"], items:[
       {t:"The researchers’ published paper with their data", b:0, why:"The original evidence itself."},
       {t:"A newspaper article reporting the study’s findings", b:1, why:"It describes and interprets the primary source."},
-      {t:"An encyclopedia entry on sleep", b:2, why:"Summarises many sources for orientation."},
+      {t:"An encyclopedia entry on sleep", b:2, why:"Summarizes many sources for orientation."},
       {t:"A review article comparing 40 sleep studies", b:1, why:"Analyses many primary studies; a strong secondary source."},
       {t:"A recording of the lead researcher’s conference talk", b:0, why:"An original record from the researcher at the time."},
       {t:"An introductory psychology textbook chapter on memory", b:2, why:"Textbooks summarize established knowledge from many sources."}
@@ -633,7 +633,7 @@ ICA.addUnit({
     {id:"t1u6-l4-x6", type:"mcq", q:"What does it mean when a study has been peer-reviewed?", options:[
       {t:"Other experts checked its methods and reasoning before publication; it can still turn out to be wrong", ok:true, why:"Peer review is a quality filter. Later research can confirm, refine or overturn results."},
       {t:"Its conclusions are proven true", why:"Peer-reviewed work isn’t necessarily correct or conclusive; it meets the standards of science."},
-      {t:"The researchers’ friends read it", why:"Reviewers are experts chosen by the journal’s editor, often anonymously, not the authors’ friends."},
+      {t:"The researchers’ friends read it", why:"Reviewers are experts chosen by the journal’s editor, often anonymously. They are not the authors’ friends."},
       {t:"It was posted online for anyone to comment on", why:"That describes a preprint or public comments, not formal peer review."}
     ]},
     {id:"t1u6-l4-x7", type:"mcq", q:"Oluwaseun sees a headline: “New study proves walking backwards doubles brain power.” The link goes to a preprint posted last week. What’s the most accurate way to describe it?", options:[
@@ -642,7 +642,7 @@ ICA.addUnit({
       {t:"Definitely false, because preprints are fake", why:"Preprints are a normal, legitimate way to share early research. They just haven’t been reviewed yet."},
       {t:"Reliable, because it’s new", why:"Newness doesn’t make a finding reliable; replication does."}
     ]},
-      {id:"t1u6-l4-x8", type:"explain", q:"A post says “A new study proves chocolate improves memory!” and links to a news article. Explain why you should go to the study itself, and what you might find there.", hint:"Which is the primary source here? What could a news report or post leave out?", model:"The news article is a secondary source: it describes the study. The study itself is the primary source, and only it lets you check that the claim matches the original. You might find the study was done in mice rather than people, or was small, or found that chocolate was only “linked to” better memory rather than causing it, or that it hadn’t been peer reviewed yet. Secondary and tertiary sources are good for understanding a topic, but for checking the key claim you trace it to the original.", points:["Identifies the study as the primary source and the article as secondary", "Says the primary source lets you check the claim matches the original", "Gives an example of something the post might leave out (mice, small study, correlation, not peer reviewed)", "Says secondary or tertiary sources are for understanding, not for checking the key claim"]}
+      {id:"t1u6-l4-x8", type:"explain", q:"A post says “A new study proves chocolate improves memory!” and links to a news article. Explain why you should go to the study itself, and what you might find there.", hint:"Which is the primary source here? What could a news report or post leave out?", model:"The news article is a secondary source: it describes the study. The study itself is the primary source, and only it lets you check that the claim matches the original. You might find that the study was done in mice rather than people, or was small. You might find that chocolate was only “linked to” better memory rather than causing it, or that the study hadn’t been peer reviewed yet. Secondary and tertiary sources are good for understanding a topic. But to check the key claim, you trace it to the original.", points:["Identifies the study as the primary source and the article as secondary", "Says the primary source lets you check the claim matches the original", "Gives an example of something the post might leave out (mice, small study, correlation, not peer reviewed)", "Says secondary or tertiary sources are for understanding, not for checking the key claim"]}
    ],
    apply:{intro:"Use your own search engine and something you’re genuinely curious about.", tasks:[
      {t:"Rewrite a search three ways", how:["Pick a question you care about (a health worry, a household task, a news topic).","Search it as you normally would and note the top three results.","Rewrite it: use the words an answer would contain, phrase it neutrally, and add one operator (`site:`, `filetype:pdf` or quotation marks).","Compare the top three results. Which search found better sources?"], write:"My question… Original search and results… Improved search and results…"},
@@ -702,7 +702,7 @@ ICA.addUnit({
     {h:"Charts that distort", body:[
       "Charts turn numbers into shapes, and our eyes compare shapes. Change the shape and you change the impression, even when every number is correct.",
       {fig:'<svg viewBox="0 0 340 452"><text x="170" y="18" text-anchor="middle">Axis starts at 490: looks huge</text><path class="d-ink" d="M70 40 L70 180 L300 180" fill="none" stroke-width="2"/><text class="s" x="64" y="45" text-anchor="end">525</text><text class="s" x="64" y="184" text-anchor="end">490</text><rect class="d-rose" x="100" y="60" width="70" height="120" stroke-width="2"/><rect class="d-lup" x="200" y="140" width="70" height="40" stroke-width="2"/><text x="135" y="54" text-anchor="middle">520</text><text x="235" y="134" text-anchor="middle">500</text><text class="s" x="135" y="198" text-anchor="middle">Library A</text><text class="s" x="235" y="198" text-anchor="middle">Library B</text><path class="d-soft" d="M8 216 L332 216" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="240" text-anchor="middle">Axis starts at 0: about the same</text><path class="d-ink" d="M70 262 L70 402 L300 402" fill="none" stroke-width="2"/><text class="s" x="64" y="267" text-anchor="end">600</text><text class="s" x="64" y="406" text-anchor="end">0</text><rect class="d-rose" x="100" y="281" width="70" height="121" stroke-width="2"/><rect class="d-lup" x="200" y="285" width="70" height="117" stroke-width="2"/><text x="135" y="275" text-anchor="middle">520</text><text x="235" y="279" text-anchor="middle">500</text><text class="s" x="135" y="420" text-anchor="middle">Library A</text><text class="s" x="235" y="420" text-anchor="middle">Library B</text><text class="s" x="170" y="444" text-anchor="middle">Average daily visitors (invented)</text></svg>', alt:"Two bar charts of the same data: Library A has 520 daily visitors and Library B has 500. In the top chart the axis starts at 490, so A’s bar looks three times as tall as B’s. In the bottom chart the axis starts at 0, and the bars look almost equal, which matches the real 4% difference.", cap:"Same numbers, different impression. Bars should start at zero, because we compare their lengths."},
-      "A [[truncated-axis|truncated axis]] starts above zero. On a **bar chart**, that’s misleading, because we judge bars by their length: the UK Office for National Statistics’ chart guidance says a bar chart’s axis should always start at zero. On a **line chart**, starting above zero can be fine and even helpful for showing a trend, as long as the axis is clearly labeled.",
+      "A [[truncated-axis|truncated axis]] starts above zero. On a **bar chart**, that’s misleading, because we judge bars by their length. The UK Office for National Statistics’ chart guidance says a bar chart’s axis should always start at zero. On a **line chart**, starting above zero can be fine and even helpful for showing a trend, as long as the axis is clearly labeled.",
       "Other tricks to watch for:",
       {list:[
         "**No axis labels or units.** If you can’t tell what’s measured, you can’t judge it.",
@@ -721,15 +721,15 @@ ICA.addUnit({
         "**The direction may be reversed**: maybe B causes A.",
         "**It may be chance**: with enough data, some things line up by coincidence."
       ]},
-      "Words to watch: “linked to”, “associated with” and “tied to” usually describe a correlation. “Causes”, “makes” and “prevents” claim causation, which normally needs stronger evidence such as a well-designed experiment. The Codex entry {{correlation-causation}} goes further."
+      "Words to watch: “linked to”, “associated with” and “tied to” usually describe a correlation. “Causes”, “makes” and “prevents” claim causation. Causation normally needs stronger evidence, such as a well-designed experiment. The Codex entry {{correlation-causation}} goes further."
     ]},
     {h:"How AI chatbots produce answers", body:[
-      "AI chatbots and the AI summaries at the top of some search results are built on [[large-language-model|large language models]]. A large language model has been trained on enormous amounts of text to do one thing extremely well: **predict which word (or part of a word) is likely to come next**, given everything before it. Repeat that thousands of times and you get fluent paragraphs.",
+      "AI chatbots and the AI summaries at the top of some search results are built on [[large-language-model|large language models]]. A large language model has been trained on enormous amounts of text to do one thing extremely well: **predict which word (or part of a word) is likely to come next**, given everything before it. Repeat that thousands of times, and you get fluent paragraphs.",
       "Think of a very well-read autocomplete. It has absorbed the patterns of how people write about almost everything. That makes it good at explaining, summarizing and drafting. But writing that *sounds like* a correct answer isn’t the same as an answer that has been checked. Some chatbots also search the web and show links, which helps, but they can still misread, mix up or misattribute what those pages say.",
       "When a model produces confident, fluent, false content, people call it a [[hallucination]]. NIST’s *Generative AI Profile* (NIST AI 600-1, 2024) uses the term **confabulation**: “the production of confidently stated but erroneous or false content”. It explains that this comes from how the models are trained, by predicting the next word.",
       {list:[
         "**Invented citations.** In 2023 a US federal judge fined two lawyers and their firm $5,000 after they filed a legal brief citing court cases that a chatbot had made up. When asked whether the cases were real, the chatbot had said they were.",
-        "**Errors about news.** In October 2025, a study coordinated by the European Broadcasting Union and led by the BBC had journalists from 22 public broadcasters in 18 countries assess over 3,000 answers about news from four popular AI assistants. **45%** had at least one significant issue; **31%** had serious sourcing problems such as missing or misleading attributions; **20%** had major accuracy problems, including invented details and outdated information."
+        "**Errors about news.** In October 2025, a study was coordinated by the European Broadcasting Union and led by the BBC. Journalists from 22 public broadcasters in 18 countries assessed over 3,000 answers about news from four popular AI assistants. **45%** had at least one significant issue. **31%** had serious sourcing problems, such as missing or misleading attributions. **20%** had major accuracy problems, including invented details and outdated information."
       ]},
       {key:"A chatbot is a fast, fluent first draft, not a source. Treat every specific fact, number, quote and reference as a claim to check."}
     ]},
@@ -739,7 +739,7 @@ ICA.addUnit({
         "**Ask for sources**, then **open them**. Does the page exist? Does it actually say what the AI claimed?",
         "**Check every reference.** Search the exact title in quotation marks, or look it up in a library catalog or a scholarly search engine. Invented references often have plausible authors and journals.",
         "**Check quotes** by searching a distinctive phrase in quotation marks.",
-        "**Be extra careful with** numbers, dates, recent events, names of real people, legal and medical details, and anything outside the tool’s training period.",
+        "**Be extra careful with** numbers, dates, recent events, names of real people, and legal and medical details. Also be careful with anything outside the tool’s training period.",
         "**Read laterally and find better coverage**, exactly as with any other claim (Lesson 2).",
         "**Don’t paste private information** (yours or other people’s) into AI tools without knowing how the service stores and uses it."
       ]},
@@ -820,9 +820,9 @@ ICA.addUnit({
    apply:{intro:"Practice on real numbers, charts and AI answers you meet this week.", tasks:[
      {t:"Interrogate one statistic", how:["Find a headline or post with a percentage, “times the risk” or a big number.","Ask: compared with what? out of how many? over what period? percent or percentage points? relative or absolute?","Find the original source of the number if you can, and write an honest one-line version."], write:"The claim… What I found… My honest version…"},
      {t:"Read one chart’s labels first", how:["Find a chart in the news, a report or social media.","Before reading its message, note the title, axis labels, units, where each axis starts, the time period and the source.","Does the shape match the numbers? Would it look different with the axis starting at zero?"], write:"The chart… What the labels show… Fair or misleading?"},
-     {t:"Fact-check an AI answer", how:["Ask any AI chatbot or search summary a factual question you can check (a historical date, a statistic, a definition with sources).","Ask it for sources.","Open every source. Note which exist, which say what the AI claimed, and which don’t.","Don’t include personal or private information in your question."], write:"My question… Sources given… Which checked out…"},
+     {t:"Fact-check an AI answer", how:["Ask any AI chatbot or search summary a factual question that you can check (a historical date, a statistic, or a definition with sources).","Ask it for sources.","Open every source. Note which exist, which say what the AI claimed, and which don’t.","Don’t include personal or private information in your question."], write:"My question… Sources given… Which checked out…"},
      {t:"Set your sharing rule", how:["Write a one-line personal rule for sharing, such as “If I haven’t checked it, I say so, or I don’t share it.”","Think of how you’d like to correct a friend or relative kindly, and write the first sentence you’d use."], write:"My sharing rule… How I’d start a kind correction…"}
-   ], proof:"One statistic rewritten honestly, one chart checked label-first, one AI answer with its sources checked, and your personal sharing rule."},
+   ], proof:"One statistic rewritten honestly. One chart checked label-first. One AI answer with its sources checked. Your personal sharing rule."},
    read:[
      {book:"wlsf", where:"Part V “Field Guide”, Chapter 36 “Using Google Books to Track Down Quotes”, and Part IV, Chapter 23 “How to Think about Research”", note:"The book predates AI chatbots; its quote- and source-tracing methods are exactly what checking an AI answer needs."},
      {book:"soc", where:"Background reading: Chapter 2 “Sociological Research” (its key terms define correlation and intervening variables)", note:"The textbook covers correlation and causation only briefly; Track 3 (Data Literacy) goes deeper."}
@@ -879,11 +879,11 @@ ICA.addUnit({
       {t:"Study the post’s account page and profile photo closely", why:"That is vertical reading. Checking the claim against reliable coverage is faster and stronger."},
       {t:"Search for the claim and see if reliable news outlets are reporting it", ok:true, why:"This is Find better coverage. A dramatic event like this would be widely reported if true; if nobody reliable reports it, that is worth knowing."}
     ]},
-    {id:"t1u6-cp09", lesson:"t1u6-l5", level:3, q:"A study finds that people who wear fitness trackers are fitter than people who don’t. An advert says: “Wearing our tracker makes you fit.” What is the main problem with that claim?", options:[
+    {id:"t1u6-cp09", lesson:"t1u6-l5", level:3, q:"A study finds that people who wear fitness trackers are fitter than people who don’t. An ad says: “Wearing our tracker makes you fit.” What is the main problem with that claim?", options:[
       {t:"Already-fit people may simply be more likely to buy trackers", ok:true, why:"The study shows a correlation. Fit people choosing trackers would produce the same pattern, so it doesn’t show the tracker causes fitness."},
       {t:"None; if two things go together, one must cause the other", why:"Going together is correlation. Causation needs stronger evidence, such as a well-designed experiment."},
       {t:"The study must be fake, because correlations are always meaningless", why:"Correlations can be real and useful. They just don’t prove what causes what."},
-      {t:"The claim would be fine if the advert showed a bar chart", why:"A chart doesn’t turn a correlation into proof of cause. The reasoning is the problem."}
+      {t:"The claim would be fine if the ad showed a bar chart", why:"A chart doesn’t turn a correlation into proof of cause. The reasoning is the problem."}
     ]},
     {id:"t1u6-cp10", lesson:"t1u6-l5", level:3, q:"A chatbot gives Thandiwe a statistic with a link. The link opens a real page from a reputable organization, but the page never mentions that number. What should she do?", options:[
       {t:"Use the number, because the linked source is real and reputable", why:"A real page that doesn’t contain the number doesn’t support it. The chatbot may have misread or invented it."},
@@ -1140,7 +1140,7 @@ ICA.addUnit({
         "On disputed topics, open the **Talk** page (editors’ discussion) and **View history** (recent changes)."
       ]},
       "OpenStax’s *Workplace Software and Skills* notes that using Wikipedia as a primary research source is generally frowned upon. That matches the advice here: it’s tertiary, a map to sources rather than a source of final authority.",
-      "For lateral reading about an organization, the most useful parts of an article are often the sections on history, funding, leadership and reception or controversies. A short article with few references, or one that reads like an advert, is itself a clue that little independent coverage exists. Wikipedia also exists in many languages; each edition is written separately, so coverage and quality differ between them.",
+      "For lateral reading about an organization, the most useful parts of an article are often the sections on history, funding, leadership and reception or controversies. A short article with few references, or one that reads like an ad, is itself a clue that little independent coverage exists. Wikipedia also exists in many languages; each edition is written separately, so coverage and quality differ between them.",
       "Remember that Wikipedia is a tertiary source: excellent for orientation, not a substitute for the evidence it cites."
      ],
      pro:[
@@ -1226,7 +1226,7 @@ ICA.addUnit({
         "`filetype:pdf`: only PDF files."
       ]},
       {key:"Ranking isn’t a truth score. Scan the results before you click."},
-      "Search engines rank results using many signals, such as how well a page matches your words and how many other sites link to it. None of these measures truth, and adverts can appear at the top. Read the web addresses before you click."
+      "Search engines rank results using many signals, such as how well a page matches your words and how many other sites link to it. None of these measures truth, and ads can appear at the top. Read the web addresses before you click."
      ],
      builder:[
       "What each engine documents on its own help pages (checked 2026):",
@@ -1248,7 +1248,7 @@ ICA.addUnit({
         "**Domain-wide searches**: `site:ac.uk` or `site:edu` for universities, `site:gov.uk` for UK government. These limit by domain ending; they don’t vouch for every page.",
         "**Excluding a site**: `-site:example.com` removes one site (documented by DuckDuckGo; also widely used in Google).",
         "**Finding original documents**: `filetype:pdf` plus an organization’s domain often surfaces reports and data tables.",
-        "**Specialised engines**: scholarly search engines and library catalogs for research articles; news archives for older reporting; official statistics sites for data."
+        "**Specialized engines**: scholarly search engines and library catalogs for research articles; news archives for older reporting; official statistics sites for data."
       ]},
       "Search engines increasingly show AI-written summaries above the links. Treat them like any chatbot answer: a starting point whose claims need checking against the linked sources.",
       "Operators change without much notice. When one seems ignored, check the engine’s help page rather than assuming you typed it wrong, or try another engine.",
@@ -1321,7 +1321,7 @@ ICA.addUnit({
       "Other places to look: the section name in the address (`/opinion/`, `/sponsored/`), a different font or background color, a disclosure line at the top or bottom, or the author being described as a “partner” or “contributor”.",
       "**Press releases** are an organization’s own announcement. News sites sometimes reprint them with few changes. If several outlets share identical sentences, trace them upstream: you may find the press release.",
       "**Syndication** means the same article appears on many sites. Check the original publisher, which may be more or less reliable than the site you’re reading.",
-      "A quick routine for any article: (1) find the label; (2) find the author and read laterally about them if they’re unfamiliar; (3) check whether claims are attributed to named sources; (4) look for links to primary documents; (5) ask what the piece wants from you. Reputable outlets publish their editorial standards and corrections policies, which explain how they keep news, opinion and advertising apart. Influencer posts can be adverts too; disclosure rules and enforcement differ between countries."
+      "A quick routine for any article: (1) find the label; (2) find the author and read laterally about them if they’re unfamiliar; (3) check whether claims are attributed to named sources; (4) look for links to primary documents; (5) ask what the piece wants from you. Reputable outlets publish their editorial standards and corrections policies, which explain how they keep news, opinion and advertising apart. Influencer posts can be ads too; disclosure rules and enforcement differ between countries."
      ],
      pro:[
       "Native advertising works precisely because it borrows the trust readers give to editorial content. Labeling rules exist in many countries, but labels vary and can be subtle. On social media, influencer posts may carry “paid partnership” or “ad” tags, or none at all.",
@@ -1542,7 +1542,7 @@ ICA.addUnit({
         "**Lead with the accurate information**, not the myth, so the correct version is what sticks; mention the false claim once, clearly labeled.",
         "**Explain why the false version is wrong** (for example, “the photo is from 2016, in another country”). An explanation is easier to remember than a bare “false”.",
         "**Mind the format**: forwarding a false image with “FAKE” written above it can still spread the image. A link to a fact-check, or a description, may be better.",
-        "**Respect identity**: people resist corrections that feel like attacks on their group. Neutral, specific, non-judgemental language helps."
+        "**Respect identity**: people resist corrections that feel like attacks on their group. Neutral, specific, non-judgmental language helps."
       ]},
       "For communities and organizations (a club, a school, a workplace channel), a simple shared norm helps: share sources with claims, label opinions and rumors, and correct visibly when something was wrong. Moderators can pin reliable sources during fast-moving events.",
       {tip:"Model the behavior: when you share news, include where it came from. People copy what they see others do."},
@@ -1594,7 +1594,7 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t1u6-q01", lesson:"t1u6-l1", level:1, q:"What is the difference between misinformation and disinformation?", options:[
-     {t:"Both are false; disinformation is created or shared on purpose to deceive or harm", ok:true, why:"The difference is intent. Misinformation is shared in good faith; disinformation is deliberate."},
+     {t:"Both are false; disinformation is created or shared on purpose to deceive or harm", ok:true, why:"The difference is intent. Misinformation is shared in good faith. Disinformation is deliberate."},
      {t:"Misinformation is false; disinformation is true", why:"Both are false. True information used to harm is malinformation."},
      {t:"Disinformation only appears on social media", why:"Disinformation can appear anywhere: print, broadcast, messaging, websites."},
      {t:"There is no difference; they are two spellings of the same word", why:"Researchers use them for different things, based on intent."}
@@ -1609,7 +1609,7 @@ ICA.addUnit({
      {t:"False context", ok:true, why:"Genuine content with false information about when, where or why."},
      {t:"Fabricated content", why:"Fabricated content is entirely made up. Here the photo is real."},
      {t:"Imposter content", why:"Imposter content pretends to come from a genuine source, such as a fake logo."},
-     {t:"Satire", why:"Satire is humor. A mislabelled real photo isn’t a joke."}
+     {t:"Satire", why:"Satire is humor. A mislabeled real photo isn’t a joke."}
    ]},
    {id:"t1u6-q04", lesson:"t1u6-l1", level:1, q:"In the 2018 MIT study of stories on Twitter, how did false stories compare with true ones?", options:[
      {t:"They were more likely to be reshared and spread faster", ok:true, why:"False stories were about 70% more likely to be reshared and reached 1,500 people about six times faster."},
@@ -1649,7 +1649,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u6-q10", lesson:"t1u6-l2", level:1, q:"What is lateral reading?", options:[
-     {t:"Leaving a page to see what other sources say about it", ok:true, why:"Fact-checkers open new tabs to check a source’s reputation with other, independent sources instead of studying it in isolation."},
+     {t:"Leaving a page to see what other sources say about it", ok:true, why:"Fact-checkers open new tabs to check a source’s reputation with other, independent sources. They don’t study the source in isolation."},
      {t:"Reading a page carefully from top to bottom", why:"That’s vertical reading, which the Stanford study found easy to fool."},
      {t:"Reading only the headline and the first paragraph of a page", why:"That’s skimming. Lateral reading is about checking the source elsewhere."},
      {t:"Reading the comments under an article", why:"Comments aren’t independent, reliable sources about who’s behind a site."}
@@ -1673,7 +1673,7 @@ ICA.addUnit({
      {t:"Share it with a question mark and let others check it for you", why:"That’s not a SIFT move, and it still spreads an unchecked quote."}
    ]},
    {id:"t1u6-q14", lesson:"t1u6-l2", level:2, q:"What does being a verified signatory of the IFCN Code of Principles signal about a fact-checking organization?", options:[
-     {t:"It has committed to standards and been assessed against them", ok:true, why:"The standards include non-partisanship and transparency of sources. Signatories are assessed by independent assessors and must renew regularly. It’s a useful signal, not a guarantee."},
+     {t:"It has committed to standards and been assessed against them", ok:true, why:"The standards include non-partisanship and transparency of sources. Independent assessors check signatories, and signatories must renew regularly. It’s a useful signal, not a guarantee."},
      {t:"Every single fact-check that it publishes is proven to be correct", why:"No organization is error-free. The code requires open corrections."},
      {t:"It is run by a government", why:"Many signatories are independent organizations or newsrooms. The code isn’t about government status."},
      {t:"It checks every viral claim", why:"Fact-checkers choose which claims to check and explain their selection."}
@@ -1862,7 +1862,7 @@ ICA.addUnit({
      {t:"Argue that it might still be true", why:"If he’s found it’s false, defending it spreads misinformation further."}
    ]},
    {id:"t1u6-q45", lesson:"t1u6-l5", level:2, q:"Which response to a relative’s false post is most likely to help?", options:[
-     {t:"A private, friendly message with a reliable source", ok:true, why:"Private, respectful responses focused on the claim avoid defensiveness and offer something to check."},
+     {t:"A private, friendly message with a reliable source", ok:true, why:"Private, respectful replies that focus on the claim avoid defensiveness and offer something to check."},
      {t:"A public reply in the comments calling the post stupid", why:"Public shaming tends to make people dig in."},
      {t:"Ten links with no explanation", why:"Overwhelming and impersonal; one clear source works better."},
      {t:"Ignoring it and complaining to others", why:"Doesn’t correct anything, and isn’t kind."}

@@ -4,7 +4,7 @@ ICA.addUnit({
   blurb:"What English for Academic Purposes is and how this elective works; the kinds of academic text you will meet; skimming, scanning and close reading; academic vocabulary and how to make it stick; long noun phrases and the writer’s stance; and making notes in your own words with the help of learner dictionaries and corpora.",
   goals:[
     "Explain what English for Academic Purposes is, how this elective is organized, and what the BALEAP Can Do Framework and the CEFR levels describe",
-    "Recognise the main academic genres (research article, textbook, report, essay, abstract) and what each is for",
+    "Recognize the main academic genres (research article, textbook, report, essay, abstract) and what each is for",
     "Choose between skimming, scanning and intensive reading for a task, and use an article’s structure and signposts to find what you need",
     "Learn academic words as families and collocations, use the Academic Word List and the Academic Vocabulary List sensibly, and review words with spaced practice",
     "Unpack nominalizations and long noun phrases, and read a writer’s stance in hedges, boosters and reporting verbs",
@@ -22,7 +22,7 @@ ICA.addUnit({
      "Explain what English for Academic Purposes (EAP) is and how academic English differs from everyday English",
      "Describe English’s role as a lingua franca of research, and treat different varieties and spellings of English with respect",
      "Explain how this elective is organized and what the CEFR levels and the BALEAP Can Do Framework describe",
-     "Recognise the main academic genres and say what each one is for"
+     "Recognize the main academic genres and say what each one is for"
    ],
    learn:[
     {h:"A kind of English for study", body:[
@@ -57,7 +57,7 @@ ICA.addUnit({
     ]},
     {h:"Genres: the kinds of text you will read", body:[
       "A [[genre-academic|genre]] is a type of text that a group of people uses again and again for a shared purpose, so it develops a typical shape and typical language. A recipe is an everyday genre: you expect a list of ingredients, then numbered steps. Academic communities have their own genres, and knowing what to expect makes reading much faster.",
-      {table:[["Genre","What it is for","What to expect"],["Research article","Reports new research to other researchers","Abstract; often Introduction, Methods, Results, Discussion; many citations"],["Review article","Summarises and assesses many earlier studies","Sections by theme; very long reference list"],["Textbook","Teaches a field to students","Definitions, examples, summaries, review questions"],["Report","Informs a decision for an organization or the public","Executive summary, findings, recommendations"],["Essay","Argues a position (often a student genre)","Thesis statement, paragraphs of argument, conclusion"],["Abstract","Summarises a paper in one paragraph","Purpose, method, main result, meaning"]]},
+      {table:[["Genre","What it is for","What to expect"],["Research article","Reports new research to other researchers","Abstract; often Introduction, Methods, Results, Discussion; many citations"],["Review article","Summarizes and assesses many earlier studies","Sections by theme; very long reference list"],["Textbook","Teaches a field to students","Definitions, examples, summaries, review questions"],["Report","Informs a decision for an organization or the public","Executive summary, findings, recommendations"],["Essay","Argues a position (often a student genre)","Thesis statement, paragraphs of argument, conclusion"],["Abstract","Summarizes a paper in one paragraph","Purpose, method, main result, meaning"]]},
       "Research articles are a kind of [[journal-article]], and many follow the [[imrad|IMRaD]] shape. An [[abstract-paper|abstract]] is both a genre of its own and part of an article. Other genres you may meet include books by one author on one subject ([[monograph|monographs]]), book chapters, theses and conference papers.",
       {fig:'<svg viewBox="0 0 340 404"><text x="170" y="18" text-anchor="middle">Who writes it, for whom, and why</text><rect class="d-lup" x="8" y="30" width="324" height="56" rx="8" stroke-width="2"/><text x="20" y="53">Research article</text><text class="s" x="20" y="73">researchers → researchers: here is new evidence</text><rect class="d-sage" x="8" y="96" width="324" height="56" rx="8" stroke-width="2"/><text x="20" y="119">Review article</text><text class="s" x="20" y="139">researchers → researchers: here is what we know</text><rect class="d-gold" x="8" y="162" width="324" height="56" rx="8" stroke-width="2"/><text x="20" y="185">Textbook</text><text class="s" x="20" y="205">experts → students: here is the field, step by step</text><rect class="d-rose" x="8" y="228" width="324" height="56" rx="8" stroke-width="2"/><text x="20" y="251">Report</text><text class="s" x="20" y="271">organization → decision-makers: here is what to do</text><rect class="d-panel" x="8" y="294" width="324" height="56" rx="8" stroke-width="2"/><text x="20" y="317">Essay</text><text class="s" x="20" y="337">student → lecturer: here is my argument</text><rect class="d-lup" x="8" y="360" width="324" height="40" rx="8" stroke-width="2"/><text x="20" y="385">Abstract: the whole paper in one paragraph</text></svg>', alt:"Six stacked boxes. Research article: researchers write to researchers to present new evidence. Review article: researchers write to researchers to say what is known. Textbook: experts write to students to teach a field step by step. Report: an organization writes to decision-makers to say what to do. Essay: a student writes to a lecturer to make an argument. Abstract: the whole paper in one paragraph.", cap:"Each genre has a writer, a reader and a purpose. Ask “who wrote this, for whom, and why?” before you start reading."}
     ]},
@@ -293,7 +293,7 @@ ICA.addUnit({
    goals:[
      "Describe the layers of vocabulary (high-frequency, academic, technical and low-frequency) and why academic vocabulary is worth learning",
      "Use word families, while noticing members that differ in meaning such as economic and economical",
-     "Recognise and learn common academic collocations",
+     "Recognize and learn common academic collocations",
      "Describe the Academic Word List (Coxhead 2000) and the Academic Vocabulary List (Gardner & Davies 2014) accurately, and use them sensibly",
      "Review new words with spaced, self-testing practice"
    ],
@@ -308,7 +308,7 @@ ICA.addUnit({
     {h:"Word families and lemmas", body:[
       "A [[word-family]] is a base word together with the forms made from it: its inflected forms (such as plurals and past tenses) and its derived forms (new words made with prefixes and suffixes). Learning one member gives you a head start on the others.",
       {table:[["Part of speech","Members of the family"],["Verb","analyze (US: analyze), analyses, analyzed, analyzing"],["Noun","analysis (plural: analyses), analyst"],["Adjective","analytical, analytic"],["Adverb","analytically"]]},
-      "A [[lemma]] is a smaller group: a headword and its inflected forms with the same part of speech. *Analyse, analyses, analyzed* and *analyzing* are one lemma; *analysis* belongs to a different lemma in the same family. Dictionaries are usually organized by lemma.",
+      "A [[lemma]] is a smaller group: a headword and its inflected forms with the same part of speech. *Analyze, analyses, analyzed* and *analyzing* are one lemma; *analysis* belongs to a different lemma in the same family. Dictionaries are usually organized by lemma.",
       {h:"Family members are not always twins"},
       "Be careful: some members of a family have different meanings, and using the wrong one is a common mistake.",
       {table:[["Word","Meaning","Example"],["economic","relating to the economy","economic growth"],["economical","using little money or fuel; not wasteful","an economical car"],["historic","important in history","a historic agreement"],["historical","relating to history or the past","historical records"]]},
@@ -427,7 +427,7 @@ ICA.addUnit({
   {id:"e1u1-l4", title:"Dense sentences and the writer’s stance", minutes:55,
    hook:{q:"Compared with everyday conversation, does academic writing use more or fewer dependent clauses of most kinds (for example parts beginning with “because” or “if”, or “that” after verbs such as “think”)?", options:["Many more: that is what makes it complex","About the same","Fewer: it packs information into long noun phrases instead","Academic writing never uses them"], answer:2, reveal:"**Fewer.** Corpus research by Douglas Biber and Bethany Gray (2010) found that most kinds of dependent clause, such as clauses with *because* or *if* and *that*-clauses after verbs, are more common in conversation. (Relative clauses, with *which* or *who*, are an exception: they are common in writing.) Academic writing is complex in a different way: it is **compressed**, packing information into long noun phrases such as “the rapid growth of informal settlements on the edges of large cities”. Experts read these quickly; newcomers have to unpack them. This lesson shows you how, and then how to read how sure a writer is and what they think of other people’s work."},
    goals:[
-     "Recognise nominalizations and turn them back into actions to understand a sentence",
+     "Recognize nominalizations and turn them back into actions to understand a sentence",
      "Find the head noun of a long noun phrase and unpack its modifiers",
      "Identify hedges, boosters and attitude markers, and say what they show about the writer’s stance",
      "Distinguish neutral reporting verbs from evaluative ones, and read what each choice says about the writer’s view of a source"
@@ -440,8 +440,8 @@ ICA.addUnit({
       "The everyday version uses two clauses and two verbs (*rose*, *bought*). The academic version has one main verb (*led to*), and the information has moved into nouns: *rise*, *reduction*, *purchases*. Douglas Biber and Bethany Gray describe this academic style as **compressed**: it is efficient for expert readers, but it leaves the links between ideas unstated, so newcomers must work them out.",
       "Two skills help: recognizing **nominalizations** and unpacking **long noun phrases**."
     ]},
-    {h:"Nominalisation: actions turned into things", body:[
-      "[[nominalisation|Nominalisation]] means expressing an action or quality as a noun. A verb or an adjective becomes a noun:",
+    {h:"Nominalization: actions turned into things", body:[
+      "[[nominalisation|Nominalization]] means expressing an action or quality as a noun. A verb or an adjective becomes a noun:",
       {table:[["Verb or adjective","Noun"],["analyse","analysis"],["fail","failure"],["decide","decision"],["grow","growth"],["increase","an increase"],["important","importance"],["difficult","difficulty"],["able","ability"]]},
       "Writers nominalize for good reasons:",
       {list:["**To sum up an earlier idea in one word.** “Prices rose sharply in 2022. *This rise* hit poorer households hardest.”","**To make a process the topic of the sentence.** “*The analysis of the samples* took six months.”","**To be general and impersonal.** “*Participation* was voluntary” instead of naming each person who chose to take part.","**To pack information.** Several clauses can become one noun phrase."]},
@@ -475,7 +475,7 @@ ICA.addUnit({
       {ex:"“Several studies have examined school gardens. Mensah (2018) **reports** that students in garden schools ate more vegetables, and Lee (2020) **demonstrates** a similar effect in a larger sample. Haddad (2019) **claims** that gardens also raise test scores, but this study had no comparison group. **It seems likely** that gardens improve diet; their effect on learning **remains unclear**.”", label:"Worked example: a stance-rich paragraph"},
       {list:["*reports*: neutral; the writer passes on Mensah’s finding.","*demonstrates*: accepting; the writer trusts Lee’s larger study.","*claims*, followed by a criticism: distancing; the writer doubts Haddad.","*It seems likely*: a hedge; fairly confident about diet.","*remains unclear*: the writer won’t commit about learning."]},
       "In four sentences, the writer has told you which studies they trust and how sure they are. Reading stance like this is a core part of critical reading, and it is how you know which sources to rely on.",
-      {table:[["Misconception","Closer to the truth"],["Hedging shows the writer is unsure of their English.","Hedging shows the writer is precise about evidence. Expert writers hedge a lot."],["Boosters make writing stronger, so more is better.","Boosters are only convincing when the evidence is strong. Too many look like overclaiming."],["All reporting verbs mean “says”.","The verb often shows the writer’s view: claims and demonstrates send very different messages."],["Nominalisation is always bad style.","It is normal in academic English and useful. Problems start when there is too much of it."]]},
+      {table:[["Misconception","Closer to the truth"],["Hedging shows the writer is unsure of their English.","Hedging shows the writer is precise about evidence. Expert writers hedge a lot."],["Boosters make writing stronger, so more is better.","Boosters are only convincing when the evidence is strong. Too many look like overclaiming."],["All reporting verbs mean “says”.","The verb often shows the writer’s view: claims and demonstrates send very different messages."],["Nominalization is always bad style.","It is normal in academic English and useful. Problems start when there is too much of it."]]},
       {terms:["nominalisation","noun-phrase","stance","reporting-verb"]}
     ]}
    ],
@@ -590,7 +590,7 @@ ICA.addUnit({
       "The [[cornell-notes|Cornell method]] was developed by Walter Pauk at Cornell University in the 1950s and described in his book *How to Study in College* (first published in 1962 and still in print in later editions). It divides each page into three areas.",
       {fig:'<svg viewBox="0 0 340 330"><rect class="d-panel" x="8" y="8" width="324" height="314" rx="6" stroke-width="2"/><rect class="d-gold" x="16" y="16" width="96" height="210" rx="4" stroke-width="2"/><rect class="d-lup" x="120" y="16" width="204" height="210" rx="4" stroke-width="2"/><rect class="d-sage" x="16" y="234" width="308" height="80" rx="4" stroke-width="2"/><text x="64" y="40" text-anchor="middle">Cues</text><text class="s" x="64" y="62" text-anchor="middle">questions and</text><text class="s" x="64" y="78" text-anchor="middle">key words,</text><text class="s" x="64" y="94" text-anchor="middle">added after</text><text class="s" x="64" y="122" text-anchor="middle">What causes</text><text class="s" x="64" y="138" text-anchor="middle">urban heat?</text><text x="222" y="40" text-anchor="middle">Notes</text><text class="s" x="222" y="62" text-anchor="middle">main ideas in your words,</text><text class="s" x="222" y="78" text-anchor="middle">during the reading or lecture</text><text class="s" x="128" y="106">• roads, roofs absorb heat</text><text class="s" x="128" y="124">  by day → release at night</text><text class="s" x="128" y="142">• city ≈ 2 °C warmer at night</text><text class="s" x="128" y="160">  (one study, 6 stations)</text><text class="s" x="128" y="178">• trees: shade + cooling</text><text x="170" y="258" text-anchor="middle">Summary</text><text class="s" x="170" y="280" text-anchor="middle">one or two sentences on the page’s</text><text class="s" x="170" y="298" text-anchor="middle">main point, written after</text></svg>', alt:"A notebook page divided into three areas. A narrow left column labeled cues, for questions and key words added afterwards, with the example question what causes urban heat. A wide right column labeled notes, for main ideas in your own words written during the reading or lecture, with example bullet points about roads absorbing heat, cities being about two degrees warmer at night in one study, and trees giving shade. A strip across the bottom labeled summary, for one or two sentences written afterwards.", cap:"A Cornell page: notes on the right during reading, cues on the left and a summary at the bottom afterwards."},
       "Using it is a cycle:",
-      {ol:["**Record.** During the lecture or reading, write the main ideas in the wide notes column, in short phrases.","**Add cues.** Soon afterwards, write questions or key words in the narrow left column, next to the notes they point to.","**Summarise.** Write one or two sentences at the bottom of the page about its main point.","**Recite.** Later, cover the notes column, read each cue and answer it aloud in your own words. Then check.","**Reflect and review.** Note what was hard, and repeat the recital regularly, focusing on the difficult parts."]},
+      {ol:["**Record.** During the lecture or reading, write the main ideas in the wide notes column, in short phrases.","**Add cues.** Soon afterwards, write questions or key words in the narrow left column, next to the notes they point to.","**Summarize.** Write one or two sentences at the bottom of the page about its main point.","**Recite.** Later, cover the notes column, read each cue and answer it aloud in your own words. Then check.","**Reflect and review.** Note what was hard, and repeat the recital regularly, focusing on the difficult parts."]},
       "The cue column turns your notes into a self-test, which is the same retrieval practice that makes word cards work (Lesson 3)."
     ]},
     {h:"Outline notes and mind maps", body:[
@@ -901,7 +901,7 @@ ICA.addUnit({
       "Turning an action or quality into a noun is called **nominalisation** (US spelling: nominalization): *analyse* → *analysis*, *grow* → *growth*, *important* → *importance*.",
       "To understand a heavy sentence, find its **main verb**, then the **head noun** of the subject (the noun the phrase is really about). Then turn the nominalizations back into verbs and ask who did what.",
       {key:"Find the main verb, find the head noun, then unpack the nouns back into actions."},
-      "Nominalisation isn’t bad: it is normal in academic English. It just takes practice to read."
+      "Nominalization isn’t bad: it is normal in academic English. It just takes practice to read."
      ],
      builder:[
       "A noun phrase has a **head noun** with words before it (articles, adjectives, other nouns) and words after it (prepositional phrases, relative clauses, -ing and -ed phrases).",
@@ -1026,7 +1026,7 @@ ICA.addUnit({
    {id:"academic-word-list", term:"Academic Word List (AWL)", def:"Averil Coxhead’s list (2000) of 570 word families common across academic texts in many fields, excluding the 2,000 most frequent general English words.", codex:"academic-vocabulary"},
    {id:"academic-vocabulary-list", term:"Academic Vocabulary List (AVL)", def:"Dee Gardner and Mark Davies’s list (2014) of about 3,000 core academic lemmas, built from the 120-million-word academic part of the Corpus of Contemporary American English.", codex:"academic-vocabulary"},
    {id:"spaced-review", term:"Spaced review", def:"Reviewing material at growing intervals (for example after one day, three days, a week) and testing yourself each time, instead of studying it all at once.", codex:"academic-vocabulary"},
-   {id:"nominalisation", term:"Nominalisation", def:"Expressing an action or quality as a noun, such as analyse → analysis or important → importance. US spelling: nominalization.", codex:"noun-phrases-nominalisation"},
+   {id:"nominalisation", term:"Nominalization", def:"Expressing an action or quality as a noun, such as analyse → analysis or important → importance. US spelling: nominalization.", codex:"noun-phrases-nominalisation"},
    {id:"noun-phrase", term:"Noun phrase", def:"A group of words built around one main noun (the head noun), such as “the rapid growth of informal settlements”, where the head is growth.", codex:"noun-phrases-nominalisation"},
    {id:"stance", term:"Stance", def:"How a writer shows how certain they are about a claim and what they think of it, for example through hedges, boosters, attitude markers and reporting verbs.", codex:"reading-critically-language"},
    {id:"reporting-verb", term:"Reporting verb", def:"A verb used to report what a source says or found, such as states, shows, suggests or claims. The choice often shows what the writer thinks of the source.", codex:"reading-critically-language"},
@@ -1182,7 +1182,7 @@ ICA.addUnit({
      {t:"Expressing an action or quality as a noun, such as analyze → analysis", ok:true, why:"Turning verbs or adjectives into nouns is nominalization."},
      {t:"Naming the author of a source", why:"That is citation, not nominalization."},
      {t:"Turning a noun into a verb, such as analysis → analyze or growth → grow", why:"That is the opposite direction."},
-     {t:"Using the names of real people as examples in an academic text", why:"Nominalisation is a grammar process, not about personal names."}]},
+     {t:"Using the names of real people as examples in an academic text", why:"Nominalization is a grammar process, not about personal names."}]},
    {id:"e1u1-q29", lesson:"e1u1-l4", level:2, q:"What is the head noun in “the limited availability of reliable data on informal employment”?", options:[
      {t:"availability", ok:true, why:"It comes just before the first “of”; the phrase is about availability."},
      {t:"data", why:"*Data* is inside the post-modifier “of reliable data…”: it says what is (not) available."},

@@ -657,7 +657,7 @@ ICA.addUnit({
      "Find and read the right page of the official Python documentation, and use `help()`",
      "Ask a clear question with a minimal reproducible example, what you expected and what you got",
      "Use AI assistants to explain errors while keeping your own understanding, checking every suggestion, and never pasting secrets",
-     "Recognise when to retreat to working code or take a break"
+     "Recognize when to retreat to working code or take a break"
    ],
    learn:[
     {h:"Being stuck is part of the work", body:[

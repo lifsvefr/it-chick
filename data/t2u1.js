@@ -500,7 +500,7 @@ ICA.addUnit({
    hook:{q:"Which of these is the right **kind** of app for writing a web page’s code?", options:["Microsoft Word","Google Docs","Windows Notepad","None of them: you need expensive software"], answer:2, reveal:"**Notepad.** The plainest app wins, because it saves exactly the characters you type and nothing else. Word processors add hidden formatting and quietly swap straight quotes for curly ones, which breaks code. You don’t need to pay for anything: the best-known code editor is free, and so is the Web Lab in this app. This lesson helps you choose."},
    goals:[
      "Explain what plain text is, and why word processors and some phone keyboards break code",
-     "Recognise smart quotes and other hidden changes, and fix them",
+     "Recognize smart quotes and other hidden changes, and fix them",
      "Choose an editor that suits your computer, Chromebook or phone",
      "Save code files with the right name, extension and encoding"
    ],

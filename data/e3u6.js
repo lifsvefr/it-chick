@@ -20,7 +20,7 @@ ICA.addUnit({
      "Conjugate potential verbs as ichidan verbs: [書]{か}けます, 書けない, 書けた",
      "Use が (or を) and other particles with potential verbs",
      "Say “can” with ～ことができる and with noun + ができる",
-     "Recognise ら[抜]{ぬ}き forms such as [見]{み}れる in speech, and use 見られる in writing",
+     "Recognize ら[抜]{ぬ}き forms such as [見]{み}れる in speech, and use 見られる in writing",
      "Tell 見える and [聞]{き}こえる from 見られる and 聞ける"
    ],
    learn:[
@@ -360,7 +360,7 @@ ICA.addUnit({
      "Use ば for conditions, including advice questions such as どうすればいいですか",
      "Use たら for “if” and for “once”, and for past surprises",
      "Use なら to pick up a topic or what someone has just said, and when the result comes first",
-     "Recognise where two or three forms are equally natural, and choose with a step-by-step guide"
+     "Recognize where two or three forms are equally natural, and choose with a step-by-step guide"
    ],
    learn:[
     {h:"Four ways to say “if”", body:[
@@ -534,7 +534,7 @@ ICA.addUnit({
      "Choose あげる, くれる or もらう by the direction of the giving, from your point of view",
      "Mark the giver and the receiver with the right particles (は/が, に, から)",
      "Treat family and your own group as “your side” (ウチ) when choosing くれる",
-     "Recognise the polite forms さしあげる, くださる and いただく, and casual やる",
+     "Recognize the polite forms さしあげる, くださる and いただく, and casual やる",
      "Describe favors with ～てあげる, ～てくれる and ～てもらう, and ask for favors politely",
      "Avoid offering help with ～てあげる to people above you"
    ],

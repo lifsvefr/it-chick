@@ -7,7 +7,7 @@ ICA.addUnit({
     "Calculate, store values in objects with `<-`, build vectors with `c()`, call functions with named arguments, and read R’s most common error messages",
     "Build a data frame, inspect it with `str()`, `head()` and `summary()`, and pick columns with `$` and rows and columns with `[ , ]`",
     "Read a CSV file with `read.csv()`, check what arrived, pick rows with a condition, count with `table()`, `sum()` and `mean()`, and handle `NA`",
-    "Summarise and compare groups with `tapply()` and `aggregate()`, draw histograms, boxplots, scatterplots and bar charts, and use `cor()` and `lm()` with care"
+    "Summarize and compare groups with `tapply()` and `aggregate()`, draw histograms, boxplots, scatterplots and bar charts, and use `cor()` and `lm()` with care"
   ],
   read:[
     {book:"r4ds", where:"Introduction (“Prerequisites” and “Running R code”); Chapter 2, “Workflow: basics”; Chapter 6, “Workflow: scripts and projects”; Chapter 27, “A field guide to base R”", note:"The main R text. Most of the book teaches the tidyverse packages (this track’s Unit 9); the chapters listed here are about R itself and base R."},
@@ -780,7 +780,7 @@ ICA.addUnit({
     {id:"t3u7-l5-x8", type:"explain", q:"In the walking-club data, Park walks have the lowest mean time (about 30 minutes). Explain why that doesn’t show Park is the quickest route to walk, and what fairer comparison R can make.", model:"Park walks are also the shortest, averaging about 2.3 km against about 3.8 km for Hill and 4.7 km for River, so they take less time partly because there’s less distance. Total minutes mix up length and speed. Dividing minutes by kilometers gives pace, minutes per km, which compares like with like: `walks$pace <- walks$minutes / walks$km`, then `tapply()` by route. By pace, River (12.5) and Park (13.1) are similar and Hill is slowest (17.2). With four or five walks per route, these describe this club only.", points:["Says Park walks are shorter, so total time isn’t a fair comparison", "Proposes pace (minutes per km)", "Shows how to compute it in R, by route", "Notes the small numbers of walks, so results describe this club only"]}
    ],
    apply:{intro:"Use walks.csv (from Lesson 4) in the Data Lab, RStudio or Posit Cloud, or the Data Lab’s `survey.csv`.", tasks:[
-    {t:"Summarise and compare", how:[
+    {t:"Summarize and compare", how:[
       "Read the data and run `summary()` on it.",
       "Calculate the mean and median of one numeric column, with `na.rm = TRUE` where needed.",
       "Compare a numeric column across groups with `tapply()` and with `aggregate()`.",
@@ -950,7 +950,7 @@ ICA.addUnit({
       "**Types.** `class()` reports `\"numeric\"`, `\"character\"`, `\"logical\"` (and `\"integer\"` for whole numbers such as `5L` or `1:3`, and for whole-number columns read from files). Convert with `as.numeric()`, `as.character()`, `as.logical()`. A failed conversion gives NA with the warning `NAs introduced by coercion`.",
       "**Coercion.** A vector holds one type, so mixing converts everything to the most flexible type: logical → numeric → character. `c(1, TRUE)` is `1 1`; `c(1, \"a\")` is `\"1\" \"a\"`.",
       "**Indexing.** `x[2]`, `x[c(1, 3)]`, `x[-1]` (all but the first), `x[x > 5]` (by condition). `x[10]` on a shorter vector gives NA, not an error.",
-      "**Vectorised operations.** Arithmetic and comparisons work element by element, so `price * qty` multiplies matching pairs. `sum(x > 5)` counts and `mean(x > 5)` gives the proportion, because TRUE = 1 and FALSE = 0.",
+      "**Vectorized operations.** Arithmetic and comparisons work element by element, so `price * qty` multiplies matching pairs. `sum(x > 5)` counts and `mean(x > 5)` gives the proportion, because TRUE = 1 and FALSE = 0.",
       "**Missing values.** `NA` means unknown. Anything calculated from NA is NA: `NA > 1` is NA, and even `NA == NA` is NA. Test with `is.na(x)`, and use `na.rm = TRUE` in summaries.",
       {code:['x <- c(3, NA, 7)','is.na(x)','sum(x, na.rm = TRUE)'].join("\n"), lang:"r"},
       {ex:"[1] FALSE  TRUE FALSE\n[1] 10", label:"R prints", mono:true}

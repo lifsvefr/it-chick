@@ -19,7 +19,7 @@ ICA.addUnit({
    hook:{q:"E. H. Carr’s *The Twenty Years’ Crisis* (1939) is the classic realist attack on “utopian” hopes for peace through law and the League of Nations. What did Carr also say about pure realism?", options:["It is the only scientific way to study politics","It is sterile: sound political thought needs both utopia and reality","It proves that morality has no place in foreign policy","It shows that war between great powers can never be prevented"], answer:1, reveal:"**It is sterile.** Carr argued that realism is a needed corrective to wishful thinking. But in his view realism alone offers no goal to work toward, so mature thought combines utopia and reality. Founding texts are often more two-sided than their reputations. This lesson reads the realist family closely: what each branch really claims, and where the arguments inside it lie."},
    goals:[
      "Explain how realism works as a research program with rival branches",
-     "Summarise what Carr and Morgenthau actually argued, beyond the slogans",
+     "Summarize what Carr and Morgenthau actually argued, beyond the slogans",
      "Compare Waltz’s structural realism with Mearsheimer’s offensive realism and the defensive realists",
      "Use the security dilemma, the spiral and deterrence models and the offense–defense balance on a real case",
      "Weigh balance of threat, bandwagoning for profit and hedging, and the main critiques of realism"
@@ -206,7 +206,7 @@ ICA.addUnit({
       {t:"Firms with investments abroad lobby their governments against conflict with host countries.", b:0, why:"Economic ties creating interests in peace is commercial liberalism."}
     ]},
     {id:"e4u2-l2-x2", type:"mcq", q:"A state whose banks run a payment-messaging network used worldwide threatens to cut a rival’s banks off from it. Which idea fits best?", options:[
-      {t:"Weaponised interdependence: control of a hub creates a chokepoint", ok:true, why:"Right. Farrell and Newman (2019) showed how control over hubs in global networks becomes a tool of coercion."},
+      {t:"Weaponized interdependence: control of a hub creates a chokepoint", ok:true, why:"Right. Farrell and Newman (2019) showed how control over hubs in global networks becomes a tool of coercion."},
       {t:"Complex interdependence shows that force has no role, so the threat cannot matter", why:"Keohane and Nye described an ideal type, and this is a case of economic, not military, pressure. Interdependence can be used as power."},
       {t:"The democratic peace predicts the threat will never be carried out", why:"The democratic peace is about war between democracies; it says nothing about network sanctions."},
       {t:"Hegemonic stability theory says only the hegemon may join networks", why:"The theory is about who stabilizes an open economy, not who may join networks."}
@@ -253,7 +253,7 @@ ICA.addUnit({
     {t:"Seminar questions", how:["Is the democratic peace an empirical law, a statistical artifact, or a norm that holds while people believe in it?","Did the liberal international order shape East Asia, or did East Asia’s hub-and-spokes system shape a different kind of order?","Can institutions be independent of the powers that created them?"], write:"Pick one question and write a paragraph: your claim, one piece of evidence, one counter-argument and your reply."}
    ], proof:"Notes on one regime’s parts, one tested hard case, one chokepoint and a seminar paragraph."},
    read:[
-    {book:"eirt", where:"Chapter 2 “Liberalism” (Jeffrey W. Meiser)", note:"Reread it for the strands of liberalism and its case on US–Mexico relations."},
+    {book:"eirt", where:"Chapter 2 “Liberalism” (Jeffrey W. Meizer)", note:"Reread it for the strands of liberalism and its case on US–Mexico relations."},
     {book:"eir", where:"Chapter 4 “International Relations Theory” (Dana Gold and Stephen McGlinchey)", note:"A short refresher on liberalism alongside the other theories."}
    ]
   },
@@ -296,9 +296,9 @@ ICA.addUnit({
       "Margaret Keck and Kathryn Sikkink’s *Activists Beyond Borders* (1998) described the [[boomerang-pattern|boomerang pattern]]:",
       {fig:'<svg viewBox="0 0 340 300"><defs><marker id="e4u2-l3-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-rose" x="6" y="30" width="146" height="56" rx="8" stroke-width="2"/><text x="79" y="54" text-anchor="middle">State A</text><text class="s" x="79" y="73" text-anchor="middle">ignores or blocks</text><rect class="d-lup" x="188" y="30" width="146" height="56" rx="8" stroke-width="2"/><text x="261" y="54" text-anchor="middle">Other states</text><text class="s" x="261" y="73" text-anchor="middle">and IGOs</text><rect class="d-gold" x="6" y="200" width="146" height="56" rx="8" stroke-width="2"/><text x="79" y="224" text-anchor="middle">Groups in A</text><text class="s" x="79" y="243" text-anchor="middle">raise a claim</text><rect class="d-sage" x="188" y="200" width="146" height="56" rx="8" stroke-width="2"/><text x="261" y="224" text-anchor="middle">Allies abroad</text><text class="s" x="261" y="243" text-anchor="middle">NGO networks</text><path class="d-ink" d="M79 198 L79 90" stroke-width="2" stroke-dasharray="5 4"/><text x="79" y="150" text-anchor="middle">✕</text><text class="s" x="96" y="170">blocked</text><path class="d-ink" d="M154 228 L186 228" stroke-width="2" marker-end="url(#e4u2-l3-a)"/><text class="s" x="170" y="280" text-anchor="middle">1 reach out</text><path class="d-ink" d="M261 198 L261 90" stroke-width="2" marker-end="url(#e4u2-l3-a)"/><text class="s" x="268" y="150">2 lobby</text><path class="d-ink" d="M186 58 L154 58" stroke-width="2" marker-end="url(#e4u2-l3-a)"/><text class="s" x="170" y="18" text-anchor="middle">3 pressure on A</text></svg>', alt:"Four boxes. Bottom left: groups in State A raise a claim, but their path to State A, top left, is blocked. They reach out to allies abroad, bottom right, such as NGO networks, which lobby other states and intergovernmental organizations, top right, which put pressure on State A.", cap:"The boomerang pattern (Keck and Sikkink, 1998): blocked at home, activists go abroad so that pressure comes back from outside."},
       "Risse, Ropp and Sikkink’s *The Power of Human Rights* (1999) proposed a five-phase **spiral model** of human-rights change. It runs from repression and denial to tactical concessions and rule-consistent behavior. (Don’t confuse it with Jervis’s spiral model.) Amitav Acharya (2004) showed [[norm-localization|localization]] at work. In his account, ASEAN members in the 1990s reshaped the idea of “common security” into the looser “cooperative security” of the ASEAN Regional Forum. In 1998 they also rejected a proposal for “flexible engagement” that would have loosened non-interference. Critics note that early norm research mostly studied norms its authors liked. Later work studies contested and weakening norms too.",
-      {ex:"**Task:** Trace the ban on cluster munitions through Finnemore and Sikkink’s life cycle, and check whether the norm is still cascading.\n1. First I identify the norm and its entrepreneurs, because emergence needs persuaders. The norm: cluster munitions, which scatter many small bomblets and leave duds that kill civilians long afterwards, should be banned. The entrepreneurs: NGOs in the Cluster Munition Coalition and a group of states led by Norway, which hosted the “Oslo Process” outside the UN.\n2. Next I look for the tipping point, because the model predicts a cascade after it. The Convention on Cluster Munitions was adopted in Dublin on 30 May 2008, opened for signature in Oslo on 3 December 2008 and entered into force on 1 August 2010.\n3. Then I measure the cascade and its limits, because counting matters. By April 2026, 112 states had ratified or acceded, but major producers and users, including the United States, Russia and China, had not joined.\n4. Then I look for reversal, because later research studies weakening norms too. Lithuania withdrew with effect from 6 March 2025, citing its security after Russia’s invasion of Ukraine; the ICRC warned that such moves erode the norm.\n5. Finally I place the case on the cycle.\n**Result:** “The cluster-munitions norm passed emergence and a tipping point quickly, as the landmine ban had, but its cascade stopped short of the major military powers, and in 2025 it saw its first withdrawal by a state party. It is a norm written into law but still contested in practice.”\n**Common mistake:** assuming that a treaty means the norm is internalized. Internalisation means taken-for-granted behavior, which you must show separately from ratification counts.", label:"Worked example: tracing a norm through the life cycle (cluster munitions)"}
+      {ex:"**Task:** Trace the ban on cluster munitions through Finnemore and Sikkink’s life cycle, and check whether the norm is still cascading.\n1. First I identify the norm and its entrepreneurs, because emergence needs persuaders. The norm: cluster munitions, which scatter many small bomblets and leave duds that kill civilians long afterwards, should be banned. The entrepreneurs: NGOs in the Cluster Munition Coalition and a group of states led by Norway, which hosted the “Oslo Process” outside the UN.\n2. Next I look for the tipping point, because the model predicts a cascade after it. The Convention on Cluster Munitions was adopted in Dublin on 30 May 2008, opened for signature in Oslo on 3 December 2008 and entered into force on 1 August 2010.\n3. Then I measure the cascade and its limits, because counting matters. By April 2026, 112 states had ratified or acceded, but major producers and users, including the United States, Russia and China, had not joined.\n4. Then I look for reversal, because later research studies weakening norms too. Lithuania withdrew with effect from 6 March 2025, citing its security after Russia’s invasion of Ukraine; the ICRC warned that such moves erode the norm.\n5. Finally I place the case on the cycle.\n**Result:** “The cluster-munitions norm passed emergence and a tipping point quickly, as the landmine ban had, but its cascade stopped short of the major military powers, and in 2025 it saw its first withdrawal by a state party. It is a norm written into law but still contested in practice.”\n**Common mistake:** assuming that a treaty means the norm is internalized. Internalization means taken-for-granted behavior, which you must show separately from ratification counts.", label:"Worked example: tracing a norm through the life cycle (cluster munitions)"}
     ]},
-    {h:"Securitisation in depth", body:[
+    {h:"Securitization in depth", body:[
       "The primer’s security lesson (Unit 8) set out the basic model of [[securitization|securitization]] (see {{securitization-theory}}). In this model, a [[securitizing-move|securitizing move]] presents a [[referent-object|referent object]] as existentially threatened. If an audience accepts the move, extraordinary measures follow. Buzan, Wæver and de Wilde’s *Security: A New Framework for Analysis* (1998) added **sectors**, each with typical referent objects:",
       {table:[
         ["Sector","Typical referent object"],
@@ -341,19 +341,19 @@ ICA.addUnit({
       {t:"Norm entrepreneurs persuade others that a new standard is right", why:"Emergence comes first, driven by persuasion."},
       {t:"A critical mass of states adopts the norm (they suggested rarely before about a third)", why:"The tipping point separates emergence from cascade."},
       {t:"Other states follow for legitimacy, conformity and esteem", why:"The cascade works through socialization."},
-      {t:"The norm becomes taken for granted through law, professions and habit", why:"Internalisation is the final stage: breaking the norm becomes hard even to imagine."}
+      {t:"The norm becomes taken for granted through law, professions and habit", why:"Internalization is the final stage: breaking the norm becomes hard even to imagine."}
     ]},
     {id:"e4u2-l3-x4", type:"mcq", q:"Hana’s community group cannot get its government to respond to a claim about forced evictions. It contacts international NGOs, which persuade foreign governments and a UN body to raise the issue with Hana’s government. What is this?", options:[
       {t:"The boomerang pattern", ok:true, why:"Right. Blocked at home, activists go abroad so that pressure returns from outside (Keck and Sikkink, 1998)."},
-      {t:"Norm localization", why:"Localisation means local actors reshaping an outside norm to fit local beliefs, not routing pressure through foreign allies."},
-      {t:"Securitisation", why:"Nothing here is framed as an existential threat requiring extraordinary measures."},
+      {t:"Norm localization", why:"Localization means local actors reshaping an outside norm to fit local beliefs, not routing pressure through foreign allies."},
+      {t:"Securitization", why:"Nothing here is framed as an existential threat requiring extraordinary measures."},
       {t:"Buck-passing", why:"Buck-passing is a realist idea about getting another state to do the balancing."}
     ]},
     {id:"e4u2-l3-x5", type:"match", q:"A government declares that a fast-spreading disease threatens “the survival of our nation” and asks parliament for emergency powers. Match each securitization term to its part of the case.", pairs:[
-      ["Securitising actor","The government making the declaration","The actor who frames the issue as an existential threat."],
+      ["Securitizing actor","The government making the declaration","The actor who frames the issue as an existential threat."],
       ["Referent object","The nation said to be threatened","What is claimed to need protecting."],
-      ["Securitising move","The declaration before anyone accepts it","Until the audience accepts it, it is only a move."],
-      ["Audience","Parliament and the public","Securitisation succeeds only if the audience accepts the claim."],
+      ["Securitizing move","The declaration before anyone accepts it","Until the audience accepts it, it is only a move."],
+      ["Audience","Parliament and the public","Securitization succeeds only if the audience accepts the claim."],
       ["Extraordinary measures","The emergency powers requested","Measures that would not be accepted in normal politics."]
     ]},
     {id:"e4u2-l3-x6", type:"sort", q:"Is each argument pluralist or solidarist, in English School terms?", buckets:["Pluralist","Solidarist"], items:[
@@ -372,7 +372,7 @@ ICA.addUnit({
     {id:"e4u2-l3-x8", type:"explain", q:"Wendt says a friendly Kantian culture of anarchy held only by force is fragile, while a hostile Hobbesian culture held by legitimacy is very hard to change. Explain why, using his degrees of internalization.", size:"3–4 sentences", hint:"Think of the three reasons someone might pay a fine.", model:"Wendt argues that self-help isn’t a fact of anarchy but an institution: it depends on how states read each other and what they come to expect. Each culture of anarchy can be held at three degrees. At the first, actors follow the rules because they are forced to; at the second, because it pays; at the third, because they accept the rules as right. Rules held only by force collapse when the force goes, so a Kantian culture held that way is fragile. But enemies who believe enmity is natural and right will keep the rivalry going even when nobody forces them.", points:["Says self-help is an institution, not a fact of anarchy", "Describes the three degrees: force, self-interest and legitimacy", "Explains why rules held by force break when the force goes", "Explains why rules accepted as right last, even hostile ones"]}
    ],
    apply:{intro:"Look for ideas, norms and shared rules at work, using public sources only.", tasks:[
-    {t:"Trace a norm", how:["Choose a norm: the ban on landmines, the ban on child soldiers, women’s suffrage, or controls on plastic pollution.","Using official sources (treaty sites, UN pages), note who the norm entrepreneurs were, roughly when a tipping point came, and how far the norm is internalized today.","Note any sign of localization or contestation."], write:"The norm… Entrepreneurs… Tipping point… Cascade… Internalised or contested today…"},
+    {t:"Trace a norm", how:["Choose a norm: the ban on landmines, the ban on child soldiers, women’s suffrage, or controls on plastic pollution.","Using official sources (treaty sites, UN pages), note who the norm entrepreneurs were, roughly when a tipping point came, and how far the norm is internalized today.","Note any sign of localization or contestation."], write:"The norm… Entrepreneurs… Tipping point… Cascade… Internalized or contested today…"},
     {t:"Spot a securitizing move", how:["Find one speech or official statement that calls an issue a threat to survival or to the nation.","Identify the actor, the referent object, the audience and the measures requested.","Look for signs of whether the audience accepted it."], write:"The statement… Actor… Referent object… Audience… Measures… Accepted or not…"},
     {t:"Primary institutions in the news", how:["Read one week of international news from any outlet.","Note every sign of a primary institution at work: diplomacy (ambassadors, summits), international law, great-power management, sovereignty claims, the market."], write:"Diplomacy… Law… Great powers… Sovereignty… Market… What this suggests about international society…"},
     {t:"Seminar questions", how:["Is constructivism a theory, an approach or a method?","Does securitization theory travel well beyond the European democracies where it was developed?","Is the English School’s “expansion” story a history of a society or of an empire?"], write:"Pick one question and write a paragraph: your claim, one piece of evidence, one counter-argument and your reply."}
@@ -459,7 +459,7 @@ ICA.addUnit({
       {t:"Uneven and combined development", ok:true, why:"Right. Societies develop at different speeds and latecomers combine borrowed new forms with older ones."},
       {t:"The democratic peace", why:"That is about whether democracies fight each other, not about patterns of development."},
       {t:"The security dilemma", why:"Nothing in the case is about arming leading to mutual insecurity."},
-      {t:"Norm localization", why:"Localisation is about norms being adapted to local beliefs, not technology and social structure."}
+      {t:"Norm localization", why:"Localization is about norms being adapted to local beliefs, not technology and social structure."}
     ]},
     {id:"e4u2-l4-x4", type:"match", q:"Match each feminist scholar to the work or argument.", pairs:[
       ["J. Ann Tickner (1988)","Reformulated Morgenthau’s six principles from a feminist standpoint","Her article in *Millennium* engaged classical realism directly."],
@@ -507,7 +507,7 @@ ICA.addUnit({
      "Explain Acharya and Buzan’s question about non-Western IR theory, their answers, and the Global IR agenda’s critics",
      "Describe tianxia, moral realism and relational theory accurately, with the main critiques",
      "Discuss Southeast and South Asian contributions, including the ASEAN Way debate and subaltern realism",
-     "Analyse the 1997–98 Asian financial crisis through rival theories, saying what each sees and misses",
+     "Analyze the 1997–98 Asian financial crisis through rival theories, saying what each sees and misses",
      "Build a theoretical framework for a thesis: choose, state expectations, operationalize, and avoid theory as decoration"
    ],
    learn:[
@@ -520,7 +520,7 @@ ICA.addUnit({
       "Acharya’s 2014 agenda for [[global-ir|Global IR]] is covered in the primer (see {{global-ir}} and {{amitav-acharya}}). Acharya and Buzan’s *The Making of Global International Relations* (2019) retold the field’s first century as a global story. In their account, ideas about world order developed in many places, not only after 1919 in Britain and the United States.",
       "Three critiques matter in seminars. Pinar Bilgin (2008) borrowed a phrase from the postcolonial theorist Homi Bhabha. She argued that much non-Western thought and practice is “almost the same but not quite” as Western thought. In her view, long, unequal contact between the West and the rest has produced ideas that look borrowed but differ in unexpected ways. Her cases included India’s pursuit of nuclear status and Turkey’s secularism. So, she argued, a search only for something radically different misses where difference lies. Her work also suggests asking how “Western” Western IR really is. Some critical scholars say Global IR is too polite about power inside the field. And there is a risk of [[national-schools-ir|national schools]] that serve a government’s foreign policy, a risk Acharya himself warns against. Some mainstream scholars reply that good theory is universal already, so there is no need for regional labels."
     ]},
-    {h:"Theorising from China: three projects and their critics", body:[
+    {h:"Theorizing from China: three projects and their critics", body:[
       "Three projects are discussed most often (see {{chinese-ir-theory}}):",
       {list:[
         "**[[tianxia-system|Tianxia]].** Zhao Tingyang wrote *Tianxia tixi* (2005; in English *All under Heaven: The Tianxia System for a Possible World Order*, 2021). He argues that a world order should start from the whole world and include everyone, rather than from competing sovereign states.",
@@ -554,7 +554,7 @@ ICA.addUnit({
       {ol:[
         "**Choose for the puzzle**, not for fashion. A theory earns its place if it explains your puzzle and a rival would explain it differently.",
         "**State expectations.** What should you observe if the theory is right, and what would count against it?",
-        "**Operationalise.** Turn each concept into something observable (an indicator), and state your **scope conditions**: where and when the argument is meant to hold. [[middle-range-theory|Middle-range theories]], about a specific mechanism, are often more useful than whole paradigms.",
+        "**Operationalize.** Turn each concept into something observable (an indicator), and state your **scope conditions**: where and when the argument is meant to hold. [[middle-range-theory|Middle-range theories]], about a specific mechanism, are often more useful than whole paradigms.",
         "**Return to theory in the conclusion**: what did your case show about it?"
       ]},
       {ex:"**Task:** Build a framework for a thesis puzzle: why did Solomon Islands (16 September 2019) and Kiribati (20 September 2019) switch diplomatic recognition from Taipei to Beijing in the same week, while Pacific neighbors such as Tuvalu, Palau and the Marshall Islands kept their ties at the time?\n1. First I choose rival theories that answer the puzzle differently, because a framework needs a contest. An inducement account (realist or economic): small states follow the larger offer of aid, trade and investment. A domestic-politics account (in the spirit of neoclassical realism): switches depend on governing coalitions and who gains at home. A constructivist account: switches depend on how leaders frame China and Taiwan in debates about development and sovereignty.\n2. Next I state what each expects, because each must predict something different. Inducement: switches follow concrete offers, whatever the domestic debate. Domestic politics: switches follow elections or coalition changes and are contested at home. Constructivist: officials’ language changes before the decision.\n3. Then I operationalize, because concepts need indicators: aid pledges and their timing; election dates, cabinet decisions and parliamentary debates; the words used in speeches and official reports.\n4. Then I set scope conditions, because I mustn’t claim too much: small Pacific states that recognized Taipei in the 2010s.\n5. Finally I plan the return to theory: the conclusion will say which expectations held, where, and why.\n**Result:** a framework section that names three mechanisms, lists what each predicts, gives indicators and a scope, and promises to compare the two states that switched with three that didn’t.\n**Common mistake:** a framework chapter that describes realism and constructivism in general and is never used again. If the analysis doesn’t test these expectations, the theory is decoration.", label:"Worked example: building a framework from a puzzle"},
@@ -596,7 +596,7 @@ ICA.addUnit({
       {t:"Pose a puzzle", why:"A puzzle (something surprising that needs explaining) comes first."},
       {t:"Choose rival theories that would explain it differently", why:"Rivals make the test fair."},
       {t:"State what each theory expects you to observe", why:"Expectations make evidence able to count."},
-      {t:"Turn concepts into indicators and state scope conditions", why:"Operationalisation makes the expectations checkable."},
+      {t:"Turn concepts into indicators and state scope conditions", why:"Operationalization makes the expectations checkable."},
       {t:"Gather and weigh the evidence", why:"Only now can the evidence speak."},
       {t:"Return to the theories in the conclusion", why:"A thesis should say what its case shows about theory."}
     ]},
@@ -687,7 +687,7 @@ ICA.addUnit({
      {t:"Mearsheimer’s offshore balancing; Glaser replied that conflict with a rising China is not inevitable", why:"Offshore balancing is about a distant power containing a rising one. Wei’s argument rests on East Asian historical hierarchy."}]},
    {id:"e4u2-cp12", lesson:"e4u2-l5", level:3, q:"Mina’s thesis asks why some Southeast Asian states balance against a rising power while others hedge. Which framework plan best follows the unit?", options:[
      {t:"Choose offensive realism because it is the most famous theory, then describe the cases", why:"A theory should be chosen for the puzzle, not for fame. One theory also can’t easily explain why states respond differently."},
-     {t:"Summarise every IR paradigm in the theory chapter to show breadth, and let the cases speak", why:"This is theory as decoration: a framework chapter that the cases never use. It also states no expectations."},
+     {t:"Summarize every IR paradigm in the theory chapter to show breadth, and let the cases speak", why:"This is theory as decoration: a framework chapter that the cases never use. It also states no expectations."},
      {t:"Set Walt’s balance of threat against Kuik’s idea of hedging, state what each predicts she should observe, set scope conditions, and return to both in the conclusion", ok:true, why:"Right. This combines Lesson 1’s theories with Lesson 5’s steps: choose for the puzzle, state expectations, operationalize with scope conditions, and return to theory at the end."},
      {t:"Avoid stating predictions, because expectations would bias the research", why:"The lesson asks you to state what you should observe if a theory is right and what would count against it. That makes the test honest, not biased."}]},
   ],
@@ -865,7 +865,7 @@ ICA.addUnit({
       "**The life cycle** (Finnemore and Sikkink, *International Organization*, 1998): emergence, driven by norm entrepreneurs’ persuasion; a tipping point, which they suggested rarely comes before about a third of states adopt the norm; a cascade, driven by socialization (legitimacy, conformity, esteem); and internalization, through professions, law and habit. Examples: women’s suffrage, the Red Cross, the 1997 landmines ban.",
       "**The boomerang pattern** (Keck and Sikkink, *Activists Beyond Borders*, 1998): blocked at home, activists work with foreign NGOs, states and IGOs, which pressure their government from outside.",
       "**The spiral model** of human rights change (Risse, Ropp and Sikkink, 1999): repression, denial, tactical concessions, prescriptive status, rule-consistent behavior.",
-      "**Localisation** (Acharya, *International Organization*, 2004): local actors reshape outside norms to fit local beliefs, as ASEAN did with ideas of common security."
+      "**Localization** (Acharya, *International Organization*, 2004): local actors reshape outside norms to fit local beliefs, as ASEAN did with ideas of common security."
      ],
      pro:[
       "Critiques and newer work: early norm research tended to study norms its authors approved of, giving it a progressive bias; later work studies norm contestation, regression and “bad” norms. Scholars also ask whether norms cause behavior or are invoked after the fact, which raises measurement problems (speeches versus practice).",
@@ -877,11 +877,11 @@ ICA.addUnit({
     read:[{book:"eirt", where:"Chapter 4 “Constructivism”"}],
     sources:[{t:"Finnemore and Sikkink, “International Norm Dynamics and Political Change”, International Organization 52(4), 1998 (DOI)", url:"https://doi.org/10.1162/002081898550789"},{t:"E-International Relations: International Relations Theory (open textbook)", url:"https://www.e-ir.org/p/international-relations-theory"},{t:"Convention on Cluster Munitions: Basic background information (updated April 2026)", url:"https://www.clusterconvention.org/wp-content/uploads/2026/04/Convention-on-Cluster-Munitions-Basic-Background-Information.pdf"},{t:"UN Treaty Collection: depositary notification C.N.347.2024 (Lithuania, withdrawal)", url:"https://treaties.un.org/doc/Publication/CN/2024/CN.347.2024-Eng.pdf"}], checked:"2026-11"},
 
-   {id:"securitization-theory", title:"Securitisation theory", aka:["Copenhagen School","securitization"], tags:["international relations","theory","security"],
+   {id:"securitization-theory", title:"Securitization theory", aka:["Copenhagen School","securitization"], tags:["international relations","theory","security"],
     summary:"The Copenhagen School theory that an issue becomes a security issue when an actor presents it as an existential threat and an audience accepts extraordinary measures. It was extended by the Paris School and its critics.",
     levels:{
      starter:[
-      "Some problems are handled through ordinary politics: debates, budgets, compromise. Others are treated as emergencies, where normal rules are set aside. Securitisation theory asks how an issue moves from the first group to the second.",
+      "Some problems are handled through ordinary politics: debates, budgets, compromise. Others are treated as emergencies, where normal rules are set aside. Securitization theory asks how an issue moves from the first group to the second.",
       "Its answer: someone with authority declares that something we value is under **existential threat**, and if the public or other key audience accepts this, extraordinary measures (emergency powers, secrecy, force) become acceptable.",
       {key:"Security is partly something that is said and accepted, not only something that is out there."},
       "The idea comes from scholars once based in Copenhagen, especially Barry Buzan and Ole Wæver."
@@ -890,7 +890,7 @@ ICA.addUnit({
       "**Core texts:** Ole Wæver, “Securitization and Desecuritization” (1995); Buzan, Wæver and de Wilde, *Security: A New Framework for Analysis* (1998).",
       "**Parts of the model:** a securitizing actor; a referent object said to be threatened; a securitizing move (the claim); an audience that accepts or rejects it; and extraordinary measures. Facilitating conditions include the speaker’s authority and features of the threat itself.",
       "**Sectors:** military, political, economic, societal (collective identity) and environmental, each with typical referent objects.",
-      "**Desecuritisation:** Wæver argued that it is often better to return issues to normal politics.",
+      "**Desecuritization:** Wæver argued that it is often better to return issues to normal politics.",
       "**Example:** in the 2018 Boe Declaration, Pacific Islands Forum leaders affirmed that climate change remains the single greatest threat to the livelihoods, security and wellbeing of Pacific peoples and adopted an expanded concept of security."
      ],
      pro:[
@@ -1062,9 +1062,9 @@ ICA.addUnit({
    {id:"norm-entrepreneur", term:"Norm entrepreneur", def:"A person or group that campaigns for a new standard of behavior, such as Henry Dunant for the Red Cross or the landmine ban campaigners.", codex:"norm-dynamics"},
    {id:"boomerang-pattern", term:"Boomerang pattern", def:"When activists blocked at home work with foreign allies, who pressure their government from outside (Keck and Sikkink, 1998).", codex:"norm-dynamics"},
    {id:"norm-localization", term:"Norm localization", def:"Local actors reshaping an outside norm to fit local beliefs and practices, as Acharya (2004) showed in Southeast Asia.", codex:"norm-dynamics"},
-   {id:"securitizing-move", term:"Securitising move", def:"A claim that something is existentially threatened and needs extraordinary measures; it becomes securitization only if an audience accepts it.", codex:"securitization-theory"},
+   {id:"securitizing-move", term:"Securitizing move", def:"A claim that something is existentially threatened and needs extraordinary measures; it becomes securitization only if an audience accepts it.", codex:"securitization-theory"},
    {id:"referent-object", term:"Referent object", def:"In securitization theory, the thing said to be threatened and in need of protection: a state, an economy, an identity, an ecosystem.", codex:"securitization-theory"},
-   {id:"desecuritization", term:"Desecuritisation", def:"Moving an issue out of emergency mode and back into ordinary political debate; Wæver argued this is often preferable.", codex:"securitization-theory"},
+   {id:"desecuritization", term:"Desecuritization", def:"Moving an issue out of emergency mode and back into ordinary political debate; Wæver argued this is often preferable.", codex:"securitization-theory"},
    {id:"world-society", term:"World society", def:"In the English School, shared identities, rules and institutions among people and non-state groups across the world, beyond states.", codex:"english-school"},
    {id:"primary-institutions", term:"Primary institutions", def:"Deep, evolved practices of international society such as sovereignty, diplomacy and international law, as opposed to secondary institutions like the UN (Buzan, 2004).", codex:"english-school"},
    {id:"solidarism", term:"Pluralism and solidarism (English School)", def:"Pluralists hold that international society should rest on coexistence and non-intervention; solidarists that shared values, such as protecting people from atrocities, can justify common action.", codex:"english-school"},
@@ -1111,7 +1111,7 @@ ICA.addUnit({
      {t:"Buck-passing", ok:true, why:"Correct. A is trying to get another state to bear the cost of balancing."},
      {t:"Bandwagoning", why:"Bandwagoning would mean joining the rising power, which A is not doing."},
      {t:"Internal balancing", why:"Internal balancing means building up its own strength, which A is avoiding."},
-     {t:"Desecuritisation", why:"That is a securitization theory term for returning an issue to normal politics."}
+     {t:"Desecuritization", why:"That is a securitization theory term for returning an issue to normal politics."}
    ]},
    {id:"e4u2-q05", lesson:"e4u2-l1", level:3, q:"Two rival states’ main weapons can be used equally for attack or defense, and attacking is cheaper than defending. A third state’s weapons are clearly defensive. Which pair is in the most dangerous of Jervis’s four worlds?", options:[
      {t:"The two rivals: attack has the edge and their forces cannot be told apart", ok:true, why:"Correct. Jervis called this combination doubly dangerous."},
@@ -1175,10 +1175,10 @@ ICA.addUnit({
      {t:"Wendt’s cultures of anarchy", why:"Wendt’s argument is about shared ideas, not market economies."}
    ]},
    {id:"e4u2-q15", lesson:"e4u2-l2", level:3, q:"A state whose firms dominate a key semiconductor technology restricts exports of it to a rival. Which idea best explains how this gives the state leverage?", options:[
-     {t:"Weaponised interdependence", ok:true, why:"Correct. Control of a hub in a global network creates a chokepoint. Farrell and Newman (2019) showed how network hubs become tools of coercion."},
+     {t:"Weaponized interdependence", ok:true, why:"Correct. Control of a hub in a global network creates a chokepoint. Farrell and Newman (2019) showed how network hubs become tools of coercion."},
      {t:"The democratic peace", why:"The democratic peace concerns war between democracies, not export controls."},
      {t:"The shadow of the future in repeated trade", why:"That concerns expectations of repeated cooperation, not leverage from controlling a hub."},
-     {t:"Norm localization", why:"Localisation is about adapting norms to local beliefs."}
+     {t:"Norm localization", why:"Localization is about adapting norms to local beliefs."}
    ]},
    {id:"e4u2-q16", lesson:"e4u2-l2", level:1, q:"Which three “legs” did Russett and Oneal’s *Triangulating Peace* (2001) link to peace?", options:[
      {t:"Democracy, economic interdependence and international organizations", ok:true, why:"Correct. They called it a Kantian peace after Kant’s three conditions."},
@@ -1225,21 +1225,21 @@ ICA.addUnit({
    ]},
    {id:"e4u2-q23", lesson:"e4u2-l3", level:3, q:"Fatima’s environmental group is ignored by its own government. It joins international NGOs, which persuade other governments and a UN body to raise the issue. Months later, her government responds. Which pattern is this?", options:[
      {t:"The boomerang pattern", ok:true, why:"Correct. Blocked at home, activists route pressure through foreign allies (Keck and Sikkink, 1998)."},
-     {t:"Norm localization", why:"Localisation is reshaping an outside norm to fit local beliefs."},
+     {t:"Norm localization", why:"Localization is reshaping an outside norm to fit local beliefs."},
      {t:"Offshore balancing", why:"That is a great-power military strategy."},
-     {t:"Desecuritisation", why:"Nothing here moves an issue out of emergency politics."}
+     {t:"Desecuritization", why:"Nothing here moves an issue out of emergency politics."}
    ]},
    {id:"e4u2-q24", lesson:"e4u2-l3", level:2, q:"Acharya (2004) showed that in the 1990s ASEAN members reshaped the idea of “common security” into the looser “cooperative security” of the ASEAN Regional Forum. What is this an example of?", options:[
      {t:"Norm localization", ok:true, why:"Correct. Local actors adapted an outside norm to fit their own beliefs and practices."},
      {t:"A norm cascade driven by Western pressure", why:"Acharya’s point was that local agency, not outside pressure, shaped the result."},
-     {t:"Securitisation", why:"Securitisation concerns framing threats as existential."},
+     {t:"Securitization", why:"Securitization concerns framing threats as existential."},
      {t:"Buck-passing", why:"Buck-passing is a realist idea about balancing."}
    ]},
    {id:"e4u2-q25", lesson:"e4u2-l3", level:2, q:"Which critique of securitization theory did Lene Hansen (2000) make?", options:[
      {t:"A speech-centered model silences those who cannot speak out", ok:true, why:"Correct. Some people cannot speak publicly about their insecurity. She called this “security as silence”: some insecurity, often gendered, cannot be voiced, or grows worse if it is."},
      {t:"Security can never be studied through language", why:"Hansen herself developed discourse methods for security studies."},
      {t:"Only military threats count as security", why:"She did not argue this; the Copenhagen School itself has five sectors."},
-     {t:"Securitisation only happens in authoritarian states, not democracies", why:"That is not her argument."}
+     {t:"Securitization only happens in authoritarian states, not democracies", why:"That is not her argument."}
    ]},
    {id:"e4u2-q26", lesson:"e4u2-l3", level:3, q:"A government argues that humanitarian intervention must never override sovereignty, because states disagree about values and intervention can mask self-interest. Which English School position is this?", options:[
      {t:"Pluralism", ok:true, why:"Correct. Pluralists defend coexistence among states with different values."},
@@ -1339,7 +1339,7 @@ ICA.addUnit({
      {t:"Keohane’s institutionalism", why:"Institutionalism is about cooperation through institutions."},
      {t:"Campbell’s *Writing Security*", why:"Campbell studied US identity and discourse."}
    ]},
-   {id:"e4u2-q42", lesson:"e4u2-l5", level:3, q:"Analysing the 1997–98 Asian financial crisis, Dmitri says: “The IMF’s conditions reflected the interests of Wall Street and the US Treasury, which pushed open capital markets.” Which reading is this?", options:[
+   {id:"e4u2-q42", lesson:"e4u2-l5", level:3, q:"Analyzing the 1997–98 Asian financial crisis, Dmitri says: “The IMF’s conditions reflected the interests of Wall Street and the US Treasury, which pushed open capital markets.” Which reading is this?", options:[
      {t:"A critical political-economy reading", ok:true, why:"Correct. It is like Wade and Veneroso’s “Wall Street–Treasury–IMF complex”, asking whose economic interests the rules served."},
      {t:"A constructivist reading about regional identity", why:"Dmitri’s point is about economic interests, not identity."},
      {t:"An English School reading about diplomacy", why:"Nothing here is about the shared institutions of a society of states."},

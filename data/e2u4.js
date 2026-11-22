@@ -4,12 +4,12 @@ ICA.addUnit({
   blurb:"The big structures every society builds to meet its needs (family, education, religion, government, the economy, health care and the media) and the forces that change them: population, aging, cities, the environment, technology, algorithms and AI, and social movements.",
   goals:[
     "Explain what a social institution is and how family and education shape life chances",
-    "Analyse religion, power and forms of government with Durkheim’s, Weber’s and Marx’s ideas, without taking sides",
+    "Analyze religion, power and forms of government with Durkheim’s, Weber’s and Marx’s ideas, without taking sides",
     "Compare economic systems, describe how work is changing, and explain why health is shaped by society",
     "Calculate simple population rates, read the demographic transition model critically, and explain urbanization and environmental justice",
     "Use the life-course perspective and dependency ratios to compare how societies handle aging, care and pensions",
     "Explain how media, technology and social movements change societies, using the main sociological theories",
-    "Analyse algorithms, platform work, surveillance and border technologies as social systems, presenting the debates fairly"
+    "Analyze algorithms, platform work, surveillance and border technologies as social systems, presenting the debates fairly"
   ],
   read:[
     {book:"soc", where:"Chapter 14 “Marriage and Family”, Chapter 15 “Religion”, Chapter 16 “Education”, Chapter 17 “Government and Politics”, Chapter 18 “Work and the Economy”, Chapter 19 “Health and Medicine”, Chapter 20 “Population, Urbanization, and the Environment”, Chapter 13 “Aging and the Elderly”, Chapter 21 “Social Movements and Social Change” and Chapter 8 “Media and Technology”", note:"Section numbers here follow the OpenStax website. The LibreTexts copy adds an “Introduction” page as x.1, so its section numbers are one higher (OpenStax 14.1 is LibreTexts 14.2). Many examples are from the United States; the lessons add examples from around the world."}
@@ -231,7 +231,7 @@ ICA.addUnit({
      "Compare capitalism, socialism and mixed economies without treating any as automatically good or bad",
      "Explain the informal economy, global commodity chains, deindustrialization and automation",
      "Explain why health is shaped by social conditions, using the social determinants of health",
-     "Analyse medicalization and global health inequalities through the sociological lenses"
+     "Analyze medicalization and global health inequalities through the sociological lenses"
    ],
    guide:true,
    learn:[
@@ -437,7 +437,7 @@ ICA.addUnit({
      "Explain the life-course perspective and how advantage and disadvantage build up over a lifetime",
      "Calculate dependency ratios from official figures and say what they hide",
      "Compare how Japan, East Asia, Europe, Latin America and sub-Saharan Africa share care and pensions between families, markets and the state",
-     "Recognise ageism and compare the main sociological theories of aging, with their critiques",
+     "Recognize ageism and compare the main sociological theories of aging, with their critiques",
      "Discuss relations between generations without stereotyping any of them"
    ],
    learn:[
@@ -548,7 +548,7 @@ ICA.addUnit({
     ]},
     {id:"e2u4-l6-x6", type:"sort", q:"WHO describes three forms of ageism. Which form does each example show?", buckets:["Institutional","Interpersonal","Self-directed"], items:[
       {t:"A hospital rule offers a treatment only to patients under 70, whatever their health.", b:0, why:"A rule built into an organization’s policy is institutional ageism."},
-      {t:"A salesclerk speaks slowly and loudly to Dmitri because he has gray hair.", b:1, why:"Patronising treatment in a face-to-face encounter is interpersonal ageism."},
+      {t:"A salesclerk speaks slowly and loudly to Dmitri because he has gray hair.", b:1, why:"Patronizing treatment in a face-to-face encounter is interpersonal ageism."},
       {t:"Priya, 66, doesn’t apply for a course because she believes she is too old to learn.", b:2, why:"Applying an age stereotype to yourself is self-directed ageism."},
       {t:"A job advertisement says applicants must be aged 25–35.", b:0, why:"An age limit written into hiring rules is institutional."},
       {t:"Colleagues ignore a 23-year-old’s ideas because “young people have no experience”.", b:1, why:"Ageism can target the young too. This happens in everyday interaction: interpersonal."},
@@ -576,7 +576,7 @@ ICA.addUnit({
   {id:"e2u4-l5", title:"Media, technology and social change", minutes:60,
    hook:{q:"A social movement that once filled the streets has gone quiet. What can you safely conclude?", options:["It has failed","Its supporters lost interest","Not much yet: fading can also follow success","The government must have banned it"], answer:2, reveal:"**Not much yet.** Movements pass through typical stages, and the last one, decline, can mean the goal was won. This lesson explains how [[social-movement|social movements]] rise and what helps them succeed. It also shows how media and technology shape what a society treats as important."},
    goals:[
-     "Analyse media and technology through the main sociological lenses",
+     "Analyze media and technology through the main sociological lenses",
      "Explain gatekeeping, media consolidation and the digital divide, with current figures",
      "Classify social movements by type and stage, and explain why they rise using resource mobilization, framing and new social movement theory",
      "Explain the main causes and theories of social change"
@@ -670,7 +670,7 @@ ICA.addUnit({
    apply:{intro:"Look at the media you use and the movements around you. Observe, read and reflect; you don’t need to join or oppose anything.", tasks:[
      {t:"Audit your media diet", how:["For two days, note every source of news or information you use: apps, websites, broadcasters, social feeds, group chats.","For each, find out who owns it (look for an “About” page) and whether a person or an algorithm chose what you saw.","Count how many different owners you rely on.","Reflect: where are the gatekeepers in your information diet?"], write:"Sources, owners, human or algorithm, what I notice…"},
      {t:"Compare three front pages", how:["On the same day, open the home pages of three news outlets, including at least one from another country and one public service broadcaster if available.","Note the top three stories on each.","Which stories appear everywhere, and which only on one? How is the same story framed differently (headline words, photos, who is quoted)?","Write what this shows about gatekeeping and agenda-setting."], write:"Outlets, top stories, differences in framing…"},
-     {t:"Analyse one social movement", how:["Choose any movement, past or present, from your region or one you have read about.","Classify it with Aberle’s types and place it in the life cycle.","Identify its resources (money, people, organizations, networks) and its diagnostic, prognostic and motivational frames, using its own published materials.","Describe it fairly, in the terms its supporters use, and note what its critics argue."], write:"Movement, type, stage, resources, frames, what critics say…"}
+     {t:"Analyze one social movement", how:["Choose any movement, past or present, from your region or one you have read about.","Classify it with Aberle’s types and place it in the life cycle.","Identify its resources (money, people, organizations, networks) and its diagnostic, prognostic and motivational frames, using its own published materials.","Describe it fairly, in the terms its supporters use, and note what its critics argue."], write:"Movement, type, stage, resources, frames, what critics say…"}
    ], proof:"Notes with a two-day media audit naming owners and gatekeepers, a three-outlet comparison of framing, and a balanced analysis of one social movement by type, stage, resources and frames."},
    read:[
      {book:"soc", where:"Chapter 8 “Media and Technology”: Sections 8.1 “Technology Today” (for the digital divide), 8.2 “Media and Technology in Society”, 8.3 “Global Implications of Media and Technology” and 8.4 “Theoretical Perspectives on Media and Technology”"},
@@ -682,7 +682,7 @@ ICA.addUnit({
    hook:{q:"In 2020 the UK Home Office stopped using an algorithm that sorted visa applications into red, amber and green. What led to the pause?", options:["A legal challenge arguing it discriminated by nationality","A cyber-attack that leaked applicants’ personal data","A new law banning computers in visa decisions","Complaints that it approved applications too slowly"], answer:0, reveal:"**A legal challenge.** The Joint Council for the Welfare of Immigrants, with the campaign group Foxglove, argued that the “streaming tool” used nationality and fed on its own past decisions. In August 2020 the Home Office agreed to stop using it pending a redesign, while denying that it discriminated. Sociologists study cases like this to ask who designs automated systems, whose data they learn from, and who can challenge them. This lesson applies those questions to welfare, work, surveillance and borders."},
    goals:[
      "Explain why sociologists treat algorithms and AI as social systems: goals, data, institutions and feedback loops",
-     "Analyse cases of biased automated decisions from several regions, and explain why fairness definitions can conflict",
+     "Analyze cases of biased automated decisions from several regions, and explain why fairness definitions can conflict",
      "Describe platform labor and algorithmic management, and the 2024 EU and 2026 ILO rules",
      "Compare sociological views of surveillance, from the panopticon to surveillance capitalism",
      "Describe border technologies (biometrics, travel authorizations, risk scoring) and give the main arguments for and against them, attributed"
@@ -1308,7 +1308,7 @@ ICA.addUnit({
       {tip:"Urban statistics depend on definitions. Under countries’ own definitions, the UN reported about 55% of people as urban in 2018; the 2025 method separates cities from towns, so the numbers aren’t directly comparable."}
      ],
      builder:[
-      "The UN’s *World Urbanization Prospects 2025* used the **Degree of Urbanisation** method for the first time, classifying places as cities, towns or rural areas on a common grid. It counted 33 megacities (10 million or more) in 2025, up from 8 in 1975, 19 of them in Asia, and projected that two-thirds of population growth to 2050 will be in cities.",
+      "The UN’s *World Urbanization Prospects 2025* used the **Degree of Urbanization** method for the first time, classifying places as cities, towns or rural areas on a common grid. It counted 33 megacities (10 million or more) in 2025, up from 8 in 1975, 19 of them in Asia, and projected that two-thirds of population growth to 2050 will be in cities.",
       "Classic models: the Chicago School’s **human ecology** treated the city like an ecosystem; Ernest Burgess’s **concentric zone model** (1925) pictured rings from a central business district outwards. Conflict theorists argue that landowners, developers and officials shape growth to benefit the better-off.",
       "Suburbs differ by region: in the post-1945 United States they were often middle-class and, through discriminatory lending, mostly White; around Paris, many *banlieues* are poorer than the center; around many fast-growing cities in Africa, Asia and Latin America, gated estates and informal settlements both spread at the edge.",
       "Ruth Glass coined “gentrification” in 1964, describing London districts where the process continued “until all or most of the original working class occupiers are displaced”."
@@ -1439,7 +1439,7 @@ ICA.addUnit({
       "Frame alignment (Snow and colleagues, 1986) has four processes: bridging (linking to sympathetic but unorganized people), amplification (stressing values people already hold), extension (broadening goals to attract new groups) and transformation (changing old meanings).",
       "Digital media lower the costs of coordination. Analyses of the Arab Spring (2010–2011) debated how much social media mattered. Malcolm Gladwell (2010) argued online ties are weak; Zeynep Tufekci (*Twitter and Tear Gas*, 2017) argued that networked movements scale fast but may lack the decision-making capacity built by slower organizing.",
       "OpenStax also covers **collective behavior** (crowds, masses and publics) and theories such as emergent-norm and value-added theory, which explain less organized action.",
-      {tip:"Analyse movements even-handedly: describe their goals in supporters’ own terms, then state critics’ main arguments. Classification by type or stage isn’t a judgment of whether the cause is right."}
+      {tip:"Analyze movements even-handedly: describe their goals in supporters’ own terms, then state critics’ main arguments. Classification by type or stage isn’t a judgment of whether the cause is right."}
      ]
     },
     related:["social-change","media-technology","political-systems","environmental-sociology"],
@@ -1468,7 +1468,7 @@ ICA.addUnit({
      pro:[
       "Modernization theory (1950s–60s) expected poorer countries to follow the path of industrialized ones; dependency and world-systems theorists argued that global inequality itself blocks that path (see {{theories-global-inequality}}). Today many scholars speak of “multiple modernities”: societies modernize in different ways, combining new technology with distinct institutions and values.",
       "OpenStax also flags modernization’s mixed promises: labor-saving technology hasn’t reduced housework time much over fifty years, constant connectivity raises expectations that workers are always available, and more information doesn’t guarantee better information.",
-      "Analysing change well means tracing mechanisms across institutions and scales: a new technology changes work, which changes family timing, which changes fertility, which changes population structure and politics. Hurricane Katrina in 2005, used by OpenStax as a case study, showed technology, institutions, population and environment interacting in one disaster.",
+      "Analyzing change well means tracing mechanisms across institutions and scales: a new technology changes work, which changes family timing, which changes fertility, which changes population structure and politics. Hurricane Katrina in 2005, used by OpenStax as a case study, showed technology, institutions, population and environment interacting in one disaster.",
       {tip:"Be wary of single-cause stories (“the internet caused X”). Look for the institutions, resources and people that turned a possibility into a change."}
      ]
     },

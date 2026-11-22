@@ -7,7 +7,7 @@ ICA.addUnit({
     "Write and test clear, neutral questions with fair answer options",
     "Design and analyze Likert-type rating questions correctly",
     "Explain sampling frames, response rates, nonresponse bias and the margin of error, and calculate them",
-    "Summarise survey results honestly with frequency tables, averages, standard deviation and cross-tabs"
+    "Summarize survey results honestly with frequency tables, averages, standard deviation and cross-tabs"
   ],
   read:[
     {book:"bhatt", where:"Chapter 9, “Survey Research”", note:"The book is from 2012: it predates smartphone-first web surveys and the EU’s GDPR (2018), so the lessons add current tools and privacy rules."},
@@ -138,7 +138,7 @@ ICA.addUnit({
   {id:"t4u8-l2", title:"Writing and testing questions", minutes:60,
    hook:{q:"People are asked about a sensitive habit, such as how much alcohol they drink. In which situation do they, on average, report the least flattering (and usually more accurate) answers?", options:["Face to face with an interviewer","On the phone with an interviewer","Filling in a web form on their own","It makes no difference"], answer:2, reveal:"**Filling in a form on their own.** Survey research consistently finds more “socially desirable” answers when an interviewer is present: people understate things like drinking and drug use and overstate things like voting and giving to charity. Self-completed web and paper forms reduce this. Wording can help too, and this lesson shows how, along with the other ways a question can quietly steer or confuse people."},
    goals:[
-     "Recognise and fix leading, loaded, double-barrelled, double-negative and assumption-laden questions",
+     "Recognize and fix leading, loaded, double-barrelled, double-negative and assumption-laden questions",
      "Write answer options that are balanced, exhaustive and don’t overlap",
      "Decide when to offer “Don’t know” and “Prefer not to say”",
      "Handle memory problems and sensitive topics",
@@ -510,10 +510,10 @@ ICA.addUnit({
    ]
   },
   /* ===================== LESSON 5 ===================== */
-  {id:"t4u8-l5", title:"Summarising results honestly", minutes:60,
+  {id:"t4u8-l5", title:"Summarizing results honestly", minutes:60,
    hook:{q:"Nine volunteers report how many hours they helped last month: 2, 3, 3, 4, 5, 5, 5, 6 and 30. What is the mean (the usual “average”)?", options:["4.5 hours","5 hours","7 hours","30 hours"], answer:2, reveal:"**7 hours** (63 ÷ 9). Yet eight of the nine volunteers gave 6 hours or fewer: one very committed person pulls the mean up. The **median**, the middle value, is 5 hours, which describes the typical volunteer much better. Choosing the right summary, and the right denominator for percentages, is how survey results stay honest. That’s this lesson."},
    goals:[
-     "Organise responses into a tidy table and build a frequency table",
+     "Organize responses into a tidy table and build a frequency table",
      "Choose between percentages of all respondents and valid percentages, and say which you used",
      "Choose the mean, median or mode to fit the data, and calculate a standard deviation",
      "Build and read a cross-tab with the right percentages",
@@ -578,7 +578,7 @@ ICA.addUnit({
         "**Flattering groupings.** Combining the top three of five options into “positive”, or dropping the neutral middle.",
         "**A mean hiding a split.** A mean of 3 on a five-point item can be everyone neutral, or half at each extreme.",
         "**Ignoring the margin of error.** Reporting a 2-point “rise” when each figure is ±4.",
-        "**Generalising from a convenience sample** to “people in this country”.",
+        "**Generalizing from a convenience sample** to “people in this country”.",
         "**Cherry-picking** the questions that support the conclusion, and leaving out the rest.",
         "**Charts that exaggerate** small differences with a cut-off axis (see {{choosing-charts}})."
       ]},
@@ -777,14 +777,14 @@ ICA.addUnit({
      builder:[
       "**Be specific about time and units**: “In the past 7 days, on how many days…” beats “How often do you…”. Short, recent reference periods reduce forgetting and **telescoping** (pulling older events into the period).",
       "**Ask directly rather than agree–disagree.** Agree–disagree items invite [[acquiescence-bias|acquiescence bias]]. “How stressful is your commute?” (Not at all … Extremely) usually works better than “Agree or disagree: My commute is stressful.”",
-      "**Order effects in lists**: in visual lists people favor early options; in spoken lists, later ones. Randomise the order of unordered lists; never of rating scales.",
+      "**Order effects in lists**: in visual lists people favor early options; in spoken lists, later ones. Randomize the order of unordered lists; never of rating scales.",
       "**“Don’t know” and “Prefer not to say”.** “Don’t know” is honest for factual questions some people can’t answer. For opinions, research reviewed by Krosnick and Presser found it doesn’t reliably improve data quality and can become an easy exit. “Prefer not to say” respects people’s right to decline personal questions. Keep these options visually separate from scales and as separate codes in the data.",
       "**Sensitive questions**: use self-completion, ranges, face-saving wording, explain why you ask, and place them later. This reduces [[social-desirability-bias|social desirability bias]].",
       "**Filter questions** prevent assumptions: ask “Do you have a car?” before asking how often people drive it, and use skip logic so others don’t see the follow-up. Where you can’t list every possibility, add “Other (please specify)” and read those answers: if many people write the same thing, it deserves its own option next time."
      ],
      pro:[
       "Krosnick and Presser (2010) found the conventional rules of thumb largely supported by experiments, and added evidence-based refinements: fully label rating points; prefer construct-specific questions to agree–disagree, yes–no or true–false formats (acquiescence averages around 10% in their review); be wary of reversed items as a fix for acquiescence; and use decomposition, landmarks and bounded recall for behavioral frequency questions. They also note that people should not have to do calculations the researcher can do.",
-      "For sensitive behaviors, the evidence favors self-administered modes (web, paper, audio computer-assisted) over interviewers. Specialised techniques such as the **randomized response technique** and the **item count (list) technique** give individual privacy by design, at the cost of statistical precision.",
+      "For sensitive behaviors, the evidence favors self-administered modes (web, paper, audio computer-assisted) over interviewers. Specialized techniques such as the **randomized response technique** and the **item count (list) technique** give individual privacy by design, at the cost of statistical precision.",
       "**Cross-cultural and translated surveys** need more than translation: concepts, examples and response scales may not carry the same meaning. Teams commonly use structured approaches such as team translation with review and adjudication, followed by cognitive testing in each language.",
       "**Check-all-that-apply versus forced choice**: when people check options in a long list, they may stop reading carefully; asking yes/no for each option takes longer but forces a decision on each.",
       "Wording effects can be large. Pew Research Center reports question-wording and context experiments with differences of 10 percentage points or more, so publish exact wording with every result."
@@ -906,7 +906,7 @@ ICA.addUnit({
      pro:[
       "**Offline and field collection.** KoboToolbox forms can be completed offline in the KoboCollect Android app, or in web forms that cache in the browser once opened online, with submissions sent when a connection returns. Its documentation says data on both servers is stored with Amazon Web Services.",
       "**Self-hosting.** Installing LimeSurvey Community Edition (GNU GPL v2 or later) on your institution’s server keeps data in-house and removes response limits, but makes you responsible for security, backups and updates.",
-      "**Organisational accounts.** Work or school Microsoft 365 and Google Workspace accounts follow the organization’s settings, may restrict responses to people inside it (which records identity), and may store data in specific regions under the organization’s contract. Ask your IT or research office which tools are approved for personal or sensitive data.",
+      "**Organizational accounts.** Work or school Microsoft 365 and Google Workspace accounts follow the organization’s settings, may restrict responses to people inside it (which records identity), and may store data in specific regions under the organization’s contract. Ask your IT or research office which tools are approved for personal or sensitive data.",
       "**Linked data.** Responses often flow into a spreadsheet or cloud folder whose sharing settings differ from the form’s. Check both, and remember collaborators and anyone with a results link.",
       "**Retention.** Decide in advance how long raw responses are kept, where de-identified copies live, and how deletion is done; data-protection laws generally require you not to keep personal data longer than necessary.",
       "**Microsoft Forms limits** (per Microsoft’s support page): up to 200 responses per form for free personal accounts, 1,000 for paid personal accounts, and far more for work and school accounts; limits change, so check before planning a large survey."
@@ -1181,7 +1181,7 @@ ICA.addUnit({
      {t:"Show each department’s full distribution, not just the mean", ok:true, why:"Identical means hide a united group and a split one. The distribution is the honest summary for ordinal ratings; the mean alone hides the difference."},
      {t:"Report that the departments are identical", why:"They are very different: one is neutral, the other is polarized."},
      {t:"Report only the medians, which will show the difference clearly", why:"Both medians are 3 here too, so they also hide the split."},
-     {t:"Drop Department B as an outlier", why:"Polarised answers are a real finding, not an error."}
+     {t:"Drop Department B as an outlier", why:"Polarized answers are a real finding, not an error."}
    ]},
    {id:"t4u8-q25", lesson:"t4u8-l3", level:2, q:"What does the evidence say about removing the neutral midpoint from a rating scale?", options:[
      {t:"It pushes genuinely neutral people to one side, which can reduce accuracy", ok:true, why:"Krosnick and Presser report this and cite studies finding midpoints improved reliability and validity."},

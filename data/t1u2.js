@@ -17,19 +17,19 @@ ICA.addUnit({
   lessons:[
   /* ───────────────────────── LESSON 1 ───────────────────────── */
   {id:"t1u2-l1", title:"Files and file types", minutes:50,
-   hook:{q:"You email someone the original photo of your new bike, straight from your phone. Apart from the picture, what might the file quietly carry with it?", options:["Nothing: a photo file is just the picture","The place where the photo was taken","Your phone’s passcode","Your list of contacts"], answer:1, reveal:"Possibly **the place it was taken**. Every file is more than its content: it has a name and [[metadata]], data about the data, and a phone photo’s metadata often records the date, the camera and sometimes the GPS location. This lesson opens up the three parts of a file and shows what the bit after the dot really does."},
+   hook:{q:"You email someone the original photo of your new bike, straight from your phone. Apart from the picture, what might the file quietly carry with it?", options:["Nothing: a photo file is just the picture","The place where the photo was taken","Your phone’s passcode","Your list of contacts"], answer:1, reveal:"Possibly **the place it was taken**. Every file is more than its content. It has a name and [[metadata]], which is data about the data. A phone photo’s metadata often records the date, the camera and sometimes the GPS location. This lesson opens up the three parts of a file. It also shows what the part after the dot really does."},
    goals:["Describe a file as data plus a name plus metadata","Show file extensions on your own device and read them","Pick the right format to send, and know why renaming doesn’t convert","Zip and unzip files, and know when zipping helps"],
    learn:[
     {h:"What a file really is", body:[
       {lead:"Everything you keep on a computer or phone — a photo, a letter, a song, a spreadsheet — is stored as a **file**."},
-      "Think of a file as a sealed envelope in a filing cabinet. Inside the envelope is the content. On the outside is a label with its name, and a few notes stamped on by the post office: when it was made, when it was last changed, how heavy it is. You can read the outside without opening the envelope.",
+      "Think of a file as a sealed envelope in a filing cabinet. Inside the envelope is the content. On the outside is a label with its name. The post office has also stamped a few notes on the outside: when it was made, when it was last changed, how heavy it is. You can read the outside without opening the envelope.",
       "The precise version: a [[file]] is a named collection of data kept on [[storage]] (an [[ssd]], hard drive, memory card or USB stick). It has three parts:",
       {list:[
         "**The data** — the content itself, stored as bytes (the ones and zeros explained in {{bits-bytes}}). A 3 MB photo is about 3 million bytes of color information.",
         "**The name** — what people see in a folder, such as `garden-club-minutes.docx`. The last part after the final dot is the **extension**.",
         "**The [[metadata]]** — data *about* the data: size, date created, date modified, who owns it, and often more. A phone photo usually also records the camera model and sometimes the location where it was taken."
       ]},
-      {fig:'<svg viewBox="0 0 340 312"><rect class="d-panel" x="5.7" y="6" width="328.7" height="298" rx="12" stroke-width="2"/><text x="170" y="30" text-anchor="middle">One file = name + data + metadata</text><rect class="d-lup" x="37.8" y="44" width="188.9" height="40" rx="8" stroke-width="2"/><text x="132.2" y="69" text-anchor="middle">vacation-beach</text><rect class="d-gold" x="226.7" y="44" width="75.6" height="40" rx="8" stroke-width="2"/><text x="264.4" y="69" text-anchor="middle">.jpg</text><text class="s" x="132.2" y="102" text-anchor="middle">name you choose</text><text class="s" x="264.4" y="102" text-anchor="middle">extension = type</text><rect class="d-sage" x="20.8" y="116" width="298.4" height="56" rx="8" stroke-width="2"/><text x="170" y="140" text-anchor="middle">Data: about 3 million bytes</text><text class="s" x="170" y="160" text-anchor="middle">the picture itself, as numbers</text><rect class="d-rose" x="20.8" y="184" width="298.4" height="106" rx="8" stroke-width="2"/><text x="170" y="206" text-anchor="middle">Metadata</text><text class="s" x="35.9" y="230">Size: 3 MB</text><text class="s" x="35.9" y="252">Created: 2026-07-14</text><text class="s" x="35.9" y="274">Modified: 2026-07-15</text><text class="s" x="188.9" y="230">Camera: phone</text><text class="s" x="188.9" y="252">Location: maybe!</text></svg>', alt:"A file drawn as three parts: a name made of “vacation-beach” plus the extension “.jpg”; the data, about 3 million bytes of picture; and metadata listing size, created and modified dates, camera and possibly location.", cap:"The name and metadata travel with the data. Metadata can reveal more than you expect, such as where a photo was taken."},
+      {fig:'<svg viewBox="0 0 340 312"><rect class="d-panel" x="5.7" y="6" width="328.7" height="298" rx="12" stroke-width="2"/><text x="170" y="30" text-anchor="middle">One file = name + data + metadata</text><rect class="d-lup" x="37.8" y="44" width="188.9" height="40" rx="8" stroke-width="2"/><text x="132.2" y="69" text-anchor="middle">vacation-beach</text><rect class="d-gold" x="226.7" y="44" width="75.6" height="40" rx="8" stroke-width="2"/><text x="264.4" y="69" text-anchor="middle">.jpg</text><text class="s" x="132.2" y="102" text-anchor="middle">name you choose</text><text class="s" x="264.4" y="102" text-anchor="middle">extension = type</text><rect class="d-sage" x="20.8" y="116" width="298.4" height="56" rx="8" stroke-width="2"/><text x="170" y="140" text-anchor="middle">Data: about 3 million bytes</text><text class="s" x="170" y="160" text-anchor="middle">the picture itself, as numbers</text><rect class="d-rose" x="20.8" y="184" width="298.4" height="106" rx="8" stroke-width="2"/><text x="170" y="206" text-anchor="middle">Metadata</text><text class="s" x="35.9" y="230">Size: 3 MB</text><text class="s" x="35.9" y="252">Created: 2026-07-14</text><text class="s" x="35.9" y="274">Modified: 2026-07-15</text><text class="s" x="188.9" y="230">Camera: phone</text><text class="s" x="188.9" y="252">Location: maybe!</text></svg>', alt:"A file drawn as three parts. Part one is a name made of “vacation-beach” plus the extension “.jpg”. Part two is the data, about 3 million bytes of picture. Part three is metadata that lists size, created and modified dates, camera and possibly location.", cap:"The name and metadata travel with the data. Metadata can reveal more than you expect, such as where a photo was taken."},
       {warn:"Photo metadata can include the GPS location where it was taken. Many social sites remove it when you post, but sending the original file by email or chat may keep it. Phones let you turn location off for the camera or remove it when sharing; the menu differs by phone."},
       {key:"A file is not “the picture” or “the document” — it is data with a name and some labels. Understanding those three parts explains almost everything else in this unit."}
     ]},
@@ -59,7 +59,7 @@ ICA.addUnit({
         [".csv","Comma-separated values: a table stored as plain text","Any spreadsheet app or text editor"],
         [".jpg / .jpeg","A photo, compressed to be small (some quality is thrown away)","Every device and browser"],
         [".png","An image that keeps every pixel exactly; good for screenshots and logos","Every device and browser"],
-        [".heic","Apple’s space-saving photo format (HEIF), the iPhone default","Apple devices; recent Windows and Android with support added; many websites convert it"],
+        [".heic","Apple’s space-saving photo format (HEIF), the iPhone default","Apple devices; recent Windows and Android (support was added); many websites convert it"],
         [".mp4","A video","Every phone, computer and browser"],
         [".zip","A container holding one or more files, usually compressed","Built into Windows, macOS, ChromeOS and most phones"]
       ]},
@@ -70,12 +70,12 @@ ICA.addUnit({
     {h:"Open and proprietary formats", body:[
       "Formats differ in who controls the rules.",
       {list:[
-        "An [[open-format]] has a published specification anyone may read and build software for, without asking permission. Plain text, CSV, PNG, the OpenDocument formats (`.odt`, `.ods`) and PDF (an international standard, ISO 32000) are examples.",
+        "An [[open-format]] has a published specification. Anyone may read it and build software for it, without asking permission. Examples are plain text, CSV, PNG, the OpenDocument formats (`.odt`, `.ods`) and PDF (an international standard, ISO 32000).",
         "A [[proprietary-format]] is controlled by one company, which may not publish full details. Files made by some single-company apps, such as Apple Pages’ `.pages` files, are hard to open properly anywhere else."
       ]},
-      "Reality is more mixed than two boxes. The `.docx`, `.xlsx` and `.pptx` formats were created by Microsoft, but they have been published as an international standard (ISO/IEC 29500) since 2008, which is why other apps can open them. Even so, complex layouts can look slightly different in different programs.",
+      "Reality is more mixed than two boxes. Microsoft created the `.docx`, `.xlsx` and `.pptx` formats. But they have been published as an international standard (ISO/IEC 29500) since 2008, which is why other apps can open them. Even so, complex layouts can look slightly different in different programs.",
       {key:"For anything you want to open in 10 or 20 years, or share with people whose software you don’t know, prefer widely supported, openly documented formats: PDF for finished documents, CSV or plain text for simple data, PNG or JPEG for images."},
-      "That is why research archives and libraries ask for non-proprietary formats: the file must stay readable after the app that made it is gone."
+      "That is why research archives and libraries ask for non-proprietary formats. The file must stay readable after the app that made it is gone."
     ]},
     {h:"PDF or editable file? Choosing what to send", body:[
       "A [[pdf]] is like a printed page in digital form: it looks the same on every device, fonts and layout included, and it is awkward to change. An editable file (`.docx`, `.xlsx`, `.pptx`, or a shared online document) is like handing over your working draft.",
@@ -161,7 +161,7 @@ ICA.addUnit({
       {t:"They are converted into a PDF inside the CSV", why:"A CSV is just text with commas. It can’t contain a PDF or anything else."},
       {t:"They are kept only if the file is zipped", why:"Zipping wraps a file without changing what’s in it. Lost formulas stay lost."}
     ]},
-      {id:"t1u2-l1-x8", type:"explain", q:"A website accepts only JPG images. Daniel renames `photo.heic` to `photo.jpg` and uploads it, but it won’t open. Explain why renaming didn’t work and what he should do instead.", hint:"What is the difference between a file’s extension and its format?", model:"The extension is only a label at the end of the file’s name. The format is how the data inside is actually arranged. Renaming changes the label but not the data, so the file is still HEIC data wearing a JPG label, and software expecting JPEG can’t read it. To convert, an app has to read the data and write it out again in the new format: for example, open the photo in Preview or Photos and use Export or Save As to save a JPEG copy.", points:["Says the extension is just a label in the name", "Says the data inside is still HEIC", "Explains that converting means an app rewrites the data in the new format", "Names a way to convert, such as Export or Save As"]}
+      {id:"t1u2-l1-x8", type:"explain", q:"A website accepts only JPG images. Daniel renames `photo.heic` to `photo.jpg` and uploads it, but it won’t open. Explain why renaming didn’t work and what he should do instead.", hint:"What is the difference between a file’s extension and its format?", model:"The extension is only a label at the end of the file’s name. The format is how the data inside is actually arranged. Renaming changes the label but not the data. So the file is still HEIC data with a JPG label, and software that expects JPEG can’t read it. To convert, an app has to read the data and write it out again in the new format. For example, open the photo in Preview or Photos and use Export or Save As to save a JPEG copy.", points:["Says the extension is just a label in the name", "Says the data inside is still HEIC", "Explains that converting means an app rewrites the data in the new format", "Names a way to convert, such as Export or Save As"]}
    ],
    apply:{intro:"Make your device show you the truth about your files.", tasks:[
     {t:"Turn on file name extensions", how:{
@@ -180,7 +180,7 @@ ICA.addUnit({
   },
   /* ───────────────────────── LESSON 2 ───────────────────────── */
   {id:"t1u2-l2", title:"Folders and paths", minutes:50,
-   hook:{q:"Dragging a file with the mouse sometimes moves it and sometimes copies it. How can you tell which will happen before you let go?", options:["You can’t: you find out afterwards","From the small label next to the pointer as you drag","From the file’s size","From the color of the file’s icon"], answer:1, reveal:"**From the small label next to the pointer.** While you drag, it says something like “Move to Documents” or “Copy to …” (on a Mac, a green plus sign means copy). Which one you get depends on where you drop the file, and this lesson explains that rule, along with the folder tree, paths and the habits that stop files going missing."},
+   hook:{q:"Dragging a file with the mouse sometimes moves it and sometimes copies it. How can you tell which will happen before you let go?", options:["You can’t: you find out afterwards","From the small label next to the pointer as you drag","From the file’s size","From the color of the file’s icon"], answer:1, reveal:"**From the small label next to the pointer.** While you drag, it says something like “Move to Documents” or “Copy to …” (on a Mac, a green plus sign means copy). Which one you get depends on where you drop the file. This lesson explains that rule. It also covers the folder tree, paths and the habits that stop files going missing."},
    goals:["Picture your storage as a folder tree and find your home folder","Read and copy a path on Windows, macOS and ChromeOS","Move or copy on purpose, including between drives","Find lost files with search and recover them from the Recycle Bin or Trash"],
    learn:[
     {h:"The folder tree", body:[
@@ -212,7 +212,7 @@ ICA.addUnit({
       ]},
       "Notice three things. Windows starts with a drive letter; the others start at `/`. Windows uses backslashes; everything else, including web addresses, uses forward slashes. And because slashes separate folders, you can’t use them inside a file name. Windows also refuses `: * ? \" < > |` in names.",
       {ex:"Path: `/Users/kenji/Documents/Shop/2026/invoices/2026-03-04_invoice_0147.pdf`\nRead it as: start at the top → Users → kenji’s home → Documents → Shop → 2026 → invoices → the file.", label:"Worked example: reading a path"},
-      "Why bother with paths? Because sometimes you must tell another person, or a program, exactly where something is: “it’s in Documents” is vague if there are three Documents folders (one on the computer, one in OneDrive, one on a USB stick).",
+      "Why bother with paths? Sometimes you must tell another person, or a program, exactly where something is. “It’s in Documents” is vague if there are three Documents folders (one on the computer, one in OneDrive, one on a USB stick).",
       {list:[
         "**Windows:** right-click a file → **Copy as path**. The address bar also shows the path when you click into it.",
         "**macOS:** in Finder choose **View → Show Path Bar** to see the route along the bottom. To copy it, Control-click the file, hold [[kbd:Option]], and choose **Copy … as Pathname**.",
@@ -240,11 +240,11 @@ ICA.addUnit({
         "Drag to a **different drive** (a USB stick, external drive, memory card) → the file is **copied**; the original stays put.",
         "On Windows, hold [[kbd:Ctrl]] while dragging to force a copy, or [[kbd:Shift]] to force a move. On a Mac, hold [[kbd:Option]] to force a copy, or [[kbd:Cmd]] to move to another drive."
       ]},
-      "The little label next to the pointer while you drag (“Move to Documents” or “Copy to USB drive”, or a green plus sign on a Mac) tells you which will happen before you let go.",
+      "While you drag, a little label appears next to the pointer. It says “Move to Documents” or “Copy to USB drive”, or it shows a green plus sign on a Mac. This tells you which will happen before you let go.",
       {warn:"Copying files to a USB stick and then deleting them from the computer leaves only one copy, on the stick — the most easily lost object you own. Copying is not the same as backing up unless at least two copies remain (Lesson 5)."}
     ]},
     {h:"Shortcuts and aliases", body:[
-      "A [[shortcut]] (Windows and ChromeOS term) or **alias** (Mac term) is a small pointer file that opens something stored elsewhere — like a sign saying “the cups are in the kitchen”, not the cups themselves.",
+      "A [[shortcut]] (the Windows and ChromeOS term) or **alias** (the Mac term) is a small pointer file that opens something stored elsewhere. It is like a sign saying “the cups are in the kitchen”. It is not the cups themselves.",
       {list:[
         "Deleting the shortcut leaves the real file untouched.",
         "Deleting or moving the real file can break the shortcut. (Mac aliases often follow a moved file; Windows shortcuts may not.)",
@@ -322,7 +322,7 @@ ICA.addUnit({
       {t:"A shortcut to the photos", why:"The Recycle Bin holds deleted files, not shortcuts to them."},
       {t:"The photos, but only for 24 hours after they were deleted", why:"There’s no 24-hour rule here; they never went to the bin at all."}
     ]},
-      {id:"t1u2-l2-x8", type:"explain", q:"A colleague says “the file’s in Documents”, but you can’t find it. Explain why that isn’t enough, and how a path fixes the problem.", size:"2–3 sentences", hint:"How many folders called Documents might you have?", model:"“Documents” is vague, because there may be several folders with that name: one on the computer, one in OneDrive, one on a USB stick. A path is the file’s full address: every folder from the top (a drive letter such as `C:` on Windows, or `/` on a Mac or Chromebook) down to the file itself, in order, with a separator between each. Like a postal address from country to flat number, it points to exactly one place, so a person or a program can find it.", points:["Says several folders can share the same name", "Says a path lists every folder from the top down to the file", "Says a path points to exactly one place (or compares it to a postal address)"]}
+      {id:"t1u2-l2-x8", type:"explain", q:"A colleague says “the file’s in Documents”, but you can’t find it. Explain why that isn’t enough, and how a path fixes the problem.", size:"2–3 sentences", hint:"How many folders called Documents might you have?", model:"“Documents” is vague, because there may be several folders with that name: one on the computer, one in OneDrive, one on a USB stick. A path is the file’s full address. It lists every folder from the top down to the file itself, in order, with a separator between each. The top is a drive letter such as `C:` on Windows, or `/` on a Mac or Chromebook. A path is like a postal address from country to apartment number. It points to exactly one place, so a person or a program can find it.", points:["Says several folders can share the same name", "Says a path lists every folder from the top down to the file", "Says a path points to exactly one place (or compares it to a postal address)"]}
    ],
    apply:{intro:"Find your way around your own folders.", tasks:[
     {t:"Find your home folder and copy one file’s path", how:{
@@ -346,8 +346,8 @@ ICA.addUnit({
    learn:[
     {h:"Why names matter more than you think", body:[
       {lead:"Picture a folder holding `report.docx`, `report final.docx`, `report final FINAL.docx`, `report final FINAL (2).docx` and `Copy of report final v2 USE THIS.docx`."},
-      "Which one went to the funder? Nobody knows, including the person who made them. This mess has a name among librarians and researchers — the “final_FINAL problem” — and it costs real time: re-sending the wrong version, redoing work, losing track of what was agreed.",
-      "Good names fix most of it, and they cost nothing. Research data managers at universities have worked out a set of habits that apply just as well to a family’s tax papers or a café’s invoices. This lesson teaches those habits. They come from guidance such as The Turing Way (a community handbook for research), Data Carpentry and Library Carpentry lessons, and university library research-data guides (for example at Boston University and the University of British Columbia).",
+      "Which one went to the funder? Nobody knows, including the person who made them. Librarians and researchers have a name for this mess: the “final_FINAL problem”. It costs real time. You re-send the wrong version, redo work, and lose track of what was agreed.",
+      "Good names fix most of this, and they cost nothing. Research data managers at universities have worked out a set of habits. These habits work just as well for a family’s tax papers or a café’s invoices. This lesson teaches those habits. They come from several sources. One is The Turing Way, a community handbook for research. Others are Data Carpentry and Library Carpentry lessons, and university library research-data guides (for example at Boston University and the University of British Columbia).",
       {key:"A good file name answers three questions without opening the file: **what is it, when is it from, and which version is it?**"}
     ]},
     {h:"Three qualities of a good name", body:[
@@ -361,7 +361,7 @@ ICA.addUnit({
     ]},
     {h:"Dates: write them as YYYY-MM-DD", body:[
       "Is `03-04-2026` the 3rd of April or the 4th of March? It depends which country you’re in. The international standard [[iso-8601]] removes the doubt: **year, then month, then day, with leading zeros**: `2026-04-03`. Many research guides also accept the compact form `20260403`; pick one and stick to it.",
-      "ISO dates have a second, magical property: when sorted as plain text, they also sort **in time order**, because the biggest unit comes first.",
+      "ISO dates have a second, useful property. When you sort them as plain text, they also sort **in time order**, because the biggest unit comes first.",
       {table:[
         ["Names written day-month-year","…sorted by name","Names written ISO 8601","…sorted by name"],
         ["15-01-2026_minutes","02-03-2026_minutes","2026-01-15_minutes","2025-11-30_minutes"],
@@ -372,7 +372,7 @@ ICA.addUnit({
       {tip:"Put the date at the **start** of the name when time order matters most (meeting notes, invoices, photos of an event). Put the topic first when you mostly browse by subject, and the date later."}
     ]},
     {h:"Versions: numbers with leading zeros, not “final”", body:[
-      "“Final” is a promise the future rarely keeps. Instead, number your versions: `v01`, `v02`, `v03`. When something truly is the agreed version, record that somewhere sturdier than the name — a note in the document, a folder called `submitted`, or a dated copy such as `2026-05-30_grant-application_v07_submitted.pdf`.",
+      "“Final” is a promise that the future rarely keeps. Instead, number your versions: `v01`, `v02`, `v03`. When a version truly is the agreed one, record that somewhere sturdier than the name. You can add a note in the document, use a folder called `submitted`, or make a dated copy such as `2026-05-30_grant-application_v07_submitted.pdf`.",
       "Why the leading zero? Many programs sort names **character by character**, like a dictionary. They compare `v1` and `v10` one character at a time: `v`, then `1`, then `0` versus nothing. So the list comes out as `v1, v10, v11, v2, v3`. With zero-padding — `v01, v02 … v10, v11` — every program sorts correctly.",
       {ex:"Character-by-character sort:   plan_v1  plan_v10  plan_v11  plan_v2  plan_v3\nWith leading zeros:             plan_v01  plan_v02  plan_v03  plan_v10  plan_v11", label:"Worked example", mono:true},
       "To be precise: Windows File Explorer and macOS Finder are clever and sort numbers inside names by value, so `v2` appears before `v10` there. But websites, cloud upload lists, scripts, zip listings and many other tools don’t. Pad with zeros and the order is right everywhere.",
@@ -389,12 +389,12 @@ ICA.addUnit({
         ["Very long names","Paths have length limits on some systems; long names get cut off on screen","Keep names short but meaningful, around 25–40 characters"]
       ]},
       "A common convention: use **underscores to separate the parts** of a name (date, project, description, version) and **hyphens to join words within a part**: `2026-03-04_food-bank_volunteer-rota_v02.xlsx`. Some people prefer CamelCase (`VolunteerRota`). What matters most is consistency.",
-      {fig:'<svg viewBox="0 0 340 228"><text x="170" y="22" text-anchor="middle">Anatomy of a well-made file name</text><rect class="d-gold" x="36.8" y="38" width="103.9" height="40" rx="8" stroke-width="2"/><text x="88.8" y="63" text-anchor="middle">2026-03-04</text><text x="147.3" y="63" text-anchor="middle">_</text><rect class="d-lup" x="153.9" y="38" width="94.4" height="40" rx="8" stroke-width="2"/><text x="201.2" y="63" text-anchor="middle">food-bank</text><text x="255" y="63" text-anchor="middle">_</text><text class="s" x="88.8" y="96" text-anchor="middle">when (ISO 8601)</text><text class="s" x="201.2" y="96" text-anchor="middle">project</text><rect class="d-sage" x="36.8" y="110" width="132.2" height="40" rx="8" stroke-width="2"/><text x="102.9" y="135" text-anchor="middle">volunteer-rota</text><text x="175.7" y="135" text-anchor="middle">_</text><rect class="d-rose" x="182.3" y="110" width="51" height="40" rx="8" stroke-width="2"/><text x="207.8" y="135" text-anchor="middle">v02</text><rect class="d-soft" x="237.1" y="110" width="66.1" height="40" rx="8" stroke-width="2"/><text x="270.1" y="135" text-anchor="middle">.xlsx</text><text class="s" x="102.9" y="168" text-anchor="middle">what it is</text><text class="s" x="207.8" y="168" text-anchor="middle">version</text><text class="s" x="270.1" y="168" text-anchor="middle">format</text><text class="s" x="170" y="196" text-anchor="middle">underscores between parts</text><text class="s" x="170" y="214" text-anchor="middle">hyphens inside a part · no spaces</text></svg>', alt:"The name 2026-03-04_food-bank_volunteer-rota_v02.xlsx split over two rows into five labeled boxes: the date in ISO 8601 format, the project, a description, the version number with a leading zero, and the extension showing the format.", cap:"Each part answers a question. Underscores separate the parts; hyphens join words inside a part."}
+      {fig:'<svg viewBox="0 0 340 228"><text x="170" y="22" text-anchor="middle">Anatomy of a well-made file name</text><rect class="d-gold" x="36.8" y="38" width="103.9" height="40" rx="8" stroke-width="2"/><text x="88.8" y="63" text-anchor="middle">2026-03-04</text><text x="147.3" y="63" text-anchor="middle">_</text><rect class="d-lup" x="153.9" y="38" width="94.4" height="40" rx="8" stroke-width="2"/><text x="201.2" y="63" text-anchor="middle">food-bank</text><text x="255" y="63" text-anchor="middle">_</text><text class="s" x="88.8" y="96" text-anchor="middle">when (ISO 8601)</text><text class="s" x="201.2" y="96" text-anchor="middle">project</text><rect class="d-sage" x="36.8" y="110" width="132.2" height="40" rx="8" stroke-width="2"/><text x="102.9" y="135" text-anchor="middle">volunteer-rota</text><text x="175.7" y="135" text-anchor="middle">_</text><rect class="d-rose" x="182.3" y="110" width="51" height="40" rx="8" stroke-width="2"/><text x="207.8" y="135" text-anchor="middle">v02</text><rect class="d-soft" x="237.1" y="110" width="66.1" height="40" rx="8" stroke-width="2"/><text x="270.1" y="135" text-anchor="middle">.xlsx</text><text class="s" x="102.9" y="168" text-anchor="middle">what it is</text><text class="s" x="207.8" y="168" text-anchor="middle">version</text><text class="s" x="270.1" y="168" text-anchor="middle">format</text><text class="s" x="170" y="196" text-anchor="middle">underscores between parts</text><text class="s" x="170" y="214" text-anchor="middle">hyphens inside a part · no spaces</text></svg>', alt:"The name 2026-03-04_food-bank_volunteer-rota_v02.xlsx split over two rows into five labeled boxes. The boxes show the date in ISO 8601 format, the project, a description, the version number with a leading zero, and the extension that shows the format.", cap:"Each part answers a question. Underscores separate the parts; hyphens join words inside a part."}
     ]},
     {h:"A simple folder structure", body:[
       "Names do most of the work, but folders give everything a home. A good structure is **shallow** (three or four levels at most), **predictable** (the same pattern for every project or year) and **boring**. Here is a pattern used widely in research projects, which works just as well for a community event or a client job:",
       {ex:"2026_food-bank-survey/\n  00_README.txt          ← what this project is, what codes in names mean\n  01_admin/              ← plans, emails saved as PDF, budgets\n  02_raw-data/           ← original data, never edited\n  03_working/            ← drafts and analysis in progress\n  04_outputs/            ← finished reports, slides, figures\n  99_archive/            ← old versions you might need one day", label:"Worked example: one project", mono:true},
-      "The numbers at the front keep the folders in a sensible order instead of alphabetical. The `README` file is a short plain-text note explaining the project and any abbreviations — the single most useful thing you can leave for a colleague or your future self.",
+      "The numbers at the front keep the folders in a sensible order instead of alphabetical order. The `README` file is a short plain-text note that explains the project and any abbreviations. It is the single most useful thing you can leave for a colleague or your future self.",
       {ex:"Home/\n  Household/\n    2026_bills/   2026_tax/   insurance/   medical/\n  Photos/\n    2025/\n      2025-08-12_lake-trip/\n      2025-12-25_family-dinner/\n    2026/", label:"Worked example: at home", mono:true},
       "Photos sort neatly by year, then by dated event. A small business might use `Clients/<client-name>/<YYYY>_<job>/`, with invoices named `2026-03-04_invoice_0147.pdf` so the numbers stay in order.",
       {tip:"Don’t reorganize everything at once. Start new work in the new structure, and move old files over only when you touch them."}
@@ -433,7 +433,7 @@ ICA.addUnit({
     ]},
     {id:"t1u2-l3-x2", type:"mcq", q:"Kenji saved 12 drafts named `plan_v1.docx` to `plan_v12.docx`. He uploads them to a website that sorts names character by character. What appears directly after `plan_v1.docx`?", options:[
       {t:"plan_v10.docx", ok:true, why:"Character by character, “v1” followed by “0” comes before “v2”. Naming them v01–v12 would fix it."},
-      {t:"plan_v2.docx", why:"That’s numeric order, which Windows File Explorer and macOS Finder use — but this site compares one character at a time, so v10, v11 and v12 come first."},
+      {t:"plan_v2.docx", why:"That’s numeric order, which Windows File Explorer and macOS Finder use. But this site compares one character at a time, so v10, v11 and v12 come first."},
       {t:"plan_v12.docx", why:"After “plan_v1” the next character decides. “0” comes before “1” and “2”, so v10 is first."},
       {t:"plan_v11.docx", why:"v10 comes before v11, because “0” sorts before “1”."}
     ]},
@@ -469,7 +469,7 @@ ICA.addUnit({
       {t:"Rename it to “Grandma Beach 2025” so search finds it", why:"A good name helps search, but it doesn’t put the photo in two browsing groups. Spaces in the name also break naming practice."},
       {t:"Put the Beach 2025 folder inside the Grandma folder", why:"Then every beach photo, even of other people, is filed under Grandma. Folders can’t express “belongs to both”."}
     ]},
-      {id:"t1u2-l3-x8", type:"explain", q:"Explain why naming files with dates written as YYYY-MM-DD (for example `2026-04-03_minutes.docx`) works better than dates like `03-04-2026`.", hint:"Think about two things: what the date means in different countries, and what happens when a folder sorts names alphabetically.", model:"A date like `03-04-2026` is ambiguous: it is the 3rd of April in some countries and the 4th of March in others. Writing year, then month, then day (the ISO 8601 standard) means the same thing everywhere. It also sorts properly: because the biggest unit comes first and leading zeros keep every date the same length, sorting the names as plain text puts them in time order. With the day first, sorting mixes up different months and years.", points:["Says day-and-month order means different things in different countries", "Names the year-month-day order (ISO 8601)", "Explains that biggest-unit-first makes alphabetical order match time order", "Mentions leading zeros (keeping the parts the same length)"]}
+      {id:"t1u2-l3-x8", type:"explain", q:"Explain why naming files with dates written as YYYY-MM-DD (for example `2026-04-03_minutes.docx`) works better than dates like `03-04-2026`.", hint:"Think about two things: what the date means in different countries, and what happens when a folder sorts names alphabetically.", model:"A date like `03-04-2026` is ambiguous. It is the 3rd of April in some countries and the 4th of March in others. Writing year, then month, then day (the ISO 8601 standard) means the same thing everywhere. It also sorts properly. The biggest unit comes first, and leading zeros keep every date the same length. So sorting the names as plain text puts them in time order. With the day first, sorting mixes up different months and years.", points:["Says day-and-month order means different things in different countries", "Names the year-month-day order (ISO 8601)", "Explains that biggest-unit-first makes alphabetical order match time order", "Mentions leading zeros (keeping the parts the same length)"]}
    ],
    apply:{intro:"Put the naming rules to work on something real.", tasks:[
     {t:"Rename five of your own files using the recipe", how:{
@@ -482,7 +482,7 @@ ICA.addUnit({
       mac:["In **Finder**, Control-click a file → choose a colored tag, or **Tags…** to type one.","Click the tag in the Finder sidebar to see everything with it."],
       win:["Windows lets you add **Tags** to some file types (such as photos and Office files): right-click → **Properties** → **Details** → **Tags**.","Search for `tags:yourword` in File Explorer to find them."],
       chromeos:["ChromeOS Files doesn’t have tags. Use albums in Google Photos, or labels in other apps, instead."],
-      phone:["Use albums in your photo app (Photos on iPhone, Google Photos or your maker’s gallery on Android) to group pictures without copying them."]}}
+      phone:["Use albums in your photo app to group pictures without copying them. Use Photos on iPhone, or Google Photos or your maker’s gallery on Android."]}}
    ], proof:"Five files follow the naming recipe, and one area of your life has a simple numbered folder structure with a README."},
    read:[{book:"wss", where:"Chapter 2, Section 2.2 “Files and Folders” — “Best Practices in Using and Organizing Folders and Files” and “Tips for Organizing and Maintaining Files”"}]
   },
@@ -493,7 +493,7 @@ ICA.addUnit({
    learn:[
     {h:"What “the cloud” physically is", body:[
       {lead:"“The cloud” sounds weightless. It isn’t. It is buildings full of computers."},
-      "When you save a file to [[cloud-storage]] such as Google Drive, iCloud Drive, OneDrive or Dropbox, it travels over the internet to a company’s **data centers**: large warehouses of servers with their own power supplies, cooling and security guards. The provider usually keeps several copies across different machines, and often different buildings, so one broken disk doesn’t lose your file.",
+      "Suppose you save a file to [[cloud-storage]] such as Google Drive, iCloud Drive, OneDrive or Dropbox. It travels over the internet to a company’s **data centers**. These are large warehouses of servers with their own power supplies, cooling and security guards. The provider usually keeps several copies on different machines, and often in different buildings. So one broken disk doesn’t lose your file.",
       "A fair short definition: the [[cloud]] is **someone else’s computers, which you rent or borrow through the internet**. That brings real benefits and real trade-offs:",
       {table:[
         ["Benefit","Trade-off"],
@@ -524,7 +524,7 @@ ICA.addUnit({
         ["Google Drive for desktop","**Stream files** setting: files mostly in the cloud","**Mirror files** setting: a full copy on your computer"],
         ["ChromeOS Files (Google Drive)","Default for Drive files","Select a file → turn on **Available offline**"]
       ]},
-      {warn:"Deleting an online-only placeholder doesn’t just free space — Microsoft’s documentation is explicit that it deletes the file **from your cloud and all your devices**. To free space safely, use **Free up space** or **Remove Download**, never Delete."},
+      {warn:"Deleting an online-only placeholder doesn’t just free space. Microsoft’s documentation clearly says that it deletes the file **from your cloud and all your devices**. To free space safely, use **Free up space** or **Remove Download**. Never use Delete."},
       {tip:"Before a flight or a trip with poor internet, mark the folders you need as always available offline. Online-only files can’t be opened without a connection."}
     ]},
     {h:"Sharing: inviting people vs sharing a link", body:[
@@ -559,14 +559,14 @@ ICA.addUnit({
       {warn:"Never share passport scans, medical records, tax files or anything with ID numbers through an “anyone” link. Invite specific people instead."}
     ]},
     {h:"Sync conflicts", body:[
-      "A [[sync-conflict]] happens when the same file is changed in two places before sync can compare them — for example, Amara edits the shopping list on her laptop on a train with no signal, while her partner edits it on the home computer. When the laptop reconnects, which version wins?",
+      "A [[sync-conflict]] happens when the same file is changed in two places before sync can compare them. For example, Amara edits the shopping list on her laptop on a train with no signal. At the same time, her partner edits it on the home computer. When the laptop reconnects, which version wins?",
       "Sync apps don’t guess. They usually **keep both**, renaming one copy — often by adding the device’s name or the word “conflict” — so no work is lost. You then have to compare and merge them by hand.",
       {ol:["Open both copies side by side.","Copy anything missing from one into the other.","Keep the merged one with the proper name.","Delete the extra copy once you’re sure."]},
       {tip:"Online editors such as Google Docs, Microsoft 365 on the web and iWork for iCloud let several people edit **one** copy at the same time, which avoids most conflicts. Working offline on shared files is where conflicts come from."}
     ]},
     {h:"Storage limits", body:[
-      "Every cloud account has a [[storage-quota]]. Free tiers at the time of writing: Google gives **15 GB** per account, **shared** across Gmail, Google Drive and Google Photos; Apple gives **5 GB** of iCloud storage, which also holds iPhone backups and iCloud Photos; Microsoft gives **5 GB** of OneDrive storage. Paid plans offer more. Check your provider’s current plans; they change.",
-      "When you hit the limit, new files stop uploading or syncing, and with Google your email can be affected too because it shares the same space. You’ll see warnings first. Your options: delete large files you don’t need (videos are usually the biggest), empty the cloud bin (deleted files often still count), move old material to an external drive, or pay for more.",
+      "Every cloud account has a [[storage-quota]]. These are the free tiers at the time of writing. Google gives **15 GB** per account, **shared** across Gmail, Google Drive and Google Photos. Apple gives **5 GB** of iCloud storage, which also holds iPhone backups and iCloud Photos. Microsoft gives **5 GB** of OneDrive storage. Paid plans offer more. Check your provider’s current plans, because they change.",
+      "When you reach the limit, new files stop uploading or syncing. With Google, your email can be affected too, because it shares the same space. You’ll see warnings first. You have four options. Delete large files you don’t need (videos are usually the biggest). Empty the cloud trash (deleted files often still count). Move old material to an external drive. Or pay for more.",
       {tip:"Look at what uses your space before paying: Google One storage, iPhone **Settings → [your name] → iCloud**, and OneDrive’s storage page each show a breakdown."}
     ]}
    ],
@@ -575,7 +575,7 @@ ICA.addUnit({
       {t:"Files kept on a company’s servers, reached over the internet", ok:true, why:"The cloud is physical: buildings of computers in data centers, run by a provider."},
       {t:"Files stored in the air between your devices, carried by Wi-Fi", why:"Wi-Fi only carries data to the internet; the files have to live on some computer’s storage."},
       {t:"A part of your own hard drive set aside for sharing", why:"A sync app keeps a local copy on your drive, but the cloud copy itself is on the provider’s servers."},
-      {t:"A backup that can never be lost", why:"Providers protect against hardware failure, but you can still lose files by deleting them, through sync mistakes, or by losing account access."}
+      {t:"A backup that can never be lost", why:"Providers protect against hardware failure. But you can still lose files by deleting them, through sync mistakes, or by losing access to your account."}
     ]},
     {id:"t1u2-l4-x2", type:"sort", q:"Could Mei open each file on her laptop with no internet connection?", buckets:["Yes, works offline","No, needs internet"], items:[
       {t:"A OneDrive file showing a blue cloud icon", b:1, why:"The blue cloud means online-only: only a placeholder is on the laptop."},
@@ -613,18 +613,18 @@ ICA.addUnit({
       {t:"A sync conflict; she should merge the two, then delete the extra", ok:true, why:"The app kept both versions rather than silently throwing one away. Comparing and merging by hand is the fix; editing online together avoids it."},
       {t:"A virus copied the file; she should delete both", why:"Duplicates with a device name added are the normal sign of a sync conflict, not malware. Deleting both would lose both people’s work."},
       {t:"The cloud is broken; she should stop using sync", why:"This is the expected, safe behavior when two edits happen apart."},
-      {t:"Her version automatically replaced her flatmate’s; she can ignore the extra file", why:"Nothing was merged. Each file holds only one person’s changes, so ignoring the extra one loses work."}
+      {t:"Her version automatically replaced her roommate’s; she can ignore the extra file", why:"Nothing was merged. Each file holds only one person’s changes, so ignoring the extra one loses work."}
     ]},
-      {id:"t1u2-l4-x8", type:"explain", q:"Wei deletes a large video from his synced cloud folder on his phone to free up space. The next day it has vanished from his laptop too. Explain why, and what he could have done instead.", hint:"What is sync’s whole job? Does it know the difference between an edit and a deletion?", model:"A sync app keeps a local folder on each device identical to the copy in the cloud. When Wei deleted the video on his phone, the app treated that as a change like any other: it removed the cloud copy, and his laptop then removed its copy too. Deletions travel everywhere, just as edits do. To save space on one device only, he could have made the file online-only (for example, “Free up space”) instead of deleting it.", points:["Says sync keeps every device’s copy identical to the cloud copy", "Says deletions sync just like edits", "Suggests making the file online-only instead of deleting it"]}
+      {id:"t1u2-l4-x8", type:"explain", q:"Wei deletes a large video from his synced cloud folder on his phone to free up space. The next day it has vanished from his laptop too. Explain why, and what he could have done instead.", hint:"What is sync’s whole job? Does it know the difference between an edit and a deletion?", model:"A sync app keeps a local folder on each device identical to the copy in the cloud. When Wei deleted the video on his phone, the app treated that as a change like any other. It removed the cloud copy, and his laptop then removed its copy too. Deletions travel everywhere, just as edits do. To save space on one device only, he could have made the file online-only (for example, “Free up space”) instead of deleting it.", points:["Says sync keeps every device’s copy identical to the cloud copy", "Says deletions sync just like edits", "Suggests making the file online-only instead of deleting it"]}
    ],
    apply:{intro:"Look at how your own cloud storage behaves.", tasks:[
     {t:"Find your sync status and offline settings", how:{
       win:["Click the **OneDrive** cloud icon in the taskbar’s notification area to see whether files are up to date. (If you use Google Drive for desktop or another app, open its icon instead.)","In File Explorer, open your OneDrive folder and look at the **Status** column: blue cloud, green check mark or green circle.","Right-click a folder you need on trips → **Always keep on this device**."],
-      mac:["In Finder, select **iCloud Drive** in the sidebar and look for status icons next to items.","Control-click a file → **Keep Downloaded** (macOS Sequoia and later) or **Download Now** for things you need offline.","Optional: open **System Settings → [your name] → iCloud** and look for **Optimize Mac Storage** (on some macOS versions it is inside the **iCloud Drive** or **Drive** settings)."],
+      mac:["In Finder, select **iCloud Drive** in the sidebar and look for status icons next to items.","Control-click a file → **Keep Downloaded** (macOS Sequoia and later) or **Download Now** for things you need offline.","Optional: open **System Settings → [your name] → iCloud** and look for **Optimize Mac Storage**. On some macOS versions it is inside the **iCloud Drive** or **Drive** settings."],
       chromeos:["Open **Files** → **Google Drive**.","Select a file or folder you need offline and turn on **Available offline** at the top.","If the option is missing, first check **Offline** in Google Drive’s settings on the web (drive.google.com, Settings)."],
       phone:["iPhone: open **Files → Browse → iCloud Drive**; a cloud-with-arrow icon means it isn’t downloaded yet.","Android: open **Google Drive**, tap the three dots on a file → **Make available offline**."]}},
     {t:"Check who can see one of your shared files", how:["Open your cloud storage on the web (drive.google.com, onedrive.live.com, or icloud.com).","Find **Shared** (or look for the people icon on files).","Open the sharing settings of one item. Check whether it’s shared with named people or with an “anyone” link.","Remove any “anyone” link that’s no longer needed, and lower permissions that are higher than necessary."]},
-    {t:"Check your storage use", how:["Google: visit **one.google.com/storage** while signed in.","iPhone: **Settings → [your name] → iCloud** shows the bar and biggest users.","OneDrive: on the web, select the storage bar in the left pane, or open **Settings** (gear icon) and look for **Storage** or **Manage storage**; the layout changes from time to time.","Note your total, what’s used, and the biggest category."]}
+    {t:"Check your storage use", how:["Google: visit **one.google.com/storage** while signed in.","iPhone: **Settings → [your name] → iCloud** shows the bar and biggest users.","OneDrive: on the web, select the storage bar in the left pane. Or open **Settings** (gear icon) and look for **Storage** or **Manage storage**. The layout changes from time to time.","Note your total, what’s used, and the biggest category."]}
    ], proof:"You know which of your files are online-only, you have reviewed one shared item’s permissions, and you know how full your cloud storage is."},
    read:[{book:"wss", where:"Chapter 2, Section 2.2 “Files and Folders” — “Google Drive, SharePoint, and OneDrive”"},{book:"wss", where:"Chapter 2, Section 2.6 “Collaboration” — “File Sharing and Transferring” and “Sharing a Document”"},{book:"ics", where:"Background reading: Chapter 6, Section 6.5 “File Systems” — “Distributed File Systems”", note:"How a file system can spread files across many networked computers, the idea underneath cloud storage."}]
   },
@@ -634,7 +634,7 @@ ICA.addUnit({
    goals:["Explain why sync, recycle bins and version history are not complete backups","Apply the 3-2-1 rule to your own situation","Turn on a built-in backup for your computer and phone","Test a restore so you know your backup works"],
    learn:[
     {h:"What a backup is (and what it isn’t)", body:[
-      {lead:"The UK’s National Cyber Security Centre defines a [[backup]] as a copy of your important data that’s stored in a separate, safe location. Every word matters: a **copy**, kept **separate**, somewhere **safe**."},
+      {lead:"The UK’s National Cyber Security Centre defines a [[backup]] as a copy of your important data that’s stored in a separate, safe location. Every word matters. It is a **copy**, kept **separate**, somewhere **safe**."},
       "Ask yourself: if this laptop or phone were stolen tonight, or dropped in water, or locked by ransomware, what would I lose? Whatever comes to mind — photos of children growing up, a thesis, a business’s invoices, the only copy of a parent’s recipes — needs a backup. The NCSC’s advice is simply to back up anything you value.",
       "Several things *feel* like backups but don’t meet the definition:",
       {table:[
@@ -652,14 +652,14 @@ ICA.addUnit({
       {table:[
         ["Service","Deleted files (bin)","Earlier versions of a file"],
         ["OneDrive","Personal accounts: 30 days. Work or school: 93 days by default (your administrator can change it)","Version history kept for 30 days; Microsoft 365 subscribers can also roll back the whole OneDrive to any point in the last 30 days"],
-        ["Google Drive","Trash is emptied automatically after 30 days","Docs, Sheets and Slides have their own version history; for uploaded files, an old version may be deleted after 30 days or once there are 100 newer versions, unless you choose **Keep forever**"],
+        ["Google Drive","Trash is emptied automatically after 30 days","Docs, Sheets and Slides have their own version history. For uploaded files, an old version may be deleted after 30 days or once there are 100 newer versions, unless you choose **Keep forever**"],
         ["iCloud Drive","Recently Deleted keeps files for 30 days; icloud.com also has a Data Recovery page to **Restore Files**","Apps such as Pages and Numbers keep versions; there is no general version history for every file"]
       ]},
-      "[[version-history]] is excellent for “I overwrote the good paragraph yesterday.” It is weak against things you notice late (“this photo was deleted four months ago”), against losing access to the account, and against anything that happens to the whole account at once. The provider keeps its own machines running, but your data and who can reach it stay your job: Unit 12, Lesson 3 calls this the {{shared-responsibility|shared responsibility model}}.",
+      "[[version-history]] is excellent for “I overwrote the good paragraph yesterday.” It is weak against things you notice late, such as “this photo was deleted four months ago”. It is also weak against losing access to the account, and against anything that happens to the whole account at once. The provider keeps its own machines running. But your data, and who can reach it, stay your job. Unit 12, Lesson 3 calls this the {{shared-responsibility|shared responsibility model}}.",
       {tip:"Deleted something from the cloud? Act quickly. Check the cloud bin on the website, not just the bin on your computer: they are separate."}
     ]},
     {h:"The 3-2-1 rule", body:[
-      "Backup professionals use a simple test, which the US Cybersecurity and Infrastructure Security Agency (CISA) calls “a trusted guideline”: the [[rule-321]].",
+      "Backup professionals use a simple test: the [[rule-321]]. The US Cybersecurity and Infrastructure Security Agency (CISA) calls it “a trusted guideline”.",
       {list:[
         "**3 copies** of important files — the original plus two backups.",
         "**2 different types of storage** — for example, an [[external-drive]] and the cloud. One kind of failure (a power surge, a provider problem) is unlikely to hit both.",
@@ -668,11 +668,11 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 372"><text x="170" y="22" text-anchor="middle">3 copies · 2 kinds of storage · 1 off-site</text><rect class="d-panel" x="9.4" y="36" width="321.1" height="220" rx="12" stroke-width="2"/><text class="s" x="170" y="56" text-anchor="middle">At home or the office</text><rect class="d-sage" x="20.8" y="68" width="141.7" height="70" rx="8" stroke-width="2"/><text x="91.6" y="98" text-anchor="middle">1 · Original</text><text class="s" x="91.6" y="120" text-anchor="middle">laptop drive</text><rect class="d-gold" x="177.6" y="68" width="141.7" height="70" rx="8" stroke-width="2"/><text x="248.4" y="98" text-anchor="middle">2 · Backup</text><text class="s" x="248.4" y="120" text-anchor="middle">external drive</text><text class="s" x="248.4" y="156" text-anchor="middle">storage type A</text><text class="s" x="248.4" y="172" text-anchor="middle">unplugged when</text><text class="s" x="248.4" y="188" text-anchor="middle">not in use</text><rect class="d-rose" x="20.8" y="204" width="298.4" height="40" rx="6" stroke-width="2"/><text class="s" x="170" y="220" text-anchor="middle">a fire here destroys copies 1 and 2…</text><text class="s" x="170" y="236" text-anchor="middle">but not 3</text><rect class="d-lup" x="89.7" y="270" width="160.6" height="70" rx="30" stroke-width="2"/><text x="170" y="300" text-anchor="middle">3 · Backup</text><text class="s" x="170" y="322" text-anchor="middle">cloud backup</text><text class="s" x="170" y="360" text-anchor="middle">storage type B · off-site</text></svg>', alt:"Three copies: the original on a laptop and a backup on an external drive, both at home; a third copy in a cloud backup, off-site. The external drive and the cloud are two different kinds of storage. A note says a fire at home would destroy copies 1 and 2 but not copy 3.", cap:"The 3-2-1 rule protects against one disaster taking every copy at once."},
       "It scales to any life:",
       {list:[
-        "**A family:** photos on the phone (1), iCloud or Google Photos (2, off-site), and a yearly copy onto an external drive kept at a relative’s house or in a drawer at work (3).",
+        "**A family:** photos on the phone (1), iCloud or Google Photos (2, off-site), and a yearly copy on an external drive. Keep that drive at a relative’s house or in a drawer at work (3).",
         "**A student:** thesis on the laptop (1), in a university cloud account (2, off-site), and Time Machine or File History to an external drive (3).",
-        "**A small business:** the office computer (1), a nightly backup to an external drive that rotates home with the owner (2, off-site on alternate weeks), and a cloud backup service (3)."
+        "**A small business:** the office computer (1), a nightly backup to an external drive that the owner takes home in turn (2, off-site on alternate weeks), and a cloud backup service (3)."
       ]},
-      "Notice that each example includes a drive or backup tool, not just a synced cloud service. A synced copy such as iCloud Photos or a cloud folder deletes along with the original, so it only protects you fully when an independent copy also exists.",
+      "Notice that each example includes a drive or backup tool, not just a synced cloud service. A synced copy, such as iCloud Photos or a cloud folder, is deleted along with the original. So it protects you fully only when an independent copy also exists.",
       {warn:"Many people find that their only “backup” is the cloud copy that sync creates. That’s two copies at best, and they are linked: a deletion on one becomes a deletion on both."}
     ]},
     {h:"The backup tools already on your devices", body:[
@@ -681,23 +681,23 @@ ICA.addUnit({
         ["Device","Tool","What it does"],
         ["Windows 11","**Windows Backup** app (Start → type “backup”, or Settings → Accounts → Windows backup)","Syncs Desktop, Documents, Pictures, Videos and Music to OneDrive and saves settings and app lists. Remember: that’s sync with version history, not a separate copy"],
         ["Windows 11","[[file-history|File History]] (Control Panel → System and Security → File History)","Saves copies of your files to an external drive or network location, keeping older versions you can restore"],
-        ["macOS","[[time-machine|Time Machine]] (System Settings → General → Time Machine)","Backs up to an external drive: hourly backups for the past 24 hours, daily for the past month, weekly for older months; the oldest are deleted when the drive is full"],
+        ["macOS","[[time-machine|Time Machine]] (System Settings → General → Time Machine)","Backs up to an external drive. It keeps hourly backups for the past 24 hours, daily backups for the past month, and weekly backups for older months. The oldest are deleted when the drive is full"],
         ["iPhone","**iCloud Backup** (Settings → [your name] → iCloud → iCloud Backup)","Backs up automatically when the phone is charging, on Wi-Fi and locked; needs enough iCloud space"],
-        ["Android","**Google backup** (Settings → Google → All services → Backup, on many phones)","Backs up apps, call history, contacts, settings and texts; photos and videos are backed up by Google Photos or your maker’s gallery, if switched on"],
+        ["Android","**Google backup** (Settings → Google → All services → Backup, on many phones)","Backs up apps, call history, contacts, settings and texts. Photos and videos are backed up by Google Photos or your maker’s gallery, if switched on"],
         ["ChromeOS","Google Drive","Files saved in Google Drive are kept online. Files in **My files** (including Downloads) are only on the Chromebook unless you move or copy them"]
       ]},
-      "Notice the pattern: **cloud tools** give you an off-site copy without effort, and **external-drive tools** (File History, Time Machine) give you a second kind of storage with long version history that isn’t tied to an account. Together they make 3-2-1.",
-      {tip:"Phones can also be backed up to a computer (iPhone with Finder on a Mac or the Apple Devices app on Windows; Android by copying files over USB), and that backup then copied to an external drive, as the NCSC suggests."}
+      "Notice the pattern. **Cloud tools** give you an off-site copy without effort. **External-drive tools** (File History, Time Machine) give you a second kind of storage. It has a long version history and isn’t tied to an account. Together they make 3-2-1.",
+      {tip:"You can also back up phones to a computer. An iPhone uses Finder on a Mac or the Apple Devices app on Windows. An Android phone copies files over USB. Then copy that backup to an external drive, as the NCSC suggests."}
     ]},
     {h:"External drives, done right", body:[
       "An [[external-drive]] is a hard drive or SSD in a small case that plugs into a [[usb]] port. It is affordable and works without the internet. Use it well:",
       {list:[
         "**Unplug it when the backup is finished.** The NCSC warns that ransomware and other malware can spread to attached drives automatically. A drive that isn’t connected can’t be infected.",
-        "**Eject before unplugging** (Windows: the Safely Remove Hardware icon or right-click → **Eject**; Mac: the eject button next to the drive in Finder; ChromeOS: **Eject** in Files) so nothing is half-written.",
+        "**Eject before unplugging**, so nothing is half-written. On Windows, use the Safely Remove Hardware icon or right-click → **Eject**. On a Mac, use the eject button next to the drive in Finder. On ChromeOS, use **Eject** in Files.",
         "**Encrypt it if it holds personal data.** Time Machine and many drives offer [[encryption]]. A lost unencrypted drive is a lost copy of your life.",
         "**Label it and note the date.** Drives fail with age; replace them every few years and check them now and then."
       ]},
-      {warn:"A drive that sits next to the computer all the time protects against a failed laptop, but not against a fire, flood, theft or ransomware that reaches the drive. That’s why 3-2-1 asks for a copy somewhere else."}
+      {warn:"A drive that sits next to the computer all the time protects against a failed laptop. It does not protect against a fire, a flood, theft or ransomware that reaches the drive. That’s why 3-2-1 asks for a copy somewhere else."}
     ]},
     {h:"Ransomware: why separate copies matter", body:[
       "{{ransomware}} is malicious software that scrambles (encrypts) your files and demands payment to unscramble them. It hits families, schools, hospitals and businesses of every size. From a backup point of view, it is a perfect test:",
@@ -705,7 +705,7 @@ ICA.addUnit({
         "The original files are scrambled.",
         "Sync uploads the scrambled versions to the cloud.",
         "Any drive that’s plugged in may be scrambled too.",
-        "What survives: an **unplugged** drive, a backup service or version history that keeps older versions the ransomware can’t reach, and an off-site copy."
+        "What survives: an **unplugged** drive, and an off-site copy. A backup service or version history also survives if it keeps older versions that the ransomware can’t reach."
       ]},
       "CISA advises keeping offline copies and testing that you can restore data both fully and partly. With a good backup, you can wipe the device and restore — without paying anyone."
     ]},
@@ -769,11 +769,11 @@ ICA.addUnit({
       {t:"She checked the restored version was the one she expected", ok:true, why:"Restoring the wrong version is a common surprise; checking catches it."},
       {t:"The external drive’s light comes on when plugged in", why:"Power doesn’t mean the backup is complete, recent, or readable."}
     ]},
-      {id:"t1u2-l5-x8", type:"explain", q:"A friend says: “All my photos sync to the cloud, so I don’t need a backup.” Explain why that is risky, and what they should add.", hint:"Sync makes copies identical. What happens to the cloud copy if the original is deleted or scrambled?", model:"Sync is not a backup. Sync keeps the copies identical, so mistakes travel too: if a photo is deleted on the phone, it is deleted from the cloud, and if ransomware scrambles the files, sync uploads the scrambled versions. A backup is a separate copy that does not change when the original does, so you can go back. Following the 3-2-1 rule, my friend should add an independent copy, such as a backup to an external drive kept unplugged, so there are three copies on two kinds of storage with one off-site.", points:["Says sync makes copies identical, including mistakes", "Gives an example: a deletion or ransomware spreads to the cloud copy", "Says a backup is a separate copy that doesn’t change with the original", "Suggests an independent copy or the 3-2-1 rule"]}
+      {id:"t1u2-l5-x8", type:"explain", q:"A friend says: “All my photos sync to the cloud, so I don’t need a backup.” Explain why that is risky, and what they should add.", hint:"Sync makes copies identical. What happens to the cloud copy if the original is deleted or scrambled?", model:"Sync is not a backup. Sync keeps the copies identical, so mistakes travel too. If a photo is deleted on the phone, it is deleted from the cloud. If ransomware scrambles the files, sync uploads the scrambled versions. A backup is a separate copy that does not change when the original does, so you can go back. Following the 3-2-1 rule, my friend should add an independent copy. An example is a backup to an external drive kept unplugged. Then there are three copies on two kinds of storage, with one off-site.", points:["Says sync makes copies identical, including mistakes", "Gives an example: a deletion or ransomware spreads to the cloud copy", "Says a backup is a separate copy that doesn’t change with the original", "Suggests an independent copy or the 3-2-1 rule"]}
    ],
    apply:{intro:"Build a backup you’ve proved. This is the most valuable hour in the unit.", tasks:[
     {t:"Turn on a backup for your computer", how:{
-      win:["For a separate copy: connect an external drive, open **Control Panel → System and Security → File History**, and select **Turn on** (use **Select drive** if needed).","For an off-site copy: press Start, type `backup`, open **Windows Backup**, and choose which folders to back up to OneDrive (needs enough OneDrive space)."],
+      win:["For a separate copy, connect an external drive. Open **Control Panel → System and Security → File History**, and select **Turn on**. Use **Select drive** if needed.","For an off-site copy: press Start, type `backup`, open **Windows Backup**, and choose which folders to back up to OneDrive (needs enough OneDrive space)."],
       mac:["Connect an external drive.","Open **Apple menu → System Settings → General → Time Machine** and click **Add Backup Disk** (or the **+** button).","Choose the drive, turn on encryption if offered, and let the first backup finish."],
       chromeos:["Make sure files you care about are in **Google Drive**, not only in **My files**.","For a second copy, plug in an external drive and copy important folders to it in **Files**, then **Eject** it."]}},
     {t:"Turn on your phone’s backup", how:{phone:[
@@ -1392,7 +1392,7 @@ ICA.addUnit({
   bank:[
    /* Lesson 1 */
    {id:"t1u2-q01", lesson:"t1u2-l1", level:1, q:"Which three parts make up a file?", options:[
-     {t:"Data, a name and metadata", ok:true, why:"The content (data), what it’s called (name, including the extension), and information about it (metadata)."},
+     {t:"Data, a name and metadata", ok:true, why:"The content (data), the name (including the extension), and information about the file (metadata)."},
      {t:"A folder, a path and an app", why:"Those describe where a file lives and what opens it, not the file itself."},
      {t:"Text, pictures and sound", why:"Those are kinds of content. Any file, whatever its content, has data, a name and metadata."},
      {t:"An icon, a size and a color", why:"The icon is chosen by the system from the extension; size is one piece of metadata; files don’t have colors."}]},

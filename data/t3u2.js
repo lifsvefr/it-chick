@@ -5,7 +5,7 @@ ICA.addUnit({
   blurb:"Set up spreadsheets that people and programs can both trust: what counts as a variable and an observation, long and wide layouts, consistent entries and names, missing values, data dictionaries, dates that don’t shift, raw data kept raw, validation rules, and CSV files that say exactly what you meant.",
   goals:[
     "Decide what the variables, observations and identifiers are in a real dataset, and lay it out as one or more linked rectangles",
-    "Recognise long and wide layouts, say which one suits a task, and reshape between them",
+    "Recognize long and wide layouts, say which one suits a task, and reshape between them",
     "Enter data with consistent codes and names, and keep units, notes and formatting out of the values",
     "Record zeros, blanks and missing values so every program reads them the same way, and document each column in a data dictionary",
     "Store dates so they survive different apps, countries and date systems, and protect identifiers from automatic conversion",
@@ -23,7 +23,7 @@ ICA.addUnit({
      "Explain Data Carpentry’s tidy-data principles and why they make data machine-readable",
      "Decide what the variables and observations are, even when the answer isn’t obvious",
      "Split data that describes different things into separate tables linked by an identifier",
-     "Recognise long and wide layouts and reshape between them",
+     "Recognize long and wide layouts and reshape between them",
      "Check that an identifier column really is unique"
    ],
    learn:[

@@ -250,7 +250,7 @@ ICA.addUnit({
       "The [[pacific-islands-forum|Pacific Islands Forum]] began in 1971 as the South Pacific Forum and took its current name in 2000. It has **18 members**: Australia, New Zealand, island countries from Fiji to Tuvalu, and the French territories of New Caledonia and French Polynesia. Its members are mostly small states spread across a vast ocean, so it focuses on what they share. That means fisheries, the ocean and, in the past, nuclear testing (the 1985 Treaty of Rarotonga created a nuclear-free zone). Above all, it means **climate change**, which its 2018 Boe Declaration calls the single greatest threat to the region. Its 2050 Strategy speaks of a “Blue Pacific Continent”.",
       "Small states can punch above their weight together. Pacific states, led by Vanuatu, pushed the General Assembly to ask the International Court of Justice for an advisory opinion on climate change. The Court gave it, unanimously, in July 2025.",
       {table:[
-        ["Organisation","Founded","Main focus"],
+        ["Organization","Founded","Main focus"],
         ["League of Arab States","1945","Political coordination among Arab states"],
         ["Organization of American States","1948","Democracy, rights and security in the Americas"],
         ["Caribbean Community (CARICOM)","1973","Economic integration of Caribbean states"],
@@ -329,7 +329,7 @@ ICA.addUnit({
     {id:"e2u7-l2-x7", type:"explain", q:"Explain why the EU is far more supranational than ASEAN, using at least two of history, power and ideas, without treating the EU as the model every region should follow.", size:"4–5 sentences", model:"The EU has institutions with real power above its members, such as the European Commission, and its rules bind member states, so members pool sovereignty. ASEAN follows the ‘ASEAN Way’: consultation, consensus and non-interference, with no supranational body. History helps explain the gap. Western Europe’s states pooled sovereignty after two devastating wars among themselves, while many ASEAN members had recently won independence, often after colonial rule, and guard sovereignty closely. Power mattered too: the US backed European unity during the Cold War. Judging other regions by the EU’s yardstick is a form of Eurocentrism, and many members prefer looser designs.", points:["Explains the difference between supranational and intergovernmental designs", "Gives a historical reason for the difference", "Gives a second reason, about power or ideas", "Says the EU is not the model every region should follow"]}
    ],
    apply:{intro:"Look at regional cooperation from where you are. Official sites are free to read and need no account.", tasks:[
-     {t:"Map your country’s regional memberships", how:["Search for your country’s foreign ministry page listing the regional organizations it belongs to, or look at the member lists on the organizations’ own sites.","Pick two of them.","For each, note when it was founded, how many members it has, and whether it works mainly by consensus or has institutions that can bind members."], write:"Organisation 1: founded, members, design, one thing it does. Organisation 2: the same…"},
+     {t:"Map your country’s regional memberships", how:["Search for your country’s foreign ministry page listing the regional organizations it belongs to, or look at the member lists on the organizations’ own sites.","Pick two of them.","For each, note when it was founded, how many members it has, and whether it works mainly by consensus or has institutions that can bind members."], write:"Organization 1: founded, members, design, one thing it does. Organization 2: the same…"},
      {t:"Read a founding text", how:["Choose one short founding document: the ASEAN Declaration (1967, about two pages), Articles 3 and 4 of the African Union’s Constitutive Act, or the Schuman Declaration (1950).","List the aims it states.","Find one sentence about sovereignty or interference. What does it promise?"], write:"Document, three aims it lists, and the sentence about sovereignty in your own words…"},
      {t:"Find the region in one product", how:["Pick something you own or eat that came from another country.","Check where it was made or grown.","Search whether that country and yours belong to the same free trade area or customs union, or have a trade agreement."], write:"The product, where it came from, and whether a regional or bilateral trade deal covers it…"}
    ], proof:"Notes describing two regional organizations your country belongs to and their design, the stated aims of one founding document, and one product traced to a trade arrangement."},
@@ -652,7 +652,7 @@ ICA.addUnit({
    apply:{intro:"Read human rights texts and records directly. They are free and need no account.", tasks:[
      {t:"Read the UDHR and pick three articles", how:["Open the Universal Declaration on the UN’s website (un.org); it is available in hundreds of languages, so choose one you read comfortably.","Read all 30 articles; it takes about 15 minutes.","Pick three articles that matter most to your daily life and one you hadn’t heard of before."], write:"Three articles and why they matter to you, plus one that surprised you…"},
      {t:"Look at one country’s Universal Periodic Review", how:["Open the UN human rights office site (ohchr.org) and find “Universal Periodic Review”, then the page for any country.","Read the summary of recommendations other states made.","Note which recommendations the state accepted or only noted, and which states made them."], write:"Country, three recommendations, which were accepted or noted, and what patterns you see…"},
-     {t:"Compare two views of R2P", how:["Find two short statements on R2P from different governments or regional groups, for example from a General Assembly debate on R2P (search “General Assembly debate responsibility to protect statement”).","Note what each one emphasizes: prevention, sovereignty, Council action, the risks of misuse.","Summarise both fairly, without deciding which is right."], write:"Statement 1: who and main points. Statement 2: who and main points. Where they agree…"}
+     {t:"Compare two views of R2P", how:["Find two short statements on R2P from different governments or regional groups, for example from a General Assembly debate on R2P (search “General Assembly debate responsibility to protect statement”).","Note what each one emphasizes: prevention, sovereignty, Council action, the risks of misuse.","Summarize both fairly, without deciding which is right."], write:"Statement 1: who and main points. Statement 2: who and main points. Where they agree…"}
    ], proof:"Notes on three UDHR articles in your own words, one country’s UPR recommendations, and a balanced summary of two views on R2P."},
    read:[
      {book:"eir", where:"Chapter 11 “Protecting People” (Alex J. Bellamy)", note:"Read it after this lesson: written by a leading R2P scholar, it adds detail on how the norm developed and where it has struggled."},
@@ -954,7 +954,7 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"regional-organizations", title:"Regional organizations", aka:["regionalism","regional IGOs","regional integration"], tags:["international relations","international organizations"],
-    summary:"Organisations of states in one region, from consensus-based forums to the supranational EU, built for trade, peace, voice and shared problems.",
+    summary:"Organizations of states in one region, from consensus-based forums to the supranational EU, built for trade, peace, voice and shared problems.",
     levels:{
      starter:[
       "A regional organization is a club of neighboring states. Examples include the European Union, the African Union, the Association of Southeast Asian Nations (ASEAN), Mercosur in South America and the Pacific Islands Forum.",
@@ -964,7 +964,7 @@ ICA.addUnit({
      ],
      builder:[
       {table:[
-        ["Organisation","Founded","Design in brief"],
+        ["Organization","Founded","Design in brief"],
         ["European Union (27 members)","1951 roots; EU from 1993","Supranational: Commission, Parliament, Court of Justice; single market; euro for most members"],
         ["African Union (55 members)","OAU 1963; AU 2002","Mainly intergovernmental; right to intervene over atrocity crimes; suspends members after coups"],
         ["ASEAN (11 members)","1967","Intergovernmental; consensus and non-interference (“the ASEAN Way”)"],
@@ -1129,7 +1129,7 @@ ICA.addUnit({
       {table:[
         ["View","Key ideas","Associated thinkers"],
         ["Mercantilism / economic nationalism","Trade surpluses, national industry, infant-industry protection","Alexander Hamilton (1791), Friedrich List (1841)"],
-        ["Economic liberalism","Specialisation, comparative advantage, open markets, institutions","Adam Smith (1776), David Ricardo (1817)"],
+        ["Economic liberalism","Specialization, comparative advantage, open markets, institutions","Adam Smith (1776), David Ricardo (1817)"],
         ["Structuralism","Core and periphery, unequal exchange, dependency","Raúl Prebisch and Hans Singer (1950), dependency and world-systems theorists"]
       ]},
       "Each view has a cousin in IR theory: mercantilism with realism, economic liberalism with liberalism, structuralism with Marxist and critical theory.",

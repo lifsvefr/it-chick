@@ -258,9 +258,9 @@ ICA.addUnit({
     {id:"t4u6-l2-x1", type:"order", q:"Put these steps in the order a theory-testing (deductive) study follows them.", items:[
       {t:"Choose a theory that might explain the problem", why:"Deductive research starts from an existing explanation."},
       {t:"Derive a hypothesis: what the theory predicts should happen in your setting", why:"The prediction comes from the theory, so it can only be written once a theory is chosen."},
-      {t:"Operationalise: define the concepts in the hypothesis and choose indicators to measure them", why:"Before collecting anything, you decide exactly how each concept in the prediction will be measured."},
+      {t:"Operationalize: define the concepts in the hypothesis and choose indicators to measure them", why:"Before collecting anything, you decide exactly how each concept in the prediction will be measured."},
       {t:"Collect data with those measures", why:"Data collection uses the indicators you chose."},
-      {t:"Analyse the data to see whether the prediction holds", why:"Analysis compares what you found with what the hypothesis predicted."},
+      {t:"Analyze the data to see whether the prediction holds", why:"Analysis compares what you found with what the hypothesis predicted."},
       {t:"Decide what the result means for the theory", why:"Last, the result supports, challenges or refines the theory, which closes the cycle."}
     ]},
     {id:"t4u6-l2-x2", type:"match", q:"Match each variable to its level of measurement.", pairs:[
@@ -467,7 +467,7 @@ ICA.addUnit({
     ]},
     {id:"t4u6-l6-x7", type:"sort", q:"Which family of stances does each quality yardstick mainly come from?", buckets:["Post-positivist","Interpretivist","Critical"], items:[
       {t:"Internal validity: could something other than the cause explain the result?", b:0, why:"Ruling out rival causal explanations is the core post-positivist check (Lesson 6)."},
-      {t:"Statistical generalization from a random sample to a population", b:0, why:"Generalising by probability sampling is a post-positivist goal."},
+      {t:"Statistical generalization from a random sample to a population", b:0, why:"Generalizing by probability sampling is a post-positivist goal."},
       {t:"Test–retest reliability of a measure", b:0, why:"Consistent measurement is a post-positivist concern."},
       {t:"Credibility: participants recognize the account as true to their experience", b:1, why:"Credibility is one of Lincoln and Guba’s trustworthiness criteria for interpretive research."},
       {t:"Transferability: enough detail for readers to judge whether findings fit their setting", b:1, why:"Transferability replaces statistical generalization in interpretive research."},
@@ -561,7 +561,7 @@ ICA.addUnit({
         ["Question type","Designs that often fit"],
         ["Descriptive","Cross-sectional survey of a random sample; secondary data; content analysis"],
         ["Comparative or relational","Cross-sectional or longitudinal survey; secondary data"],
-        ["Causal","Randomised experiment; quasi-experiment; natural experiment; panel data with careful controls"],
+        ["Causal","Randomized experiment; quasi-experiment; natural experiment; panel data with careful controls"],
         ["Exploratory","Interviews; case study; ethnography; exploratory sequential mixed methods"],
         ["“What happened and why?”","Explanatory sequential mixed methods; case study"]
       ]},
@@ -598,12 +598,12 @@ ICA.addUnit({
     ]},
     {id:"t4u6-l3-x5", type:"order", q:"Put the stages of an **exploratory sequential** mixed methods study in order.", items:[
       {t:"Interview a small group to learn how they understand the issue", why:"This design starts qualitative, because too little is known to measure well."},
-      {t:"Analyse the interviews for key ideas and the words people use", why:"The qualitative findings must be analyzed before they can shape anything."},
+      {t:"Analyze the interviews for key ideas and the words people use", why:"The qualitative findings must be analyzed before they can shape anything."},
       {t:"Build a survey from those ideas and words", why:"The “build” step turns qualitative findings into a measure."},
       {t:"Pilot and then run the survey with a larger sample", why:"The quantitative strand tests how widely the ideas apply."},
       {t:"Interpret what the second phase adds to the first", why:"Integration: explain how the two strands together answer the question."}
     ]},
-    {id:"t4u6-l3-x6", type:"sort", q:"Which design fits each invented question best?", buckets:["Randomised experiment","Cross-sectional survey","Case study or ethnography","Explanatory sequential mixed methods"], items:[
+    {id:"t4u6-l3-x6", type:"sort", q:"Which design fits each invented question best?", buckets:["Randomized experiment","Cross-sectional survey","Case study or ethnography","Explanatory sequential mixed methods"], items:[
       {t:"Does a free bus pass increase older adults’ attendance at a day center? (The center can offer passes to a random half of new members.)", b:0, why:"A causal question, and random assignment is possible and ethical here."},
       {t:"What share of small businesses in one country accept card payments?", b:1, why:"A descriptive “how common” question needs a representative sample measured once."},
       {t:"How did one fishing village organize itself after a cyclone?", b:2, why:"A how-and-why question about one setting calls for in-depth study of that case."},
@@ -777,7 +777,7 @@ ICA.addUnit({
    hook:{q:"A well-run trial shows that a new teaching method raised reading scores among 9-year-olds in 40 city schools. A rural district wants to use it for 14-year-olds. What does the trial tell them?", options:["It will definitely work for them, because the trial was well run","Nothing at all, because the trial was in cities","It’s good evidence that the method worked for those students, but whether it carries over to older, rural students is a separate question","The trial must have been badly designed, or it would apply everywhere"], answer:2, reveal:"A study can be convincing about **what happened inside it** ([[internal-validity|internal validity]]) and still leave open **whether it carries over** to other people, places and times ([[external-validity|external validity]]). They are different questions with different evidence. This lesson sets out the main kinds of validity, how measures are checked for reliability, and how to put your whole plan on one page."},
    goals:[
      "Explain internal, external, construct and statistical conclusion validity, with examples",
-     "Recognise the main threats to internal validity and the designs that guard against them",
+     "Recognize the main threats to internal validity and the designs that guard against them",
      "Describe how the reliability and validity of measures are checked, and how qualitative research judges trustworthiness",
      "Write a one-page research proposal whose question, design, sample and analysis match"
    ],
@@ -949,7 +949,7 @@ ICA.addUnit({
      {t:"Confounding variable", why:"A confounder affects both the presumed cause and the effect, creating a misleading link. Here it changes the size of a real effect."},
      {t:"Moderator", ok:true, why:"A moderator changes how strong an effect is, or for whom it occurs. The app helps one group of children more than another."}]},
    {id:"t4u6-cp06", lesson:"t4u6-l2", level:2, q:"A study of household food security asks: “In the last 30 days, on how many days did anyone in your home skip a meal because there wasn’t enough food?” What is this question?", options:[
-     {t:"An indicator: the specific item used to measure a variable", ok:true, why:"Operationalisation turns a concept (food security) into a variable (skipped-meal days) measured by an indicator (this survey item)."},
+     {t:"An indicator: the specific item used to measure a variable", ok:true, why:"Operationalization turns a concept (food security) into a variable (skipped-meal days) measured by an indicator (this survey item)."},
      {t:"A concept: the abstract idea being studied", why:"The concept is food security itself. This question is one concrete way of observing it."},
      {t:"A theory: an explanation of why food insecurity happens", why:"A theory explains how and why something happens. This question only measures."},
      {t:"A hypothesis: the relationship the study expects", why:"A hypothesis states an expected relationship between variables. This is a survey item."}]},
@@ -1109,7 +1109,7 @@ ICA.addUnit({
      builder:[
       {table:[
         ["Design","Strength","Main limit"],
-        ["Randomised experiment","Strongest test of cause (internal validity)","Not everything can be assigned; may not generalize"],
+        ["Randomized experiment","Strongest test of cause (internal validity)","Not everything can be assigned; may not generalize"],
         ["[[quasi-experiment|Quasi-experiment]]","Tests change in real settings","Groups may differ beforehand (selection)"],
         ["[[natural-experiment|Natural experiment]]","Chance-like groups created by events or rules","Rare; must argue the groups are comparable"],
         ["Cross-sectional","Quick, describes a population","Can’t establish time order"],
@@ -1126,7 +1126,7 @@ ICA.addUnit({
       "Terminology varies by field. In epidemiology, a cohort study follows people classified by exposure forward in time, and case-control studies sample on the outcome; in social science, “panel” usually means the same respondents re-interviewed, and “cohort” a group sharing a starting point such as birth year. Read each paper’s definition.",
       "Well-known cohorts include the Dunedin Multidisciplinary Health and Development Study (1,037 babies born in Dunedin, New Zealand, in 1972–73, assessed repeatedly into middle age) and Young Lives (about 12,000 children in Ethiopia, India, Peru and Vietnam since 2002). Many such datasets can be used by registered researchers, making longitudinal analysis possible without new data collection.",
       "Observational designs strengthen causal inference by establishing time order, measuring and adjusting for confounders, using within-person change (fixed effects), and comparing trends before and after a change in treated and untreated groups (difference-in-differences). None removes bias from unmeasured confounders as random assignment does.",
-      "Randomised trials have their own threats: drop-out, people not following their assigned group, and spill-over between groups. Analysing everyone as randomized (intention to treat) is the standard safeguard. Trials are expected to be registered in a public registry (for example one listed by the WHO International Clinical Trials Registry Platform) before recruitment, and many other studies now preregister too.",
+      "Randomized trials have their own threats: drop-out, people not following their assigned group, and spill-over between groups. Analyzing everyone as randomized (intention to treat) is the standard safeguard. Trials are expected to be registered in a public registry (for example one listed by the WHO International Clinical Trials Registry Platform) before recruitment, and many other studies now preregister too.",
       "Case study methodologists stress that cases are selected for what they can reveal (typical, extreme, deviant or critical cases), and that generalization is analytic (to theory) rather than statistical."
      ]
     },
@@ -1356,7 +1356,7 @@ ICA.addUnit({
    {id:"pico-framework", term:"PICO", def:"A way to structure a question about an intervention: Population, Intervention, Comparison, Outcome. Variants include PICOT, PECO, SPIDER and PCC.", codex:"finer-pico"},
    {id:"theory-research", term:"Theory (in research)", def:"A set of connected ideas that explains how and why something happens, and under what conditions, which research can test or build.", codex:"theory-hypotheses"},
    {id:"concept-research", term:"Concept (in research)", def:"An abstract idea a study is about, such as trust, workload or food security, which must be defined before it can be measured. Concepts created for a theory are often called constructs.", codex:"theory-hypotheses"},
-   {id:"conceptualisation", term:"Conceptualisation", def:"Stating precisely what you mean by a concept, including its dimensions, before deciding how to measure it.", codex:"theory-hypotheses"},
+   {id:"conceptualisation", term:"Conceptualization", def:"Stating precisely what you mean by a concept, including its dimensions, before deciding how to measure it.", codex:"theory-hypotheses"},
    {id:"levels-of-measurement", term:"Levels of measurement", def:"How much information a variable’s values carry: nominal (categories), ordinal (ordered), interval (equal steps) or ratio (equal steps and a true zero).", codex:"theory-hypotheses"},
    {id:"unit-of-analysis", term:"Unit of analysis", def:"The “who” or “what” a study draws conclusions about: people, households, schools, countries, documents and so on.", codex:"theory-hypotheses"},
    {id:"ecological-fallacy", term:"Ecological fallacy", def:"Wrongly concluding something about individuals from data about groups, such as regions or countries.", codex:"theory-hypotheses"},
@@ -1657,7 +1657,7 @@ ICA.addUnit({
      {t:"Abduction", ok:true, why:"Reasoning from a surprising fact to the best available explanation, which is then checked, is abduction, named by Peirce."},
      {t:"Deduction", why:"Deduction starts from a theory and derives a prediction. Hana started from a surprise in the data."},
      {t:"Induction", why:"Induction generalizes a pattern from many cases. Hana is explaining one surprising case."},
-     {t:"Operationalisation", why:"Operationalisation turns a concept into a measure. It isn’t a way of reasoning to an explanation."}]},
+     {t:"Operationalization", why:"Operationalization turns a concept into a measure. It isn’t a way of reasoning to an explanation."}]},
    {id:"t4u6-q52", lesson:"t4u6-l6", level:1, q:"Why is **pragmatism** often used to justify mixed methods research?", options:[
      {t:"It starts from the problem and picks methods that answer it", ok:true, why:"Pragmatism judges ideas and methods by their practical consequences, so combining numbers and words is justified when that answers the question best."},
      {t:"It says that all philosophical questions are meaningless", why:"Pragmatists take philosophical questions seriously; they test ideas by their consequences."},

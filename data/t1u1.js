@@ -1,7 +1,7 @@
 /* Track 1 · Unit 1 · How computers work */
 ICA.addUnit({
   id:"t1u1", track:"t1", n:1, title:"How computers work", icon:"🖥️",
-  blurb:"What is actually inside the phone, laptop or tablet you use every day, how it stores and measures information, what the operating system does, and how to give your device first aid when something goes wrong.",
+  blurb:"What is inside the phone, laptop or tablet you use every day. How it stores and measures information. What the operating system does. How to give your device first aid when something goes wrong.",
   goals:[
     "Describe any device as input, processing, storage and output, and tell hardware from software",
     "Explain what the CPU, RAM, storage and GPU each do, and read a real spec sheet with confidence",
@@ -22,13 +22,13 @@ ICA.addUnit({
     goals:[
       "Describe any device using four jobs: input, processing, storage and output",
       "Tell hardware from software (and spot the firmware in between)",
-      "Recognise the many kinds of computers around you, including servers",
+      "Recognize the many kinds of computers around you, including servers",
       "Explain in one sentence what “the cloud” physically is"
     ],
     learn:[
       {h:"A machine that follows instructions", body:[
         {lead:"A computer is a machine that takes in information, follows a list of instructions to change it, keeps it, and gives you a result."},
-        "Think of a cook working from a recipe. Ingredients come in. The cook follows the recipe step by step. Some things go into the fridge for later. A finished dish comes out. A [[computer]] does the same kind of work, except its ingredients are numbers, letters, pictures and sounds, and its recipe is a **program**: a precise list of instructions written by people.",
+        "Think of a cook working from a recipe. Ingredients come in. The cook follows the recipe step by step. Some things go into the fridge for later. A finished dish comes out. A [[computer]] does the same kind of work. Its ingredients are numbers, letters, pictures and sounds. Its recipe is a **program**: a precise list of instructions written by people.",
         "The precise version: a computer is an electronic device that accepts [[input]], **processes** it according to stored instructions, **stores** data and instructions, and produces [[output]]. Two things make it different from a calculator or a toaster. First, it is **programmable**: load different instructions and the same machine becomes a word processor, a video player or a map. Second, it works on **data** of any kind, because everything (text, photos, music, maps) is turned into numbers inside it. Lesson 3 shows how.",
         {key:"A computer = input → processing → output, with storage keeping things for later. Everything else in this unit is detail on those four jobs."}
       ]},
@@ -55,7 +55,7 @@ ICA.addUnit({
           ["Examples: processor, screen, battery, mouse, charger","Examples: operating system, web browser, photo app, a game"],
           ["Upgrading usually costs money and a screwdriver","Upgrading is often a free download"]
         ]},
-        "Between the two sits [[firmware]]: software that is stored inside a piece of hardware and controls it at the lowest level, such as the program that starts your computer before the operating system loads, or the software inside a printer or wireless router. You will meet firmware again in Lesson 4.",
+        "Between the two sits [[firmware]]. Firmware is software that is stored inside a piece of hardware and controls it at the lowest level. Two examples are the program that starts your computer before the operating system loads, and the software inside a printer or wireless router. You will meet firmware again in Lesson 4.",
         {warn:"A common mix-up: “My laptop is slow, so the hardware is old.” Often the cause is software: too many programs open, a stuck update, or something running in the background. Lesson 5 shows how to check before blaming (or replacing) the hardware."}
       ]},
       {h:"Many kinds of computers", body:[
@@ -131,7 +131,7 @@ ICA.addUnit({
       {id:"t1u1-l1-x5", type:"mcq", q:"Lucía taps “Back up photos to the cloud”. Physically, where do her photos end up?", options:[
         {t:"On storage drives in servers in the provider’s data centers", ok:true, why:"The cloud is other organizations’ computers that you reach over the internet. Her photos are real files on real drives."},
         {t:"Floating in the internet itself, not on any particular machine", why:"Data always has to be stored on some physical hardware. The internet only carries data between computers."},
-        {t:"In a satellite orbiting the Earth", why:"Satellites can carry internet signals in some places, but cloud storage lives in ground-based data centers."},
+        {t:"In a satellite orbiting the Earth", why:"Satellites can carry internet signals in some places. But cloud storage lives in ground-based data centers."},
         {t:"Only on her phone, with a link to it saved online", why:"That would not protect her photos if the phone were lost. A cloud backup copies the files onto the provider’s servers."}
       ]},
       {id:"t1u1-l1-x6", type:"match", q:"Match each problem to the job that is most likely failing.", pairs:[
@@ -140,13 +140,13 @@ ICA.addUnit({
         ["Screen stays black but you hear the start-up sound","Output","The computer is running (you hear it). The picture isn’t reaching you."],
         ["Everything freezes when many apps are open","Processing","The processor and working memory are overloaded by too much running at once."]
       ]},
-      {id:"t1u1-l1-x7", type:"explain", q:"Explain to a friend why asking “which of the four jobs is failing?” is a good first step when a device misbehaves. Use one example.", prompt:"Every device does four jobs…", hint:"Name the four jobs, then think about what a black screen with a working start-up sound tells you.", model:"Every device does four jobs: input brings information in, processing follows instructions to work on it, storage keeps it for later, and output gives you the result. If you work out which job is failing, you know where to look first instead of guessing. For example, if a laptop’s screen stays black but you hear the start-up sound, processing is clearly working, so the problem is output: check the screen, its brightness or the display cable.", points:["Names the four jobs: input, processing, storage, output", "Says it tells you where to look first instead of guessing", "Gives an example and matches it to the right job"]}
+      {id:"t1u1-l1-x7", type:"explain", q:"Explain to a friend why asking “which of the four jobs is failing?” is a good first step when a device misbehaves. Use one example.", prompt:"Every device does four jobs…", hint:"Name the four jobs, then think about what a black screen with a working start-up sound tells you.", model:"Every device does four jobs. Input brings information in. Processing follows instructions to work on it. Storage keeps it for later. Output gives you the result. If you work out which job is failing, you know where to look first instead of guessing. For example, a laptop’s screen stays black, but you hear the start-up sound. Processing is clearly working, so the problem is output: check the screen, its brightness or the display cable.", points:["Names the four jobs: input, processing, storage, output", "Says it tells you where to look first instead of guessing", "Gives an example and matches it to the right job"]}
     ],
     apply:{
       intro:"Look at your own device with the four-jobs model, and find out exactly what it is.",
       tasks:[
         {t:"Find the name, model and operating system of the device you’re using", how:{
-          win:["Select **Start**, then **Settings**.","Go to **System → About**.","Under **Device specifications** note the device name; under **Windows specifications** note the **Edition** and **Version**."],
+          win:["Select **Start**, then **Settings**.","Go to **System → About**.","Under **Device specifications**, note the device name. Under **Windows specifications**, note the **Edition** and **Version**."],
           mac:["Click the **Apple menu** (top-left corner).","Choose **About This Mac**.","Note the model name, the chip or processor, and the macOS name and version."],
           chromeos:["Select the time in the bottom-right corner, then the **Settings** gear.","Select **About ChromeOS** (bottom-left).","Note the ChromeOS version. The device model is usually printed on a sticker underneath, or shown in the **Diagnostics** app (search for it in the Launcher)."],
           phone:["**iPhone:** open **Settings → General → About**. Note the **Model Name** and **iOS Version**.","**Android:** open **Settings → About phone** (on tablets, **About tablet**). Note the model and the **Android version**. Some makers put the version under **Software information**."]
@@ -169,17 +169,17 @@ ICA.addUnit({
       "Explain what the CPU, RAM, storage and GPU each do, in plain words",
       "Tell memory (RAM) from storage and use the words correctly",
       "Compare SSDs and hard disk drives",
-      "Recognise common ports and wireless connections",
+      "Recognize common ports and wireless connections",
       "Read a real spec sheet and pick out what matters for everyday study and work"
     ],
     learn:[
       {h:"The processor (CPU): the cook", body:[
         {lead:"The [[cpu|central processing unit (CPU)]], or processor, is the part that actually carries out instructions."},
-        "Back to the kitchen. The CPU is the cook. It reads one instruction at a time (“add these two numbers”, “copy this from here to there”, “if this is bigger, jump to that step”) and does it, astonishingly fast. Everything you see a computer do is built from billions of these tiny steps.",
+        "Back to the kitchen. The CPU is the cook. It reads one instruction at a time and does it, astonishingly fast. Examples of instructions are “add these two numbers”, “copy this from here to there” and “if this is bigger, jump to that step”. Everything you see a computer do is built from billions of these tiny steps.",
         "Two numbers describe a processor on a spec sheet:",
         {list:[
-          "**Cores.** A [[core]] is one complete cook inside the chip. A 4-core processor is like four cooks in one kitchen: they can work on different tasks at the same time, such as your video call, your browser and a background update.",
-          "**Clock speed.** The [[clock-speed|clock speed]] is how many steps per second each core can take, measured in gigahertz (GHz). 1 GHz means one billion cycles per second. You will often see two numbers, such as “base 2.0 GHz, up to 4.5 GHz”: the chip speeds up for short bursts and slows down to save power and stay cool."
+          "**Cores.** A [[core]] is one complete cook inside the chip. A 4-core processor is like four cooks in one kitchen. They can work on different tasks at the same time, such as your video call, your browser and a background update.",
+          "**Clock speed.** The [[clock-speed|clock speed]] is how many steps per second each core can take. It is measured in gigahertz (GHz). 1 GHz means one billion cycles per second. You will often see two numbers, such as “base 2.0 GHz, up to 4.5 GHz”. The chip speeds up for short bursts. It slows down to save power and stay cool."
         ]},
         {warn:"You can’t compare processors by GHz alone. A newer design can do more work per cycle, so a newer 2.5 GHz chip can beat an older 3.5 GHz one. Compare model names and generations, or look up independent reviews, rather than trusting one number."},
         "In phones, tablets and many laptops, the CPU is part of a single chip that also contains the graphics processor and other parts. This is called a [[system-on-chip|system on a chip (SoC)]]. The idea is the same: there are still cores carrying out the instructions."
@@ -239,7 +239,7 @@ ICA.addUnit({
           ["[[bluetooth|Bluetooth]]","No plug: short-range radio","Wireless headphones, mice, keyboards, watches"],
           ["Wi-Fi","No plug: radio","Connecting to a wireless network and the internet"]
         ]},
-        {warn:"**USB-C is a shape, not a promise.** The same oval plug can carry slow or fast data, small or large amounts of charging power, and sometimes a video signal to a monitor, but only if the port, the cable **and** the device all support that feature. If a monitor shows nothing over USB-C, the port or cable may simply not carry video. Look for small symbols next to the port, or check the maker’s spec sheet."},
+        {warn:"**USB-C is a shape, not a promise.** The same oval plug can carry slow or fast data. It can carry small or large amounts of charging power. Sometimes it carries a video signal to a monitor. But this works only if the port, the cable **and** the device all support that feature. If a monitor shows nothing over USB-C, the port or cable may simply not carry video. Look for small symbols next to the port, or check the maker’s spec sheet."},
         "Some USB-C ports are also labeled **Thunderbolt** (a lightning-bolt symbol). They use the same shape and add extra speed and features. A Thunderbolt port works with ordinary USB-C devices too."
       ]},
       {h:"Reading a real spec sheet", body:[
@@ -308,7 +308,7 @@ ICA.addUnit({
         {t:"More easily damaged if dropped while running", b:1, why:"The moving arm and spinning platters are sensitive to knocks."},
         {t:"Same family of technology as a USB stick", b:0, why:"Both use flash memory."}
       ]},
-      {id:"t1u1-l2-x8", type:"explain", q:"A salesclerk says: “This laptop has 512 GB of memory, so it will never slow down, however many tabs you open.” Explain what is wrong with that.", hint:"Is 512 GB more likely to be RAM or storage? Which one holds what you have open?", model:"512 GB is almost certainly the storage (the SSD), not the memory. Storage is the cupboard: it keeps files, apps and the operating system even when the power is off. RAM is the workspace: it holds whatever is open right now and empties when you switch off. How many tabs and apps you can keep open smoothly depends mainly on RAM, which is usually a few to a few dozen GB, so you would need to check the RAM figure instead.", points:["Says 512 GB is storage, not RAM", "Explains that RAM holds what is open right now", "Explains that storage keeps things when the power is off", "Says lots of open tabs depend mainly on RAM"]}
+      {id:"t1u1-l2-x8", type:"explain", q:"A salesclerk says: “This laptop has 512 GB of memory, so it will never slow down, however many tabs you open.” Explain what is wrong with that.", hint:"Is 512 GB more likely to be RAM or storage? Which one holds what you have open?", model:"512 GB is almost certainly the storage (the SSD), not the memory. Storage is the cupboard: it keeps files, apps and the operating system even when the power is off. RAM is the workspace: it holds whatever is open right now and empties when you switch off. The number of tabs and apps you can keep open smoothly depends mainly on RAM. RAM is usually a few to a few dozen GB, so you would need to check the RAM figure instead.", points:["Says 512 GB is storage, not RAM", "Explains that RAM holds what is open right now", "Explains that storage keeps things when the power is off", "Says lots of open tabs depend mainly on RAM"]}
     ],
     apply:{
       intro:"Find the real specs of the device you’re using, and practice reading a spec sheet.",
@@ -376,7 +376,7 @@ ICA.addUnit({
       ]},
       {h:"Binary prefixes and the “missing” space", body:[
         "Here is the wrinkle. Because computers work in powers of two, programmers long used “kilobyte” to mean **1,024** bytes (2¹⁰), which is close to 1,000. The gap is small for a kilobyte but grows with each step: by the time you reach a terabyte it is nearly 10%.",
-        "To end the confusion, in 1998 the International Electrotechnical Commission (IEC) created separate **binary prefixes**:",
+        "In 1998, the International Electrotechnical Commission (IEC) created separate **binary prefixes** to end the confusion:",
         {table:[
           ["Binary unit","Symbol","Bytes","Compared with the decimal unit"],
           ["kibibyte","KiB","1,024","2.4% more than 1 kB"],
@@ -385,7 +385,7 @@ ICA.addUnit({
           ["tebibyte","TiB","1,099,511,627,776","10% more than 1 TB"]
         ]},
         "The trouble is that not every system uses the new names. **Windows** (File Explorer and Settings) calculates sizes in binary units but still labels them “KB”, “MB” and “GB”. **Current macOS, iOS and iPadOS** calculate in decimal, matching the box (Apple says much older versions, up to iOS 10 and OS X Leopard, used binary). Linux tools, Android and individual apps vary; some show “GiB” honestly.",
-        {fig:'<svg viewBox="0 0 340 244"><text class="s" x="170" y="20" text-anchor="middle">The same drive, measured</text><text class="s" x="170" y="36" text-anchor="middle">with two different rulers</text><rect class="d-gold" x="9.4" y="46" width="321.1" height="36" rx="6" stroke-width="2"/><text x="170" y="69" text-anchor="middle">512,000,000,000 bytes</text><rect class="d-sage" x="9.4" y="94" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="114" text-anchor="middle">= 512 GB</text><text class="s" x="170" y="132" text-anchor="middle">÷ 1,000 ÷ 1,000 ÷ 1,000</text><text class="s" x="170" y="150" text-anchor="middle">the box, macOS and iOS show this</text><rect class="d-lup" x="9.4" y="170" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="190" text-anchor="middle">= 476.8 GiB</text><text class="s" x="170" y="208" text-anchor="middle">÷ 1,024 ÷ 1,024 ÷ 1,024</text><text class="s" x="170" y="226" text-anchor="middle">Windows shows this as “476 GB”</text></svg>', alt:"Diagram: one bar labeled 512,000,000,000 bytes. Below it, two equally long bars: one says equals 512 GB, dividing by 1,000 three times, as the box, macOS and iOS show it; the other says equals 476.8 GiB, dividing by 1,024 three times, which Windows shows as 476 GB.", cap:"Nothing is missing: the same number of bytes is divided by 1,000 three times or by 1,024 three times."},
+        {fig:'<svg viewBox="0 0 340 244"><text class="s" x="170" y="20" text-anchor="middle">The same drive, measured</text><text class="s" x="170" y="36" text-anchor="middle">with two different rulers</text><rect class="d-gold" x="9.4" y="46" width="321.1" height="36" rx="6" stroke-width="2"/><text x="170" y="69" text-anchor="middle">512,000,000,000 bytes</text><rect class="d-sage" x="9.4" y="94" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="114" text-anchor="middle">= 512 GB</text><text class="s" x="170" y="132" text-anchor="middle">÷ 1,000 ÷ 1,000 ÷ 1,000</text><text class="s" x="170" y="150" text-anchor="middle">the box, macOS and iOS show this</text><rect class="d-lup" x="9.4" y="170" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="190" text-anchor="middle">= 476.8 GiB</text><text class="s" x="170" y="208" text-anchor="middle">÷ 1,024 ÷ 1,024 ÷ 1,024</text><text class="s" x="170" y="226" text-anchor="middle">Windows shows this as “476 GB”</text></svg>', alt:"Diagram: one bar labeled 512,000,000,000 bytes. Below it are two equally long bars. One says equals 512 GB, dividing by 1,000 three times, as the box, macOS and iOS show it. The other says equals 476.8 GiB, dividing by 1,024 three times, which Windows shows as 476 GB.", cap:"Nothing is missing: the same number of bytes is divided by 1,000 three times or by 1,024 three times."},
         {ex:"A drive sold as **512 GB** holds 512 × 1,000,000,000 = 512,000,000,000 bytes.\nIn binary units: 512,000,000,000 ÷ 1,073,741,824 ≈ **476.8 GiB**.\nWindows shows this as about **476 GB**. A Mac would show about **512 GB**.\nOn top of that, the operating system, recovery tools and pre-installed apps use part of the drive, so the space **available** to you is smaller again.", label:"Worked example: the “missing” 35 GB"},
         {key:"Nobody stole your space. The box uses decimal GB; Windows uses binary units but calls them GB. The operating system then takes its own share."},
         "One more twist: RAM is always made in powers of two, so “16 GB of RAM” really means 16 GiB. You don’t need to do anything with that fact; just don’t be surprised by it."
@@ -443,7 +443,7 @@ ICA.addUnit({
         {v:1600, tol:0, why:"You multiplied by 8. Going from bits to bytes gives a smaller number, because a byte is the bigger unit."}
       ]},
       {id:"t1u1-l3-x5", type:"mcq", q:"Ana pays for **50 Mbps** internet. While downloading a big file, her browser shows **6 MB/s**. What’s going on?", options:[
-        {t:"Nothing is wrong: 50 Mbps ÷ 8 is about 6.25 MB/s", ok:true, why:"Her provider measures in megabits; her browser measures in megabytes. 6 MB/s is almost exactly what 50 Mbps can deliver, so she is getting nearly the full speed."},
+        {t:"Nothing is wrong: 50 Mbps ÷ 8 is about 6.25 MB/s", ok:true, why:"Her provider measures in megabits. Her browser measures in megabytes. 6 MB/s is almost exactly what 50 Mbps can deliver, so she is getting nearly the full speed."},
         {t:"She’s getting only about an eighth of what she pays for", why:"That compares 6 megabytes with 50 megabits. Convert first: 6 MB/s × 8 = 48 Mbps, which is close to 50."},
         {t:"Her browser is showing the wrong number", why:"The browser is right; it just uses a different unit (MB/s) from the plan (Mbps)."},
         {t:"Her plan must really be 6 Mbps", why:"6 Mbps would give only about 0.75 MB/s. Her download is much faster than that."}
@@ -463,7 +463,7 @@ ICA.addUnit({
         {t:"“16 GB” of RAM", b:1, why:"RAM is built in powers of two, so 16 GB of RAM is really 16 GiB."},
         {t:"“MiB” in a Linux disk tool", b:1, why:"MiB is the binary mebibyte, 1,048,576 bytes."}
       ]},
-      {id:"t1u1-l3-x8", type:"explain", q:"Sofia pays for a 200 Mbps internet plan, but a game download shows about 20 MB/s. She thinks she is being cheated. Explain why this is normal.", size:"2–3 sentences", hint:"Look closely at the letter case: b and B.", model:"Internet plans are sold in megabits per second (Mbps), but download screens show megabytes per second (MB/s), and one byte is eight bits. So 200 Mbps ÷ 8 is at most about 25 MB/s. Real downloads usually come in a little below that best case, because the Wi-Fi signal, other people on the connection, the server and network overhead all take a share, so about 20 MB/s is close to what the plan can deliver.", points:["Says Mbps is bits and MB/s is bytes", "Divides by 8 to get a best case of about 25 MB/s", "Gives a reason real downloads are slower than the best case"]}
+      {id:"t1u1-l3-x8", type:"explain", q:"Sofia pays for a 200 Mbps internet plan, but a game download shows about 20 MB/s. She thinks she is being cheated. Explain why this is normal.", size:"2–3 sentences", hint:"Look closely at the letter case: b and B.", model:"Internet plans are sold in megabits per second (Mbps). Download screens show megabytes per second (MB/s). One byte is eight bits. So 200 Mbps ÷ 8 is at most about 25 MB/s. Real downloads are usually a little below that best case. The Wi-Fi signal, other people on the connection, the server and network overhead all take a share. So about 20 MB/s is close to what the plan can deliver.", points:["Says Mbps is bits and MB/s is bytes", "Divides by 8 to get a best case of about 25 MB/s", "Gives a reason real downloads are slower than the best case"]}
     ],
     apply:{
       intro:"Put the numbers on your own device and your own connection.",
@@ -473,11 +473,11 @@ ICA.addUnit({
           win:["Open **File Explorer** and find a photo.","Right-click it and choose **Properties**. Note the **Size**."],
           mac:["Find a photo in **Finder**.","Select it and press [[kbd:Cmd]] + [[kbd:I]] (**Get Info**). Note the size."],
           chromeos:["Open the **Files** app and find a photo.","Switch to list view if needed; the **Size** column shows the file size."],
-          phone:["**iPhone:** in **Photos**, open a photo and swipe up (or tap the **ⓘ** button). Recent iOS versions show the file size there; if yours doesn’t, save a copy to the **Files** app (**Share → Save to Files**), then touch and hold it and choose **Get Info**.","**Android:** in your gallery app, open a photo and look for **Details** or **Info** (often in the **⋮** menu). Names vary by maker."]
+          phone:["**iPhone:** in **Photos**, open a photo and swipe up (or tap the **ⓘ** button). Recent iOS versions show the file size there. If yours doesn’t, save a copy to the **Files** app (**Share → Save to Files**). Then touch and hold it and choose **Get Info**.","**Android:** in your gallery app, open a photo and look for **Details** or **Info** (often in the **⋮** menu). Names vary by maker."]
         }},
         {t:"Test your internet speed and convert it", how:["Run a speed test from your internet provider or a well-known service (search “internet speed test”; several, such as M-Lab’s or Ookla’s, are free).","Write down the download and upload speeds in Mbps.","Divide each by 8 to get MB/s, then work out how long a 2 GB file would take at your measured speed."]}
       ],
-      proof:"A note with: your advertised vs reported storage (and why they differ), the size of one real photo and how many such photos would fit in your free space, and your measured speed in both Mbps and MB/s."
+      proof:"A note with three things. First, your advertised and reported storage, and why they differ. Second, the size of one real photo, and how many such photos fit in your free space. Third, your measured speed in both Mbps and MB/s."
     },
     read:[
       {book:"ics", where:"Chapter 5, Section 5.3 “Machine-Level Information Representation”: “Integer Numbers Representation” and “Character Representation”"},
@@ -487,7 +487,7 @@ ICA.addUnit({
   /* ================= LESSON 4 ================= */
   {
     id:"t1u1-l4", title:"Operating systems and apps", minutes:50,
-    hook:{q:"Two apps on your phone both want the camera at the same moment. Who decides which one gets it?", options:["The camera itself","Whichever app opened first","The operating system","Your phone company"], answer:2, reveal:"The **operating system**. Think of it as a hotel manager: apps are the guests, the hardware is the rooms and kitchen, and the manager hands them out, keeps guests out of each other’s rooms, and asks you before anyone gets the camera or your location."},
+    hook:{q:"Two apps on your phone both want the camera at the same moment. Who decides which one gets it?", options:["The camera itself","Whichever app opened first","The operating system","Your phone company"], answer:2, reveal:"The **operating system**. Think of it as a hotel manager. The apps are the guests, and the hardware is the rooms and kitchen. The manager gives them out, keeps guests out of each other’s rooms, and asks you before anyone gets the camera or your location."},
     goals:[
       "Explain the main jobs of an operating system",
       "Name the main operating systems and the devices they run on",
@@ -498,7 +498,7 @@ ICA.addUnit({
     learn:[
       {h:"What an operating system does", body:[
         {lead:"The [[operating-system|operating system (OS)]] is the main program that runs the whole device and lets every other program share it safely."},
-        "Picture a busy hotel. The guests are the apps. The rooms, lifts, kitchen and laundry are the hardware. The hotel manager is the operating system: the manager hands out rooms, decides who uses the lift next, keeps guests out of each other’s rooms, keeps the records, and calls the right technician when something breaks. Guests never rewire the building themselves; they ask the manager.",
+        "Picture a busy hotel. The guests are the apps. The rooms, elevators, kitchen and laundry are the hardware. The hotel manager is the operating system. The manager gives out rooms, decides who uses the elevator next, and keeps guests out of each other’s rooms. The manager also keeps the records and calls the right technician when something breaks. Guests never rewire the building themselves. They ask the manager.",
         "In precise terms, the OS:",
         {list:[
           "**Manages hardware.** Apps don’t talk to the printer, camera or Wi-Fi chip directly. They ask the OS, and the OS uses [[driver|drivers]] to talk to each device.",
@@ -508,7 +508,7 @@ ICA.addUnit({
           "**Protects the system.** It enforces permissions, installs security updates, and stops one app from reading another app’s data.",
           "**Gives you an interface.** The desktop, home screen, windows, notifications and settings are all the OS."
         ]},
-        {fig:'<svg viewBox="0 0 340 300"><rect class="d-sage" x="9.4" y="8" width="321.1" height="40" rx="8" stroke-width="2"/><text x="170" y="33" text-anchor="middle">Apps: browser, email, photos, games</text><rect class="d-rose" x="9.4" y="58" width="321.1" height="76" rx="8" stroke-width="2"/><text x="170" y="82" text-anchor="middle">Operating system</text><text class="s" x="170" y="102" text-anchor="middle">runs apps · shares CPU and RAM</text><text class="s" x="170" y="120" text-anchor="middle">files · users · security</text><rect class="d-lup" x="9.4" y="144" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="167" text-anchor="middle">Drivers (one per kind of device)</text><rect class="d-gold" x="9.4" y="190" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="213" text-anchor="middle">Firmware (built into the hardware)</text><rect class="d-panel" x="9.4" y="236" width="321.1" height="56" rx="8" stroke-width="2"/><text x="170" y="259" text-anchor="middle">Hardware: CPU, RAM, storage,</text><text x="170" y="278" text-anchor="middle">screen, Wi-Fi</text></svg>', alt:"Diagram of five stacked layers. From top: Apps; Operating system, which runs apps, shares CPU and RAM, and manages files, users and security; Drivers; Firmware built into the hardware; and Hardware at the bottom.", cap:"Layers: apps ask the operating system; the OS uses drivers and firmware to control the hardware. Each layer only talks to its neighbors."},
+        {fig:'<svg viewBox="0 0 340 300"><rect class="d-sage" x="9.4" y="8" width="321.1" height="40" rx="8" stroke-width="2"/><text x="170" y="33" text-anchor="middle">Apps: browser, email, photos, games</text><rect class="d-rose" x="9.4" y="58" width="321.1" height="76" rx="8" stroke-width="2"/><text x="170" y="82" text-anchor="middle">Operating system</text><text class="s" x="170" y="102" text-anchor="middle">runs apps · shares CPU and RAM</text><text class="s" x="170" y="120" text-anchor="middle">files · users · security</text><rect class="d-lup" x="9.4" y="144" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="167" text-anchor="middle">Drivers (one per kind of device)</text><rect class="d-gold" x="9.4" y="190" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="213" text-anchor="middle">Firmware (built into the hardware)</text><rect class="d-panel" x="9.4" y="236" width="321.1" height="56" rx="8" stroke-width="2"/><text x="170" y="259" text-anchor="middle">Hardware: CPU, RAM, storage,</text><text x="170" y="278" text-anchor="middle">screen, Wi-Fi</text></svg>', alt:"Diagram of five stacked layers. From top: Apps. Operating system, which runs apps, shares CPU and RAM, and manages files, users and security. Drivers. Firmware built into the hardware. Hardware at the bottom.", cap:"Layers: apps ask the operating system; the OS uses drivers and firmware to control the hardware. Each layer only talks to its neighbors."},
         {key:"Apps do your tasks; the operating system runs the device and keeps apps, users and hardware in order."}
       ]},
       {h:"The main operating systems", body:[
@@ -540,7 +540,7 @@ ICA.addUnit({
           ["Uses device storage","Yes","Very little"]
         ]},
         "Many services offer both: an email service, an office suite or a video-call tool may have a website **and** an app. Some web apps can also be “installed” from the browser so they open in their own window; they are still web apps underneath.",
-        "Every app, installed or web, started life as code a person wrote. Unit 12, Lesson 1 shows how a program is made and turned into something a processor can run, and Unit 12, Lesson 5 follows one tap through an app’s front end, back end and data."
+        "Every app, installed or web, started as code that a person wrote. Unit 12, Lesson 1 shows how a program is made and turned into something a processor can run. Unit 12, Lesson 5 follows one tap through an app’s front end, back end and data."
       ]},
       {h:"Installing apps safely", body:[
         "Most harmful software arrives because someone was tricked into installing it. A few habits avoid almost all of that risk.",
@@ -557,7 +557,7 @@ ICA.addUnit({
       ]},
       {h:"Drivers and firmware", body:[
         "A [[driver]] is a small piece of software that lets the operating system talk to one particular piece of hardware: a printer, a graphics chip, a webcam. Think of it as an interpreter between the OS’s general language and the device’s own. Without the right driver, a device may not work at all or may lose features.",
-        "The good news: modern systems find and install most drivers automatically, often through their normal update tools (Windows Update, for example, delivers many drivers). If you do need one, get it from the device maker’s official support site, never from a “driver updater” program advertised online.",
+        "The good news: modern systems find and install most drivers automatically. They often do this through their normal update tools. For example, Windows Update delivers many drivers. If you do need one, get it from the device maker’s official support site. Never get it from a “driver updater” program advertised online.",
         "[[firmware|Firmware]] is software stored inside the hardware itself. Your computer’s start-up firmware (called **UEFI** or **BIOS** on PCs) runs before the operating system and gets everything ready to [[boot]]. Routers, printers, earbuds, smart TVs and even keyboards have firmware. Makers release firmware updates to fix bugs and security holes.",
         {warn:"During a firmware update, keep the device plugged in and don’t turn it off. Interrupting a firmware update can leave a device unable to start."}
       ]},
@@ -570,7 +570,7 @@ ICA.addUnit({
           ["System-wide changes","Must enter an administrator’s password","…plus install software for everyone, change security settings, manage other accounts"],
           ["If malware runs","Limited to what this account can change","Can change almost anything on the system"]
         ]},
-        "Security agencies and Microsoft give the same advice: **use a standard account for day-to-day work**, and use an [[admin-account|administrator account]] only when you need to make a system change. Microsoft’s own guidance says it is safer to have fewer administrators and use standard accounts for day-to-day activities. The US Cybersecurity and Infrastructure Security Agency (CISA) and the Australian Signals Directorate give the same advice.",
+        "Security agencies and Microsoft give the same advice: **use a standard account for day-to-day work**. Use an [[admin-account|administrator account]] only when you need to make a system change. Microsoft’s own guidance says it is safer to have fewer administrators and to use standard accounts for day-to-day activities. The US Cybersecurity and Infrastructure Security Agency (CISA) and the Australian Signals Directorate give the same advice.",
         "Why it helps: anything that runs while you are signed in, including something malicious you clicked by accident, gets your account’s powers. On a standard account, a system-wide change triggers a prompt for an administrator password, which is a moment to stop and think. It is not a complete shield (malware can still reach your own files, which is why Unit 2 covers backups), but it limits the damage.",
         {warn:"Never change your **only** administrator account to standard: you could lock yourself out of system changes. Create a separate administrator account first, check you can sign in to it, then switch your daily account to standard. On a work or school device, your IT team manages this for you."},
         "Phones work a little differently. There is usually one owner, and apps are kept apart from each other by design, so the same idea shows up as app permissions instead."
@@ -595,7 +595,7 @@ ICA.addUnit({
         {t:"Calculates totals in a budget spreadsheet", b:1, why:"That’s the spreadsheet app’s job."}
       ]},
       {id:"t1u1-l4-x3", type:"mcq", q:"Oluwaseun wants a free PDF reader for his Windows laptop. Which is the safest way to get one?", options:[
-        {t:"Install it from the Microsoft Store, or from the developer’s official website reached by typing its address", ok:true, why:"Official stores and official developer sites are the trustworthy sources. Typing the address avoids look-alike sites."},
+        {t:"Install it from the Microsoft Store, or from the developer’s official website reached by typing its address", ok:true, why:"Official stores and official developer sites are the trusted sources. Typing the address yourself avoids look-alike sites."},
         {t:"Click the first “Download Free PDF Reader” advert in the search results", why:"Search adverts are sometimes bought by look-alike sites that bundle unwanted or harmful software."},
         {t:"Install a file a stranger shared in a community group chat", why:"Files sent in chats can contain malware, and there’s no way to know where they came from."},
         {t:"Download a “cracked” copy of a paid PDF editor", why:"Cracked software is a very common way to spread malware, and it’s illegal in most places."}
@@ -611,11 +611,11 @@ ICA.addUnit({
         {t:"Decide what you need the app to do and check it supports your operating system", why:"Start with the need, so you don’t install something that won’t run."},
         {t:"Find it in the official app store or on the developer’s official site", why:"Choose a trustworthy source before downloading anything."},
         {t:"Check the developer name, recent reviews and the permissions it asks for", why:"Look-alike apps exist even in official stores."},
-        {t:"Install it, answering any administrator prompt only because you started this install", why:"A prompt you expected is fine; an unexpected one is a warning."},
+        {t:"Install it. Answer any administrator prompt only because you started this install", why:"A prompt you expected is fine; an unexpected one is a warning."},
         {t:"Open it, review its permissions and turn on updates", why:"Adjust permissions to the minimum and keep it updated."}
       ]},
       {id:"t1u1-l4-x6", type:"mcq", q:"Dmitri uses an **administrator** account every day. He opens an email attachment that quietly tries to install software for all users. If he had been using a **standard** account, what would most likely happen?", options:[
-        {t:"Windows would ask for an administrator password first", ok:true, why:"Standard accounts can’t make system-wide changes without an administrator’s approval, so the hidden install becomes a visible prompt that gives him a chance to stop it."},
+        {t:"Windows would ask for an administrator password first", ok:true, why:"Standard accounts can’t make system-wide changes without an administrator’s approval. So the hidden install becomes a visible prompt, and he has a chance to stop it."},
         {t:"Nothing different: account type makes no difference to security", why:"Account type decides what programs running as you are allowed to change. That is exactly what limits malware."},
         {t:"The attachment couldn’t have opened at all", why:"Standard accounts can open files normally. The protection applies to system-wide changes."},
         {t:"He would be completely protected from all harm", why:"A standard account limits damage but isn’t a full shield. Malware could still reach his own files, which is why backups matter."}
@@ -639,7 +639,7 @@ ICA.addUnit({
         }},
         {t:"Tidy up your apps", how:["List the apps you haven’t opened in the last few months.","Uninstall the ones you don’t need (you can reinstall from the official store later).","For the ones you keep, make sure updates are switched on."]}
       ],
-      proof:"A note with your operating system and version, your account type, one permission you changed (or confirmed was right) and why, and any apps you removed."
+      proof:"A note with your operating system and version, your account type, and one permission you changed (or confirmed was right) and why. Also list any apps you removed."
     },
     read:[
       {book:"ics", where:"Chapter 6, Section 6.1 “What Is an Operating System?”: “Hardware Management” and “Protected Sharing”"},
@@ -656,7 +656,7 @@ ICA.addUnit({
       "Check for updates and free up storage on your own devices",
       "See what is using your device’s processor, memory and battery",
       "Describe a problem clearly and search an error message well",
-      "Recognise when to stop and ask for help"
+      "Recognize when to stop and ask for help"
     ],
     learn:[
       {h:"A calm first-aid mindset", body:[
@@ -669,12 +669,12 @@ ICA.addUnit({
           "**Change one thing at a time,** and check after each change whether the problem is gone. Otherwise you won’t know what fixed it, or what made it worse.",
           "**Search or ask** with a clear description if the simple fixes don’t work."
         ]},
-        {fig:'<svg viewBox="0 0 340 502"><defs><marker id="t1u1-l5-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-sage" x="9.4" y="8" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="29" text-anchor="middle">1  Save work, note the message</text><path class="d-ink" d="M170,41 L170,58" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="60" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="81" text-anchor="middle">2  Close and reopen the app</text><path class="d-ink" d="M170,93 L170,110" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="112" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="133" text-anchor="middle">3  Restart the device</text><path class="d-ink" d="M170,145 L170,162" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="164" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="185" text-anchor="middle">4  Check for updates</text><path class="d-ink" d="M170,197 L170,214" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="216" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="237" text-anchor="middle">5  Check storage and resources</text><path class="d-ink" d="M170,249 L170,266" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-gold" x="9.4" y="268" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="289" text-anchor="middle">6  Search the exact error, or ask</text><text class="s" x="170" y="322" text-anchor="middle">Check after each step: fixed? Then stop.</text><rect class="d-rose" x="9.4" y="336" width="321.1" height="156" rx="10" stroke-width="2"/><text x="170" y="360" text-anchor="middle">Stop and get help</text><text class="s" x="170" y="378" text-anchor="middle">at any step</text><text class="s" x="37.8" y="402">• smoke or burning smell</text><text class="s" x="37.8" y="422">• swollen battery</text><text class="s" x="37.8" y="442">• liquid or physical damage</text><text class="s" x="37.8" y="462">• ransom or “pay to unlock”</text><text class="s" x="37.8" y="482">• data-loss warnings</text></svg>', alt:"Flowchart of six steps from top to bottom: save work and note the message; close and reopen the app; restart the device; check for updates; check storage and resources; search the exact error or ask. Below it a red box: stop and get help at any step if there is smoke or a burning smell, a swollen battery, liquid or physical damage, a ransom or pay-to-unlock message, or data-loss warnings.", cap:"The first-aid routine. Work down the steps, checking after each one; jump to the red box at any point if you see a danger sign."}
+        {fig:'<svg viewBox="0 0 340 502"><defs><marker id="t1u1-l5-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-sage" x="9.4" y="8" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="29" text-anchor="middle">1  Save work, note the message</text><path class="d-ink" d="M170,41 L170,58" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="60" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="81" text-anchor="middle">2  Close and reopen the app</text><path class="d-ink" d="M170,93 L170,110" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="112" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="133" text-anchor="middle">3  Restart the device</text><path class="d-ink" d="M170,145 L170,162" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="164" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="185" text-anchor="middle">4  Check for updates</text><path class="d-ink" d="M170,197 L170,214" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-lup" x="9.4" y="216" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="237" text-anchor="middle">5  Check storage and resources</text><path class="d-ink" d="M170,249 L170,266" stroke-width="2" marker-end="url(#t1u1-l5-mk)"/><rect class="d-gold" x="9.4" y="268" width="321.1" height="32" rx="8" stroke-width="2"/><text x="170" y="289" text-anchor="middle">6  Search the exact error, or ask</text><text class="s" x="170" y="322" text-anchor="middle">Check after each step: fixed? Then stop.</text><rect class="d-rose" x="9.4" y="336" width="321.1" height="156" rx="10" stroke-width="2"/><text x="170" y="360" text-anchor="middle">Stop and get help</text><text class="s" x="170" y="378" text-anchor="middle">at any step</text><text class="s" x="37.8" y="402">• smoke or burning smell</text><text class="s" x="37.8" y="422">• swollen battery</text><text class="s" x="37.8" y="442">• liquid or physical damage</text><text class="s" x="37.8" y="462">• ransom or “pay to unlock”</text><text class="s" x="37.8" y="482">• data-loss warnings</text></svg>', alt:"Flowchart of six steps from top to bottom: save work and note the message; close and reopen the app; restart the device; check for updates; check storage and resources; search the exact error or ask. Below it is a red box: stop and get help at any step if there is smoke or a burning smell, a swollen battery, liquid or physical damage, a ransom message, or data-loss warnings.", cap:"The first-aid routine. Work down the steps, checking after each one; jump to the red box at any point if you see a danger sign."}
       ]},
       {h:"Restart: why it works, and restart vs shut down", body:[
         "“Have you tried turning it off and on again?” is a joke because it works so often. Here is why. While a device runs, small problems pile up: an app gets stuck in a loop, memory isn’t handed back properly, a driver gets confused, an update waits half-finished. A [[restart]] empties [[ram|RAM]], ends every running program, reloads the operating system and drivers from storage, and finishes pending updates. You start again from a clean, known state.",
         {h:"On Windows, Restart is not the same as Shut down"},
-        "Windows has a feature called [[fast-startup|Fast Startup]], switched on by default on many PCs. With it on, **Shut down** closes your apps and signs you out, but saves the core of Windows (the kernel and drivers) to storage, much like hibernating, so the next start is quicker. That means some stuck states can survive a shut down. Microsoft’s documentation says that **Restart** always does a full boot cycle and that the Fast Startup setting doesn’t apply to Restart.",
+        "Windows has a feature called [[fast-startup|Fast Startup]], switched on by default on many PCs. With it on, **Shut down** closes your apps and signs you out. But it saves the core of Windows (the kernel and drivers) to storage, much like hibernating, so the next start is quicker. That means some stuck states can survive a shut down. Microsoft’s documentation says that **Restart** always does a full boot cycle. It also says that the Fast Startup setting doesn’t apply to Restart.",
         {key:"On Windows, choose **Restart** (not Shut down and power on) when you want a fresh start to fix a problem."},
         "Macs, Chromebooks and phones don’t have this split for everyday use: shutting down and turning on again also gives a full fresh start. Restart is simply more convenient.",
         {table:[
@@ -682,7 +682,7 @@ ICA.addUnit({
           ["Windows","**Start → Power → Restart**"],
           ["Mac","**Apple menu → Restart**"],
           ["Chromebook","Select the time, then the **Power** button. Choose **Restart** if shown; otherwise **Shut down**, wait a few seconds, then press the power key"],
-          ["iPhone","Press and hold the side button and either volume button until the slider appears, slide to power off, then hold the side button to turn on (or **Settings → General → Shut Down**). Older models with a Home button: hold the side or top button"],
+          ["iPhone","Press and hold the side button and either volume button until the slider appears. Slide to power off, then hold the side button to turn on (or **Settings → General → Shut Down**). Older models with a Home button: hold the side or top button"],
           ["Android","Press and hold the power button (on some phones, power and volume up together, or use the power icon in Quick Settings), then tap **Restart**"]
         ]},
         {tip:"Restarting every few days, and whenever an update asks for it, prevents many problems before they start. Leaving a computer running for weeks without a restart can let small problems build up."}
@@ -701,7 +701,7 @@ ICA.addUnit({
         {warn:"Updates need free storage. If an update keeps failing, check your storage next."}
       ]},
       {h:"Free up storage", body:[
-        "When storage is nearly full, all sorts of things break: updates fail, the camera won’t save, apps crash, and the system slows down because it has nowhere to put temporary files. Aim to keep a comfortable amount free rather than running to the last few gigabytes.",
+        "When storage is nearly full, many things break. Updates fail, the camera won’t save, and apps crash. The system also slows down because it has nowhere to put temporary files. Try to keep a comfortable amount free. Don’t run down to the last few gigabytes.",
         {table:[
           ["Device","Where to see what is using storage"],
           ["Windows","**Settings → System → Storage** (try **Cleanup recommendations**, and **Storage Sense** to clean up automatically)"],
@@ -710,7 +710,7 @@ ICA.addUnit({
           ["iPhone / iPad","**Settings → General → iPhone Storage** (or **iPad Storage**)"],
           ["Android","**Settings → Storage** (many phones also have a cleaning tool, often called **Free up space** or **Device care**)"]
         ]},
-        "Usually safe to remove: apps you don’t use (you can reinstall them), old installers and files in your Downloads folder that you no longer need, duplicate or failed photos and videos, and items already in the Recycle Bin or Trash (empty it, or the space isn’t freed). Phones can also **offload** unused apps, removing the app but keeping its data.",
+        "Usually safe to remove: apps you don’t use (you can reinstall them). Also remove old installers and files in your Downloads folder that you no longer need. Duplicate or failed photos and videos can go too. So can items already in the Recycle Bin or Trash (empty it, or the space isn’t freed). Phones can also **offload** unused apps. This removes the app but keeps its data.",
         {warn:"Never delete files from system folders (such as `C:\\Windows` or files you don’t recognize inside the system) to make room. Before deleting photos or videos, make sure they are backed up somewhere else: a [[backup]] is a second copy, and Unit 2 shows how to make one."}
       ]},
       {h:"See what’s using your device", body:[
@@ -724,7 +724,7 @@ ICA.addUnit({
           ["Android","**Settings → Battery** (then **Battery usage**) and **Settings → Storage**; names vary by maker"]
         ]},
         {ex:"Mei’s laptop fan is roaring. She opens Task Manager and clicks the **CPU** column to sort. A browser tab with a video ad is using most of the processor. She closes that tab and the fan calms down within a minute.\n\nIn another case, the **Memory** column is near 100% and nothing single is huge: she just has too much open. Closing a few apps fixes it.", label:"Worked example"},
-        "If an app is frozen, end it from here: in Task Manager select it and choose **End task**; on a Mac press [[kbd:Option]] + [[kbd:Cmd]] + [[kbd:Esc]] for **Force Quit**, or use Activity Monitor. Unsaved work in that app will be lost, so wait a minute first in case it recovers.",
+        "If an app is frozen, end it from here. In Task Manager, select it and choose **End task**. On a Mac, press [[kbd:Option]] + [[kbd:Cmd]] + [[kbd:Esc]] for **Force Quit**, or use Activity Monitor. You will lose unsaved work in that app, so wait a minute first in case it recovers.",
         {warn:"Only end apps you recognize. Long lists of system processes are normal. Ending unknown system processes can make the device unstable, and a quick restart is the safer fix."}
       ]},
       {h:"Describe the problem and search the error", body:[
@@ -742,8 +742,8 @@ ICA.addUnit({
         {list:[
           "Search the **exact message or code** in quotation marks, plus your system: `\"0x80070070\" Windows 11 update`.",
           "Prefer **official support sites** (the maker of the device, OS or app) and recent answers that match your version.",
-          "Remove personal details (names, email addresses, file names) before pasting a message anywhere public.",
-          "Never download a “fix-it” or “driver updater” tool from a random result, and never call a phone number shown in a pop-up warning. Microsoft states that its error and warning messages never include a phone number, and that it doesn’t make unsolicited support calls."
+          "Remove personal details before you paste a message in a public place. Personal details include names, email addresses and file names.",
+          "Never download a “fix-it” or “driver updater” tool from a random result. Never call a phone number shown in a pop-up warning. Microsoft states that its error and warning messages never include a phone number. It also says that it doesn’t make unsolicited support calls."
         ]}
       ]},
       {h:"When to stop and ask for help", body:[
@@ -753,9 +753,9 @@ ICA.addUnit({
           "**Your data is at risk:** clicking or grinding noises from a hard disk, warnings about drive failure, or files disappearing. Stop using the device so you don’t make recovery harder.",
           "**Something demands payment** to unlock your files or device, or you suspect someone has access to your accounts. Unit 3 covers what to do.",
           "**It is a work or school device.** Contact your IT team; they may have rules and tools you don’t, and changes you make could break their setup.",
-          "**The simple fixes haven’t worked** and you are about to try something you don’t understand, such as editing system settings or resetting the device."
+          "**The simple fixes haven’t worked**, and you are about to try something you don’t understand. For example, you might edit system settings or reset the device."
         ]},
-        "Good places to get help: the official support site or support app of the maker, your organization’s IT help desk, an authorized repair shop, or a knowledgeable person you trust who you contacted yourself. Give them your clear description and say what you’ve tried.",
+        "Good places to get help are the official support site or support app of the maker, and your organization’s IT help desk. An authorized repair shop is another good place. So is a knowledgeable person you trust, whom you contacted yourself. Give them your clear description and say what you’ve tried.",
         {key:"Simple, safe steps in order; one change at a time; a clear description; and stop as soon as there is danger or risk to your data."}
       ]}
     ],
@@ -829,7 +829,7 @@ ICA.addUnit({
         }},
         {t:"Write your own problem-report template", how:["In a note, write the headings: Device and system · What I was doing · What I expected · What happened · Exact message · When it started · What I’ve tried.","Fill it in for any small problem you’ve had recently, or for an imaginary one.","Keep the note somewhere easy to find for next time."]}
       ],
-      proof:"A note showing the date you last restarted and updated, the top apps using your processor, memory or battery, and a filled-in problem-report template."
+      proof:"A note with three things: the date you last restarted and updated, the top apps using your processor, memory or battery, and a filled-in problem-report template."
     },
     read:[
       {book:"wss", where:"Chapter 2, Section 2.1 “Software Basics”: “Installing and Maintaining Software” (updates and getting help)"},
@@ -1524,7 +1524,7 @@ ICA.addUnit({
       {t:"A laptop charger", why:"A charger is a physical object: hardware."}
     ]},
     {id:"t1u1-q04", lesson:"t1u1-l1", level:1, q:"What is firmware?", options:[
-      {t:"Software built into a device that controls its hardware", ok:true, why:"It is stored inside the hardware and controls it at a low level, for example a computer’s start-up program or a router’s built-in software."},
+      {t:"Software built into a device that controls its hardware", ok:true, why:"It is stored inside the hardware and controls it at a low level. Examples are a computer’s start-up program or a router’s built-in software."},
       {t:"Any hardware that is fixed firmly inside the case", why:"Firmware is software, not a physical part."},
       {t:"Apps that a company installs on all of its work computers", why:"Those are ordinary apps. Firmware lives inside the hardware itself."},
       {t:"A protective case for a laptop", why:"That’s an accessory, not software of any kind."}
@@ -1652,7 +1652,7 @@ ICA.addUnit({
       {t:"6.25 seconds", why:"That divides by 8 instead of multiplying. Megabytes become more megabits, not fewer."}
     ]},
     {id:"t1u1-q25", lesson:"t1u1-l3", level:1, q:"What does the “i” in GiB or MiB tell you?", options:[
-      {t:"It is a binary unit, counted in steps of 1,024", ok:true, why:"The IEC binary prefixes (kibi, mebi, gibi) were created to avoid confusion with decimal units."},
+      {t:"It is a binary unit, counted in steps of 1,024", ok:true, why:"The IEC binary prefixes (kibi, mebi, gibi) were created so people don’t confuse them with decimal units."},
       {t:"It means “internet” and is used for speeds", why:"GiB measures data amounts, not speeds; the i marks a binary prefix."},
       {t:"It is a decimal unit, counted in steps of 1,000", why:"Decimal units have no i (kB, MB, GB)."},
       {t:"It is a typing mistake for GB", why:"GiB is an official unit defined by the IEC."}

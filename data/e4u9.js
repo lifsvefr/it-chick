@@ -4,7 +4,7 @@ ICA.addUnit({
   blurb:"Why states build international organizations, how those organizations come to act on their own, and how the UN system, the world’s regional bodies and their critics work in practice. Functionalism to principal–agent theory, Barnett and Finnemore’s bureaucracies, Security Council reform and the 2026 Secretary-General race, regionalism from the EU to the SCO, and the politics of exit, funding cuts and contested multilateralism.",
   goals:[
     "Explain and compare the main theories of why states create international organizations: functionalism, neofunctionalism, rational design and principal–agent theory",
-    "Analyse international organizations as actors with their own authority, power and pathologies, using the IMF and the World Bank as cases",
+    "Analyze international organizations as actors with their own authority, power and pathologies, using the IMF and the World Bank as cases",
     "Describe how the UN system works in practice: Security Council politics and reform positions, the General Assembly, the Secretary-General’s selection and roles, and how the system is funded",
     "Compare regional organizations (EU, ASEAN, AU, OAS, SCO) by design, decision rules and norms, without treating any one region as the model",
     "Assess the legitimacy and effectiveness of an international organization, and explain withdrawal, funding cuts, forum shopping and contested multilateralism",
@@ -61,7 +61,7 @@ ICA.addUnit({
         ["Dimension","The question","An Asia-Pacific example"],
         ["Membership","Who may join?","APEC admits “member economies”, which let Hong Kong, China and Chinese Taipei take part"],
         ["Scope","Which issues are covered?","The ADB focuses on development finance"],
-        ["Centralisation","Is there a central body to collect information, decide or enforce?","WTO dispute settlement versus APEC’s voluntary reviews"],
+        ["Centralization","Is there a central body to collect information, decide or enforce?","WTO dispute settlement versus APEC’s voluntary reviews"],
         ["Control","Who decides, and with how many votes?","Weighted votes by shares in the Asian Development Bank"],
         ["Flexibility","Can members adapt or escape the rules?","Safeguard clauses that let a state pause trade commitments"]
       ]},
@@ -145,7 +145,7 @@ ICA.addUnit({
        "Choose one IO with a short founding treaty or charter available online (for example the 1995 Mekong Agreement, the ASEAN Charter, the Pacific Islands Forum’s agreement, or the constitution of any UN specialized agency).",
        "Find the articles on membership, scope, decision-making and votes, any central body, and any amendment, withdrawal or escape clauses.",
        "For each of the five rational design dimensions, write one sentence and the article number."
-     ], write:"Organisation… Membership (Art.)… Scope… Centralisation… Control… Flexibility… Which cooperation problem does the design seem to answer?"},
+     ], write:"Organization… Membership (Art.)… Scope… Centralization… Control… Flexibility… Which cooperation problem does the design seem to answer?"},
      {t:"Map a chain of delegation", how:[
        "For the same IO, find who appoints its head, who approves its budget, and whether it has an evaluation or oversight office.",
        "Draw principals, agent and controls as in the lesson’s diagram.",
@@ -162,7 +162,7 @@ ICA.addUnit({
    },
    read:[
     {book:"eir", where:"Chapter 6 “International Organisations” (Shazelina Z. Abidin)", note:"Read it first as a refresher on what IOs are."},
-    {book:"eirt", where:"Chapter 2 “Liberalism” (Jeffrey W. Meiser)", note:"The liberal tradition behind institutionalist theories of IOs."},
+    {book:"eirt", where:"Chapter 2 “Liberalism” (Jeffrey W. Meizer)", note:"The liberal tradition behind institutionalist theories of IOs."},
     {book:"ospol", where:"Chapter 15, section 15.1 “The Problem of Global Governance”", note:"Why cooperation without a world government is hard."}
    ]
   },
@@ -174,7 +174,7 @@ ICA.addUnit({
      "Distinguish rational-legal, delegated, moral and expert authority, and the ways IOs exercise power",
      "Identify the five bureaucratic pathologies and give an example of each",
      "Describe the role of secretariats and their leaders",
-     "Analyse the IMF and the World Bank as actors, with their governance and critics"
+     "Analyze the IMF and the World Bank as actors, with their governance and critics"
    ],
    learn:[
     {h:"Do IOs have minds of their own?", body:[
@@ -195,7 +195,7 @@ ICA.addUnit({
         ["Pathology","What happens","Illustration"],
         ["Irrationality of rationalization","Rules become ends in themselves","Following procedure when the situation calls for something else"],
         ["Universalism","One template applied everywhere","The same reform package for very different economies"],
-        ["Normalisation of deviance","Small rule-bending becomes routine, then risky","Exceptions pile up until they are the norm"],
+        ["Normalization of deviance","Small rule-bending becomes routine, then risky","Exceptions pile up until they are the norm"],
         ["Insulation","No feedback from the outside","Staff evaluate success by their own measures"],
         ["Cultural contestation","Sub-units with clashing cultures","Economists and social specialists pull in different directions"]
       ]},
@@ -238,13 +238,13 @@ ICA.addUnit({
       {t:"“Our decision followed the procedure set out in the rules, applied the same way to every member.”", b:0, why:"Authority from impersonal, impartial rules is rational-legal."},
       {t:"“The member states gave us this mandate in last year’s resolution.”", b:1, why:"Authority lent by states for a task is delegated authority."},
       {t:"“We speak for refugees, who have no state to speak for them.”", b:2, why:"Claiming to defend shared values above national interests is moral authority."},
-      {t:"“Our statisticians’ model shows that the debt is unsustainable.”", b:3, why:"Specialised knowledge and data are the basis of expert authority."},
+      {t:"“Our statisticians’ model shows that the debt is unsustainable.”", b:3, why:"Specialized knowledge and data are the basis of expert authority."},
       {t:"“Our epidemiologists judge that the outbreak meets the criteria.”", b:3, why:"Professional scientific judgment is expert authority."}
     ]},
     {id:"e4u9-l2-x2", type:"match", q:"Match each pathology to the example that illustrates it.", pairs:[
       ["Irrationality of rationalization","Staff complete every checklist step while a crisis outruns the procedure","Rules followed for their own sake, even when they defeat the mission."],
       ["Universalism","One reform template is applied to very different economies","A single general model ignoring local context."],
-      ["Normalisation of deviance","Repeated small exceptions to safety rules become standard practice","Deviance turns into routine, raising risk."],
+      ["Normalization of deviance","Repeated small exceptions to safety rules become standard practice","Deviance turns into routine, raising risk."],
       ["Insulation","An agency judges success only by its own indicators and ignores outside criticism","No feedback from the environment."],
       ["Cultural contestation","Economists and human rights specialists inside one agency push opposite priorities","Clashing sub-cultures inside the organization."]
     ]},
@@ -453,7 +453,7 @@ ICA.addUnit({
    hook:{q:"ASEAN was founded in 1967. When did it get a legally binding charter of its own?", options:["At its founding in 1967","In 1976, with its first summit","It was signed in 2007 and came into force in 2008","It has never had one"], answer:2, reveal:"**Signed in 2007, in force in 2008.** For forty years ASEAN ran on a two-page declaration, summit statements and habits of consultation. The ASEAN Charter gave it legal personality, but it kept decision-making by consultation and consensus. That choice, rules on paper but consensus in practice, is a good starting point for comparing how regions organize."},
    goals:[
      "Explain the move from “old” to “new” and comparative regionalism, and the critique of the EU as a model",
-     "Analyse the EU’s supranational mechanisms and the theories that explain them",
+     "Analyze the EU’s supranational mechanisms and the theories that explain them",
      "Explain ASEAN’s consensus and centrality, and the debate about its effectiveness",
      "Assess the AU’s principle of non-indifference and the OAS’s democracy clause in practice",
      "Describe newer bodies such as the SCO neutrally, with the competing readings of them"
@@ -465,7 +465,7 @@ ICA.addUnit({
       "Scholars distinguish an “old” regionalism of the 1950s–70s, driven by states and inward-looking development plans, from a [[new-regionalism|new regionalism]] after the Cold War. In their account, the new regionalism was more open to world markets, with business and civil society involved and many overlapping bodies. Björn Hettne and Fredrik Söderbaum were leading voices of this approach.",
       "Today’s field is **comparative regionalism**. Key works include Amitav Acharya and Alastair Iain Johnston’s *Crafting Cooperation* (2007), which compares regional institutions across the world. Peter Katzenstein’s *A World of Regions* (2005) looks at Asia and Europe. Tanja Börzel and Thomas Risse edited *The Oxford Handbook of Comparative Regionalism* (2016). A common message: regions differ because their histories, power structures and ideas differ, not because some are failing to become the EU (see [[eurocentrism]]).",
       {ex:"**Task:** a draft seminar paper says: “ASEAN has failed because, unlike the EU, it has no court and cannot punish members.” Rewrite it as comparative analysis.\n1. First I find the hidden yardstick, because that is the flaw. The sentence measures ASEAN by the EU’s tools and treats any difference as failure ([[eurocentrism]]).\n2. Next I ask what ASEAN’s members set out to do. The ASEAN Charter keeps consultation and consensus as the basic rule (Article 20). A court with power over members was never the aim.\n3. Then I choose a fair test: did ASEAN do what its own design is meant to do? A common claim is that disputes among members have rarely become wars. Critics point to the Cambodia–Thailand border fighting of 2025, with further clashes in 2026, and to its limited influence over Myanmar since 2021.\n4. Finally I explain the difference instead of ranking it. Members that won independence from colonial rule placed a high value on non-interference, so they chose weak enforcement on purpose. Acharya and his critics (Jones and Smith, 2007) disagree on what that design has achieved.\n**Result:** “ASEAN was designed without a court or sanctions, because its members valued non-interference. Judged by its own aims, its record is debated: Acharya credits the ASEAN Way with keeping peace among members, while Jones and Smith argue that it produces process rather than progress.”\n**Common mistake:** swapping one yardstick for another. Saying “ASEAN is better than the EU because it respects sovereignty” is just as much a ranking. Describe designs, then explain them.", label:"Worked example: rewriting a Eurocentric sentence"},
-      "One more distinction is essential. **Regionalism** is a political project led by states. **Regionalisation** is the growth of trade, investment and travel within a region, driven by firms and people. East Asia was long described as highly regionalized but lightly institutionalized. Production networks linking Japan, South Korea, China and Southeast Asia grew faster than formal bodies. Formal rules followed later, for example in the Regional Comprehensive Economic Partnership (RCEP), signed by fifteen Asia-Pacific states in 2020 and in force from 2022."
+      "One more distinction is essential. **Regionalism** is a political project led by states. **Regionalization** is the growth of trade, investment and travel within a region, driven by firms and people. East Asia was long described as highly regionalized but lightly institutionalized. Production networks linking Japan, South Korea, China and Southeast Asia grew faster than formal bodies. Formal rules followed later, for example in the Regional Comprehensive Economic Partnership (RCEP), signed by fifteen Asia-Pacific states in 2020 and in force from 2022."
     ]},
     {h:"The EU: supranationalism up close", body:[
       "The [[european-union|EU]] combines two kinds of transfer that Moravcsik distinguished. **Pooling** means deciding together by majority, so a state can be outvoted. **Delegation** means giving powers to independent bodies. Both create [[pooled-sovereignty|pooled sovereignty]].",
@@ -555,7 +555,7 @@ ICA.addUnit({
       {t:"Because consensus bodies can never achieve anything", why:"Consensus slows decisions but does not make them impossible; this is not why states choose it."},
       {t:"Because the EU forbids other regions from copying it", why:"No such rule exists."}
     ]},
-    {id:"e4u9-l4-x8", type:"explain", q:"A classmate says: “East Asia has few strong regional institutions, so it is hardly integrated at all.” Using the difference between regionalism and regionalization, explain what is wrong with this, and where RCEP fits in the story.", size:"3–5 sentences", hint:"Who builds each one: states, or firms and people?", model:"Regionalism is a political project led by states: treaties, organizations and rules. Regionalisation is the growth of trade, investment and travel within a region, driven by firms and people. The classmate treats the first as the only measure of integration. East Asia was long described as highly regionalized but lightly institutionalized: production networks linking Japan, South Korea, China and Southeast Asia grew faster than formal bodies. Formal rules followed later, for example in the Regional Comprehensive Economic Partnership (RCEP), signed by fifteen Asia-Pacific states in 2020 and in force from 2022. So a region can be closely knit in practice before its states build institutions.", points:["Defines regionalism as a political project led by states", "Defines regionalization as trade, investment and travel driven by firms and people", "Applies this to East Asia: production networks grew faster than formal bodies", "Uses RCEP as an example of formal rules following later"]}
+    {id:"e4u9-l4-x8", type:"explain", q:"A classmate says: “East Asia has few strong regional institutions, so it is hardly integrated at all.” Using the difference between regionalism and regionalization, explain what is wrong with this, and where RCEP fits in the story.", size:"3–5 sentences", hint:"Who builds each one: states, or firms and people?", model:"Regionalism is a political project led by states: treaties, organizations and rules. Regionalization is the growth of trade, investment and travel within a region, driven by firms and people. The classmate treats the first as the only measure of integration. East Asia was long described as highly regionalized but lightly institutionalized: production networks linking Japan, South Korea, China and Southeast Asia grew faster than formal bodies. Formal rules followed later, for example in the Regional Comprehensive Economic Partnership (RCEP), signed by fifteen Asia-Pacific states in 2020 and in force from 2022. So a region can be closely knit in practice before its states build institutions.", points:["Defines regionalism as a political project led by states", "Defines regionalization as trade, investment and travel driven by firms and people", "Applies this to East Asia: production networks grew faster than formal bodies", "Uses RCEP as an example of formal rules following later"]}
    ],
    apply:{
     intro:"Compare regional bodies from their own documents. All are free online.",
@@ -564,7 +564,7 @@ ICA.addUnit({
        "Choose two regional organizations from different continents (for example ASEAN and the AU, the OAS and the Pacific Islands Forum, or the EU and Mercosur).",
        "In each founding text, find the article on how decisions are made and any article on suspension or withdrawal.",
        "Write one sentence on what each rule says about how much sovereignty members share."
-     ], write:"Organisations… Decision rule (article)… Suspension or withdrawal (article)… What it says about sovereignty…"},
+     ], write:"Organizations… Decision rule (article)… Suspension or withdrawal (article)… What it says about sovereignty…"},
      {t:"Read a summit statement", how:[
        "Find the chair’s statement or declaration from the most recent ASEAN, AU or SCO summit.",
        "Note three commitments and how specific each is (dates, numbers, who acts).",
@@ -591,7 +591,7 @@ ICA.addUnit({
    goals:[
      "Define legitimacy and distinguish input, throughput and output legitimacy, and sociological from normative legitimacy",
      "Explain why judging IO effectiveness is hard, and how scholars measure it",
-     "Analyse withdrawal and funding cuts as exit and voice, with cases from 2017–2026",
+     "Analyze withdrawal and funding cuts as exit and voice, with cases from 2017–2026",
      "Explain contested multilateralism (Morse and Keohane 2014): regime shifting, competitive regime creation, forum shopping and regime complexes",
      "Evaluate a real IO for a seminar using a structured framework"
    ],
@@ -630,7 +630,7 @@ ICA.addUnit({
       {list:["[[regime-shifting|Regime shifting]]: moving an issue to a different existing forum. Laurence Helfer (2004) showed how industrialized states moved intellectual property rules from WIPO into the trade regime, producing the WTO’s TRIPS agreement (1994). He also showed how developing countries later shifted parts of the issue back to WHO and other bodies.","[[competitive-regime-creation|Competitive regime creation]]: building a new institution. Many observers read the Asian Infrastructure Investment Bank (opened 2016) and the BRICS New Development Bank this way. In this reading, they respond to slow voice reform at the IMF and World Bank. Their founders present them as complements, not rivals."]},
       "Overlap also creates workarounds when one forum stalls. Since December 2019 the WTO’s Appellate Body has been unable to hear appeals, because the United States blocked new appointments. The United States argued that the body had overstepped its role. In 2020 a group of members, including the EU and China (Japan joined in 2023), set up the Multi-Party Interim Appeal Arbitration Arrangement (MPIA). It is a stopgap among themselves: a small case of building around a blocked institution rather than leaving it.",
       "Two related terms help here. [[forum-shopping|Forum shopping]] means choosing, case by case, the forum most likely to give you what you want. A [[regime-complex|regime complex]] (Kal Raustiala and David Victor, 2004) is a set of overlapping institutions governing one issue, with no single center. Overlap is not always bad: some IOs act as **orchestrators**, steering other actors toward shared goals ([[orchestration]]; Abbott, Genschel, Snidal and Zangl, 2015).",
-      {ex:"**Task:** classify four moves using this unit’s vocabulary: exit, voice, [[regime-shifting|regime shifting]] or [[competitive-regime-creation|competitive regime creation]].\n1. First I write a one-line test for each code, because coding needs fixed rules. **Exit**: the state leaves the IO. **Voice**: it stays and presses for change. **Regime shifting**: it moves the issue to another existing forum. **Competitive regime creation**: it builds a new body for the issue.\n2. Next I code each case against the tests.\n• Industrialised states move intellectual property rules from WIPO into trade talks, producing TRIPS (1994): **regime shifting**, because the WTO already existed.\n• China and others launch the AIIB (opened 2016) after slow IMF and World Bank voice reform: **competitive regime creation**, as many observers read it. Its founders call it a complement, so I attribute the reading.\n• The United Kingdom leaves the EU in 2020: **exit**.\n• A large donor pays late to push for budget cuts but stays a member: **voice**.\n3. Then I look for a hard case. The MPIA (2020) is a new arrangement, but it sits inside the WTO and applies only among its parties. I code it as **working around a blocked body**, and I flag that the codes overlap.\n4. Finally I summarize the pattern rather than listing codes.\n**Result:** “Dissatisfied states rarely just leave. More often they shift issues between forums or build new bodies beside old ones, which is what Morse and Keohane call contested multilateralism.”\n**Common mistake:** coding by the speaker’s words. A government may call a new bank “complementary” or a cut “reform”; code what it does, and attribute what it says.", label:"Worked example: coding contestation step by step"}
+      {ex:"**Task:** classify four moves using this unit’s vocabulary: exit, voice, [[regime-shifting|regime shifting]] or [[competitive-regime-creation|competitive regime creation]].\n1. First I write a one-line test for each code, because coding needs fixed rules. **Exit**: the state leaves the IO. **Voice**: it stays and presses for change. **Regime shifting**: it moves the issue to another existing forum. **Competitive regime creation**: it builds a new body for the issue.\n2. Next I code each case against the tests.\n• Industrialized states move intellectual property rules from WIPO into trade talks, producing TRIPS (1994): **regime shifting**, because the WTO already existed.\n• China and others launch the AIIB (opened 2016) after slow IMF and World Bank voice reform: **competitive regime creation**, as many observers read it. Its founders call it a complement, so I attribute the reading.\n• The United Kingdom leaves the EU in 2020: **exit**.\n• A large donor pays late to push for budget cuts but stays a member: **voice**.\n3. Then I look for a hard case. The MPIA (2020) is a new arrangement, but it sits inside the WTO and applies only among its parties. I code it as **working around a blocked body**, and I flag that the codes overlap.\n4. Finally I summarize the pattern rather than listing codes.\n**Result:** “Dissatisfied states rarely just leave. More often they shift issues between forums or build new bodies beside old ones, which is what Morse and Keohane call contested multilateralism.”\n**Common mistake:** coding by the speaker’s words. A government may call a new bank “complementary” or a cut “reform”; code what it does, and attribute what it says.", label:"Worked example: coding contestation step by step"}
     ]},
     {h:"How to evaluate an IO for a seminar", body:[
       "A good evaluation is structured, comparative and fair. Six questions cover most of it:",
@@ -767,7 +767,7 @@ ICA.addUnit({
      {t:"Yes: 16 states is a majority, and a majority of the 27 states is enough on its own", why:"A qualified majority has two tests, states and population. A majority of states alone is not enough."},
      {t:"Yes: 60% of the population is above the 55% threshold for passing", why:"This mixes up the thresholds: 55% applies to the number of states, 65% to population."},
      {t:"No: a qualified majority needs every one of the 27 states to agree", why:"That describes unanimity, which applies only to some areas, such as foreign policy and taxation."}]},
-   {id:"e4u9-cp09", lesson:"e4u9-l4", level:3, q:"Organisation A is a regional body with a broad agenda. Organisation B handles only one commodity’s trade rules. According to Hooghe, Marks and colleagues, which pattern is most likely?", options:[
+   {id:"e4u9-cp09", lesson:"e4u9-l4", level:3, q:"Organization A is a regional body with a broad agenda. Organization B handles only one commodity’s trade rules. According to Hooghe, Marks and colleagues, which pattern is most likely?", options:[
      {t:"A pools more by majority voting, and B delegates more power to its secretariat and court", why:"This reverses the finding. Broad, general-purpose bodies tend to delegate more but pool less."},
      {t:"Both delegate and pool to the same degree, because the two always go together", why:"Their data show that delegation and pooling do not simply go together."},
      {t:"A delegates more to its secretariat and court but pools less; B decides more by majority", ok:true, why:"Right. This combines Lesson 2 (measuring IO authority) with Lesson 4 (pooling and delegation). No treaty can settle a broad agenda in advance, but governments fear being outvoted on sensitive matters."},
@@ -903,7 +903,7 @@ ICA.addUnit({
       {key:"Delegation brings benefits and risks; states use controls to keep the benefits and limit the risks."}
      ],
      builder:[
-      "**Why delegate?** Specialisation, efficiency, credible commitments (handing decisions to an impartial body), resolving disputes, and shifting blame for unpopular decisions.",
+      "**Why delegate?** Specialization, efficiency, credible commitments (handing decisions to an impartial body), resolving disputes, and shifting blame for unpopular decisions.",
       "**Kinds of slack.** **Shirking** means the agent puts in less effort; **slippage** means it moves policy toward its own preferences.",
       "**Controls.** Screening and selecting leaders; precise mandates; budgets; monitoring and reporting; independent evaluation; complaint mechanisms; and the threat to cut funds or rewrite the mandate.",
       "**The collective principal.** IOs answer to many states with different preferences. When they disagree, they cannot agree to discipline the agent, which gives it more room to act.",
@@ -1234,7 +1234,7 @@ ICA.addUnit({
    {id:"e4u9-q03", lesson:"e4u9-l1", level:1, q:"Which is **not** one of the five design dimensions in Koremenos, Lipson and Snidal’s rational design framework?", options:[
      {t:"Ideology", ok:true, why:"Right. The five are membership, scope, centralization, control and flexibility; ideology is not one of them."},
      {t:"Membership", why:"Membership (who can join) is one of the five."},
-     {t:"Centralisation", why:"Centralisation (whether a central body gathers information, decides or enforces) is one of the five."},
+     {t:"Centralization", why:"Centralization (whether a central body gathers information, decides or enforces) is one of the five."},
      {t:"Flexibility", why:"Flexibility (whether rules can be adapted or escaped) is one of the five."}]},
    {id:"e4u9-q04", lesson:"e4u9-l1", level:2, q:"In the 1980s a group of states created a commission to share scientific data on a fish stock. Today the commission is useful for data sharing, so a student concludes “states created it to share data”. What is the main weakness of this reasoning?", options:[
      {t:"It reads intentions from a current effect", ok:true, why:"Right. It infers the founders’ intentions without checking the historical record. This is the functionalist fallacy Wendt and others warned about; the negotiating record would show the actual purpose."},
@@ -1283,7 +1283,7 @@ ICA.addUnit({
      {t:"Agency slack", why:"Nothing suggests the agency acted against its members’ wishes."},
      {t:"Competitive regime creation", why:"No new institution is being created."}]},
    {id:"e4u9-q13", lesson:"e4u9-l2", level:2, q:"Which pathology describes small departures from rules becoming routine until they create serious risk?", options:[
-     {t:"Normalisation of deviance", ok:true, why:"Right. Exceptions accumulate until they are standard practice."},
+     {t:"Normalization of deviance", ok:true, why:"Right. Exceptions accumulate until they are standard practice."},
      {t:"Universalism", why:"Universalism means applying one template everywhere."},
      {t:"Insulation", why:"Insulation means having no feedback from the outside world."},
      {t:"Cultural contestation", why:"That is about clashing sub-cultures inside the organization."}]},
@@ -1400,7 +1400,7 @@ ICA.addUnit({
      {t:"Expulsion of any member that criticizes the OAS", why:"No such rule exists."},
      {t:"A common currency for the Americas", why:"The Charter concerns democracy, not money."}]},
    {id:"e4u9-q36", lesson:"e4u9-l4", level:3, q:"East Asian trade and investment networks grew strongly for decades before formal agreements such as RCEP came into force in 2022. Which distinction does this illustrate?", options:[
-     {t:"Regionalisation can run ahead of regionalism", ok:true, why:"Right. Market-driven integration (regionalization) can run ahead of state-led projects (regionalism). East Asia was long described as highly regionalized but lightly institutionalized."},
+     {t:"Regionalization can run ahead of regionalism", ok:true, why:"Right. Market-driven integration (regionalization) can run ahead of state-led projects (regionalism). East Asia was long described as highly regionalized but lightly institutionalized."},
      {t:"Pooling versus delegation", why:"That distinction concerns ways of sharing sovereignty in institutions."},
      {t:"Input versus output legitimacy of institutions", why:"That concerns how institutions are judged."},
      {t:"Regime shifting versus competitive creation", why:"That concerns contesting institutions."}]},

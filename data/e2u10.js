@@ -634,7 +634,7 @@ ICA.addUnit({
       "Gender research also challenged NELM’s picture of the united household (Lesson 2). Who decides that a daughter will go abroad, and who spends the money she sends? Researchers found that households are places of negotiation, and sometimes conflict, as well as cooperation.",
       {warn:"Avoid two stereotypes: women migrants as passive followers of husbands, and women migrants as victims. Many women migrate on their own, as workers, students and family heads, and make bold decisions. Some face serious risks; both are true."}
     ]},
-    {h:"“Feminisation” of migration, with nuance", body:[
+    {h:"“Feminization” of migration, with nuance", body:[
       "From the 1990s, books described a **[[feminisation-of-migration|feminization of migration]]** as one of the big trends of the age. An example is Stephen Castles and Mark Miller’s *The Age of Migration* (first edition 1993).",
       "It does **not** mean that women suddenly became most international migrants. According to UN DESA, women and girls were just under half (48%) of all international migrants in mid-2024. Globally, the number of male migrants has recently grown faster than the number of women. This is mainly because of men moving for work to Northern Africa and Western Asia. In Europe, Northern America and Latin America and the Caribbean, their share has stayed at about half since 1990.",
       "What researchers mean is mostly a change in **how** women migrate and in **who notices**. More women migrate independently as workers, often as the main earner for their family, in jobs such as care, domestic work and nursing. And the research field stopped treating migrants as men by default.",
@@ -683,7 +683,7 @@ ICA.addUnit({
    try:[
     {id:"e2u10-l5-x1", type:"mcq", q:"Which statement about women in international migration is best supported by UN DESA’s figures for 2024?", options:[
       {t:"Women and girls were just under half of all migrants.", ok:true, why:"Right. UN DESA reports 48% women and girls among international migrants in 2024, with male migration growing faster, mainly to Northern Africa and Western Asia."},
-      {t:"Women are now a large majority of international migrants.", why:"Not according to UN DESA: women and girls were 48% in 2024. “Feminisation” mostly refers to how women migrate, not a majority."},
+      {t:"Women are now a large majority of international migrants.", why:"Not according to UN DESA: women and girls were 48% in 2024. “Feminization” mostly refers to how women migrate, not a majority."},
       {t:"Women migrate almost only as wives following husbands.", why:"Many women migrate independently as workers, students and family heads; that change is what “feminization” usually describes."},
       {t:"Women’s share of international migrants has doubled since 1990.", why:"It has stayed close to half for decades; it hasn’t doubled."}
     ]},
@@ -1029,7 +1029,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Patterns.** Gender shapes migration through family norms (marriage is the reason most women give for moving in India’s census), labor markets (male-dominated construction recruitment to the Gulf; female-dominated domestic, care and nursing work in many destinations), and law (some visa categories and labor protections exclude domestic work).",
-      "**Feminisation, with nuance.** Castles and Miller’s *The Age of Migration* (first edition 1993) listed feminization as a general trend. UN DESA’s 2024 estimates show women and girls at 48% globally, with male migration growing faster recently, mainly to Northern Africa and Western Asia; in Europe, Northern America and Latin America and the Caribbean the share has been about half since 1990. The better-supported meaning concerns women’s independent labor migration and their visibility in research.",
+      "**Feminization, with nuance.** Castles and Miller’s *The Age of Migration* (first edition 1993) listed feminization as a general trend. UN DESA’s 2024 estimates show women and girls at 48% globally, with male migration growing faster recently, mainly to Northern Africa and Western Asia; in Europe, Northern America and Latin America and the Caribbean the share has been about half since 1990. The better-supported meaning concerns women’s independent labor migration and their visibility in research.",
       "**Care chains.** Arlie Russell Hochschild introduced global care chains in “Global Care Chains and Emotional Surplus Value” (2000), drawing on Rhacel Salazar Parreñas’s *Servants of Globalization* (2001) on Filipina domestic workers in Rome and Los Angeles. Eleonore Kofman and Parvati Raghuram broadened the frame to social reproduction: nurses, care homes, teachers, men in care work, and care for older people.",
       "**Households.** Feminist research challenged NELM’s unified household, showing negotiation and conflict over who migrates and who controls remittances."
      ],
@@ -1104,7 +1104,7 @@ ICA.addUnit({
     checked:"2026-11"}
   ],
   terms:[
-   {id:"ravensteins-laws", term:"Ravenstein’s laws of migration", def:"Generalisations about migration that E. G. Ravenstein drew from census data in 1885 and 1889. They say that most migrants move short distances, often in steps, and that each stream has a counter-stream. Long-distance migrants, he found, head for big centers, and economic motives dominate.", codex:"push-pull-theories"},
+   {id:"ravensteins-laws", term:"Ravenstein’s laws of migration", def:"Generalizations about migration that E. G. Ravenstein drew from census data in 1885 and 1889. They say that most migrants move short distances, often in steps, and that each stream has a counter-stream. Long-distance migrants, he found, head for big centers, and economic motives dominate.", codex:"push-pull-theories"},
    {id:"step-migration", term:"Step migration", def:"Moving in stages, for example from a village to a nearby town and later to a big city, rather than in one long move.", codex:"push-pull-theories"},
    {id:"intervening-obstacles", term:"Intervening obstacles", def:"In Everett Lee’s 1966 model, the things between origin and destination that make moving harder, such as distance, cost, borders, visa rules or a dangerous route.", codex:"push-pull-theories"},
    {id:"neoclassical-migration-theory", term:"Neoclassical migration theory", def:"The economic theory that people move from low-wage to high-wage places when the expected gain is bigger than the cost of moving. The theory adds that, over time, this narrows wage gaps.", codex:"economic-migration-theories"},
@@ -1128,7 +1128,7 @@ ICA.addUnit({
    {id:"climate-mobility", term:"Climate mobility", def:"An umbrella term for movement linked to climate change, including displacement, migration and planned relocation. It is not a legal status.", codex:"climate-and-mobility"},
    {id:"trapped-population", term:"Trapped population", def:"People who are too poor or constrained to leave places affected by environmental harm, even though they may face serious risks by staying.", codex:"climate-and-mobility"},
    {id:"planned-relocation", term:"Planned relocation", def:"The organized move of a whole community to a new place, usually as a last resort against environmental risk, ideally with consultation and consent.", codex:"climate-and-mobility"},
-   {id:"feminisation-of-migration", term:"Feminisation of migration", def:"The growing visibility of women as independent migrants, especially as workers and main earners. It doesn’t mean women are most migrants: UN DESA put women and girls at 48% in 2024.", codex:"gender-and-migration"},
+   {id:"feminisation-of-migration", term:"Feminization of migration", def:"The growing visibility of women as independent migrants, especially as workers and main earners. It doesn’t mean women are most migrants: UN DESA put women and girls at 48% in 2024.", codex:"gender-and-migration"},
    {id:"global-care-chain", term:"Global care chain", def:"Arlie Russell Hochschild’s term (2000) for a series of links between people across borders based on paid or unpaid care. An example is a migrant nanny whose own children are cared for by relatives at home.", codex:"gender-and-migration"},
    {id:"human-trafficking", term:"Human trafficking", def:"Recruiting, moving, harboring or receiving people by force, coercion, fraud, deception or abuse of vulnerability, for the purpose of exploitation. No border crossing is required; for children no such means is needed.", codex:"trafficking-and-smuggling"},
    {id:"migrant-smuggling", term:"Migrant smuggling", def:"Procuring someone’s illegal entry into a country of which they are not a national or permanent resident, for a financial or other material benefit. It always involves crossing a border.", codex:"trafficking-and-smuggling"}

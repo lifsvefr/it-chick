@@ -14,7 +14,7 @@ ICA.addUnit({
   "Choose between ～そう, ～そうだ, ～ようだ, ～みたい and ～らしい according to how you know something",
   "Use transitive and intransitive pairs such as [開]{あ}ける and [開]{あ}く with を and が, and tell ～てある from ～ている",
   "Join ideas with ～ながら, ～のに and ～し",
-  "Recognise the most common respectful and humble verbs, and use a few of them safely",
+  "Recognize the most common respectful and humble verbs, and use a few of them safely",
   "Say “too much”, “easy to”, “hard to” and “the way to” on the ます stem, describe others’ wishes with ～たがる, use ～てくる and ～ていく for direction and change, and put questions inside sentences with ～か and ～かどうか"
  ],
  read:[
@@ -45,7 +45,7 @@ ICA.addUnit({
     "Build the passive form of godan, ichidan and irregular verbs, and conjugate it like an ichidan verb",
     "Say what was done to someone with は, に and the passive, including actions on someone’s body or belongings",
     "Use the passive with things as the subject, and によって for the creator of a work",
-    "Recognise the “suffering” passive, which shows that an event affected you, usually badly",
+    "Recognize the “suffering” passive, which shows that an event affected you, usually badly",
     "Tell the passive apart from the potential form and from respectful speech, which can look the same"
    ],
    learn:[
@@ -1143,7 +1143,7 @@ ICA.addUnit({
    },
    goals:[
     "Explain the difference between transitive verbs (someone does something) and intransitive verbs (something happens)",
-    "Recognise and use about twenty common pairs such as [開]{あ}ける・[開]{あ}く and [消]{け}す・[消]{き}える, with their readings",
+    "Recognize and use about twenty common pairs such as [開]{あ}ける・[開]{あ}く and [消]{け}す・[消]{き}える, with their readings",
     "Use を with transitive verbs and が with intransitive verbs, and know why [部屋]{へや}を[出]{で}る is not an exception",
     "Describe states with intransitive verb + ている",
     "Use ～てある for the result of a deliberate action, and choose between ～てある, ～ている and ～ておく"

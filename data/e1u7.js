@@ -19,7 +19,7 @@ ICA.addUnit({
    hook:{q:"A teacher at a Japanese university sets a 「[期末]{きまつ}レポート」 (end-of-term report). Which of these is the teacher most likely **not** looking for?", options:["A clear question, and an answer to it","Evidence from sources, with citations","Your impressions of the class (「[感想]{かんそう}」)","Writing in である style"], answer:2, reveal:"**Your impressions.** Japanese university writing guides repeat one sentence again and again: 「レポートは[感想文]{かんそうぶん}ではない」 (a report is not an impressions essay). At school, many students write [読書]{どくしょ}[感想文]{かんそうぶん} about books they read, so the first university report often slips into “I learned a lot and was moved”. A report instead answers a question with evidence and reasoning. That surprises Japanese first-year students too, so you are in good company. This lesson shows what a report is, the main kinds, and how to turn a topic into a question and a claim."},
    goals:[
      "Explain how a レポート differs from a 感想文 and from a reflection sheet",
-     "Recognise 説明型, 論証型 and 報告型 tasks from the wording of the assignment",
+     "Recognize 説明型, 論証型 and 報告型 tasks from the wording of the assignment",
      "Read the conditions in a task: 字数, format, deadline and how to submit",
      "Turn a broad topic (テーマ) into a question (問い) you can answer in the length you have",
      "State a claim (主張) and plan the evidence (根拠) that supports it"
@@ -43,7 +43,7 @@ ICA.addUnit({
     ]},
     {h:"Reading the task: verbs and conditions", body:[
       "Before writing, read the task ([課題]{かだい}, *kadai*) twice: once for **what to do**, once for **the conditions**. The verb is the key.",
-      {table:[["Task verb","What it asks for"],["説明する","Explain how or why something is, accurately"],["要約する","Summarise a text in fewer words, keeping its main points ([[youyaku|要約]])"],["比較する","Compare: show similarities and differences, and what they mean"],["論じる","Argue: take a position and support it"],["考察する","Examine and interpret: think through what results or facts mean"],["述べる","State or set out (often your view: 「あなたの考えを述べなさい」)"]]},
+      {table:[["Task verb","What it asks for"],["説明する","Explain how or why something is, accurately"],["要約する","Summarize a text in fewer words, keeping its main points ([[youyaku|要約]])"],["比較する","Compare: show similarities and differences, and what they mean"],["論じる","Argue: take a position and support it"],["考察する","Examine and interpret: think through what results or facts mean"],["述べる","State or set out (often your view: 「あなたの考えを述べなさい」)"]]},
       "Then the conditions. Japanese tasks are usually precise about them, and teachers do check.",
       {list:["**字数** (*jisū*, length in characters): 「2000字程度」 (about 2,000), 「2000字以内」 (no more than 2,000), 「2000字以上」 (at least 2,000). Japanese length is counted in characters, not words. Teachers differ on how far “about” stretches, so stay close to the number.","**Format** ([書式]{しょしき}): for example A4, 横書き (horizontal), 40字×30行, a 表紙 (cover page) or a header with your name and [学籍]{がくせき}[番号]{ばんごう} (student number).","**Deadline** ([提出]{ていしゅつ}[期限]{きげん} or [締]{し}め[切]{き}り) and **how to submit** (提出方法): on paper, by email, or on the university’s learning system.","**Sources**: 「参考文献を3点以上挙げること」 means “list at least three references”."]},
       {warn:"Character counts in Word or Google Docs may count spaces, line breaks or half-width letters differently from what your teacher expects. If the limit is tight, ask whether the title, headings and reference list count."}
@@ -283,7 +283,7 @@ ICA.addUnit({
      "Change 「」 inside a quotation to 『』, and show omissions with （中略）",
      "Set out a long quotation as a block quotation",
      "Report a source in your own words with ～によると, ～と述べている or ～と指摘している, and choose a reporting verb that fits",
-     "Recognise 孫引き and know what to do instead"
+     "Recognize 孫引き and know what to do instead"
    ],
    learn:[
     {h:"Why reports quote, and the ground rules", body:[
@@ -551,7 +551,7 @@ ICA.addUnit({
    goals:[
      "Follow the main 原稿用紙 rules: indents, one character per square, small kana, punctuation at line ends",
      "Count how many squares a sentence takes",
-     "Recognise 剽窃 in its common forms, including translating a source without citing it",
+     "Recognize 剽窃 in its common forms, including translating a source without citing it",
      "Use AI and translation tools only as your course allows, disclose them when required, and keep your own voice",
      "Check a draft against a final checklist before submitting"
    ],
@@ -609,7 +609,7 @@ ICA.addUnit({
     {id:"e1u7-l5-x3", type:"sort", q:"Is each action **honest practice** or **plagiarism or dishonest**, in a course that has not allowed AI writing?", buckets:["Honest practice","Plagiarism or dishonest"], items:[
       {t:"Quoting one sentence in 「」 with the author, year and page", b:0, why:"A correctly marked and cited direct quotation."},
       {t:"Translating three sentences from an English article into Japanese with no citation", b:1, why:"The ideas and evidence are someone else’s. A translation needs a citation, like any paraphrase."},
-      {t:"Summarising an article in your own words, with its source", b:0, why:"An indirect quotation with the source: the normal way to use sources."},
+      {t:"Summarizing an article in your own words, with its source", b:0, why:"An indirect quotation with the source: the normal way to use sources."},
       {t:"Taking a classmate’s report and changing the sentence endings", b:1, why:"Changing endings keeps someone else’s words and structure: plagiarism, and possibly collusion."},
       {t:"Stating 「日本の首都は東京である」 without a source", b:0, why:"General knowledge that any reader can check needs no citation."},
       {t:"Asking an AI tool to write the 考察 section and submitting it as written", b:1, why:"Submitting generated text as your own writing is dishonest, especially when the course hasn’t allowed it."}
@@ -825,7 +825,7 @@ ICA.addUnit({
      pro:[
       "**SIST 02** (参照文献の書き方), one of the SIST standards issued by the Japan Science and Technology Agency (JST) for science and technology information, was last revised in 2007. JST states that the SIST project ended at the end of fiscal year 2011 and that the documents will not be updated. Many university libraries still cite it in guides, and some journals’ rules derive from it, but it is no longer maintained; refer to it only when your rules point to it.",
       "Japanese journals publish their own 執筆要領 or 投稿規定, which often differ in small details: year in brackets after the author or at the end; commas, periods or 、。 between elements; 頁 or pp.; whether 『』 and 「」 are used. Many fields use an international style (APA in psychology, for example), sometimes with a Japanese adaptation. A reference manager with the right citation style file (CSL) helps, but Japanese metadata often comes out with errors: missing readings, wrong name order, wrong brackets.",
-      "Mixed-language lists: one common practice lists Japanese works first in 五十音順 and then other-language works alphabetically; another sorts everything alphabetically by romanized name. Romanisation itself varies (Hepburn and other systems; long vowels marked or not), which is one reason guides prefer 五十音順 for Japanese works.",
+      "Mixed-language lists: one common practice lists Japanese works first in 五十音順 and then other-language works alphabetically; another sorts everything alphabetically by romanized name. Romanization itself varies (Hepburn and other systems; long vowels marked or not), which is one reason guides prefer 五十音順 for Japanese works.",
       "Web sources need a date of access (閲覧日 or 参照日) in most Japanese styles, because pages change. Where a DOI exists (J-STAGE articles often have one), many styles prefer it to a URL."
      ]},
     related:["quoting-in-japanese","japanese-punctuation-numbers","citation-styles","finding-japanese-research"],
@@ -935,7 +935,7 @@ ICA.addUnit({
    {id:"e1u7-q03", lesson:"e1u7-l1", level:1, q:"What does 考察する ask you to do in a task or report?", options:[
      {t:"Examine and interpret what results or facts mean", ok:true, why:"考察 is interpretation: why results came out this way, what they suggest, and their limits."},
      {t:"Copy the results into a table", why:"Presenting results is 報告. 考察 comes after: interpreting them."},
-     {t:"Summarise a text in fewer words", why:"That is 要約する."},
+     {t:"Summarize a text in fewer words", why:"That is 要約する."},
      {t:"Describe your own feelings about the topic in detail", why:"考察 is analytical, not emotional."}
    ]},
    {id:"e1u7-q04", lesson:"e1u7-l1", level:1, q:"A task says 「1600字以上」. What does this mean?", options:[
@@ -1155,7 +1155,7 @@ ICA.addUnit({
    {id:"e1u7-q39", lesson:"e1u7-l5", level:2, q:"Which is plagiarism in a Japanese report?", options:[
      {t:"Translating a paragraph from an English article into Japanese without citing it", ok:true, why:"The ideas and evidence belong to the original author; translation needs a citation."},
      {t:"Quoting one sentence in 「」 with author, year and page", why:"A correctly marked and cited quotation."},
-     {t:"Summarising an article in your own words with its source", why:"Normal, honest use of a source."},
+     {t:"Summarizing an article in your own words with its source", why:"Normal, honest use of a source."},
      {t:"Stating that Tokyo is Japan’s capital without a source", why:"General knowledge needs no citation."}
    ]},
    {id:"e1u7-q40", lesson:"e1u7-l5", level:3, q:"Priya’s course allows AI for checking language if students disclose it. She used an AI tool to flag spoken expressions in her own draft. What should she do?", options:[

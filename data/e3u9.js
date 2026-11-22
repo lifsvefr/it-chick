@@ -49,7 +49,7 @@ ICA.addUnit({
     "Choose between ために and ように with a two-question test",
     "Describe efforts and habits with ～ようにする and ～ようにしている",
     "Describe changes in ability or habit with ～ようになる, and say “stopped doing” with ～なくなる",
-    "Recognise ように in requests, wishes and “as”"
+    "Recognize ように in requests, wishes and “as”"
    ],
    learn: [
     {
@@ -2460,7 +2460,7 @@ ICA.addUnit({
     reveal: "**にとって.** English uses “for” here, and Japanese has no single word for “for”. にとって means “for, from the point of view of”, and it goes with words that judge or evaluate, like [役]{やく}に立つ (useful), 大切 (important) or [難]{むずか}しい (difficult). について means “about”, に[対]{たい}して “toward”, and として “as (a role)”. This lesson teaches five of these compound particles and gives you a table for choosing between them."
    },
    goals: [
-    "Recognise compound particles: に or と + a verb in its て-form, working like one particle",
+    "Recognize compound particles: に or と + a verb in its て-form, working like one particle",
     "Use について for the topic of talking, thinking and researching",
     "Use に[対]{たい}して for the target of an attitude or action, and for contrasts",
     "Use として for a role, and としては for “for a…”",

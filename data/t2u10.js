@@ -5,7 +5,7 @@ ICA.addUnit({
   goals:[
     "Make code easier to read with clear names, small functions, sensible comments and docstrings, and let a formatter and a linter handle style and common slips",
     "Write `assert` checks and pytest tests, run them with `python3 -m pytest`, test edge cases, and explain what passing tests can and can’t prove",
-    "Organise a project with a README, a `.gitignore`, a virtual environment and a `requirements.txt`, keep secrets out of your code and choose a license",
+    "Organize a project with a README, a `.gitignore`, a virtual environment and a `requirements.txt`, keep secrets out of your code and choose a license",
     "Describe what chat assistants, in-editor completions and coding agents do, prompt them well, and review, test and understand every change before keeping it",
     "Use AI coding tools safely: protect secrets, verify packages, watch for prompt injection, respect policies, licenses and honesty rules, and plan your next steps"
   ],
@@ -50,7 +50,7 @@ ICA.addUnit({
         ["Kind of name","Style","Example"],
         ["Variables and functions","lowercase with underscores (“snake case”)","`tip_percent`, `total_with_tip`"],
         ["Constants (values that never change)","UPPER CASE with underscores","`MAX_GUESTS = 40`"],
-        ["Classes","Capitalised words (“CapWords”)","`GuestList`"]
+        ["Classes","Capitalized words (“CapWords”)","`GuestList`"]
       ]},
       "That lowercase-with-underscores style is the [[snake-case|snake case]] you met in Unit 8. JavaScript uses a different convention (`tipPercent`, “camel case”), as Unit 4 showed. Follow the convention of the language you are writing.",
       {h:"Habits for good names"},

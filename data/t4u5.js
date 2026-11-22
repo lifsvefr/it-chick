@@ -19,7 +19,7 @@ ICA.addUnit({
   {id:"t4u5-l1", title:"What a literature review is for", minutes:45,
    hook:{q:"Cheska, a master’s student in regional disaster and community studies, has a paragraph of notes on each of 25 articles, in the order she read them. Her seminar teacher, Prof. Ōnishi, says: “Good work, but this isn’t a literature review yet.” What is most likely missing?", options:["More articles: 25 is too few","Connections: what the articles show together, where they disagree and what’s missing","Longer quotations from each article","A more formal tone"], answer:1,
      reveal:"**Connections.** Cheska has a list of summaries, closer to an annotated bibliography. A literature review groups sources by idea, compares them, weighs how strong the evidence is and shows what’s still unknown. The number of sources and the tone matter much less. This lesson shows what a review is for and how it’s built."},
-   goals:["Explain what a literature review does and why researchers write one","Tell a literature review apart from an annotated bibliography","Recognise the usual shape of a review and common misconceptions about it"],
+   goals:["Explain what a literature review does and why researchers write one","Tell a literature review apart from an annotated bibliography","Recognize the usual shape of a review and common misconceptions about it"],
    learn:[
     {h:"Joining a conversation", body:[
       {lead:"Imagine arriving late to a long dinner-table discussion. Before you speak, you listen: who has said what, where people agree, where they argue, and what nobody has mentioned yet."},
@@ -48,7 +48,7 @@ ICA.addUnit({
         ["Thesis or dissertation chapter","A full chapter that sets up the whole project"],
         ["[[review-article|Review article]]","A whole published paper whose findings are the review itself"],
         ["Grant or research proposal","Shows the gap and why the project is worth funding"],
-        ["Policy or practice brief","Summarises evidence for a decision, often in plain language"],
+        ["Policy or practice brief","Summarizes evidence for a decision, often in plain language"],
         ["Course assignment","Practices finding, judging and connecting sources"]
       ]},
       "Some reviews follow strict, pre-planned methods (Lesson 2 covers these kinds); others are written more freely by experts. Both are “literature reviews” in the broad sense."
@@ -59,9 +59,9 @@ ICA.addUnit({
       "A literature review is organized by **ideas**, not by source. One paragraph may draw on five sources; one source may appear in three different paragraphs.",
       {table:[
         ["","Annotated bibliography","Literature review"],
-        ["Organised by","Source (often alphabetical)","Theme, time or method"],
+        ["Organized by","Source (often alphabetical)","Theme, time or method"],
         ["Each unit of text is about","One source","One idea, across sources"],
-        ["Main move","Summarise and evaluate","Compare, connect, judge"],
+        ["Main move","Summarize and evaluate","Compare, connect, judge"],
         ["Ends with","The last entry","What’s known, the gaps, and why it matters"]
       ]},
       {fig:'<svg viewBox="0 0 340 440" role="img"><defs><marker id="u5a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Annotated bibliography</text><rect class="d-soft" x="10" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><rect class="d-soft" x="120" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><rect class="d-soft" x="230" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><text x="60" y="56" text-anchor="middle">Source A</text><text x="170" y="56" text-anchor="middle">Source B</text><text x="280" y="56" text-anchor="middle">Source C</text><text class="s" x="60" y="76" text-anchor="middle">summary +</text><text class="s" x="170" y="76" text-anchor="middle">summary +</text><text class="s" x="280" y="76" text-anchor="middle">summary +</text><text class="s" x="60" y="92" text-anchor="middle">evaluation</text><text class="s" x="170" y="92" text-anchor="middle">evaluation</text><text class="s" x="280" y="92" text-anchor="middle">evaluation</text><text class="s" x="170" y="124" text-anchor="middle">Each entry stands alone</text><path class="d-ink" d="M10 140H330" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="166" text-anchor="middle">Literature review</text><circle class="d-lup" cx="50" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="130" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="210" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="290" cy="196" r="17" stroke-width="1.5"/><text x="50" y="201" text-anchor="middle">A</text><text x="130" y="201" text-anchor="middle">B</text><text x="210" y="201" text-anchor="middle">C</text><text x="290" y="201" text-anchor="middle">D</text><path class="d-ink" d="M55 213L80 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M126 213L105 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M138 212L225 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M212 213L240 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M285 213L270 242" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-sage" x="20" y="246" width="140" height="48" rx="8" stroke-width="1.5"/><rect class="d-sage" x="180" y="246" width="140" height="48" rx="8" stroke-width="1.5"/><text x="90" y="266" text-anchor="middle">Theme 1:</text><text class="s" x="90" y="284" text-anchor="middle">where they agree</text><text x="250" y="266" text-anchor="middle">Theme 2:</text><text class="s" x="250" y="284" text-anchor="middle">where they disagree</text><path class="d-ink" d="M90 294L130 320" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M250 294L210 320" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-gold" x="40" y="324" width="260" height="48" rx="8" stroke-width="1.5"/><text x="170" y="344" text-anchor="middle">What we know, how well,</text><text x="170" y="362" text-anchor="middle">and what’s missing (the gap)</text><path class="d-ink" d="M170 372V394" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-rose" x="70" y="398" width="200" height="36" rx="8" stroke-width="1.5"/><text x="170" y="421" text-anchor="middle">Your question or project</text></svg>', alt:"Top: three separate boxes, Source A, B and C, each with its own summary and evaluation. Bottom: four sources, A to D, with arrows into two theme boxes (where they agree, where they disagree); source B feeds both themes. The themes lead to a box saying what we know, how well, and what is missing, which leads to your question.", cap:"An annotated bibliography is a set of separate notes. A review sorts sources into ideas, and the ideas build toward a gap and a question."}
@@ -116,7 +116,7 @@ ICA.addUnit({
     {id:"t4u5-l1-x3", type:"match", q:"Match each setting to what a literature review mainly does there.", pairs:[
       ["Introduction of a journal article","A few paragraphs leading to this study’s question","Article introductions are short reviews that set up the study."],
       ["Grant proposal","Shows the gap and why the project deserves funding","Funders want to know the work is needed and not already done."],
-      ["Policy brief for a city council","Summarises what the evidence says for a decision","Decision-makers need the bottom line and how sure it is."],
+      ["Policy brief for a city council","Summarizes what the evidence says for a decision","Decision-makers need the bottom line and how sure it is."],
       ["Review article in a journal","The review’s findings are the paper’s main contribution","A review article doesn’t report a new study; the synthesis is the result."]
     ]},
     {id:"t4u5-l1-x4", type:"mcq", q:"Amara is preparing a short evidence summary on school breakfast programs for a community group. She finds eight studies: six report better attendance, two find no difference. What should her review do with the two studies?", options:[
@@ -380,7 +380,7 @@ ICA.addUnit({
       {t:"Screen titles and abstracts", why:"The first, quick pass removes clearly irrelevant records."},
       {t:"Read full texts and record reasons for exclusion", why:"The second pass applies the criteria carefully to each full report."},
       {t:"Extract data and appraise risk of bias", why:"Only included studies are extracted and appraised."},
-      {t:"Synthesise and report, using PRISMA", why:"Synthesis and reporting come last, describing everything above."}
+      {t:"Synthesize and report, using PRISMA", why:"Synthesis and reporting come last, describing everything above."}
     ]},
     {id:"t4u5-l3-x2", type:"number", q:"A review’s searches found 2,050 records in databases and 150 in registers. 600 duplicates were removed before screening. How many records were screened?", answer:1600, tol:0, unit:"records", why:"Add both sources, then remove duplicates: 2,050 + 150 = 2,200; 2,200 − 600 = 1,600 records screened.", wrongs:[
       {v:1450, tol:0, why:"That’s 2,050 − 600: you left out the 150 register records. Records from every source go into screening."},
@@ -588,7 +588,7 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 380" role="img"><text x="170" y="20" text-anchor="middle">Summary: source by source</text><rect class="d-soft" x="10" y="32" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="54" text-anchor="middle">Okafor (2019) found… Then…</text><rect class="d-soft" x="10" y="74" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="96" text-anchor="middle">Lindqvist (2021) found… Then…</text><rect class="d-soft" x="10" y="116" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="138" text-anchor="middle">Tanaka (2020) found… Then…</text><path class="d-ink" d="M10 168H330" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="194" text-anchor="middle">Synthesis: idea by idea</text><rect class="d-sage" x="10" y="206" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="226" text-anchor="middle">Idea 1: trees cool streets</text><text class="s" x="170" y="244" text-anchor="middle">Lindqvist; Mendes; Okafor</text><rect class="d-sage" x="10" y="262" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="282" text-anchor="middle">Idea 2: size depends on measure</text><text class="s" x="170" y="300" text-anchor="middle">satellite vs street sensors</text><rect class="d-gold" x="10" y="318" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="338" text-anchor="middle">Idea 3: comfort rarely studied</text><text class="s" x="170" y="356" text-anchor="middle">Tanaka only → a gap</text></svg>', alt:"Top: three stacked boxes, each about one source: Okafor found, Lindqvist found, Tanaka found. Bottom: three boxes each about one idea: trees cool streets (Lindqvist, Mendes, Okafor); the size depends on the measure (satellite versus street sensors); comfort is rarely studied (Tanaka only, a gap).", cap:"The same five invented studies, organized two ways. Synthesis puts ideas in charge and brings sources in as evidence."},
       {key:"In synthesis, ideas lead and sources support them. In summary, sources lead and ideas follow."}
     ]},
-    {h:"Organising the whole review", body:[
+    {h:"Organizing the whole review", body:[
       "Before writing paragraphs, choose a structure for the body. Your matrix usually suggests one.",
       {table:[
         ["Structure","Sections are…","Works well when…"],
@@ -682,11 +682,11 @@ ICA.addUnit({
     ]},
     {id:"t4u5-l5-x3", type:"sort", q:"Which structure is each review outline using?", buckets:["Thematic","Chronological","Methodological"], items:[
       {t:"Sections: Effects on attendance · Effects on grades · Effects on wellbeing", b:0, why:"Each section is a theme or question."},
-      {t:"Sections: Before smartphones (to 2007) · Early apps (2008–2015) · AI tools (2016 onwards)", b:1, why:"Organised around periods defined by changes in technology."},
-      {t:"Sections: Evidence from experiments · Evidence from surveys · Evidence from interviews", b:2, why:"Organised by kind of method."},
+      {t:"Sections: Before smartphones (to 2007) · Early apps (2008–2015) · AI tools (2016 onwards)", b:1, why:"Organized around periods defined by changes in technology."},
+      {t:"Sections: Evidence from experiments · Evidence from surveys · Evidence from interviews", b:2, why:"Organized by kind of method."},
       {t:"Sections: Cost · Access · Quality of care", b:0, why:"Themes again."},
       {t:"Sections: Lab studies · Field studies · Computer models", b:2, why:"Grouped by how the evidence was produced."},
-      {t:"Sections: Ideas before the 1990 reform · Debates after the reform · Recent reassessments", b:1, why:"Organised around a turning point in time."}
+      {t:"Sections: Ideas before the 1990 reform · Debates after the reform · Recent reassessments", b:1, why:"Organized around a turning point in time."}
     ]},
     {id:"t4u5-l5-x4", type:"match", q:"Match each signposting phrase to its job.", pairs:[
       ["In contrast,","Introduces disagreement","Signals that what follows differs from what came before."],
@@ -1054,7 +1054,7 @@ ICA.addUnit({
      ],
      builder:[
       "A synthesis paragraph usually has four moves: **claim** (a topic sentence about the literature), **evidence** (several sources, often in one citation), **analysis** (compare, explain differences, weigh strength) and **link** (to the review’s question or next section).",
-      "Organise the body by **theme** (most common), **time** (around turning points, not just publication order), **method** (when methods give different answers) or **theory** (rival explanations).",
+      "Organize the body by **theme** (most common), **time** (around turning points, not just publication order), **method** (when methods give different answers) or **theory** (rival explanations).",
       "Use [[signposting]] to show connections: *similarly, in contrast, this may reflect, little is known about*. Choose reporting verbs that match the source: *found* for results, *argued* for claims, *suggested* for tentative findings. Avoid *proved*.",
       "In APA style, several sources in one parenthesis are listed alphabetically by first author and separated by semicolons.",
       {ex:"Summary: “Ito (2019) found gains. Ruiz (2021) also found gains. Novak (2022) found none.”\n\nSynthesis: “Two rural trials found gains (Ito, 2019; Ruiz, 2021), but a city trial did not (Novak, 2022), possibly because city patients already had good access to clinics.”", label:"Worked example (studies invented)"},
@@ -1131,7 +1131,7 @@ ICA.addUnit({
      {t:"Only peer-reviewed journal articles", why:"Reviews often include books, reports, theses and gray literature too."},
      {t:"Only sources older than ten years", why:"Age has nothing to do with it."}]},
    {id:"t4u5-q08", lesson:"t4u5-l1", level:2, q:"Kenji’s draft review has paragraphs titled “Study 1”, “Study 2” and so on. What is the best first fix?", options:[
-     {t:"Regroup the material under themes that each draw on several studies", ok:true, why:"Yes. Organising by idea is what turns a list into a review."},
+     {t:"Regroup the material under themes that each draw on several studies", ok:true, why:"Yes. Organizing by idea is what turns a list into a review."},
      {t:"Add more studies, “Study 13” to “Study 20”", why:"More of the same makes a longer list, not a review."},
      {t:"Rename each heading with the author’s name and year, such as “Garcia (2018)”", why:"Still organized by source."},
      {t:"Shorten each summary", why:"Shorter summaries are still summaries; the structure is the problem."}]},

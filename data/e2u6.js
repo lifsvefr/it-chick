@@ -400,7 +400,7 @@ ICA.addUnit({
         "**Small numbers.** Before the 20th century there were few democracies, so peace between them may be partly chance.",
         "**Other causes.** Henry Farber and Joanne Gowa (1995) argued that during the Cold War democracies shared a common enemy, which could explain their peace. Alliances, wealth and trade may matter too: correlation is not causation (see [[correlation]] and [[causation]]).",
         "**Covert action.** Democracies have used secret operations against elected or parliamentary governments. Examples are the US-backed overthrow of Mohammad Mosaddegh in Iran (1953) and of Jacobo Árbenz in Guatemala (1954). Critics say this shows the peace is narrower than it looks.",
-        "**Democratising states.** Edward Mansfield and Jack Snyder (1995) found that countries in the middle of an unstable transition to democracy can be especially prone to war."
+        "**Democratizing states.** Edward Mansfield and Jack Snyder (1995) found that countries in the middle of an unstable transition to democracy can be especially prone to war."
       ]},
       {key:"The democratic peace is one of the strongest patterns in IR research, but why it holds, and how far, is still argued over."}
      ]},
@@ -473,7 +473,7 @@ ICA.addUnit({
      {t:"Score a deal two ways", how:["Find a news story about a trade, investment or technology agreement between two countries.","Write down what each side says it gains.","Explain how a liberal (absolute gains) and a realist (relative gains) might judge the deal differently."], write:"The deal… What each side gains… The liberal view… The realist view…"}
    ], proof:"Notes tracing three items to the countries involved, one cross-border institution and what it makes possible, and a real agreement judged from both absolute- and relative-gains viewpoints."},
    read:[
-    {book:"eirt", where:"Chapter 2 “Liberalism” (Jeffrey W. Meiser)", note:"Read it after this lesson: it adds more on liberalism’s core ideas and applies the theory to US–Mexico relations in the early 20th century."},
+    {book:"eirt", where:"Chapter 2 “Liberalism” (Jeffrey W. Meizer)", note:"Read it after this lesson: it adds more on liberalism’s core ideas and applies the theory to US–Mexico relations in the early 20th century."},
     {book:"ospol", where:"Chapter 14, section 14.6 “The Liberal and Social Worldview”", note:"A gentle overview of liberalism, collective security and complex interdependence. It calls NATO an example of collective security. NATO itself calls its mutual-defense pledge (Article 5) “collective defense”, and many scholars keep “collective security” for systems that include every state, possible aggressors too, as the League and the UN aimed to."}
    ]
   },
@@ -509,7 +509,7 @@ ICA.addUnit({
      ]},
     {h:"Norms: how the unthinkable changes", body:[
       "Constructivists study how norms are born and spread. Martha Finnemore and Kathryn Sikkink (1998) described a **[[norm-life-cycle|norm life cycle]]**:",
-      {fig:'<svg viewBox="0 0 340 290"><defs><marker id="e2u6-l4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="20" y="10" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="34" text-anchor="middle">1 · Emergence</text><text class="s" x="170" y="54" text-anchor="middle">“norm entrepreneurs” argue for a new rule</text><path class="d-ink" d="M170 74 L170 96" stroke-width="2" marker-end="url(#e2u6-l4-a)"/><text class="s" x="182" y="90">tipping point</text><rect class="d-gold" x="20" y="98" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="122" text-anchor="middle">2 · Cascade</text><text class="s" x="170" y="142" text-anchor="middle">many states adopt it, partly to fit in</text><path class="d-ink" d="M170 162 L170 184" stroke-width="2" marker-end="url(#e2u6-l4-a)"/><rect class="d-sage" x="20" y="186" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="210" text-anchor="middle">3 · Internalisation</text><text class="s" x="170" y="230" text-anchor="middle">taken for granted; breaking it is shocking</text><text class="s" x="170" y="278" text-anchor="middle">Norms can also weaken or be challenged.</text></svg>', alt:"Three stages stacked with arrows. Emergence: norm entrepreneurs argue for a new rule. After a tipping point, cascade: many states adopt it, partly to fit in. Internalisation: the norm is taken for granted and breaking it is shocking. A note says norms can also weaken or be challenged.", cap:"The norm life cycle (Finnemore and Sikkink, 1998)."},
+      {fig:'<svg viewBox="0 0 340 290"><defs><marker id="e2u6-l4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="20" y="10" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="34" text-anchor="middle">1 · Emergence</text><text class="s" x="170" y="54" text-anchor="middle">“norm entrepreneurs” argue for a new rule</text><path class="d-ink" d="M170 74 L170 96" stroke-width="2" marker-end="url(#e2u6-l4-a)"/><text class="s" x="182" y="90">tipping point</text><rect class="d-gold" x="20" y="98" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="122" text-anchor="middle">2 · Cascade</text><text class="s" x="170" y="142" text-anchor="middle">many states adopt it, partly to fit in</text><path class="d-ink" d="M170 162 L170 184" stroke-width="2" marker-end="url(#e2u6-l4-a)"/><rect class="d-sage" x="20" y="186" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="210" text-anchor="middle">3 · Internalization</text><text class="s" x="170" y="230" text-anchor="middle">taken for granted; breaking it is shocking</text><text class="s" x="170" y="278" text-anchor="middle">Norms can also weaken or be challenged.</text></svg>', alt:"Three stages stacked with arrows. Emergence: norm entrepreneurs argue for a new rule. After a tipping point, cascade: many states adopt it, partly to fit in. Internalization: the norm is taken for granted and breaking it is shocking. A note says norms can also weaken or be challenged.", cap:"The norm life cycle (Finnemore and Sikkink, 1998)."},
       {ex:"In 1900 most of Africa and much of Asia, the Pacific and the Caribbean were ruled as colonies, and European governments presented empire as normal, even as a duty. Anti-colonial movements and leaders across those regions argued for [[self-determination]] (emergence). After 1945, as many colonies won independence, the new states joined the UN and used its [[general-assembly|General Assembly]]. In December 1960 the Assembly adopted Resolution 1514, the Declaration on the Granting of Independence to Colonial Countries and Peoples, with no votes against (cascade). Today very few governments would openly defend ruling another people as a colony (internalization). Material changes mattered too, such as the war-weakened finances of colonial powers, but constructivists stress that the **legitimacy** of empire collapsed.", label:"Worked example: the end of empire’s legitimacy"},
       "Another example is what Nina Tannenwald called the **nuclear taboo**. It is a widely shared sense, growing since 1945, that using nuclear weapons is unacceptable. She argued that it helps explain why they have not been used in war since then.",
       "Norms do not simply travel from powerful countries to others. Amitav Acharya (2004) showed how Southeast Asian states adapted outside ideas to fit local beliefs, a process he called **norm localization**. Lesson 5 returns to his work."
@@ -578,7 +578,7 @@ ICA.addUnit({
       {t:"Anti-colonial leaders and movements argue that peoples have a right to self-determination.", why:"Emergence: norm entrepreneurs make the case for a new standard."},
       {t:"After 1945, many colonies win independence and join the UN.", why:"Momentum builds as more states hold the new view; a tipping point approaches."},
       {t:"In 1960 the UN General Assembly adopts Resolution 1514 with no votes against.", why:"Cascade: the norm spreads rapidly and becomes the expected position."},
-      {t:"Almost no government openly defends colonial rule.", why:"Internalisation: the norm is taken for granted."}
+      {t:"Almost no government openly defends colonial rule.", why:"Internalization: the norm is taken for granted."}
     ]},
     {id:"e2u6-l4-x4", type:"sort", q:"In Hedley Bull’s terms, is each case closer to an international system or an international society?", buckets:["International system","International society"], items:[
       {t:"Two rival empires trade and fight but recognize no common rules or each other’s legitimacy.", b:0, why:"They affect each other’s calculations but share no rules: a system, not a society."},
@@ -614,7 +614,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Notice ideas, identities and shared rules in action. Use public sources only.", tasks:[
      {t:"Find an identity at work", how:["Find a speech or statement by a government leader on foreign policy (official government websites often publish them).","Copy one phrase where the leader describes what kind of country theirs is (“a peaceful nation”, “a bridge between regions”, “a defender of…”).","Write how that identity might make some policies seem natural and others unthinkable."], write:"The speech… The identity phrase… Policies it makes natural… Policies it rules out…"},
-     {t:"Trace a norm", how:["Choose a norm in world politics (for example, against using child soldiers, for protecting refugees, or against colonial rule).","Look up when it began to be argued for, and by whom.","Note one sign of a cascade (a treaty, resolution or wave of adoptions) and one sign that it is or isn’t internalized today."], write:"The norm… Who argued for it first… Sign of a cascade… Internalised? Evidence…"},
+     {t:"Trace a norm", how:["Choose a norm in world politics (for example, against using child soldiers, for protecting refugees, or against colonial rule).","Look up when it began to be argued for, and by whom.","Note one sign of a cascade (a treaty, resolution or wave of adoptions) and one sign that it is or isn’t internalized today."], write:"The norm… Who argued for it first… Sign of a cascade… Internalized? Evidence…"},
      {t:"Spot international society in your news", how:["Over a few days, notice news stories involving ambassadors, embassies, treaties or summits.","Pick one and identify which shared rule or practice it shows (diplomatic immunity, keeping treaties, recognizing sovereignty).","Write one sentence on what would happen if states stopped following that rule."], write:"The story… The shared rule it shows… What would happen without it…"}
    ], proof:"Notes on one leader’s identity language and its effects, one norm traced through its life cycle, and one news story showing a rule of international society."},
    read:[
@@ -681,7 +681,7 @@ ICA.addUnit({
         "Add to existing theories rather than throw them away.",
         "Treat **regions** and regionalism as central.",
         "Reject **exceptionalism**: no culture or country should be treated as uniquely special or as the model for all.",
-        "Recognise many forms of **agency** (the power to act and shape events), including resistance, norm-making and local visions of order."
+        "Recognize many forms of **agency** (the power to act and shape events), including resistance, norm-making and local visions of order."
       ]},
       "Global IR draws on many traditions of thought. Each one below is internally diverse and argued over by its own scholars; these are examples, not summaries of whole civilizations:",
       {table:[
@@ -887,7 +887,7 @@ ICA.addUnit({
       "There are deep disagreements about what kind of knowledge IR can produce. Martin Hollis and Steve Smith (*Explaining and Understanding International Relations*, 1990) contrasted explanation from the outside, modeled on natural science, with understanding from the inside, reconstructing actors’ meanings. Positivist approaches stress testable hypotheses and general patterns; post-positivist approaches stress that observers are part of the world they study.",
       "Kenneth Waltz distinguished a theory of **international politics**, which explains recurrent outcomes of the system, from a theory of **foreign policy**, which explains particular states’ decisions. Confusing the two is a common source of unfair criticism.",
       "Many scholars now practice what Rudra Sil and Peter Katzenstein (2010) called **analytic eclecticism**: combining mechanisms from several theories to explain a specific problem, rather than defending one paradigm against all others.",
-      "A further divide is between **rationalist** theories (neorealism and neoliberal institutionalism), which treat states’ interests as given and ask how they pursue them, and **reflectivist** or constructivist approaches, which ask where interests and identities come from. Robert Keohane drew this distinction in his 1988 presidential address to the International Studies Association. Recognising it helps explain why scholars sometimes talk past each other: they are answering different questions."
+      "A further divide is between **rationalist** theories (neorealism and neoliberal institutionalism), which treat states’ interests as given and ask how they pursue them, and **reflectivist** or constructivist approaches, which ask where interests and identities come from. Robert Keohane drew this distinction in his 1988 presidential address to the International Studies Association. Recognizing it helps explain why scholars sometimes talk past each other: they are answering different questions."
      ]
     },
     related:["realism","liberalism-ir","constructivism","english-school","marxism-ir","feminism-ir","postcolonialism-ir","global-ir","levels-of-analysis"],
@@ -1035,7 +1035,7 @@ ICA.addUnit({
         "**Small numbers before the 20th century**, when few democracies existed.",
         "**Common interests:** Farber and Gowa (1995) argued that Cold War alignment explains much of the post-1945 pattern; Christopher Layne (1994) examined near-wars between democracies and argued that power, not shared democracy, kept the peace.",
         "**Covert action:** democracies have secretly helped overthrow elected or parliamentary governments (Iran 1953, Guatemala 1954), which Sebastian Rosato (2003) and others cite against the normative explanation.",
-        "**Democratisation:** Mansfield and Snyder (1995) found that unstable transitions to democracy can raise the risk of war."
+        "**Democratization:** Mansfield and Snyder (1995) found that unstable transitions to democracy can raise the risk of war."
       ]},
       "Related work proposes a **capitalist peace** (economic development and open markets as the deeper cause), a debate that remains open.",
       "The theory has been used in policy arguments, including arguments for promoting democracy abroad. Scholars caution that the research does not show that imposing democracy by force produces peace.",
@@ -1235,7 +1235,7 @@ ICA.addUnit({
         "Adding to, not replacing, existing theories.",
         "Regions and regionalism as central.",
         "Rejecting exceptionalism.",
-        "Recognising many forms of agency."
+        "Recognizing many forms of agency."
       ]},
       "Examples of ideas it draws on include South Asian thought (the Arthashastra, Gandhi’s non-violence, non-alignment), recent Chinese theories (tianxia, relational theory, moral realism), Pan-Africanism and ubuntu-inspired thinking, Latin American dependency theory and legal doctrines on intervention, Islamic thought from Ibn Khaldun to siyar, and Pacific ideas such as the “Blue Pacific Continent”. Each tradition is internally diverse.",
       "Global IR also asks practical questions about the field: who writes the textbooks, which languages research is published in, where conferences are held and whose universities can afford to take part. Many of its supporters argue that widening the field depends on these practical changes as much as on new theories. The E-IR theory book itself includes chapters on Asian, Global South and Indigenous perspectives for this reason.",
@@ -1580,8 +1580,8 @@ ICA.addUnit({
    {id:"e2u6-q30", lesson:"e2u6-l4", level:2, q:"What is the correct order of Finnemore and Sikkink’s norm life cycle?", options:[
      {t:"Emergence, cascade, internalization", ok:true, why:"Right. Norm entrepreneurs argue for a norm, it spreads rapidly after a tipping point, then it is taken for granted."},
      {t:"Cascade, emergence, internalization", why:"A norm must emerge before it can cascade."},
-     {t:"Internalisation, cascade, emergence", why:"This is reversed. Internalisation comes last."},
-     {t:"Emergence, internalization, cascade", why:"Internalisation is the final stage, after the cascade."}
+     {t:"Internalization, cascade, emergence", why:"This is reversed. Internalization comes last."},
+     {t:"Emergence, internalization, cascade", why:"Internalization is the final stage, after the cascade."}
    ]},
    {id:"e2u6-q31", lesson:"e2u6-l4", level:3, q:"Two neighboring countries both have large armies, yet neither government considers the other a military threat, and their citizens cross the border freely for work. Which explanation is most constructivist?", options:[
      {t:"Shared identity makes each army seem unthreatening", ok:true, why:"Right. They share an identity as friendly neighbors. Constructivists explain the lack of fear through shared identity and understanding, not the balance of forces."},

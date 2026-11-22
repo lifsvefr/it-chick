@@ -254,7 +254,7 @@ ICA.addUnit({
       {t:"Entering the country without authorization", ok:true, why:"Yes. Entry outside the rules is irregular entry."},
       {t:"Losing a work permit that was tied to one employer, and not finding another route to stay", ok:true, why:"Yes. People can fall out of status without moving at all."},
       {t:"Studying abroad on a valid student visa", why:"A valid visa means regular status, as long as its conditions are met."},
-      {t:"Becoming a naturalized citizen of the country", why:"Naturalisation is the most secure status there is: a citizen can’t be an irregular migrant in their own country."}
+      {t:"Becoming a naturalized citizen of the country", why:"Naturalization is the most secure status there is: a citizen can’t be an irregular migrant in their own country."}
     ]},
     {id:"e2u9-l2-x5", type:"spot", q:"Tap each phrase in this news paragraph that the lesson’s advice on careful language would **change**.", ask:"should be changed", parts:[
       "Officials said ",
@@ -381,7 +381,7 @@ ICA.addUnit({
       {t:"Kwame fled fighting in the north and lives in a camp in the south of his own country.", b:2, why:"Forced from his home but still inside his own country: an IDP."},
       {t:"Nadia has always lived in the country where she was born, but no state recognizes her as a national.", b:3, why:"Not considered a national by any state under its law: stateless, though she never moved."},
       {t:"After a flood destroyed her town, Hana stays with relatives in a city 200 km away, in the same country.", b:2, why:"The Guiding Principles include people displaced by disasters who haven’t crossed a border."},
-      {t:"A man who fled religious persecution was recognized by UNHCR in the country where he sheltered.", b:0, why:"Recognised as meeting the refugee definition, here by UNHCR rather than the state: a refugee."}
+      {t:"A man who fled religious persecution was recognized by UNHCR in the country where he sheltered.", b:0, why:"Recognized as meeting the refugee definition, here by UNHCR rather than the state: a refugee."}
     ]},
     {id:"e2u9-l3-x2", type:"match", q:"Match each part of the 1951 refugee definition to what it rules in or out.", pairs:[
       ["Outside their country","Someone still inside their own country is not a refugee, however serious the danger","This is what separates refugees from IDPs."],
@@ -1212,7 +1212,7 @@ ICA.addUnit({
      {t:"Social media posts", why:"Digital sources are experimental, not the main basis."},
      {t:"UNHCR refugee registrations only", why:"Those cover refugees, a minority of all migrants."}]},
    {id:"e2u9-q33", lesson:"e2u9-l4", level:3, q:"Country A counts migrants by citizenship; Country B by country of birth. Country A has a high naturalization rate. What should you expect when comparing their figures?", options:[
-     {t:"Country A’s count will look lower", ok:true, why:"Right. Naturalised migrants drop out of a citizenship-based count. Definitions, not just reality, shape the numbers."},
+     {t:"Country A’s count will look lower", ok:true, why:"Right. Naturalized migrants drop out of a citizenship-based count. Definitions, not just reality, shape the numbers."},
      {t:"The figures will be directly comparable", why:"Different definitions make direct comparison misleading."},
      {t:"Country B’s count will exclude everyone born abroad", why:"A birth-based count includes everyone born abroad."},
      {t:"Country A will count tourists", why:"Neither definition counts tourists."}]},

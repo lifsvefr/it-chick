@@ -19,7 +19,7 @@ ICA.addUnit({
   {id:"e1u4-l1", title:"Understanding lectures", minutes:50,
    hook:{q:"In a lecture you hear: “Anyway, going back to what I said about water prices…” What is most likely to happen next?", options:["A completely new topic starts","The lecturer returns to an earlier point after a side comment","The lecture is about to end","The lecturer is about to tell a joke"], answer:1, reveal:"**A return to an earlier point.** “Anyway” and “going back to” are signposts: they usually close a side comment (an aside) and bring the talk back to the main line. Lecturers use dozens of these signals, and recognizing them is the most useful lecture skill there is. This lesson covers signposts, how speakers show what matters, predicting, fast note-taking with symbols, and what to do when you miss something."},
    goals:[
-     "Recognise signposts that preview, sequence, add, contrast, emphasize, digress, return and sum up",
+     "Recognize signposts that preview, sequence, add, contrast, emphasize, digress, return and sum up",
      "Notice how speakers show importance with voice, repetition and questions",
      "Prepare for a lecture so you can predict its content and key words",
      "Take fast notes with abbreviations and symbols, and use recordings and captions wisely"
@@ -240,7 +240,7 @@ ICA.addUnit({
         "**Tentative openings**: “**I wonder if**…” · “**It seems to me that**…” · “**I’m not sure, but**…”",
         "**Questions instead of statements**: “**Could it also be that** cost matters more than distance?”",
         "**Small qualifiers**: “a bit”, “slightly”, “perhaps”, “maybe”.",
-        "**Recognising the other view first**: “I can see why you’d say that, but…”"
+        "**Recognizing the other view first**: “I can see why you’d say that, but…”"
       ]},
       "Softening isn’t only politeness. It is also accuracy: if you’re not sure, “I think” or “it seems” says exactly that.",
       {warn:"Don’t over-soften. “Sorry, this is probably wrong, but maybe it could possibly be…” makes listeners doubt your point before they hear it. One or two softeners is usually enough."}
@@ -318,7 +318,7 @@ ICA.addUnit({
       " long, and it was ",
       {t:"only online", flag:false, why:"Content: a fact about the method, and her reason. It isn’t softening anything."},
       ". ",
-      {t:"I can see why", flag:true, why:"Recognising the other view first is a classic softener before a disagreement."},
+      {t:"I can see why", flag:true, why:"Recognizing the other view first is a classic softener before a disagreement."},
       " they chose that, but…"
     ]},
     {id:"e1u4-l2-x6", type:"match", q:"Match each phrase to what the speaker is doing.", pairs:[
@@ -549,7 +549,7 @@ ICA.addUnit({
       "[[sentence-stress|Sentence stress]] works the same way at a larger scale. Content words (nouns, main verbs, adjectives, adverbs) are usually stressed; function words (the, a, of, to, and, is) usually aren’t. In each phrase, one word usually carries the **main stress**: often the last content word, or the word with new or contrasting information.",
       {listen:"e1u4-l4-a1", ex:"Neutral: “We measured the temperature at twenty SCHOOLS.”\nContrast: “Did you measure humidity?” “No, we measured TEMperature.”\nCorrection: “Is the seminar on Thursday?” “No, it’s on TUESday.”", label:"The main stress moves to the new or contrasting word", mono:true},
       "Moving the main stress changes the message. “The SEMinar is on Tuesday” answers “What’s on Tuesday?”; “The seminar is on TUESday” answers “When is the seminar?”. Jenkins counted this kind of main stress as core, because getting it wrong can mislead.",
-      "Many speakers shorten function words into [[weak-form|weak forms]]: “to” becomes /tə/, “and” becomes /ən/, “can” becomes /kən/. Jenkins found weak forms aren’t needed for being understood internationally, so you don’t have to produce them. **Recognising** them is a different matter: many lecturers use them, and knowing them makes fast speech much easier to follow. “We want to compare” can sound like “we wanna compare”."
+      "Many speakers shorten function words into [[weak-form|weak forms]]: “to” becomes /tə/, “and” becomes /ən/, “can” becomes /kən/. Jenkins found weak forms aren’t needed for being understood internationally, so you don’t have to produce them. **Recognizing** them is a different matter: many lecturers use them, and knowing them makes fast speech much easier to follow. “We want to compare” can sound like “we wanna compare”."
     ]},
     {h:"Chunking and pausing", body:[
       "Speakers divide speech into [[thought-group|thought groups]]: short groups of words that belong together, each with one main stress, separated by small pauses or changes in pitch. Good chunking lets listeners process one piece at a time. A pause in the wrong place (“The results of the / study show”) breaks a phrase apart and makes the listener work harder.",
@@ -868,7 +868,7 @@ ICA.addUnit({
      {t:"On the fourth syllable, *-ci-*", why:"The *i* of *-ity* is in this syllable, so it is part of the ending. The stress falls on the syllable before it, *-tri-*."}]},
    {id:"e1u4-cp10", lesson:"e1u4-l4", level:3, q:"Zara has two weeks to prepare a talk for an international audience. She can work on only a few things. Which priority best fits Jenkins’s core and Field’s later findings?", options:[
      {t:"Mastering the “th” sounds in *thin* and *this*", why:"“Th” is non-core in Jenkins’s proposal, and many established varieties use other sounds for it."},
-     {t:"Producing weak forms, such as “to” said as /tə/", why:"Jenkins found weak forms aren’t needed for being understood internationally. Recognising them helps listening, but it isn’t the priority here."},
+     {t:"Producing weak forms, such as “to” said as /tə/", why:"Jenkins found weak forms aren’t needed for being understood internationally. Recognizing them helps listening, but it isn’t the priority here."},
      {t:"Changing her accent to sound like a London or New York speaker", why:"The goal research supports is intelligibility, not nativeness. Accent and intelligibility are partly independent."},
      {t:"Long and short vowels (ship/sheep), main stress for contrast, and the stress of her key field terms", ok:true, why:"Vowel length and main stress are core. Field (2005) showed misplaced word stress can hurt intelligibility, so key terms deserve checking too."}]},
    {id:"e1u4-cp11", lesson:"e1u4-l5", level:3, q:"Jae-won grew up in Singapore with English as his first language at home. Which criticism of Kachru’s three circles does his case illustrate best?", options:[
@@ -1009,7 +1009,7 @@ ICA.addUnit({
       "**Percent vs percentage points.** A rate moving from 20% to 30% is a 10-percentage-point rise and a 50% relative increase. Ambiguous phrasing (“rose by 10%”) is common in media and talks; state which you mean.",
       "**“Data” agreement.** Both “the data show” and “the data shows” occur in academic English; many style guides and fields prefer the plural. Consistency matters more than the choice.",
       "**Q&A strategies.** Clarifying questions avoid answering the wrong question and buy processing time; formulaic time-buyers (“That’s an interesting point…”) are used by all speakers. Honest uncertainty, with an offer to follow up, protects credibility better than a confident guess. Deferring long or off-topic questions to after the session is acceptable when done politely.",
-      "**Openings.** Apologising for one’s English is common among speakers of English as an additional language but rarely helps; it frames the talk around deficiency. Brief self-correction during the talk is normal in every language.",
+      "**Openings.** Apologizing for one’s English is common among speakers of English as an additional language but rarely helps; it frames the talk around deficiency. Brief self-correction during the talk is normal in every language.",
       "**Numbers.** Pairs like fifteen/fifty are easily confused in noisy rooms; show numbers on slides or spell them out (“one-five”)."
      ]
     },

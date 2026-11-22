@@ -118,11 +118,11 @@ ICA.addUnit({
       " ",
       {t:"Official growth figures will be my only measure of local economic success.", flag:true, why:"Their reliability is debated (Chen et al. 2019); triangulate with other indicators such as night-time lights, electricity use or firm data."},
       " ",
-      {t:"I will name my local interviewees in the thesis so readers can check my evidence.", flag:true, why:"This could put interviewees at risk. Anonymise, secure your notes and follow do-no-harm rules."},
+      {t:"I will name my local interviewees in the thesis so readers can check my evidence.", flag:true, why:"This could put interviewees at risk. Anonymize, secure your notes and follow do-no-harm rules."},
       " ",
       {t:"I will read white papers as statements of the government’s position.", flag:false, why:"Correct: they are primary sources for positions, not neutral accounts."},
       " ",
-      {t:"My conclusion will explain what China thinks about local debt.", flag:true, why:"Overgeneralisation. Say whose view: the Ministry of Finance, a provincial government, scholars, or the people you interviewed."}
+      {t:"My conclusion will explain what China thinks about local debt.", flag:true, why:"Overgeneralization. Say whose view: the Ministry of Finance, a provincial government, scholars, or the people you interviewed."}
     ]},
     {id:"e4u19-l1-x7", type:"sort", q:"Which scholarly idea does each observation support best?", buckets:["Fragmented authoritarianism","Personalist turn"], items:[
       {t:"An environmental ministry and a provincial government delay a dam for years while they bargain.", b:0, why:"Policy shaped by bargaining among bureaucracies and regions."},
@@ -277,7 +277,7 @@ ICA.addUnit({
      {t:"One initiative, three voices", how:[
        "Choose one of the four global initiatives or the Belt and Road.",
        "Find (a) a Chinese government text describing it, (b) a statement or analysis from another government or a think tank, and (c) a scholarly article or chapter.",
-       "Summarise each in one neutral sentence (“X states that…”), then note one claim on which they disagree and what evidence could settle it."
+       "Summarize each in one neutral sentence (“X states that…”), then note one claim on which they disagree and what evidence could settle it."
      ], write:"Initiative… Chinese government text… Second voice… Scholarly voice… Point of disagreement… Evidence that could settle it…"},
      {t:"Test the theories on one event", how:[
        "Pick one event since 2013 (for example the founding of the AIIB, the 2016 South China Sea award, or the launch of the Global Governance Initiative).",
@@ -302,7 +302,7 @@ ICA.addUnit({
   {id:"e4u19-l3", title:"The Korean Peninsula: two states, one nation?", minutes:65,
    hook:{q:"When did the two Korean states become members of the United Nations?", options:["South Korea in 1949, North Korea in 1973","North Korea in 1948, South Korea in 1991","Both on the same day, 17 September 1991","Neither is a UN member"], answer:2, reveal:"**Both on the same day, 17 September 1991.** For four decades each side had claimed to be the only legitimate government of all Korea, and joint membership was resisted. Three months later they signed an agreement calling their relationship “not being a relationship between states” but a special one on the way to reunification. By 2026 North Korea’s revised constitution described the South as a separate state across its southern border. This lesson explains how the peninsula got from there to here."},
    goals:[
-     "Summarise the division and the Korean War, including the historians’ debate on its origins",
+     "Summarize the division and the Korean War, including the historians’ debate on its origins",
      "Explain South Korea’s development and democratization and the tests its democracy has faced",
      "Describe North Korea’s political system and ideology, and the sources used to study it",
      "Trace North Korea’s nuclear program and compare explanations for it",
@@ -367,7 +367,7 @@ ICA.addUnit({
       ["*Juche* (주체)","Self-reliance: political and economic independence","The state ideology associated with Kim Il Sung."],
       ["*Songun* (선군)","Military-first politics","Kim Jong Il’s priority on the army."],
       ["*Byungjin* (병진)","Building nuclear weapons and the economy in parallel","Kim Jong Un’s line from 2013."],
-      ["*Jangmadang* (장마당)","Markets that grew after the 1990s famine","Marketisation from below."]
+      ["*Jangmadang* (장마당)","Markets that grew after the 1990s famine","Marketization from below."]
     ]},
     {id:"e4u19-l3-x3", type:"sort", q:"Which of Sagan’s three models does each explanation of North Korea’s nuclear program use?", buckets:["Security","Domestic politics","Norms and status"], items:[
       {t:"A small state facing US forces wants a deterrent that guarantees survival.", b:0, why:"An external threat drives the bomb: the security model."},
@@ -453,7 +453,7 @@ ICA.addUnit({
       "In 1945 the Republic of China (ROC), led by Chiang Kai-shek’s Kuomintang (KMT, 國民黨, *Guómíndǎng*), took over its administration. Tension with the new rulers exploded in the [[228-incident|228 Incident]] of February 1947. An uprising was followed by a military crackdown in which thousands were killed. A government commission set up in 1992 estimated 18,000 to 28,000 deaths; other estimates are lower. In 1949, having lost the civil war, the ROC government moved to Taipei. Martial law, declared in 1949, lasted until 1987; the decades of political persecution are remembered as the White Terror.",
       "Accounts differ. The PRC government describes Taiwan as part of China since ancient times; many historians in Taiwan stress its Indigenous, colonial and migrant layers. Note who tells which story."
     ]},
-    {h:"Democratisation and identity", body:[
+    {h:"Democratization and identity", body:[
       "Taiwan’s transition was gradual and negotiated from above as well as pushed from below. The opposition Democratic Progressive Party (DPP) was founded in September 1986, while parties were still banned. President Chiang Ching-kuo lifted martial law on 15 July 1987. His successor Lee Teng-hui, the first Taiwan-born president, ended the emergency provisions in 1991. The legislature was fully re-elected in 1992. In March 1996 voters chose the president directly for the first time, while the PRC held missile tests in the waters nearby.",
       "In 2000 the DPP’s Chen Shui-bian won, the first transfer of power between parties. Power has alternated since: the KMT’s Ma Ying-jeou (2008), the DPP’s Tsai Ing-wen (2016) and Lai Ching-te (May 2024). After the 2024 election the KMT and the smaller Taiwan People’s Party together held a majority in the legislature, so government and legislature are divided.",
       "Identity has shifted. The Election Study Center of National Chengchi University has asked the same question since 1992: do you see yourself as Taiwanese, Chinese, or both? The share answering “Taiwanese” only rose from under a fifth in 1992 to a majority from 2009 onwards (about 62 percent in 2025). Most others answer “both”, and few (under 3 percent in 2025) answer “Chinese” only. The same surveys find that most respondents prefer to keep some form of the status quo rather than seek immediate unification or independence. Shelley Rigger (*Why Taiwan Matters*, 2011) is a readable introduction to these politics.",
@@ -469,9 +469,9 @@ ICA.addUnit({
       "On Taiwan, diplomats choose every verb with care, so a seminar paper must quote exactly. These are the core texts:",
       {table:[
         ["Document","Exact key wording"],
-        ["[[unga-resolution-2758|UN General Assembly resolution 2758]] (25 October 1971)","Recognises the PRC government’s representatives as “the only legitimate representatives of China to the United Nations” and expels “the representatives of Chiang Kai-shek”; Taiwan is not mentioned"],
+        ["[[unga-resolution-2758|UN General Assembly resolution 2758]] (25 October 1971)","Recognizes the PRC government’s representatives as “the only legitimate representatives of China to the United Nations” and expels “the representatives of Chiang Kai-shek”; Taiwan is not mentioned"],
         ["Shanghai Communiqué, US–PRC (28 February 1972)","“The United States acknowledges that all Chinese on either side of the Taiwan Strait maintain there is but one China and that Taiwan is a part of China. The United States Government does not challenge that position.”"],
-        ["Normalisation Communiqué (released 15 December 1978; relations from 1 January 1979)","The US “recognizes” the PRC government “as the sole legal Government of China”, will keep “unofficial relations with the people of Taiwan”, and “acknowledges the Chinese position that there is but one China and Taiwan is part of China”"],
+        ["Normalization Communiqué (released 15 December 1978; relations from 1 January 1979)","The US “recognizes” the PRC government “as the sole legal Government of China”, will keep “unofficial relations with the people of Taiwan”, and “acknowledges the Chinese position that there is but one China and Taiwan is part of China”"],
         ["[[taiwan-relations-act|Taiwan Relations Act]], US law (10 April 1979)","Diplomatic ties with the PRC rest on “the expectation that the future of Taiwan will be determined by peaceful means”; the US will “provide Taiwan with arms of a defensive character” and maintain its capacity “to resist any resort to force or other forms of coercion”"],
         ["August 17 Communiqué (1982)","The US “intends gradually to reduce its sale of arms to Taiwan”, alongside China’s “fundamental policy of striving for peaceful reunification of the motherland”"],
         ["[[six-assurances|Six Assurances]] to Taipei (July 1982)","Among them: the US had not agreed to set a date for ending arms sales or to consult Beijing on them, and had not agreed “to take any position regarding sovereignty over Taiwan”"]
@@ -623,7 +623,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u19-l5-x1", type:"sort", q:"Which picture of the regional order does each observation support best?", buckets:["Balance of power","Hierarchy","Institutions and norms"], items:[
-      {t:"Neighbours of a rising China strengthen alliances and raise defense spending.", b:0, why:"Balancing against growing power."},
+      {t:"Neighbors of a rising China strengthen alliances and raise defense spending.", b:0, why:"Balancing against growing power."},
       {t:"Smaller states defer to the strongest state on issues it cares most about, in return for economic benefits.", b:1, why:"Accommodation of rank: Kang’s reading."},
       {t:"ASEAN convenes forums where rivals meet regularly and decisions are made by consensus.", b:2, why:"Habits of consultation: the ASEAN way."},
       {t:"An arms race develops between two neighbors after a territorial clash.", b:0, why:"Friedberg’s “ripe for rivalry” expectation."},
@@ -762,7 +762,7 @@ ICA.addUnit({
     builder:[
      "**Principles.** Democratic centralism (discussion, then obedience); the nomenklatura system, in which Party organization departments appoint officials; united front work with groups outside the Party.",
      "**The army.** The People’s Liberation Army is the Party’s army, commanded through the Central Military Commission.",
-     "**Centralisation under Xi Jinping** (General Secretary since November 2012, President since March 2013): an anti-corruption campaign; Xi named the Party’s “core” (2016); Xi Jinping Thought in the Party constitution (2017); the presidential term limit removed (March 2018); a 2021 history resolution; a third term as General Secretary (October 2022); purges reaching the top of the military, including an investigation into Central Military Commission vice-chair Zhang Youxia announced in January 2026.",
+     "**Centralization under Xi Jinping** (General Secretary since November 2012, President since March 2013): an anti-corruption campaign; Xi named the Party’s “core” (2016); Xi Jinping Thought in the Party constitution (2017); the presidential term limit removed (March 2018); a 2021 history resolution; a third term as General Secretary (October 2022); purges reaching the top of the military, including an investigation into Central Military Commission vice-chair Zhang Youxia announced in January 2026.",
      "**Plans and laws.** The National People’s Congress approved the 15th Five-Year Plan (2026–30) in March 2026."
     ],
     pro:[
@@ -1012,7 +1012,7 @@ ICA.addUnit({
    levels:{
     starter:[
      "Taiwan’s history has many layers: Indigenous Austronesian peoples; Dutch rule (from 1624); the Zheng regime (from 1662); the Qing (from 1683); Japanese colonial rule (1895–1945); and the Republic of China, whose government moved to Taipei in 1949.",
-     "Under martial law (1949–87) political opposition was suppressed. Democratisation followed: the opposition DPP was founded in 1986, martial law ended in 1987, the first direct presidential election was held in 1996 and power first changed hands between parties in 2000.",
+     "Under martial law (1949–87) political opposition was suppressed. Democratization followed: the opposition DPP was founded in 1986, martial law ended in 1987, the first direct presidential election was held in 1996 and power first changed hands between parties in 2000.",
      {key:"Which layer of history a speaker emphasizes often signals a political position."}
     ],
     builder:[
@@ -1039,7 +1039,7 @@ ICA.addUnit({
      {key:"Never paraphrase a key document on Taiwan: quote it, date it and attribute every reading of it."}
     ],
     builder:[
-     {table:[["Document","Key words"],["UNGA resolution 2758 (1971)","PRC representatives are “the only legitimate representatives of China to the United Nations”; no mention of Taiwan"],["Shanghai Communiqué (1972)","The US “acknowledges” that all Chinese on either side of the Strait maintain there is but one China; “does not challenge that position”"],["Normalisation Communiqué (1979)","The US “recognizes” the PRC government “as the sole legal Government of China”; “acknowledges the Chinese position”"],["Taiwan Relations Act (1979)","Future of Taiwan to be determined “by peaceful means”; “arms of a defensive character”"],["August 17 Communiqué (1982)","US “intends gradually to reduce its sale of arms to Taiwan”"],["Six Assurances (1982)","Among them, no agreement “to take any position regarding sovereignty over Taiwan”"],["Anti-Secession Law, PRC (2005)","“There is only one China in the world”; “non-peaceful means and other necessary measures” in stated circumstances"]]}
+     {table:[["Document","Key words"],["UNGA resolution 2758 (1971)","PRC representatives are “the only legitimate representatives of China to the United Nations”; no mention of Taiwan"],["Shanghai Communiqué (1972)","The US “acknowledges” that all Chinese on either side of the Strait maintain there is but one China; “does not challenge that position”"],["Normalization Communiqué (1979)","The US “recognizes” the PRC government “as the sole legal Government of China”; “acknowledges the Chinese position”"],["Taiwan Relations Act (1979)","Future of Taiwan to be determined “by peaceful means”; “arms of a defensive character”"],["August 17 Communiqué (1982)","US “intends gradually to reduce its sale of arms to Taiwan”"],["Six Assurances (1982)","Among them, no agreement “to take any position regarding sovereignty over Taiwan”"],["Anti-Secession Law, PRC (2005)","“There is only one China in the world”; “non-peaceful means and other necessary measures” in stated circumstances"]]}
     ],
     pro:[
      "**Readings of 2758.** Beijing says it settled Taiwan’s status; Taipei and some other governments say it addressed only China’s representation at the UN.",
@@ -1211,7 +1211,7 @@ ICA.addUnit({
      {t:"As meaningless, since all official Party texts are just propaganda", why:"Formulations matter to officials and are worth tracking."},
      {t:"As a law passed by the National People’s Congress", why:"It was a Party plenum decision, not an NPC law."}]},
    {id:"e4u19-q06", lesson:"e4u19-l1", level:3, q:"Tomás plans to interview local officials in China and publish their names and towns so readers can verify his claims. What should he do instead?", options:[
-     {t:"Anonymise interviewees and avoid identifying details", ok:true, why:"Right: anonymize, secure his notes and avoid details that could identify people, following do-no-harm rules. Interviewees may face risks the researcher does not."},
+     {t:"Anonymize interviewees and avoid identifying details", ok:true, why:"Right: anonymize, secure his notes and avoid details that could identify people, following do-no-harm rules. Interviewees may face risks the researcher does not."},
      {t:"Publish names but leave out the towns", why:"Names alone can expose people to risk."},
      {t:"Record interviews secretly so the officials speak freely", why:"Deception violates consent and could endanger people."},
      {t:"Nothing: transparency always comes first", why:"In risky settings, protecting participants comes before verifiability."}]},
@@ -1339,7 +1339,7 @@ ICA.addUnit({
      {t:"A defense treaty committing US troops to Taiwan", why:"It does not commit forces."},
      {t:"A Taiwanese law on independence", why:"It is a US law."}]},
    {id:"e4u19-q31", lesson:"e4u19-l4", level:3, q:"Lucía writes: “Most countries agree that Taiwan is part of the PRC.” What is the best correction?", options:[
-     {t:"Most recognize the PRC government, but use varied wordings on Taiwan", ok:true, why:"Right: their one China policies use different wordings, such as “acknowledge” or “take note of”, which do not necessarily adopt the PRC’s position. Recognising a government is not the same as endorsing a territorial claim."},
+     {t:"Most recognize the PRC government, but use varied wordings on Taiwan", ok:true, why:"Right: their one China policies use different wordings, such as “acknowledge” or “take note of”, which do not necessarily adopt the PRC’s position. Recognizing a government is not the same as endorsing a territorial claim."},
      {t:"Most countries recognize Taiwan as an independent state rather than the PRC", why:"As of mid-2026, 12 states recognized the ROC."},
      {t:"The sentence is correct", why:"It ignores the different wordings governments chose."},
      {t:"No country has any position", why:"Every government that recognizes the PRC has some stated position."}]},
