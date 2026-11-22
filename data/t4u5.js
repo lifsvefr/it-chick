@@ -255,7 +255,7 @@ ICA.addUnit({
       {t:"The review is a scoping review instead", why:"Scoping reviews map breadth. Having no meta-analysis doesn’t turn a focused systematic review into a scoping review."}
     ]},
     {id:"t4u5-l2-x3", type:"sort", q:"For each question, which kind of review fits best?", buckets:["Scoping review","Systematic review (maybe with meta-analysis)"], items:[
-      {t:"What kinds of research exist on how small farmers use mobile phones for market prices?", b:0, why:"A broad “what exists?” question: a mapping job."},
+      {t:"What kinds of research exist on how small farmers use cell phones for market prices?", b:0, why:"A broad “what exists?” question: a mapping job."},
       {t:"Does a specific reading program raise test scores for 7-year-olds compared with usual teaching?", b:1, why:"A focused effectiveness question with a defined comparison."},
       {t:"How have researchers defined “digital literacy” in studies of adult learners?", b:0, why:"Clarifying concepts and definitions is a classic scoping aim."},
       {t:"Do text-message reminders reduce missed clinic appointments?", b:1, why:"Focused question about an intervention and an outcome; studies may allow pooling."},

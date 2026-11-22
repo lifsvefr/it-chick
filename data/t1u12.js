@@ -86,7 +86,7 @@ ICA.addUnit({
       ]},
       "Types matter because the same symbols behave differently: the integers `5 + 1` give `6`, but the strings `\"5\" + \"1\"` give `\"51\"`.",
       {list:[
-        "**Digits that aren’t quantities should be strings.** Phone numbers, postcodes and ID codes aren’t for arithmetic, and as numbers they can lose a leading zero (`02134` becomes `2134`), as in spreadsheets (Unit 9).",
+        "**Digits that aren’t quantities should be strings.** Phone numbers, postal codes and ID codes aren’t for arithmetic, and as numbers they can lose a leading zero (`02134` becomes `2134`), as in spreadsheets (Unit 9).",
         "**Floats are approximations.** Binary can’t store 0.1 exactly, so `0.1 + 0.2` gives `0.30000000000000004` in Python and JavaScript. Money is often counted in whole cents, as integers.",
         "**Booleans answer yes-or-no questions:** is the user signed in? Has the invoice been paid?"
       ]},
@@ -138,8 +138,8 @@ ICA.addUnit({
     {id:"t1u12-l1-x2", type:"match", q:"A ticket-booking form collects these values. Match each one to the data type it should be stored as.", pairs:[
       ["Number of tickets: 3","Integer","You count tickets in whole numbers and may add them up, so an integer fits."],
       ["Ticket price: 4.75","Float","A price with a fractional part needs a floating-point number (or, in careful money code, whole cents stored as an integer)."],
-      ["Postcode: 02134","String","A postcode is an identifier, not a quantity. As a string, its leading zero survives, and nobody adds postcodes together."],
-      ["“Send me reminders” tickbox","Boolean","A tickbox is either ticked or not: exactly two values, true or false."],
+      ["Postal code: 02134","String","A postal code is an identifier, not a quantity. As a string, its leading zero survives, and nobody adds postal codes together."],
+      ["“Send me reminders” checkbox","Boolean","A checkbox is either checked or not: exactly two values, true or false."],
       ["Seat row: B","Character","A single letter is one character. (Many languages simply use a one-letter string for this.)"]
     ]},
     {id:"t1u12-l1-x3", type:"order", q:"Put these pseudocode lines in order, so the program counts how many library books are overdue and then shows the count.", items:[
@@ -154,7 +154,7 @@ ICA.addUnit({
       "name = ", {t:"\"Mei\"", flag:true, why:"Text inside quotation marks is a string."},
       "\nseats = ", {t:"3", flag:false, why:"A whole number with no quotation marks: an integer."},
       "\nprice = ", {t:"4.75", flag:false, why:"A number with a decimal point: a float."},
-      "\npostcode = ", {t:"\"02134\"", flag:true, why:"The quotation marks make this a string, which keeps the leading zero: the right choice for a postcode."},
+      "\npostcode = ", {t:"\"02134\"", flag:true, why:"The quotation marks make this a string, which keeps the leading zero: the right choice for a postal code."},
       "\nmember = ", {t:"True", flag:false, why:"`True` without quotation marks is a Boolean in Python."},
       "\nnote = ", {t:"\"7\"", flag:true, why:"Digits inside quotation marks are text. `\"7\" + \"7\"` gives `\"77\"`, not 14."}
     ], why:"In code, quotation marks are what make a value a string, whatever is inside them."},
@@ -185,8 +185,8 @@ ICA.addUnit({
        chromeos:["Open a page in Chrome and press [[kbd:Ctrl]] + [[kbd:U]].","Find markup tags such as `<title>`, `<h1>` and `<p>`.","Press [[kbd:Ctrl]] + [[kbd:F]] and search for `<script` to find JavaScript. On a school or work Chromebook, an administrator may have blocked viewing source; if so, use the phone steps or another device."],
        phone:["**Android (Chrome):** tap the address bar, move to the very start of the address, type `view-source:` in front of it (as in `view-source:https://example.org`) and go. Look for tags such as `<title>`, and for `<script`.","**iPhone (Safari):** viewing source isn’t available on the phone itself. Do this on a computer if you can, or go on to the next task."]
      }, write:"One markup tag you found, and whether the page had any JavaScript"},
-     {t:"Plan a routine with pseudocode and a flowchart", how:["Pick a small routine with at least one decision and one repeat: packing a school bag, locking up a shop, sorting the post, a weekly medicine schedule.","Write it as pseudocode using SET, IF … THEN … ELSE, and FOR EACH or WHILE. Indent the lines that belong inside.","Draw the same steps as a flowchart on paper: ovals to start and end, rectangles for steps, a diamond for each question, and an arrow back for the loop.","Give it to someone else to follow exactly as written. Wherever they have to guess, your steps aren’t precise enough yet, so fix them."], write:"Your pseudocode, and one place where your tester had to guess"},
-     {t:"Name the data types in a real form", how:["Open any sign-up, booking or settings form: an online shop’s address form, a library account page, your phone’s alarm settings. Don’t submit anything.","List each field and write the data type it should be stored as: string, integer, float, Boolean, a date, or a choice from a fixed list.","Find at least one field made of digits that should be a string (a phone number, postcode, card or ID number) and explain why in one sentence."], write:"Each field and its data type"}
+     {t:"Plan a routine with pseudocode and a flowchart", how:["Pick a small routine with at least one decision and one repeat: packing a school bag, locking up a shop, sorting the mail, a weekly medicine schedule.","Write it as pseudocode using SET, IF … THEN … ELSE, and FOR EACH or WHILE. Indent the lines that belong inside.","Draw the same steps as a flowchart on paper: ovals to start and end, rectangles for steps, a diamond for each question, and an arrow back for the loop.","Give it to someone else to follow exactly as written. Wherever they have to guess, your steps aren’t precise enough yet, so fix them."], write:"Your pseudocode, and one place where your tester had to guess"},
+     {t:"Name the data types in a real form", how:["Open any sign-up, booking or settings form: an online shop’s address form, a library account page, your phone’s alarm settings. Don’t submit anything.","List each field and write the data type it should be stored as: string, integer, float, Boolean, a date, or a choice from a fixed list.","Find at least one field made of digits that should be a string (a phone number, postal code, card or ID number) and explain why in one sentence."], write:"Each field and its data type"}
    ], proof:"You’ve seen real markup (and, on most sites, JavaScript) in a page’s source, written pseudocode and a flowchart that someone else could follow, and labeled the data types in a real form."},
    read:[
      {book:"ics", where:"Section 7.1 “Programming Language Foundations”: “The Implementation of HLLs” (compilation and interpretation), and Section 7.2 “Programming Language Constructs”: “HLL Data Types”, “Variables”, “Named Constants”, “Flow of Control” and “Functions”", note:"Written for computer science students. Read for the ideas; skip the details of particular languages."},
@@ -356,7 +356,7 @@ ICA.addUnit({
       {t:"Nothing: it deletes the books from 2020 and earlier", why:"SELECT only reads data. Removing rows would need a different command (DELETE)."},
       {t:"The number of books published after 2020", why:"Counting would need `COUNT(…)`. This lists the titles themselves."}
     ]},
-    {id:"t1u12-l2-x6", type:"number", q:"In a flat file of loans, Ana appears in 14 rows, and each row repeats her address in 3 columns (street, town, postcode). She moves house. How many cells must change to update her address everywhere?", answer:42, tol:0, unit:"cells", why:"14 rows × 3 address cells = 42 cells. In a relational design her address sits once, in the members table: 3 cells, changed once.", wrongs:[
+    {id:"t1u12-l2-x6", type:"number", q:"In a flat file of loans, Ana appears in 14 rows, and each row repeats her address in 3 columns (street, town, postal code). She moves house. How many cells must change to update her address everywhere?", answer:42, tol:0, unit:"cells", why:"14 rows × 3 address cells = 42 cells. In a relational design her address sits once, in the members table: 3 cells, changed once.", wrongs:[
       {v:14, tol:0, why:"That counts the rows. Each row holds 3 address cells."},
       {v:3, tol:0, why:"That’s the answer for a relational design, with one row in the members table. The flat file repeats the address in every loan row."},
       {v:17, tol:0, why:"That adds 14 and 3. Each of the 14 rows has all 3 cells, so multiply."}
@@ -404,12 +404,12 @@ ICA.addUnit({
    ],
    learn:[
     {h:"One computer acting as many", body:[
-      {lead:"A big server is like a large building. Instead of giving the whole building to one tenant, you can divide it into flats, each with its own front door, kitchen and keys."},
+      {lead:"A big server is like a large building. Instead of giving the whole building to one tenant, you can divide it into apartments, each with its own front door, kitchen and keys."},
       "[[virtualisation|Virtualisation]] uses software to divide one physical computer into several **virtual machines** (VMs). Each [[virtual-machine|virtual machine]] behaves like a complete, separate computer: it has its own share of processor time, memory and storage, its own operating system and its own apps. The software that creates the VMs and shares the real hardware between them is the [[hypervisor]].",
       {list:[
         "The **host** is the physical computer and its hardware.",
         "Each VM runs a [[guest-os|guest operating system]], which can differ from the host’s. A Mac can run Linux or Windows in a VM, and one server can run dozens of Linux and Windows VMs side by side.",
-        "The guests are **isolated** from each other: a crash or an infection in one VM doesn’t directly reach the others or the host, just as a fire door separates flats."
+        "The guests are **isolated** from each other: a crash or an infection in one VM doesn’t directly reach the others or the host, just as a fire door separates apartments."
       ]},
       {table:[
         ["","Type 1 (bare metal)","Type 2 (hosted)"],
@@ -450,7 +450,7 @@ ICA.addUnit({
         "**PaaS** gives you a platform for running applications you write or buy, using languages and tools the provider supports. You manage your app and its settings; the provider manages the servers, operating systems and storage beneath. Examples: app-hosting services where a developer uploads code and the platform runs and scales it (such as Google App Engine, Azure App Service or Heroku), and managed database services. The static website hosts in Making with Code Unit 5 work in a similar way: you upload your files, and the provider runs everything beneath them.",
         "**SaaS** gives you a finished application. You manage only your data, your account and a few settings. Examples: webmail, online office suites, video-call services, cloud storage such as OneDrive, Google Drive, iCloud or Dropbox, and online accounting or booking systems."
       ]},
-      {ex:"Priya runs a small dance school.\nParents book classes in an online booking system she pays for each month: SaaS. She never thinks about servers.\nHer nephew Tomás builds the school a custom timetable app and runs it on an app-hosting platform that looks after the servers: PaaS.\nThe city’s dance festival rents virtual machines to run its own ticketing software, which its IT team installs and keeps updated: IaaS.", label:"Worked example: one person, three models"},
+      {ex:"Priya runs a small dance school.\nParents book classes in an online booking system she pays for each month: SaaS. She never thinks about servers.\nHer nephew Tomás builds the school a custom schedule app and runs it on an app-hosting platform that looks after the servers: PaaS.\nThe city’s dance festival rents virtual machines to run its own ticketing software, which its IT team installs and keeps updated: IaaS.", label:"Worked example: one person, three models"},
       {tip:"Most people only ever use SaaS directly. But every SaaS app runs on something: the provider’s own data centers, or PaaS and IaaS rented from a bigger cloud company."}
     ]},
     {h:"Who is responsible for what", body:[
@@ -530,7 +530,7 @@ ICA.addUnit({
       {t:"Fifty physical servers, because apps can’t share hardware safely", why:"Virtualisation and containers exist precisely so that many workloads can share hardware safely."},
       {t:"A SaaS app, because SaaS runs any code you upload", why:"SaaS is a finished app you use, not a place to run your own code. That’s PaaS or IaaS."}
     ]},
-    {id:"t1u12-l3-x7", type:"mcq", q:"Kenji accidentally deletes a folder in his cloud storage (a SaaS service) and empties the bin. Three months later he needs it. What does the shared responsibility model tell him?", options:[
+    {id:"t1u12-l3-x7", type:"mcq", q:"Kenji accidentally deletes a folder in his cloud storage (a SaaS service) and empties the trash. Three months later he needs it. What does the shared responsibility model tell him?", options:[
       {t:"His data is his responsibility; without his own backup, it may be gone", ok:true, why:"Right. Providers protect against their hardware failing. Some offer a recovery window, but they don’t promise to keep data you’ve deleted. Unit 2’s 3-2-1 rule covers this."},
       {t:"The provider must restore it, because with SaaS they handle everything", why:"SaaS moves the servers and the app to the provider, not responsibility for your data."},
       {t:"It’s safe, because cloud data is copied to several data centers", why:"Copies protect against hardware failure. When you delete something, the deletion is copied too."},
@@ -594,13 +594,13 @@ ICA.addUnit({
       "What you type into an AI tool is called a [[ai-prompt|prompt]]. Vague prompts get generic answers. Good prompts give the same information you’d give a new colleague:",
       {list:[
         "**Goal:** what you want, in one sentence. “Write a reminder about Saturday’s beach clean-up.”",
-        "**Context:** the facts it can’t know. “We meet at 9:00 at the north car park. Bring gloves; we provide bags.”",
+        "**Context:** the facts it can’t know. “We meet at 9:00 at the north parking lot. Bring gloves; we provide bags.”",
         "**Audience:** who will read it. “Volunteers aged 16 to 80, some of them new.”",
         "**Format and length:** “Under 80 words, friendly, with the time and place in the first line.”",
         "**Constraints:** what to avoid. “Don’t promise refreshments; we haven’t confirmed them.”",
         "**An example,** if you have one: “Match the tone of this message we sent last month: …”"
       ]},
-      {ex:"Weak prompt:\nwrite something about the beach clean\n\nBetter prompt:\nWrite a reminder for volunteers about our beach clean-up on Saturday 5 December. We meet at 9:00 at the north car park and finish by 12:00. Bring gloves and water; we provide bags. Readers are 16 to 80, some new to the group. Under 80 words, friendly, with the date, time and place in the first line. Don’t mention refreshments.", label:"Worked example: from a weak prompt to a better one"},
+      {ex:"Weak prompt:\nwrite something about the beach clean\n\nBetter prompt:\nWrite a reminder for volunteers about our beach clean-up on Saturday 5 December. We meet at 9:00 at the north parking lot and finish by 12:00. Bring gloves and water; we provide bags. Readers are 16 to 80, some new to the group. Under 80 words, friendly, with the date, time and place in the first line. Don’t mention refreshments.", label:"Worked example: from a weak prompt to a better one"},
       "Then **iterate**: treat the first answer as a draft and ask for changes (“shorter”, “less formal”, “two other versions”). Asking it to **ask you questions first** often works better than guessing what to include, and asking it to explain its answer makes mistakes easier to spot.",
       {tip:"Write prompts in the language you’re most comfortable in. Most major assistants work in many languages, though quality varies, and checking matters even more in a language you read less easily."}
     ]},
@@ -929,11 +929,11 @@ ICA.addUnit({
       {t:"Writing the whole request in capital letters", why:"Capitals add no information about what she wants changed."},
       {t:"Saying who will read it and what “better” means", ok:true, why:"Such as shorter, warmer or more formal. Audience, goal and constraints are what a vague prompt lacks. They tell the assistant what to change and what to leave."}
     ]},
-    {id:"t1u12-cp08", lesson:"t1u12-l5", level:2, q:"With no signal, Tomás’s train app still shows today’s timetable but won’t let him buy a ticket. Why?", options:[
-      {t:"The timetable is cached on his phone; buying needs the back end", ok:true, why:"Cached data lets the front end show information offline. Payments and new records need the back end and its database."},
+    {id:"t1u12-cp08", lesson:"t1u12-l5", level:2, q:"With no signal, Tomás’s train app still shows today’s schedule but won’t let him buy a ticket. Why?", options:[
+      {t:"The schedule is cached on his phone; buying needs the back end", ok:true, why:"Cached data lets the front end show information offline. Payments and new records need the back end and its database."},
       {t:"Train companies only sell tickets at stations, never through apps", why:"The app normally sells tickets. What’s missing is a connection to its back end."},
       {t:"His phone stores the shared database, but can’t change it offline", why:"The shared database is on the back end. His phone holds only a cached copy of some data."},
-      {t:"The timetable is created on the spot by the app’s AI feature", why:"The timetable is ordinary data the app saved earlier, not an AI prediction."}
+      {t:"The schedule is created on the spot by the app’s AI feature", why:"The schedule is ordinary data the app saved earlier, not an AI prediction."}
     ]},
     {id:"t1u12-cp09", lesson:"t1u12-l4", level:3, q:"A recipe app adds a “Summarise reviews” button. Its privacy page says text is sent to an outside AI provider. What’s the most accurate conclusion for Mei?", options:[
       {t:"Nothing leaves her phone, because the button is part of the app itself", why:"Being inside an app doesn’t mean it runs on the device. The privacy page says the text goes to another company."},
@@ -1279,7 +1279,7 @@ ICA.addUnit({
      starter:[
       "Every value in a program has a [[data-type|data type]]: what kind of value it is. The basic ones are a [[char-type|character]] (one letter or symbol), a [[string]] (text), an [[integer]] (a whole number), a [[float]] (a number with a fractional part) and a [[boolean|Boolean]] (true or false).",
       "Programs keep values in [[variable-code|variables]]: named places for values, like labeled jars. A [[constant-value|constant]] is a named value that shouldn’t change while the program runs, such as a tax rate.",
-      "Choose a type by what you’ll do with the value. Count it: integer. Measure it: float. Read it: string. Ask yes or no: Boolean. Phone numbers and postcodes are strings, because you never do arithmetic with them and their leading zeros must survive.",
+      "Choose a type by what you’ll do with the value. Count it: integer. Measure it: float. Read it: string. Ask yes or no: Boolean. Phone numbers and postal codes are strings, because you never do arithmetic with them and their leading zeros must survive.",
       {key:"The type decides what a value can do: `5 + 1` is 6, but `\"5\" + \"1\"` is `\"51\"`."}
      ],
      builder:[
@@ -1289,7 +1289,7 @@ ICA.addUnit({
         ["String","`\"Rice and Rain\"`","Names, messages, codes, phone numbers"],
         ["Integer","`42`","Counts and whole quantities"],
         ["Float","`4.75`","Measurements and calculated values"],
-        ["Boolean","`true`","Yes/no states: paid, signed in, ticked"]
+        ["Boolean","`true`","Yes/no states: paid, signed in, checked"]
       ]},
       "Beyond single values, programs use:",
       {list:[
@@ -1299,7 +1299,7 @@ ICA.addUnit({
         "**[[object|Objects]]:** bundles of related data (**properties**, also called attributes) and actions (**methods**). A `book` object might have `title` and `due_date` properties and a `renew()` method. Designing programs around objects is **object-oriented programming**."
       ]},
       "Floats are approximate: because computers store fractions in binary, `0.1 + 0.2` gives `0.30000000000000004` in Python and JavaScript. Code that handles money often stores whole cents as integers, or uses a special decimal type.",
-      "Choosing the wrong type causes familiar bugs: a postcode stored as a number loses its leading zero; prices stored as text can’t be added up, and in some languages `\"10\" + \"5\"` becomes `\"105\"`; a tickbox recorded as “yes”, “Yes” and “Y” can’t be counted reliably. Spreadsheets have the same problem with cells (Unit 9, Lesson 1)."
+      "Choosing the wrong type causes familiar bugs: a postal code stored as a number loses its leading zero; prices stored as text can’t be added up, and in some languages `\"10\" + \"5\"` becomes `\"105\"`; a checkbox recorded as “yes”, “Yes” and “Y” can’t be counted reliably. Spreadsheets have the same problem with cells (Unit 9, Lesson 1)."
      ],
      pro:[
       "Languages differ in **typing**. Statically typed languages (C, Java, Swift, Rust) fix each variable’s type when the code is written and check it before running. Dynamically typed languages (Python, JavaScript) attach types to values and check them as the program runs. Weakly typed behavior, such as JavaScript turning `\"5\" + 1` into `\"51\"`, converts between types automatically; Python refuses and raises a `TypeError`.",
@@ -1393,7 +1393,7 @@ ICA.addUnit({
       "[[unstructured-data|Unstructured data]] has no predefined layout; its meaning is in the content. Photos, videos, voice messages, scanned letters and free-text documents are unstructured.",
       "[[semi-structured-data|Semi-structured data]] is in between: every value is labeled, but records can have different fields. JSON and XML files are the usual examples.",
       {key:"Structured data is easiest to search and count; unstructured data is the most common, and often the richest."},
-      "The category matters because it decides how easily a computer can search, sort and count the data, and where it’s best stored. A spreadsheet of exam marks is structured; the students’ essays are unstructured."
+      "The category matters because it decides how easily a computer can search, sort and count the data, and where it’s best stored. A spreadsheet of exam scores is structured; the students’ essays are unstructured."
      ],
      builder:[
       {table:[
@@ -1499,7 +1499,7 @@ ICA.addUnit({
     summary:"How one physical computer runs several isolated virtual computers, what a hypervisor does, and how containers differ from virtual machines.",
     levels:{
      starter:[
-      "[[virtualisation|Virtualisation]] uses software to divide one physical computer into several [[virtual-machine|virtual machines]] (VMs). Each VM acts like a complete, separate computer with its own operating system and apps, like flats in one building.",
+      "[[virtualisation|Virtualisation]] uses software to divide one physical computer into several [[virtual-machine|virtual machines]] (VMs). Each VM acts like a complete, separate computer with its own operating system and apps, like apartments in one building.",
       "The [[hypervisor]] is the software that creates the VMs and shares the real hardware between them. The physical computer is the **host**; the operating system inside a VM is the [[guest-os|guest]].",
       "A [[software-container|container]] is lighter: an app packaged with what it needs, sharing the host’s operating system instead of bringing its own.",
       {key:"A VM is a whole computer made of software. A container is a packaged app that shares the host’s operating system."},
@@ -1667,7 +1667,7 @@ ICA.addUnit({
       "Treat the first answer as a draft, not a final product."
      ],
      builder:[
-      {ex:"Weak: write something about the beach clean\n\nBetter: Write a reminder for volunteers about our beach clean-up on Saturday 5 December, 9:00–12:00, meeting at the north car park. Bring gloves and water; we provide bags. Readers are 16 to 80, some new. Under 80 words, friendly, date, time and place in the first line. Don’t mention refreshments.", label:"Example"},
+      {ex:"Weak: write something about the beach clean\n\nBetter: Write a reminder for volunteers about our beach clean-up on Saturday 5 December, 9:00–12:00, meeting at the north parking lot. Bring gloves and water; we provide bags. Readers are 16 to 80, some new. Under 80 words, friendly, date, time and place in the first line. Don’t mention refreshments.", label:"Example"},
       "Techniques that help:",
       {list:[
         "**Give an example** of the tone or format you want.",

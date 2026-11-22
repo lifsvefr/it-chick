@@ -21,17 +21,17 @@ var COAST = {kind:"Journal article", rows:[["Authors (in this order)","Sione Tau
 var QUILL = {kind:"A chat with a generative AI tool", rows:[["Company that makes the tool","Lumen Labs"],["Tool","Quill"],["Model name shown in the chat","Quill 4.2"],["Date of the chat","3 March 2026"],["Chat title (as the tool shows it)","Planning a School Garden Survey"],["Share link for the chat","https://quill.example/share/k7d2p9"],["The tool’s home page","https://quill.example"]]};
 
 /* ----- APA parts ----- */
-function apaAuthors(t, ex, second){ return {label:"Authors", t:t, why:"APA: surname, comma, then initials with full stops. Commas between authors, and “&” before the last one.", bad:(second ? [{re:"^" + second, msg:"Keep the authors in the order the source lists them: " + t.split(",")[0] + " first."}] : []).concat([
+function apaAuthors(t, ex, second){ return {label:"Authors", t:t, why:"APA: surname, comma, then initials with periods. Commas between authors, and “&” before the last one.", bad:(second ? [{re:"^" + second, msg:"Keep the authors in the order the source lists them: " + t.split(",")[0] + " first."}] : []).concat([
   {re:"\\band\\b", msg:"In an APA reference list, put “&” before the last author, not “and”."},
   {re:"[A-ZÁÉÍÓÚ][a-záéíóú]+ [A-Z][a-z]+,", msg:"Start each author with the surname, then initials (" + ex + "), not the full first name."},
   {re:"[A-Z]{3,}", msg:"Names aren’t written in capitals."},
-  {re:"[A-Z]\\.[A-Z]|[A-Z],", msg:"Each initial needs a full stop and a space."}])}; }
-function apaYear(y){ return {label:"Year", t:"(" + y + ").", why:"The year goes in round brackets after the authors, then a full stop.", bad:[{re:"^\\d{4}\\.?$", msg:"Put the year in round brackets: (" + y + ")."},{re:"^\\(\\d{4}\\)$", msg:"Add a full stop after the bracket: (" + y + ")."}]}; }
-function apaArtTitle(t){ return {label:"Article title", t:t, why:"Article titles use sentence case, aren’t in italics or quotation marks, and end with a full stop.", capMsg:"APA writes article titles in sentence case: a capital only for the first word, the first word after a colon, and names.", notItMsg:"Article titles aren’t in italics in APA (the journal name is).", bad:[{re:"^\"", msg:"APA doesn’t put article titles in quotation marks."}]}; }
+  {re:"[A-Z]\\.[A-Z]|[A-Z],", msg:"Each initial needs a period and a space."}])}; }
+function apaYear(y){ return {label:"Year", t:"(" + y + ").", why:"The year goes in round brackets after the authors, then a period.", bad:[{re:"^\\d{4}\\.?$", msg:"Put the year in round brackets: (" + y + ")."},{re:"^\\(\\d{4}\\)$", msg:"Add a period after the bracket: (" + y + ")."}]}; }
+function apaArtTitle(t){ return {label:"Article title", t:t, why:"Article titles use sentence case, aren’t in italics or quotation marks, and end with a period.", capMsg:"APA writes article titles in sentence case: a capital only for the first word, the first word after a colon, and names.", notItMsg:"Article titles aren’t in italics in APA (the journal name is).", bad:[{re:"^\"", msg:"APA doesn’t put article titles in quotation marks."}]}; }
 function apaJournal(j){ return {label:"Journal", t:"*" + j + "*,", why:"The journal name keeps its capitals, goes in italics, and is followed by a comma.", itMsg:"The journal name goes in italics.", capMsg:"Journal names keep the capitals the journal uses.", bad:[{re:"^[\"']+$", msg:"APA doesn’t put article titles in quotation marks."}]}; }
 function apaVol(v){ return {label:"Volume", t:"*" + v + "*", why:"The volume number is in italics, straight after the journal name.", itMsg:"In APA the volume number is in italics too (the issue number isn’t).", bad:[{re:"vol", f:"i", msg:"APA doesn’t write “vol.”: just the number, in italics."}]}; }
 function apaIss(n){ return {label:"Issue", t:"(" + n + "),", join:"", why:"The issue number goes in round brackets straight after the volume (no space), not in italics, then a comma.", notItMsg:"The issue number isn’t in italics, only the volume.", bad:[{re:"no\\.|issue", f:"i", msg:"APA doesn’t write “no.” or “issue”: just (" + n + ") right after the volume."}]}; }
-function apaPages(p){ return {label:"Pages", t:p + ".", why:"The page range with an en dash, no “pp.”, then a full stop.", bad:[{re:"pp?\\.", msg:"APA journal references don’t put “p.” or “pp.” before the page range."}]}; }
+function apaPages(p){ return {label:"Pages", t:p + ".", why:"The page range with an en dash, no “pp.”, then a period.", bad:[{re:"pp?\\.", msg:"APA journal references don’t put “p.” or “pp.” before the page range."}]}; }
 // the DOI itself can be in any case (DOIs ignore case), but https://doi.org/ is written in small letters
 function doiLink(d, end){ var esc = function(x){ return x.replace(/[.*+?^${}()|[\]\\\/]/g, "\\$&").replace(/[a-z]/gi, function(c){ return "[" + c.toLowerCase() + c.toUpperCase() + "]"; }); };
   return {label:"DOI", re:"https://doi\\.org/" + esc(d) + esc(end || ""), example:"https://doi.org/" + d + (end || ""), capMsg:"Write https://doi.org/ in small letters.", why:"Write the DOI as a link: https://doi.org/ followed by the DOI.", bad:[
@@ -39,7 +39,7 @@ function doiLink(d, end){ var esc = function(x){ return x.replace(/[.*+?^${}()|[
   {re:"dx\\.doi", msg:"Use the current form https://doi.org/, not dx.doi.org."},
   {re:"^http:", msg:"Use https://, not http://."},
   {re:"^10\\.", msg:"Put https://doi.org/ in front of the DOI so it works as a link."}]}; }
-var APA_END = [{re:"^\\.$", msg:"No full stop after a DOI or URL at the end of an APA reference (it could break the link)."}];
+var APA_END = [{re:"^\\.$", msg:"No period after a DOI or URL at the end of an APA reference (it could break the link)."}];
 var DOI_END = [{re:"^[.,;]$", msg:"Just the link here, with nothing after it."}];
 var APA_BAD = [{re:"^Retrieved|^Accessed", f:"i", msg:"APA only adds a “Retrieved” date for pages that are designed to change over time, so leave it out here."}];
 function apaArticle(o){ return [apaAuthors(o.auth, o.ex, o.second), apaYear(o.year), apaArtTitle(o.title), apaJournal(o.journal), apaVol(o.vol), apaIss(o.iss), apaPages(o.pages), doiLink(o.doi)]; }
@@ -47,7 +47,7 @@ var GARDEN_APA = apaArticle({auth:"Okafor, N., & Herrera, T.", ex:"Okafor, N.", 
 var SHADE_APA = apaArticle({auth:"Herrera, T., & Okafor, N.", ex:"Herrera, T.", second:"Okafor", year:2022, title:"Shade trees and walking: A survey of older residents.", journal:"Urban Green Space Review", vol:11, iss:1, pages:"5–19", doi:"10.5555/ugsr.2022.0102"});
 
 /* ----- MLA parts ----- */
-function mlaTitleQ(t, why, chicago){ return {label:"Title", t:"\"" + t + "\"", why:why || "Titles of articles and web pages go in quotation marks, in title case, with the full stop inside the closing quotation mark.", capMsg:(chicago ? "Chicago uses headline-style capitals" : "MLA uses title case") + ": capitalize the main words, but not short words like a, and, at, from, of, the and to (unless they come first or straight after a colon).", notItMsg:"Titles of articles and pages go in quotation marks, not italics.", bad:[{re:"\"\\.?$", msg:"Put the full stop inside the quotation marks: …Cities.” "}, {re:"^'", msg:"Use double quotation marks (“…”) around the title."}, {re:"^[^\"]", msg:"Put the title in quotation marks."}]}; }
+function mlaTitleQ(t, why, chicago){ return {label:"Title", t:"\"" + t + "\"", why:why || "Titles of articles and web pages go in quotation marks, in title case, with the period inside the closing quotation mark.", capMsg:(chicago ? "Chicago uses headline-style capitals" : "MLA uses title case") + ": capitalize the main words, but not short words like a, and, at, from, of, the and to (unless they come first or straight after a colon).", notItMsg:"Titles of articles and pages go in quotation marks, not italics.", bad:[{re:"\"\\.?$", msg:"Put the period inside the quotation marks: …Cities.” "}, {re:"^'", msg:"Use double quotation marks (“…”) around the title."}, {re:"^[^\"]", msg:"Put the title in quotation marks."}]}; }
 var GARDEN_MLA = [
   {label:"Authors", t:"Okafor, Ngozi, and Tomás Herrera.", why:"MLA: the first author surname first (Okafor, Ngozi), then “, and” and the second author in normal order.", bad:[{re:"&", msg:"MLA writes “and”, not “&”."},{re:"Herrera, Tom", msg:"Only the first author is reversed; the second is written first name first: Tomás Herrera."},{re:"N\\.", msg:"MLA uses full first names as they appear in the source, not initials."}]},
   mlaTitleQ("Community Gardens and Neighbourhood Trust: Evidence from Three Cities."),
@@ -57,7 +57,7 @@ var GARDEN_MLA = [
   {label:"Year", t:"2023,", why:"In MLA the year comes after the volume and issue, without brackets, then a comma.", bad:[{re:"\\(", msg:"No brackets around the year in MLA."}]},
   {label:"Pages", t:"pp. 45–67,", why:"MLA writes “pp.” before a page range, then a comma.", bad:[{re:"^45", msg:"MLA puts “pp.” before a page range: pp. 45–67."}]},
   doiLink("10.5555/ugsr.2023.0345", ".")];
-GARDEN_MLA[GARDEN_MLA.length - 1].why = "Write the DOI as a link (https://doi.org/…), and end the entry with a full stop.";
+GARDEN_MLA[GARDEN_MLA.length - 1].why = "Write the DOI as a link (https://doi.org/…), and end the entry with a period.";
 
 window.CLAB = [
 /* ================= APA ================= */
@@ -73,7 +73,7 @@ window.CLAB = [
         {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. Urban Green Space Review, 12(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"italics"},
         {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12(3)*, 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"issue number isn’t in italics"},
         {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. doi:10.5555/ugsr.2023.0345"], expect:"links"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345."], expect:"No full stop after a DOI"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345."], expect:"No period after a DOI"},
         {a:["Ngozi Okafor, & Tomás Herrera. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"surname"},
         {a:["Okafor, N., & Herrera, T. 2023. Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"round brackets"},
         {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), pp. 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"pp."},
@@ -87,15 +87,15 @@ window.CLAB = [
  fields:[{label:"Reference list entry", segs:[
    apaAuthors("Raman, P.", "Raman, P."), apaYear(2021),
    {label:"Title", t:"*Salt and stone: A short history of coastal trade*", why:"Book titles are in italics and in sentence case (capitals for the first word, the first word after a colon, and names).", itMsg:"Book titles go in italics.", capMsg:"APA writes book titles in sentence case: “Salt and stone: A short history of coastal trade”."},
-   {label:"Edition", t:"(2nd ed.).", why:"A later edition goes in round brackets after the title, not in italics: (2nd ed.). Then a full stop.", notItMsg:"The edition isn’t in italics.", bad:[{re:"^\\.$", msg:"No full stop between the title and the edition: …trade* (2nd ed.)."},{re:"edition|Second", f:"i", msg:"APA shortens it: (2nd ed.)."}]},
-   {label:"Publisher", t:"Harbour Light Press.", why:"Then the publisher and a full stop. APA 7 leaves out the city.", bad:[{re:":", msg:"APA 7 doesn’t include the publisher’s city."}]}]}],
+   {label:"Edition", t:"(2nd ed.).", why:"A later edition goes in round brackets after the title, not in italics: (2nd ed.). Then a period.", notItMsg:"The edition isn’t in italics.", bad:[{re:"^\\.$", msg:"No period between the title and the edition: …trade* (2nd ed.)."},{re:"edition|Second", f:"i", msg:"APA shortens it: (2nd ed.)."}]},
+   {label:"Publisher", t:"Harbour Light Press.", why:"Then the publisher and a period. APA 7 leaves out the city.", bad:[{re:":", msg:"APA 7 doesn’t include the publisher’s city."}]}]}],
  also:[["Raman, P. (2021). *Salt and stone: A short history of coastal trade* (2nd ed.). Harbour Light Press."]],
  traps:[{a:["Raman, P. (2021). *Salt and Stone: A Short History of Coastal Trade* (2nd ed.). Harbour Light Press."], expect:"sentence case"},
         {a:["Raman, P. (2021). Salt and stone: A short history of coastal trade (2nd ed.). Harbour Light Press."], expect:"italics"},
         {a:["Raman, P. (2021). *Salt and stone: A short history of coastal trade*. Harbour Light Press."], expect:"Edition"},
         {a:["Raman, P. (2021). *Salt and stone: A short history of coastal trade* (2nd ed.). London: Harbour Light Press."], expect:"city"},
         {a:["Raman, P. (2021). *Salt and stone: A short history of coastal trade (2nd ed.)*. Harbour Light Press."], expect:"edition isn’t in italics"}],
- hints:["Pattern: Author. (Year). *Title in sentence case* (2nd ed.). Publisher.", "The edition sits between the title and the full stop: *…trade* (2nd ed.)."],
+ hints:["Pattern: Author. (Year). *Title in sentence case* (2nd ed.). Publisher.", "The edition sits between the title and the period: *…trade* (2nd ed.)."],
  explain:"Editions matter because page numbers and content change between them. APA 7 dropped the publisher’s city that older editions of the style required, so you may still see it in older papers."},
 
 {id:"cl-apa-chapter", group:"apa", title:"Chapter in an edited book", lesson:"t4u4-l2", style:"APA 7",
@@ -106,8 +106,8 @@ window.CLAB = [
    apaArtTitle("Mapping memory in rebuilt towns."),
    {label:"Editors", t:"In A. Diallo & L. Fernández (Eds.),", why:"“In”, then the editors with initials first, “&” between them, then (Eds.) and a comma.", bad:[{re:"Diallo, A", msg:"Editors are written initials first here: A. Diallo & L. Fernández."},{re:"\\(Ed\\.\\)", msg:"Two editors: (Eds.)."},{re:"\\band\\b", msg:"Use “&” between the editors."},{re:"^(?!In )", msg:"Start this part with “In”."}]},
    {label:"Book title", t:"*Places of memory and repair*", why:"The book title in italics and sentence case.", itMsg:"The book title goes in italics (the chapter title doesn’t).", capMsg:"Sentence case for the book title: “Places of memory and repair”."},
-   {label:"Pages", t:"(pp. 88–112).", why:"The chapter’s pages in brackets with “pp.”, then a full stop.", bad:[{re:"^88", msg:"Use (pp. 88–112) for a chapter’s pages."}]},
-   {label:"Publisher", t:"Northgate University Press.", why:"Then the publisher and a full stop."}]}],
+   {label:"Pages", t:"(pp. 88–112).", why:"The chapter’s pages in brackets with “pp.”, then a period.", bad:[{re:"^88", msg:"Use (pp. 88–112) for a chapter’s pages."}]},
+   {label:"Publisher", t:"Northgate University Press.", why:"Then the publisher and a period."}]}],
  also:[["Watanabe, K. (2020). Mapping memory in rebuilt towns. In A. Diallo & L. Fernández (Eds.), *Places of memory and repair* (pp. 88-112). Northgate University Press."]],
  traps:[{a:["Watanabe, K. (2020). Mapping memory in rebuilt towns. In Diallo, A., & Fernández, L. (Eds.), *Places of memory and repair* (pp. 88–112). Northgate University Press."], expect:"initials first"},
         {a:["Watanabe, K. (2020). *Mapping memory in rebuilt towns*. In A. Diallo & L. Fernández (Eds.), Places of memory and repair (pp. 88–112). Northgate University Press."], expect:"italics"},
@@ -120,9 +120,9 @@ window.CLAB = [
  task:"Cite this web page in APA. The organization is both the author and the website, so its name appears only once.",
  source:WATER,
  fields:[{label:"Reference list entry", tail:APA_END, bad:APA_BAD, segs:[
-   {label:"Author", t:"Clean Rivers Network.", why:"When a group wrote the page, its full name is the author, followed by a full stop.", bad:[{re:"^\\(", msg:"Start with the author: the organization’s name."}]},
+   {label:"Author", t:"Clean Rivers Network.", why:"When a group wrote the page, its full name is the author, followed by a period.", bad:[{re:"^\\(", msg:"Start with the author: the organization’s name."}]},
    {label:"Date", t:"(2024, May 14).", why:"APA dates for web pages: (year, Month day).", bad:[{re:"14 May|May 14, 2024|2024-05", msg:"APA writes the date as (2024, May 14): year first, then month and day."},{re:"^\\(2024\\)\\.?$", msg:"The page gives an exact date, so include it: (2024, May 14)."}]},
-   {label:"Title", t:"*How to test your tap water at home*.", alt:["*How to test your tap water at home.*"], why:"A page on a website: title in italics and sentence case, then a full stop.", itMsg:"The page title goes in italics.", capMsg:"Sentence case for the page title: “How to test your tap water at home”.", bad:[{re:"^[\"']", msg:"APA puts the title of a web page in italics, not in quotation marks."}]},
+   {label:"Title", t:"*How to test your tap water at home*.", alt:["*How to test your tap water at home.*"], why:"A page on a website: title in italics and sentence case, then a period.", itMsg:"The page title goes in italics.", capMsg:"Sentence case for the page title: “How to test your tap water at home”.", bad:[{re:"^[\"']", msg:"APA puts the title of a web page in italics, not in quotation marks."}]},
    {label:"URL", t:"https://www.cleanriversnetwork.example/advice/test-tap-water", why:"End with the URL. Leave out the site name when it’s the same as the author.", bad:[{re:"Clean Rivers", msg:"Leave out the site name when it’s the same as the author."},{re:"Retrieved", msg:"APA only adds a “Retrieved” date for pages that are designed to change over time."}]}]}],
  also:[["Clean Rivers Network. (2024, May 14). *How to test your tap water at home*. https://www.cleanriversnetwork.example/advice/test-tap-water"]],
  traps:[{a:["Clean Rivers Network. (2024, May 14). *How to test your tap water at home*. Clean Rivers Network. https://www.cleanriversnetwork.example/advice/test-tap-water"], expect:"site name"},
@@ -139,7 +139,7 @@ window.CLAB = [
    {label:"Author", t:"Regional Health Observatory.", why:"The organization is the author."},
    apaYear(2022),
    {label:"Title", t:"*Heat and health in cities: A 2022 update*", why:"Report titles are in italics and sentence case.", itMsg:"The report title goes in italics.", capMsg:"Sentence case for the title: “Heat and health in cities: A 2022 update”."},
-   {label:"Report number", t:"(Report No. 7).", why:"The report number in round brackets after the title, not in italics, then a full stop.", notItMsg:"The report number isn’t in italics.", bad:[{re:"^\\.$", msg:"No full stop between the title and the report number: …update* (Report No. 7)."},{re:"number|Nr", f:"i", msg:"APA shortens it: (Report No. 7)."}]},
+   {label:"Report number", t:"(Report No. 7).", why:"The report number in round brackets after the title, not in italics, then a period.", notItMsg:"The report number isn’t in italics.", bad:[{re:"^\\.$", msg:"No period between the title and the report number: …update* (Report No. 7)."},{re:"number|Nr", f:"i", msg:"APA shortens it: (Report No. 7)."}]},
    {label:"URL", t:"https://www.rho.example/reports/heat-2022", why:"Then the URL. The publisher is left out because it’s the same as the author.", bad:[{re:"Regional Health", msg:"Leave out the publisher when it’s the same as the author."}]}]}],
  also:[["Regional Health Observatory. (2022). *Heat and health in cities: A 2022 update* (Report No. 7). https://www.rho.example/reports/heat-2022"]],
  traps:[{a:["Regional Health Observatory. (2022). *Heat and health in cities: A 2022 update (Report No. 7)*. https://www.rho.example/reports/heat-2022"], expect:"isn’t in italics"},
@@ -173,14 +173,14 @@ window.CLAB = [
  source:COAST,
  fields:[
   {label:"1. Parenthetical citation", segs:[
-   {label:"Authors", t:"(Taufa et al.,", why:"With three or more authors, APA 7 cites the first author and “et al.” from the very first citation.", bad:[{re:"Lin", msg:"For three or more authors, give only the first surname and “et al.”."},{re:"et al[^.]|etal", msg:"Write “et al.” with a full stop after “al”."}]},
+   {label:"Authors", t:"(Taufa et al.,", why:"With three or more authors, APA 7 cites the first author and “et al.” from the very first citation.", bad:[{re:"Lin", msg:"For three or more authors, give only the first surname and “et al.”."},{re:"et al[^.]|etal", msg:"Write “et al.” with a period after “al”."}]},
    {label:"Year", t:"2024)", alt:["2024)."], why:"Then the year."}]},
   {label:"2. Authors part of the reference", tail:[{re:"^\\(?\\d{4}", msg:"Just the authors part here: in the full reference, the year comes next."}], segs:[
    {label:"Authors", t:"Taufa, S., Lin, M., & Adeyemi, O.", why:"In the reference list, APA 7 lists every author (up to 20), each surname first with initials, with “&” before the last.", bad:[{re:"et al", msg:"The reference list names all the authors (up to 20); “et al.” is only for in-text citations."},{re:"\\band\\b", msg:"Use “&” before the last author."}]}]}],
  also:[["(Taufa et al., 2024)", "Taufa, S., Lin, M., & Adeyemi, O."]],
  traps:[{a:["(Taufa, Lin, & Adeyemi, 2024)", "Taufa, S., Lin, M., & Adeyemi, O."], expect:"et al."},
         {a:["(Taufa et al., 2024)", "Taufa, S., et al."], expect:"all the authors"},
-        {a:["(Taufa et al, 2024)", "Taufa, S., Lin, M., & Adeyemi, O."], expect:"full stop"}],
+        {a:["(Taufa et al, 2024)", "Taufa, S., Lin, M., & Adeyemi, O."], expect:"period"}],
  hints:["In the text: (First author et al., Year).", "In the reference list: everyone, up to 20 authors."],
  explain:"“Et al.” is Latin for “and others”. APA 7 uses it from the first citation for three or more authors, but the reference list still credits everyone (up to 20 names; beyond that, a special pattern applies)."},
 
@@ -200,10 +200,10 @@ window.CLAB = [
  fields:[
   {label:"1. Reference list entry", tail:APA_END, bad:APA_BAD, segs:[
    {label:"Author", t:"Lumen Labs.", why:"The company that made the tool is the author (an AI can’t be an author).", bad:[{re:"^\\*?Quill", msg:"The author is the company that made the tool, Lumen Labs, not the tool itself."}]},
-   {label:"Date", t:"(2026, March 3).", why:"The date of the chat: (year, Month day), then a full stop.", bad:[{re:"3 March|March 3, 2026|2026-03", msg:"APA writes the date as (2026, March 3): year first, then month and day."},{re:"^\\(2026\\)\\.?$", msg:"For a specific chat, give its full date: (2026, March 3)."}]},
+   {label:"Date", t:"(2026, March 3).", why:"The date of the chat: (year, Month day), then a period.", bad:[{re:"3 March|March 3, 2026|2026-03", msg:"APA writes the date as (2026, March 3): year first, then month and day."},{re:"^\\(2026\\)\\.?$", msg:"For a specific chat, give its full date: (2026, March 3)."}]},
    {label:"Chat title", t:"*Planning a school garden survey*", why:"The chat’s title in italics and sentence case.", itMsg:"The chat title goes in italics.", capMsg:"APA writes the chat title in sentence case: “Planning a school garden survey”.", bad:[{re:"^\\*?Quill", msg:"For a specific chat, the title is the chat’s title (Planning a school garden survey), not the tool’s name."}]},
-   {label:"Description", t:"[Generative AI chat].", why:"A description in square brackets, [Generative AI chat], then a full stop.", notItMsg:"The description isn’t in italics.", bad:[{re:"Large language model", f:"i", msg:"For a specific chat, APA’s 2025 guidance uses [Generative AI chat]. [Large language model] is for citing the tool in general."},{re:"^\\(", msg:"Use square brackets for the description: [Generative AI chat]."}]},
-   {label:"Model", t:"Quill 4.2.", alt:["Quill."], why:"The model name shown in the chat (or just the tool’s name), not in italics, then a full stop.", notItMsg:"The model name isn’t in italics: only the chat title is.", bad:[{re:"Version", f:"i", msg:"APA no longer asks for “Version …” by default: write the model name as the chat shows it (Quill 4.2)."}]},
+   {label:"Description", t:"[Generative AI chat].", why:"A description in square brackets, [Generative AI chat], then a period.", notItMsg:"The description isn’t in italics.", bad:[{re:"Large language model", f:"i", msg:"For a specific chat, APA’s 2025 guidance uses [Generative AI chat]. [Large language model] is for citing the tool in general."},{re:"^\\(", msg:"Use square brackets for the description: [Generative AI chat]."}]},
+   {label:"Model", t:"Quill 4.2.", alt:["Quill."], why:"The model name shown in the chat (or just the tool’s name), not in italics, then a period.", notItMsg:"The model name isn’t in italics: only the chat title is.", bad:[{re:"Version", f:"i", msg:"APA no longer asks for “Version …” by default: write the model name as the chat shows it (Quill 4.2)."}]},
    {label:"Share link", t:"https://quill.example/share/k7d2p9", why:"End with the chat’s share link, so readers can open this exact conversation.", bad:[{re:"https?://quill\\.example/?$", msg:"Use the chat’s share link (https://quill.example/share/k7d2p9), so readers can see this exact conversation. The home page is for citing the tool in general."}]}]},
   {label:"2. Parenthetical citation", segs:[
    {label:"Author", t:"(Lumen Labs,", why:"The company, then a comma.", bad:[{re:"Quill", msg:"Cite the company, Lumen Labs, not the tool."}]},
@@ -233,18 +233,18 @@ window.CLAB = [
         {a:["Okafor, Ngozi, & Tomás Herrera. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"“and”"},
         {a:["Okafor, Ngozi, and Tomás Herrera. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review*, 12(3), 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"vol. 12"},
         {a:["Okafor, Ngozi, and Tomás Herrera. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review*, vol. 12, no. 3, 2023, 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"pp."}],
- hints:["Pattern: Surname, First name, and First name Surname. “Title of Article.” *Journal*, vol. x, no. x, Year, pp. x–y, https://doi.org/….", "MLA uses title case for the article title, inside quotation marks, with the full stop inside the closing mark."],
- explain:"MLA is built around **containers**: the article sits inside a journal, which has a volume and issue. Each piece of information is followed by a comma until the end of the container, then a full stop."},
+ hints:["Pattern: Surname, First name, and First name Surname. “Title of Article.” *Journal*, vol. x, no. x, Year, pp. x–y, https://doi.org/….", "MLA uses title case for the article title, inside quotation marks, with the period inside the closing mark."],
+ explain:"MLA is built around **containers**: the article sits inside a journal, which has a volume and issue. Each piece of information is followed by a comma until the end of the container, then a period."},
 
 {id:"cl-mla-book", group:"mla", title:"Book (later edition)", lesson:"t4u4-l3", style:"MLA 9",
  task:"Write the MLA works-cited entry for this book (second edition).",
  source:SALT,
  fields:[{label:"Works-cited entry", segs:[
-   {label:"Author", t:"Raman, Priya.", why:"Surname, first name, full stop.", bad:[{re:"P\\.$|, P\\.", msg:"MLA uses the full first name: Raman, Priya."}]},
-   {label:"Title", t:"*Salt and Stone: A Short History of Coastal Trade*.", alt:["*Salt and Stone: A Short History of Coastal Trade.*"], why:"Book titles in italics and title case, then a full stop.", itMsg:"Book titles go in italics.", capMsg:"MLA uses title case: Salt and Stone: A Short History of Coastal Trade."},
+   {label:"Author", t:"Raman, Priya.", why:"Surname, first name, period.", bad:[{re:"P\\.$|, P\\.", msg:"MLA uses the full first name: Raman, Priya."}]},
+   {label:"Title", t:"*Salt and Stone: A Short History of Coastal Trade*.", alt:["*Salt and Stone: A Short History of Coastal Trade.*"], why:"Book titles in italics and title case, then a period.", itMsg:"Book titles go in italics.", capMsg:"MLA uses title case: Salt and Stone: A Short History of Coastal Trade."},
    {label:"Edition", t:"2nd ed.,", why:"The edition, shortened to “2nd ed.”, then a comma.", bad:[{re:"\\(", msg:"No brackets around the edition in MLA."},{re:"Second|edition", f:"i", msg:"Shorten it to “2nd ed.”, then a comma."}]},
    {label:"Publisher", t:"Harbour Light Press,", why:"The publisher, then a comma.", bad:[{re:":", msg:"MLA 9 doesn’t include the publisher’s city."}]},
-   {label:"Year", t:"2021.", why:"The year comes last, then a full stop."}]}],
+   {label:"Year", t:"2021.", why:"The year comes last, then a period."}]}],
  also:[["Raman, Priya. *Salt and Stone: A Short History of Coastal Trade.* 2nd ed., Harbour Light Press, 2021."]],
  traps:[{a:["Raman, Priya. *Salt and Stone: A Short History of Coastal Trade*. 2nd ed., Harbour Light Press, 2021"], expect:"Year"},
         {a:["Raman, P. (2021). *Salt and stone: A short history of coastal trade* (2nd ed.). Harbour Light Press."], expect:"full first name"},
@@ -257,11 +257,11 @@ window.CLAB = [
  task:"Write the MLA works-cited entry for this page. When an organization is both the author and the publisher, MLA starts with the title instead of repeating the name. Here the website’s name is the organization, so it appears once, as the container.",
  source:WATER,
  fields:[{label:"Works-cited entry", segs:[
-   mlaTitleQ("How to Test Your Tap Water at Home.", "The page title in quotation marks and title case, full stop inside the closing mark. (No author: the organization is also the publisher.)"),
+   mlaTitleQ("How to Test Your Tap Water at Home.", "The page title in quotation marks and title case, period inside the closing mark. (No author: the organization is also the publisher.)"),
    {label:"Website", t:"*Clean Rivers Network*,", why:"The website’s name in italics (it’s the container), then a comma.", itMsg:"The website’s name goes in italics."},
    {label:"Date", t:"14 May 2024,", why:"MLA dates are day month year, then a comma.", bad:[{re:"May 14", msg:"MLA writes dates day first: 14 May 2024."},{re:"\\(", msg:"No brackets around the date in MLA."}]},
-   {label:"URL", t:"www.cleanriversnetwork.example/advice/test-tap-water.", alt:["https://www.cleanriversnetwork.example/advice/test-tap-water."], why:"The URL (MLA lets you leave out https://), then a full stop."},
-   {label:"Access date (optional)", re:"Accessed \\d{1,2} (?:Jan\\.|Feb\\.|Mar\\.|Apr\\.|May|June|July|Aug\\.|Sept\\.|Oct\\.|Nov\\.|Dec\\.) \\d{4}\\.", opt:true, example:"Accessed 2 June 2026.", why:"Optional: “Accessed”, the day you looked at the page (day, month, year), then a full stop.", bad:[
+   {label:"URL", t:"www.cleanriversnetwork.example/advice/test-tap-water.", alt:["https://www.cleanriversnetwork.example/advice/test-tap-water."], why:"The URL (MLA lets you leave out https://), then a period."},
+   {label:"Access date (optional)", re:"Accessed \\d{1,2} (?:Jan\\.|Feb\\.|Mar\\.|Apr\\.|May|June|July|Aug\\.|Sept\\.|Oct\\.|Nov\\.|Dec\\.) \\d{4}\\.", opt:true, example:"Accessed 2 June 2026.", why:"Optional: “Accessed”, the day you looked at the page (day, month, year), then a period.", bad:[
      {re:"January|February|March|April|August|September|October|November|December", msg:"In a works-cited list, MLA shortens months longer than four letters: Jan., Feb., Mar., Apr., Aug., Sept., Oct., Nov., Dec. (May, June and July stay as they are)."},
      {re:"^Accessed [A-Z]", msg:"MLA writes dates day first: Accessed 2 June 2026."},
      {re:"^(?!Accessed)", msg:"Start the access date with “Accessed”: Accessed 2 June 2026."}]}],
@@ -282,7 +282,7 @@ window.CLAB = [
    {label:"Authors", t:"(Okafor and Herrera", why:"Two authors: both surnames joined by “and”.", bad:[{re:"&", msg:"MLA writes “and”, not “&”."}]},
    {label:"Page", t:"52)", alt:["52)."], why:"Then the page number: no comma, no “p.”.", bad:[{re:",", msg:"MLA puts no comma between the author and the page."},{re:"p\\.|pg", msg:"MLA writes just the number, without “p.”."},{re:"2023", msg:"MLA’s in-text citation has the author and page, not the year."}]}]},
   {label:"2. Three authors, page 112", segs:[
-   {label:"Authors", t:"(Taufa et al.", why:"Three or more authors: the first surname and “et al.”.", bad:[{re:"Lin", msg:"For three or more authors, use the first surname and “et al.”."},{re:"et al[^.]|etal", msg:"Write “et al.” with a full stop."}]},
+   {label:"Authors", t:"(Taufa et al.", why:"Three or more authors: the first surname and “et al.”.", bad:[{re:"Lin", msg:"For three or more authors, use the first surname and “et al.”."},{re:"et al[^.]|etal", msg:"Write “et al.” with a period."}]},
    {label:"Page", t:"112)", alt:["112)."], why:"Then the page, with no comma.", bad:[{re:",", msg:"No comma before the page in MLA."}]}]}],
  also:[["(Okafor and Herrera 52)", "(Taufa et al. 112)"]],
  traps:[{a:["(Okafor & Herrera 52)", "(Taufa et al. 112)"], expect:"“and”"},
@@ -307,7 +307,7 @@ window.CLAB = [
  also:[["Herrera, Tomás, and Ngozi Okafor. “Shade Trees and Walking: A Survey of Older Residents.” *Urban Green Space Review*, vol. 11, no. 1, 2022, pp. 5–19, https://doi.org/10.5555/ugsr.2022.0102."]],
  traps:[{a:["Herrera, T., & Okafor, N. (2022). Shade trees and walking: A survey of older residents. *Urban Green Space Review*, *11*(1), 5–19. https://doi.org/10.5555/ugsr.2022.0102"], expect:"Authors"},
         {a:["Herrera, Tomás, and Ngozi Okafor. \"Shade Trees and Walking: A Survey of Older Residents.\" *Urban Green Space Review*, *vol. 11*, no. 1, 2022, pp. 5–19, https://doi.org/10.5555/ugsr.2022.0102."], expect:"isn’t in italics"}],
- hints:["Change one thing at a time: names, title in quotes and title case, vol./no. labels, year after the issue, pp., full stop at the end."],
+ hints:["Change one thing at a time: names, title in quotes and title case, vol./no. labels, year after the issue, pp., period at the end."],
  explain:"Switching styles is mostly moving the same facts around. Reference managers like Zotero do it with one click, but knowing the pattern lets you spot when they get it wrong."},
 
 /* ================= Chicago ================= */
@@ -315,24 +315,24 @@ window.CLAB = [
  task:"Write the Chicago bibliography entry for this book (second edition). Chicago’s 18th edition no longer requires the publisher’s city.",
  source:SALT,
  fields:[{label:"Bibliography entry", segs:[
-   {label:"Author", t:"Raman, Priya.", why:"Surname, first name, full stop.", bad:[{re:", P\\.", msg:"Chicago uses the author’s name as it appears on the book: Raman, Priya."}]},
-   {label:"Title", t:"*Salt and Stone: A Short History of Coastal Trade*.", alt:["*Salt and Stone: A Short History of Coastal Trade.*"], why:"The title in italics and headline-style capitals, then a full stop.", itMsg:"Book titles go in italics.", capMsg:"Chicago capitalizes titles headline-style: Salt and Stone: A Short History of Coastal Trade."},
-   {label:"Edition", t:"2nd ed.", why:"The edition, then a full stop: 2nd ed.", bad:[{re:"\\(", msg:"No brackets around the edition in a Chicago bibliography."},{re:"ed\\.,", msg:"In Chicago the edition ends with a full stop (2nd ed.), not a comma."}]},
-   {label:"Publisher", t:"Harbour Light Press,", why:"The publisher, then a comma.", bad:[{re:"^,$", msg:"After the edition, Chicago uses a full stop (2nd ed.), not a comma."},{re:":", msg:"Chicago’s 18th edition no longer requires the publisher’s city, and the card doesn’t give one, so leave it out."}]},
-   {label:"Year", t:"2021.", why:"The year, then a full stop."}]}],
+   {label:"Author", t:"Raman, Priya.", why:"Surname, first name, period.", bad:[{re:", P\\.", msg:"Chicago uses the author’s name as it appears on the book: Raman, Priya."}]},
+   {label:"Title", t:"*Salt and Stone: A Short History of Coastal Trade*.", alt:["*Salt and Stone: A Short History of Coastal Trade.*"], why:"The title in italics and headline-style capitals, then a period.", itMsg:"Book titles go in italics.", capMsg:"Chicago capitalizes titles headline-style: Salt and Stone: A Short History of Coastal Trade."},
+   {label:"Edition", t:"2nd ed.", why:"The edition, then a period: 2nd ed.", bad:[{re:"\\(", msg:"No brackets around the edition in a Chicago bibliography."},{re:"ed\\.,", msg:"In Chicago the edition ends with a period (2nd ed.), not a comma."}]},
+   {label:"Publisher", t:"Harbour Light Press,", why:"The publisher, then a comma.", bad:[{re:"^,$", msg:"After the edition, Chicago uses a period (2nd ed.), not a comma."},{re:":", msg:"Chicago’s 18th edition no longer requires the publisher’s city, and the card doesn’t give one, so leave it out."}]},
+   {label:"Year", t:"2021.", why:"The year, then a period."}]}],
  also:[["Raman, Priya. *Salt and Stone: A Short History of Coastal Trade.* 2nd ed. Harbour Light Press, 2021."]],
- traps:[{a:["Raman, Priya. *Salt and Stone: A Short History of Coastal Trade*. 2nd ed., Harbour Light Press, 2021."], expect:"full stop (2nd ed.)"},
+ traps:[{a:["Raman, Priya. *Salt and Stone: A Short History of Coastal Trade*. 2nd ed., Harbour Light Press, 2021."], expect:"period (2nd ed.)"},
         {a:["Raman, Priya. *Salt and stone: A short history of coastal trade*. 2nd ed. Harbour Light Press, 2021."], expect:"headline-style"},
         {a:["Raman, Priya. Salt and Stone: A Short History of Coastal Trade. 2nd ed. Harbour Light Press, 2021."], expect:"italics"}],
  hints:["Pattern: Surname, First name. *Title*. 2nd ed. Publisher, Year."],
- explain:"Chicago’s bibliography looks a lot like MLA’s, but the small punctuation differs (here: “2nd ed.” ends with a full stop). Chicago’s 18th edition (2024) made the place of publication optional, so modern entries usually leave it out."},
+ explain:"Chicago’s bibliography looks a lot like MLA’s, but the small punctuation differs (here: “2nd ed.” ends with a period). Chicago’s 18th edition (2024) made the place of publication optional, so modern entries usually leave it out."},
 
 {id:"cl-chi-note", group:"chicago", title:"Footnote: journal article", lesson:"t4u4-l3", style:"Chicago 18 (notes and bibliography)",
  task:"Write the first full footnote for a quotation from **page 52** of this article (type just the note, without the note number). Notes use commas between parts and names in normal order.",
  source:GARDEN,
  fields:[{label:"Footnote", bad:[{re:"^\\d+\\.$", msg:"Leave out the note number: your word processor adds it."}], segs:[
    {label:"Authors", t:"Ngozi Okafor and Tomás Herrera,", why:"In a note, names are in normal order (first name first), joined by “and”, then a comma.", bad:[{re:"^Okafor,", msg:"Notes give names first name first (Ngozi Okafor); only the bibliography reverses the first author."},{re:"&", msg:"Chicago writes “and”."}]},
-   {label:"Title", t:"\"Community Gardens and Neighbourhood Trust: Evidence from Three Cities,\"", why:"The article title in quotation marks and headline-style capitals, with the comma inside the closing mark.", capMsg:"Chicago capitalizes titles headline-style.", bad:[{re:"\"\\s*,$|\",", msg:"Put the comma inside the quotation marks: …Cities,”"},{re:"\\.\"$", msg:"In a note, the title ends with a comma (inside the quotation marks), not a full stop."}]},
+   {label:"Title", t:"\"Community Gardens and Neighbourhood Trust: Evidence from Three Cities,\"", why:"The article title in quotation marks and headline-style capitals, with the comma inside the closing mark.", capMsg:"Chicago capitalizes titles headline-style.", bad:[{re:"\"\\s*,$|\",", msg:"Put the comma inside the quotation marks: …Cities,”"},{re:"\\.\"$", msg:"In a note, the title ends with a comma (inside the quotation marks), not a period."}]},
    {label:"Journal", t:"*Urban Green Space Review*", why:"The journal in italics, with no comma after it.", itMsg:"The journal name goes in italics.", bad:[{re:",$", msg:"No comma between the journal and the volume number in Chicago."}]},
    {label:"Volume", t:"12,", why:"The volume number, then a comma.", bad:[{re:"^,$", msg:"No comma between the journal and the volume number in Chicago."},{re:"vol", f:"i", msg:"Chicago doesn’t write “vol.” here: just the number after the journal."}]},
    {label:"Issue", t:"no. 3", why:"“no. 3”.", bad:[{re:"^\\(", msg:"In a note, write the issue as “no. 3”, after the volume and a comma: 12, no. 3."}]},
@@ -344,20 +344,20 @@ window.CLAB = [
         {a:["Ngozi Okafor and Tomás Herrera, \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities\", *Urban Green Space Review* 12, no. 3 (2023): 52, https://doi.org/10.5555/ugsr.2023.0345."], expect:"inside the quotation marks"},
         {a:["Ngozi Okafor and Tomás Herrera, \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities,\" *Urban Green Space Review* 12, no. 3 (2023): 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"page you used"},
         {a:["Ngozi Okafor and Tomás Herrera, \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities,\" *Urban Green Space Review*, 12, no. 3 (2023): 52, https://doi.org/10.5555/ugsr.2023.0345."], expect:"No comma"}],
- hints:["Pattern: First Last and First Last, “Title,” *Journal* vol, no. x (Year): page, https://doi.org/….", "Notes use commas between parts; the bibliography uses full stops."],
+ hints:["Pattern: First Last and First Last, “Title,” *Journal* vol, no. x (Year): page, https://doi.org/….", "Notes use commas between parts; the bibliography uses periods."],
  explain:"A footnote is written like a sentence: names in normal order, parts separated by commas, and the exact page you used. Later notes for the same source are shortened, for example: Okafor and Herrera, “Community Gardens,” 54. (If your paper has a full bibliography, Chicago also allows short notes from the first one, so check what your teacher wants.)"},
 
 {id:"cl-chi-ad", group:"chicago", title:"Author-date reference", lesson:"t4u4-l3", style:"Chicago 18 (author-date)",
  task:"Chicago also has an author-date system, used in many sciences and social sciences. Write this article’s reference-list entry in Chicago author-date.",
  source:GARDEN,
  fields:[{label:"Reference list entry", segs:[
-   {label:"Authors", t:"Okafor, Ngozi, and Tomás Herrera.", why:"First author reversed, “, and”, second author in normal order, full stop.", bad:[{re:"&", msg:"Chicago writes “and”."},{re:"N\\.", msg:"Use the first names as the article gives them."}]},
-   {label:"Year", t:"2023.", why:"In author-date, the year comes straight after the authors, without brackets, then a full stop.", bad:[{re:"\\(", msg:"No brackets around the year in a Chicago author-date reference list."}]},
-   mlaTitleQ("Community Gardens and Neighbourhood Trust: Evidence from Three Cities.", "The title in quotation marks and headline-style capitals, full stop inside the closing mark.", true),
+   {label:"Authors", t:"Okafor, Ngozi, and Tomás Herrera.", why:"First author reversed, “, and”, second author in normal order, period.", bad:[{re:"&", msg:"Chicago writes “and”."},{re:"N\\.", msg:"Use the first names as the article gives them."}]},
+   {label:"Year", t:"2023.", why:"In author-date, the year comes straight after the authors, without brackets, then a period.", bad:[{re:"\\(", msg:"No brackets around the year in a Chicago author-date reference list."}]},
+   mlaTitleQ("Community Gardens and Neighbourhood Trust: Evidence from Three Cities.", "The title in quotation marks and headline-style capitals, period inside the closing mark.", true),
    {label:"Journal", t:"*Urban Green Space Review*", why:"The journal in italics, no comma.", itMsg:"The journal name goes in italics."},
    {label:"Volume", t:"12", why:"The volume number, straight after the journal (no comma).", bad:[{re:"^,$", msg:"No comma between the journal and the volume number in Chicago."},{re:"vol", f:"i", msg:"Chicago doesn’t write “vol.” here: just the number after the journal."}]},
    {label:"Issue", t:"(3):", why:"The issue in brackets after a space, then a colon.", bad:[{re:"no\\.", msg:"When there’s no month or season, a Chicago author-date reference puts the issue in brackets after the volume: 12 (3): 45–67."}]},
-   {label:"Pages", t:"45–67.", why:"The page range, then a full stop."},
+   {label:"Pages", t:"45–67.", why:"The page range, then a period."},
    doiLink("10.5555/ugsr.2023.0345", ".")]}],
  also:[["Okafor, Ngozi, and Tomás Herrera. 2023. “Community Gardens and Neighbourhood Trust: Evidence from Three Cities.” *Urban Green Space Review* 12 (3): 45–67. https://doi.org/10.5555/ugsr.2023.0345."]],
  traps:[{a:["Okafor, Ngozi, and Tomás Herrera. (2023). \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review* 12 (3): 45–67. https://doi.org/10.5555/ugsr.2023.0345."], expect:"No brackets"},
@@ -370,16 +370,16 @@ window.CLAB = [
  task:"This chapter reference is in APA. Rewrite it as a Chicago bibliography entry: “In *Book*, edited by …, pages. Publisher, Year.”",
  source:PLACES,
  fields:[{label:"Chicago bibliography entry", start:"Watanabe, K. (2020). Mapping memory in rebuilt towns. In A. Diallo & L. Fernández (Eds.), *Places of memory and repair* (pp. 88–112). Northgate University Press.", segs:[
-   {label:"Author", t:"Watanabe, Kenji.", why:"Surname, first name, full stop.", bad:[{re:"K\\.", msg:"Use the full first name: Watanabe, Kenji."}]},
-   mlaTitleQ("Mapping Memory in Rebuilt Towns.", "The chapter title in quotation marks and headline-style capitals, full stop inside the closing mark.", true),
+   {label:"Author", t:"Watanabe, Kenji.", why:"Surname, first name, period.", bad:[{re:"K\\.", msg:"Use the full first name: Watanabe, Kenji."}]},
+   mlaTitleQ("Mapping Memory in Rebuilt Towns.", "The chapter title in quotation marks and headline-style capitals, period inside the closing mark.", true),
    {label:"Book", t:"In *Places of Memory and Repair*,", why:"“In”, the book title in italics (headline style), then a comma.", itMsg:"The book title goes in italics.", capMsg:"Headline-style capitals for the book title: Places of Memory and Repair."},
    {label:"Editors", t:"edited by Amara Diallo and Lucía Fernández", why:"“edited by”, then the editors first name first, joined by “and”.", bad:[{re:"Eds?\\.", msg:"Chicago writes “edited by” before the editors in a bibliography."},{re:"&", msg:"Use “and” between the editors."},{re:"A\\. Diallo|Diallo, A", msg:"Use the editors’ full first names, first name first: Amara Diallo and Lucía Fernández."},{re:"^Edited", msg:"“edited by” starts with a small letter here, because it follows a comma."}]},
-   {label:"Pages (optional)", re:", 88–112\\.|(?<=Fernández)\\.(?! ?\\d)", example:", 88–112.", join:"", why:"After the editors: a comma, the chapter’s page range and a full stop (…Fernández, 88–112.). Chicago’s 18th edition lets you leave the pages out of a bibliography entry: then put just a full stop (…Fernández.).", bad:[
+   {label:"Pages (optional)", re:", 88–112\\.|(?<=Fernández)\\.(?! ?\\d)", example:", 88–112.", join:"", why:"After the editors: a comma, the chapter’s page range and a period (…Fernández, 88–112.). Chicago’s 18th edition lets you leave the pages out of a bibliography entry: then put just a period (…Fernández.).", bad:[
      {re:"pp?\\.", msg:"Chicago bibliographies give the page range without “pp.”: …Fernández, 88–112."},
      {re:"\\(", msg:"No brackets around the pages in a Chicago bibliography: …Fernández, 88–112."},
      {re:"^\\.? ?88", msg:"Put a comma between the editors and the page range: …Fernández, 88–112."}]},
    {label:"Publisher", t:"Northgate University Press,", why:"The publisher, then a comma."},
-   {label:"Year", t:"2020.", why:"The year, then a full stop."}]}],
+   {label:"Year", t:"2020.", why:"The year, then a period."}]}],
  also:[["Watanabe, Kenji. “Mapping Memory in Rebuilt Towns.” In *Places of Memory and Repair*, edited by Amara Diallo and Lucía Fernández, 88–112. Northgate University Press, 2020."],
        ["Watanabe, Kenji. “Mapping Memory in Rebuilt Towns.” In *Places of Memory and Repair*, edited by Amara Diallo and Lucía Fernández. Northgate University Press, 2020."],
        ["Watanabe, Kenji. \"Mapping Memory in Rebuilt Towns.\" In *Places of Memory and Repair*, edited by Amara Diallo and Lucía Fernández, 88-112. Northgate University Press, 2020."]],

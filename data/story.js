@@ -142,7 +142,7 @@ window.ICA_STORY = {"cast":{"cheska":{"name":"Cheska","ja":"チェスカ","art":
 {"t":"line","who":"fumiko","mood":"tip","ja":"[市役所]{しやくしょ}へ[行]{い}くバスは、[九時二十七分]{くじにじゅうななふん}と…","en":"The buses to the city office are at 9:27 and...","gl":"市役所 (しやくしょ): the city office.","tag":"helpful","ref":"E3·L17"},
 {"t":"line","who":"rodrigo","mood":"yay","ja":"[九時三十五分]{くじさんじゅうごふん}です！九時二十七分のバスは、みなとをまわりますから、[三十分]{さんじゅっぷん}かかります。三十五分のバスは、[十五分]{じゅうごふん}です。","en":"9:35! The 9:27 goes around the harbor, so it takes thirty minutes. The 9:35 takes fifteen.","gl":"まわる: to go around. かかる: to take (time).","tag":"quick, proud","ref":"E3·L18"},
 {"t":"line","who":"fumiko","mood":"think","ja":"…よく[知]{し}っていますね。","en":"...You certainly know your buses.","tag":"impressed despite herself","ref":"E3·L19"},
-{"t":"narr","text":"Rodrigo learned the timetable on his first day here. He knows Japan's train timetables by heart, too."},
+{"t":"narr","text":"Rodrigo learned the schedule on his first day here. He knows Japan's train schedules by heart, too."},
 {"t":"narr","text":"At the city office, the first thing to do is take a numbered ticket."},
 {"t":"line","who":"fumiko","mood":"tip","ja":"ここを、おしてください。","en":"Press here, please.","gl":"おす: to push, to press.","tag":"kindly","ref":"E3·L20"},
 {"t":"line","who":"rodrigo","mood":"think","ja":"[四十七番]{よんじゅうななばん}です。[今]{いま}、[何番]{なんばん}ですか。","en":"I'm number 47. What number are they on now?","gl":"～番 (ばん): number ～, in a line or a list.","tag":"cheerful, counting","ref":"E3·L21"},

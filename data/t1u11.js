@@ -144,7 +144,7 @@ ICA.addUnit({
       "To: ",{t:"all 42 members’ addresses", flag:true, why:"Everyone would see everyone else’s address, and anyone could Reply All to 42 people. Put the members in Bcc (with his own address in To) or use a mailing tool."},
       "\nSubject: ",{t:"Hi", flag:true, why:"“Hi” says nothing about the topic or the action. Something like “Saturday hike moved to 10:00, reply if you need a lift” works far better."},
       "\n\n",{t:"Hello everyone,", flag:false, why:"A friendly greeting for a club is fine."},
-      "\n\n",{t:"Saturday’s hike now starts at 10:00, not 9:00, because the car park opens later.", flag:false, why:"Clear and specific: the change, the new time and the reason, in one sentence."},
+      "\n\n",{t:"Saturday’s hike now starts at 10:00, not 9:00, because the parking lot opens later.", flag:false, why:"Clear and specific: the change, the new time and the reason, in one sentence."},
       " ",{t:"Also, can someone bring a first-aid kit, who wants to organize December, and has anyone seen my blue flask?", flag:true, why:"Three unrelated asks in one sentence. People will answer the easiest one. The December question deserves its own email."},
       "\n\nPlease reply ",{t:"by 11/12", flag:true, why:"11/12 means 11 December in many countries and November 12 in others. “by Thursday 12 November” can’t be misread."},
       " if you need a lift.\n\n",{t:"See you there,\nTomás", flag:false, why:"A normal, friendly close with his name."}
@@ -158,7 +158,7 @@ ICA.addUnit({
       {t:"Parents of a school class receiving a trip reminder", b:2, why:"Many families who may not want their addresses shared. Bcc, or better, the school’s messaging system."}
     ]},
     {id:"t1u11-l1-x3", type:"mcq", q:"Priya needs her landlord to fix a leaking tap. Which subject line is most likely to get a quick, useful reply?", options:[
-      {t:"Leaking kitchen tap at Flat 4: can someone visit this week?", ok:true, why:"It names the problem, the place and the action needed, so the landlord knows what it is before opening it."},
+      {t:"Leaking kitchen tap at Apt 4: can someone visit this week?", ok:true, why:"It names the problem, the place and the action needed, so the landlord knows what it is before opening it."},
       {t:"Problem", why:"Too vague. The landlord can’t tell what or how serious it is, so it’s easy to postpone."},
       {t:"URGENT!!! PLEASE READ!!!", why:"Capitals and exclamation marks read as shouting and still don’t say what the problem is."},
       {t:"Hello from Priya", why:"Friendly, but it hides the reason for writing. The subject should carry the topic and the ask."}
@@ -270,7 +270,7 @@ ICA.addUnit({
         "**Messages from one important sender** (a school, a client, a care home): add a label or a star so they stand out.",
         "**Automatic notifications** from an app or website: send them to a “Notifications” folder."
       ]},
-      "Rules have limits worth knowing. Gmail filters affect only **new** messages unless you tick the option to apply them to existing ones; Thunderbird has a **Run Now** button for mail you already have. Apple Mail’s rules run only while Mail is open on that Mac. And a rule that deletes mail can hide something important, so start with label or move actions, not delete.",
+      "Rules have limits worth knowing. Gmail filters affect only **new** messages unless you check the option to apply them to existing ones; Thunderbird has a **Run Now** button for mail you already have. Apple Mail’s rules run only while Mail is open on that Mac. And a rule that deletes mail can hide something important, so start with label or move actions, not delete.",
       {warn:"Criminals who break into an email account sometimes add a rule that forwards copies of your mail to them, or hides replies. Look through your rules and forwarding settings now and then, and remove any you didn’t create. If you find one, change your password and turn on two-step verification ({{mfa}})."}
     ]},
     {h:"Unsubscribe, spam and blocking", body:[
@@ -299,7 +299,7 @@ ICA.addUnit({
       "A good out-of-office message says:",
       {ol:["When you’re back.","Who to contact for urgent matters (with their permission).","That replies will be slower, without apologizing at length."]},
       {ex:"Subject: Away until Monday 30 November\n\nThanks for your email. I’m away until Monday 30 November and will reply after that.\nFor urgent rota questions, please contact Mei Chen at rota@example.org.\n\nAna", label:"A short out-of-office reply"},
-      "Leave out where you are and why. An automatic reply goes to anyone who writes, including strangers and scammers, and “I’m on holiday abroad for three weeks” tells them your home may be empty. Work accounts often let you send a fuller message inside your organization and a shorter one to outsiders.",
+      "Leave out where you are and why. An automatic reply goes to anyone who writes, including strangers and scammers, and “I’m on vacation abroad for three weeks” tells them your home may be empty. Work accounts often let you send a fuller message inside your organization and a shorter one to outsiders.",
       "Not every app can do this on its own. Thunderbird’s help pages recommend setting it in your email provider’s website, because a Thunderbird-based auto-reply works only while your computer is on and Thunderbird is running. Apple Mail on a Mac can auto-reply only through a rule while Mail is open; iCloud Mail users can set an **Auto-Reply** at icloud.com instead."
     ]},
     {h:"A routine you can keep", body:[
@@ -349,15 +349,15 @@ ICA.addUnit({
       {t:"In the search box, open Show search options", why:"Gmail builds filters from a search, so you start with the search options."},
       {t:"Type the newsletter’s address in From", why:"This is the condition: which emails the filter should match."},
       {t:"Select Create filter at the bottom of the search window", why:"Once the condition is set, you move on to choosing the actions."},
-      {t:"Tick Skip the Inbox and Apply the label “Newsletters”", why:"These are the actions: keep the email, but out of the inbox and labeled."},
-      {t:"Select Create filter to save it", why:"The filter now applies to new matching emails (tick the option for existing ones if you want those sorted too)."}
+      {t:"Check Skip the Inbox and Apply the label “Newsletters”", why:"These are the actions: keep the email, but out of the inbox and labeled."},
+      {t:"Select Create filter to save it", why:"The filter now applies to new matching emails (check the option for existing ones if you want those sorted too)."}
     ]},
     {id:"t1u11-l2-x5", type:"spot", q:"Kenji is setting up an out-of-office reply that goes to anyone who emails him. Tap the parts he should change.", ask:"should change", parts:[
       {t:"Thanks for your email.", flag:false, why:"A polite, neutral opening."},
       " ",{t:"I’m back on Monday 30 November", flag:false, why:"The return date is the most useful information in an out-of-office reply."},
-      " ",{t:"after three weeks backpacking in Peru, so the flat is empty until then.", flag:true, why:"This tells strangers, including scammers, that his home is empty and for how long. Leave out where and why."},
+      " ",{t:"after three weeks backpacking in Peru, so the apartment is empty until then.", flag:true, why:"This tells strangers, including scammers, that his home is empty and for how long. Leave out where and why."},
       "\n",{t:"For urgent invoices, contact Lucía at accounts@example.com.", flag:false, why:"A named contact for urgent matters (with her agreement) helps people and protects his work."},
-      "\n",{t:"My personal mobile is 07700 900456, call any time.", flag:true, why:"An automatic reply goes to everyone, including spammers. Don’t publish a personal number, and “any time” defeats the point of a break."},
+      "\n",{t:"My personal cell is 07700 900456, call any time.", flag:true, why:"An automatic reply goes to everyone, including spammers. Don’t publish a personal number, and “any time” defeats the point of a break."},
       "\n",{t:"Kenji", flag:false, why:"Signing off with his name is fine."}
     ]},
     {id:"t1u11-l2-x6", type:"mcq", q:"Lucía has 9,000 emails in her inbox and feels overwhelmed. What’s the most realistic first step?", options:[
@@ -376,21 +376,21 @@ ICA.addUnit({
    ],
    apply:{intro:"Pick the two or three tasks that would help you most. Nothing here deletes mail. Outlook steps are for Outlook on the web and the new Outlook for Windows.", tasks:[
      {t:"Find an old email using search", app:{
-       ms:["Click in the **Search** box at the top.","Select **Filters** (the funnel icon at the right of the search box) and fill in **From**, a date range, or tick **Has attachments**.","Or type a keyword such as `from:mei` or `subject:invoice` and press [[kbd:Enter]]."],
+       ms:["Click in the **Search** box at the top.","Select **Filters** (the funnel icon at the right of the search box) and fill in **From**, a date range, or check **Has attachments**.","Or type a keyword such as `from:mei` or `subject:invoice` and press [[kbd:Enter]]."],
        google:["Type a search using at least two operators, for example `from:landlord has:attachment` or `subject:receipt after:2026/01/01`.","Or select **Show search options** (the sliders icon at the right of the search box) and fill in the form.","Try `larger:10M` to find the biggest emails if your storage is getting full."],
        libre:["Select the folder to search, then click **Quick Filter** in the toolbar above the message list (or press [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:K]]; on a Mac [[kbd:Cmd]] + [[kbd:Shift]] + [[kbd:K]]).","Type a word and choose whether it should match **Sender**, **Subject** or **Body**.","To search every folder, use the search box at the top of the window instead."],
        apple:["On a Mac: type in the search field at the top of the message list.","Choose a suggestion such as **From:** a person or **Subject contains:** a word. You can add several to narrow the search.","Choose whether to search **All** mailboxes or just the current one."]
      }},
      {t:"Make one filter or rule for a newsletter or notification", app:{
        ms:["Right-click an email from the sender, hover over **Rules**, then select **Create rule**.","Choose the folder these emails should go to (create a “Newsletters” folder first if you need one), then select **OK**.","For more conditions and actions, select **More options**. To review or remove rules later: **Settings → Mail → Rules**."],
-       google:["In the search box, select **Show search options** and type the sender’s address in **From**.","Select **Create filter**.","Tick **Skip the Inbox (Archive it)** and **Apply the label**, then choose or create “Newsletters”.","Tick **Also apply filter to matching conversations** if you want existing emails sorted too, then select **Create filter**."],
+       google:["In the search box, select **Show search options** and type the sender’s address in **From**.","Select **Create filter**.","Check **Skip the Inbox (Archive it)** and **Apply the label**, then choose or create “Newsletters”.","Check **Also apply filter to matching conversations** if you want existing emails sorted too, then select **Create filter**."],
        libre:["Open an email from the sender, right-click the sender’s address in the message header and choose **Create Filter From…**","Under the actions, choose **Move Message to** and pick a folder (create it first if needed). Select **OK**.","In the **Message Filters** window (**Tools → Message Filters**), select the filter and click **Run Now** to sort mail you already have."],
        apple:["On a Mac: choose **Mail → Settings**, click **Rules**, then **Add Rule**.","Give it a description. Set the condition to **From** · **Contains** · the sender’s address.","Set the action to **Move Message** to a mailbox you choose, then click **OK**. Mail asks whether to apply it to existing messages.","Apple Mail rules run only while Mail is open on that Mac."]
      }},
      {t:"Prepare (and switch off) an out-of-office reply", app:{
-       ms:["Select **Settings** (gear) → **Account** (called **Accounts** in some versions) → **Automatic replies**.","Switch on the **Turn on automatic replies** toggle, type a short message, and tick **Send replies only during a time period** with start and end dates.","Select **Save**. If you’re only practicing, turn the toggle off again and save."],
-       google:["Select **Settings** (gear) → **See all settings**.","On the **General** tab, find **Vacation responder** and select **Vacation responder on**.","Fill in the dates, subject and message. Optionally tick the box to reply only to people in your contacts.","Select **Save Changes**. If you’re only practicing, switch it off again and save."],
-       apple:["For an iCloud Mail address: go to icloud.com/mail, click the **Settings** button at the top of the Mailboxes list, choose **Settings**, then **Auto-Reply**.","Tick **Automatically reply to messages when they are received**, type your message and optionally set a date range.","For other email accounts used in Apple Mail, set the auto-reply on your email provider’s website, because a Mail rule only replies while the Mac is on and Mail is open."]
+       ms:["Select **Settings** (gear) → **Account** (called **Accounts** in some versions) → **Automatic replies**.","Switch on the **Turn on automatic replies** toggle, type a short message, and check **Send replies only during a time period** with start and end dates.","Select **Save**. If you’re only practicing, turn the toggle off again and save."],
+       google:["Select **Settings** (gear) → **See all settings**.","On the **General** tab, find **Vacation responder** and select **Vacation responder on**.","Fill in the dates, subject and message. Optionally check the box to reply only to people in your contacts.","Select **Save Changes**. If you’re only practicing, switch it off again and save."],
+       apple:["For an iCloud Mail address: go to icloud.com/mail, click the **Settings** button at the top of the Mailboxes list, choose **Settings**, then **Auto-Reply**.","Check **Automatically reply to messages when they are received**, type your message and optionally set a date range.","For other email accounts used in Apple Mail, set the auto-reply on your email provider’s website, because a Mail rule only replies while the Mac is on and Mail is open."]
      }, appNote:"Thunderbird’s help pages recommend setting an out-of-office reply on your email provider’s website (for example Gmail’s or Outlook’s settings on the web). A Thunderbird filter that replies with a template works only while your computer is on and Thunderbird is running, and Mozilla advises against it."},
      {t:"Unsubscribe from one list you no longer read", how:["Open a recent email from a mailing list you joined but don’t want.","Look for the app’s own **Unsubscribe** button near the sender’s name. In Gmail you can also open **More → Manage subscriptions** on the left (still rolling out). If there’s no button, use the unsubscribe link at the bottom of the email, but only for senders you recognize.","Don’t use unsubscribe links in suspicious emails; report those as spam or phishing instead.","Then archive the old emails from that sender if you don’t need them in the inbox."]}
    ], proof:"You found an old email with a search that combined at least two conditions, created one filter or rule that keeps routine mail out of your inbox without deleting it, have an out-of-office message ready to switch on, and unsubscribed from at least one list."},
@@ -496,7 +496,7 @@ ICA.addUnit({
         "**Ask before you start**, ideally in the invitation (“I’d like to record this for people who can’t attend”).",
         "**Say what happens to it:** where it’s stored, who can see it, and when it will be deleted.",
         "**Give people a real choice.** They can switch off their camera, leave for that part, or ask for it not to be recorded.",
-        "**Check your organization’s policy** before recording anything with customers, patients, pupils or members of the public."
+        "**Check your organization’s policy** before recording anything with customers, patients, students or members of the public."
       ]},
       "Most video apps show a notice or play a message when recording starts, and some ask participants to accept it. That notice is not the same as asking first.",
       {h:"Common misconceptions"},
@@ -555,14 +555,14 @@ ICA.addUnit({
    ],
    apply:{intro:"These tasks work with free accounts: Outlook on the web (outlook.com), Google Calendar, Thunderbird’s built-in calendar, or Calendar on a Mac.", tasks:[
      {t:"Show a second time zone in your calendar", app:{
-       ms:["Select **Settings** (gear) → **Calendar → View**.","Under **Time zones**, select **Add time zone**, search for a city, add a label if you like and tick **Show in calendar**.","Select **Save**. The second zone appears beside the hours in Day and Week view.","While you’re there, check that **Display my calendar in time zone** is your own zone."],
-       google:["On a computer, select **Settings** (gear, top right) → **Settings** → **General → Time zone**.","Check your **Primary time zone**, then tick **Show additional time zones** and choose a second zone.","Optional: under **World clock**, tick **Show world clock** and add zones you often need."],
+       ms:["Select **Settings** (gear) → **Calendar → View**.","Under **Time zones**, select **Add time zone**, search for a city, add a label if you like and check **Show in calendar**.","Select **Save**. The second zone appears beside the hours in Day and Week view.","While you’re there, check that **Display my calendar in time zone** is your own zone."],
+       google:["On a computer, select **Settings** (gear, top right) → **Settings** → **General → Time zone**.","Check your **Primary time zone**, then check **Show additional time zones** and choose a second zone.","Optional: under **World clock**, check **Show world clock** and add zones you often need."],
        apple:["On a Mac: choose **Calendar → Settings**, then **Advanced**, and turn on **Turn on time zone support**.","A time-zone menu appears in the toolbar. Use it to view your calendar as it looks in another zone.","When you create an event, set its time zone in the event details, so it shows at the right time for everyone."]
      }, appNote:"Thunderbird’s calendar shows events in the one time zone set in its calendar settings; at the time of writing it has no built-in second time-zone column. Check that zone is right, and use your device’s world clock for other places (the task below)."},
      {t:"Invite someone to a test event and look at the RSVP", app:{
        ms:["Go to **Calendar** and select **New event**.","Add a title, a time and an agenda in the description. Add a guest (a second address of yours, or a friend who agrees).","Select **Send**. Open the invitation in the other inbox, choose **Accept**, **Tentative** or **Decline**, then check the event in your calendar to see the response."],
        google:["Select **Create → Event**, then **More options**.","Add a title, a time and a short agenda. Under **Guests**, add a second address of yours or a friend who agrees.","Select **Save**, then **Send** when asked about invitation emails.","Answer from the other inbox (**Yes**, **No** or **Maybe**) and look at the guest list in your event."],
-       libre:["Open the calendar (the calendar icon in the left toolbar) and select **New Event** (or press [[kbd:Ctrl]] + [[kbd:I]]; on a Mac [[kbd:Cmd]] + [[kbd:I]]).","Add a title, start and end time, then select **Invite Attendees** and add a second address of yours or a friend who agrees. Select **OK**.","Make sure **Notify attendees** is ticked, then **Save and Close**. Answer from the other inbox and check the attendee’s status in the event."],
+       libre:["Open the calendar (the calendar icon in the left toolbar) and select **New Event** (or press [[kbd:Ctrl]] + [[kbd:I]]; on a Mac [[kbd:Cmd]] + [[kbd:I]]).","Add a title, start and end time, then select **Invite Attendees** and add a second address of yours or a friend who agrees. Select **OK**.","Make sure **Notify attendees** is checked, then **Save and Close**. Answer from the other inbox and check the attendee’s status in the event."],
        apple:["On a Mac: double-click a time in **Calendar** to make an event, and give it a title.","Double-click the event, select **Add Invitees** and type a second address of yours or a friend who agrees.","Select **Send**. Answer from the other inbox (**Accept**, **Maybe** or **Decline**) and look at the invitee’s status in the event."]
      }},
      {t:"Add a world clock for people you work with", how:["Windows: open the **Clock** app and select **World clock**, then **Add a new city**.","Mac: add the **World Clock** widget (Control-click the desktop → **Edit Widgets** → **Clock**).","ChromeOS: search Google for “time in” plus the city, or add the zone in Google Calendar (task above).","On a phone: open the **Clock** app and use **World Clock** (iPhone) or **World clock** / the globe icon (Android; names vary by maker)."]},
@@ -814,7 +814,7 @@ ICA.addUnit({
     ]},
     {h:"Agree how your team communicates", body:[
       "Most chat frustration comes from unspoken expectations: one person expects replies within minutes, another checks twice a day. A short written agreement, made together and kept in a shared document, prevents a lot of it.",
-      {ex:"How our volunteer team communicates\n· Chat (#volunteers): quick questions and updates. Reply within a day.\n· Email: anything for funders, partners or the public.\n· Shared drive: rotas, minutes, policies. The latest version lives there, not in chat.\n· Monthly call: decisions and planning, with an agenda.\n· Urgent on the day (closures, safety): phone the coordinator.\n· Quiet hours: no reply expected 20:00–08:00 or at weekends unless it’s urgent.", label:"A team communication agreement", mono:true},
+      {ex:"How our volunteer team communicates\n· Chat (#volunteers): quick questions and updates. Reply within a day.\n· Email: anything for funders, partners or the public.\n· Shared drive: rotas, minutes, policies. The latest version lives there, not in chat.\n· Monthly call: decisions and planning, with an agenda.\n· Urgent on the day (closures, safety): phone the coordinator.\n· Quiet hours: no reply expected 20:00–08:00 or on weekends unless it’s urgent.", label:"A team communication agreement", mono:true},
       {h:"Common misconceptions"},
       {list:[
         "**“Chat is private.”** In work and school accounts, administrators can usually access and export messages, and anyone in a channel can screenshot them.",
@@ -1088,7 +1088,7 @@ ICA.addUnit({
      ],
      builder:[
       {table:[["App","Create a filter or rule","Out-of-office"],["Gmail","Search options → From (etc.) → **Create filter** → choose actions","Settings → See all settings → General → **Vacation responder**"],["Outlook (web, new Windows app)","Right-click an email → **Rules → Create rule**; manage in Settings → Mail → Rules","Settings → Account(s) → **Automatic replies**"],["Thunderbird","Right-click the sender → **Create Filter From…**, or Tools → Message Filters","Set it on your provider’s website"],["Apple Mail (Mac)","Mail → Settings → **Rules** → Add Rule","Provider’s website (iCloud Mail: icloud.com → Settings → Auto-Reply)"]]},
-      "**When filters run:** Gmail filters apply to new mail unless you tick the option to apply them to matching conversations; Thunderbird filters run when mail is checked, with **Run Now** for existing mail; Apple Mail rules run only while Mail is open on that Mac.",
+      "**When filters run:** Gmail filters apply to new mail unless you check the option to apply them to matching conversations; Thunderbird filters run when mail is checked, with **Run Now** for existing mail; Apple Mail rules run only while Mail is open on that Mac.",
       "**Out-of-office details:** Gmail replies to a sender the first time they write, then again only after four days or if you edit the message, and doesn’t reply to mail in Spam or from mailing lists. Outlook can limit replies to a time period and, for work accounts, send a different message outside the organization.",
       "**Practice safely:** create one filter for a newsletter you receive, check after a week that it caught the right emails and nothing else, then add more. Name each filter by purpose, and look through your rules list a few times a year: delete the ones you no longer need and any you don’t recognize."
      ],
@@ -1116,7 +1116,7 @@ ICA.addUnit({
      builder:[
       "Invitations use the iCalendar standard (`.ics`), so they work between Google Calendar, Outlook, Thunderbird and Apple Calendar. You can invite anyone with an email address, even if they don’t use Google Calendar; they can answer from the invitation email.",
       {table:[["Task","Google Calendar","Outlook (web / new Windows)"],["Invite","Edit the event → add people under **Guests** → Save → Send","New event → add attendees → Send"],["Find a time","**Find a time** (needs shared calendars or the same organization)","**Scheduling Assistant**"],["Propose another time","Arrow next to **Maybe** → propose a new time","**Propose new time**"]]},
-      "Thunderbird’s calendar (built in since Thunderbird 38): New Event → **Invite Attendees** → tick **Notify attendees**. Apple Calendar: open the event → **Add Invitees**.",
+      "Thunderbird’s calendar (built in since Thunderbird 38): New Event → **Invite Attendees** → check **Notify attendees**. Apple Calendar: open the event → **Add Invitees**.",
       "**Recurring events:** responding or editing asks whether the change applies to this event or all events. **Free/busy** sharing lets colleagues see when you’re busy without seeing details; mark private events as private.",
       "End meetings with **decisions and actions** (who, what, by when) and share brief notes.",
       {ex:"Title: Food bank volunteers: December rota (30 min)\nPurpose: agree the December rota and Saturday leads\n1. Changes since November (5 min)\n2. Saturday leads (15 min)\n3. Holiday hours: decision (10 min)\nBefore: add your availability to the rota sheet", label:"An agenda inside an invitation", mono:true}
@@ -1393,7 +1393,7 @@ ICA.addUnit({
      {t:"`landlord -attachment`", why:"The minus sign excludes emails containing the word “attachment”."},
      {t:"`subject:landlord larger:10M`", why:"This finds emails with “landlord” in the subject that are over 10 MB, which isn’t the same thing."}
    ]},
-   {id:"t1u11-q13", lesson:"t1u11-l2", level:2, q:"A clothing shop you bought from once keeps emailing offers. You did tick a box to receive them. What’s the best action?", options:[
+   {id:"t1u11-q13", lesson:"t1u11-l2", level:2, q:"A clothing shop you bought from once keeps emailing offers. You did check a box to receive them. What’s the best action?", options:[
      {t:"Unsubscribe, using the app’s button or the shop’s link", ok:true, why:"You signed up, so unsubscribing (with the app’s Unsubscribe button or the shop’s link) is the honest fix, and reputable senders stop."},
      {t:"Report every email as phishing", why:"It isn’t a scam, just marketing you agreed to. Phishing reports are for fraud."},
      {t:"Reply to each email asking them to stop sending offers", why:"Replies often go to an unmonitored address. Unsubscribing is the mechanism built for this."},
@@ -1405,9 +1405,9 @@ ICA.addUnit({
      {t:"A way to make emails smaller", why:"Filters sort and act on mail; they don’t compress it."},
      {t:"A list of the only people who are allowed to send you email", why:"That’s closer to an allow list. A filter is an if-then action on incoming mail."}
    ]},
-   {id:"t1u11-q15", lesson:"t1u11-l2", level:3, q:"Amara is going on holiday. Which out-of-office message is best?", options:[
+   {id:"t1u11-q15", lesson:"t1u11-l2", level:3, q:"Amara is going on vacation. Which out-of-office message is best?", options:[
      {t:"“I’m away until Monday 30 November. For urgent orders, please contact Mei at orders@example.com.”", ok:true, why:"Return date and an urgent contact, nothing more. It doesn’t reveal where she is or that her home is empty."},
-     {t:"“I’m in Lisbon for two weeks, so the house is empty, but call my mobile 07700 900789 any time.”", why:"It tells strangers her home is empty and publishes a personal number to anyone who emails."},
+     {t:"“I’m in Lisbon for two weeks, so the house is empty, but call my cell 07700 900789 any time.”", why:"It tells strangers her home is empty and publishes a personal number to anyone who emails."},
      {t:"“Away.”", why:"It doesn’t say when she’s back or who can help in the meantime."},
      {t:"No reply at all; people will guess", why:"Senders may wait or worry. A short reply sets expectations."}
    ]},

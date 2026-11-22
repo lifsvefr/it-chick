@@ -54,7 +54,7 @@ ICA.addUnit({
       "The space ends the unquoted value. Single quotes (`'…'`) and double quotes (`\"…\"`) both work; pick one style and stick to it. Most people use double quotes.",
       {h:"Boolean attributes"},
       "A few attributes are switches: being present means “on”. These [[boolean-attribute|boolean attributes]] include `required`, `checked` and `disabled`. You write just the name, as in `<input type=\"checkbox\" checked>`.",
-      {warn:"`checked=\"false\"` does **not** untick a checkbox. The attribute is present, so it’s on. To turn it off, remove the attribute."}
+      {warn:"`checked=\"false\"` does **not** uncheck a checkbox. The attribute is present, so it’s on. To turn it off, remove the attribute."}
     ]},
     {h:"Elements inside elements", body:[
       "Elements can contain other elements. This is [[nesting]], and it’s how a page gets its structure: a list contains list items, a paragraph can contain a link, a link can contain emphasized words.",
@@ -343,7 +343,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t2u2-l3", title:"Text that means something", minutes:50,
-   hook:{q:"Kenji makes a line of text large and bold so it looks exactly like a heading, but it’s inside a `<p>`. A screen reader user asks for a list of the page’s headings. Is Kenji’s line in it?", options:["Yes: large bold text counts as a heading","Yes, if it’s on a line of its own","No: only real heading elements (`<h1>` to `<h6>`) are headings","Only if it ends without a full stop"], answer:2, reveal:"No. Software can’t see what text looks like; it reads the elements. Kenji’s line is a paragraph, so it’s missing from the headings list and nobody can jump to it. This lesson is about choosing elements for what text **is**: headings, paragraphs, lists, emphasis and quotations."},
+   hook:{q:"Kenji makes a line of text large and bold so it looks exactly like a heading, but it’s inside a `<p>`. A screen reader user asks for a list of the page’s headings. Is Kenji’s line in it?", options:["Yes: large bold text counts as a heading","Yes, if it’s on a line of its own","No: only real heading elements (`<h1>` to `<h6>`) are headings","Only if it ends without a period"], answer:2, reveal:"No. Software can’t see what text looks like; it reads the elements. Kenji’s line is a paragraph, so it’s missing from the headings list and nobody can jump to it. This lesson is about choosing elements for what text **is**: headings, paragraphs, lists, emphasis and quotations."},
    goals:[
      "Build a heading outline with one `<h1>` and no skipped levels",
      "Choose between `<p>` and `<br>`, and between `<ul>`, `<ol>` and nested lists",
@@ -645,7 +645,7 @@ ICA.addUnit({
       ["`https://example.org/menu.html`","Opens that exact address, from anywhere","An absolute URL doesn’t depend on where the linking page is."]
     ]},
     {id:"t2u2-l4-x3", type:"spot", q:"These are the link texts on Priya’s yoga studio page, as a screen reader’s links list would read them. Tap every one that doesn’t make sense out of context.", ask:"doesn’t make sense on its own", parts:[
-      {t:"Class timetable", flag:false, why:"Clear on its own: it’s a link to the timetable."}, " · ", {t:"Click here", flag:true, why:"Out of context, this says nothing about where it goes. Use the destination’s name instead."}, " · ", {t:"Price list (PDF, 150 KB)", flag:false, why:"Says what it is and warns it’s a file, with its size."}, " · ", {t:"Read more", flag:true, why:"Read more about what? If several links say this, they’re impossible to tell apart. “Read more about beginners’ classes” works."}, " · ", {t:"https://example.org/tt-v2.html", flag:true, why:"A long address is hard to listen to (it may be read character by character) and doesn’t say what the page is."}, " · ", {t:"Directions to the studio (opens in new tab)", flag:false, why:"Clear destination, plus a warning about the new tab."}, " · ", {t:"Contact us", flag:false, why:"Short and clear."}
+      {t:"Class schedule", flag:false, why:"Clear on its own: it’s a link to the schedule."}, " · ", {t:"Click here", flag:true, why:"Out of context, this says nothing about where it goes. Use the destination’s name instead."}, " · ", {t:"Price list (PDF, 150 KB)", flag:false, why:"Says what it is and warns it’s a file, with its size."}, " · ", {t:"Read more", flag:true, why:"Read more about what? If several links say this, they’re impossible to tell apart. “Read more about beginners’ classes” works."}, " · ", {t:"https://example.org/tt-v2.html", flag:true, why:"A long address is hard to listen to (it may be read character by character) and doesn’t say what the page is."}, " · ", {t:"Directions to the studio (opens in new tab)", flag:false, why:"Clear destination, plus a warning about the new tab."}, " · ", {t:"Contact us", flag:false, why:"Short and clear."}
     ]},
     {id:"t2u2-l4-x4", type:"sort", q:"Fatima is adding images to her community choir’s site. Which images need descriptive alt text, and which are decorative (`alt=\"\"`)?", buckets:["Describe it in alt","Decorative: `alt=\"\"`"], items:[
       {t:"A photo of the choir performing, on the “About us” page", b:0, why:"It’s content: it shows who the choir is. Something like “The choir singing in the town hall, about thirty people in blue” works."},
@@ -655,8 +655,8 @@ ICA.addUnit({
       {t:"The choir’s logo, which is a link to the home page", b:0, why:"An image link needs alt that says where it goes, such as “Hilltown Choir home”. With empty alt, the link would have no name."},
       {t:"A soft background photo of sheet music, used only for mood", b:1, why:"It adds atmosphere, not information. Screen reader users lose nothing by skipping it."}
     ]},
-    {id:"t2u2-l4-x5", type:"mcq", q:"Tomás’s event page reads: “Join our beach clean-up on Saturday.” Next to it is a photo of last year’s volunteers holding full rubbish bags on the beach. Which alt is best?", options:[
-      {t:"`alt=\"Volunteers on the beach holding full rubbish bags at last year’s clean-up\"`", ok:true, why:"It says what the photo contributes in this context: what the event looks like and what was achieved. It’s brief and specific."},
+    {id:"t2u2-l4-x5", type:"mcq", q:"Tomás’s event page reads: “Join our beach clean-up on Saturday.” Next to it is a photo of last year’s volunteers holding full garbage bags on the beach. Which alt is best?", options:[
+      {t:"`alt=\"Volunteers on the beach holding full garbage bags at last year’s clean-up\"`", ok:true, why:"It says what the photo contributes in this context: what the event looks like and what was achieved. It’s brief and specific."},
       {t:"`alt=\"Image of people\"`", why:"“Image of” is redundant (screen readers say it’s an image), and “people” leaves out everything that matters here."},
       {t:"`alt=\"\"`", why:"Empty alt is for decoration. This photo shows what the event is like, which the text doesn’t say, so it’s content."},
       {t:"`alt=\"beach_cleanup_2025_final.jpg\"`", why:"A file name tells listeners nothing useful. That’s what some screen readers fall back to when alt is **missing**; don’t copy it on purpose."}
@@ -697,7 +697,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t2u2-l5", title:"Page structure, tables and forms", minutes:60,
-   hook:{q:"A form has a checkbox with the words “Send me the newsletter” beside it, connected properly with a `<label>`. What happens when you tap the words, not the tiny box?", options:["Nothing: only the box itself responds","The checkbox ticks, just as if you’d tapped the box","The words get selected for copying","A help message pops up"], answer:1, reveal:"The checkbox ticks. A properly connected label becomes part of the control, so the whole phrase is a big, easy target, and screen readers read the label when the box is focused. That’s one small example of HTML doing real work when you use the right element. This lesson covers page landmarks, data tables and forms, and how to check your work."},
+   hook:{q:"A form has a checkbox with the words “Send me the newsletter” beside it, connected properly with a `<label>`. What happens when you tap the words, not the tiny box?", options:["Nothing: only the box itself responds","The checkbox checks, just as if you’d tapped the box","The words get selected for copying","A help message pops up"], answer:1, reveal:"The checkbox checks. A properly connected label becomes part of the control, so the whole phrase is a big, easy target, and screen readers read the label when the box is focused. That’s one small example of HTML doing real work when you use the right element. This lesson covers page landmarks, data tables and forms, and how to check your work."},
    goals:[
      "Divide a page into landmarks with `<header>`, `<nav>`, `<main>`, `<aside>` and `<footer>`, and choose between `<article>`, `<section>` and `<div>`",
      "Build a data table with a caption and header cells, and explain why tables aren’t for layout",
@@ -730,7 +730,7 @@ ICA.addUnit({
       {lab:"wl-semantic", t:"Practice: give a page a header, nav, main and footer"}
     ]},
     {h:"Data tables", body:[
-      "Tables are for **data**: information that has rows and columns, where each cell is understood by its row and column headers. A timetable, a price comparison, sports results.",
+      "Tables are for **data**: information that has rows and columns, where each cell is understood by its row and column headers. A schedule, a price comparison, sports results.",
       {code:'<table>\n  <caption>Café opening hours</caption>\n  <thead>\n    <tr>\n      <th scope="col">Day</th>\n      <th scope="col">Opens</th>\n      <th scope="col">Closes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope="row">Monday</th>\n      <td>8:00</td>\n      <td>16:00</td>\n    </tr>\n    <tr>\n      <th scope="row">Saturday</th>\n      <td>9:00</td>\n      <td>14:00</td>\n    </tr>\n  </tbody>\n</table>', lang:"html", weblab:"wl-table"},
       {list:[
         "`<caption>` is the table’s title, placed first inside `<table>`. It tells everyone what the table is before they read it.",
@@ -745,7 +745,7 @@ ICA.addUnit({
     {h:"Forms: labels first", body:[
       "Forms collect information: a sign-up, a search, a booking request. Each field is a [[form-control|form control]], and every control needs a [[label-element|label]]: the visible text that says what to enter.",
       {code:'<form>\n  <label for="email">Email address</label>\n  <input type="email" id="email"\n         name="email" required>\n\n  <input type="checkbox" id="news"\n         name="news">\n  <label for="news">Send me the newsletter</label>\n\n  <button>Sign up</button>\n</form>', lang:"html", weblab:"wl-form"},
-      "The label’s `for` must match the input’s `id` exactly. That connection does three things: tapping the label focuses or ticks the control (the warm-up showed this), screen readers read the label when the control is focused, and voice-control users can say the label’s words to reach the field.",
+      "The label’s `for` must match the input’s `id` exactly. That connection does three things: tapping the label focuses or checks the control (the warm-up showed this), screen readers read the label when the control is focused, and voice-control users can say the label’s words to reach the field.",
       "`name` is the name the value is sent under when the form is submitted, like a column heading in the data you receive. `<button>` inside a form submits it by default.",
       {warn:"A `placeholder` (the gray hint inside an empty box) is **not** a label. It disappears as soon as someone types, often has low contrast, and isn’t reliably read by screen readers. MDN: don’t use it as a substitute for `<label>`. If you use one at all, use it for an example, like “e.g. 07700 900123”, alongside a real label."},
       "Giving every control a label meets WCAG 2.2 success criterion 3.3.2, “Labels or Instructions”.",
@@ -761,7 +761,7 @@ ICA.addUnit({
         ["`url`","Web addresses","Checks it looks like a full address"],
         ["`number`","Quantities, such as tickets","Number entry; `min` and `max` limits"],
         ["`date`","Dates","A date picker, in the visitor’s own format"],
-        ["`checkbox`","Yes/no choices, or pick several","A box to tick"],
+        ["`checkbox`","Yes/no choices, or pick several","A box to check"],
         ["`radio`","Pick one from a few","Round buttons; give them all the same `name`"]
       ]},
       "Add `required` (a boolean attribute) and the browser won’t submit the form until the field is filled. With `type=\"email\"`, it also checks the format. We tested it: with “abc” typed in an email field, Chromium refused to submit and explained that the address was missing an @.",
@@ -831,10 +831,10 @@ ICA.addUnit({
     ]},
     {id:"t2u2-l5-x6", type:"match", q:"Sione is building a booking form for a community workshop. Match each piece of information with the best input type.", pairs:[
       ["Email address","type=\"email\"","The browser checks for an @, and many phones show an @ key."],
-      ["Mobile phone number","type=\"tel\"","Phones show a number keypad. Formats differ by country, so the browser doesn’t check it."],
+      ["Cell phone number","type=\"tel\"","Phones show a number keypad. Formats differ by country, so the browser doesn’t check it."],
       ["Number of tickets (1 to 6)","type=\"number\"","With `min=\"1\" max=\"6\"`, the browser checks the range."],
       ["Workshop date","type=\"date\"","A date picker, shown in the visitor’s own date format."],
-      ["“I agree to the hall rules”","type=\"checkbox\"","A yes/no choice is a checkbox. Add `required` if it must be ticked."]
+      ["“I agree to the hall rules”","type=\"checkbox\"","A yes/no choice is a checkbox. Add `required` if it must be checked."]
     ]},
     {id:"t2u2-l5-x7", type:"mcq", q:"Kenji’s page passes the W3C validator with no errors. His friend says, “Great, so it’s accessible.” What’s the most accurate reply?", options:[
       {t:"Not necessarily: valid isn’t the same as accessible", ok:true, why:"The validator checks that the HTML follows the rules, not whether alt text, link text or headings make sense. Valid code is a good foundation, but `alt=\"image\"` and “click here” are perfectly valid. Human checks are still needed."},
@@ -849,7 +849,7 @@ ICA.addUnit({
       {t:"Check again, and repeat until there are no errors", why:"Re-checking shows which messages disappeared with each fix."},
       {t:"Do the manual checks: headings, alt text, link text, labels, keyboard", why:"Last, because the validator can’t judge meaning. These catch what it misses."}
     ]},
-      {id:"t2u2-l5-x9", type:"explain", q:"Explain why every form field needs a real `<label>` connected to it with `for` and `id`, and why gray placeholder text inside the box isn’t a substitute.", hint:"What three things does the for–id connection do? What happens to a placeholder when you type?", model:"When a label’s `for` matches the input’s `id`, three things happen: tapping the label focuses or ticks the control, which gives a bigger target; screen readers read the label when the field is focused, so people know what to enter; and voice-control users can say the label’s words to reach the field. A placeholder can’t do that job: it disappears as soon as someone types, often has low contrast, and isn’t reliably read by screen readers, so people can forget what the field was for.", points:["Says `for` must match the input’s `id`", "Says tapping the label focuses the field", "Says screen readers (or voice control) use the label", "Says a placeholder vanishes when typing and isn’t reliably read"]}
+      {id:"t2u2-l5-x9", type:"explain", q:"Explain why every form field needs a real `<label>` connected to it with `for` and `id`, and why gray placeholder text inside the box isn’t a substitute.", hint:"What three things does the for–id connection do? What happens to a placeholder when you type?", model:"When a label’s `for` matches the input’s `id`, three things happen: tapping the label focuses or checks the control, which gives a bigger target; screen readers read the label when the field is focused, so people know what to enter; and voice-control users can say the label’s words to reach the field. A placeholder can’t do that job: it disappears as soon as someone types, often has low contrast, and isn’t reliably read by screen readers, so people can forget what the field was for.", points:["Says `for` must match the input’s `id`", "Says tapping the label focuses the field", "Says screen readers (or voice control) use the label", "Says a placeholder vanishes when typing and isn’t reliably read"]}
    ],
    apply:{intro:"Finish the unit by giving your page from Lessons 2 to 4 a proper structure, then check it. Everything works on a phone except the keyboard test.", tasks:[
      {t:"Three Web Lab challenges", how:["Do the Web Lab challenges “Page landmarks”, “A data table” and “A labeled form field” (use the practice buttons in this lesson)."]},
@@ -859,7 +859,7 @@ ICA.addUnit({
        win:["Read only your headings, top to bottom: do they make sense as a table of contents?","Read only your link texts: does each make sense alone?","Press [[kbd:Tab]] repeatedly from the top of the page: can you reach every link and field, and see where you are?","Press [[kbd:Ctrl]] + [[kbd:+]] until the browser shows 200%: is everything still readable?"],
        mac:["Read only your headings, then only your link texts: do they make sense alone?","Press [[kbd:Tab]] repeatedly: can you reach every link and field? (In Safari, links are skipped unless you turn on **Settings → Advanced → Press Tab to highlight each item on a webpage**, or use [[kbd:Option]] + [[kbd:Tab]].)","Press [[kbd:Cmd]] + [[kbd:+]] until the browser shows 200%: is everything still readable?"],
        chromeos:["Read only your headings, then only your link texts: do they make sense alone?","Press [[kbd:Tab]] repeatedly: can you reach every link and field, and see where you are?","Press [[kbd:Ctrl]] + [[kbd:+]] until Chrome shows 200%: is everything still readable?"],
-       phone:["Read only your headings, then only your link texts: do they make sense alone?","Tap each form label and check that it focuses or ticks its control.","Pinch to zoom in: can you still read everything? (This only works because your viewport line doesn’t block zoom.)","The keyboard test needs a computer, or a Bluetooth keyboard connected to your phone or tablet."]
+       phone:["Read only your headings, then only your link texts: do they make sense alone?","Tap each form label and check that it focuses or checks its control.","Pinch to zoom in: can you still read everything? (This only works because your viewport line doesn’t block zoom.)","The keyboard test needs a computer, or a Bluetooth keyboard connected to your phone or tablet."]
      }}
    ], proof:"Your page with header, nav, main and footer, a captioned data table with header cells, a labeled form, a “no errors” result from the W3C validator, and notes from your five-minute check."},
    read:[
@@ -873,7 +873,7 @@ ICA.addUnit({
   cpBank:[
     {id:"t2u2-cp01", lesson:"t2u2-l1", level:1, q:"Lena leaves a note in her page’s HTML: `<!-- Wi-Fi password: tulip22 -->`. Once the page is online, who can read it?", options:[{t:"Nobody, because the browser skips comments", why:"The browser skips comments when it draws the page, but they are still in the file it receives. Anyone can read them in the source."}, {t:"Anyone who views the page’s source", ok:true, why:"Comments are hidden from the page but not private. Every visitor downloads the file, and view source shows them."}, {t:"Only Lena, because she wrote it in her editor", why:"Once published, the whole file goes to every visitor’s browser, comments included."}, {t:"Only people who know the site’s password", why:"View source needs no password. Never put passwords, keys or private notes in a comment."}]},
     {id:"t2u2-cp02", lesson:"t2u2-l1", level:2, q:"Kofi writes `<div class=\"note\" />` and then three paragraphs. What does the browser do with that slash?", options:[{t:"Treats it as an empty div, closed before the paragraphs start", why:"That would be true in XHTML, not HTML. In HTML the slash doesn’t close an element that isn’t void."}, {t:"Shows the slash as text on the page", why:"The slash is inside the tag, so it is never shown. The browser simply ignores it."}, {t:"Ignores it, so the paragraphs end up inside the div", ok:true, why:"The slash is only allowed (and ignored) on void elements. `<div />` is treated as an opening `<div>`, and what follows goes inside it."}, {t:"Refuses to show the page until it is fixed", why:"Browsers never refuse to show a page. They repair mistakes by rules, often not the way you meant."}]},
-    {id:"t2u2-cp03", lesson:"t2u2-l1", level:3, q:"Chris wants his top-10 list to count up as normal, so he writes `<ol reversed=\"no\">` with ten items. What do visitors see?", options:[{t:"The list counts up, because the value is `no`", why:"Boolean attributes ignore their value. Being present means on, just as `checked=\"false\"` still ticks a checkbox."}, {t:"The browser hides the list because the value is wrong", why:"An odd attribute value never hides an element. The list shows, counting down."}, {t:"The numbers change to bullet points", why:"Bullets come from `<ul>`. An `<ol>` keeps its numbers; `reversed` only changes their direction."}, {t:"The list counts down from 10 to 1", ok:true, why:"`reversed` is a boolean attribute: if it is present, it is on, whatever its value. To count up, remove it."}]},
+    {id:"t2u2-cp03", lesson:"t2u2-l1", level:3, q:"Chris wants his top-10 list to count up as normal, so he writes `<ol reversed=\"no\">` with ten items. What do visitors see?", options:[{t:"The list counts up, because the value is `no`", why:"Boolean attributes ignore their value. Being present means on, just as `checked=\"false\"` still checks a checkbox."}, {t:"The browser hides the list because the value is wrong", why:"An odd attribute value never hides an element. The list shows, counting down."}, {t:"The numbers change to bullet points", why:"Bullets come from `<ul>`. An `<ol>` keeps its numbers; `reversed` only changes their direction."}, {t:"The list counts down from 10 to 1", ok:true, why:"`reversed` is a boolean attribute: if it is present, it is on, whatever its value. To count up, remove it."}]},
     {id:"t2u2-cp04", lesson:"t2u2-l2", level:2, q:"Ama’s page is in English, but one sentence quotes a proverb in Swahili. What should she add so screen readers pronounce the proverb correctly?", options:[{t:"`lang=\"sw\"` on the `<html>` element", why:"That tells software the whole page is in Swahili, so all the English text would be read with the wrong pronunciation."}, {t:"An HTML comment saying the proverb is in Swahili", why:"Browsers and screen readers skip comments. Only a `lang` attribute tells them the language."}, {t:"`lang=\"sw\"` on an element around just the proverb", ok:true, why:"Mark a phrase in another language with its own `lang`, for example `<span lang=\"sw\">`. The rest of the page stays English."}, {t:"Nothing, because screen readers detect each language", why:"Screen readers rely on the language the code declares. Without `lang`, the proverb is read with English pronunciation."}]},
     {id:"t2u2-cp05", lesson:"t2u2-l2", level:3, q:"Tomás put `<h1>Spring fair</h1>` inside the `<head>` by mistake. The heading still shows on the page. Why does it still matter?", options:[{t:"The browser silently moved it, changing his structure", ok:true, why:"Visible content can’t stay in the head, so the browser ends the head early and moves the heading into the body. The page is no longer what he wrote, and a validator reports it."}, {t:"It doesn’t matter, because headings are allowed in the head", why:"Nothing in the head is shown. The heading only appears because the browser moved it into the body."}, {t:"The heading will disappear on phones", why:"The repair works the same on every device. The problem is hidden structure, not missing text."}, {t:"The whole page will switch to quirks mode", why:"Quirks mode comes from a missing doctype, not from a heading in the wrong place."}]},
     {id:"t2u2-cp06", lesson:"t2u2-l2", level:2, q:"The page `events/quiz.html` has `<link rel=\"stylesheet\" href=\"style.css\">`, but `style.css` is at the top of the site. The quiz page shows only default styles. What’s the fix?", options:[{t:"`href=\"events/style.css\"`", why:"From inside `events/`, this asks for `events/events/style.css`. The path must go up, not down."}, {t:"`href=\"../style.css\"`", ok:true, why:"Stylesheet paths work like links: they start from the page’s own folder. `../` goes up from `events/` to where `style.css` is."}, {t:"`rel=\"style\"` instead of `rel=\"stylesheet\"`", why:"`rel=\"stylesheet\"` is already right. The browser found no file because the path is wrong."}, {t:"Moving the `<link>` line into the `<body>`", why:"Stylesheet links belong in the head. Moving the line wouldn’t change where the browser looks for the file."}]},
@@ -1117,7 +1117,7 @@ ICA.addUnit({
     summary:"Tables are for data in rows and columns: give them a caption, header cells with scope, and never use them for page layout.",
     levels:{
      starter:[
-      "Use a table when information has rows and columns and each cell is understood by its headers: a timetable, a price comparison, results.",
+      "Use a table when information has rows and columns and each cell is understood by its headers: a schedule, a price comparison, results.",
       {list:["`<table>` wraps it; `<caption>` names it (first inside the table).","`<tr>` is a row; `<td>` a data cell; `<th>` a header cell."]},
       "Header cells let a screen reader say “Saturday, Closes, 14:00” instead of just “14:00”.",
       {warn:"Never use a table to arrange a page (photo beside text, sidebars). That’s CSS’s job."},
@@ -1130,7 +1130,7 @@ ICA.addUnit({
       "Cells can span: `colspan=\"2\"` across two columns, `rowspan=\"2\"` down two rows. Keep tables simple where you can; split a complicated table into two.",
       "Keep cells simple: one value per cell, and don’t merge cells for looks. On phones, wide tables are hard to read, so keep the number of columns small; Unit 3 shows how CSS can let a table scroll inside its own box instead of making the whole page scroll.",
       "Write numbers consistently (the same decimal places and units) so columns compare easily, and put units in the header (“Price (€)”) rather than in every cell.",
-      "Make the caption specific: “Bus times from Mill Lane, weekdays” tells people more than “Timetable”. It is the table’s name for everyone, and screen readers usually announce it as someone enters the table.",
+      "Make the caption specific: “Bus times from Mill Lane, weekdays” tells people more than “Schedule”. It is the table’s name for everyone, and screen readers usually announce it as someone enters the table.",
       "A table can be read cell by cell, row by row or column by column with a screen reader, and the headers are announced as the reader moves. That only works when header cells are real `<th>` elements, not bold `<td>`s."
      ],
      pro:[
@@ -1299,11 +1299,11 @@ ICA.addUnit({
      {t:"Add more spaces around the `<`", why:"`3 < b` with spaces happens to survive, but it relies on a parsing detail and `3 <b` would still break. `&lt;` is reliable."},
      {t:"Use a capital B", why:"Element names aren’t case-sensitive, so `<B` would also start a bold element."}
    ]},
-   {id:"t2u2-q06", lesson:"t2u2-l1", level:2, q:"Kenji wants an unticked checkbox and writes `<input type=\"checkbox\" checked=\"false\">`. What do visitors see?", options:[
-     {t:"A ticked checkbox, because `checked` is a boolean attribute and is present", ok:true, why:"Boolean attributes are on whenever they’re present, whatever the value. Remove `checked` to leave the box unticked."},
-     {t:"An unticked checkbox, because the value is false", why:"The value of a boolean attribute is ignored; only presence matters."},
+   {id:"t2u2-q06", lesson:"t2u2-l1", level:2, q:"Kenji wants an unchecked checkbox and writes `<input type=\"checkbox\" checked=\"false\">`. What do visitors see?", options:[
+     {t:"A checked checkbox, because `checked` is a boolean attribute and is present", ok:true, why:"Boolean attributes are on whenever they’re present, whatever the value. Remove `checked` to leave the box unchecked."},
+     {t:"An unchecked checkbox, because the value is false", why:"The value of a boolean attribute is ignored; only presence matters."},
      {t:"An error message", why:"Browsers don’t show error messages for HTML. A validator would flag the odd value, though."},
-     {t:"No checkbox at all", why:"The input still appears; the attribute only affects whether it starts ticked."}
+     {t:"No checkbox at all", why:"The input still appears; the attribute only affects whether it starts checked."}
    ]},
    {id:"t2u2-q07", lesson:"t2u2-l1", level:1, q:"What is an HTML comment for?", options:[
      {t:"A note for people reading the code", ok:true, why:"Comments, written `<!-- … -->`, are for explanations and reminders in the source. The browser doesn’t show them."},

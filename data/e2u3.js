@@ -125,7 +125,7 @@ ICA.addUnit({
     {id:"e2u3-l1-x8", type:"explain", q:"A 14-year-old is caught shoplifting once. Using labeling theory, explain how this could lead to more deviance, and why the reaction may matter more than the first act.", size:"3–4 sentences", model:"Labeling theory, from Edwin Lemert, separates primary from secondary deviance. The first theft may be primary deviance: the teenager still sees themselves as an ordinary student. If the school, police or neighbors then label them a ‘thief’, others may treat them with suspicion and close doors, and the teenager may start to see themselves that way. That is secondary deviance, and the label can become a master status that overshadows everything else. So the reaction can start a loop that produces more of the behavior it condemns.", points:["Describes the first act as primary deviance that leaves self-image unchanged", "Explains how a label changes how others treat the person", "Explains how the label can change the person’s self-image (secondary deviance)", "Mentions master status or the loop that produces more deviance"]}
    ],
    apply:{intro:"Look at deviance and social control in your own surroundings. Observe behavior in public, but never record, photograph or follow anyone, and never break a rule yourself to see what happens.", tasks:[
-     {t:"Notice sanctions in one everyday setting", how:["Spend 20 minutes somewhere public and ordinary: a bus, a café, a library, a park, a shop queue.","Note small moments when someone breaks an unwritten rule (pushing in, talking loudly, blocking a doorway) and how others react.","Classify each reaction you see as positive or negative, formal or informal.","Note any signs of internalized control: people following a rule when nobody is watching."], write:"Where and when, each norm broken or followed, the reaction, and which of the four sanction types it was…"},
+     {t:"Notice sanctions in one everyday setting", how:["Spend 20 minutes somewhere public and ordinary: a bus, a café, a library, a park, a line in a shop.","Note small moments when someone breaks an unwritten rule (pushing in, talking loudly, blocking a doorway) and how others react.","Classify each reaction you see as positive or negative, formal or informal.","Note any signs of internalized control: people following a rule when nobody is watching."], write:"Where and when, each norm broken or followed, the reaction, and which of the four sanction types it was…"},
      {t:"Trace how one norm has changed", how:["Choose something that was deviant in your society a generation ago and is accepted now, or the reverse (smoking in cafés, tattoos, men caring for babies, using phones at meals, cohabiting before marriage…).","If someone older is happy to talk, ask them how people reacted to it when they were young. They can skip any question.","Write down what changed: the act, the norm, or the audience?"], write:"The norm, how reactions changed, and what you think caused the change…"},
      {t:"Read one official crime statistic properly", how:["Find a crime figure from your country’s national statistics office or justice ministry (search for “crime statistics” with your country’s name).","Note whether it comes from police records or a victim survey.","Check whether it’s a count or a rate, and what period it covers.","Look for a note about changes in recording rules or definitions."], write:"The figure, its source, count or rate, police-recorded or survey, and one reason it might not show the full picture…"}
    ], proof:"Notes classifying at least five sanctions you observed, one norm that changed and why, and one crime statistic with its source, type (count or rate) and a limitation you identified."},
@@ -236,7 +236,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Apply stratification ideas to your own world. Keep personal and family details private: these notes are for you.", tasks:[
      {t:"Map a family across generations", how:["Ask an older relative or family friend who is happy to talk (they can skip any question), or use what you already know about your own family.","Note the main occupation and education of three generations if you can: grandparents, parents, you or someone your age.","Mark each change as upward, downward or stable, and as intergenerational or intragenerational.","Ask what changed in the economy at the time: new industries, closures, migration, more schooling. That’s the structural part."], write:"Three generations, their work and schooling, the type of mobility, and the structural changes behind it…"},
-     {t:"Income or wealth? A quick sort", how:["List ten money-related things in your life or an imagined household (a salary, a pension, a phone, a loan, savings, a rented flat, a car…).","Mark each as income, an asset (wealth) or a debt.","Work out a rough net worth for the imagined household. You don’t need to use your own real figures."], write:"Your list, sorted into income, assets and debts, and a rough net worth…"},
+     {t:"Income or wealth? A quick sort", how:["List ten money-related things in your life or an imagined household (a salary, a pension, a phone, a loan, savings, a rented apartment, a car…).","Mark each as income, an asset (wealth) or a debt.","Work out a rough net worth for the imagined household. You don’t need to use your own real figures."], write:"Your list, sorted into income, assets and debts, and a rough net worth…"},
      {t:"Spot class markers around you", how:["For a week, notice signals of class or status in adverts, social media, shops or speech: brands, accents, schools, holidays, ways of dressing.","For each, note whether it signals class (money), status (honor) or power, in Weber’s terms.","Be respectful: describe signals, not individual people."], write:"Five or more class markers, where you saw them, and which of Weber’s dimensions each signals…"}
    ], proof:"A three-generation mobility map with the type of each change, a sorted income–wealth list, and five class markers linked to Weber’s dimensions."},
    read:[
@@ -402,7 +402,7 @@ ICA.addUnit({
       {t:"A bank policy refusing loans in neighborhoods where most residents are from one ethnic group.", b:3, why:"A rule built into an organization’s routine, with unequal racial effects, is institutional racism."},
       {t:"Assuming an older woman in a headscarf can’t speak the local language.", b:0, why:"Applying a generalization about a group to an individual is a stereotype at work."},
       {t:"A school entrance exam held only in the dominant language, in a region where many children speak another.", b:3, why:"A routine rule that systematically disadvantages a group, whatever anyone intends, is an institutional problem."},
-      {t:"A landlord telling a caller the flat is taken after hearing his accent.", b:2, why:"Acting to deny someone housing because of their group is discrimination."},
+      {t:"A landlord telling a caller the apartment is taken after hearing his accent.", b:2, why:"Acting to deny someone housing because of their group is discrimination."},
       {t:"Disliking a neighboring ethnic group without ever having met its members.", b:1, why:"An attitude formed before experience is the root meaning of prejudice (pre-judging)."}
     ], why:"Belief, attitude, action and system are four different things, and each needs a different response."},
     {id:"e2u3-l4-x2", type:"match", q:"Match each pattern of intergroup relations to an example.", pairs:[
@@ -434,15 +434,15 @@ ICA.addUnit({
       {t:"Racial symbols, more than race itself, shape how people treat each other.", b:2, why:"The focus on symbols and meanings is interactionist."}
     ]},
     {id:"e2u3-l4-x6", type:"spot", q:"A blog post summarizes a hiring study. Tap every claim that **doesn’t follow** from the study described.", ask:"doesn’t follow from the study", parts:[
-      {t:"Researchers sent 2,400 CVs to real job adverts in three cities.", flag:false, why:"A clear description of the study design. Fine."},
+      {t:"Researchers sent 2,400 résumés to real job adverts in three cities.", flag:false, why:"A clear description of the study design. Fine."},
       " ",
-      {t:"Each pair of CVs was identical except for the applicant’s name, which signaled ethnicity.", flag:false, why:"This is what makes a field experiment powerful: the name is the only difference."},
+      {t:"Each pair of résumés was identical except for the applicant’s name, which signaled ethnicity.", flag:false, why:"This is what makes a field experiment powerful: the name is the only difference."},
       " ",
       {t:"Applicants with names common in one ethnic minority received fewer callbacks.", flag:false, why:"A reasonable summary of the result."},
       " ",
       {t:"This proves every employer in the country is racist.", flag:true, why:"An overgeneralization. The study shows an average gap among employers in three cities; it can’t label every employer in the country."},
       " ",
-      {t:"It also shows that the minority applicants had weaker skills.", flag:true, why:"This contradicts the design: the CVs were identical, so skills were held equal. That’s exactly why the gap points to discrimination."},
+      {t:"It also shows that the minority applicants had weaker skills.", flag:true, why:"This contradicts the design: the résumés were identical, so skills were held equal. That’s exactly why the gap points to discrimination."},
       " ",
       {t:"The gap is evidence of discrimination at the first step of hiring.", flag:false, why:"That’s what the study measures: who gets invited. It says less about later steps such as interviews or pay."}
     ], why:"Field experiments are strong because they hold everything equal except the group signal, but their results apply to the setting studied."},
@@ -574,7 +574,7 @@ ICA.addUnit({
      {t:"Intragenerational mobility", why:"Intragenerational mobility is moving up or down within one lifetime. Buying a watch doesn’t change Rafael’s class position."},
      {t:"Meritocracy", why:"A meritocracy is a hypothetical system that rewards people purely on merit. It has nothing to do with showing off purchases."},
      {t:"Conspicuous consumption", ok:true, why:"Yes. Buying visible goods to signal status is conspicuous consumption, a term coined by Thorstein Veblen."}]},
-   {id:"e2u3-cp03", lesson:"e2u3-l4", level:1, q:"A landlord refuses to rent a flat to a couple because of their ethnic background. Which term names what the landlord **did**?", options:[
+   {id:"e2u3-cp03", lesson:"e2u3-l4", level:1, q:"A landlord refuses to rent an apartment to a couple because of their ethnic background. Which term names what the landlord **did**?", options:[
      {t:"Discrimination", ok:true, why:"Correct. Discrimination is an action: treating people unequally because of their group. Refusing to rent is an action."},
      {t:"A stereotype", why:"A stereotype is an oversimplified belief about a group. The landlord may hold one, but refusing to rent is an action."},
      {t:"Prejudice", why:"Prejudice is an attitude. The question asks about what the landlord did, which is an action: discrimination."},
@@ -594,7 +594,7 @@ ICA.addUnit({
      {t:"the semi-periphery", why:"Semi-periphery countries are exploited by the core but can exploit the periphery. Nothing suggests Country Z exploits anyone."},
      {t:"the Second World", why:"First, Second and Third World are outdated Cold War labels, not part of Wallerstein’s approach."},
      {t:"the periphery", ok:true, why:"Correct. Supplying raw materials and cheap labor with little control over prices is the mark of the periphery."}]},
-   {id:"e2u3-cp07", lesson:"e2u3-l4", level:2, q:"In a city, no law separates ethnic groups. But housing is divided by income and ethnicity, so most schools end up with pupils mainly from one group. Which pattern is this?", options:[
+   {id:"e2u3-cp07", lesson:"e2u3-l4", level:2, q:"In a city, no law separates ethnic groups. But housing is divided by income and ethnicity, so most schools end up with students mainly from one group. Which pattern is this?", options:[
      {t:"*De jure* segregation", why:"*De jure* segregation is separation by law. The question says no law separates the groups."},
      {t:"Pluralism", why:"Pluralism means groups keep their identities with equal standing. Here groups are separated by unequal housing, not side by side as equals."},
      {t:"*De facto* segregation", ok:true, why:"Right. Separation that happens in practice, through housing and income, without a law requiring it, is *de facto* segregation."},
@@ -726,7 +726,7 @@ ICA.addUnit({
       "A label can become a **master status**, overriding every other identity: someone becomes “an ex-prisoner” before they are a parent, a cook or a neighbor.",
       "Goffman’s *Stigma* (1963) described how people manage spoiled identities: concealing (passing), disclosing selectively, or rejecting the label and organizing with others who share it.",
       "Labeling ideas influenced policies such as **diverting** young first-time offenders away from courts, sealing or expunging old records, and avoiding stigmatizing language (“a person with a conviction” rather than “a criminal”).",
-      "Labels work outside crime too. In schools, teachers’ expectations can shape pupils’ progress: Robert Rosenthal and Lenore Jacobson’s *Pygmalion in the Classroom* (1968) reported such effects, though later studies found them to be smaller and less consistent than first claimed.",
+      "Labels work outside crime too. In schools, teachers’ expectations can shape students’ progress: Robert Rosenthal and Lenore Jacobson’s *Pygmalion in the Classroom* (1968) reported such effects, though later studies found them to be smaller and less consistent than first claimed.",
       "Labels can also be resisted or reclaimed. Groups sometimes take a word once used as an insult and turn it into a source of pride and collective organization, as some disability rights and LGBTQ+ movements have done."
      ],
      pro:[
@@ -747,7 +747,7 @@ ICA.addUnit({
      starter:[
       "Every group, from a family to a country, has ways of keeping people in line with its norms. Sociologists call this **social control**.",
       "The tools are **sanctions**: rewards for following norms (positive sanctions) and punishments for breaking them (negative sanctions). Some are **informal**, like a smile, a thank-you, a stare or gossip. Others are **formal**, written and official, like a promotion, a fine or a prison sentence.",
-      "Most social control is informal. You probably don’t queue because of the law; you queue because others would glare at you if you didn’t. Over time we also **internalize** norms: we feel guilty or proud even when nobody is watching.",
+      "Most social control is informal. You probably don’t wait in line because of the law; you wait in line because others would glare at you if you didn’t. Over time we also **internalize** norms: we feel guilty or proud even when nobody is watching.",
       {key:"Rewards and punishments, informal and formal: four boxes that cover nearly every way groups shape behavior."}
      ],
      builder:[
@@ -888,7 +888,7 @@ ICA.addUnit({
       "Social mobility is movement between positions in society. It can be **upward** (a better position) or **downward**.",
       {list:[
         "**Intergenerational**: comparing parents and children. A farmer’s daughter becomes an accountant.",
-        "**Intragenerational**: within one person’s life. A shop assistant becomes a manager, or a manager loses her job and takes lower-paid work.",
+        "**Intragenerational**: within one person’s life. A salesclerk becomes a manager, or a manager loses her job and takes lower-paid work.",
         "**Structural**: whole groups move because society changes. When factories open, millions move from farm work to industrial work."
       ]},
       "A family story of moving up is real, but it doesn’t tell you how common that was. Mobility is measured across whole populations.",
@@ -1605,9 +1605,9 @@ ICA.addUnit({
      {t:"Holding two jobs at once", why:"That’s unrelated."},
      {t:"Being aware of two theoretical perspectives at once", why:"Double consciousness is about identity under racism, not theory."}
    ]},
-   {id:"e2u3-q35", lesson:"e2u3-l4", level:2, q:"Researchers send employers pairs of identical CVs that differ only in a name signaling ethnicity. What is this method best at showing?", options:[
+   {id:"e2u3-q35", lesson:"e2u3-l4", level:2, q:"Researchers send employers pairs of identical résumés that differ only in a name signaling ethnicity. What is this method best at showing?", options:[
      {t:"Whether discrimination occurs at the stage of being invited to interview", ok:true, why:"Holding everything else equal isolates the effect of the name at the first step of hiring."},
-     {t:"Whether applicants from one group have weaker skills", why:"The CVs are identical, so skills are held equal by design."},
+     {t:"Whether applicants from one group have weaker skills", why:"The résumés are identical, so skills are held equal by design."},
      {t:"Whether every employer in the country discriminates", why:"It measures an average among employers studied, not every employer."},
      {t:"How much people are paid after being hired", why:"The method measures callbacks, not later pay."}
    ]},

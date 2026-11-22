@@ -185,7 +185,7 @@ ICA.addUnit({
         "In phones, tablets and many laptops, the CPU is part of a single chip that also contains the graphics processor and other parts. This is called a [[system-on-chip|system on a chip (SoC)]]. The idea is the same: there are still cores carrying out the instructions."
       ]},
       {h:"Memory (RAM) vs storage: the most common confusion", body:[
-        "This is the mix-up that trips up almost everyone, including some shop assistants, so it is worth getting perfectly clear.",
+        "This is the mix-up that trips up almost everyone, including some salesclerks, so it is worth getting perfectly clear.",
         {list:[
           "[[ram|RAM]] (random-access memory) is the **countertop** where the cook works. Whatever you have open right now (apps, browser tabs, the document you are typing) sits in RAM so the CPU can reach it instantly. RAM is very fast but **volatile**: it empties when the power goes off.",
           "[[storage|Storage]] is the **pantry and fridge**. It keeps your files, apps and the operating system permanently, even with the power off. It is much bigger than RAM but slower."
@@ -200,7 +200,7 @@ ICA.addUnit({
           ["Shortage feels like","Slowness when many things are open; apps reloading","“Storage full” messages; can’t save, install or update"],
           ["Phone box usually shows","Often not shown at all","The big number, such as 128 GB or 256 GB"]
         ]},
-        {ex:"Tomás says: “My phone has 256 GB of memory.” His phone box says **256 GB**. That number is **storage**. His phone’s RAM is a much smaller number that the box may not even mention.\n\nHana’s laptop is slow with thirty tabs open. Deleting holiday videos (storage) won’t help much. Closing tabs and apps (freeing RAM) will.", label:"Worked example"},
+        {ex:"Tomás says: “My phone has 256 GB of memory.” His phone box says **256 GB**. That number is **storage**. His phone’s RAM is a much smaller number that the box may not even mention.\n\nHana’s laptop is slow with thirty tabs open. Deleting vacation videos (storage) won’t help much. Closing tabs and apps (freeing RAM) will.", label:"Worked example"},
         {key:"RAM is the workspace; storage is the cupboard. Not enough RAM makes a device slow; not enough storage stops it saving and updating."},
         "One honest complication: when RAM fills up, the operating system moves some of it into storage temporarily (called swap, paging or a page file). That keeps things working but slows them down, which is one reason a nearly-full drive can also make a computer sluggish."
       ]},
@@ -308,7 +308,7 @@ ICA.addUnit({
         {t:"More easily damaged if dropped while running", b:1, why:"The moving arm and spinning platters are sensitive to knocks."},
         {t:"Same family of technology as a USB stick", b:0, why:"Both use flash memory."}
       ]},
-      {id:"t1u1-l2-x8", type:"explain", q:"A shop assistant says: “This laptop has 512 GB of memory, so it will never slow down, however many tabs you open.” Explain what is wrong with that.", hint:"Is 512 GB more likely to be RAM or storage? Which one holds what you have open?", model:"512 GB is almost certainly the storage (the SSD), not the memory. Storage is the cupboard: it keeps files, apps and the operating system even when the power is off. RAM is the workspace: it holds whatever is open right now and empties when you switch off. How many tabs and apps you can keep open smoothly depends mainly on RAM, which is usually a few to a few dozen GB, so you would need to check the RAM figure instead.", points:["Says 512 GB is storage, not RAM", "Explains that RAM holds what is open right now", "Explains that storage keeps things when the power is off", "Says lots of open tabs depend mainly on RAM"]}
+      {id:"t1u1-l2-x8", type:"explain", q:"A salesclerk says: “This laptop has 512 GB of memory, so it will never slow down, however many tabs you open.” Explain what is wrong with that.", hint:"Is 512 GB more likely to be RAM or storage? Which one holds what you have open?", model:"512 GB is almost certainly the storage (the SSD), not the memory. Storage is the cupboard: it keeps files, apps and the operating system even when the power is off. RAM is the workspace: it holds whatever is open right now and empties when you switch off. How many tabs and apps you can keep open smoothly depends mainly on RAM, which is usually a few to a few dozen GB, so you would need to check the RAM figure instead.", points:["Says 512 GB is storage, not RAM", "Explains that RAM holds what is open right now", "Explains that storage keeps things when the power is off", "Says lots of open tabs depend mainly on RAM"]}
     ],
     apply:{
       intro:"Find the real specs of the device you’re using, and practice reading a spec sheet.",
@@ -899,7 +899,7 @@ ICA.addUnit({
       {t:"About 1.8 TB, but labeled “TiB” instead of “TB”", why:"Current macOS calculates in decimal, matching the box, so it shows about 2 TB. Honest binary names like “GiB” appear in some Linux tools and apps."},
       {t:"About 2 TB, because current macOS divides by 1,000 like the box", ok:true, why:"2,000,000,000,000 bytes ÷ 1,000⁴ = 2 TB on the Mac. Windows divides by 1,024⁴ instead (≈ 1.82) but still writes “TB”. Same bytes, different counting."}
     ]},
-    {id:"t1u1-cp11", lesson:"t1u1-l5", level:3, q:"Yusuf’s phone camera says it can’t save photos, and an app update failed yesterday. A shop assistant says, “You need a new phone with more RAM.” What is the best response?", options:[
+    {id:"t1u1-cp11", lesson:"t1u1-l5", level:3, q:"Yusuf’s phone camera says it can’t save photos, and an app update failed yesterday. A salesclerk says, “You need a new phone with more RAM.” What is the best response?", options:[
       {t:"Storage is full, not RAM: free space by removing unused apps or backed-up videos", ok:true, why:"Can’t save and failed updates are signs of full storage. RAM shortage makes a device slow with many things open. Freeing storage is the first-aid step."},
       {t:"Agree, because RAM is where the phone keeps photos and app updates", why:"RAM empties when the power goes off, so photos can’t live there. Photos are kept in storage."},
       {t:"Restart the phone, because restarting frees up room on its storage for new photos", why:"A restart clears RAM and finishes stuck tasks, but it doesn’t make room on a full drive."},
@@ -1294,7 +1294,7 @@ ICA.addUnit({
            "**Sideloading** (installing outside the store) bypasses review. It has legitimate uses (open-source apps, workplace apps) but needs a trusted source; some regions now require platforms to allow alternative stores.",
            "**Package managers** (winget on Windows, Homebrew on macOS, apt or dnf on Linux) install from curated repositories and are common among professionals.",
            "**Permissions** are increasingly granular: one-time access, approximate location, selected photos, and automatic reset of permissions for unused apps (Google Play Protect does this on some Android versions).",
-           "**Bundleware:** some free installers include extra offers. Choose “custom” install and untick extras, or prefer the store version."
+           "**Bundleware:** some free installers include extra offers. Choose “custom” install and uncheck extras, or prefer the store version."
          ]},
          "Unit 3 covers {{app-permissions}} and malware in depth.",
          "In workplaces, IT teams often restrict installs to an approved catalog, which is the same principle applied at scale."

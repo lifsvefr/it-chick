@@ -29,7 +29,7 @@ ICA.addUnit({
         "**The name** — what people see in a folder, such as `garden-club-minutes.docx`. The last part after the final dot is the **extension**.",
         "**The [[metadata]]** — data *about* the data: size, date created, date modified, who owns it, and often more. A phone photo usually also records the camera model and sometimes the location where it was taken."
       ]},
-      {fig:'<svg viewBox="0 0 340 312"><rect class="d-panel" x="5.7" y="6" width="328.7" height="298" rx="12" stroke-width="2"/><text x="170" y="30" text-anchor="middle">One file = name + data + metadata</text><rect class="d-lup" x="37.8" y="44" width="188.9" height="40" rx="8" stroke-width="2"/><text x="132.2" y="69" text-anchor="middle">holiday-beach</text><rect class="d-gold" x="226.7" y="44" width="75.6" height="40" rx="8" stroke-width="2"/><text x="264.4" y="69" text-anchor="middle">.jpg</text><text class="s" x="132.2" y="102" text-anchor="middle">name you choose</text><text class="s" x="264.4" y="102" text-anchor="middle">extension = type</text><rect class="d-sage" x="20.8" y="116" width="298.4" height="56" rx="8" stroke-width="2"/><text x="170" y="140" text-anchor="middle">Data: about 3 million bytes</text><text class="s" x="170" y="160" text-anchor="middle">the picture itself, as numbers</text><rect class="d-rose" x="20.8" y="184" width="298.4" height="106" rx="8" stroke-width="2"/><text x="170" y="206" text-anchor="middle">Metadata</text><text class="s" x="35.9" y="230">Size: 3 MB</text><text class="s" x="35.9" y="252">Created: 2026-07-14</text><text class="s" x="35.9" y="274">Modified: 2026-07-15</text><text class="s" x="188.9" y="230">Camera: phone</text><text class="s" x="188.9" y="252">Location: maybe!</text></svg>', alt:"A file drawn as three parts: a name made of “holiday-beach” plus the extension “.jpg”; the data, about 3 million bytes of picture; and metadata listing size, created and modified dates, camera and possibly location.", cap:"The name and metadata travel with the data. Metadata can reveal more than you expect, such as where a photo was taken."},
+      {fig:'<svg viewBox="0 0 340 312"><rect class="d-panel" x="5.7" y="6" width="328.7" height="298" rx="12" stroke-width="2"/><text x="170" y="30" text-anchor="middle">One file = name + data + metadata</text><rect class="d-lup" x="37.8" y="44" width="188.9" height="40" rx="8" stroke-width="2"/><text x="132.2" y="69" text-anchor="middle">vacation-beach</text><rect class="d-gold" x="226.7" y="44" width="75.6" height="40" rx="8" stroke-width="2"/><text x="264.4" y="69" text-anchor="middle">.jpg</text><text class="s" x="132.2" y="102" text-anchor="middle">name you choose</text><text class="s" x="264.4" y="102" text-anchor="middle">extension = type</text><rect class="d-sage" x="20.8" y="116" width="298.4" height="56" rx="8" stroke-width="2"/><text x="170" y="140" text-anchor="middle">Data: about 3 million bytes</text><text class="s" x="170" y="160" text-anchor="middle">the picture itself, as numbers</text><rect class="d-rose" x="20.8" y="184" width="298.4" height="106" rx="8" stroke-width="2"/><text x="170" y="206" text-anchor="middle">Metadata</text><text class="s" x="35.9" y="230">Size: 3 MB</text><text class="s" x="35.9" y="252">Created: 2026-07-14</text><text class="s" x="35.9" y="274">Modified: 2026-07-15</text><text class="s" x="188.9" y="230">Camera: phone</text><text class="s" x="188.9" y="252">Location: maybe!</text></svg>', alt:"A file drawn as three parts: a name made of “vacation-beach” plus the extension “.jpg”; the data, about 3 million bytes of picture; and metadata listing size, created and modified dates, camera and possibly location.", cap:"The name and metadata travel with the data. Metadata can reveal more than you expect, such as where a photo was taken."},
       {warn:"Photo metadata can include the GPS location where it was taken. Many social sites remove it when you post, but sending the original file by email or chat may keep it. Phones let you turn location off for the camera or remove it when sharing; the menu differs by phone."},
       {key:"A file is not “the picture” or “the document” — it is data with a name and some labels. Understanding those three parts explains almost everything else in this unit."}
     ]},
@@ -41,7 +41,7 @@ ICA.addUnit({
       "So the first practical skill in this unit is to **turn extensions on** and leave them on:",
       {list:[
         "**Windows 11** — in [[file-explorer|File Explorer]], choose **View → Show → File name extensions**.",
-        "**macOS** — in [[finder|Finder]], choose **Finder → Settings → Advanced**, then tick **Show all filename extensions**.",
+        "**macOS** — in [[finder|Finder]], choose **Finder → Settings → Advanced**, then check **Show all filename extensions**.",
         "**ChromeOS** — the Files app shows the full file name, extension included, so there is nothing to switch on.",
         "**Phones** — the Files app on iPhone and the file apps on Android vary; tapping a file’s info (often an “i” or “Details”) shows its type."
       ]},
@@ -81,7 +81,7 @@ ICA.addUnit({
       "A [[pdf]] is like a printed page in digital form: it looks the same on every device, fonts and layout included, and it is awkward to change. An editable file (`.docx`, `.xlsx`, `.pptx`, or a shared online document) is like handing over your working draft.",
       {table:[
         ["Situation","Send","Why"],
-        ["A finished CV, invoice, form or flyer","PDF","Layout stays fixed; the reader can’t accidentally change it"],
+        ["A finished résumé, invoice, form or flyer","PDF","Layout stays fixed; the reader can’t accidentally change it"],
         ["A draft for a colleague to edit","Editable file or a shared online document","They need to change it, and tracked changes or comments work"],
         ["A budget others will reuse","Spreadsheet (.xlsx/.ods)","Formulas survive; a PDF would freeze them as plain numbers"],
         ["Something to print at a shop","PDF","Printers see exactly what you see"],
@@ -136,7 +136,7 @@ ICA.addUnit({
       {t:".exe", flag:true, why:"The real extension is always after the last dot. .exe is a Windows program. An invoice should never be a program."}
     ]},
     {id:"t1u2-l1-x4", type:"sort", q:"Send as a PDF, or as an editable file?", buckets:["PDF","Editable file"], items:[
-      {t:"Oluwaseun’s finished CV for a job application", b:0, why:"Finished and must look identical on the employer’s screen. PDF keeps the layout fixed."},
+      {t:"Oluwaseun’s finished résumé for a job application", b:0, why:"Finished and must look identical on the employer’s screen. PDF keeps the layout fixed."},
       {t:"A draft report Mei wants her colleague to correct", b:1, why:"The colleague needs to change text and leave tracked changes or comments. A PDF makes that awkward."},
       {t:"A household budget with formulas the family will keep updating", b:1, why:"A PDF freezes formulas into plain numbers. A spreadsheet file keeps them working."},
       {t:"A flyer going to a print shop", b:0, why:"Print shops want PDF so fonts and layout print exactly as designed."},
@@ -149,7 +149,7 @@ ICA.addUnit({
       {t:"The file size", ok:true, why:"Size is metadata the file system keeps about every file."},
       {t:"The colors of the pixels in the sunset", why:"That is the data — the content of the picture itself."}
     ]},
-    {id:"t1u2-l1-x6", type:"mcq", q:"Kenji zips a folder of 200 holiday JPEG photos (900 MB) to email it. The zip is still about 890 MB. Why?", options:[
+    {id:"t1u2-l1-x6", type:"mcq", q:"Kenji zips a folder of 200 vacation JPEG photos (900 MB) to email it. The zip is still about 890 MB. Why?", options:[
       {t:"JPEG photos are already compressed", ok:true, why:"Correct. JPEG has already removed redundancy, so zip finds little left to squeeze. Zip works best on text and documents. For big photo sets, a cloud sharing link is better than email."},
       {t:"He zipped it wrong; a correct zip always halves the size", why:"There is no fixed ratio. How much zip saves depends entirely on how repetitive the data is."},
       {t:"Zip only works on Windows", why:"Zip is built into Windows, macOS, ChromeOS and phones. The platform isn’t the issue."},
@@ -165,8 +165,8 @@ ICA.addUnit({
    ],
    apply:{intro:"Make your device show you the truth about your files.", tasks:[
     {t:"Turn on file name extensions", how:{
-      win:["Open **File Explorer** (the folder icon on the taskbar, or [[kbd:Win]] + [[kbd:E]]).","Select **View** in the toolbar, point to **Show**, and select **File name extensions** so it has a tick."],
-      mac:["Click the **Finder** icon in the Dock.","In the menu bar choose **Finder → Settings** (called **Preferences** on macOS versions before Ventura).","Click **Advanced** and tick **Show all filename extensions**."],
+      win:["Open **File Explorer** (the folder icon on the taskbar, or [[kbd:Win]] + [[kbd:E]]).","Select **View** in the toolbar, point to **Show**, and select **File name extensions** so it has a check mark."],
+      mac:["Click the **Finder** icon in the Dock.","In the menu bar choose **Finder → Settings** (called **Preferences** on macOS versions before Ventura).","Click **Advanced** and check **Show all filename extensions**."],
       chromeos:["Open the **Files** app from the Launcher.","Look at any file: ChromeOS already shows the full name with its extension. Nothing to change."],
       phone:["iPhone: open **Files**, touch and hold a file, choose **Get Info** to see its kind and size.","Android: open your file app (**Files by Google**, or **My Files** on Samsung phones), tap the three dots on a file and choose **File info** or **Details**. Names vary by maker."]}},
     {t:"Find three different file types on your device", how:["Open your Documents and Downloads folders.","Find one document, one image and one other type (PDF, zip, video…).","For each, note the extension and which app opens it when you double-click or tap it."]},
@@ -513,13 +513,13 @@ ICA.addUnit({
         "**Deletions appear everywhere too.** Delete a file on your phone and it disappears from your laptop. If [[ransomware]] scrambles the files on your laptop, sync can upload the scrambled versions.",
         "**Sync needs the app to be running and the device to be online.** A laptop that has been off for a week will catch up when it next connects; until then, the copies differ."
       ]},
-      "Your cloud app shows sync status with small icons: a cloud, a tick, circling arrows for “syncing now”, or a red cross or warning for “something’s wrong”. Learning your app’s icons is worth five minutes."
+      "Your cloud app shows sync status with small icons: a cloud, a check mark, circling arrows for “syncing now”, or a red cross or warning for “something’s wrong”. Learning your app’s icons is worth five minutes."
     ]},
     {h:"Online-only files: when the file isn’t really there", body:[
       "To save space on your device, modern sync apps can keep some files **only in the cloud**, showing a placeholder that looks like the file. Open it and it downloads on the spot. This is often called [[files-on-demand]]. Each service names it differently:",
       {table:[
         ["Service","Online-only","Always on this device"],
-        ["OneDrive (Windows)","Blue cloud icon; right-click → **Free up space**","Green circle with white tick; right-click → **Always keep on this device**"],
+        ["OneDrive (Windows)","Blue cloud icon; right-click → **Free up space**","Green circle with white check mark; right-click → **Always keep on this device**"],
         ["iCloud Drive (Mac)","With **Optimize Mac Storage** on, older files stay in iCloud; Control-click → **Remove Download**","Control-click → **Keep Downloaded** (macOS Sequoia and later), or **Download Now** for a one-off"],
         ["Google Drive for desktop","**Stream files** setting: files mostly in the cloud","**Mirror files** setting: a full copy on your computer"],
         ["ChromeOS Files (Google Drive)","Default for Drive files","Select a file → turn on **Available offline**"]
@@ -547,7 +547,7 @@ ICA.addUnit({
       {ex:"Sione’s sports club budget needs feedback from five committee members, but only the treasurer should change it.\n→ Invite the five by email as Commenters; invite the treasurer as Editor.\n→ Don’t post an “Anyone with the link can edit” link in the club’s group chat.", label:"Worked example"}
     ]},
     {h:"The risks of “anyone with the link”", body:[
-      "Link sharing is convenient and fine for things that aren’t sensitive: a flyer, a public reading list, holiday photos for friends. For anything personal, it carries risks people underestimate:",
+      "Link sharing is convenient and fine for things that aren’t sensitive: a flyer, a public reading list, vacation photos for friends. For anything personal, it carries risks people underestimate:",
       {list:[
         "**Links get forwarded.** A message is passed on, pasted into a group chat, or posted publicly. The link still works for whoever ends up with it.",
         "**There’s no sign-in.** Google notes that people who aren’t signed in appear anonymously, so you can’t tell who opened it.",
@@ -579,7 +579,7 @@ ICA.addUnit({
     ]},
     {id:"t1u2-l4-x2", type:"sort", q:"Could Mei open each file on her laptop with no internet connection?", buckets:["Yes, works offline","No, needs internet"], items:[
       {t:"A OneDrive file showing a blue cloud icon", b:1, why:"The blue cloud means online-only: only a placeholder is on the laptop."},
-      {t:"A OneDrive file she marked “Always keep on this device”", b:0, why:"Pinned files are kept on the device, shown with a solid green circle and white tick."},
+      {t:"A OneDrive file she marked “Always keep on this device”", b:0, why:"Pinned files are kept on the device, shown with a solid green circle and white check mark."},
       {t:"Her Google Drive files with “Mirror files” turned on", b:0, why:"Mirroring keeps a full copy on the computer."},
       {t:"A Google Drive file she has never opened, with “Stream files” on", b:1, why:"Streamed files are mostly in the cloud until opened or made available offline."},
       {t:"An iCloud Drive file after she chose “Remove Download”", b:1, why:"Remove Download keeps it in iCloud only, freeing space on the Mac."},
@@ -619,9 +619,9 @@ ICA.addUnit({
    ],
    apply:{intro:"Look at how your own cloud storage behaves.", tasks:[
     {t:"Find your sync status and offline settings", how:{
-      win:["Click the **OneDrive** cloud icon in the taskbar’s notification area to see whether files are up to date. (If you use Google Drive for desktop or another app, open its icon instead.)","In File Explorer, open your OneDrive folder and look at the **Status** column: blue cloud, green tick or green circle.","Right-click a folder you need on trips → **Always keep on this device**."],
+      win:["Click the **OneDrive** cloud icon in the taskbar’s notification area to see whether files are up to date. (If you use Google Drive for desktop or another app, open its icon instead.)","In File Explorer, open your OneDrive folder and look at the **Status** column: blue cloud, green check mark or green circle.","Right-click a folder you need on trips → **Always keep on this device**."],
       mac:["In Finder, select **iCloud Drive** in the sidebar and look for status icons next to items.","Control-click a file → **Keep Downloaded** (macOS Sequoia and later) or **Download Now** for things you need offline.","Optional: open **System Settings → [your name] → iCloud** and look for **Optimize Mac Storage** (on some macOS versions it is inside the **iCloud Drive** or **Drive** settings)."],
-      chromeos:["Open **Files** → **Google Drive**.","Select a file or folder you need offline and turn on **Available offline** at the top.","If the option is missing, first tick **Offline** in Google Drive’s settings on the web (drive.google.com, Settings)."],
+      chromeos:["Open **Files** → **Google Drive**.","Select a file or folder you need offline and turn on **Available offline** at the top.","If the option is missing, first check **Offline** in Google Drive’s settings on the web (drive.google.com, Settings)."],
       phone:["iPhone: open **Files → Browse → iCloud Drive**; a cloud-with-arrow icon means it isn’t downloaded yet.","Android: open **Google Drive**, tap the three dots on a file → **Make available offline**."]}},
     {t:"Check who can see one of your shared files", how:["Open your cloud storage on the web (drive.google.com, onedrive.live.com, or icloud.com).","Find **Shared** (or look for the people icon on files).","Open the sharing settings of one item. Check whether it’s shared with named people or with an “anyone” link.","Remove any “anyone” link that’s no longer needed, and lower permissions that are higher than necessary."]},
     {t:"Check your storage use", how:["Google: visit **one.google.com/storage** while signed in.","iPhone: **Settings → [your name] → iCloud** shows the bar and biggest users.","OneDrive: on the web, select the storage bar in the left pane, or open **Settings** (gear icon) and look for **Storage** or **Manage storage**; the layout changes from time to time.","Note your total, what’s used, and the biggest category."]}
@@ -913,7 +913,7 @@ ICA.addUnit({
       ]},
       {h:"Renaming is not converting"},
       "Changing `.heic` to `.jpg` changes only the label; the data stays HEIC, and apps that trust the label may fail. Convert with an app instead: **Export** or **Save As** and choose the new format. Your computer warns before you change an extension — if you didn’t mean to, cancel.",
-      {warn:"Be wary of attachments ending in `.exe`, `.msi`, `.bat`, `.cmd`, `.js`, `.vbs`, `.scr` (Windows), `.app`, `.pkg`, `.dmg` (Mac) or `.apk` (Android). These run or install programs. An invoice, CV or photo should never be one."},
+      {warn:"Be wary of attachments ending in `.exe`, `.msi`, `.bat`, `.cmd`, `.js`, `.vbs`, `.scr` (Windows), `.app`, `.pkg`, `.dmg` (Mac) or `.apk` (Android). These run or install programs. An invoice, résumé or photo should never be one."},
       "Common pairs worth recognizing: `.docx` (Word), `.xlsx` (Excel), `.pptx` (PowerPoint), `.pdf`, `.txt`, `.csv`, `.jpg`/`.jpeg`, `.png`, `.heic`, `.mp4`, `.mov`, `.mp3`, `.zip`. If a file has an extension you don’t recognize, search the extension on a reputable site before opening it, and don’t install software just because a stranger’s file needs it."
      ],
      pro:[
@@ -1145,7 +1145,7 @@ ICA.addUnit({
      ],
      builder:[
       "A sync app runs on each device, watches a folder, uploads changes to the provider and downloads changes made elsewhere. It needs to be running and online; a device that’s been off catches up later.",
-      "Status icons tell you what’s happening — typically a tick (up to date), circling arrows (syncing), a cloud (online-only) and a red cross or warning (problem). Check them before shutting the laptop when you’ve saved something important.",
+      "Status icons tell you what’s happening — typically a check mark (up to date), circling arrows (syncing), a cloud (online-only) and a red cross or warning (problem). Check them before shutting the laptop when you’ve saved something important.",
       {h:"Sync conflicts"},
       "A [[sync-conflict]] happens when the same file is changed in two places before sync can compare them (for example, offline on a train). Services avoid data loss by **keeping both copies**, renaming one (often adding the device name or “conflict”). Compare, merge into one, then delete the extra. Online co-editing (Google Docs, Microsoft 365 on the web, iWork for iCloud) avoids most conflicts by having everyone edit one copy.",
       {tip:"When switching a computer from one sync setting to another, Google’s advice is to make sure everything has finished syncing first, so nothing is lost."},
@@ -1166,13 +1166,13 @@ ICA.addUnit({
       "To save space, cloud apps can keep some files **only online** and show a placeholder on your device. It looks like the file, but it downloads only when you open it. This is called [[files-on-demand]].",
       "That’s great for space, but online-only files won’t open without internet. Before a trip, mark the files you need as available offline.",
       {warn:"To free space, use the app’s **Free up space** or **Remove Download** option — never delete. Deleting a placeholder deletes the file everywhere."},
-      "How to tell: look for a little cloud icon next to the file. A tick or a solid circle usually means it’s on your device. Opening an online-only file downloads it, which can take a while for large files on slow connections.",
+      "How to tell: look for a little cloud icon next to the file. A check mark or a solid circle usually means it’s on your device. Opening an online-only file downloads it, which can take a while for large files on slow connections.",
       "Online-only files still count toward your cloud storage, even though they take no space on your device."
      ],
      builder:[
       {table:[
         ["Service","Online-only","Kept on device"],
-        ["OneDrive (Windows)","Blue cloud icon; **Free up space**","Green tick (downloaded) or solid green circle (**Always keep on this device**)"],
+        ["OneDrive (Windows)","Blue cloud icon; **Free up space**","Green check (downloaded) or solid green circle (**Always keep on this device**)"],
         ["iCloud Drive (Mac)","Cloud icon; **Remove Download**; **Optimize Mac Storage** moves older files to iCloud when space is needed","**Download Now**, or **Keep Downloaded** to pin (macOS Sequoia and later)"],
         ["Google Drive for desktop","**Stream files** (default for My Drive; shared drives are always streamed)","**Mirror files**: full local copy"],
         ["ChromeOS Files","Google Drive items by default","Turn on **Available offline**"],

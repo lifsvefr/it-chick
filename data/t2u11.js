@@ -561,7 +561,7 @@ ICA.addUnit({
    learn:[
       {h:"A function that calls itself", body:[
           {lead:"Recursion means solving a problem by solving a smaller version of the same problem, until the problem is so small the answer is obvious."},
-          "Picture a long queue. You want to know your place, but you can only see the person in front. So you ask them, “What’s your place?” They don’t know either, so they ask the person in front of them, and so on, until the question reaches the first person, who says “1”. Each answer comes back down the line, plus one each time.",
+          "Picture a long line. You want to know your place, but you can only see the person in front. So you ask them, “What’s your place?” They don’t know either, so they ask the person in front of them, and so on, until the question reaches the first person, who says “1”. Each answer comes back down the line, plus one each time.",
           "That’s [[alg-recursion|recursion]]: a function that calls **itself** on a smaller problem. Here is a countdown that works:",
           {code:"def countdown(n):\n    if n == 0:\n        print(\"Lift-off!\")\n    else:\n        print(n)\n        countdown(n - 1)\n\ncountdown(3)", lang:"py", label:"countdown.py", pylab:"pl-function", cap:"Output: `3`, `2`, `1`, `Lift-off!`"},
           "`countdown(3)` prints 3 and calls `countdown(2)`, which prints 2 and calls `countdown(1)`, and so on. When `n` reaches 0, the function prints “Lift-off!” and makes **no** further call. That’s what was missing from the version in the warm-up."
@@ -617,7 +617,7 @@ ICA.addUnit({
           "`random.random()` gives a decimal number from 0 up to (but not including) 1, so `x` and `y` together pick a random point in the square."
         ]},
       {h:"Models are simplifications", body:[
-          "A simulation is only as good as its assumptions. The dice code assumes every face is equally likely; a real worn die might not be. A simulation of queues at a café assumes how often customers arrive. Change the assumptions and the results change. So when you read a simulation’s result, ask what was assumed and what was left out: simulations simplify the world on purpose, and the choices made can introduce bias.",
+          "A simulation is only as good as its assumptions. The dice code assumes every face is equally likely; a real worn die might not be. A simulation of waiting lines at a café assumes how often customers arrive. Change the assumptions and the results change. So when you read a simulation’s result, ask what was assumed and what was left out: simulations simplify the world on purpose, and the choices made can introduce bias.",
           "Simulations earn their place when the real thing is too slow, expensive or dangerous to repeat (traffic, epidemics, weather), or when the math is too hard to solve exactly.",
           {h:"Common misconceptions"},
           {list:["**“A function can’t call itself.”** It can; it just needs a base case.", "**“Recursion is faster than a loop.”** Usually it isn’t, in Python. Choose it when it makes the code clearer.", "**“Fix a RecursionError by raising the limit.”** Fix the base case or make each call smaller.", "**“Random means unpredictable even with a seed.”** With the same seed, Python produces exactly the same sequence.", "**“A simulation gives the true answer.”** It gives an estimate, which gets closer with more trials, under its assumptions."]}
@@ -855,7 +855,7 @@ ICA.addUnit({
       ], checked:"2026-11"},
 
    {id:"recursion-basics", title:"Recursion: functions that call themselves", aka:["recursion", "recursive function", "base case", "recursive case", "call stack", "RecursionError", "factorial"], tags:["algorithms", "python", "functions"], summary:"A recursive function solves a smaller copy of its own problem; it needs a base case, and Python limits how deep the calls can go.", levels:{starter:[
-          "**Recursion** is when a function calls itself to solve a smaller version of the same problem. Like asking the person in front of you in a queue for their place, who asks the person in front of them, until the first person says “1”.",
+          "**Recursion** is when a function calls itself to solve a smaller version of the same problem. Like asking the person in front of you in a line for their place, who asks the person in front of them, until the first person says “1”.",
           "Every recursive function needs a **base case**, a simple input it answers directly (such as 0, 1 or an empty list), and a **recursive case** that calls the function on a smaller input, getting closer to the base case each time.",
           "Without a base case, the calls never stop, and Python ends the program with a `RecursionError`.",
           "Recursion is natural for things inside things: lists inside lists, folders inside folders, family trees. For simple repetition, a loop is usually clearer.",
@@ -878,7 +878,7 @@ ICA.addUnit({
       ], checked:"2026-11"},
 
    {id:"simulation-random", title:"Simulation, randomness and Monte Carlo", aka:["simulation", "Monte Carlo", "random", "random.seed", "pseudo-random", "randint", "random.random", "secrets"], tags:["algorithms", "python", "probability"], summary:"Simulations imitate a process with pseudo-random numbers; Monte Carlo estimates answers from many random trials; seeds make runs repeatable.", levels:{starter:[
-          "A **simulation** is a program that imitates something real, like dice, queues or the spread of a rumor, so you can see what tends to happen without doing it thousands of times for real.",
+          "A **simulation** is a program that imitates something real, like dice, waiting lines or the spread of a rumor, so you can see what tends to happen without doing it thousands of times for real.",
           "Python’s `random` module supplies the chance: `random.randint(1, 6)` rolls a die (1 to 6, both included) and `random.random()` gives a decimal from 0 up to, but not including, 1.",
           "The **Monte Carlo method** estimates an answer by repeating a random experiment many times and counting. More trials usually give a closer estimate.",
           "A **seed** (`random.seed(7)`) makes the “random” numbers come out the same every run, which helps when testing or sharing results.",
@@ -1048,10 +1048,10 @@ ICA.addUnit({
         {t:"`[4, 1, 3]`", why:"Something does move: 1 is smaller than 4, so it slides left."},
         {t:"`[3, 1, 4]`", why:"Insertion sort takes items from the left in order. Nothing swaps 4 and 3 here."}
       ]},
-   {id:"t2u11-q21", lesson:"t2u11-l3", level:2, q:"Fatima writes `marks = marks.sort()` and then `print(marks)`. What is printed?", options:[
-        {t:"The marks, sorted", why:"`.sort()` does sort the list, but it returns `None`, and that `None` is what gets stored in `marks`."},
-        {t:"The marks, unsorted", why:"The list was sorted, then thrown away when `marks` was set to `None`."},
-        {t:"`None`", ok:true, why:"Right. `.sort()` sorts in place and returns `None`. Write `marks.sort()` on its own line, or `marks = sorted(marks)`."},
+   {id:"t2u11-q21", lesson:"t2u11-l3", level:2, q:"Fatima writes `scores = scores.sort()` and then `print(scores)`. What is printed?", options:[
+        {t:"The scores, sorted", why:"`.sort()` does sort the list, but it returns `None`, and that `None` is what gets stored in `scores`."},
+        {t:"The scores, unsorted", why:"The list was sorted, then thrown away when `scores` was set to `None`."},
+        {t:"`None`", ok:true, why:"Right. `.sort()` sorts in place and returns `None`. Write `scores.sort()` on its own line, or `scores = sorted(scores)`."},
         {t:"An error", why:"No error: assigning `None` is allowed. That’s what makes this slip easy to miss."}
       ]},
    {id:"t2u11-q22", lesson:"t2u11-l3", level:2, q:"What does `sorted([\"Zoe\", \"adam\", \"Bea\"])` give?", options:[

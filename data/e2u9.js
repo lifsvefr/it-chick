@@ -45,7 +45,7 @@ ICA.addUnit({
       "The recommendations then split migrants by how long they stay:",
       {list:[
         "A **[[long-term-migrant|long-term migrant]]** moves to another country for at least a year. The new country becomes their country of usual residence.",
-        "A **[[short-term-migrant|short-term migrant]]** moves for at least three months but less than a year. Trips for holidays, visits to friends and relatives, business, medical treatment or religious pilgrimage don’t count."
+        "A **[[short-term-migrant|short-term migrant]]** moves for at least three months but less than a year. Trips for vacations, visits to friends and relatives, business, medical treatment or religious pilgrimage don’t count."
       ]},
       "In practice, UN DESA’s global estimates count people living in a country other than their **country of birth**. Where a country doesn’t record birthplace, they use **country of citizenship** instead, so foreign citizens are counted. Take a person who became a citizen of their new country decades ago, like Kenji’s grandmother. In most of the statistics, they still count as an international migrant.",
       {ex:"Amara’s two-year master’s abroad makes her a long-term international migrant in the statistics, even though she plans to go home. Sione’s four-month farm season makes him a short-term migrant. Lucía is not counted at all in international migration figures, because she never left her country.", label:"Worked example: applying the statistical definition"}
@@ -91,12 +91,12 @@ ICA.addUnit({
     {id:"e2u9-l1-x2", type:"mcq", q:"Using UN DESA’s 1998 statistical definition, which of these people is an international migrant?", options:[
       {t:"Tomás, who moved from Bolivia to Argentina three years ago and lives and works there", ok:true, why:"Right. He changed his country of usual residence for more than a year, so he is a long-term international migrant."},
       {t:"Kaito, a first-year student, who moved from a small mountain town in Gifu to the harbor town of Shioura for university", why:"Gifu and Shioura are both in Japan. Kaito is an internal migrant, which the UN’s *international* definition doesn’t cover."},
-      {t:"Hana, who spent two weeks abroad on holiday", why:"A holiday doesn’t change your country of usual residence, and holidays are explicitly excluded even from short-term migration."},
+      {t:"Hana, who spent two weeks abroad on vacation", why:"A vacation doesn’t change your country of usual residence, and vacations are explicitly excluded even from short-term migration."},
       {t:"Dmitri, who flies abroad for a three-day business meeting every month", why:"Business trips are excluded. Dmitri’s country of usual residence never changes."}
     ]},
     {id:"e2u9-l1-x3", type:"sort", q:"Under the UN’s 1998 recommendations, is each person a long-term international migrant, a short-term international migrant, or neither?", buckets:["Long-term migrant","Short-term migrant","Neither"], items:[
       {t:"A nurse who moves abroad on a three-year hospital contract", b:0, why:"At least a year in a new country of usual residence makes a long-term migrant."},
-      {t:"A student on a six-month exchange at a university abroad", b:1, why:"Study abroad for three months to a year is short-term migration. (Holidays, visits, business, medical treatment and pilgrimage are excluded; study is not.)"},
+      {t:"A student on a six-month exchange at a university abroad", b:1, why:"Study abroad for three months to a year is short-term migration. (Vacations, visits, business, medical treatment and pilgrimage are excluded; study is not.)"},
       {t:"A tourist on a three-week trip", b:2, why:"Tourism doesn’t change usual residence and is excluded from short-term migration too."},
       {t:"A worker who moves from a rural province to the capital of the same country", b:2, why:"No border was crossed, so this is internal migration, outside the international definition."},
       {t:"A seasonal fruit picker who works abroad for five months, then returns home", b:1, why:"Five months abroad for work is between three months and a year: short-term."},
@@ -473,7 +473,7 @@ ICA.addUnit({
     ]},
     {h:"Where the numbers come from", body:[
       "No country has one perfect source. Statisticians piece together several, each with strengths and weaknesses.",
-      {table:[["Source","What it gives","Main weakness"],["[[census|Census]]","Everyone counted on one day, with country of birth and citizenship; the main source for UN DESA’s stock estimates","Usually only every ten years; people with irregular status may avoid it"],["[[population-register|Population register]]","A continuous list of residents (Nordic countries, the Netherlands and others); good for flows","Relies on people registering arrivals and, harder, departures"],["Household and labor force [[survey|surveys]]","Details such as reasons for moving, jobs and earnings","Samples are small, so rare groups and small areas are uncertain"],["[[administrative-data|Administrative data]]","Visas, residence and work permits, asylum applications, border crossings","Counts documents and events, not people; one person can hold several permits"],["New digital sources","Mobile phone and social media data can show movement quickly","Privacy risks, and not everyone has a phone or account"]]},
+      {table:[["Source","What it gives","Main weakness"],["[[census|Census]]","Everyone counted on one day, with country of birth and citizenship; the main source for UN DESA’s stock estimates","Usually only every ten years; people with irregular status may avoid it"],["[[population-register|Population register]]","A continuous list of residents (Nordic countries, the Netherlands and others); good for flows","Relies on people registering arrivals and, harder, departures"],["Household and labor force [[survey|surveys]]","Details such as reasons for moving, jobs and earnings","Samples are small, so rare groups and small areas are uncertain"],["[[administrative-data|Administrative data]]","Visas, residence and work permits, asylum applications, border crossings","Counts documents and events, not people; one person can hold several permits"],["New digital sources","Cell phone and social media data can show movement quickly","Privacy risks, and not everyone has a phone or account"]]},
       "Censuses also ask about **internal** migration, usually with questions such as “Where did you live five years ago?” or “Where did you live before you came here?” India’s and China’s internal migration figures in Lesson 1 come from such questions.",
       "International organizations then combine national sources. UN DESA builds its migrant stock estimates mainly from censuses, supplemented by registers and surveys. For the 2024 edition, 60 countries and areas got a full reassessment; for the rest, the 2024 figures are extrapolated from the 2020 edition. UNHCR relies largely on governments’ and its own registration of refugees and asylum seekers. IDMC relies on many field sources for internal displacement."
     ]},
@@ -729,7 +729,7 @@ ICA.addUnit({
   checkpoint:["e2u9-q02","e2u9-q05","e2u9-q08","e2u9-q12","e2u9-q16","e2u9-q20","e2u9-q23","e2u9-q26","e2u9-q30","e2u9-q34","e2u9-q38","e2u9-q43"],
   cpBank:[
    {id:"e2u9-cp01", lesson:"e2u9-l1", level:1, q:"Under the UN’s 1998 recommendations, which person counts as a **short-term** international migrant?", options:[
-     {t:"Yusuf, who spends four months abroad on a religious pilgrimage", why:"Trips for pilgrimage, holidays, visits, business or medical treatment are excluded, however long they last."},
+     {t:"Yusuf, who spends four months abroad on a religious pilgrimage", why:"Trips for pilgrimage, vacations, visits, business or medical treatment are excluded, however long they last."},
      {t:"Lena, who moves abroad to work for three years", why:"A stay of a year or more makes Lena a long-term international migrant, not a short-term one."},
      {t:"Ravi, who moves abroad for a seven-month construction contract", ok:true, why:"Right. A move to another country for at least three months but less than a year, for a reason like work, is short-term migration."},
      {t:"Mateus, who moves from his village to his country’s capital for a year", why:"Mateus never crossed a border. He is an internal migrant, so he isn’t counted in international migration figures."}]},
@@ -830,7 +830,7 @@ ICA.addUnit({
       {key:"Always ask which definition a number or a claim is using."}
      ],
      builder:[
-      "**UN DESA (1998 Recommendations on Statistics of International Migration, Rev. 1):** an international migrant is “any person who changes his or her country of usual residence”. Long-term: at least one year. Short-term: at least three months but less than a year, excluding recreation, holidays, visits to friends and relatives, business, medical treatment and religious pilgrimage.",
+      "**UN DESA (1998 Recommendations on Statistics of International Migration, Rev. 1):** an international migrant is “any person who changes his or her country of usual residence”. Long-term: at least one year. Short-term: at least three months but less than a year, excluding recreation, vacations, visits to friends and relatives, business, medical treatment and religious pilgrimage.",
       "In practice, UN DESA’s stock estimates use **country of birth**, or **country of citizenship** where birthplace isn’t recorded. So naturalized citizens usually still count, and children born in a country to foreign parents may count where citizenship is used.",
       "**IOM (Glossary on Migration, 2019):** “An umbrella term, not defined under international law, reflecting the common lay understanding of a person who moves away from his or her place of usual residence, whether within a country or across an international border, temporarily or permanently, and for a variety of reasons.”",
       {table:[["","UN DESA (statistics)","IOM (working)"],["Internal moves","No","Yes"],["Minimum stay","3 months (short-term) or 1 year (long-term)","None"],["Refugees","Counted in the stock","Included in the umbrella"],["Legal status","Not a legal definition","Says it is not a legal definition"]]},
@@ -936,7 +936,7 @@ ICA.addUnit({
      ],
      pro:[
       "Common traps: **definitions** (birthplace versus citizenship; naturalization; children of foreign citizens), **emigration undercounts** (handled with mirror statistics from destination countries), **irregular migration** (only indirect estimates), **short and circular moves** missed by 12-month thresholds, **residual net migration** that absorbs errors in population counts, and **missing breakdowns** by sex, age or disability.",
-      "Global flow data are especially weak: only some countries publish annual flow statistics, and researchers such as Abel and Sander (2014) have estimated global flows indirectly from changes in stocks. New sources (mobile phone records, social media advertising audiences, satellite imagery for displacement) are promising but raise privacy and bias concerns.",
+      "Global flow data are especially weak: only some countries publish annual flow statistics, and researchers such as Abel and Sander (2014) have estimated global flows indirectly from changes in stocks. New sources (cell phone records, social media advertising audiences, satellite imagery for displacement) are promising but raise privacy and bias concerns.",
       "The 2018 Global Compact for Migration made data its first objective, and a revised UN statistical framework was endorsed in 2021. Kraler and Reichel’s chapter in *Introduction to Migration Studies* is a clear guide to these issues. See also {{survey-research}} and {{demography}}.",
       "Estimates of **irregular migration** use indirect methods, such as comparing a census count of the foreign-born with the number of people holding residence permits (the residual method), or working back from regularization programs. They come with wide ranges and should be quoted as such.",
       "Displacement data have their own traps: IDMC counts both **displacements** (movements, which one person can make several times in a year) and the number of **people** displaced at the end of the year. Mixing the two gives very different numbers."
@@ -1015,7 +1015,7 @@ ICA.addUnit({
    {id:"migrant", term:"Migrant", def:"In IOM’s broad working definition, anyone who moves away from their usual place of residence, within a country or across a border, for any reason. It has no agreed definition in international law.", codex:"who-is-a-migrant"},
    {id:"international-migrant", term:"International migrant", def:"In UN statistics, any person who changes their country of usual residence. Estimates usually count people living outside their country of birth (or citizenship).", codex:"who-is-a-migrant"},
    {id:"long-term-migrant", term:"Long-term migrant", def:"In UN statistics, a person who moves to another country for at least a year, so that it becomes their country of usual residence.", codex:"who-is-a-migrant"},
-   {id:"short-term-migrant", term:"Short-term migrant", def:"In UN statistics, a person who moves to another country for at least three months but less than a year. Holidays, visits, business, medical treatment and pilgrimage don’t count.", codex:"who-is-a-migrant"},
+   {id:"short-term-migrant", term:"Short-term migrant", def:"In UN statistics, a person who moves to another country for at least three months but less than a year. Vacations, visits, business, medical treatment and pilgrimage don’t count.", codex:"who-is-a-migrant"},
    {id:"internal-migration", term:"Internal migration", def:"Moving to live in another place within the same country, such as from a village to a city. It involves far more people than international migration.", codex:"who-is-a-migrant"},
    {id:"emigration", term:"Emigration", def:"Leaving one’s country to live in another, seen from the country being left. The person is an emigrant from that country.", codex:"who-is-a-migrant"},
    {id:"immigration", term:"Immigration", def:"Moving into a country to live there, seen from the country of arrival. The person is an immigrant in that country.", codex:"who-is-a-migrant"},
@@ -1091,7 +1091,7 @@ ICA.addUnit({
    {id:"e2u9-q09", lesson:"e2u9-l1", level:2, q:"In his first paper on the “laws of migration” (1885), which source did E. G. Ravenstein use?", options:[
      {t:"British census records of where people were born", ok:true, why:"Correct. Birthplace data from censuses showed who had moved where."},
      {t:"Satellite images of cities", why:"Satellites didn’t exist in the 1880s."},
-     {t:"Mobile phone records", why:"These are a 21st-century data source."},
+     {t:"Cell phone records", why:"These are a 21st-century data source."},
      {t:"Interviews with refugees under the 1951 Convention", why:"The 1951 Convention came more than 60 years later."}]},
    /* ---- Lesson 2 ---- */
    {id:"e2u9-q10", lesson:"e2u9-l2", level:1, q:"What is circular migration?", options:[

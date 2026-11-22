@@ -59,7 +59,7 @@ ICA.addUnit({
       {ex:"[日本語]{にほんご}が話せます。\n日本語を話せます。\nBoth: I can speak Japanese.", label:"が or を"},
       "Many textbooks teach が first, and it is correct in sentences like these, so use が when you are not sure. を is also very common, especially in conversation. You don’t need to correct anyone who uses it.",
       "Other particles do not change. A place stays a place, a person stays a person:",
-      {ex:"[一人]{ひとり}で[病院]{びょういん}へ行けます。\nI can go to the hospital on my own.\n\n[週末]{しゅうまつ}は[友達]{ともだち}に[会]{あ}えません。\nI can’t meet my friends at the weekend.", label:"Other particles stay"},
+      {ex:"[一人]{ひとり}で[病院]{びょういん}へ行けます。\nI can go to the hospital on my own.\n\n[週末]{しゅうまつ}は[友達]{ともだち}に[会]{あ}えません。\nI can’t meet my friends on the weekend.", label:"Other particles stay"},
       "In negative sentences, は is common for contrast: [肉]{にく}は食べられませんが、[魚]{さかな}は食べられます (I can’t eat meat, but I can eat fish)."
     ]},
     {h:"～ことができる, and noun + ができる", body:[
@@ -218,7 +218,7 @@ ICA.addUnit({
     ]},
     {h:"～ようとおもう: saying what you intend", body:[
       "To tell someone about your intention, put the volitional form before と[思]{おも}います: “I think I’ll…”, “I’m thinking of…”. This is the same と[思]{おも}う for thoughts that Unit 5 teaches ([[to-omou]]).",
-      {ex:"[今日]{きょう}は[早]{はや}く[寝]{ね}ようと[思]{おも}います。\nI think I’ll go to bed early today.\n\n[来年]{らいねん}、[日本]{にほん}で[働]{はたら}こうと[思]{おも}っています。\nI’m thinking of working in Japan next year.\n\n[夏休]{なつやす}みは何をしようと[思]{おも}っていますか。\nWhat are you thinking of doing in the summer holidays?", label:"～ようとおもう"},
+      {ex:"[今日]{きょう}は[早]{はや}く[寝]{ね}ようと[思]{おも}います。\nI think I’ll go to bed early today.\n\n[来年]{らいねん}、[日本]{にほん}で[働]{はたら}こうと[思]{おも}っています。\nI’m thinking of working in Japan next year.\n\n[夏休]{なつやす}みは何をしようと[思]{おも}っていますか。\nWhat are you thinking of doing over summer vacation?", label:"～ようとおもう"},
       "There are two endings:",
       {list:[
         "**～ようと[思]{おも}います**: an intention you state now, often one you have just decided.",
@@ -232,12 +232,12 @@ ICA.addUnit({
       {ex:"[来年]{らいねん}、[大学院]{だいがくいん}に[入]{はい}るつもりです。\nI intend to go on to graduate school next year.\n\n[今年]{ことし}はお[酒]{さけ}を[飲]{の}まないつもりです。\nI intend not to drink alcohol this year.\n\n[仕事]{しごと}をやめるつもりはありません。\nI have no intention of quitting my job.", label:"つもり"},
       "～つもりはありません (“have no intention of”) is stronger than ～ないつもりです. It firmly rules something out.",
       "Because つもり is a noun, it changes like one: plain つもりだ, past つもりでした. The past often means a plan that didn’t happen: [電話]{でんわ}するつもりでしたが、[忘]{わす}れてしまいました (I meant to call, but I forgot). You will meet ～てしまいました in Lesson 5.",
-      "[予定]{よてい} (plan, schedule) is different: it is something arranged or timetabled, not only your own wish. It also follows the dictionary form, or a noun with の.",
+      "[予定]{よてい} (plan, schedule) is different: it is something arranged or scheduled, not only your own wish. It also follows the dictionary form, or a noun with の.",
       {ex:"[電車]{でんしゃ}は[三時]{さんじ}に[着]{つ}く[予定]{よてい}です。\nThe train is due to arrive at three.\n\n[来週]{らいしゅう}は[出張]{しゅっちょう}の[予定]{よてい}です。\nI’m scheduled to go on a business trip next week.", label:"よてい (schedule)"}
     ]},
     {h:"Putting it together: talking about plans", body:[
       "Here is how these patterns sound together in a polite conversation between two housemates.",
-      {ex:"イエン：[夏休]{なつやす}みは何をしますか。\nまりや：[北]{きた}の[方]{ほう}へ[旅行]{りょこう}に[行]{い}こうと[思]{おも}っています。イエンさんは？\nイエン：[国]{くに}へ[帰]{かえ}るつもりです。もう[飛行機]{ひこうき}を[予約]{よやく}しました。[八月]{はちがつ}[三日]{みっか}に[出発]{しゅっぱつ}する[予定]{よてい}です。\nまりや：いいですね。じゃあ、その[前]{まえ}に[一度]{いちど}、[一緒]{いっしょ}に[食事]{しょくじ}しませんか。\nイエン：ええ、そうしましょう。\n\nYến: What are you doing in the summer holidays?\nMariya: I’m thinking of traveling up north. And you, Yến?\nYến: I intend to go back to my country. I’ve already booked the flight; I’m due to leave on 3 August.\nMariya: Sounds good. Then shall we have a meal together once before that?\nYến: Yes, let’s do that.", label:"Worked example: summer plans"},
+      {ex:"イエン：[夏休]{なつやす}みは何をしますか。\nまりや：[北]{きた}の[方]{ほう}へ[旅行]{りょこう}に[行]{い}こうと[思]{おも}っています。イエンさんは？\nイエン：[国]{くに}へ[帰]{かえ}るつもりです。もう[飛行機]{ひこうき}を[予約]{よやく}しました。[八月]{はちがつ}[三日]{みっか}に[出発]{しゅっぱつ}する[予定]{よてい}です。\nまりや：いいですね。じゃあ、その[前]{まえ}に[一度]{いちど}、[一緒]{いっしょ}に[食事]{しょくじ}しませんか。\nイエン：ええ、そうしましょう。\n\nYến: What are you doing over summer vacation?\nMariya: I’m thinking of traveling up north. And you, Yến?\nYến: I intend to go back to my country. I’ve already booked the flight; I’m due to leave on 3 August.\nMariya: Sounds good. Then shall we have a meal together once before that?\nYến: Yes, let’s do that.", label:"Worked example: summer plans"},
       "Look at how certain each speaker is. Mariya’s trip is still an idea, so she uses ～ようと[思]{おも}っています. Yến has decided, so つもりです; and her flight has a date, so [予定]{よてい}です. Mariya’s invitation uses polite ～ませんか, and Yến accepts with ～ましょう.",
       "Between close friends the same exchange would use the volitional form directly: [一緒]{いっしょ}にごはん[食]{た}べない？ — うん、そうしよう。"
     ]},
@@ -308,9 +308,9 @@ ICA.addUnit({
       {t:"います", why:"～と[思]{おも}っています: an intention you have had for a while."}
     ]},
     {id:"e3u6-l2-x8", type:"mcq", q:"How do you say “The train is due to arrive at three”?", options:[
-      {t:"電車は三時に[着]{つ}く[予定]{よてい}です。", ok:true, why:"Right. [予定]{よてい} is for schedules and arrangements, and a train has a timetable, not a will of its own."},
+      {t:"電車は三時に[着]{つ}く[予定]{よてい}です。", ok:true, why:"Right. [予定]{よてい} is for schedules and arrangements, and a train has a schedule, not a will of its own."},
       {t:"電車は三時に[着]{つ}くつもりです。", why:"つもり is a person’s intention. A train can’t intend anything, so this sounds like a joke."},
-      {t:"電車は三時に[着]{つ}こうと[思]{おも}っています。", why:"～ようと[思]{おも}う is also a person’s intention. For a timetable, use [予定]{よてい}."},
+      {t:"電車は三時に[着]{つ}こうと[思]{おも}っています。", why:"～ようと[思]{おも}う is also a person’s intention. For a schedule, use [予定]{よてい}."},
       {t:"電車は三時に[着]{つ}きたいです。", why:"～たい is a wish, and only people have wishes. Use [予定]{よてい}."}
     ]},
     {id:"e3u6-l2-x9", type:"type", q:"Kaito and his friends have been walking for an hour. He suggests: “Shall we take a short break?” Type the casual volitional in hiragana: 「ちょっと___か。」 (休む, rest)", answer:"やすもう",
@@ -398,7 +398,7 @@ ICA.addUnit({
     {h:"なら: if that’s the case", body:[
       "[[conditional-nara|なら]] follows the plain form of a verb or い-adjective. Nouns and な-adjectives take なら directly, with no だ: 学生なら, [静]{しず}かなら (✗ 学生だなら).",
       "なら takes something as given, often something the other person has just said, and adds advice, an opinion or an offer about it: “if that’s so…”, “if it’s X you’re talking about…”.",
-      {ex:"A：[週末]{しゅうまつ}、[大阪]{おおさか}へ行きます。\nB：[大阪]{おおさか}へ行くなら、[新幹線]{しんかんせん}が[便利]{べんり}ですよ。\nA: I’m going to Osaka at the weekend.\nB: If you’re going to Osaka, the bullet train is convenient.\n\nラーメンなら、[駅]{えき}の[前]{まえ}の[店]{みせ}がおいしいですよ。\nIf it’s ramen you want, the place in front of the station is good.\n\n[寒]{さむ}いなら、[窓]{まど}を[閉]{し}めましょうか。\n(Since you say you’re) cold, shall I close the window?", label:"なら"},
+      {ex:"A：[週末]{しゅうまつ}、[大阪]{おおさか}へ行きます。\nB：[大阪]{おおさか}へ行くなら、[新幹線]{しんかんせん}が[便利]{べんり}ですよ。\nA: I’m going to Osaka on the weekend.\nB: If you’re going to Osaka, the bullet train is convenient.\n\nラーメンなら、[駅]{えき}の[前]{まえ}の[店]{みせ}がおいしいですよ。\nIf it’s ramen you want, the place in front of the station is good.\n\n[寒]{さむ}いなら、[窓]{まど}を[閉]{し}めましょうか。\n(Since you say you’re) cold, shall I close the window?", label:"なら"},
       "なら has one more special power: the result can happen **before** the condition. With たら, the condition always comes first.",
       {fig:'<svg viewBox="0 0 340 222"><defs><marker id="e3u6a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Which happens first?</text><text class="s" x="16" y="48">りょこうに いくなら、ガイドブックを かいます。</text><path class="d-ink" d="M16 92H324" stroke-width="2" marker-end="url(#e3u6a3)"/><text class="s" x="318" y="110" text-anchor="end">time</text><rect class="d-gold" x="24" y="62" width="128" height="22" rx="6" stroke-width="2"/><text class="s" x="88" y="78" text-anchor="middle">1 buy a guidebook</text><rect class="d-lup" x="186" y="62" width="120" height="22" rx="6" stroke-width="2"/><text class="s" x="246" y="78" text-anchor="middle">2 the trip</text><text class="s" x="16" y="150">りょこうに いったら、おみやげを かいます。</text><path class="d-ink" d="M16 194H324" stroke-width="2" marker-end="url(#e3u6a3)"/><text class="s" x="318" y="212" text-anchor="end">time</text><rect class="d-lup" x="24" y="164" width="128" height="22" rx="6" stroke-width="2"/><text class="s" x="88" y="180" text-anchor="middle">1 the trip</text><rect class="d-gold" x="186" y="164" width="120" height="22" rx="6" stroke-width="2"/><text class="s" x="246" y="180" text-anchor="middle">2 buy souvenirs</text></svg>', alt:"Two timelines. Top: りょこうに いくなら、ガイドブックを かいます. First, buy a guidebook; second, the trip. Bottom: りょこうに いったら、おみやげを かいます. First, the trip; second, buy souvenirs.", cap:"[旅行]{りょこう}に行くなら、ガイドブックを[買]{か}います: if I’m going on a trip, I’ll buy a guidebook (before I go). [旅行]{りょこう}に行ったら、おみやげを[買]{か}います: when I go on the trip, I’ll buy souvenirs (while I’m there)."}
     ]},
@@ -1155,7 +1155,7 @@ ICA.addUnit({
       "**Casual and polite.** Friends say [行]{い}こう, 行こうよ, [手伝]{てつだ}おうか and 行かない？. With teachers, bosses and new people, use ～ましょう, ～ましょうか and ～ませんか.",
       "**～ようと[思]{おも}う.** ～ようと[思]{おも}います states an intention now; ～ようと[思]{おも}っています is an intention held for a while, and is required for other people: あおいさんは[車]{くるま}を[買]{か}おうと[思]{おも}っています. Don’t confuse it with 行くと[思]{おも}います, “I think (someone) will go”.",
       "**つもり** follows the dictionary form or the ない-form: 行くつもりです, 行かないつもりです. ～つもりはありません (“no intention of”) is stronger. The past ～つもりでした often means a plan that didn’t happen.",
-      "**[予定]{よてい}** is for arrangements and timetables: [電車]{でんしゃ}は[三時]{さんじ}に[着]{つ}く[予定]{よてい}です. Only people have つもり.",
+      "**[予定]{よてい}** is for arrangements and schedules: [電車]{でんしゃ}は[三時]{さんじ}に[着]{つ}く[予定]{よてい}です. Only people have つもり.",
       "**A rough scale:** ～たい (wish) → ～ようと[思]{おも}っている (intention) → つもり (firm plan) → [予定]{よてい} (arranged). The middle two overlap a lot."
      ],
      pro:[
@@ -1455,7 +1455,7 @@ ICA.addUnit({
      {t:"[一緒]{いっしょ}に食べこう。", why:"The お row + う rule is for godan verbs. 食べる is ichidan: 食べよう."}
    ]},
    {id:"e3u6-q18", lesson:"e3u6-l2", level:3, q:"A notice says the meeting is scheduled to start at three. Which sentence describes that?", options:[
-     {t:"[会議]{かいぎ}は[三時]{さんじ}に[始]{はじ}まる[予定]{よてい}です。", ok:true, why:"[予定]{よてい} is for arrangements and timetables."},
+     {t:"[会議]{かいぎ}は[三時]{さんじ}に[始]{はじ}まる[予定]{よてい}です。", ok:true, why:"[予定]{よてい} is for arrangements and schedules."},
      {t:"[会議]{かいぎ}は[三時]{さんじ}に[始]{はじ}まるつもりです。", why:"つもり is a person’s intention. A meeting can’t intend anything."},
      {t:"[会議]{かいぎ}は[三時]{さんじ}に[始]{はじ}まろうと[思]{おも}います。", why:"This makes the meeting think about starting. Only people have intentions; use [予定]{よてい}."},
      {t:"[会議]{かいぎ}は[三時]{さんじ}に[始]{はじ}まりたいです。", why:"～たい is a person’s wish. Use [予定]{よてい} for schedules."}

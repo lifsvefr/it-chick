@@ -79,7 +79,7 @@ ICA.addUnit({
    try:[
     {id:"e2u5-l1-x1", type:"sort", q:"Does each situation, as described, cross borders (an international relations matter) or stay within one country?", buckets:["Crosses borders","Stays within one country"], items:[
       {t:"Two countries agree how to share the water of a river that flows through both.", b:0, why:"Two governments negotiating over a shared resource is a classic international relations matter."},
-      {t:"A town council changes its bus timetable.", b:1, why:"One local authority deciding a local service, with no other country involved."},
+      {t:"A town council changes its bus schedule.", b:1, why:"One local authority deciding a local service, with no other country involved."},
       {t:"A phone maker buys chips from three countries and assembles them in a fourth.", b:0, why:"A company moving goods across several borders under trade rules: business, but international."},
       {t:"A national parliament moves the start of the school year by a week.", b:1, why:"A domestic decision about a domestic institution. Nothing here involves another country."},
       {t:"A new virus spreads from one country to dozens of others within weeks.", b:0, why:"Disease crossing borders raises questions of cooperation, travel rules and global health organizations."},

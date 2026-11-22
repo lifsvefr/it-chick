@@ -338,7 +338,7 @@ ICA.addUnit({
    learn:[
     {h:"Neighbors who share a well", body:[
       {lead:"Go back to the neighborhood with no police, but add one detail: everyone draws water from the same well."},
-      "Now the neighbors have a reason to talk. They agree on a timetable, fix the pump together and keep a notebook of who has paid for repairs. Nobody forces them. The well, the notebook and the habit of meeting change what is sensible. Cheating on the timetable would cost you your neighbors’ cooperation next week.",
+      "Now the neighbors have a reason to talk. They agree on a schedule, fix the pump together and keep a notebook of who has paid for repairs. Nobody forces them. The well, the notebook and the habit of meeting change what is sensible. Cheating on the schedule would cost you your neighbors’ cooperation next week.",
       "That is the heart of **[[liberalism-ir|liberalism]]** in IR. Liberals accept that there is no world government. But they argue that cooperation is possible and common, and that it can grow. Three things make the difference:",
       {list:[
         "**Interdependence**: trade, investment, travel and communication tie societies together and raise the cost of conflict.",
@@ -973,7 +973,7 @@ ICA.addUnit({
     summary:"The family of theories holding that interdependence, institutions and domestic politics can make cooperation common and conflict less likely, even without a world government.",
     levels:{
      starter:[
-      "Picture neighbors with no police who all draw water from one well. They agree a timetable, share repairs and keep a notebook of who has paid. No one forces them; the shared well and the habit of meeting make cooperation sensible.",
+      "Picture neighbors with no police who all draw water from one well. They agree a schedule, share repairs and keep a notebook of who has paid. No one forces them; the shared well and the habit of meeting make cooperation sensible.",
       "Liberalism in IR says world politics can work like that. There is no world government, but trade, travel and communication tie countries together, international organizations and rules make promises easier to keep, and what happens inside countries, such as elections, shapes how they behave abroad.",
       {warn:"“Liberal” here is a theory of world politics, not a political party or a view on domestic issues."},
       {key:"Liberalism: cooperation is possible, and ties and rules make it easier."},

@@ -92,7 +92,7 @@ ICA.addUnit({
     {h:"Plan, fix, verify, prevent", body:[
       "Once a test confirms the cause, **plan** the fix before doing it. Ask: what could this fix break or delete? Do I need a password, a recovery key or an administrator account? Is this a work or school device, where IT staff should make the change? If the answer is beyond you, [[escalation|escalate]]: hand the problem, with your notes, to someone with more access or skill.",
       "After the fix, **verify full system functionality**. That means more than “the error is gone”. Do the original task again. Check that related things still work: if you reinstalled a printer, print from two different apps; if you changed Wi-Fi settings, check that other devices still connect.",
-      "Then think about **prevention**. If a full drive caused the problem, turn on automatic cleanup. If a cheap cable caused it, label or bin it. If an update fixed it, make sure updates are automatic.",
+      "Then think about **prevention**. If a full drive caused the problem, turn on automatic cleanup. If a cheap cable caused it, label it or throw it out. If an update fixed it, make sure updates are automatic.",
       {ex:"Amara’s printer stopped printing from her laptop (step 1: other family laptops print fine, so the scope is her laptop; she changed nothing she can think of).\nTheory: a stuck job in the print queue. Test: she opens the queue and sees one job marked “Error”. Theory confirmed.\nPlan and fix: cancel that job (nothing else is lost). She cancels it.\nVerify: she prints a test page, then a document from another app. Both work.\nPrevent: she notes that the error happened when the printer ran out of paper mid-job.\nDocument: one line in her notes file, with the date.", label:"Worked example: the whole method in five minutes"}
     ]},
     {h:"Document as you go", body:[
@@ -198,7 +198,7 @@ ICA.addUnit({
         ["Lights, fan or sounds, but a black screen","The device runs but you can’t see it","Brightness, external monitor power, cable and input, sleep mode"],
         ["It starts, then stops, freezes or restarts in a loop","Something goes wrong while the system loads","Unplug accessories, safe mode, recovery tools (next section)"]
       ]},
-      "For **no power**, check the power chain one link at a time: the outlet (try a lamp in it), the power strip’s switch, the cable, the charger, the port. Swap in ones you know work. A completely flat battery may need time: Apple advises charging an iPhone that won’t turn on for an hour before trying again, or for 30 minutes if a low-battery symbol appears.",
+      "For **no power**, check the power chain one link at a time: the outlet (try a lamp in it), the power strip’s switch, the cable, the charger, the port. Swap in ones you know work. A completely dead battery may need time: Apple advises charging an iPhone that won’t turn on for an hour before trying again, or for 30 minutes if a low-battery symbol appears.",
       "Next, try a **forced restart**. Holding the power button for about 10 seconds turns off most stuck computers; Apple gives this step for Macs that won’t turn on, and suggests disconnecting accessories, because a faulty one can stop a computer starting. Phones and Chromebooks have their own combinations:",
       {table:[
         ["Device","Forced restart"],
@@ -480,9 +480,9 @@ ICA.addUnit({
       {t:"“OneDrive is full. Files can’t sync.”", b:1, why:"The OneDrive account’s quota is used up, so changes can’t upload."}
     ]},
     {id:"t1u7-l3-x5", type:"spot", q:"Lucía’s Downloads folder has these files. She isn’t expecting any parcel deliveries. Tap the ones she shouldn’t double-click (risky, suspicious or unfinished).", ask:"shouldn’t be double-clicked", mono:true, parts:[
-      {t:"holiday-photos.zip", flag:false, why:"A normal compressed folder. Extract it to see the photos (Unit 2)."},
+      {t:"vacation-photos.zip", flag:false, why:"A normal compressed folder. Extract it to see the photos (Unit 2)."},
       "\n", {t:"invoice_0423.pdf.exe", flag:true, why:"The real extension is `.exe`: a Windows program pretending to be a PDF. Delete it; opening it could install malware."},
-      "\n", {t:"timetable.pdf", flag:false, why:"An ordinary PDF. Nothing suspicious in the name."},
+      "\n", {t:"schedule.pdf", flag:false, why:"An ordinary PDF. Nothing suspicious in the name."},
       "\n", {t:"recipe-book.epub.part", flag:true, why:"`.part` marks an unfinished download. It won’t open properly; download it again."},
       "\n", {t:"scan_2026-11-02.jpg", flag:false, why:"A normal image file with a sensible date in the name."},
       "\n", {t:"delivery_label.html", flag:true, why:"She isn’t expecting a parcel, and an unexpected `.html` “label” is a common phishing trick: it opens as a web page, often a fake sign-in page. Delete it."}
@@ -983,7 +983,7 @@ ICA.addUnit({
      starter:[
       "“It won’t turn on” can mean three things:",
       {list:["**No power at all:** no lights, fan, sound or vibration.","**Power but a black screen:** lights or fan come on, but you see nothing.","**It starts, then stops**, freezes or restarts in a loop."]},
-      "For **no power**, check the outlet, the power strip switch, the cable and the charger, swapping in ones you know work. Let a flat battery charge for a while: Apple suggests an hour for an iPhone that won’t turn on. Then hold the power button for about 10 seconds and press it again.",
+      "For **no power**, check the outlet, the power strip switch, the cable and the charger, swapping in ones you know work. Let a dead battery charge for a while: Apple suggests an hour for an iPhone that won’t turn on. Then hold the power button for about 10 seconds and press it again.",
       "For a **black screen**, check brightness and, for a monitor, its power, cable and input setting.",
       {warn:"Stop if there’s smoke, a burning smell, a swollen battery or liquid damage. Unplug it if it’s safe to, and get it repaired."}
      ],

@@ -25,7 +25,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"A club with a rulebook", body:[
-      {lead:"Picture a residents’ association for a huge apartment block. Every flat is independent and nobody is the landlord. But the residents have signed a shared rulebook, meet in one hall and run some shared services."},
+      {lead:"Picture a residents’ association for a huge apartment block. Every apartment is independent and nobody is the landlord. But the residents have signed a shared rulebook, meet in one hall and run some shared services."},
       "That is roughly what the **United Nations** is: an [[intergovernmental-organization|intergovernmental organization]] whose members are [[state|states]]. Its rulebook is the [[un-charter|UN Charter]], a treaty signed in San Francisco on **26 June 1945**. It came into force on **24 October 1945**, now celebrated as United Nations Day. There were 51 original members; today there are **193**.",
       "The UN was built in the shadow of the Second World War and of a failure. The **League of Nations** (founded 1920) had not stopped aggression in the 1930s. Examples are Japan’s invasion of Manchuria in 1931 and Italy’s invasion of Ethiopia in 1935. The United States never joined it. The UN’s designers wanted an organization the great powers would join and stay in.",
       "Article 1 of the Charter lists the UN’s purposes. They include keeping international peace and security, and developing friendly relations based on equal rights and the [[self-determination]] of peoples. They also include cooperating on economic, social and humanitarian problems and on human rights.",

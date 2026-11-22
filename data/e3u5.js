@@ -71,7 +71,7 @@ ICA.addUnit({
             "Three reminders from Unit 3. The ない-form of a godan verb uses the a-sound (with う → わ). The た-form is built exactly like the [[te-form|て-form]], so 行く gives 行った. And the ない-form ends in い, so it changes like an い-adjective: ない → なかった. The glossary entries are [[nai-form]] and [[ta-form]].",
             "Watch [来]{く}る: the kanji keeps its shape but changes its reading, こ in [来]{こ}ない and [来]{こ}なかった, き in [来]{き}た. And ある has no あらない: its negative is simply ない.",
             {
-              ex:"[毎朝]{まいあさ}、コーヒーを[飲]{の}む。\nI drink coffee every morning.\n\n[昨日]{きのう}は[何]{なに}も[買]{か}わなかった。\nI didn’t buy anything yesterday.\n\n[週末]{しゅうまつ}は[友]{とも}だちが[来]{く}る。\nA friend is coming at the weekend.",
+              ex:"[毎朝]{まいあさ}、コーヒーを[飲]{の}む。\nI drink coffee every morning.\n\n[昨日]{きのう}は[何]{なに}も[買]{か}わなかった。\nI didn’t buy anything yesterday.\n\n[週末]{しゅうまつ}は[友]{とも}だちが[来]{く}る。\nA friend is coming on the weekend.",
               label:"Plain verbs at the end of a sentence"
             }
           ]
@@ -523,7 +523,7 @@ ICA.addUnit({
         {
           id:"e3u5-l2-x2",
           type:"mcq",
-          q:"Mariya is a second-year in her university’s English club. A third-year member asks her: 「[週末]{しゅうまつ}、[練習]{れんしゅう}に[来]{く}る？」 (Are you coming to practice at the weekend?) What is the best reply?",
+          q:"Mariya is a second-year in her university’s English club. A third-year member asks her: 「[週末]{しゅうまつ}、[練習]{れんしゅう}に[来]{く}る？」 (Are you coming to practice on the weekend?) What is the best reply?",
           options:[
             {
               t:"はい、行きます。",
@@ -1313,7 +1313,7 @@ ICA.addUnit({
         {
           id:"e3u5-l4-x6",
           type:"spot",
-          q:"Cheska describes a holiday photo. Tap each part with a **grammar mistake**.",
+          q:"Cheska describes a vacation photo. Tap each part with a **grammar mistake**.",
           ask:"has a grammar mistake",
           parts:[
             {t:"これは[去]{きょ}年行った[海]{うみ}の[写真]{しゃしん}です。", flag:false, why:"Correct: [去]{きょ}年行った describes [海]{うみ}."},
@@ -1339,7 +1339,7 @@ ICA.addUnit({
         {
           id:"e3u5-l4-x7",
           type:"mcq",
-          q:"You can’t remember the word for “hair dryer”. Which description would a shop assistant understand?",
+          q:"You can’t remember the word for “hair dryer”. Which description would a salesclerk understand?",
           options:[
             {
               t:"[髪]{かみ}を[乾]{かわ}かす[機械]{きかい}",
@@ -1954,7 +1954,7 @@ ICA.addUnit({
          "Turn three of them into questions you could ask a friend: ～たことがありますか。"
        ], write:"…たことがあります。…たことがありません。…"},
        {t:"Your weekend with たり", how:[
-         "Write two sentences about what you usually do at weekends with ～たり～たりします.",
+         "Write two sentences about what you usually do on weekends with ～たり～たりします.",
          "Write one about last weekend with ～たり～たりしました.",
          "Say one of them again in casual speech, as you would to a friend: ～たり～たりしてる."
        ], write:"[週末]{しゅうまつ}は…"},
@@ -2951,7 +2951,7 @@ ICA.addUnit({
       q:"You are in a clothes shop and want to ask the assistant if they have this shirt in size M. Which is best?",
       options:[
         {t:"すみません、これのMサイズはありますか。", ok:true, why:"Shop staff are outside your circle, so you use polite speech."},
-        {t:"これのMサイズ、ある？", why:"Correct casual Japanese, but too familiar for a shop assistant you don’t know."},
+        {t:"これのMサイズ、ある？", why:"Correct casual Japanese, but too familiar for a salesclerk you don’t know."},
         {t:"これのMサイズはあるか。", why:"Plain with a bare か: rough, and too familiar for a shop."},
         {t:"これのMサイズはあるですか。", why:"です doesn’t follow a verb. The polite form of ある is あります."}
       ]

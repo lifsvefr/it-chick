@@ -681,7 +681,7 @@ ICA.addUnit({
         "Is it all in **である style**, with written words rather than spoken ones ({{written-vs-spoken-japanese}})?",
         "Is it within the **字数** (character count)?"
       ]},
-      "Japanese length limits are counted in characters (字). Punctuation marks such as 、 and 。 and brackets such as 「」 usually count as one character each. Word processors count characters for you; check which count your teacher means. Many teachers expect you to use most of the limit, so a 400字以内 summary of 150 characters may lose marks. If you are not sure, ask.",
+      "Japanese length limits are counted in characters (字). Punctuation marks such as 、 and 。 and brackets such as 「」 usually count as one character each. Word processors count characters for you; check which count your teacher means. Many teachers expect you to use most of the limit, so a 400字以内 summary of 150 characters may lose points. If you are not sure, ask.",
       {warn:"AI summarizing tools can drop hedges, add claims the text doesn’t make, and miss the main point of a long argument. Follow your course’s rules on AI, check any tool’s output against the original, and never hand in a machine-made summary as your own ({{japanese-plagiarism-ai}})."},
       {key:"A good 要約 is the author’s argument, shorter, in your own words and in である style, with the author’s hedges intact and your opinion left out."}
     ]}

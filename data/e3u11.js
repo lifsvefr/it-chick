@@ -495,7 +495,7 @@ ICA.addUnit({
          "徒",
          "on foot, junior",
          "On ト",
-         "[生]{せい}[徒]{と} pupil; student"
+         "[生]{せい}[徒]{と} student"
         ],
         [
          "客",
@@ -555,7 +555,7 @@ ICA.addUnit({
       },
       "Partner words follow [[uchi-soto]], as family words did at N4. For your own partner you say [夫]{おっと} (husband) and [妻]{つま} (wife). For someone else’s, you say ご主人 and [奥]{おく}さん. A married couple is [夫]{ふう}[婦]{ふ}, with the reading フウ. After a family name, [夫]{ふ}[妻]{さい} is a formal way to say “Mr and Mrs”: [佐藤]{さとう}[夫]{ふ}[妻]{さい}.",
       "Some words here have a second use. [彼]{かれ} (he) and [彼]{かの}女 (she) also mean boyfriend and girlfriend, so Japanese speakers often use the person’s name instead. 〜[君]{くん} goes after the names of boys and younger men, often from a teacher, a boss or a friend; [君]{きみ} (you) is direct: some speakers use it to close friends or juniors, and it is common in songs, but avoid it with anyone above you. [皆]{みな}さん (everyone) opens many speeches and emails: [皆]{みな}さん、こんにちは。",
-      "Four kanji make words for people in society: [民]{みん} (people of a place: [市]{し}[民]{みん}, 住[民]{みん}), [師]{し} (an expert: 医[師]{し}, a formal word for doctor), [徒]{と} (a pupil: 生[徒]{と}) and [官]{かん} (an official: [警]{けい}[官]{かん}, police officer)."
+      "Four kanji make words for people in society: [民]{みん} (people of a place: [市]{し}[民]{みん}, 住[民]{みん}), [師]{し} (an expert: 医[師]{し}, a formal word for doctor), [徒]{と} (a student: 生[徒]{と}) and [官]{かん} (an official: [警]{けい}[官]{かん}, police officer)."
      ]
     },
     {
@@ -2040,12 +2040,12 @@ ICA.addUnit({
     {
      "id": "e3u11-l2-x4",
      "type": "mcq",
-     "q": "Dewi is looking for a flat after the flood. Which word is the monthly rent she pays?",
+     "q": "Dewi is looking for an apartment after the flood. Which word is the monthly rent she pays?",
      "options": [
       {
        "t": "[家]{や}[賃]{ちん}",
        "ok": true,
-       "why": "Right. [家]{や}[賃]{ちん} is rent for a flat or house: 家 (house) + 賃 (fee, wages)."
+       "why": "Right. [家]{や}[賃]{ちん} is rent for an apartment or house: 家 (house) + 賃 (fee, wages)."
       },
       {
        "t": "[交]{こう}通[費]{ひ}",
@@ -4565,7 +4565,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "[昨]{さく}年 is the formal word for last year (in speech, 去年), and [昨日]{さくじつ} (the same kanji as きのう) the formal word for yesterday, used in business. 時[刻]{こく} is a clock time, as in a timetable: 時[刻]{こく}[表]{ひょう}. 〜[期]{き} is a period: 学[期]{き} (school term), [定]{てい}[期]{き}[券]{けん} (season ticket)."
+      "[昨]{さく}年 is the formal word for last year (in speech, 去年), and [昨日]{さくじつ} (the same kanji as きのう) the formal word for yesterday, used in business. 時[刻]{こく} is a clock time, as in a schedule: 時[刻]{こく}[表]{ひょう}. 〜[期]{き} is a period: 学[期]{き} (school term), [定]{てい}[期]{き}[券]{けん} (season ticket)."
      ]
     },
     {
@@ -5044,7 +5044,7 @@ ICA.addUnit({
         "**Every day (15 to 20 minutes):** the Kanji Lab’s reviews first, then today’s new cards. Start with the N3 kanji deck at 10 a day. When it is going well, add the N3 words deck too. The Lab’s setting for new cards (5, 10 or 20) applies to each deck, so if two decks at 10 feel like too much, switch it to 5.",
         "**Every week:** read one short real text (a notice, a news story for learners, a blog) and collect five new words with N3 kanji. The next unit has reading strategies and free sources ({{reading-news-japanese}}).",
         "**Every month:** go back to your part pages (忄, 扌, 辶…), your prefix notebook and your [四]{よ}[字]{じ}[熟]{じゅく}[語]{ご} page, and add what you met.",
-        "**Before the JLPT:** the N3 test checks reading kanji, choosing the right kanji for a word, and using words in context; the next unit explains the sections and the pass marks ({{jlpt-n3-overview}})."
+        "**Before the JLPT:** the N3 test checks reading kanji, choosing the right kanji for a word, and using words in context; the next unit explains the sections and the passing scores ({{jlpt-n3-overview}})."
        ]
       },
       {
@@ -5407,9 +5407,9 @@ ICA.addUnit({
       {t:"「この町は国[際]{さい}[化]{か}な町です。」", why:"〜[化]{か} words are nouns that take する. They can’t take な."},
       {t:"「この町は国[際]{さい}[性]{せい}しています。」", why:"〜[性]{せい} makes a noun (a quality), as in 女[性]{せい}. It doesn’t make a verb."},
       {t:"「この町は国[際]{さい}[化]{か}しています。」", ok:true, why:"〜[化]{か} words take する: 国[際]{さい}[化]{か}する, “become international”."}]},
-    {id:"e3u11-cp10", lesson:"e3u11-l4", level:2, q:"Kaito helps a friend choose a flat. One is near the station but noisy; the other is quiet but far from the shops. Which idiom fits? 「どっちも（　）だね。」", options:[
-      {t:"[一長一短]{いっちょういったん}", ok:true, why:"One strong point, one weak point: each flat has a good side and a bad side."},
-      {t:"[一石二鳥]{いっせきにちょう}", why:"One stone, two birds: one action gives two good results. Here each flat has one good and one bad point."},
+    {id:"e3u11-cp10", lesson:"e3u11-l4", level:2, q:"Kaito helps a friend choose an apartment. One is near the station but noisy; the other is quiet but far from the shops. Which idiom fits? 「どっちも（　）だね。」", options:[
+      {t:"[一長一短]{いっちょういったん}", ok:true, why:"One strong point, one weak point: each apartment has a good side and a bad side."},
+      {t:"[一石二鳥]{いっせきにちょう}", why:"One stone, two birds: one action gives two good results. Here each apartment has one good and one bad point."},
       {t:"[十人十色]{じゅうにんといろ}", why:"Ten people, ten colors: everyone is different. It is about people, not about choosing between things."},
       {t:"[自業自得]{じごうじとく}", why:"You reap what you sow: a bad result that is your own fault. Nobody has done anything wrong here."}]},
     {id:"e3u11-cp11", lesson:"e3u11-l5", level:1, q:"Cheska hears that her friend’s plane has landed safely. She says 「ああ、ほっとした。」 How does she feel?", options:[
@@ -6437,7 +6437,7 @@ ICA.addUnit({
     },
     {
      "t": "[家]{や}[賃]{ちん}",
-     "why": "[家]{や}[賃]{ちん} is rent for a flat or house."
+     "why": "[家]{や}[賃]{ちん} is rent for an apartment or house."
     },
     {
      "t": "入場料",
@@ -6778,7 +6778,7 @@ ICA.addUnit({
    "id": "e3u11-q27",
    "lesson": "e3u11-l3",
    "level": 2,
-   "q": "Dewi writes: 「来月、新しいアパートに（　）ます」 (Next month I’m moving to a new flat). Which verb fits?",
+   "q": "Dewi writes: 「来月、新しいアパートに（　）ます」 (Next month I’m moving to a new apartment). Which verb fits?",
    "options": [
     {
      "t": "[引]{ひ}っ[越]{こ}し",

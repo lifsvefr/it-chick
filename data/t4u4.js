@@ -111,7 +111,7 @@ ICA.addUnit({
       {t:"When: (2023).", why:"APA puts the date second, in brackets. That’s what makes it author-date."},
       {t:"What: Shade trees and classroom temperatures: Evidence from twelve schools.", why:"The article title comes third, in sentence case."},
       {t:"Where: Journal of Schoolyard Ecology, 14(2), 45–62.", why:"Then the source: journal, volume, issue and pages."},
-      {t:"How to get there: `https://doi.org/10.5555/jse.142`", why:"The DOI link comes last, with no full stop after it in APA."}
+      {t:"How to get there: `https://doi.org/10.5555/jse.142`", why:"The DOI link comes last, with no period after it in APA."}
     ]},
     {id:"t4u4-l1-x5", type:"mcq", q:"Kenji’s source shows “DOI: 10.5555/hh.77”. How should he write it in APA 7th, MLA 9th or Chicago 18th?", options:[
       {t:"https://doi.org/10.5555/hh.77", ok:true, why:"All three current styles write the DOI as a full https://doi.org/ link."},
@@ -141,11 +141,11 @@ ICA.addUnit({
    learn:[
     {h:"Author, date, title, source", body:[
       {lead:"An APA reference answers the four questions in a fixed order: Who. (When). What. Where."},
-      {fig:'<svg viewBox="0 0 340 330"><rect class="d-rose" x="10" y="10" width="320" height="64" rx="8" stroke-width="2"/><text x="22" y="32" class="s">1 · Author (who)</text><text x="22" y="56">Okafor, A. N., Ramírez, L., &amp; Watanabe, K.</text><rect class="d-gold" x="10" y="84" width="320" height="56" rx="8" stroke-width="2"/><text x="22" y="106" class="s">2 · Date (when), in brackets</text><text x="22" y="128">(2023).</text><rect class="d-lup" x="10" y="150" width="320" height="76" rx="8" stroke-width="2"/><text x="22" y="172" class="s">3 · Title (what), sentence case</text><text x="22" y="194">Shade trees and classroom temperatures:</text><text x="22" y="214">Evidence from twelve schools.</text><rect class="d-sage" x="10" y="236" width="320" height="84" rx="8" stroke-width="2"/><text x="22" y="258" class="s">4 · Source (where): journal italic, volume italic</text><text x="22" y="280">Journal of Schoolyard Ecology, 14(2), 45–62.</text><text x="22" y="304">https://doi.org/10.5555/jse.142</text></svg>', alt:"An APA journal article reference split into four stacked boxes: author names with initials, the year in brackets, the article title in sentence case, and the source (journal name, volume, issue, pages and DOI link).", cap:"Each element ends with a full stop, except the DOI or URL at the very end."},
+      {fig:'<svg viewBox="0 0 340 330"><rect class="d-rose" x="10" y="10" width="320" height="64" rx="8" stroke-width="2"/><text x="22" y="32" class="s">1 · Author (who)</text><text x="22" y="56">Okafor, A. N., Ramírez, L., &amp; Watanabe, K.</text><rect class="d-gold" x="10" y="84" width="320" height="56" rx="8" stroke-width="2"/><text x="22" y="106" class="s">2 · Date (when), in brackets</text><text x="22" y="128">(2023).</text><rect class="d-lup" x="10" y="150" width="320" height="76" rx="8" stroke-width="2"/><text x="22" y="172" class="s">3 · Title (what), sentence case</text><text x="22" y="194">Shade trees and classroom temperatures:</text><text x="22" y="214">Evidence from twelve schools.</text><rect class="d-sage" x="10" y="236" width="320" height="84" rx="8" stroke-width="2"/><text x="22" y="258" class="s">4 · Source (where): journal italic, volume italic</text><text x="22" y="280">Journal of Schoolyard Ecology, 14(2), 45–62.</text><text x="22" y="304">https://doi.org/10.5555/jse.142</text></svg>', alt:"An APA journal article reference split into four stacked boxes: author names with initials, the year in brackets, the article title in sentence case, and the source (journal name, volume, issue, pages and DOI link).", cap:"Each element ends with a period, except the DOI or URL at the very end."},
       "The list is titled **References** (bold, centered), sorted alphabetically by the first author’s surname, double-spaced, and each entry has a [[hanging-indent|hanging indent]]: the first line starts at the margin and the following lines are indented 0.5 inch (1.27 cm), so surnames stand out.",
       {h:"Authors"},
       {list:[
-        "Surname, then initials with full stops and spaces: `Okafor, A. N.`",
+        "Surname, then initials with periods and spaces: `Okafor, A. N.`",
         "Separate authors with commas and put `&` before the last one, even with two authors: `Okafor, A. N., & Ramírez, L.`",
         "List **up to 20** authors. With 21 or more, list the first 19, then an ellipsis (`. . .`), then the final author.",
         "An organization can be the author: `World Health Organization.` Write its full name.",
@@ -184,12 +184,12 @@ ICA.addUnit({
       {ex:"Regional Health Observatory. (2025). *Clinic waiting times in rural districts* (Report No. 7). https://example.org/report7", label:"Report by an organization", mono:true},
       "A report number goes in brackets after the title, not in italics. When the author and publisher are the same organization, the publisher is left out. If a government department published a report written by a named agency within it, the agency is the author and the department is the publisher.",
       {lab:"cl-apa-report", t:"Practice: an APA report"},
-      {tip:"No URL protocol rules to remember: copy the address exactly as it appears in the browser, including https://, and don’t add a full stop after it."}
+      {tip:"No URL protocol rules to remember: copy the address exactly as it appears in the browser, including https://, and don’t add a period after it."}
     ]},
     {h:"In-text citations", body:[
       "Every APA in-text citation has the author’s surname and the year. There are two ways to write it:",
       {table:[["Authors","Parenthetical","Narrative"],["One","(Haddad, 2021)","Haddad (2021)"],["Two","(Okafor & Ramírez, 2023)","Okafor and Ramírez (2023)"],["Three or more","(Okafor et al., 2023)","Okafor et al. (2023)"],["Organisation","(Coastal Water Trust, 2024)","Coastal Water Trust (2024)"]]},
-      "Use `&` inside brackets and `and` in your sentence. [[et-al|“Et al.”]] means “and others” (a full stop after “al.”, none after “et”). In APA 7th it’s used for three or more authors **from the first citation**. Two-author works always show both names.",
+      "Use `&` inside brackets and `and` in your sentence. [[et-al|“Et al.”]] means “and others” (a period after “al.”, none after “et”). In APA 7th it’s used for three or more authors **from the first citation**. Two-author works always show both names.",
       {h:"Page numbers"},
       "A **direct quotation** always needs a location: `(Haddad, 2021, p. 50)` for one page and `(Haddad, 2021, pp. 50–51)` for a range, with an en dash. If there are no page numbers, use a paragraph number, a section name or a timestamp: `(Coastal Water Trust, 2024, para. 3)`. For a paraphrase, page numbers are encouraged (they help readers), but not required.",
       {ex:"Haddad (2021) argued that “mending is a form of attention” (p. 50).\nRepair was once “an ordinary household skill” (Haddad, 2021, p. 12).", label:"Quotations with page numbers", mono:true},
@@ -217,10 +217,10 @@ ICA.addUnit({
       "Run this quick check over each entry:",
       {ol:[
         "Authors: surname, initials, commas, `&` before the last; all of them up to 20.",
-        "Date in brackets, followed by a full stop.",
+        "Date in brackets, followed by a period.",
         "Title in sentence case; proper nouns still capitalized; italic only if it stands alone.",
         "Journal in title case and italic, volume italic, issue in plain brackets, page range with an en dash.",
-        "DOI as `https://doi.org/…`, no full stop after it, no “Retrieved from”, no “DOI:” label.",
+        "DOI as `https://doi.org/…`, no period after it, no “Retrieved from”, no “DOI:” label.",
         "No publisher city; publisher left out if it’s the same as the author.",
         "Every in-text citation matches an entry with the same spelling and year."
       ]},
@@ -231,7 +231,7 @@ ICA.addUnit({
     {id:"t4u4-l2-x1", type:"spot", q:"This APA 7th reference has mistakes. Tap the parts that break APA rules.", ask:"breaks APA 7th", mono:true, parts:[
       {t:"Okafor, A. N., Ramírez, L., & Watanabe, K.", flag:false, why:"Correct: surnames, initials, commas and an ampersand before the last author."},
       " ",
-      {t:"(2023).", flag:false, why:"Correct: year in brackets, then a full stop."},
+      {t:"(2023).", flag:false, why:"Correct: year in brackets, then a period."},
       " ",
       {t:"Shade Trees And Classroom Temperatures.", flag:true, why:"Article titles in APA use sentence case: “Shade trees and classroom temperatures.”"},
       " ",
@@ -260,7 +260,7 @@ ICA.addUnit({
       {t:"In T. Ortega & M. Lin (Eds.),", why:"Then “In”, the editors with initials first, and (Eds.)."},
       {t:"*Communicating health in a crisis* (pp. 33–51).", why:"Then the book title in italics and the chapter’s pages."},
       {t:"Northgate University Press.", why:"Then the publisher, with no city."},
-      {t:"`https://doi.org/10.5555/chc.3`", why:"The DOI link comes last, with no full stop."}
+      {t:"`https://doi.org/10.5555/chc.3`", why:"The DOI link comes last, with no period."}
     ]},
     {id:"t4u4-l2-x5", type:"mcq", q:"Lucía read Mensah’s 2022 chapter, which quotes a 1998 survey by Ferreira. Lucía couldn’t get the survey itself. What goes in her APA reference list?", options:[
       {t:"Only Mensah (2022)", ok:true, why:"Right. The reference list holds what you actually read. In the text she writes (Ferreira, 1998, as cited in Mensah, 2022)."},
@@ -304,7 +304,7 @@ ICA.addUnit({
       {ol:["Author.","Title of source.","Title of container,","Other contributors,","Version,","Number,","Publisher,","Publication date,","Location."]},
       "A **[[mla-container|container]]** is the bigger thing your source sits inside: a journal holds an article, an edited book holds a chapter, a website holds a page. Sometimes there’s a second container, such as the database where you read the journal.",
       {fig:'<svg viewBox="0 0 340 250"><rect class="d-panel" x="10" y="10" width="320" height="230" rx="12" stroke-width="1.5"/><text x="24" y="34" class="s">Container 2 (optional): a database</text><rect class="d-lup" x="26" y="46" width="288" height="180" rx="10" stroke-width="2"/><text x="40" y="70" class="s">Container 1: the journal (italic)</text><text x="40" y="92">Journal of Schoolyard Ecology</text><text x="40" y="112" class="s">vol. 14, no. 2, 2023, pp. 45–62</text><rect class="d-gold" x="42" y="126" width="256" height="86" rx="8" stroke-width="2"/><text x="56" y="150" class="s">The source (in quotation marks)</text><text x="56" y="172">“Shade Trees and Classroom</text><text x="56" y="192">Temperatures …”</text></svg>', alt:"Nested boxes: the article (the source, in quotation marks) sits inside the journal (container 1, in italics, with volume, number, date and pages), which can sit inside a database (an optional second container).", cap:"Source inside container: the source’s title goes in quotation marks, the container’s in italics."},
-      "Punctuation follows the template: a full stop after the author and after the title of the source, commas between the elements of a container, and a full stop at the end of each container."
+      "Punctuation follows the template: a period after the author and after the title of the source, commas between the elements of a container, and a period at the end of each container."
     ]},
     {h:"MLA works-cited patterns", body:[
       {list:[
@@ -312,7 +312,7 @@ ICA.addUnit({
         "**Titles** in title case. Sources that are part of something go in quotation marks; containers and standalone works in italics.",
         "**Editions**: a later edition goes after the title, shortened, then a comma: `*Title*. 2nd ed., Publisher, Year.`",
         "**Numbers and dates**: `vol. 14, no. 2`, then the date. Day month year, with long month names shortened: `5 Mar. 2024`.",
-        "**Location**: pages with `pp.`, or a DOI (preferred) or a URL. DOIs start `https://doi.org/`; for other URLs MLA recommends leaving out `https://`. End the entry with a full stop, even after a DOI or URL.",
+        "**Location**: pages with `pp.`, or a DOI (preferred) or a URL. DOIs start `https://doi.org/`; for other URLs MLA recommends leaving out `https://`. End the entry with a period, even after a DOI or URL.",
         "**Organisation that is both author and publisher**: skip the author and start with the title."
       ]},
       {ex:"Okafor, Adaeze N., et al. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology*, vol. 14, no. 2, 2023, pp. 45–62, https://doi.org/10.5555/jse.142.", label:"MLA: journal article", mono:true},
@@ -342,11 +342,11 @@ ICA.addUnit({
       "The details are almost the same in both; mainly the date moves. Two changes in the 18th edition are worth knowing: for **three or more authors**, notes and author-date citations now use the first author plus “et al.” (the 17th edition waited until four); and the **place of publication** is no longer needed for books (it’s still allowed)."
     ]},
     {h:"Chicago notes and bibliography", body:[
-      "The first time you cite a source, the footnote gives full details, with the author’s name in normal order and commas between parts. Later notes for the same source use a **shortened note**: surname, a short title (up to about four words) and the page. The bibliography entry reverses the first author’s name and uses full stops between parts. (When a paper has a full bibliography, Chicago 18th also allows a shortened note even the first time, so check what your instructor wants.)",
+      "The first time you cite a source, the footnote gives full details, with the author’s name in normal order and commas between parts. Later notes for the same source use a **shortened note**: surname, a short title (up to about four words) and the page. The bibliography entry reverses the first author’s name and uses periods between parts. (When a paper has a full bibliography, Chicago 18th also allows a shortened note even the first time, so check what your instructor wants.)",
       {ex:"1. Samir Haddad, *Repairing Things: A Practical History of Mending* (Riverbend Press, 2021), 50.\n\n2. Haddad, *Repairing Things*, 52.\n\nBibliography:\nHaddad, Samir. *Repairing Things: A Practical History of Mending*. Riverbend Press, 2021.", label:"Chicago notes: a book (full note, shortened note, bibliography)", mono:true},
       {ex:"1. Adaeze N. Okafor et al., “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools,” *Journal of Schoolyard Ecology* 14, no. 2 (2023): 50, https://doi.org/10.5555/jse.142.\n\n2. Okafor et al., “Shade Trees,” 51.\n\nBibliography:\nOkafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology* 14, no. 2 (2023): 45–62. https://doi.org/10.5555/jse.142.", label:"Chicago notes: a journal article", mono:true},
       "Notice: in the note, three authors become “Okafor et al.”, but the bibliography lists all three. The bibliography lists **up to six** authors; with seven or more, list the first three followed by “et al.” The note cites the exact page (50); the bibliography gives the article’s full page range.",
-      "A later edition of a book goes after the title, with a full stop in the bibliography: `Raman, Priya. *Salt and Stone*. 2nd ed. Harbour Light Press, 2021.`",
+      "A later edition of a book goes after the title, with a period in the bibliography: `Raman, Priya. *Salt and Stone*. 2nd ed. Harbour Light Press, 2021.`",
       {lab:"cl-chi-note", t:"Practice: a Chicago footnote for a journal article"},
       {lab:"cl-chi-bib", t:"Practice: a Chicago bibliography entry for a book"},
       {ex:"Mensah, Ama K. “Radio, Rumor and Public Health.” In *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin. Northgate University Press, 2022. https://doi.org/10.5555/chc.3.", label:"Chicago bibliography: a chapter", mono:true},
@@ -406,7 +406,7 @@ ICA.addUnit({
       {t:"“Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.”", why:"The article title in title case and quotation marks."},
       {t:"*Journal of Schoolyard Ecology* 14, no. 2", why:"The journal in italics, then volume and issue."},
       {t:"(2023): 45–62.", why:"The year in brackets, a colon and the full page range."},
-      {t:"`https://doi.org/10.5555/jse.142`.", why:"The DOI link ends the entry, followed by a full stop."}
+      {t:"`https://doi.org/10.5555/jse.142`.", why:"The DOI link ends the entry, followed by a period."}
     ]},
     {id:"t4u4-l3-x6", type:"mcq", q:"A study has eight authors. How does a Chicago 18th **bibliography** list them?", options:[
       {t:"The first three, then “et al.”", ok:true, why:"Chicago 18th lists up to six authors in the bibliography; with seven or more, the first three plus et al."},
@@ -424,7 +424,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Take the three APA references you wrote in Lesson 2 and write them in the other styles. Rewriting the same sources is the fastest way to see what each style changes.", tasks:[
      {t:"Rewrite your three sources in MLA 9th", how:["Use full first names, title case and quotation marks for parts.","Move the year to the end of the container details.","Write an MLA in-text citation for one quotation."], write:"Works Cited (3 entries) and one in-text citation"},
-     {t:"Rewrite one source as a Chicago full note, a shortened note and a bibliography entry", how:["Write the full note (first name first, commas, publication details in brackets).","Write a shortened note for a later page.","Write the bibliography entry (first author reversed, full stops)."], write:"Full note:\nShortened note:\nBibliography:"},
+     {t:"Rewrite one source as a Chicago full note, a shortened note and a bibliography entry", how:["Write the full note (first name first, commas, publication details in brackets).","Write a shortened note for a later page.","Write the bibliography entry (first author reversed, periods)."], write:"Full note:\nShortened note:\nBibliography:"},
      {t:"Insert a real footnote in your word processor", app:{
        ms:["Click where the note number should go (after the punctuation at the end of the sentence).","Choose **References → Insert Footnote** (on Windows also [[kbd:Ctrl]] + [[kbd:Alt]] + [[kbd:F]]).","Type your full note in the footnote area at the bottom of the page."],
        google:["Click where the note number should go.","Choose **Insert → Footnote** (or [[kbd:Ctrl]] + [[kbd:Alt]] + [[kbd:F]]; on a Mac [[kbd:Cmd]] + [[kbd:Option]] + [[kbd:F]]).","Type your full note at the bottom of the page."],
@@ -658,7 +658,7 @@ ICA.addUnit({
       " ",
       {t:"World Health Organization.", flag:true, why:"When the author and publisher are the same organization, APA leaves the publisher out. (Here the author was also wrong, which hid the duplication.)"},
       " ",
-      {t:"https://example.org/report", flag:false, why:"Fine: a URL with no full stop after it."}
+      {t:"https://example.org/report", flag:false, why:"Fine: a URL with no period after it."}
     ]},
     {id:"t4u4-l5-x4", type:"order", q:"Put the steps for citing with Zotero in a word processor in order.", items:[
       {t:"Save the sources to your Zotero library and check their details", why:"Good citations start with good data in the library."},
@@ -715,7 +715,7 @@ ICA.addUnit({
      {t:"`Valdivia, T., & Mehta, R. (2024). “Market Gardens and Household Diets in Lima: A Two-Year Study.” *Journal of Urban Food Systems, 9*(3), 112–130. https://doi.org/10.5555/jufs.93`", why:"Quotation marks and title case for an article title are MLA and Chicago habits. APA writes article titles plain, in sentence case: Market gardens and household diets in Lima: A two-year study."},
      {t:"`Valdivia, T., and Mehta, R. (2024). Market gardens and household diets in Lima: A two-year study. *Journal of Urban Food Systems, 9*(3), 112–130. doi:10.5555/jufs.93`", why:"APA uses `&` before the last author in the list, and writes a DOI as a link beginning `https://doi.org/`, not `doi:`."},
      {t:"`Valdivia, T., & Mehta, R. (2024). Market gardens and household diets in Lima: A two-year study. *Journal of urban food systems*, 9(3), 112–130. https://doi.org/10.5555/jufs.93`", why:"Journal names keep title case in APA, and the volume number is italic together with the journal name."},
-     {t:"`Valdivia, T., & Mehta, R. (2024). Market gardens and household diets in Lima: A two-year study. *Journal of Urban Food Systems, 9*(3), 112–130. https://doi.org/10.5555/jufs.93`", ok:true, why:"Initials, `&`, year in brackets, sentence-case article title (Lima kept as a proper noun), italic journal and volume, plain issue in brackets, en dash in the pages, DOI link with no full stop."}]},
+     {t:"`Valdivia, T., & Mehta, R. (2024). Market gardens and household diets in Lima: A two-year study. *Journal of Urban Food Systems, 9*(3), 112–130. https://doi.org/10.5555/jufs.93`", ok:true, why:"Initials, `&`, year in brackets, sentence-case article title (Lima kept as a proper noun), italic journal and volume, plain issue in brackets, en dash in the pages, DOI link with no period."}]},
    {id:"t4u4-cp04", lesson:"t4u4-l2", level:2, q:"A 2025 web page titled “Keeping chickens in small yards” names no author and no responsible organization. Which APA 7th in-text citation is correct? (Asterisks mark italics.)", options:[
      {t:"`(Anonymous, 2025)`", why:"APA uses “Anonymous” only when a work is actually signed that way. Otherwise the title moves into the author position."},
      {t:"`(*Keeping Chickens in Small Yards*, 2025)`", ok:true, why:"With no author, the in-text citation uses the title in title case, italic because a web page title is italic in the APA reference."},
@@ -725,7 +725,7 @@ ICA.addUnit({
      {t:"`Okoth, Imani. “Rivers of Salt: A History of Coastal Trade.” 3rd ed., Harbourline Press, 2019.`", why:"A book stands alone, so its title goes in italics. Quotation marks are for a part of something bigger, such as an article or chapter."},
      {t:"`Okoth, I. (2019). *Rivers of salt: A history of coastal trade* (3rd ed.). Harbourline Press.`", why:"That is APA 7th: initials, year after the author, sentence case and the edition in brackets. MLA uses the full first name and title case."},
      {t:"`Okoth, Imani. *Rivers of Salt: A History of Coastal Trade*. 3rd ed., Harbourline Press, 2019.`", ok:true, why:"MLA reverses the name with the full first name, italicizes the book in title case, then gives the shortened edition followed by a comma, the publisher and the year."},
-     {t:"`Okoth, Imani. *Rivers of Salt: A History of Coastal Trade*. 3rd ed. Harbourline Press, 2019.`", why:"A full stop after “3rd ed.” is Chicago’s bibliography punctuation. MLA puts a comma after the edition."}]},
+     {t:"`Okoth, Imani. *Rivers of Salt: A History of Coastal Trade*. 3rd ed. Harbourline Press, 2019.`", why:"A period after “3rd ed.” is Chicago’s bibliography punctuation. MLA puts a comma after the edition."}]},
    {id:"t4u4-cp06", lesson:"t4u4-l3", level:3, q:"Ines’s first Chicago note for an article reads: `1. Lucas Moreau, “Bread Riots and Market Towns, 1780–1800,” *Journal of Rural History* 22, no. 1 (2020): 70, https://doi.org/10.5555/jrh.221.` Several notes later, after citing other sources, she cites page 77 again. What should that note say?", options:[
      {t:"`Ibid., 77.`", why:"Ibid. only ever refers to the note immediately before, and other sources came in between. Chicago now prefers a shortened note anyway."},
      {t:"`Moreau, “Bread Riots,” 77.`", ok:true, why:"A shortened note gives the surname, a short title of up to about four words (keeping its quotation marks) and the page."},
@@ -828,7 +828,7 @@ ICA.addUnit({
      ],
      builder:[
       {ex:"Okafor, A. N., Ramírez, L., & Watanabe, K. (2023). Shade trees and classroom temperatures: Evidence from twelve schools. *Journal of Schoolyard Ecology, 14*(2), 45–62. https://doi.org/10.5555/jse.142\n\nHaddad, S. (2021). *Repairing things: A practical history of mending*. Riverbend Press.\n\nMensah, A. K. (2022). Radio, rumor and public health. In T. Ortega & M. Lin (Eds.), *Communicating health in a crisis* (pp. 33–51). Northgate University Press. https://doi.org/10.5555/chc.3\n\nCoastal Water Trust. (2024, March 5). *Well water testing at home*. https://example.org/wells", label:"Core patterns (invented sources; *asterisks* = italics)", mono:true},
-      "Authors: surname and initials, `&` before the last, up to 20 names. Dates in brackets; `n.d.` when there’s none. Article and book titles in sentence case; journal names in title case and italics with the volume; the issue in plain brackets. DOIs as `https://doi.org/…` links with no full stop after. No publisher location, and no publisher when it’s the same as the author.",
+      "Authors: surname and initials, `&` before the last, up to 20 names. Dates in brackets; `n.d.` when there’s none. Article and book titles in sentence case; journal names in title case and italics with the volume; the issue in plain brackets. DOIs as `https://doi.org/…` links with no period after. No publisher location, and no publisher when it’s the same as the author.",
       "In text: `&` inside brackets, `and` in a sentence; et al. for three or more authors from the first citation; a page (p./pp.) or paragraph (para.) for every direct quotation.",
       "**Reference list setup.** Order entries alphabetically by the first author’s surname, letter by letter. Two works by the same author are ordered by year, oldest first. Each entry has a hanging indent of 0.5 inch (1.27 cm).",
       "**In-text special cases.** Several works in one bracket go in alphabetical order separated by semicolons: (Haddad, 2021; Mensah, 2022). A work with no author is cited by its title, in title case: italic if the title is italic in the reference, in quotation marks if not. Every in-text citation must match a reference-list entry, with the same spelling and year, and every entry (except personal communications, which appear only in the text) must be cited somewhere."
@@ -863,7 +863,7 @@ ICA.addUnit({
       "MLA’s in-text citations use whatever comes first in the works-cited entry. Usually that’s the author’s surname, but for a work that begins with its title, use the title (shortened to its first noun phrase), keeping its quotation marks or italics: (“Well Water Testing”). In prose you can name the author in your sentence and put only the page in brackets: Haddad argues that mending is attentive work (50)."
      ],
      pro:[
-      "**Location**: MLA prefers a DOI, then a permalink, then a URL. DOIs are written with `https://doi.org/`; for other URLs MLA recommends leaving out `http://` or `https://`. Entries end with a full stop, even after a DOI or URL. A page range may be given as well as the DOI for paginated works.",
+      "**Location**: MLA prefers a DOI, then a permalink, then a URL. DOIs are written with `https://doi.org/`; for other URLs MLA recommends leaving out `http://` or `https://`. Entries end with a period, even after a DOI or URL. A page range may be given as well as the DOI for paginated works.",
       "**Organisations**: when an organization is both author and publisher, skip the author and begin with the title; the in-text citation then uses the (shortened) title: `(“Well Water Testing”)`. Don’t use “Anonymous”; works with no named author also begin with the title.",
       "**In prose**, MLA prefers spelling out (“Okafor and others”) and keeps et al. for parentheses and the list. **Indirect sources**: `(qtd. in Mensah 40)`, with only Mensah in Works Cited. Sources without page numbers are cited by author alone; use section or paragraph numbers only if the source numbers them.",
       "The MLA’s own advice on citation generators: their quality varies and they don’t always say which edition they follow, so treat their output as a starting point. Many older guides still show MLA 8th’s `doi:` prefix.",
@@ -885,7 +885,7 @@ ICA.addUnit({
      ],
      builder:[
       {ex:"1. Samir Haddad, *Repairing Things: A Practical History of Mending* (Riverbend Press, 2021), 50.\n2. Haddad, *Repairing Things*, 52.\n\nHaddad, Samir. *Repairing Things: A Practical History of Mending*. Riverbend Press, 2021.\n\n1. Adaeze N. Okafor et al., “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools,” *Journal of Schoolyard Ecology* 14, no. 2 (2023): 50, https://doi.org/10.5555/jse.142.\n\nOkafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology* 14, no. 2 (2023): 45–62. https://doi.org/10.5555/jse.142.", label:"Notes-bibliography (invented sources; *asterisks* = italics)", mono:true},
-      "Full notes: names in normal order, commas between parts, publication facts in brackets, the specific page. Shortened notes for later citations: surname, short title (up to about four words), page. Bibliography: first author reversed, full stops between parts, alphabetical. Chicago now prefers shortened notes to “ibid.”, though ibid. is still allowed.",
+      "Full notes: names in normal order, commas between parts, publication facts in brackets, the specific page. Shortened notes for later citations: surname, short title (up to about four words), page. Bibliography: first author reversed, periods between parts, alphabetical. Chicago now prefers shortened notes to “ibid.”, though ibid. is still allowed.",
       "In author-date, the year moves to right after the author in the reference list, and the in-text citation has no comma between name and year: (Haddad 2021, 50). Journal volume and issue are written as 14 (2): 45–62.",
       "Chicago is widely used by book publishers as a house style beyond citations: its manual covers spelling, numbers, punctuation and editing. *Turabian* (*A Manual for Writers*) adapts Chicago for students; check whether a Turabian guide follows the same Chicago edition you need, because older editions of it follow the 17th edition."
      ],
@@ -914,7 +914,7 @@ ICA.addUnit({
       "Reference managers can create an item from a DOI or ISBN (in Zotero, the magic wand **Add Item(s) by Identifier**), which is faster and usually more accurate than typing details.",
       "A DOI doesn’t mean a work is good, peer reviewed or still valid: retracted articles keep their DOIs. Judge quality separately.",
       "Not everything has a DOI. Many web pages, older articles, news stories and books don’t. Then use a stable web address, and for printed books, no address at all. In APA, a journal article found in an academic database without a DOI ends after the page range; in MLA, a database’s name and a permalink can serve as a second container.",
-      "To test a DOI, paste it after https://doi.org/ in your browser. If you get “DOI not found”, check for copying errors such as a missing character, an extra full stop, or a letter O typed for a zero."
+      "To test a DOI, paste it after https://doi.org/ in your browser. If you get “DOI not found”, check for copying errors such as a missing character, an extra period, or a letter O typed for a zero."
      ],
      pro:[
       "DOIs are registered through registration agencies such as Crossref (most journal articles) and DataCite (datasets and research outputs). The prefix identifies the registrant; the suffix is chosen by them and can contain letters, numbers and punctuation. DOIs are case-insensitive, but copy them exactly.",
@@ -1131,8 +1131,8 @@ ICA.addUnit({
    {id:"t4u4-q22", lesson:"t4u4-l3", level:2, q:"In Chicago 18th notes, how do you cite a work by three authors?", options:[{t:"First author’s name followed by et al.", ok:true, why:"The 18th edition uses et al. in notes from three authors."},{t:"All three names", why:"That was the 17th edition’s practice for three authors."},{t:"The first two names and et al.", why:"Chicago uses just the first."},{t:"No names, just the title", why:"Notes give authors."}]},
    {id:"t4u4-q23", lesson:"t4u4-l3", level:2, q:"What is a Chicago shortened note?", options:[{t:"A later note for a source already cited in full: surname, short title, page", ok:true, why:"Shortened notes save space after the first full note."},{t:"A note with no page number", why:"Shortened notes still give the page."},{t:"A bibliography entry that leaves out the publisher and the place of publication", why:"Bibliography entries are separate from notes."},{t:"An abbreviation for a journal name", why:"That’s not what the term means."}]},
    {id:"t4u4-q24", lesson:"t4u4-l3", level:3, q:"Which citation is in Chicago author-date style?", options:[{t:"(Okafor et al. 2023, 50)", ok:true, why:"No comma between author and year, then a comma and the page."},{t:"(Okafor et al., 2023, p. 50)", why:"That’s APA style: comma before the year and “p.”."},{t:"(Okafor et al. 50)", why:"That’s MLA style: no year at all."},{t:"¹ Okafor et al., “Shade Trees,” 50.", why:"That’s a Chicago shortened footnote, not author-date."}]},
-   {id:"t4u4-q25", lesson:"t4u4-l3", level:2, q:"MLA 9th: what follows the DOI at the end of a works-cited entry?", options:[{t:"A full stop", ok:true, why:"MLA ends every entry with a full stop, even after a DOI or URL."},{t:"Nothing", why:"That’s APA’s practice."},{t:"The access date", why:"An access date is optional (and rarely needed with a DOI). Even when one is added, the entry’s location still ends with a full stop first."},{t:"The database name", why:"The database (a second container) comes before its location."}]},
-   {id:"t4u4-q26", lesson:"t4u4-l3", level:1, q:"How does a Chicago bibliography differ from a Chicago full note?", options:[{t:"The first author is reversed and parts are separated by full stops", ok:true, why:"Bibliographies are alphabetical, so surnames come first."},{t:"It never includes the title, only the author and publisher", why:"Bibliographies include titles."},{t:"It gives only the page cited, while the note gives the full page range", why:"Notes give the cited page; bibliography entries give full ranges for articles."},{t:"It uses initials instead of first names", why:"Chicago uses full names."}]},
+   {id:"t4u4-q25", lesson:"t4u4-l3", level:2, q:"MLA 9th: what follows the DOI at the end of a works-cited entry?", options:[{t:"A period", ok:true, why:"MLA ends every entry with a period, even after a DOI or URL."},{t:"Nothing", why:"That’s APA’s practice."},{t:"The access date", why:"An access date is optional (and rarely needed with a DOI). Even when one is added, the entry’s location still ends with a period first."},{t:"The database name", why:"The database (a second container) comes before its location."}]},
+   {id:"t4u4-q26", lesson:"t4u4-l3", level:1, q:"How does a Chicago bibliography differ from a Chicago full note?", options:[{t:"The first author is reversed and parts are separated by periods", ok:true, why:"Bibliographies are alphabetical, so surnames come first."},{t:"It never includes the title, only the author and publisher", why:"Bibliographies include titles."},{t:"It gives only the page cited, while the note gives the full page range", why:"Notes give the cited page; bibliography entries give full ranges for articles."},{t:"It uses initials instead of first names", why:"Chicago uses full names."}]},
    {id:"t4u4-q27", lesson:"t4u4-l3", level:3, q:"Mei finds an online guide whose Chicago bibliography lists “Lisbon: Riverbend Press”. Is it wrong for Chicago 18th?", options:[{t:"Not wrong: the city is optional in the 18th edition", ok:true, why:"Chicago 18th makes place of publication optional; many guides still show it."},{t:"Yes, cities are now forbidden in every style, including Chicago 18th", why:"Chicago allows them; APA 7th is the one that dropped them."},{t:"It’s required in Chicago 18th", why:"It was dropped as a requirement."},{t:"Only the country is allowed", why:"No such rule."}]},
 
    {id:"t4u4-q28", lesson:"t4u4-l4", level:1, q:"Which of these needs a citation?", options:[{t:"A paraphrase of a researcher’s finding", ok:true, why:"Ideas and findings need credit even in your own words."},{t:"“Water boils at 100 °C at sea level”", why:"That’s common knowledge."},{t:"Your own opinion about the topic", why:"Your own ideas don’t need a citation."},{t:"“The Pacific is the largest ocean”", why:"Common knowledge."}]},
@@ -1152,7 +1152,7 @@ ICA.addUnit({
    {id:"t4u4-q41", lesson:"t4u4-l5", level:2, q:"What does the free zotero.org file storage limit (300 MB) apply to?", options:[{t:"Attached files such as PDFs", ok:true, why:"Item details and notes keep syncing when file storage is full."},{t:"Everything, including item details", why:"Other data continues to sync."},{t:"The number of citations in Word", why:"Citing isn’t limited by storage."},{t:"Only the iPhone app", why:"It applies to your online file storage."}]},
    {id:"t4u4-q42", lesson:"t4u4-l5", level:3, q:"Lucía writes her thesis in Google Docs with Zotero. What does she need for citing?", options:[{t:"The Zotero Connector in her browser and the Zotero desktop app open", ok:true, why:"Google Docs citing runs through the Connector and needs the desktop app."},{t:"Nothing; Google Docs has Zotero built in", why:"The Zotero menu comes from the Connector."},{t:"The Word plugin installed in Google Docs", why:"The Word plugin is for Word."},{t:"Suggesting mode turned on", why:"Citing is disabled in Suggesting mode; use Editing mode."}]},
    {id:"t4u4-q43", lesson:"t4u4-l5", level:2, q:"Kenji wants to send a final copy without live Zotero citations. What should he do?", options:[{t:"Make a copy, use Unlink Citations in the copy, and keep the linked original", ok:true, why:"Unlinking is permanent; keep a linked version for future edits."},{t:"Use Unlink Citations in his only copy, since Zotero can relink them again later", why:"Unlinking can’t be undone, so he’d lose the ability to update citations."},{t:"Delete the bibliography", why:"Readers need it."},{t:"Retype all citations by hand", why:"Unnecessary; unlinking does this."}]},
-   {id:"t4u4-q44", lesson:"t4u4-l5", level:3, q:"Priya’s generated MLA entry ends “doi:10.5555/abc.12.” What should she do?", options:[{t:"Use the link form https://doi.org/10.5555/abc.12 and check the generator’s edition", ok:true, why:"“doi:” is MLA 8th; MLA 9th uses the link form. Keep a full stop after the link."},{t:"Leave it as it is: citation generators always follow the newest edition of each style", why:"Generators may use old editions."},{t:"Remove the DOI entirely", why:"DOIs are the preferred location in MLA."},{t:"Replace it with the database name", why:"The DOI is better."}]},
+   {id:"t4u4-q44", lesson:"t4u4-l5", level:3, q:"Priya’s generated MLA entry ends “doi:10.5555/abc.12.” What should she do?", options:[{t:"Use the link form https://doi.org/10.5555/abc.12 and check the generator’s edition", ok:true, why:"“doi:” is MLA 8th; MLA 9th uses the link form. Keep a period after the link."},{t:"Leave it as it is: citation generators always follow the newest edition of each style", why:"Generators may use old editions."},{t:"Remove the DOI entirely", why:"DOIs are the preferred location in MLA."},{t:"Replace it with the database name", why:"The DOI is better."}]},
    {id:"t4u4-q45", lesson:"t4u4-l5", level:1, q:"Which of these is a free, open-source reference manager?", options:[{t:"Zotero", ok:true, why:"Zotero is free and open source."},{t:"A similarity checker", why:"That checks matching text, not references."},{t:"A PDF reader", why:"It reads files but doesn’t manage citations."},{t:"A spreadsheet", why:"It can hold a list, but doesn’t format citations or plug into word processors."}]}
   ]
 });

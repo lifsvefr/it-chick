@@ -104,9 +104,9 @@ ICA.addUnit({
       "Most weak questions fail in one of a few predictable ways:",
       {table:[
         ["Trap","Example","Better"],
-        ["Too broad","How does tourism affect islands?","How has holiday-rental growth changed rents in two towns on one island since 2015?"],
+        ["Too broad","How does tourism affect islands?","How has vacation-rental growth changed rents in two towns on one island since 2015?"],
         ["Already obvious","Do people with no internet use online banking less?","Which offline banking services do older adults in one region still rely on, and why?"],
-        ["A value question","Should schools ban phones?","How did pupils’ break-time activity change after one school’s phone ban?"],
+        ["A value question","Should schools ban phones?","How did students’ break-time activity change after one school’s phone ban?"],
         ["Two questions in one","Do cooperatives raise farmers’ income and improve soil?","Split into two questions, or pick one"],
         ["Built-in assumption","Why do young people no longer read newspapers?","How do 18–25-year-olds in one city get their news?"]
       ]},
@@ -233,7 +233,7 @@ ICA.addUnit({
         ["Confounding variable","Affects both the presumed cause and the effect, creating a misleading link","Age affects both reading glasses and income; it can make the two look related"],
         ["Control variable","Measured so its influence can be held constant in the analysis","Recording age and income in a study of exercise and health"],
         ["Mediator","The route by which a cause has its effect","Mentoring raises attendance **because** it raises students’ sense of belonging"],
-        ["Moderator","Changes how strong an effect is, or for whom it occurs","A tutoring scheme helps younger pupils more than older ones"]
+        ["Moderator","Changes how strong an effect is, or for whom it occurs","A tutoring scheme helps younger students more than older ones"]
       ]},
       "A [[confounder|confounding variable]] is the third variable behind a [[spurious-correlation|spurious correlation]], like the one between ice cream and sunscreen in the sociology unit. Good designs either neutralize confounders (random assignment, Lesson 4) or measure and control for the ones they can think of. Controls never cover confounders nobody measured."
     ]},
@@ -289,10 +289,10 @@ ICA.addUnit({
       {t:"Lung disease is a mediator between lighters and smoking.", why:"A mediator is the route from cause to effect. Here lung disease is the outcome, not a route."},
       {t:"Carrying a lighter is a moderator.", why:"A moderator changes the strength of an effect. It doesn’t explain a misleading link."}
     ]},
-    {id:"t4u6-l2-x6", type:"mcq", q:"Hana is studying whether schools with sports clubs have fewer pupils leaving early. She interviews each school’s head teacher. What is her unit of analysis?", options:[
+    {id:"t4u6-l2-x6", type:"mcq", q:"Hana is studying whether schools with sports clubs have fewer students leaving early. She interviews each school’s head teacher. What is her unit of analysis?", options:[
       {t:"The school", ok:true, why:"Yes. Her conclusions are about schools (having clubs, early-leaving rates). Head teachers are her source of information, not what she draws conclusions about."},
       {t:"The head teacher", why:"Head teachers provide the data, but the question is about schools, not about head teachers themselves."},
-      {t:"Each pupil", why:"She isn’t collecting data about individual pupils; early-leaving is measured as a school rate."},
+      {t:"Each student", why:"She isn’t collecting data about individual students; early-leaving is measured as a school rate."},
       {t:"The sports club", why:"Having a club is a variable describing each school, not the unit being studied."}
     ]},
     {id:"t4u6-l2-x7", type:"spot", q:"Oluwaseun wrote this measurement plan for an invented study. Tap each part with a **problem**.", ask:"a problem", parts:[
@@ -607,7 +607,7 @@ ICA.addUnit({
       {t:"Does a free bus pass increase older adults’ attendance at a day center? (The center can offer passes to a random half of new members.)", b:0, why:"A causal question, and random assignment is possible and ethical here."},
       {t:"What share of small businesses in one country accept card payments?", b:1, why:"A descriptive “how common” question needs a representative sample measured once."},
       {t:"How did one fishing village organize itself after a cyclone?", b:2, why:"A how-and-why question about one setting calls for in-depth study of that case."},
-      {t:"First analyze a region’s test results to find the schools that improved most, then interview staff and pupils in those schools to explain why.", b:3, why:"Numbers come first and pick out the pattern; the qualitative phase then explains it. That is the explanatory sequential sequence."},
+      {t:"First analyze a region’s test results to find the schools that improved most, then interview staff and students in those schools to explain why.", b:3, why:"Numbers come first and pick out the pattern; the qualitative phase then explains it. That is the explanatory sequential sequence."},
       {t:"How do apprentices learn the unwritten rules of a construction site?", b:2, why:"Learning unwritten rules is best seen up close over time: ethnography."},
       {t:"Is household income associated with internet use among adults in one region?", b:1, why:"A relational question that a survey of a random sample can answer."}
     ]},
@@ -654,7 +654,7 @@ ICA.addUnit({
       {table:[
         ["Method","How it works","Watch out for"],
         ["[[simple-random-sampling|Simple random]]","Every member has an equal chance, e.g. random numbers from a list","Needs a complete list; small groups may be missed by chance"],
-        ["[[systematic-sampling|Systematic]]","Every kth member from a random start (every 20th file)","Lists with a repeating pattern, e.g. every 20th flat is a corner flat"],
+        ["[[systematic-sampling|Systematic]]","Every kth member from a random start (every 20th file)","Lists with a repeating pattern, e.g. every 20th apartment is a corner apartment"],
         ["[[stratified-sampling|Stratified]]","Split into groups (strata), such as regions or ages, then sample randomly within each","Needs information on everyone’s group in the frame"],
         ["[[cluster-sampling|Cluster]]","Randomly pick whole groups (villages, schools), then include everyone in them","Cheaper to reach, but people in a cluster are alike, so precision falls"],
         ["Multistage","Combine steps: pick districts, then villages, then households","Common in national household surveys; analysis must reflect the design"]
@@ -774,7 +774,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 6 (t4u6-l5) ===================== */
   {id:"t4u6-l5", title:"Validity, reliability and the proposal", minutes:60,
-   hook:{q:"A well-run trial shows that a new teaching method raised reading scores among 9-year-olds in 40 city schools. A rural district wants to use it for 14-year-olds. What does the trial tell them?", options:["It will definitely work for them, because the trial was well run","Nothing at all, because the trial was in cities","It’s good evidence that the method worked for those pupils, but whether it carries over to older, rural pupils is a separate question","The trial must have been badly designed, or it would apply everywhere"], answer:2, reveal:"A study can be convincing about **what happened inside it** ([[internal-validity|internal validity]]) and still leave open **whether it carries over** to other people, places and times ([[external-validity|external validity]]). They are different questions with different evidence. This lesson sets out the main kinds of validity, how measures are checked for reliability, and how to put your whole plan on one page."},
+   hook:{q:"A well-run trial shows that a new teaching method raised reading scores among 9-year-olds in 40 city schools. A rural district wants to use it for 14-year-olds. What does the trial tell them?", options:["It will definitely work for them, because the trial was well run","Nothing at all, because the trial was in cities","It’s good evidence that the method worked for those students, but whether it carries over to older, rural students is a separate question","The trial must have been badly designed, or it would apply everywhere"], answer:2, reveal:"A study can be convincing about **what happened inside it** ([[internal-validity|internal validity]]) and still leave open **whether it carries over** to other people, places and times ([[external-validity|external validity]]). They are different questions with different evidence. This lesson sets out the main kinds of validity, how measures are checked for reliability, and how to put your whole plan on one page."},
    goals:[
      "Explain internal, external, construct and statistical conclusion validity, with examples",
      "Recognise the main threats to internal validity and the designs that guard against them",
@@ -803,7 +803,7 @@ ICA.addUnit({
         ["Maturation","People change naturally over time","Children’s vocabulary grows over a school year with or without the new app"],
         ["Testing","Taking a test changes later scores","People do better on the second quiz because they’ve seen the first"],
         ["Instrumentation","The measure changes","A new data system starts recording more minor injuries"],
-        ["Regression to the mean","Extreme scores drift back toward average","A support scheme for the worst-scoring pupils “works” partly because unusually low scores tend to rise anyway"],
+        ["Regression to the mean","Extreme scores drift back toward average","A support scheme for the worst-scoring students “works” partly because unusually low scores tend to rise anyway"],
         ["Selection","Groups differed from the start","Keen volunteers join the program; the comparison group didn’t want to"],
         ["Attrition","People drop out unevenly","The least satisfied participants leave the study before the end"],
         ["Unclear time order","It’s unclear which came first","Do lonely people use social media more, or does use make them lonelier?"]
@@ -868,7 +868,7 @@ ICA.addUnit({
       {t:"Staff who signed up for a wellbeing course reported less stress than staff who didn’t.", b:2, why:"People chose themselves; those who signed up may have differed from the start."},
       {t:"Half the participants in a diet study left before the end, mostly those who weren’t losing weight.", b:3, why:"Uneven drop-out makes the remaining group look more successful than the whole group was."},
       {t:"Crime fell after a youth club opened, in the same month the police doubled patrols.", b:0, why:"Another change happened at the same time."},
-      {t:"Pupils who chose an optional coding club scored higher on logic tests than pupils who didn’t.", b:2, why:"Pupils who opt in may already be stronger at logic."}
+      {t:"Students who chose an optional coding club scored higher on logic tests than students who didn’t.", b:2, why:"Students who opt in may already be stronger at logic."}
     ]},
     {id:"t4u6-l5-x3", type:"number", q:"A two-year study starts with 800 participants. 560 complete it. What is the **attrition** (drop-out) rate, as a percentage?", answer:30, tol:0.1, unit:"%", why:"Drop-outs = 800 − 560 = 240. Attrition = 240 ÷ 800 × 100 = 30%. Whether that is a problem depends on whether those who left differ from those who stayed, so studies compare the two groups at the start.", wrongs:[
       {v:70, tol:0.1, why:"70% is the retention rate (560 ÷ 800). Attrition is the share who left: 240 ÷ 800."},
@@ -907,7 +907,7 @@ ICA.addUnit({
       {t:"Add a margin of error to the interview themes.", why:"Margins of error need a probability sample and numerical estimates; they don’t apply to interview themes."},
       {t:"Say that qualitative research never needs to consider other settings.", why:"Readers rightly want to know where findings might apply. Qualitative research answers that with transferability, not by ignoring it."}
     ]},
-    {id:"t4u6-l5-x8", type:"explain", q:"A school gives extra tutoring to its 30 lowest-scoring pupils, and their scores rise the next term. Explain why this doesn’t show the tutoring worked, and what design would make the evidence stronger.", size:"3–4 sentences", hint:"Think about threats to internal validity, such as regression to the mean and maturation.", model:"Unusually low scores tend to drift back toward the average anyway (regression to the mean), and children improve over a term with or without help (maturation). Something else might also have changed that term (history). With no comparison, we can’t separate any of these from the tutoring. A stronger design would compare with a control group of similar low scorers who didn’t get tutoring, ideally chosen by random assignment, so both groups experience the same drift and change.", points:["Names regression to the mean", "Names another threat such as maturation or history", "Says there is no comparison group", "Proposes a control group, ideally randomly assigned"]}
+    {id:"t4u6-l5-x8", type:"explain", q:"A school gives extra tutoring to its 30 lowest-scoring students, and their scores rise the next term. Explain why this doesn’t show the tutoring worked, and what design would make the evidence stronger.", size:"3–4 sentences", hint:"Think about threats to internal validity, such as regression to the mean and maturation.", model:"Unusually low scores tend to drift back toward the average anyway (regression to the mean), and children improve over a term with or without help (maturation). Something else might also have changed that term (history). With no comparison, we can’t separate any of these from the tutoring. A stronger design would compare with a control group of similar low scorers who didn’t get tutoring, ideally chosen by random assignment, so both groups experience the same drift and change.", points:["Names regression to the mean", "Names another threat such as maturation or history", "Says there is no comparison group", "Proposes a control group, ideally randomly assigned"]}
    ],
    apply:{intro:"Bring together everything from this unit into a plan you could show a teacher, supervisor or colleague.", tasks:[
      {t:"Audit a study’s validity", how:["Pick a study reported in the news or one open-access paper you found in Lesson 4.","Write one sentence each on its internal, external and construct validity.","Name the biggest remaining threat, and one change to the design that would reduce it."], write:"Study… Internal… External… Construct… Biggest threat… Design fix…"},
@@ -959,7 +959,7 @@ ICA.addUnit({
      {t:"An interrupted time series", ok:true, why:"Many measurements before and after a change show whether the trend breaks, and reveal any existing trend."},
      {t:"A case-control study", why:"A case-control study starts from people with and without an outcome and looks back at exposures."}]},
    {id:"t4u6-cp08", lesson:"t4u6-l3", level:3, q:"One school chooses to adopt a new math scheme; a similar nearby school doesn’t. Both are tested before and after the year, and the scheme school improves more. Which threat to internal validity remains the biggest?", options:[
-     {t:"Maturation", why:"Pupils in both schools mature over the year. A comparison group handles that."},
+     {t:"Maturation", why:"Students in both schools mature over the year. A comparison group handles that."},
      {t:"Testing", why:"Both schools sat the same tests twice, so any practice effect affects both groups."},
      {t:"Selection", ok:true, why:"The school chose the scheme, so it may differ from the start (keener teachers, say). Without random assignment, this quasi-experiment can’t rule that out."},
      {t:"Regression to the mean", why:"That applies when a group is picked for extreme scores. Nothing says the schools were chosen that way."}]},
@@ -1046,7 +1046,7 @@ ICA.addUnit({
       ]},
       "In FINER, **novel** includes confirming, refuting or extending earlier findings, so a careful replication in a new population counts. **Feasible** covers participants, skills, time, money and access; it is where most small projects run into trouble.",
       "PICO parts also become search blocks (Unit 2): synonyms for each part are joined with OR, and the parts are joined with AND. Many search guides advise building the search mainly from the population and intervention blocks and leaving outcome terms out, at least at first, because outcomes are often not mentioned in titles and abstracts, so outcome terms can make you miss relevant studies.",
-      {ex:"P: secondary-school pupils\nI: peer tutoring in mathematics\nC: usual lessons\nO: mathematics test scores\nSearch blocks: (pupils OR students OR adolescents) AND (“peer tutoring” OR “peer-assisted learning”) AND (mathematics OR math OR math)", label:"Example (invented): PICO in education"}
+      {ex:"P: secondary-school students\nI: peer tutoring in mathematics\nC: usual lessons\nO: mathematics test scores\nSearch blocks: (students OR students OR adolescents) AND (“peer tutoring” OR “peer-assisted learning”) AND (mathematics OR math OR math)", label:"Example (invented): PICO in education"}
      ],
      pro:[
       "The frameworks were built mainly to structure searches and reviews. The SPIDER authors, in their 2012 *Qualitative Health Research* article, concluded that their tool needed further testing before it could be considered a viable alternative to PICO, and many review teams still search with PICO-style terms plus qualitative filters. Use frameworks as aids, not rules.",
@@ -1326,8 +1326,8 @@ ICA.addUnit({
      starter:[
       "Research moves between ideas and evidence in three main ways.",
       {list:[
-        "**Deduction** starts from a theory, works out what should happen if it is right, and checks. “If tutoring helps, tutored pupils should score higher.”",
-        "**Induction** starts from many observations and finds a general pattern. “Every family we interviewed mentioned the bus timetable.”",
+        "**Deduction** starts from a theory, works out what should happen if it is right, and checks. “If tutoring helps, tutored students should score higher.”",
+        "**Induction** starts from many observations and finds a general pattern. “Every family we interviewed mentioned the bus schedule.”",
         "**[[abductive-reasoning|Abduction]]** starts from a surprise and asks what would best explain it. “Why is attendance worst at the newest school? Perhaps it’s furthest from the bus route. Let’s check.”"
       ]},
       "Detectives use abduction all the time: they reason from clues to the most likely explanation, then look for evidence that would confirm or rule it out.",
@@ -1403,7 +1403,7 @@ ICA.addUnit({
      {t:"First-time voters, social media and local elections in one city since 2020", why:"An area of interest with no specific question."},
      {t:"Voting", why:"Far too broad: no group, place, period or question."},
      {t:"Politics in my country", why:"A broad topic; it doesn’t say what will be found out."}]},
-   {id:"t4u6-q02", lesson:"t4u6-l1", level:2, q:"“Does a free school breakfast improve pupils’ concentration in the morning?” What type of question is this?", options:[
+   {id:"t4u6-q02", lesson:"t4u6-l1", level:2, q:"“Does a free school breakfast improve students’ concentration in the morning?” What type of question is this?", options:[
      {t:"Causal", ok:true, why:"“Improve” claims that one thing changes another, so it’s a causal question."},
      {t:"Descriptive", why:"A descriptive question asks how much or how often, not whether one thing changes another."},
      {t:"Exploratory", why:"Exploratory questions ask how people experience or make sense of something; this one asks about an effect."},
@@ -1469,11 +1469,11 @@ ICA.addUnit({
      {t:"Work affects safety.", why:"No population, no direction, and “work” isn’t defined."},
      {t:"Some delivery riders in the city might have more accidents, depending on many different factors.", why:"So vague nothing could contradict it."},
      {t:"Delivery work is dangerous because it is unsafe.", why:"Circular: it explains danger with danger."}]},
-   {id:"t4u6-q15", lesson:"t4u6-l2", level:3, q:"Oluwaseun finds that pupils with more books at home get better grades. A colleague says household income may explain both. In this situation, income is a…", options:[
+   {id:"t4u6-q15", lesson:"t4u6-l2", level:3, q:"Oluwaseun finds that students with more books at home get better grades. A colleague says household income may explain both. In this situation, income is a…", options:[
      {t:"Confounding variable", ok:true, why:"It may influence both the presumed cause (books) and the effect (grades), creating a misleading link."},
      {t:"Dependent variable", why:"Grades are the dependent variable here."},
      {t:"Mediator", why:"A mediator lies on the path from cause to effect; income is suggested as a cause of both."},
-     {t:"Unit of analysis", why:"The unit of analysis is the pupil."}]},
+     {t:"Unit of analysis", why:"The unit of analysis is the student."}]},
    {id:"t4u6-q16", lesson:"t4u6-l2", level:2, q:"A mentoring scheme raises attendance mainly by making students feel they belong at school. Here, “sense of belonging” is a…", options:[
      {t:"Mediator", ok:true, why:"It is the route through which mentoring affects attendance."},
      {t:"Moderator", why:"A moderator changes how strong an effect is for different groups; belonging is the pathway itself."},
@@ -1587,12 +1587,12 @@ ICA.addUnit({
      {t:"Whether results apply to other places", why:"That is external validity."},
      {t:"Whether the measures really capture the concepts that the researchers intended", why:"That is construct validity."},
      {t:"Whether the report is well written", why:"Writing quality isn’t a type of validity."}]},
-   {id:"t4u6-q38", lesson:"t4u6-l5", level:2, q:"A study of a new reading app compares pupils before and after one school year, with no comparison group. Scores rise. Which threat is most obvious?", options:[
-     {t:"Maturation: pupils’ reading improves over a year anyway", ok:true, why:"Without a comparison group, normal growth can’t be separated from the app’s effect."},
-     {t:"Ecological fallacy", why:"The data are about individual pupils; the issue is natural change over time."},
+   {id:"t4u6-q38", lesson:"t4u6-l5", level:2, q:"A study of a new reading app compares students before and after one school year, with no comparison group. Scores rise. Which threat is most obvious?", options:[
+     {t:"Maturation: students’ reading improves over a year anyway", ok:true, why:"Without a comparison group, normal growth can’t be separated from the app’s effect."},
+     {t:"Ecological fallacy", why:"The data are about individual students; the issue is natural change over time."},
      {t:"Coverage error", why:"That concerns who is missing from a sampling frame."},
      {t:"Inter-rater disagreement", why:"Nothing suggests raters disagreed."}]},
-   {id:"t4u6-q39", lesson:"t4u6-l5", level:2, q:"Pupils chosen for extra support because they scored lowest on a test score higher on the next test, even before the support starts. What best explains this?", options:[
+   {id:"t4u6-q39", lesson:"t4u6-l5", level:2, q:"Students chosen for extra support because they scored lowest on a test score higher on the next test, even before the support starts. What best explains this?", options:[
      {t:"Regression to the mean: extreme scores tend to move back toward average", ok:true, why:"Some of the lowest scores were partly bad luck on the day, so they tend to rise on retesting."},
      {t:"The support worked before it began, which shows it is very effective", why:"The rise happened before any support, so it can’t be the cause."},
      {t:"History", why:"No outside event is mentioned; the pattern comes from selecting extreme scores."},
@@ -1644,9 +1644,9 @@ ICA.addUnit({
      {t:"Reality is made of meanings, so many valid accounts can exist", why:"That is constructivism."},
      {t:"Research must aim above all to change unjust power relations", why:"That is the aim of critical approaches."}]},
    {id:"t4u6-q49", lesson:"t4u6-l6", level:2, q:"Which hypothesis is **falsifiable** as written?", options:[
-     {t:"Pupils given daily reading time will outscore similar pupils on the year-end test", ok:true, why:"A clear result (no difference, or lower scores) would count against it. That is what Popper meant by falsifiable."},
-     {t:"Some pupils may benefit from extra reading time in some ways at some point", why:"So hedged that no result could count against it."},
-     {t:"Reading time is good for pupils’ souls and inner lives", why:"Neither “soul” nor “inner life” is defined or measurable, so no evidence could test it."},
+     {t:"Students given daily reading time will outscore similar students on the year-end test", ok:true, why:"A clear result (no difference, or lower scores) would count against it. That is what Popper meant by falsifiable."},
+     {t:"Some students may benefit from extra reading time in some ways at some point", why:"So hedged that no result could count against it."},
+     {t:"Reading time is good for students’ souls and inner lives", why:"Neither “soul” nor “inner life” is defined or measurable, so no evidence could test it."},
      {t:"Whatever the results show, the reading program will have worked somehow", why:"It rules out every possible counter-evidence in advance, the opposite of falsifiable."}]},
    {id:"t4u6-q50", lesson:"t4u6-l6", level:3, q:"A youth group asks Oluwaseun to study why young people on their estate are stopped by police so often. They want to help set the questions, collect stories and use the results to campaign. Which approach fits best?", options:[
      {t:"A critical, participatory approach with the group as partners", ok:true, why:"Shared control, attention to power and an aim of change are what critical and participatory research are for. Ethics review and care for participants’ safety still apply."},

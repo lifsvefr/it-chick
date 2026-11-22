@@ -183,7 +183,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u5-l2", title:"Taking control: privacy settings", minutes:55,
-   hook:{q:"You switch off Location Services on your phone completely. Can anyone still tell roughly where the phone is?", options:["No: the phone is now untraceable","Yes: the mobile network still knows which masts it connects to","Only if Bluetooth is left on","Only the phone’s manufacturer can"], answer:1, reveal:"**Yes, roughly.** Your mobile network still knows which masts the phone connects to, and your IP address gives a rough area. Location settings still matter a great deal, though, because they decide which apps get your precise whereabouts. This lesson shows how to set them, along with photo locations, ad settings and what private browsing really does."},
+   hook:{q:"You switch off Location Services on your phone completely. Can anyone still tell roughly where the phone is?", options:["No: the phone is now untraceable","Yes: the mobile network still knows which cell towers it connects to","Only if Bluetooth is left on","Only the phone’s manufacturer can"], answer:1, reveal:"**Yes, roughly.** Your mobile network still knows which cell towers the phone connects to, and your IP address gives a rough area. Location settings still matter a great deal, though, because they decide which apps get your precise whereabouts. This lesson shows how to set them, along with photo locations, ad settings and what private browsing really does."},
    goals:[
      "Run the privacy checkup tools in Google, Apple, Microsoft and Meta accounts",
      "Control location services, and share photos without their hidden location",
@@ -207,7 +207,7 @@ ICA.addUnit({
       "Many accounts save a history of searches, videos watched, places visited and voice commands, to personalize services. You can usually pause each type of history, delete past history, or set it to delete automatically after a period you choose. Pausing makes some features less personal (for example, fewer tailored recommendations), so choose what is worth it to you."
     ]},
     {h:"Location: the most revealing data", body:[
-      "A record of where your phone has been shows where you live, work, worship, get medical care and sleep. That’s why location deserves special care. Your device’s [[location-services|location services]] combine GPS satellites, nearby Wi-Fi networks and mobile masts to work out where you are, then share it with apps you allow.",
+      "A record of where your phone has been shows where you live, work, worship, get medical care and sleep. That’s why location deserves special care. Your device’s [[location-services|location services]] combine GPS satellites, nearby Wi-Fi networks and cell towers to work out where you are, then share it with apps you allow.",
       {list:[
         "**Per-app choices.** Allow location **only while using the app** rather than “always” unless an app genuinely needs it in the background (a navigation or family-safety app might).",
         "**Precise or approximate.** iPhone and Android both let you give an app only your approximate area. A weather app needs your town, not your front door.",
@@ -266,7 +266,7 @@ ICA.addUnit({
       {h:"Common misconceptions"},
       {list:[
         "**“Incognito makes me anonymous.”** It only stops your own device keeping the session. Sites, networks and anyone you sign in to still see you.",
-        "**“Turning off location services makes my phone untraceable.”** Your mobile network still knows which masts your phone connects to, and your IP address gives a rough area.",
+        "**“Turning off location services makes my phone untraceable.”** Your mobile network still knows which cell towers your phone connects to, and your IP address gives a rough area.",
         "**“Social media always strips photo locations.”** Some do for public copies; many other ways of sharing send the original file.",
         "**“Privacy settings, once set, stay set.”** Apps add features and accounts redesign menus. A yearly check catches changes."
       ]},
@@ -380,7 +380,7 @@ ICA.addUnit({
         ["Freely given","A real choice, without penalty for saying no","You can’t use a service at all unless you agree to unrelated marketing"],
         ["Specific","Separate for separate purposes","One box covers newsletters, profiling and selling data"],
         ["Informed","You know who and what for","The purpose is hidden in a long document"],
-        ["Unambiguous","A clear action from you","The box was already ticked for you"]
+        ["Unambiguous","A clear action from you","The box was already checked for you"]
       ]},
       {key:"You can withdraw consent at any time, and the GDPR says withdrawing must be as easy as giving it."}
     ]},
@@ -459,11 +459,11 @@ ICA.addUnit({
       ["Hana wants her listening history moved to a new music service","Right to data portability","Portability covers data she provided, in a reusable format or sent to another provider."]
     ]},
     {id:"t1u5-l3-x2", type:"sort", q:"Under the GDPR, which of these sign-up designs collect valid consent for marketing emails?", buckets:["Valid consent","Not valid consent"], items:[
-      {t:"An unticked box: “Send me offers by email”, which Priya ticks herself", b:0, why:"A clear action by her, for one specific purpose, with no pressure: valid."},
-      {t:"A box for marketing that is already ticked when the page loads", b:1, why:"Pre-ticked boxes aren’t an unambiguous action by the person."},
+      {t:"An unchecked box: “Send me offers by email”, which Priya checks herself", b:0, why:"A clear action by her, for one specific purpose, with no pressure: valid."},
+      {t:"A box for marketing that is already checked when the page loads", b:1, why:"Pre-checked boxes aren’t an unambiguous action by the person."},
       {t:"“By using this site you agree to marketing emails”", b:1, why:"Simply using a service isn’t a clear, specific choice."},
       {t:"An account can only be created if you accept marketing emails, which the service doesn’t need", b:1, why:"Not freely given: there’s a penalty (no account) for saying no to something unrelated."},
-      {t:"Separate unticked boxes for “newsletter” and “partner offers”, with a link explaining each", b:0, why:"Specific, informed and requiring action: valid."},
+      {t:"Separate unchecked boxes for “newsletter” and “partner offers”, with a link explaining each", b:0, why:"Specific, informed and requiring action: valid."},
       {t:"One box covering marketing, profiling and selling data to partners", b:1, why:"Bundling different purposes into one box isn’t specific consent."}
     ]},
     {id:"t1u5-l3-x3", type:"number", q:"Amara sends a GDPR data access request. The company tells her within the first month that, because her request is complex, it is extending the deadline as far as the GDPR allows. How many months from receiving her request does the company have in total?", answer:3, tol:0, unit:"months", why:"The basic deadline is one month. It can be extended by two further months for complex or numerous requests: 1 + 2 = 3 months in total.", wrongs:[
@@ -501,7 +501,7 @@ ICA.addUnit({
       {t:"She must pay a lawyer before using it", why:"Built-in download tools are self-service and free."},
       {t:"Downloading her data deletes it from the service", why:"Download and deletion are separate. Downloading gives her a copy."}
     ]},
-      {id:"t1u5-l3-x8", type:"explain", q:"A website’s sign-up form has one box, already ticked, that says “I agree to newsletters, profiling and sharing my data with partners.” Explain why this wouldn’t count as valid consent under the GDPR.", hint:"Valid consent must be freely given, specific, informed and unambiguous.", model:"Under the GDPR, valid consent must be freely given, specific, informed and unambiguous. This box fails in two clear ways. A pre-ticked box isn’t unambiguous, because consent needs a clear action from you, not a choice made for you. And one box covering newsletters, profiling and sharing isn’t specific, because separate purposes need separate consent. If you couldn’t sign up without agreeing, it wouldn’t be freely given either.", points:["Names the conditions for valid consent (freely given, specific, informed, unambiguous)", "Says a pre-ticked box is not a clear action from you", "Says one box for several purposes is not specific", "Says that making agreement a condition of signing up would mean it isn’t freely given"]}
+      {id:"t1u5-l3-x8", type:"explain", q:"A website’s sign-up form has one box, already checked, that says “I agree to newsletters, profiling and sharing my data with partners.” Explain why this wouldn’t count as valid consent under the GDPR.", hint:"Valid consent must be freely given, specific, informed and unambiguous.", model:"Under the GDPR, valid consent must be freely given, specific, informed and unambiguous. This box fails in two clear ways. A pre-checked box isn’t unambiguous, because consent needs a clear action from you, not a choice made for you. And one box covering newsletters, profiling and sharing isn’t specific, because separate purposes need separate consent. If you couldn’t sign up without agreeing, it wouldn’t be freely given either.", points:["Names the conditions for valid consent (freely given, specific, informed, unambiguous)", "Says a pre-checked box is not a clear action from you", "Says one box for several purposes is not specific", "Says that making agreement a condition of signing up would mean it isn’t freely given"]}
    ],
    apply:{intro:"Use your rights on one real service. Pick one you use often, so the result is interesting.", tasks:[
      {t:"Read one privacy policy in five minutes", how:["Open the privacy policy of an app or site you use daily (usually linked at the bottom of the website or in the app’s settings).","Search the page for **sell**, **share**, **partners**, **advertising**, **retain** and **delete**. On a computer use Ctrl + F (Mac: ⌘ + F); on a phone use **Find in page** in the browser menu.","Write one line for each of the six questions: who, what, why, who else, how long, how to use your rights."]},
@@ -530,7 +530,7 @@ ICA.addUnit({
       "Think of it like owning a house you built. You can live in it, rent it out, or let friends stay. Other people need your permission to move in, even if your door happens to be open.",
       {h:"Three facts that surprise people"},
       {list:[
-        "**It’s automatic.** Under the Berne Convention, which most countries have joined, protection can’t depend on any formality. You don’t have to register, pay or add a © symbol. Your holiday photo is protected the moment you take it.",
+        "**It’s automatic.** Under the Berne Convention, which most countries have joined, protection can’t depend on any formality. You don’t have to register, pay or add a © symbol. Your vacation photo is protected the moment you take it.",
         "**It protects expression, not ideas.** A recipe’s list of ingredients or the idea of a story about a wizard school isn’t owned; a particular written description, photo or novel is.",
         "**It varies by country.** The Berne Convention sets a minimum term of the author’s life plus 50 years for most works; many countries, including EU members, the UK and the US for most works, use life plus 70 years. Exceptions, ownership rules and terms all differ."
       ]},
@@ -698,7 +698,7 @@ ICA.addUnit({
         ["Hard to cancel","Signing up takes one tap; canceling needs a phone call during office hours"],
         ["Confirmshaming","“No thanks, I don’t like saving money”"],
         ["Nagging","Asking again and again, with “Not now” instead of a real “No”"],
-        ["Pre-ticked boxes","Marketing or add-ons already selected for you"],
+        ["Pre-checked boxes","Marketing or add-ons already selected for you"],
         ["Hidden costs","Fees appear only at the last step of checkout"],
         ["False urgency","A countdown timer that resets, or “Only 1 left!” that is never true"],
         ["Unequal choices","A big bright “Accept all” and a small gray “Manage settings”"]
@@ -888,9 +888,9 @@ ICA.addUnit({
       {t:"Only if she buys something", why:"Once she is signed in, the shop can record what she views on its own site, whether she buys or not."},
       {t:"Yes, because signing in tells the shop who she is", ok:true, why:"Signing in identifies her on any device, so the shop can record what she views on its own site. Private windows and cookie blocking don’t hide that."}
     ]},
-    {id:"t1u5-cp10", lesson:"t1u5-l3", level:3, q:"Imani signs up to a pharmacy app. A marketing box is already ticked and says: “You must accept marketing emails to get home delivery.” What is true under the GDPR?", options:[
-      {t:"This is valid consent, because she can untick the box", why:"Valid consent needs a clear action from her. A box ticked in advance doesn’t count."},
-      {t:"Not valid: it is pre-ticked, and delivery is tied to marketing", ok:true, why:"Consent must be unambiguous and freely given. These are also dark patterns: pre-ticked boxes and pressure."},
+    {id:"t1u5-cp10", lesson:"t1u5-l3", level:3, q:"Imani signs up to a pharmacy app. A marketing box is already checked and says: “You must accept marketing emails to get home delivery.” What is true under the GDPR?", options:[
+      {t:"This is valid consent, because she can uncheck the box", why:"Valid consent needs a clear action from her. A box checked in advance doesn’t count."},
+      {t:"Not valid: it is pre-checked, and delivery is tied to marketing", ok:true, why:"Consent must be unambiguous and freely given. These are also dark patterns: pre-checked boxes and pressure."},
       {t:"It’s fine, because the pharmacy needs her address to deliver anyway", why:"Delivery can rely on the contract with her. Marketing is a separate purpose and needs its own freely given consent."},
       {t:"It’s fine if the rule is written in the privacy policy", why:"Hiding a condition in a policy doesn’t make consent informed or freely given. Simply using a service isn’t valid consent to marketing."}
     ]},
@@ -935,7 +935,7 @@ ICA.addUnit({
       "Your footprint also grows through other people: friends tag you in photos, colleagues mention you, and organizations publish lists that include your name. You can ask people not to tag you, and most platforms let you review tags before they appear on your profile."
      ],
      pro:[
-      "Privacy professionals separate **identifiers** (name, email, phone, device and advertising IDs, IP addresses, cookie IDs) from **attributes** and **inferences**. Linking happens when two datasets share an identifier, or when enough quasi-identifiers (postcode, birth date, gender) combine to single someone out. Removing names alone rarely makes data anonymous.",
+      "Privacy professionals separate **identifiers** (name, email, phone, device and advertising IDs, IP addresses, cookie IDs) from **attributes** and **inferences**. Linking happens when two datasets share an identifier, or when enough quasi-identifiers (postal code, birth date, gender) combine to single someone out. Removing names alone rarely makes data anonymous.",
       "**Identity resolution** services specialize in linking a person’s email, phone, devices and household into one profile across companies, which is why data shared with one firm can reappear elsewhere.",
       "Inferences are often more sensitive than raw data: health conditions inferred from purchases, or location history revealing religion or a medical clinic visit. Under the GDPR, inferences about an identifiable person are themselves personal data, and access requests can cover them, though organizations sometimes resist.",
       {tip:"For people at higher risk (survivors of abuse, journalists, public-facing workers), the priorities are: location exposure, people-search listings, photo metadata, and account security. Specialist support organizations can help plan changes safely."},
@@ -1068,7 +1068,7 @@ ICA.addUnit({
     summary:"How devices work out where you are, how to limit which apps know, and how to remove location from photos you share.",
     levels:{
      starter:[
-      "Your phone works out where you are using GPS satellites, nearby Wi-Fi and mobile masts. That’s **location services**. Apps you allow can then use it.",
+      "Your phone works out where you are using GPS satellites, nearby Wi-Fi and cell towers. That’s **location services**. Apps you allow can then use it.",
       "Location is the most revealing data: it shows where you live, work, worship and sleep. Three habits protect it:",
       {list:[
         "Give apps location **only while using** them, and **approximate** where possible.",
@@ -1094,7 +1094,7 @@ ICA.addUnit({
      ],
      pro:[
       "EXIF GPS tags store latitude, longitude, often altitude and direction. Some large social platforms strip EXIF from public copies, but originals sent by email, cloud links, file transfer or some messengers keep it. Don’t rely on a platform’s behavior; remove location yourself when it matters.",
-      "Location can also leak from: Wi-Fi and Bluetooth scanning (used to improve location even when Wi-Fi is “off” on some devices), IP addresses (city-level), mobile networks (the operator always knows which mast you use), fitness apps with public route maps, and smart-home devices.",
+      "Location can also leak from: Wi-Fi and Bluetooth scanning (used to improve location even when Wi-Fi is “off” on some devices), IP addresses (city-level), mobile networks (the operator always knows which cell tower you use), fitness apps with public route maps, and smart-home devices.",
       "Phones offer **approximate location** permissions (iOS 14+, Android 12+), which give apps only a general area, not an exact spot. Android can auto-reset permissions for unused apps; iPhone’s App Privacy Report shows actual access frequency.",
       {warn:"Unwanted tracking can involve shared accounts (a partner who knows your Apple or Google password), family-sharing features, or item trackers. Apple’s Safety Check, Google’s location-sharing list in Maps, and Android’s and iPhone’s alerts for unknown trackers traveling with you are the starting points. Changing settings can alert the other person; support services can help plan."},
       "For high-risk people, consider a separate account and device for public activity, and turning off location history entirely.",
@@ -1432,7 +1432,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Many free apps earn money from advertising, so they’re designed to keep you looking. Common techniques: **infinite scroll** (no end to the page), **autoplay** (the next video starts by itself), **notifications and badges** (pulling you back), and unpredictable rewards like new likes.",
-      "A **dark pattern** goes further: a design that tricks or pressures you into choices you wouldn’t otherwise make. Examples: canceling is much harder than signing up; a guilt-trip button (“No thanks, I don’t like saving money”); pre-ticked boxes; fees revealed at the last step; fake countdown timers.",
+      "A **dark pattern** goes further: a design that tricks or pressures you into choices you wouldn’t otherwise make. Examples: canceling is much harder than signing up; a guilt-trip button (“No thanks, I don’t like saving money”); pre-checked boxes; fees revealed at the last step; fake countdown timers.",
       {key:"If a screen makes you feel rushed, guilty or confused, slow down. That feeling is often the design working."},
       "These designs work on everyone; noticing them is a skill, not a sign of weakness."
      ],
@@ -1514,7 +1514,7 @@ ICA.addUnit({
    {id:"data-broker", term:"Data broker", def:"A company that collects information about people from many sources, combines it and sells or shares it. People-search sites are one kind.", codex:"tracking-data-brokers"},
    {id:"targeted-advertising", term:"Targeted advertising", def:"Choosing which ad to show someone based on information about them. Behavioral (personalized) ads use a profile; contextual ads use the page being viewed.", codex:"ad-personalisation"},
    {id:"two-step-privacy-checkup", term:"Privacy checkup", def:"A guided, step-by-step review of the most important privacy settings in an account, such as Google’s Privacy Checkup or Facebook’s Privacy Checkup.", codex:"privacy-settings"},
-   {id:"location-services", term:"Location services", def:"The device feature that works out where you are using GPS, Wi-Fi and mobile masts, and shares it with apps you allow.", codex:"location-privacy"},
+   {id:"location-services", term:"Location services", def:"The device feature that works out where you are using GPS, Wi-Fi and cell towers, and shares it with apps you allow.", codex:"location-privacy"},
    {id:"metadata-privacy", term:"Location metadata (geotag)", def:"GPS coordinates stored inside a photo or video file by the camera. They travel with the original file unless removed.", codex:"location-privacy"},
    {id:"private-browsing", term:"Private browsing", def:"A browser mode (Incognito, InPrivate, Private Window) that forgets the session’s history and cookies when closed. It hides activity from other users of the device, not from websites or networks.", codex:"private-browsing"},
    {id:"privacy-policy", term:"Privacy policy", def:"An organization’s statement of what personal data it collects, why, who gets it, how long it’s kept and how you can use your rights. Also called a privacy notice.", codex:"privacy-policies"},
@@ -1673,11 +1673,11 @@ ICA.addUnit({
      {t:"24 hours", why:"The law requires no undue delay and at most one month, not 24 hours."},
      {t:"There’s no deadline, as long as it replies eventually", why:"There is: one month as a rule."}
    ]},
-   {id:"t1u5-q21", lesson:"t1u5-l3", level:2, q:"A sign-up form has a marketing box that is already ticked. Under the GDPR, is that valid consent?", options:[
-     {t:"No: a pre-ticked box isn’t a clear action", ok:true, why:"Valid consent must be unambiguous, given by a clear affirmative action by the person."},
-     {t:"Yes, as long as the user doesn’t untick it", why:"Silence or inactivity isn’t valid consent."},
+   {id:"t1u5-q21", lesson:"t1u5-l3", level:2, q:"A sign-up form has a marketing box that is already checked. Under the GDPR, is that valid consent?", options:[
+     {t:"No: a pre-checked box isn’t a clear action", ok:true, why:"Valid consent must be unambiguous, given by a clear affirmative action by the person."},
+     {t:"Yes, as long as the user doesn’t uncheck it", why:"Silence or inactivity isn’t valid consent."},
      {t:"Yes, as long as the box is green", why:"Color has nothing to do with validity."},
-     {t:"Only if the company is based inside the EU", why:"The GDPR can apply to non-EU companies too, and a pre-ticked box isn’t valid either way."}
+     {t:"Only if the company is based inside the EU", why:"The GDPR can apply to non-EU companies too, and a pre-checked box isn’t valid either way."}
    ]},
    {id:"t1u5-q22", lesson:"t1u5-l3", level:2, q:"Which is NOT one of the GDPR’s six lawful bases for using personal data?", options:[
      {t:"The company’s wish to keep data forever “just in case”", ok:true, why:"That isn’t a lawful basis, and it conflicts with the storage-limitation principle."},

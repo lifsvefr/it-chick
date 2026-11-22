@@ -39,7 +39,7 @@ ICA.addUnit({
       {tip:"Understanding every word is not the aim. People follow lectures, in any language, by catching the structure and the key points, then filling gaps later from the slides and the reading."}
     ]},
     {h:"Signposts: the lecture’s road signs", body:[
-      "A [[lecture-signpost|lecture signpost]] is a phrase that tells you where the talk is going, like the signs on a motorway (highway). It carries little content itself, but it tells you how to file the content that comes next. Writing uses [[signposting]] too. Speech uses even more of it, because listeners can’t see the headings.",
+      "A [[lecture-signpost|lecture signpost]] is a phrase that tells you where the talk is going, like the signs on a highway. It carries little content itself, but it tells you how to file the content that comes next. Writing uses [[signposting]] too. Speech uses even more of it, because listeners can’t see the headings.",
       {table:[
         ["What it signals","Typical phrases"],
         ["Preview of the lecture","“Today I’ll look at…” · “I’m going to cover three things.” · “By the end of this session you should be able to…”"],
@@ -555,7 +555,7 @@ ICA.addUnit({
       "Speakers divide speech into [[thought-group|thought groups]]: short groups of words that belong together, each with one main stress, separated by small pauses or changes in pitch. Good chunking lets listeners process one piece at a time. A pause in the wrong place (“The results of the / study show”) breaks a phrase apart and makes the listener work harder.",
       {ex:"In our survey / of two hundred STUdents, / most said they CYCled / when the weather was GOOD, // but in WINter / the numbers fell SHARPly.", label:"A marked-up script: / short pause · // longer pause · CAPITALS main stress", mono:true},
       {list:[
-        "Pause where writing would have a comma or full stop (period), and between clauses.",
+        "Pause where writing would have a comma or period, and between clauses.",
         "Pause briefly before and after a key point, to frame it.",
         "Keep grammatical units together: “the / results” and “of / the study” split units that belong together.",
         "Slightly slower with good pauses is clearer than fast without them."
@@ -811,7 +811,7 @@ ICA.addUnit({
    apply:{intro:"These tasks help you use what you’ve learned in this unit in real study.", tasks:[
     {t:"Plan an office-hours visit", how:["Choose a course you are taking, or imagine one.","Find out when and how its office hours work.","Write your opening sentence, two or three specific questions and a closing sentence.","If you go, note afterwards what you learned and what to do next."], write:"Course and office-hours details… My opening… My questions… My closing… What happened…"},
     {t:"Listen across Englishes", how:["Find two talks or lectures by speakers from different parts of the world (TED makes this easy).","Listen to five minutes of each with the transcript.","Note what made each speaker easy to follow: structure, pace, pauses, stress, signposts."], write:"Speaker 1 and what helped… Speaker 2 and what helped… One habit I want to copy…"},
-    {t:"Build a four-week listening plan", how:["Pick two resources from this lesson that suit your field.","Plan three short sessions a week (15–30 minutes), each with a task: notes, shadowing or a signpost hunt.","Put the sessions in your calendar, and tick them off."], write:"Resources… My weekly plan… Week 1–4 ticks and notes…"},
+    {t:"Build a four-week listening plan", how:["Pick two resources from this lesson that suit your field.","Plan three short sessions a week (15–30 minutes), each with a task: notes, shadowing or a signpost hunt.","Put the sessions in your calendar, and check them off."], write:"Resources… My weekly plan… Week 1–4 check marks and notes…"},
     {t:"Look back and look ahead", how:["List the three most useful things you learned in Academic English.","Write one thing you’ll keep practicing.","If you plan to study in Japanese, write one question you hope Academic Japanese will answer."], write:"Three useful things… What I’ll keep practicing… My question for Academic Japanese…"}
    ], proof:"A prepared office-hours plan, notes comparing two speakers from different parts of the world, a four-week listening plan, and a short reflection on your Academic English learning."},
    read:[

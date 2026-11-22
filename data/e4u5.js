@@ -354,7 +354,7 @@ ICA.addUnit({
     {id:"e4u5-l3-x3", type:"match", q:"Match each example to Appadurai’s scape.", pairs:[
       ["Filipino nurses working in hospitals in the Gulf","Ethnoscape","Flows of people."],
       ["A Turkish drama dubbed into Arabic and Spanish","Mediascape","Flows of images and stories."],
-      ["Mobile-phone networks and apps reaching remote villages","Technoscape","Flows of technology."],
+      ["Cell-phone networks and apps reaching remote villages","Technoscape","Flows of technology."],
       ["Money sent home to families in Tajikistan","Financescape","Flows of money."],
       ["Protest movements borrowing the language of “human rights”","Ideoscape","Flows of political ideas."]
     ]},
@@ -426,7 +426,7 @@ ICA.addUnit({
       "[[habitus|Habitus]] is Bourdieu’s word for the lasting dispositions people absorb from their upbringing: ways of standing, speaking, judging and hoping that feel natural. Think of a skilled footballer who knows where the ball will go without thinking: a **feel for the game**.",
       "A [[field-bourdieu|field]] is a social arena with its own stakes and rules, such as art, academia, journalism, business or diplomacy. Players compete for the capital the field values. Newcomers whose habitus fits the field feel at ease while others feel out of place.",
       {fig:'<svg viewBox="0 0 340 310"><defs><marker id="e4u5-l4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="170" y="14" text-anchor="middle">Most total capital</text><path class="d-ink" d="M170 24 L170 284" stroke-width="2" marker-start="url(#e4u5-l4-a)" marker-end="url(#e4u5-l4-a)"/><path class="d-ink" d="M14 150 L326 150" stroke-width="2" marker-start="url(#e4u5-l4-a)" marker-end="url(#e4u5-l4-a)"/><rect class="d-lup" x="22" y="38" width="132" height="46" rx="8" stroke-width="2"/><text x="88" y="58" text-anchor="middle">Professors,</text><text class="s" x="88" y="75" text-anchor="middle">artists</text><rect class="d-gold" x="186" y="38" width="132" height="46" rx="8" stroke-width="2"/><text x="252" y="58" text-anchor="middle">Executives,</text><text class="s" x="252" y="75" text-anchor="middle">business owners</text><text class="s" x="18" y="170">more cultural</text><text class="s" x="322" y="170" text-anchor="end">more economic</text><rect class="d-lup" x="22" y="184" width="132" height="46" rx="8" stroke-width="2"/><text x="88" y="204" text-anchor="middle">Teachers,</text><text class="s" x="88" y="221" text-anchor="middle">librarians</text><rect class="d-gold" x="186" y="184" width="132" height="46" rx="8" stroke-width="2"/><text x="252" y="204" text-anchor="middle">Shopkeepers,</text><text class="s" x="252" y="221" text-anchor="middle">small traders</text><rect class="d-soft" x="100" y="242" width="140" height="40" rx="8" stroke-width="2"/><text x="170" y="267" text-anchor="middle">Manual workers</text><text class="s" x="170" y="302" text-anchor="middle">Least total capital</text></svg>', alt:"A social space with two axes. The vertical axis runs from least total capital at the bottom to most at the top. The horizontal axis runs from more cultural capital on the left to more economic capital on the right. Professors and artists are top left; executives and business owners top right; teachers and librarians lower left; shopkeepers and small traders lower right; manual workers at the bottom center.", cap:"A simplified version of Bourdieu’s social space in *Distinction* (1979). Tastes cluster by position."},
-      "Sometimes the dominated come to see their own position as natural or deserved. Bourdieu calls this [[symbolic-violence|symbolic violence]]: domination that works through accepted categories rather than force. An example is a pupil with a regional accent who concludes she is “not clever”."
+      "Sometimes the dominated come to see their own position as natural or deserved. Bourdieu calls this [[symbolic-violence|symbolic violence]]: domination that works through accepted categories rather than force. An example is a student with a regional accent who concludes she is “not clever”."
     ]},
     {h:"Bourdieu in world politics", body:[
       "IR scholars took these tools abroad. Vincent Pouliot’s *International Security in Practice* (2010) studied NATO–Russia diplomacy after the Cold War. He argued that diplomats’ habitus, their sense of their own country’s rank, shaped what cooperation seemed possible. Rebecca Adler-Nissen edited *Bourdieu in International Relations* (2013). The Paris School of security studies (Unit 2) treats border and police agencies as a transnational **field** of security professionals competing over who defines threats. This is the [[practice-turn|practice turn]] from Unit 3.",
@@ -457,7 +457,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u5-l4-x1", type:"sort", q:"Which kind of capital is each resource, in Bourdieu’s terms?", buckets:["Economic","Cultural","Social","Symbolic"], items:[
-      {t:"A family’s rental flats in Jakarta", b:0, why:"Property and income are economic capital."},
+      {t:"A family’s rental apartments in Jakarta", b:0, why:"Property and income are economic capital."},
       {t:"Ease in discussing classical music and art", b:1, why:"Embodied knowledge and taste are cultural capital."},
       {t:"A doctorate from a well-known university", b:1, why:"Diplomas are institutionalized cultural capital."},
       {t:"Friends from school who now work in ministries", b:2, why:"Useful networks are social capital."},
@@ -471,7 +471,7 @@ ICA.addUnit({
       {t:"A habit of reading long novels for pleasure", b:0, why:"A lasting disposition is embodied capital."},
       {t:"A university degree", b:2, why:"Degrees are the classic institutionalized form."}
     ]},
-    {id:"e4u5-l4-x3", type:"mcq", q:"Tomás grew up on a farm and wins a scholarship to a city university. He gets top marks but feels awkward at seminars and dinners, and decides he is “not the academic type”. Which concepts fit best?", options:[
+    {id:"e4u5-l4-x3", type:"mcq", q:"Tomás grew up on a farm and wins a scholarship to a city university. He gets top grades but feels awkward at seminars and dinners, and decides he is “not the academic type”. Which concepts fit best?", options:[
       {t:"Habitus and symbolic violence", ok:true, why:"Right. His dispositions fit the field poorly, and he accepts a judgment that turns social difference into personal inadequacy."},
       {t:"Economic capital and cultural omnivores", why:"His problem is not money or broad taste; it is the fit between habitus and field."},
       {t:"Cosmopolitan right and hospitality", why:"Kant’s idea concerns strangers arriving in foreign territory, not class in a university."},

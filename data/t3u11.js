@@ -240,11 +240,11 @@ ICA.addUnit({
       {v:0.455, tol:0.002, why:"0.455 is 20 ÷ 44, which is P(online | failed): the condition is the wrong way round."},
       {v:0.22, tol:0.001, why:"0.22 is 44 ÷ 200, the failure rate of all students. The question asks only about online students."}
     ], hint2:"Which group are you inside? Divide by that group’s total."},
-    {id:"t3u11-l2-x4", type:"number", q:"A drawer holds 8 batteries, 3 of them flat. Mei takes two at random, without putting the first back. What is the probability that **both** are flat? Give a decimal to three places.", answer:0.107, tol:0.001, unit:"", why:"P(first flat) = 3/8. Then 2 flat batteries remain among 7, so P(second flat | first flat) = 2/7. Multiply: 3/8 × 2/7 = 6/56 ≈ 0.107.", wrongs:[
-      {v:0.141, tol:0.001, why:"0.141 is 3/8 × 3/8, as if the first battery were put back. Without replacement, only 2 flat ones are left among 7."},
-      {v:0.375, tol:0.001, why:"0.375 is 3/8, the chance that the first one is flat. Both must be flat."},
+    {id:"t3u11-l2-x4", type:"number", q:"A drawer holds 8 batteries, 3 of them dead. Mei takes two at random, without putting the first back. What is the probability that **both** are dead? Give a decimal to three places.", answer:0.107, tol:0.001, unit:"", why:"P(first dead) = 3/8. Then 2 dead batteries remain among 7, so P(second dead | first dead) = 2/7. Multiply: 3/8 × 2/7 = 6/56 ≈ 0.107.", wrongs:[
+      {v:0.141, tol:0.001, why:"0.141 is 3/8 × 3/8, as if the first battery were put back. Without replacement, only 2 dead ones are left among 7."},
+      {v:0.375, tol:0.001, why:"0.375 is 3/8, the chance that the first one is dead. Both must be dead."},
       {v:0.75, tol:0.001, why:"0.75 adds 3/8 twice. “Both” needs the multiplication rule."}
-    ], hint2:"Multiply along the tree: P(first flat) × P(second flat | first flat)."},
+    ], hint2:"Multiply along the tree: P(first dead) × P(second dead | first dead)."},
     {id:"t3u11-l2-x5", type:"mcq", q:"A café looks at 200 orders (invented). 50 used oat milk, and 20 of those also included cake. Of the 150 orders without oat milk, 60 included cake. What can you say about “oat milk” and “cake”?", options:[
       {t:"They are independent in these data: 40% of orders include cake, with or without oat milk.", ok:true, why:"P(cake) = 80/200 = 0.4; P(cake | oat) = 20/50 = 0.4; P(cake | no oat) = 60/150 = 0.4. Knowing about the oat milk doesn’t change the chance of cake."},
       {t:"They are mutually exclusive, because most oat-milk orders had no cake.", why:"Mutually exclusive means they can’t happen together. Here 20 orders had both."},
@@ -585,7 +585,7 @@ ICA.addUnit({
     {h:"Working backwards: setting a target", body:[
       "Percentiles let you set targets. Suppose the rice company wants **no more than 1%** of bags under 1,000 g. With an SD of 6 g, where should the machine’s mean be?",
       {ex:"1,000 g must be the 1st percentile.\nz for the 1st percentile = −2.326\n  =NORM.INV(0.01,0,1)  or\n  qnorm(0.01)\n\nmean = 1,000 + 2.326 × 6\n     = 1,013.96 ≈ 1,014 g\n\nWith a steadier machine (SD 4 g):\nmean = 1,000 + 2.326 × 4\n     = 1,009.3 g", label:"Worked example", mono:true},
-      "This is a real trade-off: a higher mean gives away more rice in every bag; a steadier machine costs money but lets the mean come down. The same calculation sets pass marks for the top 10% of scores, safety margins for loads, or stock levels that run out on no more than 1 day in 20.",
+      "This is a real trade-off: a higher mean gives away more rice in every bag; a steadier machine costs money but lets the mean come down. The same calculation sets passing scores for the top 10% of scores, safety margins for loads, or stock levels that run out on no more than 1 day in 20.",
       {tip:"For “top 10%” use the 90th percentile: `=NORM.INV(0.9,mean,SD)`. NORM.INV always works with the area to the **left**."}
     ]},
     {h:"When is a normal model reasonable?", body:[
@@ -927,7 +927,7 @@ ICA.addUnit({
       "**Spreadsheets recalculate.** Every edit redraws RAND and RANDBETWEEN values, so totals change under your eyes. To keep one set of results, copy the cells and paste them as values only (Paste special; the exact menu name differs slightly between apps)."
      ],
      pro:[
-      "**Monte Carlo methods** use simulation for problems with no tidy formula: complicated risks, queues, and many modern statistical methods (bootstrap intervals, permutation tests, Bayesian computation). Unit 7’s shuffling test is one.",
+      "**Monte Carlo methods** use simulation for problems with no tidy formula: complicated risks, waiting lines, and many modern statistical methods (bootstrap intervals, permutation tests, Bayesian computation). Unit 7’s shuffling test is one.",
       "**Generators.** R’s default generator is the Mersenne Twister; since R 3.6.0 `sample()` uses a “Rejection” method by default, so very old code can give different results with the same seed. Spreadsheet apps use their own generators and don’t promise reproducibility across apps or versions.",
       "**Checking a simulation.** Compare it with a case you can solve exactly (a fair coin, B(10, 0.25)) before trusting it on a hard one; run it with more repeats and confirm the answer settles; and vary the seed to see the chance wobble.",
       "**Garbage in.** A simulation that assumes independence, a fixed p or a normal shape inherits every weakness of those assumptions. Simulations are honest about chance variation but say nothing about whether the model matches the world.",

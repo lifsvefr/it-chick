@@ -82,7 +82,7 @@ ICA.addUnit({
       {ex:"Two classes did a test. Class A: 9 of 10 passed (90%). Class B: 20 of 40 passed (50%).\n\nWrong: (90% + 50%) ÷ 2 = 70%.\nRight: (9 + 20) ÷ (10 + 40) = 29 ÷ 50 = 58%.\n\nClass B has four times as many students, so it should count four times as much.", label:"Worked example: combining groups (invented figures)"},
       "Some percentages are not meant to add up to 100 at all:",
       {list:[
-        "**Choose-all-that-apply questions.** If people could tick several reasons, the shares can add up to 160%.",
+        "**Choose-all-that-apply questions.** If people could check several reasons, the shares can add up to 160%.",
         "**Rounding.** Three equal groups each round to 33%, totaling 99%. That’s honest rounding, not an error.",
         "**Different bases.** “40% of women and 30% of men” can’t be combined into 70% of anything."
       ]},
@@ -320,7 +320,7 @@ ICA.addUnit({
     {h:"When the group changes, not the people", body:[
       "An average can move because **who is in the group** changed, even if nothing happened to anyone in it. Statisticians call this a **composition effect**.",
       {ex:"A firm has 10 staff: 6 earn 25,000 and 4 earn 50,000. Mean pay: 35,000.\n\nThree of the lower-paid staff leave. Now 3 earn 25,000 and 4 earn 50,000.\nMean pay: (75,000 + 200,000) ÷ 7 ≈ 39,286, up about 12%.\n\nNobody got a pay rise. The average went up because lower-paid people left.", label:"Worked example: a rise with no raises (invented figures)"},
-      "Composition effects appear in school results (which pupils sat the exam?), hospital outcomes (which patients were admitted?) and average earnings in a recession (who lost their jobs?). When an average changes, ask: **did the values change, or did the group change?**"
+      "Composition effects appear in school results (which students sat the exam?), hospital outcomes (which patients were admitted?) and average earnings in a recession (who lost their jobs?). When an average changes, ask: **did the values change, or did the group change?**"
     ]}
    ],
    try:[
@@ -330,15 +330,15 @@ ICA.addUnit({
       {t:"Use the mode instead, because it is always the fairest average", why:"Here every price is different, so there is no single mode. The median is the useful summary for typical prices."},
       {t:"Remove the 1,500 price, because a price that high must be a typing mistake", why:"A very high value isn’t automatically an error; mansions exist. Keep it and choose a summary that isn’t dragged by it, or report both."}
     ]},
-    {id:"t3u1-l3-x2", type:"number", q:"A school has two classes. Class A has 25 pupils with a mean score of 72. Class B has 15 pupils with a mean score of 80. What is the mean score of **all 40 pupils**?", answer:75, tol:0.01, unit:"points", why:"Weight by size: (25 × 72 + 15 × 80) ÷ 40 = (1,800 + 1,200) ÷ 40 = 3,000 ÷ 40 = 75.", wrongs:[
-      {v:76, tol:0.01, why:"76 is the simple average of 72 and 80. It treats both classes as equal in size, but Class A has 25 pupils and Class B only 15."},
-      {v:152, tol:0.01, why:"You added the two means. Means from groups can’t be added; multiply each by its group size, add, and divide by the total number of pupils."}
+    {id:"t3u1-l3-x2", type:"number", q:"A school has two classes. Class A has 25 students with a mean score of 72. Class B has 15 students with a mean score of 80. What is the mean score of **all 40 students**?", answer:75, tol:0.01, unit:"points", why:"Weight by size: (25 × 72 + 15 × 80) ÷ 40 = (1,800 + 1,200) ÷ 40 = 3,000 ÷ 40 = 75.", wrongs:[
+      {v:76, tol:0.01, why:"76 is the simple average of 72 and 80. It treats both classes as equal in size, but Class A has 25 students and Class B only 15."},
+      {v:152, tol:0.01, why:"You added the two means. Means from groups can’t be added; multiply each by its group size, add, and divide by the total number of students."}
     ]},
     {id:"t3u1-l3-x3", type:"match", q:"Match each question to the summary that answers it best.", pairs:[
       ["What does a typical home in this town cost?","The median price","House prices are skewed by a few expensive homes; the median shows the middle of the market."],
       ["How much water will the whole village use?","The mean use per household","Mean × number of households = total, which is what the supply must meet."],
       ["Which shoe size should a shop stock most of?","The mode","The most common size is the one most customers need."],
-      ["Do the pupils’ scores vary a lot?","The range or interquartile range","These describe spread, which no average shows."]
+      ["Do the students’ scores vary a lot?","The range or interquartile range","These describe spread, which no average shows."]
     ]},
     {id:"t3u1-l3-x4", type:"mcq", q:"In an invented study, Hospital X has a lower survival rate than Hospital Y overall, but a higher survival rate both for patients admitted in a mild condition and for patients admitted in a severe condition. What is the most likely explanation?", options:[
       {t:"Hospital X treats a much larger share of severe patients", ok:true, why:"Severe patients are less likely to survive anywhere. That is Simpson’s paradox. Severity affects both which hospital patients go to and their chances, so the combined rate mostly reflects the mix of patients. Within each severity group, X does better."},
@@ -506,7 +506,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t3u1-l5", title:"Numbers in context: size, money, uncertainty and who’s missing", minutes:55,
-   hook:{q:"How long is a million seconds? And a billion seconds?", options:["About 12 days, and about 32 years","About 12 days, and about 120 days","About 1 year, and about 10 years","About 3 hours, and about 1 month"], answer:0, reveal:"**About 12 days, and about 32 years.** A million seconds is 1,000,000 ÷ 86,400 seconds a day ≈ 11.6 days. A billion is a thousand times more: about 31.7 years. In headlines “million” and “billion” sound like neighbors, but they are as far apart as a fortnight and a lifetime’s career. This lesson is about getting a feel for size, and the other context a number needs."},
+   hook:{q:"How long is a million seconds? And a billion seconds?", options:["About 12 days, and about 32 years","About 12 days, and about 120 days","About 1 year, and about 10 years","About 3 hours, and about 1 month"], answer:0, reveal:"**About 12 days, and about 32 years.** A million seconds is 1,000,000 ÷ 86,400 seconds a day ≈ 11.6 days. A billion is a thousand times more: about 31.7 years. In headlines “million” and “billion” sound like neighbors, but they are as far apart as two weeks and a lifetime’s career. This lesson is about getting a feel for size, and the other context a number needs."},
    goals:[
      "Read millions, billions and trillions as orders of magnitude, including where words differ between languages",
      "Make big numbers meaningful: per person, per day, and as a share of a total",
@@ -591,7 +591,7 @@ ICA.addUnit({
       {t:"2 million euros", why:"Far too small: billón means a million million."},
       {t:"200 million euros", why:"No reading of billón gives this. Spanish billón is 10¹², an English trillion."}
     ]},
-    {id:"t3u1-l5-x3", type:"number", q:"Rent on a flat was 800 a month in 2018 and 950 in 2025. An invented price index was 110 in 2018 and 140 in 2025. What was the 2018 rent worth **in 2025 money**? (Round to the nearest whole number.)", answer:1018, tol:1, unit:"per month", hint2:"Multiply by the later index and divide by the earlier one.", why:"800 × 140 ÷ 110 ≈ 1,018.18, so about 1,018 a month in 2025 money. The actual 2025 rent, 950, is lower than that: in real terms the rent fell, even though it rose by 150 in nominal terms.", wrongs:[
+    {id:"t3u1-l5-x3", type:"number", q:"Rent on an apartment was 800 a month in 2018 and 950 in 2025. An invented price index was 110 in 2018 and 140 in 2025. What was the 2018 rent worth **in 2025 money**? (Round to the nearest whole number.)", answer:1018, tol:1, unit:"per month", hint2:"Multiply by the later index and divide by the earlier one.", why:"800 × 140 ÷ 110 ≈ 1,018.18, so about 1,018 a month in 2025 money. The actual 2025 rent, 950, is lower than that: in real terms the rent fell, even though it rose by 150 in nominal terms.", wrongs:[
       {v:629, tol:1, why:"You divided by the later index and multiplied by the earlier one (800 × 110 ÷ 140). To bring an old amount forward, multiply by the newer index and divide by the older one."},
       {v:950, tol:1, why:"950 is the actual 2025 rent. The question asks what 800 in 2018 would be worth in 2025 prices: 800 × 140 ÷ 110."},
       {v:830, tol:1, why:"You added the 30-point index difference to the rent. Indexes work by ratio: multiply by 140 ÷ 110."}
@@ -1042,10 +1042,10 @@ ICA.addUnit({
      {t:"Keyhole surgery was better for every type of stone", why:"Within each stone size, open surgery had the higher success rate."},
      {t:"The two groups had different numbers of patients", why:"Both groups had 350 patients. The issue is how each group’s patients were split between small and large stones."}
    ]},
-   {id:"t3u1-q24", lesson:"t3u1-l3", level:3, q:"A school’s average exam score rose this year. Ana learns that the school encouraged pupils expected to do badly not to sit the exam. What is the best conclusion?", options:[
-     {t:"The rise may be a composition effect: a different group sat the exam", ok:true, why:"The average can rise without anyone doing better: removing lower scorers raises the mean on its own. To judge teaching, you’d compare pupils like-for-like, or include everyone who would normally have sat it."},
+   {id:"t3u1-q24", lesson:"t3u1-l3", level:3, q:"A school’s average exam score rose this year. Ana learns that the school encouraged students expected to do badly not to sit the exam. What is the best conclusion?", options:[
+     {t:"The rise may be a composition effect: a different group sat the exam", ok:true, why:"The average can rise without anyone doing better: removing lower scorers raises the mean on its own. To judge teaching, you’d compare students like-for-like, or include everyone who would normally have sat it."},
      {t:"The teaching must have improved, because the school’s average score rose", why:"The average rose, but the group being averaged changed. That alone can explain the rise."},
-     {t:"The average must have been calculated wrongly", why:"The arithmetic may be fine. The problem is which pupils were included."},
+     {t:"The average must have been calculated wrongly", why:"The arithmetic may be fine. The problem is which students were included."},
      {t:"Averages are meaningless and should never be used for schools", why:"Averages are useful when the groups compared are similar. Here, they aren’t."}
    ]},
    {id:"t3u1-q25", lesson:"t3u1-l3", level:2, q:"A festival organizer wants to estimate the total amount of food needed for 5,000 visitors. Which summary of past visitors’ food purchases should she use?", options:[

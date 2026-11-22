@@ -143,7 +143,7 @@ window.FLAB = [
 
 /* ---------- Decisions and conditions ---------- */
 {id:"fl-if", group:"logic", title:"IF: pass or try again", lesson:"t1u9-l3", keep:["B4"], intRange:[0,100], vary:["num","none"], extra:[{},{B3:49,B6:51}],
- task:"The pass mark is 50. In `C2`, show **Pass** if the score in `B2` is 50 or more, otherwise **Try again**. It will be copied down to `C6`.",
+ task:"The passing score is 50. In `C2`, show **Pass** if the score in `B2` is 50 or more, otherwise **Try again**. It will be copied down to `C6`.",
  data:[["Name","Score","Result"],["Ana",72,null],["Kenji",44,null],["Priya",50,null],["Dmitri",91,null],["Hana",38,null]],
  fmt:{}, target:"C2", fill:"C2:C6", answer:"=IF(B2>=50,\"Pass\",\"Try again\")", also:["=IF(B2<50,\"Try again\",\"Pass\")"],
  traps:[{f:"=IF(B2>50,\"Pass\",\"Try again\")", title:"Check the boundary", why:"With your test, a score of exactly 50 gets “Try again” (Priya’s row). The task says 50 **or more** passes: `B2>=50` (`>` alone means *more than*)."}],
@@ -192,12 +192,12 @@ window.FLAB = [
  hints:["The criteria can be a cell address."],
  explain:"Putting the criteria in a cell turns a one-off formula into a small tool: type a different name in `E2` and the total updates."},
 {id:"fl-countifcell", group:"logic", title:"Criteria with an operator and a cell", lesson:"t1u9-l3", must:{fn:["COUNTIF|COUNTIFS"]}, keep:["B4"], extra:[{E2:70}],
- task:"The pass mark is in `E2`. In `E3`, count the scores in `B2:B8` that are **at or above** the pass mark.",
- data:[["Name","Score","","","Pass mark"],["Ana",72,null,null,60],["Kenji",44,null,null,null],["Priya",60,null,null,null],["Dmitri",91,null,null,null],["Hana",38,null,null,null],["Mei",65,null,null,null],["Tomás",59,null,null,null]],
+ task:"The passing score is in `E2`. In `E3`, count the scores in `B2:B8` that are **at or above** the passing score.",
+ data:[["Name","Score","","","Passing score"],["Ana",72,null,null,60],["Kenji",44,null,null,null],["Priya",60,null,null,null],["Dmitri",91,null,null,null],["Hana",38,null,null,null],["Mei",65,null,null,null],["Tomás",59,null,null,null]],
  fmt:{}, target:"E3", answer:"=COUNTIF(B2:B8,\">=\"&E2)",
  traps:[{f:"=COUNTIF(B2:B8,\">=E2\")", why:"Inside the quotes, E2 is just letters, so this compares the scores with the text “E2”. Keep the operator in quotes and join the cell with &: `\">=\"&E2`."},
-        {f:"=COUNTIF(B2:B8,\">=60\")", why:"This works for a pass mark of 60, but it ignores `E2`. When we changed `E2` in a hidden copy, the count didn’t change. Use `\">=\"&E2`."},
-        {f:"=COUNTIF(B2:B8,\">\"&E2)", why:"`\">\"` leaves out scores exactly equal to the pass mark (Priya’s 60). Use `\">=\"`."}],
+        {f:"=COUNTIF(B2:B8,\">=60\")", why:"This works for a passing score of 60, but it ignores `E2`. When we changed `E2` in a hidden copy, the count didn’t change. Use `\">=\"&E2`."},
+        {f:"=COUNTIF(B2:B8,\">\"&E2)", why:"`\">\"` leaves out scores exactly equal to the passing score (Priya’s 60). Use `\">=\"`."}],
  hints:["The operator is text; the cell is a cell. Join them with `&`."],
  explain:"`\">=\"&E2` builds the condition text from two parts: the operator and the value in E2. With E2 at 60, it becomes `\">=60\"`."},
 

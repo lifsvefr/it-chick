@@ -866,7 +866,7 @@ ICA.addUnit({
    {id:"t4u10-cp09", lesson:"t4u10-l3", level:3, q:"Femi is presenting a small pilot of a tutoring scheme in one school. Which slide headline is best?", options:[
      {t:"“Results”", why:"A topic label tells the audience nothing. The assertion–evidence approach uses a full-sentence claim as the headline."},
      {t:"“Tutoring transforms children’s reading”", why:"This is a claim, but far stronger than one small pilot can support, and it generalizes beyond one school."},
-     {t:"“In one pilot school, tutored pupils read slightly more fluently”", ok:true, why:"A full-sentence assertion that matches the evidence: specific about where, and hedged to its size."},
+     {t:"“In one pilot school, tutored students read slightly more fluently”", ok:true, why:"A full-sentence assertion that matches the evidence: specific about where, and hedged to its size."},
      {t:"“Tutoring might possibly perhaps help some reading a little”", why:"This is over-hedged. One clear, honest claim works better than stacked doubts."}]},
    {id:"t4u10-cp10", lesson:"t4u10-l4", level:3, q:"Oscar’s preprint reports a survey of 900 workers: those working remotely reported higher wellbeing. His draft social media post says: “Our new study proves remote work makes people happier!” Which version is best?", options:[
      {t:"The same post, with a link to the preprint added", why:"A link doesn’t fix the claim. “Proves” overclaims, and readers may not realize a preprint hasn’t been reviewed."},
@@ -1378,7 +1378,7 @@ ICA.addUnit({
      {t:"“Therefore”, because nothing shows the rainfall caused the election", ok:true, why:"“Therefore” claims a consequence. Unless the text shows a causal link, it misrepresents the logic."},
      {t:"Nothing is wrong: any transition word helps to make academic writing flow", why:"Transitions carry logical claims; the wrong one makes the reasoning false."},
      {t:"The problem is the percentage sign", why:"Percentages are fine in academic writing."},
-     {t:"The problem is the full stop between the sentences", why:"Punctuation isn’t the issue; the claimed relationship is."}]},
+     {t:"The problem is the period between the sentences", why:"Punctuation isn’t the issue; the claimed relationship is."}]},
    {id:"t4u10-q05", lesson:"t4u10-l1", level:3, q:"Priya’s study of 30 small cafés in one city found that those with loyalty cards reported more repeat customers. Which sentence best fits the evidence?", options:[
      {t:"Cafés with cards reported more repeat customers, so cards may help; a larger study should test this.", ok:true, why:"It reports the finding precisely, hedges the interpretation once and names a limitation."},
      {t:"Loyalty cards cause customers to return to cafés everywhere.", why:"Overclaims twice: a correlational study can’t show cause, and one city can’t speak for “everywhere”."},
@@ -1455,7 +1455,7 @@ ICA.addUnit({
      {t:"Presenters stand by their posters and talk with visitors", ok:true, why:"It’s an interactive, conversational format."},
      {t:"Each presenter gives a 20-minute lecture to a seated audience", why:"That describes a talk session."},
      {t:"Posters are judged with nobody present", why:"Presenters are usually expected to be there for discussion."},
-     {t:"Posters are only sent to reviewers by post", why:"Posters are displayed at the conference, in print or on screens."}]},
+     {t:"Posters are only sent to reviewers by mail", why:"Posters are displayed at the conference, in print or on screens."}]},
    {id:"t4u10-q20", lesson:"t4u10-l3", level:2, q:"A conference slot is 20 minutes, including 5 minutes for questions. How long should the talk be?", options:[
      {t:"No more than 15 minutes", ok:true, why:"Ideally, rehearse it to a little less. 20 − 5 = 15, and real talks tend to run longer than rehearsals."},
      {t:"20 minutes, the full slot", why:"That leaves no time for the questions included in the slot."},

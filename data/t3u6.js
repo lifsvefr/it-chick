@@ -85,7 +85,7 @@ ICA.addUnit({
     ]},
     {h:"What the central limit theorem does not say", body:[
       "The CLT is often quoted loosely. These are the misreadings worth unlearning:",
-      {table:[["Misreading","What’s actually true"],["“With a big sample, the data become normal.”","The data keep their shape: 1,000 waiting times are still skewed. It’s the *means* of samples that become normal."],["“n = 30 is always enough.”","30 is a rule of thumb. Symmetric populations need fewer; very skewed or heavy-tailed ones need more."],["“A large sample fixes a biased sample.”","If the sampling method favors some people, the sampling distribution is centered on the wrong value. More data just makes you confidently wrong (see [[nonresponse-bias-term|nonresponse bias]])."],["“It works for any data.”","It needs independence. Pupils from the same class, or repeated measurements of the same person, are clustered, and σ ÷ √n then understates the real uncertainty."],["“It applies to every statistic.”","It applies to means, sums and proportions. A sample’s maximum, for example, does not become bell-shaped."],["“n is the number of samples.”","n is the size of *each* sample. Simulating more samples just draws the same sampling distribution in more detail."]]},
+      {table:[["Misreading","What’s actually true"],["“With a big sample, the data become normal.”","The data keep their shape: 1,000 waiting times are still skewed. It’s the *means* of samples that become normal."],["“n = 30 is always enough.”","30 is a rule of thumb. Symmetric populations need fewer; very skewed or heavy-tailed ones need more."],["“A large sample fixes a biased sample.”","If the sampling method favors some people, the sampling distribution is centered on the wrong value. More data just makes you confidently wrong (see [[nonresponse-bias-term|nonresponse bias]])."],["“It works for any data.”","It needs independence. Students from the same class, or repeated measurements of the same person, are clustered, and σ ÷ √n then understates the real uncertainty."],["“It applies to every statistic.”","It applies to means, sums and proportions. A sample’s maximum, for example, does not become bell-shaped."],["“n is the number of samples.”","n is the size of *each* sample. Simulating more samples just draws the same sampling distribution in more detail."]]},
       {tip:"OpenStax puts the last point well: n is the number of values averaged together, not the number of times the experiment is repeated."},
       "Why does all this matter? Because almost every method in the rest of this unit, from confidence intervals to t-tests and regression, leans on the sampling distribution being roughly normal. Knowing when that’s true is what lets you trust, or question, the numbers those methods produce."
     ]}
@@ -124,7 +124,7 @@ ICA.addUnit({
     {id:"t3u6-l1-x6", type:"sort", q:"For each plan, is the independence condition reasonable, or doubtful?", buckets:["Reasonable","Independence is doubtful"], items:[
       {t:"200 households drawn at random from a list of 50,000", b:0, why:"A simple random sample that is well under 10% of the population behaves like independent draws."},
       {t:"Rolling a fair die 30 times", b:0, why:"Each roll is a separate random event: independent by design."},
-      {t:"Testing all 30 pupils in one class to estimate a national average", b:1, why:"Pupils in one class share a teacher and a school, so they are clustered, and they aren’t a random sample of the country either."},
+      {t:"Testing all 30 students in one class to estimate a national average", b:1, why:"Students in one class share a teacher and a school, so they are clustered, and they aren’t a random sample of the country either."},
       {t:"Measuring one person’s blood pressure 30 times to estimate the average for adults", b:1, why:"Repeated measurements of one person are related to each other and only tell you about that person."},
       {t:"A café’s takings on 30 consecutive days to estimate its typical day", b:1, why:"Neighboring days are often alike (weather, events, trends), so the days aren’t independent draws."},
       {t:"Choosing 80 people at random from a national register of 5 million adults", b:0, why:"Random selection from a large population: independence is reasonable."}
@@ -356,7 +356,7 @@ ICA.addUnit({
     {id:"t3u6-l3-x4", type:"match", q:"Match each study to the right test.", pairs:[
       ["Each patient’s pain score is recorded before and after a physiotherapy course","Paired t-test","The same people are measured twice, so analyze their changes."],
       ["A sample of 30 phone batteries is compared with the advertised 20-hour life","One-sample t-test","One mean is compared with a fixed value."],
-      ["Students randomly assigned to two different revision apps are compared on test scores","Welch two-sample t-test","Two separate groups; Welch doesn’t need equal SDs."],
+      ["Students randomly assigned to two different review apps are compared on test scores","Welch two-sample t-test","Two separate groups; Welch doesn’t need equal SDs."],
       ["Whether preferred drink (tea, coffee, neither) differs between two age groups","Not a t-test: a chi-square test (Lesson 4)","Both variables are categories, so there are no means to compare."]
     ]},
     {id:"t3u6-l3-x5", type:"mcq", q:"Amara planned a two-sided test. After seeing that the new guide was faster, a colleague suggests switching to a one-sided test “since we know which way it went”, halving p to 0.010. What’s the problem?", options:[
@@ -479,7 +479,7 @@ ICA.addUnit({
       {t:"The smallest expected count in the table is 28", b:0, why:"Well above the guideline of at least 5 in every cell."},
       {t:"The table contains row percentages instead of counts", b:1, why:"χ² must be calculated from counts. Percentages hide the sample size, and the statistic would be wrong."},
       {t:"One cell has an expected count of 2", b:1, why:"Below the usual minimum of 5: the chi-square approximation may be poor. Combining categories or an exact test can help."},
-      {t:"People could tick several contact methods, and every tick was counted", b:1, why:"The same person then appears in several cells, so the counts aren’t independent observations."},
+      {t:"People could check several contact methods, and every check was counted", b:1, why:"The same person then appears in several cells, so the counts aren’t independent observations."},
       {t:"The table has 3 rows and 4 columns", b:0, why:"Any size works; the degrees of freedom are just (3 − 1)(4 − 1) = 6."}
     ]},
     {id:"t3u6-l4-x4", type:"number", q:"Using ŷ = 47.47 + 4.2x, what is the residual for the learner who practiced 3 hours and scored 55? (Two decimal places.)", answer:-5.07, tol:0.01, unit:"points", why:"Predicted: 47.47 + 4.2 × 3 = 60.07. Residual = observed − predicted = 55 − 60.07 = −5.07. The negative sign means the learner scored below the line.", wrongs:[
@@ -517,7 +517,7 @@ ICA.addUnit({
        write:"My expected counts… my p-value… which cells differ most from expected…"},
      {t:"A regression line in a spreadsheet", app:{
        ms:["Type `Hours` and `Score` in A1:B1, then 1 to 6 in A2:A7 and 52, 58, 55, 66, 70, 72 in B2:B7.","In D2 type `=SLOPE(B2:B7,A2:A7)` (4.2), in D3 `=INTERCEPT(B2:B7,A2:A7)` (47.47) and in D4 `=RSQ(B2:B7,A2:A7)` (0.895).","In C2 type `=B2-($D$3+$D$2*A2)` and fill down to C7 for the residuals. Check that `=SUM(C2:C7)` is 0 (it may show a tiny number such as 1E-14, which is rounding).","Optional: make a scatter chart of A1:B7 and add a linear trendline with its equation and R² shown."],
-       google:["Type `Hours` and `Score` in A1:B1, then 1 to 6 in A2:A7 and 52, 58, 55, 66, 70, 72 in B2:B7.","In D2 type `=SLOPE(B2:B7,A2:A7)` (4.2), in D3 `=INTERCEPT(B2:B7,A2:A7)` (47.47) and in D4 `=RSQ(B2:B7,A2:A7)` (0.895).","In C2 type `=B2-($D$3+$D$2*A2)` and fill down to C7 for the residuals. Check that `=SUM(C2:C7)` is 0 (it may show a tiny number such as 1E-14, which is rounding).","Optional: make a scatter chart of A1:B7; in the Chart editor’s **Customize → Series**, tick **Trendline**, set **Label** to **Use Equation** and tick **Show R²**."],
+       google:["Type `Hours` and `Score` in A1:B1, then 1 to 6 in A2:A7 and 52, 58, 55, 66, 70, 72 in B2:B7.","In D2 type `=SLOPE(B2:B7,A2:A7)` (4.2), in D3 `=INTERCEPT(B2:B7,A2:A7)` (47.47) and in D4 `=RSQ(B2:B7,A2:A7)` (0.895).","In C2 type `=B2-($D$3+$D$2*A2)` and fill down to C7 for the residuals. Check that `=SUM(C2:C7)` is 0 (it may show a tiny number such as 1E-14, which is rounding).","Optional: make a scatter chart of A1:B7; in the Chart editor’s **Customize → Series**, check **Trendline**, set **Label** to **Use Equation** and check **Show R²**."],
        libre:["Type `Hours` and `Score` in A1:B1, then 1 to 6 in A2:A7 and 52, 58, 55, 66, 70, 72 in B2:B7.","In D2 type `=SLOPE(B2:B7;A2:A7)` (4.2), in D3 `=INTERCEPT(B2:B7;A2:A7)` (47.47) and in D4 `=RSQ(B2:B7;A2:A7)` (0.895).","In C2 type `=B2-($D$3+$D$2*A2)` and fill down to C7 for the residuals. Check that `=SUM(C2:C7)` is 0 (it may show a tiny number such as 1E-14, which is rounding).","Optional: make an XY (Scatter) chart of A1:B7 and add a linear trend line with its equation and R²."],
        apple:["Type `Hours` and `Score` in A1:B1, then 1 to 6 in A2:A7 and 52, 58, 55, 66, 70, 72 in B2:B7.","In D2 type `=SLOPE(B2:B7,A2:A7)` (4.2), in D3 `=INTERCEPT(B2:B7,A2:A7)` (47.47) and in D4 `=RSQ(B2:B7,A2:A7)` (0.895).","In C2 type `=B2-($D$3+$D$2*A2)` and fill down to C7 for the residuals. Check that `=SUM(C2:C7)` is 0 (it may show a tiny number such as 1E-14, which is rounding).","Optional: make a scatter chart of A2:B7, select it, and in the Format controls’ **Series** tab choose **Linear** under **Trendlines**, then turn on **Show Equation** and **Show R² Value** (wording can differ slightly between Mac, iPhone and iPad)."]},
        write:"Slope… intercept… R²… my largest residual and what it means…"},
@@ -654,7 +654,7 @@ ICA.addUnit({
      {t:"About 30 minutes", why:"That is 2 SDs, which describes individual journeys. Sample means vary far less: by the SE, 15 ÷ √225 = 1."},
      {t:"About 1 minute", why:"1 minute is one standard error. About 95% of means lie within 1.96 SE, so about 2 minutes."},
      {t:"About 0.13 minutes", why:"That divides by n (15 ÷ 225 × 2) instead of √n. The SE uses the square root: 15 ÷ 15 = 1."}]},
-   {id:"t3u6-cp03", lesson:"t3u6-l1", level:3, q:"A school has 400 pupils. Ama samples 120 of them at random, without replacement, and uses s ÷ √n for the standard error. What is the main issue?", options:[
+   {id:"t3u6-cp03", lesson:"t3u6-l1", level:3, q:"A school has 400 students. Ama samples 120 of them at random, without replacement, and uses s ÷ √n for the standard error. What is the main issue?", options:[
      {t:"Nothing: s ÷ √n is exact for any sample without replacement", why:"Sampling without replacement is close to independent only while the sample is a small part of the population."},
      {t:"Her sample is 30% of the school, so the formula overstates the error", ok:true, why:"OpenIntro’s rule of thumb is a sample of no more than 10% of the population. Beyond that, the usual formulas overstate the error."},
      {t:"Her standard error is too small, so her interval is too narrow", why:"It’s the other way round. Covering a big share of a finite population leaves less to be uncertain about."},
@@ -750,7 +750,7 @@ ICA.addUnit({
       "**The statement.** If observations are independent draws from a population with mean μ and finite SD σ, then as n grows, the sampling distribution of x̄ approaches a normal distribution with mean μ and standard error σ ÷ √n (OpenStax 7.1).",
       "**How big is “large”?** It depends on the population. OpenIntro’s rules of thumb for a mean: with n < 30, there should be no clear outliers; with n ≥ 30, no particularly extreme outliers. A normal population gives a normal x̄ at any n.",
       "**Proportions.** A proportion is the mean of 0/1 values, so the CLT applies with SE = √(p(1 − p) ÷ n), provided np ≥ 10 and n(1 − p) ≥ 10 (the **success–failure condition**). With p = 0.02 and n = 200, np = 4: the normal approximation is poor.",
-      "**Independence in practice.** Simple random samples, random assignment and random processes (dice) qualify. Sampling without replacement is fine while the sample is under about 10% of the population. Clustered data (pupils within classes, repeated measurements on one person) or time series (consecutive days) break it, and σ ÷ √n then understates the uncertainty.",
+      "**Independence in practice.** Simple random samples, random assignment and random processes (dice) qualify. Sampling without replacement is fine while the sample is under about 10% of the population. Clustered data (students within classes, repeated measurements on one person) or time series (consecutive days) break it, and σ ÷ √n then understates the uncertainty.",
       {table:[["It says","It doesn’t say"],["Means become approximately normal","Data become normal"],["Spread is σ ÷ √n","n = 30 is always enough"],["For independent observations","A large biased sample is fine"],["For means, sums, proportions","Every statistic (for example a maximum) becomes normal"]]}
      ],
      pro:[
@@ -1019,11 +1019,11 @@ ICA.addUnit({
      {t:"200 people is always too few for any survey", why:"200 can be fine for proportions nearer 50%. The problem is the very small proportion."},
      {t:"Proportions never follow the central limit theorem", why:"They do, because a proportion is a mean of 0s and 1s, once np and n(1 − p) are at least about 10."},
      {t:"The population is too large", why:"Population size isn’t the issue; the expected number of “yes” answers is."}]},
-   {id:"t3u6-q08", lesson:"t3u6-l1", level:3, q:"Priya wants the average reading score of pupils in a region. She tests all 28 pupils in one class and uses σ ÷ √28 for the standard error. What is the main problem?", options:[
+   {id:"t3u6-q08", lesson:"t3u6-l1", level:3, q:"Priya wants the average reading score of students in a region. She tests all 28 students in one class and uses σ ÷ √28 for the standard error. What is the main problem?", options:[
      {t:"One class isn’t a set of independent random draws from the region", ok:true, why:"So the formula understates the real uncertainty, and the class may not represent the region. Clustered observations share a teacher and school; independence and representativeness both fail."},
      {t:"28 is under 30, so no standard error calculation is possible at all", why:"30 is only a rule of thumb, and small samples can be analyzed. The issue is clustering."},
      {t:"She should use the median instead", why:"Changing the summary doesn’t fix a non-random, clustered sample."},
-     {t:"Nothing: any 28 pupils form a random sample", why:"A whole class chosen as a unit isn’t a random sample of pupils."}]},
+     {t:"Nothing: any 28 students form a random sample", why:"A whole class chosen as a unit isn’t a random sample of students."}]},
    {id:"t3u6-q09", lesson:"t3u6-l1", level:1, q:"According to the central limit theorem, what becomes approximately normal as samples get larger?", options:[
      {t:"The distribution of sample means", ok:true, why:"The theorem is about the sampling distribution of the mean (and sums and proportions)."},
      {t:"The data in each sample", why:"Data keep the population’s shape; large samples of skewed data stay skewed."},
@@ -1142,11 +1142,11 @@ ICA.addUnit({
      {t:"25", why:"That splits the 50 evenly between two groups, ignoring that students are 60% of the sample."},
      {t:"60", why:"That is 50% of 120; but only 25% of everyone (50 of 200) prefers the evening session."},
      {t:"50", why:"That is everyone who prefers the evening session, students or not."}]},
-   {id:"t3u6-q32", lesson:"t3u6-l4", level:3, q:"A regression of monthly rent on flat size, for 80 flats in one city, gives a slope of 12 currency units per square meter. Which reading is correct?", options:[
+   {id:"t3u6-q32", lesson:"t3u6-l4", level:3, q:"A regression of monthly rent on apartment size, for 80 apartments in one city, gives a slope of 12 currency units per square meter. Which reading is correct?", options:[
      {t:"Each extra square meter goes with about 12 units more rent, on average", ok:true, why:"In these data, predicted monthly rent is about 12 units higher per square meter. The slope is the average change in predicted y per unit of x, in context and with units."},
-     {t:"Every flat’s rent is exactly 12 units higher for each extra square meter", why:"The slope is an average trend; individual flats scatter around the line."},
-     {t:"Adding a square meter to a flat will raise its rent by 12", why:"That is a causal claim; the data describe flats as they are, not the effect of extending one."},
-     {t:"Rent is 12 times the flat’s size", why:"That ignores the intercept: predicted rent = a + 12 × size."}]},
+     {t:"Every apartment’s rent is exactly 12 units higher for each extra square meter", why:"The slope is an average trend; individual apartments scatter around the line."},
+     {t:"Adding a square meter to an apartment will raise its rent by 12", why:"That is a causal claim; the data describe apartments as they are, not the effect of extending one."},
+     {t:"Rent is 12 times the apartment’s size", why:"That ignores the intercept: predicted rent = a + 12 × size."}]},
    {id:"t3u6-q33", lesson:"t3u6-l4", level:1, q:"What is a residual in regression?", options:[
      {t:"The observed value minus the value predicted by the line", ok:true, why:"Positive residuals lie above the line; negative ones below."},
      {t:"The slope of the line", why:"The slope is a single number for the whole line; each point has its own residual."},

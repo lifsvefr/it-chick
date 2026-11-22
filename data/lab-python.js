@@ -26,7 +26,7 @@ window.PLAB = [
         {code:"print(\"Hello from the garden!\")", expect:"2 lines"},
         {code:"print(\"Hello from the garden!\"\nprint(\"Python is running.\")", expect:"never closed"}],
  tests:[{t:"Prints the two lines exactly", out:"Hello from the garden!\nPython is running."}],
- hints:["Each print( ) shows one line. Put the text in straight quotes: print(\"Hello\").", "Copy the punctuation exactly: an exclamation mark at the end of the first line, a full stop at the end of the second."],
+ hints:["Each print( ) shows one line. Put the text in straight quotes: print(\"Hello\").", "Copy the punctuation exactly: an exclamation mark at the end of the first line, a period at the end of the second."],
  explain:"`print()` shows whatever is inside its brackets. Text (a **string**) goes in quotes, either \"double\" or 'single', as long as both ends match. Each `print()` ends with a new line."},
 
 {id:"pl-variables", group:"basics", title:"Variables and f-strings", lesson:"t2u8-l2",

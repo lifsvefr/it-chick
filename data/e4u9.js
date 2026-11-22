@@ -621,7 +621,7 @@ ICA.addUnit({
         ["United States and WHO","Withdrawal completed on 22 January 2026"]
       ]},
       "On 7 January 2026 the United States also announced withdrawal from 66 international organizations and bodies, 31 of them UN entities, including the UN climate convention. The US government argued that these bodies did not serve American interests, wasted money or pursued agendas it opposed. Many other governments and the organizations themselves warned of lost capacity and influence and of harm to the people they serve.",
-      "Exit has a mirror image: **entry**. States still queue to join IOs because membership brings voice, markets and status. Timor-Leste campaigned for over a decade before it became ASEAN’s eleventh member in 2025. Several states have applied to join the EU, BRICS or the OECD. Who wants in tells you as much about an IO’s legitimacy as who wants out.",
+      "Exit has a mirror image: **entry**. States still line up to join IOs because membership brings voice, markets and status. Timor-Leste campaigned for over a decade before it became ASEAN’s eleventh member in 2025. Several states have applied to join the EU, BRICS or the OECD. Who wants in tells you as much about an IO’s legitimacy as who wants out.",
       "Funding cuts and late payment can work as **voice**: pressure for reform without leaving. They can also become exit by stealth. For a seminar, keep the analytical questions apart from the political ones. What triggered the move? How did the IO adapt (cuts, new donors, reform)? Did other members step in?"
     ]},
     {h:"Contested multilateralism and forum shopping", body:[
@@ -1384,7 +1384,7 @@ ICA.addUnit({
      {t:"Japan and South Korea", why:"Neither is an SCO member."},
      {t:"Indonesia and Malaysia", why:"Neither is an SCO member."},
      {t:"Turkey and Egypt", why:"They are dialogue partners, not members."}]},
-   {id:"e4u9-q33", lesson:"e4u9-l4", level:3, q:"Tomás writes that “the SCO is an authoritarian club, full stop”. How should a neutral seminar paper handle this claim?", options:[
+   {id:"e4u9-q33", lesson:"e4u9-l4", level:3, q:"Tomás writes that “the SCO is an authoritarian club, period”. How should a neutral seminar paper handle this claim?", options:[
      {t:"Attribute it and set it beside other readings", ok:true, why:"Right. Attribute it, for example to scholars such as Ambrosio, and set it beside members’ own account. Contested labels should be attributed and balanced with other views."},
      {t:"Repeat it as fact, since some scholars agree", why:"Agreement by some scholars does not make a contested label a fact."},
      {t:"Leave the SCO out entirely", why:"Avoiding a topic is not neutrality; describing the debate is."},

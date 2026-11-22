@@ -133,8 +133,8 @@ ICA.addUnit({
       {t:"`# d is the discount` above `d = 0.1`", b:1, why:"This comment is patching a poor name. Rename `d` to `discount` and delete the comment."},
       {t:"`# Workaround: the scale sends weights in grams, not kg`", b:0, why:"A trap that future readers need to know about. Exactly what comments are for."}
     ]},
-    {id:"t2u10-l1-x3", type:"mcq", q:"Tomás sees the same five lines that tidy up a postcode in two places in his script. A friend says “DRY! Make a function.” When is that **most** clearly the right call?", options:[
-      {t:"When both places tidy postcodes for the same reason", ok:true, why:"Right. Then a rule change should apply to both. DRY is about one piece of knowledge living in one place. If the rule changes, one function means one change."},
+    {id:"t2u10-l1-x3", type:"mcq", q:"Tomás sees the same five lines that tidy up a postal code in two places in his script. A friend says “DRY! Make a function.” When is that **most** clearly the right call?", options:[
+      {t:"When both places tidy postal codes for the same reason", ok:true, why:"Right. Then a rule change should apply to both. DRY is about one piece of knowledge living in one place. If the rule changes, one function means one change."},
       {t:"Whenever any two pieces of code look similar", why:"Look-alike code that changes for different reasons should often stay separate. Merging it couples things that aren’t really the same."},
       {t:"Only when the repeated code is more than 20 lines long", why:"Length isn’t the test. Even a one-line rule repeated in many places is worth a name if it’s the same knowledge."},
       {t:"Never: copying is always safer than a function", why:"Copies drift apart: someone fixes one and forgets the other. That’s exactly the risk DRY prevents."}
@@ -264,7 +264,7 @@ ICA.addUnit({
         "**JavaScript:** the Console shows no errors; the page still makes sense if a script fails.",
         "**Validator:** the W3C Markup Validation Service finds no errors in the HTML."
       ]},
-      "Keep the checklist in your project (for example as `CHECKLIST.md`) and tick it off for every release. A list removes the need to remember, which is the same idea as automated tests.",
+      "Keep the checklist in your project (for example as `CHECKLIST.md`) and check it off for every release. A list removes the need to remember, which is the same idea as automated tests.",
       {h:"Common misconceptions"},
       {list:[
         "**“Tests are for big projects.”** A three-line test file pays off the first time you change a function and it tells you something broke.",
@@ -901,7 +901,7 @@ ICA.addUnit({
      ],
      builder:[
       {code:['def split_bill(total, people):','    """Return the share for each person, to 2 decimal places.','','    Raises ValueError if people is less than 1.','    """','    if people < 1:','        raise ValueError("people must be 1 or more")','    # Round here so every share prints as money.','    return round(total / people, 2)'].join("\n"), lang:"py"},
-      "Docstring pattern (from PEP 257, the docstring guide): a one-line summary ending in a full stop, a blank line, then details such as arguments, return value, errors raised and special cases. Use triple double quotes.",
+      "Docstring pattern (from PEP 257, the docstring guide): a one-line summary ending in a period, a blank line, then details such as arguments, return value, errors raised and special cases. Use triple double quotes.",
       "Good reasons for a comment:",
       {list:["A decision that looks wrong but isn’t (“round down: the venue charges per full hour”).","A workaround for something outside your control, ideally with a link.","A warning (“this file can be very large; don’t load it all at once”)."]},
       "Bad reasons: restating the code, commenting out old code “just in case” (Git keeps history), or long change logs inside files (that’s what commit messages are for).",

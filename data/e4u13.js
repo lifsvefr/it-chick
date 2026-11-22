@@ -934,7 +934,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Not all cooperation goes through foreign ministries. Banking supervisors talk to banking supervisors, judges read each other’s judgments, and scientists share data with scientists. These **networks** can shape rules worldwide.",
-      "Think of a group chat of school principals from several towns. No one is in charge, but they share rules that work, and soon all the schools run similar timetables.",
+      "Think of a group chat of school principals from several towns. No one is in charge, but they share rules that work, and soon all the schools run similar schedules.",
       "Anne-Marie Slaughter called the official version **government networks**. Peter Haas called networks of experts with policy influence **epistemic communities**. Activists form networks too.",
       {key:"Networks govern by sharing information, setting standards and building trust among people who do the same job in different countries."},
       "Their strength is speed and expertise; their weakness is that the public rarely sees them at work."

@@ -117,7 +117,7 @@ ICA.addUnit({
     {id:"e2u2-l1-x8", type:"explain", q:"Ana is staying with a family in another country. They leave a little food on their plates, and she thinks, ‘How wasteful. At home we do it properly.’ Explain her reaction using ethnocentrism, and describe what a culturally relativist response would look like.", size:"3–5 sentences", model:"Ana’s reaction is ethnocentrism, William Graham Sumner’s term for judging another culture by the standards of your own. It is a common part of culture shock, when unfamiliar norms cause stress and thoughts like ‘at home we do it properly’. Cultural relativism means trying to understand a practice within its own setting. Here, leaving a little food may be a polite signal that the host has given more than enough. A relativist response would be to watch or ask what the practice means before judging it. That differs from xenocentrism, which would assume the other culture is simply better.", points:["Identifies Ana’s reaction as ethnocentrism", "Defines cultural relativism as understanding a practice in its own setting", "Describes a relativist response, such as asking what the practice means", "Links the reaction to culture shock or tells relativism apart from xenocentrism"]}
    ],
    apply:{intro:"Notice culture around you. Everything here is observation and reflection: no recording or photographing people, and nothing that could embarrass anyone.", tasks:[
-     {t:"Spend 15 minutes in a public place (a café, bus, park or shop queue) and list five unwritten rules people follow.", how:["Sit somewhere comfortable and simply watch. Don’t take photos or notes about identifiable people.","Write down five behaviors that almost everyone follows without being told.","For each, decide: folkway or more? Then note any sanction you saw (a look, a thank-you, a comment)."], write:"Where you were, the five rules you saw, folkway or more for each, and any sanctions you noticed…"},
+     {t:"Spend 15 minutes in a public place (a café, bus, park or a line in a shop) and list five unwritten rules people follow.", how:["Sit somewhere comfortable and simply watch. Don’t take photos or notes about identifiable people.","Write down five behaviors that almost everyone follows without being told.","For each, decide: folkway or more? Then note any sanction you saw (a look, a thank-you, a comment)."], write:"Where you were, the five rules you saw, folkway or more for each, and any sanctions you noticed…"},
      {t:"Pick one object in your home and describe the nonmaterial culture attached to it.", how:["Choose something ordinary: a cooking pot, a calendar, a school uniform, a phone.","List the values, beliefs and norms connected with it (who uses it, when, what counts as using it properly).","Imagine explaining it to a visitor from a very different culture. What would surprise them?"], write:"The object, the norms and values around it, and what a visitor might find surprising…"},
      {t:"Recall a time you found another group’s custom strange. Rewrite your first reaction using cultural relativism.", how:["Write your honest first reaction in one or two sentences.","Then ask: what circumstances, values or beliefs might make this custom sensible to the people who practice it? Look it up if you can.","Finally, note whether your view changed, and whether any genuine concerns remain after understanding it."], write:"The custom, your first reaction, the relativist explanation, and what you think now…"}
    ], proof:"Notes with five observed norms classified as folkways or mores (with sanctions), one object analyzed for its nonmaterial culture, and one before-and-after reflection showing ethnocentrism replaced by cultural relativism."},
@@ -330,12 +330,12 @@ ICA.addUnit({
       " ",
       {t:"After closing, the staff joke about the evening’s most difficult customer.", flag:true, why:"Back stage: with the audience gone, the team can say things they would never say front stage."}
     ], why:"Front stage is where the performance happens for an audience; back stage is where performers prepare, relax and drop the role."},
-    {id:"e2u2-l3-x8", type:"explain", q:"A rumor spreads on social media that petrol will run out next week. Thousands of drivers rush to fill their tanks, and stations run dry. Explain what happened using the Thomas theorem and Merton’s self-fulfilling prophecy.", size:"3–4 sentences", model:"The Thomas theorem says that situations defined as real are real in their consequences. At first there was no shortage, but because people defined the situation as one, they acted on that belief: they rushed to fill up and bought extra. Their actions created the shortage they feared. This is Robert K. Merton’s self-fulfilling prophecy: a false belief that makes itself come true, like a rumor that empties a sound bank. It shows that what people believe about a situation, not only the facts, shapes what happens.", points:["States the Thomas theorem", "Explains that people acted on their definition of the situation", "Names the self-fulfilling prophecy as a false belief that makes itself true", "Concludes that shared beliefs shape real outcomes"]}
+    {id:"e2u2-l3-x8", type:"explain", q:"A rumor spreads on social media that gas will run out next week. Thousands of drivers rush to fill their tanks, and stations run dry. Explain what happened using the Thomas theorem and Merton’s self-fulfilling prophecy.", size:"3–4 sentences", model:"The Thomas theorem says that situations defined as real are real in their consequences. At first there was no shortage, but because people defined the situation as one, they acted on that belief: they rushed to fill up and bought extra. Their actions created the shortage they feared. This is Robert K. Merton’s self-fulfilling prophecy: a false belief that makes itself come true, like a rumor that empties a sound bank. It shows that what people believe about a situation, not only the facts, shapes what happens.", points:["States the Thomas theorem", "Explains that people acted on their definition of the situation", "Names the self-fulfilling prophecy as a false belief that makes itself true", "Concludes that shared beliefs shape real outcomes"]}
    ],
    apply:{intro:"Use the lesson’s ideas to look at your own life. Everything here is reflection about yourself; leave other people unnamed.", tasks:[
      {t:"Draw your own status set.", how:["Write your name in the middle of a page.","Around it, write at least six statuses you hold right now. Mark each as ascribed or achieved.","Circle the one that others most often notice first. Is it acting like a master status? Is that fair?","Draw a dashed line between any two statuses that sometimes clash (role conflict), and note one status that has role strain inside it."], write:"Your statuses (ascribed or achieved), any master status, one role conflict and one role strain…"},
      {t:"Watch your own front and back stages for one day.", how:["Pick a day that includes at least two different settings (for example work or study, and home).","Note how your language, posture, clothes and topics change between front-stage and back-stage moments.","Note one prop or piece of setting you use for impression management."], write:"Two settings, what changed between front and back stage, and one prop you used…"},
-     {t:"Find something socially constructed that you rely on every day.", how:["Choose an everyday thing that only works because people agree on it: money, a timetable, a queue number, a grade, a national holiday.","Explain in three sentences how it depends on shared agreement.","Then describe one real consequence it has for you, showing that constructed does not mean unreal."], write:"The constructed thing, how it depends on agreement, and one real consequence…"}
+     {t:"Find something socially constructed that you rely on every day.", how:["Choose an everyday thing that only works because people agree on it: money, a schedule, a number in line, a grade, a national holiday.","Explain in three sentences how it depends on shared agreement.","Then describe one real consequence it has for you, showing that constructed does not mean unreal."], write:"The constructed thing, how it depends on agreement, and one real consequence…"}
    ], proof:"Notes with your labeled status set (including role conflict and role strain), a one-day front-stage and back-stage comparison, and one socially constructed thing explained with its real consequences."},
    read:[
      {book:"soc", where:"Chapter 4 “Society and Social Interaction”, Section 4.1 “Types of Societies”, Section 4.2 “Theoretical Perspectives on Society” and Section 4.3 “Social Constructions of Reality”"}
@@ -392,7 +392,7 @@ ICA.addUnit({
     {id:"e2u2-l4-x2", type:"match", q:"Match each experience to the agent of socialization at work.", pairs:[
       ["Mei’s grandmother teaches her the family’s dialect and how to address elders.","Family","Language and respect for elders taught at home: the family, the first agent of socialization."],
       ["At 14, Tomás starts using the slang and clothes of his friends at the skate park.","Peers","Peers of similar age and status teach group norms and style."],
-      ["Students learn to wait their turn, follow a timetable and accept being ranked by grades.","School","These are lessons of the hidden curriculum, taught by school alongside the official subjects."],
+      ["Students learn to wait their turn, follow a schedule and accept being ranked by grades.","School","These are lessons of the hidden curriculum, taught by school alongside the official subjects."],
       ["On his first week as a bank teller, Oluwaseun learns how colleagues really expect him to dress and talk.","Workplace","Organisational norms learned on the job: the workplace as an agent."],
       ["A video platform’s recommendations shape which body types and lifestyles Hana sees as normal.","Media","Mass and social media present images and norms that shape what people see as normal."]
     ]},
@@ -466,7 +466,7 @@ ICA.addUnit({
     ]},
     {h:"The big ideas", body:[
       {list:[
-        "A group is two or more people who interact regularly and share a sense of identity. An **aggregate** is people in one place who don’t interact (a bus queue). A **category** shares a trait without any ties (everyone born in 2005). (6.1)",
+        "A group is two or more people who interact regularly and share a sense of identity. An **aggregate** is people in one place who don’t interact (a line at a bus stop). A **category** shares a trait without any ties (everyone born in 2005). (6.1)",
         "Charles Horton Cooley: [[primary-group|primary groups]] are small, lasting and personal, meeting **expressive** needs (family, close friends). [[secondary-group|Secondary groups]] are larger, impersonal and task-focused, meeting **instrumental** needs (a class, an office). Groups can shift from one to the other. (6.1)",
         "William Graham Sumner: an [[in-group]] is one you belong to and feel loyal to. An [[out-group]] is one you don’t belong to. In-group favoritism can feed prejudice. A [[reference-group|reference group]] is any group you use as a standard to judge yourself. (6.1)",
         "Georg Simmel: a [[dyad]] (two people) is close but ends if one leaves. A [[triad]] (three) is more stable and allows a mediator, but also two-against-one coalitions. A group is large once it is too big for one shared conversation. (6.2)",
@@ -559,10 +559,10 @@ ICA.addUnit({
   ],
   checkpoint:["e2u2-q02","e2u2-q06","e2u2-q09","e2u2-q12","e2u2-q16","e2u2-q20","e2u2-q23","e2u2-q27","e2u2-q31","e2u2-q35","e2u2-q39","e2u2-q43"],
   cpBank:[
-   {id:"e2u2-cp01", lesson:"e2u2-l1", level:1, q:"In a city survey, most residents say recycling is “very important”. Yet most household rubbish in the city goes unsorted. Which idea describes this gap?", options:[
+   {id:"e2u2-cp01", lesson:"e2u2-l1", level:1, q:"In a city survey, most residents say recycling is “very important”. Yet most household garbage in the city goes unsorted. Which idea describes this gap?", options:[
      {t:"Cultural lag", why:"Cultural lag is the delay between new material culture (a new technology) and the norms that govern it. Here the gap is between stated values and actual behavior."},
      {t:"Xenocentrism", why:"Xenocentrism is the belief that another culture is better than your own. Nothing here compares cultures."},
-     {t:"Ideal culture versus real culture", ok:true, why:"Yes. Ideal culture is what a society says it values (recycling); real culture is what people actually do (not sorting rubbish)."},
+     {t:"Ideal culture versus real culture", ok:true, why:"Yes. Ideal culture is what a society says it values (recycling); real culture is what people actually do (not sorting garbage)."},
      {t:"A counterculture", why:"A counterculture rejects major values of the wider society. These residents claim to share the value; they just don’t act on it."}]},
    {id:"e2u2-cp02", lesson:"e2u2-l3", level:1, q:"Families grow yams and taro in small garden plots cleared with hand tools. When the soil wears out, they clear a new plot nearby. In Lenski’s scheme, which type of society is this?", options:[
      {t:"Agricultural", why:"Agricultural societies use ploughs and produce large surpluses that support cities and classes. Small hand-tool gardens are a different type."},
@@ -570,7 +570,7 @@ ICA.addUnit({
      {t:"Pastoral", why:"Pastoral societies live mainly by herding animals. These families grow crops."},
      {t:"Hunter-gatherer", why:"Hunter-gatherers rely on wild plants and animals. Planting and tending gardens is farming of a simple kind: horticulture."}]},
    {id:"e2u2-cp03", lesson:"e2u2-l5", level:1, q:"Which term best describes “everyone in a country who was born on 29 February”?", options:[
-     {t:"An aggregate", why:"An aggregate is people in the same place at the same time who don’t interact, like a bus queue. These people are scattered across the country."},
+     {t:"An aggregate", why:"An aggregate is people in the same place at the same time who don’t interact, like a line at a bus stop. These people are scattered across the country."},
      {t:"A primary group", why:"A primary group is small, lasting and personal, like a family. These people don’t even know each other."},
      {t:"A secondary group", why:"A secondary group still interacts regularly around a task, like a class. These people never meet as a group."},
      {t:"A category", ok:true, why:"Correct. A category shares a trait (a birthday) but has no interaction or ties."}]},
@@ -609,7 +609,7 @@ ICA.addUnit({
      {t:"The hidden curriculum and an ascribed status", why:"The hidden curriculum teaches norms like punctuality, and an ascribed status is unchosen, like age. Neither explains how Tariq’s self-image and grades changed."},
      {t:"Mead’s play stage and role strain", why:"The play stage is a young child pretending to be one other person. Role strain is tension within one status. Neither fits."},
      {t:"Resocialization and organic solidarity", why:"Resocialization replaces old norms, as in a total institution. Organic solidarity is about interdependence in modern society. Neither fits."}]},
-   {id:"e2u2-cp11", lesson:"e2u2-l5", level:3, q:"Matteo chooses to join a monastery. He gives up his possessions, wears the same robe as everyone else and follows a strict daily timetable. In Etzioni’s terms, what type of organization has he joined, and what process is he going through?", options:[
+   {id:"e2u2-cp11", lesson:"e2u2-l5", level:3, q:"Matteo chooses to join a monastery. He gives up his possessions, wears the same robe as everyone else and follows a strict daily schedule. In Etzioni’s terms, what type of organization has he joined, and what process is he going through?", options:[
      {t:"A coercive organization; resocialization", why:"Strict rules don’t make an organization coercive. Coercive means people are compelled to be there, as in a prison. Matteo chose to join."},
      {t:"A normative organization; anticipatory socialization", why:"Anticipatory socialization prepares you for a role you don’t hold yet. Matteo is already living the new life and his old habits are being replaced."},
      {t:"A normative organization; resocialization", ok:true, why:"Correct. He joined for shared values, with non-material rewards (normative). Giving up old ways for new norms in an all-encompassing setting is resocialization."},
@@ -636,7 +636,7 @@ ICA.addUnit({
         ["Element","What it is","Example"],
         ["Values","Standards of what is good or important","Hospitality, individual freedom, harmony"],
         ["Beliefs","Things held to be true","Education leads to a better life"],
-        ["Norms","Expected behavior","Queue for the bus; don’t interrupt elders"],
+        ["Norms","Expected behavior","Wait in line for the bus; don’t interrupt elders"],
         ["Symbols","Things that stand for something by agreement","A flag, a gesture, a traffic light"],
         ["Language","A system of symbols for communication","Spoken, written and signed languages"]
       ]},
@@ -811,7 +811,7 @@ ICA.addUnit({
      pro:[
       "The relativism debate has two sides worth separating. **Methodological relativism** (suspend judgment while you seek understanding) is standard good practice. **Moral relativism** (no practice can ever be judged from outside) is a philosophical position that many scholars reject, because it would rule out criticizing any harm. Debates about universal human rights versus cultural difference sit at this boundary, and careful work distinguishes the two.",
       "OpenStax notes that cultural relativists can still question practices such as female genital mutilation; the point is to understand practices before evaluating them, and to recognize that people within every culture also debate and contest their own practices.",
-      "On culture shock, research has found that the neat “U-curve” of phases fits some people and not others. Language skill, social support, discrimination, the reason for moving (study, work, refuge) and previous experience all shape adjustment. Avoid presenting the stages as a fixed timetable.",
+      "On culture shock, research has found that the neat “U-curve” of phases fits some people and not others. Language skill, social support, discrimination, the reason for moving (study, work, refuge) and previous experience all shape adjustment. Avoid presenting the stages as a fixed schedule.",
       "Xenocentrism can have material consequences, such as devaluing local languages, products or knowledge, and it is often connected to global inequalities in prestige (see {{global-stratification}}).",
       "Ethnocentrism also shapes research itself. Social scientists have noted that much published psychology and sociology draws on samples from a few wealthy, mostly Western countries, then generalizes to all humans. Good practice is to say where findings come from and test them elsewhere, which is also why these lessons add examples from many regions to a US-centered textbook."
      ]
@@ -967,12 +967,12 @@ ICA.addUnit({
       "The **Thomas theorem** comes from W. I. Thomas and Dorothy Swaine Thomas (1928). People respond to their *definition* of a situation, not to the situation alone." ,
       "Not everyone gets an equal say in defining situations. Governments, media, experts and employers often have more power to make their definitions stick, which is why sociologists ask *whose* definition becomes accepted.",
       "Robert K. Merton (1948) described the **self-fulfilling prophecy**: a false definition of a situation that triggers behavior making it come true. His example: a rumor that a sound bank is insolvent causes a run that makes it insolvent. Everyday versions include rumors of shortages causing shortages.",
-      {ex:"The seven-day week, time zones and the school year feel like natural facts, but each was created by people and differs across history and places. Time zones, for example, were standardized only in the late 19th century, largely for railway timetables. Yet try ignoring them: you will miss trains and meetings. Constructed, and very real.", label:"Worked example: time is socially organized"}
+      {ex:"The seven-day week, time zones and the school year feel like natural facts, but each was created by people and differs across history and places. Time zones, for example, were standardized only in the late 19th century, largely for railway schedules. Yet try ignoring them: you will miss trains and meetings. Constructed, and very real.", label:"Worked example: time is socially organized"}
      ],
      pro:[
       "Social constructionism is sometimes misread as saying anything can be changed by changing minds. Constructed institutions are hard to change: they are backed by laws, money, habits and other people’s expectations, and they constrain individuals as firmly as physical facts.",
       "Researchers distinguish questions such as: Which features of a category are socially defined (where boundaries are drawn, what meanings attach) and which are material? Who has the power to define a situation for others? This links to {{labeling-theory}} and to debates over how categories like race and gender are constructed (see {{race-ethnicity}} and {{sex-gender}}).",
-      "Expectation effects have been studied experimentally. The best-known classroom study, Rosenthal and Jacobson’s *Pygmalion in the Classroom* (1968), reported that teachers’ raised expectations improved some pupils’ test results; later reviews found such effects are real but usually small and uneven. That is a good model for treating any famous finding: interesting, influential, and weaker than the headline.",
+      "Expectation effects have been studied experimentally. The best-known classroom study, Rosenthal and Jacobson’s *Pygmalion in the Classroom* (1968), reported that teachers’ raised expectations improved some students’ test results; later reviews found such effects are real but usually small and uneven. That is a good model for treating any famous finding: interesting, influential, and weaker than the headline.",
       "Goffman’s {{erving-goffman|dramaturgy}} applies a related idea to face-to-face interaction: people continually work to sustain shared definitions of what is going on.",
       "A good test of whether you understand the idea: pick any institution (marriage, a currency, a university degree) and describe both how it was constructed and the concrete ways it constrains people today. Both halves are needed."
      ]
@@ -1003,7 +1003,7 @@ ICA.addUnit({
         ["Role strain","Within one status","A manager who must support staff and cut their budget"]
       ]},
       "**Master status** comes from the sociologist Everett Hughes (1945). It is not in OpenStax but appears in most introductory textbooks. Illness, disability, fame, a criminal record or an occupation can become a master status, so that people see the label first and the person second.",
-      {ex:"Sione is a father, a bus driver, a church choir member and a part-time student.\n• Role set: as a bus driver he is also a safety officer, a ticket checker and an informal guide for tourists.\n• Role conflict: an evening exam clashes with his daughter’s birthday.\n• Role strain: as a driver he must keep to a tight timetable and also wait for passengers who are running.", label:"Worked example: one person’s statuses and roles"},
+      {ex:"Sione is a father, a bus driver, a church choir member and a part-time student.\n• Role set: as a bus driver he is also a safety officer, a ticket checker and an informal guide for tourists.\n• Role conflict: an evening exam clashes with his daughter’s birthday.\n• Role strain: as a driver he must keep to a tight schedule and also wait for passengers who are running.", label:"Worked example: one person’s statuses and roles"},
       "OpenStax also uses **role performance**, the visible expression of a role. Two teachers in the same status can perform the role very differently."
      ],
      pro:[
@@ -1131,7 +1131,7 @@ ICA.addUnit({
         "**Gilligan** (*In a Different Voice*, 1982): influential, but later reviews of many studies found only small average gender differences in moral orientation, and critics warn her framing can reinforce stereotypes. OpenStax notes her study’s small sample and attributes differences to gender socialization.",
         "**Cooley and Mead**: criticized for saying little about power, since some people’s views of us carry far more weight than others’, and for under-specifying the “I”."
       ]},
-      "Sociologists value these theories less as fixed timetables than as tools for asking how social interaction, institutions and inequality shape the self. Mead’s ideas in particular became the foundation of {{symbolic-interactionism}}.",
+      "Sociologists value these theories less as fixed schedules than as tools for asking how social interaction, institutions and inequality shape the self. Mead’s ideas in particular became the foundation of {{symbolic-interactionism}}.",
       "Freud and Erikson also matter in the background: Freud stressed early childhood experiences and unconscious processes; Erikson extended development across the life course with eight psychosocial stages, an idea that fits sociology’s view that socialization never ends."
      ]
     },
@@ -1224,7 +1224,7 @@ ICA.addUnit({
         "**Utilitarian**: for a material reward (a job, a degree)."
       ]},
       "Most large organizations run as a **bureaucracy**: a chain of command, specialized jobs, written rules and impersonal treatment. That makes huge tasks possible, and also produces red tape.",
-      "Applying for a passport is a good example: forms, queues, numbered steps and officials who follow rules rather than personal judgment.",
+      "Applying for a passport is a good example: forms, lines, numbered steps and officials who follow rules rather than personal judgment.",
       "**Bureaucracy** is not an insult in sociology. It is a description of a way of organizing work."
      ],
      builder:[
@@ -1282,7 +1282,7 @@ ICA.addUnit({
         ["Predictability","Chain hotels and shops that look the same in every city"],
         ["Control","Scripted conversations; apps that set workers’ pace"]
       ]},
-      "The **irrationality of rationality** is Ritzer’s term for when rational systems produce irrational results: long queues at “fast” food outlets, automated phone menus that waste hours, standardized tests that reward test practice rather than learning.",
+      "The **irrationality of rationality** is Ritzer’s term for when rational systems produce irrational results: long lines at “fast” food outlets, automated phone menus that waste hours, standardized tests that reward test practice rather than learning.",
       "Notice who does the work in McDonaldized systems. Customers increasingly do unpaid tasks (scanning their own shopping, clearing their own tables, filling in their own forms), while workers’ tasks are broken into small, controlled steps. Ritzer links this to Weber’s fear of an “iron cage” in which efficiency becomes an end in itself.",
       {ex:"Online grocery delivery: one-click ordering (efficiency), delivery-time targets and star ratings (calculability), the same app layout in every city (predictability), and algorithms that assign routes and time each delivery (control). Irrationality: the rider who is penalized for a delay caused by a broken lift.", label:"Worked example: an app through Ritzer’s lens"}
      ],
@@ -1461,7 +1461,7 @@ ICA.addUnit({
    {id:"e2u2-q01", lesson:"e2u2-l1", level:1, q:"Which of these is an example of **nonmaterial** culture?", options:[
      {t:"The belief that guests should be offered food when they arrive", ok:true, why:"Beliefs and norms are ideas, so they are nonmaterial culture."},
      {t:"A cooking pot used for family meals", why:"A pot is a physical object: material culture."},
-     {t:"A mobile phone", why:"A phone is a physical object: material culture. The norms about using it are nonmaterial."},
+     {t:"A cell phone", why:"A phone is a physical object: material culture. The norms about using it are nonmaterial."},
      {t:"A national flag made of cloth", why:"The cloth flag is material. What it symbolizes is nonmaterial, but the object itself is material culture."}
    ]},
    {id:"e2u2-q02", lesson:"e2u2-l1", level:2, q:"Kenji forgets to bow when meeting a new colleague in Tokyo. People notice but say nothing, and he feels a bit awkward. What kind of norm did he break?", options:[
@@ -1690,7 +1690,7 @@ ICA.addUnit({
      {t:"Primary group", why:"A primary group is a close emotional group like family. Admiration from a distance doesn’t make one."},
      {t:"Dyad", why:"A dyad is a two-person group."}
    ]},
-   {id:"e2u2-q39", lesson:"e2u2-l5", level:2, q:"Two flatmates always disagree about cleaning. When a third person moves in, she starts settling their disputes. What did Simmel say about this kind of change?", options:[
+   {id:"e2u2-q39", lesson:"e2u2-l5", level:2, q:"Two roommates always disagree about cleaning. When a third person moves in, she starts settling their disputes. What did Simmel say about this kind of change?", options:[
      {t:"A third person can mediate, but coalitions also become possible.", ok:true, why:"A triad allows mediation, though it also makes two-against-one coalitions possible. Simmel noted that adding a third member creates new roles such as mediator, and new risks such as coalitions."},
      {t:"Adding a person makes the group a secondary group automatically.", why:"Primary or secondary depends on the type of bond, not on going from two to three people."},
      {t:"Triads are less stable than dyads.", why:"Simmel saw triads as more stable, since they survive one member withdrawing."},

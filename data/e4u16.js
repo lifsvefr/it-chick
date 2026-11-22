@@ -300,7 +300,7 @@ ICA.addUnit({
        "Choose one and write 150–250 words with a position and a counter-argument.",
        "1. Was the shift from Kyoto’s binding targets to Paris’s pledges a necessary compromise or a loss of ambition?",
        "2. Is CBDR-RC still a fair basis for differentiation in a world where some developing countries are among the largest emitters?",
-       "3. Should the IPCC’s timetable follow the needs of the global stocktake, or should science set its own pace?"
+       "3. Should the IPCC’s schedule follow the needs of the global stocktake, or should science set its own pace?"
      ], write:"My question… My position… Evidence… Counter-argument… My reply…"}
     ],
     proof:"Notes on one country’s NDC, a comparison of an IPCC headline statement with its news coverage, and a seminar paragraph with a counter-argument."

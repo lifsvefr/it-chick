@@ -30,7 +30,7 @@ ICA.addUnit({
       "People use Python for very different jobs:",
       {table:[
         ["Kind of job","An everyday example"],
-        ["Automating chores","Renaming 300 holiday photos, or merging a folder of spreadsheets"],
+        ["Automating chores","Renaming 300 vacation photos, or merging a folder of spreadsheets"],
         ["Working with data","Totaling a community group’s membership fees, or charting survey results"],
         ["Science and research","Analysing lab measurements, or cleaning a dataset for a thesis"],
         ["Websites and apps","The server code behind sign-up forms and online shops"],
@@ -836,7 +836,7 @@ ICA.addUnit({
    apply:{intro:"Write and test your own functions, then practice reading tracebacks on purpose. Everything works in the Python Lab, and on a computer.", tasks:[
      {t:"Three small functions", how:["Write `def area(width, height):` that **returns** the area of a rectangle.","Write `def greeting(name, time=\"morning\"):` that returns a string such as `Good morning, Kenji!`.","Write `def average(numbers):` that returns the average, and returns 0 for an empty list.","Call each one at least twice and print the results. Try one call with a named argument."], write:"Paste your functions and their outputs."},
      {t:"A traceback scavenger hunt", how:["Copy `scores.py` from this lesson and run it. On a computer, find the four parts of the traceback, reading from the bottom. In the Python Lab you’ll see the shorter report instead: find the error type, the line it names, and then the lines in your program that led there.","Fix it so Kenji gets the message `Kenji: no scores yet` instead of an error.","Then cause, read and fix three different errors on purpose: a KeyError, a TypeError and an IndentationError.","For each one, write down the last line of the error and the line number it points to."], write:"For each error: the last line, the line number, the cause and your fix."},
-     {t:"Borrow from the standard library", how:["Use `random` to roll two dice 10 times in a loop and print each total.","Use `datetime` to print how many days are left until a date that matters to you (a holiday, a deadline, a birthday).","Use `math.ceil()` to work out how many boxes of 6 you need for 50 eggs.","Look up one more function on the official page for one of these modules, at docs.python.org/3/library, and try it."], write:"Paste your code and outputs. Which extra function did you find?"}
+     {t:"Borrow from the standard library", how:["Use `random` to roll two dice 10 times in a loop and print each total.","Use `datetime` to print how many days are left until a date that matters to you (a vacation, a deadline, a birthday).","Use `math.ceil()` to work out how many boxes of 6 you need for 50 eggs.","Look up one more function on the official page for one of these modules, at docs.python.org/3/library, and try it."], write:"Paste your code and outputs. Which extra function did you find?"}
    ], proof:"Three tested functions that return values (one with a default); four errors read from the bottom up with their fixes; and a program using `random`, `datetime` and `math`."},
    read:[
      {book:"atbs", where:"Chapter 4, “Functions” (creating functions, arguments and parameters, return values, the None value, named parameters, the call stack, local and global scopes, and exception handling)"},
@@ -1380,7 +1380,7 @@ ICA.addUnit({
      {t:"`score === 10`", why:"`===` is JavaScript. In Python it’s a SyntaxError."},
      {t:"`score := 10`", why:"That’s an assignment expression, not a comparison."}
    ]},
-   {id:"t2u8-q21", lesson:"t2u8-l3", level:3, q:"A grading program reads:\n\n`if mark >= 50:`\n`    grade = \"C\"`\n`elif mark >= 65:`\n`    grade = \"B\"`\n`elif mark >= 80:`\n`    grade = \"A\"`\n\nWhy does a mark of 90 get a C?", options:[
+   {id:"t2u8-q21", lesson:"t2u8-l3", level:3, q:"A grading program reads:\n\n`if score >= 50:`\n`    grade = \"C\"`\n`elif score >= 65:`\n`    grade = \"B\"`\n`elif score >= 80:`\n`    grade = \"A\"`\n\nWhy does a score of 90 get a C?", options:[
      {t:"The first test, `90 >= 50`, is True", ok:true, why:"The first True test wins, so the later tests never run. Put the highest band first: `>= 80`, then `>= 65`, then `>= 50`."},
      {t:"`elif` only works with `==`, not with `>=`", why:"`elif` works with any condition. The order is the problem."},
      {t:"90 is too big a number for an `if` test", why:"There’s no size limit; the first matching branch is chosen."},
@@ -1447,7 +1447,7 @@ ICA.addUnit({
      {t:"None", why:"`get()` gives `None` only when you don’t supply a default. Here it’s 0."},
      {t:"12", why:"12 belongs to \"eggs\"."}
    ]},
-   {id:"t2u8-q32", lesson:"t2u8-l4", level:3, q:"Tomás averages scores with `sum(scores) / len(scores)`. It works until a new pupil with no scores arrives, and the program stops. Which error, and what fix?", options:[
+   {id:"t2u8-q32", lesson:"t2u8-l4", level:3, q:"Tomás averages scores with `sum(scores) / len(scores)`. It works until a new student with no scores arrives, and the program stops. Which error, and what fix?", options:[
      {t:"ZeroDivisionError; check `if scores:` before dividing", ok:true, why:"An empty list has length 0. Checking first lets you print “no scores yet” instead."},
      {t:"IndexError; start counting at 1", why:"No index is used. The division by `len()` of an empty list is the problem."},
      {t:"KeyError; use `get()`", why:"No dictionary is involved here."},

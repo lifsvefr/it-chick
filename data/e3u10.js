@@ -873,11 +873,11 @@ ICA.addUnit({
        ]
       },
       {
-       ex: "夏休みの[間]{あいだ}、ずっと国に帰っていました。\nI was back home the whole summer holiday.\n\n私が料理している[間]{あいだ}、[夫]{おっと}はテレビを見ていました。\nWhile I was cooking, my husband was watching TV.",
+       ex: "夏休みの[間]{あいだ}、ずっと国に帰っていました。\nI was back home the whole summer vacation.\n\n私が料理している[間]{あいだ}、[夫]{おっと}はテレビを見ていました。\nWhile I was cooking, my husband was watching TV.",
        label: "～あいだ: all through the period"
       },
       {
-       ex: "夏休みの[間]{あいだ}に、[運転免許]{うんてんめんきょ}を[取]{と}りました。\nI got my driving license during the summer holiday.\n\n母が[寝]{ね}ている[間]{あいだ}に、[部屋]{へや}を[掃除]{そうじ}しました。\nI cleaned the room while my mother was asleep.",
+       ex: "夏休みの[間]{あいだ}に、[運転免許]{うんてんめんきょ}を[取]{と}りました。\nI got my driving license during the summer vacation.\n\n母が[寝]{ね}ている[間]{あいだ}に、[部屋]{へや}を[掃除]{そうじ}しました。\nI cleaned the room while my mother was asleep.",
        label: "～あいだに: once, inside the period"
       },
       {
@@ -1154,7 +1154,7 @@ ICA.addUnit({
        "～[間]{あいだ}に: one event inside the period."
       ],
       [
-       "all through the summer holiday",
+       "all through the summer vacation",
        "夏休みの[間]{あいだ}",
        "～[間]{あいだ}: the whole period."
       ]
@@ -1760,7 +1760,7 @@ ICA.addUnit({
       [
        "このアパートは駅から[遠]{とお}いかわりに、",
        "[家賃]{やちん}が安いです。",
-       "A flat far from the station is cheaper: the low rent makes up for the distance."
+       "An apartment far from the station is cheaper: the low rent makes up for the distance."
       ],
       [
        "このレストランは[値段]{ねだん}が高いかわりに、",
@@ -1806,7 +1806,7 @@ ICA.addUnit({
     {
      id: "e3u10-l3-x7",
      type: "mcq",
-     q: "A friend stayed at your flat for a week, and you are annoyed. Which sentence says “At least wash your own dishes”?",
+     q: "A friend stayed at your apartment for a week, and you are annoyed. Which sentence says “At least wash your own dishes”?",
      options: [
       {
        t: "自分のお[皿]{さら}くらい[洗]{あら}ってよ。",
@@ -2545,7 +2545,7 @@ ICA.addUnit({
     {
      id: "e3u10-l4-x11",
      type: "type",
-     q: "Rodrigo can’t remember which day the burnable rubbish goes out. He asks Mariya casually. Type the ending that means “…again?”: 「[燃]{も}えるごみの日、何曜日（　）？」",
+     q: "Rodrigo can’t remember which day the burnable garbage goes out. He asks Mariya casually. Type the ending that means “…again?”: 「[燃]{も}えるごみの日、何曜日（　）？」",
      answer: [
       "だっけ",
       "だったっけ",
@@ -2689,7 +2689,7 @@ ICA.addUnit({
        label: "～がち"
       },
       "A verb with がち keeps its object: [傘]{かさ}を[忘]{わす}れがちだ (I tend to forget my umbrella). That is one difference from [忘]{わす}れっぽい, which is an adjective about the person and can’t take を.",
-      "For **good** habits, がち usually sounds wrong. Use ～ことが多い or よく instead: [週末]{しゅうまつ}は[公園]{こうえん}に行くことが多い (I often go to the park at weekends)."
+      "For **good** habits, がち usually sounds wrong. Use ～ことが多い or よく instead: [週末]{しゅうまつ}は[公園]{こうえん}に行くことが多い (I often go to the park on weekends)."
      ]
     },
     {
@@ -3636,7 +3636,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex: "[部屋]{へや}の電気がついている。トビーさんは、まだ起きているに[違]{ちが}いない。\nThe light is on in his room. Toby must still be awake.\n\nあの店は、いつも[行列]{ぎょうれつ}ができている。おいしいに[違]{ちが}いない。\nThere’s always a queue at that shop. It must be good.\n\n一万円でブランドのバッグ？にせものに[決]{き}まってるよ。\nA designer bag for ten thousand yen? It’s obviously a fake.\n\n毎日[練習]{れんしゅう}しているんだから、[上手]{じょうず}になるに[決]{き}まっています。\nYou practice every day, so of course you’ll get better.",
+       ex: "[部屋]{へや}の電気がついている。トビーさんは、まだ起きているに[違]{ちが}いない。\nThe light is on in his room. Toby must still be awake.\n\nあの店は、いつも[行列]{ぎょうれつ}ができている。おいしいに[違]{ちが}いない。\nThere’s always a line at that shop. It must be good.\n\n一万円でブランドのバッグ？にせものに[決]{き}まってるよ。\nA designer bag for ten thousand yen? It’s obviously a fake.\n\n毎日[練習]{れんしゅう}しているんだから、[上手]{じょうず}になるに[決]{き}まっています。\nYou practice every day, so of course you’ll get better.",
        label: "Being sure"
       },
       "Polite forms: ～に[違]{ちが}いありません, ～に[決]{き}まっています. ～に[違]{ちが}いない sounds a little written; in conversation people often say きっと～と思う, or ～に[決]{き}まってる.",
@@ -3645,7 +3645,7 @@ ICA.addUnit({
        alt: "Five bars, each longer than the one above. もしかしたら～かもしれない, maybe; たぶん～でしょう・だろう, probably; ～はずだ, should (from facts); ～にちがいない, must be (from signs); ～にきまっている, of course (casual). Longer bar means more sure; a rough guide.",
        cap: "A rough guide only: tone and context change how sure each one sounds."
       },
-      "How is this different from ～はず ([[hazu]], Unit 9)? はず is reasoning from facts or plans: バスは十時に着くはずです (the timetable says so). ～に[違]{ちが}いない is a conclusion drawn from signs, with conviction: 電気がついているから、起きているに[違]{ちが}いない. ～に[決]{き}まっている is “obviously, no question”, and it can sound pushy. ～かもしれない and ～でしょう ([[kamoshirenai]], [[deshou-darou]], Unit 6) are much less sure.",
+      "How is this different from ～はず ([[hazu]], Unit 9)? はず is reasoning from facts or plans: バスは十時に着くはずです (the schedule says so). ～に[違]{ちが}いない is a conclusion drawn from signs, with conviction: 電気がついているから、起きているに[違]{ちが}いない. ～に[決]{き}まっている is “obviously, no question”, and it can sound pushy. ～かもしれない and ～でしょう ([[kamoshirenai]], [[deshou-darou]], Unit 6) are much less sure.",
       "These are guesses about things you can’t check directly, so they don’t describe your own plans: for “I’ll definitely go”, say [必]{かなら}ず行きます, not ✗ 行くに[違]{ちが}いない.",
       {
        h: "Common mistakes"
@@ -4017,7 +4017,7 @@ ICA.addUnit({
      {
       t: "Just as told, and pretending",
       how: [
-       "Find a recipe, a set of instructions or a timetable (in any language). Write two sentences with ～とおりに or ～どおり about following it, or about something that went as planned.",
+       "Find a recipe, a set of instructions or a schedule (in any language). Write two sentences with ～とおりに or ～どおり about following it, or about something that went as planned.",
        "Write one sentence about a time you pretended something: 聞こえないふり, [寝]{ね}たふり, 知らないふり…."
       ],
       write: "とおり 1… 2… ふり: …"
@@ -4146,7 +4146,7 @@ ICA.addUnit({
        label: "～ついでに"
       },
       "A, before ついでに, is the main plan; B is the extra. With the dictionary form (行くついでに), B happens on the way, as part of the trip. With the た-form (行ったついでに), B happens once you are there.",
-      "ついでに also stands alone at the start of a sentence: ついでに、ごみも出しておいて (While you’re at it, take the rubbish out too).",
+      "ついでに also stands alone at the start of a sentence: ついでに、ごみも出しておいて (While you’re at it, take the garbage out too).",
       "Compare ～ながら ([[nagara]], Unit 7): one person does two things **at the same moment** (歩きながら話す). With ついでに, the two actions are on the same trip, usually one after the other."
      ]
     },
@@ -4170,7 +4170,7 @@ ICA.addUnit({
        ex: "今夜から[明日]{あした}の朝にかけて、強い雨が[降]{ふ}るでしょう。\nHeavy rain is expected from tonight into tomorrow morning.\n\n三月の終わりから四月にかけて、[桜]{さくら}が[咲]{さ}きます。\nThe cherry trees blossom from late March into April.\n\n[関東]{かんとう}から東北にかけて、[雪]{ゆき}が[降]{ふ}っています。\nIt is snowing over a wide area, from Kantō to Tōhoku.",
        label: "から～にかけて"
       },
-      "Compare から～まで ([[particle-kara-made]], Unit 2), which gives an exact start and end: 九時から五時まで[働]{はたら}く (I work from nine to five). A timetable needs まで; a weather forecast, with rain at times over a period, uses にかけて. にかけて can also stand alone: [年末]{ねんまつ}にかけて (toward the end of the year)."
+      "Compare から～まで ([[particle-kara-made]], Unit 2), which gives an exact start and end: 九時から五時まで[働]{はたら}く (I work from nine to five). A schedule needs まで; a weather forecast, with rain at times over a period, uses にかけて. にかけて can also stand alone: [年末]{ねんまつ}にかけて (toward the end of the year)."
      ]
     },
     {
@@ -4958,7 +4958,7 @@ ICA.addUnit({
    levels: {
     starter: [
      "**～うちに** means “while (it lasts)”: do something before a situation ends. [温]{あたた}かいうちに食べてください (Eat it while it’s warm). With a negative, “before”: [忘]{わす}れないうちにメモする (make a note before I forget).",
-     "**～[間]{あいだ}** means “all through a period”: 夏休みの[間]{あいだ}、ずっと[働]{はたら}いていた (I worked all through the summer holiday). **～[間]{あいだ}に** means “at some point during it”: 夏休みの[間]{あいだ}に[免許]{めんきょ}を[取]{と}った (I got my license during the summer holiday).",
+     "**～[間]{あいだ}** means “all through a period”: 夏休みの[間]{あいだ}、ずっと[働]{はたら}いていた (I worked all through the summer vacation). **～[間]{あいだ}に** means “at some point during it”: 夏休みの[間]{あいだ}に[免許]{めんきょ}を[取]{と}った (I got my license during the summer vacation).",
      "**～たびに** means “every time”: この歌を聞くたびに[泣]{な}いてしまう (Every time I hear this song, I cry).",
      "**～[最中]{さいちゅう}に** means “right in the middle of”, usually when something interrupts: [会議]{かいぎ}の[最中]{さいちゅう}に電話が[鳴]{な}った (The phone rang right in the middle of the meeting).",
      "A quick test: does the main action fill the period (～[間]{あいだ}), happen once in it (～[間]{あいだ}に), beat a change (～うちに), repeat (～たびに) or interrupt (～[最中]{さいちゅう}に)?"
@@ -7574,7 +7574,7 @@ ICA.addUnit({
     {
      t: "Very sure, from what they have seen",
      ok: true,
-     why: "～に[違]{ちが}いない is a firm conclusion drawn from signs: the queues."
+     why: "～に[違]{ちが}いない is a firm conclusion drawn from signs: the lines."
     },
     {
      t: "Not sure at all: it’s only a possibility",
@@ -7582,7 +7582,7 @@ ICA.addUnit({
     },
     {
      t: "Sure, because a friend told them",
-     why: "Hearsay would be おいしいそうだ or おいしいらしい. Here the evidence is the queue."
+     why: "Hearsay would be おいしいそうだ or おいしいらしい. Here the evidence is the line."
     },
     {
      t: "Certain, because they have eaten there",
@@ -7722,20 +7722,20 @@ ICA.addUnit({
    q: "「日本に来て以来、ずっとこのアパートに住んでいます。」 What does it mean?",
    options: [
     {
-     t: "I have lived in this flat ever since I came to Japan.",
+     t: "I have lived in this apartment ever since I came to Japan.",
      ok: true,
      why: "～て以来: from coming to Japan up to now, with ずっと for the whole time."
     },
     {
-     t: "I lived in this flat before I came to Japan.",
+     t: "I lived in this apartment before I came to Japan.",
      why: "以来 starts at the turning point and runs forward to now."
     },
     {
-     t: "I will live in this flat after I come to Japan.",
+     t: "I will live in this apartment after I come to Japan.",
      why: "以来 looks back from now; it isn’t used for the future."
     },
     {
-     t: "I came to Japan and moved into this flat much later.",
+     t: "I came to Japan and moved into this apartment much later.",
      why: "ずっと and 以来 say you have lived there the whole time since coming."
     }
    ]

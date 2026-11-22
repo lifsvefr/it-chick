@@ -5,7 +5,7 @@ ICA.addUnit({id:"e3u12",
  title:"Reading and listening strategies",
  icon:"🎧",
  blurb:"The last unit of Japanese Foundations: reading longer texts and finding the writer’s point; brochures, work emails and stories; listening for gist and detail; fillers, casual speech and shadowing; using machine translation and AI tutors well; and last, the JLPT N3, easy news, graded readers, a plan after N3, the bridge to Academic Japanese and a send-off.",
- goals:["Find the writer’s point in N3 essays and explanations, using text shapes, view endings and connectors","Find information in brochures and work emails, and infer what stories leave unsaid","Listen for gist and for detail, and catch the words that change a plan or reveal a reason","Follow real spoken Japanese with fillers, aizuchi, casual contractions and unfinished sentences","Practice with real audio by shadowing, and describe fairly what research says about it","Use machine translation and AI chatbots as learning tools: check what they get wrong, protect privacy and keep doing the thinking yourself","Describe the JLPT N3 sections, item types, scoring and pass marks","Use free easy news and graded readers for extensive reading","Plan your study after N3, and know how to continue into Academic Japanese"],
+ goals:["Find the writer’s point in N3 essays and explanations, using text shapes, view endings and connectors","Find information in brochures and work emails, and infer what stories leave unsaid","Listen for gist and for detail, and catch the words that change a plan or reveal a reason","Follow real spoken Japanese with fillers, aizuchi, casual contractions and unfinished sentences","Practice with real audio by shadowing, and describe fairly what research says about it","Use machine translation and AI chatbots as learning tools: check what they get wrong, protect privacy and keep doing the thinking yourself","Describe the JLPT N3 sections, item types, scoring and passing scores","Use free easy news and graded readers for extensive reading","Plan your study after N3, and know how to continue into Academic Japanese"],
  read:[
   {book:"irodori", where:"Pre-Intermediate (A2/B1), Lessons 1–18", note:"The Japan Foundation’s free A2/B1 course, released in 2026, with reading and listening activities and 3 hours 40 minutes of audio. A good companion to this unit and the next step after it."},
   {book:"taekim", where:"Essential Grammar, “Casual Patterns and Slang”", note:"Casual speech as you will hear it: dropped particles, changed word order and common casual endings."}
@@ -227,7 +227,7 @@ ICA.addUnit({id:"e3u12",
     {h:"Information retrieval: the question decides",
      body:[
       {lead:"In a brochure or an advertisement you never need everything. You need the one line that fits your conditions."},
-      "The JLPT N3 information-retrieval item gives a text of about 600 characters, such as an advertisement or a brochure, and a question about a person with conditions: what they want, when they are free, how much they can pay. Real life is the same: a timetable, a list of classes, a choice of plans.",
+      "The JLPT N3 information-retrieval item gives a text of about 600 characters, such as an advertisement or a brochure, and a question about a person with conditions: what they want, when they are free, how much they can pay. Real life is the same: a schedule, a list of classes, a choice of plans.",
       {ol:["**Read the question first**, and note each condition: who, when, how much, what.","**Scan for the strictest condition** (often the day or the time), and cross out every option that fails it.","**Check the options that are left** against the other conditions, one at a time.","**Read the notes last but carefully**: lines marked ※, sentences with ただし, and small words like 〜のみ (only) or 〜以上 (or more). They often decide the answer."]},
       {fig:"<svg viewBox=\"0 0 340 352\"><defs><marker id=\"u12a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0 L10 5 L0 10 z\"/></marker></defs><text x=\"170\" y=\"18\" text-anchor=\"middle\">Filter by conditions</text><rect class=\"d-panel\" x=\"8\" y=\"30\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"52\">Four classes: ① ② ③ ④</text><text class=\"s\" x=\"20\" y=\"72\">Start with every option</text><path class=\"d-ink\" d=\"M170 84 V100\" stroke-width=\"2\" marker-end=\"url(#u12a)\"/><rect class=\"d-lup\" x=\"8\" y=\"104\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"126\">Weekend, after noon?</text><text class=\"s\" x=\"20\" y=\"146\">① is in the morning, ② is on Wednesday: out</text><path class=\"d-ink\" d=\"M170 158 V174\" stroke-width=\"2\" marker-end=\"url(#u12a)\"/><rect class=\"d-lup\" x=\"8\" y=\"178\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"200\">Read the notes: のみ, ※</text><text class=\"s\" x=\"20\" y=\"220\">④ is only for learners of Japanese: out</text><path class=\"d-ink\" d=\"M170 232 V248\" stroke-width=\"2\" marker-end=\"url(#u12a)\"/><rect class=\"d-sage\" x=\"8\" y=\"252\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"20\" y=\"274\">③ is left</text><text class=\"s\" x=\"20\" y=\"294\">Check the price: 2,000 yen, under the limit</text><text x=\"170\" y=\"334\" text-anchor=\"middle\" class=\"s\">One condition at a time, notes included</text></svg>", alt:"A flow of four boxes. Start with four classes, one to four. Condition: weekend, after noon? Class one is in the morning and class two is on Wednesday, so both are out. Read the notes, のみ and ※: class four is only for learners of Japanese, so it is out. Class three is left; check the price: 2,000 yen, under the limit.", cap:"How Hiroyuki-san’s question below is solved: cross out, then check what is left."}
      ]},
@@ -385,13 +385,13 @@ ICA.addUnit({id:"e3u12",
       {t:"This time it’s my turn to help you", ok:true, why:"Right. [番]{ばん} is a turn, and 今度は is “this time”. He lent her an umbrella; now she lends it back to him."},
       {t:"This time it’s my turn to wait", why:"Nobody is waiting in turn. She takes the umbrella out of her bag for him."},
       {t:"Next time I will bring my own umbrella", why:"今度 can mean “next time”, but here she is acting now, in the rain, and [番]{ばん} is about whose turn it is."},
-      {t:"It’s my number in the queue", why:"[番]{ばん} can be a number in some words ([番号]{ばんごう}), but 私の[番]{ばん} here is “my turn”."}
+      {t:"It’s my number in line", why:"[番]{ばん} can be a number in some words ([番号]{ばんごう}), but 私の[番]{ばん} here is “my turn”."}
      ]}
    ],
    apply:{intro:"Practice on real practical texts, and on stories at your level.",
     tasks:[
      {t:"Solve a real information question",
-      how:["Find a Japanese brochure, timetable, class list or price plan (a website, a leaflet or a photo).","Write a person with three conditions (a day, a time, a budget), like Hiroyuki-san.","Find the right option by crossing out, then check the notes (※, のみ, ただし). Write which word decided it."],
+      how:["Find a Japanese brochure, schedule, class list or price plan (a website, a leaflet or a photo).","Write a person with three conditions (a day, a time, a budget), like Hiroyuki-san.","Find the right option by crossing out, then check the notes (※, のみ, ただし). Write which word decided it."],
       write:"Conditions… crossed out… the answer… the deciding word…"},
      {t:"Reply to Hiroyuki-san’s email",
       how:["Write a short reply saying whether you can attend the training on 9 April.","Start with お[疲]{つか}れさまです and your name, answer the question, and end with よろしくお[願]{ねが}いいたします.","Check that you answered exactly what was asked, before the deadline."],
@@ -478,7 +478,7 @@ ICA.addUnit({id:"e3u12",
      body:[
       "In the JLPT you may write notes on the test booklet while you listen. Notes should be quick: a few words, numbers and symbols, never full sentences.",
       {ex:"Transcript 1:\nコピー 20[部]{ぶ} → ✗ 午後に ([課長]{かちょう} まだ)\n先に：プロジェクター[確認]{かくにん} ([会議室]{かいぎしつ}) ✓\n\nTranscript 2:\n音 うるさい → がまんできた ✗\n[実]{じつ}は：会社 [移]{うつ}る、[片道]{かたみち}2時間 ✓", label:"Notes for the transcripts", mono:true},
-      {list:["**Write numbers and names at once**: they are the first thing you forget.","**Use arrows for changes** (→), a cross for what was ruled out (✗) and a tick for the final decision (✓).","**Write in whatever script is fastest**: kana, English, or your own shorthand. Notes are for you.","**Don’t write while the key part is playing.** If the speaker says でも or [実]{じつ}は, stop writing and listen."]},
+      {list:["**Write numbers and names at once**: they are the first thing you forget.","**Use arrows for changes** (→), a cross for what was ruled out (✗) and a check mark for the final decision (✓).","**Write in whatever script is fastest**: kana, English, or your own shorthand. Notes are for you.","**Don’t write while the key part is playing.** If the speaker says でも or [実]{じつ}は, stop writing and listen."]},
       "For practice without audio, cover a transcript, have someone read it aloud once, and take notes. Then answer the question from your notes only, and check against the transcript.",
       {key:"Read the question, predict, listen to the end, and trust the last decision or the real reason."}
      ]}
@@ -521,8 +521,8 @@ ICA.addUnit({id:"e3u12",
      options:[
       {t:"Her company is moving far away", ok:true, why:"Right. [実]{じつ}は introduces the real reason: the company moves to the next prefecture, and it would be nearly two hours each way."},
       {t:"The neighbors are noisy", why:"She mentions the noise, then says でも、それはがまんできた: she could put up with it."},
-      {t:"Her flat is far from the station", why:"The man says it is close to the station and convenient. That is why he is surprised she is moving."},
-      {t:"She wants a bigger flat", why:"Size is never mentioned. Answer only from what you hear."}
+      {t:"Her apartment is far from the station", why:"The man says it is close to the station and convenient. That is why he is surprised she is moving."},
+      {t:"She wants a bigger apartment", why:"Size is never mentioned. Answer only from what you hear."}
      ]},
     {id:"e3u12-l3-x5",
      type:"mcq",
@@ -530,7 +530,7 @@ ICA.addUnit({id:"e3u12",
      options:[
       {t:"でも、それはがまんできたんだよね", ok:true, why:"Right. でも turns against what she just said, and がまんできた means she could bear it, so the noise is ruled out."},
       {t:"となりの[部屋]{へや}の音がけっこううるさくて", why:"This introduces the noise. On its own it sounds like a reason; the next sentence rules it out."},
-      {t:"今の[部屋]{へや}からだと", why:"This is part of the real reason: the trip from her current flat."},
+      {t:"今の[部屋]{へや}からだと", why:"This is part of the real reason: the trip from her current apartment."},
       {t:"それは[遠]{とお}いね", why:"The man reacts to the real reason. It says nothing about the noise."}
      ]},
     {id:"e3u12-l3-x6",
@@ -575,7 +575,7 @@ ICA.addUnit({id:"e3u12",
       how:["Choose one listening activity from the free IRODORI course (Pre-Intermediate if it suits you), or another recording with a script.","Listen once without the script and write the gist in one sentence: who, about what, what they decide.","Listen again and write three details (numbers, times, reasons). Then read the script and check."],
       write:"Gist… details… what I missed…"},
      {t:"Take notes with symbols",
-      how:["Choose a short conversation (1–2 minutes) with a script.","While listening, write only numbers, names, arrows (→), crosses (✗) and ticks (✓).","Without the script, retell the conversation from your notes. Then check."],
+      how:["Choose a short conversation (1–2 minutes) with a script.","While listening, write only numbers, names, arrows (→), crosses (✗) and check marks (✓).","Without the script, retell the conversation from your notes. Then check."],
       write:"My notes… what my notes helped with… what they missed…"},
      {t:"Turn this lesson’s transcripts into listening",
       how:["Ask a friend or family member who agrees to read Transcripts 1–3 aloud, one at a time, while you don’t look.","Answer each question from memory and your notes.","Then read the transcript and mark the words that decided the answer."],
@@ -968,8 +968,8 @@ ICA.addUnit({id:"e3u12",
   {id:"e3u12-l5",
    title:"The JLPT N3, news, graded readers and what comes next",
    minutes:60,
-   hook:{q:"In the JLPT N3, Cheska scores 45 in Language Knowledge, 42 in Reading and 17 in Listening: 104 out of 180, above the pass mark of 95. Does she pass?", options:["No, because Listening is below 19","Yes, because 104 is above 95","Yes, but only with a CEFR level of A2","No, because Reading is below 45"], answer:0, reveal:"**No.** To pass the N3 you need a total of at least 95 **and** at least 19 in each of the three scoring sections. A high total cannot make up for one low section, so 17 in Listening means a fail. It is the most common surprise about JLPT results. This lesson goes through the N3 as it is in 2026, then free news and graded readers, a plan for after N3, and the step into Academic Japanese."},
-   goals:["Describe the JLPT N3 sections, times, item types, scoring and pass marks","Read short news in easy Japanese, including how news reports where information comes from","Use graded readers for extensive reading, and know where to find free ones","Plan your study after N3, with a ladder from learner texts to real Japanese","Know what the Academic Japanese units teach, and how this track prepares you for them"],
+   hook:{q:"In the JLPT N3, Cheska scores 45 in Language Knowledge, 42 in Reading and 17 in Listening: 104 out of 180, above the passing score of 95. Does she pass?", options:["No, because Listening is below 19","Yes, because 104 is above 95","Yes, but only with a CEFR level of A2","No, because Reading is below 45"], answer:0, reveal:"**No.** To pass the N3 you need a total of at least 95 **and** at least 19 in each of the three scoring sections. A high total cannot make up for one low section, so 17 in Listening means a fail. It is the most common surprise about JLPT results. This lesson goes through the N3 as it is in 2026, then free news and graded readers, a plan for after N3, and the step into Academic Japanese."},
+   goals:["Describe the JLPT N3 sections, times, item types, scoring and passing scores","Read short news in easy Japanese, including how news reports where information comes from","Use graded readers for extensive reading, and know where to find free ones","Plan your study after N3, with a ladder from learner texts to real Japanese","Know what the Academic Japanese units teach, and how this track prepares you for them"],
    learn:[
     {h:"The JLPT N3 at a glance",
      body:[
@@ -981,7 +981,7 @@ ICA.addUnit({id:"e3u12",
         ["Listening","40 min","Task-based comprehension · Comprehension of key points · Comprehension of general outline · Verbal expressions · Quick response"]
        ]},
       "Notice that the second section holds both grammar and reading in 70 minutes. Reading takes most of that time, so practice reading at speed, and don’t spend too long on any one grammar item.",
-      {list:["**Scoring.** There are three scoring sections, each scored 0–60: Language Knowledge (Vocabulary/Grammar), Reading and Listening. The total is 0–180.","**Pass marks.** You need at least 95 in total **and** at least 19 in each scoring section. A high total cannot make up for one section below 19.","**Missing a section** means you fail, and the score report then shows no scores at all, even for the sections you took.","**CEFR for reference.** Since the December 2025 test, score reports of people who pass show a CEFR level as reference information. At N3, a total of 95–103 is shown as A2 and 104 or more as B1. It covers reading and listening only, the skills the test measures.","**Dates.** The JLPT is held in July and December, though some places hold only one of them. Apply through the host institution for your city listed on [jlpt.jp](https://www.jlpt.jp/e/), and check its dates and deadlines there."]},
+      {list:["**Scoring.** There are three scoring sections, each scored 0–60: Language Knowledge (Vocabulary/Grammar), Reading and Listening. The total is 0–180.","**Passing scores.** You need at least 95 in total **and** at least 19 in each scoring section. A high total cannot make up for one section below 19.","**Missing a section** means you fail, and the score report then shows no scores at all, even for the sections you took.","**CEFR for reference.** Since the December 2025 test, score reports of people who pass show a CEFR level as reference information. At N3, a total of 95–103 is shown as A2 and 104 or more as B1. It covers reading and listening only, the skills the test measures.","**Dates.** The JLPT is held in July and December, though some places hold only one of them. Apply through the host institution for your city listed on [jlpt.jp](https://www.jlpt.jp/e/), and check its dates and deadlines there."]},
       {fig:"<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"18\" text-anchor=\"middle\">N3 pass: 95 in total and 19 in each</text><text x=\"12\" y=\"52\">Vocabulary/Grammar</text><rect class=\"d-panel\" x=\"12\" y=\"60\" width=\"300\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-sage\" x=\"12\" y=\"60\" width=\"225\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"246\" y=\"77\" class=\"s\">45</text><text x=\"12\" y=\"116\">Reading</text><rect class=\"d-panel\" x=\"12\" y=\"124\" width=\"300\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-sage\" x=\"12\" y=\"124\" width=\"210\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"231\" y=\"141\" class=\"s\">42</text><text x=\"12\" y=\"180\">Listening</text><rect class=\"d-panel\" x=\"12\" y=\"188\" width=\"300\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-rose\" x=\"12\" y=\"188\" width=\"85\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"106\" y=\"205\" class=\"s\">17</text><path class=\"d-ink\" d=\"M107 44 V220\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"112\" y=\"236\" class=\"s\">19: the minimum</text><text x=\"12\" y=\"266\">Total 104 (over 95), but</text><text x=\"12\" y=\"286\">Listening is under 19: fail</text></svg>", alt:"Three bars out of 60. Vocabulary and grammar 45, Reading 42, Listening 17. A dashed line marks 19, the minimum for each section; the Listening bar stops before it. The total is 104, over 95, but Listening is under 19, so the result is a fail.", cap:"Cheska’s scores from the warm-up. Each bar is out of 60; the dashed line is the minimum of 19."},
       {tip:"On jlpt.jp, “Let’s Try Sample Questions!” has one free sample question for each item type at every level. Try the N3 set once to learn the formats, a few weeks before your test."}
      ]},
@@ -995,7 +995,7 @@ ICA.addUnit({id:"e3u12",
      body:[
       "NHK, Japan’s public broadcaster, runs a news site in easy Japanese for foreign residents and children: [[news-easy|NHKやさしいことばニュース]] (NEWS WEB EASY). It is at [news.web.nhk/news/easy/](https://news.web.nhk/news/easy/) and is free to read; the page does not ask you to log in ({{reading-news-japanese}}).",
       "Reviews describe furigana over the kanji (which you can switch off), audio of the articles, and short explanations of harder words. Check what the site offers when you visit, as features change.",
-      {warn:"Since NHK’s online services became NHK ONE in October 2025, the site shows a confirmation screen: you tick a box to confirm you have read a notice, and choose a use (household, business or school) and a region. NHK says this guidance keeps appearing until its contract check is completed. The notice explains that, under Japan’s Broadcast Act, a household without a reception contract that uses NHK ONE needs one, and that households that already have a contract pay nothing extra. Read it and decide for yourself; graded readers (below) are a good alternative that needs no screen."},
+      {warn:"Since NHK’s online services became NHK ONE in October 2025, the site shows a confirmation screen: you check a box to confirm you have read a notice, and choose a use (household, business or school) and a region. NHK says this guidance keeps appearing until its contract check is completed. The notice explains that, under Japan’s Broadcast Act, a household without a reception contract that uses NHK ONE needs one, and that households that already have a contract pay nothing extra. Read it and decide for yourself; graded readers (below) are a good alternative that needs no screen."},
       "Easy news articles follow a pattern: a headline, a first sentence with the main facts (who, what, where), then details and someone’s comment. Here is an invented article in that style:",
       {ex:"古い電車を図書館にしました\n\nみどり[市]{し}で、使わなくなった電車を図書館にしました。電車の中には本が500[冊]{さつ}ぐらいあって、子どもたちが[自由]{じゆう}に読むことができます。\n[市]{し}によると、この電車は40年ぐらい町の中を走っていましたが、去年、新しい電車に[変]{か}わりました。「電車を[残]{のこ}してほしい」という[声]{こえ}がたくさんあったため、[市]{し}は図書館にすることにしました。\n図書館に来た小学生は「電車の中で本を読むのは楽しいです」と話していました。図書館は土曜日と日曜日に開いています。", label:"An invented article in the style of easy news"},
       {table:[
@@ -1086,8 +1086,8 @@ ICA.addUnit({id:"e3u12",
      type:"mcq",
      q:"Rodrigo scores 30 in Language Knowledge, 33 in Reading and 32 in Listening. Does he pass the N3?",
      options:[
-      {t:"Yes: he reaches every pass mark", ok:true, why:"Right. 30 + 33 + 32 = 95, which reaches the pass mark, and all three sections are 19 or more."},
-      {t:"No: the total must be more than 95", why:"The pass mark is 95: a total of 95 or more passes, if every section reaches 19."},
+      {t:"Yes: he reaches every passing score", ok:true, why:"Right. 30 + 33 + 32 = 95, which reaches the passing score, and all three sections are 19 or more."},
+      {t:"No: the total must be more than 95", why:"The passing score is 95: a total of 95 or more passes, if every section reaches 19."},
       {t:"No: each section needs at least 32", why:"The minimum for each section is 19, not 32."},
       {t:"It depends on the CEFR level", why:"The CEFR level is reference information on the report. Passing depends only on the total and the section minimums."}
      ]},
@@ -1188,11 +1188,11 @@ ICA.addUnit({id:"e3u12",
       {t:"Many people on trains are looking at their phones", why:"This is the たしかに part: the writer accepts it and then turns with しかし."},
       {t:"Reading on a phone is better than reading books", why:"The writer never compares which is better. The point is that the device doesn’t matter."},
       {t:"What matters is time to read, not what you read on", ok:true, why:"The point comes at the end ([尾括型]{びかつがた}): 大切なのは… ではないだろうか is the writer’s own view."}]},
-    {id:"e3u12-cp04", lesson:"e3u12-l2", level:1, q:"An advert for a flat says 「ペット[不可]{ふか}」. What does it tell you?", options:[
-      {t:"Pets are welcome in the flat", why:"That would be ペット[可]{か}. 不 makes the opposite: [不可]{ふか} means “not allowed”."},
+    {id:"e3u12-cp04", lesson:"e3u12-l2", level:1, q:"An advert for an apartment says 「ペット[不可]{ふか}」. What does it tell you?", options:[
+      {t:"Pets are welcome in the apartment", why:"That would be ペット[可]{か}. 不 makes the opposite: [不可]{ふか} means “not allowed”."},
       {t:"Pets need a booking first", why:"A booking would be [要予約]{ようよやく}. [不可]{ふか} says something is not allowed."},
       {t:"Only people with pets may apply", why:"“Only” is 〜のみ, as in [会員]{かいいん}のみ. [不可]{ふか} means not allowed."},
-      {t:"Pets are not allowed", ok:true, why:"[可]{か} means allowed, and [不可]{ふか} means not allowed: no pets in this flat."}]},
+      {t:"Pets are not allowed", ok:true, why:"[可]{か} means allowed, and [不可]{ふか} means not allowed: no pets in this apartment."}]},
     {id:"e3u12-cp05", lesson:"e3u12-l2", level:2, q:"A ferry sign says 「[潮島]{しおじま}行き　[片道]{かたみち}800円　※[平日]{へいじつ}に[限]{かぎ}り、学生は[半額]{はんがく}」. Rodrigo, a student, goes on Saturday and comes back the same day. How much does he pay?", options:[
       {t:"800円", why:"That is half price both ways, or the full fare one way. On a Saturday there is no discount, and he pays each way."},
       {t:"1,600円", ok:true, why:"〜に[限]{かぎ}り limits the student price to weekdays ([平日]{へいじつ}). On a Saturday he pays the full 800 yen each way: 800 × 2."},
@@ -1289,7 +1289,7 @@ ICA.addUnit({id:"e3u12",
        ["まず / 先に / そのあとで","The order of actions"]
       ]},
      "**Predict.** Before a conversation, read the question and any printed options, and decide what you are listening for: a time, an action, a reason, an opinion. Then you know which words matter and which you can let go past.",
-     "**Notes:** numbers and names at once; arrows for changes (→), crosses for what was ruled out (✗), ticks for the final decision (✓). Stop writing when you hear でも or [実]{じつ}は.",
+     "**Notes:** numbers and names at once; arrows for changes (→), crosses for what was ruled out (✗), check marks for the final decision (✓). Stop writing when you hear でも or [実]{じつ}は.",
      "**Real speech** is full of fillers (えーと, あのう, まあ, なんか), aizuchi (はい, うん, へえ: “I’m following”, not “I agree”), casual contractions (〜てる, 〜ちゃう, 〜とく, 〜って, わかんない) and unfinished sentences (それはちょっと……: a soft no).",
      "**Practice:** use recordings with scripts, such as the free IRODORI audio. Listen for the gist, then for details, then check with the script; then shadow a short part."
     ],
@@ -1314,7 +1314,7 @@ ICA.addUnit({id:"e3u12",
      {key:"Headline, first sentence, then details: and notice where each fact comes from."}
     ],
     builder:[
-     "**The confirmation screen.** Since NHK’s online services became NHK ONE on 1 October 2025, the site shows a notice. You tick a box to confirm you have read it and choose a use (household, business or school) and a region; NHK says this guidance keeps appearing until its contract check is completed. The notice says that NHK ONE is open to everyone, that households with a reception contract pay nothing extra, and that under Japan’s Broadcast Act a household without one that uses the service needs a contract.",
+     "**The confirmation screen.** Since NHK’s online services became NHK ONE on 1 October 2025, the site shows a notice. You check a box to confirm you have read it and choose a use (household, business or school) and a region; NHK says this guidance keeps appearing until its contract check is completed. The notice says that NHK ONE is open to everyone, that households with a reception contract pay nothing extra, and that under Japan’s Broadcast Act a household without one that uses the service needs a contract.",
      {table:[
        ["In news","Meaning"],
        ["〜によると","According to… (the source)"],
@@ -1335,9 +1335,9 @@ ICA.addUnit({id:"e3u12",
    checked:"2026-11"},
   {id:"jlpt-n3-overview",
    title:"The JLPT N3",
-   aka:["JLPT N3","N3 test","日本語能力試験 N3","N3 pass mark"],
+   aka:["JLPT N3","N3 test","日本語能力試験 N3","N3 passing score"],
    tags:["japanese","jlpt","n3","tests"],
-   summary:"The N3 test sections and times, its item types, three scoring sections, the pass mark of 95 with 19 in each, and the CEFR reference level.",
+   summary:"The N3 test sections and times, its item types, three scoring sections, the passing score of 95 with 19 in each, and the CEFR reference level.",
    levels:{starter:[
      "The [[jlpt-n3|N3]] is the middle of the JLPT’s five levels: “the ability to understand Japanese used in everyday situations to a certain degree”. It bridges the basic levels (N5, N4) and the advanced ones (N2, N1).",
      "It has three test sections: Vocabulary (30 minutes), Grammar・Reading (70 minutes) and Listening (40 minutes). All answers are multiple choice; there is no speaking or writing.",
@@ -1768,8 +1768,8 @@ ICA.addUnit({id:"e3u12",
    level:2,
    q:"In Transcript 2, why is the man surprised that his friend is moving?",
    options:[
-    {t:"She had said her flat was convenient", ok:true, why:"Right. 駅から近くて[便利]{べんり}だって言ってたのに: you said it was convenient, so why move?"},
-    {t:"She had just bought her flat", why:"Buying is not mentioned."},
+    {t:"She had said her apartment was convenient", ok:true, why:"Right. 駅から近くて[便利]{べんり}だって言ってたのに: you said it was convenient, so why move?"},
+    {t:"She had just bought her apartment", why:"Buying is not mentioned."},
     {t:"She had said she would never leave the town", why:"She said nothing like that."},
     {t:"Her company had told her to stay", why:"The company is moving; it didn’t tell her to stay."}
    ]},
@@ -1788,10 +1788,10 @@ ICA.addUnit({id:"e3u12",
    level:3,
    q:"Cheska takes these notes: 「金曜 → ✗ 土曜 10時 ✓」. What did the speakers decide?",
    options:[
-    {t:"Saturday at 10, not Friday", ok:true, why:"Right. The arrow shows a change, the cross rules out Friday, and the tick marks the final decision."},
+    {t:"Saturday at 10, not Friday", ok:true, why:"Right. The arrow shows a change, the cross rules out Friday, and the check mark shows the final decision."},
     {t:"Friday at 10", why:"The ✗ next to the arrow shows Friday was ruled out."},
     {t:"Either Friday or Saturday", why:"The ✓ marks one final choice: Saturday."},
-    {t:"Saturday, time not decided", why:"10時 is written next to Saturday with the tick."}
+    {t:"Saturday, time not decided", why:"10時 is written next to Saturday with the check mark."}
    ]},
   {id:"e3u12-q27",
    lesson:"e3u12-l3",
@@ -1816,7 +1816,7 @@ ICA.addUnit({id:"e3u12",
   {id:"e3u12-q29",
    lesson:"e3u12-l4",
    level:2,
-   q:"A customer says 「はい、はい」 many times while a shop assistant explains a plan. What does that show?",
+   q:"A customer says 「はい、はい」 many times while a salesclerk explains a plan. What does that show?",
    options:[
     {t:"That the customer is following, not necessarily agreeing", ok:true, why:"Right. These are aizuchi: listening signals. Agreement is shown by what the person says next."},
     {t:"That the customer agrees to buy the plan", why:"Aizuchi don’t mean “yes, I’ll buy it”. Wait for the customer’s actual answer."},
@@ -1896,12 +1896,12 @@ ICA.addUnit({id:"e3u12",
   {id:"e3u12-q37",
    lesson:"e3u12-l5",
    level:1,
-   q:"What is the total pass mark for the JLPT N3?",
+   q:"What is the total passing score for the JLPT N3?",
    options:[
     {t:"95 out of 180", ok:true, why:"Right. You also need at least 19 in each scoring section."},
-    {t:"90 out of 180", why:"90 is the N4 pass mark."},
-    {t:"80 out of 180", why:"80 is the N5 pass mark."},
-    {t:"100 out of 180", why:"The N3 pass mark is 95."}
+    {t:"90 out of 180", why:"90 is the N4 passing score."},
+    {t:"80 out of 180", why:"80 is the N5 passing score."},
+    {t:"100 out of 180", why:"The N3 passing score is 95."}
    ]},
   {id:"e3u12-q38",
    lesson:"e3u12-l5",
@@ -2056,7 +2056,7 @@ ICA.addUnit({id:"e3u12",
   {id:"e3u12-q53",
    lesson:"e3u12-l6",
    level:2,
-   q:"Cheska wants to ask Prof. Ōnishi what she did at the weekend. A chatbot suggests 「あなたは[週末]{しゅうまつ}、何をしましたか。」 What is the problem?",
+   q:"Cheska wants to ask Prof. Ōnishi what she did on the weekend. A chatbot suggests 「あなたは[週末]{しゅうまつ}、何をしましたか。」 What is the problem?",
    options:[
     {t:"あなた can sound rude to a teacher; use 先生 or no word", ok:true, why:"Right. Japanese uses the person’s name and title, or leaves “you” out. For example: 先生は[週末]{しゅうまつ}、何をなさいましたか。"},
     {t:"[週末]{しゅうまつ} is too formal a word to use with a teacher", why:"[週末]{しゅうまつ} is an ordinary word, fine with anyone. The problem is あなた."},

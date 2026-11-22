@@ -17,7 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e1u8-l1", title:"Giving a 発表 in a ゼミ or at a conference", minutes:55,
-   hook:{q:"A Japanese classmate says: 「[来週]{らいしゅう}のゼミの[発表]{はっぴょう}、レジュメは[何]{なん}ページ？」 What is a レジュメ here?", options:["A CV (a [履歴書]{りれきしょ}) for a job application","A handout that summarizes your presentation","The full text of your graduation thesis","The list of students in the seminar"], answer:1, reveal:"**A handout.** In English a “résumé” is a CV, but at Japanese universities a レジュメ (from the French *résumé*, “summary”) is the handout you give out with a presentation: headings, key points, quotations, figures and references on one or two pages. A CV is a [履歴書]{りれきしょ}. This lesson covers the kinds of [発表]{はっぴょう} you’ll give, how to build the レジュメ and the talk, and the stock phrases for each stage."},
+   hook:{q:"A Japanese classmate says: 「[来週]{らいしゅう}のゼミの[発表]{はっぴょう}、レジュメは[何]{なん}ページ？」 What is a レジュメ here?", options:["A résumé (a [履歴書]{りれきしょ}) for a job application","A handout that summarizes your presentation","The full text of your graduation thesis","The list of students in the seminar"], answer:1, reveal:"**A handout.** In English a “résumé” is a document for job applications, but at Japanese universities a レジュメ (from the French *résumé*, “summary”) is the handout you give out with a presentation: headings, key points, quotations, figures and references on one or two pages. A job résumé is a [履歴書]{りれきしょ}. This lesson covers the kinds of [発表]{はっぴょう} you’ll give, how to build the レジュメ and the talk, and the stock phrases for each stage."},
    goals:[
      "Recognise the main kinds of 発表 at a Japanese university and conference",
      "Make a レジュメ in the usual written style, separate from the spoken talk",
@@ -40,7 +40,7 @@ ICA.addUnit({
       "At a [学会]{がっかい} (an academic society’s conference), each session has a [座長]{ざちょう} (the chair), who introduces speakers, keeps time and runs the questions. In a ゼミ the teacher, or a student acting as [[shikai|[司会]{しかい}]] (the chair or host), does this job.",
       {tip:"If presenting in Japanese makes you nervous, you are in good company: many Japanese first-year students find their first ゼミ発表 hard too, because academic speaking is new for everyone. It is a skill you build with practice, not a test of your Japanese."}
     ]},
-    {h:"The レジュメ: a handout, not a CV", body:[
+    {h:"The レジュメ: a handout, not a résumé", body:[
       "The [[rejume|レジュメ]] (*rejume*, also written レジメ, or called ハンドアウト or [配布]{はいふ}資料) is the handout that goes with your talk. Listeners use it to follow you, take notes on it and come back to it in the discussion. Your teacher decides its size and length; one or two A4 pages is common.",
       {list:[
         "**Header**: the course name and session (〇〇演習　第5回), the presenter’s name and year (often with student number), and the title.",
@@ -121,7 +121,7 @@ ICA.addUnit({
       {t:"輪読", ok:true, why:"輪読 is reading a book together, with members taking turns to present its chapters."},
       {t:"学会発表", why:"A 学会発表 is a talk at an academic society’s conference, not a chapter in a class reading."},
       {t:"卒論中間発表", why:"That is an interim presentation of your own graduation thesis."},
-      {t:"履歴書", why:"A 履歴書 is a CV, not a presentation at all."}
+      {t:"履歴書", why:"A 履歴書 is a job résumé, not a presentation at all."}
     ]},
     {id:"e1u8-l1-x2", type:"sort", q:"Following the usual convention, which lines belong on the written レジュメ and which would you say aloud in the talk?", buckets:["Written on the レジュメ","Said aloud in the talk"], items:[
       {t:"1. 研究の背景と目的", b:0, why:"A numbered heading that ends on a noun (体言止め): typical レジュメ style."},
@@ -916,7 +916,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "A [[happyou|発表]] (*happyō*) is an academic presentation. At Japanese universities you give them in a [[zemi|ゼミ]] (a small seminar class) and, later, perhaps at a [学会]{がっかい} (an academic conference).",
-      "You usually hand out a [[rejume|レジュメ]] with it. Careful: in English a résumé is a CV, but in Japanese university life a レジュメ is a one- or two-page summary of your talk, with headings, bullet points, figures and references.",
+      "You usually hand out a [[rejume|レジュメ]] with it. Careful: in English a résumé is a document for job applications, but in Japanese university life a レジュメ is a one- or two-page summary of your talk, with headings, bullet points, figures and references.",
       "The talk itself follows a fixed frame. You open with your name and topic (「本日は〜について発表いたします」), say how the talk is organized, go through background, method, results and discussion, and close with 「以上で発表を終わります。ご清聴ありがとうございました。」 Then come questions.",
       {key:"Clear stages and set phrases matter more than perfect Japanese."}
      ],
@@ -1147,7 +1147,7 @@ ICA.addUnit({
   ],
   terms:[
    {id:"happyou", term:"発表 (happyō)", def:"An academic presentation, such as a talk in a ゼミ or at a conference (学会発表). Usually given with a レジュメ handout and followed by 質疑応答.", codex:"japanese-presentations"},
-   {id:"rejume", term:"レジュメ (rejume)", def:"At Japanese universities, the one- or two-page handout that summarizes a presentation: headings, bullet points, figures, discussion points and references. Not a CV, which is a 履歴書.", codex:"japanese-presentations"},
+   {id:"rejume", term:"レジュメ (rejume)", def:"At Japanese universities, the one- or two-page handout that summarizes a presentation: headings, bullet points, figures, discussion points and references. Not a job résumé, which is a 履歴書.", codex:"japanese-presentations"},
    {id:"zemi", term:"ゼミ (zemi)", def:"A small seminar class led by one teacher, where students present and discuss; in many programs students stay in one ゼミ until their graduation thesis. From the German “Seminar”.", codex:"japanese-presentations"},
    {id:"shikai", term:"司会 (shikai)", def:"The person who chairs or hosts a session: introduces speakers, keeps time and runs the questions. At a conference this role is called 座長 (zachō).", codex:"zemi-discussion"},
    {id:"shitsugi-outou", term:"質疑応答 (shitsugi ōtō)", def:"Questions and answers: the part after a 発表 when the audience asks questions or makes comments and the presenter answers.", codex:"zemi-discussion"},
@@ -1170,7 +1170,7 @@ ICA.addUnit({
    /* ---------- Lesson 1 ---------- */
    {id:"e1u8-q01", lesson:"e1u8-l1", level:1, q:"At a Japanese university, what is a レジュメ?", options:[
      {t:"A handout that summarizes a presentation", ok:true, why:"In Japanese academic life, a レジュメ is the summary handout for a 発表."},
-     {t:"A CV for job applications", why:"That is the English meaning of résumé; in Japanese a CV is a 履歴書."},
+     {t:"A résumé for job applications", why:"That is the English meaning of résumé; in Japanese a résumé is a 履歴書."},
      {t:"The final version of a graduation thesis", why:"That is the 卒業論文 itself."},
      {t:"An attendance sheet", why:"A レジュメ is about the content of a talk, not attendance."}
    ]},

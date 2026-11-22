@@ -309,7 +309,7 @@ ICA.addUnit({
     ]},
     {id:"t1u10-l2-x5", type:"spot", q:"Mei describes one slide of her talk on a new recycling scheme. Tap the design choices likely to cause problems.", ask:"cause problems", parts:[
       "The headline ",
-      {t:"“Food waste now goes in the green bin”", flag:false, why:"A headline sentence that makes the point. Good."},
+      {t:"“Food waste now goes in the compost bin”", flag:false, why:"A headline sentence that makes the point. Good."},
       " is typed ",
       {t:"in the layout’s title placeholder", flag:false, why:"Right: it becomes the slide’s real title, for screen readers, navigation and theme changes."},
       ". Below it, ",
@@ -528,7 +528,7 @@ ICA.addUnit({
        apple:["Drag a photo onto the slide, or choose **Insert → Choose** and pick a file. The **Media** button in the toolbar also opens your Photos library.","For images from the web, check the license on the source page first.","Add a small credit line under the picture: title, author, source and license."]
      }},
      {t:"Write alt text for the picture (or mark decoration as decorative)", app:{
-       ms:["Right-click the picture and choose **View Alt Text** (in some versions **Edit Alt Text**).","Type one or two sentences about what matters in the picture. If PowerPoint has written a description for you, check and correct it.","For a purely decorative item, tick **Mark as decorative** instead."],
+       ms:["Right-click the picture and choose **View Alt Text** (in some versions **Edit Alt Text**).","Type one or two sentences about what matters in the picture. If PowerPoint has written a description for you, check and correct it.","For a purely decorative item, check **Mark as decorative** instead."],
        google:["Right-click the picture and choose **Alt text**, or select it and press [[kbd:Ctrl]] + [[kbd:Alt]] + [[kbd:Y]] (on a Mac, [[kbd:Cmd]] + [[kbd:Option]] + [[kbd:Y]]).","Type one or two sentences about what matters in the picture.","Some images get alt text automatically; Google advises checking that it is correct."],
        libre:["Select the picture and choose **Format → Alt Text** (in older versions it is called **Description**, also on the right-click menu).","Type one or two sentences about what matters in the picture, then **OK**."],
        apple:["Select the picture and open the **Format** sidebar.","On the **Image** tab, find **Description** and type one or two sentences about what matters in the picture."]
@@ -536,7 +536,7 @@ ICA.addUnit({
      {t:"Build one chart slide that makes one point", app:{
        ms:["Choose **Insert → Chart**, pick a **Clustered Column** or **Bar** chart, and type a few real numbers into the data sheet that opens (for example, attendance at five events).","Delete what doesn’t help: click the legend or gridlines and press [[kbd:Delete]].","Click one bar twice to select just that bar, and give it a stronger color with **Format → Shape Fill**.","Type the point as the slide title, then add alt text to the chart."],
        google:["Choose **Insert → Chart → Bar** (or **Column**). Google creates a linked chart; click **Open source** on the chart to edit its numbers in Google Sheets.","Back in Slides, click **Update** on the chart to pull in your numbers.","In Sheets, use the chart editor’s **Customize** tab to remove the legend and change one bar’s color, then update again.","Type the point as the slide title, then add alt text to the chart."],
-       libre:["Choose **Insert → Chart**. A sample column chart appears; choose **View → Data Table** (or right-click → **Data Table**) to type your numbers.","Remove the legend with **Insert → Legend** (untick **Display legend**), and change one bar’s color by selecting it and choosing **Format Data Point**.","Type the point as the slide title, then add alt text to the chart."],
+       libre:["Choose **Insert → Chart**. A sample column chart appears; choose **View → Data Table** (or right-click → **Data Table**) to type your numbers.","Remove the legend with **Insert → Legend** (uncheck **Display legend**), and change one bar’s color by selecting it and choosing **Format Data Point**.","Type the point as the slide title, then add alt text to the chart."],
        apple:["Click **Chart** in the toolbar and choose a 2D bar or column chart.","Click **Edit Chart Data** and type your numbers.","In the **Format** sidebar, turn off the legend. Keynote colors a whole data series, not a single bar, so make the key bar stand out another way: a value label or a short arrow and note beside it.","Type the point as the slide title. If your version offers a description field for the chart, fill it in; otherwise make sure the title and a short line of text state the point."]
      }}
    ], proof:"A slide with a picture you are allowed to use and a credit line, alt text you wrote yourself, and one chart slide whose headline states the point and whose key bar or line stands out."},
@@ -568,7 +568,7 @@ ICA.addUnit({
       "Each app has its own version:",
       {table:[
         ["App","How it works"],
-        ["PowerPoint (desktop)","Tick **Use Presenter View** on the **Slide Show** tab. With a second display connected it starts automatically; with one screen, open it from the **…** button on the slide show control bar. **Display Settings → Swap Presenter View and Slide Show** fixes it if the screens come up the wrong way round."],
+        ["PowerPoint (desktop)","Check **Use Presenter View** on the **Slide Show** tab. With a second display connected it starts automatically; with one screen, open it from the **…** button on the slide show control bar. **Display Settings → Swap Presenter View and Slide Show** fixes it if the screens come up the wrong way round."],
         ["Google Slides","Click the arrow next to **Slideshow** and choose **Presenter view**. The notes and timer open in a separate window you can move to your own screen."],
         ["LibreOffice Impress","The **Presenter Console** appears when two displays are connected (one can be the laptop’s own). Set it in **Slide Show → Slide Show Settings**."],
         ["Keynote","With a second display, Keynote shows a presenter display on your screen; **Play → Rehearse Slideshow** shows it on one screen for practice."]
@@ -681,7 +681,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Get ready to present your deck: notes, presenter view, a timed rehearsal, captions and a practice share. Practice somewhere you can talk aloud.", tasks:[
      {t:"Add speaker notes and open presenter view", app:{
-       ms:["Show the notes area under the slide with **View → Notes**, and type short prompts for each slide.","Desktop PowerPoint: on the **Slide Show** tab, tick **Use Presenter View**, then choose **From Beginning**. With only one screen, start the show, click the **…** button on the control bar at the bottom left and choose **Show Presenter View**.","PowerPoint for the web: recent versions offer **Slide Show → Presenter View**, which opens in a separate browser window. If you don’t see it, rehearse from printed notes or use the desktop app.","Press [[kbd:Esc]] to end the show."],
+       ms:["Show the notes area under the slide with **View → Notes**, and type short prompts for each slide.","Desktop PowerPoint: on the **Slide Show** tab, check **Use Presenter View**, then choose **From Beginning**. With only one screen, start the show, click the **…** button on the control bar at the bottom left and choose **Show Presenter View**.","PowerPoint for the web: recent versions offer **Slide Show → Presenter View**, which opens in a separate browser window. If you don’t see it, rehearse from printed notes or use the desktop app.","Press [[kbd:Esc]] to end the show."],
        google:["Type short prompts for each slide in the speaker notes area under the slide (if it’s hidden, choose **View → Show speaker notes**).","Click the arrow next to **Slideshow** (top right) and choose **Presenter view**. A separate window shows your notes and a timer.","Press [[kbd:Esc]] to end the show."],
        libre:["Choose **View → Notes** and type short prompts under each slide. Return with **View → Normal**.","Choose **Slide Show → Slide Show Settings** and set **Presenter console** to **Full screen** or **Windowed**.","Connect a second display (a monitor or TV) and press [[kbd:F5]]. The Presenter Console only appears when two displays are connected.","Press [[kbd:Esc]] to end the show."],
        apple:["Choose **View → Show Presenter Notes** and type short prompts for each slide.","Choose **Play → Rehearse Slideshow** to see the presenter display (current and next slide, notes, clock and timer) on one screen.","With a second display connected, click **Play** in the toolbar: the presenter display appears on your screen and the slides on the other.","Press [[kbd:Esc]] to end."]
@@ -731,7 +731,7 @@ ICA.addUnit({
       {table:[
         ["App","Built-in checker"],
         ["PowerPoint","Yes: **Review → Check Accessibility** opens the Accessibility pane, in desktop PowerPoint and PowerPoint for the web. Microsoft says it also runs in the background and shows a reminder in the status bar."],
-        ["LibreOffice Impress","No full checker (LibreOffice Writer has **Tools → Accessibility Check**; Impress’s help doesn’t list one). Check by hand. Exporting a PDF with **Universal Accessibility (PDF/UA)** ticked makes a more accessible PDF and, in some versions, warns about problems."],
+        ["LibreOffice Impress","No full checker (LibreOffice Writer has **Tools → Accessibility Check**; Impress’s help doesn’t list one). Check by hand. Exporting a PDF with **Universal Accessibility (PDF/UA)** checked makes a more accessible PDF and, in some versions, warns about problems."],
         ["Google Slides","No built-in checker; check by hand (the list below)"],
         ["Keynote","No built-in checker; check by hand (the list below)"]
       ]},
@@ -793,7 +793,7 @@ ICA.addUnit({
       {list:[
         "**Compress pictures.** Desktop PowerPoint: select a picture, then **Picture Format → Compress Pictures**. LibreOffice: right-click a picture → **Compress**, or for the whole deck **Tools → Minimize Presentation** (called **Presentation Minimizer** in some versions). Keynote: **File → Reduce File Size**.",
         "**Compress or link video.** Desktop PowerPoint for Windows has **File → Info → Compress Media** (remember from Lesson 3: it removes captions). Linking to an online video keeps the file small but needs internet.",
-        "**Fonts.** If you use a font the other computer doesn’t have, the app swaps in another and text can spill out of its boxes. Use common fonts, or in desktop PowerPoint for Windows tick **File → Options → Save → Embed fonts in the file**. A PDF keeps the fonts fixed."
+        "**Fonts.** If you use a font the other computer doesn’t have, the app swaps in another and text can spill out of its boxes. Use common fonts, or in desktop PowerPoint for Windows check **File → Options → Save → Embed fonts in the file**. A PDF keeps the fonts fixed."
       ]}
     ]},
     {h:"Aspect ratio: 16:9 or 4:3", body:[
@@ -864,9 +864,9 @@ ICA.addUnit({
        apple:["Keynote has no built-in checker, so check by hand.","Click each slide: does it have a title?","Select each picture and check its **Description** on the **Image** tab of the **Format** sidebar.","Check contrast with a contrast checker, look for anything shown by color alone, and check that link text says where it goes."]
      }},
      {t:"Export a PDF and a handout", app:{
-       ms:["Desktop PowerPoint for Windows: **File → Export → Create PDF/XPS Document → Create PDF/XPS**. Click **Options**, make sure **Document structure tags for accessibility** is ticked, then **Publish**.","For a handout, repeat with **Options → Publish what → Handouts** and choose the slides per page.","PowerPoint for the web: **File → Print** creates a printable PDF you can save."],
+       ms:["Desktop PowerPoint for Windows: **File → Export → Create PDF/XPS Document → Create PDF/XPS**. Click **Options**, make sure **Document structure tags for accessibility** is checked, then **Publish**.","For a handout, repeat with **Options → Publish what → Handouts** and choose the slides per page.","PowerPoint for the web: **File → Print** creates a printable PDF you can save."],
        google:["**File → Download → PDF document** saves a PDF of the slides.","For a handout: **File → Print settings and preview**, choose **Handout** (or **1 slide with notes**), then **Print**. To get a file, choose **Save as PDF** as the printer."],
-       libre:["**File → Export as → Export as PDF**. On the **General** tab, tick **Universal Accessibility (PDF/UA)**, then **Export**. If it lists any accessibility problems, fix them and export again.","For a handout: **File → Print**, open the **LibreOffice Impress** tab, set **Document** to **Handouts** and choose the slides per page. Print to PDF if you want a file."],
+       libre:["**File → Export as → Export as PDF**. On the **General** tab, check **Universal Accessibility (PDF/UA)**, then **Export**. If it lists any accessibility problems, fix them and export again.","For a handout: **File → Print**, open the **LibreOffice Impress** tab, set **Document** to **Handouts** and choose the slides per page. Print to PDF if you want a file."],
        apple:["**File → Export To → PDF**. Choose whether to include presenter notes, then **Save**.","For a handout: **File → Print**, choose **Handout** and the number of slides per page. Use **PDF** in the print dialog to save it as a file."]
      }},
      {t:"Share a link with the right permission", appNote:"LibreOffice Impress has no sharing service of its own. Save the file (as .odp, or .pptx if the other person uses PowerPoint) to a cloud storage service such as Google Drive, OneDrive, iCloud Drive or Nextcloud, and share it from there with view or edit permission.", app:{
@@ -1156,7 +1156,7 @@ ICA.addUnit({
       "**Reading order.** Screen readers read objects in the order listed in the **Reading Order** pane, which may differ from how they look. Open it via **Review → Check Accessibility**, **Check reading order**, **Verify object order**. Drag items or use **Move Up**/**Move Down**; clearing a check box marks an item as decorative.",
       "**Google Slides.** Alt text via **Alt text** (or [[kbd:Ctrl]] + [[kbd:Alt]] + [[kbd:Y]]); verify any automatic alt text; use descriptive link text; avoid justified text; screen readers might not announce bold or highlighting, so add words like “Important”. The HTML view shows the whole deck as one scrollable page.",
       "**Color test.** Microsoft suggests Windows **Settings → Accessibility → Color filters → Grayscale** to see what depends on color.",
-      "**Keynote and LibreOffice Impress:** add descriptions to images (Keynote’s **Description** field on the Image tab of the Format sidebar; Impress’s **Format → Alt Text** dialog, called **Description** in older versions) and use layouts with real titles. Impress has no full checker; its PDF export with **Universal Accessibility (PDF/UA)** ticked makes a tagged PDF and may warn about some problems, depending on version."
+      "**Keynote and LibreOffice Impress:** add descriptions to images (Keynote’s **Description** field on the Image tab of the Format sidebar; Impress’s **Format → Alt Text** dialog, called **Description** in older versions) and use layouts with real titles. Impress has no full checker; its PDF export with **Universal Accessibility (PDF/UA)** checked makes a tagged PDF and may warn about some problems, depending on version."
      ],
      pro:[
       {list:["**Hidden titles.** Keep a title on visually title-less slides by placing the title placeholder off the slide; do it in the master for whole layouts.","**Tables.** Microsoft advises avoiding tables where possible; otherwise no merged, split or nested cells, and a defined header row.","**Contrast gaps.** PowerPoint’s checker misses text in transparent boxes, placeholders over backgrounds and non-text content; check those with a contrast tool.","**Automatic alt text.** PowerPoint for Microsoft 365 on Windows generates alt text for photos and stock images, and Google says some images in Slides get alt text automatically. Remove phrases like “Description automatically generated” and correct errors.","**WCAG references.** Text contrast 1.4.3 (4.5:1, large text 3:1); non-text contrast 1.4.11 (3:1); use of color 1.4.1; flashing 2.3.1. A note of caution: Google’s accessibility help recommends higher figures (7:1 for normal text, 4.5:1 for large text), which match WCAG’s enhanced AAA level rather than the AA minimum. Meeting Google’s figures also meets AA; for the standard itself, use W3C’s pages.","**Testing.** Try the deck with a screen reader (Narrator, VoiceOver, TalkBack, ChromeVox) and keyboard only. Check the exported PDF too: an accessible deck can become an inaccessible PDF if tags aren’t exported."]},
@@ -1229,7 +1229,7 @@ ICA.addUnit({
      {t:"“Switching to reusable cups would cut the café’s waste bill by a third”", ok:true, why:"It makes a specific claim the audience can accept, question or act on."},
      {t:"“Café waste”", why:"That names the topic but makes no claim."},
      {t:"“Some thoughts on cups”", why:"Vague: the audience can’t tell what you want them to think or do."},
-     {t:"“An overview of our bins”", why:"An overview is still a topic. What is the point?"}
+     {t:"“An overview of our recycling bins”", why:"An overview is still a topic. What is the point?"}
    ]},
    {id:"t1u10-q03", lesson:"t1u10-l1", level:1, q:"According to the textbook, how should a presentation’s purpose be defined?", options:[
      {t:"As the action you want the audience to take", ok:true, why:"Defining purpose from the audience’s side keeps the talk focused on what should change."},

@@ -152,7 +152,7 @@ ICA.addUnit({
     intro:"Use the lesson’s tools on things around you. You need only a browser and a notebook.",
     tasks:[
      {t:"Structural power in one product", how:[
-       "Pick one product you use: a phone, a bag of rice, a medicine, a pair of trainers.",
+       "Pick one product you use: a phone, a bag of rice, a medicine, a pair of sneakers.",
        "Using public sources, note one fact for each of Strange’s four structures: security (whose protection keeps its trade routes open), production (where it is made), finance (which currency it is priced in), knowledge (who owns its key technology or brand).",
        "Decide which structure gives someone the most power over the product, and why."
      ], write:"Product… Security… Production… Finance… Knowledge… Where the most power lies, and why…"},

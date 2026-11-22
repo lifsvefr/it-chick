@@ -834,7 +834,7 @@ ICA.addUnit({
        phone:["iPhone: **Settings → General → Software Update**. Turn on **Automatic Updates**.","Android: usually **Settings → System → Software update** (Samsung: **Settings → Software update**; names vary). Also check Google Play system updates if your phone lists them.","Apps: in the App Store or Google Play, turn on automatic app updates."]
      }},
      {t:"Check your built-in protection", how:{
-       win:["Search the Start menu for **Windows Security** and open it.","Look for green ticks. Open **Virus & threat protection** and run a **Quick scan**."],
+       win:["Search the Start menu for **Windows Security** and open it.","Look for green check marks. Open **Virus & threat protection** and run a **Quick scan**."],
        mac:["Gatekeeper and XProtect run automatically. Keep automatic security updates on (previous task).","In **System Settings → Privacy & Security**, under **Security**, keep **Allow applications from** set to the App Store, or the App Store and known developers (wording varies by macOS version)."],
        chromeos:["Protection is built in. Keep updates on, and install apps only from Google Play or the Chrome Web Store."],
        phone:["Android: open **Google Play**, tap your profile picture, then **Play Protect → Settings**, and check **Scan apps with Play Protect** is on.","iPhone: keep iOS updated and install apps only from the App Store or another marketplace you trust."]
@@ -861,10 +861,10 @@ ICA.addUnit({
   ],
   checkpoint:["t1u3-q02","t1u3-q06","t1u3-q11","t1u3-q15","t1u3-q17","t1u3-q21","t1u3-q25","t1u3-q30","t1u3-q33","t1u3-q36","t1u3-q41","t1u3-q44"],
   cpBank:[
-    {id:"t1u3-cp01", lesson:"t1u3-l1", level:1, q:"During exam week, a school’s online timetable system is knocked offline for a whole day. Nobody’s data was read or changed. Which corner of the CIA triad was damaged?", options:[
+    {id:"t1u3-cp01", lesson:"t1u3-l1", level:1, q:"During exam week, a school’s online schedule system is knocked offline for a whole day. Nobody’s data was read or changed. Which corner of the CIA triad was damaged?", options:[
       {t:"Confidentiality", why:"Confidentiality is broken when the wrong people can see information. Here nobody read anything."},
       {t:"Integrity", why:"Integrity is broken when information is changed or made wrong. Nothing was changed."},
-      {t:"Availability", ok:true, why:"Availability means you can use the information when you need it. Students and staff couldn’t reach the timetable."},
+      {t:"Availability", ok:true, why:"Availability means you can use the information when you need it. Students and staff couldn’t reach the schedule."},
       {t:"None, because no data was stolen", why:"An attack doesn’t have to steal data to do harm. Stopping people using a system damages availability."}
     ]},
     {id:"t1u3-cp02", lesson:"t1u3-l3", level:1, q:"Lin signs in to her bank with a password, then types a code from an authenticator app on her phone. Which two kinds of factor is she using?", options:[

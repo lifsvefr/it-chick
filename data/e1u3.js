@@ -73,7 +73,7 @@ ICA.addUnit({
     ]},
     {h:"Problem–solution essays", body:[
       "A [[problem-solution-essay|problem–solution essay]] describes a problem, proposes one or more solutions, and judges how well they would work. The linguist Michael Hoey (1983) described a pattern that many texts like this follow: **Situation → Problem → Response (solution) → Evaluation**. The evaluation step is the one students most often forget, and it is where much of the thinking happens.",
-      {ex:"**Situation:** Many first-year students in large courses commute long distances.\n**Problem:** As a result, a high proportion miss evening seminars, and their marks suffer.\n**Solution:** One possible solution would be to record seminars and add online discussion.\n**Evaluation:** This would improve access, although it might reduce live participation unless the online tasks are assessed.", label:"Worked example: the four steps in one paragraph"},
+      {ex:"**Situation:** Many first-year students in large courses commute long distances.\n**Problem:** As a result, a high proportion miss evening seminars, and their grades suffer.\n**Solution:** One possible solution would be to record seminars and add online discussion.\n**Evaluation:** This would improve access, although it might reduce live participation unless the online tasks are assessed.", label:"Worked example: the four steps in one paragraph"},
       "Notice the verbs in the solution and evaluation: “**would** improve”, “**might** reduce”, “**could** be”. Proposals describe things that haven’t happened yet, so English uses [[modal-verb|modal verbs]] and conditional forms (“If the university **introduced** recorded seminars, attendance problems **would** matter less”). Other useful phrases: “A major problem is that…”, “One way to address this would be to…”, “The main advantage of this approach is…”, “However, it would also…”.",
       {tip:"Evaluate every solution you propose: cost, who benefits, who might be left out, how long it takes, and what could go wrong. A solution with a fair evaluation is more convincing than a “perfect” solution."}
     ]},
@@ -480,7 +480,7 @@ ICA.addUnit({
       ]},
       "Not every abstract has all five; many skip the introduction and start with the purpose. **Structured abstracts**, common in medicine and some sciences, put headings on the moves (Background, Methods, Results, Conclusions). Always follow the journal’s or course’s instructions.",
       "Tense often changes from move to move. A common pattern: **present** for the general context and for what the findings mean, **past** for what you did and found.",
-      {ex:"[Introduction] School canteens produce large amounts of food waste. [Purpose] This study investigated how menu planning affects plate waste in primary schools. [Method] Waste was weighed after lunch for four weeks in six schools in two regions. [Product] Schools that let pupils choose portion sizes wasted about a quarter less food. [Conclusion] These results suggest that small changes to serving practices can reduce waste without increasing costs.", label:"Worked example: an abstract in five moves (invented)"},
+      {ex:"[Introduction] School canteens produce large amounts of food waste. [Purpose] This study investigated how menu planning affects plate waste in primary schools. [Method] Waste was weighed after lunch for four weeks in six schools in two regions. [Product] Schools that let students choose portion sizes wasted about a quarter less food. [Conclusion] These results suggest that small changes to serving practices can reduce waste without increasing costs.", label:"Worked example: an abstract in five moves (invented)"},
       {tip:"Write the abstract last, when you know what the paper actually found. Then check: could a reader who sees only the abstract say what you did, what you found and why it matters?"}
     ]},
     {h:"Emails to lecturers and supervisors: the moves", body:[
@@ -679,7 +679,7 @@ ICA.addUnit({
       {t:"Correcting “recieve” to “receive”", b:1, why:"Spelling is a surface error: proofreading."},
       {t:"Checking that “(Lopez, 2019)” matches the reference list", b:1, why:"Checking citation details is part of the final proofread."},
       {t:"Adding a hedge so a claim matches the evidence", b:0, why:"Adjusting the strength of claims is editing: it changes meaning, not just surface form."},
-      {t:"Fixing a missing full stop at the end of a paragraph", b:1, why:"Punctuation slips are proofreading."}
+      {t:"Fixing a missing period at the end of a paragraph", b:1, why:"Punctuation slips are proofreading."}
     ]},
     {id:"e1u3-l5-x3", type:"spot", q:"Ana has “articles” on her error list. In this passage, tap **only the article errors**. Other parts are correct.", ask:"article error", parts:[
       "The survey asked ",
@@ -766,7 +766,7 @@ ICA.addUnit({
      {t:"Rail travel’s cost is higher than bus travel.", why:"Still a cost compared with travel. Write “higher than bus travel’s” or “than that of bus travel”."}]},
    {id:"e1u3-cp03", lesson:"e1u3-l1", level:3, q:"Camila’s problem–solution essay proposes free bus passes for students to reduce parking problems on campus. Which sentence best does the **evaluation** step?", options:[
      {t:"Free bus passes are introduced for all students in September, starting with first-years.", why:"This describes the solution as if it has already happened. A proposal uses modals (*would*, *could*), and evaluation weighs it."},
-     {t:"Many students drive to campus, and the car parks are full by 9 a.m. on most weekdays.", why:"This describes the situation and the problem. Evaluation comes after the solution and judges how well it would work."},
+     {t:"Many students drive to campus, and the parking lots are full by 9 a.m. on most weekdays.", why:"This describes the situation and the problem. Evaluation comes after the solution and judges how well it would work."},
      {t:"Free bus passes will clearly solve every parking problem on campus, for every student.", why:"This overclaims with a booster and weighs nothing. Evaluation looks at costs, who benefits and what could go wrong."},
      {t:"Although the passes would cost the university money, they would cut demand for parking.", ok:true, why:"It weighs a cost against a benefit, with *would* for a proposal. The main clause carries the point she wants remembered: the benefit."}]},
    {id:"e1u3-cp04", lesson:"e1u3-l2", level:2, q:"Claim: “Bike lanes can make cycling safer.” Evidence: “After lanes opened on two streets, cyclist injuries there fell by 40%, while injuries on similar nearby streets did not change.” Which sentence adds the best **reasoning**?", options:[

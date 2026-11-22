@@ -204,7 +204,7 @@ ICA.addUnit({
       "The most debated item was [[counterstrike-capability|counterstrike capabilities]] ([反撃能力]{はんげきのうりょく}). This is the ability to strike an opponent’s territory after an armed attack such as a missile strike. It uses [[stand-off-defence|stand-off missiles]] such as upgraded Japanese Type-12 missiles and US Tomahawks. The government says they must meet the three new conditions, stay at the minimum necessary, and exclude pre-emptive strikes. Critics say the line between deterrence and the ability to attack is thin, and that the capability strains the [[exclusively-defence-oriented-policy|exclusively defense-oriented]] principle.",
       "The money: about 43 trillion yen for defense over fiscal years 2023–2027. The target was that defense plus “complementary initiatives” should reach 2% of GDP in fiscal 2027. These initiatives cover the coast guard, research, infrastructure, cyber and similar items. A [[jjoc|JSDF Joint Operations Command]] (JJOC) to command all three services together opened on 24 March 2025."
     ]},
-    {h:"From target to timetable (as of November 2026)", body:[
+    {h:"From target to schedule (as of November 2026)", body:[
       {table:[
         ["Date","Step"],
         ["FY2025 initial budget","About 9.9 trillion yen of defense plus related spending (Defense Minister Koizumi Shinjirō)"],

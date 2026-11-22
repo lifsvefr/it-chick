@@ -4,7 +4,7 @@ ICA.addUnit({
   apps:{ms:"Excel", google:"Google Sheets", libre:"LibreOffice Calc", apple:"Numbers"},
   blurb:"How a spreadsheet really thinks: what a cell holds, how formulas and references work when you copy them, the functions people use every day, how to keep data tidy enough to sort and filter safely, and how to chart it and share it as CSV without losing anything.",
   goals:[
-    "Tell numbers, text, dates and blanks apart, and keep codes such as phone numbers and postcodes from being changed",
+    "Tell numbers, text, dates and blanks apart, and keep codes such as phone numbers and postal codes from being changed",
     "Write formulas that respect the order of operations, and use relative, absolute and mixed references so copies stay correct",
     "Use SUM, AVERAGE, COUNT, COUNTA, MIN, MAX, ROUND, IF, COUNTIF, SUMIF, XLOOKUP and VLOOKUP, and read the error values they produce",
     "Organise data as a tidy table, then sort, filter, freeze headers and add data validation without scrambling rows",
@@ -28,7 +28,7 @@ ICA.addUnit({
    learn:[
     {h:"A grid that calculates", body:[
       {lead:"A spreadsheet is squared paper where every square can hold a value, or a small calculation that updates itself when the values change."},
-      "A [[spreadsheet]] app (Microsoft Excel, Google Sheets, LibreOffice Calc and Apple Numbers are the common ones) stores information in a grid. People use spreadsheets for household budgets, class marks, a bakery’s price list, a sports club’s membership, research data and much more.",
+      "A [[spreadsheet]] app (Microsoft Excel, Google Sheets, LibreOffice Calc and Apple Numbers are the common ones) stores information in a grid. People use spreadsheets for household budgets, class scores, a bakery’s price list, a sports club’s membership, research data and much more.",
       "The vocabulary is the same in every app:",
       {table:[
         ["Word","What it means"],
@@ -91,9 +91,9 @@ ICA.addUnit({
       {tip:"After pasting data, select the column and glance at the alignment, or at a quick SUM in the status bar at the bottom of the window. A total that’s too small is often a number stored as text."}
     ]},
     {h:"Codes that look like numbers", body:[
-      "Phone numbers, postcodes, product codes, student IDs and bank account numbers are made of digits, but they are **labels**, not quantities. Nobody adds two phone numbers together. Treating them as numbers causes two kinds of damage:",
+      "Phone numbers, postal codes, product codes, student IDs and bank account numbers are made of digits, but they are **labels**, not quantities. Nobody adds two phone numbers together. Treating them as numbers causes two kinds of damage:",
       {list:[
-        "**[[leading-zero|Leading zeros]] vanish.** Type the postcode `02134` or the phone number `0412555019` into a cell set to the usual automatic format, and the app stores 2134 and 412555019.",
+        "**[[leading-zero|Leading zeros]] vanish.** Type the postal code `02134` or the phone number `0412555019` into a cell set to the usual automatic format, and the app stores 2134 and 412555019.",
         "**Long numbers lose digits.** Excel keeps at most 15 significant digits. Microsoft’s support article explains that digits after the 15th become zeros, so a 16-digit card or account number is silently changed."
       ]},
       {key:"If you’ll never do arithmetic on it, store it as text."},
@@ -127,7 +127,7 @@ ICA.addUnit({
     {id:"t1u9-l1-x1", type:"sort", q:"Lucía is setting up a sheet for her community choir. For each column, should the values be stored as numbers or as text?", buckets:["Store as a number","Store as text"], items:[
       {t:"Phone numbers, such as 0412 555 019", b:1, why:"A phone number is a label. As a number it would lose its leading zero and its spaces, and adding phone numbers means nothing."},
       {t:"Age in years", b:0, why:"You might average ages or count members over 60, so this is a real quantity."},
-      {t:"Postcodes, such as 02134", b:1, why:"A postcode is a code. As a number, 02134 becomes 2134, which is a different (or invalid) postcode."},
+      {t:"Postal codes, such as 02134", b:1, why:"A postal code is a code. As a number, 02134 becomes 2134, which is a different (or invalid) postal code."},
       {t:"Annual fee paid, such as 45.00", b:0, why:"You’ll add up fees and check who paid how much, so it must be a number. A currency format can show the symbol."},
       {t:"Membership card number with 16 digits", b:1, why:"Excel keeps only 15 significant digits, so the 16th would become 0. It’s a label anyway."},
       {t:"Number of concerts attended", b:0, why:"A count you might total or average: a real number."}
@@ -226,7 +226,7 @@ ICA.addUnit({
       ]},
       "Microsoft’s own example: `=5+2*3` is **11** (multiply first), but `=(5+2)*3` is **21**.",
       "The classic mistake is the average:",
-      {ex:"Marks: A2 = 70, B2 = 80, C2 = 90\n\n=A2+B2+C2/3    →  70 + 80 + (90 ÷ 3) = 180\n=(A2+B2+C2)/3  →  240 ÷ 3 = 80", label:"Worked example: parentheses change the answer", mono:true},
+      {ex:"Scores: A2 = 70, B2 = 80, C2 = 90\n\n=A2+B2+C2/3    →  70 + 80 + (90 ÷ 3) = 180\n=(A2+B2+C2)/3  →  240 ÷ 3 = 80", label:"Worked example: parentheses change the answer", mono:true},
       "The first formula divides only C2 by 3. Nothing warns you; 180 just looks like a big average. When you aren’t sure, add parentheses: they never hurt, and they make your intention clear to the next reader.",
       {tip:"Percent change follows the same rule: `=(B2-A2)/A2` gives the change from A2 to B2 as a fraction (format it as Percent). Without the parentheses, `=B2-A2/A2` is B2 minus 1."},
       {lab:"fl-order", t:"Practice: use brackets so the addition happens first"}
@@ -287,7 +287,7 @@ ICA.addUnit({
       {list:[
         "In many countries the decimal mark is a comma: two and a half is `2,5`. A comma can’t then also separate a function’s inputs, so these locales use a **semicolon**: `=SUM(A1;B1)` instead of `=SUM(A1,B1)`.",
         "**Excel** follows your computer’s regional list separator. Desktop Excel in some languages also translates function names, so German Excel writes SUMME for SUM. Files still work across languages; only what you type and see differs.",
-        "**Google Sheets** follows the spreadsheet’s locale, set in **File → Settings → Locale**, which also changes default date, number and currency formats. Function names stay in English unless your Google Account language is one of the languages Sheets supports and you untick **Always use English function names** in **File → Settings**.",
+        "**Google Sheets** follows the spreadsheet’s locale, set in **File → Settings → Locale**, which also changes default date, number and currency formats. Function names stay in English unless your Google Account language is one of the languages Sheets supports and you uncheck **Always use English function names** in **File → Settings**.",
         "**LibreOffice Calc** lets you choose separators, and English function names, under **Tools → Options → LibreOffice Calc → Formula** (**LibreOffice → Preferences** on a Mac).",
         "**Numbers**: Apple’s help says that if your settings use a comma as the decimal separator, you separate arguments with semicolons."
       ]},
@@ -310,7 +310,7 @@ ICA.addUnit({
       {t:"Divide: 8 ÷ 4 = 2", why:"Still at the multiply-and-divide level, next from the left."},
       {t:"Subtract: 36 − 2 = 34", why:"Addition and subtraction come last. The result is 34."}
     ]},
-    {id:"t1u9-l2-x2", type:"number", q:"Fatima wants the average of three marks: A2 = 70, B2 = 80, C2 = 90. She types `=A2+B2+C2/3`. What does the cell actually show?", answer:180, tol:0, unit:"", why:"Division happens before addition, so only C2 is divided: 70 + 80 + 90 ÷ 3 = 70 + 80 + 30 = **180**. The formula she needs is `=(A2+B2+C2)/3`, which gives 80, or simply `=AVERAGE(A2:C2)`.", wrongs:[
+    {id:"t1u9-l2-x2", type:"number", q:"Fatima wants the average of three scores: A2 = 70, B2 = 80, C2 = 90. She types `=A2+B2+C2/3`. What does the cell actually show?", answer:180, tol:0, unit:"", why:"Division happens before addition, so only C2 is divided: 70 + 80 + 90 ÷ 3 = 70 + 80 + 30 = **180**. The formula she needs is `=(A2+B2+C2)/3`, which gives 80, or simply `=AVERAGE(A2:C2)`.", wrongs:[
       {v:80, tol:0, why:"80 is the real average, and what she meant. But without parentheses the app divides only C2 by 3, giving 70 + 80 + 30 = 180."},
       {v:240, tol:0, why:"240 is the sum of all three. The formula does divide something: C2 by 3, so the result is 70 + 80 + 30 = 180."},
       {v:50, tol:0, why:"That would be dividing the first two only. Precedence applies to the operator right next to the division: C2/3."}
@@ -497,7 +497,7 @@ ICA.addUnit({
       ["`#REF!`","A column the formula used was deleted","The reference points at something that no longer exists."],
       ["`#N/A`","XLOOKUP can’t find the code in the list","N/A means not available: no matching value was found."]
     ]},
-    {id:"t1u9-l3-x5", type:"spot", q:"Priya is checking formulas from three small sheets: a price list in A2:C5 (Code, Item, Price) with an order code in F2, quiz marks in B2:B7, and amounts in C2:C6. Tap every formula with a mistake.", ask:"has a mistake", mono:true, parts:[
+    {id:"t1u9-l3-x5", type:"spot", q:"Priya is checking formulas from three small sheets: a price list in A2:C5 (Code, Item, Price) with an order code in F2, quiz scores in B2:B7, and amounts in C2:C6. Tap every formula with a mistake.", ask:"has a mistake", mono:true, parts:[
       {t:"=XLOOKUP(F2, A2:A5, C2:C5)", flag:false, why:"Correct: exact match by default, returns the price."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 3)", flag:true, why:"The last argument is missing, so VLOOKUP does an approximate match. It may happen to work on this sorted list, but on an unsorted list it can return the wrong price without an error, and a code that isn’t in the list can return a neighboring row’s price instead of #N/A. Add FALSE: =VLOOKUP(F2, A2:C5, 3, FALSE)."}, "\n", {t:"=IF(B2>=50, Pass, \"Retake\")", flag:true, why:"Pass needs quotes. Without them the app looks for something named Pass and shows #NAME?. Write \"Pass\"."}, "\n", {t:"=COUNTIF(C2:C6, \">100\")", flag:false, why:"Correct: the comparison sign goes inside the quotes."}, "\n", {t:"=AVERAGE(B2:B7)", flag:false, why:"Correct: averages the numbers in B2:B7."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 4, FALSE)", flag:true, why:"A2:C5 has only 3 columns, so asking for column 4 is an error: #REF! in Excel and Google Sheets, Err:502 in LibreOffice Calc. Price is column 3."}
     ]},
     {id:"t1u9-l3-x6", type:"mcq", q:"Ana splits a 100.00 bill between three people with `=B2/3` in three cells, formatted to two decimals. Each shows 33.33 and their SUM shows 100.00. Each person then pays exactly 33.33. What’s going on?", options:[
@@ -657,7 +657,7 @@ ICA.addUnit({
       {t:"Add an ID column numbered 1, 2, 3 … so the original order can be restored", why:"First, a way back. If anything goes wrong, sorting by ID restores the order."},
       {t:"Click a single cell inside the table (not one whole column)", why:"Next, tell the app which table to sort. A single cell lets it find the whole table; selecting one column risks sorting it alone."},
       {t:"Open the sort command (Data → Sort, or the app’s equivalent)", why:"Then open the sort options rather than a one-click sort, so you can set the header and the column."},
-      {t:"Tick “has header row” and choose Amount, largest to smallest", why:"Marking the header keeps it on top; then choose the column and direction."},
+      {t:"Check “has header row” and choose Amount, largest to smallest", why:"Marking the header keeps it on top; then choose the column and direction."},
       {t:"Check a few rows against the original receipts", why:"Finally, verify. A couple of known records tell you the rows stayed together."}
     ]},
     {id:"t1u9-l4-x5", type:"mcq", q:"Rodrigo, who studies at a language school and pays his own way, keeps track of his money in a sheet. He filters his expense table to show only Category = Food. Below the table, a cell with `=SUM(C2:C40)` still shows the total of all categories. Why?", options:[
@@ -680,16 +680,16 @@ ICA.addUnit({
    ],
    apply:{intro:"Tidy a small messy table, then sort, filter, freeze and validate it. Use the club example in this lesson or a small list of your own (a reading log, household expenses, a team roster).", tasks:[
      {t:"Tidy, then sort safely", app:{
-       ms:["Type a small table with a header row and 6–10 records, using one value per cell (for example Name, Date, Category, Amount).","Add an **ID** column: type 1 and 2 in the first two rows, select both and fill down.","Click a single cell in the table and choose **Data → Sort**. Tick **My data has headers**, choose Amount, **Largest to Smallest**, and click **OK**.","Check two rows. Then sort by ID, **Smallest to Largest**, to restore the original order."],
-       google:["Type a small table with a header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2 in the first two rows, select both and drag the fill handle down.","Select the whole table, then **Data → Sort range → Advanced range sorting options**. Tick **Data has header row**, choose Amount and **Z → A**, and click **Sort**.","Check two rows, then sort by ID A → Z to restore the order."],
-       libre:["Type a small table with a header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2, select both and fill down.","Click a cell in the table and choose **Data → Sort**. On the **Options** tab check that **Range contains column labels** is ticked. Sort by Amount, **Descending**, and click **OK**.","Check two rows, then sort by ID ascending to restore the order."],
+       ms:["Type a small table with a header row and 6–10 records, using one value per cell (for example Name, Date, Category, Amount).","Add an **ID** column: type 1 and 2 in the first two rows, select both and fill down.","Click a single cell in the table and choose **Data → Sort**. Check **My data has headers**, choose Amount, **Largest to Smallest**, and click **OK**.","Check two rows. Then sort by ID, **Smallest to Largest**, to restore the original order."],
+       google:["Type a small table with a header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2 in the first two rows, select both and drag the fill handle down.","Select the whole table, then **Data → Sort range → Advanced range sorting options**. Check **Data has header row**, choose Amount and **Z → A**, and click **Sort**.","Check two rows, then sort by ID A → Z to restore the order."],
+       libre:["Type a small table with a header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2, select both and fill down.","Click a cell in the table and choose **Data → Sort**. On the **Options** tab check that **Range contains column labels** is checked. Sort by Amount, **Descending**, and click **OK**.","Check two rows, then sort by ID ascending to restore the order."],
        apple:["Type a small table with one header row and 6–10 records, using one value per cell.","Add an **ID** column: type 1 and 2, select both and drag the yellow autofill dot down.","Click the table, open the **Organize** sidebar → **Sort**, choose **Sort Entire Table**, click **Add a Column**, choose Amount and **Descending**, then **Sort Now** if it appears.","Check two rows, then sort by ID ascending to restore the order."]
      }},
      {t:"Filter and freeze", app:{
        ms:["Click in the table and choose **Data → Filter**. Use the arrow on the Category header to show one category, then **Clear Filter**.","Choose **View → Freeze Panes → Freeze Top Row** and scroll down: the headers stay.","Optional: click in the data and press [[kbd:Ctrl]] + [[kbd:T]] to make it a table. Notice the filter buttons and banded rows."],
        google:["Select the table and choose **Data → Create a filter**. Use the filter icon on the Category header to show one category, then **Data → Remove filter**.","Choose **View → Freeze → 1 row** and scroll down.","Optional: select the data and choose **Format → Convert to table**, then look at the column-type options."],
        libre:["Click in the table and choose **Data → AutoFilter**. Use the arrow on the Category header to show one category, then turn AutoFilter off the same way.","Choose **View → Freeze Cells → Freeze First Row** and scroll down."],
-       apple:["Hover over the Category column letter, click the arrow and choose **Quick Filter**. Untick some values, then tick them again (or remove the filter in the **Organize** sidebar → **Filter**).","Click the table, open **Format** → **Table**, and in the **Headers & Footer** menu choose **Freeze Header Rows**. Scroll down to check."]
+       apple:["Hover over the Category column letter, click the arrow and choose **Quick Filter**. Untick some values, then check them again (or remove the filter in the **Organize** sidebar → **Filter**).","Click the table, open **Format** → **Table**, and in the **Headers & Footer** menu choose **Freeze Header Rows**. Scroll down to check."]
      }},
      {t:"Add a dropdown list", app:{
        ms:["Select the Category cells below the header.","Choose **Data → Data Validation**. Under **Allow**, choose **List**; in **Source** type `Food,Transport,Venue,Other`. Click **OK**.","Click a cell: a dropdown arrow appears. Try typing a value that isn’t on the list and read the message."],
@@ -776,11 +776,11 @@ ICA.addUnit({
       ]}
     ]},
     {h:"Importing a CSV without losing zeros", body:[
-      "Lesson 1’s problems come back on import. Double-clicking a CSV opens it in your spreadsheet app, which **guesses** each column’s type: postcodes and phone numbers lose their leading zeros, codes such as SEPT2 or 1-2 become dates, and long IDs are cut to 15 digits. Saving the file again then makes the damage permanent.",
+      "Lesson 1’s problems come back on import. Double-clicking a CSV opens it in your spreadsheet app, which **guesses** each column’s type: postal codes and phone numbers lose their leading zeros, codes such as SEPT2 or 1-2 become dates, and long IDs are cut to 15 digits. Saving the file again then makes the damage permanent.",
       "The safer route is to **import** the file and tell the app which columns are text:",
       {list:[
         "**Excel:** **Data → From Text/CSV**, choose the file, then **Transform Data**. Select each code column and set **Data Type → Text** (choose **Replace current**), then **Close & Load**. Desktop Excel’s **Automatic Data Conversion** options (Lesson 1) also apply when you open CSV files.",
-        "**Google Sheets:** **File → Import → Upload**, choose the file, an import location and the separator, then **Import**. If the dialog offers to convert text to numbers, dates and formulas, untick it to keep codes exactly as written.",
+        "**Google Sheets:** **File → Import → Upload**, choose the file, an import location and the separator, then **Import**. If the dialog offers to convert text to numbers, dates and formulas, uncheck it to keep codes exactly as written.",
         "**LibreOffice Calc:** open the CSV and the **Text Import** dialog appears. Choose the character set (UTF-8) and separator, click a code column in the preview and set **Column type** to **Text**. Untick **Detect special numbers** if dates are being guessed.",
         "**Numbers:** open the CSV with **File → Open**, then check code columns straight away. If zeros are already gone, reformatting won’t bring them back; you’d need to fix the source or retype them."
       ]},
@@ -853,13 +853,13 @@ ICA.addUnit({
      {t:"Export a CSV and look inside it", app:{
        ms:["Add a second sheet and a formula such as `=SUM(B2:B6)` in B7, and make the header bold.","Desktop Excel: **File → Save a Copy** (or **Save As**) and choose **CSV UTF-8 (Comma delimited) (*.csv)**. Excel for the web: **File → Export → Download this sheet as CSV**.","Open the CSV in a text editor (Notepad on Windows, TextEdit on a Mac, the Text app on a Chromebook).","Look for: the result of the SUM instead of the formula, no bold, and no second sheet."],
        google:["Add a second sheet and a formula such as `=SUM(B2:B6)` in B7, and make the header bold.","Choose **File → Download → Comma-separated values (.csv)**. Only the current sheet is downloaded.","Open the CSV in a text editor (Notepad on Windows, TextEdit on a Mac, the Text app on a Chromebook).","Look for: the result of the SUM instead of the formula, no bold, and no second sheet."],
-       libre:["Add a second sheet and a formula such as `=SUM(B2:B6)` in B7, and make the header bold.","Choose **File → Save As**, set the file type to **Text CSV (.csv)** and tick **Edit filter settings**. When asked, keep the CSV format, then choose **Unicode (UTF-8)** as the character set and comma as the field delimiter.","Open the CSV in a text editor and look for: the SUM’s result, no bold, and only one sheet."],
+       libre:["Add a second sheet and a formula such as `=SUM(B2:B6)` in B7, and make the header bold.","Choose **File → Save As**, set the file type to **Text CSV (.csv)** and check **Edit filter settings**. When asked, keep the CSV format, then choose **Unicode (UTF-8)** as the character set and comma as the field delimiter.","Open the CSV in a text editor and look for: the SUM’s result, no bold, and only one sheet."],
        apple:["Add a second table and a formula such as a SUM in a footer row, and make the header bold.","Choose **File → Export To → CSV**. Choose whether to make one file per table, and open **Advanced Options** to see the text encoding.","Open the CSV in TextEdit (Format → Make Plain Text if needed) and look for: the SUM’s result and no formatting."]
      }},
      {t:"Import a CSV and keep its zeros", app:{
-       ms:["In a text editor, make a file with two lines: `Name,Postcode` and `Ana,02134`. Save it as test.csv (in Notepad, choose **Save as type: All files** so it isn’t saved as .txt).","Double-click test.csv to open it in Excel: the postcode probably shows 2134. Close without saving.","In a blank workbook choose **Data → From Text/CSV**, pick the file, choose **Transform Data**, set the Postcode column’s **Data Type** to **Text** (**Replace current**), then **Close & Load**. The zero stays."],
-       google:["In a text editor, make a file with two lines: `Name,Postcode` and `Ana,02134`, and save it as test.csv.","In Google Sheets choose **File → Import → Upload**, pick the file, choose **Create new spreadsheet** and **Import data**.","Check the postcode. If the zero is gone, import again and untick any option to convert text to numbers and dates, or set the column to **Plain text** first and import into the existing sheet."],
-       libre:["In a text editor, make a file with two lines: `Name,Postcode` and `Ana,02134`, and save it as test.csv.","In LibreOffice choose **File → Open** and pick the file. The **Text Import** dialog appears.","Set the character set to UTF-8 and the separator to Comma. Click the Postcode column in the preview, set **Column type** to **Text**, and click **OK**. The zero stays."]
+       ms:["In a text editor, make a file with two lines: `Name,PostalCode` and `Ana,02134`. Save it as test.csv (in Notepad, choose **Save as type: All files** so it isn’t saved as .txt).","Double-click test.csv to open it in Excel: the postal code probably shows 2134. Close without saving.","In a blank workbook choose **Data → From Text/CSV**, pick the file, choose **Transform Data**, set the PostalCode column’s **Data Type** to **Text** (**Replace current**), then **Close & Load**. The zero stays."],
+       google:["In a text editor, make a file with two lines: `Name,PostalCode` and `Ana,02134`, and save it as test.csv.","In Google Sheets choose **File → Import → Upload**, pick the file, choose **Create new spreadsheet** and **Import data**.","Check the postal code. If the zero is gone, import again and uncheck any option to convert text to numbers and dates, or set the column to **Plain text** first and import into the existing sheet."],
+       libre:["In a text editor, make a file with two lines: `Name,PostalCode` and `Ana,02134`, and save it as test.csv.","In LibreOffice choose **File → Open** and pick the file. The **Text Import** dialog appears.","Set the character set to UTF-8 and the separator to Comma. Click the PostalCode column in the preview, set **Column type** to **Text**, and click **OK**. The zero stays."]
      }, appNote:"Numbers opens CSV files directly but doesn’t offer per-column import types like the other apps. Open test.csv in Numbers and see whether the zero survived, then try the same import in Google Sheets or LibreOffice Calc for comparison.", write:"What changed between your workbook and the CSV? Did the zero survive each way of opening?"}
    ], proof:"A chart with a clear title, labeled axes and a value axis starting at zero; a CSV you exported and read in a text editor; and a CSV imported with its leading zero intact."},
    read:[
@@ -948,7 +948,7 @@ ICA.addUnit({
     summary:"A spreadsheet is a grid of cells that hold values and formulas; files are workbooks, pages are sheets, and every cell has an address.",
     levels:{
      starter:[
-      "A spreadsheet is like squared paper where each square can hold a number, a word, a date, or a small calculation that keeps itself up to date. People use them for budgets, price lists, class marks, rotas and research data.",
+      "A spreadsheet is like squared paper where each square can hold a number, a word, a date, or a small calculation that keeps itself up to date. People use them for budgets, price lists, class scores, rotas and research data.",
       {list:["The whole file is a **workbook** (Google Sheets calls it a spreadsheet).","Each page is a **worksheet**, or sheet, with a tab of its own.","Each box is a **cell**. Its address is its column letter and row number: B2 is column B, row 2.","A **range** is a block of cells, written like `A2:A10` (from A2 to A10)."]},
       "The common apps are Microsoft Excel, Google Sheets, LibreOffice Calc and Apple Numbers. Free options exist for all of them: Excel for the web with a free Microsoft account, Google Sheets with a Google account, LibreOffice (free and open source) and Numbers on Apple devices.",
       {key:"The cell shows a result; the formula bar shows what the cell really holds."}
@@ -979,7 +979,7 @@ ICA.addUnit({
      starter:[
       "When you type into a cell, the app decides what kind of thing it is: a **number** you can calculate with, **text**, a **date**, or a **formula**. By default text lines up on the left and numbers and dates on the right, which is a handy clue.",
       "Three surprises to know:",
-      {list:["**Dates are stored as numbers**: a count of days. That’s why you can subtract two dates to get the days between them.","**Formats only change the look.** A cell holding 0.25 can show 25%, 1/4 or 0.3; formulas still use 0.25.","**Codes aren’t numbers.** Phone numbers, postcodes and IDs lose leading zeros if stored as numbers. Format the cells as Text first, or type an apostrophe before the code."]},
+      {list:["**Dates are stored as numbers**: a count of days. That’s why you can subtract two dates to get the days between them.","**Formats only change the look.** A cell holding 0.25 can show 25%, 1/4 or 0.3; formulas still use 0.25.","**Codes aren’t numbers.** Phone numbers, postal codes and IDs lose leading zeros if stored as numbers. Format the cells as Text first, or type an apostrophe before the code."]},
       {warn:"Spreadsheets guess. Some gene names, such as SEPT2, have been turned into dates in thousands of research files. Check your data after pasting or importing."}
      ],
      builder:[
@@ -1014,7 +1014,7 @@ ICA.addUnit({
       "Microsoft’s order of precedence for Excel, from first to last: reference operators (`:` for ranges, `,` for unions, a space for intersections), negation (−1), percent (%), exponent (^), multiply and divide, add and subtract, join (&), then comparisons (= < > <= >= <>). Operators at the same level work left to right. Other apps follow the same everyday order.",
       {ex:"=A2+B2+C2/3     with 70, 80, 90 →  180\n=(A2+B2+C2)/3   →  80\n=(B2-A2)/A2     →  change as a fraction\n=200*10%        →  20\n=\"Total: \"&D7   →  Total: 32.5", label:"Common formulas", mono:true},
       "Comparisons produce TRUE or FALSE, which IF and other functions use (see {{if-function}}). Text inside formulas goes in straight double quotes.",
-      "**Locales.** Where the decimal mark is a comma, formulas use semicolons between arguments: `=ROUND(B2;2)`. Excel follows the computer’s regional list separator, and desktop Excel translates function names in some languages. Google Sheets follows the spreadsheet’s locale (File → Settings); its function names stay in English unless your account uses one of its supported languages and you untick Always use English function names. LibreOffice Calc lets you choose separators and English function names in Tools → Options → LibreOffice Calc → Formula. Apple’s Numbers help says to use semicolons when your settings use a decimal comma.",
+      "**Locales.** Where the decimal mark is a comma, formulas use semicolons between arguments: `=ROUND(B2;2)`. Excel follows the computer’s regional list separator, and desktop Excel translates function names in some languages. Google Sheets follows the spreadsheet’s locale (File → Settings); its function names stay in English unless your account uses one of its supported languages and you uncheck Always use English function names. LibreOffice Calc lets you choose separators and English function names in Tools → Options → LibreOffice Calc → Formula. Apple’s Numbers help says to use semicolons when your settings use a decimal comma.",
       "**Editing.** Double-click a cell (or click in the formula bar) to edit its formula; each reference is shown in a color, and the same color outlines the cell it points to. Press [[kbd:Esc]] to cancel an edit, [[kbd:Enter]] to accept it. Watch for a formula you meant to type being stored as text: if the cell shows `=B2*C2` instead of a result, the cell was probably formatted as Text before you typed. Set it to a number format and re-enter the formula."
      ],
      pro:[
@@ -1107,7 +1107,7 @@ ICA.addUnit({
       {list:["`=IF(B2>=50, \"Pass\", \"Retake\")` text results","`=IF(B2>=50, B2*0.1, 0)` a 10% bonus from 50 upwards, else nothing","`=IF(D2=\"\", \"Missing\", \"OK\")` checks for an empty cell","`=IF(AND(B2>=50, C2=\"Yes\"), \"Eligible\", \"No\")` two conditions at once (OR is similar)"]},
       "**Common mistakes:** text without quotes (`Pass` gives #NAME?); typographic quotes “ ” pasted from a document instead of straight ones; comparing a number stored as text (the test may be FALSE unexpectedly); and the wrong boundary sign.",
       "**Nesting** puts an IF inside another for more outcomes: `=IF(B2>=80, \"A\", IF(B2>=65, \"B\", \"C\"))`. Order the tests from the most restrictive. Beyond two or three levels, consider a lookup table instead (see {{lookup-functions}}).",
-      "**IF with dates.** `TODAY()` returns today’s date and updates every day, so `=IF(C2<TODAY(), \"Overdue\", \"\")` flags library books whose due date in C2 has passed and leaves the others blank.", "**Checking an IF.** Fill it down, then look at rows just either side of the boundary (49, 50 and 51 for a pass mark of 50). A filter on the result column makes this quick. Most IF mistakes are at the boundary or in the quotes, not in the idea."
+      "**IF with dates.** `TODAY()` returns today’s date and updates every day, so `=IF(C2<TODAY(), \"Overdue\", \"\")` flags library books whose due date in C2 has passed and leaves the others blank.", "**Checking an IF.** Fill it down, then look at rows just either side of the boundary (49, 50 and 51 for a passing score of 50). A filter on the result column makes this quick. Most IF mistakes are at the boundary or in the quotes, not in the idea."
      ],
      pro:[
       "**IFS and SWITCH.** Excel for Microsoft 365, Excel 2019 and later, Google Sheets and LibreOffice Calc have IFS (a list of test–result pairs) and SWITCH (match one value against several options). Numbers has IFS too. They avoid deep nesting but behave differently from IF when nothing matches: IFS returns #N/A, so end with a catch-all test such as `TRUE, \"Other\"`.",
@@ -1193,7 +1193,7 @@ ICA.addUnit({
      builder:[
       {list:["**#DIV/0!** `=B2/C2` with C2 empty or 0. Common after filling a formula with a relative reference to a total (=D2/D7 copied down becomes =D3/D8). Fix the reference ($D$7), or guard: `=IF(C2=0, \"\", B2/C2)`.","**#NAME?** Misspelled function (`=SUMM`), text without quotes, missing colon in a range (`B2B6`), an undefined name, or a function the app or version doesn’t have (XLOOKUP in Excel 2019).","**#VALUE!** `=B2+C2` where C2 holds text such as “n/a”, or a date typed as text. SUM(B2:C2) would skip the text instead.","**#REF!** A deleted row, column or sheet that a formula used; VLOOKUP asking for a column beyond the table (in Excel and Google Sheets; LibreOffice Calc shows Err:502); pasting over cells a formula referenced.","**#N/A** A lookup value not found: typos, extra spaces, text-versus-number codes, or a missing FALSE in VLOOKUP on unsorted data (which may instead return a wrong value)."]},
       "Apps differ: Google Sheets shows #ERROR! for a formula it can’t parse at all. LibreOffice Calc shows #NAME?, #REF!, #DIV/0! and #VALUE! like the others, but many other problems appear as Err: followed by a number, such as Err:502 (invalid argument) or Err:522 (circular reference); its help lists them all. Numbers shows an error icon in the cell; click it to read the message.",
-      "OpenStax Section 10.5 adds a good habit called tick and tie: check totals against an independent source."
+      "OpenStax Section 10.5 adds a good habit called check and tie: check totals against an independent source."
      ],
      pro:[
       "**Circular references** happen when a formula refers to its own cell, directly or through other cells. Excel warns and may show 0; LibreOffice shows Err:522; Google Sheets shows #REF! with a circular-dependency message. Unless you deliberately use iterative calculation, find and break the loop.",
@@ -1376,7 +1376,7 @@ ICA.addUnit({
    {id:"fill-handle", term:"Fill handle", def:"The small square (or, in Numbers, a yellow dot) on a selected cell that you drag to copy its contents or formula into neighboring cells.", codex:"cell-references"},
    {id:"number-format", term:"Number format", def:"A setting that controls how a value is displayed (decimals, currency, percent, date style) without changing the value itself.", codex:"cell-data-types"},
    {id:"date-serial", term:"Date serial number", def:"The number a spreadsheet stores for a date: a count of days from a starting day. In Excel’s usual system, 5 July 2011 is 40729.", codex:"cell-data-types"},
-   {id:"leading-zero", term:"Leading zero", def:"A zero at the start of a code, as in the postcode 02134. Spreadsheets drop it if the code is stored as a number, so store codes as text.", codex:"cell-data-types"},
+   {id:"leading-zero", term:"Leading zero", def:"A zero at the start of a code, as in the postal code 02134. Spreadsheets drop it if the code is stored as a number, so store codes as text.", codex:"cell-data-types"},
    {id:"locale", term:"Locale", def:"Regional settings that decide how dates, numbers and currency are written, such as a decimal comma, and which separator formulas use.", codex:"formulas-operators"},
    {id:"error-value", term:"Error value", def:"A code such as #DIV/0!, #NAME?, #VALUE!, #REF! or #N/A that a formula shows when it can’t calculate a result. Each points to a different cause.", codex:"spreadsheet-errors"},
    {id:"lookup", term:"Lookup", def:"Finding a value in one column and returning the matching value from another column in the same row, as XLOOKUP and VLOOKUP do.", codex:"lookup-functions"},
@@ -1589,7 +1589,7 @@ ICA.addUnit({
      {t:"Merge cells with the same category", why:"Merging breaks sorting and filtering and doesn’t fix spellings."}
    ]},
    {id:"t1u9-q33", lesson:"t1u9-l4", level:3, q:"Dmitri sorts a table and notices row 1, his header row, has moved into the middle of the data. What went wrong?", options:[
-     {t:"The sort treated the header as data", ok:true, why:"He should tick the “has header row” option (My data has headers, Data has header row, Range contains column labels) so the header stays on top."},
+     {t:"The sort treated the header as data", ok:true, why:"He should check the “has header row” option (My data has headers, Data has header row, Range contains column labels) so the header stays on top."},
      {t:"The header row was too long", why:"Length doesn’t matter; the app needs to know it’s a header."},
      {t:"Sorting always moves headers", why:"Only when the app thinks they’re data."},
      {t:"He should have merged the header cells", why:"Merging causes sorting problems rather than solving them."}
@@ -1649,8 +1649,8 @@ ICA.addUnit({
      {t:"The cell’s number format is wrong", why:"Number formats affect numbers and dates, not how letters are decoded."},
      {t:"Someone typed the name incorrectly", why:"The consistent pattern (Ã plus another character) is the signature of an encoding mismatch."}
    ]},
-   {id:"t1u9-q43", lesson:"t1u9-l5", level:3, q:"Kenji receives a CSV of customer postcodes, several starting with 0. What’s the safest way to bring it into his spreadsheet?", options:[
-     {t:"Import it and set the postcode column to Text", ok:true, why:"For example with Data → From Text/CSV or a Text Import dialog. Importing lets him choose column types, so leading zeros are kept. Double-clicking lets the app guess and drop them."},
+   {id:"t1u9-q43", lesson:"t1u9-l5", level:3, q:"Kenji receives a CSV of customer postal codes, several starting with 0. What’s the safest way to bring it into his spreadsheet?", options:[
+     {t:"Import it and set the postal code column to Text", ok:true, why:"For example with Data → From Text/CSV or a Text Import dialog. Importing lets him choose column types, so leading zeros are kept. Double-clicking lets the app guess and drop them."},
      {t:"Double-click it, then format the column as Text", why:"By then the zeros are already gone; formatting afterwards can’t restore them."},
      {t:"Open and save it a few times so the app learns the format", why:"Each round trip can apply the same guessing again. Keep the original untouched."},
      {t:"Rename the file from .csv to .xlsx", why:"Renaming doesn’t convert the file and may stop it opening at all."}

@@ -26,7 +26,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"A kind of Japanese for study", body:[
-      {lead:"You already change how you speak for different people. You talk to a friend in casual Japanese and to a shop assistant in polite Japanese. Academic Japanese is one more of these varieties: the Japanese of university study and research."},
+      {lead:"You already change how you speak for different people. You talk to a friend in casual Japanese and to a salesclerk in polite Japanese. Academic Japanese is one more of these varieties: the Japanese of university study and research."},
       "In Japanese language teaching it is often called [[academic-japanese-term|アカデミック・ジャパニーズ]] (*akademikku japanīzu*). It covers everything you need to study in Japanese: reading [論文]{ろんぶん} (research papers) and textbooks, writing レポート (reports for assignments) and a [卒業論文]{そつぎょうろんぶん} (graduation thesis), following [講義]{こうぎ} (lectures), speaking in a ゼミ (seminar) and giving a [発表]{はっぴょう} (presentation), and writing emails to teachers.",
       "Academic Japanese is not a separate language. It uses the same grammar you already know. What changes is the **register**: the level of formality and the kind of words and sentences that suit the situation. Research skills calls this [[academic-register]], and the idea is the same in every language.",
       "Compare two ways of reporting the same finding from a student survey. Both are invented for this lesson.",
@@ -73,7 +73,7 @@ ICA.addUnit({
       {table:[["Misconception","Closer to the truth"],["Academic Japanese means using as many kanji as possible.","It means a consistent written style, precise words and careful endings. Too many difficult 漢語 make a text hard to read."],["Polite です・ます Japanese is the most suitable for a report.","Polite is not the same as academic. Most reports and theses use the plain である style (Lesson 2)."],["和語 are informal, so I should replace them all.","Many 和語, such as 述べる, 示す and 明らかにする, are standard in academic writing (Lesson 4)."],["Japanese students already know how to write reports.","Most learn it at university. Many universities teach it in the first year."],["I need to know every kanji before I can read a 論文.","Reading with a dictionary tool is how most people build academic vocabulary. Start now."]]}
     ]},
     {h:"Why this matters", body:[
-      "Teachers in Japan judge reports partly on style. A strong argument written in casual spoken Japanese can lose marks, and it can make your ideas look less careful than they are. Learning the register lets your ideas be taken seriously.",
+      "Teachers in Japan judge reports partly on style. A strong argument written in casual spoken Japanese can lose points, and it can make your ideas look less careful than they are. Learning the register lets your ideas be taken seriously.",
       "It also makes reading easier. Once you know that しかし marks a contrast and ～と考えられる marks an interpretation, academic texts become more predictable.",
       "The big picture is in {{academic-japanese}}. The rest of this unit covers the two styles ({{desu-masu-and-dearu}}), written and spoken words ({{written-vs-spoken-japanese}}), 漢語 and 和語 ({{kango-and-wago}}), and sentence endings ({{sentence-endings-japanese}}, {{hedging-japanese}}).",
       {terms:["academic-japanese-term","wago","kango","gairaigo","furigana","yomigana"]}

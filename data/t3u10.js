@@ -16,7 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t3u10-l1", title:"What open data is, and where to find it", minutes:50,
-   hook:{q:"A city transport office lets anyone download its bus timetable spreadsheet for free. The page says “for personal, non-commercial use only”. Is this open data, as the Open Definition uses the word?", options:["Yes: it’s free to download","No: open data must allow use for any purpose, including commercial use","Yes: it’s a spreadsheet, so computers can read it","Only if it also has a DOI"], answer:1, reveal:"**No.** “Free to download” and “open” are different things. The Open Definition says an open license must allow anyone to use, change and share the data **for any purpose**, so a non-commercial condition makes it not open, however generous it feels. This lesson explains what open really means and then tours the places where genuinely open data live."},
+   hook:{q:"A city transport office lets anyone download its bus schedule spreadsheet for free. The page says “for personal, non-commercial use only”. Is this open data, as the Open Definition uses the word?", options:["Yes: it’s free to download","No: open data must allow use for any purpose, including commercial use","Yes: it’s a spreadsheet, so computers can read it","Only if it also has a DOI"], answer:1, reveal:"**No.** “Free to download” and “open” are different things. The Open Definition says an open license must allow anyone to use, change and share the data **for any purpose**, so a non-commercial condition makes it not open, however generous it feels. This lesson explains what open really means and then tours the places where genuinely open data live."},
    goals:[
      "State what the Open Definition requires (an open license, access, machine readability and an open format) and tell open data from data that are merely free to view",
      "Name the main kinds of data producers and publishers, with examples from several countries",
@@ -36,7 +36,7 @@ ICA.addUnit({
         ["Open format","Usable with at least one free, open-source tool, with no fee or restriction on the format"]
       ]},
       "So [[open-data|open data]] is **legally** open (the license) and **technically** open (you can actually get it and work with it). Extra terms on a website must not take away what the license gives: a page that says “CC BY 4.0” and also “you may not share this data” contradicts itself.",
-      {ex:"Three versions of one invented bus timetable:\n\n1. A PDF scan of a printed table, “all rights reserved”. Free to view, but neither legally nor technically open.\n2. A CSV file, “non-commercial use only”. Technically usable, but not legally open: it limits the purpose.\n3. A CSV file under CC BY 4.0. Open: anyone may use it, even in a paid app, as long as they credit the city.", label:"Worked example"},
+      {ex:"Three versions of one invented bus schedule:\n\n1. A PDF scan of a printed table, “all rights reserved”. Free to view, but neither legally nor technically open.\n2. A CSV file, “non-commercial use only”. Technically usable, but not legally open: it limits the purpose.\n3. A CSV file under CC BY 4.0. Open: anyone may use it, even in a paid app, as long as they credit the city.", label:"Worked example"},
       {key:"Open data = an open license + access to the whole dataset + a machine-readable, open format. Free to view is not enough."}
     ]},
     {h:"Who makes data, and why it matters", body:[
@@ -155,7 +155,7 @@ ICA.addUnit({
       {t:"Cite Kaggle as the publisher of the data.", why:"Kaggle hosts the file; it didn’t produce the scores. Cite the producer of the data you actually rely on."},
       {t:"Avoid it entirely: data on Kaggle are never accurate.", why:"Many Kaggle datasets are fine and useful for practice. The issue is checking provenance and license, not banning a site."}
     ]},
-    {id:"t3u10-l1-x7", type:"explain", q:"One city posts its bus timetable as a scanned PDF marked “all rights reserved”. Another posts a CSV file for “non-commercial use only”. Explain why neither counts as open data, and what would make a timetable open.", model:"Under the Open Definition, data are open only if anyone may access, use, change and share them for any purpose, with at most conditions such as credit or keeping it open. The scanned PDF fails twice: “all rights reserved” isn’t an open license, and a picture of a table isn’t machine-readable. The CSV is machine-readable, but “non-commercial only” limits the purpose, so it isn’t legally open. Publishing the whole timetable as a downloadable CSV under an open license such as CC BY 4.0 would make it open.", points:["States what the Open Definition requires (use, change and share for any purpose)", "Says the PDF is neither openly licensed nor machine-readable", "Says the non-commercial condition stops the CSV being legally open", "Gives the fix: a machine-readable format under an open license"]}
+    {id:"t3u10-l1-x7", type:"explain", q:"One city posts its bus schedule as a scanned PDF marked “all rights reserved”. Another posts a CSV file for “non-commercial use only”. Explain why neither counts as open data, and what would make a schedule open.", model:"Under the Open Definition, data are open only if anyone may access, use, change and share them for any purpose, with at most conditions such as credit or keeping it open. The scanned PDF fails twice: “all rights reserved” isn’t an open license, and a picture of a table isn’t machine-readable. The CSV is machine-readable, but “non-commercial only” limits the purpose, so it isn’t legally open. Publishing the whole schedule as a downloadable CSV under an open license such as CC BY 4.0 would make it open.", points:["States what the Open Definition requires (use, change and share for any purpose)", "Says the PDF is neither openly licensed nor machine-readable", "Says the non-commercial condition stops the CSV being legally open", "Gives the fix: a machine-readable format under an open license"]}
    ],
    apply:{intro:"Use a phone or computer browser. Write your findings down; you’ll reuse them in the next two lessons.", tasks:[
      {t:"Find your national statistics office and one dataset", how:["Open the UN Statistics Division’s list of national statistical offices (search “UNSD national statistical offices websites”) and find your country, or a country you’re curious about.","On that office’s site, look for “Data”, “Statistics” or “Tables” and find one dataset on a topic you care about (population, prices, employment, health…).","Note the publisher, the title, the date it was last updated, the formats offered and the license or terms of use (often at the page foot, called “Terms”, “Copyright” or “License”)."], write:"Office… Dataset title… Last updated… Formats… License or terms…"},
@@ -246,7 +246,7 @@ ICA.addUnit({
       {t:"5,000 randomly chosen households asked about their spending", b:1, why:"A subset chosen to represent a population is a sample survey."},
       {t:"Hospital admissions recorded by staff as patients arrive", b:2, why:"These records are a by-product of providing a service."},
       {t:"Vaccination coverage for every year, combining surveys and clinic reports with a statistical model", b:3, why:"Combining sources in a model to fill gaps gives a modeled estimate."},
-      {t:"Pupil numbers taken from school enrollment registers", b:2, why:"Registers kept to run schools are administrative records."},
+      {t:"Student numbers taken from school enrollment registers", b:2, why:"Registers kept to run schools are administrative records."},
       {t:"An opinion poll of 1,200 adults about trust in the courts", b:1, why:"A poll is a sample survey, with sampling error and nonresponse to consider."}
     ]},
     {id:"t3u10-l2-x2", type:"mcq", q:"Dmitri lost his job a year ago. He’s available for work but stopped looking because he believes there are no jobs in his town. Under the international (ILO) definition, how is he counted?", options:[
@@ -610,7 +610,7 @@ ICA.addUnit({
         "**Proxies.** A **[[proxy-variable|proxy]]** is something measured in place of what you really care about. The health algorithm in this lesson’s hook (Obermeyer and colleagues, *Science*, 2019) used past spending as a proxy for health need. Spending reflected unequal access to care, so the bias came in through the proxy, even though race wasn’t an input."
       ]},
       {fig:'<svg viewBox="0 0 340 400"><defs><marker id="u10a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><rect class="d-lup" x="10" y="8" width="320" height="62" rx="12" stroke-width="1.5"/><text x="170" y="32" text-anchor="middle">What we want to know</text><text class="s" x="170" y="54" text-anchor="middle">how much care each patient needs</text><path class="d-ink" d="M170 70 V 88" stroke-width="2" marker-end="url(#u10a5)"/><rect class="d-rose" x="10" y="92" width="320" height="78" rx="12" stroke-width="1.5"/><text x="170" y="116" text-anchor="middle">Unequal access to care</text><text class="s" x="170" y="138" text-anchor="middle">less was spent on some patients</text><text class="s" x="170" y="154" text-anchor="middle">who were just as ill</text><path class="d-ink" d="M170 170 V 188" stroke-width="2" marker-end="url(#u10a5)"/><rect class="d-gold" x="10" y="192" width="320" height="62" rx="12" stroke-width="1.5"/><text x="170" y="216" text-anchor="middle">What the data record (the proxy)</text><text class="s" x="170" y="238" text-anchor="middle">past spending on each patient’s care</text><path class="d-ink" d="M170 254 V 272" stroke-width="2" marker-end="url(#u10a5)"/><rect class="d-panel" x="10" y="276" width="320" height="94" rx="12" stroke-width="1.5"/><text x="170" y="300" text-anchor="middle">What the model learns</text><text class="s" x="170" y="322" text-anchor="middle">equally sick patients from the group</text><text class="s" x="170" y="338" text-anchor="middle">with less access get lower scores,</text><text class="s" x="170" y="354" text-anchor="middle">so fewer are offered extra help</text><text class="s" x="170" y="392" text-anchor="middle">The data were accurate. The proxy was unfair.</text></svg>', alt:"Four stacked boxes joined by arrows. What we want to know: how much care each patient needs. Unequal access to care: less was spent on some patients who were just as ill. What the data record, the proxy: past spending on each patient’s care. What the model learns: equally sick patients from the group with less access get lower scores, so fewer are offered extra help. A note says the data were accurate but the proxy was unfair.", cap:"How a proxy carries inequality into a model, based on Obermeyer et al. (2019). Removing race from the inputs doesn’t remove this kind of bias."},
-      "Other reported cases follow the same logic. Reuters reported in 2018 that Amazon had dropped an experimental CV-screening tool after finding it marked down CVs that included the word “women’s”; it had learned from a decade of mostly male applicants. Good practice includes: report accuracy **for each group**, question every proxy, test before and after deployment, and give people a way to challenge automated decisions."
+      "Other reported cases follow the same logic. Reuters reported in 2018 that Amazon had dropped an experimental résumé-screening tool after finding it marked down résumés that included the word “women’s”; it had learned from a decade of mostly male applicants. Good practice includes: report accuracy **for each group**, question every proxy, test before and after deployment, and give people a way to challenge automated decisions."
     ]},
     {h:"Indigenous data sovereignty and the CARE principles", body:[
       "Research Skills Unit 9 introduced the **[[care-principles|CARE principles]]** alongside FAIR. Here is the thinking behind them.",
@@ -665,9 +665,9 @@ ICA.addUnit({
       {t:"A housing survey only asks about people with a fixed address", b:0, why:"People who are homeless are left out of the count entirely: a coverage problem."},
       {t:"A face analysis system is far less accurate for darker-skinned women", b:1, why:"The system performs unequally across groups, as Gender Shades documented."},
       {t:"A form offers only two gender options", b:0, why:"The categories decide who can be counted accurately."},
-      {t:"A loan model uses postcode, which closely tracks ethnicity in that city", b:1, why:"Postcode can act as a proxy, bringing in the effects of past segregation."},
+      {t:"A loan model uses postal code, which closely tracks ethnicity in that city", b:1, why:"Postal code can act as a proxy, bringing in the effects of past segregation."},
       {t:"A city plans services using data from a smartphone app", b:0, why:"People without smartphones aren’t counted, so the data overrepresent some groups."},
-      {t:"A school ranks pupils with a model trained on past grades from schools with unequal funding", b:1, why:"The model learns patterns shaped by past inequality, a historical bias in how it works."}
+      {t:"A school ranks students with a model trained on past grades from schools with unequal funding", b:1, why:"The model learns patterns shaped by past inequality, a historical bias in how it works."}
     ]},
     {id:"t3u10-l5-x4", type:"mcq", q:"Which statement about FAIR and CARE is accurate?", options:[
       {t:"FAIR makes data reusable; CARE adds people and purpose.", ok:true, why:"Right. CARE means Indigenous peoples benefit from and keep authority over data about them, and the two are meant to be used together. The CARE authors describe the goal as being “FAIR and CARE”."},
@@ -754,9 +754,9 @@ ICA.addUnit({
      {t:"Getting a DOI from a repository", why:"A DOI mainly makes data findable (and citable). It doesn’t change how the data can be combined."},
      {t:"Adding a license file", why:"A license makes data reusable by stating what’s allowed. It doesn’t change formats or codes."},
      {t:"Keeping the description public while the files are restricted", why:"That supports accessibility: people can find out the data exist and how to request them."}]},
-   {id:"t3u10-cp10", lesson:"t3u10-l5", level:2, q:"A city’s wellbeing survey offers only “male” and “female” for gender, and lets people tick just one ethnicity. Which concern does this raise most directly?", options:[
+   {id:"t3u10-cp10", lesson:"t3u10-l5", level:2, q:"A city’s wellbeing survey offers only “male” and “female” for gender, and lets people check just one ethnicity. Which concern does this raise most directly?", options:[
      {t:"The survey will have too large a sample", why:"Sample size isn’t the issue. The categories decide who can be counted at all."},
-     {t:"The answers won’t be machine readable", why:"Tick boxes are easy for machines to read. The problem is who the boxes leave out."},
+     {t:"The answers won’t be machine readable", why:"Check boxes are easy for machines to read. The problem is who the boxes leave out."},
      {t:"Some people, like non-binary people, can’t be counted", ok:true, why:"People of mixed ethnicity are squeezed out too. Every form forces people into boxes. What can’t be recorded can’t be noticed, funded or fixed."},
      {t:"The data can’t then be shared under an open license", why:"Licensing is a separate question. The concern here is representation."}]},
    {id:"t3u10-cp11", lesson:"t3u10-l4", level:3, q:"Researchers mapped sacred sites together with an Indigenous community. Their journal asks for open data. What approach fits both FAIR and the CARE principles?", options:[
@@ -764,10 +764,10 @@ ICA.addUnit({
      {t:"Delete the data so nobody can misuse them", why:"That loses the community’s data too. Shared decisions about access are better than destruction."},
      {t:"Share the exact locations under CC BY-NC to protect the sites", why:"A license controls reuse rights, not harm. Anyone could still visit or disturb the sites."},
      {t:"Agree access with the community: open description, restricted locations", ok:true, why:"CARE gives the community authority to control; FAIR is met through public metadata and a clear access route."}]},
-   {id:"t3u10-cp12", lesson:"t3u10-l5", level:3, q:"A school picks pupils for extra reading help by ranking them on how many library books they borrowed last year. What is the main ethical risk?", options:[
-     {t:"Borrowing is a proxy shaped by access to books, so it can misjudge need", ok:true, why:"A proxy stands in for what you care about. Distance to a library or books at home affect borrowing, so some pupils are wrongly picked or missed."},
+   {id:"t3u10-cp12", lesson:"t3u10-l5", level:3, q:"A school picks students for extra reading help by ranking them on how many library books they borrowed last year. What is the main ethical risk?", options:[
+     {t:"Borrowing is a proxy shaped by access to books, so it can misjudge need", ok:true, why:"A proxy stands in for what you care about. Distance to a library or books at home affect borrowing, so some students are wrongly picked or missed."},
      {t:"Library records are administrative data, so they can’t be used for decisions", why:"Administrative data can be useful. The problem is what this measure stands in for."},
-     {t:"The ranking uses too few pupils to be reliable", why:"The issue isn’t sample size. A biased proxy stays biased with any number of pupils."},
+     {t:"The ranking uses too few students to be reliable", why:"The issue isn’t sample size. A biased proxy stays biased with any number of students."},
      {t:"There is no risk, because no personal characteristics such as ethnicity are used", why:"Bias can enter through a proxy even when protected characteristics aren’t inputs."}]},
   ],
   codex:[
@@ -1014,7 +1014,7 @@ ICA.addUnit({
         ["7 Show Your Work","Make labor visible"]
       ]},
       "Chapter 1 uses examples such as Serena Williams drawing attention to US maternal mortality data, Mimi Onuoha’s *Library of Missing Datasets* and María Salguero’s map of femicides in Mexico.",
-      "The principles are tools for questioning any project, not a checklist to tick. For example, “consider context” asks how and by whom data were collected before you interpret them; “make labor visible” asks you to credit the field workers, cleaners and annotators behind the data.",
+      "The principles are tools for questioning any project, not a checklist to check. For example, “consider context” asks how and by whom data were collected before you interpret them; “make labor visible” asks you to credit the field workers, cleaners and annotators behind the data.",
       "The book is written for anyone who works with data, not only for feminists or scholars, and its examples range from health and policing to maps and machine learning."
      ],
      pro:[
@@ -1048,11 +1048,11 @@ ICA.addUnit({
       "**Report by group.** An overall accuracy figure can hide large differences; reporting results for each group, and combinations of groups, reveals them."
      ],
      pro:[
-      "Common sources of algorithmic bias: unrepresentative training data; labels that encode past decisions (historical bias); proxies correlated with group membership (postcode, spending); aggregate metrics that hide subgroup failures; and feedback loops where a model’s outputs shape its future training data. Removing a protected attribute rarely removes bias that arrives through proxies.",
+      "Common sources of algorithmic bias: unrepresentative training data; labels that encode past decisions (historical bias); proxies correlated with group membership (postal code, spending); aggregate metrics that hide subgroup failures; and feedback loops where a model’s outputs shape its future training data. Removing a protected attribute rarely removes bias that arrives through proxies.",
       "Mitigation is socio-technical: define the target carefully, audit performance per group (and per intersection), document datasets and models, involve affected communities, and provide routes to contest decisions.",
       "**Indigenous data sovereignty** predates CARE: Canada’s First Nations principles of OCAP® (ownership, control, access, possession) date from the 1990s, and networks such as Te Mana Raraunga (Māori data sovereignty) and others in Australia and the US shaped CARE. The CARE authors call for stewards to be “FAIR and CARE”: people- and purpose-oriented governance alongside data-oriented FAIR. Practical tools include community data agreements and the Local Contexts Traditional Knowledge and Biocultural Labels.",
       "Being counted can also be dangerous: registers by ethnicity, religion or status have been used for persecution. Confidentiality of individual records and data minimization are part of fair counting.",
-      "Reuters reported in 2018 that Amazon had abandoned an experimental CV-screening tool after finding it marked down CVs containing the word “women’s”, having learned from a decade of mostly male applicants: another case of historical bias in labels."
+      "Reuters reported in 2018 that Amazon had abandoned an experimental résumé-screening tool after finding it marked down résumés containing the word “women’s”, having learned from a decade of mostly male applicants: another case of historical bias in labels."
      ]
     },
     related:["data-ethics","sharing-your-data","data-management-plan"],
@@ -1300,11 +1300,11 @@ ICA.addUnit({
      {t:"They replace FAIR", why:"They add to FAIR rather than replace it."},
      {t:"They forbid sharing any data about Indigenous peoples", why:"They give communities authority, which may include sharing on their terms."},
      {t:"They are a file format standard", why:"They are governance principles."}]},
-   {id:"t3u10-q43", lesson:"t3u10-l5", level:3, q:"A loan model doesn’t use ethnicity, but it uses postcode in a city where postcodes closely track ethnicity. What is the risk?", options:[
-     {t:"Postcode can act as a proxy and bring in ethnic bias", ok:true, why:"This happens even without ethnicity as an input. Proxies correlated with group membership carry bias in."},
+   {id:"t3u10-q43", lesson:"t3u10-l5", level:3, q:"A loan model doesn’t use ethnicity, but it uses postal code in a city where postal codes closely track ethnicity. What is the risk?", options:[
+     {t:"Postal code can act as a proxy and bring in ethnic bias", ok:true, why:"This happens even without ethnicity as an input. Proxies correlated with group membership carry bias in."},
      {t:"None: without ethnicity, the model can’t be biased", why:"The Obermeyer study shows bias can enter through proxies."},
-     {t:"Postcodes make the model run slowly", why:"Speed isn’t the ethical concern."},
-     {t:"Postcodes are personal data, so the model is illegal", why:"Legality varies; the key issue here is unfair outcomes through a proxy."}]},
+     {t:"Postal codes make the model run slowly", why:"Speed isn’t the ethical concern."},
+     {t:"Postal codes are personal data, so the model is illegal", why:"Legality varies; the key issue here is unfair outcomes through a proxy."}]},
    {id:"t3u10-q44", lesson:"t3u10-l5", level:1, q:"Under which license is the open-access edition of Data Feminism published?", options:[
      {t:"CC BY-NC-ND", ok:true, why:"The open-access edition is under CC BY-NC-ND 4.0: share it unchanged, non-commercially, with credit."},
      {t:"CC0", why:"It isn’t in the public domain."},

@@ -45,7 +45,7 @@ ICA.addUnit({
       {tip:"This is why “the internet is down” and “a website is down” are different problems. If one site won’t load but your messaging app still works, the internet is fine and the problem is probably that site."}
     ]},
     {h:"Packets: the parcel analogy, then the real thing", body:[
-      "Imagine you need to post a 600-page manuscript, but the post office only accepts small envelopes. You’d split it into numbered bundles, write the destination and your return address on each, and post them all. They might travel in different vans and arrive out of order, but the receiver can put them back together using the numbers, and ask you to resend any that went missing.",
+      "Imagine you need to mail a 600-page manuscript, but the post office only accepts small envelopes. You’d split it into numbered bundles, write the destination and your return address on each, and mail them all. They might travel in different vans and arrive out of order, but the receiver can put them back together using the numbers, and ask you to resend any that went missing.",
       "That’s close to how the internet works. Data is split into small chunks called [[packet|packets]]. Each packet has two parts:",
       {list:[
         "A **header**, like the writing on the envelope: the sender’s and receiver’s [[ip-address|IP addresses]] (internet addresses, explained in Lesson 2), a number saying where this piece fits, and some details about which rules apply.",
@@ -76,10 +76,10 @@ ICA.addUnit({
         ["Fiber","Pulses of light in thin glass fibers, often all the way to the home"],
         ["Cable","Signals on the same kind of cable used for cable TV"],
         ["DSL (phone line)","Signals on a copper telephone line"],
-        ["Mobile data (4G, 5G)","Radio to a nearby mobile mast, then by cable from the mast"],
+        ["Mobile data (4G, 5G)","Radio to a nearby cell tower, then by cable from the cell tower"],
         ["Satellite","Radio to a satellite and down to a ground station, useful where cables don’t reach"]
       ]},
-      "Notice that even wireless connections usually stay wireless only for the first stretch. After the mast, the satellite ground station or your router, the data is almost always back on cables.",
+      "Notice that even wireless connections usually stay wireless only for the first stretch. After the cell tower, the satellite ground station or your router, the data is almost always back on cables.",
       "Between countries and continents, data travels through [[undersea-cable|undersea cables]] laid across the sea floor. Inside, hair-thin glass fibers carry data as light. According to TeleGeography, a research company that maps them, there are more than 600 active and planned submarine cables, over 1.5 million kilometers in all, and along most of their route a cable is roughly as thick as a garden hose. Satellites carry only a tiny share of international traffic; cables carry far more data at lower cost.",
       "Cables do get damaged, roughly 200 times a year worldwide, mostly by fishing gear and ships’ anchors rather than sabotage or sharks. Because routers can send traffic around a broken cable, most people never notice, although places served by only one or two cables can see serious slowdowns until a repair ship fixes the break.",
       {warn:"Weather can affect the first wireless stretch (heavy rain can disrupt some satellite links, and walls weaken Wi-Fi), but “the internet” as a whole doesn’t depend on the sky. It runs mostly on cables in the ground and under the sea."}
@@ -110,7 +110,7 @@ ICA.addUnit({
     {id:"t1u4-l1-x1", type:"sort", q:"Sort each item: is it part of the internet itself (the delivery system), or a service that runs over it?", buckets:["The internet itself","A service that uses the internet"], items:[
       {t:"An undersea fiber-optic cable", b:0, why:"Cables are the physical links that carry packets. They’re part of the delivery system."},
       {t:"The routers in an ISP’s network", b:0, why:"Routers forward packets between networks. They’re the internet’s junctions."},
-      {t:"A mobile phone mast", b:0, why:"A mast is the first link for mobile data, connecting your phone to the provider’s network."},
+      {t:"A cell tower", b:0, why:"A cell tower is the first link for mobile data, connecting your phone to the provider’s network."},
       {t:"The World Wide Web", b:1, why:"The web is one service (pages in a browser) that travels over the internet."},
       {t:"Email", b:1, why:"Email is a separate service using its own protocols over the same internet."},
       {t:"A video-call app", b:1, why:"Video calls are a service; their packets ride on the internet like everything else."}
@@ -392,7 +392,7 @@ ICA.addUnit({
       {tip:"For the most stable connection, especially for video calls or big uploads, use a cable if you can. Wi-Fi shares the airwaves; a cable doesn’t."}
     ]},
     {h:"Mobile data and hotspots", body:[
-      "[[mobile-data|Mobile data]] (called cellular data in some countries) connects your phone by radio to your mobile provider’s masts, using 4G, 5G or older standards. Unlike home Wi-Fi, it works almost anywhere with coverage, but most plans include a monthly allowance, called a [[data-cap|data cap]], and charge or slow you down after it.",
+      "[[mobile-data|Mobile data]] (called cellular data in some countries) connects your phone by radio to your mobile provider’s cell towers, using 4G, 5G or older standards. Unlike home Wi-Fi, it works almost anywhere with coverage, but most plans include a monthly allowance, called a [[data-cap|data cap]], and charge or slow you down after it.",
       "A [[hotspot]] shares one device’s internet connection with others. Your phone’s **personal hotspot** (or Wi-Fi hotspot) turns it into a tiny Wi-Fi router: your laptop joins the phone’s Wi-Fi, and the phone carries the traffic over mobile data.",
       {list:[
         "Everything the laptop does counts against the **phone’s** data allowance, including updates and cloud backups it starts in the background. Mark the connection as metered or low-data on the laptop (Lesson 5).",
@@ -406,7 +406,7 @@ ICA.addUnit({
       "Bluetooth is another short-range radio technology, using the same 2.4 GHz band as some Wi-Fi. But it does a different job: it links **two nearby devices directly**, such as a phone and headphones, a laptop and a keyboard, or a phone and a watch. It isn’t, by itself, a connection to the internet.",
       {table:[
         ["","Wi-Fi","Bluetooth","Mobile data"],
-        ["Connects","Devices to a router or hotspot","One device to another nearby","Phone to a provider’s mast"],
+        ["Connects","Devices to a router or hotspot","One device to another nearby","Phone to a provider’s cell tower"],
         ["Typical use","Internet at home, work, cafés","Headphones, keyboards, watches, car audio","Internet on the move"],
         ["Gets you online?","Yes, if the router is online","Not usually by itself","Yes"]
       ]},
@@ -583,7 +583,7 @@ ICA.addUnit({
         ["If you clear…","You lose","You keep"],
         ["Cached images and files","Saved copies of site files; pages load a little slower at first","Sign-ins, settings, history"],
         ["Cookies and site data","Sign-ins and site preferences","Saved passwords (in your password manager), bookmarks"],
-        ["Browsing history","The list of pages you visited","Everything else, unless you tick more boxes"]
+        ["Browsing history","The list of pages you visited","Everything else, unless you check more boxes"]
       ]},
       {tip:"Clear only what you need, and for one site if you can. Clearing everything for “all time” signs you out of every website at once, which is a nuisance if you don’t have your passwords handy."}
     ]},
@@ -669,10 +669,10 @@ ICA.addUnit({
        phone:["iPhone: **Settings → Apps → Safari → Advanced → Website Data** (on older iOS versions, **Settings → Safari → Advanced**). Each site storing data is listed.","Android Chrome: open the site, tap the icon at the left end of the address bar, then **Cookies and site data** (wording varies)."]
      }},
      {t:"Fix a misbehaving page", how:{
-       win:["First, hard refresh: [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:R]] (or [[kbd:Ctrl]] + [[kbd:F5]]).","Edge: **Settings and more (…) → Settings → Privacy, search, and services**, then under **Clear browsing data**, **Choose what to clear**. Pick a time range, tick only **Cached images and files**, and select **Clear now**.","Chrome: **⋮ → Delete browsing data**. Pick a time range, tick **Cached images and files**, and select **Delete data**."],
+       win:["First, hard refresh: [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:R]] (or [[kbd:Ctrl]] + [[kbd:F5]]).","Edge: **Settings and more (…) → Settings → Privacy, search, and services**, then under **Clear browsing data**, **Choose what to clear**. Pick a time range, check only **Cached images and files**, and select **Clear now**.","Chrome: **⋮ → Delete browsing data**. Pick a time range, check **Cached images and files**, and select **Delete data**."],
        mac:["Chrome, Edge or Firefox: hard refresh with [[kbd:Cmd]] + [[kbd:Shift]] + [[kbd:R]], or clear cached files from the browser’s settings as on Windows.","Safari: **Safari → Settings → Privacy → Manage Website Data**, select the problem site and choose **Remove**. (This removes its cookies too, so you may need to sign in again.)"],
-       chromeos:["Hard refresh: [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:R]].","Or **⋮ → Delete browsing data**, tick **Cached images and files** only, and select **Delete data**."],
-       phone:["iPhone Safari: to clear cookies and cache but keep history, **Settings → Apps → Safari → Advanced → Website Data → Remove All Website Data** (you may be signed out of sites). On older iOS: **Settings → Safari**.","Android Chrome: **⋮ → Delete browsing data** (or **⋮ → Settings → Privacy and security → Delete browsing data**). Tick **Cached images and files** only, then delete."]
+       chromeos:["Hard refresh: [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:R]].","Or **⋮ → Delete browsing data**, check **Cached images and files** only, and select **Delete data**."],
+       phone:["iPhone Safari: to clear cookies and cache but keep history, **Settings → Apps → Safari → Advanced → Website Data → Remove All Website Data** (you may be signed out of sites). On older iOS: **Settings → Safari**.","Android Chrome: **⋮ → Delete browsing data** (or **⋮ → Settings → Privacy and security → Delete browsing data**). Check **Cached images and files** only, then delete."]
      }},
      {t:"Review your extensions", how:{
        win:["Chrome: type `chrome://extensions` in the address bar. Edge: `edge://extensions`. Firefox: `about:addons`.","For each extension, ask: Do I use it? Do I know who made it? Remove any you don’t need."],
@@ -729,7 +729,7 @@ ICA.addUnit({
         ["Group call, 1080p HD","3.8 Mbps","3.0 Mbps"],
         ["Audio only","60–80 kbps","60–80 kbps"]
       ]},
-      {ex:"Priya’s plan gives 200 Mbps down but only 10 Mbps up. Netflix and YouTube work perfectly. But when her phone backs up 2,000 holiday photos to the cloud during a family video call, the upload is full and her call freezes for everyone else. Pausing the backup (or scheduling it for the night) fixes it.", label:"Worked example: when upload is the bottleneck"},
+      {ex:"Priya’s plan gives 200 Mbps down but only 10 Mbps up. Netflix and YouTube work perfectly. But when her phone backs up 2,000 vacation photos to the cloud during a family video call, the upload is full and her call freezes for everyone else. Pausing the backup (or scheduling it for the night) fixes it.", label:"Worked example: when upload is the bottleneck"},
       {tip:"Video uses far more data than audio. On a struggling call, turning off your own camera frees most of your upload."}
     ]},
     {h:"Reading a speed test", body:[
@@ -978,7 +978,7 @@ ICA.addUnit({
         ["[[protocol|Protocol]]","An agreed set of rules for communicating"]
       ]},
       "Data travels as small [[packet|packets]] (see {{packets-routing}}). From your device, packets go to your home router, then to your ISP, then through other networks’ routers to the destination: often a server in a data center (see {{cables-data-centres}}). Replies come back the same way.",
-      "How you reach your ISP varies: fiber, cable, a phone line (DSL), mobile masts (4G/5G) or satellite. Usually only the first stretch is wireless; after that, the data travels almost entirely on cables.",
+      "How you reach your ISP varies: fiber, cable, a phone line (DSL), cell towers (4G/5G) or satellite. Usually only the first stretch is wireless; after that, the data travels almost entirely on cables.",
       "Useful diagnosis: if one website fails but other apps work, the internet is fine and that site has a problem. If nothing works on any device at home, the problem is between your router and the internet (see {{home-network}}). If websites fail but things already running continue, suspect DNS (see {{dns}}).",
       "Organisations publish their own networks’ rules for joining, but the core protocols are open standards, published by bodies such as the Internet Engineering Task Force (IETF). That openness is why devices from different makers, running different software, can all exchange data."
      ],
@@ -1029,7 +1029,7 @@ ICA.addUnit({
     sources:[{t:"MDN: How the web works (packets)", url:"https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"},{t:"MDN: How does the Internet work?", url:"https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work"}], checked:"2026-11"},
 
    {id:"cables-data-centres", title:"Cables, data centers and the physical cloud", aka:["undersea cables","submarine cables","data centers","the cloud","servers"], tags:["networks","cloud"],
-    summary:"The physical internet: fiber and undersea cables, mobile masts and satellites, and the data centers where the cloud lives.",
+    summary:"The physical internet: fiber and undersea cables, cell towers and satellites, and the data centers where the cloud lives.",
     levels:{
      starter:[
       "The internet is mostly cables. Wireless links (Wi-Fi, mobile data, satellite) usually cover only the first short stretch from your device. After that, data travels through cables, much of it as light in thin glass fibers.",
@@ -1042,13 +1042,13 @@ ICA.addUnit({
         ["Link","How it works","Notes"],
         ["Fiber","Light pulses in glass","Highest capacity; used for most long-distance links"],
         ["Cable / DSL","Electrical signals on cable-TV or phone lines","Common for homes"],
-        ["Mobile (4G/5G)","Radio to a mast, then cables","Works on the move"],
+        ["Mobile (4G/5G)","Radio to a cell tower, then cables","Works on the move"],
         ["Satellite","Radio to a satellite and back down","Reaches remote places; small share of international traffic"]
       ]},
       "According to TeleGeography, submarine cables suffer roughly 200 faults a year worldwide, most caused by fishing gear and ship anchors; sabotage and shark bites are very rare. Because traffic can be rerouted, most faults go unnoticed, but regions with few cables can see slowdowns until a repair ship mends the break.",
       "Inside data centers, providers usually keep several copies of data, often in separate buildings or regions, so a broken drive or local power cut doesn’t lose your files. This is also why a provider outage can affect millions of people at once, and why cloud files need a connection unless you’ve made them available offline (see {{cloud-storage}}).",
       "A data center’s location matters for latency (nearer is quicker; see {{bandwidth-latency}}) and sometimes for law: rules about personal data can depend on which country stores it.",
-      "Mobile masts are themselves linked to the provider’s network by fiber or point-to-point radio, so even mobile data spends most of its journey on cables."
+      "Cell towers are themselves linked to the provider’s network by fiber or point-to-point radio, so even mobile data spends most of its journey on cables."
      ],
      pro:[
       "TeleGeography estimated over 1.5 million kilometers of submarine cable in service in early 2026. Ownership has shifted: traditionally consortia of telecom carriers built cables, but large content and cloud companies are now major investors in new systems. Satellites remain important for remote areas and broadcasting, but carry only a small share of international capacity; the FCC figure TeleGeography cites is 0.37% of US international capacity.",
@@ -1171,7 +1171,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "[[wifi|Wi-Fi]] links your devices by radio to a nearby router or access point. It covers only that short link; the router then connects to the internet.",
-      "[[mobile-data|Mobile data]] links your phone by radio to your mobile provider’s masts (4G, 5G). It works almost anywhere with coverage, but most plans have a monthly [[data-cap|data cap]].",
+      "[[mobile-data|Mobile data]] links your phone by radio to your mobile provider’s cell towers (4G, 5G). It works almost anywhere with coverage, but most plans have a monthly [[data-cap|data cap]].",
       "A [[hotspot]] shares a connection: your phone’s personal hotspot lets a laptop use the phone’s mobile data.",
       "Bluetooth connects two nearby devices directly, such as a phone and headphones. It isn’t an internet connection on its own.",
       {key:"Wi-Fi gets you to the router; mobile data gets you to the provider; Bluetooth gets you to the device next to you."},
@@ -1193,7 +1193,7 @@ ICA.addUnit({
       "Higher frequencies carry more data but are absorbed more by walls and travel less far. The Wi-Fi Alliance notes that 6 GHz and 5 GHz have essentially identical propagation; the gain at 6 GHz is spectrum: room for wide 80 MHz and 160 MHz channels with little congestion. Rules for 6 GHz vary by country, and some regions allow only part of the band.",
       "The Wi-Fi Alliance requires Wi-Fi CERTIFIED 6E products to use current security: WPA3 for private networks and Enhanced Open for open guest networks. So a router’s 6 GHz network won’t accept older security modes.",
       "Wi-Fi 7 adds features such as multi-link operation (using several bands at once) and even wider channels on 6 GHz. Real-world speed depends far more on distance, walls and the number of active devices than on headline figures.",
-      "Mobile networks hand your phone between masts as you move; 5G uses a range of frequencies, from low bands with wide coverage to high bands with very high capacity but short range. Wi-Fi calling lets phones carry calls over Wi-Fi where mobile signal is weak.",
+      "Mobile networks hand your phone between cell towers as you move; 5G uses a range of frequencies, from low bands with wide coverage to high bands with very high capacity but short range. Wi-Fi calling lets phones carry calls over Wi-Fi where mobile signal is weak.",
       "Tethering can also run over USB or Bluetooth. Android’s help notes that Macs can’t tether to Android over USB. Bluetooth tethering works but is much slower than a Wi-Fi hotspot."
      ]
     },
@@ -1346,7 +1346,7 @@ ICA.addUnit({
         ["Cached images and files","Fresh copies downloaded; sign-ins kept"],
         ["Cookies and site data","Signed out; site preferences reset"],
         ["History","List of visited pages removed"],
-        ["Passwords","Only if you tick it: avoid unless you mean it"]
+        ["Passwords","Only if you check it: avoid unless you mean it"]
       ]},
       "Where to find it:",
       {list:[
@@ -1511,7 +1511,7 @@ ICA.addUnit({
    {id:"top-level-domain", term:"Top-level domain (TLD)", def:"The right-most part of a domain name, such as `.org`, `.com` or `.jp`.", codex:"domains-urls"},
    {id:"wifi", term:"Wi-Fi", def:"A way of connecting devices by radio to a nearby router or access point. It covers only that short link, not the whole internet.", codex:"wifi-mobile-data"},
    {id:"ssid", term:"SSID (network name)", def:"The name of a Wi-Fi network, the one you pick from the list. Avoid personal details in it.", codex:"wifi-mobile-data"},
-   {id:"mobile-data", term:"Mobile data", def:"Internet access through your mobile provider’s masts using 4G, 5G or similar. Also called cellular data.", codex:"wifi-mobile-data"},
+   {id:"mobile-data", term:"Mobile data", def:"Internet access through your mobile provider’s cell towers using 4G, 5G or similar. Also called cellular data.", codex:"wifi-mobile-data"},
    {id:"hotspot", term:"Hotspot", def:"A device or place that shares an internet connection over Wi-Fi. A phone’s personal hotspot shares its mobile data with other devices.", codex:"wifi-mobile-data"},
    {id:"modem", term:"Modem", def:"The device that translates between your provider’s line (fiber, cable, phone line or 5G) and ordinary network data. Often built into the router.", codex:"home-network"},
    {id:"mesh-wifi", term:"Mesh Wi-Fi", def:"Several matching units that work together to spread one Wi-Fi network across a large home.", codex:"home-network"},
@@ -1682,7 +1682,7 @@ ICA.addUnit({
      {t:"Bluetooth links two nearby devices; Wi-Fi connects to a router", ok:true, why:"Bluetooth links devices directly, like headphones, keyboards and watches; Wi-Fi connects devices to a router for network and internet access."},
      {t:"Bluetooth is a faster type of Wi-Fi", why:"They’re different technologies for different jobs."},
      {t:"Bluetooth only works through cables", why:"Bluetooth is wireless."},
-     {t:"Bluetooth connects your phone directly to the nearest mobile mast", why:"That’s mobile data."}
+     {t:"Bluetooth connects your phone directly to the nearest cell tower", why:"That’s mobile data."}
    ]},
    {id:"t1u4-q26", lesson:"t1u4-l3", level:3, q:"Priya connects her laptop to her phone’s hotspot. An hour later her phone warns that most of her monthly data is gone. What probably happened?", options:[
      {t:"The laptop ran big background downloads over her mobile data", ok:true, why:"Updates or cloud sync can run in the background. Laptops treat Wi-Fi as unlimited unless told otherwise. Marking the hotspot as metered or Low Data Mode prevents this."},

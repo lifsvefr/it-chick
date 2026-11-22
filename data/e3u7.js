@@ -1136,7 +1136,7 @@ ICA.addUnit({
    title:"Doing and happening: transitive and intransitive pairs, and ～てある",
    minutes:60,
    hook:{
-    q:"You come home to an empty flat and find the window open. Which sentence describes the window and tells you that someone opened it **on purpose**, for example to air the room?",
+    q:"You come home to an empty apartment and find the window open. Which sentence describes the window and tells you that someone opened it **on purpose**, for example to air the room?",
     options:["[窓]{まど}が[開]{あ}いています。", "[窓]{まど}が[開]{あ}けてあります。", "[窓]{まど}を[開]{あ}けています。", "[窓]{まど}が[開]{あ}きます。"],
     answer:1,
     reveal:"**[窓]{まど}が[開]{あ}けてあります.** Japanese has two verbs for opening: [開]{あ}ける, when someone opens something, and [開]{あ}く, when something opens. [開]{あ}いています only describes the state: the window is open, for whatever reason. [開]{あ}けてあります adds that someone opened it deliberately, and it has stayed that way. [窓]{まど}を[開]{あ}けています is about a person, not the window: someone is opening it, or is keeping it open. This lesson teaches the verb pairs and these three ways of describing a scene."
@@ -1564,7 +1564,7 @@ ICA.addUnit({
        table:[["Before し", "Example"], ["verb", "雨が[降]{ふ}っているし"], ["い-adjective", "[安]{やす}いし"], ["な-adjective + だ", "[静]{しず}か**だ**し"], ["noun + だ", "雨**だ**し"]]
       },
       {
-       ex:"この[店]{みせ}は[安]{やす}いし、おいしいし、よく[来]{き}ます。\nThis restaurant is cheap, and it’s good, so I come here a lot.\n\n[今日]{きょう}は雨だし、[寒]{さむ}いし、[家]{いえ}にいます。\nIt’s raining and it’s cold today, so I’m staying at home.\n\n[駅]{えき}から[近]{ちか}いし、[部屋]{へや}も[広]{ひろ}いし、このアパートにします。\nIt’s close to the station, and the rooms are spacious too, so I’ll take this flat.",
+       ex:"この[店]{みせ}は[安]{やす}いし、おいしいし、よく[来]{き}ます。\nThis restaurant is cheap, and it’s good, so I come here a lot.\n\n[今日]{きょう}は雨だし、[寒]{さむ}いし、[家]{いえ}にいます。\nIt’s raining and it’s cold today, so I’m staying at home.\n\n[駅]{えき}から[近]{ちか}いし、[部屋]{へや}も[広]{ひろ}いし、このアパートにします。\nIt’s close to the station, and the rooms are spacious too, so I’ll take this apartment.",
        label:"～し、～し"
       },
       "Notice the だ after nouns and な-adjectives, the opposite of のに, which takes な. And notice も: it often appears with し, meaning “also”.",
@@ -1735,10 +1735,10 @@ ICA.addUnit({
      type:"mcq",
      q:"「このアパートは[駅]{えき}から[近]{ちか}いし、[家賃]{やちん}も[安]{やす}いし、いいですね。」 ([家賃]{やちん} = rent) What is the speaker doing?",
      options:[
-      {t:"Giving several reasons why the flat is good", ok:true, why:"Right. し lists reasons one after another, and も adds “also”."},
-      {t:"Saying the flat is close but expensive", why:"[安]{やす}い means cheap, and し lists points that point the same way."},
-      {t:"Asking whether the flat is close and cheap", why:"There is no question here; ね asks for agreement with a statement."},
-      {t:"Complaining that the flat is close but still not good", why:"That kind of contrast would use のに. し lists positive points here."}
+      {t:"Giving several reasons why the apartment is good", ok:true, why:"Right. し lists reasons one after another, and も adds “also”."},
+      {t:"Saying the apartment is close but expensive", why:"[安]{やす}い means cheap, and し lists points that point the same way."},
+      {t:"Asking whether the apartment is close and cheap", why:"There is no question here; ね asks for agreement with a statement."},
+      {t:"Complaining that the apartment is close but still not good", why:"That kind of contrast would use のに. し lists positive points here."}
      ]
     },
     {
@@ -1781,7 +1781,7 @@ ICA.addUnit({
     {
      id:"e3u7-l5-x8",
      type:"mcq",
-     q:"A shop assistant needs a customer to wait a moment. What is the polite thing to say?",
+     q:"A salesclerk needs a customer to wait a moment. What is the polite thing to say?",
      options:[
       {t:"[少々]{しょうしょう}お[待]{ま}ちください。", ok:true, why:"Right. お + stem + ください is the respectful request you hear in every shop."},
       {t:"[少々]{しょうしょう}お[待]{ま}ちします。", why:"お～する is humble: this means “I will wait a moment”."},
@@ -2420,7 +2420,7 @@ ICA.addUnit({
       {t:"「[今日]{きょう}のゼミは[休講]{きゅうこう}でそうです。」", why:"There is no で here. Plain noun + だ + そうです."}]},
     {id:"e3u7-cp06", lesson:"e3u7-l4", level:2, q:"Fumiko set out chairs in rows for the neighborhood meeting. When Cheska comes in, which sentence shows it was done on purpose?", options:[
       {t:"「あ、いすが[並]{なら}んでいます。」", why:"Intransitive + ている says only that the chairs are in rows now. It doesn’t say anyone did it on purpose."},
-      {t:"「あ、いすが[並]{なら}びました。」", why:"[並]{なら}ぶ is intransitive, “line up”, as people do in a queue. It doesn’t show that someone set the chairs out."},
+      {t:"「あ、いすが[並]{なら}びました。」", why:"[並]{なら}ぶ is intransitive, “line up”, as people do in a line. It doesn’t show that someone set the chairs out."},
       {t:"「あ、いすが[並]{なら}べてあります。」", ok:true, why:"Transitive + てある (with が) describes a state that someone created on purpose."},
       {t:"「あ、いすが[並]{なら}べています。」", why:"[並]{なら}べる is transitive and needs を: いすを[並]{なら}べています, “someone is setting out the chairs”."}]},
     {id:"e3u7-cp07", lesson:"e3u7-l5", level:3, q:"Rodrigo’s teacher offers to show him her photos of Mexico. How does he say, humbly, “May I look at them?”", options:[

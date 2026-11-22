@@ -248,7 +248,7 @@ ICA.addUnit({
       {t:"ここに[座]{すわ}っています。", why:"This says “I am sitting here” (or “someone is sitting here”). It isn’t a request at all."}
     ]},
     {id:"e3u3-l2-x2", type:"sort", q:"Which pattern fits each situation?", buckets:["～てください (please do)","～てもいいですか (may I?)","～てはいけません (must not)"], items:[
-      {t:"You want a shop assistant to wait a moment.", b:0, why:"You are asking someone else to do something: ちょっと[待]{ま}ってください。"},
+      {t:"You want a salesclerk to wait a moment.", b:0, why:"You are asking someone else to do something: ちょっと[待]{ま}ってください。"},
       {t:"A teacher tells the class to write their names.", b:0, why:"An instruction to others: [名前]{なまえ}を[書]{か}いてください。"},
       {t:"You want to know whether you can open the window.", b:1, why:"You are asking permission for yourself: [窓]{まど}を[開]{あ}けてもいいですか。"},
       {t:"You’d like to take a photo of a friend’s cake.", b:1, why:"Permission again: [写真]{しゃしん}をとってもいいですか。"},
@@ -675,7 +675,7 @@ ICA.addUnit({
       {lead:"Time uses two counters you met in Lesson 4: [時]{じ} for the hour and [分]{ふん} for the minutes."},
       {ex:"A: [今]{いま}、[何時]{なんじ}ですか。\nB: [三時十五分]{さんじじゅうごふん}です。\nA: What time is it now? B: It’s 3:15.", label:"[何時]{なんじ}ですか"},
       {table:[["Time","Reading","Watch out"],["4:00","[四時]{よじ}","not よんじ"],["7:00","[七時]{しちじ}","usually しち (ななじ is also heard)"],["9:00","[九時]{くじ}","く, not きゅう"],["4:04","[四時四分]{よじよんぷん}","よ for the hour, よん for the minutes"],["9:09","[九時九分]{くじきゅうふん}","く for the hour, きゅう for the minutes"],["10:10","[十時十分]{じゅうじじゅっぷん}","also じっぷん"]]},
-      "[半]{はん} means half past: [六時半]{ろくじはん} (6:30). [午前]{ごぜん} (a.m.) and [午後]{ごご} (p.m.) come **before** the time: [午後二時]{ごごにじ} (2 p.m.). Timetables and many digital displays also use the 24-hour clock: [十八時]{じゅうはちじ} is 6 p.m.",
+      "[半]{はん} means half past: [六時半]{ろくじはん} (6:30). [午前]{ごぜん} (a.m.) and [午後]{ごご} (p.m.) come **before** the time: [午後二時]{ごごにじ} (2 p.m.). Schedules and many digital displays also use the 24-hour clock: [十八時]{じゅうはちじ} is 6 p.m.",
       "ごろ after a time means “at about”: [七時]{しちじ}ごろ[起]{お}きます (I get up at about seven).",
       "Words for times, days and dates, such as [三時]{さんじ}, [明日]{あした} and [毎朝]{まいあさ}, are called [[time-expression|time expressions]]. Where they go and which particle they take is explained below."
     ]},
@@ -716,7 +716,7 @@ ICA.addUnit({
       "[毎]{まい} means “every”: [毎日]{まいにち} (every day), [毎朝]{まいあさ} (every morning), [毎晩]{まいばん} (every evening), [毎週]{まいしゅう} (every week), [毎月]{まいつき} (every month; also まいげつ), [毎年]{まいとし} (every year; also まいねん). Like [明日]{あした}, they don’t take に."
     ]},
     {h:"Worked example: reading a notice", body:[
-      "Time words come together in notices and timetables. Here is a notice of the kind you might see at a library entrance, followed by how to read it.",
+      "Time words come together in notices and schedules. Here is a notice of the kind you might see at a library entrance, followed by how to read it.",
       {ex:"[図書館]{としょかん}のお[知]{し}らせ\n[開館]{かいかん}[時間]{じかん}：[午前]{ごぜん}[九時]{くじ}～[午後]{ごご}[八時]{はちじ}\n[休館日]{きゅうかんび}：[毎週]{まいしゅう}[月曜日]{げつようび}\n[12月]{じゅうにがつ}[29日]{にじゅうくにち}～[1月]{いちがつ}[3日]{みっか}はお[休]{やす}みです。", label:"A notice"},
       {ol:[
         "お[知]{し}らせ means “notice” or “announcement”. The heading tells you it is the library’s notice.",
@@ -724,7 +724,7 @@ ICA.addUnit({
         "[休館日]{きゅうかんび} is “closed day”. [毎週]{まいしゅう}[月曜日]{げつようび} means every Monday.",
         "The last line uses ～ again for a range of dates: from 29 December to 3 January (じゅうにがつにじゅうくにちから、いちがつみっかまで) the library is closed. This is the New Year holiday, when many offices in Japan close."
       ]},
-      "Notice that you didn’t need every kanji to get the meaning. The numbers, [時]{じ}, [月]{がつ}, [日]{にち} and the day of the week carried most of it. That is a useful reading strategy for signs and timetables, and Unit 4 practices it with more real-world texts."
+      "Notice that you didn’t need every kanji to get the meaning. The numbers, [時]{じ}, [月]{がつ}, [日]{にち} and the day of the week carried most of it. That is a useful reading strategy for signs and schedules, and Unit 4 practices it with more real-world texts."
     ]},
     {h:"Keep it going: review and the Kanji Lab", body:[
       "You have now met most of the N5 grammar: Unit 2’s sentence basics, particles and ます verbs, and this unit’s て-form, plain forms, counters and time. {{n5-grammar-patterns}} puts all the patterns on one page, and {{time-and-dates}} collects this lesson’s words.",
@@ -796,7 +796,7 @@ ICA.addUnit({
    apply:{
     intro:"Use time words about your own week. Say them aloud as you write. Keep the notes for yourself.",
     tasks:[
-     {t:"Write your weekly timetable", how:[
+     {t:"Write your weekly schedule", how:[
        "Write five sentences about your normal week with days, times and から～まで, for example: [月曜日]{げつようび}から[金曜日]{きんようび}まで、[九時]{くじ}から[五時]{ごじ}まで[働]{はたら}きます。",
        "Add when you get up and go to bed, with に and ごろ.",
        "Check every reading of 4, 7 and 9 against the tables."
@@ -815,7 +815,7 @@ ICA.addUnit({
        "Note which numbers, days or time words you keep forgetting, and say them aloud in a sentence."
      ], write:"Days I reviewed… Words I keep forgetting…"}
     ],
-    proof:"A weekly timetable with times and days, five important dates with their readings, ten sentences about how often and how long, and a week of five-minute Kanji Lab reviews."
+    proof:"A weekly schedule with times and days, five important dates with their readings, ten sentences about how often and how long, and a week of five-minute Kanji Lab reviews."
    },
    read:[
     {book:"taekim", where:"Essential Grammar, “Numbers and Counting”, sections “Dates”, “Time” and “A Span of Time”", note:"Dates with their special readings, clock times and durations."},
@@ -1014,7 +1014,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Variant readings.** [七日]{なのか} is also read なぬか. [毎月]{まいつき} is also まいげつ, and [毎年]{まいとし} is also まいねん. [明日]{あした} is あす in formal speech. In business, [一日]{いっぴ} is sometimes used for the 1st, to avoid confusion with [一日]{いちにち} (one day). JMdict also lists にじゅうにち for [二十日]{はつか}, marked as an irregular reading; はつか is the standard reading for the 20th.",
-      "**The 24-hour clock** is standard in timetables, schedules and many digital displays: [十八時]{じゅうはちじ} is 6 p.m. Midnight is [午前零時]{ごぜんれいじ}, and noon is [正午]{しょうご} or [午後零時]{ごごれいじ}.",
+      "**The 24-hour clock** is standard in train schedules, class schedules and many digital displays: [十八時]{じゅうはちじ} is 6 p.m. Midnight is [午前零時]{ごぜんれいじ}, and noon is [正午]{しょうご} or [午後零時]{ごごれいじ}.",
       "**Era years.** Official forms in Japan often use era names alongside, or instead of, the Western year: the Reiwa era ([令和]{れいわ}) began in 2019, so 2026 is [令和]{れいわ}8[年]{ねん}. Expect both on documents.",
       "**The school and business year** ([年度]{ねんど}) in Japan usually runs from April to March, so [新年度]{しんねんど} (the new school or business year) starts in April.",
       "**ぜんぜん + positive.** In casual modern speech, ぜんぜん often intensifies positive words (ぜんぜん[大丈夫]{だいじょうぶ}, totally fine). It is common, but opinions on it differ, so keep the negative pairing in polite speech, writing and tests.",

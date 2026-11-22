@@ -102,7 +102,7 @@ ICA.addUnit({
       {ol:[
         "On github.com, open your profile picture menu, then **Settings**.",
         "In the “Access” section of the sidebar, select **Emails**.",
-        "Tick **Keep my email addresses private**. Below it, GitHub shows your noreply address. For accounts created since July 2017 it looks like `12345678+your-username@users.noreply.github.com`.",
+        "Check **Keep my email addresses private**. Below it, GitHub shows your noreply address. For accounts created since July 2017 it looks like `12345678+your-username@users.noreply.github.com`.",
         "Copy it and use it in `git config --global user.email \"…\"`."
       ]},
       "Check your settings at any time:",
@@ -113,7 +113,7 @@ ICA.addUnit({
     {h:"If you’d rather not type commands", body:[
       "The command line is worth learning, because it works the same everywhere and every guide uses it. But you don’t need it to use Git:",
       {list:[
-        "**GitHub Desktop** is GitHub’s free app for **Windows and macOS** (not Linux or ChromeOS). It shows changed files, lets you tick what goes into a commit, write a message, and push, all with buttons. It works with GitHub repositories and with others.",
+        "**GitHub Desktop** is GitHub’s free app for **Windows and macOS** (not Linux or ChromeOS). It shows changed files, lets you check what goes into a commit, write a message, and push, all with buttons. It works with GitHub repositories and with others.",
         "**Code editors** such as VS Code have Git built in: a **Source Control** panel lists changes and makes commits, using the Git you installed.",
         "**GitHub’s website** can edit files, make commits and branches, and handle pull requests in any browser, including a phone’s. The **GitHub Mobile** app (iPhone and Android) is mainly for following and reviewing work: notifications, issues, pull requests, and editing files within a pull request."
       ]},
@@ -185,10 +185,10 @@ ICA.addUnit({
        phone:["Git itself doesn’t come with iPhones or Android phones, so set up the GitHub side today.","If you don’t have a GitHub account yet, create one at github.com in your browser. Turn on two-factor authentication when it asks.","Optional: install the **GitHub** app from the App Store (iPhone) or Google Play (Android) and sign in."]
      }, write:"Which version of Git do you have (or which device will you use for Git)?"},
      {t:"Introduce yourself to Git, privately", how:{
-       win:["On github.com, open your profile picture menu → **Settings** → **Emails** (in the Access section) and tick **Keep my email addresses private**. Copy the noreply address shown.","In PowerShell or Git Bash, run `git config --global user.name \"Your Name\"`.","Run `git config --global user.email \"…\"` with your noreply address inside the quotes.","Run `git config --global init.defaultBranch main`, then `git config --global --list` to check all three."],
-       mac:["On github.com, open your profile picture menu → **Settings** → **Emails** and tick **Keep my email addresses private**. Copy the noreply address.","In Terminal, run `git config --global user.name \"Your Name\"`, then `git config --global user.email \"…\"` with your noreply address.","Run `git config --global init.defaultBranch main`.","Run `git config --global --list` and check the three lines."],
-       chromeos:["On github.com in Chrome, open your profile picture menu → **Settings** → **Emails** and tick **Keep my email addresses private**. Copy the noreply address.","In the Linux Terminal, run `git config --global user.name \"Your Name\"` and `git config --global user.email \"…\"` with your noreply address.","Run `git config --global init.defaultBranch main`, then `git config --global --list`.","To paste into the Linux Terminal, use [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:V]]."],
-       phone:["In your phone’s browser, sign in at github.com, open your profile picture menu → **Settings** → **Emails**. (If the menu is hard to reach, use **Request Desktop Website** in Safari’s page menu, or **Desktop site** in Chrome’s **⋮** menu.)","Tick **Keep my email addresses private** and note your noreply address for when you use a computer.","This also protects your email in commits you make on the website."]
+       win:["On github.com, open your profile picture menu → **Settings** → **Emails** (in the Access section) and check **Keep my email addresses private**. Copy the noreply address shown.","In PowerShell or Git Bash, run `git config --global user.name \"Your Name\"`.","Run `git config --global user.email \"…\"` with your noreply address inside the quotes.","Run `git config --global init.defaultBranch main`, then `git config --global --list` to check all three."],
+       mac:["On github.com, open your profile picture menu → **Settings** → **Emails** and check **Keep my email addresses private**. Copy the noreply address.","In Terminal, run `git config --global user.name \"Your Name\"`, then `git config --global user.email \"…\"` with your noreply address.","Run `git config --global init.defaultBranch main`.","Run `git config --global --list` and check the three lines."],
+       chromeos:["On github.com in Chrome, open your profile picture menu → **Settings** → **Emails** and check **Keep my email addresses private**. Copy the noreply address.","In the Linux Terminal, run `git config --global user.name \"Your Name\"` and `git config --global user.email \"…\"` with your noreply address.","Run `git config --global init.defaultBranch main`, then `git config --global --list`.","To paste into the Linux Terminal, use [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:V]]."],
+       phone:["In your phone’s browser, sign in at github.com, open your profile picture menu → **Settings** → **Emails**. (If the menu is hard to reach, use **Request Desktop Website** in Safari’s page menu, or **Desktop site** in Chrome’s **⋮** menu.)","Check **Keep my email addresses private** and note your noreply address for when you use a computer.","This also protects your email in commits you make on the website."]
      }, write:"Write your noreply address here so it’s handy later."},
      {t:"Read a real project’s history", how:["In a browser (phone or computer), open one of your own repositories from Unit 5, or any public project on GitHub.","Find the clock icon with a number of **commits** near the top of the file list, and open it.","Pick three commits. For each, read the message, the author, the date and the short hash. Open one and look at the green (added) and red (removed) lines.","Decide which of the three messages would be most useful to someone in a year’s time, and why."], write:"Copy one good commit message and one unclear one. What makes the difference?"}
    ], proof:"`git --version` working on your computer (or a GitHub account ready on your phone), your name and noreply email set in Git, and notes on three real commits you read."},
@@ -632,10 +632,10 @@ ICA.addUnit({
         "`git clone` the site’s repository.",
         "Open `index.html` in a browser straight from the folder to preview your changes before anyone else sees them.",
         "Commit, then `git push`.",
-        "[[github-pages|GitHub Pages]] notices the new commit on the publishing branch and deploys it, just like an upload on the website. Watch the **Actions** tab for the green tick."
+        "[[github-pages|GitHub Pages]] notices the new commit on the publishing branch and deploys it, just like an upload on the website. Watch the **Actions** tab for the green check mark."
       ]},
       "This is the real advantage: you can make ten commits, preview each, and push only when the site is right. And if a push breaks something, `git revert` the bad commit and push again; Pages publishes the fixed version.",
-      {key:"With Git, publishing is “commit, push, wait for the green tick”. The live site always matches the latest commit on the publishing branch."}
+      {key:"With Git, publishing is “commit, push, wait for the green check mark”. The live site always matches the latest commit on the publishing branch."}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -687,7 +687,7 @@ ICA.addUnit({
       {t:"Wait an hour and push again", why:"The rejection isn’t temporary. Until she has the other commits locally, it will keep happening."}
     ]},
     {id:"t2u7-l4-x7", type:"mcq", q:"Tomás pushes a commit to his GitHub Pages repository’s `main` branch, which is the publishing source. What happens next?", options:[
-      {t:"Pages starts a new deploy, and the live site updates", ok:true, why:"Right. When the run in the Actions tab gets a green tick, the live site shows the new version. A push is a new commit on the publishing branch, exactly like a commit made on the website."},
+      {t:"Pages starts a new deploy, and the live site updates", ok:true, why:"Right. When the run in the Actions tab gets a green check mark, the live site shows the new version. A push is a new commit on the publishing branch, exactly like a commit made on the website."},
       {t:"Nothing until he presses Publish in Settings → Pages", why:"Once Pages is set up, every new commit on the publishing branch deploys automatically."},
       {t:"The site updates instantly, with no deploy", why:"There is a deploy run, which usually takes a few minutes."},
       {t:"Only files edited on the website are published; pushed files are ignored", why:"Pages doesn’t care how a commit was made. Pushed commits deploy the same way."}
@@ -703,10 +703,10 @@ ICA.addUnit({
      }, write:"Which sign-in method did you choose, and why?"},
      {t:"Publish your practice repository", how:["On github.com, create a new **empty** repository called `garden-club` (no README, no license, no `.gitignore`).","In your local `garden-club` folder, run the three commands GitHub shows under “push an existing repository”: `git remote add origin …`, `git branch -M main`, `git push -u origin main`.","Sign in if asked (a browser window, or your token as the “password”).","Reload the page on GitHub and open the commit list: your commit messages are there.","On a phone: open the repository page in GitHub Mobile or the browser and read the commit history you pushed (or, if you have no computer, the history of your Unit 5 site)."], write:"Paste the last lines of your push output."},
      {t:"Update your Pages site from your computer", how:{
-       win:["On your Unit 5 site’s repository page, select **Code**, copy the HTTPS address, then run `git clone` with it in a folder such as Documents.","Run `cd` into the new folder. Change something small in `index.html` and open the file in your browser to preview it.","Commit with a clear message, then `git push`.","Open the repository’s **Actions** tab, wait for the green tick, then reload your live site."],
-       mac:["Copy your Unit 5 site’s HTTPS address from the **Code** button and run `git clone` with it.","`cd` into the folder, make a small change, and preview it by double-clicking `index.html` in Finder.","Commit, then `git push`.","Watch the **Actions** tab for the green tick, then reload your site."],
-       chromeos:["Copy your Unit 5 site’s HTTPS address from the **Code** button and run `git clone` with it in the Linux Terminal.","`cd` into the folder and edit `index.html`. To preview, open the Files app, find it under **Linux files**, and open it with Chrome.","Commit, then `git push`.","Watch the **Actions** tab for the green tick."],
-       phone:["Open your Unit 5 site’s repository in the browser and open `index.html`.","Tap the **pencil**, make a small change, then **Commit changes…** with a clear message, committing directly to `main`.","Open the **Actions** tab and wait for the green tick, then reload your live site.","This is the same commit-then-deploy cycle a push triggers from a computer."]
+       win:["On your Unit 5 site’s repository page, select **Code**, copy the HTTPS address, then run `git clone` with it in a folder such as Documents.","Run `cd` into the new folder. Change something small in `index.html` and open the file in your browser to preview it.","Commit with a clear message, then `git push`.","Open the repository’s **Actions** tab, wait for the green check mark, then reload your live site."],
+       mac:["Copy your Unit 5 site’s HTTPS address from the **Code** button and run `git clone` with it.","`cd` into the folder, make a small change, and preview it by double-clicking `index.html` in Finder.","Commit, then `git push`.","Watch the **Actions** tab for the green check mark, then reload your site."],
+       chromeos:["Copy your Unit 5 site’s HTTPS address from the **Code** button and run `git clone` with it in the Linux Terminal.","`cd` into the folder and edit `index.html`. To preview, open the Files app, find it under **Linux files**, and open it with Chrome.","Commit, then `git push`.","Watch the **Actions** tab for the green check mark."],
+       phone:["Open your Unit 5 site’s repository in the browser and open `index.html`.","Tap the **pencil**, make a small change, then **Commit changes…** with a clear message, committing directly to `main`.","Open the **Actions** tab and wait for the green check mark, then reload your live site.","This is the same commit-then-deploy cycle a push triggers from a computer."]
      }, write:"What did you change, and how long did the deploy take?"}
    ], proof:"Git signed in to GitHub without your password, a practice repository pushed with its history visible on GitHub, and your Pages site updated by a commit you made (pushed from a computer, or made on the website on a phone)."},
    read:[
@@ -1327,7 +1327,7 @@ ICA.addUnit({
    ]},
    {id:"t2u7-q08", lesson:"t2u7-l1", level:2, q:"Which of these projects suits Git best?", options:[
      {t:"A website made of HTML, CSS and a few images", ok:true, why:"Text files are where Git shines: it can show exactly which lines changed."},
-     {t:"A folder of 400 GB of holiday videos", why:"Git struggles with large binary files: it can’t show what changed, and every version stays in every copy."},
+     {t:"A folder of 400 GB of vacation videos", why:"Git struggles with large binary files: it can’t show what changed, and every version stays in every copy."},
      {t:"A single photo you edit once a year", why:"Git can store it, but can’t show changes inside it; ordinary backups or cloud version history suit it better."},
      {t:"A video game save file that changes every second", why:"Constant binary changes are a poor fit for deliberate, message-based commits."}
    ]},
@@ -1503,7 +1503,7 @@ ICA.addUnit({
      {t:"GitHub deletes the README when you push", why:"GitHub doesn’t delete it; the push is refused instead."}
    ]},
    {id:"t2u7-q37", lesson:"t2u7-l4", level:1, q:"How do you open github.dev for a repository?", options:[
-     {t:"Press the full stop (.) key on its page", ok:true, why:"You can also change `github.com` to `github.dev` in the address. Both open the browser version of the VS Code editor."},
+     {t:"Press the period (.) key on its page", ok:true, why:"You can also change `github.com` to `github.dev` in the address. Both open the browser version of the VS Code editor."},
      {t:"Install it from your phone’s or computer’s app store", why:"It runs in the browser; there’s nothing to install."},
      {t:"Run `git dev` in a terminal", why:"There’s no such command."},
      {t:"It only opens from GitHub Desktop", why:"It’s opened from the website."}

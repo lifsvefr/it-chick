@@ -112,7 +112,7 @@ ICA.addUnit({
    apply:{intro:"Practice the sociological imagination on your own life and surroundings. Keep notes private unless you choose to share them, and don’t record or photograph anyone.", tasks:[
      {t:"Map one of your own decisions", how:["Choose a decision you’ve made: what you studied, a job you took, where you live, how you spend weekends.","Write two or three personal reasons for it.","Now write the social side: what in your family, community, country, economy or historical moment made that choice possible, likely or hard?","Finally, ask: would someone of a different age, gender, class or country have faced the same options?"], write:"My decision… Personal reasons… Social forces that shaped it… How it might differ for someone else…"},
      {t:"Turn a trouble into an issue", how:["Find a news story about one person’s hardship: a high bill, a lost job, a long wait for treatment.","Write one sentence describing it as a personal trouble.","Then write one or two sentences describing the public issue behind it: how many people might face the same thing, and why."], write:"The story… As a personal trouble… As a public issue…"},
-     {t:"Notice unwritten rules", how:["Spend 15 minutes somewhere public and ordinary: a queue, a bus, a market, a café, a waiting room.","Watch quietly, without recording anyone. List five unwritten rules people seem to follow (where they stand, how they speak, how they take turns).","For each rule, note one sign that people follow it, and what might happen if someone broke it."], write:"Where I was… Rule 1… Rule 2… What happens if someone breaks one…"}
+     {t:"Notice unwritten rules", how:["Spend 15 minutes somewhere public and ordinary: a waiting line, a bus, a market, a café, a waiting room.","Watch quietly, without recording anyone. List five unwritten rules people seem to follow (where they stand, how they speak, how they take turns).","For each rule, note one sign that people follow it, and what might happen if someone broke it."], write:"Where I was… Rule 1… Rule 2… What happens if someone breaks one…"}
    ], proof:"Notes connecting one of your own decisions to wider social forces, a news story rewritten as both a personal trouble and a public issue, and a list of five unwritten rules you observed."},
    read:[
      {book:"soc", where:"Chapter 1, Section 1.1 “What Is Sociology?” (on LibreTexts: 1.2)", note:"Covers society, culture, the sociological imagination and studying patterns."},
@@ -269,7 +269,7 @@ ICA.addUnit({
         "[[structural-functionalism|Structural functionalism]] (macro) sees society as connected parts that each help keep the whole stable. Parsons saw a healthy society as balanced, a state later sociologists called *dynamic equilibrium*. Merton separated [[manifest-function|manifest functions]] (intended: schools teach skills), [[latent-function|latent functions]] (unintended: students meet lifelong friends) and [[dysfunction|dysfunctions]] (harmful: exam pressure that pushes students out). **Critique:** weak on change and conflict, sometimes circular, and it can make inequality look necessary. (1.3)",
         "[[conflict-theory|Conflict theory]] (macro) sees society as competition for scarce resources and asks **who benefits, and who pays?** It starts with Marx. Weber added status and political power to economic class, and Du Bois analyzed racial inequality. **Critique:** it can overlook the cooperation and stability that are also real. (1.3)",
         "[[symbolic-interactionism|Symbolic interactionism]] (micro) holds that people act on meanings, and that meanings are made and changed in interaction. White means weddings in many Western traditions and has long meant mourning in parts of East Asia. Mead is seen as its founder; his student Herbert Blumer named it in 1937. **Critique:** it can neglect large structures and power, and its small studies are hard to generalize or keep objective. (1.3)",
-        "Erving Goffman’s [[dramaturgy|dramaturgical analysis]] treats life as theater (*The Presentation of Self in Everyday Life*, 1956, expanded 1959). On the **front stage** we manage the impression we give, like a shop assistant’s cheerful greeting. When we are **backstage** we relax, like staff joking in the break room. (1.3; the stage labels are added)",
+        "Erving Goffman’s [[dramaturgy|dramaturgical analysis]] treats life as theater (*The Presentation of Self in Everyday Life*, 1956, expanded 1959). On the **front stage** we manage the impression we give, like a salesclerk’s cheerful greeting. When we are **backstage** we relax, like staff joking in the break room. (1.3; the stage labels are added)",
         "[[feminist-theory|Feminist theory]] puts gender at the center: how societies organize relationships between genders and produce inequality. The book places it in the conflict tradition, citing Janet Saltzman Chafetz. It works at both levels, from pay gaps and laws to who does unpaid care at home. **Critique:** early versions treated white, middle-class women’s experience as universal. (1.3)",
         "[[intersectionality|Intersectionality]] is a term introduced by the legal scholar Kimberlé Crenshaw in 1989. It holds that categories such as gender, race, class, age and migration status combine, creating experiences no single category explains. A hospital with many women senior doctors and many minority-ethnic senior doctors may still have almost no senior doctors who are both. **Debate:** measuring many combined groups is hard, and some argue the idea is stretched too widely. (beyond the book)",
         "The perspectives aren’t rival answers to one quiz question. Each asks something different, so researchers combine them. Functionalism asks what a festival does for a town; conflict theory asks who is priced out of it. The book also mentions critical theory and critical race theory. (1.3)"
@@ -300,7 +300,7 @@ ICA.addUnit({
       ["Manifest function","A university’s stated aim of teaching students a profession","It is the intended, recognized purpose."],
       ["Latent function","Students meet their future business partners at university","It’s a real but unintended consequence."],
       ["Dysfunction","A strict exam system leads many students to drop out and leaves them without qualifications","It has undesirable consequences for how society works."],
-      ["Front stage","A shop assistant’s cheerful greeting to customers","Goffman’s front stage is where we perform for an audience."],
+      ["Front stage","A salesclerk’s cheerful greeting to customers","Goffman’s front stage is where we perform for an audience."],
       ["Backstage","Staff relaxing and joking in the break room","Backstage is out of the audience’s view, where people drop the performance."],
       ["Intersectionality","Discovering that older migrant women face barriers that older people, migrants or women as a whole don’t face","It reveals experiences produced by the combination of categories."]
     ]},
@@ -455,7 +455,7 @@ ICA.addUnit({
       {t:"Being old", why:"Age is a different variable. Many older people are not isolated."},
       {t:"Whatever the interviewer thinks after meeting the person", why:"That depends on each interviewer’s judgment, so it wouldn’t be reliable or easy to repeat."}
     ]},
-    {id:"e2u1-l4-x8", type:"explain", q:"A school finds that students who eat breakfast get higher marks, and announces that ‘breakfast causes better marks’. Explain why this correlation doesn’t prove cause, using the three things needed to claim causation.", size:"3–5 sentences", hint:"Association, time order, and no better explanation.", model:"The finding shows a correlation: breakfast and marks change together. To claim cause, you need three things. The first, association, is there. The second is time order: did students’ marks rise after they started eating breakfast, or were they already higher before? The third is no better explanation. A hidden third variable, such as family income or a stable home routine, could drive both breakfast and marks, which would make the link spurious. Until these are ruled out, the school should say breakfast is linked to higher marks, not that it causes them.", points:["Calls the finding a correlation", "Raises time order or reverse direction", "Names a possible third variable that could drive both", "Says what claim the evidence does support"]}
+    {id:"e2u1-l4-x8", type:"explain", q:"A school finds that students who eat breakfast get higher grades, and announces that ‘breakfast causes better grades’. Explain why this correlation doesn’t prove cause, using the three things needed to claim causation.", size:"3–5 sentences", hint:"Association, time order, and no better explanation.", model:"The finding shows a correlation: breakfast and grades change together. To claim cause, you need three things. The first, association, is there. The second is time order: did students’ grades rise after they started eating breakfast, or were they already higher before? The third is no better explanation. A hidden third variable, such as family income or a stable home routine, could drive both breakfast and grades, which would make the link spurious. Until these are ruled out, the school should say breakfast is linked to higher grades, not that it causes them.", points:["Calls the finding a correlation", "Raises time order or reverse direction", "Names a possible third variable that could drive both", "Says what claim the evidence does support"]}
    ],
    apply:{intro:"Practice thinking like a researcher with material from everyday life.", tasks:[
      {t:"Catch a correlation dressed as a cause", how:["Look for a headline or social media post that claims one thing causes another (“coffee drinkers live longer”, “children who play sport earn more”).","Write down the correlation the study actually found.","List at least two possible third variables, and consider whether the cause could run the other way.","Rewrite the headline so it is accurate."], write:"Original headline… What was actually found… Possible third variables… Reverse causation?… My accurate headline…"},
@@ -525,7 +525,7 @@ ICA.addUnit({
       "\n",
       {t:"2. Don’t you agree that the council has neglected our streets?", flag:true, why:"A leading question: it pushes people toward “yes”. Better: “How would you rate the condition of the streets?”"},
       "\n",
-      {t:"3. How satisfied are you with street lighting and rubbish collection?", flag:true, why:"Double-barrelled: someone could be happy with one and unhappy with the other. Ask two separate questions."},
+      {t:"3. How satisfied are you with street lighting and garbage collection?", flag:true, why:"Double-barrelled: someone could be happy with one and unhappy with the other. Ask two separate questions."},
       "\n",
       {t:"4. How often do you walk in the neighborhood after dark? (Never / Rarely / Sometimes / Often)", flag:false, why:"Clear, neutral, with balanced answer options."},
       "\n",
@@ -654,7 +654,7 @@ ICA.addUnit({
       "Sociology is the systematic study of society and social interaction. It asks how people live together: why groups form, how rules develop, why some people have more opportunities than others, and how societies change.",
       "Think of it as noticing the water you swim in. Much of what feels natural (how you greet people, what counts as a good job, who does the housework) is shaped by the groups and society around you. Sociology makes those patterns visible.",
       "Two key words: a [[society]] is a group of people who live in an area, interact and share a culture; [[culture]] is that group’s shared practices, values and beliefs.",
-      "You don’t need special equipment to start thinking sociologically. Any queue, classroom, workplace or family dinner is full of patterns waiting to be noticed and explained.",
+      "You don’t need special equipment to start thinking sociologically. Any waiting line, classroom, workplace or family dinner is full of patterns waiting to be noticed and explained.",
       {key:"Sociology studies the patterns of social life, and it does so systematically, with evidence others can check."}
      ],
      builder:[
@@ -701,7 +701,7 @@ ICA.addUnit({
         "**Structure:** what institutions, rules, markets or technologies shape it?",
         "**History:** how has it changed over time, and what would it have looked like a generation ago or in another country?"
       ]},
-      {ex:"Mei struggles to afford housing near her job. As a personal trouble, she could look for cheaper flats or ask for a raise. Using the sociological imagination, she notices that many workers in her city face the same problem, that housing costs have risen faster than wages, and that planning rules and investment patterns play a part. Her trouble is real, and it is also a public issue.", label:"Worked example"},
+      {ex:"Mei struggles to afford housing near her job. As a personal trouble, she could look for cheaper apartments or ask for a raise. Using the sociological imagination, she notices that many workers in her city face the same problem, that housing costs have risen faster than wages, and that planning rules and investment patterns play a part. Her trouble is real, and it is also a public issue.", label:"Worked example"},
       "The tool works for good news as well as bad. More women going to university, or people living longer, are also patterns with social causes that the sociological imagination can explain."
      ],
      pro:[
@@ -880,7 +880,7 @@ ICA.addUnit({
         "Meanings are handled and modified through people’s own interpretation."
       ]},
       "{{erving-goffman|Erving Goffman}}’s *The Presentation of Self in Everyday Life* (1956; expanded edition 1959) developed dramaturgical analysis. Charles Horton Cooley’s [[looking-glass-self|looking-glass self]], the idea that we see ourselves through others’ reactions, belongs to the same tradition.",
-      {ex:"In a job interview by video call, Priya chooses a tidy background, dresses formally from the waist up and speaks carefully: front stage. After the call she changes into comfortable clothes and laughs about it with her flatmate: backstage.", label:"Worked example: dramaturgy"},
+      {ex:"In a job interview by video call, Priya chooses a tidy background, dresses formally from the waist up and speaks carefully: front stage. After the call she changes into comfortable clothes and laughs about it with her roommate: backstage.", label:"Worked example: dramaturgy"},
       "Interactionists stress that meanings can change. A gesture, a word or a style of clothing can shift meaning across generations, or move from insult to badge of pride. Research in this tradition asks how people negotiate such meanings in daily life: at work, in families, online and in public spaces."
      ],
      pro:[
@@ -1414,7 +1414,7 @@ ICA.addUnit({
    {id:"e2u1-q04", lesson:"e2u1-l1", level:2, q:"Which situation is best described as a public issue rather than a personal trouble?", options:[
      {t:"Across a country, many small farmers lose land after trade rules change.", ok:true, why:"Many people are affected at once by a structural cause, the trade rules. That is a public issue."},
      {t:"Lucía loses her phone on a bus.", why:"One event within one person’s life is a personal trouble."},
-     {t:"Kenji and his flatmate argue for the third time this week about the washing-up.", why:"A disagreement in one household, with no wider cause described, is a personal trouble."},
+     {t:"Kenji and his roommate argue for the third time this week about the washing-up.", why:"A disagreement in one household, with no wider cause described, is a personal trouble."},
      {t:"Amara catches a cold after walking home in the rain.", why:"A one-off personal event with an individual cause is a personal trouble."}
    ]},
    {id:"e2u1-q05", lesson:"e2u1-l1", level:3, q:"Dmitri says: “Durkheim showed suicide follows social patterns, so I can predict which of my neighbours will take their own life.” What is wrong with his reasoning?", options:[

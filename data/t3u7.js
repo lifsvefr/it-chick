@@ -199,7 +199,7 @@ ICA.addUnit({
         ["`%%`","Remainder","`17 %% 5` → 2"]
       ]},
       "R follows the usual order of operations: brackets first, then powers, then `*` and `/`, then `+` and `-`. So `2 + 3 * 4` is 14, and `(2 + 3) * 4` is 20. When in doubt, add brackets: they never hurt.",
-      "Two habits to know. R always uses a **full stop** for decimals (`12.5`), whatever your computer’s language settings; a comma separates things, so `12,5` is an error. And R *shows* about 7 significant digits (`44.66667`) but *keeps* many more, so later sums stay accurate."
+      "Two habits to know. R always uses a **period** for decimals (`12.5`), whatever your computer’s language settings; a comma separates things, so `12,5` is an error. And R *shows* about 7 significant digits (`44.66667`) but *keeps* many more, so later sums stay accurate."
     ]},
     {h:"Objects: giving a value a name", body:[
       "Typing numbers again and again gets old. Instead, store a value under a name. The result is an **[[r-object|object]]**, and the arrow `<-` is the **[[assignment-r|assignment]]** operator.",
@@ -583,7 +583,7 @@ ICA.addUnit({
     ]},
     {id:"t3u7-l4-x2", type:"mcq", q:"Dmitri reads a file and `str()` shows `$ weight: chr \"61.5\" \"70.2\" \"n/a\" …`. What’s the most likely reason the weight column isn’t numeric?", options:[
       {t:"At least one cell holds text, such as `n/a`", ok:true, why:"So R kept the whole column as text: a column has one type. One non-number makes R keep the column as character. `read.csv(…, na.strings = c(\"\", \"NA\", \"n/a\"))` reads `n/a` as missing, and the column becomes numeric."},
-      {t:"read.csv() always reads numbers with decimals as text", why:"It reads decimals with a full stop as numbers (`num`). Something in this column isn’t a number."},
+      {t:"read.csv() always reads numbers with decimals as text", why:"It reads decimals with a period as numbers (`num`). Something in this column isn’t a number."},
       {t:"The column name is wrong", why:"The name doesn’t affect the type; the values do."},
       {t:"R can’t store weights over 60", why:"There’s no such limit; numbers can be any size."}
     ]},
@@ -754,7 +754,7 @@ ICA.addUnit({
     {id:"t3u7-l5-x4", type:"match", q:"Match each question to the base R chart that answers it.", pairs:[
       ["What’s the shape of the waiting times?","`hist(d$wait)`","A histogram shows the distribution of one numeric variable."],
       ["Do waiting times differ between clinics?","`boxplot(wait ~ clinic, data = d)`","A boxplot per group compares centers and spreads."],
-      ["Do longer queues mean longer waits?","`plot(d$queue, d$wait)`","A scatterplot shows how two numeric variables move together."],
+      ["Do longer lines mean longer waits?","`plot(d$line_length, d$wait)`","A scatterplot shows how two numeric variables move together."],
       ["How many visits came from each clinic?","`barplot(table(d$clinic))`","A bar chart of counts compares categories."]
     ]},
     {id:"t3u7-l5-x5", type:"spot", q:"Oluwaseun wants a histogram of `d$age` with the title “Ages” and the x-axis label “Age (years)”. Tap the parts that are wrong.", ask:"is wrong", mono:true, parts:[
@@ -766,7 +766,7 @@ ICA.addUnit({
       {t:"xlab = \"Age (years)\"", flag:false, why:"xlab sets the x-axis label, with units: right."},
       {t:")", flag:false, why:"The bracket closes the call: fine."}
     ]},
-    {id:"t3u7-l5-x6", type:"number", q:"A model `lm(price ~ size, data = flats)` has intercept 20 and slope 3, with price in thousands and size in square meters. What price does the line give for a 50 m² flat (in thousands)?", answer:170, tol:0, unit:"thousand", why:"The line is price = 20 + 3 × size. For 50 m²: 20 + 3 × 50 = 20 + 150 = 170 thousand.", wrongs:[
+    {id:"t3u7-l5-x6", type:"number", q:"A model `lm(price ~ size, data = apartments)` has intercept 20 and slope 3, with price in thousands and size in square meters. What price does the line give for a 50 m² apartment (in thousands)?", answer:170, tol:0, unit:"thousand", why:"The line is price = 20 + 3 × size. For 50 m²: 20 + 3 × 50 = 20 + 150 = 170 thousand.", wrongs:[
       {v:150, tol:0, why:"That’s just slope × size. Add the intercept, 20."},
       {v:1150, tol:0, why:"That multiplies both numbers by 50 ((20 + 3) × 50). Only the slope multiplies the size; the intercept is added once."},
       {v:73, tol:0, why:"That adds the three numbers (20 + 3 + 50). The slope multiplies the size."}
@@ -924,7 +924,7 @@ ICA.addUnit({
       "**webR and the Data Lab.** The lab runs base R 4.6. The first R challenge downloads up to 46 MB (saved afterwards). ▶ Run shows output and charts; Check tests your objects, and in most challenges that read a file it repeats the test on a second version of the file with different numbers; Hint, Show an answer and Start again help when stuck. Files are listed above the editor."
      ],
      pro:[
-      "**Clean slate.** R for Data Science recommends telling RStudio not to save and restore your workspace (**Tools → Global Options → General**: untick restoring `.RData`, and set saving to Never), then regularly restarting R (**Session → Restart R**) and rerunning your script. If it works from scratch, the script holds the truth, not your memory. The book notes that on RStudio Server closing the browser tab doesn’t end the R session, which makes restarting more important; Posit Cloud also runs RStudio on a server, so the same habit helps there.",
+      "**Clean slate.** R for Data Science recommends telling RStudio not to save and restore your workspace (**Tools → Global Options → General**: uncheck restoring `.RData`, and set saving to Never), then regularly restarting R (**Session → Restart R**) and rerunning your script. If it works from scratch, the script holds the truth, not your memory. The book notes that on RStudio Server closing the browser tab doesn’t end the R session, which makes restarting more important; Posit Cloud also runs RStudio on a server, so the same habit helps there.",
       "**Where data goes.** Desktop R keeps data on your machine. Posit Cloud stores files on Posit’s servers (each project has up to 20 GB, and a single upload can be up to 500 MB, per its documentation): check your organization’s rules before uploading personal or confidential data. webR runs in your browser, so the Data Lab’s data never leaves your device.",
       "**webR’s limits.** webR is R compiled to WebAssembly with Emscripten, maintained by the r-wasm project. It can load many packages built for it, but not every CRAN package (some need system libraries that don’t exist in a browser), and it is slower than desktop R for heavy work. The Data Lab deliberately offers base R only. The webR project’s own online console is at webr.sh.",
       "**Other front ends.** R also has a plain console (RGui on Windows, R.app on macOS, `R` in a terminal), runs scripts without a window via `Rscript analysis.R`, and works in other editors such as VS Code (with an R extension), Positron (Posit’s newer editor for data science) and Jupyter notebooks. RStudio remains the most common choice in teaching materials, including both of this unit’s main sources.",
@@ -1020,7 +1020,7 @@ ICA.addUnit({
      builder:[
       {table:[
         ["Function","For"],
-        ["`read.csv(f)`","Commas between values, full-stop decimals"],
+        ["`read.csv(f)`","Commas between values, period decimals"],
         ["`read.csv2(f)`","Semicolons between values, comma decimals (common in much of Europe and Latin America)"],
         ["`read.delim(f)`","Tab-separated (TSV) files"],
         ["`read.csv(text = \"…\")`","Data typed or pasted straight into the code"]
@@ -1031,7 +1031,7 @@ ICA.addUnit({
       "**Writing out.** `write.csv(results, \"results.csv\", row.names = FALSE)` saves a data frame. Without `row.names = FALSE`, R adds the row numbers as an extra unnamed first column. Write results to a separate file (or an output folder), never over the raw data."
      ],
      pro:[
-      "**Type guessing.** `read.csv()` reads columns as text and then converts each with `type.convert()`: logical, integer, double, or character if anything doesn’t fit. Force types with `colClasses`, for example `colClasses = c(postcode = \"character\")` to keep leading zeros in codes such as `02139`, which would otherwise become the number 2139.",
+      "**Type guessing.** `read.csv()` reads columns as text and then converts each with `type.convert()`: logical, integer, double, or character if anything doesn’t fit. Force types with `colClasses`, for example `colClasses = c(postal_code = \"character\")` to keep leading zeros in codes such as `02139`, which would otherwise become the number 2139.",
       "**Dates** arrive as text. Convert with `as.Date(x)` for ISO dates (`2026-06-30`) or give a format: `as.Date(\"30/06/2026\", format = \"%d/%m/%Y\")`. Unit 2 explains why {{dates-in-data|ISO dates}} save trouble.",
       "**Paths.** Use `/` in paths on every system (R accepts it on Windows). `file.path(\"data\", \"walks.csv\")` builds a path portably. `list.files()` shows what R can see in the working directory, a quick check when a file “isn’t there”. Avoid `setwd()` with an absolute path in shared scripts; R for Data Science and Data Carpentry both recommend projects instead. The here package builds paths from the project root, as Data Carpentry uses.",
       "**Case sensitivity.** Linux (including Posit Cloud and Chromebooks’ Linux) and webR treat `Walks.csv` and `walks.csv` as different files; Windows and macOS usually don’t. Match names exactly so scripts move between systems.",
@@ -1274,7 +1274,7 @@ ICA.addUnit({
      {t:"`Sum <- 3`", why:"That creates an object called Sum; no function is called."},
      {t:"`sum(Sum)`", why:"That would complain about an object `Sum` not found (if it doesn’t exist), not a function."}]},
    {id:"t3u7-q17", lesson:"t3u7-l2", level:3, q:"Dmitri writes `cost <- 4,50` (the way prices are written in his country). What happens, and how should he write it?", options:[
-     {t:"An error (`unexpected ','`); write `cost <- 4.50`", ok:true, why:"R always uses a full stop for decimals; a comma separates things, whatever the computer’s language settings."},
+     {t:"An error (`unexpected ','`); write `cost <- 4.50`", ok:true, why:"R always uses a period for decimals; a comma separates things, whatever the computer’s language settings."},
      {t:"R stores 4.5 because it follows the computer’s settings", why:"R’s code doesn’t follow regional decimal settings."},
      {t:"R stores 450", why:"R doesn’t treat commas as thousands separators either; it’s an error."},
      {t:"R stores two values, 4 and 50", why:"That would need `c(4, 50)`."}]},
@@ -1339,7 +1339,7 @@ ICA.addUnit({
      {t:"The file’s exact name and location", ok:true, why:"R couldn’t find the file in the working directory: check spelling (and capitals on Linux, Posit Cloud and the Data Lab) and run getwd() or list.files()."},
      {t:"Whether the CSV has a header row", why:"R didn’t get as far as reading the contents."},
      {t:"Whether R needs updating to a newer version", why:"read.csv() works in every R version; the file wasn’t found."},
-     {t:"Whether the numbers use full stops", why:"That matters once the file is read; here it wasn’t opened at all."}]},
+     {t:"Whether the numbers use periods", why:"That matters once the file is read; here it wasn’t opened at all."}]},
    {id:"t3u7-q30", lesson:"t3u7-l4", level:3, q:"Ana reads a CSV from a colleague in Germany. `str()` shows one column called `name.age.score` with values like `\"Jo;31;4,5\"`. What happened, and what’s the fix?", options:[
      {t:"Semicolons and decimal commas; use `read.csv2()`", ok:true, why:"The file uses semicolons and decimal commas. read.csv() split at commas that weren’t there; read.csv2() expects `;` between values and `,` for decimals."},
      {t:"The file is damaged; ask the colleague to send it again", why:"It’s a common, valid format; only the separator differs."},
