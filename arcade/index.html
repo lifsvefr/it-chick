@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=72">
+<link rel="stylesheet" href="../shared/style.css?v=73">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=72"></script>
+<script src="../shared/engine.js?v=73"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/theme.js?v=2"></script>
@@ -328,7 +328,7 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .kbtns{justify-content:center}
 .estage{gap:8px}.eline{font-size:1.5em;line-height:2;font-weight:700;min-height:1.6em}.ehid{font-size:.7em;color:var(--soft);font-weight:600}
 .ebtns{justify-content:center;flex-wrap:wrap}.btn.rec{background:var(--badTint);border-color:var(--bad);animation:fx-cue 1.1s ease-in-out infinite}
-.eout{min-height:2.4em}.eout p{margin:4px 0}.eheard{font-weight:700}.enav{justify-content:flex-end;gap:8px}.ktip{text-align:center;margin:0}
+.een{color:var(--soft);min-height:1.2em;margin-top:-4px}.eout{min-height:2.4em}.eout p{margin:4px 0}.eheard{font-weight:700}.enav{justify-content:flex-end;gap:8px}.ktip{text-align:center;margin:0}
 @media (prefers-reduced-motion:reduce){.bossbox,.choice.popped,.rainf .dk.splash{animation:none}}
 @media (prefers-reduced-motion:reduce){.jg-shake,.jg-pulse,.combo.hot,.float,.gc svg .idle{animation:none}.gc,.gc svg .mv{transition:none}}
 </style>
@@ -1481,6 +1481,8 @@ HOW.echo = ["Listen to a line, then say it back. Copying a voice straight after 
   "8 lines a round. First-try matches score most."];
 ART.echo = '<g class="mv"><rect x="40" y="10" width="20" height="32" rx="10" class="A"/><path d="M32 32 a18 18 0 0 0 36 0 M50 50 v10 M40 60 h20" class="S" style="stroke-width:3"/></g><path d="M76 24 q6 8 0 16 M84 18 q12 14 0 28" class="S idle"/><path d="M24 24 q-6 8 0 16 M16 18 q-12 14 0 28" class="S idle"/>';
 var ECHO_SR = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+/* Android Chrome and iPads can't record and recognise at once (the owner's Speaking Quest found this): there, Say it only checks */
+var ECHO_SHARE = !/Android/i.test(navigator.userAgent) && !(navigator.maxTouchPoints > 1 && /Macintosh|iPad/.test(navigator.userAgent));
 function echoNorm(s){ return String(s || "").replace(/\[([^\]]*)\]\{[^}]*\}/g, "$1").replace(/[\s、。！？!?,.「」『』・…ー〜～]/g, "").replace(/[ァ-ヶ]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) - 0x60); }); }
 function echoReading(furi, t){ return furi ? furi.replace(/\[[^\]]*\]\{([^}]*)\}/g, "$1") : t; }
 function echoSim(a, b){   /* 2·LCS / (|a|+|b|): 1 = identical */
@@ -1495,12 +1497,12 @@ function echoGame(gm){
       lines = ICA.shuffle(pool.slice()).slice(0, 8), i = 0, score = 0, right = 0, streak = 0, missed = [], tries = 0, done = false,
       rec = null, stream = null, mine = null, sr = null, srFails = 0, canRec = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
   gm.innerHTML = '<div class="stack">'+hudJP('<span>Line <span id="pos">1</span>/'+lines.length+'</span>')+
-    '<div class="stage estage" id="stg" data-nosay><div class="qtext" id="eq"></div><div class="eline" id="el" lang="ja"></div>'+
+    '<div class="stage estage" id="stg" data-nosay><div class="qtext" id="eq"></div><div class="eline" id="el" lang="ja"></div><div class="een small" id="een"></div>'+
       '<div class="row ebtns"><button class="btn" id="elisten">▶ Listen</button>'+(ECHO_SR ? '<button class="btn primary" id="esay">🎤 Say it</button>' : '')+(canRec ? '<button class="btn" id="erec">⏺ Record</button>' : '')+'</div>'+
       '<div class="eout" id="eo" aria-live="polite"></div></div><div class="row enav" id="en"></div></div>';
   timerId = 1;
   function line(){ return lines[i]; }
-  function show(reveal){ var x = line(), el = document.getElementById("el"); if (hide && !reveal){ el.innerHTML = '<span class="ehid">🙈 Ears only: listen, then say it</span>'; return; } el.innerHTML = md(x[3] || x[0]); }
+  function show(reveal){ var x = line(), el = document.getElementById("el"); document.getElementById("een").textContent = x[4] || ""; if (hide && !reveal){ el.innerHTML = '<span class="ehid">🙈 Ears only: listen, then say it</span>'; return; } el.innerHTML = md(x[3] || x[0]); }
   function out(h){ document.getElementById("eo").innerHTML = h; }
   function play(){ var b = document.getElementById("elisten"); if (ICA.say("ja", line()[0], b) === false) ICA.toast("That clip isn’t available offline."); }
   function nav(){
@@ -1513,12 +1515,12 @@ function echoGame(gm){
   function win(pts, msg){
     if (done) return; done = true; right++; streak++; score += pts; cur.answered++;
     hit(true, document.getElementById("el"), streak, "+" + pts); AFX.roll(document.getElementById("sc"), score, String); showCombo(streak);
-    show(true); out(msg); nav(); var nx = document.getElementById("enext"); if (nx) nx.focus();
+    show(true); out(msg); nav(); bindCmp(); var nx = document.getElementById("enext"); if (nx) nx.focus();
   }
   function begin(){
     if (!cur.alive) return;
     if (i >= lines.length) return over();
-    tries = 0; done = false; mine = null;
+    tries = 0; done = false; if (mine) URL.revokeObjectURL(mine); mine = null;
     document.getElementById("pos").textContent = i + 1;
     document.getElementById("eq").textContent = ECHO_SR ? "Listen, then say it back" : "Listen, say it back, then compare";
     show(false); out(ECHO_SR ? '' : (canRec ? '<p class="small muted">Tap ⏺ Record, say the line, then compare your voice with the recording.</p>' : '<p class="small muted">Say the line out loud after the recording, then tick how it went.</p>' + selfBtns()));
@@ -1537,11 +1539,12 @@ function echoGame(gm){
     var b = document.getElementById("esay"); if (!b || b.classList.contains("rec") || done) return;
     stopRec(); try { if (ICA.stopAudio) ICA.stopAudio(); } catch(e){}
     sr = new ECHO_SR(); sr.lang = "ja-JP"; sr.interimResults = false; sr.maxAlternatives = 4;
-    var got = false, err = null;
+    var got = false, err = null, tap = null;
+    if (ECHO_SHARE && canRec) tap = sideRecord();
     b.classList.add("rec"); b.textContent = "🎤 Listening…";
     sr.onresult = function(e){ got = true; var alts = [].map.call(e.results[0], function(x){ return x.transcript; }); judge(alts); };
     sr.onerror = function(e){ err = (e && e.error) || "error"; };
-    sr.onend = function(){ b.classList.remove("rec"); b.textContent = "🎤 Say it"; sr = null; if (!got) fail(err || "no-speech"); };
+    sr.onend = function(){ b.classList.remove("rec"); b.textContent = "🎤 Say it"; sr = null; if (tap) tap.stop(); if (!got) fail(err || "no-speech"); };
     try { sr.start(); } catch(e){ b.classList.remove("rec"); b.textContent = "🎤 Say it"; fail("start-failed"); }
   }
   function judge(alts){
@@ -1550,9 +1553,9 @@ function echoGame(gm){
     alts.forEach(function(a){ var s = Math.max(echoSim(a, x[0]), echoSim(a, echoReading(x[3], x[0]))); if (s > best){ best = s; heard = a; } });
     var pct = Math.round(best * 100), h = '<p class="small">Mugi heard: <span lang="ja" class="eheard">'+esc(heard)+'</span> · '+pct+'% match</p>';
     tries++;
-    if (best >= .8) return win(tries === 1 ? 100 : 70, '<p><b>Mugi heard it!</b> 🎉</p>' + h);
+    if (best >= .8) return win(tries === 1 ? 100 : 70, '<p><b>Mugi heard it!</b> 🎉</p>' + h + cmpRow());
     react(best >= .55 ? "think" : "oops");
-    out((best >= .55 ? '<p><b>Close!</b> Listen once more and try again.</p>' : '<p><b>Not quite.</b> Listen again, then try.</p>') + h); show(true); nav();
+    out((best >= .55 ? '<p><b>Close!</b> Listen once more and try again.</p>' : '<p><b>Not quite.</b> Listen again, then try.</p>') + h + cmpRow()); show(true); nav(); bindCmp();
   }
   function fail(err){
     srFails++; tries++;
@@ -1577,15 +1580,37 @@ function echoGame(gm){
         release(); b.classList.remove("rec"); b.textContent = "⏺ Record again";
         if (mine) URL.revokeObjectURL(mine); mine = chunks.length ? URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || "audio/webm"})) : null;
         if (!mine){ out('<p>Nothing was recorded. Try again.</p>'); return; }
-        out('<div class="row ebtns"><button class="btn" id="emugi">▶ Original</button><button class="btn" id="eyou">▶ You</button></div>' + (ECHO_SR && !done ? '' : (done ? '' : selfBtns())));
-        document.getElementById("emugi").onclick = play;
-        document.getElementById("eyou").onclick = function(){ var a = new Audio(mine); a.play().catch(function(){}); };
-        bindSelf(); show(true);
+        out(cmpRow() + (ECHO_SR && !done ? '' : (done ? '' : selfBtns())));
+        bindCmp(); bindSelf(); show(true);
       };
       rec.start(); b.classList.add("rec"); b.textContent = "⏹ Stop";
       var secs = Math.min(10, Math.max(4, 2 + echoNorm(line()[0]).length * 0.32));
       setTimeout(function(){ if (rec && rec.state === "recording") rec.stop(); }, secs * 1000);
     }).catch(function(){ out('<p>The microphone is blocked. Allow it for this site in your browser’s settings (the 🔒 by the address), then try again.</p>'); });
+  }
+  /* compare row: the recording and you */
+  function cmpRow(){
+    if (mine) return '<div class="row ebtns ecmp"><button class="btn" data-eorig>▶ Original</button><button class="btn" data-eyou>▶ You</button></div>';
+    return canRec && !ECHO_SHARE ? '<p class="small muted">To hear yourself, tap ⏺ Record and say it again: on this device the mic can’t record and check at the same time.</p>' : '';
+  }
+  function bindCmp(){
+    ICA.$$("[data-eorig]", gm).forEach(function(b){ b.onclick = play; });
+    ICA.$$("[data-eyou]", gm).forEach(function(b){ b.onclick = function(){ if (mine){ var a = new Audio(mine); a.play().catch(function(){}); } }; });
+  }
+  /* a quiet side recording while the speech check listens; resolves into `mine` */
+  function sideRecord(){
+    var t = {r:null, st:null, chunks:[], stopped:false};
+    navigator.mediaDevices.getUserMedia({audio:true}).then(function(st){
+      t.st = st; if (t.stopped || !cur.alive){ st.getTracks().forEach(function(k){ k.stop(); }); return; }
+      try { t.r = new MediaRecorder(st); } catch(e){ st.getTracks().forEach(function(k){ k.stop(); }); return; }
+      t.r.ondataavailable = function(e){ if (e.data.size) t.chunks.push(e.data); };
+      t.r.onstop = function(){ st.getTracks().forEach(function(k){ k.stop(); });
+        if (t.chunks.length){ if (mine) URL.revokeObjectURL(mine); mine = URL.createObjectURL(new Blob(t.chunks, {type: t.r.mimeType || "audio/webm"}));
+          var eo = document.getElementById("eo"); if (eo && !eo.querySelector("[data-eyou]") && eo.innerHTML.indexOf("Mugi heard") > -1){ eo.insertAdjacentHTML("beforeend", cmpRow()); bindCmp(); } } };
+      t.r.start();
+    }).catch(function(){});
+    t.stop = function(){ t.stopped = true; setTimeout(function(){ try { if (t.r && t.r.state === "recording") t.r.stop(); else if (t.st) t.st.getTracks().forEach(function(k){ k.stop(); }); } catch(e){} }, 250); };
+    return t;
   }
   function release(){ try { if (stream) stream.getTracks().forEach(function(t){ t.stop(); }); } catch(e){} stream = null; }
   function stopRec(){ try { if (rec && rec.state === "recording") rec.stop(); } catch(e){} }
