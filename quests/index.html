@@ -14,13 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Klee+One:wght@600&family=Zen+Kurenaido&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=82">
+<link rel="stylesheet" href="../shared/style.css?v=83">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=82"></script>
+<script src="../shared/engine.js?v=83"></script>
 <script src="../shared/theme.js?v=2"></script>
-<script src="props.js?v=82"></script>
-<script src="../data/story.js?v=82"></script>
-<script src="../data/story-audio.js?v=82"></script>
+<script src="props.js?v=83"></script>
+<script src="../data/story.js?v=83"></script>
+<script src="../data/story-audio.js?v=83"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -248,12 +248,22 @@ function readSecs(r){
   var w = String(r.where).replace(/\(on LibreTexts[^)]*\)/g, "").replace(/“[^”]*”/g, ""), out = [];
   w = w.replace(/(\d+)\.(\d+)\s*[–-]\s*(\d+)\.(\d+)/g, function(m, a, b, c, d){ if (a === c) for (var k = +b; k <= +d; k++) out.push(a + "." + k); return " "; });
   w.replace(/\b(\d+\.\d+)\b/g, function(m, n){ out.push(n); return m; });
-  if (!out.length) w.replace(/Chapter\s+(\d+)/g, function(m, n){ out.push(n); return m; });
+  if (!out.length && /Chapters?\s+\d/.test(w)){   // "Chapter 6", "Chapters 5, 6 and 8", "Chapters 1–10"
+    var cw = w.slice(w.search(/Chapters?\s+\d/)).replace(/\([^)]*\)/g, " ");
+    cw = cw.replace(/(\d+)\s*[–-]\s*(\d+)/g, function(m, a, b){ for (var k = +a; k <= +b; k++) out.push(String(k)); return " "; });
+    cw.replace(/\b(\d+)\b/g, function(m, n){ out.push(n); return m; });
+  }
+  if (!out.length){   // books cited by section title (Tae Kim): match the quoted titles, then known renames
+    var nt = function(x){ return String(x).normalize("NFKC").toLowerCase().replace(/[‘’“”"'「」\s.,!?:]/g, ""); }, bare = function(x){ return nt(String(x).replace(/\([^)]*\)\s*$/, "")); };
+    if (!ix._t){ ix._t = {}; Object.keys(ix.secs).forEach(function(k){ var a = nt(ix.secs[k][0]), b = bare(ix.secs[k][0]); if (!(a in ix._t)) ix._t[a] = k; if (!(b in ix._t)) ix._t[b] = k; }); Object.keys(ix.alias || {}).forEach(function(k){ var v = ix._t[nt(ix.alias[k])]; if (v) ix._t[nt(k)] = v; }); }
+    String(r.where).replace(/“([^”]+)”/g, function(m, q){ var k = ix._t[nt(q)] || ix._t[bare(q)]; if (k) out.push(k); return m; });
+  }
   return out.filter(function(n, i){ return ix.secs[n] && out.indexOf(n) === i; });
 }
 function readHere(r, l){
-  var ix = (window.ICA_READIDX || {})[r.book], ns = readSecs(r); if (!ns.length) return "";
+  var ix = (window.ICA_READIDX || {})[r.book], all = readSecs(r), ns = all.slice(0, 8); if (!ns.length) return "";
   return '<div class="row readhere">' + ns.map(function(n){ var t = ix.secs[n][0]; return '<a class="btn small" href="../reader/index.html#' + esc(r.book) + '/' + n + '" data-readfrom="' + esc(l.id) + '">📖 Read ' + (n.indexOf(".") > 0 ? n + ' ' + esc(t) : 'Chapter ' + n) + ' here</a>'; }).join("") +
+    (all.length > ns.length ? '<a class="small" href="../reader/index.html#' + esc(r.book) + '" data-readfrom="' + esc(l.id) + '">+ ' + (all.length - ns.length) + ' more in the Reader</a>' : '') +
     '<a class="small" href="' + esc(ix.secs[ns[0]][1]) + '" target="_blank" rel="noopener">Original ↗</a></div>';
 }
 document.addEventListener("click", function(e){ var t = e.target.closest && e.target.closest("[data-readfrom]"); if (t){ try { sessionStorage.setItem("itchick-reader-from", t.getAttribute("data-readfrom")); } catch(x){} } });

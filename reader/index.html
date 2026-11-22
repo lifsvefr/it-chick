@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=82">
+<link rel="stylesheet" href="../shared/style.css?v=83">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=82"></script>
+<script src="../shared/engine.js?v=83"></script>
 <style>
 /* The built-in reader: openly licensed books, reformatted for easy reading. One section per page. */
 .rd{max-width:40em;margin:0 auto;font-size:calc(1.08rem * var(--rz,1));line-height:1.7}
@@ -57,6 +57,10 @@
 .rd .note.ex{border-left-color:var(--gold)}
 .rd .embed a{font-weight:700}
 .rd .fn{color:var(--soft)}
+.rd .by{font-weight:700;color:var(--soft);margin:.2em 0 1.4em}
+.rd h2.sub{font-family:var(--display);font-size:1.3em;margin:1.8em 0 .4em;text-wrap:balance;scroll-margin-top:80px}
+.rd p.li{margin:.2em 0 .2em 1em} .rd .ref{padding-left:1.4em;text-indent:-1.4em;font-size:.92em;overflow-wrap:anywhere}
+.rd p,.rd li,.rd td{overflow-wrap:break-word}
 .printrow{display:flex;flex-wrap:wrap;gap:8px;margin:1.2em 0 0}
 .chsec{margin-top:2em} .chsec+.chsec{border-top:1px solid var(--line);padding-top:1em}
 @media print{
@@ -108,39 +112,44 @@ function contents(id){
   book(id).then(function(b){
     if (!b){ shelf(); return; } setTitle(b.title);
     app.innerHTML = '<div class="stack rd">'+backLink()+'<div><div class="eyebrow">'+esc(b.by)+'</div><h1>'+esc(b.title)+'</h1></div><div class="toc">'+
-      b.toc.map(function(c){ return '<details><summary>'+c.n+'. '+esc(c.title)+'</summary><ol>'+c.secs.map(function(s){ return '<li><a href="#'+esc(id)+'/'+esc(s[0])+'"><span class="num">'+esc(s[0].indexOf(".")>0 ? s[0] : "")+'</span>'+esc(s[1])+'</a></li>'; }).join("")+'</ol></details>'; }).join("")+'</div>'+credit(b)+'</div>';
+      b.toc.map(function(c){ return '<details><summary>'+chName(c)+'</summary><ol>'+c.secs.map(function(s){ return '<li><a href="#'+esc(id)+'/'+esc(s[0])+'"><span class="num">'+esc(s[0].indexOf(".")>0 ? s[0] : "")+'</span>'+esc(s[1])+'</a></li>'; }).join("")+'</ol></details>'; }).join("")+'</div>'+credit(b)+'</div>';
   }).catch(function(){ app.innerHTML = '<p>That book isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
+function tocIdx(b, cn){ for (var k = 0; k < b.toc.length; k++) if (b.toc[k].n === cn) return k; return -1; }
+function chName(c){ return (c.label === "" ? "" : c.n + ". ") + esc(c.title); }
+function chLabel(c){ return c.label === "" ? esc(c.title) : "Chapter " + c.n + ": " + esc(c.title); }
 function printChapter(id, cn){
   cn = +cn;
   Promise.all([book(id), chapter(id, cn)]).then(function(a){
-    var b = a[0], secs = a[1], c = b.toc[cn-1]; setTitle(c.title);
+    var b = a[0], secs = a[1], c = b.toc[tocIdx(b, cn)]; setTitle(c.title);
     app.innerHTML = '<article class="rd">'+
       '<div class="rtools"><a class="back small" href="#'+id+'/'+(secs[0] ? secs[0].n : cn)+'">← Back to reading</a></div>'+
-      '<div class="printrow noprint" style="margin-top:0"><button class="btn primary" data-print>🖨️ Print or save as PDF</button><span class="small muted">Chapter '+cn+', all '+secs.length+' parts on one page. Choose “Save as PDF” in the print window to keep a copy.</span></div>'+
-      '<div class="eyebrow">'+esc(b.title)+'</div><h1>Chapter '+cn+': '+esc(c.title)+'</h1>'+
+      '<div class="printrow noprint" style="margin-top:0"><button class="btn primary" data-print>🖨️ Print or save as PDF</button><span class="small muted">'+chLabel(c)+(secs.length > 1 ? ', all '+secs.length+' parts on one page' : '')+'. Choose “Save as PDF” in the print window to keep a copy.</span></div>'+
+      '<div class="eyebrow">'+esc(b.title)+'</div><h1>'+chLabel(c)+'</h1>'+
       secs.map(function(s){ return '<section class="chsec"><h2>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h2>'+(s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+'<p class="credit">Original: '+esc(s.src)+'</p></section>'; }).join("")+
       credit(b)+'</article>';
     window.scrollTo(0, 0);
   }).catch(function(){ app.innerHTML = '<p>That chapter isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
 function page(id, num){
-  var cn = parseInt(num, 10);
+  var parts = num.split("."), cn = parseInt(parts[0], 10), anchor = parts.length > 2 ? "s-" + parts.join("-") : null;
+  if (parts.length > 2) num = parts[0] + "." + parts[1];   // a subsection: open its section, then scroll to it
   Promise.all([book(id), chapter(id, cn)]).then(function(a){
     var b = a[0], secs = a[1], i = secs.findIndex(function(s){ return s.n === num; }); if (i < 0) i = 0;
-    var s = secs[i], c = b.toc[cn-1], prev = secs[i-1], next = secs[i+1];
-    var prevC = !prev && cn > 1 ? b.toc[cn-2] : null, nextC = !next && cn < b.toc.length ? b.toc[cn] : null;
+    var ti = tocIdx(b, cn), s = secs[i], c = b.toc[ti], prev = secs[i-1], next = secs[i+1];
+    var prevC = !prev && ti > 0 ? b.toc[ti-1] : null, nextC = !next && ti < b.toc.length - 1 ? b.toc[ti+1] : null;
     setTitle(s.title);
     var nav = '<nav class="rnav" aria-label="Pages">'+
-      (prev ? '<a href="#'+id+'/'+prev.n+'"><span>← Previous</span>'+esc(prev.n.indexOf(".")>0 ? prev.n+" "+prev.title : "Introduction")+'</a>' : prevC ? '<a href="#'+id+'/'+(cn-1)+'"><span>← Previous chapter</span>'+esc(prevC.title)+'</a>' : '<span></span>')+
-      (next ? '<a class="nx" href="#'+id+'/'+next.n+'"><span>Next →</span>'+esc(next.n+" "+next.title)+'</a>' : nextC ? '<a class="nx" href="#'+id+'/'+(cn+1)+'"><span>Next chapter →</span>'+esc(nextC.title)+'</a>' : '<span></span>')+'</nav>';
+      (prev ? '<a href="#'+id+'/'+prev.n+'"><span>← Previous</span>'+esc(prev.n.indexOf(".")>0 ? prev.n+" "+prev.title : "Introduction")+'</a>' : prevC ? '<a href="#'+id+'/'+prevC.n+'"><span>← Previous chapter</span>'+esc(prevC.title)+'</a>' : '<span></span>')+
+      (next ? '<a class="nx" href="#'+id+'/'+next.n+'"><span>Next →</span>'+esc(next.n+" "+next.title)+'</a>' : nextC ? '<a class="nx" href="#'+id+'/'+nextC.n+'"><span>Next chapter →</span>'+esc(nextC.title)+'</a>' : '<span></span>')+'</nav>';
     app.innerHTML = '<article class="rd">'+
       '<div class="rtools">'+backLink()+'<div class="sz" role="group" aria-label="Text size"><button class="btn small ghost" data-sz="-1" aria-label="Smaller text">A−</button><button class="btn small ghost" data-sz="1" aria-label="Larger text">A+</button></div></div>'+
-      '<div class="eyebrow"><a href="#'+esc(id)+'">'+esc(b.title)+'</a> · Chapter '+cn+': '+esc(c.title)+'</div>'+
+      '<div class="eyebrow"><a href="#'+esc(id)+'">'+esc(b.title)+'</a>'+(s.n.indexOf(".") > 0 ? ' · '+chLabel(c) : c.label === "" ? '' : ' · Chapter '+c.n)+'</div>'+
       '<h1>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h1>'+
-      (s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+
-      '<div class="printrow"><button class="btn small" data-print>🖨️ Print this section</button><a class="btn small" href="#'+id+'/print/'+cn+'">🖨️ Print the whole chapter</a></div>'+nav+credit(b, s)+'</article>';
-    window.scrollTo(0, 0);
+      (s.goals ? (s.goals.indexOf('<p class="by">') === 0 ? s.goals : '<div class="goals">'+s.goals+'</div>') : '')+s.html+
+      '<div class="printrow"><button class="btn small" data-print>🖨️ Print this section</button>'+(secs.length > 1 ? '<a class="btn small" href="#'+id+'/print/'+cn+'">🖨️ Print the whole chapter</a>' : '')+'</div>'+nav+credit(b, s)+'</article>';
+    var at = anchor && document.getElementById(anchor);
+    if (at) setTimeout(function(){ at.scrollIntoView(); }, 50); else window.scrollTo(0, 0);
   }).catch(function(){ app.innerHTML = '<p>That page isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
 document.addEventListener("click", function(e){
@@ -152,7 +161,7 @@ document.addEventListener("click", function(e){
 function route(){
   var h = decodeURIComponent(location.hash.slice(1)), m;
   if ((m = h.match(/^([a-z0-9]+)\/print\/(\d+)$/))) printChapter(m[1], m[2]);
-  if ((m = h.match(/^([a-z0-9]+)\/(\d+(?:\.\d+)?)$/))) page(m[1], m[2]);
+  else if ((m = h.match(/^([a-z0-9]+)\/(\d+(?:\.\d+){0,2})$/))) page(m[1], m[2]);
   else if (/^[a-z0-9]+$/.test(h)) contents(h);
   else shelf();
 }
