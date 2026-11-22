@@ -229,13 +229,13 @@ ICA.addUnit({
     {h:"Asking a question yourself", body:[
       "Asking good questions is part of taking part, and in many ゼミ it is expected of everyone. A clear question has four parts:",
       {ol:[
-        "**Who you are**, at a conference: 「〇〇大学のアナ・シルバです。」 In a ゼミ you can skip this.",
+        "**Who you are**, at a conference: 「〇〇大学のチェスカ・イババオです。」 In a ゼミ you can skip this.",
         "**Thanks**: 「[貴重]{きちょう}なご発表、ありがとうございました。」 (貴重 = valuable)",
         "**How many questions**: 「一点、質問させてください。」 or 「二点お[伺]{うかが}いします。」 (伺う here means “to ask”; お伺いする is one of the few double forms accepted by custom, see lesson 4)",
         "**The question, tied to a place in the talk**: 「スライドの5枚目で、〜とおっしゃいましたが、〜という理解でよろしいでしょうか。」"
       ]},
       "Keep it to one or two points and make it specific. A question such as 「〜とは、具体的にはどういうことでしょうか」 (“What exactly do you mean by…?”) is often the most useful thing anyone asks, because others are wondering too.",
-      {ex:"〇〇大学のアナ・シルバです。貴重なご発表、ありがとうございました。一点、質問させてください。レジュメの3ページで「地域の差が大きい」と述べられていますが、具体的にはどの地域を比較されたのでしょうか。", label:"Worked example: a question at a conference"}
+      {listen:"e1u8-l2-a1", ex:"〇〇大学のチェスカ・イババオです。貴重なご発表、ありがとうございました。一点、質問させてください。レジュメの3ページで「地域の差が大きい」と述べられていますが、具体的にはどの地域を比較されたのでしょうか。", label:"Worked example: Cheska, a master’s student from the Philippines, asks a question at a conference"}
     ]},
     {h:"Joining a ゼミ discussion", body:[
       "After the 質疑応答, many ゼミ move into open discussion of the presenter’s 論点. Each move has its typical phrases. In speech, 「〜と思います」 is fine for opinions, unlike in a formal report (see {{sentence-endings-japanese}}).",
@@ -574,7 +574,7 @@ ICA.addUnit({
         ["すみません (to apologise)","申し訳ありません・申し訳ございません","More formal for a real apology"]
       ]},
       "In emails to teachers, the usual opening is 「お世話になっております」 rather than 「お疲れさまです」 (lesson 5). With your own ゼミ teacher, the ゼミ’s habits may be more relaxed; listen to how 先輩 speak.",
-      {ex:"先生：「来週の発表、資料は前日までに送ってください。」\n学生：「承知いたしました。前日の正午までにお送りいたします。」", label:"Worked example: accepting an instruction"}
+      {listen:"e1u8-l4-a1", ex:"[大西]{おおにし}先生：「来週の発表、資料は前日までに送ってください。」\nチェスカ：「承知いたしました。前日の正午までにお送りいたします。」", label:"Worked example: Cheska accepts an instruction from Prof. Ōnishi, her ゼミ teacher"}
     ]},
     {h:"ウチ・ソト: whose side are you on?", body:[
       "Keigo depends not only on rank but on groups. [[uchi-soto|ウチ・ソト]] (*uchi/soto*, inside and outside) means that when you speak to someone **outside** your group, you treat members of **your own group** as part of “you”: no 尊敬語 for them, even if they are senior, and no さん or job titles after their names.",

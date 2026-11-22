@@ -67,7 +67,7 @@ ICA.addUnit({
       ]},
       "Speakers also signal what matters **less**. Asides (“By the way…”, “I won’t go into detail, but…”) and jokes can usually be noted briefly or skipped. A good habit: when you hear an aside, write “(aside)” and wait for “Anyway…” or “Going back to…”.",
       {fig:'<svg viewBox="0 0 340 430"><defs><marker id="e1u4a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">A lecture’s spoken roadmap</text><rect class="d-lup" x="20" y="32" width="300" height="50" rx="6" stroke-width="2"/><text x="170" y="52" text-anchor="middle">Preview</text><text class="s" x="170" y="70" text-anchor="middle">“Today I’ll look at three causes…”</text><path class="d-ink" d="M170,82 L170,100" stroke-width="2" marker-end="url(#e1u4a1)"/><rect class="d-sage" x="20" y="102" width="300" height="50" rx="6" stroke-width="2"/><text x="170" y="122" text-anchor="middle">Sections</text><text class="s" x="170" y="140" text-anchor="middle">“First…” · “Moving on to…”</text><path class="d-ink" d="M170,152 L170,170" stroke-width="2" marker-end="url(#e1u4a1)"/><rect class="d-soft" x="60" y="172" width="220" height="50" rx="6" stroke-width="2" stroke-dasharray="5 4"/><text x="170" y="192" text-anchor="middle">Aside: less central</text><text class="s" x="170" y="210" text-anchor="middle">“By the way…”</text><path class="d-ink" d="M170,222 L170,240" stroke-width="2" marker-end="url(#e1u4a1)"/><rect class="d-sage" x="20" y="242" width="300" height="50" rx="6" stroke-width="2"/><text x="170" y="262" text-anchor="middle">Back to the main line</text><text class="s" x="170" y="280" text-anchor="middle">“Anyway, going back to…”</text><path class="d-ink" d="M170,292 L170,310" stroke-width="2" marker-end="url(#e1u4a1)"/><rect class="d-gold" x="20" y="312" width="300" height="50" rx="6" stroke-width="2"/><text x="170" y="332" text-anchor="middle">Emphasis: note it!</text><text class="s" x="170" y="350" text-anchor="middle">“The key point here is…”</text><path class="d-ink" d="M170,362 L170,380" stroke-width="2" marker-end="url(#e1u4a1)"/><rect class="d-rose" x="20" y="382" width="300" height="44" rx="6" stroke-width="2"/><text x="170" y="400" text-anchor="middle">Summary</text><text class="s" x="170" y="417" text-anchor="middle">“To sum up…” · “Next week…”</text></svg>', alt:"A vertical flow of six boxes joined by arrows. Preview: Today I’ll look at three causes. Sections: First; Moving on to. A narrower dashed box, Aside, less central: By the way. Back to the main line: Anyway, going back to. Emphasis, note it: The key point here is. Summary: To sum up; Next week.", cap:"Signposts mark the route. The dashed box is a side road: note it briefly, then wait for the return."},
-      {ex:"You hear: “OK. So, we’ve seen what urban heat islands are. Now, why do they matter? Well, the key point is health…”\n• “OK. So” → a new section is starting.\n• “we’ve seen…” → a one-line recap of the last section.\n• “Now, why do they matter? Well…” → a question the lecturer will answer: the section’s topic.\n• “the key point is” → emphasis: write “health” and mark it with a star.", label:"Worked example"}
+      {listen:"e1u4-l1-a1", ex:"Prof. Ōnishi teaches disaster governance at a university in Japan. In her lecture on cities and heat, you hear: “OK. So, we’ve seen what urban heat islands are. Now, why do they matter? Well, the key point is health…”\n• “OK. So” → a new section is starting.\n• “we’ve seen…” → a one-line recap of the last section.\n• “Now, why do they matter? Well…” → a question the lecturer will answer: the section’s topic.\n• “the key point is” → emphasis: write “health” and mark it with a star.", label:"Worked example"}
     ]},
     {h:"Predict, before and during", body:[
       "Listening is much easier when you roughly know what’s coming, because your brain matches the sounds to words it already expects. You can prepare for that.",
@@ -106,7 +106,7 @@ ICA.addUnit({
         ["?","not sure: check later"]
       ]},
       "Make your own short forms for words that come up often in your subject, such as “gov” for government or “env” for environment. Keep a key at the front of your notebook or file: in a month, “dev” could mean development or deviation.",
-      {ex:"Lecturer: “So the second cause, and this is really important, is the loss of trees. When trees are cut down, there’s less shade, and so streets get hotter. In some cities the difference can be several degrees.”\n\nNotes:\n2. Loss of trees *\n   trees ↓ → shade ↓ → street temp ↑\n   some cities: diff ≈ several °C", label:"Worked example: from speech to notes", mono:true},
+      {listen:"e1u4-l1-a2", ex:"Prof. Ōnishi: “So the second cause, and this is really important, is the loss of trees. When trees are cut down, there’s less shade, and so streets get hotter. In some cities the difference can be several degrees.”\n\nNotes:\n2. Loss of trees *\n   trees ↓ → shade ↓ → street temp ↑\n   some cities: diff ≈ several °C", label:"Worked example: from speech to notes", mono:true},
       "Notice what disappeared: “So” and “and this is really important” became a star; “When… there’s… and so” became arrows. Names, numbers and technical terms stayed exact, because those are hard to rebuild later."
     ]},
     {h:"Recordings, captions and missed bits", body:[
@@ -129,7 +129,7 @@ ICA.addUnit({
       ["“The key point here is…”","Emphasis: a main point","Emphasis signals mark what you most need in your notes."],
       ["“So, to recap…”","A summary","A recap repeats the main points: a good moment to check your notes are complete."]
     ]},
-    {id:"e1u4-l1-x2", type:"mcq", q:"After a short pause, the lecturer says: “Right. So, now let’s turn to the second cause.” What does “Right. So, now” mainly do here?", options:[
+    {id:"e1u4-l1-x2", type:"mcq", listen:"e1u4-l1-a3", q:"After a short pause, Prof. Ōnishi says: “Right. So, now let’s turn to the second cause.” What does “Right. So, now” mainly do here?", options:[
       {t:"It marks the start of a new section of the lecture", ok:true, why:"“Right”, “so” and “now” are discourse markers. At the start of a sentence, after a pause, they usually close one part and open the next, and “let’s turn to” confirms it."},
       {t:"It means the lecturer agrees with a student", why:"“Right” can mean “correct” in other contexts, but here nobody has said anything to agree with. At the start of a turn, after a pause, it organises the talk."},
       {t:"It is meaningless filler that listeners can safely ignore", why:"These little words do a job: they tell listeners a boundary is coming. Treating them as filler means missing the structure."},
@@ -143,7 +143,7 @@ ICA.addUnit({
       {t:"“You’ll need this for the assignment.”", b:0, why:"About as direct as emphasis gets."},
       {t:"“Incidentally, the building we’re in was designed by…”", b:1, why:"“Incidentally” marks something off the main topic."}
     ]},
-    {id:"e1u4-l1-x4", type:"spot", q:"Here is part of a lecture transcript. Tap every phrase that is a **signpost** (it organises the talk rather than giving content).", ask:"is a signpost", parts:[
+    {id:"e1u4-l1-x4", type:"spot", listen:"e1u4-l1-a4", q:"Here is part of a lecture transcript. Tap every phrase that is a **signpost** (it organises the talk rather than giving content).", ask:"is a signpost", parts:[
       {t:"Today I’ll look at", flag:true, why:"A preview signpost: it announces what the lecture will cover."},
       " ",
       {t:"two ways cities manage water", flag:false, why:"This is the content: the topic itself."},
@@ -159,7 +159,7 @@ ICA.addUnit({
       {t:"Moving on to", flag:true, why:"A signpost that opens the next section."},
       " the second method…"
     ]},
-    {id:"e1u4-l1-x5", type:"mcq", q:"Ten minutes into a lecture, Priya hears: “There are three main reasons why the policy failed.” What is the most useful thing to do?", options:[
+    {id:"e1u4-l1-x5", type:"mcq", listen:"e1u4-l1-a5", q:"Ten minutes into a lecture, Priya hears: “There are three main reasons why the policy failed.” What is the most useful thing to do?", options:[
       {t:"Write 1, 2 and 3 down the page and fill in each reason as it comes", ok:true, why:"The preview tells her the structure in advance. Numbered gaps make each reason easy to catch and show at once if she missed one."},
       {t:"Stop taking notes until the lecturer has finished all three reasons", why:"Waiting means relying on memory for several minutes of detail. Notes are easier to take as each reason arrives."},
       {t:"Write the sentence down word for word", why:"The sentence itself has little content. Its value is the structure it predicts, which three numbers capture faster."},
@@ -172,13 +172,13 @@ ICA.addUnit({
       ["≈","approximately","≈ marks an estimate or rough figure."],
       ["w/o","without","w/o is a common short form; w/ means “with”."]
     ]},
-    {id:"e1u4-l1-x7", type:"mcq", q:"The lecturer says: “Interestingly, in rural areas, the number of clinics actually fell by about a third between 2010 and 2020, mainly because of staff shortages.” Which note keeps the most meaning in the fewest words?", options:[
+    {id:"e1u4-l1-x7", type:"mcq", listen:"e1u4-l1-a7", q:"The lecturer says: “Interestingly, in rural areas, the number of clinics actually fell by about a third between 2010 and 2020, mainly because of staff shortages.” Which note keeps the most meaning in the fewest words?", options:[
       {t:"rural clinics ↓ ≈ ⅓ (2010–20) ∵ staff shortages", ok:true, why:"It keeps every piece of content (where, what, how much, when, why) and turns the linking words into symbols."},
       {t:"Interestingly, in rural areas, clinics fell", why:"It keeps an empty word (“Interestingly”) and loses the size, the dates and the reason."},
       {t:"clinics ↓ ∵ staff", why:"Too short: “rural”, the size of the fall and the dates are gone, and “staff” alone could mean anything."},
       {t:"the number of clinics actually fell by about a third", why:"Long and still incomplete: it copies words like “the number of” and “actually” but loses where, when and why."}
     ]},
-    {id:"e1u4-l1-x8", type:"explain", q:"A lecturer says: “By the way, I once saw this in Lagos… Anyway, going back to the second cause, the key point here is drainage.” Explain what each signpost tells you, and how you would show it in your notes.", size:"3–4 sentences", hint:"Which part is an aside, where does the main line start again, and what is emphasised?", model:"“By the way” signals an aside: a side comment that is less central, so I’d note it briefly as “(aside)” or skip it. “Anyway, going back to” tells me the lecturer is returning to the main line, here the second cause, so I’d continue under point 2 in my notes. “The key point here is” signals emphasis, so “drainage” is something I must write down and mark with a star or NB. Signposts carry little content, but they tell me where to file what comes next.", points:["Identifies “By the way” as an aside that is less central", "Identifies “Anyway, going back to” as a return to the main line", "Identifies “the key point here is” as emphasis", "Describes how each would appear in notes (aside label, numbering, star or NB)"]}
+    {id:"e1u4-l1-x8", type:"explain", listen:"e1u4-l1-a8", q:"Dr Amoako, a guest lecturer from Ghana who teaches information science, says: “By the way, I once saw this in Lagos… Anyway, going back to the second cause, the key point here is drainage.” Explain what each signpost tells you, and how you would show it in your notes.", size:"3–4 sentences", hint:"Which part is an aside, where does the main line start again, and what is emphasised?", model:"“By the way” signals an aside: a side comment that is less central, so I’d note it briefly as “(aside)” or skip it. “Anyway, going back to” tells me the lecturer is returning to the main line, here the second cause, so I’d continue under point 2 in my notes. “The key point here is” signals emphasis, so “drainage” is something I must write down and mark with a star or NB. Signposts carry little content, but they tell me where to file what comes next.", points:["Identifies “By the way” as an aside that is less central", "Identifies “Anyway, going back to” as a return to the main line", "Identifies “the key point here is” as emphasis", "Describes how each would appear in notes (aside label, numbering, star or NB)"]}
    ],
    apply:{intro:"You need a free lecture with a transcript (Open Yale Courses and TED both have them: see lesson 5), or a recorded lecture from your own course, plus paper or a notes app.", tasks:[
     {t:"Take notes on 15 minutes of a real lecture", how:["Choose a lecture with a transcript. Read its title and write 5–8 words you expect to hear.","Listen to 15 minutes once, without pausing, taking notes with symbols and short forms.","Now read the transcript for the same 15 minutes. Mark what you caught and what you missed.","Write down which signposts helped you most."], write:"Lecture and topic… Words I predicted… What I caught well… What I missed and why… Signposts that helped…"},
@@ -291,7 +291,7 @@ ICA.addUnit({
       {t:"“I completely agree with Tomás.”", b:0, why:"“Completely agree” is full agreement."},
       {t:"“I don’t think the evidence supports that.”", b:2, why:"A clear disagreement, focused on the evidence rather than the person."}
     ]},
-    {id:"e1u4-l2-x3", type:"mcq", q:"A classmate says: “Online classes are always worse than face-to-face classes.” Which reply disagrees in a way that is most likely to move an academic discussion forward?", options:[
+    {id:"e1u4-l2-x3", type:"mcq", listen:"e1u4-l2-a3", q:"Kaito, a first-year student, says in a seminar: “Online classes are always worse than face-to-face classes.” Which reply disagrees in a way that is most likely to move an academic discussion forward?", options:[
       {t:"“I’m not sure that’s always true. The study we read found online classes worked well for students who live far from campus.”", ok:true, why:"It questions the word “always”, stays polite and gives a reason from the reading that others can respond to."},
       {t:"“No.”", why:"A bare “no” gives others nothing to discuss and can sound dismissive."},
       {t:"“You obviously haven’t done the reading.”", why:"It attacks the person, not the idea, and gives no evidence."},
@@ -303,7 +303,7 @@ ICA.addUnit({
       {t:"“I disagree.”", why:"Direct but neutral: a plain statement with no softener and no insult."},
       {t:"“That’s simply wrong.”", why:"Most direct: “simply wrong” leaves no room for the other view and can sound dismissive in a seminar."}
     ]},
-    {id:"e1u4-l2-x5", type:"spot", q:"Tap every **softening** device in Hana’s seminar turn.", ask:"is a softener", parts:[
+    {id:"e1u4-l2-x5", type:"spot", listen:"e1u4-l2-a5", q:"Mariya, a Japanese student of English interpreting, makes a point in a seminar. Tap every **softening** device in her turn.", ask:"is a softener", parts:[
       {t:"I wonder if", flag:true, why:"A tentative opening: it presents the point as a possibility to consider."},
       " ",
       {t:"the survey", flag:false, why:"Content: what she is talking about."},
@@ -404,7 +404,7 @@ ICA.addUnit({
         "**percent or percentage points?** If a rate goes from 20% to 30%, it has risen by **10 percentage points**, which is a **50% increase** (10 is half of 20). Say which one you mean.",
         "**“the data show” or “the data shows”?** Both are used in academic English today. Many fields and style guides prefer the plural; choose one and stay consistent."
       ]},
-      {ex:"“This graph shows the share of students who cycle to campus, from 2019 to 2024. It rose steadily, from 12% to 18%, and then levelled off. That’s an increase of six percentage points.”", label:"Worked example (invented data)"}
+      {listen:"e1u4-l3-a1", ex:"Yến, a master’s student in information engineering, presents her data:\n“This graph shows the share of students who cycle to campus, from 2019 to 2024. It rose steadily, from 12% to 18%, and then levelled off. That’s an increase of six percentage points.”", label:"Worked example (invented data)"}
     ]},
     {h:"Notes, rehearsal and your voice", body:[
       {list:[
@@ -547,7 +547,7 @@ ICA.addUnit({
     ]},
     {h:"Sentence stress and weak forms", body:[
       "[[sentence-stress|Sentence stress]] works the same way at a larger scale. Content words (nouns, main verbs, adjectives, adverbs) are usually stressed; function words (the, a, of, to, and, is) usually aren’t. In each phrase, one word usually carries the **main stress**: often the last content word, or the word with new or contrasting information.",
-      {ex:"Neutral: “We measured the temperature at twenty SCHOOLS.”\nContrast: “Did you measure humidity?” “No, we measured TEMperature.”\nCorrection: “Is the seminar on Thursday?” “No, it’s on TUESday.”", label:"The main stress moves to the new or contrasting word", mono:true},
+      {listen:"e1u4-l4-a1", ex:"Neutral: “We measured the temperature at twenty SCHOOLS.”\nContrast: “Did you measure humidity?” “No, we measured TEMperature.”\nCorrection: “Is the seminar on Thursday?” “No, it’s on TUESday.”", label:"The main stress moves to the new or contrasting word", mono:true},
       "Moving the main stress changes the message. “The SEMinar is on Tuesday” answers “What’s on Tuesday?”; “The seminar is on TUESday” answers “When is the seminar?”. Jenkins counted this kind of main stress as core, because getting it wrong can mislead.",
       "Many speakers shorten function words into [[weak-form|weak forms]]: “to” becomes /tə/, “and” becomes /ən/, “can” becomes /kən/. Jenkins found weak forms aren’t needed for being understood internationally, so you don’t have to produce them. **Recognising** them is a different matter: many lecturers use them, and knowing them makes fast speech much easier to follow. “We want to compare” can sound like “we wanna compare”."
     ]},
@@ -619,13 +619,13 @@ ICA.addUnit({
       {t:"“Please reCORD the interview.”", b:1, why:"Verb (to record): second-syllable stress."},
       {t:"“Keep a REcord of your sources.”", b:0, why:"Noun (a record): first-syllable stress."}
     ]},
-    {id:"e1u4-l4-x6", type:"spot", q:"Ana asks: “Is the deadline on Friday the tenth?” Ben replies: “No, it’s on Friday the twelfth.” Tap the word in Ben’s reply that should carry the **main stress**.", ask:"carries the main stress", parts:[
+    {id:"e1u4-l4-x6", type:"spot", hearAfter:"e1u4-l4-a6", q:"Aoi asks: “Is the deadline on Friday the tenth?” Toby, her housemate from Australia, replies: “No, it’s on Friday the twelfth.” Tap the word in Toby’s reply that should carry the **main stress**.", ask:"carries the main stress", parts:[
       "No, ",
       {t:"it’s", flag:false, why:"A function word with no new information. It is usually unstressed."},
       " ",
       {t:"on", flag:false, why:"A preposition: a function word, usually unstressed."},
       " ",
-      {t:"Friday", flag:false, why:"Friday was already in Ana’s question, so it isn’t new. Stressing it would suggest the day was wrong."},
+      {t:"Friday", flag:false, why:"Friday was already in Aoi’s question, so it isn’t new. Stressing it would suggest the day was wrong."},
       " ",
       {t:"the", flag:false, why:"An article: almost never the main stress."},
       " ",
@@ -687,7 +687,7 @@ ICA.addUnit({
       {h:"During"},
       {table:[
         ["You want to…","Phrases"],
-        ["Open","“Hello, Dr Mensah. I’m Lucía, from the Tuesday seminar on environmental policy. Do you have a few minutes?”"],
+        ["Open","“Hello, Professor Ōnishi. I’m Cheska, from the Tuesday seminar on disaster governance. Do you have a few minutes?”"],
         ["State your purpose","“I wanted to ask about the essay question.” · “I’m not sure I understood the part about…”"],
         ["Ask for feedback","“Could you look at my outline and tell me whether the argument is clear?”"],
         ["Check","“So, if I understand correctly, I should focus on…?”"],
@@ -697,7 +697,7 @@ ICA.addUnit({
       "Write down what you agreed and what to do next while it is fresh. If the lecturer promised to send something, a short thank-you email can remind them politely.",
       {h:"How to address a lecturer"},
       "Forms of address vary by country, institution, field and person. “Professor Kaur”, “Dr Kaur” and “Amrita” can all be normal somewhere, and in some systems “Professor” is a specific senior rank, not a general word for a lecturer. **Follow the lecturer’s lead**: how they introduce themselves, how they sign emails, what the course page uses. If you are unsure, use their title and surname, and let them tell you otherwise.",
-      {ex:"Student: “Hello, Dr Mensah. I’m Lucía, from the Tuesday seminar. Is now a good time?”\nLecturer: “Yes, come in. What can I help with?”\nStudent: “I wanted to check the essay question. Does ‘evaluate’ mean I need to give my own judgement?”\nLecturer: “Yes. Weigh the evidence and then say which view is stronger, and why.”\nStudent: “So, if I understand correctly, I should end each section with a judgement?”\nLecturer: “Exactly.”\nStudent: “Thank you, that’s really helpful.”", label:"A short office-hours conversation"}
+      {listen:"e1u4-l5-a1", ex:"Cheska: “Hello, Professor Ōnishi. I’m Cheska, from the Tuesday seminar. Is now a good time?”\nProf. Ōnishi: “Yes, come in. What can I help with?”\nCheska: “I wanted to check the essay question. Does ‘evaluate’ mean I need to give my own judgement?”\nProf. Ōnishi: “Yes. Weigh the evidence and then say which view is stronger, and why.”\nCheska: “So, if I understand correctly, I should end each section with a judgement?”\nProf. Ōnishi: “Exactly.”\nCheska: “Thank you, that’s really helpful.”", label:"Office hours: Cheska, a master’s student from the Philippines, visits Prof. Ōnishi"}
     ]},
     {h:"English as a lingua franca", body:[
       "[[english-as-a-lingua-franca|English as a lingua franca]] (ELF) means English used for communication between people who don’t share a first language. The linguist Barbara Seidlhofer (2011) defined it broadly as any use of English among speakers of different first languages for whom English is the chosen means of communication, and often the only option.",
@@ -1067,7 +1067,7 @@ ICA.addUnit({
      starter:[
       "Office hours are times when a lecturer or teaching assistant is available for students to drop in or book a short meeting. Some universities call them student hours or consultation hours.",
       "Think of them as a help desk for your course. You can ask about something from a lecture, check an assignment question, or get advice on a plan.",
-      "Prepare two or three specific questions. Open with your name, your class and your purpose: “Hello, Dr Mensah. I’m Lucía, from the Tuesday seminar. I wanted to ask about the essay question.” Close with thanks.",
+      "Prepare two or three specific questions. Open with your name, your class and your purpose: “Hello, Professor Ōnishi. I’m Cheska, from the Tuesday seminar. I wanted to ask about the essay question.” Close with thanks.",
       "How you address a lecturer depends on the place and the person. Follow their lead; if unsure, use their title and surname.",
       {key:"Specific questions get specific help."}
      ],

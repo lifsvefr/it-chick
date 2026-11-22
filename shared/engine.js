@@ -36,7 +36,7 @@ ICA.capstones = {};
 ICA.addCapstone = function(c){ ICA.capstones[c.track] = c; };
 ICA.loadAll = function(base, done, opt){
   ICA.base = base; opt = opt || {};
-  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
+  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/audio-listen.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
   var total = files.length, n = 0, failed = [], finished = false, ui = null;
   /* a loading screen appears only if loading takes more than a moment */
   var showT = setTimeout(function(){ if (!finished) ui = ICA.loadingScreen(opt.pixel); upd(); }, 250);
@@ -259,7 +259,7 @@ ICA.blocks = function(list){
     if (b.tip) return '<div class="callout tip"><b class="h">Tip</b>'+ICA.md(b.tip)+"</div>";
     if (b.warn) return '<div class="callout warn"><b class="h">Watch out</b>'+ICA.md(b.warn)+"</div>";
     if (b.key) return '<div class="callout key"><b class="h">Big idea</b>'+ICA.md(b.key)+"</div>";
-    if (b.ex) return '<div class="callout ex"><b class="h">'+ICA.esc(b.label||"Example")+"</b>"+(b.mono ? "<pre>"+ICA.esc(b.ex)+"</pre>" : ICA.md(b.ex))+"</div>";
+    if (b.ex) return '<div class="callout ex"><b class="h">'+ICA.esc(b.label||"Example")+"</b>"+(b.listen ? listenBtn(b.listen) : "")+(b.mono ? "<pre>"+ICA.esc(b.ex)+"</pre>" : ICA.md(b.ex))+"</div>";
     if (b.terms) return '<dl class="keyterms">'+b.terms.map(function(id){ var t = ICA.terms[id]; return t ? '<dt><button type="button" class="term" data-term="'+id+'">'+ICA.md(t.term)+'</button></dt><dd>'+ICA.md(t.def)+'</dd>' : ""; }).join("")+'</dl>';
     if (b.look) return '<div class="callout look"><b class="h">Look for these while you read</b><ol>'+b.look.map(function(x){ return "<li>"+ICA.md(x)+"</li>"; }).join("")+'</ol></div>';
     if (b.beyond) return '<div class="callout beyond"><b class="h">Beyond the book</b>'+ICA.md(b.beyond)+'</div>';
@@ -531,7 +531,10 @@ ICA.topbar = function(title){
    ICA.exercise(el, ex, {onSolved(firstTry), quiz:false})
    ===================================================================== */
 var KIND = {mcq:"Choose", sort:"Sort", order:"Put in order", match:"Match", spot:"Spot it", number:"Work it out", type:"Type it"};
-function head(ex){ return '<div class="kind">'+(KIND[ex.type]||"Try")+'</div><div class="q">'+ICA.md(ex.q)+'</div>'+(ex.hint ? '<div class="small muted">'+ICA.md(ex.hint)+'</div>' : ""); }
+/* English listening clips (data/audio-listen.js): a passage or exercise with `listen` gets a Listen button; `hearAfter` shows one once you've answered */
+function listenBtn(key, label){ return '<div class="row lrow"><button type="button" class="btn small" data-listen="'+ICA.esc(key)+'">'+(label || "▶ Listen")+'</button></div>'; }
+document.addEventListener("click", function(e){ var b = e.target.closest && e.target.closest("[data-listen]"); if (!b) return; e.preventDefault(); if (ICA.say("listen", b.getAttribute("data-listen"), b) === false && ICA.toast) ICA.toast("That recording isn’t available yet."); });
+function head(ex){ return '<div class="kind">'+(KIND[ex.type]||"Try")+'</div><div class="q">'+ICA.md(ex.q)+'</div>'+(ex.listen ? listenBtn(ex.listen) : "")+(ex.hint ? '<div class="small muted">'+ICA.md(ex.hint)+'</div>' : ""); }
 function fbBox(cls, title, body){ return '<div class="fb '+cls+'" role="status"><b>'+title+'</b>'+(body||"")+'</div>'; }
 function lis(arr){ return arr.length ? "<ul>"+arr.map(function(x){ return "<li>"+x+"</li>"; }).join("")+"</ul>" : ""; }
 
@@ -542,7 +545,7 @@ ICA.exercise = function(el, ex, opt){
   if (!R){ el.innerHTML = '<p class="muted">This exercise type isn’t available yet.</p>'; return; }
   var state = {tries:0, solved:false, firstTry:null};
   function solved(ok){ if (state.solved) return; state.solved = true; if (state.firstTry === null) state.firstTry = ok; if (opt.onSolved) opt.onSolved(state.firstTry); }
-  function attempt(ok){ state.tries++; if (state.firstTry === null) state.firstTry = ok; if (ok) solved(true); }
+  function attempt(ok){ state.tries++; if (state.firstTry === null) state.firstTry = ok; if (ex.hearAfter && !el.querySelector(".hearafter")) el.insertAdjacentHTML("beforeend", '<div class="hearafter">'+listenBtn(ex.hearAfter, "▶ Hear it")+'</div>'); if (ok) solved(true); }
   R(el, ex, {attempt:attempt, solved:solved, state:state, quiz:!!opt.quiz, onAnswer:opt.onAnswer});
 };
 
@@ -932,7 +935,7 @@ ICA.applySettings();
 /* ---------- Audio: ▶ buttons for Japanese examples and Mugi's lines ----------
    data/audio-index.js sets window.ICA_AUDIO = {ja:{text:file}, mugi:{text:file}}; clips live in audio/.
    Japanese text is found after rendering: runs of <span lang="ja"> and <ruby lang="ja"> that sit side by side. */
-ICA.audioIndex = function(){ var a = window.ICA_AUDIO || {ja:{}, mugi:{}}; if (window.ICA_STORY_AUDIO) a.story = window.ICA_STORY_AUDIO; return a; };
+ICA.audioIndex = function(){ var a = window.ICA_AUDIO || {ja:{}, mugi:{}}; if (window.ICA_STORY_AUDIO) a.story = window.ICA_STORY_AUDIO; a.listen = window.ICA_LISTEN || {}; return a; };
 ICA.sayText = function(nodes){ return nodes.map(function(n){ if (n.nodeType === 3) return n.nodeValue; var c = n.cloneNode(true); ICA.$$("rt,rp", c).forEach(function(r){ r.parentNode.removeChild(r); }); return c.textContent; }).join("").replace(/\s+/g, " ").trim(); };
 function jaNode(n){ return n && n.nodeType === 1 && (n.tagName === "SPAN" || n.tagName === "RUBY") && n.getAttribute("lang") === "ja" && !n.classList.contains("say"); }
 /* a tappable word inside a Japanese line ("Spot it" exercises): part of the spoken line, not a break in it */
