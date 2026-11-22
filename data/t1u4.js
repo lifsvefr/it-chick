@@ -57,7 +57,7 @@ ICA.addUnit({
         ["The post office picture","What really happens"],
         ["You give away the parcel","The sender keeps the original. Packets are copies made of electrical, radio or light signals."],
         ["Delivery takes days","Each hop takes a tiny fraction of a second; a packet can cross the world in well under a second."],
-        ["You notice a lost parcel and complain","Software notices automatically. For a file or a web page, the missing packet is quietly resent (this is the job of a protocol called **TCP**)."],
+        ["You notice a lost parcel and complain","Software notices automatically. For a file or a web page, the missing packet is resent automatically (this is the job of a protocol called **TCP**)."],
         ["Every parcel matters","For live calls and video, a late packet is useless, so it’s often just skipped. That’s the glitch or frozen frame you sometimes see."]
       ]},
       {key:"Everything you send online, from a text to a film, travels as many small, addressed, numbered packets that are reassembled at the other end."}
@@ -85,15 +85,15 @@ ICA.addUnit({
       {warn:"Weather can affect the first wireless stretch. Heavy rain can disrupt some satellite links, and walls weaken Wi-Fi. But “the internet” as a whole doesn’t depend on the sky. It runs mostly on cables in the ground and under the sea."}
     ]},
     {h:"What “the cloud” physically is", body:[
-      "When your photos are “in the cloud” (see {{cloud-storage}}), they aren’t floating anywhere. [[cloud|The cloud]] means computers owned by a company, which you use over the internet instead of your own device. Those computers live in [[data-center|data centers]]: large, secure buildings full of racks of [[web-server|servers]] and storage drives.",
+      "When your photos are “in the cloud” (see {{cloud-storage}}), they aren’t floating anywhere. [[cloud|The cloud]] means computers owned by a company, which you use over the internet instead of your own device. Those computers are in [[data-center|data centers]]: large, secure buildings full of racks of [[web-server|servers]] and storage drives.",
       {list:[
         "**Power and cooling.** Thousands of computers produce a lot of heat, so data centers have serious cooling systems and backup power such as batteries and generators.",
         "**Copies in more than one place.** Big providers usually keep data on several drives. They often keep it in more than one building or region. So one broken drive or one power outage doesn’t lose your files.",
-        "**Fast links.** Data centers sit on very high-capacity connections, often close to where many networks meet."
+        "**Fast links.** Data centers are on very high-capacity connections, often close to where many networks meet."
       ]},
       {ex:"Mei opens a shared document on her phone in Lisbon. Her request travels over mobile data to her ISP, through several networks, perhaps through an undersea cable, to a data center in another country. A server there reads the file from its drives, splits it into packets and sends them back. The whole round trip usually takes a fraction of a second.", label:"Worked example: opening a cloud document"},
       "Knowing this explains a few everyday things. Cloud files need a connection unless you’ve made them available offline (Lesson 5 and {{sync}}). A problem at a provider’s data center can take a service down for millions of people at once. And because the computers are in real places, laws about data can depend on which country they’re in.",
-      "One more layer sits inside those buildings. A single physical server is usually split into several [[virtual-machine|virtual machines]]. Companies rent these, ready-made platforms or whole finished apps. Unit 12, Lesson 3 explains these as {{cloud-service-models|IaaS, PaaS and SaaS}}."
+      "One more layer is inside those buildings. A single physical server is usually split into several [[virtual-machine|virtual machines]]. Companies rent these, ready-made platforms or whole finished apps. Unit 12, Lesson 3 explains these as {{cloud-service-models|IaaS, PaaS and SaaS}}."
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -153,7 +153,7 @@ ICA.addUnit({
       {t:"On drives in servers in her provider’s data centers", ok:true, why:"The cloud is other people’s computers. Her photos are on drives in data-center buildings, often copied to more than one place."},
       {t:"In satellites orbiting the Earth", why:"Satellites can carry some internet traffic, but cloud data is stored in data centers on the ground."},
       {t:"Spread in small pieces across other users’ phones", why:"Mainstream cloud storage doesn’t use other people’s devices. It uses the provider’s own servers."},
-      {t:"Only on her own phone, with the word “cloud” as a label", why:"If they were only on her phone, she couldn’t open them from another device. Cloud copies live on the provider’s servers (her phone may also keep copies)."}
+      {t:"Only on her own phone, with the word “cloud” as a label", why:"If they were only on her phone, she couldn’t open them from another device. Cloud copies are stored on the provider’s servers (her phone may also keep copies)."}
     ]},
       {id:"t1u4-l1-x8", type:"explain", q:"Explain to a friend how a photo she sends gets across the internet. Use the words “packet” and “router”.", hint:"Think of the 600-page manuscript split into numbered envelopes, then make the picture accurate.", model:"The photo isn’t sent as one piece. It is split into many small packets. Each has a header, like the writing on an envelope. The header has the sender’s and receiver’s IP addresses and a number saying where that piece fits. Each packet also has a payload: the piece of the photo itself. Routers pass each packet along. A router reads the destination address and sends the packet one step closer, without knowing the whole route. Packets may take different routes and arrive out of order. So the receiver puts them back together by number, and any missing ones are resent.", points:["Says the photo is split into many small packets", "Says each packet carries addresses and a number in its header", "Says routers pass packets on step by step toward the destination", "Says the packets are put back in order at the other end (missing ones resent)"]}
    ],
@@ -251,7 +251,7 @@ ICA.addUnit({
         ["Restricted","`.gov`, `.edu`","Only for particular kinds of organization (in practice mostly in the United States)."]
       ]},
       "Some countries add a second level, as in `.co.uk` or `.com.au`. It behaves like one ending. Some country codes are also used worldwide for their look. `.tv` belongs to Tuvalu and `.io` to the British Indian Ocean Territory. Yet both are popular with businesses everywhere.",
-      "Nobody truly *buys* a domain name. You rent the right to use it from a **registrar**, usually a year at a time, and renew it to keep it. If an organization forgets to renew, someone else can register the name, which is one reason an old link can suddenly lead somewhere unexpected.",
+      "Nobody *buys* a domain name. You rent the right to use it from a **registrar**, usually a year at a time, and renew it to keep it. If an organization forgets to renew, someone else can register the name, which is one reason an old link can suddenly lead somewhere unexpected.",
       {warn:"A TLD tells you very little about trustworthiness. A `.com` can be a scam and a `.xyz` can be legitimate. What matters is the **whole** registered domain, and whether it’s the one you expected (see {{url-anatomy}})."}
     ]},
     {h:"Common misconceptions", body:[
@@ -385,7 +385,7 @@ ICA.addUnit({
       "If one router can’t cover the whole home, there are three common fixes:",
       {table:[
         ["Option","How it works","Best for"],
-        ["[[mesh-wifi|Mesh Wi-Fi]]","Several matching units work together to create one network that devices move through seamlessly","Larger or multi-story homes"],
+        ["[[mesh-wifi|Mesh Wi-Fi]]","Several matching units work together to create one network that devices move through without interruption","Larger or multi-story homes"],
         ["Wi-Fi extender","Plugs into a socket and repeats the signal; sometimes creates a second network name","One weak room, on a budget"],
         ["Ethernet cable","A wired connection from the router to the device or to a second access point","Desktops, TVs, consoles, video calls"]
       ]},
@@ -525,8 +525,8 @@ ICA.addUnit({
     {h:"Browsers, websites and servers", body:[
       {lead:"Every time you open a web page, two computers have a short, very fast conversation."},
       "A [[web-browser|web browser]] is the app you use to open web pages: for example Chrome, Edge, Safari, Firefox or Samsung Internet. Its job is to ask for pages and turn what comes back into something you can read, click and scroll.",
-      "A [[website]] is a collection of pages and files under one domain name, such as `example.org`. Those files live on a [[web-server|web server]]: a computer, usually in a data center (Lesson 1), running software that waits for requests and answers them. A big website may use thousands of servers in many countries, but to your browser it behaves like one.",
-      "This arrangement is called **client and server**. Your browser is the client: it asks. The server serves: it answers. The same pattern sits behind most apps too. When a weather app shows today’s forecast, it has asked a server for it in much the same way. Unit 12, Lesson 5 follows such a request all the way through an app, from the screen to the server’s database and back.",
+      "A [[website]] is a collection of pages and files under one domain name, such as `example.org`. Those files are stored on a [[web-server|web server]]: a computer, usually in a data center (Lesson 1), running software that waits for requests and answers them. A big website may use thousands of servers in many countries, but to your browser it behaves like one.",
+      "This arrangement is called **client and server**. Your browser is the client: it asks. The server serves: it answers. The same pattern is behind most apps too. When a weather app shows today’s forecast, it has asked a server for it in much the same way. Unit 12, Lesson 5 follows such a request all the way through an app, from the screen to the server’s database and back.",
       {table:[
         ["Word","Plain meaning","Example"],
         ["Browser","The app that asks for and shows pages","Firefox on Lucía’s laptop"],
@@ -536,7 +536,7 @@ ICA.addUnit({
       ]}
     ]},
     {h:"Requests and responses", body:[
-      "The conversation follows rules called [[http|HTTP]] (Hypertext Transfer Protocol). It’s a simple pattern: the browser sends a **request**, the server sends back a **response**. Here’s what happens when Lucía types `example.org/menu` and presses Enter:",
+      "The conversation follows rules called [[http|HTTP]] (Hypertext Transfer Protocol). It’s a simple pattern: the browser sends a **request**, the server sends back a **response**. This is what happens when Lucía types `example.org/menu` and presses Enter:",
       {ol:[
         "**Find the server.** The browser looks up `example.org` with DNS (Lesson 2) to get its IP address, unless it’s already cached.",
         "**Connect securely.** It opens a connection to the server and, for HTTPS, the two agree on encryption keys so nobody in between can read what follows.",
@@ -549,8 +549,8 @@ ICA.addUnit({
       "The status code is a three-digit summary of the answer. You’ll meet some of them as error pages:",
       {table:[
         ["Code","Meaning","What you might see"],
-        ["`200`","OK: here’s what you asked for","The page, normally"],
-        ["`301`","Moved permanently","Your browser quietly follows to the new address"],
+        ["`200`","OK: this is what you asked for","The page, normally"],
+        ["`301`","Moved permanently","Your browser follows to the new address automatically"],
         ["`403`","Forbidden","“Access denied”: you’re not allowed to see it"],
         ["`404`","Not found","The page doesn’t exist (old link, or a typo)"],
         ["`500`","Server error","Something broke on the website’s side"],
@@ -620,7 +620,7 @@ ICA.addUnit({
       {t:"The browser draws the finished page on screen.", why:"Rendering happens as the files arrive, finishing once they’re all in."}
     ]},
     {id:"t1u4-l4-x2", type:"match", q:"Match each HTTP status code to what it means for you.", pairs:[
-      ["200","Everything worked: here’s the page","200 OK is the normal, successful response."],
+      ["200","Everything worked: this is the page","200 OK is the normal, successful response."],
       ["301","The page has moved; your browser follows to the new address","A permanent redirect. You usually don’t notice it."],
       ["404","The page doesn’t exist: a broken link or a typo","The server is fine and answered; that particular page isn’t there."],
       ["403","You’re not allowed to see this","Forbidden: the server understood but refuses, because you don’t have permission to see that page."],
@@ -915,7 +915,7 @@ ICA.addUnit({
       {t:"Old DNS answers are cached, and resolvers update at different times", ok:true, why:"Browsers, devices and resolvers remember recent DNS answers. Her resolver may still hold the old address for a while."},
       {t:"Her IP address is blocked by the bakery", why:"Being blocked would show an error, not the old site. She is being sent to the old address."}
     ]},
-    {id:"t1u4-cp06", lesson:"t1u4-l3", level:2, q:"Wanjiru’s router sits inside a metal cabinet in a corner of the hallway. Her laptop works well next to it, but Wi-Fi is weak in her bedroom. What is the best first step?", options:[
+    {id:"t1u4-cp06", lesson:"t1u4-l3", level:2, q:"Wanjiru’s router is inside a metal cabinet in a corner of the hallway. Her laptop works well next to it, but Wi-Fi is weak in her bedroom. What is the best first step?", options:[
       {t:"Hide the network name so fewer neighbors use the signal", why:"Hiding the network name doesn’t improve coverage, and it isn’t real protection either."},
       {t:"Pay for a faster internet plan so the signal reaches every room", why:"Her laptop works well next to the router, so the plan is fine. The problem is how far the Wi-Fi reaches."},
       {t:"Move the router out of the cabinet, to a central, higher spot", ok:true, why:"Metal blocks signals, and corners waste coverage. Better placement is free and often fixes weak rooms."},
@@ -1034,7 +1034,7 @@ ICA.addUnit({
      starter:[
       "The internet is mostly cables. Wireless links (Wi-Fi, mobile data, satellite) usually cover only the first short stretch from your device. After that, data travels through cables, much of it as light in thin glass fibers.",
       "Between continents, data crosses the sea floor in [[undersea-cable|undersea cables]]. TeleGeography, which maps them, counts more than 600 active and planned cables, and says most are about as thick as a garden hose along most of their route.",
-      "[[cloud|The cloud]] means using computers owned by a company over the internet. Those computers sit in [[data-center|data centers]]: secure buildings full of servers and storage drives, with powerful cooling and backup power.",
+      "[[cloud|The cloud]] means using computers owned by a company over the internet. Those computers are in [[data-center|data centers]]: secure buildings full of servers and storage drives, with powerful cooling and backup power.",
       {key:"Your cloud photos are on real drives in real buildings, reached through real cables."}
      ],
      builder:[
@@ -1155,7 +1155,7 @@ ICA.addUnit({
       "When you see an unfamiliar domain, ask whether it’s the one you expected for that organization. Banks, governments and shops usually keep the same registered domain everywhere, with subdomains for different services (`help.`, `login.`, `shop.`). A different registered domain, even one containing the brand’s name, belongs to someone else until proven otherwise."
      ],
      pro:[
-      "The DNS is a tree. The root sits above all TLDs; each TLD is run by a **registry**, which keeps the authoritative list of registered names and their name servers. Registrars sell registrations to the public and pass them to the registry. ICANN coordinates the root and the policies for generic TLDs; country-code TLDs set many of their own rules.",
+      "The DNS is a tree. The root is above all TLDs; each TLD is run by a **registry**, which keeps the authoritative list of registered names and their name servers. Registrars sell registrations to the public and pass them to the registry. ICANN coordinates the root and the policies for generic TLDs; country-code TLDs set many of their own rules.",
       "Where the registrable part of a name starts isn’t always obvious, because some registries offer second-level registrations (`.co.uk`). Browsers rely on the **Public Suffix List** to work out which part is the registrable domain, which affects security boundaries such as which sites may share cookies.",
       "Internationalized domain names allow non-Latin scripts. Underneath, they’re encoded as **punycode** strings beginning `xn--`. Browsers may display that encoded form when a name mixes look-alike characters from different scripts, to defend against homograph attacks.",
       "Registration data (who owns a domain) is looked up with WHOIS or its successor, RDAP; much personal data is now redacted for privacy, so ownership may not be visible.",
@@ -1187,7 +1187,7 @@ ICA.addUnit({
       "Apple and Google recommend one network name across all bands, so devices choose automatically. Wi-Fi generations are numbered by the Wi-Fi Alliance: Wi-Fi 4, 5, 6, 6E and 7. A connection works at the highest level both ends support.",
       "Hotspot good practice: set a strong password; turn it off when done; keep the phone charged; mark the connection as metered or low-data on the laptop so updates and backups don’t eat the allowance; check whether your plan limits hotspot use. Android’s help notes that a Wi-Fi hotspot can share with up to 10 devices and that some carriers limit or charge for tethering.",
       "Bluetooth uses the 2.4 GHz band. Its range depends heavily on the devices; the Bluetooth Special Interest Group says it can be anywhere from under a meter to over a kilometer. For headphones and keyboards, expect roughly a room.",
-      "When Wi-Fi is weak, some phones switch to mobile data on their own (iPhone calls this Wi-Fi Assist; many Android phones have a similar option), which can quietly use your allowance."
+      "When Wi-Fi is weak, some phones switch to mobile data on their own (iPhone calls this Wi-Fi Assist; many Android phones have a similar option), which can use your allowance without warning."
      ],
      pro:[
       "Higher frequencies carry more data but are absorbed more by walls and travel less far. The Wi-Fi Alliance notes that 6 GHz and 5 GHz have essentially identical propagation; the gain at 6 GHz is spectrum: room for wide 80 MHz and 160 MHz channels with little congestion. Rules for 6 GHz vary by country, and some regions allow only part of the band.",
@@ -1280,7 +1280,7 @@ ICA.addUnit({
       "The NSA’s 2023 guidance adds: replace routers when they reach end of life for support; reboot regularly (it notes that some malicious implants on home routers don’t survive a reboot); enable protected management frames where available; confirm the router provides NAT and firewall protection, including for IPv6; and segment the network into primary, guest and IoT networks.",
       "Official sources occasionally differ in detail. CISA and the NSA give different minimum passphrase lengths (16 and 20 characters), and some older guides still suggest hiding the network name, which Apple and the NSA say adds no security. Where advice conflicts, prefer the measure that adds real protection (length, WPA3, updates) over cosmetic ones.",
       "WPA3 Personal replaces WPA2’s pre-shared key handshake with SAE (Simultaneous Authentication of Equals), which resists offline password guessing even if an attacker captures the handshake. WPA2/WPA3 transition mode lets older devices connect with WPA2 while newer ones use WPA3.",
-      "Routers are attractive targets because they’re always on, rarely updated and sit between you and everything you do. A compromised router can change DNS settings to send you to fake sites, or join a botnet. That’s why admin access and updates matter more than any single Wi-Fi setting.",
+      "Routers are attractive targets because they’re always on, rarely updated and stand between you and everything you do. A compromised router can change DNS settings to send you to fake sites, or join a botnet. That’s why admin access and updates matter more than any single Wi-Fi setting.",
       {tip:"If your ISP manages your router, ask whether it updates the firmware automatically and how to change the admin password. If you can’t secure it, a router of your own behind the ISP box is an option."}
      ]
     },
@@ -1481,7 +1481,7 @@ ICA.addUnit({
       "Operating systems treat “metered” or “low data” as a hint to apps: well-behaved apps postpone large transfers and background sync. Not every app respects it, so check per-app data usage pages (iPhone: Cellular settings; Android: data usage; Windows: Data usage under Advanced network settings) to find heavy users.",
       "Android lets you exempt trusted apps under **Data Saver → Unrestricted data**. Windows lets you set a data limit per network and warns as you approach it. Apple’s Low Data Mode settings for Wi-Fi networks sync across your devices through iCloud.",
       "Offline-capable web apps use browser storage to keep working without a connection and sync later; clearing site data can remove unsynced offline changes, so let them sync first.",
-      "Video data use scales with resolution and frame rate; many apps’ “auto” setting adapts to your connection, which can quietly use a lot on fast mobile networks. Setting a fixed lower quality on mobile data is the most effective single saving.",
+      "Video data use scales with resolution and frame rate; many apps’ “auto” setting adapts to your connection, which can use a lot without warning on fast mobile networks. Setting a fixed lower quality on mobile data is the most effective single saving.",
       {tip:"Before traveling abroad, check roaming charges. Downloading maps and media at home avoids most roaming data use."},
       "When you reconnect after working offline, give your devices time on Wi-Fi to sync before switching off or traveling again, and check that offline edits have uploaded, especially for shared documents where conflicts can appear."
      ]

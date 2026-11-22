@@ -336,7 +336,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"What’s different about research talks", body:[
-      {lead:"A research talk is a presentation with one extra duty: the audience must be able to judge whether your claims are justified. So you show not just what you found, but enough of how you found it."},
+      {lead:"A research talk is a presentation with one extra duty: the audience must be able to judge whether your claims are justified. So you show what you found and also enough of how you found it."},
       "Everything from the Digital Foundations presentations unit still applies: start from the audience and purpose, write one [[key-message|main message]], storyboard before you open the app (see {{presentation-planning}} and {{presenting-skills}}). This lesson adds what is specific to research.",
       {table:[
         ["Format","Typical length","What it’s for"],
@@ -635,7 +635,7 @@ ICA.addUnit({
       {t:"It replaces the DOI of each of your papers.", why:"A DOI identifies a work; an ORCID iD identifies a person. They work together."},
       {t:"It costs a yearly fee, which your publisher or your university will usually pay on your behalf.", why:"ORCID is funded by member organizations, but individuals register and use it free."}
     ]},
-    {id:"t4u10-l4-x8", type:"explain", q:"A reviewer asks you to add a control for household income, but you never collected income data. Explain how you would respond in your response letter, and why that approach works.", size:"3–4 sentences", hint:"You may disagree or decline, with reasons; say exactly what you changed and where.", model:"I’d answer the comment point by point, politely and without being defensive: thank the reviewer, explain that income data weren’t collected so the control can’t be added, and say what I did instead, for example adding it as a limitation in the Discussion, with the page and line numbers, and suggesting it for future studies. Editors accept a well-argued “we did not make this change because…”, and saying exactly what changed and where makes the revision easy to check.", points:["Responds politely and specifically to the comment", "Explains honestly why the change can’t be made", "Describes an alternative change, such as adding a limitation", "Says exactly where the change appears (page, line or section)"]}
+    {id:"t4u10-l4-x8", type:"explain", q:"A reviewer asks you to add a control for household income, but you never collected income data. Explain how you would respond in your response letter, and why that approach works.", size:"3–4 sentences", hint:"You may disagree or decline, with reasons; say exactly what you changed and where.", model:"I’d answer the comment point by point, politely and without being defensive: thank the reviewer, explain that income data weren’t collected so the control can’t be added, and say what I did instead, for example adding it as a limitation in the Discussion, with the page and line numbers, and suggesting it for future studies. Editors accept a well-argued “we did not make this change because…”, and saying exactly what changed and where makes the revision easy to check.", points:["Responds politely and specifically to the comment", "Explains why the change can’t be made", "Describes an alternative change, such as adding a limitation", "Says exactly where the change appears (page, line or section)"]}
    ],
    apply:{intro:"These tasks need only a browser and are free. None requires a university login (a login may give access to more full texts and to your institution’s publishing agreements).", tasks:[
     {t:"Run Think. Check. Submit. on a real journal", how:["Pick a journal in a field you’re interested in (from a paper you’ve read, or from a search).","Open the checklist at thinkchecksubmit.org (choose your language if you like).","Go through each question using the journal’s own website, the ISSN Portal and, for open access journals, DOAJ.","Note anything you couldn’t confirm."], write:"Journal… Scope fits? … Publisher contactable? … Peer review described? … Indexed/archived? … Fees and waivers clear? … Memberships (COPE, DOAJ…)? … Verdict…"},
@@ -702,7 +702,7 @@ ICA.addUnit({
         "[[authorship|Authorship]] of papers from the project (see {{authorship-credit}} in the ethics unit of this track).",
         "Who to go to if something goes wrong: most universities have a graduate school, a director of graduate studies, a postgraduate tutor or an ombudsperson for exactly this."
       ]},
-      {tip:"Before accepting a place, ask current students how supervision works in practice. Most will tell you honestly."}
+      {tip:"Before accepting a place, ask current students how supervision works in practice. Most will tell you."}
     ]},
     {h:"Proposals, milestones and the thesis", body:[
       "Most doctorates, and many research master’s, have [[research-milestones]]: formal checkpoints that show you’re on track. Common ones are:",
@@ -855,7 +855,7 @@ ICA.addUnit({
      {t:"Only the headings matter, because visitors just skim posters", why:"Headings draw people in, but the body text carries the result, so it must be readable at a distance too."}]},
    {id:"t4u10-cp07", lesson:"t4u10-l4", level:2, q:"In Noor’s qualitative paper, Reviewer 1 asks her to remove all participant quotes “to save space”. The quotes are the main evidence for her themes. What should her response letter do?", options:[
      {t:"Skip that comment and answer the others", why:"A response letter answers every comment, point by point, even ones the author disagrees with."},
-     {t:"Remove the quotes quietly to keep the reviewer happy", why:"She is still the author. She doesn’t have to accept a change that would remove her evidence."},
+     {t:"Remove the quotes without saying so to keep the reviewer happy", why:"She is still the author. She doesn’t have to accept a change that would remove her evidence."},
      {t:"Point out that the reviewer clearly doesn’t understand qualitative research", why:"Responses should be polite and specific, not defensive. Criticizing the reviewer won’t persuade the editor."},
      {t:"Thank the reviewer and explain, politely, why the quotes are needed", ok:true, why:"Authors may disagree, with reasons. A polite, well-argued reply, plus any compromise (such as shortening some quotes), is what editors accept."}]},
    {id:"t4u10-cp08", lesson:"t4u10-l5", level:2, q:"Diego is doing a PhD in the UK. He finds a long blog post about preparing for a public defense “where the result is already decided”. How useful is it for him?", options:[
@@ -977,7 +977,7 @@ ICA.addUnit({
         "**Tentative phrases**: “there is some evidence to suggest that…”, “one possible explanation is…”.",
         "**Verbs and nouns**: tend to, appear to, there is a tendency for."
       ]},
-      "The opposite of a hedge is a **booster** (clearly, certainly, undoubtedly). Use boosters only for what is genuinely well established.",
+      "The opposite of a hedge is a **booster** (clearly, certainly, undoubtedly). Use boosters only for what is well established.",
       "Two common errors are **overclaiming** (proof or [[causation]] from a small or [[correlation|correlational]] study) and **over-hedging** (“might possibly perhaps”), which hides real findings.",
       "For concision, watch for nominalizations (“conducted an investigation” → “investigated”), empty openers (“It should be noted that”) and redundant pairs (“each and every”).",
       "**Register** checks: avoid contractions and slang in formal papers; define technical terms the first time; describe people precisely and respectfully (“adults aged 65 and over” rather than “the elderly”); and use the person (“I”, “we” or impersonal forms) your field and style guide expect.",
@@ -1024,7 +1024,7 @@ ICA.addUnit({
      ],
      pro:[
       "Writing research describes composing as **recursive**: drafting changes your understanding, which sends you back to planning. Experienced writers build this in by drafting early, outlining loosely and expecting large revisions, rather than trying to perfect each section in turn.",
-      "Some techniques worth knowing:",
+      "Some useful techniques:",
       {list:[
         "**Reverse outlining at two levels**: paragraph points for structure, and section headings plus one-line summaries for long documents such as theses.",
         "**The first-sentence test**: reading only topic sentences in order shows whether the argument flows.",
@@ -1136,7 +1136,7 @@ ICA.addUnit({
       {list:[
         "The journal’s **preprint policy** and what version you may later share (Jisc’s open policy finder summarizes many journals’ policies).",
         "**APC amounts and waiver policies**, which can differ between journals of the same publisher, and whether your institution has an agreement covering fees.",
-        "Whether the journal is **genuinely indexed** where it claims; some [[predatory-journal|predatory outlets]] list misleading indexes or metrics.",
+        "Whether the journal is **actually indexed** where it claims; some [[predatory-journal|predatory outlets]] list misleading indexes or metrics.",
         "Whether suggested reviewers are allowed and how conflicts are defined."
       ]},
       "If a paper is rejected and you decide to go elsewhere, reformat for the new journal and update the cover letter; if you won’t resubmit to a journal that asked for revisions, withdraw formally first. Some publishers offer transfers to sister journals, sometimes passing on the reviews.",

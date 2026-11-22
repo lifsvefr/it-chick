@@ -12,7 +12,7 @@ ICA.addUnit({
   read:[
     {book:"dbb", where:"Chapter 2 “Japan’s Foreign Policy by Region” and Chapter 3 “Japan’s Foreign Policy to Promote National and Global Interests”", note:"Japan’s government states its own positions here. Read it as a primary source next to other governments’ statements and scholars’ analyses."},
     {book:"doj26", where:"Part II “Japan’s Security and Defense Policy” and Part III “Three Approaches to Achieve the Defense Objectives”", note:"The Ministry of Defense’s own short account of the security documents, the budget, the alliance and partnerships. Official, so read it critically."},
-    {book:"eir", where:"Chapter 17 “Managing Global Security Beyond ‘Pax Americana’” (Harvey M. Sapolsky)", note:"Background on the US alliance system that Japan sits in."}
+    {book:"eir", where:"Chapter 17 “Managing Global Security Beyond ‘Pax Americana’” (Harvey M. Sapolsky)", note:"Background on the US alliance system that Japan belongs to."}
   ],
   lessons:[
   {id:"e4u18-l1", title:"Postwar traditions and the schools that argue about them", minutes:60,
@@ -620,7 +620,7 @@ ICA.addUnit({
       "Economic security (Lesson 3) now runs through trade policy too. Supply-chain agreements, export controls and the 2026 FOIP’s focus on critical minerals sit beside free-trade rules ([[economic-security]])."
     ]},
     {h:"Climate and energy diplomacy", body:[
-      "Japan’s targets, as submitted to the UN in February 2025: cut greenhouse-gas emissions by 46% by fiscal 2030 (striving for 50%), 60% by fiscal 2035 and 73% by fiscal 2040, all from fiscal 2013 levels. These sit on a path to [[net-zero|net zero]] by 2050, a goal declared in October 2020. At home the [[green-transformation|Green Transformation]] (GX) policy funds the shift with transition bonds and an emissions trading scheme (Unit 17).",
+      "Japan’s targets, as submitted to the UN in February 2025: cut greenhouse-gas emissions by 46% by fiscal 2030 (striving for 50%), 60% by fiscal 2035 and 73% by fiscal 2040, all from fiscal 2013 levels. These are on a path to [[net-zero|net zero]] by 2050, a goal declared in October 2020. At home the [[green-transformation|Green Transformation]] (GX) policy funds the shift with transition bonds and an emissions trading scheme (Unit 17).",
       {list:[
         "**[[joint-crediting-mechanism|Joint Crediting Mechanism]] (JCM):** Japan funds low-carbon projects in partner countries and counts part of the resulting credits toward its own target. Under its NDC that is about 100 million tonnes of CO₂ by fiscal 2030. This now counts as cooperation under Article 6 of the Paris Agreement (Unit 17).",
         "**[[azec|Asia Zero Emission Community]] (AZEC):** launched in 2023 with Australia and Southeast Asian partners to promote decarbonization through pathways suited to each country. Supporters say it fits countries that still depend on coal and gas. Environmental groups argue that its support for LNG and for ammonia or hydrogen co-firing in coal plants prolongs fossil fuel use."

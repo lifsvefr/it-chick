@@ -470,7 +470,7 @@ ICA.addUnit({
         ["[未]{み}〜","not yet","[未解決]{みかいけつ} unsolved, [未発表]{みはっぴょう} unpublished, [未成年]{みせいねん} under age"],
         ["[再]{さい}〜","again, re-","[再検討]{さいけんとう} re-examination, [再評価]{さいひょうか} reassessment, [再分析]{さいぶんせき} reanalysis"]
       ]},
-      "A few more are worth knowing: [不]{ふ}〜 (not: [不十分]{ふじゅうぶん} insufficient, [不安定]{ふあんてい} unstable), [無]{む}〜 (without: [無関係]{むかんけい} unrelated, [無作為]{むさくい} random, as in random sampling), 〜[論]{ろん} (theory of…), and 〜[観]{かん} (view of…, as in [価値観]{かちかん} values).",
+      "A few more to know: [不]{ふ}〜 (not: [不十分]{ふじゅうぶん} insufficient, [不安定]{ふあんてい} unstable), [無]{む}〜 (without: [無関係]{むかんけい} unrelated, [無作為]{むさくい} random, as in random sampling), 〜[論]{ろん} (theory of…), and 〜[観]{かん} (view of…, as in [価値観]{かちかん} values).",
       "The pieces also tell you how a word behaves in a sentence. 〜的 words work like な-adjectives: 経済的な影響 (an economic effect), 経済的に (economically). 〜性, 〜率 and 〜者 make nouns. Many 〜化 words can take する or 〜が進む: 高齢化が進む (aging advances)."
     ]},
     {h:"The limits of guessing", body:[

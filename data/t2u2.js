@@ -35,7 +35,7 @@ ICA.addUnit({
     ]},
     {h:"Anatomy of an element", body:[
       "Each labeled piece is an [[element]]. Most elements have three parts:",
-      {fig:'<svg viewBox="0 0 340 272"><text x="106" y="50" text-anchor="middle">opening tag</text><text x="239" y="50" text-anchor="middle">content</text><text x="304" y="32" text-anchor="middle">closing</text><text x="304" y="50" text-anchor="middle">tag</text><rect class="d-gold" x="8" y="60" width="188" height="42" rx="6" stroke-width="2"/><rect class="d-lup" x="34" y="67" width="138" height="28" rx="4" stroke-width="1.5"/><text x="12" y="86" font-family="monospace">&lt;a</text><text x="40" y="86" font-family="monospace" textLength="126" lengthAdjust="spacing">href="menu.html"</text><text x="178" y="86" font-family="monospace">&gt;</text><rect class="d-sage" x="202" y="60" width="74" height="42" rx="6" stroke-width="2"/><text x="239" y="86" text-anchor="middle" font-family="monospace">Our menu</text><rect class="d-gold" x="282" y="60" width="44" height="42" rx="6" stroke-width="2"/><text x="304" y="86" text-anchor="middle" font-family="monospace">&lt;/a&gt;</text><text class="s" x="56" y="118" text-anchor="middle">name</text><text class="s" x="122" y="118" text-anchor="middle">value</text><text x="103" y="136" text-anchor="middle">attribute</text><path class="d-ink" d="M8,148 L8,156 L326,156 L326,148" stroke-width="1.5"/><text x="167" y="176" text-anchor="middle">all of it together is one element</text><rect class="d-panel" x="8" y="196" width="326" height="36" rx="6" stroke-width="1.5"/><text x="171" y="219" text-anchor="middle" font-family="monospace">&lt;img src="cake.jpg" alt="Lemon cake"&gt;</text><text x="171" y="250" text-anchor="middle">A void element: attributes, but no</text><text x="171" y="266" text-anchor="middle">content and no closing tag.</text></svg>', alt:"The link element <a href=\"menu.html\">Our menu</a> split into parts. The opening tag, <a href=\"menu.html\">, is outlined in gold, and inside it the attribute href=\"menu.html\" is outlined in lupine, with href labeled name and \"menu.html\" labeled value. The words Our menu, outlined in sage, are the content. </a>, in gold, is the closing tag. A bracket underneath says all of it together is one element. Below, <img src=\"cake.jpg\" alt=\"Lemon cake\"> is labeled a void element: attributes, but no content and no closing tag.", cap:"An element is the opening tag, the content and the closing tag together. Attributes live inside the opening tag."},
+      {fig:'<svg viewBox="0 0 340 272"><text x="106" y="50" text-anchor="middle">opening tag</text><text x="239" y="50" text-anchor="middle">content</text><text x="304" y="32" text-anchor="middle">closing</text><text x="304" y="50" text-anchor="middle">tag</text><rect class="d-gold" x="8" y="60" width="188" height="42" rx="6" stroke-width="2"/><rect class="d-lup" x="34" y="67" width="138" height="28" rx="4" stroke-width="1.5"/><text x="12" y="86" font-family="monospace">&lt;a</text><text x="40" y="86" font-family="monospace" textLength="126" lengthAdjust="spacing">href="menu.html"</text><text x="178" y="86" font-family="monospace">&gt;</text><rect class="d-sage" x="202" y="60" width="74" height="42" rx="6" stroke-width="2"/><text x="239" y="86" text-anchor="middle" font-family="monospace">Our menu</text><rect class="d-gold" x="282" y="60" width="44" height="42" rx="6" stroke-width="2"/><text x="304" y="86" text-anchor="middle" font-family="monospace">&lt;/a&gt;</text><text class="s" x="56" y="118" text-anchor="middle">name</text><text class="s" x="122" y="118" text-anchor="middle">value</text><text x="103" y="136" text-anchor="middle">attribute</text><path class="d-ink" d="M8,148 L8,156 L326,156 L326,148" stroke-width="1.5"/><text x="167" y="176" text-anchor="middle">all of it together is one element</text><rect class="d-panel" x="8" y="196" width="326" height="36" rx="6" stroke-width="1.5"/><text x="171" y="219" text-anchor="middle" font-family="monospace">&lt;img src="cake.jpg" alt="Lemon cake"&gt;</text><text x="171" y="250" text-anchor="middle">A void element: attributes, but no</text><text x="171" y="266" text-anchor="middle">content and no closing tag.</text></svg>', alt:"The link element <a href=\"menu.html\">Our menu</a> split into parts. The opening tag, <a href=\"menu.html\">, is outlined in gold, and inside it the attribute href=\"menu.html\" is outlined in lupine, with href labeled name and \"menu.html\" labeled value. The words Our menu, outlined in sage, are the content. </a>, in gold, is the closing tag. A bracket underneath says all of it together is one element. Below, <img src=\"cake.jpg\" alt=\"Lemon cake\"> is labeled a void element: attributes, but no content and no closing tag.", cap:"An element is the opening tag, the content and the closing tag together. Attributes are inside the opening tag."},
       {list:[
         "The [[opening-tag|opening tag]], such as `<a>`: the element’s name between angle brackets. It says “this kind of thing starts here”.",
         "The **content**: the text (or other elements) the label applies to.",
@@ -59,7 +59,7 @@ ICA.addUnit({
     {h:"Elements inside elements", body:[
       "Elements can contain other elements. This is [[nesting]], and it’s how a page gets its structure: a list contains list items, a paragraph can contain a link, a link can contain emphasized words.",
       {code:'<p>We’re open <strong>every day</strong> until 6 pm.</p>', lang:"html"},
-      "The `<strong>` element is a **child** of the `<p>` element, and the `<p>` is its **parent**. The rule is simple: an element must close inside the element that contains it. Think of boxes inside boxes: a box can sit inside another box, but two boxes can’t half-overlap.",
+      "The `<strong>` element is a **child** of the `<p>` element, and the `<p>` is its **parent**. The rule is simple: an element must close inside the element that contains it. Think of boxes inside boxes: a box can be inside another box, but two boxes can’t half-overlap.",
       {fig:'<svg viewBox="0 0 340 266"><text x="8" y="18">Right: one box fully inside another</text><rect class="d-sage" x="8" y="28" width="324" height="64" rx="6" stroke-width="2"/><text x="16" y="48" font-family="monospace">&lt;p&gt;</text><rect class="d-lup" x="100" y="42" width="150" height="38" rx="5" stroke-width="2"/><text x="175" y="66" text-anchor="middle" font-family="monospace">&lt;strong&gt;</text><text x="8" y="114" font-family="monospace">&lt;p&gt;Open &lt;strong&gt;daily&lt;/strong&gt;.&lt;/p&gt;</text><text x="8" y="146">Wrong: the boxes overlap</text><rect class="d-sage" x="8" y="156" width="200" height="64" rx="6" stroke-width="2"/><text x="16" y="176" font-family="monospace">&lt;p&gt;</text><rect class="d-rose" x="120" y="170" width="212" height="38" rx="5" stroke-width="2"/><text x="270" y="194" text-anchor="middle" font-family="monospace">&lt;strong&gt;</text><text x="8" y="242" font-family="monospace">&lt;p&gt;Open &lt;strong&gt;daily.&lt;/p&gt;&lt;/strong&gt;</text><text class="s" x="8" y="262">Close in reverse order: last opened, first closed.</text></svg>', alt:"Two diagrams. Top, labeled right: a sage box marked p contains a lupine box marked strong entirely inside it, with the code <p>Open <strong>daily</strong>.</p>. Bottom, labeled wrong: a sage box marked p and a rose box marked strong overlap. The strong box sticks out past the end of p, with the code <p>Open <strong>daily.</p></strong>. A note says close in reverse order: last opened, first closed.", cap:"Correct nesting and overlapping tags."},
       {h:"What a browser does with mistakes"},
       "Browsers never refuse to show a page. The HTML standard gives them rules for repairing broken markup, so you get **something**, but not always what you meant. Three real results from Chromium, the engine behind Chrome and Edge:",
@@ -124,7 +124,7 @@ ICA.addUnit({
     {id:"t2u2-l1-x1", type:"mcq", q:"Look at `<p>Open daily</p>`. Which statement is accurate?", options:[
       {t:"The two tags and the text form one element", ok:true, why:"Right. `<p>` and `</p>` are two tags, the markers. The element is everything from the opening tag to the closing tag, content included."},
       {t:"It contains two elements: `<p>` and `</p>`", why:"Those are the opening and closing tags of a **single** paragraph element, not two elements."},
-      {t:"“Open daily” is an attribute of the paragraph", why:"Attributes live inside the opening tag, like `lang=\"en\"`. The words between the tags are the element’s content."},
+      {t:"“Open daily” is an attribute of the paragraph", why:"Attributes are inside the opening tag, like `lang=\"en\"`. The words between the tags are the element’s content."},
       {t:"The closing tag is optional, so it isn’t part of the element", why:"Whether or not a closing tag is optional, when it’s written it belongs to the element. Writing it is the clearest habit."}
     ]},
     {id:"t2u2-l1-x2", type:"mcq", q:"Kenji writes `<img src=\"stall.jpg\" alt=Our market stall>`. What does the browser do with the alt attribute?", options:[
@@ -200,7 +200,7 @@ ICA.addUnit({
       {lead:"Every web page, from a one-line note to a huge shop, starts from the same skeleton of about ten lines."},
       "Here it is. Read it once, then the sections below explain every line.",
       {code:'<!doctype html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8">\n    <meta name="viewport"\n      content="width=device-width, initial-scale=1">\n    <title>Opening hours · Riverside Café</title>\n  </head>\n  <body>\n    <h1>Opening hours</h1>\n    <p>Monday to Saturday, 8 am to 4 pm.</p>\n  </body>\n</html>', lang:"html", label:"HTML · index.html", weblab:"wl-first-page"},
-      {fig:'<svg viewBox="0 0 340 352"><text x="8" y="18" font-family="monospace">&lt;!doctype html&gt;</text><text class="s" x="332" y="18" text-anchor="end">first line</text><rect class="d-panel" x="8" y="30" width="324" height="314" rx="8" stroke-width="2"/><text x="18" y="50" font-family="monospace">&lt;html lang="en"&gt;</text><text class="s" x="322" y="50" text-anchor="end">the root</text><rect class="d-lup" x="20" y="62" width="300" height="130" rx="6" stroke-width="2"/><text x="30" y="82" font-family="monospace">&lt;head&gt;</text><text class="s" x="310" y="82" text-anchor="end">about the page,</text><text class="s" x="310" y="96" text-anchor="end">not shown in it</text><text x="34" y="118" font-family="monospace">&lt;meta charset="utf-8"&gt;</text><text x="34" y="140" font-family="monospace">&lt;meta name="viewport" …&gt;</text><text x="34" y="162" font-family="monospace">&lt;title&gt;…&lt;/title&gt;</text><text x="34" y="184" font-family="monospace">&lt;link rel="stylesheet" …&gt;</text><rect class="d-sage" x="20" y="204" width="300" height="128" rx="6" stroke-width="2"/><text x="30" y="224" font-family="monospace">&lt;body&gt;</text><text class="s" x="310" y="224" text-anchor="end">everything people</text><text class="s" x="310" y="238" text-anchor="end">see and use</text><text x="34" y="262" font-family="monospace">&lt;h1&gt;Opening hours&lt;/h1&gt;</text><text x="34" y="286" font-family="monospace">&lt;p&gt;Monday to …&lt;/p&gt;</text><text x="34" y="310" font-family="monospace">&lt;img src="…" alt="…"&gt;</text></svg>', alt:"Nested boxes. The doctype line sits on top, outside everything. A large box labeled <html lang=\"en\">, the root, contains two boxes. The first, in lupine, is <head>, about the page and not shown in it, holding meta charset, meta viewport, title and link stylesheet. The second, in sage, is <body>, everything people see and use, holding an h1, a p and an img.", cap:"The page as boxes: one root, containing the head (information about the page) and the body (the page itself)."},
+      {fig:'<svg viewBox="0 0 340 352"><text x="8" y="18" font-family="monospace">&lt;!doctype html&gt;</text><text class="s" x="332" y="18" text-anchor="end">first line</text><rect class="d-panel" x="8" y="30" width="324" height="314" rx="8" stroke-width="2"/><text x="18" y="50" font-family="monospace">&lt;html lang="en"&gt;</text><text class="s" x="322" y="50" text-anchor="end">the root</text><rect class="d-lup" x="20" y="62" width="300" height="130" rx="6" stroke-width="2"/><text x="30" y="82" font-family="monospace">&lt;head&gt;</text><text class="s" x="310" y="82" text-anchor="end">about the page,</text><text class="s" x="310" y="96" text-anchor="end">not shown in it</text><text x="34" y="118" font-family="monospace">&lt;meta charset="utf-8"&gt;</text><text x="34" y="140" font-family="monospace">&lt;meta name="viewport" …&gt;</text><text x="34" y="162" font-family="monospace">&lt;title&gt;…&lt;/title&gt;</text><text x="34" y="184" font-family="monospace">&lt;link rel="stylesheet" …&gt;</text><rect class="d-sage" x="20" y="204" width="300" height="128" rx="6" stroke-width="2"/><text x="30" y="224" font-family="monospace">&lt;body&gt;</text><text class="s" x="310" y="224" text-anchor="end">everything people</text><text class="s" x="310" y="238" text-anchor="end">see and use</text><text x="34" y="262" font-family="monospace">&lt;h1&gt;Opening hours&lt;/h1&gt;</text><text x="34" y="286" font-family="monospace">&lt;p&gt;Monday to …&lt;/p&gt;</text><text x="34" y="310" font-family="monospace">&lt;img src="…" alt="…"&gt;</text></svg>', alt:"Nested boxes. The doctype line is on top, outside everything. A large box labeled <html lang=\"en\">, the root, contains two boxes. The first, in lupine, is <head>, about the page and not shown in it, holding meta charset, meta viewport, title and link stylesheet. The second, in sage, is <body>, everything people see and use, holding an h1, a p and an img.", cap:"The page as boxes: one root, containing the head (information about the page) and the body (the page itself)."},
       {tip:"Most code editors write this skeleton for you. In VS Code, type `!` in an empty .html file and press [[kbd:Tab]] or [[kbd:Enter]]. Still, type it by hand a few times so you know what each line does."}
     ]},
     {h:"The doctype", body:[
@@ -250,10 +250,10 @@ ICA.addUnit({
         ["Page 2","Opening hours · Riverside Café"],
         ["Untitled document","Quiz night, 14 March · Hilltop Library"]
       ]},
-      "Giving each page a title that describes its topic or purpose is WCAG 2.2 success criterion 2.4.2, “Page Titled”. The title is different from the `<h1>`: the title names the page from the outside (tab, search results), the `<h1>` is the main heading inside it. They’re often similar, and that’s fine."
+      "Giving each page a title that describes its topic or purpose is WCAG 2.2 success criterion 2.4.2, “Page Titled”. The title is different from the `<h1>`: the title names the page from the outside (tab, search results), the `<h1>` is the main heading inside it. They’re often similar. This is normal."
     ]},
     {h:"Linking CSS and JavaScript: a preview", body:[
-      "Styles and scripts usually live in their own files, connected from the head. You’ll write these files in Units 3 and 4; for now, recognize the two lines:",
+      "Styles and scripts are usually kept in their own files, connected from the head. You’ll write these files in Units 3 and 4; for now, recognize the two lines:",
       {code:'<link rel="stylesheet" href="style.css">\n<script src="app.js" defer><\/script>', lang:"html"},
       {list:[
         "`<link>` is a void element. `rel=\"stylesheet\"` says what kind of link it is; `href` is the path to the CSS file.",
@@ -472,7 +472,7 @@ ICA.addUnit({
       {t:"Kitchen tools you’ll need", b:0, why:"Another set where order doesn’t matter."}
     ]},
     {id:"t2u2-l3-x5", type:"mcq", q:"Kenji wants “Add the eggs” to have two sub-points. Which markup is correct?", options:[
-      {t:"`<ol><li>Add the eggs<ul><li>One at a time</li><li>Beat well</li></ul></li></ol>`", ok:true, why:"The sub-list sits inside the `<li>` it belongs to. A list’s only children are `<li>` elements, so this is the only valid place for it."},
+      {t:"`<ol><li>Add the eggs<ul><li>One at a time</li><li>Beat well</li></ul></li></ol>`", ok:true, why:"The sub-list is inside the `<li>` it belongs to. A list’s only children are `<li>` elements, so this is the only valid place for it."},
       {t:"`<ol><li>Add the eggs</li><ul><li>One at a time</li><li>Beat well</li></ul></ol>`", why:"Here the `<ul>` is a direct child of the `<ol>`, which isn’t allowed. A validator reports it, and screen readers may announce the list oddly."},
       {t:"`<ol><li>Add the eggs<br>- One at a time<br>- Beat well</li></ol>`", why:"Dashes and line breaks only look like a list. Software sees one item of text, not two sub-points."},
       {t:"`<ol><li>Add the eggs</li><li>  One at a time</li><li>  Beat well</li></ol>`", why:"Extra spaces collapse, so these become ordinary steps 2 and 3, not sub-points of step 1."}
@@ -480,7 +480,7 @@ ICA.addUnit({
     {id:"t2u2-l3-x6", type:"mcq", q:"Amara is writing a notice for her community hall: “Fire doors must be kept closed.” Which markup fits the meaning best?", options:[
       {t:"`<p><strong>Fire doors must be kept closed.</strong></p>`", ok:true, why:"This is a matter of seriousness and safety, which is exactly what `<strong>` means: strong importance."},
       {t:"`<p><em>Fire doors must be kept closed.</em></p>`", why:"`<em>` is stress emphasis, the way you’d stress a word to change a sentence’s meaning. Importance is `<strong>`."},
-      {t:"`<p><b>Fire doors must be kept closed.</b></p>`", why:"`<b>` draws attention **without** adding importance. This sentence is genuinely important, so `<strong>` fits."},
+      {t:"`<p><b>Fire doors must be kept closed.</b></p>`", why:"`<b>` draws attention **without** adding importance. This sentence is important, so `<strong>` fits."},
       {t:"`<h1>Fire doors must be kept closed.</h1>`", why:"A heading names a section; it isn’t a way to make a sentence stand out. The page probably already has its own `<h1>`."}
     ]},
     {id:"t2u2-l3-x7", type:"match", q:"Match each piece of text on a library’s page with the element that fits its meaning.", pairs:[
@@ -633,7 +633,7 @@ ICA.addUnit({
    try:[
     {id:"t2u2-l4-x1", type:"mcq", q:"Kenji’s site has `index.html` at the top, and a folder `events` containing `quiz.html`. Which `href` in **index.html** links to the quiz page, both on Kenji’s computer and once the site is online?", options:[
       {t:"`events/quiz.html`", ok:true, why:"From index.html, go into the events folder, then to quiz.html. It’s relative, so it keeps working wherever the site folder is kept."},
-      {t:"`../events/quiz.html`", why:"`..` goes **up** a folder. index.html is already at the top of the site. So on Kenji’s computer this looks outside the site folder, and the link breaks. (A web server at the top of a domain quietly ignores the extra `..`. But don’t rely on that luck.)"},
+      {t:"`../events/quiz.html`", why:"`..` goes **up** a folder. index.html is already at the top of the site. So on Kenji’s computer this looks outside the site folder, and the link breaks. (A web server at the top of a domain ignores the extra `..`. But don’t rely on that luck.)"},
       {t:"`quiz.html`", why:"That looks for quiz.html in the **same** folder as index.html, where it doesn’t exist."},
       {t:"`quiz/events.html`", why:"The folder and the file are the wrong way round: this looks for a folder called quiz containing a file called events.html. The folder comes first, then a forward slash, then the file."}
     ]},
@@ -766,7 +766,7 @@ ICA.addUnit({
       ]},
       "Add `required` (a boolean attribute) and the browser won’t submit the form until the field is filled. With `type=\"email\"`, it also checks the format. We tested it: with “abc” typed in an email field, Chromium refused to submit and explained that the address was missing an @.",
       "Group radio buttons or related checkboxes in a `<fieldset>`, with a `<legend>` that asks the question, such as “Which session?”. Screen readers announce the legend when someone moves into the group, so each option is heard as an answer to that question.",
-      {warn:"Browser checks help honest visitors; they don’t protect anything. Anyone can bypass them, so whatever receives the form must check the data again. MDN puts it simply: you need both. And collect only what you truly need: every extra field is personal data you have to look after (see {{data-protection-laws}})."},
+      {warn:"Browser checks help honest visitors; they don’t protect anything. Anyone can bypass them, so whatever receives the form must check the data again. MDN puts it simply: you need both. And collect only what you need: every extra field is personal data you have to look after (see {{data-protection-laws}})."},
       {tip:"Where does the data go? The form’s `action` attribute names the address that receives it, and something on that server must process it. Without a server, the form reloads the page. That’s fine for practicing labels and checks. Actually receiving the data needs a server or a form-handling service, which is beyond this unit."}
     ]},
     {h:"Validating your HTML", body:[
@@ -808,7 +808,7 @@ ICA.addUnit({
     ]},
     {id:"t2u2-l5-x2", type:"mcq", q:"Hana’s recipe site shows several recipe cards on its home page. Each has a heading, a photo and a short description, and each could be shared on its own. Which element should wrap each card?", options:[
       {t:"`<article>`", ok:true, why:"Each card is self-contained and would make sense on its own, which is exactly what `<article>` means."},
-      {t:"`<main>`", why:"There’s only one `<main>` per page, for the page’s whole main content. The cards sit inside it."},
+      {t:"`<main>`", why:"There’s only one `<main>` per page, for the page’s whole main content. The cards are inside it."},
       {t:"`<aside>`", why:"`<aside>` is for content that’s related but secondary. The recipes are the main content here."},
       {t:"`<nav>`", why:"Even if each card links somewhere, the cards are content, not the site’s navigation menu."}
     ]},
@@ -951,7 +951,7 @@ ICA.addUnit({
     sources:[{t:"MDN: What’s in the head? Web page metadata", url:"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata"},{t:"MDN: Viewport meta element", url:"https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Viewport_meta_element"},{t:"MDN: Quirks mode and standards mode", url:"https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Quirks_mode_and_standards_mode"}], checked:"2026-11"},
 
    {id:"headings-paragraphs", title:"Headings, paragraphs and text meaning", aka:["h1","h2","heading levels","p","br","em","strong","i","b","blockquote","semantic text"], tags:["html","accessibility"],
-    summary:"Headings h1–h6 build the page outline; p, br and hr structure text; em, strong, i, b and quotation elements carry meaning, not just looks.",
+    summary:"Headings h1–h6 build the page outline; p, br and hr structure text; em, strong, i, b and quotation elements carry meaning as well as looks.",
     levels:{
      starter:[
       "Headings are the page’s table of contents. `<h1>` is the main heading (one per page), `<h2>` headings are the main sections, `<h3>` headings divide those, and so on to `<h6>`.",
@@ -961,7 +961,7 @@ ICA.addUnit({
       "Why it matters: screen reader users can list the headings and jump between them, search engines treat headings as clues to the topic, and many readers skim headings before deciding what to read."
      ],
      builder:[
-      {list:["**Don’t skip levels going down** (h2 → h4). Going back up is fine.","**One `<h1>`** per page is MDN’s recommendation.","**Don’t fake structure:** no `<br><br>` between paragraphs, no empty `<p>` for spacing.","`<hr>` is a thematic break (a change of topic), not just a line."]},
+      {list:["**Don’t skip levels going down** (h2 → h4). Going back up is fine.","**One `<h1>`** per page is MDN’s recommendation.","**Don’t fake structure:** no `<br><br>` between paragraphs, no empty `<p>` for spacing.","`<hr>` is a thematic break (a change of topic), not a plain line."]},
       {table:[["Element","Use for"],["`<em>`","Stress emphasis that changes meaning"],["`<strong>`","Importance, seriousness, urgency"],["`<i>`","A different voice: foreign phrases, scientific names, technical terms"],["`<b>`","Attention without importance: keywords, product names"],["`<blockquote>`","A long, block quotation"],["`<q>`","A short inline quotation (quotes added)"],["`<cite>`","The title of a work"],["`<abbr>`","An abbreviation (expand it in text first)"],["`<time datetime>`","A machine-readable date or time"]]},
       "Add `lang` to foreign phrases: `<i lang=\"fr\">joie de vivre</i>`. Avoid `<u>` for decoration: people expect underlined text to be a link.",
       {code:'<h1>Hilltown Garden</h1>\n<h2>Volunteer days</h2>\n<h3>Spring</h3>\n<h3>Autumn</h3>\n<h2>Allotment plots</h2>', lang:"html"},
@@ -1137,7 +1137,7 @@ ICA.addUnit({
       "For headers spanning groups, use `scope=\"colgroup\"` or `scope=\"rowgroup\"`. For irregular tables where scope isn’t enough, give header cells `id`s and list them in each data cell’s `headers` attribute.",
       "MDN’s three reasons against layout tables: they confuse screen reader output, produce hard-to-maintain markup, and aren’t responsive (tables size to their content rather than their container).",
       "The old `summary` attribute is obsolete; use `<caption>` or a nearby paragraph. Don’t put block content you want read as a heading into a caption; captions should be short.",
-      "On narrow screens, wide tables need care: CSS can let the table scroll inside its own container or reflow rows into stacked cards. WCAG 2.2 1.4.10 Reflow allows two-dimensional scrolling for content such as data tables that genuinely needs it.",
+      "On narrow screens, wide tables need care: CSS can let the table scroll inside its own container or reflow rows into stacked cards. WCAG 2.2 1.4.10 Reflow allows two-dimensional scrolling for content such as data tables that needs it.",
       "WCAG 2.2 1.3.1 Info and Relationships is the criterion behind header cells: relationships visible in a grid must be programmatically available.",
       "Sortable tables need JavaScript; mark the currently sorted column header with `aria-sort` so screen readers can announce the order.",
       "Avoid empty header cells where possible (the top-left corner is a common one); if one is needed, a `<td>` there is clearer than an empty `<th>`. Keep captions short; put longer explanations in a paragraph before the table."
@@ -1224,7 +1224,7 @@ ICA.addUnit({
       {tip:"Fix the first error, then re-check. One unclosed element can produce many later messages that vanish once it’s fixed."},
       "Messages come as **Error**, **Warning** or **Info**. Errors break the rules; warnings and info notes are advice. Each message gives the line and column, and a snippet of your code.",
       "Each message says what’s wrong in words, gives the line number and highlights your code. For a published page, Validate by URI checks exactly what the server sends, which can differ from your local file.",
-      "Validate early and often, not only at the end: a page with three errors is quick to fix; a page with forty, all caused by one early mistake, is discouraging. If a message makes no sense, search for its exact wording on MDN or a web search; many people have met it before."
+      "Validate early and often, not only once at the end: a page with three errors is quick to fix; a page with forty, all caused by one early mistake, is discouraging. If a message makes no sense, search for its exact wording on MDN or a web search; many people have met it before."
      ],
      pro:[
       "The service at validator.w3.org links to the W3C’s newer non-DTD-based checker (the Nu Html Checker at validator.w3.org/nu/), which checks HTML against the current living standard. The Nu checker is open source and can be run locally or in build pipelines.",
@@ -1273,7 +1273,7 @@ ICA.addUnit({
      {t:"An attribute", ok:true, why:"An attribute is a name and a value inside the opening tag. Attributes add information about an element; this one says where the link goes."},
      {t:"The element’s content", why:"The content is “Our menu”, the text between the tags."},
      {t:"The closing tag", why:"The closing tag is `</a>`, with a slash."},
-     {t:"A separate element", why:"It has no tags of its own; it lives inside the `<a>` opening tag."}
+     {t:"A separate element", why:"It has no tags of its own; it goes inside the `<a>` opening tag."}
    ]},
    {id:"t2u2-q02", lesson:"t2u2-l1", level:2, q:"Which line is correctly nested?", options:[
      {t:"`<p>Open <em>every</em> day</p>`", ok:true, why:"`<em>` opens and closes entirely inside the paragraph: last opened, first closed."},
@@ -1398,7 +1398,7 @@ ICA.addUnit({
      {t:"`<dl>`", why:"Description lists pair terms with descriptions; steps aren’t terms."}
    ]},
    {id:"t2u2-q22", lesson:"t2u2-l3", level:2, q:"Where does a nested list go?", options:[
-     {t:"Inside the `<li>` it belongs to, after that item’s text", ok:true, why:"A list’s only children are `<li>` elements, so a sub-list sits inside an item."},
+     {t:"Inside the `<li>` it belongs to, after that item’s text", ok:true, why:"A list’s only children are `<li>` elements, so a sub-list is inside an item."},
      {t:"Directly inside the outer `<ul>`, between two `<li>` elements", why:"That’s invalid: a `<ul>` can only contain `<li>` elements directly."},
      {t:"After the outer list has closed", why:"Then it isn’t nested; it’s a separate list."},
      {t:"In the head", why:"Lists are visible content, so they belong in the body."}
@@ -1493,7 +1493,7 @@ ICA.addUnit({
      {t:"One", ok:true, why:"`<main>` holds the content unique to the page; there’s one visible main per page."},
      {t:"One per section", why:"Sections go inside main; they don’t each get their own."},
      {t:"None: it’s optional decoration", why:"It’s optional to the browser, but it creates the main landmark people jump to."},
-     {t:"As many as there are articles", why:"Articles sit inside the single main."}
+     {t:"As many as there are articles", why:"Articles are inside the single main."}
    ]},
    {id:"t2u2-q38", lesson:"t2u2-l5", level:2, q:"A block of “related posts” links beside a blog post belongs in which element?", options:[
      {t:"`<aside>`", ok:true, why:"Related but separate content is complementary: `<aside>`."},

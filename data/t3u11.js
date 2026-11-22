@@ -114,7 +114,7 @@ ICA.addUnit({
       {v:0.05, tol:0.005, why:"0.05 is how far the share is from 50%, in percentage points. The share itself is 50.05%."},
       {v:0.5005, tol:0.0001, why:"0.5005 is right as a decimal. As a percentage, multiply by 100: 50.05%."}
     ], hint2:"Divide heads by flips, then multiply by 100."},
-    {id:"t3u11-l1-x6", type:"mcq", q:"A European-style roulette wheel (18 red, 18 black, 1 green zero) has just landed on red six times in a row. What is the probability that the next spin lands on black?", options:[
+    {id:"t3u11-l1-x6", type:"mcq", q:"A European-style roulette wheel (18 red, 18 black, 1 green zero) has just come up red six times in a row. What is the probability that the next spin is black?", options:[
       {t:"18/37, the same as always", ok:true, why:"Spins are independent and the wheel has no memory. Black has 18 of the 37 pockets on every spin."},
       {t:"Higher than 18/37, because black is due", why:"That is the gambler’s fallacy. Past spins don’t change the wheel."},
       {t:"Lower than 18/37, because the wheel is on a red streak", why:"A streak of six is ordinary for a fair wheel. Treating it as a trend is the mirror image of the gambler’s fallacy."},
@@ -133,7 +133,7 @@ ICA.addUnit({
       " ",
       {t:"If a coin ever gave 90 heads in 100 flips, that would be strong evidence it isn’t fair.", flag:false, why:"Correct. For a fair coin, 90 or more heads in 100 has a probability of about 1.5 × 10⁻¹⁷."}
     ]},
-    {id:"t3u11-l1-x8", type:"explain", q:"A roulette wheel has landed on black five times in a row, and a friend says red is now “due” because things even out in the long run. Explain what’s wrong, using the law of large numbers.", model:"Each spin is independent: the wheel has no memory, so on a European wheel the chance of red is 18/37 on every spin, whatever came before. The law of large numbers says the **share** of reds settles near its probability over many spins, but it works by swamping, not correcting. An early run of blacks is never canceled out; it is diluted by thousands of later spins. The count can even drift further from half while the share settles. That’s the gambler’s fallacy.", points:["Says spins are independent, so the chance of red doesn’t change", "States what the law of large numbers says about the long-run share", "Explains that it works by swamping, not correcting", "Names the gambler’s fallacy"]}
+    {id:"t3u11-l1-x8", type:"explain", q:"A roulette wheel has come up black five times in a row, and a friend says red is now “due” because things even out in the long run. Explain what’s wrong, using the law of large numbers.", model:"Each spin is independent: the wheel has no memory, so on a European wheel the chance of red is 18/37 on every spin, whatever came before. The law of large numbers says the **share** of reds settles near its probability over many spins, but it works by swamping, not correcting. An early run of blacks is never canceled out; it is diluted by thousands of later spins. The count can even drift further from half while the share settles. That’s the gambler’s fallacy.", points:["Says spins are independent, so the chance of red doesn’t change", "States what the law of large numbers says about the long-run share", "Explains that it works by swamping, not correcting", "Names the gambler’s fallacy"]}
    ],
    apply:{intro:"Watch the law of large numbers happen. Task 1 works in any spreadsheet app, including Google Sheets on a phone; task 2 needs only a coin; task 3 uses the Data Lab in your browser.", tasks:[
      {t:"Simulate 200 coin flips and a running share", app:{
@@ -855,7 +855,7 @@ ICA.addUnit({
       "Many questions count successes in a fixed number of tries: right answers when guessing, seeds that sprout, parcels that arrive late. If four conditions hold, the count follows a [[binomial-distribution|binomial distribution]]. Remember **BINS**: **B**inary outcomes, **I**ndependent trials, a fixed **N**umber of trials, the **S**ame probability each time.",
       "Guessing 10 questions with 4 options each: X ~ B(10, 0.25). The most likely result is 2 right (probability 0.28); the average is 2.5; 5 or more right happens only about 8% of the time.",
       "Spreadsheets give these directly: `=BINOM.DIST(2,10,0.25,FALSE)` for exactly 2, and `=BINOM.DIST(4,10,0.25,TRUE)` for at most 4.",
-      "Why it matters: binomial counts sit behind polls (how many say yes), quality checks (how many parts are faulty) and online experiments (how many click), and their spread is the starting point for a poll’s margin of error.",
+      "Why it matters: binomial counts are behind polls (how many say yes), quality checks (how many parts are faulty) and online experiments (how many click), and their spread is the starting point for a poll’s margin of error.",
       {key:"FALSE means “exactly”; TRUE means “this many or fewer”."}
      ],
      builder:[

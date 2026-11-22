@@ -1200,7 +1200,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "**Hilary Charlesworth** is an Australian international lawyer, long a professor at the Australian National University and later at the University of Melbourne. In 2021 the UN elected her a judge of the International Court of Justice, and she was re-elected in 2023.",
-      "Her big idea, with colleagues, is that international law’s categories, such as the line between public and private, quietly leave women’s experiences out.",
+      "Her big idea, with colleagues, is that international law’s categories, such as the line between public and private, leave women’s experiences out without saying so.",
       {key:"She showed that what counts as an “international” problem is a choice, not a fact of nature."}
      ],
      builder:[

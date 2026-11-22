@@ -50,7 +50,7 @@ ICA.addUnit({
     {h:"Why it matters: four ways dirt changes answers", body:[
       "Dirty data rarely causes an error message. It causes a **wrong answer that looks right**. Four examples from the food bank list:",
       {ol:[
-        "**Counts split.** An exact count of volunteers per town shows 41 for Port Ellis instead of 57, because 16 people live in “other” spellings.",
+        "**Counts split.** An exact count of volunteers per town shows 41 for Port Ellis instead of 57, because 16 people are counted under “other” spellings.",
         "**Totals skip values.** Hours volunteered are summed, but cells typed as `4 hrs` are text, so SUM ignores them and the total is too low ({{cell-data-types}}).",
         "**Lookups fail.** A lookup for `Kerrow` returns #N/A for the two entries with a hidden space ({{lookup-functions}}).",
         "**Duplicates inflate.** Fatima signed up on paper and online, so she is counted twice and gets two reminder calls."
@@ -66,7 +66,7 @@ ICA.addUnit({
         ["Fix with a rule","The right value is certain and the rule can be written down","Remove spaces at the ends; write every town in one agreed spelling"],
         ["Fix with evidence","Another source shows the true value","Village `49` corrected using GPS and interview date; a typo checked against the paper form"],
         ["Flag and leave","You can’t know the true value","Age 214: mark it as a problem, set it to missing in the clean copy, and note why"]]},
-      "Never quietly delete awkward rows or change unusual values just because they are unusual. A volunteer aged 92 is unusual, not wrong. Removing real but surprising values is one way analyses end up telling people what they expected rather than what is true.",
+      "Never secretly delete awkward rows or change unusual values just because they are unusual. A volunteer aged 92 is unusual, not wrong. Removing real but surprising values is one way analyses end up telling people what they expected rather than what is true.",
       {warn:"“Cleaning” that changes meaning is not cleaning. If you aren’t sure two values mean the same thing (`Kerrow` and `Kerrow North` may be two different places), ask someone who knows, or keep them separate."}
     ]},
     {h:"Keep raw data raw, and write it down", body:[
@@ -200,7 +200,7 @@ ICA.addUnit({
       "Be careful splitting names at spaces. `Ana María López` has three parts, and a family name may come first in many cultures. Store given and family names separately at data entry if you need them separately; don’t guess afterwards."
     ]},
     {h:"Numbers and dates stored as text", body:[
-      "A number stored as text looks like a number but behaves like a word: SUM skips it, sorting puts `100` before `25`, and a lookup won’t match it. In most apps such text sits at the left of the cell by default, which is a useful clue.",
+      "A number stored as text looks like a number but behaves like a word: SUM skips it, sorting puts `100` before `25`, and a lookup won’t match it. In most apps such text is at the left of the cell by default, which is a useful clue.",
       {table:[["Typed","Why it’s text","Formula fix"],["`12␣`","Trailing space","`=VALUE(TRIM(A2))`"],["`€30`","Currency symbol typed","`=VALUE(SUBSTITUTE(A2, \"€\", \"\"))`"],["`4 hrs`","Unit typed","`=VALUE(SUBSTITUTE(A2, \" hrs\", \"\"))`"],["`1,250`","Thousands comma, in some settings","Depends on your [[locale]]"]]},
       "`VALUE` turns text that looks like a number into a number. The `1,250` row is a reminder that numbers depend on locale: in many countries the comma is the decimal mark, so `1,250` means one and a quarter. Know which convention your data uses before you remove commas, or you’ll multiply some values by a thousand.",
       "Dates typed as text have the same problem and more. `03/04/2026` means 3 April in some places and March 4 in others. Unit 2 of this track covers dates in data, including unambiguous [[iso-date|ISO dates]] ({{dates-in-data}}). When cleaning, never convert ambiguous dates without knowing the convention used.",
@@ -230,7 +230,7 @@ ICA.addUnit({
     {id:"t3u3-l2-x5", type:"mcq", q:"In Google Sheets, A2 holds `Kerrow, 4`. Tomás writes `=SPLIT(A2, \", \")`. What happens?", options:[
       {t:"It splits at the comma and the space separately", ok:true, why:"Right. By default SPLIT treats each character in the delimiter as its own separator. Here it still gives `Kerrow` and `4`, but `Port Ellis, 4` would become three cells. `Kerrow, 4` survives by luck; any value with a space in it gets cut up. Use `\",\"` plus TRIM, or set the third argument to FALSE."},
       {t:"It splits only where the exact two characters comma-space appear", why:"That’s what you might expect, but SPLIT’s third argument (split_by_each) is TRUE by default, so each character is a separator on its own."},
-      {t:"It returns an error because SPLIT needs a single character", why:"SPLIT accepts longer delimiters; the catch is how it treats them."},
+      {t:"It returns an error because SPLIT needs a single character", why:"SPLIT accepts longer delimiters; but how it treats them matters."},
       {t:"It changes A2 itself into two cells", why:"A formula never changes its source cell. The results appear in the formula’s cell and the cells to its right."}]},
     {id:"t3u3-l2-x6", type:"sort", q:"Which tool fits each job best?", buckets:["TRIM","SUBSTITUTE","Split to columns","VALUE"], items:[
       {t:"Remove spaces before and after names typed on a form", b:0, why:"Spaces at the ends (and repeated spaces) are exactly what TRIM is for."},
@@ -308,7 +308,7 @@ ICA.addUnit({
       "Many everyday fixes are one click away under a column’s **Edit cells → Common transforms**:",
       {list:["**Trim leading and trailing whitespace** and **Collapse consecutive whitespace**: the spreadsheet TRIM, split in two.","**To titlecase**, **To uppercase**, **To lowercase**.","**To number**, **To date**, **To text**: change the data type; numbers turn green and line up on the right.","**To null** and **To empty string**: blank out the selected cells (useful with a facet selecting `n/a`)."]},
       "After each transform a yellow message says how many cells changed. Say you converted a column of 180 cells **To number**, and the message says 172. Then 8 cells couldn’t be converted. A Numeric facet will show you which ones (it lists Numeric, Non-numeric, Blank and Error counts).",
-      "One difference from spreadsheets is worth knowing. OpenRefine’s trim and collapse transforms treat the non-breaking space as whitespace too. In version 3.10 they use Unicode’s definition of whitespace. So the web-page spaces from Lesson 2 are caught.",
+      "There is one difference from spreadsheets. OpenRefine’s trim and collapse transforms treat the non-breaking space as whitespace too. In version 3.10 they use Unicode’s definition of whitespace. So the web-page spaces from Lesson 2 are caught.",
       {key:"Look with facets, fix in bulk, read the “cells changed” message, and look again."}
     ]}
    ],
@@ -430,7 +430,7 @@ ICA.addUnit({
       {t:"`Port Elis` and `Port Ellis`", why:"Different letters, so different keys. Try n-gram with n = 1, or Levenshtein with radius 1."}]},
     {id:"t3u3-l4-x3", type:"number", q:"What is the Levenshtein distance between `chirdozo` and `chirodzo`?", answer:2, tol:0, unit:"edits", why:"The strings differ only in positions 5 and 6: `do` versus `od`. Levenshtein distance counts insertions, deletions and substitutions, so the swap needs two substitutions (d→o and o→d): distance 2.", wrongs:[{v:1, tol:0, why:"Swapping two neighboring letters counts as one edit in a different measure (Damerau-Levenshtein). But plain Levenshtein, which OpenRefine uses, has no swap operation. It takes two substitutions."},{v:4, tol:0, why:"Only two characters differ; the other six already match."}]},
     {id:"t3u3-l4-x4", type:"mcq", q:"Fatima’s cluster window suggests merging `Ana Silva` (12 rows) and `Ana Silvia` (3 rows) into `Ana Silva`. What should she do?", options:[
-      {t:"Leave it unchecked until she has checked other details", ok:true, why:"Right. Two people can have names one letter apart. A merge would quietly give one person’s records to another. Check other columns, such as email or date of birth, first."},
+      {t:"Leave it unchecked until she has checked other details", ok:true, why:"Right. Two people can have names one letter apart. A merge would give one person’s records to another. Check other columns, such as email or date of birth, first."},
       {t:"Merge: the most common spelling is always right", why:"The count tells you which spelling is common, not whether these are the same person."},
       {t:"Merge, because a distance of 1 proves they’re the same", why:"Edit distance measures how similar the characters are, not whether they mean the same thing."},
       {t:"Delete the 3 `Ana Silvia` rows", why:"Deleting loses real records, and these may belong to a different person."}]},
@@ -492,7 +492,7 @@ ICA.addUnit({
       {code:['import difflib','','official = ["Port Ellis", "Kerrow", "Ashby Vale",','            "Millbrook"]','typed = ["port elis", "Kerow", "Ashby Vail",','         "Milbrook", "Northgate"]','','lookup = {o.lower(): o for o in official}','for t in typed:','    hits = difflib.get_close_matches(','        t.lower(), list(lookup), n=1, cutoff=0.8)','    match = lookup[hits[0]] if hits else "NO MATCH"','    print(f"{t!r:14} -> {match}")'].join("\n"), lang:"py", label:"match_towns.py", cap:"Prints `'port elis'    -> Port Ellis`, then Kerrow, Ashby Vale, Millbrook, and `'Northgate'    -> NO MATCH`. `cutoff=0.8` is the threshold: only scores of 0.8 or more count."},
       "The threshold is a trade-off. Set it **too low** and you get **false matches**: if the official list also had `Ashby Dale`, then `Ashby Vail` would score 0.8 against it too, just enough to pass. Set it **too high** and real matches are **missed**. There is no perfect setting; there is only a setting plus a human review of the borderline cases.",
       {key:"A similarity score finds candidates. Other evidence (email, date of birth, address) and a person decide."},
-      "For people, compare several fields, not just names. Two rows with similar names **and** the same email are very likely one person. Similar names with different birth years probably aren’t. Large-scale versions of this are called **record linkage**."
+      "For people, compare several fields, as well as names. Two rows with similar names **and** the same email are very likely one person. Similar names with different birth years probably aren’t. Large-scale versions of this are called **record linkage**."
     ]},
     {h:"Undo / Redo: the history is a recipe", body:[
       "Every change you make in OpenRefine is listed in the **Undo / Redo** tab, from step 0, “Create project”. Click any earlier step and the project goes back to that state; later steps turn gray and can be redone by clicking them.",
@@ -682,7 +682,7 @@ ICA.addUnit({
       "Memory: the default is about 1 GB (1024 MB in `openrefine.l4j.ini`; the `refine.ini` used by the start scripts in 3.10 sets 1400 MB); the manual suggests more for projects over roughly a million cells or 50 MB files, set in `openrefine.l4j.ini` (Windows exe), `refine.ini` or the `-m` option (Linux). Turning off “parse cell text into numbers” on import saves memory.",
       "Privacy: core features run offline. Importing from URLs, fetching URLs into columns and reconciliation send data to outside services, which matters for confidential data. Extensions can add functions, importers and exporters; check their stated version compatibility.",
       "Java: the Linux start script requires Java 11 or later and warns that versions above 21 are untested.",
-      "Projects live in the workspace directory (on Windows typically under AppData, on a Mac in `~/Library/Application Support/OpenRefine/`, on Linux in `~/.local/share/openrefine/`). Back that folder up, or export project archives, before upgrading; the manual recommends this and warns that extensions may not be compatible with new versions."
+      "Projects are stored in the workspace directory (on Windows typically under AppData, on a Mac in `~/Library/Application Support/OpenRefine/`, on Linux in `~/.local/share/openrefine/`). Back that folder up, or export project archives, before upgrading; the manual recommends this and warns that extensions may not be compatible with new versions."
      ]},
     related:["facets-clustering","grel-transformations","cleaning-log","data-cleaning"],
     read:[{book:"dcss", where:"OpenRefine for Social Science Data → “Working with OpenRefine” → “Creating a new OpenRefine project”"}],
@@ -792,7 +792,7 @@ ICA.addUnit({
       "Name files so their role is obvious: `…_raw`, `…_clean`, `…_removed`, `clean_steps.json`, `cleaning_log.txt`, with dates in [[iso-date|ISO order]] (2026-10) so they sort correctly."
      ],
      pro:[
-      "Each extracted operation records its type (for example `core/text-transform` or `core/mass-edit`), column, expression with language prefix (`grel:…`), on-error behavior and the engine configuration, including active facets. Applying it with a facet configuration that no longer matches the new data can change a different set of rows than you expect, so review the JSON, not just the step titles.",
+      "Each extracted operation records its type (for example `core/text-transform` or `core/mass-edit`), column, expression with language prefix (`grel:…`), on-error behavior and the engine configuration, including active facets. Applying it with a facet configuration that no longer matches the new data can change a different set of rows than you expect, so review the JSON as well as the step titles.",
       "The JSON is not a full script: it can’t express “check the paper form” or “ask the office”. That’s why the log of decisions remains essential. For fully automated pipelines, the manual lists third-party tools that run OpenRefine operation files from the command line, and many teams move to R or Python scripts under version control ({{why-version-control}}).",
       "Spreadsheets have version history ({{version-history}}) but no reusable recipe; there, a log plus helper-column formulas (kept, not pasted over) does the same job. Keep the raw file read-only and store log, recipe and outputs together, ideally alongside a [[data-dictionary|data dictionary]] (Unit 2 of this track).",
       "A log is also part of honest reporting: when results are published, the number of records excluded and why (duplicates, impossible values, missing data) should be stated, and the log is where those numbers come from.",
@@ -1046,7 +1046,7 @@ ICA.addUnit({
      {t:"It keeps the full history, back to the raw data", ok:true, why:"Right. Anyone can undo back to step 0 and see the names. Share a cleaned export and the steps instead."},
      {t:"It uploads the data to OpenRefine’s servers", why:"Exporting saves a file on your computer; nothing is uploaded."},
      {t:"It includes your passwords", why:"Project archives hold data and history, not passwords."},
-     {t:"It can be opened only on the computer that made it", why:"It can be opened anywhere: that’s the point of the archive, and the reason for care."}]},
+     {t:"It can be opened only on the computer that made it", why:"It can be opened anywhere: that is what an archive is for, and the reason for care."}]},
    {id:"t3u3-q45", lesson:"t3u3-l5", level:2, q:"Which entry belongs in a cleaning log but is not recorded by OpenRefine’s history?", options:[
      {t:"Why Kerrow and Kerrow North were kept separate", ok:true, why:"Right. History records what was done; only you can record the reasons and evidence."},
      {t:"The expression used to trim the town column", why:"The history records each transform with its exact expression."},

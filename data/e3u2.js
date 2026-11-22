@@ -649,7 +649,7 @@ ICA.addUnit({
       "い-adjectives change by themselves. Take off the final い and add the new ending. Then add です to be polite.",
       {table:[["","Form","Meaning"],["Present","[高]{たか}いです","is expensive"],["Negative","[高]{たか}くないです","is not expensive"],["Past","[高]{たか}かったです","was expensive"],["Past negative","[高]{たか}くなかったです","was not expensive"]]},
       "There is a second, slightly more formal set of negatives that uses ありません: [高]{たか}くありません (is not) and [高]{たか}くありませんでした (was not). Both sets are polite and correct.",
-      {key:"With い-adjectives, the tense lives in the adjective. です never changes: it only adds politeness. So [高]{たか}かったです, never ✗ [高]{たか}いでした."},
+      {key:"With い-adjectives, the tense is in the adjective. です never changes: it only adds politeness. So [高]{たか}かったです, never ✗ [高]{たか}いでした."},
       {ex:"このかばんは[安]{やす}いです。 This bag is cheap.\n[昨日]{きのう}は[暑]{あつ}かったです。 It was hot yesterday.\nテストは[難]{むずか}しくなかったです。 The test wasn’t difficult.", label:"In sentences"}
     ]},
     {h:"いい: the one irregular い-adjective", body:[
@@ -754,7 +754,7 @@ ICA.addUnit({
       {t:"このカレーはあまり[辛]{から}いじゃないです。", why:"じゃないです is the negative for nouns and な-adjectives. [辛]{から}い is an い-adjective: [辛]{から}くないです."}
     ]},
     {id:"e3u2-l5-x9", type:"type", q:"Type the polite way to say “was cold” ([寒]{さむ}い = cold): 「[昨日]{きのう}はとても＿＿。」 (“It was very cold yesterday.”)", answer:"さむかったです",
-      wrongs:[{v:"さむいでした", why:"With い-adjectives the tense lives in the adjective, not in です: drop い, add かった, then です."},
+      wrongs:[{v:"さむいでした", why:"With い-adjectives the tense is in the adjective, not in です: drop い, add かった, then です."},
               {v:"さむかったでした", why:"The past is already in さむかった. です only adds politeness, and it doesn’t change to でした here."},
               {v:"さむいです", why:"That is “is cold”. For yesterday, make the adjective past: さむかったです."}],
       why:"さむい is an い-adjective. Drop い, add かった for the past, then add です to be polite: さむかったです."},
@@ -979,7 +979,7 @@ ICA.addUnit({
       "**Verbs that take に for a person.** Some verbs mark the other person with に: 「[友]{とも}だちに[会]{あ}います。」 (I meet a friend), and verbs of giving, telling and asking mark the receiver with に. Learn these with the verb.",
       "**Exceptions to the action test.** A few verbs that look like actions mark the place with に, because they put you in a place or keep you there: [住]{す}む (live somewhere, 「[町]{まち}に[住]{す}んでいます」), [座]{すわ}る (sit down on or in something: いすに[座]{すわ}ります), [泊]{と}まる (stay overnight: ホテルに[泊]{と}まります). Learn the に with the verb. Events, on the other hand, use で even with あります: 「[駅]{えき}の[前]{まえ}でお[祭]{まつ}りがあります。」, because something happens there.",
       "**と versus や.** と lists everything: パンとたまご (bread and eggs, that’s all). や gives examples from a longer list: パンやたまご (bread, eggs and so on). や is N5 vocabulary too.",
-      "**まで versus までに.** まで marks how long something continues (“until”): 「[五時]{ごじ}まで[働]{はたら}きます。」 までに marks a deadline (“by”): 「[五時]{ごじ}までに[来]{き}てください。」 Most course books teach it a little later (around N4), but it is worth knowing early.",
+      "**まで versus までに.** まで marks how long something continues (“until”): 「[五時]{ごじ}まで[働]{はたら}きます。」 までに marks a deadline (“by”): 「[五時]{ごじ}までに[来]{き}てください。」 Most course books teach it a little later (around N4), but it helps to know it early.",
       "**へ before の.** へ can keep its meaning before の, which に can’t do: [母]{はは}への[手紙]{てがみ} (a letter to my mother).",
       "**Days of the week.** Textbooks usually teach [日曜日]{にちようび}に with に, and that is always correct. In conversation people often drop it, especially when the day is the topic: 「[日曜日]{にちようび}は[休]{やす}みです。」"
      ]
@@ -1103,7 +1103,7 @@ ICA.addUnit({
      ],
      builder:[
       {table:[["","い-adjective","な-adjective"],["Before a noun","[高]{たか}い[山]{やま}","[静]{しず}かな[町]{まち}"],["Present","[高]{たか}いです","[静]{しず}かです"],["Negative","[高]{たか}くないです / [高]{たか}くありません","[静]{しず}かではありません / じゃありません"],["Past","[高]{たか}かったです","[静]{しず}かでした"],["Past negative","[高]{たか}くなかったです / [高]{たか}くありませんでした","[静]{しず}かではありませんでした / じゃありませんでした"]]},
-      "**Key mistake:** with い-adjectives the tense lives in the adjective, so the past is [寒]{さむ}かったです, never ✗ [寒]{さむ}いでした.",
+      "**Key mistake:** with い-adjectives the tense is in the adjective, so the past is [寒]{さむ}かったです, never ✗ [寒]{さむ}いでした.",
       "**No な at the end:** 「[町]{まち}は[静]{しず}かです。」, never ✗ [静]{しず}かなです.",
       "**いい:** いいです, よくないです, よかったです, よくなかったです; also in compounds such as かっこいい → かっこよくない.",
       "**Likes and dislikes:** [好]{す}き and きらい are な-adjectives, and the thing liked takes が: 「ねこが[好]{す}きです。」",

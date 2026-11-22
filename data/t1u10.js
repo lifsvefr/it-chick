@@ -633,7 +633,7 @@ ICA.addUnit({
     {id:"t1u10-l4-x1", type:"match", q:"Match each part of presenter view with what it helps you do.", pairs:[
       ["Next slide preview","Lead smoothly into the next point","You can say “Now let’s look at the cost…” before it appears."],
       ["Timer","Keep to your time slot","You can see whether you’re ahead or behind at each slide."],
-      ["Speaker notes","Remember examples and numbers without reading the slide","Prompts sit beside the slide where only you can see them."],
+      ["Speaker notes","Remember examples and numbers without reading the slide","Prompts appear beside the slide where only you can see them."],
       ["Black screen button","Pull attention back to you for a story or discussion","With the screen blank, the audience looks at the speaker."],
       ["Slide overview (see all slides)","Jump to a backup slide during questions","You can go straight to the slide that answers a question."]
     ]},
@@ -771,7 +771,7 @@ ICA.addUnit({
         ["LibreOffice Impress","**File → Export as → Export as PDF**","**File → Print**, **LibreOffice Impress** tab, set **Document** to **Handouts**"],
         ["Keynote","**File → Export To → PDF** (option to include presenter notes)","**File → Print**, then choose **Handout**"]
       ]},
-      "Google Slides has one more option worth knowing. Its **HTML view** shows the whole presentation as a single scrollable web page, which can be easier for screen reader users. Press [[kbd:Ctrl]] + [[kbd:Alt]] + [[kbd:Shift]] + [[kbd:P]] on Windows and ChromeOS.",
+      "Google Slides has one more option. Its **HTML view** shows the whole presentation as a single scrollable web page, which can be easier for screen reader users. Press [[kbd:Ctrl]] + [[kbd:Alt]] + [[kbd:Shift]] + [[kbd:P]] on Windows and ChromeOS.",
       {warn:"Before sharing any version, look through the speaker notes, comments and any hidden slides. They travel with the file, and notes can also appear in PDFs and handouts if you choose those layouts. In desktop PowerPoint, **File → Info → Check for Issues → Inspect Document** can find and remove notes, comments and personal information."}
     ]},
     {h:"Share a link or send a file?", body:[
@@ -890,7 +890,7 @@ ICA.addUnit({
       {t:"Inspirational", why:"An inspirational talk aims to motivate or move people. This one teaches a task."},
       {t:"Informational", why:"Informational talks share facts so people understand. The goal here is for colleagues to be able to do the task."}
     ]},
-    {id:"t1u10-cp02", lesson:"t1u10-l2", level:1, q:"On Nuno’s slide, a photo sits in the top-left corner and its caption is in the bottom-right corner. Which design principle does this break?", options:[
+    {id:"t1u10-cp02", lesson:"t1u10-l2", level:1, q:"On Nuno’s slide, a photo is in the top-left corner and its caption is in the bottom-right corner. Which design principle does this break?", options:[
       {t:"Repetition", why:"Repetition is about keeping titles, fonts and colors the same across slides. This problem is about distance."},
       {t:"Contrast", why:"Contrast makes important things look different. The problem here is that related things are far apart."},
       {t:"Proximity", ok:true, why:"Proximity means putting related things close together, such as a photo and its caption."},
@@ -1050,7 +1050,7 @@ ICA.addUnit({
      builder:[
       "**Images.** Google’s help for Slides says stock media may be used for personal, educational or commercial purposes in its apps (not resold or used in logos), but that for web images Google “has no way of knowing whether your use is permitted”: check the license on the source page. Credit with title, author, source and license.",
       "**Charts on slides:** decide the point; choose the simplest chart (bars to compare, lines for change over time); remove clutter; highlight and label directly; write the point as the headline. Avoid 3D, start bar axes at zero, and don’t hide awkward data.",
-      "**Video and audio.** Embedded media lives in the file (big files); linked files break if moved; online video needs internet. Microsoft’s PowerPoint for Windows and Mac can attach caption files (WebVTT or SRT) via the Accessibility tab’s **Insert Captions**; **Compress Media** removes them.",
+      "**Video and audio.** Embedded media is stored in the file (big files); linked files break if moved; online video needs internet. Microsoft’s PowerPoint for Windows and Mac can attach caption files (WebVTT or SRT) via the Accessibility tab’s **Insert Captions**; **Compress Media** removes them.",
       "**Alt text.** Microsoft advises a sentence or two, no “image of…”, checking auto-generated descriptions, and marking decoration as decorative. For charts, give the finding and key numbers.",
       "**Motion.** Use transitions and animations only when movement explains. Avoid anything flashing more than three times a second (WCAG’s seizure guideline).",
       "**Diagrams and icons:** a few boxes and arrows (SmartArt in PowerPoint, **Insert → Diagram** in Google Slides, shapes and connectors anywhere) often beat a paragraph. Use one icon style throughout, and label icons, because an icon alone can be misread."
@@ -1083,7 +1083,7 @@ ICA.addUnit({
       "In Keynote, **Play → Rehearse Slideshow** shows the presenter display on a single screen, which is the easiest way to practice with it before you have a second display."
      ],
      pro:[
-      {list:["**One screen online.** Run the slide show in a window and share only that window, while notes sit elsewhere: PowerPoint’s **Set Up Slide Show → Browsed by an individual (window)**, Keynote’s **Play → In Window** (older versions: **Play Slideshow in Window**), or LibreOffice’s windowed modes. Never share the presenter view itself.","**Keys worth knowing.** Number + Enter jumps to a slide (PowerPoint, Google Slides, Impress, Keynote); B blanks the screen in PowerPoint, Google Slides and Impress; in Keynote, press ? during a show to see its keys; Esc ends the show.","**Mirroring vs extending.** If your computer mirrors its display, both screens show the same image and presenter view can’t separate them. Set the second display to extend (Windows: [[kbd:Win]] + [[kbd:P]] → Extend; macOS: Displays settings).","**Changing interfaces.** Presenter view layouts change between versions and updates. If a button has moved, look for the same functions (notes, timer, next slide, black screen, slide overview); they rarely disappear.","**PowerPoint for the web.** Microsoft’s main presenter view article covers the desktop apps. Recent web versions offer a presenter view window, but check your version before relying on it."]},
+      {list:["**One screen online.** Run the slide show in a window and share only that window, while notes sit elsewhere: PowerPoint’s **Set Up Slide Show → Browsed by an individual (window)**, Keynote’s **Play → In Window** (older versions: **Play Slideshow in Window**), or LibreOffice’s windowed modes. Never share the presenter view itself.","**Useful keys.** Number + Enter jumps to a slide (PowerPoint, Google Slides, Impress, Keynote); B blanks the screen in PowerPoint, Google Slides and Impress; in Keynote, press ? during a show to see its keys; Esc ends the show.","**Mirroring vs extending.** If your computer mirrors its display, both screens show the same image and presenter view can’t separate them. Set the second display to extend (Windows: [[kbd:Win]] + [[kbd:P]] → Extend; macOS: Displays settings).","**Changing interfaces.** Presenter view layouts change between versions and updates. If a button has moved, look for the same functions (notes, timer, next slide, black screen, slide overview); they rarely disappear.","**PowerPoint for the web.** Microsoft’s main presenter view article covers the desktop apps. Recent web versions offer a presenter view window, but check your version before relying on it."]},
       "**Notes on paper as a backup.** All four apps can print or export notes: PowerPoint notes pages, Google Slides’ **1 slide with notes**, Impress’s **Notes** print option and Keynote’s option to include presenter notes in a PDF. A printed copy rescues you if the laptop or the second display fails."
      ]
     },
@@ -1160,7 +1160,7 @@ ICA.addUnit({
      ],
      pro:[
       {list:["**Hidden titles.** Keep a title on visually title-less slides by placing the title placeholder off the slide; do it in the master for whole layouts.","**Tables.** Microsoft advises avoiding tables where possible; otherwise no merged, split or nested cells, and a defined header row.","**Contrast gaps.** PowerPoint’s checker misses text in transparent boxes, placeholders over backgrounds and non-text content; check those with a contrast tool.","**Automatic alt text.** PowerPoint for Microsoft 365 on Windows generates alt text for photos and stock images, and Google says some images in Slides get alt text automatically. Remove phrases like “Description automatically generated” and correct errors.","**WCAG references.** Text contrast 1.4.3 (4.5:1, large text 3:1); non-text contrast 1.4.11 (3:1); use of color 1.4.1; flashing 2.3.1. A note of caution: Google’s accessibility help recommends higher figures (7:1 for normal text, 4.5:1 for large text), which match WCAG’s enhanced AAA level rather than the AA minimum. Meeting Google’s figures also meets AA; for the standard itself, use W3C’s pages.","**Testing.** Try the deck with a screen reader (Narrator, VoiceOver, TalkBack, ChromeVox) and keyboard only. Check the exported PDF too: an accessible deck can become an inaccessible PDF if tags aren’t exported."]},
-      "**Captions and descriptions for video.** Microsoft distinguishes subtitles (usually the dialogue), closed captions (dialogue plus important sounds) and video descriptions (narration of what is shown, during natural pauses). A video whose meaning is in the pictures needs a description, not only captions."
+      "**Captions and descriptions for video.** Microsoft distinguishes subtitles (usually the dialogue), closed captions (dialogue plus important sounds) and video descriptions (narration of what is shown, during natural pauses). A video whose meaning is in the pictures needs a description as well as captions."
      ]
     },
     related:["slide-design","slide-visuals","sharing-presentations","presenting-online"],
@@ -1196,7 +1196,7 @@ ICA.addUnit({
   terms:[
    {id:"presentation", term:"Presentation", def:"A talk given to an audience for a set time, usually with slides as a visual aid. The file of slides is also called a presentation or a deck.", codex:"presentation-planning"},
    {id:"slide", term:"Slide", def:"One screen of a presentation. A set of slides is often called a deck.", codex:"slide-layouts-masters"},
-   {id:"key-message", term:"Main message", def:"The one sentence you want the audience to remember: a claim about the topic, not just its name. Also called the key message.", codex:"presentation-planning"},
+   {id:"key-message", term:"Main message", def:"The one sentence you want the audience to remember: a claim about the topic, rather than only its name. Also called the key message.", codex:"presentation-planning"},
    {id:"call-to-action", term:"Call to action", def:"The specific thing you ask the audience to do at the end of a talk, such as “Sign up by Friday”.", codex:"presentation-planning"},
    {id:"storyboard", term:"Storyboard", def:"A sketch of a talk made before building it: one box per slide, each with a headline, a rough visual and what you will say.", codex:"presentation-planning"},
    {id:"theme", term:"Theme", def:"A ready-made set of colors, fonts, background and layouts applied to a whole presentation.", codex:"slide-layouts-masters"},
@@ -1275,7 +1275,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u10-q10", lesson:"t1u10-l2", level:1, q:"What does the slide master do?", options:[
-     {t:"Holds the deck’s design, so one change updates every slide", ok:true, why:"Fonts, colors, background and repeated items like a logo live on the master, and a change there updates every slide that uses it."},
+     {t:"Holds the deck’s design, so one change updates every slide", ok:true, why:"Fonts, colors, background and repeated items like a logo are on the master, and a change there updates every slide that uses it."},
      {t:"Stores the speaker’s notes", why:"Notes are attached to each slide, not the master."},
      {t:"Controls the order of the slides", why:"Order is set in the slide sorter or thumbnail pane."},
      {t:"Records how long each slide is shown when you rehearse the talk", why:"That is rehearsal timing, not the master."}

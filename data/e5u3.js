@@ -299,7 +299,7 @@ ICA.addUnit({
     ]},
     {h:"Why learners don’t hear them", body:[
       {lead:"Many learners can read English well but miss small words when they listen."},
-      "Here are the usual reasons. First, **spelling gets in the way**. If you know the word as *of*, you listen for “of”, and /əv/ does not match. Second, **school pronunciation** often shows only the strong form. Third, each weak form is **very short**, and it sits between two stressed beats, so the ear skips it.",
+      "Here are the usual reasons. First, **spelling gets in the way**. If you know the word as *of*, you listen for “of”, and /əv/ does not match. Second, **school pronunciation** often shows only the strong form. Third, each weak form is **very short**, and it is between two stressed beats, so the ear skips it.",
       "A fourth reason comes from Japanese. In Japanese, each mora tends to keep about the same length, and a small word such as *wa* or *o* is said clearly. English speakers do the opposite, so the learner’s “time slot” for a small word is too long. The weak form seems to be missing rather than shortened.",
       {h:"Compared with Japanese"},
       "Katakana words add vowels that English does not have, such as *kappu* for “cup”, with a final *u*. Weak forms work the other way. English *removes* or *reduces* vowels in small words: *a cup of tea* has four syllables but only two strong beats. Hearing this takes practice because your ear first tries to find all the syllables you expect.",
@@ -556,7 +556,7 @@ ICA.addUnit({
       {h:"Even timing"},
       "Japanese tends to give each mora about the same length (Lesson 2). English does not: stressed syllables are long, and weak syllables are short and squeezed. With even timing, there is no strong difference between important and unimportant words, and no weak forms (Lesson 3).",
       {h:"Pitch accent, not stress"},
-      "In Japanese, pitch separates words: *hashi* “chopsticks” and *hashi* “bridge” differ only in pitch (Lesson 1). In English, pitch movement also lands on **stressed syllables** and marks **new information**. If a speaker keeps the Japanese habits, the pitch movement may fall in different places from the English stress. Then the listener may hear a rhythm with no clear center.",
+      "In Japanese, pitch separates words: *hashi* “chopsticks” and *hashi* “bridge” differ only in pitch (Lesson 1). In English, pitch movement also falls on **stressed syllables** and marks **new information**. If a speaker keeps the Japanese habits, the pitch movement may fall in different places from the English stress. Then the listener may hear a rhythm with no clear center.",
       "None of this means that Japanese speakers cannot learn the English pattern. It means that the pattern is a new skill, and it can be learned like any other. The three changes to practice are: fewer vowels (say *strike* as one beat), uneven timing (long stressed, short weak), and pitch movement on the nucleus.",
       {h:"Practice"},
       {list:[

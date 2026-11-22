@@ -1545,7 +1545,7 @@ ICA.addUnit({
      {t:"Conflict theory of deviance", why:"That’s about crime and power, not national development."}
    ]},
    {id:"e2u3-q25", lesson:"e2u3-l3", level:1, q:"In world-systems theory, which countries are both exploited by the core and able to exploit the periphery?", options:[
-     {t:"Semi-peripheral countries", ok:true, why:"Wallerstein’s semi-periphery sits in between, playing both roles."},
+     {t:"Semi-peripheral countries", ok:true, why:"Wallerstein’s semi-periphery is in between, playing both roles."},
      {t:"Core countries", why:"Core countries dominate the system rather than being exploited."},
      {t:"Peripheral countries", why:"Peripheral countries have little power to exploit others."},
      {t:"Second World countries", why:"That’s a Cold War label, not a world-systems category."}
@@ -1594,7 +1594,7 @@ ICA.addUnit({
      {t:"An example of amalgamation", why:"Apartheid enforced separation, the opposite of blending."}
    ]},
    {id:"e2u3-q33", lesson:"e2u3-l4", level:3, q:"Over three generations, a migrant family stops speaking its original language at home and adopts the customs of the majority, by choice. Separately, another state takes Indigenous children to boarding schools and forbids their languages. What do the two cases share, and how do they differ?", options:[
-     {t:"Both are assimilation; the first is voluntary and the second is forced.", ok:true, why:"Both involve taking on the dominant culture; consent is the crucial difference."},
+     {t:"Both are assimilation; the first is voluntary and the second is forced.", ok:true, why:"Both involve taking on the dominant culture; consent is the main difference."},
      {t:"Both are pluralism.", why:"Pluralism means keeping distinct identities with equal standing, which is lost in both cases."},
      {t:"The first is genocide and the second is amalgamation.", why:"Neither label fits: no group is destroyed in the first, and no new blended group forms in the second."},
      {t:"Both are expulsion.", why:"No one is forced to leave a territory."}

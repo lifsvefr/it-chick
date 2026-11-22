@@ -269,7 +269,7 @@ ICA.addUnit({
       {t:"Neither; secondary sources aren’t cited", why:"They are cited, just through the work where you found them."}
     ]},
     {id:"t4u4-l2-x6", type:"mcq", q:"An organization’s web page has no author named and no date. It’s from Coastal Water Trust, which also runs the site. How does APA handle it?", options:[
-      {t:"The organization is the author; the date is n.d.: (Coastal Water Trust, n.d.)", ok:true, why:"An organization counts as an author. Only when there’s truly no person or organization does the title move to the author position."},
+      {t:"The organization is the author; the date is n.d.: (Coastal Water Trust, n.d.)", ok:true, why:"An organization counts as an author. Only when there’s no person or organization does the title move to the author position."},
       {t:"Author: Anonymous; (Anonymous, n.d.)", why:"APA uses “Anonymous” only when a work is actually signed “Anonymous”."},
       {t:"Leave it out; undated pages can’t be cited", why:"Undated pages can be cited: “n.d.” means no date."},
       {t:"Use today’s date as the publication date", why:"That would be false information. Use n.d., and add a retrieval date only if the page is designed to change."}
@@ -302,8 +302,8 @@ ICA.addUnit({
     {h:"MLA’s big idea: core elements and containers", body:[
       {lead:"MLA 9th doesn’t give you one fixed pattern per source type. It gives you a template of core elements, and you fill in the ones your source has."},
       {ol:["Author.","Title of source.","Title of container,","Other contributors,","Version,","Number,","Publisher,","Publication date,","Location."]},
-      "A **[[mla-container|container]]** is the bigger thing your source sits inside: a journal holds an article, an edited book holds a chapter, a website holds a page. Sometimes there’s a second container, such as the database where you read the journal.",
-      {fig:'<svg viewBox="0 0 340 250"><rect class="d-panel" x="10" y="10" width="320" height="230" rx="12" stroke-width="1.5"/><text x="24" y="34" class="s">Container 2 (optional): a database</text><rect class="d-lup" x="26" y="46" width="288" height="180" rx="10" stroke-width="2"/><text x="40" y="70" class="s">Container 1: the journal (italic)</text><text x="40" y="92">Journal of Schoolyard Ecology</text><text x="40" y="112" class="s">vol. 14, no. 2, 2023, pp. 45–62</text><rect class="d-gold" x="42" y="126" width="256" height="86" rx="8" stroke-width="2"/><text x="56" y="150" class="s">The source (in quotation marks)</text><text x="56" y="172">“Shade Trees and Classroom</text><text x="56" y="192">Temperatures …”</text></svg>', alt:"Nested boxes: the article (the source, in quotation marks) sits inside the journal (container 1, in italics, with volume, number, date and pages), which can sit inside a database (an optional second container).", cap:"Source inside container: the source’s title goes in quotation marks, the container’s in italics."},
+      "A **[[mla-container|container]]** is the bigger thing your source is part of: a journal holds an article, an edited book holds a chapter, a website holds a page. Sometimes there’s a second container, such as the database where you read the journal.",
+      {fig:'<svg viewBox="0 0 340 250"><rect class="d-panel" x="10" y="10" width="320" height="230" rx="12" stroke-width="1.5"/><text x="24" y="34" class="s">Container 2 (optional): a database</text><rect class="d-lup" x="26" y="46" width="288" height="180" rx="10" stroke-width="2"/><text x="40" y="70" class="s">Container 1: the journal (italic)</text><text x="40" y="92">Journal of Schoolyard Ecology</text><text x="40" y="112" class="s">vol. 14, no. 2, 2023, pp. 45–62</text><rect class="d-gold" x="42" y="126" width="256" height="86" rx="8" stroke-width="2"/><text x="56" y="150" class="s">The source (in quotation marks)</text><text x="56" y="172">“Shade Trees and Classroom</text><text x="56" y="192">Temperatures …”</text></svg>', alt:"Nested boxes: the article (the source, in quotation marks) is inside the journal (container 1, in italics, with volume, number, date and pages), which can be inside a database (an optional second container).", cap:"Source inside container: the source’s title goes in quotation marks, the container’s in italics."},
       "Punctuation follows the template: a period after the author and after the title of the source, commas between the elements of a container, and a period at the end of each container."
     ]},
     {h:"MLA works-cited patterns", body:[
@@ -339,7 +339,7 @@ ICA.addUnit({
         "**[[notes-bibliography|Notes and bibliography]]** uses footnotes or endnotes plus a bibliography. Common in history, the arts and much of the humanities.",
         "**[[author-date|Author-date]]** uses (Surname year, page) in the text plus a reference list. Common in the sciences and social sciences."
       ]},
-      "The details are almost the same in both; mainly the date moves. Two changes in the 18th edition are worth knowing: for **three or more authors**, notes and author-date citations now use the first author plus “et al.” (the 17th edition waited until four); and the **place of publication** is no longer needed for books (it’s still allowed)."
+      "The details are almost the same in both; mainly the date moves. Two changes in the 18th edition matter here: for **three or more authors**, notes and author-date citations now use the first author plus “et al.” (the 17th edition waited until four); and the **place of publication** is no longer needed for books (it’s still allowed)."
     ]},
     {h:"Chicago notes and bibliography", body:[
       "The first time you cite a source, the footnote gives full details, with the author’s name in normal order and commas between parts. Later notes for the same source use a **shortened note**: surname, a short title (up to about four words) and the page. The bibliography entry reverses the first author’s name and uses periods between parts. (When a paper has a full bibliography, Chicago 18th also allows a shortened note even the first time, so check what your instructor wants.)",
@@ -420,7 +420,7 @@ ICA.addUnit({
       {t:"(Ferreira, as cited in Mensah, 2022)", why:"“As cited in” is APA’s wording, and MLA citations don’t include a year."},
       {t:"No citation, because Mensah only quoted someone else", why:"The words and the source still need crediting; skipping it would be plagiarism."}
     ]},
-    {id:"t4u4-l3-x8", type:"explain", q:"Explain MLA’s idea of a “container”, using a chapter in an edited book as your example. How does the container affect the way the entry is formatted?", size:"3–4 sentences", hint:"What is the source, and what bigger thing does it sit inside?", model:"In MLA 9th, the container is the bigger work that your source sits inside. For a chapter in an edited book, the chapter is the source and the book is its container. The chapter title goes in quotation marks, then the book title in italics, followed by the container’s other elements in order: the editors (“edited by”), the publisher, the year and the page range, separated by commas. A second container, such as a database, can follow.", points:["Defines a container as the larger work that holds the source", "Identifies the chapter as the source and the book as the container", "Says the part is in quotation marks and the container in italics", "Mentions the container’s details (editors, publisher, date, pages) follow it"]}
+    {id:"t4u4-l3-x8", type:"explain", q:"Explain MLA’s idea of a “container”, using a chapter in an edited book as your example. How does the container affect the way the entry is formatted?", size:"3–4 sentences", hint:"What is the source, and what bigger thing is it part of?", model:"In MLA 9th, the container is the bigger work that your source belongs to. For a chapter in an edited book, the chapter is the source and the book is its container. The chapter title goes in quotation marks, then the book title in italics, followed by the container’s other elements in order: the editors (“edited by”), the publisher, the year and the page range, separated by commas. A second container, such as a database, can follow.", points:["Defines a container as the larger work that holds the source", "Identifies the chapter as the source and the book as the container", "Says the part is in quotation marks and the container in italics", "Mentions the container’s details (editors, publisher, date, pages) follow it"]}
    ],
    apply:{intro:"Take the three APA references you wrote in Lesson 2 and write them in the other styles. Rewriting the same sources is the fastest way to see what each style changes.", tasks:[
      {t:"Rewrite your three sources in MLA 9th", how:["Use full first names, title case and quotation marks for parts.","Move the year to the end of the container details.","Write an MLA in-text citation for one quotation."], write:"Works Cited (3 entries) and one in-text citation"},
@@ -534,7 +534,7 @@ ICA.addUnit({
       {t:"Ask the new instructor first, and disclose the earlier work", ok:true, why:"Reusing your own submitted work without permission is self-plagiarism under most policies. Asking and disclosing makes it honest."},
       {t:"Just submit it: you can’t plagiarize yourself", why:"Most policies say you can, because each assignment is meant to be new work. Rules vary, so ask."},
       {t:"Run it through a paraphrasing tool first so that it looks like new work", why:"Disguising reuse makes it worse, not better, and may count as misconduct."},
-      {t:"Cite it as if a different author wrote it", why:"That would be false. If reuse is allowed, cite it honestly as your own earlier work."}
+      {t:"Cite it as if a different author wrote it", why:"That would be false. If reuse is allowed, cite it as your own earlier work."}
     ]},
     {id:"t4u4-l4-x5", type:"mcq", q:"An AI tool gave Tomás a perfect-looking reference for his claim, with a DOI. When he opens the DOI link, it doesn’t exist. What should he do?", options:[
       {t:"Not use it; find real sources and cite only what he has read", ok:true, why:"AI tools can invent plausible references. Only cite works you have found and checked."},
@@ -603,7 +603,7 @@ ICA.addUnit({
       {ex:"Stored:  Shade trees and classroom temperatures: Evidence from twelve schools\nAPA:     Shade trees and classroom temperatures: Evidence from twelve schools.\nMLA:     “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.”", label:"One stored title, two styles", mono:true}
     ]},
     {h:"Collections, tags and notes", body:[
-      "**Collections** are like playlists: create one per project or chapter with **File → New Collection…** (or right-click **My Library**). An item can sit in several collections at once; removing it from a collection doesn’t delete it from your library.",
+      "**Collections** are like playlists: create one per project or chapter with **File → New Collection…** (or right-click **My Library**). An item can be in several collections at once; removing it from a collection doesn’t delete it from your library.",
       "**Tags** are labels that cut across collections (“methods”, “to read”, “Kenya”). **Notes** can be attached to an item, and the built-in PDF reader lets you highlight and annotate, then turn annotations into notes.",
       "Zotero also spots likely **duplicates** (look for **Duplicate Items** in the left pane) so you can merge them before they appear twice in a bibliography."
     ]},
@@ -758,7 +758,7 @@ ICA.addUnit({
      {t:"`Boateng, R. (2023). *Small boats, big seas: Fishing lives in Ghana* [Kindle edition]. Seabright Books.`", why:"APA 7th doesn’t name an ebook format such as “Kindle edition”. Leave it out."}]},
    {id:"t4u4-cp12", lesson:"t4u4-l5", level:1, q:"Mira removes an article from her Zotero collection “Chapter 2”. The same article is also in her collection “Methods”. What happens to it?", options:[
      {t:"It is deleted from her whole library", why:"Removing an item from a collection doesn’t delete it from the library. Collections are like playlists."},
-     {t:"It is removed from “Methods” as well", why:"Each collection is separate. An item can sit in several collections, and leaving one doesn’t affect the others."},
+     {t:"It is removed from “Methods” as well", why:"Each collection is separate. An item can be in several collections, and leaving one doesn’t affect the others."},
      {t:"It stays in her library and in “Methods”", ok:true, why:"An item can be in several collections at once. Removing it from one collection keeps it in the library and in any other collection."},
      {t:"Its PDF and notes are deleted, but its details stay", why:"Removing an item from a collection doesn’t touch its attachments or notes."}]},
   ],
@@ -890,7 +890,7 @@ ICA.addUnit({
       "Chicago is widely used by book publishers as a house style beyond citations: its manual covers spelling, numbers, punctuation and editing. *Turabian* (*A Manual for Writers*) adapts Chicago for students; check whether a Turabian guide follows the same Chicago edition you need, because older editions of it follow the 17th edition."
      ],
      pro:[
-      "**18th-edition changes worth knowing**: in notes and author-date citations, use the first author plus et al. for **three or more** authors (the 17th used four). Bibliographies and reference lists list **up to six** authors; for seven or more, the first three followed by et al. The **place of publication** for books is no longer required, and a **chapter’s page range** in a bibliography entry is optional (both older forms are still acceptable).",
+      "**Key 18th-edition changes**: in notes and author-date citations, use the first author plus et al. for **three or more** authors (the 17th used four). Bibliographies and reference lists list **up to six** authors; for seven or more, the first three followed by et al. The **place of publication** for books is no longer required, and a **chapter’s page range** in a bibliography entry is optional (both older forms are still acceptable).",
       {ex:"(Okafor et al. 2023, 50)\n\nOkafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe. 2023. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology* 14 (2): 45–62. https://doi.org/10.5555/jse.142.\n\nMensah, Ama K. 2022. “Radio, Rumor and Public Health.” In *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin. Northgate University Press. https://doi.org/10.5555/chc.3.", label:"Author-date", mono:true},
       "DOIs are written as `https://doi.org/` links. Access dates are needed only when a source has no publication or revision date. The full manual is a subscription product; the free Citation Quick Guide on chicagomanualofstyle.org covers the common cases.",
       "Notes can also carry commentary (“For a different view, see…”), which is one reason historians like them. If a work has no bibliography, the full first note must carry all the details. When there is a full bibliography, Chicago 18th allows shortened notes even for the first citation of a source, and it prefers shortened notes to “ibid.” (CMOS 18, 13.37, “Shortened citations versus ‘ibid.’”).",
@@ -1032,7 +1032,7 @@ ICA.addUnit({
       "A free zotero.org account syncs your library. Item data and notes sync freely; attached files use file storage, with 300 MB free. If that fills, other data keeps syncing; you can buy more or use WebDAV.",
       "**Groups.** A free group library lets a team share sources; group files count against the group owner’s storage.",
       "**PDFs and notes.** Zotero has a built-in PDF reader. Highlights and comments you make become annotations, which you can turn into notes with citations attached. Keep notes attached to the item they’re about so the source stays with the thought.",
-      "**Tags vs collections.** Use collections for projects (an item can sit in several) and tags for themes that cut across projects."
+      "**Tags vs collections.** Use collections for projects (an item can be in several) and tags for themes that cut across projects."
      ],
      pro:[
       "On a Chromebook, run the Linux version in the Linux development environment if your device allows it; otherwise use the Connector with the online library. The Connector works best with the desktop app open, but can save directly to your online library when signed in.",

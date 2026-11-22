@@ -3957,7 +3957,7 @@ ICA.addUnit({
     ],
     pro: [
      "**Near neighbors.** The pairs that cause most mistakes, and that tests like to check: ために vs ように (deliberate action vs hoped-for result), ようにする vs ようになる (effort vs change), ことにする vs ことになる, たところ vs たばかり (and てばかり), はず vs べき (expectation vs duty), わけがない vs わけではない, おかげで vs せいで, にとって vs に[対]{たい}して, and について vs に[対]{たい}して.",
-     "**Real overlaps.** Some choices are genuinely open: [上手]{じょうず}になるために／ように, ～たところ／～たばかり for “this very moment”, どうりで～わけだ／～はずだ, ～はずがない／～わけがない, and a few predicates with について or に[対]{たい}して. When native speakers accept both, the choice is about nuance, not right and wrong.",
+     "**Real overlaps.** Some choices are open: [上手]{じょうず}になるために／ように, ～たところ／～たばかり for “this very moment”, どうりで～わけだ／～はずだ, ～はずがない／～わけがない, and a few predicates with について or に[対]{たい}して. When native speakers accept both, the choice is about nuance, not right and wrong.",
      "**Edges of the list.** Because there is no official list, several patterns here (～ように, ～ことにする, ～ことになる, ～ところ, ～はず, ～てほしい) appear at N4 in some textbooks and reference sites, and in the Japan Foundation’s Irodori Pre-Intermediate course. This track teaches them at N3 with fuller contrasts. Don’t worry if your textbook draws the line elsewhere.",
      "**Practice.** Irodori Pre-Intermediate (free from the Japan Foundation) practices several of these patterns in everyday situations, with audio: ～ことになった (Lesson 1), ～てほしいんですが (Lesson 11), ～ことにする (Lesson 12), にとって (Lesson 14), ～たところだ (Lesson 16) and ～はずだ (Lesson 18). For kanji and vocabulary at this level, the Kanji Lab has N3 decks."
     ]

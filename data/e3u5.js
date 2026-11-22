@@ -467,14 +467,14 @@ ICA.addUnit({
           ]
         },
         {
-          h:"Politeness lives at the end of the sentence",
+          h:"Politeness is shown at the end of the sentence",
           body:[
             "Here is the most useful fact about the two styles: politeness is decided at the **end** of the sentence. Inside a sentence, before words such as [[kara-reason|から]] (because), plain forms are normal in polite speech. (In very formal speech some people keep ます here too: ありますから.) You saw this in Unit 3:",
             {
               ex:"[明日]{あした}は雨だから、[家]{いえ}にいます。\nIt’s going to rain tomorrow, so I’ll stay at home.\n\n[熱]{ねつ}があるから、[今日]{きょう}は[休]{やす}みます。\nI have a temperature, so I’ll take today off.",
               label:"Plain inside, polite at the end"
             },
-            "Both sentences are polite, because they end in ます. The plain forms 雨だ and ある sit inside. The rest of this unit uses this fact again and again. In Lesson 4, plain forms describe nouns ([昨日]{きのう}[買]{か}った[本]{ほん}, the book I bought yesterday). In Lesson 5, they go before ～んです and ～と[思]{おも}います. All of these can be part of a perfectly polite sentence.",
+            "Both sentences are polite, because they end in ます. The plain forms 雨だ and ある are inside. The rest of this unit uses this fact again and again. In Lesson 4, plain forms describe nouns ([昨日]{きのう}[買]{か}った[本]{ほん}, the book I bought yesterday). In Lesson 5, they go before ～んです and ～と[思]{おも}います. All of these can be part of a perfectly polite sentence.",
             {key:"Inside the sentence, plain forms do the grammar. At the end, you choose the style."}
           ]
         },
@@ -680,7 +680,7 @@ ICA.addUnit({
             {v:"やすむ", why:"The plain form is for friends and family. A teacher is above you, so the sentence ends in ます."},
             {v:"やすむです", why:"です doesn’t make a verb polite. The polite form of a verb is its ます-form: 休みます."}
           ],
-          why:"Politeness lives at the end of the sentence: 休む becomes 休みます for a teacher. The rest of the sentence stays the same. (Asking, with 休んでもいいですか, is even more considerate.)"
+          why:"Politeness is shown at the end of the sentence: 休む becomes 休みます for a teacher. The rest of the sentence stays the same. (Asking, with 休んでもいいですか, is even more considerate.)"
         }
       ],
       apply:{
@@ -720,7 +720,7 @@ ICA.addUnit({
         {
           book:"taekim",
           where:"Essential Grammar, “Polite Form and Verb Stems”, sections “Not being rude in Japan” and “「です」 is NOT the same as 「だ」”",
-          note:"Who gets polite speech, and why politeness lives at the end of the sentence."
+          note:"Who gets polite speech, and why politeness is shown at the end of the sentence."
         },
         {
           book:"irodori",
@@ -764,7 +764,7 @@ ICA.addUnit({
               label:"Polite, then casual"
             },
             "Both mean: “Did you watch the film yesterday?” “Yes, I did. It was good, wasn’t it?” In the casual version, the endings are plain, the question has no か, and はい has become うん. Notice also that neither version has a particle after [映画]{えいが}: a pause does the job, and that is common even in polite conversation.",
-            "The everyday yes and no of casual speech are うん (yes) and ううん (no). Listen for the difference: うん is short, while ううん has an extra beat at the start, a little like English “uh-uh”. Don’t confuse it with a long, drawn-out うーん (hmm…), which is the sound of someone thinking. You will also hear ええ, a soft yes that sits between はい and うん.",
+            "The everyday yes and no of casual speech are うん (yes) and ううん (no). Listen for the difference: うん is short, while ううん has an extra beat at the start, a little like English “uh-uh”. Don’t confuse it with a long, drawn-out うーん (hmm…), which is the sound of someone thinking. You will also hear ええ, a soft yes that is between はい and うん.",
             "Everything in this lesson is **casual**: use it with the people from the inner circle in Lesson 2, not with teachers, customers or strangers."
           ]
         },
@@ -1110,7 +1110,7 @@ ICA.addUnit({
               lead:"You already know how to describe a noun with an adjective: [新]{あたら}しい本 (a new book), [静]{しず}かな[町]{まち} (a quiet town). Japanese lets you do the same with a whole sentence."
             },
             "In English, longer descriptions come after the noun: “the book that I bought yesterday”, “a friend who lives nearby”. In Japanese they always come before it, exactly where an adjective would go: [昨日]{きのう}[買]{か}った本, [近]{ちか}くに[住]{す}んでいる[友]{とも}だち.",
-            "The describing part is a [[noun-modifier-clause|noun-modifying clause]]: a small sentence, ending in a plain form, that sits in front of a noun. Japanese grammar calls it [連体]{れんたい}[修飾]{しゅうしょく} (rentai shūshoku, “modifying a noun”). English has no single word in front of the noun that does this, so it is one of the biggest differences between the two languages.",
+            "The describing part is a [[noun-modifier-clause|noun-modifying clause]]: a small sentence, ending in a plain form, that comes before a noun. Japanese grammar calls it [連体]{れんたい}[修飾]{しゅうしょく} (rentai shūshoku, “modifying a noun”). English has no single word in front of the noun that does this, so it is one of the biggest differences between the two languages.",
             {
               fig:"<svg viewBox='0 0 340 372'><defs><marker id='a4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path class='d-inkf' d='M0,0 L10,5 L0,10 z'/></marker></defs><text x='170' y='20' text-anchor='middle'>From a sentence to a noun phrase</text><rect class='d-panel' x='6' y='32' width='328' height='62' rx='8' stroke-width='1.5'/><text class='s' x='16' y='50'>1. a sentence</text><text x='170' y='76' text-anchor='middle'>ははが ケーキを つくった。</text><path class='d-ink' d='M170,98 L170,122' stroke-width='2' marker-end='url(#a4)'/><text class='s' x='182' y='116'>take the noun out, put it last</text><rect class='d-lup' x='6' y='128' width='328' height='102' rx='8' stroke-width='2'/><text class='s' x='16' y='146'>2. a noun phrase (no を, plain verb)</text><text x='60' y='176'>ははが つくった</text><rect class='d-gold' x='206' y='158' width='76' height='26' rx='6' stroke-width='2'/><text x='244' y='176' text-anchor='middle'>ケーキ</text><path class='d-ink' d='M54,188 L54,200 L164,200 L164,188' stroke-width='1.5' fill='none'/><path class='d-ink' d='M164,200 L236,200 L236,190' stroke-width='1.5' fill='none' marker-end='url(#a4)'/><text class='s' x='60' y='220'>this part describes the noun</text><path class='d-ink' d='M170,234 L170,258' stroke-width='2' marker-end='url(#a4)'/><text class='s' x='182' y='252'>use it like any noun</text><rect class='d-sage' x='6' y='264' width='328' height='62' rx='8' stroke-width='2'/><text class='s' x='16' y='282'>3. in a new sentence</text><text x='170' y='308' text-anchor='middle'>ははが つくった ケーキは おいしい。</text><text class='s' x='170' y='346' text-anchor='middle'>The cake my mother made is delicious.</text><text class='s' x='170' y='364' text-anchor='middle'>English describes after the noun; Japanese before.</text></svg>",
               alt:"Three steps. Step 1, a sentence: ははが ケーキを つくった (My mother made a cake). Step 2, take the noun out and put it last: ははが つくった ケーキ, a noun phrase with no を and a plain verb; the part ははが つくった describes the noun ケーキ. Step 3, use it like any noun in a new sentence: ははが つくった ケーキは おいしい (The cake my mother made is delicious). English describes after the noun; Japanese before.",
@@ -1368,7 +1368,7 @@ ICA.addUnit({
           q:"Type the particle that marks who made it: 「これはかいとくん＿＿[作]{つく}ったそばです。」 (“This is the soba Kaito made.”)",
           answer:["が", "の"],
           wrongs:[
-            {v:"は", why:"は marks the topic of the whole sentence, so it can’t sit inside a clause that describes a noun. Inside the clause, the doer takes が or の."},
+            {v:"は", why:"は marks the topic of the whole sentence, so it can’t be inside a clause that describes a noun. Inside the clause, the doer takes が or の."},
             {v:"を", why:"を marks the object. Kaito is the one who made the soba, so が or の."}
           ],
           why:"Inside a clause that describes a noun, the doer takes が, or often の: かいとくんが[作]{つく}ったそば, かいとくんの[作]{つく}ったそば. Both are correct."
@@ -2003,7 +2003,7 @@ ICA.addUnit({
         "Don’t confuse 後 (あと, after) with [後]{うし}ろ (behind). [後]{あと} is about time; [後]{うし}ろ is about place: [私]{わたし}の後ろ (behind me), but [授業]{じゅぎょう}の[後]{あと}で (after class). The kanji is the same, so the okurigana ろ and the context tell you which one you are reading."
       ]},
       {h:"～た後で or ～てから?", body:[
-        "In Unit 3 you learned ～てから (after doing, then…). It often means the same as ～た後で, and many sentences accept both: [映画]{えいが}を見た後で / 見てから、[食事]{しょくじ}をしました (After the film, we had a meal). There are differences worth knowing, though.",
+        "In Unit 3 you learned ～てから (after doing, then…). It often means the same as ～た後で, and many sentences accept both: [映画]{えいが}を見た後で / 見てから、[食事]{しょくじ}をしました (After the film, we had a meal). There are some differences, though.",
         {list:[
           "**Steps in order: ～てから.** てから stresses that one thing must come first: “not until X, then Y”. That makes it the usual choice for instructions: [手]{て}を[洗]{あら}ってから、[食]{た}べてください (Wash your hands first, then eat).",
           "**“Since”: only ～てから.** With a length of time, てから means “since”: [日本]{にほん}へ[来]{き}てから、[二年]{にねん}になります (It’s been two years since I came to Japan). 後で can’t do this: ✗ [来]{き}た後で、二年になります.",
@@ -2039,7 +2039,7 @@ ICA.addUnit({
       ]},
       {h:"Common mistakes", body:[
         {table:[["✗ Mistake","✓ Correct","Why"],["[来]{き}た前に","[来]{く}る前に","Dictionary form before 前."],["[終]{お}わる後で","[終]{お}わった後で","た-form before 後."],["三年の前に (three years ago)","三年前に","No の with a length of time."],["雨ので / 雨だので","雨なので","Nouns take な before ので."],["[静]{しず}かだので","[静]{しず}かなので","だ becomes な before ので."],["[止]{と}まったのでです","[止]{と}まったからです","Only から can come before です."],["[来]{き}た後で、二年になります","[来]{き}てから、二年になります","For “since”, use ～てから."]]},
-        "Time clauses with 前に, 後で and とき, and reasons with ので and から, appear in almost every N4 and N3 text you will read, so it is worth making them automatic. Unit 6 builds on them with conditionals, which say what happens **if** something happens.",
+        "Time clauses with 前に, 後で and とき, and reasons with ので and から, appear in almost every N4 and N3 text you will read, so make them automatic. Unit 6 builds on them with conditionals, which say what happens **if** something happens.",
         "The full reference, with notes for later levels, is in {{before-after-because}}.",
         {terms:["mae-ni","ato-de","node-reason"]}
       ]}

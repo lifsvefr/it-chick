@@ -86,7 +86,7 @@ ICA.addUnit({
       {ex:"An imaginary but typical sequence:\n1. A team reports that a new teaching method raised math scores in 12 schools.\n2. A second team tries it in 40 schools in another country and finds a smaller effect.\n3. A third paper argues the first study’s schools also got extra teacher training, which may explain part of the effect.\n4. A review combines all the studies and concludes the method helps a little, mainly for younger students.\nEach paper cites the earlier ones. The review, not paper 1, is the best summary of what’s known.", label:"Worked example: a conversation in four papers"},
       "This has practical consequences for you as a reader:",
       {list:[
-        "**Find where a paper sits in the conversation.** Who does it respond to? Who has responded to it since? (Unit 2 shows how, with {{citation-chasing|citation chasing}}.)",
+        "**Find where a paper fits in the conversation.** Who does it respond to? Who has responded to it since? (Unit 2 shows how, with {{citation-chasing|citation chasing}}.)",
         "**Expect disagreement.** Debate among experts is normal and healthy; it isn’t a sign that “nobody knows anything”.",
         "**Look for summaries of many studies** (review articles, [[systematic-review|systematic reviews]], statements from expert bodies) before trusting any single result.",
         "**Know that you can join in.** A student essay, a practitioner’s report or a letter to a journal is also a turn in the conversation."
@@ -736,7 +736,7 @@ ICA.addUnit({
       {t:"The team is acting with integrity by correcting the record", ok:true, why:"Retraction for honest error is how the record is corrected. COPE’s guidelines include honest error as a reason to retract. Self-correction is good practice."},
       {t:"The team committed misconduct", why:"An honest error isn’t misconduct. Misconduct means fabrication, falsification or plagiarism."},
       {t:"All their other papers are unreliable", why:"One error doesn’t make all their work unreliable; their willingness to correct is a good sign."},
-      {t:"The journal should quietly delete the paper so nobody is misled", why:"Retracted papers stay visible and clearly marked, with a notice explaining why, so the record stays complete."}
+      {t:"The journal should secretly delete the paper so nobody is misled", why:"Retracted papers stay visible and clearly marked, with a notice explaining why, so the record stays complete."}
     ]},
     {id:"t4u1-l5-x7", type:"mcq", q:"Lucía cited a paper in her thesis draft. She now learns it was retracted last month because the data couldn’t be verified. What should she do?", options:[
       {t:"Remove or replace the citation, unless she is discussing the retraction itself", ok:true, why:"Check what she used it for. A retracted finding shouldn’t support an argument. Citing it as retracted is fine when the retraction itself is relevant."},
@@ -803,7 +803,7 @@ ICA.addUnit({
      {t:"A retraction; the paper should no longer be relied on", why:"A retraction is for findings that can’t be relied on or for ethics breaches. A swapped label that leaves the conclusions intact doesn’t meet that bar."},
      {t:"An expression of concern; the editors doubt the findings", why:"An expression of concern signals serious doubts, often during an investigation. This notice says the conclusions are unchanged."},
      {t:"A correction; the paper still stands, with the fix linked", ok:true, why:"A correction (erratum or corrigendum) fixes an error that doesn’t undermine the main findings. The article stands."},
-     {t:"No formal notice; the old version has been quietly deleted", why:"Journals fix the record openly with linked notices. They don’t silently delete published articles."}]},
+     {t:"No formal notice; the old version has been deleted without notice", why:"Journals fix the record openly with linked notices. They don’t silently delete published articles."}]},
    {id:"t4u1-cp10", lesson:"t4u1-l4", level:3, q:"Nadia posts a preprint on bioRxiv; it appears within two days. Ten months later, the peer-reviewed journal version is published with a larger sample and softer conclusions. Which statement is accurate?", options:[
      {t:"The preprint is more trustworthy, because it shows the results before editors changed them", why:"Changes after review are usually corrections and improvements, not distortion. The preprint is the less-checked version."},
      {t:"The two versions are equivalent, because the authors are the same", why:"Same authors don’t mean same content. Peer review and revision can change methods, samples and conclusions, as here."},
@@ -863,7 +863,7 @@ ICA.addUnit({
     summary:"Primary, secondary and tertiary sources relative to a question; scholarly, popular and trade sources; and the formats scholarly work takes.",
     levels:{
      starter:[
-      "Sources sit at different distances from the evidence. A [[primary-source|primary source]] is the evidence itself; a [[secondary-source|secondary source]] analyses primary sources; a [[tertiary-source|tertiary source]] (an encyclopedia, a textbook) summarizes many secondary ones.",
+      "Sources are at different distances from the evidence. A [[primary-source|primary source]] is the evidence itself; a [[secondary-source|secondary source]] analyses primary sources; a [[tertiary-source|tertiary source]] (an encyclopedia, a textbook) summarizes many secondary ones.",
       "The label depends on your question. A 1955 hygiene textbook is an out-of-date tertiary source about hygiene, but a primary source for a historian studying how schools taught hygiene in the 1950s.",
       "Sources also differ by audience. A [[scholarly-source|scholarly source]] is written by experts for experts, with references, and usually peer-reviewed. A [[popular-source|popular source]] explains things for the public. A [[trade-publication|trade publication]] serves one profession.",
       {key:"First say what your question is about. Then label the source."},
@@ -892,7 +892,7 @@ ICA.addUnit({
       "Experienced researchers use source types strategically:",
       {list:[
         "**Start broad, then go deep.** A tertiary source gives vocabulary and key names; a recent review or systematic review maps the evidence; primary studies give the details that matter for your question.",
-        "**Check the article type, not just the venue.** A journal publishes editorials, letters, corrections and news as well as research. Databases often let you filter by publication type.",
+        "**Check the article type as well as the venue.** A journal publishes editorials, letters, corrections and news as well as research. Databases often let you filter by publication type.",
         "**Know your field’s main venues.** In computer science, a top conference paper may carry more weight than a journal article; in history, a monograph from a respected press may be the main output of years of work.",
         "**Mind the time lag.** For very recent events, scholarly sources may not exist yet; agency reports, data releases and preprints may be all there is, and each needs judging on its own terms.",
         "**Treat secondary accounts as claims about primary sources.** When a review or news story summarizes a study, check the original for the detail you rely on; summaries often lose caveats."
@@ -985,7 +985,7 @@ ICA.addUnit({
       "Articles can be OA in different ways: the publisher makes it free (gold), the author posts a copy in a repository (green), or the journal is free for both readers and authors (diamond).",
       "A **preprint** is a version posted before peer review, on a server such as arXiv, bioRxiv or medRxiv. It’s free and fast, but unchecked.",
       {key:"Free to read isn’t the same as trustworthy, and paywalled isn’t the same as better."},
-      "Many research articles sit behind a [[paywall]], because traditional journals earn money by selling subscriptions, mostly to libraries. Authors usually aren’t paid for their articles."
+      "Many research articles are behind a [[paywall]], because traditional journals earn money by selling subscriptions, mostly to libraries. Authors usually aren’t paid for their articles."
      ],
      builder:[
       "**Why paywalls exist.** In the subscription model, authors usually transfer copyright or grant a license to the publisher, which sells access, mostly to libraries. Readers without a subscription hit a paywall. OA models move the cost elsewhere: to authors or funders (APCs), to institutions and societies (diamond), or to repositories run by universities and others (green).",

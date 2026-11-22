@@ -43,12 +43,12 @@ ICA.addUnit({
       "Two details matter. First, every bin must have the same width, or the bars mislead. Second, decide which bin a boundary value belongs to and say so: here a visit of exactly 10 minutes counts in “10 to under 20”. Apps follow their own rule, so a histogram drawn by a spreadsheet may put a boundary value one bin over from what you expected.",
       "A table like this is a [[frequency-table|frequency table]] for numbers (see {{descriptive-statistics}}). In a spreadsheet you can build it with COUNTIFS, counting values “greater than or equal to” the bottom of each bin and “less than” the top.",
       {lab:"fl-countifnum", t:"Practice: count values with a comparison in COUNTIF"},
-      {warn:"A histogram isn’t a bar chart. A bar chart compares separate categories (bus, car, bicycle), so its bars can be in any order with gaps between them. A histogram’s bars sit on a number line in a fixed order."}
+      {warn:"A histogram isn’t a bar chart. A bar chart compares separate categories (bus, car, bicycle), so its bars can be in any order with gaps between them. A histogram’s bars are on a number line in a fixed order."}
     ]},
     {h:"Bin width changes the picture", body:[
       "The same data can look quite different with different [[bin-width|bin widths]]. Here are the same 60 visits with bins 5 minutes wide and 30 minutes wide:",
       {fig:'<svg viewBox="0 0 340 370"><text x="170" y="18" text-anchor="middle">Bins 5 minutes wide</text><rect class="d-gold" x="30" y="110" width="16.4" height="30" stroke-width="1.5"/><rect class="d-gold" x="46.4" y="74" width="16.5" height="66" stroke-width="1.5"/><rect class="d-gold" x="62.9" y="74" width="16.4" height="66" stroke-width="1.5"/><rect class="d-gold" x="79.3" y="44" width="16.5" height="96" stroke-width="1.5"/><rect class="d-gold" x="95.8" y="116" width="16.4" height="24" stroke-width="1.5"/><rect class="d-gold" x="112.2" y="98" width="16.5" height="42" stroke-width="1.5"/><rect class="d-gold" x="128.7" y="128" width="16.4" height="12" stroke-width="1.5"/><rect class="d-gold" x="145.1" y="134" width="16.5" height="6" stroke-width="1.5"/><rect class="d-gold" x="161.6" y="134" width="16.4" height="6" stroke-width="1.5"/><rect class="d-gold" x="210.9" y="134" width="16.4" height="6" stroke-width="1.5"/><rect class="d-gold" x="227.3" y="134" width="16.5" height="6" stroke-width="1.5"/><path class="d-ink" d="M30 140 L326 140" stroke-width="1.5"/><path class="d-ink" d="M30 140 L30 145" stroke-width="1"/><text class="s" x="30" y="159" text-anchor="middle">0</text><path class="d-ink" d="M62.9 140 L62.9 145" stroke-width="1"/><path class="d-ink" d="M95.8 140 L95.8 145" stroke-width="1"/><path class="d-ink" d="M128.7 140 L128.7 145" stroke-width="1"/><text class="s" x="128.7" y="159" text-anchor="middle">30</text><path class="d-ink" d="M161.6 140 L161.6 145" stroke-width="1"/><path class="d-ink" d="M194.4 140 L194.4 145" stroke-width="1"/><path class="d-ink" d="M227.3 140 L227.3 145" stroke-width="1"/><text class="s" x="227.3" y="159" text-anchor="middle">60</text><path class="d-ink" d="M260.2 140 L260.2 145" stroke-width="1"/><path class="d-ink" d="M293.1 140 L293.1 145" stroke-width="1"/><path class="d-ink" d="M326 140 L326 145" stroke-width="1"/><text class="s" x="326" y="159" text-anchor="middle">90</text><text x="170" y="198" text-anchor="middle">Bins 30 minutes wide</text><rect class="d-sage" x="30" y="225.5" width="98.7" height="94.5" stroke-width="1.5"/><text class="s" x="79.3" y="219.5" text-anchor="middle">54</text><rect class="d-sage" x="128.7" y="311.2" width="98.6" height="8.8" stroke-width="1.5"/><text class="s" x="178" y="305.2" text-anchor="middle">5</text><rect class="d-sage" x="227.3" y="318.2" width="98.7" height="1.8" stroke-width="1.5"/><text class="s" x="276.7" y="312.2" text-anchor="middle">1</text><path class="d-ink" d="M30 320 L326 320" stroke-width="1.5"/><path class="d-ink" d="M30 320 L30 325" stroke-width="1"/><text class="s" x="30" y="339" text-anchor="middle">0</text><path class="d-ink" d="M62.9 320 L62.9 325" stroke-width="1"/><path class="d-ink" d="M95.8 320 L95.8 325" stroke-width="1"/><path class="d-ink" d="M128.7 320 L128.7 325" stroke-width="1"/><text class="s" x="128.7" y="339" text-anchor="middle">30</text><path class="d-ink" d="M161.6 320 L161.6 325" stroke-width="1"/><path class="d-ink" d="M194.4 320 L194.4 325" stroke-width="1"/><path class="d-ink" d="M227.3 320 L227.3 325" stroke-width="1"/><text class="s" x="227.3" y="339" text-anchor="middle">60</text><path class="d-ink" d="M260.2 320 L260.2 325" stroke-width="1"/><path class="d-ink" d="M293.1 320 L293.1 325" stroke-width="1"/><path class="d-ink" d="M326 320 L326 325" stroke-width="1"/><text class="s" x="326" y="339" text-anchor="middle">90</text><text class="s" x="170" y="360" text-anchor="middle">minutes (same 60 visitors in both)</text></svg>', alt:"Two histograms of the same 60 visit times on a 0 to 90 minute axis. With bins 5 minutes wide there are many narrow bars, peaking at 15 to 20 minutes, with a gap and a few isolated bars beyond 40 minutes. With bins 30 minutes wide there are only three bars: 54, 5 and 1.", cap:"Narrow bins show detail and noise; wide bins hide the shape. Neither is “the” true picture."},
-      "With 30-minute bins, almost everything lands in the first bar, and the long right tail disappears. With 5-minute bins you see more detail, including some bumps that are probably just chance with only 60 people. A width in between, like 10 minutes, usually tells the clearest story.",
+      "With 30-minute bins, almost everything falls in the first bar, and the long right tail disappears. With 5-minute bins you see more detail, including some bumps that are probably just chance with only 60 people. A width in between, like 10 minutes, usually tells the clearest story.",
       {list:[
         "Try two or three widths before you choose. If a feature appears with every width, it’s probably real.",
         "Use round, sensible boundaries (0, 10, 20…), not 3.7, 11.4…",
@@ -194,7 +194,7 @@ ICA.addUnit({
       {ex:"Set A: 1, 5, 9   mean 5\nDeviations: −4, 0, +4\nSquares: 16, 0, 16   sum 32\nDivide by n − 1 = 2: 16   (variance)\nSquare root: 4   (SD)\n\nSet B: 4, 5, 6 → deviations −1, 0, +1 → squares sum 2\n2 ÷ 2 = 1 → SD 1", label:"Worked example", mono:true},
       "Squaring makes every deviation positive (otherwise the plus and minus deviations would cancel to zero). It also gives big deviations extra weight. Taking the square root at the end brings the answer back to the original units. The clinic SD is **9.0 minutes**, not “minutes squared”.",
       "As in the surveys unit, use the **sample** SD when your data are a sample from a bigger group. Divide by n − 1. Use STDEV.S in Excel, Google Sheets and LibreOffice Calc, or STDEV in all of them and in Numbers. Use the **population** SD (divide by n; STDEV.P) only when you have every member of the group you care about. For the clinic data the two are 9.03 and 8.72. They are close, and closer still for larger data sets.",
-      "Some properties are worth knowing by heart:",
+      "Some properties are good to know by heart:",
       {list:[
         "The SD is **0** only if every value is identical. It can never be negative.",
         "**Adding** the same amount to every value (everyone gets 5 bonus points) moves the mean but doesn’t change the SD: the values are just as spread out.",
@@ -392,7 +392,7 @@ ICA.addUnit({
       {t:"25 minutes", b:1, why:"25 is below 25.5, so the upper whisker would stretch to reach it."},
       {t:"1 minute", b:1, why:"The lower fence is −2.5, so any real waiting time of zero or more is inside it."},
       {t:"60 minutes", b:0, why:"Far beyond 25.5: a clear potential outlier."},
-      {t:"19 minutes", b:1, why:"Well inside the fences; it sits between Q3 and the end of the whisker."}
+      {t:"19 minutes", b:1, why:"Well inside the fences; it is between Q3 and the end of the whisker."}
     ]},
     {id:"t3u5-l3-x7", type:"mcq", q:"Ana compares two boxplots that look identical: same median, same box, same whiskers. What could still be very different about the two data sets?", options:[
       {t:"Their shapes and their numbers of values could differ.", ok:true, why:"One could have two separate peaks while the other has one, and the numbers of values could be very different. A boxplot shows only five numbers and the outliers. It hides the number of values and any bimodal shape, which is why showing the dots or n helps."},
@@ -425,7 +425,7 @@ ICA.addUnit({
      "Compare values measured on different scales",
      "Explain the limits of z-scores for skewed data and for spotting outliers",
      "Compare two groups by center, spread, shape and outliers, with side-by-side boxplots",
-     "Describe a difference honestly, without overclaiming"
+     "Describe a difference fairly, without overclaiming"
    ],
    learn:[
     {h:"Standing out: the z-score", body:[
@@ -467,7 +467,7 @@ ICA.addUnit({
       "Notice how the summary pairs from Lesson 2 matter here. Comparing means (6.4 versus 9.1) and SDs (5.1 versus 3.8) would suggest A is “more variable”, which is mostly one value talking. Medians and IQRs give the fairer picture for these data."
     ]},
     {h:"How big is the difference?", body:[
-      "A difference matters more when it is large **compared with the spread within each group**. Here the medians differ by 3.5 days, which is close to a whole IQR. B’s median (8.5) sits above A’s Q3 (7.5). So most of B’s repairs took longer than three quarters of A’s. That’s a clear difference in these 24 repairs.",
+      "A difference matters more when it is large **compared with the spread within each group**. Here the medians differ by 3.5 days, which is close to a whole IQR. B’s median (8.5) is above A’s Q3 (7.5). So most of B’s repairs took longer than three quarters of A’s. That’s a clear difference in these 24 repairs.",
       "Researchers often express this as an [[effect-size|effect size]], such as the difference in means divided by a typical SD (see Unit 3 of the Research Skills track). The idea is the same as a z-score: measure a difference in units of spread, so it can be judged and compared.",
       "But be careful what you claim:",
       {list:[
@@ -487,7 +487,7 @@ ICA.addUnit({
     {id:"t3u5-l4-x2", type:"mcq", q:"In Hana’s running club, 5 km times have mean 28 minutes and SD 2 minutes; she ran 24. In her swimming club, 400 m times have mean 9 minutes and SD 0.5 minutes; she swam 8.25. Lower times are better. In which did she do better relative to her club?", options:[
       {t:"Running: her z-score is −2, further below the mean than swimming’s −1.5.", ok:true, why:"Running: (24 − 28) ÷ 2 = −2. Swimming: (8.25 − 9) ÷ 0.5 = −1.5. For times, more negative means faster than typical, so running is the stronger result."},
       {t:"Swimming, because −1.5 is bigger than −2.", why:"For times, lower is better, so the more negative z-score (−2) is the better performance."},
-      {t:"Equally well, because both times are faster than her club’s mean.", why:"Both are below the mean, but by different numbers of SDs: 2 for running and 1.5 for swimming. The z-scores show how far, not just which side."},
+      {t:"Equally well, because both times are faster than her club’s mean.", why:"Both are below the mean, but by different numbers of SDs: 2 for running and 1.5 for swimming. The z-scores show how far, as well as which side."},
       {t:"They can’t be compared because the sports are different.", why:"That’s exactly what z-scores make possible: each result is measured against its own club’s mean and spread."}
     ]},
     {id:"t3u5-l4-x3", type:"number", q:"Heights in a group have mean 165 cm and SD 7 cm. What height has a z-score of −1.5?", answer:154.5, tol:0.05, unit:"cm", why:"value = mean + z × SD = 165 + (−1.5 × 7) = 165 − 10.5 = 154.5 cm.", wrongs:[
@@ -965,8 +965,8 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t3u5-q01", lesson:"t3u5-l1", level:1, q:"What does a histogram show?", options:[
-     {t:"How many values fall in each equal-width interval", ok:true, why:"The intervals sit on a number line. A histogram counts values in bins and draws touching bars, so you see the shape of a numeric distribution."},
-     {t:"How separate categories compare, with gaps between the bars", why:"That’s a bar chart. Histogram bars sit on a continuous number line in a fixed order."},
+     {t:"How many values fall in each equal-width interval", ok:true, why:"The intervals are on a number line. A histogram counts values in bins and draws touching bars, so you see the shape of a numeric distribution."},
+     {t:"How separate categories compare, with gaps between the bars", why:"That’s a bar chart. Histogram bars are on a continuous number line in a fixed order."},
      {t:"How one variable changes over time", why:"That’s usually a line chart (a time series)."},
      {t:"How two numeric variables relate", why:"That’s a scatterplot."}
    ]},
@@ -986,7 +986,7 @@ ICA.addUnit({
      {t:"The mean is greater than the median.", ok:true, why:"The long right tail pulls the mean up; the median depends only on order and stays nearer the bulk of the data. OpenStax notes this is usual, not guaranteed."},
      {t:"The median is greater than the mean.", why:"That’s the usual pattern for left skew."},
      {t:"The mean and median are always exactly equal.", why:"They’re roughly equal for symmetric data. Skew separates them."},
-     {t:"The mode is always the largest of the three.", why:"In right-skewed data the mode is usually the smallest, sitting at the peak on the left."}
+     {t:"The mode is always the largest of the three.", why:"In right-skewed data the mode is usually the smallest, at the peak on the left."}
    ]},
    {id:"t3u5-q05", lesson:"t3u5-l1", level:3, q:"Lucía’s histogram of the ages of everyone attending a community festival shows two clear peaks, one around age 8 and one around age 38. What is the most likely explanation?", options:[
      {t:"The crowd mixes two groups, such as children and parents.", ok:true, why:"Two peaks often mean two populations mixed together. Here children and the adults who bring them are a natural explanation, worth checking."},

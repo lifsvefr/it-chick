@@ -343,7 +343,7 @@ ICA.addUnit({
     {id:"t2u7-l2-x6", type:"mcq", q:"Mei committed “Add price list” an hour ago and already pushed it to a shared repository. The prices were wrong. What’s the safest way to undo that commit?", options:[
       {t:"`git revert` with that commit’s hash", ok:true, why:"Right. It adds a new commit undoing the old one. Revert keeps the history intact, so it’s safe even after others have the commit."},
       {t:"`git reset --hard HEAD~1`", why:"That removes the commit from her branch and throws away uncommitted work. Rewriting shared history causes problems for everyone who already has it."},
-      {t:"Delete the `.git` folder and start again", why:"That deletes the entire history, not just one commit."},
+      {t:"Delete the `.git` folder and start again", why:"That deletes the entire history instead of one commit."},
       {t:"`git restore price-list.html`", why:"`git restore` only discards uncommitted edits in the working tree. It doesn’t undo a commit."}
     ]},
     {id:"t2u7-l2-x7", type:"mcq", q:"Tomás edited `style.css`, didn’t stage it, and now wants the version from his last commit back. He runs `git diff style.css` and sees the edits he no longer wants. What should he run?", options:[
@@ -394,7 +394,7 @@ ICA.addUnit({
         "`main` always holds the working, publishable site. The typo fix is committed there and goes live.",
         "`events-page` holds the unfinished work. When it’s ready, she **merges** it into `main`."
       ]},
-      "A **[[branch-git|branch]]** is a separate line of commits. Under the hood it’s very simple: **a branch is a label that points at one commit**. When you commit on a branch, the label moves forward to the new commit automatically. Creating a branch just makes a new label, which is why it’s instant and takes almost no space.",
+      "A **[[branch-git|branch]]** is a separate line of commits. Inside, it is very simple: **a branch is a label that points at one commit**. When you commit on a branch, the label moves forward to the new commit automatically. Creating a branch just makes a new label, which is why it’s instant and takes almost no space.",
       "Git also keeps a special pointer called **[[head-git|`HEAD`]]**, which means “where you are now”. Normally `HEAD` points at a branch, such as `main`, and that branch points at a commit. When you see `HEAD` in a command, read it as “the commit I’m on”.",
       {key:"A branch is a movable label on a commit. `HEAD` tells Git which branch you’re on."}
     ]},
@@ -627,7 +627,7 @@ ICA.addUnit({
       {tip:"**GitHub Desktop** (Windows and macOS) does clone, pull and push with buttons. Use **File → Clone Repository**. Then use the button in the top bar. It changes between **Fetch origin**, **Pull origin** and **Push origin**, depending on what’s needed."}
     ]},
     {h:"Pushing to GitHub Pages", body:[
-      "Your Unit 5 site already lives in a repository. Now you can work on it from your own computer:",
+      "Your Unit 5 site is already in a repository. Now you can work on it from your own computer:",
       {ol:[
         "`git clone` the site’s repository.",
         "Open `index.html` in a browser straight from the folder to preview your changes before anyone else sees them.",
@@ -770,7 +770,7 @@ ICA.addUnit({
         ["(silence, then merge)","“Looks good. I checked it on my phone too. Approving.”"]
       ]},
       "When you receive a review, remember it’s about the change, not about you. Reply to each comment, push fixes, and say thank you.",
-      {tip:"GitHub Mobile is genuinely useful here: you can read pull requests, comment, and review from a phone."}
+      {tip:"GitHub Mobile is useful here: you can read pull requests, comment, and review from a phone."}
     ]},
     {h:"Issues: bugs, ideas and plans", body:[
       "An **[[github-issue|issue]]** is a numbered discussion for one problem or idea: a bug report, a feature request, or a task. Open the **Issues** tab and select **New issue**. Each gets a number (`#12`) that you can mention anywhere on GitHub, and issues can be assigned to people and labeled (`bug`, `good first issue`).",
@@ -892,10 +892,10 @@ ICA.addUnit({
   checkpoint:["t2u7-q02","t2u7-q05","t2u7-q12","t2u7-q16","t2u7-q19","t2u7-q23","t2u7-q27","t2u7-q32","t2u7-q35","t2u7-q38","t2u7-q44","t2u7-q47"],
   cpBank:[
     {id:"t2u7-cp01", lesson:"t2u7-l1", level:1, q:"Kofi has just installed Git on a new laptop. Which command sets the name shown on every commit he makes on it?", options:[{t:"None: Git uses his GitHub username automatically", why:"Git runs on his computer and doesn’t know about his GitHub account. He sets `user.name` himself, and it needn’t match his username."}, {t:"`git config --global user.email \"Kofi Boateng\"`", why:"`user.email` holds an email address, not a name. The name goes in `user.name`."}, {t:"`git config --global user.name \"Kofi Boateng\"`", ok:true, why:"`user.name` is the name recorded on your commits, and `--global` applies it to every repository on this computer."}, {t:"`git commit -m \"Kofi Boateng\"`", why:"`-m` sets a commit’s message, which describes the change. It doesn’t set the author."}]},
-    {id:"t2u7-cp02", lesson:"t2u7-l1", level:2, q:"Lucía wants version history for her thesis notes, which are plain text files. She doesn’t want them online anywhere. What does she need?", options:[{t:"Only Git on her computer; GitHub is optional", ok:true, why:"Git keeps the whole history inside her project folder, on her own computer. GitHub is just one place to share a copy."}, {t:"A GitHub account, because Git stores the history on GitHub", why:"The history lives in her project, on her computer. GitHub is a separate website for sharing."}, {t:"A private GitHub repository, because Git can’t work without one", why:"Git works fully offline: committing, `git log` and `git diff` all happen on her own computer."}, {t:"Nothing: version control only works for program code", why:"Git suits any plain-text files, such as notes, web pages or data in CSV."}]},
+    {id:"t2u7-cp02", lesson:"t2u7-l1", level:2, q:"Lucía wants version history for her thesis notes, which are plain text files. She doesn’t want them online anywhere. What does she need?", options:[{t:"Only Git on her computer; GitHub is optional", ok:true, why:"Git keeps the whole history inside her project folder, on her own computer. GitHub is just one place to share a copy."}, {t:"A GitHub account, because Git stores the history on GitHub", why:"The history is stored in her project, on her computer. GitHub is a separate website for sharing."}, {t:"A private GitHub repository, because Git can’t work without one", why:"Git works fully offline: committing, `git log` and `git diff` all happen on her own computer."}, {t:"Nothing: version control only works for program code", why:"Git suits any plain-text files, such as notes, web pages or data in CSV."}]},
     {id:"t2u7-cp03", lesson:"t2u7-l2", level:1, q:"Which command lists, one line each, only the commits that changed `menu.html`?", options:[{t:"`git diff menu.html`", why:"That shows the unstaged changes in the file now, not its past commits."}, {t:"`git status menu.html`", why:"`git status` shows the current state of files, not their history."}, {t:"`git show menu.html`", why:"`git show` takes a commit, such as a hash, and shows that one commit in full."}, {t:"`git log --oneline -- menu.html`", ok:true, why:"`--oneline` gives one short line per commit, and `-- menu.html` limits the list to commits that changed that file."}]},
     {id:"t2u7-cp04", lesson:"t2u7-l2", level:2, q:"Mia’s last commit has a typo in its message. She hasn’t pushed it, and she wants to redo the commit while keeping her changes. What fits best?", options:[{t:"`git reset --hard HEAD~1`", why:"`--hard` also throws away the changes in her files. She wants to keep them."}, {t:"`git reset --soft HEAD~1`, then commit again", ok:true, why:"For a last commit that isn’t shared, `reset --soft HEAD~1` removes the commit and leaves its changes staged, ready to commit with a better message."}, {t:"`git revert HEAD`", why:"Revert adds a new commit that undoes the changes, which suits shared commits. She wants to redo an unshared one and keep the changes."}, {t:"Delete the project’s hidden `.git` folder and start again", why:"That destroys the whole history. One unshared commit can be redone with `reset --soft`."}]},
-    {id:"t2u7-cp05", lesson:"t2u7-l2", level:3, q:"Omar wants `style.css` exactly as it was in commit `a1b2c3d`, without changing any other file. Which command does that?", options:[{t:"`git reset --hard a1b2c3d`", why:"That moves the whole branch back and throws away uncommitted work in every tracked file, not just one file."}, {t:"`git revert a1b2c3d`", why:"Revert undoes the changes that commit made. It doesn’t bring back the file as it was at that commit."}, {t:"`git restore --source a1b2c3d style.css`", ok:true, why:"It puts that old version of one file into the working tree. He then commits it if he wants to keep it."}, {t:"`git show a1b2c3d`", why:"`git show` only displays that commit. It changes no files."}]},
+    {id:"t2u7-cp05", lesson:"t2u7-l2", level:3, q:"Omar wants `style.css` exactly as it was in commit `a1b2c3d`, without changing any other file. Which command does that?", options:[{t:"`git reset --hard a1b2c3d`", why:"That moves the whole branch back and throws away uncommitted work in every tracked file instead of one file."}, {t:"`git revert a1b2c3d`", why:"Revert undoes the changes that commit made. It doesn’t bring back the file as it was at that commit."}, {t:"`git restore --source a1b2c3d style.css`", ok:true, why:"It puts that old version of one file into the working tree. He then commits it if he wants to keep it."}, {t:"`git show a1b2c3d`", why:"`git show` only displays that commit. It changes no files."}]},
     {id:"t2u7-cp06", lesson:"t2u7-l2", level:2, q:"Nadia created a new file, `contact.html`, and edited `index.html`, which Git already tracks. She runs `git commit -am \"Add contact page\"`. What goes into the commit?", options:[{t:"Both files", why:"`-a` skips new, untracked files, so `contact.html` is left out."}, {t:"Only `contact.html`", why:"It’s the other way round: tracked files are included, and new ones are skipped."}, {t:"Nothing, because `-a` needs a `git add` first", why:"`-a` does the staging itself for tracked files. It just skips new ones."}, {t:"Only the change to `index.html`", ok:true, why:"`-a` stages changes to files Git already tracks. New files are skipped and still need `git add`."}]},
     {id:"t2u7-cp07", lesson:"t2u7-l3", level:2, q:"Ivo runs `git branch -d draft-menu`, but that branch has commits that aren’t merged anywhere. What happens?", options:[{t:"The branch and all its commits are deleted", why:"`-d` refuses in this case. When it does delete a merged branch, only the label goes; the commits stay."}, {t:"Git refuses, to protect the unmerged work", ok:true, why:"`-d` deletes only branches whose commits are merged somewhere, so you can’t lose unfinished work by mistake."}, {t:"Git merges it into `main` first, then deletes it", why:"Git never merges on its own. Merging is a separate command you choose to run."}, {t:"Git deletes the branch’s files from his folder but keeps the label", why:"Git refuses the delete, so nothing changes, neither the label nor his files."}]},
     {id:"t2u7-cp08", lesson:"t2u7-l3", level:3, q:"Kenji edits `about.html` on `main` but doesn’t commit. Then he runs `git switch -c fix-typo`. Where are his edits now?", options:[{t:"They move with him to `fix-typo`, still uncommitted", ok:true, why:"Uncommitted edits belong to no branch yet. Switching here overwrites nothing, so the edits simply stay in his working tree."}, {t:"They stay behind on `main` and vanish from his folder", why:"Only committed work belongs to a branch. Uncommitted edits stay in the working tree when he switches."}, {t:"Git refuses to switch until he commits", why:"Git refuses only when switching would overwrite uncommitted changes. A new branch from the same commit overwrites nothing."}, {t:"Git commits them to `main` automatically first", why:"Git never commits for you. A commit happens only when you run `git commit`."}]},
@@ -978,7 +978,7 @@ ICA.addUnit({
     summary:"Stage changes with `git add`, record them with `git commit`, read history with `git log`, and undo with `restore` (files) or `revert` (commits).",
     levels:{
      starter:[
-      "Your work lives in three places: the **working tree** (your folder), the **staging area** (what the next commit will contain) and the **repository** (every commit, in `.git`).",
+      "Your work is kept in three places: the **working tree** (your folder), the **staging area** (what the next commit will contain) and the **repository** (every commit, in `.git`).",
       {code:'git init\ngit status\ngit add index.html\ngit commit -m "Add home page"\ngit log --oneline', lang:"sh"},
       "`git init` starts a repository. `git status` says what’s changed and is always safe. `git add` puts a file’s **current** contents in the staging area. `git commit` records what’s staged, with your message. `git log --oneline` lists commits, newest first.",
       "Good messages are short and specific, like “Fix broken link to About page”.",
@@ -1405,10 +1405,10 @@ ICA.addUnit({
      {t:"Run `git reset --hard`", why:"There are no commits yet, and reset would not remove the repository anyway."}
    ]},
    /* ---- Lesson 3 ---- */
-   {id:"t2u7-q21", lesson:"t2u7-l3", level:1, q:"What is a branch in Git, under the hood?", options:[
+   {id:"t2u7-q21", lesson:"t2u7-l3", level:1, q:"What is a branch in Git, technically?", options:[
      {t:"A movable label that points at a commit", ok:true, why:"A branch is tiny: a pointer that moves forward as you commit."},
      {t:"A full copy of the project folder", why:"No files are copied; your folder just changes to match when you switch."},
-     {t:"A separate repository on GitHub", why:"Branches live inside a repository, locally as well as on GitHub."},
+     {t:"A separate repository on GitHub", why:"Branches are inside a repository, locally as well as on GitHub."},
      {t:"A list of people allowed to edit", why:"Branches aren’t about permissions."}
    ]},
    {id:"t2u7-q22", lesson:"t2u7-l3", level:1, q:"Which command creates a branch called `gallery` and switches to it?", options:[
@@ -1536,7 +1536,7 @@ ICA.addUnit({
    {id:"t2u7-q42", lesson:"t2u7-l5", level:2, q:"When do you need a fork rather than just a branch?", options:[
      {t:"When you can’t push to the repository", ok:true, why:"To contribute to a repository you don’t have permission to push to, you fork it. Your fork is a copy you can push to. Then you open a pull request to the original."},
      {t:"Whenever you start work on any new feature", why:"In a repository you can push to, a branch is enough."},
-     {t:"When you want to work offline", why:"A clone handles offline work; forks live on GitHub."},
+     {t:"When you want to work offline", why:"A clone handles offline work; forks are on GitHub."},
      {t:"When you want to delete a repository", why:"Forking has nothing to do with deleting."}
    ]},
    {id:"t2u7-q43", lesson:"t2u7-l5", level:2, q:"A PR description says `Fixes #8`. What happens when the PR is merged into the default branch?", options:[

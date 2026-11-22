@@ -17,7 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t4u9-l1", title:"Why research ethics exists", minutes:50,
-   hook:{q:"The Nuremberg Code of 1947 said a participant’s voluntary consent is “absolutely essential”. In what year did the US Public Health Service end its study at Tuskegee, in which hundreds of Black men were never told they had syphilis and were not given effective treatment?", options:["1947","1956","1972","1990"], answer:2, reveal:"**1972**, a quarter of a century after Nuremberg, and only after a news report made it public. Written principles alone didn’t protect those men. That gap is why research ethics today relies on **independent review** before a study starts, not just on researchers’ good intentions. This lesson tells that history carefully and shows the principles that came out of it."},
+   hook:{q:"The Nuremberg Code of 1947 said a participant’s voluntary consent is “absolutely essential”. In what year did the US Public Health Service end its study at Tuskegee, in which hundreds of Black men were never told they had syphilis and were not given effective treatment?", options:["1947","1956","1972","1990"], answer:2, reveal:"**1972**, a quarter of a century after Nuremberg, and only after a news report made it public. Written principles alone didn’t protect those men. That gap is why research ethics today relies on **independent review** before a study starts. Researchers’ good intentions are not enough. This lesson tells that history carefully and shows the principles that came out of it."},
    goals:[
      "Describe the Nuremberg Code, the Declaration of Helsinki and the Belmont Report: when, why and what each says",
      "Tell the history of the study at Tuskegee and of Henrietta Lacks accurately and respectfully",
@@ -303,15 +303,15 @@ ICA.addUnit({
         ["[[pseudonymisation|Pseudonymization]]","Identifiers are replaced with codes; a separate key can re-link them"],
         ["[[anonymisation-term|Anonymization]]","Data are changed so people can no longer be identified by any reasonably likely means"]
       ]},
-      "An interview study is almost never anonymous: you met the person. You can promise **confidentiality**, and later produce an anonymized or pseudonymized dataset. An online survey that collects no names, emails or IP addresses may be genuinely anonymous.",
-      {warn:"Don’t write “your answers are anonymous” on an information sheet unless they truly are. Promising more privacy than you can deliver is a broken promise, and in many places a legal problem too."}
+      "An interview study is almost never anonymous: you met the person. You can promise **confidentiality**, and later produce an anonymized or pseudonymized dataset. An online survey that collects no names, emails or IP addresses may be anonymous.",
+      {warn:"Don’t write “your answers are anonymous” on an information sheet unless they are. Promising more privacy than you can deliver is a broken promise, and in many places a legal problem too."}
     ]},
     {h:"What the GDPR says", body:[
       "The EU’s [[gdpr|General Data Protection Regulation]] (GDPR) gives precise definitions that many other laws and ethics committees borrow:",
       {list:[
         "**[[personal-data|Personal data]]** is any information relating to an identified or identifiable person, directly or indirectly (Article 4(1)).",
         "**Pseudonymization** means processing personal data so they can no longer be attributed to a specific person **without additional information**, provided that information is kept separately and protected (Article 4(5)). For the researcher who holds the key, pseudonymized data are still personal data (Recital 26). (In 2025 the EU Court of Justice added that, for a recipient with no reasonable means of re-identifying anyone, the same data may not count as personal data. That is a legal judgment for your data protection officer, not something to assume.)",
-        "**Anonymous information** doesn’t relate to an identifiable person. To decide, you consider all the means **reasonably likely** to be used to identify someone, such as singling a person out, taking into account cost, time and available technology. Truly anonymous data fall outside the GDPR (Recital 26)."
+        "**Anonymous information** doesn’t relate to an identifiable person. To decide, you consider all the means **reasonably likely** to be used to identify someone, such as singling a person out, taking into account cost, time and available technology. Anonymous data fall outside the GDPR (Recital 26)."
       ]},
       {fig:'<svg viewBox="0 0 340 470"><defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><rect class="d-rose" x="10" y="8" width="320" height="120" rx="12" stroke-width="1.5"/><text x="170" y="32" text-anchor="middle">Identifiable</text><rect class="d-panel" x="26" y="44" width="288" height="34" rx="6" stroke-width="1"/><text x="170" y="66" text-anchor="middle">Ana Silva · 34 · nurse · Hilltown</text><text class="s" x="170" y="100" text-anchor="middle">personal data: full data protection rules</text><text class="s" x="170" y="117" text-anchor="middle">apply</text><path class="d-ink" d="M170 128 V 148" stroke-width="2" marker-end="url(#ar3)"/><rect class="d-gold" x="10" y="152" width="320" height="150" rx="12" stroke-width="1.5"/><text x="170" y="176" text-anchor="middle">Pseudonymized</text><rect class="d-panel" x="26" y="188" width="288" height="34" rx="6" stroke-width="1"/><text x="170" y="210" text-anchor="middle">P07 · 34 · nurse · Hilltown</text><rect class="d-panel" x="60" y="230" width="220" height="30" rx="6" stroke-width="1"/><text class="s" x="170" y="250" text-anchor="middle">key: P07 = Ana Silva (kept apart)</text><text class="s" x="170" y="278" text-anchor="middle">still personal data: the key can</text><text class="s" x="170" y="294" text-anchor="middle">re-link it</text><path class="d-ink" d="M170 302 V 322" stroke-width="2" marker-end="url(#ar3)"/><rect class="d-sage" x="10" y="326" width="320" height="136" rx="12" stroke-width="1.5"/><text x="170" y="350" text-anchor="middle">Anonymized</text><rect class="d-panel" x="26" y="362" width="288" height="34" rx="6" stroke-width="1"/><text x="170" y="384" text-anchor="middle">age 30–39 · health worker · region</text><text class="s" x="170" y="418" text-anchor="middle">key destroyed, details coarsened:</text><text class="s" x="170" y="434" text-anchor="middle">no reasonably likely way to</text><text class="s" x="170" y="450" text-anchor="middle">identify anyone</text></svg>', alt:"Three stacked panels showing one invented record. Identifiable: Ana Silva, 34, nurse, Hilltown; personal data, full data protection rules apply. Pseudonymized: P07, 34, nurse, Hilltown, with a key that says P07 equals Ana Silva, kept apart; still personal data because the key can re-link it. Anonymized: age 30 to 39, health worker, region; the key is destroyed and details are coarsened, so there is no reasonably likely way to identify anyone.", cap:"Replacing a name with a code is pseudonymization. Anonymization needs more: no key, and details coarse enough that no one can be singled out. (Invented example.)"}
     ]},
@@ -427,7 +427,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t4u9-l4", title:"Research integrity: honesty, credit and transparency", minutes:55,
-   hook:{q:"A researcher tests 20 different outcomes, none of which is truly affected by the treatment, each at the usual p < 0.05 threshold. If the tests are independent, roughly how likely is at least one “significant” result by chance alone?", options:["5%","About 25%","About 64%","100%"], answer:2, reveal:"**About 64%.** Each test has a 5% chance of a false alarm, so the chance that all 20 avoid one is 0.95²⁰ ≈ 0.36, leaving about 0.64 for at least one. Report only that one and it looks like a discovery. No one has to invent data for research to mislead; flexible analysis and selective reporting are enough. This lesson covers outright misconduct, these gray-zone practices and the tools that prevent both."},
+   hook:{q:"A researcher tests 20 different outcomes, none of which is affected by the treatment, each at the usual p < 0.05 threshold. If the tests are independent, roughly how likely is at least one “significant” result by chance alone?", options:["5%","About 25%","About 64%","100%"], answer:2, reveal:"**About 64%.** Each test has a 5% chance of a false alarm, so the chance that all 20 avoid one is 0.95²⁰ ≈ 0.36, leaving about 0.64 for at least one. Report only that one and it looks like a discovery. No one has to invent data for research to mislead; flexible analysis and selective reporting are enough. This lesson covers outright misconduct, these gray-zone practices and the tools that prevent both."},
    goals:[
      "Define fabrication, falsification and plagiarism, and tell misconduct from honest error",
      "Recognize questionable research practices, including p-hacking, HARKing and selective reporting",
@@ -438,7 +438,7 @@ ICA.addUnit({
     {h:"Integrity: honesty in how research is done", body:[
       {lead:"Ethics protects participants; integrity protects the research record that everyone else relies on."},
       "A nurse changing practice, a government setting policy, and the next researcher building on a result all assume the work was done and reported honestly. Europe’s code of conduct for research integrity (ALLEA, revised 2023) rests on four principles: **reliability** (quality of design, method and analysis), **honesty** (transparent, fair and complete reporting), **respect** (for colleagues, participants, society and the environment) and **accountability** (from idea to publication).",
-      "Problems sit on a spectrum, from responsible practice through gray-zone shortcuts to serious misconduct:",
+      "Problems fall on a spectrum, from responsible practice through gray-zone shortcuts to serious misconduct:",
       {table:[
         ["Zone","Examples"],
         ["Responsible practice","Planned analysis, full reporting, honest limits, fair credit, data kept"],
@@ -450,10 +450,10 @@ ICA.addUnit({
       "**[[research-misconduct|Research misconduct]]** is usually defined as **FFP**. The US Office of Research Integrity (ORI) uses these definitions:",
       {list:[
         "**[[fabrication|Fabrication]]:** making up data or results and recording or reporting them.",
-        "**[[falsification|Falsification]]:** manipulating research materials, equipment or processes, or changing or omitting data or results, so the research isn’t accurately represented. Editing an image to hide a band, or quietly deleting inconvenient participants, are examples.",
+        "**[[falsification|Falsification]]:** manipulating research materials, equipment or processes, or changing or omitting data or results, so the research isn’t accurately represented. Editing an image to hide a band, or secretly deleting inconvenient participants, are examples.",
         "**[[plagiarism-term|Plagiarism]]:** using another person’s ideas, processes, results or words without giving appropriate credit (Unit 4 covers this in depth: {{plagiarism}})."
       ]},
-      "Crucially, research misconduct **does not include honest error or differences of opinion**. A coding mistake you discover and correct, or an interpretation colleagues disagree with, isn’t misconduct. Correcting the record openly, through a correction or, for serious errors, a [[retraction]], is what honest researchers do.",
+      "Note that research misconduct **does not include honest error or differences of opinion**. A coding mistake you discover and correct, or an interpretation colleagues disagree with, isn’t misconduct. Correcting the record openly, through a correction or, for serious errors, a [[retraction]], is what honest researchers do.",
       {tip:"Keep raw data, analysis code and a dated log of decisions. They protect you if anyone questions your work, and they make honest mistakes easy to find and fix."}
     ]},
     {h:"The gray zone: p-hacking and HARKing", body:[
@@ -556,7 +556,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t4u9-l5", title:"Using AI in research responsibly", minutes:55,
-   hook:{q:"An AI chatbot gives Priya five references for her literature review. Each has real-looking authors, a journal name and a DOI. What is the safest assumption?", options:["They’re real: the DOIs prove it","They’re real if the journal names are real","Each one must be checked; some may not exist, or may not say what the AI claims","Modern AI tools no longer invent references"], answer:2, reveal:"**Check every one.** Generative AI produces text that *looks* like a reference, and a plausible DOI is easy to make up. Some references will be real, some partly wrong (wrong year or authors), some entirely invented, and some real but not about what the AI says. This lesson shows how to use AI tools where they genuinely help, without losing the trust research depends on."},
+   hook:{q:"An AI chatbot gives Priya five references for her literature review. Each has real-looking authors, a journal name and a DOI. What is the safest assumption?", options:["They’re real: the DOIs prove it","They’re real if the journal names are real","Each one must be checked; some may not exist, or may not say what the AI claims","Modern AI tools no longer invent references"], answer:2, reveal:"**Check every one.** Generative AI produces text that *looks* like a reference, and a plausible DOI is easy to make up. Some references will be real, some partly wrong (wrong year or authors), some entirely invented, and some real but not about what the AI says. This lesson shows how to use AI tools where they help, without losing the trust research depends on."},
    goals:[
      "Explain why AI tools can’t be authors and what COPE and the ICMJE ask of authors who use them",
      "Write a clear AI-use disclosure and know where it goes",
@@ -565,7 +565,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"What AI tools can and can’t do for research", body:[
-      {lead:"[[generative-ai|Generative AI]] tools can save real time in research, and they can also quietly introduce errors that are hard to spot."},
+      {lead:"[[generative-ai|Generative AI]] tools can save real time in research, and they can also introduce errors without you noticing that are hard to spot."},
       "Think of an AI chatbot as a very fast, very fluent assistant who has read a lot, remembers it imperfectly, and never says “I’m not sure” unless asked. Useful for some jobs, risky for others:",
       {table:[
         ["Often helpful","Needs great care"],
@@ -709,10 +709,10 @@ ICA.addUnit({
      {t:"Nothing: the survey collected no names, so it stays anonymous", why:"Even with anonymous collection, a published table can single someone out. That would break her promise."},
      {t:"Delete that respondent from the whole study", why:"There’s no need to lose the data. Changing how the table is shown solves the problem."},
      {t:"Merge groups or suppress small counts so no one stands out", ok:true, why:"Statistical agencies suppress small counts for this reason. Combining categories keeps the promise she made in the consent information."}]},
-   {id:"t4u9-cp05", lesson:"t4u9-l4", level:2, q:"After seeing his results, a researcher quietly deletes three participants whose scores didn’t fit his hypothesis, and doesn’t report it. Under the US ORI definitions, what is this?", options:[
+   {id:"t4u9-cp05", lesson:"t4u9-l4", level:2, q:"After seeing his results, a researcher secretly deletes three participants whose scores didn’t fit his hypothesis, and doesn’t report it. Under the US ORI definitions, what is this?", options:[
      {t:"Fabrication", why:"Fabrication means making up data or results. These participants were real; their data were removed."},
      {t:"Plagiarism", why:"Plagiarism is using others’ ideas, results or words without credit. Nothing here is taken from someone else."},
-     {t:"Falsification", ok:true, why:"Falsification includes changing or omitting data so the research isn’t accurately represented. Quietly deleting inconvenient participants is a textbook example."},
+     {t:"Falsification", ok:true, why:"Falsification includes changing or omitting data so the research isn’t accurately represented. Secretly deleting inconvenient participants is a textbook example."},
      {t:"An honest mistake", why:"An honest error is a mistake you didn’t intend. Deleting data because it didn’t fit, and hiding it, is deliberate."}]},
    {id:"t4u9-cp06", lesson:"t4u9-l4", level:2, q:"A PhD student ran all the data analysis and drafted half of a paper, but her name is left off the author list. What is this problem called?", options:[
      {t:"Ghost authorship", ok:true, why:"Ghost authorship leaves out someone who did substantial work. Her contributions meet the authorship criteria, if she also approves the final version and accepts accountability."},
@@ -1018,7 +1018,7 @@ ICA.addUnit({
       ]},
       "Honest mistakes aren’t misconduct. What matters is correcting them openly.",
       {key:"Keep your raw data, notes and code. They’re your best evidence that your work is honest."},
-      "Example: Mei’s survey results don’t support her hypothesis. Reporting them honestly, however disappointing, is integrity. Quietly dropping the responses that don’t fit would be falsification.",
+      "Example: Mei’s survey results don’t support her hypothesis. Reporting them honestly, however disappointing, is integrity. Secretly dropping the responses that don’t fit would be falsification.",
       "Integrity also means giving credit fairly, declaring conflicts of interest and being open about methods, including any AI tools used."
      ],
      builder:[
@@ -1151,7 +1151,7 @@ ICA.addUnit({
   terms:[
    {id:"ethics-review-board", term:"Research ethics committee or board", def:"An independent group that reviews research with people before it starts. Called an IRB in the US, a REC in the UK, an HREC in Australia, a REB in Canada and an ethics committee in many countries.", codex:"ethics-review"},
    {id:"vulnerable-participants", term:"Vulnerable participants", def:"People who may be less able to protect their own interests in research, or who face extra risk from it, such as children or people in a dependent relationship with the researcher. Vulnerability is often about the situation, not the person.", codex:"consent-process"},
-   {id:"anonymisation-term", term:"Anonymization", def:"Changing data so that no one can be identified by any means reasonably likely to be used. Truly anonymized data fall outside laws like the GDPR.", codex:"anonymisation"},
+   {id:"anonymisation-term", term:"Anonymization", def:"Changing data so that no one can be identified by any means reasonably likely to be used. Anonymized data fall outside laws like the GDPR.", codex:"anonymisation"},
    {id:"pseudonymisation", term:"Pseudonymization", def:"Replacing identifiers with codes while keeping a separate, protected key that can re-link them. Under the GDPR, pseudonymized data are still personal data for whoever holds the key.", codex:"anonymisation"},
    {id:"special-category-data", term:"Special category data", def:"Under the GDPR, especially sensitive personal data: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic and identifying biometric data, health, and sex life or sexual orientation.", codex:"research-data-protection"},
    {id:"data-management-plan-term", term:"Data management plan (DMP)", def:"A document written at the start of a project describing what data will be collected and how they will be documented, stored, protected, shared and preserved. Many funders require one.", codex:"data-management-plan"},
@@ -1260,7 +1260,7 @@ ICA.addUnit({
      {t:"The school head’s permission covers everyone.", why:"A school’s permission to access students doesn’t replace parents’ permission and children’s assent."}
    ]},
    {id:"t4u9-q15", lesson:"t4u9-l2", level:2, q:"Which statement about vulnerability in research is most accurate?", options:[
-     {t:"It often depends on the situation, not only on who the person is.", ok:true, why:"For example, a dependent relationship or a crisis. Guidelines such as India’s ICMR list situational vulnerability alongside legal status and health conditions."},
+     {t:"It often depends on the situation as well as on who the person is.", ok:true, why:"For example, a dependent relationship or a crisis. Guidelines such as India’s ICMR list situational vulnerability alongside legal status and health conditions."},
      {t:"Vulnerable people should always be excluded from research to protect them.", why:"Exclusion means they miss out on evidence about their own needs; safeguards are preferred."},
      {t:"Only children can be vulnerable.", why:"Adults in many situations can be vulnerable too."},
      {t:"Vulnerability is decided by the participant’s age alone.", why:"Age is one factor among many."}

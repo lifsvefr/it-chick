@@ -55,7 +55,7 @@ ICA.addUnit({
         ["Analytical","How should we study it?","“Look at all the actors, not just states.”"],
         ["Normative or political","What should be done?","“We need better global governance of pandemics.”"]
       ]},
-      {tip:"In your own writing, say which use you mean. A paper that describes governance in one paragraph and calls for more of it in the next has quietly changed its question."},
+      {tip:"In your own writing, say which use you mean. A paper that describes governance in one paragraph and calls for more of it in the next has changed its question without saying so."},
       {ex:"**Task:** edit this draft paragraph so that each sentence uses “global governance” in one clear way: “Global governance of antibiotics involves the WHO, drug firms and farmers’ groups. Studying it means looking beyond states. Global governance has failed, and we need a binding treaty.”\n1. First I label each sentence with its **use**, because the problem is that the paragraph slides between them. Sentence 1 is **descriptive** (who is involved). Sentence 2 is **analytical** (how to study it). Sentence 3 is **normative** (what should be done), and also a judgment (“failed”).\n2. Next I ask whether the paragraph’s **question** is descriptive or normative. Suppose the seminar asked: “How is antibiotic resistance governed?” Then sentence 3 answers a different question.\n3. Then I turn the normative claim into an **attributed position**, if it belongs in the paper at all. Who argues for a treaty? Who argues against? On what evidence?\n4. Then I replace “failed” with something measurable: failed at what, compared with what, by when?\n5. Finally I move any normative view of my own, clearly marked, to the conclusion.\n**Result:** “Antibiotic resistance is governed by a mix of actors, including the WHO, drug firms and farmers’ groups (descriptive). This paper therefore examines non-state as well as state rule-makers (analytical). Some health advocates argue that voluntary measures have not slowed resistance and call for a binding treaty; others reply that national action plans need more time. I return to this debate in the conclusion.”\n**Common mistake:** thinking normative sentences are banned. They are welcome, but marked, argued and kept apart from description.", label:"Worked example: separating the three uses of “global governance”"}
     ]},
     {h:"One issue, many governors", body:[
@@ -371,7 +371,7 @@ ICA.addUnit({
         "commit parties to equity and solidarity in access to medical products and finance, with a Coordinating Financial Mechanism;",
         "create a States Parties Committee to promote implementation."
       ]},
-      "Eleven States Parties rejected the amendments, so the earlier version still applies to them. The legal point is worth remembering. IHR amendments bind parties unless they reject them in time. That differs from a treaty, which binds only those who ratify.",
+      "Eleven States Parties rejected the amendments, so the earlier version still applies to them. Remember the legal point. IHR amendments bind parties unless they reject them in time. That differs from a treaty, which binds only those who ratify.",
       {ex:"**Task:** work out whether the 2024 IHR amendments apply to three fictional states.\n1. First I recall the **legal mechanism**, because it differs from ordinary treaties. IHR amendments adopted by the World Health Assembly bind every State Party unless it **rejects** them within the deadline. No ratification is needed.\n2. Next I apply it.\n• Norland did nothing. The amendments bind it from their entry into force on 19 September 2025.\n• Ostavia sent a rejection in time. The earlier (2005) version still applies to it. It is not outside the IHR, only outside the amendments.\n• Sudmark sent a rejection after the deadline. Article 59 of the IHR says a rejection received after the deadline “shall have no effect”, so Sudmark is bound.\n3. Then I ask what **binding** means in practice. Each state must, for example, designate a National IHR Authority. But the WHO cannot enforce this: it can report, advise and declare a PHEIC or [[pandemic-emergency|pandemic emergency]], not compel.\n4. Finally I compare with the **Pandemic Agreement**, which works like an ordinary treaty: it will bind only states that sign and ratify it, after it enters into force.\n**Result:** “Unlike the Pandemic Agreement, the IHR amendments apply automatically to every State Party that did not reject them in time. Norland is bound; Ostavia remains under the 2005 rules; Sudmark’s late rejection has no effect.”\n**Common mistake:** reading “eleven states rejected” as “eleven states left the IHR”. Rejecting amendments keeps the older rules in force for that state.", label:"Worked example: does an IHR amendment bind this state?"}
     ]},
     {h:"COVAX: a partnership tested", body:[
@@ -572,7 +572,7 @@ ICA.addUnit({
       {t:"ICANN", b:2, why:"It coordinates domain names and the root zone."},
       {t:"APNIC, the Asia-Pacific address registry", b:2, why:"It allocates IP addresses in its region."},
       {t:"A consortium laying an undersea cable", b:3, why:"Cables are physical infrastructure."},
-      {t:"A national law on removing illegal posts", b:0, why:"Rules on what content may appear sit at the top layer."},
+      {t:"A national law on removing illegal posts", b:0, why:"Rules on what content may appear are at the top layer."},
       {t:"The World Wide Web Consortium (W3C)", b:1, why:"It sets web standards such as HTML."}
     ]},
     {id:"e4u13-l4-x2", type:"sort", q:"Which model does each argument support?", buckets:["Multistakeholder model","Sovereignty or state-led model"], items:[
@@ -691,7 +691,7 @@ ICA.addUnit({
         "**Small states using universal bodies:** Vanuatu and other Pacific states won a General Assembly request (2023) for an advisory opinion of the International Court of Justice on states’ climate obligations. The Court delivered it in July 2025.",
         "**China’s initiatives:** Global Development (2021), Security (2022) and Civilization (2023) Initiatives, and a Global Governance Initiative announced in September 2025."
       ]},
-      "These rest on a long tradition of [[south-south-cooperation|South–South cooperation]], from Bandung (see {{third-world-project}}) to the Buenos Aires Plan of Action (1978). Interpretations, attributed: their sponsors present them as making global governance fairer and more effective. Some Western officials see some of them, especially China’s, as efforts to reshape rules in one state’s favor. Scholars such as Stuenkel argue that most are hedges that sit alongside existing bodies. Look at membership, rules and money before deciding which description fits a case."
+      "These rest on a long tradition of [[south-south-cooperation|South–South cooperation]], from Bandung (see {{third-world-project}}) to the Buenos Aires Plan of Action (1978). Interpretations, attributed: their sponsors present them as making global governance fairer and more effective. Some Western officials see some of them, especially China’s, as efforts to reshape rules in one state’s favor. Scholars such as Stuenkel argue that most are hedges that exist alongside existing bodies. Look at membership, rules and money before deciding which description fits a case."
     ]},
     {h:"Three stories about the future, used as tools", body:[
       "Scholars often sketch scenarios. They are not predictions: they are frames that tell you what evidence to look for.",
@@ -1081,7 +1081,7 @@ ICA.addUnit({
     summary:"The crowded field of IOs, partnerships, regional bodies and private actors that govern global health, and what COVAX showed.",
     levels:{
      starter:[
-      "Global health is governed not only by the WHO. Money and influence also sit with the World Bank, UNICEF, partnerships such as **Gavi, the Vaccine Alliance** (2000) and the **Global Fund** (2002), the vaccine research coalition **CEPI** (2017), regional bodies such as PAHO and Africa CDC, and private foundations and companies.",
+      "The WHO does not govern global health alone. Money and influence also rest with the World Bank, UNICEF, partnerships such as **Gavi, the Vaccine Alliance** (2000) and the **Global Fund** (2002), the vaccine research coalition **CEPI** (2017), regional bodies such as PAHO and Africa CDC, and private foundations and companies.",
       "Think of a hospital where the director sets the rules but different wards are paid for by different donors, each with its own priorities. Coordination is hard.",
       {key:"Global health is one of the most crowded fields of global governance: many actors, many funders, no single boss."},
       "During COVID-19, a partnership called **COVAX** tried to share vaccines fairly. It delivered nearly 2 billion doses, but late."

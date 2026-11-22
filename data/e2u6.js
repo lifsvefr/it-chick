@@ -72,7 +72,7 @@ ICA.addUnit({
         ["Global IR","How do ideas from every region change the field?","5"]
       ]},
       {warn:"Words differ between textbooks. “Liberalism” in IR is a theory of world politics. It is not the same thing as a party called “liberal” in any one country. And “neoliberal” in IR means something different from “neoliberal” economic policy. The lessons flag these traps when they arise."},
-      "The families also disagree about **what kind of knowledge** IR can have. Realism and liberalism mostly aim to explain. Constructivism sits in the middle. Many critical approaches doubt that a neutral, outside view of politics is possible at all, because the observer is always standing somewhere."
+      "The families also disagree about **what kind of knowledge** IR can have. Realism and liberalism mostly aim to explain. Constructivism is in the middle. Many critical approaches doubt that a neutral, outside view of politics is possible at all, because the observer is always standing somewhere."
      ]},
     {h:"The “great debates” story, and its critics", body:[
       "IR textbooks often tell the field’s history as a series of **great debates**. The usual version goes like this:",
@@ -253,7 +253,7 @@ ICA.addUnit({
      ]},
     {h:"The 1962 crisis through a realist lens", body:[
       "A realist sees the crisis as a struggle over the **balance of power**. In 1962 the United States had far more long-range nuclear missiles than the Soviet Union and had placed missiles in Turkey. Placing missiles in Cuba was a quick, cheap way for the Soviets to narrow that gap and to protect an ally. For the United States, nuclear missiles on an island about 150 km from its coast changed the balance in its own region. No great power accepts that lightly.",
-      "The ending also looks realist: two great powers, each able to destroy the other, bargained. The Soviet missiles left Cuba; the US promised not to invade and quietly removed its missiles from Turkey. **Deterrence** and hard interests, not trust, produced the deal.",
+      "The ending also looks realist: two great powers, each able to destroy the other, bargained. The Soviet missiles left Cuba; the US promised not to invade and removed its missiles from Turkey without announcing it. **Deterrence** and hard interests, not trust, produced the deal.",
       "**What the lens misses:** first, the misperceptions and near-accidents that nearly turned the crisis into war. (The spy plane shot down on 27 October was downed by Soviet forces in Cuba without a direct order from Moscow.) Second, the personal judgment of individual leaders. And third, Cuba itself. Cuba appears in this account mainly as a location, yet its government had its own fears and goals. The postcolonial lens takes up this point in Lesson 5.",
       {terms:["realism","classical-realism","neorealism","self-help","national-interest","security-dilemma","balance-of-power","bandwagoning","defensive-realism","offensive-realism","relative-gains","neoclassical-realism"]}
      ]}
@@ -360,7 +360,7 @@ ICA.addUnit({
     {h:"Complex interdependence", body:[
       "The American scholars Robert Keohane and Joseph Nye wrote *Power and Interdependence* (1977). In it they described an **ideal type**, a simplified model that real cases can be compared against. They called it [[complex-interdependence|complex interdependence]]. It has three features:",
       {ol:[
-        "**Multiple channels** connect societies. These are not only governments, but also firms, banks, scientists, activists and officials who talk directly to their counterparts.",
+        "**Multiple channels** connect societies. These include governments, but also firms, banks, scientists, activists and officials who talk directly to their counterparts.",
         "**No fixed hierarchy of issues**: military security does not always come first. Trade, money, energy and the environment can matter as much.",
         "**Military force plays little role** among the countries and on the issues where complex interdependence holds."
       ]},
@@ -528,7 +528,7 @@ ICA.addUnit({
         ["Everyday picture","Strangers on a crowded road","Neighbors who follow and defend shared rules"],
         ["Example","Rival empires that trade and fight but recognize no common rules","States that exchange ambassadors, sign treaties and accept each other’s sovereignty"]
       ]},
-      "An [[international-society|international society]], Bull argued, rests on **institutions** in a broad sense. These are not only organizations, but deep practices. They include diplomacy, international law, the balance of power, the special responsibilities of great powers, and even war fought by agreed rules.",
+      "An [[international-society|international society]], Bull argued, rests on **institutions** in a broad sense. These are organizations, but also deep practices. They include diplomacy, international law, the balance of power, the special responsibilities of great powers, and even war fought by agreed rules.",
       {ex:"Under the 1961 Vienna Convention on Diplomatic Relations, the host country’s police cannot enter an embassy without the ambassador’s consent. Diplomats cannot be prosecuted in the host country’s courts unless their own government waives (gives up) that immunity. Governments keep these rules even with countries they dislike, because they want their own diplomats protected. For the English School, everyday rules like these show a society of states at work.", label:"Worked example: why embassies are protected"},
       "Martin Wight, another founder, described three traditions of thought, and the English School places itself in the middle one:",
       {table:[
@@ -648,7 +648,7 @@ ICA.addUnit({
         "**[[world-systems-theory|World-systems theory]]** comes from Immanuel Wallerstein (*The Modern World-System*, first volume 1974). It divides the world economy into a **core**, a **semi-periphery** and a **periphery**."
       ]},
       {fig:'<svg viewBox="0 0 340 372"><defs><marker id="e2u6-l5-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><circle class="d-gold" cx="170" cy="150" r="140" stroke-width="2"/><circle class="d-lup" cx="170" cy="150" r="92" stroke-width="2"/><circle class="d-rose" cx="170" cy="150" r="44" stroke-width="2"/><text x="170" y="36" text-anchor="middle">Periphery</text><text x="170" y="84" text-anchor="middle">Semi-periphery</text><text x="170" y="155" text-anchor="middle">Core</text><path class="d-ink" d="M300 132 L218 132" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><path class="d-ink" d="M218 170 L300 170" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><path class="d-ink" d="M20 316 L58 316" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><text class="s" x="66" y="320">inward: raw materials, low-wage</text><text class="s" x="66" y="335">work and profits flow to the core</text><path class="d-ink" d="M58 352 L20 352" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><text class="s" x="66" y="356">outward: high-value goods, loans, tech</text></svg>', alt:"Three nested circles: the core in the center, the semi-periphery around it and the periphery on the outside. One arrow points inward toward the core, another points outward. A legend explains that raw materials, low-wage work and profits flow inward to the core, while high-value goods, loans and technology flow outward.", cap:"Core and periphery in world-systems theory. Countries can move between zones over time; the semi-periphery has features of both."},
-      "The [[core-periphery|core–periphery]] picture explains a pattern a realist ignores: why the gap between rich and poor regions can last even when no army is involved. Robert Cox, drawing on the Italian Marxist Antonio Gramsci, added the idea of **[[hegemony]]**. Hegemony is leadership that rests not only on force, but on making one group’s interests look like common sense to everyone.",
+      "The [[core-periphery|core–periphery]] picture explains a pattern a realist ignores: why the gap between rich and poor regions can last even when no army is involved. Robert Cox, drawing on the Italian Marxist Antonio Gramsci, added the idea of **[[hegemony]]**. Hegemony is leadership that rests on force, and also on making one group’s interests look like common sense to everyone.",
       "**Critiques.** Critics say Marxist lenses reduce politics to economics: in 1914 most workers backed their nations, not their class. They add that rapid growth in some closely integrated economies, such as South Korea’s, challenges strong dependency claims. Defenders reply that inequality between and within countries remains central and neglected."
      ]},
     {h:"Feminist IR: where are the women?", body:[
@@ -811,7 +811,7 @@ ICA.addUnit({
      {t:"Bandwagoning", why:"Bandwagoning is joining a rising power instead of balancing against it. It is about alliances, not ideas that seem like common sense."},
      {t:"The security dilemma", why:"The security dilemma is about defense steps that make others feel less safe. It has nothing to do with economic ideas."},
      {t:"Complex interdependence", why:"Complex interdependence describes many channels linking societies. It doesn’t explain why one group’s ideas seem natural to all."},
-     {t:"Hegemony", ok:true, why:"Correct. In Cox’s use of Gramsci, hegemony is leadership resting not only on force but on making one group’s interests look like common sense."}]},
+     {t:"Hegemony", ok:true, why:"Correct. In Cox’s use of Gramsci, hegemony is leadership resting on force and also on making one group’s interests look like common sense."}]},
    {id:"e2u6-cp04", lesson:"e2u6-l3", level:2, q:"Country M broke a fishing agreement last year. Now, when it proposes a trade deal, several partners are reluctant to sign. Which liberal idea about institutions does this show?", options:[
      {t:"Linked issues and reputations: cheating in one area costs trust in others", ok:true, why:"Right. Institutions link issues and build reputations, which makes promises easier to keep without a world government. Cheating on one deal makes partners wary of the next."},
      {t:"Relative gains: states care only about who gains more from each deal", why:"Relative gains are a realist objection to cooperation. The partners here are reacting to M’s broken promise, not comparing gains."},
@@ -1054,7 +1054,7 @@ ICA.addUnit({
       "Constructivism says world politics works like this too. Weapons, money and borders are real, but what they mean depends on shared understandings. A neighbor’s army looks different if you see that neighbor as a friend or as an enemy.",
       "Constructivists study **identities** (who a state thinks it is), **norms** (shared expectations of proper behavior) and how these change over time. Because they are made by people, they can be remade.",
       {key:"Constructivism: shared ideas shape what states want and what they think they can do."},
-      "For example, the end of colonial rule was not only about armies and money; it also depended on a change in what most people around the world thought was legitimate."
+      "For example, the end of colonial rule was about armies and money, but it also depended on a change in what most people around the world thought was legitimate."
      ],
      builder:[
       "Nicholas Onuf introduced the term to IR in *World of Our Making* (1989). Alexander Wendt’s 1992 article “Anarchy is What States Make of It” argued that self-help is not built into anarchy but grows from how states interact. His *Social Theory of International Politics* (1999) described three cultures of anarchy:",
@@ -1099,7 +1099,7 @@ ICA.addUnit({
         ["Rationalist (Grotius)","A society of states"],
         ["Revolutionist (Kant)","A community of humankind"]
       ]},
-      "The English School sits in the rationalist middle, between realism and cosmopolitan liberalism.",
+      "The English School is in the rationalist middle, between realism and cosmopolitan liberalism.",
       "English School writers also distinguish **international society** from **world society**, the wider web of individuals, groups and non-state actors across borders. They tend to use history, law and philosophy rather than statistics, and they study how rules such as sovereignty, non-intervention and the laws of war have developed over centuries. In the 1962 crisis, they would point to the diplomacy and crisis management that kept even bitter rivals inside a shared set of practices.",
       "Its scholars include Martin Wight, Hedley Bull, Adam Watson, R. J. Vincent and, more recently, Barry Buzan, Andrew Hurrell and Tim Dunne."
      ],
@@ -1122,7 +1122,7 @@ ICA.addUnit({
       "Think about the chocolate in a shop. The cocoa may be grown in one region, processed and branded in another, and most of the profit may end up far from the farms. Marxist lenses ask why the world economy works like this, and who gains.",
       "They build on Karl Marx’s idea that the way a society produces wealth shapes its politics, and that capitalism divides owners from workers. In IR, that division is traced across the whole globe: between rich **core** regions and poorer **periphery** regions, and between classes within every country.",
       {key:"Marxist lenses: follow the money, and ask who gains from the global economy."},
-      "These lenses are critical: they ask not only how the world economy works, but whom it works for, and how it could be organized differently."
+      "These lenses are critical: they ask how the world economy works, and also whom it works for, and how it could be organized differently."
      ],
      builder:[
       "Main strands:",
@@ -1204,7 +1204,7 @@ ICA.addUnit({
       ]},
       "In IR, postcolonial scholars criticize **Eurocentrism**, highlight the “standard of civilization” used to exclude non-European states, and study the agency of anti-colonial movements, including the 1955 Bandung Conference of Asian and African states.",
       "Applied to the 1962 crisis, the lens notes that in Cuba it is the October Crisis, that Cuba had lived under a US right to intervene (the Platt Amendment, 1901–1934), and that the deal was made without Cuba.",
-      "Postcolonial scholars also look at how the past lives on: in borders drawn by colonial powers, in economic ties between former colonies and former colonizers, in languages of government and education, and in the ways news and scholarship describe different parts of the world. They ask who is presented as an actor and who as a problem to be managed, which links their work to feminist and Global IR concerns about voice and agency."
+      "Postcolonial scholars also look at how the past continues to shape the present: in borders drawn by colonial powers, in economic ties between former colonies and former colonizers, in languages of government and education, and in the ways news and scholarship describe different parts of the world. They ask who is presented as an actor and who as a problem to be managed, which links their work to feminist and Global IR concerns about voice and agency."
      ],
      pro:[
       "Postcolonial IR (associated with scholars such as Sankaran Krishna, Siba Grovogui, Robbie Shilliam and Sheila Nair) argues that race and empire are constitutive of modern international order rather than background. Decolonial approaches, rooted especially in Latin American scholarship (for example Aníbal Quijano and Walter Mignolo), speak of a “coloniality” of power and knowledge that outlasted formal empire.",
@@ -1327,7 +1327,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Amitav Acharya was born in India. He is a professor of International Relations at American University in Washington, D.C., and has taught and researched in Asia, North America and elsewhere.",
-      "His big idea: IR should become a truly **global** field, drawing on the history, ideas and agency of every region, not only the West. In 2014–15 he served as the first non-Western scholar elected president of the International Studies Association, one of the largest professional bodies for IR scholars, and used the role to launch the Global IR agenda.",
+      "His big idea: IR should become a **global** field, drawing on the history, ideas and agency of every region, not only the West. In 2014–15 he served as the first non-Western scholar elected president of the International Studies Association, one of the largest professional bodies for IR scholars, and used the role to launch the Global IR agenda.",
       "He is also known for studying how Southeast Asian states built shared norms through ASEAN.",
       {key:"Acharya: one field, many voices; ideas and agency come from everywhere."},
       "His work links constructivism, regional studies and the history of ideas."
@@ -1352,7 +1352,7 @@ ICA.addUnit({
       "His Global IR agenda is reformist rather than revolutionary: it aims to broaden existing theories and include regional worlds, while rejecting exceptionalism of every kind, including national schools that claim a country’s tradition is uniquely virtuous.",
       "Critics from the mainstream question whether regional origins matter for theory; critics from postcolonial and decolonial perspectives argue the agenda leaves the discipline’s power structures largely intact. Others debate his security-community reading of ASEAN, pointing to the limits of non-interference.",
       "He has also written on the changing world order, for example in *The End of American World Order*, arguing that a “multiplex” world with many centers of power and ideas is emerging.",
-      "Acharya has also argued for recognizing the agency of the Global South in building the post-1945 order, for example the contributions of Asian, African and Latin American states and thinkers to norms of sovereignty, non-intervention, human rights and development. This historical claim, developed in his later work, is central to his case that Global IR is not only a moral demand but a more accurate history of world politics."
+      "Acharya has also argued for recognizing the agency of the Global South in building the post-1945 order, for example the contributions of Asian, African and Latin American states and thinkers to norms of sovereignty, non-intervention, human rights and development. This historical claim, developed in his later work, is central to his case that Global IR is a moral demand and also a more accurate history of world politics."
      ]
     },
     related:["global-ir","constructivism","postcolonialism-ir"],

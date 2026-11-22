@@ -45,7 +45,7 @@ ICA.addUnit({
       {code:['// Runs after the whole page has been read','const hours = document.querySelector("#hours");','hours.textContent = "Open today, 9:00 to 17:00";','console.log("script.js ran");'].join("\n"), lang:"js", label:"script.js", weblab:"wl-js-hello", cap:"The page now says “Open today, 9:00 to 17:00”, and the Console shows “script.js ran”."},
       "What each piece does:",
       {list:[
-        "`src=\"script.js\"` tells the browser which file to download, just like `src` on an image. The file sits in the same folder as `index.html`.",
+        "`src=\"script.js\"` tells the browser which file to download, just like `src` on an image. The file is in the same folder as `index.html`.",
         "`defer` means “download this while you keep reading the HTML, and run it once the whole page has been read”.",
         "The `<script>` element always needs its closing tag, `<\/script>`, even when it’s empty.",
         "In `script.js`, `document.querySelector(\"#hours\")` finds the paragraph whose id is `hours`, and `.textContent = …` replaces its text. Lesson 5 explains these properly; for now, notice that JavaScript can **reach into the page and change it**."
@@ -62,7 +62,7 @@ ICA.addUnit({
       {lab:"wl-js-hello", t:"Practice: make a button change some text"}
     ]},
     {h:"Statements, order and comments", body:[
-      "A script is a list of instructions called **[[js-statement|statements]]**. The engine runs them **one after another, top to bottom**, unless you tell it otherwise (Lesson 3 shows how). Each statement usually sits on its own line and ends with a semicolon.",
+      "A script is a list of instructions called **[[js-statement|statements]]**. The engine runs them **one after another, top to bottom**, unless you tell it otherwise (Lesson 3 shows how). Each statement is usually on its own line and ends with a semicolon.",
       {code:['// A comment: JavaScript skips this line','console.log("Good morning");','console.log(7 * 6);','/* A longer comment','   can cover several lines */','console.log("Done");'].join("\n"), lang:"js", label:"Three statements", cap:"The Console shows `Good morning`, then `42`, then `Done`."},
       "`console.log(…)` writes whatever is in the brackets to the Console, the developer’s notebook you’ll meet in the next section. Text goes inside quotes; a calculation such as `7 * 6` (the `*` means multiply) is worked out first, so 42 is logged.",
       "**[[js-comment|Comments]]** are notes for humans. JavaScript ignores everything from `//` to the end of that line, and everything between `/*` and `*/`. Use comments to explain **why** you did something, not to repeat what the code obviously does. They’re also handy for switching a line off while you test: put `//` in front of it.",
@@ -190,7 +190,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t2u4-l2", title:"Values and variables", minutes:55,
-   hook:{q:"Type `0.1 + 0.2` into a JavaScript Console. What does it show?", options:["0.3","0.30000000000000004","0.3, but only after rounding","An error: JavaScript can’t add decimals"], answer:1, reveal:"It shows 0.30000000000000004. Computers store numbers in binary, and most decimals, including 0.1 and 0.2, can’t be stored exactly in binary, just as 1/3 can’t be written exactly in decimal. Most programming languages do the same. This lesson covers the kinds of values JavaScript has, how to name them with variables, and the handful of surprises worth knowing."},
+   hook:{q:"Type `0.1 + 0.2` into a JavaScript Console. What does it show?", options:["0.3","0.30000000000000004","0.3, but only after rounding","An error: JavaScript can’t add decimals"], answer:1, reveal:"It shows 0.30000000000000004. Computers store numbers in binary, and most decimals, including 0.1 and 0.2, can’t be stored exactly in binary, just as 1/3 can’t be written exactly in decimal. Most programming languages do the same. This lesson covers the kinds of values JavaScript has, how to name them with variables, and a few surprises to know about."},
    goals:[
      "Recognize strings, numbers, booleans, `undefined` and `null`, and check a value’s type with `typeof`",
      "Create variables with `const` and `let`, choose between them, and explain why modern code avoids `var`",
@@ -233,7 +233,7 @@ ICA.addUnit({
     ]},
     {h:"Why not var?", body:[
       "Older code and tutorials use a third keyword, `var`. It still works, but it was designed in a way that makes mistakes easy, which is why `let` and `const` were added in 2015. Every current browser supports them.",
-      {code:['console.log(price);  // undefined (no error!)','var price = 5;','','console.log(total);  // ReferenceError','let total = 5;'].join("\n"), lang:"js", label:"Two different behaviors", cap:"With `var`, using the name too early quietly gives `undefined`. With `let`, Chrome stops with `ReferenceError: Cannot access 'total' before initialization`, which points you to the mistake."},
+      {code:['console.log(price);  // undefined (no error!)','var price = 5;','','console.log(total);  // ReferenceError','let total = 5;'].join("\n"), lang:"js", label:"Two different behaviors", cap:"With `var`, using the name too early gives `undefined`. With `let`, Chrome stops with `ReferenceError: Cannot access 'total' before initialization`, which points you to the mistake."},
       {list:[
         "`var` lets you declare the same name twice by accident; `let` and `const` refuse.",
         "`var` ignores the braces `{ }` of an `if` or a loop, so a name can leak out of the block where it was made. `let` and `const` stay inside (Lesson 4 explains this “scope”).",
@@ -265,7 +265,7 @@ ICA.addUnit({
       {h:"Surprise 2: NaN, “not a number”"},
       "A calculation that has no sensible numeric answer gives **[[nan|NaN]]**: `\"five\" * 2` is `NaN`. Confusingly, `typeof NaN` is `\"number\"`. NaN spreads: almost any calculation that uses NaN gives NaN. And it is the only value not equal to itself, so test for it with `Number.isNaN(value)`.",
       {h:"Surprise 3: “5” + 1"},
-      "When an operator gets the wrong type, JavaScript quietly converts one value to another. This is called **[[type-coercion|type coercion]]**. The `+` operator prefers joining strings. The other arithmetic operators prefer numbers:",
+      "When an operator gets the wrong type, JavaScript converts one value to another without an error. This is called **[[type-coercion|type coercion]]**. The `+` operator prefers joining strings. The other arithmetic operators prefer numbers:",
       {code:['console.log("5" + 1);  // "51" (joined as text)','console.log("5" * 1);  // 5 (made a number)','console.log("5" - 1);  // 4','console.log("five" * 2);  // NaN','console.log(Number("5") + 1); // 6','console.log(Number("12 kg"));  // NaN'].join("\n"), lang:"js", label:"Coercion in action"},
       "This matters on real pages: whatever someone types into a form box reaches JavaScript **as a string**, even if it’s digits. Add 12 and 8 typed into two boxes with `+` and you get `\"128\"` instead of 20. Convert first with `Number(…)`, then check the result isn’t NaN. Lesson 5 does exactly this.",
       {tip:"Dividing by zero doesn’t cause an error: `10 / 0` is `Infinity`. It’s a number, but rarely the one you wanted, so check for zero before dividing by something a person typed."}
@@ -423,7 +423,7 @@ ICA.addUnit({
         "`push(…)` adds an item to the end. `includes(…)` asks whether a value is in the list.",
         "The array is a `const`, yet `push` still works. `const` stops the **name** being moved to a different array; it doesn’t freeze the array’s contents."
       ]},
-      "Why start at 0? The index says **how far from the start** an item is: the first item is 0 steps along. Most programming languages count this way, so it’s worth getting used to."
+      "Why start at 0? The index says **how far from the start** an item is: the first item is 0 steps along. Most programming languages count this way, so you should get used to it."
     ]},
     {h:"Loops: doing something for each item", body:[
       "A **[[loop]]** repeats a block of code. The simplest way to visit every item in an array is `for...of`:",
@@ -530,9 +530,9 @@ ICA.addUnit({
       {list:[
         "`function` starts a **declaration**. Then comes the name (`greet`), the **[[parameter|parameters]]** in round brackets, and the **body** in curly braces.",
         "Declaring a function does nothing visible. It only runs when it is **called**: its name followed by round brackets, `greet(\"Amara\")`.",
-        "Calling it twice runs the body twice, with a different value each time. That’s the whole point: one definition, many uses."
+        "Calling it twice runs the body twice, with a different value each time. One definition, many uses."
       ]},
-      "Functions are also how you **name an idea**. A line like `splitBill(60, 4)` says what it does; the details live in one place, so a fix there fixes every use."
+      "Functions are also how you **name an idea**. A line like `splitBill(60, 4)` says what it does; the details are in one place, so a fix there fixes every use."
     ]},
     {h:"Parameters and arguments", body:[
       "A **parameter** is a placeholder name in the function’s definition. An **argument** is the actual value you pass when you call it. When the function runs, each parameter takes the value of the matching argument, **by position**:",
@@ -619,7 +619,7 @@ ICA.addUnit({
       {t:"`book[\"title\"]`", b:0, why:"Bracket notation reads a property by its name as a string; no call happens."}
     ]},
     {id:"t2u4-l4-x6", type:"mcq", q:"`const pet = { name: \"Biscuit\", age: 4 };` What does `console.log(pet.color);` show?", options:[
-      {t:"`undefined`", ok:true, why:"Right. Reading a property that doesn’t exist gives `undefined`, without an error. (So a typo such as `pet.nmae` also gives `undefined`: worth knowing when debugging.)"},
+      {t:"`undefined`", ok:true, why:"Right. Reading a property that doesn’t exist gives `undefined`, without an error. (So a typo such as `pet.nmae` also gives `undefined`: useful to know when debugging.)"},
       {t:"A ReferenceError", why:"ReferenceErrors are for unknown **variable** names. `pet` exists; a missing property on it just gives `undefined`."},
       {t:"`null`", why:"JavaScript doesn’t use `null` for missing properties; that’s `undefined`. `null` appears only when something is set to it."},
       {t:"An empty string", why:"Nothing is created automatically. A missing property reads as `undefined`."}
@@ -807,7 +807,7 @@ ICA.addUnit({
     {id:"t2u4-cp02", lesson:"t2u4-l1", level:1, q:"Bilal types `Console.log(\"Ready\");` with a capital C. Which kind of error does the Console report?", options:[{t:"A SyntaxError, because a bracket is missing", why:"The brackets and quotes are all there, so the grammar is fine. The problem is the name."}, {t:"A ReferenceError, because `Console` is a name that doesn’t exist", ok:true, why:"JavaScript is case-sensitive, so `Console` and `console` are different names. A name that doesn’t exist gives a ReferenceError."}, {t:"No error, because JavaScript ignores capital letters", why:"JavaScript is case-sensitive. `Console.log` and `console.Log` are both errors."}, {t:"A TypeError, because `\"Ready\"` is a string", why:"Logging a string is completely normal. The capital C is the problem."}]},
     {id:"t2u4-cp03", lesson:"t2u4-l2", level:2, q:"What does `typeof (\"five\" * 2)` give?", options:[{t:"`\"string\"`", why:"`*` prefers numbers, so the result isn’t text. It’s NaN, and NaN’s type is `\"number\"`."}, {t:"`\"NaN\"`", why:"NaN is a value, not a type. `typeof NaN` gives `\"number\"`."}, {t:"`\"number\"`", ok:true, why:"`\"five\" * 2` gives NaN, and, confusingly, `typeof NaN` is `\"number\"`."}, {t:"`\"undefined\"`", why:"The calculation does give a value: NaN. Its type is `\"number\"`."}]},
     {id:"t2u4-cp04", lesson:"t2u4-l2", level:2, q:"`const boxes = \"6\";` What does `console.log(boxes * 2, boxes + 2);` show?", options:[{t:"`12 62`", ok:true, why:"`*` prefers numbers, so `\"6\"` becomes 6 and the result is 12. `+` prefers joining text, so it gives `\"62\"`."}, {t:"`12 8`", why:"`+` with a string joins text, so `\"6\" + 2` is `\"62\"`, not 8."}, {t:"`66 62`", why:"`*` doesn’t repeat text. It converts `\"6\"` to a number and multiplies."}, {t:"`NaN NaN`", why:"`\"6\"` converts cleanly to a number, so both work. Only text that isn’t a number gives NaN."}]},
-    {id:"t2u4-cp05", lesson:"t2u4-l2", level:3, q:"Raj’s bill splitter converts both boxes with `Number(…)` but doesn’t check the number of people. Someone enters a bill of 60 and **0** people. The code shows `(bill / people).toFixed(2)`. What appears?", options:[{t:"An error message in the Console", why:"Dividing by zero doesn’t cause an error. It quietly gives `Infinity`."}, {t:"`Infinity`", ok:true, why:"Dividing by zero isn’t an error in JavaScript: `60 / 0` is `Infinity`, and `toFixed(2)` keeps it as `\"Infinity\"`. Check for zero before dividing."}, {t:"`0.00`", why:"That would be 0 ÷ 60. Here 60 is divided by 0, which gives `Infinity`."}, {t:"`NaN`", why:"NaN comes from calculations with no sensible number, such as `\"five\" * 2`. 60 ÷ 0 gives `Infinity`."}]},
+    {id:"t2u4-cp05", lesson:"t2u4-l2", level:3, q:"Raj’s bill splitter converts both boxes with `Number(…)` but doesn’t check the number of people. Someone enters a bill of 60 and **0** people. The code shows `(bill / people).toFixed(2)`. What appears?", options:[{t:"An error message in the Console", why:"Dividing by zero doesn’t cause an error. It gives `Infinity`."}, {t:"`Infinity`", ok:true, why:"Dividing by zero isn’t an error in JavaScript: `60 / 0` is `Infinity`, and `toFixed(2)` keeps it as `\"Infinity\"`. Check for zero before dividing."}, {t:"`0.00`", why:"That would be 0 ÷ 60. Here 60 is divided by 0, which gives `Infinity`."}, {t:"`NaN`", why:"NaN comes from calculations with no sensible number, such as `\"five\" * 2`. 60 ÷ 0 gives `Infinity`."}]},
     {id:"t2u4-cp06", lesson:"t2u4-l3", level:1, q:"`const basket = [];` Then: `if (basket.length) { show(\"Checkout\"); } else { show(\"Your basket is empty\"); }`, where `show` puts a message on the page. What is shown?", options:[{t:"Checkout", why:"The condition is `basket.length`, which is 0. 0 is falsy, so the `if` block is skipped."}, {t:"Both messages, one after the other", why:"`if … else` runs exactly one of its two blocks, never both."}, {t:"Your basket is empty", ok:true, why:"An empty array’s `length` is 0, and 0 is falsy, so the `else` block runs."}, {t:"An error, because the condition isn’t `true` or `false`", why:"An `if` accepts any value and converts it. 0 counts as false."}]},
     {id:"t2u4-cp07", lesson:"t2u4-l3", level:2, q:"How many times does the body of `for (let i = 10; i > 0; i = i - 3) { … }` run?", options:[{t:"3", why:"That misses the round where `i` is 1, which is still greater than 0."}, {t:"4", ok:true, why:"`i` is 10, 7, 4 and then 1, and each passes `i > 0`. Then `i` becomes -2, the check fails, and the loop ends."}, {t:"10", why:"`i` goes down by 3 each round, not by 1, so there are far fewer rounds."}, {t:"It never ends", why:"`i` gets smaller every round, so `i > 0` becomes false in the end."}]},
     {id:"t2u4-cp08", lesson:"t2u4-l3", level:3, q:"Two input boxes hold 25 and 100. Asha’s code says `if (a.value > b.value) { … }`. Does the block run?", options:[{t:"Yes: `.value` gives strings, and `\"25\" > \"100\"` is true as text", ok:true, why:"Strings compare character by character, and “2” comes after “1”. Convert with `Number(…)` before comparing amounts."}, {t:"No, because 25 is less than 100", why:"That’s true for numbers, but `.value` is always a string. As text, `\"25\"` comes after `\"100\"`."}, {t:"No, because comparing two strings causes an error", why:"Strings can be compared without any error. The result just follows text order."}, {t:"Yes, because JavaScript turns typed digits into numbers", why:"`.value` stays a string, even for `<input type=\"number\">`. The block runs only because of text order."}]},
@@ -912,7 +912,7 @@ ICA.addUnit({
         "`NaN` (“not a number”) from impossible arithmetic such as `\"five\" * 2`. `typeof NaN` is `\"number\"`, and `NaN === NaN` is false; test with `Number.isNaN(x)`.",
         "`10 / 0` → `Infinity`, not an error."
       ]},
-      "**Coercion**: operators convert mismatched types quietly. `+` prefers strings (`\"5\" + 1` → `\"51\"`); `-`, `*` and `/` prefer numbers (`\"5\" * 1` → 5). Convert deliberately with `Number(\"5\")` or `String(5)`; note `Number(\"\")` is 0 and `Number(\"12 kg\")` is NaN.",
+      "**Coercion**: operators convert mismatched types without warning. `+` prefers strings (`\"5\" + 1` → `\"51\"`); `-`, `*` and `/` prefer numbers (`\"5\" * 1` → 5). Convert deliberately with `Number(\"5\")` or `String(5)`; note `Number(\"\")` is 0 and `Number(\"12 kg\")` is NaN.",
       "**undefined vs null**: JavaScript produces `undefined` for “not set” (an unassigned variable, a missing property, a function with no `return`). Code and browser APIs use `null` for “deliberately nothing”, such as `querySelector` finding no match."
      ],
      pro:[
@@ -973,7 +973,7 @@ ICA.addUnit({
       {code:['if (age < 12) {','  price = 4;','} else if (age >= 65) {','  price = 6;','} else {','  price = 10;','}'].join("\n"), lang:"js"},
       {list:[
         "**Order the cases** from most specific to most general. `if (age >= 12)` first would catch a 70-year-old before the senior check.",
-        "**Test the boundaries**: for rules at 12 and 65, try 11, 12, 64 and 65. Most bugs live at the edges (`<` versus `<=`).",
+        "**Test the boundaries**: for rules at 12 and 65, try 11, 12, 64 and 65. Most bugs happen at the edges (`<` versus `<=`).",
         "**Always use braces**, even for one line. Without them only the next statement belongs to the `if`, which bites when someone adds a second line.",
         "**Conditions can combine**: `if (isMember && age >= 16)`."
       ]},
@@ -1081,7 +1081,7 @@ ICA.addUnit({
      builder:[
       {list:[
         "**Dot notation** (`book.title`) is the usual way. **Bracket notation** (`book[\"title\"]`) takes a string, so it works with a name stored in a variable (`book[field]`) or names with spaces.",
-        "Reading a missing property gives `undefined`, not an error, so a typo such as `book.titel` fails quietly. Log the object to see its real property names.",
+        "Reading a missing property gives `undefined`, not an error, so a typo such as `book.titel` fails without an error message. Log the object to see its real property names.",
         "Assigning to a new name adds a property; `delete book.borrowed` removes one.",
         "A `const` object can still change its properties; `const` only fixes which object the name refers to."
       ]},
@@ -1144,7 +1144,7 @@ ICA.addUnit({
       "The function doesn’t run straight away. The browser keeps it and runs it **every time** the button is clicked.",
       "Use a real `<button>` for things people click: it works with a keyboard, a mouse, a touch screen and a screen reader without extra work.",
       {key:"Find the element, listen for the event, change the page in the function."},
-      "Common events include `\"click\"` (a tap or click, or Enter on a focused button), `\"input\"` (the text in a box changed) and `\"submit\"` (a form was sent). Each listener runs only when its event happens, so a page can sit quietly until someone does something."
+      "Common events include `\"click\"` (a tap or click, or Enter on a focused button), `\"input\"` (the text in a box changed) and `\"submit\"` (a form was sent). Each listener runs only when its event happens, so a page can do nothing until someone does something."
      ],
      builder:[
       {list:[
@@ -1257,7 +1257,7 @@ ICA.addUnit({
    {id:"loop", term:"Loop", def:"Code that repeats a block, either once for each item (for...of) or while a condition stays true (for, while).", codex:"js-arrays-loops"},
    {id:"template-literal", term:"Template literal", def:"A string written between backticks that can include values with ${…}, such as a greeting that drops in a person’s name.", codex:"js-types"},
    {id:"nan", term:"NaN", def:"“Not a number”: the result of arithmetic that has no numeric answer, such as \"five\" * 2. Test for it with Number.isNaN().", codex:"js-types"},
-   {id:"type-coercion", term:"Type coercion", def:"JavaScript quietly converting a value to another type, as when \"5\" + 1 gives \"51\" but \"5\" * 1 gives 5.", codex:"js-types"},
+   {id:"type-coercion", term:"Type coercion", def:"JavaScript converting a value to another type, as when \"5\" + 1 gives \"51\" but \"5\" * 1 gives 5.", codex:"js-types"},
    {id:"js-keyword", term:"Reserved word", def:"A word with a special meaning in JavaScript, such as let, const, if, for or function, which can’t be used as a variable name.", codex:"js-variables"},
    {id:"js-statement", term:"Statement", def:"One instruction in a program, usually on its own line and ended with a semicolon. Statements run in order, top to bottom.", codex:"js-what-it-does"},
    {id:"js-comment", term:"Comment (code)", def:"A note for humans that JavaScript ignores: everything after // on a line, or between /* and */.", codex:"js-what-it-does"},
@@ -1276,7 +1276,7 @@ ICA.addUnit({
    {id:"t2u4-q01", lesson:"t2u4-l1", level:1, q:"What does JavaScript add to a web page that HTML and CSS can’t?", options:[
      {t:"Behavior: reacting to what visitors do", ok:true, why:"Responding to taps and typing, calculating, and changing the page while it’s open. HTML gives structure and CSS gives presentation; reacting and calculating need a programming language."},
      {t:"The text and headings", why:"Content is HTML’s job. JavaScript can change text, but the page’s content belongs in the HTML."},
-     {t:"Colors, fonts and the layout of the page", why:"That’s CSS. JavaScript can switch classes that CSS styles, but the styling itself lives in CSS."},
+     {t:"Colors, fonts and the layout of the page", why:"That’s CSS. JavaScript can switch classes that CSS styles, but the styling itself is in CSS."},
      {t:"The web address of the page", why:"Addresses come from where the file is hosted, not from JavaScript."}
    ]},
    {id:"t2u4-q02", lesson:"t2u4-l1", level:1, q:"Where does the JavaScript of an ordinary web page run?", options:[
@@ -1344,7 +1344,7 @@ ICA.addUnit({
      {t:"`34`", ok:true, why:"`a` is a string, so `+` joins: \"3\" + 4 becomes \"34\"."},
      {t:"`7`", why:"That would need two numbers. One is the string \"3\", so `+` joins them as text."},
      {t:"`NaN`", why:"Joining a string and a number is allowed; nothing here fails to be a number in a calculation."},
-     {t:"An error", why:"JavaScript converts quietly instead of complaining. That’s why type surprises are easy to miss."}
+     {t:"An error", why:"JavaScript converts types instead of complaining. That’s why type surprises are easy to miss."}
    ]},
    {id:"t2u4-q13", lesson:"t2u4-l2", level:2, q:"Sione writes `console.log(\"Hi ${name}\");` (with double quotes), where `name` is \"Ana\". What appears?", options:[
      {t:"`Hi ${name}`", ok:true, why:"Only template literals (written between backticks) fill in `${…}`. In double quotes it’s plain text."},
@@ -1392,7 +1392,7 @@ ICA.addUnit({
    {id:"t2u4-q20", lesson:"t2u4-l3", level:2, q:"`const fruits = [\"fig\", \"kiwi\", \"lime\"];` What is `fruits[fruits.length - 1]`?", options:[
      {t:"`\"lime\"`", ok:true, why:"`length` is 3, so this is `fruits[2]`, the last item (indexes are 0, 1, 2)."},
      {t:"`\"kiwi\"`", why:"That’s index 1. `length - 1` is 2."},
-     {t:"`undefined`", why:"That’s what `fruits[3]` (or `fruits[fruits.length]`) gives. Subtracting 1 lands on the last real item."},
+     {t:"`undefined`", why:"That’s what `fruits[3]` (or `fruits[fruits.length]`) gives. Subtracting 1 gives the last real item."},
      {t:"`3`", why:"3 is the length; the expression uses it to find the last item."}
    ]},
    {id:"t2u4-q21", lesson:"t2u4-l3", level:2, q:"`const list = [\"tea\", \"rice\"];` then `list.push(\"oil\");`. What is `list.length` now, and did the `const` cause an error?", options:[
@@ -1536,7 +1536,7 @@ ICA.addUnit({
      {t:"`<div>` elements are invalid HTML", why:"Divs are valid; they’re just not interactive controls."}
    ]},
    {id:"t2u4-q44", lesson:"t2u4-l5", level:3, q:"Hana removes the empty-bill check from the bill splitter and clicks with the bill box empty (2 people, 10% tip). What appears?", options:[
-     {t:"“Each person pays 0.00”, because `Number(\"\")` is 0", ok:true, why:"An empty box gives `\"\"`, and `Number(\"\")` is 0, so the math quietly works on 0. That’s why the code checks for an empty box before converting."},
+     {t:"“Each person pays 0.00”, because `Number(\"\")` is 0", ok:true, why:"An empty box gives `\"\"`, and `Number(\"\")` is 0, so the math works on 0. That’s why the code checks for an empty box before converting."},
      {t:"“Each person pays NaN”", why:"NaN comes from text that isn’t a number, such as \"abc\". The empty string converts to 0."},
      {t:"A TypeError in the Console", why:"Nothing is `null`; every value is a number, so no error appears. That’s what makes this bug quiet."},
      {t:"Nothing at all", why:"The listener still runs and sets `textContent` to a message with 0.00."}

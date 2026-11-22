@@ -64,7 +64,7 @@ ICA.addUnit({
         ["Inequality","Averages; no inequality goal","Goal 10 on inequality and the pledge to [[leave-no-one-behind|leave no one behind]]"]
       ]},
       "The preamble groups the agenda under [[five-ps|five Ps]]: people, planet, prosperity, peace and partnership. It calls the goals “integrated and indivisible”: progress on one depends on others, a feature called [[sdg-integration|integration]]. Måns Nilsson, Dave Griggs and Martin Visbeck (*Nature*, 2016) proposed a seven-point scale to map such links, from **+3 “indivisible”** through **0 “consistent”** to **−3 “canceling”**.",
-      "The 2015 agenda came in a package. It included the Sendai Framework for disaster risk reduction (March) and the Addis Ababa Action Agenda on financing (July; see {{financing-for-development}} in Unit 16). It also included the Paris Agreement (December; see {{unfccc-regime}} in Unit 17). Fukuda-Parr (2016) argued that the shift was not just bigger but political. In her view, it moved from an aid agenda that donors steered to a universal agenda that developing countries had shaped."
+      "The 2015 agenda came in a package. It included the Sendai Framework for disaster risk reduction (March) and the Addis Ababa Action Agenda on financing (July; see {{financing-for-development}} in Unit 16). It also included the Paris Agreement (December; see {{unfccc-regime}} in Unit 17). Fukuda-Parr (2016) argued that the shift was political as well as bigger. In her view, it moved from an aid agenda that donors steered to a universal agenda that developing countries had shaped."
     ]},
     {h:"Too many goals? The critiques", body:[
       "The SDGs drew criticism from several directions, and each critic wanted something different:",

@@ -58,7 +58,7 @@ ICA.addUnit({
     {h:"How tracking follows you from site to site", body:[
       "A [[tracker]] is anything that records what you do so it can be linked together later, often across many different websites and apps. Most trackers belong to advertising and analytics companies, not to the site you are visiting. Here are the main techniques in plain terms.",
       {h:"Cookies: first-party and third-party"},
-      "A [[cookie]] is a small piece of text. A website asks your [[web-browser|browser]] to store it and send it back next time, like a cloakroom ticket that lets the site recognize you (see {{cookies-cache}}). A [[first-party-cookie|first-party cookie]] comes from the site in your address bar and does useful jobs: keeping you signed in, remembering your basket. A [[third-party-cookie|third-party cookie]] is set by a *different* company whose code is embedded in the page, such as an ad network. If the same ad network’s code sits on thousands of sites, its cookie lets it recognize your browser on all of them.",
+      "A [[cookie]] is a small piece of text. A website asks your [[web-browser|browser]] to store it and send it back next time, like a cloakroom ticket that lets the site recognize you (see {{cookies-cache}}). A [[first-party-cookie|first-party cookie]] comes from the site in your address bar and does useful jobs: keeping you signed in, remembering your basket. A [[third-party-cookie|third-party cookie]] is set by a *different* company whose code is embedded in the page, such as an ad network. If the same ad network’s code is on thousands of sites, its cookie lets it recognize your browser on all of them.",
       {h:"Tracking pixels"},
       "A [[tracking-pixel|tracking pixel]] is a tiny, usually invisible image or snippet of code in a web page or email. When it loads, it tells its owner that this page or email was opened, by which device and when. Marketing emails often contain one, which is how a sender can know you opened their message.",
       {h:"Device fingerprinting"},
@@ -165,7 +165,7 @@ ICA.addUnit({
       {t:"It has no effect at all.", why:"It does have an effect: ads from that company are no longer chosen from her profile."},
       {t:"She’ll now see no ads at all.", why:"The number of ads stays the same; they’re just less personalized."}
     ]},
-      {id:"t1u5-l1-x8", type:"explain", q:"Rahul looks at running shoes on an online shop. An hour later, ads for the same shoes appear on a news site and a recipe blog. Explain how that can happen.", hint:"Whose code sits on all three sites? What does a third-party cookie let it do?", model:"The shop, the news site and the blog all load code from the same ad company, which is a tracker. That company sets a third-party cookie in Rahul’s browser. This is a small piece of text that his browser sends back whenever another page loads the company’s code. So the company recognizes the same browser on all three sites, links the visits into one profile (“interested in running shoes”) and picks the shoe ad to show him. This is part of his passive footprint: he never chose to share it.", points:["Says the same ad or tracking company’s code is on all the sites", "Explains the third-party cookie that lets it recognize the same browser", "Says the visits are linked into a profile used to choose ads"]}
+      {id:"t1u5-l1-x8", type:"explain", q:"Rahul looks at running shoes on an online shop. An hour later, ads for the same shoes appear on a news site and a recipe blog. Explain how that can happen.", hint:"Whose code is on all three sites? What does a third-party cookie let it do?", model:"The shop, the news site and the blog all load code from the same ad company, which is a tracker. That company sets a third-party cookie in Rahul’s browser. This is a small piece of text that his browser sends back whenever another page loads the company’s code. So the company recognizes the same browser on all three sites, links the visits into one profile (“interested in running shoes”) and picks the shoe ad to show him. This is part of his passive footprint: he never chose to share it.", points:["Says the same ad or tracking company’s code is on all the sites", "Explains the third-party cookie that lets it recognize the same browser", "Says the visits are linked into a profile used to choose ads"]}
    ],
    apply:{intro:"Take a look at your own footprint and your browser’s tracking settings. Nothing here needs special software.", tasks:[
      {t:"Search for yourself", how:["Open a private or Incognito window, so results aren’t tailored to your account.","Search your full name in quotes, then your name plus your town, and your email address and phone number.","Also try an image search of your name.","Note anything you didn’t expect: an old profile, an address on a people-search site, a photo of your home.","You don’t need to pay a site that offers to “reveal” more. Most people-search sites offer a free opt-out (see {{tracking-data-brokers}}); if you consider a paid removal service, first check which sites it covers."]},
@@ -209,7 +209,7 @@ ICA.addUnit({
     {h:"Location: the most revealing data", body:[
       "A record of where your phone has been shows where you live, work, worship, get medical care and sleep. That’s why location deserves special care. Your device’s [[location-services|location services]] combine GPS satellites, nearby Wi-Fi networks and cell towers to work out where you are, then share it with apps you allow.",
       {list:[
-        "**Per-app choices.** Allow location **only while using the app** rather than “always” unless an app genuinely needs it in the background (a navigation or family-safety app might).",
+        "**Per-app choices.** Allow location **only while using the app** rather than “always” unless an app needs it in the background (a navigation or family-safety app might).",
         "**Precise or approximate.** iPhone and Android both let you give an app only your approximate area. A weather app needs your town, not your front door.",
         "**System history.** Phones and accounts can keep their own location history. On iPhone, look under **Settings → Privacy & Security → Location Services → System Services**. If your Google Account saves a Timeline, you can review or delete it in Google Maps.",
         "**Sharing with people.** Find-my and family location sharing are useful, but check who can see you. Apple’s Safety Check and the location-sharing lists in Google Maps show this."
@@ -679,7 +679,7 @@ ICA.addUnit({
    learn:[
     {h:"Your attention is the product", body:[
       {lead:"If you’ve ever opened an app to check one thing and looked up forty minutes later, that isn’t a personal failing. Many apps are carefully designed to keep you there."},
-      "Many free apps earn money from advertising, and advertising earns more when people spend more time looking. So teams test and refine designs that hold attention. None of this is secret, and some of it is genuinely convenient. But knowing the techniques makes them easier to notice and to choose about.",
+      "Many free apps earn money from advertising, and advertising earns more when people spend more time looking. So teams test and refine designs that hold attention. None of this is secret, and some of it is convenient. But knowing the techniques makes them easier to notice and to choose about.",
       {table:[
         ["Design","What it does","Why it holds you"],
         ["[[infinite-scroll|Infinite scroll]]","New posts load as you reach the bottom","There’s no end of the page, so no natural moment to stop"],
@@ -715,7 +715,7 @@ ICA.addUnit({
         ["Windows 11","**Focus** and **Do not disturb** (**Settings → System**); **Microsoft Family Safety** for families","Timed focus sessions that silence notifications. Family Safety (set up at account.microsoft.com/family) sets screen-time limits and app and website rules for family members."],
         ["ChromeOS","**Focus** (select the time at the bottom right → **Focus**); **Google Family Link** for children","A focus timer with Do Not Disturb. Family Link manages children’s accounts."]
       ]},
-      "The single most useful tool is often the plainest: the per-app **notification settings** on every device. Allow notifications from people and things that genuinely need you; switch off the rest, or let them arrive silently."
+      "The single most useful tool is often the plainest: the per-app **notification settings** on every device. Allow notifications from people and things that need you; switch off the rest, or let them arrive silently."
     ]},
     {h:"Healthy habits, without the guilt", body:[
       "There is no single “right” number of hours. A video call with a grandparent, an online course, and an hour of upsetting news aren’t the same, even though they all count as [[screen-time|screen time]]. A more useful question than “how long?” is: **“Did that time leave me better or worse off?”**",
@@ -727,7 +727,7 @@ ICA.addUnit({
         "**Protect sleep.** Charge your phone away from your bed if you can, and use bedtime or scheduled downtime features.",
         "**Decide before you open.** “I’m checking the bus time” is easier to stop after than “just a quick look”."
       ]},
-      {ex:"Oluwaseun’s weekly report shows 5 hours a day, and he feels bad about it. Looking closer: 2 hours were video calls with family abroad and study videos, which he values. 2 hours were short videos late at night, after which he slept badly. He keeps the first, sets a 20-minute app timer and Bedtime mode for the second, and turns off autoplay. No guilt, one change at a time.", label:"Worked example: looking at what, not just how long"},
+      {ex:"Oluwaseun’s weekly report shows 5 hours a day, and he feels bad about it. Looking closer: 2 hours were video calls with family abroad and study videos, which he values. 2 hours were short videos late at night, after which he slept badly. He keeps the first, sets a 20-minute app timer and Bedtime mode for the second, and turns off autoplay. No guilt, one change at a time.", label:"Worked example: looking at what, as well as how long"},
       {tip:"If screen use is tangled up with feeling low, anxious or isolated, that deserves care in its own right. Talking to someone you trust or a health professional is a strong step, not a weak one."}
     ]},
     {h:"Harassment, cyberbullying and doxxing", body:[
@@ -953,7 +953,7 @@ ICA.addUnit({
      starter:[
       "A **tracker** records what you do so it can be linked up later, often across many websites. The main kinds, in plain words:",
       {list:[
-        "**Third-party cookies:** a note stored in your browser by an ad company whose code sits on many sites, so it recognizes you on each.",
+        "**Third-party cookies:** a note stored in your browser by an ad company whose code is on many sites, so it recognizes you on each.",
         "**Tracking pixels:** tiny hidden images that report when a page or email is opened.",
         "**Fingerprinting:** recognizing your device from many small details it reveals, like screen size and fonts. Nothing is stored, so clearing cookies doesn’t remove it.",
         "**Advertising IDs:** a phone-wide ID apps can use to link your activity."
@@ -1130,7 +1130,7 @@ ICA.addUnit({
      ],
      pro:[
       "Private modes use a separate, temporary storage partition: cookies, local storage and cache are held in memory or discarded at session end. Some browsers add extra protections in private mode, such as stricter tracker blocking in Firefox private windows and third-party cookie blocking in Chrome Incognito.",
-      "Limits worth knowing: extensions may run in private mode if allowed; the operating system may still record DNS lookups, downloads and recent files; and websites can sometimes detect that a private mode is in use. Fingerprinting and IP-based identification work as usual.",
+      "Limits: extensions may run in private mode if allowed; the operating system may still record DNS lookups, downloads and recent files; and websites can sometimes detect that a private mode is in use. Fingerprinting and IP-based identification work as usual.",
       "Private browsing doesn’t defend against malware or keyloggers on the device, so it isn’t a substitute for a trusted computer when handling sensitive accounts.",
       {tip:"On a shared computer, private browsing plus signing out and closing all private windows is the habit. Don’t let the browser save the password."},
       "For persistent separation (for example, work and personal), browser profiles or containers are more useful than private windows, because each keeps its own cookies and sign-ins over time.",
@@ -1172,7 +1172,7 @@ ICA.addUnit({
       "Scope: the GDPR applies to processing by organizations established in the EU, and to non-EU organizations offering goods or services to, or monitoring the behavior of, people in the EU (Article 3). The **ePrivacy Directive** separately requires consent for storing or reading information on a device, such as most non-essential cookies, which is why cookie banners appear.",
       "Principles (Article 5): lawfulness, fairness and transparency; purpose limitation; data minimization; accuracy; storage limitation; integrity and confidentiality; accountability. Special categories (health, religion, sexual orientation, biometrics and others) need extra conditions.",
       "Rights articles: 13–14 information, 15 access, 16 rectification, 17 erasure, 18 restriction, 20 portability, 21 objection, 22 automated decision-making. Article 12 sets the one-month deadline and the two-month extension, and allows a fee or refusal only for manifestly unfounded or excessive requests.",
-      "In the US, sector laws (health, children’s data, credit reports) sit alongside a growing set of state comprehensive privacy laws modeled partly on the CCPA. California also requires businesses to honor opt-out preference signals and runs the DROP platform for data-broker deletion requests.",
+      "In the US, sector laws (health, children’s data, credit reports) exist alongside a growing set of state comprehensive privacy laws modeled partly on the CCPA. California also requires businesses to honor opt-out preference signals and runs the DROP platform for data-broker deletion requests.",
       {tip:"Laws change. In November 2025 the European Commission proposed “digital omnibus” amendments touching the GDPR and cookie rules; in late 2026 they were still being negotiated and were not yet law. The UK was implementing its 2025 Act. Check your regulator’s website for the current position."}
      ]
     },
@@ -1504,7 +1504,7 @@ ICA.addUnit({
    {id:"digital-footprint", term:"Digital footprint", def:"The record of what you do online: what you share on purpose, what is collected as you go, and what is guessed about you.", codex:"digital-footprint"},
    {id:"active-footprint", term:"Active footprint", def:"The part of your digital footprint you create deliberately, such as posts, reviews, comments and profile photos.", codex:"digital-footprint"},
    {id:"passive-footprint", term:"Passive footprint", def:"The part of your digital footprint collected as a side effect, such as pages visited, location, device details and app usage.", codex:"digital-footprint"},
-   {id:"personal-data", term:"Personal data", def:"Any information relating to an identifiable person: not only a name, but also an email address, location, device ID, photo or a pattern of behavior that points to you.", codex:"data-protection-laws"},
+   {id:"personal-data", term:"Personal data", def:"Any information relating to an identifiable person: a name, an email address, location, device ID, photo or a pattern of behavior that points to you.", codex:"data-protection-laws"},
    {id:"tracker", term:"Tracker", def:"Code or a technique (cookie, pixel, fingerprinting, ID) that records what you do so it can be linked together, often across many sites and apps.", codex:"tracking-data-brokers"},
    {id:"first-party-cookie", term:"First-party cookie", def:"A cookie set by the website shown in your address bar, used for things like keeping you signed in or remembering your basket.", codex:"tracking-data-brokers"},
    {id:"third-party-cookie", term:"Third-party cookie", def:"A cookie set by a different company whose code is embedded in the page, such as an ad network. It can recognize your browser on every site that uses that company.", codex:"tracking-data-brokers"},

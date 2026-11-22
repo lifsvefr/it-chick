@@ -779,7 +779,7 @@ ICA.addUnit({
      h: "Four ways to place an event in time",
      body: [
       {
-       lead: "You already have ～とき (when, Unit 5, Lesson 6), ～前に (before, Unit 5, Lesson 7), ～てから (after, Unit 3, Lesson 1) and ～ながら (while doing, Unit 7, Lesson 5). N3 adds four patterns that say more exactly **how** an event sits in a stretch of time."
+       lead: "You already have ～とき (when, Unit 5, Lesson 6), ～前に (before, Unit 5, Lesson 7), ～てから (after, Unit 3, Lesson 1) and ～ながら (while doing, Unit 7, Lesson 5). N3 adds four patterns that say more exactly **how** an event fits in a stretch of time."
       },
       {
        fig: "<svg viewBox=\"0 0 340 352\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">Where the event sits in time</text><text x=\"12\" y=\"48\">～あいだ: all through</text><rect class=\"d-soft\" x=\"40\" y=\"58\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-gold\" x=\"40\" y=\"78\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"170\" y=\"108\" text-anchor=\"middle\">the main action fills the period</text><text x=\"12\" y=\"136\">～あいだに: at one point inside</text><rect class=\"d-soft\" x=\"40\" y=\"146\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><circle class=\"d-rose\" cx=\"150\" cy=\"174\" r=\"8\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"198\" text-anchor=\"middle\">one event, somewhere in the period</text><text x=\"12\" y=\"226\">～うちに: before it changes</text><rect class=\"d-sage\" x=\"40\" y=\"236\" width=\"170\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><path class=\"d-ink\" d=\"M218 236V252\" stroke-width=\"2.5\"/><text class=\"s\" x=\"258\" y=\"248\" text-anchor=\"middle\">change</text><circle class=\"d-rose\" cx=\"130\" cy=\"264\" r=\"8\" stroke-width=\"2\"/><text x=\"12\" y=\"296\">～たびに: every time</text><circle class=\"d-rose\" cx=\"70\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"140\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"210\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"280\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"340\" text-anchor=\"middle\">the same result each time it happens</text></svg>",
@@ -1462,7 +1462,7 @@ ICA.addUnit({
       "Often both work: 去年より[雪]{ゆき}が多い and 去年に[比]{くら}べて[雪]{ゆき}が多い say the same thing. The differences are of style and focus:",
       {
        list: [
-        "**～より** ([[comparison-yori]], Unit 3) is the basic, everyday way to say “more … than”, and it can sit right before the adjective: 姉は私より[背]{せ}が高い.",
+        "**～より** ([[comparison-yori]], Unit 3) is the basic, everyday way to say “more … than”, and it can come right before the adjective: 姉は私より[背]{せ}が高い.",
         "**～に[比]{くら}べて** usually opens the sentence and frames what follows. It sounds a little more formal and is common in news, reports and descriptions of change ([増]{ふ}えた, [減]{へ}った, 上がった).",
         "と[比]{くら}べて means the same as に[比]{くら}べて. ～に[比]{くら}べると and ～と[比]{くら}べると are also common."
        ]
@@ -2565,7 +2565,7 @@ ICA.addUnit({
     }
    ],
    apply: {
-    intro: "These four patterns live in conversation. Write them about your own life, and say them aloud. Keep the notes for yourself.",
+    intro: "These four patterns are used in conversation. Write them about your own life, and say them aloud. Keep the notes for yourself.",
     tasks: [
      {
       t: "Not exactly",
@@ -3410,7 +3410,7 @@ ICA.addUnit({
       "The second use is “all the time, without a break”. 立ちっぱなし is “standing the whole time”, and [負]{ま}けっぱなし is “losing again and again”: 工場の仕事は、[一日中]{いちにちじゅう}立ちっぱなしです (At the plant, I’m on my feet all day).",
       {
        fig: "<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">A state that carries on</text><rect class=\"d-sage\" x=\"6\" y=\"32\" width=\"328\" height=\"122\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"54\">～たまま: the state lasts</text><rect class=\"d-panel\" x=\"190\" y=\"62\" width=\"64\" height=\"24\" rx=\"6\" stroke-width=\"1.5\"/><text x=\"222\" y=\"79\" text-anchor=\"middle\">ねた</text><path class=\"d-ink\" d=\"M222 86V96\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"34\" cy=\"102\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"34\" y=\"80\" text-anchor=\"middle\">つけた</text><rect class=\"d-gold\" x=\"44\" y=\"96\" width=\"280\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"184\" y=\"126\" text-anchor=\"middle\">でんきが ついている (still on)</text><text class=\"s\" x=\"170\" y=\"144\" text-anchor=\"middle\">B happens while A’s result is still there</text><rect class=\"d-rose\" x=\"6\" y=\"166\" width=\"328\" height=\"122\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"188\">～っぱなし: left that way</text><circle class=\"d-rose\" cx=\"34\" cy=\"226\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"34\" y=\"208\" text-anchor=\"middle\">あけた</text><rect class=\"d-soft\" x=\"44\" y=\"220\" width=\"250\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"312\" y=\"232\" text-anchor=\"middle\">!</text><text class=\"s\" x=\"170\" y=\"256\" text-anchor=\"middle\">done, then nobody changed it back</text><text class=\"s\" x=\"170\" y=\"276\" text-anchor=\"middle\">(and it shouldn’t have been left)</text></svg>",
-       alt: "Two panels. ～たまま, the state lasts: a dot labeled つけた starts a long bar labeled でんきが ついている (still on), and a box labeled ねた sits above the middle of the bar; B happens while A’s result is still there. ～っぱなし, left that way: a dot labeled あけた starts a bar that runs on to an exclamation mark; done, then nobody changed it back (and it shouldn’t have been left).",
+       alt: "Two panels. ～たまま, the state lasts: a dot labeled つけた starts a long bar labeled でんきが ついている (still on), and a box labeled ねた is above the middle of the bar; B happens while A’s result is still there. ～っぱなし, left that way: a dot labeled あけた starts a bar that runs on to an exclamation mark; done, then nobody changed it back (and it shouldn’t have been left).",
        cap: "まま: a state carries on while something else happens. っぱなし: something was left that way, and someone should have dealt with it."
       },
       {
@@ -5099,7 +5099,7 @@ ICA.addUnit({
        ]
       ]
      },
-     "**～に[比]{くら}べて and ～より.** Both compare. ～より is the everyday “than” and can sit right before the adjective; ～に[比]{くら}べて frames the comparison and is a little more formal, common with words of change ([増]{ふ}えた, [減]{へ}った). ～と[比]{くら}べて means the same; verbs take の first (行くのに[比]{くら}べて).",
+     "**～に[比]{くら}べて and ～より.** Both compare. ～より is the everyday “than” and can come right before the adjective; ～に[比]{くら}べて frames the comparison and is a little more formal, common with words of change ([増]{ふ}えた, [減]{へ}った). ～と[比]{くら}べて means the same; verbs take の first (行くのに[比]{くら}べて).",
      "**Nothing is as … as.** B ほど (くらい) ～ものはない / ～人はいない: 家族ほど大切なものはない.",
      "**くらい for the minimum** marks something small or easy: 自分の[部屋]{へや}くらい自分で[掃除]{そうじ}しなさい; 少しくらい[遅]{おく}れても[大丈夫]{だいじょうぶ}. It can sound dismissive, so it fits advice and complaints.",
      "**くらい or ぐらい?** Both are correct and mean the same in these uses."

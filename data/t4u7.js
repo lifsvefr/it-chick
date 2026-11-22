@@ -532,7 +532,7 @@ ICA.addUnit({
   /* ───────────── Lesson 5 ───────────── */
   {id:"t4u7-l5", title:"Themes and trustworthiness", minutes:60,
    goals:["Tell a theme from a topic summary","Work through Braun and Clarke’s six phases of thematic analysis","Explain saturation and why it is debated","Use Lincoln and Guba’s four criteria to judge and strengthen a study","Apply reflexivity, member checking, triangulation and thick description with their limits"],
-   hook:{q:"Virginia Braun and Victoria Clarke, who developed a widely used version of thematic analysis, argue that one common phrase in qualitative papers is misleading. Which one?", options:["“Themes emerged from the data”","“Participants were interviewed”","“Interviews were transcribed”","“Participants gave informed consent”"], answer:0, reveal:"**“Themes emerged.”** Braun and Clarke argue that themes don’t sit in the data waiting to pop out: researchers *generate* them by interpreting the data, so writing “emerged” hides the analyst’s work. That idea runs through this lesson, from building themes to judging whether a study can be trusted."},
+   hook:{q:"Virginia Braun and Victoria Clarke, who developed a widely used version of thematic analysis, argue that one common phrase in qualitative papers is misleading. Which one?", options:["“Themes emerged from the data”","“Participants were interviewed”","“Interviews were transcribed”","“Participants gave informed consent”"], answer:0, reveal:"**“Themes emerged.”** Braun and Clarke argue that themes aren’t in the data waiting to pop out: researchers *generate* them by interpreting the data, so writing “emerged” hides the analyst’s work. That idea runs through this lesson, from building themes to judging whether a study can be trusted."},
    learn:[
     {h:"From codes to themes", body:[
       {lead:"Codes label pieces of data. Themes tell the story of what those pieces mean together."},
@@ -589,7 +589,7 @@ ICA.addUnit({
       {list:[
         "Use quotes as evidence, labeled with IDs or pseudonyms (P7, “Amina”), and draw them from across participants, not just the most eloquent one.",
         "Be careful with quantity words. “Most participants” may be fine; precise percentages from a small purposive sample invite misreading.",
-        "Show the analytic story, not just quotes: what each theme means and how it answers the question.",
+        "Show the analytic story as well as quotes: what each theme means and how it answers the question.",
         "Report your approach (which kind of TA), your sampling and stopping decisions, your position, and the limits of your claims.",
         "[[reporting-guideline|Reporting checklists]] such as COREQ (for interview and focus group studies) and SRQR (Standards for Reporting Qualitative Research) are used by many journals, especially in health research; check what your target journal expects."
       ]},

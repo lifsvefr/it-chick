@@ -56,7 +56,7 @@ ICA.addUnit({
         ["2 Theory","What’s the most likely cause? Start with the obvious and the cheap to check."],
         ["3 Test","Check that one idea with one small change, and watch the result."],
         ["4 Plan and fix","Decide on the fix, think about what it might break, then do it (or hand it to someone who can)."],
-        ["5 Verify","Does everything work now, not just the thing that was broken? Can you stop it happening again?"],
+        ["5 Verify","Does everything work now, or only the thing that was broken? Can you stop it happening again?"],
         ["6 Document","Write down what you found and did, so next time takes five minutes."]
       ]},
       "The loop matters. If a test shows the theory was wrong, you’ve ruled something out: go back to step 2 with the next idea. If you run out of theories, or the fix needs skills or permissions you don’t have, hand it on ([[escalation]])."

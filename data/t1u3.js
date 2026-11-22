@@ -35,7 +35,7 @@ ICA.addUnit({
         ["Your accounts","Someone signs in to Kenji’s email.","Email can reset the passwords of almost every other account he has."],
         ["Your data","Copies of Lucía’s ID documents in her cloud storage.","Used to open loans or accounts in her name."],
         ["Access to other people","Sione’s hacked messaging account asks his aunt for money.","People trust messages from you, so your account becomes a scam tool."],
-        ["Your device","Malware quietly uses Mei’s laptop to attack others.","Slower device, and you become part of someone else’s crime."]
+        ["Your device","Malware uses Mei’s laptop to attack others.","Slower device, and you become part of someone else’s crime."]
       ]},
       {key:"You’re not targeted because you’re important. You’re targeted because attacks are cheap, automated and only need a few people to fall for them. That’s also good news: a few solid habits put you out of reach of most of them."}
     ]},
@@ -143,7 +143,7 @@ ICA.addUnit({
       {t:"Macs have no built-in malware protection.", why:"They do: macOS includes Gatekeeper and XProtect. The flaw is thinking malware is the only threat."},
       {t:"There’s no flaw; he’s completely safe.", why:"Phishing, scams, data breaches and reused passwords affect Mac users as much as anyone."}
     ]},
-      {id:"t1u3-l1-x7", type:"explain", q:"A neighbor says: “Hackers won’t bother with me. I’m nobody important.” Explain why that is mistaken, and why the truth is partly good news.", hint:"Think of the burglar trying every door handle on the street.", model:"Most attacks aren’t aimed at anyone in particular. Programs send millions of scam messages, try millions of leaked passwords and scan millions of devices. The attacker only needs a few to work, like a burglar trying every door handle. An ordinary person still has things worth taking. One is money. Another is accounts such as email, which can reset almost every other account. The good news is that attackers look for the unlocked doors. A few solid habits put you out of reach of most attacks: unique passwords, two-step verification, pausing before you act on messages, updates and backups.", points:["Says attacks are automated and sent to huge numbers of people", "Names something an ordinary person has that is worth stealing", "Says a few basic habits stop most attacks"]}
+      {id:"t1u3-l1-x7", type:"explain", q:"A neighbor says: “Hackers won’t bother with me. I’m nobody important.” Explain why that is mistaken, and why the truth is partly good news.", hint:"Think of the burglar trying every door handle on the street.", model:"Most attacks aren’t aimed at anyone in particular. Programs send millions of scam messages, try millions of leaked passwords and scan millions of devices. The attacker only needs a few to work, like a burglar trying every door handle. An ordinary person still has things worth taking. One is money. Another is accounts such as email, which can reset almost every other account. Attackers look for the unlocked doors. A few solid habits put you out of reach of most attacks: unique passwords, two-step verification, pausing before you act on messages, updates and backups.", points:["Says attacks are automated and sent to huge numbers of people", "Names something an ordinary person has that is worth stealing", "Says a few basic habits stop most attacks"]}
    ],
    apply:{intro:"Take stock of your own situation. You don’t need to fix anything yet; later lessons cover the fixes. Just see where you stand.", tasks:[
      {t:"List your most important accounts", how:["Write down (on paper or in a private note) your **main email account(s)** first: they can reset most other accounts.","Add accounts that hold money or could cost money: banking, payment apps, online shops with a saved card.","Add accounts people would trust messages from: messaging apps and social media.","Add accounts with irreplaceable things: cloud photo storage, work or study accounts.","Do **not** write passwords on this list. It’s a list of names only."]},
@@ -222,7 +222,7 @@ ICA.addUnit({
         "Use this kind of passphrase for the few passwords you must remember: your device sign-in, your main email and your password manager."
       ]},
       {ex:"Suppose a generator picks from a list of 2,000 words.\nOne word: 2,000 possibilities.\nTwo words: 2,000 × 2,000 = 4,000,000.\nThree words: 2,000 × 2,000 × 2,000 = 8,000,000,000 (8 billion).\nFour words: × 2,000 again = 16,000,000,000,000 (16 trillion).\nEvery extra word multiplies the attacker’s work by 2,000. That’s why length wins.", label:"Worked example: why each word helps so much"},
-      "This math only holds if the words are truly random. If you pick “my dog loves walks”, an attacker’s program that tries common phrases will find it far sooner."
+      "This math only holds if the words are chosen at random. If you pick “my dog loves walks”, an attacker’s program that tries common phrases will find it far sooner."
     ]},
     {h:"Why reuse is the real danger", body:[
       "Data breaches happen to big and small organizations all the time, and you can’t control them. When one happens, lists of email addresses and passwords end up being traded. Attackers then run [[credential-stuffing|credential stuffing]]: programs that try each leaked pair on hundreds of other services.",
@@ -377,7 +377,7 @@ ICA.addUnit({
       ]},
       "When you sign in, the website sends a fresh random challenge. Your device signs it with the private key, and the site checks the signature with the public key. No secret travels across the internet.",
       {fig:'<svg viewBox="0 0 340 428"><defs><marker id="t1u3-l3-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-sage" x="47.2" y="8" width="245.6" height="84" rx="12" stroke-width="2"/><text x="170" y="30" text-anchor="middle">Real website</text><text class="s" x="170" y="50" text-anchor="middle">northwindbank.com</text><text class="s" x="170" y="68" text-anchor="middle">public key (can only</text><text class="s" x="170" y="84" text-anchor="middle">check, not sign)</text><path class="d-ink" d="M113.3,95 L113.3,175" stroke-width="2" marker-end="url(#t1u3-l3-mk)"/><text class="s" x="103.9" y="130" text-anchor="end">1. random</text><text class="s" x="103.9" y="146" text-anchor="end">challenge</text><path class="d-ink" d="M207.8,177 L207.8,97" stroke-width="2" marker-end="url(#t1u3-l3-mk)"/><text class="s" x="217.2" y="118">2. signed reply</text><text class="s" x="217.2" y="142">3. site checks it:</text><text class="s" x="217.2" y="158">signed in</text><rect class="d-lup" x="47.2" y="180" width="245.6" height="104" rx="12" stroke-width="2"/><text x="170" y="202" text-anchor="middle">Your device</text><text class="s" x="170" y="222" text-anchor="middle">private key (stays here)</text><text class="s" x="170" y="240" text-anchor="middle">unlocked by your face,</text><text class="s" x="170" y="256" text-anchor="middle">fingerprint or PIN</text><text class="s" x="170" y="274" text-anchor="middle">checks the real web address</text><path class="d-ink" d="M170,287 L170,355" stroke-width="2" stroke-dasharray="6 5"/><text class="s" x="160.6" y="318" text-anchor="end">asks for</text><text class="s" x="160.6" y="334" text-anchor="end">a passkey…</text><text class="s" x="179.4" y="310">no passkey for this</text><text class="s" x="179.4" y="326">domain: nothing</text><text class="s" x="179.4" y="342">is sent</text><rect class="d-rose" x="47.2" y="358" width="245.6" height="60" rx="12" stroke-width="2"/><text x="170" y="382" text-anchor="middle">Fake look-alike</text><text class="s" x="170" y="402" text-anchor="middle">n0rthwindbank.com</text></svg>', alt:"The real website, at the top, holds the public key; your device, below it, holds the private key. The website sends a challenge, the device returns a signed reply and the site checks it. Below the device, a fake look-alike website asks for a passkey, but the device has none for that domain, so nothing is sent.", cap:"A passkey signs a challenge for the exact website it was made for. A fake site gets nothing."},
-      "The crucial part is that each passkey is tied to the **exact website** it was created for. Your device, not your eyes, checks the address. A fake site at a look-alike address simply has no passkey to ask for. That’s why passkeys resist phishing in a way passwords and codes can’t.",
+      "The important part is that each passkey is tied to the **exact website** it was created for. Your device, not your eyes, checks the address. A fake site at a look-alike address simply has no passkey to ask for. That’s why passkeys resist phishing in a way passwords and codes can’t.",
       {table:[
         ["Question","Answer"],
         ["Does the website get my fingerprint or face?","No. Your face or fingerprint only unlocks your own device. It stays on the device."],
@@ -431,7 +431,7 @@ ICA.addUnit({
       {v:900000, tol:0, why:"That assumes the first digit can’t be 0. Codes like 042917 are valid, so all 10 digits are allowed in every position."},
       {v:720, tol:0, why:"720 is 6 × 5 × 4 × 3 × 2 × 1, which counts ways to arrange 6 different things. Here each digit is picked from 0–9 and can repeat."}
     ]},
-    {id:"t1u3-l3-x5", type:"mcq", q:"Lucía taps a link in a convincing email and lands on `northwind-bank-secure.com`, a copy of her bank’s sign-in page. She normally signs in with a passkey. What happens?", options:[
+    {id:"t1u3-l3-x5", type:"mcq", q:"Lucía taps a link in a convincing email and arrives on `northwind-bank-secure.com`, a copy of her bank’s sign-in page. She normally signs in with a passkey. What happens?", options:[
       {t:"Her device has no passkey for that address to hand over.", ok:true, why:"Passkeys are tied to the exact website they were created for, and the device checks the address. A look-alike domain gets nothing."},
       {t:"The fake site receives her passkey and can use it on the real bank.", why:"The private key never leaves her device or password manager, and it only ever signs challenges for the real domain."},
       {t:"The fake site receives her fingerprint.", why:"Her fingerprint only unlocks her own device. It’s never sent to any website, real or fake."},
@@ -679,7 +679,7 @@ ICA.addUnit({
     {h:"Updates: fixing the locks", body:[
       {lead:"Every app and operating system has mistakes in it. Some of those mistakes are security holes. Updates are how they get fixed."},
       "Imagine a lock maker discovers that one model of their door lock can be opened with a hairpin. They send every owner a free replacement part. A [[software-update|software update]] is the same thing for your device: the company found a flaw (a **vulnerability**) and sends a fix, called a [[patch]].",
-      "Here’s the uncomfortable part. Once a fix is published, attackers can study it to work out exactly what the flaw was, then target everyone who hasn’t installed it yet. A flaw that attackers exploit before any fix exists is called a [[zero-day|zero-day]]; those are rare and usually aimed at high-value targets. The everyday risk is far more ordinary: devices running months-old software with flaws that were fixed long ago.",
+      "This has a downside. Once a fix is published, attackers can study it to work out exactly what the flaw was, then target everyone who hasn’t installed it yet. A flaw that attackers exploit before any fix exists is called a [[zero-day|zero-day]]; those are rare and usually aimed at high-value targets. The everyday risk is far more ordinary: devices running months-old software with flaws that were fixed long ago.",
       {list:[
         "**Turn on automatic updates** for your operating system, browser and apps. The UK NCSC and CISA both list this among their top tips.",
         "**Restart when asked.** Many updates only take effect after a restart.",
@@ -800,7 +800,7 @@ ICA.addUnit({
       {t:"Deny both, because a flashlight doesn’t need either.", ok:true, why:"Permissions should match what the app does. Contacts and location have nothing to do with a flashlight, so the app may be collecting data to sell or misuse. If it won’t work without them, uninstall it and pick another."},
       {t:"Allow both; apps only ask for what they need.", why:"Apps often ask for more than they need, sometimes to collect and sell data. You decide."},
       {t:"Allow location but deny contacts.", why:"A flashlight needs neither. Location reveals where he lives and goes."},
-      {t:"Allow both, but only while he is actually using the app.", why:"“While using” is a good habit for permissions an app genuinely needs. These ones it doesn’t need at all."}
+      {t:"Allow both, but only while he is actually using the app.", why:"“While using” is a good habit for permissions an app needs. These ones it doesn’t need at all."}
     ]},
     {id:"t1u3-l5-x5", type:"order", q:"Lucía realizes her email account has been hacked. Put the first-hour steps in the order the UK NCSC’s recovery guidance gives.", items:[
       {t:"Use the provider’s official recovery process to get back into the account", why:"Everything else depends on having control of the account."},
@@ -992,14 +992,14 @@ ICA.addUnit({
       "Some defenses pull in different directions. Strong sign-in protects confidentiality, but if you lose your only security key and have no recovery codes, it hurts availability: you lock yourself out. Encryption protects confidentiality, but losing the recovery key makes your own data unavailable. Good security balances all three: strong protection **plus** a recovery plan.",
       "Modern ransomware often hits two corners at once: it locks files (availability) and threatens to publish copies (confidentiality). That’s why backups alone don’t solve it, and why preventing infection matters too.",
       "Worked example: Tomás keeps his community group’s membership list in a shared spreadsheet. **Confidentiality**: share it only with named people, not “anyone with the link”. **Integrity**: turn on version history so changes can be seen and undone. **Availability**: keep a backup outside the shared folder. One file, three different protections.",
-      "Ask the three questions whenever you set something up, not only after something goes wrong."
+      "Ask the three questions whenever you set something up, before anything goes wrong."
      ],
      pro:[
       "The CIA triad is a long-standing model in information security, used in standards and textbooks as the basic statement of security objectives. Many frameworks add related properties: **authenticity** (you’re dealing with who you think), **non-repudiation** (someone can’t plausibly deny an action they took, often via digital signatures), and **privacy** (appropriate handling of personal data, which is broader than confidentiality).",
       "Cryptography maps onto the triad unevenly. Encryption provides confidentiality. Hashes and message authentication codes detect changes, supporting integrity. Digital signatures support integrity and authenticity, and are how passkeys prove possession of a private key. Cryptography does little for availability, which depends on redundancy, backups and resilient systems.",
       "In risk assessment, analysts ask for each asset: what would a loss of confidentiality, integrity or availability cost? A family photo archive is mainly an availability concern; medical records are a confidentiality concern; a payroll spreadsheet is strongly an integrity concern. Rating impact this way helps decide where to spend limited effort.",
       {tip:"When something goes wrong, naming the affected corner speeds up the response: confidentiality incidents need password changes and notifications; integrity incidents need checking and correcting data; availability incidents need restoring from backup."},
-      "Note that availability failures are often accidental (a broken drive, a lost phone, a forgotten password), which is why recovery planning belongs in security, not just IT support."
+      "Note that availability failures are often accidental (a broken drive, a lost phone, a forgotten password), which is why recovery planning belongs in security as well as IT support."
      ]
     },
     related:["threat-landscape","device-encryption","ransomware"],
@@ -1029,7 +1029,7 @@ ICA.addUnit({
       "Spear phishing aimed at work often has no link at all: a short, friendly message from a “manager” asking if you’re free for a quick task, followed by a request for gift cards or a payment. The fix is a rule, not a judgment call: payment requests and bank-detail changes are always confirmed by a call to a known number."
      ],
      pro:[
-      "Modern phishing increasingly targets the second step of sign-in. **Adversary-in-the-middle** phishing kits sit between you and the real site: you type your password and one-time code into the fake page, which relays them instantly to the real service and captures the resulting session. This is why codes (SMS or authenticator app) are called phishable, and why CISA promotes phishing-resistant methods such as FIDO passkeys and security keys, which bind sign-in to the genuine domain.",
+      "Modern phishing increasingly targets the second step of sign-in. **Adversary-in-the-middle** phishing kits stand between you and the real site: you type your password and one-time code into the fake page, which relays them instantly to the real service and captures the resulting session. This is why codes (SMS or authenticator app) are called phishable, and why CISA promotes phishing-resistant methods such as FIDO passkeys and security keys, which bind sign-in to the genuine domain.",
       "Other current patterns: **callback phishing** (an email with no link, only a phone number to call about a fake invoice); **QR codes** in emails, which move the link to a phone that may lack the work computer’s filtering; **HTML attachments** that render fake sign-in pages locally; and **business email compromise**, where a real but hijacked supplier or manager account asks for a change of bank details.",
       "Organizations reduce phishing with email authentication (SPF, DKIM and DMARC let receiving servers check whether a message really came from the domain it claims), link scanning, and training. But no filter is perfect, so the durable defenses are process-based: verify payment changes out of band, never share codes, and use sign-in methods that can’t be phished.",
       {tip:"A password manager that refuses to autofill is a strong hint you’re not on the site you think you are."}
@@ -1104,7 +1104,7 @@ ICA.addUnit({
       ]},
       "Payment methods are a strong signal. Requests for gift cards, cryptocurrency, wire transfers or payment-app transfers to strangers are favored by scammers because the money is hard to trace or recover.",
       {warn:"After a scam, beware of “recovery” services that contact you offering to get your money back for a fee. They’re frequently run by the same criminals."},
-      "Notice that every check in the table uses a channel the scammer didn’t choose: a number you already had, an official app, or a person you can reach directly. That’s the whole technique, and it works against scams that haven’t been invented yet."
+      "Notice that every check in the table uses a channel the scammer didn’t choose: a number you already had, an official app, or a person you can reach directly. This one technique works against scams that haven’t been invented yet."
      ],
      pro:[
       "Social engineering exploits well-studied features of human decision-making: deference to authority, reciprocity, commitment (small first steps lead to larger ones), social proof, liking, and scarcity. Under time pressure people fall back on fast, intuitive judgments, which is why scams manufacture urgency.",
@@ -1144,7 +1144,7 @@ ICA.addUnit({
      pro:[
       "Detection uses several layers. **Signatures** match known malware. **Heuristics and behavior monitoring** flag suspicious actions such as mass file encryption. **Reputation** systems (like Microsoft SmartScreen and Apple notarization) judge files and apps by who signed them and how widely they’re seen. On macOS, Gatekeeper checks code signing and notarization before first launch, and XProtect uses signatures that Apple updates automatically, with a remediation engine to remove known infections.",
       "Mobile systems rely heavily on **sandboxing** and store review: each app runs in its own space and must request permissions. Most mobile malware therefore arrives through sideloaded apps, abused permissions (such as accessibility services on Android) or social engineering. Google Play Protect scans apps from Play and from other sources, and may block installation of unverified apps that request sensitive permissions often abused in financial scams.",
-      "Infostealers are a major current problem: they copy browser session cookies, letting attackers skip passwords and two-step verification until the session expires. After an infection, sign out of all sessions and change passwords, not just remove the malware.",
+      "Infostealers are a major current problem: they copy browser session cookies, letting attackers skip passwords and two-step verification until the session expires. After an infection, sign out of all sessions and change passwords. Removing the malware alone is not enough.",
       {tip:"Running more than one real-time antivirus at once usually causes conflicts. On a home Windows PC, Microsoft Defender Antivirus switches itself off automatically when another antivirus product is registered."},
       "Stalkerware is a special case: it’s usually installed by someone with physical access, so look for unknown apps with device-administrator or accessibility access, and consider getting specialist support before removing it if your safety may be at risk."
      ]
@@ -1247,7 +1247,7 @@ ICA.addUnit({
       "When a site’s rules force you to add a symbol, add it at the end of your passphrase; the random words provide the strength."
      ],
      pro:[
-      "Password strength is best thought of as **guessing resistance** against a realistic attacker, not as a character-class checklist. For a truly random choice, the number of possibilities is the list size raised to the number of picks: four words from a 7,776-word dice list give 7,776⁴, about 3.7 × 10¹⁵ combinations (about 51.7 bits of entropy). Human-chosen passwords have far less entropy than their length suggests, which is why blocklists and length minimums work better than composition rules.",
+      "Password strength is best thought of as **guessing resistance** against a realistic attacker, not as a character-class checklist. For a random choice, the number of possibilities is the list size raised to the number of picks: four words from a 7,776-word dice list give 7,776⁴, about 3.7 × 10¹⁵ combinations (about 51.7 bits of entropy). Human-chosen passwords have far less entropy than their length suggests, which is why blocklists and length minimums work better than composition rules.",
       "SP 800-63B-4 also says verifiers should accept all printing ASCII characters and the space, should accept Unicode, must allow password managers and autofill, should allow paste, and must store passwords using a salted, deliberately slow hashing scheme. It forbids knowledge-based questions when choosing passwords and limits failed attempts to slow online guessing. Note the 15-character minimum applies to passwords used as a single factor; the standard pushes services toward MFA and phishing-resistant authenticators instead of ever-longer passwords.",
       "The **NCSC’s three random words** advice is aimed at memorability for the public; NIST’s is aimed at services. They agree on the essentials: length over complexity, no forced expiry, and unique passwords helped by a manager.",
       {tip:"If a site caps passwords at a short length or bans pasting, that’s a sign its sign-in design is outdated. Use the maximum it allows and turn on two-step verification."}
@@ -1446,7 +1446,7 @@ ICA.addUnit({
       "Choose the smallest access that works: **while using the app** rather than always, **approximate** location rather than precise, **selected photos** rather than all.",
       {key:"You can change your mind any time in Settings. Review permissions every few months."},
       "On computers, the same idea applies to camera, microphone, location and screen recording, which is why video-call apps ask for them the first time you use them.",
-      "If you’re unsure, deny. Most apps ask again when they genuinely need something."
+      "If you’re unsure, deny. Most apps ask again when they need something."
      ],
      builder:[
       {table:[
@@ -1466,7 +1466,7 @@ ICA.addUnit({
      pro:[
       "Mobile operating systems enforce permissions through **sandboxing**: each app runs in isolation and can reach protected resources only through system APIs that check its granted permissions. Runtime prompts, one-time grants, approximate location, limited photo access and auto-reset of unused permissions all exist to keep access minimal: the **principle of least privilege**.",
       "Permissions don’t cover everything. Apps can still collect what you type into them, and software development kits embedded in apps may share data with third parties. Platform privacy labels and data-safety sections in app stores summarize developer-declared practices, but they are self-reported.",
-      "Abuse cases worth knowing: stalkerware that uses accessibility and notification access to spy on a partner; banking-trojan apps on Android that request accessibility to read codes and overlay fake screens; and fake “security” or “cleaner” apps that demand broad access. Google Play Protect may block installation of unverified apps requesting sensitive permissions often abused in financial fraud.",
+      "Abuse cases: stalkerware that uses accessibility and notification access to spy on a partner; banking-trojan apps on Android that request accessibility to read codes and overlay fake screens; and fake “security” or “cleaner” apps that demand broad access. Google Play Protect may block installation of unverified apps requesting sensitive permissions often abused in financial fraud.",
       {tip:"If someone else has had your unlocked phone, check device administrator apps, accessibility services and unknown apps, and consider your platform’s safety check tools."},
       "On desktops, macOS requires explicit consent for screen recording, camera, microphone and access to protected folders, and Windows 11 lists apps that recently used location, camera and microphone in its privacy settings, which makes unexpected access easier to spot."
      ]
@@ -1629,7 +1629,7 @@ ICA.addUnit({
      {t:"Hardware that has stopped working", why:"Malware is software, not a hardware fault."}
    ]},
    {id:"t1u3-q06", lesson:"t1u3-l1", level:3, q:"Mei’s friend says: “I don’t need to bother with security because I don’t have anything worth stealing.” Which point best shows why that’s mistaken?", options:[
-     {t:"Automated attacks go after everyone’s accounts, including hers", ok:true, why:"Mass attacks aim at everyone, not just people who are personally targeted. Her email, contacts and payment card can be used to reset other accounts, scam contacts and spend money."},
+     {t:"Automated attacks go after everyone’s accounts, including hers", ok:true, why:"Mass attacks aim at everyone, so she does not need to be personally targeted. Her email, contacts and payment card can be used to reset other accounts, scam contacts and spend money."},
      {t:"Attackers only target famous people, so she’s right", why:"Most attacks are automated and aimed at huge numbers of ordinary people."},
      {t:"She needs security only if she uses a Windows computer at home", why:"Phishing, scams and leaked passwords affect users of every device."},
      {t:"Her antivirus will stop every kind of attack anyway", why:"Antivirus doesn’t stop phishing, scams or logins with leaked passwords."}

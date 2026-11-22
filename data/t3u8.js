@@ -34,7 +34,7 @@ ICA.addUnit({
       "R on its own (called [[base-r|base R]]) can already do almost anything with data. Over the years people have added thousands of [[r-package|packages]]: bundles of extra functions that anyone can install. The [[tidyverse-term|tidyverse]] is one well-known collection of them, designed by Hadley Wickham and others at Posit, the company behind RStudio.",
       "What makes it a family is a shared design:",
       {list:[
-        "**Data lives in tidy data frames**: one variable per column, one observation per row, one value per cell. These are the same rules you met for spreadsheets in {{tidy-data-principles|Unit 2}}.",
+        "**Data is kept in tidy data frames**: one variable per column, one observation per row, one value per cell. These are the same rules you met for spreadsheets in {{tidy-data-principles|Unit 2}}.",
         "**Functions are named like verbs**: `filter()`, `select()`, `arrange()`, `mutate()`, `summarize()`. You can often read code aloud as a sentence.",
         "**The data comes first**: the first argument of each function is a data frame, and the result is a new data frame. That’s what lets you chain steps together (Lesson 2)."
       ]},
@@ -84,7 +84,7 @@ ICA.addUnit({
       {h:"The base R way"},
       {code:"d <- read.csv(\"survey.csv\")\nsubset(d, age >= 30)\nd[d$age >= 30, ]\nsubset(d, group == \"A\" & hours >= 4)", lang:"r", label:"R · base R, runs in the Data Lab"},
       "`subset()` reads much like `filter()`. The square-bracket form `d[rows, columns]` is the most basic: the condition picks rows, and the empty space after the comma means “all columns”. Forgetting that comma is one of the most common R errors.",
-      {warn:"Missing values behave differently. If a value is `NA` (missing), `d[d$age > 30, ]` gives you a row full of NA, because R can’t say whether a missing age is over 30. `filter()` and `subset()` quietly drop those rows instead."},
+      {warn:"Missing values behave differently. If a value is `NA` (missing), `d[d$age > 30, ]` gives you a row full of NA, because R can’t say whether a missing age is over 30. `filter()` and `subset()` drop those rows instead."},
       {code:"df <- data.frame(\n  name = c(\"Ana\", \"Tomás\", \"Mei\"),\n  age = c(34, NA, 27)\n)\ndf[df$age > 30, ]\nsubset(df, age > 30)", lang:"r", label:"R · base R, runs in the Data Lab"},
       {code:"   name age\n1   Ana  34\nNA <NA>  NA\n  name age\n1  Ana  34", lang:"txt", label:"What R prints"},
       {lab:"dl-r-subset", t:"Practice: pick the rows of people aged 30 or over with subset() or [ ]"}
@@ -238,7 +238,7 @@ ICA.addUnit({
     {id:"t3u8-l2-x1", type:"mcq", q:"Priya runs `survey2 <- mutate(survey, hours = hours * 60)`. What does `survey2` contain?", options:[
       {t:"The same columns, but `hours` now holds minutes (hours × 60)", ok:true, why:"Right. Reusing an existing column name replaces that column. No new column is added and no warning is given."},
       {t:"A new seventh column called `hours` next to the old one", why:"A data frame can’t hold two columns with the same name this way; mutate() overwrites the existing one."},
-      {t:"An error, because hours already exists", why:"No error: replacing a column is allowed, which is why it’s worth choosing a new name unless you mean to overwrite."},
+      {t:"An error, because hours already exists", why:"No error: replacing a column is allowed, which is why you should choose a new name unless you mean to overwrite."},
       {t:"The original survey is changed too", why:"mutate() returns a new tibble; `survey` itself stays the same. Only `survey2` has the change."}
     ]},
     {id:"t3u8-l2-x2", type:"number", q:"Person 7 studies 7 hours a week. In `mutate(survey, hours_year = hours * 52, hours_day = hours_year / 365)`, what is their `hours_day`? (Two decimal places.)", answer:1.00, tol:0.006, unit:"hours per day", why:"hours_year = 7 × 52 = 364. hours_day = 364 ÷ 365 = 0.997…, which is 1.00 to two decimal places. Inside one mutate(), the second column can use the first.", wrongs:[{v:364, tol:0.5, why:"That’s hours_year, the first new column. hours_day divides it by 365."},{v:0.02, tol:0.006, why:"That’s 7 ÷ 365: weekly hours divided by days in a year, skipping the × 52 step."},{v:7, tol:0.01, why:"That’s the weekly hours you started with."}]},
@@ -614,7 +614,7 @@ ICA.addUnit({
       {t:"Switch the format from html to pdf", why:"The format only affects the final conversion; the R code fails before that."},
       {t:"Replace the code chunk with the numbers typed by hand", why:"That would “work” but loses reproducibility, which is the point of the report."}
     ]},
-    {id:"t3u8-l5-x7", type:"explain", q:"Explain why writing a report in Quarto, with inline code such as `r nrow(survey)`, is more reproducible than copying numbers and charts from R into a word-processor document.", model:"When numbers and charts are copied by hand, one change to the data leaves nobody sure which figures are current. In Quarto, text, code and results live in one `.qmd` file. Rendering runs every chunk from top to bottom in a fresh session. So the file must load its own packages and read its own data. Inline code puts computed values straight into sentences. Change the data and render again, and every number and chart updates. Reproducible doesn’t mean correct, but every number can be traced to its code.", points:["Says copied numbers can go out of date without anyone noticing", "Says Quarto keeps text, code and results in one file", "Explains that rendering reruns everything from a fresh session", "Says inline code and charts update automatically when the data change"]}
+    {id:"t3u8-l5-x7", type:"explain", q:"Explain why writing a report in Quarto, with inline code such as `r nrow(survey)`, is more reproducible than copying numbers and charts from R into a word-processor document.", model:"When numbers and charts are copied by hand, one change to the data leaves nobody sure which figures are current. In Quarto, text, code and results are in one `.qmd` file. Rendering runs every chunk from top to bottom in a fresh session. So the file must load its own packages and read its own data. Inline code puts computed values straight into sentences. Change the data and render again, and every number and chart updates. Reproducible doesn’t mean correct, but every number can be traced to its code.", points:["Says copied numbers can go out of date without anyone noticing", "Says Quarto keeps text, code and results in one file", "Explains that rendering reruns everything from a fresh session", "Says inline code and charts update automatically when the data change"]}
    ],
    apply:{intro:"Polish one chart and outline a report. The ggplot2 and Quarto steps need a computer or Posit Cloud; the planning task works on any device.", tasks:[
      {t:"Polish and save a chart (computer or Posit Cloud)", how:["Take your scatterplot from Lesson 4 and add labs() with a title that states the point, axis labels with units, a caption and alt text","Add `scale_color_viridis_d(end = 0.8)` and `theme_minimal(base_size = 14)`","Save it with `ggsave(\"scores.png\", plot = p, width = 16, height = 10, units = \"cm\", dpi = 300)` and open the file"]},
@@ -665,12 +665,12 @@ ICA.addUnit({
       "Code can pass a tidy test and still fail on real data, often as a [[silent-failure|silent failure]]: no error, wrong answer. After each step, check rows (`nrow()`), missing values (`colSums(is.na(d))`) and ranges (`range()`). Suppose person 5 left their score blank. (Nobody did in the Data Lab’s file, so the second line below makes that blank.)",
       {code:"d <- read.csv(\"survey.csv\")\nd$score[d$id == 5] <- NA   # person 5’s score is blank\nnrow(d)\ncolSums(is.na(d))\nmean(d$score)\nmean(d$score, na.omit = TRUE)\nmean(d$score, na.rm = TRUE)", lang:"r", label:"R · base R, runs in the Data Lab"},
       {code:"[1] 12\n    id  group    age  hours  score answer \n     0      0      0      0      1      0 \n[1] NA\n[1] NA\n[1] 67.54545", lang:"txt", label:"What R prints"},
-      "In a real file, `read.csv()` turns a blank number into `NA`, and `mean()` honestly returns NA. But `na.omit = TRUE`, a plausible argument an assistant might write, is **silently ignored**: `mean()` accepts extra arguments without complaint. Only `na.rm = TRUE` drops missing values, and then the mean is of 11 people, not 12. Say so in your report.",
+      "In a real file, `read.csv()` turns a blank number into `NA`, and `mean()` returns NA. But `na.omit = TRUE`, a plausible argument an assistant might write, is **silently ignored**: `mean()` accepts extra arguments without complaint. Only `na.rm = TRUE` drops missing values, and then the mean is of 11 people, not 12. Say so in your report.",
       "Joins are the other big trap. Kenji asks for each person’s age next to their visits, then the mean age:",
       {code:"people <- data.frame(id = 1:4, age = c(24, 31, 45, 29))\nvisits <- data.frame(id = c(1, 1, 2, 3, 3, 3),\n  minutes = c(20, 35, 50, 15, 25, 40))\nm <- merge(people, visits, by = \"id\")\nnrow(m)\nmean(m$age)\nmean(people$age)", lang:"r", label:"R · base R, runs in the Data Lab"},
       {code:"[1] 6\n[1] 35.66667\n[1] 32.25", lang:"txt", label:"What R prints"},
       "Four people became six rows, because person 1 has two visits and person 3 has three. Person 4, with no visits, vanished: by default `merge()` keeps only matching rows (an inner join, as in {{sql-joins|Unit 10}}; `all.x = TRUE` keeps everyone). The “mean age” of 35.7 counts person 1 twice and person 3 three times, and leaves out person 4. The true mean, 32.25, comes from `people`.",
-      "Then **read every line** and say what it does. Look up anything you can’t explain with `?function`. Be suspicious of lines you didn’t ask for: an extra filter, a number typed in (`n <- 12`), `suppressWarnings()`, or `na.rm = TRUE` added quietly.",
+      "Then **read every line** and say what it does. Look up anything you can’t explain with `?function`. Be suspicious of lines you didn’t ask for: an extra filter, a number typed in (`n <- 12`), `suppressWarnings()`, or `na.rm = TRUE` added without notice.",
       {h:"The same checks in Python"},
       "Assistants often translate code between languages, and defaults differ. In pandas, a widely used Python package for tables, `mean()` **skips** missing values unless told otherwise. So R code and its Python translation can disagree with no error at all:",
       {code:"import pandas as pd\ndf = pd.read_csv(\"survey.csv\")   # person 5’s score blank\nprint(len(df), df[\"score\"].isna().sum())\nprint(df[\"score\"].mean())\nprint(df[\"score\"].mean(skipna=False))\nprint(df.groupby(\"group\")[\"score\"]\n        .agg([\"mean\", \"count\", \"size\"]))", lang:"py", label:"Python with pandas · computer"},
@@ -742,7 +742,7 @@ ICA.addUnit({
     {id:"t3u8-l6-x3", type:"spot", q:"Ravi asked an assistant for the mean score of group A, from a file where one score is blank. Tap the lines that are problems.", ask:"is a problem", mono:true, parts:[
       {t:"d <- read.csv(\"survey.csv\")", flag:false, why:"Reads the file; the blank score becomes NA. Fine."},
       "\n",
-      {t:"d <- d[d$score > 50, ]", flag:true, why:"Nobody asked for this filter. It quietly drops everyone scoring 50 or less, and the blank score’s NA condition adds a row of NAs."},
+      {t:"d <- d[d$score > 50, ]", flag:true, why:"Nobody asked for this filter. It drops everyone scoring 50 or less, and the blank score’s NA condition adds a row of NAs."},
       "\n",
       "a <- ",
       {t:"d[d$group == \"A\", ]", flag:false, why:"Keeps group A’s rows with all columns: what was asked."},
@@ -1017,7 +1017,7 @@ ICA.addUnit({
     },
     "Conditions in `filter()`: `==` equals (one `=` is an error dplyr detects), `!=` not equal, `>`, `>=`, `<`, `<=`; a comma or `&` means and; `|` means or; `%in%` means “is one of”. A common mistake is `x == \"a\" | \"b\"`, which doesn’t compare x with \"b\"; write `x %in% c(\"a\", \"b\")`.",
     "`select()` accepts names, ranges (`age:score`), minus signs (`-answer`) and helpers (`starts_with()`, `ends_with()`, `contains()`). `arrange()` sorts smallest first; `desc()` reverses; extra columns break ties. `mutate()` can use a column created earlier in the same call, and reusing a name overwrites that column. For two outcomes use `if_else()`; for several, `case_when()`, whose conditions are checked in order (first TRUE wins).",
-    "Other verbs worth knowing: `distinct()` (unique rows), `rename()`, `relocate()`, `slice_max()` / `slice_min()` (rows with the largest or smallest values) and `count()`.",
+    "Other useful verbs: `distinct()` (unique rows), `rename()`, `relocate()`, `slice_max()` / `slice_min()` (rows with the largest or smallest values) and `count()`.",
     "Every verb returns a **new** data frame and leaves the input unchanged, so `arrange(d, score)` on its own only prints a sorted copy. Store results with `<-`, either under a new name (`older <- filter(d, age >= 30)`) or, once you’re sure, over the old one. In a script, keeping the raw data under its own name and building new objects from it makes every step easy to rerun and check. Because the data is always the first argument, the verbs chain naturally with the pipe: `d |> filter(age >= 30) |> arrange(desc(score))`."
    ],
    "pro": [
@@ -1259,7 +1259,7 @@ ICA.addUnit({
   "summary": "Move a table between wide (a column per time or category) and long (a row per measurement) without changing any values.",
   "levels": {
    "starter": [
-    "The same numbers can sit in a table two ways. **Wide**: one row per person, with a column for each week. **Long**: one row per person per week, with a `week` column and a `km` column.",
+    "The same numbers can be laid out in a table in two ways. **Wide**: one row per person, with a column for each week. **Long**: one row per person per week, with a `week` column and a `km` column.",
     "Wide is easy to read at a glance. Long is what analysis and chart tools want, because “week” is a variable and belongs in its own column.",
     "In R, the tidyr package moves between them. `pivot_longer()` stacks several columns into rows; `pivot_wider()` spreads rows back out into columns. Nothing is added or lost: 3 people × 3 weeks is 9 numbers either way, in 3 wide rows or 9 long ones.",
     "Base R has `reshape()` for the same job, which also works in the Data Lab, but its arguments are harder to remember."
@@ -1480,7 +1480,7 @@ ICA.addUnit({
     "In RStudio, **File → New File → Quarto Document…** creates a starter file, and **Render** (Ctrl/Cmd + Shift + K) builds it. RStudio offers a Visual editor (a word-processor view) and a Source editor (the plain text); both edit the same file. Older projects use R Markdown (`.Rmd` files, rendered with the rmarkdown package), which has the same three parts and mostly the same chunk options; Quarto can render most `.Rmd` files unchanged."
    ],
    "pro": [
-    "Quarto is a command-line program (`quarto render report.qmd`, `quarto preview`), not an R package, so its help lives at quarto.org rather than in `?`. RStudio 2022.07 and later bundle it; the `quarto` R package can call it from R (`quarto::quarto_render()`). It also supports Python and Julia (via Jupyter) and projects such as websites and books (*R for Data Science* itself is a Quarto book).",
+    "Quarto is a command-line program (`quarto render report.qmd`, `quarto preview`), not an R package, so its help is at quarto.org rather than in `?`. RStudio 2022.07 and later bundle it; the `quarto` R package can call it from R (`quarto::quarto_render()`). It also supports Python and Julia (via Jupyter) and projects such as websites and books (*R for Data Science* itself is a Quarto book).",
     "Reproducibility habits beyond the document: keep raw data unchanged and read it with relative paths inside a project folder; set seeds for randomness; record versions (`sessionInfo()`, or renv to lock package versions); keep the project under version control; and render from a clean session before sharing. `cache: true` speeds up slow chunks but can hide stale results when upstream data changes, so clear the cache before a final render.",
     "**Parameters** in the YAML (`params:`) let one report render for different inputs (a region, a year). Cross-references (`@fig-scores` for a chunk labeled `fig-scores`) and citations (a `bibliography:` file and `[@key]`) work across formats.",
     "Reproducible is not the same as correct, or as *replicable* (getting consistent results from new data). It’s the floor: it makes errors traceable and lets others check your work."
@@ -1527,7 +1527,7 @@ ICA.addUnit({
     {h:"A routine for AI-written code"},
     {ol:["**Read every line** and say what it does. Look up anything you can’t explain; question lines you didn’t ask for (an extra filter, a typed-in number, `suppressWarnings()`).","**Run a known case**: a few rows whose answer you worked out by hand, including a missing value and unequal groups.","**Run the real data** and check `nrow()`, `colSums(is.na(d))` and `range()` after each step.","**Cross-check** key numbers another way (a second function, a pivot table, a hand count).","**Record and disclose**: prompt, reply, final code, tool and software versions, date."]},
     {h:"Statistics"},
-    {list:["**Numbers with no code** are guesses until recomputed. Check that shares add up, counts match rows, and means sit inside the data’s range.","**Tests**: the assistant can’t see the design. Paired data need a paired test; chi-square needs counts, not percentages; groups of different sizes need care.","**p-values**: p is not the chance a hypothesis is true, a large p doesn’t prove “no effect”, and significance isn’t size.","**Citations**: find and open every source outside the chatbot."]},
+    {list:["**Numbers with no code** are guesses until recomputed. Check that shares add up, counts match rows, and means are inside the data’s range.","**Tests**: the assistant can’t see the design. Paired data need a paired test; chi-square needs counts, not percentages; groups of different sizes need care.","**p-values**: p is not the chance a hypothesis is true, a large p doesn’t prove “no effect”, and significance isn’t size.","**Citations**: find and open every source outside the chatbot."]},
     {h:"Charts"},
     "Check what each mark shows (`geom_col()` on raw rows stacks them into totals), where a bar chart’s axis starts (zero), and whether colors suit the data and readers with color vision deficiency."
    ],
@@ -1706,7 +1706,7 @@ ICA.addUnit({
  },
  {id:"known-case-test", term:"known-case test", def:"Running code on a tiny dataset whose correct answer you worked out by hand first, to see whether the code gets it right.", codex:"known-case-testing"},
  {id:"sanity-check", term:"sanity check", def:"A quick test of whether a result is even possible: shares that add up to 1, a mean inside the data’s range, a row count you expected.", codex:"known-case-testing"},
- {id:"silent-failure", term:"silent failure", def:"Code that runs with no error or warning but gives a wrong result, such as `mean(x, na.omit = TRUE)`, where R quietly ignores the wrong argument name.", codex:"known-case-testing"},
+ {id:"silent-failure", term:"silent failure", def:"Code that runs with no error or warning but gives a wrong result, such as `mean(x, na.omit = TRUE)`, where R ignores the wrong argument name.", codex:"known-case-testing"},
  {id:"ai-log", term:"AI log", def:"A dated record of how you used an AI tool in a piece of work: the tool and version, your prompts, its replies, what you changed and how you checked it.", codex:"checking-ai-data-work"}
 ],
   bank:[
@@ -2752,7 +2752,7 @@ ICA.addUnit({
    },
    {
     "t": "Creates a new chunk",
-    "why": "Inline code lives inside the sentence."
+    "why": "Inline code is inside the sentence."
    },
    {
     "t": "Only works when the report is rendered to PDF",
@@ -2843,7 +2843,7 @@ ICA.addUnit({
  {id:"t3u8-q47", lesson:"t3u8-l6", level:1, q:"What does `mean(x, na.omit = TRUE)` return in R when x contains an NA?", options:[
    {t:"The mean of the values that aren’t missing", why:"That needs `na.rm = TRUE`. `na.omit` isn’t an argument of mean(), so it changes nothing."},
    {t:"An error saying na.omit is not an argument", why:"mean() passes unknown arguments to `...` without complaint, so there’s no error. That’s what makes it a silent failure."},
-   {t:"NA: the unknown argument is ignored", ok:true, why:"R quietly ignores `na.omit = TRUE`, and one missing value makes the mean NA. The right argument is `na.rm = TRUE`."},
+   {t:"NA: the unknown argument is ignored", ok:true, why:"R ignores `na.omit = TRUE`, and one missing value makes the mean NA. The right argument is `na.rm = TRUE`."},
    {t:"Zero, because missing values count as 0", why:"R never treats NA as 0. A missing value makes the plain mean NA."}]},
  {id:"t3u8-q48", lesson:"t3u8-l6", level:3, q:"After an AI-written `merge(people, visits, by = \"id\")`, Lucía’s 50 people have become 140 rows, and 6 people are missing. What explains both?", options:[
    {t:"merge() sorts the rows and copies the last one", why:"merge() doesn’t copy rows at random. The extra rows come from people with several visits."},
@@ -2854,7 +2854,7 @@ ICA.addUnit({
    {t:"Nothing: both return NA until missing values are removed", why:"pandas’ mean() has `skipna=True` by default, so it skips the missing value and returns a number."},
    {t:"Nothing: both skip the missing value and average the rest", why:"R’s mean() doesn’t skip NAs unless you add `na.rm = TRUE`; it returns NA."},
    {t:"R returns NA; pandas skips the NA and returns a number", ok:true, why:"The defaults differ: R’s mean() returns NA, pandas skips missing values (`skipna=True`). A translation can change the result without any error."},
-   {t:"pandas stops with an error that names the missing row", why:"pandas raises no error here; it quietly skips the missing value. That’s why you check with `df.isna().sum()`."}]},
+   {t:"pandas stops with an error that names the missing row", why:"pandas raises no error here; it skips the missing value. That’s why you check with `df.isna().sum()`."}]},
  {id:"t3u8-q50", lesson:"t3u8-l6", level:2, q:"Fatima has quiz scores for the same 20 students before and after a workshop. An assistant runs `t.test(after, before)`. What should she change?", options:[
    {t:"Add `paired = TRUE`, because each pair is one student", ok:true, why:"Each before score and after score belong to the same student. A paired test looks at each student’s change, which the unpaired test ignores."},
    {t:"Nothing: R’s default t-test suits every comparison", why:"R’s default is a Welch test for two independent groups. These scores aren’t independent: they come in pairs."},

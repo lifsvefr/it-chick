@@ -41,9 +41,9 @@ ICA.addUnit({
           ["**Storage**","Keeping information for later, even when the power is off","[[ssd|SSD]], [[hdd|hard disk drive]], memory card, USB stick"],
           ["**Output**","Information going **out** to you or another device","Screen, speakers, headphones, printer, vibration motor"]
         ]},
-        {fig:'<svg viewBox="0 0 340 250"><defs><marker id="t1u1-l1-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="9.4" y="12" width="170" height="54" rx="10" stroke-width="2"/><text x="94.4" y="35" text-anchor="middle">Input</text><text class="s" x="94.4" y="54" text-anchor="middle">keyboard, mic, camera</text><path class="d-ink" d="M94.4,67 L94.4,94" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><rect class="d-rose" x="9.4" y="98" width="170" height="54" rx="10" stroke-width="2"/><text x="94.4" y="121" text-anchor="middle">Processing</text><text class="s" x="94.4" y="140" text-anchor="middle">CPU follows the program</text><path class="d-ink" d="M94.4,153 L94.4,180" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><rect class="d-sage" x="9.4" y="184" width="170" height="54" rx="10" stroke-width="2"/><text x="94.4" y="207" text-anchor="middle">Output</text><text class="s" x="94.4" y="226" text-anchor="middle">screen, speaker, printer</text><rect class="d-gold" x="222.9" y="80" width="107.7" height="90" rx="10" stroke-width="2"/><text x="276.7" y="106" text-anchor="middle">Storage</text><text class="s" x="276.7" y="128" text-anchor="middle">keeps files</text><text class="s" x="276.7" y="144" text-anchor="middle">with the</text><text class="s" x="276.7" y="160" text-anchor="middle">power off</text><path class="d-ink" d="M181.3,114 L219.1,114" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><path class="d-ink" d="M221,136 L183.2,136" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><text class="s" x="201.2" y="106" text-anchor="middle">save</text><text class="s" x="201.2" y="154" text-anchor="middle">open</text></svg>', alt:"Diagram: Input flows down into Processing, and Processing flows down to Output. Beside Processing sits Storage: Processing saves to Storage and opens from Storage, shown by two arrows in opposite directions.", cap:"The four jobs. Processing sits in the middle: it takes input, saves to and opens from storage, and sends results to output."},
+        {fig:'<svg viewBox="0 0 340 250"><defs><marker id="t1u1-l1-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="9.4" y="12" width="170" height="54" rx="10" stroke-width="2"/><text x="94.4" y="35" text-anchor="middle">Input</text><text class="s" x="94.4" y="54" text-anchor="middle">keyboard, mic, camera</text><path class="d-ink" d="M94.4,67 L94.4,94" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><rect class="d-rose" x="9.4" y="98" width="170" height="54" rx="10" stroke-width="2"/><text x="94.4" y="121" text-anchor="middle">Processing</text><text class="s" x="94.4" y="140" text-anchor="middle">CPU follows the program</text><path class="d-ink" d="M94.4,153 L94.4,180" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><rect class="d-sage" x="9.4" y="184" width="170" height="54" rx="10" stroke-width="2"/><text x="94.4" y="207" text-anchor="middle">Output</text><text class="s" x="94.4" y="226" text-anchor="middle">screen, speaker, printer</text><rect class="d-gold" x="222.9" y="80" width="107.7" height="90" rx="10" stroke-width="2"/><text x="276.7" y="106" text-anchor="middle">Storage</text><text class="s" x="276.7" y="128" text-anchor="middle">keeps files</text><text class="s" x="276.7" y="144" text-anchor="middle">with the</text><text class="s" x="276.7" y="160" text-anchor="middle">power off</text><path class="d-ink" d="M181.3,114 L219.1,114" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><path class="d-ink" d="M221,136 L183.2,136" stroke-width="2" marker-end="url(#t1u1-l1-mk)"/><text class="s" x="201.2" y="106" text-anchor="middle">save</text><text class="s" x="201.2" y="154" text-anchor="middle">open</text></svg>', alt:"Diagram: Input flows down into Processing, and Processing flows down to Output. Beside Processing sits Storage: Processing saves to Storage and opens from Storage, shown by two arrows in opposite directions.", cap:"The four jobs. Processing is in the middle: it takes input, saves to and opens from storage, and sends results to output."},
         {ex:"Amara takes a photo of a receipt for her small business.\n**Input:** the camera sensor captures light; her tap on the shutter button is input too.\n**Processing:** the phone’s processor turns the sensor readings into an image, sharpens it and shrinks it into a JPEG file.\n**Storage:** the photo is saved to the phone’s storage, so it is still there tomorrow.\n**Output:** the photo appears on the screen; later she sends it by email, which is output to another computer.", label:"Worked example"},
-        "Some parts do two jobs. A **touchscreen** is both input (it senses your finger) and output (it shows the picture). A **network connection** is both: messages come in and go out. That is normal; the four jobs describe what is happening, not which box a part lives in."
+        "Some parts do two jobs. A **touchscreen** is both input (it senses your finger) and output (it shows the picture). A **network connection** is both: messages come in and go out. That is normal; the four jobs describe what is happening, not which box a part is in."
       ]},
       {h:"Hardware and software", body:[
         "[[hardware|Hardware]] is every physical part you could, in principle, touch: the screen, the keyboard, the chips, the battery, the cables. [[software|Software]] is the instructions: programs and the data they use. You cannot touch software, but you can see its effects.",
@@ -61,7 +61,7 @@ ICA.addUnit({
       {h:"Many kinds of computers", body:[
         "When people say “computer” they often picture a desktop or laptop. In fact you probably use a dozen computers every day. Anything with a processor running a program counts.",
         {table:[
-          ["Kind","Typical input","Typical output","Worth knowing"],
+          ["Kind","Typical input","Typical output","Notes"],
           ["Phone","Touchscreen, mic, cameras, GPS","Screen, speaker, vibration","A full computer in your pocket, often more powerful than older laptops"],
           ["Tablet","Touchscreen, stylus, keyboard cover","Screen, speakers","Between a phone and a laptop; runs phone-style apps"],
           ["Laptop / desktop","Keyboard, mouse or trackpad, webcam","Screen, speakers, printer","Best for long typing, big spreadsheets, many windows"],
@@ -71,7 +71,7 @@ ICA.addUnit({
           ["Wi-Fi router","Network traffic","Network traffic","A computer with no screen; has firmware that needs updates"],
           ["Server","Requests from other computers","Web pages, email, files","Serves other computers over a network, usually in a data center"]
         ]},
-        "Small computers built into other products (a washing machine, a thermostat, a car’s braking system) are called **embedded** computers. You rarely see them, but they follow the same four jobs. The practical lesson: anything that runs software can have bugs, needs updates, and can be a security risk. That is why Unit 3 talks about routers and smart devices, not just laptops."
+        "Small computers built into other products (a washing machine, a thermostat, a car’s braking system) are called **embedded** computers. You rarely see them, but they follow the same four jobs. The practical lesson: anything that runs software can have bugs, needs updates, and can be a security risk. That is why Unit 3 talks about routers and smart devices as well as laptops."
       ]},
       {h:"Servers, data centers and what “the cloud” physically is", body:[
         "A [[server]] is a computer whose job is to serve other computers. When you open a website, your phone (the **client**) sends a request across the internet, and a server somewhere sends back the page. Servers usually have no screen or keyboard of their own. Thousands of them are stacked in racks inside large buildings called **data centers**, with powerful cooling, backup power and fast network links.",
@@ -79,7 +79,7 @@ ICA.addUnit({
         {tip:"Cloud storage is useful (your files survive if your phone is lost) but it is not magic. It depends on your internet connection, your account, and the provider. Unit 2 covers cloud storage, syncing and backups properly."}
       ]},
       {h:"Why this model matters in real life", body:[
-        "The four-jobs model is not just theory. It is the first question a good technician asks. Look at these everyday problems through it:",
+        "The four-jobs model is practical. It is the first question a good technician asks. Look at these everyday problems through it:",
         {list:[
           "**Kenji’s keyboard types nothing.** An input problem: check the cable or Bluetooth connection and the battery before anything else.",
           "**Priya’s phone says “Storage almost full” and can’t take photos.** A storage problem: the camera and processor are fine; there is simply no room to save.",
@@ -89,7 +89,7 @@ ICA.addUnit({
         "A few misconceptions to drop now:",
         {list:[
           "“The internet is inside my computer.” The internet is a network connecting computers; your device sends and receives data over it.",
-          "“My files live inside the app.” Apps open and save files, but the files are kept in storage (on your device or on a server). Delete the app and the files may or may not survive, depending on where they were stored.",
+          "“My files are inside the app.” Apps open and save files, but the files are kept in storage (on your device or on a server). Delete the app and the files may or may not survive, depending on where they were stored.",
           "“Phones aren’t real computers.” A modern phone has a processor, working memory, storage, an operating system and apps: every part this unit describes."
         ]},
         {key:"When something goes wrong, ask which job is failing: input, processing, storage or output. The answer tells you where to look first."}
@@ -131,7 +131,7 @@ ICA.addUnit({
       {id:"t1u1-l1-x5", type:"mcq", q:"Lucía taps “Back up photos to the cloud”. Physically, where do her photos end up?", options:[
         {t:"On storage drives in servers in the provider’s data centers", ok:true, why:"The cloud is other organizations’ computers that you reach over the internet. Her photos are real files on real drives."},
         {t:"Floating in the internet itself, not on any particular machine", why:"Data always has to be stored on some physical hardware. The internet only carries data between computers."},
-        {t:"In a satellite orbiting the Earth", why:"Satellites can carry internet signals in some places. But cloud storage lives in ground-based data centers."},
+        {t:"In a satellite orbiting the Earth", why:"Satellites can carry internet signals in some places. But cloud storage is in ground-based data centers."},
         {t:"Only on her phone, with a link to it saved online", why:"That would not protect her photos if the phone were lost. A cloud backup copies the files onto the provider’s servers."}
       ]},
       {id:"t1u1-l1-x6", type:"match", q:"Match each problem to the job that is most likely failing.", pairs:[
@@ -164,7 +164,7 @@ ICA.addUnit({
   /* ================= LESSON 2 ================= */
   {
     id:"t1u1-l2", title:"Inside the machine", minutes:55,
-    hook:{q:"A laptop slows to a crawl with a video call and twenty browser tabs open. Which part is most likely overloaded?", options:["Its storage drive is too full","Its RAM, the working memory","Its screen","Its battery"], answer:1, reveal:"Most likely the **RAM**. Everything you have open right now sits in RAM, like ingredients on a cook’s countertop. Twenty tabs plus a video call fill the counter, and the computer starts juggling. Closing tabs usually helps more than deleting files."},
+    hook:{q:"A laptop slows to a crawl with a video call and twenty browser tabs open. Which part is most likely overloaded?", options:["Its storage drive is too full","Its RAM, the working memory","Its screen","Its battery"], answer:1, reveal:"Most likely the **RAM**. Everything you have open right now is in RAM, like ingredients on a cook’s countertop. Twenty tabs plus a video call fill the counter, and the computer starts juggling. Closing tabs usually helps more than deleting files."},
     goals:[
       "Explain what the CPU, RAM, storage and GPU each do, in plain words",
       "Tell memory (RAM) from storage and use the words correctly",
@@ -185,9 +185,9 @@ ICA.addUnit({
         "In phones, tablets and many laptops, the CPU is part of a single chip that also contains the graphics processor and other parts. This is called a [[system-on-chip|system on a chip (SoC)]]. The idea is the same: there are still cores carrying out the instructions."
       ]},
       {h:"Memory (RAM) vs storage: the most common confusion", body:[
-        "This is the mix-up that trips up almost everyone, including some salesclerks, so it is worth getting perfectly clear.",
+        "This is the mix-up that trips up almost everyone, including some salesclerks, so it helps to get it perfectly clear.",
         {list:[
-          "[[ram|RAM]] (random-access memory) is the **countertop** where the cook works. Whatever you have open right now (apps, browser tabs, the document you are typing) sits in RAM so the CPU can reach it instantly. RAM is very fast but **volatile**: it empties when the power goes off.",
+          "[[ram|RAM]] (random-access memory) is the **countertop** where the cook works. Whatever you have open right now (apps, browser tabs, the document you are typing) is in RAM so the CPU can reach it instantly. RAM is very fast but **volatile**: it empties when the power goes off.",
           "[[storage|Storage]] is the **pantry and fridge**. It keeps your files, apps and the operating system permanently, even with the power off. It is much bigger than RAM but slower."
         ]},
         {fig:'<svg viewBox="0 0 340 380"><defs><marker id="t1u1-l2-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="18.9" y="14" width="170" height="60" rx="10" stroke-width="2"/><text x="103.9" y="40" text-anchor="middle">CPU</text><text class="s" x="103.9" y="60" text-anchor="middle">does the work</text><path class="d-ink" d="M85,76 L85,110" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><path class="d-ink" d="M122.8,110 L122.8,76" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><rect class="d-lup" x="18.9" y="114" width="170" height="76" rx="10" stroke-width="2"/><text x="103.9" y="138" text-anchor="middle">RAM</text><text class="s" x="103.9" y="157" text-anchor="middle">what’s open now</text><text class="s" x="103.9" y="175" text-anchor="middle">empties at power-off</text><path class="d-ink" d="M85,192 L85,226" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><path class="d-ink" d="M122.8,226 L122.8,192" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><text class="s" x="75.6" y="213" text-anchor="end">save</text><text class="s" x="132.2" y="213">open</text><rect class="d-gold" x="18.9" y="230" width="170" height="76" rx="10" stroke-width="2"/><text x="103.9" y="254" text-anchor="middle">Storage</text><text class="s" x="103.9" y="273" text-anchor="middle">SSD or HDD</text><text class="s" x="103.9" y="291" text-anchor="middle">keeps files, no power</text><path class="d-ink" d="M226.7,26 L226.7,294" stroke-width="2" marker-start="url(#t1u1-l2-mk)" marker-end="url(#t1u1-l2-mk)"/><text x="238" y="40">faster,</text><text x="238" y="58">smaller</text><text x="238" y="268">bigger,</text><text x="238" y="286">slower</text><rect class="d-panel" x="9.4" y="320" width="321.1" height="50" rx="8" stroke-width="1"/><text class="s" x="170" y="341" text-anchor="middle">Open a file: storage → RAM → CPU.</text><text class="s" x="170" y="359" text-anchor="middle">Save: RAM → storage.</text></svg>', alt:"Diagram: CPU, RAM and Storage stacked from top to bottom, with two-way arrows between CPU and RAM, and between RAM and Storage. Opening a file copies it from storage into RAM for the CPU; saving copies it from RAM back to storage. A side arrow shows that toward the CPU things are faster and smaller; toward storage they are bigger and slower, and storage keeps files without power.", cap:"When you open a file it is copied from storage into RAM, where the CPU works on it. Saving copies your changes back to storage."},
@@ -250,7 +250,7 @@ ICA.addUnit({
           "**Check the operating system first.** It decides which apps you can run. If your course, workplace or favorite app needs a specific one, that settles it.",
           "**RAM:** more RAM lets you keep more open at once. If you use many browser tabs plus a video call, extra RAM is often what you notice most. Check the recommended (not minimum) requirements of the software you rely on.",
           "**Storage type and size:** prefer an SSD (or flash storage) to a hard disk for the main drive. Leave room for growth: the operating system and its updates take a large share, and phones and many laptops can’t be upgraded later.",
-          "**Processor:** for everyday tasks almost any current processor is fine. Compare model generations, not just GHz.",
+          "**Processor:** for everyday tasks almost any current processor is fine. Compare model generations as well as GHz.",
           "**Ports:** make sure you can plug in what you already own (monitor, USB stick, headset) without a bag of adapters.",
           "**Battery, screen, weight:** battery figures are the maker’s best case; real use is usually shorter. Read independent reviews.",
           "**Updates:** check how long the maker promises security updates. A cheap device that stops getting updates soon is a security risk (Unit 3)."
@@ -268,7 +268,7 @@ ICA.addUnit({
       {id:"t1u1-l2-x2", type:"sort", q:"Does each statement describe RAM or storage?", buckets:["RAM","Storage"], items:[
         {t:"Empties when the power goes off", b:0, why:"RAM is volatile: it needs power to hold data."},
         {t:"Still has your photos after a restart", b:1, why:"Storage keeps data without power."},
-        {t:"Holds the apps and tabs you have open right now", b:0, why:"Open work sits in RAM so the processor can reach it fast."},
+        {t:"Holds the apps and tabs you have open right now", b:0, why:"Open work is in RAM so the processor can reach it fast."},
         {t:"Where the operating system is installed", b:1, why:"The OS is kept on the storage drive and loaded into RAM when the device starts."},
         {t:"Running short makes the device slow when many things are open", b:0, why:"Too little RAM forces the system to juggle, which feels slow."},
         {t:"Running short gives “can’t install update” messages", b:1, why:"Updates need free space on the storage drive."}
@@ -384,7 +384,7 @@ ICA.addUnit({
           ["[[gibibyte]]","GiB","1,073,741,824","7.4% more than 1 GB"],
           ["tebibyte","TiB","1,099,511,627,776","10% more than 1 TB"]
         ]},
-        "The trouble is that not every system uses the new names. **Windows** (File Explorer and Settings) calculates sizes in binary units but still labels them “KB”, “MB” and “GB”. **Current macOS, iOS and iPadOS** calculate in decimal, matching the box (Apple says much older versions, up to iOS 10 and OS X Leopard, used binary). Linux tools, Android and individual apps vary; some show “GiB” honestly.",
+        "The trouble is that not every system uses the new names. **Windows** (File Explorer and Settings) calculates sizes in binary units but still labels them “KB”, “MB” and “GB”. **Current macOS, iOS and iPadOS** calculate in decimal, matching the box (Apple says much older versions, up to iOS 10 and OS X Leopard, used binary). Linux tools, Android and individual apps vary; some show “GiB” correctly.",
         {fig:'<svg viewBox="0 0 340 244"><text class="s" x="170" y="20" text-anchor="middle">The same drive, measured</text><text class="s" x="170" y="36" text-anchor="middle">with two different rulers</text><rect class="d-gold" x="9.4" y="46" width="321.1" height="36" rx="6" stroke-width="2"/><text x="170" y="69" text-anchor="middle">512,000,000,000 bytes</text><rect class="d-sage" x="9.4" y="94" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="114" text-anchor="middle">= 512 GB</text><text class="s" x="170" y="132" text-anchor="middle">÷ 1,000 ÷ 1,000 ÷ 1,000</text><text class="s" x="170" y="150" text-anchor="middle">the box, macOS and iOS show this</text><rect class="d-lup" x="9.4" y="170" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="190" text-anchor="middle">= 476.8 GiB</text><text class="s" x="170" y="208" text-anchor="middle">÷ 1,024 ÷ 1,024 ÷ 1,024</text><text class="s" x="170" y="226" text-anchor="middle">Windows shows this as “476 GB”</text></svg>', alt:"Diagram: one bar labeled 512,000,000,000 bytes. Below it are two equally long bars. One says equals 512 GB, dividing by 1,000 three times, as the box, macOS and iOS show it. The other says equals 476.8 GiB, dividing by 1,024 three times, which Windows shows as 476 GB.", cap:"Nothing is missing: the same number of bytes is divided by 1,000 three times or by 1,024 three times."},
         {ex:"A drive sold as **512 GB** holds 512 × 1,000,000,000 = 512,000,000,000 bytes.\nIn binary units: 512,000,000,000 ÷ 1,073,741,824 ≈ **476.8 GiB**.\nWindows shows this as about **476 GB**. A Mac would show about **512 GB**.\nOn top of that, the operating system, recovery tools and pre-installed apps use part of the drive, so the space **available** to you is smaller again.", label:"Worked example: the “missing” 35 GB"},
         {key:"Nobody stole your space. The box uses decimal GB; Windows uses binary units but calls them GB. The operating system then takes its own share."},
@@ -503,7 +503,7 @@ ICA.addUnit({
         {list:[
           "**Manages hardware.** Apps don’t talk to the printer, camera or Wi-Fi chip directly. They ask the OS, and the OS uses [[driver|drivers]] to talk to each device.",
           "**Runs programs and shares out resources.** It decides which program gets the processor next (switching many times a second so everything seems to run at once) and how much [[ram|RAM]] each one gets.",
-          "**Manages files.** It keeps track of where every file sits on the storage drive and offers folders, names and search.",
+          "**Manages files.** It keeps track of where every file is on the storage drive and offers folders, names and search.",
           "**Manages users.** It keeps each person’s files and settings separate and decides what each [[user-account|account]] is allowed to change.",
           "**Protects the system.** It enforces permissions, installs security updates, and stops one app from reading another app’s data.",
           "**Gives you an interface.** The desktop, home screen, windows, notifications and settings are all the OS."
@@ -514,7 +514,7 @@ ICA.addUnit({
       {h:"The main operating systems", body:[
         "A handful of operating systems run almost every personal device. Apps are usually written for a particular OS, which is why “Is it available for my system?” is the first question when you choose software.",
         {table:[
-          ["Operating system","Made by","Runs on","Worth knowing"],
+          ["Operating system","Made by","Runs on","Notes"],
           ["Windows","Microsoft","PCs and laptops from many makers","The most common desktop OS; huge range of software"],
           ["macOS","Apple","Mac computers only","Works closely with iPhone and iPad"],
           ["ChromeOS","Google","Chromebooks from many makers","Built around the Chrome browser and web apps; many models can also run Android and Linux apps"],
@@ -614,7 +614,7 @@ ICA.addUnit({
         {t:"Install it. Answer any administrator prompt only because you started this install", why:"A prompt you expected is fine; an unexpected one is a warning."},
         {t:"Open it, review its permissions and turn on updates", why:"Adjust permissions to the minimum and keep it updated."}
       ]},
-      {id:"t1u1-l4-x6", type:"mcq", q:"Dmitri uses an **administrator** account every day. He opens an email attachment that quietly tries to install software for all users. If he had been using a **standard** account, what would most likely happen?", options:[
+      {id:"t1u1-l4-x6", type:"mcq", q:"Dmitri uses an **administrator** account every day. He opens an email attachment that tries to install software for all users without asking. If he had been using a **standard** account, what would most likely happen?", options:[
         {t:"Windows would ask for an administrator password first", ok:true, why:"Standard accounts can’t make system-wide changes without an administrator’s approval. So the hidden install becomes a visible prompt, and he has a chance to stop it."},
         {t:"Nothing different: account type makes no difference to security", why:"Account type decides what programs running as you are allowed to change. That is exactly what limits malware."},
         {t:"The attachment couldn’t have opened at all", why:"Standard accounts can open files normally. The protection applies to system-wide changes."},
@@ -919,7 +919,7 @@ ICA.addUnit({
        starter:[
          "A [[computer]] is a machine that follows instructions. You give it information (typing, tapping, speaking, taking a photo), it works on that information by following a program, it keeps things for later, and it shows or sends you a result.",
          "Think of a cook with a recipe. Ingredients come in, the cook follows the recipe, leftovers go in the fridge, and a dish comes out. A computer does the same four jobs: **input**, **processing**, **storage** and **output**.",
-         "Computers are everywhere, not just on desks: phones, tablets, smart TVs, games consoles, watches, cars, Wi-Fi routers and the servers that run websites. If it runs software, it is a computer, and it can have bugs and need updates.",
+         "Computers are in many places besides desks: phones, tablets, smart TVs, games consoles, watches, cars, Wi-Fi routers and the servers that run websites. If it runs software, it is a computer, and it can have bugs and need updates.",
          {key:"Input → processing → output, with storage keeping things for later."}
        ],
        builder:[
@@ -931,8 +931,8 @@ ICA.addUnit({
          "Two more terms you will see: a [[server]] is a computer that serves others over a network, and a [[motherboard]] is the board that wires the parts together. Both fit the same model: a server does input (requests), processing, storage and output (responses), just at a much larger scale."
        ],
        pro:[
-         "Most computers today follow the **stored-program** design usually credited to John von Neumann’s 1945 report: instructions and data both live in the same memory, and the processor repeatedly **fetches** an instruction, **decodes** it and **executes** it. Programs are therefore just data that can be loaded, replaced or updated, which is what makes software updates and app stores possible.",
-         "Real systems blur the simple four-box picture in a few ways worth knowing:",
+         "Most computers today follow the **stored-program** design usually credited to John von Neumann’s 1945 report: instructions and data are both stored in the same memory, and the processor repeatedly **fetches** an instruction, **decodes** it and **executes** it. Programs are therefore just data that can be loaded, replaced or updated, which is what makes software updates and app stores possible.",
+         "Real systems blur the simple four-box picture in a few ways:",
          {list:[
            "**Systems on a chip (SoCs)** in phones, tablets and many laptops combine CPU cores, GPU, memory controller and other processors on one chip, sometimes with RAM in the same package.",
            "**Embedded computers** inside appliances, cars and routers run fixed firmware with little or no user interface, yet they still process input and produce output, and still need security updates.",
@@ -1029,7 +1029,7 @@ ICA.addUnit({
          "When you open a file or app, it is copied from storage into RAM. The processor works on it there. When you save, the changes are written back to storage.",
          "If RAM fills up, the operating system moves less-used parts of memory out to storage (called **swap**, **paging** or a **page file**) and some systems compress memory. Things keep working, but more slowly, because storage is far slower than RAM. That is the main reason a device with too little RAM feels sluggish when you have many tabs and apps open.",
          "What to do when memory is the bottleneck (check with {{task-manager}}): close apps and tabs you aren’t using, restart to clear leftovers, and when buying, choose enough RAM, because in most phones and many laptops it is soldered on and can’t be upgraded.",
-         "Phones manage RAM for you: when memory runs low, the system quietly closes apps in the background, which is why an app sometimes reloads when you switch back to it. On computers you are more in charge, so closing what you don’t need matters more."
+         "Phones manage RAM for you: when memory runs low, the system closes apps in the background without asking, which is why an app sometimes reloads when you switch back to it. On computers you are more in charge, so closing what you don’t need matters more."
        ],
        pro:[
          "Main memory in PCs and phones is **DRAM** (dynamic RAM), which stores each bit as a charge in a tiny capacitor that must be refreshed many times a second; that is why it is volatile. The CPU’s caches use faster, more expensive **SRAM**. Together with registers and storage they form the **memory hierarchy**: each level is bigger, slower and cheaper per byte than the one above, and caching exploits the fact that programs tend to reuse recently used data (locality).",
@@ -1312,7 +1312,7 @@ ICA.addUnit({
          {ol:["**Operating system:** does it run the apps you need?","**RAM:** more lets you keep more open at once.","**Storage:** an SSD, with room to spare.","**Ports:** can you plug in what you already own?"]},
          "The processor’s GHz is rarely the deciding number for everyday use. And “meets the minimum requirements” is not the same as comfortable.",
          "A worked approach: list what you will actually do (documents, video calls, photo editing), look up what those programs recommend, and only then compare listings. Read independent reviews for battery, screen and keyboard, which spec sheets describe poorly.",
-         {tip:"Think about the next few years, not just today. RAM and storage that feel generous now will feel normal later, and many devices can’t be upgraded."}
+         {tip:"Think about the next few years as well as today. RAM and storage that feel generous now will feel normal later, and many devices can’t be upgraded."}
        ],
        builder:[
          {ex:"Processor:  8-core, up to 4.4 GHz        → fine for everyday work\nMemory:     16 GB RAM                    → room for many tabs + video calls\nStorage:    512 GB NVMe SSD              → fast, space to grow\nGraphics:   Integrated                   → fine unless you game or edit video\nPorts:      2 × USB-C (charging + display), USB-A, HDMI\nBattery:    up to 12 h (maker’s claim)  → expect less in real use", label:"Annotated spec sheet", mono:true},
@@ -1526,7 +1526,7 @@ ICA.addUnit({
     {id:"t1u1-q04", lesson:"t1u1-l1", level:1, q:"What is firmware?", options:[
       {t:"Software built into a device that controls its hardware", ok:true, why:"It is stored inside the hardware and controls it at a low level. Examples are a computer’s start-up program or a router’s built-in software."},
       {t:"Any hardware that is fixed firmly inside the case", why:"Firmware is software, not a physical part."},
-      {t:"Apps that a company installs on all of its work computers", why:"Those are ordinary apps. Firmware lives inside the hardware itself."},
+      {t:"Apps that a company installs on all of its work computers", why:"Those are ordinary apps. Firmware is stored inside the hardware itself."},
       {t:"A protective case for a laptop", why:"That’s an accessory, not software of any kind."}
     ]},
     {id:"t1u1-q05", lesson:"t1u1-l1", level:3, q:"Lucía says, “My photos are safe because they’re in the cloud, which isn’t a physical place.” What’s the most accurate reply?", options:[
@@ -1701,7 +1701,7 @@ ICA.addUnit({
       {t:"A type of storage drive that holds the operating system files", why:"Storage drives are hardware; drivers are software."}
     ]},
     {id:"t1u1-q33", lesson:"t1u1-l4", level:2, q:"Which is a key difference between a web app and an installed app?", options:[
-      {t:"A web app runs in the browser; an installed app is on your device", ok:true, why:"Web apps load from a server each time, with nothing to install; installed apps live in your device’s storage."},
+      {t:"A web app runs in the browser; an installed app is on your device", ok:true, why:"Web apps load from a server each time, with nothing to install; installed apps are stored in your device’s storage."},
       {t:"Web apps always work offline, but installed apps need the internet", why:"Web apps usually need a connection; installed apps more often work offline."},
       {t:"Installed apps never need updates", why:"Installed apps need updates; web apps are updated on the server."},
       {t:"Only phones can use web apps", why:"Any device with a modern browser can use web apps."}

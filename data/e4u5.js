@@ -395,7 +395,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e4u5-l4", title:"Taste, capital and the citizens of the world", minutes:60,
-   hook:{q:"At the end of the twentieth century the International Sociological Association asked its members to name the century’s most important sociology books. Where did Pierre Bourdieu’s *Distinction*, a study of French taste in music, food and furniture, come?", options:["First","Sixth","Twenty-fifth","It was not listed"], answer:1, reveal:"**Sixth.** A book about which paintings, dishes and radio stations people liked became one of the most influential works of social science. That is because Bourdieu showed that taste is not only personal. In his account, it sorts people into classes and helps keep them there. This lesson takes his tools (capital, habitus, field) into world politics. Then it asks whether being a “citizen of the world” is an ethical ideal, a class privilege, or both."},
+   hook:{q:"At the end of the twentieth century the International Sociological Association asked its members to name the century’s most important sociology books. Where did Pierre Bourdieu’s *Distinction*, a study of French taste in music, food and furniture, come?", options:["First","Sixth","Twenty-fifth","It was not listed"], answer:1, reveal:"**Sixth.** A book about which paintings, dishes and radio stations people liked became one of the most influential works of social science. That is because Bourdieu showed that taste is more than personal. In his account, it sorts people into classes and helps keep them there. This lesson takes his tools (capital, habitus, field) into world politics. Then it asks whether being a “citizen of the world” is an ethical ideal, a class privilege, or both."},
    goals:[
      "Explain Bourdieu’s economic, cultural, social and symbolic capital, and the three states of cultural capital",
      "Use habitus, field and symbolic violence to analyze a case, including fields of diplomacy and security",
@@ -744,7 +744,7 @@ ICA.addUnit({
       "Students use Williams to ask which meaning of culture an argument uses, and who benefits from that choice."
      ],
      pro:[
-      "Williams called his approach **cultural materialism**: culture is produced by people in real social conditions, not a separate realm of ideas. With Richard Hoggart, E. P. Thompson and Stuart Hall he is counted among the founders of British cultural studies, though he worked mainly in literature and drama.",
+      "Williams called his approach **cultural materialism**: culture is produced by people in real social conditions, not a separate sphere of ideas. With Richard Hoggart, E. P. Thompson and Stuart Hall he is counted among the founders of British cultural studies, though he worked mainly in literature and drama.",
       "Critics note that his work centers on Britain and on class, with less on empire, race and gender; later scholars, including Hall and Edward Said, extended his questions to colonialism. Said admired Williams but asked why English culture’s dependence on empire appears so little in his histories.",
       "His method in *Keywords*, tracing the shifting history of words such as culture, democracy and nature, remains a model for concept analysis, and was updated by other authors in *New Keywords* (2005)."
      ]

@@ -79,7 +79,7 @@ ICA.addUnit({
         "**Know who can see responses**: collaborators on the form, the linked spreadsheet’s sharing settings, anyone with a results link.",
         "**Plan deletion**: when will you delete the raw responses?"
       ]},
-      {key:"Never promise “anonymous” unless the tool’s settings truly collect nothing that identifies people. “[[confidentiality|Confidential]]” (you know, but won’t tell) is a different promise."}
+      {key:"Never promise “anonymous” unless the tool’s settings collect nothing that identifies people. “[[confidentiality|Confidential]]” (you know, but won’t tell) is a different promise."}
     ]}
    ],
    try:[
@@ -117,7 +117,7 @@ ICA.addUnit({
       {t:"A thank-you, and how to contact the researcher", why:"Close by thanking people and telling them how to ask questions or withdraw."}
     ]},
     {id:"t4u8-l1-x6", type:"mcq", q:"Hana’s survey introduction says “This survey is anonymous.” Her form tool is set to record each respondent’s sign-in email address. What should she do?", options:[
-      {t:"Turn off email collection, or explain that emails are recorded but kept confidential.", ok:true, why:"Turning it off includes any sign-in requirement. Her promise must match what the tool does. Either collect nothing identifying, or describe honestly what is collected and how it is protected."},
+      {t:"Turn off email collection, or explain that emails are recorded but kept confidential.", ok:true, why:"Turning it off includes any sign-in requirement. Her promise must match what the tool does. Either collect nothing identifying, or say clearly what is collected and how it is protected."},
       {t:"Nothing: email addresses don’t count as identifying information.", why:"An email address usually identifies a person directly. Recording it means the survey isn’t anonymous."},
       {t:"Keep the setting as it is, but delete the emails herself before anyone else sees them.", why:"The answers were still collected with identities attached, so the “anonymous” promise was untrue when people answered."},
       {t:"Add “Please don’t write your name” to the introduction.", why:"That doesn’t stop the tool recording email addresses automatically."}
@@ -136,7 +136,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t4u8-l2", title:"Writing and testing questions", minutes:60,
-   hook:{q:"People are asked about a sensitive habit, such as how much alcohol they drink. In which situation do they, on average, report the least flattering (and usually more accurate) answers?", options:["Face to face with an interviewer","On the phone with an interviewer","Filling in a web form on their own","It makes no difference"], answer:2, reveal:"**Filling in a form on their own.** Survey research consistently finds more “socially desirable” answers when an interviewer is present: people understate things like drinking and drug use and overstate things like voting and giving to charity. Self-completed web and paper forms reduce this. Wording can help too, and this lesson shows how, along with the other ways a question can quietly steer or confuse people."},
+   hook:{q:"People are asked about a sensitive habit, such as how much alcohol they drink. In which situation do they, on average, report the least flattering (and usually more accurate) answers?", options:["Face to face with an interviewer","On the phone with an interviewer","Filling in a web form on their own","It makes no difference"], answer:2, reveal:"**Filling in a form on their own.** Survey research consistently finds more “socially desirable” answers when an interviewer is present: people understate things like drinking and drug use and overstate things like voting and giving to charity. Self-completed web and paper forms reduce this. Wording can help too, and this lesson shows how, along with the other ways a question can steer or confuse people."},
    goals:[
      "Recognize and fix leading, loaded, double-barrelled, double-negative and assumption-laden questions",
      "Write answer options that are balanced, exhaustive and don’t overlap",
@@ -169,7 +169,7 @@ ICA.addUnit({
       "Order matters as well. Krosnick and Presser report that when people **read** a list, they lean toward options near the top (a primacy effect); when they **hear** a list on the phone, they lean toward the last ones (a recency effect). For unordered lists, such as reasons or brands, many tools can shuffle the order for each respondent. Never shuffle a rating scale: its order carries meaning."
     ]},
     {h:"“Don’t know” and “Prefer not to say”", body:[
-      "Should you offer “Don’t know”? It depends on the question. For a factual question that some people genuinely can’t answer (“What year was your home built?”), “Don’t know” is an honest option and forcing a guess creates fake precision.",
+      "Should you offer “Don’t know”? It depends on the question. For a factual question that some people can’t answer (“What year was your home built?”), “Don’t know” is an honest option and forcing a guess creates fake precision.",
       "For opinion questions the evidence is more surprising. Krosnick and Presser’s review found that offering “Don’t know” or “No opinion” did not consistently improve data quality. Many people who choose it do hold a view, and it can become an easy exit when a question takes effort. Some researchers therefore leave it off opinion questions but let people skip.",
       "“Prefer not to say” is different: it’s about respect, not measurement. For personal topics such as income, health, religion or sexuality, people should be able to decline without abandoning the whole survey, and ethics committees usually expect this. Most online tools also let you leave questions optional instead of required.",
       {list:[
@@ -301,7 +301,7 @@ ICA.addUnit({
     {h:"Odd or even: the middle point", body:[
       "An odd number of points gives a **midpoint** (“Neither agree nor disagree”); an even number forces people to lean one way. People argue about this, so here is what the evidence says.",
       {list:[
-        "**Against dropping the middle**: Krosnick and Presser report that removing the midpoint pushes people with genuinely neutral views to one side, which makes the results less accurate, and they cite a 1999 study by Colm O’Muircheartaigh and colleagues finding that adding midpoints improved reliability and validity.",
+        "**Against dropping the middle**: Krosnick and Presser report that removing the midpoint pushes people with neutral views to one side, which makes the results less accurate, and they cite a 1999 study by Colm O’Muircheartaigh and colleagues finding that adding midpoints improved reliability and validity.",
         "**For caution**: some argue a midpoint invites people to take the easy option without thinking. The evidence on this is mixed.",
         "**A neutral view isn’t “Don’t know”**: someone who has thought and feels neutral differs from someone with no idea. Put “Don’t know” or “Not applicable” apart from the scale, not in the middle."
       ]},
@@ -363,7 +363,7 @@ ICA.addUnit({
       {t:"“Twice as useful for Group B (mean 4) as Group A (mean 2)”", b:1, why:"Ratios like “twice as” need a true zero and equal intervals. A rating of 4 isn’t twice a rating of 2."}
     ]},
     {id:"t4u8-l3-x5", type:"match", q:"Match each design choice to its main consequence.", pairs:[
-      ["Removing the neutral midpoint","People with genuinely neutral views are pushed to one side","Krosnick and Presser report this reduces accuracy."],
+      ["Removing the neutral midpoint","People with neutral views are pushed to one side","Krosnick and Presser report this reduces accuracy."],
       ["Labeling every point with words","Answers are more reliable","Fully labeled scales outperform end-labeled ones in their review."],
       ["Using agree–disagree statements","Some people agree whatever the statement says","That’s acquiescence bias; asking directly reduces it."],
       ["Forgetting to reverse-score a negatively worded item","The scale score is wrong for everyone","Agreement with that item means the opposite, so it must be flipped first."]
@@ -406,7 +406,7 @@ ICA.addUnit({
       "[[coverage-error|Coverage error]] happens when the frame doesn’t match the population: some people can’t be selected at all, or some are listed twice, or people outside the population slip in. It only causes **bias** if the missing people differ from those included on what you are measuring, but they often do.",
       {table:[["Frame","Who it may miss"],["Members’ email list","Members without email, or with old addresses"],["Landline phone directory","People with only cell phones, unlisted numbers"],["Visitors to a website","Everyone who doesn’t visit it"],["Patients attending a clinic this month","People who need care but can’t get there"]]},
       "In 1936 the *Literary Digest* frame, mainly telephone directories and car registrations, leaned toward wealthier households, which leaned toward Landon. No number of replies from that list could fix it.",
-      {tip:"Write down your frame and ask: who is in my population but not on this list? If you can’t fix the gap, describe it honestly in your report."}
+      {tip:"Write down your frame and ask: who is in my population but not on this list? If you can’t fix the gap, describe it in your report."}
     ]},
     {h:"How the sample is drawn", body:[
       "In a [[probability-sampling|probability sample]], every person on the frame has a known, non-zero chance of selection, decided by chance rather than by anyone’s choice. The simplest kind is a **simple** [[random-sample|random sample]], where everyone has the same chance, like drawing names from a well-shaken hat. Stratified and cluster samples are common variations, and Unit 6 covers them in more depth (see {{sampling-methods}}).",
@@ -535,11 +535,11 @@ ICA.addUnit({
     {h:"Frequency tables and the right denominator", body:[
       "A [[frequency-table|frequency table]] lists each answer, how many people gave it (the **count**), and the percentage. In a spreadsheet, COUNTIF counts matching answers (see {{countif-sumif}}) and a [[pivot-table|pivot table]] can build the whole table at once (see {{pivot-tables}}).",
       {lab:"fl-countif", t:"Practice: count matching answers with COUNTIF"},
-      "The crucial choice is the **denominator**: percent of what? Here are 250 respondents’ answers to “The new opening hours suit me”, where 30 people skipped the question.",
+      "The main choice is the **denominator**: percent of what? Here are 250 respondents’ answers to “The new opening hours suit me”, where 30 people skipped the question.",
       {table:[["Answer","Count","% of all 250","Valid %"],["Strongly agree","40","16.0%","18.2%"],["Agree","85","34.0%","38.6%"],["Neither","50","20.0%","22.7%"],["Disagree","30","12.0%","13.6%"],["Strongly disagree","15","6.0%","6.8%"],["No answer","30","12.0%","—"],["Total","250","100%","100% (n = 220)"]]},
       "The [[valid-percent|valid percentage]] leaves out people who didn’t answer, so it uses 220 as the denominator. “Agree or strongly agree” is 125 people: **50.0%** of all respondents, or **56.8%** of those who answered. Both are correct; they answer different questions. Say which one you report, and always give **n**, the number it’s based on.",
       {list:[
-        "If many people skipped a question, or chose “Don’t know”, that’s a finding in itself. Report it rather than quietly dropping them.",
+        "If many people skipped a question, or chose “Don’t know”, that’s a finding in itself. Report it rather than dropping them without saying so.",
         "For “check all that apply” questions, percentages add up to more than 100%, because each person can choose several. Say so.",
         "Rounded percentages may add to 99% or 101%. That’s normal; a note saying “figures may not sum to 100 because of rounding” is enough."
       ]}
@@ -554,7 +554,7 @@ ICA.addUnit({
       {lab:"fl-average", t:"Practice: calculate an average with AVERAGE"},
       "Which to use depends on the **kind** of data:",
       {table:[["Kind of data","Example","Sensible “middle”"],["Categories with no order","Main way of traveling to work","Mode only"],["Ordered categories (ordinal)","A five-point rating","Median and mode; mean with care (Lesson 3)"],["Numbers, roughly symmetric","Height, test scores","Mean (and median)"],["Numbers with a long tail","Income, hours volunteered","Median, plus the mean if useful"]]},
-      "In the warm-up, the mean (7 hours) is pulled up by one person who gave 30 hours; the median (5) and mode (5) describe the typical volunteer. Remove the 30, and the mean drops to 4.1 while the median only moves to 4.5. Medians resist extreme values; means don’t. Neither is “the right average” in general: report what describes your data honestly, and say which you used. The spreadsheet unit’s {{common-functions}} entry has more on these functions."
+      "In the warm-up, the mean (7 hours) is pulled up by one person who gave 30 hours; the median (5) and mode (5) describe the typical volunteer. Remove the 30, and the mean drops to 4.1 while the median only moves to 4.5. Medians resist extreme values; means don’t. Neither is “the right average” in general: report what describes your data well, and say which you used. The spreadsheet unit’s {{common-functions}} entry has more on these functions."
     ]},
     {h:"Spread: the standard deviation", body:[
       "Two groups can share a mean but differ hugely in how spread out they are. The [[standard-deviation|standard deviation]] (SD) summarizes spread: roughly, how far values typically sit from the mean. A small SD means answers cluster closely; a large SD means they are spread out.",
@@ -582,7 +582,7 @@ ICA.addUnit({
         "**Cherry-picking** the questions that support the conclusion, and leaving out the rest.",
         "**Charts that exaggerate** small differences with a cut-off axis (see {{choosing-charts}})."
       ]},
-      {fig:'<svg viewBox="0 0 340 296"><text x="170" y="18" text-anchor="middle">Team A: mean 3, median 3</text><path class="d-ink" d="M40 120 L300 120" stroke-width="1.5"/><rect class="d-panel" x="53" y="118" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="103" y="118" width="34" height="2" stroke-width="1"/><rect class="d-gold" x="153" y="40" width="34" height="80" rx="3" stroke-width="1.5"/><rect class="d-panel" x="203" y="118" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="253" y="118" width="34" height="2" stroke-width="1"/><text class="s" x="170" y="34" text-anchor="middle">10</text><text class="s" x="70" y="136" text-anchor="middle">1</text><text class="s" x="120" y="136" text-anchor="middle">2</text><text class="s" x="170" y="136" text-anchor="middle">3</text><text class="s" x="220" y="136" text-anchor="middle">4</text><text class="s" x="270" y="136" text-anchor="middle">5</text><text x="170" y="170" text-anchor="middle">Team B: mean 3, median 3</text><path class="d-ink" d="M40 260 L300 260" stroke-width="1.5"/><rect class="d-rose" x="53" y="220" width="34" height="40" rx="3" stroke-width="1.5"/><rect class="d-panel" x="103" y="258" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="153" y="258" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="203" y="258" width="34" height="2" stroke-width="1"/><rect class="d-sage" x="253" y="220" width="34" height="40" rx="3" stroke-width="1.5"/><text class="s" x="70" y="214" text-anchor="middle">5</text><text class="s" x="270" y="214" text-anchor="middle">5</text><text class="s" x="70" y="276" text-anchor="middle">1</text><text class="s" x="120" y="276" text-anchor="middle">2</text><text class="s" x="170" y="276" text-anchor="middle">3</text><text class="s" x="220" y="276" text-anchor="middle">4</text><text class="s" x="270" y="276" text-anchor="middle">5</text><text class="s" x="170" y="294" text-anchor="middle">answer on a 1–5 scale</text></svg>', alt:"Two bar charts of answers on a 1 to 5 scale from ten people each. Team A: all ten people answered 3, so there is one tall bar in the middle. Team B: five people answered 1 and five answered 5, so there are two bars at the ends and nothing in the middle. Both teams have a mean of 3 and a median of 3.", cap:"Same mean, same median, completely different stories. Show the distribution, not just one number."},
+      {fig:'<svg viewBox="0 0 340 296"><text x="170" y="18" text-anchor="middle">Team A: mean 3, median 3</text><path class="d-ink" d="M40 120 L300 120" stroke-width="1.5"/><rect class="d-panel" x="53" y="118" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="103" y="118" width="34" height="2" stroke-width="1"/><rect class="d-gold" x="153" y="40" width="34" height="80" rx="3" stroke-width="1.5"/><rect class="d-panel" x="203" y="118" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="253" y="118" width="34" height="2" stroke-width="1"/><text class="s" x="170" y="34" text-anchor="middle">10</text><text class="s" x="70" y="136" text-anchor="middle">1</text><text class="s" x="120" y="136" text-anchor="middle">2</text><text class="s" x="170" y="136" text-anchor="middle">3</text><text class="s" x="220" y="136" text-anchor="middle">4</text><text class="s" x="270" y="136" text-anchor="middle">5</text><text x="170" y="170" text-anchor="middle">Team B: mean 3, median 3</text><path class="d-ink" d="M40 260 L300 260" stroke-width="1.5"/><rect class="d-rose" x="53" y="220" width="34" height="40" rx="3" stroke-width="1.5"/><rect class="d-panel" x="103" y="258" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="153" y="258" width="34" height="2" stroke-width="1"/><rect class="d-panel" x="203" y="258" width="34" height="2" stroke-width="1"/><rect class="d-sage" x="253" y="220" width="34" height="40" rx="3" stroke-width="1.5"/><text class="s" x="70" y="214" text-anchor="middle">5</text><text class="s" x="270" y="214" text-anchor="middle">5</text><text class="s" x="70" y="276" text-anchor="middle">1</text><text class="s" x="120" y="276" text-anchor="middle">2</text><text class="s" x="170" y="276" text-anchor="middle">3</text><text class="s" x="220" y="276" text-anchor="middle">4</text><text class="s" x="270" y="276" text-anchor="middle">5</text><text class="s" x="170" y="294" text-anchor="middle">answer on a 1–5 scale</text></svg>', alt:"Two bar charts of answers on a 1 to 5 scale from ten people each. Team A: all ten people answered 3, so there is one tall bar in the middle. Team B: five people answered 1 and five answered 5, so there are two bars at the ends and nothing in the middle. Both teams have a mean of 3 and a median of 3.", cap:"Same mean, same median, completely different stories. Show the distribution. One number is not enough."},
       {key:"An honest summary lets a reader reach the conclusion you did, or a different one, from what you show them."}
     ]},
     {h:"A checklist for an honest report", body:[
@@ -807,7 +807,7 @@ ICA.addUnit({
       "**Points.** Five and seven are common. Krosnick and Presser found reliability rises up to about seven points and then levels off.",
       "**Labels.** Label every point with words; fully labeled scales are more reliable than end-labeled ones. Use **bipolar** labels for feelings with two sides (dissatisfied ↔ satisfied) and **unipolar** labels for amounts (Not at all … Extremely).",
       "**Consistency.** Within one questionnaire, keep the direction of scales the same (for example, always negative on the left or top) so people don’t have to keep re-reading the labels.",
-      "**Midpoint.** Omitting it pushes genuinely neutral people to one side; studies have found midpoints can improve reliability and validity. Keep “Don’t know” separate from the scale.",
+      "**Midpoint.** Omitting it pushes neutral people to one side; studies have found midpoints can improve reliability and validity. Keep “Don’t know” separate from the scale.",
       "**Scale scores.** Add (or average) the items, reverse-scoring any negatively worded item first: on a 1–k scale, reversed score = (k + 1) − answer. Check the items hang together (for example with Cronbach’s alpha, a [[reliability]] statistic) and prefer established scales with evidence of [[validity]].",
       "**Analysis.** For single items, report the frequency distribution, median and mode. Means are widely used, especially for multi-item scale scores, but should come with the distribution.",
       {ex:"Four items on a 1–5 scale; item 3 is reverse-worded.\nAnswers: 4, 5, 2, 3\nReverse item 3: 6 − 2 = 4\nTotal: 4 + 5 + 4 + 3 = 16 (possible range 4–20)\nMean item score: 16 ÷ 4 = 4.0 (on the original 1–5 scale)", label:"Worked example", mono:true}
@@ -1068,7 +1068,7 @@ ICA.addUnit({
      {t:"All modes give identical answers", why:"Research consistently finds mode effects on sensitive questions."}
    ]},
    {id:"t4u8-q06", lesson:"t4u8-l1", level:3, q:"Ana’s questionnaire for a youth club starts with “What is your exact date of birth and home address?” before any questions about the club. What is the best advice?", options:[
-     {t:"Start with easy questions about the club, and move background questions to the end", ok:true, why:"She should only ask for details she truly needs. Personal questions at the start feel intrusive and can make people quit; exact birth dates and addresses are rarely necessary and make the data identifying."},
+     {t:"Start with easy questions about the club, and move background questions to the end", ok:true, why:"She should only ask for details she needs. Personal questions at the start feel intrusive and can make people quit; exact birth dates and addresses are rarely necessary and make the data identifying."},
      {t:"Keep it: personal details always come first", why:"Pew advises putting background questions near the end unless they’re needed first to check eligibility."},
      {t:"Make the questions required so nobody can skip them", why:"Forcing intrusive questions raises drop-out and is ethically poor practice."},
      {t:"Keep the address question, but promise that the survey is anonymous so people feel safe", why:"With an address, the survey isn’t anonymous; the promise would be false."}
@@ -1184,7 +1184,7 @@ ICA.addUnit({
      {t:"Drop Department B as an outlier", why:"Polarized answers are a real finding, not an error."}
    ]},
    {id:"t4u8-q25", lesson:"t4u8-l3", level:2, q:"What does the evidence say about removing the neutral midpoint from a rating scale?", options:[
-     {t:"It pushes genuinely neutral people to one side, which can reduce accuracy", ok:true, why:"Krosnick and Presser report this and cite studies finding midpoints improved reliability and validity."},
+     {t:"It pushes neutral people to one side, which can reduce accuracy", ok:true, why:"Krosnick and Presser report this and cite studies finding midpoints improved reliability and validity."},
      {t:"It always improves data quality", why:"The evidence doesn’t support that; many studies favor a midpoint."},
      {t:"It has no effect at all", why:"It changes where neutral people put their answers."},
      {t:"It is required by Likert’s original 1932 method, so it always improves accuracy", why:"Likert’s original categories included an “undecided” middle option."}

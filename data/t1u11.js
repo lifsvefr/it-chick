@@ -28,7 +28,7 @@ ICA.addUnit({
     {h:"Why some emails get answered", body:[
       {lead:"Most unanswered emails aren’t ignored on purpose. The reader opened them, couldn’t tell what was needed, and moved on."},
       "Email is closer to a letter than to a chat. The reader may open it hours later, on a phone, between other tasks. They may also forward it to people you never meant to write to.",
-      "You read and write email in an [[email-client]]: an app or website such as Outlook, Gmail, Thunderbird (a free, open-source app from Mozilla) or Apple Mail. The client is only the window. Your address and your messages live with an email provider, which is why you can see the same inbox on a laptop and a phone.",
+      "You read and write email in an [[email-client]]: an app or website such as Outlook, Gmail, Thunderbird (a free, open-source app from Mozilla) or Apple Mail. The client is only the window. Your address and your messages are kept by an email provider, which is why you can see the same inbox on a laptop and a phone.",
       "Think about what the reader sees first: the sender’s name, the subject line and the first line or two. If those answer “what is this and what do you need from me?”, the email usually gets a reply.",
       {key:"Write for a busy reader who skims. Put what you need, and by when, where they will see it first."}
     ]},
@@ -87,7 +87,7 @@ ICA.addUnit({
         ["Secretly copying someone into a disagreement","Don’t. If you need a witness, say so openly in Cc"]
       ]},
       "Bcc exists mainly to protect privacy. If everyone is in To or Cc, each recipient sees every address and can reply to all. The UK data protection regulator (the ICO) notes that forgetting Bcc often leads to addresses being shown to others by accident. For sensitive information, Bcc alone isn’t enough, because one slip exposes the whole list. For large or sensitive groups, use a [[mailing-list]] or bulk-email service.",
-      {warn:"Copying people in is not neutral. Cc’ing someone’s manager into a small problem can feel like a threat. Add people only when they genuinely need to know, and tell the To recipients why if it isn’t obvious."}
+      {warn:"Copying people in is not neutral. Cc’ing someone’s manager into a small problem can feel like a threat. Add people only when they need to know, and tell the To recipients why if it isn’t obvious."}
     ]},
     {h:"Reply, Reply All and Forward", body:[
       "When an email arrives, you have three ways to respond:",
@@ -242,7 +242,7 @@ ICA.addUnit({
         ["Thunderbird","An **Archives** folder (press [[kbd:A]]), split by year or month if you like","**Folders**, plus **tags**"],
         ["Apple Mail","The **Archive** mailbox","**Mailboxes** (folders) and flags"]
       ]},
-      "A **folder** is like a drawer: an email sits in one folder at a time. A **label** is like a sticky note: one email can carry several, such as “Garden” and “Receipts”, and appear under both. Gmail uses labels; Outlook, Thunderbird and Apple Mail use folders but offer categories, tags or flags that behave like labels. See [[label-folder]] for the details.",
+      "A **folder** is like a drawer: an email is in one folder at a time. A **label** is like a sticky note: one email can carry several, such as “Garden” and “Receipts”, and appear under both. Gmail uses labels; Outlook, Thunderbird and Apple Mail use folders but offer categories, tags or flags that behave like labels. See [[label-folder]] for the details.",
       "Keep the number of folders or labels small: a handful you actually use beats forty you never open. Many people find three are enough: **Action** (I need to do something), **Waiting** (someone else needs to reply) and **Reference** (keep, but nothing to do). Everything else gets archived and found by search."
     ]},
     {h:"Search instead of sorting", body:[
@@ -263,14 +263,14 @@ ICA.addUnit({
     ]},
     {h:"Filters and rules: let the computer sort", body:[
       "An [[email-filter]] is an instruction that your email app follows automatically for every new email. (Outlook and Apple Mail call it a **rule**.) **If** a message matches a condition, **then** the app does an action.",
-      {fig:'<svg viewBox="0 0 340 352"><defs><marker id="m112" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="10" y="10" width="320" height="56" rx="9" stroke-width="2"/><text x="170" y="33" text-anchor="middle">A new email arrives</text><text class="s" x="170" y="53" text-anchor="middle">From: news@bakery.example</text><path class="d-ink" d="M170,67 L170,88" stroke-width="2" marker-end="url(#m112)"/><rect class="d-gold" x="25" y="90" width="290" height="58" rx="9" stroke-width="2"/><text x="170" y="113" text-anchor="middle">The filter checks its condition</text><text class="s" x="170" y="134" text-anchor="middle">Is it from news@bakery.example?</text><path class="d-ink" d="M120,149 L90,182" stroke-width="2" marker-end="url(#m112)"/><path class="d-ink" d="M220,149 L250,182" stroke-width="2" marker-end="url(#m112)"/><text class="s" x="88" y="170" text-anchor="middle">yes</text><text class="s" x="254" y="170" text-anchor="middle">no</text><rect class="d-sage" x="10" y="184" width="152" height="82" rx="9" stroke-width="2"/><text x="86" y="206" text-anchor="middle">Actions run</text><text class="s" x="86" y="226" text-anchor="middle">label: Newsletters</text><text class="s" x="86" y="242" text-anchor="middle">skip the inbox</text><text class="s" x="86" y="258" text-anchor="middle">(kept, searchable)</text><rect class="d-lup" x="178" y="184" width="152" height="82" rx="9" stroke-width="2"/><text x="254" y="206" text-anchor="middle">No match</text><text class="s" x="254" y="226" text-anchor="middle">lands in the</text><text class="s" x="254" y="242" text-anchor="middle">inbox as usual</text><rect class="d-panel" x="10" y="282" width="320" height="60" rx="9" stroke-width="2"/><text x="170" y="305" text-anchor="middle">Nothing is deleted</text><text class="s" x="170" y="325" text-anchor="middle">Read the Newsletters label when you choose</text></svg>', alt:"A new email from news@bakery.example arrives. The filter checks its condition: is it from news@bakery.example? If yes, actions run: add the label Newsletters and skip the inbox; the email is kept and searchable. If no, it lands in the inbox as usual. A note at the bottom: nothing is deleted; read the Newsletters label when you choose.", cap:"A filter is an if-then instruction. Matching emails are sorted before you ever see them."},
+      {fig:'<svg viewBox="0 0 340 352"><defs><marker id="m112" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="10" y="10" width="320" height="56" rx="9" stroke-width="2"/><text x="170" y="33" text-anchor="middle">A new email arrives</text><text class="s" x="170" y="53" text-anchor="middle">From: news@bakery.example</text><path class="d-ink" d="M170,67 L170,88" stroke-width="2" marker-end="url(#m112)"/><rect class="d-gold" x="25" y="90" width="290" height="58" rx="9" stroke-width="2"/><text x="170" y="113" text-anchor="middle">The filter checks its condition</text><text class="s" x="170" y="134" text-anchor="middle">Is it from news@bakery.example?</text><path class="d-ink" d="M120,149 L90,182" stroke-width="2" marker-end="url(#m112)"/><path class="d-ink" d="M220,149 L250,182" stroke-width="2" marker-end="url(#m112)"/><text class="s" x="88" y="170" text-anchor="middle">yes</text><text class="s" x="254" y="170" text-anchor="middle">no</text><rect class="d-sage" x="10" y="184" width="152" height="82" rx="9" stroke-width="2"/><text x="86" y="206" text-anchor="middle">Actions run</text><text class="s" x="86" y="226" text-anchor="middle">label: Newsletters</text><text class="s" x="86" y="242" text-anchor="middle">skip the inbox</text><text class="s" x="86" y="258" text-anchor="middle">(kept, searchable)</text><rect class="d-lup" x="178" y="184" width="152" height="82" rx="9" stroke-width="2"/><text x="254" y="206" text-anchor="middle">No match</text><text class="s" x="254" y="226" text-anchor="middle">goes to the</text><text class="s" x="254" y="242" text-anchor="middle">inbox as usual</text><rect class="d-panel" x="10" y="282" width="320" height="60" rx="9" stroke-width="2"/><text x="170" y="305" text-anchor="middle">Nothing is deleted</text><text class="s" x="170" y="325" text-anchor="middle">Read the Newsletters label when you choose</text></svg>', alt:"A new email from news@bakery.example arrives. The filter checks its condition: is it from news@bakery.example? If yes, actions run: add the label Newsletters and skip the inbox; the email is kept and searchable. If no, it goes to the inbox as usual. A note at the bottom: nothing is deleted; read the Newsletters label when you choose.", cap:"A filter is an if-then instruction. Matching emails are sorted before you ever see them."},
       "Good first filters:",
       {list:[
         "**Newsletters and shop offers** you want to keep but not see in the inbox: label them and skip the inbox.",
         "**Messages from one important sender** (a school, a client, a care home): add a label or a star so they stand out.",
         "**Automatic notifications** from an app or website: send them to a “Notifications” folder."
       ]},
-      "Rules have limits worth knowing. Gmail filters affect only **new** messages unless you check the option to apply them to existing ones; Thunderbird has a **Run Now** button for mail you already have. Apple Mail’s rules run only while Mail is open on that Mac. And a rule that deletes mail can hide something important, so start with label or move actions, not delete.",
+      "Rules have some limits. Gmail filters affect only **new** messages unless you check the option to apply them to existing ones; Thunderbird has a **Run Now** button for mail you already have. Apple Mail’s rules run only while Mail is open on that Mac. And a rule that deletes mail can hide something important, so start with label or move actions, not delete.",
       {warn:"Criminals who break into an email account sometimes add a rule that forwards copies of your mail to them, or hides replies. Look through your rules and forwarding settings now and then, and remove any you didn’t create. If you find one, change your password and turn on two-step verification ({{mfa}})."}
     ]},
     {h:"Unsubscribe, spam and blocking", body:[
@@ -641,7 +641,7 @@ ICA.addUnit({
         ["Shared drives (Google) and team sites (Microsoft Teams, SharePoint)","Files belong to the organization or team, not one person, so they stay when someone leaves."]
       ]},
       {ex:"A neighborhood group keeps its member list, accounts and grant forms in the treasurer’s personal Google Drive. The treasurer moves away and, months later, closes the account. The files, and every link to them, disappear.\n\nBetter: before handover, the treasurer transfers ownership of each file to the new treasurer (who accepts), or the group keeps its files in an account or shared drive that belongs to the group, with at least two people able to manage it.", label:"Worked example: when the owner leaves"},
-      "So for anything a group depends on, ask early: **whose account is this in, and what happens if they leave?** Work files should live in your organization’s shared spaces, not a personal account."
+      "So for anything a group depends on, ask early: **whose account is this in, and what happens if they leave?** Work files should be kept in your organization’s shared spaces, not a personal account."
     ]},
     {h:"Editing together politely", body:[
       "Simultaneous editing can feel like several people writing on one whiteboard. A few shared habits keep it calm:",
@@ -654,7 +654,7 @@ ICA.addUnit({
       ]},
       {h:"Common misconceptions"},
       {list:[
-        "**“Version history is a backup.”** It lives in the same account as the file. If the account or file is deleted, it goes too. Keep real backups (Unit 2: {{backup}}).",
+        "**“Version history is a backup.”** It is kept in the same account as the file. If the account or file is deleted, it goes too. Keep real backups (Unit 2: {{backup}}).",
         "**“Editors can only change the text.”** In many services they can also reshare the file or change its settings, unless the owner prevents it.",
         "**“If I made the file at work, it’s mine.”** Files in a work account usually belong to the organization and can be transferred or deleted when you leave.",
         "**“Commenters can’t propose changes.”** In Google Docs, commenters can make suggestions, which the owner accepts or rejects."
@@ -728,7 +728,7 @@ ICA.addUnit({
        libre:["Choose **File → Versions**, then **Save New Version** and type a comment such as “sent for review”.","These versions are stored inside the file itself (in LibreOffice’s own format), not in a cloud history."],
        apple:["In Pages on a Mac, choose **File → Revert To → Browse All Versions**.","Scroll through earlier versions on the right, then click **Done** to leave without changing anything."]
      }},
-     {t:"Find out who owns your group’s important files", write:"File · where it lives · owner (whose account) · what happens if they leave · next step", how:["List three to five files your household, team or group depends on (a rota, accounts, a member list).","For each file, check who owns it. In Google Drive, select the file and open its details (the ⓘ **View details** button, or right-click → **File information → Details**). Look for **Owner**. In OneDrive and iCloud, the file lives in the owner’s account.","Write down what would happen if the owner left, and one step to make it safer (transfer ownership, move it to a shared space, add a second manager)."]}
+     {t:"Find out who owns your group’s important files", write:"File · where it lives · owner (whose account) · what happens if they leave · next step", how:["List three to five files your household, team or group depends on (a rota, accounts, a member list).","For each file, check who owns it. In Google Drive, select the file and open its details (the ⓘ **View details** button, or right-click → **File information → Details**). Look for **Owner**. In OneDrive and iCloud, the file is in the owner’s account.","Write down what would happen if the owner left, and one step to make it safer (transfer ownership, move it to a shared space, add a second manager)."]}
    ], proof:"A test document shared for comments only (or a plan for sharing a LibreOffice file). One suggestion or tracked change, made and resolved. A version you can find again. A short list of who owns the files your group depends on."},
    read:[
      {book:"wss", where:"Chapter 2, Section 2.6 “Collaboration”: “Collaborative Work”, “File Sharing and Transferring”, “Collaborative Writing and Editing” and “Sharing a Document”", note:"The book’s sharing screenshots are from 2023. Google’s Share dialog now shows General access (Restricted or Anyone with the link) below the people list."}
@@ -773,7 +773,7 @@ ICA.addUnit({
     {h:"Threads and @mentions", body:[
       "In a busy channel, separate conversations get tangled. Someone asks about Saturday’s keys, someone else replies about the budget, and nobody can tell which answer belongs to which question. **Threads** fix this. Reply *in the thread* under the message you’re answering. Then the channel stays a list of topics rather than a pile of replies.",
       "An [[mention|@mention]] (type @ and a name) notifies that person even if they don’t follow the channel closely. Use it when you need **a specific person** to see or do something, and say what: “@Priya can you confirm the room by Thursday?”",
-      "Most tools also have mentions that notify **everyone**: @channel or @here in Slack, @team or @channel in Teams, @all in Google Chat. These interrupt every member, often on their phones. Save them for things everyone genuinely needs to know soon: “The hall is closed tomorrow, don’t come in.”",
+      "Most tools also have mentions that notify **everyone**: @channel or @here in Slack, @team or @channel in Teams, @all in Google Chat. These interrupt every member, often on their phones. Save them for things everyone needs to know soon: “The hall is closed tomorrow, don’t come in.”",
       {ex:"Channel #food-bank\n\nAna: Saturday shift: we’re short of two people for 10:00–12:00. Can anyone cover? Reply in thread.\n   ↳ Kenji (in thread): I can do 10–12.\n   ↳ Hana (in thread): Me too.\n   ↳ Ana (in thread): Thanks both, you’re on the rota. ✅\n\nTomás: @Mei the van insurance renewal is due 1 Dec. Can you send me the policy number?", label:"Worked example: threads and a targeted mention", mono:true}
     ]},
     {h:"Messages that work across time zones", body:[
@@ -809,7 +809,7 @@ ICA.addUnit({
         "**Keep sensitive things out of channels**: passwords, health details, performance problems, other people’s personal data. Use a direct conversation, a call, or the proper system.",
         "**Brief is fine; curt isn’t.** A quick “thanks!” or an emoji reaction (👍, ✅) shows you’ve seen a message without adding noise.",
         "**Use the right channel**, and move a long side conversation into a thread or a direct message.",
-        "**Correct mistakes openly.** Edit a message to fix a typo; if you got a fact wrong, say so in a reply rather than quietly deleting it."
+        "**Correct mistakes openly.** Edit a message to fix a typo; if you got a fact wrong, say so in a reply rather than deleting it without saying so."
       ]}
     ]},
     {h:"Agree how your team communicates", body:[
@@ -842,7 +842,7 @@ ICA.addUnit({
     {id:"t1u11-l5-x3", type:"match", q:"Match each chat feature with what it’s for.", pairs:[
       ["Thread","Keeping all replies to one message together","Replying in a thread stops separate conversations tangling in the channel."],
       ["@mention of one person","Notifying a specific person who needs to see or act","It pings that person even if they don’t watch the channel."],
-      ["@channel or @everyone","Alerting every member about something that affects them all, soon","It interrupts everyone, so it’s for genuinely shared, time-sensitive news."],
+      ["@channel or @everyone","Alerting every member about something that affects them all, soon","It interrupts everyone, so it’s for shared, time-sensitive news."],
       ["Status set to Do not disturb","Silencing notifications while you focus or rest","Others can still send messages; you see them when you’re ready."],
       ["Channel","A shared room for one topic or group, with a readable history","New members can read back and catch up."]
     ]},
@@ -878,7 +878,7 @@ ICA.addUnit({
      {t:"Set your status, and a time for it to clear", how:["**Microsoft Teams:** select your profile picture (top right), then your current status. Choose a status, or select **Duration** to set one that resets at a time you choose.","**Slack:** click your profile picture, then **Update your status**; choose an emoji, a message and when to clear it.","**Google Chat (in Gmail):** at the top right, open the menu next to your status and choose **Automatic**, **Do not disturb** or **Set as away**.","Add your time zone and working hours to your profile if the tool allows it."]},
      {t:"Stop notifications outside your hours", how:["**Slack:** click your profile picture → **Preferences**. Below **Working hours**, choose an option from the **Allow notifications** menu and set start and end times. On a phone: profile picture → **Notifications** → **Notification schedule**.","**Slack, just for now:** click your profile picture, hover over **Notifications** and choose how long to pause them (on a phone: **Pause notifications**).","**Teams and Google Chat:** use **Do not disturb**, and check the app’s notification settings for quiet hours.","**On a phone:** set up Focus (iPhone) or Do Not Disturb (Android, names vary by maker) for your evenings. Allow calls from a few people for emergencies."]},
      {t:"Rewrite a message so it works asynchronously", write:"Original message: …\nRewritten (context + ask + deadline with time zone + link + how urgent): …", how:["Find a recent message you sent or received that needed a follow-up question before anyone could act.","Rewrite it using the lesson’s checklist."]},
-     {t:"Draft a communication agreement for a group you’re in", write:"Chat is for … · Email is for … · Files live in … · Meetings are for … · Reply times … · Quiet hours … · Urgent route …", how:["Pick a team, class, family group or volunteer group.","Draft the seven lines below. Keep each one short.","If it’s appropriate, share it with the group as a suggestion and ask for changes."]}
+     {t:"Draft a communication agreement for a group you’re in", write:"Chat is for … · Email is for … · Files go in … · Meetings are for … · Reply times … · Quiet hours … · Urgent route …", how:["Pick a team, class, family group or volunteer group.","Draft the seven lines below. Keep each one short.","If it’s appropriate, share it with the group as a suggestion and ask for changes."]}
    ], proof:"Your status and quiet hours are set in at least one tool. One real message is rewritten so that people can answer it without follow-up questions. You have a draft communication agreement for a group."},
    read:[
      {book:"wss", where:"Chapter 2, Section 2.3 “Communication and Calendar Applications”: “Instant Chat/Messaging (IM) Applications”, “Microsoft Teams” and “Slack”", note:"Out of date on one point: Slack’s free plan now shows the last 90 days of messages and files rather than a 10,000-message limit."}
@@ -1056,7 +1056,7 @@ ICA.addUnit({
      ],
      builder:[
       {table:[["App","Archive goes to","Organize with"],["Gmail","All Mail (`in:archive`)","Labels (several per email)"],["Outlook","Archive folder","Folders and categories"],["Thunderbird","Archives folder (key A), by year or month","Folders and tags"],["Apple Mail","Archive mailbox","Mailboxes and flags"]]},
-      "**Gmail search operators** worth knowing: `from:` `to:` `subject:` `has:attachment` `filename:pdf` `larger:10M` `older_than:1y` `after:2026/01/01` `before:` `\"exact phrase\"` `-word` `OR` `label:` `in:anywhere` (includes Spam and Trash). Dates for `after:`/`before:` use YYYY/MM/DD (or MM/DD/YYYY).",
+      "**Useful Gmail search operators:** `from:` `to:` `subject:` `has:attachment` `filename:pdf` `larger:10M` `older_than:1y` `after:2026/01/01` `before:` `\"exact phrase\"` `-word` `OR` `label:` `in:anywhere` (includes Spam and Trash). Dates for `after:`/`before:` use YYYY/MM/DD (or MM/DD/YYYY).",
       "**Outlook** offers a Filters button (From, To, Subject, dates, attachments) and keywords such as `HasAttachment:yes`. **Thunderbird** has a Quick Filter bar for the current folder and a global search. **Apple Mail** builds searches from suggestions such as “From:” and “Subject contains:”.",
       "**Unsubscribe vs spam vs block:** unsubscribe from lists you joined; report spam for unsolicited bulk mail; report phishing for scams; block a single sender (blocking doesn’t unsubscribe you). Gmail’s **Manage subscriptions** page lists frequent senders with an Unsubscribe button (still rolling out).",
       "**A simple routine:** at set times, go through new mail once and decide for each email: **do** it (if it takes a couple of minutes), **defer** it (flag, star or snooze it and put time in your calendar), **delegate** it (forward with a clear ask, then move it to Waiting), or **drop** it (archive, delete or unsubscribe). Three folders or labels, Action, Waiting and Reference, are enough for most people.",
@@ -1093,7 +1093,7 @@ ICA.addUnit({
       "**Practice safely:** create one filter for a newsletter you receive, check after a week that it caught the right emails and nothing else, then add more. Name each filter by purpose, and look through your rules list a few times a year: delete the ones you no longer need and any you don’t recognize."
      ],
      pro:[
-      "Server-side versus client-side matters. Rules stored by the provider (Gmail filters, Outlook mailbox rules) run even when your devices are off. Rules that live in a desktop app (Apple Mail rules, Thunderbird filters on most setups) run only when that app is open and checking mail, so they’re unsuitable for out-of-office replies. Mozilla’s help article advises against Thunderbird template-reply filters for vacations for that reason and for safety concerns, and recommends the provider’s own auto-reply.",
+      "Server-side versus client-side matters. Rules stored by the provider (Gmail filters, Outlook mailbox rules) run even when your devices are off. Rules that are stored in a desktop app (Apple Mail rules, Thunderbird filters on most setups) run only when that app is open and checking mail, so they’re unsuitable for out-of-office replies. Mozilla’s help article advises against Thunderbird template-reply filters for vacations for that reason and for safety concerns, and recommends the provider’s own auto-reply.",
       "Attackers who gain access to a mailbox commonly create **forwarding or hiding rules**: forwarding all mail to an outside address, or moving replies from a target’s bank to an obscure folder so a fraud goes unnoticed. Review rules and forwarding settings periodically; an unexplained rule is a sign of account compromise and calls for a password change, two-step verification ({{mfa}}) and a check of recovery details.",
       "Order and conflicts: Outlook processes rules in order and offers **Stop processing more rules**; Thunderbird lets you filter before or after junk classification. Design rules from specific to general.",
       "Automatic replies can leak information: travel plans, absence dates and internal contacts help social engineers. Keep external messages minimal and use the internal-only message option where available.",
@@ -1209,7 +1209,7 @@ ICA.addUnit({
      ],
      pro:[
       "Ownership determines lifecycle. In consumer services a file’s survival is tied to one person’s account: their storage quota, their account security, their decision to delete. Groups that depend on files (charities, clubs, families) should hold them in a group-controlled location, with at least two people able to administer it and the credentials kept in a password manager with two-step verification.",
-      "Version history is not a backup: it lives in the same account and service as the file, and retention is limited. It also preserves deleted content: earlier drafts, removed names or figures remain visible to anyone with edit access. Before sharing externally, share a fresh copy or a PDF.",
+      "Version history is not a backup: it is kept in the same account and service as the file, and retention is limited. It also preserves deleted content: earlier drafts, removed names or figures remain visible to anyone with edit access. Before sharing externally, share a fresh copy or a PDF.",
       "Concurrency: cloud editors merge simultaneous edits in near real time, but files synced to a desktop folder and opened in desktop apps can produce conflict copies when two people edit offline. Office desktop apps support co-authoring on OneDrive or SharePoint files; LibreOffice does not co-author files stored this way, so agree on locking or turn-taking.",
       "Governance in organizations: apply least privilege, review external sharing regularly, prefer named-person sharing over anyone-links for personal data, and include “transfer files and links” in every leaver checklist.",
       {tip:"When a project ends, tidy up: remove people who no longer need access, set links back to restricted, and move the final version to its long-term home."}
@@ -1378,7 +1378,7 @@ ICA.addUnit({
    {id:"t1u11-q10", lesson:"t1u11-l2", level:1, q:"What happens to an email when you archive it?", options:[
      {t:"It leaves the inbox but is kept, and stays searchable", ok:true, why:"Archiving is the safe way to clear the inbox without losing anything: you can still find the email by searching."},
      {t:"It is permanently deleted", why:"That’s deleting (and emptying the Trash), not archiving."},
-     {t:"It is sent back to the sender", why:"Archiving only changes where the email sits in your own mailbox."},
+     {t:"It is sent back to the sender", why:"Archiving only changes where the email is in your own mailbox."},
      {t:"It moves to the Spam folder, where it is deleted later", why:"That’s reporting spam, which is for unwanted bulk mail."}
    ]},
    {id:"t1u11-q11", lesson:"t1u11-l2", level:1, q:"What is the main difference between a Gmail label and a folder?", options:[
@@ -1522,7 +1522,7 @@ ICA.addUnit({
      {t:"Delete the file and start again", why:"That loses everything, including the history that could fix it."}
    ]},
    {id:"t1u11-q34", lesson:"t1u11-l4", level:1, q:"Why isn’t version history a backup?", options:[
-     {t:"It lives with the file, in the same account", ok:true, why:"It’s in the same account and service as the file, and only for a limited time. If the file or account is deleted, its history usually goes too. Backups are separate copies."},
+     {t:"It is kept with the file, in the same account", ok:true, why:"It’s in the same account and service as the file, and only for a limited time. If the file or account is deleted, its history usually goes too. Backups are separate copies."},
      {t:"It only keeps the first version", why:"It keeps many versions, but they’re still tied to the same file and account."},
      {t:"It is stored on your own computer, not with the file", why:"In cloud editors it’s stored with the file in the cloud."},
      {t:"Nobody can open it", why:"You can open and restore versions; the issue is where they live and for how long."}
@@ -1547,7 +1547,7 @@ ICA.addUnit({
      {t:"An alert that notifies everyone", why:"That’s a broadcast mention such as @channel."}
    ]},
    {id:"t1u11-q38", lesson:"t1u11-l5", level:1, q:"When should you use @channel or @everyone?", options:[
-     {t:"Rarely, for urgent news every member needs", ok:true, why:"Use it only for time-sensitive information that every member genuinely needs. It interrupts everyone, often on their phones. Overuse teaches people to mute the channel."},
+     {t:"Rarely, for urgent news every member needs", ok:true, why:"Use it only for time-sensitive information that every member needs. It interrupts everyone, often on their phones. Overuse teaches people to mute the channel."},
      {t:"Whenever you want a quick answer", why:"Mention the person who can answer instead."},
      {t:"For every message, so nobody misses anything", why:"People will mute the channel and miss the important ones."},
      {t:"Never: it doesn’t do anything", why:"It notifies every member, which is why it should be used sparingly."}

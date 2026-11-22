@@ -27,7 +27,7 @@ ICA.addUnit({
    learn:[
     {h:"From your device to everyone’s", body:[
       {lead:"A page on your own device is like a poster in your drawer. To let anyone see it, you need a wall in a public place that never closes."},
-      "So far your pages have lived in the Web Lab or in files on your device. Only you can open them. For a page to have a web address that works for anyone, anywhere, at any time, its files have to sit on a [[web-server|web server]]. This is a computer that is always on, always connected, and ready to answer browsers’ requests.",
+      "So far your pages have been in the Web Lab or in files on your device. Only you can open them. For a page to have a web address that works for anyone, anywhere, at any time, its files have to be on a [[web-server|web server]]. This is a computer that is always on, always connected, and ready to answer browsers’ requests.",
       "Very few people run their own server. Instead they use [[hosting]]: a company keeps servers in [[data-center|data centers]], with backup power and fast connections, and stores your files on them. You rent space (or get it free), and the host answers every visitor for you.",
       "When someone opens your address, the steps are the ones you met in Digital Foundations ({{how-the-web-works}}). The browser looks up the name with [[dns|DNS]]. It connects to the host’s server and asks for a file such as `index.html`. It gets the file back. Then it asks for the style sheet, the images and the scripts the page mentions.",
       {key:"Hosting means renting space on an always-on computer that answers visitors for you. Publishing means putting your files there."}
@@ -212,13 +212,13 @@ ICA.addUnit({
         "Select **+** (top right), then **New repository**.",
         "Type a name. It becomes part of the address, so keep it short and lower case: `garden-club`. (For your main personal site you can instead name it exactly `your-username.github.io`, in lower case; see the table in the next section.)",
         "Choose **Public**, and turn on **Add README** so the repository isn’t empty. Select **Create repository**.",
-        "On the repository’s main page, open the **Add file** menu and select **Upload files**. (On a narrow phone screen, these options may sit in the **⋯** menu beside **Code**.)",
+        "On the repository’s main page, open the **Add file** menu and select **Upload files**. (On a narrow phone screen, these options may be in the **⋯** menu beside **Code**.)",
         "Add your files. **On a computer**, open your site folder, select everything **inside** it, and drag it onto the page; folders such as `images/` keep their structure. **On a phone**, tap **choose your files** and pick several files at once from your files or photos.",
         "Under the files, write a commit message, such as “Add first version of site”, and select **Commit changes**."
       ]},
       "Limits for browser uploads: up to **100 files at a time**, and each file up to **25 MiB**. A web page’s files are almost always far smaller; if a photo is near that size, it’s too big for a web page anyway (Lesson 4).",
       {tip:"A phone can’t upload a folder. To put pictures in `images/`, first make the folder. Choose **Add file → Create new file** and type `images/notes.txt`. Typing the slash turns `images` into a folder. Add a word or two and commit. Then open the `images` folder and use **Add file → Upload files** there. Uploads go into the folder you’re looking at."},
-      {warn:"The most common first-time mistake is dragging the **whole folder** onto the page instead of its contents. The site then sits at `my-site/index.html`, not at the top level. So the address shows a 404. If the repository has a README, you see just the README’s text, because Pages falls back to `README.md` when there’s no top-level `index.html`. Fix it by uploading the folder’s contents at the top level. Then open the extra folder and choose **⋯ → Delete directory**."}
+      {warn:"The most common first-time mistake is dragging the **whole folder** onto the page instead of its contents. The site is then at `my-site/index.html`, not at the top level. So the address shows a 404. If the repository has a README, you see just the README’s text, because Pages falls back to `README.md` when there’s no top-level `index.html`. Fix it by uploading the folder’s contents at the top level. Then open the extra folder and choose **⋯ → Delete directory**."}
     ]},
     {h:"Turn on GitHub Pages", body:[
       {ol:[
@@ -263,7 +263,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u5-l2-x1", type:"mcq", q:"Amara’s GitHub username is shown here as `your-username` (it stands for her real one), and her repository is called `garden-club`. She publishes it with GitHub Pages from `main`, `/ (root)`. What is the site’s address?", options:[
-      {t:"`https://your-username.github.io/garden-club/`", ok:true, why:"A project site lives at username.github.io followed by the repository name."},
+      {t:"`https://your-username.github.io/garden-club/`", ok:true, why:"A project site is at username.github.io followed by the repository name."},
       {t:"`https://garden-club.github.io/`", why:"The first part of the address is the account name, not the repository name."},
       {t:"`https://github.com/your-username/garden-club`", why:"That’s the repository page, where the files are listed. The published site is on github.io."},
       {t:"`https://your-username.github.io/`", why:"That address belongs to a user site, from a repository named `your-username.github.io`."}
@@ -305,7 +305,7 @@ ICA.addUnit({
       {t:"A text file with the club’s email password", b:1, why:"Passwords never go in a repository. Once committed, it stays in the history even if you delete the file later."},
       {t:"Draft notes about a member’s complaint", b:1, why:"Private notes aren’t for a public repository; anyone can read them there."}
     ]},
-      {id:"t2u5-l2-x8", type:"explain", q:"Lin drags her whole `my-site` folder onto a new GitHub repository and turns on Pages, but her site’s address shows a 404. Explain the likely cause and the fix.", size:"2–3 sentences", hint:"Where does GitHub Pages look for the home page?", model:"GitHub Pages serves the `index.html` at the top level of the publishing source when someone opens the site’s address. Dragging the whole folder put the files one level down, at `my-site/index.html`. So there is no `index.html` at the top, and the address finds nothing. The fix is to upload the folder’s contents instead. Then `index.html` (exactly that name, in lower case) sits at the top level. Wait for the deploy to finish and check again.", points:["Says Pages looks for `index.html` at the top level", "Says dragging the folder put the files one level down", "Fixes it by placing the folder’s contents at the top level", "Mentions the exact lower-case name `index.html` or waiting for the deploy"]}
+      {id:"t2u5-l2-x8", type:"explain", q:"Lin drags her whole `my-site` folder onto a new GitHub repository and turns on Pages, but her site’s address shows a 404. Explain the likely cause and the fix.", size:"2–3 sentences", hint:"Where does GitHub Pages look for the home page?", model:"GitHub Pages serves the `index.html` at the top level of the publishing source when someone opens the site’s address. Dragging the whole folder put the files one level down, at `my-site/index.html`. So there is no `index.html` at the top, and the address finds nothing. The fix is to upload the folder’s contents instead. Then `index.html` (exactly that name, in lower case) is at the top level. Wait for the deploy to finish and check again.", points:["Says Pages looks for `index.html` at the top level", "Says dragging the folder put the files one level down", "Fixes it by placing the folder’s contents at the top level", "Mentions the exact lower-case name `index.html` or waiting for the deploy"]}
    ],
    apply:{intro:"Publish a real site. If you don’t have files ready, create `index.html` directly on GitHub with the example from this lesson (change the words to your own).", tasks:[
      {t:"Create the repository and your home page", how:[
@@ -356,7 +356,7 @@ ICA.addUnit({
       "You register a domain through a [[registrar]]: a company accredited to sell registrations for top-level domains such as `.com`, `.org` or a country code. Many registrars exist; prices and extras vary, so compare a few.",
       {list:[
         "**It’s a registration for a period.** ICANN (which coordinates generic top-level domains) describes registering a name for the period you pay for, typically **one to ten years**. Renew to keep it.",
-        "**Compare renewal prices**, not just first-year offers. MDN gives about $5–15 a year as typical, with variation by ending and by registrar.",
+        "**Compare renewal prices** as well as first-year offers. MDN gives about $5–15 a year as typical, with variation by ending and by registrar.",
         "**Turn on auto-renew** and keep the account’s email address current. For generic domains, ICANN says registrars must send renewal reminders about **one month** and **one week** before expiry, and a notice within **five days after**. Those emails go to the address on file.",
         "**Protect the registrar account** with a strong password and two-step verification ({{mfa}}). Whoever controls it controls where your name points."
       ]},
@@ -364,7 +364,7 @@ ICA.addUnit({
       {tip:"Put the renewal date in your calendar with a reminder two months before, even with auto-renew on. Cards expire, and a failed payment is the most common way people lose a domain they wanted."}
     ]},
     {h:"How DNS points a name at a host", body:[
-      "Your domain’s [[dns-record|DNS records]] live with a **DNS provider**, usually your registrar unless you choose another. Each record answers one question about one name:",
+      "Your domain’s [[dns-record|DNS records]] are kept with a **DNS provider**, usually your registrar unless you choose another. Each record answers one question about one name:",
       {table:[
         ["Record","Answers","Example value"],
         ["[[a-record|A]]","Which IPv4 address is this name at?","`185.199.108.153`"],
@@ -747,7 +747,7 @@ ICA.addUnit({
         ["Link to a hosted form (for example Google Forms or Microsoft Forms)","Free; replies collected for you","Visitors’ answers go to that company"],
         ["A form service your page sends to (for example Formspree, or Netlify Forms on Netlify)","Looks like part of your site","Free plans have limits; it stores visitors’ messages"]
       ]},
-      "Whatever you choose, mention it in your privacy notice, because visitors’ names and messages are [[personal-data|personal data]]. Never put your home address or private phone number on a public site unless you truly need to.",
+      "Whatever you choose, mention it in your privacy notice, because visitors’ names and messages are [[personal-data|personal data]]. Never put your home address or private phone number on a public site unless you need to.",
       "**Spam** finds every public form. Form services usually offer protections. One is a [[honeypot-field|honeypot field]], a field hidden from people, so only bots fill it in and get rejected. Another is a challenge such as a CAPTCHA. Another is a limit on how often one sender can submit. Turn them on. Don’t try to block spam by obscuring an email address with tricks that also confuse screen readers."
     ]},
     {h:"Security basics for a static site", body:[
@@ -784,7 +784,7 @@ ICA.addUnit({
       {t:"index.html and the other pages", b:0, why:"Every committed file and its past versions are in the repository."},
       {t:"The images folder", b:0, why:"Uploaded images are committed files like any other."},
       {t:"The CNAME file with his domain", b:0, why:"Saving a custom domain (when publishing from a branch) commits this file."},
-      {t:"The DNS records at his DNS provider", b:1, why:"DNS lives with the DNS provider, not in GitHub."},
+      {t:"The DNS records at his DNS provider", b:1, why:"DNS is kept with the DNS provider, not in GitHub."},
       {t:"The registrar login and the renewal date", b:1, why:"These are with the registrar; a private note helps him (or a successor) find them."},
       {t:"The settings of his contact-form service", b:1, why:"The form service keeps its own settings and stored messages."}
     ]},
@@ -871,7 +871,7 @@ ICA.addUnit({
     summary:"Where a website’s files live: free static hosts, paid hosting for dynamic sites, and how to compare them by limits, rules and real costs.",
     levels:{
      starter:[
-      "A website’s files have to live on a computer that is always on and connected, so anyone can visit at any time. Renting space on such a computer is called [[hosting]].",
+      "A website’s files have to be stored on a computer that is always on and connected, so anyone can visit at any time. Renting space on such a computer is called [[hosting]].",
       "Think of it like a market stall: you could build your own shop (run your own server), but most people rent a stall in a market that already has a roof, power and opening hours.",
       {list:[
         "**Free static hosts**, such as GitHub Pages, Netlify and Cloudflare Pages, serve ready-made HTML, CSS, JavaScript and image files. Perfect for portfolios, clubs, class projects and documentation.",
@@ -935,7 +935,7 @@ ICA.addUnit({
       "**Security surface.** A static host has no application code of yours handling input, so whole classes of attack (SQL injection, server-side request forgery) don’t apply. Risks remain in what you ship: third-party scripts, client-side code that writes untrusted text into the page (cross-site scripting), and leaked secrets in the repository.",
       "**Jekyll on GitHub Pages.** When publishing from a branch, Pages runs Jekyll by default. Files and folders starting with an underscore are treated specially and may not be published. To skip Jekyll entirely, add an empty file named `.nojekyll` at the top of the publishing source. For other generators, GitHub recommends a custom GitHub Actions workflow.",
       "**Server languages.** GitHub’s documentation states that Pages does not support server-side languages such as PHP, Ruby or Python. A `.php` file is served as a file, not run.",
-      "**Choosing.** Start static unless a feature truly needs server-side code; you can add a service for that one feature later, without rebuilding everything."
+      "**Choosing.** Start static unless a feature needs server-side code; you can add a service for that one feature later, without rebuilding everything."
      ]
     },
     related:["hosting-options","github-pages","how-the-web-works"],
@@ -976,7 +976,7 @@ ICA.addUnit({
       "**Allowed use:** not as free hosting for an online business, e-commerce or commercial SaaS, and not for sensitive transactions. Educational copies of other sites need your own code, no data collection and a prominent disclaimer.",
       "**Publishing sources.** *Deploy from a branch* runs a GitHub-managed workflow that builds with Jekyll (unless `.nojekyll` is present) and deploys. *GitHub Actions* as the source lets you write your own workflow (checkout, build, `upload-pages-artifact`, `deploy-pages`), needed for other static site generators or for repositories with symbolic links.",
       "**Failed deploys.** Read the run’s log. For errors on GitHub’s side or timeouts, re-run the job (**Re-run jobs → Re-run failed jobs**) or push a new commit. Commits pushed by a workflow using `GITHUB_TOKEN` don’t trigger a Pages build. If a branch-published site never builds, make sure someone with admin rights and a verified email has pushed to it.",
-      "**Paths.** Project sites live under `/repo-name/`, so root-relative paths (`/style.css`) point outside the project. Use relative paths, or include the repository name.",
+      "**Paths.** Project sites are found under `/repo-name/`, so root-relative paths (`/style.css`) point outside the project. Use relative paths, or include the repository name.",
       "**Visibility.** Pages sites are public on the internet even when the repository is private (on plans that allow that). Private publishing with access control exists only on GitHub Enterprise Cloud."
      ]
     },
@@ -1065,7 +1065,7 @@ ICA.addUnit({
       "**IPv6.** If you add AAAA records, keep the A records: IPv6 isn’t available on every network.",
       "**CAA records** restrict which certificate authorities may issue for the domain. With GitHub Pages, one must permit `letsencrypt.org`.",
       "**Verification record name** for GitHub: `_github-pages-challenge-USERNAME.example.com` (or the organization name). Keep it in place to stay verified.",
-      "**Email records.** If you use email at your domain, its MX and TXT (SPF, DKIM, DMARC) records sit beside the website records. Change only the records you need to."
+      "**Email records.** If you use email at your domain, its MX and TXT (SPF, DKIM, DMARC) records are beside the website records. Change only the records you need to."
      ]
     },
     related:["dns","custom-domains","https-certificates","ip-addresses"],
@@ -1272,7 +1272,7 @@ ICA.addUnit({
       "**A privacy notice for a small site** can be a short page: who runs the site and how to contact them; what is collected (for example, messages sent through the contact form); which outside services receive data (the host, the form service, any analytics); how long you keep it; and how people can ask for their data to be deleted."
      ],
      pro:[
-      "**Storage, not just cookies.** EU rules concern storing or reading information on the visitor’s device: cookies, localStorage and similar technologies alike. Server-side logging is governed by data-protection law (such as the GDPR) rather than cookie rules.",
+      "**Storage as well as cookies.** EU rules concern storing or reading information on the visitor’s device: cookies, localStorage and similar technologies alike. Server-side logging is governed by data-protection law (such as the GDPR) rather than cookie rules.",
       "**Lawful basis and minimization.** Under the GDPR, processing personal data needs a lawful basis and should be limited to what’s necessary. IP addresses can be personal data. Purely personal or household activity is outside the GDPR’s scope, but a club, business or public-facing project usually isn’t purely personal.",
       "**Third parties.** Each embedded service is a separate organization receiving data. Their terms and privacy statements matter; some offer data-processing agreements for organizations.",
       "**Forms.** Decide how long you keep messages and who can read them. Don’t ask for more than you need. Forms on GitHub Pages must post to an outside service: GitHub says Pages sites shouldn’t be used for sensitive transactions such as passwords or card numbers.",
@@ -1322,7 +1322,7 @@ ICA.addUnit({
       "**Dependencies.** Pin outside scripts to a specific version, prefer self-hosting small libraries, and consider Subresource Integrity (`integrity` attribute) for scripts from a CDN, so a changed file is refused.",
       "**Handover.** For club or community sites, document the setup and add a second trusted owner so the site survives a volunteer leaving. An organization account on GitHub helps here.",
       "**Retiring a site.** Unpublish Pages, then remove DNS records (to prevent takeovers), let the domain lapse or transfer it deliberately, and leave a note where visitors might look.",
-      "**Logs of change.** Clear commit messages turn history into documentation: future you can see why a change was made, not just what changed."
+      "**Logs of change.** Clear commit messages turn history into documentation: future you can see why a change was made as well as what changed."
      ]
     },
     related:["github-pages","backup","site-privacy-legal","custom-domains"],
@@ -1337,7 +1337,7 @@ ICA.addUnit({
    {id:"static-site", term:"Static site", def:"A website whose server sends the same ready-made files to every visitor. JavaScript can still make it interactive in the browser.", codex:"static-vs-dynamic"},
    {id:"dynamic-site", term:"Dynamic site", def:"A website where a program on the server builds pages for each request, often from a database. Shops, logins and social networks work this way.", codex:"static-vs-dynamic"},
    {id:"deploy", term:"Deploy", def:"To copy a site’s files to its host and make that version the live one. Each new deploy replaces what visitors see.", codex:"hosting-options"},
-   {id:"repository", term:"Repository (repo)", def:"A project folder that Git looks after: the files plus the history of every saved change. It can live on your computer, on a service such as GitHub, or both.", codex:"github-pages"},
+   {id:"repository", term:"Repository (repo)", def:"A project folder that Git looks after: the files plus the history of every saved change. It can be stored on your computer, on a service such as GitHub, or both.", codex:"github-pages"},
    {id:"commit", term:"Commit", def:"A saved snapshot of the files in a repository, with a short message describing what changed. On GitHub Pages, each commit to the publishing branch starts a new deploy.", codex:"github-pages"},
    {id:"branch", term:"Branch", def:"A line of history in a repository. New repositories start with one called `main`; GitHub Pages publishes from the branch you choose.", codex:"github-pages"},
    {id:"publishing-source", term:"Publishing source", def:"The branch and folder (`/ (root)` or `/docs`) that GitHub Pages publishes, or a GitHub Actions workflow if you choose that instead.", codex:"github-pages"},
@@ -1602,7 +1602,7 @@ ICA.addUnit({
      {t:"Make the repository private and keep the password", why:"It may already have been copied, and on the free plan Pages would stop. Change it."}
    ]},
    {id:"t2u5-q39", lesson:"t2u5-l5", level:2, q:"Which of these is **not** kept in your GitHub repository’s history?", options:[
-     {t:"Your domain’s DNS records", ok:true, why:"DNS records live at your DNS provider; keep a private note of them."},
+     {t:"Your domain’s DNS records", ok:true, why:"DNS records are kept at your DNS provider; keep a private note of them."},
      {t:"Earlier versions of index.html", why:"Every committed version is kept."},
      {t:"The images you uploaded", why:"Uploaded images are commits like any other file."},
      {t:"The CNAME file created when you saved a custom domain", why:"When publishing from a branch, saving the domain commits that file."}

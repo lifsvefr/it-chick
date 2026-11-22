@@ -53,7 +53,7 @@ ICA.addUnit({id:"e3u12",
      ]},
     {h:"Signals of the writer’s view",
      body:[
-      "The writer’s view lives in the sentence endings. Academic Japanese explains the same endings for reports ({{sentence-endings-japanese}}); at N3, learn to read them as “this is what I think”.",
+      "The writer’s view is shown in the sentence endings. Academic Japanese explains the same endings for reports ({{sentence-endings-japanese}}); at N3, learn to read them as “this is what I think”.",
       {table:[
         ["Ending or phrase","What the writer does","Example"],
         ["〜と思う / 〜と考える","Gives an opinion","[練習]{れんしゅう}は毎日[続]{つづ}けることが大切だと思う。"],

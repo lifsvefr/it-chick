@@ -69,7 +69,7 @@ ICA.addUnit({
       ]},
       "Choose the single verb that matches your exact meaning. “Rents went up” could become “Rents rose”, “Rents increased” or, if the change was large, “Rents rose sharply”.",
       {h:"3. Context matters"},
-      "Some phrasal verbs sit in the middle. “Look at” and “find out” appear in published academic writing too, especially in less formal fields and in spoken presentations. In a formal essay, a single verb is the safer choice, but nobody will fail you for one “look at”.",
+      "Some phrasal verbs are in the middle. “Look at” and “find out” appear in published academic writing too, especially in less formal fields and in spoken presentations. In a formal essay, a single verb is the safer choice, but nobody will fail you for one “look at”.",
       {warn:"**Check the grammar of the new verb.** Single verbs often don’t take the small word of the phrasal verb. You “talk about” a topic but you “discuss” it, with no “about”: “The report discusses water prices”, never “discusses about”. In the same way you “investigate” a problem (not “investigate into”), though you can carry out “an investigation into” it. A [[learner-dictionary]] shows the pattern for each verb."}
     ]},
     {h:"“You” and the writer’s voice", body:[
@@ -81,7 +81,7 @@ ICA.addUnit({
         ["When you move to a new city, you often feel isolated.","People who move to a new city often feel isolated."]
       ]},
       "The best replacement is usually a **specific noun** (smokers, new residents, teachers, readers), a **process noun** (smoking, migration) or a sentence about the evidence itself (“Table 2 shows…”). The pronoun “one” (“One can see…”) is correct but sounds very formal, even old-fashioned, to many readers, so use it rarely.",
-      "What about “I” and “we”? This genuinely varies. Many fields, and style guides such as APA, now accept or recommend “I” or “we” for what the authors did (“We interviewed 30 nurses”). Other fields and some tutors prefer impersonal forms (“Thirty nurses were interviewed”). Check your department’s guidance or recent articles in your field. Research Skills covers this in {{academic-style}}."
+      "What about “I” and “we”? This varies. Many fields, and style guides such as APA, now accept or recommend “I” or “we” for what the authors did (“We interviewed 30 nurses”). Other fields and some tutors prefer impersonal forms (“Thirty nurses were interviewed”). Check your department’s guidance or recent articles in your field. Research Skills covers this in {{academic-style}}."
     ]},
     {h:"Vague and conversational words", body:[
       "Some words are fine in speech because the listener can see what you mean. In writing they leave the reader guessing. Replace them with something specific.",
@@ -113,7 +113,7 @@ ICA.addUnit({
       {tip:"Quotations keep their original spelling. If you quote an American source in a UK-spelled essay, don’t “correct” its spelling."}
     ]},
     {h:"Putting it together", body:[
-      "Here is how the changes work together. Each step fixes one feature, and the meaning becomes clearer at every step, not just more formal.",
+      "Here is how the changes work together. Each step fixes one feature, and the meaning becomes clearer at every step, and not only more formal.",
       {fig:'<svg viewBox="0 0 340 352"><defs><marker id="e1u2m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="10" y="10" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="32">Researchers haven’t looked into</text><text x="20" y="51">this stuff much.</text><path class="d-ink" d="M30,64 L30,92" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="83">1 Contraction → full form</text><rect class="d-gold" x="10" y="96" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="118">Researchers have not looked into</text><text x="20" y="137">this stuff much.</text><path class="d-ink" d="M30,150 L30,178" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="169">2 Phrasal verb → single verb</text><rect class="d-lup" x="10" y="182" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="204">Researchers have not investigated</text><text x="20" y="223">this stuff much.</text><path class="d-ink" d="M30,236 L30,264" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="255">3 Vague words → specific words</text><rect class="d-sage" x="10" y="268" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="290">Few studies have investigated the</text><text x="20" y="309">long-term effects of night-shift work.</text><text class="s" x="170" y="342" text-anchor="middle">Same idea, more precise wording</text></svg>', alt:"Four boxes, top to bottom, joined by arrows. Box 1: Researchers haven’t looked into this stuff much. Arrow labeled 1, contraction to full form. Box 2: Researchers have not looked into this stuff much. Arrow labeled 2, phrasal verb to single verb. Box 3: Researchers have not investigated this stuff much. Arrow labeled 3, vague words to specific words. Box 4: Few studies have investigated the long-term effects of night-shift work.", cap:"Three small changes turn a spoken sentence into an academic one. The biggest gain is the last: saying exactly what “this stuff” was."},
       "Notice step 3. “Not … much” became “Few studies”, and “this stuff” became the actual topic. That step needed knowledge of the subject, not just better vocabulary. Formal writing often forces you to decide what you really mean.",
       {table:[
@@ -255,7 +255,7 @@ ICA.addUnit({
         ["Comma splice with “however”","The policy was popular, however it was expensive.","The policy was popular; however, it was expensive."],
         ["Run-on","More research is needed it should cover a full year.","More research is needed. It should cover a full year."]
       ]},
-      "“However” and its relatives can also sit inside a clause, between commas: “The policy, however, was expensive.” And “therefore” often sits inside a clause with no commas at all: “The sample was therefore small.”",
+      "“However” and its relatives can also come inside a clause, between commas: “The policy, however, was expensive.” And “therefore” often comes inside a clause with no commas at all: “The sample was therefore small.”",
       {tip:"One exception: when “however” means “in whatever way”, it is not a transition and takes no comma after it: “However the data are analyzed, the trend remains.”"}
     ]},
     {h:"Fragments", body:[
@@ -429,7 +429,7 @@ ICA.addUnit({
     {h:"The passive: useful, but watch who disappears", body:[
       "In an **active** sentence, the subject does the action: “The team **measured** the samples.” In a [[passive-voice|passive]] sentence, the thing acted on becomes the subject: “The samples **were measured** (by the team).” The passive is formed with **be + past participle**, and it works in every tense: is measured, was measured, has been measured, will be measured, can be measured.",
       {warn:"Passive is not the same as past. “The samples are stored at −20 °C” is a present passive. “The team measured the samples” is past but active."},
-      "The passive is genuinely useful when:",
+      "The passive is useful when:",
       {list:[
         "**The actor is unknown, obvious or unimportant.** In a methods section, readers care what was done to the samples, not which assistant did it: “The samples were weighed twice.”",
         "**You want to keep the topic at the start of the sentence.** “The water samples were collected in May. They were then filtered and stored at 4 °C.” (Lesson 4 explains why topic-first order helps readers.)",
@@ -544,7 +544,7 @@ ICA.addUnit({
       {ex:"Community health workers have improved access to basic care in many rural areas. They visit homes and treat common illnesses. [Drift →] Hospitals in capital cities have also opened new specialist wards. [← Drift] Because they live in the communities they serve, they often know which families need help.", label:"Spot the drift"},
       "The marked sentence may be true, but it is about city hospitals, not rural health workers. It breaks the paragraph’s promise.",
       {h:"Concluding and linking sentences"},
-      "A concluding sentence should not just repeat the topic sentence in other words. It can say why the point matters (“This suggests that…”), qualify it (“This effect, however, was limited to…”), or link forward (“…which the next section examines”). In a short paragraph inside a longer essay, a link to the next paragraph is often more useful than a summary."
+      "A concluding sentence should do more than repeat the topic sentence in other words. It can say why the point matters (“This suggests that…”), qualify it (“This effect, however, was limited to…”), or link forward (“…which the next section examines”). In a short paragraph inside a longer essay, a link to the next paragraph is often more useful than a summary."
     ]},
     {h:"Cohesion and coherence", body:[
       "These two words sound alike and are often confused.",
@@ -725,7 +725,7 @@ ICA.addUnit({
       "A hedge can also come from **distancing**: “It has been suggested that…”, “According to Mensah (2020)…” (an invented example). These show that a claim comes from others and is not yet settled."
     ]},
     {h:"A scale of certainty", body:[
-      "Hedges and boosters sit on a scale. This is a rough guide: the exact strength of each word depends on the sentence and the field.",
+      "Hedges and boosters fall on a scale. This is a rough guide: the exact strength of each word depends on the sentence and the field.",
       {fig:'<svg viewBox="0 0 340 352"><text x="170" y="18" text-anchor="middle">More certain</text><rect class="d-rose" x="10" y="28" width="320" height="52" rx="6" stroke-width="2"/><text x="20" y="48">Certain (booster)</text><text class="s" x="20" y="68">X causes Y. It is clear that X causes Y.</text><rect class="d-gold" x="10" y="88" width="320" height="52" rx="6" stroke-width="2"/><text x="20" y="108">Very likely</text><text class="s" x="20" y="128">X almost certainly causes Y.</text><rect class="d-sage" x="10" y="148" width="320" height="52" rx="6" stroke-width="2"/><text x="20" y="168">Likely</text><text class="s" x="20" y="188">X probably causes Y. X is likely to cause Y.</text><rect class="d-lup" x="10" y="208" width="320" height="52" rx="6" stroke-width="2"/><text x="20" y="228">Possible</text><text class="s" x="20" y="248">X may (could) cause Y. It is possible that…</text><rect class="d-panel" x="10" y="268" width="320" height="52" rx="6" stroke-width="2"/><text x="20" y="288">Weaker possibility</text><text class="s" x="20" y="308">X might cause Y. One possibility is that…</text><text x="170" y="342" text-anchor="middle">Less certain</text></svg>', alt:"A vertical scale from more certain at the top to less certain at the bottom. Certain, a booster: X causes Y; it is clear that X causes Y. Very likely: X almost certainly causes Y. Likely: X probably causes Y; X is likely to cause Y. Possible: X may or could cause Y; it is possible that. Weaker possibility: X might cause Y; one possibility is that.", cap:"Choose the level the evidence supports. The boundaries are rough, not fixed rules."},
       "For the matching scale of reporting verbs (proves, shows, suggests, may contribute to), see {{academic-style}} in Research Skills."
     ]},

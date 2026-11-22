@@ -183,7 +183,7 @@ ICA.addUnit({
         "Nurses and care workers from the Philippines, India, Nigeria and the Caribbean in hospitals and care homes in many richer countries."
       ]},
       "Labor migration can be highly skilled or less skilled, regular or irregular, short or long. Many schemes tie a worker’s visa to one employer. You’ll look at those systems (such as [[kafala]] in several Gulf states) and at migrant workers’ rights in {{migrant-workers-rights|Unit 11}}.",
-      "Researchers avoid the shortcut “economic migrant” as if it were a separate kind of person. Wanting a better income is one of the oldest human reasons to move, and it often sits alongside family, safety and ambition."
+      "Researchers avoid the shortcut “economic migrant” as if it were a separate kind of person. Wanting a better income is one of the oldest human reasons to move, and it often goes together with family, safety and ambition."
     ]},
     {h:"Family and study", body:[
       "[[family-migration|Family migration]] means moving to join, or move with, family members. Examples are a spouse joining a partner abroad, children joining parents, parents joining adult children, or a family moving together. In many richer countries family reunification is one of the largest routes for long-term immigrants. Marriage migration is a big part of it: many marriages link South Korea or Taiwan with Viet Nam or the Philippines, for example. Inside India, as Lesson 1 showed, marriage is the main reason women are recorded as migrants.",

@@ -16,7 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t3u9-l1", title:"What a database is", minutes:50,
-   hook:{q:"Which of these almost certainly has an SQL database engine running inside it?", options:["A smartphone","A web browser such as Chrome, Firefox or Safari","Both of them","Neither: databases only live on big servers"], answer:2, reveal:"**Both.** SQLite, a small database engine, is built into every Android phone and iPhone and into the Chrome, Firefox and Safari browsers, according to SQLite’s own documentation. Apps use it to keep messages, settings and history. Databases aren’t only giant systems in data centers. This lesson explains what a database is, how its tables link together, and when it beats one big spreadsheet."},
+   hook:{q:"Which of these almost certainly has an SQL database engine running inside it?", options:["A smartphone","A web browser such as Chrome, Firefox or Safari","Both of them","Neither: databases only run on big servers"], answer:2, reveal:"**Both.** SQLite, a small database engine, is built into every Android phone and iPhone and into the Chrome, Firefox and Safari browsers, according to SQLite’s own documentation. Apps use it to keep messages, settings and history. Databases aren’t only giant systems in data centers. This lesson explains what a database is, how its tables link together, and when it beats one big spreadsheet."},
    goals:[
      "Say what a database, a table, a row and a column are",
      "Explain primary keys and foreign keys, and draw how tables link",
@@ -29,12 +29,12 @@ ICA.addUnit({
       {lead:"A community garden starts with one spreadsheet. It works well, until it doesn’t."},
       "Picture an invented community garden. Members rent plots in three beds (North, South and East) and log every harvest. At first one sheet holds everything: who picked it, the year they joined, their bed and plot size, the crop, the weight and the month.",
       {ex:"member | joined | bed   | crop     | kg\nAma    | 2021   | North | beans    | 2.5\nAma    | 2021   | North | tomatoes | 4\nBilal  | 2024   | North | beans    | 1\nChen   | 2019   | South | kale     | 3.5", mono:true, label:"One big sheet (invented)"},
-      "After a season the cracks show. Ama’s joining year and bed are typed again on every harvest she logs. One typo (“Amma”) quietly creates a second Ama. If Ama moves to the South bed, every one of her rows must change, and missing one makes the sheet disagree with itself. And where do you record a new member who hasn’t harvested anything yet? There’s no row for them unless you invent a fake harvest.",
+      "After a season the cracks show. Ama’s joining year and bed are typed again on every harvest she logs. One typo (“Amma”) creates a second Ama. If Ama moves to the South bed, every one of her rows must change, and missing one makes the sheet disagree with itself. And where do you record a new member who hasn’t harvested anything yet? There’s no row for them unless you invent a fake harvest.",
       "A database fixes this by giving each kind of thing its own table: one for members, one for plots, one for harvests. Each fact is stored once, and the tables are linked by ID numbers. This is Unit 2’s advice to split data into tables joined by a [[primary-key-sheet|key column]], taken all the way.",
       {key:"A database stores each fact once, in the table where it belongs, and links tables with keys. A query puts the pieces back together when you ask a question."}
     ]},
     {h:"Tables, rows and columns", body:[
-      "A [[database]] is an organized collection of data that a program can search, change and combine. The databases in this unit are **relational**: the data lives in tables that relate to each other.",
+      "A [[database]] is an organized collection of data that a program can search, change and combine. The databases in this unit are **relational**: the data is kept in tables that relate to each other.",
       {list:[
         "A [[table-db|table]] holds one kind of thing: members, or plots, or harvests.",
         "Each [[row-record|row]] (also called a record) is one of those things: one member, one harvest.",
@@ -70,7 +70,7 @@ ICA.addUnit({
     {h:"Why not just a spreadsheet?", body:[
       "Spreadsheets are wonderful, and “Spreadsheets from scratch” (Digital Foundations, Unit 9) showed how far they go. This lesson builds on Digital Foundations Unit 12, Lesson 2, which compares {{flat-files-vs-databases|flat files and databases}} in plain terms. A database is a different tool with different strengths:",
       {table:[["Aspect","Spreadsheet","Database"],["Rules","Mostly in people’s heads, plus optional validation","In the schema: types, keys and required columns, checked on every row"],["Size","Excel stops at 1,048,576 rows per sheet","Millions of rows are routine; one SQLite file can grow to terabytes"],["Many users","Fine for a few people editing a shared sheet","Server databases serve many people and programs writing at once"],["Questions","Formulas mixed in with the data","Queries kept as text, separate from the data, and re-run any time"],["Seeing the data","Everything on screen, easy to edit by hand","You look through queries or a browsing tool"]]},
-      "A spreadsheet is still the right tool for a small table that one person keeps, a quick calculation or a chart. Many projects use both: the records live in a database, and a query’s result goes into a spreadsheet for a chart or a report. [[csv|CSV]] files are the usual bridge.",
+      "A spreadsheet is still the right tool for a small table that one person keeps, a quick calculation or a chart. Many projects use both: the records are kept in a database, and a query’s result goes into a spreadsheet for a chart or a report. [[csv|CSV]] files are the usual bridge.",
       {tip:"A common misconception is that a database is “just a big spreadsheet”. Its real differences are the structure (several linked tables), the rules it enforces, and the query language that asks questions without touching the data."}
     ]},
     {h:"Database systems, and where SQLite fits", body:[
@@ -110,7 +110,7 @@ ICA.addUnit({
       {t:"2.5 kg", flag:true, why:"The unit turns the number into text, so SUM and AVG can’t use it. Put the unit in the column name (kg) and store just 2.5."}," | ",
       {t:"2026-06", flag:false, why:"An ISO-style year and month: clear, and it sorts correctly as text."}
     ]},
-    {id:"t3u9-l1-x5", type:"mcq", q:"Why can SQLite live inside a phone app, while PostgreSQL usually runs on a separate server?", options:[
+    {id:"t3u9-l1-x5", type:"mcq", q:"Why can SQLite run inside a phone app, while PostgreSQL usually runs on a separate server?", options:[
       {t:"SQLite is a library that keeps everything in one file", ok:true, why:"Right. It runs inside the app, with no server program. Being “serverless” is exactly what lets it ship inside phones, browsers and desktop apps."},
       {t:"SQLite doesn’t use SQL, so it’s simpler", why:"It does use SQL; the name says so. You’ll write SQL for SQLite throughout this unit."},
       {t:"SQLite can only store text", why:"It stores whole numbers, decimals, text, binary data and NULL."},
@@ -123,7 +123,7 @@ ICA.addUnit({
       {t:"A one-off list of 20 party guests", why:"Small, simple and kept by one person: a spreadsheet (or a piece of paper) is the better tool."},
       {t:"A quick chart of this month’s spending", why:"A spreadsheet does this in a minute. A database would be more work for no gain."}
     ]},
-    {id:"t3u9-l1-x7", type:"explain", q:"A garden club logs every harvest in one sheet that also repeats each member’s joining year and bed on every row. Explain the problems this causes, and how a database with separate tables and keys fixes them.", model:"Repeating a member’s details on every harvest invites contradictions. A typo like “Amma” quietly creates a second person. If Ama moves bed, every row must change, so missing one makes the sheet disagree with itself. There’s also nowhere to record a member with no harvests yet. A database gives each kind of thing its own table (members, plots, harvests) and stores each fact once. Each harvest holds a `member_id`. This is a foreign key pointing to the member’s primary key. A query joins them when needed.", points:["Names a problem with repeated facts: typos or updates that miss rows", "Mentions that members with no harvests can’t be recorded", "Says each kind of thing gets its own table, storing each fact once", "Explains that primary and foreign keys link the tables"]}
+    {id:"t3u9-l1-x7", type:"explain", q:"A garden club logs every harvest in one sheet that also repeats each member’s joining year and bed on every row. Explain the problems this causes, and how a database with separate tables and keys fixes them.", model:"Repeating a member’s details on every harvest invites contradictions. A typo like “Amma” creates a second person. If Ama moves bed, every row must change, so missing one makes the sheet disagree with itself. There’s also nowhere to record a member with no harvests yet. A database gives each kind of thing its own table (members, plots, harvests) and stores each fact once. Each harvest holds a `member_id`. This is a foreign key pointing to the member’s primary key. A query joins them when needed.", points:["Names a problem with repeated facts: typos or updates that miss rows", "Mentions that members with no harvests can’t be recorded", "Says each kind of thing gets its own table, storing each fact once", "Explains that primary and foreign keys link the tables"]}
    ],
    apply:{intro:"No installs needed: the Data Lab works in any current browser, on a phone or a computer.", tasks:[
      {t:"Look inside the garden database", how:["Open **Labs → Data Lab** and choose the first SQL challenge, **SELECT two columns**.","Under the task, tap **members**, **plots** and **harvests** to see each table’s rows.","For each table, note its primary key, and any column that points at another table (a foreign key).","Find the row where `plot_id` shows NULL. What do you think it means for that member?"]},
@@ -143,7 +143,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Your first query", body:[
-      {lead:"A query is a question written in SQL. The simplest one names the columns you want and the table they live in."},
+      {lead:"A query is a question written in SQL. The simplest one names the columns you want and the table they are in."},
       {code:"SELECT crop, kg FROM harvests;", lang:"sql"},
       "`SELECT` lists the columns, separated by commas. `FROM` names the table. The semicolon ends the statement. The answer is a new table, the **result**, with one row per harvest:",
       {table:[["crop","kg"],["beans","2.5"],["tomatoes","4"],["beans","1"],["kale","3.5"],["tomatoes","8"],["beans","3"],["squash","10.5"],["kale","1.5"],["tomatoes","5.5"],["squash","6.5"]]},
@@ -274,7 +274,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t3u9-l3", title:"Counting and summarizing: GROUP BY, HAVING and NULL", minutes:55,
-   hook:{q:"The garden has six members. One of them, Eitan, has no plot, so his plot_id is NULL. What does `SELECT COUNT(plot_id) FROM members;` return?", options:["6","5","1","An error, because of the NULL"], answer:1, reveal:"**5.** `COUNT(*)` counts rows (6), but `COUNT(plot_id)` counts only the rows where plot_id has a value, and NULL means “no value”. Missing values quietly change counts and averages unless you know the rules. This lesson covers summaries (count, total, average), summaries per group, filtering groups, and how NULL behaves."},
+   hook:{q:"The garden has six members. One of them, Eitan, has no plot, so his plot_id is NULL. What does `SELECT COUNT(plot_id) FROM members;` return?", options:["6","5","1","An error, because of the NULL"], answer:1, reveal:"**5.** `COUNT(*)` counts rows (6), but `COUNT(plot_id)` counts only the rows where plot_id has a value, and NULL means “no value”. Missing values change counts and averages unless you know the rules. This lesson covers summaries (count, total, average), summaries per group, filtering groups, and how NULL behaves."},
    goals:[
      "Summarize a whole table with COUNT, SUM, AVG, MIN and MAX",
      "Use GROUP BY to get one summary row per group, following the SELECT rule",
@@ -399,7 +399,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t3u9-l4", title:"Joining tables", minutes:55,
-   hook:{q:"The members table has 6 rows and the harvests table has 10. If you combine them with `SELECT * FROM members, harvests;` and don’t say which rows belong together, how many rows come back?", options:["10","16","60","6"], answer:2, reveal:"**60.** Without a rule for matching, SQL pairs every member with every harvest: 6 × 10. Only 10 of those pairs are real (each harvest with its own grower). A join is how you tell the database which pairs to keep. This lesson covers inner joins, left joins that keep unmatched rows, and the checks that stop a join from quietly losing or doubling data."},
+   hook:{q:"The members table has 6 rows and the harvests table has 10. If you combine them with `SELECT * FROM members, harvests;` and don’t say which rows belong together, how many rows come back?", options:["10","16","60","6"], answer:2, reveal:"**60.** Without a rule for matching, SQL pairs every member with every harvest: 6 × 10. Only 10 of those pairs are real (each harvest with its own grower). A join is how you tell the database which pairs to keep. This lesson covers inner joins, left joins that keep unmatched rows, and the checks that stop a join from losing or doubling data."},
    goals:[
      "Write an inner JOIN … ON that matches a foreign key to a primary key",
      "Explain a join as “pair every row, keep the matches”, and spot a missing or wrong ON",
@@ -410,7 +410,7 @@ ICA.addUnit({
    learn:[
     {h:"Why join?", body:[
       {lead:"The garden database stores each fact once. The price is that answers are spread across tables."},
-      "The harvests table knows that harvest 5 was 8 kg of tomatoes from member 3. It doesn’t know member 3’s name; that lives in members. To answer “who grew what?”, you have to put matching rows from the two tables side by side. That’s a [[join]].",
+      "The harvests table knows that harvest 5 was 8 kg of tomatoes from member 3. It doesn’t know member 3’s name; that is in members. To answer “who grew what?”, you have to put matching rows from the two tables side by side. That’s a [[join]].",
       "In a spreadsheet you’d use a [[lookup]] (XLOOKUP or VLOOKUP) to pull each name across. A join does the same job for whole tables at once, and it’s written as part of the query rather than copied into the data."
     ]},
     {h:"An inner join, step by step", body:[
@@ -486,7 +486,7 @@ ICA.addUnit({
     {id:"t3u9-l4-x4", type:"mcq", q:"Kenji joins harvests → members → plots with two inner joins and totals kg by bed: South 21, North 9, East 5.5. That’s 35.5 kg, but the garden harvested 46 kg. What happened?", options:[
       {t:"Eitan has no plot, so the inner join to plots dropped his 10.5 kg", ok:true, why:"Right. A LEFT JOIN to plots keeps his harvest, in a group whose bed is NULL."},
       {t:"SUM ignores decimals", why:"SUM adds decimals correctly; 21 + 9 + 5.5 is exactly 35.5."},
-      {t:"GROUP BY loses one row from each bed", why:"Grouping never loses rows; every row lands in some group. The rows were lost earlier, at the join."},
+      {t:"GROUP BY loses one row from each bed", why:"Grouping never loses rows; every row belongs to some group. The rows were lost earlier, at the join."},
       {t:"The harvests table has duplicate rows", why:"Duplicates would make the total bigger, not smaller."}
     ]},
     {id:"t3u9-l4-x5", type:"spot", q:"SQLite refuses this query with “ambiguous column name”. Tap the part that causes it.", ask:"causes the error", mono:true, parts:["SELECT ",
@@ -581,7 +581,7 @@ ICA.addUnit({
     {h:"SQL injection, and why programs use placeholders", body:[
       "Websites and apps that use databases build SQL inside their code. Suppose a program glues text that someone typed straight into a query. That text can change the query itself. This is [[sql-injection|SQL injection]], a long-known and serious security flaw. OWASP, the open web-security foundation, says it can expose or change a database’s contents, and sometimes worse. The fix is simple and standard: a [[parameterised-query|parameterized query]] (also called a prepared statement). It sends the SQL with a placeholder, and sends the typed value separately. So the value is always treated as data, never as SQL. OWASP lists this as the first, primary defense. It calls hand-made “escaping” of quotes strongly discouraged.",
       {code:"import sqlite3\n\ncon = sqlite3.connect(\"garden.sqlite\")\nname = input(\"Member name: \")\nrows = con.execute(\n    \"SELECT id, joined FROM members WHERE name = ?\",\n    (name,),\n).fetchall()\nprint(rows)", lang:"py", label:"Python", cap:"The `?` is the placeholder; `(name,)` supplies its value. We tested it with `Siobhán O'Neill` (found her, apostrophe and all) and with deliberately tricky input (no rows, and no change to the query)."},
-      "You won’t write programs like this in the Data Lab, but it’s worth knowing for any app you build, and for judging tools you rely on. If you ever find a form that breaks when you type an apostrophe, report it to whoever runs the site."
+      "You won’t write programs like this in the Data Lab, but it’s useful to know for any app you build, and for judging tools you rely on. If you ever find a form that breaks when you type an apostrophe, report it to whoever runs the site."
     ]}
    ],
    try:[
@@ -589,7 +589,7 @@ ICA.addUnit({
       {t:"DB Browser asks whether to save; if she says no, the table isn’t in the file", ok:true, why:"Right. Imports and other changes stay pending until Write Changes ([[kbd:Ctrl]] + [[kbd:S]]). DB Browser asks about unsaved changes when you close it."},
       {t:"It was saved automatically when the import finished", why:"DB Browser keeps changes pending until you click Write Changes, so you can still Revert."},
       {t:"The SELECT queries deleted it", why:"SELECT only reads; it never changes or removes data."},
-      {t:"It’s saved inside the CSV file", why:"The CSV is only read. The new table lives in the database file, once written."}
+      {t:"It’s saved inside the CSV file", why:"The CSV is only read. The new table is stored in the database file, once written."}
     ]},
     {id:"t3u9-l5-x2", type:"sort", q:"Good table design, or a problem?", buckets:["Good design","A problem"], items:[
       {t:"A harvests table that stores member_id rather than the member’s name", b:0, why:"The name is stored once, in members; harvests just point at it."},
@@ -711,9 +711,9 @@ ICA.addUnit({
     levels:{
      starter:[
       "A relational database stores information as several **tables** that link together. Think of a garden club: one table lists members, one lists plots, one lists harvests. Each table holds one kind of thing; each row is one of those things; each column is one property of them.",
-      "Tables link through **keys**. Every row has an ID that names it uniquely (its primary key). A harvest row doesn’t repeat the member’s name and joining year; it just stores the member’s ID, a pointer (a foreign key). The name lives in one place, so a correction happens once.",
+      "Tables link through **keys**. Every row has an ID that names it uniquely (its primary key). A harvest row doesn’t repeat the member’s name and joining year; it just stores the member’s ID, a pointer (a foreign key). The name is stored in one place, so a correction happens once.",
       "You ask questions in **SQL**: “total kilograms per crop”, “who has no plot yet?”. The answer comes back as a new table, and the stored data is untouched.",
-      "A database isn’t just a big spreadsheet. It enforces rules (types, unique keys, required values), copes with millions of rows, and keeps its questions as re-runnable text. For a small list one person keeps, a spreadsheet is still the better tool."
+      "A database is more than a big spreadsheet. It enforces rules (types, unique keys, required values), copes with millions of rows, and keeps its questions as re-runnable text. For a small list one person keeps, a spreadsheet is still the better tool."
      ],
      builder:[
       "**The parts.** A database management system (DBMS) is the software. A **schema** describes the tables: column names, types, keys and rules, written in SQL with `CREATE TABLE`. Rows are also called records; columns are fields or attributes.",
@@ -961,7 +961,7 @@ ICA.addUnit({
      {t:"Move it, because spreadsheets can’t be backed up", why:"Spreadsheet files can be backed up like any other file."}]},
    {id:"t3u9-q08", lesson:"t3u9-l1", level:2, q:"In SQLite, inserting the text 'soon' into an INTEGER column worked without an error. Why?", options:[
      {t:"SQLite uses flexible typing on ordinary tables", ok:true, why:"Right. Declared types are preferences unless the table is STRICT. Most other systems, such as PostgreSQL, reject it; STRICT tables make SQLite reject it too."},
-     {t:"SQLite quietly turned 'soon' into the number 0 before storing it", why:"In our test it stored the text 'soon' itself, unchanged."},
+     {t:"SQLite turned 'soon' into the number 0 before storing it", why:"In our test it stored the text 'soon' itself, unchanged."},
      {t:"INTEGER means text in SQLite", why:"INTEGER means whole numbers. SQLite just doesn’t force it on ordinary tables."},
      {t:"The insert silently failed", why:"The row was stored; selecting it showed 'soon' with type text."}]},
    {id:"t3u9-q09", lesson:"t3u9-l1", level:1, q:"What is a database’s schema?", options:[

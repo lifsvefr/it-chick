@@ -317,7 +317,7 @@ ICA.addUnit({
     {h:"One side or two?", body:[
       "A **two-sided** test asks whether the means differ in either direction. A [[one-sided-test|one-sided test]] asks only about one stated direction (for example, “the new guide is faster”), and its p-value counts only that tail. When the result goes the predicted way, the one-sided p is half the two-sided one: 0.010 instead of 0.020 for the guide.",
       {list:[
-        "**Decide before seeing the data**, and only if a result in the other direction would genuinely be treated the same as “no effect”.",
+        "**Decide before seeing the data**, and only if a result in the other direction would be treated the same as “no effect”.",
         "**Switching after the fact is not allowed.** Choosing the side that matches the data doubles the real false-alarm rate: a test labeled 5% becomes a 10% test.",
         "**Two-sided is the usual default** in research, and the one most readers assume."
       ]}
@@ -483,7 +483,7 @@ ICA.addUnit({
       {t:"The table has 3 rows and 4 columns", b:0, why:"Any size works; the degrees of freedom are just (3 − 1)(4 − 1) = 6."}
     ]},
     {id:"t3u6-l4-x4", type:"number", q:"Using ŷ = 47.47 + 4.2x, what is the residual for the learner who practiced 3 hours and scored 55? (Two decimal places.)", answer:-5.07, tol:0.01, unit:"points", why:"Predicted: 47.47 + 4.2 × 3 = 60.07. Residual = observed − predicted = 55 − 60.07 = −5.07. The negative sign means the learner scored below the line.", wrongs:[
-      {v:5.07, tol:0.01, why:"That’s predicted minus observed. A residual is observed minus predicted, so it’s negative when the point sits below the line."},
+      {v:5.07, tol:0.01, why:"That’s predicted minus observed. A residual is observed minus predicted, so it’s negative when the point is below the line."},
       {v:60.07, tol:0.01, why:"60.07 is the predicted score. The residual is the gap between that and the actual 55."},
       {v:-7.17, tol:0.01, why:"That compares the score with the mean score (55 − 62.17). A residual compares it with the line’s prediction for 3 hours."}
     ]},
@@ -576,7 +576,7 @@ ICA.addUnit({
       "Each test at α = 0.05 has a 5% false-alarm rate when H₀ is true. Run many and the chances add up. If m independent tests all have true null hypotheses, the probability of **at least one** false alarm is 1 − 0.95ᵐ:",
       {table:[["Tests (m)","Chance of at least one false alarm"],["1","5%"],["5","22.6%"],["10","40.1%"],["20","64.2%"],["100","99.4%"]]},
       "We checked the 20-test row by simulation. In 10,000 sets of 20 tests with no real effects, 63.9% of sets had at least one p below 0.05 (on average about one per set).",
-      "Multiple testing creeps in quietly. You may have many outcomes, many subgroups (“it worked for women over 50”) or many time points. You may try many ways of analyzing the same data until one gives p < 0.05. That last habit is [[p-hacking]] ({{questionable-research-practices}}). The probability of at least one false alarm across a set of tests is the [[family-wise-error-rate|family-wise error rate]] (FWER)."
+      "Multiple testing creeps in without notice. You may have many outcomes, many subgroups (“it worked for women over 50”) or many time points. You may try many ways of analyzing the same data until one gives p < 0.05. That last habit is [[p-hacking]] ({{questionable-research-practices}}). The probability of at least one false alarm across a set of tests is the [[family-wise-error-rate|family-wise error rate]] (FWER)."
     ]},
     {h:"Corrections: Bonferroni and friends", body:[
       "The simplest fix is the [[bonferroni-correction|Bonferroni correction]]: with m tests, call a result significant only if p < α ÷ m (or, equivalently, multiply each p by m, capping it at 1). For 20 tests: 0.05 ÷ 20 = 0.0025. That keeps the FWER at or below 5% whatever the relationship between the tests; for 20 independent tests it is about 4.9%.",
@@ -601,7 +601,7 @@ ICA.addUnit({
       {t:"An A/B test declares a new button design better when it isn’t", b:0, why:"A false alarm: no real difference, but significance was declared."},
       {t:"A smoke alarm stays silent during a real fire", b:1, why:"H₀ (“no fire”) was false and the alarm didn’t reject it."}
     ]},
-    {id:"t3u6-l5-x2", type:"number", q:"1,000 studies are run where there is truly no effect, each producing a p-value from a valid test. About how many of the p-values will lie between 0.90 and 1.00?", answer:100, tol:5, unit:"studies", why:"When H₀ is true, p-values are spread evenly from 0 to 1. The interval 0.90 to 1.00 is a tenth of that range, so about 1,000 × 0.10 = 100 studies.", wrongs:[
+    {id:"t3u6-l5-x2", type:"number", q:"1,000 studies are run where there is no effect, each producing a p-value from a valid test. About how many of the p-values will lie between 0.90 and 1.00?", answer:100, tol:5, unit:"studies", why:"When H₀ is true, p-values are spread evenly from 0 to 1. The interval 0.90 to 1.00 is a tenth of that range, so about 1,000 × 0.10 = 100 studies.", wrongs:[
       {v:0, tol:0, why:"Large p-values aren’t rare when there is no effect. They are exactly as common as small ones."},
       {v:50, tol:3, why:"50 is the number expected *below 0.05* (5%). The range 0.90 to 1.00 is 10% wide, so expect about 100."},
       {v:900, tol:10, why:"That would be the number between 0 and 0.90. The question asks about the top tenth of the range."}
@@ -660,7 +660,7 @@ ICA.addUnit({
      {t:"Her standard error is too small, so her interval is too narrow", why:"It’s the other way round. Covering a big share of a finite population leaves less to be uncertain about."},
      {t:"She must use n = 400 in the formula, because that is the population", why:"n is always the sample size. The issue is that 120 is a large share of 400."}]},
    {id:"t3u6-cp04", lesson:"t3u6-l2", level:1, q:"A report gives a 95% confidence interval of 41% to 49% for the share of residents who use the library. What are the estimate and the margin of error?", options:[
-     {t:"Estimate 49%, margin 8 points", why:"49% is the upper end. The estimate sits in the middle, and the margin is half the width."},
+     {t:"Estimate 49%, margin 8 points", why:"49% is the upper end. The estimate is in the middle, and the margin is half the width."},
      {t:"Estimate 45%, margin 8 points", why:"8 points is the full width of the interval. The margin goes each way from the estimate: 8 ÷ 2 = 4."},
      {t:"Estimate 45%, margin 4 points", ok:true, why:"The interval is estimate ± margin. The middle of 41 and 49 is 45, and each end is 4 points away."},
      {t:"Estimate 41%, margin 4 points", why:"41% is the lower end. The estimate is the center, 45%."}]},
@@ -909,7 +909,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Conditions for inference** (OpenIntro 8.2.3): a linear trend, nearly normal residuals, constant variability and independent observations. Time-ordered data often violate independence; transformations (such as logs) can fix curvature or a funnel.",
-      "**Outliers, leverage and influence.** Points far out in x have high leverage; if they also sit off the trend, they are influential and can swing the slope (OpenIntro 8.3). Fit with and without them and report both if they matter.",
+      "**Outliers, leverage and influence.** Points far out in x have high leverage; if they are also off the trend, they are influential and can swing the slope (OpenIntro 8.3). Fit with and without them and report both if they matter.",
       "**y on x isn’t x on y.** Regressing y on x minimizes vertical distances; regressing x on y minimizes horizontal ones. The two lines differ unless r = ±1.",
       "**Regression to the mean.** With r below 1, cases extreme on x are predicted to be less extreme on y in SD terms (the predicted z for y is r × z for x). Ignoring this produces fake “treatment effects” when the most extreme cases are selected and re-measured.",
       "**Software output.** `LINEST(y, x, TRUE, TRUE)` returns an array with the slope, intercept, their standard errors, R² and more; depending on the app and version, you may need to enter it as an array formula. Regression output from R or Python also reports the residual standard error (3.01 points here) and adjusted R² (0.869 here), which penalizes extra predictors in multiple regression.",
@@ -923,7 +923,7 @@ ICA.addUnit({
     summary:"The two kinds of testing error, what power is and how to plan for it, why small significant studies exaggerate, and how to handle many tests at once.",
     levels:{
      starter:[
-      "A test can be wrong in two ways. A [[type-i-error|type I error]] is a false alarm: declaring an effect that isn’t there. A [[type-ii-error|type II error]] is a miss: failing to detect an effect that is there. α (usually 0.05) is the false-alarm rate when there is truly no effect.",
+      "A test can be wrong in two ways. A [[type-i-error|type I error]] is a false alarm: declaring an effect that isn’t there. A [[type-ii-error|type II error]] is a miss: failing to detect an effect that is there. α (usually 0.05) is the false-alarm rate when there is no effect.",
       "[[statistical-power|Power]] is the chance of detecting a real effect of a given size. Small studies often have low power: with 20 people per group and a moderate effect, only about a third of studies reach significance.",
       "Running many tests multiplies false alarms. With 20 tests of things that don’t work, the chance of at least one “significant” result is about 64%. Corrections such as [[bonferroni-correction|Bonferroni]] set a stricter bar for each test.",
       {key:"Ask three things of any significant finding: how many tests were run, how big the study was, and whether the main question was fixed in advance."}
@@ -1203,7 +1203,7 @@ ICA.addUnit({
      {t:"2", why:"2 is the Bonferroni (and Holm) count. BH compares each sorted p with a rising limit."},
      {t:"3", why:"0.04 equals its limit of 4 × 0.01 = 0.04, so rank 4 counts too."},
      {t:"5", why:"0.30 is far above its limit of 0.05."}]},
-   {id:"t3u6-q44", lesson:"t3u6-l5", level:3, q:"Across many well-run studies of a treatment with truly no effect, which pattern of p-values would you expect?", options:[
+   {id:"t3u6-q44", lesson:"t3u6-l5", level:3, q:"Across many well-run studies of a treatment with no effect, which pattern of p-values would you expect?", options:[
      {t:"Spread evenly between 0 and 1, with about 5% below 0.05", ok:true, why:"Under a true null hypothesis (and a valid continuous test), p-values are uniformly distributed."},
      {t:"Mostly close to 1", why:"Large p-values aren’t especially common under H₀. Every range of the same width is equally likely."},
      {t:"Mostly close to 0.5", why:"There is no peak at 0.5; the distribution is flat."},

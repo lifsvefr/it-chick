@@ -41,7 +41,7 @@ ICA.addUnit({
       "Most searches start with a topic that’s too broad: “phones and sleep”, “school meals”, “flood insurance”. Turning the topic into a question tells you what to look for.",
       {ex:"Topic: phones and sleep\nQuestion: Does using a phone at bedtime affect how teenagers sleep?\nConcepts: (1) phone use at bedtime  (2) sleep  (3) teenagers\nLeft out: does, using, affect, how", label:"Worked example"},
       "The **concepts** are the main ideas every relevant paper must involve. Most questions have two to four. Everything else stays out of the search: question words, linking words, and words for the relationship you’re asking about, such as *affect*, *improve* or *reduce*.",
-      "Why leave out *reduce* or *affect*? Because papers don’t reliably use them. A study that found **no** effect, or that measured “sleep duration” against “screen exposure”, may never say “affect”. Searching for the word would quietly drop relevant work, and studies that disagree with what you expect are exactly the ones you need to see.",
+      "Why leave out *reduce* or *affect*? Because papers don’t reliably use them. A study that found **no** effect, or that measured “sleep duration” against “screen exposure”, may never say “affect”. Searching for the word would drop relevant work without warning, and studies that disagree with what you expect are exactly the ones you need to see.",
       "If you met [[variable|variables]] in the sociology primer, concepts often line up with them: the thing that might cause a change, the thing that might change, and the people it happens to.",
       {tip:"Decide whether each part of the question is a concept to search or something to filter later. “Teenagers” is a concept here. “Published in the last ten years” or “in English” is better handled with the tool’s filters."}
     ]},
@@ -89,7 +89,7 @@ ICA.addUnit({
       "You rarely know how many relevant papers really exist. A practical check: list three to five **known items**, papers you already know belong in your results. If your search misses one, look at how that paper describes your concepts and add its words."
     ]},
     {h:"Keep a search log", body:[
-      "A **search log** records every search that mattered. It saves you redoing work, lets you rerun a search months later, and lets you describe your method honestly. Theses and reviews often require one.",
+      "A **search log** records every search that mattered. It saves you redoing work, lets you rerun a search months later, and lets you describe your method accurately. Theses and reviews often require one.",
       {ex:"2026-03-14 · PubMed\n(adolescen* OR teenager*) AND sleep AND smartphone*\nFilters: last 10 years\n312 results · about 30 look relevant\nNext: add \"screen time\" and \"cell phone*\"", label:"One entry in a search log", mono:true},
       "Note for each search:",
       {list:[
@@ -494,7 +494,7 @@ ICA.addUnit({
       "Citation chasing (also called snowballing) finds papers that keyword searches miss, because it follows what researchers actually read and used, not the words in titles. It’s also one of the quickest ways into an unfamiliar field."
     ]},
     {h:"Backward chasing: mining the reference list", body:[
-      "Start with the seed paper’s **introduction** or literature review section, not just the list at the end. That’s where the authors explain which earlier work matters and why, so you can tell a key study from a passing mention.",
+      "Start with the seed paper’s **introduction** or literature review section, as well as the list at the end. That’s where the authors explain which earlier work matters and why, so you can tell a key study from a passing mention.",
       {list:[
         "**Look for repeats.** Works cited by several of your good papers are probably central to the field.",
         "**Look up each reference in a database** rather than trusting the list’s details. Reference lists contain typos, and a database record gives you the abstract, links and its own “Cited by”.",
@@ -627,7 +627,7 @@ ICA.addUnit({
   {id:"t4u2-l5", title:"Getting the full text legally", minutes:50,
    hook:{q:"Which of these is a legal way to read a paywalled article without paying?", options:["Ask the author for a copy","Download it from a site that copies papers without permission","Borrow a friend’s university login","None: if it’s paywalled, you must pay"], answer:0, reveal:"**Ask the author.** Many researchers are glad to send their work to an interested reader, within what their publishing agreement allows. And asking is only one route: free legal copies often exist in repositories, libraries can get papers for you, and interlibrary loan reaches other libraries’ collections. This lesson gives you a checklist, and explains why the shortcuts in the other options are a bad idea."},
    goals:[
-     "Explain why papers sit behind paywalls and why legal free versions often exist",
+     "Explain why papers are behind paywalls and why legal free versions often exist",
      "Tell a preprint, an accepted manuscript and the version of record apart",
      "Find legal free copies with Google Scholar, Unpaywall, CORE and repositories",
      "Use libraries and interlibrary loan, and write a good request to an author",
@@ -636,7 +636,7 @@ ICA.addUnit({
    learn:[
     {h:"Paywalls, and why free copies exist", body:[
       {lead:"Finding a paper and being able to read it are two different problems."},
-      "Many journals are paid for by subscriptions, so their articles sit behind a paywall: a library pays, or you pay per article. [[open-access-term|Open access]] journals make articles free to read instead ({{open-access|Unit 1 explains the models}}). Between the two lies a large middle ground of **legal free copies**, because one paper usually exists in more than one version:",
+      "Many journals are paid for by subscriptions, so their articles are behind a paywall: a library pays, or you pay per article. [[open-access-term|Open access]] journals make articles free to read instead ({{open-access|Unit 1 explains the models}}). Between the two lies a large middle ground of **legal free copies**, because one paper usually exists in more than one version:",
       {fig:'<svg viewBox="0 0 340 352"><defs><marker id="t4u2l5a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-panel" x="20" y="8" width="300" height="70" rx="8" stroke-width="2"/><text x="170" y="30" text-anchor="middle">1. Preprint</text><text class="s" x="170" y="48" text-anchor="middle">The authors’ version before peer review</text><text class="s" x="170" y="66" text-anchor="middle">Found on preprint servers</text><path class="d-ink" d="M170 80 L170 108" stroke-width="2" marker-end="url(#t4u2l5a)"/><text class="s" x="180" y="98">peer review, revisions</text><rect class="d-sage" x="20" y="112" width="300" height="88" rx="8" stroke-width="2"/><text x="170" y="134" text-anchor="middle">2. Accepted manuscript</text><text class="s" x="170" y="152" text-anchor="middle">Content after peer review, in the</text><text class="s" x="170" y="168" text-anchor="middle">authors’ own layout</text><text class="s" x="170" y="186" text-anchor="middle">Repositories, PMC; often after an embargo</text><path class="d-ink" d="M170 202 L170 230" stroke-width="2" marker-end="url(#t4u2l5a)"/><text class="s" x="180" y="220">copyediting, layout</text><rect class="d-gold" x="20" y="234" width="300" height="88" rx="8" stroke-width="2"/><text x="170" y="256" text-anchor="middle">3. Version of record</text><text class="s" x="170" y="274" text-anchor="middle">The publisher’s final, formatted</text><text class="s" x="170" y="290" text-anchor="middle">version with page numbers</text><text class="s" x="170" y="308" text-anchor="middle">Journal website: paywalled or open</text><text x="170" y="344" text-anchor="middle">Same research, three versions</text></svg>', alt:"Three stacked boxes joined by arrows. 1, Preprint: the authors’ version before peer review, found on preprint servers. After peer review and revisions, 2, Accepted manuscript: content after peer review in the authors’ own layout, in repositories and PMC, often after an embargo. After copyediting and layout, 3, Version of record: the publisher’s final formatted version with page numbers, on the journal website, paywalled or open.", cap:"Only the version of record is the publisher’s final text, but the accepted manuscript has the same peer-reviewed content."},
       {list:[
         "A [[preprint]] is shared before peer review, on servers such as arXiv (physics, mathematics, computer science and more), bioRxiv and medRxiv (biology and health) or SSRN (social sciences, law, economics).",
@@ -764,7 +764,7 @@ ICA.addUnit({
    apply:{intro:"Practice the legal routes on real papers. Everything here works without a university login; with one, add your library’s links.", tasks:[
      {t:"Install an open-copy finder (optional)", how:{win:["In Chrome or Firefox, open the browser’s extension store (Chrome Web Store or Firefox Add-ons) and search for **Unpaywall** or **CORE Discovery**.","Check the publisher is OurResearch/Impactstory (Unpaywall) or the CORE team (CORE Discovery), then add it.","Microsoft Edge can also install extensions from the Chrome Web Store once you allow extensions from other stores.","Extensions change: if the store no longer lists one of them for your browser, use the other, or skip to the next task."], mac:["In Chrome or Firefox, open the extension store and search for **Unpaywall** or **CORE Discovery**; check the publisher, then add it.","Safari isn’t supported by either extension, so use Chrome or Firefox for this, or skip to the next task."], chromeos:["In Chrome, open the Chrome Web Store, search for **Unpaywall** or **CORE Discovery**, check the publisher and click **Add to Chrome**."], phone:["Android: Firefox for Android lists the Unpaywall add-on (menu → **Extensions** or **Add-ons**). Most other mobile browsers don’t run these extensions.","iPhone: neither extension is available. Use Google Scholar’s **All versions** and a title search on core.ac.uk instead."]}},
      {t:"Hunt for full texts", how:["Pick three papers from your search log that you haven’t been able to read.","Work through the checklist for each: Google Scholar [PDF] and All versions; an open-copy finder or a CORE/BASE title search; your library.","For each, note the route that worked and which version you found (preprint, accepted manuscript or version of record)."], write:"Paper 1: route… version… Paper 2: … Paper 3: …"},
-     {t:"Draft a request to an author", how:["Choose one paper you still can’t read and find the corresponding author’s email on its page.","Write a short, polite request: who you are, why you’re interested, the full reference, and that it’s for private study.","Send it only if you genuinely want the paper."], write:"Dear…"}
+     {t:"Draft a request to an author", how:["Choose one paper you still can’t read and find the corresponding author’s email on its page.","Write a short, polite request: who you are, why you’re interested, the full reference, and that it’s for private study.","Send it only if you really want the paper."], write:"Dear…"}
    ], proof:"Notes on three full-text hunts (route and version for each), and a polite draft request to an author."},
    read:[
      {book:"acrl", where:"Frame: “Information Has Value”", note:"Why access, cost and creators’ rights are part of information literacy."}
@@ -1023,7 +1023,7 @@ ICA.addUnit({
       "Features its help page documents (checked November 2026):",
       {list:[
         "**Search**: quotation marks for phrases and titles; `author:\"d knuth\"` for authors; **Advanced search** (side menu) for author, title, publication and dates.",
-        "**Time**: **Since year** and **Sort by date** (on small screens these sit in a Year menu).",
+        "**Time**: **Since year** and **Sort by date** (on small screens these are in a Year menu).",
         "**Full text**: [PDF] links, library links, and **All versions** for alternatives.",
         "**Library links**: on a campus network they include your library’s subscriptions automatically; off-campus links work by remembering subscriptions from your last campus visit for 30 days, and can be turned off in Settings.",
         "**Save** to My library; **Cite** exports to BibTeX, EndNote, RefMan and RefWorks.",
@@ -1060,7 +1060,7 @@ ICA.addUnit({
         "Many library catalogs use **Library of Congress Subject Headings**."
       ]},
       {tip:"Easy way in: open one relevant record, look at its subject headings, and search with the useful ones."},
-      "Think of subject headings as the labels on library shelves: every book on one topic sits under the same label, whatever its title says."
+      "Think of subject headings as the labels on library shelves: every book on one topic has the same label, whatever its title says."
      ],
      builder:[
       "**Why combine headings and keywords.** Headings give consistency; keywords catch what headings miss: the newest records (not yet indexed), records never indexed with that vocabulary, and very new concepts without a heading yet. Join them with OR inside each concept.",
@@ -1188,7 +1188,7 @@ ICA.addUnit({
       "**Libraries**: university logins work off campus; public libraries often offer some e-resources; interlibrary loan obtains items from other libraries, sometimes for a fee and over days or weeks.",
       "**Authors**: the corresponding author’s email is on the article page. What they may share depends on their publishing agreement.",
       "**Check the version** before quoting: page numbers belong to the version of record.",
-      "**Repositories worth knowing**: university and national repositories (searchable through BASE or CORE), PubMed Central for health research, and subject preprint servers. Search a paper’s exact title in quotation marks to find copies."
+      "**Useful repositories**: university and national repositories (searchable through BASE or CORE), PubMed Central for health research, and subject preprint servers. Search a paper’s exact title in quotation marks to find copies."
      ],
      pro:[
       {list:[
@@ -1299,7 +1299,7 @@ ICA.addUnit({
      {t:"Neither tool will run it as written; use short keyword searches with a quoted phrase", ok:true, why:"Both support quoted phrases, but not the asterisk, and Semantic Scholar doesn’t support Boolean operators at all."},
      {t:"Both tools will run it exactly as written", why:"Neither supports truncation, and Semantic Scholar doesn’t support Boolean operators."},
      {t:"Only the quotation marks will be ignored", why:"Quoted phrases are one of the few things both tools do support."},
-     {t:"Both tools will report a syntax error and refuse to run the search until he removes the brackets", why:"They usually run the search anyway, which is why unsupported syntax can quietly give odd results."}
+     {t:"Both tools will report a syntax error and refuse to run the search until he removes the brackets", why:"They usually run the search anyway, which is why unsupported syntax can give odd results without warning."}
    ]},
    {id:"t4u2-q13", lesson:"t4u2-l2", level:2, q:"PubMed processes searches left to right. What does `diabetes AND diet OR exercise` find there?", options:[
      {t:"Records on diabetes and diet, plus every record about exercise", ok:true, why:"Left to right it becomes `(diabetes AND diet) OR exercise`. Use `diabetes AND (diet OR exercise)` for the likely meaning."},

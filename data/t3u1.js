@@ -302,7 +302,7 @@ ICA.addUnit({
       "Two invented places have the same mean monthly temperature over a year: **15 °C**.",
       {table:[["Place (invented)","Mean","Coldest month","Warmest month"],["Coastal town","15 °C","11 °C","20 °C"],["Inland town","15 °C","1 °C","30 °C"]]},
       "Pack the same clothes for both and you’ll be wrong in one of them for most of the year. An average describes the center, never the whole story. Ask also for the spread: the range (lowest to highest), or the [[interquartile-range|interquartile range]] (the spread of the middle half of the values), which Unit 5 teaches.",
-      "The same goes for averages about people. “On average, the training raised scores by 4 points” could mean everyone gained about 4 points, or that a few people gained 20 and most gained nothing. Both give the same mean. When a decision depends on what will happen to *you*, ask how much results varied from person to person, not only what the average was."
+      "The same goes for averages about people. “On average, the training raised scores by 4 points” could mean everyone gained about 4 points, or that a few people gained 20 and most gained nothing. Both give the same mean. When a decision depends on what will happen to *you*, ask how much results varied from person to person, as well as what the average was."
     ]},
     {h:"Averages of averages", body:[
       "Averaging two averages from groups of different sizes gives the wrong answer, just as with percentages in Lesson 1. Weight each group’s average by its size: a **[[weighted-mean|weighted mean]]**.",
@@ -359,7 +359,7 @@ ICA.addUnit({
       {t:"Times to wait for a doctor’s appointment", b:0, why:"Waiting times can’t go below zero but can be very long, so a long right tail pulls the mean up."},
       {t:"Scores on a well-designed test where most people score in the middle", b:1, why:"If scores spread fairly evenly either side of the middle, mean and median nearly coincide."}
     ]},
-    {id:"t3u1-l3-x7", type:"explain", q:"A council reports that the average (mean) household income in its town is 52,000, but most households a resident knows earn well below that. Explain how both can be true, and which figure you would ask for.", prompt:"Incomes are…", model:"Incomes are skewed: most households earn modest amounts and a few earn very large ones. Those few big values drag the mean upwards, while the median, the income of the middle household, barely moves. So the mean can sit above what most households earn, and most can earn “less than the average” without any contradiction. For a question about a typical household, I’d ask for the median, and ideally for both figures and the spread.", points:["Says income data are skewed (a long tail of high values)", "Explains that a few large values pull the mean up", "Says the median is the middle value and barely moves", "Recommends the median for a “typical household” question"]}
+    {id:"t3u1-l3-x7", type:"explain", q:"A council reports that the average (mean) household income in its town is 52,000, but most households a resident knows earn well below that. Explain how both can be true, and which figure you would ask for.", prompt:"Incomes are…", model:"Incomes are skewed: most households earn modest amounts and a few earn very large ones. Those few big values drag the mean upwards, while the median, the income of the middle household, barely moves. So the mean can be above what most households earn, and most can earn “less than the average” without any contradiction. For a question about a typical household, I’d ask for the median, and ideally for both figures and the spread.", points:["Says income data are skewed (a long tail of high values)", "Explains that a few large values pull the mean up", "Says the median is the middle value and barely moves", "Recommends the median for a “typical household” question"]}
    ],
    apply:{intro:"Use a spreadsheet to see the difference between averages with your own eyes.", tasks:[
      {t:"Mean against median", app:{all:[
@@ -477,7 +477,7 @@ ICA.addUnit({
       {v:90, tol:0.5, why:"90% is the specificity (the share of healthy people correctly cleared). It doesn’t tell you what a positive means without the base rate."}
     ]},
     {id:"t3u1-l4-x5", type:"mcq", q:"Fatima’s bank texts her about a “suspicious payment”. The bank’s system flags about 2% of genuine payments, and fraud is rare. What is the most sensible reading of the alert?", options:[
-      {t:"It could well be a false alarm; check the payment through the bank’s app or official number, then confirm or report it", ok:true, why:"Right. When fraud is rare, most alerts are false positives, but some are real, so it’s worth checking. She should use the bank’s app or the number on her card, not a link or number in the message. This also protects her from scam texts that pretend to be the bank."},
+      {t:"It could well be a false alarm; check the payment through the bank’s app or official number, then confirm or report it", ok:true, why:"Right. When fraud is rare, most alerts are false positives, but some are real, so she should check it. She should use the bank’s app or the number on her card, not a link or number in the message. This also protects her from scam texts that pretend to be the bank."},
       {t:"It is almost certainly fraud, because the system is very accurate", why:"Accurate at what? With rare fraud, even a 2% false alarm rate on genuine payments produces many more false alerts than real ones."},
       {t:"It can be ignored, because most alerts are false alarms", why:"Most may be false, but a real fraud is costly. The alert is a reason to check, not to panic or ignore."},
       {t:"She should reply to the text with her card details so the bank can check", why:"Never send card details by text. Contact the bank through a route you already trust."}
@@ -569,7 +569,7 @@ ICA.addUnit({
       {ol:[
         "**Of what?** What is the denominator, and who was counted?",
         "**Compared with what?** Last year, another place, a control group, the whole population?",
-        "**Absolute and relative?** Points or percent? How many people, not just what share?",
+        "**Absolute and relative?** Points or percent? How many people, and not only what share?",
         "**Which average,** and how spread out are the values?",
         "**What’s the base rate?** How common was this before the test, the alert or the claim?",
         "**How big, really?** Per person, per day, as a share of the total; adjusted for inflation?",
@@ -792,7 +792,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Tests make two kinds of mistake. A **[[false-positive|false positive]]** is a false alarm (the test says yes, but the answer is no). A **[[false-negative|false negative]]** is a miss.",
-      "How often a positive result is right depends not only on the test but on how common the thing is in the group tested: the **[[base-rate|base rate]]**.",
+      "How often a positive result is right depends on the test and also on how common the thing is in the group tested: the **[[base-rate|base rate]]**.",
       "Picture 10,000 people. 1% (100) have a condition. A test catches 90 of them. Of the 9,900 who don’t have it, the test wrongly flags 5%: 495 people. So 585 test positive, and only 90 of them have the condition: about 15%.",
       "The test is good. There are just far more healthy people for false alarms to happen to. When something is rare, most alarms are false.",
       {key:"To understand a test result, count people: start with 10,000, split by the base rate, then by the test."}
@@ -824,7 +824,7 @@ ICA.addUnit({
      starter:[
       "Million, billion and trillion are each a thousand times the one before. A million seconds is about 11.6 days; a billion seconds is about 31.7 years.",
       "Big numbers become meaningful when you divide them: **per person**, **per year**, or as a **share of a total**. 500 million a year in a country of 25 million people is 20 per person per year.",
-      "Money also needs context. Prices usually rise over time (**[[inflation]]**), so 100 today buys less than 100 did ten years ago. Comparing money across years needs a **real** (inflation-adjusted) figure, not just the **nominal** one.",
+      "Money also needs context. Prices usually rise over time (**[[inflation]]**), so 100 today buys less than 100 did ten years ago. Comparing money across years needs a **real** (inflation-adjusted) figure, not the **nominal** one.",
       "Finally, ask **who’s missing**. If you only look at success stories, you miss the failures that looked just the same. That is **[[survivorship-bias|survivorship bias]]**.",
       {key:"Divide big numbers by people and time, adjust money for inflation, and ask who isn’t in the data."}
      ],

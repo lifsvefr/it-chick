@@ -122,7 +122,7 @@ ICA.addUnit({
       " · ",
       {t:"Received 3 March 2025; accepted 9 September 2025", flag:false, why:"These dates describe the review process, not money."},
       " · ",
-      {t:"Funding: this study was funded by the maker of the step-counting watch used in the trial.", flag:true, why:"The funder sells the device being tested, so it could gain from a positive result. That doesn’t make the study wrong, but it’s worth noting."},
+      {t:"Funding: this study was funded by the maker of the step-counting watch used in the trial.", flag:true, why:"The funder sells the device being tested, so it could gain from a positive result. That doesn’t make the study wrong, but note it."},
       " · ",
       {t:"Competing interests: two authors have received speaker fees from the same company.", flag:true, why:"A declared personal financial link between authors and an interested company. Again, not proof of bias, but a reason to read the methods closely."},
       " · ",
@@ -181,7 +181,7 @@ ICA.addUnit({
         "Results in full, checking each claim against its table or figure."
       ]},
       "For a humanities article, the order is gentler: read the introduction to find the thesis, skim the headings and the conclusion to see the shape of the argument, then read it all in order. The argument builds, so jumping around loses the thread.",
-      {tip:"Stuck on jargon? Read a recent review article on the topic first, or the paper’s own introduction, which often defines terms. Keep a personal glossary as you go. If you read in a second language, translation tools can help you understand, but check how key technical terms are translated: a word that is ‘significant’ in statistics is not just ‘important’."}
+      {tip:"Stuck on jargon? Read a recent review article on the topic first, or the paper’s own introduction, which often defines terms. Keep a personal glossary as you go. If you read in a second language, translation tools can help you understand, but check how key technical terms are translated: a word that is ‘significant’ in statistics is more than ‘important’."}
     ]},
     {h:"Reading figures and tables", body:[
       "Figures and tables are the evidence. Read them before the authors tell you what they mean.",
@@ -205,7 +205,7 @@ ICA.addUnit({
       "You can annotate on paper, in many PDF readers and in reference managers. In Zotero (a free reference manager; Unit 4 shows how to use it), annotations made in the built-in PDF reader are saved in your Zotero library rather than written into the PDF file, and **Add Note from Annotations** gathers your highlights and comments into one note."
     ]},
     {h:"Literature notes you can use later", body:[
-      "Annotations live on the paper. [[literature-notes|Literature notes]] are what you write afterwards, in a separate place, about one source: a short record you can understand and use months later without rereading the paper.",
+      "Annotations are on the paper. [[literature-notes|Literature notes]] are what you write afterwards, in a separate place, about one source: a short record you can understand and use months later without rereading the paper.",
       "The golden rule is to keep three things visibly apart:",
       {list:[
         "**Quotations:** the authors’ exact words, in quotation marks, with the page or section.",
@@ -293,7 +293,7 @@ ICA.addUnit({
       {warn:"A big sample doesn’t fix a biased one. An online poll with 50,000 self-selected responses can describe a population worse than a well-drawn random sample of 1,000, because the problem is who answered, not how many."}
     ]},
     {h:"The design limits the claims", body:[
-      "The Methods section also tells you the design, and the design limits what the paper can honestly claim. Unit 6 covers designs in depth (see {{research-designs}}); here is what a reader needs.",
+      "The Methods section also tells you the design, and the design limits what the paper can claim. Unit 6 covers designs in depth (see {{research-designs}}); here is what a reader needs.",
       {list:[
         "**Descriptive** studies say what is there: how many, how often, what people say. They can’t explain why.",
         "**Observational** studies compare groups that already differ (people who exercise and people who don’t). They can show a [[correlation]], but other differences between the groups may explain it. Such a hidden factor is called a [[confounder]].",
@@ -630,7 +630,7 @@ ICA.addUnit({
       " ",
       {t:"Being a woman has no effect on walking, because that row has no stars.", flag:true, why:"No stars isn’t no effect: the interval runs from about −3.7 to 7.7 minutes, compatible with modest differences either way."},
       " ",
-      {t:"Model 2 used 812 of the 850 participants, because 38 had no health data.", flag:false, why:"Correct, and worth noting: those 38 may differ from the rest."},
+      {t:"Model 2 used 812 of the 850 participants, because 38 had no health data.", flag:false, why:"Correct, and important to note: those 38 may differ from the rest."},
       " ",
       {t:"Poor health is the strongest cause of walking less, since its coefficient is the biggest.", flag:true, why:"Two over-readings: it’s a control coefficient (the Table 2 fallacy), and the model wasn’t designed to estimate causes of walking in general."}
     ]},
@@ -700,7 +700,7 @@ ICA.addUnit({
         "**Humanities articles:** is the thesis clear? Is the evidence (archives, texts, artworks) well chosen and accurately used? Does the author deal fairly with other interpretations and counter-evidence? Do footnotes let you check the sources?",
         "**Reviews:** how were studies found and selected? A review that explains its search and selection can be checked; one that doesn’t may have picked studies to fit a view (Unit 5 covers reviews)."
       ]},
-      "You don’t have to invent your questions. The free **CASP checklists** (Critical Appraisal Skills Programme) give short question lists for trials, qualitative studies, systematic reviews and more. [[reporting-guideline|Reporting guidelines]], collected by the EQUATOR Network, list what a paper of each type should report: for example CONSORT for randomized trials (updated in 2025), STROBE for observational studies and PRISMA for systematic reviews. If a key item is missing from a paper, that’s worth noting."
+      "You don’t have to invent your questions. The free **CASP checklists** (Critical Appraisal Skills Programme) give short question lists for trials, qualitative studies, systematic reviews and more. [[reporting-guideline|Reporting guidelines]], collected by the EQUATOR Network, list what a paper of each type should report: for example CONSORT for randomized trials (updated in 2025), STROBE for observational studies and PRISMA for systematic reviews. If a key item is missing from a paper, note it."
     ]},
     {h:"One paper is one voice", body:[
       "Scholarship is a conversation. A single study, however good, is one contribution, and its result may not hold up when others try again.",
@@ -1134,7 +1134,7 @@ ICA.addUnit({
    {id:"methods-section", term:"Methods section", def:"The part of a paper that says exactly what was done: who was studied, the design, what was measured and how the data were analyzed.", codex:"paper-structure"},
    {id:"results-section", term:"Results section", def:"The part of a paper that reports what was found, usually with tables and figures and, ideally, without interpretation.", codex:"paper-structure"},
    {id:"discussion-section", term:"Discussion section", def:"The part of a paper that interprets the results, compares them with other studies, states limitations and suggests implications.", codex:"paper-structure"},
-   {id:"study-limitations", term:"Limitations", def:"Weaknesses in a study’s design, sample, measures or analysis that limit what can be concluded. Good papers state them honestly in the Discussion.", codex:"critical-appraisal"},
+   {id:"study-limitations", term:"Limitations", def:"Weaknesses in a study’s design, sample, measures or analysis that limit what can be concluded. Good papers state them clearly in the Discussion.", codex:"critical-appraisal"},
    {id:"effect-size", term:"Effect size", def:"How big a difference or relationship is, either in real units (4 points, 2 kg) or on a standard scale (such as Cohen’s d or a risk ratio).", codex:"reading-results"},
    {id:"p-value", term:"p-value", def:"The probability of getting a result at least as extreme as the one observed, if the null hypothesis and the model’s other assumptions were true. It is not the probability that the result is a fluke.", codex:"statistical-significance-basics"},
    {id:"confidence-interval", term:"Confidence interval", def:"A range around an estimate showing the values reasonably compatible with the data. A 95% interval comes from a method that captures the true value in about 95% of repeated studies.", codex:"reading-results"},

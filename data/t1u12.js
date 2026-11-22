@@ -1,7 +1,7 @@
 /* Track 1 · Unit 12 · How software and data work */
 ICA.addUnit({
   id:"t1u12", track:"t1", n:12, title:"How software and data work", icon:"⚙️",
-  blurb:"The last unit of the track looks under the hood of the apps you use. You will learn how programs are written and run, and how databases organize data. You will see what virtual machines and the cloud’s IaaS, PaaS and SaaS really are, and how to use AI assistants well. Then you will see how it all fits together when you tap a button.",
+  blurb:"The last unit of the track looks at how the apps you use work. You will learn how programs are written and run, and how databases organize data. You will see what virtual machines and the cloud’s IaaS, PaaS and SaaS really are, and how to use AI assistants well. Then you will see how it all fits together when you tap a button.",
   goals:[
     "Explain how source code becomes a running program, tell the main kinds of language apart, and plan a task with pseudocode and a flowchart",
     "Classify data as structured, semi-structured or unstructured. Explain tables, keys and queries in a relational database",
@@ -195,7 +195,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t1u12-l2", title:"Data and databases", minutes:55,
-   hook:{q:"Ana moves house. Her old address appears in 14 rows of a community library’s loans spreadsheet, and a volunteer updates 9 of them. What’s the real problem?", options:["The spreadsheet has too many rows","Her address was stored many times, so the copies can disagree","Spreadsheets can’t store addresses properly","Nothing: 9 out of 14 is good enough"], answer:1, reveal:"**The same fact was stored many times.** When information is copied into every row, every copy has to change together, and the missed copies quietly disagree. Relational databases fix this by storing each fact once, in its own table, and linking to it. This lesson explains how, and also why data is valuable, what “structured” really means, and what a query does."},
+   hook:{q:"Ana moves house. Her old address appears in 14 rows of a community library’s loans spreadsheet, and a volunteer updates 9 of them. What’s the real problem?", options:["The spreadsheet has too many rows","Her address was stored many times, so the copies can disagree","Spreadsheets can’t store addresses properly","Nothing: 9 out of 14 is good enough"], answer:1, reveal:"**The same fact was stored many times.** When information is copied into every row, every copy has to change together, and the missed copies end up disagreeing. Relational databases fix this by storing each fact once, in its own table, and linking to it. This lesson explains how, and also why data is valuable, what “structured” really means, and what a query does."},
    goals:[
      "Explain why data is valuable, and tell data from information",
      "Classify data as structured, semi-structured or unstructured",
@@ -227,7 +227,7 @@ ICA.addUnit({
         ["[[unstructured-data|Unstructured]]","No predefined layout; the meaning is in the content itself","Photos, videos, voice messages, scanned letters, free-text documents"]
       ]},
       "Structured data is the easiest to search, sort and count. Unstructured data is the most common and often the richest, but it is harder to search. A question like “which of these 5,000 photos shows the old school?” needs extra work, such as tags or image recognition.",
-      "Semi-structured data sits in between. Here is one contact in [[json|JSON]], a format many apps use to store and exchange data:",
+      "Semi-structured data is in between. Here is one contact in [[json|JSON]], a format many apps use to store and exchange data:",
       {code:'{\n  "name": "Priya Nair",\n  "phones": ["+44 20 7946 0000", "+44 7700 900123"],\n  "email": "priya@example.org",\n  "birthday": null\n}', lang:"txt", label:"JSON"},
       "Every value is labeled, but the next contact might have one phone, no email and an extra `\"company\"` field. That flexibility makes semi-structured formats popular for app data.",
       {tip:"Most files mix categories. A photo is unstructured, but it carries structured [[metadata]] (Unit 2): date taken, camera, image size and sometimes location. An email has structured headers (From, To, Date) and an unstructured message body."}
@@ -260,7 +260,7 @@ ICA.addUnit({
         "A [[primary-key|primary key]] is a column whose value identifies exactly one row and never repeats, such as `member_id`. Names make poor keys, because two members can share one.",
         "A [[foreign-key|foreign key]] is a column holding another table’s primary key, to link to it. Each loan stores `member_id` and `book_id`, not the member’s name and phone."
       ]},
-      "Now Ana’s phone number lives in one place, her row in the members table, so one change fixes every loan and report. Kenji can return all his books without the library losing his details.",
+      "Now Ana’s phone number is stored in one place, her row in the members table, so one change fixes every loan and report. Kenji can return all his books without the library losing his details.",
       "The design (tables, columns, data types and keys) is the [[schema-db|schema]]. It can include [[db-constraint|constraints]]: rules the database enforces, such as “every loan must point to a member who exists” or “a member ID can’t repeat”. Changes that break them are refused, which keeps the data trustworthy.",
       {key:"A relational database stores each fact once and links tables with keys. A primary key identifies a row; a foreign key points to a row in another table."}
     ]},
@@ -298,8 +298,8 @@ ICA.addUnit({
     {h:"Where data lives, and keeping it safe", body:[
       "Data that survives after a program closes or the power goes off is [[data-persistence|persistent]]. Values in RAM vanish (Unit 1); data written to storage, a database or a cloud service persists.",
       {list:[
-        "**Local** data lives on your own device or servers. It works offline and stays in your control. But it is lost if that device fails and you have no copy elsewhere.",
-        "**Cloud** data lives on a provider’s servers (Lesson 3). You can reach it anywhere, but you need a connection and you depend on the provider.",
+        "**Local** data is stored on your own device or servers. It works offline and stays in your control. But it is lost if that device fails and you have no copy elsewhere.",
+        "**Cloud** data is stored on a provider’s servers (Lesson 3). You can reach it anywhere, but you need a connection and you depend on the provider.",
         "**Online and offline:** many apps keep a local copy for offline work and sync when you reconnect (Unit 2, Lesson 4)."
       ]},
       "Valuable data needs backups (Unit 2, Lesson 5). The Tech+ essentials:",
@@ -574,7 +574,7 @@ ICA.addUnit({
         ["Generative AI","Creates new text, images, audio or code","Drafting an email, summarizing a meeting, rewriting a paragraph, or making an image or a spreadsheet formula"]
       ]},
       "[[generative-ai|Generative AI]] built into everyday software is the newest part. As of November 2026, examples include Microsoft’s Copilot in Windows and Microsoft 365, and Google’s Gemini in Android, Chromebooks and Google Workspace. Others are Apple Intelligence on recent Apple devices and Galaxy AI on Samsung phones. There are also standalone [[ai-assistant|AI assistants]] from several companies. Names, features and the devices that support them change every few months. So this lesson teaches what stays the same: how to ask, how to check, and what you’re sharing.",
-      "Under the hood, most of these assistants run on [[large-language-model|large language models]] (Unit 6, Lesson 5). This is software trained on enormous amounts of text to predict which words are likely to come next. That’s why they’re fluent. It is also why fluent isn’t the same as correct."
+      "Most of these assistants run on [[large-language-model|large language models]] (Unit 6, Lesson 5). This is software trained on enormous amounts of text to predict which words are likely to come next. That’s why they’re fluent. It is also why fluent isn’t the same as correct."
     ]},
     {h:"What assistants are good at, and where they slip", body:[
       "An assistant is like a fast, well-read helper. It has never met you and sees only what you show it. Sometimes it makes things up with complete confidence.",
@@ -648,7 +648,7 @@ ICA.addUnit({
         "**When it would deceive:** fake reviews, invented quotes, pretending to be a real person, or passing off AI work where the rules require your own.",
         "**When the rules say no:** a school, employer, exam or publisher may forbid AI for a task. That rule wins."
       ]},
-      {tip:"AI has an environmental cost too: the data centers that run it use a lot of electricity and water. That’s another reason to use it where it genuinely helps, rather than by reflex."}
+      {tip:"AI has an environmental cost too: the data centers that run it use a lot of electricity and water. That’s another reason to use it where it helps, rather than by reflex."}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -769,7 +769,7 @@ ICA.addUnit({
       ]}
     ]},
     {h:"Where the data lives", body:[
-      "An app’s data sits in several places at once, for different reasons:",
+      "An app’s data is in several places at once, for different reasons:",
       {table:[
         ["Where","Why","Example"],
         ["The back-end database","The single source of truth, shared by every user and device","Mei’s loans and reservations"],
@@ -781,7 +781,7 @@ ICA.addUnit({
     ]},
     {h:"Where AI fits in an app", body:[
       "AI features plug into the same structure. A recommendation list, a spam filter or a fraud check is usually a **prediction**. The back end makes it from patterns in stored data. A “summarize” or “help me write” button sends your text to a **generative** model. This model may run on your device or on servers, and sometimes a different company from the app’s maker runs it.",
-      "That’s why an app’s privacy information may list the AI providers it shares data with. It is also why Lesson 4’s questions apply to AI buttons inside any app, not only to chatbots. The questions are: what’s sent, who keeps it, and what is it used for? And because an AI feature is usually a separate part, it can be wrong while the rest of the app works perfectly."
+      "That’s why an app’s privacy information may list the AI providers it shares data with. It is also why Lesson 4’s questions apply to AI buttons inside any app, as well as to chatbots. The questions are: what’s sent, who keeps it, and what is it used for? And because an AI feature is usually a separate part, it can be wrong while the rest of the app works perfectly."
     ]},
     {h:"When something breaks: use the map", body:[
       "Knowing the layers turns “the app’s broken” into a question you can answer. Combine it with the troubleshooting method from Unit 7:",
@@ -813,7 +813,7 @@ ICA.addUnit({
         "**To build things:** Making with Code starts with how websites work (Unit 1), then HTML and CSS, JavaScript (Unit 4) and Python (Unit 8), with labs that run in your browser.",
         "**To work with data:** Data Literacy covers tidy data (Unit 2), statistics, R, and databases and SQL (Unit 10).",
         "**To study or research:** Research Skills covers finding and judging sources, citing, and using AI honestly in research (Unit 9).",
-        "**To keep these skills current:** the details in this track (menus, product names, AI features) will change. The ideas won’t: layers, data types, keys, shared responsibility, checking output. When something new appears, ask which layer it lives in, what data it uses, and who is responsible for it."
+        "**To keep these skills current:** the details in this track (menus, product names, AI features) will change. The ideas won’t: layers, data types, keys, shared responsibility, checking output. When something new appears, ask which layer it belongs to, what data it uses, and who is responsible for it."
       ]},
       {key:"Every app is a front end, a back end, data and a network, running on someone’s computers. Knowing the layers tells you how it works, how it fails and who is responsible."}
     ]}
@@ -831,7 +831,7 @@ ICA.addUnit({
       {t:"Remembering that Mei prefers dark mode on this phone", b:0, why:"A display setting for one device can be kept on that device."},
       {t:"Showing “Please choose a date” before the form is sent", b:0, why:"Instant hints run on the device for convenience. (The back end must still check the data.)"},
       {t:"Checking that Mei’s password is correct", b:1, why:"Passwords are checked on the server; a device can’t be trusted to judge itself."},
-      {t:"Enforcing the limit of 10 loans per member", b:1, why:"The real rules live on the back end, so nobody can get round them by changing the app."},
+      {t:"Enforcing the limit of 10 loans per member", b:1, why:"The real rules are on the back end, so nobody can get round them by changing the app."},
       {t:"Writing the new reservation into the database", b:1, why:"Only the back end talks to the shared database."}
     ]},
     {id:"t1u12-l5-x3", type:"match", q:"Match each symptom to the layer most likely to be at fault.", pairs:[
@@ -858,7 +858,7 @@ ICA.addUnit({
       {t:"SaaS", why:"SaaS is a finished application used as it is. Designing your own tables on a database platform is PaaS."},
       {t:"On-premises", why:"On-premises means the company’s own hardware in its own building. Here the provider runs the servers."}
     ]},
-    {id:"t1u12-l5-x7", type:"spot", q:"Here’s how a food-delivery app handles an order. Tap every step that happens on the **back end**.", ask:"happens on the back end", parts:[
+    {id:"t1u12-l5-x7", type:"spot", q:"This is how a food-delivery app handles an order. Tap every step that happens on the **back end**.", ask:"happens on the back end", parts:[
       "Hana scrolls the menu on her phone, ", {t:"which shows the dishes and their photos", flag:false, why:"Displaying the menu is front-end work on her phone, using data the back end sent earlier."},
       ". She taps Order. ", {t:"The server checks that the restaurant is still open", flag:true, why:"Business rules are checked on the back end, where users can’t change them."},
       ", ", {t:"takes the payment through a payment provider", flag:true, why:"Payments are handled server to server; the phone alone is never trusted with them."},
@@ -866,7 +866,7 @@ ICA.addUnit({
       ". Meanwhile, ", {t:"her app grays out the Order button", flag:false, why:"Changing a button’s look is the front end, on her device."},
       " and ", {t:"shows a progress bar", flag:false, why:"Showing progress is the front end displaying updates it receives."},
       "."
-    ], why:"Rules, payments and the shared data live on the back end; what Hana sees and touches is the front end."},
+    ], why:"Rules, payments and the shared data are on the back end; what Hana sees and touches is the front end."},
       {id:"t1u12-l5-x8", type:"explain", q:"A library app grays out the Reserve button for members with unpaid fines. Explain why the server must still check for fines when a reservation request arrives.", size:"2–3 sentences", hint:"Where does the front end run, and who controls that device?", model:"The grayed-out button is part of the front end. It runs on the member’s own device, and anyone can change what their own device sends, for example by calling the API directly. The back end runs on the library’s servers and holds the real rules. It talks to the database, so it is the only place a rule can be enforced reliably. A well-built system therefore repeats every important check on the back end. If a member with fines sends a reservation request anyway, the server refuses it.", points:["Says the front end runs on the user’s device", "Says users can change what their device sends", "Says the back end holds the real rules and the database", "Concludes important checks must be repeated on the back end"]}
    ],
    apply:{intro:"Watch an app talk to its back end, map one you use every day, then take stock of the whole track.", tasks:[
@@ -1184,7 +1184,7 @@ ICA.addUnit({
    /* ---- Lesson 5 ---- */
    {id:"t1u12-q37", lesson:"t1u12-l5", level:1, q:"What is the front end of an app?", options:[
      {t:"The part on your device: screens, buttons and forms", ok:true, why:"The front end is what you see and touch on your device; it sends requests to the back end."},
-     {t:"The database on the servers that stores everyone’s data", why:"The database sits behind the back end."},
+     {t:"The database on the servers that stores everyone’s data", why:"The database is behind the back end."},
      {t:"The data center building", why:"That’s where the back end usually runs."},
      {t:"The company’s list of developers", why:"Front end describes a part of the software, not the people."}
    ]},
@@ -1201,7 +1201,7 @@ ICA.addUnit({
      {t:"The phone’s operating system was out of date and unsafe", why:"An attacker can change requests on any phone. The fix belongs on the back end."}
    ]},
    {id:"t1u12-q40", lesson:"t1u12-l5", level:2, q:"Without a signal, Lucía’s banking app shows yesterday’s balance with a “last updated” note. Why?", options:[
-     {t:"It’s showing data cached on her phone", ok:true, why:"It can’t reach the back end, so the front end shows a cached copy. The latest balance lives on the bank’s back end."},
+     {t:"It’s showing data cached on her phone", ok:true, why:"It can’t reach the back end, so the front end shows a cached copy. The latest balance is on the bank’s back end."},
      {t:"The bank only updates balances once a day", why:"The note points to her being offline, not to the bank’s schedule."},
      {t:"Her balance is stored only on her phone", why:"The real record is the bank’s database. Her phone holds a copy."},
      {t:"The app’s AI feature predicted her balance", why:"It’s a stored copy of real data, not a prediction."}
@@ -1446,7 +1446,7 @@ ICA.addUnit({
       {code:"SELECT name, phone\nFROM members\nWHERE town = 'Suva'\nORDER BY name;", lang:"sql", label:"SQL"},
       "The jobs a database does: **create** (design the tables), **import or input** (add data from forms or files), **query** (ask for data) and **report** (present results). Data saved in a database is [[data-persistence|persistent]]: it survives the program closing or the power going off.",
       "Constraints in action: if someone tries to record a loan for member M99, who doesn’t exist, a foreign-key constraint refuses it, so the database never holds a loan that points to nobody.",
-      "You rarely see the database itself: apps, websites and forms sit in front of it and send it queries for you. But knowing that the data lives in linked tables explains why a change made in one place shows up everywhere."
+      "You rarely see the database itself: apps, websites and forms are in front of it and send it queries for you. But knowing that the data is stored in linked tables explains why a change made in one place shows up everywhere."
      ],
      pro:[
       "Repetition in flat files causes three classic **anomalies**: update (copies disagree), deletion (removing one fact loses another) and insertion (you can’t record a fact without an unrelated one). Splitting data into linked tables to remove them is called **normalization**; Data Literacy Unit 10 covers it.",
@@ -1521,7 +1521,7 @@ ICA.addUnit({
       "Hardware support (Intel VT-x, AMD-V, and Arm’s virtualization extensions) lets the processor run guest code almost at full speed, with the hypervisor stepping in only for privileged operations. It’s switched on in the firmware (UEFI), which is why Task Manager may report it as disabled on some PCs.",
       "Containers use operating-system features (on Linux, namespaces and control groups) to isolate processes that share one kernel. NIST’s Application Container Security Guide (SP 800-190, 2017) describes containers as operating-system virtualization combined with application packaging. They start in about a second and use little memory, but the shared kernel means a kernel flaw can affect every container on the host, so VMs give stronger isolation.",
       "The two are often combined: cloud providers run customers’ containers inside VMs. ChromeOS, for example, runs a lightweight VM called Termina, with a Debian container inside it, for its Linux environment.",
-      "Snapshots aren’t backups: they usually live on the same storage as the VM, so a disk failure can take both. CompTIA Tech+ objective 2.6 covers hypervisors and guest operating systems.",
+      "Snapshots aren’t backups: they are usually stored on the same storage as the VM, so a disk failure can take both. CompTIA Tech+ objective 2.6 covers hypervisors and guest operating systems.",
       "Cloud providers use **live migration**, moving a running VM from one physical host to another, to repair or replace hardware without customers noticing.",
       "The word “virtual machine” also has a second meaning in programming: a runtime such as the Java Virtual Machine, which runs bytecode. It’s a different idea from a whole virtual computer."
      ]
@@ -1741,7 +1741,7 @@ ICA.addUnit({
         ["HTML, CSS, JavaScript; Swift or Kotlin in phone apps","Almost any language: Python, JavaScript, Java, C#, Go, PHP"]
       ]},
       "Systems are often described in [[three-tier|three tiers]]: presentation (front end), logic (back end) and data (database). Important checks must be repeated on the back end, because users control what their own devices send.",
-      "Data lives in several places: the back-end database (the source of truth), caches on your device (speed and offline use), backups and logs. Deleting an app removes the local copy, not your account’s data.",
+      "Data is stored in several places: the back-end database (the source of truth), caches on your device (speed and offline use), backups and logs. Deleting an app removes the local copy, not your account’s data.",
       "To diagnose a fault: only you, only in the app suggests the front end; only on one network suggests your network; 500 or 503 errors for everyone suggest the back end; the same wrong detail everywhere suggests the stored data. A service’s [[status-page|status page]] often settles it.",
       "Apps also depend on other companies’ services through their APIs: maps, payments, signing in with another account, and AI features. When one of those has an outage, parts of many different apps fail at once.",
       "On the web you can watch a front end ask its back end for data in the browser’s developer tools (Making with Code Unit 1, Lesson 5)."
@@ -1781,7 +1781,7 @@ ICA.addUnit({
    {id:"data-vs-information", term:"Data and information", def:"Data is recorded facts; information is data put in context so it means something people can act on.", codex:"data-value"},
    {id:"critical-data", term:"Critical data", def:"Data an organization can’t work without, or whose loss or leak would cause serious harm, such as customer accounts, medical records or payroll.", codex:"data-value"},
    {id:"big-data", term:"Big data", def:"Data so large, fast-arriving or varied that ordinary tools can’t store or analyze it.", codex:"data-value"},
-   {id:"structured-data", term:"Structured data", def:"Data that fits a fixed design, with the same fields in every record, so it sits in rows and columns.", codex:"structured-unstructured-data"},
+   {id:"structured-data", term:"Structured data", def:"Data that fits a fixed design, with the same fields in every record, so it is stored in rows and columns.", codex:"structured-unstructured-data"},
    {id:"semi-structured-data", term:"Semi-structured data", def:"Data whose values are labeled but whose records can have different fields, such as JSON or XML files.", codex:"structured-unstructured-data"},
    {id:"unstructured-data", term:"Unstructured data", def:"Data with no predefined layout, whose meaning is in the content itself, such as photos, audio, video and free text.", codex:"structured-unstructured-data"},
    {id:"flat-file", term:"Flat file", def:"Data stored as a single table in one file, such as a spreadsheet or a CSV file.", codex:"flat-files-vs-databases"},

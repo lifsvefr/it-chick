@@ -83,7 +83,7 @@ ICA.addUnit({
       "Sometimes a cell **looks** like a number but holds text. Common causes are data copied from a web page or PDF, a hidden space before or after the digits, a leading apostrophe, or an imported file. Another cause is a column that was formatted as Text before the numbers were typed.",
       "It matters because most functions skip text. Priya records her bakery’s cake sales: `12`, `15` and `9`. But the `15` was pasted from an email and is text. `=SUM(B2:B4)` returns **21**, not 36, with no error message.",
       {list:[
-        "**The clue:** the 15 sits on the left of its cell while 12 and 9 sit on the right.",
+        "**The clue:** the 15 is on the left of its cell while 12 and 9 are on the right.",
         "**Desktop Excel** puts a small green triangle in the corner of such cells. Select the cell, click the warning icon and choose **Convert to Number**.",
         "**LibreOffice Calc** has **View → Value Highlighting**, which shows text in black, numbers in blue and formulas in green until you turn it off.",
         "**Any app:** retype the value, or use `=VALUE(B3)` in a spare cell to turn the text into a number."
@@ -136,7 +136,7 @@ ICA.addUnit({
       {v:22, tol:0, why:"That counts both the first and the last day. Subtracting dates gives the gap between them: from 2 March to 23 March is 21 days. If you need to count both days, add 1 yourself."},
       {v:20, tol:0, why:"That’s one too few. 23 − 2 = 21 days, and both dates are in March, so no month lengths are involved."}
     ], hint2:"Subtract the day numbers: both dates are in the same month."},
-    {id:"t1u9-l1-x3", type:"mcq", q:"Kenji’s column of cake sales shows 12, 15 and 9, but `=SUM(B2:B4)` shows 21. He notices the 15 sits on the left of its cell. What is the most likely cause?", options:[
+    {id:"t1u9-l1-x3", type:"mcq", q:"Kenji’s column of cake sales shows 12, 15 and 9, but `=SUM(B2:B4)` shows 21. He notices the 15 is on the left of its cell. What is the most likely cause?", options:[
       {t:"The 15 is stored as text, so SUM skips it", ok:true, why:"Right. Text lines up on the left by default, and SUM ignores text. 12 + 9 = 21. Converting the 15 to a real number fixes the total."},
       {t:"SUM can’t add more than two cells", why:"SUM can add thousands of cells. The total is exactly 12 + 9, which points to the 15 being skipped."},
       {t:"The cells are formatted with no decimal places", why:"Formats change only how values look; they can’t drop a whole value from a total."},
@@ -166,10 +166,10 @@ ICA.addUnit({
    ],
    apply:{intro:"Make a practice sheet and watch how the app treats different kinds of data. Any of the free options works. You can use Excel for the web with a free Microsoft account, or Google Sheets with a free Google account. You can also use LibreOffice Calc, or Numbers on an Apple device (or Numbers for iCloud in a browser).", tasks:[
      {t:"Make a sheet and see the alignment clue", app:{
-       ms:["Go to office.com, sign in and open **Excel**, then choose **Blank workbook**. (Desktop Excel: **File → New → Blank workbook**.)","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it), and press [[kbd:Enter]] after each. Some apps keep the last one as text. Others change it into a number.","Notice which entries sit on the left and which on the right. Click each cell and compare the cell with the formula bar.","Select A3, open the **Number Format** box on the **Home** tab and choose **Number**. The date becomes a serial number (46083, possibly with .00). Press [[kbd:Ctrl]] + [[kbd:Z]] to undo."],
-       google:["Go to sheets.google.com and choose **Blank spreadsheet** (or type sheets.new in the address bar).","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it). Some apps keep the last one as text. Others change it into a number.","Notice which entries sit on the left and which on the right. Click each cell and compare it with the formula bar.","Select A3 and choose **Format → Number → Number**. The date becomes 46083.00. Undo with [[kbd:Ctrl]] + [[kbd:Z]] ([[kbd:Cmd]] + [[kbd:Z]] on a Mac)."],
+       ms:["Go to office.com, sign in and open **Excel**, then choose **Blank workbook**. (Desktop Excel: **File → New → Blank workbook**.)","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it), and press [[kbd:Enter]] after each. Some apps keep the last one as text. Others change it into a number.","Notice which entries are on the left and which are on the right. Click each cell and compare the cell with the formula bar.","Select A3, open the **Number Format** box on the **Home** tab and choose **Number**. The date becomes a serial number (46083, possibly with .00). Press [[kbd:Ctrl]] + [[kbd:Z]] to undo."],
+       google:["Go to sheets.google.com and choose **Blank spreadsheet** (or type sheets.new in the address bar).","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it). Some apps keep the last one as text. Others change it into a number.","Notice which entries are on the left and which are on the right. Click each cell and compare it with the formula bar.","Select A3 and choose **Format → Number → Number**. The date becomes 46083.00. Undo with [[kbd:Ctrl]] + [[kbd:Z]] ([[kbd:Cmd]] + [[kbd:Z]] on a Mac)."],
        libre:["Open LibreOffice and choose **Calc Spreadsheet** (or **File → New → Spreadsheet**).","In A1 type `Ana`, in A2 `42`, in A3 `2026-03-02`, in A4 `15 ` (with a space after it). Some apps keep the last one as text. Others change it into a number.","Choose **View → Value Highlighting**: text turns black, numbers blue. Which cells are text? Turn it off again from the same menu.","Select A3, choose **Format → Cells → Numbers**, pick the **Number** category and click **OK**. The date shows 46083. Undo."],
-       apple:["Open **Numbers**, click **New Document** and choose **Blank**.","Click the first empty cell below the table’s header row. Then type `Ana`, `42`, `2026-03-02` and `15 ` (with a space after it) in four cells down that column. Some apps keep the last one as text. Others change it into a number.","Notice which entries sit on the left and which on the right.","Select the date cell and open the **Format** sidebar (paintbrush button) → **Cell**. The **Data Format** menu shows Date & Time. Numbers keeps dates as their own type rather than showing a serial number, so there’s no serial number to look at here."]
+       apple:["Open **Numbers**, click **New Document** and choose **Blank**.","Click the first empty cell below the table’s header row. Then type `Ana`, `42`, `2026-03-02` and `15 ` (with a space after it) in four cells down that column. Some apps keep the last one as text. Others change it into a number.","Notice which entries are on the left and which are on the right.","Select the date cell and open the **Format** sidebar (paintbrush button) → **Cell**. The **Data Format** menu shows Date & Time. Numbers keeps dates as their own type rather than showing a serial number, so there’s no serial number to look at here."]
      }},
      {t:"Keep a leading zero", app:{
        ms:["In B1 type `02134` and press [[kbd:Enter]]. The zero disappears.","In B2 type `'02134` (apostrophe first). The zero stays, and desktop Excel may show a small green triangle saying the number is stored as text. That’s what you want here.","Select C1:C5, set the **Number Format** box to **Text**, then type `0412555019` in C1. The zero stays.","Desktop Excel only: look at **File → Options → Data → Automatic Data Conversion** (on a Mac, **Excel → Preferences → Edit**). Read the options; you don’t need to change them."],
@@ -501,7 +501,7 @@ ICA.addUnit({
       {t:"=XLOOKUP(F2, A2:A5, C2:C5)", flag:false, why:"Correct: exact match by default, returns the price."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 3)", flag:true, why:"The last argument is missing, so VLOOKUP does an approximate match. It may happen to work on this sorted list. On an unsorted list it can return the wrong price without an error. A code that isn’t in the list can return a neighboring row’s price instead of #N/A. Add FALSE: =VLOOKUP(F2, A2:C5, 3, FALSE)."}, "\n", {t:"=IF(B2>=50, Pass, \"Retake\")", flag:true, why:"Pass needs quotes. Without them the app looks for something named Pass and shows #NAME?. Write \"Pass\"."}, "\n", {t:"=COUNTIF(C2:C6, \">100\")", flag:false, why:"Correct: the comparison sign goes inside the quotes."}, "\n", {t:"=AVERAGE(B2:B7)", flag:false, why:"Correct: averages the numbers in B2:B7."}, "\n", {t:"=VLOOKUP(F2, A2:C5, 4, FALSE)", flag:true, why:"A2:C5 has only 3 columns, so asking for column 4 is an error: #REF! in Excel and Google Sheets, Err:502 in LibreOffice Calc. Price is column 3."}
     ]},
     {id:"t1u9-l3-x6", type:"mcq", q:"Ana splits a 100.00 bill between three people with `=B2/3` in three cells, formatted to two decimals. Each shows 33.33 and their SUM shows 100.00. Each person then pays exactly 33.33. What’s going on?", options:[
-      {t:"The cells hold 33.333…; the format hides the extra digits", ok:true, why:"Right. The stored shares add to exactly 100, but real payments of 33.33 add to 99.99. Formatting changes the display, not the value, so the SUM adds the unrounded shares. If the rounded amount is what people actually pay, use =ROUND(B2/3, 2), and the SUM will honestly show 99.99."},
+      {t:"The cells hold 33.333…; the format hides the extra digits", ok:true, why:"Right. The stored shares add to exactly 100, but real payments of 33.33 add to 99.99. Formatting changes the display, not the value, so the SUM adds the unrounded shares. If the rounded amount is what people actually pay, use =ROUND(B2/3, 2), and the SUM will show 99.99."},
       {t:"Formatting to two decimals rounds the stored values, so the SUM is wrong", why:"Formatting doesn’t change stored values; that’s why the SUM still shows 100.00. ROUND is the function that changes values."},
       {t:"Spreadsheets can’t divide by 3 accurately", why:"The division is as accurate as it needs to be. The mismatch comes from rounding real payments while the sheet uses unrounded values."},
       {t:"The SUM function adds an extra cent to round totals", why:"SUM adds the stored values exactly. Three times 33.333… is 100."}
@@ -544,7 +544,7 @@ ICA.addUnit({
       {lead:"Many spreadsheets are made to look nice when printed. The same choices that make them pretty often make them impossible to sort, filter or count."},
       "Look at this harvest record from a community garden. It’s easy for a person to read, but hard for a spreadsheet to work with:",
       {ex:"HARVEST 2026 (merged A1:C1)\n        June        July\nPlot 1  2kg tomato  3kg beans\nPlot 2  1.5kg       (yellow=sold)\nTOTAL   3.5kg       3kg\nPlot 3  4kg beans   n/a", label:"A sheet made for reading", mono:true},
-      "The problems are a merged title row and months spread across columns. Numbers, units and crop names are squashed into one cell (“2kg tomato”). A color carries meaning, and a total row sits in the middle of the data. Also, “n/a” does not show whether nothing grew or nobody weighed it.",
+      "The problems are a merged title row and months spread across columns. Numbers, units and crop names are squashed into one cell (“2kg tomato”). A color carries meaning, and a total row is in the middle of the data. Also, “n/a” does not show whether nothing grew or nobody weighed it.",
       "None of this is “wrong” for a printout. But you can’t ask this sheet “how many kilograms of beans this year?” without retyping it. The fix is to keep **one sheet for the data**, laid out for the computer, and build any pretty summary separately from it."
     ]},
     {h:"Tidy data: three rules", body:[
@@ -555,7 +555,7 @@ ICA.addUnit({
         "**Each cell holds one value**: one number, one date or one piece of text, never “2 kg tomatoes”."
       ]},
       {ex:"Plot   Month  Crop      Kg\n1      June   Tomatoes  2\n1      July   Beans     3\n2      June   Tomatoes  1.5\n3      June   Beans     4", label:"The same harvest, tidy", mono:true},
-      "It looks longer and plainer, and that’s the point. Now `=SUMIF(C2:C5, \"Beans\", D2:D5)` gives 7 kg of beans, a filter shows only June, and a sort puts the biggest harvests first. Units go in the header (“Kg”), not in every cell. “Sold” becomes its own column with Yes or No, instead of a color.",
+      "It looks longer and plainer, but that is what makes it work. Now `=SUMIF(C2:C5, \"Beans\", D2:D5)` gives 7 kg of beans, a filter shows only June, and a sort puts the biggest harvests first. Units go in the header (“Kg”), not in every cell. “Sold” becomes its own column with Yes or No, instead of a color.",
       {table:[
         ["Habit","Instead"],
         ["Color means something (yellow = sold)","Add a column: Sold = Yes/No. Color can then highlight it, as a bonus."],
@@ -596,7 +596,7 @@ ICA.addUnit({
         "LibreOffice Calc: **Data → AutoFilter**.",
         "Numbers: hover over a column letter, click the arrow and choose **Quick Filter**, or use the **Organize** sidebar → **Filter** → **Add a Filter**."
       ]},
-      {warn:"A hidden row is still part of the data. `SUM` and most other functions still include rows that a filter hides. So a total next to a filtered table usually covers everything, not just what you see. (Excel, Google Sheets and LibreOffice have SUBTOTAL for totals of visible rows only.) Also, in a shared sheet, an ordinary filter changes the view for everyone. This is why Google Sheets offers filter views."}
+      {warn:"A hidden row is still part of the data. `SUM` and most other functions still include rows that a filter hides. So a total next to a filtered table usually covers everything, including rows you cannot see. (Excel, Google Sheets and LibreOffice have SUBTOTAL for totals of visible rows only.) Also, in a shared sheet, an ordinary filter changes the view for everyone. This is why Google Sheets offers filter views."}
     ]},
     {h:"Freeze the header, and make it a table", body:[
       "In a long list, the header row scrolls out of sight. To [[freeze-panes|freeze]] it so it stays visible:",
@@ -606,7 +606,7 @@ ICA.addUnit({
         "LibreOffice Calc: **View → Freeze Cells → Freeze First Row**.",
         "Numbers: click the table, then **Format** sidebar → **Table** → the **Headers & Footer** menus → **Freeze Header Rows**."
       ]},
-      "Several apps can also turn a range into a formal **table**. A table has a header, banded rows, filter buttons and formulas that extend themselves as rows are added. In Excel, click in the data and choose **Insert → Table** ([[kbd:Ctrl]] + [[kbd:T]]). In Google Sheets, select the data and choose **Format → Convert to table**. Then pick a type for each column (Number, Text, Date, Dropdown and so on). Sheets then warns about entries that don’t match. In Numbers, everything already lives in tables with header rows."
+      "Several apps can also turn a range into a formal **table**. A table has a header, banded rows, filter buttons and formulas that extend themselves as rows are added. In Excel, click in the data and choose **Insert → Table** ([[kbd:Ctrl]] + [[kbd:T]]). In Google Sheets, select the data and choose **Format → Convert to table**. Then pick a type for each column (Number, Text, Date, Dropdown and so on). Sheets then warns about entries that don’t match. In Numbers, everything is already in tables with header rows."
     ]},
     {h:"Data validation: stopping mistakes at the door", body:[
       "The best way to keep data consistent is to make inconsistent entries hard to type. [[data-validation|Data validation]] sets rules for what a cell may hold: a dropdown list of allowed values, whole numbers between 0 and 100, dates after a certain day.",
@@ -743,7 +743,7 @@ ICA.addUnit({
     {h:"Labels that let a chart stand on its own", body:[
       "Someone should understand your chart without you there to explain it. A short checklist:",
       {list:[
-        "**A title that says what it shows**, such as “Cake sales by type, October 2026”, not just “Chart 1”.",
+        "**A title that says what it shows**, such as “Cake sales by type, October 2026”, rather than “Chart 1”.",
         "**Axis titles with units**: kg, minutes, euros, number of members, % of members.",
         "**Readable categories**: long names fit better on a horizontal bar chart than under columns.",
         "**A legend only when needed**: with one series, delete it; with a few lines, labeling each line directly is easier to read.",
@@ -992,7 +992,7 @@ ICA.addUnit({
       "**Automatic data conversion in Excel.** Excel for Microsoft 365 and Excel 2024 (Windows: File → Options → Data; Mac: Excel → Preferences → Edit) let you switch off four conversions: removing leading zeros from numeric text, keeping only the first 15 digits of long numbers and showing them in scientific notation, converting digits around an E to scientific notation (123E5 → 1.23E+07), and converting letters-plus-digits to dates (JAN1 → 1 January). Microsoft notes they apply when you add data to a workbook, such as by opening a .csv file, but don’t directly affect data imported with Power Query, which has its own column types.",
       "**The gene-name case.** Ziemann, Eren and El-Osta (2016) found that about one-fifth of genomics papers with supplementary Excel gene lists contained conversion errors. Abeysooriya and colleagues (2021) scanned PubMed Central supplements from 2014–2020 and found errors in about 31% of articles with Excel gene lists (3,436 of 11,117), including dates appearing as five-digit serial numbers. The HUGO Gene Nomenclature Committee changed the affected symbols (SEPT# to SEPTIN#, MARCH# to MARCHF#, DEC1 to DELEC1).",
       "**Date edge cases.** Older Excel for Mac versions defaulted to a 1904 date system; the two systems differ by 1,462 days, so dates copied between workbooks using different systems shift by about four years (File → Options → Advanced → “Use 1904 date system”). Excel also treats 1900 as a leap year, for compatibility with an older program, so serial numbers before 1 March 1900 differ from Google Sheets and LibreOffice.",
-      "**Floating point.** Spreadsheets store numbers in binary, so some decimals can’t be stored exactly. A calculation that should give exactly 0 can sometimes give a tiny number such as −2.78E-17 instead. Apps quietly tidy some of these cases (LibreOffice Calc returns 0 for `=0.1+0.2-0.3`), but not all, so ROUND before comparing values that should be equal.",
+      "**Floating point.** Spreadsheets store numbers in binary, so some decimals can’t be stored exactly. A calculation that should give exactly 0 can sometimes give a tiny number such as −2.78E-17 instead. Apps automatically tidy some of these cases (LibreOffice Calc returns 0 for `=0.1+0.2-0.3`), but not all, so ROUND before comparing values that should be equal.",
       {tip:"For data that must survive exactly (identifiers, codes, lab results), keep an untouched copy of the original file and record every cleaning step."}
      ]
     },
@@ -1074,8 +1074,8 @@ ICA.addUnit({
      builder:[
       {ex:"B2:B7 = 4, 6, (blank), 3, away, 5\n=SUM(B2:B7)      18\n=COUNT(B2:B7)    4\n=COUNTA(B2:B7)   5\n=AVERAGE(B2:B7)  4.5   (18 ÷ 4)\n=MIN(B2:B7)      3\n=MAX(B2:B7)      6", label:"One table, six functions", mono:true},
       "If the blank becomes a typed 0, COUNT becomes 5, COUNTA 6, AVERAGE 3.6 (18 ÷ 5) and MIN 0.",
-      "**ROUND versus formatting.** `=ROUND(number, digits)` changes the value: `=ROUND(12.3456, 2)` is 12.35, `=ROUND(1234.5, -2)` is 1200. A number format changes only the display. Use formatting for display; use ROUND when the rounded value is the real one, such as money that will be paid. Splitting 100.00 three ways: formatted shares show 33.33 but sum to 100.00; ROUNDed shares sum honestly to 99.99.",
-      "Related functions worth knowing: ROUNDUP and ROUNDDOWN (always up or down), COUNTBLANK (empty cells), MEDIAN (the middle value, less affected by extremes than the mean), and SUMPRODUCT. All of these exist in Excel, Google Sheets, LibreOffice Calc and Numbers.",
+      "**ROUND versus formatting.** `=ROUND(number, digits)` changes the value: `=ROUND(12.3456, 2)` is 12.35, `=ROUND(1234.5, -2)` is 1200. A number format changes only the display. Use formatting for display; use ROUND when the rounded value is the real one, such as money that will be paid. Splitting 100.00 three ways: formatted shares show 33.33 but sum to 100.00; ROUNDed shares sum to 99.99.",
+      "Related functions: ROUNDUP and ROUNDDOWN (always up or down), COUNTBLANK (empty cells), MEDIAN (the middle value, less affected by extremes than the mean), and SUMPRODUCT. All of these exist in Excel, Google Sheets, LibreOffice Calc and Numbers.",
       "Typing a function name shows a list of matches and then the argument names. Optional arguments appear in square brackets in help pages.",
       "**Writing ranges.** Drag across the cells while typing the formula, or type them (`B2:B7`). A whole column such as `B:B` includes rows added later, but also the header and anything else in that column, so a precise range or a formal table is usually safer."
      ],
@@ -1216,7 +1216,7 @@ ICA.addUnit({
       "Also: one header row, no merged cells in the data, no colors that carry meaning on their own, and no totals mixed in with the records.",
       {key:"Keep one tidy sheet as the data. Build pretty summaries from it, not instead of it."},
       {ex:"Date        Item     Amount\n2026-10-01  Flour    12.50\n2026-10-01  Sugar    4.20\n2026-10-03  Flour    12.50", label:"A tidy expense list", mono:true},
-      "Tidy tables look plain, and that’s fine: they’re for working with, not for printing."
+      "Tidy tables look plain because they’re for working with, not for printing."
      ],
      builder:[
       "The name and the three rules come from the statistician Hadley Wickham’s 2014 paper “Tidy Data”. In spreadsheet terms:",
@@ -1320,7 +1320,7 @@ ICA.addUnit({
       "**Same scales for comparisons.** Small multiples (several small charts side by side) need identical axes, or readers will compare shapes that mean different things. Apps choose each axis automatically, so set them by hand.",
       "**Cropped line axes.** If a line chart’s axis doesn’t start at zero, ONS asks for a gap between the start of the axis and the first data point (around a quarter to a third of the chart’s space), so readers don’t mistake the bottom of the chart for zero.",
       "**Aggregation choices.** A chart of averages hides spread; a chart of totals rewards bigger groups. Consider showing counts alongside percentages, and say what each bar or point represents.",
-      "**Accessibility.** Give charts a text alternative that states the main finding, not just “chart of sales”. Use more than color to separate series, and check contrast. Keep the underlying table available for screen-reader users and for anyone who wants exact values.",
+      "**Accessibility.** Give charts a text alternative that states the main finding, rather than only “chart of sales”. Use more than color to separate series, and check contrast. Keep the underlying table available for screen-reader users and for anyone who wants exact values.",
       "**Reproducibility.** Charts linked to tidy data update when the data changes, which is good, but also means a chart in a shared file can silently change. Export a dated image or PDF for reports that must stay fixed."
      ]
     },
@@ -1417,7 +1417,7 @@ ICA.addUnit({
      {t:"A price of 4.50", why:"Prices are added and multiplied; store them as numbers with a currency format if you like."},
      {t:"A temperature reading of 21.5", why:"A measurement you might average or chart: a number."}
    ]},
-   {id:"t1u9-q05", lesson:"t1u9-l1", level:2, q:"A column of amounts has one value sitting on the left edge of its cell while the others sit on the right. What does this most likely mean?", options:[
+   {id:"t1u9-q05", lesson:"t1u9-l1", level:2, q:"A column of amounts has one value on the left edge of its cell while the others are on the right. What does this most likely mean?", options:[
      {t:"That value is stored as text, so SUM will skip it", ok:true, why:"By default text aligns left and numbers right. SUM and AVERAGE skip a number stored as text, a common cause of totals that are too small."},
      {t:"That value is negative", why:"Negative numbers still align right; they show a minus sign or brackets."},
      {t:"That value is the largest or smallest number in the column", why:"Alignment doesn’t depend on size."},
