@@ -1,7 +1,7 @@
 /* Japanese Foundations · Unit 2 (e3u2) · N5 grammar I */
 ICA.addUnit({
   id:"e3u2", track:"e3", n:2, title:"N5 grammar I", icon:"🧩",
-  blurb:"Your first real Japanese sentences: X は Y です and its negative and past, questions with か, の, the pointing words これ・それ・あれ, a first look at は and が, polite verbs with ます and the three verb groups, the particles を, に, で, へ, と, も, から and まで, あります and います, and い- and な-adjectives.",
+  blurb:"Your first real Japanese sentences. X は Y です, with its negative and past. Questions with か. の. The pointing words これ・それ・あれ. A first look at は and が. Polite verbs with ます and the three verb groups. The particles を, に, で, へ, と, も, から and まで. あります and います. い-adjectives and な-adjectives.",
   goals:[
     "Say what something or someone is, is not, was and was not with です, ではありません/じゃありません, でした and ではありませんでした",
     "Ask and answer yes–no questions with か and simple question words, and join nouns with の",
@@ -34,7 +34,7 @@ ICA.addUnit({
       {ex:"まりやさんは[学生]{がくせい}です。\nMariya is a student.", label:"The pattern"},
       "**まりやさん** is the [[topic-marker|topic]]: what the sentence is about. **は** is a [[particle]]: a small word that comes after a noun and shows its job in the sentence. Here it marks the topic, a bit like “as for Mariya…”. **[学生]{がくせい}** is what you say about the topic. **です** is the polite [[copula]]: it works like “is”, “am” or “are”.",
       "Remember the hook: the particle は is pronounced **わ**. Inside words it keeps its normal sound: はな (flower), はい (yes).",
-      {tip:"**Listening to patterns.** When a pattern has a blank, like X は Y です, the audio reads X and Y as **ほにゃらら**: a playful word Japanese speakers use for “something or other” when a word is left out, a bit like “so-and-so” or “blah”. You’ll hear it on TV and in everyday talk all over Japan. It’s casual, so keep it out of formal writing. A and B are read the way Japanese teachers do: エー and ビー."},
+      {tip:"**Listening to patterns.** When a pattern has a blank, like X は Y です, the audio reads X and Y as **ほにゃらら**: a playful word that Japanese speakers use for “something or other” when a word is left out. It is a bit like “so-and-so” or “blah”. You will hear it on TV and in everyday talk all over Japan. It is casual, so keep it out of formal writing. A and B are read the way Japanese teachers do: エー and ビー."},
       {table:[["Japanese","English"],["[私]{わたし}はまりやです。","I’m Mariya."],["ふみこさんは[大家]{おおや}さんです。","Fumiko-san is the landlady."],["ロドリゴさんはメキシコ[人]{じん}です。","Rodrigo is Mexican."],["[今日]{きょう}は[休]{やす}みです。","Today is a day off."]]},
       "Three things that surprise English speakers:",
       {list:["**です doesn’t change for the person.** I am, you are, she is, they are: all です.","**There are no words for “a” or “the”,** and most nouns have no plural ending. [学生]{がくせい} can mean “a student”, “the student” or “students”. The situation tells you which.","**The verb part comes last.** です closes the sentence. Everything about the topic comes before it."]},
@@ -64,7 +64,7 @@ ICA.addUnit({
       {table:[["","Short answer","Full answer"],["Yes","はい、そうです。","はい、[学生]{がくせい}です。"],["No","いいえ、ちがいます。","いいえ、[学生]{がくせい}じゃありません。"]]},
       "そうです (“that’s right”) and ちがいます (“that’s not right”) fit questions about nouns. For questions about verbs and adjectives, which you’ll meet in Lessons 3 and 5, you answer with the verb or adjective itself.",
       "You can also put a [[question-word]] where the answer will go: 「お[仕事]{しごと}は[何]{なん}ですか。」「[医者]{いしゃ}です。」 (“What do you do?” “I’m a doctor.”). Lesson 2 adds more question words.",
-      "か is one of several [[sentence-final-particle|sentence-final particles]]. Two others you will hear all the time: **ね** checks that the listener agrees (「いい[天気]{てんき}ですね。」 “Nice weather, isn’t it?”), and **よ** tells the listener something they may not know (「[明日]{あした}は[休]{やす}みですよ。」 “Tomorrow’s a day off, you know.”). Use よ lightly: too much of it can sound pushy."
+      "か is one of several [[sentence-final-particle|sentence-final particles]]. Two others you will hear all the time: **ね** checks that the listener agrees (「いい[天気]{てんき}ですね。」 “Nice weather, isn’t it?”), and **よ** tells the listener something they may not know (「[明日]{あした}は[休]{やす}みですよ。」 “Tomorrow’s a day off, you know.”). Use よ lightly. Too much of it can sound pushy."
     ]},
     {h:"の: joining two nouns", body:[
       "The [[particle-no|particle の]] joins two nouns. The first noun tells you something about the second: who owns it, what kind it is, or where it belongs.",
@@ -170,7 +170,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e3u2-l2", title:"これ, それ, あれ: pointing, asking, and は vs が", minutes:50,
-   hook:{q:"Rodrigo finds an odd tool in a kitchen drawer and holds it up. He asks you 「これは[何]{なん}ですか。」 (“What is this?”). The tool is near him, not you. How do you begin your answer?", options:["これは…","それは…","あれは…","どれは…"], answer:1, reveal:"**それは…** Rodrigo says これ because the tool is near him. From where you stand, it is near the listener, so you say それ: 「それはおろし[金]{がね}です。」 (“That’s a grater.”) Japanese pointing words depend on who the thing is close to, and they change as the speaker changes. This lesson maps all of them."},
+   hook:{q:"Rodrigo finds an odd tool in a kitchen drawer and holds it up. He asks you 「これは[何]{なん}ですか。」 (“What is this?”). The tool is near him, not you. How do you begin your answer?", options:["これは…","それは…","あれは…","どれは…"], answer:1, reveal:"**それは…** Rodrigo says これ because the tool is near him. From where you stand, it is near the listener, so you say それ: 「それはおろし[金]{がね}です。」 (“That’s a grater.”) Japanese pointing words depend on who the thing is close to. They change as the speaker changes. This lesson maps all of them."},
    goals:[
      "Choose これ, それ, あれ or どれ by who the thing is close to",
      "Tell これ (stands alone) from この (needs a noun), and use ここ, そこ, あそこ and どこ for places",
@@ -182,7 +182,7 @@ ICA.addUnit({
       {lead:"English has two pointing words, “this” and “that”. Japanese has three, and the choice depends on who the thing is close to."},
       {table:[["Word","Meaning","Close to…"],["これ","this one","the speaker (me)"],["それ","that one","the listener (you)"],["あれ","that one over there","neither of us"],["どれ","which one?","(question)"]]},
       "These words start with こ, そ, あ and ど, and the same four sounds build whole families of pointing words. Teachers call them the [[ko-so-a-do|こそあど]] words. Once you know the pattern, you can guess the meaning of new members.",
-      "When you and the listener stand **side by side**, looking at the same things, the rule shifts a little: これ is for things near both of you, それ for things a little away, and あれ for things far away.",
+      "Sometimes you and the listener stand **side by side**, looking at the same things. Then the rule shifts a little. これ is for things near both of you. それ is for things a little away. あれ is for things far away.",
       {fig:'<svg viewBox="0 0 340 332"><text x="170" y="18" text-anchor="middle">Who is it close to?</text><rect class="d-gold" x="8" y="30" width="324" height="70" rx="10" stroke-width="2"/><text x="170" y="60" text-anchor="middle">あれ・あの・あそこ</text><text class="s" x="170" y="84" text-anchor="middle">far from both of us</text><rect class="d-lup" x="8" y="112" width="158" height="150" rx="10" stroke-width="2"/><text x="87" y="136" text-anchor="middle">これ・この・ここ</text><text class="s" x="87" y="156" text-anchor="middle">near me</text><circle class="d-ink" cx="87" cy="190" r="13" stroke-width="2" fill="none"/><path class="d-ink" d="M70 236 Q87 204 104 236" stroke-width="2" fill="none"/><text class="s" x="87" y="252" text-anchor="middle">me (speaker)</text><rect class="d-sage" x="174" y="112" width="158" height="150" rx="10" stroke-width="2"/><text x="253" y="136" text-anchor="middle">それ・その・そこ</text><text class="s" x="253" y="156" text-anchor="middle">near you</text><circle class="d-ink" cx="253" cy="190" r="13" stroke-width="2" fill="none"/><path class="d-ink" d="M236 236 Q253 204 270 236" stroke-width="2" fill="none"/><text class="s" x="253" y="252" text-anchor="middle">you (listener)</text><rect class="d-panel" x="8" y="274" width="324" height="50" rx="10" stroke-width="1.5"/><text x="170" y="296" text-anchor="middle">どれ・どの・どこ</text><text class="s" x="170" y="314" text-anchor="middle">questions: which one? which? where?</text></svg>', alt:"A diagram with three zones. Near the speaker: これ, この, ここ. Near the listener: それ, その, そこ. Far from both, at the top: あれ, あの, あそこ. At the bottom, the question words どれ, どの, どこ.", cap:"こ is near me, そ is near you, あ is far from both of us, and ど asks."}
     ]},
     {h:"これ or この?", body:[
@@ -211,7 +211,7 @@ ICA.addUnit({
     ]},
     {h:"は and が: a gentle first look", body:[
       "Japanese has two particles that can sit after the “who” or “what” of a sentence: は and が. Learners worry about them for years, so here is a gentle start, enough for N5. You will add more uses later.",
-      "**は marks the topic**: something already in the conversation, which you now say something about. **が marks the** [[subject-marker|subject]] when that subject is the new or important information, the thing that answers “who?” or “which?”.",
+      "**は marks the topic**: something already in the conversation, which you now say something about. **が marks the** [[subject-marker|subject]] when that subject is the new or important information. It is the thing that answers “who?” or “which?”.",
       {h:"Rule 1: a question word as the subject takes が"},
       "A question word is new information by definition, so it can’t be a topic. It takes が, never は:",
       {ex:"「どれがイエンさんのかさですか。」\n「あれがイエンさんのかさです。」\n“Which one is Yến’s umbrella?” “That one over there is Yến’s umbrella.”", label:"が after どれ, and in the answer"},
@@ -227,7 +227,7 @@ ICA.addUnit({
       "Here is a short conversation that uses almost everything in this lesson. Yến has lost her umbrella at a station and goes to the lost-and-found counter. The staff member shows her several umbrellas on a shelf behind the counter.",
       {ex:"[係]{かかり}の[人]{ひと}: 「お[客]{きゃく}さまのかさはどれですか。」\nイエン: 「あれです。あの[青]{あお}いかさです。」\n[係]{かかり}の[人]{ひと}: 「これですか。」 (holding it up)\nイエン: 「はい、それです。」\n[係]{かかり}の[人]{ひと}: 「お[名前]{なまえ}は？」\nイエン: 「ゴーです。ゴー・ハイ・イエンです。」\n\nStaff: “Which one is your umbrella?” Yến: “That one over there. That blue umbrella.” Staff: “This one?” Yến: “Yes, that one.” Staff: “Your name?” Yến: “Ngô. Ngô Hải Yến.”", label:"A conversation"},
       "Follow the pointing words. While the umbrella is on the far shelf, Yến says **あれ** and **あの** + noun. When the staff member picks it up, it is near the speaker, so she says **これ**, and Yến, looking at it in the other person’s hand, answers **それ**. The umbrella hasn’t moved far, but the speaker has changed.",
-      "Notice also that どれ asks “which one” among several umbrellas, and that the staff member says お[客]{きゃく}さま (a very polite word for a customer) instead of “you”. 「お[名前]{なまえ}は？」 leaves out the end of the question (です and か): a short form staff often use. The お before [名前]{なまえ} makes it polite, because it is the other person’s name. ([係]{かかり}の[人]{ひと} means “the person in charge”.)"
+      "Notice also that どれ asks “which one” among several umbrellas, and that the staff member says お[客]{きゃく}さま (a very polite word for a customer) instead of “you”. 「お[名前]{なまえ}は？」 leaves out the end of the question (です and か). Staff often use this short form. The お before [名前]{なまえ} makes it polite, because it is the other person’s name. ([係]{かかり}の[人]{ひと} means “the person in charge”.)"
     ]},
     {h:"Common mistakes", body:[
       {table:[["Mistake","Better","Why"],["✗ これ[本]{ほん}は[私]{わたし}のです。","この[本]{ほん}は[私]{わたし}のです。","A noun follows, so use この."],["✗ (pointing at a person) あれはだれですか。","あの[人]{ひと}はだれですか。","Pointing at people with あれ is rude."],["✗ (answering 「これは[何]{なん}ですか」 about a thing in the asker’s hand) これは…","それは…","The thing is near the listener now: you."],["✗ [何]{なに}ですか。","[何]{なん}ですか。","Before です, 何 is read なん."],["✗ だれは[先生]{せんせい}ですか。","だれが[先生]{せんせい}ですか。","A question word as subject takes が."],["✗ どこですか。 (for “which one?”)","どれですか。","どこ asks about places; どれ asks which thing."]]},
@@ -320,7 +320,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e3u2-l3", title:"Verbs with ます: tenses, groups and the dictionary form", minutes:55,
-   hook:{q:"[帰]{かえ}る means “to go home”. What is its polite ます form?", options:["かえます","かえります","かえるます","かえりです"], answer:1, reveal:"**かえります ([帰]{かえ}ります).** [帰]{かえ}る looks like the verbs that simply drop る (たべる → たべます), but it belongs to the other big group, so る becomes り. かえます is a real word too, but it comes from a different verb, [変]{か}える (to change). This lesson shows you how to tell the groups apart, and which few verbs break the pattern."},
+   hook:{q:"[帰]{かえ}る means “to go home”. What is its polite ます form?", options:["かえます","かえります","かえるます","かえりです"], answer:1, reveal:"**かえります ([帰]{かえ}ります).** [帰]{かえ}る looks like the verbs that simply drop る (たべる → たべます). But it belongs to the other big group, so る becomes り. かえます is a real word too, but it comes from a different verb, [変]{か}える (to change). This lesson shows you how to tell the groups apart. It also shows which few verbs break the pattern."},
    goals:[
      "Use the four polite forms ます, ません, ました and ませんでした for habits, plans and the past",
      "Mark the object of a verb with を",
@@ -374,7 +374,7 @@ ICA.addUnit({
       "Two endings built on the ます stem let you make plans with people:",
       {table:[["Ending","Meaning","Example"],["～ませんか","Won’t you…? Would you like to…? (an invitation)","いっしょに[映画]{えいが}を[見]{み}ませんか。"],["～ましょう","Let’s…","[見]{み}ましょう。"],["～ましょうか","Shall we…? Shall I…? (a suggestion or an offer)","[何時]{なんじ}に[会]{あ}いましょうか。"]]},
       {ex:"まりや: 「[土曜日]{どようび}、いっしょに[映画]{えいが}を[見]{み}ませんか。」\nイエン: 「いいですね。[見]{み}ましょう。」\nまりや: 「[何時]{なんじ}に[会]{あ}いましょうか。」\n\nMariya: “Would you like to see a film together on Saturday?” Yến: “Sounds good. Let’s.” Mariya: “What time shall we meet?”", label:"Making a plan"},
-      "～ませんか looks negative, but it is a friendly invitation, like English “Won’t you join us?”. It leaves the other person room to say no, so it is the polite way to invite someone. ～ましょう is more direct: use it once the other person has agreed, or with people you know well.",
+      "～ませんか looks negative, but it is a friendly invitation, like English “Won’t you join us?”. It leaves the other person room to say no, so it is the polite way to invite someone. ～ましょう is more direct. Use it once the other person has agreed, or with people you know well.",
       "～ましょうか can also offer help: 「[荷物]{にもつ}を[持]{も}ちましょうか。」 (“Shall I carry your bags?”).",
       "To decline politely, Japanese speakers rarely say a flat no. A common pattern is to say sorry and leave the sentence unfinished: 「すみません、[土曜日]{どようび}はちょっと…。」 (“Sorry, Saturday is a little…”). The listener understands."
     ]},
@@ -472,7 +472,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e3u2-l4", title:"Particles for time, place and people, and あります・います", minutes:55,
-   hook:{q:"Which particle fits? 「[図書館]{としょかん}＿＿[勉強]{べんきょう}します。」 (“I study at the library.”)", options:["に","で","を","へ"], answer:1, reveal:"**で.** Both に and で can translate as “at”, but they do different jobs. で marks the place where an action happens (studying), while に marks where something simply is: 「[図書館]{としょかん}にいます。」 (“I’m at the library.”). Choosing between them is one of the first big particle decisions in Japanese, and this lesson gives you a clear test for it."},
+   hook:{q:"Which particle fits? 「[図書館]{としょかん}＿＿[勉強]{べんきょう}します。」 (“I study at the library.”)", options:["に","で","を","へ"], answer:1, reveal:"**で.** Both に and で can translate as “at”, but they do different jobs. で marks the place where an action happens (studying). に marks where something simply is: 「[図書館]{としょかん}にいます。」 (“I’m at the library.”). Choosing between them is one of the first big particle decisions in Japanese. This lesson gives you a clear test for it."},
    goals:[
      "Use に for points in time and destinations, and know which time words take no particle",
      "Use へ for direction, and know where it can and can’t replace に",
@@ -620,7 +620,7 @@ ICA.addUnit({
        "Copy two sentences with に and two with で, and say which job each one has."
      ], write:"に: … (job) で: … (job)"}
     ],
-    proof:"Six sentences about your week with circled particles and their jobs, five sentences describing a room with あります and います, and four particles found in real Japanese with their jobs."
+    proof:"A note with three things. Six sentences about your week, with the particles circled and their jobs named. Five sentences describing a room with あります and います. Four particles you found in real Japanese, with their jobs."
    },
    read:[
     {book:"taekim", where:"Basic Grammar, “Particles used with verbs”", note:"を, に, へ and で with verbs."},
@@ -629,7 +629,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e3u2-l5", title:"い-adjectives and な-adjectives", minutes:55,
-   hook:{q:"Which is the correct polite way to say “It was cold yesterday”?", options:["[昨日]{きのう}は[寒]{さむ}いでした。","[昨日]{きのう}は[寒]{さむ}かったです。","[昨日]{きのう}は[寒]{さむ}でした。","[昨日]{きのう}は[寒]{さむ}いだったです。"], answer:1, reveal:"**[昨日]{きのう}は[寒]{さむ}かったです。** Adjectives that end in い carry their own tense: [寒]{さむ}い becomes [寒]{さむ}かった for the past, and です only adds politeness. 「[寒]{さむ}いでした」 is one of the most common mistakes learners make, because it looks like the noun pattern ([休]{やす}みでした). This lesson sorts out both kinds of adjective."},
+   hook:{q:"Which is the correct polite way to say “It was cold yesterday”?", options:["[昨日]{きのう}は[寒]{さむ}いでした。","[昨日]{きのう}は[寒]{さむ}かったです。","[昨日]{きのう}は[寒]{さむ}でした。","[昨日]{きのう}は[寒]{さむ}いだったです。"], answer:1, reveal:"**[昨日]{きのう}は[寒]{さむ}かったです。** Adjectives that end in い carry their own tense: [寒]{さむ}い becomes [寒]{さむ}かった for the past, and です only adds politeness. 「[寒]{さむ}いでした」 is a very common mistake, because it looks like the noun pattern ([休]{やす}みでした). This lesson sorts out both kinds of adjective."},
    goals:[
      "Tell い-adjectives from な-adjectives, including look-alikes such as きれい and きらい",
      "Use both kinds before nouns ([高]{たか}い[山]{やま}, [静]{しず}かな[町]{まち}) and at the end of a sentence",
@@ -786,7 +786,7 @@ ICA.addUnit({
        "Note any word you keep forgetting; it will come back in the review until it sticks."
      ], write:"Day 1… Day 2… Day 3… Words I keep forgetting…"}
     ],
-    proof:"Four sentences about your town with both kinds of adjectives (one negative, one past, one before a noun), five likes and dislikes, and notes from three short Kanji Lab sessions."
+    proof:"A note with three things. Four sentences about your town with both kinds of adjectives (one negative, one past, one before a noun). Five likes and dislikes. Notes from three short Kanji Lab sessions."
    },
    read:[
     {book:"taekim", where:"Basic Grammar, “Adjectives”", note:"な-adjectives and い-adjectives, including the irregular いい."},

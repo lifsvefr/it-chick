@@ -172,7 +172,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "**たとえ** in front of ～ても adds weight, like “even if” said with emphasis: たとえ[反対]{はんたい}されても、[留学]{りゅうがく}します (Even if they’re against it, I’m going to study abroad). たとえ doesn’t change the grammar; it warns the listener that a ～ても is coming.",
+      "**たとえ** in front of ～ても adds weight. It is like saying “even if” with emphasis: たとえ[反対]{はんたい}されても、[留学]{りゅうがく}します (Even if they’re against it, I’m going to study abroad). たとえ doesn’t change the grammar; it warns the listener that a ～ても is coming.",
       {
        tip: "どんなに and いくら almost always need ～ても (or ～でも) later in the sentence. If you start with どんなに, you have promised your listener a ～ても."
       }
@@ -2026,7 +2026,7 @@ ICA.addUnit({
        ex: "[嫌]{きら}いなわけではないんですが、[今日]{きょう}はちょっと…\nIt’s not that I don’t like it, but today…\n\nお金があれば[幸]{しあわ}せになれるわけではありません。\nHaving money doesn’t mean you can be happy.\n\n日本人がみんな[寿司]{すし}が[好]{す}きなわけではありません。\nNot every Japanese person likes sushi.\n\n私は[専門家]{せんもんか}というわけではありませんが、少しお話しします。\nI’m not exactly an expert, but let me say a few words.",
        label: "～わけではない"
       },
-      "The listener expects something (money brings happiness; every Japanese person likes sushi), and ～わけではない says “not necessarily”. It is softer than a plain negative, which is why it is so useful for polite refusals and for disagreeing gently."
+      "The listener expects something (money brings happiness; every Japanese person likes sushi), and ～わけではない says “not necessarily”. It is softer than a plain negative. That is why it is so useful for polite refusals and for disagreeing gently."
      ]
     },
     {
@@ -2083,7 +2083,7 @@ ICA.addUnit({
        ex: "[心配]{しんぱい}することはありませんよ。\nThere’s no need to worry.\n\nわざわざ[来]{く}ることはないよ。電話で[十分]{じゅうぶん}だから。\nYou don’t need to come all this way. A phone call is enough.\n\n[謝]{あやま}ることはないよ。あなたのせいじゃないんだから。\nThere’s no need to apologize. It isn’t your fault.",
        label: "～ことはない"
       },
-      "It is close to ～なくてもいい ([[nakute-mo-ii]], Unit 6), but more emphatic: ～なくてもいい simply gives permission not to do something; ～ことはない says firmly that it isn’t necessary, usually to reassure or encourage the listener. わざわざ (go to the trouble of) and そんなに (that much) often come with it.",
+      "It is close to ～なくてもいい ([[nakute-mo-ii]], Unit 6), but more emphatic. ～なくてもいい simply gives permission not to do something. ～ことはない says firmly that it isn’t necessary, usually to reassure or encourage the listener. わざわざ (go to the trouble of) and そんなに (that much) often come with it.",
       {
        h: "Three look-alikes"
       },
@@ -2125,7 +2125,7 @@ ICA.addUnit({
        ex: "人は[誰]{だれ}でも[間違]{まちが}えるものです。\nEveryone makes mistakes.\n\n新しい[環境]{かんきょう}に[慣]{な}れるには、時間がかかるものです。\nIt takes time to get used to a new place; that’s natural.\n\n時間がたつのは早いものですね。\nTime really flies, doesn’t it?",
        label: "～ものだ: the way things are"
       },
-      "The last example adds feeling: ～ものだ often comes with a sigh of wonder or reflection, especially with adjectives such as 早い, [不思議]{ふしぎ}だ (strange) or [嬉]{うれ}しい."
+      "The last example adds feeling. ～ものだ often comes with a sigh of wonder or reflection, especially with adjectives such as 早い, [不思議]{ふしぎ}だ (strange) or [嬉]{うれ}しい."
      ]
     },
     {
@@ -2672,7 +2672,7 @@ ICA.addUnit({
        label: "～っぽい"
       },
       "Note the reading [怒]{おこ}りっぽい, from [怒]{おこ}る (get angry).",
-      "**～っぽい is mostly casual.** It belongs to everyday speech. A few っぽい words are ordinary vocabulary in any style (白っぽい服, “whitish clothes”, even appears in news reports), but in formal speech and writing choose another word for most of them: [風邪]{かぜ}[気味]{ぎみ} rather than [風邪]{かぜ}っぽい. In very casual speech, especially among younger speakers, it can even follow a whole sentence: [彼]{かれ}、[来]{こ}ないっぽい (looks like he isn’t coming). Recognize this, but don’t use it in polite speech.",
+      "**～っぽい is mostly casual.** It belongs to everyday speech. A few っぽい words are ordinary vocabulary in any style. For example, 白っぽい服 (“whitish clothes”) even appears in news reports. But in formal speech and writing, choose another word for most of them: [風邪]{かぜ}[気味]{ぎみ} rather than [風邪]{かぜ}っぽい. In very casual speech, especially among younger speakers, it can even follow a whole sentence: [彼]{かれ}、[来]{こ}ないっぽい (looks like he isn’t coming). Recognize this, but don’t use it in polite speech.",
       {
        tip: "子どもっぽい (childish) criticizes an adult; 子どもらしい (just as a child should be) praises a child. That らしい is the “typical of” use from Unit 7 ([[rashii]])."
       }
@@ -3311,7 +3311,7 @@ ICA.addUnit({
      "Change into the slippers by the door"
     ],
     answer: 0,
-    reveal: "**Go in with your shoes on.** まま means “as it is, unchanged”: [靴]{くつ}のまま is “just as you are, in your shoes”. In homes you take your shoes off, so many clinics, offices and restaurants put up this sign to tell you that you don’t need to. This lesson starts with ～まま and its untidy cousin ～っぱなし, then adds five more patterns: doing something without something else, just as told, pretending, having no other choice, and being sure."
+    reveal: "**Go in with your shoes on.** まま means “as it is, unchanged”: [靴]{くつ}のまま is “just as you are, in your shoes”. In homes you take your shoes off, so many clinics, offices and restaurants put up this sign to tell you that you don’t need to. This lesson starts with ～まま and its untidy cousin ～っぱなし. Then it adds five more patterns: doing something without something else, just as told, pretending, having no other choice, and being sure."
    },
    goals: [
     "Describe a state that carries on with ～まま, and a state carelessly left as it is with ～っぱなし",
@@ -3364,8 +3364,8 @@ ICA.addUnit({
        ex: "[昨日]{きのう}は、電気をつけたまま[寝]{ね}てしまいました。\nYesterday I fell asleep with the light on.\n\n[窓]{まど}を開けたまま、出かけないでください。\nPlease don’t go out and leave the window open.\n\nその夜、チェスカさんは[靴]{くつ}をはいたまま、[階段]{かいだん}に[座]{すわ}っていた。\nThat night, Cheska was sitting on the stairs with her shoes still on.\n\n意味がわからないまま、[書類]{しょるい}にサインしてはいけません。\nDon’t sign a document while you still don’t understand it.",
        label: "～まま"
       },
-      "For a state that carries on, the verb before まま is in the **た-form**: the action is finished, and its result is still there. 電気をつけたまま means you switched the light on and it is **still** on. ✗ 電気をつけるまま is wrong.",
-      "The second half is usually something that happens while that state lasts, and often something you wouldn’t normally do in it: sleeping with the light on, going out with the window open, sitting indoors in your shoes. That is why まま often sounds like “still”, “just as it was” or “without changing”.",
+      "For a state that carries on, the verb before まま is in the **た-form**. The action is finished, and its result is still there. 電気をつけたまま means you switched the light on and it is **still** on. ✗ 電気をつけるまま is wrong.",
+      "The second half is usually something that happens while that state lasts. It is often something you wouldn’t normally do in that state, such as sleeping with the light on, going out with the window open, or sitting indoors in your shoes. That is why まま often sounds like “still”, “just as it was” or “without changing”.",
       "To say “leave it as it is”, use ～ままにする, often with ～ておく (Unit 6): そのままにしておいてください (Please leave it as it is). このまま means “like this, as things are”: このままでいいですか (Is it all right like this?).",
       {
        h: "～たまま, ～ておく or ～てある?"
@@ -3592,7 +3592,7 @@ ICA.addUnit({
        ex: "[財布]{さいふ}に、百円しかありません。\nI only have a hundred yen in my wallet.\n\nこの店では、[現金]{げんきん}しか使えません。\nThis shop only takes cash.\n\n[昨日]{きのう}は三時間しか[寝]{ね}ていません。\nI only slept three hours last night.",
        label: "しか～ない: only"
       },
-      "しか replaces が and を, like さえ (Lesson 1), and comes after other particles: 日本でしか買えない (you can only buy it in Japan). だけ also means “only”, but with a positive verb: 百円だけあります. しか～ない adds the feeling “and that’s not enough”; だけ is neutral.",
+      "しか replaces が and を, like さえ (Lesson 1). It comes after other particles: 日本でしか買えない (you can only buy it in Japan). だけ also means “only”, but with a positive verb: 百円だけあります. しか～ない adds the feeling “and that’s not enough”. だけ is neutral.",
       {
        h: "Verb + しかない: there’s no choice but"
       },
@@ -4067,7 +4067,7 @@ ICA.addUnit({
      "It will be very good once you have studied for a year"
     ],
     answer: 0,
-    reveal: "**It’s very good for someone who has studied for only a year.** ～にしては means “for…, considering…”: you take a known fact (one year of study) as the standard and say the result is better or worse than you would expect from it. Here it is better, so it’s praise. This lesson pairs ～にしては with ～わりに, and adds six patterns for time, range, focus and “not only… but even” that fill N3 notices, news and conversation."
+    reveal: "**It’s very good for someone who has studied for only a year.** ～にしては means “for…, considering…”: you take a known fact (one year of study) as the standard. Then you say the result is better or worse than you would expect from it. Here it is better, so it is praise. This lesson pairs ～にしては with ～わりに. It also adds six patterns for time, range, focus and “not only… but even”. These fill N3 notices, news and conversation."
    },
    goals: [
     "Say “the moment that” for something sudden with ～たとたん(に), and use ～てすぐ for your own actions",
@@ -4291,7 +4291,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "～のに ([[noni]]) reports a fact with feeling; ～かわりに ([[kawari-ni]]) is a trade; ～に[比]{くら}べて ([[ni-kurabete]]) simply compares two things. わりに and にしては measure a result against what you expected."
+      "～のに ([[noni]]) reports a fact with feeling. ～かわりに ([[kawari-ni]]) is a trade. ～に[比]{くら}べて ([[ni-kurabete]]) simply compares two things. わりに and にしては measure a result against what you expected."
      ]
     },
     {

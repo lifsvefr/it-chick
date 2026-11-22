@@ -1,7 +1,7 @@
 /* Japanese Foundations · Unit 6 (e3u6) · N4 grammar I */
 ICA.addUnit({
   id:"e3u6", track:"e3", n:6, title:"N4 grammar I", icon:"🧭",
-  blurb:"Saying what you can do (the potential form and ～ことができる), what you will do (the volitional form, ～ようと[思]{おも}う and つもり), what happens if (と, ば, たら and なら, with a guide for choosing), who gives what to whom (あげる, くれる, もらう and their ～て forms), and what you must or don’t have to do, plus ～てしまう and ～ておく; then guessing with ～かもしれない and ～でしょう, trying things out with ～てみる, and giving advice with ～たほうがいい.",
+  blurb:"Saying what you can do (the potential form and ～ことができる). Saying what you will do (the volitional form, ～ようと[思]{おも}う and つもり). Saying what happens if (と, ば, たら and なら, with a guide for choosing). Saying who gives what to whom (あげる, くれる, もらう and their ～て forms). Saying what you must or don’t have to do, plus ～てしまう and ～ておく. Then guessing with ～かもしれない and ～でしょう, trying things out with ～てみる, and giving advice with ～たほうがいい.",
   goals:[
     "Build the potential form of any verb, use ～ことができる, and recognize ら[抜]{ぬ}き forms such as [見]{み}れる in speech",
     "Build the volitional form, and talk about plans with ～ようと[思]{おも}う and つもり",
@@ -73,7 +73,7 @@ ICA.addUnit({
       "In conversation, many people drop the ら from the potential of ichidan verbs and [来]{く}る: 見れる for 見られる, 食べれる for 食べられる, [来]{こ}れる for [来]{こ}られる. These are called [[ra-nuki-kotoba|ら[抜]{ぬ}き[言葉]{ことば}]] (*ra-nuki kotoba*, “words with the ら removed”).",
       "They are extremely common in speech, and many linguists describe them as a natural change in the language. But textbooks, the JLPT and careful writing use the full forms with ら. Learn the full forms first, and recognize the short ones when you hear them. Academic Japanese covers this in {{written-vs-spoken-japanese}}.",
       {warn:"Godan potentials such as [帰]{かえ}れる, [走]{はし}れる and [入]{はい}れる are **not** ら[抜]{ぬ}き. They come from godan verbs ([帰]{かえ}ります), so る → れる is the standard rule. Only verbs that take られる (ichidan verbs and [来]{く}る) can lose a ら."},
-      "Two pairs of verbs deserve a special note. 見える (be visible) and 聞こえる (be audible) describe what reaches your eyes or ears on its own, without effort. 見られる and 聞ける mean that you are able to watch or listen because the situation allows it.",
+      "Two pairs of verbs deserve a special note. 見える (be visible) and 聞こえる (be audible) describe what reaches your eyes or ears on its own, without effort. 見られる and 聞ける mean that you are able to watch or listen, because the situation allows it.",
       {table:[["Verb","Meaning","Example"],["見える","is visible, can see","[窓]{まど}から[山]{やま}が見えます。\nI can see the mountains from the window."],["見られる","can watch (it is possible)","この[映画]{えいが}はネットで見られます。\nYou can watch this film online."],["聞こえる","is audible, can hear","[隣]{となり}の[部屋]{へや}から[音楽]{おんがく}が聞こえます。\nI can hear music from the next room."],["聞ける","can listen; can ask","このアプリでラジオが聞けます。\nYou can listen to the radio with this app."]]},
       "Some verbs have no potential form, because they already contain the idea of “can”. 分かる (understand) is the most common: 日本語が分かります means “I understand Japanese”. There is no form ✗ わかれる meaning “can understand”. (分かれる, read わかれる, is a different verb: “split, divide”.)"
     ]},
@@ -192,7 +192,7 @@ ICA.addUnit({
     {h:"One form, three jobs", body:[
       {lead:"The [[volitional-form]] is the plain, casual partner of ～ましょう. It shows the speaker’s will: what you suggest doing, offer to do, or decide to do."},
       {table:[["Job","Example","Meaning"],["“let’s” (to a friend)","[一緒]{いっしょ}に[帰]{かえ}ろう。","Let’s go home together."],["“shall I?” (an offer, with か)","[荷物]{にもつ}、[持]{も}とうか。","Shall I carry your bag?"],["“I’ll…” (a decision, to yourself)","そろそろ[寝]{ね}よう。","I’d better go to bed now."]]},
-      "You already know the polite versions from Unit 2: ～ましょう (let’s), ～ましょうか (shall I?, shall we?) and ～ませんか (won’t you…?). See [[mashou-masenka]] if you need a reminder. The volitional form is what friends and family use instead, and it is also the base for two very useful patterns: ～ようと[思]{おも}う (I’m thinking of doing) later in this lesson, and many N3 patterns after that.",
+      "You already know the polite versions from Unit 2: ～ましょう (let’s), ～ましょうか (shall I?, shall we?) and ～ませんか (won’t you…?). See [[mashou-masenka]] if you need a reminder. The volitional form is what friends and family use instead. It is also the base for two very useful patterns. One is ～ようと[思]{おも}う (I’m thinking of doing), later in this lesson. The other is the group of N3 patterns after that.",
       "The volitional form has no past tense, because you can only decide or suggest something now. In everyday Japanese it has no negative either: to say “let’s not”, people use other patterns, such as [行]{い}くのはやめよう (let’s not go; literally “let’s stop the going”)."
     ]},
     {h:"Godan verbs: move to the お row and add う", body:[
@@ -345,7 +345,7 @@ ICA.addUnit({
        "Read both versions aloud, and notice how the casual ones are shorter."
      ], write:"行きませんか → 行かない？ …"}
     ],
-    proof:"Five volitional forms from your evening, five plan sentences from wish to schedule, and three invitations in both polite and casual form."
+    proof:"A note with three things. Five volitional forms from your evening. Five plan sentences, from wish to schedule. Three invitations in both polite and casual form."
    },
    read:[
     {book:"taekim", where:"Essential Grammar, “Desire and Suggestions”, sections “Making a motion to do something using the volitional form (casual)” and “(polite)”", note:"The conjugation rules for ～よう/～おう, the exceptions しよう and こよう, and the polite ～ましょう."}
@@ -367,7 +367,7 @@ ICA.addUnit({
       {lead:"English has “if” and “when”. Japanese has four conditional forms, and none of them matches “if” exactly."},
       {table:[["Form","Built from","Core idea"],["と","dictionary or ない-form + と\n[押]{お}すと","Whenever X happens, Y follows: natural, automatic results."],["ば","the ば-form\n[押]{お}せば","If X (is true), Y. The focus is on the condition."],["たら","past form + ら\n[押]{お}したら","If or once X has happened, Y. The most flexible."],["なら","plain form or noun + なら\n[押]{お}すなら","If (it is the case that) X. It takes up a topic."]]},
       "Many sentences accept two or three of these with almost no change in meaning. That is a real feature of Japanese, not a gap in your knowledge, and textbooks disagree a little on how to describe the differences. The differences that matter show up at the edges: what kind of sentence follows, and which event comes first in time. This lesson takes each form in turn, then shows the overlaps, then gives you a guide.",
-      "You will often see もし (“if by any chance”) at the start of a conditional sentence. もし doesn’t make a condition by itself; it adds a feeling of “suppose”, and it goes most naturally with たら, ば and なら: もし[時間]{じかん}があったら…, “if by any chance you have time…”."
+      "You will often see もし (“if by any chance”) at the start of a conditional sentence. もし doesn’t make a condition by itself. It adds a feeling of “suppose”. It goes most naturally with たら, ば and なら: もし[時間]{じかん}があったら…, “if by any chance you have time…”."
     ]},
     {h:"と: whenever, automatically", body:[
       "Build [[conditional-to|と]] from the plain non-past: the dictionary form or the ない-form, then と. い-adjectives add と directly; nouns and な-adjectives need だ first.",
@@ -397,7 +397,7 @@ ICA.addUnit({
     ]},
     {h:"なら: if that’s the case", body:[
       "[[conditional-nara|なら]] follows the plain form of a verb or い-adjective. Nouns and な-adjectives take なら directly, with no だ: 学生なら, [静]{しず}かなら (✗ 学生だなら).",
-      "なら takes something as given, often something the other person has just said, and adds advice, an opinion or an offer about it: “if that’s so…”, “if it’s X you’re talking about…”.",
+      "なら takes something as given, often something the other person has just said. Then it adds advice, an opinion or an offer about it. It is like “if that’s so…” or “if it’s X you’re talking about…”.",
       {ex:"A：[週末]{しゅうまつ}、[大阪]{おおさか}へ行きます。\nB：[大阪]{おおさか}へ行くなら、[新幹線]{しんかんせん}が[便利]{べんり}ですよ。\nA: I’m going to Osaka on the weekend.\nB: If you’re going to Osaka, the bullet train is convenient.\n\nラーメンなら、[駅]{えき}の[前]{まえ}の[店]{みせ}がおいしいですよ。\nIf it’s ramen you want, the place in front of the station is good.\n\n[寒]{さむ}いなら、[窓]{まど}を[閉]{し}めましょうか。\n(Since you say you’re) cold, shall I close the window?", label:"なら"},
       "なら has one more special power: the result can happen **before** the condition. With たら, the condition always comes first.",
       {fig:'<svg viewBox="0 0 340 222"><defs><marker id="e3u6a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Which happens first?</text><text class="s" x="16" y="48">りょこうに いくなら、ガイドブックを かいます。</text><path class="d-ink" d="M16 92H324" stroke-width="2" marker-end="url(#e3u6a3)"/><text class="s" x="318" y="110" text-anchor="end">time</text><rect class="d-gold" x="24" y="62" width="128" height="22" rx="6" stroke-width="2"/><text class="s" x="88" y="78" text-anchor="middle">1 buy a guidebook</text><rect class="d-lup" x="186" y="62" width="120" height="22" rx="6" stroke-width="2"/><text class="s" x="246" y="78" text-anchor="middle">2 the trip</text><text class="s" x="16" y="150">りょこうに いったら、おみやげを かいます。</text><path class="d-ink" d="M16 194H324" stroke-width="2" marker-end="url(#e3u6a3)"/><text class="s" x="318" y="212" text-anchor="end">time</text><rect class="d-lup" x="24" y="164" width="128" height="22" rx="6" stroke-width="2"/><text class="s" x="88" y="180" text-anchor="middle">1 the trip</text><rect class="d-gold" x="186" y="164" width="120" height="22" rx="6" stroke-width="2"/><text class="s" x="246" y="180" text-anchor="middle">2 buy souvenirs</text></svg>', alt:"Two timelines. Top: りょこうに いくなら、ガイドブックを かいます. First, buy a guidebook; second, the trip. Bottom: りょこうに いったら、おみやげを かいます. First, the trip; second, buy souvenirs.", cap:"[旅行]{りょこう}に行くなら、ガイドブックを[買]{か}います: if I’m going on a trip, I’ll buy a guidebook (before I go). [旅行]{りょこう}に行ったら、おみやげを[買]{か}います: when I go on the trip, I’ll buy souvenirs (while I’m there)."}
@@ -405,7 +405,7 @@ ICA.addUnit({
     {h:"Real overlaps: when more than one is right", body:[
       "Here are three common situations where two or three forms are natural. Don’t let anyone tell you only one is correct in these.",
       {table:[["Situation","Natural choices","Example"],["A general truth","と, ば, たら","[春]{はる}になると / なれば / なったら、[暖]{あたた}かくなります。"],["Asking for advice","ば, たら (often と too)","どうすればいいですか。\nどうしたらいいですか。\nどうするといいですか。"],["A state, then a request","ば, たら, なら","時間があれば / あったら / あるなら、[手伝]{てつだ}ってください。"]]},
-      "In each row the meaning hardly changes. If you want a feel for the small differences: ば can sound a little more general or bookish, たら a little more conversational and focused on the result, and なら (in the last row) sounds like “if, as it seems, you have time”. In each row, the forms left out are the ones that sound wrong: と can’t take the request in the last row, and なら doesn’t fit general truths or advice questions.",
+      "In each row the meaning hardly changes. Here are the small differences. ば can sound a little more general or bookish. たら sounds a little more conversational and focused on the result. なら (in the last row) sounds like “if, as it seems, you have time”. The forms left out of each row are the ones that sound wrong. と can’t take the request in the last row, and なら doesn’t fit general truths or advice questions.",
       {key:"When several forms are possible, the choice is about style, not right and wrong. The rules that matter most are the limits: no requests or plans after と (or after an action with ば), and なら when the result comes first or you are taking up a topic."}
     ]},
     {h:"Which one? A step-by-step guide", body:[
@@ -485,7 +485,7 @@ ICA.addUnit({
     {id:"e3u6-l3-x8", type:"mcq", q:"Cheska tells you her plan: she will buy a guidebook **before** her trip. Which sentence does she say?", options:[
       {t:"[旅行]{りょこう}に[行]{い}くなら、ガイドブックを[買]{か}います。", ok:true, why:"Right. With なら, the result (buying the guidebook) can happen before the condition (the trip)."},
       {t:"[旅行]{りょこう}に[行]{い}ったら、ガイドブックを[買]{か}います。", why:"With たら, the trip comes first: she would buy the guidebook once she is traveling."},
-      {t:"[旅行]{りょこう}に[行]{い}くと、ガイドブックを[買]{か}います。", why:"With と this can only be a habit (“whenever I travel, I buy a guidebook”), with the buying after setting off. と can’t state a one-time plan, and it doesn’t put the buying first."},
+      {t:"[旅行]{りょこう}に[行]{い}くと、ガイドブックを[買]{か}います。", why:"With と this can only be a habit (“whenever I travel, I buy a guidebook”), with the buying after setting off. と can’t state a one-time plan. It also doesn’t put the buying first."},
       {t:"[旅行]{りょこう}に[行]{い}けば、ガイドブックを[買]{か}います。", why:"Going on a trip is an action, and Cheska does both things, so a plan after ば sounds unnatural here. ば doesn’t put the buying first either."}
     ]},
     {id:"e3u6-l3-x9", type:"type", q:"Rodrigo would like to go to the gym more, but it is far away. Type the ば-form of [近]{ちか}い (near) in hiragana: 「ジムがもっと___、[毎日]{まいにち}行くんですが。」 (“If the gym were closer, I’d go every day.”)", answer:"ちかければ",
@@ -521,7 +521,7 @@ ICA.addUnit({
        "Over the next week, note any conditional you see in a sign, a song or a show, and which of the four it is."
      ], write:"どうすればいいですか… よかったら…"}
     ],
-    proof:"Three と sentences about a machine or app, a weekend plan with たら and three なら replies, and a short list of conditionals you noticed in real Japanese."
+    proof:"A note with three things. Three と sentences about a machine or app, a weekend plan with たら, and three なら replies. A short list of conditionals you noticed in real Japanese."
    },
    read:[
     {book:"taekim", where:"Essential Grammar, “Conditionals” (the page is headed “How to say ‘if’ in Japanese”; sections “Expressing natural consequence using 「と」”, “Contextual conditionals using 「なら(ば)」”, “General conditionals using 「ば」”, “Past conditional using 「たら(ば)」” and “How does 「もし」 fit into all of this?”)", note:"Tae Kim’s explanation of the four conditionals. He describes ば as focusing on the condition and たら on the result, and suggests learners treat them as near-equals with verbs and い-adjectives."}
@@ -557,7 +557,7 @@ ICA.addUnit({
     {h:"くれる: giving to you and your side", body:[
       "Use くれる when someone gives something to you, or to someone on your side: your family, and often your own group, team or company when you talk to outsiders. This idea of an inside group (ウチ) and an outside group (ソト) runs through Japanese; see [[uchi-soto]].",
       {ex:"[友達]{ともだち}が[誕生日]{たんじょうび}のプレゼントをくれました。\nMy friend gave me a birthday present.\n\n[隣]{となり}の[人]{ひと}が[弟]{おとうと}にお[菓子]{かし}をくれました。\nThe neighbor gave my little brother some sweets.\n\nこれ、[父]{ちち}がくれた[時計]{とけい}です。\nThis is a watch my father gave me.", label:"くれる"},
-      "In the second example, the sweets went to your brother, not to you, but he is on your side, so くれる is natural. (You may sometimes hear あげる in sentences like this when people tell a story from outside, but くれる is what textbooks teach and what most speakers use.) In the third, くれた is the plain past in a noun-modifying clause, a pattern from Unit 5 ([[noun-modifier-clause]]).",
+      "In the second example, the sweets went to your brother, not to you, but he is on your side, so くれる is natural. (You may sometimes hear あげる in sentences like this, when people tell a story from the outside. But くれる is what textbooks teach and what most speakers use.) In the third, くれた is the plain past in a noun-modifying clause, a pattern from Unit 5 ([[noun-modifier-clause]]).",
       {warn:"The opposite mistake is just as common: ✗ [私]{わたし}は[友達]{ともだち}に本をくれました. When you are the giver, the verb is あげる: [私]{わたし}は[友達]{ともだち}に本をあげました."}
     ]},
     {h:"もらう: receiving", body:[
@@ -572,7 +572,7 @@ ICA.addUnit({
       {table:[["Plain","Polite","Example"],["あげる","さしあげる","先生にお[土産]{みやげ}をさしあげました。\nI gave the teacher a souvenir."],["くれる","くださる","先生が本をくださいました。\nThe teacher gave me a book."],["もらう","いただく","先生に本をいただきました。\nI received a book from the teacher."]]},
       "くださる has an irregular ます-form: くださいます, not くださります. (The ください of ～てください is another form of the same verb.) いただく is the same verb as the いただきます you say before a meal.",
       "さしあげる and いただく lower yourself, and くださる raises the other person. These are kinds of [[keigo]]: さしあげる and いただく belong to [[kenjougo]], and くださる to [[sonkeigo]]. Unit 7 previews the common polite forms ({{polite-speech-basics}}).",
-      "At the other end, やる means “give” to animals and plants: [犬]{いぬ}にえさをやる (feed the dog), [花]{はな}に[水]{みず}をやる (water the flowers). Some people also use it casually for younger family members, but used for people it can sound rough or looking down, so it is safest to keep it for animals and plants. Many people now say あげる here too, as in [花]{はな}に水をあげる, and you will hear both."
+      "At the other end, やる means “give” to animals and plants: [犬]{いぬ}にえさをやる (feed the dog), [花]{はな}に[水]{みず}をやる (water the flowers). Some people also use it casually for younger family members. But used for people it can sound rough or look down on them, so it is safest to keep it for animals and plants. Many people now say あげる here too, as in [花]{はな}に水をあげる. You will hear both."
     ]},
     {h:"Favors: ～てあげる, ～てくれる, ～てもらう", body:[
       "All three verbs combine with the [[te-form]] to describe favors: doing something for someone, or having someone do something for you. The direction rules stay exactly the same.",
@@ -582,13 +582,13 @@ ICA.addUnit({
       {ex:"母が[弁当]{べんとう}を[作]{つく}ってくれました。\nMy mother made me a packed lunch. (warm: I’m grateful)\n\n母が[弁当]{べんとう}を[作]{つく}りました。\nMy mother made a packed lunch. (a plain fact)", label:"Adding gratitude"},
       "When someone does something for you, Japanese speakers usually add ～てくれる or ～てもらう. Leaving it out can sound cool or distant, as if you didn’t notice the kindness.",
       {ex:"まりやさんは[私]{わたし}に[地図]{ちず}を[書]{か}いてくれました。\nMariya drew me a map. (from Mariya’s side, coming to me)\n\n[私]{わたし}はまりやさんに[地図]{ちず}を書いてもらいました。\nI had Mariya draw me a map. (from my side)\n\nまりやさんはイエンさんに[地図]{ちず}を書いてあげました。\nMariya drew Yến a map. (between two other people)", label:"Worked example: one favor, three sentences"},
-      "The first two describe the same event and are both polite and grateful. ～てもらう can also suggest that you asked for the favor, while ～てくれる often suggests that the other person offered. Both are common, so don’t worry about choosing perfectly."
+      "The first two describe the same event and are both polite and grateful. ～てもらう can also suggest that you asked for the favor, while ～てくれる often suggests that the other person offered. Both are common, so don’t worry about choosing the perfect one."
     ]},
     {h:"Asking for favors, and a warning about ～てあげる", body:[
       "To ask someone to do something for you, turn ～てくれる or ～てもらう into a question. From casual to most polite:",
       {table:[["Request","Style"],["ちょっと[手伝]{てつだ}ってくれない？","casual, to friends"],["[手伝]{てつだ}ってくれませんか。","polite"],["[手伝]{てつだ}ってもらえませんか。","polite (literally “can’t I have you help?”)"],["[手伝]{てつだ}っていただけませんか。","very polite: to a teacher, a boss, a stranger"]]},
       "The negative question (～ませんか) is softer than the positive one (～ますか), because it leaves the other person room to say no. ～てもらえませんか uses the potential form of もらう from Lesson 1.",
-      {warn:"Be careful with ～てあげる when you speak **to** the person you are helping. 「[持]{も}ってあげましょうか」 (Shall I carry it for you, as a favor?) stresses the favor you are doing, which can sound condescending, especially to someone above you. To offer help, use ～ましょうか: 「[持]{も}ちましょうか」 (Shall I carry it?)."},
+      {warn:"Be careful with ～てあげる when you speak **to** the person you are helping. 「[持]{も}ってあげましょうか」 (Shall I carry it for you, as a favor?) stresses the favor you are doing. This can sound condescending, especially to someone above you. To offer help, use ～ましょうか: 「[持]{も}ちましょうか」 (Shall I carry it?)."},
       "～てあげる is fine for talking about favors between other people, or about what you did for a friend or a younger family member."
     ]},
     {h:"Common mistakes", body:[
@@ -754,7 +754,7 @@ ICA.addUnit({
       {ex:"[旅行]{りょこう}の前に、ホテルを[予約]{よやく}しておきます。\nI’ll book the hotel before the trip.\n\n[会議]{かいぎ}の前に、[資料]{しりょう}を読んでおいてください。\nPlease read the materials before the meeting.\n\nお[客]{きゃく}さんが[来]{く}るから、[飲]{の}み[物]{もの}を[冷]{ひ}やしておこう。\nGuests are coming, so let’s chill some drinks.", label:"Doing it in advance"},
       "It can also mean leaving something in a state on purpose: [窓]{まど}は[開]{あ}けておいてください (Please leave the window open). そのままにしておいてください (Please leave it as it is).",
       "おく is a godan verb ending in く, so its forms are おきます, おいて, おいた. In casual speech, ～ておく becomes ～とく and ～でおく becomes ～どく: [買]{か}っとく (I’ll buy it in advance), 読んどく (I’ll read it beforehand), やっとくね (I’ll get it done).",
-      "Unit 7 teaches ～てある, which describes the state that results: [窓]{まど}が[開]{あ}けてある (the window has been opened and is open). ～ておく is the action done with a purpose; ～てある is the result you can see ([[te-aru]]).",
+      "Unit 7 teaches ～てある, which describes the state that results: [窓]{まど}が[開]{あ}けてある (the window has been opened and is open). ～ておく is the action done with a purpose. ～てある is the result you can see ([[te-aru]]).",
       {ex:"まりや：[明日]{あした}のパーティー、[飲]{の}み[物]{もの}は[買]{か}っておいた？\nトビー：うん、[買]{か}っといたよ。でも、ケーキを[頼]{たの}むのを[忘]{わす}れちゃった……。\nまりや：じゃあ、[今日]{きょう}[私]{わたし}が[頼]{たの}んでおくね。\nトビー：ありがとう！[助]{たす}かる。\n\nMariya: Did you buy the drinks for tomorrow’s party?\nToby: Yes, I got them. But I forgot to order the cake…\nMariya: Then I’ll order it today.\nToby: Thanks! That’s a big help.", label:"Worked example: getting ready for a party"},
       "The two friends mix full forms (Mariya’s [買]{か}っておいた and [頼]{たの}んでおく) and casual forms (Toby’s [買]{か}っといた and [忘]{わす}れちゃった), which is exactly how friends talk. In a message to a teacher, you would use the full forms throughout.",
       {tip:"～ておく and ～てしまう both often translate as English perfect tenses (“I’ve booked it”, “I’ve finished it”). Ask what the speaker cares about: being ready for later (～ておく) or the action being over, perhaps with regret (～てしまう)."}
@@ -765,7 +765,7 @@ ICA.addUnit({
       "New grammar slips away if you don’t use it, and that is normal. Short, spaced review brings it back, and so does reading: N4 grammar is everywhere in simple stories, messages and signs. Keep up your kanji and vocabulary alongside it in the Kanji Lab.",
       {lab:"kl-n4", t:"Practice: the N4 kanji, including the verbs in this unit"},
       {lab:"kl-n4-vocab", t:"Practice: N4 vocabulary"},
-      "For more free practice, [Irodori](https://www.irodori.jpf.go.jp/en/) (the Japan Foundation) has free textbooks with audio up to Pre-Intermediate (A2/B1), built around everyday situations, and [Tae Kim’s Guide to Learning Japanese](https://guidetojapanese.org/learn/grammar) explains each pattern in this unit in its own words.",
+      "For more free practice, [Irodori](https://www.irodori.jpf.go.jp/en/) (the Japan Foundation) has free textbooks with audio, up to Pre-Intermediate (A2/B1). They are built around everyday situations. [Tae Kim’s Guide to Learning Japanese](https://guidetojapanese.org/learn/grammar) explains each pattern in this unit in its own words.",
       {terms:["nakereba-naranai","nakute-mo-ii","te-shimau","te-oku"]}
     ]}
    ],
@@ -898,8 +898,8 @@ ICA.addUnit({
       {ex:"[明日]{あした}は[晴]{は}れるでしょう。\nIt will probably be sunny tomorrow. (a weather forecast)\n\nトビーさんは[日本]{にほん}に[長]{なが}く[住]{す}んでいるので、[漢字]{かんじ}もたくさん[読]{よ}めるでしょう。\nToby has lived in Japan a long time, so he can probably read lots of kanji too.\n\nたぶん、[試験]{しけん}はそんなに[難]{むずか}しくないだろうと[思]{おも}います。\nI think the exam probably won’t be that difficult.", label:"～でしょう and ～だろう"},
       {list:[
         "**でしょう** is common in weather forecasts, the news and careful explanations. For their own guesses in everyday conversation, people often prefer ～と[思]{おも}います: [晴]{は}れると[思]{おも}います.",
-        "**だろう** is neutral in writing such as essays and articles. In speech, a bare だろう said to someone sounds rather blunt and is heard more from male speakers. ～だろうと[思]{おも}う is neutral for everyone, and so is だろう when you wonder aloud: どうしたんだろう (I wonder what happened).",
-        "**でしょう？** with a rising voice checks something you expect the listener to agree with, like “…, right?”: これ、おいしいでしょう？ In casual speech it shortens to でしょ？ This isn’t a guess but a check, and you will hear it constantly.",
+        "**だろう** is neutral in writing such as essays and articles. In speech, a bare だろう said to someone sounds rather blunt, and men use it more often. ～だろうと[思]{おも}う is neutral for everyone. So is だろう when you wonder aloud: どうしたんだろう (I wonder what happened).",
+        "**でしょう？** with a rising voice checks something you expect the listener to agree with, like “…, right?”: これ、おいしいでしょう？ In casual speech it shortens to でしょ？ This is not a guess. It is a check, and you will hear it all the time.",
         "**でしょうか** is a softer, more polite ですか: すみません、[駅]{えき}はどこでしょうか (Excuse me, could you tell me where the station is?). It is common with strangers and in shops."
       ]},
       {warn:"でしょう is not the polite partner of ましょう. ～ましょう means “let’s”; ～でしょう is a guess. [行]{い}きましょう (Let’s go) and 行くでしょう (He’ll probably go) mean very different things."}
@@ -921,7 +921,7 @@ ICA.addUnit({
     ]},
     {h:"You’d better: ～たほうがいい", body:[
       {lead:"To give advice, Japanese compares two options and says which one is better."},
-      "[[hou-ga-ii|～たほうがいい]] uses the た-form, although the advice is about now or later. ほう is the “side” or “option” you know from ～より～のほうが in Unit 3, so 行ったほうがいい is literally “the option of having gone is good”. The negative uses the plain non-past ない-form: ～ないほうがいい.",
+      "[[hou-ga-ii|～たほうがいい]] uses the た-form, although the advice is about now or later. ほう is the “side” or “option” you know from ～より～のほうが in Unit 3. So 行ったほうがいい is literally “the option of having gone is good”. The negative uses the plain non-past ない-form: ～ないほうがいい.",
       {table:[["Advice","Form","Example"],["do it","た-form + ほうがいい","[休]{やす}んだほうがいいです"],["don’t do it","ない-form + ほうがいい","[無理]{むり}しないほうがいいです"],["softer","+ と[思]{おも}います / かもしれません","休んだほうがいいと[思]{おも}います"]]},
       {ex:"[熱]{ねつ}が高いときは、[水]{みず}をたくさん[飲]{の}んだほうがいいですよ。\nWhen you have a high fever, you should drink plenty of water. (Megumi, at the hospital)\n\n[夜]{よる}は[一人]{ひとり}で[歩]{ある}かないほうがいいです。\nYou’d better not walk alone at night.\n\n雨が[降]{ふ}るかもしれないから、[傘]{かさ}を[持]{も}っていったほうがいいよ。\nIt might rain, so you’d better take an umbrella.", label:"～たほうがいい"},
       {list:[
@@ -1037,7 +1037,7 @@ ICA.addUnit({
        "Rewrite one piece of advice for a teacher or a boss, softened with ～と[思]{おも}います or ～かもしれません."
      ], write:"…たほうがいいよ。…ないほうがいいよ。"}
     ],
-    proof:"Four forecast sentences on the certainty scale, seven sentences about trying things, and six pieces of advice, one of them softened for someone above you."
+    proof:"A note with three things. Four forecast sentences on the certainty scale. Seven sentences about trying things. Six pieces of advice, one of them softened for someone above you."
    },
    read:[
     {book:"taekim", where:"“Various degrees of certainty”, sections “Using 「かもしれない」 to express uncertainty”, “Using 「でしょう」 to express a fair amount of certainty (polite)” and “Using 「でしょう」 and 「だろう」 to express strong amount of certainty (casual)”", note:"Tae Kim also explains でしょう？ for checking."},

@@ -111,7 +111,7 @@ ICA.addUnit({
        ]
       },
       "Two conditions make ために work. First, the verb before it is a **volitional** action: something a person chooses to do, such as 買う, 習う, 行く or 作る. Second, the **same person** does both halves: I study, and I learn Japanese.",
-      "With a noun, のために has two meanings, and both are common: a purpose ([健康]{けんこう}のために, for my health) and a beneficiary, the person or thing you do it for (家族のために, for my family).",
+      "With a noun, のために has two common meanings: a purpose ([健康]{けんこう}のために, for my health) and a beneficiary, the person or thing you do it for (家族のために, for my family).",
       "Add は to say what a goal requires: 大学に入るためには、試験を[受]{う}けなければなりません (To get into university, you have to take an exam).",
       {
        warn: "In news, notices and announcements, ため can also mean “because of”: [事故]{じこ}のため、電車が[遅]{おく}れています (Trains are delayed because of an accident). If the first half is a cause rather than a goal, read ため as “because”. Lesson 4 and the Codex entry {{purpose-you-ni-tame-ni}} say more."
@@ -593,7 +593,7 @@ ICA.addUnit({
       write: "〜ようにしてください = Please make sure…"
      }
     ],
-    proof: "Six purpose sentences with the test marked, four “then and now” sentences, three habit sentences, and two translated instructions from real notices."
+    proof: "A note with four things. Six purpose sentences, with the test marked. Four “then and now” sentences. Three habit sentences. Two translated instructions from real notices."
    },
    read: [
     {
@@ -621,7 +621,7 @@ ICA.addUnit({
      "Nobody yet: it is only an idea"
     ],
     answer: 1,
-    reveal: "**Most likely her company.** ～ことになりました means “it has been decided that…” or “it has turned out that…”: the decision is presented as coming from outside the speaker, here probably her employer. Had she decided by herself, the usual choice would be ～ことにしました, “I decided to…”. People do sometimes use ～ことになりました for their own decisions, to announce them modestly; this lesson shows when. Then it turns to timing: “about to”, “in the middle of” and “just did”."
+    reveal: "**Most likely her company.** ～ことになりました means “it has been decided that…” or “it has turned out that…”: the decision is presented as coming from outside the speaker, here probably her employer. If she had decided by herself, the usual choice would be ～ことにしました, “I decided to…”. People do sometimes use ～ことになりました for their own decisions, to announce them modestly. This lesson shows when. Then it turns to timing: “about to”, “in the middle of” and “just did”."
    },
    goals: [
     "Say what you decided with ～ことにする, and what was decided for you with ～ことになる",
@@ -682,12 +682,12 @@ ICA.addUnit({
     {
      h: "～ことになる: it was decided, it turned out",
      body: [
-      "[[koto-ni-naru|～ことになる]] presents a decision or arrangement as something that came about: decided by other people (a company, a school, a group) or by circumstances.",
+      "[[koto-ni-naru|～ことになる]] presents a decision or arrangement as something that came about. It was decided by other people (a company, a school, a group) or by circumstances.",
       {
        ex: "来月から[大阪]{おおさか}の[支社]{ししゃ}で[働]{はたら}くことになりました。\nI’m going to be working at the Osaka branch from next month. (the company decided)\n\n[次]{つぎ}の[会議]{かいぎ}は木曜日にすることになりました。\nIt’s been decided that the next meeting will be on Thursday.\n\n雨のため、運動会は来週に[延期]{えんき}することになりました。\nBecause of the rain, it’s been decided to postpone the sports day until next week.",
        label: "ことになる"
       },
-      "There is one important extra use. People often announce their **own** decisions with ～ことになりました, especially big personal news, to sound modest: the news is presented as the way things worked out, not as “I, I, I”.",
+      "There is one important extra use. People often announce their **own** decisions with ～ことになりました, especially big personal news. This sounds modest. The news is presented as the way things worked out, not as “I, I, I”.",
       {
        ex: "[実]{じつ}は、[結婚]{けっこん}することになりました。\nActually, we’re getting married.\n\nこのたび、国へ帰ることになりました。\nI’m going back to my home country.",
        label: "Modest announcements"
@@ -819,11 +819,11 @@ ICA.addUnit({
         ]
        ]
       },
-      "The last row is a real overlap: for something that has just this moment happened, both are natural. ところ focuses on the timing (“I’m at the point just after arriving”); ばかり on how fresh it is.",
+      "The last row is a real overlap. For something that has just this moment happened, both are natural. ところ focuses on the timing (“I’m at the point just after arriving”). ばかり focuses on how fresh it is.",
       {
        h: "Don’t mix up ～たばかり and ～てばかり"
       },
-      "ばかり has another meaning: “nothing but”, “only”. After a noun, or after a て-form with いる, it describes too much of one thing: 弟はゲームばかりしています (My brother does nothing but play games), 兄は[遊]{あそ}んでばかりいます (My brother does nothing but have fun). The form tells you which: た + ばかり is “just did”; て + ばかりいる is “does nothing but”."
+      "ばかり has another meaning: “nothing but”, “only”. After a noun, or after a て-form with いる, it describes too much of one thing. 弟はゲームばかりしています (My brother does nothing but play games), 兄は[遊]{あそ}んでばかりいます (My brother does nothing but have fun). The form tells you which: た + ばかり is “just did”; て + ばかりいる is “does nothing but”."
      ]
     },
     {
@@ -1220,7 +1220,7 @@ ICA.addUnit({
      "電車は三時に着くところです。"
     ],
     answer: 0,
-    reveal: "**着くはずです.** はず is for what you have good reason to expect. べき is the other “should”, what ought to be done, as in “you should keep your promises”; a train has no duties, so 着くべき sounds odd. つもり is a person’s intention, and ところ marks the moment of an action. This lesson untangles はず, べき, and a third word, わけ, which says that something follows logically."
+    reveal: "**着くはずです.** はず is for what you have good reason to expect. べき is the other “should”. It means what ought to be done, as in “you should keep your promises”. A train has no duties, so 着くべき sounds odd. つもり is a person’s intention, and ところ marks the moment of an action. This lesson untangles はず, べき, and a third word, わけ, which says that something follows logically."
    },
    goals: [
     "Use ～はず for what you expect from what you know, with its forms for nouns and adjectives",
@@ -1320,7 +1320,7 @@ ICA.addUnit({
        label: "はずだった"
       },
       {
-       tip: "こんなはずじゃなかった (this isn’t how it was supposed to go) is a set phrase you will hear in dramas when plans fall apart. Apart from set phrases like this, use はずがない (no way) or ないはず (I expect not) for the negative. はずじゃない is mainly used in questions that confirm something, such as ～はずじゃないですか (Isn’t it supposed to…?)."
+       tip: "こんなはずじゃなかった (this isn’t how it was supposed to go) is a set phrase you will hear in dramas when plans fall apart. Apart from set phrases like this, use はずがない (no way) or ないはず (I expect not) for the negative. You mostly see はずじゃない in questions that confirm something, such as ～はずじゃないですか (Isn’t it supposed to…?)."
       }
      ]
     },
@@ -2457,7 +2457,7 @@ ICA.addUnit({
      "として"
     ],
     answer: 2,
-    reveal: "**にとって.** English uses “for” here, and Japanese has no single word for “for”. にとって means “for, from the point of view of”, and it goes with words that judge or evaluate, like [役]{やく}に立つ (useful), 大切 (important) or [難]{むずか}しい (difficult). について means “about”, に[対]{たい}して “toward”, and として “as (a role)”. This lesson teaches five of these compound particles and gives you a table for choosing between them."
+    reveal: "**にとって.** English uses “for” here, but Japanese has no single word for “for”. にとって means “for, from the point of view of”. It goes with words that judge or evaluate, like [役]{やく}に立つ (useful), 大切 (important) or [難]{むずか}しい (difficult). について means “about”, に[対]{たい}して “toward”, and として “as (a role)”. This lesson teaches five of these compound particles and gives you a table for choosing between them."
    },
    goals: [
     "Recognize compound particles: に or と + a verb in its て-form, working like one particle",
@@ -3063,7 +3063,7 @@ ICA.addUnit({
      {
       t: "Five sentences about you",
       how: [
-       "Write one sentence about yourself with each particle: what you like reading about (について), how you treat someone (に[対]{たい}して), a role you have (として), what is important to you (にとって), and something that differs by person or place (によって).",
+       "Write one sentence about yourself with each particle. Use について for what you like reading about. Use に[対]{たい}して for how you treat someone. Use として for a role you have. Use にとって for what is important to you. Use によって for something that differs by person or place.",
        "Check each with the contrast table: what is the noun in the sentence: content, target, role, judge, or the thing everything depends on?"
       ],
       write: "～について… ～に[対]{たい}して… ～として… ～にとって… ～によって…"

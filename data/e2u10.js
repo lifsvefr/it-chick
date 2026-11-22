@@ -1,13 +1,13 @@
 /* Social Science Primers · Migration Studies Unit 2 (e2u10) · Why people move */
 ICA.addUnit({
   id:"e2u10", track:"e2", n:10, title:"Why people move", icon:"🧭",
-  blurb:"The main theories of why people migrate, and why most people stay: Ravenstein’s “laws” and Lee’s push and pull, wages, households and labor markets, world-systems views, networks and migration systems, aspirations and capabilities, the migration hump, gender and care, environment and climate, trafficking and smuggling, and brain drain and brain gain. One invented village is seen through every lens.",
+  blurb:"The main theories of why people migrate, and why most people stay. They include Ravenstein’s “laws” and Lee’s push and pull, wages, households and labor markets, world-systems views, networks and migration systems, and aspirations and capabilities. They also include the migration hump, gender and care, environment and climate, trafficking and smuggling, and brain drain and brain gain. One invented village is seen through every lens.",
   goals:[
     "Explain Ravenstein’s laws and Lee’s model of push, pull, intervening obstacles and personal factors, and give the main critiques of push–pull thinking",
     "Compare neoclassical theory, the new economics of labor migration, dual labor market theory and historical-structural views, and say what each one sees and misses",
-    "Explain how networks, chain migration and cumulative causation keep migration going, what a migration system is, and how de Haas’s aspirations–capabilities framework explains both moving and staying",
+    "Explain how networks, chain migration and cumulative causation keep migration going. Explain what a migration system is. Explain how de Haas’s aspirations–capabilities framework accounts for both moving and staying",
     "Describe the mobility transition and the migration hump, the evidence for and against it, and the arguments about brain drain and brain gain",
-    "Explain how gender shapes migration (including global care chains), why “climate refugee” is not a legal category, and the legal difference between human trafficking and migrant smuggling"
+    "Explain how gender shapes migration (including global care chains). Explain why “climate refugee” is not a legal category. Explain the legal difference between human trafficking and migrant smuggling"
   ],
   read:[
     {book:"imis", where:"Chapter 3 “Migration Drivers: Why Do People Migrate?” (Mathias Czaika and Constantin Reinprecht), Chapter 18 “Gender and Migration” (Eleonore Kofman and Parvati Raghuram) and Chapter 19 “Migration and Development” (AKM Ahsan Ullah)", note:"Open-access chapters by migration researchers. Read each after the matching lesson: they are academic in tone, and the lessons build the background they assume."},
@@ -31,7 +31,7 @@ ICA.addUnit({
       "In Unit 9 you met the people and the numbers. You saw who counts as a [[migrant]] and the difference between [[internal-migration|internal]] and international moves. You also met kinds of movement such as [[labour-migration|labor migration]] and [[forced-migration|forced migration]]. This unit asks the next question: **why** do people move, and why do most people, most of the time, stay where they are?",
       "There is no single answer and no single theory. Each theory works like a lens. It brings some causes into sharp focus and leaves others blurry. Some look at individuals weighing up wages. Others look at families sharing risks, employers recruiting workers, or networks of friends. Still others look at empires and world markets, or at what people hope for and are able to do.",
       "You will meet them roughly in the order they were developed, each with its main criticisms. None of them is “the right one”: researchers usually combine several.",
-      {ex:"To see the lenses side by side, this unit keeps returning to one place: **Riverbend**, a farming village of about 2,000 people, a day’s bus ride from the capital. Riverbend and its people are **invented**. They don’t stand for any real country; their story is put together from patterns researchers have found in many places, and real cases from around the world come alongside.\n\n**Nadia** (68) farms and has lived in Riverbend all her life. Her son **Sami** (22) is restless. Her daughter **Lina** (34) has two children and is thinking about a job abroad. Her niece **Hana** (19) wants to train as a nurse. Next door, **Omar** (25) would like to leave but can’t see how.", label:"Our running example (invented)"},
+      {ex:"To see the lenses side by side, this unit keeps returning to one place: **Riverbend**, a farming village of about 2,000 people, a day’s bus ride from the capital. Riverbend and its people are **invented**. They don’t stand for any real country. Their story is put together from patterns researchers have found in many places. Real cases from around the world come alongside.\n\n**Nadia** (68) farms and has lived in Riverbend all her life. Her son **Sami** (22) is restless. Her daughter **Lina** (34) has two children and is thinking about a job abroad. Her niece **Hana** (19) wants to train as a nurse. Next door, **Omar** (25) would like to leave but can’t see how.", label:"Our running example (invented)"},
       {key:"No theory explains all migration. Each one answers a slightly different question, at a different scale: the person, the family, the labor market, the world economy."}
     ]},
     {h:"Ravenstein’s “laws of migration”", body:[
@@ -84,7 +84,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"e2u10-l1-x1", type:"mcq", q:"A study of one province finds that most people who left its villages moved to the nearest market towns, and most of the few who traveled far went to the capital. Which of Ravenstein’s patterns does this fit best?", options:[
+    {id:"e2u10-l1-x1", type:"mcq", q:"A study of one province finds that most people who left its villages moved to the nearest market towns. Most of the few who traveled far went to the capital. Which of Ravenstein’s patterns does this fit best?", options:[
       {t:"Most moves are short; long moves go to big centers.", ok:true, why:"Right. Most migrants move short distances, and the long-distance movers go to the biggest center of trade and industry: two of Ravenstein’s best-known patterns."},
       {t:"Every stream produces a counter-stream.", why:"The study describes only flows out of the villages. Nothing here shows people moving back the other way."},
       {t:"Women move more than men, especially over short distances.", why:"The study says nothing about who moved by sex, so it can’t show a gender pattern."},
@@ -138,7 +138,7 @@ ICA.addUnit({
       {t:"Lee’s model ignores destinations.", why:"Lee’s model includes destination factors explicitly. The gap Omar shows is about resources to move."},
       {t:"Personal factors never matter.", why:"Lee’s model says personal factors do matter. The critique here is about the cost of moving."}
     ]},
-    {id:"e2u10-l1-x8", type:"explain", q:"If hardship simply pushed people out, the poorest people would migrate the most. Explain why this usually isn’t the case, and what it suggests about push–pull models.", size:"3–5 sentences", model:"Moving costs money, contacts and documents: the journey, fees, a passport and perhaps a visa. The poorest households often can’t afford these, so they are rarely the ones who move furthest. Lee’s model does include intervening obstacles and personal factors, but critics say push–pull thinking is a list, not an explanation: it names factors without saying which matter most or how they combine. It also leaves out the states and employers that recruit or block migrants, and it can make migrants sound like billiard balls rather than people who plan and bargain with their families.", points:["Explains that moving costs money, contacts and documents", "Concludes that the poorest often can’t move far", "Gives the critique that push–pull is a list, not an explanation", "Mentions another critique, such as missing structures or migrants’ agency"]}
+    {id:"e2u10-l1-x8", type:"explain", q:"If hardship simply pushed people out, the poorest people would migrate the most. Explain why this usually isn’t the case, and what it suggests about push–pull models.", size:"3–5 sentences", model:"Moving costs money, contacts and documents: the journey, fees, a passport and perhaps a visa. The poorest households often can’t afford these, so they are rarely the ones who move furthest. Lee’s model does include intervening obstacles and personal factors. But critics say push–pull thinking is a list, not an explanation. It names factors without saying which matter most or how they combine. It also leaves out the states and employers that recruit or block migrants. It can make migrants sound like billiard balls, not people who plan and bargain with their families.", points:["Explains that moving costs money, contacts and documents", "Concludes that the poorest often can’t move far", "Gives the critique that push–pull is a list, not an explanation", "Mentions another critique, such as missing structures or migrants’ agency"]}
    ],
    apply:{
     intro:"Try Lee’s checklist and its limits on real lives. Keep your notes private unless you choose to share them, and only include other people’s stories if they are happy for you to.",
@@ -146,11 +146,11 @@ ICA.addUnit({
      {t:"Map one move with Lee’s model", how:[
        "Choose one move you know about: your own, a relative’s or friend’s (only if they’re happy to talk about it), or a character’s in a novel or film. It can be a move within a country.",
        "List the factors at the origin (pluses and minuses), the factors at the destination, the intervening obstacles and the personal factors.",
-       "Mark which one or two factors seem to have mattered most, and note anything important that doesn’t fit the four boxes (for example a recruiter, a law or a family decision)."
+       "Mark which one or two factors seem to have mattered most. Note anything important that doesn’t fit the four boxes, for example a recruiter, a law or a family decision."
      ], write:"The move… Origin + / −… Destination + / −… Obstacles… Personal factors… What mattered most… What doesn’t fit…"},
      {t:"Test a Ravenstein pattern", how:[
        "Think of a town or city you know. Where did most of the people who moved there come from: nearby areas or far away?",
-       "If you can, look up one fact about it from a national statistics office or census page (for example, the share of residents born elsewhere), and note the source and year.",
+       "If you can, look up one fact about it from a national statistics office or census page, for example the share of residents born elsewhere. Note the source and year.",
        "Write whether Ravenstein’s “most migrants move short distances” seems to fit, and why it might or might not."
      ], write:"The place… Where newcomers seem to come from… Fact, source and year (if found)… Does the pattern fit?"},
      {t:"Find the push–pull words", how:[
@@ -159,7 +159,7 @@ ICA.addUnit({
        "Note what evidence it gives for that claim, if any, and one factor it leaves out."
      ], write:"The story… The claim about causes… Evidence given… What’s missing…"}
     ],
-    proof:"Notes mapping one real or fictional move onto Lee’s four sets of factors (with what didn’t fit), a quick test of one Ravenstein pattern against a place you know, and one news claim about push or pull with its evidence checked."
+    proof:"A note with three things. First, notes mapping one real or fictional move onto Lee’s four sets of factors, including what didn’t fit. Second, a quick test of one Ravenstein pattern against a place you know. Third, one news claim about push or pull, with its evidence checked."
    },
    read:[
     {book:"imis", where:"Chapter 3 “Migration Drivers: Why Do People Migrate?” (Mathias Czaika and Constantin Reinprecht)", note:"Read it after this lesson: it explains why researchers moved from lists of push and pull factors to the idea of migration drivers and how they combine."},
@@ -289,13 +289,13 @@ ICA.addUnit({
     intro:"Use the four economic lenses on real lives and real jobs. Keep notes private unless you choose to share them.",
     tasks:[
      {t:"Four lenses on one move", how:[
-       "Take the move you mapped in Lesson 1, or choose another (your own, a family member’s who is happy to talk about it, or a character’s in a book or film).",
-       "Write one sentence about it through each lens: neoclassical (wages and expected gains), NELM (family strategy and risk), dual labor market (what jobs were waiting) and historical-structural (wider links such as colonial history, trade or investment).",
+       "Take the move you mapped in Lesson 1, or choose another. It can be your own, a family member’s who is happy to talk about it, or a character’s in a book or film.",
+       "Write one sentence about it through each lens. Neoclassical: wages and expected gains. NELM: family strategy and risk. Dual labor market: what jobs were waiting. Historical-structural: wider links such as colonial history, trade or investment.",
        "Note which lens seems most useful for this move, and what none of them captures."
      ], write:"The move… Neoclassical… NELM… Dual labor market… Historical-structural… Most useful lens… What’s missing…"},
      {t:"Who does these jobs?", how:[
        "Think about three kinds of work in your area that are often low-paid or insecure, such as cleaning, farm work, care work, delivery or construction.",
-       "Without asking anyone about their legal status or private life, note what you already know or can find in a reliable public source about who usually does this work (for example, a national statistics office or labor ministry report).",
+       "Do not ask anyone about their legal status or private life. Note what you already know about who usually does this work, or what you can find in a reliable public source. A national statistics office or a labor ministry report is a good example.",
        "Write whether Piore’s dual labor market idea seems to fit your area, and note the source and year of any figure you use."
      ], write:"Job 1… Job 2… Job 3… What the source says, with year… Does Piore’s idea fit?"},
      {t:"Try the expected-income model", how:[
@@ -304,7 +304,7 @@ ICA.addUnit({
        "Find the chance at which the expected city income equals the village wage, and write one thing the model leaves out."
      ], write:"Village wage… City wage… Expected income at 0.3 / 0.5 / 0.7… Break-even chance… What the model leaves out…"}
     ],
-    proof:"One move described through all four economic lenses, notes on who does three kinds of low-paid work in your area (with a source and year for any figure), and three expected-income calculations with the break-even chance."
+    proof:"A note with three things. First, one move described through all four economic lenses. Second, notes on who does three kinds of low-paid work in your area, with a source and year for any figure. Third, three expected-income calculations with the break-even chance."
    },
    read:[
     {book:"imis", where:"Chapter 3 “Migration Drivers: Why Do People Migrate?” (Mathias Czaika and Constantin Reinprecht)", note:"Read it after this lesson for a researcher’s overview of how economic, social and political drivers combine."},
@@ -443,7 +443,7 @@ ICA.addUnit({
       " ",
       {t:"Carling’s term “involuntary immobility” describes people who want to move but can’t.", flag:false, why:"Accurate. Carling (2002) developed it from research in Cape Verde."}
     ]},
-    {id:"e2u10-l3-x8", type:"explain", q:"In one village, Omar wants to leave but has no money, passport or contacts, while his neighbor Hana could easily move but chooses to stay. Explain both cases using de Haas’s aspirations–capabilities framework, and why the framework says staying needs explaining too.", size:"4–5 sentences", model:"De Haas argues that migration happens when people both want to move (aspirations) and are able to (capabilities). Capabilities depend on freedom from obstacles, such as visa rules, and on the ability to act: money, skills, contacts and documents. Omar has the aspiration but not the capabilities, so he is in involuntary immobility, a term from Jørgen Carling. Hana has the capabilities but not the aspiration, so she shows voluntary immobility. Earlier theories often treated staying as the default. But most people never migrate across a border, so explaining who stays, and why, is part of explaining migration.", points:["Defines aspirations and capabilities", "Places Omar in involuntary immobility and explains why", "Places Hana in voluntary immobility and explains why", "Explains why staying needs explaining too"]}
+    {id:"e2u10-l3-x8", type:"explain", q:"In one village, Omar wants to leave but has no money, passport or contacts. His neighbor Hana could easily move but chooses to stay. Explain both cases using de Haas’s aspirations–capabilities framework. Also explain why the framework says staying needs explaining too.", size:"4–5 sentences", model:"De Haas argues that migration happens when people both want to move (aspirations) and are able to (capabilities). Capabilities depend on freedom from obstacles, such as visa rules, and on the ability to act: money, skills, contacts and documents. Omar has the aspiration but not the capabilities, so he is in involuntary immobility, a term from Jørgen Carling. Hana has the capabilities but not the aspiration, so she shows voluntary immobility. Earlier theories often treated staying as the default. But most people never migrate across a border, so explaining who stays, and why, is part of explaining migration.", points:["Defines aspirations and capabilities", "Places Omar in involuntary immobility and explains why", "Places Hana in voluntary immobility and explains why", "Explains why staying needs explaining too"]}
    ],
    apply:{
     intro:"Look for networks and for staying, not only moving. Keep notes private unless you choose to share them, and never ask anyone about their legal status.",
@@ -464,7 +464,7 @@ ICA.addUnit({
        "Note one source you used and its date."
      ], write:"The places… Flow 1… 2… 3… 4… Source and date…"}
     ],
-    proof:"A drawn network of the ties behind one move, four people placed in the aspirations–capabilities grid (with one awkward case explained), and a list of four non-human flows linking places in one migration system, with a dated source."
+    proof:"A note with three things. First, a drawn network of the ties behind one move. Second, four people placed in the aspirations–capabilities grid, with one awkward case explained. Third, a list of four non-human flows linking places in one migration system, with a dated source."
    },
    read:[
     {book:"imis", where:"Chapter 3 “Migration Drivers: Why Do People Migrate?” (Mathias Czaika and Constantin Reinprecht)", note:"Read its discussion of aspirations, capabilities and drivers after this lesson."},
@@ -501,7 +501,7 @@ ICA.addUnit({
       {list:[
         "**Capabilities rise**: more households can afford the journey and fees.",
         "**Aspirations rise**: education, media and links abroad widen what people hope for and know about.",
-        "**Demography**: falling child deaths followed later by falling births create a large generation of young adults, the age group most likely to move.",
+        "**Demography**: first fewer children die, and later fewer babies are born. This creates a large generation of young adults, the age group most likely to move.",
         "**Structural change**: as farming modernizes, fewer workers are needed on the land, and many move to cities or abroad.",
         "**Later, the gap narrows**: as incomes at home approach those abroad, fewer people find it worth leaving."
       ]}
@@ -583,13 +583,13 @@ ICA.addUnit({
       {t:"A rule that only applies to doctors in Europe", why:"The Code is global and covers health personnel of all kinds."},
       {t:"A 1951 agreement about refugee doctors", why:"It dates from 2010 and is about recruitment of health workers generally, not refugees."}
     ]},
-    {id:"e2u10-l4-x8", type:"explain", q:"A government says, ‘If we fund development in poorer countries, fewer people will migrate.’ Explain why the migration hump suggests this may not be true in the short run, and why researchers still debate the evidence.", size:"4–5 sentences", model:"The migration hump, Philip Martin’s term, is the idea that development can increase emigration in the short run before reducing it in the long run. As poorer countries develop, capabilities rise, because more households can afford the journey and fees. Aspirations rise too, through education, media and links abroad, and falling child deaths create a large generation of young adults. Only later, as incomes at home approach those abroad, do fewer people find it worth leaving. But the evidence comes mostly from comparing countries. When Schneiderheinze and Benček (2024) followed countries over time, emigration to rich OECD countries fell as incomes rose, so the debate is open.", points:["Defines the migration hump", "Gives at least two reasons emigration can rise with development", "Explains that much of the evidence compares countries at one moment", "Notes that studies following countries over time disagree"]}
+    {id:"e2u10-l4-x8", type:"explain", q:"A government says, ‘If we fund development in poorer countries, fewer people will migrate.’ Explain why the migration hump suggests this may not be true in the short run. Also explain why researchers still debate the evidence.", size:"4–5 sentences", model:"The migration hump, Philip Martin’s term, is the idea that development can increase emigration in the short run before reducing it in the long run. As poorer countries develop, capabilities rise, because more households can afford the journey and fees. Aspirations rise too, through education, media and links abroad, and falling child deaths create a large generation of young adults. Only later, as incomes at home approach those abroad, do fewer people find it worth leaving. But the evidence comes mostly from comparing countries. When Schneiderheinze and Benček (2024) followed countries over time, emigration to rich OECD countries fell as incomes rose, so the debate is open.", points:["Defines the migration hump", "Gives at least two reasons emigration can rise with development", "Explains that much of the evidence compares countries at one moment", "Notes that studies following countries over time disagree"]}
    ],
    apply:{
     intro:"Look at the evidence behind claims about development and skills. Keep notes private unless you choose to share them.",
     tasks:[
      {t:"Look up one migration statistic", how:[
-       "Go to the Migration Data Portal (migrationdataportal.org) or UN DESA’s International Migrant Stock pages and choose one country you are curious about.",
+       "Go to the Migration Data Portal (migrationdataportal.org) or UN DESA’s International Migrant Stock pages. Choose one country you are curious about.",
        "Note how many of its people live abroad, or how many immigrants live there, with the source and year.",
        "Where would you place the country on the migration hump? Write why, and what else you would need to know to be sure."
      ], write:"Country… Figure… Source and year… Where on the hump, and why… What else I’d need…"},
@@ -604,7 +604,7 @@ ICA.addUnit({
        "Ask: is the evidence a comparison of countries, or does it follow countries over time? Over how many years?"
      ], write:"The claim… Evidence given… Cross-country or over time?… My verdict…"}
     ],
-    proof:"One migration figure with its source and year and a reasoned place on the migration hump, a balanced list of losses and gains from skilled emigration in one profession, and one “root causes” claim checked for the kind of evidence behind it."
+    proof:"A note with three things. First, one migration figure with its source and year, and a reasoned place on the migration hump. Second, a balanced list of losses and gains from skilled emigration in one profession. Third, one “root causes” claim, checked for the kind of evidence behind it."
    },
    read:[
     {book:"imis", where:"Chapter 19 “Migration and Development” (AKM Ahsan Ullah)", note:"Read it after this lesson for more on remittances, brain drain and the migration–development debate."},
@@ -617,7 +617,7 @@ ICA.addUnit({
    goals:[
      "Explain how gender shapes who migrates, why and how, and what the “feminization of migration” does and doesn’t mean",
      "Describe global care chains and their critiques",
-     "Explain how environmental change shapes mobility, why most of it is internal, why “climate refugee” is not a legal category, and what planned relocation is",
+     "Explain how environmental change shapes mobility and why most of it is internal. Explain why “climate refugee” is not a legal category. Explain what planned relocation is",
      "Tell human trafficking from migrant smuggling using the two 2000 Palermo Protocols",
      "Compare what each theory in this unit sees and misses in one community"
    ],
@@ -660,12 +660,12 @@ ICA.addUnit({
       "A [[refugee]] under the [[refugee-convention|1951 Refugee Convention]] (Unit 11) is a person outside their country who has a well-founded fear of being persecuted. The reasons must be race, religion, nationality, membership of a particular social group or political opinion. Environmental change isn’t one of those reasons, and a flood or drought is not usually persecution. That is why the Migration Data Portal calls “climate refugee” “not a legally valid term”. Agencies prefer phrases such as “people displaced in the context of disasters and climate change”.",
       "That doesn’t mean such people have no protection. Some may qualify as refugees where a disaster combines with persecution or conflict. Regional definitions are wider. The [[oau-refugee-convention|1969 OAU Convention]] in Africa and the [[cartagena-declaration|1984 Cartagena Declaration]] in Latin America include events that seriously disturb public order. Some lawyers argue that this can cover some disaster situations. Human rights law also limits returning people to serious harm.",
       "In 2020 the UN Human Rights Committee published its views on the case of Ioane Teitiota, a man from Kiribati. New Zealand had returned him home. The Committee found that New Zealand hadn’t violated his right to life in his case. But it added a warning. Without strong national and international action, it said, the effects of climate change could expose people to rights violations that would make sending them back unlawful.",
-      "Under the Falepili Union treaty between Australia and Tuvalu (signed 2023, in force since August 2024), a ballot offers Tuvaluans a pathway to permanent residence in Australia. The first ballot, in 2025, offered up to 280 places.",
+      "The Falepili Union treaty between Australia and Tuvalu was signed in 2023 and has been in force since August 2024. Under it, a ballot offers Tuvaluans a pathway to permanent residence in Australia. The first ballot, in 2025, offered up to 280 places.",
       "**[[planned-relocation|Planned relocation]]** is the organized move of a whole community, usually as a last resort. In 2014 the village of Vunidogoloa in Fiji moved about two kilometers inland and uphill after seawalls failed to stop erosion and saltwater. In 2018 Fiji adopted national Planned Relocation Guidelines. Researchers have documented hundreds of planned relocations around the world; done badly, they can break communities apart, so consultation and consent matter."
     ]},
     {h:"Trafficking and smuggling: two different crimes", body:[
       "Trafficking and smuggling are different crimes. They are defined in two protocols adopted by the UN General Assembly on 15 November 2000, alongside the UN Convention against Transnational Organized Crime. These are often called the **Palermo Protocols**.",
-      "**[[human-trafficking|Trafficking in persons]]** has three elements. The first is an **act**: recruiting, transporting, transferring, harboring or receiving people. The second is a **means**: threat or use of force or other coercion, abduction, fraud, deception, abuse of power or of a position of vulnerability, or payments to someone in control of the person. The third is a **purpose**: **exploitation**, such as sexual exploitation, forced labor, slavery or the removal of organs.",
+      "**[[human-trafficking|Trafficking in persons]]** has three elements. The first is an **act**: recruiting, transporting, transferring, harboring or receiving people. The second is a **means**: threat or use of force or other coercion, abduction, fraud, deception, abuse of power or of a position of vulnerability, or payments to someone who controls the person. The third is a **purpose**, which is **exploitation**. Examples are sexual exploitation, forced labor, slavery or the removal of organs.",
       {fig:'<svg viewBox="0 0 340 412"><defs><marker id="e2u10-l5-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-panel" x="4" y="4" width="332" height="236" rx="12" stroke-width="1.5"/><text x="170" y="28" text-anchor="middle">Human trafficking</text><rect class="d-rose" x="12" y="42" width="94" height="132" rx="8" stroke-width="2"/><text x="59" y="64" text-anchor="middle">Act</text><text class="s" x="59" y="86" text-anchor="middle">recruit,</text><text class="s" x="59" y="102" text-anchor="middle">transport,</text><text class="s" x="59" y="118" text-anchor="middle">transfer,</text><text class="s" x="59" y="134" text-anchor="middle">harbor or</text><text class="s" x="59" y="150" text-anchor="middle">receive</text><rect class="d-gold" x="123" y="42" width="94" height="132" rx="8" stroke-width="2"/><text x="170" y="64" text-anchor="middle">Means</text><text class="s" x="170" y="86" text-anchor="middle">force,</text><text class="s" x="170" y="102" text-anchor="middle">coercion,</text><text class="s" x="170" y="118" text-anchor="middle">fraud,</text><text class="s" x="170" y="134" text-anchor="middle">deception,</text><text class="s" x="170" y="150" text-anchor="middle">abuse of</text><text class="s" x="170" y="166" text-anchor="middle">vulnerability</text><rect class="d-lup" x="234" y="42" width="94" height="132" rx="8" stroke-width="2"/><text x="281" y="64" text-anchor="middle">Purpose</text><text class="s" x="281" y="102" text-anchor="middle">exploitation</text><path class="d-ink" d="M106 108L121 108" fill="none" stroke-width="2" marker-end="url(#e2u10-l5-a)"/><path class="d-ink" d="M217 108L232 108" fill="none" stroke-width="2" marker-end="url(#e2u10-l5-a)"/><text class="s" x="170" y="198" text-anchor="middle">For children, no “means” is needed</text><text class="s" x="170" y="218" text-anchor="middle">Can happen inside one country</text><rect class="d-panel" x="4" y="252" width="332" height="156" rx="12" stroke-width="1.5"/><text x="170" y="276" text-anchor="middle">Migrant smuggling</text><rect class="d-sage" x="12" y="288" width="316" height="62" rx="8" stroke-width="2"/><text class="s" x="170" y="310" text-anchor="middle">Procuring someone’s illegal entry into a</text><text class="s" x="170" y="326" text-anchor="middle">country they aren’t a national or resident of,</text><text class="s" x="170" y="342" text-anchor="middle">for a financial or other material benefit</text><text class="s" x="170" y="374" text-anchor="middle">Always crosses a border</text><text class="s" x="170" y="394" text-anchor="middle">Not defined by exploitation</text></svg>', alt:"Two panels. Human trafficking: three boxes linked by arrows. Act: recruit, transport, transfer, harbor or receive. Means: force, coercion, fraud, deception, abuse of vulnerability. Purpose: exploitation. Notes: for children, no means is needed; can happen inside one country. Migrant smuggling: procuring someone’s illegal entry into a country they aren’t a national or resident of, for a financial or other material benefit. Notes: always crosses a border; not defined by exploitation.", cap:"The two Palermo Protocols (2000) define trafficking by act, means and purpose, and smuggling by illegal entry for profit."},
       "Where any of those means is used, the victim’s **consent** to the intended exploitation is irrelevant. For **children** (anyone under 18), no means is needed at all: recruiting or moving a child for exploitation is trafficking. And trafficking **doesn’t require crossing a border**; it can happen entirely inside one country.",
       "The Smuggling Protocol defines **[[migrant-smuggling|migrant smuggling]]** as procuring someone’s illegal entry into a country of which they are not a national or permanent resident. The smuggler does it to obtain a financial or other material benefit. It always involves crossing a border, and the migrant usually agrees to it. The Protocol says migrants shall not become liable to criminal prosecution **under the Protocol** for having been smuggled. It asks states to protect smuggled migrants’ rights, including the right to life.",
@@ -703,7 +703,7 @@ ICA.addUnit({
       {t:"Its protocol says migrants shall not be prosecuted under it for having been its object.", b:1, why:"That is Article 5 of the Smuggling Protocol. (Other rules protect trafficking victims, but this wording is the Smuggling Protocol’s.)"}
     ]},
     {id:"e2u10-l5-x4", type:"mcq", q:"A headline says: “Thousands of climate refugees granted refugee status under the 1951 Convention because of rising seas.” What is the main problem with it?", options:[
-      {t:"The 1951 Convention doesn’t list environmental reasons.", ok:true, why:"Right. Rising seas alone don’t make someone a refugee under it, and “climate refugee” isn’t a legal category. Some people displaced in such contexts may qualify for other reasons (such as persecution or conflict), or get other forms of protection, but not because of rising seas alone."},
+      {t:"The 1951 Convention doesn’t list environmental reasons.", ok:true, why:"Right. Rising seas alone don’t make someone a refugee under it, and “climate refugee” isn’t a legal category. Some people displaced in such contexts may qualify for other reasons, such as persecution or conflict. Others may get other forms of protection. But this is not because of rising seas alone."},
       {t:"Nothing: the Paris Agreement added climate refugees to the Convention.", why:"The Paris Agreement didn’t change the refugee definition."},
       {t:"The problem is only the number; the legal claim is correct.", why:"The legal claim is the problem: environmental change isn’t a Convention ground."},
       {t:"Only internally displaced people can be refugees.", why:"The opposite: a refugee under the Convention must be outside their country. People displaced within their country are IDPs."}
@@ -734,10 +734,10 @@ ICA.addUnit({
       " ",
       {t:"Women have recently become a large majority of the world’s international migrants.", flag:true, why:"Inaccurate. UN DESA puts women and girls at 48% in 2024."}
     ]},
-    {id:"e2u10-l5-x8", type:"explain", q:"Explain the difference between migrant smuggling and human trafficking under the 2000 Palermo Protocols, and how a journey that starts as smuggling could become trafficking.", size:"4–5 sentences", model:"Migrant smuggling is procuring someone’s illegal entry into a country where they are not a national or permanent resident, for a financial or other material benefit. It always involves crossing a border, and the migrant usually agrees. Trafficking is about exploiting a person and has three elements: an act, such as recruiting or transporting; a means, such as force, deception or abuse of vulnerability; and a purpose of exploitation. It needs no border crossing, and where those means are used, consent is irrelevant. A smuggling journey becomes trafficking if, on arrival, people are held, deceived or forced to work off an inflated debt.", points:["Defines smuggling as procuring illegal entry for profit, always across a border", "Gives the three elements of trafficking (act, means, purpose)", "Notes that trafficking needs no border and consent is irrelevant when the means are used", "Explains how smuggling can turn into trafficking"]}
+    {id:"e2u10-l5-x8", type:"explain", q:"Explain the difference between migrant smuggling and human trafficking under the 2000 Palermo Protocols. Also explain how a journey that starts as smuggling could become trafficking.", size:"4–5 sentences", model:"Migrant smuggling is procuring someone’s illegal entry into a country where they are not a national or permanent resident, for a financial or other material benefit. It always involves crossing a border, and the migrant usually agrees. Trafficking is about exploiting a person. It has three elements. The first is an act, such as recruiting or transporting. The second is a means, such as force, deception or abuse of vulnerability. The third is a purpose of exploitation. It needs no border crossing, and where those means are used, consent is irrelevant. A smuggling journey becomes trafficking if, on arrival, people are held, deceived or forced to work off an inflated debt.", points:["Defines smuggling as procuring illegal entry for profit, always across a border", "Gives the three elements of trafficking (act, means, purpose)", "Notes that trafficking needs no border and consent is irrelevant when the means are used", "Explains how smuggling can turn into trafficking"]}
    ],
    apply:{
-    intro:"Bring the whole unit together. Keep notes private unless you choose to share them, never ask anyone about their legal status, and only interview someone who agrees, who can skip any question, and without recording unless they consent.",
+    intro:"Bring the whole unit together. Keep your notes private unless you choose to share them. Never ask anyone about their legal status. Only interview someone who agrees and who can skip any question. Do not record anyone unless they consent.",
     tasks:[
      {t:"Spot the framing in one migration story", how:[
        "Find one news story about climate and migration, or about trafficking or smuggling.",
@@ -745,7 +745,7 @@ ICA.addUnit({
        "Write which theory or theories from this unit the story seems to assume, and one voice or fact it leaves out."
      ], write:"The story… Terms used and whether they’re precise… Theories it assumes… What’s missing…"},
      {t:"Map a care chain (optional, with consent)", how:[
-       "With a friend or family member who agrees to talk about it, or using a family from a novel, film or documentary, map who cares for whom when someone moves for work.",
+       "Map who cares for whom when someone moves for work. Do this with a friend or family member who agrees to talk about it, or use a family from a novel, film or documentary.",
        "Draw the chain: who does paid care, who does unpaid care, and where each person is.",
        "Note how gender shapes the chain, and one way it could be organized differently."
      ], write:"The family (real with consent, or fictional)… The chain… Paid and unpaid care… How gender shapes it…"},
@@ -755,7 +755,7 @@ ICA.addUnit({
        "Finish with one sentence on what you understand now that one lens alone would have missed."
      ], write:"The move… Lens 1… Lens 2… Lens 3… What combining them shows…"}
     ],
-    proof:"One migration news story checked for precise terms and assumed theories, a care chain map (fictional or shared with consent), and one migration explained through three lenses with a sentence on what combining them adds."
+    proof:"A note with three things. First, one migration news story, checked for precise terms and assumed theories. Second, a care chain map, either fictional or shared with consent. Third, one migration explained through three lenses, with a sentence on what combining them adds."
    },
    read:[
     {book:"imis", where:"Chapter 18 “Gender and Migration” (Eleonore Kofman and Parvati Raghuram)", note:"Read it after this lesson for a fuller account of gender, care and social reproduction in migration."},
@@ -765,7 +765,7 @@ ICA.addUnit({
   ],
   checkpoint:["e2u10-q02","e2u10-q05","e2u10-q11","e2u10-q14","e2u10-q20","e2u10-q23","e2u10-q26","e2u10-q31","e2u10-q34","e2u10-q38","e2u10-q41","e2u10-q44"],
   cpBank:[
-   {id:"e2u10-cp01", lesson:"e2u10-l1", level:1, q:"Ilse is thinking about a job in the city, but her mountain village has a close community where everyone helps each other, and she doesn’t want to lose that. In Lee’s model, the community is…", options:[
+   {id:"e2u10-cp01", lesson:"e2u10-l1", level:1, q:"Ilse is thinking about a job in the city. But her mountain village has a close community where everyone helps each other, and she doesn’t want to lose that. In Lee’s model, the community is…", options:[
      {t:"an intervening obstacle", why:"Intervening obstacles stand between origin and destination, such as distance, cost or visa rules. The community is part of where Ilse lives now."},
      {t:"a plus at the origin", ok:true, why:"Right. Lee showed that origins also hold people. A close community is a factor at the origin that makes staying attractive."},
      {t:"a minus at the destination", why:"The community is in her village, not in the city she might move to."},
@@ -790,7 +790,7 @@ ICA.addUnit({
      {t:"Cumulative causation", why:"Cumulative causation is migration feeding itself through networks and other changes. It doesn’t explain why employers need migrants for certain jobs."},
      {t:"Dual labor market theory", ok:true, why:"Right. Piore argued that rich economies split into a secure primary sector and an insecure secondary sector that local workers avoid, so employers recruit migrants."},
      {t:"Zelinsky’s mobility transition", why:"The mobility transition describes how types of movement change as societies modernize. It doesn’t explain demand for particular jobs."}]},
-   {id:"e2u10-cp06", lesson:"e2u10-l3", level:2, q:"A researcher studies a region where news and money from city migrants shape who leaves the villages next, and goods and ideas flow both ways between villages and cities. Which approach is she using?", options:[
+   {id:"e2u10-cp06", lesson:"e2u10-l3", level:2, q:"A researcher studies a region where news and money from city migrants shape who leaves the villages next. Goods and ideas flow both ways between villages and cities. Which approach is she using?", options:[
      {t:"A migration systems approach", ok:true, why:"Yes. Mabogunje described villages and cities linked by flows of people, money, goods and information, with feedback shaping later migration."},
      {t:"Ravenstein’s idea of step migration", why:"Step migration is people moving in stages, village to town to city. It doesn’t focus on two-way flows and feedback."},
      {t:"Neoclassical micro theory", why:"Neoclassical micro theory pictures individuals weighing costs and returns. It doesn’t look at feedback across a whole region."},
@@ -1313,7 +1313,7 @@ ICA.addUnit({
      {t:"It bans health workers from emigrating.", why:"It guides recruiters and governments; it doesn’t remove anyone’s right to move."},
      {t:"It is part of the 1951 Refugee Convention.", why:"It is a separate WHO instrument about health worker recruitment."},
      {t:"It only covers doctors in Europe.", why:"It is global and covers health personnel generally."}]},
-   {id:"e2u10-q36", lesson:"e2u10-l4", level:2, q:"Which countries are often cited as having moved from mainly sending emigrants to receiving many immigrants within a few decades, as Zelinsky’s model suggests?", options:[
+   {id:"e2u10-q36", lesson:"e2u10-l4", level:2, q:"Which countries are often cited as having moved from mainly sending emigrants to receiving many immigrants within a few decades? Zelinsky’s model suggests this pattern.", options:[
      {t:"Italy, Spain, Ireland and the Republic of Korea", ok:true, why:"Right. Each went from large emigration to significant immigration as its economy grew."},
      {t:"Only countries that never had any emigration", why:"The point is that these countries did have large emigration before."},
      {t:"No country has ever made this change", why:"Several have, which is why the model is discussed."},

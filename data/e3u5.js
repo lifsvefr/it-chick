@@ -5,7 +5,7 @@ ICA.addUnit({
   n:5,
   title:"Plain form and casual speech",
   icon:"💬",
-  blurb:"The first N4 unit: every plain form of verbs, adjectives and nouns in one system; when Japanese speakers choose plain or polite speech; how casual conversation really sounds (dropped particles, ～てる and ～ちゃう, よ, ね and よね, questions without か); and plain forms at work inside longer sentences: describing nouns with clauses, explaining with ～んです, and quoting and giving opinions with と[言]{い}う and と[思]{おも}う; then experiences, examples and time with ～たことがある, ～たり～たりする and ～とき, before and after with ～[前]{まえ}に and ～[後]{あと}で, and softer reasons with ～ので.",
+  blurb:"The first N4 unit. Every plain form of verbs, adjectives and nouns in one system. When Japanese speakers choose plain or polite speech. How casual conversation really sounds (dropped particles, ～てる and ～ちゃう, よ, ね and よね, questions without か). Plain forms inside longer sentences: describing nouns with clauses, explaining with ～んです, and quoting and giving opinions with と[言]{い}う and と[思]{おも}う. Experiences, examples and time with ～たことがある, ～たり～たりする and ～とき. Before and after with ～[前]{まえ}に and ～[後]{あと}で. Softer reasons with ～ので.",
   goals:[
     "Build the four plain forms of any verb, い-adjective, な-adjective or noun, and switch any sentence between polite and plain",
     "Choose between plain and polite speech for friends, family, teachers, colleagues and strangers, and know which writing uses which style",
@@ -153,7 +153,7 @@ ICA.addUnit({
               label:"Cheska’s diary (plain style)"
             },
             "In English: “3 October. It rained from the morning today. In the morning I read a book at home. In the afternoon I went to a café near the station with my friend Mariya. The coffee was good. But the cake wasn’t very sweet. Tomorrow I’ll do my Japanese homework.”",
-            "Every sentence ends in a plain form: a noun with だった, two verbs in the た-form (読んだ, 行った), い-adjectives in the past and past negative, and a dictionary form for tomorrow’s plan. If Cheska told the same story to a teacher, every ending would switch to polite: 雨でした, 読みました, 行きました, おいしかったです, [甘]{あま}くなかったです, します. Nothing else in the sentences would change.",
+            "Every sentence ends in a plain form. There is a noun with だった, two verbs in the た-form (読んだ, 行った), い-adjectives in the past and past negative, and a dictionary form for tomorrow’s plan. If Cheska told the same story to a teacher, every ending would switch to polite: 雨でした, 読みました, 行きました, おいしかったです, [甘]{あま}くなかったです, します. Nothing else in the sentences would change.",
             {
               key:"Choose one style for a whole piece of writing. Mixing です・ます and plain endings in one diary, essay or report looks careless."
             },
@@ -329,7 +329,7 @@ ICA.addUnit({
             how:[
               "Choose twelve words: four verbs (one godan verb ending in う, one ichidan verb, する and [来]{く}る), three い-adjectives (include いい), three な-adjectives (include きれい) and two nouns.",
               "For each, write the four plain forms: non-past, negative, past, past negative.",
-              "Check the verbs in a dictionary that shows verb forms, such as Jisho.org (“Show inflections”) or OJAD, and the adjectives against the tables in this lesson."
+              "Check the verbs in a dictionary that shows verb forms, such as Jisho.org (“Show inflections”) or OJAD. Check the adjectives against the tables in this lesson."
             ],
             write:"[買]{か}う・[買]{か}わない・[買]{か}った・[買]{か}わなかった …"
           },
@@ -382,7 +382,7 @@ ICA.addUnit({
         q:"Kaito’s manager at the convenience store checks the shift chart and asks, in plain form: 「[明日]{あした}も[夜勤]{やきん}できる？」 (Can you do the night shift tomorrow too?) What is the most natural reply?",
         options:["はい、できます。","うん、できる。","できるよ。","できるだ。"],
         answer:0,
-        reveal:"**はい、できます。** Plain speech doesn’t always go both ways. A manager often speaks plainly to people in the team, but the team still answers politely, because the relationship is not equal. (できるだ is never correct: verbs don’t take だ.) This lesson shows who uses which style with whom, how people move from polite to plain, and why polite is always the safe choice while you are learning."
+        reveal:"**はい、できます。** Plain speech doesn’t always go both ways. A manager often speaks plainly to people in the team, but the team still answers politely, because the relationship is not equal. (できるだ is never correct, because verbs don’t take だ.) This lesson shows who uses which style with whom. It shows how people move from polite to plain. It also explains why polite is always the safe choice while you are learning."
       },
       learn:[
         {
@@ -420,13 +420,13 @@ ICA.addUnit({
         {
           h:"ウチ and ソト, up and down",
           body:[
-            "Books on Japanese language and culture often describe this with the words [[uchi-soto|ウチ and ソト]]: inside and outside. ウチ is your own circle, the people you treat as “us”: family, close friends, sometimes your team. ソト is everyone outside it. Plain speech is the language of ウチ; polite speech is the language of ソト.",
+            "Books on Japanese language and culture often describe this with the words [[uchi-soto|ウチ and ソト]], which mean inside and outside. ウチ is your own circle, the people you treat as “us”. This includes family, close friends and sometimes your team. ソト is everyone outside it. Plain speech is the language of ウチ. Polite speech is the language of ソト.",
             {
               fig:"<svg viewBox='0 0 340 400'><text x='170' y='20' text-anchor='middle'>Who usually gets which style</text><rect class='d-rose' x='6' y='34' width='328' height='250' rx='14' stroke-width='2'/><text class='s' x='170' y='54' text-anchor='middle'>ソト (outside): polite</text><text class='s' x='170' y='72' text-anchor='middle'>strangers, shop staff, customers</text><rect class='d-gold' x='34' y='84' width='272' height='164' rx='12' stroke-width='2'/><text class='s' x='170' y='104' text-anchor='middle'>in between: it depends</text><text class='s' x='170' y='122' text-anchor='middle'>classmates, colleagues, neighbors</text><rect class='d-sage' x='68' y='136' width='204' height='92' rx='10' stroke-width='2'/><text x='170' y='160' text-anchor='middle'>ウチ (inside): plain</text><text class='s' x='170' y='182' text-anchor='middle'>family, close friends,</text><text class='s' x='170' y='200' text-anchor='middle'>partner, children</text><text class='s' x='170' y='218' text-anchor='middle'>(the circle you call “us”)</text><text class='s' x='170' y='272' text-anchor='middle'>The circles move with the situation.</text><rect class='d-panel' x='6' y='296' width='328' height='96' rx='8' stroke-width='1.5'/><text x='20' y='318'>The second dial: up and down</text><text class='s' x='20' y='340'>Older people, seniors (せんぱい), teachers</text><text class='s' x='20' y='358'>and bosses get polite speech, even when</text><text class='s' x='20' y='376'>you are close. They may answer in plain.</text></svg>",
               alt:"Three nested boxes. Outer box, ソト (outside): polite, for strangers, shop staff and customers. Middle box: it depends, for classmates, colleagues and neighbors. Inner box, ウチ (inside): plain, for family, close friends, a partner and children. The circles move with the situation. A panel below explains the second dial, up and down: older people, seniors, teachers and bosses get polite speech even when you are close, and they may answer in plain.",
               cap:"Closeness and rank together decide the style. Polite is never wrong in the outer circles."
             },
-            "The circles move. Two colleagues may chat in plain speech over lunch and switch to polite speech in a meeting with clients, where they speak as members of their company to outsiders. Polite speech marks the situation as public, plain speech as private.",
+            "The circles move. Two colleagues may chat in plain speech over lunch. In a meeting with clients they switch to polite speech, because they speak as members of their company to outsiders. Polite speech marks the situation as public, plain speech as private.",
             "The second dial is **rank**. In schools, clubs and workplaces, people who joined earlier are your [先輩]{せんぱい} (senpai, seniors), and those who joined later are your [後輩]{こうはい} (kouhai, juniors); see [[senpai-kouhai]]. A [後輩]{こうはい} normally speaks politely to a [先輩]{せんぱい}, even after years of friendship, and the [先輩]{せんぱい} often answers in plain speech. Age works in a similar way: many people stay polite with someone noticeably older.",
             "You will meet the deeper layers of respectful language, [尊敬語]{そんけいご} and [謙譲語]{けんじょうご}, in Unit 7 and in the Academic Japanese track ({{keigo-system}}). For everyday life, choosing between です・ます and plain forms is the decision you make most often."
           ]
@@ -474,7 +474,7 @@ ICA.addUnit({
               ex:"[明日]{あした}は雨だから、[家]{いえ}にいます。\nIt’s going to rain tomorrow, so I’ll stay at home.\n\n[熱]{ねつ}があるから、[今日]{きょう}は[休]{やす}みます。\nI have a temperature, so I’ll take today off.",
               label:"Plain inside, polite at the end"
             },
-            "Both sentences are polite, because they end in ます. The plain forms 雨だ and ある sit inside. The rest of this unit uses this fact again and again: in Lesson 4, plain forms describe nouns ([昨日]{きのう}[買]{か}った[本]{ほん}, the book I bought yesterday), and in Lesson 5 they go before ～んです and ～と[思]{おも}います. All of these can be part of a perfectly polite sentence.",
+            "Both sentences are polite, because they end in ます. The plain forms 雨だ and ある sit inside. The rest of this unit uses this fact again and again. In Lesson 4, plain forms describe nouns ([昨日]{きのう}[買]{か}った[本]{ほん}, the book I bought yesterday). In Lesson 5, they go before ～んです and ～と[思]{おも}います. All of these can be part of a perfectly polite sentence.",
             {key:"Inside the sentence, plain forms do the grammar. At the end, you choose the style."}
           ]
         },
@@ -714,7 +714,7 @@ ICA.addUnit({
             write:"Plain: who to whom… Polite: who to whom…"
           }
         ],
-        proof:"A map of ten people with the style you would use for each, one message in both styles, and six notes on who used which style in a real conversation."
+        proof:"A note with three things. A map of ten people, with the style you would use for each. One message in both styles. Six notes on who used which style in a real conversation."
       },
       read:[
         {
@@ -778,7 +778,7 @@ ICA.addUnit({
               cap:"Particles that only mark a role the listener can guess may go; particles that add meaning stay."
             },
             "に or へ for a destination is also often dropped with verbs of movement: コンビニ[行]{い}く？ (Shall we go to the convenience store?) うち、[帰]{かえ}る。 (I’m going home.)",
-            "Other particles normally stay, because without them the listener couldn’t work out the meaning: で (place of action, means), と (with), から and まで (from, until), も (also). [駅]{えき}で[待]{ま}ってる (I’ll be waiting at the station) needs its で; ✗ [駅]{えき}[待]{ま}ってる sounds broken.",
+            "Other particles normally stay. Without them, the listener could not work out the meaning: で (place of action, means), と (with), から and まで (from, until), も (also). [駅]{えき}で[待]{ま}ってる (I’ll be waiting at the station) needs its で; ✗ [駅]{えき}[待]{ま}ってる sounds broken.",
             "Two more cases where particles usually stay: が after a question word ([誰]{だれ}が[来]{く}るの？ Who’s coming?), and は when it shows contrast ([肉]{にく}は食べない。 I don’t eat meat, though I eat other things).",
             {
               tip:"Dropping particles is optional. Keeping them never sounds wrong, even in casual speech. Start by dropping を and は in short questions, the most common case."
@@ -801,7 +801,7 @@ ICA.addUnit({
             },
             "When the て-form ends in で, the contractions use voiced sounds: [読]{よ}んでいる → 読んでる, 読んでおく → 読んどく, [飲]{の}んでしまった → [飲]{の}んじゃった.",
             "The contracted forms change just like the full forms: 見てる, 見てない (isn’t watching), 見てた (was watching); 食べちゃう, 食べちゃった.",
-            "What do they mean? ～ている you know from Unit 3 ([[te-iru]]). The others are N4 grammar that Unit 6 teaches in full ({{te-shimau-te-oku}}, {{must-and-dont-have-to}}): ～ておく is doing something in advance; ～てしまう is finishing something completely, often with regret or surprise (“oops”); ～なければ (ならない) means “must”, and casual speech often stops at ～なきゃ. For now, learn to recognize them.",
+            "What do they mean? ～ている you know from Unit 3 ([[te-iru]]). The others are N4 grammar that Unit 6 teaches in full ({{te-shimau-te-oku}}, {{must-and-dont-have-to}}). ～ておく is doing something in advance. ～てしまう is finishing something completely, often with regret or surprise (“oops”). ～なければ (ならない) means “must”, and casual speech often stops at ～なきゃ. For now, learn to recognize them.",
             {
               warn:"Contractions are spoken forms. In an email to a teacher or a report, use the full forms: [待]{ま}っています, not [待]{ま}ってます. In polite conversation, ～てます is very common and fine ([待]{ま}ってます); but the plain contractions on their own ([待]{ま}ってる, [寝]{ね}ちゃった) belong with friends and family."
             }
@@ -821,8 +821,8 @@ ICA.addUnit({
             },
             "The order is always よね, never ✗ ねよ.",
             "Now the grammar point that trips up many learners. **Verbs and い-adjectives** take よ and ね directly: 行くよ, 行くね; [暑]{あつ}いよ, [暑]{あつ}いね. **Nouns and な-adjectives** take だ first: [雨]{あめ}だよ, [暇]{ひま}だね. So ✗ [暑]{あつ}いだね is wrong, and so is ✗ 行くだよ.",
-            "You will also hear some speakers drop the だ after a noun or な-adjective: きれいね, 雨よ. Older descriptions of Japanese label this “women’s speech”, and fiction often gives it to female characters, but real speakers vary a lot, and a few set phrases such as じゃあ、[明日]{あした}ね (see you tomorrow) are used by everyone. When you build sentences yourself, だね and だよ are the neutral choice that suits anyone.",
-            "Be careful with よ. Used too often, or when telling someone what they should already know, it can sound pushy, like “I’m telling you!”. ね is gentler, and Japanese speakers use it constantly to keep a conversation friendly. It also softens promises and plans: じゃあ、[明日]{あした}ね。 (See you tomorrow, then.)"
+            "You will also hear some speakers drop the だ after a noun or な-adjective: きれいね, 雨よ. Older descriptions of Japanese label this “women’s speech”, and fiction often gives it to female characters. But real speakers vary a lot. A few set phrases, such as じゃあ、[明日]{あした}ね (see you tomorrow), are used by everyone. When you build sentences yourself, だね and だよ are the neutral choice that suits anyone.",
+            "Be careful with よ. If you use it too often, or to tell someone what they should already know, it can sound pushy, like “I’m telling you!”. ね is gentler. Japanese speakers use it all the time to keep a conversation friendly. It also softens promises and plans: じゃあ、[明日]{あした}ね。 (See you tomorrow, then.)"
           ]
         },
         {
@@ -836,7 +836,7 @@ ICA.addUnit({
             "Notice the last one. In a question, a noun or な-adjective drops だ: [暇]{ひま}？, [学生]{がくせい}？, [本当]{ほんとう}？ (Really?). ✗ [暇]{ひま}だ？ sounds odd, because だ makes a firm statement. Only this non-past だ drops; the past stays: [昨日]{きのう}、[暇]{ひま}だった？ (Were you free yesterday?)",
             "Question words work the same way: どこ行く？ (Where are you going?) 何食べる？ (What shall we eat? / What are you having?)",
             "You will also hear casual questions ending in の: どこ行くの？ This sounds softer and shows interest in the background or the reason. It is the casual form of ～んですか, which Lesson 5 explains. After a noun or な-adjective it becomes なの: 学生なの？",
-            "か does appear in casual speech in a few fixed uses: そうか (I see; said to yourself as you realize something), and ～かな, which means “I wonder”: [明日]{あした}、雨かな。 (I wonder if it’ll rain tomorrow.) [来]{く}るかな。 (I wonder if they’ll come.)",
+            "か does appear in casual speech in a few fixed uses. One is そうか (I see; said to yourself as you realize something). Another is ～かな, which means “I wonder”: [明日]{あした}、雨かな。 (I wonder if it’ll rain tomorrow.) [来]{く}るかな。 (I wonder if they’ll come.)",
             {key:"Casual question: plain form + rising voice. No か, and no だ after nouns."}
           ]
         },
@@ -874,7 +874,7 @@ ICA.addUnit({
                 ["行くか？","行く？","Not ungrammatical, but a bare か can sound rough; rising intonation is the usual choice."]
               ]
             },
-            "A last word on where to learn casual speech. Anime and manga are great for listening, but characters often talk in exaggerated ways: rough endings such as ぞ and ぜ far more often than most real people use them, or old-fashioned ones. Real conversation, TV dramas, interviews and video diaries by people your age are better models.",
+            "A last word on where to learn casual speech. Anime and manga are great for listening, but characters often talk in exaggerated ways. They use rough endings such as ぞ and ぜ far more often than most real people do, or old-fashioned endings. Real conversation, TV dramas, interviews and video diaries by people your age are better models.",
             "Casual speech takes time because you have to hear it many times before it feels natural. Listen first, copy what friends actually say to you, and add one feature at a time."
           ]
         }
@@ -1035,7 +1035,7 @@ ICA.addUnit({
           {
             t:"Collect ten casual sentences",
             how:[
-              "Watch or listen to 15 minutes of ordinary Japanese conversation: a TV drama, a vlog, an interview between friends, or a podcast with subtitles.",
+              "Watch or listen to 15 minutes of ordinary Japanese conversation. Choose a TV drama, a vlog, an interview between friends, or a podcast with subtitles.",
               "Write down ten short casual sentences you hear.",
               "For each, note which casual features it has: plain ending, dropped particle, contraction, よ/ね/よね, or a question without か."
             ],
@@ -1060,7 +1060,7 @@ ICA.addUnit({
             write:"What I tried… What they said…"
           }
         ],
-        proof:"Ten real casual sentences with their features labeled, five questions in both styles, and (if you could) notes from one short casual conversation."
+        proof:"A note with three things. Ten real casual sentences, with their features labeled. Five questions in both styles. If you could, notes from one short casual conversation."
       },
       read:[
         {
@@ -1116,7 +1116,7 @@ ICA.addUnit({
               alt:"Three steps. Step 1, a sentence: ははが ケーキを つくった (My mother made a cake). Step 2, take the noun out and put it last: ははが つくった ケーキ, a noun phrase with no を and a plain verb; the part ははが つくった describes the noun ケーキ. Step 3, use it like any noun in a new sentence: ははが つくった ケーキは おいしい (The cake my mother made is delicious). English describes after the noun; Japanese before.",
               cap:"A sentence becomes a description when its noun moves to the end."
             },
-            "The recipe in the diagram works for almost every clause: start with a sentence, take out the noun you want to describe (with its particle), and put the noun at the end. What is left in front of it is the description."
+            "The recipe in the diagram works for almost every clause. Start with a sentence. Take out the noun you want to describe (with its particle). Put the noun at the end. What is left in front of it is the description."
           ]
         },
         {
@@ -1176,7 +1176,7 @@ ICA.addUnit({
             },
             "This is why Unit 2 said the doer of a describing clause takes が. は marks the topic of the **whole sentence**, so it belongs outside the clause. Compare: [私]{わたし}が[作]{つく}ったケーキはおいしい (The cake I made is delicious) has が inside the clause and は on the whole phrase.",
             "In short clauses you will also often hear の in place of が: 母の[作]{つく}ったケーキ (the cake my mother made), [私]{わたし}の[好]{す}きな食べ[物]{もの}. Both are correct. が is the safer choice in longer clauses.",
-            "The other particles inside a clause stay as they were in the sentence, except the one that belonged to the noun you moved: [駅]{えき}の[前]{まえ}でパンを[売]{う}っている[店]{みせ} (a shop selling bread in front of the station) keeps で and を; the shop’s own が has gone with it."
+            "The other particles inside a clause stay as they were in the sentence. The only exception is the one that belonged to the noun you moved: [駅]{えき}の[前]{まえ}でパンを[売]{う}っている[店]{みせ} (a shop selling bread in front of the station) keeps で and を; the shop’s own が has gone with it."
           ]
         },
         {
@@ -1415,7 +1415,7 @@ ICA.addUnit({
             write:"1… 2… 3… 4… 5…"
           }
         ],
-        proof:"Five sentences describing a photo, ten objects described without their names, and five sentences about favorite things, each with a noun-modifying clause."
+        proof:"A note with three things. Five sentences describing a photo. Ten objects described without their names. Five sentences about favorite things. Each sentence has a noun-modifying clause."
       },
       read:[
         {
@@ -1478,7 +1478,7 @@ ICA.addUnit({
               label:"Explaining with ～んです"
             },
             "In each case the ～んです sentence explains something else: why A looks unwell, why you are late, why you aren’t drinking. Without んです the sentences would still be grammatical, but they would sound like separate pieces of news rather than explanations.",
-            "A very useful extension is **～んですが…**, which gives background before a request or question and then trails off politely, inviting the listener to help:",
+            "A very useful extension is **～んですが…**, which gives background before a request or question. Then your voice trails off politely, and this invites the listener to help:",
             {
               ex:"すみません、[駅]{えき}に行きたいんですが…。\nExcuse me, I’d like to get to the station…\n\nこの[漢字]{かんじ}の[読]{よ}み[方]{かた}がわからないんですが…。\nI don’t know how to read this kanji…",
               label:"～んですが…"
@@ -1509,7 +1509,7 @@ ICA.addUnit({
                 "**Every sentence.** If you put ～んです on everything, you sound as though you are always making excuses or insisting."
               ]
             },
-            "Why-questions need a little care too. どうして[遅]{おく}れたんですか is the normal way to ask why someone was late, but in a delicate moment it can sound like you are pressing for a reason. A softer choice is [何]{なに}かあったんですか (Did something happen?).",
+            "Why-questions need a little care too. どうして[遅]{おく}れたんですか is the normal way to ask why someone was late. But in a delicate moment it can sound like you are pressing for a reason. A softer choice is [何]{なに}かあったんですか (Did something happen?).",
             {
               key:"Use ～んです when there is something to explain: a situation you both see, a reason, or background before a request."
             }
@@ -1552,7 +1552,7 @@ ICA.addUnit({
               cap:"Four places, one small word: the whole unit’s rules for だ in one picture."
             },
             "Japanese speakers use ～と[思]{おも}います a lot, even when they are fairly sure, because it presents a statement as a personal view rather than a hard fact. It makes opinions sound modest and polite.",
-            "To say what you **don’t** think, Japanese usually makes the inner sentence negative: 雨は[降]{ふ}らないと[思]{おも}います (I don’t think it will rain; literally, I think it won’t rain). ～とは[思]{おも}いません also exists, but it usually sounds like rejecting an idea someone has put forward: そうは[思]{おも}いません (I don’t think so).",
+            "To say what you **don’t** think, Japanese usually makes the inner sentence negative. 雨は[降]{ふ}らないと[思]{おも}います means “I don’t think it will rain” (literally, “I think it won’t rain”). ～とは[思]{おも}いません also exists. But it usually sounds like rejecting an idea that someone has put forward: そうは[思]{おも}いません (I don’t think so).",
             "To ask for an opinion, say どう[思]{おも}いますか (What do you think?). To agree: [私]{わたし}もそう[思]{おも}います (I think so too).",
             "For **other people’s** thoughts, ～と[思]{おも}います doesn’t work, because it always reports the speaker’s own view. Say what they told you, ～と[言]{い}っていました, or use ～と[思]{おも}っています (has been thinking): ロドリゴさんは、[来年]{らいねん}[東京]{とうきょう}へ行きたいと[言]{い}っていました。 (Rodrigo was saying he wants to go to Tokyo next year.)"
           ]
@@ -1747,7 +1747,7 @@ ICA.addUnit({
           {
             t:"Explain five situations",
             how:[
-              "Think of five situations where you might need to explain: arriving late, refusing an invitation, looking tired, asking for directions, not understanding something.",
+              "Think of five situations where you might need to explain. Examples are arriving late, refusing an invitation, looking tired, asking for directions and not understanding something.",
               "For each, write a short polite explanation with ～んです or ～んですが…, for example [遅]{おく}れてすみません。[道]{みち}がわからなかったんです。",
               "Check the form before んです: plain, with な after nouns and な-adjectives."
             ],
@@ -1813,7 +1813,7 @@ ICA.addUnit({
      learn:[
       {h:"Have you ever…? ～たことがある", body:[
         {lead:"To talk about something you have done at least once in your life, Japanese uses the た-form + ことがある: literally, “there is the fact of having done it”."},
-        "You met the [[ta-form]] in Unit 3 and the whole plain-form system in Lesson 1. [[ta-koto-ga-aru|～たことがある]] simply adds ことがある. こと means “thing, fact”, and ある means “there is”, so the pattern says that such an event exists somewhere in your past.",
+        "You met the [[ta-form]] in Unit 3 and the whole plain-form system in Lesson 1. [[ta-koto-ga-aru|～たことがある]] simply adds ことがある. こと means “thing, fact”, and ある means “there is”. So the pattern says that such an event exists somewhere in your past.",
         {table:[["Verb","た-form","Experience (polite)"],["[行]{い}く (go)","行った","行ったことがあります"],["[食]{た}べる (eat)","食べた","食べたことがあります"],["[見]{み}る (see)","見た","見たことがあります"],["する (do)","した","したことがあります"],["[来]{く}る (come)","[来]{き}た","[来]{き}たことがあります"]]},
         "To say you have **never** done it, make ある negative: ～たことがありません. [一度]{いちど}も (not even once) makes it stronger. To ask, add か. The answer usually repeats only the last verb: はい、あります or いいえ、ありません.",
         {ex:"A：[富士山]{ふじさん}に[登]{のぼ}ったことがありますか。\nB：はい、[一度]{いちど}あります。\nA: Have you ever climbed Mount Fuji?\nB: Yes, once.\n\n[納豆]{なっとう}は、まだ[一度]{いちど}も食べたことがありません。\nI’ve never eaten nattō, not even once.\n\nロドリゴさんは、[雪]{ゆき}を見たことがないと[言]{い}っていました。\nRodrigo was saying he has never seen snow.", label:"～たことがある"},
@@ -1844,7 +1844,7 @@ ICA.addUnit({
       ]},
       {h:"When: ～とき", body:[
         {lead:"とき is a noun that means “time”. Put a description in front of it, and you get “(at) the time when…”."},
-        "Because とき is a noun, the words before it follow the rules for describing nouns from Lesson 4 ([[noun-modifier-clause]]): verbs and い-adjectives in the plain form, な-adjectives with な, and nouns with の. It is usually written in hiragana; you will also see it in kanji as [時]{とき}. The glossary entry is [[toki-clause]].",
+        "Because とき is a noun, the words before it follow the rules for describing nouns from Lesson 4 ([[noun-modifier-clause]]). Verbs and い-adjectives take the plain form, な-adjectives take な, and nouns take の. It is usually written in hiragana. You will also see it in kanji as [時]{とき}. The glossary entry is [[toki-clause]].",
         {table:[["Before とき","Example","Meaning"],["verb (plain)","出かけるとき\n[疲]{つか}れたとき\n[分]{わ}からないとき","when I go out\nwhen I’m tired\nwhen I don’t understand"],["い-adjective","[寒]{さむ}いとき","when it’s cold"],["な-adjective + な","[暇]{ひま}なとき","when I’m free"],["noun + の","[子]{こ}どものとき\n[学生]{がくせい}のとき","when I was a child\nwhen I was a student"]]},
         "The main sentence follows とき, often after a comma. You can add に (at that time) or は (as for those times) with little change in meaning: [寒]{さむ}いときは、[温]{あたた}かいお[茶]{ちゃ}を[飲]{の}みます (When it’s cold, I drink hot tea).",
         {ex:"[暇]{ひま}なとき、何をしますか。\nWhat do you do when you’re free?\n\n子どものとき、[海]{うみ}の[近]{ちか}くに[住]{す}んでいました。\nWhen I was a child, I lived near the sea.\n\n分からないときは、[先生]{せんせい}に聞いてください。\nWhen you don’t understand, please ask the teacher.\n\n[疲]{つか}れたとき、[甘]{あま}いものが食べたくなります。\nWhen I’m tired, I start wanting something sweet.", label:"～とき"},

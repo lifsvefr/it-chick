@@ -1,7 +1,7 @@
 /* Japanese Foundations · Unit 3 (e3u3) · N5 grammar II */
 ICA.addUnit({
   id:"e3u3", track:"e3", n:3, title:"N5 grammar II", icon:"🧩",
-  blurb:"The て-form and everything built on it (requests, permission, rules and ～ています), the plain ない and た forms, ～たい and ～ないでください, reasons with から, numbers and counters with their sound changes, comparisons, and time, dates, durations and how often.",
+  blurb:"The て-form and everything built on it (requests, permission, rules and ～ています). The plain ない and た forms. ～たい and ～ないでください. Reasons with から. Numbers and counters, with their sound changes. Comparisons. Time, dates, durations and how often.",
   goals:[
     "Build the て-form of any verb, including the exception [行]{い}く → [行]{い}って, and join actions and descriptions with it",
     "Make requests, ask for and give permission, and state rules with ～てください, ～てもいいです and ～てはいけません",
@@ -54,7 +54,7 @@ ICA.addUnit({
       {table:[["Verb","ます-form","て-form"],["[帰]{かえ}る (go home)","[帰]{かえ}ります","[帰]{かえ}って"],["[入]{はい}る (enter)","[入]{はい}ります","[入]{はい}って"],["[走]{はし}る (run)","[走]{はし}ります","[走]{はし}って"],["[知]{し}る (come to know)","[知]{し}ります","[知]{し}って"],["[切]{き}る (cut)","[切]{き}ります","[切]{き}って"]]},
       {key:"The ます-form tells you the group. Put the dictionary form and the ます-form side by side. If る has simply been swapped for ます (たべる → たべます), the verb is ichidan and the て-form ends in て. If る has turned into り (かえる → かえります), the verb is godan and the て-form ends in って."},
       "Pairs such as [着]{き}る (wear: [着]{き}ます, [着]{き}て) and [切]{き}る (cut: [切]{き}ります, [切]{き}って) are both read きる in the dictionary form, but they belong to different groups. The ます-form tells them apart.",
-      {warn:"You can’t always tell the group from the dictionary form alone. When you learn a new verb that ends in -iru or -eru, learn its ます-form with it. A dictionary such as [Jisho.org](https://jisho.org/word/%E8%A1%8C%E3%81%8F) labels each verb’s group (for [行]{い}く it says “Godan verb - Iku/Yuku special class”) and has a “Show inflections” button that lists its forms."}
+      {warn:"You can’t always tell the group from the dictionary form alone. When you learn a new verb that ends in -iru or -eru, learn its ます-form with it. A dictionary such as [Jisho.org](https://jisho.org/word/%E8%A1%8C%E3%81%8F) labels each verb’s group. For [行]{い}く it says “Godan verb - Iku/Yuku special class”. It also has a “Show inflections” button that lists the forms."}
     ]},
     {h:"Joining actions and descriptions", body:[
       "The first job of the て-form is joining. Put the て-form of one verb before another, and the sentence describes the actions in order: first this, then that.",
@@ -75,7 +75,7 @@ ICA.addUnit({
       {list:[
         "Say the chant once a day for a week.",
         "Each time you learn a new verb, say its dictionary form, ます-form and て-form together: [買]{か}う, [買]{か}います, [買]{か}って.",
-        "Check forms in a dictionary that lists them. Jisho.org has a “Show inflections” button on verb entries, and the [Online Japanese Accent Dictionary (OJAD)](https://www.gavo.t.u-tokyo.ac.jp/ojad/eng/pages/home), hosted by the University of Tokyo, lists the conjugated forms of verbs with recorded audio. Both can be used without an account.",
+        "Check forms in a dictionary that lists them. Jisho.org has a “Show inflections” button on verb entries, and the [Online Japanese Accent Dictionary (OJAD)](https://www.gavo.t.u-tokyo.ac.jp/ojad/eng/pages/home), hosted by the University of Tokyo, lists the conjugated forms of verbs, with recorded audio. You can use both without an account.",
         "When you read Japanese, notice the て-forms. Work backwards to the dictionary form: [読]{よ}んで could come from a verb ending in む, ぶ or ぬ, and with the kanji [読]{よ}, only [読]{よ}む exists. (Written in kana, よんで could also be [呼]{よ}んで, from [呼]{よ}ぶ, call: the kanji or the context tells you which.)"
       ]},
       "The full reference, with notes for later levels, is in {{te-form}}.",
@@ -176,7 +176,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e3u3-l2", title:"Requests, permission, rules and ～ています", minutes:55,
-   hook:{q:"A friend texts you: 「[今]{いま}、[駅]{えき}に[来]{き}ています。」 Where is she?", options:["On her way to the station","Already at the station","She comes to the station every day","She will come to the station later"], answer:1, reveal:"**She is already at the station.** With verbs of moving, such as [来]{く}る (come) and [行]{い}く (go), ～ています describes the state after the movement: she has come, and she is there now. It does not mean “is coming”. ～ています has two main meanings, an action in progress and a state that continues, and this lesson shows you how to tell them apart. It also shows how to make requests, ask permission and state rules with the て-form."},
+   hook:{q:"A friend texts you: 「[今]{いま}、[駅]{えき}に[来]{き}ています。」 Where is she?", options:["On her way to the station","Already at the station","She comes to the station every day","She will come to the station later"], answer:1, reveal:"**She is already at the station.** With verbs of moving, such as [来]{く}る (come) and [行]{い}く (go), ～ています describes the state after the movement: she has come, and she is there now. It does not mean “is coming”. ～ています has two main meanings: an action in progress and a state that continues. This lesson shows you how to tell them apart. It also shows how to make requests, ask permission and state rules with the て-form."},
    goals:[
      "Ask someone to do something with ～てください, and know when to soften it",
      "Ask for and give permission with ～てもいいですか and ～てもいいです",
@@ -662,7 +662,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e3u3-l5", title:"Time, dates, how long and how often", minutes:60,
-   hook:{q:"On a Japanese calendar, the 20th of the month has a special reading. Which is it?", options:["はつか","はたち","ふたとおか","にじゅうか"], answer:0, reveal:"**はつか.** The first ten days of the month, the 14th, the 20th and the 24th have special readings, most of them built on the native Japanese numbers, such as ふつか (2nd) and みっか (3rd). はたち is a different word: it means twenty years old. Most other dates are regular: じゅうごにち (15th), にじゅういちにち (21st). This lesson gives you the time, days, months, dates, durations and frequency words you need for N5."},
+   hook:{q:"On a Japanese calendar, the 20th of the month has a special reading. Which is it?", options:["はつか","はたち","ふたとおか","にじゅうか"], answer:0, reveal:"**はつか.** The first ten days of the month, the 14th, the 20th and the 24th have special readings. Most of them are built on the native Japanese numbers, such as ふつか (2nd) and みっか (3rd). はたち is a different word: it means twenty years old. Most other dates are regular: じゅうごにち (15th), にじゅういちにち (21st). This lesson gives you the time, days, months, dates, durations and frequency words you need for N5."},
    goals:[
      "Tell the time with [時]{じ}, [分]{ふん}, [半]{はん}, [午前]{ごぜん} and [午後]{ごご}",
      "Say the days of the week, the months and the dates, including the special readings such as ついたち and はつか",
@@ -727,12 +727,12 @@ ICA.addUnit({
       "Notice that you didn’t need every kanji to get the meaning. The numbers, [時]{じ}, [月]{がつ}, [日]{にち} and the day of the week carried most of it. That is a useful reading strategy for signs and schedules, and Unit 4 practices it with more real-world texts."
     ]},
     {h:"Keep it going: review and the Kanji Lab", body:[
-      "You have now met most of the N5 grammar: Unit 2’s sentence basics, particles and ます verbs, and this unit’s て-form, plain forms, counters and time. {{n5-grammar-patterns}} puts all the patterns on one page, and {{time-and-dates}} collects this lesson’s words.",
+      "You have now met most of the N5 grammar. That is Unit 2’s sentence basics, particles and ます verbs, and this unit’s て-form, plain forms, counters and time. {{n5-grammar-patterns}} puts all the patterns on one page. {{time-and-dates}} collects this lesson’s words.",
       "Counters and dates have many irregular readings, and everyone forgets some. That is normal. A few minutes of spaced review every day, where you see an item again just as you are about to forget it, works much better than cramming. The Kanji Lab does this for you.",
       {lab:"kl-n5", t:"Practice: the N5 kanji, including numbers, days and time words"},
       {lab:"kl-n5-vocab", t:"Practice: N5 vocabulary, including counters and time words"},
       "Unit 4 teaches the N5 kanji themselves, including the kanji for numbers, days of the week and time, so the words in this lesson will soon become easier to read.",
-      "For more practice in everyday situations, [Irodori](https://www.irodori.jpf.go.jp/en/) is a free course from the Japan Foundation: you can download its textbooks as PDFs, with audio, from Starter (A1) through Elementary 1 and 2 (A2) to Pre-Intermediate (A2/B1). It is built around everyday situations in Japan. [Tae Kim’s Guide to Learning Japanese](https://www.guidetojapanese.org/learn/grammar/past) is a free online grammar guide that covers the forms in this unit."
+      "For more practice in everyday situations, [Irodori](https://www.irodori.jpf.go.jp/en/) is a free course from the Japan Foundation. You can download its textbooks as PDFs, with audio. They go from Starter (A1) through Elementary 1 and 2 (A2) to Pre-Intermediate (A2/B1). It is built around everyday situations in Japan. [Tae Kim’s Guide to Learning Japanese](https://www.guidetojapanese.org/learn/grammar/past) is a free online grammar guide that covers the forms in this unit."
     ]}
    ],
    try:[
@@ -815,7 +815,7 @@ ICA.addUnit({
        "Note which numbers, days or time words you keep forgetting, and say them aloud in a sentence."
      ], write:"Days I reviewed… Words I keep forgetting…"}
     ],
-    proof:"A weekly schedule with times and days, five important dates with their readings, ten sentences about how often and how long, and a week of five-minute Kanji Lab reviews."
+    proof:"A note with four things. A weekly schedule with times and days. Five important dates with their readings. Ten sentences about how often and how long. A week of five-minute Kanji Lab reviews."
    },
    read:[
     {book:"taekim", where:"Essential Grammar, “Numbers and Counting”, sections “Dates”, “Time” and “A Span of Time”", note:"Dates with their special readings, clock times and durations."},
@@ -1204,7 +1204,7 @@ ICA.addUnit({
      {t:"[会]{あ}いない", why:"The ない-form uses the a-row: わ."}
    ]},
    {id:"e3u3-q24", lesson:"e3u3-l3", level:3, q:"Rodrigo told Mariya that he wants to go to Osaka. Which is the most natural way for Mariya to report this?", options:[
-     {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}きたいと[言]{い}っています。", ok:true, why:"Japanese usually reports another person’s wishes as something they said, rather than stating their feelings directly."},
+     {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}きたいと[言]{い}っています。", ok:true, why:"Japanese usually reports another person’s wishes as something they said. It does not state their feelings directly."},
      {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}きたいです。", why:"This states Rodrigo’s inner wish as a fact, as if Mariya could read his mind. Japanese normally avoids that."},
      {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}くたいと[言]{い}っています。", why:"たい joins the ます stem: [行]{い}きたい."},
      {t:"ロドリゴさんは[大阪]{おおさか}へ[行]{い}きたくないと[言]{い}っています。", why:"This reports the opposite: that he doesn’t want to go."}

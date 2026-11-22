@@ -6,7 +6,7 @@ ICA.addUnit({
  n:7,
  title:"N4 grammar II",
  icon:"🧩",
- blurb:"The passive (including the “suffering” passive), the causative and the causative-passive; four ways to say how you know something (～そう, ～そうだ, ～ようだ・みたい, ～らしい); transitive and intransitive verb pairs with ～てある and ～ている; ～ながら, ～のに and ～し; and a first look at respectful and humble speech; then degree and ease with ～すぎる, ～やすい and ～にくい, ways of doing with ～[方]{かた}, other people’s wishes with ～たがる, direction and change with ～てくる and ～ていく, and questions inside sentences with ～か and ～かどうか.",
+ blurb:"The passive (including the “suffering” passive), the causative and the causative-passive. Four ways to say how you know something (～そう, ～そうだ, ～ようだ・みたい, ～らしい). Transitive and intransitive verb pairs, with ～てある and ～ている. ～ながら, ～のに and ～し. A first look at respectful and humble speech. Then degree and ease with ～すぎる, ～やすい and ～にくい, ways of doing with ～[方]{かた}, other people’s wishes with ～たがる, direction and change with ～てくる and ～ていく, and questions inside sentences with ～か and ～かどうか.",
  goals:[
   "Build the passive, causative and causative-passive forms of any verb, group by group, including する and [来]{く}る",
   "Use the passive for things done to people and things, and the “suffering” passive for events that affect you",
@@ -15,7 +15,7 @@ ICA.addUnit({
   "Use transitive and intransitive pairs such as [開]{あ}ける and [開]{あ}く with を and が, and tell ～てある from ～ている",
   "Join ideas with ～ながら, ～のに and ～し",
   "Recognize the most common respectful and humble verbs, and use a few of them safely",
-  "Say “too much”, “easy to”, “hard to” and “the way to” on the ます stem, describe others’ wishes with ～たがる, use ～てくる and ～ていく for direction and change, and put questions inside sentences with ～か and ～かどうか"
+  "Say “too much”, “easy to”, “hard to” and “the way to” on the ます stem. Describe others’ wishes with ～たがる. Use ～てくる and ～ていく for direction and change. Put questions inside sentences with ～か and ～かどうか"
  ],
  read:[
   {book:"taekim", where:"Special Expressions: “Causative and Passive Verbs”, “Honorific and Humble Forms” and “Similarity or hearsay”"},
@@ -111,7 +111,7 @@ ICA.addUnit({
        label:"Person は doer に passive"
       },
       "The doer can be left out when it is unknown, obvious or unimportant, as in the last example: we don’t need to know exactly who sent the invitation.",
-      "With verbs of saying and giving, the doer is often marked with から instead of に: 先生から[注意]{ちゅうい}されました (I was warned by the teacher). に is also correct with verbs like [注意]{ちゅうい}する and [言]{い}う, so use に when you are unsure.",
+      "With verbs of saying and giving, you often mark the doer with から, not に: 先生から[注意]{ちゅうい}されました (I was warned by the teacher). に is also correct with verbs like [注意]{ちゅうい}する and [言]{い}う, so use に when you are unsure.",
       {h:"Done to your body or your things"},
       "When someone acts on a part of your body or something you own, Japanese still makes **you** the topic. The body part or the thing keeps を:",
       {
@@ -733,7 +733,7 @@ ICA.addUnit({
       write:"[飲]{の}む・[飲]{の}ませる・[飲]{の}ませられる・[飲]{の}まされる …"
      }
     ],
-    proof:"Five sentences about what you were made or allowed to do, three permission requests at two politeness levels, and a checked table of eight causative forms."
+    proof:"A note with three things. Five sentences about what you were made or allowed to do. Three permission requests at two politeness levels. A checked table of eight causative forms."
    },
    read:[
     {
@@ -1139,7 +1139,7 @@ ICA.addUnit({
     q:"You come home to an empty apartment and find the window open. Which sentence describes the window and tells you that someone opened it **on purpose**, for example to air the room?",
     options:["[窓]{まど}が[開]{あ}いています。", "[窓]{まど}が[開]{あ}けてあります。", "[窓]{まど}を[開]{あ}けています。", "[窓]{まど}が[開]{あ}きます。"],
     answer:1,
-    reveal:"**[窓]{まど}が[開]{あ}けてあります.** Japanese has two verbs for opening: [開]{あ}ける, when someone opens something, and [開]{あ}く, when something opens. [開]{あ}いています only describes the state: the window is open, for whatever reason. [開]{あ}けてあります adds that someone opened it deliberately, and it has stayed that way. [窓]{まど}を[開]{あ}けています is about a person, not the window: someone is opening it, or is keeping it open. This lesson teaches the verb pairs and these three ways of describing a scene."
+    reveal:"**[窓]{まど}が[開]{あ}けてあります.** Japanese has two verbs for opening: [開]{あ}ける, when someone opens something, and [開]{あ}く, when something opens. [開]{あ}いています only describes the state: the window is open, for whatever reason. [開]{あ}けてあります adds that someone opened it deliberately, and it has stayed that way. [窓]{まど}を[開]{あ}けています is about a person, not the window. Someone is opening it, or is keeping it open. This lesson teaches the verb pairs and these three ways of describing a scene."
    },
    goals:[
     "Explain the difference between transitive verbs (someone does something) and intransitive verbs (something happens)",
@@ -1497,7 +1497,7 @@ ICA.addUnit({
     q:"When you walk into a shop in Japan, the staff call out 「いらっしゃいませ！」. The word comes from the verb いらっしゃる. What does いらっしゃる mean?",
     options:["to buy (said politely)", "to come, go or be (said with respect)", "to thank (said humbly)", "to sell (said politely)"],
     answer:1,
-    reveal:"**To come, go or be, said with respect.** いらっしゃる is the respectful verb for [来]{く}る, [行]{い}く and いる, used for the actions of people you want to honor, such as customers. いらっしゃいませ is a very polite “please come in”: in effect, “welcome”. It is part of [[keigo|[敬語]{けいご}]], Japan’s system of respectful language. This lesson ends with the keigo verbs you will hear most, after three useful ways of joining ideas: ～ながら, ～のに and ～し."
+    reveal:"**To come, go or be, said with respect.** いらっしゃる is the respectful verb for [来]{く}る, [行]{い}く and いる, used for the actions of people you want to honor, such as customers. いらっしゃいませ is a very polite “please come in”, or in effect “welcome”. It is part of [[keigo|[敬語]{けいご}]], Japan’s system of respectful language. This lesson first teaches three useful ways of joining ideas: ～ながら, ～のに and ～し. It ends with the keigo verbs you will hear most."
    },
    goals:[
     "Say that one person does two things at once with ～ながら, with the main action last",
@@ -1666,7 +1666,7 @@ ICA.addUnit({
        ]
       },
       {h:"Your side and their side"},
-      "Keigo also depends on **groups**. When you speak to someone outside your group, such as a customer or a caller from another company, you treat your own colleagues, your boss and your family as part of your side: no respectful verbs and no さん for them. This is the idea of [[uchi-soto|ウチ・ソト]] (inside and outside).",
+      "Keigo also depends on **groups**. When you speak to someone outside your group, such as a customer or a caller from another company, you treat your own colleagues, your boss and your family as part of your side. That means no respectful verbs and no さん for them. This is the idea of [[uchi-soto|ウチ・ソト]] (inside and outside).",
       {
        ex:"[浜田]{はまだ}はただいま出かけております。\nMrs Hamada is out at the moment.\n(said by Aoi at her grandmother's tea shop, to a supplier on the phone)",
        label:"ウチ・ソト"
@@ -1862,7 +1862,7 @@ ICA.addUnit({
       ]
      }
     ],
-    proof:"Three ながら sentences and one with 間, two のに and two し sentences of your own, a keigo self-introduction with three respectful questions, and a week of N4 kanji review."
+    proof:"A note with four things. Three ながら sentences and one with 間. Two のに sentences and two し sentences of your own. A keigo self-introduction with three respectful questions. A week of N4 kanji review."
    },
    read:[
     {book:"taekim", where:"Special Expressions, “Time-specific actions”, section “Using 「ながら」 for two concurrent actions”"},
@@ -1970,7 +1970,7 @@ ICA.addUnit({
       ]},
       {table:[["Form", "Example", "Meaning"], ["～たがっている", "そうたくんは[猫]{ねこ}に[会]{あ}いたがっています。", "Sōta wants to see the cat."], ["～たがる (habit)", "[子]{こ}どもは[何]{なん}でも[自分]{じぶん}でやりたがります。", "Children want to do everything themselves."], ["～たがらない", "[弟]{おとうと}は[歯医者]{はいしゃ}に行きたがりません。", "My little brother doesn’t want to go to the dentist."]]},
       "With たい, the object can take が or を ([水]{みず}が[飲]{の}みたい / 水を[飲]{の}みたい). With たがる it is always を: 水を[飲]{の}みたがっている (✗ 水が[飲]{の}みたがっている). The same がる turns some feeling adjectives into verbs: [寒]{さむ}がる (feel cold, act cold), [欲]{ほ}しがる (want something): そうたくんは[新]{あたら}しいゲームを[欲]{ほ}しがっています.",
-      {warn:"～たがる describes wanting from the outside, the way you might describe a child, so it can sound rude about people above you, and you never use it to the person themselves. Ask ～たいですか, or offer something (コーヒーはいかがですか). About someone above you, the polite choice is ～たいとおっしゃっていました, from Lesson 5."}
+      {warn:"～たがる describes wanting from the outside, the way you might describe a child. So it can sound rude about people above you. Never use it to the person themselves. Ask ～たいですか, or offer something (コーヒーはいかがですか). About someone above you, the polite choice is ～たいとおっしゃっていました, from Lesson 5."}
      ]
     },
     {
@@ -2187,7 +2187,7 @@ ICA.addUnit({
     {
      h:"Change over time",
      body:[
-      "With verbs of change, such as なる (become), [増]{ふ}える (increase), [慣]{な}れる (get used to) and 分かる (understand), くる and いく move along a timeline instead of a map. ～てくる shows a change that has been happening **up to now**, or has just started. ～ていく shows a change that will continue **from now on**.",
+      "With verbs of change, such as なる (become), [増]{ふ}える (increase), [慣]{な}れる (get used to) and 分かる (understand), くる and いく move along a timeline, not a map. ～てくる shows a change that has been happening **up to now**, or has just started. ～ていく shows a change that will continue **from now on**.",
       {
        fig:"<svg viewBox=\"0 0 340 204\"><defs><marker id=\"e3u7b1\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">Change over time</text><path class=\"d-ink\" d=\"M8 100H332\" stroke-width=\"2\" marker-end=\"url(#e3u7b1)\"/><rect class=\"d-lup\" x=\"14\" y=\"86\" width=\"144\" height=\"28\" rx=\"6\" stroke-width=\"2\"/><text x=\"86\" y=\"105\" text-anchor=\"middle\">なってきた</text><rect class=\"d-sage\" x=\"182\" y=\"86\" width=\"136\" height=\"28\" rx=\"6\" stroke-width=\"2\"/><text x=\"250\" y=\"105\" text-anchor=\"middle\">なっていく</text><path class=\"d-ink\" d=\"M170 68V132\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"60\" text-anchor=\"middle\">now</text><text class=\"s\" x=\"86\" y=\"140\" text-anchor=\"middle\">up to now</text><text class=\"s\" x=\"250\" y=\"140\" text-anchor=\"middle\">from now on</text><text class=\"s\" x=\"86\" y=\"158\" text-anchor=\"middle\">～てくる</text><text class=\"s\" x=\"250\" y=\"158\" text-anchor=\"middle\">～ていく</text><text class=\"s\" x=\"86\" y=\"188\" text-anchor=\"middle\">さむく なってきた</text><text class=\"s\" x=\"250\" y=\"188\" text-anchor=\"middle\">もっと さむく なっていく</text></svg>",
        alt:"A timeline with a mark for now in the middle. Before now: なってきた, up to now, ～てくる, with the example さむく なってきた (it has been getting colder). After now: なっていく, from now on, ～ていく, with the example もっと さむく なっていく (it will get colder and colder).",

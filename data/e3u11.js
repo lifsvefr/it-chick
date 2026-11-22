@@ -7,7 +7,7 @@ ICA.addUnit({
  "n": 11,
  "title": "N3 kanji and vocabulary",
  "icon": "🖌️",
- "blurb": "All 370 kanji on the N3 list used in this course and its Kanji Lab, in meaning groups with their main readings and everyday words, and the strategies that make a large set manageable: meaning parts, sound families and look-alikes. Then the words N3 builds from them: kango for work and the news, verb pairs and compound verbs, the prefixes 不・無・未・非 and the suffixes 〜的・〜性・〜化, four-kanji idioms, and the onomatopoeia of everyday Japanese.",
+ "blurb": "All 370 kanji on the N3 list used in this course and its Kanji Lab, in meaning groups with their main readings and everyday words. The strategies that make a large set manageable: meaning parts, sound families and look-alikes. Then the words N3 builds from them: kango for work and the news, verb pairs and compound verbs, the prefixes 不・無・未・非 and the suffixes 〜的・〜性・〜化, four-kanji idioms, and the onomatopoeia of everyday Japanese.",
  "read": [
   {
    "book": "irodori",
@@ -95,7 +95,7 @@ ICA.addUnit({
       },
       "Each group comes as a table: the kanji, its core meanings, its main readings and one or two common words. The meanings, readings and words are the same as on the Kanji Lab’s N3 cards, which come from the dictionaries KANJIDIC2 and JMdict. [[on-yomi|On readings]] are in katakana and [[kun-yomi|kun readings]] in hiragana, with the [[okurigana]] in brackets: つか(れる) means the word is [疲]{つか}れる.",
       {
-       "tip": "[[furigana|Furigana]] in this unit: N3 kanji, and anything harder, always have furigana. N5 and N4 kanji have none, because you know them, except where the reading is the point: in the kanji tables, when readings are compared, and for special readings such as [今日]{きょう} or [二十歳]{はたち}."
+       "tip": "[[furigana|Furigana]] in this unit: N3 kanji, and anything harder, always have furigana. N5 and N4 kanji have none, because you know them. The exceptions are places where the reading is the point: the kanji tables, comparisons of readings, and special readings such as [今日]{きょう} or [二十歳]{はたち}."
       },
       {
        "warn": "The JLPT has published no official kanji list since 2010, so every “N3 list” is an estimate, and lists differ by a few kanji ({{jlpt-overview}}). If another book calls one of these kanji N2, you will still need it."
@@ -554,7 +554,7 @@ ICA.addUnit({
        ]
       },
       "Partner words follow [[uchi-soto]], as family words did at N4. For your own partner you say [夫]{おっと} (husband) and [妻]{つま} (wife). For someone else’s, you say ご主人 and [奥]{おく}さん. A married couple is [夫]{ふう}[婦]{ふ}, with the reading フウ. After a family name, [夫]{ふ}[妻]{さい} is a formal way to say “Mr and Mrs”: [佐藤]{さとう}[夫]{ふ}[妻]{さい}.",
-      "Some words here have a second use. [彼]{かれ} (he) and [彼]{かの}女 (she) also mean boyfriend and girlfriend, so Japanese speakers often use the person’s name instead. 〜[君]{くん} goes after the names of boys and younger men, often from a teacher, a boss or a friend; [君]{きみ} (you) is direct: some speakers use it to close friends or juniors, and it is common in songs, but avoid it with anyone above you. [皆]{みな}さん (everyone) opens many speeches and emails: [皆]{みな}さん、こんにちは。",
+      "Some words here have a second use. [彼]{かれ} (he) and [彼]{かの}女 (she) also mean boyfriend and girlfriend, so Japanese speakers often use the person’s name instead. 〜[君]{くん} goes after the names of boys and younger men. A teacher, a boss or a friend often uses it. [君]{きみ} (you) is direct. Some speakers use it to close friends or juniors, and it is common in songs. But avoid it with anyone above you. [皆]{みな}さん (everyone) opens many speeches and emails: [皆]{みな}さん、こんにちは。",
       "Four kanji make words for people in society: [民]{みん} (people of a place: [市]{し}[民]{みん}, 住[民]{みん}), [師]{し} (an expert: 医[師]{し}, a formal word for doctor), [徒]{と} (a student: 生[徒]{と}) and [官]{かん} (an official: [警]{けい}[官]{かん}, police officer)."
      ]
     },
@@ -1693,7 +1693,7 @@ ICA.addUnit({
        ]
       },
       {
-       "tip": "When a headline ends with a noun, read it in this order: the noun at the end (what happened), then the word with を or が before it (who or what it happened to, or who did it), then the rest (where, when). The full story below the headline then fills in what the headline left out."
+       "tip": "When a headline ends with a noun, read it in this order. First, the noun at the end (what happened). Second, the word with を or が before it (who or what it happened to, or who did it). Third, the rest (where, when). The full story below the headline then fills in what the headline left out."
       }
      ]
     },
@@ -2334,8 +2334,8 @@ ICA.addUnit({
         ]
        ]
       },
-      "Two of them are on doors all over Japan: a door marked 押 (from [押]{お}す, push) is pushed, and one marked 引 (from [引]{ひ}く, pull) is pulled. [打]{う}つ is to hit or strike, and also to type: メールを[打]{う}つ. [取]{と}る (take) is one of the busiest verbs in Japanese: [取]{と}り[消]{け}す (cancel), [取]{と}り出す (take out), [受]{う}け[取]{と}る (receive). Notice that 取 has no 扌: its hand is 又, on the right.",
-      "[抱]{だ}く and [抱]{かか}える share a kanji. [抱]{だ}く is to hold someone in your arms, a baby or a pet; [抱]{かか}える is to carry something in your arms, and also to have a problem or a worry: 問題を[抱]{かか}える."
+      "Two of them are on doors all over Japan: a door marked 押 (from [押]{お}す, push) is pushed, and one marked 引 (from [引]{ひ}く, pull) is pulled. [打]{う}つ is to hit or strike, and also to type: メールを[打]{う}つ. [取]{と}る (take) is one of the busiest verbs in Japanese. Examples: [取]{と}り[消]{け}す (cancel), [取]{と}り出す (take out), [受]{う}け[取]{と}る (receive). Notice that 取 has no 扌: its hand is 又, on the right.",
+      "[抱]{だ}く and [抱]{かか}える share a kanji. [抱]{だ}く is to hold someone in your arms, such as a baby or a pet. [抱]{かか}える is to carry something in your arms. It also means to have a problem or a worry: 問題を[抱]{かか}える."
      ]
     },
     {
@@ -2688,7 +2688,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "[寄]{よ}る is to stop by on the way somewhere: 帰りにスーパーに[寄]{よ}る. 立ち[寄]{よ}る means the same, a little more formally. [訪]{たず}ねる is to visit a person or a place, and the kango [訪]{ほう}問 is a formal visit. [頼]{たの}む is to ask someone to do something; [頼]{たよ}る, with the same kanji, is to rely on someone.",
+      "[寄]{よ}る is to stop by on the way somewhere: 帰りにスーパーに[寄]{よ}る. 立ち[寄]{よ}る means the same, a little more formally. [訪]{たず}ねる is to visit a person or a place. The kango [訪]{ほう}問 is a formal visit. [頼]{たの}む is to ask someone to do something. [頼]{たよ}る, with the same kanji, is to rely on someone.",
       "[留]{る}[守]{す} (being out, away from home) has two N3 kanji with their less common on readings, ル and ス. [留]{る}[守]{す}[番]{ばん}電話 is an answering machine, and [留]{りゅう}学 (study abroad) uses the other reading of 留."
      ]
     },
@@ -4842,13 +4842,13 @@ ICA.addUnit({
         ]
        ]
       },
-      "The kanji in the second table are small but everywhere. 〜[回]{かい} counts times (三[回]{かい}, three times), 〜[杯]{はい} counts cups and glasses (一[杯]{ぱい}, 三[杯]{ばい}, 六[杯]{ぱい}, with the same kind of sound changes as 〜本 in Unit 3), and 〜[点]{てん} counts points. [便]{びん} is a flight or a delivery: 午後の[便]{びん} (the afternoon flight), [航]{こう}空[便]{びん} (airmail). 理[由]{ゆう} (reason) and [原]{げん}[因]{いん} (cause) are both “why”: 理[由]{ゆう} for people’s reasons, [原]{げん}[因]{いん} for the cause of an event, such as an accident."
+      "The kanji in the second table are small but everywhere. 〜[回]{かい} counts times (三[回]{かい}, three times). 〜[杯]{はい} counts cups and glasses (一[杯]{ぱい}, 三[杯]{ばい}, 六[杯]{ぱい}), with the same kind of sound changes as 〜本 in Unit 3. 〜[点]{てん} counts points. [便]{びん} is a flight or a delivery: 午後の[便]{びん} (the afternoon flight), [航]{こう}空[便]{びん} (airmail). 理[由]{ゆう} (reason) and [原]{げん}[因]{いん} (cause) are both “why”: 理[由]{ゆう} for people’s reasons, [原]{げん}[因]{いん} for the cause of an event, such as an accident."
      ]
     },
     {
      "h": "Onomatopoeia: [擬]{ぎ}[音]{おん}[語]{ご} and [擬]{ぎ}[態]{たい}[語]{ご}",
      "body": [
-      "Japanese uses many sound-symbolic words. The Japanese terms are [擬]{ぎ}[音]{おん}[語]{ご} ([[giongo]]), words that copy a real sound, and [擬]{ぎ}[態]{たい}[語]{ご} ([[gitaigo]]), words that “sound like” a manner, a state or a feeling that makes no noise at all. Some books split off feeling words as [擬]{ぎ}[情]{じょう}[語]{ご}. The table below marks each word as a sound, a manner, a state or a feeling, to help you learn it; the last three are all [擬]{ぎ}[態]{たい}[語]{ご}. All of them are everyday Japanese, not baby talk.",
+      "Japanese uses many sound-symbolic words. The Japanese terms are [擬]{ぎ}[音]{おん}[語]{ご} ([[giongo]]), words that copy a real sound, and [擬]{ぎ}[態]{たい}[語]{ご} ([[gitaigo]]), words that “sound like” a manner, a state or a feeling, even though there is no real noise. Some books split off feeling words as [擬]{ぎ}[情]{じょう}[語]{ご}. The table below marks each word as a sound, a manner, a state or a feeling, to help you learn it. The last three are all [擬]{ぎ}[態]{たい}[語]{ご}. All of them are everyday Japanese, not baby talk.",
       {
        "fig": "<svg viewBox=\"0 0 340 260\"><text x=\"170\" y=\"18\" text-anchor=\"middle\">The shapes of onomatopoeia</text><rect class=\"d-lup\" x=\"8\" y=\"30\" width=\"324\" height=\"64\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"54\">A B A B (repeated)</text><text x=\"20\" y=\"80\">ドキドキ · きらきら · ぺこぺこ</text><rect class=\"d-sage\" x=\"8\" y=\"104\" width=\"324\" height=\"64\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"128\">A っ B り (or A ん B り)</text><text x=\"20\" y=\"154\">ぐっすり · ぴったり · のんびり</text><rect class=\"d-gold\" x=\"8\" y=\"178\" width=\"324\" height=\"64\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"202\">A っ と</text><text x=\"20\" y=\"228\">ほっと · じっと · さっと</text></svg>",
        "alt": "Three boxes showing the shapes of onomatopoeia. A B A B, repeated: ドキドキ, きらきら, ぺこぺこ. A っ B り, or A ん B り: ぐっすり, ぴったり, のんびり. A っ と: ほっと, じっと, さっと.",
@@ -4987,7 +4987,7 @@ ICA.addUnit({
        ]
       },
       {
-       "tip": "Sound words are often written in katakana (ザーザー, ワンワン) and manner words in hiragana (のんびり, ぐっすり), but both spellings are common, and katakana can add emphasis: ドキドキ and どきどき are the same word."
+       "tip": "Sound words are often written in katakana (ザーザー, ワンワン) and manner words in hiragana (のんびり, ぐっすり), but both spellings are common. Katakana can add emphasis: ドキドキ and どきどき are the same word."
       },
       {
        "warn": "Many of these words have more than one meaning, and the sentence decides. ゴロゴロ is thunder, but 家でごろごろする is lazing around at home. ぺこぺこ is “very hungry” with おなか, but ぺこぺこ[頭]{あたま}を下げる is bowing again and again. Learn each one with a sentence."
@@ -5044,7 +5044,7 @@ ICA.addUnit({
         "**Every day (15 to 20 minutes):** the Kanji Lab’s reviews first, then today’s new cards. Start with the N3 kanji deck at 10 a day. When it is going well, add the N3 words deck too. The Lab’s setting for new cards (5, 10 or 20) applies to each deck, so if two decks at 10 feel like too much, switch it to 5.",
         "**Every week:** read one short real text (a notice, a news story for learners, a blog) and collect five new words with N3 kanji. The next unit has reading strategies and free sources ({{reading-news-japanese}}).",
         "**Every month:** go back to your part pages (忄, 扌, 辶…), your prefix notebook and your [四]{よ}[字]{じ}[熟]{じゅく}[語]{ご} page, and add what you met.",
-        "**Before the JLPT:** the N3 test checks reading kanji, choosing the right kanji for a word, and using words in context; the next unit explains the sections and the passing scores ({{jlpt-n3-overview}})."
+        "**Before the JLPT:** the N3 test checks three things: reading kanji, choosing the right kanji for a word, and using words in context. The next unit explains the sections and the passing scores ({{jlpt-n3-overview}})."
        ]
       },
       {
