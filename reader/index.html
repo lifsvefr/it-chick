@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=81">
+<link rel="stylesheet" href="../shared/style.css?v=82">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=81"></script>
+<script src="../shared/engine.js?v=82"></script>
 <style>
 /* The built-in reader: openly licensed books, reformatted for easy reading. One section per page. */
 .rd{max-width:40em;margin:0 auto;font-size:calc(1.08rem * var(--rz,1));line-height:1.7}
@@ -50,6 +50,13 @@
 .toc summary{cursor:pointer;font-family:var(--display);font-weight:800} .toc ol{margin:8px 0 2px;padding-left:0;list-style:none;display:grid;gap:4px}
 .toc a{text-decoration:none} .toc .num{display:inline-block;min-width:2.6em;color:var(--soft)}
 .back{display:inline-flex;gap:6px;align-items:center}
+.rd .eq{overflow-x:auto;margin:1em 0;text-align:center} .rd math{font-size:1.05em}
+.rd pre{background:var(--panel2);border-radius:10px;padding:10px 12px;overflow-x:auto;font-size:.86em;line-height:1.5} .rd code{font-family:var(--mono);font-size:.9em}
+.rd .exq{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin:1em 0}
+.rd .ans{margin:.6em 0 0;background:none;padding:6px 10px}
+.rd .note.ex{border-left-color:var(--gold)}
+.rd .embed a{font-weight:700}
+.rd .fn{color:var(--soft)}
 .printrow{display:flex;flex-wrap:wrap;gap:8px;margin:1.2em 0 0}
 .chsec{margin-top:2em} .chsec+.chsec{border-top:1px solid var(--line);padding-top:1em}
 @media print{

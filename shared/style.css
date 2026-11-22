@@ -626,3 +626,6 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 /* long unit names in wrapping filter rows (Codex): wrap inside the button instead of widening the page */
 .tabs.wrap button{white-space:normal;max-width:100%;text-align:left}
 .readhere{flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:6px}
+@keyframes meow{0%,100%{transform:rotate(0)}30%{transform:rotate(-6deg) scale(1.04)}60%{transform:rotate(4deg)}}
+.scat img.meow{animation:meow .45s ease}
+@media (prefers-reduced-motion:reduce){.scat img.meow{animation:none}}

@@ -7,7 +7,7 @@
 var ICA = window.ICA = window.ICA || {};
 ICA.version = "pass1";
 ICA.tracks = {}; ICA.units = []; ICA.unitById = {}; ICA.lessons = {}; ICA.codex = {}; ICA.terms = {}; ICA.bank = []; ICA.bankById = {}; ICA.books = {};
-ICA.base = /\/(quests|arcade|codex|labs|forge)\//.test(location.pathname) ? "../" : "./"; ICA.figs = [];  /* pages in a subfolder link home with ../ */
+ICA.base = /\/(quests|arcade|codex|labs|forge|reader)\//.test(location.pathname) ? "../" : "./"; ICA.figs = [];  /* pages in a subfolder link home with ../ */
 
 /* ---------- registry (used by data files) ---------- */
 ICA.addTrack = function(t){ ICA.tracks[t.id] = t; };
@@ -428,7 +428,7 @@ ICA.offline = (function(){
         '<label class="chk"><input type="checkbox" checked disabled> Lessons, story, pictures <span class="small muted">· about 37 MB</span></label>' +
         '<label class="chk"><input type="checkbox" id="off-audio"' + (p.audio ? ' checked' : '') + (run ? ' disabled' : '') + '> Voice audio <span class="small muted">· about 173 MB</span></label>' +
         '<label class="chk"><input type="checkbox" id="off-labs"' + (p.labs ? ' checked' : '') + (run ? ' disabled' : '') + '> Coding labs: Python, SQL and R <span class="small muted">· about 62 MB</span></label>' +
-        '<label class="chk"><input type="checkbox" id="off-reader"' + (p.reader ? ' checked' : '') + (run ? ' disabled' : '') + '> Books in the Reader <span class="small muted">· about 15 MB</span></label></div>' +
+        '<label class="chk"><input type="checkbox" id="off-reader"' + (p.reader ? ' checked' : '') + (run ? ' disabled' : '') + '> Books in the Reader <span class="small muted">· about 133 MB</span></label></div>' +
         (run ? '<progress max="100" value="' + pct + '" aria-label="Saving for offline use"></progress>' : '') +
         '<p class="small" role="status">' + status + '</p>' +
         '<div class="row"><button class="btn small" id="off-go"' + (run ? ' disabled' : '') + '>' + (on ? 'Update offline copy' : 'Save for offline use') + '</button>' + (on && !run ? '<button class="btn small ghost" id="off-rm">Remove offline copy</button>' : '') + '</div>' +

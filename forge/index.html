@@ -14,15 +14,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=81">
+<link rel="stylesheet" href="../shared/style.css?v=82">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=81"></script>
+<script src="../shared/engine.js?v=82"></script>
 <style>
 .kinds{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
 .kind{display:grid;gap:4px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:12px;color:var(--ink)}
 .kind:hover{border-color:var(--rose)}
 .kind b{font-family:var(--display)}
 .kind span{font-size:.86em;color:var(--soft)}
+.subj{display:grid;grid-template-columns:repeat(auto-fill,minmax(8.5em,1fr));gap:6px;overflow:visible}
+.subj button{justify-content:flex-start;text-align:left;white-space:normal;font-size:.84em;padding:7px 11px;line-height:1.25;border-radius:12px}
 .pick select{width:100%;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--panel)}
 /* the paper preview */
 .paper{background:#fff;color:#1d1511;border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);padding:28px 24px;font-family:var(--body);font-size:15px;line-height:1.7}
@@ -230,17 +232,41 @@ function docReading(u){
 }
 
 /* ----- screens ----- */
+/* Pick a subject (chips), then one of its units, then a lesson. The choice is remembered (settings.printPick). */
 function home(){
   setTitle("Printer");
-  var st = ICA.load(), units = ICA.units.slice().sort(function(a, b){ var am = st.tracks.indexOf(a.track) > -1 ? 0 : 1, bm = st.tracks.indexOf(b.track) > -1 ? 0 : 1; return am - bm; });
+  var st = ICA.load(), pk = st.settings.printPick || {};
+  var tids = Object.keys(ICA.tracks).filter(function(t){ return ICA.units.some(function(u){ return u.track === t; }); })
+    .sort(function(a, b){ var am = st.tracks.indexOf(a) > -1 ? 0 : 1, bm = st.tracks.indexOf(b) > -1 ? 0 : 1; return am - bm || ICA.tracks[a].n - ICA.tracks[b].n; });
+  var tid = tids.indexOf(pk.track) > -1 ? pk.track : tids[0];
+  var RI = window.ICA_READIDX || {}, rbooks = Object.keys(RI);
   app.innerHTML = '<div class="stack"><div><div class="eyebrow">Printer</div><h1>Printables</h1><p class="muted">Make a page to print or save as a PDF: study without a screen, or keep notes on paper.</p></div>'+
-    '<div class="card stack pick"><label class="lb" for="unit">Unit</label><select id="unit">'+(function(){ var tids = []; units.forEach(function(u){ if (tids.indexOf(u.track) < 0) tids.push(u.track); });
-      return tids.map(function(tid){ return '<optgroup label="'+esc(ICA.tracks[tid].name)+'">'+units.filter(function(u){ return u.track === tid; }).sort(function(a, b){ return a.n - b.n; }).map(function(u){ return '<option value="'+u.id+'">Unit '+u.n+': '+esc(u.title)+'</option>'; }).join("")+'</optgroup>'; }).join(""); })()+'</select>'+
+    '<div class="card stack pick"><span class="lb" id="subj-l">Subject</span><div class="tabs subj" role="tablist" aria-labelledby="subj-l">'+tids.map(function(t){ return '<button role="tab" data-track="'+t+'" aria-selected="'+(t === tid)+'">'+esc(ICA.tracks[t].icon || "")+' '+esc(ICA.tracks[t].name)+'</button>'; }).join("")+'</div>'+
+    '<label class="lb" for="unit">Unit</label><select id="unit"></select>'+
     '<label class="lb" for="lesson">Lesson (for worksheets, quizzes and notes)</label><select id="lesson"></select></div>'+
-    '<div class="kinds">'+KINDS.map(function(k){ return '<button class="kind" data-kind="'+k[0]+'"><b>'+k[1]+'</b><span>'+k[2]+'</span></button>'; }).join("")+'</div></div>';
+    '<div class="kinds">'+KINDS.map(function(k){ return '<button class="kind" data-kind="'+k[0]+'"><b>'+k[1]+'</b><span>'+k[2]+'</span></button>'; }).join("")+'</div>'+
+    (rbooks.length ? '<h2>Textbooks</h2><div class="card stack pick"><p class="small muted" style="margin:0">Free, openly licensed textbooks from the Reader, one chapter at a time, with the book’s credit on every copy.</p>'+
+      '<label class="lb" for="rbook">Book</label><select id="rbook">'+rbooks.map(function(b){ return '<option value="'+b+'">'+esc(RI[b].title || b)+'</option>'; }).join("")+'</select>'+
+      '<label class="lb" for="rch">Chapter</label><select id="rch"></select>'+
+      '<div class="row"><a class="btn" id="rgo" href="#">🖨️ Open the chapter to print</a></div></div>' : '')+'</div>';
   var us = document.getElementById("unit"), ls = document.getElementById("lesson");
-  function fillLessons(){ var u = ICA.unitById[us.value]; ls.innerHTML = u.lessons.map(function(l){ return '<option value="'+l.id+'">'+l.n+'. '+esc(l.title)+'</option>'; }).join("")+(u.checkpoint ? '<option value="cp">Unit checkpoint (quiz only)</option>' : ''); }
-  us.addEventListener("change", fillLessons); fillLessons();
+  function fillUnits(){
+    us.innerHTML = ICA.units.filter(function(u){ return u.track === tid; }).sort(function(a, b){ return a.n - b.n; }).map(function(u){ return '<option value="'+u.id+'">Unit '+u.n+': '+esc(u.title)+'</option>'; }).join("");
+    if (pk.unit && ICA.unitById[pk.unit] && ICA.unitById[pk.unit].track === tid) us.value = pk.unit;
+    fillLessons();
+  }
+  function fillLessons(){ var u = ICA.unitById[us.value]; ls.innerHTML = u.lessons.map(function(l){ return '<option value="'+l.id+'">'+l.n+'. '+esc(l.title)+'</option>'; }).join("")+(u.checkpoint ? '<option value="cp">Unit checkpoint (quiz only)</option>' : ''); if (pk.lesson && ls.querySelector('option[value="'+pk.lesson+'"]')) ls.value = pk.lesson; }
+  function remember(){ st.settings.printPick = pk = {track:tid, unit:us.value, lesson:ls.value}; ICA.save(); }
+  app.querySelector(".subj").addEventListener("click", function(e){ var b = e.target.closest("[data-track]"); if (!b) return; tid = b.getAttribute("data-track"); ICA.$$(".subj [data-track]").forEach(function(x){ x.setAttribute("aria-selected", x === b); }); pk = {}; fillUnits(); remember(); });
+  us.addEventListener("change", function(){ pk.lesson = null; fillLessons(); remember(); });
+  ls.addEventListener("change", remember);
+  fillUnits();
+  var rb = document.getElementById("rbook"), rc = document.getElementById("rch"), rg = document.getElementById("rgo");
+  if (rb){
+    var fillCh = function(){ var B = RI[rb.value]; rc.innerHTML = (B.chs || []).map(function(t, i){ return '<option value="'+(i+1)+'">'+(i+1)+'. '+esc(t)+'</option>'; }).join(""); link(); };
+    var link = function(){ rg.href = "../reader/index.html#" + rb.value + "/print/" + rc.value; };
+    rb.addEventListener("change", fillCh); rc.addEventListener("change", link); fillCh();
+  }
 }
 function show(kind, uid, lid){
   var u = ICA.unitById[uid], l = lid && lid !== "cp" ? ICA.lessons[lid] : null, html, name;
