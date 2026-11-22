@@ -72,7 +72,7 @@ ICA.addUnit({
         ["To Q&A","「ご質問やご意見がありましたら、お願いいたします。」","Or the 司会 says it"]
       ]},
       "Notice the light touch of keigo: いたします for your own action, ご覧ください for the audience’s, ご説明します when you explain something to them. Lesson 3 explains why these work. You will also hear 「発表させていただきます」. It is very common and not wrong, but the plain 「発表いたします」 is enough, and stacking させていただきます on every verb sounds heavy (lesson 4).",
-      {ex:"それでは、発表を始めます。経済学部3年のチェン・ウェイです。本日は、「大学生のアルバイトと学業の両立」について発表いたします。よろしくお願いいたします。\n本発表の構成は、次のとおりです。まず、研究の背景と目的を述べます。次に、調査の方法と結果を報告します。最後に、考察と今後の課題についてお話しします。", label:"Worked example: a 30-second opening"}
+      {ex:"それでは、発表を始めます。経済学部3年のチェン・ウェイです。本日は、「大学生のアルバイトと学業の両立」について発表いたします。よろしくお願いいたします。\n本発表の構成は、次のとおりです。まず、研究の背景と目的を述べます。次に、調査の方法と結果を報告します。最後に、考察と今後の課題についてお話しします。", label:"Worked example: a 30-second opening", listen:"e1u8-l1-a1"}
     ]},
     {h:"Describing figures, trends and numbers", body:[
       "When you show a figure, say what it is before you say what it means. Listeners need the axes before the story.",

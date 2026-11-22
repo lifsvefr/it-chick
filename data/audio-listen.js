@@ -13,6 +13,7 @@ window.ICA_LISTEN = {
 "e1u4-l4-a1": "listen/e1u4-l4-a1.mp3",
 "e1u4-l4-a6": "listen/e1u4-l4-a6.mp3",
 "e1u4-l5-a1": "listen/e1u4-l5-a1.mp3",
+"e1u8-l1-a1": "listen/e1u8-l1-a1.mp3",
 "e1u8-l2-a1": "listen/e1u8-l2-a1.mp3",
 "e1u8-l4-a1": "listen/e1u8-l4-a1.mp3"
 };
