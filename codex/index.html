@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=74">
+<link rel="stylesheet" href="../shared/style.css?v=75">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=74"></script>
+<script src="../shared/engine.js?v=75"></script>
 <style>
 .search{position:sticky;top:calc(61px + env(safe-area-inset-top,0px));z-index:10;background:var(--bg);padding:8px 0 10px;display:grid;gap:8px}
 .entries{display:grid;gap:8px}
@@ -56,7 +56,7 @@ function list(){
     '<div class="search"><label class="lb" for="q">Search the Codex</label><input type="search" id="q" placeholder="Try “backup”, “norms” or “Durkheim”" value="'+esc(q)+'" autocomplete="off">'+
     '<div class="tabs" role="tablist"><button role="tab" data-view="entries" aria-selected="'+(view==="entries")+'">Entries</button><button role="tab" data-view="glossary" aria-selected="'+(view==="glossary")+'">Glossary</button></div>'+
     '<div class="tabs wrap" aria-label="Filter by subject"><button data-f="all" aria-selected="'+(filt==="all")+'">Everything</button>'+tracksWith().map(function(t){ return '<button data-f="t:'+t.id+'" aria-selected="'+(filt==="t:"+t.id)+'">'+t.icon+' '+esc(t.name)+'</button>'; }).join("")+'</div>'+
-    '<div class="tabs wrap" aria-label="Filter by unit">'+units.filter(function(u){ return filt === "all" || filt === u.id || filt === "t:"+u.track || (ICA.unitById[filt] && ICA.unitById[filt].track === u.track); }).map(function(u){ return '<button data-f="'+u.id+'" aria-selected="'+(filt===u.id)+'">'+esc(u.title)+'</button>'; }).join("")+'</div></div><div id="results"></div></div>';
+    '<div class="tabs wrap" aria-label="Filter by unit">'+units.filter(function(u){ return filt === u.id || filt === "t:"+u.track || (ICA.unitById[filt] && ICA.unitById[filt].track === u.track); }).map(function(u){ return '<button data-f="'+u.id+'" aria-selected="'+(filt===u.id)+'">'+esc(u.title)+'</button>'; }).join("")+'</div></div><div id="results"></div></div>';
   draw();
   var inp = document.getElementById("q");
   inp.addEventListener("input", function(){ q = inp.value; draw(); });
@@ -93,7 +93,7 @@ function entry(id){
   var bl = backlinks(e);
   var h = '<div class="stack"><a href="#" class="small">← All entries</a><div><span class="chip '+(tr?tr.cls:"")+'">'+esc(unitName(e.unit))+'</span><h1 style="margin-top:6px">'+esc(e.title)+'</h1>'+(e.aka ? '<p class="small muted">Also called: '+esc(e.aka.join(", "))+'</p>' : '')+'</div>'+
     '<div class="tabs" role="tablist" aria-label="Level">'+LV.map(function(L){ return '<button role="tab" data-lv="'+L[0]+'" aria-selected="'+(L[0]===lv)+'">'+L[1]+'</button>'; }).join("")+'</div><div class="small muted" id="lvhint">'+LV.filter(function(L){ return L[0]===lv; })[0][2]+'</div><div class="prose" id="lvbody">'+ICA.blocks(e.levels[lv])+'</div><div class="meta">';
-  if (terms.length) h += '<div><b>Key terms</b><div class="row" style="margin-top:6px">'+terms.map(function(t){ return '<button class="chip" data-term="'+t.id+'" style="border:0;cursor:pointer">'+esc(t.term)+'</button>'; }).join("")+'</div></div>';
+  if (terms.length) h += '<div><b>Key terms</b><div class="row" style="margin-top:6px">'+terms.map(function(t){ return '<button class="chip" data-term="'+t.id+'" style="border:0;cursor:pointer">'+ICA.md(t.term)+'</button>'; }).join("")+'</div></div>';
   if (e.related && e.related.length) h += '<div><b>Related entries</b><ul>'+e.related.filter(function(r){ return ICA.codex[r]; }).map(function(r){ return '<li><a href="#'+r+'">'+esc(ICA.codex[r].title)+'</a></li>'; }).join("")+'</ul></div>';
   if (bl.length) h += '<div><b>Learn it in Quests</b><ul>'+bl.map(function(l){ return '<li><a href="../quests/index.html#'+l.id+'">'+esc(l.title)+'</a> <span class="small muted">('+esc(unitName(l.unit))+')</span></li>'; }).join("")+'</ul></div>';
   var reads = (e.read||[]).concat([]), srcs = e.sources || [];

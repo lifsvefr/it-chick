@@ -260,7 +260,7 @@ ICA.blocks = function(list){
     if (b.warn) return '<div class="callout warn"><b class="h">Watch out</b>'+ICA.md(b.warn)+"</div>";
     if (b.key) return '<div class="callout key"><b class="h">Big idea</b>'+ICA.md(b.key)+"</div>";
     if (b.ex) return '<div class="callout ex"><b class="h">'+ICA.esc(b.label||"Example")+"</b>"+(b.mono ? "<pre>"+ICA.esc(b.ex)+"</pre>" : ICA.md(b.ex))+"</div>";
-    if (b.terms) return '<dl class="keyterms">'+b.terms.map(function(id){ var t = ICA.terms[id]; return t ? '<dt><button type="button" class="term" data-term="'+id+'">'+ICA.esc(t.term)+'</button></dt><dd>'+ICA.md(t.def)+'</dd>' : ""; }).join("")+'</dl>';
+    if (b.terms) return '<dl class="keyterms">'+b.terms.map(function(id){ var t = ICA.terms[id]; return t ? '<dt><button type="button" class="term" data-term="'+id+'">'+ICA.md(t.term)+'</button></dt><dd>'+ICA.md(t.def)+'</dd>' : ""; }).join("")+'</dl>';
     if (b.look) return '<div class="callout look"><b class="h">Look for these while you read</b><ol>'+b.look.map(function(x){ return "<li>"+ICA.md(x)+"</li>"; }).join("")+'</ol></div>';
     if (b.beyond) return '<div class="callout beyond"><b class="h">Beyond the book</b>'+ICA.md(b.beyond)+'</div>';
     if (b.fix) return '<div class="callout fix"><b class="h">Textbook check</b>'+ICA.md(b.fix)+'</div>';
@@ -314,7 +314,7 @@ ICA.showTerm = function(id){
   ICA.closePop();
   var t = ICA.terms[id]; if (!t) return;
   var p = document.createElement("div"); p.className = "pop"; p.setAttribute("role","dialog"); p.setAttribute("aria-label", t.term);
-  p.innerHTML = '<div class="spread"><span class="t">'+ICA.esc(t.term)+'</span><button class="iconbtn" data-closepop aria-label="Close">✕</button></div><div>'+ICA.md(t.def)+'</div>'+
+  p.innerHTML = '<div class="spread"><span class="t">'+ICA.md(t.term)+'</span><button class="iconbtn" data-closepop aria-label="Close">✕</button></div><div>'+ICA.md(t.def)+'</div>'+
     (t.codex && ICA.codex[t.codex] ? '<a class="btn small" href="'+ICA.base+'codex/index.html#'+t.codex+'">Open “'+ICA.esc(ICA.codex[t.codex].title)+'” in the Codex</a>' : "");
   document.body.appendChild(p);
   var c = p.querySelector("[data-closepop]"); c.focus();

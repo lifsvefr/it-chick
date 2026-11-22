@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=74">
+<link rel="stylesheet" href="../shared/style.css?v=75">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=74"></script>
+<script src="../shared/engine.js?v=75"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/theme.js?v=2"></script>
@@ -325,6 +325,7 @@ body.nofuri .stage ruby,body.nofuri .card ruby{cursor:help;text-decoration:under
 .bcue{animation:fx-cue 1.3s ease-in-out infinite}@keyframes fx-cue{50%{opacity:.4}}
 @media (max-width:340px){.bgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){.bpop,.bswap,.bbounce,.bcue{animation:none}}
+.bgroup{border:2px solid var(--line);border-radius:14px;background:var(--panel);padding:4px 10px}.bgroup>summary{display:flex;justify-content:space-between;align-items:center;gap:8px;cursor:pointer;padding:10px 2px;font-weight:700;list-style:none}.bgroup>summary::-webkit-details-marker{display:none}.bgroup>summary::before{content:"▸";margin-right:6px;transition:transform .15s}.bgroup[open]>summary::before{transform:rotate(90deg)}.bgroup>summary>span:first-child{flex:1}.bgroup .bosses{padding-bottom:10px}
 .kbtns{justify-content:center}
 .estage{gap:8px}.eline{font-size:1.5em;line-height:2;font-weight:700;min-height:1.6em}.ehid{font-size:.7em;color:var(--soft);font-weight:600}
 .ebtns{justify-content:center;flex-wrap:wrap}.btn.rec{background:var(--badTint);border-color:var(--bad);animation:fx-cue 1.1s ease-in-out infinite}
@@ -1202,8 +1203,16 @@ function bossPick(){
   var us = unitsWithQs().filter(function(u){ return ICA.bank.filter(function(q){ return q.unit === u.id; }).length >= 12; });
   var studied = function(u){ return (u.lessons || []).some(function(l){ var s = lessonsSt[l.id]; return s && (s.learn || s.done); }); };
   us.sort(function(a, b){ return (studied(b) - studied(a)) || ((mine.indexOf(b.track) > -1) - (mine.indexOf(a.track) > -1)); });
-  app.innerHTML = '<div class="stack">'+gbar("Boss Battle", false)+'<p class="small muted">Pick a unit to fight its boss. Units you’ve studied come first. '+Object.keys(bg).length+' of '+us.length+' bosses beaten.</p><div class="bosses">'+us.map(function(u){ var t = ICA.tracks[u.track] || {}, won = bg[u.id];
-    return '<button type="button" class="bosspick'+(won ? " won" : "")+'" data-boss="'+u.id+'">'+bossSVG(u, won ? "hit" : "")+'<span><b>'+esc(bossOf(u).name)+'</b><span class="small">'+esc((t.name || "")+" · Unit "+u.n)+'</span>'+(won ? '<span class="small">🏅 Beaten</span>' : '')+'</span></button>'; }).join("")+'</div></div>';
+  /* grouped by track, units in order; tracks you study (or have fought in) start open */
+  var tids = []; us.forEach(function(u){ if (tids.indexOf(u.track) < 0) tids.push(u.track); });
+  tids.sort(function(a, b){ return ((ICA.tracks[a] || {}).n || 99) - ((ICA.tracks[b] || {}).n || 99); });
+  var anyOpen = tids.some(function(tid){ return mine.indexOf(tid) > -1 || us.some(function(u){ return u.track === tid && (studied(u) || bg[u.id]); }); });
+  app.innerHTML = '<div class="stack">'+gbar("Boss Battle", false)+'<p class="small muted">Pick a unit to fight its boss. '+Object.keys(bg).length+' of '+us.length+' bosses beaten.</p>'+
+    tids.map(function(tid, ti){ var t = ICA.tracks[tid] || {}, tu = us.filter(function(u){ return u.track === tid; }).sort(function(a, b){ return a.n - b.n; }),
+        won = tu.filter(function(u){ return bg[u.id]; }).length, open = mine.indexOf(tid) > -1 || tu.some(function(u){ return studied(u) || bg[u.id]; }) || (!anyOpen && ti === 0);
+      return '<details class="bgroup"'+(open ? ' open' : '')+'><summary><span>'+(t.icon || "")+' '+esc(t.name || tid)+'</span><span class="small muted">'+won+' of '+tu.length+' beaten</span></summary><div class="bosses">'+
+        tu.map(function(u){ var w = bg[u.id];
+          return '<button type="button" class="bosspick'+(w ? " won" : "")+'" data-boss="'+u.id+'">'+bossSVG(u, w ? "hit" : "")+'<span><b>'+esc(bossOf(u).name)+'</b><span class="small">Unit '+u.n+' · '+esc(u.title)+'</span>'+(w ? '<span class="small">🏅 Beaten</span>' : studied(u) ? '<span class="small">📖 Studied</span>' : '')+'</span></button>'; }).join("")+'</div></details>'; }).join("")+'</div>';
 }
 function boss(gm, uid){
   var u = ICA.unitById[uid], qs = ICA.shuffle(ICA.bank.filter(function(q){ return q.unit === uid; })), i = 0, hp = 100, lives = 3, streak = 0, dealt = 0, right = 0, seen = 0, missed = [], name = bossOf(u).name;

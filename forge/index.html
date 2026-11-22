@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=74">
+<link rel="stylesheet" href="../shared/style.css?v=75">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=74"></script>
+<script src="../shared/engine.js?v=75"></script>
 <style>
 .kinds{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
 .kind{display:grid;gap:4px;text-align:left;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:12px;color:var(--ink)}
@@ -25,23 +25,30 @@
 .kind span{font-size:.86em;color:var(--soft)}
 .pick select{width:100%;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--panel)}
 /* the paper preview */
-.paper{background:#fff;color:#1d1511;border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);padding:28px 24px;font-family:var(--body);font-size:15px;line-height:1.5}
+.paper{background:#fff;color:#1d1511;border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);padding:28px 24px;font-family:var(--body);font-size:15px;line-height:1.7}
 .paper h1{font-size:24px;color:#1d1511;margin-bottom:2px}
-.paper h2{font-size:18px;margin:18px 0 6px;border-bottom:1.5px solid #1d1511;padding-bottom:2px;color:#1d1511}
+.paper h2{font-size:18px;margin:24px 0 8px;border-bottom:1.5px solid #1d1511;padding-bottom:2px;color:#1d1511}
 .paper h3{font-size:15.5px;margin:12px 0 4px;color:#1d1511}
 .paper .meta{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6a5549}
-.paper p,.paper li{margin:3px 0;overflow-wrap:anywhere}
+.paper p,.paper li{margin:6px 0;overflow-wrap:anywhere}
 .paper ul,.paper ol{padding-left:22px;margin:4px 0}
 .paper code{background:#f1ebe4;color:#1d1511}
-.paper .q{font-weight:700;margin-top:12px}
+.paper .q{font-weight:700;margin-top:18px}
 .paper .letters{list-style:none;padding-left:4px}
-.paper .lines{height:6.4em;background-image:linear-gradient(#bbb 1px,transparent 1px);background-size:100% 1.6em;margin:4px 0 10px}
+.paper .lines{height:10em;background-image:linear-gradient(transparent calc(2em - 1px),#aaa calc(2em - 1px));background-size:100% 2em;margin:6px 0 12px}
+.paper .who{display:flex;gap:18px;align-items:flex-end;margin:14px 0 6px;font-size:14px}
+.paper .who span{display:flex;align-items:flex-end;gap:6px;white-space:nowrap}
+.paper .who i{display:inline-block;border-bottom:1.5px solid #1d1511;height:1.9em}
+.paper .who .nm{flex:1}.paper .who .nm i{flex:1}.paper .who .dt i{width:9em}
+.paper .terms{font-size:12.5px;line-height:1.35}.paper .terms dd{margin:0 0 5px}
+.paper .ctable{margin:4px 0 12px;font-size:12.5px;line-height:1.3;width:auto;max-width:100%}.paper .ctable th,.paper .ctable td{padding:2px 8px}.paper .ctable th{background:#f1ebe4}.paper .ctable rt{font-size:.6em}
+.paper .say,.paper .sayb,.paper [data-say]{display:none!important}
 .paper .answers{border-top:2px dashed #1d1511;margin-top:22px;padding-top:6px}
 .paper .two{columns:2;column-gap:22px}
 .paper .two > *{break-inside:avoid}
 .paper dt{font-weight:700}
 .paper dd{margin:0 0 6px}
-.paper .box{border:1.5px solid #1d1511;border-radius:6px;padding:8px 10px;margin:8px 0}
+.paper .box{border:1.5px solid #1d1511;border-radius:6px;padding:10px 12px;margin:10px 0}
 .paper .box.mine{border-style:dashed;font-family:inherit;white-space:normal}
 .paper .seg{text-decoration:underline}
 .paper .seg sup{font-weight:700}
@@ -57,6 +64,7 @@
 @media (max-width:560px){.paper{padding:18px 14px}.paper .two{columns:1}}
 @media print{
   @page{margin:16mm 14mm}
+  .paper .ctable,.paper tr{break-inside:avoid}
   body{background:#fff}
   .topbar,.noprint,.printbar,.report{display:none!important}
   .wrap{max-width:none;padding:0}
@@ -100,22 +108,22 @@ function paperEx(n, ex){
     a += idx.filter(function(i){ return ex.options[i].ok; }).map(function(i){ return L[idx.indexOf(i)]; }).join(", ")+'</p><ul>'+idx.map(function(i, k){ return "<li><b>"+L[k]+" ("+(ex.options[i].ok ? "right" : "wrong")+").</b> "+md(ex.options[i].why||"")+"</li>"; }).join("")+'</ul>';
   } else if (ex.type === "sort"){
     var si = shuf(ex.items.length, ex.id);
-    q += '<p><i>Write the group for each: '+ex.buckets.map(function(b){ return "<b>"+md(b)+"</b>"; }).join(" · ")+'</i></p><ol>'+si.map(function(i){ return "<li>"+md(ex.items[i].t)+" → ____________</li>"; }).join("")+'</ol>';
+    q += '<p><i>Write the group for each: '+ex.buckets.map(function(b){ return "<b>"+md(b)+"</b>"; }).join(" · ")+'</i></p><ol>'+si.map(function(i){ return "<li>"+md(ex.items[i].t)+" → ____________________</li>"; }).join("")+'</ol>';
     a += '</p><ol>'+si.map(function(i){ return "<li><b>"+md(ex.items[i].t)+" → "+dot(md(ex.buckets[ex.items[i].b]))+"</b> "+md(ex.items[i].why||"")+"</li>"; }).join("")+'</ol>';
   } else if (ex.type === "order"){
     var oi = shuf(ex.items.length, ex.id); if (oi.every(function(v, i){ return v === i; })) oi.reverse();
-    q += '<p><i>Number the steps in order (1 = first).</i></p><ol class="letters">'+oi.map(function(i, k){ return "<li>___ <b>"+L[k]+".</b> "+md(ex.items[i].t)+"</li>"; }).join("")+'</ol>';
+    q += '<p><i>Number the steps in order (1 = first).</i></p><ol class="letters">'+oi.map(function(i, k){ return "<li>____ <b>"+L[k]+".</b> "+md(ex.items[i].t)+"</li>"; }).join("")+'</ol>';
     a += ex.items.map(function(it, i){ return L[oi.indexOf(i)]; }).join(", ")+'</p><ol>'+ex.items.map(function(it){ return "<li>"+md(it.t)+(it.why ? " — "+md(it.why) : "")+"</li>"; }).join("")+'</ol>';
   } else if (ex.type === "match"){
     var mi = shuf(ex.pairs.length, ex.id);
-    q += '<p><i>Write the matching letter.</i></p><ol>'+ex.pairs.map(function(p){ return "<li>"+md(p[0])+" → ___</li>"; }).join("")+'</ol><ol class="letters">'+mi.map(function(i, k){ return "<li><b>"+L[k]+".</b> "+md(ex.pairs[i][1])+"</li>"; }).join("")+'</ol>';
+    q += '<p><i>Write the matching letter.</i></p><ol>'+ex.pairs.map(function(p){ return "<li>"+md(p[0])+" → ______</li>"; }).join("")+'</ol><ol class="letters">'+mi.map(function(i, k){ return "<li><b>"+L[k]+".</b> "+md(ex.pairs[i][1])+"</li>"; }).join("")+'</ol>';
     a += ex.pairs.map(function(p, i){ return (i+1)+"–"+L[mi.indexOf(i)]; }).join(" · ")+'</p><ol>'+ex.pairs.map(function(p){ return "<li><b>"+md(p[0])+" → "+dot(md(p[1]))+"</b> "+md(p[2]||"")+"</li>"; }).join("")+'</ol>';
   } else if (ex.type === "spot"){
     var segs = [], txt = ex.parts.map(function(p){ if (typeof p === "string") return md(p); segs.push(p); return '<span class="seg">'+md(p.t)+'<sup>'+segs.length+'</sup></span>'; }).join("");
     q += '<p><i>Circle the number of every part that '+esc(ex.ask || "is a warning sign")+'.</i></p><div class="box">'+txt+'</div>';
     a += segs.map(function(s, i){ return s.flag ? i+1 : null; }).filter(Boolean).join(", ")+'</p><ol>'+segs.map(function(s){ return "<li><b>"+(s.flag ? "Yes: " : "Fine: ")+dot(md(s.t))+"</b> "+md(s.why||"")+"</li>"; }).join("")+'</ol>';
   } else if (ex.type === "explain"){
-    q += '<p><i>'+esc(ex.size || "Write 2–4 sentences.")+'</i></p><div class="box" style="min-height:120px"></div>';
+    q += '<p><i>'+esc(ex.size || "Write 2–4 sentences.")+'</i></p><div class="lines" style="height:12em"></div>';
     a += '</p><p><b>A model answer:</b> '+md(ex.model)+'</p><ul>'+ex.points.map(function(x){ return "<li>☐ "+md(x)+"</li>"; }).join("")+'</ul>';
   } else if (ex.type === "number"){
     q += '<p>Answer: ____________ '+esc(ex.unit||"")+'</p>';
@@ -131,7 +139,7 @@ function paperQuiz(n, qd){
 }
 
 /* ----- documents ----- */
-function head(title, sub){ return '<div class="meta">IT CHICK Academy · '+esc(sub)+'</div><h1>'+esc(title)+'</h1><p class="meta">Name ____________________ · Date ____________</p>'; }
+function head(title, sub){ return '<div class="meta">IT CHICK Academy · '+esc(sub)+'</div><h1>'+esc(title)+'</h1><div class="who"><span class="nm">Name <i></i></span><span class="dt">Date <i></i></span></div>'; }
 function bigIdeas(l){
   var out = [];
   l.learn.forEach(function(sec){
@@ -141,16 +149,20 @@ function bigIdeas(l){
   if (!out.length) out = l.goals || [];
   return out;
 }
+/* a table worth a cheat sheet: short cells (forms, patterns, shortcuts, mistakes), not paragraphs */
+function quickRef(rows){ var cells = [].concat.apply([], rows.slice(1)).map(function(c){ return String(c).replace(/\[([^\]]*)\]\{[^}]*\}/g, "$1").replace(/[*_`]/g, ""); }); var avg = cells.reduce(function(a, c){ return a + c.length; }, 0) / (cells.length || 1); return rows.length <= 14 && avg <= 34; }
+function ctable(rows){ return '<table class="ctable"><thead><tr>'+rows[0].map(function(c){ return "<th>"+md(String(c))+"</th>"; }).join("")+'</tr></thead><tbody>'+rows.slice(1).map(function(r){ return "<tr>"+r.map(function(c){ return "<td>"+md(String(c))+"</td>"; }).join("")+"</tr>"; }).join("")+'</tbody></table>'; }
 function docCheat(u){
   var t = ICA.tracks[u.track], h = head("Unit "+u.n+": "+u.title, t.name+" · cheat sheet");
   if (u.goals) h += '<h2>By the end you can</h2><ul>'+u.goals.map(function(g){ return "<li>"+md(g)+"</li>"; }).join("")+'</ul>';
   u.lessons.forEach(function(l){
     h += '<h2>'+l.n+'. '+esc(l.title)+'</h2>';
-    if (l.read && l.read.length) h += '<p><b>Read:</b> '+l.read.map(readWhere).join("; ")+'</p>';
     h += '<ul>'+bigIdeas(l).map(function(x){ return "<li>"+md(x)+"</li>"; }).join("")+'</ul>';
+    l.learn.forEach(function(sec){ (sec.body || []).forEach(function(b){ if (b && b.table && b.table.length > 1 && quickRef(b.table)) h += '<h3>'+md(sec.h || "")+'</h3>'+ctable(b.table); }); });
   });
   var terms = Object.keys(ICA.terms).map(function(k){ return ICA.terms[k]; }).filter(function(x){ return x.unit === u.id; }).sort(function(a, b){ return a.term.toLowerCase() < b.term.toLowerCase() ? -1 : 1; });
-  if (terms.length) h += '<h2>Key terms</h2><dl class="two">'+terms.map(function(x){ return "<div><dt>"+esc(x.term)+"</dt><dd>"+md(x.def)+"</dd></div>"; }).join("")+'</dl>';
+  /* key terms: the first sentence of each definition, in two tight columns (the full ones are in the Codex) */
+  if (terms.length) h += '<h2>Key terms</h2><dl class="two terms">'+terms.map(function(x){ var d = String(x.def || ""), m = d.match(/^.*?[.!?。](\s|$)/); return "<div><dt>"+md(x.term)+"</dt><dd>"+md(m ? m[0].trim() : d)+"</dd></div>"; }).join("")+'</dl><p class="meta">Full definitions: the Codex.</p>';
   return h;
 }
 function docWorksheet(l){
@@ -222,7 +234,8 @@ function home(){
   setTitle("Printer");
   var st = ICA.load(), units = ICA.units.slice().sort(function(a, b){ var am = st.tracks.indexOf(a.track) > -1 ? 0 : 1, bm = st.tracks.indexOf(b.track) > -1 ? 0 : 1; return am - bm; });
   app.innerHTML = '<div class="stack"><div><div class="eyebrow">Printer</div><h1>Printables</h1><p class="muted">Make a page to print or save as a PDF: study without a screen, or keep notes on paper.</p></div>'+
-    '<div class="card stack pick"><label class="lb" for="unit">Unit</label><select id="unit">'+units.map(function(u){ return '<option value="'+u.id+'">'+esc(ICA.tracks[u.track].name)+' · Unit '+u.n+': '+esc(u.title)+'</option>'; }).join("")+'</select>'+
+    '<div class="card stack pick"><label class="lb" for="unit">Unit</label><select id="unit">'+(function(){ var tids = []; units.forEach(function(u){ if (tids.indexOf(u.track) < 0) tids.push(u.track); });
+      return tids.map(function(tid){ return '<optgroup label="'+esc(ICA.tracks[tid].name)+'">'+units.filter(function(u){ return u.track === tid; }).sort(function(a, b){ return a.n - b.n; }).map(function(u){ return '<option value="'+u.id+'">Unit '+u.n+': '+esc(u.title)+'</option>'; }).join("")+'</optgroup>'; }).join(""); })()+'</select>'+
     '<label class="lb" for="lesson">Lesson (for worksheets, quizzes and notes)</label><select id="lesson"></select></div>'+
     '<div class="kinds">'+KINDS.map(function(k){ return '<button class="kind" data-kind="'+k[0]+'"><b>'+k[1]+'</b><span>'+k[2]+'</span></button>'; }).join("")+'</div></div>';
   var us = document.getElementById("unit"), ls = document.getElementById("lesson");
@@ -238,7 +251,7 @@ function show(kind, uid, lid){
   else if (kind === "quiz"){ html = docQuiz(l, u); name = "Quiz"; }
   else { if (!l) l = u.lessons[0]; html = kind === "worksheet" ? docWorksheet(l) : docNotes(l); name = kind === "worksheet" ? "Worksheet" : "Notes pages"; }
   setTitle(name);
-  app.innerHTML = '<div class="stack"><div class="noprint row"><button class="btn" data-back>← All printables</button></div><article class="paper">'+html+'</article><div class="printbar noprint"><button class="btn primary" data-print>🖨️ Print or save as PDF</button></div><p class="small muted noprint">Tip: in the print window, choose “Save as PDF” to keep a copy. If nothing opens, use your browser’s menu → Print.</p></div>';
+  app.innerHTML = '<div class="stack"><div class="noprint row"><button class="btn" data-back>← All printables</button></div><article class="paper" data-nosay>'+html+'</article><div class="printbar noprint"><button class="btn primary" data-print>🖨️ Print or save as PDF</button></div><p class="small muted noprint">Tip: in the print window, choose “Save as PDF” to keep a copy. If nothing opens, use your browser’s menu → Print.</p></div>';
   window.scrollTo(0, 0);
 }
 app.addEventListener("click", function(e){
