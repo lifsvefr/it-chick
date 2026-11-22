@@ -1,0 +1,1 @@
+ICA_READER.addChapter("wlsf", 42, [{"n": "42", "title": "Avoiding Confirmation Bias In Searches", "goals": "<p class=\"by\">Part: Field Guide (Unfinished Articles)</p>", "html": "<p>The words you use can predispose you to certain results.</p>", "src": "https://pressbooks.pub/webliteracy/"}]);

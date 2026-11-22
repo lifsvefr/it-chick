@@ -310,7 +310,7 @@ ICA.addUnit({
    read:[
     {book:"doj26", where:"Part II, Chapter 2 “The Three Documents, including the National Security Strategy of Japan, and Defense-Related Expenditures” and Part IV, Chapter 3 “Promotion of Defense Equipment Transfer and Technology Cooperation”", note:"Read after this lesson: the government’s account of exactly what this lesson covers."},
     {book:"dbb", where:"Chapter 3, Section 1 “Efforts for Peace and Stability of Japan and the International Community”", note:"The Foreign Ministry’s framing of the same changes."},
-    {book:"pilmpa", where:"Chapter 13 “Collective Security and the Prohibition of the Use of Force”", note:"Background on Article 51 and collective self-defense in international law, as Unit 10 used it."}
+    {book:"pilmpa", where:"Chapter 13 “Use of Force”", note:"Background on Article 51 and collective self-defense in international law, as Unit 10 used it."}
    ]
   },
   {id:"e4u18-l3", title:"The alliance, Okinawa and the Indo-Pacific", minutes:60,
@@ -571,7 +571,7 @@ ICA.addUnit({
    },
    read:[
     {book:"dbb", where:"Chapter 2, Section 2 “Asia and Oceania” and Section 6 “Russia and Belarus, Central Asia and the Caucasus”", note:"Japan’s official positions. Read them next to the other governments’ official statements."},
-    {book:"pilmpa", where:"Chapter 15 “Law of the Sea” and Chapter 12 “Peaceful Settlement of Disputes”", note:"Background on how island and maritime disputes are argued and settled in international law."},
+    {book:"pilmpa", where:"Chapter 15 “Law of the Sea” and Chapter 12 “Peaceful Settlement of International Disputes”", note:"Background on how island and maritime disputes are argued and settled in international law."},
     {book:"eir", where:"Chapter 2 “Diplomacy” (Stephen McGlinchey)", note:"Short background on how states manage relations through talks, summits and signals."}
    ]
   },

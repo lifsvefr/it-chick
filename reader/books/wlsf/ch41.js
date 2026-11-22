@@ -1,0 +1,1 @@
+ICA_READER.addChapter("wlsf", 41, [{"n": "41", "title": "Finding Out When a Site Was Launched", "goals": "<p class=\"by\">Part: Field Guide (Unfinished Articles)</p>", "html": "<p>Use WHOIS to find out when a domain was registered. Using Wayback Machine to check when current iteration of the site was launched.</p>", "src": "https://pressbooks.pub/webliteracy/"}]);

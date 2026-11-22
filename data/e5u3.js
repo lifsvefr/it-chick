@@ -54,7 +54,7 @@ ICA.addUnit({
       "Not every word with two uses follows this rule. *Answer*, *visit* and *promise* have the same stress as noun and verb. But when a pair exists, a listener hears the stress first, so a wrong stress can make people pause and re-think what you said.",
       {h:"Compounds and phrases"},
       "A **compound** is two words that join to make one meaning. In most compounds, the first part is stressed. A *greenhouse* is a glass building for plants. A *green house* is any house painted green. A *HOT dog* is a food, but a *hot DOG* is a dog that feels hot.",
-      {ex:"We grow tomatoes in the greenhouse.   (compound: GREENhouse)\nThey live in the green house on the corner.   (adjective + noun: green HOUSE)\n\nGA: greenhouse /ˈgrinˌhaʊs/ · SSBE /ˈgriːnhaʊs/\nA green house is two stressed words: /ˈgrin ˈhaʊs/ in GA.", label:"Hear the pair", mono:true, listen:"e5u3-l1-a3"},
+      {ex:"We grow tomatoes in the greenhouse.   (compound: GREENhouse)\nMy friends live in the green house on the corner.   (adjective + noun: green HOUSE)\n\nGA: greenhouse /ˈgrinˌhaʊs/ · SSBE /ˈgriːnhaʊs/\nA green house is two stressed words: /ˈgrin ˈhaʊs/ in GA.", label:"Hear the pair", mono:true, listen:"e5u3-l1-a3"},
       "In a phrase of adjective + noun, the noun usually keeps the main stress. In a compound, the first word does. This is one reason that *a BLACKbird* (a kind of bird) is different from *a black BIRD* (any bird that is black)."
     ]},
     {h:"Suffixes that move the stress", body:[
@@ -185,7 +185,7 @@ ICA.addUnit({
     {h:"Choosing the stress: neutral and contrastive", body:[
       "In a neutral sentence, the **last content word** usually receives the strongest stress. *I want to go to the STORE.* You can say this out of the blue, and it sounds normal.",
       "But a speaker can move the strongest stress to a different word to show the contrast. This is called **contrastive stress**. The word that carries it is the one that differs from what the listener expected.",
-      {ex:"SHE bought a red car.   (not her brother)\nShe BOUGHT a red car.   (she did not borrow it)\nShe bought a RED car.   (not a blue one)\nShe bought a red CAR.   (not a red bike)", label:"The same words, four meanings", listen:"e5u3-l2-a3"},
+      {ex:"SHE bought a red car — not her brother.\nShe BOUGHT a red car — she didn’t borrow it.\nShe bought a RED car — not a blue one.\nShe bought a red CAR — not a red bike.", label:"The same words, four meanings", listen:"e5u3-l2-a3"},
       "A good teacher can show that the words stay the same and the stress changes the meaning. This is also why simple written English sometimes needs extra words: in writing we cannot hear which word is stressed, so we use italics, capitals or a rephrased sentence.",
       {tip:"To find the right stress, ask: “What is the question this sentence answers?” The new part is the answer, and it takes the strongest stress."},
       {h:"Practice ideas"},

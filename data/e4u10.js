@@ -11,7 +11,7 @@ ICA.addUnit({
     "Trace international criminal justice from Nuremberg and Tokyo to the ICC and hybrid courts, and weigh the critiques from TWAIL, feminist and other scholars"
   ],
   read:[
-    {book:"pilmpa", where:"Chapter 6 “Sources of International Law”, Chapter 13 “Collective Security and the Prohibition of the Use of Force”, Chapter 15 “Law of the Sea” and Chapter 22 “International Criminal Law”", note:"An open-access, multi-perspective textbook written by scholars from many regions. Read the matching chapter after each lesson; Chapter 3 “Approaches” adds the critical theories of Lesson 5."},
+    {book:"pilmpa", where:"Chapter 6 “Sources of International Law”, Chapter 13 “Use of Force”, Chapter 15 “Law of the Sea” and Chapter 22 “International Criminal Law”", note:"An open-access, multi-perspective textbook written by scholars from many regions. Read the matching chapter after each lesson; Chapter 3 “Approaches” adds the critical theories of Lesson 5."},
     {book:"eir", where:"Chapter 5 “International Law” (Knut Traisbach)", note:"The short primer chapter. Reread it first if the basics feel rusty."},
     {book:"ospol", where:"Chapter 15, section 15.2 “International Law”", note:"A gentle refresher on treaties, custom and the courts."}
   ],
@@ -193,7 +193,7 @@ ICA.addUnit({
     {h:"Legitimacy and transnational legal process", body:[
       "A third family asks why rules feel binding. Thomas Franck, in *The Power of Legitimacy Among Nations* (1990), argued that rules exert a [[compliance-pull|compliance pull]] in proportion to their **legitimacy**. For Franck, legitimacy has four parts: determinacy (clarity), symbolic validation (rituals and signals of authority), coherence (consistency with other rules) and adherence (being made by accepted procedures).",
       "Harold Koh, in “Why Do Nations Obey International Law?” (*Yale Law Journal*, 1997), proposed [[transnational-legal-process|transnational legal process]] (see {{harold-koh}}). Obedience grows through a repeated cycle:",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="60" y="12" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="38" text-anchor="middle">1 Interaction</text><text class="s" x="170" y="58" text-anchor="middle">states, NGOs, courts meet</text><rect class="d-gold" x="60" y="106" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="132" text-anchor="middle">2 Interpretation</text><text class="s" x="170" y="152" text-anchor="middle">a norm’s meaning is stated</text><rect class="d-sage" x="60" y="200" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="226" text-anchor="middle">3 Internalization</text><text class="s" x="170" y="246" text-anchor="middle">into law, politics, habit</text><path class="d-ink" d="M170,74 V102" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M170,168 V196" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M280,231 H318 V43 H284" fill="none" stroke-width="2" marker-end="url(#ah2)"/><text class="s" x="326" y="140" text-anchor="middle">repeat</text><text class="s" x="170" y="290" text-anchor="middle">Each round makes the norm more</text><text class="s" x="170" y="308" text-anchor="middle">part of how the state works (Koh 1997)</text></svg>', alt:"Three boxes stacked vertically with arrows downward: 1 interaction (states, NGOs and courts meet), 2 interpretation (a norm’s meaning is stated), 3 internalization (into law, politics and habit). An arrow loops from the bottom back to the top, labeled repeat.", cap:"Koh’s cycle: compliance is learned through repeated contact, not only calculated."},
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="42" y="12" width="220" height="62" rx="10" stroke-width="2"/><text x="152" y="38" text-anchor="middle">1 Interaction</text><text class="s" x="152" y="58" text-anchor="middle">states, NGOs, courts meet</text><rect class="d-gold" x="42" y="106" width="220" height="62" rx="10" stroke-width="2"/><text x="152" y="132" text-anchor="middle">2 Interpretation</text><text class="s" x="152" y="152" text-anchor="middle">a norm’s meaning is stated</text><rect class="d-sage" x="42" y="200" width="220" height="62" rx="10" stroke-width="2"/><text x="152" y="226" text-anchor="middle">3 Internalization</text><text class="s" x="152" y="246" text-anchor="middle">into law, politics, habit</text><path class="d-ink" d="M152,74 V102" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M152,168 V196" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M262,231 H290 V43 H266" fill="none" stroke-width="2" marker-end="url(#ah2)"/><text class="s" x="296" y="140">repeat</text><text class="s" x="170" y="290" text-anchor="middle">Each round makes the norm more</text><text class="s" x="170" y="308" text-anchor="middle">part of how the state works (Koh 1997)</text></svg>', alt:"Three boxes stacked vertically with arrows downward: 1 interaction (states, NGOs and courts meet), 2 interpretation (a norm’s meaning is stated), 3 internalization (into law, politics and habit). An arrow loops from the bottom back to the top, labeled repeat.", cap:"Koh’s cycle: compliance is learned through repeated contact, not only calculated."},
       "Internalization can be **social** (the public accepts the norm), **political** (leaders adopt it) or **legal** (courts and statutes build it in). This fits {{constructivism|constructivist}} accounts of norms (see {{norm-dynamics}}). Jutta Brunnée and Stephen Toope’s *Legitimacy and Legality in International Law* (2010) developed a related “interactional” account. In their view, law binds when it meets criteria of legality and is sustained by a shared practice."
     ]},
     {h:"The skeptics: rational choice", body:[
@@ -296,7 +296,7 @@ ICA.addUnit({
     proof:"A four-theory analysis of one judgment, a depth judgment on one treaty, and a seminar paragraph with a counter-argument."
    },
    read:[
-    {book:"pilmpa", where:"Chapter 5 “International and Domestic Law” and Chapter 12 “Peaceful Settlement of Disputes”", note:"How international rules enter domestic legal systems, and how disputes are settled: the practical side of compliance."},
+    {book:"pilmpa", where:"Chapter 5 “International Law and Domestic Law” and Chapter 12 “Peaceful Settlement of International Disputes”", note:"How international rules enter domestic legal systems, and how disputes are settled: the practical side of compliance."},
     {book:"eirt", where:"Chapter 2 “Liberalism” and Chapter 4 “Constructivism”", note:"The IR theories behind the institutionalist and norm-based explanations."}
    ]
   },
@@ -442,7 +442,7 @@ ICA.addUnit({
     proof:"Notes on one Article 51 letter, a neutral position map of one case, and a seminar paragraph with a counter-argument."
    },
    read:[
-    {book:"pilmpa", where:"Chapter 13 “Collective Security and the Prohibition of the Use of Force”", note:"Read it after this lesson: a fuller treatment of the Charter system and its exceptions."},
+    {book:"pilmpa", where:"Chapter 13 “Use of Force”", note:"Read it after this lesson: a fuller treatment of the Charter system and its exceptions."},
     {book:"eir", where:"Chapter 11 “Protecting People” (Alex J. Bellamy)", note:"The R2P background to the humanitarian intervention debate."}
    ]
   },
@@ -576,7 +576,7 @@ ICA.addUnit({
    },
    read:[
     {book:"pilmpa", where:"Chapter 15 “Law of the Sea”", note:"Read it after this lesson: the zones, navigation rights and dispute settlement in more depth."},
-    {book:"pilmpa", where:"Chapter 12 “Peaceful Settlement of Disputes”", note:"How the ICJ, ITLOS and arbitral tribunals get jurisdiction, with cases."}
+    {book:"pilmpa", where:"Chapter 12 “Peaceful Settlement of International Disputes”", note:"How the ICJ, ITLOS and arbitral tribunals get jurisdiction, with cases."}
    ]
   },
   /* ===================== LESSON 5 ===================== */

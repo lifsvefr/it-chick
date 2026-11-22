@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=91">
+<link rel="stylesheet" href="../shared/style.css?v=92">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=91"></script>
+<script src="../shared/engine.js?v=92"></script>
 <style>
 /* The built-in reader: openly licensed books, reformatted for easy reading. One section per page. */
 .rd{max-width:40em;margin:0 auto;font-size:calc(1.08rem * var(--rz,1));line-height:1.7}
@@ -56,6 +56,9 @@
 .rd .ans{margin:.6em 0 0;background:none;padding:6px 10px}
 .rd .note.ex{border-left-color:var(--gold)}
 .rd .embed a{font-weight:700}
+.rd pre code{background:none;padding:0;border-radius:0;font-size:1em}
+.rd h4{font-size:1em;margin:1.3em 0 .3em;text-wrap:balance}
+.rd .cap{font-size:.86em;color:var(--soft);line-height:1.5}
 .rd .fn{color:var(--soft)}
 .rd .by{font-weight:700;color:var(--soft);margin:.2em 0 1.4em}
 .rd h2.sub{font-family:var(--display);font-size:1.3em;margin:1.8em 0 .4em;text-wrap:balance;scroll-margin-top:80px}
@@ -78,6 +81,7 @@
   .chsec{margin-top:1.4em} .chsec h2{break-after:avoid}
   .rd figure{background:none!important;border:0!important;padding:0!important;box-shadow:none!important}
   .credit{color:#333}
+  .rd pre{white-space:pre-wrap;break-inside:avoid;background:#f3f3f3!important;font-size:9pt}
 }
 </style>
 </head>
@@ -97,7 +101,7 @@ function applySize(){ document.documentElement.style.setProperty("--rz", size())
 function backLink(){ var from = null; try { from = sessionStorage.getItem("itchick-reader-from"); } catch(e){} var l = from && ICA.lessons[from];
   return l ? '<a class="back small" href="../quests/index.html#'+esc(l.id)+'">← Back to “'+esc(l.title)+'”</a>' : '<a class="back small" href="#">← All books</a>'; }
 function credit(b, s){
-  return '<p class="credit">From <a href="'+esc(b.home)+'" target="_blank" rel="noopener"><i>'+esc(b.title)+'</i></a> by '+esc(b.by)+', under the <a href="'+esc(b.licUrl)+'" target="_blank" rel="noopener">'+esc(b.lic)+'</a> licence. '+esc(b.changes)+(s ? ' <a href="'+esc(s.src)+'" target="_blank" rel="noopener">Read this page on the original site ↗</a>' : '')+'</p>';
+  return '<p class="credit">From <a href="'+esc(b.home)+'" target="_blank" rel="noopener"><i>'+esc(b.title)+'</i></a> by '+esc(b.by)+', under the <a href="'+esc(b.licUrl)+'" target="_blank" rel="noopener">'+esc(b.lic)+'</a> license. '+esc(b.changes)+(s ? ' <a href="'+esc(s.src)+'" target="_blank" rel="noopener">Read this page on the original site ↗</a>' : '')+'</p>';
 }
 function shelf(){
   setTitle("Reader");
@@ -105,7 +109,7 @@ function shelf(){
   Promise.all(ids.map(book)).then(function(bs){
     app.innerHTML = '<div class="stack"><div><div class="eyebrow">Reader</div><h1>Books you can read here</h1><p class="muted">These are free, openly licensed textbooks, reformatted so they’re easy to read on any screen. Lessons link straight to the right section.</p></div>'+
       '<div class="stack">'+bs.map(function(b){ return '<a class="tile" href="#'+esc(b.id)+'"><span class="ic" aria-hidden="true">📖</span><span class="tx"><span class="tt">'+esc(b.title)+'</span><span class="small muted">'+esc(b.by)+' · '+b.toc.length+' chapters</span></span></a>'; }).join("")+'</div>'+
-      '<p class="small muted">Other books in the course are linked from each lesson’s reading card. Some can’t be copied here because of their licence, so the card links to the right page on the publisher’s site instead.</p></div>';
+      '<p class="small muted">Other books in the course are linked from each lesson’s reading card. Some can’t be copied here because of their license, so the card links to the right page on the publisher’s site instead.</p></div>';
   });
 }
 function contents(id){

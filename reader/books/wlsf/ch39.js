@@ -1,0 +1,1 @@
+ICA_READER.addChapter("wlsf", 39, [{"n": "39", "title": "Unfinished Articles", "goals": "<p class=\"by\">Part: Field Guide (Unfinished Articles)</p>", "html": "<p>This section is for articles we have sketched out but not fully written yet.</p>", "src": "https://pressbooks.pub/webliteracy/"}]);
