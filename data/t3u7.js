@@ -1,7 +1,7 @@
 /* Track 3 · Unit 8 · R basics */
 ICA.addUnit({
   id:"t3u7", track:"t3", n:8, title:"R basics", icon:"🧮",
-  blurb:"R is a free language made for working with data. Learn the ways to run it (including right here in the Data Lab), store values in objects and vectors, call functions, build data frames, read a CSV file, pick rows and count, then summarize, compare groups, draw base-R charts and fit a first straight-line model.",
+  blurb:"R is a free language made for working with data. Learn the ways to run it, including right here in the Data Lab. Store values in objects and vectors, call functions, build data frames, and read a CSV file. Pick rows and count, then summarize, compare groups, draw base-R charts and fit a first straight-line model.",
   goals:[
     "Say what R, RStudio, Posit Cloud and webR are, and run R code in the Data Lab, on a computer, or in a browser",
     "Calculate, store values in objects with `<-`, build vectors with `c()`, call functions with named arguments, and read R’s most common error messages",
@@ -16,7 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t3u7-l1", title:"Meet R, and where to run it", minutes:50,
-   hook:{q:"You type `2 + 3` into R and press Enter. What does R show?", options:["5","[1] 5","2 + 3 = 5","Nothing until you save the file"], answer:1, reveal:"R shows `[1] 5`. The answer is 5; the `[1]` in front is R saying “this line starts with item number 1”. R treats almost every result as a sequence of values (even a single number), and those bracketed numbers help you find your place when an answer runs over several lines. This lesson starts there: what R is, and the different places you can type R code, including this app’s Data Lab."},
+   hook:{q:"You type `2 + 3` into R and press Enter. What does R show?", options:["5","[1] 5","2 + 3 = 5","Nothing until you save the file"], answer:1, reveal:"R shows `[1] 5`. The answer is 5. The `[1]` in front is R saying “this line starts with item number 1”. R treats almost every result as a sequence of values (even a single number). Those bracketed numbers help you find your place when an answer runs over several lines. This lesson starts there. It explains what R is, and the different places you can type R code, including this app’s Data Lab."},
    goals:[
      "Say what R is, what “base R” and packages are, and why people analyze data with code",
      "Tell apart R itself, RStudio, Posit Cloud and webR, and say where your code runs with each",
@@ -27,8 +27,8 @@ ICA.addUnit({
     {h:"What R is", body:[
       {lead:"R is a free programming language, and the program that runs it, built especially for statistics, data and charts."},
       "A **programming language** is a precise way of writing instructions for a computer. Most languages are general-purpose; [[r-language|R]] was designed by statisticians for working with data. Its everyday words are things like `mean()`, `table()`, `hist()` and `lm()`, so a short line of R often does what would take many clicks in a spreadsheet.",
-      "The name means two things at once: the **language** you write, and the **software** that reads it and carries it out. R was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, building on an older statistics language called S. Version 1.0.0 came out in February 2000. Today a volunteer group, the **R Core Team**, looks after it, and it is free and open-source software (licensed under the GNU GPL): anyone can download it, use it for any purpose, and read its source code.",
-      "When people say **[[base-r|base R]]** they mean R as it arrives when you install it, with a set of standard packages already included (for statistics, charts and reading files). Everything in this unit is base R. Thousands of extra **[[r-package|packages]]**, made by people all over the world, add more functions. They live on **[[cran|CRAN]]**, the Comprehensive R Archive Network, the same place you download R itself. Unit 9 uses one famous family of packages, the **[[tidyverse-term|tidyverse]]**.",
+      "The name means two things at once: the **language** you write, and the **software** that reads it and carries it out. R was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand. It builds on an older statistics language called S. Version 1.0.0 came out in February 2000. Today a volunteer group, the **R Core Team**, looks after it. It is free and open-source software (licensed under the GNU GPL). Anyone can download it, use it for any purpose, and read its source code.",
+      "When people say **[[base-r|base R]]** they mean R as it arrives when you install it. It comes with a set of standard packages already included, for statistics, charts and reading files. Everything in this unit is base R. Thousands of extra **[[r-package|packages]]**, made by people all over the world, add more functions. They live on **[[cran|CRAN]]**, the Comprehensive R Archive Network. This is the same place you download R itself. Unit 9 uses one famous family of packages, the **[[tidyverse-term|tidyverse]]**.",
       {table:[
         ["Word","What it means"],
         ["R","The language and the program that runs it"],
@@ -40,7 +40,7 @@ ICA.addUnit({
     ]},
     {h:"Why use code instead of clicking?", body:[
       "If you have used a spreadsheet (Track 1, Unit 9), you already know you can sort, filter and chart data by pointing and clicking. So why type code?",
-      "The big reason is **repeatability**. In a spreadsheet, the steps you took (which column you sorted, which rows you deleted) usually leave no record. In R, the steps *are* the record. Save them in a file called a **[[r-script|script]]**, and you, a colleague or a reviewer can run the whole analysis again, read every step, and spot mistakes. Data Carpentry’s R lesson makes this point first: if you collect more data next month, you don’t have to remember which buttons you clicked, you just run the script again.",
+      "The big reason is **repeatability**. In a spreadsheet, the steps you took usually leave no record. For example, you may not record which column you sorted or which rows you deleted. In R, the steps *are* the record. Save them in a file called a **[[r-script|script]]**. Then you, a colleague or a reviewer can run the whole analysis again, read every step, and spot mistakes. Data Carpentry’s R lesson makes this point first. If you collect more data next month, you don’t have to remember which buttons you clicked. You just run the script again.",
       {table:[
         ["","Spreadsheet","R script"],
         ["Steps you took","Mostly invisible","Written down, line by line"],
@@ -60,7 +60,7 @@ ICA.addUnit({
         ["**Posit Cloud**","Posit’s servers, through your browser","No installing; school computers and Chromebooks"],
         ["**webR**, in this app’s **Data Lab**","Inside your browser, on your device","Phones and tablets; practice with a checker"]
       ]},
-      "**[[rstudio|RStudio]]** is an **[[ide|IDE]]** (integrated development environment): a program that wraps R in a friendlier window, with an editor for scripts, a list of your objects, a file browser, a chart viewer and help pages. It is free, made by a company called **Posit** (which was itself called RStudio until 2022). RStudio needs R: you install R first, then RStudio, and RStudio starts R for you in the background.",
+      "**[[rstudio|RStudio]]** is an **[[ide|IDE]]** (integrated development environment). It is a program that wraps R in a friendlier window. The window has an editor for scripts, a list of your objects, a file browser, a chart viewer and help pages. It is free, made by a company called **Posit** (which was itself called RStudio until 2022). RStudio needs R. You install R first, then RStudio, and RStudio starts R for you in the background.",
       "**[[posit-cloud|Posit Cloud]]** runs RStudio on Posit’s computers. You sign in with a web browser and get the same RStudio window, with nothing to install.",
       "**[[webr|webR]]** is a version of R rebuilt in **[[webassembly|WebAssembly]]**, a format that lets programs run inside a web page. The R code runs on your own device, inside the browser, without a server. This app’s **Data Lab** uses webR to run base R 4.6.",
       {fig:'<svg viewBox="0 0 340 480"><defs><marker id="t3u7a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">1. RStudio Desktop</text><rect class="d-panel" x="10" y="30" width="320" height="104" rx="10" stroke-width="1.5"/><text class="s" x="22" y="50">your computer</text><rect class="d-lup" x="24" y="60" width="130" height="58" rx="8" stroke-width="2"/><text x="89" y="86" text-anchor="middle">RStudio</text><text class="s" x="89" y="104" text-anchor="middle">the window</text><rect class="d-gold" x="190" y="60" width="124" height="58" rx="8" stroke-width="2"/><text x="252" y="86" text-anchor="middle">R</text><text class="s" x="252" y="104" text-anchor="middle">runs the code</text><path class="d-ink" d="M156,89 L186,89" stroke-width="2" marker-end="url(#t3u7a1)"/><text x="10" y="168">2. Posit Cloud</text><rect class="d-panel" x="10" y="178" width="120" height="104" rx="10" stroke-width="1.5"/><text class="s" x="20" y="198">your device</text><rect class="d-lup" x="22" y="210" width="96" height="58" rx="8" stroke-width="2"/><text x="70" y="236" text-anchor="middle">browser</text><text class="s" x="70" y="254" text-anchor="middle">shows RStudio</text><rect class="d-panel" x="170" y="178" width="160" height="104" rx="10" stroke-width="1.5"/><text class="s" x="180" y="198">Posit’s servers</text><rect class="d-gold" x="182" y="210" width="136" height="58" rx="8" stroke-width="2"/><text x="250" y="236" text-anchor="middle">RStudio + R</text><text class="s" x="250" y="254" text-anchor="middle">run the code</text><path class="d-ink" d="M120,228 L178,228" stroke-width="2" marker-end="url(#t3u7a1)"/><path class="d-ink" d="M180,252 L122,252" stroke-width="2" marker-end="url(#t3u7a1)"/><text class="s" x="150" y="220" text-anchor="middle">internet</text><text x="10" y="316">3. Data Lab (webR)</text><rect class="d-panel" x="10" y="326" width="320" height="104" rx="10" stroke-width="1.5"/><text class="s" x="22" y="346">your device, inside one web page</text><rect class="d-lup" x="24" y="356" width="130" height="58" rx="8" stroke-width="2"/><text x="89" y="382" text-anchor="middle">editor</text><text class="s" x="89" y="400" text-anchor="middle">you type here</text><rect class="d-sage" x="190" y="356" width="124" height="58" rx="8" stroke-width="2"/><text x="252" y="382" text-anchor="middle">webR</text><text class="s" x="252" y="400" text-anchor="middle">R in WebAssembly</text><path class="d-ink" d="M156,385 L186,385" stroke-width="2" marker-end="url(#t3u7a1)"/><text class="s" x="170" y="452" text-anchor="middle">Same R language in all three;</text><text class="s" x="170" y="468" text-anchor="middle">only the place it runs changes.</text></svg>', alt:"Three panels. RStudio Desktop: on your computer, RStudio sends code to R. Posit Cloud: your browser shows RStudio, which runs with R on Posit’s servers, over the internet. Data Lab: inside one web page on your device, the editor sends code to webR.", cap:"The same R code can run on your computer, on Posit’s servers, or inside your browser."},
@@ -89,17 +89,17 @@ ICA.addUnit({
         "Choose **New Project → New RStudio Project**. After a short wait, the familiar RStudio window opens.",
         "Give the project a name: open its **Settings** (the gear icon at the top of the project) and edit the name under **Info**."
       ]},
-      "**The free plan has limits.** Posit Cloud counts **compute hours**. Its documentation gives the formula: (GB of memory + number of processors) ÷ 2 × hours. A new project gets 1 GB of memory and 1 processor by default, so one hour with a project open uses about one compute hour. A project you leave idle is suspended after 15 minutes, and those idle minutes still count. The free plan includes a limited number of compute hours each month, plus other limits; the exact numbers are on **posit.cloud/plans**, and they have changed over the years, so check there.",
+      "**The free plan has limits.** Posit Cloud counts **compute hours**. Its documentation gives the formula: (GB of memory + number of processors) ÷ 2 × hours. A new project gets 1 GB of memory and 1 processor by default, so one hour with a project open uses about one compute hour. A project you leave idle is suspended after 15 minutes, and those idle minutes still count. The free plan includes a limited number of compute hours each month, plus other limits. The exact numbers are on **posit.cloud/plans**. They have changed over the years, so check there.",
       {warn:"With Posit Cloud, your files are stored on Posit’s servers. That’s fine for practice data and open data. Don’t upload personal or confidential data (health records, people’s names and addresses) unless your organization has agreed it can go there. Track 4, Unit 9 covers {{anonymisation|anonymizing data}}."},
       "Posit Cloud opens in a phone’s browser, but RStudio was designed for bigger screens and a keyboard. On a phone it is cramped; on a tablet with a keyboard it works much better."
     ]},
     {h:"The Data Lab: R in this app", body:[
-      "The **Data Lab** (in **Labs**) runs base R inside the page with webR, so it works on a phone, a tablet or a computer with nothing to install, and nothing you type leaves your device. The first time you open an R challenge, it downloads R (up to 46 MB, saved for next time), which can take a while on a slow connection. A line under the buttons says when R is ready.",
+      "The **Data Lab** (in **Labs**) runs base R inside the page with webR. So it works on a phone, a tablet or a computer with nothing to install, and nothing you type leaves your device. The first time you open an R challenge, it downloads R (up to 46 MB, saved for next time). This can take a while on a slow connection. A line under the buttons says when R is ready.",
       "Each R challenge gives you a task, an editor and a row of buttons:",
       {table:[
         ["Button","What it does"],
         ["**▶ Run**","Runs your code and shows what it prints under **Output**; any chart appears under the output"],
-        ["**Check**","Runs your code and tests the objects it makes. In most challenges that read a data file, it then runs your code again on a second version of the file with different numbers, so typed-in answers don’t pass"],
+        ["**Check**","Runs your code and tests the objects it makes. In most challenges that read a data file, it then runs your code again on a second version of the file with different numbers. So typed-in answers don’t pass"],
         ["**Hint**","Shows the next hint, one at a time"],
         ["**Show an answer**","Shows one correct answer and why it works"],
         ["**Start again**","Puts back the challenge’s starting code"]
@@ -148,7 +148,7 @@ ICA.addUnit({
       {t:"Load ggplot2 with `library(ggplot2)`", why:"ggplot2 is a package that isn’t in the lab, which has base R only. Use R on a computer or Posit Cloud for it (Unit 9)."},
       {t:"Use dplyr’s `filter()`", why:"dplyr isn’t available in the lab either. Its base-R cousin `subset()` is, and Lesson 4 teaches it."}
     ]},
-    {id:"t3u7-l1-x7", type:"explain", q:"A colleague cleans and charts the same kind of survey data every month by clicking through a spreadsheet. Explain how writing the steps as an R script would help.", model:"In a spreadsheet the steps you take, such as which column you sorted or which rows you deleted, mostly leave no record. In an R script the steps are the record: every line is written down, so you, a colleague or a reviewer can read them, spot mistakes and run the whole analysis again. When next month’s data arrive, you just rerun the script instead of repeating the clicks from memory. The script also reads the raw data in without changing the original file.", points:["Says clicked steps in a spreadsheet mostly leave no record", "Says a script records every step in writing", "Explains that the script can be rerun on new data", "Mentions that others can check it, or that the raw data stay untouched"]}
+    {id:"t3u7-l1-x7", type:"explain", q:"A colleague cleans and charts the same kind of survey data every month by clicking through a spreadsheet. Explain how writing the steps as an R script would help.", model:"In a spreadsheet, the steps you take mostly leave no record. For example, you may not record which column you sorted or which rows you deleted. In an R script the steps are the record. Every line is written down, so you, a colleague or a reviewer can read them, spot mistakes and run the whole analysis again. When next month’s data arrive, you just rerun the script instead of repeating the clicks from memory. The script also reads the raw data in without changing the original file.", points:["Says clicked steps in a spreadsheet mostly leave no record", "Says a script records every step in writing", "Explains that the script can be rerun on new data", "Mentions that others can check it, or that the raw data stay untouched"]}
    ],
    apply:{intro:"Run your first R code, then (optionally) set R up on a computer or in Posit Cloud. Everything in this unit can be done in the Data Lab on a phone.", tasks:[
     {t:"Run R in the Data Lab", how:[
@@ -159,8 +159,8 @@ ICA.addUnit({
     ], write:"My R version… What `2 ^ 10` gave…"},
     {t:"Optional: install R and RStudio on a computer", how:{
       win:["Go to **cloud.r-project.org** (CRAN). Choose **Download R for Windows**, then **base**, then the download link for the current version (R 4.6.x).","Open the downloaded `.exe` file and accept the default choices.","Go to **posit.co/download/rstudio-desktop** and download RStudio Desktop for Windows. Open the installer and accept the defaults.","Open **RStudio** from the Start menu. The Console’s first line names your R version. Type `2 + 3` and press Enter."],
-      mac:["Go to **cloud.r-project.org** (CRAN) and choose **Download R for macOS**.","Pick the installer that matches your Mac: the **arm64** `.pkg` for Apple silicon (M-series chips) or the **x86_64** one for Intel. To check, open the Apple menu → **About This Mac** and look for **Chip** or **Processor**. The CRAN page also lists the macOS versions each installer needs.","Open the `.pkg` and follow the installer.","Go to **posit.co/download/rstudio-desktop**, download RStudio for macOS, open the `.dmg` and drag RStudio into **Applications**.","Open **RStudio** from Applications. The Console names your R version. Type `2 + 3` and press Return."],
-      chromeos:["Turn on Linux: select the time at the bottom right, then **Settings → About ChromeOS → Developers**, and next to **Linux development environment** select **Set up**. (On a school or work Chromebook this may be blocked; use Posit Cloud or the Data Lab instead.)","Open the **Terminal** app and type `sudo apt update`, then `sudo apt install r-base`. `sudo` runs a command with administrator rights, which installing software needs (Track 2, Unit 6 explains it). Type `y` if asked.","Type `R` to start R in the Terminal. Try `2 + 3`. To leave, type `q()` and answer `n` to “Save workspace image?”. This R comes from Debian and may be older than CRAN’s latest; anything from R 4.1 onwards works for this unit.","Optional: RStudio Desktop has a Linux installer (a `.deb` file) at **posit.co/download/rstudio-desktop**, which you can double-click in the Files app to install. It is built only for Intel/AMD (x86_64) processors and for particular Debian and Ubuntu versions, so on many Chromebooks (including those with ARM processors) it won’t install; then keep using R in the Terminal, Posit Cloud or the Data Lab."],
+      mac:["Go to **cloud.r-project.org** (CRAN) and choose **Download R for macOS**.","Pick the installer that matches your Mac: the **arm64** `.pkg` for Apple silicon (M-series chips) or the **x86_64** one for Intel. To check, open the Apple menu → **About This Mac** and look for **Chip** or **Processor**. The CRAN page also lists the macOS versions each installer needs.","Open the `.pkg` and follow the installer.","Go to **posit.co/download/rstudio-desktop** and download RStudio for macOS. Open the `.dmg` and drag RStudio into **Applications**.","Open **RStudio** from Applications. The Console names your R version. Type `2 + 3` and press Return."],
+      chromeos:["Turn on Linux: select the time at the bottom right, then **Settings → About ChromeOS → Developers**, and next to **Linux development environment** select **Set up**. (On a school or work Chromebook this may be blocked; use Posit Cloud or the Data Lab instead.)","Open the **Terminal** app and type `sudo apt update`, then `sudo apt install r-base`. `sudo` runs a command with administrator rights, which installing software needs (Track 2, Unit 6 explains it). Type `y` if asked.","Type `R` to start R in the Terminal. Try `2 + 3`. To leave, type `q()` and answer `n` to “Save workspace image?”. This R comes from Debian and may be older than CRAN’s latest; anything from R 4.1 onwards works for this unit.","Optional: RStudio Desktop has a Linux installer (a `.deb` file) at **posit.co/download/rstudio-desktop**. You can double-click it in the Files app to install. It is built only for Intel/AMD (x86_64) processors and for particular Debian and Ubuntu versions. So on many Chromebooks (including those with ARM processors) it won’t install. Then keep using R in the Terminal, Posit Cloud or the Data Lab."],
       phone:["There’s no official R app for iPhone or Android, and you don’t need one: use the **Data Lab** in this app.","iPhone and Android: you can also open **posit.cloud** in your browser (Safari, Chrome or another) and sign up. It works, but RStudio is cramped on a phone screen; a tablet with a keyboard is much easier."]
      }, write:"Where I set up R… The version it showed…"},
     {t:"Optional: make a Posit Cloud project", how:[
@@ -228,7 +228,7 @@ ICA.addUnit({
       {ex:"[1] \"numeric\"\n[1] \"character\"\n[1] \"logical\"\nError: non-numeric argument to binary operator", label:"R prints", mono:true},
       "A **binary operator** is just a symbol with a value on each side, like `*`. The message means “one side isn’t a number”. To turn text digits into a number, use `as.numeric(\"12.5\")`.",
       "Logical values come from questions. `5 > 3` gives `TRUE`; `\"Rain\" == \"rain\"` gives `FALSE` (text comparisons are case-sensitive). Note the **double** equals `==` for “is equal to”: a single `=` assigns. The others are `!=` (not equal), `<`, `<=`, `>` and `>=`.",
-      "There is one more special value: `NA`, which means **missing** (“not available”). An empty cell in a number column becomes `NA` when R reads a data file (in a text column it becomes an empty text `\"\"` unless you tell R otherwise), and Lesson 4 deals with both."
+      "There is one more special value: `NA`, which means **missing** (“not available”). An empty cell in a number column becomes `NA` when R reads a data file. In a text column it becomes an empty text `\"\"`, unless you tell R otherwise. Lesson 4 deals with both."
     ]},
     {h:"Vectors: many values in one object", body:[
       "A **[[r-vector|vector]]** is an ordered set of values of the same type, and it’s R’s basic building block. Make one with `c()`, for **c**ombine. Here are Mei’s step counts for one week:",
@@ -317,7 +317,7 @@ ICA.addUnit({
     ]},
     {id:"t3u7-l2-x6", type:"mcq", q:"Sione’s rainfall vector has one missing day: `rain <- c(4, 0, NA, 12, 6)`. `mean(rain)` gives `NA`. What should Sione type to get the mean of the days that were recorded?", options:[
       {t:"`mean(rain, na.rm = TRUE)`", ok:true, why:"`na.rm = TRUE` tells mean() to drop missing values first, giving (4 + 0 + 12 + 6) ÷ 4 = 5.5."},
-      {t:"`mean(rain, na = FALSE)`", why:"R reads the short name `na` as `na.rm` (it matches the start of an argument name), so this means `na.rm = FALSE`: missing values are kept and the answer is still NA. Write the full name, `na.rm = TRUE`."},
+      {t:"`mean(rain, na = FALSE)`", why:"R reads the short name `na` as `na.rm` (it matches the start of an argument name). So this means `na.rm = FALSE`: missing values are kept and the answer is still NA. Write the full name, `na.rm = TRUE`."},
       {t:"`mean(rain[rain != NA])`", why:"Comparing with NA gives NA, never TRUE, so this doesn’t pick anything useful. Use `na.rm = TRUE` (or `is.na()`, in Lesson 4)."},
       {t:"`mean(rain) - NA`", why:"Any arithmetic with NA gives NA."}
     ]},
@@ -334,7 +334,7 @@ ICA.addUnit({
     ]},
     {id:"t3u7-l2-x8", type:"explain", q:"In R, a learner runs `price <- 12.5`, `qty <- 4` and `total <- price * qty`, then `qty <- 6`, and is surprised that `total` still prints 50. Explain why, and how this differs from a spreadsheet.", model:"The arrow stores a value, not a formula. When `total <- price * qty` ran, R worked out 12.5 × 4 = 50 and stored the number 50 under the name `total`. Changing `qty` later doesn’t touch `total`, because `total` doesn’t remember how it was made. In a spreadsheet, a formula cell recalculates whenever its inputs change. In R you have to run `total <- price * qty` again, which gives 75.", points:["Says `<-` stores the result (a value), not the calculation", "Explains that changing `qty` doesn’t update `total`", "Contrasts this with spreadsheet formulas that recalculate", "Says to rerun the assignment to update it (giving 75)"]}
    ],
-   apply:{intro:"Work in the Data Lab (open any R challenge, type below or instead of its code, and press ▶ Run; Check will say “not quite”, which is fine for free practice), or in RStudio or Posit Cloud.", tasks:[
+   apply:{intro:"Work in the Data Lab: open any R challenge, type below or instead of its code, and press ▶ Run. Check will say “not quite”, which is fine for free practice. You can also work in RStudio or Posit Cloud.", tasks:[
     {t:"A week in numbers", how:[
       "Make a vector of something you count each day for a week: steps, cups of tea, minutes reading, money spent. For example `cups <- c(2, 3, 1, 4, 2, 0, 3)`.",
       "Find its `sum()`, `mean()`, `median()`, `min()` and `max()`.",
@@ -348,7 +348,7 @@ ICA.addUnit({
       "Fix each one. Write down each message in your own words."
     ], write:"Message 1 means… Message 2 means… Message 3 means…"},
     {t:"Do the Data Lab challenges", how:["In **Labs → Data Lab**, do **Store and calculate** and **A vector of scores**. Use **Hint** if you’re stuck, and press **Check** to test your answer.","Optional: do **Fix the errors** now, or after Lesson 4."]}
-   ], proof:"A vector of your own with its total, mean and a count over a threshold, three error messages explained in your words, and the first two R challenges solved."},
+   ], proof:"A vector of your own with its total, mean and a count over a threshold. Three error messages explained in your words. The first two R challenges solved."},
    read:[
      {book:"r4ds", where:"Chapter 2, “Workflow: basics” (sections “Coding basics”, “Comments”, “What’s in a name?” and “Calling functions”)"},
      {book:"dcss", where:"R for Social Scientists, “Introduction to R” (creating objects, vectors and data types, subsetting vectors, missing data)"}
@@ -384,7 +384,7 @@ ICA.addUnit({
       "Before doing anything with data, look at it. These functions work on any data frame, however big:",
       {code:['str(bakery)','dim(bakery)','names(bakery)'].join("\n"), lang:"r"},
       {ex:"'data.frame':\t5 obs. of  4 variables:\n $ item : chr  \"Bread\" \"Scone\" \"Muffin\" \"Roll\" ...\n $ price: num  3.2 1.8 2.5 0.9 1.5\n $ sold : num  40 25 32 60 18\n $ vegan: logi  TRUE FALSE FALSE TRUE TRUE\n[1] 5 4\n[1] \"item\"  \"price\" \"sold\"  \"vegan\"", label:"R prints", mono:true},
-      "`str()` (**str**ucture) is the single most useful first look. It says how many observations (rows) and variables (columns) there are, and for each column its **type** and first few values: `chr` is character (text), `num` numeric, `int` integer (whole numbers, common when reading files), `logi` logical.",
+      "`str()` (**str**ucture) is the single most useful first look. It says how many observations (rows) and variables (columns) there are. For each column it gives its **type** and first few values. `chr` is character (text). `num` is numeric. `int` is integer (whole numbers, common when reading files). `logi` is logical.",
       {table:[
         ["Function","Tells you"],
         ["`str(d)`","Rows, columns, each column’s type and first values"],
@@ -431,10 +431,10 @@ ICA.addUnit({
       {ex:"    item takings\n1  Bread     128\n3 Muffin      80\n4   Roll      54\n2  Scone      45\n5    Bun      27", label:"R prints", mono:true},
       "Notice the row names travel with their rows (1, 3, 4, 2, 5), which helps you see where each row came from.",
       {h:"Factors: categories with a fixed order"},
-      "Text columns such as `item` are plain character vectors. When a column holds a small set of categories (sizes, survey answers, regions), you can turn it into a **[[r-factor|factor]]**, which stores the allowed categories (its **levels**) in an order you choose. Tables and charts then follow that order instead of the alphabet:",
+      "Text columns such as `item` are plain character vectors. Sometimes a column holds a small set of categories (sizes, survey answers, regions). You can turn it into a **[[r-factor|factor]]**. A factor stores the allowed categories (its **levels**) in an order you choose. Tables and charts then follow that order instead of the alphabet:",
       {code:['size <- c("small", "large", "small", "medium")','table(size)','size <- factor(size, levels = c("small", "medium", "large"))','table(size)'].join("\n"), lang:"r"},
       {ex:"size\n large medium  small \n     1      1      2 \nsize\n small medium  large \n     2      1      1 ", label:"R prints", mono:true},
-      "Older R (before version 4.0) turned text into factors automatically when making data frames; R 4.0 and later keep text as text unless you ask, which avoids many surprises. Unit 9’s tidyverse prints data frames as **[[tibble|tibbles]]**, a modern take on the same idea."
+      "Older R (before version 4.0) turned text into factors automatically when making data frames. R 4.0 and later keep text as text unless you ask, which avoids many surprises. Unit 9’s tidyverse prints data frames as **[[tibble|tibbles]]**, a modern take on the same idea."
     ]}
    ],
    try:[
@@ -476,7 +476,7 @@ ICA.addUnit({
       {t:"Run `summary(d)` to spot odd minimums, maximums and NAs", why:"Summaries reveal impossible values (a negative age) and missing data before you analyze."},
       {t:"Calculate what you need, such as `mean(d$minutes)`", why:"Only once you trust the data do you start calculating."}
     ]},
-    {id:"t3u7-l3-x7", type:"explain", q:"Explain why each column of an R data frame has a single type, and what happens if one cell in a column of numbers contains a word such as `n/a`.", model:"A data frame is a set of equal-length vectors, one per column, and a vector can hold only one type. So a price column is numeric and an item column is text. If one cell in a number column contains a word, R makes the whole column the most flexible type, text, because one vector can’t mix them. Then `mean()` or arithmetic on it fails or gives NA. `str()` shows this at once: the column you expected as `num` appears as `chr`.", points:["Says a data frame is a set of equal-length column vectors", "Says a vector holds only one type", "Explains that one word turns the whole column into text", "Mentions spotting it with `str()` (or that math on it then fails)"]}
+    {id:"t3u7-l3-x7", type:"explain", q:"Explain why each column of an R data frame has a single type. Say what happens if one cell in a column of numbers contains a word such as `n/a`.", model:"A data frame is a set of equal-length vectors, one per column, and a vector can hold only one type. So a price column is numeric and an item column is text. If one cell in a number column contains a word, R makes the whole column the most flexible type, text, because one vector can’t mix them. Then `mean()` or arithmetic on it fails or gives NA. `str()` shows this at once: the column you expected as `num` appears as `chr`.", points:["Says a data frame is a set of equal-length column vectors", "Says a vector holds only one type", "Explains that one word turns the whole column into text", "Mentions spotting it with `str()` (or that math on it then fails)"]}
    ],
    apply:{intro:"Use the Data Lab (any R challenge’s editor and ▶ Run), RStudio or Posit Cloud.", tasks:[
     {t:"Build a data frame about something you know", how:[
@@ -494,7 +494,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t3u7-l4", title:"Reading a CSV, picking rows and counting", minutes:55,
-   hook:{q:"What does R give for `mean(c(TRUE, FALSE, TRUE, TRUE))`?", options:["An error: you can’t average TRUE and FALSE","0.75","TRUE, because most values are TRUE","3"], answer:1, reveal:"It gives 0.75. In arithmetic, R counts TRUE as 1 and FALSE as 0, so the mean of a TRUE/FALSE vector is the **proportion** of TRUEs (3 out of 4), and the sum is the **count** (3). Combine that with a question like `walks$km >= 4` and you can count and take shares of anything in one short line. This lesson shows how, after reading a real CSV file."},
+   hook:{q:"What does R give for `mean(c(TRUE, FALSE, TRUE, TRUE))`?", options:["An error: you can’t average TRUE and FALSE","0.75","TRUE, because most values are TRUE","3"], answer:1, reveal:"It gives 0.75. In arithmetic, R counts TRUE as 1 and FALSE as 0. So the mean of a TRUE/FALSE vector is the **proportion** of TRUEs (3 out of 4), and the sum is the **count** (3). Combine that with a question like `walks$km >= 4`. Then you can count and take shares of anything in one short line. This lesson shows how, after reading a real CSV file."},
    goals:[
      "Explain the working directory, and give `read.csv()` a path that R can find",
      "Read a CSV file and check what arrived with `str()`, `summary()` and `is.na()`",
@@ -523,7 +523,7 @@ ICA.addUnit({
       "**No file handy, or on a phone?** `read.csv()` can also read text you give it with `text =`. Copy this block into any Data Lab editor (or RStudio) and press ▶ Run, and you have the same `walks` data frame without a file:",
       {code:['walks <- read.csv(text = "id,route,km,minutes,weather','1,River,4.2,52,Sunny','2,Hill,3.5,61,Cloudy','3,Park,2.0,27,Sunny','4,River,5.1,66,Rain','5,Hill,4.8,83,Sunny','6,Park,2.5,31,Cloudy','7,River,3.8,47,Cloudy','8,Hill,2.9,49,Rain','9,Park,1.8,25,Rain','10,River,6.0,74,Sunny','11,Hill,4.1,70,Cloudy','12,Park,3.0,38,Sunny','13,River,4.5,,Rain")','nrow(walks)'].join("\n"), lang:"r", label:"R (no file needed)", cap:"Prints `[1] 13`. Everything between the quotes is read exactly like the file, line by line."},
       "Not every “CSV” uses commas. In countries that write decimals with a comma, files often use **semicolons** between values: read those with `read.csv2()`, which expects `;` and decimal commas. Tab-separated files ([[tsv|TSV]]) use `read.delim()`. If you see one column with everything squashed into it, the separator is wrong.",
-      "If R can’t find the file, it stops with `cannot open the connection` and warns `cannot open file 'Walks.csv': No such file or directory`. Check the spelling and the working directory. On Linux, in Posit Cloud and in the Data Lab, capitals count (`Walks.csv` isn’t `walks.csv`); Windows and macOS usually ignore them, but matching the name exactly keeps your script working everywhere.",
+      "If R can’t find the file, it stops with `cannot open the connection` and warns `cannot open file 'Walks.csv': No such file or directory`. Check the spelling and the working directory. On Linux, in Posit Cloud and in the Data Lab, capitals count (`Walks.csv` isn’t `walks.csv`). Windows and macOS usually ignore them. But matching the name exactly keeps your script working everywhere.",
       {lab:"dl-r-csv", t:"Practice: read survey.csv, count its rows and take a mean"}
     ]},
     {h:"Check what arrived", body:[
@@ -553,7 +553,7 @@ ICA.addUnit({
         ["`x %in% c(\"Rain\", \"Cloudy\")`","x is any one of these values"],
         ["`route == \"Hill\"`","Exactly equal (two = signs; capitals count)"]
       ]},
-      {warn:"**Missing values and [ ].** `walks[walks$minutes > 70, ]` shows the two walks over 70 minutes **plus a row of NAs**, because R can’t say whether walk 13’s missing time was over 70, so the answer for that row is NA. `subset(walks, minutes > 70)` keeps only the rows that are definitely TRUE, and so does `walks[which(walks$minutes > 70), ]`. If you see a row of NAs you didn’t expect, that’s the cause."},
+      {warn:"**Missing values and [ ].** `walks[walks$minutes > 70, ]` shows the two walks over 70 minutes **plus a row of NAs**. R can’t say whether walk 13’s missing time was over 70, so the answer for that row is NA. `subset(walks, minutes > 70)` keeps only the rows that are definitely TRUE, and so does `walks[which(walks$minutes > 70), ]`. If you see a row of NAs you didn’t expect, that’s the cause."},
       "Keep the rows you pick in a new object, such as `long <- subset(walks, km >= 4)`, and the original `walks` stays as it was.",
       {lab:"dl-r-subset", t:"Practice: keep only the people aged 30 or over"},
       "Now you know `d[condition, ]`, the fix-the-errors challenge from Lesson 2 should read easily: one of its two bugs is a missing comma.",
@@ -637,7 +637,7 @@ ICA.addUnit({
       "Try `walks[walks$minutes > 70, ]` and `subset(walks, minutes > 70)` and explain the difference."
     ], write:"Long walks… Share in the sun… My sentence about the table… Why the two lines differ…"},
     {t:"Do the Data Lab challenges", how:["In **Labs → Data Lab**, do **Read a CSV**, **Pick rows** and **Count answers** (and **Fix the errors** if you skipped it). Tap `survey.csv` above the editor to see the data first."]}
-   ], proof:"Your notes from checking walks.csv (13 rows, 5 columns, 1 NA), counts and a proportion you worked out, the NA-row difference explained, and three or four R challenges solved."},
+   ], proof:"Your notes from checking walks.csv (13 rows, 5 columns, 1 NA). Counts and a proportion you worked out. The NA-row difference explained. Three or four R challenges solved."},
    read:[
      {book:"r4ds", where:"Chapter 6, “Workflow: scripts and projects” (section “Projects”: the working directory and RStudio projects)", note:"Chapter 7, “Data import”, reads files with readr’s `read_csv()` from the tidyverse; the ideas match `read.csv()`."},
      {book:"dcss", where:"R for Social Scientists, “Before we Start” (sections “Getting set up” and “The working directory”) and “Introduction to R” (section “Missing data”)"}
@@ -645,7 +645,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t3u7-l5", title:"Summaries, groups, charts and a first model", minutes:60,
-   hook:{q:"For the walking club, `cor(km, minutes)` is 0.89. What does that tell you?", options:["Each extra km adds 0.89 minutes","The points on a scatterplot lie fairly close to a rising straight line","Walking further causes walks to take longer, 89% of the time","89% of walks were long ones"], answer:1, reveal:"It says the points lie fairly close to a rising straight line: longer walks tended to take longer. Pearson’s r measures how tightly points hug a straight line, from −1 to 1; it isn’t a rate per km, a percentage of walks, or proof of cause (Unit 5 explained why). The minutes per extra km come from a different tool, a straight-line model, which this lesson fits with `lm()` after summaries, group comparisons and charts."},
+   hook:{q:"For the walking club, `cor(km, minutes)` is 0.89. What does that tell you?", options:["Each extra km adds 0.89 minutes","The points on a scatterplot lie fairly close to a rising straight line","Walking further causes walks to take longer, 89% of the time","89% of walks were long ones"], answer:1, reveal:"It says the points lie fairly close to a rising straight line: longer walks tended to take longer. Pearson’s r measures how tightly points hug a straight line, from −1 to 1. It isn’t a rate per km, a percentage of walks, or proof of cause (Unit 5 explained why). The minutes per extra km come from a different tool, a straight-line model. This lesson fits it with `lm()` after summaries, group comparisons and charts."},
    goals:[
      "Calculate summaries with `mean()`, `median()`, `sd()`, `quantile()`, `IQR()` and `summary()`, handling `NA`",
      "Compare groups with `tapply()` and `aggregate()`, and choose a fair measure to compare",
@@ -694,7 +694,7 @@ ICA.addUnit({
         ["[[scatterplot|Scatterplot]]","`plot(x, y)`","Two numeric variables together"],
         ["Bar chart","`barplot(table(x))`","Counts of each category"]
       ]},
-      "Useful arguments: `main` (title), `xlab` and `ylab` (axis labels: include units), `col` (fill color, such as `col = \"gray\"`), `pch = 19` (solid dots) and `breaks` (histogram bins). In the boxplot, the Hill box sits far above the other two; with only four or five walks per route, though, each box is drawn from very few points, so say so. Unit 4’s {{chart-types}} helps you choose.",
+      "Useful arguments: `main` (title), `xlab` and `ylab` (axis labels: include units), `col` (fill color, such as `col = \"gray\"`), `pch = 19` (solid dots) and `breaks` (histogram bins). In the boxplot, the Hill box sits far above the other two. But there are only four or five walks per route, so each box is drawn from very few points. Say so. Unit 4’s {{chart-types}} helps you choose.",
       {tip:"To save a chart as a file from a script, wrap it: `png(\"pace.png\", width = 800, height = 600)`, then the chart code, then `dev.off()`. The image lands in the working directory."},
       {lab:"dl-r-hist", t:"Practice: a labeled histogram"}
     ]},
@@ -721,13 +721,13 @@ ICA.addUnit({
         "`coef(fit)` gives both numbers; `coef(fit)[2]` the slope alone. `predict(fit, data.frame(km = 5))` gives the line’s value at 5 km, about 70 minutes."
       ]},
       "Add the line to the scatterplot with `abline(fit)` after `plot()`. Then look at which points sit above it: all four Hill walks do. The line ignores the route, so it under-predicts hill walks. The gaps between points and line are the **[[residual|residuals]]**, and patterns in them point to something the model is missing.",
-      "`lm()` quietly left out walk 13, which has no time (`nobs(fit)` is 12). `summary(fit)` shows much more: standard errors, p-values and [[r-squared|R²]] (0.79 here). Unit 7 of this track explains those ({{linear-regression}}). For now, the slope and the causation warning are enough: a slope describes a pattern in these data; on its own it doesn’t prove that one thing causes the other.",
+      "`lm()` quietly left out walk 13, which has no time (`nobs(fit)` is 12). `summary(fit)` shows much more: standard errors, p-values and [[r-squared|R²]] (0.79 here). Unit 7 of this track explains those ({{linear-regression}}). For now, the slope and the causation warning are enough. A slope describes a pattern in these data. On its own it doesn’t prove that one thing causes the other.",
       {lab:"dl-r-lm", t:"Practice: fit lm() and store the slope"}
     ]},
     {h:"Putting it together in a script", body:[
       "Here is the whole analysis as one script, the kind of file you would save as `walks.R`. Comments, after `#`, explain *why*, as R for Data Science advises:",
       {code:['# Walking club: how long do walks take, and why?','walks <- read.csv("walks.csv")','str(walks)                 # 13 walks, 5 columns','colSums(is.na(walks))      # walk 13 has no time','','# Pace is fairer than total minutes: routes differ in length','walks$pace <- walks$minutes / walks$km','round(tapply(walks$pace, walks$route, mean, na.rm = TRUE), 1)','','boxplot(pace ~ route, data = walks,','  main = "Pace by route", ylab = "Minutes per km")','','fit <- lm(minutes ~ km, data = walks)','coef(fit)'].join("\n"), lang:"r", label:"walks.R"},
-      "Run it from top to bottom. In RStudio, R for Data Science recommends restarting R (**Session → Restart R**) and rerunning the whole script now and then: if it still works from a clean start, your script, not your memory, holds the analysis.",
+      "Run it from top to bottom. In RStudio, R for Data Science recommends restarting R (**Session → Restart R**) and rerunning the whole script now and then. If it still works from a clean start, your script, not your memory, holds the analysis.",
       {key:"Read, check, summarize, compare fairly, chart, and only then model. Write each step in a script so anyone can rerun it."},
       "Unit 9 does the same jobs with the tidyverse: dplyr’s `group_by()` and `summarize()` instead of `tapply()` ({{grouped-summaries}}), and ggplot2 for charts. Knowing base R first means you’ll understand what those tools do for you, and you can still work in the Data Lab, which has base R only."
     ]}
@@ -799,7 +799,7 @@ ICA.addUnit({
       "Write one sentence about the slope that a careful reader would accept, with no claim of cause."
     ], write:"r = … The slope means… Points far from the line… My careful sentence…"},
     {t:"Do the Data Lab challenges", how:["In **Labs → Data Lab**, do **Compare groups**, **A histogram**, **Correlation** and **A straight-line model**."]}
-   ], proof:"A short script (or notes) with summaries, a fair group comparison, three labeled charts, r and a slope with a careful one-sentence interpretation, and four R challenges solved."},
+   ], proof:"A short script (or notes) with summaries, a fair group comparison and three labeled charts. Also r and a slope with a careful one-sentence interpretation, and four R challenges solved."},
    read:[
      {book:"r4ds", where:"Chapter 27, “A field guide to base R”, sections “Apply family” and “Plots”; Chapter 6, “Workflow: scripts and projects”, section “Scripts”", note:"Short, and it shows how base R and the tidyverse relate."},
      {book:"ostat", where:"Chapter 12, Section 12.3 “The Regression Equation”", note:"The slope and intercept of a straight line, calculated by hand, to set beside `lm()`."}
@@ -1219,7 +1219,7 @@ ICA.addUnit({
      {t:"Puts the starting code back", why:"That’s Start again."}]},
    {id:"t3u7-q06", lesson:"t3u7-l1", level:3, q:"Lucía works with patient records at a clinic and wants to practice R on them. Which choice keeps the data on her own computer?", options:[
      {t:"R and RStudio Desktop on her work computer, if allowed", ok:true, why:"With desktop R the data stays on the machine. Clinic data is sensitive, so she should also follow her organization’s rules."},
-     {t:"Uploading the records to Posit Cloud", why:"Posit Cloud stores files on Posit’s servers, so the data leaves her computer; only do that if her organization has agreed."},
+     {t:"Uploading the records to Posit Cloud", why:"Posit Cloud stores files on Posit’s servers, so the data leaves her computer. Only do that if her organization has agreed."},
      {t:"Emailing the file to herself to use on her phone instead", why:"Email sends the data through other servers; it doesn’t keep it on her computer."},
      {t:"Any option: R data is always encrypted", why:"R doesn’t encrypt your data; where it’s stored depends on how you run R."}]},
    {id:"t3u7-q07", lesson:"t3u7-l1", level:1, q:"What is CRAN?", options:[
@@ -1274,7 +1274,7 @@ ICA.addUnit({
      {t:"`Sum <- 3`", why:"That creates an object called Sum; no function is called."},
      {t:"`sum(Sum)`", why:"That would complain about an object `Sum` not found (if it doesn’t exist), not a function."}]},
    {id:"t3u7-q17", lesson:"t3u7-l2", level:3, q:"Dmitri writes `cost <- 4,50` (the way prices are written in his country). What happens, and how should he write it?", options:[
-     {t:"An error (`unexpected ','`); write `cost <- 4.50`", ok:true, why:"R always uses a period for decimals; a comma separates things, whatever the computer’s language settings."},
+     {t:"An error (`unexpected ','`); write `cost <- 4.50`", ok:true, why:"R always uses a period for decimals. A comma separates things, whatever the computer’s language settings."},
      {t:"R stores 4.5 because it follows the computer’s settings", why:"R’s code doesn’t follow regional decimal settings."},
      {t:"R stores 450", why:"R doesn’t treat commas as thousands separators either; it’s an error."},
      {t:"R stores two values, 4 and 50", why:"That would need `c(4, 50)`."}]},
@@ -1341,7 +1341,7 @@ ICA.addUnit({
      {t:"Whether R needs updating to a newer version", why:"read.csv() works in every R version; the file wasn’t found."},
      {t:"Whether the numbers use periods", why:"That matters once the file is read; here it wasn’t opened at all."}]},
    {id:"t3u7-q30", lesson:"t3u7-l4", level:3, q:"Ana reads a CSV from a colleague in Germany. `str()` shows one column called `name.age.score` with values like `\"Jo;31;4,5\"`. What happened, and what’s the fix?", options:[
-     {t:"Semicolons and decimal commas; use `read.csv2()`", ok:true, why:"The file uses semicolons and decimal commas. read.csv() split at commas that weren’t there; read.csv2() expects `;` between values and `,` for decimals."},
+     {t:"Semicolons and decimal commas; use `read.csv2()`", ok:true, why:"The file uses semicolons and decimal commas. read.csv() split at commas that weren’t there. read.csv2() expects `;` between values and `,` for decimals."},
      {t:"The file is damaged; ask the colleague to send it again", why:"It’s a common, valid format; only the separator differs."},
      {t:"Add `header = FALSE`", why:"The header isn’t the problem; the separator is."},
      {t:"Use `as.numeric()` on the column", why:"The values are still glued together; read the file with the right separator first."}]},

@@ -10,9 +10,18 @@ ICA.tracks = {}; ICA.units = []; ICA.unitById = {}; ICA.lessons = {}; ICA.codex 
 ICA.base = /\/(quests|arcade|codex|labs|forge|reader)\//.test(location.pathname) ? "../" : "./"; ICA.figs = [];  /* pages in a subfolder link home with ../ */
 
 /* ---------- registry (used by data files) ---------- */
-ICA.addTrack = function(t){ ICA.tracks[t.id] = t; };
+/* Preview tracks (preview:true) are hidden from learners. Open any page once with ?preview=1 to see them on that
+   browser (?preview=0 hides them again). Used so the owner can review a new elective on the live site first. */
+ICA.preview = (function(){ try {
+  var m = location.search.match(/[?&]preview=([01])/);
+  if (m) localStorage.setItem("itchick-preview", m[1]);
+  return localStorage.getItem("itchick-preview") === "1";
+} catch(e){ return false; } })();
+ICA.hiddenTracks = {};
+ICA.addTrack = function(t){ if (t.preview && !ICA.preview){ ICA.hiddenTracks[t.id] = 1; return; } ICA.tracks[t.id] = t; };
 ICA.addBooks = function(list){ list.forEach(function(b){ ICA.books[b.id] = b; }); };
 ICA.addUnit = function(u){
+  if (ICA.hiddenTracks[u.track]) return;   // units of a hidden preview track
   ICA.units.push(u); ICA.unitById[u.id] = u;
   (u.lessons||[]).forEach(function(l, i){ l.unit = u.id; l.n = i+1; ICA.lessons[l.id] = l; });
   if (u.codex) ICA.addCodex(u.codex, u.id);
@@ -915,6 +924,42 @@ RENDER.type = function(el, ex, api){
   }
   el.querySelector("[data-check]").addEventListener("click", go);
   inp.addEventListener("keydown", function(e){ if (e.key === "Enter" && !e.isComposing && !composing) go(); });
+};
+
+/* IPA answers (How English Works, Nov 2026): a text box plus on-screen IPA keys, so nobody needs to install a keyboard.
+   ex.answer: one or more accepted transcriptions. Slashes, brackets and spaces don't matter; "r" and "ɹ", "g" and "ɡ",
+   ":" and "ː" count as the same. Stress marks (ˈ ˌ) are ignored unless ex.stress is true. ex.keys can replace the key set.
+   ex.wrongs: [{v:"…", why:"…"}] for expected mistakes. */
+ICA.IPA_KEYS = ["i","ɪ","e","ɛ","æ","ɑ","ɒ","ɔ","ʊ","u","ʌ","ə","ɜ","ɚ","ɝ","eɪ","aɪ","ɔɪ","oʊ","əʊ","aʊ","ɪə","eə","ʊə","θ","ð","ʃ","ʒ","tʃ","dʒ","ŋ","j","ɹ","ɾ","ʔ","ˈ","ˌ","ː"];
+ICA.ipaNorm = function(x, stress){
+  x = String(x).normalize("NFC").replace(/[\/\[\]\s.]/g, "").replace(/ɡ/g, "g").replace(/r/g, "ɹ").replace(/:/g, "ː").replace(/'/g, "ˈ").replace(/,/g, "ˌ");
+  return stress ? x : x.replace(/[ˈˌ]/g, "");
+};
+RENDER.ipa = function(el, ex, api){
+  var id = "ipa_"+(ex.id||Math.random().toString(36).slice(2)), answers = [].concat(ex.answer), keys = ex.keys || ICA.IPA_KEYS;
+  el.innerHTML = head(ex)+'<div class="numrow typerow"><label class="lb" for="'+id+'">Your transcription</label><input type="text" id="'+id+'" class="ipa-in" lang="und" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="e.g. /ʃɪp/"><button type="button" class="btn primary" data-check>Check</button></div>'+
+    '<div class="ipakeys" role="group" aria-label="IPA symbols">'+keys.map(function(k){ return '<button type="button" class="ipak" data-k="'+ICA.esc(k)+'" aria-label="Insert '+ICA.esc(k)+'">'+ICA.esc(k)+'</button>'; }).join("")+'</div>'+
+    '<div class="small muted">Type ordinary letters on your keyboard and tap the keys for the special symbols. Slashes are optional'+(ex.stress ? '; this one checks the stress mark ˈ too' : '')+'.</div><div class="fbw"></div>';
+  var inp = el.querySelector("input"), fbw = el.querySelector(".fbw");
+  el.querySelector(".ipakeys").addEventListener("click", function(e){
+    var b = e.target.closest("[data-k]"); if (!b || inp.disabled) return;
+    var k = b.getAttribute("data-k"), a = inp.selectionStart != null ? inp.selectionStart : inp.value.length, z = inp.selectionEnd != null ? inp.selectionEnd : a;
+    inp.value = inp.value.slice(0, a) + k + inp.value.slice(z); inp.focus(); inp.setSelectionRange(a + k.length, a + k.length);
+  });
+  function done(){ inp.disabled = true; el.querySelector("[data-check]").disabled = true; }
+  function go(){
+    var v = inp.value.trim(); if (!v){ fbw.innerHTML = fbBox("part", "Type your transcription first.", ""); return; }
+    var nv = ICA.ipaNorm(v, ex.stress);
+    if (answers.some(function(a){ return ICA.ipaNorm(a, ex.stress) === nv; })){ fbw.innerHTML = fbBox("ok", "Correct.", (ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : "")); api.attempt(true); done(); return; }
+    api.attempt(false);
+    var hit = (ex.wrongs||[]).filter(function(w){ return ICA.ipaNorm(w.v, ex.stress) === nv; })[0];
+    var stressOnly = ex.stress && answers.some(function(a){ return ICA.ipaNorm(a) === ICA.ipaNorm(v); });
+    fbw.innerHTML = fbBox("no", "Not quite.", "<div>"+(hit ? ICA.md(hit.why) : stressOnly ? "The sounds are right. Check where the stress mark ˈ goes: it comes just before the stressed syllable." : (ex.hint2 ? ICA.md(ex.hint2) : "Try again. Say the word slowly and write one symbol for each sound."))+"</div>"+(api.state.tries >= 2 ? '<div class="row"><button type="button" class="btn small" data-show>Show the answer</button></div>' : ""));
+    var sb = fbw.querySelector("[data-show]");
+    if (sb) sb.addEventListener("click", function(){ api.solved(false); inp.value = "/"+answers[0].replace(/^\/|\/$/g, "")+"/"; done(); fbw.innerHTML = fbBox("part", "The answer is /"+ICA.esc(answers[0].replace(/^\/|\/$/g, ""))+"/.", ex.why ? "<div>"+ICA.md(ex.why)+"</div>" : ""); });
+  }
+  el.querySelector("[data-check]").addEventListener("click", go);
+  inp.addEventListener("keydown", function(e){ if (e.key === "Enter") go(); });
 };
 
 /* ---------- backup helpers ---------- */

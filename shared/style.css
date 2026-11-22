@@ -629,3 +629,8 @@ ruby{ruby-position:over;ruby-align:center}rt{font-size:.62em;font-weight:400;let
 @keyframes meow{0%,100%{transform:rotate(0)}30%{transform:rotate(-6deg) scale(1.04)}60%{transform:rotate(4deg)}}
 .scat img.meow{animation:meow .45s ease}
 @media (prefers-reduced-motion:reduce){.scat img.meow{animation:none}}
+/* IPA keys for How English Works */
+.ipakeys{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 4px}
+.ipak{min-width:2.4em;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit;font-size:1.05em;cursor:pointer;line-height:1.1}
+.ipak:hover{background:var(--panel2)} .ipak:focus-visible{outline:2px solid var(--lupine);outline-offset:1px}
+.ipa-in{font-size:1.15em;letter-spacing:.02em}

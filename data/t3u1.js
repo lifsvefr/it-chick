@@ -2,13 +2,13 @@
 ICA.addUnit({
   id:"t3u1", track:"t3", n:1, title:"Reading numbers critically", icon:"🔢",
   apps:{ms:"Excel", google:"Google Sheets", libre:"LibreOffice Calc", apple:"Numbers"},
-  blurb:"The questions that turn a number in a headline, a report or a spreadsheet into something you can judge: percent of what, compared with what, out of how many, which average, how big in real terms, how sure, and who is missing.",
+  blurb:"Learn the questions that turn a number in a headline, a report or a spreadsheet into something you can judge. Percent of what? Compared with what? Out of how many? Which average? How big in real terms? How sure? Who is missing?",
   goals:[
     "Tell percentages from percentage points, work out percent changes correctly, and turn counts into fair rates per person",
-    "Translate relative changes and relative risks into absolute numbers, including the number needed to treat",
-    "Spot averages that mislead: skewed data, averages of averages and Simpson’s paradox",
+    "Translate relative changes and relative risks into absolute numbers. This includes the number needed to treat",
+    "Spot averages that mislead: skewed data, averages of averages, and Simpson’s paradox",
     "Work out what a positive test result really means using base rates and natural frequencies",
-    "Put numbers in context: orders of magnitude, money adjusted for inflation, uncertainty in official estimates and survivorship bias"
+    "Put numbers in context: orders of magnitude, money adjusted for inflation, uncertainty in official estimates, and survivorship bias"
   ],
   read:[
     {book:"ostat", where:"Chapter 2, Section 2.5 “Measures of the Center of the Data” and Section 2.6 “Skewness and the Mean, Median, and Mode”; Chapter 3, Section 3.4 “Contingency Tables” and Section 3.5 “Tree and Venn Diagrams”"},
@@ -38,7 +38,7 @@ ICA.addUnit({
       {tip:"Whenever you can, find the count behind a percentage: “40% (8 of 20 people)”. Writing both is a good habit in your own reports too."}
     ]},
     {h:"Percentage points and percent change", body:[
-      "The Digital Foundations unit “Spotting misinformation” introduced the [[percentage-point|percentage point]] (see {{misleading-numbers}}). Here is the full method, because the two ideas get confused even by professionals.",
+      "The Digital Foundations unit “Spotting misinformation” introduced the [[percentage-point|percentage point]] (see {{misleading-numbers}}). Here is the full method. Even professionals confuse these two ideas.",
       "When something that is already a percentage changes, there are two honest ways to describe the change.",
       {list:[
         "The **[[absolute-change|absolute change]]**, measured in **percentage points**: new − old. An unemployment rate going from 4% to 5% rises by **1 percentage point**.",
@@ -65,17 +65,17 @@ ICA.addUnit({
       {table:[["Place (invented)","Cases","Population","Rate per 100,000"],["Hillside","120","40,000","300"],["Riverton","900","600,000","150"]]},
       "Riverton has **7.5 times** as many cases (900 ÷ 120), but Hillside’s **rate** is **twice** as high: 120 ÷ 40,000 × 100,000 = 300, against 900 ÷ 600,000 × 100,000 = 150. A person in Hillside is more likely to be affected.",
       {ex:"In a spreadsheet, with cases in B2 and population in C2:\n=B2/C2*100000\nFill it down for every place. Check one row by hand.", label:"Rate per 100,000 in a spreadsheet", mono:true},
-      "Rates are also written as “1 in X”. 250 per 100,000 is the same as 1 in 400 (100,000 ÷ 250 = 400), or 0.25%. To convert “1 in X” into a rate per 100,000, divide 100,000 by X. Pick one format and use it for every figure you compare: readers find “1 in 400 against 1 in 250” much harder to compare than “250 against 400 per 100,000”, because in the “1 in X” form a bigger X means a *smaller* risk.",
+      "Rates are also written as “1 in X”. 250 per 100,000 is the same as 1 in 400 (100,000 ÷ 250 = 400), or 0.25%. To convert “1 in X” into a rate per 100,000, divide 100,000 by X. Pick one format and use it for every figure you compare. Readers find “1 in 400 against 1 in 250” much harder to compare than “250 against 400 per 100,000”. In the “1 in X” form, a bigger X means a *smaller* risk.",
       "Rates with small populations jump around. If a village of 2,000 people has 3 cases one year and 6 the next, its rate “doubles” from 150 to 300 per 100,000, but that could easily be chance. Small denominators make noisy rates."
     ]},
     {h:"Choosing a fair denominator", body:[
       "The denominator is a choice, and different choices answer different questions.",
       {list:[
-        "**Road safety**: deaths per person, per vehicle, per kilometer traveled or per journey can rank the same types of transport in different orders, because people travel very different distances by each.",
+        "**Road safety**: you can count deaths per person, per vehicle, per kilometer traveled or per journey. These rates can rank the same types of transport in different orders, because people travel very different distances by each.",
         "**Spending**: total spending or spending per person? Per person is fairer when comparing countries or towns of different sizes.",
-        "**Health**: a town with many older residents will have more deaths per 1,000 people even if its care is excellent. Comparing [[crude-rate|crude rates]] across places with different age structures can mislead, which is why statisticians also publish **age-standardized** rates."
+        "**Health**: a town with many older residents will have more deaths per 1,000 people, even if its care is excellent. Comparing [[crude-rate|crude rates]] across places with different age structures can mislead. This is why statisticians also publish **age-standardized** rates."
       ]},
-      {warn:"A rate measured in one period or group can’t be compared with one measured in another unless the denominators match: per 1,000 versus per 100,000, per year versus per month, all residents versus adults only."}
+      {warn:"You can’t compare a rate measured in one period or group with a rate from another unless the denominators match. Watch for per 1,000 versus per 100,000, per year versus per month, and all residents versus adults only."}
     ]},
     {h:"Percentages that don’t add up", body:[
       "Percentages from groups of **different sizes** can’t simply be averaged. Go back to the counts.",
@@ -188,7 +188,7 @@ ICA.addUnit({
       {key:"A relative risk tells you how strong an effect is. Only the absolute risk tells you how much it matters to a person, and for that you need the starting risk of people like them."}
     ]},
     {h:"Reading a health headline", body:[
-      "In 2015 the International Agency for Research on Cancer (IARC), part of the World Health Organization, reported that each 50-gram portion of processed meat eaten daily increases the risk of colorectal (bowel) cancer by about **18%**. That is a relative figure. IARC’s own question-and-answer sheet says these risks are small but could be important for public health, because many people worldwide eat meat.",
+      "In 2015 the International Agency for Research on Cancer (IARC), part of the World Health Organization, reported something about processed meat. Each 50-gram portion eaten daily increases the risk of colorectal (bowel) cancer by about **18%**. That is a relative figure. IARC’s own question-and-answer sheet says these risks are small but could be important for public health, because many people worldwide eat meat.",
       {ex:"Suppose, for illustration only, that 50 in 1,000 people in some group would develop bowel cancer during their lifetime. (Real lifetime risks differ between countries, sexes and generations; this number is not a statistic.)\n\n18% more: 50 × 1.18 = 59 in 1,000.\nAbsolute difference: 9 more people per 1,000 who ate an extra 50 g every day.\n\nThe relative figure (18%) is what IARC measured. The absolute figure depends on the baseline you start from, so it changes from group to group.", label:"Worked example: from relative to absolute (illustrative baseline)"},
       "Watch the wording of ratios, too.",
       {list:[
@@ -205,7 +205,7 @@ ICA.addUnit({
         "“**Profits up 400%**” could mean from 1,000 to 5,000. A large relative change in a small number is still a small number.",
         "“**Only a 0.5% rise**” in a national budget can be billions in absolute terms. A small relative change in a huge number can be a big number."
       ]},
-      {tip:"Research papers sometimes report **odds ratios** rather than risk ratios. Odds compare people with an outcome to people without it (20 with, 980 without). When an outcome is rare the two ratios are close; when it is common, an odds ratio is further from 1 than the risk ratio: risks of 40% and 20% give a risk ratio of 2 but an odds ratio of about 2.67. Don’t read an odds ratio as “times as likely”."}
+      {tip:"Research papers sometimes report **odds ratios** instead of risk ratios. Odds compare people with an outcome to people without it (20 with, 980 without). When an outcome is rare, the two ratios are close. When it is common, an odds ratio is further from 1 than the risk ratio. For example, risks of 40% and 20% give a risk ratio of 2 but an odds ratio of about 2.67. Don’t read an odds ratio as “times as likely”."}
     ]}
    ],
    try:[
@@ -241,7 +241,7 @@ ICA.addUnit({
       {t:"Three in every ten people with the habit get the condition", why:"“Three times as likely” multiplies the existing risk (2 in 10,000). It doesn’t turn into 3 in 10."}
     ]},
     {id:"t3u1-l2-x6", type:"mcq", q:"An advert for a supplement says: “Reduces the risk of a cold by 50%! Side effects in only 2% of users.” What is the main problem with comparing these two figures?", options:[
-      {t:"The benefit is relative but the harm is absolute", ok:true, why:"Right. They can’t be compared until both are in the same form. If 4 in 100 people would get a cold in the period and the supplement makes it 2 in 100, the benefit is 2 in 100, the same as the 2 in 100 who get side effects. Put both as natural frequencies before weighing them."},
+      {t:"The benefit is relative but the harm is absolute", ok:true, why:"Right. They can’t be compared until both are in the same form. Say 4 in 100 people would get a cold in the period, and the supplement makes it 2 in 100. The benefit is 2 in 100, the same as the 2 in 100 who get side effects. Put both as natural frequencies before you weigh them."},
       {t:"There is no problem: 50% is much bigger than 2%", why:"That compares a relative change with an absolute risk. The 50% might mean only a small number of colds prevented."},
       {t:"The side-effect figure must be wrong, because side effects can’t be a percentage", why:"Side effects can be described as a percentage of users. The problem is the mismatch in framing, not the use of percentages."},
       {t:"The cold figure should be given in percentage points instead of percent", why:"Points would help only if we knew the starting risk. The core problem is that one figure is relative and the other absolute."}
@@ -256,7 +256,7 @@ ICA.addUnit({
        "Fill D2:F2 down to row 3. Check: 5, 25%, 200 and 50, 25%, 20."
      ]}, write:"What stays the same between the two rows, and what changes?"},
      {t:"Rewrite a headline", how:["Find a news story that reports a risk as “cuts”, “raises”, “doubles” or “% more likely”.","Find the starting risk in the story, its source or the study it is based on. If you can’t find it, note that.","Rewrite the claim as natural frequencies: “Out of 1,000 people like this, about X would … without it and Y with it, over Z years.”"], write:"The original claim and your rewritten version."}
-   ], proof:"A small calculator with both groups correct, and one headline rewritten as natural frequencies (or a note of what information was missing)."},
+   ], proof:"A small calculator with both groups correct, and one headline rewritten as natural frequencies (or a note about what information was missing)."},
    read:[
      {book:"openintro", where:"Chapter 1, Section 1.1 “Case study: using stents to prevent strokes”", note:"A real trial reported as proportions in each group: practice working out the absolute difference yourself."}
    ]
@@ -268,7 +268,7 @@ ICA.addUnit({
      "Say which average a claim uses and whether it fits the question",
      "Explain why skewed data pull the mean away from the median, and what that means for “the average person”",
      "Combine group averages correctly with a weighted mean",
-     "Recognize Simpson’s paradox and composition effects, and explain them with a confounding factor",
+     "Recognize Simpson’s paradox and composition effects, and explain them with a confounding factor (a hidden third factor)",
      "Ask for the spread as well as the average"
    ],
    learn:[
@@ -307,7 +307,7 @@ ICA.addUnit({
     {h:"Averages of averages", body:[
       "Averaging two averages from groups of different sizes gives the wrong answer, just as with percentages in Lesson 1. Weight each group’s average by its size: a **[[weighted-mean|weighted mean]]**.",
       {ex:"Clinic A: 400 patients, mean wait 10 minutes. Clinic B: 100 patients, mean wait 30 minutes.\n\nWrong: (10 + 30) ÷ 2 = 20 minutes.\nRight: (400 × 10 + 100 × 30) ÷ (400 + 100) = 7,000 ÷ 500 = 14 minutes.\n\nMost patients were at the quicker clinic, so the overall mean is closer to 10.", label:"Worked example: a weighted mean (invented figures)"},
-      "The same applies to **averaging rates and percentages**. The overall rate for two towns is total events ÷ total population, not the average of the two towns’ rates. And for growth over time, averaging the percentage changes misleads too: a price that rises 50% one year and falls 50% the next has an average change of 0%, but it ends 25% lower (Lesson 1). Statisticians use a different average, the geometric mean, for growth rates; the Codex entry {{averages-misleading}} explains it.",
+      "The same applies to **averaging rates and percentages**. The overall rate for two towns is total events ÷ total population. It is not the average of the two towns’ rates. Averaging percentage changes over time also misleads. A price that rises 50% one year and falls 50% the next has an average change of 0%, but it ends 25% lower (Lesson 1). For growth rates, statisticians use a different average, the geometric mean. The Codex entry {{averages-misleading}} explains it.",
       {ex:"With group sizes in B2:B3 and group means in C2:C3:\n=SUMPRODUCT(B2:B3,C2:C3)/SUM(B2:B3)\nSUMPRODUCT multiplies each pair and adds the results. It works in Excel, Google Sheets, LibreOffice Calc and Numbers.", label:"Weighted mean in a spreadsheet", mono:true}
     ]},
     {h:"Simpson’s paradox", body:[
@@ -340,7 +340,7 @@ ICA.addUnit({
       ["Which shoe size should a shop stock most of?","The mode","The most common size is the one most customers need."],
       ["Do the students’ scores vary a lot?","The range or interquartile range","These describe spread, which no average shows."]
     ]},
-    {id:"t3u1-l3-x4", type:"mcq", q:"In an invented study, Hospital X has a lower survival rate than Hospital Y overall, but a higher survival rate both for patients admitted in a mild condition and for patients admitted in a severe condition. What is the most likely explanation?", options:[
+    {id:"t3u1-l3-x4", type:"mcq", q:"In an invented study, Hospital X has a lower survival rate than Hospital Y overall. But Hospital X has a higher survival rate for patients admitted in a mild condition, and also for patients admitted in a severe condition. What is the most likely explanation?", options:[
       {t:"Hospital X treats a much larger share of severe patients", ok:true, why:"Severe patients are less likely to survive anywhere. That is Simpson’s paradox. Severity affects both which hospital patients go to and their chances, so the combined rate mostly reflects the mix of patients. Within each severity group, X does better."},
       {t:"The figures must contain an error, because this is mathematically impossible", why:"It is entirely possible, as the kidney stone study shows. It can happen whenever the two hospitals treat very different mixes of patients, and the mix also affects survival."},
       {t:"Hospital Y is better, because the overall figure is the one that counts", why:"The overall figure mixes in a difference in patients. For someone with a given condition, the within-group comparison shows X doing better."},
@@ -386,10 +386,10 @@ ICA.addUnit({
    hook:{q:"A condition affects 1 in 1,000 people. A test finds 99% of people who have it, and wrongly flags 1% of people who don’t. Someone picked at random tests positive. Roughly what is the chance they have the condition?", options:["About 99%","About 90%","About 50%","About 9%"], answer:3, reveal:"**About 9%.** Picture 100,000 people. 100 have the condition, and 99 of them test positive. The other 99,900 don’t, but 1% of them, 999 people, test positive too. So 99 of the 1,098 positives really have it: about 9%. Most people guess far higher, and so do many professionals. This lesson shows the counting method that makes it clear."},
    goals:[
      "Explain conditional probability in plain words, and why the chance of A given B differs from the chance of B given A",
-     "Name the four outcomes of a test and define sensitivity, specificity and the false positive rate",
+     "Name the four outcomes of a test. Define sensitivity, specificity and the false positive rate",
      "Work out what a positive or negative result means using natural frequencies",
      "Explain how the base rate changes the meaning of the same test",
-     "Apply the same reasoning to fraud alerts, detectors and forensic matches, and recognize the prosecutor’s fallacy"
+     "Apply the same reasoning to fraud alerts, detectors and forensic matches. Recognize the prosecutor’s fallacy"
    ],
    learn:[
     {h:"“Of whom?”: conditional probability", body:[
@@ -403,14 +403,14 @@ ICA.addUnit({
       {table:[["","Test says yes","Test says no"],["Really yes","True positive","**False negative** (missed)"],["Really no","**False positive** (false alarm)","True negative"]]},
       "A **[[false-positive|false positive]]** is a false alarm. A **[[false-negative|false negative]]** is a miss. Three numbers describe the test and the group it’s used in.",
       {list:[
-        "**[[test-sensitivity|Sensitivity]]**: of the people who really have the condition, the share the test catches. 90% sensitivity misses 10 in 100 of them.",
-        "**[[test-specificity|Specificity]]**: of the people who don’t have it, the share the test correctly clears. 95% specificity means a **false positive rate** of 5%: 5 in 100 of them get a false alarm.",
+        "**[[test-sensitivity|Sensitivity]]**: of the people who really have the condition, the share the test catches. A test with 90% sensitivity misses 10 in 100 of them.",
+        "**[[test-specificity|Specificity]]**: of the people who don’t have the condition, the share the test correctly clears. 95% specificity means a **false positive rate** of 5%. That is 5 in 100 of them get a false alarm.",
         "The **[[base-rate|base rate]]**, or **[[prevalence]]**: how common the condition is in the group being tested, before any test."
       ]},
       "Sensitivity and specificity are conditional probabilities: each starts from people whose true status is known. But a person with a result wants the reverse: **given my positive result, how likely is it that I have it?** That is the **[[predictive-value|positive predictive value]]**, and it depends heavily on the base rate."
     ]},
     {h:"Counting it out: natural frequencies", body:[
-      "Researchers such as Gerd Gigerenzer and Ulrich Hoffrage (1995) found that people reason far better about tests when the information is given as **natural frequencies** (counts of people) rather than percentages and probabilities. Here is the method, with an invented test: base rate 1%, sensitivity 90%, false positive rate 5%.",
+      "Researchers such as Gerd Gigerenzer and Ulrich Hoffrage (1995) found something useful. People reason far better about tests when the information is given as **natural frequencies** (counts of people) than as percentages and probabilities. Here is the method, with an invented test: base rate 1%, sensitivity 90%, false positive rate 5%.",
       {fig:'<svg viewBox="0 0 340 362"><rect class="d-panel" x="95" y="8" width="150" height="46" rx="8" stroke-width="2"/><text x="170" y="29" text-anchor="middle">10,000 people</text><text class="s" x="170" y="46" text-anchor="middle">all tested</text><path class="d-ink" d="M150 54 L90 88 M190 54 L250 88" fill="none" stroke-width="2"/><rect class="d-rose" x="30" y="88" width="120" height="46" rx="8" stroke-width="2"/><text x="90" y="108" text-anchor="middle">100</text><text class="s" x="90" y="125" text-anchor="middle">have it (1%)</text><rect class="d-lup" x="190" y="88" width="120" height="46" rx="8" stroke-width="2"/><text x="250" y="108" text-anchor="middle">9,900</text><text class="s" x="250" y="125" text-anchor="middle">don’t (99%)</text><path class="d-ink" d="M75 134 L45 184 M105 134 L130 184 M235 134 L210 184 M265 134 L295 184" fill="none" stroke-width="2"/><text class="s" x="48" y="164" text-anchor="end">90%</text><text class="s" x="126" y="164">10%</text><text class="s" x="214" y="164" text-anchor="end">5%</text><text class="s" x="292" y="164">95%</text><rect class="d-gold" x="7" y="184" width="76" height="46" rx="8" stroke-width="2"/><text x="45" y="204" text-anchor="middle">90</text><text class="s" x="45" y="221" text-anchor="middle">positive</text><rect class="d-panel" x="92" y="184" width="76" height="46" rx="8" stroke-width="2"/><text x="130" y="204" text-anchor="middle">10</text><text class="s" x="130" y="221" text-anchor="middle">negative</text><rect class="d-gold" x="172" y="184" width="76" height="46" rx="8" stroke-width="2"/><text x="210" y="204" text-anchor="middle">495</text><text class="s" x="210" y="221" text-anchor="middle">positive</text><rect class="d-panel" x="257" y="184" width="76" height="46" rx="8" stroke-width="2"/><text x="295" y="204" text-anchor="middle">9,405</text><text class="s" x="295" y="221" text-anchor="middle">negative</text><path class="d-ink" d="M45 230 L110 262 M210 230 L200 262" fill="none" stroke-width="1.5" stroke-dasharray="4 3"/><rect class="d-gold" x="30" y="262" width="280" height="92" rx="8" stroke-width="2"/><text x="170" y="286" text-anchor="middle">Positives: 90 + 495 = 585</text><text x="170" y="310" text-anchor="middle">Really have it: 90 of 585</text><text x="170" y="334" text-anchor="middle">90 ÷ 585 ≈ 15%</text></svg>', alt:"A tree. 10,000 people split into 100 who have the condition and 9,900 who don’t. The 100 split into 90 positive (90%) and 10 negative (10%). The 9,900 split into 495 positive (5%) and 9,405 negative (95%). The two positive groups combine: 585 positives, of whom 90 really have it, about 15%.", cap:"Natural frequencies: count people, not probabilities. Only about 15% of positives are true positives (invented test)."},
       {ol:[
         "Start with a round number of people: **10,000**.",
@@ -427,7 +427,7 @@ ICA.addUnit({
       {table:[["Base rate","True positives","False positives","Positives who have it"],["0.1%","90","4,995","about 1.8%"],["1%","900","4,950","about 15%"],["20%","18,000","4,000","about 82%"]]},
       "In a group where the condition is rare, most positives are false alarms. In a group where it’s common (for example, people already showing symptoms), a positive is usually right. The test didn’t change; the base rate did.",
       {list:[
-        "This is why a positive **screening** result in people without symptoms is usually followed by a more accurate **diagnostic** test before anyone is diagnosed.",
+        "This is why a positive **screening** result in people without symptoms is usually followed by a more accurate **diagnostic** test. Only then is anyone diagnosed.",
         "It is why testing everyone for a rare problem can create many false alarms, with real costs: worry, more tests, sometimes treatment that wasn’t needed.",
         "And it is why a single positive result means different things for different people, depending on their risk before the test."
       ]},
@@ -443,17 +443,17 @@ ICA.addUnit({
       ]}
     ]},
     {h:"The prosecutor’s fallacy", body:[
-      "Courts face the same trap. Suppose a forensic test finds that a suspect matches a sample from a crime scene, and an expert says a random innocent person would match by chance only **1 time in 100,000**.",
+      "Courts face the same trap. Suppose a forensic test finds that a suspect matches a sample from a crime scene. An expert says a random innocent person would match by chance only **1 time in 100,000**.",
       "It is tempting to conclude “so the chance this person is innocent is 1 in 100,000”. That swaps the two conditional probabilities: the chance of a **match, given innocence** is not the chance of **innocence, given a match**. This error is called the **prosecutor’s fallacy**.",
       {ex:"Suppose 2,000,000 people could have committed the crime.\n\nInnocent people who would match by chance: about 2,000,000 ÷ 100,000 = 20.\nSo, besides the culprit, about 20 innocent people match.\n\nIf the match were the only evidence, the suspect would be one of about 21 people who match, not “1 in 100,000 likely to be innocent”.", label:"Worked example: what a match means (invented figures)"},
-      "Other evidence (where the person was, motive, witnesses) changes the picture, which is exactly the point: a match narrows the group; it doesn’t settle the question alone. Real cases also have to consider lab errors and close relatives, which can make a misleading match more likely than the headline figure suggests.",
+      "Other evidence (where the person was, motive, witnesses) changes the picture. That is exactly the point: a match narrows the group, but it doesn’t settle the question alone. Real cases also have to consider lab errors and close relatives. These can make a misleading match more likely than the headline figure suggests.",
       {tip:"For any “1 in a million” claim, ask: out of how many people or events? If each of the world’s 8 billion people faced a one-in-a-million chance once a day, it would come up for about 8,000 people every day."}
     ]}
    ],
    try:[
     {id:"t3u1-l4-x1", type:"mcq", q:"A news story says: “70% of people in hospital with the illness were unvaccinated.” Which conclusion follows from this figure alone?", options:[
       {t:"None yet: you also need the share of everyone who is unvaccinated", ok:true, why:"Right. The 70% is “unvaccinated, given in hospital”. To judge the vaccine, compare the chance of hospital among vaccinated and unvaccinated people. If only 10% of people were unvaccinated, 70% of patients being unvaccinated points to a big effect; if 90% were, it would mean the vaccinated were more at risk. The base rate decides."},
-      {t:"An unvaccinated person has a 70% chance of going to hospital with the illness", why:"That swaps the conditional probability. 70% describes people already in hospital, not the chance that an unvaccinated person ends up there, which is far smaller."},
+      {t:"An unvaccinated person has a 70% chance of going to hospital with the illness", why:"That swaps the conditional probability. 70% describes people who are already in hospital. It is not the chance that an unvaccinated person ends up there, which is far smaller."},
       {t:"The vaccine prevents 70% of hospital stays", why:"A share of patients isn’t an effectiveness figure. You would need hospital rates in both vaccinated and unvaccinated groups."},
       {t:"Vaccinated people make up 30% of the population", why:"The 30% describes patients, not the population. The population share could be quite different."}
     ]},
@@ -477,7 +477,7 @@ ICA.addUnit({
       {v:90, tol:0.5, why:"90% is the specificity (the share of healthy people correctly cleared). It doesn’t tell you what a positive means without the base rate."}
     ]},
     {id:"t3u1-l4-x5", type:"mcq", q:"Fatima’s bank texts her about a “suspicious payment”. The bank’s system flags about 2% of genuine payments, and fraud is rare. What is the most sensible reading of the alert?", options:[
-      {t:"It could well be a false alarm; check the payment through the bank’s app or official number, then confirm or report it", ok:true, why:"Right. When fraud is rare, most alerts are false positives, but some are real, so it’s worth checking. Using the bank’s app or the number on her card (not a link or number in the message) also protects her from scam texts pretending to be the bank."},
+      {t:"It could well be a false alarm; check the payment through the bank’s app or official number, then confirm or report it", ok:true, why:"Right. When fraud is rare, most alerts are false positives, but some are real, so it’s worth checking. She should use the bank’s app or the number on her card, not a link or number in the message. This also protects her from scam texts that pretend to be the bank."},
       {t:"It is almost certainly fraud, because the system is very accurate", why:"Accurate at what? With rare fraud, even a 2% false alarm rate on genuine payments produces many more false alerts than real ones."},
       {t:"It can be ignored, because most alerts are false alarms", why:"Most may be false, but a real fraud is costly. The alert is a reason to check, not to panic or ignore."},
       {t:"She should reply to the text with her card details so the bank can check", why:"Never send card details by text. Contact the bank through a route you already trust."}
@@ -518,7 +518,7 @@ ICA.addUnit({
     {h:"Orders of magnitude", body:[
       {lead:"An [[order-of-magnitude|order of magnitude]] is a factor of ten. Getting the order of magnitude right matters more than any decimal place."},
       "Thousand, million, billion and trillion are each **a thousand times** the one before: three orders of magnitude apart.",
-      {fig:'<svg viewBox="0 0 340 330"><text x="170" y="18" text-anchor="middle">Counting seconds</text><rect class="d-sage" x="40" y="30" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="51" text-anchor="middle">1 thousand seconds</text><text class="s" x="170" y="69" text-anchor="middle">about 17 minutes</text><rect class="d-lup" x="40" y="110" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="131" text-anchor="middle">1 million seconds</text><text class="s" x="170" y="149" text-anchor="middle">about 11.6 days</text><rect class="d-gold" x="40" y="190" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="211" text-anchor="middle">1 billion seconds</text><text class="s" x="170" y="229" text-anchor="middle">about 31.7 years</text><rect class="d-rose" x="40" y="270" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="291" text-anchor="middle">1 trillion seconds</text><text class="s" x="170" y="309" text-anchor="middle">about 31,700 years</text><text class="s" x="178" y="99">× 1,000</text><text class="s" x="178" y="179">× 1,000</text><text class="s" x="178" y="259">× 1,000</text><path class="d-ink" d="M170 80 L170 108 M170 160 L170 188 M170 240 L170 268" stroke-width="2" fill="none"/></svg>', alt:"Four stacked boxes, each a thousand times the one above: 1 thousand seconds is about 17 minutes; 1 million seconds about 11.6 days; 1 billion seconds about 31.7 years; 1 trillion seconds about 31,700 years.", cap:"Each step is a thousand times bigger (years of 365.25 days)."},
+      {fig:'<svg viewBox="0 0 340 330"><text x="170" y="18" text-anchor="middle">Counting seconds</text><rect class="d-sage" x="40" y="30" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="51" text-anchor="middle">1 thousand seconds</text><text class="s" x="170" y="69" text-anchor="middle">about 17 minutes</text><rect class="d-lup" x="40" y="110" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="131" text-anchor="middle">1 million seconds</text><text class="s" x="170" y="149" text-anchor="middle">about 11.6 days</text><rect class="d-gold" x="40" y="190" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="211" text-anchor="middle">1 billion seconds</text><text class="s" x="170" y="229" text-anchor="middle">about 31.7 years</text><rect class="d-rose" x="40" y="270" width="260" height="50" rx="8" stroke-width="2"/><text x="170" y="291" text-anchor="middle">1 trillion seconds</text><text class="s" x="170" y="309" text-anchor="middle">about 31,700 years</text><text class="s" x="178" y="99">× 1,000</text><text class="s" x="178" y="179">× 1,000</text><text class="s" x="178" y="259">× 1,000</text><path class="d-ink" d="M170 80 L170 108 M170 160 L170 188 M170 240 L170 268" stroke-width="2" fill="none"/></svg>', alt:"Four stacked boxes, each a thousand times the one above. 1 thousand seconds is about 17 minutes. 1 million seconds is about 11.6 days. 1 billion seconds is about 31.7 years. 1 trillion seconds is about 31,700 years.", cap:"Each step is a thousand times bigger (years of 365.25 days)."},
       "Scientists write very large numbers in **scientific notation**: 3,200,000,000 is 3.2 × 10⁹. Spreadsheets write it as `3.2E+09` (or `3.20E+09`) when a cell is formatted as scientific, or when a number is too long for its cell.",
       {warn:"Words for big numbers differ between languages. In English today a **billion** almost always means a thousand million (10⁹). But in Spanish *billón*, German *Billion* and French *billion* mean a **million million** (10¹²); the word for 10⁹ is *mil millones* (Spanish) or *Milliarde* / *milliard* (German, French). Mistranslating one makes a figure a thousand times too big."}
     ]},
@@ -535,16 +535,16 @@ ICA.addUnit({
     ]},
     {h:"Nominal and real money", body:[
       "Money changes value. Prices in most countries rise over time (**[[inflation]]**), so the same amount buys less. A **nominal** amount is the number of currency units at the time. A **real** amount has been adjusted for inflation so different years can be compared ([[nominal-vs-real]]).",
-      "Statistics offices measure inflation with a **[[price-index|price index]]**, such as a consumer price index (CPI), which tracks the cost of a typical basket of goods and services. The US Bureau of Labor Statistics, for example, describes the CPI as used to find the purchasing power of the consumer’s dollar.",
+      "Statistics offices measure inflation with a **[[price-index|price index]]**, such as a consumer price index (CPI). A price index tracks the cost of a typical basket of goods and services. For example, the US Bureau of Labor Statistics describes the CPI as used to find the purchasing power of the consumer’s dollar.",
       {ex:"An invented price index is 100 in 2015 and 135 in 2025: prices rose 35%.\n\nDana earned 30,000 in 2015 and 40,000 in 2025.\nNominal rise: (40,000 − 30,000) ÷ 30,000 ≈ 33.3%.\nIn 2015 money, 2025 pay is 40,000 × 100 ÷ 135 ≈ 29,630.\n\nIn real terms Dana’s pay buys about 1.2% less than in 2015, despite the 10,000 rise. Equivalently, 30,000 in 2015 is worth 30,000 × 135 ÷ 100 = 40,500 in 2025 money.", label:"Worked example: a real pay cut (invented index)"},
       {ex:"Amount in B2 from the year with index C2; index for the target year in C3:\n=B2*C3/C2", label:"Convert money between years", mono:true},
-      "This is why “record” figures (the highest-earning film, the biggest budget, the most expensive house) often aren’t records in real terms. With inflation, nominal records are broken almost automatically.",
+      "This is why “record” figures often aren’t records in real terms. Examples are the highest-earning film, the biggest budget and the most expensive house. With inflation, nominal records are broken almost automatically.",
       {tip:"Official indexes describe an average basket. Your own costs may rise faster or slower, depending on what you spend money on and where you live."}
     ]},
     {h:"Estimates come with uncertainty", body:[
-      "Many official numbers are **estimates** from samples, so they come with uncertainty, and they get **revised** as more data arrive. The US monthly jobs report is a well-documented example (US Bureau of Labor Statistics, technical note to *The Employment Situation*, checked November 2026).",
+      "Many official numbers are **estimates** from samples, so they come with uncertainty. They also get **revised** as more data arrive. The US monthly jobs report is a well-documented example (US Bureau of Labor Statistics, technical note to *The Employment Situation*, checked November 2026).",
       {list:[
-        "The payroll figure comes from a monthly survey of about 119,000 businesses and government agencies (about 622,000 worksites).",
+        "The payroll figure comes from a monthly survey. The survey covers about 119,000 businesses and government agencies (about 622,000 worksites).",
         "BLS says the 90% confidence interval for the monthly change in jobs is **on the order of plus or minus 122,000**.",
         "Its own example: if jobs rise by 50,000, the interval runs from **−72,000 to +172,000**. Because that includes values below zero, “we could not say with confidence that nonfarm employment had, in fact, increased that month.” A rise of 250,000 would be clearly above zero.",
         "The two previous months are routinely revised, and the figures are adjusted once a year to fuller counts."
@@ -555,9 +555,9 @@ ICA.addUnit({
     {h:"Survivorship bias: who isn’t in the data?", body:[
       "**[[survivorship-bias|Survivorship bias]]** happens when you study only the things that made it through some filter and forget the ones that didn’t. The survivors look special, but you can’t see the failures that looked just like them.",
       {fig:'<svg viewBox="0 0 340 280"><rect class="d-panel" x="70" y="10" width="200" height="46" rx="8" stroke-width="2"/><text x="170" y="31" text-anchor="middle">100 planes fly out</text><text class="s" x="170" y="48" text-anchor="middle">(invented numbers)</text><path class="d-ink" d="M130 56 L90 96 M210 56 L250 96" fill="none" stroke-width="2"/><rect class="d-sage" x="10" y="96" width="155" height="76" rx="8" stroke-width="2"/><text x="87" y="118" text-anchor="middle">70 return</text><text class="s" x="87" y="138" text-anchor="middle">you can inspect</text><text class="s" x="87" y="155" text-anchor="middle">their damage</text><rect class="d-rose" x="175" y="96" width="155" height="76" rx="8" stroke-width="2" stroke-dasharray="6 4"/><text x="252" y="118" text-anchor="middle">30 lost</text><text class="s" x="252" y="138" text-anchor="middle">their damage is</text><text class="s" x="252" y="155" text-anchor="middle">never seen</text><rect class="d-gold" x="10" y="194" width="320" height="76" rx="8" stroke-width="2"/><text x="170" y="216" text-anchor="middle">Holes on returning planes show</text><text x="170" y="236" text-anchor="middle">where a plane can be hit and survive.</text><text class="s" x="170" y="257" text-anchor="middle">Few holes in a spot may mean hits there were fatal.</text></svg>', alt:"100 planes fly out. 70 return and can be inspected; 30 are lost and their damage is never seen. The holes on returning planes show where a plane can be hit and survive; few holes in a spot may mean hits there were fatal.", cap:"Only the survivors are in the data (invented numbers)."},
-      "The classic story comes from the Second World War. The statistician Abraham Wald, working with the Statistical Research Group at Columbia University, developed methods for estimating how vulnerable aircraft were from the damage on planes that came back. The popular retelling simplifies his mathematics, but the insight is real: damage on survivors shows where planes **can** be hit; the missing planes hold the answer to where they **can’t**.",
+      "The classic story comes from the Second World War. The statistician Abraham Wald worked with the Statistical Research Group at Columbia University. He developed methods to estimate how vulnerable aircraft were, using the damage on planes that came back. The popular retelling simplifies his mathematics, but the insight is real. Damage on survivors shows where planes **can** be hit. The missing planes hold the answer to where they **can’t**.",
       {list:[
-        "**Success stories.** Studying successful founders who dropped out of university ignores the many dropouts whose businesses failed.",
+        "**Success stories.** Imagine you study successful founders who dropped out of university. You ignore the many dropouts whose businesses failed.",
         "**“They built things better back then.”** Old buildings and objects we see today are the ones sturdy enough to survive; the shoddy ones are long gone.",
         "**Investment funds.** Funds that do badly are often closed or merged, so averaging only the funds still open makes the industry look better than investors actually did.",
         "**Reviews and testimonials.** People who quit a course or a diet rarely write about it."
@@ -565,7 +565,7 @@ ICA.addUnit({
       "Survivorship bias is one kind of **selection bias**: the data were filtered by the very outcome you’re studying."
     ]},
     {h:"A checklist for any number", body:[
-      "Everything in this unit comes down to a handful of questions you can ask of any number, in a headline, a report, a spreadsheet or your own work.",
+      "Everything in this unit comes down to a handful of questions. You can ask them of any number: in a headline, a report, a spreadsheet or your own work.",
       {ol:[
         "**Of what?** What is the denominator, and who was counted?",
         "**Compared with what?** Last year, another place, a control group, the whole population?",
@@ -608,7 +608,7 @@ ICA.addUnit({
       {t:"Following up everyone who enrolled in a course, including those who left, to see how it went", b:1, why:"Including everyone who started, dropouts too, is exactly how to avoid survivorship bias."},
       {t:"Average past returns of the investment funds that are still open today", b:0, why:"Funds that did badly were often closed or merged and have dropped out of the list, so the average looks better than investors’ experience."},
       {t:"Concluding that old songs were better because the old songs you still hear are great", b:0, why:"The forgettable songs from the past have been forgotten; today’s forgettable ones are still on the radio."},
-      {t:"A health study that randomly samples residents from the population register", b:1, why:"A random sample from a full list includes people whatever their outcome, so nobody is filtered out by success or failure (though non-response is still worth checking)."}
+      {t:"A health study that randomly samples residents from the population register", b:1, why:"A random sample from a full list includes people whatever their outcome. Nobody is filtered out by success or failure. (Non-response is still worth checking.)"}
     ]},
     {id:"t3u1-l5-x6", type:"match", q:"Match each claim to the most useful first question.", pairs:[
       ["“Record box-office takings for this year’s top film”","Is that adjusted for inflation?","Box-office totals are usually nominal. With rising prices, nominal records are broken easily."],
@@ -934,7 +934,7 @@ ICA.addUnit({
    ]},
    {id:"t3u1-q06", lesson:"t3u1-l1", level:3, q:"A community group’s survey report says 60% of members want more events and 55% want lower fees. A member writes in: “That adds up to 115%, so the survey is wrong.” What is the most likely explanation?", options:[
      {t:"Members could choose more than one option", ok:true, why:"With choose-all-that-apply questions, the shares can add up to more than 100%. Each percentage is out of all members separately, and one person can be counted in both."},
-     {t:"The survey must have counted some members twice by mistake", why:"That’s possible but unnecessary as an explanation. Choose-all-that-apply questions add to more than 100% when everything is correct."},
+     {t:"The survey must have counted some members twice by mistake", why:"That’s possible but unnecessary as an explanation. Choose-all-that-apply questions add up to more than 100% when everything is correct."},
      {t:"The figures were rounded badly", why:"Rounding can shift a total by a point or two, not by 15 points."},
      {t:"Percentages in a report must always add up to 100%", why:"Only shares of a single whole, where each person is in exactly one category, must add to 100%."}
    ]},
@@ -1050,7 +1050,7 @@ ICA.addUnit({
    ]},
    {id:"t3u1-q25", lesson:"t3u1-l3", level:2, q:"A festival organizer wants to estimate the total amount of food needed for 5,000 visitors. Which summary of past visitors’ food purchases should she use?", options:[
      {t:"The mean amount per visitor, because mean × number of visitors = total", ok:true, why:"For totals, the mean is the right average: it includes the big eaters, who really do need food."},
-     {t:"The median, because it isn’t affected by extremes", why:"The median ignores how much the big eaters buy, so median × 5,000 would underestimate the total if purchases are right-skewed."},
+     {t:"The median, because it isn’t affected by extremes", why:"The median ignores how much the big eaters buy. So median × 5,000 would underestimate the total if purchases are right-skewed."},
      {t:"The mode, because it’s the most common amount", why:"The most common purchase doesn’t tell you the total."},
      {t:"The largest purchase, to be safe", why:"Largest × 5,000 would hugely overestimate. The mean gives the expected total."}
    ]},
@@ -1083,7 +1083,7 @@ ICA.addUnit({
      {t:"Of people who have the condition, 90% test positive", ok:true, why:"Sensitivity is about people who really have it: the share the test catches."},
      {t:"Of people who test positive, 90% have the condition", why:"That’s the positive predictive value, which depends on the base rate as well as the test."},
      {t:"Of people without the condition, 90% test negative", why:"That’s specificity."},
-     {t:"The test is right 90% of the time for everyone", why:"Sensitivity describes only people with the condition; accuracy for others is a separate figure."}
+     {t:"The test is right 90% of the time for everyone", why:"Sensitivity describes only people with the condition. Accuracy for others is a separate figure."}
    ]},
    {id:"t3u1-q31", lesson:"t3u1-l4", level:2, q:"The same test is used in two groups: one where a condition is rare and one where it is common. In which group is a positive result more likely to be correct?", options:[
      {t:"The group where the condition is common", ok:true, why:"With more real cases, true positives make up a larger share of all positives. With a 20% base rate the lesson’s test is right about 82% of the time; at 1%, about 15%."},

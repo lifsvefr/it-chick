@@ -2,14 +2,14 @@
 ICA.addUnit({
   id:"t3u2", track:"t3", n:2, title:"Tidy data in spreadsheets", icon:"🧹",
   apps:{ms:"Excel", google:"Google Sheets", libre:"LibreOffice Calc", apple:"Numbers"},
-  blurb:"Set up spreadsheets that people and programs can both trust: what counts as a variable and an observation, long and wide layouts, consistent entries and names, missing values, data dictionaries, dates that don’t shift, raw data kept raw, validation rules, and CSV files that say exactly what you meant.",
+  blurb:"Set up spreadsheets that people and programs can both trust. You will learn what counts as a variable and an observation, long and wide layouts, consistent entries and names, missing values, and data dictionaries. You will also learn how to keep dates from shifting, keep raw data raw, use validation rules, and make CSV files that say exactly what you mean.",
   goals:[
-    "Decide what the variables, observations and identifiers are in a real dataset, and lay it out as one or more linked rectangles",
+    "Decide what the variables, observations and identifiers are in a real dataset. Lay it out as one or more linked rectangles",
     "Recognize long and wide layouts, say which one suits a task, and reshape between them",
     "Enter data with consistent codes and names, and keep units, notes and formatting out of the values",
-    "Record zeros, blanks and missing values so every program reads them the same way, and document each column in a data dictionary",
-    "Store dates so they survive different apps, countries and date systems, and protect identifiers from automatic conversion",
-    "Keep raw data untouched, enforce the dictionary with validation rules, and export CSV files with the right separator, encoding and precision"
+    "Record zeros, blanks and missing values so every program reads them the same way. Document each column in a data dictionary",
+    "Store dates so they survive different apps, countries and date systems. Protect identifiers from automatic conversion",
+    "Keep raw data untouched. Enforce the dictionary with validation rules. Export CSV files with the right separator, encoding and precision"
   ],
   read:[
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists: “Introduction”, “Formatting Data Tables in Spreadsheets”, “Metadata”, “Dates as Data”, “Quality Assurance” and “Exporting Data”", note:"The workshop lesson this unit follows. It uses Excel and LibreOffice Calc with real (simplified) interview data from farmers in Mozambique and Tanzania, the SAFI dataset."},
@@ -18,18 +18,18 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t3u2-l1", title:"Variables, observations and one rectangle", minutes:55,
-   hook:{q:"A researcher summarized 13 audits of real-world spreadsheets. On average, what share of the audited spreadsheets contained errors?", options:["About 8%","About 28%","About 58%","About 88%"], answer:3, reveal:"**About 88%**, in Raymond Panko’s 2008 summary, as reported by Karl Broman and Kara Woo in their paper on organizing spreadsheet data. Spreadsheets aren’t bad tools, but they make some mistakes very easy. This unit is about the layout and habits that make mistakes harder, starting with the most basic question: what goes in a row, and what goes in a column?"},
+   hook:{q:"A researcher summarized 13 audits of real-world spreadsheets. On average, what share of the audited spreadsheets contained errors?", options:["About 8%","About 28%","About 58%","About 88%"], answer:3, reveal:"**About 88%**, in Raymond Panko’s 2008 summary, as reported by Karl Broman and Kara Woo in their paper on organizing spreadsheet data. Spreadsheets aren’t bad tools, but they make some mistakes very easy. This unit is about the layout and habits that make mistakes harder. It starts with the most basic question: what goes in a row, and what goes in a column?"},
    goals:[
      "Explain Data Carpentry’s tidy-data principles and why they make data machine-readable",
      "Decide what the variables and observations are, even when the answer isn’t obvious",
-     "Split data that describes different things into separate tables linked by an identifier",
+     "Split data that describes different things into separate tables, linked by an identifier",
      "Recognize long and wide layouts and reshape between them",
      "Check that an identifier column really is unique"
    ],
    learn:[
     {h:"Beyond the three rules", body:[
       {lead:"A spreadsheet can be read by people, who use context, color and position, and by programs, which read only values in cells. Good data organization serves both."},
-      "Track 1 introduced [[tidy-data|tidy data]]: one row per record, one column per variable, one value per cell ({{tidy-data}}). This unit goes deeper, following the Data Carpentry lesson *Data Organization in Spreadsheets for Social Scientists* and the paper “Data Organization in Spreadsheets” by Karl Broman and Kara Woo (*The American Statistician*, 2018). Data Carpentry lists five principles:",
+      "Track 1 introduced [[tidy-data|tidy data]]: one row per record, one column per variable, one value per cell ({{tidy-data}}). This unit goes deeper. It follows the Data Carpentry lesson *Data Organization in Spreadsheets for Social Scientists* and the paper “Data Organization in Spreadsheets” by Karl Broman and Kara Woo (*The American Statistician*, 2018). Data Carpentry lists five principles:",
       {ol:[
         "Put all your variables in columns: the things you measure, such as weight or number of household members.",
         "Put each observation in its own row.",
@@ -38,14 +38,14 @@ ICA.addUnit({
         "Export the cleaned data to a text-based format such as CSV, so anyone can use it."
       ]},
       "Broman and Woo add a point of view worth keeping: spreadsheets are best for **entering and storing** data. Analysis and charts are safer in a separate copy, or in another program, so the original can’t be damaged by accident.",
-      "Our running example is invented, but shaped like the interview data Data Carpentry uses: researchers visit farming households and record who lives there, what they own and what they grow.",
+      "Our running example is invented, but it is shaped like the interview data Data Carpentry uses. Researchers visit farming households. They record who lives there, what they own and what they grow.",
       {tip:"The best layout for **typing** data and the best layout for **analyzing** it can differ. Data Carpentry’s advice: know both, and convert from one to the other in a repeatable way rather than retyping."}
     ]},
     {h:"What counts as a variable?", body:[
       "A [[variable-column|variable]] is one property you record for every unit you study: a household’s village, its number of members, the material of its walls. The entries in that column are its **values**. Every value in a column should be the same kind of thing, in the same unit.",
       "The trap is a cell that holds a whole sentence of information. Data Carpentry’s example records livestock as `3, (oxen , cows)`: a count and two types squashed together. You can’t average it, filter it or count the cows. Split it into one column per piece of information:",
       {ex:"Before:  hh_id  livestock\n         H07    3, (oxen , cows)\n\nAfter:   hh_id  oxen  cows  goats\n         H07    1     2     0", label:"One cell, three facts → one fact per cell", mono:true},
-      "(The 1 and 2 are invented to make the example concrete: the original note never said how many of each there were, which is exactly the problem.)",
+      "(The 1 and 2 are invented to make the example concrete. The original note never said how many of each there were, which is exactly the problem.)",
       "Two quick tests tell you whether something deserves its own column:",
       {list:[
         "**Would you ever sort, filter, count or average by it?** If yes, it needs its own column. “Village” passes; so does “number of goats”.",
@@ -56,8 +56,8 @@ ICA.addUnit({
     {h:"What counts as an observation?", body:[
       "An [[observation-row|observation]] is one unit you studied, at one time: one household interview, one plot, one blood sample, one shop sale. The question to ask is “**one row = one what?**” and to write the answer down.",
       "Real projects often record things at two levels. A household has one village and one number of members, but it may farm several plots, each with its own crop and area. If you force both into one table, you either repeat household facts on every plot row or spread plots across columns (plot1_crop, plot2_crop …). Broman and Woo’s answer is a **set of rectangles**: one table per kind of observation, linked by an identifier.",
-      {fig:'<svg viewBox="0 0 340 318"><defs><marker id="m321" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">households: one row = one household</text><rect class="d-panel" x="10" y="30" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="54" width="320" height="48" stroke-width="1"/><rect class="d-gold" x="10" y="30" width="90" height="72" stroke-width="2"/><path class="d-soft" d="M10,78 L330,78 M210,30 L210,102" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="108" y="47">village</text><text x="218" y="47">members</text><text x="18" y="71">H01</text><text x="108" y="71">Kibo</text><text x="322" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="108" y="95">Mto</text><text x="322" y="95" text-anchor="end">4</text><path class="d-ink" d="M55,108 C55,140 135,135 135,166" stroke-width="2" fill="none" marker-end="url(#m321)"/><text x="160" y="140">the same ID links them</text><text x="10" y="186">plots: one row = one plot</text><rect class="d-panel" x="10" y="196" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="220" width="320" height="72" stroke-width="1"/><rect class="d-gold" x="90" y="196" width="80" height="96" stroke-width="2"/><path class="d-soft" d="M10,244 L330,244 M10,268 L330,268 M250,196 L250,292" stroke-width="1"/><text x="18" y="213">plot_id</text><text x="98" y="213">hh_id</text><text x="178" y="213">crop</text><text x="258" y="213">area_ha</text><text x="18" y="237">P1</text><text x="98" y="237">H01</text><text x="178" y="237">maize</text><text x="322" y="237" text-anchor="end">0.5</text><text x="18" y="261">P2</text><text x="98" y="261">H01</text><text x="178" y="261">beans</text><text x="322" y="261" text-anchor="end">0.2</text><text x="18" y="285">P3</text><text x="98" y="285">H02</text><text x="178" y="285">maize</text><text x="322" y="285" text-anchor="end">0.8</text><text class="s" x="10" y="312">hh_id is unique in households, repeated in plots</text></svg>', alt:"Two small tables. The top table, households, has one row per household with columns hh_id, village and members: H01 Kibo 7, H02 Mto 4. The bottom table, plots, has one row per plot with columns plot_id, hh_id, crop and area in hectares: P1 H01 maize 0.5, P2 H01 beans 0.2, P3 H02 maize 0.8. The hh_id column is highlighted in both tables and an arrow joins them, labeled the same ID links them. A note says hh_id is unique in households and repeated in plots.", cap:"Two kinds of observation, two rectangles. Each household fact is written once; each plot fact is written once."},
-      "Now nothing is typed twice, and every question has a home: average household size uses the first table; total maize area uses the second; “maize area per village” joins the two by `hh_id` (with a lookup in a spreadsheet, or a join in a database, as Unit 10 shows).",
+      {fig:'<svg viewBox="0 0 340 318"><defs><marker id="m321" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">households: one row = one household</text><rect class="d-panel" x="10" y="30" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="54" width="320" height="48" stroke-width="1"/><rect class="d-gold" x="10" y="30" width="90" height="72" stroke-width="2"/><path class="d-soft" d="M10,78 L330,78 M210,30 L210,102" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="108" y="47">village</text><text x="218" y="47">members</text><text x="18" y="71">H01</text><text x="108" y="71">Kibo</text><text x="322" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="108" y="95">Mto</text><text x="322" y="95" text-anchor="end">4</text><path class="d-ink" d="M55,108 C55,140 135,135 135,166" stroke-width="2" fill="none" marker-end="url(#m321)"/><text x="160" y="140">the same ID links them</text><text x="10" y="186">plots: one row = one plot</text><rect class="d-panel" x="10" y="196" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="220" width="320" height="72" stroke-width="1"/><rect class="d-gold" x="90" y="196" width="80" height="96" stroke-width="2"/><path class="d-soft" d="M10,244 L330,244 M10,268 L330,268 M250,196 L250,292" stroke-width="1"/><text x="18" y="213">plot_id</text><text x="98" y="213">hh_id</text><text x="178" y="213">crop</text><text x="258" y="213">area_ha</text><text x="18" y="237">P1</text><text x="98" y="237">H01</text><text x="178" y="237">maize</text><text x="322" y="237" text-anchor="end">0.5</text><text x="18" y="261">P2</text><text x="98" y="261">H01</text><text x="178" y="261">beans</text><text x="322" y="261" text-anchor="end">0.2</text><text x="18" y="285">P3</text><text x="98" y="285">H02</text><text x="178" y="285">maize</text><text x="322" y="285" text-anchor="end">0.8</text><text class="s" x="10" y="312">hh_id is unique in households, repeated in plots</text></svg>', alt:"Two small tables. The top table, households, has one row per household with columns hh_id, village and members: H01 Kibo 7, H02 Mto 4. The bottom table, plots, has one row per plot with columns plot_id, hh_id, crop and area in hectares: P1 H01 maize 0.5, P2 H01 beans 0.2, P3 H02 maize 0.8. The hh_id column is highlighted in both tables, and an arrow joins them, labeled the same ID links them. A note says hh_id is unique in households and repeated in plots.", cap:"Two kinds of observation, two rectangles. Each household fact is written once; each plot fact is written once."},
+      "Now nothing is typed twice, and every question has a home. Average household size uses the first table. Total maize area uses the second. “Maize area per village” joins the two by `hh_id`. You can do this with a lookup in a spreadsheet, or a join in a database, as Unit 10 shows.",
       {tip:"Keep each rectangle on its own sheet (or in its own file, which Broman and Woo prefer because each exports neatly to one CSV). Add a separate notes sheet if you like: Data Carpentry recommends a tab for notes about cleaning steps."}
     ]},
     {h:"One rectangle per sheet", body:[
@@ -69,7 +69,7 @@ ICA.addUnit({
         ["The header row repeated every 30 rows","Repeated headers get mixed into the data as if they were records","Freeze the header row instead"],
         ["Two header rows (“week 4” above date, weight, glucose)","Programs expect one row of names; the top row is usually a merged cell","One header row: `date_4`, `weight_4` … or a long layout with a week column"]
       ]},
-      "The first three come from Data Carpentry’s list of common spreadsheet errors; the two-header-row problem comes from Broman and Woo, who also note that a sheet should be a **single rectangle** with variable names in the first row. A title, a total or a stray note in a corner breaks the rectangle too."
+      "The first three come from Data Carpentry’s list of common spreadsheet errors. The two-header-row problem comes from Broman and Woo. They also note that a sheet should be a **single rectangle** with variable names in the first row. A title, a total or a stray note in a corner breaks the rectangle too."
     ]},
     {h:"Long and wide", body:[
       "The same measurements can be laid out in two shapes. Here are monthly rainfall readings from three weather stations:",
@@ -85,10 +85,10 @@ ICA.addUnit({
       {key:"Store long when in doubt; present wide when people need to read it."}
     ]},
     {h:"Reshaping between them", body:[
-      "**Long to wide** is easy in every spreadsheet: a [[pivot-table|pivot table]] with station as rows, month as columns and the sum of rain_mm as values produces the wide table on demand ({{pivot-tables}}). The long data stays untouched underneath.",
+      "**Long to wide** is easy in every spreadsheet. A [[pivot-table|pivot table]] with station as rows, month as columns and the sum of rain_mm as values produces the wide table on demand ({{pivot-tables}}). The long data stays untouched underneath.",
       "**Wide to long** takes more work in a spreadsheet:",
       {list:[
-        "**By hand (any app, fine for small tables):** make a new sheet with the headers `station`, `month`, `rain_mm`. Copy the station names into the station column once for each month column, stacked under each other; fill the month column (jan for the first block, feb for the second …); then copy each month’s values into rain_mm in the same order. Check a few rows against the wide table.",
+        "**By hand (any app, fine for small tables):** make a new sheet with the headers `station`, `month`, `rain_mm`. Copy the station names into the station column once for each month column, stacked under each other. Fill the month column (jan for the first block, feb for the second …). Then copy each month’s values into rain_mm in the same order. Check a few rows against the wide table.",
         "**Desktop Excel:** Power Query can do it in one step. Select the table, choose **Data → From Table/Range**, select the station column, then **Transform → Unpivot Other Columns**. The new columns are called Attribute and Value by default; rename them and choose **Close & Load**."
       ]},
       "Copying by hand is where mistakes creep in, which is why Broman and Woo advise against rearranging existing data by copy and paste when you can avoid it. In Unit 9 you’ll reshape with one line of R ({{reshaping-data}}), which also leaves a record of exactly what was done.",
@@ -151,7 +151,7 @@ ICA.addUnit({
       {t:"The formula is wrong: COUNTIF can’t count text", why:"COUNTIF counts text matches perfectly well; that’s what it’s doing here."},
       {t:"Those IDs are stored as numbers instead of text", why:"Storage type affects leading zeros, not how many times an ID appears. A count of 2 means a repeat."}
     ]},
-    {id:"t3u2-l1-x7", type:"explain", q:"A researcher keeps one sheet with a row per plot: each row repeats the household’s village and number of members, then gives the plot’s crop and area. Explain why splitting this into two tables linked by `hh_id` is better.", hint:"Ask “one row = one what?” for each piece of information.", model:"Village and household size describe the household; crop and area describe each plot. They are two kinds of observation. In one plot-level sheet, household facts are typed again on every plot row, which wastes effort and invites contradictions, such as the same household listed in two villages. A households table (one row per household) and a plots table (one row per plot), both carrying `hh_id`, store each fact once, and you can still join them for questions like maize area per village.", points:["Identifies two kinds of observation: households and plots", "Explains the problem of repeating household facts on every row", "Describes two tables linked by the `hh_id` identifier", "Says the tables can be joined again when a question needs both"]}
+    {id:"t3u2-l1-x7", type:"explain", q:"A researcher keeps one sheet with a row per plot: each row repeats the household’s village and number of members, then gives the plot’s crop and area. Explain why splitting this into two tables linked by `hh_id` is better.", hint:"Ask “one row = one what?” for each piece of information.", model:"Village and household size describe the household. Crop and area describe each plot. They are two kinds of observation. In one plot-level sheet, household facts are typed again on every plot row. This wastes effort and invites contradictions, such as the same household listed in two villages. A households table (one row per household) and a plots table (one row per plot) both carry `hh_id`. They store each fact once, and you can still join them for questions like maize area per village.", points:["Identifies two kinds of observation: households and plots", "Explains the problem of repeating household facts on every row", "Describes two tables linked by the `hh_id` identifier", "Says the tables can be joined again when a question needs both"]}
    ],
    apply:{intro:"Practice restructuring and checking a small dataset. Everything works in any of the free spreadsheet apps, including Google Sheets on a phone (typing on a phone is slower, so keep the tables small).", tasks:[
      {t:"Split one messy table into two rectangles", app:{
@@ -169,7 +169,7 @@ ICA.addUnit({
        libre:["Make a long table `station, month, rain_mm` with the nine rows from the lesson.","Click inside it and choose **Insert → Pivot Table** → **Current selection** → **OK**. Drag **station** to Row Fields, **month** to Column Fields and **rain_mm** to Data Fields (Sum), then **OK**.","You now have the wide table, built from the long one."],
        apple:["Make a long table `station, month, rain_mm` with the nine rows from the lesson.","Select the table and choose **Organize → Create Pivot Table → On New Sheet** (or use the **Organize** sidebar).","In the **Pivot Options** tab, add station to **Rows**, month to **Columns** and rain_mm to **Values** (Sum)."]
      }}
-   ], proof:"A workbook with your untouched messy sheet, a households sheet and a plots sheet linked by hh_id, an ID check that found and fixed a duplicate, and (optionally) a pivot table that turns long rainfall data into a wide summary."},
+   ], proof:"A workbook with your untouched messy sheet, a households sheet and a plots sheet linked by hh_id, and an ID check that found and fixed a duplicate. Optionally, add a pivot table that turns long rainfall data into a wide summary."},
    read:[
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists → “Formatting Data Tables in Spreadsheets” (sections “Tidy data in spreadsheets”, “Using multiple tables” and “Using multiple tabs”)"},
     {book:"dcss", where:"Background reading: Data Organization in Spreadsheets for Social Scientists → “Introduction” (“Problems with Spreadsheets”)"}
@@ -198,12 +198,12 @@ ICA.addUnit({
         "**Dates:** one format, preferably year-month-day (Lesson 4).",
         "**Notes:** the same phrase for the same situation, not `dead` one day and `Dead` the next."
       ]},
-      "The hook showed why “close enough” isn’t enough. Spreadsheet functions such as COUNTIF ignore capitals, and so do the filter lists and pivot tables of Excel and LibreOffice Calc, which can make a messy column look fine. But analysis programs such as R and Python treat `Male` and `male` as different, and every app treats ` male` (with a space) as different.",
-      {warn:"Spaces at the start or end of an entry are invisible. In Excel, Google Sheets and LibreOffice Calc, `=TRIM(A2)` gives a cleaned copy. In Excel, TRIM doesn’t remove the **[[non-breaking-space|non-breaking space]]** that web pages often contain (Microsoft’s help says so; LibreOffice’s TRIM doesn’t either): `=TRIM(SUBSTITUTE(A2, CHAR(160), \" \"))` swaps it for an ordinary space first."},
+      "The hook showed why “close enough” isn’t enough. Spreadsheet functions such as COUNTIF ignore capitals. So do the filter lists and pivot tables of Excel and LibreOffice Calc, which can make a messy column look fine. But analysis programs such as R and Python treat `Male` and `male` as different. Every app treats ` male` (with a space) as different.",
+      {warn:"Spaces at the start or end of an entry are invisible. In Excel, Google Sheets and LibreOffice Calc, `=TRIM(A2)` gives a cleaned copy. Web pages often contain a **[[non-breaking-space|non-breaking space]]**. In Excel, TRIM doesn’t remove it (Microsoft’s help says so; LibreOffice’s TRIM doesn’t either). This formula swaps it for an ordinary space first: `=TRIM(SUBSTITUTE(A2, CHAR(160), \" \"))`."},
       {lab:"fx-trim", t:"Practice: fix a lookup that fails because of hidden spaces"}
     ]},
     {h:"Column names that travel well", body:[
-      "Column names (Data Carpentry calls them field names) are read by people and by programs. Programs are fussy: a space can split one name into two, a symbol can mean something in a programming language, and a name starting with a digit isn’t allowed as a plain name in R or Python.",
+      "Column names (Data Carpentry calls them field names) are read by people and by programs. Programs are fussy. A space can split one name into two. A symbol can mean something in a programming language. A name starting with a digit isn’t allowed as a plain name in R or Python.",
       {table:[
         ["Good","Also fine","Avoid"],
         ["`wall_type`","`WallType`","`wall type` (space)"],
@@ -230,14 +230,14 @@ ICA.addUnit({
         ["`0 (below threshold)`","Text, and the note is lost to calculations","`0`, plus a `note` column"],
         ["A comment or note attached to the cell","Most analysis software can’t see cell comments","A `note` column with consistent phrases"]
       ]},
-      "The `0 (below threshold)` example comes from Broman and Woo; the point about comments comes from Data Carpentry, which notes that most analysis software can’t see Excel or LibreOffice comments.",
-      "**Keep one unit per column.** If measurements arrive in different units (some in pounds, some in kilograms), either convert them on entry, or keep the number in one column and the unit in a `weight_unit` column next to it, and convert later with a formula. Never mix units silently.",
+      "The `0 (below threshold)` example comes from Broman and Woo. The point about comments comes from Data Carpentry. It notes that most analysis software can’t see Excel or LibreOffice comments.",
+      "**Keep one unit per column.** Sometimes measurements arrive in different units (some in pounds, some in kilograms). Either convert them when you enter them, or keep the number in one column and the unit in a `weight_unit` column next to it. Then convert later with a formula. Never mix units silently.",
       {ex:"weight  weight_unit  note\n45      g\n0       g            below threshold\n1.2     kg           scale B", label:"Values, units and notes in separate columns", mono:true}
     ]},
     {h:"Formatting is not data", body:[
-      "Highlighting a suspicious value in yellow, coloring rows by group or making excluded rows gray feels natural, but color is invisible to formulas, lost when you save as CSV, and can’t be seen by everyone. Broman and Woo’s advice: add an **[[indicator-column|indicator column]]** instead.",
-      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="m322" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">Meaning stored as color</text><rect class="d-panel" x="10" y="30" width="220" height="24" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="118" y="47">members</text><rect class="d-soft" x="10" y="54" width="220" height="72" stroke-width="1"/><rect class="d-gold" x="10" y="78" width="220" height="24" stroke-width="2"/><path class="d-soft" d="M110,30 L110,126 M10,78 L230,78 M10,102 L230,102" stroke-width="1"/><text x="18" y="71">H01</text><text x="222" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="222" y="95" text-anchor="end">90</text><text x="18" y="119">H03</text><text x="222" y="119" text-anchor="end">5</text><text class="s" x="240" y="88">yellow =</text><text class="s" x="240" y="103">“check this”</text><path class="d-ink" d="M120,134 L120,166" stroke-width="2" marker-end="url(#m322)"/><text x="132" y="155">make it a column</text><text x="10" y="190">Meaning stored as data</text><rect class="d-panel" x="10" y="200" width="320" height="24" stroke-width="1"/><text x="18" y="217">hh_id</text><text x="118" y="217">members</text><text x="238" y="217">flag</text><rect class="d-soft" x="10" y="224" width="320" height="72" stroke-width="1"/><path class="d-soft" d="M110,200 L110,296 M230,200 L230,296 M10,248 L330,248 M10,272 L330,272" stroke-width="1"/><text x="18" y="241">H01</text><text x="222" y="241" text-anchor="end">7</text><text x="238" y="241">ok</text><text x="18" y="265">H02</text><text x="222" y="265" text-anchor="end">90</text><rect class="d-rose" x="234" y="252" width="90" height="16" rx="3" stroke-width="1.5"/><text x="238" y="265">check</text><text x="18" y="289">H03</text><text x="222" y="289" text-anchor="end">5</text><text x="238" y="289">ok</text></svg>', alt:"Top: a small table of household IDs and member counts in which the row for H02, with 90 members, is shaded yellow, and a note says yellow means check this. An arrow labeled make it a column points down to a second table with an extra column called flag, holding ok, check and ok. The word check is highlighted.", cap:"Color can be lost or misread; a flag column can be filtered, counted and exported."},
-      "Now you can filter the rows to check, count them with COUNTIF, and the information survives export. Color can still help people, as long as it’s **derived from the data**: conditional formatting that shades every row where `flag` is “check” is fine, because the meaning lives in the column and the color just displays it.",
+      "It feels natural to highlight a suspicious value in yellow, color rows by group or make excluded rows gray. But formulas can’t see color. Color is lost when you save as CSV, and not everyone can see it. Broman and Woo’s advice: add an **[[indicator-column|indicator column]]** instead.",
+      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="m322" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">Meaning stored as color</text><rect class="d-panel" x="10" y="30" width="220" height="24" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="118" y="47">members</text><rect class="d-soft" x="10" y="54" width="220" height="72" stroke-width="1"/><rect class="d-gold" x="10" y="78" width="220" height="24" stroke-width="2"/><path class="d-soft" d="M110,30 L110,126 M10,78 L230,78 M10,102 L230,102" stroke-width="1"/><text x="18" y="71">H01</text><text x="222" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="222" y="95" text-anchor="end">90</text><text x="18" y="119">H03</text><text x="222" y="119" text-anchor="end">5</text><text class="s" x="240" y="88">yellow =</text><text class="s" x="240" y="103">“check this”</text><path class="d-ink" d="M120,134 L120,166" stroke-width="2" marker-end="url(#m322)"/><text x="132" y="155">make it a column</text><text x="10" y="190">Meaning stored as data</text><rect class="d-panel" x="10" y="200" width="320" height="24" stroke-width="1"/><text x="18" y="217">hh_id</text><text x="118" y="217">members</text><text x="238" y="217">flag</text><rect class="d-soft" x="10" y="224" width="320" height="72" stroke-width="1"/><path class="d-soft" d="M110,200 L110,296 M230,200 L230,296 M10,248 L330,248 M10,272 L330,272" stroke-width="1"/><text x="18" y="241">H01</text><text x="222" y="241" text-anchor="end">7</text><text x="238" y="241">ok</text><text x="18" y="265">H02</text><text x="222" y="265" text-anchor="end">90</text><rect class="d-rose" x="234" y="252" width="90" height="16" rx="3" stroke-width="1.5"/><text x="238" y="265">check</text><text x="18" y="289">H03</text><text x="222" y="289" text-anchor="end">5</text><text x="238" y="289">ok</text></svg>', alt:"Top: a small table of household IDs and member counts. The row for H02, with 90 members, is shaded yellow, and a note says yellow means check this. An arrow labeled make it a column points down to a second table with an extra column called flag, holding ok, check and ok. The word check is highlighted.", cap:"Color can be lost or misread; a flag column can be filtered, counted and exported."},
+      "Now you can filter the rows to check and count them with COUNTIF. The information survives export. Color can still help people, as long as it is **derived from the data**. For example, conditional formatting that shades every row where `flag` is “check” is fine. The meaning lives in the column, and the color just displays it.",
       {table:[
         ["Formatting used as data","Column instead"],
         ["Gray rows = exclude from analysis","`exclude` = TRUE / FALSE (and an `exclude_reason`)"],
@@ -245,7 +245,7 @@ ICA.addUnit({
         ["Bold = estimated, not measured","`estimated` = yes / no"],
         ["Merged cell spanning a group of rows","A `group` column filled in on every row"]
       ]},
-      "Merged cells are the formatting habit that does the most damage to data. Broman and Woo point out they also break their “no empty cells” rule: the value belongs to the whole group, but it is stored in only one cell (unmerge, and the other cells are empty)."
+      "Merged cells are the formatting habit that does the most damage to data. Broman and Woo point out that they also break the “no empty cells” rule. The value belongs to the whole group, but it is stored in only one cell. If you unmerge, the other cells are empty."
     ]},
     {h:"Fill in every row", body:[
       "People typing data often write a value once and leave the cells below empty to mean “same as above”. It reads well, but it isn’t data: a program sees blanks. Worse, Broman and Woo note that once the rows are sorted, there may be no way to recover which value each blank belonged to.",
@@ -257,12 +257,12 @@ ICA.addUnit({
       {list:[
         "**Line breaks inside a cell** (typed with [[kbd:Alt]] + [[kbd:Enter]] in Excel on Windows): in a CSV, a careless program can read one record as two.",
         "**Tabs:** in a tab-separated file, a tab inside a value shifts every column after it.",
-        "**Curly quotes and dashes** from word processors (“ ” ‘ ’ –): fine as text, but they don’t match the straight `\"` and `-` you type when searching or filtering, and they can turn into gibberish if a file’s encoding is misread.",
+        "**Curly quotes and dashes** from word processors (“ ” ‘ ’ –): they are fine as text. But they don’t match the straight `\"` and `-` you type when searching or filtering. They can also turn into gibberish if a file’s encoding is misread.",
         "**Non-breaking spaces** from web pages: they look like spaces but don’t match them."
       ]},
       "Data Carpentry’s rule of thumb: treat a text cell like a simple web form that can contain only text and spaces. When you paste, paste the **values only**, without formatting:",
       {list:[
-        "Excel: **Home → Paste → Paste Values** (in Excel for Microsoft 365 on Windows, [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:V]] pastes values when you copy within Excel, and matches the sheet’s formatting when you copy from another app).",
+        "Excel: **Home → Paste → Paste Values**. In Excel for Microsoft 365 on Windows, [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:V]] pastes values when you copy within Excel. It matches the sheet’s formatting when you copy from another app.",
         "Google Sheets: **Edit → Paste special → Values only**, or [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:V]] ([[kbd:Cmd]] + [[kbd:Shift]] + [[kbd:V]] on a Mac).",
         "LibreOffice Calc: **Edit → Paste Special → Paste Unformatted Text**.",
         "Numbers: **Edit → Paste and Match Style**."
@@ -343,7 +343,7 @@ ICA.addUnit({
        libre:["Copy a sentence with formatting from a web page or document.","Click a cell and choose **Edit → Paste Special → Paste Unformatted Text**.","Compare with an ordinary paste in another cell."],
        apple:["Copy a sentence with formatting from a web page or document.","Click a cell and choose **Edit → Paste and Match Style**.","Compare with an ordinary paste in another cell."]
      }}
-   ], proof:"A small sheet whose category column has one spelling per category, short column names without spaces, flag and note columns instead of color and in-cell notes, and a note of which variants your filter revealed."},
+   ], proof:"A small sheet whose category column has one spelling per category, short column names without spaces, and flag and note columns instead of color and in-cell notes. Also add a note of which variants your filter revealed."},
    read:[
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists → “Formatting Data Tables in Spreadsheets”, section “Common Spreadsheet Errors” (formatting, comments and units, more than one piece of information in a cell, problematic field names, special characters)"}
    ]
@@ -400,13 +400,13 @@ ICA.addUnit({
       {warn:"If you use `NA`, check that it can’t be a real value in any column. A list of countries with ISO codes includes Namibia as `NA`; pandas (and R’s `read.csv`) would read it as missing unless told otherwise."}
     ]},
     {h:"Why a value is missing matters", body:[
-      "Missing isn’t one thing. In a survey, a blank income could mean the person refused, didn’t know, wasn’t asked (skipped by design), or the answer sheet was lost. These have different consequences: “not asked because they have no job” is an answer; “refused” is information about the survey (Track 4’s survey unit covers why this matters, {{survey-design}}).",
+      "Missing isn’t one thing. In a survey, a blank income could mean several things. The person refused. The person didn’t know. The person wasn’t asked (skipped by design). Or the answer sheet was lost. These have different consequences. “Not asked because they have no job” is an answer. “Refused” is information about the survey (Track 4’s survey unit covers why this matters, {{survey-design}}).",
       "Broman and Woo’s advice: don’t write the explanation **in** the value cell. Keep the value cell for the value (or the missing code) and add a column for the reason:",
       {ex:"hh_id  income  income_missing_reason\nH01    1200\nH02    NA      refused\nH03    NA      not asked (no paid work)\nH04    850", label:"A value column and a reason column", mono:true},
-      "Large surveys often use numbered reason codes instead (for example 1 = refused, 2 = don’t know). That’s fine in a **separate** column described in the dictionary; it’s the habit of putting those numbers in the income column itself that causes −999-style accidents."
+      "Large surveys often use numbered reason codes instead (for example 1 = refused, 2 = don’t know). That’s fine in a **separate** column described in the dictionary. The problem is putting those numbers in the income column itself. That is what causes −999-style accidents."
     ]},
     {h:"The data dictionary", body:[
-      "Data Carpentry calls documentation about your data [[metadata]]: “data about data”. You may know your dataset intimately now, but in six months you won’t remember the exact wording of the question behind the `water_use` column, and nobody else ever knew it.",
+      "Data Carpentry calls documentation about your data [[metadata]]: “data about data”. You may know your dataset well now. But in six months you won’t remember the exact wording of the question behind the `water_use` column. Nobody else ever knew it.",
       "A [[data-dictionary|data dictionary]] describes each column. Broman and Woo suggest making it a rectangle itself, so a program can read it too: one row per variable.",
       {table:[
         ["variable","description","type and unit","allowed values / missing"],
@@ -415,18 +415,18 @@ ICA.addUnit({
         ["`wall_type`","Main material of the outer walls (interviewer’s observation)","category","grass, muddaub, burntbricks, sunbricks, cement"],
         ["`interview_date`","Date of the interview","date, YYYY-MM-DD","2026-01-05 to 2026-03-31"]
       ]},
-      "Useful columns to include, drawn from Broman and Woo and Data Carpentry: the exact variable name, a readable label for charts, a description (for survey data, the **exact question wording**), the type, the unit, the allowed range or list of categories with their definitions (what counts as “burntbricks”?), and how missing values are recorded.",
-      {tip:"Notice how the dictionary feeds everything else: the allowed values become your validation rules (Lesson 5), the units explain the numbers, and the missing-value rule tells R or Python what to treat as NA."}
+      "Useful columns to include come from Broman and Woo and Data Carpentry. Include the exact variable name and a readable label for charts. Add a description (for survey data, the **exact question wording**), the type and the unit. Add the allowed range or list of categories with their definitions (what counts as “burntbricks”?). Also say how missing values are recorded.",
+      {tip:"Notice how the dictionary feeds everything else. The allowed values become your validation rules (Lesson 5). The units explain the numbers. The missing-value rule tells R or Python what to treat as NA."}
     ]},
     {h:"Where documentation lives", body:[
       "Data Carpentry recommends keeping metadata **out of the data file itself**: legends, notes and explanations in the data sheet confuse programs. Store it next to the data instead:",
       {list:[
         "**The data dictionary**: a separate sheet in the workbook while you work, and a separate file (such as `households_dictionary.csv`) when you share.",
-        "**A [[readme|README]] file**: a plain-text file in the project folder that says who collected the data, when, where and how; what each file contains and how the files relate; which version is current; and any license or conditions.",
-        "**Codebooks and standards**: large surveys publish detailed codebooks (Data Carpentry points to the General Social Survey’s online codebook as an example), and the Data Documentation Initiative (DDI) is a standard for describing social-science data."
+        "**A [[readme|README]] file**: a plain-text file in the project folder. It says who collected the data, when, where and how. It says what each file contains and how the files relate. It also gives the current version and any license or conditions.",
+        "**Codebooks and standards**: large surveys publish detailed codebooks. Data Carpentry points to the General Social Survey’s online codebook as an example. The Data Documentation Initiative (DDI) is a standard for describing social-science data."
       ]},
       {ex:"README.txt\n\nHousehold survey, two villages, January–March 2026.\nCollected by: field team of the community water project.\nFiles:\n  households.csv            one row per household\n  plots.csv                 one row per plot (hh_id links)\n  households_dictionary.csv the columns, units and codes\nMissing values: blank cells (see dictionary).\nDates: YYYY-MM-DD. Encoding: UTF-8.\nVersion: 2026-04-02 (replaces 2026-03-20).", label:"A short README (invented project)", mono:true},
-      "This is also where Track 4’s data management plans ({{data-management-plan}}) and Unit 11’s FAIR principles ({{fair-data}}) start: data that is described is data that can be found, trusted and reused."
+      "This is also where Track 4’s data management plans ({{data-management-plan}}) and Unit 11’s FAIR principles ({{fair-data}}) start. Data that is described can be found, trusted and reused."
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -476,10 +476,10 @@ ICA.addUnit({
    ],
    apply:{intro:"Run the missing-value experiment yourself, then document a small dataset. Any free app works, including Google Sheets on a phone.", tasks:[
      {t:"See how functions treat blanks and codes", app:{
-       all:["In column A type the ages 34, 41, (leave the third cell empty), 29, 36. Copy them to columns B, C and D.","Change the third value: type `NA` in column B, `0` in column C and `-999` in column D.","Under each column, type `=AVERAGE(` the five cells `)`, then `=COUNT(…)` and `=COUNTA(…)` for the same cells.","Compare: the averages should be 35, 35, 28 and −171.8; COUNT gives 4, 4, 5, 5; COUNTA gives 4, 5, 5, 5.","Finally, in a spare cell, add the second and third cells of column A (`=A2+A3` if your ages start in A1), then do the same for column B (`=B2+B3`). One gives a number with no warning; the other gives #VALUE!."]
+       all:["In column A type the ages 34, 41, (leave the third cell empty), 29, 36. Copy them to columns B, C and D.","Change the third value: type `NA` in column B, `0` in column C and `-999` in column D.","Under each column, type `=AVERAGE(` the five cells `)`, then `=COUNT(…)` and `=COUNTA(…)` for the same cells.","Compare: the averages should be 35, 35, 28 and −171.8; COUNT gives 4, 4, 5, 5; COUNTA gives 4, 5, 5, 5.","Finally, in a spare cell, add the second and third cells of column A (`=A2+A3` if your ages start in A1). Then do the same for column B (`=B2+B3`). One gives a number with no warning. The other gives #VALUE!."]
      }, write:"Which way of recording the missing value would you choose for your own data, and why?"},
      {t:"Write a data dictionary and a README", app:{
-       all:["Pick a small dataset: your households and plots sheets from Lesson 1, or a list of your own (books read, plants watered, expenses).","Add a sheet called `dictionary` with the headers `variable`, `description`, `type`, `unit`, `allowed_values`, `missing_code`.","Fill in one row per column of your data. For descriptions, write what a stranger would need: the exact question, what counts, and what doesn’t.","In a plain-text editor (Notepad, TextEdit set to plain text, or a notes app on a phone), write a short README: what the data is, who collected it and when, what each sheet or file holds, the missing-value code, the date format and the version date."]
+       all:["Pick a small dataset: your households and plots sheets from Lesson 1, or a list of your own (books read, plants watered, expenses).","Add a sheet called `dictionary` with the headers `variable`, `description`, `type`, `unit`, `allowed_values`, `missing_code`.","Fill in one row per column of your data. For descriptions, write what a stranger would need: the exact question, what counts, and what doesn’t.","In a plain-text editor, write a short README. Use Notepad, TextEdit set to plain text, or a notes app on a phone. Say what the data is, who collected it and when, and what each sheet or file holds. Add the missing-value code, the date format and the version date."]
      }}
    ], proof:"A sheet showing the four averages and counts side by side, and a dictionary sheet plus a README for a small dataset of your own."},
    read:[
@@ -505,7 +505,7 @@ ICA.addUnit({
       {lab:"fl-days", t:"Practice: subtract two dates to get the number of days between them"}
     ]},
     {h:"Day first or month first?", body:[
-      "Data Carpentry’s example: type `7/12/88`. Someone in the UK reads 7 December 1988; someone in the US reads 12 July 1988. Your spreadsheet decides using its [[locale]], the regional settings of your computer or file (Google Sheets: **File → Settings → Locale**; LibreOffice Calc: **Tools → Options → Language Settings → Languages → Locale setting**; Numbers: **File → Advanced → Language & Region** for each spreadsheet; Excel follows your computer’s region settings).",
+      "Data Carpentry’s example: type `7/12/88`. Someone in the UK reads 7 December 1988. Someone in the US reads 12 July 1988. Your spreadsheet decides using its [[locale]], the regional settings of your computer or file. Google Sheets: **File → Settings → Locale**. LibreOffice Calc: **Tools → Options → Language Settings → Languages → Locale setting**. Numbers: **File → Advanced → Language & Region** for each spreadsheet. Excel follows your computer’s region settings.",
       "The worst case isn’t that every date is wrong. It’s a column that is **half wrong, silently**. Suppose day-first dates are typed into a sheet whose locale reads month first:",
       {table:[
         ["Typed (meant as day/month)","What a month-first sheet stores","Alignment"],
@@ -525,12 +525,12 @@ ICA.addUnit({
         "**The 1904 system** was the default in earlier versions of Excel for Mac, so old workbooks may still use it.",
         "**The difference is 1,462 days.** If a serial number from a 1904 workbook is read as a 1900 date, 3 April 2026 (44653) becomes 2 April 2022; the other way round, 46115 becomes 4 April 2030."
       ]},
-      "Excel converts dates automatically when you copy them between workbooks with different systems (Microsoft notes a setting that can turn this off, and that dates in copied charts can’t be converted). The risk is in data that travels as plain numbers: serial numbers exported to a CSV, pasted as values, or combined from many files. Data Carpentry warns that such shifts may not be caught by ordinary checks if the date ranges overlap.",
+      "Excel converts dates automatically when you copy them between workbooks with different systems. Microsoft notes a setting that can turn this off. It also notes that dates in copied charts can’t be converted. The risk is in data that travels as plain numbers. Examples are serial numbers exported to a CSV, pasted as values, or combined from many files. Data Carpentry warns that ordinary checks may not catch such shifts if the date ranges overlap.",
       "Where the settings are: Excel for Windows, **File → Options → Advanced** → “When calculating this workbook” → **Use 1904 date system**. LibreOffice Calc, **Tools → Options → LibreOffice Calc → Calculate** → Date, with day zero 1899-12-30 (the default), 1900-01-01 or 1904-01-01. Google Sheets counts days since 30 December 1899 and has no setting. Numbers stores dates as its own date-and-time type.",
       {warn:"One more quirk: for compatibility with an older program, Excel treats 1900 as a leap year, though it wasn’t. LibreOffice’s help notes that dates before 1 March 1900 are therefore calculated differently in Excel and Calc."}
     ]},
     {h:"Old dates and dates without a year", body:[
-      "**Dates before 1900.** Excel’s 1900 system starts on 1 January 1900. Data Carpentry warns that Excel leaves earlier dates untouched, as text, so a historical column that mixes 1890s and 1900s dates ends up half dates, half text. LibreOffice Calc and Google Sheets can store earlier dates (as negative serial numbers, counting back from 30 December 1899), but if the file will ever pass through Excel, record historical dates as separate year, month and day numbers (below). Rebuild them with care: in Excel and Google Sheets, `DATE()` treats a year from 0 to 1899 as a number of years after 1900, so `=DATE(1880, 5, 1)` gives a date in 3780. LibreOffice’s DATE gives 1 May 1880.",
+      "**Dates before 1900.** Excel’s 1900 system starts on 1 January 1900. Data Carpentry warns that Excel leaves earlier dates untouched, as text. A historical column that mixes 1890s and 1900s dates ends up half dates, half text. LibreOffice Calc and Google Sheets can store earlier dates, as negative serial numbers counting back from 30 December 1899. But if the file will ever pass through Excel, record historical dates as separate year, month and day numbers (below). Rebuild them with care. In Excel and Google Sheets, `DATE()` treats a year from 0 to 1899 as a number of years after 1900. So `=DATE(1880, 5, 1)` gives a date in 3780. LibreOffice’s DATE gives 1 May 1880.",
       "**Dates without a year.** Type `17/11` (or `11/17` in a month-first locale) and the app quietly adds the **current year**. Data Carpentry’s exercise makes the point: that’s wrong for historical data, and wrong for last year’s records typed this year.",
       "**Partial dates.** Sometimes you know only the year, or the year and month (“born 1952”, “arrived spring 2019”). A full date with an invented day (1952-01-01) pretends to know more than you do. Separate columns let the day stay blank, with the reason in the dictionary."
     ]},
@@ -542,7 +542,7 @@ ICA.addUnit({
         ["Separate `year`, `month`, `day` columns","Ordinary numbers that no app or locale changes; partial dates are easy","Rebuild a date with `=DATE(year, month, day)` before calculating"],
         ["Text, such as `'2026-04-03` or the number `20260403`","The app leaves it exactly as typed","No date arithmetic until converted; needs perfect consistency"]
       ]},
-      "To split a real date in B2 into parts, use `=YEAR(B2)`, `=MONTH(B2)` and `=DAY(B2)` in three new columns, fill them down, and format the results as plain numbers (otherwise the app may show 2026 as a date in 1905). These functions exist in Excel, Google Sheets, LibreOffice Calc and Numbers. `=DATE(C2, D2, E2)` puts the parts back together.",
+      "To split a real date in B2 into parts, use `=YEAR(B2)`, `=MONTH(B2)` and `=DAY(B2)` in three new columns. Fill them down. Format the results as plain numbers, or the app may show 2026 as a date in 1905. These functions exist in Excel, Google Sheets, LibreOffice Calc and Numbers. `=DATE(C2, D2, E2)` puts the parts back together.",
       "To **display** real dates as year-month-day:",
       {list:[
         "Excel: select the cells, press [[kbd:Ctrl]] + [[kbd:1]] (Mac: [[kbd:Cmd]] + [[kbd:1]]), choose **Custom** and type `yyyy-mm-dd`.",
@@ -555,11 +555,11 @@ ICA.addUnit({
     {h:"When things that aren’t dates become dates", body:[
       "Track 1 told the story of gene symbols such as SEPT2 and MARCH1 turning into dates ({{cell-data-types}}). The details matter for anyone who handles codes:",
       {list:[
-        "In 2021, Mandhri Abeysooriya and colleagues found gene-name errors in **30.9%** of the published articles they checked that had Excel gene lists (3,436 of 11,117, from 2014 to 2020), up from about one-fifth in the 2016 study. They also found dates stored as five-digit serial numbers in place of gene names.",
+        "In 2021, Mandhri Abeysooriya and colleagues checked published articles that had Excel gene lists. They found gene-name errors in **30.9%** of them (3,436 of 11,117, from 2014 to 2020). This is up from about one-fifth in the 2016 study. They also found dates stored as five-digit serial numbers in place of gene names.",
         "They tested four apps by opening a CSV, pasting and typing. **Excel and Google Sheets converted gene names to dates in all three ways.** LibreOffice Calc (version 6.4) and Gnumeric did not, in their tests. Formatting the cells as text first prevented conversion in Excel and Google Sheets.",
         "It isn’t only genes. Age bands (`1-2`), product codes (`DEC1`, `MAR-3`), room numbers (`4/5`) and scores (`3-1`) can all look like dates."
       ]},
-      "**Excel’s Automatic Data Conversion settings.** After years of complaints, Microsoft added options to switch off specific conversions. In July 2022, Windows test users (Microsoft 365 Insiders) got three: removing leading zeros, cutting long numbers to 15 digits, and turning digits around an E into scientific notation. In October 2023 Microsoft announced an improved set for Windows (version 2309 or later) and, for the first time, Mac (version 16.77 or later), including an option to stop “continuous letters and numbers” such as `JAN1` becoming dates. Microsoft lists them for Excel for Microsoft 365 and Excel 2024 (Windows: **File → Options → Data**; Mac: **Excel → Preferences → Edit**). The conversions are still **on by default**, and Microsoft notes the settings don’t directly affect data imported with Power Query.",
+      "**Excel’s Automatic Data Conversion settings.** After years of complaints, Microsoft added options to switch off specific conversions. In July 2022, Windows test users (Microsoft 365 Insiders) got three. They remove leading zeros, cut long numbers to 15 digits, and turn digits around an E into scientific notation. In October 2023 Microsoft announced an improved set. It came to Windows (version 2309 or later) and, for the first time, Mac (version 16.77 or later). It includes an option to stop “continuous letters and numbers” such as `JAN1` becoming dates. Microsoft lists the options for Excel for Microsoft 365 and Excel 2024 (Windows: **File → Options → Data**; Mac: **Excel → Preferences → Edit**). The conversions are still **on by default**. Microsoft also notes that the settings don’t directly affect data imported with Power Query.",
       {key:"Protect codes before they enter: set the column to Text, or import with column types. Then check: sort the column, and look for dates or numbers where only codes should be."}
     ]},
     {h:"Common misconceptions", body:[
@@ -596,7 +596,7 @@ ICA.addUnit({
     {id:"t3u2-l4-x5", type:"mcq", q:"Priya’s lab sends gene lists to collaborators who use Excel, Google Sheets and LibreOffice Calc. According to the 2021 study by Abeysooriya and colleagues, which statement is accurate?", options:[
       {t:"Excel and Google Sheets converted gene names; text format first prevented it", ok:true, why:"Right. They converted gene names to dates whether the data was opened, pasted or typed. In their tests, Excel and Google Sheets converted in all three modes, LibreOffice 6.4 and Gnumeric didn’t, and text formatting prevented conversion in Excel and Google Sheets."},
       {t:"Only Excel converts gene names; Google Sheets never does", why:"The study found Google Sheets converted them too, in all three ways of entering data."},
-      {t:"The problem was solved in 2020 when the genes were renamed, so it no longer matters", why:"Renaming fixed many human symbols (SEPT1 became SEPTIN1), but the study notes that gene names of many other species hadn’t been changed, and other codes can still look like dates."},
+      {t:"The problem was solved in 2020 when the genes were renamed, so it no longer matters", why:"Renaming fixed many human symbols (SEPT1 became SEPTIN1). But the study notes that gene names of many other species hadn’t been changed, and other codes can still look like dates."},
       {t:"Turning on bold formatting for the column prevents conversion", why:"Font formatting has no effect on how values are interpreted. Text format (set before entry) does."}
     ]},
     {id:"t3u2-l4-x6", type:"order", q:"Put Hana’s steps for splitting an interview_date column (real dates in column B) into year, month and day columns in a sensible order.", items:[
@@ -622,12 +622,12 @@ ICA.addUnit({
        apple:["Open a blank spreadsheet. Type `7/12/88` in a cell. Open the **Format** sidebar → **Cell** → **Data Format** → **Date & Time**, and choose a date style that writes the month as a word.","New spreadsheets follow your Mac’s region settings (**System Settings → General → Language & Region**); one spreadsheet’s own setting is under **File → Advanced → Language & Region**. On an iPhone or iPad, **Settings → General → Language & Region**."]
      }, write:"Which date did 7/12/88 become in your app: 7 December or 12 July?"},
      {t:"Record dates safely, two ways", app:{
-       all:["In A1 type `interview_date`, then type three dates in year-month-day form: `2026-01-05`, `2026-02-17`, `2026-03-31`.","Check they’re real dates: they line up on the right, and the formula bar shows a date.","Set their display to year-month-day if your app changed it (Excel: [[kbd:Ctrl]] + [[kbd:1]] → **Custom** → `yyyy-mm-dd`; Google Sheets: **Format → Number → Custom date and time**; LibreOffice: **Format → Cells → Numbers → Date**, the 1999-12-31 style; Numbers: **Format → Cell → Data Format → Create Custom Format**).","In B1, C1 and D1 type `year`, `month`, `day`. In B2 type `=YEAR(A2)`, in C2 `=MONTH(A2)`, in D2 `=DAY(A2)`, and fill all three down.","If a result looks like a date, format that column as a plain number. Then in E2 type `=DATE(B2, C2, D2)-A2`: it should give 0 for every row."]
+       all:["In A1 type `interview_date`, then type three dates in year-month-day form: `2026-01-05`, `2026-02-17`, `2026-03-31`.","Check they’re real dates: they line up on the right, and the formula bar shows a date.","Set their display to year-month-day if your app changed it. Excel: [[kbd:Ctrl]] + [[kbd:1]] → **Custom** → `yyyy-mm-dd`. Google Sheets: **Format → Number → Custom date and time**. LibreOffice: **Format → Cells → Numbers → Date**, the 1999-12-31 style. Numbers: **Format → Cell → Data Format → Create Custom Format**.","In B1, C1 and D1 type `year`, `month`, `day`. In B2 type `=YEAR(A2)`, in C2 `=MONTH(A2)`, in D2 `=DAY(A2)`, and fill all three down.","If a result looks like a date, format that column as a plain number. Then in E2 type `=DATE(B2, C2, D2)-A2`: it should give 0 for every row."]
      }},
      {t:"See a half-wrong date column", app:{
        google:["In a new spreadsheet, open **File → Settings** and set **Locale** to **United States**.","In a column, type `12/07/2026`, `13/07/2026` and `25/07/2026` (meant as day first).","Look at the alignment: one sits on the right (a real date, but 7 December) and two on the left (text). Set the locale back afterwards."]
      }, appNote:"This experiment is easiest in Google Sheets, where each spreadsheet has its own locale setting and the steps work on a computer. In Excel and LibreOffice, changing the locale changes your computer’s or app’s settings, so just read the table in the lesson instead.", write:"Which entries became text, and which became the wrong date?"}
-   ], proof:"A note of how your app read 7/12/88 and where its date settings are, a small date column shown as yyyy-mm-dd with year, month and day columns that rebuild to the same dates, and (in Google Sheets) a half-wrong column you created and explained."},
+   ], proof:"A note of how your app read 7/12/88 and where its date settings are. A small date column shown as yyyy-mm-dd, with year, month and day columns that rebuild to the same dates. In Google Sheets, a half-wrong column you created and explained."},
    read:[
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists → “Dates as Data” (“Dates stored as integers”, “Regional date formatting” and the exercises “Separating dates into components” and “Default year”)"},
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists → “Exporting Data” (the paragraph on how Excel’s date defaults differ between versions)"}
@@ -657,7 +657,7 @@ ICA.addUnit({
       {tip:"Broman and Woo also advise against rearranging existing data by copy and paste: it’s easy to introduce errors and leaves no record. For big rearrangements, a short script in R or Python (Units 8 and 9) is repeatable and documents itself."}
     ]},
     {h:"Validation rules from the dictionary", body:[
-      "Your data dictionary (Lesson 3) already says what each column may hold. [[data-validation|Data validation]] makes the spreadsheet enforce it while people type. Data Carpentry’s two examples: household members must be a **whole number from 1 to 30** (a typed 90 is probably a slipped 9), and wall type must come **from a list** (grass, muddaub, burntbricks, sunbricks, cement), so nobody has to remember the spelling.",
+      "Your data dictionary (Lesson 3) already says what each column may hold. [[data-validation|Data validation]] makes the spreadsheet enforce it while people type. Data Carpentry gives two examples. Household members must be a **whole number from 1 to 30** (a typed 90 is probably a slipped 9). Wall type must come **from a list** (grass, muddaub, burntbricks, sunbricks, cement), so nobody has to remember the spelling.",
       {table:[
         ["Dictionary says","Rule","Excel / LibreOffice “Allow”"],
         ["members: whole number, 1–30","Whole number between 1 and 30","Whole number / Whole Numbers"],
@@ -669,7 +669,7 @@ ICA.addUnit({
       "**Keep long lists on their own sheet.** Data Carpentry suggests storing the allowed values as a small table on a separate tab and pointing the rule at it. Then adding a category means editing one list, and every cell that uses it updates.",
       "**Choose how strict to be.** Excel’s error alert has three styles: **Stop** refuses the entry, **Warning** asks whether to continue, and **Information** just tells you. LibreOffice’s **Error Alert** tab offers the same actions (Stop, Warning, Information, plus Macro). Google Sheets either **rejects the input** (the default for dropdowns) or **shows a warning** and marks the cell. Use Stop for things that are always wrong (31 February, a member count of 0); use Warning for things that are merely unusual (a household of 25).",
       "**Explain the rule.** An input message (Excel’s **Input Message** tab, LibreOffice’s **Input Help**) appears when someone selects the cell: “Whole number from 1 to 30: people who slept in the house last night.” It doubles as a reminder of the dictionary.",
-      "Numbers has no general validation rules, but its cell controls limit entries: a **pop-up menu** for lists, and a **stepper** or **slider** with a minimum, maximum and increment (**Format** sidebar → **Cell** → **Data Format**)."
+      "Numbers has no general validation rules, but its cell controls limit entries. A **pop-up menu** limits a cell to a list. A **stepper** or **slider** sets a minimum, maximum and increment (**Format** sidebar → **Cell** → **Data Format**)."
     ]},
     {h:"Validation has gaps", body:[
       "Microsoft’s help is clear about what validation does: it shows messages and prevents invalid entries **only when data is typed** into a cell. It doesn’t stop values that arrive by **copying or filling**, values produced by **formulas**, or values a **macro** enters. And, as Data Carpentry notes, a rule added later doesn’t check data that is **already** in the cells.",
@@ -684,7 +684,7 @@ ICA.addUnit({
       {key:"Validation is a seatbelt, not a guarantee. Set rules before entry, and check after every paste or import."}
     ]},
     {h:"Why export to plain text", body:[
-      "Data Carpentry’s fifth principle is to export cleaned data to a text-based format. Its reasons: other programs may not open a spreadsheet app’s own format, or may read it differently; different versions of an app can handle the same file differently (date systems are one example); and many data repositories, journals and funders ask for open formats. A plain-text file can be opened with any text editor today and in decades to come ({{file-formats}}).",
+      "Data Carpentry’s fifth principle is to export cleaned data to a text-based format. It gives three reasons. Other programs may not open a spreadsheet app’s own format, or may read it differently. Different versions of an app can handle the same file differently (date systems are one example). Many data repositories, journals and funders ask for open formats. A plain-text file can be opened with any text editor today and in decades to come ({{file-formats}}).",
       {table:[
         ["Format","Separator","Good to know"],
         ["[[csv|CSV]]","Comma (or semicolon in some regions)","The most widely read; values with commas are wrapped in double quotes"],
@@ -707,25 +707,25 @@ ICA.addUnit({
     {h:"Separators, decimal commas and encodings", body:[
       "In much of the world the decimal mark is a comma (`62,5`), which clashes with a comma separator. Programs handle this differently:",
       {list:[
-        "**Excel for Windows** uses the list separator from Windows’ regional settings. Microsoft’s help explains that where the decimal separator is a comma, Excel uses a semicolon as the list separator, so its “CSV” files have semicolons between values. A comma-separated file opened on such a computer may land entirely in column A.",
+        "**Excel for Windows** uses the list separator from Windows’ regional settings. Microsoft’s help explains that where the decimal separator is a comma, Excel uses a semicolon as the list separator. So its “CSV” files have semicolons between values. A comma-separated file opened on such a computer may land entirely in column A.",
         "**LibreOffice Calc** asks: check **Edit filter settings** when saving as Text CSV, then choose the **[[delimiter|field delimiter]]** (comma, semicolon, tab) and the **character set**.",
         "**Google Sheets** offers **File → Download → Comma Separated Values (.csv)** and **Tab Separated Values (.tsv)**."
       ]},
       "When importing, every app lets you choose the separator, so a semicolon file isn’t broken, just different. What matters is that the file says (in the README) which separator and decimal mark it uses.",
-      "**Encoding** is the code that turns letters into bytes ([[text-encoding]]). Choose [[utf-8|UTF-8]], which can store every script: desktop Excel’s **CSV UTF-8 (Comma delimited)**, LibreOffice’s **Unicode (UTF-8)** character set, or the text-encoding choice under **Advanced Options** in Numbers’ CSV export. Excel’s older **CSV (Comma delimited)** option uses an older, region-specific encoding, so names in other scripts can be damaged.",
-      {tip:"Excel’s CSV UTF-8 starts the file with an invisible marker called a [[byte-order-mark|byte-order mark]]. Most programs ignore it; if your first column name arrives as `ï»¿hh_id` or with a strange symbol in front, that marker is the reason, and choosing UTF-8 (or “UTF-8 with BOM”) when importing fixes it."}
+      "**Encoding** is the code that turns letters into bytes ([[text-encoding]]). Choose [[utf-8|UTF-8]], which can store every script. In desktop Excel, use **CSV UTF-8 (Comma delimited)**. In LibreOffice, use the **Unicode (UTF-8)** character set. In Numbers’ CSV export, use the text-encoding choice under **Advanced Options**. Excel’s older **CSV (Comma delimited)** option uses an older, region-specific encoding, so names in other scripts can be damaged.",
+      {tip:"Excel’s CSV UTF-8 starts the file with an invisible marker called a [[byte-order-mark|byte-order mark]]. Most programs ignore it. Sometimes your first column name arrives as `ï»¿hh_id` or with a strange symbol in front. That marker is the reason. Choose UTF-8 (or “UTF-8 with BOM”) when importing to fix it."}
     ]},
     {h:"Before you share: a checklist", body:[
-      "Open the exported file in a plain-text editor (Notepad, TextEdit in plain-text mode, or the Text app on a Chromebook) and check:",
+      "Open the exported file in a plain-text editor and check it. Use Notepad, TextEdit in plain-text mode, or the Text app on a Chromebook. Check these points:",
       {ol:[
         "One header row of short names without spaces, then one row per observation.",
         "The separator you intended, and quotes only around values that contain it.",
         "Numbers with the decimals you meant; dates as YYYY-MM-DD; codes with their leading zeros.",
         "One missing-value code, as written in the dictionary.",
-        "Accented letters and other scripts readable (no `Ã©`-style gibberish, called [[encoding-mojibake|mojibake]]).",
-        "The dictionary and README alongside, saying the separator, decimal mark, encoding, date format and missing code."
+        "Accented letters and other scripts are readable (no `Ã©`-style gibberish, called [[encoding-mojibake|mojibake]]).",
+        "The dictionary and README are alongside the file. They say the separator, decimal mark, encoding, date format and missing code."
       ]},
-      "That’s the end of the journey this unit started: a rectangle of consistent values, documented, protected, and saved in a form that any person or program can read correctly."
+      "That is the end of the journey this unit started. You now have a rectangle of consistent values, documented, protected, and saved in a form that any person or program can read correctly."
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -779,14 +779,14 @@ ICA.addUnit({
       {t:"Open the CSV in a text editor and run through the checklist", why:"See exactly what was written: separator, decimals, dates, codes, accents."},
       {t:"Send it with the data dictionary and README", why:"The documentation tells the reader the codes, units, separator and encoding."}
     ]},
-    {id:"t3u2-l5-x8", type:"explain", q:"Explain why you should keep the raw data file untouched and do all your cleaning on a copy, recording each step as you go.", model:"The raw file is the only record of what was first collected. If you clean that only copy and later find a mistake in your cleaning, you can’t tell what the original said or undo the damage. Keeping the raw file read-only and backed up, and working on a copy with a note of every step, means any error can be fixed by going back to the raw file and redoing the steps. The notes also let others check exactly how the clean file was made.", points:["Says the raw file is the only record of the original values", "Explains that editing it makes mistakes impossible to undo", "Describes working on a copy and recording every step", "Says the steps can be redone or checked by others"]}
+    {id:"t3u2-l5-x8", type:"explain", q:"Explain why you should keep the raw data file untouched and do all your cleaning on a copy, recording each step as you go.", model:"The raw file is the only record of what was first collected. Suppose you clean that only copy and later find a mistake in your cleaning. You can’t tell what the original said or undo the damage. Instead, keep the raw file read-only and backed up. Work on a copy, with a note of every step. Then you can fix any error by going back to the raw file and redoing the steps. The notes also let others check exactly how the clean file was made.", points:["Says the raw file is the only record of the original values", "Explains that editing it makes mistakes impossible to undo", "Describes working on a copy and recording every step", "Says the steps can be redone or checked by others"]}
    ],
    apply:{intro:"Protect, validate and export a small dataset: your households sheet from Lesson 1, or your own. Validation rules are easiest to create on a computer or tablet; the phone apps can use them once they exist.", tasks:[
      {t:"Protect your raw data", how:{
        win:["Save your original workbook in a folder called `raw`.","In File Explorer, right-click the file → **Properties** → check **Read-only** → **OK**.","Make a copy in a folder called `working` and do all further work there."],
        mac:["Save your original workbook in a folder called `raw`.","Select it in Finder, choose **File → Get Info**, and check **Locked**.","Duplicate it into a folder called `working` (**File → Duplicate**, then move the copy) and do all further work there."],
-       chromeos:["If your data is in Google Sheets, open it and choose **File → Make a copy**; name the copy `working`.","In the original, choose **Data → Protect sheets and ranges**, add the raw sheet, and set **Restrict who can edit this range** (or **Show a warning when editing this range**).","Do all further work in the copy."],
-       phone:["In the Google Sheets app, open the spreadsheet’s menu (three dots) and choose **Share & export → Make a copy**; name the copy `working`.","Protection settings (**Data → Protect sheets and ranges**) are easiest in a browser; until then, simply never edit the original.","Do all further work in the copy."]
+       chromeos:["If your data is in Google Sheets, open it and choose **File → Make a copy**; name the copy `working`.","In the original, choose **Data → Protect sheets and ranges** and add the raw sheet. Then set **Restrict who can edit this range** (or **Show a warning when editing this range**).","Do all further work in the copy."],
+       phone:["In the Google Sheets app, open the spreadsheet’s menu (three dots) and choose **Share & export → Make a copy**; name the copy `working`.","Protection settings (**Data → Protect sheets and ranges**) are easiest in a browser. Until then, just never edit the original.","Do all further work in the copy."]
      }},
      {t:"Turn your dictionary into validation rules", app:{
        ms:["Add a sheet called `lists` with the allowed wall types in A2:A6.","On the data sheet, select the members cells (C2:C200). Choose **Data → Data Validation**. **Allow: Whole number**, **Data: between**, Minimum 1, Maximum 30.","On the **Input Message** tab, type a short help message. On the **Error Alert** tab, choose **Stop** and write a clear message. Click **OK**.","Select the wall-type cells. **Data → Data Validation** → **Allow: List**, **Source:** `=lists!$A$2:$A$6`.","Select the ID cells (A2:A200, starting from A2). **Allow: Custom**, **Formula:** `=COUNTIF($A$2:$A$200, A2)=1`. Try typing a duplicate ID."],
@@ -806,7 +806,7 @@ ICA.addUnit({
        libre:["Format dates with **Format → Cells → Numbers → Date** (ISO 8601 style) and show full decimals.","**File → Save As**, choose **Text CSV (.csv)** and check **Edit filter settings**. Keep the format, then choose **Unicode (UTF-8)**, the field delimiter, and notice **Save cell content as shown**.","Open the file in a text editor and run through the lesson’s checklist."],
        apple:["Format dates with a custom year-month-day format and show full decimals.","**File → Export To → CSV**, open **Advanced Options** and choose UTF-8 as the text encoding.","Open the file in TextEdit (**Format → Make Plain Text** if needed) and run through the lesson’s checklist."]
      }}
-   ], proof:"A read-only raw file and a working copy; validation rules for a range, a list and (where your app allows) unique IDs; an invalid pasted value found with your app’s checker; and a CSV, checked in a text editor, with ISO dates, full decimals and UTF-8 text."},
+   ], proof:"A read-only raw file and a working copy. Validation rules for a range, a list and (where your app allows) unique IDs. An invalid pasted value found with your app’s checker. A CSV, checked in a text editor, with ISO dates, full decimals and UTF-8 text."},
    read:[
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists → “Quality Assurance” (“Validating data on input”, “Restricting data to a numeric range”, “Restricting data to entries from a list”)"},
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists → “Exporting Data”"},
@@ -849,7 +849,7 @@ ICA.addUnit({
    {id:"t3u2-cp07", lesson:"t3u2-l3", level:1, q:"A weather volunteer types 0 whenever a temperature reading is missing. Why is this an especially poor code here?", options:[
      {t:"Because 0 makes the column text, so calculations fail", why:"0 is a number, so calculations run without any warning. That silence is part of the problem."},
      {t:"Because 0 °C is a real temperature, so a gap looks like a reading", ok:true, why:"A missing code must never be a possible value. Every 0 now could mean “freezing” or “unknown”, and averages include them all."},
-     {t:"It isn’t poor: 0 is the standard missing code in most guides", why:"Data Carpentry lists 0 as “never use”, and the unit’s rule is that a missing code is never a number, because it can be mistaken for a real value."},
+     {t:"It isn’t poor: 0 is the standard missing code in most guides", why:"Data Carpentry lists 0 as “never use”. The unit’s rule is that a missing code is never a number, because it can be mistaken for a real value."},
      {t:"Because spreadsheets delete zeros when the file is saved", why:"Spreadsheets keep zeros. The problem is meaning: 0 looks exactly like a real reading."}]},
    {id:"t3u2-cp08", lesson:"t3u2-l4", level:2, q:"In a library sheet, C2 holds a loan date and D2 holds `=C2+21` for the due date. D2 shows `46077`. What is the most likely explanation?", options:[
      {t:"Adding 21 to a date gives nonsense; a date function is needed", why:"Adding days to a date is ordinary date arithmetic: a date is stored as a count of days, so +21 moves it 21 days on."},
@@ -1251,7 +1251,7 @@ ICA.addUnit({
      {t:"Leave both blank, since the reasons don’t matter for analysis", why:"The reasons mean different things and would be lost."}
    ]},
    {id:"t3u2-q24", lesson:"t3u2-l3", level:2, q:"Ana’s CSV uses `-` for missing ages. Her colleague loads it with Python’s pandas library using the default settings. What is likely to happen?", options:[
-     {t:"The `-` isn’t read as missing, so the ages become text", ok:true, why:"pandas recognizes codes such as blank, NA and N/A by default, but not a lone hyphen; one unrecognized code turns the whole column into text."},
+     {t:"The `-` isn’t read as missing, so the ages become text", ok:true, why:"pandas recognizes codes such as blank, NA and N/A by default, but not a lone hyphen. One unrecognized code turns the whole column into text."},
      {t:"pandas replaces each `-` with 0 and keeps the column as numbers", why:"pandas doesn’t invent zeros; it keeps the hyphen as text."},
      {t:"pandas deletes the rows with `-`", why:"Rows are kept; the column’s type is what changes."},
      {t:"Nothing: every program treats `-` as missing", why:"Data Carpentry lists `-` among codes to avoid because many programs don’t."}
@@ -1263,7 +1263,7 @@ ICA.addUnit({
      {t:"The formulas used in the workbook", why:"Formulas may be noted in cleaning notes; a dictionary describes the variables."}
    ]},
    {id:"t3u2-q26", lesson:"t3u2-l3", level:2, q:"Where does Data Carpentry recommend keeping metadata such as column explanations?", options:[
-     {t:"In a separate file, such as plain text, next to the data file", ok:true, why:"Metadata in the data file can disrupt how programs read it; a separate, clearly named file keeps both usable."},
+     {t:"In a separate file, such as plain text, next to the data file", ok:true, why:"Metadata in the data file can disrupt how programs read it. A separate, clearly named file keeps both usable."},
      {t:"In the first few rows of the data sheet, above the headers", why:"Notes above the headers break the rectangle that programs expect."},
      {t:"In cell comments on each header", why:"Comments aren’t visible to most analysis software and are lost in CSV."},
      {t:"Nowhere: tidy data explains itself", why:"Even tidy columns need definitions, units and codes explained."}
@@ -1300,7 +1300,7 @@ ICA.addUnit({
      {t:"Whatever your computer shows by default", why:"Defaults differ between computers, which is exactly the problem."}
    ]},
    {id:"t3u2-q32", lesson:"t3u2-l4", level:2, q:"Data Carpentry suggests splitting dates into separate year, month and day columns. What is the main advantage?", options:[
-     {t:"The parts are plain numbers that no app or locale reinterprets, and partial dates are easy", ok:true, why:"Separate numbers avoid day/month confusion and date-system differences; a missing day can simply be blank."},
+     {t:"The parts are plain numbers that no app or locale reinterprets, and partial dates are easy", ok:true, why:"Separate numbers avoid day/month confusion and date-system differences. A missing day can simply be blank."},
      {t:"It makes date arithmetic easier", why:"You need DATE() to rebuild a date before subtracting, so arithmetic is slightly harder."},
      {t:"It saves space in the file", why:"Three columns take more space, not less; the benefit is safety."},
      {t:"Spreadsheets can’t store dates in one column", why:"They can; the issue is how reliably dates survive moves between apps and countries."}
